@@ -32,6 +32,7 @@ const hubs: Record<string, ShareCard> = {
   ae: { title: "Free practice tests for the UAE", lines: ["Free practice tests", "for the UAE"], description: "Driving theory test, college entrance and IT certifications.", footer: "Find your test at tigertest.io/ae", color: "#0C6B52", tint: "#E6F5F0", mascots: ["dmv", "sat", "aws"] },
   za: { title: "Free practice tests for South Africa", lines: ["Free practice tests", "for South Africa"], description: "K53 learner's test, college entrance and IT certifications.", footer: "Find your test at tigertest.io/za", color: "#4F7408", tint: "#F0F6E3", mascots: ["dmv", "sat", "aws"] },
   ng: { title: "Free practice tests for Nigeria", lines: ["Free practice tests", "for Nigeria"], description: "Highway Code driving test, college entrance and IT certifications.", footer: "Find your test at tigertest.io/ng", color: "#1B6B20", tint: "#E8F4E9", mascots: ["dmv", "sat", "aws"] },
+  pk: { title: "Free practice tests for Pakistan", lines: ["Free practice tests", "for Pakistan"], description: "Driving licence sign test, college entrance and IT certifications.", footer: "Find your test at tigertest.io/pk", color: "#0B5E3A", tint: "#E6F4EC", mascots: ["dmv", "sat", "aws"] },
   ke: { title: "Free practice tests for Kenya", lines: ["Free practice tests", "for Kenya"], description: "NTSA driving test, college entrance and IT certifications.", footer: "Find your test at tigertest.io/ke", color: "#066A6E", tint: "#E4F4F5", mascots: ["dmv", "sat", "aws"] },
 };
 
@@ -607,5 +608,9 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
   "hkdrive": {
     "color": "hsl(314, 100%, 42%)",
     "tint": "hsl(314, 80%, 96%)"
+  },
+  "pkdrive": {
+    "color": "hsl(152, 75%, 30%)",
+    "tint": "hsl(152, 75%, 96%)"
   }
 };

@@ -1,0 +1,4874 @@
+[
+  {
+    "id": "RRBGD-T1-001",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdArithmetic",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Percentage",
+    "stem": "What is 35% of 560?",
+    "options": [
+      "186",
+      "196",
+      "206",
+      "216"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "35% of 560 = 0.35 x 560 = 196. A quick check: 10% is 56, so 30% is 168 and 5% is 28; 168 + 28 = 196."
+  },
+  {
+    "id": "RRBGD-T1-002",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "LCM and HCF",
+    "stem": "The HCF of two numbers is 12 and their LCM is 360. If one of the numbers is 72, what is the other?",
+    "options": [
+      "48",
+      "72",
+      "90",
+      "60"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "For two numbers, HCF x LCM = product of the numbers. 12 x 360 = 4,320, and 4,320 / 72 = 60."
+  },
+  {
+    "id": "RRBGD-T1-003",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Percentage",
+    "stem": "A number is first increased by 25% and the result is then decreased by 20%. What is the net change in the number?",
+    "options": [
+      "1% decrease",
+      "5% decrease",
+      "5% increase",
+      "No change"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Take 100. A 25% rise gives 125, and 20% of 125 is 25, so it falls back to 100. The net change is nil."
+  },
+  {
+    "id": "RRBGD-T1-004",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdMaths",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "BODMAS",
+    "stem": "Simplify: 48 ÷ 6 × 2 + 15 − 3 × 4",
+    "options": [
+      "31",
+      "13",
+      "7",
+      "19"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Division and multiplication first, from left to right: 48 ÷ 6 = 8, 8 × 2 = 16 and 3 × 4 = 12. Then 16 + 15 - 12 = 19."
+  },
+  {
+    "id": "RRBGD-T1-005",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Profit and loss",
+    "stem": "A shopkeeper sells a mixer for ₹2,760 at a loss of 8%. What did the mixer cost him?",
+    "options": [
+      "₹3,200",
+      "₹3,000",
+      "₹2,900",
+      "₹2,980"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "At an 8% loss the selling price is 92% of the cost. Cost = 2,760 / 0.92 = ₹3,000."
+  },
+  {
+    "id": "RRBGD-T1-006",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Discount",
+    "stem": "A watch marked at ₹2,400 is sold after two successive discounts of 10% and 5%. What is its selling price?",
+    "options": [
+      "₹2,160",
+      "₹2,052",
+      "₹2,040",
+      "₹2,064"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "After 10% off: 2,400 x 0.9 = ₹2,160. After a further 5% off: 2,160 x 0.95 = ₹2,052. Two discounts of 10% and 5% are not the same as one of 15% (which would give ₹2,040)."
+  },
+  {
+    "id": "RRBGD-T1-007",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number system",
+    "stem": "Which of these numbers is divisible by 11?",
+    "options": [
+      "5,182",
+      "5,092",
+      "5,082",
+      "4,082"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A number is divisible by 11 when the difference between the sums of its alternate digits is 0 or a multiple of 11. For 5,082: (5 + 8) - (0 + 2) = 11, so it is divisible (5,082 = 11 x 462). The others give differences of 12, 10 and 10."
+  },
+  {
+    "id": "RRBGD-T1-008",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdArithmetic",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Simple interest",
+    "stem": "What is the simple interest on ₹4,500 at 9% per annum for 4 years?",
+    "options": [
+      "₹1,620",
+      "₹1,215",
+      "₹1,440",
+      "₹1,800"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "SI = P x R x T / 100 = 4,500 x 9 x 4 / 100 = ₹1,620."
+  },
+  {
+    "id": "RRBGD-T1-009",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Square roots",
+    "stem": "What is the value of √0.0169?",
+    "options": [
+      "0.13",
+      "0.0013",
+      "0.013",
+      "1.3"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "0.0169 = 169 / 10,000, and √169 / √10,000 = 13 / 100 = 0.13. Check: 0.13 x 0.13 = 0.0169."
+  },
+  {
+    "id": "RRBGD-T1-010",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Compound interest",
+    "stem": "₹8,000 is lent at 10% per annum compound interest, compounded annually. What is the amount after 3 years?",
+    "options": [
+      "₹10,560",
+      "₹10,800",
+      "₹10,400",
+      "₹10,648"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Amount = 8,000 x 1.1 x 1.1 x 1.1 = 8,000 x 1.331 = ₹10,648. Simple interest would give only ₹10,400."
+  },
+  {
+    "id": "RRBGD-T1-011",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdArithmetic",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ratio",
+    "stem": "The ratio of boys to girls in a class is 7 : 5. If there are 42 boys, how many girls are there?",
+    "options": [
+      "30",
+      "24",
+      "35",
+      "28"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "7 parts = 42, so one part = 6. Girls = 5 x 6 = 30."
+  },
+  {
+    "id": "RRBGD-T1-012",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Algebra",
+    "stem": "If x + 1/x = 6, what is the value of x² + 1/x²?",
+    "options": [
+      "38",
+      "32",
+      "36",
+      "34"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Square both sides: x² + 2 + 1/x² = 36, so x² + 1/x² = 34."
+  },
+  {
+    "id": "RRBGD-T1-013",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Average",
+    "stem": "The average of 7 numbers is 26. If the number 38 is removed, what is the average of the remaining numbers?",
+    "options": [
+      "24",
+      "22",
+      "23",
+      "25"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Total = 7 x 26 = 182. Removing 38 leaves 144 for 6 numbers, and 144 / 6 = 24."
+  },
+  {
+    "id": "RRBGD-T1-014",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdMaths",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Linear equations",
+    "stem": "If 3(2x − 5) = 4x + 7, what is the value of x?",
+    "options": [
+      "8",
+      "11",
+      "9",
+      "12"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "6x - 15 = 4x + 7, so 2x = 22 and x = 11."
+  },
+  {
+    "id": "RRBGD-T1-015",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ages",
+    "stem": "Sunil is 4 years older than Kavita. Five years ago their ages were in the ratio 5 : 3. What is Sunil's present age?",
+    "options": [
+      "13 years",
+      "17 years",
+      "19 years",
+      "15 years"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Five years ago the ages were 5k and 3k, and the gap 2k equals 4, so k = 2. Sunil was 10 then and is 15 now (Kavita is 11)."
+  },
+  {
+    "id": "RRBGD-T1-016",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdArithmetic",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Time and work",
+    "stem": "A can finish a job in 12 days and B in 18 days. They work together for 4 days, and then A leaves. In how many more days will B finish the job?",
+    "options": [
+      "8 days",
+      "10 days",
+      "6 days",
+      "9 days"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Together they do 1/12 + 1/18 = 5/36 of the job a day, so 20/36 in 4 days. That leaves 16/36 = 4/9. B does 1/18 a day, so B needs 4/9 x 18 = 8 days."
+  },
+  {
+    "id": "RRBGD-T1-017",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdMaths",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Geometry",
+    "stem": "The angles of a triangle are in the ratio 4 : 5 : 9. What is the largest angle?",
+    "options": [
+      "80°",
+      "50°",
+      "100°",
+      "90°"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The angles add up to 180°. 18 parts = 180°, so one part = 10° and the largest angle is 9 x 10° = 90°. It is a right-angled triangle."
+  },
+  {
+    "id": "RRBGD-T1-018",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdArithmetic",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Speed and distance",
+    "stem": "A bus covers 270 km in 4 hours 30 minutes. What is its average speed?",
+    "options": [
+      "58 km/h",
+      "54 km/h",
+      "60 km/h",
+      "65 km/h"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "4 hours 30 minutes is 4.5 hours, and 270 / 4.5 = 60 km/h."
+  },
+  {
+    "id": "RRBGD-T1-019",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mensuration",
+    "stem": "What is the area of a circle whose circumference is 176 cm? (Take π = 22/7.)",
+    "options": [
+      "3,080 cm²",
+      "2,464 cm²",
+      "1,232 cm²",
+      "4,928 cm²"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "2πr = 176, so r = 176 x 7 / 44 = 28 cm. Area = πr² = 22/7 x 28 x 28 = 2,464 cm²."
+  },
+  {
+    "id": "RRBGD-T1-020",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Trains",
+    "stem": "A train running at 72 km/h crosses a 250 m long bridge in 25 seconds. What is the length of the train?",
+    "options": [
+      "250 m",
+      "200 m",
+      "500 m",
+      "300 m"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "72 km/h = 72 x 5/18 = 20 m/s. In 25 s it covers 500 m, which is the bridge plus the train, so the train is 500 - 250 = 250 m long."
+  },
+  {
+    "id": "RRBGD-T1-021",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Boats and streams",
+    "stem": "A boat goes 24 km downstream in 2 hours and comes back the same distance upstream in 3 hours. What is the speed of the current?",
+    "options": [
+      "4 km/h",
+      "2 km/h",
+      "3 km/h",
+      "10 km/h"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Downstream speed = 12 km/h and upstream speed = 8 km/h. The current is half the difference: (12 - 8) / 2 = 2 km/h. The boat's speed in still water is 10 km/h."
+  },
+  {
+    "id": "RRBGD-T1-022",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Trigonometry",
+    "stem": "What is the value of sin 30° × cos 60° + cos 30° × sin 60°?",
+    "options": [
+      "0",
+      "√3/2",
+      "1",
+      "1/2"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "sin 30° = cos 60° = 1/2 and cos 30° = sin 60° = √3/2. So the value is 1/4 + 3/4 = 1. (It is sin(30° + 60°) = sin 90°.)"
+  },
+  {
+    "id": "RRBGD-T1-023",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdArithmetic",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Mixtures",
+    "stem": "A 60-litre mixture of milk and water contains 20% water. How much water must be added so that water makes up 25% of the new mixture?",
+    "options": [
+      "4 litres",
+      "5 litres",
+      "6 litres",
+      "3 litres"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Milk = 80% of 60 = 48 litres, and the milk does not change. If milk is to be 75% of the new mixture, the total is 48 / 0.75 = 64 litres, so 4 litres of water must be added."
+  },
+  {
+    "id": "RRBGD-T1-024",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdMaths",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Statistics",
+    "stem": "What is the median of 14, 9, 21, 17, 9, 12, 25?",
+    "options": [
+      "9",
+      "15",
+      "17",
+      "14"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "In order: 9, 9, 12, 14, 17, 21, 25. With 7 values the median is the 4th, which is 14."
+  },
+  {
+    "id": "RRBGD-T1-025",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Partnership",
+    "stem": "Raju invests ₹24,000 and Sohan invests ₹36,000 in a business for one year. Out of a profit of ₹18,000, what is Sohan's share?",
+    "options": [
+      "₹7,200",
+      "₹12,000",
+      "₹10,800",
+      "₹9,000"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "For the same period, profit is shared in the ratio of investment: 24,000 : 36,000 = 2 : 3. Sohan gets 3/5 of 18,000 = ₹10,800."
+  },
+  {
+    "id": "RRBGD-T1-026",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Analogy",
+    "stem": "Pen : Writer :: Stethoscope : ?",
+    "options": [
+      "Nurse",
+      "Patient",
+      "Doctor",
+      "Hospital"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A writer works with a pen; a doctor works with a stethoscope. The pair is a tool and the person who uses it."
+  },
+  {
+    "id": "RRBGD-T1-027",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Blood relations",
+    "stem": "Pointing to a boy in a photograph, Kamal says, 'His father is the only son of my father.' How is the boy related to Kamal?",
+    "options": [
+      "Father",
+      "Brother",
+      "Son",
+      "Nephew"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The only son of Kamal's father is Kamal himself. So the boy's father is Kamal, and the boy is Kamal's son."
+  },
+  {
+    "id": "RRBGD-T1-028",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Number analogy",
+    "stem": "6 : 216 :: 9 : ?",
+    "options": [
+      "243",
+      "729",
+      "81",
+      "648"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "216 is 6 cubed (6 x 6 x 6). In the same way, 9 cubed is 729."
+  },
+  {
+    "id": "RRBGD-T1-029",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Blood relations",
+    "stem": "Gopal is the brother of Hema. Hema is the daughter of Indu. Jatin is Gopal's father. How is Indu related to Jatin?",
+    "options": [
+      "Mother",
+      "Sister",
+      "Daughter",
+      "Wife"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Gopal and Hema are children of both Indu and Jatin. Jatin is the father, so Indu, the mother, is Jatin's wife."
+  },
+  {
+    "id": "RRBGD-T1-030",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Letter analogy",
+    "stem": "BDF : HJL :: MOQ : ?",
+    "options": [
+      "RTV",
+      "TVX",
+      "SUW",
+      "STU"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Each letter moves 6 places forward: B to H, D to J, F to L. So M to S, O to U and Q to W, giving SUW."
+  },
+  {
+    "id": "RRBGD-T1-031",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Directions",
+    "stem": "Anil walks 4 km north, turns right and walks 9 km, turns right again and walks 4 km, then turns left and walks 3 km. How far is he from his starting point?",
+    "options": [
+      "12 km",
+      "13 km",
+      "20 km",
+      "9 km"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "North 4 km, right (east) 9 km, right again (south) 4 km, then left (east again) 3 km. The north and south walks cancel, leaving him 9 + 3 = 12 km east of the start."
+  },
+  {
+    "id": "RRBGD-T1-032",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Classification",
+    "stem": "Find the odd one out: Lion, Tiger, Leopard, Wolf",
+    "options": [
+      "Wolf",
+      "Tiger",
+      "Lion",
+      "Leopard"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The lion, tiger and leopard belong to the cat family. The wolf belongs to the dog family."
+  },
+  {
+    "id": "RRBGD-T1-033",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Directions",
+    "stem": "Pallavi is facing south. She turns 45° clockwise and then 270° anticlockwise. Which direction is she facing now?",
+    "options": [
+      "North-west",
+      "North-east",
+      "South-east",
+      "South-west"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "From south, 45° clockwise points her south-west. Turning 270° anticlockwise ends in the same place as turning 90° clockwise, so from south-west she ends up facing north-west."
+  },
+  {
+    "id": "RRBGD-T1-034",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Classification",
+    "stem": "Find the odd one out: 27, 64, 125, 150",
+    "options": [
+      "125",
+      "64",
+      "27",
+      "150"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "27, 64 and 125 are perfect cubes (3³, 4³, 5³). 150 is not a cube."
+  },
+  {
+    "id": "RRBGD-T1-035",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Syllogism",
+    "stem": "Statements: All pens are boxes. Some boxes are tables. Conclusions: I. Some pens are tables. II. Some tables are boxes. Which conclusion follows?",
+    "options": [
+      "Neither I nor II follows",
+      "Only II follows",
+      "Only I follows",
+      "Both I and II follow"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "'Some boxes are tables' can be turned round to 'Some tables are boxes', so II follows. The boxes that are tables need not be pens, so I does not follow."
+  },
+  {
+    "id": "RRBGD-T1-036",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "What comes next? 1, 5, 14, 30, 55, ?",
+    "options": [
+      "85",
+      "96",
+      "91",
+      "81"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The gaps are 4, 9, 16, 25, the squares of 2, 3, 4, 5. The next gap is 6² = 36, and 55 + 36 = 91."
+  },
+  {
+    "id": "RRBGD-T1-037",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ranking",
+    "stem": "In a row of 58 students, Kiran is 23rd from the left end. What is his position from the right end?",
+    "options": [
+      "36th",
+      "35th",
+      "37th",
+      "34th"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Position from the right = total - position from the left + 1 = 58 - 23 + 1 = 36."
+  },
+  {
+    "id": "RRBGD-T1-038",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "What comes next? 2, 5, 14, 41, 122, ?",
+    "options": [
+      "368",
+      "365",
+      "364",
+      "366"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Each term is three times the previous one minus 1: 2 x 3 - 1 = 5, 5 x 3 - 1 = 14, and so on. 122 x 3 - 1 = 365."
+  },
+  {
+    "id": "RRBGD-T1-039",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ranking",
+    "stem": "Ravi is taller than Sunil but shorter than Mohan. Mohan is shorter than Ajay. Who is the tallest?",
+    "options": [
+      "Ajay",
+      "Ravi",
+      "Mohan",
+      "Sunil"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The order from tallest is Ajay, Mohan, Ravi, Sunil."
+  },
+  {
+    "id": "RRBGD-T1-040",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Letter series",
+    "stem": "What comes next? B, D, G, K, P, ?",
+    "options": [
+      "T",
+      "U",
+      "W",
+      "V"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The positions are 2, 4, 7, 11, 16, rising by 2, 3, 4, 5. The next rise is 6, giving position 22, which is V."
+  },
+  {
+    "id": "RRBGD-T1-041",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Seating arrangement",
+    "stem": "Five friends J, K, L, M and N sit in a row facing north. M sits in the middle and J is at the right end. K sits immediately to the left of M. L does not sit next to J. Who sits second from the right?",
+    "options": [
+      "L",
+      "M",
+      "K",
+      "N"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Counting from the left, M is 3rd, J is 5th and K is 2nd. L and N take the 1st and 4th seats. L cannot be next to J, so L is 1st and N is 4th, which is second from the right."
+  },
+  {
+    "id": "RRBGD-T1-042",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Coding-decoding",
+    "stem": "In a certain code, TRAIN is written as UQBHO. How is PLANE written in that code?",
+    "options": [
+      "OKBMD",
+      "QKZMF",
+      "QMBOF",
+      "QKBMF"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The letters move +1, -1, +1, -1, +1: T to U, R to Q, A to B, I to H, N to O. So P to Q, L to K, A to B, N to M, E to F: QKBMF."
+  },
+  {
+    "id": "RRBGD-T1-043",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Calendar",
+    "stem": "If 5 March 2026 is a Thursday, what day of the week is 5 April 2026?",
+    "options": [
+      "Monday",
+      "Saturday",
+      "Friday",
+      "Sunday"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "March has 31 days, so 5 April is 31 days later. 31 = 4 weeks + 3 days, and 3 days after Thursday is Sunday."
+  },
+  {
+    "id": "RRBGD-T1-044",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Coding-decoding",
+    "stem": "If CAT is coded as 24 by adding the positions of its letters in the alphabet, what is the code for DOG?",
+    "options": [
+      "24",
+      "25",
+      "28",
+      "26"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "C = 3, A = 1, T = 20, total 24. D = 4, O = 15, G = 7, total 26."
+  },
+  {
+    "id": "RRBGD-T1-045",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Clock",
+    "stem": "What is the angle between the hour hand and the minute hand of a clock at 3:40?",
+    "options": [
+      "140°",
+      "120°",
+      "150°",
+      "130°"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Angle = |30H - 5.5M| = |30 x 3 - 5.5 x 40| = |90 - 220| = 130°."
+  },
+  {
+    "id": "RRBGD-T1-046",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mathematical operations",
+    "stem": "If '+' means '×', '−' means '+', '×' means '÷' and '÷' means '−', what is the value of 8 + 4 − 12 × 3 ÷ 5?",
+    "options": [
+      "27",
+      "35",
+      "29",
+      "31"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "After replacing the signs the expression is 8 × 4 + 12 ÷ 3 - 5 = 32 + 4 - 5 = 31."
+  },
+  {
+    "id": "RRBGD-T1-047",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Statement and conclusion",
+    "stem": "Statement: The railway station has put up drinking water coolers on every platform this summer. Conclusions: I. Passengers need drinking water at stations in summer. II. No passenger will buy bottled water this summer. Which conclusion follows?",
+    "options": [
+      "Both I and II follow",
+      "Only II follows",
+      "Only I follows",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The coolers were put up because passengers need water, so I follows. Nothing in the statement says no one will buy bottled water, so II is an overstatement and does not follow."
+  },
+  {
+    "id": "RRBGD-T1-048",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Dictionary order",
+    "stem": "If these words are arranged in dictionary order, which comes third? Signal, Signature, Sight, Silent",
+    "options": [
+      "Silent",
+      "Signal",
+      "Sight",
+      "Signature"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The order is Sight (sigh- comes before sign-), Signal, Signature (signa-l before signa-t), then Silent (sil- comes after sig-). The third word is Signature."
+  },
+  {
+    "id": "RRBGD-T1-049",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Venn relationship",
+    "stem": "Which set of three items shows one group lying wholly inside a second group, with the third group separate from both?",
+    "options": [
+      "Vegetables, Potatoes, Iron",
+      "Doctors, Women, Mothers",
+      "Asia, India, Delhi",
+      "Teachers, Men, Graduates"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "All potatoes are vegetables, and iron has nothing in common with either. Doctors and women overlap, Asia, India and Delhi are nested three deep, and teachers, men and graduates all overlap."
+  },
+  {
+    "id": "RRBGD-T1-050",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Alphabet",
+    "stem": "In the English alphabet, which letter is 4th to the right of the 15th letter from the right end?",
+    "options": [
+      "O",
+      "P",
+      "Q",
+      "H"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The 15th letter from the right is the 12th from the left (27 - 15 = 12), which is L. Four places to its right is the 16th letter, P."
+  },
+  {
+    "id": "RRBGD-T1-051",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Data sufficiency",
+    "stem": "What is Neha's age? Statement I: Neha is 3 years older than Arun. Statement II: Arun's age is half of 26. Which statements are enough to answer?",
+    "options": [
+      "Both together are not enough",
+      "I and II together are needed",
+      "Statement II alone is enough",
+      "Statement I alone is enough"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "I gives only the difference and II gives only Arun's age (13). Together they give Neha's age: 13 + 3 = 16."
+  },
+  {
+    "id": "RRBGD-T1-052",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdVerbal",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Missing number",
+    "stem": "The third number in each group follows the same rule: (4, 5, 41), (6, 2, 40), (3, 7, ?). Find the missing number.",
+    "options": [
+      "21",
+      "60",
+      "58",
+      "52"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The rule is the sum of the squares: 4² + 5² = 16 + 25 = 41 and 6² + 2² = 36 + 4 = 40. So 3² + 7² = 9 + 49 = 58."
+  },
+  {
+    "id": "RRBGD-T1-053",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Puzzle",
+    "stem": "Four boxes, red, blue, green and yellow, are stacked one above another. Green is at the bottom. Red is somewhere above blue, and yellow is directly below red. Which box is second from the top?",
+    "options": [
+      "Green",
+      "Red",
+      "Yellow",
+      "Blue"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Green takes the bottom place. Red must be above blue with yellow directly under red, which works only as red, yellow, blue, green from the top. Second from the top is yellow."
+  },
+  {
+    "id": "RRBGD-T1-054",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Word formation",
+    "stem": "Which word can be formed using only the letters of the word EDUCATION, each letter used no more times than it appears?",
+    "options": [
+      "CAUTION",
+      "DOCTRINE",
+      "DONATES",
+      "AUDITION"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "CAUTION uses C, A, U, T, I, O, N, all in EDUCATION. AUDITION needs two I's, DOCTRINE needs an R and DONATES needs an S."
+  },
+  {
+    "id": "RRBGD-T1-055",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Course of action",
+    "stem": "Statement: Passengers complain that a busy level crossing near the town causes long traffic jams. Which course of action is the most suitable?",
+    "options": [
+      "Close the town's railway station",
+      "Ask people to stop using that road",
+      "Stop every train that passes the town",
+      "Study building an overbridge at the crossing"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A road overbridge removes the conflict between road and rail traffic. The other actions are impractical or cause far bigger problems than they solve."
+  },
+  {
+    "id": "RRBGD-T1-056",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdPhysics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Work and energy",
+    "stem": "How much work is done in lifting a 10 kg mass vertically through 2 m? (Take g = 10 m/s².)",
+    "options": [
+      "2,000 J",
+      "100 J",
+      "20 J",
+      "200 J"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Work = force x distance. The force needed is the weight, mg = 10 x 10 = 100 N, so work = 100 x 2 = 200 J."
+  },
+  {
+    "id": "RRBGD-T1-057",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Everyday chemicals",
+    "stem": "What is the chemical formula of washing soda?",
+    "options": [
+      "NaHCO₃",
+      "CaOCl₂",
+      "CaCO₃",
+      "Na₂CO₃·10H₂O"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Washing soda is sodium carbonate decahydrate, Na₂CO₃·10H₂O. NaHCO₃ is baking soda, CaCO₃ is limestone and CaOCl₂ is bleaching powder."
+  },
+  {
+    "id": "RRBGD-T1-058",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdBiology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Nutrition",
+    "stem": "Beriberi is caused by a deficiency of which vitamin?",
+    "options": [
+      "Vitamin A",
+      "Vitamin B1",
+      "Vitamin C",
+      "Vitamin D"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Beriberi, which weakens the nerves and muscles, comes from a lack of vitamin B1 (thiamine). It was common where people ate mostly polished rice. Lack of vitamin C causes scurvy, of vitamin D rickets and of vitamin A night blindness."
+  },
+  {
+    "id": "RRBGD-T1-059",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdPhysics",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Laws of motion",
+    "stem": "Which law states that for every action there is an equal and opposite reaction?",
+    "options": [
+      "Newton's first law",
+      "Newton's third law",
+      "Newton's second law",
+      "Law of gravitation"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Newton's third law: forces come in equal and opposite pairs acting on different bodies, as when a gun recoils. The first law is about inertia and the second relates force to acceleration."
+  },
+  {
+    "id": "RRBGD-T1-060",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdChemistry",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Metals",
+    "stem": "Rusting of iron needs the presence of both:",
+    "options": [
+      "Oxygen and carbon dioxide",
+      "Oxygen and moisture",
+      "Hydrogen and heat",
+      "Nitrogen and moisture"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Iron rusts when it reacts with oxygen in the presence of water, forming hydrated iron oxide. Painting or oiling keeps both away."
+  },
+  {
+    "id": "RRBGD-T1-061",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdBiology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Human body",
+    "stem": "Which is the first part of the small intestine, where bile and pancreatic juice are poured in?",
+    "options": [
+      "Duodenum",
+      "Oesophagus",
+      "Ileum",
+      "Colon"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Food leaving the stomach enters the duodenum, the first part of the small intestine, where bile from the liver and juice from the pancreas mix with it. The ileum is the last part of the small intestine and the colon is part of the large intestine."
+  },
+  {
+    "id": "RRBGD-T1-062",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdPhysics",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Motion",
+    "stem": "A car's speed rises from 10 m/s to 30 m/s in 5 seconds. What is its acceleration?",
+    "options": [
+      "2 m/s²",
+      "6 m/s²",
+      "8 m/s²",
+      "4 m/s²"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Acceleration = change in velocity / time = (30 - 10) / 5 = 4 m/s²."
+  },
+  {
+    "id": "RRBGD-T1-063",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdChemistry",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Atomic structure",
+    "stem": "What is the atomic number of carbon?",
+    "options": [
+      "8",
+      "6",
+      "12",
+      "14"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Carbon has 6 protons, so its atomic number is 6. Its common isotope has mass number 12."
+  },
+  {
+    "id": "RRBGD-T1-064",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdBiology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Diseases",
+    "stem": "Malaria is caused by which type of organism?",
+    "options": [
+      "Fungus",
+      "Bacterium",
+      "Virus",
+      "Protozoan"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Malaria is caused by Plasmodium, a protozoan, spread by the bite of the female Anopheles mosquito."
+  },
+  {
+    "id": "RRBGD-T1-065",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdPhysics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electricity",
+    "stem": "Three resistors of 2 Ω, 3 Ω and 5 Ω are joined in series. What is their total resistance?",
+    "options": [
+      "30 Ω",
+      "0.97 Ω",
+      "5 Ω",
+      "10 Ω"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "In series the resistances simply add: 2 + 3 + 5 = 10 Ω. About 0.97 Ω would be the result if they were joined in parallel."
+  },
+  {
+    "id": "RRBGD-T1-066",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdChemistry",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Periodic table",
+    "stem": "Which of these is a noble gas?",
+    "options": [
+      "Chlorine",
+      "Nitrogen",
+      "Oxygen",
+      "Argon"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Argon is in group 18 with helium and neon. Its outer shell is full, so it hardly reacts."
+  },
+  {
+    "id": "RRBGD-T1-067",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdBiology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Human body",
+    "stem": "Which blood vessel carries deoxygenated blood from the heart to the lungs?",
+    "options": [
+      "Pulmonary artery",
+      "Aorta",
+      "Vena cava",
+      "Pulmonary vein"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The pulmonary artery takes deoxygenated blood from the right ventricle to the lungs; it is the one artery that carries deoxygenated blood. The pulmonary veins bring oxygenated blood back, and the aorta carries oxygenated blood to the body."
+  },
+  {
+    "id": "RRBGD-T1-068",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdPhysics",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Work and energy",
+    "stem": "What kind of energy is stored in a stretched rubber band?",
+    "options": [
+      "Potential energy",
+      "Sound energy",
+      "Kinetic energy",
+      "Heat energy"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A stretched band stores elastic potential energy because of its changed shape. It turns into kinetic energy when the band is released."
+  },
+  {
+    "id": "RRBGD-T1-069",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdChemistry",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Acids and bases",
+    "stem": "What is the reaction of an acid with a base to form a salt and water called?",
+    "options": [
+      "Sublimation",
+      "Neutralisation",
+      "Oxidation",
+      "Decomposition"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Acid + base gives salt + water in a neutralisation reaction. Taking an antacid for acidity is an everyday example."
+  },
+  {
+    "id": "RRBGD-T1-070",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdBiology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Human body",
+    "stem": "What is the functional unit of the kidney?",
+    "options": [
+      "Nephron",
+      "Neuron",
+      "Alveolus",
+      "Villus"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Each kidney has about a million nephrons, which filter the blood and form urine. A neuron is a nerve cell, alveoli are air sacs and villi line the small intestine."
+  },
+  {
+    "id": "RRBGD-T1-071",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdPhysics",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Gravitation",
+    "stem": "What is the approximate value of the acceleration due to gravity near the Earth's surface?",
+    "options": [
+      "8.9 m/s²",
+      "1.6 m/s²",
+      "9.8 m/s²",
+      "98 m/s²"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "g is about 9.8 m/s² at the Earth's surface. About 1.6 m/s² is the value on the Moon."
+  },
+  {
+    "id": "RRBGD-T1-072",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Metals",
+    "stem": "Which metal is stored under kerosene because it reacts violently with air and water?",
+    "options": [
+      "Aluminium",
+      "Zinc",
+      "Sodium",
+      "Copper"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Sodium is so reactive that it catches fire in air and reacts violently with water, so it is kept under kerosene. Copper, aluminium and zinc can be kept in the open."
+  },
+  {
+    "id": "RRBGD-T1-073",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdBiology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Plants",
+    "stem": "Which plant hormone promotes cell division?",
+    "options": [
+      "Ethylene",
+      "Cytokinin",
+      "Auxin",
+      "Abscisic acid"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Cytokinins promote cell division and are found in fruits and seeds, where cells divide fast. Auxin helps cells grow longer, abscisic acid slows growth (for example, it makes leaves wilt) and ethylene ripens fruit."
+  },
+  {
+    "id": "RRBGD-T1-074",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdPhysics",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Electricity and magnetism",
+    "stem": "In which device is electrical energy mainly converted into mechanical energy?",
+    "options": [
+      "Electric generator",
+      "Transformer",
+      "Electric motor",
+      "Solar cell"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A motor uses electric current in a magnetic field to turn a shaft. A generator does the reverse, turning mechanical energy into electrical energy."
+  },
+  {
+    "id": "RRBGD-T1-075",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Metals",
+    "stem": "Bronze is an alloy of copper and which other metal?",
+    "options": [
+      "Tin",
+      "Zinc",
+      "Nickel",
+      "Aluminium"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Bronze is copper mixed with tin. Brass, a different alloy, is copper with zinc."
+  },
+  {
+    "id": "RRBGD-T1-076",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdBiology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Plants",
+    "stem": "What is the loss of water vapour from the leaves of a plant called?",
+    "options": [
+      "Germination",
+      "Photosynthesis",
+      "Transpiration",
+      "Respiration"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Water evaporates through the stomata of the leaves in transpiration. It helps pull water up through the xylem and cools the plant."
+  },
+  {
+    "id": "RRBGD-T1-077",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdPhysics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Light",
+    "stem": "What is the splitting of white light into its seven colours by a glass prism called?",
+    "options": [
+      "Dispersion",
+      "Refraction",
+      "Reflection",
+      "Scattering"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Dispersion happens because each colour bends by a different amount in glass; violet bends most and red least. A rainbow forms the same way in raindrops."
+  },
+  {
+    "id": "RRBGD-T1-078",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Everyday chemicals",
+    "stem": "What is the chemical name of quicklime?",
+    "options": [
+      "Calcium oxide",
+      "Calcium carbonate",
+      "Calcium hydroxide",
+      "Calcium sulphate"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Quicklime is calcium oxide, CaO. Adding water to it gives slaked lime, calcium hydroxide, which is used for whitewashing."
+  },
+  {
+    "id": "RRBGD-T1-079",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdBiology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Heredity",
+    "stem": "How many pairs of chromosomes are there in a normal human body cell?",
+    "options": [
+      "22",
+      "46",
+      "23",
+      "24"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A human body cell has 46 chromosomes in 23 pairs: 22 pairs of autosomes and one pair of sex chromosomes."
+  },
+  {
+    "id": "RRBGD-T1-080",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdPhysics",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sound",
+    "stem": "Sound cannot travel through which of these?",
+    "options": [
+      "Water",
+      "Wood",
+      "Air",
+      "A vacuum"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Sound is a mechanical wave and needs a medium of particles to carry it. It cannot pass through empty space, which is why there is no sound in outer space."
+  },
+  {
+    "id": "RRBGD-T1-081",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdGA",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Railways",
+    "stem": "India's first passenger train ran on 16 April 1853 from Bori Bunder in Bombay to which station?",
+    "options": [
+      "Pune",
+      "Surat",
+      "Thane",
+      "Kalyan"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The first passenger train in India ran about 34 km from Bori Bunder (Bombay) to Thane on 16 April 1853."
+  },
+  {
+    "id": "RRBGD-T1-082",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdGA",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Awards",
+    "stem": "Which is the highest civilian award of India?",
+    "options": [
+      "Param Vir Chakra",
+      "Padma Shri",
+      "Padma Vibhushan",
+      "Bharat Ratna"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Bharat Ratna is the highest civilian award, followed by the Padma Vibhushan, Padma Bhushan and Padma Shri. The Param Vir Chakra is the highest wartime gallantry award."
+  },
+  {
+    "id": "RRBGD-T1-083",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdGA",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "International organisations",
+    "stem": "In which city are the headquarters of the United Nations?",
+    "options": [
+      "Paris",
+      "Vienna",
+      "Geneva",
+      "New York"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The UN headquarters is in New York. Geneva and Vienna host other UN offices, and Paris is home to UNESCO."
+  },
+  {
+    "id": "RRBGD-T1-084",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdGA",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Modern history",
+    "stem": "Who was the first Prime Minister of India?",
+    "options": [
+      "Rajendra Prasad",
+      "Jawaharlal Nehru",
+      "Vallabhbhai Patel",
+      "C. Rajagopalachari"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Jawaharlal Nehru became the first Prime Minister in 1947. Vallabhbhai Patel was the first Deputy Prime Minister and Rajendra Prasad the first President."
+  },
+  {
+    "id": "RRBGD-T1-085",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdGA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Modern history",
+    "stem": "At the Battle of Buxar in 1764, the British East India Company defeated the combined forces of Mir Qasim, Shuja-ud-Daula and which Mughal emperor?",
+    "options": [
+      "Aurangzeb",
+      "Akbar II",
+      "Bahadur Shah Zafar",
+      "Shah Alam II"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Buxar (1764) was won by the Company over Mir Qasim of Bengal, Shuja-ud-Daula of Awadh and the Mughal emperor Shah Alam II. The Treaty of Allahabad (1765) then gave the Company the diwani of Bengal, Bihar and Orissa."
+  },
+  {
+    "id": "RRBGD-T1-086",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdGA",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Flora and fauna",
+    "stem": "Keoladeo National Park, famous for its water birds, is at Bharatpur in which state?",
+    "options": [
+      "Gujarat",
+      "Madhya Pradesh",
+      "Rajasthan",
+      "Haryana"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Keoladeo (once the Bharatpur Bird Sanctuary) is in Rajasthan and is a UNESCO World Heritage Site, known for the migratory birds that winter there."
+  },
+  {
+    "id": "RRBGD-T1-087",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdGA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Indian geography",
+    "stem": "The Siachen Glacier lies in which mountain range?",
+    "options": [
+      "Karakoram",
+      "Zanskar",
+      "Shivalik",
+      "Pir Panjal"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Siachen Glacier is in the eastern Karakoram range in Ladakh. The Shivaliks are the outermost foothills of the Himalaya."
+  },
+  {
+    "id": "RRBGD-T1-088",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdGA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Polity",
+    "stem": "The Rajya Sabha is a permanent House and is never dissolved. What share of its members retire every second year?",
+    "options": [
+      "Two-thirds",
+      "One-third",
+      "One-half",
+      "One-fourth"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Members serve six-year terms, and one-third of them retire every two years, so the House is never dissolved as a whole."
+  },
+  {
+    "id": "RRBGD-T1-089",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdGA",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Modern history",
+    "stem": "Who is known as the 'Iron Man of India' for uniting the princely states?",
+    "options": [
+      "Lala Lajpat Rai",
+      "Bhagat Singh",
+      "Vallabhbhai Patel",
+      "Gopal Krishna Gokhale"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Sardar Vallabhbhai Patel led the integration of more than 560 princely states into India after independence."
+  },
+  {
+    "id": "RRBGD-T1-090",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdGA",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sports",
+    "stem": "The Thomas Cup is associated with which sport?",
+    "options": [
+      "Table tennis",
+      "Badminton",
+      "Hockey",
+      "Tennis"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Thomas Cup is the men's world team championship in badminton; the Uber Cup is the women's."
+  },
+  {
+    "id": "RRBGD-T1-091",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdGA",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sports",
+    "stem": "How many players does each team have on the field at one time in a hockey match?",
+    "options": [
+      "12",
+      "11",
+      "7",
+      "9"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A field hockey team has 11 players on the field, including the goalkeeper."
+  },
+  {
+    "id": "RRBGD-T1-092",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdGA",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Art and culture",
+    "stem": "Bhangra is a folk dance of which state?",
+    "options": [
+      "Gujarat",
+      "Haryana",
+      "Punjab",
+      "Rajasthan"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Bhangra is a harvest folk dance of Punjab. Garba is from Gujarat and Ghoomar from Rajasthan."
+  },
+  {
+    "id": "RRBGD-T1-093",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdGA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Indian geography",
+    "stem": "Which state produces the most natural rubber in India?",
+    "options": [
+      "Kerala",
+      "Assam",
+      "Odisha",
+      "Karnataka"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Kerala grows most of India's natural rubber, mainly in its central and southern districts. Tripura is the next largest grower."
+  },
+  {
+    "id": "RRBGD-T1-094",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdGA",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Economy",
+    "stem": "In banking, what does NEFT stand for?",
+    "options": [
+      "New Electronic Finance Transfer",
+      "Net Electronic Fund Total",
+      "National Exchange Fund Tracker",
+      "National Electronic Funds Transfer"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "NEFT, National Electronic Funds Transfer, is the RBI-run system for sending money between bank accounts, now available round the clock."
+  },
+  {
+    "id": "RRBGD-T1-095",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdGA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Polity",
+    "stem": "Which Article of the Constitution of India says that there shall be a President of India?",
+    "options": [
+      "Article 356",
+      "Article 72",
+      "Article 61",
+      "Article 52"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Article 52 creates the office of the President. Article 61 sets out impeachment, Article 72 gives the power of pardon and Article 356 deals with President's rule in a state."
+  },
+  {
+    "id": "RRBGD-T1-096",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdGA",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Space",
+    "stem": "Which planet is best known for its bright, wide system of rings?",
+    "options": [
+      "Saturn",
+      "Venus",
+      "Mars",
+      "Mercury"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Saturn's rings, made of ice and rock, are easily seen through a small telescope. Jupiter, Uranus and Neptune also have rings, but they are faint."
+  },
+  {
+    "id": "RRBGD-T1-097",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdGA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Flora and fauna",
+    "stem": "India's first national park, set up in 1936 as Hailey National Park, is now known as:",
+    "options": [
+      "Jim Corbett National Park",
+      "Kaziranga National Park",
+      "Kanha National Park",
+      "Gir National Park"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Hailey National Park in present-day Uttarakhand was India's first national park. It was renamed Jim Corbett National Park in 1956 after the hunter turned conservationist."
+  },
+  {
+    "id": "RRBGD-T1-098",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdGA",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Monuments",
+    "stem": "Rani ki Vav, the stepwell at Patan listed as a UNESCO World Heritage Site, is in which state?",
+    "options": [
+      "Gujarat",
+      "Rajasthan",
+      "Karnataka",
+      "Madhya Pradesh"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Rani ki Vav is an 11th-century stepwell at Patan in Gujarat, built in memory of King Bhimdev I and listed by UNESCO in 2014. It appears on the back of the ₹100 note."
+  },
+  {
+    "id": "RRBGD-T1-099",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdGA",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Environment",
+    "stem": "World Environment Day is observed every year on:",
+    "options": [
+      "22 April",
+      "16 September",
+      "5 June",
+      "21 March"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "World Environment Day, led by the UN, is on 5 June. Earth Day is 22 April and World Ozone Day is 16 September."
+  },
+  {
+    "id": "RRBGD-T1-100",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rrbgdGA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Railways",
+    "stem": "Which zone of Indian Railways has its headquarters at Gorakhpur?",
+    "options": [
+      "Northeast Frontier Railway",
+      "East Central Railway",
+      "North Eastern Railway",
+      "Northern Railway"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "North Eastern Railway is headquartered at Gorakhpur. Northern Railway is at New Delhi, East Central Railway at Hajipur and Northeast Frontier Railway at Maligaon (Guwahati)."
+  },
+  {
+    "id": "RRBGD-T2-001",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdArithmetic",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Percentage",
+    "stem": "40% of a number is 168. What is the number?",
+    "options": [
+      "420",
+      "380",
+      "400",
+      "440"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "If 40% is 168, then 10% is 42 and 100% is 420."
+  },
+  {
+    "id": "RRBGD-T2-002",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdMaths",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "LCM and HCF",
+    "stem": "What is the LCM of 18, 24 and 30?",
+    "options": [
+      "120",
+      "360",
+      "180",
+      "720"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "18 = 2 x 3², 24 = 2³ x 3 and 30 = 2 x 3 x 5. The LCM takes the highest power of each prime: 2³ x 3² x 5 = 360."
+  },
+  {
+    "id": "RRBGD-T2-003",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Percentage",
+    "stem": "Anita's salary is 25% more than Bhavna's. By what percentage is Bhavna's salary less than Anita's?",
+    "options": [
+      "15%",
+      "25%",
+      "30%",
+      "20%"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Take Bhavna's salary as 100, so Anita's is 125. Bhavna earns 25 less, and 25 / 125 = 20% less. The base changes, so the answer is not 25%."
+  },
+  {
+    "id": "RRBGD-T2-004",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdMaths",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Fractions",
+    "stem": "What is 2/3 of 3/4 of 5/6 of 960?",
+    "options": [
+      "400",
+      "480",
+      "360",
+      "320"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "5/6 of 960 = 800, 3/4 of 800 = 600 and 2/3 of 600 = 400. Or multiply the fractions first: 2/3 x 3/4 x 5/6 = 5/12, and 5/12 of 960 = 400."
+  },
+  {
+    "id": "RRBGD-T2-005",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdArithmetic",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Profit and loss",
+    "stem": "By selling a table for ₹1,710, a carpenter gains 14%. What was his cost price?",
+    "options": [
+      "₹1,450",
+      "₹1,500",
+      "₹1,550",
+      "₹1,600"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "At a 14% gain the selling price is 114% of the cost. Cost = 1,710 / 1.14 = ₹1,500."
+  },
+  {
+    "id": "RRBGD-T2-006",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Discount",
+    "stem": "A trader marks his goods 40% above the cost price and then allows a discount of 25%. What is his profit or loss percentage?",
+    "options": [
+      "15% profit",
+      "5% profit",
+      "10% profit",
+      "5% loss"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Take the cost as 100. Marked price = 140, and after 25% off the selling price is 140 x 0.75 = 105. That is a 5% profit."
+  },
+  {
+    "id": "RRBGD-T2-007",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number system",
+    "stem": "What is the smallest number that must be added to 1,056 to make it exactly divisible by 23?",
+    "options": [
+      "2",
+      "3",
+      "21",
+      "1"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "23 x 45 = 1,035 and 23 x 46 = 1,058. 1,058 - 1,056 = 2. (21 is the remainder, which would have to be subtracted.)"
+  },
+  {
+    "id": "RRBGD-T2-008",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Simple interest",
+    "stem": "A sum of money becomes three times itself in 10 years at simple interest. What is the rate of interest per annum?",
+    "options": [
+      "25%",
+      "15%",
+      "20%",
+      "30%"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Becoming three times means the interest is twice the principal. 200 = 100 x R x 10 / 100, so R = 20%."
+  },
+  {
+    "id": "RRBGD-T2-009",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number system",
+    "stem": "What is the unit digit of 3^43?",
+    "options": [
+      "1",
+      "7",
+      "9",
+      "3"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Unit digits of powers of 3 repeat in a cycle of 4: 3, 9, 7, 1. 43 = 4 x 10 + 3, so 3^43 ends like 3^3 = 27, in 7."
+  },
+  {
+    "id": "RRBGD-T2-010",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdArithmetic",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Compound interest",
+    "stem": "What is the difference between the compound interest and the simple interest on ₹5,000 for 2 years at 6% per annum?",
+    "options": [
+      "₹18",
+      "₹36",
+      "₹30",
+      "₹12"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "For 2 years the difference is P x (R/100)² = 5,000 x 0.06 x 0.06 = ₹18. Check: SI = ₹600 and CI = 5,000 x 1.06² - 5,000 = ₹618."
+  },
+  {
+    "id": "RRBGD-T2-011",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdArithmetic",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ratio",
+    "stem": "Two numbers are in the ratio 3 : 8 and their sum is 132. What is the larger number?",
+    "options": [
+      "108",
+      "96",
+      "36",
+      "88"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "11 parts = 132, so one part = 12. The larger number is 8 x 12 = 96 (the smaller is 36)."
+  },
+  {
+    "id": "RRBGD-T2-012",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Algebra",
+    "stem": "If a − b = 5 and ab = 14, what is the value of a² + b²?",
+    "options": [
+      "53",
+      "45",
+      "39",
+      "67"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "a² + b² = (a - b)² + 2ab = 25 + 28 = 53."
+  },
+  {
+    "id": "RRBGD-T2-013",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Average",
+    "stem": "The average weight of 8 workers is 62 kg. When a new worker replaces one who weighs 55 kg, the average rises by 1.5 kg. How much does the new worker weigh?",
+    "options": [
+      "65 kg",
+      "67 kg",
+      "70 kg",
+      "63.5 kg"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The total rises by 8 x 1.5 = 12 kg, so the new worker is 12 kg heavier than the one replaced: 55 + 12 = 67 kg."
+  },
+  {
+    "id": "RRBGD-T2-014",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Quadratic equations",
+    "stem": "The equation x² − 7x + 12 = 0 has two roots. Which root is an even number?",
+    "options": [
+      "2",
+      "4",
+      "3",
+      "6"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "x² - 7x + 12 = (x - 3)(x - 4), so the roots are 3 and 4. The even one is 4."
+  },
+  {
+    "id": "RRBGD-T2-015",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ages",
+    "stem": "The sum of the present ages of a father and his son is 56 years. In 4 years the father will be three times as old as the son. What is the son's present age?",
+    "options": [
+      "16 years",
+      "12 years",
+      "14 years",
+      "10 years"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Let the son be S, so the father is 56 - S. In 4 years: 60 - S = 3(S + 4) = 3S + 12, so 4S = 48 and S = 12. The father is 44."
+  },
+  {
+    "id": "RRBGD-T2-016",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pipes and cisterns",
+    "stem": "Pipe P can fill a tank in 6 hours and pipe Q in 9 hours. If both are opened together, how long will they take to fill the empty tank?",
+    "options": [
+      "7 hours 30 minutes",
+      "3 hours 30 minutes",
+      "4 hours 12 minutes",
+      "3 hours 36 minutes"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Together they fill 1/6 + 1/9 = 3/18 + 2/18 = 5/18 of the tank an hour, so they need 18/5 = 3.6 hours, which is 3 hours 36 minutes."
+  },
+  {
+    "id": "RRBGD-T2-017",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdMaths",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Geometry",
+    "stem": "What does each interior angle of a regular octagon measure?",
+    "options": [
+      "108°",
+      "135°",
+      "144°",
+      "120°"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The interior angles of an octagon add up to (8 - 2) x 180° = 1,080°, so each of the 8 equal angles is 135°. 120° is a regular hexagon's angle."
+  },
+  {
+    "id": "RRBGD-T2-018",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdArithmetic",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Time and work",
+    "stem": "16 workers can lay a section of railway track in 18 days. How many workers are needed to lay the same section in 12 days?",
+    "options": [
+      "24",
+      "22",
+      "20",
+      "27"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The job needs 16 x 18 = 288 worker-days. In 12 days that takes 288 / 12 = 24 workers."
+  },
+  {
+    "id": "RRBGD-T2-019",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mensuration",
+    "stem": "The total surface area of a cube is 294 cm². What is its volume?",
+    "options": [
+      "343 cm³",
+      "512 cm³",
+      "294 cm³",
+      "216 cm³"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "6a² = 294, so a² = 49 and a = 7 cm. Volume = 7³ = 343 cm³."
+  },
+  {
+    "id": "RRBGD-T2-020",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Speed and distance",
+    "stem": "A man rides his scooter from home to his office at 30 km/h and returns along the same road at 50 km/h. What is his average speed for the whole journey?",
+    "options": [
+      "37.5 km/h",
+      "42.5 km/h",
+      "35 km/h",
+      "40 km/h"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "For equal distances the average speed is 2xy / (x + y) = 2 x 30 x 50 / 80 = 37.5 km/h, not the simple average of 40."
+  },
+  {
+    "id": "RRBGD-T2-021",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdArithmetic",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Trains",
+    "stem": "Two trains, 150 m and 210 m long, run on parallel tracks in opposite directions at 50 km/h and 58 km/h. How long do they take to pass each other completely?",
+    "options": [
+      "18 seconds",
+      "10 seconds",
+      "15 seconds",
+      "12 seconds"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "In opposite directions the speeds add: 108 km/h = 108 x 5/18 = 30 m/s. The distance is the sum of the lengths, 360 m, so the time is 360 / 30 = 12 s."
+  },
+  {
+    "id": "RRBGD-T2-022",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Trigonometry",
+    "stem": "If sin θ = 8/17 and θ is an acute angle, what is tan θ?",
+    "options": [
+      "15/8",
+      "15/17",
+      "8/15",
+      "17/8"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Take the opposite side 8 and the hypotenuse 17; the adjacent side is √(289 - 64) = √225 = 15. tan θ = opposite / adjacent = 8/15."
+  },
+  {
+    "id": "RRBGD-T2-023",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdArithmetic",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Mixtures",
+    "stem": "In what ratio must rice costing ₹42 per kg be mixed with rice costing ₹54 per kg to get a mixture worth ₹46 per kg?",
+    "options": [
+      "3 : 2",
+      "4 : 3",
+      "2 : 1",
+      "1 : 2"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "By alligation, cheaper : dearer = (54 - 46) : (46 - 42) = 8 : 4 = 2 : 1."
+  },
+  {
+    "id": "RRBGD-T2-024",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdMaths",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Statistics",
+    "stem": "What is the mode of 3, 5, 7, 5, 8, 3, 5, 9, 7?",
+    "options": [
+      "5",
+      "3",
+      "7",
+      "6"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The mode is the value that occurs most often. 5 occurs three times, while 3 and 7 occur twice each."
+  },
+  {
+    "id": "RRBGD-T2-025",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Percentage",
+    "stem": "In a panchayat election between two candidates, the winner got 62% of the valid votes and won by 5,520 votes. How many valid votes were cast?",
+    "options": [
+      "24,000",
+      "25,000",
+      "22,000",
+      "23,000"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The loser got 38%, so the margin is 62% - 38% = 24% of the valid votes. 24% = 5,520, so 1% = 230 and 100% = 23,000."
+  },
+  {
+    "id": "RRBGD-T2-026",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Analogy",
+    "stem": "Calf : Cow :: Puppy : ?",
+    "options": [
+      "Kitten",
+      "Lamb",
+      "Cat",
+      "Dog"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A calf is the young of a cow and a puppy is the young of a dog."
+  },
+  {
+    "id": "RRBGD-T2-027",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Blood relations",
+    "stem": "Pointing to a boy, Seema says, 'He is the son of the only brother of my mother.' How is the boy related to Seema?",
+    "options": [
+      "Cousin",
+      "Brother",
+      "Uncle",
+      "Nephew"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The only brother of Seema's mother is Seema's maternal uncle. His son is Seema's cousin."
+  },
+  {
+    "id": "RRBGD-T2-028",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Number analogy",
+    "stem": "11 : 121 :: 15 : ?",
+    "options": [
+      "225",
+      "165",
+      "255",
+      "215"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "121 is 11 squared, so the answer is 15 squared, 225."
+  },
+  {
+    "id": "RRBGD-T2-029",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Blood relations",
+    "stem": "P is the father of Q. Q is the sister of R. R is the husband of S. How is S related to P?",
+    "options": [
+      "Niece",
+      "Daughter",
+      "Sister-in-law",
+      "Daughter-in-law"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "R is Q's brother, so R is P's son. S is R's wife, so S is P's daughter-in-law."
+  },
+  {
+    "id": "RRBGD-T2-030",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Letter analogy",
+    "stem": "CAT : DCW :: DOG : ?",
+    "options": [
+      "EQJ",
+      "EPJ",
+      "FQJ",
+      "EQI"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The letters move +1, +2 and +3: C to D, A to C, T to W. So D to E, O to Q, G to J: EQJ."
+  },
+  {
+    "id": "RRBGD-T2-031",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Directions",
+    "stem": "From her house, Lata walks 8 km south and then 15 km west. What is the shortest distance between her and her house now?",
+    "options": [
+      "7 km",
+      "19 km",
+      "23 km",
+      "17 km"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The two walks are at right angles, so the straight-line distance is √(8² + 15²) = √(64 + 225) = √289 = 17 km."
+  },
+  {
+    "id": "RRBGD-T2-032",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Classification",
+    "stem": "Find the odd one out: Copper, Silver, Brass, Iron",
+    "options": [
+      "Brass",
+      "Silver",
+      "Copper",
+      "Iron"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Copper, silver and iron are metallic elements. Brass is an alloy of copper and zinc."
+  },
+  {
+    "id": "RRBGD-T2-033",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Directions",
+    "stem": "Rahul's school is to the north-east of his house. In which direction is his house from the school?",
+    "options": [
+      "North-east",
+      "South-west",
+      "North-west",
+      "South-east"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Looking back the other way reverses the direction: the opposite of north-east is south-west."
+  },
+  {
+    "id": "RRBGD-T2-034",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Classification",
+    "stem": "Find the odd one out: 17, 23, 29, 33",
+    "options": [
+      "29",
+      "17",
+      "23",
+      "33"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "17, 23 and 29 are prime numbers. 33 = 3 x 11 is not prime."
+  },
+  {
+    "id": "RRBGD-T2-035",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Syllogism",
+    "stem": "Statements: No bus is a car. All cars are vehicles. Conclusions: I. Some vehicles are not buses. II. All vehicles are cars. Which conclusion follows?",
+    "options": [
+      "Only II follows",
+      "Only I follows",
+      "Neither I nor II follows",
+      "Both I and II follow"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The cars are vehicles that are not buses, so some vehicles are not buses: I follows. 'All cars are vehicles' cannot be turned round to 'all vehicles are cars', so II does not follow."
+  },
+  {
+    "id": "RRBGD-T2-036",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "What comes next? 2, 9, 28, 65, 126, ?",
+    "options": [
+      "217",
+      "218",
+      "216",
+      "215"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Each term is one more than a cube: 1³ + 1, 2³ + 1, 3³ + 1, 4³ + 1, 5³ + 1. Next is 6³ + 1 = 217."
+  },
+  {
+    "id": "RRBGD-T2-037",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ranking",
+    "stem": "In a queue, Deepa is 9th from the front and 16th from the back. How many people are in the queue?",
+    "options": [
+      "26",
+      "25",
+      "23",
+      "24"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Total = position from the front + position from the back - 1 = 9 + 16 - 1 = 24. Deepa is counted in both numbers, so she is subtracted once."
+  },
+  {
+    "id": "RRBGD-T2-038",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "What comes next? 120, 99, 80, 63, 48, ?",
+    "options": [
+      "36",
+      "33",
+      "35",
+      "37"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The differences are 21, 19, 17, 15, falling by 2 each time. The next difference is 13, and 48 - 13 = 35. (The terms are 11² - 1, 10² - 1, and so on.)"
+  },
+  {
+    "id": "RRBGD-T2-039",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ranking",
+    "stem": "Among A, B, C, D and E, B scored more than A but less than E. D scored less than A. C scored the most. Who scored the least?",
+    "options": [
+      "E",
+      "D",
+      "B",
+      "A"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "From highest: C, E, B, A, D. D scored the least."
+  },
+  {
+    "id": "RRBGD-T2-040",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Letter series",
+    "stem": "What comes next? Z, X, U, Q, L, ?",
+    "options": [
+      "G",
+      "F",
+      "E",
+      "H"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The positions are 26, 24, 21, 17, 12, falling by 2, 3, 4, 5. The next fall is 6, giving position 6, which is F."
+  },
+  {
+    "id": "RRBGD-T2-041",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdLogical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Seating arrangement",
+    "stem": "Six people A, B, C, D, E and F sit in a row facing north. C is third from the left and A is at the right end. B sits immediately to the left of C. F sits immediately to the left of A, and E sits between C and F. Who sits at the left end?",
+    "options": [
+      "D",
+      "E",
+      "B",
+      "F"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Seats from the left: B is 2nd, C is 3rd, A is 6th and F is 5th. E fills the 4th seat between C and F, which leaves the 1st seat for D."
+  },
+  {
+    "id": "RRBGD-T2-042",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Coding-decoding",
+    "stem": "If GRAPE is coded as JUDSH, how is LEMON coded?",
+    "options": [
+      "NGORP",
+      "OHPRQ",
+      "OHPQR",
+      "OHQRQ"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Each letter moves 3 places forward: G to J, R to U, A to D, P to S, E to H. LEMON becomes O, H, P, R, Q."
+  },
+  {
+    "id": "RRBGD-T2-043",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Calendar",
+    "stem": "1 January 2026 is a Thursday. What day of the week is 26 January 2026?",
+    "options": [
+      "Monday",
+      "Thursday",
+      "Tuesday",
+      "Sunday"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "26 January is 25 days after 1 January. 25 = 3 weeks + 4 days, and 4 days after Thursday is Monday."
+  },
+  {
+    "id": "RRBGD-T2-044",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Coding-decoding",
+    "stem": "In a code language, 'sky is blue' is written 'ta na ka', 'blue water flows' is 'ka pi ro' and 'water is cool' is 'pi na su'. What is the code for 'blue'?",
+    "options": [
+      "ka",
+      "na",
+      "ta",
+      "pi"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "'blue' is the only word common to the first two sentences, and 'ka' is the only code common to them, so blue = ka. ('is' = na and 'water' = pi.)"
+  },
+  {
+    "id": "RRBGD-T2-045",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Clock",
+    "stem": "How many times do the hour hand and the minute hand of a clock point in exactly the same direction in 12 hours?",
+    "options": [
+      "11",
+      "24",
+      "10",
+      "12"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The hands coincide once roughly every 65 5/11 minutes, so 11 times in 12 hours. There is no separate meeting between 11 and 1 because the meeting at 12 o'clock counts once."
+  },
+  {
+    "id": "RRBGD-T2-046",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mathematical operations",
+    "stem": "If A means '+', B means '−', C means '×' and D means '÷', what is the value of 24 D 4 C 3 B 5 A 2?",
+    "options": [
+      "11",
+      "15",
+      "19",
+      "13"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The expression is 24 ÷ 4 × 3 - 5 + 2. Working left to right for ÷ and ×: 6 × 3 = 18, then 18 - 5 + 2 = 15."
+  },
+  {
+    "id": "RRBGD-T2-047",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Statement and assumption",
+    "stem": "Statement: A notice at the station says, 'Book your train ticket online and avoid the queue.' Which assumption is implicit in the notice?",
+    "options": [
+      "Online booking is open to the readers",
+      "Every passenger owns a computer",
+      "The counter queue never moves at all",
+      "Counter tickets cost more than online"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The advice only makes sense if the people reading it can book online. It does not assume that everyone has a computer, that the queue never moves, or anything about fares."
+  },
+  {
+    "id": "RRBGD-T2-048",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Logical order",
+    "stem": "Arrange in a meaningful order: 1. Adult  2. Child  3. Infant  4. Old age  5. Adolescent",
+    "options": [
+      "2, 3, 5, 1, 4",
+      "3, 2, 1, 5, 4",
+      "3, 2, 5, 1, 4",
+      "3, 5, 2, 1, 4"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The stages of life in order are infant, child, adolescent, adult and old age: 3, 2, 5, 1, 4."
+  },
+  {
+    "id": "RRBGD-T2-049",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Venn relationship",
+    "stem": "Which set of three items shows two overlapping groups that both lie wholly inside a third group?",
+    "options": [
+      "Women, Doctors, Human beings",
+      "Pens, Pencils, Erasers",
+      "Asia, India, Delhi",
+      "Cats, Dogs, Animals"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Some women are doctors, so the two groups overlap, and all women and all doctors are human beings. Cats and dogs do not overlap, pens, pencils and erasers are all separate, and Asia, India, Delhi is a chain."
+  },
+  {
+    "id": "RRBGD-T2-050",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Alphabet",
+    "stem": "If the English alphabet is written in reverse order, which letter will be 10th to the right of W?",
+    "options": [
+      "M",
+      "G",
+      "N",
+      "L"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Reversed, the alphabet runs Z, Y, X, W, V, U, ... so W is 4th from the left. The 10th letter to its right is 14th from the left, which in the reversed alphabet is the 13th letter of the normal alphabet (27 - 14 = 13), M."
+  },
+  {
+    "id": "RRBGD-T2-051",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Data sufficiency",
+    "stem": "Is the whole number N even? Statement I: N is divisible by 3. Statement II: N is divisible by 6. Which statements are enough to answer?",
+    "options": [
+      "Statement II alone is enough",
+      "Statement I alone is enough",
+      "Both together are not enough",
+      "I and II together are needed"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Every multiple of 6 is a multiple of 2, so II alone shows N is even. Multiples of 3 can be odd or even (9 or 12), so I alone is not enough."
+  },
+  {
+    "id": "RRBGD-T2-052",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdVerbal",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Missing number",
+    "stem": "The third number in each group follows the same rule: (2, 5, 13), (3, 4, 31), (4, 6, ?). Find the missing number.",
+    "options": [
+      "70",
+      "76",
+      "68",
+      "22"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The rule is the cube of the first number plus the second: 2³ + 5 = 13 and 3³ + 4 = 31. So 4³ + 6 = 64 + 6 = 70."
+  },
+  {
+    "id": "RRBGD-T2-053",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Puzzle",
+    "stem": "Five trains leave a station one after another. The Passenger leaves before the Express. The Express leaves before the Mail. The Local leaves immediately after the Express, and the Goods train leaves last. Which train leaves third?",
+    "options": [
+      "Mail",
+      "Passenger",
+      "Local",
+      "Express"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Goods train is 5th. The Express needs the Passenger before it and the Local right after it, with the Mail later still, so the order is Passenger, Express, Local, Mail, Goods. The Local is third."
+  },
+  {
+    "id": "RRBGD-T2-054",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Word formation",
+    "stem": "Which word CANNOT be formed using the letters of the word TRANSPORT?",
+    "options": [
+      "STRONG",
+      "SPORT",
+      "TRAPS",
+      "PARROT"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "TRANSPORT has T, R, A, N, S, P, O, R, T, with two R's and two T's but no G, so STRONG cannot be made. PARROT uses its two R's."
+  },
+  {
+    "id": "RRBGD-T2-055",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Course of action",
+    "stem": "Statement: Tests show that the water of a village well contains harmful bacteria. Which course of action is the most suitable?",
+    "options": [
+      "Treat the well and advise boiling water",
+      "Ignore it, as the water looks clear",
+      "Seal every well in the district at once",
+      "Tell villagers to drink no water at all"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Treating the well fixes the cause, and boiling water protects people meanwhile. The other choices are excessive, impossible or unsafe."
+  },
+  {
+    "id": "RRBGD-T2-056",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdPhysics",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Laws of motion",
+    "stem": "The momentum of a body is the product of its:",
+    "options": [
+      "Force and time",
+      "Weight and height",
+      "Mass and velocity",
+      "Mass and acceleration"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Momentum p = mv. Mass x acceleration is force, and force x time is impulse (the change in momentum)."
+  },
+  {
+    "id": "RRBGD-T2-057",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Everyday chemicals",
+    "stem": "What is the chemical formula of plaster of Paris?",
+    "options": [
+      "Ca(OH)₂",
+      "CaSO₄·½H₂O",
+      "CaSO₄·2H₂O",
+      "CaCO₃"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Plaster of Paris is calcium sulphate hemihydrate, CaSO₄·½H₂O. Mixed with water it sets hard as gypsum, CaSO₄·2H₂O, which is why it is used for casts on broken bones."
+  },
+  {
+    "id": "RRBGD-T2-058",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdBiology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Nutrition",
+    "stem": "Night blindness is caused by a deficiency of:",
+    "options": [
+      "Vitamin K",
+      "Vitamin E",
+      "Vitamin B1",
+      "Vitamin A"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Vitamin A is needed to make the light-sensitive pigment of the retina. Carrots, green leafy vegetables and milk are good sources."
+  },
+  {
+    "id": "RRBGD-T2-059",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdPhysics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Work and energy",
+    "stem": "An object of mass 2 kg moves at 3 m/s. What is its kinetic energy?",
+    "options": [
+      "12 J",
+      "9 J",
+      "6 J",
+      "18 J"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "KE = ½mv² = ½ x 2 x 3² = 9 J."
+  },
+  {
+    "id": "RRBGD-T2-060",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdChemistry",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Matter",
+    "stem": "Which of these is a physical change?",
+    "options": [
+      "Burning of paper",
+      "Rusting of iron",
+      "Souring of milk",
+      "Melting of ice"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Melting changes only the state; the water can be frozen again. Burning, rusting and souring form new substances, so they are chemical changes."
+  },
+  {
+    "id": "RRBGD-T2-061",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdBiology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Human body",
+    "stem": "The ability of the eye lens to change its focal length so that both near and distant objects are seen clearly is called:",
+    "options": [
+      "Accommodation",
+      "Persistence of vision",
+      "Refraction",
+      "Dispersion"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The ciliary muscles change the curvature of the eye lens, and so its focal length, in accommodation. When this weakens with age, a person finds it hard to read up close (presbyopia)."
+  },
+  {
+    "id": "RRBGD-T2-062",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdPhysics",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Electricity",
+    "stem": "A 12 V battery is connected across a 4 Ω resistor. What current flows?",
+    "options": [
+      "48 A",
+      "0.33 A",
+      "8 A",
+      "3 A"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "By Ohm's law, I = V / R = 12 / 4 = 3 A."
+  },
+  {
+    "id": "RRBGD-T2-063",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Atomic structure",
+    "stem": "What is the largest number of electrons the first shell (K shell) of an atom can hold?",
+    "options": [
+      "2",
+      "18",
+      "4",
+      "8"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A shell can hold 2n² electrons. For the first shell, n = 1, so it holds 2. The second shell holds 8 and the third 18."
+  },
+  {
+    "id": "RRBGD-T2-064",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdBiology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Diseases",
+    "stem": "Which of these diseases is caused by a bacterium?",
+    "options": [
+      "Tuberculosis",
+      "Polio",
+      "Dengue",
+      "Chickenpox"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Tuberculosis is caused by the bacterium Mycobacterium tuberculosis. Chickenpox, polio and dengue are viral diseases."
+  },
+  {
+    "id": "RRBGD-T2-065",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdPhysics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Light",
+    "stem": "What is the power of a convex lens of focal length 50 cm?",
+    "options": [
+      "+0.5 D",
+      "−2 D",
+      "+50 D",
+      "+2 D"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Power in dioptres = 1 / focal length in metres = 1 / 0.5 = +2 D. A convex (converging) lens has positive power."
+  },
+  {
+    "id": "RRBGD-T2-066",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdChemistry",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Everyday chemicals",
+    "stem": "Bleaching powder is commonly used to:",
+    "options": [
+      "Make window glass",
+      "Reduce acidity of soil",
+      "Disinfect drinking water",
+      "Set a broken bone"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Bleaching powder releases chlorine, which kills germs, so it is used to disinfect drinking water. Lime reduces soil acidity and plaster of Paris sets broken bones."
+  },
+  {
+    "id": "RRBGD-T2-067",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdBiology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Heredity",
+    "stem": "In human beings, the sex of a child is decided by the chromosome received from:",
+    "options": [
+      "The father",
+      "Both parents equally",
+      "The mother",
+      "The grandparents"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The mother always passes on an X chromosome. The father passes on either X (a girl, XX) or Y (a boy, XY), so his sperm decides the sex."
+  },
+  {
+    "id": "RRBGD-T2-068",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdPhysics",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Light",
+    "stem": "The blue colour of the clear sky is due to:",
+    "options": [
+      "Reflection of light",
+      "Refraction of light",
+      "Absorption of light",
+      "Scattering of light"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Tiny particles and gas molecules in the air scatter short blue wavelengths much more than red, so blue light reaches the eye from every part of the sky."
+  },
+  {
+    "id": "RRBGD-T2-069",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdChemistry",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Chemical reactions",
+    "stem": "Which gas causes the smell of rotten eggs?",
+    "options": [
+      "Hydrogen sulphide",
+      "Chlorine",
+      "Methane",
+      "Ammonia"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Hydrogen sulphide, H₂S, has the smell of rotten eggs. Ammonia has a sharp, choking smell and methane has no smell."
+  },
+  {
+    "id": "RRBGD-T2-070",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdBiology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Human body",
+    "stem": "Where in the lungs does the exchange of oxygen and carbon dioxide take place?",
+    "options": [
+      "Larynx",
+      "Trachea",
+      "Bronchi",
+      "Alveoli"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The alveoli are tiny air sacs with thin walls surrounded by capillaries, where gases pass between air and blood. The trachea and bronchi only carry air."
+  },
+  {
+    "id": "RRBGD-T2-071",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdPhysics",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Motion",
+    "stem": "Which of these quantities is a vector?",
+    "options": [
+      "Temperature",
+      "Mass",
+      "Velocity",
+      "Speed"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A vector has both size and direction. Velocity is speed in a stated direction; speed, mass and temperature have size only."
+  },
+  {
+    "id": "RRBGD-T2-072",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Carbon compounds",
+    "stem": "What is the main constituent of LPG used as cooking gas?",
+    "options": [
+      "Methane",
+      "Hydrogen",
+      "Ethane",
+      "Butane"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "LPG (liquefied petroleum gas) is mainly butane, with some propane. CNG is mainly methane."
+  },
+  {
+    "id": "RRBGD-T2-073",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdBiology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Human body",
+    "stem": "Which hormone is called the emergency or 'fight or flight' hormone?",
+    "options": [
+      "Thyroxine",
+      "Oestrogen",
+      "Adrenaline",
+      "Insulin"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Adrenaline from the adrenal glands raises the heart rate and breathing to prepare the body for sudden action."
+  },
+  {
+    "id": "RRBGD-T2-074",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdPhysics",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Pressure",
+    "stem": "Pressure is defined as:",
+    "options": [
+      "Work per unit time",
+      "Force per unit volume",
+      "Mass per unit volume",
+      "Force per unit area"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Pressure = force / area, measured in pascals. Mass per unit volume is density and work per unit time is power."
+  },
+  {
+    "id": "RRBGD-T2-075",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Atomic structure",
+    "stem": "Isotopes of an element have the same number of:",
+    "options": [
+      "Protons",
+      "Nucleons",
+      "Mass number",
+      "Neutrons"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Isotopes have the same atomic number (protons) but different numbers of neutrons, so their mass numbers differ. Carbon-12 and carbon-14 are an example."
+  },
+  {
+    "id": "RRBGD-T2-076",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdBiology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Plants",
+    "stem": "What is the male reproductive part of a flower called?",
+    "options": [
+      "Stamen",
+      "Sepal",
+      "Ovary",
+      "Pistil"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The stamen (anther and filament) makes pollen. The pistil, with the ovary, is the female part, and sepals protect the bud."
+  },
+  {
+    "id": "RRBGD-T2-077",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdPhysics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electricity",
+    "stem": "The commercial unit of electrical energy, 1 kilowatt hour (kWh), is equal to:",
+    "options": [
+      "1,000 J",
+      "3.6 × 10⁶ J",
+      "3.6 × 10³ J",
+      "6.3 × 10⁶ J"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "1 kWh = 1,000 W x 3,600 s = 3,600,000 J = 3.6 x 10⁶ J. This is the 'unit' on an electricity bill."
+  },
+  {
+    "id": "RRBGD-T2-078",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Acids and bases",
+    "stem": "Aqua regia, which can dissolve gold, is a fresh mixture of concentrated hydrochloric acid and concentrated nitric acid in which ratio?",
+    "options": [
+      "1 : 3",
+      "2 : 1",
+      "3 : 1",
+      "1 : 1"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Aqua regia ('royal water') is 3 parts concentrated hydrochloric acid to 1 part concentrated nitric acid. It can dissolve gold and platinum, which neither acid can do on its own."
+  },
+  {
+    "id": "RRBGD-T2-079",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdBiology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ecology",
+    "stem": "Animals that eat only plants are called:",
+    "options": [
+      "Decomposers",
+      "Omnivores",
+      "Herbivores",
+      "Carnivores"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Herbivores such as cows and deer eat only plants. Carnivores eat animals and omnivores eat both."
+  },
+  {
+    "id": "RRBGD-T2-080",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdPhysics",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sound",
+    "stem": "An echo is heard because sound is:",
+    "options": [
+      "Diffracted",
+      "Refracted",
+      "Absorbed",
+      "Reflected"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An echo is sound reflected back from a distant surface such as a cliff or a large wall."
+  },
+  {
+    "id": "RRBGD-T2-081",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdGA",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Indian geography",
+    "stem": "Which is the oldest mountain range in India?",
+    "options": [
+      "Satpura",
+      "Himalaya",
+      "Aravalli",
+      "Western Ghats"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Aravallis, running through Rajasthan, Haryana and Delhi, are among the oldest fold mountains in the world. The Himalaya is one of the youngest."
+  },
+  {
+    "id": "RRBGD-T2-082",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdGA",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Art and culture",
+    "stem": "The Hornbill Festival is held every December in which state?",
+    "options": [
+      "Mizoram",
+      "Sikkim",
+      "Assam",
+      "Nagaland"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Hornbill Festival, the 'festival of festivals', brings together Nagaland's tribes at Kisama Heritage Village near Kohima every December."
+  },
+  {
+    "id": "RRBGD-T2-083",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdGA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "International organisations",
+    "stem": "Where are the headquarters of the International Monetary Fund (IMF)?",
+    "options": [
+      "New York",
+      "Washington, D.C.",
+      "Geneva",
+      "London"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The IMF and the World Bank both have their headquarters in Washington, D.C."
+  },
+  {
+    "id": "RRBGD-T2-084",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdGA",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Polity",
+    "stem": "In which year did India become a republic?",
+    "options": [
+      "1947",
+      "1952",
+      "1949",
+      "1950"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Constitution came into force on 26 January 1950, making India a republic. Republic Day marks this date."
+  },
+  {
+    "id": "RRBGD-T2-085",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdGA",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Art and culture",
+    "stem": "The famous Rath Yatra of Puri takes place in which state?",
+    "options": [
+      "West Bengal",
+      "Odisha",
+      "Bihar",
+      "Andhra Pradesh"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Rath Yatra of Lord Jagannath is held at Puri in Odisha every year."
+  },
+  {
+    "id": "RRBGD-T2-086",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdGA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Awards",
+    "stem": "The Dronacharya Award is given to:",
+    "options": [
+      "Sports coaches",
+      "Film directors",
+      "School teachers",
+      "Leading athletes"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Dronacharya Award honours outstanding sports coaches. Athletes receive the Arjuna Award."
+  },
+  {
+    "id": "RRBGD-T2-087",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdGA",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sports",
+    "stem": "The Wimbledon Championships are associated with which sport?",
+    "options": [
+      "Tennis",
+      "Golf",
+      "Badminton",
+      "Squash"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Wimbledon, held in London, is the oldest of tennis's four Grand Slam tournaments and is played on grass."
+  },
+  {
+    "id": "RRBGD-T2-088",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdGA",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Indian geography",
+    "stem": "Which is the smallest Union Territory of India by area?",
+    "options": [
+      "Chandigarh",
+      "Delhi",
+      "Lakshadweep",
+      "Puducherry"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Lakshadweep, a group of islands in the Arabian Sea, covers only about 32 square kilometres, the smallest of the Union Territories."
+  },
+  {
+    "id": "RRBGD-T2-089",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdGA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ancient history",
+    "stem": "Who composed the Allahabad Pillar inscription (Prayag Prashasti) praising Samudragupta?",
+    "options": [
+      "Banabhatta",
+      "Harisena",
+      "Kalidasa",
+      "Kautilya"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Harisena, the court poet of Samudragupta, wrote the Prayag Prashasti on the Allahabad Pillar, describing the Gupta king's conquests. Banabhatta wrote the Harshacharita about Harsha, and Kautilya the Arthashastra."
+  },
+  {
+    "id": "RRBGD-T2-090",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdGA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Modern history",
+    "stem": "At which session in 1929 did the Indian National Congress pass the Purna Swaraj (complete independence) resolution?",
+    "options": [
+      "Karachi",
+      "Lahore",
+      "Lucknow",
+      "Calcutta"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Lahore session of December 1929, presided over by Jawaharlal Nehru, adopted Purna Swaraj as the goal, and 26 January 1930 was observed as Independence Day."
+  },
+  {
+    "id": "RRBGD-T2-091",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdGA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Polity",
+    "stem": "Under which Article of the Constitution of India can a Financial Emergency be proclaimed?",
+    "options": [
+      "Article 352",
+      "Article 368",
+      "Article 356",
+      "Article 360"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Article 360 covers a Financial Emergency, which has never been proclaimed. Article 352 is a National Emergency, Article 356 is President's rule in a state and Article 368 deals with amending the Constitution."
+  },
+  {
+    "id": "RRBGD-T2-092",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdGA",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Polity",
+    "stem": "What is the minimum age to become a member of the Rajya Sabha?",
+    "options": [
+      "21 years",
+      "30 years",
+      "35 years",
+      "25 years"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A member of the Rajya Sabha must be at least 30 years old. The minimum for the Lok Sabha is 25."
+  },
+  {
+    "id": "RRBGD-T2-093",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdGA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Economy",
+    "stem": "In banking, what does IFSC stand for?",
+    "options": [
+      "Inter-Finance Service Code",
+      "Indian Fund Settlement Charge",
+      "Indian Financial System Code",
+      "International Fund Security Code"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Indian Financial System Code is the 11-character code that identifies a bank branch for NEFT, RTGS and IMPS transfers. The first four characters stand for the bank."
+  },
+  {
+    "id": "RRBGD-T2-094",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdGA",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Indian geography",
+    "stem": "Black soil is also known as:",
+    "options": [
+      "Bhabar",
+      "Regur",
+      "Laterite",
+      "Alluvium"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Black soil, called regur, forms from weathered lava rocks of the Deccan plateau and holds moisture well."
+  },
+  {
+    "id": "RRBGD-T2-095",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdGA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "World geography",
+    "stem": "Which strait separates Asia from North America?",
+    "options": [
+      "Strait of Gibraltar",
+      "Bass Strait",
+      "Strait of Malacca",
+      "Bering Strait"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Bering Strait lies between Russia and Alaska. Gibraltar separates Europe from Africa and Malacca lies between Malaysia and Sumatra."
+  },
+  {
+    "id": "RRBGD-T2-096",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdGA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Art and culture",
+    "stem": "Sattriya is a classical dance form of which state?",
+    "options": [
+      "Assam",
+      "Odisha",
+      "Manipur",
+      "Tripura"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Sattriya began in the Vaishnava monasteries (sattras) of Assam. Manipuri comes from Manipur and Odissi from Odisha."
+  },
+  {
+    "id": "RRBGD-T2-097",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdGA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Environment",
+    "stem": "Which group of chemicals is mainly responsible for the depletion of the ozone layer?",
+    "options": [
+      "Chlorofluorocarbons",
+      "Nitrogen",
+      "Argon",
+      "Carbon monoxide"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Chlorofluorocarbons (CFCs), once used in refrigerators and aerosol sprays, release chlorine that breaks down ozone. The Montreal Protocol phased them out."
+  },
+  {
+    "id": "RRBGD-T2-098",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdGA",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Transport",
+    "stem": "The Golden Quadrilateral highway network connects Delhi, Mumbai, Chennai and which other city?",
+    "options": [
+      "Ahmedabad",
+      "Kolkata",
+      "Hyderabad",
+      "Bengaluru"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Golden Quadrilateral links India's four major metros: Delhi, Mumbai, Chennai and Kolkata."
+  },
+  {
+    "id": "RRBGD-T2-099",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdGA",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Inventions",
+    "stem": "Who invented the telephone?",
+    "options": [
+      "Guglielmo Marconi",
+      "Thomas Edison",
+      "Alexander Graham Bell",
+      "Michael Faraday"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Alexander Graham Bell patented the telephone in 1876. Marconi pioneered radio and Faraday discovered electromagnetic induction."
+  },
+  {
+    "id": "RRBGD-T2-100",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rrbgdGA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Railways",
+    "stem": "Which train is India's first indigenously built semi-high-speed train set?",
+    "options": [
+      "Shatabdi Express",
+      "Vande Bharat Express",
+      "Rajdhani Express",
+      "Gatimaan Express"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Vande Bharat Express, first called Train 18, was designed and built at the Integral Coach Factory, Chennai, and began service in 2019."
+  },
+  {
+    "id": "RRBGD-D-001",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rrbgdArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Profit and loss",
+    "stem": "A shopkeeper buys 20 pens for ₹200 and sells 15 pens for ₹180. What is his profit percentage?",
+    "options": [
+      "25%",
+      "20%",
+      "15%",
+      "18%"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Cost of one pen = 200 / 20 = ₹10 and selling price of one pen = 180 / 15 = ₹12. Profit = 2 on 10 = 20%."
+  },
+  {
+    "id": "RRBGD-D-002",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rrbgdMaths",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Number system",
+    "stem": "Which of these is a prime number?",
+    "options": [
+      "91",
+      "87",
+      "51",
+      "97"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "97 has no factor other than 1 and itself. 91 = 7 x 13, 87 = 3 x 29 and 51 = 3 x 17."
+  },
+  {
+    "id": "RRBGD-D-003",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rrbgdArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Compound interest",
+    "stem": "What is the compound interest on ₹6,000 for 2 years at 5% per annum, compounded annually?",
+    "options": [
+      "₹605",
+      "₹600",
+      "₹615",
+      "₹630"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Amount = 6,000 x 1.05 x 1.05 = 6,000 x 1.1025 = ₹6,615, so the interest is ₹615."
+  },
+  {
+    "id": "RRBGD-D-004",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rrbgdMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Decimals",
+    "stem": "What is the recurring decimal 0.363636... written as a fraction in its lowest terms?",
+    "options": [
+      "36/100",
+      "4/11",
+      "9/25",
+      "3/11"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A two-digit repeating block goes over 99: 0.3636... = 36/99, which simplifies to 4/11."
+  },
+  {
+    "id": "RRBGD-D-005",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rrbgdArithmetic",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Speed and distance",
+    "stem": "Walking at 5 km/h, Hari reaches the station 6 minutes late. Walking at 6 km/h, he reaches 4 minutes early. How far is the station?",
+    "options": [
+      "6 km",
+      "4 km",
+      "7.5 km",
+      "5 km"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The two times differ by 10 minutes = 1/6 hour. d/5 - d/6 = d/30 = 1/6, so d = 5 km."
+  },
+  {
+    "id": "RRBGD-D-006",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rrbgdMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mensuration",
+    "stem": "The diagonal of a square is 12√2 cm. What is the area of the square?",
+    "options": [
+      "288 cm²",
+      "196 cm²",
+      "72 cm²",
+      "144 cm²"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The diagonal of a square is side x √2, so the side is 12 cm and the area is 144 cm². (Also: area = diagonal² / 2 = 288 / 2.)"
+  },
+  {
+    "id": "RRBGD-D-007",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rrbgdArithmetic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ratio",
+    "stem": "₹3,900 is divided among A, B and C in the ratio 1/2 : 1/3 : 1/4. How much does C get?",
+    "options": [
+      "₹975",
+      "₹1,800",
+      "₹900",
+      "₹1,200"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Multiply each fraction by 12 to get 6 : 4 : 3, which has 13 parts. One part = 3,900 / 13 = ₹300, so C gets 3 x 300 = ₹900."
+  },
+  {
+    "id": "RRBGD-D-008",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rrbgdMaths",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Trigonometry",
+    "stem": "What is the value of tan 60° × cot 30°?",
+    "options": [
+      "1",
+      "3",
+      "√3",
+      "1/3"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "tan 60° = √3 and cot 30° = √3, so the product is √3 x √3 = 3."
+  },
+  {
+    "id": "RRBGD-D-009",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rrbgdVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Analogy",
+    "stem": "Book : Library :: Painting : ?",
+    "options": [
+      "Artist",
+      "Frame",
+      "Gallery",
+      "Canvas"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Books are kept and displayed in a library; paintings are kept and displayed in a gallery."
+  },
+  {
+    "id": "RRBGD-D-010",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rrbgdLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Blood relations",
+    "stem": "M is N's brother. N is O's son. O is P's daughter. How is M related to P?",
+    "options": [
+      "Grandfather",
+      "Nephew",
+      "Grandson",
+      "Son"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "M and N are O's sons, and O is P's daughter. So M is the son of P's daughter, that is, P's grandson."
+  },
+  {
+    "id": "RRBGD-D-011",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rrbgdVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "What comes next? 4, 10, 22, 46, 94, ?",
+    "options": [
+      "188",
+      "190",
+      "186",
+      "192"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Each term is double the previous one plus 2: 4 x 2 + 2 = 10, 10 x 2 + 2 = 22, and so on. 94 x 2 + 2 = 190."
+  },
+  {
+    "id": "RRBGD-D-012",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rrbgdLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Directions",
+    "stem": "Sanjay walks 3 km east, then 4 km north, then 3 km west. Where is he now from his starting point?",
+    "options": [
+      "10 km north",
+      "4 km north",
+      "7 km east",
+      "4 km south"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The 3 km east and 3 km west cancel, leaving him 4 km north of the start."
+  },
+  {
+    "id": "RRBGD-D-013",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rrbgdVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Coding-decoding",
+    "stem": "In a certain code, FISH is written as EHRG. How is BIRD written in that code?",
+    "options": [
+      "AHRC",
+      "CJSE",
+      "BHQC",
+      "AHQC"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Each letter moves 1 place back: F to E, I to H, S to R, H to G. So B to A, I to H, R to Q, D to C: AHQC."
+  },
+  {
+    "id": "RRBGD-D-014",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rrbgdLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Syllogism",
+    "stem": "Statements: Some engines are coaches. All coaches are wagons. Conclusions: I. Some engines are wagons. II. All wagons are engines. Which conclusion follows?",
+    "options": [
+      "Only I follows",
+      "Neither I nor II follows",
+      "Only II follows",
+      "Both I and II follow"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The engines that are coaches are also wagons, so I follows. Nothing says every wagon is an engine, so II does not follow."
+  },
+  {
+    "id": "RRBGD-D-015",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rrbgdVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Classification",
+    "stem": "Find the odd one out: 36, 49, 64, 80",
+    "options": [
+      "80",
+      "64",
+      "36",
+      "49"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "36, 49 and 64 are perfect squares (6², 7², 8²). 80 is not."
+  },
+  {
+    "id": "RRBGD-D-016",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rrbgdLogical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Clock",
+    "stem": "At what time between 2 o'clock and 3 o'clock are the hour and minute hands of a clock together?",
+    "options": [
+      "10 10/11 minutes past 2",
+      "12 6/11 minutes past 2",
+      "10 minutes past 2",
+      "11 minutes past 2"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "At 2:00 the minute hand is 10 minute-spaces behind. It gains 11/12 of a space each minute, so it needs 10 x 12/11 = 120/11 = 10 10/11 minutes."
+  },
+  {
+    "id": "RRBGD-D-017",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rrbgdPhysics",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Light",
+    "stem": "What is the approximate speed of light in a vacuum?",
+    "options": [
+      "3 × 10⁸ m/s",
+      "3 × 10⁵ m/s",
+      "3 × 10⁶ m/s",
+      "3 × 10¹⁰ m/s"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Light travels at about 3 x 10⁸ m/s, or 3 lakh km per second, in a vacuum."
+  },
+  {
+    "id": "RRBGD-D-018",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rrbgdChemistry",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Acids and bases",
+    "stem": "A solution with a pH of 2 is:",
+    "options": [
+      "Strongly acidic",
+      "Weakly acidic",
+      "Neutral",
+      "Strongly basic"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "On the pH scale, values below 7 are acidic and the lower the value the stronger the acid. A pH of 2 is strongly acidic."
+  },
+  {
+    "id": "RRBGD-D-019",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rrbgdBiology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Human body",
+    "stem": "Haemoglobin, which carries oxygen in the blood, contains which metal?",
+    "options": [
+      "Zinc",
+      "Copper",
+      "Iron",
+      "Magnesium"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Haemoglobin is an iron-containing protein in red blood cells. Magnesium is found in chlorophyll instead."
+  },
+  {
+    "id": "RRBGD-D-020",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rrbgdPhysics",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Electricity and magnetism",
+    "stem": "Which device is used to raise or lower an alternating (AC) voltage?",
+    "options": [
+      "Rectifier",
+      "Rheostat",
+      "Transformer",
+      "Galvanometer"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A transformer steps AC voltage up or down using two coils on an iron core. A rectifier changes AC to DC and a galvanometer detects small currents."
+  },
+  {
+    "id": "RRBGD-D-021",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rrbgdChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Periodic table",
+    "stem": "Which non-metal is a liquid at room temperature?",
+    "options": [
+      "Iodine",
+      "Chlorine",
+      "Sulphur",
+      "Bromine"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Bromine is the only non-metal that is liquid at room temperature. Chlorine is a gas, and iodine and sulphur are solids."
+  },
+  {
+    "id": "RRBGD-D-022",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rrbgdBiology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Human body",
+    "stem": "What is the normal body temperature of a healthy person, approximately?",
+    "options": [
+      "98 °C",
+      "37 °C",
+      "35 °C",
+      "40 °C"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Normal body temperature is about 37 °C, which is 98.6 °F. A reading of 98 is in Fahrenheit, not Celsius."
+  },
+  {
+    "id": "RRBGD-D-023",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rrbgdPhysics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Motion",
+    "stem": "A ball is thrown straight up. At its highest point, which of these is zero?",
+    "options": [
+      "Its mass",
+      "Its acceleration",
+      "Its velocity",
+      "Its weight"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "At the top the ball stops for an instant, so its velocity is zero. Gravity still acts, so its acceleration stays 9.8 m/s² downwards."
+  },
+  {
+    "id": "RRBGD-D-024",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rrbgdChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Metals",
+    "stem": "Galvanisation protects iron from rusting by coating it with:",
+    "options": [
+      "Zinc",
+      "Copper",
+      "Chromium",
+      "Tin"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Galvanised iron has a thin coat of zinc, which protects the iron even when scratched because zinc corrodes first."
+  },
+  {
+    "id": "RRBGD-D-025",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rrbgdBiology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ecology",
+    "stem": "Which of these organisms is a decomposer?",
+    "options": [
+      "Mushroom",
+      "Deer",
+      "Grass",
+      "Frog"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Mushrooms are fungi that break down dead matter and return nutrients to the soil. Grass is a producer, and the deer and frog are consumers."
+  },
+  {
+    "id": "RRBGD-D-026",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rrbgdPhysics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electricity",
+    "stem": "The fuse wire in a household circuit is made of a material with:",
+    "options": [
+      "A high melting point",
+      "A very low resistance",
+      "A low melting point",
+      "A high tensile strength"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A fuse must melt and break the circuit quickly when too much current flows, so it is made of an alloy with a low melting point."
+  },
+  {
+    "id": "RRBGD-D-027",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rrbgdChemistry",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Carbon compounds",
+    "stem": "What is the chemical formula of methane?",
+    "options": [
+      "CO₂",
+      "C₂H₆",
+      "CH₄",
+      "C₂H₄"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Methane is the simplest hydrocarbon, one carbon atom bonded to four hydrogen atoms. C₂H₆ is ethane and C₂H₄ is ethene."
+  },
+  {
+    "id": "RRBGD-D-028",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rrbgdBiology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Plants",
+    "stem": "Which part of a plant cell is made mainly of cellulose?",
+    "options": [
+      "Cell membrane",
+      "Cell wall",
+      "Nucleus",
+      "Vacuole"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The cell wall, outside the cell membrane, is made of cellulose and gives the plant cell its shape and strength. Animal cells have no cell wall."
+  },
+  {
+    "id": "RRBGD-D-029",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rrbgdGA",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Art and culture",
+    "stem": "Which harvest festival is celebrated in Tamil Nadu in mid-January?",
+    "options": [
+      "Bihu",
+      "Onam",
+      "Pongal",
+      "Ugadi"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Pongal is Tamil Nadu's harvest festival in mid-January. Onam is celebrated in Kerala and Bihu in Assam."
+  },
+  {
+    "id": "RRBGD-D-030",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rrbgdGA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Indian geography",
+    "stem": "Kangchenjunga, the third highest mountain in the world, lies on the border of Sikkim and which country?",
+    "options": [
+      "Nepal",
+      "Bangladesh",
+      "Bhutan",
+      "China"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Kangchenjunga (8,586 m) stands on the border between Sikkim and Nepal. It is the highest peak in Sikkim. India officially counts K2, in the Karakoram, as the country's highest peak."
+  },
+  {
+    "id": "RRBGD-D-031",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rrbgdGA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Polity",
+    "stem": "Panchayati Raj was first launched on 2 October 1959 in which district?",
+    "options": [
+      "Nagaur",
+      "Anantapur",
+      "Nashik",
+      "Patna"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Prime Minister Nehru inaugurated Panchayati Raj at Nagaur in Rajasthan on 2 October 1959. Andhra Pradesh followed soon after."
+  },
+  {
+    "id": "RRBGD-D-032",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rrbgdGA",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "World geography",
+    "stem": "The Durand Line forms the border between Pakistan and which country?",
+    "options": [
+      "China",
+      "Iran",
+      "Tajikistan",
+      "Afghanistan"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Durand Line, drawn in 1893, marks the boundary between Pakistan and Afghanistan."
+  }
+]

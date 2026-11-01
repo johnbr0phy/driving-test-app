@@ -1,12 +1,12 @@
 // Which country's tests a visitor sees first. Each country has its own
 // indexable homepage: the US at "/", the others at /uk, /ie, /ca, /au, /nz, /in,
-// /ph, /my, /sg, /hk, /ae, /za, /ng and /ke. A view
+// /ph, /my, /sg, /hk, /ae, /za, /ng, /ke and /pk. A view
 // setting only: it never touches progress, and every test stays reachable from
 // every country. middleware.ts sets it from Vercel's request country on the
 // first visit and sends a visitor from any other country we cover from "/" to their
 // country's page; the CountryPills change it.
 
-export type Region = "US" | "CA" | "UK" | "IE" | "AU" | "NZ" | "IN" | "PH" | "MY" | "SG" | "HK" | "AE" | "ZA" | "NG" | "KE";
+export type Region = "US" | "CA" | "UK" | "IE" | "AU" | "NZ" | "IN" | "PH" | "MY" | "SG" | "HK" | "AE" | "ZA" | "NG" | "KE" | "PK";
 
 export const REGIONS: { code: Region; name: string; short: string; inName: string }[] = [
   { code: "US", name: "United States", short: "US", inName: "the US" },
@@ -24,6 +24,7 @@ export const REGIONS: { code: Region; name: string; short: string; inName: strin
   { code: "ZA", name: "South Africa", short: "ZA", inName: "South Africa" },
   { code: "NG", name: "Nigeria", short: "NG", inName: "Nigeria" },
   { code: "KE", name: "Kenya", short: "KE", inName: "Kenya" },
+  { code: "PK", name: "Pakistan", short: "PK", inName: "Pakistan" },
 ];
 
 /** The chosen region, e.g. "UK". */
@@ -54,6 +55,7 @@ export function regionFromCountry(cc: string | null | undefined): Region | null 
     case "ZA": return "ZA";
     case "NG": return "NG";
     case "KE": return "KE";
+    case "PK": return "PK";
     default: return null;
   }
 }
@@ -65,7 +67,7 @@ export function regionHomePath(r: Region): string {
 
 /** hreflang for each country's homepage, the US page doubling as the default. */
 export const REGION_HREFLANG: Record<Region, string> = { US: "en-US", CA: "en-CA", UK: "en-GB", AU: "en-AU", IN: "en-IN", IE: "en-IE", NZ: "en-NZ",
-  PH: "en-PH", MY: "en-MY", SG: "en-SG", HK: "en-HK", AE: "en-AE", ZA: "en-ZA", NG: "en-NG", KE: "en-KE" };
+  PH: "en-PH", MY: "en-MY", SG: "en-SG", HK: "en-HK", AE: "en-AE", ZA: "en-ZA", NG: "en-NG", KE: "en-KE", PK: "en-PK" };
 
 export function regionInfo(r: Region) {
   return REGIONS.find((x) => x.code === r)!;
@@ -85,8 +87,10 @@ const TEST_REGIONS: Record<string, TestRegion> = {
   aunsw: "AU", auvic: "AU", auqld: "AU", auwa: "AU", ausa: "AU", naplan: "AU", nswsel: "AU", auwhite: "AU",
   naplan7: "AU", ocnsw: "AU", vicsel: "AU", hscmaths: "AU", aursa: "AU", aurcg: "AU", aufss: "AU", aufirstaid: "AU", auforklift: "AU", auwah: "AU", aucit: "AU",
   nzroad: "NZ",
-  phlto: "PH", mykpp: "MY", sgbtt: "SG", hkdrive: "HK", aerta: "AE", zak53: "ZA", ngfrsc: "NG", kentsa: "KE",
+  phlto: "PH", mykpp: "MY", sgbtt: "SG", hkdrive: "HK", aerta: "AE", zak53: "ZA", ngfrsc: "NG", kentsa: "KE", pkdrive: "PK",
+  jambeng: "NG",
   inrto: "IN", ssccgl: "IN", rrbntpc: "IN", ibpspo: "IN", ctet: "IN",
+  rrbgroupd: "IN", sscgd: "IN", sscchsl: "IN", sscmts: "IN", uppolice: "IN", ibpsclerk: "IN", jnvst: "IN",
   aplus: "GLOBAL", secplus: "GLOBAL", aws: "GLOBAL", awssaa: "GLOBAL", az900: "GLOBAL", ccna: "GLOBAL", pmp: "GLOBAL", gulfrn: "GLOBAL",
   netplus: "GLOBAL", cissp: "GLOBAL", gcdl: "GLOBAL", gre: "GLOBAL", gmat: "GLOBAL", itil: "GLOBAL", psm: "GLOBAL", capm: "GLOBAL",
 };
@@ -100,6 +104,8 @@ export const NON_DRIVING_TESTS = new Set([
   "naplan", "nswsel", "auwhite",
   "naplan7", "ocnsw", "vicsel", "hscmaths", "aursa", "aurcg", "aufss", "aufirstaid", "auforklift", "auwah", "aucit",
   "ssccgl", "rrbntpc", "ibpspo", "ctet",
+  "rrbgroupd", "sscgd", "sscchsl", "sscmts", "uppolice", "ibpsclerk", "jnvst",
+  "jambeng",
 ]);
 
 /** Every test not listed above is a US exam. */
@@ -228,6 +234,14 @@ export const REGION_HOME: Record<Exclude<Region, "US">, {
     cta: { label: "NTSA driving test", href: "/kenya-ntsa-driving-test" },
     testsTitle: "NTSA driving test",
     testsSub: "200 questions on the Kenya Highway Code, in km/h for left-hand traffic. Four full 50-question tests.",
+  },
+  PK: {
+    title: "Free Pakistan Driving Licence Test Practice | Tigertest",
+    description: "Free driving licence sign test practice for Pakistan: 200 original questions on road signs and traffic rules, every answer explained. No account needed.",
+    lead: "Practice for the sign and theory test before your driving licence in Punjab, Sindh, KP, Balochistan or Islamabad. Original questions on signs, rules of the road and safe driving, every answer explained. No signup.",
+    cta: { label: "Driving licence test", href: "/pakistan-driving-licence-test" },
+    testsTitle: "Driving licence sign test",
+    testsSub: "200 questions on Pakistan's road signs and traffic rules, in km/h for left-hand traffic. Four full 50-question tests.",
   },
 };
 

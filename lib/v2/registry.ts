@@ -50,8 +50,17 @@ import { SSCCGL } from "./exams/ssccgl";
 import { RRBNTPC } from "./exams/rrbntpc";
 import { CTET } from "./exams/ctet";
 import { IBPSPO } from "./exams/ibpspo";
+import { RRBGROUPD } from "./exams/rrbgroupd";
+import { SSCGD } from "./exams/sscgd";
+import { SSCCHSL } from "./exams/sscchsl";
+import { SSCMTS } from "./exams/sscmts";
+import { UPPOLICE } from "./exams/uppolice";
+import { IBPSCLERK } from "./exams/ibpsclerk";
+import { JNVST } from "./exams/jnvst";
+import { JAMBENG } from "./exams/jambeng";
+import { APPSYCH } from "./exams/appsych";
 
-export const EXAMS_V2: ExamV2Config[] = [GED, PRAXIS, SAT, PSAT, ACT, GRE, GMAT, TEAS, HESI, ASVAB, ACCUPLACER, NCLEX, NCLEXPN, REXPN, UKNMC, EMT, PARAMEDIC, FAAPVT, SECPLUS, CISSP, NETPLUS, APLUS, AWS, AWSSAA, AZ900, GCDL, CCNA, PMP, CAPM, PSM, ITIL, SSCCGL, RRBNTPC, IBPSPO, CTET, TIMESTABLES, KS2, ELEVENPLUS, GCSEMATHS, GCSEHIGHER, GCSESCIENCE, GCSECS, FSMATHS, OSSLT, EQAO9, NAPLAN7, NAPLAN, OCNSW, NSWSEL, VICSEL, HSCMATHS];
+export const EXAMS_V2: ExamV2Config[] = [GED, PRAXIS, SAT, PSAT, ACT, APPSYCH, GRE, GMAT, TEAS, HESI, ASVAB, ACCUPLACER, NCLEX, NCLEXPN, REXPN, UKNMC, EMT, PARAMEDIC, FAAPVT, SECPLUS, CISSP, NETPLUS, APLUS, AWS, AWSSAA, AZ900, GCDL, CCNA, PMP, CAPM, PSM, ITIL, SSCCGL, SSCCHSL, SSCGD, SSCMTS, RRBNTPC, RRBGROUPD, UPPOLICE, IBPSPO, IBPSCLERK, CTET, JNVST, JAMBENG, TIMESTABLES, KS2, ELEVENPLUS, GCSEMATHS, GCSEHIGHER, GCSESCIENCE, GCSECS, FSMATHS, OSSLT, EQAO9, NAPLAN7, NAPLAN, OCNSW, NSWSEL, VICSEL, HSCMATHS];
 
 export function getExamV2(id: string): ExamV2Config {
   const exam = EXAMS_V2.find((e) => e.id === id);

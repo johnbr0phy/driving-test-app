@@ -1,0 +1,4502 @@
+{
+  "stimuli": [
+    {
+      "id": "SSCMTS-CL1",
+      "title": "Cloze test: the weekly haat",
+      "text": "Read the passage and choose the most appropriate word for each numbered blank.\n\nEvery Thursday, a weekly market called a haat is (1) ........ in our village. Farmers bring vegetables, grain and spices from nearby villages, and women sell bangles and baskets that they have made (2) ........ hand. The market is noisy and crowded, (3) ........ everyone enjoys the visit. By sunset the traders pack up their goods and (4) ........ home before dark."
+    },
+    {
+      "id": "SSCMTS-RC1",
+      "title": "Reading comprehension: the kolam",
+      "text": "In many homes in Tamil Nadu, women draw a kolam on the ground outside the front door every morning. The pattern is made with rice flour, which is let fall slowly from between the thumb and the fingers. Some kolams are simple loops around a grid of dots; others cover the whole doorstep.\n\nThe rice flour is not wasted. Ants, sparrows and squirrels eat it, so the kolam is also a way of sharing food with other living things. Many families say that drawing it every day teaches patience and a steady hand. On festival days, such as Pongal, the kolams become much larger and are often filled with colour."
+    },
+    {
+      "id": "SSCMTS-CL2",
+      "title": "Cloze test: our silent friends",
+      "text": "Read the passage and choose the most appropriate word for each numbered blank.\n\nTrees are our silent friends. They give us shade on hot days and (1) ........ the air we breathe. Birds build their nests (2) ........ the safety of their branches. In many Indian villages a tree is planted when a child is born, a custom that (3) ........ people to care for nature. If we cut trees carelessly, the soil is washed away (4) ........ heavy rain."
+    },
+    {
+      "id": "SSCMTS-RC2",
+      "title": "Reading comprehension: the repair shop",
+      "text": "Salma's father ran a small bicycle repair shop near the bus stand in Bhopal. When he fell ill, the shop stayed shut for a month, and the family began to worry about money. Salma, who was seventeen, had often watched him at work. One morning she opened the shutter herself.\n\nAt first some customers laughed and took their cycles elsewhere. Salma did not argue. She fixed punctures quickly, charged fair prices and never kept anyone waiting. Within a few weeks the same customers were back. When her father recovered, he did not take the shop back from her; he made Salma his partner."
+    }
+  ],
+  "questions": [
+    {
+      "id": "SSCMTS-T1-001",
+      "section": "s1",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Percentage",
+      "stem": "Riya scored 42 marks out of 60 in a test. What percentage of the marks did she score?",
+      "options": [
+        "65 percent",
+        "68 percent",
+        "70 percent",
+        "72 percent"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Percentage = 42 / 60 x 100 = 70 percent."
+    },
+    {
+      "id": "SSCMTS-T1-002",
+      "section": "s1",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "HCF and LCM",
+      "stem": "What is the HCF of 48 and 72?",
+      "options": [
+        "12",
+        "24",
+        "8",
+        "144"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "48 = 2 x 2 x 2 x 2 x 3 and 72 = 2 x 2 x 2 x 3 x 3. The common factors are 2 x 2 x 2 x 3 = 24. 144 is the LCM, not the HCF."
+    },
+    {
+      "id": "SSCMTS-T1-003",
+      "section": "s1",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Profit and loss",
+      "stem": "A shopkeeper buys a school bag for ₹450 and sells it for ₹540. What is his profit percent?",
+      "options": [
+        "15 percent",
+        "25 percent",
+        "20 percent",
+        "18 percent"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Profit = 540 - 450 = ₹90. Profit percent = 90 / 450 x 100 = 20 percent. Profit percent is worked out on the cost price, not the selling price (90 / 540 would give about 17 percent)."
+    },
+    {
+      "id": "SSCMTS-T1-004",
+      "section": "s1",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Simplification",
+      "stem": "What is the value of 48 ÷ 6 x 3 + 4?",
+      "options": [
+        "24",
+        "32",
+        "56",
+        "28"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Division and multiplication go left to right before addition: 48 ÷ 6 = 8, 8 x 3 = 24, and 24 + 4 = 28. Adding 3 + 4 first gives 56, which breaks the BODMAS order."
+    },
+    {
+      "id": "SSCMTS-T1-005",
+      "section": "s1",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Discount",
+      "stem": "A water bottle marked at ₹750 is sold at a discount of 12 percent. What is its selling price?",
+      "options": [
+        "₹680",
+        "₹640",
+        "₹660",
+        "₹738"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Discount = 12 percent of 750 = ₹90, so the selling price is 750 - 90 = ₹660. ₹738 comes from taking off ₹12 instead of 12 percent."
+    },
+    {
+      "id": "SSCMTS-T1-006",
+      "section": "s1",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Square roots",
+      "stem": "What is the square root of 2,209?",
+      "options": [
+        "47",
+        "37",
+        "43",
+        "53"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The number ends in 9, so the root ends in 3 or 7, and 40 x 40 = 1,600 while 50 x 50 = 2,500 puts it in the 40s. 47 x 47 = 2,209; 43 x 43 is only 1,849."
+    },
+    {
+      "id": "SSCMTS-T1-007",
+      "section": "s1",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Ratio",
+      "stem": "Two numbers are in the ratio 4 : 7 and their sum is 132. What is the larger number?",
+      "options": [
+        "72",
+        "77",
+        "84",
+        "48"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "There are 4 + 7 = 11 parts, so one part is 132 / 11 = 12. The larger number is 7 x 12 = 84; 48 is the smaller one."
+    },
+    {
+      "id": "SSCMTS-T1-008",
+      "section": "s1",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Fractions",
+      "stem": "Which is the largest of these fractions?",
+      "options": [
+        "7/12",
+        "2/3",
+        "5/8",
+        "3/5"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "As decimals: 2/3 = 0.667, 5/8 = 0.625, 3/5 = 0.6 and 7/12 = 0.583. So 2/3 is the largest."
+    },
+    {
+      "id": "SSCMTS-T1-009",
+      "section": "s1",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Average",
+      "stem": "The average weight of 6 boys is 45 kg. When their teacher joins them, the average weight becomes 47 kg. What is the teacher's weight?",
+      "options": [
+        "57 kg",
+        "61 kg",
+        "59 kg",
+        "49 kg"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Total for 7 people = 7 x 47 = 329 kg. Total for 6 boys = 6 x 45 = 270 kg. Teacher = 329 - 270 = 59 kg."
+    },
+    {
+      "id": "SSCMTS-T1-010",
+      "section": "s1",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Mensuration",
+      "stem": "A rectangular field is 40 m long and 25 m wide. What is its perimeter?",
+      "options": [
+        "130 m",
+        "1,000 m",
+        "140 m",
+        "65 m"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Perimeter = 2 x (length + breadth) = 2 x (40 + 25) = 130 m. 1,000 is the area in square metres, and 65 m forgets to double."
+    },
+    {
+      "id": "SSCMTS-T1-011",
+      "section": "s1",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Simple interest",
+      "stem": "What is the simple interest on ₹6,400 at 5 percent per annum for 2 years?",
+      "options": [
+        "₹680",
+        "₹640",
+        "₹656",
+        "₹320"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "SI = P x R x T / 100 = 6,400 x 5 x 2 / 100 = ₹640. ₹656 is the compound interest for the same sum, rate and time."
+    },
+    {
+      "id": "SSCMTS-T1-012",
+      "section": "s1",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Mensuration",
+      "stem": "What is the area of a square whose side is 14 cm?",
+      "options": [
+        "56 sq cm",
+        "186 sq cm",
+        "216 sq cm",
+        "196 sq cm"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Area of a square = side x side = 14 x 14 = 196 sq cm. 56 cm is its perimeter."
+    },
+    {
+      "id": "SSCMTS-T1-013",
+      "section": "s1",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Time and work",
+      "stem": "Ramesh can paint a wall in 12 days and Suresh can paint it in 24 days. In how many days can they paint it working together?",
+      "options": [
+        "9 days",
+        "6 days",
+        "18 days",
+        "8 days"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "In one day they paint 1/12 + 1/24 = 2/24 + 1/24 = 3/24 = 1/8 of the wall, so together they take 8 days. 18 days is the average of 12 and 24, which is not how work rates add."
+    },
+    {
+      "id": "SSCMTS-T1-014",
+      "section": "s1",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Mensuration",
+      "stem": "What is the circumference of a circle of radius 7 cm? (Take π = 22/7.)",
+      "options": [
+        "88 cm",
+        "22 cm",
+        "44 cm",
+        "154 cm"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Circumference = 2πr = 2 x 22/7 x 7 = 44 cm. 154 is the area (πr²) in sq cm."
+    },
+    {
+      "id": "SSCMTS-T1-015",
+      "section": "s1",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Speed and distance",
+      "stem": "A cyclist covers 18 km in 1 hour 30 minutes. What is his speed?",
+      "options": [
+        "18 km/h",
+        "10 km/h",
+        "12 km/h",
+        "15 km/h"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "1 hour 30 minutes = 1.5 hours. Speed = 18 / 1.5 = 12 km/h."
+    },
+    {
+      "id": "SSCMTS-T1-016",
+      "section": "s1",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Mensuration",
+      "stem": "What is the volume of a cube with an edge of 8 cm?",
+      "options": [
+        "64 cubic cm",
+        "512 cubic cm",
+        "192 cubic cm",
+        "384 cubic cm"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Volume of a cube = edge x edge x edge = 8 x 8 x 8 = 512 cubic cm. 384 sq cm is its total surface area (6 x 64), and 64 is the area of one face."
+    },
+    {
+      "id": "SSCMTS-T1-017",
+      "section": "s1",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Ages",
+      "stem": "Meena is 4 years older than her brother. The sum of their ages is 30 years. How old is Meena?",
+      "options": [
+        "15 years",
+        "13 years",
+        "17 years",
+        "19 years"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Let the brother be b. Then b + (b + 4) = 30, so 2b = 26 and b = 13. Meena is 13 + 4 = 17 years old."
+    },
+    {
+      "id": "SSCMTS-T1-018",
+      "section": "s1",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stem": "A shop sold 120 pens on Monday, 150 on Tuesday, 90 on Wednesday and 140 on Thursday. What was the average number of pens sold per day?",
+      "options": [
+        "150",
+        "125",
+        "130",
+        "120"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Total = 120 + 150 + 90 + 140 = 500 pens over 4 days, so the average is 500 / 4 = 125."
+    },
+    {
+      "id": "SSCMTS-T1-019",
+      "section": "s1",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Percentage",
+      "stem": "The price of sugar rises from ₹40 to ₹46 per kg. By what percent has the price increased?",
+      "options": [
+        "15 percent",
+        "6 percent",
+        "12 percent",
+        "13 percent"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Increase = ₹6 on the old price of ₹40, so 6 / 40 x 100 = 15 percent. Dividing by the new price (6 / 46) gives about 13 percent, which is the common mistake."
+    },
+    {
+      "id": "SSCMTS-T1-020",
+      "section": "s1",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Number system",
+      "stem": "How many prime numbers are there between 20 and 40?",
+      "options": [
+        "6",
+        "5",
+        "4",
+        "3"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The primes are 23, 29, 31 and 37. 21, 27, 33 and 39 are multiples of 3, and 35 is 5 x 7."
+    },
+    {
+      "id": "SSCMTS-T1-021",
+      "section": "s1",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Analogy",
+      "stem": "Select the word that completes the analogy.\n\nPen : Write :: Knife : ?",
+      "options": [
+        "Kitchen",
+        "Steel",
+        "Cut",
+        "Sharp"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A pen is used to write, so a knife is used to cut. The pair links a tool with its use; 'sharp' describes the knife instead."
+    },
+    {
+      "id": "SSCMTS-T1-022",
+      "section": "s1",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsLogical",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Blood relations",
+      "stem": "Pointing to a man, Sita says, \"He is the son of my father's only daughter.\" How is the man related to Sita?",
+      "options": [
+        "Brother",
+        "Son",
+        "Nephew",
+        "Cousin"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Sita's father's only daughter is Sita herself, so the man is Sita's son."
+    },
+    {
+      "id": "SSCMTS-T1-023",
+      "section": "s1",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "Find the missing number in the series.\n\n6, 11, 18, 27, ?",
+      "options": [
+        "37",
+        "40",
+        "36",
+        "38"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The differences are 5, 7, 9, so the next difference is 11 and 27 + 11 = 38."
+    },
+    {
+      "id": "SSCMTS-T1-024",
+      "section": "s1",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsLogical",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Direction sense",
+      "stem": "Raju walks 9 km north, turns right and walks 2 km, then turns right again and walks 9 km. How far is he from his starting point?",
+      "options": [
+        "2 km",
+        "11 km",
+        "20 km",
+        "9 km"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "North 9 km, then right (east) 2 km, then right again (south) 9 km. The north and south walks cancel, so he is 2 km east of the start. 20 km is the total distance walked."
+    },
+    {
+      "id": "SSCMTS-T1-025",
+      "section": "s1",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Odd one out",
+      "stem": "Select the word that does not belong with the others.\n\nPotato, Carrot, Tomato, Radish",
+      "options": [
+        "Radish",
+        "Tomato",
+        "Potato",
+        "Carrot"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Potato, carrot and radish are vegetables that grow under the ground. A tomato grows above ground on the plant."
+    },
+    {
+      "id": "SSCMTS-T1-026",
+      "section": "s1",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsLogical",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Ranking",
+      "stem": "In a row of 30 children, Anil is 12th from the left end. What is his position from the right end?",
+      "options": [
+        "20th",
+        "18th",
+        "17th",
+        "19th"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Position from the right = total - position from the left + 1 = 30 - 12 + 1 = 19th."
+    },
+    {
+      "id": "SSCMTS-T1-027",
+      "section": "s1",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Coding-decoding",
+      "stem": "In a certain code, MANGO is written as NBOHP. How is APPLE written in that code?",
+      "options": [
+        "BQQME",
+        "BQQMF",
+        "BPQMF",
+        "ZOOKD"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Each letter moves one place forward: M to N, A to B, N to O, G to H, O to P. So A, P, P, L, E become B, Q, Q, M, F."
+    },
+    {
+      "id": "SSCMTS-T1-028",
+      "section": "s1",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsLogical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Calendar",
+      "stem": "If 9 June of a year is a Wednesday, what day of the week is 30 June of the same year?",
+      "options": [
+        "Thursday",
+        "Tuesday",
+        "Saturday",
+        "Wednesday"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "30 - 9 = 21 days later, which is exactly 3 weeks, so it is the same day, Wednesday."
+    },
+    {
+      "id": "SSCMTS-T1-029",
+      "section": "s1",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Letter series",
+      "stem": "Find the next letter in the series.\n\nA, C, E, G, ?",
+      "options": [
+        "H",
+        "K",
+        "J",
+        "I"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The series skips one letter each time: A (skip B) C (skip D) E (skip F) G (skip H) I."
+    },
+    {
+      "id": "SSCMTS-T1-030",
+      "section": "s1",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsLogical",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Clock",
+      "stem": "What is the angle between the hour hand and the minute hand of a clock at 2 o'clock?",
+      "options": [
+        "60 degrees",
+        "120 degrees",
+        "30 degrees",
+        "90 degrees"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Each hour mark is 30 degrees apart. At 2:00 the minute hand is on 12 and the hour hand on 2, so the angle is 2 x 30 = 60 degrees."
+    },
+    {
+      "id": "SSCMTS-T1-031",
+      "section": "s1",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Analogy",
+      "stem": "Select the word that completes the analogy.\n\nChef : Kitchen :: Pilot : ?",
+      "options": [
+        "Uniform",
+        "Passenger",
+        "Cockpit",
+        "Airport"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The pair links a worker with the place where they do the work. A chef cooks in a kitchen and a pilot flies the plane from the cockpit."
+    },
+    {
+      "id": "SSCMTS-T1-032",
+      "section": "s1",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsLogical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Dictionary order",
+      "stem": "Which word comes third when these are arranged in dictionary order?\n\nPlate, Plant, Place, Plane, Plain",
+      "options": [
+        "Plane",
+        "Place",
+        "Plant",
+        "Plain"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "All begin with 'Pla'. By the fourth letter the order is Place (c), Plain (i), then Plane and Plant (n), then Plate (t). Plane comes before Plant because e comes before t. The third word is Plane."
+    },
+    {
+      "id": "SSCMTS-T1-033",
+      "section": "s1",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Number analogy",
+      "stem": "Select the number that completes the analogy.\n\n4 : 64 :: 6 : ?",
+      "options": [
+        "36",
+        "144",
+        "196",
+        "216"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "64 is 4 x 4 x 4, the cube of 4. The cube of 6 is 216. 36 would be the square."
+    },
+    {
+      "id": "SSCMTS-T1-034",
+      "section": "s1",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsLogical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Syllogism",
+      "stem": "Statements: All pens are books. All books are tables.\n\nWhich conclusion definitely follows from the statements?",
+      "options": [
+        "All tables are pens",
+        "Some tables are not books",
+        "All pens are tables",
+        "No book is a pen"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Every pen is a book and every book is a table, so every pen is a table. The statements do not say that every table is a pen, and nothing tells us about tables that are not books."
+    },
+    {
+      "id": "SSCMTS-T1-035",
+      "section": "s1",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "Find the next number in the series.\n\n2, 4, 12, 48, 240, ?",
+      "options": [
+        "1,200",
+        "1,440",
+        "480",
+        "960"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Each term is multiplied by the next whole number: x 2, x 3, x 4, x 5, so the next step is x 6 and 240 x 6 = 1,440."
+    },
+    {
+      "id": "SSCMTS-T1-036",
+      "section": "s1",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsLogical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Mathematical operations",
+      "stem": "If '+' means 'x' and 'x' means '+', what is the value of 6 + 4 x 3?",
+      "options": [
+        "18",
+        "30",
+        "42",
+        "27"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Swap the signs to get 6 x 4 + 3. Multiplication first: 24 + 3 = 27. Working left to right without BODMAS gives 30."
+    },
+    {
+      "id": "SSCMTS-T1-037",
+      "section": "s1",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Coding-decoding",
+      "stem": "In a certain code, SEAT is written as UGCV. How is FARM written in that code?",
+      "options": [
+        "HCTO",
+        "HDTO",
+        "GBSN",
+        "HCSO"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Each letter moves two places forward: S to U, E to G, A to C, T to V. So F, A, R, M become H, C, T, O."
+    },
+    {
+      "id": "SSCMTS-T1-038",
+      "section": "s1",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsLogical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Seating arrangement",
+      "stem": "Five friends sit in a row facing north. Esha sits at the left end and Chetan at the right end. Deepa sits between Bala and Chetan. Amit sits immediately to the left of Bala. Who sits in the middle?",
+      "options": [
+        "Deepa",
+        "Esha",
+        "Amit",
+        "Bala"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "From the left: Esha is 1st and Chetan 5th. Deepa between Bala and Chetan puts Deepa 4th and Bala 3rd. Amit, immediately left of Bala, is 2nd. The middle seat, 3rd, is Bala's."
+    },
+    {
+      "id": "SSCMTS-T1-039",
+      "section": "s1",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Odd one out",
+      "stem": "Select the number that does not belong with the others.\n\n35, 49, 54, 63",
+      "options": [
+        "49",
+        "63",
+        "54",
+        "35"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "35, 49 and 63 are all multiples of 7 (7 x 5, 7 x 7, 7 x 9). 54 is not."
+    },
+    {
+      "id": "SSCMTS-T1-040",
+      "section": "s1",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsLogical",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Blood relations",
+      "stem": "A is the brother of B. B is the daughter of C, and C is a woman. How is C related to A?",
+      "options": [
+        "Sister",
+        "Mother",
+        "Grandmother",
+        "Aunt"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "B is C's daughter and A is B's brother, so A is also C's child. C is a woman, so C is A's mother."
+    },
+    {
+      "id": "SSCMTS-T1-041",
+      "section": "s2",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsHistory",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Polity",
+      "stem": "Which Article of the Constitution of India guarantees equality before the law?",
+      "options": [
+        "Article 21",
+        "Article 19",
+        "Article 14",
+        "Article 32"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Article 14 says the State shall not deny any person equality before the law or the equal protection of the laws. Article 19 covers freedoms such as speech and movement."
+    },
+    {
+      "id": "SSCMTS-T1-042",
+      "section": "s2",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Geography",
+      "stem": "Which is the longest river in India?",
+      "options": [
+        "Yamuna",
+        "Narmada",
+        "Godavari",
+        "Ganga"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The Ganga, about 2,500 km long, is the longest river in India. The Godavari is the longest river of peninsular India."
+    },
+    {
+      "id": "SSCMTS-T1-043",
+      "section": "s2",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Culture",
+      "stem": "The Shore Temple at Mamallapuram was built by rulers of which dynasty?",
+      "options": [
+        "Chalukya",
+        "Chola",
+        "Pallava",
+        "Pandya"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The Shore Temple was built in the early 8th century under the Pallava king Narasimhavarman II (Rajasimha). Mamallapuram was the Pallava port, and its monuments are a World Heritage Site."
+    },
+    {
+      "id": "SSCMTS-T1-044",
+      "section": "s2",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Science",
+      "stem": "Which planet is often called the Morning Star or the Evening Star?",
+      "options": [
+        "Venus",
+        "Mercury",
+        "Mars",
+        "Jupiter"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Venus is the brightest planet in our sky and is seen low in the east before sunrise or in the west after sunset, so it is called the Morning Star or the Evening Star."
+    },
+    {
+      "id": "SSCMTS-T1-045",
+      "section": "s2",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Ancient history",
+      "stem": "The Harappan city of Harappa stood on the banks of which river?",
+      "options": [
+        "Beas",
+        "Ravi",
+        "Sutlej",
+        "Indus"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Harappa, in present-day Punjab in Pakistan, lies on the Ravi. Mohenjo-daro is the major site on the Indus."
+    },
+    {
+      "id": "SSCMTS-T1-046",
+      "section": "s2",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Science",
+      "stem": "What is the chemical symbol of gold?",
+      "options": [
+        "Ag",
+        "Go",
+        "Gd",
+        "Au"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Gold's symbol, Au, comes from its Latin name aurum. Ag is silver, from argentum."
+    },
+    {
+      "id": "SSCMTS-T1-047",
+      "section": "s2",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsHistory",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Culture",
+      "stem": "The Charminar is a famous monument in which city?",
+      "options": [
+        "Lucknow",
+        "Bhopal",
+        "Hyderabad",
+        "Mysuru"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The Charminar was built in Hyderabad in 1591 by Muhammad Quli Qutb Shah of the Qutb Shahi dynasty."
+    },
+    {
+      "id": "SSCMTS-T1-048",
+      "section": "s2",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Science",
+      "stem": "Which vitamin is also called ascorbic acid?",
+      "options": [
+        "Vitamin C",
+        "Vitamin D",
+        "Vitamin B12",
+        "Vitamin A"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Vitamin C is ascorbic acid. It is found in amla, oranges and lemons, and a lack of it causes scurvy."
+    },
+    {
+      "id": "SSCMTS-T1-049",
+      "section": "s2",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsHistory",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Modern history",
+      "stem": "Who gave the slogan \"Give me blood, and I will give you freedom\"?",
+      "options": [
+        "Bhagat Singh",
+        "Subhas Chandra Bose",
+        "Lala Lajpat Rai",
+        "Chandra Shekhar Azad"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Subhas Chandra Bose used these words while leading the Indian National Army against British rule during the Second World War."
+    },
+    {
+      "id": "SSCMTS-T1-050",
+      "section": "s2",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Geography",
+      "stem": "Pampore, famous for its saffron fields, is in which state or union territory?",
+      "options": [
+        "Uttarakhand",
+        "Jammu and Kashmir",
+        "Himachal Pradesh",
+        "Ladakh"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Pampore, near Srinagar in Jammu and Kashmir, is India's best-known saffron-growing area."
+    },
+    {
+      "id": "SSCMTS-T1-051",
+      "section": "s2",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsHistory",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Polity",
+      "stem": "The Lok Sabha is also known as the:",
+      "options": [
+        "House of the People",
+        "Upper House",
+        "Legislative Council",
+        "Council of States"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The Lok Sabha is the House of the People, the lower house of Parliament. The Rajya Sabha is the Council of States."
+    },
+    {
+      "id": "SSCMTS-T1-052",
+      "section": "s2",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Geography",
+      "stem": "Ranthambore National Park, known for its tigers, is in which state?",
+      "options": [
+        "Madhya Pradesh",
+        "Uttarakhand",
+        "Gujarat",
+        "Rajasthan"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Ranthambore, in Sawai Madhopur district of Rajasthan, is a tiger reserve with the ruins of a large fort inside it."
+    },
+    {
+      "id": "SSCMTS-T1-053",
+      "section": "s2",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Polity",
+      "stem": "The idea of Fundamental Duties in the Constitution of India was taken from the constitution of which country?",
+      "options": [
+        "The former USSR",
+        "Canada",
+        "Ireland",
+        "The USA"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The Fundamental Duties were borrowed from the constitution of the former Soviet Union (USSR). The Directive Principles came from Ireland, and judicial review from the USA."
+    },
+    {
+      "id": "SSCMTS-T1-054",
+      "section": "s2",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Geography",
+      "stem": "Bandipur National Park, a tiger reserve, is in which state?",
+      "options": [
+        "Odisha",
+        "Tamil Nadu",
+        "Kerala",
+        "Karnataka"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Bandipur National Park is in Karnataka, beside Mudumalai in Tamil Nadu and Wayanad in Kerala."
+    },
+    {
+      "id": "SSCMTS-T1-055",
+      "section": "s2",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Modern history",
+      "stem": "Who founded the Muhammadan Anglo-Oriental College at Aligarh in 1875?",
+      "options": [
+        "Dadabhai Naoroji",
+        "Madan Mohan Malaviya",
+        "Maulana Abul Kalam Azad",
+        "Sir Syed Ahmad Khan"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Sir Syed Ahmad Khan founded the college to bring modern education to Muslims. It became Aligarh Muslim University in 1920."
+    },
+    {
+      "id": "SSCMTS-T1-056",
+      "section": "s2",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Economy",
+      "stem": "In Indian agriculture, what does MSP stand for?",
+      "options": [
+        "Maximum Selling Price",
+        "Market Supply Plan",
+        "Minimum Support Price",
+        "Minimum Sowing Period"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "MSP, the Minimum Support Price, is the price at which the government offers to buy certain crops, so that farmers are protected from a sharp fall in market prices."
+    },
+    {
+      "id": "SSCMTS-T1-057",
+      "section": "s2",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsHistory",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Culture",
+      "stem": "Giddha is a folk dance performed mainly by women in which state?",
+      "options": [
+        "Punjab",
+        "Kerala",
+        "Gujarat",
+        "Assam"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Giddha is the women's folk dance of Punjab, as Bhangra is the men's. Garba is from Gujarat and Bihu from Assam."
+    },
+    {
+      "id": "SSCMTS-T1-058",
+      "section": "s2",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Science",
+      "stem": "Polio is caused by which kind of organism?",
+      "options": [
+        "A protozoan",
+        "A bacterium",
+        "A virus",
+        "A fungus"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Polio is caused by the poliovirus. India was declared polio-free by the World Health Organization in 2014 after years of pulse polio drives."
+    },
+    {
+      "id": "SSCMTS-T1-059",
+      "section": "s2",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsHistory",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Modern history",
+      "stem": "Who was known as the \"Frontier Gandhi\"?",
+      "options": [
+        "Maulana Mohammad Ali",
+        "Khan Abdul Ghaffar Khan",
+        "Lala Lajpat Rai",
+        "Bhagat Singh"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Khan Abdul Ghaffar Khan led the non-violent Khudai Khidmatgar movement in the North-West Frontier Province, which earned him the name Frontier Gandhi."
+    },
+    {
+      "id": "SSCMTS-T1-060",
+      "section": "s2",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Science",
+      "stem": "Which part of a flower develops into the fruit?",
+      "options": [
+        "Sepal",
+        "Ovary",
+        "Petal",
+        "Anther"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "After fertilisation the ovary grows into the fruit and the ovules inside it become seeds. The anther is the part of the stamen that makes pollen."
+    },
+    {
+      "id": "SSCMTS-T1-061",
+      "section": "s2",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Ancient history",
+      "stem": "The Tripitakas are the sacred texts of which religion?",
+      "options": [
+        "Buddhism",
+        "Jainism",
+        "Hinduism",
+        "Sikhism"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The Tripitakas, or 'three baskets', are the early Buddhist scriptures, written in Pali. The Jain scriptures are the Agamas."
+    },
+    {
+      "id": "SSCMTS-T1-062",
+      "section": "s2",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Science",
+      "stem": "Jaundice mainly affects which organ of the human body?",
+      "options": [
+        "Heart",
+        "Kidney",
+        "Liver",
+        "Lungs"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Jaundice turns the skin and eyes yellow because of a build-up of bilirubin, usually when the liver is not working properly, as in hepatitis."
+    },
+    {
+      "id": "SSCMTS-T1-063",
+      "section": "s2",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Medieval history",
+      "stem": "The Battle of Khanwa in 1527 was fought between Babur and:",
+      "options": [
+        "Sher Shah Suri",
+        "Hemu",
+        "Rana Sanga",
+        "Ibrahim Lodi"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Babur defeated Rana Sanga of Mewar at Khanwa in 1527. A year earlier he had defeated Ibrahim Lodi at the First Battle of Panipat."
+    },
+    {
+      "id": "SSCMTS-T1-064",
+      "section": "s2",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Geography",
+      "stem": "Which is the smallest continent by area?",
+      "options": [
+        "Antarctica",
+        "Australia",
+        "Europe",
+        "South America"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Australia is the smallest continent. Asia is the largest, and Europe is the second smallest."
+    },
+    {
+      "id": "SSCMTS-T1-065",
+      "section": "s2",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Polity",
+      "stem": "Which Article of the Constitution guarantees freedom of conscience and the right to practise and spread religion?",
+      "options": [
+        "Article 19",
+        "Article 21",
+        "Article 25",
+        "Article 32"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Article 25 gives every person freedom of conscience and the right to profess, practise and propagate religion. Article 19 covers freedoms such as speech, and Article 21 life and personal liberty."
+    },
+    {
+      "id": "SSCMTS-T1-066",
+      "section": "s2",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Spotting errors",
+      "stem": "The sentence below is divided into parts. Select the part that contains a grammatical error. If there is no error, select 'No error'.\n\nNeither of the two boys / have finished / the homework.",
+      "options": [
+        "Neither of the two boys",
+        "have finished",
+        "the homework",
+        "No error"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "'Neither' is singular, so it takes a singular verb: 'Neither of the two boys has finished the homework.'"
+    },
+    {
+      "id": "SSCMTS-T1-067",
+      "section": "s2",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Synonyms",
+      "stem": "Select the most appropriate synonym of the given word.\n\nVacant",
+      "options": [
+        "Narrow",
+        "Crowded",
+        "Empty",
+        "Locked"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "'Vacant' means not filled or occupied, as in a vacant seat or a vacant post, the same as 'empty'. 'Crowded' is close to its opposite."
+    },
+    {
+      "id": "SSCMTS-T1-068",
+      "section": "s2",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Fill in the blanks",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nThe train will leave ______ 6 o'clock in the morning.",
+      "options": [
+        "at",
+        "in",
+        "on",
+        "since"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "'At' is used with a clock time: at 6 o'clock. 'On' goes with days and dates, 'in' with months, years and parts of the day."
+    },
+    {
+      "id": "SSCMTS-T1-069",
+      "section": "s2",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Antonyms",
+      "stem": "Select the most appropriate antonym of the given word.\n\nShallow",
+      "options": [
+        "Narrow",
+        "Calm",
+        "Deep",
+        "Thin"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Shallow water has little depth, so the opposite is 'deep'. 'Narrow' is the opposite of 'wide'."
+    },
+    {
+      "id": "SSCMTS-T1-070",
+      "section": "s2",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Fill in the blanks",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nIn May, Delhi is ______ than Shimla.",
+      "options": [
+        "hot",
+        "hottest",
+        "more hot",
+        "hotter"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Two places are compared, so the comparative is needed. 'Hot' is a short adjective, so the comparative is 'hotter' (the t doubles), not 'more hot'."
+    },
+    {
+      "id": "SSCMTS-T1-071",
+      "section": "s2",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Idioms",
+      "stem": "Select the most appropriate meaning of the given idiom.\n\nTo let the cat out of the bag",
+      "options": [
+        "To reveal a secret",
+        "To run away fast",
+        "To buy a new pet",
+        "To cause trouble"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "To 'let the cat out of the bag' is to give away a secret by mistake: 'He let the cat out of the bag about the surprise party.'"
+    },
+    {
+      "id": "SSCMTS-T1-072",
+      "section": "s2",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Sentence improvement",
+      "stem": "Select the most appropriate option to replace the underlined part of the sentence. If no improvement is needed, select 'No improvement'.\n\nRavi is __more taller__ than his brother.",
+      "options": [
+        "most tall",
+        "tallest",
+        "taller",
+        "No improvement"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "'Taller' is already the comparative of 'tall', so 'more' must go: 'Ravi is taller than his brother.' Adding 'more' marks the comparison twice."
+    },
+    {
+      "id": "SSCMTS-T1-073",
+      "section": "s2",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "One-word substitution",
+      "stem": "Select the option that can be used as a one-word substitute for the given group of words.\n\nA person who can speak two languages",
+      "options": [
+        "Linguist",
+        "Translator",
+        "Interpreter",
+        "Bilingual"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "'Bilingual' describes someone who speaks two languages. A linguist studies languages, and a translator or interpreter turns one language into another as a job."
+    },
+    {
+      "id": "SSCMTS-T1-074",
+      "section": "s2",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Active and passive voice",
+      "stem": "Select the passive form of the sentence.\n\nThe boy kicked the ball.",
+      "options": [
+        "The ball is kicked by the boy.",
+        "The ball had been kicked by the boy.",
+        "The ball has been kicked by the boy.",
+        "The ball was kicked by the boy."
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "'Kicked' is simple past, so the passive uses 'was' + past participle: 'The ball was kicked by the boy.'"
+    },
+    {
+      "id": "SSCMTS-T1-075",
+      "section": "s2",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Spelling",
+      "stem": "Select the correctly spelt word.",
+      "options": [
+        "Embarass",
+        "Embarrass",
+        "Embaras",
+        "Emberrass"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "'Embarrass' has a double r and a double s: e-m-b-a-r-r-a-s-s."
+    },
+    {
+      "id": "SSCMTS-T1-076",
+      "section": "s2",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Direct and indirect speech",
+      "stem": "Select the correct indirect form of the sentence.\n\nShe said, \"I like mangoes.\"",
+      "options": [
+        "She said that she has liked mangoes.",
+        "She said that she liked mangoes.",
+        "She told that she liked mangoes.",
+        "She said that I liked mangoes."
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "With a past reporting verb, 'I' becomes 'she' and 'like' moves back to 'liked'. 'Told' needs an object ('told me'), so 'She told that' is wrong."
+    },
+    {
+      "id": "SSCMTS-T1-077",
+      "section": "s2",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Synonyms",
+      "stem": "Select the most appropriate synonym of the given word.\n\nBrave",
+      "options": [
+        "Courageous",
+        "Thoughtful",
+        "Timid",
+        "Polite"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "'Brave' and 'courageous' both mean ready to face danger or pain. 'Timid' is the opposite."
+    },
+    {
+      "id": "SSCMTS-T1-078",
+      "section": "s2",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Spotting errors",
+      "stem": "The sentence below is divided into parts. Select the part that contains a grammatical error. If there is no error, select 'No error'.\n\nOne of my friend / lives / in Jaipur.",
+      "options": [
+        "One of my friend",
+        "lives",
+        "in Jaipur",
+        "No error"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "'One of' is followed by a plural noun: 'One of my friends lives in Jaipur.' The verb 'lives' is correct because its subject is 'one'."
+    },
+    {
+      "id": "SSCMTS-T1-079",
+      "section": "s2",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Antonyms",
+      "stem": "Select the most appropriate antonym of the given word.\n\nCheerful",
+      "options": [
+        "Lively",
+        "Calm",
+        "Happy",
+        "Gloomy"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A cheerful person is bright and happy; a gloomy person is sad and low. 'Happy' and 'lively' are close in meaning to 'cheerful'."
+    },
+    {
+      "id": "SSCMTS-T1-080",
+      "section": "s2",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Fill in the blanks",
+      "stem": "Select the most appropriate option to fill in the blank.\n\n______ Ganga is one of the holiest rivers in India.",
+      "options": [
+        "The",
+        "A",
+        "An",
+        "Some"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Names of rivers take the definite article: the Ganga, the Yamuna, the Narmada."
+    },
+    {
+      "id": "SSCMTS-T1-081",
+      "section": "s2",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Idioms",
+      "stem": "Select the most appropriate meaning of the given idiom.\n\nTo break the ice",
+      "options": [
+        "To end a quarrel",
+        "To lose one's temper",
+        "To win a fight",
+        "To start talking"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "To 'break the ice' is to say or do something that gets people talking and relaxed, as at the start of a meeting with strangers."
+    },
+    {
+      "id": "SSCMTS-T1-082",
+      "section": "s2",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Fill in the blanks",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nPriya is very good ______ mathematics.",
+      "options": [
+        "with",
+        "on",
+        "at",
+        "in"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The fixed expression is 'good at' a subject or skill: good at mathematics, good at cooking."
+    },
+    {
+      "id": "SSCMTS-T1-083",
+      "section": "s2",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Cloze test",
+      "stimulusId": "SSCMTS-CL1",
+      "stem": "Cloze passage 1: select the most appropriate word for blank (1).",
+      "options": [
+        "holds",
+        "held",
+        "holding",
+        "hold"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "After 'is', the passive needs the past participle: the market 'is held' every Thursday."
+    },
+    {
+      "id": "SSCMTS-T1-084",
+      "section": "s2",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Cloze test",
+      "stimulusId": "SSCMTS-CL1",
+      "stem": "Cloze passage 1: select the most appropriate word for blank (2).",
+      "options": [
+        "by",
+        "with",
+        "from",
+        "on"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Things made without machines are made 'by hand'. This is a fixed phrase."
+    },
+    {
+      "id": "SSCMTS-T1-085",
+      "section": "s2",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Cloze test",
+      "stimulusId": "SSCMTS-CL1",
+      "stem": "Cloze passage 1: select the most appropriate word for blank (3).",
+      "options": [
+        "unless",
+        "so",
+        "because",
+        "yet"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Noisy and crowded sounds unpleasant, but everyone still enjoys it, so a word of contrast is needed: 'yet'. 'So' and 'because' show cause and result."
+    },
+    {
+      "id": "SSCMTS-T1-086",
+      "section": "s2",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Cloze test",
+      "stimulusId": "SSCMTS-CL1",
+      "stem": "Cloze passage 1: select the most appropriate word for blank (4).",
+      "options": [
+        "returned",
+        "return",
+        "returning",
+        "returns"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "'The traders pack up ... and return' joins two verbs with the same plural subject in the simple present, so the base form 'return' fits."
+    },
+    {
+      "id": "SSCMTS-T1-087",
+      "section": "s2",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "SSCMTS-RC1",
+      "stem": "According to the passage, what is a kolam made with?",
+      "options": [
+        "Rice flour",
+        "Chalk powder",
+        "Coloured sand",
+        "Flower petals"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The passage says, 'The pattern is made with rice flour.' Colour is added only on festival days."
+    },
+    {
+      "id": "SSCMTS-T1-088",
+      "section": "s2",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "SSCMTS-RC1",
+      "stem": "Which of these is NOT mentioned in the passage as eating the rice flour?",
+      "options": [
+        "Cows",
+        "Squirrels",
+        "Sparrows",
+        "Ants"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The passage names 'ants, sparrows and squirrels'. Cows are not mentioned."
+    },
+    {
+      "id": "SSCMTS-T1-089",
+      "section": "s2",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "SSCMTS-RC1",
+      "stem": "As used in the passage, the word 'steady' most nearly means:",
+      "options": [
+        "weak",
+        "firm",
+        "fast",
+        "clever"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A steady hand is firm and does not shake, which is what drawing a neat line of flour needs."
+    },
+    {
+      "id": "SSCMTS-T1-090",
+      "section": "s2",
+      "test": 1,
+      "module": 1,
+      "domain": "mtsVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "SSCMTS-RC1",
+      "stem": "According to the passage, how are kolams different on festival days?",
+      "options": [
+        "They are bigger and coloured",
+        "They are made of chalk",
+        "They are not drawn at all",
+        "They are drawn indoors only"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The passage says that on festival days 'the kolams become much larger and are often filled with colour'."
+    },
+    {
+      "id": "SSCMTS-T2-001",
+      "section": "s1",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Percentage",
+      "stem": "What is 35 percent of 260?",
+      "options": [
+        "95",
+        "91",
+        "89",
+        "81"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "10 percent of 260 is 26, so 30 percent is 78 and 5 percent is 13. 35 percent is 78 + 13 = 91."
+    },
+    {
+      "id": "SSCMTS-T2-002",
+      "section": "s1",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "HCF and LCM",
+      "stem": "What is the LCM of 8, 12 and 20?",
+      "options": [
+        "120",
+        "40",
+        "240",
+        "60"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "8 = 2³, 12 = 2² x 3 and 20 = 2² x 5. Take the highest power of each prime: 2³ x 3 x 5 = 120."
+    },
+    {
+      "id": "SSCMTS-T2-003",
+      "section": "s1",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Profit and loss",
+      "stem": "A cycle bought for ₹2,500 is sold at a loss of 8 percent. What is its selling price?",
+      "options": [
+        "₹2,300",
+        "₹2,420",
+        "₹2,492",
+        "₹2,200"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Loss = 8 percent of 2,500 = ₹200, so the selling price is 2,500 - 200 = ₹2,300."
+    },
+    {
+      "id": "SSCMTS-T2-004",
+      "section": "s1",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Simplification",
+      "stem": "What is the value of 3.6 + 0.48 - 1.05?",
+      "options": [
+        "3.03",
+        "2.03",
+        "3.30",
+        "3.13"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Line up the decimal points: 3.60 + 0.48 = 4.08, and 4.08 - 1.05 = 3.03."
+    },
+    {
+      "id": "SSCMTS-T2-005",
+      "section": "s1",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Discount",
+      "stem": "A shirt is sold for ₹552 after a discount of 8 percent. What is its marked price?",
+      "options": [
+        "₹560",
+        "₹596",
+        "₹600",
+        "₹644"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The selling price is 92 percent of the marked price, so marked price = 552 / 0.92 = ₹600. Adding 8 percent of 552 (giving about ₹596) uses the wrong base."
+    },
+    {
+      "id": "SSCMTS-T2-006",
+      "section": "s1",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Cube roots",
+      "stem": "What is the cube root of 2,197?",
+      "options": [
+        "19",
+        "11",
+        "13",
+        "17"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A cube ending in 7 has a cube root ending in 3, and 10³ = 1,000 while 20³ = 8,000, so the root is 13. Check: 13 x 13 x 13 = 2,197."
+    },
+    {
+      "id": "SSCMTS-T2-007",
+      "section": "s1",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Ratio",
+      "stem": "₹1,800 is divided between Kiran and Leela in the ratio 5 : 4. How much does Leela get?",
+      "options": [
+        "₹800",
+        "₹720",
+        "₹900",
+        "₹1,000"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "There are 5 + 4 = 9 parts, each worth 1,800 / 9 = ₹200. Leela gets 4 x 200 = ₹800; Kiran gets ₹1,000."
+    },
+    {
+      "id": "SSCMTS-T2-008",
+      "section": "s1",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Fractions",
+      "stem": "What is 2/3 of 3/4 of 96?",
+      "options": [
+        "54",
+        "48",
+        "64",
+        "72"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "3/4 of 96 = 72, and 2/3 of 72 = 48. Or multiply the fractions first: 2/3 x 3/4 = 1/2, and half of 96 is 48."
+    },
+    {
+      "id": "SSCMTS-T2-009",
+      "section": "s1",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Average",
+      "stem": "What is the average of 14, 22, 27, 33 and 39?",
+      "options": [
+        "27",
+        "30",
+        "28",
+        "26"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Sum = 14 + 22 + 27 + 33 + 39 = 135. Average = 135 / 5 = 27."
+    },
+    {
+      "id": "SSCMTS-T2-010",
+      "section": "s1",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Mensuration",
+      "stem": "A triangle has a base of 18 cm and a height of 10 cm. What is its area?",
+      "options": [
+        "180 sq cm",
+        "28 sq cm",
+        "90 sq cm",
+        "45 sq cm"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Area of a triangle = 1/2 x base x height = 1/2 x 18 x 10 = 90 sq cm. 180 forgets the half."
+    },
+    {
+      "id": "SSCMTS-T2-011",
+      "section": "s1",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Simple interest",
+      "stem": "In how many years will ₹2,000 earn ₹480 as simple interest at 6 percent per annum?",
+      "options": [
+        "3 years",
+        "5 years",
+        "6 years",
+        "4 years"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Interest for one year = 2,000 x 6 / 100 = ₹120. Years = 480 / 120 = 4."
+    },
+    {
+      "id": "SSCMTS-T2-012",
+      "section": "s1",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Mensuration",
+      "stem": "The length of a rectangle is 24 m and its area is 360 sq m. What is its breadth?",
+      "options": [
+        "12 m",
+        "16 m",
+        "15 m",
+        "18 m"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Area = length x breadth, so breadth = 360 / 24 = 15 m."
+    },
+    {
+      "id": "SSCMTS-T2-013",
+      "section": "s1",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Compound interest",
+      "stem": "What is the compound interest on ₹5,000 at 4 percent per annum for 2 years, compounded annually?",
+      "options": [
+        "₹204",
+        "₹400",
+        "₹416",
+        "₹408"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Amount = 5,000 x 1.04 x 1.04 = ₹5,408, so CI = ₹408. Simple interest would be ₹400; the extra ₹8 is interest on the first year's ₹200 interest."
+    },
+    {
+      "id": "SSCMTS-T2-014",
+      "section": "s1",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Mensuration",
+      "stem": "What is the area of a circle of radius 14 cm? (Take π = 22/7.)",
+      "options": [
+        "616 sq cm",
+        "88 sq cm",
+        "1,232 sq cm",
+        "308 sq cm"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Area = πr² = 22/7 x 14 x 14 = 616 sq cm. 88 cm is the circumference."
+    },
+    {
+      "id": "SSCMTS-T2-015",
+      "section": "s1",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Time and work",
+      "stem": "8 workers can build a wall in 15 days. How many days will 12 workers take to build the same wall, working at the same rate?",
+      "options": [
+        "10 days",
+        "12 days",
+        "9 days",
+        "22.5 days"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The wall needs 8 x 15 = 120 worker-days. With 12 workers it takes 120 / 12 = 10 days. More workers means fewer days, so 22.5 days (the direct proportion) cannot be right."
+    },
+    {
+      "id": "SSCMTS-T2-016",
+      "section": "s1",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Mensuration",
+      "stem": "A water tank is 4 m long, 3 m wide and 2 m deep. How many litres of water can it hold? (1 cubic metre = 1,000 litres.)",
+      "options": [
+        "2,400 litres",
+        "18,000 litres",
+        "9,000 litres",
+        "24,000 litres"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Volume = 4 x 3 x 2 = 24 cubic metres, and 24 x 1,000 = 24,000 litres."
+    },
+    {
+      "id": "SSCMTS-T2-017",
+      "section": "s1",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Speed and distance",
+      "stem": "A train runs at 72 km/h. How many metres does it travel in one second?",
+      "options": [
+        "25 metres",
+        "20 metres",
+        "72 metres",
+        "18 metres"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "To change km/h to m/s, multiply by 5/18: 72 x 5 / 18 = 20 m/s."
+    },
+    {
+      "id": "SSCMTS-T2-018",
+      "section": "s1",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stem": "In a class, 12 students got grade A, 18 got grade B, 24 got grade C and 6 got grade D. What percentage of the class got grade B?",
+      "options": [
+        "25 percent",
+        "30 percent",
+        "18 percent",
+        "36 percent"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The class has 12 + 18 + 24 + 6 = 60 students. 18 / 60 x 100 = 30 percent."
+    },
+    {
+      "id": "SSCMTS-T2-019",
+      "section": "s1",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Partnership",
+      "stem": "Arjun invests ₹45,000 and Bina invests ₹27,000 in a shop for the same period. The year's profit is ₹16,000. What is Arjun's share?",
+      "options": [
+        "₹9,600",
+        "₹8,000",
+        "₹10,000",
+        "₹6,000"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "For the same period, profit is shared in the ratio of investment, 45,000 : 27,000 = 5 : 3. Arjun gets 5/8 of 16,000 = ₹10,000 and Bina ₹6,000."
+    },
+    {
+      "id": "SSCMTS-T2-020",
+      "section": "s1",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Number system",
+      "stem": "What is the smallest number that must be added to 1,500 to make it exactly divisible by 17?",
+      "options": [
+        "17",
+        "11",
+        "13",
+        "4"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "17 x 88 = 1,496, leaving a remainder of 4. The next multiple is 17 x 89 = 1,513, so 13 must be added. 4 is the remainder, which would have to be subtracted."
+    },
+    {
+      "id": "SSCMTS-T2-021",
+      "section": "s1",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Analogy",
+      "stem": "Select the word that completes the analogy.\n\nLion : Den :: Spider : ?",
+      "options": [
+        "Web",
+        "Hole",
+        "Hive",
+        "Nest"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A lion lives in a den and a spider lives on its web. A hive is the home of bees and a nest the home of birds."
+    },
+    {
+      "id": "SSCMTS-T2-022",
+      "section": "s1",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsLogical",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Blood relations",
+      "stem": "Ravi's mother is the only daughter of Mohan. How is Mohan related to Ravi?",
+      "options": [
+        "Uncle",
+        "Grandfather",
+        "Father",
+        "Brother-in-law"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Mohan is the father of Ravi's mother, so he is Ravi's maternal grandfather."
+    },
+    {
+      "id": "SSCMTS-T2-023",
+      "section": "s1",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "Find the next number in the series.\n\n5, 10, 20, 40, ?",
+      "options": [
+        "100",
+        "60",
+        "80",
+        "70"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Each number is double the one before: 40 x 2 = 80."
+    },
+    {
+      "id": "SSCMTS-T2-024",
+      "section": "s1",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsLogical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Direction sense",
+      "stem": "Ajay is facing south. He turns 90 degrees clockwise and then 135 degrees anticlockwise. Which direction is he facing now?",
+      "options": [
+        "South-west",
+        "North-west",
+        "North-east",
+        "South-east"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "From south, 90 degrees clockwise brings him to west. From west, 90 degrees anticlockwise is south and another 45 degrees anticlockwise is south-east."
+    },
+    {
+      "id": "SSCMTS-T2-025",
+      "section": "s1",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Odd one out",
+      "stem": "Select the word that does not belong with the others.\n\nKolkata, Nepal, Chennai, Pune",
+      "options": [
+        "Kolkata",
+        "Pune",
+        "Chennai",
+        "Nepal"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Kolkata, Chennai and Pune are Indian cities. Nepal is a country."
+    },
+    {
+      "id": "SSCMTS-T2-026",
+      "section": "s1",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsLogical",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Ranking",
+      "stem": "Kavita is 13th from the top and 18th from the bottom in her class ranking. How many students are in the class?",
+      "options": [
+        "30",
+        "32",
+        "31",
+        "29"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Total = position from top + position from bottom - 1 = 13 + 18 - 1 = 30. Adding 13 and 18 counts Kavita twice."
+    },
+    {
+      "id": "SSCMTS-T2-027",
+      "section": "s1",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Coding-decoding",
+      "stem": "In a certain code, ACE is written as 9 (A = 1, C = 3, E = 5). How is BAG written in that code?",
+      "options": [
+        "10",
+        "12",
+        "11",
+        "9"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Each word is coded as the sum of its letters' positions in the alphabet. B = 2, A = 1 and G = 7, so BAG = 10."
+    },
+    {
+      "id": "SSCMTS-T2-028",
+      "section": "s1",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsLogical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Calendar",
+      "stem": "If 1 January 2023 was a Sunday, what day of the week was 1 January 2024?",
+      "options": [
+        "Sunday",
+        "Monday",
+        "Saturday",
+        "Tuesday"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "2023 was not a leap year, so it had 365 days, which is 52 weeks and 1 day. The day moves forward by one, from Sunday to Monday."
+    },
+    {
+      "id": "SSCMTS-T2-029",
+      "section": "s1",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Letter series",
+      "stem": "Find the next letter in the series.\n\nZ, X, V, T, ?",
+      "options": [
+        "S",
+        "R",
+        "Q",
+        "P"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The series runs backwards, skipping one letter each time: Z (skip Y) X (skip W) V (skip U) T (skip S) R."
+    },
+    {
+      "id": "SSCMTS-T2-030",
+      "section": "s1",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsLogical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Clock",
+      "stem": "A clock shows 4:30. What is the angle between the hour hand and the minute hand?",
+      "options": [
+        "30 degrees",
+        "15 degrees",
+        "60 degrees",
+        "45 degrees"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The minute hand is on 6, at 180 degrees. The hour hand is halfway between 4 and 5, at 4.5 x 30 = 135 degrees. The angle is 180 - 135 = 45 degrees."
+    },
+    {
+      "id": "SSCMTS-T2-031",
+      "section": "s1",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Analogy",
+      "stem": "Select the word that completes the analogy.\n\nEye : See :: Ear : ?",
+      "options": [
+        "Head",
+        "Noise",
+        "Hear",
+        "Sound"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The pair links a sense organ with what it does. The eye sees and the ear hears. Sound is what is heard, not the action."
+    },
+    {
+      "id": "SSCMTS-T2-032",
+      "section": "s1",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsLogical",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Dictionary order",
+      "stem": "Which word comes last when these are arranged in dictionary order?\n\nCricket, Crisis, Crime, Critic",
+      "options": [
+        "Critic",
+        "Cricket",
+        "Crime",
+        "Crisis"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "All begin with 'Cri'. The fourth letters are c (Cricket), m (Crime), s (Crisis) and t (Critic), so Critic comes last."
+    },
+    {
+      "id": "SSCMTS-T2-033",
+      "section": "s1",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Number analogy",
+      "stem": "Select the number that completes the analogy.\n\n6 : 35 :: 8 : ?",
+      "options": [
+        "63",
+        "48",
+        "64",
+        "65"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "35 = 6 x 6 - 1. In the same way, 8 x 8 - 1 = 63."
+    },
+    {
+      "id": "SSCMTS-T2-034",
+      "section": "s1",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsLogical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Syllogism",
+      "stem": "Statements: Some cats are dogs. All dogs are rats.\n\nWhich conclusion definitely follows from the statements?",
+      "options": [
+        "All cats are dogs",
+        "No rat is a cat",
+        "All rats are cats",
+        "Some cats are rats"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The cats that are dogs are also rats, because all dogs are rats. So at least some cats are rats. Nothing says all cats are dogs or all rats are cats."
+    },
+    {
+      "id": "SSCMTS-T2-035",
+      "section": "s1",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "Find the next number in the series.\n\n2, 5, 11, 23, 47, ?",
+      "options": [
+        "95",
+        "93",
+        "71",
+        "94"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Each term is double the one before plus 1: 47 x 2 + 1 = 95. The differences (3, 6, 12, 24) also double, so the next difference is 48."
+    },
+    {
+      "id": "SSCMTS-T2-036",
+      "section": "s1",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsLogical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Mathematical operations",
+      "stem": "If P means '+', Q means '-', R means 'x' and S means '÷', what is the value of 18 S 3 P 4 R 2 Q 5?",
+      "options": [
+        "9",
+        "7",
+        "15",
+        "13"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The expression is 18 ÷ 3 + 4 x 2 - 5. Division and multiplication first: 6 + 8 - 5 = 9. Working strictly left to right gives 15."
+    },
+    {
+      "id": "SSCMTS-T2-037",
+      "section": "s1",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Coding-decoding",
+      "stem": "In a certain code, TABLE is written as ELBAT. How is CHAIR written in that code?",
+      "options": [
+        "RIHAC",
+        "RAIHC",
+        "CRIAH",
+        "RIAHC"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The code writes the word backwards. CHAIR backwards is R, I, A, H, C."
+    },
+    {
+      "id": "SSCMTS-T2-038",
+      "section": "s1",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsLogical",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Blood relations",
+      "stem": "P is the father of Q. S is the wife of P. T is the son of Q. How is S related to T?",
+      "options": [
+        "Aunt",
+        "Mother",
+        "Grandmother",
+        "Sister"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "S is P's wife, so she is Q's mother. T is Q's son, so S is T's grandmother."
+    },
+    {
+      "id": "SSCMTS-T2-039",
+      "section": "s1",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Alphabet",
+      "stem": "Which letter is the 8th from the right end of the English alphabet?",
+      "options": [
+        "S",
+        "T",
+        "H",
+        "R"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The 8th from the right is the (26 - 8 + 1) = 19th from the left, which is S. H is the 8th from the left."
+    },
+    {
+      "id": "SSCMTS-T2-040",
+      "section": "s1",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsLogical",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Ordering",
+      "stem": "Bhanu is taller than Amar but shorter than Dev. Chirag is shorter than Amar. Who is the tallest?",
+      "options": [
+        "Dev",
+        "Amar",
+        "Chirag",
+        "Bhanu"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "From the statements: Dev > Bhanu > Amar > Chirag. Dev is the tallest and Chirag the shortest."
+    },
+    {
+      "id": "SSCMTS-T2-041",
+      "section": "s2",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Medieval history",
+      "stem": "Which ruler introduced the silver coin called the 'rupiya'?",
+      "options": [
+        "Alauddin Khalji",
+        "Sher Shah Suri",
+        "Babur",
+        "Akbar"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Sher Shah Suri, who ruled from 1540 to 1545, issued the silver rupiya, which the Mughals later continued."
+    },
+    {
+      "id": "SSCMTS-T2-042",
+      "section": "s2",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Science",
+      "stem": "Which part of the human brain controls balance and posture?",
+      "options": [
+        "Cerebellum",
+        "Medulla oblongata",
+        "Cerebrum",
+        "Spinal cord"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The cerebellum keeps the body balanced and coordinates movement. The cerebrum handles thinking and memory, and the medulla controls heartbeat and breathing."
+    },
+    {
+      "id": "SSCMTS-T2-043",
+      "section": "s2",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsHistory",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Culture",
+      "stem": "About how long does it take to sing the full version of the national anthem?",
+      "options": [
+        "20 seconds",
+        "2 minutes",
+        "52 seconds",
+        "90 seconds"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The Government's orders on the national anthem give the full version a playing time of about 52 seconds. A short version, of the first and last lines, takes about 20 seconds."
+    },
+    {
+      "id": "SSCMTS-T2-044",
+      "section": "s2",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Economy",
+      "stem": "In which year did India's First Five-Year Plan begin?",
+      "options": [
+        "1951",
+        "1947",
+        "1961",
+        "1956"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The First Five-Year Plan ran from 1951 to 1956 and focused on agriculture and irrigation. The Second Plan began in 1956."
+    },
+    {
+      "id": "SSCMTS-T2-045",
+      "section": "s2",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsHistory",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Culture",
+      "stem": "Who was the founder of Sikhism?",
+      "options": [
+        "Guru Gobind Singh",
+        "Guru Nanak Dev",
+        "Guru Arjan Dev",
+        "Guru Tegh Bahadur"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Guru Nanak Dev, born in 1469, was the first Sikh Guru and the founder of Sikhism. Guru Gobind Singh was the tenth Guru."
+    },
+    {
+      "id": "SSCMTS-T2-046",
+      "section": "s2",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Geography",
+      "stem": "Which is the national fruit of India?",
+      "options": [
+        "Jackfruit",
+        "Banana",
+        "Mango",
+        "Guava"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The mango is India's national fruit. The lotus is the national flower and the banyan the national tree."
+    },
+    {
+      "id": "SSCMTS-T2-047",
+      "section": "s2",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Modern history",
+      "stem": "Which Governor-General made the practice of sati illegal in 1829?",
+      "options": [
+        "Lord Curzon",
+        "Lord Dalhousie",
+        "Lord William Bentinck",
+        "Lord Ripon"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Lord William Bentinck's Bengal Sati Regulation of 1829 made sati a crime, after a long campaign by Raja Ram Mohan Roy and others."
+    },
+    {
+      "id": "SSCMTS-T2-048",
+      "section": "s2",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Science",
+      "stem": "Which instrument records earthquakes?",
+      "options": [
+        "Barometer",
+        "Seismograph",
+        "Ammeter",
+        "Altimeter"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A seismograph records the vibrations of an earthquake. A barometer measures air pressure, an ammeter electric current and an altimeter height."
+    },
+    {
+      "id": "SSCMTS-T2-049",
+      "section": "s2",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Modern history",
+      "stem": "Who founded the Satyashodhak Samaj in 1873?",
+      "options": [
+        "B. R. Ambedkar",
+        "Jyotiba Phule",
+        "Raja Ram Mohan Roy",
+        "Narayana Guru"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Jyotiba Phule founded the Satyashodhak Samaj (Society of Truth Seekers) in Pune to work against caste discrimination."
+    },
+    {
+      "id": "SSCMTS-T2-050",
+      "section": "s2",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Science",
+      "stem": "The ozone layer protects living things from which harmful rays of the Sun?",
+      "options": [
+        "Radio waves",
+        "Visible light",
+        "Infrared rays",
+        "Ultraviolet rays"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Ozone in the upper atmosphere absorbs most of the Sun's ultraviolet rays, which can cause sunburn and skin cancer."
+    },
+    {
+      "id": "SSCMTS-T2-051",
+      "section": "s2",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Medieval history",
+      "stem": "The Gol Gumbaz, the tomb of Muhammad Adil Shah, is in which present-day state?",
+      "options": [
+        "Telangana",
+        "Gujarat",
+        "Karnataka",
+        "Maharashtra"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The Gol Gumbaz stands in Vijayapura (Bijapur), Karnataka, the capital of the Adil Shahi sultans. Its huge dome is famous for its whispering gallery."
+    },
+    {
+      "id": "SSCMTS-T2-052",
+      "section": "s2",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Science",
+      "stem": "Which blood cells help the body fight infection?",
+      "options": [
+        "Plasma",
+        "Red blood cells",
+        "Platelets",
+        "White blood cells"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "White blood cells attack germs. Red blood cells carry oxygen, platelets help blood to clot, and plasma is the liquid part of blood."
+    },
+    {
+      "id": "SSCMTS-T2-053",
+      "section": "s2",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsHistory",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Culture",
+      "stem": "The Hawa Mahal, the 'Palace of Winds', is in which city?",
+      "options": [
+        "Bikaner",
+        "Udaipur",
+        "Jodhpur",
+        "Jaipur"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The Hawa Mahal was built in Jaipur in 1799 by Maharaja Sawai Pratap Singh, with small windows that let royal women watch the street unseen."
+    },
+    {
+      "id": "SSCMTS-T2-054",
+      "section": "s2",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Geography",
+      "stem": "Which of these is a rabi crop, sown in winter?",
+      "options": [
+        "Maize",
+        "Cotton",
+        "Rice",
+        "Wheat"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Rabi crops such as wheat, gram and mustard are sown in winter and harvested in spring. Rice, maize and cotton are kharif crops."
+    },
+    {
+      "id": "SSCMTS-T2-055",
+      "section": "s2",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsHistory",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Polity",
+      "stem": "In which year was the Right to Information Act passed?",
+      "options": [
+        "2009",
+        "2002",
+        "2010",
+        "2005"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The Right to Information Act, 2005 lets citizens request information from public authorities. The Right to Education Act came in 2009."
+    },
+    {
+      "id": "SSCMTS-T2-056",
+      "section": "s2",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Science",
+      "stem": "Which instrument measures the humidity of the air?",
+      "options": [
+        "Thermometer",
+        "Hygrometer",
+        "Barometer",
+        "Altimeter"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A hygrometer measures humidity, the amount of water vapour in the air. A barometer measures air pressure and an altimeter measures height."
+    },
+    {
+      "id": "SSCMTS-T2-057",
+      "section": "s2",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Polity",
+      "stem": "Which Article of the Constitution sets out how the Constitution can be amended?",
+      "options": [
+        "Article 368",
+        "Article 352",
+        "Article 280",
+        "Article 370"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Article 368 gives Parliament the power to amend the Constitution and lays down the procedure. Article 352 is a National Emergency and Article 280 sets up the Finance Commission."
+    },
+    {
+      "id": "SSCMTS-T2-058",
+      "section": "s2",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Science",
+      "stem": "What was the name of India's first satellite, launched in 1975?",
+      "options": [
+        "Bhaskara",
+        "Rohini",
+        "Aryabhata",
+        "INSAT-1A"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Aryabhata, named after the ancient mathematician, was launched on 19 April 1975 from the Soviet Union. Bhaskara followed in 1979."
+    },
+    {
+      "id": "SSCMTS-T2-059",
+      "section": "s2",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Modern history",
+      "stem": "Who was the first Governor-General of independent India?",
+      "options": [
+        "Lord Irwin",
+        "Lord Canning",
+        "Lord Mountbatten",
+        "C. Rajagopalachari"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Lord Mountbatten stayed on as Governor-General after 15 August 1947. C. Rajagopalachari succeeded him in 1948 as the first and only Indian Governor-General."
+    },
+    {
+      "id": "SSCMTS-T2-060",
+      "section": "s2",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Science",
+      "stem": "Which is the longest bone in the human body?",
+      "options": [
+        "Radius",
+        "Humerus",
+        "Tibia",
+        "Femur"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The femur, or thigh bone, is the longest and strongest bone in the body. The tibia is the shin bone."
+    },
+    {
+      "id": "SSCMTS-T2-061",
+      "section": "s2",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsHistory",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Polity",
+      "stem": "What is the term of a member of the Rajya Sabha?",
+      "options": [
+        "5 years",
+        "6 years",
+        "4 years",
+        "2 years"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Rajya Sabha members serve six-year terms. The House is never dissolved; one-third of its members retire every second year."
+    },
+    {
+      "id": "SSCMTS-T2-062",
+      "section": "s2",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Science",
+      "stem": "Which acid is found in the sting of an ant?",
+      "options": [
+        "Formic acid",
+        "Citric acid",
+        "Nitric acid",
+        "Lactic acid"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Ant stings contain formic acid, which is why a mild base such as baking soda soothes them. Citric acid is found in lemons."
+    },
+    {
+      "id": "SSCMTS-T2-063",
+      "section": "s2",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsHistory",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Ancient history",
+      "stem": "The ancient university of Nalanda is in which present-day state?",
+      "options": [
+        "West Bengal",
+        "Bihar",
+        "Uttar Pradesh",
+        "Jharkhand"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Nalanda, a great centre of Buddhist learning from the 5th century CE, is in Bihar."
+    },
+    {
+      "id": "SSCMTS-T2-064",
+      "section": "s2",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Geography",
+      "stem": "Which city is known as the \"Silicon Valley of India\"?",
+      "options": [
+        "Hyderabad",
+        "Pune",
+        "Bengaluru",
+        "Chennai"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Bengaluru earned the name as the centre of India's information technology industry."
+    },
+    {
+      "id": "SSCMTS-T2-065",
+      "section": "s2",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsHistory",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Medieval history",
+      "stem": "Which Mughal emperor built the Red Fort in Delhi?",
+      "options": [
+        "Aurangzeb",
+        "Akbar",
+        "Shah Jahan",
+        "Humayun"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Shah Jahan built the Red Fort (Lal Qila) as the palace of his new capital, Shahjahanabad, completing it in 1648."
+    },
+    {
+      "id": "SSCMTS-T2-066",
+      "section": "s2",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Spotting errors",
+      "stem": "The sentence below is divided into parts. Select the part that contains a grammatical error. If there is no error, select 'No error'.\n\nThe children / was playing / in the park.",
+      "options": [
+        "The children",
+        "was playing",
+        "in the park",
+        "No error"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "'Children' is plural, so the verb must be 'were playing'."
+    },
+    {
+      "id": "SSCMTS-T2-067",
+      "section": "s2",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Synonyms",
+      "stem": "Select the most appropriate synonym of the given word.\n\nRapid",
+      "options": [
+        "Quick",
+        "Silent",
+        "Slow",
+        "Steady"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "'Rapid' means happening very fast, the same as 'quick'. 'Slow' is its opposite."
+    },
+    {
+      "id": "SSCMTS-T2-068",
+      "section": "s2",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Fill in the blanks",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nHe apologised ______ being late for the meeting.",
+      "options": [
+        "of",
+        "on",
+        "about",
+        "for"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The fixed expression is 'apologise for' something: he apologised for being late."
+    },
+    {
+      "id": "SSCMTS-T2-069",
+      "section": "s2",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Antonyms",
+      "stem": "Select the most appropriate antonym of the given word.\n\nAccept",
+      "options": [
+        "Agree",
+        "Receive",
+        "Admit",
+        "Reject"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "To accept is to take or agree to something; to reject is to refuse it. 'Receive' and 'agree' are close in meaning to 'accept'."
+    },
+    {
+      "id": "SSCMTS-T2-070",
+      "section": "s2",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Fill in the blanks",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nThis is the book ______ I bought yesterday.",
+      "options": [
+        "whom",
+        "who",
+        "whose",
+        "which"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "'Which' refers to things, here the book. 'Who' and 'whom' refer to people."
+    },
+    {
+      "id": "SSCMTS-T2-071",
+      "section": "s2",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Idioms",
+      "stem": "Select the most appropriate meaning of the given idiom.\n\nTo beat around the bush",
+      "options": [
+        "To waste money",
+        "To search everywhere",
+        "To work very hard",
+        "To avoid the point"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "To 'beat around the bush' is to avoid saying what you really mean: 'Stop beating around the bush and tell me what happened.'"
+    },
+    {
+      "id": "SSCMTS-T2-072",
+      "section": "s2",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Sentence improvement",
+      "stem": "Select the most appropriate option to replace the underlined part of the sentence. If no improvement is needed, select 'No improvement'.\n\nHe __has finished__ his work an hour ago.",
+      "options": [
+        "have finished",
+        "has been finishing",
+        "finished",
+        "No improvement"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "A finished time in the past such as 'an hour ago' takes the simple past, not the present perfect: 'He finished his work an hour ago.'"
+    },
+    {
+      "id": "SSCMTS-T2-073",
+      "section": "s2",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "One-word substitution",
+      "stem": "Select the option that can be used as a one-word substitute for the given group of words.\n\nA place where books are kept for people to read or borrow",
+      "options": [
+        "Museum",
+        "Gallery",
+        "Library",
+        "Bookshop"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A library keeps books for reading and lending. A bookshop sells them."
+    },
+    {
+      "id": "SSCMTS-T2-074",
+      "section": "s2",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Active and passive voice",
+      "stem": "Select the active form of the sentence.\n\nThe windows were cleaned by the workers.",
+      "options": [
+        "The workers cleaned the windows.",
+        "The workers have cleaned the windows.",
+        "The workers clean the windows.",
+        "The workers had cleaned the windows."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "'Were cleaned' is simple past passive, so the active form is simple past: 'The workers cleaned the windows.'"
+    },
+    {
+      "id": "SSCMTS-T2-075",
+      "section": "s2",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Spelling",
+      "stem": "Which of these words is spelt correctly?",
+      "options": [
+        "Beautiful",
+        "Beautifull",
+        "Beatiful",
+        "Beutiful"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "'Beautiful' is spelt b-e-a-u-t-i-f-u-l, with the 'eau' from 'beauty' and a single l at the end."
+    },
+    {
+      "id": "SSCMTS-T2-076",
+      "section": "s2",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Direct and indirect speech",
+      "stem": "Select the correct indirect form of the sentence.\n\nRam said to me, \"Open the door.\"",
+      "options": [
+        "Ram said me to open the door.",
+        "Ram told me that open the door.",
+        "Ram told me to open the door.",
+        "Ram asked me that I opened door."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A command is reported with 'told' (or 'ordered', 'asked') plus the object and 'to' + verb: 'Ram told me to open the door.' 'Said me' is not used without 'to'."
+    },
+    {
+      "id": "SSCMTS-T2-077",
+      "section": "s2",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Synonyms",
+      "stem": "Select the most appropriate synonym of the given word.\n\nHonest",
+      "options": [
+        "Humble",
+        "Wealthy",
+        "Clever",
+        "Truthful"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "An honest person tells the truth, so 'truthful' is the synonym. 'Humble' means modest, which is a different quality."
+    },
+    {
+      "id": "SSCMTS-T2-078",
+      "section": "s2",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Spotting errors",
+      "stem": "The sentence below is divided into parts. Select the part that contains a grammatical error. If there is no error, select 'No error'.\n\nMy father / does not likes / tea.",
+      "options": [
+        "My father",
+        "does not likes",
+        "tea",
+        "No error"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "After 'does not', the verb takes its base form: 'does not like'. The -s is already carried by 'does'."
+    },
+    {
+      "id": "SSCMTS-T2-079",
+      "section": "s2",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Antonyms",
+      "stem": "Select the most appropriate antonym of the given word.\n\nPolite",
+      "options": [
+        "Rude",
+        "Humble",
+        "Gentle",
+        "Kind"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A polite person speaks and behaves with good manners; a rude person does not. 'Kind' and 'gentle' are close to 'polite'."
+    },
+    {
+      "id": "SSCMTS-T2-080",
+      "section": "s2",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Fill in the blanks",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nThere is ______ milk left in the jug, so please buy some.",
+      "options": [
+        "a few",
+        "many",
+        "little",
+        "few"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "'Milk' is uncountable, so it takes 'little', which here means 'hardly any'. 'Few' and 'many' go with countable nouns such as bottles."
+    },
+    {
+      "id": "SSCMTS-T2-081",
+      "section": "s2",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "One-word substitution",
+      "stem": "Select the option that can be used as a one-word substitute for the given group of words.\n\nA doctor who treats children",
+      "options": [
+        "Dermatologist",
+        "Paediatrician",
+        "Orthopaedist",
+        "Cardiologist"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A paediatrician specialises in children's health. A dermatologist treats the skin, a cardiologist the heart and an orthopaedist bones and joints."
+    },
+    {
+      "id": "SSCMTS-T2-082",
+      "section": "s2",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Fill in the blanks",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nThe teacher was pleased ______ her answer.",
+      "options": [
+        "to",
+        "on",
+        "with",
+        "at"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "We are 'pleased with' something or someone: pleased with her answer, pleased with the result."
+    },
+    {
+      "id": "SSCMTS-T2-083",
+      "section": "s2",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Cloze test",
+      "stimulusId": "SSCMTS-CL2",
+      "stem": "Cloze passage 2: select the most appropriate word for blank (1).",
+      "options": [
+        "cleans",
+        "cleaned",
+        "cleaning",
+        "clean"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "'They give ... and clean' joins two verbs with the same plural subject in the simple present, so the base form 'clean' fits."
+    },
+    {
+      "id": "SSCMTS-T2-084",
+      "section": "s2",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Cloze test",
+      "stimulusId": "SSCMTS-CL2",
+      "stem": "Cloze passage 2: select the most appropriate word for blank (2).",
+      "options": [
+        "to",
+        "of",
+        "in",
+        "at"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The phrase is 'in the safety of', meaning protected by the branches."
+    },
+    {
+      "id": "SSCMTS-T2-085",
+      "section": "s2",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Cloze test",
+      "stimulusId": "SSCMTS-CL2",
+      "stem": "Cloze passage 2: select the most appropriate word for blank (3).",
+      "options": [
+        "forbids",
+        "prevents",
+        "teaches",
+        "refuses"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Planting a tree for a newborn is a custom that teaches people to care for nature. 'Prevents' and 'forbids' reverse the meaning, and 'refuses' cannot take 'people to'."
+    },
+    {
+      "id": "SSCMTS-T2-086",
+      "section": "s2",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Cloze test",
+      "stimulusId": "SSCMTS-CL2",
+      "stem": "Cloze passage 2: select the most appropriate word for blank (4).",
+      "options": [
+        "unless",
+        "during",
+        "although",
+        "since"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Soil is washed away during heavy rain. 'Since', 'unless' and 'although' would need a full clause after them."
+    },
+    {
+      "id": "SSCMTS-T2-087",
+      "section": "s2",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "SSCMTS-RC2",
+      "stem": "How long did the shop stay shut when Salma's father fell ill?",
+      "options": [
+        "A month",
+        "Two days",
+        "A year",
+        "A week"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The passage says, 'When he fell ill, the shop stayed shut for a month.'"
+    },
+    {
+      "id": "SSCMTS-T2-088",
+      "section": "s2",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "SSCMTS-RC2",
+      "stem": "How did Salma win back the customers who had laughed at her?",
+      "options": [
+        "Through quick, fair work",
+        "By moving the shop",
+        "By offering free repairs",
+        "By arguing with them"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "She 'fixed punctures quickly, charged fair prices and never kept anyone waiting', and within a few weeks the customers were back."
+    },
+    {
+      "id": "SSCMTS-T2-089",
+      "section": "s2",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "SSCMTS-RC2",
+      "stem": "What did Salma's father do after he recovered?",
+      "options": [
+        "Took the shop back",
+        "Made her his partner",
+        "Closed the shop",
+        "Sold the shop"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The passage says he 'did not take the shop back from her; he made Salma his partner'."
+    },
+    {
+      "id": "SSCMTS-T2-090",
+      "section": "s2",
+      "test": 2,
+      "module": 1,
+      "domain": "mtsVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "SSCMTS-RC2",
+      "stem": "Which word best describes Salma, as shown in the passage?",
+      "options": [
+        "Determined",
+        "Careless",
+        "Lazy",
+        "Rude"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "She opens the shop on her own, keeps going when customers laugh, and wins them back with good work. Nothing shows her as rude, careless or lazy."
+    },
+    {
+      "id": "SSCMTS-D-001",
+      "section": "s1",
+      "test": 0,
+      "module": 1,
+      "domain": "mtsArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Percentage",
+      "stem": "A number increased by 25 percent becomes 150. What is the number?",
+      "options": [
+        "120",
+        "125",
+        "187.5",
+        "112.5"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The number x 1.25 = 150, so the number = 150 / 1.25 = 120. Taking 25 off 150 gives 125, and taking 25 percent of 150 off gives 112.5; both use the wrong base."
+    },
+    {
+      "id": "SSCMTS-D-002",
+      "section": "s1",
+      "test": 0,
+      "module": 1,
+      "domain": "mtsNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Number system",
+      "stem": "What is the unit digit of 3 raised to the power 5?",
+      "options": [
+        "9",
+        "7",
+        "3",
+        "1"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Powers of 3 end in 3, 9, 7, 1 and then repeat. 3 to the power 5 = 243, which ends in 3."
+    },
+    {
+      "id": "SSCMTS-D-003",
+      "section": "s1",
+      "test": 0,
+      "module": 1,
+      "domain": "mtsArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Profit and loss",
+      "stem": "A fruit seller buys 10 mangoes for ₹100 and sells 8 mangoes for ₹100. What is his profit percent?",
+      "options": [
+        "20 percent",
+        "25 percent",
+        "15 percent",
+        "12.5 percent"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Cost of one mango = ₹10; selling price of one = 100 / 8 = ₹12.50. Profit = ₹2.50 on ₹10, which is 25 percent. 20 percent is the profit worked out on the selling price."
+    },
+    {
+      "id": "SSCMTS-D-004",
+      "section": "s1",
+      "test": 0,
+      "module": 1,
+      "domain": "mtsNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Fractions",
+      "stem": "What is 0.75 written as a fraction in its lowest terms?",
+      "options": [
+        "7/10",
+        "3/5",
+        "4/5",
+        "3/4"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "0.75 = 75/100, and dividing both by 25 gives 3/4."
+    },
+    {
+      "id": "SSCMTS-D-005",
+      "section": "s1",
+      "test": 0,
+      "module": 1,
+      "domain": "mtsArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Pipes and cisterns",
+      "stem": "One pipe can fill a tank in 6 hours and another can empty it in 9 hours. If both are opened together, how long will the empty tank take to fill?",
+      "options": [
+        "15 hours",
+        "12 hours",
+        "3.6 hours",
+        "18 hours"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "In one hour the tank gains 1/6 - 1/9 = 3/18 - 2/18 = 1/18, so it fills in 18 hours. 3.6 hours would be the time if both pipes were filling it."
+    },
+    {
+      "id": "SSCMTS-D-006",
+      "section": "s1",
+      "test": 0,
+      "module": 1,
+      "domain": "mtsNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Mensuration",
+      "stem": "The perimeter of a square is 64 cm. What is its area?",
+      "options": [
+        "128 sq cm",
+        "4,096 sq cm",
+        "256 sq cm",
+        "64 sq cm"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Side = 64 / 4 = 16 cm, so area = 16 x 16 = 256 sq cm. 4,096 squares the perimeter instead of the side."
+    },
+    {
+      "id": "SSCMTS-D-007",
+      "section": "s1",
+      "test": 0,
+      "module": 1,
+      "domain": "mtsArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Ratio",
+      "stem": "The ratio of the ages of a father and his son is 7 : 2. If the father is 42 years old, how old is the son?",
+      "options": [
+        "10 years",
+        "12 years",
+        "6 years",
+        "14 years"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "One part = 42 / 7 = 6 years, so the son is 2 x 6 = 12 years old."
+    },
+    {
+      "id": "SSCMTS-D-008",
+      "section": "s1",
+      "test": 0,
+      "module": 1,
+      "domain": "mtsNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Divisibility",
+      "stem": "Which of these numbers is divisible by 9?",
+      "options": [
+        "5,814",
+        "5,813",
+        "5,840",
+        "6,104"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A number is divisible by 9 when its digit sum is. 5 + 8 + 1 + 4 = 18, a multiple of 9. The others give 17, 17 and 11."
+    },
+    {
+      "id": "SSCMTS-D-009",
+      "section": "s1",
+      "test": 0,
+      "module": 1,
+      "domain": "mtsVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Analogy",
+      "stem": "Select the word that completes the analogy.\n\nSheep : Lamb :: Goat : ?",
+      "options": [
+        "Foal",
+        "Cub",
+        "Kid",
+        "Calf"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A lamb is the young of a sheep and a kid is the young of a goat. A calf is a young cow, a foal a young horse and a cub a young lion."
+    },
+    {
+      "id": "SSCMTS-D-010",
+      "section": "s1",
+      "test": 0,
+      "module": 1,
+      "domain": "mtsLogical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Direction sense",
+      "stem": "Mohan walks 9 km east and then 40 km north. How far is he from his starting point in a straight line?",
+      "options": [
+        "31 km",
+        "41 km",
+        "49 km",
+        "40 km"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The two walks are at right angles, so the straight-line distance is the hypotenuse: the square root of (9 x 9 + 40 x 40) = the square root of 1,681 = 41 km. 49 km is the distance walked."
+    },
+    {
+      "id": "SSCMTS-D-011",
+      "section": "s1",
+      "test": 0,
+      "module": 1,
+      "domain": "mtsVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "Find the missing number in the series.\n\n1, 8, 27, ?, 125",
+      "options": [
+        "64",
+        "81",
+        "100",
+        "54"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "These are the cubes of 1, 2, 3, 4 and 5, so the missing number is 4 x 4 x 4 = 64."
+    },
+    {
+      "id": "SSCMTS-D-012",
+      "section": "s1",
+      "test": 0,
+      "module": 1,
+      "domain": "mtsLogical",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Calendar",
+      "stem": "If 10 August is a Thursday, what day of the week is 25 August of the same year?",
+      "options": [
+        "Friday",
+        "Thursday",
+        "Wednesday",
+        "Saturday"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "25 - 10 = 15 days later, which is 2 weeks and 1 day. One day after Thursday is Friday."
+    },
+    {
+      "id": "SSCMTS-D-013",
+      "section": "s1",
+      "test": 0,
+      "module": 1,
+      "domain": "mtsVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Odd one out",
+      "stem": "Select the pair that is different from the others.",
+      "options": [
+        "5 and 100",
+        "3 and 27",
+        "4 and 64",
+        "2 and 8"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "In the other pairs the second number is the cube of the first (8, 27, 64). The cube of 5 is 125, not 100."
+    },
+    {
+      "id": "SSCMTS-D-014",
+      "section": "s1",
+      "test": 0,
+      "module": 1,
+      "domain": "mtsLogical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Ranking",
+      "stem": "In a queue, Leela is 7th from the front and Om is 10th from the back. Leela is ahead of Om and there are 4 people between them. How many people are in the queue?",
+      "options": [
+        "21",
+        "22",
+        "17",
+        "20"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "With 4 people between them, Om is 7 + 4 + 1 = 12th from the front. He is also 10th from the back, so the queue has 12 + 10 - 1 = 21 people."
+    },
+    {
+      "id": "SSCMTS-D-015",
+      "section": "s1",
+      "test": 0,
+      "module": 1,
+      "domain": "mtsVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Coding-decoding",
+      "stem": "In a certain code, HOME is written as IPNF. How is SALT written in that code?",
+      "options": [
+        "RZKS",
+        "TBMU",
+        "TBLU",
+        "TCMU"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Each letter moves one place forward: H to I, O to P, M to N, E to F. So S, A, L, T become T, B, M, U."
+    },
+    {
+      "id": "SSCMTS-D-016",
+      "section": "s1",
+      "test": 0,
+      "module": 1,
+      "domain": "mtsLogical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Blood relations",
+      "stem": "Pointing to a boy in a photograph, Kamla says, \"His father is the only son of my father.\" How is the boy related to Kamla?",
+      "options": [
+        "Son",
+        "Nephew",
+        "Brother",
+        "Cousin"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The only son of Kamla's father is Kamla's brother. The boy is her brother's son, so he is Kamla's nephew."
+    },
+    {
+      "id": "SSCMTS-D-017",
+      "section": "s2",
+      "test": 0,
+      "module": 1,
+      "domain": "mtsHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Medieval history",
+      "stem": "The Vijayanagara ruler Krishnadeva Raya belonged to which dynasty?",
+      "options": [
+        "Tuluva",
+        "Sangama",
+        "Saluva",
+        "Aravidu"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Krishnadeva Raya, who ruled from 1509 to 1529, was the greatest king of the Tuluva dynasty, the third of Vijayanagara's four dynasties."
+    },
+    {
+      "id": "SSCMTS-D-018",
+      "section": "s2",
+      "test": 0,
+      "module": 1,
+      "domain": "mtsScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Science",
+      "stem": "What is the SI unit of temperature?",
+      "options": [
+        "Celsius",
+        "Fahrenheit",
+        "Kelvin",
+        "Joule"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The kelvin is the SI base unit of temperature. Degrees Celsius are used every day and are allowed alongside SI units, but the base unit is the kelvin."
+    },
+    {
+      "id": "SSCMTS-D-019",
+      "section": "s2",
+      "test": 0,
+      "module": 1,
+      "domain": "mtsHistory",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Medieval history",
+      "stem": "Which Sikh Guru founded the Khalsa in 1699?",
+      "options": [
+        "Guru Har Rai",
+        "Guru Nanak Dev",
+        "Guru Ram Das",
+        "Guru Gobind Singh"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Guru Gobind Singh, the tenth Guru, founded the Khalsa at Anandpur Sahib on Baisakhi in 1699."
+    },
+    {
+      "id": "SSCMTS-D-020",
+      "section": "s2",
+      "test": 0,
+      "module": 1,
+      "domain": "mtsScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Science",
+      "stem": "Which element is present in all organic compounds?",
+      "options": [
+        "Nitrogen",
+        "Iron",
+        "Carbon",
+        "Sulphur"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Organic compounds are compounds of carbon, usually with hydrogen. Sugars, fats, proteins and fuels such as petrol are all organic."
+    },
+    {
+      "id": "SSCMTS-D-021",
+      "section": "s2",
+      "test": 0,
+      "module": 1,
+      "domain": "mtsHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Polity",
+      "stem": "Under which Article can President's Rule be imposed in a state?",
+      "options": [
+        "Article 352",
+        "Article 360",
+        "Article 370",
+        "Article 356"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Article 356 applies when the government of a state cannot be carried on in line with the Constitution. Article 352 is a National Emergency and Article 360 a Financial Emergency."
+    },
+    {
+      "id": "SSCMTS-D-022",
+      "section": "s2",
+      "test": 0,
+      "module": 1,
+      "domain": "mtsScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Geography",
+      "stem": "Kanha National Park is in which state?",
+      "options": [
+        "Odisha",
+        "Chhattisgarh",
+        "Jharkhand",
+        "Madhya Pradesh"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Kanha National Park, a tiger reserve known for the barasingha deer, is in Madhya Pradesh."
+    },
+    {
+      "id": "SSCMTS-D-023",
+      "section": "s2",
+      "test": 0,
+      "module": 1,
+      "domain": "mtsHistory",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Modern history",
+      "stem": "Who founded the Ramakrishna Mission in 1897?",
+      "options": [
+        "Raja Ram Mohan Roy",
+        "Swami Vivekananda",
+        "Swami Dayananda",
+        "Keshab Chandra Sen"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Swami Vivekananda founded the Ramakrishna Mission in 1897 in the name of his teacher, Sri Ramakrishna."
+    },
+    {
+      "id": "SSCMTS-D-024",
+      "section": "s2",
+      "test": 0,
+      "module": 1,
+      "domain": "mtsScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Computers",
+      "stem": "In a web address, what does 'www' stand for?",
+      "options": [
+        "Wide Web World",
+        "World Wide Web",
+        "World Web Window",
+        "Web Wide Writer"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "'www' stands for World Wide Web, the system of linked pages that people open in a browser over the internet."
+    },
+    {
+      "id": "SSCMTS-D-025",
+      "section": "s2",
+      "test": 0,
+      "module": 1,
+      "domain": "mtsGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Spotting errors",
+      "stem": "The sentence below is divided into parts. Select the part that contains a grammatical error. If there is no error, select 'No error'.\n\nThe sun / rise / in the east.",
+      "options": [
+        "The sun",
+        "rise",
+        "in the east",
+        "No error"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "'The sun' is singular, and a general truth takes the simple present, so the verb is 'rises': 'The sun rises in the east.'"
+    },
+    {
+      "id": "SSCMTS-D-026",
+      "section": "s2",
+      "test": 0,
+      "module": 1,
+      "domain": "mtsVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Synonyms",
+      "stem": "Select the most appropriate synonym of the given word.\n\nBegin",
+      "options": [
+        "Repeat",
+        "Delay",
+        "Start",
+        "Finish"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "'Begin' and 'start' mean the same. 'Finish' is the opposite."
+    },
+    {
+      "id": "SSCMTS-D-027",
+      "section": "s2",
+      "test": 0,
+      "module": 1,
+      "domain": "mtsGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Fill in the blanks",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nSachin and Rahul ______ good friends.",
+      "options": [
+        "was",
+        "are",
+        "has",
+        "is"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Two subjects joined by 'and' are plural, so the verb is 'are'."
+    },
+    {
+      "id": "SSCMTS-D-028",
+      "section": "s2",
+      "test": 0,
+      "module": 1,
+      "domain": "mtsVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Antonyms",
+      "stem": "Select the most appropriate antonym of the given word.\n\nSharp",
+      "options": [
+        "Bright",
+        "Blunt",
+        "Pointed",
+        "Quick"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A sharp knife cuts easily; a blunt one does not. 'Pointed' is close in meaning to 'sharp'."
+    },
+    {
+      "id": "SSCMTS-D-029",
+      "section": "s2",
+      "test": 0,
+      "module": 1,
+      "domain": "mtsGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Sentence improvement",
+      "stem": "Select the most appropriate option to replace the underlined part of the sentence. If no improvement is needed, select 'No improvement'.\n\nI __am having__ two brothers.",
+      "options": [
+        "having",
+        "has",
+        "have",
+        "No improvement"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "'Have' meaning 'own' is a state verb and is not used in the continuous form: 'I have two brothers.' 'Has' goes with he, she or it."
+    },
+    {
+      "id": "SSCMTS-D-030",
+      "section": "s2",
+      "test": 0,
+      "module": 1,
+      "domain": "mtsVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Idioms",
+      "stem": "Select the most appropriate meaning of the given idiom.\n\nTo turn over a new leaf",
+      "options": [
+        "To work in a garden",
+        "To change one's ways for the better",
+        "To forget an old friend",
+        "To start reading a new book"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "To 'turn over a new leaf' is to start behaving in a better way: 'After failing the test, he turned over a new leaf and studied every day.'"
+    },
+    {
+      "id": "SSCMTS-D-031",
+      "section": "s2",
+      "test": 0,
+      "module": 1,
+      "domain": "mtsGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Fill in the blanks",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nHe was born ______ 15 August.",
+      "options": [
+        "in",
+        "by",
+        "at",
+        "on"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "'On' is used with dates and days: on 15 August, on Monday."
+    },
+    {
+      "id": "SSCMTS-D-032",
+      "section": "s2",
+      "test": 0,
+      "module": 1,
+      "domain": "mtsVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "One-word substitution",
+      "stem": "Select the option that can be used as a one-word substitute for the given group of words.\n\nA sweet dish served at the end of a meal",
+      "options": [
+        "Snack",
+        "Dessert",
+        "Starter",
+        "Desert"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A dessert is the sweet course at the end of a meal. 'Desert', with one s, is a dry, sandy region."
+    }
+  ]
+}

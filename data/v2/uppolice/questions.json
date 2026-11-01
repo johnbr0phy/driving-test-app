@@ -1,0 +1,4877 @@
+[
+  {
+    "id": "UPPOLICE-T1-001",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppIndia",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ancient India",
+    "stem": "Which Indus Valley site in Gujarat had a planned city with large water reservoirs and a signboard in the Harappan script?",
+    "options": [
+      "Kalibangan",
+      "Ropar",
+      "Banawali",
+      "Dholavira"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Dholavira in the Rann of Kutch is known for its stepped water reservoirs and a ten-sign Harappan inscription found near its north gate. Kalibangan in Rajasthan is known for ploughed fields and fire altars."
+  },
+  {
+    "id": "UPPOLICE-T1-002",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppState",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Uttar Pradesh",
+    "stem": "On which date is Uttar Pradesh Day (UP Diwas) celebrated?",
+    "options": [
+      "15 August",
+      "1 November",
+      "24 January",
+      "26 January"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The United Provinces were renamed Uttar Pradesh on 24 January 1950, and the state marks that date as UP Diwas."
+  },
+  {
+    "id": "UPPOLICE-T1-003",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ancient India",
+    "stem": "Which Chinese pilgrim visited India during the reign of Harshavardhana?",
+    "options": [
+      "Megasthenes",
+      "Xuanzang",
+      "Fa-Hien",
+      "I-Tsing"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Xuanzang (Hiuen Tsang) came in the 7th century and studied at Nalanda during Harsha's reign. Fa-Hien came under Chandragupta II, and Megasthenes was a Greek envoy to the Maurya court."
+  },
+  {
+    "id": "UPPOLICE-T1-004",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppState",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Uttar Pradesh",
+    "stem": "The Allahabad High Court has its principal seat at Prayagraj. Where is its permanent bench?",
+    "options": [
+      "Lucknow",
+      "Varanasi",
+      "Kanpur",
+      "Agra"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The High Court of Judicature at Allahabad sits at Prayagraj and has a bench at Lucknow."
+  },
+  {
+    "id": "UPPOLICE-T1-005",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Medieval India",
+    "stem": "Who founded the Lodi dynasty of the Delhi Sultanate?",
+    "options": [
+      "Ibrahim Lodi",
+      "Khizr Khan",
+      "Bahlul Lodi",
+      "Sikandar Lodi"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Bahlul Lodi took the Delhi throne in 1451. Sikandar Lodi founded Agra, Ibrahim Lodi lost to Babur in 1526, and Khizr Khan founded the Sayyid dynasty."
+  },
+  {
+    "id": "UPPOLICE-T1-006",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Modern India",
+    "stem": "The Permanent Settlement of land revenue in Bengal (1793) was introduced by:",
+    "options": [
+      "Lord Cornwallis",
+      "Lord Wellesley",
+      "Warren Hastings",
+      "Lord Dalhousie"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Lord Cornwallis fixed the zamindars' revenue demand permanently in 1793. Warren Hastings had tried five-year auctions of the right to collect revenue."
+  },
+  {
+    "id": "UPPOLICE-T1-007",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppState",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Uttar Pradesh",
+    "stem": "What is the state bird of Uttar Pradesh?",
+    "options": [
+      "Koel",
+      "Indian peafowl",
+      "Hornbill",
+      "Sarus crane"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The sarus crane, the world's tallest flying bird, is the state bird of Uttar Pradesh. The peafowl is India's national bird."
+  },
+  {
+    "id": "UPPOLICE-T1-008",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Freedom struggle",
+    "stem": "Who founded the Azad Hind Fauj's Rani of Jhansi Regiment for women?",
+    "options": [
+      "Subhas Chandra Bose",
+      "Mohan Singh",
+      "Rash Behari Bose",
+      "Bhagat Singh"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Subhas Chandra Bose raised the women's Rani of Jhansi Regiment in 1943 in Singapore, led by Lakshmi Swaminathan (later Captain Lakshmi Sehgal)."
+  },
+  {
+    "id": "UPPOLICE-T1-009",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppState",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Uttar Pradesh",
+    "stem": "Lucknow stands on the banks of which river?",
+    "options": [
+      "Betwa",
+      "Rapti",
+      "Gomti",
+      "Ghaghara"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Lucknow lies on the Gomti, a tributary of the Ganga. Gorakhpur is on the Rapti."
+  },
+  {
+    "id": "UPPOLICE-T1-010",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppIndia",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Geography",
+    "stem": "The Yamuna rises at which place in Uttarakhand?",
+    "options": [
+      "Badrinath",
+      "Kedarnath",
+      "Gangotri",
+      "Yamunotri"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Yamuna rises near Yamunotri in Uttarkashi district. The Bhagirathi, the head stream of the Ganga, rises at Gaumukh near Gangotri."
+  },
+  {
+    "id": "UPPOLICE-T1-011",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Geography",
+    "stem": "The Palghat Gap is a pass through which mountains?",
+    "options": [
+      "Satpura Range",
+      "Western Ghats",
+      "Eastern Ghats",
+      "Aravalli Range"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Palghat (Palakkad) Gap is a low break in the Western Ghats between Kerala and Tamil Nadu, used by road and rail."
+  },
+  {
+    "id": "UPPOLICE-T1-012",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppState",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Uttar Pradesh",
+    "stem": "Firozabad in Uttar Pradesh is famous for which industry?",
+    "options": [
+      "Locks",
+      "Brassware",
+      "Glass bangles",
+      "Carpets"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Firozabad is the glass and bangle city. Moradabad is known for brassware, Bhadohi for carpets and Aligarh for locks."
+  },
+  {
+    "id": "UPPOLICE-T1-013",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppIndia",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Geography",
+    "stem": "The Nanda Devi Biosphere Reserve is in which state?",
+    "options": [
+      "Sikkim",
+      "Himachal Pradesh",
+      "Uttarakhand",
+      "Jammu and Kashmir"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Nanda Devi, the highest peak lying wholly within India, and its biosphere reserve are in Uttarakhand, mainly in Chamoli district."
+  },
+  {
+    "id": "UPPOLICE-T1-014",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppState",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Uttar Pradesh",
+    "stem": "Dudhwa National Park is in which district of Uttar Pradesh?",
+    "options": [
+      "Pilibhit",
+      "Bahraich",
+      "Sonbhadra",
+      "Lakhimpur Kheri"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Dudhwa National Park, on the Nepal border, is in Lakhimpur Kheri, the largest district of the state by area."
+  },
+  {
+    "id": "UPPOLICE-T1-015",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Polity",
+    "stem": "Which Part of the Constitution deals with the Panchayats?",
+    "options": [
+      "Part XI",
+      "Part IX",
+      "Part VI",
+      "Part IV"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Part IX (Articles 243 to 243O) covers the Panchayats. Part IV has the Directive Principles and Part VI the states."
+  },
+  {
+    "id": "UPPOLICE-T1-016",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Polity",
+    "stem": "Which Article of the Constitution provides for the Gram Sabha?",
+    "options": [
+      "Article 243ZD",
+      "Article 243A",
+      "Article 243B",
+      "Article 243K"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Article 243A lets the Gram Sabha, all the voters of a village, exercise the powers a state law gives it. 243B sets up the Panchayats, 243K covers their elections and 243ZD the district planning committee."
+  },
+  {
+    "id": "UPPOLICE-T1-017",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppState",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Uttar Pradesh",
+    "stem": "Who was the first woman Chief Minister in India, heading Uttar Pradesh from 1963?",
+    "options": [
+      "Vijaya Lakshmi Pandit",
+      "Sarojini Naidu",
+      "Nandini Satpathy",
+      "Sucheta Kripalani"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Sucheta Kripalani became Chief Minister of Uttar Pradesh in 1963, the first woman to lead any Indian state. Sarojini Naidu was the first woman Governor, of the United Provinces."
+  },
+  {
+    "id": "UPPOLICE-T1-018",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppIndia",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Economy",
+    "stem": "The headquarters of the Reserve Bank of India is in which city?",
+    "options": [
+      "Kolkata",
+      "Mumbai",
+      "New Delhi",
+      "Chennai"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The RBI moved its central office from Kolkata to Mumbai in 1937, and it has stayed there since."
+  },
+  {
+    "id": "UPPOLICE-T1-019",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppState",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Uttar Pradesh",
+    "stem": "How many members does Uttar Pradesh elect to the Lok Sabha?",
+    "options": [
+      "48",
+      "80",
+      "403",
+      "71"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Uttar Pradesh elects 80 members to the Lok Sabha, more than any other state. 403 is the number of elected seats in its Vidhan Sabha."
+  },
+  {
+    "id": "UPPOLICE-T1-020",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppIndia",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Science",
+    "stem": "Which vitamin helps the blood to clot?",
+    "options": [
+      "Vitamin K",
+      "Vitamin C",
+      "Vitamin A",
+      "Vitamin E"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Vitamin K is needed to make the clotting factors in the liver. Lack of vitamin C causes scurvy."
+  },
+  {
+    "id": "UPPOLICE-T1-021",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Science",
+    "stem": "Which acid gives tamarind its sour taste?",
+    "options": [
+      "Lactic acid",
+      "Citric acid",
+      "Tartaric acid",
+      "Oxalic acid"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Tamarind is rich in tartaric acid. Citric acid is the acid of lemons and oranges, lactic acid of curd and oxalic acid is found in spinach and tomatoes."
+  },
+  {
+    "id": "UPPOLICE-T1-022",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppState",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Police and law",
+    "stem": "Policing is a subject in which list of the Seventh Schedule?",
+    "options": [
+      "Residuary powers",
+      "Concurrent List",
+      "Union List",
+      "State List"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Public order and police are in the State List, so each state, including Uttar Pradesh, runs its own police force."
+  },
+  {
+    "id": "UPPOLICE-T1-023",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppIndia",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Science",
+    "stem": "Which gas turns lime water milky?",
+    "options": [
+      "Nitrogen",
+      "Hydrogen",
+      "Carbon dioxide",
+      "Oxygen"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Carbon dioxide reacts with lime water (calcium hydroxide) to form insoluble calcium carbonate, which makes it milky."
+  },
+  {
+    "id": "UPPOLICE-T1-024",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppState",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Police and law",
+    "stem": "Which single emergency number connects to police, fire and ambulance across India?",
+    "options": [
+      "112",
+      "1091",
+      "101",
+      "100"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "112 is the all-India emergency response number. 100, 101 and 102 or 108 were the older separate numbers for police, fire and ambulance."
+  },
+  {
+    "id": "UPPOLICE-T1-025",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Science",
+    "stem": "What is the focal length of a plane mirror?",
+    "options": [
+      "Infinite",
+      "Twice the image distance",
+      "Equal to the object distance",
+      "Zero"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A plane mirror can be thought of as a curved mirror of infinite radius, so its focal length is infinite. It forms an upright virtual image the same size as the object."
+  },
+  {
+    "id": "UPPOLICE-T1-026",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppHindiShabd",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "पर्यायवाची",
+    "stem": "\"सूर्य\" का पर्यायवाची शब्द कौन-सा है?",
+    "options": [
+      "दिनकर",
+      "हिमांशु",
+      "निशाकर",
+      "सुधाकर"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "दिनकर (maker of the day) means the sun. सुधाकर, निशाकर and हिमांशु are all names of the moon."
+  },
+  {
+    "id": "UPPOLICE-T1-027",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppHindiVyakaran",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "संधि",
+    "stem": "\"विद्यालय\" शब्द का सही संधि-विच्छेद क्या है?",
+    "options": [
+      "विद्या + आलय",
+      "विद्या + लय",
+      "विद्य + आलय",
+      "विद्य + अलय"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "विद्या + आलय: आ + आ = आ, a दीर्घ स्वर संधि."
+  },
+  {
+    "id": "UPPOLICE-T1-028",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppHindiShabd",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "पर्यायवाची",
+    "stem": "\"पानी\" का पर्यायवाची शब्द कौन-सा है?",
+    "options": [
+      "अनल",
+      "पवन",
+      "धरा",
+      "नीर"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "नीर means water (also जल, अंबु, तोय). अनल is fire, पवन is wind and धरा is earth."
+  },
+  {
+    "id": "UPPOLICE-T1-029",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppHindiVyakaran",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "संधि",
+    "stem": "\"सूर्योदय\" में कौन-सी संधि है?",
+    "options": [
+      "दीर्घ संधि",
+      "यण संधि",
+      "वृद्धि संधि",
+      "गुण संधि"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "सूर्य + उदय: अ + उ = ओ, which is गुण संधि. In वृद्धि संधि, अ + ओ gives औ."
+  },
+  {
+    "id": "UPPOLICE-T1-030",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppHindiShabd",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "पर्यायवाची",
+    "stem": "\"हाथी\" का पर्यायवाची शब्द कौन-सा है?",
+    "options": [
+      "गज",
+      "मृग",
+      "वृषभ",
+      "अश्व"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "गज (also हस्ती, कुंजर) means elephant. अश्व is horse, मृग is deer and वृषभ is bull."
+  },
+  {
+    "id": "UPPOLICE-T1-031",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppHindiVyakaran",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "समास",
+    "stem": "\"राजपुत्र\" में कौन-सा समास है?",
+    "options": [
+      "अव्ययीभाव",
+      "द्वंद्व",
+      "बहुव्रीहि",
+      "तत्पुरुष"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "राजपुत्र = राजा का पुत्र. The case ending का is dropped, and the second word is the main one, so it is षष्ठी तत्पुरुष."
+  },
+  {
+    "id": "UPPOLICE-T1-032",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppHindiShabd",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "विलोम",
+    "stem": "\"आदि\" का विलोम शब्द क्या है?",
+    "options": [
+      "अनादि",
+      "अंत",
+      "मध्य",
+      "आरंभ"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "आदि (beginning) is the opposite of अंत (end). आरंभ is a synonym of आदि, not its opposite."
+  },
+  {
+    "id": "UPPOLICE-T1-033",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppHindiVyakaran",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "समास",
+    "stem": "\"माता-पिता\" में कौन-सा समास है?",
+    "options": [
+      "कर्मधारय",
+      "द्विगु",
+      "द्वंद्व",
+      "तत्पुरुष"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "माता और पिता: both words are equally important and joined by और, so it is द्वंद्व समास."
+  },
+  {
+    "id": "UPPOLICE-T1-034",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppHindiShabd",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "विलोम",
+    "stem": "\"कृतज्ञ\" का विलोम शब्द क्या है?",
+    "options": [
+      "कृतघ्न",
+      "विज्ञ",
+      "कृपण",
+      "अज्ञ"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "कृतज्ञ (grateful) is opposite to कृतघ्न (ungrateful). कृपण means miserly, and अज्ञ means ignorant."
+  },
+  {
+    "id": "UPPOLICE-T1-035",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppHindiVyakaran",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "लिंग",
+    "stem": "निम्नलिखित में से कौन-सा शब्द स्त्रीलिंग है?",
+    "options": [
+      "मोती",
+      "आत्मा",
+      "पानी",
+      "घी"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "आत्मा is स्त्रीलिंग: we say मेरी आत्मा, not मेरा आत्मा. पानी, घी and मोती are पुल्लिंग, even though they end in ई."
+  },
+  {
+    "id": "UPPOLICE-T1-036",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppHindiShabd",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "विलोम",
+    "stem": "\"सुगम\" का विलोम शब्द क्या है?",
+    "options": [
+      "सरल",
+      "सुलभ",
+      "दुर्गम",
+      "सहज"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "सुगम (easy to reach) is opposite to दुर्गम (hard to reach). सरल, सहज and सुलभ are close in meaning to सुगम."
+  },
+  {
+    "id": "UPPOLICE-T1-037",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppHindiVyakaran",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "वचन",
+    "stem": "\"नदी\" का बहुवचन रूप क्या है?",
+    "options": [
+      "नदीएँ",
+      "नदियाँ",
+      "नदीयाँ",
+      "नदिएँ"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "ई-ending feminine nouns shorten the ई and take इयाँ: नदी becomes नदियाँ (नदियों is the same plural before a postposition, as in नदियों में)."
+  },
+  {
+    "id": "UPPOLICE-T1-038",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppHindiShabd",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "एक शब्द",
+    "stem": "\"जो ईश्वर में विश्वास रखता हो\" के लिए एक शब्द क्या है?",
+    "options": [
+      "धार्मिक",
+      "आस्तिक",
+      "नास्तिक",
+      "आस्थावान"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "आस्तिक is one who believes in God; नास्तिक is one who does not."
+  },
+  {
+    "id": "UPPOLICE-T1-039",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppHindiVyakaran",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "कारक",
+    "stem": "\"राम ने रावण को बाण से मारा\" में \"बाण से\" कौन-सा कारक है?",
+    "options": [
+      "करण कारक",
+      "कर्म कारक",
+      "संप्रदान कारक",
+      "अपादान कारक"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The arrow is the instrument of the action, so बाण से is करण कारक. से shows अपादान only when it means separation, as in पेड़ से गिरा."
+  },
+  {
+    "id": "UPPOLICE-T1-040",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppHindiShabd",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "एक शब्द",
+    "stem": "\"जिसका कोई शत्रु न हो\" के लिए एक शब्द क्या है?",
+    "options": [
+      "अजातशत्रु",
+      "शत्रुघ्न",
+      "मित्रवत्",
+      "निर्भय"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "अजातशत्रु literally means one whose enemy was never born. शत्रुघ्न means slayer of enemies."
+  },
+  {
+    "id": "UPPOLICE-T1-041",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppHindiVyakaran",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "उपसर्ग",
+    "stem": "\"अभिमान\" शब्द में कौन-सा उपसर्ग है?",
+    "options": [
+      "मान",
+      "अभि",
+      "अ",
+      "अभ"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "अभि + मान = अभिमान. मान is the root word, not the prefix."
+  },
+  {
+    "id": "UPPOLICE-T1-042",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppHindiShabd",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "तत्सम-तद्भव",
+    "stem": "\"अग्नि\" का तद्भव रूप क्या है?",
+    "options": [
+      "ज्वाला",
+      "आग",
+      "अंगार",
+      "अनल"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "अग्नि is the tatsam (Sanskrit) word and आग is its tadbhav (changed) form. अनल is a tatsam synonym of अग्नि, अंगार means an ember and ज्वाला a flame."
+  },
+  {
+    "id": "UPPOLICE-T1-043",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppHindiVyakaran",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "प्रत्यय",
+    "stem": "\"मिठास\" शब्द में कौन-सा प्रत्यय है?",
+    "options": [
+      "मीठा",
+      "आस",
+      "इठास",
+      "स"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "मीठा + आस = मिठास, a noun of quality made with the suffix आस."
+  },
+  {
+    "id": "UPPOLICE-T1-044",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppHindiShabd",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "मुहावरे",
+    "stem": "\"आँखों का तारा\" मुहावरे का अर्थ है:",
+    "options": [
+      "बहुत घमंडी",
+      "बहुत प्यारा",
+      "बहुत दूर",
+      "बहुत चालाक"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "आँखों का तारा होना means to be very dear to someone, for example a child to its parents."
+  },
+  {
+    "id": "UPPOLICE-T1-045",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppHindiVyakaran",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "वाक्य शुद्धि",
+    "stem": "निम्नलिखित में शुद्ध वाक्य कौन-सा है?",
+    "options": [
+      "मैंने उसे एक पुस्तक दी।",
+      "मैंने उसे एक पुस्तकें दी।",
+      "मैंने उसको एक पुस्तक दिया।",
+      "मैं उसे एक पुस्तक दी।"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "With ने, the verb agrees with the object: पुस्तक is feminine singular, so दी. मैं without ने cannot take दी here, and एक cannot go with पुस्तकें."
+  },
+  {
+    "id": "UPPOLICE-T1-046",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppHindiShabd",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "मुहावरे",
+    "stem": "\"नौ दो ग्यारह होना\" मुहावरे का अर्थ है:",
+    "options": [
+      "भाग जाना",
+      "जीत जाना",
+      "हिसाब लगाना",
+      "धोखा देना"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "नौ दो ग्यारह होना means to run away quickly, as the thief did when he saw the police."
+  },
+  {
+    "id": "UPPOLICE-T1-047",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppHindiVyakaran",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "अलंकार",
+    "stem": "\"चरण-कमल बंदौं हरि राई\" में कौन-सा अलंकार है?",
+    "options": [
+      "अनुप्रास",
+      "उपमा",
+      "यमक",
+      "रूपक"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The feet are not compared with a lotus; they are called lotus-feet, the two made one. That is रूपक. उपमा would use a word of comparison such as सम or सा."
+  },
+  {
+    "id": "UPPOLICE-T1-048",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppHindiShabd",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "लोकोक्ति",
+    "stem": "\"अधजल गगरी छलकत जाय\" लोकोक्ति का अर्थ है:",
+    "options": [
+      "पानी बचाना चाहिए",
+      "धीरे काम अच्छा होता है",
+      "आधा काम हमेशा बिगड़ता है",
+      "कम ज्ञानी अधिक दिखावा करता है"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A half-filled pot spills: a person with little knowledge shows off the most."
+  },
+  {
+    "id": "UPPOLICE-T1-049",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppHindiVyakaran",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "साहित्य",
+    "stem": "\"गोदान\" उपन्यास के लेखक कौन हैं?",
+    "options": [
+      "जयशंकर प्रसाद",
+      "प्रेमचंद",
+      "फणीश्वरनाथ रेणु",
+      "यशपाल"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Premchand's Godaan (1936) is his last complete novel. Renu wrote Maila Aanchal and Prasad wrote Kamayani."
+  },
+  {
+    "id": "UPPOLICE-T1-050",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppHindiShabd",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "शुद्ध वर्तनी",
+    "stem": "निम्नलिखित में शुद्ध वर्तनी वाला शब्द कौन-सा है?",
+    "options": [
+      "आशीरवाद",
+      "आशीर्वाद",
+      "आर्शीवाद",
+      "आशिर्वाद"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "आशीर्वाद is correct: आशीः + वाद, with the र् (reph) on वा. आर्शीवाद is a common misspelling."
+  },
+  {
+    "id": "UPPOLICE-T1-051",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Percentage",
+    "stem": "What is 18% of 650?",
+    "options": [
+      "117",
+      "113",
+      "126",
+      "108"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "18% of 650 = 650 × 18/100 = 117."
+  },
+  {
+    "id": "UPPOLICE-T1-052",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppNumber",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "LCM and HCF",
+    "stem": "What is the LCM of 16, 20 and 28?",
+    "options": [
+      "560",
+      "1,120",
+      "280",
+      "140"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "16 = 2⁴, 20 = 2² × 5, 28 = 2² × 7. LCM = 2⁴ × 5 × 7 = 560."
+  },
+  {
+    "id": "UPPOLICE-T1-053",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Profit and loss",
+    "stem": "A shopkeeper buys a fan for ₹480 and sells it for ₹552. What is his profit percent?",
+    "options": [
+      "14.4%",
+      "18%",
+      "15%",
+      "12%"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Profit = 552 - 480 = ₹72. Profit % = 72/480 × 100 = 15%. Profit is always taken on the cost price, not the selling price."
+  },
+  {
+    "id": "UPPOLICE-T1-054",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppNumber",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "LCM and HCF",
+    "stem": "What is the HCF of 90 and 144?",
+    "options": [
+      "18",
+      "6",
+      "9",
+      "36"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "90 = 2 × 3² × 5 and 144 = 2⁴ × 3². HCF = 2 × 3² = 18."
+  },
+  {
+    "id": "UPPOLICE-T1-055",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Discount",
+    "stem": "A mobile phone is marked at ₹2,400 and sold at a discount of 12%. What is the selling price?",
+    "options": [
+      "₹2,112",
+      "₹2,088",
+      "₹2,160",
+      "₹2,136"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Discount = 12% of 2,400 = ₹288, so the selling price is 2,400 - 288 = ₹2,112."
+  },
+  {
+    "id": "UPPOLICE-T1-056",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Simple interest",
+    "stem": "What is the simple interest on ₹9,200 at 5% per annum for 3 years?",
+    "options": [
+      "₹1,840",
+      "₹1,380",
+      "₹1,150",
+      "₹1,460"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "SI = P × R × T / 100 = 9,200 × 5 × 3 / 100 = ₹1,380."
+  },
+  {
+    "id": "UPPOLICE-T1-057",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppNumber",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Simplification",
+    "stem": "Simplify: 48 ÷ 6 × 3 + 5 - 2",
+    "options": [
+      "33",
+      "21",
+      "29",
+      "27"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Division and multiplication go left to right first: 48 ÷ 6 = 8, 8 × 3 = 24, then 24 + 5 - 2 = 27."
+  },
+  {
+    "id": "UPPOLICE-T1-058",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Compound interest",
+    "stem": "What is the compound interest on ₹16,000 at 5% per annum for 2 years, compounded annually?",
+    "options": [
+      "₹1,600",
+      "₹1,640",
+      "₹1,620",
+      "₹1,680"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Amount = 16,000 × 1.05 × 1.05 = ₹17,640, so CI = ₹1,640. Simple interest would be only ₹1,600."
+  },
+  {
+    "id": "UPPOLICE-T1-059",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppNumber",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Decimals",
+    "stem": "What is 0.25 × 0.4?",
+    "options": [
+      "0.001",
+      "0.1",
+      "0.01",
+      "1"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "25 × 4 = 100, with three decimal places in all: 0.100 = 0.1."
+  },
+  {
+    "id": "UPPOLICE-T1-060",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Average",
+    "stem": "The average of 7 numbers is 30. When an eighth number, 46, is added, what is the new average?",
+    "options": [
+      "32",
+      "33",
+      "31",
+      "38"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Total of seven = 7 × 30 = 210. With 46 the total is 256, and 256 ÷ 8 = 32."
+  },
+  {
+    "id": "UPPOLICE-T1-061",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ratio",
+    "stem": "₹3,600 is divided between Sita and Gita in the ratio 4 : 5. What is the larger share?",
+    "options": [
+      "₹2,250",
+      "₹2,000",
+      "₹1,800",
+      "₹1,600"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "There are 4 + 5 = 9 parts of ₹400 each. The larger share is 5 × 400 = ₹2,000."
+  },
+  {
+    "id": "UPPOLICE-T1-062",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppNumber",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Fractions",
+    "stem": "Which of these fractions is the smallest?",
+    "options": [
+      "7/11",
+      "4/7",
+      "3/5",
+      "5/8"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "As decimals: 4/7 ≈ 0.571, 3/5 = 0.6, 5/8 = 0.625 and 7/11 ≈ 0.636. So 4/7 is the smallest."
+  },
+  {
+    "id": "UPPOLICE-T1-063",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Time and work",
+    "stem": "Ram can finish a job in 14 days and Shyam in 21 days. Working together, how many days will they take?",
+    "options": [
+      "7 days",
+      "8.4 days",
+      "17.5 days",
+      "10.5 days"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "One day's work = 1/14 + 1/21 = 5/42. Together they need 42/5 = 8.4 days. 17.5 days is just the average of the two times."
+  },
+  {
+    "id": "UPPOLICE-T1-064",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppNumber",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Divisibility",
+    "stem": "Which of these numbers is divisible by 11?",
+    "options": [
+      "7,239",
+      "7,329",
+      "7,293",
+      "2,793"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "For 11, the alternating sum of digits must be 0 or a multiple of 11: 7 - 2 + 9 - 3 = 11 for 7,293 (7,293 = 11 × 663). The others give -3, -1 and 1."
+  },
+  {
+    "id": "UPPOLICE-T1-065",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Speed",
+    "stem": "What is 54 km/h in metres per second?",
+    "options": [
+      "12 m/s",
+      "18 m/s",
+      "20 m/s",
+      "15 m/s"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Multiply by 5/18: 54 × 5/18 = 15 m/s."
+  },
+  {
+    "id": "UPPOLICE-T1-066",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Trains",
+    "stem": "A train 240 m long runs at 72 km/h. How long does it take to pass a signal pole?",
+    "options": [
+      "15 seconds",
+      "10 seconds",
+      "12 seconds",
+      "18 seconds"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "72 km/h = 20 m/s. To pass a pole the train covers its own length: 240/20 = 12 seconds."
+  },
+  {
+    "id": "UPPOLICE-T1-067",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppNumber",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Mensuration",
+    "stem": "What is the perimeter of a rectangle 24 m long and 15 m wide?",
+    "options": [
+      "360 m",
+      "78 m",
+      "39 m",
+      "156 m"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Perimeter = 2 × (24 + 15) = 78 m. 360 is the area in square metres."
+  },
+  {
+    "id": "UPPOLICE-T1-068",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ages",
+    "stem": "A father is four times as old as his son. After 16 years he will be twice as old as the son. What is the father's present age?",
+    "options": [
+      "40 years",
+      "36 years",
+      "32 years",
+      "24 years"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Let the son be x: 4x + 16 = 2(x + 16), so 2x = 16 and x = 8. The father is 4 × 8 = 32 years old."
+  },
+  {
+    "id": "UPPOLICE-T1-069",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppNumber",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mensuration",
+    "stem": "What is the area of a circle of radius 49 cm? (Take π = 22/7.)",
+    "options": [
+      "3,773 sq cm",
+      "308 sq cm",
+      "15,092 sq cm",
+      "7,546 sq cm"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Area = πr² = 22/7 × 49 × 49 = 22 × 7 × 49 = 7,546 sq cm. 308 cm is the circumference."
+  },
+  {
+    "id": "UPPOLICE-T1-070",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppArith",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Percentage",
+    "stem": "The price of petrol rises by 20%. By what percent must a driver cut his use to keep his spending the same?",
+    "options": [
+      "20%",
+      "15%",
+      "18%",
+      "16 2/3%"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Cut = rise / (100 + rise) × 100 = 20/120 × 100 = 16 2/3%. Cutting by the full 20% would lower his spending."
+  },
+  {
+    "id": "UPPOLICE-T1-071",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Partnership",
+    "stem": "Anil invests ₹40,000 for 12 months and Bina invests ₹60,000 for 6 months. Out of a profit of ₹28,000, what is Anil's share?",
+    "options": [
+      "₹12,000",
+      "₹14,000",
+      "₹11,200",
+      "₹16,000"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Shares go by capital × time: 40,000 × 12 : 60,000 × 6 = 4 : 3. Anil gets 4/7 × 28,000 = ₹16,000."
+  },
+  {
+    "id": "UPPOLICE-T1-072",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppNumber",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Algebra",
+    "stem": "If x + 1/x = 7, what is the value of x² + 1/x²?",
+    "options": [
+      "51",
+      "49",
+      "45",
+      "47"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Square both sides: x² + 2 + 1/x² = 49, so x² + 1/x² = 47."
+  },
+  {
+    "id": "UPPOLICE-T1-073",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Boats",
+    "stem": "A boat goes 15 km/h downstream and 9 km/h upstream. What is the speed of the stream?",
+    "options": [
+      "4 km/h",
+      "12 km/h",
+      "3 km/h",
+      "6 km/h"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Stream speed = (downstream - upstream) / 2 = (15 - 9)/2 = 3 km/h. 12 km/h is the boat's speed in still water."
+  },
+  {
+    "id": "UPPOLICE-T1-074",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppNumber",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Square roots",
+    "stem": "What is the square root of 5,329?",
+    "options": [
+      "77",
+      "73",
+      "83",
+      "63"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "73 × 73 = 5,329. The number ends in 9, so the root ends in 3 or 7, and 75² = 5,625 is above it, so the root is 73."
+  },
+  {
+    "id": "UPPOLICE-T1-075",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppArith",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Mixtures",
+    "stem": "A 60-litre mixture has milk and water in the ratio 7 : 3. How much water must be added to make the ratio 7 : 5?",
+    "options": [
+      "10 litres",
+      "8 litres",
+      "15 litres",
+      "12 litres"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Milk = 42 L, water = 18 L. For 7 : 5 with 42 L of milk, water must be 30 L, so add 12 litres."
+  },
+  {
+    "id": "UPPOLICE-T1-076",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Analogy",
+    "stem": "Seismograph : Earthquake :: Anemometer : ?",
+    "options": [
+      "Humidity",
+      "Rainfall",
+      "Pressure",
+      "Wind speed"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A seismograph records earthquakes; an anemometer measures wind speed. A rain gauge measures rainfall and a hygrometer humidity."
+  },
+  {
+    "id": "UPPOLICE-T1-077",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Blood relations",
+    "stem": "Pointing to a girl in a photo, Arjun says, \"Her mother is the only daughter of my mother.\" How is Arjun related to the girl?",
+    "options": [
+      "Father",
+      "Brother",
+      "Maternal uncle",
+      "Cousin"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The only daughter of Arjun's mother is Arjun's sister, and she is the girl's mother. So Arjun is the girl's maternal uncle (mama)."
+  },
+  {
+    "id": "UPPOLICE-T1-078",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number analogy",
+    "stem": "4 : 64 :: 6 : ?",
+    "options": [
+      "256",
+      "216",
+      "196",
+      "36"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "64 is the cube of 4, so the answer is the cube of 6: 216. 36 would be the square."
+  },
+  {
+    "id": "UPPOLICE-T1-079",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Blood relations",
+    "stem": "A is the brother of B. B is the son of C. D is the husband of C. How is A related to D?",
+    "options": [
+      "Son",
+      "Grandson",
+      "Nephew",
+      "Brother"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "B is C's son and A is B's brother, so A is also C's son. D is C's husband, so A is D's son."
+  },
+  {
+    "id": "UPPOLICE-T1-080",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Classification",
+    "stem": "Find the odd one out: Lucknow, Patna, Bhopal, Kanpur",
+    "options": [
+      "Patna",
+      "Bhopal",
+      "Lucknow",
+      "Kanpur"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Lucknow, Patna and Bhopal are state capitals. Kanpur is a large city but not a capital."
+  },
+  {
+    "id": "UPPOLICE-T1-081",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Directions",
+    "stem": "Kiran walks 10 km south, turns left and walks 5 km, then turns left again and walks 10 km. Where is she now from her starting point?",
+    "options": [
+      "15 km east",
+      "5 km east",
+      "5 km west",
+      "10 km north"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Left from south is east, and left from east is north. The 10 km south and 10 km north cancel, leaving her 5 km east of the start."
+  },
+  {
+    "id": "UPPOLICE-T1-082",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Classification",
+    "stem": "Find the odd number out: 19, 31, 37, 39",
+    "options": [
+      "37",
+      "31",
+      "39",
+      "19"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "19, 31 and 37 are prime. 39 = 3 × 13."
+  },
+  {
+    "id": "UPPOLICE-T1-083",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Directions",
+    "stem": "Early in the morning Ravi stands facing the rising sun. In which direction does his shadow fall?",
+    "options": [
+      "South",
+      "East",
+      "West",
+      "North"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The sun rises in the east, so a person facing it has the shadow behind him, towards the west."
+  },
+  {
+    "id": "UPPOLICE-T1-084",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "What comes next? 3, 6, 11, 18, 27, ?",
+    "options": [
+      "40",
+      "39",
+      "38",
+      "36"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Each term is two more than a square: 1 + 2, 4 + 2, 9 + 2, 16 + 2, 25 + 2, so next is 36 + 2 = 38. The gaps 3, 5, 7, 9, 11 show the same."
+  },
+  {
+    "id": "UPPOLICE-T1-085",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ranking",
+    "stem": "Mohit is 9th from the top and 26th from the bottom in his class. How many students are in the class?",
+    "options": [
+      "36",
+      "33",
+      "34",
+      "35"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Total = 9 + 26 - 1 = 34. Mohit is counted in both positions, so subtract 1."
+  },
+  {
+    "id": "UPPOLICE-T1-086",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "What comes next? 5, 13, 29, 61, ?",
+    "options": [
+      "123",
+      "122",
+      "125",
+      "93"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Each term is double the last plus 3: 61 × 2 + 3 = 125."
+  },
+  {
+    "id": "UPPOLICE-T1-087",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Syllogism",
+    "stem": "Statements: All constables are guards. Some guards are drivers. Conclusions: I. Some constables are drivers. II. Some drivers are guards. Which conclusion follows?",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "\"Some guards are drivers\" can be turned round to \"some drivers are guards\" (II). The drivers among the guards need not be constables, so I does not follow."
+  },
+  {
+    "id": "UPPOLICE-T1-088",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Letter series",
+    "stem": "What comes next? B, E, H, K, ?",
+    "options": [
+      "M",
+      "L",
+      "O",
+      "N"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Each letter moves 3 places forward: B, E, H, K, N."
+  },
+  {
+    "id": "UPPOLICE-T1-089",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Calendar",
+    "stem": "If 1 January of a year that is not a leap year is a Monday, what day is 1 January of the next year?",
+    "options": [
+      "Monday",
+      "Sunday",
+      "Wednesday",
+      "Tuesday"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "365 days = 52 weeks + 1 day, so the day moves forward by one: Tuesday. After a leap year it would move by two."
+  },
+  {
+    "id": "UPPOLICE-T1-090",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Coding-decoding",
+    "stem": "If CAMP is coded as DBNQ, how is ROAD coded?",
+    "options": [
+      "SPBE",
+      "SOBE",
+      "SPBF",
+      "QNZC"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Each letter moves one place forward: R to S, O to P, A to B, D to E."
+  },
+  {
+    "id": "UPPOLICE-T1-091",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppLogical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Clock",
+    "stem": "What is the angle between the hour and minute hands of a clock at 4:40?",
+    "options": [
+      "90°",
+      "120°",
+      "100°",
+      "110°"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Angle = |30H - 5.5M| = |30 × 4 - 5.5 × 40| = |120 - 220| = 100°. The hour hand has moved two thirds of the way from 4 to 5."
+  },
+  {
+    "id": "UPPOLICE-T1-092",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Coding-decoding",
+    "stem": "In a code, POLICE is written as QPMJDF. How is THANA written in that code?",
+    "options": [
+      "UIBOB",
+      "UHBOB",
+      "UIBNB",
+      "SGZMZ"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Each letter of POLICE moves one place forward. T, H, A, N, A become U, I, B, O, B."
+  },
+  {
+    "id": "UPPOLICE-T1-093",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Arrangement",
+    "stem": "A, B, C, D and E sit in a row facing north. D is in the middle. E is at the right end and A is to the immediate left of E. B is not at the left end. Who is at the left end?",
+    "options": [
+      "C",
+      "D",
+      "B",
+      "A"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "D is 3rd, E is 5th and A is 4th. B cannot be 1st, so B is 2nd and C is at the left end."
+  },
+  {
+    "id": "UPPOLICE-T1-094",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Alphabet test",
+    "stem": "Which letter is 5th to the left of the 20th letter from the left of the English alphabet?",
+    "options": [
+      "Y",
+      "N",
+      "O",
+      "P"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The 20th letter is T. Five places to its left is the 15th letter, O. Counting to the right instead gives Y."
+  },
+  {
+    "id": "UPPOLICE-T1-095",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Inequality",
+    "stem": "If A > B, B = C and C > D, which of these is definitely true?",
+    "options": [
+      "B < D",
+      "A > D",
+      "D > B",
+      "C > A"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A > B = C > D, so A > D. The other three contradict the chain."
+  },
+  {
+    "id": "UPPOLICE-T1-096",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Dictionary order",
+    "stem": "If these words are arranged in dictionary order, which comes third? Construct, Constable, Constitution, Constant",
+    "options": [
+      "Constant",
+      "Constable",
+      "Constitution",
+      "Construct"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The order is Constable (consta-b), Constant (consta-n), Constitution (consti), Construct (constr). Constitution is third."
+  },
+  {
+    "id": "UPPOLICE-T1-097",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppLogical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Coded relations",
+    "stem": "A + B means A is the father of B, A × B means A is the sister of B, and A - B means A is the mother of B. What does P × Q + R mean?",
+    "options": [
+      "P is R's mother",
+      "P is R's grandmother",
+      "P is R's sister",
+      "P is R's aunt"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "P × Q: P is Q's sister. Q + R: Q is R's father. So P is the sister of R's father, R's aunt (bua)."
+  },
+  {
+    "id": "UPPOLICE-T1-098",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mathematical operations",
+    "stem": "If 3 # 4 = 25 and 6 # 8 = 100, what is 5 # 12?",
+    "options": [
+      "17",
+      "169",
+      "60",
+      "144"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "a # b = a² + b²: 9 + 16 = 25 and 36 + 64 = 100. So 25 + 144 = 169."
+  },
+  {
+    "id": "UPPOLICE-T1-099",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ranking",
+    "stem": "Vikas is taller than Ajay but shorter than Raju. Sohan is taller than Raju, and Pawan is the shortest of the five. Who is in the middle by height?",
+    "options": [
+      "Vikas",
+      "Raju",
+      "Sohan",
+      "Ajay"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "From tallest: Sohan, Raju, Vikas, Ajay, Pawan. Vikas is third, in the middle."
+  },
+  {
+    "id": "UPPOLICE-T1-100",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "uppVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Classification",
+    "stem": "Find the odd letter pair: AC, EG, IK, MP",
+    "options": [
+      "EG",
+      "MP",
+      "AC",
+      "IK"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In AC, EG and IK the second letter is 2 places after the first. In MP the gap is 3."
+  },
+  {
+    "id": "UPPOLICE-T2-001",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppIndia",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ancient India",
+    "stem": "In which language were most of Ashoka's edicts written?",
+    "options": [
+      "Tamil",
+      "Sanskrit",
+      "Prakrit",
+      "Pali"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Most of Ashoka's inscriptions are in Prakrit, written mainly in the Brahmi script; some in the north-west used Kharosthi, and a few are in Greek and Aramaic."
+  },
+  {
+    "id": "UPPOLICE-T2-002",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppState",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Uttar Pradesh",
+    "stem": "What is the state animal of Uttar Pradesh?",
+    "options": [
+      "Blackbuck",
+      "Tiger",
+      "Barasingha",
+      "Nilgai"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The barasingha (swamp deer) is the state animal of Uttar Pradesh. Dudhwa is one of its strongholds."
+  },
+  {
+    "id": "UPPOLICE-T2-003",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Medieval India",
+    "stem": "Who built the Qila-i-Kuhna mosque in the Purana Qila, Delhi?",
+    "options": [
+      "Humayun",
+      "Sher Shah Suri",
+      "Akbar",
+      "Iltutmish"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Qila-i-Kuhna mosque inside the Purana Qila was built by Sher Shah Suri around 1541, after he drove Humayun out of India."
+  },
+  {
+    "id": "UPPOLICE-T2-004",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppState",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Uttar Pradesh",
+    "stem": "The Triveni Sangam at Prayagraj is the meeting point of the Ganga, the mythical Saraswati and which river?",
+    "options": [
+      "Ghaghara",
+      "Gomti",
+      "Son",
+      "Yamuna"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Ganga and the Yamuna meet at Prayagraj, with the Saraswati believed to join unseen. The Kumbh Mela is held there."
+  },
+  {
+    "id": "UPPOLICE-T2-005",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Medieval India",
+    "stem": "The Ain-i-Akbari was written by:",
+    "options": [
+      "Abul Fazl",
+      "Birbal",
+      "Badauni",
+      "Faizi"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Abul Fazl wrote the Akbarnama, whose third volume is the Ain-i-Akbari on Akbar's administration. Faizi was his brother and a poet."
+  },
+  {
+    "id": "UPPOLICE-T2-006",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Modern India",
+    "stem": "Who started the Marathi newspaper Kesari in 1881?",
+    "options": [
+      "Bal Gangadhar Tilak",
+      "Dadabhai Naoroji",
+      "Gopal Krishna Gokhale",
+      "Bipin Chandra Pal"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Bal Gangadhar Tilak, with Agarkar and others, started Kesari in Marathi and Mahratta in English in 1881, and used them to rouse national feeling. Gokhale founded the Servants of India Society."
+  },
+  {
+    "id": "UPPOLICE-T2-007",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppState",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Uttar Pradesh",
+    "stem": "The Rihand Dam, which forms the Govind Ballabh Pant Sagar, is in which district?",
+    "options": [
+      "Lalitpur",
+      "Mirzapur",
+      "Jhansi",
+      "Sonbhadra"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Rihand Dam at Pipri in Sonbhadra district forms one of the largest artificial lakes in India."
+  },
+  {
+    "id": "UPPOLICE-T2-008",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppIndia",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Freedom struggle",
+    "stem": "The Simon Commission was boycotted in 1928 mainly because:",
+    "options": [
+      "It proposed partition",
+      "It raised land tax",
+      "It banned the Congress",
+      "It had no Indian member"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "All seven members of the Simon Commission were British, so Indians greeted it with the slogan \"Simon Go Back\"."
+  },
+  {
+    "id": "UPPOLICE-T2-009",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppState",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Uttar Pradesh",
+    "stem": "Who founded the Banaras Hindu University in 1916?",
+    "options": [
+      "Annie Besant",
+      "Jagadish Chandra Bose",
+      "Madan Mohan Malaviya",
+      "Syed Ahmad Khan"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Pandit Madan Mohan Malaviya founded BHU at Varanasi in 1916. Sir Syed Ahmad Khan founded the college at Aligarh that became Aligarh Muslim University."
+  },
+  {
+    "id": "UPPOLICE-T2-010",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Geography",
+    "stem": "The Hundru Falls near Ranchi in Jharkhand are on which river?",
+    "options": [
+      "Son",
+      "Damodar",
+      "Subarnarekha",
+      "Mahanadi"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Subarnarekha drops off the edge of the Ranchi plateau at Hundru Falls, about 98 m high. The Damodar is Jharkhand's other big river, flowing east into West Bengal."
+  },
+  {
+    "id": "UPPOLICE-T2-011",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Geography",
+    "stem": "Which state has the largest area under mangrove forest in India?",
+    "options": [
+      "West Bengal",
+      "Odisha",
+      "Kerala",
+      "Gujarat"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "West Bengal, with the Sundarbans, has the largest mangrove cover in India, followed by Gujarat."
+  },
+  {
+    "id": "UPPOLICE-T2-012",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppState",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Uttar Pradesh",
+    "stem": "Chikankari embroidery is a famous craft of which city?",
+    "options": [
+      "Kanpur",
+      "Bareilly",
+      "Lucknow",
+      "Meerut"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Chikankari, fine white-on-white hand embroidery, is the best-known craft of Lucknow."
+  },
+  {
+    "id": "UPPOLICE-T2-013",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppIndia",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Geography",
+    "stem": "Which is the capital of Arunachal Pradesh?",
+    "options": [
+      "Kohima",
+      "Itanagar",
+      "Aizawl",
+      "Shillong"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Itanagar is the capital of Arunachal Pradesh. Kohima is Nagaland's, Aizawl Mizoram's and Shillong Meghalaya's."
+  },
+  {
+    "id": "UPPOLICE-T2-014",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppState",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Uttar Pradesh",
+    "stem": "At which place did Gautama Buddha attain mahaparinirvana?",
+    "options": [
+      "Kapilavastu",
+      "Kushinagar",
+      "Shravasti",
+      "Kaushambi"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Buddha died at Kushinagar, now in Uttar Pradesh. Shravasti is where he spent many rainy seasons."
+  },
+  {
+    "id": "UPPOLICE-T2-015",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Polity",
+    "stem": "How many subjects does the Eleventh Schedule of the Constitution list for the Panchayats?",
+    "options": [
+      "22",
+      "18",
+      "29",
+      "12"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The 73rd Amendment (1992) added the Eleventh Schedule with 29 subjects for the Panchayats. The Twelfth Schedule lists 18 for the municipalities, and 22 is the number of languages in the Eighth Schedule."
+  },
+  {
+    "id": "UPPOLICE-T2-016",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppIndia",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Polity",
+    "stem": "Who appoints the Chief Justice of India?",
+    "options": [
+      "The President",
+      "The Law Minister",
+      "The Prime Minister",
+      "Parliament"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Under Article 124, the President appoints the judges of the Supreme Court, including the Chief Justice."
+  },
+  {
+    "id": "UPPOLICE-T2-017",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppState",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Uttar Pradesh",
+    "stem": "Which revolutionary action of 9 August 1925 took place near Lucknow?",
+    "options": [
+      "Kakori train action",
+      "Chittagong armoury raid",
+      "Lahore conspiracy",
+      "Alipore bomb case"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Ram Prasad Bismil, Ashfaqulla Khan and their comrades stopped a train at Kakori and took a government cash bag to fund the HRA."
+  },
+  {
+    "id": "UPPOLICE-T2-018",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Economy",
+    "stem": "Which crop gained the most from the Green Revolution of the late 1960s?",
+    "options": [
+      "Wheat",
+      "Jute",
+      "Pulses",
+      "Cotton"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "High-yielding wheat varieties, with irrigation and fertiliser, raised output most in Punjab, Haryana and western Uttar Pradesh. Pulses gained little."
+  },
+  {
+    "id": "UPPOLICE-T2-019",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppState",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Uttar Pradesh",
+    "stem": "Which queen led the 1857 revolt in Lucknow on behalf of her son Birjis Qadr?",
+    "options": [
+      "Begum Samru",
+      "Rani Lakshmibai",
+      "Begum Hazrat Mahal",
+      "Rani Avantibai"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Begum Hazrat Mahal of Awadh held Lucknow against the British in 1857. Rani Lakshmibai led the revolt at Jhansi."
+  },
+  {
+    "id": "UPPOLICE-T2-020",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Science",
+    "stem": "What does a hydrometer measure?",
+    "options": [
+      "Electric current",
+      "The humidity of the air",
+      "The density of a liquid compared with water",
+      "Atmospheric pressure"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A hydrometer floats in a liquid and reads its relative density (specific gravity). A hygrometer measures humidity, a barometer air pressure and an ammeter current."
+  },
+  {
+    "id": "UPPOLICE-T2-021",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Science",
+    "stem": "What is the main ore of aluminium?",
+    "options": [
+      "Cinnabar",
+      "Bauxite",
+      "Haematite",
+      "Galena"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Bauxite is the main ore of aluminium. Haematite is an iron ore, galena a lead ore and cinnabar a mercury ore."
+  },
+  {
+    "id": "UPPOLICE-T2-022",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppState",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Police and law",
+    "stem": "Since 1 July 2024, which law has replaced the Indian Penal Code?",
+    "options": [
+      "Bharatiya Nyaya Sanhita",
+      "Bharatiya Sakshya Adhiniyam",
+      "Bharatiya Nagarik Suraksha Sanhita",
+      "Police Act"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Bharatiya Nyaya Sanhita, 2023 replaced the IPC. The Nagarik Suraksha Sanhita replaced the CrPC and the Sakshya Adhiniyam replaced the Evidence Act."
+  },
+  {
+    "id": "UPPOLICE-T2-023",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppIndia",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Science",
+    "stem": "Which part of a plant absorbs water from the soil?",
+    "options": [
+      "Phloem",
+      "Root hairs",
+      "Petals",
+      "Stomata"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Root hairs give the root a large surface for absorbing water and minerals, which then rise through the xylem."
+  },
+  {
+    "id": "UPPOLICE-T2-024",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppState",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Police and law",
+    "stem": "Under Article 22, an arrested person must be produced before the nearest magistrate within:",
+    "options": [
+      "12 hours",
+      "24 hours",
+      "48 hours",
+      "72 hours"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Article 22(2) requires production before a magistrate within 24 hours of arrest, not counting the journey time."
+  },
+  {
+    "id": "UPPOLICE-T2-025",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppIndia",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Science",
+    "stem": "Who discovered penicillin, the first antibiotic, in 1928?",
+    "options": [
+      "Alexander Fleming",
+      "Robert Koch",
+      "Louis Pasteur",
+      "Edward Jenner"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Alexander Fleming noticed in 1928 that a Penicillium mould killed bacteria. Jenner made the smallpox vaccine, Pasteur the rabies vaccine and Koch identified the tuberculosis germ."
+  },
+  {
+    "id": "UPPOLICE-T2-026",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppHindiShabd",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "पर्यायवाची",
+    "stem": "\"कमल\" का पर्यायवाची शब्द कौन-सा है?",
+    "options": [
+      "सरोवर",
+      "मधुप",
+      "पंकज",
+      "मराल"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "पंकज (born in mud) means lotus, as do जलज, नीरज and सरोज. मराल is a swan, मधुप a bee and सरोवर a lake."
+  },
+  {
+    "id": "UPPOLICE-T2-027",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppHindiVyakaran",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "संधि",
+    "stem": "\"इत्यादि\" का सही संधि-विच्छेद क्या है?",
+    "options": [
+      "इत + आदि",
+      "इति + यादि",
+      "इति + आदि",
+      "इत्य + आदि"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "इति + आदि: इ before a different vowel becomes य, so this is यण संधि."
+  },
+  {
+    "id": "UPPOLICE-T2-028",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppHindiShabd",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "पर्यायवाची",
+    "stem": "\"बादल\" का पर्यायवाची शब्द कौन-सा है?",
+    "options": [
+      "जलद",
+      "जलज",
+      "जलधि",
+      "जलचर"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "जलद (giver of water) means cloud, as do मेघ and घन. जलज is lotus, जलधि is sea and जलचर a water animal."
+  },
+  {
+    "id": "UPPOLICE-T2-029",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppHindiVyakaran",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "संधि",
+    "stem": "\"सदैव\" में कौन-सी संधि है?",
+    "options": [
+      "गुण संधि",
+      "दीर्घ संधि",
+      "वृद्धि संधि",
+      "यण संधि"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "सदा + एव: आ + ए = ऐ, which is वृद्धि संधि."
+  },
+  {
+    "id": "UPPOLICE-T2-030",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppHindiShabd",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "पर्यायवाची",
+    "stem": "\"घर\" का पर्यायवाची शब्द कौन-सा है?",
+    "options": [
+      "पथ",
+      "वन",
+      "नगर",
+      "सदन"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "सदन (also गृह, निकेतन, आलय) means house. वन is forest, नगर city and पथ path."
+  },
+  {
+    "id": "UPPOLICE-T2-031",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppHindiVyakaran",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "समास",
+    "stem": "\"नीलकंठ\" (शिव) में कौन-सा समास है?",
+    "options": [
+      "कर्मधारय",
+      "द्विगु",
+      "द्वंद्व",
+      "बहुव्रीहि"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "नीला है कंठ जिसका, वह (शिव): neither word is the main one; together they point to a third, so it is बहुव्रीहि. Read simply as नीला कंठ it would be कर्मधारय."
+  },
+  {
+    "id": "UPPOLICE-T2-032",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppHindiShabd",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "विलोम",
+    "stem": "\"स्वतंत्र\" का विलोम शब्द क्या है?",
+    "options": [
+      "आज़ाद",
+      "परतंत्र",
+      "स्वच्छंद",
+      "स्वाधीन"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "स्वतंत्र (free) is opposite to परतंत्र (dependent, under another's rule). स्वाधीन, स्वच्छंद (free to do as one likes) and आज़ाद are close in meaning to स्वतंत्र."
+  },
+  {
+    "id": "UPPOLICE-T2-033",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppHindiVyakaran",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "समास",
+    "stem": "\"त्रिलोक\" में कौन-सा समास है?",
+    "options": [
+      "बहुव्रीहि",
+      "अव्ययीभाव",
+      "द्वंद्व",
+      "द्विगु"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "तीन लोकों का समूह: the first part is a number, so it is द्विगु समास."
+  },
+  {
+    "id": "UPPOLICE-T2-034",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppHindiShabd",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "विलोम",
+    "stem": "\"उन्नति\" का विलोम शब्द क्या है?",
+    "options": [
+      "उत्थान",
+      "विकास",
+      "प्रगति",
+      "अवनति"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "उन्नति (rise) is opposite to अवनति (decline). The other three are synonyms of उन्नति."
+  },
+  {
+    "id": "UPPOLICE-T2-035",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppHindiVyakaran",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "लिंग",
+    "stem": "\"धोबी\" का स्त्रीलिंग रूप क्या है?",
+    "options": [
+      "धोबिनी",
+      "धोबानी",
+      "धोबीया",
+      "धोबिन"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "धोबी becomes धोबिन, like माली and मालिन."
+  },
+  {
+    "id": "UPPOLICE-T2-036",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppHindiShabd",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "विलोम",
+    "stem": "\"मौखिक\" का विलोम शब्द क्या है?",
+    "options": [
+      "वाचिक",
+      "मौन",
+      "लिखित",
+      "श्रव्य"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "मौखिक (oral) is opposite to लिखित (written), as in a मौखिक or लिखित परीक्षा."
+  },
+  {
+    "id": "UPPOLICE-T2-037",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppHindiVyakaran",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "वचन",
+    "stem": "\"लड़का\" का बहुवचन रूप क्या है?",
+    "options": [
+      "लड़काओं",
+      "लड़के",
+      "लड़कें",
+      "लड़काएँ"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "आ-ending masculine nouns change to ए: लड़का becomes लड़के (लड़कों is the same plural before a postposition, as in लड़कों ने)."
+  },
+  {
+    "id": "UPPOLICE-T2-038",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppHindiShabd",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "एक शब्द",
+    "stem": "\"जो पहले कभी न हुआ हो\" के लिए एक शब्द क्या है?",
+    "options": [
+      "अविस्मरणीय",
+      "अनुपम",
+      "अभूतपूर्व",
+      "अद्वितीय"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "अभूतपूर्व means never happened before. अद्वितीय means without a second, अनुपम matchless and अविस्मरणीय unforgettable."
+  },
+  {
+    "id": "UPPOLICE-T2-039",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppHindiVyakaran",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "कारक",
+    "stem": "\"पेड़ से पत्ते गिरते हैं\" में \"पेड़ से\" कौन-सा कारक है?",
+    "options": [
+      "करण कारक",
+      "संबंध कारक",
+      "अधिकरण कारक",
+      "अपादान कारक"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The leaves separate from the tree, so से here shows separation: अपादान कारक."
+  },
+  {
+    "id": "UPPOLICE-T2-040",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppHindiShabd",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "एक शब्द",
+    "stem": "\"दूसरे देश से सामान मँगाना\" के लिए एक शब्द क्या है?",
+    "options": [
+      "विनिमय",
+      "आयात",
+      "निर्यात",
+      "व्यापार"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "आयात is import. निर्यात, sending goods abroad, is export."
+  },
+  {
+    "id": "UPPOLICE-T2-041",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppHindiVyakaran",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "शब्द-भेद",
+    "stem": "\"वह धीरे-धीरे चलता है\" में \"धीरे-धीरे\" क्या है?",
+    "options": [
+      "सर्वनाम",
+      "क्रियाविशेषण",
+      "संज्ञा",
+      "विशेषण"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "धीरे-धीरे tells how he walks, so it qualifies the verb: a रीतिवाचक क्रियाविशेषण."
+  },
+  {
+    "id": "UPPOLICE-T2-042",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppHindiShabd",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "तत्सम-तद्भव",
+    "stem": "\"दूध\" का तत्सम रूप क्या है?",
+    "options": [
+      "दुग्ध",
+      "दुद्ध",
+      "दूधिया",
+      "दोग्ध"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "दुग्ध is the tatsam (Sanskrit) form and दूध its tadbhav. दूधिया is an adjective made from दूध."
+  },
+  {
+    "id": "UPPOLICE-T2-043",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppHindiVyakaran",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "प्रत्यय",
+    "stem": "\"सामाजिक\" शब्द में कौन-सा प्रत्यय है?",
+    "options": [
+      "इक",
+      "क",
+      "जिक",
+      "आजिक"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "समाज + इक = सामाजिक; the first vowel lengthens, as in दिन to दैनिक."
+  },
+  {
+    "id": "UPPOLICE-T2-044",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppHindiShabd",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "मुहावरे",
+    "stem": "\"दाँतों तले उँगली दबाना\" मुहावरे का अर्थ है:",
+    "options": [
+      "आश्चर्यचकित होना",
+      "चुप रहना",
+      "पछताना",
+      "डर जाना"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "To press a finger between the teeth means to be astonished."
+  },
+  {
+    "id": "UPPOLICE-T2-045",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppHindiVyakaran",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "अलंकार",
+    "stem": "\"कनक कनक ते सौ गुनी मादकता अधिकाय\" में कौन-सा अलंकार है?",
+    "options": [
+      "अनुप्रास",
+      "रूपक",
+      "श्लेष",
+      "यमक"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "कनक repeats with two meanings, gold and the datura plant. A repeated word with different meanings is यमक; one word with two meanings at once is श्लेष."
+  },
+  {
+    "id": "UPPOLICE-T2-046",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppHindiShabd",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "मुहावरे",
+    "stem": "\"हाथ पीले करना\" मुहावरे का अर्थ है:",
+    "options": [
+      "विवाह करना",
+      "पूजा करना",
+      "धन कमाना",
+      "बीमार होना"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "हाथ पीले करना means to get a daughter married, from the turmeric ceremony before a wedding."
+  },
+  {
+    "id": "UPPOLICE-T2-047",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppHindiVyakaran",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "रस",
+    "stem": "जिस रस का स्थायी भाव \"शोक\" है, वह कौन-सा है?",
+    "options": [
+      "हास्य",
+      "शृंगार",
+      "वीर",
+      "करुण"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "शोक is the स्थायी भाव of करुण रस. रति belongs to शृंगार, उत्साह to वीर and हास to हास्य."
+  },
+  {
+    "id": "UPPOLICE-T2-048",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppHindiShabd",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "लोकोक्ति",
+    "stem": "\"जल में रहकर मगर से बैर\" लोकोक्ति का अर्थ है:",
+    "options": [
+      "बलवान की सहायता",
+      "पानी से डरना",
+      "दूर रहना ही ठीक",
+      "आश्रयदाता से शत्रुता"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Living in water and quarrelling with the crocodile: making an enemy of the person you depend on."
+  },
+  {
+    "id": "UPPOLICE-T2-049",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppHindiVyakaran",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "साहित्य",
+    "stem": "\"रामचरितमानस\" के रचयिता कौन हैं?",
+    "options": [
+      "केशवदास",
+      "सूरदास",
+      "तुलसीदास",
+      "कबीरदास"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Goswami Tulsidas wrote the Ramcharitmanas in Awadhi. Surdas wrote the Sursagar in Braj."
+  },
+  {
+    "id": "UPPOLICE-T2-050",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppHindiShabd",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "शुद्ध वर्तनी",
+    "stem": "शुद्ध वर्तनी वाला शब्द चुनिए:",
+    "options": [
+      "उज्ज्वल",
+      "उज्वल",
+      "उज्जवल",
+      "उजवल"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "उज्ज्वल is correct: उत् + ज्वल, so ज् is doubled before ज्व. उज्जवल is the most common mistake."
+  },
+  {
+    "id": "UPPOLICE-T2-051",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Percentage",
+    "stem": "What percent of 240 is 54?",
+    "options": [
+      "25%",
+      "22.5%",
+      "24%",
+      "20%"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "54/240 × 100 = 22.5%."
+  },
+  {
+    "id": "UPPOLICE-T2-052",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppNumber",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Divisibility",
+    "stem": "What is the smallest number that must be added to 2,000 to make it exactly divisible by 9?",
+    "options": [
+      "2",
+      "1",
+      "5",
+      "7"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The digit sum of 2,000 is 2, so the remainder on division by 9 is 2. Adding 7 gives 2,007, whose digits add up to 9."
+  },
+  {
+    "id": "UPPOLICE-T2-053",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Profit and loss",
+    "stem": "A cycle bought for ₹850 is sold for ₹765. What is the loss percent?",
+    "options": [
+      "11.1%",
+      "10%",
+      "8.5%",
+      "12%"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Loss = ₹85, and 85/850 × 100 = 10%. Dividing by the selling price instead gives the wrong 11.1%."
+  },
+  {
+    "id": "UPPOLICE-T2-054",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppNumber",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number system",
+    "stem": "What is the unit digit of 8^27?",
+    "options": [
+      "6",
+      "2",
+      "8",
+      "4"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Powers of 8 end in 8, 4, 2, 6 and repeat every 4. 27 leaves remainder 3 when divided by 4, so the unit digit is 2."
+  },
+  {
+    "id": "UPPOLICE-T2-055",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Discount",
+    "stem": "Two successive discounts of 25% and 20% are equal to a single discount of:",
+    "options": [
+      "40%",
+      "42%",
+      "35%",
+      "45%"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "After 25% off, ₹100 becomes ₹75; 20% off that leaves ₹60. The total discount is 40%, not 45%."
+  },
+  {
+    "id": "UPPOLICE-T2-056",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Simple interest",
+    "stem": "At what rate of simple interest does a sum become four times itself in 15 years?",
+    "options": [
+      "30%",
+      "15%",
+      "20%",
+      "25%"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Becoming four times means the interest is three times the principal: 300 = 100 × R × 15 / 100, so R = 20%."
+  },
+  {
+    "id": "UPPOLICE-T2-057",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppNumber",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Simplification",
+    "stem": "What is the value of 15² - 13²?",
+    "options": [
+      "4",
+      "28",
+      "56",
+      "52"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "a² - b² = (a + b)(a - b) = 28 × 2 = 56."
+  },
+  {
+    "id": "UPPOLICE-T2-058",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Compound interest",
+    "stem": "What amount will ₹5,000 grow to in 3 years at 10% per annum, compounded annually?",
+    "options": [
+      "₹6,655",
+      "₹6,600",
+      "₹6,500",
+      "₹6,750"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "5,000 × 1.1 × 1.1 × 1.1 = 5,000 × 1.331 = ₹6,655. Simple interest would give ₹6,500."
+  },
+  {
+    "id": "UPPOLICE-T2-059",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppNumber",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Mensuration",
+    "stem": "What is the volume of a box 9 cm long, 6 cm wide and 5 cm high?",
+    "options": [
+      "20 cu cm",
+      "270 cu cm",
+      "135 cu cm",
+      "258 cu cm"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Volume = l × b × h = 9 × 6 × 5 = 270 cubic cm. 258 sq cm is its surface area."
+  },
+  {
+    "id": "UPPOLICE-T2-060",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Average",
+    "stem": "What is the average of all the odd numbers from 1 to 25?",
+    "options": [
+      "12.5",
+      "12",
+      "14",
+      "13"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "There are 13 odd numbers from 1 to 25, and their sum is 13² = 169. 169 ÷ 13 = 13, the middle term."
+  },
+  {
+    "id": "UPPOLICE-T2-061",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ratio",
+    "stem": "Two numbers are in the ratio 5 : 7 and their sum is 96. What is their difference?",
+    "options": [
+      "20",
+      "12",
+      "24",
+      "16"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "One part = 96/12 = 8. The numbers are 40 and 56, so the difference is 2 × 8 = 16."
+  },
+  {
+    "id": "UPPOLICE-T2-062",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppNumber",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Geometry",
+    "stem": "What is each interior angle of a regular nonagon (9 sides)?",
+    "options": [
+      "120°",
+      "144°",
+      "140°",
+      "135°"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The interior angles add up to (9 - 2) × 180° = 1,260°, and 1,260 ÷ 9 = 140°. 135° is a regular octagon's, 144° a decagon's and 120° a hexagon's."
+  },
+  {
+    "id": "UPPOLICE-T2-063",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Time and work",
+    "stem": "12 men can finish a road in 15 days. How many days will 20 men take?",
+    "options": [
+      "12 days",
+      "10 days",
+      "8 days",
+      "9 days"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Total work = 12 × 15 = 180 man-days. 180/20 = 9 days."
+  },
+  {
+    "id": "UPPOLICE-T2-064",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppNumber",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Algebra",
+    "stem": "If 5x - 9 = 3x + 7, what is x?",
+    "options": [
+      "8",
+      "2",
+      "16",
+      "-1"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Take 3x to the left and 9 to the right: 2x = 16, so x = 8."
+  },
+  {
+    "id": "UPPOLICE-T2-065",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Speed",
+    "stem": "A car covers 210 km in 3 hours 30 minutes. What is its speed?",
+    "options": [
+      "60 km/h",
+      "70 km/h",
+      "55 km/h",
+      "65 km/h"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "210 / 3.5 = 60 km/h."
+  },
+  {
+    "id": "UPPOLICE-T2-066",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppArith",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Trains",
+    "stem": "Two trains 150 m and 120 m long run in opposite directions at 45 km/h and 63 km/h. How long do they take to cross each other?",
+    "options": [
+      "15 seconds",
+      "12 seconds",
+      "9 seconds",
+      "10 seconds"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Relative speed = 108 km/h = 30 m/s. Distance = 150 + 120 = 270 m, so time = 270/30 = 9 seconds."
+  },
+  {
+    "id": "UPPOLICE-T2-067",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppNumber",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Fractions",
+    "stem": "What is 2/3 of 3/4 of 480?",
+    "options": [
+      "360",
+      "180",
+      "320",
+      "240"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "3/4 of 480 = 360, and 2/3 of 360 = 240. In one step, 2/3 × 3/4 = 1/2, and half of 480 is 240."
+  },
+  {
+    "id": "UPPOLICE-T2-068",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Percentage",
+    "stem": "Mohan earns ₹25,000 a month and spends 72% of it. How much does he save?",
+    "options": [
+      "₹18,000",
+      "₹7,000",
+      "₹6,800",
+      "₹7,200"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "He saves 28% of 25,000 = ₹7,000. ₹18,000 is what he spends."
+  },
+  {
+    "id": "UPPOLICE-T2-069",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppNumber",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Mensuration",
+    "stem": "What is the area of a triangle with a base of 18 cm and a height of 11 cm?",
+    "options": [
+      "198 sq cm",
+      "108 sq cm",
+      "99 sq cm",
+      "90 sq cm"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Area = 1/2 × base × height = 1/2 × 18 × 11 = 99 sq cm. Forgetting the half gives 198."
+  },
+  {
+    "id": "UPPOLICE-T2-070",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppArith",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Pipes",
+    "stem": "A tap fills a tank in 12 hours and a leak empties it in 20 hours. If both work together, how long will the tank take to fill?",
+    "options": [
+      "30 hours",
+      "7.5 hours",
+      "32 hours",
+      "8 hours"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Net filling per hour = 1/12 - 1/20 = 1/30, so 30 hours. 7.5 hours would be the time if both filled."
+  },
+  {
+    "id": "UPPOLICE-T2-071",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Percentage",
+    "stem": "A town's population of 20,000 grows by 10% every year. What will it be after 2 years?",
+    "options": [
+      "22,000",
+      "24,200",
+      "24,000",
+      "24,400"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "20,000 × 1.1 × 1.1 = 24,200. Adding 10% twice of the original (24,000) misses the growth on growth."
+  },
+  {
+    "id": "UPPOLICE-T2-072",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppNumber",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number system",
+    "stem": "How many prime numbers are there between 1 and 30?",
+    "options": [
+      "9",
+      "12",
+      "11",
+      "10"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "2, 3, 5, 7, 11, 13, 17, 19, 23 and 29: ten primes. 1 is not prime."
+  },
+  {
+    "id": "UPPOLICE-T2-073",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppArith",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Speed",
+    "stem": "A bus goes from Kanpur to Lucknow at 36 km/h and returns at 60 km/h. What is its average speed for the round trip?",
+    "options": [
+      "48 km/h",
+      "42 km/h",
+      "45 km/h",
+      "50 km/h"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "For equal distances, average speed = 2xy/(x + y) = 2 × 36 × 60 / 96 = 45 km/h, not the simple average 48."
+  },
+  {
+    "id": "UPPOLICE-T2-074",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppNumber",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "LCM and HCF",
+    "stem": "Three sirens sound at intervals of 9, 12 and 18 minutes. If they sound together at 7:30 a.m., when will they next sound together?",
+    "options": [
+      "8:15 a.m.",
+      "8:06 a.m.",
+      "8:00 a.m.",
+      "7:57 a.m."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "LCM of 9, 12 and 18 = 36 minutes, and 36 minutes after 7:30 is 8:06 a.m."
+  },
+  {
+    "id": "UPPOLICE-T2-075",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppArith",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Ages",
+    "stem": "The sum of the present ages of Amar and Babloo is 50 years. Five years ago their ages were in the ratio 3 : 2. What is Babloo's present age?",
+    "options": [
+      "16 years",
+      "21 years",
+      "24 years",
+      "26 years"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Five years ago the sum was 40, split 3 : 2 as 24 and 16. Babloo is now 16 + 5 = 21."
+  },
+  {
+    "id": "UPPOLICE-T2-076",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Analogy",
+    "stem": "Tongue : Taste :: Nose : ?",
+    "options": [
+      "Breathe",
+      "Smell",
+      "Air",
+      "Face"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The tongue is the organ of taste; the nose is the organ of smell."
+  },
+  {
+    "id": "UPPOLICE-T2-077",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Blood relations",
+    "stem": "Pointing to a woman, Rakesh says, \"She is the wife of my father's only son.\" How is the woman related to Rakesh?",
+    "options": [
+      "Sister",
+      "Wife",
+      "Sister-in-law",
+      "Mother"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The only son of Rakesh's father is Rakesh himself, so the woman is Rakesh's wife."
+  },
+  {
+    "id": "UPPOLICE-T2-078",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number analogy",
+    "stem": "7 : 50 :: 9 : ?",
+    "options": [
+      "80",
+      "90",
+      "82",
+      "81"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "7² + 1 = 50, so 9² + 1 = 82."
+  },
+  {
+    "id": "UPPOLICE-T2-079",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Blood relations",
+    "stem": "X is Y's father. Z is X's mother. W is Z's husband. How is W related to Y?",
+    "options": [
+      "Uncle",
+      "Great-grandfather",
+      "Father",
+      "Grandfather"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "W is the husband of X's mother, so W is X's father and Y's grandfather."
+  },
+  {
+    "id": "UPPOLICE-T2-080",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Classification",
+    "stem": "Find the odd one out: Gomti, Ghaghara, Betwa, Mahanadi",
+    "options": [
+      "Betwa",
+      "Mahanadi",
+      "Ghaghara",
+      "Gomti"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Gomti, Ghaghara and Betwa flow through Uttar Pradesh into the Ganga system. The Mahanadi flows through Chhattisgarh and Odisha."
+  },
+  {
+    "id": "UPPOLICE-T2-081",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Directions",
+    "stem": "A guard faces north. He turns right, turns right again, then turns left. Which direction does he face now?",
+    "options": [
+      "West",
+      "East",
+      "South",
+      "North"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "North, right to east, right to south, left to east."
+  },
+  {
+    "id": "UPPOLICE-T2-082",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Classification",
+    "stem": "Find the odd number out: 121, 169, 225, 290",
+    "options": [
+      "290",
+      "225",
+      "169",
+      "121"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "121, 169 and 225 are the squares of 11, 13 and 15. 290 is not a perfect square."
+  },
+  {
+    "id": "UPPOLICE-T2-083",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Directions",
+    "stem": "Sunil walks 8 km west, then 6 km south, then 8 km east. How far is he from his starting point?",
+    "options": [
+      "22 km",
+      "10 km",
+      "14 km",
+      "6 km"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The 8 km west and 8 km east cancel, so he is 6 km due south of the start."
+  },
+  {
+    "id": "UPPOLICE-T2-084",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "What comes next? 3, 7, 13, 21, 31, ?",
+    "options": [
+      "43",
+      "45",
+      "39",
+      "41"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The gaps are 4, 6, 8, 10, so the next gap is 12: 31 + 12 = 43. Each term is n² + n + 1."
+  },
+  {
+    "id": "UPPOLICE-T2-085",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ranking",
+    "stem": "In a row of 45 students, Pooja is 17th from the left end. What is her position from the right end?",
+    "options": [
+      "27th",
+      "30th",
+      "29th",
+      "28th"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Position from right = 45 - 17 + 1 = 29."
+  },
+  {
+    "id": "UPPOLICE-T2-086",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "What comes next? 81, 27, 9, 3, ?",
+    "options": [
+      "2",
+      "0",
+      "1/3",
+      "1"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Each term is one third of the one before: 3 ÷ 3 = 1."
+  },
+  {
+    "id": "UPPOLICE-T2-087",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppLogical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Syllogism",
+    "stem": "Statements: No pen is a pencil. All pencils are erasers. Conclusions: I. Some erasers are not pens. II. No eraser is a pen. Which conclusion follows?",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The erasers that are pencils cannot be pens, so some erasers are not pens (I). Other erasers may be pens, so II does not follow."
+  },
+  {
+    "id": "UPPOLICE-T2-088",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Letter series",
+    "stem": "What comes next? Y, W, T, P, ?",
+    "options": [
+      "L",
+      "K",
+      "M",
+      "J"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The letters move back 2, 3, 4, then 5 places: P (16th) minus 5 is K (11th)."
+  },
+  {
+    "id": "UPPOLICE-T2-089",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppLogical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Calendar",
+    "stem": "1 January 2019 was a Tuesday. Which of these years has exactly the same calendar as 2019?",
+    "options": [
+      "2027",
+      "2029",
+      "2030",
+      "2025"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Years start on Wed 2020, Fri 2021, Sat 2022, Sun 2023, Mon 2024, Wed 2025, Thu 2026, Fri 2027, Sat 2028, Mon 2029 and Tue 2030. 2030 is also not a leap year, so its calendar matches."
+  },
+  {
+    "id": "UPPOLICE-T2-090",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Coding-decoding",
+    "stem": "If ROAD is coded as 38 by adding the positions of its letters, what is the code for CAR?",
+    "options": [
+      "21",
+      "20",
+      "24",
+      "22"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "R18 + O15 + A1 + D4 = 38. C3 + A1 + R18 = 22."
+  },
+  {
+    "id": "UPPOLICE-T2-091",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Clock",
+    "stem": "How many times are the hands of a clock at right angles in 12 hours?",
+    "options": [
+      "22",
+      "24",
+      "44",
+      "11"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The hands are at right angles twice in each hour except around 3 and 9 o'clock, where the two cases coincide: 22 times in 12 hours (44 in a day)."
+  },
+  {
+    "id": "UPPOLICE-T2-092",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Coding-decoding",
+    "stem": "If RAIN is written as NIAR, how is CLOUD written?",
+    "options": [
+      "DOULC",
+      "CDUOL",
+      "DUOLC",
+      "DULOC"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The word is written backwards: CLOUD becomes DUOLC."
+  },
+  {
+    "id": "UPPOLICE-T2-093",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Arrangement",
+    "stem": "Five people stand in a queue. Gopal is ahead of Hari but behind Inder. Jai is behind Hari. Kamal is at the front. Who is last?",
+    "options": [
+      "Gopal",
+      "Inder",
+      "Jai",
+      "Hari"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "From the front: Kamal, then Inder, Gopal and Hari in that order, with Jai behind Hari. Jai is last."
+  },
+  {
+    "id": "UPPOLICE-T2-094",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Alphabet test",
+    "stem": "How many letters lie between G and P in the English alphabet?",
+    "options": [
+      "10",
+      "9",
+      "7",
+      "8"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "G is 7th and P is 16th. The letters between them are H to O, 16 - 7 - 1 = 8."
+  },
+  {
+    "id": "UPPOLICE-T2-095",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Inequality",
+    "stem": "If P < Q, Q < R and R = S, which of these is definitely true?",
+    "options": [
+      "S < Q",
+      "Q = S",
+      "P > R",
+      "P < S"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "P < Q < R = S, so P < S. Q is less than S, not equal to it."
+  },
+  {
+    "id": "UPPOLICE-T2-096",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppVerbal",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Mathematical operations",
+    "stem": "If + means ×, × means -, - means ÷ and ÷ means +, what is 12 + 3 × 16 - 4 ÷ 2?",
+    "options": [
+      "30",
+      "38",
+      "42",
+      "34"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The expression becomes 12 × 3 - 16 ÷ 4 + 2 = 36 - 4 + 2 = 34."
+  },
+  {
+    "id": "UPPOLICE-T2-097",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppLogical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Coded relations",
+    "stem": "A * B means A is the brother of B, A @ B means A is the wife of B, and A # B means A is the son of B. What does M * N # O mean?",
+    "options": [
+      "M is O's brother",
+      "M is O's son",
+      "M is O's nephew",
+      "M is O's father"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "N is O's son and M is N's brother, so M is also O's son."
+  },
+  {
+    "id": "UPPOLICE-T2-098",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Word formation",
+    "stem": "Which word cannot be made from the letters of SECURITY?",
+    "options": [
+      "CURE",
+      "TRUCK",
+      "RUST",
+      "CITY"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "SECURITY has no K, so TRUCK cannot be formed. CURE, RUST and CITY use only its letters."
+  },
+  {
+    "id": "UPPOLICE-T2-099",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Statement and assumption",
+    "stem": "Statement: The police have asked residents to lock their homes before leaving for the festival. Assumptions: I. Thefts can rise when homes are left empty. II. Residents will ignore the advice. Which assumption is implicit?",
+    "options": [
+      "Only I is implicit",
+      "Only II is implicit",
+      "Both are implicit",
+      "Neither is implicit"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The advice makes sense only if empty homes are at risk (I). Giving advice assumes people may follow it, so II is not assumed."
+  },
+  {
+    "id": "UPPOLICE-T2-100",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "uppVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Classification",
+    "stem": "Find the odd pair: 3-27, 4-64, 5-125, 6-206",
+    "options": [
+      "5-125",
+      "3-27",
+      "4-64",
+      "6-206"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "In the others the second number is the cube of the first. 6³ = 216, not 206."
+  },
+  {
+    "id": "UPPOLICE-D-001",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "uppIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Freedom struggle",
+    "stem": "Who led the Bardoli Satyagraha of 1928 and earned the title Sardar?",
+    "options": [
+      "Maulana Azad",
+      "J. B. Kripalani",
+      "Rajendra Prasad",
+      "Vallabhbhai Patel"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Vallabhbhai Patel led the peasants of Bardoli, Gujarat, against a raised land revenue, and the women of Bardoli called him Sardar."
+  },
+  {
+    "id": "UPPOLICE-D-002",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "uppState",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Uttar Pradesh",
+    "stem": "Kathak, the classical dance with a famous gharana in Lucknow, is linked with which region?",
+    "options": [
+      "Odisha",
+      "Kerala",
+      "Manipur",
+      "North India"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Kathak is the classical dance of North India, with Lucknow, Jaipur and Banaras gharanas."
+  },
+  {
+    "id": "UPPOLICE-D-003",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "uppIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Geography",
+    "stem": "Hemis National Park in Ladakh is best known for which animal?",
+    "options": [
+      "One-horned rhinoceros",
+      "Wild ass",
+      "Snow leopard",
+      "Asiatic lion"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Hemis, high in the Ladakh mountains, is famous for the snow leopard. The Asiatic lion lives in Gir, the rhino in Kaziranga and the wild ass in the Little Rann of Kutch."
+  },
+  {
+    "id": "UPPOLICE-D-004",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "uppState",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Uttar Pradesh",
+    "stem": "Moradabad is often called by which name, for its metal handicrafts?",
+    "options": [
+      "Lock City",
+      "Carpet City",
+      "Peetal Nagri",
+      "Glass City"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Moradabad is called Peetal Nagri, the brass city. Firozabad is the glass city and Aligarh the lock city."
+  },
+  {
+    "id": "UPPOLICE-D-005",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "uppIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Polity",
+    "stem": "The office of the Comptroller and Auditor General is provided for under which Article?",
+    "options": [
+      "Article 280",
+      "Article 315",
+      "Article 148",
+      "Article 76"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Article 148 creates the CAG. Article 280 is the Finance Commission, 315 the Public Service Commissions and 76 the Attorney General."
+  },
+  {
+    "id": "UPPOLICE-D-006",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "uppState",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Police and law",
+    "stem": "The National Human Rights Commission was set up under which Act?",
+    "options": [
+      "Right to Information Act, 2005",
+      "Police Act, 1861",
+      "Protection of Human Rights Act, 1993",
+      "Juvenile Justice Act, 2015"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Protection of Human Rights Act, 1993 created the NHRC and allows state human rights commissions, such as Uttar Pradesh's."
+  },
+  {
+    "id": "UPPOLICE-D-007",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "uppIndia",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Science",
+    "stem": "Which tissue joins a muscle to a bone?",
+    "options": [
+      "Ligament",
+      "Tendon",
+      "Nerve",
+      "Cartilage"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A tendon is a tough cord that joins a muscle to a bone, so the muscle can pull the bone. A ligament joins one bone to another bone at a joint."
+  },
+  {
+    "id": "UPPOLICE-D-008",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "uppState",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Police and law",
+    "stem": "Which national helpline number is meant for reporting online financial fraud?",
+    "options": [
+      "1098",
+      "1091",
+      "1930",
+      "181"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "1930 is the national cyber fraud helpline; complaints can also be filed on cybercrime.gov.in. 1098 is the child helpline."
+  },
+  {
+    "id": "UPPOLICE-D-009",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "uppHindiShabd",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "पर्यायवाची",
+    "stem": "\"वृक्ष\" का पर्यायवाची शब्द कौन-सा है?",
+    "options": [
+      "लता",
+      "पुष्प",
+      "पल्लव",
+      "तरु"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "तरु (also विटप, पादप, द्रुम) means tree. लता is a creeper, पुष्प a flower and पल्लव a new leaf."
+  },
+  {
+    "id": "UPPOLICE-D-010",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "uppHindiVyakaran",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "संधि",
+    "stem": "\"जगन्नाथ\" का सही संधि-विच्छेद क्या है?",
+    "options": [
+      "जग + नाथ",
+      "जगत + अनाथ",
+      "जगत् + नाथ",
+      "जगन् + नाथ"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "जगत् + नाथ: त् before न becomes न्, a व्यंजन संधि."
+  },
+  {
+    "id": "UPPOLICE-D-011",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "uppHindiShabd",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "विलोम",
+    "stem": "\"निंदा\" का विलोम शब्द क्या है?",
+    "options": [
+      "स्तुति",
+      "आलोचना",
+      "उपेक्षा",
+      "शिकायत"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "निंदा (censure) is opposite to स्तुति (praise). आलोचना is close in meaning to निंदा."
+  },
+  {
+    "id": "UPPOLICE-D-012",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "uppHindiVyakaran",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "समास",
+    "stem": "\"यथाशक्ति\" में कौन-सा समास है?",
+    "options": [
+      "तत्पुरुष",
+      "अव्ययीभाव",
+      "कर्मधारय",
+      "द्विगु"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "शक्ति के अनुसार: the first part यथा is an अव्यय (indeclinable) and leads the compound, so it is अव्ययीभाव."
+  },
+  {
+    "id": "UPPOLICE-D-013",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "uppHindiShabd",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "एक शब्द",
+    "stem": "\"जो कम बोलता हो\" के लिए एक शब्द क्या है?",
+    "options": [
+      "मूक",
+      "वाचाल",
+      "मितभाषी",
+      "मृदुभाषी"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "मितभाषी speaks little. मृदुभाषी speaks sweetly, वाचाल talks too much and मूक cannot speak."
+  },
+  {
+    "id": "UPPOLICE-D-014",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "uppHindiVyakaran",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "साहित्य",
+    "stem": "\"कामायनी\" के रचयिता कौन हैं?",
+    "options": [
+      "सूर्यकांत त्रिपाठी निराला",
+      "जयशंकर प्रसाद",
+      "सुमित्रानंदन पंत",
+      "महादेवी वर्मा"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Kamayani (1936), the epic of Manu and Shraddha, is by Jaishankar Prasad, a pillar of the Chhayavad movement."
+  },
+  {
+    "id": "UPPOLICE-D-015",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "uppHindiShabd",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "मुहावरे",
+    "stem": "\"ईद का चाँद होना\" मुहावरे का अर्थ है:",
+    "options": [
+      "त्योहार मनाना",
+      "बहुत दिनों बाद दिखाई देना",
+      "बहुत प्रसिद्ध होना",
+      "बहुत सुंदर होना"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Like the Eid moon, which people wait to sight: someone who is seen only rarely."
+  },
+  {
+    "id": "UPPOLICE-D-016",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "uppHindiVyakaran",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "रस",
+    "stem": "\"वीर रस\" का स्थायी भाव क्या है?",
+    "options": [
+      "रति",
+      "उत्साह",
+      "भय",
+      "क्रोध"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "उत्साह is the स्थायी भाव of वीर रस. क्रोध belongs to रौद्र, भय to भयानक and रति to शृंगार."
+  },
+  {
+    "id": "UPPOLICE-D-017",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "uppArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Percentage",
+    "stem": "35% of a number is 147. What is the number?",
+    "options": [
+      "441",
+      "490",
+      "400",
+      "420"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Number = 147 × 100/35 = 420."
+  },
+  {
+    "id": "UPPOLICE-D-018",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "uppNumber",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "LCM and HCF",
+    "stem": "What is the HCF of 42, 70 and 98?",
+    "options": [
+      "28",
+      "14",
+      "7",
+      "2"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "42 = 2 × 3 × 7, 70 = 2 × 5 × 7, 98 = 2 × 7². The common factor is 2 × 7 = 14."
+  },
+  {
+    "id": "UPPOLICE-D-019",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "uppArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Profit and loss",
+    "stem": "An article sold for ₹1,440 gives a profit of 20%. What was its cost price?",
+    "options": [
+      "₹1,250",
+      "₹1,180",
+      "₹1,200",
+      "₹1,152"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "CP = 1,440 × 100/120 = ₹1,200. Taking 20% off 1,440 gives the wrong ₹1,152."
+  },
+  {
+    "id": "UPPOLICE-D-020",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "uppNumber",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mensuration",
+    "stem": "A square field has an area of 196 sq m. What is its perimeter?",
+    "options": [
+      "28 m",
+      "64 m",
+      "49 m",
+      "56 m"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Side = √196 = 14 m, so the perimeter is 4 × 14 = 56 m."
+  },
+  {
+    "id": "UPPOLICE-D-021",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "uppArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Time and work",
+    "stem": "6 carpenters make 90 chairs in 5 days. How many chairs will 8 carpenters make in 6 days at the same rate?",
+    "options": [
+      "150",
+      "144",
+      "135",
+      "120"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "One carpenter makes 90/(6 × 5) = 3 chairs a day, so 8 × 6 × 3 = 144 chairs."
+  },
+  {
+    "id": "UPPOLICE-D-022",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "uppNumber",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ratio",
+    "stem": "If a : b = 5 : 6 and b : c = 9 : 10, what is a : c?",
+    "options": [
+      "5 : 9",
+      "1 : 2",
+      "3 : 4",
+      "9 : 10"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Make b equal: a : b = 15 : 18 and b : c = 18 : 20, so a : c = 15 : 20 = 3 : 4."
+  },
+  {
+    "id": "UPPOLICE-D-023",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "uppArith",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Trains",
+    "stem": "A train passes a pole in 12 seconds and a 250 m platform in 22 seconds. How long is the train?",
+    "options": [
+      "250 m",
+      "275 m",
+      "550 m",
+      "300 m"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "At speed v, length L = 12v and L + 250 = 22v, so 10v = 250, v = 25 m/s and L = 300 m."
+  },
+  {
+    "id": "UPPOLICE-D-024",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "uppNumber",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Simplification",
+    "stem": "What is 99 × 101?",
+    "options": [
+      "10,099",
+      "9,899",
+      "10,001",
+      "9,999"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "(100 - 1)(100 + 1) = 100² - 1² = 10,000 - 1 = 9,999."
+  },
+  {
+    "id": "UPPOLICE-D-025",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "uppVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "What comes next? 6, 13, 27, 55, ?",
+    "options": [
+      "110",
+      "109",
+      "111",
+      "112"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Each term is double the last plus 1: 55 × 2 + 1 = 111."
+  },
+  {
+    "id": "UPPOLICE-D-026",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "uppLogical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Clock",
+    "stem": "What is the angle between the hands of a clock at 2:15?",
+    "options": [
+      "15°",
+      "7.5°",
+      "30°",
+      "22.5°"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Angle = |30 × 2 - 5.5 × 15| = |60 - 82.5| = 22.5°. The hour hand has moved a quarter of the way past 2."
+  },
+  {
+    "id": "UPPOLICE-D-027",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "uppVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Analogy",
+    "stem": "Cow : Calf :: Horse : ?",
+    "options": [
+      "Foal",
+      "Cub",
+      "Puppy",
+      "Kid"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A calf is the young of a cow; a foal is the young of a horse. A cub is a young lion and a kid a young goat."
+  },
+  {
+    "id": "UPPOLICE-D-028",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "uppLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Blood relations",
+    "stem": "Meena's father is the only son of Ramesh's father. How is Ramesh related to Meena?",
+    "options": [
+      "Brother",
+      "Uncle",
+      "Father",
+      "Grandfather"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The only son of Ramesh's father is Ramesh himself, so Ramesh is Meena's father."
+  },
+  {
+    "id": "UPPOLICE-D-029",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "uppVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Coding-decoding",
+    "stem": "If SUN is coded as 54 by adding the positions of its letters, what is the code for MOON?",
+    "options": [
+      "56",
+      "58",
+      "57",
+      "60"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "S19 + U21 + N14 = 54. M13 + O15 + O15 + N14 = 57."
+  },
+  {
+    "id": "UPPOLICE-D-030",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "uppLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Directions",
+    "stem": "A man walks 12 km north and then 35 km east. How far is he from his starting point?",
+    "options": [
+      "36 km",
+      "47 km",
+      "37 km",
+      "23 km"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The two legs form a right angle: √(12² + 35²) = √(144 + 1,225) = √1,369 = 37 km."
+  },
+  {
+    "id": "UPPOLICE-D-031",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "uppVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Classification",
+    "stem": "Find the odd one out: Inspector, Constable, Sub-Inspector, Advocate",
+    "options": [
+      "Sub-Inspector",
+      "Advocate",
+      "Constable",
+      "Inspector"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Inspector, Constable and Sub-Inspector are police ranks. An advocate is a lawyer."
+  },
+  {
+    "id": "UPPOLICE-D-032",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "uppLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Calendar",
+    "stem": "If 4 April is a Thursday, what day of the week is 29 April of the same year?",
+    "options": [
+      "Sunday",
+      "Tuesday",
+      "Monday",
+      "Thursday"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "29 April is 25 days later: 3 weeks and 4 days. Four days after Thursday is Monday."
+  }
+]

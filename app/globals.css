@@ -2131,6 +2131,146 @@
     --brand-gradient-to: 352 70% 96%;
   }
 
+  /* RRB Group D theme: brick red (v2 exam; matches lib/v2/exams/rrbgroupd.ts theme) */
+  [data-theme="rrbgroupd"] {
+    --brand: 6 45% 36%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 6 45% 96%;
+    --brand-hover: 6 45% 31%;
+    --brand-dark: 6 45% 28%;
+    --brand-darker: 6 40% 16%;
+    --brand-muted: 6 35% 72%;
+    --brand-border: 6 38% 80%;
+    --brand-border-light: 6 34% 89%;
+    --brand-gradient-to: 20 45% 96%;
+  }
+
+  /* SSC GD Constable theme: muted forest green (v2 exam; matches lib/v2/exams/sscgd.ts theme) */
+  [data-theme="sscgd"] {
+    --brand: 132 30% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 132 30% 96%;
+    --brand-hover: 132 30% 25%;
+    --brand-dark: 132 30% 22%;
+    --brand-darker: 132 25% 10%;
+    --brand-muted: 132 30% 72%;
+    --brand-border: 132 30% 80%;
+    --brand-border-light: 132 30% 89%;
+    --brand-gradient-to: 142 30% 96%;
+  }
+
+  /* SSC CHSL theme: slate teal (v2 exam; matches lib/v2/exams/sscchsl.ts theme) */
+  [data-theme="sscchsl"] {
+    --brand: 196 30% 34%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 196 30% 96%;
+    --brand-hover: 196 30% 29%;
+    --brand-dark: 196 30% 26%;
+    --brand-darker: 196 25% 14%;
+    --brand-muted: 196 30% 72%;
+    --brand-border: 196 30% 80%;
+    --brand-border-light: 196 30% 89%;
+    --brand-gradient-to: 206 30% 96%;
+  }
+
+  /* SSC MTS theme: burnt orange (v2 exam; matches lib/v2/exams/sscmts.ts theme) */
+  [data-theme="sscmts"] {
+    --brand: 26 70% 38%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 26 70% 96%;
+    --brand-hover: 26 70% 33%;
+    --brand-dark: 26 70% 30%;
+    --brand-darker: 26 65% 18%;
+    --brand-muted: 26 35% 72%;
+    --brand-border: 26 38% 80%;
+    --brand-border-light: 26 34% 89%;
+    --brand-gradient-to: 36 70% 96%;
+  }
+
+  /* UP Police Constable theme: police navy indigo (v2 exam; matches lib/v2/exams/uppolice.ts theme) */
+  [data-theme="uppolice"] {
+    --brand: 239 45% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 239 45% 96%;
+    --brand-hover: 239 45% 25%;
+    --brand-dark: 239 45% 22%;
+    --brand-darker: 239 40% 10%;
+    --brand-muted: 239 35% 72%;
+    --brand-border: 239 38% 80%;
+    --brand-border-light: 239 34% 89%;
+    --brand-gradient-to: 224 45% 96%;
+  }
+
+  /* IBPS Clerk theme: deep bank rose (v2 exam; matches lib/v2/exams/ibpsclerk.ts theme) */
+  [data-theme="ibpsclerk"] {
+    --brand: 336 55% 34%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 336 55% 96%;
+    --brand-hover: 336 55% 29%;
+    --brand-dark: 336 55% 26%;
+    --brand-darker: 336 50% 14%;
+    --brand-muted: 336 35% 72%;
+    --brand-border: 336 38% 80%;
+    --brand-border-light: 336 34% 89%;
+    --brand-gradient-to: 348 55% 96%;
+  }
+
+  /* JNVST theme: school mustard (v2 exam; matches lib/v2/exams/jnvst.ts theme) */
+  [data-theme="jnvst"] {
+    --brand: 51 65% 31%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 51 65% 96%;
+    --brand-hover: 51 65% 26%;
+    --brand-dark: 51 65% 23%;
+    --brand-darker: 51 60% 11%;
+    --brand-muted: 51 35% 72%;
+    --brand-border: 51 38% 80%;
+    --brand-border-light: 51 34% 89%;
+    --brand-gradient-to: 40 65% 96%;
+  }
+
+  /* JAMB Use of English theme: Nigerian green (v2 exam; matches lib/v2/exams/jambeng.ts theme) */
+  [data-theme="jambeng"] {
+    --brand: 133 70% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 133 70% 96%;
+    --brand-hover: 133 70% 25%;
+    --brand-dark: 133 70% 22%;
+    --brand-darker: 133 65% 10%;
+    --brand-muted: 133 35% 72%;
+    --brand-border: 133 38% 80%;
+    --brand-border-light: 133 34% 89%;
+    --brand-gradient-to: 118 70% 96%;
+  }
+
+  /* AP Psychology theme: muted violet (v2 exam; matches lib/v2/exams/appsych.ts theme) */
+  [data-theme="appsych"] {
+    --brand: 271 35% 42%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 271 35% 96%;
+    --brand-hover: 271 35% 37%;
+    --brand-dark: 271 35% 34%;
+    --brand-darker: 271 30% 22%;
+    --brand-muted: 271 35% 72%;
+    --brand-border: 271 35% 80%;
+    --brand-border-light: 271 34% 89%;
+    --brand-gradient-to: 286 35% 96%;
+  }
+
+  /* Pakistan driving licence theme: Pakistan flag green */
+  [data-theme="pkdrive"] {
+    --brand: 152 75% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 152 75% 96%;
+    --brand-hover: 152 75% 25%;
+    --brand-dark: 152 75% 22%;
+    --brand-darker: 152 70% 10%;
+    --brand-muted: 152 35% 72%;
+    --brand-border: 152 38% 80%;
+    --brand-border-light: 152 34% 89%;
+    --brand-gradient-to: 130 75% 96%;
+  }
+
   /* Dark mode. Tokens follow Tailwind's gray scale so the dark: variants
      written in components (gray-950 page, gray-900 card, gray-800 border)
      and the shadcn primitives read as one surface system. */
@@ -3952,6 +4092,124 @@
     --brand-muted: 332 35% 45%;
     --brand-dark: 332 70% 65%;
     --brand-darker: 332 60% 78%;
+  }
+
+  .dark [data-theme="rrbgroupd"] {
+    --brand: 6 45% 50%;
+    --brand-hover: 6 45% 42%;
+    --brand-light: 6 45% 13%;
+    --brand-gradient-to: 20 40% 11%;
+    --brand-border-light: 6 34% 24%;
+    --brand-border: 6 38% 34%;
+    --brand-muted: 6 35% 45%;
+    --brand-dark: 6 45% 65%;
+    --brand-darker: 6 40% 78%;
+  }
+
+  .dark [data-theme="sscgd"] {
+    --brand: 132 30% 39.1%;
+    --brand-hover: 132 30% 31.1%;
+    --brand-light: 132 30% 13%;
+    --brand-gradient-to: 142 30% 11%;
+    --brand-border-light: 132 30% 24%;
+    --brand-border: 132 30% 34%;
+    --brand-muted: 132 30% 45%;
+    --brand-dark: 132 30% 65%;
+    --brand-darker: 132 25% 78%;
+  }
+
+  .dark [data-theme="sscchsl"] {
+    --brand: 196 30% 42.5%;
+    --brand-hover: 196 30% 34.5%;
+    --brand-light: 196 30% 13%;
+    --brand-gradient-to: 206 30% 11%;
+    --brand-border-light: 196 30% 24%;
+    --brand-border: 196 30% 34%;
+    --brand-muted: 196 30% 45%;
+    --brand-dark: 196 30% 65%;
+    --brand-darker: 196 25% 78%;
+  }
+
+  .dark [data-theme="sscmts"] {
+    --brand: 26 70% 41.1%;
+    --brand-hover: 26 70% 33.1%;
+    --brand-light: 26 45% 13%;
+    --brand-gradient-to: 36 40% 11%;
+    --brand-border-light: 26 34% 24%;
+    --brand-border: 26 38% 34%;
+    --brand-muted: 26 35% 45%;
+    --brand-dark: 26 70% 65%;
+    --brand-darker: 26 65% 78%;
+  }
+
+  .dark [data-theme="uppolice"] {
+    --brand: 239 45% 50%;
+    --brand-hover: 239 45% 42%;
+    --brand-light: 239 45% 13%;
+    --brand-gradient-to: 224 40% 11%;
+    --brand-border-light: 239 34% 24%;
+    --brand-border: 239 38% 34%;
+    --brand-muted: 239 35% 45%;
+    --brand-dark: 239 45% 65%;
+    --brand-darker: 239 40% 78%;
+  }
+
+  .dark [data-theme="ibpsclerk"] {
+    --brand: 336 55% 50%;
+    --brand-hover: 336 55% 42%;
+    --brand-light: 336 45% 13%;
+    --brand-gradient-to: 348 40% 11%;
+    --brand-border-light: 336 34% 24%;
+    --brand-border: 336 38% 34%;
+    --brand-muted: 336 35% 45%;
+    --brand-dark: 336 55% 65%;
+    --brand-darker: 336 50% 78%;
+  }
+
+  .dark [data-theme="jnvst"] {
+    --brand: 51 65% 31.5%;
+    --brand-hover: 51 65% 26%;
+    --brand-light: 51 45% 13%;
+    --brand-gradient-to: 40 40% 11%;
+    --brand-border-light: 51 34% 24%;
+    --brand-border: 51 38% 34%;
+    --brand-muted: 51 35% 45%;
+    --brand-dark: 51 65% 65%;
+    --brand-darker: 51 60% 78%;
+  }
+
+  .dark [data-theme="jambeng"] {
+    --brand: 133 70% 31.2%;
+    --brand-hover: 133 70% 25%;
+    --brand-light: 133 45% 13%;
+    --brand-gradient-to: 118 40% 11%;
+    --brand-border-light: 133 34% 24%;
+    --brand-border: 133 38% 34%;
+    --brand-muted: 133 35% 45%;
+    --brand-dark: 133 70% 65%;
+    --brand-darker: 133 65% 78%;
+  }
+
+  .dark [data-theme="appsych"] {
+    --brand: 271 35% 50%;
+    --brand-hover: 271 35% 42%;
+    --brand-light: 271 35% 13%;
+    --brand-gradient-to: 286 35% 11%;
+    --brand-border-light: 271 34% 24%;
+    --brand-border: 271 35% 34%;
+    --brand-muted: 271 35% 45%;
+    --brand-dark: 271 35% 65%;
+    --brand-darker: 271 30% 78%;
+  }
+
+  .dark [data-theme="pkdrive"] {
+    --brand-light: 152 45% 13%;
+    --brand-gradient-to: 130 40% 11%;
+    --brand-border-light: 152 34% 24%;
+    --brand-border: 152 38% 34%;
+    --brand-muted: 152 35% 45%;
+    --brand-dark: 152 75% 65%;
+    --brand-darker: 152 70% 78%;
   }
 
 }

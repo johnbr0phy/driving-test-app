@@ -1,0 +1,4923 @@
+{
+  "stimuli": [
+    {
+      "id": "SSCCHSL-CL1",
+      "title": "Cloze test: the village library",
+      "text": "Read the passage and choose the most appropriate word for each numbered blank.\n\nReading is a habit that grows with practice. A small library that opened in our village last year has (1) ........ the lives of many children. Earlier, they had (2) ........ to read except their school textbooks. Now they borrow a new book every week and (3) ........ the stories with their friends. The librarian, a retired teacher, (4) ........ them to write short reviews of what they read. Many parents say their children have become more (5) ........ and now ask questions about everything they see."
+    },
+    {
+      "id": "SSCCHSL-RC1",
+      "title": "Reading comprehension: the dabbawalas of Mumbai",
+      "text": "Every working day, thousands of dabbawalas in Mumbai collect home-cooked lunches from kitchens across the city and deliver them to offices before the lunch hour. Most of them have little formal schooling, and for more than a century they have worked without computers. Instead, the lid of each tiffin box carries a short code of letters, numbers and colours. The code tells a dabbawala where the box was picked up, which railway station it must reach and which building it must be delivered to.\n\nA single box may pass through the hands of three or four dabbawalas in one journey, yet mistakes are said to be extremely rare. Visitors from business schools have studied the system to learn how simple rules, teamwork and punctuality can work better than costly technology. After lunch, the empty boxes travel back along the same route and reach home by evening."
+    },
+    {
+      "id": "SSCCHSL-CL2",
+      "title": "Cloze test: the post office",
+      "text": "Read the passage and choose the most appropriate word for each numbered blank.\n\nThe postman was once the most awaited visitor in every Indian home. Letters (1) ........ news of births, weddings and examination results. Today most messages travel (2) ........ mobile phones within seconds. Yet the post office has not lost its (3) ......... It now delivers parcels from online shops and (4) ........ savings accounts for people in remote villages. In many hill and forest areas it remains the only bank within (5) ........ distance."
+    },
+    {
+      "id": "SSCCHSL-RC2",
+      "title": "Reading comprehension: the return of millets",
+      "text": "Millets such as jowar, bajra and ragi were once the everyday grains of rural India. They grow well on poor soil, need far less water than rice, and can survive long dry spells. Over the decades, however, many farmers switched to wheat and rice, which were supported by irrigation and assured government buying. As a result, millets slowly disappeared from city kitchens.\n\nIn recent years, doctors and nutrition experts have pointed out that millets are rich in fibre, iron and calcium, and release their energy slowly. Some state governments now add them to school meals and ration supplies. Farmers in dry districts, who struggle when the rains fail, may gain the most if the demand for these hardy grains keeps rising."
+    }
+  ],
+  "questions": [
+    {
+      "id": "SSCCHSL-T1-001",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Spot the error",
+      "stem": "The sentence below is divided into parts. Select the part that contains a grammatical error. If there is no error, select 'No error'.\n\nThe quality of these mangoes / are not / as good as it was last year.",
+      "options": [
+        "The quality of these mangoes",
+        "are not",
+        "as good as it was last year",
+        "No error"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The subject is 'quality', which is singular; 'of these mangoes' only describes it. So the verb must be 'is not', not 'are not'."
+    },
+    {
+      "id": "SSCCHSL-T1-002",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Synonyms",
+      "stem": "Select the most appropriate synonym of the given word.\n\nVIVID",
+      "options": [
+        "Dull",
+        "Silent",
+        "Bright",
+        "Hollow"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Vivid means bright and clear, as in 'vivid colours' or 'a vivid memory'. Dull is its antonym."
+    },
+    {
+      "id": "SSCCHSL-T1-003",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Fill in the blanks",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nThe film had already started ______ we entered the hall.",
+      "options": [
+        "since",
+        "unless",
+        "until",
+        "when"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "'When' joins the earlier action (the film had started) to the later one (we entered). 'Until' and 'unless' do not fit the meaning, and 'since' needs a present perfect main clause."
+    },
+    {
+      "id": "SSCCHSL-T1-004",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Fill in the blanks",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nRahul prefers tea ______ coffee.",
+      "options": [
+        "against",
+        "than",
+        "to",
+        "from"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "'Prefer' is followed by 'to' when two things are compared: 'prefers tea to coffee'. 'Than' is a common mistake here."
+    },
+    {
+      "id": "SSCCHSL-T1-005",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Antonyms",
+      "stem": "Select the most appropriate antonym of the given word.\n\nFERTILE",
+      "options": [
+        "Moist",
+        "Fruitful",
+        "Barren",
+        "Green"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Fertile land produces good crops. Barren land produces little or nothing. Fruitful is a synonym, not an antonym."
+    },
+    {
+      "id": "SSCCHSL-T1-006",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Improvement of sentences",
+      "stem": "Select the most appropriate option to replace the underlined part of the sentence. If no improvement is needed, select 'No improvement'.\n\nShe __has returned__ from Chennai yesterday.",
+      "options": [
+        "has been returned",
+        "returned",
+        "have returned",
+        "No improvement"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "A past time word such as 'yesterday' needs the simple past, 'returned'. The present perfect cannot be used with a finished past time."
+    },
+    {
+      "id": "SSCCHSL-T1-007",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Spellings",
+      "stem": "Select the correctly spelt word.",
+      "options": [
+        "Comittee",
+        "Committee",
+        "Commitee",
+        "Committe"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Committee has a double m, a double t and a double e: c-o-m-m-i-t-t-e-e."
+    },
+    {
+      "id": "SSCCHSL-T1-008",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Active and passive voice",
+      "stem": "Select the passive form of the sentence.\n\nThe workers are repairing the bridge.",
+      "options": [
+        "The bridge has been repaired by the workers.",
+        "The bridge was being repaired by the workers.",
+        "The bridge is repaired by the workers.",
+        "The bridge is being repaired by the workers."
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The active verb is present continuous ('are repairing'), so the passive is 'is being repaired'. 'Was being' is past and 'has been' is present perfect."
+    },
+    {
+      "id": "SSCCHSL-T1-009",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Direct and indirect narration",
+      "stem": "Select the correct indirect form of the sentence.\n\nThe teacher said to the students, \"Do not make a noise.\"",
+      "options": [
+        "The teacher told the students to not making a noise.",
+        "The teacher told the students not to make a noise.",
+        "The teacher asked the students that do not make a noise.",
+        "The teacher said the students not to make a noise."
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A negative command becomes 'told (someone) not to' plus the base verb. 'Said the students' is wrong because 'said' does not take a direct object like this."
+    },
+    {
+      "id": "SSCCHSL-T1-010",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Idioms and phrases",
+      "stem": "Select the most appropriate meaning of the given idiom.\n\nTo hit the nail on the head",
+      "options": [
+        "To start a fight",
+        "To hurt oneself",
+        "To be exactly right",
+        "To repair something"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "To hit the nail on the head is to say or do exactly the right thing, for example to describe a problem precisely."
+    },
+    {
+      "id": "SSCCHSL-T1-011",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Spot the error",
+      "stem": "The sentence below is divided into parts. Select the part that contains a grammatical error. If there is no error, select 'No error'.\n\nThe bus was so crowded / that we could not / found a seat.",
+      "options": [
+        "The bus was so crowded",
+        "that we could not",
+        "found a seat",
+        "No error"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "After a modal verb such as 'could not', the base form of the verb is used: 'that we could not find a seat'."
+    },
+    {
+      "id": "SSCCHSL-T1-012",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Fill in the blanks",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nUnless you ______ harder, you will not pass the exam.",
+      "options": [
+        "will work",
+        "work",
+        "had worked",
+        "would work"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "In a sentence about the future, the 'unless' clause takes the simple present: 'Unless you work harder'. 'Will' is not used in that clause."
+    },
+    {
+      "id": "SSCCHSL-T1-013",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "One-word substitution",
+      "stem": "Select the option that can be used as a one-word substitute for the given group of words.\n\nGovernment by the people, usually through elected representatives",
+      "options": [
+        "Monarchy",
+        "Democracy",
+        "Bureaucracy",
+        "Autocracy"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "In a democracy the people rule through elected representatives. A monarchy is ruled by a king or queen, an autocracy by one person with unlimited power, and a bureaucracy is rule by officials."
+    },
+    {
+      "id": "SSCCHSL-T1-014",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Cloze test",
+      "stem": "Cloze passage 1: select the most appropriate word for blank (2).",
+      "options": [
+        "nothing",
+        "anything",
+        "something",
+        "everything"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "'Had nothing to read except their textbooks' fits the contrast with 'Now they borrow a new book every week'. 'Anything' would need 'did not have'."
+    },
+    {
+      "id": "SSCCHSL-T1-015",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Shuffling of sentence parts",
+      "stem": "The given sentence is divided into four segments. Select the option that gives their correct order.\n\nP. not only\nQ. she speaks\nR. Hindi and English\nS. but also Tamil",
+      "options": [
+        "SQPR",
+        "QRPS",
+        "QPRS",
+        "PQRS"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The sentence is 'She speaks not only Hindi and English but also Tamil.' 'Not only' must come just before the first item it describes, and 'but also' before the second."
+    },
+    {
+      "id": "SSCCHSL-T1-016",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Cloze test",
+      "stem": "Cloze passage 1: select the most appropriate word for blank (3).",
+      "options": [
+        "argue",
+        "talk",
+        "speak",
+        "discuss"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "'Discuss' takes a direct object: 'discuss the stories with their friends'. 'Talk', 'speak' and 'argue' would need 'about'."
+    },
+    {
+      "id": "SSCCHSL-T1-017",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Cloze test",
+      "stem": "Cloze passage 1: select the most appropriate word for blank (4).",
+      "options": [
+        "forbids",
+        "encourages",
+        "prevents",
+        "discourages"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The librarian is helping the children grow as readers, so she encourages them to write reviews. The other verbs reverse the meaning."
+    },
+    {
+      "id": "SSCCHSL-T1-018",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Synonyms",
+      "stem": "Select the most appropriate synonym of the given word.\n\nOBSTINATE",
+      "options": [
+        "Stubborn",
+        "Willing",
+        "Timid",
+        "Gentle"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "An obstinate person refuses to change their mind, which is stubborn. Willing is closer to the opposite."
+    },
+    {
+      "id": "SSCCHSL-T1-019",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Cloze test",
+      "stem": "Cloze passage 1: select the most appropriate word for blank (5).",
+      "options": [
+        "curious",
+        "idle",
+        "careless",
+        "rude"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The children 'now ask questions about everything they see', which describes curiosity. The other words are negative and do not fit the praise from parents."
+    },
+    {
+      "id": "SSCCHSL-T1-020",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Cloze test",
+      "stimulusId": "SSCCHSL-CL1",
+      "stem": "Cloze passage 1: select the most appropriate word for blank (1).",
+      "options": [
+        "changes",
+        "changed",
+        "change",
+        "changing"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "After 'has' the present perfect needs the past participle: 'has changed the lives of many children'."
+    },
+    {
+      "id": "SSCCHSL-T1-021",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "SSCCHSL-RC1",
+      "stem": "Reading passage 1: according to the passage, how does a dabbawala know where a tiffin box must go?",
+      "options": [
+        "From the cook's phone call",
+        "From a code on its lid",
+        "From a list on a computer",
+        "From the colour of the box"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The passage says the lid of each box carries a short code that tells where it was picked up, which station it must reach and which building it goes to. The dabbawalas work without computers."
+    },
+    {
+      "id": "SSCCHSL-T1-022",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "SSCCHSL-RC1",
+      "stem": "Reading passage 1: select the word closest in meaning to 'punctuality' as used in the passage.",
+      "options": [
+        "Politeness",
+        "Carefulness",
+        "Cheerfulness",
+        "Timeliness"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Punctuality means being on time, which is timeliness. The dabbawalas must deliver lunches before the lunch hour."
+    },
+    {
+      "id": "SSCCHSL-T1-023",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "SSCCHSL-RC1",
+      "stem": "Reading passage 1: why have business schools studied the dabbawala system?",
+      "options": [
+        "To teach its workers computing",
+        "To learn from its simple methods",
+        "To compare the cost of lunches",
+        "To sell it new delivery software"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The passage says visitors studied it to learn how simple rules, teamwork and punctuality can work better than costly technology."
+    },
+    {
+      "id": "SSCCHSL-T1-024",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "SSCCHSL-RC1",
+      "stem": "Reading passage 1: which of the following is true according to the passage?",
+      "options": [
+        "Every dabbawala holds a university degree",
+        "Lunches are delivered after office hours",
+        "One box may change hands several times",
+        "Empty boxes are left at the offices"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The passage says a box may pass through the hands of three or four dabbawalas in one journey. It also says most have little formal schooling and empty boxes go back home by evening."
+    },
+    {
+      "id": "SSCCHSL-T1-025",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "SSCCHSL-RC1",
+      "stem": "Reading passage 1: select the most suitable title for the passage.",
+      "options": [
+        "The Railway Stations of Mumbai",
+        "How to Cook a Tiffin Lunch",
+        "A Lunch Service That Rarely Fails",
+        "Computers in Indian Offices"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The passage is about how the dabbawalas deliver lunches accurately without technology. The other titles pick a detail or a subject the passage does not discuss."
+    },
+    {
+      "id": "SSCCHSL-T1-026",
+      "section": "gi",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Number analogy",
+      "stem": "Select the option that is related to the third term in the same way as the second term is related to the first term. 5 : 30 :: 8 : ?",
+      "options": [
+        "72",
+        "56",
+        "80",
+        "64"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The second term is the square of the first plus the first: 5 x 5 + 5 = 30. So 8 x 8 + 8 = 72."
+    },
+    {
+      "id": "SSCCHSL-T1-027",
+      "section": "gi",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Blood relations",
+      "stem": "Pointing to a woman in a photograph, Kavya said, \"She is the wife of my father's only brother.\" How is the woman related to Kavya?",
+      "options": [
+        "Sister",
+        "Grandmother",
+        "Mother",
+        "Aunt"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Kavya's father's only brother is her uncle, and the uncle's wife is her aunt."
+    },
+    {
+      "id": "SSCCHSL-T1-028",
+      "section": "gi",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Semantic analogy",
+      "stem": "Select the option that is related to the third term in the same way as the second term is related to the first term. Thermometer : Temperature :: Odometer : ?",
+      "options": [
+        "Fuel",
+        "Distance",
+        "Speed",
+        "Pressure"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A thermometer measures temperature and an odometer measures the distance a vehicle has travelled. Speed is shown by a speedometer."
+    },
+    {
+      "id": "SSCCHSL-T1-029",
+      "section": "gi",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Directions",
+      "stem": "Ravi walks 7 km west, turns left and walks 4 km, then turns left again and walks 7 km. Where is he now with respect to his starting point?",
+      "options": [
+        "11 km west",
+        "4 km south",
+        "7 km south",
+        "4 km north"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Facing west, a left turn points him south, so he walks 4 km south. Another left points him east, and 7 km east cancels the 7 km west. He ends 4 km south of the start."
+    },
+    {
+      "id": "SSCCHSL-T1-030",
+      "section": "gi",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Letter analogy",
+      "stem": "Select the option that is related to the third term in the same way as the second term is related to the first term. BD : FH :: JL : ?",
+      "options": [
+        "NP",
+        "OQ",
+        "NO",
+        "MO"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Each letter moves 4 places forward: B to F and D to H. So J becomes N and L becomes P."
+    },
+    {
+      "id": "SSCCHSL-T1-031",
+      "section": "gi",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslLogic",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Ranking",
+      "stem": "In a row of 37 children, Meena is 11th from the right end. What is her position from the left end?",
+      "options": [
+        "26th",
+        "28th",
+        "25th",
+        "27th"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Position from the left = total - position from the right + 1 = 37 - 11 + 1 = 27."
+    },
+    {
+      "id": "SSCCHSL-T1-032",
+      "section": "gi",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Number classification",
+      "stem": "Three of the following four numbers are alike in a certain way and one is different. Select the odd one out.\n\n24, 36, 48, 62",
+      "options": [
+        "48",
+        "36",
+        "62",
+        "24"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "24, 36 and 48 are multiples of 12. 62 is not."
+    },
+    {
+      "id": "SSCCHSL-T1-033",
+      "section": "gi",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Syllogism",
+      "stem": "Statements: All doctors are graduates. Some graduates are singers.\nConclusions: I. Some doctors are singers. II. Some singers are graduates.\nWhich conclusion(s) follow from the statements?",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Both I and II follow",
+        "Neither follows"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "'Some graduates are singers' can be reversed to 'some singers are graduates', so II follows. The singing graduates need not be doctors, so I does not follow."
+    },
+    {
+      "id": "SSCCHSL-T1-034",
+      "section": "gi",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Semantic classification",
+      "stem": "Select the odd one out.\n\nCopper, Silver, Iron, Glass",
+      "options": [
+        "Silver",
+        "Glass",
+        "Copper",
+        "Iron"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Copper, silver and iron are metals. Glass is not a metal."
+    },
+    {
+      "id": "SSCCHSL-T1-035",
+      "section": "gi",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Venn diagrams",
+      "stem": "Which set of classes is best shown by three circles, each one completely inside the next?",
+      "options": [
+        "Rose, Lotus, Flower",
+        "Teachers, Women, Mothers",
+        "Dog, Cat, Animal",
+        "Lucknow, Uttar Pradesh, India"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Lucknow is in Uttar Pradesh, which is in India, so each class lies wholly inside the next. In the other sets two classes are separate or overlap."
+    },
+    {
+      "id": "SSCCHSL-T1-036",
+      "section": "gi",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "Select the number that comes next in the series.\n\n7, 10, 16, 25, 37, ?",
+      "options": [
+        "49",
+        "52",
+        "50",
+        "55"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The differences are 3, 6, 9, 12, rising by 3 each time. The next difference is 15, so 37 + 15 = 52."
+    },
+    {
+      "id": "SSCCHSL-T1-037",
+      "section": "gi",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Calendar",
+      "stem": "If 12 August of a year is a Wednesday, what day of the week is 2 September of the same year?",
+      "options": [
+        "Wednesday",
+        "Tuesday",
+        "Thursday",
+        "Saturday"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "August has 31 days, so 31 August is 19 days after 12 August and 2 September is 21 days after it. 21 days is exactly 3 weeks, so the day is again Wednesday."
+    },
+    {
+      "id": "SSCCHSL-T1-038",
+      "section": "gi",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Letter series",
+      "stem": "Select the letter that comes next in the series.\n\nC, F, I, L, O, ?",
+      "options": [
+        "R",
+        "P",
+        "S",
+        "Q"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Each letter is 3 places after the one before: C (3), F (6), I (9), L (12), O (15). The next is the 18th letter, R."
+    },
+    {
+      "id": "SSCCHSL-T1-039",
+      "section": "gi",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslLogic",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Clock",
+      "stem": "What is the angle between the hour hand and the minute hand of a clock at 2:20?",
+      "options": [
+        "40 degrees",
+        "50 degrees",
+        "60 degrees",
+        "70 degrees"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "At 2:20 the minute hand is at 120 degrees. The hour hand is at 2 x 30 + 20 x 0.5 = 70 degrees. The angle is 120 - 70 = 50 degrees."
+    },
+    {
+      "id": "SSCCHSL-T1-040",
+      "section": "gi",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Coding-decoding",
+      "stem": "In a certain code language, FLOWER is written as EKNVDQ. How is GRASS written in that language?",
+      "options": [
+        "FQZSR",
+        "HSBTT",
+        "FPZRR",
+        "FQZRR"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Each letter is replaced by the letter just before it: F-E, L-K, O-N, W-V, E-D, R-Q. So G-F, R-Q, A-Z, S-R, S-R gives FQZRR."
+    },
+    {
+      "id": "SSCCHSL-T1-041",
+      "section": "gi",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Drawing inferences",
+      "stem": "Statement: \"Book your train tickets early; seats fill up fast during the festival season.\"\nAssumptions: I. Many people travel during festivals. II. Trains run only in the festival season.\nWhich assumption(s) are implicit in the statement?",
+      "options": [
+        "Only I is implicit",
+        "Only II is implicit",
+        "Both are implicit",
+        "Neither is implicit"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Seats fill fast only if many people travel, so I is assumed. Nothing suggests trains run only at festival time, so II is not."
+    },
+    {
+      "id": "SSCCHSL-T1-042",
+      "section": "gi",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Coding-decoding",
+      "stem": "If A = 1, B = 2, C = 3 and so on, what is the sum of the letter values of the word LAMP?",
+      "options": [
+        "43",
+        "41",
+        "42",
+        "40"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "L = 12, A = 1, M = 13 and P = 16. The sum is 12 + 1 + 13 + 16 = 42."
+    },
+    {
+      "id": "SSCCHSL-T1-043",
+      "section": "gi",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslLogic",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Emotional intelligence",
+      "stem": "A colleague makes a mistake that delays your shared work. What is the most appropriate response?",
+      "options": [
+        "Talk calmly and fix it together",
+        "Refuse to work with them ever again",
+        "Complain to everyone in office",
+        "Redo the work and say nothing"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Raising the problem calmly and solving it together fixes the work and keeps the working relationship. Complaining or refusing to work together makes it worse."
+    },
+    {
+      "id": "SSCCHSL-T1-044",
+      "section": "gi",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Missing number",
+      "stem": "Select the number that replaces the question mark.\n\n2 gives 9, 3 gives 28, 4 gives ?",
+      "options": [
+        "65",
+        "64",
+        "66",
+        "63"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Each output is the cube of the input plus 1: 8 + 1 = 9 and 27 + 1 = 28. So 64 + 1 = 65."
+    },
+    {
+      "id": "SSCCHSL-T1-045",
+      "section": "gi",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslLogic",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Social intelligence",
+      "stem": "A new student in your class does not yet speak the local language well. What should you do?",
+      "options": [
+        "Avoid sitting near them",
+        "Help them and include them",
+        "Ask the teacher to move them",
+        "Laugh at their mistakes"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Including a newcomer and helping with the language is the socially intelligent response. The other options exclude or hurt the student."
+    },
+    {
+      "id": "SSCCHSL-T1-046",
+      "section": "gi",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Logical order of words",
+      "stem": "Arrange the words in a logical sequence.\n\n1. Seed\n2. Plant\n3. Flower\n4. Fruit\n5. Sapling",
+      "options": [
+        "5, 1, 2, 3, 4",
+        "1, 2, 5, 3, 4",
+        "1, 5, 2, 4, 3",
+        "1, 5, 2, 3, 4"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A seed grows into a sapling, the sapling into a plant, the plant flowers and the flower becomes a fruit."
+    },
+    {
+      "id": "SSCCHSL-T1-047",
+      "section": "gi",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslLogic",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Numerical operations",
+      "stem": "Select the correct combination of mathematical signs to replace the * signs and balance the equation.\n\n8 * 4 * 2 * 6 = 28",
+      "options": [
+        "x, +, -",
+        "x, ÷, +",
+        "x, -, +",
+        "+, x, +"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "8 x 4 + 2 - 6 = 32 + 2 - 6 = 28. The others give 8 x 4 - 2 + 6 = 36, 8 + 4 x 2 + 6 = 22 and 8 x 4 ÷ 2 + 6 = 22."
+    },
+    {
+      "id": "SSCCHSL-T1-048",
+      "section": "gi",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslVerbal",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Symbolic operations",
+      "stem": "If '&' means '+', '%' means '-', '@' means 'x' and '#' means '÷', what is the value of 20 # 4 @ 3 & 9 % 6?",
+      "options": [
+        "18",
+        "24",
+        "12",
+        "21"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Replace the symbols: 20 ÷ 4 x 3 + 9 - 6. Division and multiplication first, left to right: 20 ÷ 4 = 5, 5 x 3 = 15. Then 15 + 9 - 6 = 18."
+    },
+    {
+      "id": "SSCCHSL-T1-049",
+      "section": "gi",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslLogic",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Ordering",
+      "stem": "A is taller than B. C is taller than A. D is shorter than B. Who is the tallest?",
+      "options": [
+        "A",
+        "C",
+        "B",
+        "D"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "From the statements, C > A > B > D in height, so C is the tallest."
+    },
+    {
+      "id": "SSCCHSL-T1-050",
+      "section": "gi",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Semantic classification",
+      "stem": "Select the odd one out.\n\nHockey, Cricket, Football, Chess",
+      "options": [
+        "Football",
+        "Hockey",
+        "Cricket",
+        "Chess"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Hockey, cricket and football are outdoor team games played on a field. Chess is a board game for two players."
+    },
+    {
+      "id": "SSCCHSL-T1-051",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Percentage",
+      "stem": "What is 12.5% of 920?",
+      "options": [
+        "112",
+        "125",
+        "105",
+        "115"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "12.5% is one-eighth, so 12.5% of 920 is 920 ÷ 8 = 115."
+    },
+    {
+      "id": "SSCCHSL-T1-052",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslAdvanced",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Algebra",
+      "stem": "If x + 1/x = 4, what is the value of x² + 1/x²?",
+      "options": [
+        "12",
+        "18",
+        "16",
+        "14"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Square both sides: x² + 2 + 1/x² = 16, so x² + 1/x² = 16 - 2 = 14."
+    },
+    {
+      "id": "SSCCHSL-T1-053",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Profit and loss",
+      "stem": "A shopkeeper buys a fan for ₹1,200 and sells it for ₹1,500. What is his profit percentage?",
+      "options": [
+        "15%",
+        "30%",
+        "25%",
+        "20%"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Profit = ₹300. Profit percentage is worked out on the cost price: 300 ÷ 1,200 x 100 = 25%. Using the selling price would wrongly give 20%."
+    },
+    {
+      "id": "SSCCHSL-T1-054",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslAdvanced",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Algebra",
+      "stem": "If a + b = 9 and ab = 20, what is the value of a² + b²?",
+      "options": [
+        "40",
+        "61",
+        "49",
+        "41"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "a² + b² = (a + b)² - 2ab = 81 - 40 = 41."
+    },
+    {
+      "id": "SSCCHSL-T1-055",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Discount",
+      "stem": "A bag marked at ₹800 is sold at a discount of 15%. What is the selling price?",
+      "options": [
+        "₹650",
+        "₹700",
+        "₹680",
+        "₹720"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The discount is 15% of ₹800 = ₹120, so the selling price is 800 - 120 = ₹680."
+    },
+    {
+      "id": "SSCCHSL-T1-056",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslAdvanced",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Algebra",
+      "stem": "Using (a - b)² = a² - 2ab + b², what is the value of 98²?",
+      "options": [
+        "9404",
+        "9616",
+        "9604",
+        "9804"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "98² = (100 - 2)² = 10,000 - 400 + 4 = 9,604."
+    },
+    {
+      "id": "SSCCHSL-T1-057",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Ratio and proportion",
+      "stem": "₹1,400 is divided between Asha and Babu in the ratio 3 : 4. What is Babu's share?",
+      "options": [
+        "₹900",
+        "₹700",
+        "₹600",
+        "₹800"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The ratio has 3 + 4 = 7 parts, so one part is 1,400 ÷ 7 = ₹200. Babu gets 4 parts = ₹800; Asha's share is ₹600."
+    },
+    {
+      "id": "SSCCHSL-T1-058",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslAdvanced",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Geometry",
+      "stem": "The angles of a triangle are in the ratio 2 : 3 : 7. What is the largest angle?",
+      "options": [
+        "84 degrees",
+        "120 degrees",
+        "90 degrees",
+        "105 degrees"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The angles add up to 180 degrees and the ratio has 12 parts, so one part is 15 degrees. The largest is 7 x 15 = 105 degrees, so the triangle is obtuse."
+    },
+    {
+      "id": "SSCCHSL-T1-059",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Averages",
+      "stem": "The average of six numbers is 30. When one number is removed, the average of the remaining five is 28. What is the number removed?",
+      "options": [
+        "40",
+        "42",
+        "38",
+        "28"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The six numbers total 6 x 30 = 180 and the five remaining total 5 x 28 = 140. The removed number is 180 - 140 = 40."
+    },
+    {
+      "id": "SSCCHSL-T1-060",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslAdvanced",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Geometry",
+      "stem": "What is the measure of each interior angle of a regular decagon (10 sides)?",
+      "options": [
+        "144 degrees",
+        "150 degrees",
+        "108 degrees",
+        "135 degrees"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The interior angles of a decagon total (10 - 2) x 180 = 1,440 degrees, so each is 1,440 ÷ 10 = 144 degrees. 108 degrees is the regular pentagon and 135 degrees the octagon."
+    },
+    {
+      "id": "SSCCHSL-T1-061",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Simple interest",
+      "stem": "What is the simple interest on ₹6,500 at 6% per annum for 4 years?",
+      "options": [
+        "₹1,460",
+        "₹1,300",
+        "₹1,560",
+        "₹1,650"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "SI = P x R x T ÷ 100 = 6,500 x 6 x 4 ÷ 100 = ₹1,560."
+    },
+    {
+      "id": "SSCCHSL-T1-062",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslAdvanced",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Geometry",
+      "stem": "At what angle does a tangent to a circle meet the radius drawn to the point of contact?",
+      "options": [
+        "45 degrees",
+        "180 degrees",
+        "60 degrees",
+        "90 degrees"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A tangent is always perpendicular to the radius at the point of contact."
+    },
+    {
+      "id": "SSCCHSL-T1-063",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Compound interest",
+      "stem": "What is the compound interest on ₹12,000 at 10% per annum for 2 years, compounded annually?",
+      "options": [
+        "₹2,400",
+        "₹2,640",
+        "₹1,260",
+        "₹2,520"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "After year 1 the amount is ₹13,200; after year 2 it is 13,200 + 1,320 = ₹14,520. CI = 14,520 - 12,000 = ₹2,520. Simple interest would be ₹2,400."
+    },
+    {
+      "id": "SSCCHSL-T1-064",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslAdvanced",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Mensuration",
+      "stem": "What is the area of a circle of radius 35 cm? (Take π = 22/7.)",
+      "options": [
+        "220 sq cm",
+        "3850 sq cm",
+        "7700 sq cm",
+        "1925 sq cm"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Area = πr² = 22/7 x 35 x 35 = 3,850 sq cm. 220 cm is the circumference."
+    },
+    {
+      "id": "SSCCHSL-T1-065",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Time and work",
+      "stem": "Mohan can paint a room in 15 hours and Iqbal in 10 hours. Working together, how long will they take?",
+      "options": [
+        "25 hours",
+        "6 hours",
+        "12.5 hours",
+        "5 hours"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "In one hour they paint 1/15 + 1/10 = 2/30 + 3/30 = 5/30 = 1/6 of the room, so they need 6 hours. 12.5 is the average of the two times, which is wrong."
+    },
+    {
+      "id": "SSCCHSL-T1-066",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslAdvanced",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Mensuration",
+      "stem": "What is the total surface area of a cube whose edge is 7 cm?",
+      "options": [
+        "294 cm²",
+        "343 cm²",
+        "245 cm²",
+        "196 cm²"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A cube has 6 square faces, so its total surface area is 6 x 7 x 7 = 294 cm². 343 is its volume in cm³ and 196 the area of its four side faces."
+    },
+    {
+      "id": "SSCCHSL-T1-067",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Time and distance",
+      "stem": "A car covers 150 km in 2 hours 30 minutes. What is its average speed?",
+      "options": [
+        "50 km/h",
+        "65 km/h",
+        "60 km/h",
+        "75 km/h"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "2 hours 30 minutes is 2.5 hours, so speed = 150 ÷ 2.5 = 60 km/h."
+    },
+    {
+      "id": "SSCCHSL-T1-068",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslAdvanced",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Trigonometry",
+      "stem": "What is the value of sin² 60° + cos 60°?",
+      "options": [
+        "5/4",
+        "1",
+        "3/4",
+        "3/2"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "sin 60° = √3/2, so sin² 60° = 3/4. cos 60° = 1/2. The sum is 3/4 + 2/4 = 5/4."
+    },
+    {
+      "id": "SSCCHSL-T1-069",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Number system",
+      "stem": "What is the least number that must be added to 1,000 to make it exactly divisible by 13?",
+      "options": [
+        "3",
+        "12",
+        "9",
+        "1"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "13 x 76 = 988, so 1,000 leaves a remainder of 12. Adding 13 - 12 = 1 gives 1,001 = 13 x 77."
+    },
+    {
+      "id": "SSCCHSL-T1-070",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslAdvanced",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Trigonometry",
+      "stem": "If sin θ = 7/25 and θ is an acute angle, what is cos θ?",
+      "options": [
+        "24/25",
+        "7/24",
+        "18/25",
+        "25/24"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Take a right triangle with opposite side 7 and hypotenuse 25. The adjacent side is the square root of 625 - 49 = 576, which is 24, so cos θ = 24/25."
+    },
+    {
+      "id": "SSCCHSL-T1-071",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Number system",
+      "stem": "What is the LCM of 16, 24 and 36?",
+      "options": [
+        "48",
+        "288",
+        "72",
+        "144"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "16 = 2⁴, 24 = 2³ x 3 and 36 = 2² x 3². The LCM takes each prime at its highest power: 2⁴ x 3² = 16 x 9 = 144."
+    },
+    {
+      "id": "SSCCHSL-T1-072",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslAdvanced",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Heights and distances",
+      "stem": "A ladder leaning against a wall makes an angle of 60° with the ground. Its foot is 4 m from the wall. How long is the ladder?",
+      "options": [
+        "8 m",
+        "2√3 m",
+        "4√3 m",
+        "6 m"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "cos 60° = base ÷ ladder, so 1/2 = 4 ÷ ladder and the ladder is 8 m. 4√3 m is the height it reaches on the wall."
+    },
+    {
+      "id": "SSCCHSL-T1-073",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslArith",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Mixture and alligation",
+      "stem": "In what ratio must rice at ₹40 per kg be mixed with rice at ₹55 per kg to get a mixture worth ₹45 per kg?",
+      "options": [
+        "1 : 2",
+        "3 : 1",
+        "2 : 1",
+        "3 : 2"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "By alligation, cheaper : dearer = (55 - 45) : (45 - 40) = 10 : 5 = 2 : 1. Check: (2 x 40 + 1 x 55) ÷ 3 = 135 ÷ 3 = 45."
+    },
+    {
+      "id": "SSCCHSL-T1-074",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslAdvanced",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Statistical charts",
+      "stem": "In a pie chart of a family's monthly spending, food takes 30% of the total. What angle does the food sector make at the centre?",
+      "options": [
+        "120 degrees",
+        "108 degrees",
+        "30 degrees",
+        "90 degrees"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The whole circle is 360 degrees, so 30% of it is 0.3 x 360 = 108 degrees."
+    },
+    {
+      "id": "SSCCHSL-T1-075",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Square roots",
+      "stem": "What is the value of √2116?",
+      "options": [
+        "54",
+        "44",
+        "46",
+        "56"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "2116 ends in 6, so its root ends in 4 or 6. 45 x 45 = 2025 and 50 x 50 = 2500, so the root lies between them: 46 x 46 = 2116."
+    },
+    {
+      "id": "SSCCHSL-T1-076",
+      "section": "ga",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Ancient history",
+      "stem": "Rakhigarhi, one of the largest Harappan sites, is in which present-day state?",
+      "options": [
+        "Rajasthan",
+        "Haryana",
+        "Gujarat",
+        "Punjab"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Rakhigarhi is in Hisar district, Haryana, in the Ghaggar basin. Lothal and Dholavira are in Gujarat, and Kalibangan is in Rajasthan."
+    },
+    {
+      "id": "SSCCHSL-T1-077",
+      "section": "ga",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Geography",
+      "stem": "Which state is the largest producer of jute in India?",
+      "options": [
+        "West Bengal",
+        "Kerala",
+        "Punjab",
+        "Rajasthan"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "West Bengal grows most of India's jute in the warm, wet Ganga delta, and most jute mills are around Kolkata. Assam and Bihar are the next producers."
+    },
+    {
+      "id": "SSCCHSL-T1-078",
+      "section": "ga",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Ancient history",
+      "stem": "Who wrote the Indica, an account of India under Chandragupta Maurya?",
+      "options": [
+        "Hiuen Tsang",
+        "Al-Biruni",
+        "Fa-Hien",
+        "Megasthenes"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Megasthenes was the Greek envoy of Seleucus Nicator at Chandragupta's court. Fa-Hien and Hiuen Tsang were Chinese pilgrims who came centuries later."
+    },
+    {
+      "id": "SSCCHSL-T1-079",
+      "section": "ga",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Geography",
+      "stem": "Which channel separates the Andaman Islands from the Nicobar Islands?",
+      "options": [
+        "Eight Degree Channel",
+        "Duncan Passage",
+        "Ten Degree Channel",
+        "Palk Strait"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The Ten Degree Channel lies between Little Andaman and Car Nicobar. The Eight Degree Channel separates Minicoy from the Maldives."
+    },
+    {
+      "id": "SSCCHSL-T1-080",
+      "section": "ga",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Ancient history",
+      "stem": "Who was the court poet of Harshavardhana and the author of the Harshacharita?",
+      "options": [
+        "Amir Khusrau",
+        "Kalhana",
+        "Kalidasa",
+        "Banabhatta"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Banabhatta wrote the Harshacharita, a biography of Harsha, and the prose romance Kadambari."
+    },
+    {
+      "id": "SSCCHSL-T1-081",
+      "section": "ga",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Geography",
+      "stem": "The Indira Gandhi Canal mainly carries irrigation water to which state?",
+      "options": [
+        "Gujarat",
+        "Punjab",
+        "Rajasthan",
+        "Haryana"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The canal starts at the Harike Barrage in Punjab, where the Sutlej and Beas meet, and carries water into the Thar Desert of western Rajasthan."
+    },
+    {
+      "id": "SSCCHSL-T1-082",
+      "section": "ga",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Medieval history",
+      "stem": "Who built the Brihadeeswarar Temple at Thanjavur?",
+      "options": [
+        "Mahendravarman I",
+        "Krishnadeva Raya",
+        "Rajaraja Chola I",
+        "Rajendra Chola I"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Rajaraja Chola I completed the temple around 1010 CE. His son Rajendra Chola I built a similar temple at Gangaikonda Cholapuram."
+    },
+    {
+      "id": "SSCCHSL-T1-083",
+      "section": "ga",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Economy",
+      "stem": "Which body regulates the securities (stock) market in India?",
+      "options": [
+        "SEBI",
+        "IRDAI",
+        "NABARD",
+        "SIDBI"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The Securities and Exchange Board of India regulates the securities market. IRDAI regulates insurance."
+    },
+    {
+      "id": "SSCCHSL-T1-084",
+      "section": "ga",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Medieval history",
+      "stem": "Which Sultan of Delhi founded the towns of Hisar and Jaunpur and dug the Western Yamuna canal?",
+      "options": [
+        "Iltutmish",
+        "Ghiyas-ud-din Balban",
+        "Firuz Shah Tughlaq",
+        "Alauddin Khalji"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Firuz Shah Tughlaq (1351 to 1388) founded Hisar, Jaunpur and Firozabad and built canals, including one from the Yamuna."
+    },
+    {
+      "id": "SSCCHSL-T1-085",
+      "section": "ga",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Economy",
+      "stem": "The financial year of the Government of India runs from:",
+      "options": [
+        "1 July to 30 June",
+        "1 January to 31 December",
+        "1 April to 31 March",
+        "1 October to 30 September"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "India's financial year starts on 1 April and ends on 31 March, and the Union Budget covers this period."
+    },
+    {
+      "id": "SSCCHSL-T1-086",
+      "section": "ga",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslHistory",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Medieval history",
+      "stem": "The Battle of Talikota in 1565 led to the decline of which empire?",
+      "options": [
+        "Maratha Empire",
+        "Chola Empire",
+        "Mughal Empire",
+        "Vijayanagara Empire"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "At Talikota the allied Deccan Sultanates defeated Vijayanagara, and its capital Hampi was sacked. The Maratha Empire rose a century later."
+    },
+    {
+      "id": "SSCCHSL-T1-087",
+      "section": "ga",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Physics",
+      "stem": "What is the SI unit of electric charge?",
+      "options": [
+        "Volt",
+        "Ohm",
+        "Coulomb",
+        "Ampere"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Charge is measured in coulombs. One ampere is a current of one coulomb per second; the volt is the unit of potential difference and the ohm of resistance."
+    },
+    {
+      "id": "SSCCHSL-T1-088",
+      "section": "ga",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslHistory",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Modern history",
+      "stem": "Who founded the Prarthana Samaj in Bombay in 1867?",
+      "options": [
+        "Atmaram Pandurang",
+        "Syed Ahmad Khan",
+        "Raja Ram Mohan Roy",
+        "Dayananda Saraswati"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Atmaram Pandurang founded the Prarthana Samaj in 1867, and M. G. Ranade later became its leading figure. Raja Ram Mohan Roy founded the Brahmo Samaj and Dayananda Saraswati the Arya Samaj."
+    },
+    {
+      "id": "SSCCHSL-T1-089",
+      "section": "ga",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Physics",
+      "stem": "Which lens is used to correct hypermetropia (long-sightedness)?",
+      "options": [
+        "Cylindrical lens",
+        "Concave lens",
+        "Convex lens",
+        "Plane glass"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A long-sighted eye focuses near objects behind the retina, and a converging (convex) lens corrects it. Short-sightedness (myopia) is corrected with a concave lens."
+    },
+    {
+      "id": "SSCCHSL-T1-090",
+      "section": "ga",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Modern history",
+      "stem": "In which year did the Cabinet Mission come to India to discuss the transfer of power?",
+      "options": [
+        "1942",
+        "1945",
+        "1946",
+        "1947"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The British Cabinet Mission came in March 1946 and proposed a plan for a Constituent Assembly. 1942 was the Cripps Mission and the Quit India Movement."
+    },
+    {
+      "id": "SSCCHSL-T1-091",
+      "section": "ga",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Chemistry",
+      "stem": "Which gas is used to harden vegetable oils into vanaspati ghee?",
+      "options": [
+        "Carbon dioxide",
+        "Oxygen",
+        "Nitrogen",
+        "Hydrogen"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Oils are hydrogenated: hydrogen is added to them in the presence of a nickel catalyst, which turns liquid oil into a solid fat."
+    },
+    {
+      "id": "SSCCHSL-T1-092",
+      "section": "ga",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslHistory",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Modern history",
+      "stem": "Who gave the slogan 'Jai Jawan Jai Kisan'?",
+      "options": [
+        "Indira Gandhi",
+        "Jawaharlal Nehru",
+        "Sardar Vallabhbhai Patel",
+        "Lal Bahadur Shastri"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Lal Bahadur Shastri raised the slogan in 1965 to honour soldiers and farmers."
+    },
+    {
+      "id": "SSCCHSL-T1-093",
+      "section": "ga",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Chemistry",
+      "stem": "Which is the most abundant metal in the Earth's crust?",
+      "options": [
+        "Aluminium",
+        "Magnesium",
+        "Calcium",
+        "Iron"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Aluminium is the most abundant metal in the crust, followed by iron. Oxygen and silicon, the most abundant elements, are not metals."
+    },
+    {
+      "id": "SSCCHSL-T1-094",
+      "section": "ga",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Polity",
+      "stem": "The Fundamental Duties were added to the Constitution on the recommendation of which committee?",
+      "options": [
+        "Sarkaria Commission",
+        "Swaran Singh Committee",
+        "Kothari Commission",
+        "Balwant Rai Mehta Committee"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The Swaran Singh Committee recommended them, and the 42nd Amendment (1976) added them as Article 51A. Balwant Rai Mehta was on panchayati raj and Kothari on education."
+    },
+    {
+      "id": "SSCCHSL-T1-095",
+      "section": "ga",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Biology",
+      "stem": "Which gas is the main component of CNG (compressed natural gas)?",
+      "options": [
+        "Hydrogen",
+        "Butane",
+        "Propane",
+        "Methane"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Natural gas is mostly methane, compressed for use as CNG. LPG, by contrast, is mainly butane and propane."
+    },
+    {
+      "id": "SSCCHSL-T1-096",
+      "section": "ga",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Polity",
+      "stem": "Which Article of the Constitution requires the annual financial statement (the Union Budget) to be laid before Parliament?",
+      "options": [
+        "Article 110",
+        "Article 280",
+        "Article 112",
+        "Article 123"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Article 112 provides for the annual financial statement. Article 110 defines a Money Bill, Article 123 is the President's power to make ordinances and Article 280 the Finance Commission."
+    },
+    {
+      "id": "SSCCHSL-T1-097",
+      "section": "ga",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Biology",
+      "stem": "Typhoid is caused by:",
+      "options": [
+        "A protozoan",
+        "A virus",
+        "A fungus",
+        "A bacterium"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Typhoid is caused by the bacterium Salmonella Typhi, spread through contaminated food and water. Malaria is caused by a protozoan."
+    },
+    {
+      "id": "SSCCHSL-T1-098",
+      "section": "ga",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Polity",
+      "stem": "Who administers the oath of office to the President of India?",
+      "options": [
+        "The Prime Minister",
+        "The Speaker of the Lok Sabha",
+        "The Chief Justice of India",
+        "The Vice-President"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Under Article 60 the President takes the oath before the Chief Justice of India, or in the Chief Justice's absence the senior-most judge of the Supreme Court."
+    },
+    {
+      "id": "SSCCHSL-T1-099",
+      "section": "ga",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Biology",
+      "stem": "Which is the hardest substance in the human body?",
+      "options": [
+        "Skull bone",
+        "Fingernail",
+        "Tooth enamel",
+        "Thigh bone"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Enamel, the outer layer of the teeth, is harder than any bone. It is made mostly of calcium phosphate crystals."
+    },
+    {
+      "id": "SSCCHSL-T1-100",
+      "section": "ga",
+      "test": 1,
+      "module": 1,
+      "domain": "sscchslHistory",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Culture",
+      "stem": "Mohiniyattam is a classical dance of which state?",
+      "options": [
+        "Kerala",
+        "Manipur",
+        "Odisha",
+        "Tamil Nadu"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Mohiniyattam, a graceful solo dance, comes from Kerala. Bharatanatyam is from Tamil Nadu, Odissi from Odisha and Manipuri from Manipur."
+    },
+    {
+      "id": "SSCCHSL-T2-001",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Spot the error",
+      "stem": "The sentence below is divided into parts. Select the part that contains a grammatical error. If there is no error, select 'No error'.\n\nThe police / has arrested / the thief.",
+      "options": [
+        "The police",
+        "has arrested",
+        "the thief",
+        "No error"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "'Police' is a plural noun and takes a plural verb: 'The police have arrested the thief.'"
+    },
+    {
+      "id": "SSCCHSL-T2-002",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Synonyms",
+      "stem": "Select the most appropriate synonym of the given word.\n\nELOQUENT",
+      "options": [
+        "Silent",
+        "Angry",
+        "Shy",
+        "Fluent"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "An eloquent speaker expresses ideas fluently and persuasively."
+    },
+    {
+      "id": "SSCCHSL-T2-003",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Fill in the blanks",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nHe is good ______ solving puzzles.",
+      "options": [
+        "on",
+        "with",
+        "in",
+        "at"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The fixed expression for a skill is 'good at': 'good at solving puzzles', 'good at maths'."
+    },
+    {
+      "id": "SSCCHSL-T2-004",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Fill in the blanks",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nThe doctor advised him ______ smoking.",
+      "options": [
+        "give up",
+        "to giving up",
+        "to give up",
+        "giving up"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "'Advise' with an object is followed by the to-infinitive: 'advised him to give up smoking'."
+    },
+    {
+      "id": "SSCCHSL-T2-005",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Antonyms",
+      "stem": "Select the most appropriate antonym of the given word.\n\nSCARCE",
+      "options": [
+        "Plentiful",
+        "Costly",
+        "Rare",
+        "Expensive"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Scarce means in short supply. Plentiful means available in large amounts. Rare is a synonym."
+    },
+    {
+      "id": "SSCCHSL-T2-006",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Improvement of sentences",
+      "stem": "Select the most appropriate option to replace the underlined part of the sentence. If no improvement is needed, select 'No improvement'.\n\nThis old trunk __is containing__ my grandfather's letters.",
+      "options": [
+        "is contained",
+        "contains",
+        "has containing",
+        "No improvement"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "'Contain' is a state verb and is not used in the continuous form. The correct sentence is 'This old trunk contains my grandfather's letters.'"
+    },
+    {
+      "id": "SSCCHSL-T2-007",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Active and passive voice",
+      "stem": "Select the active form of the sentence.\n\nThe prizes were distributed by the principal.",
+      "options": [
+        "The principal distributed the prizes.",
+        "The principal has distributed the prizes.",
+        "The principal distributes the prizes.",
+        "The principal had distributed the prizes."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "'Were distributed' is simple past passive, so the active form is simple past: 'The principal distributed the prizes.'"
+    },
+    {
+      "id": "SSCCHSL-T2-008",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Spellings",
+      "stem": "Select the incorrectly spelt word.",
+      "options": [
+        "Believe",
+        "Achieve",
+        "Relieve",
+        "Recieve"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The rule 'i before e except after c' gives 'receive'. Believe, achieve and relieve are spelt correctly."
+    },
+    {
+      "id": "SSCCHSL-T2-009",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Direct and indirect narration",
+      "stem": "Select the correct indirect form of the sentence.\n\nShe said, \"I have finished my work.\"",
+      "options": [
+        "She said that I had finished my work.",
+        "She said that she has finished her work.",
+        "She said that she finished her work yesterday.",
+        "She said that she had finished her work."
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "With a past reporting verb, the present perfect 'have finished' becomes the past perfect 'had finished', and 'I' and 'my' become 'she' and 'her'."
+    },
+    {
+      "id": "SSCCHSL-T2-010",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Spot the error",
+      "stem": "The sentence below is divided into parts. Select the part that contains a grammatical error. If there is no error, select 'No error'.\n\nRohan and his sister / was invited / to the wedding.",
+      "options": [
+        "Rohan and his sister",
+        "was invited",
+        "to the wedding",
+        "No error"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Two subjects joined by 'and' take a plural verb: 'Rohan and his sister were invited to the wedding.'"
+    },
+    {
+      "id": "SSCCHSL-T2-011",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Idioms and phrases",
+      "stem": "Select the most appropriate meaning of the given idiom.\n\nTo be in hot water",
+      "options": [
+        "To take a bath",
+        "To cook in a hurry",
+        "To be in trouble",
+        "To feel feverish"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "To be in hot water is to be in trouble, usually because of something one has done."
+    },
+    {
+      "id": "SSCCHSL-T2-012",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Fill in the blanks",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nI will call you ______ I reach home.",
+      "options": [
+        "as soon as",
+        "as long as",
+        "as well as",
+        "so that"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "'As soon as' means immediately after, which fits calling on reaching home. 'As long as' sets a condition and 'so that' gives a purpose."
+    },
+    {
+      "id": "SSCCHSL-T2-013",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "One-word substitution",
+      "stem": "Select the option that can be used as a one-word substitute for the given group of words.\n\nA place where coins are made",
+      "options": [
+        "Vault",
+        "Mint",
+        "Mine",
+        "Treasury"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Coins are made at a mint. A mine is where minerals are dug out, a treasury manages public money and a vault is a strong room for storing valuables."
+    },
+    {
+      "id": "SSCCHSL-T2-014",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Cloze test",
+      "stem": "Cloze passage 2: select the most appropriate word for blank (1).",
+      "options": [
+        "carrying",
+        "carrier",
+        "carries",
+        "carried"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The passage describes the past ('was once'), and the sentence needs a main verb in the simple past: 'Letters carried news'."
+    },
+    {
+      "id": "SSCCHSL-T2-015",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Cloze test",
+      "stem": "Cloze passage 2: select the most appropriate word for blank (2).",
+      "options": [
+        "beside",
+        "under",
+        "through",
+        "between"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Messages travel through mobile phones, that is, by means of them. The other prepositions describe position, not the means."
+    },
+    {
+      "id": "SSCCHSL-T2-016",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Shuffling of sentences",
+      "stem": "Arrange the sentences P, Q, R and S in a logical sequence.\n\nP. Then add the tea leaves and let the water boil.\nQ. First, heat a cup of water in a pan.\nR. Finally, strain the tea into a cup.\nS. Next, add milk and sugar to taste.",
+      "options": [
+        "PQSR",
+        "QSPR",
+        "QPRS",
+        "QPSR"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The signal words give the order: First (Q), Then (P), Next (S), Finally (R)."
+    },
+    {
+      "id": "SSCCHSL-T2-017",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Cloze test",
+      "stem": "Cloze passage 2: select the most appropriate word for blank (3).",
+      "options": [
+        "importantly",
+        "important",
+        "importance",
+        "unimportant"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "After 'its' a noun is needed: 'has not lost its importance'. 'Important' is an adjective and 'importantly' an adverb."
+    },
+    {
+      "id": "SSCCHSL-T2-018",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Cloze test",
+      "stem": "Cloze passage 2: select the most appropriate word for blank (4).",
+      "options": [
+        "spends",
+        "runs",
+        "walks",
+        "closes"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The passage lists new services, so the post office runs (manages) savings accounts for villagers. 'Closes' contradicts the point that it has not lost its importance."
+    },
+    {
+      "id": "SSCCHSL-T2-019",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Antonyms",
+      "stem": "Select the most appropriate antonym of the given word.\n\nLIBERATE",
+      "options": [
+        "Deliver",
+        "Release",
+        "Imprison",
+        "Rescue"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "To liberate is to set free. To imprison is to shut someone in. Release, rescue and deliver are all close to the meaning of liberate."
+    },
+    {
+      "id": "SSCCHSL-T2-020",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Cloze test",
+      "stem": "Cloze passage 2: select the most appropriate word for blank (5).",
+      "options": [
+        "talking",
+        "walking",
+        "flying",
+        "sleeping"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "'Within walking distance' is the fixed phrase for a place close enough to reach on foot."
+    },
+    {
+      "id": "SSCCHSL-T2-021",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "SSCCHSL-RC2",
+      "stem": "Reading passage 2: why are millets suited to dry areas?",
+      "options": [
+        "They need very rich soil",
+        "They ripen only in winter",
+        "They need little water",
+        "They grow only in cities"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The passage says millets grow well on poor soil, need far less water than rice and survive long dry spells."
+    },
+    {
+      "id": "SSCCHSL-T2-022",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "SSCCHSL-RC2",
+      "stem": "Reading passage 2: according to the passage, why did many farmers switch to wheat and rice?",
+      "options": [
+        "Better prices for millets",
+        "More rain in dry districts",
+        "A ban on growing millets",
+        "Irrigation and assured buying"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The passage says wheat and rice were supported by irrigation and assured government buying."
+    },
+    {
+      "id": "SSCCHSL-T2-023",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "SSCCHSL-RC2",
+      "stem": "Reading passage 2: select the word closest in meaning to 'hardy' as used in the passage.",
+      "options": [
+        "Rare",
+        "Tough",
+        "Soft",
+        "Costly"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Hardy grains can survive difficult conditions such as poor soil and dry spells, so the closest meaning is tough."
+    },
+    {
+      "id": "SSCCHSL-T2-024",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "SSCCHSL-RC2",
+      "stem": "Reading passage 2: according to the passage, who may gain the most if demand for millets rises?",
+      "options": [
+        "Rice farmers with canals",
+        "Doctors in big cities",
+        "Farmers in dry districts",
+        "Owners of ration shops"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The last sentence says farmers in dry districts, who struggle when the rains fail, may gain the most."
+    },
+    {
+      "id": "SSCCHSL-T2-025",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "SSCCHSL-RC2",
+      "stem": "Reading passage 2: what is the main idea of the passage?",
+      "options": [
+        "Rice should replace all millets",
+        "Millets were never eaten in India",
+        "Millets deserve a comeback",
+        "Wheat beats millets on health"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The passage explains why millets faded and then gives health and farming reasons for bringing them back."
+    },
+    {
+      "id": "SSCCHSL-T2-026",
+      "section": "gi",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Number analogy",
+      "stem": "Select the option that is related to the third term in the same way as the second term is related to the first term. 12 : 144 :: 15 : ?",
+      "options": [
+        "180",
+        "215",
+        "225",
+        "235"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The second term is the square of the first: 12 x 12 = 144. So 15 x 15 = 225."
+    },
+    {
+      "id": "SSCCHSL-T2-027",
+      "section": "gi",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Blood relations",
+      "stem": "Q is the son of R. R is the brother of S. S is the mother of T. How is Q related to T?",
+      "options": [
+        "Brother",
+        "Cousin",
+        "Uncle",
+        "Nephew"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Q's father R is the brother of T's mother S. Children of a brother and a sister are cousins."
+    },
+    {
+      "id": "SSCCHSL-T2-028",
+      "section": "gi",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Semantic analogy",
+      "stem": "Select the option that is related to the third term in the same way as the second term is related to the first term. Cow : Calf :: Horse : ?",
+      "options": [
+        "Pony",
+        "Cub",
+        "Kid",
+        "Foal"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A calf is the young of a cow and a foal is the young of a horse. A kid is a young goat and a cub a young lion or bear; a pony is a small breed of horse."
+    },
+    {
+      "id": "SSCCHSL-T2-029",
+      "section": "gi",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Directions",
+      "stem": "A man is facing south. He turns 90 degrees anticlockwise and then 45 degrees clockwise. Which direction is he facing now?",
+      "options": [
+        "East",
+        "South-west",
+        "South-east",
+        "North-east"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "From south, 90 degrees anticlockwise brings him to east. Turning 45 degrees clockwise from east brings him halfway back towards south: south-east."
+    },
+    {
+      "id": "SSCCHSL-T2-030",
+      "section": "gi",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Letter analogy",
+      "stem": "Select the option that is related to the third term in the same way as the second term is related to the first term. ABC : ZYX :: DEF : ?",
+      "options": [
+        "WVU",
+        "WUV",
+        "VWU",
+        "UVW"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Each letter is replaced by its opposite in the alphabet (A-Z, B-Y, C-X). So D-W, E-V and F-U give WVU."
+    },
+    {
+      "id": "SSCCHSL-T2-031",
+      "section": "gi",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslLogic",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Ranking",
+      "stem": "Sohan is 9th from the top and 16th from the bottom in his class. How many students are in the class?",
+      "options": [
+        "23",
+        "25",
+        "26",
+        "24"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Total = rank from top + rank from bottom - 1 = 9 + 16 - 1 = 24. Sohan is counted in both ranks, so 1 is taken away."
+    },
+    {
+      "id": "SSCCHSL-T2-032",
+      "section": "gi",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Number classification",
+      "stem": "Three of the following four numbers are alike in a certain way and one is different. Select the odd one out.\n\n18, 45, 63, 80",
+      "options": [
+        "80",
+        "18",
+        "45",
+        "63"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "18, 45 and 63 are multiples of 9 (their digits add up to 9). 80 is not."
+    },
+    {
+      "id": "SSCCHSL-T2-033",
+      "section": "gi",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Syllogism",
+      "stem": "Statements: Some cars are red. All red things are bright.\nConclusions: I. Some cars are bright. II. All cars are bright.\nWhich conclusion(s) follow from the statements?",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Both I and II follow",
+        "Neither follows"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The red cars are bright, so some cars are bright and I follows. Nothing is said about cars that are not red, so II does not follow."
+    },
+    {
+      "id": "SSCCHSL-T2-034",
+      "section": "gi",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Semantic classification",
+      "stem": "Select the odd one out.\n\nGuitar, Sitar, Violin, Flute",
+      "options": [
+        "Flute",
+        "Guitar",
+        "Sitar",
+        "Violin"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Guitar, sitar and violin are string instruments. The flute is a wind instrument."
+    },
+    {
+      "id": "SSCCHSL-T2-035",
+      "section": "gi",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslLogic",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Venn diagrams",
+      "stem": "Which set of classes is best shown by two circles that partly overlap and a third circle separate from both?",
+      "options": [
+        "Fruits, Mangoes, Apples",
+        "Pens, Pencils, Erasers",
+        "Doctors, Women, Rivers",
+        "Kochi, Kerala, India"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Some doctors are women, so those two circles overlap, and rivers share nothing with either. Mangoes and apples lie inside fruits; pens, pencils and erasers are all separate; Kochi, Kerala and India are nested."
+    },
+    {
+      "id": "SSCCHSL-T2-036",
+      "section": "gi",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "Select the number that comes next in the series.\n\n6, 11, 21, 36, 56, ?",
+      "options": [
+        "86",
+        "80",
+        "76",
+        "81"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The differences are 5, 10, 15, 20, rising by 5 each time. The next difference is 25, so 56 + 25 = 81."
+    },
+    {
+      "id": "SSCCHSL-T2-037",
+      "section": "gi",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Calendar",
+      "stem": "How many days are there from 1 January to 31 March of a leap year, both days included?",
+      "options": [
+        "92",
+        "90",
+        "89",
+        "91"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "January has 31 days, February 29 in a leap year and March 31: 31 + 29 + 31 = 91."
+    },
+    {
+      "id": "SSCCHSL-T2-038",
+      "section": "gi",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Letter series",
+      "stem": "Select the letter that comes next in the series.\n\nB, D, H, N, ?",
+      "options": [
+        "T",
+        "U",
+        "V",
+        "W"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The gaps grow by 2: B (2) +2 = D (4), +4 = H (8), +6 = N (14), +8 = V (22)."
+    },
+    {
+      "id": "SSCCHSL-T2-039",
+      "section": "gi",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslLogic",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Clock",
+      "stem": "Through how many degrees does the hour hand of a clock turn in 2 hours 30 minutes?",
+      "options": [
+        "150 degrees",
+        "75 degrees",
+        "90 degrees",
+        "60 degrees"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The hour hand turns 360 degrees in 12 hours, which is 30 degrees an hour. In 2.5 hours it turns 2.5 x 30 = 75 degrees. 150 degrees would be the minute hand's turn in 25 minutes."
+    },
+    {
+      "id": "SSCCHSL-T2-040",
+      "section": "gi",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Coding-decoding",
+      "stem": "In a certain code language, MANGO is written as OCPIQ. How is PEARL written in that language?",
+      "options": [
+        "RGCTN",
+        "RGCSN",
+        "SHDUO",
+        "QFBSM"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Each letter moves 2 places forward: M-O, A-C, N-P, G-I, O-Q. So P-R, E-G, A-C, R-T, L-N gives RGCTN."
+    },
+    {
+      "id": "SSCCHSL-T2-041",
+      "section": "gi",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Drawing inferences",
+      "stem": "Statement: \"All the trains to Patna are full this week.\"\nConclusions: I. Some travellers to Patna may go by bus. II. The railways should stop all trains to Patna.\nWhich conclusion(s) follow from the statements?",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Both I and II follow",
+        "Neither follows"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "If the trains are full, some people may take another mode of transport, so I follows. Full trains show demand, which is no reason to stop them, so II does not follow."
+    },
+    {
+      "id": "SSCCHSL-T2-042",
+      "section": "gi",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Coding-decoding",
+      "stem": "In a certain code, DEAF is written as 4516. How is FADE written in that code?",
+      "options": [
+        "6145",
+        "5146",
+        "6415",
+        "6154"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Each letter is replaced by its position in the alphabet: D = 4, E = 5, A = 1, F = 6. So FADE is 6, 1, 4, 5."
+    },
+    {
+      "id": "SSCCHSL-T2-043",
+      "section": "gi",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslLogic",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Emotional intelligence",
+      "stem": "You feel angry after an argument with a friend. What is the best first step?",
+      "options": [
+        "Tell others about the fight",
+        "Send an angry message now",
+        "Calm down before you reply",
+        "Block the friend at once"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Managing your own anger before responding is the core of emotional intelligence. The other options act on anger and usually make the situation worse."
+    },
+    {
+      "id": "SSCCHSL-T2-044",
+      "section": "gi",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Missing number",
+      "stem": "Select the number that replaces the question mark.\n\n6 gives 35, 8 gives 63, 10 gives ?",
+      "options": [
+        "101",
+        "99",
+        "100",
+        "98"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Each output is the square of the input minus 1: 36 - 1 = 35 and 64 - 1 = 63. So 100 - 1 = 99."
+    },
+    {
+      "id": "SSCCHSL-T2-045",
+      "section": "gi",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslLogic",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Problem solving",
+      "stem": "A clerk files 12 letters in 4 minutes. At the same rate, how many letters does she file in 30 minutes?",
+      "options": [
+        "96",
+        "72",
+        "90",
+        "80"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "She files 12 ÷ 4 = 3 letters a minute, so in 30 minutes she files 3 x 30 = 90."
+    },
+    {
+      "id": "SSCCHSL-T2-046",
+      "section": "gi",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Logical order of words",
+      "stem": "Arrange the words in a logical sequence.\n\n1. Admission\n2. Examination\n3. Result\n4. Study\n5. Certificate",
+      "options": [
+        "1, 2, 4, 3, 5",
+        "4, 1, 2, 3, 5",
+        "1, 4, 3, 2, 5",
+        "1, 4, 2, 3, 5"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A student takes admission, studies, sits the examination, gets the result and then receives the certificate."
+    },
+    {
+      "id": "SSCCHSL-T2-047",
+      "section": "gi",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Critical thinking",
+      "stem": "Statement: \"Use our toothpaste for stronger teeth.\"\nAssumptions: I. People want stronger teeth. II. Toothpaste has no effect on teeth.\nWhich assumption(s) are implicit in the statement?",
+      "options": [
+        "Only I is implicit",
+        "Only II is implicit",
+        "Both are implicit",
+        "Neither is implicit"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "An advertisement promising stronger teeth assumes people want them, so I is implicit. II contradicts the claim the advertisement makes."
+    },
+    {
+      "id": "SSCCHSL-T2-048",
+      "section": "gi",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslVerbal",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Symbolic operations",
+      "stem": "If 'plus' means 'divided by', 'minus' means 'plus', 'times' means 'minus' and 'divided by' means 'times', what is the value of 40 plus 8 minus 6 divided by 3 times 4?",
+      "options": [
+        "21",
+        "15",
+        "23",
+        "19"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Replace the words: 40 ÷ 8 + 6 x 3 - 4. Division and multiplication first: 40 ÷ 8 = 5 and 6 x 3 = 18. Then 5 + 18 - 4 = 19."
+    },
+    {
+      "id": "SSCCHSL-T2-049",
+      "section": "gi",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslLogic",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Seating arrangement",
+      "stem": "Five friends P, Q, R, S and T sit in a row facing north. P is at the left end. R is in the middle. S is to the immediate right of P. T is not at the right end. Who is at the right end?",
+      "options": [
+        "S",
+        "R",
+        "T",
+        "Q"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Seats 1 to 5 from the left: P is 1 and S is 2. R is 3. T is not at 5, so T is 4, leaving Q at 5, the right end."
+    },
+    {
+      "id": "SSCCHSL-T2-050",
+      "section": "gi",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Word building",
+      "stem": "Which word cannot be formed using the letters of the word DEPARTMENT? (Each letter can be used only as many times as it appears.)",
+      "options": [
+        "TRADE",
+        "MASTER",
+        "TEMPER",
+        "PARENT"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "DEPARTMENT has no S, so MASTER cannot be formed. PARENT, TRADE and TEMPER use only its letters (it has two E's and two T's)."
+    },
+    {
+      "id": "SSCCHSL-T2-051",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Percentage",
+      "stem": "A number increased by 20% becomes 360. What is the number?",
+      "options": [
+        "300",
+        "280",
+        "320",
+        "288"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "120% of the number is 360, so the number is 360 ÷ 1.2 = 300. Taking 20% off 360 would wrongly give 288."
+    },
+    {
+      "id": "SSCCHSL-T2-052",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslAdvanced",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Algebra",
+      "stem": "If x - 1/x = 4, what is the value of x² + 1/x²?",
+      "options": [
+        "18",
+        "20",
+        "14",
+        "16"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Square both sides: x² - 2 + 1/x² = 16, so x² + 1/x² = 16 + 2 = 18."
+    },
+    {
+      "id": "SSCCHSL-T2-053",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Profit and loss",
+      "stem": "By selling a watch for ₹1,140, a man loses 5%. What was the cost price of the watch?",
+      "options": [
+        "₹1,250",
+        "₹1,100",
+        "₹1,197",
+        "₹1,200"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Selling at a 5% loss means SP = 95% of CP. So CP = 1,140 ÷ 0.95 = ₹1,200."
+    },
+    {
+      "id": "SSCCHSL-T2-054",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslAdvanced",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Algebra",
+      "stem": "Using (a + b)(a - b) = a² - b², what is the value of 105 x 95?",
+      "options": [
+        "10025",
+        "9875",
+        "9975",
+        "9925"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "105 x 95 = (100 + 5)(100 - 5) = 10,000 - 25 = 9,975."
+    },
+    {
+      "id": "SSCCHSL-T2-055",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Discount",
+      "stem": "Two successive discounts of 15% and 10% are equal to a single discount of:",
+      "options": [
+        "22.5%",
+        "24%",
+        "23.5%",
+        "25%"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "On ₹100, a 15% discount leaves ₹85, and 10% off ₹85 leaves ₹76.50. The total discount is ₹23.50, or 23.5%, not 25%."
+    },
+    {
+      "id": "SSCCHSL-T2-056",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslAdvanced",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Algebra",
+      "stem": "If 5x + 3 = 3x + 17, what is the value of x?",
+      "options": [
+        "4",
+        "7",
+        "10",
+        "-7"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Subtract 3x from both sides: 2x + 3 = 17. Subtract 3: 2x = 14, so x = 7."
+    },
+    {
+      "id": "SSCCHSL-T2-057",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Ratio and proportion",
+      "stem": "The ratio of boys to girls in a class is 7 : 5. If there are 48 students, how many girls are there?",
+      "options": [
+        "24",
+        "20",
+        "16",
+        "28"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The ratio has 12 parts, so one part is 48 ÷ 12 = 4 students. Girls = 5 x 4 = 20 and boys 28."
+    },
+    {
+      "id": "SSCCHSL-T2-058",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslAdvanced",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Geometry",
+      "stem": "The two shorter sides of a right-angled triangle are 7 cm and 24 cm. What is the length of the hypotenuse?",
+      "options": [
+        "17 cm",
+        "25 cm",
+        "27 cm",
+        "31 cm"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "By Pythagoras, the hypotenuse is the square root of 49 + 576 = 625, which is 25 cm."
+    },
+    {
+      "id": "SSCCHSL-T2-059",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Averages",
+      "stem": "The average age of 4 friends is 20 years. When their teacher joins them, the average rises to 24 years. How old is the teacher?",
+      "options": [
+        "28 years",
+        "44 years",
+        "40 years",
+        "36 years"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The friends' ages total 4 x 20 = 80. With the teacher the total is 5 x 24 = 120. The teacher is 120 - 80 = 40."
+    },
+    {
+      "id": "SSCCHSL-T2-060",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslAdvanced",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Geometry",
+      "stem": "In what ratio does the centroid of a triangle divide each median, counting from the vertex?",
+      "options": [
+        "3 : 1",
+        "1 : 1",
+        "2 : 1",
+        "3 : 2"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The centroid lies two-thirds of the way along each median from the vertex, so it divides the median in the ratio 2 : 1."
+    },
+    {
+      "id": "SSCCHSL-T2-061",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Simple interest",
+      "stem": "At what rate of simple interest per annum does a sum become 2.5 times itself in 10 years?",
+      "options": [
+        "15%",
+        "25%",
+        "10%",
+        "20%"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Becoming 2.5 times means the interest is 1.5 times the principal, that is 150% in 10 years. The rate is 150 ÷ 10 = 15% per annum. Using 250% would wrongly give 25%."
+    },
+    {
+      "id": "SSCCHSL-T2-062",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslAdvanced",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Geometry",
+      "stem": "Two angles are subtended by the same chord at points in the same segment of a circle. How are the two angles related?",
+      "options": [
+        "They add up to 90 degrees",
+        "One is twice the other",
+        "They add up to 180 degrees",
+        "They are equal"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Angles in the same segment of a circle are equal. Angles in opposite segments, as in a cyclic quadrilateral, add up to 180 degrees, and the angle at the centre is twice the angle at the circle."
+    },
+    {
+      "id": "SSCCHSL-T2-063",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Partnership",
+      "stem": "Arun invests ₹30,000 and Bina invests ₹45,000 in a business for one year. Out of a profit of ₹10,000, what is Bina's share?",
+      "options": [
+        "₹4,000",
+        "₹5,000",
+        "₹7,500",
+        "₹6,000"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "For the same period, profit is shared in the ratio of investment: 30,000 : 45,000 = 2 : 3. Bina gets 3/5 of ₹10,000 = ₹6,000."
+    },
+    {
+      "id": "SSCCHSL-T2-064",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslAdvanced",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Mensuration",
+      "stem": "What is the perimeter of a rectangle 15 m long and 9 m wide?",
+      "options": [
+        "48 m",
+        "42 m",
+        "135 m",
+        "24 m"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Perimeter = 2 x (length + width) = 2 x 24 = 48 m. 135 is the area in square metres."
+    },
+    {
+      "id": "SSCCHSL-T2-065",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Time and work",
+      "stem": "12 workers can build a wall in 10 days. How many days will 8 workers take to build the same wall?",
+      "options": [
+        "20 days",
+        "15 days",
+        "12 days",
+        "8 days"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The work is 12 x 10 = 120 worker-days. With 8 workers it takes 120 ÷ 8 = 15 days."
+    },
+    {
+      "id": "SSCCHSL-T2-066",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslAdvanced",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Mensuration",
+      "stem": "What is the volume of a cylinder of radius 7 cm and height 12 cm? (Take π = 22/7.)",
+      "options": [
+        "1848 cm³",
+        "1616 cm³",
+        "528 cm³",
+        "924 cm³"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Volume = πr²h = 22/7 x 7 x 7 x 12 = 1,848 cm³. 528 cm² is the curved surface area, 2πrh."
+    },
+    {
+      "id": "SSCCHSL-T2-067",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Time and distance",
+      "stem": "A train 200 m long passes a pole in 10 seconds. What is its speed in km/h?",
+      "options": [
+        "20 km/h",
+        "72 km/h",
+        "80 km/h",
+        "60 km/h"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "To pass a pole the train covers its own length: 200 ÷ 10 = 20 m/s. Multiply by 18/5 to convert: 20 x 18 ÷ 5 = 72 km/h."
+    },
+    {
+      "id": "SSCCHSL-T2-068",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslAdvanced",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Trigonometry",
+      "stem": "What is the value of sin² 37° + cos² 37°?",
+      "options": [
+        "1/2",
+        "1",
+        "2",
+        "0"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "sin² θ + cos² θ = 1 for every angle θ, so the angle does not matter."
+    },
+    {
+      "id": "SSCCHSL-T2-069",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Number system",
+      "stem": "What is the remainder when 7,325 is divided by 9?",
+      "options": [
+        "8",
+        "5",
+        "1",
+        "7"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A number leaves the same remainder on division by 9 as the sum of its digits: 7 + 3 + 2 + 5 = 17, and 17 leaves 8."
+    },
+    {
+      "id": "SSCCHSL-T2-070",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslAdvanced",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Trigonometry",
+      "stem": "What is the value of tan 45° x cot 45° + sin 90°?",
+      "options": [
+        "1",
+        "3",
+        "0",
+        "2"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "tan 45° = 1 and cot 45° = 1, so their product is 1. sin 90° = 1. The total is 2."
+    },
+    {
+      "id": "SSCCHSL-T2-071",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Number system",
+      "stem": "What is the HCF of 96 and 156?",
+      "options": [
+        "6",
+        "12",
+        "24",
+        "48"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "96 = 2⁵ x 3 and 156 = 2² x 3 x 13. The HCF takes each common prime at its lowest power: 2² x 3 = 12. 24 does not divide 156."
+    },
+    {
+      "id": "SSCCHSL-T2-072",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslAdvanced",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Heights and distances",
+      "stem": "A tower casts a shadow equal to its own height. What is the angle of elevation of the sun?",
+      "options": [
+        "45 degrees",
+        "30 degrees",
+        "90 degrees",
+        "60 degrees"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "tan of the angle = height ÷ shadow = 1, and tan 45° = 1."
+    },
+    {
+      "id": "SSCCHSL-T2-073",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Decimals",
+      "stem": "What is the value of 0.25 x 0.4 + 1.5?",
+      "options": [
+        "1.75",
+        "2.5",
+        "1.6",
+        "1.15"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "0.25 x 0.4 = 0.1 (25 x 4 = 100, with three decimal places). Then 0.1 + 1.5 = 1.6."
+    },
+    {
+      "id": "SSCCHSL-T2-074",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslAdvanced",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Statistical charts",
+      "stem": "A table of a shop's sales shows: Monday 40, Tuesday 55, Wednesday 35, Thursday 50 and Friday 70 units. What is the average daily sale?",
+      "options": [
+        "50 units",
+        "55 units",
+        "45 units",
+        "48 units"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Total = 40 + 55 + 35 + 50 + 70 = 250 units over 5 days, so the average is 50 units."
+    },
+    {
+      "id": "SSCCHSL-T2-075",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslArith",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Mixture and alligation",
+      "stem": "A 40-litre mixture of milk and water contains 25% water. How much water must be added so that water makes up 40% of the new mixture?",
+      "options": [
+        "10 litres",
+        "6 litres",
+        "12 litres",
+        "8 litres"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Water is 10 litres and milk 30 litres. Milk stays at 30 litres and must be 60% of the new mixture, so the mixture is 30 ÷ 0.6 = 50 litres. Add 50 - 40 = 10 litres of water."
+    },
+    {
+      "id": "SSCCHSL-T2-076",
+      "section": "ga",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Ancient history",
+      "stem": "In which language was the Buddhist canon, the Tripitaka, written down?",
+      "options": [
+        "Prakrit",
+        "Sanskrit",
+        "Tamil",
+        "Pali"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The Theravada Tripitaka, the three 'baskets' of the Buddha's teachings, is preserved in Pali."
+    },
+    {
+      "id": "SSCCHSL-T2-077",
+      "section": "ga",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Geography",
+      "stem": "Which state has the largest area under forest cover in India?",
+      "options": [
+        "Chhattisgarh",
+        "Odisha",
+        "Arunachal Pradesh",
+        "Madhya Pradesh"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Madhya Pradesh has the largest forest cover by area in the India State of Forest Reports, followed by Arunachal Pradesh and Chhattisgarh."
+    },
+    {
+      "id": "SSCCHSL-T2-078",
+      "section": "ga",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Ancient history",
+      "stem": "Who wrote the Rajatarangini, a history of the kings of Kashmir?",
+      "options": [
+        "Banabhatta",
+        "Bilhana",
+        "Kalhana",
+        "Jayadeva"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Kalhana wrote the Rajatarangini in Sanskrit in the 12th century. Jayadeva wrote the Gita Govinda."
+    },
+    {
+      "id": "SSCCHSL-T2-079",
+      "section": "ga",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Geography",
+      "stem": "Which soil forms by intense leaching in areas of high temperature and heavy rainfall?",
+      "options": [
+        "Laterite soil",
+        "Black soil",
+        "Alluvial soil",
+        "Desert soil"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Heavy rain washes out lime and silica, leaving laterite soil rich in iron and aluminium oxides, as in the Western Ghats and parts of Odisha."
+    },
+    {
+      "id": "SSCCHSL-T2-080",
+      "section": "ga",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslHistory",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Culture",
+      "stem": "The rock-cut Kailasa temple at Ellora was built under which dynasty?",
+      "options": [
+        "Guptas",
+        "Rashtrakutas",
+        "Cholas",
+        "Pallavas"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The Kailasa temple (Cave 16) was cut from a single rock in the 8th century under the Rashtrakuta king Krishna I. The Pallavas built the shore temple at Mamallapuram."
+    },
+    {
+      "id": "SSCCHSL-T2-081",
+      "section": "ga",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Geography",
+      "stem": "The Sardar Sarovar Dam in Gujarat is built on which river?",
+      "options": [
+        "Narmada",
+        "Mahi",
+        "Tapi",
+        "Sabarmati"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The Sardar Sarovar Dam stands on the Narmada near Kevadia in Gujarat, close to the Statue of Unity."
+    },
+    {
+      "id": "SSCCHSL-T2-082",
+      "section": "ga",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslHistory",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Medieval history",
+      "stem": "Who was the first woman ruler of the Delhi Sultanate?",
+      "options": [
+        "Chand Bibi",
+        "Razia Sultan",
+        "Nur Jahan",
+        "Begum Hazrat Mahal"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Razia, daughter of Iltutmish, ruled from 1236 to 1240. Nur Jahan was a Mughal empress and Chand Bibi defended Ahmednagar."
+    },
+    {
+      "id": "SSCCHSL-T2-083",
+      "section": "ga",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Economy",
+      "stem": "In banking, what does SLR stand for?",
+      "options": [
+        "Statutory Liquidity Ratio",
+        "State Loan Reserve",
+        "Standard Lending Rate",
+        "Savings Liquidity Rate"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The Statutory Liquidity Ratio is the share of deposits that banks must hold in liquid assets such as cash, gold and approved government securities."
+    },
+    {
+      "id": "SSCCHSL-T2-084",
+      "section": "ga",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Medieval history",
+      "stem": "Which Mughal emperor wrote the memoir Tuzuk-i-Jahangiri?",
+      "options": [
+        "Babur",
+        "Jahangir",
+        "Aurangzeb",
+        "Humayun"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Jahangir wrote his own memoirs, the Tuzuk-i-Jahangiri. Babur wrote the Baburnama."
+    },
+    {
+      "id": "SSCCHSL-T2-085",
+      "section": "ga",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Economy",
+      "stem": "Banking, transport and trade belong to which sector of the economy?",
+      "options": [
+        "Quaternary sector",
+        "Tertiary sector",
+        "Secondary sector",
+        "Primary sector"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The tertiary or service sector provides services rather than goods. Manufacturing is secondary and agriculture primary."
+    },
+    {
+      "id": "SSCCHSL-T2-086",
+      "section": "ga",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslHistory",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Medieval history",
+      "stem": "Which Maratha ruler was crowned Chhatrapati at Raigad in 1674?",
+      "options": [
+        "Shivaji",
+        "Shahu",
+        "Sambhaji",
+        "Baji Rao I"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Shivaji was crowned at Raigad fort in 1674. Baji Rao I was a Peshwa, not a Chhatrapati."
+    },
+    {
+      "id": "SSCCHSL-T2-087",
+      "section": "ga",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Physics",
+      "stem": "Which instrument is used to measure electric current?",
+      "options": [
+        "Voltmeter",
+        "Barometer",
+        "Ammeter",
+        "Hygrometer"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "An ammeter, connected in series, measures current. A voltmeter, connected in parallel, measures potential difference."
+    },
+    {
+      "id": "SSCCHSL-T2-088",
+      "section": "ga",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Modern history",
+      "stem": "Under which Governor-General was the Doctrine of Lapse used to annex states such as Satara and Jhansi?",
+      "options": [
+        "Lord Cornwallis",
+        "Lord Ripon",
+        "Lord Wellesley",
+        "Lord Dalhousie"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Lord Dalhousie (1848 to 1856) annexed states whose rulers died without a natural heir. Wellesley used the Subsidiary Alliance."
+    },
+    {
+      "id": "SSCCHSL-T2-089",
+      "section": "ga",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Physics",
+      "stem": "What is the SI unit of the power of a lens?",
+      "options": [
+        "Watt",
+        "Lux",
+        "Dioptre",
+        "Hertz"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Lens power is measured in dioptres: one dioptre is the power of a lens with a focal length of 1 metre."
+    },
+    {
+      "id": "SSCCHSL-T2-090",
+      "section": "ga",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Modern history",
+      "stem": "Who started the Urdu weekly Al-Hilal in 1912?",
+      "options": [
+        "Muhammad Ali Jinnah",
+        "Lala Lajpat Rai",
+        "Maulana Abul Kalam Azad",
+        "Syed Ahmad Khan"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Maulana Abul Kalam Azad launched Al-Hilal in Calcutta in 1912 to rouse nationalist feeling; the British government later shut it down. Syed Ahmad Khan founded the Aligarh movement."
+    },
+    {
+      "id": "SSCCHSL-T2-091",
+      "section": "ga",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Chemistry",
+      "stem": "Which organ of the human body produces bile?",
+      "options": [
+        "Stomach",
+        "Liver",
+        "Gall bladder",
+        "Pancreas"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The liver makes bile, which helps digest fats. The gall bladder only stores it until it is needed."
+    },
+    {
+      "id": "SSCCHSL-T2-092",
+      "section": "ga",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Modern history",
+      "stem": "In which year was the Poona Pact signed between Mahatma Gandhi and B. R. Ambedkar?",
+      "options": [
+        "1935",
+        "1932",
+        "1929",
+        "1930"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The Poona Pact of 1932 replaced separate electorates for the depressed classes with reserved seats in joint electorates."
+    },
+    {
+      "id": "SSCCHSL-T2-093",
+      "section": "ga",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Chemistry",
+      "stem": "Brass is an alloy of:",
+      "options": [
+        "Copper and tin",
+        "Copper and zinc",
+        "Iron and carbon",
+        "Lead and tin"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Brass is copper and zinc. Bronze is copper and tin, and steel is mainly iron and carbon."
+    },
+    {
+      "id": "SSCCHSL-T2-094",
+      "section": "ga",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Polity",
+      "stem": "Which Schedule of the Constitution contains the forms of oaths and affirmations?",
+      "options": [
+        "First Schedule",
+        "Seventh Schedule",
+        "Third Schedule",
+        "Eighth Schedule"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The Third Schedule has the forms of oaths and affirmations for ministers, members of Parliament, judges and others. The First Schedule lists the states and union territories, the Seventh the Union, State and Concurrent Lists, and the Eighth the languages."
+    },
+    {
+      "id": "SSCCHSL-T2-095",
+      "section": "ga",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Biology",
+      "stem": "Which chamber of the human heart pumps oxygen-rich blood to the whole body?",
+      "options": [
+        "Left atrium",
+        "Right atrium",
+        "Right ventricle",
+        "Left ventricle"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The left ventricle pumps oxygen-rich blood into the aorta, which is why its wall is the thickest. The right ventricle pumps blood to the lungs."
+    },
+    {
+      "id": "SSCCHSL-T2-096",
+      "section": "ga",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslHistory",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Polity",
+      "stem": "Who appoints the Comptroller and Auditor General of India?",
+      "options": [
+        "The President",
+        "The Prime Minister",
+        "The Chief Justice",
+        "The Lok Sabha Speaker"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Under Article 148 the President appoints the CAG by warrant under his or her hand and seal."
+    },
+    {
+      "id": "SSCCHSL-T2-097",
+      "section": "ga",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Biology",
+      "stem": "Which disease in children is caused by a lack of vitamin D?",
+      "options": [
+        "Beriberi",
+        "Rickets",
+        "Scurvy",
+        "Night blindness"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Without vitamin D the bones stay soft and bend, causing rickets. Scurvy is from lack of vitamin C and beriberi from lack of vitamin B1."
+    },
+    {
+      "id": "SSCCHSL-T2-098",
+      "section": "ga",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslHistory",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Polity",
+      "stem": "Under the Constitution, what is the longest gap allowed between two sessions of Parliament?",
+      "options": [
+        "Nine months",
+        "One year",
+        "Three months",
+        "Six months"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Article 85 says six months must not pass between the last sitting of one session and the first sitting of the next."
+    },
+    {
+      "id": "SSCCHSL-T2-099",
+      "section": "ga",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Biology",
+      "stem": "Which part of the human brain controls involuntary actions such as heartbeat and breathing?",
+      "options": [
+        "Thalamus",
+        "Cerebellum",
+        "Medulla oblongata",
+        "Cerebrum"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The medulla oblongata in the hindbrain controls heartbeat, breathing and blood pressure. The cerebellum keeps balance and the cerebrum handles thinking and memory."
+    },
+    {
+      "id": "SSCCHSL-T2-100",
+      "section": "ga",
+      "test": 2,
+      "module": 1,
+      "domain": "sscchslHistory",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Culture",
+      "stem": "Garba is a folk dance mainly associated with which state?",
+      "options": [
+        "Punjab",
+        "Assam",
+        "Manipur",
+        "Gujarat"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Garba is danced in circles during Navratri in Gujarat. Bhangra is from Punjab."
+    },
+    {
+      "id": "SSCCHSL-D-001",
+      "section": "eng",
+      "test": 0,
+      "module": 1,
+      "domain": "sscchslGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Spot the error",
+      "stem": "The sentence below is divided into parts. Select the part that contains a grammatical error. If there is no error, select 'No error'.\n\nEach of the boys / has brought / his own lunch today.",
+      "options": [
+        "Each of the boys",
+        "has brought",
+        "his own lunch today",
+        "No error"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "The sentence is correct. 'Each of' is followed by a plural noun but takes a singular verb and pronoun: 'Each of the boys has brought his own lunch.'"
+    },
+    {
+      "id": "SSCCHSL-D-002",
+      "section": "eng",
+      "test": 0,
+      "module": 1,
+      "domain": "sscchslVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Synonyms",
+      "stem": "Select the most appropriate synonym of the given word.\n\nFEEBLE",
+      "options": [
+        "Clever",
+        "Weak",
+        "Fierce",
+        "Proud"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Feeble means weak, especially from age or illness."
+    },
+    {
+      "id": "SSCCHSL-D-003",
+      "section": "eng",
+      "test": 0,
+      "module": 1,
+      "domain": "sscchslGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Fill in the blanks",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nMy father is accustomed ______ waking up early.",
+      "options": [
+        "with",
+        "for",
+        "by",
+        "to"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The fixed expression is 'accustomed to', and the 'to' here is a preposition, so it is followed by the -ing form: 'accustomed to waking up early'."
+    },
+    {
+      "id": "SSCCHSL-D-004",
+      "section": "eng",
+      "test": 0,
+      "module": 1,
+      "domain": "sscchslVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Antonyms",
+      "stem": "Select the most appropriate antonym of the given word.\n\nTIMID",
+      "options": [
+        "Bold",
+        "Shy",
+        "Calm",
+        "Kind"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Timid means easily frightened. Bold means brave and confident. Shy is close to timid, not opposite."
+    },
+    {
+      "id": "SSCCHSL-D-005",
+      "section": "eng",
+      "test": 0,
+      "module": 1,
+      "domain": "sscchslGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Improvement of sentences",
+      "stem": "Select the most appropriate option to replace the underlined part of the sentence. If no improvement is needed, select 'No improvement'.\n\nHe __has gone__ to Delhi last week.",
+      "options": [
+        "went",
+        "has went",
+        "had gone",
+        "No improvement"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "'Last week' is a finished past time, so the simple past 'went' is needed. 'Has went' mixes two forms and is never correct."
+    },
+    {
+      "id": "SSCCHSL-D-006",
+      "section": "eng",
+      "test": 0,
+      "module": 1,
+      "domain": "sscchslVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "One-word substitution",
+      "stem": "Select the option that can be used as a one-word substitute for the given group of words.\n\nA person who looks on the bright side of things",
+      "options": [
+        "Pessimist",
+        "Optimist",
+        "Novelist",
+        "Realist"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "An optimist expects good things. A pessimist expects the worst."
+    },
+    {
+      "id": "SSCCHSL-D-007",
+      "section": "eng",
+      "test": 0,
+      "module": 1,
+      "domain": "sscchslGrammar",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Active and passive voice",
+      "stem": "Select the passive form of the sentence.\n\nWho broke this window?",
+      "options": [
+        "By whom was this window broken?",
+        "By whom has this window broke?",
+        "By whom is this window broken?",
+        "Who was broken this window?"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A 'who' question in the simple past becomes 'By whom was ... broken?' in the passive. 'Broke' is the past tense, not the past participle."
+    },
+    {
+      "id": "SSCCHSL-D-008",
+      "section": "eng",
+      "test": 0,
+      "module": 1,
+      "domain": "sscchslVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Idioms and phrases",
+      "stem": "Select the most appropriate meaning of the given idiom.\n\nTo cry over spilt milk",
+      "options": [
+        "To waste food carelessly",
+        "To weep at a small injury",
+        "To complain about prices",
+        "To regret what cannot be undone"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "To cry over spilt milk is to waste time regretting something that has already happened and cannot be changed."
+    },
+    {
+      "id": "SSCCHSL-D-009",
+      "section": "gi",
+      "test": 0,
+      "module": 1,
+      "domain": "sscchslVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Semantic analogy",
+      "stem": "Select the option that is related to the third term in the same way as the second term is related to the first term. Water : Thirst :: Food : ?",
+      "options": [
+        "Taste",
+        "Kitchen",
+        "Meal",
+        "Hunger"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Water satisfies thirst, and food satisfies hunger."
+    },
+    {
+      "id": "SSCCHSL-D-010",
+      "section": "gi",
+      "test": 0,
+      "module": 1,
+      "domain": "sscchslLogic",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Blood relations",
+      "stem": "X is the brother of Y. Y is the daughter of Z. How is X related to Z?",
+      "options": [
+        "Brother",
+        "Son",
+        "Father",
+        "Nephew"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Y is Z's daughter and X is Y's brother, so X is Z's son."
+    },
+    {
+      "id": "SSCCHSL-D-011",
+      "section": "gi",
+      "test": 0,
+      "module": 1,
+      "domain": "sscchslVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "Select the number that comes next in the series.\n\n3, 6, 18, 72, 360, ?",
+      "options": [
+        "720",
+        "2520",
+        "2160",
+        "1800"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Each term is multiplied by the next whole number: x2, x3, x4, x5. The next step is x6, so 360 x 6 = 2160."
+    },
+    {
+      "id": "SSCCHSL-D-012",
+      "section": "gi",
+      "test": 0,
+      "module": 1,
+      "domain": "sscchslLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Directions",
+      "stem": "Sunil walks 20 m east and then 21 m north. How far is he from his starting point?",
+      "options": [
+        "41 m",
+        "29 m",
+        "21 m",
+        "1 m"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The two legs are at right angles, so the distance is the square root of 20 x 20 + 21 x 21 = 400 + 441 = 841, which is 29 m."
+    },
+    {
+      "id": "SSCCHSL-D-013",
+      "section": "gi",
+      "test": 0,
+      "module": 1,
+      "domain": "sscchslVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Coding-decoding",
+      "stem": "In a certain code, SUN is written as 54 because S = 19, U = 21 and N = 14 are added. How is MOON written in that code?",
+      "options": [
+        "58",
+        "55",
+        "57",
+        "56"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "M = 13, O = 15, O = 15 and N = 14. Their sum is 13 + 15 + 15 + 14 = 57."
+    },
+    {
+      "id": "SSCCHSL-D-014",
+      "section": "gi",
+      "test": 0,
+      "module": 1,
+      "domain": "sscchslLogic",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Ranking",
+      "stem": "In a queue, Neha is 7th from the front and Gita is 4 places behind her. What is Gita's position from the front?",
+      "options": [
+        "12th",
+        "11th",
+        "3rd",
+        "10th"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Behind means further from the front: 7 + 4 = 11th."
+    },
+    {
+      "id": "SSCCHSL-D-015",
+      "section": "gi",
+      "test": 0,
+      "module": 1,
+      "domain": "sscchslVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Semantic classification",
+      "stem": "Select the odd one out.\n\nKolkata, Chennai, Mumbai, Bhopal",
+      "options": [
+        "Chennai",
+        "Kolkata",
+        "Bhopal",
+        "Mumbai"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Kolkata, Chennai and Mumbai are major port cities. Bhopal is an inland city with no seaport. All four are state capitals, so that cannot be the difference."
+    },
+    {
+      "id": "SSCCHSL-D-016",
+      "section": "gi",
+      "test": 0,
+      "module": 1,
+      "domain": "sscchslLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Syllogism",
+      "stem": "Statements: No pencil is a pen. All pens are markers.\nConclusions: I. Some markers are not pencils. II. All markers are pens.\nWhich conclusion(s) follow from the statements?",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Both I and II follow",
+        "Neither follows"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The markers that are pens are not pencils, so some markers are not pencils and I follows. 'All pens are markers' cannot be reversed to 'all markers are pens', so II does not follow."
+    },
+    {
+      "id": "SSCCHSL-D-017",
+      "section": "qa",
+      "test": 0,
+      "module": 1,
+      "domain": "sscchslArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Percentage",
+      "stem": "What is 40% of 25% of 800?",
+      "options": [
+        "320",
+        "60",
+        "200",
+        "80"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "25% of 800 is 200, and 40% of 200 is 80."
+    },
+    {
+      "id": "SSCCHSL-D-018",
+      "section": "qa",
+      "test": 0,
+      "module": 1,
+      "domain": "sscchslAdvanced",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Algebra",
+      "stem": "If a - b = 3 and ab = 28, what is the value of a² + b²?",
+      "options": [
+        "56",
+        "47",
+        "65",
+        "37"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "a² + b² = (a - b)² + 2ab = 9 + 56 = 65."
+    },
+    {
+      "id": "SSCCHSL-D-019",
+      "section": "qa",
+      "test": 0,
+      "module": 1,
+      "domain": "sscchslArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Percentage",
+      "stem": "If the price of cooking oil rises by 60%, by what percentage must a family cut its use of oil to keep its spending the same?",
+      "options": [
+        "62.5%",
+        "60%",
+        "40%",
+        "37.5%"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Cut = rise ÷ (100 + rise) x 100 = 60 ÷ 160 x 100 = 37.5%. Cutting by the full 60% would lower spending."
+    },
+    {
+      "id": "SSCCHSL-D-020",
+      "section": "qa",
+      "test": 0,
+      "module": 1,
+      "domain": "sscchslAdvanced",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Mensuration",
+      "stem": "What is the area of a triangle with base 16 cm and height 9 cm?",
+      "options": [
+        "36 sq cm",
+        "72 sq cm",
+        "144 sq cm",
+        "50 sq cm"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Area = 1/2 x base x height = 1/2 x 16 x 9 = 72 sq cm."
+    },
+    {
+      "id": "SSCCHSL-D-021",
+      "section": "qa",
+      "test": 0,
+      "module": 1,
+      "domain": "sscchslArith",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Time and distance",
+      "stem": "Walking at 4 km/h, a student reaches school 7 minutes late. Walking at 5 km/h, she reaches 5 minutes early. How far is the school?",
+      "options": [
+        "4 km",
+        "3 km",
+        "6 km",
+        "5 km"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The two times differ by 12 minutes, or 1/5 hour. So d/4 - d/5 = 1/5, which gives d/20 = 1/5 and d = 4 km."
+    },
+    {
+      "id": "SSCCHSL-D-022",
+      "section": "qa",
+      "test": 0,
+      "module": 1,
+      "domain": "sscchslAdvanced",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Trigonometry",
+      "stem": "What is the value of cos 0° + sin 0°?",
+      "options": [
+        "0",
+        "2",
+        "1",
+        "1/2"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "cos 0° = 1 and sin 0° = 0, so the sum is 1."
+    },
+    {
+      "id": "SSCCHSL-D-023",
+      "section": "qa",
+      "test": 0,
+      "module": 1,
+      "domain": "sscchslArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Number system",
+      "stem": "The sum of three consecutive even numbers is 78. What is the largest of them?",
+      "options": [
+        "26",
+        "28",
+        "24",
+        "30"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The middle number is 78 ÷ 3 = 26, so the numbers are 24, 26 and 28. The largest is 28."
+    },
+    {
+      "id": "SSCCHSL-D-024",
+      "section": "qa",
+      "test": 0,
+      "module": 1,
+      "domain": "sscchslAdvanced",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Geometry",
+      "stem": "Each exterior angle of a regular polygon is 40 degrees. How many sides does it have?",
+      "options": [
+        "9",
+        "10",
+        "8",
+        "12"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The exterior angles of any polygon add up to 360 degrees, so the number of sides is 360 ÷ 40 = 9."
+    },
+    {
+      "id": "SSCCHSL-D-025",
+      "section": "ga",
+      "test": 0,
+      "module": 1,
+      "domain": "sscchslHistory",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Ancient history",
+      "stem": "Who was the last Mauryan ruler, killed by his commander Pushyamitra Shunga?",
+      "options": [
+        "Dasharatha",
+        "Samprati",
+        "Bindusara",
+        "Brihadratha"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Pushyamitra Shunga killed Brihadratha around 185 BCE and founded the Shunga dynasty."
+    },
+    {
+      "id": "SSCCHSL-D-026",
+      "section": "ga",
+      "test": 0,
+      "module": 1,
+      "domain": "sscchslScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Geography",
+      "stem": "The Tehri Dam is built on which river?",
+      "options": [
+        "Sutlej",
+        "Bhagirathi",
+        "Alaknanda",
+        "Yamuna"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The Tehri Dam in Uttarakhand is on the Bhagirathi, which joins the Alaknanda at Devprayag to form the Ganga."
+    },
+    {
+      "id": "SSCCHSL-D-027",
+      "section": "ga",
+      "test": 0,
+      "module": 1,
+      "domain": "sscchslHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Modern history",
+      "stem": "Who was the first Vice-President of India?",
+      "options": [
+        "S. Radhakrishnan",
+        "Rajendra Prasad",
+        "V. V. Giri",
+        "Zakir Husain"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Sarvepalli Radhakrishnan was Vice-President from 1952 to 1962 and then President. Rajendra Prasad was the first President."
+    },
+    {
+      "id": "SSCCHSL-D-028",
+      "section": "ga",
+      "test": 0,
+      "module": 1,
+      "domain": "sscchslScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Economy",
+      "stem": "Which tax does the Union government levy on the income of companies?",
+      "options": [
+        "Excise duty",
+        "Corporation tax",
+        "Customs duty",
+        "Stamp duty"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Corporation tax is a direct tax on company profits. Customs duty is charged on imports and exports."
+    },
+    {
+      "id": "SSCCHSL-D-029",
+      "section": "ga",
+      "test": 0,
+      "module": 1,
+      "domain": "sscchslHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Modern history",
+      "stem": "The Lucknow Pact of 1916 was an agreement between the Indian National Congress and:",
+      "options": [
+        "The Muslim League",
+        "The Ghadar Party",
+        "The Hindu Mahasabha",
+        "The Swaraj Party"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "In the Lucknow Pact the Congress and the Muslim League agreed on joint demands for self-government."
+    },
+    {
+      "id": "SSCCHSL-D-030",
+      "section": "ga",
+      "test": 0,
+      "module": 1,
+      "domain": "sscchslScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Physics",
+      "stem": "What is the SI unit of pressure?",
+      "options": [
+        "Newton",
+        "Watt",
+        "Joule",
+        "Pascal"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Pressure is force per unit area, measured in pascals: one newton per square metre."
+    },
+    {
+      "id": "SSCCHSL-D-031",
+      "section": "ga",
+      "test": 0,
+      "module": 1,
+      "domain": "sscchslHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Polity",
+      "stem": "Which Article of the Constitution provides for the Attorney General of India?",
+      "options": [
+        "Article 280",
+        "Article 124",
+        "Article 148",
+        "Article 76"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Article 76 creates the office of the Attorney General. Article 148 is the CAG, 124 the Supreme Court and 280 the Finance Commission."
+    },
+    {
+      "id": "SSCCHSL-D-032",
+      "section": "ga",
+      "test": 0,
+      "module": 1,
+      "domain": "sscchslScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Biology",
+      "stem": "On which part of the human eye is the image formed?",
+      "options": [
+        "Retina",
+        "Cornea",
+        "Iris",
+        "Pupil"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The eye lens focuses light onto the retina, the light-sensitive layer at the back of the eye. The iris controls the size of the pupil."
+    }
+  ]
+}

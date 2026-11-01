@@ -1,0 +1,115 @@
+# Oral forms: vowels, consonants, silent letters, endings, rhyme, word stress,
+# emphatic stress and intonation, judged by the Received Pronunciation model
+# used in Nigerian school English. Underlined letters use __...__. In stress
+# items the syllable in capital letters carries the stress. Key first.
+V = "Choose the option that has the same vowel sound as the one represented by the underlined letter(s).\n\n"
+K = "Choose the option that has the same consonant sound as the one represented by the underlined letter(s).\n\n"
+STRESS = "In the options, the syllable written in capital letters carries the primary stress. "
+EMPH = "In the sentence below, the word in capital letters carries the emphatic stress. Choose the question the sentence answers.\n\n"
+
+
+def Vw(t, d, word, opts, expl):
+    return S(t, d, "Vowels", V + word, opts, expl)
+
+
+def Cn(t, d, word, opts, expl):
+    return S(t, d, "Consonants", K + word, opts, expl)
+
+
+ITEMS = [
+    # ---------- Test 1 ----------
+    Vw(1, 2, "w__o__men", ["sit", "wood", "moon", "wet"],
+       "The o in women is pronounced /ɪ/, as in sit. Wood has /ʊ/, moon /uː/ and wet /e/."),
+    Vw(1, 2, "c__ou__ntry", ["cut", "count", "court", "cot"],
+       "The ou in country is /ʌ/, as in cut. Count has /aʊ/, court /ɔː/ and cot /ɒ/."),
+    Vw(1, 3, "h__ea__rt", ["calm", "heard", "hear", "hat"],
+       "Heart has /ɑː/, the vowel of calm. Heard has /ɜː/, hear /ɪə/ and hat /æ/."),
+    Cn(1, 2, "__ch__ef", ["machine", "chair", "chemist", "cheap"],
+       "The ch in chef is /ʃ/, as in machine. Chair and cheap have /tʃ/ and chemist has /k/."),
+    Cn(1, 3, "__th__ough", ["breathe", "breath", "thick", "tea"],
+       "Though begins with the voiced /ð/, as at the end of breathe. Breath and thick have the voiceless /θ/, and tea has /t/."),
+    S(1, 2, "Silent letters",
+      "In which of the following words is the underlined letter silent?",
+      ["de__b__t", "num__b__er", "am__b__er", "__b__ulb"],
+      "The b in debt is not pronounced: /det/. It is pronounced in number, amber and bulb."),
+    S(1, 1, "Rhyme", "Choose the word that rhymes with \"bought\".",
+      ["sort", "bout", "boat", "but"],
+      "Bought and sort both have /ɔːt/. Bout has /aʊt/, boat /əʊt/ and but /ʌt/."),
+    S(1, 2, "Word stress", STRESS + "Choose the correct stress pattern for \"examination\".",
+      ["ex-am-i-NA-tion", "EX-am-i-na-tion", "ex-AM-i-na-tion", "ex-am-I-na-tion"],
+      "Words ending in -tion are stressed on the syllable just before the ending: ex-am-i-NA-tion."),
+    S(1, 2, "Emphatic stress", EMPH + "\"TUNDE wrote the letter.\"",
+      ["Who wrote the letter?", "What did Tunde write?", "Did Tunde read the letter?", "When was the letter written?"],
+      "Stress on the subject, Tunde, answers a question about who did the action."),
+    S(1, 2, "Intonation", "Which of these sentences is normally said with a rising tune at the end?",
+      ["Are you coming with us?", "Where are you going now?", "Please close the door.", "I am very tired today."],
+      "Questions that can be answered yes or no normally end with a rising tune. Wh- questions, commands and statements normally fall."),
+    # ---------- Test 2 ----------
+    Vw(2, 2, "s__ai__d", ["bed", "laid", "side", "sad"],
+       "Said is pronounced /sed/, with the vowel of bed. Laid has /eɪ/, side /aɪ/ and sad /æ/."),
+    Vw(2, 2, "b__oo__k", ["put", "boot", "but", "bought"],
+       "Book has /ʊ/, as in put. Boot has /uː/, but /ʌ/ and bought /ɔː/."),
+    Vw(2, 3, "c__ow__", ["plough", "cough", "though", "through"],
+       "Cow has the diphthong /aʊ/, as in plough. Cough has /ɒ/, though /əʊ/ and through /uː/."),
+    Cn(2, 2, "plea__s__ure", ["vision", "pressure", "pleasant", "sure"],
+       "The s in pleasure is /ʒ/, as in vision. Pressure and sure have /ʃ/ and pleasant has /z/."),
+    S(2, 2, "Endings",
+      "In which of the following words is the final -ed pronounced /ɪd/?",
+      ["wanted", "walked", "played", "laughed"],
+      "After /t/ or /d/, -ed is pronounced /ɪd/: wanted. Walked and laughed end in /t/ and played in /d/."),
+    S(2, 2, "Rhyme", "Choose the word that rhymes with \"through\".",
+      ["shoe", "though", "tough", "trough"],
+      "Through and shoe both end in /uː/. Though has /əʊ/, tough /ʌf/ and trough /ɒf/."),
+    S(2, 2, "Word stress", "Which of the following words is stressed on the second syllable?",
+      ["begin", "garden", "window", "father"],
+      "Begin is be-GIN. Garden, window and father are all stressed on the first syllable."),
+    S(2, 3, "Word stress", STRESS + "Choose the correct stress pattern for \"comfortable\".",
+      ["COM-for-ta-ble", "com-FOR-ta-ble", "com-for-TA-ble", "com-for-ta-BLE"],
+      "Comfortable is stressed on its first syllable, COM. In everyday speech the second syllable is often reduced, but the stress never moves to it."),
+    S(2, 2, "Emphatic stress", EMPH + "\"The bus left at SIX o'clock.\"",
+      ["Did the bus leave at five o'clock?", "Did the bus arrive at six o'clock?", "Did the train leave at six o'clock?", "Who left at six o'clock?"],
+      "The emphasis on SIX corrects a wrong time, so the sentence answers a question that got the hour wrong."),
+    S(2, 3, "Emphatic stress", EMPH + "\"Amina is reading in the LIBRARY.\"",
+      ["Is Amina reading in the classroom?", "Is Amina writing in the library?", "Is Musa reading in the library?", "Was Amina reading in the library?"],
+      "Stress on LIBRARY corrects the place, so it answers a question that named another place."),
+    # ---------- Drill ----------
+    Vw(0, 2, "b__u__sy", ["pin", "bus", "bush", "boot"],
+       "Busy is /ˈbɪzi/, with the vowel of pin. Bus has /ʌ/, bush /ʊ/ and boot /uː/."),
+    Vw(0, 2, "p__ea__r", ["care", "peer", "purr", "pure"],
+       "Pear has /eə/, as in care. Peer has /ɪə/, purr /ɜː/ and pure /ʊə/."),
+    Vw(0, 2, "s__ew__", ["go", "few", "new", "saw"],
+       "Sew is pronounced like so, with /əʊ/ as in go. Few and new have /uː/ and saw has /ɔː/."),
+    Vw(0, 3, "bl__oo__d", ["love", "food", "good", "load"],
+       "Blood has /ʌ/, the vowel of love. Food has /uː/, good /ʊ/ and load /əʊ/."),
+    Vw(0, 2, "m__a__ny", ["friend", "main", "man", "mine"],
+       "Many is /ˈmeni/, with the vowel of friend. Main has /eɪ/, man /æ/ and mine /aɪ/."),
+    Vw(0, 2, "w__or__d", ["bird", "ward", "worn", "wood"],
+       "Word has /ɜː/, as in bird. Ward and worn have /ɔː/ and wood has /ʊ/."),
+    Cn(0, 2, "__ph__oto", ["laugh", "shepherd", "though", "ghost"],
+       "The ph in photo is /f/, the sound of gh in laugh. In shepherd the ph is /p/, though has a silent gh and ghost has /ɡ/."),
+    Cn(0, 3, "a__ss__ure", ["sugar", "assist", "dessert", "sauce"],
+       "The ss in assure is /ʃ/, as in sugar. Assist and sauce have /s/ and dessert has /z/."),
+    S(0, 2, "Silent letters",
+      "Choose the word in which the underlined letter is not pronounced.",
+      ["__k__nock", "__k__ettle", "brea__k__", "__k__ey"],
+      "The k in knock is silent: /nɒk/. It is pronounced in kettle, break and key."),
+    S(0, 2, "Endings",
+      "In which of the following words is the final -es or -s pronounced /ɪz/?",
+      ["watches", "boys", "caps", "rides"],
+      "After /tʃ/ the ending is /ɪz/: watches. Boys and rides end in /z/ and caps in /s/."),
+    S(0, 2, "Rhyme", "Choose the word that rhymes with \"heard\".",
+      ["bird", "beard", "hard", "head"],
+      "Heard and bird both have /ɜːd/. Beard has /ɪəd/, hard /ɑːd/ and head /ed/."),
+    S(0, 1, "Homophones", "Which pair of words is pronounced the same?",
+      ["flour and flower", "flour and floor", "bear and beer", "pull and pool"],
+      "Flour and flower are both /ˈflaʊə/. The other pairs differ in their vowels."),
+    S(0, 2, "Word stress", STRESS + "Choose the correct stress pattern for \"photographer\".",
+      ["pho-TOG-ra-pher", "PHO-to-gra-pher", "pho-to-GRA-pher", "pho-to-gra-PHER"],
+      "Photographer is stressed on the second syllable, although photograph is stressed on the first."),
+    S(0, 3, "Word stress", "Which of the following words has a different stress pattern from the others?",
+      ["hotel", "table", "paper", "doctor"],
+      "Hotel is stressed on the second syllable, ho-TEL; table, paper and doctor are stressed on the first."),
+    S(0, 2, "Emphatic stress", EMPH + "\"My sister WALKED to school.\"",
+      ["Did your sister drive to school?", "Did your brother walk to school?", "Did your sister walk to church?", "Whose sister walked to school?"],
+      "Stress on WALKED corrects the way she travelled, so it answers a question about another means of transport."),
+]

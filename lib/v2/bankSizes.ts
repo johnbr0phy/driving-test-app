@@ -53,4 +53,13 @@ export const BANK_SIZES: Record<string, number> = {
   az900: 150,
   ccna: 224,
   uknmc: 272,
+  jambeng: 200,
+  rrbgroupd: 232,
+  sscgd: 208,
+  sscchsl: 232,
+  sscmts: 212,
+  uppolice: 232,
+  ibpsclerk: 227,
+  jnvst: 205,
+  appsych: 200,
 };

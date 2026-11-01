@@ -91,4 +91,9 @@ export const BANK_SIZES: Record<string, number> = {
   aissee: 237,
   apcalcab: 215,
   aphug: 204,
+  jambmath: 200,
+  jambbio: 203,
+  jambchem: 208,
+  jambphys: 200,
+  apgov: 201,
 };

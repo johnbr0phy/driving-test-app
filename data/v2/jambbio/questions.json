@@ -1,0 +1,4274 @@
+[
+  {
+    "id": "JAMBBIO-T1-001",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "jambbioVariety",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cell organelles",
+    "stem": "Which organelle has a double membrane whose inner layer is folded into cristae?",
+    "options": [
+      "Lysosome",
+      "Golgi apparatus",
+      "Mitochondrion",
+      "Ribosome"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The folded inner membrane of the mitochondrion carries the enzymes of aerobic respiration. Ribosomes have no membrane at all."
+  },
+  {
+    "id": "JAMBBIO-T1-002",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "jambbioVariety",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Plant and animal cells",
+    "stem": "Which structure is found in an animal cell but not in the cells of flowering plants?",
+    "options": [
+      "Ribosomes",
+      "Plasma (cell) membrane",
+      "Mitochondria",
+      "Centrioles"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Animal cells have a pair of centrioles near the nucleus; flowering plant cells divide without them. Every living cell has a membrane and ribosomes."
+  },
+  {
+    "id": "JAMBBIO-T1-003",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "jambbioVariety",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Protista",
+    "stem": "Paramecium moves through water by the beating of its:",
+    "options": [
+      "Cilia",
+      "Setae",
+      "Flagellum",
+      "Pseudopodia"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Paramecium is covered in short hair-like cilia that beat in waves. Euglena uses a single flagellum and Amoeba flows on pseudopodia."
+  },
+  {
+    "id": "JAMBBIO-T1-004",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "jambbioVariety",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Levels of organisation",
+    "stem": "A group of similar cells that carry out one function together is called:",
+    "options": [
+      "A colony",
+      "A system",
+      "A tissue",
+      "An organ"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Cells form tissues, tissues form organs and organs form systems. A colony, as in Volvox, is a group of similar cells living together without being organised into tissues."
+  },
+  {
+    "id": "JAMBBIO-T1-005",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "jambbioVariety",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Fungi",
+    "stem": "Rhizopus, the black mould on stale bread, reproduces asexually by:",
+    "options": [
+      "Binary fission of hyphae",
+      "Zygospores from two strains",
+      "Budding off small cells",
+      "Spores formed in sporangia"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Rhizopus forms sporangia on upright hyphae and releases spores that grow into new mycelia. Zygospores come from conjugation of two strains, which is sexual."
+  },
+  {
+    "id": "JAMBBIO-T1-006",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "jambbioVariety",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Arthropoda",
+    "stem": "Which feature is found in every member of the phylum Arthropoda?",
+    "options": [
+      "A pair of antennae",
+      "Two pairs of wings",
+      "Jointed appendages",
+      "Three pairs of legs"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "All arthropods have jointed limbs and a chitin exoskeleton. Three pairs of legs and wings belong to insects only, and spiders have no antennae."
+  },
+  {
+    "id": "JAMBBIO-T1-007",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "jambbioVariety",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Osmosis",
+    "stem": "Salting fish before drying it keeps the fish from going bad mainly because the salt:",
+    "options": [
+      "Adds oxygen that microbes cannot use",
+      "Draws water out of microbes by osmosis",
+      "Makes microbes take in more water",
+      "Raises the temperature of the fish"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The salty surface is hypertonic to the cells of bacteria and fungi, so water leaves them by osmosis and they cannot grow. Sugar preserves jam in the same way."
+  },
+  {
+    "id": "JAMBBIO-T1-008",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "jambbioVariety",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Adaptation",
+    "stem": "A thick waxy cuticle on the leaves of savanna plants mainly helps them to:",
+    "options": [
+      "Take in more air",
+      "Absorb more light",
+      "Reduce water loss",
+      "Trap insect prey"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A waxy cuticle cuts down evaporation from the leaf surface, a structural adaptation to the long dry season. It does nothing to increase light or gas uptake."
+  },
+  {
+    "id": "JAMBBIO-T1-009",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "jambbioNutrition",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Photosynthesis",
+    "stem": "What are the raw materials for photosynthesis?",
+    "options": [
+      "Carbon(IV) oxide and oxygen",
+      "Water and glucose",
+      "Oxygen and glucose",
+      "Carbon(IV) oxide and water"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Green plants use light energy to build glucose from carbon(IV) oxide and water, releasing oxygen. Oxygen and glucose are the products."
+  },
+  {
+    "id": "JAMBBIO-T1-010",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "jambbioNutrition",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Food tests",
+    "stem": "A food sample turns blue-black when iodine solution is added. The sample contains:",
+    "options": [
+      "Starch",
+      "Reducing sugar",
+      "Protein",
+      "Fat"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Iodine gives a blue-black colour with starch. Reducing sugars give a brick-red precipitate with Benedict's or Fehling's solution."
+  },
+  {
+    "id": "JAMBBIO-T1-011",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "jambbioNutrition",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Food classes",
+    "stem": "Scurvy, with bleeding gums, is caused by lack of:",
+    "options": [
+      "Vitamin B1",
+      "Vitamin D",
+      "Vitamin A",
+      "Vitamin C"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Vitamin C (ascorbic acid), found in oranges and fresh vegetables, is needed for healthy gums and skin. Lack of vitamin D causes rickets."
+  },
+  {
+    "id": "JAMBBIO-T1-012",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "jambbioNutrition",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Digestion",
+    "stem": "Ptyalin in saliva begins the digestion of:",
+    "options": [
+      "Nucleic acids",
+      "Starch",
+      "Fats",
+      "Proteins"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Ptyalin, salivary amylase, turns cooked starch into maltose. Protein digestion starts in the stomach with pepsin."
+  },
+  {
+    "id": "JAMBBIO-T1-013",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "jambbioNutrition",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Teeth",
+    "stem": "Which teeth of a sheep are best suited to grinding grass?",
+    "options": [
+      "Incisors and canines",
+      "Canines",
+      "Premolars and molars",
+      "Lower incisors"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The broad ridged cheek teeth grind tough grass. A sheep has no upper incisors or canines: the lower incisors bite against a horny pad."
+  },
+  {
+    "id": "JAMBBIO-T1-014",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "jambbioNutrition",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Modes of nutrition",
+    "stem": "Loranthus growing on an orange tree draws water and mineral salts from its host through:",
+    "options": [
+      "Rhizoids",
+      "Tendrils",
+      "Pneumatophores",
+      "Haustoria"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Haustoria are special roots that grow into the host's xylem. Loranthus is green, so it still makes its own food: it is a partial parasite."
+  },
+  {
+    "id": "JAMBBIO-T1-015",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "jambbioTransport",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Transport in plants",
+    "stem": "Water and mineral salts move up a flowering plant mainly in the:",
+    "options": [
+      "Phloem",
+      "Epidermis",
+      "Xylem",
+      "Cortex"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Xylem vessels carry water and dissolved minerals from the roots to the leaves. Phloem carries manufactured food."
+  },
+  {
+    "id": "JAMBBIO-T1-016",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "jambbioTransport",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Blood",
+    "stem": "Red blood cells carry oxygen because they contain:",
+    "options": [
+      "Fibrinogen",
+      "Antibodies",
+      "Plasma proteins",
+      "Haemoglobin"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Haemoglobin, an iron-containing pigment, combines loosely with oxygen in the lungs and releases it in the tissues. Fibrinogen is a clotting protein."
+  },
+  {
+    "id": "JAMBBIO-T1-017",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "jambbioTransport",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Circulation",
+    "stem": "Which blood vessel carries oxygenated blood from the lungs to the heart?",
+    "options": [
+      "Pulmonary vein",
+      "Vena cava",
+      "Pulmonary artery",
+      "Aorta"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The pulmonary veins are the only veins carrying oxygenated blood. The pulmonary artery takes deoxygenated blood from the heart to the lungs."
+  },
+  {
+    "id": "JAMBBIO-T1-018",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "jambbioTransport",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Anaerobic respiration",
+    "stem": "Yeast respiring without oxygen produces:",
+    "options": [
+      "Oxygen and glucose",
+      "Ethanol and carbon(IV) oxide",
+      "Water and carbon(IV) oxide",
+      "Lactic acid and carbon(IV) oxide"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Alcoholic fermentation in yeast gives ethanol and carbon(IV) oxide, used in palm wine and bread making. Muscle without enough oxygen makes lactic acid."
+  },
+  {
+    "id": "JAMBBIO-T1-019",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "jambbioTransport",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Excretion",
+    "stem": "The tube that carries urine from each kidney to the bladder is the:",
+    "options": [
+      "Ureter",
+      "Renal vein",
+      "Urethra",
+      "Loop of Henle"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Each kidney drains into a ureter leading to the bladder. The urethra carries urine from the bladder out of the body."
+  },
+  {
+    "id": "JAMBBIO-T1-020",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "jambbioTransport",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Support",
+    "stem": "The joint at the hip is a:",
+    "options": [
+      "Ball-and-socket joint",
+      "Pivot joint",
+      "Fixed (fibrous) joint",
+      "Hinge joint"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The rounded head of the femur fits a cup in the pelvis, allowing movement in many planes. The knee is a hinge joint."
+  },
+  {
+    "id": "JAMBBIO-T1-021",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "jambbioReproduction",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pollination",
+    "stem": "Which feature suggests that a flower is pollinated by wind?",
+    "options": [
+      "Sticky pollen grains",
+      "Long feathery stigmas",
+      "Brightly coloured petals",
+      "Nectar guides"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Wind-pollinated flowers such as maize and grasses have large feathery stigmas to catch light, smooth pollen. Scent, nectar and sticky pollen attract insects."
+  },
+  {
+    "id": "JAMBBIO-T1-022",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "jambbioReproduction",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Fertilisation in plants",
+    "stem": "After fertilisation in a flower, the ovule develops into the:",
+    "options": [
+      "Pericarp",
+      "Fruit",
+      "Seed",
+      "Receptacle"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The fertilised ovule becomes the seed and the ovary around it becomes the fruit, its wall forming the pericarp."
+  },
+  {
+    "id": "JAMBBIO-T1-023",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "jambbioReproduction",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Human reproduction",
+    "stem": "In humans, fertilisation normally takes place in the:",
+    "options": [
+      "Ovary",
+      "Oviduct",
+      "Vagina",
+      "Uterine wall"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The egg is fertilised in the oviduct (fallopian tube) and the young embryo then moves down to implant in the wall of the uterus."
+  },
+  {
+    "id": "JAMBBIO-T1-024",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "jambbioReproduction",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Germination",
+    "stem": "Cowpea seeds are set up in three tubes at room temperature: tube 1 on dry cotton wool, tube 2 on moist cotton wool, and tube 3 under boiled, cooled water topped with a layer of oil. Only the seeds in tube 2 germinate. The seeds in tube 3 failed mainly because they lacked:",
+    "options": [
+      "Light",
+      "Warmth",
+      "Water",
+      "Oxygen"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Boiling drives the dissolved air out of the water and the oil stops more from dissolving, so the seeds have water and warmth but no oxygen for respiration. Tube 1 shows the need for water."
+  },
+  {
+    "id": "JAMBBIO-T1-025",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "jambbioReproduction",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Nervous system",
+    "stem": "In a reflex arc, impulses travel from the receptor towards the spinal cord along the:",
+    "options": [
+      "White matter of the brain",
+      "Relay neurone",
+      "Motor neurone",
+      "Sensory neurone"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The sensory neurone carries the impulse in, a relay neurone in the spinal cord passes it on, and the motor neurone carries it out to the effector."
+  },
+  {
+    "id": "JAMBBIO-T1-026",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "jambbioReproduction",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hormones",
+    "stem": "Insulin from the pancreas:",
+    "options": [
+      "Raises blood sugar",
+      "Controls growth of bones",
+      "Lowers blood sugar",
+      "Speeds up the heart"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Insulin makes the liver and muscles take up glucose and store it as glycogen. Glucagon and adrenaline raise blood sugar."
+  },
+  {
+    "id": "JAMBBIO-T1-027",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "jambbioEcology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Food chains",
+    "stem": "In a food chain, the producers are the:",
+    "options": [
+      "Herbivores",
+      "Decomposers",
+      "Top carnivores",
+      "Green plants"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Green plants make food from simple substances using light, so every food chain starts with them. Herbivores are primary consumers."
+  },
+  {
+    "id": "JAMBBIO-T1-028",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "jambbioEcology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Energy flow",
+    "stem": "As energy passes along a food chain, the amount available at each higher level:",
+    "options": [
+      "Doubles",
+      "Increases",
+      "Stays the same",
+      "Decreases"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Much energy is lost as heat in respiration and in uneaten or undigested material, so only a small fraction passes to the next level."
+  },
+  {
+    "id": "JAMBBIO-T1-029",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "jambbioEcology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ecological factors",
+    "stem": "Which of these is a biotic factor affecting a population of rats in a farm store?",
+    "options": [
+      "Predation by cats",
+      "Air temperature",
+      "Amount of light",
+      "Relative humidity"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Biotic factors come from other living things: predators, parasites, competitors and food supply. Temperature, humidity and light are abiotic."
+  },
+  {
+    "id": "JAMBBIO-T1-030",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "jambbioEcology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ecological instruments",
+    "stem": "A Secchi disc is used to measure the:",
+    "options": [
+      "Turbidity of water",
+      "Humidity of the air",
+      "Speed of the wind",
+      "Salinity of water"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The disc is lowered until it just disappears; the depth shows how far light gets through the water. A hygrometer measures humidity."
+  },
+  {
+    "id": "JAMBBIO-T1-031",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "jambbioEcology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Symbiosis",
+    "stem": "Rhizobium living in the root nodules of groundnut is an example of:",
+    "options": [
+      "Parasitism",
+      "Predation",
+      "Commensalism",
+      "Mutualism"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The bacteria fix nitrogen for the plant and receive sugars and shelter in return, so both partners benefit."
+  },
+  {
+    "id": "JAMBBIO-T1-032",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "jambbioEcology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Diseases",
+    "stem": "Malaria is transmitted from person to person by the female:",
+    "options": [
+      "Housefly",
+      "Culex mosquito",
+      "Anopheles mosquito",
+      "Tsetse fly (Glossina)"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Plasmodium parasite develops in the female Anopheles and enters a person when she bites. Tsetse flies carry the trypanosomes of sleeping sickness."
+  },
+  {
+    "id": "JAMBBIO-T1-033",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "jambbioEcology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Habitats",
+    "stem": "The pneumatophores of mangrove trees in the Niger Delta help them to:",
+    "options": [
+      "Store water for the dry season",
+      "Trap insects for nitrogen",
+      "Climb towards the light",
+      "Get oxygen in waterlogged mud"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Mangrove mud has little oxygen, so breathing roots grow up above the mud and take in air through pores."
+  },
+  {
+    "id": "JAMBBIO-T1-034",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "jambbioEcology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Soil",
+    "stem": "Compared with sandy soil, clay soil has:",
+    "options": [
+      "Good water retention, poor aeration",
+      "More air spaces and less water",
+      "Larger particles and better drainage",
+      "Poor water retention and good aeration"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Clay particles are very fine, so clay holds water well but has small air spaces and drains slowly. Sandy soil drains fast and dries out."
+  },
+  {
+    "id": "JAMBBIO-T1-035",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "jambbioGenetics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Monohybrid cross",
+    "stem": "In a plant, red flower colour (R) is dominant to white (r). A heterozygous red plant is crossed with a white plant. What ratio of red to white offspring is expected?",
+    "options": [
+      "1 : 1",
+      "1 : 2 : 1",
+      "3 : 1",
+      "All red"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Rr x rr gives Rr, Rr, rr and rr: half red and half white, a 1 : 1 ratio. A 3 : 1 ratio comes from crossing two heterozygotes, Rr x Rr."
+  },
+  {
+    "id": "JAMBBIO-T1-036",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "jambbioGenetics",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Variation",
+    "stem": "Which is an example of discontinuous variation in humans?",
+    "options": [
+      "Height",
+      "ABO blood group",
+      "Length of the foot",
+      "Body mass"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Blood groups fall into clear classes with no in-betweens. Height, mass and hand span vary continuously across a range."
+  },
+  {
+    "id": "JAMBBIO-T1-037",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "jambbioGenetics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sex determination",
+    "stem": "How many autosomes (chromosomes other than the sex chromosomes) does a normal human sperm cell carry?",
+    "options": [
+      "22",
+      "23",
+      "44",
+      "46"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "A sperm has 23 chromosomes, one set: 22 autosomes and one sex chromosome, X or Y. A body cell has 46, which is 44 autosomes and XX or XY."
+  },
+  {
+    "id": "JAMBBIO-T1-038",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "jambbioGenetics",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Genes",
+    "stem": "Genes are found on the:",
+    "options": [
+      "Mitochondrial wall",
+      "Cell membrane",
+      "Ribosomes",
+      "Chromosomes"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Genes are lengths of DNA arranged along the chromosomes in the nucleus, each controlling a characteristic."
+  },
+  {
+    "id": "JAMBBIO-T1-039",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "jambbioGenetics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Theories of evolution",
+    "stem": "Lamarck's theory of evolution was based on:",
+    "options": [
+      "Natural selection",
+      "Mutation of genes by radiation",
+      "Survival of the fittest",
+      "Use and disuse of organs"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Lamarck held that organs used more grow stronger and that such acquired changes are inherited. Natural selection was Darwin's idea."
+  },
+  {
+    "id": "JAMBBIO-T1-040",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "jambbioGenetics",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Evidence of evolution",
+    "stem": "Remains of ancient organisms preserved in rock are called:",
+    "options": [
+      "Hybrids",
+      "Vestiges",
+      "Embryos",
+      "Fossils"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Fossils in older and younger rock layers show how groups of organisms changed over time."
+  },
+  {
+    "id": "JAMBBIO-T2-001",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "jambbioVariety",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Cell organelles",
+    "stem": "What is the main function of the ribosomes in a cell?",
+    "options": [
+      "Protein synthesis",
+      "Storing starch",
+      "Dividing the nucleus",
+      "Releasing energy"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Ribosomes join amino acids into proteins. Energy release is the work of the mitochondria, and starch is stored in plastids."
+  },
+  {
+    "id": "JAMBBIO-T2-002",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "jambbioVariety",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Protista",
+    "stem": "Euglena has been placed with both plants and animals because it:",
+    "options": [
+      "Makes spores and has a skeleton",
+      "Has chloroplasts and moves freely",
+      "Has a cellulose wall and cilia",
+      "Feeds on bacteria and has true roots"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Euglena photosynthesises with chloroplasts like a plant but swims with a flagellum and can feed heterotrophically in the dark like an animal."
+  },
+  {
+    "id": "JAMBBIO-T2-003",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "jambbioVariety",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Bryophytes",
+    "stem": "A moss plant lacks which of these?",
+    "options": [
+      "Spore-bearing capsules",
+      "Chlorophyll",
+      "Rhizoids",
+      "True vascular tissue"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Mosses have no xylem or phloem, which keeps them small and in damp places. They do have chlorophyll, rhizoids for anchorage and capsules that release spores."
+  },
+  {
+    "id": "JAMBBIO-T2-004",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "jambbioVariety",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Annelida",
+    "stem": "The earthworm belongs to the phylum:",
+    "options": [
+      "Annelida",
+      "Arthropoda",
+      "Platyhelminthes",
+      "Nematoda"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Annelids have a body divided into ring-like segments, as in the earthworm. Roundworms (Nematoda) are not segmented and flatworms (Platyhelminthes) are flattened."
+  },
+  {
+    "id": "JAMBBIO-T2-005",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "jambbioVariety",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Classification",
+    "stem": "In the scientific name of the housefly, Musca domestica, the word domestica is the name of the:",
+    "options": [
+      "Subspecies",
+      "Genus",
+      "Species",
+      "Family"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "In binomial nomenclature the first word, with a capital letter, is the genus and the second word is the species."
+  },
+  {
+    "id": "JAMBBIO-T2-006",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "jambbioVariety",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Osmosis",
+    "stem": "A plant cell placed in a concentrated salt solution will become:",
+    "options": [
+      "Plasmolysed",
+      "Burst",
+      "Fully turgid",
+      "Swollen"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Water leaves the cell by osmosis into the stronger solution, so the protoplast shrinks away from the wall. The cellulose wall stops a plant cell from bursting in water."
+  },
+  {
+    "id": "JAMBBIO-T2-007",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "jambbioVariety",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Aves",
+    "stem": "Which feature is found only in birds among living animals?",
+    "options": [
+      "Hard-shelled eggs",
+      "Lungs",
+      "Feathers",
+      "A beak-like mouth"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Only birds have feathers. Tortoises have beak-like mouths, and reptiles also lay eggs with shells."
+  },
+  {
+    "id": "JAMBBIO-T2-008",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "jambbioVariety",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Coelenterata",
+    "stem": "Hydra has a body wall made of only two layers of cells, so it is described as:",
+    "options": [
+      "Bilaterally symmetrical",
+      "Diploblastic",
+      "Segmented",
+      "Triploblastic"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Coelenterates have an outer ectoderm and inner endoderm with jelly-like mesogloea between. Flatworms and all higher animals are triploblastic."
+  },
+  {
+    "id": "JAMBBIO-T2-009",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "jambbioNutrition",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Photosynthesis",
+    "stem": "Which products of the light stage are used in the dark stage to turn carbon(IV) oxide into sugar?",
+    "options": [
+      "Reduced NADP and ATP",
+      "Glucose and starch",
+      "Chlorophyll and light",
+      "Oxygen and water"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The light stage splits water and makes ATP and reduced NADP, which supply the energy and hydrogen to reduce carbon(IV) oxide in the stroma. Oxygen is released as a by-product."
+  },
+  {
+    "id": "JAMBBIO-T2-010",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "jambbioNutrition",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mineral requirements",
+    "stem": "A maize crop short of nitrogen will most likely show:",
+    "options": [
+      "Purple tinge on the older leaves",
+      "Yellow leaves and poor growth",
+      "Wilting only at midday",
+      "Scorched leaf edges"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Nitrogen is needed for proteins and chlorophyll, so lack of it gives chlorosis and stunting. A purple tinge points to phosphorus and scorched edges to potassium."
+  },
+  {
+    "id": "JAMBBIO-T2-011",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "jambbioNutrition",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Food tests",
+    "stem": "A translucent spot on paper that does not dry away shows the food contains:",
+    "options": [
+      "Starch",
+      "Protein",
+      "Reducing sugar",
+      "Fat or oil"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Fats and oils leave a permanent greasy spot that lets light through. A water spot dries off and leaves nothing."
+  },
+  {
+    "id": "JAMBBIO-T2-012",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "jambbioNutrition",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Food classes",
+    "stem": "Marasmus, with a wasted body in an infant, is caused mainly by a diet lacking:",
+    "options": [
+      "Iodine and calcium",
+      "Food energy overall",
+      "Fibre and drinking water",
+      "Vitamin A and iron"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Marasmus results from too little food of all kinds, so the body uses up its own fat and muscle. Kwashiorkor is mainly a shortage of protein."
+  },
+  {
+    "id": "JAMBBIO-T2-013",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "jambbioNutrition",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Digestion",
+    "stem": "Bile made in the liver is stored in the:",
+    "options": [
+      "Pancreas",
+      "Urinary bladder",
+      "Duodenum",
+      "Gall bladder"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The gall bladder stores and concentrates bile, then releases it into the duodenum through the bile duct when fatty food arrives."
+  },
+  {
+    "id": "JAMBBIO-T2-014",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "jambbioNutrition",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Absorption",
+    "stem": "The villi on the inner wall of the ileum help mainly by:",
+    "options": [
+      "Increasing the surface for absorption",
+      "Grinding the food finely",
+      "Secreting hydrochloric acid into the gut",
+      "Storing bile for later use"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Millions of finger-like villi, each with capillaries and a lacteal, greatly enlarge the absorbing surface. Acid is secreted in the stomach."
+  },
+  {
+    "id": "JAMBBIO-T2-015",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "jambbioTransport",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Transport in plants",
+    "stem": "Sugars are translocated through the phloem in the:",
+    "options": [
+      "Tracheids",
+      "Xylem vessels",
+      "Root hairs",
+      "Sieve tubes"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Phloem sieve tubes, helped by companion cells, carry sucrose from leaves to growing and storage parts. Xylem vessels and tracheids carry water."
+  },
+  {
+    "id": "JAMBBIO-T2-016",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "jambbioTransport",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Transpiration",
+    "stem": "Transpiration is fastest on a day that is:",
+    "options": [
+      "Humid and windless",
+      "Cold and wet",
+      "Hot, dry and windy",
+      "Cool, humid and still"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Heat speeds evaporation, dry air keeps the gradient steep and wind carries away the moist air around the leaf."
+  },
+  {
+    "id": "JAMBBIO-T2-017",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "jambbioTransport",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Blood",
+    "stem": "Which plasma protein is changed into insoluble threads of fibrin when blood clots?",
+    "options": [
+      "Fibrinogen",
+      "Insulin",
+      "Haemoglobin",
+      "Albumin"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "At a wound, thrombin converts soluble fibrinogen into fibrin threads, which form a mesh that traps blood cells. Haemoglobin is in red cells, not plasma."
+  },
+  {
+    "id": "JAMBBIO-T2-018",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "jambbioTransport",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Respiratory organs",
+    "stem": "In a cockroach, air enters the body through the:",
+    "options": [
+      "Mouthparts",
+      "Spiracles",
+      "Gills",
+      "Lungs"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Insects breathe through spiracles along the sides of the body, which open into a system of tracheae reaching every tissue."
+  },
+  {
+    "id": "JAMBBIO-T2-019",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "jambbioTransport",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Excretion in plants",
+    "stem": "Gases pass in and out of the woody stem of a tree through:",
+    "options": [
+      "Hydathodes",
+      "Root hairs",
+      "Lenticels",
+      "Stomata"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Lenticels are loose patches of cells in the bark that allow gas exchange. Stomata are mostly on leaves."
+  },
+  {
+    "id": "JAMBBIO-T2-020",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "jambbioTransport",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Support",
+    "stem": "The exoskeleton of an insect is made mainly of:",
+    "options": [
+      "Bone",
+      "Cartilage",
+      "Cellulose",
+      "Chitin"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The insect's outer skeleton is chitin, which must be shed (moulted) for the insect to grow. Cellulose makes plant cell walls."
+  },
+  {
+    "id": "JAMBBIO-T2-021",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "jambbioReproduction",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Vegetative propagation",
+    "stem": "Cassava is usually propagated by:",
+    "options": [
+      "Seeds",
+      "Suckers",
+      "Leaf cuttings",
+      "Stem cuttings"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Farmers plant pieces of cassava stem, which grow roots and shoots. Plantain and banana are grown from suckers."
+  },
+  {
+    "id": "JAMBBIO-T2-022",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "jambbioReproduction",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Germination",
+    "stem": "In epigeal germination, as in the cowpea, the cotyledons:",
+    "options": [
+      "Stay below the soil surface",
+      "Form the young shoot",
+      "Are carried above the soil",
+      "Grow into the roots"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The hypocotyl lengthens and lifts the cotyledons out of the soil. In hypogeal germination, as in maize, the seed stays below ground."
+  },
+  {
+    "id": "JAMBBIO-T2-023",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "jambbioReproduction",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Human reproduction",
+    "stem": "The placenta allows the foetus to:",
+    "options": [
+      "Breathe air through the uterus wall",
+      "Store milk for after birth",
+      "Exchange materials with the mother",
+      "Mix its blood with the mother's"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Food and oxygen diffuse from mother to foetus and wastes pass back, but the two blood supplies stay separate."
+  },
+  {
+    "id": "JAMBBIO-T2-024",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "jambbioReproduction",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Plant hormones",
+    "stem": "A shoot lit from one side bends towards the light because auxin:",
+    "options": [
+      "Is destroyed in the tip by light",
+      "Collects on the lit side",
+      "Collects on the shaded side",
+      "Moves down to the roots"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Auxin moves to the shaded side, whose cells grow longer, so the shoot curves towards the light. This is positive phototropism."
+  },
+  {
+    "id": "JAMBBIO-T2-025",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "jambbioReproduction",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sense organs",
+    "stem": "Which cells of the retina work best in dim light?",
+    "options": [
+      "Cones",
+      "Rods",
+      "Ciliary muscles",
+      "Lens fibres"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Rods are very sensitive to light but do not detect colour. Cones need bright light and give colour vision."
+  },
+  {
+    "id": "JAMBBIO-T2-026",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "jambbioReproduction",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Nervous system",
+    "stem": "A tap just below the kneecap makes the leg kick before the person is aware of the tap. Which part of the central nervous system links the sensory and motor neurones in this reflex?",
+    "options": [
+      "Cerebrum",
+      "Cerebellum",
+      "Medulla oblongata",
+      "Spinal cord"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The knee jerk is a spinal reflex: the impulse passes from the sensory to the motor neurone in the spinal cord, so the leg moves before the message reaches the cerebrum, where awareness happens."
+  },
+  {
+    "id": "JAMBBIO-T2-027",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "jambbioEcology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Nutrient cycles",
+    "stem": "Bacteria and fungi that feed on dead organisms are important because they:",
+    "options": [
+      "Fix oxygen from the air for plants",
+      "Eat the herbivores",
+      "Make food by photosynthesis",
+      "Return nutrients to the soil"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Decomposers break down dead matter and wastes, releasing minerals that plants take up again."
+  },
+  {
+    "id": "JAMBBIO-T2-028",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "jambbioEcology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Food chains",
+    "stem": "Organisms that feed directly on green plants are called:",
+    "options": [
+      "Producers",
+      "Secondary consumers",
+      "Decomposers",
+      "Primary consumers"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Herbivores such as grasshoppers and goats are primary consumers. Animals that eat them are secondary consumers."
+  },
+  {
+    "id": "JAMBBIO-T2-029",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "jambbioEcology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Symbiosis",
+    "stem": "An orchid growing on a tree trunk without harming the tree is an example of:",
+    "options": [
+      "Mutualism",
+      "Commensalism",
+      "Competition",
+      "Partial parasitism"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The epiphytic orchid gains a place in the light; the tree neither gains nor loses. A parasite such as dodder would harm it."
+  },
+  {
+    "id": "JAMBBIO-T2-030",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "jambbioEcology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Population studies",
+    "stem": "A quadrat is used to estimate the:",
+    "options": [
+      "Total rainfall of an area each year",
+      "Number of plants in an area",
+      "Speed of a river",
+      "Age of a tree"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Plants are counted in square frames placed at random, and the average is scaled up to the whole area."
+  },
+  {
+    "id": "JAMBBIO-T2-031",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "jambbioEcology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Habitats",
+    "stem": "Which vegetation zone of Nigeria receives the highest annual rainfall?",
+    "options": [
+      "Tropical rainforest",
+      "Southern Guinea savanna",
+      "Sahel savanna",
+      "Sudan savanna"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Rainfall decreases from the coast inland: the forest belt of the south, where the swamp forests and rainforest lie, is wettest and the Sahel in the far north is driest."
+  },
+  {
+    "id": "JAMBBIO-T2-032",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "jambbioEcology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Diseases",
+    "stem": "River blindness (onchocerciasis) is spread by the bite of the:",
+    "options": [
+      "Sandfly",
+      "Blackfly",
+      "Tsetse fly",
+      "Housefly"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Simulium blackflies breed in fast-flowing rivers and carry the worm Onchocerca, which can damage the eyes."
+  },
+  {
+    "id": "JAMBBIO-T2-033",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "jambbioEcology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pollution",
+    "stem": "Oil spilled in the creeks of the Niger Delta kills fish and mangroves mainly by:",
+    "options": [
+      "Cutting off oxygen to gills and roots",
+      "Raising the water temperature",
+      "Adding nitrates to the water",
+      "Making the water too salty"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A film of oil stops oxygen dissolving into the water and coats gills and breathing roots. Nitrates cause eutrophication instead."
+  },
+  {
+    "id": "JAMBBIO-T2-034",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "jambbioEcology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Conservation",
+    "stem": "Which practice best conserves soil on a sloping farm?",
+    "options": [
+      "Contour ploughing",
+      "Bush burning",
+      "Ploughing down the slope",
+      "Overgrazing"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Ridges across the slope slow running water so it soaks in instead of washing soil away. Ploughing down the slope speeds up erosion."
+  },
+  {
+    "id": "JAMBBIO-T2-035",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "jambbioGenetics",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Genetic terms",
+    "stem": "An organism with the genotype Rr is described as:",
+    "options": [
+      "A pure line",
+      "Homozygous dominant",
+      "Heterozygous",
+      "Homozygous recessive"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "It has two different alleles of the gene. RR is homozygous dominant and rr homozygous recessive."
+  },
+  {
+    "id": "JAMBBIO-T2-036",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "jambbioGenetics",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Sickle cell",
+    "stem": "Both parents have the genotype AS. What is the chance that their child will be SS?",
+    "options": [
+      "25%",
+      "50%",
+      "75%",
+      "100%"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "AS x AS gives AA, AS, AS and SS, so one in four children, 25%, is expected to be SS. Half are expected to be AS carriers."
+  },
+  {
+    "id": "JAMBBIO-T2-037",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "jambbioGenetics",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Variation",
+    "stem": "Which characteristic shows continuous variation?",
+    "options": [
+      "Tongue rolling",
+      "Height",
+      "Blood group",
+      "Ability to taste PTC"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Height takes any value across a range and plots as a smooth curve. The others are either present or absent."
+  },
+  {
+    "id": "JAMBBIO-T2-038",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "jambbioGenetics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mutation",
+    "stem": "A sudden change in the structure of a gene or chromosome is a:",
+    "options": [
+      "Mitosis",
+      "Mutation",
+      "Pollination",
+      "Fertilisation"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Mutations arise from copying errors or from radiation and some chemicals. They are a source of new variation."
+  },
+  {
+    "id": "JAMBBIO-T2-039",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "jambbioGenetics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Theories of evolution",
+    "stem": "Darwin explained evolution mainly by:",
+    "options": [
+      "Special creation",
+      "Spontaneous generation",
+      "Use and disuse",
+      "Natural selection"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Organisms vary, more are born than survive, and those best fitted to their surroundings survive to breed and pass on their traits."
+  },
+  {
+    "id": "JAMBBIO-T2-040",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "jambbioGenetics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Evidence of evolution",
+    "stem": "The forelimbs of a bat, a whale and a man share the same basic bone plan. They are:",
+    "options": [
+      "Analogous structures",
+      "Vestigial structures",
+      "Homologous structures",
+      "Acquired characteristics"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The same five-fingered limb plan modified for flying, swimming and grasping points to a common ancestor."
+  },
+  {
+    "id": "JAMBBIO-D-001",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioVariety",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Living things",
+    "stem": "A candle flame uses oxygen and gives out heat. Which feature of living things does it lack?",
+    "options": [
+      "Reproduction",
+      "Release of energy",
+      "Use of oxygen",
+      "Giving off carbon(IV) oxide"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Burning, like respiration, uses oxygen, releases energy and gives off carbon(IV) oxide. A flame cannot reproduce, grow from within or respond as an organism does."
+  },
+  {
+    "id": "JAMBBIO-D-002",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioVariety",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Cell organelles",
+    "stem": "Which organelle contains enzymes that digest worn-out parts of the cell?",
+    "options": [
+      "Lysosome",
+      "Nucleolus",
+      "Golgi body",
+      "Centriole"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Lysosomes are membrane sacs of digestive enzymes. The Golgi body packages substances for secretion and the nucleolus makes ribosomes."
+  },
+  {
+    "id": "JAMBBIO-D-003",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioVariety",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cell organelles",
+    "stem": "In an animal cell, the centrioles help to:",
+    "options": [
+      "Form the spindle in division",
+      "Control what enters the cell",
+      "Make proteins",
+      "Store food reserves"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Centrioles organise the spindle fibres that pull chromosomes apart during cell division. Most plant cells divide without them."
+  },
+  {
+    "id": "JAMBBIO-D-004",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioVariety",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Cell structure",
+    "stem": "Which part of a cell controls the passage of substances in and out?",
+    "options": [
+      "Nucleus",
+      "Cell membrane",
+      "Cell wall",
+      "Vacuole"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The cell membrane is selectively permeable. A plant cell wall is fully permeable and only gives shape and support."
+  },
+  {
+    "id": "JAMBBIO-D-005",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioVariety",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Protista",
+    "stem": "Amoeba moves and captures its food by means of:",
+    "options": [
+      "Pseudopodia",
+      "Tentacles",
+      "Flagella",
+      "Cilia"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Amoeba pushes out finger-like pseudopodia, which also flow round food particles to form food vacuoles."
+  },
+  {
+    "id": "JAMBBIO-D-006",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioVariety",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Monera",
+    "stem": "Blue-green algae are placed in the kingdom:",
+    "options": [
+      "Fungi",
+      "Monera",
+      "Protista",
+      "Plantae"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Blue-green algae (cyanobacteria) are prokaryotes with no nuclear membrane, like bacteria, so they belong to Monera despite their colour."
+  },
+  {
+    "id": "JAMBBIO-D-007",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioVariety",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pteridophytes",
+    "stem": "Ferns differ from mosses in having:",
+    "options": [
+      "A gametophyte stage",
+      "Spores",
+      "Chlorophyll",
+      "Vascular tissue"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Ferns have xylem and phloem and true roots, stems and leaves. Both groups make spores, photosynthesise and have a gametophyte stage."
+  },
+  {
+    "id": "JAMBBIO-D-008",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioVariety",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Spermatophytes",
+    "stem": "Gymnosperms such as pines differ from flowering plants because their seeds:",
+    "options": [
+      "Are carried in pods",
+      "Are not enclosed in a fruit",
+      "Have no food store inside them",
+      "Are never wind dispersed"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Gymnosperm means naked seed: the ovules sit exposed on cone scales. In flowering plants the ovule is enclosed in an ovary that becomes the fruit."
+  },
+  {
+    "id": "JAMBBIO-D-009",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioVariety",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Monocots and dicots",
+    "stem": "Which feature of a maize leaf shows that maize is a monocotyledon?",
+    "options": [
+      "A broad blade",
+      "A long petiole",
+      "Parallel veins",
+      "Net veins"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Monocot leaves have parallel venation; dicots such as hibiscus have a network of veins. Maize also has one seed leaf and fibrous roots."
+  },
+  {
+    "id": "JAMBBIO-D-010",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioVariety",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Platyhelminthes",
+    "stem": "The tapeworm belongs to the phylum:",
+    "options": [
+      "Annelida",
+      "Coelenterata",
+      "Platyhelminthes",
+      "Nematoda"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Tapeworms are flatworms with a flattened body and flame cells. Their chain of proglottids is not true segmentation like that of annelids."
+  },
+  {
+    "id": "JAMBBIO-D-011",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioVariety",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Insecta",
+    "stem": "How many pairs of legs does an adult insect have?",
+    "options": [
+      "3",
+      "4",
+      "6",
+      "8"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Insects have three pairs, one on each segment of the thorax, so six legs in all. Spiders have four pairs."
+  },
+  {
+    "id": "JAMBBIO-D-012",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioVariety",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Arachnida",
+    "stem": "A spider differs from a housefly in having:",
+    "options": [
+      "Four pairs of legs",
+      "A pair of antennae",
+      "Three body parts",
+      "Wings on the thorax"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Arachnids have four pairs of legs and two body parts, and no antennae or wings. The housefly, an insect, has three pairs of legs and three body parts."
+  },
+  {
+    "id": "JAMBBIO-D-013",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioVariety",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Mollusca",
+    "stem": "The giant African land snail belongs to the phylum:",
+    "options": [
+      "Echinodermata",
+      "Mollusca",
+      "Annelida",
+      "Arthropoda"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Molluscs have a soft unsegmented body with a muscular foot and usually a shell. Echinoderms such as starfish are marine."
+  },
+  {
+    "id": "JAMBBIO-D-014",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioVariety",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Amphibia",
+    "stem": "A toad can take in oxygen through its skin because the skin is:",
+    "options": [
+      "Thin, moist and full of capillaries",
+      "Thick and lined with fat",
+      "Covered in dry horny scales like a lizard's",
+      "Hard and full of keratin"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Amphibian skin is kept moist by mucus and has many capillaries, so gases dissolve and diffuse across it. Dry scaly skin, as in lizards, prevents this."
+  },
+  {
+    "id": "JAMBBIO-D-015",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioVariety",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Mammalia",
+    "stem": "Which pair of features is found in all mammals?",
+    "options": [
+      "Hair and mammary glands",
+      "Feathers and a beak",
+      "Scales and gills",
+      "Dry skin and shelled eggs"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Mammals have hair and feed their young on milk from mammary glands. Even the egg-laying mammals have both."
+  },
+  {
+    "id": "JAMBBIO-D-016",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioVariety",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pisces",
+    "stem": "In a fish such as Tilapia, the lateral line detects:",
+    "options": [
+      "Light and shade",
+      "Vibrations in the water",
+      "Salt in the water",
+      "Dissolved oxygen"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The lateral line is a row of sense organs along each side that pick up pressure changes, helping the fish sense movement and keep in a shoal."
+  },
+  {
+    "id": "JAMBBIO-D-017",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioVariety",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Diffusion",
+    "stem": "Oxygen enters an Amoeba from the surrounding water by:",
+    "options": [
+      "Diffusion",
+      "Phagocytosis",
+      "Osmosis",
+      "Active transport"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Oxygen is more concentrated in the water than in the cell, so it diffuses in across the membrane. Osmosis refers to water only."
+  },
+  {
+    "id": "JAMBBIO-D-018",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioVariety",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Active transport",
+    "stem": "Roots in a nutrient solution are given a poison that stops respiration. Their uptake of potassium ions stops, although water still enters. The ions were being taken up by:",
+    "options": [
+      "Transpiration",
+      "Active transport",
+      "Diffusion",
+      "Osmosis"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Only active transport depends on energy from respiration, so stopping respiration stops it. Water enters by osmosis, which needs no energy from the cell."
+  },
+  {
+    "id": "JAMBBIO-D-019",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioVariety",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Levels of organisation",
+    "stem": "Volvox is an example of which level of organisation?",
+    "options": [
+      "Tissue",
+      "Organ",
+      "Colony",
+      "Single cell"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Volvox is a hollow ball of many similar cells joined together, a colony. Chlamydomonas, its relative, is a single cell."
+  },
+  {
+    "id": "JAMBBIO-D-020",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioVariety",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Monera",
+    "stem": "Bacteria differ from Amoeba in lacking:",
+    "options": [
+      "Ribosomes",
+      "A nuclear membrane",
+      "A cell membrane",
+      "Cytoplasm"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Bacteria are prokaryotes: their DNA lies free in the cytoplasm with no membrane round it. They do have cytoplasm, ribosomes and a cell membrane."
+  },
+  {
+    "id": "JAMBBIO-D-021",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioVariety",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Adaptation",
+    "stem": "Bats in a Nigerian cave rest by day and hunt insects at night. This is an example of:",
+    "options": [
+      "A behavioural adaptation",
+      "A structural adaptation",
+      "A functional adaptation",
+      "A change of body colour"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Being active at night is something the animal does, so it is behavioural. A structural adaptation is a body part, such as the wing membrane, and a functional one is a body process."
+  },
+  {
+    "id": "JAMBBIO-D-022",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioVariety",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Evolutionary trends",
+    "stem": "Which trend is seen as plants move from algae to flowering plants?",
+    "options": [
+      "Loss of vascular tissue",
+      "A shift from sporophyte to gametophyte",
+      "More dependence on water for fertilisation",
+      "Less dependence on water for fertilisation"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Algae and mosses need water for sperm to swim; flowering plants use pollen tubes. The sporophyte, not the gametophyte, becomes the dominant stage."
+  },
+  {
+    "id": "JAMBBIO-D-023",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioVariety",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Fungi",
+    "stem": "Unlike green plants, fungi:",
+    "options": [
+      "Lack a true nucleus in each cell",
+      "Have no cell walls",
+      "Never form spores",
+      "Cannot make their own food"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Fungi have no chlorophyll, so they feed as saprophytes or parasites. They have walls (of chitin), true nuclei and usually reproduce by spores."
+  },
+  {
+    "id": "JAMBBIO-D-024",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioNutrition",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Modes of nutrition",
+    "stem": "Nitrosomonas obtains energy to make its food by oxidising ammonium compounds. This is:",
+    "options": [
+      "Chemosynthesis",
+      "Parasitism",
+      "Photosynthesis",
+      "Saprophytism"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Chemosynthetic bacteria use energy from chemical oxidation instead of light to build organic food, so they are autotrophs without chlorophyll."
+  },
+  {
+    "id": "JAMBBIO-D-025",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioNutrition",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Modes of nutrition",
+    "stem": "Sundew and bladderwort trap insects mainly to obtain:",
+    "options": [
+      "Glucose",
+      "Nitrogen",
+      "Oxygen",
+      "Water"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "These carnivorous plants grow in poor, waterlogged soils and digest insects for their nitrogen. They still make carbohydrate by photosynthesis."
+  },
+  {
+    "id": "JAMBBIO-D-026",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioNutrition",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Digestion",
+    "stem": "Pepsin acts on proteins in the stomach, where conditions are:",
+    "options": [
+      "Alkaline",
+      "Neutral",
+      "Acidic",
+      "Strongly basic"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Hydrochloric acid from the gastric glands gives pepsin the low pH it needs and kills many germs. Trypsin in the duodenum works in alkaline conditions."
+  },
+  {
+    "id": "JAMBBIO-D-027",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioNutrition",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Digestion",
+    "stem": "Lipase breaks fats down into:",
+    "options": [
+      "Amino acids",
+      "Fatty acids and glycerol",
+      "Glucose and fructose",
+      "Maltose"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Lipase from the pancreas and intestine splits fats into fatty acids and glycerol, which are absorbed mainly into the lacteals."
+  },
+  {
+    "id": "JAMBBIO-D-028",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioNutrition",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Digestion",
+    "stem": "The end products of protein digestion are:",
+    "options": [
+      "Simple sugars",
+      "Amino acids",
+      "Peptones only",
+      "Fatty acids"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Pepsin and trypsin break proteins into peptides, and erepsin finishes the job, giving amino acids for absorption into the blood."
+  },
+  {
+    "id": "JAMBBIO-D-029",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioNutrition",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Food classes",
+    "stem": "Rickets, with soft bent leg bones in children, is caused by lack of:",
+    "options": [
+      "Vitamin D",
+      "Vitamin B2",
+      "Vitamin K",
+      "Vitamin C"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Vitamin D is needed to absorb calcium for bone. Sunlight on the skin makes it, and fish liver oil and eggs supply it."
+  },
+  {
+    "id": "JAMBBIO-D-030",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioNutrition",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Teeth",
+    "stem": "How many teeth does a full adult human set have?",
+    "options": [
+      "20",
+      "28",
+      "30",
+      "32"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The dental formula i 2/2, c 1/1, pm 2/2, m 3/3 gives 16 teeth on each side, 32 in all. A child's milk set has 20."
+  },
+  {
+    "id": "JAMBBIO-D-031",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioNutrition",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Teeth",
+    "stem": "A dog uses its carnassial teeth for:",
+    "options": [
+      "Grinding grass",
+      "Gnawing wood",
+      "Shearing flesh",
+      "Holding struggling prey"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The large last upper premolar and first lower molar slide past each other like scissors to cut meat. The long canines hold prey."
+  },
+  {
+    "id": "JAMBBIO-D-032",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioNutrition",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Photosynthesis",
+    "stem": "The dark (light-independent) stage of photosynthesis takes place in the:",
+    "options": [
+      "Grana",
+      "Stroma",
+      "Cell wall",
+      "Stomata"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Carbon(IV) oxide is fixed into sugar in the fluid stroma of the chloroplast. The light stage, which splits water, happens in the grana."
+  },
+  {
+    "id": "JAMBBIO-D-033",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioNutrition",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Photosynthesis",
+    "stem": "In photosynthesis, the role of chlorophyll is to:",
+    "options": [
+      "Store starch",
+      "Release carbon(IV) oxide",
+      "Absorb light energy",
+      "Take in water"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Chlorophyll traps light energy, which drives the splitting of water and the making of ATP in the light stage."
+  },
+  {
+    "id": "JAMBBIO-D-034",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioNutrition",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Photosynthesis",
+    "stem": "Part of a destarched leaf is covered with black paper and the plant left in sunlight. The covered part gives no blue-black colour with iodine. This shows that:",
+    "options": [
+      "Chlorophyll is needed for starch",
+      "Oxygen is given off",
+      "Carbon(IV) oxide is needed",
+      "Light is needed to make starch"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Only the light was taken away from the covered part, so light must be necessary. The rest of the leaf was the control."
+  },
+  {
+    "id": "JAMBBIO-D-035",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioNutrition",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Photosynthesis",
+    "stem": "A destarched potted plant is enclosed with a dish of potassium hydroxide solution. Its leaves later show no starch because the solution:",
+    "options": [
+      "Blocks the light",
+      "Absorbs water vapour",
+      "Absorbs oxygen",
+      "Absorbs carbon(IV) oxide"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Potassium hydroxide removes carbon(IV) oxide from the air in the enclosure, so the plant cannot make starch. A plant with no such dish is the control."
+  },
+  {
+    "id": "JAMBBIO-D-036",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioNutrition",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mineral requirements",
+    "stem": "Which element forms part of the chlorophyll molecule?",
+    "options": [
+      "Potassium",
+      "Calcium",
+      "Iron",
+      "Magnesium"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Each chlorophyll molecule has a magnesium atom at its centre, so lack of magnesium causes yellowing. Iron is needed to make chlorophyll but is not part of it."
+  },
+  {
+    "id": "JAMBBIO-D-037",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioNutrition",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Supporting tissues",
+    "stem": "Which plant tissue has thick lignified walls and strengthens mature stems?",
+    "options": [
+      "Sclerenchyma",
+      "Phloem",
+      "Collenchyma",
+      "Parenchyma"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Sclerenchyma fibres are dead cells with lignin in their walls. Collenchyma, with cellulose thickening at the corners, supports young growing stems."
+  },
+  {
+    "id": "JAMBBIO-D-038",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioNutrition",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Internal structure",
+    "stem": "In a cross-section of a young dicot stem, the vascular bundles are:",
+    "options": [
+      "Scattered all over",
+      "In a central star",
+      "In two separate rows",
+      "Arranged in a ring"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Dicot stems have bundles in a ring with cambium between xylem and phloem. Monocot stems have scattered bundles, and in a dicot root the xylem forms a central star."
+  },
+  {
+    "id": "JAMBBIO-D-039",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioNutrition",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Modes of nutrition",
+    "stem": "Which organism feeds holozoically?",
+    "options": [
+      "Loranthus",
+      "Nitrosomonas",
+      "Mushroom",
+      "Man"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Holozoic feeding means taking in solid food and then digesting it, as animals do. The mushroom is a saprophyte, Loranthus a parasite and Nitrosomonas chemosynthetic."
+  },
+  {
+    "id": "JAMBBIO-D-040",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioNutrition",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Modes of nutrition",
+    "stem": "A mushroom growing on a rotting log is feeding as a:",
+    "options": [
+      "Parasite",
+      "Saprophyte",
+      "Producer",
+      "Predator"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Saprophytes secrete enzymes onto dead organic matter and absorb the products. A parasite feeds on a living host."
+  },
+  {
+    "id": "JAMBBIO-D-041",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioNutrition",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Food tests",
+    "stem": "Benedict's solution heated with a reducing sugar gives a:",
+    "options": [
+      "Blue-black colour",
+      "Purple colour",
+      "Milky white emulsion",
+      "Brick-red precipitate"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The blue solution changes through green and yellow to brick red. A purple colour is the biuret test for protein."
+  },
+  {
+    "id": "JAMBBIO-D-042",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioNutrition",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Food tests",
+    "stem": "In the biuret test, a positive result for protein is a:",
+    "options": [
+      "Blue-black colour",
+      "Greasy spot",
+      "Brick-red colour",
+      "Purple colour"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Copper ions in alkaline solution give a violet or purple colour with peptide bonds. The solution stays blue if there is no protein."
+  },
+  {
+    "id": "JAMBBIO-D-043",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioNutrition",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Absorption",
+    "stem": "In the large intestine, the main substance absorbed from undigested food is:",
+    "options": [
+      "Amino acids",
+      "Fatty acids",
+      "Water",
+      "Glucose"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Digested food is absorbed in the ileum; the colon reabsorbs much of the remaining water, so the faeces become firmer."
+  },
+  {
+    "id": "JAMBBIO-D-044",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioTransport",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Transport in plants",
+    "stem": "The main force that pulls water to the top of a tall tree is:",
+    "options": [
+      "Transpiration pull",
+      "Gravity",
+      "Osmosis in the leaves",
+      "Root pressure"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Water evaporating from the leaves pulls a continuous column of water up the xylem. Root pressure alone lifts water only a short way."
+  },
+  {
+    "id": "JAMBBIO-D-045",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioTransport",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Transpiration",
+    "stem": "A potometer is used to measure the rate at which a leafy shoot:",
+    "options": [
+      "Gives off oxygen",
+      "Takes up water",
+      "Releases heat",
+      "Makes starch"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A potometer tracks an air bubble moving along a capillary as the shoot draws up water, which is nearly the rate of transpiration."
+  },
+  {
+    "id": "JAMBBIO-D-046",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioTransport",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Circulation",
+    "stem": "In a fish such as Tilapia, blood goes from the heart to the gills and then straight on to the rest of the body before returning. This is called:",
+    "options": [
+      "Single circulation",
+      "Pulmonary circulation",
+      "Open circulation",
+      "Double circulation"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Blood passes through the fish heart only once per circuit, so it is a single circulation. Mammals and birds send blood back to the heart after the lungs, a double circulation; insects have an open one."
+  },
+  {
+    "id": "JAMBBIO-D-047",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioTransport",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Heart",
+    "stem": "The left ventricle has the thickest wall of the heart because it:",
+    "options": [
+      "Holds the most blood",
+      "Pumps blood to the lungs and back",
+      "Receives blood from the lungs",
+      "Pumps blood round the whole body"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The left ventricle must push blood at high pressure through the aorta to every organ. The right ventricle pumps only to the nearby lungs."
+  },
+  {
+    "id": "JAMBBIO-D-048",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioTransport",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Circulation",
+    "stem": "Valves in the veins of the legs:",
+    "options": [
+      "Filter germs from blood",
+      "Add oxygen to the blood",
+      "Stop blood flowing backwards",
+      "Push blood towards the feet"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Blood in veins is at low pressure, so pocket valves keep it moving towards the heart as muscles squeeze the veins."
+  },
+  {
+    "id": "JAMBBIO-D-049",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioTransport",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Blood",
+    "stem": "Which white blood cells engulf and digest bacteria?",
+    "options": [
+      "Lymphocytes",
+      "Erythrocytes",
+      "Phagocytes",
+      "Platelets"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Phagocytes surround germs and digest them, a process called phagocytosis. Lymphocytes defend the body by making antibodies."
+  },
+  {
+    "id": "JAMBBIO-D-050",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioTransport",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Blood groups",
+    "stem": "A person of blood group O is called a universal donor because their red cells:",
+    "options": [
+      "Carry both A and B antigens",
+      "Carry no A or B antigens",
+      "Contain no haemoglobin",
+      "Have no cell membrane"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "With no A or B antigens on the red cells, group O blood is not clumped by the recipient's antibodies. Group AB people are universal recipients."
+  },
+  {
+    "id": "JAMBBIO-D-051",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioTransport",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Lymph",
+    "stem": "The lymphatic system helps by:",
+    "options": [
+      "Carrying oxygen to tissues",
+      "Returning tissue fluid to the blood",
+      "Pumping oxygenated blood to the lungs",
+      "Making red blood cells"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Excess tissue fluid drains into lymph vessels and returns to the blood near the heart. Lymph nodes also filter out germs."
+  },
+  {
+    "id": "JAMBBIO-D-052",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioTransport",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Aerobic respiration",
+    "stem": "When glucose is fully oxidised in aerobic respiration, the products are energy and:",
+    "options": [
+      "Carbon(IV) oxide and water",
+      "Lactic acid only",
+      "Ethanol and carbon(IV) oxide",
+      "Oxygen and water"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Aerobic respiration breaks glucose down completely, giving carbon(IV) oxide, water and much more energy than anaerobic respiration."
+  },
+  {
+    "id": "JAMBBIO-D-053",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioTransport",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Anaerobic respiration",
+    "stem": "During a long sprint, a runner's leg muscles ache because of a build-up of:",
+    "options": [
+      "Glycogen",
+      "Lactic acid",
+      "Ethanol",
+      "Urea"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "When oxygen supply cannot keep up, muscle respires anaerobically and lactic acid builds up, causing fatigue. Extra oxygen is used afterwards to remove it."
+  },
+  {
+    "id": "JAMBBIO-D-054",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioTransport",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Respiratory organs",
+    "stem": "Alveoli suit gas exchange because their walls are:",
+    "options": [
+      "Thin and moist",
+      "Lined with cilia",
+      "Made of cartilage",
+      "Thick and dry"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Each alveolus has a wall one cell thick, a moist lining and a dense net of capillaries. Cartilage rings support the trachea, not the alveoli."
+  },
+  {
+    "id": "JAMBBIO-D-055",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioTransport",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Breathing",
+    "stem": "During breathing in, the diaphragm:",
+    "options": [
+      "Contracts and flattens",
+      "Contracts and domes upwards",
+      "Relaxes and domes upwards",
+      "Relaxes and flattens"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The diaphragm muscle contracts and flattens, enlarging the chest cavity so pressure falls and air rushes in. It relaxes and domes up during breathing out."
+  },
+  {
+    "id": "JAMBBIO-D-056",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioTransport",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Excretion",
+    "stem": "Urea is formed in the:",
+    "options": [
+      "Bladder",
+      "Kidney",
+      "Liver",
+      "Pancreas"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The liver deaminates excess amino acids, turning the amino groups into urea. The kidneys only remove urea from the blood."
+  },
+  {
+    "id": "JAMBBIO-D-057",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioTransport",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Excretion",
+    "stem": "In the nephron, ultrafiltration of the blood takes place at the:",
+    "options": [
+      "Collecting duct",
+      "Glomerulus and Bowman's capsule",
+      "Loop of Henle and distal tubule",
+      "Renal vein"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "High pressure in the glomerulus forces water and small molecules into Bowman's capsule. Useful substances are reabsorbed further along the tubule."
+  },
+  {
+    "id": "JAMBBIO-D-058",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioTransport",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Excretion",
+    "stem": "When the body is short of water, antidiuretic hormone (ADH) makes the kidney:",
+    "options": [
+      "Filter more blood",
+      "Make more urea",
+      "Reabsorb more water",
+      "Excrete more salt"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "ADH from the pituitary makes the collecting ducts more permeable, so more water returns to the blood and the urine becomes concentrated."
+  },
+  {
+    "id": "JAMBBIO-D-059",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioTransport",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Excretion",
+    "stem": "Apart from water, sweat removes:",
+    "options": [
+      "Salts and a little urea",
+      "Carbon(IV) oxide only",
+      "Bile pigments",
+      "Glucose and amino acids"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Sweat glands release water with mineral salts and a small amount of urea, so the skin is an excretory organ as well as a cooling one."
+  },
+  {
+    "id": "JAMBBIO-D-060",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioTransport",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Excretion in animals",
+    "stem": "The excretory organs of an insect are the:",
+    "options": [
+      "Malpighian tubules",
+      "Contractile vacuoles",
+      "Flame cells",
+      "Nephridia"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Malpighian tubules remove nitrogenous waste into the gut. Earthworms use nephridia and flatworms flame cells."
+  },
+  {
+    "id": "JAMBBIO-D-061",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioTransport",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Osmoregulation",
+    "stem": "In Amoeba living in fresh water, the contractile vacuole:",
+    "options": [
+      "Expels excess water",
+      "Stores oxygen",
+      "Digests food",
+      "Makes proteins"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Water keeps entering Amoeba by osmosis; the contractile vacuole collects it and pumps it out so the cell does not burst."
+  },
+  {
+    "id": "JAMBBIO-D-062",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioTransport",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Support",
+    "stem": "The elbow and the knee are examples of:",
+    "options": [
+      "Fixed joints",
+      "Pivot joints",
+      "Hinge joints",
+      "Ball-and-socket joints"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Hinge joints move in one plane only, like a door. The joints between skull bones are fixed."
+  },
+  {
+    "id": "JAMBBIO-D-063",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioTransport",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Support",
+    "stem": "Which vertebra allows the head to turn from side to side?",
+    "options": [
+      "Axis",
+      "Lumbar",
+      "Sacral",
+      "Atlas"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The atlas turns on the peg of the axis, letting the head rotate. The atlas itself supports the skull and allows nodding."
+  },
+  {
+    "id": "JAMBBIO-D-064",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioReproduction",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Fruits",
+    "stem": "After fertilisation, the wall of the ovary becomes the:",
+    "options": [
+      "Pericarp",
+      "Testa",
+      "Embryo",
+      "Endosperm"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The ovary wall becomes the pericarp of the fruit. The testa, the seed coat, comes from the integuments of the ovule."
+  },
+  {
+    "id": "JAMBBIO-D-065",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioReproduction",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Dispersal",
+    "stem": "Fruits with a parachute of hairs, such as those of Tridax, are dispersed by:",
+    "options": [
+      "Wind",
+      "Water",
+      "Explosion",
+      "Animals"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Light fruits with hairs or wings drift on air currents. Hooked fruits cling to animals and some pods split explosively."
+  },
+  {
+    "id": "JAMBBIO-D-066",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioReproduction",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Fruits",
+    "stem": "A mango, with a fleshy outside and a hard stony layer round the seed, is a:",
+    "options": [
+      "Drupe",
+      "Berry",
+      "Capsule",
+      "Legume"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "In a drupe the inner pericarp is hard and stony. A berry such as tomato is fleshy all through, and a legume is a pod."
+  },
+  {
+    "id": "JAMBBIO-D-067",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioReproduction",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pollination",
+    "stem": "Cross-pollination is an advantage to a plant species because it:",
+    "options": [
+      "Keeps the offspring identical to parents",
+      "Always gives more seeds",
+      "Increases variation in the offspring",
+      "Needs no outside agent"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Combining genes from two plants gives varied offspring, some better able to survive change. Self-pollination keeps the line uniform."
+  },
+  {
+    "id": "JAMBBIO-D-068",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioReproduction",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Hormones",
+    "stem": "Which hormone controls male secondary sexual characteristics?",
+    "options": [
+      "Prolactin",
+      "Progesterone",
+      "Oestrogen",
+      "Testosterone"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Testosterone from the testes brings on a deeper voice, facial hair and muscle growth at puberty."
+  },
+  {
+    "id": "JAMBBIO-D-069",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioReproduction",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hormones",
+    "stem": "Which hormone stimulates the mammary glands to produce milk after birth?",
+    "options": [
+      "Prolactin",
+      "Testosterone",
+      "Thyroxine",
+      "Progesterone"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Prolactin from the pituitary starts and keeps up milk production. Progesterone maintains the uterine lining during pregnancy."
+  },
+  {
+    "id": "JAMBBIO-D-070",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioReproduction",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Menstrual cycle",
+    "stem": "In a regular 28-day menstrual cycle counted from the first day of bleeding, ovulation usually occurs around day:",
+    "options": [
+      "5",
+      "14",
+      "21",
+      "28"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The egg is usually released about midway, around day 14. Days 1 to 5 are the period of bleeding."
+  },
+  {
+    "id": "JAMBBIO-D-071",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioReproduction",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Life cycles",
+    "stem": "The housefly passes through which stages in its life cycle?",
+    "options": [
+      "Egg, adult only",
+      "Egg, larva, pupa, adult",
+      "Egg, nymph, adult",
+      "Egg, tadpole, adult"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The housefly has complete metamorphosis: the maggot (larva) becomes a pupa before the adult emerges. The cockroach goes from egg to nymph to adult."
+  },
+  {
+    "id": "JAMBBIO-D-072",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioReproduction",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Life cycles",
+    "stem": "A young cockroach that looks like a small wingless adult is called a:",
+    "options": [
+      "Tadpole",
+      "Pupa",
+      "Larva",
+      "Nymph"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Cockroaches and grasshoppers have incomplete metamorphosis: the nymph moults several times, growing wings at the last moult."
+  },
+  {
+    "id": "JAMBBIO-D-073",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioReproduction",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Growth",
+    "stem": "The most reliable measure of growth in a plant is the increase in its:",
+    "options": [
+      "Number of leaves",
+      "Height",
+      "Dry weight",
+      "Fresh weight"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Dry weight measures the actual organic matter added. Fresh weight changes with water content, and height ignores growth in girth."
+  },
+  {
+    "id": "JAMBBIO-D-074",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioReproduction",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Growth",
+    "stem": "In plants, growth in length takes place mainly at the:",
+    "options": [
+      "Seed coat",
+      "Leaf veins",
+      "Lateral roots",
+      "Apical meristems"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Meristems at the tips of roots and shoots keep dividing, adding length. Cambium adds girth."
+  },
+  {
+    "id": "JAMBBIO-D-075",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioReproduction",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hormones",
+    "stem": "Swelling in the neck called goitre is linked with lack of iodine for making:",
+    "options": [
+      "Thyroxine",
+      "Insulin",
+      "Adrenaline",
+      "Oxytocin"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The thyroid uses iodine to make thyroxine, which controls metabolic rate. Iodised salt prevents goitre."
+  },
+  {
+    "id": "JAMBBIO-D-076",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioReproduction",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Hormones",
+    "stem": "Which hormone prepares the body for sudden action in fear or anger?",
+    "options": [
+      "Progesterone",
+      "Insulin",
+      "Adrenaline",
+      "Thyroxine"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Adrenaline from the adrenal glands speeds the heart and breathing and raises blood sugar for fight or flight."
+  },
+  {
+    "id": "JAMBBIO-D-077",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioReproduction",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hormones",
+    "stem": "Too much growth hormone in childhood causes gigantism. Which gland makes this hormone?",
+    "options": [
+      "Pancreas",
+      "Pituitary",
+      "Adrenal",
+      "Thyroid"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Growth hormone comes from the pituitary gland at the base of the brain, which also controls several other endocrine glands."
+  },
+  {
+    "id": "JAMBBIO-D-078",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioReproduction",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Nervous system",
+    "stem": "A synapse is the:",
+    "options": [
+      "Cell body of a neurone",
+      "Junction between two neurones",
+      "Fatty sheath of a nerve fibre",
+      "Tip of a dendrite in the skin"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "At a synapse a chemical transmitter crosses a narrow gap, so impulses pass in one direction only."
+  },
+  {
+    "id": "JAMBBIO-D-079",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioReproduction",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Brain",
+    "stem": "Thinking, memory and voluntary actions are controlled by the:",
+    "options": [
+      "Spinal cord",
+      "Cerebellum",
+      "Cerebrum",
+      "Medulla oblongata"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The cerebrum, the largest part of the brain, handles intelligence, memory, speech and voluntary movement."
+  },
+  {
+    "id": "JAMBBIO-D-080",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioReproduction",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Brain",
+    "stem": "Breathing and heartbeat are controlled by the:",
+    "options": [
+      "Pituitary gland",
+      "Medulla oblongata",
+      "Cerebrum",
+      "Cerebellum"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The medulla oblongata controls involuntary actions such as breathing rate, heartbeat and swallowing."
+  },
+  {
+    "id": "JAMBBIO-D-081",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioReproduction",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Tropisms",
+    "stem": "Roots grow downwards because they are:",
+    "options": [
+      "Positively phototropic",
+      "Positively geotropic",
+      "Negatively hydrotropic",
+      "Negatively geotropic"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Roots respond to gravity by growing towards it. Shoots are negatively geotropic and grow upwards."
+  },
+  {
+    "id": "JAMBBIO-D-082",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioReproduction",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sense organs",
+    "stem": "In the middle ear, vibrations pass from the eardrum to the oval window through the:",
+    "options": [
+      "Ossicles",
+      "Eustachian tube",
+      "Cochlea",
+      "Semicircular canals"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The three ossicles (malleus, incus and stapes) carry and amplify the vibrations. The Eustachian tube only balances air pressure on the eardrum."
+  },
+  {
+    "id": "JAMBBIO-D-083",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioReproduction",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Sense organs",
+    "stem": "Short sight (myopia) is corrected with:",
+    "options": [
+      "Convex lenses",
+      "Concave lenses",
+      "Cylindrical lenses",
+      "Plane glass"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In short sight, images of distant objects form in front of the retina. A diverging (concave) lens moves them back onto it."
+  },
+  {
+    "id": "JAMBBIO-D-084",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioEcology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Nutrient cycles",
+    "stem": "When dead leaves rot, their carbon returns to the air as carbon(IV) oxide through:",
+    "options": [
+      "Decay by microorganisms",
+      "Fossil formation in rock",
+      "Transpiration",
+      "Photosynthesis"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Bacteria and fungi respire as they break down dead matter, releasing carbon(IV) oxide. Photosynthesis takes it out of the air."
+  },
+  {
+    "id": "JAMBBIO-D-085",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioEcology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Nutrient cycles",
+    "stem": "In the water cycle, plants add water vapour to the air by:",
+    "options": [
+      "Condensation",
+      "Infiltration",
+      "Precipitation",
+      "Transpiration"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Water evaporates from leaf cells and leaves through the stomata. Condensation forms clouds and precipitation brings the water down."
+  },
+  {
+    "id": "JAMBBIO-D-086",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioEcology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Habitats",
+    "stem": "The place where an organism lives is its:",
+    "options": [
+      "Population",
+      "Habitat",
+      "Niche",
+      "Biome"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A habitat is a home such as a pond or forest floor; a niche is the organism's role there, including what it eats and when it is active."
+  },
+  {
+    "id": "JAMBBIO-D-087",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioEcology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Population studies",
+    "stem": "A pupil counts 150 Tridax plants in a 30 m² plot. What is the population density in plants per m²?",
+    "options": [
+      "0.2",
+      "5",
+      "120",
+      "180"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Density is number divided by area: 150 / 30 = 5 plants per m². Dividing the other way gives 0.2."
+  },
+  {
+    "id": "JAMBBIO-D-088",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioEcology",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Population studies",
+    "stem": "40 grasshoppers are caught, marked and released. Later 50 are caught, of which 10 are marked. Estimate the population.",
+    "options": [
+      "80",
+      "100",
+      "125",
+      "200"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Population = (first catch x second catch) / marked recaptured = (40 x 50) / 10 = 200."
+  },
+  {
+    "id": "JAMBBIO-D-089",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioEcology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Symbiosis",
+    "stem": "A tapeworm living in the human intestine is an example of:",
+    "options": [
+      "Parasitism",
+      "Commensalism",
+      "Mutualism",
+      "Saprophytism"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The tapeworm absorbs digested food and gives nothing back, harming its host. That is parasitism."
+  },
+  {
+    "id": "JAMBBIO-D-090",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioEcology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Population studies",
+    "stem": "Maize seedlings planted too close together compete for light and nutrients. This is:",
+    "options": [
+      "Predation",
+      "Intraspecific competition",
+      "Mutualism",
+      "Interspecific competition"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Competition between members of the same species is intraspecific. Competition between maize and weeds would be interspecific."
+  },
+  {
+    "id": "JAMBBIO-D-091",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioEcology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Population studies",
+    "stem": "In a closed area, when the number of hawks rises, the number of chicks they eat usually:",
+    "options": [
+      "Rises",
+      "Doubles",
+      "Falls",
+      "Stays the same"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "More predators eat more prey, so the prey population falls; later the predators decline for lack of food and the cycle repeats."
+  },
+  {
+    "id": "JAMBBIO-D-092",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioEcology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Habitats",
+    "stem": "Water lettuce (Pistia) has large air spaces in its tissues, which help it to:",
+    "options": [
+      "Store water in drought",
+      "Absorb salt from seawater",
+      "Float and get oxygen",
+      "Trap and digest insects"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Aquatic plants have aerenchyma, air-filled tissue that gives buoyancy and lets oxygen reach submerged parts."
+  },
+  {
+    "id": "JAMBBIO-D-093",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioEcology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Symbiosis",
+    "stem": "A fungus grows on the roots of a tree, taking up minerals for the tree and receiving sugars from it. This association is called:",
+    "options": [
+      "A mycorrhiza",
+      "A root nodule",
+      "A lichen",
+      "A haustorium"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A mycorrhiza is a mutualism between a fungus and plant roots. A lichen pairs a fungus with an alga, root nodules hold nitrogen-fixing bacteria, and a haustorium is a parasite's feeding root."
+  },
+  {
+    "id": "JAMBBIO-D-094",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioEcology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Soil",
+    "stem": "Adding humus to soil improves it by:",
+    "options": [
+      "Killing soil organisms",
+      "Holding water and adding nutrients",
+      "Removing air from the soil",
+      "Making the soil more acidic and compact"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Humus, decayed organic matter, binds soil particles, holds water and releases minerals as it breaks down."
+  },
+  {
+    "id": "JAMBBIO-D-095",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioEcology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Soil",
+    "stem": "Which soil type is best for most crops?",
+    "options": [
+      "Sandy soil",
+      "Loamy soil",
+      "Gravel soil",
+      "Clay soil"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Loam mixes sand, silt, clay and humus, so it drains well yet holds water and nutrients."
+  },
+  {
+    "id": "JAMBBIO-D-096",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioEcology",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Pollution",
+    "stem": "Fertiliser washed into a pond causes algae to grow fast and fish to die. This is:",
+    "options": [
+      "Eutrophication",
+      "Biomagnification",
+      "Desertification",
+      "Acid rain"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Extra nitrates and phosphates feed an algal bloom; when the algae die, decomposers use up the dissolved oxygen and fish suffocate."
+  },
+  {
+    "id": "JAMBBIO-D-097",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioEcology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pollution",
+    "stem": "Acid rain harms plants and lakes mainly by:",
+    "options": [
+      "Raising the pH of soil and water",
+      "Adding nitrates to the soil only",
+      "Blocking sunlight from leaves",
+      "Lowering the pH of soil and water"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Sulphur and nitrogen oxides dissolve in rain to form acids, which leach minerals from soil and make lakes too acidic for many fish."
+  },
+  {
+    "id": "JAMBBIO-D-098",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioEcology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pollution",
+    "stem": "Chlorofluorocarbons (CFCs) released into the air damage the:",
+    "options": [
+      "Water table",
+      "Ozone layer",
+      "River banks",
+      "Soil structure"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "CFCs break down ozone in the upper atmosphere, letting more ultraviolet light reach the ground."
+  },
+  {
+    "id": "JAMBBIO-D-099",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioEcology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Humans and environment",
+    "stem": "In the far north of Nigeria, desertification is made worse by:",
+    "options": [
+      "Building check dams",
+      "Overgrazing and tree felling",
+      "Planting shelter belts",
+      "Mulching the farmland"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Removing plant cover leaves soil bare to wind and sun. Shelter belts of trees are one way to slow the desert."
+  },
+  {
+    "id": "JAMBBIO-D-100",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioEcology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Diseases",
+    "stem": "People catch guinea worm by:",
+    "options": [
+      "Being bitten by infected mosquitoes",
+      "Walking barefoot on soil",
+      "Eating undercooked pork",
+      "Drinking water containing Cyclops"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Tiny water fleas (Cyclops) carry the larvae; filtering or boiling drinking water breaks the cycle. Hookworm larvae enter through bare feet."
+  },
+  {
+    "id": "JAMBBIO-D-101",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioEcology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Diseases",
+    "stem": "The intermediate host of the blood fluke that causes schistosomiasis is a:",
+    "options": [
+      "Freshwater snail",
+      "Pig",
+      "Mosquito",
+      "Housefly"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Larvae from the snail enter the skin of people wading in infected water. Clearing snails and avoiding the water prevent infection."
+  },
+  {
+    "id": "JAMBBIO-D-102",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioEcology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Diseases",
+    "stem": "Cholera is caused by a:",
+    "options": [
+      "Bacterium",
+      "Virus",
+      "Fungus",
+      "Protozoan"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Vibrio cholerae is spread in water or food contaminated with faeces, causing severe watery diarrhoea. Measles is caused by a virus."
+  },
+  {
+    "id": "JAMBBIO-D-103",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioEcology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Food chains",
+    "stem": "In the chain phytoplankton, water flea, tilapia, kingfisher, the tilapia is a:",
+    "options": [
+      "Secondary consumer",
+      "Tertiary consumer",
+      "Primary consumer",
+      "Producer"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Phytoplankton are producers, the water flea eats them (primary), the tilapia eats water fleas (secondary) and the kingfisher is tertiary."
+  },
+  {
+    "id": "JAMBBIO-D-104",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioGenetics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mendel's laws",
+    "stem": "Mendel's first law states that the two factors for a characteristic:",
+    "options": [
+      "Always blend in the offspring",
+      "Pass only from the father",
+      "Are both dominant",
+      "Separate when gametes form"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Each gamete receives one factor of a pair: the law of segregation. Mendel showed that factors do not blend."
+  },
+  {
+    "id": "JAMBBIO-D-105",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioGenetics",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Test cross",
+    "stem": "To find whether a tall plant is TT or Tt, it is crossed with a:",
+    "options": [
+      "Tall plant (Tt)",
+      "Plant of another species",
+      "Dwarf plant (tt)",
+      "Tall plant (TT)"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "In a test cross with the homozygous recessive, any dwarf offspring show the tall parent was Tt. All tall offspring suggest TT."
+  },
+  {
+    "id": "JAMBBIO-D-106",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioGenetics",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Blood groups",
+    "stem": "Which blood group can a child of a parent with group AB never have?",
+    "options": [
+      "A",
+      "AB",
+      "B",
+      "O"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The AB parent always passes on an A or a B allele, so the child must have at least one of them. Group O needs two O alleles."
+  },
+  {
+    "id": "JAMBBIO-D-107",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioGenetics",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Sex linkage",
+    "stem": "A woman carries the allele for colour blindness on one X chromosome and her husband has normal vision. What fraction of their sons are expected to be colour blind?",
+    "options": [
+      "0%",
+      "25%",
+      "50%",
+      "100%"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Each son gets his only X from his mother: half receive the X with the allele and are colour blind. Daughters get a normal X from the father."
+  },
+  {
+    "id": "JAMBBIO-D-108",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioGenetics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Codominance",
+    "stem": "In the blood group AB, the A and B alleles are:",
+    "options": [
+      "Recessive",
+      "Codominant",
+      "Sex-linked",
+      "Lethal"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Both alleles are fully expressed, so the red cells carry both A and B antigens. The O allele is recessive to both."
+  },
+  {
+    "id": "JAMBBIO-D-109",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioGenetics",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Uses of variation",
+    "stem": "Fingerprints are useful in crime detection because they:",
+    "options": [
+      "Show a person's blood group",
+      "Differ from person to person",
+      "Are the same in close family",
+      "Change every year"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Fingerprint patterns are fixed for life and differ even between identical twins, so they identify individuals."
+  },
+  {
+    "id": "JAMBBIO-D-110",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioGenetics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Chromosomes",
+    "stem": "A housefly body cell has 12 chromosomes. How many chromosomes are in each of its gametes?",
+    "options": [
+      "6",
+      "12",
+      "18",
+      "24"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Meiosis halves the chromosome number, so each gamete has 6; fertilisation restores 12. 24 would be a doubled cell."
+  },
+  {
+    "id": "JAMBBIO-D-111",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioGenetics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cell division",
+    "stem": "Which type of cell division halves the chromosome number?",
+    "options": [
+      "Binary fission",
+      "Budding",
+      "Mitosis",
+      "Meiosis"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Meiosis takes place in the sex organs and makes gametes with one set of chromosomes. Mitosis keeps the number the same."
+  },
+  {
+    "id": "JAMBBIO-D-112",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioGenetics",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Dihybrid cross",
+    "stem": "A plant heterozygous for two unlinked genes (AaBb) is crossed with an aabb plant. The expected phenotypic ratio is:",
+    "options": [
+      "3 : 1",
+      "9 : 3 : 3 : 1",
+      "1 : 1 : 1 : 1",
+      "1 : 2 : 1"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "AaBb gives four kinds of gametes in equal numbers and aabb only ab, so the four phenotypes appear equally. 9 : 3 : 3 : 1 comes from AaBb x AaBb."
+  },
+  {
+    "id": "JAMBBIO-D-113",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioGenetics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Biotechnology",
+    "stem": "Bacteria given the human gene for insulin are an example of:",
+    "options": [
+      "Vegetative propagation",
+      "Genetic engineering",
+      "Natural selection",
+      "Cross-pollination"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A gene from one organism is inserted into another so that the bacteria make human insulin for diabetics."
+  },
+  {
+    "id": "JAMBBIO-D-114",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioGenetics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sickle cell",
+    "stem": "A couple who are both AS are advised to see a genetic counsellor mainly because:",
+    "options": [
+      "Their children will all be AA",
+      "They cannot have children",
+      "Their children may be SS",
+      "They have sickle cell disease"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "AS people are carriers without the disease, but each child of two carriers has a one in four chance of being SS."
+  },
+  {
+    "id": "JAMBBIO-D-115",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioGenetics",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Variation",
+    "stem": "Crossing over during meiosis is important because it:",
+    "options": [
+      "Produces new combinations of genes",
+      "Stops mutations happening",
+      "Doubles the number of chromosomes in gametes",
+      "Makes offspring identical"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Homologous chromosomes swap segments, so gametes carry new mixtures of alleles, increasing variation."
+  },
+  {
+    "id": "JAMBBIO-D-116",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioGenetics",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Linkage",
+    "stem": "Genes that lie close together on the same chromosome tend to be:",
+    "options": [
+      "Lost in meiosis",
+      "Inherited together",
+      "Always recessive",
+      "Found only in males"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Linked genes rarely separate during meiosis, so they do not assort independently as Mendel's pairs did."
+  },
+  {
+    "id": "JAMBBIO-D-117",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioGenetics",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Genetic terms",
+    "stem": "An allele that shows its effect even when only one copy is present is:",
+    "options": [
+      "Recessive",
+      "Dominant",
+      "Linked",
+      "Mutant"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A dominant allele masks the recessive one in a heterozygote, so Tt plants are tall."
+  },
+  {
+    "id": "JAMBBIO-D-118",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioGenetics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Evidence of evolution",
+    "stem": "Darwin's finches on the Galapagos Islands had beaks whose shape matched their:",
+    "options": [
+      "Age",
+      "Sex",
+      "Nest site",
+      "Diet"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Finches eating seeds, insects or cactus had beaks of different shapes, suggesting they evolved from one ancestor to fill different food niches."
+  },
+  {
+    "id": "JAMBBIO-D-119",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioGenetics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Evidence of evolution",
+    "stem": "Gill slits in the early embryos of mammals and birds are used as evidence from:",
+    "options": [
+      "Comparative embryology",
+      "Fossil records",
+      "Blood chemistry",
+      "Geographical distribution"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The embryos of different vertebrates look alike at early stages, which suggests they share an ancestry."
+  },
+  {
+    "id": "JAMBBIO-D-120",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioGenetics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Evidence of evolution",
+    "stem": "The wings of a bird and of a housefly do the same job but are built differently. They are:",
+    "options": [
+      "Pentadactyl limbs",
+      "Homologous structures",
+      "Vestigial structures",
+      "Analogous structures"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Analogous structures have the same function but different origins. Homologous structures share a plan but may do different jobs."
+  },
+  {
+    "id": "JAMBBIO-D-121",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioGenetics",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Evidence of evolution",
+    "stem": "The human appendix, which has no clear use today, is described as:",
+    "options": [
+      "Analogous",
+      "Dominant",
+      "Vestigial",
+      "Acquired"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Vestigial organs are reduced remains of structures that were useful in ancestors."
+  },
+  {
+    "id": "JAMBBIO-D-122",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioGenetics",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Natural selection",
+    "stem": "After factories made tree trunks sooty, dark peppered moths became more common than pale ones. This shows:",
+    "options": [
+      "Inheritance of acquired traits",
+      "Use and disuse",
+      "Natural selection",
+      "Spontaneous generation"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Birds found pale moths easily on dark bark, so dark moths survived to breed more often and their allele spread."
+  },
+  {
+    "id": "JAMBBIO-D-123",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "jambbioGenetics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Variation",
+    "stem": "The ability to roll the tongue is an example of:",
+    "options": [
+      "A sex-linked disorder",
+      "Continuous variation",
+      "Discontinuous variation",
+      "An acquired characteristic"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A person can or cannot roll the tongue, with nothing in between, so it is discontinuous. The syllabus lists it with PTC tasting as physiological variation."
+  }
+]

@@ -1,0 +1,4321 @@
+[
+  {
+    "id": "JAMBPHYS-T1-001",
+    "section": "phys",
+    "test": 1,
+    "module": 1,
+    "domain": "jambphysMotion",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Fundamental quantities",
+    "stem": "Which of these is a fundamental (base) quantity in the SI system?",
+    "options": [
+      "Pressure",
+      "Force",
+      "Energy",
+      "Electric current"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The seven SI base quantities include length, mass, time, electric current, temperature, amount of substance and luminous intensity. Force, pressure and energy are derived from them."
+  },
+  {
+    "id": "JAMBPHYS-T1-002",
+    "section": "phys",
+    "test": 1,
+    "module": 1,
+    "domain": "jambphysMotion",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Dimensions",
+    "stem": "What are the dimensions of momentum?",
+    "options": [
+      "MLT⁻¹",
+      "ML⁻¹T⁻¹",
+      "MLT⁻²",
+      "ML²T⁻²"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Momentum is mass times velocity, so its dimensions are M × LT⁻¹ = MLT⁻¹. MLT⁻² is force, which is the rate of change of momentum."
+  },
+  {
+    "id": "JAMBPHYS-T1-003",
+    "section": "phys",
+    "test": 1,
+    "module": 1,
+    "domain": "jambphysMotion",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Vector addition",
+    "stem": "Forces of 36 N and 77 N act on a body at right angles to each other. What is the magnitude of their resultant?",
+    "options": [
+      "41 N",
+      "77 N",
+      "85 N",
+      "113 N"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "At right angles the resultant is found by Pythagoras: √(36² + 77²) = √7225 = 85 N. Adding to 113 N is only correct when the forces act in the same direction, and 41 N when they act in opposite directions."
+  },
+  {
+    "id": "JAMBPHYS-T1-004",
+    "section": "phys",
+    "test": 1,
+    "module": 1,
+    "domain": "jambphysMotion",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Equations of motion",
+    "stem": "A car accelerates uniformly from 4 m s⁻¹ to 22 m s⁻¹ in 6 s. What is its acceleration?",
+    "options": [
+      "3 m s⁻²",
+      "3.667 m s⁻²",
+      "4.333 m s⁻²",
+      "18 m s⁻²"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Acceleration = change in velocity ÷ time = (22 - 4) ÷ 6 = 3 m s⁻². Dividing the final velocity alone by the time gives 3.667, which ignores the starting speed."
+  },
+  {
+    "id": "JAMBPHYS-T1-005",
+    "section": "phys",
+    "test": 1,
+    "module": 1,
+    "domain": "jambphysMotion",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Velocity-time graphs",
+    "stem": "A body starts from rest, accelerates uniformly to 15 m s⁻¹ in 5 s, then moves at 15 m s⁻¹ for a further 8 s. How far does it travel in the 13 s?",
+    "options": [
+      "37.5 m",
+      "97.5 m",
+      "120 m",
+      "157.5 m"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Distance is the area under the velocity-time graph: the triangle gives ½ × 5 × 15 = 37.5 m and the rectangle 8 × 15 = 120 m, so 157.5 m in all. Counting only the steady part gives 120 m, and only the speeding-up part 37.5 m."
+  },
+  {
+    "id": "JAMBPHYS-T1-006",
+    "section": "phys",
+    "test": 1,
+    "module": 1,
+    "domain": "jambphysMotion",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Free fall",
+    "stem": "A stone is dropped from rest and falls freely for 3.5 s. How far does it fall? (g = 10 m s⁻²)",
+    "options": [
+      "35 m",
+      "61.25 m",
+      "70 m",
+      "122.5 m"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "From s = ½gt², s = ½ × 10 × 3.5² = 61.25 m. Forgetting the ½ gives 122.5 m, and gt = 35 is the final speed in m s⁻¹, not a distance."
+  },
+  {
+    "id": "JAMBPHYS-T1-007",
+    "section": "phys",
+    "test": 1,
+    "module": 1,
+    "domain": "jambphysMotion",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Scalars and vectors",
+    "stem": "Which pair contains only vector quantities?",
+    "options": [
+      "Work and velocity",
+      "Speed and momentum",
+      "Displacement and impulse",
+      "Mass and weight"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Displacement and impulse both have direction. Speed, mass and work are scalars, so each of the other pairs contains one scalar."
+  },
+  {
+    "id": "JAMBPHYS-T1-008",
+    "section": "phys",
+    "test": 1,
+    "module": 1,
+    "domain": "jambphysForces",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Moments",
+    "stem": "A uniform metre rule of mass 120 g balances horizontally on a knife edge at the 35 cm mark when a mass m hangs at the 10 cm mark. What is m?",
+    "options": [
+      "48 g",
+      "72 g",
+      "120 g",
+      "180 g"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The rule's weight acts at the 50 cm mark, 15 cm from the pivot; m is 25 cm from it. Taking moments, m × 25 = 120 × 15, so m = 72 g. Swapping the distances gives 180 g."
+  },
+  {
+    "id": "JAMBPHYS-T1-009",
+    "section": "phys",
+    "test": 1,
+    "module": 1,
+    "domain": "jambphysForces",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Work",
+    "stem": "A boy pulls a box 12 m along level ground with a force of 80 N directed at 60° above the horizontal. How much work does the force do?",
+    "options": [
+      "40 J",
+      "480 J",
+      "831.4 J",
+      "960 J"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Only the component along the motion does work: W = Fd cos θ = 80 × 12 × 0.5 = 480 J. Using the full force gives 960 J, and using sin 60° gives 831.4 J."
+  },
+  {
+    "id": "JAMBPHYS-T1-010",
+    "section": "phys",
+    "test": 1,
+    "module": 1,
+    "domain": "jambphysForces",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Power",
+    "stem": "A crane lifts a 450 kg load through 16 m in 24 s. What is its average output power? (g = 10 m s⁻²)",
+    "options": [
+      "300 W",
+      "3000 W",
+      "4500 W",
+      "72000 W"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Power = mgh ÷ t = 450 × 10 × 16 ÷ 24 = 3000 W. 72000 is the work done in joules, before dividing by the time, and 300 W forgets g."
+  },
+  {
+    "id": "JAMBPHYS-T1-011",
+    "section": "phys",
+    "test": 1,
+    "module": 1,
+    "domain": "jambphysForces",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Friction",
+    "stem": "Which of these reduces friction between the moving parts of a machine?",
+    "options": [
+      "Roughening the surfaces",
+      "Fitting ball bearings",
+      "Removing the lubricant",
+      "Increasing the normal force"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Ball bearings replace sliding with rolling, and rolling friction is much smaller. The other three all increase friction."
+  },
+  {
+    "id": "JAMBPHYS-T1-012",
+    "section": "phys",
+    "test": 1,
+    "module": 1,
+    "domain": "jambphysForces",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Simple machines",
+    "stem": "A pulley system has a velocity ratio of 5 and an efficiency of 80%. What effort is needed to raise a load of 600 N?",
+    "options": [
+      "96 N",
+      "120 N",
+      "150 N",
+      "750 N"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Mechanical advantage = efficiency × velocity ratio = 0.8 × 5 = 4, so effort = 600 ÷ 4 = 150 N. 120 N assumes a perfect machine with MA equal to the velocity ratio."
+  },
+  {
+    "id": "JAMBPHYS-T1-013",
+    "section": "phys",
+    "test": 1,
+    "module": 1,
+    "domain": "jambphysForces",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Gravitational field",
+    "stem": "At the Earth's surface g = 10 m s⁻². What is g at a height of two Earth radii above the surface?",
+    "options": [
+      "1.111 m s⁻²",
+      "2.5 m s⁻²",
+      "3.333 m s⁻²",
+      "5 m s⁻²"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "At a height of 2R the distance from the Earth's centre is 3R. g falls as 1/r², so g = 10 ÷ 9 = 1.111 m s⁻². 2.5 uses 2R as the distance from the centre."
+  },
+  {
+    "id": "JAMBPHYS-T1-014",
+    "section": "phys",
+    "test": 1,
+    "module": 1,
+    "domain": "jambphysForces",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Elasticity",
+    "stem": "A spring stretches 1.6 cm under a load of 40 N. How much elastic energy does it store when stretched 4 cm, within its elastic limit?",
+    "options": [
+      "2 J",
+      "4 J",
+      "50 J",
+      "100 J"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "k = 40 ÷ 0.016 = 2500 N m⁻¹, so E = ½kx² = ½ × 2500 × 0.04² = 2 J. Leaving out the ½ gives 4 J, and kx = 100 is the force in newtons."
+  },
+  {
+    "id": "JAMBPHYS-T1-015",
+    "section": "phys",
+    "test": 1,
+    "module": 1,
+    "domain": "jambphysHeat",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pressure in liquids",
+    "stem": "What is the pressure due to the water alone at a depth of 14 m in a lake? (Density of water = 1000 kg m⁻³, g = 10 m s⁻²)",
+    "options": [
+      "14 kPa",
+      "140 kPa",
+      "240 kPa",
+      "1400 kPa"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "p = hρg = 14 × 1000 × 10 = 140000 Pa = 140 kPa. 240 kPa adds atmospheric pressure, which the question leaves out."
+  },
+  {
+    "id": "JAMBPHYS-T1-016",
+    "section": "phys",
+    "test": 1,
+    "module": 1,
+    "domain": "jambphysHeat",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Archimedes' principle",
+    "stem": "A stone weighs 3.2 N in air and 2.0 N when fully immersed in water. What is its relative density?",
+    "options": [
+      "0.375",
+      "1.2",
+      "1.6",
+      "2.667"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Upthrust = loss of weight = 1.2 N. Relative density = weight in air ÷ loss of weight in water = 3.2 ÷ 1.2 = 2.667. 1.6 divides by the weight in water instead."
+  },
+  {
+    "id": "JAMBPHYS-T1-017",
+    "section": "phys",
+    "test": 1,
+    "module": 1,
+    "domain": "jambphysHeat",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Thermometers",
+    "stem": "The mercury column of an unmarked thermometer is 4 cm long in melting ice and 29 cm long in steam. What temperature does a reading of 23.5 cm show?",
+    "options": [
+      "22 °C",
+      "62 °C",
+      "67.24 °C",
+      "78 °C"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "θ = (23.5 - 4) ÷ (29 - 4) × 100 = 19.5 ÷ 25 × 100 = 78 °C. 67.24 °C divides by the whole 29 cm column instead of the 25 cm between the fixed points."
+  },
+  {
+    "id": "JAMBPHYS-T1-018",
+    "section": "phys",
+    "test": 1,
+    "module": 1,
+    "domain": "jambphysHeat",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Linear expansion",
+    "stem": "A steel rail is 25 m long. By how much does it expand when its temperature rises by 35 K? (Linear expansivity of steel = 1.2 × 10⁻⁵ K⁻¹)",
+    "options": [
+      "0.0105 mm",
+      "0.42 mm",
+      "1.05 mm",
+      "10.5 mm"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "ΔL = αLΔθ = 1.2 × 10⁻⁵ × 25 × 35 = 0.0105 m = 10.5 mm. 0.0105 is the answer in metres, and 0.42 mm forgets the length of the rail."
+  },
+  {
+    "id": "JAMBPHYS-T1-019",
+    "section": "phys",
+    "test": 1,
+    "module": 1,
+    "domain": "jambphysHeat",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Boyle's law",
+    "stem": "A gas occupies 360 cm³ at a pressure of 75 cmHg. At constant temperature, the pressure is raised to 120 cmHg. What is its new volume?",
+    "options": [
+      "225 cm³",
+      "300 cm³",
+      "576 cm³",
+      "600 cm³"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Boyle's law: p₁V₁ = p₂V₂, so V₂ = 360 × 75 ÷ 120 = 225 cm³. 576 cm³ inverts the pressure ratio, but higher pressure must give a smaller volume."
+  },
+  {
+    "id": "JAMBPHYS-T1-020",
+    "section": "phys",
+    "test": 1,
+    "module": 1,
+    "domain": "jambphysHeat",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Specific heat capacity",
+    "stem": "How much heat is needed to raise the temperature of 2.5 kg of water by 18 K? (Specific heat capacity of water = 4200 J kg⁻¹ K⁻¹)",
+    "options": [
+      "75.6 kJ",
+      "189 kJ",
+      "472.5 kJ",
+      "1890 kJ"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Q = mcΔθ = 2.5 × 4200 × 18 = 189000 J = 189 kJ. 75.6 kJ leaves out the mass."
+  },
+  {
+    "id": "JAMBPHYS-T1-021",
+    "section": "phys",
+    "test": 1,
+    "module": 1,
+    "domain": "jambphysHeat",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Convection",
+    "stem": "Land and sea breezes along the coast at Lagos are caused by",
+    "options": [
+      "convection currents",
+      "radiation from clouds",
+      "evaporation of sea water",
+      "conduction through soil"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Land heats and cools faster than the sea, so air rises over the warmer surface and cooler air flows in to replace it: a convection current."
+  },
+  {
+    "id": "JAMBPHYS-T1-022",
+    "section": "phys",
+    "test": 1,
+    "module": 1,
+    "domain": "jambphysWaves",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Wave equation",
+    "stem": "A radio station broadcasts at 102.5 MHz. What is the wavelength of its waves? (Speed of radio waves = 3 × 10⁸ m s⁻¹)",
+    "options": [
+      "0.2927 m",
+      "2.927 m",
+      "29.27 m",
+      "341.7 m"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "λ = v ÷ f = 3 × 10⁸ ÷ 1.025 × 10⁸ = 2.927 m. Treating MHz as 10⁵ Hz or 10⁷ Hz gives the answers ten times too large or too small."
+  },
+  {
+    "id": "JAMBPHYS-T1-023",
+    "section": "phys",
+    "test": 1,
+    "module": 1,
+    "domain": "jambphysWaves",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Echoes",
+    "stem": "A student claps 132 m from a tall wall and hears the echo 0.8 s later. What is the speed of sound?",
+    "options": [
+      "105.6 m s⁻¹",
+      "165 m s⁻¹",
+      "330 m s⁻¹",
+      "660 m s⁻¹"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The sound travels to the wall and back, 264 m in 0.8 s, so v = 264 ÷ 0.8 = 330 m s⁻¹. 165 m s⁻¹ counts only the one-way distance."
+  },
+  {
+    "id": "JAMBPHYS-T1-024",
+    "section": "phys",
+    "test": 1,
+    "module": 1,
+    "domain": "jambphysWaves",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Wave properties",
+    "stem": "Ripples pass from deep to shallow water in a ripple tank. Which of these stays the same?",
+    "options": [
+      "Direction",
+      "Wavelength",
+      "Speed",
+      "Frequency"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The frequency is set by the vibrating dipper, so it cannot change. The waves slow down in shallow water, so the wavelength gets shorter and, at an angle, the direction changes."
+  },
+  {
+    "id": "JAMBPHYS-T1-025",
+    "section": "phys",
+    "test": 1,
+    "module": 1,
+    "domain": "jambphysWaves",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Plane mirrors",
+    "stem": "Two plane mirrors are inclined at 45° to each other. How many images of an object placed between them are formed?",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "n = 360° ÷ θ - 1 = 360 ÷ 45 - 1 = 7. Forgetting to subtract 1 gives 8."
+  },
+  {
+    "id": "JAMBPHYS-T1-026",
+    "section": "phys",
+    "test": 1,
+    "module": 1,
+    "domain": "jambphysWaves",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Curved mirrors",
+    "stem": "An object is placed 21 cm in front of a concave mirror of focal length 14 cm. How far from the mirror is the image?",
+    "options": [
+      "7 cm",
+      "8.4 cm",
+      "35 cm",
+      "42 cm"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "1/v = 1/f - 1/u = 1/14 - 1/21 = 1/42, so v = 42 cm, a real image in front of the mirror. 8.4 cm comes from adding 1/14 and 1/21, and 7 cm is just u - f."
+  },
+  {
+    "id": "JAMBPHYS-T1-027",
+    "section": "phys",
+    "test": 1,
+    "module": 1,
+    "domain": "jambphysWaves",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Critical angle",
+    "stem": "The critical angle for light passing from a transparent plastic into air is 37°. What is the refractive index of the plastic?",
+    "options": [
+      "0.6018",
+      "1.25",
+      "1.33",
+      "1.66"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "n = 1 ÷ sin c = 1 ÷ sin 37° = 1 ÷ 0.6018 = 1.66. 0.6018 is sin c itself, and a refractive index cannot be less than 1."
+  },
+  {
+    "id": "JAMBPHYS-T1-028",
+    "section": "phys",
+    "test": 1,
+    "module": 1,
+    "domain": "jambphysWaves",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Dispersion",
+    "stem": "A rainbow is formed mainly by",
+    "options": [
+      "diffraction by dust",
+      "reflection off clouds",
+      "dispersion in raindrops",
+      "polarisation of sunlight"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Each raindrop refracts sunlight, reflects it inside and refracts it again on the way out. Different colours bend by different amounts, so the white light is spread into a spectrum."
+  },
+  {
+    "id": "JAMBPHYS-T1-029",
+    "section": "phys",
+    "test": 1,
+    "module": 1,
+    "domain": "jambphysElectricity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Resistors",
+    "stem": "A 6 Ω resistor and a 12 Ω resistor are connected in parallel, and the pair is connected in series with a 5 Ω resistor. What is the total resistance?",
+    "options": [
+      "4 Ω",
+      "9 Ω",
+      "17 Ω",
+      "23 Ω"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The parallel pair gives 6 × 12 ÷ (6 + 12) = 4 Ω, and adding the 5 Ω in series gives 9 Ω. 23 Ω treats all three as in series."
+  },
+  {
+    "id": "JAMBPHYS-T1-030",
+    "section": "phys",
+    "test": 1,
+    "module": 1,
+    "domain": "jambphysElectricity",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Internal resistance",
+    "stem": "A cell of e.m.f. 3 V and internal resistance 0.5 Ω is connected to a 2 Ω resistor. What is the terminal potential difference?",
+    "options": [
+      "0.6 V",
+      "1.2 V",
+      "2.4 V",
+      "3 V"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "I = E ÷ (R + r) = 3 ÷ 2.5 = 1.2 A, so V = IR = 1.2 × 2 = 2.4 V. 0.6 V is the 'lost volts' across the internal resistance."
+  },
+  {
+    "id": "JAMBPHYS-T1-031",
+    "section": "phys",
+    "test": 1,
+    "module": 1,
+    "domain": "jambphysElectricity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electrical energy",
+    "stem": "A 1500 W heater is switched on for 2.5 hours. How much electrical energy does it use?",
+    "options": [
+      "3.75 kWh",
+      "37.5 kWh",
+      "375 kWh",
+      "3750 kWh"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Energy = power × time = 1.5 kW × 2.5 h = 3.75 kWh. 3750 is the answer in watt-hours, not kilowatt-hours."
+  },
+  {
+    "id": "JAMBPHYS-T1-032",
+    "section": "phys",
+    "test": 1,
+    "module": 1,
+    "domain": "jambphysElectricity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Capacitors",
+    "stem": "Capacitors of 40 μF and 60 μF are connected in series. What is their combined capacitance?",
+    "options": [
+      "0.04167 μF",
+      "24 μF",
+      "50 μF",
+      "100 μF"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "In series, 1/C = 1/40 + 1/60 = 1/24, so C = 24 μF. Adding them, 100 μF, is the rule for capacitors in parallel."
+  },
+  {
+    "id": "JAMBPHYS-T1-033",
+    "section": "phys",
+    "test": 1,
+    "module": 1,
+    "domain": "jambphysElectricity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electrostatics",
+    "stem": "A charged rod is brought near the cap of a charged gold-leaf electroscope and the leaf diverges further. This shows that",
+    "options": [
+      "the electroscope is neutral",
+      "the charges are unlike",
+      "the rod is uncharged",
+      "the charges are alike"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A rod with the same sign of charge repels more charge down to the leaf, so it rises further. Unlike charge would make the leaf collapse."
+  },
+  {
+    "id": "JAMBPHYS-T1-034",
+    "section": "phys",
+    "test": 1,
+    "module": 1,
+    "domain": "jambphysMagnetism",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Force on a conductor",
+    "stem": "A straight wire 0.25 m long carries a current of 6 A at right angles to a uniform magnetic field of 0.4 T. What force acts on it?",
+    "options": [
+      "0.6 N",
+      "2.4 N",
+      "3.75 N",
+      "9.6 N"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "F = BIL = 0.4 × 6 × 0.25 = 0.6 N. 2.4 leaves out the length of the wire."
+  },
+  {
+    "id": "JAMBPHYS-T1-035",
+    "section": "phys",
+    "test": 1,
+    "module": 1,
+    "domain": "jambphysMagnetism",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Transformers",
+    "stem": "A transformer has 1200 turns on its primary coil and steps 240 V down to 12 V. How many turns are on the secondary coil?",
+    "options": [
+      "60",
+      "100",
+      "2400",
+      "24000"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Ns ÷ Np = Vs ÷ Vp, so Ns = 1200 × 12 ÷ 240 = 60. 24000 inverts the ratio, which would step the voltage up."
+  },
+  {
+    "id": "JAMBPHYS-T1-036",
+    "section": "phys",
+    "test": 1,
+    "module": 1,
+    "domain": "jambphysMagnetism",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Electromagnetic induction",
+    "stem": "Which of these devices works on the principle of electromagnetic induction?",
+    "options": [
+      "An electric kettle",
+      "A transformer",
+      "A moving-coil ammeter",
+      "An electric bell"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A changing current in the primary coil makes a changing flux that induces an e.m.f. in the secondary. A bell and a moving-coil meter use the magnetic effect of a current, and a kettle its heating effect."
+  },
+  {
+    "id": "JAMBPHYS-T1-037",
+    "section": "phys",
+    "test": 1,
+    "module": 1,
+    "domain": "jambphysMagnetism",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electrolysis",
+    "stem": "In electrolysis, the mass of a substance set free at an electrode is proportional to",
+    "options": [
+      "the quantity of charge passed",
+      "the voltage across the cell",
+      "the volume of electrolyte",
+      "the area of the electrodes"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "This is Faraday's first law: m = zIt, where It is the charge. The voltage and electrode size matter only through the current they allow."
+  },
+  {
+    "id": "JAMBPHYS-T1-038",
+    "section": "phys",
+    "test": 1,
+    "module": 1,
+    "domain": "jambphysModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Half-life",
+    "stem": "A radioactive sample of mass 96 g has a half-life of 5 days. What mass remains undecayed after 20 days?",
+    "options": [
+      "6 g",
+      "12 g",
+      "24 g",
+      "48 g"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "20 days is 4 half-lives, so the mass halves 4 times: 96 → 48 → 24 → 12 → 6 g. 24 g divides by 4 instead of by 2⁴ = 16."
+  },
+  {
+    "id": "JAMBPHYS-T1-039",
+    "section": "phys",
+    "test": 1,
+    "module": 1,
+    "domain": "jambphysModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Photoelectric effect",
+    "stem": "Photons of energy 3.4 eV fall on a metal of work function 2.0 eV. What is the maximum kinetic energy of the emitted electrons?",
+    "options": [
+      "0.5882 eV",
+      "1.4 eV",
+      "2 eV",
+      "5.4 eV"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Einstein's equation: KE(max) = hf - W = 3.4 - 2.0 = 1.4 eV. Adding the two gives 5.4 eV, but the work function is energy used up, not gained."
+  },
+  {
+    "id": "JAMBPHYS-T1-040",
+    "section": "phys",
+    "test": 1,
+    "module": 1,
+    "domain": "jambphysModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Semiconductor diodes",
+    "stem": "A p-n junction diode is forward biased when",
+    "options": [
+      "p is joined to + and n to -",
+      "both sides are joined to +",
+      "both sides are joined to -",
+      "p is joined to - and n to +"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Connecting the p-side to the positive terminal pushes holes and electrons towards the junction, narrowing the depletion layer so current flows."
+  },
+  {
+    "id": "JAMBPHYS-T2-001",
+    "section": "phys",
+    "test": 2,
+    "module": 1,
+    "domain": "jambphysMotion",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Measuring instruments",
+    "stem": "Which instrument is most suitable for measuring the internal diameter of a test tube?",
+    "options": [
+      "Micrometer screw gauge",
+      "Spring balance",
+      "Vernier calipers",
+      "Metre rule"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Vernier calipers have inside jaws for internal diameters and read to 0.01 cm. A micrometer screw gauge measures small external sizes such as the diameter of a wire."
+  },
+  {
+    "id": "JAMBPHYS-T2-002",
+    "section": "phys",
+    "test": 2,
+    "module": 1,
+    "domain": "jambphysMotion",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Units",
+    "stem": "The watt, expressed in SI base units, is",
+    "options": [
+      "kg m s⁻²",
+      "kg m² s⁻¹",
+      "kg m² s⁻³",
+      "kg m² s⁻²"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A watt is a joule per second. A joule is kg m² s⁻², so dividing by a second gives kg m² s⁻³. kg m² s⁻² is the joule itself."
+  },
+  {
+    "id": "JAMBPHYS-T2-003",
+    "section": "phys",
+    "test": 2,
+    "module": 1,
+    "domain": "jambphysMotion",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Projectiles",
+    "stem": "A ball is thrown horizontally at 14 m s⁻¹ from the top of a cliff 31.25 m high. How far from the foot of the cliff does it land? (g = 10 m s⁻²)",
+    "options": [
+      "17.5 m",
+      "35 m",
+      "43.75 m",
+      "70 m"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The fall time comes from 31.25 = ½ × 10 × t², so t = 2.5 s. The horizontal speed stays 14 m s⁻¹, so the range is 14 × 2.5 = 35 m."
+  },
+  {
+    "id": "JAMBPHYS-T2-004",
+    "section": "phys",
+    "test": 2,
+    "module": 1,
+    "domain": "jambphysMotion",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Vertical motion",
+    "stem": "A ball is projected vertically upwards at 26 m s⁻¹. What is the greatest height it reaches? (g = 10 m s⁻²)",
+    "options": [
+      "2.6 m",
+      "13 m",
+      "33.8 m",
+      "67.6 m"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "At the top v = 0, so from v² = u² - 2gh, h = u² ÷ 2g = 676 ÷ 20 = 33.8 m. Leaving out the 2 gives 67.6 m."
+  },
+  {
+    "id": "JAMBPHYS-T2-005",
+    "section": "phys",
+    "test": 2,
+    "module": 1,
+    "domain": "jambphysMotion",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Resolving vectors",
+    "stem": "A force of 64 N acts at 60° above the horizontal. What is its horizontal component?",
+    "options": [
+      "32 N",
+      "55.43 N",
+      "64 N",
+      "110.9 N"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Horizontal component = F cos θ = 64 × cos 60° = 64 × 0.5 = 32 N. 55.43 N is F sin 60°, the vertical component."
+  },
+  {
+    "id": "JAMBPHYS-T2-006",
+    "section": "phys",
+    "test": 2,
+    "module": 1,
+    "domain": "jambphysMotion",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Motion graphs",
+    "stem": "The slope of a displacement-time graph gives the",
+    "options": [
+      "acceleration",
+      "force",
+      "distance travelled",
+      "velocity"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Slope = change in displacement ÷ time, which is velocity. The slope of a velocity-time graph gives acceleration."
+  },
+  {
+    "id": "JAMBPHYS-T2-007",
+    "section": "phys",
+    "test": 2,
+    "module": 1,
+    "domain": "jambphysMotion",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Significant figures",
+    "stem": "How many significant figures are in the measurement 0.004060 m?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Leading zeros only place the decimal point, so they are not significant. The digits 4, 0, 6 and the final 0 count, giving 4."
+  },
+  {
+    "id": "JAMBPHYS-T2-008",
+    "section": "phys",
+    "test": 2,
+    "module": 1,
+    "domain": "jambphysForces",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Equilibrium",
+    "stem": "A body is in stable equilibrium if, when it is slightly tilted, its centre of gravity",
+    "options": [
+      "is raised",
+      "moves outside its base",
+      "stays at the same height",
+      "is lowered"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "If tilting raises the centre of gravity, its weight produces a moment that returns the body. If it is lowered the equilibrium is unstable, and if unchanged it is neutral."
+  },
+  {
+    "id": "JAMBPHYS-T2-009",
+    "section": "phys",
+    "test": 2,
+    "module": 1,
+    "domain": "jambphysForces",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Kinetic energy",
+    "stem": "What is the kinetic energy of a 1.5 kg ball moving at 8 m s⁻¹?",
+    "options": [
+      "6 J",
+      "12 J",
+      "48 J",
+      "96 J"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "KE = ½mv² = ½ × 1.5 × 64 = 48 J. 12 is the momentum in kg m s⁻¹, and 96 forgets the ½."
+  },
+  {
+    "id": "JAMBPHYS-T2-010",
+    "section": "phys",
+    "test": 2,
+    "module": 1,
+    "domain": "jambphysForces",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Conservation of energy",
+    "stem": "A 0.6 kg ball is thrown straight up with 90 J of kinetic energy. Ignoring air resistance, how high does it rise? (g = 10 m s⁻²)",
+    "options": [
+      "1.5 m",
+      "6 m",
+      "9 m",
+      "15 m"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "All the kinetic energy becomes potential energy, so mgh = 90 and h = 90 ÷ 6 = 15 m. 9 m leaves out the mass, and 6 is the ball's weight in newtons."
+  },
+  {
+    "id": "JAMBPHYS-T2-011",
+    "section": "phys",
+    "test": 2,
+    "module": 1,
+    "domain": "jambphysForces",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Friction",
+    "stem": "The coefficient of static friction between two surfaces depends mainly on",
+    "options": [
+      "the nature of the surfaces",
+      "the mass of the body",
+      "the speed of sliding",
+      "the area of contact"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The coefficient is a property of the two surfaces in contact. It does not depend on the area of contact, and the mass changes the friction force, not the coefficient."
+  },
+  {
+    "id": "JAMBPHYS-T2-012",
+    "section": "phys",
+    "test": 2,
+    "module": 1,
+    "domain": "jambphysForces",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Friction",
+    "stem": "A 12 kg crate is pulled at constant velocity across a floor. The coefficient of kinetic friction is 0.35. What horizontal pulling force is needed? (g = 10 m s⁻²)",
+    "options": [
+      "4.2 N",
+      "12 N",
+      "34.29 N",
+      "42 N"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "At constant velocity the pull equals friction: F = μmg = 0.35 × 120 = 42 N. 4.2 N leaves out g, and 34.29 N divides the mass by μ instead of multiplying."
+  },
+  {
+    "id": "JAMBPHYS-T2-013",
+    "section": "phys",
+    "test": 2,
+    "module": 1,
+    "domain": "jambphysForces",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Simple machines",
+    "stem": "An inclined plane 7.5 m long raises a load through 1.5 m. Its efficiency is 70%. What effort pushed along the plane raises a load of 350 N?",
+    "options": [
+      "70 N",
+      "100 N",
+      "245 N",
+      "500 N"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Velocity ratio = 7.5 ÷ 1.5 = 5, so MA = 0.7 × 5 = 3.5 and effort = 350 ÷ 3.5 = 100 N. 70 N assumes no friction."
+  },
+  {
+    "id": "JAMBPHYS-T2-014",
+    "section": "phys",
+    "test": 2,
+    "module": 1,
+    "domain": "jambphysForces",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Gravitation",
+    "stem": "Two bodies of mass 50 kg and 80 kg are 2 m apart. What is the gravitational force between them? (G = 6.67 × 10⁻¹¹ N m² kg⁻²)",
+    "options": [
+      "1.67 × 10⁻⁸ N",
+      "6.67 × 10⁻⁸ N",
+      "1.33 × 10⁻⁷ N",
+      "2.67 × 10⁻⁷ N"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "F = Gm₁m₂ ÷ r² = 6.67 × 10⁻¹¹ × 4000 ÷ 4 = 6.67 × 10⁻⁸ N. Dividing by r instead of r² gives 1.33 × 10⁻⁷ N."
+  },
+  {
+    "id": "JAMBPHYS-T2-015",
+    "section": "phys",
+    "test": 2,
+    "module": 1,
+    "domain": "jambphysHeat",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Latent heat",
+    "stem": "How much heat is needed to melt 0.4 kg of ice at 0 °C? (Specific latent heat of fusion of ice = 3.36 × 10⁵ J kg⁻¹)",
+    "options": [
+      "134.4 kJ",
+      "336 kJ",
+      "840 kJ",
+      "1344 kJ"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Q = mL = 0.4 × 3.36 × 10⁵ = 134400 J = 134.4 kJ. 840 kJ divides by the mass instead of multiplying."
+  },
+  {
+    "id": "JAMBPHYS-T2-016",
+    "section": "phys",
+    "test": 2,
+    "module": 1,
+    "domain": "jambphysHeat",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Charles's law",
+    "stem": "A gas occupies 240 cm³ at 27 °C. At constant pressure it is heated to 177 °C. What is its new volume?",
+    "options": [
+      "160 cm³",
+      "360 cm³",
+      "400 cm³",
+      "1573 cm³"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Temperatures must be in kelvin: 300 K and 450 K. V₂ = 240 × 450 ÷ 300 = 360 cm³. Using degrees Celsius gives 1573 cm³."
+  },
+  {
+    "id": "JAMBPHYS-T2-017",
+    "section": "phys",
+    "test": 2,
+    "module": 1,
+    "domain": "jambphysHeat",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Evaporation",
+    "stem": "Why does a liquid cool as it evaporates?",
+    "options": [
+      "Its boiling point rises",
+      "The slower molecules escape",
+      "The faster molecules escape",
+      "Its molecules lose mass"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Molecules with the most kinetic energy leave the surface, so the average kinetic energy, and so the temperature, of those left falls."
+  },
+  {
+    "id": "JAMBPHYS-T2-018",
+    "section": "phys",
+    "test": 2,
+    "module": 1,
+    "domain": "jambphysHeat",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Vapours",
+    "stem": "The dew point is the temperature at which",
+    "options": [
+      "water boils at sea level",
+      "ice melts under pressure",
+      "the air becomes saturated",
+      "the vapour pressure is zero"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "When air cools to its dew point, the vapour already in it is enough to saturate it, and any further cooling makes dew or mist form."
+  },
+  {
+    "id": "JAMBPHYS-T2-019",
+    "section": "phys",
+    "test": 2,
+    "module": 1,
+    "domain": "jambphysHeat",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pressure in solids",
+    "stem": "A block weighing 60 N rests on a face measuring 0.2 m by 0.15 m. What pressure does it exert on the floor?",
+    "options": [
+      "9 Pa",
+      "300 Pa",
+      "400 Pa",
+      "2000 Pa"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Pressure = force ÷ area = 60 ÷ 0.03 = 2000 Pa. 300 Pa divides by one side only, not by the area."
+  },
+  {
+    "id": "JAMBPHYS-T2-020",
+    "section": "phys",
+    "test": 2,
+    "module": 1,
+    "domain": "jambphysHeat",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Kinetic theory",
+    "stem": "Brownian motion of smoke particles seen under a microscope is evidence that",
+    "options": [
+      "air molecules move randomly",
+      "air is denser than smoke",
+      "smoke is made of living cells",
+      "heat moves by convection"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The smoke particles jerk about because unseen air molecules strike them unevenly from all sides. This supports the kinetic theory of matter."
+  },
+  {
+    "id": "JAMBPHYS-T2-021",
+    "section": "phys",
+    "test": 2,
+    "module": 1,
+    "domain": "jambphysHeat",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "General gas law",
+    "stem": "A gas has a volume of 500 cm³ at 27 °C and 100 kPa. What is its volume at 87 °C and 150 kPa?",
+    "options": [
+      "400 cm³",
+      "750 cm³",
+      "900 cm³",
+      "1074 cm³"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "p₁V₁/T₁ = p₂V₂/T₂, so V₂ = 500 × (100 ÷ 150) × (360 ÷ 300) = 400 cm³. 1074 cm³ uses degrees Celsius instead of kelvin."
+  },
+  {
+    "id": "JAMBPHYS-T2-022",
+    "section": "phys",
+    "test": 2,
+    "module": 1,
+    "domain": "jambphysWaves",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Lenses",
+    "stem": "An object is placed 18 cm from a converging lens of focal length 12 cm. What is the magnification of the image?",
+    "options": [
+      "0.5",
+      "0.6667",
+      "1.5",
+      "2"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "1/v = 1/12 - 1/18 = 1/36, so v = 36 cm and magnification = v ÷ u = 36 ÷ 18 = 2. 0.5 is u ÷ v, the ratio upside down."
+  },
+  {
+    "id": "JAMBPHYS-T2-023",
+    "section": "phys",
+    "test": 2,
+    "module": 1,
+    "domain": "jambphysWaves",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Real and apparent depth",
+    "stem": "A swimming pool is 2.4 m deep. How deep does it appear when viewed from directly above? (Refractive index of water = 4/3)",
+    "options": [
+      "0.6 m",
+      "1.8 m",
+      "2.4 m",
+      "3.2 m"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Apparent depth = real depth ÷ n = 2.4 ÷ 4/3 = 1.8 m. Multiplying by n gives 3.2 m, but the pool looks shallower, not deeper."
+  },
+  {
+    "id": "JAMBPHYS-T2-024",
+    "section": "phys",
+    "test": 2,
+    "module": 1,
+    "domain": "jambphysWaves",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Wave properties",
+    "stem": "Waves spreading out as they pass through a narrow gap is called",
+    "options": [
+      "polarisation",
+      "dispersion",
+      "refraction",
+      "diffraction"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Diffraction is the spreading of waves at a gap or edge, strongest when the gap is about one wavelength wide. Refraction is a change of direction at a boundary between media."
+  },
+  {
+    "id": "JAMBPHYS-T2-025",
+    "section": "phys",
+    "test": 2,
+    "module": 1,
+    "domain": "jambphysWaves",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Resonance tube",
+    "stem": "A tube closed at one end first resonates with a 480 Hz tuning fork when the air column is 18 cm long. Ignoring the end correction, what is the speed of sound?",
+    "options": [
+      "86.4 m s⁻¹",
+      "172.8 m s⁻¹",
+      "345.6 m s⁻¹",
+      "691.2 m s⁻¹"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "At the first resonance the air column is a quarter wavelength, so λ = 4 × 0.18 = 0.72 m and v = fλ = 480 × 0.72 = 345.6 m s⁻¹. Taking the column as half a wavelength gives 172.8."
+  },
+  {
+    "id": "JAMBPHYS-T2-026",
+    "section": "phys",
+    "test": 2,
+    "module": 1,
+    "domain": "jambphysWaves",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Fibre optics",
+    "stem": "For an optical fibre to trap light, the refractive index of its core must be",
+    "options": [
+      "lower than the cladding's",
+      "equal to the cladding's",
+      "higher than the cladding's",
+      "less than that of air"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Total internal reflection only happens when light meets a boundary with a material of lower refractive index, so the core must be optically denser than the cladding."
+  },
+  {
+    "id": "JAMBPHYS-T2-027",
+    "section": "phys",
+    "test": 2,
+    "module": 1,
+    "domain": "jambphysWaves",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Lasers",
+    "stem": "Laser light differs from ordinary light because it is",
+    "options": [
+      "spread over many colours",
+      "unpolarised and incoherent",
+      "made only of infrared rays",
+      "coherent and monochromatic"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A laser gives light of one wavelength (monochromatic) with its waves in step (coherent), which is why the beam stays narrow."
+  },
+  {
+    "id": "JAMBPHYS-T2-028",
+    "section": "phys",
+    "test": 2,
+    "module": 1,
+    "domain": "jambphysWaves",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Vibrating strings",
+    "stem": "A stretched string under a tension of 200 N vibrates at 300 Hz. What is its frequency when the tension is raised to 450 N?",
+    "options": [
+      "133.3 Hz",
+      "200 Hz",
+      "300 Hz",
+      "450 Hz"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Frequency is proportional to the square root of tension: f = 300 × √(450 ÷ 200) = 300 × 1.5 = 450 Hz. Using the ratio the wrong way up gives 200 Hz."
+  },
+  {
+    "id": "JAMBPHYS-T2-029",
+    "section": "phys",
+    "test": 2,
+    "module": 1,
+    "domain": "jambphysElectricity",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Coulomb's law",
+    "stem": "Point charges of 4 μC and 5 μC are 0.3 m apart in air. What force does each exert on the other? (k = 9 × 10⁹ N m² C⁻²)",
+    "options": [
+      "0.06 N",
+      "0.2 N",
+      "0.6 N",
+      "2 N"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "F = kq₁q₂ ÷ r² = 9 × 10⁹ × 20 × 10⁻¹² ÷ 0.09 = 2 N. Dividing by r instead of r² gives 0.6 N."
+  },
+  {
+    "id": "JAMBPHYS-T2-030",
+    "section": "phys",
+    "test": 2,
+    "module": 1,
+    "domain": "jambphysElectricity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electrical power",
+    "stem": "An electric iron is rated 1100 W, 220 V. What is the resistance of its element when working normally?",
+    "options": [
+      "0.2 Ω",
+      "5 Ω",
+      "44 Ω",
+      "2.42 × 10⁵ Ω"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "R = V² ÷ P = 48400 ÷ 1100 = 44 Ω. 5 is the current in amperes, P ÷ V, and 0.2 is V ÷ P."
+  },
+  {
+    "id": "JAMBPHYS-T2-031",
+    "section": "phys",
+    "test": 2,
+    "module": 1,
+    "domain": "jambphysElectricity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Electric cells",
+    "stem": "Which of these cells can be recharged?",
+    "options": [
+      "Leclanché cell",
+      "Daniell cell",
+      "Lead-acid cell",
+      "Zinc-carbon dry cell"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A lead-acid accumulator is a secondary cell: passing current back through it reverses the chemical change. The others are primary cells."
+  },
+  {
+    "id": "JAMBPHYS-T2-032",
+    "section": "phys",
+    "test": 2,
+    "module": 1,
+    "domain": "jambphysElectricity",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Metre bridge",
+    "stem": "A metre bridge balances 35 cm from the left end when an unknown resistor is in the left gap and a 13 Ω resistor is in the right gap. What is the unknown resistance?",
+    "options": [
+      "4.55 Ω",
+      "7 Ω",
+      "13 Ω",
+      "24.14 Ω"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "X ÷ 13 = 35 ÷ 65, so X = 7 Ω. Swapping the lengths gives 24.14 Ω, which would put the balance point on the wrong side of the middle, and 4.55 Ω divides 35 by the whole 100 cm instead of by 65."
+  },
+  {
+    "id": "JAMBPHYS-T2-033",
+    "section": "phys",
+    "test": 2,
+    "module": 1,
+    "domain": "jambphysElectricity",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Capacitors",
+    "stem": "An 80 μF capacitor is charged to 150 V. How much energy does it store?",
+    "options": [
+      "0.012 J",
+      "0.45 J",
+      "0.9 J",
+      "1.8 J"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "E = ½CV² = ½ × 80 × 10⁻⁶ × 22500 = 0.9 J. 1.8 J forgets the ½, and 0.012 is the charge in coulombs."
+  },
+  {
+    "id": "JAMBPHYS-T2-034",
+    "section": "phys",
+    "test": 2,
+    "module": 1,
+    "domain": "jambphysMagnetism",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Alternating current",
+    "stem": "The peak value of an alternating voltage is 340 V. What is its root mean square value?",
+    "options": [
+      "170 V",
+      "240 V",
+      "340 V",
+      "480.8 V"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "V(rms) = V(peak) ÷ √2 = 340 ÷ 1.414 ≈ 240 V. 480.8 V multiplies by √2 instead of dividing."
+  },
+  {
+    "id": "JAMBPHYS-T2-035",
+    "section": "phys",
+    "test": 2,
+    "module": 1,
+    "domain": "jambphysMagnetism",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Inductive reactance",
+    "stem": "What is the reactance of a 0.2 H inductor on a 50 Hz supply?",
+    "options": [
+      "0.01592 Ω",
+      "10 Ω",
+      "31.42 Ω",
+      "62.83 Ω"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "X(L) = 2πfL = 2 × 3.142 × 50 × 0.2 = 62.83 Ω. 10 Ω is fL without the 2π."
+  },
+  {
+    "id": "JAMBPHYS-T2-036",
+    "section": "phys",
+    "test": 2,
+    "module": 1,
+    "domain": "jambphysMagnetism",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electromagnets",
+    "stem": "Soft iron is used for the core of an electromagnet because it",
+    "options": [
+      "keeps its magnetism for a long time",
+      "magnetises and demagnetises easily",
+      "conducts heat very poorly",
+      "resists rusting in moist air"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Soft iron gains and loses magnetism readily, so the magnet switches off when the current stops. Steel keeps its magnetism and suits permanent magnets."
+  },
+  {
+    "id": "JAMBPHYS-T2-037",
+    "section": "phys",
+    "test": 2,
+    "module": 1,
+    "domain": "jambphysMagnetism",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Electrolysis",
+    "stem": "A current of 2 A is passed through copper(II) sulphate solution for 30 minutes. What mass of copper is deposited? (Electrochemical equivalent of copper = 3.3 × 10⁻⁷ kg C⁻¹)",
+    "options": [
+      "0.0198 g",
+      "0.594 g",
+      "1.188 g",
+      "2.376 g"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "m = zIt = 3.3 × 10⁻⁷ × 2 × 1800 = 1.188 × 10⁻³ kg = 1.188 g. 0.0198 g uses 30 s instead of 1800 s."
+  },
+  {
+    "id": "JAMBPHYS-T2-038",
+    "section": "phys",
+    "test": 2,
+    "module": 1,
+    "domain": "jambphysModern",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Background radiation",
+    "stem": "A Geiger counter records 3200 counts in 2 minutes near a radioactive source. The background count rate is 40 counts per minute. What is the count rate due to the source alone?",
+    "options": [
+      "1560 counts per minute",
+      "1600 counts per minute",
+      "1640 counts per minute",
+      "3160 counts per minute"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The total rate is 3200 ÷ 2 = 1600 counts per minute, and taking away the background leaves 1600 - 40 = 1560. 3160 subtracts the background from the 2-minute total without dividing by the time."
+  },
+  {
+    "id": "JAMBPHYS-T2-039",
+    "section": "phys",
+    "test": 2,
+    "module": 1,
+    "domain": "jambphysModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Photon energy",
+    "stem": "What is the energy of a photon of frequency 5 × 10¹⁴ Hz? (h = 6.6 × 10⁻³⁴ J s)",
+    "options": [
+      "1.32 × 10⁻⁴⁸ J",
+      "3.3 × 10⁻²⁰ J",
+      "3.3 × 10⁻¹⁹ J",
+      "7.58 × 10⁴⁷ J"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "E = hf = 6.6 × 10⁻³⁴ × 5 × 10¹⁴ = 3.3 × 10⁻¹⁹ J. 1.32 × 10⁻⁴⁸ comes from dividing h by f instead of multiplying."
+  },
+  {
+    "id": "JAMBPHYS-T2-040",
+    "section": "phys",
+    "test": 2,
+    "module": 1,
+    "domain": "jambphysModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Logic gates",
+    "stem": "Which logic gate gives an output of 0 only when both of its inputs are 1?",
+    "options": [
+      "AND",
+      "NOR",
+      "NAND",
+      "OR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "NAND is AND followed by NOT: AND gives 1 only for inputs 1 and 1, so NAND gives 0 only then. A NOR gate gives 0 whenever any input is 1."
+  },
+  {
+    "id": "JAMBPHYS-D-001",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysMotion",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Circular motion",
+    "stem": "A body moving in a circle at constant speed has",
+    "options": [
+      "an acceleration away from the centre",
+      "an acceleration along the tangent",
+      "no acceleration at all",
+      "an acceleration towards the centre"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Its speed is constant but its direction keeps changing, so it accelerates. The centripetal acceleration points towards the centre of the circle."
+  },
+  {
+    "id": "JAMBPHYS-D-002",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysMotion",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Equations of motion",
+    "stem": "A car travelling at 30 m s⁻¹ brakes uniformly and stops in 75 m. What is the size of its deceleration?",
+    "options": [
+      "0.4 m s⁻²",
+      "2.5 m s⁻²",
+      "6 m s⁻²",
+      "12 m s⁻²"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "From v² = u² - 2as with v = 0, a = u² ÷ 2s = 900 ÷ 150 = 6 m s⁻². Leaving out the 2 gives 12 m s⁻²."
+  },
+  {
+    "id": "JAMBPHYS-D-003",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysMotion",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Average speed",
+    "stem": "A cyclist rides 1.2 km in 4 minutes and then 2.4 km in 5 minutes. What is the average speed for the whole journey?",
+    "options": [
+      "5 m s⁻¹",
+      "6.5 m s⁻¹",
+      "6.667 m s⁻¹",
+      "8 m s⁻¹"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Average speed = total distance ÷ total time = 3600 m ÷ 540 s = 6.667 m s⁻¹. Averaging the two speeds (5 and 8 m s⁻¹) gives 6.5, which is wrong because the times differ."
+  },
+  {
+    "id": "JAMBPHYS-D-004",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysMotion",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Measuring instruments",
+    "stem": "Which instrument measures the diameter of a thin wire most precisely?",
+    "options": [
+      "Graduated metre rule",
+      "Steel measuring tape",
+      "Pair of vernier calipers",
+      "Micrometer screw gauge"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A micrometer screw gauge reads to 0.01 mm, ten times finer than vernier calipers."
+  },
+  {
+    "id": "JAMBPHYS-D-005",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysMotion",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Projectiles",
+    "stem": "A ball is kicked at 25 m s⁻¹ at 30° above the horizontal. How long is it in the air? (g = 10 m s⁻²)",
+    "options": [
+      "1.25 s",
+      "2.5 s",
+      "4.33 s",
+      "5 s"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Time of flight T = 2u sin θ ÷ g = 2 × 25 × 0.5 ÷ 10 = 2.5 s. 1.25 s is only the time to the top."
+  },
+  {
+    "id": "JAMBPHYS-D-006",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysMotion",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Projectiles",
+    "stem": "A stone is projected at 40 m s⁻¹ at 15° above level ground. What is its horizontal range? (g = 10 m s⁻²)",
+    "options": [
+      "20 m",
+      "40 m",
+      "80 m",
+      "160 m"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Range R = u² sin 2θ ÷ g = 1600 × sin 30° ÷ 10 = 80 m. Forgetting sin 2θ gives 160 m."
+  },
+  {
+    "id": "JAMBPHYS-D-007",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysMotion",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Dimensions",
+    "stem": "What are the dimensions of pressure?",
+    "options": [
+      "MLT⁻²",
+      "ML⁻²T⁻¹",
+      "ML⁻¹T⁻²",
+      "ML²T⁻²"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Pressure is force ÷ area = MLT⁻² ÷ L² = ML⁻¹T⁻². MLT⁻² is force alone."
+  },
+  {
+    "id": "JAMBPHYS-D-008",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysMotion",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Equations of motion",
+    "stem": "A train starts from rest and accelerates uniformly at 0.8 m s⁻² for 25 s. How far does it travel?",
+    "options": [
+      "10 m",
+      "20 m",
+      "125 m",
+      "250 m"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "s = ut + ½at² = 0 + ½ × 0.8 × 625 = 250 m. 20 is the final speed in m s⁻¹, and 10 comes from forgetting to square the time."
+  },
+  {
+    "id": "JAMBPHYS-D-009",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysMotion",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Vector addition",
+    "stem": "Two forces of 6 N and 10 N act at a point. Which of these cannot be their resultant?",
+    "options": [
+      "3 N",
+      "4 N",
+      "10 N",
+      "16 N"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The resultant of two forces lies between their difference (4 N) and their sum (16 N). 3 N is below the smallest possible value."
+  },
+  {
+    "id": "JAMBPHYS-D-010",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysMotion",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Free fall",
+    "stem": "A mango falls from rest from a branch 7.2 m above the ground. With what speed does it hit the ground? (g = 10 m s⁻²)",
+    "options": [
+      "8.485 m s⁻¹",
+      "12 m s⁻¹",
+      "72 m s⁻¹",
+      "144 m s⁻¹"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "v² = 2gh = 2 × 10 × 7.2 = 144, so v = 12 m s⁻¹. 144 is v², not v."
+  },
+  {
+    "id": "JAMBPHYS-D-011",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysMotion",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Units",
+    "stem": "Which of these is a derived SI unit?",
+    "options": [
+      "ampere",
+      "kelvin",
+      "newton",
+      "kilogram"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The newton is kg m s⁻², built from base units. The kilogram, ampere and kelvin are themselves base units."
+  },
+  {
+    "id": "JAMBPHYS-D-012",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysMotion",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Equations of motion",
+    "stem": "A body decelerates uniformly from 18 m s⁻¹ to 6 m s⁻¹ while covering 48 m. What is the size of its deceleration?",
+    "options": [
+      "0.25 m s⁻²",
+      "1.5 m s⁻²",
+      "3 m s⁻²",
+      "6.75 m s⁻²"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "From v² = u² - 2as, a = (324 - 36) ÷ 96 = 3 m s⁻². Using 12 m s⁻¹ ÷ 48 m gives 0.25, which mixes up the formulas."
+  },
+  {
+    "id": "JAMBPHYS-D-013",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysMotion",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Distance and displacement",
+    "stem": "An athlete runs once round a circular track and stops at the starting line. Her displacement is",
+    "options": [
+      "the circumference",
+      "the radius",
+      "zero",
+      "the diameter"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Displacement is the straight-line change in position from start to finish. She ends where she started, so it is zero, though the distance run is the circumference."
+  },
+  {
+    "id": "JAMBPHYS-D-014",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysMotion",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Circular motion",
+    "stem": "A wheel turns at 180 revolutions per minute. What is its angular velocity?",
+    "options": [
+      "3 rad s⁻¹",
+      "6 rad s⁻¹",
+      "9.425 rad s⁻¹",
+      "18.85 rad s⁻¹"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "180 rev min⁻¹ is 3 rev s⁻¹, and each revolution is 2π rad, so ω = 6π = 18.85 rad s⁻¹. 3 is revolutions per second, not radians per second, and 9.425 uses π instead of 2π per revolution."
+  },
+  {
+    "id": "JAMBPHYS-D-015",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysMotion",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Circular motion",
+    "stem": "A 0.4 kg stone is whirled in a horizontal circle of radius 0.8 m at 5 m s⁻¹. What is the centripetal force on it?",
+    "options": [
+      "1.6 N",
+      "2.5 N",
+      "10 N",
+      "12.5 N"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "F = mv² ÷ r = 0.4 × 25 ÷ 0.8 = 12.5 N. Using mv ÷ r forgets to square the speed and gives 2.5 N."
+  },
+  {
+    "id": "JAMBPHYS-D-016",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysMotion",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Velocity-time graphs",
+    "stem": "A horizontal straight line on a velocity-time graph shows that the body",
+    "options": [
+      "is at rest",
+      "moves at constant velocity",
+      "has constant acceleration",
+      "is slowing down"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A horizontal line means the velocity does not change, so the acceleration is zero. A body at rest would have its line along the time axis, at zero velocity."
+  },
+  {
+    "id": "JAMBPHYS-D-017",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysForces",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Newton's laws",
+    "stem": "A standing passenger lurches forward when a moving bus stops suddenly. This is explained by",
+    "options": [
+      "the passenger's inertia",
+      "the passenger's weight",
+      "the reaction of the floor",
+      "friction from the floor"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The bus stops but the passenger's body tends to keep moving forward, as Newton's first law says. Friction at the feet actually tries to stop the passenger with the bus."
+  },
+  {
+    "id": "JAMBPHYS-D-018",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysForces",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Impulse",
+    "stem": "A 0.15 kg ball hits a wall at 20 m s⁻¹ and rebounds along the same line at 14 m s⁻¹. What is the size of the impulse on the ball?",
+    "options": [
+      "0.9 N s",
+      "2.1 N s",
+      "3 N s",
+      "5.1 N s"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Velocity changes from +20 to -14 m s⁻¹, a change of 34 m s⁻¹, so impulse = 0.15 × 34 = 5.1 N s. Subtracting the speeds gives 0.9 N s and ignores the reversal."
+  },
+  {
+    "id": "JAMBPHYS-D-019",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysForces",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Newton's laws",
+    "stem": "A net force of 36 N acts on a mass of 4.5 kg. What is its acceleration?",
+    "options": [
+      "8 m s⁻²",
+      "31.5 m s⁻²",
+      "40.5 m s⁻²",
+      "162 m s⁻²"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "a = F ÷ m = 36 ÷ 4.5 = 8 m s⁻². 162 comes from multiplying instead of dividing, and 31.5 and 40.5 subtract or add the numbers."
+  },
+  {
+    "id": "JAMBPHYS-D-020",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysForces",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Levers",
+    "stem": "Which of these is a second-class lever, with the load between the fulcrum and the effort?",
+    "options": [
+      "Pair of tongs",
+      "Fishing rod",
+      "Pair of scissors",
+      "Wheelbarrow"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "In a wheelbarrow the wheel is the fulcrum, the load sits in the middle and the effort is at the handles. Scissors are first class; fishing rods and tongs are third class."
+  },
+  {
+    "id": "JAMBPHYS-D-021",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysForces",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Simple machines",
+    "stem": "A machine with a velocity ratio of 6 lifts a load of 900 N with an effort of 250 N. What is its efficiency?",
+    "options": [
+      "27.78%",
+      "36%",
+      "41.67%",
+      "60%"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "MA = 900 ÷ 250 = 3.6, so efficiency = MA ÷ VR × 100% = 3.6 ÷ 6 × 100% = 60%. 27.78% divides the effort by the load, which is the inverse of the mechanical advantage."
+  },
+  {
+    "id": "JAMBPHYS-D-022",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysForces",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Elasticity",
+    "stem": "Beyond its elastic limit, a stretched wire",
+    "options": [
+      "becomes perfectly elastic",
+      "does not return to its original length",
+      "returns to its original length",
+      "obeys Hooke's law exactly"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Past the elastic limit the wire is permanently deformed: removing the load leaves it longer than before. Hooke's law holds only up to the limit of proportionality."
+  },
+  {
+    "id": "JAMBPHYS-D-023",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysForces",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Potential energy",
+    "stem": "A 25 kg bag of rice is lifted onto a lorry 1.8 m above the ground. What potential energy does it gain? (g = 10 m s⁻²)",
+    "options": [
+      "45 J",
+      "250 J",
+      "450 J",
+      "4500 J"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "PE = mgh = 25 × 10 × 1.8 = 450 J. 45 J leaves out g, and 250 N is the bag's weight."
+  },
+  {
+    "id": "JAMBPHYS-D-024",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysForces",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Gravitational field",
+    "stem": "An astronaut weighs less on the Moon than on the Earth because",
+    "options": [
+      "her mass is smaller there",
+      "the Moon has no atmosphere",
+      "the Moon's gravity is weaker",
+      "the Moon rotates more slowly"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Weight = mg, and g on the Moon is about one sixth of g on Earth. Her mass, the amount of matter in her, is the same everywhere."
+  },
+  {
+    "id": "JAMBPHYS-D-025",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysForces",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Conservation of momentum",
+    "stem": "A 3 kg trolley moving at 7 m s⁻¹ collides with a stationary 4 kg trolley and they move off together. What is their common velocity?",
+    "options": [
+      "3 m s⁻¹",
+      "3.5 m s⁻¹",
+      "5.25 m s⁻¹",
+      "7 m s⁻¹"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Momentum is conserved: 3 × 7 = (3 + 4)v, so v = 21 ÷ 7 = 3 m s⁻¹. 5.25 divides by the 4 kg trolley's mass only."
+  },
+  {
+    "id": "JAMBPHYS-D-026",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysForces",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Circular motion",
+    "stem": "When a car turns a corner on a level road, the centripetal force is provided by",
+    "options": [
+      "the weight of the car",
+      "the engine's thrust",
+      "tyre friction on the road",
+      "air resistance on it"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Friction between the tyres and the road acts sideways, towards the centre of the turn. The weight acts downwards and is balanced by the normal reaction."
+  },
+  {
+    "id": "JAMBPHYS-D-027",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysForces",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Recoil",
+    "stem": "A 5 kg gun fires a 25 g bullet at 360 m s⁻¹. What is the recoil velocity of the gun?",
+    "options": [
+      "0.18 m s⁻¹",
+      "1.8 m s⁻¹",
+      "9 m s⁻¹",
+      "18 m s⁻¹"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Total momentum stays zero: 5v = 0.025 × 360 = 9, so v = 1.8 m s⁻¹. 9 is the bullet's momentum, not a velocity, and the other values slip a power of ten."
+  },
+  {
+    "id": "JAMBPHYS-D-028",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysForces",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Moments",
+    "stem": "On a see-saw, a girl of weight 360 N sits 1.5 m from the pivot. How far from the pivot on the other side must a boy of weight 450 N sit to balance her?",
+    "options": [
+      "1.2 m",
+      "1.5 m",
+      "1.875 m",
+      "3 m"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Clockwise moment = anticlockwise moment: 450 × d = 360 × 1.5 = 540, so d = 1.2 m. 1.875 m comes from inverting the ratio of the weights."
+  },
+  {
+    "id": "JAMBPHYS-D-029",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysForces",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Moments",
+    "stem": "The turning effect of a force about a pivot is called its",
+    "options": [
+      "impulse",
+      "moment",
+      "inertia",
+      "momentum"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Moment = force × perpendicular distance from the pivot. Impulse is force × time."
+  },
+  {
+    "id": "JAMBPHYS-D-030",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysForces",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Power",
+    "stem": "A car's engine provides a driving force of 2400 N while the car moves at a steady 25 m s⁻¹. What power does it deliver?",
+    "options": [
+      "2.4 kW",
+      "6 kW",
+      "60 kW",
+      "96 kW"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "P = Fv = 2400 × 25 = 60000 W = 60 kW. 96 comes from dividing the force by the speed."
+  },
+  {
+    "id": "JAMBPHYS-D-031",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysForces",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Simple machines",
+    "stem": "The efficiency of a real machine is always less than 100% because",
+    "options": [
+      "the velocity ratio is too high",
+      "the load exceeds the effort",
+      "some work is lost to friction",
+      "the effort moves too slowly"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Some of the work put in goes into overcoming friction and lifting moving parts, so the useful work out is always less than the work in."
+  },
+  {
+    "id": "JAMBPHYS-D-032",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysForces",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Gravitational field",
+    "stem": "Taking g = 10 m s⁻² and the Earth's radius as 6.4 × 10⁶ m, what is the escape velocity from the Earth's surface?",
+    "options": [
+      "8 km s⁻¹",
+      "11.31 km s⁻¹",
+      "16 km s⁻¹",
+      "22.63 km s⁻¹"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Escape velocity = √(2gR) = √(2 × 10 × 6.4 × 10⁶) ≈ 11 314 m s⁻¹ = 11.31 km s⁻¹. 8 km s⁻¹ is √(gR), the speed of a satellite in a low orbit."
+  },
+  {
+    "id": "JAMBPHYS-D-033",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysHeat",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Anomalous expansion",
+    "stem": "Pure water has its greatest density at",
+    "options": [
+      "-4 °C",
+      "0 °C",
+      "4 °C",
+      "100 °C"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Water contracts as it warms from 0 °C to 4 °C, then expands like other liquids, so it is densest at 4 °C. This is why ponds freeze from the top down."
+  },
+  {
+    "id": "JAMBPHYS-D-034",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysHeat",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Flotation",
+    "stem": "A block of wood of density 650 kg m⁻³ floats in a liquid of density 800 kg m⁻³. What fraction of its volume is below the surface?",
+    "options": [
+      "0.1875",
+      "0.35",
+      "0.65",
+      "0.8125"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "A floating body displaces its own weight of liquid, so the fraction submerged = 650 ÷ 800 = 0.8125. 0.65 is the fraction it would sink to in water."
+  },
+  {
+    "id": "JAMBPHYS-D-035",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysHeat",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hydraulic press",
+    "stem": "The small piston of a hydraulic press has an area of 6 cm² and the large piston 150 cm². What force on the large piston is produced by 90 N on the small one?",
+    "options": [
+      "3.6 N",
+      "540 N",
+      "2250 N",
+      "13500 N"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Pressure is transmitted equally, so F = 90 × 150 ÷ 6 = 2250 N. 3.6 N inverts the ratio of the areas."
+  },
+  {
+    "id": "JAMBPHYS-D-036",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysHeat",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Atmospheric pressure",
+    "stem": "A sharp fall in a barometer reading usually means that",
+    "options": [
+      "dry, sunny weather is coming",
+      "the air is getting colder",
+      "the barometer has a leak",
+      "stormy, wet weather is coming"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Low atmospheric pressure brings rising, moist air, cloud and rain, so a sudden fall in pressure warns of a storm."
+  },
+  {
+    "id": "JAMBPHYS-D-037",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysHeat",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Method of mixtures",
+    "stem": "0.3 kg of water at 84 °C is mixed with 0.5 kg of water at 12 °C. Ignoring heat losses, what is the final temperature?",
+    "options": [
+      "36 °C",
+      "39 °C",
+      "48 °C",
+      "57 °C"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Heat lost = heat gained: 0.3(84 - θ) = 0.5(θ - 12), so 25.2 + 6 = 0.8θ and θ = 39 °C. 48 °C is a simple average, which ignores the different masses."
+  },
+  {
+    "id": "JAMBPHYS-D-038",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysHeat",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Radiation",
+    "stem": "In a vacuum flask, the silvered walls mainly reduce heat transfer by",
+    "options": [
+      "conduction",
+      "radiation",
+      "evaporation",
+      "convection"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Shiny surfaces reflect radiant heat. The vacuum between the walls stops conduction and convection, and the stopper reduces evaporation."
+  },
+  {
+    "id": "JAMBPHYS-D-039",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysHeat",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Boiling",
+    "stem": "Water boils below 100 °C on a high mountain because",
+    "options": [
+      "the air temperature is lower",
+      "the air holds less moisture",
+      "the air pressure is lower",
+      "the pull of gravity is weaker"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A liquid boils when its saturated vapour pressure equals the external pressure. At altitude the atmospheric pressure is lower, so this happens at a lower temperature."
+  },
+  {
+    "id": "JAMBPHYS-D-040",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysHeat",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Latent heat",
+    "stem": "An electric kettle rated 2 kW keeps water boiling for 3 minutes. What mass of water boils away? (Specific latent heat of vaporisation = 2.26 × 10⁶ J kg⁻¹)",
+    "options": [
+      "0.0531 kg",
+      "0.1593 kg",
+      "1.593 kg",
+      "6.278 kg"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Energy supplied = Pt = 2000 × 180 = 3.6 × 10⁵ J, so m = 3.6 × 10⁵ ÷ 2.26 × 10⁶ = 0.1593 kg. 0.0531 kg uses 60 s instead of 180 s."
+  },
+  {
+    "id": "JAMBPHYS-D-041",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysHeat",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Thermometers",
+    "stem": "Which property makes mercury suitable as a thermometric liquid?",
+    "options": [
+      "It wets the glass tube",
+      "It is transparent",
+      "It freezes at 0 °C",
+      "It expands uniformly"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Mercury expands evenly with temperature, so a scale marked in equal steps is accurate. It does not wet glass, it is opaque and it freezes at about -39 °C."
+  },
+  {
+    "id": "JAMBPHYS-D-042",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysHeat",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Relative humidity",
+    "stem": "On a certain day the saturated vapour pressure of water at room temperature is 3.2 kPa and the actual vapour pressure is 2.4 kPa. What is the relative humidity?",
+    "options": [
+      "25%",
+      "75%",
+      "80%",
+      "133.3%"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Relative humidity = actual vapour pressure ÷ saturated vapour pressure × 100% = 2.4 ÷ 3.2 × 100% = 75%. 133.3% inverts the ratio, and humidity cannot exceed 100%."
+  },
+  {
+    "id": "JAMBPHYS-D-043",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysHeat",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Pressure law",
+    "stem": "A tyre is at 240 kPa at 17 °C. After a long drive its temperature is 46 °C. Assuming its volume is unchanged, what is the new pressure?",
+    "options": [
+      "88.7 kPa",
+      "218.2 kPa",
+      "264 kPa",
+      "649.4 kPa"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "p₂ = p₁ × T₂ ÷ T₁ = 240 × 319 ÷ 290 = 264 kPa. 649.4 kPa uses degrees Celsius, and 218.2 kPa inverts the ratio."
+  },
+  {
+    "id": "JAMBPHYS-D-044",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysHeat",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Temperature scales",
+    "stem": "The lower fixed point of the Celsius scale is the temperature of",
+    "options": [
+      "absolute zero",
+      "pure melting ice",
+      "pure boiling water",
+      "ice mixed with salt"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "0 °C is the temperature of pure ice melting at standard atmospheric pressure. The upper fixed point, 100 °C, is steam from pure boiling water."
+  },
+  {
+    "id": "JAMBPHYS-D-045",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysHeat",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Temperature scales",
+    "stem": "What is -73 °C on the kelvin scale?",
+    "options": [
+      "73 K",
+      "200 K",
+      "273 K",
+      "346 K"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "T = θ + 273 = -73 + 273 = 200 K. 346 K adds 73 instead of subtracting it."
+  },
+  {
+    "id": "JAMBPHYS-D-046",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysHeat",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Thermal expansion",
+    "stem": "If the linear expansivity of a solid is α, its cubic expansivity is about",
+    "options": [
+      "2α",
+      "α ÷ 3",
+      "α³",
+      "3α"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Volume expands in three dimensions, so cubic expansivity γ ≈ 3α. Area expansivity is about 2α."
+  },
+  {
+    "id": "JAMBPHYS-D-047",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysHeat",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Area expansion",
+    "stem": "A metal plate of area 0.5 m² is heated through 60 K. By how much does its area increase? (Linear expansivity = 1.8 × 10⁻⁵ K⁻¹)",
+    "options": [
+      "0.108 cm²",
+      "1.08 cm²",
+      "5.4 cm²",
+      "10.8 cm²"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Area expansivity β = 2α = 3.6 × 10⁻⁵ K⁻¹, so ΔA = 0.5 × 3.6 × 10⁻⁵ × 60 = 1.08 × 10⁻³ m² = 10.8 cm². Using α instead of 2α gives 5.4 cm²."
+  },
+  {
+    "id": "JAMBPHYS-D-048",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysHeat",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Conduction",
+    "stem": "A metal door handle feels colder than a wooden door at the same temperature because",
+    "options": [
+      "metal reflects body heat",
+      "metal is at a lower temperature",
+      "wood produces its own heat",
+      "metal conducts heat away faster"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Both are at the same temperature, but metal is a good conductor and carries heat away from the hand quickly, so it feels colder."
+  },
+  {
+    "id": "JAMBPHYS-D-049",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysWaves",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Electromagnetic spectrum",
+    "stem": "Which of these electromagnetic waves has the longest wavelength?",
+    "options": [
+      "X-rays",
+      "Radio waves",
+      "Infrared rays",
+      "Ultraviolet rays"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In order of increasing wavelength: gamma rays, X-rays, ultraviolet, visible, infrared, microwaves, radio waves. Radio waves are the longest."
+  },
+  {
+    "id": "JAMBPHYS-D-050",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysWaves",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Wave period",
+    "stem": "A wave has a frequency of 25 Hz. What is its period?",
+    "options": [
+      "0.04 s",
+      "0.25 s",
+      "2.5 s",
+      "25 s"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "T = 1 ÷ f = 1 ÷ 25 = 0.04 s. 25 is the frequency, not the period."
+  },
+  {
+    "id": "JAMBPHYS-D-051",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysWaves",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Characteristics of sound",
+    "stem": "The loudness of a sound depends mainly on its",
+    "options": [
+      "amplitude",
+      "frequency",
+      "wavelength",
+      "overtones"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A larger amplitude carries more energy, so the sound is louder. Frequency decides the pitch, and the overtones decide the quality."
+  },
+  {
+    "id": "JAMBPHYS-D-052",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysWaves",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Snell's law",
+    "stem": "A ray in air strikes a glass block at 50° to the normal and is refracted at 30° to the normal. What is the refractive index of the glass?",
+    "options": [
+      "0.6527",
+      "1.286",
+      "1.532",
+      "1.667"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "n = sin i ÷ sin r = sin 50° ÷ sin 30° = 0.766 ÷ 0.5 = 1.532. 1.667 divides the angles themselves, which Snell's law does not do."
+  },
+  {
+    "id": "JAMBPHYS-D-053",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysWaves",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Speed of light in a medium",
+    "stem": "Light passes into a glass of refractive index 1.6. What is its speed in the glass? (Speed of light in air = 3 × 10⁸ m s⁻¹)",
+    "options": [
+      "1.6 × 10⁸ m s⁻¹",
+      "1.88 × 10⁸ m s⁻¹",
+      "3 × 10⁸ m s⁻¹",
+      "4.8 × 10⁸ m s⁻¹"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "v = c ÷ n = 3 × 10⁸ ÷ 1.6 = 1.88 × 10⁸ m s⁻¹. Multiplying by n gives 4.8 × 10⁸ m s⁻¹, faster than light in air, which is impossible."
+  },
+  {
+    "id": "JAMBPHYS-D-054",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysWaves",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Plane mirrors",
+    "stem": "A girl stands 3.5 m in front of a plane mirror. How far is she from her image?",
+    "options": [
+      "1.75 m",
+      "3.5 m",
+      "7 m",
+      "14 m"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The image is as far behind the mirror as she is in front of it, 3.5 m, so she is 3.5 + 3.5 = 7 m from it. 3.5 m is only her distance from the mirror."
+  },
+  {
+    "id": "JAMBPHYS-D-055",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysWaves",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Curved mirrors",
+    "stem": "An object is 12 cm in front of a concave mirror of focal length 18 cm. What is the magnification of the image?",
+    "options": [
+      "0.6667",
+      "1.5",
+      "2",
+      "3"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "1/v = 1/18 - 1/12 = -1/36, so v = -36 cm: a virtual image behind the mirror. Magnification = 36 ÷ 12 = 3. 1.5 is f ÷ u, not v ÷ u."
+  },
+  {
+    "id": "JAMBPHYS-D-056",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysWaves",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Optical instruments",
+    "stem": "The final image formed by a compound microscope in normal use is",
+    "options": [
+      "virtual, inverted and magnified",
+      "real, inverted and diminished",
+      "real, upright and magnified",
+      "virtual, upright and diminished"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The objective forms a real, inverted, magnified image, and the eyepiece acts as a magnifying glass on it, giving a final virtual image that is still inverted and much larger."
+  },
+  {
+    "id": "JAMBPHYS-D-057",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysWaves",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Beats",
+    "stem": "Two tuning forks of frequency 412 Hz and 418 Hz are sounded together. How many beats are heard each second?",
+    "options": [
+      "6",
+      "12",
+      "415",
+      "830"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Beat frequency = difference in frequencies = 418 - 412 = 6 beats per second. 415 Hz is the average frequency, the pitch of the note heard."
+  },
+  {
+    "id": "JAMBPHYS-D-058",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysWaves",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Propagation of sound",
+    "stem": "The speed of sound in air increases when",
+    "options": [
+      "the amplitude of the note rises",
+      "the temperature rises",
+      "the frequency of the note rises",
+      "the pressure rises at a constant temperature"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Sound travels faster in warmer air, because the molecules move faster. At a fixed temperature, a change of pressure leaves the speed unchanged, and all frequencies travel at the same speed."
+  },
+  {
+    "id": "JAMBPHYS-D-059",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysWaves",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Lenses",
+    "stem": "What is the power of a converging lens of focal length 12.5 cm?",
+    "options": [
+      "0.08 D",
+      "0.125 D",
+      "8 D",
+      "12.5 D"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Power = 1 ÷ f in metres = 1 ÷ 0.125 = 8 D (dioptres). 0.08 comes from using the focal length in centimetres."
+  },
+  {
+    "id": "JAMBPHYS-D-060",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysWaves",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Colours",
+    "stem": "The primary colours of light are",
+    "options": [
+      "red, green and blue",
+      "red, yellow and blue",
+      "cyan, magenta and yellow",
+      "red, green and yellow"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Red, green and blue light add to make white and every other colour. Red, yellow and blue are the old primary colours of paint mixing, which is subtractive."
+  },
+  {
+    "id": "JAMBPHYS-D-061",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysWaves",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Wave equation",
+    "stem": "In a ripple tank, the wave crests are 1.5 cm apart and the dipper vibrates at 16 Hz. What is the speed of the waves?",
+    "options": [
+      "10.67 cm s⁻¹",
+      "14.5 cm s⁻¹",
+      "17.5 cm s⁻¹",
+      "24 cm s⁻¹"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "v = fλ = 16 × 1.5 = 24 cm s⁻¹. 10.67 divides the frequency by the wavelength instead of multiplying."
+  },
+  {
+    "id": "JAMBPHYS-D-062",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysWaves",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Optical instruments",
+    "stem": "The image formed on the sensor of a simple camera is",
+    "options": [
+      "virtual, inverted and magnified",
+      "virtual, upright and magnified",
+      "real, upright and diminished",
+      "real, inverted and diminished"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The object is far beyond twice the focal length of the converging lens, so the lens forms a small, real, upside-down image on the sensor or film."
+  },
+  {
+    "id": "JAMBPHYS-D-063",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysWaves",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Critical angle",
+    "stem": "Light travels from glass of refractive index 1.5 into water of refractive index 4/3. What is the critical angle at the glass-water boundary?",
+    "options": [
+      "27.27°",
+      "41.81°",
+      "48.59°",
+      "62.73°"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "sin c = n(water) ÷ n(glass) = 1.333 ÷ 1.5 = 0.889, so c = 62.73°. 41.81° is the critical angle for glass to air, and 48.59° is for water to air."
+  },
+  {
+    "id": "JAMBPHYS-D-064",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysWaves",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Characteristics of sound",
+    "stem": "The quality (timbre) of a musical note depends on its",
+    "options": [
+      "amplitude",
+      "wavelength",
+      "overtones",
+      "frequency"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Two instruments playing the same note have the same fundamental frequency but different overtones, which give each its own quality."
+  },
+  {
+    "id": "JAMBPHYS-D-065",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysElectricity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Units",
+    "stem": "The SI unit of magnetic flux is the",
+    "options": [
+      "tesla",
+      "henry",
+      "weber",
+      "coulomb"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Magnetic flux is measured in webers; one weber is one tesla times one square metre. The tesla measures flux density and the henry inductance."
+  },
+  {
+    "id": "JAMBPHYS-D-066",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysElectricity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Charge and current",
+    "stem": "A current of 0.25 A flows for 4 minutes. How much charge passes?",
+    "options": [
+      "1 C",
+      "16 C",
+      "60 C",
+      "240 C"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Q = It = 0.25 × 240 s = 60 C. 1 C uses 4 instead of 240 seconds."
+  },
+  {
+    "id": "JAMBPHYS-D-067",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysElectricity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electrostatics",
+    "stem": "A lightning conductor protects a building mainly by",
+    "options": [
+      "discharge at sharp points",
+      "storing charge in the rod",
+      "insulating the building walls",
+      "repelling the charged clouds"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Charge concentrates at sharp points, so the spikes ionise the air and leak charge away gradually, and any strike is carried safely to earth."
+  },
+  {
+    "id": "JAMBPHYS-D-068",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysElectricity",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Resistivity",
+    "stem": "A copper wire is 2 m long with a cross-sectional area of 0.5 mm². What is its resistance? (Resistivity of copper = 1.7 × 10⁻⁸ Ω m)",
+    "options": [
+      "0.017 Ω",
+      "0.068 Ω",
+      "0.272 Ω",
+      "6.8 Ω"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "R = ρL ÷ A = 1.7 × 10⁻⁸ × 2 ÷ (5 × 10⁻⁷) = 0.068 Ω. 6.8 Ω comes from taking 0.5 mm² as 5 × 10⁻⁹ m²."
+  },
+  {
+    "id": "JAMBPHYS-D-069",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysElectricity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Resistors",
+    "stem": "Four identical 18 Ω resistors are connected in parallel. What is their combined resistance?",
+    "options": [
+      "4.5 Ω",
+      "9 Ω",
+      "18 Ω",
+      "72 Ω"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "n identical resistors in parallel give R ÷ n = 18 ÷ 4 = 4.5 Ω. 72 Ω is the series value."
+  },
+  {
+    "id": "JAMBPHYS-D-070",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysElectricity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electric cells",
+    "stem": "Local action in a simple cell is caused by",
+    "options": [
+      "too much acid",
+      "hydrogen bubbles on copper",
+      "a high internal resistance",
+      "impurities in the zinc"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Impurities such as iron in the zinc form tiny cells of their own, so the zinc wears away even when no current is drawn. Hydrogen bubbles cause polarisation."
+  },
+  {
+    "id": "JAMBPHYS-D-071",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysElectricity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electric cells",
+    "stem": "Polarisation in a simple cell is caused by",
+    "options": [
+      "too little acid",
+      "hydrogen on the copper plate",
+      "impurities in the zinc plate",
+      "zinc dissolving too fast"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Hydrogen bubbles collect on the copper plate, raise the internal resistance and set up a back e.m.f. A depolariser such as manganese(IV) oxide removes them."
+  },
+  {
+    "id": "JAMBPHYS-D-072",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysElectricity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Heating effect",
+    "stem": "A current of 5 A flows through an 8 Ω resistor for 2 minutes. How much heat is produced?",
+    "options": [
+      "0.04 kJ",
+      "0.2 kJ",
+      "4.8 kJ",
+      "24 kJ"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "H = I²Rt = 25 × 8 × 120 = 24000 J = 24 kJ. 4.8 kJ uses I instead of I², and 0.2 kJ is the heat in one second only."
+  },
+  {
+    "id": "JAMBPHYS-D-073",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysElectricity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Capacitors",
+    "stem": "A 220 μF capacitor is charged to 9 V. What charge does it store?",
+    "options": [
+      "0.04091 mC",
+      "1.98 mC",
+      "8.91 mC",
+      "24.44 mC"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Q = CV = 220 × 10⁻⁶ × 9 = 1.98 × 10⁻³ C = 1.98 mC. 24.44 divides the capacitance by the voltage."
+  },
+  {
+    "id": "JAMBPHYS-D-074",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysElectricity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Domestic wiring",
+    "stem": "A kettle is rated 920 W, 230 V. Which fuse is most suitable for it?",
+    "options": [
+      "3 A",
+      "5 A",
+      "13 A",
+      "30 A"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The kettle draws I = P ÷ V = 920 ÷ 230 = 4 A. The best fuse is the smallest standard rating just above that, 5 A: 3 A would blow at once, and 13 A or 30 A would not protect the flex."
+  },
+  {
+    "id": "JAMBPHYS-D-075",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysElectricity",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Cells in series",
+    "stem": "Four cells, each of e.m.f. 1.5 V and internal resistance 0.4 Ω, are connected in series to a 4.4 Ω resistor. What current flows?",
+    "options": [
+      "1 A",
+      "1.25 A",
+      "1.364 A",
+      "3.75 A"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Total e.m.f. = 6 V and total internal resistance = 1.6 Ω, so I = 6 ÷ (4.4 + 1.6) = 1 A. 1.364 A ignores the internal resistance, and 3.75 A divides by the internal resistance alone."
+  },
+  {
+    "id": "JAMBPHYS-D-076",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysElectricity",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Capacitors",
+    "stem": "A parallel-plate capacitor has plates of area 0.02 m², 1 mm apart in air. What is its capacitance? (ε₀ = 8.85 × 10⁻¹² F m⁻¹)",
+    "options": [
+      "0.177 pF",
+      "17.7 pF",
+      "177 pF",
+      "1770 pF"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "C = ε₀A ÷ d = 8.85 × 10⁻¹² × 0.02 ÷ 0.001 = 1.77 × 10⁻¹⁰ F = 177 pF. Taking d as 1 cm gives 17.7 pF."
+  },
+  {
+    "id": "JAMBPHYS-D-077",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysElectricity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Measuring instruments",
+    "stem": "To convert a galvanometer into an ammeter, you connect",
+    "options": [
+      "a low resistance in parallel",
+      "a low resistance in series",
+      "a high resistance in series",
+      "a high resistance in parallel"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A low-resistance shunt in parallel carries most of the current around the galvanometer. A high resistance in series (a multiplier) makes a voltmeter instead."
+  },
+  {
+    "id": "JAMBPHYS-D-078",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysElectricity",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Shunts",
+    "stem": "A galvanometer of resistance 50 Ω gives full-scale deflection at 10 mA. What shunt resistance makes it read up to 1 A?",
+    "options": [
+      "0.5051 Ω",
+      "5.051 Ω",
+      "49.5 Ω",
+      "4950 Ω"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The galvanometer carries 0.01 A and the shunt the other 0.99 A at the same voltage (0.5 V), so S = 0.5 ÷ 0.99 = 0.5051 Ω. 4950 Ω is the series resistance that would make a 50 V voltmeter instead."
+  },
+  {
+    "id": "JAMBPHYS-D-079",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysElectricity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Measuring instruments",
+    "stem": "The e.m.f. of a cell is measured most accurately with",
+    "options": [
+      "a rheostat",
+      "an ammeter",
+      "a potentiometer",
+      "a moving-coil voltmeter"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "At balance a potentiometer draws no current from the cell, so there are no lost volts. A voltmeter draws a little current and reads slightly less than the e.m.f."
+  },
+  {
+    "id": "JAMBPHYS-D-080",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysElectricity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electrical energy",
+    "stem": "A 120 W television is used for 5 hours a day for 30 days. How much energy does it use?",
+    "options": [
+      "0.6 kWh",
+      "3.6 kWh",
+      "18 kWh",
+      "18000 kWh"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Energy = 0.12 kW × 150 h = 18 kWh. 0.6 kWh is one day's use, and 18000 is in watt-hours."
+  },
+  {
+    "id": "JAMBPHYS-D-081",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysElectricity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electric cells",
+    "stem": "The electrolyte in a lead-acid accumulator is",
+    "options": [
+      "copper(II) sulphate solution",
+      "ammonium chloride paste",
+      "dilute hydrochloric acid",
+      "dilute sulphuric acid"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A lead-acid cell has lead(IV) oxide and lead plates in dilute sulphuric acid. Ammonium chloride is the electrolyte of the Leclanché cell."
+  },
+  {
+    "id": "JAMBPHYS-D-082",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysElectricity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electric field",
+    "stem": "A potential difference of 12 V is applied across two parallel plates 4 mm apart. What is the electric field strength between them?",
+    "options": [
+      "0.3333 V m⁻¹",
+      "3 V m⁻¹",
+      "48 V m⁻¹",
+      "3000 V m⁻¹"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "E = V ÷ d = 12 ÷ 0.004 = 3000 V m⁻¹. 3 comes from using 4 instead of 0.004 m."
+  },
+  {
+    "id": "JAMBPHYS-D-083",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysMagnetism",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Motor effect",
+    "stem": "The direction of the force on a current-carrying conductor in a magnetic field is given by",
+    "options": [
+      "Fleming's left-hand rule",
+      "Fleming's right-hand rule",
+      "Faraday's law",
+      "Lenz's law"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The left-hand rule gives the force (motion) for motors. The right-hand rule gives the direction of an induced current in generators."
+  },
+  {
+    "id": "JAMBPHYS-D-084",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysMagnetism",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Generators",
+    "stem": "In an a.c. generator, slip rings are used to",
+    "options": [
+      "reduce the resistance of the coil",
+      "keep contact with the rotating coil",
+      "reverse the current every half turn",
+      "increase the speed of the coil"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Slip rings turn with the coil and the brushes rest on them, so the alternating output is led out unchanged. Reversing the current each half turn is the job of a split-ring commutator."
+  },
+  {
+    "id": "JAMBPHYS-D-085",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysMagnetism",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Capacitive reactance",
+    "stem": "What is the reactance of a 10 μF capacitor on a 50 Hz supply?",
+    "options": [
+      "31.83 Ω",
+      "159.2 Ω",
+      "318.3 Ω",
+      "636.6 Ω"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "X(C) = 1 ÷ 2πfC = 1 ÷ (2 × 3.142 × 50 × 10⁻⁵) = 318.3 Ω. 636.6 Ω leaves out the 2."
+  },
+  {
+    "id": "JAMBPHYS-D-086",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysMagnetism",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Impedance",
+    "stem": "A resistor of 60 Ω is in series with an inductor of reactance 91 Ω on an a.c. supply. What is the impedance of the circuit?",
+    "options": [
+      "31 Ω",
+      "60 Ω",
+      "109 Ω",
+      "151 Ω"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Z = √(R² + X²) = √(3600 + 8281) = √11881 = 109 Ω. 151 Ω adds them directly, which ignores the phase difference, and 31 Ω subtracts them."
+  },
+  {
+    "id": "JAMBPHYS-D-087",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysMagnetism",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Transformers",
+    "stem": "Eddy-current losses in a transformer core are reduced by",
+    "options": [
+      "laminating the core",
+      "using thicker copper wire",
+      "using a solid iron core",
+      "adding more turns"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Thin insulated sheets break up the paths of eddy currents. Thicker wire reduces heating in the coils (copper loss), not in the core."
+  },
+  {
+    "id": "JAMBPHYS-D-088",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysMagnetism",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Transformers",
+    "stem": "A transformer takes 500 W from the mains and delivers 460 W to its load. What is its efficiency?",
+    "options": [
+      "8%",
+      "46%",
+      "92%",
+      "108.7%"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Efficiency = output ÷ input × 100% = 460 ÷ 500 × 100% = 92%. 8% is the fraction wasted, and 108.7% inverts the ratio."
+  },
+  {
+    "id": "JAMBPHYS-D-089",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysMagnetism",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Magnetic fields",
+    "stem": "The magnetic field lines around a long straight wire carrying a current are",
+    "options": [
+      "straight lines along the wire",
+      "absent everywhere",
+      "circles centred on the wire",
+      "straight lines away from the wire"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The field forms concentric circles around the wire, their direction given by the right-hand grip rule."
+  },
+  {
+    "id": "JAMBPHYS-D-090",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysMagnetism",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Faraday's law",
+    "stem": "The magnetic flux through a 150-turn coil falls from 0.02 Wb to 0.005 Wb in 0.05 s. What is the average induced e.m.f.?",
+    "options": [
+      "0.3 V",
+      "4.5 V",
+      "45 V",
+      "75 V"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "E = N × change in flux ÷ time = 150 × 0.015 ÷ 0.05 = 45 V. 0.3 V leaves out the number of turns, and 75 V adds the two fluxes."
+  },
+  {
+    "id": "JAMBPHYS-D-091",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysMagnetism",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Magnetic materials",
+    "stem": "Which of these is a ferromagnetic material?",
+    "options": [
+      "Aluminium",
+      "Glass",
+      "Copper",
+      "Nickel"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Iron, nickel and cobalt are ferromagnetic and are strongly attracted to magnets. Copper, aluminium and glass are not."
+  },
+  {
+    "id": "JAMBPHYS-D-092",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysMagnetism",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electric motors",
+    "stem": "A split-ring commutator in a d.c. motor is used to",
+    "options": [
+      "increase the speed of rotation",
+      "keep the coil turning one way",
+      "reduce sparking at the brushes",
+      "step up the supply voltage"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "It reverses the current in the coil every half turn, so the force on each side always turns the coil in the same direction."
+  },
+  {
+    "id": "JAMBPHYS-D-093",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysMagnetism",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Resonance",
+    "stem": "A 0.4 H inductor and a 25 μF capacitor are in series. What is the resonant frequency of the circuit?",
+    "options": [
+      "50.33 Hz",
+      "100.7 Hz",
+      "316.2 Hz",
+      "503.3 Hz"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "f = 1 ÷ 2π√(LC) = 1 ÷ (2π × √(10⁻⁵)) = 1 ÷ (2π × 0.003162) = 50.33 Hz. 316.2 is 1 ÷ √(LC), the angular frequency in rad s⁻¹, and 100.7 uses π instead of 2π."
+  },
+  {
+    "id": "JAMBPHYS-D-094",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysMagnetism",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Conduction in gases",
+    "stem": "Passing electricity through a gas at low pressure in a discharge tube produces",
+    "options": [
+      "electrolysis of the gas",
+      "nuclear fission",
+      "a rise in gas pressure",
+      "a glow discharge"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "At low pressure the gas ionises and glows, the effect used in neon signs and fluorescent tubes."
+  },
+  {
+    "id": "JAMBPHYS-D-095",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysMagnetism",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Alternating current",
+    "stem": "An r.m.s. current of 3 A flows through a 40 Ω resistor. What average power is produced?",
+    "options": [
+      "120 W",
+      "180 W",
+      "360 W",
+      "720 W"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "P = I(rms)² × R = 9 × 40 = 360 W. 720 W uses the peak current, and 120 W uses I instead of I²."
+  },
+  {
+    "id": "JAMBPHYS-D-096",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysMagnetism",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Earth's magnetism",
+    "stem": "The angle of declination at a place is the angle between",
+    "options": [
+      "two magnetic meridians",
+      "the needle and the vertical",
+      "true north and magnetic north",
+      "the field and the horizontal ground"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Declination (variation) is the angle between the geographic and magnetic meridians. The angle between the field and the horizontal is the dip (inclination)."
+  },
+  {
+    "id": "JAMBPHYS-D-097",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysMagnetism",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "A.C. circuits",
+    "stem": "In a purely capacitive a.c. circuit, the current",
+    "options": [
+      "leads the voltage by 180°",
+      "is in phase with the voltage",
+      "leads the voltage by 90°",
+      "lags the voltage by 90°"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The capacitor must charge before a voltage builds up across it, so the current peaks a quarter cycle before the voltage. In a pure inductor it lags by 90°."
+  },
+  {
+    "id": "JAMBPHYS-D-098",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysMagnetism",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Power transmission",
+    "stem": "20 kW is sent at 400 V along cables of total resistance 0.5 Ω. How much power is lost as heat in the cables?",
+    "options": [
+      "25 W",
+      "50 W",
+      "625 W",
+      "1250 W"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "I = P ÷ V = 50 A, so the loss is I²R = 2500 × 0.5 = 1250 W. 50 is the current in amperes and 25 is IR, the voltage drop in volts. Sending power at higher voltage cuts this loss."
+  },
+  {
+    "id": "JAMBPHYS-D-099",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysMagnetism",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Magnets",
+    "stem": "Which of these destroys the magnetism of a bar magnet?",
+    "options": [
+      "Placing it in a coil with d.c.",
+      "Stroking it with a magnet",
+      "Storing it with keepers",
+      "Heating it strongly"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Heating shakes the magnetic domains out of line. Stroking and a direct current in a coil magnetise; keepers help a magnet keep its magnetism."
+  },
+  {
+    "id": "JAMBPHYS-D-100",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysMagnetism",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Electrolysis",
+    "stem": "How long must a current of 0.5 A flow to deposit 0.33 g of copper? (Electrochemical equivalent of copper = 3.3 × 10⁻⁴ g C⁻¹)",
+    "options": [
+      "500 s",
+      "1000 s",
+      "2000 s",
+      "4000 s"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Charge needed Q = m ÷ z = 0.33 ÷ 3.3 × 10⁻⁴ = 1000 C, so t = Q ÷ I = 1000 ÷ 0.5 = 2000 s. 1000 is the charge in coulombs, not the time."
+  },
+  {
+    "id": "JAMBPHYS-D-101",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysModern",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Radioactivity",
+    "stem": "Which radiation is the most penetrating?",
+    "options": [
+      "Gamma rays",
+      "Cathode rays",
+      "Alpha particles",
+      "Beta particles"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Gamma rays are uncharged high-energy photons and need thick lead or concrete to stop them. Alpha particles are stopped by a sheet of paper."
+  },
+  {
+    "id": "JAMBPHYS-D-102",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Atomic models",
+    "stem": "In the alpha-scattering experiment, most alpha particles passed straight through the gold foil. This showed that the atom",
+    "options": [
+      "has electrons in shells",
+      "has charge spread evenly",
+      "is mostly empty space",
+      "is solid throughout"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Only a few particles were deflected sharply, by a tiny, dense, positive nucleus; the rest of the atom is nearly empty. This led Rutherford to the nuclear model."
+  },
+  {
+    "id": "JAMBPHYS-D-103",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysModern",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Half-life",
+    "stem": "The count rate of a radioactive source falls from 800 to 50 counts per minute in 36 hours. What is its half-life?",
+    "options": [
+      "9 hours",
+      "12 hours",
+      "18 hours",
+      "36 hours"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "800 → 400 → 200 → 100 → 50 is 4 halvings, so the half-life is 36 ÷ 4 = 9 hours. 18 hours counts only 2 halvings."
+  },
+  {
+    "id": "JAMBPHYS-D-104",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Energy levels",
+    "stem": "An electron in an atom drops from an energy level of -2.6 eV to one of -9.8 eV. What is the energy of the photon emitted?",
+    "options": [
+      "3.769 eV",
+      "7.2 eV",
+      "9.8 eV",
+      "12.4 eV"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Photon energy = difference between the levels = -2.6 - (-9.8) = 7.2 eV. 12.4 eV adds the two values instead of subtracting."
+  },
+  {
+    "id": "JAMBPHYS-D-105",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysModern",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Thermionic emission",
+    "stem": "Thermionic emission is the release of electrons from",
+    "options": [
+      "a charged insulator",
+      "a radioactive nucleus",
+      "a metal struck by light",
+      "a heated metal surface"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Heating gives some free electrons enough energy to escape the metal surface, as in the cathode of an X-ray tube. Release by light is photoelectric emission."
+  },
+  {
+    "id": "JAMBPHYS-D-106",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysModern",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Mass-energy",
+    "stem": "In a nuclear reaction, a mass of 2 × 10⁻³⁰ kg is converted to energy. How much energy is released? (c = 3 × 10⁸ m s⁻¹)",
+    "options": [
+      "6 × 10⁻²² J",
+      "1.8 × 10⁻¹⁴ J",
+      "1.8 × 10⁻¹³ J",
+      "3.6 × 10⁻¹³ J"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "E = mc² = 2 × 10⁻³⁰ × 9 × 10¹⁶ = 1.8 × 10⁻¹³ J. 6 × 10⁻²² J uses c instead of c²."
+  },
+  {
+    "id": "JAMBPHYS-D-107",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Semiconductors",
+    "stem": "The depletion layer of a p-n junction becomes wider when the junction is",
+    "options": [
+      "short-circuited",
+      "reverse biased",
+      "lit by daylight",
+      "forward biased"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Reverse bias pulls holes and electrons away from the junction, so the region with no free carriers widens and almost no current flows. Forward bias narrows it."
+  },
+  {
+    "id": "JAMBPHYS-D-108",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rectification",
+    "stem": "A single diode is connected in series with a resistor across an a.c. supply. The current through the resistor is",
+    "options": [
+      "a steady, smooth direct current",
+      "zero at every instant",
+      "an alternating current, unchanged",
+      "one-way pulses, half of each cycle"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The diode conducts only when forward biased, so the resistor gets current in one direction during one half of each cycle and none in the other: half-wave rectification. A smoothing capacitor is needed for a steadier output."
+  },
+  {
+    "id": "JAMBPHYS-D-109",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysModern",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Half-life",
+    "stem": "After 40 minutes, 1/32 of a radioactive sample remains undecayed. What is its half-life?",
+    "options": [
+      "1.25 min",
+      "5 min",
+      "6.667 min",
+      "8 min"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "1/32 = (1/2)⁵, so 40 minutes is 5 half-lives and each is 8 minutes. 5 is the number of half-lives, not their length, and 6.667 min counts 6 halvings instead of 5."
+  },
+  {
+    "id": "JAMBPHYS-D-110",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Wave-particle duality",
+    "stem": "Which of these is evidence that light behaves as particles?",
+    "options": [
+      "interference in thin films",
+      "the photoelectric effect",
+      "polarisation by a filter",
+      "diffraction at a narrow slit"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The photoelectric effect is explained only by light arriving as photons of energy hf. Diffraction, interference and polarisation are wave behaviour."
+  },
+  {
+    "id": "JAMBPHYS-D-111",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysModern",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Photoelectric effect",
+    "stem": "A metal has a work function of 4.62 × 10⁻¹⁹ J. What is its threshold frequency? (h = 6.6 × 10⁻³⁴ J s)",
+    "options": [
+      "1.43 × 10⁻¹⁵ Hz",
+      "3.5 × 10¹⁴ Hz",
+      "7 × 10¹⁴ Hz",
+      "1.4 × 10¹⁵ Hz"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "f₀ = W ÷ h = 4.62 × 10⁻¹⁹ ÷ 6.6 × 10⁻³⁴ = 7 × 10¹⁴ Hz. 1.43 × 10⁻¹⁵ divides h by W, the wrong way round."
+  },
+  {
+    "id": "JAMBPHYS-D-112",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Radioactive decay",
+    "stem": "Which particle is emitted from the nucleus in beta-minus decay?",
+    "options": [
+      "A photon",
+      "An electron",
+      "A helium nucleus",
+      "A neutron"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In beta-minus decay a neutron turns into a proton and a fast electron, which is emitted. A helium nucleus is an alpha particle."
+  },
+  {
+    "id": "JAMBPHYS-D-113",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysModern",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Radioactive decay",
+    "stem": "A thorium nucleus of atomic number 90 emits one alpha particle and then two beta-minus particles. What is the atomic number of the final nucleus?",
+    "options": [
+      "86",
+      "88",
+      "89",
+      "90"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The alpha decay lowers the atomic number by 2 to 88, and each beta-minus decay raises it by 1, back to 90. The mass number falls by 4, so the result is an isotope of thorium."
+  },
+  {
+    "id": "JAMBPHYS-D-114",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cathode rays",
+    "stem": "Which of these is a property of cathode rays?",
+    "options": [
+      "They bend in a magnetic field",
+      "They carry no charge",
+      "They are electromagnetic waves",
+      "They travel at the speed of light"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Cathode rays are streams of electrons, so they are negatively charged and are deflected by electric and magnetic fields."
+  },
+  {
+    "id": "JAMBPHYS-D-115",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysModern",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Nuclear energy",
+    "stem": "Nuclear fission is the",
+    "options": [
+      "splitting of a heavy nucleus",
+      "joining of light nuclei",
+      "capture of an orbital electron",
+      "emission of an alpha particle"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "In fission a heavy nucleus such as uranium-235 splits into two smaller nuclei and releases energy. Joining light nuclei is fusion."
+  },
+  {
+    "id": "JAMBPHYS-D-116",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysModern",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Transistors",
+    "stem": "When an n-p-n transistor is used as an amplifier, the input signal is applied across the",
+    "options": [
+      "collector-base junction",
+      "base-emitter junction",
+      "emitter-collector path",
+      "collector alone"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A small change in base-emitter current controls a much larger collector current, which gives the amplification. The collector-base junction is reverse biased."
+  },
+  {
+    "id": "JAMBPHYS-D-117",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysModern",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Wave-particle duality",
+    "stem": "An electron of mass 9.1 × 10⁻³¹ kg moves at 2.2 × 10⁶ m s⁻¹. What is its de Broglie wavelength? (h = 6.6 × 10⁻³⁴ J s)",
+    "options": [
+      "2 × 10⁻²⁴ m",
+      "3.3 × 10⁻¹² m",
+      "3.3 × 10⁻¹⁰ m",
+      "3.3 × 10⁻⁸ m"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "λ = h ÷ mv = 6.6 × 10⁻³⁴ ÷ (9.1 × 10⁻³¹ × 2.2 × 10⁶) = 3.3 × 10⁻¹⁰ m, about the size of an atom. 2 × 10⁻²⁴ is the momentum mv, not the wavelength."
+  },
+  {
+    "id": "JAMBPHYS-D-118",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Logic gates",
+    "stem": "A two-input exclusive-OR (XOR) gate gives an output of 1 when",
+    "options": [
+      "both inputs are 0",
+      "both inputs are 1",
+      "its two inputs differ",
+      "both inputs are the same"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "XOR outputs 1 for inputs 0 and 1 or 1 and 0, and 0 when the inputs match. An ordinary OR gate would also give 1 when both inputs are 1."
+  },
+  {
+    "id": "JAMBPHYS-D-119",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "X-rays",
+    "stem": "X-rays are produced when",
+    "options": [
+      "a nucleus emits a helium ion",
+      "light falls on a cold metal surface",
+      "fast electrons hit a metal target",
+      "a metal is heated in a vacuum"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "In an X-ray tube, electrons accelerated by a high voltage are stopped suddenly by a tungsten target, and part of their energy comes out as X-rays."
+  },
+  {
+    "id": "JAMBPHYS-D-120",
+    "section": "phys",
+    "test": 0,
+    "module": 1,
+    "domain": "jambphysModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Half-life",
+    "stem": "What percentage of a radioactive sample has decayed after 3 half-lives?",
+    "options": [
+      "12.5%",
+      "33.33%",
+      "66.67%",
+      "87.5%"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "After 3 half-lives, (1/2)³ = 1/8 = 12.5% remains, so 87.5% has decayed. 12.5% is the amount left, not the amount decayed."
+  }
+]

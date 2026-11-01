@@ -88,7 +88,8 @@ const TEST_REGIONS: Record<string, TestRegion> = {
   naplan7: "AU", ocnsw: "AU", vicsel: "AU", hscmaths: "AU", aursa: "AU", aurcg: "AU", aufss: "AU", aufirstaid: "AU", auforklift: "AU", auwah: "AU", aucit: "AU",
   nzroad: "NZ",
   phlto: "PH", phcse: "PH", phlet: "PH", mykpp: "MY", sgbtt: "SG", hkdrive: "HK", aerta: "AE", zak53: "ZA", ngfrsc: "NG", kentsa: "KE", pkdrive: "PK",
-  jambeng: "NG",
+  jambeng: "NG", jambmath: "NG", jambbio: "NG", jambchem: "NG", jambphys: "NG",
+  ngpolice: "NG", cdcfib: "NG", ngarmy: "NG", ngcustoms: "NG", trcnpqe: "NG",
   inrto: "IN", ssccgl: "IN", rrbntpc: "IN", ibpspo: "IN", ctet: "IN",
   rrbgroupd: "IN", sscgd: "IN", sscchsl: "IN", sscmts: "IN", uppolice: "IN", ibpsclerk: "IN", jnvst: "IN",
   sbiclerk: "IN", sbipo: "IN", ibpsrrb: "IN", biharpolice: "IN", rajpolice: "IN", delhipolice: "IN", mppolice: "IN",
@@ -111,9 +112,10 @@ export const NON_DRIVING_TESTS = new Set([
   "sbiclerk", "sbipo", "ibpsrrb", "biharpolice", "rajpolice", "delhipolice", "mppolice",
   "upscse", "nda", "agniveer", "agniveervayu", "rrbalp", "rpfconst", "ssccpo",
   "neet", "jeemain", "cuet", "mhtcet", "ugcnet", "reet", "uptet", "aissee",
-  "apworld", "aphug", "aplang", "apcalcab",
+  "apgov", "apworld", "aphug", "aplang", "apcalcab",
   "phcse", "phlet",
-  "jambeng",
+  "jambeng", "jambmath", "jambbio", "jambchem", "jambphys",
+  "ngpolice", "cdcfib", "ngarmy", "ngcustoms", "trcnpqe",
 ]);
 
 /** Every test not listed above is a US exam. */
@@ -228,9 +230,9 @@ export const REGION_HOME: Record<Exclude<Region, "US">, {
     testsSub: "200 questions on South African road rules, in km/h for left-hand traffic. Four full 50-question tests.",
   },
   NG: {
-    title: "Free Nigeria Driving Test Practice: Highway Code | Tigertest",
-    description: "Free driving test practice for Nigeria: 200 original questions on the FRSC Highway Code, every answer explained. No account needed.",
-    lead: "Practice for the theory part of your driving test. Original questions on the Highway Code, road signs and safe driving, every answer explained. No signup.",
+    title: "Free Nigeria Practice Tests: JAMB, Recruitment & Driving | Tigertest",
+    description: "Free practice tests for Nigeria: JAMB UTME English, Mathematics, Biology, Chemistry and Physics, Police, Army, Customs and CDCFIB recruitment tests, the TRCN PQE and the FRSC Highway Code driving test, every answer explained. No account needed.",
+    lead: "Practice for the JAMB UTME, the recruitment tests of the Police, the Army, Customs and the CDCFIB services, the TRCN PQE for teachers and the theory part of your driving test. Original questions, every answer explained. No signup.",
     cta: { label: "Highway Code test", href: "/nigeria-driving-test-practice" },
     testsTitle: "Highway Code driving test",
     testsSub: "200 questions on the Nigeria Highway Code, in km/h for right-hand traffic. Four full 50-question tests.",

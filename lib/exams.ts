@@ -27,7 +27,7 @@ import forkliftEs from "./examTranslations/forklift.es.json";
 import cnaEs from "./examTranslations/cna.es.json";
 import epa608Es from "./examTranslations/epa608.es.json";
 
-export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "phlet" | "htl" | "cst" | "crcst";
+export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "phlet" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "htl" | "cst" | "crcst";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -8427,7 +8427,346 @@ const phlet: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, cna, ptcb, phleb, ccma, cet, danb, foodmgr, realestate, insurance, notary, sie, series7, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, cosmetology, barber, vtne, nasm, rbt, cpc, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, phlto, zak53, sgbtt, aerta, ngfrsc, kentsa, mykpp, hkdrive, pkdrive, phlet, uklitu, cacit, aucit, gulfrn, inrto, htl, cst, crcst];
+const ngpolice: ExamConfig = {
+  id: "ngpolice",
+  stateCode: "NGPOLICE",
+  idBase: 13200,
+  slug: "/nigeria-police-recruitment",
+  landingPath: "/nigeria-police-recruitment-practice-test",
+  name: "Nigeria Police Recruitment Practice Test",
+  shortName: "Nigeria Police test",
+  examLabel: "Nigeria Police recruitment test",
+  fullName: "Nigeria Police Force constable recruitment aptitude test (CBT)",
+  questionIdPrefix: "NGPOL-",
+  icon: "badge",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Source: the Police Service Commission's constable recruitment exercises (2025/2026: 50,000
+  // constables, applications 15 Dec 2025 to early Feb 2026, written aptitude test 28-30 April 2026
+  // for General Duty and Specialist applicants who passed screening; 2024: a CBT run by JAMB).
+  // The PSC publishes no question count, time, subject split or pass mark; guides report English,
+  // mathematics, general knowledge and current affairs, 60 to 100 questions in 30 to 60 minutes.
+  // Weights are Tigertest's own (English 15, maths 14, reasoning 5, civics/Constitution/rights/
+  // policing 16 per test), and 70% (35 of 50) is Tigertest's target. GK from the 1999
+  // Constitution (as amended), the Police Act 2020 and the ACJA 2015; current affairs are not
+  // modelled. Checked 2026-11-01. Pools are exactly 4x each count (no spares). All items original.
+  blueprint: {
+    ngpolGrammar: 8,
+    ngpolVocab: 7,
+    ngpolNumber: 8,
+    ngpolWordProblems: 6,
+    ngpolReasoning: 5,
+    ngpolConstitution: 7,
+    ngpolRights: 4,
+    ngpolPolicing: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 13201, name: "English Grammar & Usage", categories: ["ngpolGrammar"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 2, id: 13202, name: "Vocabulary & Comprehension", categories: ["ngpolVocab"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 3, id: 13203, name: "Mathematics", categories: ["ngpolNumber", "ngpolWordProblems"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 4, id: 13204, name: "Constitution & Rights", categories: ["ngpolConstitution", "ngpolRights"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 5, id: 13205, name: "Policing & Reasoning", categories: ["ngpolPolicing", "ngpolReasoning"], size: 40, weightLabel: "10 of 50 test questions" },
+  ],
+  categoryLabels: {
+    ngpolGrammar: "English: Grammar & Usage",
+    ngpolVocab: "English: Vocabulary & Comprehension",
+    ngpolNumber: "Mathematics: Number & Algebra",
+    ngpolWordProblems: "Mathematics: Word Problems & Data",
+    ngpolReasoning: "Logical & Verbal Reasoning",
+    ngpolConstitution: "The 1999 Constitution & Government",
+    ngpolRights: "Fundamental Rights & the Law",
+    ngpolPolicing: "The Nigeria Police Force & Policing",
+  },
+  copy: {
+    guestPrompt: "to save your police recruitment test progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets on the English, mathematics, reasoning and civics the constable aptitude test covers. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock CBTs · 50 questions, aim for 35 or more",
+    heroSubs: [
+      "Five topics, four 50-question tests. English and maths weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock CBT.",
+      "Fix the misses, then retake.",
+      "All done. Print your invitation card and go.",
+    ],
+    sourceLine: "Based on the subjects the Police Service Commission's constable aptitude test covers, the 1999 Constitution and the Police Act 2020. Original questions; 50 per test, 70% is Tigertest's target.",
+    analyticsKey: "ngpolice",
+  },
+};
+
+const cdcfib: ExamConfig = {
+  id: "cdcfib",
+  stateCode: "NGCDCFIB",
+  idBase: 13300,
+  slug: "/cdcfib-recruitment",
+  landingPath: "/cdcfib-recruitment-practice-test",
+  name: "CDCFIB Recruitment Practice Test",
+  shortName: "CDCFIB recruitment test",
+  examLabel: "CDCFIB recruitment CBT",
+  fullName: "CDCFIB recruitment CBT (Civil Defence, Correctional, Fire and Immigration Services)",
+  questionIdPrefix: "NGCDCFIB-",
+  icon: "shield",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Source: the Civil Defence, Correctional, Fire and Immigration Services Board's 2025
+  // recruitment (online, AI-proctored CBT, 12 to 19 November 2025, as reported from Board
+  // statements). The Board publishes no question count, time, subject split or pass mark; guides
+  // report 100 multiple-choice questions on English, maths, reasoning, general knowledge and the
+  // services, and some candidates reported 40. Four 50-question tests at 70% is Tigertest's
+  // target; topic weights are Tigertest's own (aptitude core 27 of 50, general knowledge 23).
+  // No current affairs or office-holders. Checked 2026-11-01. Pools are exactly 4x each count.
+  blueprint: {
+    cdcfibServices: 8,
+    cdcfibSafety: 5,
+    cdcfibGeography: 6,
+    cdcfibEnvironment: 5,
+    cdcfibGrammar: 6,
+    cdcfibVocab: 5,
+    cdcfibMaths: 9,
+    cdcfibReasoning: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 13301, name: "The Four Services & Safety", categories: ["cdcfibServices", "cdcfibSafety"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 2, id: 13302, name: "Nigerian Geography & Environment", categories: ["cdcfibGeography", "cdcfibEnvironment"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 3, id: 13303, name: "English Language", categories: ["cdcfibGrammar", "cdcfibVocab"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 4, id: 13304, name: "Numerical Ability", categories: ["cdcfibMaths"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 5, id: 13305, name: "Logical Reasoning", categories: ["cdcfibReasoning"], size: 24, weightLabel: "6 of 50 test questions" },
+  ],
+  categoryLabels: {
+    cdcfibServices: "The Four Services & the Board",
+    cdcfibSafety: "Fire Safety, First Aid & Emergencies",
+    cdcfibGeography: "Nigerian Geography",
+    cdcfibEnvironment: "Environment & Disasters",
+    cdcfibGrammar: "English Grammar & Usage",
+    cdcfibVocab: "English Vocabulary",
+    cdcfibMaths: "Numerical Ability",
+    cdcfibReasoning: "Logical Reasoning",
+  },
+  copy: {
+    guestPrompt: "to save your CDCFIB test progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets on the four services, Nigerian geography, English, maths and reasoning. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, aim for 35 or more",
+    heroSubs: [
+      "Five topics, four 50-question tests. Maths and English weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Watch the Board's portal for your CBT slot.",
+    ],
+    sourceLine: "General aptitude and service knowledge for the CDCFIB recruitment CBT. Original questions; 50 per test, 70% is Tigertest's target. Not affiliated with the CDCFIB.",
+    analyticsKey: "cdcfib",
+  },
+};
+
+const ngarmy: ExamConfig = {
+  id: "ngarmy",
+  stateCode: "NGARMY",
+  idBase: 13400,
+  slug: "/nigerian-army-recruitment",
+  landingPath: "/nigerian-army-recruitment-practice-test",
+  name: "Nigerian Army Recruitment Practice Test",
+  shortName: "Nigerian Army recruitment test",
+  examLabel: "Nigerian Army aptitude test",
+  fullName: "Nigerian Army recruitment aptitude test (Regular Recruits Intake, SSC and DSSC)",
+  questionIdPrefix: "NGARMY-",
+  icon: "medal",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // The Nigerian Army publishes no written or aptitude test syllabus, question count, time or pass
+  // mark. Its 90th and 91st Regular Recruits Intake notices (91RRI: applications 30 March to 17 May
+  // 2026, state screening from 9 June 2026) said there would be no pre-selection CBT (the 89RRI
+  // notice of April 2025 had announced one); screening is documents, physical and medical. Officer
+  // routes (SSC, DSSC) go before a selection board, which for SSC 49/2026 included academic tests
+  // and an oral interview (per reports). Guides describe aptitude papers in English, mathematics
+  // and general knowledge.
+  // Four 50-question tests at 70% (35 of 50) is Tigertest's target; topic weights are Tigertest's
+  // own. GK is static: Nigerian history to 1963, the armed forces, Africa/ECOWAS/AU.
+  // Checked 2026-11-01. Pools are exactly 4x each count (no spares). All items original.
+  blueprint: {
+    ngarmyGrammar: 7,
+    ngarmyVocab: 6,
+    ngarmyArith: 8,
+    ngarmyMaths: 6,
+    ngarmyReasoning: 6,
+    ngarmyHistory: 7,
+    ngarmyForces: 5,
+    ngarmyAfrica: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 13401, name: "English Language", categories: ["ngarmyGrammar", "ngarmyVocab"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 2, id: 13402, name: "Mathematics", categories: ["ngarmyArith", "ngarmyMaths"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 3, id: 13403, name: "Verbal & Logical Reasoning", categories: ["ngarmyReasoning"], size: 24, weightLabel: "6 of 50 test questions" },
+    { setNumber: 4, id: 13404, name: "Nigerian History", categories: ["ngarmyHistory"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 5, id: 13405, name: "Armed Forces, Africa & ECOWAS", categories: ["ngarmyForces", "ngarmyAfrica"], size: 40, weightLabel: "10 of 50 test questions" },
+  ],
+  categoryLabels: {
+    ngarmyGrammar: "English Grammar & Usage",
+    ngarmyVocab: "English Vocabulary & Idioms",
+    ngarmyArith: "Arithmetic & Number Work",
+    ngarmyMaths: "Algebra, Shapes & Statistics",
+    ngarmyReasoning: "Verbal & Logical Reasoning",
+    ngarmyHistory: "Nigerian History to Independence",
+    ngarmyForces: "The Nigerian Army & Armed Forces",
+    ngarmyAfrica: "Africa, ECOWAS & the AU",
+  },
+  copy: {
+    guestPrompt: "to save your Army aptitude test progress and track every question you miss",
+    trainingHeading: "Train by subject",
+    trainingSub: "Five sets on the English, mathematics, reasoning and general knowledge that Army aptitude tests cover. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, aim for 35 or more",
+    heroSubs: [
+      "Five subjects, four 50-question tests.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Get ready for screening.",
+    ],
+    sourceLine: "Original questions in the subjects Army aptitude tests cover; the Army publishes no format. 50 per test, 70% is Tigertest's target. Not affiliated with the Nigerian Army.",
+    analyticsKey: "ngarmy",
+  },
+};
+
+const ngcustoms: ExamConfig = {
+  id: "ngcustoms",
+  stateCode: "NGCUSTOMS",
+  idBase: 13500,
+  slug: "/nigeria-customs-recruitment",
+  landingPath: "/nigeria-customs-recruitment-practice-test",
+  name: "Nigeria Customs Recruitment Practice Test",
+  shortName: "Customs recruitment",
+  examLabel: "Nigeria Customs recruitment CBT",
+  fullName: "Nigeria Customs Service recruitment computer-based test (CBT)",
+  questionIdPrefix: "NGCUS-",
+  icon: "badge",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Source: Nigeria Customs Service press release NCS/PR/SP/S.582/025/028/VOLIII (September 2025)
+  // on the 2024-25 exercise (advertised 27 December 2024, 3,927 vacancies in the Superintendent,
+  // Inspectorate and Customs Assistant cadres): an online CBT on a laptop or desktop with a webcam,
+  // a compulsory pre-test two days before, and an extra CBT for Superintendent applicants. NCS
+  // publishes no question count, time, subject split or pass mark; guides describe English,
+  // mathematics and general knowledge. Four 50-question tests at 70% and the topic weights are
+  // Tigertest's. GK lane (batch 5 split): customs, trade, ports, economics, ECOWAS trade, world
+  // geography; no current affairs or office-holders. Checked 2026-11-01. All items original.
+  blueprint: {
+    cusGrammar: 8,
+    cusVocab: 7,
+    cusArith: 7,
+    cusQuant: 6,
+    cusReason: 5,
+    cusCustoms: 7,
+    cusEconomy: 5,
+    cusWorld: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 13501, name: "English Language", categories: ["cusGrammar", "cusVocab"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 2, id: 13502, name: "Mathematics", categories: ["cusArith", "cusQuant"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 3, id: 13503, name: "Customs, Trade & Ports", categories: ["cusCustoms"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 4, id: 13504, name: "Economics, ECOWAS & World Geography", categories: ["cusEconomy", "cusWorld"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 5, id: 13505, name: "Logical Reasoning", categories: ["cusReason"], size: 20, weightLabel: "5 of 50 test questions" },
+  ],
+  categoryLabels: {
+    cusGrammar: "English: Grammar & Usage",
+    cusVocab: "English: Vocabulary & Comprehension",
+    cusArith: "Maths: Arithmetic, Percentages & Duty",
+    cusQuant: "Maths: Algebra, Ratio & Data",
+    cusReason: "Verbal & Logical Reasoning",
+    cusCustoms: "Customs, Trade & Ports",
+    cusEconomy: "Economics & ECOWAS Trade",
+    cusWorld: "World Geography & Capitals",
+  },
+  copy: {
+    guestPrompt: "to save your Customs CBT progress and track every question you miss",
+    trainingHeading: "Train by subject",
+    trainingSub: "Five sets on the English, maths, reasoning and customs and trade knowledge a Customs aptitude test covers. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, aim for 35 or more",
+    heroSubs: [
+      "Five subjects, four 50-question tests. No calculator.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Watch for your CBT invitation.",
+    ],
+    sourceLine: "Based on the aptitude pattern of Nigeria Customs Service recruitment CBTs. Original questions; 50 per test, 70% is Tigertest's target.",
+    analyticsKey: "ngcustoms",
+  },
+};
+
+const trcnpqe: ExamConfig = {
+  id: "trcnpqe",
+  stateCode: "TRCNPQE",
+  idBase: 13600,
+  slug: "/trcn-pqe",
+  landingPath: "/trcn-pqe-practice-test",
+  name: "TRCN PQE Practice Test",
+  shortName: "TRCN PQE",
+  examLabel: "TRCN PQE",
+  fullName: "TRCN Professional Qualifying Examination (PQE)",
+  questionIdPrefix: "TRCN-",
+  icon: "graduation",
+  testCount: 3,
+  questionsPerTest: 60,
+  passPct: 60,
+  // TRCN PQE Curriculum Guide (trcn.gov.ng/pqe-curriculum, checked 2026-11-01): computer-based,
+  // 60 questions in 60 minutes, May and November diets; five core areas of 20% each: Pedagogy,
+  // Literacy, Numeracy, ICT, Safeguarding. Each full-length test takes 12 per area, split into two
+  // categories of 6 by the guide's subtopics. Pools are 3x each count plus 2 training-only spares.
+  // TRCN publishes no pass mark (guides say 50%); 60% (36 of 60) is Tigertest's target.
+  // All items original.
+  blueprint: {
+    trcnFoundations: 6,
+    trcnTeaching: 6,
+    trcnReading: 6,
+    trcnLanguage: 6,
+    trcnNumber: 6,
+    trcnMathTeach: 6,
+    trcnDigital: 6,
+    trcnIctTeach: 6,
+    trcnProtect: 6,
+    trcnSafeSchools: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 13601, name: "Pedagogy", categories: ["trcnFoundations", "trcnTeaching"], size: 40, weightLabel: "12 of 60 test questions" },
+    { setNumber: 2, id: 13602, name: "Literacy", categories: ["trcnReading", "trcnLanguage"], size: 40, weightLabel: "12 of 60 test questions" },
+    { setNumber: 3, id: 13603, name: "Numeracy", categories: ["trcnNumber", "trcnMathTeach"], size: 40, weightLabel: "12 of 60 test questions" },
+    { setNumber: 4, id: 13604, name: "ICT", categories: ["trcnDigital", "trcnIctTeach"], size: 40, weightLabel: "12 of 60 test questions" },
+    { setNumber: 5, id: 13605, name: "Safeguarding", categories: ["trcnProtect", "trcnSafeSchools"], size: 40, weightLabel: "12 of 60 test questions" },
+  ],
+  categoryLabels: {
+    trcnFoundations: "Foundations of Learning & Policy",
+    trcnTeaching: "Planning, Methods & Classroom Management",
+    trcnReading: "Reading & Vocabulary",
+    trcnLanguage: "Grammar, Writing & Communication",
+    trcnNumber: "Number & Arithmetic",
+    trcnMathTeach: "Geometry, Data, Algebra & Teaching Maths",
+    trcnDigital: "Digital Skills & Mobile Learning",
+    trcnIctTeach: "ICT in Teaching & Digital Citizenship",
+    trcnProtect: "Child Protection & Reporting",
+    trcnSafeSchools: "Safe Schools & Professional Conduct",
+  },
+  copy: {
+    guestPrompt: "to save your TRCN PQE progress and track every question you miss",
+    trainingHeading: "Train by PQE area",
+    trainingSub: "Five sets, one for each core area of the TRCN PQE curriculum: pedagogy, literacy, numeracy, ICT and safeguarding. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock exams · 60 questions, 12 from each area",
+    heroSubs: [
+      "Five areas, three full-length mock exams. Each area is 20%.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock exam.",
+      "Fix the misses, then retake.",
+      "All done. You're ready for the PQE.",
+    ],
+    sourceLine: "Based on the TRCN PQE curriculum guide. Original questions; 60 per test like the real PQE, 60% as Tigertest's target. Not affiliated with TRCN.",
+    analyticsKey: "trcnpqe",
+  },
+};
+
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, cna, ptcb, phleb, ccma, cet, danb, foodmgr, realestate, insurance, notary, sie, series7, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, cosmetology, barber, vtne, nasm, rbt, cpc, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, phlto, zak53, sgbtt, aerta, ngfrsc, kentsa, mykpp, hkdrive, pkdrive, phlet, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, gulfrn, inrto, htl, cst, crcst];
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
 export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA, realestatePA, realestateIL, realestateOH, realestateGA, realestateNC, realestateMI, realestateVA, realestateWA, realestateAZ, realestateTN, insuranceNY, insurancePA, insuranceIL, insuranceOH, insuranceGA, insuranceNC, insuranceMI, insuranceNJ, insuranceVA, insuranceWA, pncNY, pncPA, pncIL, pncOH, pncGA, pncNC, pncMI, pncNJ, pncVA, pncWA];

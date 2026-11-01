@@ -9,7 +9,7 @@ import { regionFromCountry } from '@/lib/region';
 // before signing up.
 const STEPS = new Set(['visit', 'answered', 'signup_view', 'dmv_picker', 'dmv_state', 'signup']);
 // Mirrors VISIT_SOURCES in lib/funnel.ts (that module imports the client SDK).
-const VISIT_SOURCES = new Set(['chatgpt', 'perplexity', 'gemini', 'copilot', 'claude', 'ai_other', 'search', 'direct', 'other']);
+const VISIT_SOURCES = new Set(['chatgpt', 'perplexity', 'gemini', 'copilot', 'claude', 'ai_other', 'search', 'friend', 'direct', 'other']);
 
 export async function POST(request: NextRequest) {
   try {

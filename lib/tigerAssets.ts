@@ -66,6 +66,10 @@ const BORROWED_SETS: Record<string, string> = {
   // the CTET tiger, the Sainik School entrance the military-entrance (ASVAB) tiger.
   jeemain: "sat", neet: "sat", mhtcet: "sat", cuet: "sat",
   reet: "ctet", uptet: "ctet", ugcnet: "ctet", aissee: "asvab",
+  // Next-100 batch 5: the JAMB UTME subjects (Use of English too) the college-entrance (SAT) tiger; the Nigeria
+  // recruitment tests the police, firefighter, military-entrance and security-guard tigers; the TRCN PQE the Praxis tiger.
+  jambeng: "sat", jambmath: "sat", jambbio: "sat", jambchem: "sat", jambphys: "sat",
+  ngpolice: "police", cdcfib: "ffi", ngarmy: "asvab", ngcustoms: "security", trcnpqe: "praxis",
 };
 
 export function hasTigerSet(examId: string): boolean {

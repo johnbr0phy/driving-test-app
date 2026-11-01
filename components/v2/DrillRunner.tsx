@@ -32,6 +32,8 @@ import { useV2Paywall, V2Paywall } from "./V2Paywall";
 import { useAuth } from "@/contexts/AuthContext";
 import { useGuestPrompt } from "@/hooks/useGuestPrompt";
 import { GuestPromptStep } from "@/components/GuestPromptStep";
+import { useSharePrompt } from "@/hooks/useSharePrompt";
+import { SharePromptStep } from "@/components/SharePromptStep";
 import { v2GuestAnswered } from "@/components/GuestSaveCard";
 import { recordClassAnswerById, v2Pick } from "@/lib/classProgress";
 import { AchievementCelebration } from "@/components/AchievementCelebration";
@@ -70,6 +72,9 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
   const { user, loading: authLoading } = useAuth();
   // Signed-out visitors get the sign-up prompt in place of a question now and then.
   const guestPrompt = useGuestPrompt(!authLoading && !user, "drill");
+  // Non-paying people on a roll get John's "tell a friend" ask the same way (v2 drills are English).
+  const examAnswered = v2GuestAnswered(drillsMap, results, exam.id);
+  const sharePrompt = useSharePrompt(premiumReady && !isPremium, examAnswered, "drill");
 
   // Close goes back to the dashboard, where the exam level was opened from.
   const backHref = routes.dashboard;
@@ -133,6 +138,7 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
     const ok = isCorrect(question, final);
     setRevealed(true);
     guestPrompt.record(ok);
+    sharePrompt.record(ok);
     recordClassAnswerById(exam.id, question.id, question.domain, ok, v2Pick(question.format, final));
     const before = drill ? drillStateFor(useV2Store.getState().drills, exam.id, drill, allQuestions) : undefined;
     answerDrill(key, question.id, ok, before);
@@ -215,11 +221,13 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
           ) : guestPrompt.showing ? (
             <GuestPromptStep
               signupHref={`/signup?redirect=${encodeURIComponent(routes.drillQuestions(drill.key))}`}
-              answered={v2GuestAnswered(drillsMap, results, exam.id)}
+              answered={examAnswered}
               where="drill"
               dataTheme={exam.id}
               onSkip={() => { guestPrompt.skip(); load(); }}
             />
+          ) : sharePrompt.showing ? (
+            <SharePromptStep onShared={sharePrompt.shared} onSkip={() => { sharePrompt.skip(); load(); }} />
           ) : question ? (
             <QuestionView focusOnChange
               key={question.id}
@@ -234,7 +242,7 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
               label={`${exam.domainLabels[question.domain] ?? question.domain}${question.skill ? ` · ${question.skill}` : ""}`}
             />
           ) : null}
-          {missedSkill && !guestPrompt.showing && (
+          {missedSkill && !guestPrompt.showing && !sharePrompt.showing && (
             <div className="v2-pop mt-4 rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-4 py-3">
               <div className="text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400">Brush up on the basics</div>
               <button type="button" onClick={() => { setBrushUp(true); trackBasics("brushup", exam.id, drill.key, { skill: missedSkill.id }); }} className="v2-tap mt-1 flex w-full items-center gap-3 text-left">
@@ -249,11 +257,11 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
         </div>
       </div>
 
-      {!done && question && !guestPrompt.showing && (
+      {!done && question && !guestPrompt.showing && !sharePrompt.showing && (
         <div className="v2-safe-bottom shrink-0 border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-3 pt-3">
           <div className="mx-auto flex max-w-2xl gap-2">
             {revealed ? (
-              <button type="button" onClick={() => { if (earnedMastery || !guestPrompt.takeStep()) load(); }} className="v2-tap w-full rounded-xl bg-brand text-base font-bold text-white">Next</button>
+              <button type="button" onClick={() => { if (earnedMastery || !(guestPrompt.takeStep() || sharePrompt.takeStep())) load(); }} className="v2-tap w-full rounded-xl bg-brand text-base font-bold text-white">Next</button>
             ) : question.format === "single" ? (
               <div className="v2-tap flex w-full items-center justify-center text-sm text-gray-500 dark:text-gray-400">Tap an answer to check it</div>
             ) : (

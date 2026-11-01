@@ -1,0 +1,37 @@
+{
+  "id": "trcnpqe",
+  "stateCode": "TRCNPQE",
+  "idBase": 13600,
+  "prefix": "TRCN-",
+  "slug": "/trcn-pqe",
+  "landingPath": "/trcn-pqe-practice-test",
+  "dataFile": "data/trcn-pqe-questions.json",
+  "name": "TRCN PQE Practice Test",
+  "shortName": "TRCN PQE",
+  "examLabel": "TRCN PQE",
+  "fullName": "TRCN Professional Qualifying Examination (PQE)",
+  "icon": "graduation",
+  "testCount": 3,
+  "questionsPerTest": 60,
+  "passPct": 60,
+  "categories": [
+    {"key": "trcnFoundations", "label": "Foundations of Learning & Policy", "perTest": 6, "pool": 20, "segment": "FND"},
+    {"key": "trcnTeaching", "label": "Planning, Methods & Classroom Management", "perTest": 6, "pool": 20, "segment": "TCH"},
+    {"key": "trcnReading", "label": "Reading & Vocabulary", "perTest": 6, "pool": 20, "segment": "RDG"},
+    {"key": "trcnLanguage", "label": "Grammar, Writing & Communication", "perTest": 6, "pool": 20, "segment": "LNG"},
+    {"key": "trcnNumber", "label": "Number & Arithmetic", "perTest": 6, "pool": 20, "segment": "NUM"},
+    {"key": "trcnMathTeach", "label": "Geometry, Data, Algebra & Teaching Maths", "perTest": 6, "pool": 20, "segment": "MTH"},
+    {"key": "trcnDigital", "label": "Digital Skills & Mobile Learning", "perTest": 6, "pool": 20, "segment": "DIG"},
+    {"key": "trcnIctTeach", "label": "ICT in Teaching & Digital Citizenship", "perTest": 6, "pool": 20, "segment": "ICT"},
+    {"key": "trcnProtect", "label": "Child Protection & Reporting", "perTest": 6, "pool": 20, "segment": "PRT"},
+    {"key": "trcnSafeSchools", "label": "Safe Schools & Professional Conduct", "perTest": 6, "pool": 20, "segment": "SAF"}
+  ],
+  "notes": "Real PQE (TRCN PQE curriculum guide, trcn.gov.ng/pqe-curriculum, checked 2026-11-01): computer-based, 60 questions, 60 minutes, May and November diets, five core areas each 20%: Pedagogy, Literacy, Numeracy, ICT, Safeguarding. Each 60-question test here takes 12 per area (two categories of 6). Three full-length tests; each pool is 3x6 = 18 plus 2 training-only spares (the last two items of each segment). TRCN publishes no pass mark on its site; guides report 50%. 60% (36 of 60) is Tigertest's readiness target.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 13601, "name": "Pedagogy", "categories": ["trcnFoundations", "trcnTeaching"], "size": 40},
+    {"setNumber": 2, "id": 13602, "name": "Literacy", "categories": ["trcnReading", "trcnLanguage"], "size": 40},
+    {"setNumber": 3, "id": 13603, "name": "Numeracy", "categories": ["trcnNumber", "trcnMathTeach"], "size": 40},
+    {"setNumber": 4, "id": 13604, "name": "ICT", "categories": ["trcnDigital", "trcnIctTeach"], "size": 40},
+    {"setNumber": 5, "id": 13605, "name": "Safeguarding", "categories": ["trcnProtect", "trcnSafeSchools"], "size": 40}
+  ]
+}

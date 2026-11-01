@@ -1,7 +1,7 @@
 # Builder brief: one exam for the next-100 wave
 
 You build ONE practice exam for Tigertest. Up to ten builders work at once in the same checkout,
-`/home/user/driving-test-app` (branch `next100-batch4`), each on a different exam. The integrator
+`/home/user/driving-test-app` (branch `next100-batch5`), each on a different exam. The integrator
 applies shared-file changes, builds, screenshots and commits. Your exam's row is in the table at the
 bottom of this file and in `tools/next100/QUEUE.md`.
 
@@ -109,30 +109,36 @@ short.
   (8-15-17, 5-12-13, x - 1/x, 30% up 10% off, A and B fill/empty a tank) and favourite facts recur.
   Pick less common numbers and facts from the start, and grep your numbers against the family.
 
-## Batch 4
+## Lessons from batch 4 (apply them too)
+- Builders working on the same syllabus at the same time keep landing on each other's replacements.
+  In this batch the four JAMB subjects share nothing with each other, but the five Nigeria v1 banks
+  (police, CDCFIB, army, customs) share GK, English and maths: before writing, each picks a lane
+  (see the notes) and greps the others' files on disk as it goes.
+- Official notices often load from a CDN or mirror when the body's site does not (NTA's s3waas
+  mirror, digitaloceanspaces CDNs, Scribd copies of the PDF). Try those before falling back to
+  guides, and label guide-only figures.
+- Run the hue checker yourself (rule in "Lessons from batch 1"); white text on the brand must be at
+  least 4.5:1, so a lightness above about 42% usually fails.
+
+## Batch 5
 
 | id | Test | Engine | Template | Region | slug | landing | suggested hue |
 |---|---|---|---|---|---|---|---|
-| neet | NEET-UG (Physics, Chemistry, Biology) | v2 | nda (sections) | IN | /neet | /neet-practice-test | 330 40% 40% |
-| jeemain | JEE Main Paper 1 (B.E./B.Tech: Maths, Physics, Chemistry, with numeric-value items) | v2 | nda (sections) + numeric like gcsehigher | IN | /jee-main | /jee-main-practice-test | 20 55% 34% |
-| cuet | CUET-UG General Aptitude Test (Section III) | v2 | ssccgl | IN | /cuet | /cuet-general-test-practice-test | 280 30% 40% |
-| mhtcet | MHT-CET PCM group | v2 | nda (sections) | IN | /mht-cet | /mht-cet-practice-test | 100 30% 32% |
-| ugcnet | UGC-NET Paper 1 (Teaching and Research Aptitude) | v2 | ctet | IN | /ugc-net-paper-1 | /ugc-net-paper-1-practice-test | 240 25% 40% |
-| reet | REET Level 1 (Rajasthan teacher eligibility) | v2 | ctet | IN | /reet | /reet-level-1-practice-test | 40 45% 34% |
-| uptet | UPTET Paper 1 (UP teacher eligibility) | v2 | ctet | IN | /uptet | /uptet-paper-1-practice-test | 160 30% 32% |
-| aissee | AISSEE Class 6 (Sainik School entrance) | v2 | jnvst | IN | /aissee | /aissee-class-6-practice-test | 120 25% 34% |
-| apcalcab | AP Calculus AB (multiple-choice section) | v2 | apbio (KaTeX math, calculator part) | US | /ap-calculus-ab | /ap-calculus-ab-practice-test | 210 35% 36% |
-| aphug | AP Human Geography (multiple-choice section) | v2 | apworld (stimulus sets) | US | /ap-human-geography | /ap-human-geography-practice-test | 55 35% 32% |
+| jambmath | JAMB UTME Mathematics | v2 | jambeng (KaTeX like apcalcab) | NG | /jamb-mathematics | /jamb-mathematics-practice-test | 150 40% 30% |
+| jambbio | JAMB UTME Biology | v2 | jambeng | NG | /jamb-biology | /jamb-biology-practice-test | 135 30% 32% |
+| jambchem | JAMB UTME Chemistry | v2 | jambeng | NG | /jamb-chemistry | /jamb-chemistry-practice-test | 190 35% 30% |
+| jambphys | JAMB UTME Physics | v2 | jambeng | NG | /jamb-physics | /jamb-physics-practice-test | 225 30% 36% |
+| ngpolice | Nigeria Police Force constable recruitment CBT | v1 | tools/next100/pkdrive; idBase 13200, stateCode NGPOLICE, prefix NGPOL- | NG | /nigeria-police-recruitment | /nigeria-police-recruitment-practice-test | 215 45% 30% |
+| cdcfib | CDCFIB recruitment CBT (Civil Defence, Correctional, Fire, Immigration) | v1 | pkdrive; idBase 13300, stateCode NGCDCFIB, prefix NGCDCFIB- | NG | /cdcfib-recruitment | /cdcfib-recruitment-practice-test | 15 35% 32% |
+| ngarmy | Nigerian Army recruitment exam (DSSC/RRI aptitude test) | v1 | pkdrive; idBase 13400, stateCode NGARMY, prefix NGARMY- | NG | /nigerian-army-recruitment | /nigerian-army-recruitment-practice-test | 80 30% 30% |
+| ngcustoms | Nigeria Customs Service recruitment CBT | v1 | pkdrive; idBase 13500, stateCode NGCUSTOMS, prefix NGCUS- | NG | /nigeria-customs-recruitment | /nigeria-customs-recruitment-practice-test | 200 50% 30% |
+| trcnpqe | TRCN Professional Qualifying Examination | v1 | phlet (teacher licensure, v1); idBase 13600, stateCode TRCNPQE, prefix TRCN- | NG | /trcn-pqe | /trcn-pqe-practice-test | 170 30% 34% |
+| apgov | AP U.S. Government and Politics (multiple-choice section) | v2 | apush (stimulus sets) | US | /ap-us-government | /ap-us-government-practice-test | 0 35% 36% |
 
 Exam-specific notes:
-- India exams: the India family is now 25 banks (list in REVIEW.md); grep all of them while writing. Confirm the current pattern from the official information bulletin (NTA: neet.nta.nic.in, jeemain.nta.nic.in, cuet.nta.nic.in, ugcnet.nta.nic.in, exams.nta.ac.in/AISSEE; MHT-CET: cetcell.mahacet.org; REET: rajeduboard.rajasthan.gov.in; UPTET: updeled.gov.in / UPESSC). Date-stamp anything about the 2026 or 2027 cycle.
-- `neet`: 180 compulsory questions in 3 hours (no optional section since 2025; confirm), +4/-1. Model shorter at the real pace if needed (for example Physics 45, Chemistry 45, Biology 90 at full length is fine if the drills stay 20). NCERT class 11-12 syllabus, original items; numeric physics computed and asserted. Explain negative marking, do not apply it.
-- `jeemain`: per subject, multiple choice plus numeric-value items (`numeric`); confirm the current counts and whether numeric items carry negative marking. Use KaTeX. Every numeric key computed in Python and asserted.
-- `cuet`: the General Test (GK, current affairs excluded, general mental ability, numerical ability, quantitative reasoning, logical and analytical reasoning). Static GK only.
-- `mhtcet`: Physics and Chemistry (Maths weighted double), Maharashtra State Board class 11 (about 20%) and 12 syllabus, no negative marking; confirm.
-- `ugcnet`: Paper 1 only (50 questions, 100 marks, 10 units). Reading comprehension and data interpretation as stimulus sets; no current affairs.
-- `reet`, `uptet`: Paper/Level 1 (Classes 1 to 5) like CTET: Child Development and Pedagogy, Language I (Hindi) and II (English), Maths, EVS; REET adds Rajasthan GK where the current pattern has it. Hindi-language items in Devanagari with English explanations as in `uppolice`; keep them correct. Check against `ctet` for overlap.
-- `aissee`: Class 6 (Maths, GK, Language, Intelligence), NTA's current pattern and marks; Class 5 reader level like `jnvst`; no overlap with `jnvst`.
-- `apcalcab`: Section I Part A (no calculator) and Part B (graphing calculator) as two sections; every answer computed (sympy is fine in build checks). Graph items described in words or tables. Free response not modelled.
-- `aphug`: Section I, current CED; stimulus sets (maps described in words, tables, short texts); no overlap with apworld.
+- Nigeria family: banks on disk are ngfrsc (v1) and jambeng (v2); all ten of this batch join it. British spelling as used in Nigeria, naira, Nigerian names and places. Static facts only: no office-holders, no current affairs, no figures that change yearly (salaries, quotas, cut-offs). Confirm each exam body's current format from its own site or notice (jamb.gov.ng and its brochure/syllabus for 2027; npf.gov.ng / policerecruitment.gov.ng and the Police Service Commission; cdcfib.gov.ng; recruitment.army.mil.ng; customs.gov.ng; trcn.gov.ng). Where a body publishes no question count or pass mark, write a Tigertest target and say so.
+- JAMB subjects: each is one UTME subject of 40 questions out of 100 (Use of English is 60), all four subjects sharing a 2-hour clock; confirm against the current JAMB brochure. Model 40 four-option questions in 30 minutes (the pro rata share), two tests with Test 2 held out, drills by syllabus topic area. Follow the current JAMB UTME syllabus for the subject. jambmath: KaTeX, every answer computed and asserted; jambchem and jambphys: numeric answers computed and asserted, all-number options sorted and locked. No overlap with neet/jeemain/mhtcet (grep them) or each other.
+- The four recruitment CBTs (ngpolice, cdcfib, ngarmy, ngcustoms): these are general aptitude tests (English, quantitative reasoning, general knowledge and current affairs, sometimes verbal/logical reasoning). Confirm the latest exercise's pattern. To avoid colliding with each other, split the GK lanes: ngpolice takes Nigerian civics, the 1999 Constitution and policing; cdcfib takes the four services (Civil Defence, Correctional, Fire, Immigration), Nigerian geography and environment; ngarmy takes Nigerian history (pre-colonial to independence), the armed forces and Africa/ECOWAS/AU; ngcustoms takes economics, trade, ports, ECOWAS trade, and world geography. English and maths items: use fresh sentences and numbers, and grep the other three banks on disk before finalising.
+- trcnpqe: TRCN PQE for teacher registration (education theory, pedagogy, curriculum, assessment, educational psychology, the teaching profession and its ethics, Nigerian education policy such as the National Policy on Education, ICT in education). Confirm the current format (CBT, number of questions, pass mark) from trcn.gov.ng. Check against phlet, ctet, reet, uptet, ugcnet for overlap.
+- apgov: Section I only (55 questions, 80 minutes, 50% per the current CED; confirm), with the required foundational documents and Supreme Court cases as the College Board lists them; original stimuli (quantitative charts as tables, text-based excerpts written as practice texts, short quotes from public-domain founding documents allowed); add to "AP exams". Check against apush.
 

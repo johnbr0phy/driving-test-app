@@ -118,6 +118,7 @@ export function TestCatalogGrid({
   regionPicker = false,
   localOnly = false,
   lang = "en",
+  searchBox = true,
 }: {
   showPopular?: boolean;
   nested?: boolean;
@@ -129,6 +130,8 @@ export function TestCatalogGrid({
   localOnly?: boolean;
   /** The page's language (a country homepage in German): the search box, counts and cards. */
   lang?: Language;
+  /** The search homepages have their own box above, so the grid leaves its out. */
+  searchBox?: boolean;
 } = {}) {
   const c = homeCopy(lang);
   // nested: the grid sits under a page section's h2 (the homepage), so groups are h3 and cards h4.
@@ -168,6 +171,7 @@ export function TestCatalogGrid({
           <CountryPills current={region} onChange={fixedRegion ? undefined : setPickedRegion} lang={lang} />
         </div>
       )}
+      {searchBox && (
       <div className="mx-auto mb-10 max-w-xl">
         <div className="relative">
           <Search
@@ -204,6 +208,7 @@ export function TestCatalogGrid({
             : c.search.allFree(localOnly ? count : TEST_CATALOG.length)}
         </p>
       </div>
+      )}
 
       {groups.length === 0 && (
         <div className="rounded-2xl border border-dashed border-gray-300 dark:border-gray-700 p-10 text-center">

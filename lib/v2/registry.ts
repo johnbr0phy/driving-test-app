@@ -59,8 +59,18 @@ import { IBPSCLERK } from "./exams/ibpsclerk";
 import { JNVST } from "./exams/jnvst";
 import { JAMBENG } from "./exams/jambeng";
 import { APPSYCH } from "./exams/appsych";
+import { SBICLERK } from "./exams/sbiclerk";
+import { SBIPO } from "./exams/sbipo";
+import { IBPSRRB } from "./exams/ibpsrrb";
+import { BIHARPOLICE } from "./exams/biharpolice";
+import { RAJPOLICE } from "./exams/rajpolice";
+import { DELHIPOLICE } from "./exams/delhipolice";
+import { MPPOLICE } from "./exams/mppolice";
+import { APUSH } from "./exams/apush";
+import { APBIO } from "./exams/apbio";
+import { PHCSE } from "./exams/phcse";
 
-export const EXAMS_V2: ExamV2Config[] = [GED, PRAXIS, SAT, PSAT, ACT, APPSYCH, GRE, GMAT, TEAS, HESI, ASVAB, ACCUPLACER, NCLEX, NCLEXPN, REXPN, UKNMC, EMT, PARAMEDIC, FAAPVT, SECPLUS, CISSP, NETPLUS, APLUS, AWS, AWSSAA, AZ900, GCDL, CCNA, PMP, CAPM, PSM, ITIL, SSCCGL, SSCCHSL, SSCGD, SSCMTS, RRBNTPC, RRBGROUPD, UPPOLICE, IBPSPO, IBPSCLERK, CTET, JNVST, JAMBENG, TIMESTABLES, KS2, ELEVENPLUS, GCSEMATHS, GCSEHIGHER, GCSESCIENCE, GCSECS, FSMATHS, OSSLT, EQAO9, NAPLAN7, NAPLAN, OCNSW, NSWSEL, VICSEL, HSCMATHS];
+export const EXAMS_V2: ExamV2Config[] = [GED, PRAXIS, SAT, PSAT, ACT, APPSYCH, APUSH, APBIO, GRE, GMAT, TEAS, HESI, ASVAB, ACCUPLACER, NCLEX, NCLEXPN, REXPN, UKNMC, EMT, PARAMEDIC, FAAPVT, SECPLUS, CISSP, NETPLUS, APLUS, AWS, AWSSAA, AZ900, GCDL, CCNA, PMP, CAPM, PSM, ITIL, SSCCGL, SSCCHSL, SSCGD, SSCMTS, RRBNTPC, RRBGROUPD, UPPOLICE, DELHIPOLICE, BIHARPOLICE, RAJPOLICE, MPPOLICE, IBPSPO, SBIPO, IBPSCLERK, SBICLERK, IBPSRRB, CTET, JNVST, JAMBENG, PHCSE, TIMESTABLES, KS2, ELEVENPLUS, GCSEMATHS, GCSEHIGHER, GCSESCIENCE, GCSECS, FSMATHS, OSSLT, EQAO9, NAPLAN7, NAPLAN, OCNSW, NSWSEL, VICSEL, HSCMATHS];
 
 export function getExamV2(id: string): ExamV2Config {
   const exam = EXAMS_V2.find((e) => e.id === id);

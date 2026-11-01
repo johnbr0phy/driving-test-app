@@ -2237,7 +2237,7 @@
         "10"
       ],
       "correct": [
-        0
+        1
       ],
       "lockedOrder": true,
       "explanation": "The range is the highest score minus the lowest: 10 - 6 = 4."

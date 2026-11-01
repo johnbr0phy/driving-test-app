@@ -87,10 +87,11 @@ const TEST_REGIONS: Record<string, TestRegion> = {
   aunsw: "AU", auvic: "AU", auqld: "AU", auwa: "AU", ausa: "AU", naplan: "AU", nswsel: "AU", auwhite: "AU",
   naplan7: "AU", ocnsw: "AU", vicsel: "AU", hscmaths: "AU", aursa: "AU", aurcg: "AU", aufss: "AU", aufirstaid: "AU", auforklift: "AU", auwah: "AU", aucit: "AU",
   nzroad: "NZ",
-  phlto: "PH", mykpp: "MY", sgbtt: "SG", hkdrive: "HK", aerta: "AE", zak53: "ZA", ngfrsc: "NG", kentsa: "KE", pkdrive: "PK",
+  phlto: "PH", phcse: "PH", mykpp: "MY", sgbtt: "SG", hkdrive: "HK", aerta: "AE", zak53: "ZA", ngfrsc: "NG", kentsa: "KE", pkdrive: "PK",
   jambeng: "NG",
   inrto: "IN", ssccgl: "IN", rrbntpc: "IN", ibpspo: "IN", ctet: "IN",
   rrbgroupd: "IN", sscgd: "IN", sscchsl: "IN", sscmts: "IN", uppolice: "IN", ibpsclerk: "IN", jnvst: "IN",
+  sbiclerk: "IN", sbipo: "IN", ibpsrrb: "IN", biharpolice: "IN", rajpolice: "IN", delhipolice: "IN", mppolice: "IN",
   aplus: "GLOBAL", secplus: "GLOBAL", aws: "GLOBAL", awssaa: "GLOBAL", az900: "GLOBAL", ccna: "GLOBAL", pmp: "GLOBAL", gulfrn: "GLOBAL",
   netplus: "GLOBAL", cissp: "GLOBAL", gcdl: "GLOBAL", gre: "GLOBAL", gmat: "GLOBAL", itil: "GLOBAL", psm: "GLOBAL", capm: "GLOBAL",
 };
@@ -105,6 +106,8 @@ export const NON_DRIVING_TESTS = new Set([
   "naplan7", "ocnsw", "vicsel", "hscmaths", "aursa", "aurcg", "aufss", "aufirstaid", "auforklift", "auwah", "aucit",
   "ssccgl", "rrbntpc", "ibpspo", "ctet",
   "rrbgroupd", "sscgd", "sscchsl", "sscmts", "uppolice", "ibpsclerk", "jnvst",
+  "sbiclerk", "sbipo", "ibpsrrb", "biharpolice", "rajpolice", "delhipolice", "mppolice",
+  "phcse",
   "jambeng",
 ]);
 
@@ -172,9 +175,9 @@ export const REGION_HOME: Record<Exclude<Region, "US">, {
     testsSub: "200 questions on the Road Code, in km/h for left-hand traffic. The real test is 35 questions and you need 32 right.",
   },
   PH: {
-    title: "Free LTO Exam Reviewer: Philippines Driving Test | Tigertest",
-    description: "Free LTO exam reviewer for the Philippines: 200 original questions on road signs, right of way and traffic laws, every answer explained. No account needed.",
-    lead: "Practice for the LTO written exam for your driver's license. Original questions on signs, markings, right of way and road safety laws, every answer explained. No signup.",
+    title: "Free LTO Exam & Civil Service Exam Reviewers | Tigertest",
+    description: "Free reviewers for the Philippines: the LTO driver's license exam and the Civil Service Exam (Professional and Subprofessional), original questions with every answer explained. No account needed.",
+    lead: "Practice for the LTO written exam for your driver's license and the Civil Service Exam. Original questions on signs, right of way and road safety laws, and on verbal, numerical, analytical and clerical ability, every answer explained. No signup.",
     cta: { label: "LTO exam reviewer", href: "/lto-exam-reviewer-practice-test" },
     testsTitle: "LTO driver's license exam",
     testsSub: "200 questions on Philippine traffic rules, in km/h for right-hand traffic. Three full 60-question tests, 48 to pass.",

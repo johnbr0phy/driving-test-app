@@ -1229,13 +1229,13 @@
       "stem": "If $3x - 7 = 2x + 5$, what is the value of $x^2$?",
       "options": [
         "4",
+        "12",
         "16",
         "121",
-        "144",
-        "169"
+        "144"
       ],
       "correct": [
-        3
+        4
       ],
       "lockedOrder": true,
       "explanation": "Subtract $2x$ and add $7$: $x = 12$, so $x^2 = 144$. A sign error ($x = -2$, from adding the wrong way) leads to $4$."
@@ -1339,14 +1339,14 @@
       "format": "single",
       "stem": "Working alone at a constant rate, one pump fills a tank in 6 hours. A second pump, working alone at a constant rate, fills the same tank in 3 hours. How many hours do the two pumps take to fill the tank working together?",
       "options": [
-        "1.5",
         "2",
         "2.5",
         "3",
-        "4.5"
+        "4.5",
+        "9"
       ],
       "correct": [
-        1
+        0
       ],
       "lockedOrder": true,
       "explanation": "Rates add: $\\frac{1}{6} + \\frac{1}{3} = \\frac{1}{2}$ tank per hour, so the tank takes $2$ hours. Averaging the times ($4.5$) ignores that the faster pump does more of the work."
@@ -1500,14 +1500,14 @@
       "format": "single",
       "stem": "A recipe uses 3 cups of flour for every 2 cups of sugar. How many cups of sugar are needed with 12 cups of flour?",
       "options": [
-        "6",
         "8",
         "9",
         "10",
+        "12",
         "18"
       ],
       "correct": [
-        1
+        0
       ],
       "lockedOrder": true,
       "explanation": "12 cups of flour is 4 times 3, so use $4 \\times 2 = 8$ cups of sugar. 18 comes from scaling the ratio the wrong way round."
@@ -1543,14 +1543,14 @@
       "format": "single",
       "stem": "The average (arithmetic mean) of 4, 7, 10 and $x$ is 8. What is the value of $x$?",
       "options": [
+        "3",
         "7",
         "8",
         "9",
-        "11",
-        "13"
+        "11"
       ],
       "correct": [
-        3
+        4
       ],
       "lockedOrder": true,
       "explanation": "The four numbers must sum to $4 \\times 8 = 32$. $4 + 7 + 10 = 21$, so $x = 11$."
@@ -1915,14 +1915,14 @@
       "format": "single",
       "stem": "The price of a stock rose 20 percent on Monday and fell 20 percent on Tuesday. Its price at the close on Tuesday was what percent of its price at the open on Monday?",
       "options": [
-        "80%",
         "96%",
         "98%",
         "100%",
-        "104%"
+        "104%",
+        "120%"
       ],
       "correct": [
-        1
+        0
       ],
       "lockedOrder": true,
       "explanation": "$1.2 \\times 0.8 = 0.96$, so the price ended at 96 percent of where it began. The 20 percent fall is taken from the higher Monday price, so the changes do not cancel."
@@ -1939,14 +1939,14 @@
       "format": "single",
       "stem": "The ratio of men to women in a group is 3 to 5. After 8 more men join the group, the numbers of men and women are equal. How many women are in the group?",
       "options": [
+        "4",
+        "8",
         "12",
         "16",
-        "20",
-        "24",
-        "40"
+        "20"
       ],
       "correct": [
-        2
+        4
       ],
       "lockedOrder": true,
       "explanation": "Let the group have $3k$ men and $5k$ women. Then $3k + 8 = 5k$, so $k = 4$ and there are $5 \\times 4 = 20$ women. $12$ is the original number of men."
@@ -3210,14 +3210,14 @@
       "format": "single",
       "stem": "If 12 pencils cost \\$3.60, how much do 30 pencils cost at the same price per pencil?",
       "options": [
+        "\\$6.00",
         "\\$7.20",
+        "\\$7.50",
         "\\$8.40",
-        "\\$9.00",
-        "\\$10.80",
-        "\\$12.00"
+        "\\$9.00"
       ],
       "correct": [
-        2
+        4
       ],
       "lockedOrder": true,
       "explanation": "Each pencil costs $3.60 \\div 12 = 0.30$, so 30 pencils cost $30 \\times 0.30 = 9.00$ dollars."
@@ -3233,14 +3233,14 @@
       "format": "single",
       "stem": "If $\\frac{x}{4} + \\frac{x}{6} = 5$, what is the value of $x$?",
       "options": [
-        "6",
-        "10",
         "12",
         "15",
-        "20"
+        "20",
+        "24",
+        "30"
       ],
       "correct": [
-        2
+        0
       ],
       "lockedOrder": true,
       "explanation": "Multiply by 12: $3x + 2x = 60$, so $5x = 60$ and $x = 12$."
@@ -3322,13 +3322,13 @@
       "stem": "The average (arithmetic mean) score of 10 students on a quiz is 70. The 4 boys in the group have an average score of 64. What is the average score of the 6 girls?",
       "options": [
         "67",
+        "70",
         "72",
         "73",
-        "74",
-        "76"
+        "74"
       ],
       "correct": [
-        3
+        4
       ],
       "lockedOrder": true,
       "explanation": "Total $= 10 \\times 70 = 700$; the boys scored $4 \\times 64 = 256$; the girls scored $444$, so their average is $444 \\div 6 = 74$."
@@ -3344,14 +3344,14 @@
       "format": "single",
       "stem": "A driver travels 120 kilometers at an average speed of 60 kilometers per hour and returns along the same route at an average speed of 40 kilometers per hour. What is the average speed, in kilometers per hour, for the whole round trip?",
       "options": [
-        "45",
         "48",
         "50",
         "52",
+        "60",
         "100"
       ],
       "correct": [
-        1
+        0
       ],
       "lockedOrder": true,
       "explanation": "The trip out takes 2 hours and the return 3 hours, so $240$ km in $5$ hours is $48$ km per hour. Averaging the two speeds ($50$) ignores the longer time spent at the slower speed."
@@ -3573,14 +3573,14 @@
       "format": "single",
       "stem": "The area of a square is 49. What is its perimeter?",
       "options": [
-        "14",
-        "21",
         "28",
         "49",
+        "56",
+        "98",
         "196"
       ],
       "correct": [
-        2
+        0
       ],
       "lockedOrder": true,
       "explanation": "The side is $\\sqrt{49} = 7$, so the perimeter is $4 \\times 7 = 28$."
@@ -4033,14 +4033,14 @@
       "format": "single",
       "stem": "The table shows a company's revenue and costs, in millions of dollars.\n\n| Year | Revenue | Costs |\n|---|---|---|\n| 2023 | 2.0 | 1.5 |\n| 2024 | 2.6 | 1.8 |\n\nProfit is revenue minus costs. By what percent did the company's profit increase from 2023 to 2024?",
       "options": [
+        "15%",
         "20%",
         "30%",
         "37.5%",
-        "60%",
-        "80%"
+        "60%"
       ],
       "correct": [
-        3
+        4
       ],
       "lockedOrder": true,
       "explanation": "Profit rose from $0.5$ to $0.8$ million, an increase of $0.3$, and $\\frac{0.3}{0.5} = 60\\%$. The 30 percent figure is revenue growth, not profit growth."
@@ -4280,14 +4280,14 @@
       "format": "single",
       "stem": "What is $\\frac{3}{4}$ of 20 percent of 160?",
       "options": [
-        "12",
         "24",
         "30",
         "32",
+        "40",
         "120"
       ],
       "correct": [
-        1
+        0
       ],
       "lockedOrder": true,
       "explanation": "20 percent of 160 is $32$, and $\\frac{3}{4}$ of $32$ is $24$."

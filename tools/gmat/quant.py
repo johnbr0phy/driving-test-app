@@ -6,10 +6,10 @@ A, G = "gmatArith", "gmatAlgebra"
 
 T1 = [
     PS(A, 1, "Percents", r"A store raises the price of a jacket by 20 percent and later lowers the new price by 25 percent. The final price is what percent of the original price?",
-       ["85%", "90%", "95%", "100%", "105%"], 1,
+       ["90%", "95%", "100%", "105%", "120%"], 0,
        r"Multiply the factors: $1.2 \times 0.75 = 0.9$, so the final price is 90 percent of the original. The changes do not cancel because the 25 percent cut is taken from a larger number."),
     PS(G, 1, "Linear equations", r"If $\frac{x+3}{2} = \frac{2x-1}{3}$, what is the value of $x$?",
-       ["5", "7", "9", "11", "13"], 3,
+       ["1", "5", "7", "9", "11"], 4,
        r"Cross-multiply: $3(x+3) = 2(2x-1)$, so $3x + 9 = 4x - 2$ and $x = 11$."),
     PS(A, 2, "Number properties", r"If $n$ is a positive integer and $n^2$ is divisible by 72, what is the least possible value of $n$?",
        ["4", "6", "8", "12", "24"], 3,
@@ -18,7 +18,7 @@ T1 = [
        ["1", "2", "3", "4", "5"], 2,
        r"Write 4 as $2^2$: $2^x \cdot 2^{2x+2} = 2^{3x+2}$. Then $3x + 2 = 11$, so $x = 3$."),
     PS(A, 2, "Ratios", r"In a class, the ratio of first-year to second-year students is 3 to 5. After 6 more first-year students join and no one leaves, the ratio becomes 3 to 4. How many second-year students are in the class?",
-       ["24", "32", "40", "48", "56"], 2,
+       ["18", "24", "30", "35", "40"], 4,
        r"Let the counts be $3k$ and $5k$. Then $\frac{3k+6}{5k} = \frac{3}{4}$, so $12k + 24 = 15k$ and $k = 8$. Second-year students: $5 \cdot 8 = 40$."),
     PS(G, 2, "Word problems", r"A theater sold 40 tickets for a total of \$380. Adult tickets cost \$12 and child tickets cost \$7. How many adult tickets were sold?",
        ["20", "22", "24", "26", "28"], 0,
@@ -93,7 +93,7 @@ T2 = [
        ["74", "75", "76", "77", "78"], 2,
        r"$\frac{20 \cdot 70 + 30 \cdot 80}{50} = \frac{1{,}400 + 2{,}400}{50} = 76$. It is closer to 80 because group B is larger."),
     PS(G, 2, "Inequalities", r"A phone plan costs \$30 a month plus \$0.10 for each minute over 300 minutes. If a month's bill is at most \$45, what is the greatest number of minutes that could have been used?",
-       ["150", "350", "400", "450", "500"], 3,
+       ["150", "300", "350", "400", "450"], 4,
        r"The overage is at most \$15, which buys $15 / 0.10 = 150$ extra minutes. So at most $300 + 150 = 450$ minutes."),
     PS(A, 2, "Rates", r"Two trains start 300 miles apart and travel toward each other on parallel tracks, one at 70 miles per hour and the other at 80 miles per hour. When they pass each other, how many miles has the slower train traveled?",
        ["140", "150", "160", "170", "180"], 0,
@@ -102,7 +102,7 @@ T2 = [
        ["3", "9", "27", "81", "243"], 1,
        r"$9^4 = 3^8$ and $27^2 = 3^6$, so the fraction is $\frac{3^{14}}{3^{12}} = 3^2 = 9$."),
     PS(A, 3, "Counting", r"A committee of 3 people is chosen from 5 men and 4 women. How many different committees include at least one woman?",
-       ["64", "70", "74", "80", "84"], 2,
+       ["10", "40", "64", "70", "74"], 4,
        r"All committees: $\binom{9}{3} = 84$. Committees with no woman: $\binom{5}{3} = 10$. So $84 - 10 = 74$ include at least one woman."),
     PS(G, 2, "Functions", r"If $g(x) = 3x + k$ and $g(g(2)) = 30$, what is the value of $k$?",
        ["2", "3", "4", "6", "8"], 1,
@@ -171,7 +171,7 @@ T0 = [
        ["27", "28.5", "30", "31.5", "33"], 3,
        r"The multiples run 3, 6, ..., 60. With 20 values the median is the average of the 10th and 11th, 30 and 33, which is 31.5."),
     PS(G, 2, "Rates of change", r"A tank holds 300 liters of water. It is drained at 12 liters per minute while it is filled at 8 liters per minute. After how many minutes will it hold 180 liters?",
-       ["15", "24", "30", "36", "45"], 2,
+       ["30", "36", "45", "75", "120"], 0,
        r"The net loss is $12 - 8 = 4$ liters a minute. Losing $300 - 180 = 120$ liters takes $120 / 4 = 30$ minutes."),
 ]
 

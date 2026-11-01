@@ -68,6 +68,16 @@ import '@/lib/v2/banks/ibpsclerk';
 import '@/lib/v2/banks/jnvst';
 import '@/lib/v2/banks/jambeng';
 import '@/lib/v2/banks/appsych';
+import '@/lib/v2/banks/sbiclerk';
+import '@/lib/v2/banks/sbipo';
+import '@/lib/v2/banks/ibpsrrb';
+import '@/lib/v2/banks/biharpolice';
+import '@/lib/v2/banks/rajpolice';
+import '@/lib/v2/banks/delhipolice';
+import '@/lib/v2/banks/mppolice';
+import '@/lib/v2/banks/apush';
+import '@/lib/v2/banks/apbio';
+import '@/lib/v2/banks/phcse';
 
 // MCP is another view of the site's drills, NOT a second mastery store.
 // The transport document only remembers the presented item/order and a

@@ -2271,6 +2271,146 @@
     --brand-gradient-to: 130 75% 96%;
   }
 
+  /* SBI PO theme: bank blue (v2 exam; matches lib/v2/exams/sbipo.ts theme) */
+  [data-theme="sbipo"] {
+    --brand: 212 70% 46%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 212 60% 96%;
+    --brand-hover: 212 70% 42%;
+    --brand-dark: 212 70% 38%;
+    --brand-darker: 212 65% 28%;
+    --brand-muted: 212 30% 72%;
+    --brand-border: 212 40% 80%;
+    --brand-border-light: 212 40% 90%;
+    --brand-gradient-to: 200 60% 96%;
+  }
+
+  /* SBI Clerk theme: steel bank blue (v2 exam; matches lib/v2/exams/sbiclerk.ts theme) */
+  [data-theme="sbiclerk"] {
+    --brand: 209 40% 34%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 209 40% 96%;
+    --brand-hover: 209 40% 30%;
+    --brand-dark: 209 40% 26%;
+    --brand-darker: 209 35% 16%;
+    --brand-muted: 209 30% 72%;
+    --brand-border: 209 40% 80%;
+    --brand-border-light: 209 40% 90%;
+    --brand-gradient-to: 200 40% 96%;
+  }
+
+  /* IBPS RRB Office Assistant theme: paddy green (v2 exam; matches lib/v2/exams/ibpsrrb.ts theme) */
+  [data-theme="ibpsrrb"] {
+    --brand: 105 75% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 105 60% 96%;
+    --brand-hover: 105 75% 26%;
+    --brand-dark: 105 75% 22%;
+    --brand-darker: 105 70% 12%;
+    --brand-muted: 105 30% 72%;
+    --brand-border: 105 40% 80%;
+    --brand-border-light: 105 40% 90%;
+    --brand-gradient-to: 90 60% 96%;
+  }
+
+  /* Bihar Police Constable theme: brick red (v2 exam; matches lib/v2/exams/biharpolice.ts theme) */
+  [data-theme="biharpolice"] {
+    --brand: 18 65% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 18 60% 96%;
+    --brand-hover: 18 65% 26%;
+    --brand-dark: 18 65% 22%;
+    --brand-darker: 18 60% 12%;
+    --brand-muted: 18 30% 72%;
+    --brand-border: 18 40% 80%;
+    --brand-border-light: 18 40% 90%;
+    --brand-gradient-to: 30 60% 96%;
+  }
+
+  /* Rajasthan Police Constable theme: desert ochre (v2 exam; matches lib/v2/exams/rajpolice.ts theme) */
+  [data-theme="rajpolice"] {
+    --brand: 35 62% 38%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 35 60% 96%;
+    --brand-hover: 35 62% 34%;
+    --brand-dark: 35 62% 30%;
+    --brand-darker: 35 57% 20%;
+    --brand-muted: 35 30% 72%;
+    --brand-border: 35 40% 80%;
+    --brand-border-light: 35 40% 90%;
+    --brand-gradient-to: 25 60% 96%;
+  }
+
+  /* Delhi Police Constable theme: police indigo (v2 exam; matches lib/v2/exams/delhipolice.ts theme) */
+  [data-theme="delhipolice"] {
+    --brand: 248 40% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 248 40% 96%;
+    --brand-hover: 248 40% 26%;
+    --brand-dark: 248 40% 22%;
+    --brand-darker: 248 35% 12%;
+    --brand-muted: 248 30% 72%;
+    --brand-border: 248 40% 80%;
+    --brand-border-light: 248 40% 90%;
+    --brand-gradient-to: 258 40% 96%;
+  }
+
+  /* MP Police Constable theme: police teal blue (v2 exam; matches lib/v2/exams/mppolice.ts theme) */
+  [data-theme="mppolice"] {
+    --brand: 191 46% 38%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 191 46% 96%;
+    --brand-hover: 191 46% 34%;
+    --brand-dark: 191 46% 30%;
+    --brand-darker: 191 41% 20%;
+    --brand-muted: 191 30% 72%;
+    --brand-border: 191 40% 80%;
+    --brand-border-light: 191 40% 90%;
+    --brand-gradient-to: 180 46% 96%;
+  }
+
+  /* AP U.S. History theme: muted oxblood (v2 exam; matches lib/v2/exams/apush.ts theme) */
+  [data-theme="apush"] {
+    --brand: 0 25% 38%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 0 25% 96%;
+    --brand-hover: 0 25% 34%;
+    --brand-dark: 0 25% 30%;
+    --brand-darker: 0 20% 20%;
+    --brand-muted: 0 25% 72%;
+    --brand-border: 0 25% 80%;
+    --brand-border-light: 0 25% 90%;
+    --brand-gradient-to: 12 25% 96%;
+  }
+
+  /* AP Biology theme: leaf green (v2 exam; matches lib/v2/exams/apbio.ts theme) */
+  [data-theme="apbio"] {
+    --brand: 112 58% 32%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 112 58% 96%;
+    --brand-hover: 112 58% 28%;
+    --brand-dark: 112 58% 24%;
+    --brand-darker: 112 53% 14%;
+    --brand-muted: 112 30% 72%;
+    --brand-border: 112 40% 80%;
+    --brand-border-light: 112 40% 90%;
+    --brand-gradient-to: 124 58% 96%;
+  }
+
+  /* Philippine Civil Service Exam theme: deep government blue (v2 exam; matches lib/v2/exams/phcse.ts theme) */
+  [data-theme="phcse"] {
+    --brand: 221 50% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 221 50% 96%;
+    --brand-hover: 221 50% 26%;
+    --brand-dark: 221 50% 22%;
+    --brand-darker: 221 45% 12%;
+    --brand-muted: 221 30% 72%;
+    --brand-border: 221 40% 80%;
+    --brand-border-light: 221 40% 90%;
+    --brand-gradient-to: 235 50% 96%;
+  }
+
   /* Dark mode. Tokens follow Tailwind's gray scale so the dark: variants
      written in components (gray-950 page, gray-900 card, gray-800 border)
      and the shadcn primitives read as one surface system. */
@@ -4210,6 +4350,124 @@
     --brand-muted: 152 35% 45%;
     --brand-dark: 152 75% 65%;
     --brand-darker: 152 70% 78%;
+  }
+
+  .dark [data-theme="sbipo"] {
+    --brand: 212 70% 48.2%;
+    --brand-hover: 212 70% 42%;
+    --brand-light: 212 45% 13%;
+    --brand-gradient-to: 200 40% 11%;
+    --brand-border-light: 212 35% 24%;
+    --brand-border: 212 40% 34%;
+    --brand-muted: 212 30% 45%;
+    --brand-dark: 212 70% 65%;
+    --brand-darker: 212 65% 78%;
+  }
+
+  .dark [data-theme="sbiclerk"] {
+    --brand: 209 40% 46.8%;
+    --brand-hover: 209 40% 38.8%;
+    --brand-light: 209 40% 13%;
+    --brand-gradient-to: 200 40% 11%;
+    --brand-border-light: 209 35% 24%;
+    --brand-border: 209 40% 34%;
+    --brand-muted: 209 30% 45%;
+    --brand-dark: 209 40% 65%;
+    --brand-darker: 209 35% 78%;
+  }
+
+  .dark [data-theme="ibpsrrb"] {
+    --brand: 105 75% 30.1%;
+    --brand-hover: 105 75% 26%;
+    --brand-light: 105 45% 13%;
+    --brand-gradient-to: 90 40% 11%;
+    --brand-border-light: 105 35% 24%;
+    --brand-border: 105 40% 34%;
+    --brand-muted: 105 30% 45%;
+    --brand-dark: 105 75% 65%;
+    --brand-darker: 105 70% 78%;
+  }
+
+  .dark [data-theme="biharpolice"] {
+    --brand: 18 65% 45.3%;
+    --brand-hover: 18 65% 37.3%;
+    --brand-light: 18 45% 13%;
+    --brand-gradient-to: 30 40% 11%;
+    --brand-border-light: 18 35% 24%;
+    --brand-border: 18 40% 34%;
+    --brand-muted: 18 30% 45%;
+    --brand-dark: 18 65% 65%;
+    --brand-darker: 18 60% 78%;
+  }
+
+  .dark [data-theme="rajpolice"] {
+    --brand-light: 35 45% 13%;
+    --brand-gradient-to: 25 40% 11%;
+    --brand-border-light: 35 35% 24%;
+    --brand-border: 35 40% 34%;
+    --brand-muted: 35 30% 45%;
+    --brand-dark: 35 62% 65%;
+    --brand-darker: 35 57% 78%;
+  }
+
+  .dark [data-theme="delhipolice"] {
+    --brand: 248 40% 50%;
+    --brand-hover: 248 40% 42%;
+    --brand-light: 248 40% 13%;
+    --brand-gradient-to: 258 40% 11%;
+    --brand-border-light: 248 35% 24%;
+    --brand-border: 248 40% 34%;
+    --brand-muted: 248 30% 45%;
+    --brand-dark: 248 40% 65%;
+    --brand-darker: 248 35% 78%;
+  }
+
+  .dark [data-theme="mppolice"] {
+    --brand: 191 46% 38.4%;
+    --brand-hover: 191 46% 34%;
+    --brand-light: 191 45% 13%;
+    --brand-gradient-to: 180 40% 11%;
+    --brand-border-light: 191 35% 24%;
+    --brand-border: 191 40% 34%;
+    --brand-muted: 191 30% 45%;
+    --brand-dark: 191 46% 65%;
+    --brand-darker: 191 41% 78%;
+  }
+
+  .dark [data-theme="apush"] {
+    --brand: 0 25% 50%;
+    --brand-hover: 0 25% 42%;
+    --brand-light: 0 25% 13%;
+    --brand-gradient-to: 12 25% 11%;
+    --brand-border-light: 0 25% 24%;
+    --brand-border: 0 25% 34%;
+    --brand-muted: 0 25% 45%;
+    --brand-dark: 0 25% 65%;
+    --brand-darker: 0 20% 78%;
+  }
+
+  .dark [data-theme="apbio"] {
+    --brand: 112 58% 33.2%;
+    --brand-hover: 112 58% 28%;
+    --brand-light: 112 45% 13%;
+    --brand-gradient-to: 124 40% 11%;
+    --brand-border-light: 112 35% 24%;
+    --brand-border: 112 40% 34%;
+    --brand-muted: 112 30% 45%;
+    --brand-dark: 112 58% 65%;
+    --brand-darker: 112 53% 78%;
+  }
+
+  .dark [data-theme="phcse"] {
+    --brand: 221 50% 50%;
+    --brand-hover: 221 50% 42%;
+    --brand-light: 221 45% 13%;
+    --brand-gradient-to: 235 40% 11%;
+    --brand-border-light: 221 35% 24%;
+    --brand-border: 221 40% 34%;
+    --brand-muted: 221 30% 45%;
+    --brand-dark: 221 50% 65%;
+    --brand-darker: 221 45% 78%;
   }
 
 }

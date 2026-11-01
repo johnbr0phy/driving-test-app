@@ -363,7 +363,7 @@ export default async function ChineseStateDMVPage({ params }: PageProps) {
           </p>
           <Button asChild
               size="lg"
-              className="text-lg px-8 py-6 bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 font-bold rounded-xl"
+              className="h-auto max-w-full whitespace-normal text-center text-lg px-8 py-3 sm:h-11 sm:py-6 sm:whitespace-nowrap bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 font-bold rounded-xl"
             >
             <Link href={`/dmv/dashboard?state=${state.code}`}>
               免费开始练习
@@ -558,7 +558,7 @@ export default async function ChineseStateDMVPage({ params }: PageProps) {
           </p>
           <Button asChild
               size="lg"
-              className="text-lg px-8 py-6 bg-white dark:bg-gray-900 text-brand-dark hover:bg-gray-100 dark:hover:bg-gray-800 font-bold rounded-xl"
+              className="h-auto max-w-full whitespace-normal text-center text-lg px-8 py-3 sm:h-11 sm:py-6 sm:whitespace-nowrap bg-white dark:bg-gray-900 text-brand-dark hover:bg-gray-100 dark:hover:bg-gray-800 font-bold rounded-xl"
             >
             <Link href={`/dmv/dashboard?state=${state.code}`}>
               立即开始练习，完全免费
@@ -640,7 +640,7 @@ export default async function ChineseStateDMVPage({ params }: PageProps) {
           </p>
           <Button asChild
               size="lg"
-              className="text-lg px-8 py-6 bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 font-bold rounded-xl"
+              className="h-auto max-w-full whitespace-normal text-center text-lg px-8 py-3 sm:h-11 sm:py-6 sm:whitespace-nowrap bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 font-bold rounded-xl"
             >
             <Link href={`/dmv/dashboard?state=${state.code}`}>
               免费开始练习

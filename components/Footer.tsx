@@ -12,6 +12,7 @@ import { CountrySwitcher } from "@/components/CountrySwitcher";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { examLandingPath, getExamByPath } from "@/lib/exams";
+import { isTestPagePath } from "@/lib/pageLanguage";
 import { relatedTests } from "@/lib/testCatalog";
 import { getExamV2ByPath } from "@/lib/v2/registry";
 
@@ -71,7 +72,10 @@ export function Footer() {
   const onExamLanding =
     !!v1Exam &&
     (pathname === examLandingPath(v1Exam) || Object.values(v1Exam.translations ?? {}).some((tr) => tr?.landingPath === pathname));
-  const showLanguageToggle = !isHomepage && !isSeoPage && !isQuizPage && !v2Exam && !onExamLanding;
+  // A test's own pages run in the test's language, set by its dashboard's
+  // Change box, so a picker here would change nothing visible.
+  const showLanguageToggle =
+    !isHomepage && !isSeoPage && !isQuizPage && !v2Exam && !onExamLanding && !isTestPagePath(pathname);
 
   const dataTheme = exam?.id;
 

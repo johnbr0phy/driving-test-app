@@ -1,0 +1,36 @@
+{
+  "id": "esdgt",
+  "stateCode": "ESDGT",
+  "idBase": 13700,
+  "prefix": "ESDGT-",
+  "slug": "/spain-driving-theory",
+  "landingPath": "/spain-driving-theory-test",
+  "dataFile": "data/spain-dgt-questions.json",
+  "name": "Spain DGT Theory Practice Test",
+  "shortName": "Spain DGT theory test",
+  "examLabel": "DGT theory exam",
+  "fullName": "Spain DGT theory exam for the permiso B (car), in English",
+  "icon": "car",
+  "testCount": 6,
+  "questionsPerTest": 30,
+  "passPct": 90,
+  "categories": [
+    {"key": "esdgtLicence", "label": "Permits, Documents & the Vehicle", "perTest": 3, "pool": 20, "segment": "LIC"},
+    {"key": "esdgtSigns", "label": "Signs & Traffic Officers", "perTest": 5, "pool": 33, "segment": "SGN"},
+    {"key": "esdgtMarkings", "label": "Road Markings & Traffic Lights", "perTest": 3, "pool": 20, "segment": "MRK"},
+    {"key": "esdgtPriority", "label": "Priority, Junctions & Roundabouts", "perTest": 4, "pool": 27, "segment": "PRI"},
+    {"key": "esdgtSpeed", "label": "Speed Limits, Distances & Lanes", "perTest": 4, "pool": 27, "segment": "SPD"},
+    {"key": "esdgtOvertaking", "label": "Overtaking & Vulnerable Road Users", "perTest": 3, "pool": 20, "segment": "OVT"},
+    {"key": "esdgtParking", "label": "Stopping & Parking", "perTest": 2, "pool": 14, "segment": "PRK"},
+    {"key": "esdgtLights", "label": "Lights, Tunnels & Bad Weather", "perTest": 3, "pool": 20, "segment": "LGT"},
+    {"key": "esdgtSafety", "label": "Alcohol, Distraction & Emergencies", "perTest": 3, "pool": 19, "segment": "SAF"}
+  ],
+  "notes": "Six real-length tests of 30 questions (180 items), 27 to pass (passPct 90 = ceil(0.9*30) = 27, the DGT's three-mistake rule). Pools are 6x each count plus 20 training-only spares (the last items of each pool). The real exam has three options per question; ours have four. Dashboard = 5 topic sets + 6 tests = 11 steps. No set exceeds 60.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 13701, "name": "Signs, Markings & Signals", "categories": ["esdgtSigns", "esdgtMarkings"], "size": 53},
+    {"setNumber": 2, "id": 13702, "name": "Priority & Junctions", "categories": ["esdgtPriority"], "size": 27},
+    {"setNumber": 3, "id": 13703, "name": "Speed, Lanes & Overtaking", "categories": ["esdgtSpeed", "esdgtOvertaking"], "size": 47},
+    {"setNumber": 4, "id": 13704, "name": "Parking, Lights & Bad Weather", "categories": ["esdgtParking", "esdgtLights"], "size": 34},
+    {"setNumber": 5, "id": 13705, "name": "Permits, Alcohol & Emergencies", "categories": ["esdgtLicence", "esdgtSafety"], "size": 39}
+  ]
+}

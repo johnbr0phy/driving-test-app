@@ -2370,6 +2370,167 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Provincial Motor Vehicles Ordinance 1965 (Punjab Transport Department copy amended to November 2023: section 4, Third, Tenth and Eleventh Schedules), road signs in Pakistan and provincial licensing guidance, checked November 2026",
     source: { name: "Punjab Driving License Information Management System (DLIMS)", url: "https://dlims.punjab.gov.pk/" },
   },
+  esdgt: {
+    answer:
+      "The DGT theory exam (examen teórico) is the first test for the Spanish car licence, the permiso B. It has 30 multiple-choice questions with three options each, you have 30 minutes, and you pass with no more than three mistakes, so 27 correct answers. For the permiso B it is offered in Spanish, the co-official languages (Catalan, Basque, Galician, Valencian), English, French and German, and in an Easy Read version. You can sit it from three months before you turn 18, the minimum age for the licence, and a pass is kept for two years while you take the practical driving test. Questions cover the Reglamento General de Circulación: signs, priority, speed limits, overtaking, parking, lights, alcohol, safety equipment and what to do after a crash.",
+    rows: [
+      { label: "Run by", value: "DGT (Dirección General de Tráfico), provincial traffic offices" },
+      { label: "Questions", value: "30, multiple choice, three options each" },
+      { label: "Time", value: "30 minutes" },
+      { label: "Pass mark", value: "At most 3 mistakes (27 of 30)" },
+      { label: "Languages", value: "Spanish, co-official languages, English, French, German" },
+      { label: "Minimum age (permiso B)", value: "18 (first exam up to three months before)" },
+      { label: "Pass kept for", value: "Two years" },
+      { label: "Tigertest mock tests", value: "6 x 30 questions, 27 to pass" },
+    ],
+    basedOn: "Reglamento General de Circulación (consolidated with RD 518/2026, in force 1 October 2026), Reglamento General de Conductores and DGT guidance on the theory exam, checked November 2026",
+    source: { name: "DGT: requirements, preparation and taking the exam", url: "https://www.dgt.es/nuestros-servicios/permisos-de-conducir/obtener-un-nuevo-permiso-de-conducir/requisitos-preparacion-y-presentacion-a-examen/" },
+  },
+  ptimt: {
+    answer:
+      "Portugal's driving theory exam, the exame de código, is set by the IMT (Instituto da Mobilidade e dos Transportes) and taken on a computer at an exam centre after enrolling at a driving school. For a category B car licence it has 30 multiple-choice questions on the rules common to all vehicles, with 30 minutes to answer, and you pass with at least 27 correct. Many questions show a photo or drawing of a traffic situation. The test is in Portuguese; a candidate without enough Portuguese can ask the IMT for a translated test (open to every licence category since Decree-Law 114/2026 of June 2026), a request usually made through the driving school. A pass is valid for one year, during which you must pass the practical driving test. The minimum age for a category B licence is 18.",
+    rows: [
+      { label: "Set by", value: "IMT (Instituto da Mobilidade e dos Transportes)" },
+      { label: "Questions", value: "30 multiple choice (category B)" },
+      { label: "Time", value: "30 minutes" },
+      { label: "Pass mark", value: "27 of 30 (90%)" },
+      { label: "Language", value: "Portuguese; a translated test (including English) on request" },
+      { label: "Theory pass valid", value: "1 year" },
+      { label: "Minimum age (car)", value: "18" },
+      { label: "Tigertest mock tests", value: "6 x 30 questions, 27 to pass" },
+    ],
+    basedOn: "Regulamento da Habilitação Legal para Conduzir (Decreto-Lei 138/2012, art. 44 as amended by Decreto-Lei 114/2026), arts. 43, 44, 46 and 47, and the Código da Estrada as amended to Lei 24/2025, checked November 2026",
+    source: { name: "IMT, carta de condução", url: "https://www.imt-ip.pt/pt/condutores/carta-de-conducao" },
+  },
+  bedriving: {
+    answer:
+      "The Belgian theory exam for a category B (car) licence is taken at an approved exam centre in Flanders, Wallonia or Brussels. It has 50 multiple-choice questions on a screen. You start with 50 points and need at least 41 to pass: a wrong or unanswered question costs 1 point, and a wrong answer on a serious-fault question (a third- or fourth-degree offence or a speed limit) costs 5. You must be at least 17, and a pass is valid for three years. In Flanders the exam is in Dutch with an optional English audio translation; in Wallonia it is in French, with English by appointment at two centres; in Brussels it is in French or Dutch with an interpreter for English. After two consecutive failures you must take 12 hours of theory lessons at a driving school (Flanders and Brussels; guides say the same for Wallonia).",
+    rows: [
+      { label: "Run by", value: "Approved exam centres in Flanders, Wallonia and Brussels" },
+      { label: "Questions", value: "50 multiple choice" },
+      { label: "Pass mark", value: "41 of 50 points" },
+      { label: "Serious fault", value: "Costs 5 points (third/fourth-degree offences and speed limits)" },
+      { label: "Time", value: "Up to 15 seconds per question (Flanders, Brussels); about 30 minutes in Brussels" },
+      { label: "In English", value: "Audio translation (Flanders), by appointment (Wallonia), interpreter (Brussels)" },
+      { label: "Minimum age", value: "17" },
+      { label: "Pass valid for", value: "3 years" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions, 41 to pass" },
+    ],
+    basedOn: "Vlaanderen.be and Wallonie.be theory exam pages, the Brussels Mobility exam page (be.brussels), and the Belgian Highway Code (Royal Decree of 1 December 1975), checked November 2026",
+    source: { name: "Vlaanderen.be: theory exam for licence B", url: "https://www.vlaanderen.be/rijbewijs-b/theorie-examen-voor-rijbewijs-b" },
+  },
+  dkteori: {
+    answer:
+      "The Danish theory test (teoriprøve) for a category B car licence is run by Færdselsstyrelsen, the Danish Road Traffic Authority, at its own test centres. It lasts 25 minutes and you may make at most five errors; an unanswered question counts as an error. You choose a digital test on a touch screen, where you can go back and have questions read aloud, or an analogue test with a paper answer sheet. Each question shows a picture of a traffic situation and you pick the correct answer or answers. Questions are drawn at random from the category B teaching plan. Besides Danish, the test is offered in English (digital or analogue, at every test centre, no interpreter), German, Faroese and Greenlandic. You take it after the theory lessons and closed-track lessons, from 16 years and 11 months, and a pass is valid for 18 months.",
+    rows: [
+      { label: "Run by", value: "Færdselsstyrelsen (Danish Road Traffic Authority)" },
+      { label: "Time", value: "25 minutes" },
+      { label: "Pass rule", value: "At most 5 errors (official practice test: 20 of 25)" },
+      { label: "Format", value: "Picture-based, one or more correct answers; digital or analogue" },
+      { label: "Languages", value: "Danish, English, German, Faroese, Greenlandic" },
+      { label: "Tigertest mock tests", value: "8 x 25 questions, 20 to pass" },
+      { label: "Earliest test", value: "16 years 11 months (licence at 17)" },
+      { label: "Pass valid for", value: "18 months" },
+    ],
+    basedOn: "Færdselsstyrelsen's driving licence guide and published randomisation key for the digital test, and the category B teaching plan (undervisningsplan, version 1.1, May 2026, in use from 1 July 2026), checked November 2026",
+    source: { name: "Færdselsstyrelsen: Tag kørekort til bil", url: "https://www.fstyr.dk/privat/koerekort/dit-foerste-koerekort/tag-koerekort-saadan-goer-du" },
+  },
+  setrafik: {
+    answer:
+      "The knowledge test (kunskapsprov) for a Swedish category B licence is run by Trafikverket at its test centres on a touch screen. It has 70 multiple-choice questions with one correct answer each and lasts 50 minutes. Five questions are unscored trial questions, so the maximum is 65 points, and you need 52 points to pass. It covers traffic rules, traffic safety, vehicle knowledge and handling, the environment and personal prerequisites. It is offered in Swedish (with audio) and in 15 other languages, including British English. To take it you need a learner's permit and both parts of the risk education. From 19 August 2026, a pass is valid for one year, during which you must pass the driving test.",
+    rows: [
+      { label: "Run by", value: "Trafikverket (Swedish Transport Administration)" },
+      { label: "Questions", value: "70 (65 scored, 5 unscored trial questions)" },
+      { label: "Time", value: "50 minutes (75 with approved extra time)" },
+      { label: "Pass mark", value: "52 of 65 points (80%)" },
+      { label: "Languages", value: "Swedish plus 15 others, including British English" },
+      { label: "Before the test", value: "Learner's permit and both parts of the risk education" },
+      { label: "Pass valid for", value: "One year (passes from 19 August 2026)" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions, 80% target" },
+    ],
+    basedOn: "Trafikverket's Kunskapsprov B and Teoriprovet på annat språk pages, Swedish traffic rules (Trafikförordningen) and Transportstyrelsen guidance, checked November 2026",
+    source: { name: "Trafikverket: Kunskapsprov B", url: "https://www.trafikverket.se/korkort/korkortsprov/personbil-och-latt-lastbil/kunskapsprov-b/" },
+  },
+  fitheory: {
+    answer:
+      "The Finnish category B theory test (teoriakoe) is taken on a tablet at an Ajovarma service point, run for Traficom by A-Katsastus. It has three parts in 30 minutes: 15 multiple choice questions, 50 picture questions about traffic situations and 5 risk recognition questions, and you must reach the minimum in each part (11, 43 and 4). The test is offered in Finnish, Swedish and English, with an oral test of 60 minutes in some cases. You can take it one month before reaching the licence age, normally 18. A passed theory test is valid for one year, and you take it before the driving test.",
+    rows: [
+      { label: "Run by", value: "Traficom, at Ajovarma (A-Katsastus) service points" },
+      { label: "Format", value: "15 multiple choice, 50 traffic picture questions, 5 risk recognition" },
+      { label: "Pass marks", value: "11 of 15, 43 of 50 and 4 of 5, each part separately" },
+      { label: "Time", value: "30 minutes (60 for an oral test)" },
+      { label: "Languages", value: "Finnish, Swedish, English" },
+      { label: "Valid for", value: "One year after passing" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions, 86% target" },
+      { label: "Minimum age (car)", value: "18 (17 with an age exception permit)" },
+    ],
+    basedOn: "Traficom regulation on the driving theory test (TRAFICOM/523973/03.04.03.00/2019), Traficom's driving examination page and Driving Licence Act reform page, and the Road Traffic Act 729/2018 as consolidated to April 2026, checked November 2026",
+    source: { name: "Traficom: Driving examination", url: "https://traficom.fi/en/drivers-and-vehicles/driving-licenses/driving-examination" },
+  },
+  grdriving: {
+    answer:
+      "The Greek driving theory test is a computer-based multiple-choice test taken at a Transport Directorate exam centre before the practical driving test. Its questions are drawn at random from the Ministry of Infrastructure and Transport's question bank, and Greek law makes the questionnaires available in foreign languages, English among them, as well as in Greek with audio and in Greek Sign Language. Guides describe the category B test as 30 questions in 35 minutes with a pass at 29 correct. You train through a licensed driving school; a full licence is issued at 18, and since 2021 a 17-year-old who passes can drive accompanied on a provisional licence.",
+    rows: [
+      { label: "Run by", value: "Ministry of Infrastructure and Transport (Transport Directorates)" },
+      { label: "Format", value: "Multiple choice on a computer, random draw from the question bank" },
+      { label: "Questions and time", value: "30 questions, 35 minutes (as guides report)" },
+      { label: "Pass mark", value: "29 of 30 (as guides report)" },
+      { label: "Languages", value: "Greek, English and other foreign languages; Greek with audio; Greek Sign Language" },
+      { label: "Minimum age (category B)", value: "18, or 17 for accompanied driving" },
+      { label: "Rules tested", value: "Greek Highway Code (Law 5209/2025) and road signs" },
+      { label: "Tigertest mock tests", value: "6 x 30 questions, 29 to pass" },
+    ],
+    basedOn: "The Ministry of Infrastructure and Transport's computer theory test page, Law 4850/2021 article 6, the 2025 Highway Code (Law 5209/2025) and Greek motoring press on the test format, checked November 2026",
+    source: { name: "Ministry of Infrastructure and Transport: computer theory test (ΜΣΘΕΥΟ)", url: "https://www.yme.gov.gr/metafores/adeies-odigisis/theoritiki-exetasi-ypopsifion-odigon-meso-i-y-mstheyo" },
+  },
+  rodrpciv: {
+    answer:
+      "The Romanian driving licence theory exam for category B is a computer test of 26 questions in 30 minutes, and you need at least 22 correct answers to pass. It is set nationally by the Ministry of Internal Affairs' driving licence directorate (DGPCI, formerly DRPCIV) and taken at your county's driving licence service. Three warm-up questions come first and do not count. Each question has three answers, and one, two or all three can be correct. The test is in Romanian; foreigners and citizens of other EU and EEA countries and Switzerland may ask for English, French or German, and Romanian citizens of the Hungarian and German minorities may use their mother tongue. You must be 18 and have trained at an authorised driving school.",
+    rows: [
+      { label: "Run by", value: "DGPCI (formerly DRPCIV), Ministry of Internal Affairs" },
+      { label: "Questions", value: "26, after 3 unscored warm-up questions" },
+      { label: "Time", value: "30 minutes" },
+      { label: "Pass mark", value: "22 correct (at most 4 wrong)" },
+      { label: "Answer format", value: "3 options, one to three correct" },
+      { label: "Languages", value: "Romanian; English, French or German on request; Hungarian or German for minorities" },
+      { label: "Minimum age (car)", value: "18" },
+      { label: "Tigertest mock tests", value: "7 x 26 questions, 22 to pass" },
+    ],
+    basedOn: "Order MAI 268/2010 on the driving licence examination procedure (art. 5, 10 and 11, as amended to 2014), OUG 195/2002 (Codul rutier) and its implementing regulation, checked November 2026",
+    source: { name: "DGPCI (Direcția Generală Permise de Conducere și Înmatriculări)", url: "https://dgpci.mai.gov.ro/" },
+  },
+  hukresz: {
+    answer:
+      "Hungary's category B theory exam, officially Közlekedési alapismeretek and widely called the KRESZ exam, is taken on a computer at a centre of the KAV, the national transport exam centre. It has 55 multiple-choice questions and lasts 55 minutes, one minute per question. The questions are worth 75 points in total and you need at least 65 to pass; guides say 10 questions are worth 3 points and 45 are worth 1. Guides and driving schools say the exam is offered in Hungarian, English, German and Romanian. You may sit it from 16 years and 9 months after a driving school course, and a pass stays valid for two years while you complete the driving test, which you may take from 17.",
+    rows: [
+      { label: "Run by", value: "KAV Közlekedési Alkalmassági és Vizsgaközpont" },
+      { label: "Questions", value: "55 multiple choice" },
+      { label: "Time", value: "55 minutes" },
+      { label: "Pass mark", value: "65 of 75 points" },
+      { label: "Languages", value: "Hungarian, English, German, Romanian (guides)" },
+      { label: "Minimum age", value: "16 years 9 months (theory), 17 (driving test)" },
+      { label: "Pass valid for", value: "2 years" },
+      { label: "Tigertest tests", value: "3 x 55 questions, 87% target" },
+    ],
+    basedOn: "KRESZ (1/1975. (II. 5.) KPM-BM decree) as in force in November 2026 and the KAV's category B exam requirements as quoted by driving schools, checked November 2026",
+    source: { name: "KAV Közlekedési Alkalmassági és Vizsgaközpont", url: "https://www.vizsgakozpont.hu/" },
+  },
+  mttheory: {
+    answer:
+      "The Malta driving theory test is run by Transport Malta at its Theory Test Centre. It is a multiple-choice test on a touch-screen computer: 35 questions in 45 minutes, and you need at least 30 correct to pass. You must be at least 18 and hold a learner's permit for the licence category, and you show your ID card before the test. It is offered in English or Maltese. After passing, you take the practical driving test. Malta drives on the left, and the questions follow Malta's own road rules and Highway Code.",
+    rows: [
+      { label: "Run by", value: "Transport Malta" },
+      { label: "Questions", value: "35 multiple choice, on a touch screen" },
+      { label: "Time", value: "45 minutes" },
+      { label: "Pass mark", value: "30 of 35" },
+      { label: "Languages", value: "English or Maltese" },
+      { label: "Minimum age (category B)", value: "18, with a learner's permit" },
+      { label: "Tigertest mock tests", value: "5 x 35 questions, 30 to pass" },
+      { label: "Study material", value: "Transport Malta's Highway Code (updated July 2025)" },
+    ],
+    basedOn: "Transport Malta's licensing guidance and the Highway Code of Malta (updated 25 July 2025), checked November 2026",
+    source: { name: "Transport Malta: Obtaining your driving licence", url: "https://www.transport.gov.mt/land/licence/obtaining-your-driving-licence-786" },
+  },
   sbipo: {
     answer:
       "The SBI PO Preliminary Examination is an online objective test of 100 marks in one hour, with separate timing for each section: English Language 40 questions in 20 minutes, Quantitative Aptitude 30 questions in 20 minutes and Reasoning Ability 30 questions in 20 minutes. This is the pattern in SBI's 2026 advertisement; earlier cycles had 30, 35 and 35 questions. A quarter of a question's marks is deducted for every wrong answer. There is no sectional cut-off in the Prelims: candidates are ranked by category on their total marks and about ten times the vacancies are called for the Main Examination. Prelims marks are not counted in the final merit list.",

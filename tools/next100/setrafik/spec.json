@@ -1,0 +1,36 @@
+{
+  "id": "setrafik",
+  "stateCode": "SETRAFIK",
+  "idBase": 14000,
+  "prefix": "SETRF-",
+  "slug": "/sweden-driving-theory",
+  "landingPath": "/sweden-driving-theory-test",
+  "dataFile": "data/sweden-driving-theory-questions.json",
+  "name": "Sweden Driving Theory Practice Test",
+  "shortName": "Sweden theory test",
+  "examLabel": "Swedish driving theory test",
+  "fullName": "Trafikverket knowledge test (kunskapsprov) for a category B licence",
+  "icon": "car",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 80,
+  "categories": [
+    {"key": "setrJunctions", "label": "Right of Way & Junctions", "perTest": 7, "pool": 28, "segment": "JNC"},
+    {"key": "setrSigns", "label": "Road Signs", "perTest": 8, "pool": 32, "segment": "SGN"},
+    {"key": "setrMarkings", "label": "Road Markings & Traffic Lights", "perTest": 5, "pool": 20, "segment": "MRK"},
+    {"key": "setrSpeed", "label": "Speed, Overtaking & Lanes", "perTest": 6, "pool": 24, "segment": "SPD"},
+    {"key": "setrParking", "label": "Stopping, Parking & Motorways", "perTest": 4, "pool": 16, "segment": "PRK"},
+    {"key": "setrSafety", "label": "Traffic Safety, Wildlife & Winter", "perTest": 9, "pool": 36, "segment": "SAF"},
+    {"key": "setrVehicle", "label": "Vehicle Knowledge & Handling", "perTest": 4, "pool": 16, "segment": "VEH"},
+    {"key": "setrEnvironment", "label": "Environment & Eco-driving", "perTest": 3, "pool": 12, "segment": "ENV"},
+    {"key": "setrPersonal", "label": "Personal Factors & Your Licence", "perTest": 4, "pool": 16, "segment": "PER"}
+  ],
+  "notes": "4 tests x 50 = 200, every item used once in tests, no spares. The real test is 70 questions (65 scored) in 50 minutes, pass 52 of 65 (80%); Tigertest uses 50-question mocks at 80% (40 of 50). Trafikverket names five subject areas but publishes no weights; the split follows guides' reported 7/5/32/16/5 of 65 (traffic rules about half, traffic safety a quarter), traffic rules split into five Tigertest categories. Dashboard = 5 topic sets + 4 tests = 9 steps.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 14001, "name": "Road Signs", "categories": ["setrSigns"], "size": 32},
+    {"setNumber": 2, "id": 14002, "name": "Junctions, Markings & Lights", "categories": ["setrJunctions", "setrMarkings"], "size": 48},
+    {"setNumber": 3, "id": 14003, "name": "Speed, Lanes, Parking & Motorways", "categories": ["setrSpeed", "setrParking"], "size": 40},
+    {"setNumber": 4, "id": 14004, "name": "Traffic Safety, Wildlife & Winter", "categories": ["setrSafety"], "size": 36},
+    {"setNumber": 5, "id": 14005, "name": "Vehicle, Environment & You", "categories": ["setrVehicle", "setrEnvironment", "setrPersonal"], "size": 44}
+  ]
+}

@@ -103,6 +103,16 @@ const AUTHORITY: Record<Exclude<Region, "US">, string> = {
   NG: "the FRSC, JAMB, TRCN or any recruiting service",
   KE: "the NTSA",
   PK: "any provincial or ICT licensing authority",
+  ES: "the DGT (Dirección General de Tráfico)",
+  PT: "the IMT",
+  RO: "the DGPCI (formerly DRPCIV) or any county driving licence service",
+  SE: "Trafikverket or Transportstyrelsen",
+  GR: "the Ministry of Infrastructure and Transport or any Transport Directorate",
+  DK: "Færdselsstyrelsen",
+  HU: "the KAV or any Hungarian authority",
+  BE: "GOCA, any exam centre or the regional authorities",
+  FI: "Traficom, Ajovarma or A-Katsastus",
+  MT: "Transport Malta",
 };
 
 function faqsFor(region: Region) {

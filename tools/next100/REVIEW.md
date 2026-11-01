@@ -45,6 +45,9 @@ same numbers, same key fact). Rewrite YOUR item when it duplicates or near-dupli
 item with the same numbers or the same fact and answer. Generic templates with different content
 are fine.
 
+## 3a. EU driving family
+EU batch: compare against every EU driving bank (esdgt, ptimt, rodrpciv, setrafik, grdriving, dkteori, hukresz, bedriving, fitheory, mttheory) and the UK, Ireland and other v1 driving banks in data/. Rewrite items with the same scenario and answer as another bank.
+
 ## 3b. Passages and theme
 Every item that reads a shared passage, cloze, table or puzzle carries `stimulusId`. Do not change the config's theme; the integrator owns hues.
 

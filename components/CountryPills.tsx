@@ -14,7 +14,7 @@ import {
 import { useStore } from "@/store/useStore";
 
 export const FLAGS: Record<Region, string> = { US: "🇺🇸", CA: "🇨🇦", UK: "🇬🇧", IE: "🇮🇪", AU: "🇦🇺", NZ: "🇳🇿", IN: "🇮🇳",
-  PH: "🇵🇭", MY: "🇲🇾", SG: "🇸🇬", HK: "🇭🇰", AE: "🇦🇪", ZA: "🇿🇦", NG: "🇳🇬", KE: "🇰🇪", PK: "🇵🇰" };
+  PH: "🇵🇭", MY: "🇲🇾", SG: "🇸🇬", HK: "🇭🇰", AE: "🇦🇪", ZA: "🇿🇦", NG: "🇳🇬", KE: "🇰🇪", PK: "🇵🇰", ES: "🇪🇸", PT: "🇵🇹", RO: "🇷🇴", SE: "🇸🇪", GR: "🇬🇷", DK: "🇩🇰", HU: "🇭🇺", BE: "🇧🇪", FI: "🇫🇮", MT: "🇲🇹" };
 
 /** The saved country, if any (client only). */
 export function readRegionCookie(): Region | null {

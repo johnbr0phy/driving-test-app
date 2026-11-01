@@ -34,6 +34,16 @@ const hubs: Record<string, ShareCard> = {
   ng: { title: "Free practice tests for Nigeria", lines: ["Free practice tests", "for Nigeria"], description: "JAMB UTME, recruitment tests, the TRCN PQE and the driving test.", footer: "Find your test at tigertest.io/ng", color: "#1B6B20", tint: "#E8F4E9", mascots: ["dmv", "sat", "aws"] },
   pk: { title: "Free practice tests for Pakistan", lines: ["Free practice tests", "for Pakistan"], description: "Driving licence sign test, college entrance and IT certifications.", footer: "Find your test at tigertest.io/pk", color: "#0B5E3A", tint: "#E6F4EC", mascots: ["dmv", "sat", "aws"] },
   ke: { title: "Free practice tests for Kenya", lines: ["Free practice tests", "for Kenya"], description: "NTSA driving test, college entrance and IT certifications.", footer: "Find your test at tigertest.io/ke", color: "#066A6E", tint: "#E4F4F5", mascots: ["dmv", "sat", "aws"] },
+  es: { title: "Free practice tests for Spain", lines: ["Free practice tests", "for Spain"], description: "DGT theory exam in English, college entrance and IT certifications.", footer: "Find your test at tigertest.io/es", color: "#970C1F", tint: "#FDEDEF", mascots: ["dmv", "sat", "aws"] },
+  pt: { title: "Free practice tests for Portugal", lines: ["Free practice tests", "for Portugal"], description: "IMT theory exam in English, college entrance and IT certifications.", footer: "Find your test at tigertest.io/pt", color: "#0B8425", tint: "#EDFDF0", mascots: ["dmv", "sat", "aws"] },
+  ro: { title: "Free practice tests for Romania", lines: ["Free practice tests", "for Romania"], description: "Category B theory exam in English, college entrance and IT certifications.", footer: "Find your test at tigertest.io/ro", color: "#041295", tint: "#EDEEFD", mascots: ["dmv", "sat", "aws"] },
+  se: { title: "Free practice tests for Sweden", lines: ["Free practice tests", "for Sweden"], description: "Kunskapsprov B in English, college entrance and IT certifications.", footer: "Find your test at tigertest.io/se", color: "#0A4C76", tint: "#EDF7FD", mascots: ["dmv", "sat", "aws"] },
+  gr: { title: "Free practice tests for Greece", lines: ["Free practice tests", "for Greece"], description: "Category B theory test in English, college entrance and IT certifications.", footer: "Find your test at tigertest.io/gr", color: "#3575B6", tint: "#EFF5FA", mascots: ["dmv", "sat", "aws"] },
+  dk: { title: "Free practice tests for Denmark", lines: ["Free practice tests", "for Denmark"], description: "Teoriprøve in English, college entrance and IT certifications.", footer: "Find your test at tigertest.io/dk", color: "#82172C", tint: "#FCEEF1", mascots: ["dmv", "sat", "aws"] },
+  hu: { title: "Free practice tests for Hungary", lines: ["Free practice tests", "for Hungary"], description: "KRESZ theory exam in English, college entrance and IT certifications.", footer: "Find your test at tigertest.io/hu", color: "#568159", tint: "#F3F7F3", mascots: ["dmv", "sat", "aws"] },
+  be: { title: "Free practice tests for Belgium", lines: ["Free practice tests", "for Belgium"], description: "Category B theory exam in English, college entrance and IT certifications.", footer: "Find your test at tigertest.io/be", color: "#857300", tint: "#FDFBED", mascots: ["dmv", "sat", "aws"] },
+  fi: { title: "Free practice tests for Finland", lines: ["Free practice tests", "for Finland"], description: "Teoriakoe in English, college entrance and IT certifications.", footer: "Find your test at tigertest.io/fi", color: "#002385", tint: "#EDF1FD", mascots: ["dmv", "sat", "aws"] },
+  mt: { title: "Free practice tests for Malta", lines: ["Free practice tests", "for Malta"], description: "Transport Malta theory test, college entrance and IT certifications.", footer: "Find your test at tigertest.io/mt", color: "#C00C0C", tint: "#FDEDED", mascots: ["dmv", "sat", "aws"] },
 };
 
 const dmvCopy: Record<string, { title: (state?: string) => string; description: string; footer: string }> = {
@@ -612,6 +622,46 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
   "pkdrive": {
     "color": "hsl(152, 75%, 30%)",
     "tint": "hsl(152, 75%, 96%)"
+  },
+  "esdgt": {
+    "color": "hsl(352, 85%, 32%)",
+    "tint": "hsl(352, 80%, 96%)"
+  },
+  "ptimt": {
+    "color": "hsl(133, 85%, 28%)",
+    "tint": "hsl(133, 80%, 96%)"
+  },
+  "bedriving": {
+    "color": "hsl(52, 100%, 26%)",
+    "tint": "hsl(52, 80%, 96%)"
+  },
+  "dkteori": {
+    "color": "hsl(348, 70%, 30%)",
+    "tint": "hsl(348, 70%, 96%)"
+  },
+  "setrafik": {
+    "color": "hsl(203, 85%, 25%)",
+    "tint": "hsl(203, 80%, 96%)"
+  },
+  "fitheory": {
+    "color": "hsl(224, 100%, 26%)",
+    "tint": "hsl(224, 80%, 96%)"
+  },
+  "grdriving": {
+    "color": "hsl(210, 55%, 46%)",
+    "tint": "hsl(210, 55%, 96%)"
+  },
+  "rodrpciv": {
+    "color": "hsl(234, 95%, 30%)",
+    "tint": "hsl(234, 80%, 96%)"
+  },
+  "hukresz": {
+    "color": "hsl(125, 20%, 42%)",
+    "tint": "hsl(125, 20%, 96%)"
+  },
+  "mttheory": {
+    "color": "hsl(0, 88%, 40%)",
+    "tint": "hsl(0, 80%, 96%)"
   },
   "phlet": {
     "color": "hsl(160, 25%, 40%)",

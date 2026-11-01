@@ -8,7 +8,7 @@ import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { FLAGS, readRegionCookie } from "@/components/CountryPills";
 import { useAuth } from "@/contexts/AuthContext";
 import { useTestsInProgress } from "@/hooks/useTestsInProgress";
-import { Region, TestRegion, regionOfTest } from "@/lib/region";
+import { Region, TestRegion, regionHomePath, regionOfTest } from "@/lib/region";
 import { normalizeQuery, searchAllTests, SearchHit } from "@/lib/testSearch";
 import { trackSearch } from "@/lib/searchTracking";
 import { useStore } from "@/store/useStore";
@@ -81,10 +81,10 @@ export function TestSearchSheet({ open, onOpenChange }: { open: boolean; onOpenC
           // On touch screens the keyboard would cover the list before it can be read.
           if (window.matchMedia("(pointer: fine)").matches) inputRef.current?.focus();
         }}
-        className="top-4 sm:top-16 translate-y-0 data-[state=closed]:slide-out-to-top-[2%] data-[state=open]:slide-in-from-top-[2%] w-[calc(100vw-24px)] max-w-xl max-h-[calc(100dvh-32px)] sm:max-h-[min(36rem,calc(100dvh-8rem))] overflow-y-auto content-start rounded-3xl sm:rounded-3xl p-3 gap-2 [&>button:last-child]:hidden"
+        className="top-4 sm:top-16 translate-y-0 data-[state=closed]:slide-out-to-top-[2%] data-[state=open]:slide-in-from-top-[2%] flex flex-col w-[calc(100vw-24px)] max-w-xl max-h-[calc(100dvh-32px)] sm:max-h-[min(36rem,calc(100dvh-8rem))] overflow-hidden rounded-3xl sm:rounded-3xl p-3 gap-2 [&>button:last-child]:hidden"
       >
         <DialogTitle className="sr-only">Find a test</DialogTitle>
-        <div className="relative">
+        <div className="relative shrink-0">
           <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-500 dark:text-gray-400" aria-hidden />
           <input
             ref={inputRef}
@@ -124,6 +124,7 @@ export function TestSearchSheet({ open, onOpenChange }: { open: boolean; onOpenC
           </button>
         </div>
 
+        <div className="min-h-0 min-w-0 flex-1 overflow-y-auto overscroll-contain -mx-1 px-1">
         {searching ? (
           result.hits.length > 0 ? (
             <div>
@@ -172,7 +173,7 @@ export function TestSearchSheet({ open, onOpenChange }: { open: boolean; onOpenC
               <>
                 <p className="px-3 pt-2 pb-1 text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">Your tests</p>
                 <ul>
-                  {started.slice(0, 5).map(({ test, mastered, testsTaken }) => (
+                  {started.map(({ test, mastered, testsTaken }) => (
                     <li key={test.id}>
                       <button
                         type="button"
@@ -192,7 +193,7 @@ export function TestSearchSheet({ open, onOpenChange }: { open: boolean; onOpenC
               </>
             )}
             <Link
-              href="/tests"
+              href={regionHomePath(region)}
               onClick={() => onOpenChange(false)}
               className="flex items-center gap-4 rounded-2xl px-3 py-3 text-gray-900 dark:text-gray-50 hover:bg-gray-100 dark:hover:bg-gray-800"
             >
@@ -201,6 +202,7 @@ export function TestSearchSheet({ open, onOpenChange }: { open: boolean; onOpenC
             </Link>
           </div>
         )}
+        </div>
       </DialogContent>
     </Dialog>
   );

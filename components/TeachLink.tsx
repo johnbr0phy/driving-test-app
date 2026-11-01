@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react";
 import { useAuth } from "@/contexts/AuthContext";
+import { getMemberships, type ClassMembership } from "@/lib/classProgress";
+import type { ClassSummary } from "@/lib/classes";
 import { teachFetch } from "@/lib/teachClient";
 
 // Whether a signed-in account owns at least one class, for the "Your classes"
@@ -71,4 +73,54 @@ export function useTeaches(): boolean {
   }, [user]);
 
   return teaches;
+}
+
+// The class a teacher last opened, so the header's CLASSES tab goes straight back to it.
+const CURRENT_CLASS_KEY = "tigertest-current-class";
+
+export function rememberCurrentClass(code: string) {
+  try {
+    localStorage.setItem(CURRENT_CLASS_KEY, code);
+  } catch {}
+}
+
+export function currentClassCode(): string | null {
+  try {
+    return localStorage.getItem(CURRENT_CLASS_KEY);
+  } catch {
+    return null;
+  }
+}
+
+/** The signed-in teacher's classes, fetched while `enabled` (the header's class pill). */
+export function useTeacherClasses(enabled: boolean): ClassSummary[] | null {
+  const { user } = useAuth();
+  const [classes, setClasses] = useState<ClassSummary[] | null>(null);
+
+  useEffect(() => {
+    if (!user || !enabled) return;
+    let alive = true;
+    teachFetch<{ classes: ClassSummary[] }>(user, "/api/classes")
+      .then((d) => {
+        if (!alive) return;
+        setClasses(d.classes);
+        markTeacher(user.uid, d.classes.length > 0);
+      })
+      .catch(() => {});
+    return () => {
+      alive = false;
+    };
+  }, [user, enabled]);
+
+  return classes;
+}
+
+/** The latest class (not quiz) this browser joined as a student, read after hydration. */
+export function useStudentClass(): ClassMembership | null {
+  const [membership, setMembership] = useState<ClassMembership | null>(null);
+  useEffect(() => {
+    const classes = getMemberships().filter((m) => m.kind !== "quiz");
+    setMembership(classes[classes.length - 1] ?? null);
+  }, []);
+  return membership;
 }

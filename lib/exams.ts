@@ -186,11 +186,6 @@ const TEST_SET_NAMES: Record<Language, (n: number) => string> = {
   pt: (n) => `Conjunto de treino ${n}`,
 };
 
-/** "Training Set 2" in the reader's language (the DMV's set names too). */
-export function trainingSetName(lang: Language, n: number): string {
-  return (TEST_SET_NAMES[lang] ?? TEST_SET_NAMES.en)(n);
-}
-
 const cdl: ExamConfig = {
   id: "cdl",
   stateCode: "CDL",

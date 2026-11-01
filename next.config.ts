@@ -18,7 +18,8 @@ const nextConfig: NextConfig = {
   // Keep the big public asset folders out of the image functions.
   outputFileTracingExcludes: {
     "/api/og/score-card": ["./public/tigers/**", "./public/landing/**", "./public/basics-audio/**", "./public/logos/**"],
-    "/og/[examId]": ["./public/tigers/**", "./public/landing/**", "./public/basics-audio/**", "./public/logos/**"],
+    // It reads only face 03, but nft follows the dynamic path into every face.
+    "/og/[examId]": ["./assets/og-tigers/*/tiger_face_0[1245678].png", "./public/tigers/**", "./public/landing/**", "./public/basics-audio/**", "./public/logos/**"],
     "/og/q/[code]": ["./public/tigers/**", "./public/landing/**", "./public/basics-audio/**", "./public/logos/**"],
   },
   images: {

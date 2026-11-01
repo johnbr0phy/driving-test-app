@@ -6,7 +6,7 @@ import { normalizeQuery } from '@/lib/testSearch';
 import { getCatalogEntry } from '@/lib/testCatalog';
 import { isRegion } from '@/lib/region';
 
-// What people type into the search-first homepage (/home-v2). One doc per
+// What people type into the search on the homepage (/ and the English country homepages). One doc per
 // normalised query in `searchQueries` (count, how many found nothing, which
 // test was picked, by day and by visitor country), plus totals in
 // analytics/search. Searches that find nothing are the list of tests to build

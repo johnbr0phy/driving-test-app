@@ -1,13 +1,14 @@
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { ThemedScreenshot } from "@/components/ThemedScreenshot";
 import { TEST_CATALOG } from "@/lib/testCatalog";
 import { TestCard, TestCatalogGrid } from "@/components/TestCatalogGrid";
 import { CountUp } from "@/components/CountUp";
 import { getPopularTests } from "@/lib/server/popularTests";
+import { getTrendingSearches } from "@/lib/server/trendingSearches";
+import { SearchHome } from "@/components/home/SearchHome";
 import { ORGANIZATION_ID, WEBSITE_ID } from "@/lib/siteSchema";
 import { EXAM_FACTS } from "@/lib/examFacts";
 import { HUB_PAGES_UPDATED_AT } from "@/lib/seoDates";
@@ -184,15 +185,6 @@ const popularStates = popularStateSlugs
   .map((slug) => states.find((s) => s.slug === slug))
   .filter((s): s is (typeof states)[number] => !!s);
 
-const quotes = [
-  { text: "Used this to help me study. Passed today! Thank you :)", who: "u/Naive_Usual1910", href: "https://www.reddit.com/r/driving/comments/1ep1644/comment/lxra5co/" },
-  { text: "it was sooooo much better than Quizlet or making my own flashcards", who: "u/yabukothestray" },
-  { text: "it was very helpful... I passed the written test this morning", who: "ideapad101" },
-  { text: "The interface is smooth and easy to navigate, unlike other free practice tests. I passed with only two mistakes!", who: "Yzabelle" },
-  { text: "i passed in 3 minutes", who: "u/Curdled_Cave", href: "https://www.reddit.com/r/driving/comments/1ep1644/comment/m6ndsvp/" },
-  { text: "felt confident after just studying the previous day", who: "JayjayX12" },
-];
-
 // The homepage for one country (lib/region.ts): "/" for the US, app/uk,
 // app/ca and app/au for the others, each its own indexable page, in the
 // country's language. `lang` serves it in another language for someone who
@@ -200,7 +192,8 @@ const quotes = [
 // country's own lines (REGION_HOME) then give way to the copy's generic ones.
 export async function HomePage({ region, lang: pickedLang }: { region: Region; lang?: Language }) {
   const us = region === "US";
-  const { tests: ranked, totalAnswered } = await getPopularTests(us ? 6 : 100);
+  const { tests: allRanked, totalAnswered } = await getPopularTests(500);
+  const ranked = us ? allRanked.slice(0, 6) : allRanked.slice(0, 100);
   // Outside the US "Popular this week" only counts the country's own and worldwide tests,
   // and only ones someone actually answered (never the US fallback list).
   const popular = us
@@ -224,10 +217,20 @@ export async function HomePage({ region, lang: pickedLang }: { region: Region; l
   const ctaTest = home ? catalogTestForHref(home.cta.href) : undefined;
   const cta = home && ctaTest ? (native ? home.cta : { label: nameIn(ctaTest, lang), href: ctaTest.href }) : null;
 
+  // English homepages open on the search (one box over every test, Nov 2026);
+  // the other languages keep the hero, How it works and the catalog below.
+  const search = lang === "en";
+  const popularity: Record<string, number> = {};
+  for (const p of allRanked) popularity[p.test.id] = p.answered ?? 0;
+  const trending = search ? await trendingFor(region, allRanked) : [];
+
   return (
-    <div className="flex-1 bg-white dark:bg-gray-900">
+    <div className={`flex-1 bg-white ${search ? "dark:bg-gray-950" : "dark:bg-gray-900"}`}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFor(region)) }} />
 
+      {search && <SearchHome initialRegion={region} popularity={popularity} trending={trending} answeredThisWeek={totalAnswered} />}
+
+      {!search && (<>
       {/* Hero */}
       <div className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
@@ -261,6 +264,8 @@ export async function HomePage({ region, lang: pickedLang }: { region: Region; l
           )}
         </div>
       </div>
+
+      </>)}
 
       {/* Popular this week (outside the US only once someone there has answered questions) */}
       {popular.length > 0 && (
@@ -360,6 +365,7 @@ export async function HomePage({ region, lang: pickedLang }: { region: Region; l
           </div>
       )}
 
+      {!search && (<>
       {/* How it works: real screens from the app, one step per row */}
       <div className="max-w-5xl mx-auto px-6 py-16 md:py-24">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-14 md:mb-20">
@@ -417,36 +423,6 @@ export async function HomePage({ region, lang: pickedLang }: { region: Region; l
         </div>
       </div>
 
-      {/* Social proof (English quotes, so English pages only) */}
-      {lang === "en" && (
-      <div className="bg-brand-light py-14">
-        <div className="max-w-5xl mx-auto px-6">
-          <p className="text-gray-600 dark:text-gray-300 text-center mb-8 flex items-center justify-center gap-2">
-            From r/driving, r/DMV and r/Histology on
-            <Image src="/reddit.png" alt="Reddit" width={72} height={24} className="h-[55px] w-auto inline-block dark:hidden" />
-            <Image src="/reddit-dark.png" alt="Reddit" width={72} height={24} className="h-[55px] w-auto hidden dark:inline-block" />
-          </p>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {quotes.map((q) => {
-              const body = (
-                <>
-                  <blockquote className="text-gray-800 dark:text-gray-100 mb-3">&quot;{q.text}&quot;</blockquote>
-                  <figcaption className="text-sm text-gray-500 dark:text-gray-400">{q.who}</figcaption>
-                </>
-              );
-              return q.href ? (
-                <a key={q.who} href={q.href} target="_blank" rel="noopener noreferrer" className="block rounded-2xl bg-white dark:bg-gray-900 p-6 hover:shadow-md transition-shadow">
-                  <figure>{body}</figure>
-                </a>
-              ) : (
-                <figure key={q.who} className="rounded-2xl bg-white dark:bg-gray-900 p-6">{body}</figure>
-              );
-            })}
-          </div>
-        </div>
-      </div>
-      )}
-
       {/* Every test */}
       <div id="all-tests" className="max-w-5xl mx-auto px-6 py-16 md:py-24 scroll-mt-6">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-8">
@@ -460,6 +436,8 @@ export async function HomePage({ region, lang: pickedLang }: { region: Region; l
           </p>
         )}
       </div>
+
+      </>)}
 
       {/* FAQ */}
       <div className="bg-gray-50 dark:bg-gray-950 py-16 md:py-24">
@@ -491,4 +469,23 @@ export async function HomePage({ region, lang: pickedLang }: { region: Region; l
       </div>
     </div>
   );
+}
+
+/** Trending searches for a homepage: what people searched most this week,
+ *  topped up with this week's busiest tests from the country (or worldwide),
+ *  then the country's own tests, so the list is never short. */
+async function trendingFor(region: Region, ranked: { test: TestCatalogEntry; answered: number | null }[]): Promise<string[]> {
+  const local = (id: string) => regionOfTest(id) === region || regionOfTest(id) === "GLOBAL";
+  const feed: TestCatalogEntry[] = ranked.filter((p) => local(p.test.id)).map((p) => p.test);
+  for (const test of TEST_CATALOG) {
+    if (feed.length >= 6) break;
+    if (regionOfTest(test.id) === region && !feed.includes(test)) feed.push(test);
+  }
+  const trending = await getTrendingSearches(6);
+  for (const test of feed) {
+    if (trending.length >= 6) break;
+    const name = test.name.toLowerCase();
+    if (!trending.includes(name)) trending.push(name);
+  }
+  return trending;
 }

@@ -40,7 +40,7 @@ export function Footer() {
   const exam = v1Exam ?? (v2Exam ? { id: v2Exam.id } : undefined);
   const isHomepage = pathname === "/dmv-practice-test";
   const isQuizPage =
-    pathname === "/q" || !!pathname?.startsWith("/q/") || pathname === "/quizzes" || pathname === "/create" || pathname === "/home-v2";
+    pathname === "/q" || !!pathname?.startsWith("/q/") || pathname === "/quizzes" || pathname === "/create";
 
   // SEO landing pages have dedicated /es/ and /vi/ URLs, so they manage
   // language by routing.

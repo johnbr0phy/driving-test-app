@@ -2,7 +2,7 @@ import { TEST_CATALOG, TestCatalogEntry, haystack } from "./testCatalog";
 import { regionOfTest, Region, TestRegion } from "./region";
 import { states } from "@/data/states";
 
-// The search behind the Google-style homepage (/home-v2). Pure, so it runs on
+// The search behind the Google-style homepage (/, SearchHome). Pure, so it runs on
 // the client on every keystroke. A result is either a catalog test or a DMV
 // state ("california dmv" goes straight to that state's DMV dashboard).
 

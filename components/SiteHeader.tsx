@@ -178,7 +178,7 @@ function HeaderBar({ path, themePath, examId, v2Id }: { path: string; themePath:
     }
     if (show) {
       signIn = (
-        <Link href={href} className={`${pill} ml-1 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-400`}>
+        <Link href={href} className={`${pill} ml-1 bg-gray-900 text-white hover:bg-gray-700 dark:bg-white dark:text-gray-900 dark:hover:bg-gray-200`}>
           {label}
         </Link>
       );
@@ -305,10 +305,10 @@ function TabLink({ href, active, children }: { href: string; active: boolean; ch
     <Link
       href={href}
       aria-current={active ? "page" : undefined}
-      className={`relative flex items-center ${active ? "text-blue-600 dark:text-blue-400" : "text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-50"}`}
+      className={`relative flex items-center ${active ? "text-gray-900 dark:text-gray-50" : "text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-50"}`}
     >
       {children}
-      {active && <span className="absolute inset-x-0 bottom-0 h-0.5 rounded-full bg-blue-600 dark:bg-blue-400" />}
+      {active && <span className="absolute inset-x-0 bottom-0 h-0.5 rounded-full bg-gray-900 dark:bg-gray-50" />}
     </Link>
   );
 }
@@ -324,7 +324,7 @@ function AccountMenu() {
 
   return (
     <Popover open={open} onOpenChange={setOpen}>
-      <PopoverTrigger aria-label="Your account" className="ml-1 rounded-full focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">
+      <PopoverTrigger aria-label="Your account" className="ml-1 rounded-full focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-400">
         <Avatar className="h-9 w-9 cursor-pointer hover:opacity-80 transition-opacity">
           <AvatarImage src={photo || undefined} alt="" />
           <AvatarFallback className="text-lg">😊</AvatarFallback>

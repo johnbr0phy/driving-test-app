@@ -13,6 +13,9 @@ export function HeaderSwitch() {
   const exam = getExamByPath(pathname);
   const examV2 = getExamV2ByPath(pathname);
 
+  // The search homepage trial draws its own Google-style top bar.
+  if (pathname === "/home-v2") return null;
+
   if (examV2) return <V2Header exam={examV2} />;
 
   if (exam) {

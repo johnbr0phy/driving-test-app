@@ -5570,6 +5570,8 @@ html.native-app body {
 /* Dashboard row wrappers are tabIndex=-1 focus targets, never tab stops: a tap
    focuses them, so they draw their own ring only when returned to. */
 .progress-row:focus-visible { outline: none !important; }
+/* The search homepage box (/home-v2) shows focus by turning white with a shadow, like Google's. */
+.search-pill:focus-visible { outline: none !important; }
 .skip-link { position: fixed; top: .5rem; left: .5rem; z-index: 100; padding: .75rem 1rem; background: #fff; color: #111827; transform: translateY(-200%); }
 .skip-link:focus { transform: translateY(0); }
 @media (prefers-reduced-motion: reduce) {

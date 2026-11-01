@@ -11,7 +11,6 @@ import { ArrowLeft, RotateCcw, Target } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Fireworks } from "@/components/Fireworks";
 import { QuizRow } from "@/components/QuizRow";
-import { TestPageHeader } from "@/components/TestPageHeader";
 import { useHydration } from "@/hooks/useHydration";
 import { quizDashboardPath, quizPath, quizQuestionId, type QuizPublic, type QuizQuestion } from "@/lib/quizzes";
 import { codeProgress, useQuizStore, type QuizTestAttempt } from "@/store/useQuizStore";
@@ -64,7 +63,6 @@ export function QuizResults({ code }: { code: string }) {
   if (!attempt) {
     return (
       <div className="flex-1 bg-gray-50 dark:bg-gray-950">
-        <TestPageHeader backHref={home} />
         <div className="container mx-auto px-4 py-12 max-w-lg text-center">
           <h1 className="text-xl font-bold text-gray-900 dark:text-gray-50 mb-2">No test yet</h1>
           <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">Take the test and your score will show here.</p>
@@ -105,7 +103,6 @@ export function QuizResults({ code }: { code: string }) {
   return (
     <div className="flex-1 bg-gray-50 dark:bg-gray-950">
       {fireworks && <Fireworks duration={3000} onComplete={() => setFireworks(false)} />}
-      <TestPageHeader backHref={home} sticky />
       <div className="container mx-auto px-4 py-8 max-w-lg md:max-w-2xl space-y-5">
         <div className={`rounded-2xl border p-6 text-center ${tone.ring}`}>
           <p className="text-xs uppercase tracking-widest text-gray-600 dark:text-gray-300 mb-2">{quiz.title}</p>

@@ -15,7 +15,8 @@ import { Fireworks } from "@/components/Fireworks";
 import { AchievementCelebration } from "@/components/AchievementCelebration";
 import { AccessibleOverlay } from "@/components/AccessibleOverlay";
 import { DMV_ROUTES } from "@/lib/examRoutes";
-import { TestPageHeader } from "@/components/TestPageHeader";
+import { FocusBar } from "@/components/FocusBar";
+import { trainingSetName } from "@/lib/exams";
 import Link from "next/link";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { useDmvTestLanguage } from "@/hooks/useTestLanguage";
@@ -382,8 +383,11 @@ function TrainingPageContent() {
         </AccessibleOverlay>
       )}
 
-      <TestPageHeader
-        backHref="/dmv/dashboard"
+      <FocusBar
+        exitHref="/dmv/dashboard"
+        title={isSetMode && setNumber ? trainingSetName(language, setNumber) : t("common.dmvHeaderTitle")}
+        subtitle={isSetMode && setProgress ? `${setProgress.correct}/${setProgress.total} ${t("trainingPage.questionsCorrect")}` : undefined}
+        progress={isSetMode && setProgress && setProgress.total > 0 ? setProgress.correct / setProgress.total : undefined}
         right={
           isPremium ? (
             <Link

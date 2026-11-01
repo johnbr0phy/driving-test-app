@@ -3,7 +3,6 @@
 import { useParams } from "next/navigation";
 import { useTestResults } from "@/hooks/useTestResults";
 import { useUpgradeFlow } from "@/hooks/useUpgradeFlow";
-import { TestPageHeader } from "@/components/TestPageHeader";
 import { ResultsHeroDebrief } from "@/components/results/ResultsHeroDebrief";
 import { ResultsDebriefBody } from "@/components/results/ResultsDebriefBody";
 
@@ -33,18 +32,10 @@ export default function ResultsPage() {
 
   return (
     <div className="flex-1 bg-gray-50 dark:bg-gray-950">
-      {/* Rendered at page level (not inside the hero) so its sticky context is
-          the whole page — it stays pinned all the way down the miss drill. */}
-      <TestPageHeader
-        backHref="/dmv/dashboard"
-        sticky
-        right={
-          <span className="text-sm text-gray-500 dark:text-gray-400">
+      <p className="px-4 pt-4 text-center text-sm text-gray-500 dark:text-gray-400">
             {stateName} · {language === "es" ? `Examen ${testId}` : language === "vi" ? `Bài Thi ${testId}` : language === "ko" ? `시험 ${testId}` : language === "zh" ? `模拟考试 ${testId}` : `Test ${testId}`} ·{" "}
             {attemptNumber === 1 ? t("results.firstAttempt") : `${t("results.attempt")} ${attemptNumber}`}
-          </span>
-        }
-      />
+          </p>
       <ResultsHeroDebrief
         results={results}
         onDrill={scrollToDrill}

@@ -4,11 +4,12 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { Search, X, ArrowUpRight, Mic, Grip, Menu, TrendingUp, ChevronRight, History } from "lucide-react";
+import { Search, X, ArrowUpRight, Mic, TrendingUp, ChevronRight, History } from "lucide-react";
+import { CountUp } from "@/components/CountUp";
 import { useTestsInProgress } from "@/hooks/useTestsInProgress";
 import { FLAGS, readRegionCookie } from "@/components/CountryPills";
 import { useAuth } from "@/contexts/AuthContext";
-import { isInternalBrowser } from "@/lib/internal";
+import { trackSearch } from "@/lib/searchTracking";
 import { Region, TestRegion, regionInfo, regionOfTest } from "@/lib/region";
 import { normalizeQuery, searchAllTests, SearchHit, SearchResult } from "@/lib/testSearch";
 
@@ -43,11 +44,14 @@ export function SearchHome({
   initialRegion,
   popularity,
   trending,
+  answeredThisWeek,
 }: {
   initialRegion: Region;
   popularity: Record<string, number>;
   /** What people searched most this week, topped up with popular test names. */
   trending: string[];
+  /** Questions answered on Tigertest in the last 7 days, null when unknown. */
+  answeredThisWeek: number | null;
 }) {
   const router = useRouter();
   const { user } = useAuth();
@@ -107,21 +111,10 @@ export function SearchHome({
 
   useEffect(() => setActive(0), [query]);
 
-  function track(body: Record<string, unknown>) {
-    if (isInternalBrowser(user?.email)) return;
-    const payload = JSON.stringify({ ...body, region });
-    try {
-      if (navigator.sendBeacon?.("/api/analytics/search", new Blob([payload], { type: "application/json" }))) return;
-    } catch {
-      // Fall through to fetch.
-    }
-    fetch("/api/analytics/search", { method: "POST", headers: { "Content-Type": "application/json" }, body: payload, keepalive: true }).catch(() => {});
-  }
-
   function trackQuery(text: string, results: number) {
     if (text.length < 2 || sent.current.has(text)) return;
     sent.current.add(text);
-    track({ kind: "query", q: text, results });
+    trackSearch({ kind: "query", q: text, results }, region, user?.email);
   }
 
   // Count a query once the visitor stops typing, so "c", "ca", "cal" never count.
@@ -136,7 +129,7 @@ export function SearchHome({
   function open(hit: SearchHit) {
     if (q.length >= 2) {
       trackQuery(q, foundCount);
-      track({ kind: "pick", q, pick: hit.key });
+      trackSearch({ kind: "pick", q, pick: hit.key }, region, user?.email);
     }
     router.push(hit.href);
   }
@@ -166,72 +159,10 @@ export function SearchHome({
     inputRef.current?.focus();
   }
 
-  const [menuOpen, setMenuOpen] = useState(false);
   const started = useTestsInProgress();
-  const avatar = user?.photoURL;
-  const initial = (user?.displayName || user?.email || "?").trim()[0]?.toUpperCase();
 
   return (
     <main className="min-h-screen bg-white dark:bg-gray-950">
-      {/* Top bar, like Google's: a menu when signed out, tabs on the left, the account on the right. */}
-      <div className="relative flex items-center justify-between px-4 sm:px-6 h-14 border-b border-transparent">
-        <nav className="flex items-center gap-6 text-sm font-semibold tracking-wide">
-          {!user && (
-            <button
-              type="button"
-              onClick={() => setMenuOpen((o) => !o)}
-              aria-label="Menu"
-              aria-expanded={menuOpen}
-              className="-ml-2 p-2 rounded-full text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800"
-            >
-              <Menu className="w-6 h-6" />
-            </button>
-          )}
-          <span className="relative py-4 text-blue-600 dark:text-blue-400">
-            TESTS
-            <span className="absolute left-0 right-0 bottom-0 h-0.5 rounded-full bg-blue-600 dark:bg-blue-400" />
-          </span>
-          <Link href="/teach" className="py-4 text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-50">
-            TEACH
-          </Link>
-        </nav>
-        <div className="flex items-center gap-3">
-          <Link href="/tests" aria-label="Every test" className="p-2 rounded-full text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800">
-            <Grip className="w-5 h-5" />
-          </Link>
-          {user ? (
-            <Link href="/settings" aria-label="Your account" className="block w-9 h-9 rounded-full overflow-hidden bg-brand text-white grid place-items-center font-semibold ring-2 ring-white dark:ring-gray-950">
-              {avatar ? (
-                // eslint-disable-next-line @next/next/no-img-element
-                <img src={avatar} alt="" referrerPolicy="no-referrer" className="w-full h-full object-cover" />
-              ) : (
-                initial
-              )}
-            </Link>
-          ) : (
-            <Link href="/login" className="rounded-full bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700">
-              Sign in
-            </Link>
-          )}
-        </div>
-        {menuOpen && <button type="button" aria-label="Close menu" onClick={() => setMenuOpen(false)} className="fixed inset-0 z-10 cursor-default" />}
-        {menuOpen && (
-          <div className="absolute left-3 top-14 z-20 w-60 rounded-2xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 shadow-lg py-2">
-            {[
-              ["Every test", "/tests"],
-              ["Make a quiz", "/create"],
-              ["Quizzes", "/quizzes"],
-              ["For teachers", "/teach"],
-              ["Sign in", "/login"],
-            ].map(([label, href]) => (
-              <Link key={href} href={href} className="block px-4 py-2.5 text-gray-800 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800">
-                {label}
-              </Link>
-            ))}
-          </div>
-        )}
-      </div>
-
       <div className="mx-auto w-full max-w-2xl px-4">
         {/* The wordmark. Shrinks to one line while searching so results stay above a phone keyboard. */}
         <div className={`flex items-center justify-center ${showResults ? "gap-2 pt-3 pb-4" : "gap-3 pt-10 pb-3 sm:pt-[12vh] sm:pb-4"}`}>
@@ -242,9 +173,17 @@ export function SearchHome({
         </div>
 
         {!showResults && (
-          <p className="pb-8 text-center text-base text-gray-600 dark:text-gray-300 sm:pb-10 sm:text-lg">
-            Free prep, any test, anywhere.
-          </p>
+          <>
+            <p className="text-center text-base text-gray-600 dark:text-gray-300 sm:text-lg">Free prep, any test, anywhere.</p>
+            {answeredThisWeek !== null && answeredThisWeek > 0 ? (
+              <p className="pt-2 pb-7 text-center text-sm text-gray-500 dark:text-gray-400 sm:pb-9">
+                <span aria-hidden className="mr-2 inline-block h-1.5 w-1.5 rounded-full bg-green-500 align-middle ring-[3px] ring-green-500/25" />
+                <CountUp value={answeredThisWeek} className="font-semibold text-gray-900 dark:text-gray-50 tabular-nums" /> questions answered this week
+              </p>
+            ) : (
+              <div className="pb-8 sm:pb-10" />
+            )}
+          </>
         )}
 
         <div className="relative">

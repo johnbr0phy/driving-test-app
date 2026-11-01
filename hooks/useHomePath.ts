@@ -15,8 +15,3 @@ export function useCurrentTest(): TestCatalogEntry | undefined {
   const primaryExam = useStore((s) => s.primaryExam);
   return hydrated && primaryExam ? getCatalogEntry(primaryExam) : undefined;
 }
-
-/** Where the header logo goes: the current test's dashboard, else the homepage. */
-export function useHomePath(): string {
-  return useCurrentTest()?.dashboardHref ?? "/";
-}

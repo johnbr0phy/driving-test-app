@@ -82,7 +82,7 @@ export interface ExamConfig {
   fullName: string;
   /** Question ID prefix, e.g. "HTL-". */
   questionIdPrefix: string;
-  /** Header icon key (see CDLHeader). */
+  /** Icon key for the catalog, menus and TestIcon. */
   icon: "truck" | "bike" | "flag" | "plane" | "radio" | "thermometer" | "heart" | "pill" | "syringe" | "stethoscope" | "activity" | "tooth" | "siren" | "utensils" | "house" | "umbrella" | "stamp" | "graduation" | "cloud" | "cpu" | "chef" | "sailboat" | "target" | "lock" | "book" | "medal" | "bandage" | "hardhat" | "forklift" | "wine" | "pencil" | "badge" | "lifebuoy" | "building" | "microscope" | "scissors" | "shield" | "sparkles" | "paw" | "calculator" | "car" | "bus";
   testCount: number;
   questionsPerTest: number;
@@ -185,6 +185,11 @@ const TEST_SET_NAMES: Record<Language, (n: number) => string> = {
   nl: (n) => `Oefenset ${n}`,
   pt: (n) => `Conjunto de treino ${n}`,
 };
+
+/** "Training Set 2" in the reader's language (the DMV's set names too). */
+export function trainingSetName(lang: Language, n: number): string {
+  return (TEST_SET_NAMES[lang] ?? TEST_SET_NAMES.en)(n);
+}
 
 const cdl: ExamConfig = {
   id: "cdl",

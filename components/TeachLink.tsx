@@ -1,13 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
-import { GraduationCap } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 import { teachFetch } from "@/lib/teachClient";
 
-// Graduation cap link to /teach (the teacher's class list), shown in every
-// site header to a signed-in account that owns at least one class.
+// Whether a signed-in account owns at least one class, for the "Your classes"
+// item in the header's account menu (SiteHeader).
 //
 // Whether the account teaches is cached per uid in localStorage so the header
 // asks /api/classes once per device, not on every page. A "no" is re-checked
@@ -49,7 +47,8 @@ export function markTeacher(uid: string, teaches: boolean) {
   window.dispatchEvent(new Event(EVENT));
 }
 
-export function TeachLink() {
+/** Whether the signed-in account owns a class (the account menu's "Your classes"). */
+export function useTeaches(): boolean {
   const { user } = useAuth();
   const [teaches, setTeaches] = useState(false);
 
@@ -71,15 +70,5 @@ export function TeachLink() {
     return () => window.removeEventListener(EVENT, sync);
   }, [user]);
 
-  if (!teaches) return null;
-  return (
-    <Link
-      href="/teach"
-      className="flex h-9 w-9 items-center justify-center rounded-full text-gray-600 transition-colors hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-gray-50"
-      title="Your classes"
-      aria-label="Your classes"
-    >
-      <GraduationCap className="h-5 w-5" />
-    </Link>
-  );
+  return teaches;
 }

@@ -6,7 +6,8 @@ import { QuestionCard } from "@/components/QuestionCard";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Link from "next/link";
-import { TestPageHeader } from "@/components/TestPageHeader";
+import { FocusBar } from "@/components/FocusBar";
+import { examUi } from "@/lib/examUi";
 import { generateTest, shuffleQuestionOptions } from "@/lib/testGenerator";
 import { Question } from "@/types";
 import { useStore } from "@/store/useStore";
@@ -228,8 +229,12 @@ export default function TestPage() {
 
   return (
     <div className="flex-1 bg-gray-50 dark:bg-gray-950">
-      <TestPageHeader
-        backHref="/dmv/dashboard"
+      <FocusBar
+        exitHref="/dmv/dashboard"
+        title={examUi(language).examTestN("DMV", testId)}
+        subtitle={`${t("questionCard.questionOf")} ${currentQuestionIndex + 1} ${t("questionCard.of")} ${questions.length}`}
+        progress={Object.keys(answers).length / questions.length}
+        confirmExit
         right={
           isPremium ? (
             <Link

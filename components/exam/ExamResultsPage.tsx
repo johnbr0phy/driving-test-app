@@ -7,7 +7,6 @@
 import { useExamTestParam } from "@/hooks/useExamTestParam";
 import { useTestResults } from "@/hooks/useTestResults";
 import { useUpgradeFlow } from "@/hooks/useUpgradeFlow";
-import { TestPageHeader } from "@/components/TestPageHeader";
 import { ResultsHeroDebrief } from "@/components/results/ResultsHeroDebrief";
 import { ResultsDebriefBody } from "@/components/results/ResultsDebriefBody";
 import { ExamConfig } from "@/lib/exams";
@@ -34,16 +33,10 @@ export function ExamResultsPage({ exam }: { exam: ExamConfig }) {
 
   return (
     <div className="flex-1 bg-gray-50 dark:bg-gray-950">
-      <TestPageHeader
-        backHref={routes.dashboard}
-        sticky
-        right={
-          <span className="text-sm text-gray-500 dark:text-gray-400">
+      <p className="px-4 pt-4 text-center text-sm text-gray-500 dark:text-gray-400">
             {stateName} · {ui.testN(displayTestNumber(testId)).replace("🎯 ", "")} ·{" "}
             {attemptNumber === 1 ? t("results.firstAttempt") : `${t("results.attempt")} ${attemptNumber}`}
-          </span>
-        }
-      />
+          </p>
       <ResultsHeroDebrief results={results} onDrill={scrollToDrill} onNextLocked={() => {}} categoryLabels={localized.categoryLabels} />
       <ResultsDebriefBody results={results} upgrade={upgrade} />
     </div>

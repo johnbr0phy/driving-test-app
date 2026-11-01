@@ -1,0 +1,4662 @@
+{
+  "stimuli": [
+    {
+      "id": "APUSH-T1-S01",
+      "title": "A Spanish missionary's report to the Crown, 1540s (practice text)",
+      "text": "In the islands and on the mainland, the Spaniards who hold Indians in encomienda work them in the mines and the fields from dawn until night. They give them little food and no rest, and whole villages have died out. These people are Your Majesty's vassals and have souls to be saved. I beg that they be freed from such masters and taught the faith by gentle means, as the Church intends."
+    },
+    {
+      "id": "APUSH-T1-S02",
+      "title": "A Virginia planter's letter to a London merchant, 1690s (practice text)",
+      "text": "Fewer servants come from England every year, and those who come expect land of their own when their terms end, though the best land near the rivers is already taken. Since the troubles in Bacon's time, many gentlemen here think it safer and cheaper in the end to buy Africans, who serve for life, as do their children. I have bought six this year and mean to plant more tobacco."
+    },
+    {
+      "id": "APUSH-T2-S01",
+      "title": "A historian's interpretation (practice text)",
+      "text": "The exchange of plants, animals and germs between the hemispheres after 1492 reshaped both. Maize and potatoes from the Americas fed Europe's growing population, and horses brought by the Spanish transformed life on the Great Plains. Yet the heaviest consequence fell on the Americas, where smallpox, measles and other diseases killed a large majority of native people within a century of contact."
+    },
+    {
+      "id": "APUSH-T2-S02",
+      "title": "A French missionary's account of New France, early 1700s (practice text)",
+      "text": "The French in Canada are few, and they live among the native nations as traders and allies. Our young men travel to the villages for furs, marry there and learn the languages, and the chiefs call the governor their father. The English, by contrast, come in great numbers, cut down the forests and fence the land for farms, so that the nations near them have no place left to hunt."
+    },
+    {
+      "id": "APUSH-D-S01",
+      "title": "A Spanish officer's report from New Mexico, 1680 (practice text)",
+      "text": "In August of this year the Pueblo Indians of every town rose together on the same day. They burned the churches, killed many of the friars and settlers, and drove the rest of us south to El Paso. Their leaders say they will no longer give up their old ceremonies or labor for the Spaniards, and they have returned to the ways of their ancestors."
+    },
+    {
+      "id": "APUSH-D-S02",
+      "title": "A Massachusetts minister's sermon, 1640s (practice text)",
+      "text": "We have entered into a covenant with God to build a commonwealth where His laws are honored. If we keep it, He will bless us; if we break it, all the world will see our shame. Let every family read the Scriptures, let every town keep a school, and let no man live idle or disturb the peace of the church with new opinions."
+    },
+    {
+      "id": "APUSH-D-S03",
+      "title": "A historian's interpretation (practice text)",
+      "text": "Before 1492, North America held hundreds of societies, each shaped by its environment. In the arid Southwest, peoples dug irrigation ditches to grow maize and built towns of stone and adobe. In the Northeast, villages mixed farming with hunting and fishing. On the Northwest coast, abundant salmon and forests supported large permanent villages with little farming at all."
+    },
+    {
+      "id": "APUSH-T1-S03",
+      "title": "A New York lawyer's pamphlet, 1765 (practice text)",
+      "text": "The Parliament of Great Britain has laid a tax upon our newspapers, our deeds and our licenses. We do not deny the King's authority, nor the right of Parliament to regulate the trade of the empire. But we do deny that a body in which we have no voice may take our property without our consent. The rights of Englishmen were not left behind when our fathers crossed the ocean."
+    },
+    {
+      "id": "APUSH-T1-S04",
+      "title": "A farmer's letter on the proposed Constitution, 1787 (practice text)",
+      "text": "This new government will reach into every county with its tax collectors and its courts. Where is the bill of rights to guard the press, the jury and the conscience? A single government over so wide a country, with a few representatives for many thousands of people, must end in the rule of the rich and well born. Let the states keep the power that is close to the people."
+    },
+    {
+      "id": "APUSH-T2-S03",
+      "title": "A Republican newspaper editorial, 1798 (practice text)",
+      "text": "Congress has made it a crime to write anything false or scandalous against the President or the Congress, and the President may now expel any alien he judges dangerous. A printer who criticizes the government may be fined and jailed. Is this the liberty for which we fought eight years? The states must declare these laws void before every free press is silenced."
+    },
+    {
+      "id": "APUSH-T2-S04",
+      "title": "A historian's interpretation (practice text)",
+      "text": "The Revolution's language of liberty reached beyond the men who wrote it. Some women argued that the new republic needed educated mothers to raise virtuous citizens, and northern states began to end slavery, most of them gradually. Yet slavery grew in the South, and women gained no vote anywhere except, for a time, in New Jersey."
+    },
+    {
+      "id": "APUSH-D-S04",
+      "title": "A Pennsylvania settler's complaint, 1764 (practice text)",
+      "text": "The King's proclamation forbids us to settle west of the mountains, on the very lands our militia fought the French and their Indian allies to win. The officers in London would keep the western nations quiet at our expense, and they send soldiers to guard the line who do nothing to protect our farms."
+    },
+    {
+      "id": "APUSH-D-S05",
+      "title": "A Massachusetts creditor's letter, 1787 (practice text)",
+      "text": "Armed farmers in the western counties have closed the courts to stop the collection of debts and taxes. Our state has raised men to put them down, but Congress has no money and no army to help. Unless the union is given more strength, every state will fall into such disorder, and our credit abroad will be lost."
+    },
+    {
+      "id": "APUSH-D-S06",
+      "title": "An American merchant's letter, 1793 (practice text)",
+      "text": "Now that France and Britain are at war again, some of our countrymen call on us to aid our old ally France. But our ships carry goods to both nations, and our young country has no navy to protect them. War would ruin our trade and perhaps the union itself. Let us be friends to all and allies to none."
+    },
+    {
+      "id": "APUSH-T1-S05",
+      "title": "Enslaved population of the United States, census years (rounded)",
+      "text": "| Census year | Enslaved people |\n|---|---|\n| 1800 | 0.9 million |\n| 1820 | 1.5 million |\n| 1840 | 2.5 million |\n\nNote: Congress banned the importation of enslaved people into the United States from 1808."
+    },
+    {
+      "id": "APUSH-T1-S06",
+      "title": "A letter from a young woman in a Massachusetts textile mill, 1845 (practice text)",
+      "text": "We are up before five and at the looms until seven in the evening, with half an hour for each meal. The wages let me send money home to help my brother at the academy, and I have savings of my own besides. But the company has cut our pay and given each girl a fourth loom to tend, and some of us talk of signing a petition to the legislature for a ten-hour day."
+    },
+    {
+      "id": "APUSH-T2-S05",
+      "title": "A petition from Cherokee leaders to Congress, 1830s (practice text)",
+      "text": "We have adopted a written constitution, built schools, mills and farms, and printed a newspaper in our own language. The land on which we live is ours by treaties made with the United States. We ask only that those treaties be honored, and that we not be driven from the graves of our fathers to a strange country west of the Mississippi."
+    },
+    {
+      "id": "APUSH-T2-S06",
+      "title": "An address by a reform society, 1830s (practice text)",
+      "text": "Every person may turn from sin and choose a better life. If that is so, then society too may be made new. Let us close the grog shops that ruin families, build common schools for every child, and care for the insane in hospitals instead of chaining them in jails. The work is God's, but the hands must be ours."
+    },
+    {
+      "id": "APUSH-D-S07",
+      "title": "A newspaper commentary on the President's message, 1823 (practice text)",
+      "text": "The President has told the powers of Europe that the American continents are no longer open to new colonies, and that any attempt to restore the old empires over the new republics of the south will be seen as unfriendly to the United States. In return, he promises that we will stay out of the quarrels of Europe."
+    },
+    {
+      "id": "APUSH-D-S08",
+      "title": "A Democratic newspaper editorial, 1832 (practice text)",
+      "text": "The President's veto strikes down a monster bank that serves the rich men of Philadelphia and foreign stockholders, a bank that no Congress should have chartered. The farmer and the mechanic have found a champion who will not let the money power rule the republic."
+    },
+    {
+      "id": "APUSH-D-S09",
+      "title": "A New York editorial, 1845 (practice text)",
+      "text": "Providence has given this continent to our growing people, and no foreign power has the right to block our spread from ocean to ocean. Texas has joined the Union; Oregon must follow, and the lands beyond will one day be ours as well. This is not conquest but the natural growth of a free nation."
+    },
+    {
+      "id": "APUSH-T1-S07",
+      "title": "Two historians on the coming of the Civil War (practice texts)",
+      "text": "**Historian A:** The war came because of slavery. Every crisis of the 1850s, from Kansas to the Dred Scott case, turned on whether slavery would spread into the West, and the states that seceded said plainly that they left the Union to protect it.\n\n**Historian B:** The sectional crisis was also a failure of politics. After the Kansas-Nebraska Act, the Whig Party broke apart, and the new parties that rose in its place drew their votes from one section only. With no national party left but a divided Democracy, there was little room for the bargains that had settled earlier crises."
+    },
+    {
+      "id": "APUSH-T1-S08",
+      "title": "A Freedmen's Bureau agent's report from South Carolina, 1866 (practice text)",
+      "text": "The freedpeople are eager for schools; old and young crowd into every room we open. Many wish to rent or buy land of their own, but the planters will not sell to them. The new state laws bind laborers to contracts for the whole year and punish any Black man found without work as a vagrant, so that many are forced back to the plantations on the old terms."
+    },
+    {
+      "id": "APUSH-T2-S07",
+      "title": "An abolitionist newspaper, 1850 (practice text)",
+      "text": "Congress has passed a law that makes every northern citizen a slave catcher. A person claimed as a fugitive may not speak in his own defense, and the commissioner who hears the case is paid more for sending a person south than for setting him free. No free Black person in Boston or Philadelphia is safe."
+    },
+    {
+      "id": "APUSH-T2-S08",
+      "title": "A Union official's report, 1863 (practice text)",
+      "text": "The war has been a school of national power. Congress has issued a national paper currency, chartered national banks, granted public lands to settlers who will farm them and to a company that will build a railroad to the Pacific, and raised the tariff to protect northern industry. None of this could have passed before the war."
+    },
+    {
+      "id": "APUSH-D-S10",
+      "title": "A Union soldier's letter home, 1863 (practice text)",
+      "text": "When I enlisted I fought only to save the Union. But I have seen the plantations now, and the slaves who come into our lines bring us news of the rebels and dig our earthworks. The President's proclamation makes this a war for freedom, and I believe it will weaken the rebels more than any battle."
+    },
+    {
+      "id": "APUSH-D-S11",
+      "title": "A congressman's speech, 1846 (practice text)",
+      "text": "If we win new land from Mexico, let it be free soil, open to the free white laborer and closed forever to slavery. I do not ask to touch slavery where it is. I ask only that the territory won by the blood of the whole nation not be given to the slaveholder."
+    },
+    {
+      "id": "APUSH-D-S12",
+      "title": "A northern newspaper, 1857 (practice text)",
+      "text": "The Court has ruled that Black Americans, free or enslaved, cannot be citizens, and that Congress has no power to bar slavery from any territory. If this is law, then the Missouri line was void all along, and no territory can be kept free. What is left of free soil?"
+    },
+    {
+      "id": "APUSH-T1-S09",
+      "title": "An industrialist's essay, 1889 (practice text)",
+      "text": "The concentration of business in the hands of a few is the law of progress. It has given us cheaper goods than any age before has known, and competition, hard as it is on some, ensures the survival of the fittest in every line of work. The man of wealth should regard himself as a trustee for the community and use his surplus during his own life to build libraries, parks and schools, rather than leave it to his heirs."
+    },
+    {
+      "id": "APUSH-T1-S10",
+      "title": "A Kansas farmers' newspaper, 1891 (practice text)",
+      "text": "The railroads charge what they please to carry our grain, the banks hold our mortgages, and money grows scarcer every year while our crops fetch less. Both old parties serve the same masters. We demand that the government own the railroads, coin silver freely, and let the people elect their senators."
+    },
+    {
+      "id": "APUSH-T2-S09",
+      "title": "European immigrants to the United States by region of origin (approximate, rounded shares)",
+      "text": "| Region of origin | 1880s | 1900s |\n|---|---|---|\n| Northern and western Europe (such as Britain, Ireland, Germany, Scandinavia) | about 80% | about 25% |\n| Southern and eastern Europe (such as Italy, Austria-Hungary, the Russian Empire) | about 20% | about 75% |"
+    },
+    {
+      "id": "APUSH-T2-S10",
+      "title": "A reformer's report on reservation policy, 1880s (practice text)",
+      "text": "The tribal system holds the Indian back. As long as land is held in common, no man has reason to improve it. If each family is given its own plot to farm, and the children are sent to boarding schools to learn English and a trade, the Indian will in one generation become a citizen like any other."
+    },
+    {
+      "id": "APUSH-D-S13",
+      "title": "A railroad car builder's statement during a strike, 1894 (practice text)",
+      "text": "The company cut our wages again this spring, but it did not lower the rents on the houses it owns in its town, where we must live. We walked out, and the railway union refused to handle the company's cars. Now the government has sent troops, and a federal court has ordered the union to stop the strike."
+    },
+    {
+      "id": "APUSH-D-S14",
+      "title": "A Black newspaper editor, 1896 (practice text)",
+      "text": "The Court now says that a state may require separate railroad cars for Black and white passengers so long as they are equal. Everyone knows they will never be equal. The law has given its blessing to the color line, and every state that wishes to draw it will do so."
+    },
+    {
+      "id": "APUSH-D-S15",
+      "title": "A Georgia newspaper editor's speech, 1886 (practice text)",
+      "text": "The old South rested on slavery and cotton alone. The new South will build mills beside its rivers and railroads across its fields, welcome northern capital, and teach its sons the trades of industry. We have buried the past and turned our faces to the future."
+    },
+    {
+      "id": "APUSH-T1-S11",
+      "title": "A magazine article by a journalist, 1906 (practice text)",
+      "text": "In the packing houses, meat that had fallen on the floor among the sawdust was shoveled back into the hoppers, and spoiled hams were treated with chemicals and sold as fresh. The workers who handle the meat have no place to wash their hands. The public buys these products in good faith, trusting a label that no one checks."
+    },
+    {
+      "id": "APUSH-T1-S12",
+      "title": "A speech by a member of the Anti-Imperialist League, 1899 (practice text)",
+      "text": "We went to war with Spain to free Cuba. Now we pay Spain for the Philippines and make war on the Filipinos, who want only a government of their own. A republic cannot rule subjects without their consent and remain a republic. If we hold these islands by force, we abandon the principles on which our own nation was founded."
+    },
+    {
+      "id": "APUSH-T2-S11",
+      "title": "Two historians on the New Deal (practice texts)",
+      "text": "**Historian A:** The New Deal saved American capitalism by reforming it. Deposit insurance ended the bank runs, new rules policed the stock market, and Social Security gave ordinary people a stake in the system, all without ending private ownership of business.\n\n**Historian B:** The New Deal did less than it promised. Full recovery came only with spending for the Second World War, and programs such as Social Security at first left out farmworkers and domestic workers, groups that included a large share of Black workers."
+    },
+    {
+      "id": "APUSH-T2-S12",
+      "title": "A letter from a Black migrant in Chicago to a friend in Mississippi, 1917 (practice text)",
+      "text": "I got work at the stockyards for more pay than I ever saw at home, and my children go to a school that is open all year. I voted in the city election last month, and nobody stood in my way. There is prejudice here too, and the rents are high, but a man can breathe. Tell your brother there are jobs for him if he will come."
+    },
+    {
+      "id": "APUSH-D-S16",
+      "title": "A socialist pamphlet, 1917 (practice text)",
+      "text": "Do not submit to the draft. This war is fought for the profits of bankers and munition makers, and the working man of America has no quarrel with the working man of Germany. Stand up for your rights.\n\nNote: The pamphlet's author was convicted under a new federal law passed after the United States entered the war."
+    },
+    {
+      "id": "APUSH-D-S17",
+      "title": "A Tennessee newspaper, 1925 (practice text)",
+      "text": "The trial in Dayton pits the old faith against the new science. A young teacher stands accused of teaching that man descended from lower forms of life, against the law of this state. Reporters have come from across the country, and the whole nation is listening on the radio."
+    },
+    {
+      "id": "APUSH-D-S18",
+      "title": "A woman working in an aircraft plant, 1943 (practice text)",
+      "text": "Two years ago I was a waitress earning tips. Now I rivet wings for bombers and earn more than my father did. My husband is in the Pacific, and my mother keeps the children. The foreman says we will go back home when the men return, but I am not so sure I want to."
+    },
+    {
+      "id": "APUSH-T1-S13",
+      "title": "A State Department official's memo, 1947 (practice text)",
+      "text": "The Soviet Union will press outward wherever it finds weakness, but it will retreat before firm strength. Our answer must be steady, long-term containment: aid to free peoples resisting outside pressure, the rebuilding of Europe's economies, and military strength enough to make aggression unprofitable."
+    },
+    {
+      "id": "APUSH-T1-S14",
+      "title": "A college student's statement, North Carolina, 1960 (practice text)",
+      "text": "We sat down at the lunch counter and asked to be served like any other customer. When they would not serve us, we stayed until closing, and the next day more of us came. We did not strike back when we were cursed or when food was poured on us. We mean to show the nation the wrong of segregation by our conduct."
+    },
+    {
+      "id": "APUSH-T1-S15",
+      "title": "A campaign speech by a conservative candidate, 1980 (practice text)",
+      "text": "Washington has grown too big, too costly and too sure of itself. It taxes too much, spends too much and regulates too much. We will cut tax rates so working people keep more of what they earn, lift needless rules from business, and rebuild a defense that our adversaries will respect."
+    },
+    {
+      "id": "APUSH-T2-S13",
+      "title": "A student newspaper editorial, 1968 (practice text)",
+      "text": "For two years the government told us the enemy was nearly beaten. Then came the attacks at the new year, in the cities that were supposed to be safe. We are told to fight a war that Congress has never declared, and our friends are drafted to fight it while the sons of the well connected find a way out."
+    },
+    {
+      "id": "APUSH-T2-S14",
+      "title": "A magazine article, 1955 (practice text)",
+      "text": "Where potato fields stood eight years ago, thousands of nearly identical houses now line curving streets. Young veterans buy them with little money down through federally backed loans, then drive the new highways to jobs in the city. Every family seems to have a television, a car and children under ten."
+    },
+    {
+      "id": "APUSH-T2-S15",
+      "title": "An economist's essay, 1999 (practice text)",
+      "text": "Trade barriers are falling around the world, and a factory in Ohio now competes with one in Mexico or China. Capital moves across borders in seconds. Personal computers and the internet are changing how Americans work, shop and learn, and the jobs that are growing demand more education than the ones that are disappearing."
+    },
+    {
+      "id": "APUSH-D-S19",
+      "title": "A speech by a federal official, 1965 (practice text)",
+      "text": "This year Congress has given us medical care for the elderly through Social Security and federal aid to the poorest schools, and last year it began job training for young people who have never held a job. We aim not merely to relieve poverty but to prevent it, and to build a society where no one is left out."
+    },
+    {
+      "id": "APUSH-D-S20",
+      "title": "A letter to a women's magazine, 1963 (practice text)",
+      "text": "I have a husband, three children and a new house with every appliance. I went to college. And still, as I make the beds and drive to the market, I ask myself whether this is the whole of my life. I suspect I am not the only woman in this neighborhood asking."
+    },
+    {
+      "id": "APUSH-D-S21",
+      "title": "A newspaper column, 2002 (practice text)",
+      "text": "After the attacks of last September, Congress gave investigators new powers to monitor communications and search records, and few members read the bill before voting. Security matters, but so does liberty. Every generation that has faced a war has had to decide how much freedom it will trade for safety."
+    }
+  ],
+  "questions": [
+    {
+      "id": "APUSH-T1-001",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP12",
+      "skill": "Contextualization",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S01",
+      "stem": "The conditions described in the report were most directly a result of",
+      "options": [
+        "English settlement along the Chesapeake Bay",
+        "competition between Spain and France over the fur trade",
+        "Spanish efforts to profit from forced native labor",
+        "the spread of the Protestant Reformation into Spain"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The encomienda system gave Spanish colonists the right to demand labor and tribute from native people, and it was used to work mines and plantations for profit. French fur trading and English settlement came later and elsewhere."
+    },
+    {
+      "id": "APUSH-T1-002",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP12",
+      "skill": "Sourcing and situation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S01",
+      "stem": "The missionary's argument most directly reflects",
+      "options": [
+        "the view that land should be bought from native nations by treaty",
+        "debates in Spain over the moral treatment of native peoples",
+        "a Spanish policy of avoiding contact with native societies",
+        "support for replacing Catholic missions with trading posts"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Some Spanish clergy argued that native people were subjects of the Crown with souls to save and should not be brutalized, which fed a long debate in Spain over colonial labor. Spain sought contact and conversion, not separation."
+    },
+    {
+      "id": "APUSH-T1-003",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP12",
+      "skill": "Causation",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S01",
+      "stem": "Which development was most directly a response to the decline in native population described in the report?",
+      "options": [
+        "The end of the casta system in New Spain",
+        "Growing imports of enslaved Africans to Spanish colonies",
+        "The rise of indentured servitude among New England fishing families",
+        "The founding of Jamestown as an English colony"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "As disease and overwork killed native workers, Spanish colonists turned increasingly to enslaved Africans for labor in the Caribbean and elsewhere. The casta system of racial ranks lasted through the colonial era."
+    },
+    {
+      "id": "APUSH-T1-004",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP12",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S02",
+      "stem": "Which development most directly explains the shift in labor described in the letter?",
+      "options": [
+        "The end of the Atlantic slave trade",
+        "The Great Awakening's challenge to the authority of the Anglican church",
+        "Parliament's passage of the Navigation Acts",
+        "Bacon's Rebellion and fewer English servants"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "After Bacon's Rebellion in 1676, in which poor freedmen joined an uprising, and as fewer English servants arrived, Chesapeake planters relied more on enslaved Africans. The Navigation Acts regulated trade, not labor."
+    },
+    {
+      "id": "APUSH-T1-005",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP12",
+      "skill": "Developments and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S02",
+      "stem": "The letter best illustrates which trend in the Chesapeake colonies in the late 1600s?",
+      "options": [
+        "Slavery becoming hereditary and based on race",
+        "The decline of tobacco as the region's main export",
+        "The spread of religious toleration laws to all colonies",
+        "The growth of an economy built on small farms and fishing"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The planter notes that Africans serve for life and so do their children: colonial laws in this era made slavery hereditary and tied it to race. Small farms and fishing describe New England."
+    },
+    {
+      "id": "APUSH-T1-006",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP12",
+      "skill": "Comparison",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S02",
+      "stem": "Compared with the Chesapeake colonies, the New England colonies of the same era generally",
+      "options": [
+        "depended more on enslaved labor in plantation agriculture",
+        "relied more on family farms, trade and free labor",
+        "grew more tobacco for export to England",
+        "had fewer towns, schools and churches"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "New England's colder climate and rocky soil favored family farms, fishing, shipbuilding and trade, and its towns were organized around churches and schools. Tobacco and plantation slavery defined the Chesapeake."
+    },
+    {
+      "id": "APUSH-T1-007",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP12",
+      "skill": "Sourcing and situation",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S02",
+      "stem": "A historian would find the letter most useful as evidence of",
+      "options": [
+        "living conditions in West African societies",
+        "planters' reasons for their labor choices",
+        "the views of enslaved Africans about plantation work",
+        "official British policy toward the colonies"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The letter shows a planter's reasons for buying enslaved Africans, including the memory of Bacon's Rebellion. It cannot show what enslaved people themselves thought, since it is written by an enslaver."
+    },
+    {
+      "id": "APUSH-T1-008",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP3",
+      "skill": "Contextualization",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S03",
+      "stem": "The tax described in the pamphlet was part of",
+      "options": [
+        "British efforts to pay debts from the Seven Years' War",
+        "Parliament's response to the Declaration of Independence",
+        "Congress's plan to fund the Louisiana Purchase",
+        "British plans after the defeat at Saratoga"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The Stamp Act of 1765 taxed printed papers to help pay for the war with France and the troops kept in North America afterward. The other events came later."
+    },
+    {
+      "id": "APUSH-T1-009",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP3",
+      "skill": "Claims and evidence",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S03",
+      "stem": "The author's main argument rests on the principle that",
+      "options": [
+        "taxes require the people's consent",
+        "the King has no authority in America",
+        "colonists should pay more taxes than Britons",
+        "the colonies should declare independence at once"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The author accepts the King's authority and Parliament's power over trade but denies that Parliament, where colonists have no voice, may tax them. That is the principle of no taxation without representation."
+    },
+    {
+      "id": "APUSH-T1-010",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP3",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S03",
+      "stem": "Which colonial response most directly followed arguments like the author's?",
+      "options": [
+        "Shays' Rebellion in Massachusetts",
+        "Boycotts and the Stamp Act Congress",
+        "The Albany Plan of Union",
+        "The signing of the Treaty of Paris of 1763"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Colonists organized nonimportation agreements, and delegates from nine colonies met in the Stamp Act Congress to protest; Parliament repealed the act in 1766. The Albany Plan and the 1763 treaty came before."
+    },
+    {
+      "id": "APUSH-T1-011",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP3",
+      "skill": "Continuity and change",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S03",
+      "stem": "Arguments like the author's were later developed most fully in",
+      "options": [
+        "Washington's Farewell Address of 1796",
+        "the Northwest Ordinance",
+        "the Proclamation of 1763",
+        "the Declaration of Independence"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "By 1776 colonial leaders moved from defending the rights of Englishmen to denying Parliament's authority entirely, and the Declaration listed taxation without consent among its grievances."
+    },
+    {
+      "id": "APUSH-T1-012",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP3",
+      "skill": "Causation",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S04",
+      "stem": "Concerns like the farmer's most directly led to",
+      "options": [
+        "the Great Compromise on representation",
+        "the outbreak of the Whiskey Rebellion",
+        "the XYZ Affair with France",
+        "the Bill of Rights in 1791"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Anti-Federalists demanded protections for the press, juries and conscience, and Federalists promised amendments to win ratification. The first ten amendments were ratified in 1791."
+    },
+    {
+      "id": "APUSH-T1-013",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP3",
+      "skill": "Sourcing and situation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S04",
+      "stem": "The farmer would most likely have supported",
+      "options": [
+        "keeping most power in the state governments",
+        "a national executive with a longer term",
+        "abolishing the state governments",
+        "giving Congress power to tax imports and land directly"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The letter warns that a distant national government will rule for the rich and asks that the states keep their power. That was the Anti-Federalist position."
+    },
+    {
+      "id": "APUSH-T1-014",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP3",
+      "skill": "Comparison",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S04",
+      "stem": "Which group was most likely to share the farmer's views?",
+      "options": [
+        "Creditors who wanted protection for contracts",
+        "Small farmers in rural areas wary of distant power",
+        "Supporters of a strong national army",
+        "Merchants in port cities who wanted one trade policy"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Rural farmers far from the coast tended to oppose the Constitution, fearing taxes and courts run by distant elites. Merchants and creditors were mostly Federalists."
+    },
+    {
+      "id": "APUSH-T1-015",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP4",
+      "skill": "Causation",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S05",
+      "stem": "Which development most directly explains the growth shown in the table?",
+      "options": [
+        "The growth of tobacco farming in New England",
+        "The reopening of the Atlantic slave trade to American ports after 1808",
+        "The spread of slavery into the Northwest Territory",
+        "The spread of cotton growing in the Deep South"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The cotton gin made short-staple cotton profitable, and cotton plantations spread across Georgia, Alabama, Mississippi and Louisiana, driving demand for enslaved labor. The slave trade stayed closed after 1808."
+    },
+    {
+      "id": "APUSH-T1-016",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP4",
+      "skill": "Claims and evidence",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S05",
+      "stem": "Given the note under the table, the growth after 1808 came mainly from",
+      "options": [
+        "the arrival of free African immigrants",
+        "legal imports of enslaved people from the Caribbean",
+        "the enslavement of European immigrants",
+        "natural increase among people already enslaved"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "With imports banned, the enslaved population grew mostly through births: enslaved people were born into slavery under hereditary laws. Some smuggling continued, but it was small by comparison."
+    },
+    {
+      "id": "APUSH-T1-017",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP4",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S05",
+      "stem": "The trend shown in the table most directly contributed to",
+      "options": [
+        "the decline of southern power in the House",
+        "a sharp fall in cotton exports to the textile mills of Britain",
+        "a large domestic slave trade",
+        "the end of slavery in Virginia by 1840"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "As cotton spread west, enslavers in Virginia and Maryland sold hundreds of thousands of people south and west, breaking up families. Cotton exports to Britain rose, not fell."
+    },
+    {
+      "id": "APUSH-T1-018",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP4",
+      "skill": "Contextualization",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S05",
+      "stem": "Which political conflict of the period was most directly tied to the trend in the table?",
+      "options": [
+        "Jackson's war on the Second Bank",
+        "The crisis over admitting Missouri",
+        "The Hartford Convention of 1814",
+        "The Embargo Act of 1807"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Missouri's request to enter as a slave state raised the question of slavery's spread west and was settled by the Missouri Compromise. The bank, embargo and Hartford Convention turned on other issues."
+    },
+    {
+      "id": "APUSH-T1-019",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP4",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S06",
+      "stem": "The letter best reflects",
+      "options": [
+        "early factory work in the market revolution",
+        "the decline of manufacturing in New England",
+        "the rise of sharecropping in the South",
+        "the spread of craft guilds that controlled wages in American towns"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Textile mills in Lowell and other New England towns hired young women from farm families, an early step in industrialization. Sharecropping came after the Civil War."
+    },
+    {
+      "id": "APUSH-T1-020",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP4",
+      "skill": "Continuity and change",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S06",
+      "stem": "The petition for a ten-hour day is an example of",
+      "options": [
+        "Populist demands for the free coinage of silver",
+        "the program of the American Federation of Labor",
+        "the temperance movement's goals",
+        "early organizing by industrial workers"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Lowell workers organized, struck over pay cuts and petitioned the legislature for shorter hours in the 1830s and 1840s. The AFL and the Populists came decades later."
+    },
+    {
+      "id": "APUSH-T1-021",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP4",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S06",
+      "stem": "Which development most directly made mills like this one possible?",
+      "options": [
+        "The closing of the western frontier",
+        "Water power and new canals and railroads",
+        "The Homestead Act's grants of free land to factory workers",
+        "The repeal of the protective tariff"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Mills used river water power, and canals and early railroads carried raw cotton in and cloth out. The tariff in this period protected, rather than harmed, American textiles."
+    },
+    {
+      "id": "APUSH-T1-022",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP4",
+      "skill": "Continuity and change",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S06",
+      "stem": "In the late 1840s and 1850s, mill owners increasingly replaced workers like the letter writer with",
+      "options": [
+        "children brought from the Northwest Territory",
+        "Irish immigrants paid lower wages",
+        "Chinese immigrants from California",
+        "enslaved workers hired out by southern planters"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "As famine drove Irish immigration in the late 1840s, mill owners hired Irish families at lower pay, and the share of New England farm women in the mills fell."
+    },
+    {
+      "id": "APUSH-T1-023",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP5",
+      "skill": "Claims and evidence",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S07",
+      "stem": "Which evidence would Historian A most likely use?",
+      "options": [
+        "Secession declarations naming slavery",
+        "The Compromise of 1877",
+        "The Panic of 1873",
+        "The collapse of the Whig Party in the 1850s"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Historian A argues that slavery caused the war and that seceding states said so; several states' declarations of causes named slavery directly. The Whig collapse fits Historian B."
+    },
+    {
+      "id": "APUSH-T1-024",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP5",
+      "skill": "Claims and evidence",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S07",
+      "stem": "Which development best supports Historian B's argument?",
+      "options": [
+        "A Republican Party with only northern support",
+        "The Gadsden Purchase",
+        "The Emancipation Proclamation of 1863 and its effect in Britain",
+        "Eli Whitney's cotton gin"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Historian B stresses parties that drew votes from one section. The Republican Party, formed in 1854, won almost no southern votes, and Lincoln won in 1860 without a single southern electoral vote."
+    },
+    {
+      "id": "APUSH-T1-025",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP5",
+      "skill": "Comparison",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S07",
+      "stem": "Both historians would most likely agree that",
+      "options": [
+        "the Compromise of 1850 ended the sectional crisis",
+        "conflict over the West deepened sectional division",
+        "slavery played little part in the politics of the 1850s",
+        "economic differences alone caused the war"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A points to Kansas and the territories; B starts the party collapse with the Kansas-Nebraska Act. Both see the question of the West as central to the breakdown."
+    },
+    {
+      "id": "APUSH-T1-026",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP5",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S07",
+      "stem": "The Kansas-Nebraska Act of 1854 raised tension because it",
+      "options": [
+        "admitted California as a free state",
+        "required northern citizens to help return people who escaped slavery",
+        "banned slavery in every western territory",
+        "let settlers decide on slavery north of the 1820 line"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The act applied popular sovereignty to Kansas and Nebraska, effectively repealing the 1820 line, and pro- and antislavery settlers fought over Kansas. The fugitive slave law was part of 1850."
+    },
+    {
+      "id": "APUSH-T1-027",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP5",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S08",
+      "stem": "The \"new state laws\" in the report are best described as",
+      "options": [
+        "the Reconstruction Amendments",
+        "Jim Crow laws upheld in Plessy v. Ferguson",
+        "the Homestead Act",
+        "Black Codes"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "In 1865 and 1866 southern legislatures passed Black Codes that limited freedpeople's rights and forced them into labor contracts. Jim Crow segregation laws spread later in the century."
+    },
+    {
+      "id": "APUSH-T1-028",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP5",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S08",
+      "stem": "Congress responded to laws like these by",
+      "options": [
+        "approving the Compromise of 1877",
+        "closing the Freedmen's Bureau at once and ending federal aid to freedpeople",
+        "repealing the Thirteenth Amendment",
+        "passing the Fourteenth Amendment and the Reconstruction Acts"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Republicans in Congress passed the Civil Rights Act of 1866, sent the Fourteenth Amendment to the states and, in the Reconstruction Acts of 1867, divided the South into military districts."
+    },
+    {
+      "id": "APUSH-T1-029",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP5",
+      "skill": "Continuity and change",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S08",
+      "stem": "Because few freedpeople could obtain land, many came to work under",
+      "options": [
+        "sharecropping",
+        "the putting-out system",
+        "the encomienda system",
+        "indentured servitude"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Sharecroppers farmed a planter's land for a share of the crop, a system that often trapped families in debt. Indentured servitude was a colonial labor system."
+    },
+    {
+      "id": "APUSH-T1-030",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP5",
+      "skill": "Continuity and change",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S08",
+      "stem": "Reconstruction came to an end in 1877 most directly when",
+      "options": [
+        "the Fifteenth Amendment was ratified",
+        "federal troops left the South after a disputed election",
+        "the Freedmen's Bureau was created",
+        "the House impeached Andrew Johnson for violating the Tenure of Office Act"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "In the Compromise of 1877, Democrats accepted Rutherford B. Hayes as president and the last federal troops were withdrawn from the South, leaving the remaining Republican state governments to fall."
+    },
+    {
+      "id": "APUSH-T1-031",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP6",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S09",
+      "stem": "The essay's view of the duty of the rich is known as",
+      "options": [
+        "the Populist platform",
+        "the Social Gospel",
+        "the Square Deal",
+        "the Gospel of Wealth"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Andrew Carnegie's idea that the wealthy should give away their fortunes for the public good during their lives was called the Gospel of Wealth. The Social Gospel called on churches to reform society."
+    },
+    {
+      "id": "APUSH-T1-032",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP6",
+      "skill": "Contextualization",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S09",
+      "stem": "The phrase \"survival of the fittest\" shows that the essay drew on",
+      "options": [
+        "the ideal of republican motherhood",
+        "Social Darwinism",
+        "transcendentalist ideas about nature",
+        "Puritan ideas of a covenant community"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Social Darwinists applied ideas of natural selection to society, arguing that competition rewarded the most able and that the poor were less fit."
+    },
+    {
+      "id": "APUSH-T1-033",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP6",
+      "skill": "Comparison",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S09",
+      "stem": "Critics of the essay's view of business would most likely have argued that",
+      "options": [
+        "philanthropy should replace all government services",
+        "tariffs on imported goods were too low",
+        "big business harmed workers and small firms",
+        "factories should move from the North to the South"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Labor leaders, farmers and reformers argued that trusts used their power to cut wages, fix prices and drive out smaller firms."
+    },
+    {
+      "id": "APUSH-T1-034",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP6",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S09",
+      "stem": "Which federal law responded most directly to the concentration of business the essay defends?",
+      "options": [
+        "The Homestead Act of 1862",
+        "The Sherman Antitrust Act of 1890",
+        "The Pendleton Act of 1883",
+        "The Chinese Exclusion Act of 1882"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The Sherman Act outlawed combinations in restraint of trade, though courts at first enforced it weakly and even used it against unions."
+    },
+    {
+      "id": "APUSH-T1-035",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP6",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S10",
+      "stem": "The demands in the newspaper are most closely associated with",
+      "options": [
+        "the Whig Party",
+        "the Know-Nothing Party",
+        "the People's Party",
+        "the Federalist Party"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The People's Party, formed by farmers' alliances, called in its 1892 Omaha Platform for government ownership of railroads, free silver and direct election of senators."
+    },
+    {
+      "id": "APUSH-T1-036",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP6",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S10",
+      "stem": "The demand to \"coin silver freely\" was meant to",
+      "options": [
+        "raise prices and ease farmers' debts",
+        "lower the tariff on imported goods",
+        "replace all paper money with gold",
+        "shrink the money supply to fight inflation"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Farmers suffered from falling prices; more money in circulation would raise crop prices and make debts easier to repay."
+    },
+    {
+      "id": "APUSH-T1-037",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP6",
+      "skill": "Continuity and change",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S10",
+      "stem": "Which later reform achieved one of the newspaper's demands?",
+      "options": [
+        "The Twenty-first Amendment's repeal of Prohibition",
+        "The Eighteenth Amendment's ban on alcohol",
+        "The Seventeenth Amendment's direct election of senators",
+        "The Nineteenth Amendment's guarantee of women's suffrage"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Progressives took up several Populist demands, and the Seventeenth Amendment of 1913 provided for the popular election of senators, who had been chosen by state legislatures."
+    },
+    {
+      "id": "APUSH-T1-038",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP7",
+      "skill": "Causation",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S11",
+      "stem": "Articles like this one led most directly to",
+      "options": [
+        "two food safety laws in 1906",
+        "the Sherman Antitrust Act",
+        "the Federal Reserve Act",
+        "the Interstate Commerce Act"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Exposes of the meatpacking industry, above all Upton Sinclair's The Jungle, pushed Congress to pass both food safety laws in 1906. The Sherman and Interstate Commerce Acts came earlier."
+    },
+    {
+      "id": "APUSH-T1-039",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP7",
+      "skill": "Sourcing and situation",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S11",
+      "stem": "Journalists who wrote articles like this one were known as",
+      "options": [
+        "scalawags",
+        "Copperheads",
+        "muckrakers",
+        "Mugwumps"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Theodore Roosevelt gave investigative journalists the name muckrakers. Mugwumps were reform Republicans of the 1880s; Copperheads were antiwar Democrats in the Civil War."
+    },
+    {
+      "id": "APUSH-T1-040",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP7",
+      "skill": "Contextualization",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S11",
+      "stem": "The article reflects the Progressive belief that",
+      "options": [
+        "only private charity should help consumers",
+        "the market would correct itself without regulation",
+        "government should protect consumers from business",
+        "states alone should set food safety rules"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Progressives argued that in an industrial economy, consumers and workers needed expert government regulation to protect them."
+    },
+    {
+      "id": "APUSH-T1-041",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP7",
+      "skill": "Continuity and change",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S11",
+      "stem": "Which reform of the same era also aimed to make government more responsive to the public?",
+      "options": [
+        "The spoils system in federal hiring",
+        "The initiative, referendum and recall",
+        "Poll taxes adopted across the South around 1900",
+        "Allotment of reservation land"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Progressives gave voters ways to propose laws, vote on them directly and remove officials. Southern poll taxes did the opposite, keeping Black and poor white citizens from voting."
+    },
+    {
+      "id": "APUSH-T1-042",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP7",
+      "skill": "Contextualization",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S12",
+      "stem": "The speech was a response to",
+      "options": [
+        "the annexation of the Philippines",
+        "the building of the Panama Canal",
+        "the purchase of Alaska",
+        "the war with Mexico"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "In the 1898 Treaty of Paris, Spain ceded the Philippines to the United States for a payment, and the Senate approved it in 1899 over the objections of anti-imperialists."
+    },
+    {
+      "id": "APUSH-T1-043",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP7",
+      "skill": "Comparison",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S12",
+      "stem": "Supporters of annexation argued that",
+      "options": [
+        "annexation would violate the Monroe Doctrine",
+        "the Philippines should be granted independence at once",
+        "the United States should leave the Pacific to Britain",
+        "the islands offered markets and naval bases"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Expansionists pointed to trade with China, coaling stations for the navy and a supposed duty to uplift Filipinos, an idea tied to the racial thinking of the time."
+    },
+    {
+      "id": "APUSH-T1-044",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP7",
+      "skill": "Claims and evidence",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S12",
+      "stem": "The speaker's argument relies most on",
+      "options": [
+        "the Open Door notes on China",
+        "Social Darwinist ideas of racial competition",
+        "the Declaration's principle of consent",
+        "the Roosevelt Corollary to the Monroe Doctrine"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Anti-imperialists argued that ruling Filipinos without their consent contradicted the founding idea that governments derive their powers from the consent of the governed."
+    },
+    {
+      "id": "APUSH-T1-045",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP7",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S12",
+      "stem": "Which development followed the annexation the speaker opposed?",
+      "options": [
+        "Immediate independence for the Philippines in 1899 under American protection",
+        "A war against Filipino independence fighters",
+        "Japanese control of the islands by 1900",
+        "Spain's recovery of the islands"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Filipinos who had fought Spain resisted American rule in the Philippine-American War, which lasted from 1899 into the early 1900s. Independence came in 1946."
+    },
+    {
+      "id": "APUSH-T1-046",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP89",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S13",
+      "stem": "The policy described in the memo was first applied in",
+      "options": [
+        "the Truman Doctrine",
+        "the Good Neighbor policy toward Latin America",
+        "the Monroe Doctrine",
+        "the Neutrality Acts"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "In 1947 Truman asked Congress for aid to Greece and Turkey, pledging to support free peoples resisting outside pressure, the first statement of containment as policy."
+    },
+    {
+      "id": "APUSH-T1-047",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP89",
+      "skill": "Continuity and change",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S13",
+      "stem": "Which event of 1948 and 1949 tested the policy in the memo in Germany?",
+      "options": [
+        "The Bay of Pigs invasion",
+        "The Berlin Airlift",
+        "The Cuban Missile Crisis",
+        "The U-2 incident over the Soviet Union"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "When the Soviets blockaded West Berlin in 1948, the United States and Britain supplied the city by air for almost a year until the blockade was lifted. The other crises came in 1960 to 1962."
+    },
+    {
+      "id": "APUSH-T1-048",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP89",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S13",
+      "stem": "Which alliance grew out of the policy in the memo?",
+      "options": [
+        "The Triple Entente",
+        "The League of Nations",
+        "The Warsaw Pact",
+        "NATO"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "In 1949 the United States joined NATO, its first peacetime military alliance, pledging to defend western Europe. The Warsaw Pact was the Soviet bloc's answer."
+    },
+    {
+      "id": "APUSH-T1-049",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP89",
+      "skill": "Continuity and change",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S13",
+      "stem": "The policy in the memo later led most directly to",
+      "options": [
+        "the Spanish-American War",
+        "the end of the Cold War in 1950",
+        "an American withdrawal from Europe",
+        "American wars in Korea and Vietnam"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Containment was extended to Asia, where the United States fought to stop communist advances in Korea from 1950 and in Vietnam in the 1960s and 1970s."
+    },
+    {
+      "id": "APUSH-T1-050",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP89",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S14",
+      "stem": "The students in the statement used",
+      "options": [
+        "armed self-defense against attackers",
+        "a lawsuit in federal court",
+        "nonviolent direct action",
+        "a call for Black separatism"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The 1960 sit-ins, which began at a Woolworth's counter in Greensboro, North Carolina, used peaceful, disciplined protest to expose segregation."
+    },
+    {
+      "id": "APUSH-T1-051",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP89",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S14",
+      "stem": "Which organization grew directly out of protests like the one described?",
+      "options": [
+        "The Student Nonviolent Coordinating Committee",
+        "The National Association for the Advancement of Colored People",
+        "The American Indian Movement",
+        "The Black Panther Party"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Student sit-in leaders founded SNCC in 1960 with the help of Ella Baker. The NAACP dated from 1909, and the Black Panthers from 1966."
+    },
+    {
+      "id": "APUSH-T1-052",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP89",
+      "skill": "Continuity and change",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S14",
+      "stem": "When the Supreme Court upheld the 1964 federal ban on segregation in places such as restaurants and motels, it relied on Congress's power to",
+      "options": [
+        "declare war and raise armies",
+        "enforce the Fifteenth Amendment",
+        "admit new states to the Union",
+        "regulate interstate commerce"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "In Heart of Atlanta Motel v. United States (1964) the Court held that segregated hotels and restaurants burdened interstate travel and trade, so Congress could ban it under the commerce clause. The Fifteenth Amendment concerns voting."
+    },
+    {
+      "id": "APUSH-T1-053",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP89",
+      "skill": "Contextualization",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S15",
+      "stem": "The speech reflects",
+      "options": [
+        "the Populist movement",
+        "the Progressive movement",
+        "the New Deal coalition",
+        "the rise of the new right"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A movement of tax cutters, anticommunists and religious conservatives grew from the 1960s and won the presidency in 1980, calling for smaller government."
+    },
+    {
+      "id": "APUSH-T1-054",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP89",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S15",
+      "stem": "Which policy followed most directly from ideas like those in the speech?",
+      "options": [
+        "Federal ownership of the railroads and airlines",
+        "The creation of Medicare",
+        "Large cuts in income tax rates",
+        "Deep cuts in defense spending"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "In 1981 Congress cut income tax rates sharply, while defense spending rose. Medicare was a Great Society program of 1965."
+    },
+    {
+      "id": "APUSH-T1-055",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apushP89",
+      "skill": "Contextualization",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T1-S15",
+      "stem": "Which context helped the speech's message win support?",
+      "options": [
+        "Inflation and distrust of government",
+        "The start of the Great Depression",
+        "The economic boom of the late 1990s",
+        "The fall of the Berlin Wall"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Stagflation, the energy crisis, Watergate and the Iran hostage crisis left many Americans distrustful of government and receptive to conservative arguments."
+    },
+    {
+      "id": "APUSH-T2-001",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP12",
+      "skill": "Claims and evidence",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S01",
+      "stem": "Which piece of evidence would best support the historian's claim about the Great Plains?",
+      "options": [
+        "The Plains became the center of English settlement",
+        "Plains peoples gave up hunting to grow sugar cane for export",
+        "Many Plains peoples hunted bison on horseback",
+        "Spanish missions replaced most Plains villages by 1550"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Horses spread north from Spanish colonies, and many Plains nations, such as the Comanche and Lakota, built mounted bison-hunting economies around them. Sugar cane was a Caribbean plantation crop."
+    },
+    {
+      "id": "APUSH-T2-002",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP12",
+      "skill": "Causation",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S01",
+      "stem": "The main reason disease spread so devastatingly in the Americas after 1492 was that",
+      "options": [
+        "Europeans deliberately avoided contact with native towns and trade routes",
+        "native societies had no agriculture to feed the sick",
+        "native peoples had no immunity to Eurasian diseases",
+        "Spanish law required native people to live in cities"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Smallpox, measles and influenza had circulated in Eurasia for centuries but were new to the Americas, so native populations had no acquired immunity. Many native societies farmed extensively."
+    },
+    {
+      "id": "APUSH-T2-003",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP12",
+      "skill": "Developments and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S01",
+      "stem": "Which effect of the exchange on Europe is most consistent with the excerpt?",
+      "options": [
+        "New American crops helped support population growth",
+        "European rulers lost interest in overseas colonies",
+        "Europe adopted the horse from the Americas",
+        "European diets became far less varied as American crops replaced wheat"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The historian notes that maize and potatoes from the Americas fed Europe's growing population. The horse moved the other way, from Europe to the Americas."
+    },
+    {
+      "id": "APUSH-T2-004",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP12",
+      "skill": "Comparison",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S02",
+      "stem": "The differences the missionary describes are best explained by",
+      "options": [
+        "French fur trading and English farming",
+        "the absence of Catholic missionaries in New France",
+        "English laws forbidding colonists to clear forest land",
+        "the French goal of building large tobacco plantations"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "New France had few settlers and depended on the fur trade, which required native partners, while English colonies drew many settlers who wanted land to farm. Catholic missionaries were active in New France."
+    },
+    {
+      "id": "APUSH-T2-005",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP12",
+      "skill": "Sourcing and situation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S02",
+      "stem": "Which group would most likely have shared the missionary's view of the English colonists?",
+      "options": [
+        "Native nations losing land to English farms",
+        "Investors in the Virginia Company of London",
+        "Members of the Virginia House of Burgesses seeking western land grants",
+        "Puritan leaders in Massachusetts Bay"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Native nations near the English colonies saw forests cleared and land fenced, which ended hunting there. Puritan leaders, burgesses and investors all supported English expansion."
+    },
+    {
+      "id": "APUSH-T2-006",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP12",
+      "skill": "Causation",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S02",
+      "stem": "The relationships described in the excerpt most directly contributed to",
+      "options": [
+        "the end of the fur trade in North America",
+        "French alliances with native nations against Britain",
+        "the rapid growth of French cities on the Atlantic coast",
+        "a decline of Spanish missions in Florida and New Mexico"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Trade, marriage and diplomacy tied many native nations to the French, and they fought alongside France in the imperial wars, including the French and Indian War. The fur trade continued long afterward."
+    },
+    {
+      "id": "APUSH-T2-007",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP12",
+      "skill": "Sourcing and situation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S02",
+      "stem": "The missionary's purpose in contrasting the French and the English was most likely to",
+      "options": [
+        "show French officials the value of native allies",
+        "describe Spanish methods of converting native peoples in the missions of Florida",
+        "argue that France should give up North America",
+        "recruit English farmers to settle in Canada"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "By stressing how the French live among native nations as allies while the English drive them away, the writer argues that France's approach strengthens its position. Nothing suggests he wants France to leave."
+    },
+    {
+      "id": "APUSH-T2-008",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP3",
+      "skill": "Contextualization",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S03",
+      "stem": "The laws the editorial attacks were passed during",
+      "options": [
+        "the ratification of the Articles of Confederation",
+        "the debate over the Missouri Compromise",
+        "the War of 1812 with Britain",
+        "party conflict during the Quasi-War with France"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "In 1798, during an undeclared naval war with France, the Federalist Congress passed the Alien and Sedition Acts, which Republicans saw as aimed at them and their supporters."
+    },
+    {
+      "id": "APUSH-T2-009",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP3",
+      "skill": "Causation",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S03",
+      "stem": "Which response came from opponents of these laws?",
+      "options": [
+        "The Judiciary Act of 1789",
+        "The Hartford Convention of New England Federalists",
+        "The Virginia and Kentucky Resolutions",
+        "Jay's Treaty with Britain"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Jefferson and Madison wrote resolutions for Kentucky and Virginia arguing that states could judge the acts unconstitutional. The Hartford Convention was a Federalist meeting during the War of 1812."
+    },
+    {
+      "id": "APUSH-T2-010",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP3",
+      "skill": "Developments and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S03",
+      "stem": "The editorial is evidence of which development of the 1790s?",
+      "options": [
+        "The end of the first party system",
+        "The rise of opposing political parties",
+        "A decline in the political role of newspapers",
+        "Agreement among national leaders on foreign policy toward France"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Federalists and Democratic-Republicans divided over the national bank, France and Britain, and the limits of federal power, and partisan newspapers carried the fight."
+    },
+    {
+      "id": "APUSH-T2-011",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP3",
+      "skill": "Comparison",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S03",
+      "stem": "In the 1790s, Democratic-Republicans like the editor generally favored",
+      "options": [
+        "closer commercial ties with Britain through Jay's Treaty",
+        "strict construction and sympathy for France",
+        "a high protective tariff to build manufacturing",
+        "a national bank and a strong central government"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Jefferson's followers read federal powers narrowly and sympathized with revolutionary France. The national bank, ties with Britain and support for manufacturing were Federalist positions."
+    },
+    {
+      "id": "APUSH-T2-012",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP3",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S04",
+      "stem": "The idea that the republic needed educated mothers to raise virtuous citizens is usually called",
+      "options": [
+        "the Half-Way Covenant",
+        "the cult of domesticity",
+        "the Second Great Awakening",
+        "republican motherhood"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Republican motherhood gave women a political role inside the home: raising sons for citizenship. The cult of domesticity is a later, nineteenth-century ideal of separate spheres."
+    },
+    {
+      "id": "APUSH-T2-013",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP3",
+      "skill": "Claims and evidence",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S04",
+      "stem": "Which piece of evidence best supports the historian's claim about northern states?",
+      "options": [
+        "The Fugitive Slave Act of 1850",
+        "Pennsylvania's gradual abolition law of 1780",
+        "Eli Whitney's invention of the cotton gin in Georgia in 1793",
+        "The three-fifths clause of the Constitution"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Pennsylvania passed the first gradual abolition law in 1780, and other northern states followed. The three-fifths clause and the cotton gin strengthened slavery."
+    },
+    {
+      "id": "APUSH-T2-014",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP3",
+      "skill": "Claims and evidence",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S04",
+      "stem": "The historian's argument is best described as claiming that the Revolution",
+      "options": [
+        "had no effect on ideas about rights",
+        "had limited and uneven effects",
+        "brought full political equality to women in every state",
+        "ended slavery throughout the new nation"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The excerpt credits the Revolution with new ideas about women and the start of northern emancipation, but stresses that slavery grew in the South and women did not gain the vote."
+    },
+    {
+      "id": "APUSH-T2-015",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP4",
+      "skill": "Contextualization",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S05",
+      "stem": "The petition was written in response to",
+      "options": [
+        "the Indian Removal Act and Georgia's claims",
+        "the Northwest Ordinance",
+        "the Proclamation of 1763",
+        "the Dawes Act's division of reservation land into family plots"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "In 1830 Congress passed the Indian Removal Act, and Georgia, eager for Cherokee land where gold had been found, extended its laws over the Cherokee Nation. The Dawes Act came in 1887."
+    },
+    {
+      "id": "APUSH-T2-016",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP4",
+      "skill": "Sourcing and situation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S05",
+      "stem": "The Cherokee leaders' strategy in the petition emphasized",
+      "options": [
+        "a request to become citizens of Georgia under its state laws",
+        "a voluntary move to Indian Territory",
+        "armed resistance in alliance with Britain",
+        "treaty rights and new institutions"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The petition points to a written constitution, schools and a newspaper and to treaties with the United States: it argues through law and through institutions white Americans would recognize."
+    },
+    {
+      "id": "APUSH-T2-017",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP4",
+      "skill": "Developments and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S05",
+      "stem": "Which Supreme Court decision supported the Cherokee position?",
+      "options": [
+        "Marbury v. Madison",
+        "McCulloch v. Maryland",
+        "Dred Scott v. Sandford",
+        "Worcester v. Georgia"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "In Worcester v. Georgia (1832) the Court held that Georgia's laws had no force in the Cherokee Nation. McCulloch concerned the national bank; Marbury established judicial review."
+    },
+    {
+      "id": "APUSH-T2-018",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP4",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S05",
+      "stem": "Despite the petition and the Court's ruling, the result was",
+      "options": [
+        "the return of Cherokee land taken by Georgia",
+        "a new treaty guaranteeing Cherokee land in Georgia",
+        "Cherokee citizenship in the state of Georgia",
+        "removal on the Trail of Tears"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The Jackson administration did not enforce the ruling, and after a treaty signed by a minority faction the army forced most Cherokee west in 1838 and 1839. Thousands died on the way."
+    },
+    {
+      "id": "APUSH-T2-019",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP4",
+      "skill": "Contextualization",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S06",
+      "stem": "The address reflects which religious idea of the period?",
+      "options": [
+        "The Gospel of Wealth preached by industrialists",
+        "Social Darwinism",
+        "Puritan belief in predestination",
+        "The Second Great Awakening"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Revivalists of the Second Great Awakening taught that individuals could choose to be saved and could perfect themselves and society, which inspired many reform movements. Puritans believed God had already chosen the saved."
+    },
+    {
+      "id": "APUSH-T2-020",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP4",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S06",
+      "stem": "The call to care for the insane in hospitals is most closely linked to the work of",
+      "options": [
+        "Frederick Douglass",
+        "Dorothea Dix",
+        "Horace Mann",
+        "Jane Addams"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Dorothea Dix documented the treatment of mentally ill people in jails and almshouses and persuaded states to build asylums. Horace Mann led the common school movement."
+    },
+    {
+      "id": "APUSH-T2-021",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP4",
+      "skill": "Sourcing and situation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S06",
+      "stem": "Which group was most active in reform societies like the one in the excerpt?",
+      "options": [
+        "Southern planters and their families in the cotton states",
+        "Recent Irish Catholic immigrants",
+        "Middle-class women and men in the North",
+        "Western fur traders"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Reform societies drew heavily on northern middle-class Protestants, and women led and filled many of them. Many Irish Catholic immigrants resented temperance campaigns."
+    },
+    {
+      "id": "APUSH-T2-022",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP4",
+      "skill": "Continuity and change",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S06",
+      "stem": "Many people active in reform societies of the 1830s also took part in",
+      "options": [
+        "the Populist Party's campaign for free silver in the 1890s",
+        "abolitionism and women's rights",
+        "the Progressive Party of 1912",
+        "the Federalist Party"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The same networks of reformers, many of them women, worked against slavery and for women's rights; the 1848 Seneca Falls Convention grew partly out of abolitionist work."
+    },
+    {
+      "id": "APUSH-T2-023",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP5",
+      "skill": "Contextualization",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S07",
+      "stem": "The law described in the newspaper was part of",
+      "options": [
+        "the Compromise of 1850",
+        "the Crittenden Compromise",
+        "the Kansas-Nebraska Act",
+        "the Missouri Compromise"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The Compromise of 1850 admitted California as a free state and, to satisfy the South, included a much stronger fugitive slave law. The Crittenden plan of 1860 and 1861 was never adopted."
+    },
+    {
+      "id": "APUSH-T2-024",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP5",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S07",
+      "stem": "Many northerners responded to the law with",
+      "options": [
+        "calls for the North to secede in 1850",
+        "an end to the Underground Railroad",
+        "new state constitutions that allowed slavery",
+        "personal liberty laws and antislavery votes"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Northern states passed personal liberty laws to hinder enforcement, crowds sometimes rescued captured fugitives, and many voters who had ignored slavery turned against the South."
+    },
+    {
+      "id": "APUSH-T2-025",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP5",
+      "skill": "Comparison",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S07",
+      "stem": "Which work published soon after had a purpose most similar to the newspaper's?",
+      "options": [
+        "Harriet Beecher Stowe's Uncle Tom's Cabin",
+        "Alexis de Tocqueville's Democracy in America",
+        "Thomas Paine's Common Sense",
+        "Upton Sinclair's The Jungle"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Stowe wrote her 1852 novel partly in protest against the Fugitive Slave Act, and it turned many northern readers against slavery. Common Sense argued for independence in 1776."
+    },
+    {
+      "id": "APUSH-T2-026",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP5",
+      "skill": "Sourcing and situation",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S07",
+      "stem": "Defenders of the law in the South argued that it",
+      "options": [
+        "would end slavery in the western territories won from Mexico",
+        "protected the rights of free Black northerners",
+        "enforced a duty set out in the Constitution",
+        "gave free states the right to decide on slavery"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The Constitution's fugitive slave clause required that people escaping service be delivered up, and southerners demanded that northern states honor it. They saw resistance to the law as a breach of the bargain of 1850."
+    },
+    {
+      "id": "APUSH-T2-027",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP5",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S08",
+      "stem": "The measures in the report could pass largely because",
+      "options": [
+        "Britain lent the Union the money to pay for them",
+        "southern members had left Congress",
+        "the Confederacy agreed to them in a peace treaty",
+        "the Supreme Court ordered Congress to pass them"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Southern Democrats had blocked a homestead law, a northern railroad route and higher tariffs before the war. With them gone, Republicans passed their program."
+    },
+    {
+      "id": "APUSH-T2-028",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP5",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S08",
+      "stem": "The public lands \"to settlers who will farm them\" refers to",
+      "options": [
+        "the Dawes Act of 1887",
+        "the Homestead Act of 1862",
+        "the Northwest Ordinance of 1787",
+        "the Indian Removal Act of 1830"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The Homestead Act offered 160 acres of public land to settlers who lived on and farmed it for five years. The Pacific Railway Act granted land to the railroad."
+    },
+    {
+      "id": "APUSH-T2-029",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP5",
+      "skill": "Claims and evidence",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S08",
+      "stem": "The report's claims best support the argument that the Civil War",
+      "options": [
+        "returned most powers to the states",
+        "ended federal involvement in the economy",
+        "permanently weakened the national economy",
+        "expanded federal power"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A national currency, national banks, land grants and a protective tariff all showed Washington taking on economic powers it had not used before the war."
+    },
+    {
+      "id": "APUSH-T2-030",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP5",
+      "skill": "Continuity and change",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S08",
+      "stem": "Which other wartime measure also expanded federal authority over citizens?",
+      "options": [
+        "The repeal of the protective tariff",
+        "The first federal military draft",
+        "The Hartford Convention",
+        "Jackson's Specie Circular"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The Enrollment Act of 1863 created the first national draft, which sparked riots in New York City. The Hartford Convention and the Specie Circular date from earlier decades."
+    },
+    {
+      "id": "APUSH-T2-031",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP6",
+      "skill": "Claims and evidence",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S09",
+      "stem": "Which statement best describes the change shown in the table?",
+      "options": [
+        "Immigration from Europe stopped after the 1880s",
+        "In the 1900s most immigrants came from Britain and Germany",
+        "Southern and eastern Europeans were most immigrants in both decades",
+        "Southern and eastern Europe became the main source"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The share from southern and eastern Europe rose from about a fifth to about three quarters. The table gives shares, not totals, so it says nothing about immigration stopping."
+    },
+    {
+      "id": "APUSH-T2-032",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP6",
+      "skill": "Causation",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S09",
+      "stem": "Which factor most directly drew the immigrants shown in the table to the United States?",
+      "options": [
+        "Recruitment into the Union army",
+        "Free reservation land under the Dawes Act",
+        "Jobs in expanding industries and cities",
+        "The California gold rush"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Most of these immigrants settled in industrial cities and worked in mills, mines, factories and construction. The gold rush and the Civil War came earlier."
+    },
+    {
+      "id": "APUSH-T2-033",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP6",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S09",
+      "stem": "The change shown in the table contributed most directly to",
+      "options": [
+        "the repeal of all federal immigration laws",
+        "a decline in the population of American cities",
+        "the end of Catholic and Jewish immigration",
+        "nativist demands to restrict immigration"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Many native-born Americans saw the new immigrants, often Catholic or Jewish and poor, as a threat, and pressed for literacy tests and later the quota laws of the 1920s."
+    },
+    {
+      "id": "APUSH-T2-034",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP6",
+      "skill": "Continuity and change",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S09",
+      "stem": "Settlement houses such as Hull House responded to immigration by",
+      "options": [
+        "offering classes and services in immigrant neighborhoods",
+        "settling immigrant families on western homesteads",
+        "lobbying Congress to end immigration from Europe",
+        "recruiting immigrants as strikebreakers"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Settlement house workers, many of them college-educated women such as Jane Addams, lived in immigrant neighborhoods and ran kindergartens, English classes and health clinics."
+    },
+    {
+      "id": "APUSH-T2-035",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP6",
+      "skill": "Causation",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S10",
+      "stem": "The reformer's proposals were carried out most directly in",
+      "options": [
+        "the Dawes Act of 1887",
+        "the Indian Removal Act of 1830",
+        "the Indian Reorganization Act of 1934",
+        "the Fort Laramie Treaty of 1868"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The Dawes Act divided reservation land into individual allotments and offered citizenship to those who took them. The 1934 act reversed allotment."
+    },
+    {
+      "id": "APUSH-T2-036",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP6",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S10",
+      "stem": "A major result of the policy the reformer proposed was",
+      "options": [
+        "a sharp rise in Native landholding",
+        "the restoration of tribal governments",
+        "the closing of all Indian boarding schools",
+        "a large loss of Native land"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Land left after allotment was declared surplus and sold, and many allotments were later lost, so Native landholding fell by about two thirds by 1934."
+    },
+    {
+      "id": "APUSH-T2-037",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP6",
+      "skill": "Sourcing and situation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S10",
+      "stem": "The reformer's goal is best described as",
+      "options": [
+        "keeping Native nations apart from settlers",
+        "removing Native nations west of the Mississippi",
+        "assimilation into white American culture",
+        "strengthening tribal self-government"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Individual farms, English and boarding schools were all meant to replace Native cultures with white American ways. Removal west had been the policy of the 1830s."
+    },
+    {
+      "id": "APUSH-T2-038",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP7",
+      "skill": "Claims and evidence",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S11",
+      "stem": "Which evidence best supports Historian A?",
+      "options": [
+        "Unemployment that stayed high until the early 1940s",
+        "The creation of federal insurance for bank deposits",
+        "The Supreme Court striking down the NIRA",
+        "The migration of families from the Dust Bowl"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The FDIC, created in 1933, insured deposits and ended the waves of bank runs, a reform that kept banks private. Persistent unemployment would support Historian B."
+    },
+    {
+      "id": "APUSH-T2-039",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP7",
+      "skill": "Claims and evidence",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S11",
+      "stem": "Which evidence best supports Historian B?",
+      "options": [
+        "The Tennessee Valley Authority's power plants",
+        "The end of the banking panic in 1933",
+        "Unemployment fell sharply only with war spending",
+        "The Securities and Exchange Commission's new rules for stock trading"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Unemployment was still high in the late 1930s and dropped quickly only after defense spending surged around 1940 and 1941."
+    },
+    {
+      "id": "APUSH-T2-040",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP7",
+      "skill": "Comparison",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S11",
+      "stem": "Both historians would most likely agree that the New Deal",
+      "options": [
+        "expanded the federal role in the economy",
+        "abolished private ownership of banks",
+        "ended the Great Depression by 1935",
+        "had little effect on the banking system or on the stock market"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A credits federal programs with saving capitalism; B says they fell short. Both describe a federal government doing far more than before."
+    },
+    {
+      "id": "APUSH-T2-041",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP7",
+      "skill": "Sourcing and situation",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S11",
+      "stem": "Critics on the left, such as Senator Huey Long, argued that the New Deal",
+      "options": [
+        "should be struck down by the courts",
+        "gave too little attention to business",
+        "did not redistribute enough wealth",
+        "spent far too much on relief"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Long's Share Our Wealth plan called for heavy taxes on great fortunes to give every family a basic income. Conservatives attacked spending and federal power."
+    },
+    {
+      "id": "APUSH-T2-042",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP7",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S12",
+      "stem": "The letter is evidence of",
+      "options": [
+        "a return of Black northerners to the South",
+        "the Exodusters' move to Kansas in the 1870s",
+        "the Dust Bowl migration to California",
+        "the Great Migration"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "From about 1915, hundreds of thousands of Black southerners moved to cities such as Chicago, Detroit and New York, and millions more followed over the next decades."
+    },
+    {
+      "id": "APUSH-T2-043",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP7",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S12",
+      "stem": "The movement described in the letter was encouraged most by",
+      "options": [
+        "wartime labor shortages in the North",
+        "the end of segregation in the South",
+        "federal homestead grants in the North",
+        "new limits on Black voting in northern cities such as Chicago"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "World War I cut off European immigration and raised demand for workers, so northern industries recruited Black southerners, who also sought to escape Jim Crow and violence."
+    },
+    {
+      "id": "APUSH-T2-044",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP7",
+      "skill": "Claims and evidence",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S12",
+      "stem": "Which event is the best evidence that there was \"prejudice here too\"?",
+      "options": [
+        "The Harlem Renaissance",
+        "The Brown v. Board of Education decision",
+        "The Montgomery bus boycott",
+        "The Chicago race riot of 1919"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "In the summer of 1919, white mobs attacked Black neighborhoods in Chicago and other cities as competition for jobs and housing grew. Montgomery and Brown came in the 1950s."
+    },
+    {
+      "id": "APUSH-T2-045",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP7",
+      "skill": "Continuity and change",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S12",
+      "stem": "A cultural result of the movement described in the letter was",
+      "options": [
+        "the Hudson River School",
+        "transcendentalism",
+        "the Harlem Renaissance",
+        "the Beat movement"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Black writers, artists and musicians gathered in Harlem in the 1920s, and figures such as Langston Hughes and Zora Neale Hurston celebrated Black life and culture."
+    },
+    {
+      "id": "APUSH-T2-046",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP89",
+      "skill": "Contextualization",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S13",
+      "stem": "The \"attacks at the new year\" in the editorial refers to",
+      "options": [
+        "the Bay of Pigs invasion",
+        "the Tet Offensive",
+        "the Berlin Airlift",
+        "the attack on Pearl Harbor"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "In early 1968, during the Vietnamese new year, North Vietnamese and Viet Cong forces attacked cities across South Vietnam. Though they were driven back, the offensive shook American confidence."
+    },
+    {
+      "id": "APUSH-T2-047",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP89",
+      "skill": "Claims and evidence",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S13",
+      "stem": "The claim that the war was never declared reflects that",
+      "options": [
+        "the United Nations declared war on North Vietnam",
+        "Congress authorized force without a declaration",
+        "Congress declared war on North Vietnam in 1964",
+        "no American troops were in Vietnam before 1968"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "In 1964 Congress gave President Johnson broad power to use force in Southeast Asia, but it never formally declared war."
+    },
+    {
+      "id": "APUSH-T2-048",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP89",
+      "skill": "Continuity and change",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S13",
+      "stem": "Congress later tried to limit the president's power to wage undeclared wars with",
+      "options": [
+        "the Neutrality Acts of the 1930s",
+        "the National Security Act of 1947",
+        "the War Powers Resolution of 1973",
+        "the Twenty-second Amendment"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The War Powers Resolution requires the president to notify Congress when sending troops into combat and limits how long they can stay without approval."
+    },
+    {
+      "id": "APUSH-T2-049",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP89",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S13",
+      "stem": "President Nixon responded to opposition like the editorial's mainly with",
+      "options": [
+        "the containment policy of the Truman Doctrine",
+        "Vietnamization of the ground war",
+        "an immediate withdrawal of all troops in 1969",
+        "a large increase in the number of American troops"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Nixon withdrew American troops gradually while training and arming South Vietnam's army, though he also widened the bombing. The last combat troops left in 1973."
+    },
+    {
+      "id": "APUSH-T2-050",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP89",
+      "skill": "Causation",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S14",
+      "stem": "The \"federally backed loans\" in the article came most directly from",
+      "options": [
+        "the Dawes Act",
+        "the Works Progress Administration of the 1930s",
+        "the Homestead Act",
+        "the GI Bill and federal mortgage insurance"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The GI Bill of 1944 gave veterans low-cost home loans, and federal mortgage insurance let buyers put little money down, fueling the suburban boom."
+    },
+    {
+      "id": "APUSH-T2-051",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP89",
+      "skill": "Sourcing and situation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S14",
+      "stem": "Which group was largely shut out of suburbs like the one described?",
+      "options": [
+        "Black families",
+        "Factory workers with steady jobs",
+        "Veterans of World War II",
+        "Young married couples"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Developers often refused to sell to Black buyers, and federal lending rules and redlining denied loans in Black neighborhoods, so many suburbs were almost entirely white."
+    },
+    {
+      "id": "APUSH-T2-052",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP89",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S14",
+      "stem": "The suburban growth described in the article contributed most directly to",
+      "options": [
+        "the growth of streetcar lines in new suburbs",
+        "a sharp drop in car ownership",
+        "a loss of people and tax revenue in many central cities",
+        "a fall in the birth rate during the 1950s"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "As mostly white, middle-class families moved out, many older cities lost residents, businesses and tax money, while the baby boom kept the birth rate high and cars replaced streetcars."
+    },
+    {
+      "id": "APUSH-T2-053",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP89",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S15",
+      "stem": "The falling trade barriers the economist mentions include agreements such as",
+      "options": [
+        "the Marshall Plan",
+        "NAFTA",
+        "the Embargo Act",
+        "the Smoot-Hawley Tariff"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "NAFTA, in effect from 1994, removed most tariffs among the United States, Canada and Mexico. Smoot-Hawley raised tariffs in 1930."
+    },
+    {
+      "id": "APUSH-T2-054",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP89",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S15",
+      "stem": "Which development is most consistent with the trends the economist describes?",
+      "options": [
+        "Growth of manufacturing's share of American jobs",
+        "Factory job losses in the Midwest",
+        "A decline in computer use at work",
+        "An end to immigration from Mexico"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "As firms moved production abroad and automated, industrial towns in the Midwest and Northeast lost factory jobs, while service and technology jobs grew."
+    },
+    {
+      "id": "APUSH-T2-055",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apushP89",
+      "skill": "Contextualization",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-T2-S15",
+      "stem": "The trends described in the essay took place in the context of",
+      "options": [
+        "the First World War",
+        "the Great Depression",
+        "the end of the Cold War",
+        "the rise of the Populist movement"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The collapse of the Soviet Union in 1991 opened new markets, and trade and investment across borders grew rapidly through the 1990s."
+    },
+    {
+      "id": "APUSH-D-001",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP12",
+      "skill": "Causation",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-D-S01",
+      "stem": "The uprising described in the report was most directly caused by",
+      "options": [
+        "English colonists seizing Pueblo farmland",
+        "French traders selling guns to the Pueblos",
+        "Spanish suppression of Pueblo religion",
+        "a smallpox epidemic carried by Dutch sailors"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Spanish friars banned Pueblo ceremonies and colonists demanded labor and tribute, and the rebels said they would return to their own ways. There were no English settlers in New Mexico."
+    },
+    {
+      "id": "APUSH-D-002",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP12",
+      "skill": "Continuity and change",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-D-S01",
+      "stem": "When the Spanish returned to New Mexico in the 1690s, they",
+      "options": [
+        "handed the region to England by treaty",
+        "joined the Pueblos with the Iroquois Confederacy",
+        "gave up all claims north of Mexico permanently",
+        "tolerated more Pueblo customs"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "After the revolt, returning Spanish authorities did not restore the encomienda and tolerated more Pueblo religious practice, a shift toward accommodation. Spain kept New Mexico until Mexican independence."
+    },
+    {
+      "id": "APUSH-D-003",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP12",
+      "skill": "Comparison",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-D-S01",
+      "stem": "The revolt is most similar in cause to which conflict in the English colonies?",
+      "options": [
+        "The Stono Rebellion of enslaved people in South Carolina",
+        "The Salem witch trials of 1692",
+        "Metacom's War in New England",
+        "The Glorious Revolution in England"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Metacom's War (King Philip's War, 1675 to 1676) was a native uprising against colonists who took land and pressed their ways on native peoples, much like the Pueblo Revolt. The Stono Rebellion was a revolt of enslaved Africans."
+    },
+    {
+      "id": "APUSH-D-004",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP12",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-D-S02",
+      "stem": "The sermon best reflects",
+      "options": [
+        "the Puritan goal of a godly community bound by covenant",
+        "Enlightenment arguments for separating church and state",
+        "the Quaker belief in an inner light in every person",
+        "the Chesapeake focus on profit from tobacco"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Puritans saw their colony as a covenant community whose success depended on obeying God's laws. Quakers stressed an inner light and tolerance; Enlightenment thinkers later argued for separating church and state."
+    },
+    {
+      "id": "APUSH-D-005",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP12",
+      "skill": "Causation",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-D-S02",
+      "stem": "Which practice in New England followed most directly from ideas like those in the sermon?",
+      "options": [
+        "Laws guaranteeing full religious freedom",
+        "Town schools teaching children to read the Bible",
+        "Royal governors appointing the minister of every Massachusetts town",
+        "Large plantations worked by enslaved laborers"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Because Puritans believed everyone should read Scripture, Massachusetts required towns to keep schools. Puritan colonies did not grant religious freedom; they punished dissenters."
+    },
+    {
+      "id": "APUSH-D-006",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP12",
+      "skill": "Continuity and change",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-D-S02",
+      "stem": "Which development most directly challenged the authority of the minister in the sermon?",
+      "options": [
+        "The dissent of Roger Williams and Anne Hutchinson",
+        "The founding of Harvard College",
+        "The arrival of the Great Migration of Puritan families",
+        "The growth of town meetings"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Roger Williams and Anne Hutchinson questioned the Puritan leaders' authority over conscience and were banished, the kind of new opinions the sermon warns against. Harvard and the Great Migration strengthened Puritan New England."
+    },
+    {
+      "id": "APUSH-D-007",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP12",
+      "skill": "Continuity and change",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APUSH-D-S02",
+      "stem": "A century later, the authority of established ministers like this one was weakened most by",
+      "options": [
+        "the passage of the Navigation Acts",
+        "the Proclamation of 1763",
+        "the First Great Awakening's preachers",
+        "the Albany Plan of Union"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "In the 1730s and 1740s, itinerant revivalists such as George Whitefield urged a personal, emotional faith and split many congregations, undercutting settled ministers. The Albany Plan and Proclamation were political."
+    },
+    {
+      "id": "APUSH-D-008",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP12",
+      "skill": "Claims and evidence",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-D-S03",
+      "stem": "The excerpt best supports which claim?",
+      "options": [
+        "Native societies adapted to their environments",
+        "Maize was unknown north of Mexico before 1492",
+        "Every native society depended mainly on hunting",
+        "Most native societies were nomadic before 1492"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The historian shows irrigation farming in the Southwest, mixed farming in the Northeast and fishing villages on the Northwest coast, each suited to its region. Southwest peoples grew maize, so maize was known north of Mexico."
+    },
+    {
+      "id": "APUSH-D-009",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP12",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-D-S03",
+      "stem": "The spread of maize cultivation into the Southwest most directly encouraged",
+      "options": [
+        "a shift to herding cattle",
+        "the domestication of the horse",
+        "trade with European merchants",
+        "irrigated, settled towns"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Maize farming in a dry climate required irrigation and supported permanent towns such as those of the ancestral Pueblo peoples. Horses and cattle arrived only with the Spanish."
+    },
+    {
+      "id": "APUSH-D-010",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP12",
+      "skill": "Claims and evidence",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APUSH-D-S03",
+      "stem": "The description of the Northwest coast challenges which assumption?",
+      "options": [
+        "That Southwest peoples grew maize",
+        "That permanent villages required farming",
+        "That fishing mattered to coastal peoples",
+        "That native peoples traded with their neighbors along the coast"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Northwest coast peoples built large permanent villages on salmon and forest resources with little agriculture, so settled life did not always depend on farming."
+    },
+    {
+      "id": "APUSH-D-011",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP12",
+      "skill": "Developments and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "England's Navigation Acts of the later 1600s were intended mainly to",
+      "options": [
+        "raise revenue to pay for the Seven Years' War",
+        "encourage colonists to trade freely with Spain",
+        "keep colonial trade within the empire",
+        "end the Atlantic slave trade"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Mercantilist laws required certain colonial goods to be shipped to England on English or colonial ships, so the empire kept the profits. The Seven Years' War came much later, in the 1750s and 1760s."
+    },
+    {
+      "id": "APUSH-D-012",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP12",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "The Middle Passage refers to",
+      "options": [
+        "the canoe route of French fur traders along the Great Lakes",
+        "the forced voyage of captive Africans to the Americas",
+        "the overland route from Missouri to Oregon",
+        "the sea lane between England and New England"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The Middle Passage was the middle leg of the Atlantic trade, in which captive Africans were shipped in brutal conditions to the Americas, and many died on the way."
+    },
+    {
+      "id": "APUSH-D-013",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP12",
+      "skill": "Comparison",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which feature most distinguished the Middle Colonies, such as Pennsylvania and New York?",
+      "options": [
+        "Very few towns or seaports",
+        "A single established church in every colony",
+        "An economy built on rice and indigo plantations",
+        "Diverse settlers and grain-exporting farms"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Settlers from many European backgrounds and faiths lived in the Middle Colonies, which exported wheat and flour through Philadelphia and New York. Rice and indigo were Lower South crops."
+    },
+    {
+      "id": "APUSH-D-014",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP3",
+      "skill": "Causation",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-D-S04",
+      "stem": "The British government issued the proclamation mainly to",
+      "options": [
+        "raise money by taxing land sales west of the Appalachian Mountains",
+        "open the Ohio Valley to French traders",
+        "avoid new wars with western native nations",
+        "reward colonists for their service in the war"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "After the war, native nations led by Pontiac attacked British forts, and Britain drew a line along the Appalachians to keep settlers apart from them and avoid costly wars."
+    },
+    {
+      "id": "APUSH-D-015",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP3",
+      "skill": "Developments and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-D-S04",
+      "stem": "The complaint best illustrates",
+      "options": [
+        "colonial support for tighter British control",
+        "a return to Britain's earlier salutary neglect",
+        "colonial resentment of British policy",
+        "the end of conflict between settlers and native nations"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "After 1763 Britain tightened control over the colonies with the proclamation, new taxes and troops, and colonists who had fought for the West resented it. Salutary neglect was the policy that ended."
+    },
+    {
+      "id": "APUSH-D-016",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP3",
+      "skill": "Contextualization",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-D-S04",
+      "stem": "Which earlier event set the stage for the settler's complaint?",
+      "options": [
+        "The Boston Tea Party",
+        "Britain's victory in the Seven Years' War",
+        "The Glorious Revolution in England",
+        "The founding of the Georgia colony as a buffer against Spain"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The war removed France from North America east of the Mississippi and opened the question of who would control the western lands. The Tea Party came later, in 1773."
+    },
+    {
+      "id": "APUSH-D-017",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP3",
+      "skill": "Continuity and change",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APUSH-D-S04",
+      "stem": "A similar tension between western settlers and eastern authorities appeared later in",
+      "options": [
+        "the Seneca Falls Convention",
+        "the strikes at the Lowell mills",
+        "the Whiskey Rebellion of 1794",
+        "the Hartford Convention of 1814"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Western Pennsylvania farmers rose against a federal tax on whiskey, again resenting distant authorities who seemed to ignore frontier needs. The Hartford Convention was a New England Federalist meeting."
+    },
+    {
+      "id": "APUSH-D-018",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP3",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-D-S05",
+      "stem": "The uprising described in the letter is known as",
+      "options": [
+        "the Whiskey Rebellion",
+        "Shays' Rebellion",
+        "the Stono Rebellion",
+        "Bacon's Rebellion"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "In 1786 and 1787 indebted farmers in western Massachusetts, led in part by Daniel Shays, closed courts to stop foreclosures. The Whiskey Rebellion was in Pennsylvania in 1794."
+    },
+    {
+      "id": "APUSH-D-019",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP3",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-D-S05",
+      "stem": "Views like the creditor's most directly strengthened support for",
+      "options": [
+        "a convention to revise the Articles",
+        "an alliance with Britain against the rebellious farmers",
+        "repealing the state constitutions",
+        "giving each state the power to coin money"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Fear of disorder after Shays' Rebellion convinced many leaders that the national government needed more power, and the convention that met in Philadelphia in 1787 wrote a new constitution."
+    },
+    {
+      "id": "APUSH-D-020",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP3",
+      "skill": "Claims and evidence",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-D-S05",
+      "stem": "The creditor's worry that \"our credit abroad will be lost\" most directly reflects which problem of the 1780s?",
+      "options": [
+        "High tariffs that Congress set on imports",
+        "British taxes still collected in the states",
+        "Unpaid war debts owed to foreign lenders",
+        "A surplus in the national treasury"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The Confederation owed large sums to French and Dutch lenders from the war but, with no power to tax, could not even pay the interest. Congress had no power to set tariffs, and British taxes ended with independence."
+    },
+    {
+      "id": "APUSH-D-021",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP3",
+      "skill": "Comparison",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-D-S06",
+      "stem": "The merchant's view matches which policy?",
+      "options": [
+        "The Monroe Doctrine",
+        "Jefferson's Embargo Act cutting off foreign trade",
+        "Washington's Proclamation of Neutrality",
+        "The Alien and Sedition Acts"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "In 1793 Washington declared the United States neutral in the war between France and Britain, despite the 1778 alliance with France. The Embargo Act of 1807 cut off trade altogether."
+    },
+    {
+      "id": "APUSH-D-022",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP3",
+      "skill": "Sourcing and situation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-D-S06",
+      "stem": "Which group would most likely have disagreed with the merchant?",
+      "options": [
+        "New England shipowners",
+        "Supporters of Alexander Hamilton",
+        "Federalist merchants who traded with Britain",
+        "Democratic-Republicans who admired France"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Jefferson's supporters felt the United States owed France for its help in the Revolution and admired the French cause. Federalists and merchants favored peace and trade with Britain."
+    },
+    {
+      "id": "APUSH-D-023",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP3",
+      "skill": "Continuity and change",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-D-S06",
+      "stem": "The merchant's advice was echoed a few years later in",
+      "options": [
+        "the declaration of war against Britain in 1812",
+        "the Proclamation of 1763",
+        "the Treaty of Alliance with France of 1778",
+        "Washington's Farewell Address"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "In 1796 Washington urged the nation to avoid permanent alliances and stay out of European quarrels, the same caution the merchant expresses. The 1778 treaty came before."
+    },
+    {
+      "id": "APUSH-D-024",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP3",
+      "skill": "Developments and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The Northwest Ordinance of 1787 was significant because it",
+      "options": [
+        "set a path to statehood and banned slavery there",
+        "replaced the Articles of Confederation with a stronger union",
+        "opened the Louisiana Territory to settlement",
+        "created the first national bank"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The ordinance set out how the lands north of the Ohio River would be governed and admitted as equal states, and it banned slavery in that territory. Louisiana was purchased in 1803."
+    },
+    {
+      "id": "APUSH-D-025",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP3",
+      "skill": "Developments and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "At the Constitutional Convention, the three-fifths compromise settled",
+      "options": [
+        "how many senators each state would have in Congress",
+        "whether voters would elect the president directly",
+        "whether the Constitution would include a bill of rights",
+        "how enslaved people would count for representation and taxes"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Southern delegates wanted enslaved people counted for seats in the House; northern delegates objected. They agreed to count three fifths of the enslaved population for both representation and direct taxes."
+    },
+    {
+      "id": "APUSH-D-026",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP3",
+      "skill": "Developments and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Alexander Hamilton's financial plan included",
+      "options": [
+        "an end to all tariffs on imports",
+        "repaying the national debt in paper money issued by the states",
+        "the sale of western lands only to small farmers",
+        "assumption of state debts and a national bank"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Hamilton proposed that the federal government take over the states' Revolutionary War debts, charter a national bank and raise revenue through tariffs and excise taxes, all to build national credit."
+    },
+    {
+      "id": "APUSH-D-027",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP4",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-D-S07",
+      "stem": "The policy described in the commentary is",
+      "options": [
+        "the Open Door policy",
+        "the Monroe Doctrine",
+        "the Roosevelt Corollary",
+        "the Good Neighbor policy"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "In 1823 President Monroe declared the Americas closed to new European colonization and promised that the United States would stay out of European affairs."
+    },
+    {
+      "id": "APUSH-D-028",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP4",
+      "skill": "Contextualization",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-D-S07",
+      "stem": "The policy was announced in the context of",
+      "options": [
+        "Latin American wars of independence",
+        "the purchase of Alaska from Russia",
+        "the French invasion of Mexico during the American Civil War",
+        "the Spanish-American War"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Most of Spain's American colonies won independence in the 1810s and 1820s, and American leaders feared European powers might help Spain win them back."
+    },
+    {
+      "id": "APUSH-D-029",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP4",
+      "skill": "Claims and evidence",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APUSH-D-S07",
+      "stem": "At the time it was announced, the policy depended in practice on the navy of",
+      "options": [
+        "Spain",
+        "France",
+        "Russia, which then held Alaska",
+        "Britain"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The United States had a small navy in 1823; Britain, which wanted open trade with Latin America, had the fleet that could actually keep other European powers out."
+    },
+    {
+      "id": "APUSH-D-030",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP4",
+      "skill": "Continuity and change",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-D-S07",
+      "stem": "Later presidents expanded this policy most directly in",
+      "options": [
+        "the Marshall Plan for Europe",
+        "the Neutrality Acts passed by Congress in the 1930s",
+        "the Roosevelt Corollary of 1904",
+        "the Washington Naval Conference"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "In 1904 Theodore Roosevelt added that the United States could act as an international police power in the Western Hemisphere, turning a warning to Europe into a claim to intervene."
+    },
+    {
+      "id": "APUSH-D-031",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP4",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-D-S08",
+      "stem": "The editorial praises",
+      "options": [
+        "Jackson's support for nullification in South Carolina",
+        "the creation of the Federal Reserve",
+        "the founding of Hamilton's First Bank of the United States",
+        "Jackson's veto of the bank recharter"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "In 1832 Andrew Jackson vetoed the bill to recharter the Second Bank, calling it a privileged monopoly. He opposed nullification, and the Federal Reserve came in 1913."
+    },
+    {
+      "id": "APUSH-D-032",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP4",
+      "skill": "Comparison",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-D-S08",
+      "stem": "The Whig Party opposed Jackson partly because Whigs",
+      "options": [
+        "wanted to end every tariff",
+        "supported Indian removal more strongly",
+        "opposed any federal role in building roads, canals and banks",
+        "favored a national bank and internal improvements"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Whigs backed Henry Clay's American System: a national bank, protective tariffs and federally funded roads and canals. Jacksonian Democrats were the ones wary of federal economic power."
+    },
+    {
+      "id": "APUSH-D-033",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP4",
+      "skill": "Contextualization",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-D-S08",
+      "stem": "The editorial's appeal to farmers and mechanics reflects",
+      "options": [
+        "the extension of the vote to women",
+        "a decline of mass political parties",
+        "equal voting rights for free Black men across the North",
+        "the expansion of voting rights to most white men"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "By the 1820s and 1830s most states had dropped property requirements for white men, and parties competed for these new voters. Many states at the same time restricted voting by free Black men."
+    },
+    {
+      "id": "APUSH-D-034",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP4",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-D-S09",
+      "stem": "The idea in the editorial is known as",
+      "options": [
+        "nullification",
+        "manifest destiny",
+        "republican motherhood",
+        "popular sovereignty"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The belief that the United States was destined by Providence to spread across the continent was called manifest destiny, a term coined in 1845."
+    },
+    {
+      "id": "APUSH-D-035",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP4",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-D-S09",
+      "stem": "Which event followed most directly from the views in the editorial?",
+      "options": [
+        "The purchase of Florida from Spain",
+        "The Louisiana Purchase",
+        "The War of 1812",
+        "War with Mexico beginning in 1846"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Texas annexation and President Polk's push for California led to war with Mexico in 1846, which ended with the Mexican Cession in 1848. Louisiana and Florida were acquired earlier."
+    },
+    {
+      "id": "APUSH-D-036",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP4",
+      "skill": "Sourcing and situation",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APUSH-D-S09",
+      "stem": "Whig critics of expansion in the 1840s argued that taking land from Mexico would",
+      "options": [
+        "close the West to American settlers",
+        "end the cotton economy of the South",
+        "provoke a war with Britain over Florida",
+        "extend slavery and divide the nation"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Many Whigs, including a young Abraham Lincoln, opposed the war and warned that new territory would reopen the fight over slavery's spread, as it did."
+    },
+    {
+      "id": "APUSH-D-037",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP4",
+      "skill": "Developments and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Chief Justice John Marshall's rulings, such as McCulloch v. Maryland, generally",
+      "options": [
+        "limited the Court's power of judicial review",
+        "strengthened federal power over the states",
+        "supported state laws removing native nations",
+        "let states tax federal institutions"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Marshall's Court upheld the national bank, barred states from taxing it and read the commerce power broadly, building federal authority. Worcester v. Georgia went against Georgia's removal laws."
+    },
+    {
+      "id": "APUSH-D-038",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP4",
+      "skill": "Causation",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "The Erie Canal, completed in 1825, most directly",
+      "options": [
+        "linked the Mississippi River with the Pacific Ocean by water",
+        "ended the need for railroads in the South",
+        "cut shipping costs from the Great Lakes to New York",
+        "carried southern cotton to New England mills"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The canal joined Lake Erie to the Hudson River, so western farm goods could reach New York City cheaply, and the city became the nation's leading port."
+    },
+    {
+      "id": "APUSH-D-039",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP4",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "The Seneca Falls Convention of 1848 is best known for",
+      "options": [
+        "launching the national temperance movement",
+        "founding the American Anti-Slavery Society in Boston",
+        "creating the first national labor union",
+        "a declaration of women's rights"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Elizabeth Cady Stanton, Lucretia Mott and others issued a Declaration of Sentiments modeled on the Declaration of Independence that called for women's rights, including suffrage."
+    },
+    {
+      "id": "APUSH-D-040",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP5",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-D-S10",
+      "stem": "The proclamation the soldier mentions is",
+      "options": [
+        "the Proclamation of Neutrality",
+        "the Ten Percent Plan",
+        "the Emancipation Proclamation",
+        "the Proclamation of 1763"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Lincoln issued the Emancipation Proclamation on January 1, 1863. The Ten Percent Plan, announced later that year, set terms for southern states to rejoin the Union."
+    },
+    {
+      "id": "APUSH-D-041",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP5",
+      "skill": "Developments and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-D-S10",
+      "stem": "Lincoln justified the proclamation legally as",
+      "options": [
+        "a war measure under his power as commander in chief",
+        "a treaty signed with the loyal border states",
+        "an act of Congress passed under the Thirteenth Amendment",
+        "a ruling of the Supreme Court in a wartime case"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Lincoln issued the proclamation as a military necessity under his war powers, which is why it applied only to areas in rebellion and why a constitutional amendment was later needed to end slavery everywhere."
+    },
+    {
+      "id": "APUSH-D-042",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP5",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-D-S10",
+      "stem": "Another effect of the proclamation was to",
+      "options": [
+        "return escaped slaves to loyal owners",
+        "give women the vote in federal elections",
+        "open the Union army to Black men",
+        "end the Union blockade of southern ports"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The proclamation allowed Black men to serve, and about 180,000 served in the Union army, many of them formerly enslaved."
+    },
+    {
+      "id": "APUSH-D-043",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP5",
+      "skill": "Continuity and change",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-D-S10",
+      "stem": "Slavery was abolished throughout the United States by",
+      "options": [
+        "the Civil Rights Act of 1866",
+        "the Thirteenth Amendment",
+        "the Fourteenth Amendment",
+        "the Fifteenth Amendment"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The Thirteenth Amendment, ratified in 1865, abolished slavery except as punishment for a crime. The Fourteenth defined citizenship and equal protection; the Fifteenth protected voting."
+    },
+    {
+      "id": "APUSH-D-044",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP5",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-D-S11",
+      "stem": "The proposal in the speech is known as",
+      "options": [
+        "the Freeport Doctrine",
+        "the Ostend Manifesto",
+        "the Crittenden Compromise",
+        "the Wilmot Proviso"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "In 1846 Representative David Wilmot proposed banning slavery from any land taken from Mexico. It passed the House but failed in the Senate."
+    },
+    {
+      "id": "APUSH-D-045",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP5",
+      "skill": "Sourcing and situation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-D-S11",
+      "stem": "The speaker's appeal to \"the free white laborer\" reflects",
+      "options": [
+        "nativist hostility to Catholic immigrants from Ireland and Germany",
+        "southern arguments for expanding slavery",
+        "free-soil ideas about protecting white workers",
+        "abolitionist demands for racial equality"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Free-soilers objected to slavery in the territories mainly because it would shut out free white farmers and workers, not because they sought equality for Black Americans."
+    },
+    {
+      "id": "APUSH-D-046",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP5",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-D-S11",
+      "stem": "Ideas like the speaker's led most directly to",
+      "options": [
+        "the Hartford Convention",
+        "the founding of the Free Soil Party",
+        "the end of the Second Party System in 1828",
+        "the founding of the Populist Party"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Antislavery Whigs, Democrats and Liberty Party members formed the Free Soil Party in 1848 on the principle of no slavery in the territories; the Republicans later took up the same cause."
+    },
+    {
+      "id": "APUSH-D-047",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP5",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-D-S12",
+      "stem": "The case described in the newspaper is",
+      "options": [
+        "Dred Scott v. Sandford",
+        "Plessy v. Ferguson",
+        "Gibbons v. Ogden",
+        "Cherokee Nation v. Georgia"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "In 1857 Chief Justice Roger Taney ruled that Black Americans could not be citizens and that Congress could not ban slavery in the territories."
+    },
+    {
+      "id": "APUSH-D-048",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP5",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-D-S12",
+      "stem": "The ruling most alarmed Republicans because it",
+      "options": [
+        "required states to let Black men vote",
+        "gave Congress the power to end slavery in the states where it already existed",
+        "undercut their goal for the territories",
+        "struck down the Fugitive Slave Act"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The Republican Party was built on stopping slavery's spread into the territories, and the Court said Congress had no such power."
+    },
+    {
+      "id": "APUSH-D-049",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP5",
+      "skill": "Continuity and change",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APUSH-D-S12",
+      "stem": "Stephen Douglas tried to reconcile the ruling with popular sovereignty in",
+      "options": [
+        "the Ostend Manifesto",
+        "the Wilmot Proviso",
+        "the Gettysburg Address",
+        "the Freeport Doctrine"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "At Freeport in 1858, Douglas said settlers could still keep slavery out by refusing to pass laws to protect it. The answer cost him southern support in 1860."
+    },
+    {
+      "id": "APUSH-D-050",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP5",
+      "skill": "Developments and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The Fifteenth Amendment, ratified in 1870, prohibited",
+      "options": [
+        "literacy tests for voters in the South",
+        "poll taxes in federal elections",
+        "denying the vote on account of race",
+        "denying the vote on account of sex"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The amendment barred racial discrimination in voting, but it left room for poll taxes and literacy tests, which southern states later used to disenfranchise Black voters. Women's suffrage came in 1920."
+    },
+    {
+      "id": "APUSH-D-051",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP5",
+      "skill": "Comparison",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Radical Republicans in Congress differed from President Andrew Johnson mainly over",
+      "options": [
+        "whether to keep a protective tariff",
+        "whether to buy Alaska from Russia",
+        "how far to protect freedpeople's rights",
+        "whether to keep fighting the war in 1865 until the South surrendered unconditionally"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Johnson pardoned many Confederates and accepted the Black Codes; Radicals wanted civil and political rights for freedpeople and federal power to protect them."
+    },
+    {
+      "id": "APUSH-D-052",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP5",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "California's request to enter the Union as a free state in 1849 and 1850 caused a crisis because it",
+      "options": [
+        "required repealing the Missouri Compromise",
+        "would end the gold rush",
+        "would hand the Pacific coast back to Mexico under the treaty",
+        "would upset the Senate's sectional balance"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Admitting California would give the free states a Senate majority, so southern leaders demanded concessions, and Congress produced the Compromise of 1850."
+    },
+    {
+      "id": "APUSH-D-053",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP6",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-D-S13",
+      "stem": "The strike described in the statement is",
+      "options": [
+        "the Homestead Strike",
+        "the Pullman Strike",
+        "the Great Railroad Strike of 1877",
+        "the Haymarket affair"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Workers at the Pullman Palace Car Company, who lived in the company town, struck in 1894 over wage cuts, and the American Railway Union boycotted Pullman cars. The Homestead Strike was at a steel mill in 1892."
+    },
+    {
+      "id": "APUSH-D-054",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP6",
+      "skill": "Claims and evidence",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-D-S13",
+      "stem": "The government's response described in the statement shows",
+      "options": [
+        "federal support for workers' right to bargain",
+        "the government's neutrality in labor disputes between unions and railroads",
+        "a state law requiring an eight-hour day",
+        "federal use of troops and injunctions against strikes"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "President Cleveland sent troops, saying the strike blocked the mail, and a federal court issued an injunction against the union. Protection for collective bargaining came only in the 1930s."
+    },
+    {
+      "id": "APUSH-D-055",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP6",
+      "skill": "Developments and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-D-S13",
+      "stem": "The union that joined the strike was",
+      "options": [
+        "the Knights of Labor led by Terence Powderly",
+        "the American Railway Union led by Eugene Debs",
+        "the Industrial Workers of the World",
+        "the American Federation of Labor led by Samuel Gompers"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Eugene Debs's American Railway Union organized all railroad workers in one union. Debs was jailed after the strike and later became a Socialist leader. The IWW was founded in 1905."
+    },
+    {
+      "id": "APUSH-D-056",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP6",
+      "skill": "Contextualization",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APUSH-D-S13",
+      "stem": "Labor unions of this era struggled to win strikes mainly because",
+      "options": [
+        "courts and governments backed employers",
+        "most factories were small family shops",
+        "most industrial workers already earned high wages",
+        "few immigrants worked in industry"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Employers could call on injunctions, state militias and federal troops, and they had a steady supply of new workers. Wages for unskilled industrial workers were low."
+    },
+    {
+      "id": "APUSH-D-057",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP6",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-D-S14",
+      "stem": "The editor is reacting to the decision in",
+      "options": [
+        "Dred Scott v. Sandford",
+        "Worcester v. Georgia",
+        "Plessy v. Ferguson",
+        "Brown v. Board of Education"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "In 1896 the Court upheld a Louisiana law requiring separate railroad cars, holding that separate facilities were lawful if equal. Brown overturned that doctrine for schools in 1954."
+    },
+    {
+      "id": "APUSH-D-058",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP6",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-D-S14",
+      "stem": "The doctrine the editor criticizes is",
+      "options": [
+        "separate but equal",
+        "judicial review",
+        "nullification",
+        "popular sovereignty"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Plessy established separate but equal, which southern states used to segregate schools, transport and public places for decades."
+    },
+    {
+      "id": "APUSH-D-059",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP6",
+      "skill": "Comparison",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-D-S14",
+      "stem": "Which Black leader of the time urged Black southerners to focus first on vocational education and economic progress?",
+      "options": [
+        "Booker T. Washington",
+        "Ida B. Wells",
+        "Marcus Garvey",
+        "W.E.B. Du Bois of the Niagara Movement"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Washington, head of the Tuskegee Institute, argued in his 1895 Atlanta speech for economic self-help before demands for equal rights. Du Bois rejected that approach and called for full civil rights."
+    },
+    {
+      "id": "APUSH-D-060",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP6",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-D-S15",
+      "stem": "The speech promotes",
+      "options": [
+        "the free coinage of silver",
+        "a Populist alliance of Black and white farmers",
+        "the New South vision of industrial growth",
+        "a return to plantation slavery"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "New South boosters wanted the South to industrialize with northern investment, building textile mills, railroads and iron works."
+    },
+    {
+      "id": "APUSH-D-061",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP6",
+      "skill": "Claims and evidence",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-D-S15",
+      "stem": "Despite hopes like the editor's, most of the South by 1900",
+      "options": [
+        "remained mostly agricultural and poor",
+        "had become the center of national steel production",
+        "had ended the sharecropping system",
+        "had more factories than New England"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Some mills and iron works grew, but most southerners still farmed, many as sharecroppers or tenants, and the region's income lagged far behind the North's."
+    },
+    {
+      "id": "APUSH-D-062",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP6",
+      "skill": "Continuity and change",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-D-S15",
+      "stem": "Which industry grew the most in the South in the decades after the speech?",
+      "options": [
+        "Cotton textile mills",
+        "Automobile manufacturing",
+        "Shipbuilding on the Great Lakes",
+        "Aircraft building"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Textile mills spread across the Piedmont of the Carolinas and Georgia, drawing on cheap cotton, water power and low-wage labor. Autos and aircraft came in the twentieth century."
+    },
+    {
+      "id": "APUSH-D-063",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP6",
+      "skill": "Developments and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The Pendleton Civil Service Act of 1883 aimed to",
+      "options": [
+        "fill some federal jobs by merit exams",
+        "regulate interstate railroad rates through a federal commission",
+        "restrict immigration from China",
+        "break up railroad monopolies"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "After a disappointed office seeker assassinated President Garfield, Congress created a civil service commission and merit exams for some federal jobs, limiting the spoils system."
+    },
+    {
+      "id": "APUSH-D-064",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP6",
+      "skill": "Developments and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The Chinese Exclusion Act of 1882 was the first federal law to",
+      "options": [
+        "limit immigration from all of Europe",
+        "grant citizenship to Chinese railroad workers",
+        "bar immigration of a group by nationality",
+        "end contract labor from Canada"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The act suspended immigration of Chinese laborers and was renewed until 1943, the first law to exclude a national group."
+    },
+    {
+      "id": "APUSH-D-065",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP6",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "The Interstate Commerce Act of 1887",
+      "options": [
+        "paid for the first transcontinental railroad with federal bonds",
+        "broke up the Standard Oil trust",
+        "created a commission to oversee railroad rates",
+        "set a national minimum wage"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The act required railroad rates to be reasonable and created the Interstate Commerce Commission, the first federal regulatory agency, though it was weak at first."
+    },
+    {
+      "id": "APUSH-D-066",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP7",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-D-S16",
+      "stem": "The author of the pamphlet was most likely convicted under",
+      "options": [
+        "the Espionage Act",
+        "the Alien and Sedition Acts",
+        "the PATRIOT Act",
+        "the Smith Act"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The Espionage Act of 1917 punished interfering with the draft, and the Sedition Act of 1918 extended it to criticism of the war effort. The Smith Act dates from 1940."
+    },
+    {
+      "id": "APUSH-D-067",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP7",
+      "skill": "Continuity and change",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-D-S16",
+      "stem": "In a case about a similar pamphlet, the Supreme Court upheld such convictions using",
+      "options": [
+        "the reasoning of Korematsu v. United States",
+        "the exclusionary rule in Mapp v. Ohio",
+        "the reasoning of Schenck v. United States",
+        "the right to counsel in Gideon v. Wainwright"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "In Schenck (1919), Justice Holmes wrote that speech creating a clear and present danger, such as obstructing the draft in wartime, could be punished."
+    },
+    {
+      "id": "APUSH-D-068",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP7",
+      "skill": "Sourcing and situation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-D-S16",
+      "stem": "The pamphlet's view of the war was shared most by",
+      "options": [
+        "the Committee on Public Information",
+        "most members of Congress in April 1917",
+        "socialists and pacifists",
+        "President Wilson's cabinet"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The Socialist Party opposed the war, and some pacifists did too. Congress voted for war by large margins, and the Committee on Public Information produced pro-war propaganda."
+    },
+    {
+      "id": "APUSH-D-069",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP7",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-D-S16",
+      "stem": "After the war, fear of radicals like the pamphlet's author led to",
+      "options": [
+        "the Marshall Plan",
+        "the Neutrality Acts",
+        "the first Red Scare",
+        "the McCarthy hearings in the Senate"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Strikes, bombings and the Russian Revolution set off the Red Scare of 1919 and 1920, when Attorney General A. Mitchell Palmer's agents arrested thousands of suspected radicals."
+    },
+    {
+      "id": "APUSH-D-070",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP7",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-D-S17",
+      "stem": "The trial described in the newspaper is",
+      "options": [
+        "the trial of Eugene Debs",
+        "the Scopes trial",
+        "the Sacco and Vanzetti trial",
+        "the Haymarket trial"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "John Scopes was tried in Dayton, Tennessee, in 1925 for teaching evolution, with William Jennings Bryan helping the prosecution and Clarence Darrow for the defense."
+    },
+    {
+      "id": "APUSH-D-071",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP7",
+      "skill": "Contextualization",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-D-S17",
+      "stem": "The trial reflected a broader conflict in the 1920s between",
+      "options": [
+        "supporters and opponents of the gold standard",
+        "modernism and religious fundamentalism",
+        "farmers and railroads over freight rates",
+        "labor unions and coal mine owners"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The 1920s saw sharp clashes between modern, urban values and traditional, rural and religious ones, over evolution, Prohibition and immigration."
+    },
+    {
+      "id": "APUSH-D-072",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP7",
+      "skill": "Comparison",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-D-S17",
+      "stem": "Which other development of the 1920s also reflected that cultural conflict?",
+      "options": [
+        "The revival of the Ku Klux Klan",
+        "The Seneca Falls Convention",
+        "The First Great Awakening",
+        "The founding of the Populist Party"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The Klan of the 1920s, strong in the Midwest as well as the South, attacked immigrants, Catholics, Jews and Black Americans in the name of traditional values."
+    },
+    {
+      "id": "APUSH-D-073",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP7",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-D-S18",
+      "stem": "The worker's account best illustrates",
+      "options": [
+        "the passage of the Nineteenth Amendment",
+        "women leaving paid work during the Depression",
+        "the nineteenth-century ideal of separate spheres",
+        "women's entry into war industries"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "With millions of men in uniform, war industries hired women for skilled factory jobs, and the number of women in the workforce rose sharply."
+    },
+    {
+      "id": "APUSH-D-074",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP7",
+      "skill": "Continuity and change",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-D-S18",
+      "stem": "Which other wartime change also brought new workers into American industry and farming?",
+      "options": [
+        "A fall in federal spending",
+        "The Bracero Program for Mexican workers",
+        "An end to rationing of food and gasoline",
+        "Japanese Americans moving freely along the West Coast"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "From 1942 the Bracero Program brought Mexican workers to farms and railroads. Japanese Americans on the West Coast were forced into camps, and rationing continued through the war."
+    },
+    {
+      "id": "APUSH-D-075",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP7",
+      "skill": "Comparison",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-D-S18",
+      "stem": "During the same war, the federal government treated Japanese Americans on the West Coast by",
+      "options": [
+        "granting them land in Hawaii",
+        "exempting them from all wartime laws",
+        "forcing them into camps",
+        "drafting them only into the navy"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Executive Order 9066 led to the removal and incarceration of about 120,000 Japanese Americans, most of them citizens, and the Court upheld it in 1944."
+    },
+    {
+      "id": "APUSH-D-076",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP7",
+      "skill": "Comparison",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "In 1917, suffragists led by Alice Paul pressed for a constitutional amendment by",
+      "options": [
+        "marching armed on the state capitol in Albany",
+        "picketing the White House during the war",
+        "sitting in at segregated lunch counters",
+        "boycotting the buses of several large cities"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Paul's National Woman's Party picketed the White House, and many were jailed; their pressure and women's war work helped win the Nineteenth Amendment in 1920. Sit-ins and bus boycotts belong to the civil rights movement."
+    },
+    {
+      "id": "APUSH-D-077",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP7",
+      "skill": "Developments and processes",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Secretary of State John Hay's Open Door notes of 1899 and 1900 sought",
+      "options": [
+        "the annexation of Chinese ports by the United States navy",
+        "Japan's opening to Western trade",
+        "an end to immigration from China",
+        "equal trading rights in China"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Hay asked the powers with spheres of influence in China to keep trade open to all and to respect China's territorial integrity. Japan had been opened to trade in the 1850s."
+    },
+    {
+      "id": "APUSH-D-078",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP7",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The Immigration Act of 1924",
+      "options": [
+        "set national quotas that favored northern Europe",
+        "replaced national quotas with a system of family preferences",
+        "ended all limits on immigration from Asia",
+        "admitted refugees from Nazi Germany"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The act based quotas on the 1890 census, favoring northern and western Europe, and barred most Asian immigration. National quotas were replaced in 1965."
+    },
+    {
+      "id": "APUSH-D-079",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP89",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-D-S19",
+      "stem": "The programs in the speech were part of",
+      "options": [
+        "the New Deal",
+        "John F. Kennedy's New Frontier",
+        "the Great Society",
+        "the Square Deal"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "President Lyndon Johnson's Great Society included Medicare, Medicaid, federal aid to education and the War on Poverty. The New Frontier was Kennedy's program."
+    },
+    {
+      "id": "APUSH-D-080",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP89",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-D-S19",
+      "stem": "The \"medical care for the elderly\" in the speech is",
+      "options": [
+        "the Affordable Care Act",
+        "the Social Security Act of 1935",
+        "Medicare",
+        "the GI Bill"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Medicare, created in 1965 as part of Social Security, provides health insurance for Americans 65 and older. Medicaid, created at the same time, covers many low-income people."
+    },
+    {
+      "id": "APUSH-D-081",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP89",
+      "skill": "Claims and evidence",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-D-S19",
+      "stem": "The speech reflects the belief that",
+      "options": [
+        "the market alone would end poverty",
+        "the federal government should fight poverty",
+        "states should stop all aid to the poor",
+        "only private charity should help the poor"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Johnson's programs rested on the liberal view that federal action could end poverty and widen opportunity."
+    },
+    {
+      "id": "APUSH-D-082",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP89",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-D-S19",
+      "stem": "The programs in the speech were limited most by the cost of",
+      "options": [
+        "the Korean War",
+        "the Marshall Plan",
+        "the Spanish-American War",
+        "the war in Vietnam"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "As the Vietnam War grew in the late 1960s, it drew money and attention away from the War on Poverty."
+    },
+    {
+      "id": "APUSH-D-083",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP89",
+      "skill": "Comparison",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-D-S20",
+      "stem": "The letter echoes the argument of",
+      "options": [
+        "Upton Sinclair's The Jungle",
+        "Rachel Carson's Silent Spring",
+        "Michael Harrington's The Other America",
+        "Betty Friedan's The Feminine Mystique"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Friedan's 1963 book described the problem that has no name: educated suburban women unsatisfied by lives limited to home and family. Silent Spring was about pesticides."
+    },
+    {
+      "id": "APUSH-D-084",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP89",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-D-S20",
+      "stem": "Which organization, founded in 1966, worked for the kind of change the letter hints at?",
+      "options": [
+        "The National Organization for Women",
+        "The AFL-CIO",
+        "The National American Woman Suffrage Association",
+        "The Student Nonviolent Coordinating Committee"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Friedan and others founded NOW to fight sex discrimination in jobs, education and law. The suffrage association had won its goal in 1920."
+    },
+    {
+      "id": "APUSH-D-085",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP89",
+      "skill": "Continuity and change",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-D-S20",
+      "stem": "Which proposed amendment, backed by the women's movement, fell short of ratification?",
+      "options": [
+        "The Twenty-fourth Amendment",
+        "The Nineteenth Amendment",
+        "The Equal Rights Amendment",
+        "The Twenty-sixth Amendment"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Congress passed the ERA in 1972, but opposition led by Phyllis Schlafly and others stopped it short of the 38 states needed by the deadline."
+    },
+    {
+      "id": "APUSH-D-086",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP89",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APUSH-D-S21",
+      "stem": "The law the column describes is",
+      "options": [
+        "the Espionage Act",
+        "the War Powers Resolution",
+        "the USA PATRIOT Act",
+        "the Smith Act"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Passed weeks after the September 11, 2001, attacks, the PATRIOT Act expanded government surveillance and investigative powers."
+    },
+    {
+      "id": "APUSH-D-087",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP89",
+      "skill": "Continuity and change",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-D-S21",
+      "stem": "The column's concern is most similar to",
+      "options": [
+        "the free silver campaign of the 1890s",
+        "the fight over the national bank in the 1830s",
+        "debates over the tariff in the 1820s",
+        "civil liberties debates in earlier wars"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "From the Sedition Act of 1798 to the Espionage Act and Japanese American incarceration, Americans have argued over how far wartime security may limit liberty."
+    },
+    {
+      "id": "APUSH-D-088",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP89",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APUSH-D-S21",
+      "stem": "Which military response followed the attacks the column mentions?",
+      "options": [
+        "The Spanish-American War",
+        "The Korean War",
+        "The Persian Gulf War of 1991",
+        "Wars in Afghanistan and Iraq"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The United States invaded Afghanistan in 2001 and Iraq in 2003 as part of what it called the war on terror. The Persian Gulf War came a decade earlier."
+    },
+    {
+      "id": "APUSH-D-089",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP89",
+      "skill": "Developments and processes",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "In Brown v. Board of Education (1954), the Supreme Court",
+      "options": [
+        "struck down poll taxes in state elections",
+        "upheld the doctrine of separate but equal",
+        "required busing of students between city and suburban districts",
+        "ruled that school segregation was unconstitutional"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The Court held unanimously that separate schools were inherently unequal, overturning Plessy for public education. Many southern states resisted for years."
+    },
+    {
+      "id": "APUSH-D-090",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP89",
+      "skill": "Causation",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The Cuban Missile Crisis of 1962",
+      "options": [
+        "began the American war in Korea",
+        "brought the superpowers close to nuclear war",
+        "led directly to the Bay of Pigs invasion by Cuban exiles",
+        "ended with an American invasion of Cuba"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Kennedy blockaded Cuba after spy planes found Soviet missile sites, and the Soviets removed them in exchange for a pledge not to invade Cuba. The Bay of Pigs came a year earlier."
+    },
+    {
+      "id": "APUSH-D-091",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apushP89",
+      "skill": "Continuity and change",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which development most changed the population of the United States in the decades after 1980?",
+      "options": [
+        "Migration from the Sun Belt to the Rust Belt",
+        "A fall in immigration to almost none",
+        "Immigration from Latin America and Asia",
+        "Rising immigration mainly from northern Europe"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "After the 1965 law ended national quotas, immigration rose, mostly from Latin America and Asia. Meanwhile Americans moved toward the Sun Belt, not away from it."
+    }
+  ]
+}

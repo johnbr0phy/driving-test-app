@@ -1,0 +1,5133 @@
+{
+  "stimuli": [
+    {
+      "id": "AISSEE-T1-L1",
+      "title": "Passage 1",
+      "text": "Read the passage and answer the questions that follow.\n\nTenzin lived in a small village in Ladakh, high in the mountains. In winter the stream near his home froze, and a cold wind blew down from the snowy peaks. One afternoon, while he was bringing his goats home, Tenzin saw a stranger sitting on a rock. The man was a trekker who had lost his way, and his feet were too tired to go on.\n\nThe sun was already going down. Tenzin knew that the path to the village always followed the stream downhill. He gave the trekker his own woollen cap and helped him walk slowly along the bank. When they reached the village, Tenzin's mother gave the man hot butter tea and a warm blanket.\n\nThe next morning the trekker thanked the family. 'In the city I have many maps,' he said, 'but yesterday a boy who knows his land was better than all of them.'"
+    },
+    {
+      "id": "AISSEE-T1-L2",
+      "title": "Passage 2",
+      "text": "Read the passage and answer the questions that follow.\n\nThe Olive Ridley is a small sea turtle, named after the olive-green colour of its shell. It spends almost all its life in the sea, but the female comes back to a sandy beach to lay her eggs.\n\nOn a few beaches of Odisha, such as Gahirmatha and Rushikulya, something amazing happens. Thousands of females come ashore together over a few nights. This mass nesting is called an 'arribada', a Spanish word meaning 'arrival'. Each turtle digs a hole with her back flippers, lays about a hundred eggs, covers them with sand and goes back to the sea.\n\nAbout seven weeks later, the baby turtles hatch and hurry towards the water. They find it by moving towards the brightest part of the sky, which is usually over the sea. Bright lights from houses and roads can confuse them, so people living near these beaches are asked to keep their lights low during the hatching season."
+    },
+    {
+      "id": "AISSEE-T2-L1",
+      "title": "Passage 1",
+      "text": "Read the passage and answer the questions that follow.\n\nRohan was nine, and he was afraid of water. Every summer his cousins jumped into the village pond, laughing and splashing, while he sat on the steps holding his knees.\n\nOne day his aunt, who had once been a swimming coach, sat down beside him. 'Fear is like a locked door,' she said. 'You do not have to break it. You only need the right key.' The next morning she took him to the shallow end, where the water came only up to his waist. First he learnt to put his face in the water and blow bubbles. Then he learnt to float while she held his hands.\n\nIt took many mornings, and some days Rohan went home with tears in his eyes. But at the end of the summer he swam across the pond by himself. His cousins cheered loudly, and his aunt only smiled."
+    },
+    {
+      "id": "AISSEE-T2-L2",
+      "title": "Passage 2",
+      "text": "Read the passage and answer the questions that follow.\n\nOn warm summer nights in many parts of India, tiny lights can be seen flashing among the bushes. These are fireflies. Although they are called flies, fireflies are really a kind of beetle.\n\nA firefly makes light in a special part at the end of its body. Inside it, chemicals mix with oxygen from the air and give out light. This light is called 'cold light' because almost none of the energy is lost as heat. An old-style bulb, on the other hand, becomes too hot to touch.\n\nFireflies flash their lights to find partners. Each kind of firefly has its own pattern of flashes, like a secret code. Sadly, fireflies are becoming fewer because of bright street lights and the clearing of the damp, grassy places where they live."
+    },
+    {
+      "id": "AISSEE-D-L1",
+      "title": "Passage",
+      "text": "Read the passage and answer the questions that follow.\n\nThe Sun Temple at Konark stands near the sea in Odisha. It was built in the thirteenth century, during the rule of King Narasimhadeva I of the Eastern Ganga dynasty. The temple was made to look like a giant chariot of the Sun God, Surya.\n\nThe chariot has twenty-four huge stone wheels, carved with fine patterns, and it is pulled by seven stone horses. The wheels are not only beautiful. The shadows cast by their spokes can be used to tell the time of day, like a sundial.\n\nSailors once called the temple the 'Black Pagoda' because its dark tower could be seen from far out at sea. Today it is a UNESCO World Heritage Site, visited by people from all over the world."
+    }
+  ],
+  "questions": [
+    {
+      "id": "AISSEE-T1-001",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Preposition",
+      "stem": "Choose the correct word: \"We have lived in this town ___ six years.\"",
+      "options": [
+        "since",
+        "by",
+        "from",
+        "for"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Use 'for' with a length of time (six years, two days) and 'since' with a point in time (2020, Monday)."
+    },
+    {
+      "id": "AISSEE-T1-002",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Article",
+      "stem": "Choose the correct word: \"My uncle is ___ engineer in Pune.\"",
+      "options": [
+        "a",
+        "some",
+        "many",
+        "an"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "'Engineer' begins with a vowel sound, so it takes 'an'. 'Some' and 'many' cannot go before a singular noun like this."
+    },
+    {
+      "id": "AISSEE-T1-003",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Question tag",
+      "stem": "Choose the correct question tag: \"Meera doesn't like milk, ___?\"",
+      "options": [
+        "isn't it",
+        "doesn't she",
+        "does she",
+        "is she"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A negative sentence takes a positive tag with the same helping verb: 'doesn't' becomes 'does she'."
+    },
+    {
+      "id": "AISSEE-T1-004",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Tense",
+      "stem": "Choose the correct verb: \"Look! The children ___ in the rain.\"",
+      "options": [
+        "have dance",
+        "dance",
+        "are dancing",
+        "danced"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "'Look!' shows the action is happening now, so the present continuous 'are dancing' is right."
+    },
+    {
+      "id": "AISSEE-T1-005",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Collective noun",
+      "stem": "Which word completes the phrase \"a ___ of fish\"?",
+      "options": [
+        "flock",
+        "pack",
+        "school",
+        "herd"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A group of fish is a school (or shoal). A herd is used for cattle, a pack for wolves and a flock for birds or sheep."
+    },
+    {
+      "id": "AISSEE-T1-006",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Gender",
+      "stem": "What is the feminine of 'nephew'?",
+      "options": [
+        "Cousin",
+        "Aunt",
+        "Niece",
+        "Sister"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A nephew is your brother's or sister's son; a niece is their daughter."
+    },
+    {
+      "id": "AISSEE-T1-007",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Singular and plural",
+      "stem": "What is the plural of 'leaf'?",
+      "options": [
+        "Leafs",
+        "Leafes",
+        "Leaf",
+        "Leaves"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Many nouns ending in -f change the f to v and add -es: leaf, leaves; half, halves."
+    },
+    {
+      "id": "AISSEE-T1-008",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Antonyms",
+      "stem": "Which word is the opposite of 'cruel'?",
+      "options": [
+        "Harsh",
+        "Kind",
+        "Angry",
+        "Proud"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A cruel person likes to hurt others; a kind person is gentle and helpful. 'Harsh' is close in meaning to cruel."
+    },
+    {
+      "id": "AISSEE-T1-009",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Synonyms",
+      "stem": "Which word is nearest in meaning to 'weary'?",
+      "options": [
+        "Hungry",
+        "Worried",
+        "Tired",
+        "Lonely"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Weary means very tired, for example after a long walk. 'Worried' only sounds a little like it."
+    },
+    {
+      "id": "AISSEE-T1-010",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Idioms",
+      "stem": "What does the phrase 'to feel under the weather' mean?",
+      "options": [
+        "To feel very happy",
+        "To be caught in rain",
+        "To feel cold",
+        "To feel unwell"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "If you feel under the weather, you feel a little ill. The phrase has nothing to do with the real weather."
+    },
+    {
+      "id": "AISSEE-T1-011",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeReading",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Detail",
+      "stimulusId": "AISSEE-T1-L1",
+      "stem": "Where did Tenzin live?",
+      "options": [
+        "In a village in the desert",
+        "In a city in the plains",
+        "In a town by the sea",
+        "In a village in Ladakh"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The first line says Tenzin lived in a small village in Ladakh, high in the mountains."
+    },
+    {
+      "id": "AISSEE-T1-012",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeReading",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Detail",
+      "stimulusId": "AISSEE-T1-L1",
+      "stem": "What was Tenzin doing when he saw the stranger?",
+      "options": [
+        "Fetching water from the stream",
+        "Collecting wood for the fire",
+        "Bringing his goats home",
+        "Walking home from school"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The passage says he saw the stranger while he was bringing his goats home."
+    },
+    {
+      "id": "AISSEE-T1-013",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Inference",
+      "stimulusId": "AISSEE-T1-L1",
+      "stem": "How did Tenzin find the way back to the village?",
+      "options": [
+        "He asked other shepherds",
+        "He followed the stream downhill",
+        "He read the trekker's map",
+        "He walked towards the sunset"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Tenzin knew the path to the village always followed the stream downhill, so he led the trekker along its bank."
+    },
+    {
+      "id": "AISSEE-T1-014",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Word meaning",
+      "stimulusId": "AISSEE-T1-L1",
+      "stem": "In the passage, a 'trekker' is a person who:",
+      "options": [
+        "walks long distances in hills",
+        "looks after goats and sheep",
+        "sells goods from village to village",
+        "draws maps of mountains"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A trekker goes on long walks, usually in hills or mountains. The man here had lost his way while trekking."
+    },
+    {
+      "id": "AISSEE-T1-015",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeReading",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Inference",
+      "stimulusId": "AISSEE-T1-L1",
+      "stem": "What did the trekker mean by his words at the end?",
+      "options": [
+        "Tenzin should move to the city",
+        "Local knowledge helped more than maps",
+        "He had lost all of his maps",
+        "Maps do not work in winter"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "He was saying that a boy who knew his own land guided him better than any map could. Nothing says the maps were lost or useless in winter."
+    },
+    {
+      "id": "AISSEE-T1-016",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeReading",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Detail",
+      "stimulusId": "AISSEE-T1-L2",
+      "stem": "Why is the Olive Ridley turtle called 'Olive'?",
+      "options": [
+        "It eats olives",
+        "It nests near olive trees",
+        "Its shell is olive-green",
+        "It was found by a girl named Olive"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The first line says the turtle is named after the olive-green colour of its shell."
+    },
+    {
+      "id": "AISSEE-T1-017",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Word meaning",
+      "stimulusId": "AISSEE-T1-L2",
+      "stem": "What is an 'arribada'?",
+      "options": [
+        "A baby turtle hatching",
+        "A sandy beach in Odisha",
+        "The hard shell of a turtle",
+        "Many turtles nesting together"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The passage calls the mass nesting of thousands of females over a few nights an arribada, a Spanish word for 'arrival'."
+    },
+    {
+      "id": "AISSEE-T1-018",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeReading",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Detail",
+      "stimulusId": "AISSEE-T1-L2",
+      "stem": "How does a mother turtle dig her nest?",
+      "options": [
+        "With the edge of her shell",
+        "With her back flippers",
+        "With her front flippers",
+        "With her strong jaws"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The passage says each turtle digs a hole with her back flippers."
+    },
+    {
+      "id": "AISSEE-T1-019",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Detail",
+      "stimulusId": "AISSEE-T1-L2",
+      "stem": "How do the baby turtles find the sea?",
+      "options": [
+        "They smell the salt in the air",
+        "They move towards the brightest sky",
+        "They listen for the waves",
+        "They follow their mothers"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The babies move towards the brightest part of the sky, which is usually over the sea. Their mothers have already gone back to the sea."
+    },
+    {
+      "id": "AISSEE-T1-020",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeReading",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Inference",
+      "stimulusId": "AISSEE-T1-L2",
+      "stem": "Why can bright lights near the beach harm the baby turtles?",
+      "options": [
+        "They can lead them away from the sea",
+        "They make the sand too hot",
+        "They frighten away the fish",
+        "They wake up the mother turtles"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The babies head for the brightest light. A bright lamp on land can make them go the wrong way, away from the water."
+    },
+    {
+      "id": "AISSEE-T1-021",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeNumbers",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Roman numerals",
+      "stem": "What number does the Roman numeral LXXIV stand for?",
+      "options": [
+        "54",
+        "74",
+        "76",
+        "94"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "L = 50, XX = 20 and IV = 5 - 1 = 4, so LXXIV = 74. Reading IV as 6 gives 76."
+    },
+    {
+      "id": "AISSEE-T1-022",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeCommercial",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Unitary method",
+      "stem": "6 pens cost ₹84. What do 11 such pens cost?",
+      "options": [
+        "₹84",
+        "₹140",
+        "₹144",
+        "₹154"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "One pen costs 84 ÷ 6 = ₹14, so 11 pens cost 11 x 14 = ₹154. ₹84 is the price of only 6 pens."
+    },
+    {
+      "id": "AISSEE-T1-023",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeGeometry",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Area and perimeter",
+      "stem": "A room is 7 m long and 4.5 m wide. What is the area of its floor?",
+      "options": [
+        "11.5 sq m",
+        "23 sq m",
+        "28 sq m",
+        "31.5 sq m"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Area of a rectangle = length x breadth = 7 x 4.5 = 31.5 sq m. 23 m is the perimeter, 2 x (7 + 4.5), which is a length, not an area."
+    },
+    {
+      "id": "AISSEE-T1-024",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeNumbers",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "LCM and HCF",
+      "stem": "What is the LCM of 14 and 21?",
+      "options": [
+        "42",
+        "84",
+        "147",
+        "294"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "14 = 2 x 7 and 21 = 3 x 7, so the LCM is 2 x 3 x 7 = 42. 84 is a common multiple but not the lowest, and 294 is just 14 x 21."
+    },
+    {
+      "id": "AISSEE-T1-025",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeCommercial",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Ratio and proportion",
+      "stem": "84 sweets are shared between Asha and Kiran in the ratio 3 : 4. How many sweets does Kiran get?",
+      "options": [
+        "28",
+        "36",
+        "42",
+        "48"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "There are 3 + 4 = 7 parts, so one part is 84 ÷ 7 = 12. Kiran gets 4 parts: 4 x 12 = 48. Asha gets 36."
+    },
+    {
+      "id": "AISSEE-T1-026",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeGeometry",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Area and perimeter",
+      "stem": "The perimeter of a square is 52 cm. What is the length of one side?",
+      "options": [
+        "13 cm",
+        "26 cm",
+        "52 cm",
+        "208 cm"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "A square has 4 equal sides, so one side = 52 ÷ 4 = 13 cm. 26 cm is half the perimeter, and 208 cm comes from multiplying by 4 instead of dividing."
+    },
+    {
+      "id": "AISSEE-T1-027",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeNumbers",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "LCM and HCF",
+      "stem": "What is the HCF of 36 and 54?",
+      "options": [
+        "3",
+        "6",
+        "9",
+        "18"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "36 = 2 x 2 x 3 x 3 and 54 = 2 x 3 x 3 x 3. The common primes are 2 x 3 x 3 = 18. 6 and 9 are common factors, but not the highest."
+    },
+    {
+      "id": "AISSEE-T1-028",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeCommercial",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Profit and loss",
+      "stem": "A shopkeeper buys a toy for ₹250 and sells it for ₹290. What is his profit percent?",
+      "options": [
+        "14%",
+        "16%",
+        "20%",
+        "40%"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Profit = 290 - 250 = ₹40. Profit percent = 40/250 x 100 = 16%. Dividing by the selling price instead gives about 14%."
+    },
+    {
+      "id": "AISSEE-T1-029",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeGeometry",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Complementary and supplementary angles",
+      "stem": "What is the complement of an angle of 38 degrees?",
+      "options": [
+        "52 degrees",
+        "62 degrees",
+        "128 degrees",
+        "142 degrees"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Complementary angles add up to 90 degrees: 90 - 38 = 52. 142 is the supplement, from 180 - 38, and 128 comes from adding 38 to 90."
+    },
+    {
+      "id": "AISSEE-T1-030",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeNumbers",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Prime and composite numbers",
+      "stem": "How many prime numbers are there between 80 and 100?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The primes are 83, 89 and 97. 81 = 9 x 9, 87 = 3 x 29, 91 = 7 x 13, 93 = 3 x 31 and 99 = 9 x 11 are not prime."
+    },
+    {
+      "id": "AISSEE-T1-031",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeCommercial",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Profit and loss",
+      "stem": "A cycle bought for ₹1,500 is sold at a loss of ₹180. What is the selling price?",
+      "options": [
+        "₹1,220",
+        "₹1,320",
+        "₹1,380",
+        "₹1,680"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Selling price = cost price - loss = 1,500 - 180 = ₹1,320. Adding the loss gives ₹1,680."
+    },
+    {
+      "id": "AISSEE-T1-032",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeGeometry",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Complementary and supplementary angles",
+      "stem": "What is the supplement of an angle of 115 degrees?",
+      "options": [
+        "25 degrees",
+        "65 degrees",
+        "75 degrees",
+        "245 degrees"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Supplementary angles add up to 180 degrees: 180 - 115 = 65."
+    },
+    {
+      "id": "AISSEE-T1-033",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeNumbers",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Arranging fractions",
+      "stem": "Which of these fractions is the largest?",
+      "options": [
+        "7/9",
+        "3/4",
+        "5/6",
+        "4/5"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Compare with decimals: 5/6 is about 0.83, 4/5 = 0.8, 7/9 is about 0.78 and 3/4 = 0.75. So 5/6 is the largest."
+    },
+    {
+      "id": "AISSEE-T1-034",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeCommercial",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Average",
+      "stem": "What is the average of 23, 31, 27, 35 and 29?",
+      "options": [
+        "29",
+        "30",
+        "31",
+        "33"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Sum = 23 + 31 + 27 + 35 + 29 = 145. There are 5 numbers, so the average is 145 ÷ 5 = 29."
+    },
+    {
+      "id": "AISSEE-T1-035",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeGeometry",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Types of angles",
+      "stem": "What is an angle of exactly 180 degrees called?",
+      "options": [
+        "A reflex angle",
+        "A straight angle",
+        "A complete angle",
+        "An obtuse angle"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "An angle of 180 degrees makes a straight line. An obtuse angle is between 90 and 180, a reflex angle between 180 and 360, and a complete angle is 360."
+    },
+    {
+      "id": "AISSEE-T1-036",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeNumbers",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Decimal numbers",
+      "stem": "What is 4.5 + 2.75?",
+      "options": [
+        "6.25",
+        "6.8",
+        "7.25",
+        "7.8"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Write 4.5 as 4.50 so both numbers have two decimal places, line up the points and add: 4.50 + 2.75 = 7.25."
+    },
+    {
+      "id": "AISSEE-T1-037",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeCommercial",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Percentage",
+      "stem": "What is 15% of 260?",
+      "options": [
+        "26",
+        "39",
+        "45",
+        "52"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "10% of 260 is 26 and 5% is 13, so 15% is 26 + 13 = 39."
+    },
+    {
+      "id": "AISSEE-T1-038",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeGeometry",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Circle",
+      "stem": "A circle has a radius of 4.9 cm. What is its circumference? (Take π = 22/7.)",
+      "options": [
+        "9.8 cm",
+        "30.8 cm",
+        "61.6 cm",
+        "75.46 cm"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Circumference = 2 x π x r = 2 x 22/7 x 4.9 = 30.8 cm. 9.8 cm is the diameter, 61.6 comes from using the diameter in place of the radius, and 75.46 is the area in sq cm."
+    },
+    {
+      "id": "AISSEE-T1-039",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeNumbers",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Simplification",
+      "stem": "What is the value of 72 ÷ 8 x 3 - 5?",
+      "options": [
+        "2",
+        "12",
+        "22",
+        "32"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Divide and multiply from left to right first: 72 ÷ 8 = 9, then 9 x 3 = 27. Then subtract: 27 - 5 = 22."
+    },
+    {
+      "id": "AISSEE-T1-040",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeCommercial",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Percentage",
+      "stem": "A class has 40 children, and 35% of them are girls. How many boys are there?",
+      "options": [
+        "14",
+        "24",
+        "26",
+        "35"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Girls = 35% of 40 = 14, so boys = 40 - 14 = 26. 14 is the number of girls."
+    },
+    {
+      "id": "AISSEE-T1-041",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeGeometry",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Volume of cube and cuboid",
+      "stem": "What is the volume of a cube with edges of 9 cm?",
+      "options": [
+        "81 cu cm",
+        "243 cu cm",
+        "486 cu cm",
+        "729 cu cm"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Volume of a cube = edge x edge x edge = 9 x 9 x 9 = 729 cu cm. 81 is the area of only one face, 243 is 9 x 9 x 3, and 486 is the area of all six faces in sq cm, not a volume."
+    },
+    {
+      "id": "AISSEE-T1-042",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeNumbers",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Fractions",
+      "stem": "What is 5/8 of 96?",
+      "options": [
+        "12",
+        "36",
+        "60",
+        "72"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "1/8 of 96 is 12, so 5/8 of 96 is 5 x 12 = 60. 36 is 3/8 of 96."
+    },
+    {
+      "id": "AISSEE-T1-043",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeCommercial",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Simple interest",
+      "stem": "What is the simple interest on ₹2,000 at 6% per year for 3 years?",
+      "options": [
+        "₹36",
+        "₹120",
+        "₹180",
+        "₹360"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Simple interest = principal x rate x time ÷ 100 = 2,000 x 6 x 3 ÷ 100 = ₹360. ₹120 is the interest for 1 year only."
+    },
+    {
+      "id": "AISSEE-T1-044",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeGeometry",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Volume of cube and cuboid",
+      "stem": "A box is 12 cm long, 5 cm wide and 4 cm high. What is its volume?",
+      "options": [
+        "21 cu cm",
+        "60 cu cm",
+        "120 cu cm",
+        "240 cu cm"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Volume of a cuboid = length x breadth x height = 12 x 5 x 4 = 240 cu cm. 21 is what you get by adding the sides."
+    },
+    {
+      "id": "AISSEE-T1-045",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeNumbers",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Fractions",
+      "stem": "What is 11/12 - 5/12 in its simplest form?",
+      "options": [
+        "16/12",
+        "6/24",
+        "1/3",
+        "1/2"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Subtract the numerators and keep the denominator: 11 - 5 = 6, so 6/12, which simplifies to 1/2."
+    },
+    {
+      "id": "AISSEE-T1-046",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeCommercial",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Speed and time",
+      "stem": "A cyclist rides at 12 km per hour. How far does she go in 2 hours 30 minutes?",
+      "options": [
+        "24 km",
+        "28 km",
+        "30 km",
+        "36 km"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "2 hours 30 minutes is 2.5 hours, and 12 x 2.5 = 30 km. Ignoring the half hour gives 24 km, and rounding up to 3 hours gives 36 km."
+    },
+    {
+      "id": "AISSEE-T1-047",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeGeometry",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Conversion of units",
+      "stem": "How many millilitres are there in 2.35 litres?",
+      "options": [
+        "235",
+        "2,035",
+        "2,350",
+        "23,500"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "1 litre = 1,000 mL, so 2.35 litres = 2.35 x 1,000 = 2,350 mL."
+    },
+    {
+      "id": "AISSEE-T1-048",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeNumbers",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Operations on numbers",
+      "stem": "A number is multiplied by 7 and then 18 is added. The answer is 109. What is the number?",
+      "options": [
+        "13",
+        "15",
+        "16",
+        "18"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Work backwards: 109 - 18 = 91, and 91 ÷ 7 = 13. Check: 13 x 7 + 18 = 109."
+    },
+    {
+      "id": "AISSEE-T1-049",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeCommercial",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Speed and time",
+      "stem": "A train covers 225 km in 2 hours 30 minutes. What is its average speed?",
+      "options": [
+        "75 km/h",
+        "85 km/h",
+        "90 km/h",
+        "112.5 km/h"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "2 hours 30 minutes = 2.5 hours, and 225 ÷ 2.5 = 90 km/h. Dividing by 2 alone gives 112.5, and by 3 gives 75."
+    },
+    {
+      "id": "AISSEE-T1-050",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeGeometry",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Conversion of units",
+      "stem": "How many paise are there in ₹7.05?",
+      "options": [
+        "75",
+        "705",
+        "750",
+        "7,005"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "₹1 = 100 paise, so ₹7.05 = 7 x 100 + 5 = 705 paise. 750 would be ₹7.50."
+    },
+    {
+      "id": "AISSEE-T1-051",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeNumbers",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Natural numbers",
+      "stem": "What is the difference between the place values of the two 5s in 5,25,341?",
+      "options": [
+        "4,95,000",
+        "4,99,995",
+        "5,00,000",
+        "5,05,000"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The first 5 is in the lakhs place (5,00,000) and the second in the thousands place (5,000). 5,00,000 - 5,000 = 4,95,000. Subtracting the face value 5 instead gives 4,99,995."
+    },
+    {
+      "id": "AISSEE-T1-052",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeCommercial",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Unitary method",
+      "stem": "5 masons can build a hut in 36 days. Working at the same speed, how many days would 9 masons take?",
+      "options": [
+        "20 days",
+        "32 days",
+        "40 days",
+        "45 days"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The job takes 5 x 36 = 180 mason-days. With 9 masons it takes 180 ÷ 9 = 20 days. More masons means fewer days, so 40 (adding 4 days for the 4 extra masons) cannot be right, and 32 (taking away just 4 days) is far too many."
+    },
+    {
+      "id": "AISSEE-T1-053",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeGeometry",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Temperature",
+      "stem": "At 6 am the temperature in Leh was -4 °C. By noon it had risen by 11 °C. What was the temperature at noon?",
+      "options": [
+        "-7 °C",
+        "7 °C",
+        "11 °C",
+        "15 °C"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Start at -4 and count up 11: -4 + 11 = 7 °C. 15 comes from adding 4 and 11 as if both were above zero."
+    },
+    {
+      "id": "AISSEE-T1-054",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeNumbers",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Prime and composite numbers",
+      "stem": "Which of these numbers is composite?",
+      "options": [
+        "47",
+        "51",
+        "53",
+        "59"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "51 = 3 x 17, so it has factors other than 1 and itself. 47, 53 and 59 are prime. A quick check for 3: 5 + 1 = 6, which divides by 3."
+    },
+    {
+      "id": "AISSEE-T1-055",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeCommercial",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Ratio and proportion",
+      "stem": "What is the ratio of 45 minutes to 2 hours in its simplest form?",
+      "options": [
+        "45 : 2",
+        "9 : 20",
+        "8 : 3",
+        "3 : 8"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Use the same unit first: 2 hours = 120 minutes. 45 : 120, divided by 15, is 3 : 8."
+    },
+    {
+      "id": "AISSEE-T1-056",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeGeometry",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Plane figures",
+      "stem": "How many diagonals does a pentagon (a five-sided figure) have?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "From each of the 5 corners you can draw 2 diagonals, which makes 10, but each diagonal has been counted from both its ends: 10 ÷ 2 = 5. Two is the number from one corner only."
+    },
+    {
+      "id": "AISSEE-T1-057",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeNumbers",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Natural numbers",
+      "stem": "Which digit should replace * so that 6*4 can be divided exactly by 9?",
+      "options": [
+        "2",
+        "5",
+        "8",
+        "9"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "A number divides by 9 when its digits add to a multiple of 9. 6 + 4 = 10, and 10 + 8 = 18. So the number is 684 = 9 x 76."
+    },
+    {
+      "id": "AISSEE-T1-058",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeCommercial",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Average",
+      "stem": "The average age of 4 friends is 11 years. A fifth friend aged 16 joins them. What is the new average age?",
+      "options": [
+        "11 years",
+        "12 years",
+        "13 years",
+        "13.5 years"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The 4 friends' ages add to 4 x 11 = 44. With the fifth friend the total is 60, and 60 ÷ 5 = 12 years."
+    },
+    {
+      "id": "AISSEE-T1-059",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeGeometry",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Area and perimeter",
+      "stem": "A rectangle 13 cm long and 10 cm wide is cut along a diagonal into two equal triangles. What is the area of one triangle?",
+      "options": [
+        "23 sq cm",
+        "46 sq cm",
+        "65 sq cm",
+        "130 sq cm"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The rectangle's area is 13 x 10 = 130 sq cm, and each triangle is half of it: 65 sq cm. 130 is the whole rectangle, and 23 and 46 come from adding the sides."
+    },
+    {
+      "id": "AISSEE-T1-060",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeNumbers",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Arranging fractions",
+      "stem": "Which shows 2/3, 3/4 and 5/8 in ascending order (smallest first)?",
+      "options": [
+        "5/8, 2/3, 3/4",
+        "2/3, 3/4, 5/8",
+        "2/3, 5/8, 3/4",
+        "3/4, 2/3, 5/8"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "With a common denominator of 24: 5/8 = 15/24, 2/3 = 16/24 and 3/4 = 18/24. So 5/8 is smallest and 3/4 largest."
+    },
+    {
+      "id": "AISSEE-T1-061",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeReasoning",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Verbal analogy",
+      "stem": "Pen is to writer as brush is to:",
+      "options": [
+        "colour",
+        "painter",
+        "canvas",
+        "wall"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A writer works with a pen; a painter works with a brush. Canvas and colour are things a painter uses, not the person."
+    },
+    {
+      "id": "AISSEE-T1-062",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeReasoning",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Mathematical analogy",
+      "stem": "4 : 64 :: 5 : ?",
+      "options": [
+        "25",
+        "80",
+        "100",
+        "125"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "64 is 4 x 4 x 4, the cube of 4. In the same way the answer is 5 x 5 x 5 = 125. 25 is only 5 x 5."
+    },
+    {
+      "id": "AISSEE-T1-063",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeReasoning",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Classification",
+      "stem": "Which is the odd one out? Kite, aeroplane, helicopter, submarine",
+      "options": [
+        "Helicopter",
+        "Aeroplane",
+        "Kite",
+        "Submarine"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A kite, an aeroplane and a helicopter move through the air. A submarine moves under water."
+    },
+    {
+      "id": "AISSEE-T1-064",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeReasoning",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Classification",
+      "stem": "Which number is the odd one out? 25, 49, 64, 90",
+      "options": [
+        "25",
+        "49",
+        "64",
+        "90"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "25 = 5 x 5, 49 = 7 x 7 and 64 = 8 x 8 are square numbers. 90 is not the square of any whole number: 9 x 9 = 81 and 10 x 10 = 100."
+    },
+    {
+      "id": "AISSEE-T1-065",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeReasoning",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "Which number comes next? 4, 5, 9, 18, 34, ...",
+      "options": [
+        "50",
+        "52",
+        "59",
+        "68"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The gaps are 1, 4, 9, 16, the square numbers, so the next gap is 25: 34 + 25 = 59."
+    },
+    {
+      "id": "AISSEE-T1-066",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeReasoning",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Letter series",
+      "stem": "Which letter comes next? Y, X, V, S, O, ...",
+      "options": [
+        "I",
+        "K",
+        "L",
+        "J"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Going back through the alphabet, the gaps grow by one: Y -1 X -2 V -3 S -4 O -5 J."
+    },
+    {
+      "id": "AISSEE-T1-067",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeReasoning",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Coding",
+      "stem": "If GARDEN is written as FZQCDM, how is FLOWER written in the same code?",
+      "options": [
+        "EKNVQD",
+        "EKNVDQ",
+        "GMPXFS",
+        "EKMVDQ"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Each letter moves one place back in the alphabet: G to F, A to Z, R to Q. So F, L, O, W, E, R become E, K, N, V, D, Q."
+    },
+    {
+      "id": "AISSEE-T1-068",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeReasoning",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Familial relations",
+      "stem": "Pointing to a girl in a photo, Neeraj says, \"Her father is my father's only brother.\" How is the girl related to Neeraj?",
+      "options": [
+        "Sister",
+        "Aunt",
+        "Cousin",
+        "Niece"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Neeraj's father's brother is Neeraj's uncle, and the uncle's daughter is Neeraj's cousin. A sister would share Neeraj's own father."
+    },
+    {
+      "id": "AISSEE-T1-069",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeReasoning",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Familial relations",
+      "stem": "P is Q's brother. R is P's father. S is R's mother. How is S related to Q?",
+      "options": [
+        "Sister",
+        "Mother",
+        "Aunt",
+        "Grandmother"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "R is the father of both P and Q, and S is R's mother, so S is Q's grandmother (father's mother)."
+    },
+    {
+      "id": "AISSEE-T1-070",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeReasoning",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Directions",
+      "stem": "Sohan walks 7 km south, turns right and walks 6 km, then turns right again and walks 4 km. In which direction is he now from his starting point?",
+      "options": [
+        "South-west",
+        "North-west",
+        "South-east",
+        "North-east"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Facing south, a right turn faces him west, and another right faces him north. He has gone 6 km west, and 7 km south but only 4 km back north, so he is still 3 km south. West and south together: south-west."
+    },
+    {
+      "id": "AISSEE-T1-071",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeReasoning",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Ranking",
+      "stem": "In a row of 31 children, Kavya is 12th from the left. What is her position from the right?",
+      "options": [
+        "21st",
+        "18th",
+        "20th",
+        "19th"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Position from the right = total - position from the left + 1 = 31 - 12 + 1 = 20. Forgetting to add 1 gives 19th."
+    },
+    {
+      "id": "AISSEE-T1-072",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeReasoning",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Critical thinking",
+      "stem": "Anu is taller than Bela. Bela is taller than Chitra. Dia is taller than Anu. Who is the shortest?",
+      "options": [
+        "Chitra",
+        "Bela",
+        "Anu",
+        "Dia"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "From tallest to shortest: Dia, Anu, Bela, Chitra. So Chitra is the shortest."
+    },
+    {
+      "id": "AISSEE-T1-073",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeReasoning",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Mathematical pattern",
+      "stem": "Look at the table and find the missing number.\n\n| First | Second | Third |\n|---|---|---|\n| 3 | 4 | 12 |\n| 5 | 6 | 30 |\n| 7 | 2 | ? |",
+      "options": [
+        "5",
+        "9",
+        "12",
+        "14"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "In each row the third number is the first multiplied by the second: 3 x 4 = 12, 5 x 6 = 30, so 7 x 2 = 14. 9 comes from adding."
+    },
+    {
+      "id": "AISSEE-T1-074",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeReasoning",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Visual reasoning",
+      "stem": "In a triangle, two straight lines are drawn from the top corner down to the base, dividing it into three smaller triangles side by side. How many triangles of any size are there in the figure now?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "There are 3 small triangles, 2 made of two neighbouring small ones, and the whole big triangle: 3 + 2 + 1 = 6."
+    },
+    {
+      "id": "AISSEE-T1-075",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeReasoning",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Verbal analogy",
+      "stem": "Doctor is to hospital as farmer is to:",
+      "options": [
+        "field",
+        "village",
+        "tractor",
+        "crop"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A doctor works in a hospital; a farmer works in a field. A tractor and crops are things a farmer uses or grows."
+    },
+    {
+      "id": "AISSEE-T1-076",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeReasoning",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Classification",
+      "stem": "Which is the odd one out? Cube, cuboid, cylinder, square",
+      "options": [
+        "Square",
+        "Cube",
+        "Cuboid",
+        "Cylinder"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A cube, a cuboid and a cylinder are solid shapes with length, breadth and height. A square is a flat shape."
+    },
+    {
+      "id": "AISSEE-T1-077",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeReasoning",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "Which number comes next? 5, 8, 14, 23, 35, ...",
+      "options": [
+        "47",
+        "48",
+        "50",
+        "52"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The gaps are 3, 6, 9, 12, so the next gap is 15: 35 + 15 = 50."
+    },
+    {
+      "id": "AISSEE-T1-078",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeReasoning",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Coding",
+      "stem": "If A = 1, B = 2, C = 3 and so on, what is the total for the word DOG?",
+      "options": [
+        "24",
+        "25",
+        "26",
+        "27"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "D = 4, O = 15 and G = 7, and 4 + 15 + 7 = 26."
+    },
+    {
+      "id": "AISSEE-T1-079",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeReasoning",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Critical thinking",
+      "stem": "Today is Tuesday. What day of the week will it be 52 days from today?",
+      "options": [
+        "Friday",
+        "Wednesday",
+        "Thursday",
+        "Saturday"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Every 7 days the same day comes back. 52 = 7 x 7 + 3, so it is 3 days after Tuesday: Friday."
+    },
+    {
+      "id": "AISSEE-T1-080",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeReasoning",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Mathematical pattern",
+      "stem": "If 6 becomes 36 and 9 becomes 81, what does 12 become?",
+      "options": [
+        "121",
+        "124",
+        "132",
+        "144"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Each number is multiplied by itself: 6 x 6 = 36, 9 x 9 = 81, so 12 x 12 = 144."
+    },
+    {
+      "id": "AISSEE-T1-081",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeIndia",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "National symbols",
+      "stem": "Which animal was declared India's National Heritage Animal in 2010?",
+      "options": [
+        "Elephant",
+        "Tiger",
+        "Asiatic lion",
+        "Ganges river dolphin"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The elephant was declared the National Heritage Animal in 2010 to help protect it. The tiger is the national animal and the Ganges river dolphin the national aquatic animal."
+    },
+    {
+      "id": "AISSEE-T1-082",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Solar system",
+      "stem": "Which planet takes the longest time to go once around the Sun?",
+      "options": [
+        "Jupiter",
+        "Neptune",
+        "Uranus",
+        "Saturn"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Neptune is the planet farthest from the Sun, so its path is the longest: one trip takes about 165 Earth years. Jupiter is the largest planet, not the slowest."
+    },
+    {
+      "id": "AISSEE-T1-083",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeIndia",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "National symbols",
+      "stem": "The national motto 'Satyameva Jayate', written below the State Emblem, means:",
+      "options": [
+        "Service before self",
+        "Unity in diversity",
+        "Work is worship",
+        "Truth alone triumphs"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Satyameva Jayate, from the Mundaka Upanishad, means 'Truth alone triumphs'. It is written in Devanagari below the lions of the emblem."
+    },
+    {
+      "id": "AISSEE-T1-084",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Our Earth",
+      "stem": "About how long does the Earth take to go once around the Sun?",
+      "options": [
+        "About 365 days",
+        "About 7 days",
+        "About 30 days",
+        "About 24 hours"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "One trip around the Sun takes about 365 days, which is one year. 24 hours is the time the Earth takes to spin once on its own axis."
+    },
+    {
+      "id": "AISSEE-T1-085",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeIndia",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Art and culture",
+      "stem": "Phulkari, bright flower embroidery on shawls and dupattas, is a craft of which state?",
+      "options": [
+        "Assam",
+        "Punjab",
+        "Odisha",
+        "Kerala"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Phulkari means 'flower work'. Women of Punjab have long stitched it in bright silk thread on shawls and dupattas."
+    },
+    {
+      "id": "AISSEE-T1-086",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Water cycle",
+      "stem": "In the water cycle, what do we call water falling from clouds as rain, snow or hail?",
+      "options": [
+        "Irrigation",
+        "Condensation",
+        "Precipitation",
+        "Evaporation"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Rain, snow and hail are all precipitation. Evaporation takes water up into the air, and condensation forms the clouds."
+    },
+    {
+      "id": "AISSEE-T1-087",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeIndia",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Art and culture",
+      "stem": "Living root bridges, grown by guiding the roots of rubber fig trees across streams, are found in which state?",
+      "options": [
+        "Sikkim",
+        "Kerala",
+        "Meghalaya",
+        "Goa"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The Khasi and Jaintia people of Meghalaya guide the roots of rubber fig trees across streams for many years until they form strong bridges."
+    },
+    {
+      "id": "AISSEE-T1-088",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Energy",
+      "stem": "Which of these is a renewable source of energy?",
+      "options": [
+        "Petroleum",
+        "Wind",
+        "Natural gas",
+        "Coal"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Wind will not run out however much we use it. Coal, petroleum and natural gas took millions of years to form and cannot be replaced."
+    },
+    {
+      "id": "AISSEE-T1-089",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeIndia",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Indian defence",
+      "stem": "On which date is Navy Day celebrated in India every year?",
+      "options": [
+        "8 October",
+        "26 January",
+        "4 December",
+        "15 January"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Navy Day on 4 December marks the Indian Navy's attack on Karachi harbour in 1971. 15 January is Army Day and 8 October is Air Force Day."
+    },
+    {
+      "id": "AISSEE-T1-090",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Natural calamities",
+      "stem": "A long time with very little or no rain, when wells and crops dry up, is called a:",
+      "options": [
+        "cyclone",
+        "drought",
+        "landslide",
+        "flood"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A drought comes when the rains fail for a long time. A flood is the opposite, too much water, and a cyclone is a storm with strong spinning winds."
+    },
+    {
+      "id": "AISSEE-T1-091",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeIndia",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Indian defence",
+      "stem": "Where is the National Defence Academy, which trains cadets for all three services?",
+      "options": [
+        "Dundigal, near Hyderabad",
+        "Ezhimala, Kerala",
+        "Khadakwasla, near Pune",
+        "Dehradun, Uttarakhand"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The NDA is at Khadakwasla near Pune. Dehradun has the Indian Military Academy, Ezhimala the Indian Naval Academy and Dundigal the Air Force Academy."
+    },
+    {
+      "id": "AISSEE-T1-092",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Digestion",
+      "stem": "Digestion of starchy food such as rice begins in the mouth because of:",
+      "options": [
+        "stomach acid",
+        "water",
+        "saliva",
+        "bile"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Saliva has a substance that starts breaking starch down into sugar. That is why a piece of chapati tastes sweet if you chew it for a long time."
+    },
+    {
+      "id": "AISSEE-T1-093",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeIndia",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Sports",
+      "stem": "National Sports Day in India is celebrated on the birthday of which hockey player?",
+      "options": [
+        "Dhanraj Pillay",
+        "Balbir Singh",
+        "Major Dhyan Chand",
+        "Roop Singh"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "National Sports Day, 29 August, marks the birthday of Major Dhyan Chand, who won Olympic gold medals with the Indian hockey team in 1928, 1932 and 1936."
+    },
+    {
+      "id": "AISSEE-T1-094",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Food preservation",
+      "stem": "Mango pickle stays good for months mainly because it is kept in:",
+      "options": [
+        "a cloth bag",
+        "plain water",
+        "salt and oil",
+        "sugar and milk"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Germs cannot grow well in a lot of salt and oil, so pickles last long. Water and milk would help germs grow."
+    },
+    {
+      "id": "AISSEE-T1-095",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeIndia",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Sports",
+      "stem": "In kabaddi, what is the player who goes into the other team's half called?",
+      "options": [
+        "Striker",
+        "Keeper",
+        "Raider",
+        "Bowler"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The raider crosses into the other half, tries to touch defenders and must get back while chanting 'kabaddi' in one breath."
+    },
+    {
+      "id": "AISSEE-T1-096",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Scientific devices",
+      "stem": "Which device is used to measure the temperature of a person's body?",
+      "options": [
+        "Clinical thermometer",
+        "Rain gauge",
+        "Speedometer",
+        "Barometer"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A doctor or nurse uses a clinical thermometer to check for fever. A barometer measures air pressure, a rain gauge rainfall and a speedometer the speed of a vehicle."
+    },
+    {
+      "id": "AISSEE-T1-097",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeIndia",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Organisations",
+      "stem": "UNICEF is a United Nations body that works mainly for:",
+      "options": [
+        "children",
+        "workers",
+        "farmers",
+        "soldiers"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "UNICEF, the United Nations Children's Fund, works for children's health, food, schooling and safety around the world."
+    },
+    {
+      "id": "AISSEE-T1-098",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Microbial diseases",
+      "stem": "Cholera spreads mainly through:",
+      "options": [
+        "cold weather",
+        "dirty drinking water",
+        "dog bites",
+        "mosquito bites"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Cholera germs spread through water and food made dirty by sewage. Boiling drinking water and washing hands help prevent it."
+    },
+    {
+      "id": "AISSEE-T1-099",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeIndia",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "India at a glance",
+      "stem": "India Gate, a war memorial with the names of Indian soldiers carved on it, stands in which city?",
+      "options": [
+        "Jaipur",
+        "Mumbai",
+        "Kolkata",
+        "New Delhi"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "India Gate stands on Kartavya Path in New Delhi. It remembers Indian soldiers who died in the First World War and other wars of that time. The Gateway of India, with a similar name, is in Mumbai."
+    },
+    {
+      "id": "AISSEE-T1-100",
+      "section": "ais",
+      "test": 1,
+      "module": 1,
+      "domain": "aisseeScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Young ones of animals",
+      "stem": "A baby kangaroo, which grows in a pouch on its mother's body, is called a:",
+      "options": [
+        "joey",
+        "kid",
+        "cub",
+        "foal"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A baby kangaroo is a joey. A cub is a young lion or bear, a foal a young horse and a kid a young goat."
+    },
+    {
+      "id": "AISSEE-T2-001",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Preposition",
+      "stem": "Choose the correct word: \"My sister was born ___ 2016.\"",
+      "options": [
+        "in",
+        "on",
+        "at",
+        "since"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Use 'in' with years and months, 'on' with days and dates and 'at' with clock times."
+    },
+    {
+      "id": "AISSEE-T2-002",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Spelling",
+      "stem": "Which word is spelt correctly?",
+      "options": [
+        "Neighbur",
+        "Nieghbour",
+        "Neighbour",
+        "Naighbour"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Neighbour is spelt n-e-i-g-h-b-o-u-r. Remember 'ei' after n, as in 'eight'."
+    },
+    {
+      "id": "AISSEE-T2-003",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Kinds of nouns",
+      "stem": "In \"Honesty is the best policy\", the word 'honesty' is:",
+      "options": [
+        "an abstract noun",
+        "a collective noun",
+        "a material noun",
+        "a proper noun"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Honesty is a quality we cannot see or touch, so it is an abstract noun."
+    },
+    {
+      "id": "AISSEE-T2-004",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Pronouns",
+      "stem": "Choose the correct word: \"Rina and ___ went to the market.\"",
+      "options": [
+        "mine",
+        "myself",
+        "I",
+        "me"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The pronoun is part of the subject, so it takes the subject form 'I'. Leave out 'Rina and' to check: 'I went', not 'me went'."
+    },
+    {
+      "id": "AISSEE-T2-005",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Adverbs",
+      "stem": "Which word is an adverb in \"The tortoise walked slowly to the river\"?",
+      "options": [
+        "Walked",
+        "Slowly",
+        "Tortoise",
+        "River"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "'Slowly' tells us how the tortoise walked, so it is an adverb. 'Walked' is the verb."
+    },
+    {
+      "id": "AISSEE-T2-006",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Adjectives",
+      "stem": "Which word is an adjective in \"The tall girl won the race\"?",
+      "options": [
+        "Race",
+        "Won",
+        "Girl",
+        "Tall"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "'Tall' describes the girl, so it is an adjective."
+    },
+    {
+      "id": "AISSEE-T2-007",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Ordering of words",
+      "stem": "Arrange the words to make a correct sentence: school / to / every day / walks / Kabir",
+      "options": [
+        "Every day school walks to Kabir.",
+        "To school every day Kabir walks.",
+        "Kabir to school walks every day.",
+        "Kabir walks to school every day."
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "An English sentence usually goes subject, verb, then the rest: Kabir (subject) walks (verb) to school every day."
+    },
+    {
+      "id": "AISSEE-T2-008",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Interjection",
+      "stem": "Which word is an interjection? \"___! We have won the match.\"",
+      "options": [
+        "Hurray",
+        "Quickly",
+        "Because",
+        "Under"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "An interjection shows a sudden feeling, like joy: Hurray! 'Because' joins clauses, 'quickly' is an adverb and 'under' is a preposition."
+    },
+    {
+      "id": "AISSEE-T2-009",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Confusing words",
+      "stem": "Choose the correct word: \"The students left ___ bags in the hall.\"",
+      "options": [
+        "their",
+        "theirs",
+        "there",
+        "they're"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "'Their' shows belonging (the bags belong to the students). 'There' is a place and 'they're' means 'they are'."
+    },
+    {
+      "id": "AISSEE-T2-010",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Rhyming words",
+      "stem": "Which word rhymes with 'bright'?",
+      "options": [
+        "Bring",
+        "Bread",
+        "Brick",
+        "Kite"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Bright and kite end with the same sound, '-ite'. Bring, brick and bread only begin like bright."
+    },
+    {
+      "id": "AISSEE-T2-011",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeReading",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Detail",
+      "stimulusId": "AISSEE-T2-L1",
+      "stem": "What was Rohan afraid of?",
+      "options": [
+        "The dark",
+        "Loud noises",
+        "His aunt",
+        "Water"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The first line says Rohan was nine and afraid of water."
+    },
+    {
+      "id": "AISSEE-T2-012",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeReading",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Detail",
+      "stimulusId": "AISSEE-T2-L1",
+      "stem": "Who helped Rohan learn to swim?",
+      "options": [
+        "His cousins",
+        "His aunt",
+        "His grandfather",
+        "His school teacher"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "His aunt, who had once been a swimming coach, took him to the shallow end and taught him."
+    },
+    {
+      "id": "AISSEE-T2-013",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeReading",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Inference",
+      "stimulusId": "AISSEE-T2-L1",
+      "stem": "What did the aunt mean by 'the right key'?",
+      "options": [
+        "A key to open the pond gate",
+        "A present from his cousins",
+        "A trick for winning a race",
+        "A slow, careful way to face fear"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "She compared fear to a locked door. The key was the step-by-step way she taught him: bubbles first, then floating, then swimming."
+    },
+    {
+      "id": "AISSEE-T2-014",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Sequence",
+      "stimulusId": "AISSEE-T2-L1",
+      "stem": "What did Rohan learn first?",
+      "options": [
+        "To jump in from the steps",
+        "To swim across the pond",
+        "To blow bubbles in the water",
+        "To float on his back"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "First he learnt to put his face in the water and blow bubbles. Floating came next, and swimming across the pond came at the end of the summer."
+    },
+    {
+      "id": "AISSEE-T2-015",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Word meaning",
+      "stimulusId": "AISSEE-T2-L1",
+      "stem": "In the passage, to 'float' means to:",
+      "options": [
+        "swim very fast",
+        "jump into the water",
+        "sink to the bottom",
+        "stay on top of the water"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Rohan learnt to float, lying on the water without sinking, while his aunt held his hands."
+    },
+    {
+      "id": "AISSEE-T2-016",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeReading",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Detail",
+      "stimulusId": "AISSEE-T2-L2",
+      "stem": "According to the passage, a firefly is really a kind of:",
+      "options": [
+        "moth",
+        "beetle",
+        "fly",
+        "bee"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The passage says that although they are called flies, fireflies are really a kind of beetle."
+    },
+    {
+      "id": "AISSEE-T2-017",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeReading",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Detail",
+      "stimulusId": "AISSEE-T2-L2",
+      "stem": "Where does a firefly make its light?",
+      "options": [
+        "Inside its eyes",
+        "On top of its head",
+        "At the end of its body",
+        "On its wings"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "It makes light in a special part at the end of its body."
+    },
+    {
+      "id": "AISSEE-T2-018",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Detail",
+      "stimulusId": "AISSEE-T2-L2",
+      "stem": "Why is a firefly's light called 'cold light'?",
+      "options": [
+        "It is a pale blue colour",
+        "It gives off almost no heat",
+        "It cools the air around it",
+        "It is seen only in winter"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Almost none of the energy is lost as heat, unlike an old-style bulb, which becomes too hot to touch."
+    },
+    {
+      "id": "AISSEE-T2-019",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Detail",
+      "stimulusId": "AISSEE-T2-L2",
+      "stem": "Why do fireflies flash their lights?",
+      "options": [
+        "To find partners",
+        "To scare off birds",
+        "To keep themselves warm",
+        "To see in the dark"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The passage says fireflies flash their lights to find partners, each kind with its own pattern."
+    },
+    {
+      "id": "AISSEE-T2-020",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Title",
+      "stimulusId": "AISSEE-T2-L2",
+      "stem": "Which is the best title for the passage?",
+      "options": [
+        "Nature's Tiny Lanterns",
+        "How Bulbs Are Made",
+        "Beetles of the Desert",
+        "Street Lights at Night"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The whole passage is about fireflies and their light. Street lights and bulbs are mentioned only in passing."
+    },
+    {
+      "id": "AISSEE-T2-021",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeNumbers",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Roman numerals",
+      "stem": "Which Roman numeral stands for 90?",
+      "options": [
+        "LC",
+        "XC",
+        "XXC",
+        "CX"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A smaller numeral before a larger one is subtracted: XC = 100 - 10 = 90. CX is 100 + 10 = 110."
+    },
+    {
+      "id": "AISSEE-T2-022",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeCommercial",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Unitary method",
+      "stem": "A car uses 9 litres of petrol to travel 117 km. How far can it travel on 14 litres?",
+      "options": [
+        "126 km",
+        "154 km",
+        "168 km",
+        "182 km"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "On 1 litre it goes 117 ÷ 9 = 13 km, so on 14 litres it goes 14 x 13 = 182 km. 126 km comes from multiplying 9 x 14."
+    },
+    {
+      "id": "AISSEE-T2-023",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeGeometry",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Area and perimeter",
+      "stem": "A square has the same area as a rectangle 16 cm long and 9 cm wide. How long is a side of the square?",
+      "options": [
+        "12 cm",
+        "12.5 cm",
+        "25 cm",
+        "144 cm"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The rectangle's area is 16 x 9 = 144 sq cm. A square with area 144 sq cm has sides of 12 cm, since 12 x 12 = 144. 12.5 cm would give the same perimeter, not the same area."
+    },
+    {
+      "id": "AISSEE-T2-024",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeNumbers",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "LCM and HCF",
+      "stem": "What is the LCM of 8 and 14?",
+      "options": [
+        "2",
+        "28",
+        "56",
+        "112"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "8 = 2 x 2 x 2 and 14 = 2 x 7, so the LCM is 2 x 2 x 2 x 7 = 56. 112 is 8 x 14, a common multiple but not the lowest, and 2 is the HCF."
+    },
+    {
+      "id": "AISSEE-T2-025",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeCommercial",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Ratio and proportion",
+      "stem": "The ratio of boys to girls in a club is 5 : 3. There are 35 boys. How many girls are there?",
+      "options": [
+        "15",
+        "21",
+        "25",
+        "56"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "5 parts = 35 boys, so 1 part = 7. Girls = 3 parts = 21. 56 is the total number of children."
+    },
+    {
+      "id": "AISSEE-T2-026",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeGeometry",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Area and perimeter",
+      "stem": "A field 45 m long and 30 m wide is fenced with 3 rounds of wire. How much wire is needed?",
+      "options": [
+        "75 m",
+        "150 m",
+        "300 m",
+        "450 m"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "One round is the perimeter: 2 x (45 + 30) = 150 m. Three rounds need 3 x 150 = 450 m."
+    },
+    {
+      "id": "AISSEE-T2-027",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeNumbers",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "LCM and HCF",
+      "stem": "What is the HCF of 45 and 75?",
+      "options": [
+        "3",
+        "5",
+        "9",
+        "15"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "45 = 3 x 3 x 5 and 75 = 3 x 5 x 5. The common part is 3 x 5 = 15. 3 and 5 are common factors but not the highest, and 9 does not divide 75."
+    },
+    {
+      "id": "AISSEE-T2-028",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeCommercial",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Profit and loss",
+      "stem": "A fruit seller buys 12 mangoes for ₹180 and sells each mango for ₹19. What is her total profit?",
+      "options": [
+        "₹4",
+        "₹36",
+        "₹48",
+        "₹228"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Each mango costs 180 ÷ 12 = ₹15. She makes 19 - 15 = ₹4 on each, so 12 x 4 = ₹48 in all. ₹228 is what she receives."
+    },
+    {
+      "id": "AISSEE-T2-029",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeGeometry",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Lines and angles",
+      "stem": "Two angles of a triangle are 65 degrees and 48 degrees. What is the third angle?",
+      "options": [
+        "67 degrees",
+        "113 degrees",
+        "115 degrees",
+        "132 degrees"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The angles of a triangle add up to 180 degrees. 65 + 48 = 113, and 180 - 113 = 67. 113 is only the sum of the two given angles."
+    },
+    {
+      "id": "AISSEE-T2-030",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeNumbers",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Prime and composite numbers",
+      "stem": "What is the sum of the prime numbers between 20 and 30?",
+      "options": [
+        "23",
+        "48",
+        "52",
+        "75"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The only primes between 20 and 30 are 23 and 29, and 23 + 29 = 52. 21, 25 and 27 are not prime."
+    },
+    {
+      "id": "AISSEE-T2-031",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeCommercial",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Profit and loss",
+      "stem": "An article bought for ₹400 is sold for ₹460. What is the profit percent?",
+      "options": [
+        "12%",
+        "13%",
+        "15%",
+        "60%"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Profit = ₹60, and profit percent = 60/400 x 100 = 15%. Using the selling price, 60/460, gives about 13%."
+    },
+    {
+      "id": "AISSEE-T2-032",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeGeometry",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Complementary and supplementary angles",
+      "stem": "Two angles are complementary, and one is twice the other. What is the larger angle?",
+      "options": [
+        "30 degrees",
+        "45 degrees",
+        "60 degrees",
+        "120 degrees"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The angles add to 90, and together they make 3 equal parts, so one part is 30. The larger angle is 2 parts = 60. 120 would come from using 180."
+    },
+    {
+      "id": "AISSEE-T2-033",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeNumbers",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Decimal numbers",
+      "stem": "What is 0.6 x 0.4?",
+      "options": [
+        "0.024",
+        "0.24",
+        "2.4",
+        "24"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "6 x 4 = 24, and the two numbers have one decimal place each, so the answer has two: 0.24."
+    },
+    {
+      "id": "AISSEE-T2-034",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeCommercial",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Average",
+      "stem": "Ravi scored 72, 85 and 78 in three tests. What must he score in the fourth test to get an average of 80?",
+      "options": [
+        "78",
+        "80",
+        "82",
+        "85"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "For an average of 80 over 4 tests he needs 4 x 80 = 320 marks. He has 72 + 85 + 78 = 235, so he needs 320 - 235 = 85."
+    },
+    {
+      "id": "AISSEE-T2-035",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeGeometry",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Types of angles",
+      "stem": "What kind of angle is formed at a corner of a page of your notebook?",
+      "options": [
+        "An obtuse angle",
+        "A straight angle",
+        "An acute angle",
+        "A right angle"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The corner of a rectangular page is a square corner, which is 90 degrees: a right angle."
+    },
+    {
+      "id": "AISSEE-T2-036",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeNumbers",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Decimal numbers",
+      "stem": "Which decimal is equal to 7/20?",
+      "options": [
+        "0.35",
+        "0.7",
+        "0.72",
+        "2.86"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "7/20 = 35/100 = 0.35. Multiply top and bottom by 5 to make the denominator 100. 2.86 is 20 ÷ 7, the fraction turned upside down."
+    },
+    {
+      "id": "AISSEE-T2-037",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeCommercial",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Percentage",
+      "stem": "What is 3/20 written as a percentage?",
+      "options": [
+        "15%",
+        "20%",
+        "23%",
+        "60%"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "3/20 = 15/100 = 15%. Multiply top and bottom by 5 to make the denominator 100. 23% and 60% come from adding or multiplying 3 and 20."
+    },
+    {
+      "id": "AISSEE-T2-038",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeGeometry",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Circle",
+      "stem": "A wheel has a diameter of 70 cm. How far does it move forward in one full turn? (Take π = 22/7.)",
+      "options": [
+        "110 cm",
+        "154 cm",
+        "220 cm",
+        "440 cm"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "In one turn the wheel moves its circumference: π x diameter = 22/7 x 70 = 220 cm. Using the diameter as the radius gives 440."
+    },
+    {
+      "id": "AISSEE-T2-039",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeNumbers",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Simplification",
+      "stem": "What is the value of 15 + 45 ÷ 5 x 2 - 8?",
+      "options": [
+        "7",
+        "16",
+        "25",
+        "33"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Division and multiplication first: 45 ÷ 5 = 9, 9 x 2 = 18. Then 15 + 18 - 8 = 25. Working left to right without the rule gives 16."
+    },
+    {
+      "id": "AISSEE-T2-040",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeCommercial",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Percentage",
+      "stem": "A plant was 40 cm tall. It grew by 15%. How tall is it now?",
+      "options": [
+        "6 cm",
+        "44 cm",
+        "46 cm",
+        "55 cm"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "15% of 40 cm is 6 cm, so the new height is 40 + 6 = 46 cm. 6 cm is only the growth, and 55 comes from adding 15 cm."
+    },
+    {
+      "id": "AISSEE-T2-041",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeGeometry",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Volume of cube and cuboid",
+      "stem": "How many cubes with 2 cm edges fit exactly in a box 10 cm long, 8 cm wide and 6 cm high?",
+      "options": [
+        "60",
+        "120",
+        "240",
+        "480"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Along the length 10 ÷ 2 = 5 cubes, along the width 8 ÷ 2 = 4 and up the height 6 ÷ 2 = 3. 5 x 4 x 3 = 60. 480 is the box's volume in cu cm, but each small cube is 8 cu cm."
+    },
+    {
+      "id": "AISSEE-T2-042",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeNumbers",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Fractions",
+      "stem": "What is 3/5 x 10/9 in its simplest form?",
+      "options": [
+        "2/3",
+        "3/2",
+        "13/14",
+        "1/3"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Multiply tops and bottoms: 30/45, which simplifies to 2/3. 13/14 comes from adding instead of multiplying."
+    },
+    {
+      "id": "AISSEE-T2-043",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeCommercial",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Simple interest",
+      "stem": "At what rate per year will ₹1,200 earn ₹216 as simple interest in 3 years?",
+      "options": [
+        "3%",
+        "6%",
+        "9%",
+        "18%"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Rate = interest x 100 ÷ (principal x time) = 216 x 100 ÷ (1,200 x 3) = 21,600 ÷ 3,600 = 6%. 18% is the total for all 3 years."
+    },
+    {
+      "id": "AISSEE-T2-044",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeGeometry",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Volume of cube and cuboid",
+      "stem": "A tank is 2 m long, 1.5 m wide and 1 m deep. How many litres of water can it hold? (1 cu m = 1,000 litres.)",
+      "options": [
+        "300",
+        "3,000",
+        "4,500",
+        "30,000"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Volume = 2 x 1.5 x 1 = 3 cu m, and 3 x 1,000 = 3,000 litres. 4,500 comes from adding the sides (4.5) instead of multiplying them."
+    },
+    {
+      "id": "AISSEE-T2-045",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeNumbers",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Natural numbers",
+      "stem": "How is 'seventy lakh six thousand forty' written in figures?",
+      "options": [
+        "7,06,040",
+        "70,06,040",
+        "70,06,400",
+        "70,60,040"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Seventy lakh is 70,00,000, six thousand is 6,000 and forty is 40. Together: 70,06,040."
+    },
+    {
+      "id": "AISSEE-T2-046",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeCommercial",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Simple interest",
+      "stem": "₹5,000 is lent at 4% simple interest per year for 2 years. What is the total amount at the end?",
+      "options": [
+        "₹400",
+        "₹5,040",
+        "₹5,200",
+        "₹5,400"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Interest = 5,000 x 4 x 2 ÷ 100 = ₹400. Amount = 5,000 + 400 = ₹5,400. ₹5,200 is the amount after only 1 year."
+    },
+    {
+      "id": "AISSEE-T2-047",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeGeometry",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Conversion of units",
+      "stem": "How many metres are there in 5 km 8 m?",
+      "options": [
+        "508",
+        "5,008",
+        "5,080",
+        "5,800"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "1 km = 1,000 m, so 5 km 8 m = 5,000 + 8 = 5,008 m. Writing 5,080 or 5,800 puts the 8 in the tens or hundreds place, and 508 forgets that 1 km is 1,000 m."
+    },
+    {
+      "id": "AISSEE-T2-048",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeNumbers",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Operations on numbers",
+      "stem": "A school bus can carry 48 children. How many buses are needed to take 410 children on a trip?",
+      "options": [
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "410 ÷ 48 = 8 remainder 26. Eight buses carry 384 children, so a ninth bus is needed for the other 26."
+    },
+    {
+      "id": "AISSEE-T2-049",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeCommercial",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Speed and time",
+      "stem": "Walking at 5 km per hour, how long does it take to walk 3 km?",
+      "options": [
+        "15 minutes",
+        "36 minutes",
+        "40 minutes",
+        "60 minutes"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Time = distance ÷ speed = 3/5 hour, and 3/5 of 60 minutes is 36 minutes. 15 comes from multiplying 3 x 5."
+    },
+    {
+      "id": "AISSEE-T2-050",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeGeometry",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Conversion of units",
+      "stem": "One bag of rice weighs 2 kg 750 g and another weighs 1 kg 600 g. What is their total weight?",
+      "options": [
+        "4 kg 350 g",
+        "4 kg 150 g",
+        "3 kg 350 g",
+        "5 kg 350 g"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "750 g + 600 g = 1,350 g = 1 kg 350 g. Then 2 kg + 1 kg + 1 kg = 4 kg, so the total is 4 kg 350 g."
+    },
+    {
+      "id": "AISSEE-T2-051",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeNumbers",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Natural numbers",
+      "stem": "How many factors does 36 have?",
+      "options": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "The factors are 1, 2, 3, 4, 6, 9, 12, 18 and 36: nine. 6 x 6 = 36 is one pair, so 6 is counted once and the total is odd."
+    },
+    {
+      "id": "AISSEE-T2-052",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeCommercial",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Speed and time",
+      "stem": "A bus leaves at 7:40 am and reaches a town 125 km away at 10:10 am. What is its average speed?",
+      "options": [
+        "45 km/h",
+        "50 km/h",
+        "55 km/h",
+        "62.5 km/h"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "From 7:40 to 10:10 is 2 hours 30 minutes, or 2.5 hours. 125 ÷ 2.5 = 50 km/h. Counting only 2 hours gives 62.5."
+    },
+    {
+      "id": "AISSEE-T2-053",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeGeometry",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Temperature",
+      "stem": "On a winter morning it was -2 °C in Shimla and 9 °C in Delhi. How many degrees warmer was Delhi?",
+      "options": [
+        "2",
+        "7",
+        "9",
+        "11"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "From -2 up to 0 is 2 degrees, and from 0 up to 9 is 9 more: 2 + 9 = 11 degrees. 7 comes from 9 - 2, which ignores the minus sign."
+    },
+    {
+      "id": "AISSEE-T2-054",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeNumbers",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Natural numbers",
+      "stem": "What is the sum of all the odd numbers from 1 to 15?",
+      "options": [
+        "49",
+        "56",
+        "60",
+        "64"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 = 64. Adding pairs from the ends helps: 1 + 15 = 16, and there are four such pairs."
+    },
+    {
+      "id": "AISSEE-T2-055",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeCommercial",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Unitary method",
+      "stem": "18 notebooks cost ₹396. How many notebooks can be bought for ₹220?",
+      "options": [
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "One notebook costs 396 ÷ 18 = ₹22, so ₹220 buys 220 ÷ 22 = 10 notebooks."
+    },
+    {
+      "id": "AISSEE-T2-056",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeGeometry",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Plane figures",
+      "stem": "A regular octagon has sides of 7.5 cm. What is its perimeter?",
+      "options": [
+        "30 cm",
+        "45 cm",
+        "52.5 cm",
+        "60 cm"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "An octagon has 8 equal sides: 8 x 7.5 = 60 cm. 45 cm would be a hexagon (6 sides) and 52.5 cm a heptagon (7 sides)."
+    },
+    {
+      "id": "AISSEE-T2-057",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeNumbers",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Natural numbers",
+      "stem": "What is the predecessor of 1,00,000?",
+      "options": [
+        "9,999",
+        "99,990",
+        "99,999",
+        "1,00,001"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The predecessor is the number just before: 1,00,000 - 1 = 99,999. 1,00,001 is the successor."
+    },
+    {
+      "id": "AISSEE-T2-058",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeCommercial",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Ratio and proportion",
+      "stem": "Anil and Sunil share ₹720 so that Anil gets twice as much as Sunil. How much does Anil get?",
+      "options": [
+        "₹180",
+        "₹240",
+        "₹360",
+        "₹480"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "The ratio is 2 : 1, so there are 3 parts and one part is 720 ÷ 3 = ₹240. Anil gets 2 parts, ₹480. ₹360 is half of 720."
+    },
+    {
+      "id": "AISSEE-T2-059",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeGeometry",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Area and perimeter",
+      "stem": "A rectangle has an area of 96 sq cm and a length of 12 cm. What is its perimeter?",
+      "options": [
+        "20 cm",
+        "40 cm",
+        "48 cm",
+        "84 cm"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Breadth = 96 ÷ 12 = 8 cm. Perimeter = 2 x (12 + 8) = 40 cm. 20 cm is only length + breadth."
+    },
+    {
+      "id": "AISSEE-T2-060",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeNumbers",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Decimal numbers",
+      "stem": "Which shows 0.5, 0.45, 0.405 and 0.54 in ascending order (smallest first)?",
+      "options": [
+        "0.405, 0.45, 0.5, 0.54",
+        "0.45, 0.405, 0.5, 0.54",
+        "0.405, 0.5, 0.45, 0.54",
+        "0.5, 0.45, 0.405, 0.54"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Give each the same number of places: 0.405, 0.450, 0.500 and 0.540. Now compare: 0.405 < 0.450 < 0.500 < 0.540."
+    },
+    {
+      "id": "AISSEE-T2-061",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeReasoning",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Verbal analogy",
+      "stem": "Books are to a library as paintings are to:",
+      "options": [
+        "a school",
+        "a gallery",
+        "a painter",
+        "a frame"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Books are kept and shown in a library; paintings are kept and shown in a gallery. A painter makes them and a frame holds one."
+    },
+    {
+      "id": "AISSEE-T2-062",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeReasoning",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Mathematical analogy",
+      "stem": "4 : 20 :: 7 : ?",
+      "options": [
+        "28",
+        "49",
+        "56",
+        "63"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "20 = 4 x 5, a number times the next number. In the same way 7 x 8 = 56. 49 is only 7 x 7."
+    },
+    {
+      "id": "AISSEE-T2-063",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeReasoning",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Classification",
+      "stem": "Which is the odd one out? Carrot, radish, beetroot, cabbage",
+      "options": [
+        "Carrot",
+        "Radish",
+        "Beetroot",
+        "Cabbage"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "We eat the roots of the carrot, radish and beetroot. We eat the leaves of the cabbage."
+    },
+    {
+      "id": "AISSEE-T2-064",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeReasoning",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Classification",
+      "stem": "Which number is the odd one out? 21, 35, 49, 54",
+      "options": [
+        "21",
+        "35",
+        "49",
+        "54"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "21, 35 and 49 are all multiples of 7. 54 is not: 7 x 7 = 49 and 7 x 8 = 56."
+    },
+    {
+      "id": "AISSEE-T2-065",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeReasoning",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "Which number comes next? 2, 3, 5, 8, 12, 17, ...",
+      "options": [
+        "22",
+        "23",
+        "24",
+        "25"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The gaps are 1, 2, 3, 4, 5, so the next gap is 6: 17 + 6 = 23."
+    },
+    {
+      "id": "AISSEE-T2-066",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeReasoning",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Letter series",
+      "stem": "Which letter comes next? B, E, D, G, F, I, ...",
+      "options": [
+        "H",
+        "K",
+        "G",
+        "J"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The steps take turns: forward 3, back 1. B +3 E -1 D +3 G -1 F +3 I, so next is back 1: H."
+    },
+    {
+      "id": "AISSEE-T2-067",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeReasoning",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Coding",
+      "stem": "In a code, BREAD is written as DTGCF. How is MILK written in the same code?",
+      "options": [
+        "OJNM",
+        "NJML",
+        "OKMN",
+        "OKNM"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Each letter moves two places forward: B to D, R to T, E to G. So M, I, L, K become O, K, N, M. NJML moves each letter only one place."
+    },
+    {
+      "id": "AISSEE-T2-068",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeReasoning",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Familial relations",
+      "stem": "Pointing to a lady, Rahul says, \"She is the daughter of my mother's father, but she is not my mother.\" How is the lady related to Rahul?",
+      "options": [
+        "Grandmother",
+        "Aunt",
+        "Mother",
+        "Sister"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A daughter of Rahul's mother's father is either Rahul's mother or his mother's sister. She is not his mother, so she is his mother's sister: his aunt."
+    },
+    {
+      "id": "AISSEE-T2-069",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeReasoning",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Familial relations",
+      "stem": "Rekha is Mohan's sister. Mohan is Lata's son. How is Lata related to Rekha?",
+      "options": [
+        "Mother",
+        "Daughter",
+        "Aunt",
+        "Sister"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Lata is Mohan's mother, and Rekha is Mohan's sister, so Lata is Rekha's mother too."
+    },
+    {
+      "id": "AISSEE-T2-070",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeReasoning",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Directions",
+      "stem": "Gita is facing north. She turns 90 degrees clockwise and then 180 degrees. Which way is she facing now?",
+      "options": [
+        "South",
+        "North",
+        "East",
+        "West"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A quarter turn clockwise from north faces east. Half a turn from east faces west."
+    },
+    {
+      "id": "AISSEE-T2-071",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeReasoning",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Ranking",
+      "stem": "Amit is 13th from the top and 22nd from the bottom in his class. How many students are in the class?",
+      "options": [
+        "9",
+        "34",
+        "35",
+        "36"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Total = 13 + 22 - 1 = 34. Amit is counted in both positions, so subtract 1. Adding without that gives 35."
+    },
+    {
+      "id": "AISSEE-T2-072",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeReasoning",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Critical thinking",
+      "stem": "A cat, a dog and a cow stand in a row. The dog is not at either end. The cat is to the left of the dog. Which animal is at the right end?",
+      "options": [
+        "The dog",
+        "The cat",
+        "The cow",
+        "It cannot be told"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The dog must be in the middle. The cat is to its left, so the cat is at the left end and the cow at the right end."
+    },
+    {
+      "id": "AISSEE-T2-073",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeReasoning",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Mathematical pattern",
+      "stem": "Look at the table and find the missing number.\n\n| First | Second | Third |\n|---|---|---|\n| 8 | 3 | 5 |\n| 15 | 6 | 9 |\n| 20 | 7 | ? |",
+      "options": [
+        "12",
+        "13",
+        "14",
+        "27"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "In each row the third number is the first minus the second: 8 - 3 = 5, 15 - 6 = 9, so 20 - 7 = 13. 27 comes from adding."
+    },
+    {
+      "id": "AISSEE-T2-074",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeReasoning",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Visual reasoning",
+      "stem": "A wooden cube is painted red on every face and then cut into 27 equal small cubes. How many small cubes have red paint on exactly three faces?",
+      "options": [
+        "1",
+        "6",
+        "8",
+        "12"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Only the corner cubes have three painted faces, and a cube has 8 corners. 12 is the number with exactly two painted faces (one on each edge) and 6 with exactly one."
+    },
+    {
+      "id": "AISSEE-T2-075",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeReasoning",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Verbal analogy",
+      "stem": "Hot is to cold as early is to:",
+      "options": [
+        "soon",
+        "morning",
+        "late",
+        "slow"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Hot and cold are opposites, and the opposite of early is late."
+    },
+    {
+      "id": "AISSEE-T2-076",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeReasoning",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Classification",
+      "stem": "Which is the odd one out? Ganga, Yamuna, Godavari, Chilika",
+      "options": [
+        "Chilika",
+        "Ganga",
+        "Godavari",
+        "Yamuna"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The Ganga, Yamuna and Godavari are rivers. Chilika in Odisha is a lake, a large lagoon by the sea."
+    },
+    {
+      "id": "AISSEE-T2-077",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeReasoning",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "Which number comes next? 1, 5, 13, 25, 41, ...",
+      "options": [
+        "57",
+        "59",
+        "61",
+        "65"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The gaps are 4, 8, 12, 16, so the next gap is 20: 41 + 20 = 61."
+    },
+    {
+      "id": "AISSEE-T2-078",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeReasoning",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Critical thinking",
+      "stem": "In a strange land, 'sky' is called 'sea', 'sea' is called 'road' and 'road' is called 'tree'. Where do fish live in that land?",
+      "options": [
+        "Sky",
+        "Road",
+        "Sea",
+        "Tree"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Fish live in the sea, and in that land the sea is called 'road'."
+    },
+    {
+      "id": "AISSEE-T2-079",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeReasoning",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Critical thinking",
+      "stem": "5 August of a year is a Tuesday. What day of the week is 1 September of the same year?",
+      "options": [
+        "Monday",
+        "Sunday",
+        "Tuesday",
+        "Wednesday"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "August has 31 days, so 1 September is 27 days after 5 August. 27 = 3 x 7 + 6, so it is 6 days after Tuesday: Monday."
+    },
+    {
+      "id": "AISSEE-T2-080",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeReasoning",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "Which number comes next? 120, 60, 20, 5, ...",
+      "options": [
+        "1",
+        "2",
+        "2.5",
+        "4"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The numbers are divided by 2, then 3, then 4, so next divide by 5: 5 ÷ 5 = 1."
+    },
+    {
+      "id": "AISSEE-T2-081",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeIndia",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "National symbols",
+      "stem": "India's national calendar is based on which era?",
+      "options": [
+        "Kali era",
+        "Gupta era",
+        "Saka era",
+        "Vikram era"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The national calendar adopted in 1957 is based on the Saka era. Its first month is Chaitra."
+    },
+    {
+      "id": "AISSEE-T2-082",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Solar system",
+      "stem": "Why does the Moon shine at night?",
+      "options": [
+        "It makes its own light",
+        "It reflects city lights",
+        "It reflects sunlight",
+        "It is a burning star"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The Moon has no light of its own. We see it because sunlight falls on it and bounces back to the Earth."
+    },
+    {
+      "id": "AISSEE-T2-083",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeIndia",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "National symbols",
+      "stem": "Which colour is the band at the bottom of India's national flag?",
+      "options": [
+        "Navy blue",
+        "White",
+        "Saffron",
+        "Green"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The flag has saffron at the top, white in the middle with the navy blue Ashoka Chakra, and green at the bottom."
+    },
+    {
+      "id": "AISSEE-T2-084",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Our Earth",
+      "stem": "Which imaginary line divides the Earth into the Northern and Southern Hemispheres?",
+      "options": [
+        "The Prime Meridian",
+        "The Tropic of Cancer",
+        "The Equator",
+        "The Arctic Circle"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The Equator runs around the middle of the Earth at 0 degrees latitude. The Prime Meridian divides the Earth into eastern and western halves."
+    },
+    {
+      "id": "AISSEE-T2-085",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeIndia",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Art and culture",
+      "stem": "Dhokla, a soft steamed snack made from gram flour, is a famous food of which state?",
+      "options": [
+        "Gujarat",
+        "Punjab",
+        "Bihar",
+        "Kerala"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Dhokla comes from Gujarat. It is made from a batter of gram flour (besan) that is steamed, cut into pieces and topped with mustard seeds."
+    },
+    {
+      "id": "AISSEE-T2-086",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Mountain terrain and lifestyle",
+      "stem": "Why do houses in snowy hill areas usually have sloping roofs?",
+      "options": [
+        "So birds cannot sit on them",
+        "So snow and rain slide off",
+        "So the house looks taller",
+        "So the rooms stay dark"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A sloping roof lets snow and rain slide down. Heavy snow piling up on a flat roof could damage the house."
+    },
+    {
+      "id": "AISSEE-T2-087",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeIndia",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Art and culture",
+      "stem": "In which city does the Victoria Memorial stand?",
+      "options": [
+        "Mumbai",
+        "Delhi",
+        "Chennai",
+        "Kolkata"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The Victoria Memorial, a large white marble building and museum, stands in Kolkata. It opened in 1921."
+    },
+    {
+      "id": "AISSEE-T2-088",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Energy",
+      "stem": "Biogas, used for cooking in many villages, is made mainly from:",
+      "options": [
+        "sand and stones",
+        "coal and wood",
+        "petrol and diesel",
+        "cow dung and waste"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "In a biogas plant, cow dung and kitchen or farm waste rot without air and give off a gas that burns. What is left makes good manure."
+    },
+    {
+      "id": "AISSEE-T2-089",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeIndia",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Art and culture",
+      "stem": "The mekhela chador is a traditional dress worn by women of which state?",
+      "options": [
+        "Assam",
+        "Goa",
+        "Punjab",
+        "Kerala"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The mekhela chador, often woven from muga or eri silk, is the traditional two-piece dress of Assam."
+    },
+    {
+      "id": "AISSEE-T2-090",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Natural calamities",
+      "stem": "What should you do first if you are indoors when an earthquake starts?",
+      "options": [
+        "Stand near a window",
+        "Get under a strong table",
+        "Go into the lift",
+        "Run down the stairs"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Drop, take cover under a strong table and hold on. Running on stairs, using a lift or standing near glass is dangerous while the ground shakes."
+    },
+    {
+      "id": "AISSEE-T2-091",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeIndia",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Indian defence",
+      "stem": "The rank of General in the Indian Army is equal to which rank in the Indian Navy?",
+      "options": [
+        "Commander",
+        "Admiral",
+        "Captain",
+        "Commodore"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The top ranks match across the services: General in the Army, Admiral in the Navy and Air Chief Marshal in the Air Force."
+    },
+    {
+      "id": "AISSEE-T2-092",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Functions of plants",
+      "stem": "In which part of a plant is most of its food made?",
+      "options": [
+        "Flowers",
+        "Roots",
+        "Leaves",
+        "Seeds"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Leaves use sunlight, water and air to make food. Roots take in water from the soil and hold the plant firm."
+    },
+    {
+      "id": "AISSEE-T2-093",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeIndia",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Indian defence",
+      "stem": "Which force guards India's land borders with Pakistan and Bangladesh in peacetime?",
+      "options": [
+        "Assam Rifles",
+        "Central Reserve Police Force",
+        "Border Security Force",
+        "Indian Coast Guard"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The Border Security Force (BSF) guards these borders. The Coast Guard protects the sea coast, and the Assam Rifles guard the border with Myanmar."
+    },
+    {
+      "id": "AISSEE-T2-094",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Farming and seeds",
+      "stem": "Which three things does a seed need to germinate?",
+      "options": [
+        "Water, air and warmth",
+        "Sugar, air and cold",
+        "Light, ice and water",
+        "Soil, salt and light"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A seed needs water, air and the right warmth to sprout. Many seeds sprout well on wet cotton, without any soil."
+    },
+    {
+      "id": "AISSEE-T2-095",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeIndia",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Sports",
+      "stem": "In chess, which piece moves in an 'L' shape and can jump over other pieces?",
+      "options": [
+        "Bishop",
+        "Knight",
+        "Rook",
+        "Queen"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The knight moves two squares one way and then one square to the side, like the letter L, and it is the only piece that can jump over others. The bishop moves diagonally and the rook in straight lines."
+    },
+    {
+      "id": "AISSEE-T2-096",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Tribal communities and forests",
+      "stem": "The Toda people, known for herding buffaloes, live in which hills?",
+      "options": [
+        "Aravalli Hills",
+        "Garo Hills",
+        "Khasi Hills",
+        "Nilgiri Hills"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The Todas live in the Nilgiri Hills of Tamil Nadu. Their homes, called munds, have a curved roof like half a barrel."
+    },
+    {
+      "id": "AISSEE-T2-097",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeIndia",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Organisations",
+      "stem": "Who founded the Red Cross?",
+      "options": [
+        "Louis Pasteur",
+        "Henry Dunant",
+        "Mother Teresa",
+        "Florence Nightingale"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Henry Dunant of Switzerland started the Red Cross after seeing wounded soldiers left untreated after a battle in 1859. Florence Nightingale was a famous nurse."
+    },
+    {
+      "id": "AISSEE-T2-098",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Super senses",
+      "stem": "Ants walking in a line find their way by:",
+      "options": [
+        "feeling the wind",
+        "looking at the Sun",
+        "hearing other ants",
+        "smelling a trail left by other ants"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "An ant that finds food leaves a smell on the ground as it goes back. Other ants smell this trail and follow it."
+    },
+    {
+      "id": "AISSEE-T2-099",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeIndia",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "India at a glance",
+      "stem": "Munnar, a hill station known for its tea gardens, is in which state?",
+      "options": [
+        "Assam",
+        "Kerala",
+        "Sikkim",
+        "Himachal Pradesh"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Munnar is in the Western Ghats of Kerala, where tea is grown on the hill slopes."
+    },
+    {
+      "id": "AISSEE-T2-100",
+      "section": "ais",
+      "test": 2,
+      "module": 1,
+      "domain": "aisseeScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Super senses",
+      "stem": "A snake flicks its forked tongue in and out. What is it doing?",
+      "options": [
+        "Hearing sounds",
+        "Picking up smells",
+        "Catching insects",
+        "Cooling its body"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A snake's tongue collects smells from the air and carries them to a special organ in the roof of its mouth. This is how it tracks its prey."
+    },
+    {
+      "id": "AISSEE-D-001",
+      "section": "ais",
+      "test": 0,
+      "module": 1,
+      "domain": "aisseeGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Types of sentence",
+      "stem": "\"What a beautiful painting!\" is:",
+      "options": [
+        "an exclamatory sentence",
+        "an imperative sentence",
+        "an interrogative sentence",
+        "an assertive sentence"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "It shows a strong feeling and ends with an exclamation mark, so it is exclamatory. An interrogative sentence asks a question."
+    },
+    {
+      "id": "AISSEE-D-002",
+      "section": "ais",
+      "test": 0,
+      "module": 1,
+      "domain": "aisseeGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Verbs",
+      "stem": "What is the past tense of 'teach'?",
+      "options": [
+        "Teaches",
+        "Thought",
+        "Taught",
+        "Teached"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "'Teach' is irregular: teach, taught, taught. 'Thought' is the past tense of 'think'."
+    },
+    {
+      "id": "AISSEE-D-003",
+      "section": "ais",
+      "test": 0,
+      "module": 1,
+      "domain": "aisseeGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Antonyms",
+      "stem": "Which word is the opposite of 'generous'?",
+      "options": [
+        "Kind",
+        "Gentle",
+        "Selfish",
+        "Wealthy"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A generous person shares freely; a selfish person keeps things to himself. 'Kind' is close in meaning to generous."
+    },
+    {
+      "id": "AISSEE-D-004",
+      "section": "ais",
+      "test": 0,
+      "module": 1,
+      "domain": "aisseeGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Singular and plural",
+      "stem": "What is the singular of 'mice'?",
+      "options": [
+        "Mices",
+        "Mouse",
+        "Mouce",
+        "Mouses"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "'Mice' is the irregular plural of 'mouse', like 'geese' from 'goose'."
+    },
+    {
+      "id": "AISSEE-D-005",
+      "section": "ais",
+      "test": 0,
+      "module": 1,
+      "domain": "aisseeGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Idioms",
+      "stem": "What does 'to cry wolf' mean?",
+      "options": [
+        "To weep in pain",
+        "To raise a false alarm",
+        "To be afraid of animals",
+        "To shout very loudly"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "To cry wolf is to ask for help when there is no real danger, like the shepherd boy in the story who shouted 'Wolf!' as a joke. When the wolf really came, no one believed him."
+    },
+    {
+      "id": "AISSEE-D-006",
+      "section": "ais",
+      "test": 0,
+      "module": 1,
+      "domain": "aisseeReading",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Detail",
+      "stimulusId": "AISSEE-D-L1",
+      "stem": "According to the passage, the Sun Temple at Konark stands near:",
+      "options": [
+        "a big lake",
+        "the sea",
+        "a desert",
+        "high mountains"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The first line says the temple stands near the sea in Odisha. That is also why sailors could see its tower."
+    },
+    {
+      "id": "AISSEE-D-007",
+      "section": "ais",
+      "test": 0,
+      "module": 1,
+      "domain": "aisseeReading",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Detail",
+      "stimulusId": "AISSEE-D-L1",
+      "stem": "How many stone wheels does the chariot have?",
+      "options": [
+        "7",
+        "12",
+        "16",
+        "24"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "The chariot has twenty-four huge stone wheels. Seven is the number of stone horses."
+    },
+    {
+      "id": "AISSEE-D-008",
+      "section": "ais",
+      "test": 0,
+      "module": 1,
+      "domain": "aisseeReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Detail",
+      "stimulusId": "AISSEE-D-L1",
+      "stem": "Besides being beautiful, how can the wheels be used?",
+      "options": [
+        "To tell the time of day",
+        "To find the direction of the sea",
+        "To count the visitors",
+        "To measure rainfall"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The shadows cast by the spokes can be used to tell the time of day, like a sundial."
+    },
+    {
+      "id": "AISSEE-D-009",
+      "section": "ais",
+      "test": 0,
+      "module": 1,
+      "domain": "aisseeReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Detail",
+      "stimulusId": "AISSEE-D-L1",
+      "stem": "Why did sailors call the temple the 'Black Pagoda'?",
+      "options": [
+        "It was built only at night",
+        "It was painted black by its king",
+        "It was hidden in a dark forest",
+        "Its dark tower was seen from the sea"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Its dark tower could be seen from far out at sea, so sailors gave it that name."
+    },
+    {
+      "id": "AISSEE-D-010",
+      "section": "ais",
+      "test": 0,
+      "module": 1,
+      "domain": "aisseeReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Word meaning",
+      "stimulusId": "AISSEE-D-L1",
+      "stem": "In the passage, 'carved' means:",
+      "options": [
+        "cut into a design",
+        "covered with gold",
+        "broken into pieces",
+        "painted brightly"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The wheels were carved with fine patterns: the patterns were cut into the stone."
+    },
+    {
+      "id": "AISSEE-D-011",
+      "section": "ais",
+      "test": 0,
+      "module": 1,
+      "domain": "aisseeNumbers",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Roman numerals",
+      "stem": "What number does the Roman numeral CDXIV stand for?",
+      "options": [
+        "414",
+        "416",
+        "604",
+        "614"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "CD = 500 - 100 = 400, X = 10 and IV = 4, so CDXIV = 414. Reading CD as 600 gives 614."
+    },
+    {
+      "id": "AISSEE-D-012",
+      "section": "ais",
+      "test": 0,
+      "module": 1,
+      "domain": "aisseeCommercial",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Percentage",
+      "stem": "Neha got 48 out of 60 questions right in a test. What percentage did she get right?",
+      "options": [
+        "12%",
+        "48%",
+        "75%",
+        "80%"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "48/60 = 4/5 = 80%. She got 12 questions wrong, but that is 12 out of 60, which is 20%, not 12%."
+    },
+    {
+      "id": "AISSEE-D-013",
+      "section": "ais",
+      "test": 0,
+      "module": 1,
+      "domain": "aisseeGeometry",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Lines and angles",
+      "stem": "Two angles of a triangle are equal, and the third angle is 40 degrees. What is each of the equal angles?",
+      "options": [
+        "40 degrees",
+        "50 degrees",
+        "70 degrees",
+        "140 degrees"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The two equal angles share 180 - 40 = 140 degrees, so each is 140 ÷ 2 = 70 degrees."
+    },
+    {
+      "id": "AISSEE-D-014",
+      "section": "ais",
+      "test": 0,
+      "module": 1,
+      "domain": "aisseeNumbers",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "LCM and HCF",
+      "stem": "What is the LCM of 6, 10 and 14?",
+      "options": [
+        "2",
+        "30",
+        "70",
+        "210"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "6 = 2 x 3, 10 = 2 x 5 and 14 = 2 x 7. LCM = 2 x 3 x 5 x 7 = 210. 2 is the HCF, and 30 and 70 are multiples of only two of the numbers."
+    },
+    {
+      "id": "AISSEE-D-015",
+      "section": "ais",
+      "test": 0,
+      "module": 1,
+      "domain": "aisseeCommercial",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Profit and loss",
+      "stem": "A watch bought for ₹800 is sold for ₹720. What is the loss percent?",
+      "options": [
+        "10%",
+        "11%",
+        "80%",
+        "90%"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Loss = ₹80, and loss percent = 80/800 x 100 = 10%. Dividing by the selling price, 80/720, gives about 11%."
+    },
+    {
+      "id": "AISSEE-D-016",
+      "section": "ais",
+      "test": 0,
+      "module": 1,
+      "domain": "aisseeGeometry",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Area and perimeter",
+      "stem": "A square garden has sides of 25 m. Fencing costs ₹15 per metre. What does it cost to fence the garden?",
+      "options": [
+        "₹375",
+        "₹750",
+        "₹1,500",
+        "₹9,375"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Perimeter = 4 x 25 = 100 m, and 100 x 15 = ₹1,500. ₹375 is the cost of one side only."
+    },
+    {
+      "id": "AISSEE-D-017",
+      "section": "ais",
+      "test": 0,
+      "module": 1,
+      "domain": "aisseeNumbers",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Natural numbers",
+      "stem": "Which of these numbers can be divided exactly by both 4 and 6?",
+      "options": [
+        "66",
+        "76",
+        "84",
+        "90"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "84 ÷ 4 = 21 and 84 ÷ 6 = 14. 66 and 90 divide by 6 but not 4, and 76 divides by 4 but not 6."
+    },
+    {
+      "id": "AISSEE-D-018",
+      "section": "ais",
+      "test": 0,
+      "module": 1,
+      "domain": "aisseeCommercial",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Speed and time",
+      "stem": "Ramesh cycles 21 km in 1 hour 45 minutes. What is his speed?",
+      "options": [
+        "12 km/h",
+        "14 km/h",
+        "21 km/h",
+        "36.75 km/h"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "1 hour 45 minutes is 1.75 hours, and 21 ÷ 1.75 = 12 km/h. Dividing by 1.5 instead gives 14, and multiplying gives 36.75."
+    },
+    {
+      "id": "AISSEE-D-019",
+      "section": "ais",
+      "test": 0,
+      "module": 1,
+      "domain": "aisseeGeometry",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Volume of cube and cuboid",
+      "stem": "A cube has a volume of 125 cu cm. How long is each edge?",
+      "options": [
+        "5 cm",
+        "15 cm",
+        "25 cm",
+        "62.5 cm"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "We need a number that, multiplied by itself three times, gives 125: 5 x 5 x 5 = 125. So each edge is 5 cm."
+    },
+    {
+      "id": "AISSEE-D-020",
+      "section": "ais",
+      "test": 0,
+      "module": 1,
+      "domain": "aisseeNumbers",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Decimal numbers",
+      "stem": "What is 12.6 - 4.85?",
+      "options": [
+        "7.75",
+        "7.85",
+        "8.21",
+        "8.25"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Write 12.6 as 12.60, then subtract: 12.60 - 4.85 = 7.75. Check: 7.75 + 4.85 = 12.60."
+    },
+    {
+      "id": "AISSEE-D-021",
+      "section": "ais",
+      "test": 0,
+      "module": 1,
+      "domain": "aisseeCommercial",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Average",
+      "stem": "What is the average of the first five multiples of 7?",
+      "options": [
+        "14",
+        "21",
+        "28",
+        "105"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The multiples are 7, 14, 21, 28 and 35. Their sum is 105, and 105 ÷ 5 = 21. For numbers that go up evenly, the average is the middle number."
+    },
+    {
+      "id": "AISSEE-D-022",
+      "section": "ais",
+      "test": 0,
+      "module": 1,
+      "domain": "aisseeGeometry",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Conversion of units",
+      "stem": "How many seconds are there in 1 hour 15 minutes?",
+      "options": [
+        "75",
+        "900",
+        "4,500",
+        "7,500"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "1 hour 15 minutes = 75 minutes, and 75 x 60 = 4,500 seconds. 75 is the time in minutes."
+    },
+    {
+      "id": "AISSEE-D-023",
+      "section": "ais",
+      "test": 0,
+      "module": 1,
+      "domain": "aisseeReasoning",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Verbal analogy",
+      "stem": "Fish is to fins as bird is to:",
+      "options": [
+        "feathers",
+        "nest",
+        "wings",
+        "beak"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A fish moves through water with its fins, and a bird moves through the air with its wings."
+    },
+    {
+      "id": "AISSEE-D-024",
+      "section": "ais",
+      "test": 0,
+      "module": 1,
+      "domain": "aisseeReasoning",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Familial relations",
+      "stem": "Sunita's father's sister is Sunita's:",
+      "options": [
+        "cousin",
+        "sister",
+        "aunt",
+        "niece"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A father's sister is an aunt. Her children would be Sunita's cousins."
+    },
+    {
+      "id": "AISSEE-D-025",
+      "section": "ais",
+      "test": 0,
+      "module": 1,
+      "domain": "aisseeReasoning",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Letter series",
+      "stem": "Which letter comes next? A, Z, B, Y, C, ...",
+      "options": [
+        "V",
+        "D",
+        "W",
+        "X"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Two series take turns: A, B, C going forward and Z, Y, X going back. After C comes the next letter of the backward series, X."
+    },
+    {
+      "id": "AISSEE-D-026",
+      "section": "ais",
+      "test": 0,
+      "module": 1,
+      "domain": "aisseeReasoning",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Directions",
+      "stem": "Ravi walks 4 km west, then 4 km south, then 4 km east. Where is he now from his starting point?",
+      "options": [
+        "4 km south",
+        "12 km west",
+        "8 km south",
+        "4 km north"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The 4 km west and 4 km east cancel out, so he is 4 km south of where he started."
+    },
+    {
+      "id": "AISSEE-D-027",
+      "section": "ais",
+      "test": 0,
+      "module": 1,
+      "domain": "aisseeReasoning",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Classification",
+      "stem": "Which number is the odd one out? 2, 3, 5, 9",
+      "options": [
+        "2",
+        "3",
+        "5",
+        "9"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "2, 3 and 5 are prime numbers. 9 = 3 x 3, so it is not prime."
+    },
+    {
+      "id": "AISSEE-D-028",
+      "section": "ais",
+      "test": 0,
+      "module": 1,
+      "domain": "aisseeIndia",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "National symbols",
+      "stem": "Which tree is the national tree of India?",
+      "options": [
+        "Neem",
+        "Peepal",
+        "Mango",
+        "Banyan"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The banyan is the national tree. Its branches send down roots that grow into new trunks, so one tree can spread very wide. The mango is the national fruit."
+    },
+    {
+      "id": "AISSEE-D-029",
+      "section": "ais",
+      "test": 0,
+      "module": 1,
+      "domain": "aisseeScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Our Earth",
+      "stem": "Why is the Earth often called the 'blue planet'?",
+      "options": [
+        "It is closest to the Sun",
+        "Its soil is blue in colour",
+        "Water covers most of its surface",
+        "Its sky stays blue at night"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Seen from space the Earth looks blue because oceans cover about seven tenths of its surface. Mercury, not the Earth, is closest to the Sun."
+    },
+    {
+      "id": "AISSEE-D-030",
+      "section": "ais",
+      "test": 0,
+      "module": 1,
+      "domain": "aisseeIndia",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Indian defence",
+      "stem": "On which date is Air Force Day celebrated in India?",
+      "options": [
+        "8 October",
+        "15 August",
+        "15 January",
+        "4 December"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The Indian Air Force was set up on 8 October 1932, which is marked as Air Force Day. 4 December is Navy Day and 15 January Army Day."
+    },
+    {
+      "id": "AISSEE-D-031",
+      "section": "ais",
+      "test": 0,
+      "module": 1,
+      "domain": "aisseeScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Functions of plants",
+      "stem": "The pitcher plant traps insects. What does it get from them that its soil lacks?",
+      "options": [
+        "Water",
+        "Sunlight",
+        "Nitrogen",
+        "Oxygen"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Pitcher plants grow in poor, wet soil with little nitrogen. They digest trapped insects to get it. Like other green plants, they still make their own food."
+    },
+    {
+      "id": "AISSEE-D-032",
+      "section": "ais",
+      "test": 0,
+      "module": 1,
+      "domain": "aisseeIndia",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Art and culture",
+      "stem": "Golconda Fort, once famous for its diamond trade, stands near which city?",
+      "options": [
+        "Bengaluru",
+        "Chennai",
+        "Hyderabad",
+        "Pune"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Golconda Fort is on the western edge of Hyderabad in Telangana. Diamonds from mines in the region were traded there."
+    },
+    {
+      "id": "AISSEE-D-033",
+      "section": "ais",
+      "test": 0,
+      "module": 1,
+      "domain": "aisseeScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Scientific devices",
+      "stem": "Which device is used to see very tiny living things such as germs?",
+      "options": [
+        "Microscope",
+        "Stethoscope",
+        "Periscope",
+        "Telescope"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A microscope makes very small things look larger. A telescope is for faraway objects like stars."
+    },
+    {
+      "id": "AISSEE-D-034",
+      "section": "ais",
+      "test": 0,
+      "module": 1,
+      "domain": "aisseeIndia",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Sports",
+      "stem": "In which game do players flick a striker to push coins into the pockets of a square board?",
+      "options": [
+        "Snooker",
+        "Ludo",
+        "Carrom",
+        "Chess"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "In carrom, players flick the striker with a finger to knock the wooden coins into the four corner pockets."
+    },
+    {
+      "id": "AISSEE-D-035",
+      "section": "ais",
+      "test": 0,
+      "module": 1,
+      "domain": "aisseeScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Microbes",
+      "stem": "Which tiny living things help turn milk into curd?",
+      "options": [
+        "Algae",
+        "Viruses",
+        "Worms",
+        "Bacteria"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A spoonful of curd added to warm milk carries helpful bacteria. They grow in the milk and turn it into curd. Not all microbes cause disease."
+    },
+    {
+      "id": "AISSEE-D-036",
+      "section": "ais",
+      "test": 0,
+      "module": 1,
+      "domain": "aisseeIndia",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Organisations",
+      "stem": "Where is the headquarters of ISRO, India's space agency?",
+      "options": [
+        "Thiruvananthapuram",
+        "Bengaluru",
+        "Sriharikota",
+        "Ahmedabad"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "ISRO is headquartered in Bengaluru. Sriharikota is where rockets are launched, and Thiruvananthapuram has the Vikram Sarabhai Space Centre."
+    },
+    {
+      "id": "AISSEE-D-037",
+      "section": "ais",
+      "test": 0,
+      "module": 1,
+      "domain": "aisseeScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Humans and animals",
+      "stem": "Which of these animals eats only plants?",
+      "options": [
+        "Eagle",
+        "Tiger",
+        "Lion",
+        "Deer"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A deer is a herbivore that eats grass and leaves. Lions, tigers and eagles eat other animals."
+    }
+  ]
+}

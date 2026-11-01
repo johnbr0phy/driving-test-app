@@ -2271,6 +2271,567 @@
     --brand-gradient-to: 130 75% 96%;
   }
 
+  /* SBI PO theme: bank blue (v2 exam; matches lib/v2/exams/sbipo.ts theme) */
+  [data-theme="sbipo"] {
+    --brand: 212 70% 46%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 212 60% 96%;
+    --brand-hover: 212 70% 42%;
+    --brand-dark: 212 70% 38%;
+    --brand-darker: 212 65% 28%;
+    --brand-muted: 212 30% 72%;
+    --brand-border: 212 40% 80%;
+    --brand-border-light: 212 40% 90%;
+    --brand-gradient-to: 200 60% 96%;
+  }
+
+  /* SBI Clerk theme: steel bank blue (v2 exam; matches lib/v2/exams/sbiclerk.ts theme) */
+  [data-theme="sbiclerk"] {
+    --brand: 209 40% 34%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 209 40% 96%;
+    --brand-hover: 209 40% 30%;
+    --brand-dark: 209 40% 26%;
+    --brand-darker: 209 35% 16%;
+    --brand-muted: 209 30% 72%;
+    --brand-border: 209 40% 80%;
+    --brand-border-light: 209 40% 90%;
+    --brand-gradient-to: 200 40% 96%;
+  }
+
+  /* IBPS RRB Office Assistant theme: paddy green (v2 exam; matches lib/v2/exams/ibpsrrb.ts theme) */
+  [data-theme="ibpsrrb"] {
+    --brand: 105 75% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 105 60% 96%;
+    --brand-hover: 105 75% 26%;
+    --brand-dark: 105 75% 22%;
+    --brand-darker: 105 70% 12%;
+    --brand-muted: 105 30% 72%;
+    --brand-border: 105 40% 80%;
+    --brand-border-light: 105 40% 90%;
+    --brand-gradient-to: 90 60% 96%;
+  }
+
+  /* Bihar Police Constable theme: brick red (v2 exam; matches lib/v2/exams/biharpolice.ts theme) */
+  [data-theme="biharpolice"] {
+    --brand: 18 65% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 18 60% 96%;
+    --brand-hover: 18 65% 26%;
+    --brand-dark: 18 65% 22%;
+    --brand-darker: 18 60% 12%;
+    --brand-muted: 18 30% 72%;
+    --brand-border: 18 40% 80%;
+    --brand-border-light: 18 40% 90%;
+    --brand-gradient-to: 30 60% 96%;
+  }
+
+  /* Rajasthan Police Constable theme: desert ochre (v2 exam; matches lib/v2/exams/rajpolice.ts theme) */
+  [data-theme="rajpolice"] {
+    --brand: 35 62% 38%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 35 60% 96%;
+    --brand-hover: 35 62% 34%;
+    --brand-dark: 35 62% 30%;
+    --brand-darker: 35 57% 20%;
+    --brand-muted: 35 30% 72%;
+    --brand-border: 35 40% 80%;
+    --brand-border-light: 35 40% 90%;
+    --brand-gradient-to: 25 60% 96%;
+  }
+
+  /* Delhi Police Constable theme: police indigo (v2 exam; matches lib/v2/exams/delhipolice.ts theme) */
+  [data-theme="delhipolice"] {
+    --brand: 248 40% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 248 40% 96%;
+    --brand-hover: 248 40% 26%;
+    --brand-dark: 248 40% 22%;
+    --brand-darker: 248 35% 12%;
+    --brand-muted: 248 30% 72%;
+    --brand-border: 248 40% 80%;
+    --brand-border-light: 248 40% 90%;
+    --brand-gradient-to: 258 40% 96%;
+  }
+
+  /* MP Police Constable theme: police teal blue (v2 exam; matches lib/v2/exams/mppolice.ts theme) */
+  [data-theme="mppolice"] {
+    --brand: 191 46% 38%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 191 46% 96%;
+    --brand-hover: 191 46% 34%;
+    --brand-dark: 191 46% 30%;
+    --brand-darker: 191 41% 20%;
+    --brand-muted: 191 30% 72%;
+    --brand-border: 191 40% 80%;
+    --brand-border-light: 191 40% 90%;
+    --brand-gradient-to: 180 46% 96%;
+  }
+
+  /* AP U.S. History theme: muted oxblood (v2 exam; matches lib/v2/exams/apush.ts theme) */
+  [data-theme="apush"] {
+    --brand: 0 25% 38%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 0 25% 96%;
+    --brand-hover: 0 25% 34%;
+    --brand-dark: 0 25% 30%;
+    --brand-darker: 0 20% 20%;
+    --brand-muted: 0 25% 72%;
+    --brand-border: 0 25% 80%;
+    --brand-border-light: 0 25% 90%;
+    --brand-gradient-to: 12 25% 96%;
+  }
+
+  /* AP Biology theme: leaf green (v2 exam; matches lib/v2/exams/apbio.ts theme) */
+  [data-theme="apbio"] {
+    --brand: 112 58% 32%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 112 58% 96%;
+    --brand-hover: 112 58% 28%;
+    --brand-dark: 112 58% 24%;
+    --brand-darker: 112 53% 14%;
+    --brand-muted: 112 30% 72%;
+    --brand-border: 112 40% 80%;
+    --brand-border-light: 112 40% 90%;
+    --brand-gradient-to: 124 58% 96%;
+  }
+
+  /* Philippine Civil Service Exam theme: deep government blue (v2 exam; matches lib/v2/exams/phcse.ts theme) */
+  [data-theme="phcse"] {
+    --brand: 221 50% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 221 50% 96%;
+    --brand-hover: 221 50% 26%;
+    --brand-dark: 221 50% 22%;
+    --brand-darker: 221 45% 12%;
+    --brand-muted: 221 30% 72%;
+    --brand-border: 221 40% 80%;
+    --brand-border-light: 221 40% 90%;
+    --brand-gradient-to: 235 50% 96%;
+  }
+
+  /* UPSC Prelims theme: deep rust brown (v2 exam; matches lib/v2/exams/upscse.ts theme) */
+  [data-theme="upscse"] {
+    --brand: 28 65% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 28 65% 96%;
+    --brand-hover: 28 65% 25%;
+    --brand-dark: 28 65% 22%;
+    --brand-darker: 28 60% 12%;
+    --brand-muted: 28 30% 72%;
+    --brand-border: 28 35% 80%;
+    --brand-border-light: 28 35% 90%;
+    --brand-gradient-to: 40 65% 96%;
+  }
+
+  /* NDA theme: slate blue (v2 exam; matches lib/v2/exams/nda.ts theme) */
+  [data-theme="nda"] {
+    --brand: 213 25% 44%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 213 25% 96%;
+    --brand-hover: 213 25% 39%;
+    --brand-dark: 213 25% 34%;
+    --brand-darker: 213 25% 18%;
+    --brand-muted: 213 18% 72%;
+    --brand-border: 213 20% 80%;
+    --brand-border-light: 213 20% 90%;
+    --brand-gradient-to: 223 25% 96%;
+  }
+
+  /* Agniveer Army GD CEE theme: army olive (v2 exam; matches lib/v2/exams/agniveer.ts theme) */
+  [data-theme="agniveer"] {
+    --brand: 86 35% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 86 35% 96%;
+    --brand-hover: 86 35% 25%;
+    --brand-dark: 86 35% 22%;
+    --brand-darker: 86 30% 12%;
+    --brand-muted: 86 20% 70%;
+    --brand-border: 86 25% 80%;
+    --brand-border-light: 86 25% 90%;
+    --brand-gradient-to: 70 35% 96%;
+  }
+
+  /* Agniveer Vayu theme: air force blue (v2 exam; matches lib/v2/exams/agniveervayu.ts theme) */
+  [data-theme="agniveervayu"] {
+    --brand: 202 40% 44%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 202 40% 96%;
+    --brand-hover: 202 40% 39%;
+    --brand-dark: 202 40% 34%;
+    --brand-darker: 202 38% 18%;
+    --brand-muted: 202 25% 72%;
+    --brand-border: 202 30% 80%;
+    --brand-border-light: 202 30% 90%;
+    --brand-gradient-to: 212 40% 96%;
+  }
+
+  /* RRB ALP theme: deep railway red (v2 exam; matches lib/v2/exams/rrbalp.ts theme) */
+  [data-theme="rrbalp"] {
+    --brand: 355 55% 32%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 355 55% 96%;
+    --brand-hover: 355 55% 27%;
+    --brand-dark: 355 55% 24%;
+    --brand-darker: 355 50% 13%;
+    --brand-muted: 355 30% 72%;
+    --brand-border: 355 35% 80%;
+    --brand-border-light: 355 35% 90%;
+    --brand-gradient-to: 9 55% 96%;
+  }
+
+  /* RPF Constable theme: steel slate (v2 exam; matches lib/v2/exams/rpfconst.ts theme) */
+  [data-theme="rpfconst"] {
+    --brand: 228 20% 44%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 228 30% 96%;
+    --brand-hover: 228 20% 39%;
+    --brand-dark: 228 20% 34%;
+    --brand-darker: 228 20% 16%;
+    --brand-muted: 228 15% 72%;
+    --brand-border: 228 18% 80%;
+    --brand-border-light: 228 18% 90%;
+    --brand-gradient-to: 245 30% 96%;
+  }
+
+  /* SSC CPO theme: muted police violet (v2 exam; matches lib/v2/exams/ssccpo.ts theme) */
+  [data-theme="ssccpo"] {
+    --brand: 262 40% 38%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 262 40% 96%;
+    --brand-hover: 262 40% 33%;
+    --brand-dark: 262 40% 29%;
+    --brand-darker: 262 35% 16%;
+    --brand-muted: 262 25% 72%;
+    --brand-border: 262 30% 80%;
+    --brand-border-light: 262 30% 90%;
+    --brand-gradient-to: 272 40% 96%;
+  }
+
+  /* AP World History theme: muted clay brown (v2 exam; matches lib/v2/exams/apworld.ts theme) */
+  [data-theme="apworld"] {
+    --brand: 30 25% 36%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 30 25% 96%;
+    --brand-hover: 30 25% 31%;
+    --brand-dark: 30 25% 28%;
+    --brand-darker: 30 25% 17%;
+    --brand-muted: 30 15% 72%;
+    --brand-border: 30 20% 82%;
+    --brand-border-light: 30 20% 91%;
+    --brand-gradient-to: 42 30% 96%;
+  }
+
+  /* AP English Language theme: slate ink blue (v2 exam; matches lib/v2/exams/aplang.ts theme) */
+  [data-theme="aplang"] {
+    --brand: 222 18% 34%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 222 18% 96%;
+    --brand-hover: 222 18% 29%;
+    --brand-dark: 222 18% 26%;
+    --brand-darker: 222 18% 16%;
+    --brand-muted: 222 12% 72%;
+    --brand-border: 222 15% 82%;
+    --brand-border-light: 222 15% 91%;
+    --brand-gradient-to: 210 20% 96%;
+  }
+
+  /* Philippines LET (LEPT) theme: muted teal green (v1 exam) */
+  [data-theme="phlet"] {
+    --brand: 160 25% 40%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 160 35% 95%;
+    --brand-hover: 160 25% 34%;
+    --brand-dark: 160 25% 28%;
+    --brand-darker: 160 25% 18%;
+    --brand-muted: 160 18% 70%;
+    --brand-border: 160 20% 80%;
+    --brand-border-light: 160 20% 89%;
+    --brand-gradient-to: 190 35% 95%;
+  }
+
+  /* JEE Main theme: muted terracotta brown (v2 exam; matches lib/v2/exams/jeemain.ts theme) */
+  [data-theme="jeemain"] {
+    --brand: 18 30% 32%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 18 30% 96%;
+    --brand-hover: 18 30% 27%;
+    --brand-dark: 18 30% 22%;
+    --brand-darker: 18 30% 14%;
+    --brand-muted: 18 18% 72%;
+    --brand-border: 18 21% 80%;
+    --brand-border-light: 18 21% 90%;
+    --brand-gradient-to: 30 30% 96%;
+  }
+
+  /* NEET theme: muted berry (v2 exam; matches lib/v2/exams/neet.ts theme) */
+  [data-theme="neet"] {
+    --brand: 330 38% 40%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 330 38% 96%;
+    --brand-hover: 330 38% 35%;
+    --brand-dark: 330 38% 30%;
+    --brand-darker: 330 38% 20%;
+    --brand-muted: 330 23% 72%;
+    --brand-border: 330 27% 80%;
+    --brand-border-light: 330 27% 90%;
+    --brand-gradient-to: 342 38% 96%;
+  }
+
+  /* MHT-CET theme: muted sage green (v2 exam; matches lib/v2/exams/mhtcet.ts theme) */
+  [data-theme="mhtcet"] {
+    --brand: 104 30% 38%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 104 30% 96%;
+    --brand-hover: 104 30% 33%;
+    --brand-dark: 104 30% 28%;
+    --brand-darker: 104 30% 18%;
+    --brand-muted: 104 18% 72%;
+    --brand-border: 104 21% 80%;
+    --brand-border-light: 104 21% 90%;
+    --brand-gradient-to: 116 30% 96%;
+  }
+
+  /* CUET (UG) General Aptitude Test theme: deep plum (v2 exam; matches lib/v2/exams/cuet.ts theme) */
+  [data-theme="cuet"] {
+    --brand: 280 30% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 280 30% 96%;
+    --brand-hover: 280 30% 25%;
+    --brand-dark: 280 30% 20%;
+    --brand-darker: 280 30% 14%;
+    --brand-muted: 280 18% 72%;
+    --brand-border: 280 21% 80%;
+    --brand-border-light: 280 21% 90%;
+    --brand-gradient-to: 292 30% 96%;
+  }
+
+  /* UGC-NET Paper 1 theme: muted slate indigo (v2 exam; matches lib/v2/exams/ugcnet.ts theme) */
+  [data-theme="ugcnet"] {
+    --brand: 240 22% 41%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 240 22% 96%;
+    --brand-hover: 240 22% 36%;
+    --brand-dark: 240 22% 31%;
+    --brand-darker: 240 22% 21%;
+    --brand-muted: 240 13% 72%;
+    --brand-border: 240 15% 80%;
+    --brand-border-light: 240 15% 90%;
+    --brand-gradient-to: 252 22% 96%;
+  }
+
+  /* REET Level 1 theme: Rajasthan sandstone brown (v2 exam; matches lib/v2/exams/reet.ts theme) */
+  [data-theme="reet"] {
+    --brand: 39 25% 34%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 39 25% 96%;
+    --brand-hover: 39 25% 29%;
+    --brand-dark: 39 25% 24%;
+    --brand-darker: 39 25% 14%;
+    --brand-muted: 39 15% 72%;
+    --brand-border: 39 18% 80%;
+    --brand-border-light: 39 18% 90%;
+    --brand-gradient-to: 51 25% 96%;
+  }
+
+  /* UPTET Paper 1 theme: muted slate jade (v2 exam; matches lib/v2/exams/uptet.ts theme) */
+  [data-theme="uptet"] {
+    --brand: 156 30% 31%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 156 30% 96%;
+    --brand-hover: 156 30% 26%;
+    --brand-dark: 156 30% 21%;
+    --brand-darker: 156 30% 14%;
+    --brand-muted: 156 18% 72%;
+    --brand-border: 156 21% 80%;
+    --brand-border-light: 156 21% 90%;
+    --brand-gradient-to: 168 30% 96%;
+  }
+
+  /* AISSEE theme: muted cantonment green (v2 exam; matches lib/v2/exams/aissee.ts theme) */
+  [data-theme="aissee"] {
+    --brand: 120 22% 34%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 120 22% 96%;
+    --brand-hover: 120 22% 29%;
+    --brand-dark: 120 22% 24%;
+    --brand-darker: 120 22% 14%;
+    --brand-muted: 120 13% 72%;
+    --brand-border: 120 15% 80%;
+    --brand-border-light: 120 15% 90%;
+    --brand-gradient-to: 132 22% 96%;
+  }
+
+  /* AP Calculus AB theme: slate blue (v2 exam; matches lib/v2/exams/apcalcab.ts theme) */
+  [data-theme="apcalcab"] {
+    --brand: 211 40% 42%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 211 40% 96%;
+    --brand-hover: 211 40% 37%;
+    --brand-dark: 211 40% 32%;
+    --brand-darker: 211 40% 22%;
+    --brand-muted: 211 24% 72%;
+    --brand-border: 211 28% 80%;
+    --brand-border-light: 211 28% 90%;
+    --brand-gradient-to: 223 40% 96%;
+  }
+
+  /* AP Human Geography theme: muted olive ochre (v2 exam; matches lib/v2/exams/aphug.ts theme) */
+  [data-theme="aphug"] {
+    --brand: 57 25% 34%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 57 25% 96%;
+    --brand-hover: 57 25% 29%;
+    --brand-dark: 57 25% 24%;
+    --brand-darker: 57 25% 14%;
+    --brand-muted: 57 15% 72%;
+    --brand-border: 57 18% 80%;
+    --brand-border-light: 57 18% 90%;
+    --brand-gradient-to: 69 25% 96%;
+  }
+
+
+  /* JAMB Mathematics theme: deep green (v2 exam; matches lib/v2/exams/jambmath.ts theme) */
+  [data-theme="jambmath"] {
+    --brand: 151 45% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 151 45% 95%;
+    --brand-hover: 151 45% 26%;
+    --brand-dark: 151 45% 22%;
+    --brand-darker: 151 40% 12%;
+    --brand-muted: 151 20% 70%;
+    --brand-border: 151 30% 80%;
+    --brand-border-light: 151 30% 90%;
+    --brand-gradient-to: 131 40% 96%;
+  }
+
+  /* JAMB Biology theme: muted leaf green (v2 exam; matches lib/v2/exams/jambbio.ts theme) */
+  [data-theme="jambbio"] {
+    --brand: 135 30% 38%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 135 30% 96%;
+    --brand-hover: 135 30% 32%;
+    --brand-dark: 135 30% 28%;
+    --brand-darker: 135 30% 18%;
+    --brand-muted: 135 20% 70%;
+    --brand-border: 135 25% 80%;
+    --brand-border-light: 135 25% 90%;
+    --brand-gradient-to: 125 30% 96%;
+  }
+
+  /* JAMB Chemistry theme: muted slate cyan (v2 exam; matches lib/v2/exams/jambchem.ts theme) */
+  [data-theme="jambchem"] {
+    --brand: 186 15% 42%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 186 15% 96%;
+    --brand-hover: 186 15% 37%;
+    --brand-dark: 186 15% 32%;
+    --brand-darker: 186 15% 22%;
+    --brand-muted: 186 10% 70%;
+    --brand-border: 186 12% 80%;
+    --brand-border-light: 186 12% 90%;
+    --brand-gradient-to: 190 15% 97%;
+  }
+
+  /* JAMB Physics theme: slate indigo (v2 exam; matches lib/v2/exams/jambphys.ts theme) */
+  [data-theme="jambphys"] {
+    --brand: 231 36% 40%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 231 36% 96%;
+    --brand-hover: 231 36% 34%;
+    --brand-dark: 231 36% 30%;
+    --brand-darker: 231 32% 16%;
+    --brand-muted: 231 20% 70%;
+    --brand-border: 231 28% 82%;
+    --brand-border-light: 231 28% 91%;
+    --brand-gradient-to: 225 30% 97%;
+  }
+
+  /* AP U.S. Government and Politics theme: deep brick (v2 exam; matches lib/v2/exams/apgov.ts theme) */
+  [data-theme="apgov"] {
+    --brand: 5 30% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 5 30% 96%;
+    --brand-hover: 5 30% 26%;
+    --brand-dark: 5 30% 24%;
+    --brand-darker: 5 30% 14%;
+    --brand-muted: 5 15% 70%;
+    --brand-border: 5 20% 82%;
+    --brand-border-light: 5 20% 91%;
+    --brand-gradient-to: 20 30% 96%;
+  }
+
+  /* Nigeria Police recruitment theme */
+  [data-theme="ngpolice"] {
+    --brand: 235 65% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 235 55% 95%;
+    --brand-hover: 235 65% 25%;
+    --brand-dark: 235 65% 22%;
+    --brand-darker: 235 60% 15%;
+    --brand-muted: 235 30% 68%;
+    --brand-border: 235 30% 78%;
+    --brand-border-light: 235 28% 88%;
+    --brand-gradient-to: 215 45% 95%;
+  }
+
+  /* CDCFIB recruitment theme */
+  [data-theme="cdcfib"] {
+    --brand: 10 30% 40%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 10 40% 95%;
+    --brand-hover: 10 30% 35%;
+    --brand-dark: 10 30% 32%;
+    --brand-darker: 10 30% 23%;
+    --brand-muted: 10 20% 68%;
+    --brand-border: 10 22% 80%;
+    --brand-border-light: 10 22% 89%;
+    --brand-gradient-to: 31 40% 95%;
+  }
+
+  /* Nigerian Army recruitment theme */
+  [data-theme="ngarmy"] {
+    --brand: 80 18% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 80 25% 95%;
+    --brand-hover: 80 18% 26%;
+    --brand-dark: 80 18% 22%;
+    --brand-darker: 80 16% 16%;
+    --brand-muted: 80 12% 68%;
+    --brand-border: 80 12% 78%;
+    --brand-border-light: 80 12% 88%;
+    --brand-gradient-to: 60 25% 95%;
+  }
+
+  /* Nigeria Customs recruitment theme */
+  [data-theme="ngcustoms"] {
+    --brand: 184 20% 33%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 184 25% 95%;
+    --brand-hover: 184 20% 28%;
+    --brand-dark: 184 22% 24%;
+    --brand-darker: 184 24% 16%;
+    --brand-muted: 184 14% 66%;
+    --brand-border: 184 14% 78%;
+    --brand-border-light: 184 14% 88%;
+    --brand-gradient-to: 170 25% 95%;
+  }
+
+  /* Nigeria TRCN PQE theme */
+  [data-theme="trcnpqe"] {
+    --brand: 170 20% 38%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 170 30% 95%;
+    --brand-hover: 170 20% 32%;
+    --brand-dark: 170 20% 27%;
+    --brand-darker: 170 20% 18%;
+    --brand-muted: 170 15% 70%;
+    --brand-border: 170 16% 80%;
+    --brand-border-light: 170 16% 89%;
+    --brand-gradient-to: 195 30% 95%;
+  }
+
   /* Dark mode. Tokens follow Tailwind's gray scale so the dark: variants
      written in components (gray-950 page, gray-900 card, gray-800 border)
      and the shadcn primitives read as one surface system. */
@@ -4210,6 +4771,480 @@
     --brand-muted: 152 35% 45%;
     --brand-dark: 152 75% 65%;
     --brand-darker: 152 70% 78%;
+  }
+
+  .dark [data-theme="sbipo"] {
+    --brand: 212 70% 48.2%;
+    --brand-hover: 212 70% 42%;
+    --brand-light: 212 45% 13%;
+    --brand-gradient-to: 200 40% 11%;
+    --brand-border-light: 212 35% 24%;
+    --brand-border: 212 40% 34%;
+    --brand-muted: 212 30% 45%;
+    --brand-dark: 212 70% 65%;
+    --brand-darker: 212 65% 78%;
+  }
+
+  .dark [data-theme="sbiclerk"] {
+    --brand: 209 40% 46.8%;
+    --brand-hover: 209 40% 38.8%;
+    --brand-light: 209 40% 13%;
+    --brand-gradient-to: 200 40% 11%;
+    --brand-border-light: 209 35% 24%;
+    --brand-border: 209 40% 34%;
+    --brand-muted: 209 30% 45%;
+    --brand-dark: 209 40% 65%;
+    --brand-darker: 209 35% 78%;
+  }
+
+  .dark [data-theme="ibpsrrb"] {
+    --brand: 105 75% 30.1%;
+    --brand-hover: 105 75% 26%;
+    --brand-light: 105 45% 13%;
+    --brand-gradient-to: 90 40% 11%;
+    --brand-border-light: 105 35% 24%;
+    --brand-border: 105 40% 34%;
+    --brand-muted: 105 30% 45%;
+    --brand-dark: 105 75% 65%;
+    --brand-darker: 105 70% 78%;
+  }
+
+  .dark [data-theme="biharpolice"] {
+    --brand: 18 65% 45.3%;
+    --brand-hover: 18 65% 37.3%;
+    --brand-light: 18 45% 13%;
+    --brand-gradient-to: 30 40% 11%;
+    --brand-border-light: 18 35% 24%;
+    --brand-border: 18 40% 34%;
+    --brand-muted: 18 30% 45%;
+    --brand-dark: 18 65% 65%;
+    --brand-darker: 18 60% 78%;
+  }
+
+  .dark [data-theme="rajpolice"] {
+    --brand-light: 35 45% 13%;
+    --brand-gradient-to: 25 40% 11%;
+    --brand-border-light: 35 35% 24%;
+    --brand-border: 35 40% 34%;
+    --brand-muted: 35 30% 45%;
+    --brand-dark: 35 62% 65%;
+    --brand-darker: 35 57% 78%;
+  }
+
+  .dark [data-theme="delhipolice"] {
+    --brand: 248 40% 50%;
+    --brand-hover: 248 40% 42%;
+    --brand-light: 248 40% 13%;
+    --brand-gradient-to: 258 40% 11%;
+    --brand-border-light: 248 35% 24%;
+    --brand-border: 248 40% 34%;
+    --brand-muted: 248 30% 45%;
+    --brand-dark: 248 40% 65%;
+    --brand-darker: 248 35% 78%;
+  }
+
+  .dark [data-theme="mppolice"] {
+    --brand: 191 46% 38.4%;
+    --brand-hover: 191 46% 34%;
+    --brand-light: 191 45% 13%;
+    --brand-gradient-to: 180 40% 11%;
+    --brand-border-light: 191 35% 24%;
+    --brand-border: 191 40% 34%;
+    --brand-muted: 191 30% 45%;
+    --brand-dark: 191 46% 65%;
+    --brand-darker: 191 41% 78%;
+  }
+
+  .dark [data-theme="apush"] {
+    --brand: 0 25% 50%;
+    --brand-hover: 0 25% 42%;
+    --brand-light: 0 25% 13%;
+    --brand-gradient-to: 12 25% 11%;
+    --brand-border-light: 0 25% 24%;
+    --brand-border: 0 25% 34%;
+    --brand-muted: 0 25% 45%;
+    --brand-dark: 0 25% 65%;
+    --brand-darker: 0 20% 78%;
+  }
+
+  .dark [data-theme="apbio"] {
+    --brand: 112 58% 33.2%;
+    --brand-hover: 112 58% 28%;
+    --brand-light: 112 45% 13%;
+    --brand-gradient-to: 124 40% 11%;
+    --brand-border-light: 112 35% 24%;
+    --brand-border: 112 40% 34%;
+    --brand-muted: 112 30% 45%;
+    --brand-dark: 112 58% 65%;
+    --brand-darker: 112 53% 78%;
+  }
+
+  .dark [data-theme="phcse"] {
+    --brand: 221 50% 50%;
+    --brand-hover: 221 50% 42%;
+    --brand-light: 221 45% 13%;
+    --brand-gradient-to: 235 40% 11%;
+    --brand-border-light: 221 35% 24%;
+    --brand-border: 221 40% 34%;
+    --brand-muted: 221 30% 45%;
+    --brand-dark: 221 50% 65%;
+    --brand-darker: 221 45% 78%;
+  }
+
+  .dark [data-theme="upscse"] {
+    --brand: 28 65% 40.7%;
+    --brand-hover: 28 65% 32.7%;
+    --brand-light: 28 45% 13%;
+    --brand-gradient-to: 40 40% 11%;
+    --brand-border-light: 28 35% 24%;
+    --brand-border: 28 35% 34%;
+    --brand-muted: 28 30% 45%;
+    --brand-dark: 28 65% 65%;
+    --brand-darker: 28 60% 78%;
+  }
+
+  .dark [data-theme="nda"] {
+    --brand: 213 25% 47.9%;
+    --brand-hover: 213 25% 39.9%;
+    --brand-light: 213 25% 13%;
+    --brand-gradient-to: 223 25% 11%;
+    --brand-border-light: 213 20% 24%;
+    --brand-border: 213 20% 34%;
+    --brand-muted: 213 18% 45%;
+    --brand-dark: 213 25% 65%;
+    --brand-darker: 213 25% 78%;
+  }
+
+  .dark [data-theme="agniveer"] {
+    --brand: 86 35% 36.5%;
+    --brand-hover: 86 35% 28.5%;
+    --brand-light: 86 35% 13%;
+    --brand-gradient-to: 70 35% 11%;
+    --brand-border-light: 86 25% 24%;
+    --brand-border: 86 25% 34%;
+    --brand-muted: 86 20% 45%;
+    --brand-dark: 86 35% 65%;
+    --brand-darker: 86 30% 78%;
+  }
+
+  .dark [data-theme="agniveervayu"] {
+    --brand-light: 202 40% 13%;
+    --brand-gradient-to: 212 40% 11%;
+    --brand-border-light: 202 30% 24%;
+    --brand-border: 202 30% 34%;
+    --brand-muted: 202 25% 45%;
+    --brand-dark: 202 40% 65%;
+    --brand-darker: 202 38% 78%;
+  }
+
+  .dark [data-theme="rrbalp"] {
+    --brand: 355 55% 50%;
+    --brand-hover: 355 55% 42%;
+    --brand-light: 355 45% 13%;
+    --brand-gradient-to: 9 40% 11%;
+    --brand-border-light: 355 35% 24%;
+    --brand-border: 355 35% 34%;
+    --brand-muted: 355 30% 45%;
+    --brand-dark: 355 55% 65%;
+    --brand-darker: 355 50% 78%;
+  }
+
+  .dark [data-theme="rpfconst"] {
+    --brand: 228 20% 50%;
+    --brand-hover: 228 20% 42%;
+    --brand-light: 228 30% 13%;
+    --brand-gradient-to: 245 30% 11%;
+    --brand-border-light: 228 18% 24%;
+    --brand-border: 228 18% 34%;
+    --brand-muted: 228 15% 45%;
+    --brand-dark: 228 20% 65%;
+    --brand-darker: 228 20% 78%;
+  }
+
+  .dark [data-theme="ssccpo"] {
+    --brand: 262 40% 50%;
+    --brand-hover: 262 40% 42%;
+    --brand-light: 262 40% 13%;
+    --brand-gradient-to: 272 40% 11%;
+    --brand-border-light: 262 30% 24%;
+    --brand-border: 262 30% 34%;
+    --brand-muted: 262 25% 45%;
+    --brand-dark: 262 40% 65%;
+    --brand-darker: 262 35% 78%;
+  }
+
+  .dark [data-theme="apworld"] {
+    --brand: 30 25% 43.9%;
+    --brand-hover: 30 25% 35.9%;
+    --brand-light: 30 25% 13%;
+    --brand-gradient-to: 42 30% 11%;
+    --brand-border-light: 30 20% 24%;
+    --brand-border: 30 20% 34%;
+    --brand-muted: 30 15% 45%;
+    --brand-dark: 30 25% 65%;
+    --brand-darker: 30 25% 78%;
+  }
+
+  .dark [data-theme="aplang"] {
+    --brand: 222 18% 49.4%;
+    --brand-hover: 222 18% 41.4%;
+    --brand-light: 222 18% 13%;
+    --brand-gradient-to: 210 20% 11%;
+    --brand-border-light: 222 15% 24%;
+    --brand-border: 222 15% 34%;
+    --brand-muted: 222 12% 45%;
+    --brand-dark: 222 18% 65%;
+    --brand-darker: 222 18% 78%;
+  }
+
+  .dark [data-theme="phlet"] {
+    --brand-light: 160 35% 13%;
+    --brand-gradient-to: 190 35% 11%;
+    --brand-border-light: 160 20% 24%;
+    --brand-border: 160 20% 34%;
+    --brand-muted: 160 18% 45%;
+    --brand-dark: 160 25% 65%;
+    --brand-darker: 160 25% 78%;
+  }
+
+  .dark [data-theme="jeemain"] {
+    --brand: 18 30% 46.9%;
+    --brand-hover: 18 30% 38.9%;
+    --brand-light: 18 30% 13%;
+    --brand-gradient-to: 30 30% 11%;
+    --brand-border-light: 18 21% 24%;
+    --brand-border: 18 21% 34%;
+    --brand-muted: 18 18% 45%;
+    --brand-dark: 18 30% 65%;
+    --brand-darker: 18 30% 78%;
+  }
+
+  .dark [data-theme="neet"] {
+    --brand: 330 38% 50%;
+    --brand-hover: 330 38% 42%;
+    --brand-light: 330 38% 13%;
+    --brand-gradient-to: 342 38% 11%;
+    --brand-border-light: 330 27% 24%;
+    --brand-border: 330 27% 34%;
+    --brand-muted: 330 23% 45%;
+    --brand-dark: 330 38% 65%;
+    --brand-darker: 330 38% 78%;
+  }
+
+  .dark [data-theme="mhtcet"] {
+    --brand: 104 30% 38.6%;
+    --brand-hover: 104 30% 33%;
+    --brand-light: 104 30% 13%;
+    --brand-gradient-to: 116 30% 11%;
+    --brand-border-light: 104 21% 24%;
+    --brand-border: 104 21% 34%;
+    --brand-muted: 104 18% 45%;
+    --brand-dark: 104 30% 65%;
+    --brand-darker: 104 30% 78%;
+  }
+
+  .dark [data-theme="cuet"] {
+    --brand: 280 30% 50%;
+    --brand-hover: 280 30% 42%;
+    --brand-light: 280 30% 13%;
+    --brand-gradient-to: 292 30% 11%;
+    --brand-border-light: 280 21% 24%;
+    --brand-border: 280 21% 34%;
+    --brand-muted: 280 18% 45%;
+    --brand-dark: 280 30% 65%;
+    --brand-darker: 280 30% 78%;
+  }
+
+  .dark [data-theme="ugcnet"] {
+    --brand: 240 22% 50%;
+    --brand-hover: 240 22% 42%;
+    --brand-light: 240 22% 13%;
+    --brand-gradient-to: 252 22% 11%;
+    --brand-border-light: 240 15% 24%;
+    --brand-border: 240 15% 34%;
+    --brand-muted: 240 13% 45%;
+    --brand-dark: 240 22% 65%;
+    --brand-darker: 240 22% 78%;
+  }
+
+  .dark [data-theme="reet"] {
+    --brand: 39 25% 41.8%;
+    --brand-hover: 39 25% 33.8%;
+    --brand-light: 39 25% 13%;
+    --brand-gradient-to: 51 25% 11%;
+    --brand-border-light: 39 18% 24%;
+    --brand-border: 39 18% 34%;
+    --brand-muted: 39 15% 45%;
+    --brand-dark: 39 25% 65%;
+    --brand-darker: 39 25% 78%;
+  }
+
+  .dark [data-theme="uptet"] {
+    --brand: 156 30% 38.7%;
+    --brand-hover: 156 30% 30.7%;
+    --brand-light: 156 30% 13%;
+    --brand-gradient-to: 168 30% 11%;
+    --brand-border-light: 156 21% 24%;
+    --brand-border: 156 21% 34%;
+    --brand-muted: 156 18% 45%;
+    --brand-dark: 156 30% 65%;
+    --brand-darker: 156 30% 78%;
+  }
+
+  .dark [data-theme="aissee"] {
+    --brand: 120 22% 41.1%;
+    --brand-hover: 120 22% 33.1%;
+    --brand-light: 120 22% 13%;
+    --brand-gradient-to: 132 22% 11%;
+    --brand-border-light: 120 15% 24%;
+    --brand-border: 120 15% 34%;
+    --brand-muted: 120 13% 45%;
+    --brand-dark: 120 22% 65%;
+    --brand-darker: 120 22% 78%;
+  }
+
+  .dark [data-theme="apcalcab"] {
+    --brand: 211 40% 47.7%;
+    --brand-hover: 211 40% 39.7%;
+    --brand-light: 211 40% 13%;
+    --brand-gradient-to: 223 40% 11%;
+    --brand-border-light: 211 28% 24%;
+    --brand-border: 211 28% 34%;
+    --brand-muted: 211 24% 45%;
+    --brand-dark: 211 40% 65%;
+    --brand-darker: 211 40% 78%;
+  }
+
+  .dark [data-theme="aphug"] {
+    --brand: 57 25% 38.1%;
+    --brand-hover: 57 25% 30.1%;
+    --brand-light: 57 25% 13%;
+    --brand-gradient-to: 69 25% 11%;
+    --brand-border-light: 57 18% 24%;
+    --brand-border: 57 18% 34%;
+    --brand-muted: 57 15% 45%;
+    --brand-dark: 57 25% 65%;
+    --brand-darker: 57 25% 78%;
+  }
+
+  .dark [data-theme="jambmath"] {
+    --brand: 151 45% 35.5%;
+    --brand-hover: 151 45% 27.5%;
+    --brand-light: 151 45% 13%;
+    --brand-gradient-to: 131 40% 11%;
+    --brand-border-light: 151 30% 24%;
+    --brand-border: 151 30% 34%;
+    --brand-muted: 151 20% 45%;
+    --brand-dark: 151 45% 65%;
+    --brand-darker: 151 40% 78%;
+  }
+
+  .dark [data-theme="jambbio"] {
+    --brand: 135 30% 39.1%;
+    --brand-hover: 135 30% 32%;
+    --brand-light: 135 30% 13%;
+    --brand-gradient-to: 125 30% 11%;
+    --brand-border-light: 135 25% 24%;
+    --brand-border: 135 25% 34%;
+    --brand-muted: 135 20% 45%;
+    --brand-dark: 135 30% 65%;
+    --brand-darker: 135 30% 78%;
+  }
+
+  .dark [data-theme="jambchem"] {
+    --brand: 186 15% 42.8%;
+    --brand-hover: 186 15% 37%;
+    --brand-light: 186 15% 13%;
+    --brand-gradient-to: 190 15% 11%;
+    --brand-border-light: 186 12% 24%;
+    --brand-border: 186 12% 34%;
+    --brand-muted: 186 10% 45%;
+    --brand-dark: 186 15% 65%;
+    --brand-darker: 186 15% 78%;
+  }
+
+  .dark [data-theme="jambphys"] {
+    --brand: 231 36% 50%;
+    --brand-hover: 231 36% 42%;
+    --brand-light: 231 36% 13%;
+    --brand-gradient-to: 225 30% 11%;
+    --brand-border-light: 231 28% 24%;
+    --brand-border: 231 28% 34%;
+    --brand-muted: 231 20% 45%;
+    --brand-dark: 231 36% 65%;
+    --brand-darker: 231 32% 78%;
+  }
+
+  .dark [data-theme="apgov"] {
+    --brand: 5 30% 50%;
+    --brand-hover: 5 30% 42%;
+    --brand-light: 5 30% 13%;
+    --brand-gradient-to: 20 30% 11%;
+    --brand-border-light: 5 20% 24%;
+    --brand-border: 5 20% 34%;
+    --brand-muted: 5 15% 45%;
+    --brand-dark: 5 30% 65%;
+    --brand-darker: 5 30% 78%;
+  }
+
+  .dark [data-theme="ngpolice"] {
+    --brand: 235 65% 50%;
+    --brand-hover: 235 65% 42%;
+    --brand-light: 235 45% 13%;
+    --brand-gradient-to: 215 40% 11%;
+    --brand-border-light: 235 28% 24%;
+    --brand-border: 235 30% 34%;
+    --brand-muted: 235 30% 45%;
+    --brand-dark: 235 65% 66%;
+    --brand-darker: 235 60% 78%;
+  }
+
+  .dark [data-theme="cdcfib"] {
+    --brand: 10 30% 49.3%;
+    --brand-hover: 10 30% 41.3%;
+    --brand-light: 10 40% 13%;
+    --brand-gradient-to: 31 40% 11%;
+    --brand-border-light: 10 22% 24%;
+    --brand-border: 10 22% 34%;
+    --brand-muted: 10 20% 45%;
+    --brand-dark: 10 30% 65%;
+    --brand-darker: 10 30% 78%;
+  }
+
+  .dark [data-theme="ngarmy"] {
+    --brand: 80 18% 40.5%;
+    --brand-hover: 80 18% 32.5%;
+    --brand-light: 80 25% 13%;
+    --brand-gradient-to: 60 25% 11%;
+    --brand-border-light: 80 12% 24%;
+    --brand-border: 80 12% 34%;
+    --brand-muted: 80 12% 45%;
+    --brand-dark: 80 18% 65%;
+    --brand-darker: 80 16% 78%;
+  }
+
+  .dark [data-theme="ngcustoms"] {
+    --brand: 184 20% 41.4%;
+    --brand-hover: 184 20% 33.4%;
+    --brand-light: 184 25% 13%;
+    --brand-gradient-to: 170 25% 11%;
+    --brand-border-light: 184 14% 24%;
+    --brand-border: 184 14% 34%;
+    --brand-muted: 184 14% 45%;
+    --brand-dark: 184 22% 65%;
+    --brand-darker: 184 24% 78%;
+  }
+
+  .dark [data-theme="trcnpqe"] {
+    --brand: 170 20% 40.8%;
+    --brand-hover: 170 20% 32.8%;
+    --brand-light: 170 30% 13%;
+    --brand-gradient-to: 195 30% 11%;
+    --brand-border-light: 170 16% 24%;
+    --brand-border: 170 16% 34%;
+    --brand-muted: 170 15% 45%;
+    --brand-dark: 170 20% 65%;
+    --brand-darker: 170 20% 78%;
   }
 
 }

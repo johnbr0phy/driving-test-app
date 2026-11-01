@@ -10,7 +10,7 @@ import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free AP Psychology Practice Test 2026 - Multiple Choice";
+const title = "Free AP Psychology Practice Test 2027 - Multiple Choice";
 const metaDescription =
   "Free AP Psychology practice tests for the redesigned exam: 75 multiple-choice questions in 90 minutes, all five units, 200 original questions with explanations.";
 const description =
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   title,
   description: metaDescription,
   keywords:
-    "AP Psychology practice test, free AP Psychology practice test, AP Psych practice test, AP Psychology multiple choice, AP Psychology practice questions, AP Psych MCQ, AP Psychology exam 2026, AP Psychology units, AP Psychology review",
+    "AP Psychology practice test, free AP Psychology practice test, AP Psych practice test, AP Psychology multiple choice, AP Psychology practice questions, AP Psych MCQ, AP Psychology exam 2027, AP Psychology units, AP Psychology review",
   alternates: {
     canonical: `${siteUrl}/ap-psychology-practice-test`,
   },
@@ -119,7 +119,7 @@ export default function ApPsychologyLandingPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-50 mb-6 tracking-tight">
-            Free AP Psychology Practice Test 2026
+            Free AP Psychology Practice Test 2027
           </h1>
           <ExamLandingHero
             dashboardHref="/ap-psychology/dashboard"

@@ -34,7 +34,7 @@ v2 = sectioned/timed exam (template named in the batch brief). Region is the Tig
 | 18 | 2 | apush | AP US History | US | v2 |
 | 19 | 2 | apbio | AP Biology | US | v2 |
 | 20 | 2 | phcse | Civil Service Exam (Professional and Subprofessional) | PH | v2 |
-| 21 | 3 | upsccse | UPSC Civil Services Prelims (GS Paper I) | IN | v2 |
+| 21 | 3 | upscse | UPSC Civil Services Prelims (GS Paper I) | IN | v2 |
 | 22 | 3 | nda | NDA and NA Exam | IN | v2 |
 | 23 | 3 | agniveer | Agniveer Army CEE | IN | v2 |
 | 24 | 3 | agniveervayu | Agniveer Vayu (Air Force) | IN | v2 |

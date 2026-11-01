@@ -29,7 +29,7 @@ STAGES = {
     ],
     "Q": [
         PS("ar", 1, r"What is $\frac{3}{4}$ of 20 percent of 160?",
-           ["24", "12", "30", "32", "120"],
+           ["24", "30", "32", "40", "120"],
            r"20 percent of 160 is $32$, and $\frac{3}{4}$ of $32$ is $24$."),
         QC("ar", 2, r"$\sqrt{50}$", "$7$", 0,
            r"$7 = \sqrt{49}$, and $\sqrt{50} > \sqrt{49}$, so Quantity A is greater."),

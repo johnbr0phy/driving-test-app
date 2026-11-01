@@ -1,0 +1,4962 @@
+[
+  {
+    "id": "RPFC-T1-001",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstHistory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ancient history",
+    "stem": "The Harappan site of Ropar (Rupnagar), on the bank of the Sutlej, is in which state?",
+    "options": [
+      "Gujarat",
+      "Haryana",
+      "Punjab",
+      "Rajasthan"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Ropar, in Rupnagar district of Punjab, was the first Harappan site excavated in independent India, in the 1950s. Rakhigarhi is in Haryana, Kalibangan in Rajasthan and Dholavira in Gujarat."
+  },
+  {
+    "id": "RPFC-T1-002",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Directive Principles",
+    "stem": "Which Article of the Constitution directs the State to protect and improve the environment and to safeguard forests and wildlife?",
+    "options": [
+      "Article 39",
+      "Article 51A",
+      "Article 47",
+      "Article 48A"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Article 48A, added by the 42nd Amendment in 1976, is a Directive Principle on the environment. Article 51A(g) makes protecting the environment a Fundamental Duty of citizens too."
+  },
+  {
+    "id": "RPFC-T1-003",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Lakes",
+    "stem": "Tsomgo (Changu) Lake, a glacial lake on the road from Gangtok to Nathu La, is in which state?",
+    "options": [
+      "Arunachal Pradesh",
+      "Uttarakhand",
+      "Himachal Pradesh",
+      "Sikkim"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Tsomgo Lake lies at about 3,750 m in East Sikkim. It freezes in winter and is sacred to the Sikkimese."
+  },
+  {
+    "id": "RPFC-T1-004",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Vitamins",
+    "stem": "Retinol is the chemical name of which vitamin?",
+    "options": [
+      "Vitamin A",
+      "Vitamin K",
+      "Vitamin C",
+      "Vitamin B1"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Retinol is vitamin A, needed for good eyesight, especially in dim light. Vitamin B1 is thiamine, vitamin C ascorbic acid and vitamin K phylloquinone."
+  },
+  {
+    "id": "RPFC-T1-005",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Monuments",
+    "stem": "The Sun Temple at Modhera in Gujarat, with its great stepped tank, was built in the 11th century under which dynasty?",
+    "options": [
+      "Rashtrakuta",
+      "Chandela",
+      "Solanki",
+      "Paramara"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Modhera Sun Temple was built around 1026 under Bhima I of the Solanki (Chaulukya) dynasty of Gujarat. The Paramaras ruled Malwa and the Chandelas built Khajuraho."
+  },
+  {
+    "id": "RPFC-T1-006",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Parliament",
+    "stem": "When a new Lok Sabha meets for the first time, who administers the oath to its members before the Speaker is elected?",
+    "options": [
+      "The Chief Justice of India",
+      "The President",
+      "The pro tem Speaker",
+      "The Vice-President"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The President appoints a senior member as pro tem (temporary) Speaker, who swears in the new members and presides over the election of the Speaker."
+  },
+  {
+    "id": "RPFC-T1-007",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "National parks",
+    "stem": "Namdapha National Park, one of the few places with four big cats (tiger, leopard, clouded leopard and snow leopard), is in which state?",
+    "options": [
+      "Meghalaya",
+      "Arunachal Pradesh",
+      "Assam",
+      "Mizoram"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Namdapha is in Changlang district, Arunachal Pradesh, near the Myanmar border. It rises from lowland rainforest to snowy peaks, which is why so many cats live there."
+  },
+  {
+    "id": "RPFC-T1-008",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Diseases",
+    "stem": "Leprosy is caused by which kind of organism?",
+    "options": [
+      "A virus",
+      "A worm",
+      "A fungus",
+      "A bacterium"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Leprosy (Hansen's disease) is caused by the bacterium Mycobacterium leprae. It is cured with multi-drug therapy, given free in India."
+  },
+  {
+    "id": "RPFC-T1-009",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Medieval history",
+    "stem": "The Moidams, the mound burials of the Ahom kings at Charaideo, were added to the UNESCO World Heritage list in 2024. Charaideo is in which state?",
+    "options": [
+      "Nagaland",
+      "Assam",
+      "Arunachal Pradesh",
+      "Meghalaya"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Charaideo, near Sivasagar in Assam, was the first capital of the Ahom kingdom founded by Sukaphaa in the 13th century. Its Moidams, earthen mounds over the burial vaults of Ahom royalty, became India's 43rd World Heritage Site in July 2024."
+  },
+  {
+    "id": "RPFC-T1-010",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstPolity",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Parliament",
+    "stem": "In Parliament, a 'cut motion' is moved to reduce what?",
+    "options": [
+      "The number of ministers",
+      "A demand for grants in the Budget",
+      "The time allowed for a debate",
+      "The term of the Lok Sabha"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A cut motion, moved in the Lok Sabha, seeks to reduce the amount of a demand for grants. It can be a token cut, an economy cut or a policy cut, which shows disapproval of the policy behind the demand."
+  },
+  {
+    "id": "RPFC-T1-011",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Passes",
+    "stem": "Lipulekh Pass, used by pilgrims on the route to Kailash Mansarovar, is in which state?",
+    "options": [
+      "Sikkim",
+      "Uttarakhand",
+      "Himachal Pradesh",
+      "Arunachal Pradesh"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Lipulekh is in Pithoragarh district, Uttarakhand, near the tri-junction of India, Nepal and Tibet (China)."
+  },
+  {
+    "id": "RPFC-T1-012",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Light",
+    "stem": "A kaleidoscope makes its repeating patterns because of what?",
+    "options": [
+      "Dispersion by a prism",
+      "Refraction through a lens",
+      "Multiple reflection between mirrors",
+      "Scattering by dust"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A kaleidoscope has two or three mirrors set at an angle. Light from the coloured pieces is reflected again and again between them, producing symmetrical patterns."
+  },
+  {
+    "id": "RPFC-T1-013",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Revolts against British rule",
+    "stem": "Rani Chennamma, who led an armed revolt against the East India Company in 1824, was the queen of which state in present-day Karnataka?",
+    "options": [
+      "Sivaganga",
+      "Jhansi",
+      "Kittur",
+      "Ramgarh"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Rani Chennamma of Kittur resisted the Company's attempt to take over Kittur after her adopted son was not recognised as heir. Jhansi was Rani Lakshmibai's state and Ramgarh Rani Avantibai's."
+  },
+  {
+    "id": "RPFC-T1-014",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Union government",
+    "stem": "Under Article 343 of the Constitution, what is the official language of the Union?",
+    "options": [
+      "Hindi in the Devanagari script",
+      "Hindi and Sanskrit",
+      "Every Eighth Schedule language",
+      "English only"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Article 343 makes Hindi in Devanagari script the official language of the Union, with the international form of Indian numerals. The Official Languages Act, 1963 lets English continue alongside it."
+  },
+  {
+    "id": "RPFC-T1-015",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Biosphere reserves",
+    "stem": "Nokrek Biosphere Reserve, in the Garo Hills, is in which state?",
+    "options": [
+      "Nagaland",
+      "Tripura",
+      "Meghalaya",
+      "Assam"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Nokrek, the highest peak of the Garo Hills in Meghalaya, gives its name to a biosphere reserve known for its wild citrus, the memang narang, from which many cultivated citrus fruits may descend."
+  },
+  {
+    "id": "RPFC-T1-016",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Heat",
+    "stem": "At what temperature do the Celsius and Fahrenheit scales show the same reading?",
+    "options": [
+      "-40°",
+      "0°",
+      "32°",
+      "100°"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "F = 9C/5 + 32. Setting F = C gives C = 9C/5 + 32, so -4C/5 = 32 and C = -40. So -40 °C equals -40 °F."
+  },
+  {
+    "id": "RPFC-T1-017",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Revolts against British rule",
+    "stem": "U Tirot Sing led the Khasi people in a war against the British from 1829 to 1833 in which present-day state?",
+    "options": [
+      "Tripura",
+      "Mizoram",
+      "Meghalaya",
+      "Manipur"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "U Tirot Sing, a chief of the Khasi Hills, resisted a British road through his land from 1829 until his capture in 1833. Meghalaya marks U Tirot Sing Day on 17 July."
+  },
+  {
+    "id": "RPFC-T1-018",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstPolity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "RPF and railways",
+    "stem": "The Railway Protection Force is an armed force of the Union under which ministry?",
+    "options": [
+      "Ministry of Road Transport",
+      "Ministry of Defence",
+      "Ministry of Railways",
+      "Ministry of Home Affairs"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The RPF works under the Ministry of Railways and is governed by the Railway Protection Force Act, 1957. It protects railway property, passengers and the passenger area."
+  },
+  {
+    "id": "RPFC-T1-019",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Rivers and dams",
+    "stem": "The Mettur Dam in Tamil Nadu is built on which river?",
+    "options": [
+      "Tamirabarani",
+      "Kaveri",
+      "Vaigai",
+      "Krishna"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Mettur Dam, completed in 1934, holds back the Kaveri (Cauvery) to form the Stanley Reservoir in Salem district."
+  },
+  {
+    "id": "RPFC-T1-020",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Acids",
+    "stem": "Which acid is found in tomatoes?",
+    "options": [
+      "Formic acid",
+      "Tartaric acid",
+      "Lactic acid",
+      "Oxalic acid"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Tomatoes contain oxalic acid (along with citric and malic acid). Lactic acid is in curd, formic acid in ant stings and tartaric acid in tamarind and grapes."
+  },
+  {
+    "id": "RPFC-T1-021",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Reform movements",
+    "stem": "Who led the Kuka (Namdhari) movement in Punjab, which boycotted British goods and institutions in the 1860s and 1870s?",
+    "options": [
+      "Sardar Ajit Singh",
+      "Lala Har Dayal",
+      "Baba Ram Singh",
+      "Lala Lajpat Rai"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Satguru Ram Singh led the Kukas, who preached boycott of British goods, schools and courts. In 1872 dozens of Kukas were blown from cannon at Malerkotla and Ram Singh was exiled to Burma."
+  },
+  {
+    "id": "RPFC-T1-022",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "RPF and railways",
+    "stem": "Which zone of Indian Railways has its headquarters at Hajipur in Bihar?",
+    "options": [
+      "South Eastern Railway",
+      "North Eastern Railway",
+      "Eastern Railway",
+      "East Central Railway"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "East Central Railway is headquartered at Hajipur. North Eastern Railway is at Gorakhpur, Eastern Railway at Kolkata and South Eastern Railway at Kolkata (Garden Reach)."
+  },
+  {
+    "id": "RPFC-T1-023",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rivers and dams",
+    "stem": "The Koyna Dam, a major hydroelectric project, is in which state?",
+    "options": [
+      "Goa",
+      "Gujarat",
+      "Karnataka",
+      "Maharashtra"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Koyna Dam is in Satara district, Maharashtra, on the Koyna, a tributary of the Krishna. The Koyna region is known for earthquakes, including a strong one in 1967."
+  },
+  {
+    "id": "RPFC-T1-024",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Everyday chemistry",
+    "stem": "Fluoride is added to many toothpastes for what purpose?",
+    "options": [
+      "To whiten the teeth",
+      "To protect teeth from decay",
+      "To give a cool taste",
+      "To make the paste foam"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Fluoride makes tooth enamel harder and more resistant to the acids made by bacteria, which helps prevent cavities."
+  },
+  {
+    "id": "RPFC-T1-025",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstHistory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Freedom struggle",
+    "stem": "Gandhi's Dandi March of 1930 to break the salt law began which movement?",
+    "options": [
+      "Quit India Movement",
+      "Civil Disobedience Movement",
+      "Swadeshi and Boycott Movement",
+      "Non-Cooperation Movement"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Salt March from Sabarmati to Dandi (12 March to 6 April 1930) launched the Civil Disobedience Movement. Non-Cooperation began in 1920, Swadeshi in 1905 and Quit India in 1942."
+  },
+  {
+    "id": "RPFC-T1-026",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "RPF and railways",
+    "stem": "The Konkan Railway runs along the west coast from Roha in Maharashtra to which place in Karnataka?",
+    "options": [
+      "Mysuru",
+      "Belagavi",
+      "Hubballi",
+      "Thokur"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Konkan Railway runs about 740 km from Roha to Thokur near Mangaluru, through Maharashtra, Goa and Karnataka. It opened fully in 1998."
+  },
+  {
+    "id": "RPFC-T1-027",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rivers and dams",
+    "stem": "The Farakka Barrage, built to send water into the Hooghly and keep Kolkata port open, is on which river?",
+    "options": [
+      "Teesta",
+      "Brahmaputra",
+      "Ganga",
+      "Damodar"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Farakka Barrage is on the Ganga in Murshidabad district, West Bengal, just before the river enters Bangladesh. A feeder canal carries water to the Bhagirathi-Hooghly."
+  },
+  {
+    "id": "RPFC-T1-028",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Materials",
+    "stem": "Bakelite, used for electrical switches and handles of cooking pans, is what kind of material?",
+    "options": [
+      "A metal alloy",
+      "A thermosetting plastic",
+      "A natural fibre",
+      "A thermoplastic"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Bakelite is a thermosetting plastic: once moulded and heated it sets hard and does not soften again. It is a poor conductor of heat and electricity, so it suits switches and pan handles."
+  },
+  {
+    "id": "RPFC-T1-029",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Freedom struggle",
+    "stem": "In 1928 the Hindustan Republican Association was renamed the Hindustan Socialist Republican Association. Which of these revolutionaries was among its leaders?",
+    "options": [
+      "Bal Gangadhar Tilak",
+      "Bhagat Singh",
+      "Dadabhai Naoroji",
+      "Gopal Krishna Gokhale"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Bhagat Singh, Chandrashekhar Azad and Sukhdev were leaders of the HSRA, renamed at a meeting at Feroz Shah Kotla, Delhi, in September 1928. Tilak, Gokhale and Naoroji were Congress leaders of an earlier generation."
+  },
+  {
+    "id": "RPFC-T1-030",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstPolity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "RPF and railways",
+    "stem": "The Rail Coach Factory of Indian Railways is at Kapurthala in which state?",
+    "options": [
+      "Haryana",
+      "Punjab",
+      "Uttar Pradesh",
+      "Himachal Pradesh"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Rail Coach Factory at Kapurthala, Punjab, began work in 1986. Other coach factories are the Integral Coach Factory at Chennai and the Modern Coach Factory at Raebareli."
+  },
+  {
+    "id": "RPFC-T1-031",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "World geography",
+    "stem": "The Kalahari Desert lies mainly in which country?",
+    "options": [
+      "Botswana",
+      "Mongolia",
+      "Chile",
+      "Egypt"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Kalahari covers most of Botswana and parts of Namibia and South Africa. Egypt is in the Sahara, Chile has the Atacama and Mongolia the Gobi."
+  },
+  {
+    "id": "RPFC-T1-032",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Health",
+    "stem": "What does an ECG (electrocardiogram) record?",
+    "options": [
+      "The electrical activity of the heart",
+      "The activity of the brain",
+      "The pressure of the blood",
+      "The sugar level in the blood"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An ECG records the small electrical signals of the heartbeat through electrodes on the skin. Brain activity is recorded by an EEG."
+  },
+  {
+    "id": "RPFC-T1-033",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Dance",
+    "stem": "Gotipua, a dance performed by young boys dressed as girls, is a tradition of which state?",
+    "options": [
+      "Assam",
+      "Odisha",
+      "Kerala",
+      "Gujarat"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Gotipua is an old temple dance of Odisha in which boys, dressed as girls, dance in praise of Jagannath and Krishna. It is one of the roots of Odissi."
+  },
+  {
+    "id": "RPFC-T1-034",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstPolity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sports",
+    "stem": "The Subroto Cup is an inter-school tournament in which sport?",
+    "options": [
+      "Volleyball",
+      "Cricket",
+      "Hockey",
+      "Football"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Subroto Cup, named after Air Marshal Subroto Mukerjee and run by the Indian Air Force, is an international inter-school football tournament held in Delhi."
+  },
+  {
+    "id": "RPFC-T1-035",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "World geography",
+    "stem": "Lake Baikal, the deepest lake in the world, is in which country?",
+    "options": [
+      "Russia",
+      "Finland",
+      "Kazakhstan",
+      "Canada"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Lake Baikal in Siberia, Russia, is over 1,600 m deep and holds about a fifth of the world's unfrozen fresh surface water."
+  },
+  {
+    "id": "RPFC-T1-036",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Diseases",
+    "stem": "Pneumonia mainly affects which organ?",
+    "options": [
+      "Lungs",
+      "Liver",
+      "Heart",
+      "Kidneys"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Pneumonia is an infection that inflames the air sacs of the lungs, which can fill with fluid. It may be caused by bacteria, viruses or fungi."
+  },
+  {
+    "id": "RPFC-T1-037",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Festivals",
+    "stem": "The Sangai Festival, named after the state animal, is held every November in which state?",
+    "options": [
+      "Nagaland",
+      "Mizoram",
+      "Manipur",
+      "Assam"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Manipur Sangai Festival is named after the brow-antlered deer found only at Keibul Lamjao National Park in Manipur."
+  },
+  {
+    "id": "RPFC-T1-038",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstPolity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sports",
+    "stem": "The Sultan Azlan Shah Cup, held in Malaysia, is an international tournament in which sport?",
+    "options": [
+      "Football",
+      "Badminton",
+      "Squash",
+      "Hockey"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Sultan Azlan Shah Cup is an international men's hockey tournament first held in 1983 and now played at Ipoh, Malaysia."
+  },
+  {
+    "id": "RPFC-T1-039",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Borders",
+    "stem": "The Patkai hills run along India's border with which country?",
+    "options": [
+      "Bangladesh",
+      "China",
+      "Myanmar",
+      "Bhutan"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Patkai range lies on the border of Arunachal Pradesh and Nagaland with Myanmar. The Stilwell (Ledo) Road crossed it in the Second World War."
+  },
+  {
+    "id": "RPFC-T1-040",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Light",
+    "stem": "When red light and green light fall on the same spot of a white screen, what colour is seen?",
+    "options": [
+      "Yellow",
+      "White",
+      "Brown",
+      "Blue"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Red, green and blue are the primary colours of light. Red and green light together give yellow; all three together give white."
+  },
+  {
+    "id": "RPFC-T1-041",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Monuments",
+    "stem": "The Sun Temple at Konark, Odisha, was built in the 13th century under which dynasty?",
+    "options": [
+      "Chalukya of Badami",
+      "Pallava",
+      "Rashtrakuta",
+      "Eastern Ganga"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "King Narasimhadeva I of the Eastern Ganga dynasty built the Konark Sun Temple, designed as a giant chariot with twelve pairs of wheels."
+  },
+  {
+    "id": "RPFC-T1-042",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Economy",
+    "stem": "The Kisan Credit Card scheme, started in 1998, provides farmers with what?",
+    "options": [
+      "Free crop insurance",
+      "Free seeds and fertiliser",
+      "A monthly pension",
+      "Short-term credit for farming needs"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Kisan Credit Card gives farmers timely, short-term credit through banks for seeds, fertiliser and other crop needs. It was set up on the model drawn up by NABARD."
+  },
+  {
+    "id": "RPFC-T1-043",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Percentage",
+    "stem": "What is 45% of 640?",
+    "options": [
+      "264",
+      "272",
+      "280",
+      "288"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "10% of 640 is 64, so 40% is 256 and 5% is 32. 45% = 256 + 32 = 288."
+  },
+  {
+    "id": "RPFC-T1-044",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstMaths",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Simplification",
+    "stem": "Simplify: 18 + 6 x 4 ÷ 3 - 5",
+    "options": [
+      "15",
+      "17",
+      "19",
+      "21"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "By BODMAS, multiplication and division come first, from left to right: 6 x 4 = 24 and 24 ÷ 3 = 8. Then 18 + 8 - 5 = 21."
+  },
+  {
+    "id": "RPFC-T1-045",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Percentage",
+    "stem": "A town has 48,000 people. Its population grows by 5% in the first year and by 10% in the second year. What is the population after two years?",
+    "options": [
+      "54,600",
+      "54,960",
+      "55,200",
+      "55,440"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "After the first year: 48,000 x 1.05 = 50,400. After the second: 50,400 x 1.10 = 55,440. Adding the rates (15% of 48,000) would give only 55,200."
+  },
+  {
+    "id": "RPFC-T1-046",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Decimals",
+    "stem": "What is the value of 0.3 x 0.03 x 0.003?",
+    "options": [
+      "0.0000027",
+      "0.000027",
+      "0.00027",
+      "0.0027"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "3 x 3 x 3 = 27, and the three factors have 1 + 2 + 3 = 6 decimal places in all, so the product is 0.000027."
+  },
+  {
+    "id": "RPFC-T1-047",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Profit and loss",
+    "stem": "Rakesh buys a bicycle for ₹3,200 and sells it for ₹3,680. What is his profit percentage?",
+    "options": [
+      "12%",
+      "13%",
+      "14%",
+      "15%"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Profit = 3,680 - 3,200 = ₹480. Profit % is worked out on the cost: 480 / 3,200 x 100 = 15%. Dividing by the selling price instead gives about 13%, a common slip."
+  },
+  {
+    "id": "RPFC-T1-048",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "LCM and HCF",
+    "stem": "What is the smallest number that leaves a remainder of 5 when divided by 6, 9 or 15?",
+    "options": [
+      "65",
+      "85",
+      "90",
+      "95"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The LCM of 6, 9 and 15 is 90, which leaves remainder 0. Adding the remainder gives 90 + 5 = 95."
+  },
+  {
+    "id": "RPFC-T1-049",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstArith",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Profit and loss",
+    "stem": "By selling 12 pens for ₹90, a shopkeeper loses 10%. At what price should he sell 12 pens to gain 20%?",
+    "options": [
+      "₹108",
+      "₹110",
+      "₹115",
+      "₹120"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "At a 10% loss, ₹90 is 90% of the cost, so 12 pens cost ₹100. For a 20% gain he must sell them for 100 x 1.2 = ₹120."
+  },
+  {
+    "id": "RPFC-T1-050",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstMaths",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "LCM and HCF",
+    "stem": "What is the HCF of 108 and 162?",
+    "options": [
+      "18",
+      "27",
+      "54",
+      "324"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "108 = 2² x 3³ and 162 = 2 x 3⁴. The common factors are 2 x 3³ = 54. (324 is their LCM.)"
+  },
+  {
+    "id": "RPFC-T1-051",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Discount",
+    "stem": "A ceiling fan marked at ₹1,800 is sold at a discount of 15%. What is its selling price?",
+    "options": [
+      "₹1,530",
+      "₹1,550",
+      "₹1,560",
+      "₹1,620"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "15% of 1,800 = ₹270. Selling price = 1,800 - 270 = ₹1,530."
+  },
+  {
+    "id": "RPFC-T1-052",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Fractions",
+    "stem": "Which of these fractions is the largest?",
+    "options": [
+      "4/7",
+      "7/12",
+      "5/8",
+      "3/5"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "As decimals: 5/8 = 0.625, 3/5 = 0.6, 7/12 is about 0.583 and 4/7 is about 0.571. So 5/8 is the largest."
+  },
+  {
+    "id": "RPFC-T1-053",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Simple interest",
+    "stem": "At what rate of simple interest per annum will ₹6,000 earn ₹1,260 in 3 years?",
+    "options": [
+      "6%",
+      "7%",
+      "7.5%",
+      "8%"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "R = SI x 100 / (P x T) = 1,260 x 100 / (6,000 x 3) = 126,000 / 18,000 = 7%."
+  },
+  {
+    "id": "RPFC-T1-054",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstMaths",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Square roots",
+    "stem": "What is the square root of 2,116?",
+    "options": [
+      "46",
+      "56",
+      "64",
+      "66"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The number ends in 6, so the root ends in 4 or 6, and 45² = 2,025 is just below it. 46² = 2,116."
+  },
+  {
+    "id": "RPFC-T1-055",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Compound interest",
+    "stem": "What is the compound interest on ₹15,000 for 2 years at 6% per annum, compounded annually?",
+    "options": [
+      "₹1,800",
+      "₹1,818",
+      "₹1,836",
+      "₹1,854"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Amount = 15,000 x 1.06 x 1.06 = 15,000 x 1.1236 = ₹16,854. CI = 16,854 - 15,000 = ₹1,854. Simple interest would be only ₹1,800."
+  },
+  {
+    "id": "RPFC-T1-056",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mensuration",
+    "stem": "A rectangular floor 24 m long and 15 m wide is covered with square tiles of side 3 m. How many tiles are needed?",
+    "options": [
+      "40",
+      "45",
+      "60",
+      "120"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Floor area = 24 x 15 = 360 m². Each tile covers 3 x 3 = 9 m². Tiles = 360 / 9 = 40 (8 tiles along the length and 5 across)."
+  },
+  {
+    "id": "RPFC-T1-057",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ratio",
+    "stem": "₹8,100 is divided among A, B and C in the ratio 2 : 3 : 4. What is C's share?",
+    "options": [
+      "₹1,800",
+      "₹2,700",
+      "₹3,600",
+      "₹4,050"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "There are 2 + 3 + 4 = 9 parts, so one part is 8,100 / 9 = ₹900. C gets 4 x 900 = ₹3,600."
+  },
+  {
+    "id": "RPFC-T1-058",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mensuration",
+    "stem": "The circumference of a circle is 132 cm. What is its area? (Take π = 22/7.)",
+    "options": [
+      "462 cm²",
+      "693 cm²",
+      "1,386 cm²",
+      "2,772 cm²"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "2πr = 132, so r = 132 x 7 / 44 = 21 cm. Area = πr² = 22/7 x 21 x 21 = 1,386 cm²."
+  },
+  {
+    "id": "RPFC-T1-059",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Average",
+    "stem": "A batsman's average over 11 innings is 42. After his 12th innings his average becomes 45. How many runs did he score in the 12th innings?",
+    "options": [
+      "66",
+      "72",
+      "75",
+      "78"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Total after 11 innings = 11 x 42 = 462. Total after 12 = 12 x 45 = 540. The 12th innings = 540 - 462 = 78."
+  },
+  {
+    "id": "RPFC-T1-060",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mensuration",
+    "stem": "The total surface area of a cube is 384 cm². What is its volume?",
+    "options": [
+      "64 cm³",
+      "343 cm³",
+      "512 cm³",
+      "729 cm³"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "6a² = 384, so a² = 64 and a = 8 cm. Volume = 8³ = 512 cm³."
+  },
+  {
+    "id": "RPFC-T1-061",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ages",
+    "stem": "The ratio of the ages of a mother and her daughter is 7 : 2. After 10 years the ratio will be 9 : 4. What is the mother's present age?",
+    "options": [
+      "35 years",
+      "40 years",
+      "42 years",
+      "45 years"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Let the ages be 7x and 2x. Then (7x + 10) / (2x + 10) = 9 / 4, so 28x + 40 = 18x + 90 and x = 5. The mother is 35 and the daughter 10."
+  },
+  {
+    "id": "RPFC-T1-062",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Algebra",
+    "stem": "If a + b = 11 and ab = 24, what is the value of a² + b²?",
+    "options": [
+      "73",
+      "97",
+      "121",
+      "145"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "a² + b² = (a + b)² - 2ab = 121 - 48 = 73. Check with a = 8 and b = 3: 64 + 9 = 73. Subtracting ab only once gives 97, adding it gives 145, and 121 is only (a + b)²."
+  },
+  {
+    "id": "RPFC-T1-063",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Time and work",
+    "stem": "18 men can dig a canal in 20 days. How many days will 24 men take to dig the same canal, working at the same rate?",
+    "options": [
+      "15 days",
+      "16 days",
+      "18 days",
+      "27 days"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The work is 18 x 20 = 360 man-days. 24 men need 360 / 24 = 15 days. More men means fewer days, so 27 days (multiplying instead of dividing) cannot be right."
+  },
+  {
+    "id": "RPFC-T1-064",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstMaths",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Algebra",
+    "stem": "If 7x - 4 = 4x + 11, what is x?",
+    "options": [
+      "3",
+      "5",
+      "7",
+      "15"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Subtract 4x from both sides and add 4: 3x = 15, so x = 5. Check: 35 - 4 = 31 and 20 + 11 = 31."
+  },
+  {
+    "id": "RPFC-T1-065",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstArith",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Speed and distance",
+    "stem": "Walking at 6 km/h, a man reaches the station 12 minutes late. Walking at 8 km/h, he arrives 3 minutes early. How far is the station?",
+    "options": [
+      "6 km",
+      "7 km",
+      "8 km",
+      "9 km"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The two times differ by 15 minutes = 1/4 hour. d/6 - d/8 = 1/4, so d/24 = 1/4 and d = 6 km. Check: 1 hour at 6 km/h and 45 minutes at 8 km/h differ by 15 minutes."
+  },
+  {
+    "id": "RPFC-T1-066",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Geometry",
+    "stem": "What is each interior angle of a regular dodecagon (12 sides)?",
+    "options": [
+      "120°",
+      "135°",
+      "144°",
+      "150°"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Each exterior angle of a regular polygon is 360° divided by the number of sides: 360 / 12 = 30°. Each interior angle is 180 - 30 = 150°."
+  },
+  {
+    "id": "RPFC-T1-067",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Trains",
+    "stem": "Two trains 130 m and 110 m long run in opposite directions on parallel tracks at 40 km/h and 32 km/h. How long do they take to cross each other?",
+    "options": [
+      "10 seconds",
+      "12 seconds",
+      "15 seconds",
+      "24 seconds"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "In opposite directions the speeds add: 72 km/h = 72 x 5/18 = 20 m/s. They must cover both lengths, 240 m, so the time is 240 / 20 = 12 seconds."
+  },
+  {
+    "id": "RPFC-T1-068",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Trigonometry",
+    "stem": "What is the value of sin² 45° + cos² 30°?",
+    "options": [
+      "5/4",
+      "1",
+      "3/2",
+      "3/4"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "sin 45° = 1/√2, so sin² 45° = 1/2. cos 30° = √3/2, so cos² 30° = 3/4. The sum is 1/2 + 3/4 = 5/4."
+  },
+  {
+    "id": "RPFC-T1-069",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pipes and cisterns",
+    "stem": "Pipe A can fill a tank in 6 hours, and outlet B can empty the full tank in 10 hours. If both are opened together on the empty tank, how long will it take to fill?",
+    "options": [
+      "3.75 hours",
+      "8 hours",
+      "15 hours",
+      "16 hours"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Each hour the tank gains 1/6 - 1/10 = 5/30 - 3/30 = 2/30 = 1/15, so it fills in 15 hours. Adding the rates (3.75 hours) treats the outlet as a second inlet."
+  },
+  {
+    "id": "RPFC-T1-070",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstMaths",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Probability",
+    "stem": "A fair die is thrown once. What is the probability of getting a number greater than 4?",
+    "options": [
+      "2/3",
+      "1/3",
+      "1/6",
+      "1/2"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Only 5 and 6 are greater than 4, so 2 of the 6 outcomes: 2/6 = 1/3."
+  },
+  {
+    "id": "RPFC-T1-071",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstArith",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Mixtures",
+    "stem": "In what ratio should rice costing ₹30 per kg be mixed with rice costing ₹48 per kg to get a mixture worth ₹42 per kg?",
+    "options": [
+      "2 : 1",
+      "1 : 2",
+      "3 : 4",
+      "1 : 3"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "By alligation, cheaper : dearer = (48 - 42) : (42 - 30) = 6 : 12 = 1 : 2. Check: 1 kg at 30 and 2 kg at 48 cost ₹126 for 3 kg, which is ₹42 a kg."
+  },
+  {
+    "id": "RPFC-T1-072",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Analogy",
+    "stem": "Eye : Optician :: Teeth : ?",
+    "options": [
+      "Surgeon",
+      "Cardiologist",
+      "Pharmacist",
+      "Dentist"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An optician looks after eyes; a dentist looks after teeth."
+  },
+  {
+    "id": "RPFC-T1-073",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Blood relations",
+    "stem": "X is the wife of Y. Z is X's brother. How is Y related to Z?",
+    "options": [
+      "Father-in-law",
+      "Cousin",
+      "Brother-in-law",
+      "Brother"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Y is married to Z's sister X, so Y is Z's brother-in-law (his sister's husband)."
+  },
+  {
+    "id": "RPFC-T1-074",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number analogy",
+    "stem": "5 : 124 :: 7 : ?",
+    "options": [
+      "48",
+      "243",
+      "336",
+      "342"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "124 = 5³ - 1. In the same way, 7³ - 1 = 343 - 1 = 342."
+  },
+  {
+    "id": "RPFC-T1-075",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Blood relations",
+    "stem": "Introducing a man, Ramesh says, 'His wife is the only daughter of my father's only son.' How is the man related to Ramesh?",
+    "options": [
+      "Son-in-law",
+      "Nephew",
+      "Brother-in-law",
+      "Son"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Ramesh is a man, so his father's only son is Ramesh himself. The man's wife is Ramesh's only daughter, which makes the man Ramesh's son-in-law."
+  },
+  {
+    "id": "RPFC-T1-076",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Letter analogy",
+    "stem": "ACE : FHJ :: KMO : ?",
+    "options": [
+      "PQR",
+      "PRT",
+      "QSU",
+      "ORT"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Each letter moves 5 places forward: A to F, C to H, E to J. So K to P, M to R and O to T, giving PRT."
+  },
+  {
+    "id": "RPFC-T1-077",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Directions",
+    "stem": "Meena walks 10 m east, turns left and walks 6 m, then turns left again and walks 18 m. How far is she from her starting point, and in which direction?",
+    "options": [
+      "8 m west",
+      "10 m north-west",
+      "10 m north-east",
+      "14 m west"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "She ends 6 m north of the start and 18 - 10 = 8 m west of it. The distance is √(8² + 6²) = 10 m, and north plus west is north-west."
+  },
+  {
+    "id": "RPFC-T1-078",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Classification",
+    "stem": "Find the odd one out: Jupiter, Saturn, Neptune, Pluto",
+    "options": [
+      "Pluto",
+      "Saturn",
+      "Neptune",
+      "Jupiter"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Jupiter, Saturn and Neptune are planets. Pluto has been classed as a dwarf planet since 2006."
+  },
+  {
+    "id": "RPFC-T1-079",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstLogical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Directions",
+    "stem": "If south-west is called north-west and north-west is called north-east, what is south-east called?",
+    "options": [
+      "North-east",
+      "East",
+      "South",
+      "South-west"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "South-west has become north-west: every direction is turned 90° clockwise. Check: north-west turned 90° clockwise is north-east. South-east turned 90° clockwise is south-west."
+  },
+  {
+    "id": "RPFC-T1-080",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Classification",
+    "stem": "Find the odd one out: 19, 31, 41, 51",
+    "options": [
+      "19",
+      "31",
+      "41",
+      "51"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "19, 31 and 41 are prime numbers. 51 = 3 x 17 is not."
+  },
+  {
+    "id": "RPFC-T1-081",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Syllogism",
+    "stem": "Statements: All guards are officers. No officer is lazy. Conclusions: I. No guard is lazy. II. Some officers are guards.",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Every guard is an officer and no officer is lazy, so no guard is lazy: I follows. 'All guards are officers' also gives 'Some officers are guards': II follows."
+  },
+  {
+    "id": "RPFC-T1-082",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "What comes next? 3, 10, 29, 66, 127, ?",
+    "options": [
+      "198",
+      "212",
+      "216",
+      "218"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Each term is n³ + 2: 1 + 2 = 3, 8 + 2 = 10, 27 + 2 = 29, 64 + 2 = 66, 125 + 2 = 127. The next is 216 + 2 = 218."
+  },
+  {
+    "id": "RPFC-T1-083",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Syllogism",
+    "stem": "Statements: Some trains are buses. All buses are cars. Conclusions: I. Some trains are cars. II. All cars are trains.",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The trains that are buses are also cars, so some trains are cars: I follows. Nothing says every car is a train, so II does not follow."
+  },
+  {
+    "id": "RPFC-T1-084",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "What comes next? 4, 11, 32, 95, 284, ?",
+    "options": [
+      "848",
+      "851",
+      "852",
+      "855"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Each term is three times the previous one minus 1: 4 x 3 - 1 = 11, 11 x 3 - 1 = 32, and so on. 284 x 3 - 1 = 851."
+  },
+  {
+    "id": "RPFC-T1-085",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ranking",
+    "stem": "In a queue, Ravi is 14th from the front and 20th from the back. How many people are in the queue?",
+    "options": [
+      "33",
+      "34",
+      "35",
+      "36"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Total = position from front + position from back - 1 = 14 + 20 - 1 = 33. Ravi is counted in both positions, so one is taken away."
+  },
+  {
+    "id": "RPFC-T1-086",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Letter series",
+    "stem": "What comes next? BZ, CY, DX, EW, ?",
+    "options": [
+      "GV",
+      "FU",
+      "FV",
+      "EV"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The first letter moves forward (B, C, D, E, F) and the second moves backward (Z, Y, X, W, V). Next is FV."
+  },
+  {
+    "id": "RPFC-T1-087",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Order and ranking",
+    "stem": "In a race with no ties, Gopal finished ahead of Hari but behind Imran. Jaya finished behind Hari, and Kiran finished ahead of Imran. Who finished fourth?",
+    "options": [
+      "Imran",
+      "Gopal",
+      "Jaya",
+      "Hari"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "From first to last: Kiran, Imran, Gopal, Hari, Jaya. Hari is fourth."
+  },
+  {
+    "id": "RPFC-T1-088",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Letter series",
+    "stem": "What comes next? Y, U, Q, M, ?",
+    "options": [
+      "J",
+      "H",
+      "K",
+      "I"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Each letter is 4 places before the last: Y, U, Q, M, then I."
+  },
+  {
+    "id": "RPFC-T1-089",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Seating",
+    "stem": "Four friends sit in a row facing north. K is to the immediate right of L, M is to the immediate left of L, and N sits at the right end next to K. Who is second from the left?",
+    "options": [
+      "N",
+      "M",
+      "L",
+      "K"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "From left to right: M, L, K, N. M is at the left end, so L is second from the left."
+  },
+  {
+    "id": "RPFC-T1-090",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Coding-decoding",
+    "stem": "If DEF is coded as 15 (D = 4, E = 5, F = 6), how is GOLD coded?",
+    "options": [
+      "38",
+      "39",
+      "40",
+      "42"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Add the alphabet positions: G = 7, O = 15, L = 12, D = 4, so GOLD = 38."
+  },
+  {
+    "id": "RPFC-T1-091",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Calendar",
+    "stem": "If 2 October 2026 is a Friday, what day of the week is 2 November 2026?",
+    "options": [
+      "Monday",
+      "Tuesday",
+      "Thursday",
+      "Sunday"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "October has 31 days, so 2 November is 31 days later. 31 = 4 weeks + 3 days, and three days after Friday is Monday."
+  },
+  {
+    "id": "RPFC-T1-092",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstVerbal",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Coding-decoding",
+    "stem": "In a certain code, MONKEY is written as XDJMNL. How is TIGER written in that code?",
+    "options": [
+      "SHFDQ",
+      "QDFGS",
+      "RDFHS",
+      "QDFHS"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The word is reversed (YEKNOM) and each letter moves one place back: X D J M N L. TIGER reversed is REGIT, and one place back gives QDFHS."
+  },
+  {
+    "id": "RPFC-T1-093",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Clock",
+    "stem": "What is the angle between the hour and minute hands of a clock at 5:40?",
+    "options": [
+      "60°",
+      "70°",
+      "80°",
+      "110°"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Angle = |30 x hours - 5.5 x minutes| = |30 x 5 - 5.5 x 40| = |150 - 220| = 70°. The hour hand has moved two thirds of the way from 5 to 6."
+  },
+  {
+    "id": "RPFC-T1-094",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstVerbal",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Mathematical operations",
+    "stem": "If + means x, x means -, - means ÷ and ÷ means +, what is the value of 16 - 4 + 3 x 2 ÷ 5?",
+    "options": [
+      "11",
+      "13",
+      "15",
+      "17"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Replace the signs: 16 ÷ 4 x 3 - 2 + 5. Then 16 ÷ 4 = 4, 4 x 3 = 12, and 12 - 2 + 5 = 15."
+  },
+  {
+    "id": "RPFC-T1-095",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Course of action",
+    "stem": "Statement: The main railway station will be closed for maintenance next Sunday. Courses of action: I. Passengers should be told in advance about other arrangements. II. All trains in the zone should be cancelled on Sunday.",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Informing passengers in advance is a sensible step, so I follows. Cancelling every train in the zone because one station is closed goes much too far, so II does not."
+  },
+  {
+    "id": "RPFC-T1-096",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Alphabet",
+    "stem": "Which letter is 4th to the left of the 7th letter from the right in the English alphabet?",
+    "options": [
+      "X",
+      "P",
+      "L",
+      "Q"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The 7th letter from the right is the 20th from the left, T. Counting 4 to the left gives the 16th letter, P."
+  },
+  {
+    "id": "RPFC-T1-097",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Data sufficiency",
+    "stem": "What is Raj's age? Statement I: Raj is 4 years older than Sita. Statement II: Sita's age is half of her mother's age, which is 40.",
+    "options": [
+      "Statement I alone is sufficient",
+      "Statement II alone is sufficient",
+      "Either statement alone is sufficient",
+      "Both statements together are needed"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "I alone gives only the gap between Raj and Sita. II alone gives Sita's age (20) but says nothing about Raj. Together, Raj is 20 + 4 = 24."
+  },
+  {
+    "id": "RPFC-T1-098",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Dictionary order",
+    "stem": "If these words are arranged as in a dictionary, which comes third? Grape, Grass, Grain, Grant",
+    "options": [
+      "Grape",
+      "Grain",
+      "Grant",
+      "Grass"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "All begin with GRA. Fourth letters: I (Grain), N (Grant), P (Grape), S (Grass). Order: Grain, Grant, Grape, Grass, so Grape is third."
+  },
+  {
+    "id": "RPFC-T1-099",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstLogical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Cubes",
+    "stem": "A cube painted on all six faces is cut into 27 equal small cubes. How many small cubes have exactly two faces painted?",
+    "options": [
+      "1",
+      "6",
+      "8",
+      "12"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Cubes with two painted faces lie on the edges but not at the corners. A 3 x 3 x 3 cube has 12 edges with 1 such cube each: 12. The 8 corner cubes have three painted faces."
+  },
+  {
+    "id": "RPFC-T1-100",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "rpfconstVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Word formation",
+    "stem": "Which word cannot be formed from the letters of the word ADMINISTRATION?",
+    "options": [
+      "MINISTER",
+      "DOMAIN",
+      "TRAIN",
+      "STATION"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "ADMINISTRATION has A, A, D, M, I, I, I, N, N, S, T, T, R, O but no E, so MINISTER cannot be formed. STATION, DOMAIN and TRAIN use only letters that are there."
+  },
+  {
+    "id": "RPFC-T2-001",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstHistory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Monuments",
+    "stem": "The Lingaraj Temple, one of the finest examples of the Kalinga style, is in which city?",
+    "options": [
+      "Puri",
+      "Cuttack",
+      "Bhubaneswar",
+      "Konark"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Lingaraj Temple, dedicated to Shiva as Harihara, stands in the old town of Bhubaneswar and dates mainly from the 11th century. Puri has the Jagannath Temple."
+  },
+  {
+    "id": "RPFC-T2-002",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "RPF and railways",
+    "stem": "The Nilgiri Mountain Railway, a UNESCO World Heritage Site, runs from Mettupalayam to which hill station?",
+    "options": [
+      "Kodaikanal",
+      "Coonoor",
+      "Munnar",
+      "Udhagamandalam"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Nilgiri Mountain Railway climbs from Mettupalayam to Udhagamandalam (Ooty) and uses a rack-and-pinion system on its steepest section. Coonoor is a station on the way, not the end of the line."
+  },
+  {
+    "id": "RPFC-T2-003",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "National parks",
+    "stem": "The Valley of Flowers National Park, a UNESCO World Heritage Site, is in which state?",
+    "options": [
+      "Jammu and Kashmir",
+      "Himachal Pradesh",
+      "Sikkim",
+      "Uttarakhand"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Valley of Flowers is in Chamoli district, Uttarakhand. Together with Nanda Devi National Park it forms a World Heritage Site."
+  },
+  {
+    "id": "RPFC-T2-004",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Diseases",
+    "stem": "Mumps, which causes swelling of the salivary glands, is caused by what?",
+    "options": [
+      "A lack of iodine",
+      "A bacterium",
+      "A virus",
+      "A lack of vitamin C"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Mumps is a viral infection that swells the parotid salivary glands near the jaw. It is prevented by the MMR vaccine."
+  },
+  {
+    "id": "RPFC-T2-005",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ancient history",
+    "stem": "The Hathigumpha inscription at Udayagiri near Bhubaneswar records the deeds of which king of Kalinga?",
+    "options": [
+      "Samudragupta",
+      "Ashoka",
+      "Kharavela",
+      "Kanishka"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Hathigumpha (elephant cave) inscription, from about the 1st century BCE, describes the reign of Kharavela of the Mahameghavahana dynasty, a patron of Jainism."
+  },
+  {
+    "id": "RPFC-T2-006",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "RPF and railways",
+    "stem": "The Kalka-Shimla Railway, a narrow-gauge line on the UNESCO World Heritage list, climbs to the capital of which state?",
+    "options": [
+      "Jammu and Kashmir",
+      "Uttarakhand",
+      "Punjab",
+      "Himachal Pradesh"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The line runs about 96 km from Kalka in Haryana to Shimla, the capital of Himachal Pradesh. It opened in 1903 and has over 100 tunnels."
+  },
+  {
+    "id": "RPFC-T2-007",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Passes",
+    "stem": "Jelep La, an old trade route through the Chumbi valley, links Sikkim with which region?",
+    "options": [
+      "Bangladesh",
+      "Bhutan",
+      "Nepal",
+      "Tibet"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Jelep La, in East Sikkim, connects Sikkim to the Chumbi valley of Tibet (China). It was part of the old trade route from Kalimpong to Lhasa."
+  },
+  {
+    "id": "RPFC-T2-008",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Light",
+    "stem": "Which defect of vision is corrected with a cylindrical lens?",
+    "options": [
+      "Presbyopia",
+      "Astigmatism",
+      "Cataract",
+      "Myopia"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Astigmatism comes from an unevenly curved cornea or lens and is corrected with a cylindrical lens. Myopia needs a concave lens, and cataract is treated by surgery."
+  },
+  {
+    "id": "RPFC-T2-009",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Medieval history",
+    "stem": "The Moroccan traveller Ibn Battuta came to India and served as a qazi under which Delhi Sultan?",
+    "options": [
+      "Alauddin Khalji",
+      "Muhammad bin Tughlaq",
+      "Iltutmish",
+      "Ghiyas-ud-din Balban"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Ibn Battuta reached India in 1333 and was made qazi of Delhi by Muhammad bin Tughlaq. His travel book, the Rihla, describes the Sultan's court and the postal system."
+  },
+  {
+    "id": "RPFC-T2-010",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "RPF and railways",
+    "stem": "Banaras Locomotive Works, formerly the Diesel Locomotive Works, is in which city?",
+    "options": [
+      "Kapurthala",
+      "Chennai",
+      "Varanasi",
+      "Chittaranjan"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Banaras Locomotive Works in Varanasi now builds electric locomotives. Chittaranjan in West Bengal has the Chittaranjan Locomotive Works."
+  },
+  {
+    "id": "RPFC-T2-011",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "National parks",
+    "stem": "Indravati National Park, a tiger reserve named after a river, is in which state?",
+    "options": [
+      "Jharkhand",
+      "Odisha",
+      "Telangana",
+      "Chhattisgarh"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Indravati National Park is in Bijapur district, Chhattisgarh. The Indravati river forms its northern boundary and is a tributary of the Godavari."
+  },
+  {
+    "id": "RPFC-T2-012",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Fuels",
+    "stem": "Which of these fuels has the highest calorific value (heat released per kilogram)?",
+    "options": [
+      "Coal",
+      "Hydrogen",
+      "Petrol",
+      "LPG"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Hydrogen releases about 150 kJ per gram when burnt, roughly three times as much as LPG or petrol, which is why it is used as a rocket fuel."
+  },
+  {
+    "id": "RPFC-T2-013",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Revolts against British rule",
+    "stem": "Velu Nachiyar, who fought the East India Company and won back her kingdom in 1780, was the queen of which state?",
+    "options": [
+      "Travancore",
+      "Thanjavur",
+      "Sivaganga",
+      "Kittur"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Velu Nachiyar of Sivaganga in present-day Tamil Nadu recovered her kingdom with the help of Hyder Ali. She is remembered as one of the first Indian queens to fight the Company."
+  },
+  {
+    "id": "RPFC-T2-014",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "RPF and railways",
+    "stem": "The Rail Wheel Factory of Indian Railways is at Yelahanka in which city?",
+    "options": [
+      "Chennai",
+      "Bengaluru",
+      "Hyderabad",
+      "Pune"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Rail Wheel Factory at Yelahanka, Bengaluru, makes wheels and axles for Indian Railways. Another wheel plant is at Bela in Bihar."
+  },
+  {
+    "id": "RPFC-T2-015",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "National parks",
+    "stem": "Dachigam National Park, home of the hangul (Kashmir stag), is in which state or union territory?",
+    "options": [
+      "Himachal Pradesh",
+      "Arunachal Pradesh",
+      "Jammu and Kashmir",
+      "Uttarakhand"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Dachigam National Park is near Srinagar in Jammu and Kashmir and is the main home of the hangul."
+  },
+  {
+    "id": "RPFC-T2-016",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Matter",
+    "stem": "Why does ice float on water?",
+    "options": [
+      "Ice is less dense than water",
+      "Water pushes all solids up",
+      "Ice contains air bubbles only",
+      "Ice is heavier than water"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Water expands by about 9 percent when it freezes, so ice is less dense than liquid water and floats. This is why lakes freeze from the top down."
+  },
+  {
+    "id": "RPFC-T2-017",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Freedom struggle",
+    "stem": "In 1914 the ship Komagata Maru, carrying Indian passengers, was not allowed to land them in which country?",
+    "options": [
+      "South Africa",
+      "Australia",
+      "Canada",
+      "The USA"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Komagata Maru was kept off Vancouver, Canada, for two months and sent back. Many passengers were killed or arrested at Budge Budge near Calcutta on its return."
+  },
+  {
+    "id": "RPFC-T2-018",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "RPF and railways",
+    "stem": "The Matheran Hill Railway, a narrow-gauge line, starts from Neral in which state?",
+    "options": [
+      "Karnataka",
+      "Gujarat",
+      "Maharashtra",
+      "Madhya Pradesh"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Matheran Hill Railway climbs about 20 km from Neral to the hill station of Matheran in Raigad district, Maharashtra. It opened in 1907."
+  },
+  {
+    "id": "RPFC-T2-019",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rivers and dams",
+    "stem": "The Salal hydroelectric project in Jammu and Kashmir is on which river?",
+    "options": [
+      "Beas",
+      "Ravi",
+      "Chenab",
+      "Jhelum"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Salal project is on the Chenab in Reasi district. The Uri project is on the Jhelum."
+  },
+  {
+    "id": "RPFC-T2-020",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Materials",
+    "stem": "Nylon, first made in the 1930s, was the first fully synthetic fibre. It is made from what?",
+    "options": [
+      "Petroleum and coal chemicals",
+      "Wood pulp (cellulose)",
+      "Recycled cotton waste",
+      "Fibres from the bark of trees"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Nylon is a polyamide made from chemicals derived from coal, petroleum and air. Rayon, by contrast, is made from wood pulp (cellulose) and is called artificial silk."
+  },
+  {
+    "id": "RPFC-T2-021",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Revolts against British rule",
+    "stem": "The Moplah (Mappila) uprising of 1921 took place in which region?",
+    "options": [
+      "Malabar",
+      "Bengal",
+      "Awadh",
+      "Punjab"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Mappila peasants of the Malabar district of Madras Presidency, now in Kerala, rose in 1921 against the British and the landlords."
+  },
+  {
+    "id": "RPFC-T2-022",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "RPF and railways",
+    "stem": "What is the distance between the rails of India's broad gauge track?",
+    "options": [
+      "762 mm",
+      "1,000 mm",
+      "1,435 mm",
+      "1,676 mm"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Indian broad gauge is 1,676 mm (5 feet 6 inches). Metre gauge is 1,000 mm, narrow gauge 762 mm or 610 mm, and the standard gauge used by metros is 1,435 mm."
+  },
+  {
+    "id": "RPFC-T2-023",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "World geography",
+    "stem": "Victoria Falls, on the border of Zambia and Zimbabwe, is on which river?",
+    "options": [
+      "Zambezi",
+      "Congo",
+      "Niger",
+      "Nile"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Victoria Falls, about 1.7 km wide, is on the Zambezi. Its local name, Mosi-oa-Tunya, means 'the smoke that thunders'."
+  },
+  {
+    "id": "RPFC-T2-024",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Materials",
+    "stem": "Teflon, used to coat non-stick cooking pans, is which kind of substance?",
+    "options": [
+      "A metal alloy",
+      "A natural rubber",
+      "A plastic polymer",
+      "A type of glass"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Teflon is polytetrafluoroethylene (PTFE), a plastic polymer of carbon and fluorine. Very little sticks to it and it withstands cooking temperatures."
+  },
+  {
+    "id": "RPFC-T2-025",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstHistory",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Modern history",
+    "stem": "The Mahalwari system of land revenue, settled with whole villages rather than single landlords, was proposed in 1822 by whom?",
+    "options": [
+      "Lord Dalhousie",
+      "Thomas Munro",
+      "Holt Mackenzie",
+      "Lord Cornwallis"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Holt Mackenzie proposed the Mahalwari system for the North-Western Provinces and parts of Punjab. Thomas Munro is linked with the Ryotwari system and Lord Cornwallis with the Permanent Settlement."
+  },
+  {
+    "id": "RPFC-T2-026",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstPolity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Parliament",
+    "stem": "Who summons the two Houses of Parliament to meet?",
+    "options": [
+      "The Prime Minister",
+      "The Speaker",
+      "The Vice-President",
+      "The President"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Under Article 85 the President summons and prorogues the Houses and can dissolve the Lok Sabha, acting on the advice of the Council of Ministers."
+  },
+  {
+    "id": "RPFC-T2-027",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "World geography",
+    "stem": "Mount Kilimanjaro, the highest peak in Africa, is in which country?",
+    "options": [
+      "Kenya",
+      "Tanzania",
+      "Ethiopia",
+      "Uganda"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Kilimanjaro (about 5,895 m) is in north-east Tanzania, close to the Kenyan border. It is a dormant volcano."
+  },
+  {
+    "id": "RPFC-T2-028",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstScience",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Minerals",
+    "stem": "Magnetite, the most magnetic mineral found in nature, is an ore of which metal?",
+    "options": [
+      "Iron",
+      "Zinc",
+      "Copper",
+      "Aluminium"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Magnetite (Fe3O4) is an iron ore and a natural magnet (lodestone). Haematite is the other main iron ore; bauxite is aluminium ore."
+  },
+  {
+    "id": "RPFC-T2-029",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Modern history",
+    "stem": "Wood's Despatch of 1854, called the 'Magna Carta of English education in India', dealt with which subject?",
+    "options": [
+      "Land revenue",
+      "Education",
+      "Railways",
+      "The police"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Charles Wood's Despatch of 1854 set out a plan for education from primary schools to universities. It led to the universities of Calcutta, Bombay and Madras in 1857."
+  },
+  {
+    "id": "RPFC-T2-030",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstPolity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sports",
+    "stem": "What is the length of a standard Olympic swimming pool?",
+    "options": [
+      "25 m",
+      "50 m",
+      "75 m",
+      "100 m"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "An Olympic pool is 50 m long with ten lanes. 25 m pools are used for short-course events."
+  },
+  {
+    "id": "RPFC-T2-031",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "World geography",
+    "stem": "Which is the largest inland body of water (lake) in the world by area?",
+    "options": [
+      "Lake Superior",
+      "Caspian Sea",
+      "Lake Baikal",
+      "Lake Victoria"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Caspian Sea, bordered by Russia, Kazakhstan, Turkmenistan, Iran and Azerbaijan, is the largest lake by area. Lake Superior is the largest freshwater lake by area and Lake Baikal the deepest."
+  },
+  {
+    "id": "RPFC-T2-032",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Everyday chemistry",
+    "stem": "Which liquid is the main ingredient of most nail polish removers?",
+    "options": [
+      "Acetone",
+      "Glycerine",
+      "Kerosene",
+      "Ethanoic acid"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Acetone is a volatile solvent that dissolves the dried film of nail polish quickly. Glycerine is a thick, sweet moisturiser, and ethanoic acid is the acid in vinegar."
+  },
+  {
+    "id": "RPFC-T2-033",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Reform movements",
+    "stem": "The Young Bengal movement was inspired by which teacher of Hindu College, Calcutta?",
+    "options": [
+      "William Carey",
+      "Henry Derozio",
+      "David Hare",
+      "Alexander Duff"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Henry Louis Vivian Derozio taught at Hindu College from 1826 to 1831 and encouraged his students to question old customs; they became known as Young Bengal."
+  },
+  {
+    "id": "RPFC-T2-034",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstPolity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sports",
+    "stem": "The Vijay Hazare Trophy is a domestic tournament in which sport?",
+    "options": [
+      "Cricket",
+      "Kabaddi",
+      "Hockey",
+      "Football"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Vijay Hazare Trophy is India's domestic one-day (50 overs) cricket competition between state teams."
+  },
+  {
+    "id": "RPFC-T2-035",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "World geography",
+    "stem": "Greenland, the largest island in the world, is part of which country?",
+    "options": [
+      "Norway",
+      "Denmark",
+      "Canada",
+      "Iceland"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Greenland is a self-governing territory within the Kingdom of Denmark. Australia is larger but is counted as a continent."
+  },
+  {
+    "id": "RPFC-T2-036",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Electricity",
+    "stem": "Which device changes sound into electrical signals?",
+    "options": [
+      "Loudspeaker",
+      "Rectifier",
+      "Transformer",
+      "Microphone"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A microphone turns sound waves into electrical signals. A loudspeaker does the opposite, turning electrical signals back into sound."
+  },
+  {
+    "id": "RPFC-T2-037",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Freedom struggle",
+    "stem": "After the Chauri Chaura incident of February 1922, Gandhi called off the Non-Cooperation Movement. Chauri Chaura is in which present-day state?",
+    "options": [
+      "West Bengal",
+      "Uttar Pradesh",
+      "Punjab",
+      "Bihar"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Chauri Chaura is in Gorakhpur district, Uttar Pradesh. A crowd set fire to the police station there, and Gandhi withdrew the movement because it had turned violent."
+  },
+  {
+    "id": "RPFC-T2-038",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstPolity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sports",
+    "stem": "The Ryder Cup is a team competition in which sport?",
+    "options": [
+      "Rowing",
+      "Golf",
+      "Polo",
+      "Tennis"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Ryder Cup is a men's golf contest between teams from Europe and the United States, held every two years."
+  },
+  {
+    "id": "RPFC-T2-039",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Islands",
+    "stem": "Which group of islands lies in the Arabian Sea off the coast of Kerala?",
+    "options": [
+      "Sundarbans",
+      "Andaman Islands",
+      "Nicobar Islands",
+      "Lakshadweep"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Lakshadweep (36 islands) lies in the Arabian Sea west of Kerala. The Andaman and Nicobar Islands are in the Bay of Bengal."
+  },
+  {
+    "id": "RPFC-T2-040",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Animals",
+    "stem": "Which of these mammals lays eggs?",
+    "options": [
+      "Kangaroo",
+      "Dolphin",
+      "Platypus",
+      "Bat"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The duck-billed platypus and the echidnas are monotremes, the only mammals that lay eggs. The kangaroo is a marsupial and carries its young in a pouch."
+  },
+  {
+    "id": "RPFC-T2-041",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Festivals",
+    "stem": "Ali Ai Ligang, a spring festival marking the start of sowing, is celebrated by the Mising community of which state?",
+    "options": [
+      "Sikkim",
+      "Assam",
+      "Mizoram",
+      "Manipur"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Ali Ai Ligang is the main festival of the Mising people of Assam, held in February or March on the first Wednesday of the month of Fagun."
+  },
+  {
+    "id": "RPFC-T2-042",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Union government",
+    "stem": "Under Article 78 of the Constitution, whose duty is it to keep the President informed of the decisions of the Council of Ministers?",
+    "options": [
+      "The Prime Minister",
+      "The Speaker",
+      "The Attorney General",
+      "The Cabinet Secretary"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Article 78 makes it the Prime Minister's duty to tell the President of all decisions of the Council of Ministers about the administration and proposals for laws, and to give any information the President asks for."
+  },
+  {
+    "id": "RPFC-T2-043",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Percentage",
+    "stem": "375 g is what percentage of 2.5 kg?",
+    "options": [
+      "1.5%",
+      "12%",
+      "12.5%",
+      "15%"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "2.5 kg = 2,500 g. 375 / 2,500 x 100 = 15%. Forgetting to convert kilograms to grams gives a wrong answer."
+  },
+  {
+    "id": "RPFC-T2-044",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstMaths",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Simplification",
+    "stem": "Simplify: 48 ÷ 8 x 3 + 2² - 10",
+    "options": [
+      "6",
+      "12",
+      "14",
+      "20"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Powers first: 2² = 4. Then division and multiplication from left to right: 48 ÷ 8 = 6 and 6 x 3 = 18. Finally 18 + 4 - 10 = 12."
+  },
+  {
+    "id": "RPFC-T2-045",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Percentage",
+    "stem": "The price of cooking oil falls by 37.5%. By what percentage can a family increase its consumption so that its spending on oil stays the same?",
+    "options": [
+      "37.5%",
+      "50%",
+      "60%",
+      "62.5%"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Increase = fall / (100 - fall) x 100 = 37.5 / 62.5 x 100 = 60%. Check: 0.625 x 1.6 = 1."
+  },
+  {
+    "id": "RPFC-T2-046",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Divisibility",
+    "stem": "What is the smallest number that must be added to 5,000 to make it exactly divisible by 37?",
+    "options": [
+      "5",
+      "27",
+      "32",
+      "37"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "37 x 135 = 4,995, so 5,000 leaves a remainder of 5. Adding 37 - 5 = 32 gives 5,032 = 37 x 136. Subtracting 5 would also work, but the question asks what to add."
+  },
+  {
+    "id": "RPFC-T2-047",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstArith",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Profit and loss",
+    "stem": "A dealer sells two mobile phones for ₹9,900 each. On one he gains 10% and on the other he loses 10%. What is his overall result?",
+    "options": [
+      "A loss of 1%",
+      "A loss of 2%",
+      "A gain of 1%",
+      "No profit and no loss"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Costs: 9,900 / 1.1 = ₹9,000 and 9,900 / 0.9 = ₹11,000, total ₹20,000. He receives ₹19,800, a loss of ₹200, which is 1%. Equal gain and loss percentages on the same selling price always give a loss of (x/10)² percent."
+  },
+  {
+    "id": "RPFC-T2-048",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "LCM and HCF",
+    "stem": "The LCM of two numbers is 240 and their HCF is 8. If one number is 40, what is the other?",
+    "options": [
+      "30",
+      "48",
+      "56",
+      "60"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Product of the numbers = LCM x HCF = 240 x 8 = 1,920. The other number = 1,920 / 40 = 48."
+  },
+  {
+    "id": "RPFC-T2-049",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Profit and loss",
+    "stem": "The cost price of 18 articles equals the selling price of 15 articles. What is the profit percentage?",
+    "options": [
+      "15%",
+      "16.67%",
+      "18%",
+      "20%"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Let each article cost ₹1. 15 articles sell for ₹18, so each sells for ₹1.20. Profit = 20%. Taking the profit over the selling price gives about 16.7%, which is a slip."
+  },
+  {
+    "id": "RPFC-T2-050",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Decimals",
+    "stem": "Which fraction is equal to the recurring decimal 0.444...?",
+    "options": [
+      "11/25",
+      "4/9",
+      "2/5",
+      "4/10"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Let x = 0.444..., so 10x = 4.444... Subtracting, 9x = 4 and x = 4/9. The fractions 2/5 and 4/10 both equal 0.4 exactly."
+  },
+  {
+    "id": "RPFC-T2-051",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Discount",
+    "stem": "A cooler marked at ₹2,500 is sold for ₹2,125. What rate of discount was given?",
+    "options": [
+      "12%",
+      "13.5%",
+      "15%",
+      "17.6%"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Discount = 2,500 - 2,125 = ₹375, and discount is always taken on the marked price: 375 / 2,500 x 100 = 15%. Dividing by ₹2,125 gives about 17.6% by mistake."
+  },
+  {
+    "id": "RPFC-T2-052",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Divisibility",
+    "stem": "Which of these numbers is divisible by 11?",
+    "options": [
+      "32,572",
+      "45,639",
+      "51,743",
+      "72,416"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Test for 11: the alternating sum of the digits from the right must be a multiple of 11. For 45,639: 9 - 3 + 6 - 5 + 4 = 11, so it is divisible (45,639 = 11 x 4,149). The others give 1, 14 and 10."
+  },
+  {
+    "id": "RPFC-T2-053",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Simple interest",
+    "stem": "In how many years will a sum of money become four times itself at 12% simple interest per annum?",
+    "options": [
+      "20 years",
+      "25 years",
+      "30 years",
+      "36 years"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Becoming four times means the interest is three times the principal, 300% of it. At 12% a year that takes 300 / 12 = 25 years."
+  },
+  {
+    "id": "RPFC-T2-054",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mensuration",
+    "stem": "The perimeter of a square is 64 cm. What is the length of its diagonal?",
+    "options": [
+      "8√2 cm",
+      "16√2 cm",
+      "32 cm",
+      "16 cm"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Side = 64 / 4 = 16 cm. The diagonal of a square is side x √2 = 16√2 cm, about 22.6 cm."
+  },
+  {
+    "id": "RPFC-T2-055",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Compound interest",
+    "stem": "A sum of money amounts to ₹13,310 in 3 years at 10% per annum compound interest. What is the sum?",
+    "options": [
+      "₹10,000",
+      "₹10,200",
+      "₹10,500",
+      "₹11,000"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Amount = P x 1.1³ = 1.331P. So P = 13,310 / 1.331 = ₹10,000."
+  },
+  {
+    "id": "RPFC-T2-056",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Geometry",
+    "stem": "The two shorter sides of a right-angled triangle are 28 cm and 45 cm. What is the hypotenuse?",
+    "options": [
+      "47 cm",
+      "53 cm",
+      "55 cm",
+      "73 cm"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "By Pythagoras, 28² + 45² = 784 + 2,025 = 2,809, and √2,809 = 53 cm. Adding the sides (73 cm) is not how the hypotenuse is found."
+  },
+  {
+    "id": "RPFC-T2-057",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstArith",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Ratio",
+    "stem": "The incomes of X and Y are in the ratio 4 : 3 and their expenses in the ratio 3 : 2. If each of them saves ₹5,000, what is X's income?",
+    "options": [
+      "₹10,000",
+      "₹15,000",
+      "₹20,000",
+      "₹25,000"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Let incomes be 4k and 3k and expenses 3m and 2m. Then 4k - 3m = 5,000 and 3k - 2m = 5,000. Multiply the first by 2 and the second by 3: 8k - 6m = 10,000 and 9k - 6m = 15,000, so k = 5,000. X earns ₹20,000 and spends ₹15,000."
+  },
+  {
+    "id": "RPFC-T2-058",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mensuration",
+    "stem": "What is the volume of a cylinder with radius 7 cm and height 10 cm? (Take π = 22/7.)",
+    "options": [
+      "440 cm³",
+      "770 cm³",
+      "1,540 cm³",
+      "3,080 cm³"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Volume = πr²h = 22/7 x 7 x 7 x 10 = 22 x 7 x 10 = 1,540 cm³."
+  },
+  {
+    "id": "RPFC-T2-059",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Average",
+    "stem": "The average age of 24 students is 12 years. When the teacher's age is included, the average rises by 1 year. How old is the teacher?",
+    "options": [
+      "13 years",
+      "36 years",
+      "37 years",
+      "38 years"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Students' total = 24 x 12 = 288. With the teacher, 25 people average 13, a total of 325. The teacher is 325 - 288 = 37."
+  },
+  {
+    "id": "RPFC-T2-060",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Algebra",
+    "stem": "(a + b)² - (a - b)² is equal to:",
+    "options": [
+      "2(a² + b²)",
+      "0",
+      "4ab",
+      "2ab"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "(a + b)² = a² + 2ab + b² and (a - b)² = a² - 2ab + b². Subtracting leaves 4ab."
+  },
+  {
+    "id": "RPFC-T2-061",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ages",
+    "stem": "The present ages of A and B are in the ratio 3 : 4. Ten years ago, A's age was half of B's age. What is the sum of their present ages?",
+    "options": [
+      "30 years",
+      "35 years",
+      "40 years",
+      "45 years"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Let the ages be 3k and 4k. Then 3k - 10 = (4k - 10) / 2, so 6k - 20 = 4k - 10 and k = 5. A is 15 and B is 20, a total of 35."
+  },
+  {
+    "id": "RPFC-T2-062",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Algebra",
+    "stem": "If 2 to the power (x + 1) equals 64, what is x?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "32"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "64 = 2⁶, so x + 1 = 6 and x = 5."
+  },
+  {
+    "id": "RPFC-T2-063",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Time and work",
+    "stem": "A and B together can finish a job in 30 days. A alone can finish it in 42 days. How long will B alone take?",
+    "options": [
+      "12 days",
+      "36 days",
+      "72 days",
+      "105 days"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "B's daily share = 1/30 - 1/42 = 7/210 - 5/210 = 2/210 = 1/105, so B alone takes 105 days. 12 days subtracts the times, 72 days adds them and 36 days averages them."
+  },
+  {
+    "id": "RPFC-T2-064",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstMaths",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Geometry",
+    "stem": "Two angles of a triangle measure 54° and 79°. What is the third angle?",
+    "options": [
+      "37°",
+      "47°",
+      "57°",
+      "133°"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The angles of a triangle add up to 180°: 180 - (54 + 79) = 180 - 133 = 47°."
+  },
+  {
+    "id": "RPFC-T2-065",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Speed and distance",
+    "stem": "A cyclist rides from P to Q at 28 km/h and returns at 42 km/h. What is the average speed for the whole journey?",
+    "options": [
+      "33.6 km/h",
+      "34 km/h",
+      "35 km/h",
+      "42 km/h"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "For equal distances the average speed is 2ab / (a + b) = 2 x 28 x 42 / 70 = 2,352 / 70 = 33.6 km/h, not the simple average of 35."
+  },
+  {
+    "id": "RPFC-T2-066",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Trigonometry",
+    "stem": "If sin θ = 20/29 and θ is acute, what is cos θ?",
+    "options": [
+      "20/21",
+      "29/21",
+      "21/20",
+      "21/29"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "sin θ = opposite / hypotenuse = 20/29, so the adjacent side is √(841 - 400) = √441 = 21. cos θ = adjacent / hypotenuse = 21/29."
+  },
+  {
+    "id": "RPFC-T2-067",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Trains",
+    "stem": "A train 150 m long passes a signal post in 6 seconds. What is its speed in km/h?",
+    "options": [
+      "25 km/h",
+      "72 km/h",
+      "90 km/h",
+      "108 km/h"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Speed = 150 / 6 = 25 m/s. To convert to km/h multiply by 18/5: 25 x 18/5 = 90 km/h."
+  },
+  {
+    "id": "RPFC-T2-068",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstMaths",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Data",
+    "stem": "A tea stall sold 42, 38, 55, 47 and 48 cups on five days. What was the average number of cups sold a day?",
+    "options": [
+      "42",
+      "44",
+      "45",
+      "46"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Total = 42 + 38 + 55 + 47 + 48 = 230. Average = 230 / 5 = 46."
+  },
+  {
+    "id": "RPFC-T2-069",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Boats and streams",
+    "stem": "A boat's speed in still water is 14 km/h and the current flows at 2 km/h. How long will the boat take to travel 48 km upstream?",
+    "options": [
+      "3 hours",
+      "3.5 hours",
+      "4 hours",
+      "5 hours"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Upstream speed = 14 - 2 = 12 km/h, so the time is 48 / 12 = 4 hours. Downstream (16 km/h) it would take only 3 hours."
+  },
+  {
+    "id": "RPFC-T2-070",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Probability",
+    "stem": "Two fair coins are tossed together. What is the probability of getting exactly one head?",
+    "options": [
+      "1/3",
+      "3/4",
+      "1/2",
+      "1/4"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The outcomes are HH, HT, TH and TT. Exactly one head happens in HT and TH: 2 of 4 = 1/2."
+  },
+  {
+    "id": "RPFC-T2-071",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstArith",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Partnership",
+    "stem": "A starts a business with ₹30,000. After 4 months B joins with ₹40,000. Out of a profit of ₹34,000 at the end of the year, what is B's share?",
+    "options": [
+      "₹16,000",
+      "₹17,000",
+      "₹18,000",
+      "₹19,200"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Capital x months: A = 30,000 x 12 = 3,60,000 and B = 40,000 x 8 = 3,20,000, a ratio of 9 : 8. B gets 8/17 of 34,000 = ₹16,000."
+  },
+  {
+    "id": "RPFC-T2-072",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Analogy",
+    "stem": "Bird : Flock :: Fish : ?",
+    "options": [
+      "Shoal",
+      "Pack",
+      "Swarm",
+      "Herd"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A group of birds is a flock; a group of fish is a shoal (or school). Cattle form a herd, bees a swarm and wolves a pack."
+  },
+  {
+    "id": "RPFC-T2-073",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Blood relations",
+    "stem": "P is the son of Q. R is Q's mother. S is R's husband. How is P related to S?",
+    "options": [
+      "Grandson",
+      "Brother",
+      "Son",
+      "Nephew"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "R and S are Q's parents, and P is Q's son. So P is the son of S's child: S's grandson."
+  },
+  {
+    "id": "RPFC-T2-074",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number analogy",
+    "stem": "9 : 45 :: 13 : ?",
+    "options": [
+      "91",
+      "104",
+      "117",
+      "130"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "45 = 9 x 10 / 2. In the same way, 13 x 14 / 2 = 91."
+  },
+  {
+    "id": "RPFC-T2-075",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Blood relations",
+    "stem": "Pointing to a man, Nisha says, 'His mother is my mother's mother.' How is the man related to Nisha?",
+    "options": [
+      "Uncle",
+      "Cousin",
+      "Grandfather",
+      "Brother"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The man's mother is Nisha's maternal grandmother, so he is her mother's brother: Nisha's maternal uncle (mama)."
+  },
+  {
+    "id": "RPFC-T2-076",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstVerbal",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Letter analogy",
+    "stem": "DOG : WLT :: CAT : ?",
+    "options": [
+      "XYG",
+      "YZG",
+      "XZG",
+      "XZH"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Each letter is replaced by its opposite in the alphabet (A and Z, B and Y, and so on): D to W, O to L, G to T. So C to X, A to Z and T to G: XZG."
+  },
+  {
+    "id": "RPFC-T2-077",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Directions",
+    "stem": "A goods train leaves a yard heading south. At a junction it turns right, and at the next junction it turns right again. In which direction is it heading now?",
+    "options": [
+      "East",
+      "South",
+      "West",
+      "North"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Heading south, a right turn points it west, and another right turn points it north."
+  },
+  {
+    "id": "RPFC-T2-078",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Classification",
+    "stem": "Find the odd one out: Cube, Sphere, Cylinder, Circle",
+    "options": [
+      "Sphere",
+      "Cylinder",
+      "Cube",
+      "Circle"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A cube, a sphere and a cylinder are solid (three-dimensional) shapes. A circle is a flat (two-dimensional) figure."
+  },
+  {
+    "id": "RPFC-T2-079",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Directions",
+    "stem": "Ravi walks 33 km south and then 56 km east. What is the shortest distance between him and his starting point?",
+    "options": [
+      "23 km",
+      "56 km",
+      "65 km",
+      "89 km"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The two walks are at right angles, so the distance is √(33² + 56²) = √(1,089 + 3,136) = √4,225 = 65 km. Adding the walks (89 km) gives the path, not the straight distance."
+  },
+  {
+    "id": "RPFC-T2-080",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Classification",
+    "stem": "Find the odd one out: BDF, KMO, PRT, GIL",
+    "options": [
+      "GIL",
+      "BDF",
+      "KMO",
+      "PRT"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "In BDF, KMO and PRT the letters are 2 places apart each time. In GIL the gaps are 2 and 3."
+  },
+  {
+    "id": "RPFC-T2-081",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Syllogism",
+    "stem": "Statements: No pilot is a sailor. Some sailors are swimmers. Conclusions: I. Some swimmers are not pilots. II. No swimmer is a pilot.",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The swimmers who are sailors cannot be pilots, so some swimmers are not pilots: I follows. Swimmers who are not sailors could still be pilots, so II does not follow."
+  },
+  {
+    "id": "RPFC-T2-082",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "What comes next? 3, 12, 27, 48, 75, ?",
+    "options": [
+      "98",
+      "102",
+      "105",
+      "108"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The terms are 3 x 1², 3 x 2², 3 x 3², 3 x 4², 3 x 5². The next is 3 x 6² = 108."
+  },
+  {
+    "id": "RPFC-T2-083",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstLogical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Syllogism",
+    "stem": "Statements: No glass is a cup. All cups are mugs. Conclusions: I. Some mugs are not glasses. II. No mug is a glass.",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The cups are mugs and none of them is a glass, so some mugs are not glasses: I follows. Mugs that are not cups could still be glasses, so II does not follow."
+  },
+  {
+    "id": "RPFC-T2-084",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "What comes next? 5, 6, 9, 14, 21, ?",
+    "options": [
+      "27",
+      "28",
+      "29",
+      "30"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The gaps are 1, 3, 5, 7, the odd numbers. The next gap is 9, and 21 + 9 = 30."
+  },
+  {
+    "id": "RPFC-T2-085",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ranking",
+    "stem": "In a class of 45 students, Sunita ranks 12th from the top. What is her rank from the bottom?",
+    "options": [
+      "32nd",
+      "33rd",
+      "34th",
+      "35th"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Rank from the bottom = total - rank from the top + 1 = 45 - 12 + 1 = 34th."
+  },
+  {
+    "id": "RPFC-T2-086",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Wrong number",
+    "stem": "Find the number that does not fit the series: 1, 8, 27, 63, 125",
+    "options": [
+      "8",
+      "27",
+      "63",
+      "125"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The series is the cubes 1³, 2³, 3³, 4³, 5³. The fourth term should be 64, not 63."
+  },
+  {
+    "id": "RPFC-T2-087",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Order and ranking",
+    "stem": "Among five friends, B earns more than D, D earns more than E, and C earns less than E but more than A. Who earns the least?",
+    "options": [
+      "E",
+      "D",
+      "A",
+      "C"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Putting it together: B > D > E > C > A. A earns the least."
+  },
+  {
+    "id": "RPFC-T2-088",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Letter series",
+    "stem": "What comes next? A, C, G, M, ?",
+    "options": [
+      "V",
+      "S",
+      "T",
+      "U"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The positions are 1, 3, 7, 13, rising by 2, 4, 6. The next rise is 8, giving 21, which is U."
+  },
+  {
+    "id": "RPFC-T2-089",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Calendar",
+    "stem": "If today is Wednesday, what day of the week will it be 68 days from today?",
+    "options": [
+      "Tuesday",
+      "Sunday",
+      "Friday",
+      "Monday"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "68 = 9 weeks + 5 days. Five days after Wednesday is Monday."
+  },
+  {
+    "id": "RPFC-T2-090",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Coding-decoding",
+    "stem": "In a certain code, GREEN is written as ITGGP. How is BLACK written in that code?",
+    "options": [
+      "DOCEM",
+      "DNCEM",
+      "CMBDL",
+      "DNCDM"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Each letter moves 2 places forward: G to I, R to T, E to G, N to P. So B to D, L to N, A to C, C to E and K to M: DNCEM."
+  },
+  {
+    "id": "RPFC-T2-091",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstLogical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Calendar",
+    "stem": "1 January 2026 is a Thursday and 2026 is not a leap year. Which is the next year with exactly the same calendar as 2026?",
+    "options": [
+      "2031",
+      "2032",
+      "2036",
+      "2037"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The next year must start on a Thursday and also be a non-leap year. 2027 starts on Friday, 2028 (leap) Saturday, 2029 Monday, 2030 Tuesday, 2031 Wednesday, 2032 Thursday but leap, 2033 Saturday, 2034 Sunday, 2035 Monday, 2036 (leap) Tuesday and 2037 Thursday. So 2037."
+  },
+  {
+    "id": "RPFC-T2-092",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstVerbal",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Coding-decoding",
+    "stem": "In a code language, 'sky is blue' is 'ka ta pa', 'blue and red' is 'ra pa ma', and 'red is bright' is 'ta ma la'. What is the code for 'red'?",
+    "options": [
+      "pa",
+      "ra",
+      "ma",
+      "ta"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "'blue' is in the first two sentences, and the only code they share is 'pa'. 'is' is in the first and third, sharing 'ta'. 'red' is in the second and third, which share 'ma'."
+  },
+  {
+    "id": "RPFC-T2-093",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Clock",
+    "stem": "A clock is set right at 8 a.m. and gains 5 minutes every hour. What time will it show at 2 p.m. on the same day?",
+    "options": [
+      "2:35 p.m.",
+      "2:25 p.m.",
+      "1:30 p.m.",
+      "2:30 p.m."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "From 8 a.m. to 2 p.m. is 6 hours, so the clock gains 6 x 5 = 30 minutes. It shows 2:30 p.m. when the right time is 2 p.m."
+  },
+  {
+    "id": "RPFC-T2-094",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mathematical operations",
+    "stem": "If A # B means 2A + B, what is the value of (3 # 4) # 5?",
+    "options": [
+      "21",
+      "22",
+      "23",
+      "25"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "First 3 # 4 = 2 x 3 + 4 = 10. Then 10 # 5 = 2 x 10 + 5 = 25."
+  },
+  {
+    "id": "RPFC-T2-095",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Assumption",
+    "stem": "Statement: A notice at the station reads, 'Travelling without a valid ticket is punishable.' Assumptions: I. People read notices at stations. II. Some people travel without a valid ticket.",
+    "options": [
+      "Only I is implicit",
+      "Only II is implicit",
+      "Both I and II are implicit",
+      "Neither I nor II is implicit"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The notice is put up because people are expected to read it (I), and it would not be needed unless some people travel without tickets (II). Both are assumed."
+  },
+  {
+    "id": "RPFC-T2-096",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Alphabet",
+    "stem": "How many letters are there between M and T in the English alphabet?",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The letters between M and T are N, O, P, Q, R and S: six letters. T is 7 places after M, but the two end letters are not counted."
+  },
+  {
+    "id": "RPFC-T2-097",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Days",
+    "stem": "If the day before yesterday was Friday, what will be the day after tomorrow?",
+    "options": [
+      "Wednesday",
+      "Tuesday",
+      "Sunday",
+      "Monday"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The day before yesterday was Friday, so yesterday was Saturday and today is Sunday. The day after tomorrow is Tuesday."
+  },
+  {
+    "id": "RPFC-T2-098",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Alphabet",
+    "stem": "If the letters of the word GARDENS are arranged in alphabetical order, which letter will be in the middle?",
+    "options": [
+      "E",
+      "N",
+      "R",
+      "G"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "In alphabetical order: A, D, E, G, N, R, S. Of the seven letters, the 4th is in the middle: G."
+  },
+  {
+    "id": "RPFC-T2-099",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstLogical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Data sufficiency",
+    "stem": "Is X greater than Y? Statement I: X = 2Y. Statement II: Y is a positive number.",
+    "options": [
+      "Statement I alone is sufficient",
+      "Statement II alone is sufficient",
+      "Either statement alone is sufficient",
+      "Both statements together are needed"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "I alone is not enough: if Y is negative, 2Y is smaller than Y. II alone says nothing about X. Together, X = 2Y with Y positive means X is greater than Y."
+  },
+  {
+    "id": "RPFC-T2-100",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "rpfconstVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Missing number",
+    "stem": "Find the missing number: 3 gives 28, 4 gives 65, 5 gives ?",
+    "options": [
+      "124",
+      "125",
+      "126",
+      "216"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Each result is the number cubed plus 1: 3³ + 1 = 28, 4³ + 1 = 65, so 5³ + 1 = 126."
+  },
+  {
+    "id": "RPFC-D-001",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rpfconstHistory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Festivals",
+    "stem": "Nuakhai, the festival of eating the first rice of the new harvest, is celebrated mainly in which state?",
+    "options": [
+      "Goa",
+      "Punjab",
+      "Odisha",
+      "Gujarat"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Nuakhai is the main harvest festival of western Odisha, when the new rice is first offered to the goddess Samaleswari and then eaten by families together."
+  },
+  {
+    "id": "RPFC-D-002",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rpfconstGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "World geography",
+    "stem": "The Great Barrier Reef, the largest coral reef system in the world, lies off the coast of which country?",
+    "options": [
+      "Australia",
+      "South Africa",
+      "Indonesia",
+      "Brazil"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Great Barrier Reef stretches over 2,000 km along the coast of Queensland, Australia."
+  },
+  {
+    "id": "RPFC-D-003",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rpfconstPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "RPF and railways",
+    "stem": "Which zone of Indian Railways has its headquarters at Bilaspur in Chhattisgarh?",
+    "options": [
+      "South East Central Railway",
+      "Central Railway",
+      "East Coast Railway",
+      "West Central Railway"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "South East Central Railway is headquartered at Bilaspur. West Central Railway is at Jabalpur, Central Railway at Mumbai and East Coast Railway at Bhubaneswar."
+  },
+  {
+    "id": "RPFC-D-004",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rpfconstScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Fuels",
+    "stem": "Which gas is known as marsh gas?",
+    "options": [
+      "Hydrogen sulphide",
+      "Methane",
+      "Ethane",
+      "Ammonia"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Methane forms when plant matter rots under water in marshes, so it is called marsh gas. It is also the main gas in biogas and CNG."
+  },
+  {
+    "id": "RPFC-D-005",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rpfconstHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Freedom struggle",
+    "stem": "The Tebhaga movement of 1946 to 1947 was a struggle by sharecroppers in which province?",
+    "options": [
+      "Madras",
+      "Punjab",
+      "Bombay",
+      "Bengal"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Tebhaga means 'three shares': the sharecroppers (bargadars) of Bengal demanded two thirds of the crop instead of half."
+  },
+  {
+    "id": "RPFC-D-006",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rpfconstGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "World geography",
+    "stem": "The Danube, which flows through several European capitals, empties into which sea?",
+    "options": [
+      "North Sea",
+      "Baltic Sea",
+      "Mediterranean Sea",
+      "Black Sea"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Danube rises in Germany's Black Forest and flows past Vienna, Bratislava, Budapest and Belgrade to the Black Sea."
+  },
+  {
+    "id": "RPFC-D-007",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rpfconstPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Economy",
+    "stem": "What does the Consumer Price Index (CPI) mainly measure?",
+    "options": [
+      "Changes in factory output",
+      "Changes in share prices",
+      "Changes in wholesale prices of goods",
+      "Changes in retail prices paid by households"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "CPI tracks the prices households pay for a basket of goods and services and is the RBI's main measure of inflation. Factory output is the IIP and wholesale prices are the WPI."
+  },
+  {
+    "id": "RPFC-D-008",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rpfconstScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Atoms",
+    "stem": "In many nuclear reactors, heavy water is used for what purpose?",
+    "options": [
+      "As the nuclear fuel",
+      "To absorb radiation outside",
+      "To slow down neutrons",
+      "To make the reactor walls"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Heavy water (deuterium oxide, D2O) is a moderator: it slows the fast neutrons released in fission so they can split more uranium-235 nuclei. India's pressurised heavy water reactors use it."
+  },
+  {
+    "id": "RPFC-D-009",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rpfconstHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Monuments",
+    "stem": "The Hoysaleswara temple, known for its detailed soapstone carving, is at which place in Karnataka?",
+    "options": [
+      "Pattadakal",
+      "Hampi",
+      "Badami",
+      "Halebidu"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Hoysaleswara temple is at Halebidu (once Dwarasamudra), the Hoysala capital. Hampi was the Vijayanagara capital and Badami the early Chalukya one."
+  },
+  {
+    "id": "RPFC-D-010",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rpfconstGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "World geography",
+    "stem": "The Yangtze, the longest river in Asia, flows through which country?",
+    "options": [
+      "Vietnam",
+      "China",
+      "Russia",
+      "India"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Yangtze flows about 6,300 km across China to the East China Sea at Shanghai. The Three Gorges Dam is on it."
+  },
+  {
+    "id": "RPFC-D-011",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rpfconstPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "RPF and railways",
+    "stem": "The Fairy Queen, one of the oldest working steam locomotives in the world, was built in which year?",
+    "options": [
+      "1853",
+      "1855",
+      "1870",
+      "1901"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The Fairy Queen was built in England in 1855 for the East Indian Railway. India's first passenger train had run two years earlier, in 1853."
+  },
+  {
+    "id": "RPFC-D-012",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rpfconstScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Animals",
+    "stem": "Which of these animals is a marsupial that carries its young in a pouch?",
+    "options": [
+      "Dolphin",
+      "Bat",
+      "Penguin",
+      "Kangaroo"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Kangaroos, koalas and wombats are marsupials. The young are born tiny and grow in the mother's pouch."
+  },
+  {
+    "id": "RPFC-D-013",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rpfconstHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ancient history",
+    "stem": "The Chalukya king Pulakeshin II stopped which north Indian ruler on the banks of the Narmada?",
+    "options": [
+      "Chandragupta II",
+      "Samudragupta",
+      "Skandagupta",
+      "Harshavardhana"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Pulakeshin II of Badami defeated Harshavardhana on the Narmada in the 7th century, as recorded in the Aihole inscription by Ravikirti."
+  },
+  {
+    "id": "RPFC-D-014",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rpfconstGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "World geography",
+    "stem": "The Appalachian Mountains are on which continent?",
+    "options": [
+      "North America",
+      "Africa",
+      "Europe",
+      "South America"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Appalachians run through the eastern United States and into Canada. The Andes are in South America."
+  },
+  {
+    "id": "RPFC-D-015",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rpfconstPolity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "RPF and railways",
+    "stem": "The National Rail Museum of India is in which city?",
+    "options": [
+      "Mysuru",
+      "Kolkata",
+      "Mumbai",
+      "New Delhi"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The National Rail Museum opened at Chanakyapuri, New Delhi, in 1977. Mysuru and Chennai have smaller regional rail museums."
+  },
+  {
+    "id": "RPFC-D-016",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rpfconstScience",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Human body",
+    "stem": "Which bone in the neck is the only bone in the human body not joined to any other bone?",
+    "options": [
+      "Stapes",
+      "Clavicle",
+      "Patella",
+      "Hyoid"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The U-shaped hyoid bone sits below the jaw and is held in place only by muscles and ligaments. It supports the tongue and helps in swallowing."
+  },
+  {
+    "id": "RPFC-D-017",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rpfconstArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ratio",
+    "stem": "If 20% of A equals 30% of B, what is A : B?",
+    "options": [
+      "3 : 2",
+      "5 : 6",
+      "1 : 1",
+      "2 : 3"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "0.2A = 0.3B, so A / B = 0.3 / 0.2 = 3/2. A : B = 3 : 2."
+  },
+  {
+    "id": "RPFC-D-018",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rpfconstMaths",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Simplification",
+    "stem": "Simplify: 2.5 x 4 + 7.5 ÷ 2.5",
+    "options": [
+      "7",
+      "12.5",
+      "13",
+      "15"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "2.5 x 4 = 10 and 7.5 ÷ 2.5 = 3, so the value is 10 + 3 = 13."
+  },
+  {
+    "id": "RPFC-D-019",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rpfconstArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Profit and loss",
+    "stem": "By selling an article for ₹1,380 a trader gains 15%. At what price should he sell it to gain 25%?",
+    "options": [
+      "₹1,440",
+      "₹1,450",
+      "₹1,500",
+      "₹1,518"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Cost = 1,380 / 1.15 = ₹1,200. For a 25% gain he must sell for 1,200 x 1.25 = ₹1,500. Adding 10% to ₹1,380 (₹1,518) uses the wrong base."
+  },
+  {
+    "id": "RPFC-D-020",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rpfconstMaths",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "LCM and HCF",
+    "stem": "What is the HCF of the fractions 3/4, 9/16 and 15/8?",
+    "options": [
+      "3/16",
+      "1/16",
+      "45/4",
+      "3/4"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "HCF of fractions = HCF of the numerators / LCM of the denominators = HCF(3, 9, 15) / LCM(4, 16, 8) = 3/16."
+  },
+  {
+    "id": "RPFC-D-021",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rpfconstArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Simple interest",
+    "stem": "What is the simple interest on ₹5,000 at 4% per annum for 2 years 6 months?",
+    "options": [
+      "₹400",
+      "₹450",
+      "₹480",
+      "₹500"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "2 years 6 months = 2.5 years. SI = 5,000 x 4 x 2.5 / 100 = ₹500."
+  },
+  {
+    "id": "RPFC-D-022",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rpfconstMaths",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Mensuration",
+    "stem": "What is the area of a triangle with base 22 cm and height 7 cm?",
+    "options": [
+      "29 cm²",
+      "38.5 cm²",
+      "77 cm²",
+      "154 cm²"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Area = 1/2 x base x height = 1/2 x 22 x 7 = 77 cm². Forgetting the half gives 154."
+  },
+  {
+    "id": "RPFC-D-023",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rpfconstArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Speed and distance",
+    "stem": "A train covers a distance in 3 hours at 80 km/h. At what speed must it run to cover the same distance in 2 hours 30 minutes?",
+    "options": [
+      "88 km/h",
+      "90 km/h",
+      "96 km/h",
+      "100 km/h"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Distance = 80 x 3 = 240 km. Time 2.5 hours, so the speed must be 240 / 2.5 = 96 km/h."
+  },
+  {
+    "id": "RPFC-D-024",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rpfconstMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Data",
+    "stem": "What is the median of 12, 4, 9, 15, 6 and 10?",
+    "options": [
+      "8",
+      "8.5",
+      "9",
+      "9.5"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "In order: 4, 6, 9, 10, 12, 15. With six values the median is the mean of the middle two: (9 + 10) / 2 = 9.5."
+  },
+  {
+    "id": "RPFC-D-025",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rpfconstVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Analogy",
+    "stem": "Author : Book :: Sculptor : ?",
+    "options": [
+      "Museum",
+      "Statue",
+      "Painting",
+      "Chisel"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An author creates a book; a sculptor creates a statue. The pair is a maker and what is made. A chisel is the sculptor's tool, not the product."
+  },
+  {
+    "id": "RPFC-D-026",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rpfconstLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Blood relations",
+    "stem": "Mohan is the father-in-law of Rohan's mother. How is Mohan related to Rohan?",
+    "options": [
+      "Paternal uncle",
+      "Father",
+      "Paternal grandfather",
+      "Maternal grandfather"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The father-in-law of Rohan's mother is her husband's father. Her husband is Rohan's father, so Mohan is the father of Rohan's father: his paternal grandfather (dada)."
+  },
+  {
+    "id": "RPFC-D-027",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rpfconstVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "What comes next? 1, 4, 13, 40, 121, ?",
+    "options": [
+      "364",
+      "365",
+      "366",
+      "368"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Each term is three times the previous one plus 1: 1 x 3 + 1 = 4, 4 x 3 + 1 = 13, and so on. 121 x 3 + 1 = 364."
+  },
+  {
+    "id": "RPFC-D-028",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rpfconstLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Directions",
+    "stem": "Tara faces west. She turns left, then left again, then right. Which direction is she facing now?",
+    "options": [
+      "East",
+      "West",
+      "South",
+      "North"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "West, a left turn to south, another left turn to east, then a right turn back to south."
+  },
+  {
+    "id": "RPFC-D-029",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rpfconstVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Classification",
+    "stem": "Find the odd one out: Kilogram, Metre, Litre, Thermometer",
+    "options": [
+      "Litre",
+      "Metre",
+      "Thermometer",
+      "Kilogram"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Kilogram, metre and litre are units of measurement. A thermometer is an instrument."
+  },
+  {
+    "id": "RPFC-D-030",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rpfconstLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Syllogism",
+    "stem": "Statements: All rivers are streams. All streams are water bodies. Conclusions: I. All rivers are water bodies. II. Some water bodies are rivers.",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Rivers lie inside streams, which lie inside water bodies, so all rivers are water bodies (I). Turning that round gives 'Some water bodies are rivers' (II). Both follow."
+  },
+  {
+    "id": "RPFC-D-031",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rpfconstVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Coding-decoding",
+    "stem": "If SCHOOL is coded as 19-3-8-15-15-12, how is TRAIN coded?",
+    "options": [
+      "20-17-1-9-14",
+      "20-18-1-9-14",
+      "19-18-1-9-14",
+      "20-18-2-9-14"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Each letter is written as its position in the alphabet: T = 20, R = 18, A = 1, I = 9, N = 14."
+  },
+  {
+    "id": "RPFC-D-032",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "rpfconstLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Clock",
+    "stem": "What is the angle between the hands of a clock at 3:15?",
+    "options": [
+      "0°",
+      "7.5°",
+      "15°",
+      "22.5°"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Angle = |30 x 3 - 5.5 x 15| = |90 - 82.5| = 7.5°. By 3:15 the hour hand has moved a quarter of the way from 3 to 4."
+  }
+]

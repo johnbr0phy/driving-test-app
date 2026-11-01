@@ -1,0 +1,4953 @@
+[
+  {
+    "id": "MPPOLICE-T1-001",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppIndia",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Polity",
+    "stem": "Which Article of the Constitution provides for the Advocate General of a state?",
+    "options": [
+      "Article 148",
+      "Article 76",
+      "Article 214",
+      "Article 165"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Article 165 provides for each state's Advocate General. Article 76 is the Attorney General of India and Article 214 the High Courts."
+  },
+  {
+    "id": "MPPOLICE-T1-002",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppState",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Madhya Pradesh",
+    "stem": "On which date was the state of Madhya Pradesh formed?",
+    "options": [
+      "26 January 1950",
+      "1 November 2000",
+      "1 November 1956",
+      "15 August 1947"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Madhya Pradesh was formed on 1 November 1956 under the States Reorganisation Act, and 1 November is celebrated as MP Sthapana Diwas. On 1 November 2000 Chhattisgarh was carved out of it."
+  },
+  {
+    "id": "MPPOLICE-T1-003",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppComputer",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Hardware",
+    "stem": "Which of these is both an input and an output device?",
+    "options": [
+      "Scanner",
+      "Touch screen",
+      "Mouse",
+      "Printer"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A touch screen shows output and takes your touch as input. A scanner and mouse are input only, a printer output only."
+  },
+  {
+    "id": "MPPOLICE-T1-004",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "History",
+    "stem": "Who commanded the East India Company's army at the Battle of Buxar in 1764?",
+    "options": [
+      "Warren Hastings",
+      "Hector Munro",
+      "Lord Cornwallis",
+      "Robert Clive"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Major Hector Munro defeated the combined forces of Mir Qasim, Shuja-ud-Daulah and Shah Alam II at Buxar. Clive had won at Plassey in 1757."
+  },
+  {
+    "id": "MPPOLICE-T1-005",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppState",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Madhya Pradesh",
+    "stem": "Where is the principal seat of the Madhya Pradesh High Court?",
+    "options": [
+      "Bhopal",
+      "Indore",
+      "Gwalior",
+      "Jabalpur"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The High Court sits at Jabalpur, with benches at Indore and Gwalior. Bhopal is the state capital."
+  },
+  {
+    "id": "MPPOLICE-T1-006",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "History",
+    "stem": "The \"Bijak\" is a collection of the verses of which Bhakti poet?",
+    "options": [
+      "Kabir",
+      "Raidas",
+      "Tulsidas",
+      "Surdas"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Bijak is the scripture of the Kabir Panth, a collection of Kabir's sayings and songs. Surdas wrote the Sursagar."
+  },
+  {
+    "id": "MPPOLICE-T1-007",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppState",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Rivers",
+    "stem": "The Narmada rises at which place?",
+    "options": [
+      "Multai",
+      "Pachmarhi",
+      "Amarkantak",
+      "Janapav"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Narmada rises at Amarkantak in Anuppur district and flows west to the Gulf of Khambhat. The Chambal rises near Janapav and the Tapti at Multai."
+  },
+  {
+    "id": "MPPOLICE-T1-008",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Geography",
+    "stem": "Through which pass in Himachal Pradesh does the Sutlej enter India?",
+    "options": [
+      "Rohtang",
+      "Nathu La",
+      "Baralacha La",
+      "Shipki La"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Sutlej rises in Tibet and enters India near Shipki La in Kinnaur district. Rohtang links the Kullu valley with Lahaul, and Nathu La is in Sikkim."
+  },
+  {
+    "id": "MPPOLICE-T1-009",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppComputer",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Hardware",
+    "stem": "What does ALU stand for in a computer?",
+    "options": [
+      "Array Logic Utility",
+      "Arithmetic Logic Unit",
+      "Analog Logic Unit",
+      "Automatic Load Unit"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Arithmetic Logic Unit is the part of the CPU that does calculations and comparisons."
+  },
+  {
+    "id": "MPPOLICE-T1-010",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppState",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Symbols",
+    "stem": "Which is the state bird of Madhya Pradesh?",
+    "options": [
+      "Sarus crane",
+      "Paradise flycatcher",
+      "Great Indian bustard",
+      "Indian peafowl"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Indian paradise flycatcher (dudhraj) is MP's state bird. The sarus crane is Uttar Pradesh's, and the peafowl is the national bird."
+  },
+  {
+    "id": "MPPOLICE-T1-011",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Geography",
+    "stem": "The Chambal, which flows through Madhya Pradesh, is a tributary of which river?",
+    "options": [
+      "Narmada",
+      "Son",
+      "Yamuna",
+      "Ganga"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Chambal rises near Mhow and joins the Yamuna on the Uttar Pradesh border. The Son flows into the Ganga."
+  },
+  {
+    "id": "MPPOLICE-T1-012",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppState",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Wildlife",
+    "stem": "Kanha National Park is famous for saving which animal from extinction?",
+    "options": [
+      "Cheetah",
+      "Wild buffalo",
+      "Gharial",
+      "Barasingha"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Kanha, in Mandla and Balaghat, brought the hard-ground barasingha back from a few dozen animals. It is also a major tiger reserve."
+  },
+  {
+    "id": "MPPOLICE-T1-013",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Geography",
+    "stem": "Dudhsagar Falls lie on the border of Goa and which state?",
+    "options": [
+      "Kerala",
+      "Tamil Nadu",
+      "Karnataka",
+      "Maharashtra"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Dudhsagar Falls, on the Mandovi river in the Western Ghats, lie on the Goa and Karnataka border, beside the railway line through the Braganza Ghat."
+  },
+  {
+    "id": "MPPOLICE-T1-014",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppComputer",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Memory",
+    "stem": "How many bits make a nibble?",
+    "options": [
+      "2",
+      "4",
+      "8",
+      "16"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "A nibble is half a byte: 4 bits. A byte is 8 bits."
+  },
+  {
+    "id": "MPPOLICE-T1-015",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppState",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Heritage",
+    "stem": "Which dynasty built the temples of Khajuraho?",
+    "options": [
+      "Holkar",
+      "Bundela",
+      "Chandela",
+      "Paramara"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Chandela rulers built the Khajuraho temples between about 950 and 1050 CE. They are a UNESCO World Heritage Site in Chhatarpur district."
+  },
+  {
+    "id": "MPPOLICE-T1-016",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Economy",
+    "stem": "What does the R in NABARD stand for?",
+    "options": [
+      "Revenue",
+      "Reserve",
+      "Regional",
+      "Rural"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "NABARD is the National Bank for Agriculture and Rural Development, set up in 1982 for farm and rural credit."
+  },
+  {
+    "id": "MPPOLICE-T1-017",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Culture",
+    "stem": "Yakshagana, a dance drama with elaborate costumes, comes from which state?",
+    "options": [
+      "Kerala",
+      "Tamil Nadu",
+      "Goa",
+      "Karnataka"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Yakshagana is the traditional dance drama of coastal Karnataka. Kathakali is Kerala's dance drama."
+  },
+  {
+    "id": "MPPOLICE-T1-018",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppState",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Geography",
+    "stem": "Which is the highest peak in Madhya Pradesh?",
+    "options": [
+      "Mahendragiri",
+      "Dhupgarh",
+      "Guru Shikhar",
+      "Amarkantak"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Dhupgarh, about 1,350 m, near Pachmarhi in the Satpura range, is the highest point of MP. Guru Shikhar is the highest point of Rajasthan."
+  },
+  {
+    "id": "MPPOLICE-T1-019",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppComputer",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Memory",
+    "stem": "Which memory is read-only and holds the start-up (boot) instructions?",
+    "options": [
+      "Hard disk",
+      "RAM",
+      "Cache",
+      "ROM"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "ROM (read-only memory) keeps the firmware that starts the computer, even when power is off. RAM is cleared when the power goes."
+  },
+  {
+    "id": "MPPOLICE-T1-020",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppIndia",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Books",
+    "stem": "Who wrote \"Kitab-ul-Hind\", an account of India in the 11th century?",
+    "options": [
+      "Abul Fazl",
+      "Al-Biruni",
+      "Ibn Battuta",
+      "Amir Khusrau"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Al-Biruni came to India with Mahmud of Ghazni and wrote Kitab-ul-Hind. Ibn Battuta visited in the 14th century and Abul Fazl wrote the Akbarnama."
+  },
+  {
+    "id": "MPPOLICE-T1-021",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppState",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Rivers",
+    "stem": "Ujjain stands on the banks of which river?",
+    "options": [
+      "Narmada",
+      "Betwa",
+      "Kshipra",
+      "Chambal"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Ujjain is on the Kshipra, where the Simhastha Kumbh is held every 12 years. Jabalpur is on the Narmada and Orchha on the Betwa."
+  },
+  {
+    "id": "MPPOLICE-T1-022",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppIndia",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sports",
+    "stem": "The Aga Khan Cup is associated with which sport?",
+    "options": [
+      "Football",
+      "Polo",
+      "Hockey",
+      "Badminton"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Aga Khan Cup, first held in Bombay in 1896, is one of India's oldest hockey tournaments."
+  },
+  {
+    "id": "MPPOLICE-T1-023",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppState",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Crafts",
+    "stem": "Chanderi, famous for its handwoven sarees, is in which district?",
+    "options": [
+      "Vidisha",
+      "Khargone",
+      "Dhar",
+      "Ashoknagar"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Chanderi is in Ashoknagar district. Maheshwari sarees come from Maheshwar in Khargone, and Bagh prints from Dhar."
+  },
+  {
+    "id": "MPPOLICE-T1-024",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Polity",
+    "stem": "For how many days at most can the Rajya Sabha hold back a Money Bill?",
+    "options": [
+      "7 days",
+      "14 days",
+      "30 days",
+      "90 days"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Under Article 109 the Rajya Sabha must return a Money Bill within 14 days, with or without recommendations, or it is deemed passed."
+  },
+  {
+    "id": "MPPOLICE-T1-025",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppComputer",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "MS Office",
+    "stem": "In MS Excel, which sign must every formula begin with?",
+    "options": [
+      "% (percent)",
+      "& (ampersand)",
+      "# (hash)",
+      "= (equals)"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An Excel formula starts with the equals sign, as in =A1+B1. Typed without it, the entry is stored as plain text or a number, and & only joins text inside a formula."
+  },
+  {
+    "id": "MPPOLICE-T1-026",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppState",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "History",
+    "stem": "Which Gond queen of Garha-Mandla died fighting a Mughal army in 1564?",
+    "options": [
+      "Rani Durgavati",
+      "Ahilyabai Holkar",
+      "Rani Kamlapati",
+      "Rani Avantibai"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Rani Durgavati fought Akbar's general Asaf Khan in 1564 and took her own life rather than be captured. Rani Avantibai of Ramgarh fought the British in 1857."
+  },
+  {
+    "id": "MPPOLICE-T1-027",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "History",
+    "stem": "The Vaikom Satyagraha of 1924 to 1925, for the right of all castes to use the roads around a temple, took place in which present-day state?",
+    "options": [
+      "Kerala",
+      "Tamil Nadu",
+      "Karnataka",
+      "Andhra Pradesh"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Vaikom, then in the princely state of Travancore, is in Kerala. T. K. Madhavan led the satyagraha, and E. V. Ramasamy (Periyar) joined it."
+  },
+  {
+    "id": "MPPOLICE-T1-028",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppState",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "History",
+    "stem": "In which year did the Bhopal gas tragedy take place?",
+    "options": [
+      "1984",
+      "1986",
+      "1989",
+      "1991"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "On the night of 2 to 3 December 1984, methyl isocyanate gas leaked from the Union Carbide plant in Bhopal."
+  },
+  {
+    "id": "MPPOLICE-T1-029",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppIndia",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Geography",
+    "stem": "The Indira Gandhi Canal, which carries water to the Thar Desert, takes its water from which river system?",
+    "options": [
+      "Yamuna",
+      "Sutlej and Beas",
+      "Luni",
+      "Chambal"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The canal starts at the Harike Barrage in Punjab, where the Sutlej and Beas meet, and runs into western Rajasthan. The Luni is a seasonal river of the desert itself."
+  },
+  {
+    "id": "MPPOLICE-T1-030",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppComputer",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Software",
+    "stem": "Which company developed the Windows operating system?",
+    "options": [
+      "Microsoft",
+      "Google",
+      "IBM",
+      "Apple"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Windows is made by Microsoft. Apple makes macOS and iOS, and Google makes Android."
+  },
+  {
+    "id": "MPPOLICE-T1-031",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppState",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Government",
+    "stem": "How many members does Madhya Pradesh elect to the Lok Sabha?",
+    "options": [
+      "29",
+      "35",
+      "40",
+      "48"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "MP elects 29 members to the Lok Sabha and 230 to its Vidhan Sabha. It sends 11 members to the Rajya Sabha."
+  },
+  {
+    "id": "MPPOLICE-T1-032",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Polity",
+    "stem": "Which Article of the Constitution deals with the impeachment of the President?",
+    "options": [
+      "Article 72",
+      "Article 54",
+      "Article 123",
+      "Article 61"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Article 61 lays down the impeachment procedure. Article 54 covers the President's election, Article 72 the power to pardon and Article 123 ordinances."
+  },
+  {
+    "id": "MPPOLICE-T1-033",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Analogy",
+    "stem": "Farmer : Field :: Sailor : ?",
+    "options": [
+      "Ship",
+      "Captain",
+      "Anchor",
+      "Compass"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A farmer works in a field and a sailor works on a ship. The pair is worker and workplace; an anchor and a compass are things a sailor uses, not where he works."
+  },
+  {
+    "id": "MPPOLICE-T1-034",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Classification",
+    "stem": "Find the odd one out: Jupiter, Saturn, Titan, Neptune",
+    "options": [
+      "Neptune",
+      "Jupiter",
+      "Titan",
+      "Saturn"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Jupiter, Saturn and Neptune are planets. Titan is a moon of Saturn."
+  },
+  {
+    "id": "MPPOLICE-T1-035",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "Find the next number: 2, 5, 14, 41, ?",
+    "options": [
+      "119",
+      "120",
+      "122",
+      "123"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Each term is three times the previous one minus 1: 41 × 3 - 1 = 122."
+  },
+  {
+    "id": "MPPOLICE-T1-036",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Letter series",
+    "stem": "Find the next letter: D, F, I, M, R, ?",
+    "options": [
+      "Y",
+      "V",
+      "X",
+      "W"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The gaps grow by one each time: +2, +3, +4, +5, then +6. R is the 18th letter, and 18 + 6 = 24, which is X."
+  },
+  {
+    "id": "MPPOLICE-T1-037",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Number analogy",
+    "stem": "8 : 64 :: 11 : ?",
+    "options": [
+      "121",
+      "132",
+      "144",
+      "169"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "64 is the square of 8, so the answer is the square of 11, which is 121."
+  },
+  {
+    "id": "MPPOLICE-T1-038",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Classification",
+    "stem": "Find the odd one out: 21, 35, 49, 58",
+    "options": [
+      "21",
+      "35",
+      "49",
+      "58"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "21, 35 and 49 are multiples of 7. 58 is not."
+  },
+  {
+    "id": "MPPOLICE-T1-039",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Analogy",
+    "stem": "Kilogram : Mass :: Litre : ?",
+    "options": [
+      "Length",
+      "Weight",
+      "Volume",
+      "Density"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The kilogram is a unit of mass and the litre is a unit of volume."
+  },
+  {
+    "id": "MPPOLICE-T1-040",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "Find the next number: 4, 10, 18, 28, 40, ?",
+    "options": [
+      "50",
+      "52",
+      "54",
+      "56"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The gaps are 6, 8, 10, 12, so the next gap is 14: 40 + 14 = 54."
+  },
+  {
+    "id": "MPPOLICE-T1-041",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Blood relations",
+    "stem": "Pointing to an old man, Rakesh says, \"His son is the father of my only sister.\" How is the old man related to Rakesh?",
+    "options": [
+      "Father-in-law",
+      "Father",
+      "Uncle",
+      "Grandfather"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The father of Rakesh's sister is Rakesh's own father. The old man's son is Rakesh's father, so the old man is Rakesh's grandfather."
+  },
+  {
+    "id": "MPPOLICE-T1-042",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppMental",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Coding-decoding",
+    "stem": "If JAIL is coded as KBJM, how is DANDA coded?",
+    "options": [
+      "EBOEB",
+      "EBNEB",
+      "EBOFB",
+      "CZMCZ"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Each letter moves one place forward: D to E, A to B, N to O, D to E, A to B."
+  },
+  {
+    "id": "MPPOLICE-T1-043",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Blood relations",
+    "stem": "A is the father of B. B and C are sisters. D is the son of C. How is A related to D?",
+    "options": [
+      "Father",
+      "Brother",
+      "Grandfather",
+      "Uncle"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "B and C are sisters, so A is C's father too. D is C's son, so A is D's (maternal) grandfather (nana)."
+  },
+  {
+    "id": "MPPOLICE-T1-044",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppMental",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Coding-decoding",
+    "stem": "If FAN is written as 6114 (F = 6, A = 1, N = 14), how is HEN written?",
+    "options": [
+      "8415",
+      "8514",
+      "8541",
+      "9514"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Each letter is replaced by its position in the alphabet: H = 8, E = 5, N = 14, giving 8514."
+  },
+  {
+    "id": "MPPOLICE-T1-045",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Directions",
+    "stem": "Raj walks 15 km north, turns right and walks 36 km. How far is he from his starting point?",
+    "options": [
+      "21 km",
+      "39 km",
+      "45 km",
+      "51 km"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "His path makes a right angle, so the distance is √(15² + 36²) = √1521 = 39 km. Adding the legs (51 km) gives the distance walked, not the distance from the start."
+  },
+  {
+    "id": "MPPOLICE-T1-046",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppMental",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Calendar",
+    "stem": "If today is Wednesday, what day of the week will it be 60 days from today?",
+    "options": [
+      "Monday",
+      "Saturday",
+      "Thursday",
+      "Sunday"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "60 = 8 weeks + 4 days. Four days after Wednesday is Sunday."
+  },
+  {
+    "id": "MPPOLICE-T1-047",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Directions",
+    "stem": "Neha faces north-east. She turns 180° clockwise and then 45° anticlockwise. Which direction does she face now?",
+    "options": [
+      "South",
+      "West",
+      "South-west",
+      "North"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Turning 180° from north-east leaves her facing south-west. Turning 45° anticlockwise from south-west brings her round to south."
+  },
+  {
+    "id": "MPPOLICE-T1-048",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppMental",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Clock",
+    "stem": "What is the angle between the hour and minute hands of a clock at 6:15?",
+    "options": [
+      "90°",
+      "97.5°",
+      "105°",
+      "112.5°"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Angle = |30H - 5.5M| = |180 - 82.5| = 97.5°. The hour hand has moved a quarter of the way from 6 to 7, so the answer is not exactly 90°."
+  },
+  {
+    "id": "MPPOLICE-T1-049",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ranking",
+    "stem": "In a row of 43 students, Amit is 18th from the left. What is his position from the right?",
+    "options": [
+      "24th",
+      "25th",
+      "26th",
+      "27th"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Position from the right = 43 - 18 + 1 = 26th."
+  },
+  {
+    "id": "MPPOLICE-T1-050",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppMental",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Alphabet",
+    "stem": "Which letter is 4th to the left of the 11th letter from the right end of the English alphabet?",
+    "options": [
+      "T",
+      "M",
+      "K",
+      "L"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The 11th letter from the right is P (the 16th from the left). Four places to its left is the 12th letter, L."
+  },
+  {
+    "id": "MPPOLICE-T1-051",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Syllogism",
+    "stem": "Statements: All pens are books. All books are chairs. Conclusions: I. All pens are chairs. II. Some chairs are pens. Which conclusion follows?",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Every pen is a book and every book is a chair, so all pens are chairs (I). Then the chairs that are pens make II true as well."
+  },
+  {
+    "id": "MPPOLICE-T1-052",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppMental",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Mathematical operations",
+    "stem": "If + means -, - means ×, × means ÷ and ÷ means +, what is 30 + 12 × 4 - 2 ÷ 5?",
+    "options": [
+      "25",
+      "27",
+      "29",
+      "31"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Rewrite it as 30 - 12 ÷ 4 × 2 + 5. Division and multiplication first: 12 ÷ 4 × 2 = 6. Then 30 - 6 + 5 = 29."
+  },
+  {
+    "id": "MPPOLICE-T1-053",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Syllogism",
+    "stem": "Statements: Some guards are drivers. No driver is a cook. Conclusions: I. Some guards are not cooks. II. Some cooks are guards. Which conclusion follows?",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The guards who are drivers cannot be cooks, so some guards are not cooks (I). Nothing says any cook is a guard, so II does not follow."
+  },
+  {
+    "id": "MPPOLICE-T1-054",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppMental",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Missing number",
+    "stem": "In each pair the second number is the square of the first plus 1: 3 → 10, 5 → 26. What does 7 give?",
+    "options": [
+      "47",
+      "48",
+      "49",
+      "50"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "7² + 1 = 49 + 1 = 50."
+  },
+  {
+    "id": "MPPOLICE-T1-055",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Arrangement",
+    "stem": "Five friends, P, Q, R, S and T, sit in a row facing north. T sits at the left end and R at the right end. P sits immediately to the right of T. S sits immediately to the left of R. Who sits in the middle?",
+    "options": [
+      "Q",
+      "S",
+      "P",
+      "R"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "From left to right: T, P, _, S, R. The only seat left is the middle one, so Q sits there."
+  },
+  {
+    "id": "MPPOLICE-T1-056",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppMental",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Coding-decoding",
+    "stem": "In a code, MANGO is written as OGNAM. How is GRAPE written in that code?",
+    "options": [
+      "EAPRG",
+      "GPARE",
+      "EPARG",
+      "EPRAG"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The word is written backwards, so GRAPE becomes EPARG."
+  },
+  {
+    "id": "MPPOLICE-T1-057",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Inequality",
+    "stem": "If W ≥ X, X > Y and Y = Z, which of these must be true?",
+    "options": [
+      "X = Z",
+      "W = Y",
+      "W > Z",
+      "Z > X"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "W ≥ X > Y = Z, so W > Z. X is greater than Z, so X = Z and Z > X are false, and W cannot equal Y."
+  },
+  {
+    "id": "MPPOLICE-T1-058",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppMental",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Alphabet",
+    "stem": "How many letters are there between E and R in the English alphabet?",
+    "options": [
+      "11",
+      "12",
+      "13",
+      "14"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "E is the 5th letter and R the 18th. The letters between them are F to Q: 18 - 5 - 1 = 12."
+  },
+  {
+    "id": "MPPOLICE-T1-059",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Coded relations",
+    "stem": "A + B means A is the son of B, and A - B means A is the wife of B. If P + Q - R, how is P related to R?",
+    "options": [
+      "Father",
+      "Brother",
+      "Son",
+      "Nephew"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "P is Q's son and Q is R's wife. So R is P's father, and P is R's son."
+  },
+  {
+    "id": "MPPOLICE-T1-060",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppMental",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Calendar",
+    "stem": "On which day of the week did 15 August 1947 fall?",
+    "options": [
+      "Monday",
+      "Thursday",
+      "Saturday",
+      "Friday"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "India became independent on Friday, 15 August 1947."
+  },
+  {
+    "id": "MPPOLICE-T1-061",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Directions",
+    "stem": "A tower is 30 m east of a well. A tree is 40 m north of the tower. How far is the tree from the well?",
+    "options": [
+      "10 m",
+      "50 m",
+      "60 m",
+      "70 m"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The three points form a right triangle: √(30² + 40²) = √2500 = 50 m."
+  },
+  {
+    "id": "MPPOLICE-T1-062",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppMental",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Clock",
+    "stem": "At what time between 3 and 4 o'clock are the hour and minute hands of a clock together?",
+    "options": [
+      "16 minutes past 3",
+      "15 minutes past 3",
+      "16 4/11 minutes past 3",
+      "17 3/11 minutes past 3"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "At 3:00 the minute hand is 90° behind. It gains 5.5° a minute, so it catches up after 90 ÷ 5.5 = 16 4/11 minutes. At 3:15 the hour hand has already moved on."
+  },
+  {
+    "id": "MPPOLICE-T1-063",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ordering",
+    "stem": "A is taller than B but shorter than C. D is the tallest of all. E is shorter than B. Who is the shortest?",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "E"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "From tallest: D, C, A, B, E. So E is the shortest."
+  },
+  {
+    "id": "MPPOLICE-T1-064",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppMental",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Coding-decoding",
+    "stem": "If RED is coded as 27 (the sum of its letter positions, 18 + 5 + 4), what is the code for BLUE?",
+    "options": [
+      "38",
+      "39",
+      "40",
+      "42"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "B = 2, L = 12, U = 21, E = 5, and 2 + 12 + 21 + 5 = 40."
+  },
+  {
+    "id": "MPPOLICE-T1-065",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sets",
+    "stem": "In a class of 50, 30 students like tea, 25 like coffee and 10 like both. How many like neither?",
+    "options": [
+      "5",
+      "10",
+      "15",
+      "20"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Students who like at least one = 30 + 25 - 10 = 45. So 50 - 45 = 5 like neither."
+  },
+  {
+    "id": "MPPOLICE-T1-066",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppMental",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Dictionary order",
+    "stem": "In dictionary order, which word comes third: Police, Policy, Polish, Polite?",
+    "options": [
+      "Policy",
+      "Polite",
+      "Police",
+      "Polish"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The order is Police, Policy, Polish, Polite. Polic- comes before Polis-, and Polis- before Polit-."
+  },
+  {
+    "id": "MPPOLICE-T1-067",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppLogical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Blood relations",
+    "stem": "A woman tells a boy, \"Your mother's husband's sister is my sister.\" How is the woman related to the boy?",
+    "options": [
+      "Mother",
+      "Aunt",
+      "Grandmother",
+      "Sister"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The boy's mother's husband is his father. The father's sister is the woman's sister, so the woman is also the father's sister: the boy's aunt (bua)."
+  },
+  {
+    "id": "MPPOLICE-T1-068",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppMental",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Missing number",
+    "stem": "If 5 × 4 = 21 and 6 × 3 = 19, what is 7 × 2 by the same rule?",
+    "options": [
+      "12",
+      "13",
+      "14",
+      "15"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The rule is product plus 1: 20 + 1 = 21, 18 + 1 = 19, so 14 + 1 = 15."
+  },
+  {
+    "id": "MPPOLICE-T1-069",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Syllogism",
+    "stem": "Statements: No police officer is a thief. All thieves are criminals. Conclusions: I. No criminal is a police officer. II. Some criminals are not police officers. Which conclusion follows?",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The thieves are criminals who are not police officers, so II follows. Other criminals might be police officers, so I does not."
+  },
+  {
+    "id": "MPPOLICE-T1-070",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppMental",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Calendar",
+    "stem": "Which year has exactly the same calendar as 2021?",
+    "options": [
+      "2024",
+      "2025",
+      "2026",
+      "2027"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Count the odd days from 2021: 2021, 2022 and 2023 give 1 each, 2024 (a leap year) gives 2, 2025 and 2026 give 1 each. That is 7, a whole week, and 2027 is not a leap year, so it matches 2021."
+  },
+  {
+    "id": "MPPOLICE-T1-071",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Physics",
+    "stem": "Who discovered the electron?",
+    "options": [
+      "J. J. Thomson",
+      "Niels Bohr",
+      "James Chadwick",
+      "Ernest Rutherford"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "J. J. Thomson discovered the electron in 1897. Rutherford discovered the nucleus and Chadwick the neutron."
+  },
+  {
+    "id": "MPPOLICE-T1-072",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Physics",
+    "stem": "Which mirror is used in vehicle headlights to throw a strong, parallel beam?",
+    "options": [
+      "Cylindrical",
+      "Plane",
+      "Concave",
+      "Convex"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "With the bulb at its focus, a concave mirror sends the light out as a parallel beam. Convex mirrors are used as rear-view mirrors."
+  },
+  {
+    "id": "MPPOLICE-T1-073",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Physics",
+    "stem": "Which lens is used as a simple magnifying glass?",
+    "options": [
+      "Plane glass sheet",
+      "Concave lens",
+      "Convex lens",
+      "Cylindrical lens"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An object held within the focal length of a convex lens gives an enlarged, upright image. A concave lens always gives a smaller image."
+  },
+  {
+    "id": "MPPOLICE-T1-074",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Physics",
+    "stem": "Pure water boils at 100 °C at sea level. What is this temperature on the Kelvin scale?",
+    "options": [
+      "173 K",
+      "273 K",
+      "373 K",
+      "473 K"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Add 273 to a Celsius temperature to get kelvin: 100 + 273 = 373 K. 273 K is the freezing point of water."
+  },
+  {
+    "id": "MPPOLICE-T1-075",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Chemistry",
+    "stem": "Plaster of Paris is made by heating which mineral?",
+    "options": [
+      "Haematite",
+      "Gypsum",
+      "Limestone",
+      "Bauxite"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Heating gypsum (calcium sulphate dihydrate) to about 100 °C gives Plaster of Paris. Bauxite is aluminium ore and haematite iron ore."
+  },
+  {
+    "id": "MPPOLICE-T1-076",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Chemistry",
+    "stem": "Which acid is present in curd?",
+    "options": [
+      "Acetic acid",
+      "Tartaric acid",
+      "Lactic acid",
+      "Citric acid"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Bacteria turn the sugar in milk into lactic acid, which sets and sours curd. Citric acid is in lemons and acetic acid in vinegar."
+  },
+  {
+    "id": "MPPOLICE-T1-077",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Chemistry",
+    "stem": "Which gas bubbles out when baking soda is added to vinegar?",
+    "options": [
+      "Oxygen",
+      "Hydrogen",
+      "Carbon dioxide",
+      "Ammonia"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The acid in vinegar reacts with sodium hydrogen carbonate to give carbon dioxide, water and sodium acetate."
+  },
+  {
+    "id": "MPPOLICE-T1-078",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Chemistry",
+    "stem": "Which of these is a chemical change?",
+    "options": [
+      "Cooking an egg",
+      "Melting of wax",
+      "Breaking glass",
+      "Dissolving sugar"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Cooking changes the egg's proteins into new substances and cannot be undone. Melting, dissolving and breaking change only form or state."
+  },
+  {
+    "id": "MPPOLICE-T1-079",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Biology",
+    "stem": "Which part of the blood is a pale yellow liquid that carries the cells?",
+    "options": [
+      "Red cells",
+      "Plasma",
+      "Platelets",
+      "Haemoglobin"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Plasma, mostly water, makes up about 55% of the blood and carries the cells, food and wastes. Haemoglobin is the red pigment inside red cells."
+  },
+  {
+    "id": "MPPOLICE-T1-080",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Health",
+    "stem": "Which of these vitamins is fat-soluble?",
+    "options": [
+      "Vitamin B1",
+      "Vitamin C",
+      "Vitamin B12",
+      "Vitamin A"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Vitamins A, D, E and K dissolve in fat and are stored in the body. The B vitamins and vitamin C dissolve in water."
+  },
+  {
+    "id": "MPPOLICE-T1-081",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Health",
+    "stem": "Ringworm, despite its name, is caused by a:",
+    "options": [
+      "Virus",
+      "Fungus",
+      "Worm",
+      "Bacterium"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Ringworm is a fungal skin infection that makes a ring-shaped rash and is treated with antifungal creams. No worm is involved."
+  },
+  {
+    "id": "MPPOLICE-T1-082",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Biology",
+    "stem": "Which organ stores bile?",
+    "options": [
+      "Pancreas",
+      "Gall bladder",
+      "Spleen",
+      "Liver"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The liver makes bile and the gall bladder stores it until food reaches the small intestine."
+  },
+  {
+    "id": "MPPOLICE-T1-083",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Biology",
+    "stem": "Which transparent part forms the front of the human eye?",
+    "options": [
+      "Cornea",
+      "Iris",
+      "Sclera",
+      "Retina"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The cornea is the clear front window that lets light in. The sclera is the tough white outer coat."
+  },
+  {
+    "id": "MPPOLICE-T1-084",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Health",
+    "stem": "Which bacterial disease, caught from dirty wounds, is also called lockjaw?",
+    "options": [
+      "Tetanus",
+      "Polio",
+      "Hepatitis",
+      "Rabies"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Tetanus bacteria live in soil and enter through wounds; the toxin stiffens the jaw muscles. Rabies and polio are viral."
+  },
+  {
+    "id": "MPPOLICE-T1-085",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Biology",
+    "stem": "Which part of a flower produces pollen?",
+    "options": [
+      "Ovary",
+      "Stigma",
+      "Anther",
+      "Petal"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Pollen is made in the anthers at the top of the stamens. The stigma receives pollen and the ovary becomes the fruit."
+  },
+  {
+    "id": "MPPOLICE-T1-086",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Percentage",
+    "stem": "A salary rises from ₹25,000 to ₹28,000. What is the percentage increase?",
+    "options": [
+      "12%",
+      "14%",
+      "15%",
+      "16%"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Increase = ₹3,000. 3,000 ÷ 25,000 × 100 = 12%. Always divide by the old value."
+  },
+  {
+    "id": "MPPOLICE-T1-087",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Profit and loss",
+    "stem": "A shopkeeper buys a cooler for ₹640 and sells it for ₹800. What is his profit percent?",
+    "options": [
+      "16%",
+      "20%",
+      "25%",
+      "30%"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Profit = ₹160. 160 ÷ 640 × 100 = 25%. Dividing by the selling price instead gives 20%, a common mistake."
+  },
+  {
+    "id": "MPPOLICE-T1-088",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Simple interest",
+    "stem": "What is the simple interest on ₹6,000 at 5% a year for 3 years?",
+    "options": [
+      "₹900",
+      "₹950",
+      "₹1,000",
+      "₹1,050"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "SI = P × R × T ÷ 100 = 6,000 × 5 × 3 ÷ 100 = ₹900."
+  },
+  {
+    "id": "MPPOLICE-T1-089",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Compound interest",
+    "stem": "What is the compound interest on ₹15,000 at 8% a year for 2 years, compounded yearly?",
+    "options": [
+      "₹2,400",
+      "₹2,448",
+      "₹2,496",
+      "₹2,560"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Amount = 15,000 × 1.08 × 1.08 = ₹17,496, so CI = ₹2,496. Simple interest would be ₹2,400."
+  },
+  {
+    "id": "MPPOLICE-T1-090",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Average",
+    "stem": "What is the average of 14, 22, 30, 38 and 46?",
+    "options": [
+      "28",
+      "29",
+      "30",
+      "32"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Sum = 150 and 150 ÷ 5 = 30. For evenly spaced numbers the average is the middle one."
+  },
+  {
+    "id": "MPPOLICE-T1-091",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ratio",
+    "stem": "₹1,500 is divided between A and B in the ratio 2 : 3. How much does B get?",
+    "options": [
+      "₹600",
+      "₹750",
+      "₹900",
+      "₹1,000"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "B gets 3 of 5 parts: 1,500 × 3 ÷ 5 = ₹900. A gets ₹600."
+  },
+  {
+    "id": "MPPOLICE-T1-092",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Time and work",
+    "stem": "A can finish a job in 18 days and B in 9 days. How long will they take working together?",
+    "options": [
+      "6 days",
+      "9 days",
+      "12 days",
+      "27 days"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Together they do 1/18 + 1/9 = 3/18 = 1/6 of the job a day, so 6 days. Adding the days (27) is a common mistake."
+  },
+  {
+    "id": "MPPOLICE-T1-093",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Speed",
+    "stem": "A bus covers 252 km in 4 hours. What is its speed in metres per second?",
+    "options": [
+      "15 m/s",
+      "17.5 m/s",
+      "20 m/s",
+      "63 m/s"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "252 ÷ 4 = 63 km/h, and 63 × 5/18 = 17.5 m/s."
+  },
+  {
+    "id": "MPPOLICE-T1-094",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Simplification",
+    "stem": "Simplify: 72 ÷ 8 × 4 - 6 + 3",
+    "options": [
+      "27",
+      "30",
+      "33",
+      "36"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Division and multiplication from left to right first: 72 ÷ 8 = 9, 9 × 4 = 36. Then 36 - 6 + 3 = 33."
+  },
+  {
+    "id": "MPPOLICE-T1-095",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Square roots",
+    "stem": "What is the square root of 2304?",
+    "options": [
+      "48",
+      "52",
+      "54",
+      "56"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "48 × 48 = 2304. The number ends in 4, so the root ends in 2 or 8, and 50² = 2500 puts it just below 50."
+  },
+  {
+    "id": "MPPOLICE-T1-096",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "HCF and LCM",
+    "stem": "What is the HCF of 36 and 84?",
+    "options": [
+      "12",
+      "18",
+      "24",
+      "252"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "36 = 2² × 3² and 84 = 2² × 3 × 7. The common factors give 2² × 3 = 12. 252 is the LCM."
+  },
+  {
+    "id": "MPPOLICE-T1-097",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Mensuration",
+    "stem": "What is the volume of a cube with an edge of 7 cm?",
+    "options": [
+      "49 cm³",
+      "147 cm³",
+      "294 cm³",
+      "343 cm³"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Volume = edge³ = 7 × 7 × 7 = 343 cm³. 294 cm² would be its total surface area (6 × 49)."
+  },
+  {
+    "id": "MPPOLICE-T1-098",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Probability",
+    "stem": "A fair die is thrown once. What is the probability of getting an even number?",
+    "options": [
+      "1/2",
+      "1/6",
+      "1/3",
+      "2/3"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The even faces are 2, 4 and 6: 3 of 6 outcomes, so 3/6 = 1/2."
+  },
+  {
+    "id": "MPPOLICE-T1-099",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Discount",
+    "stem": "An article is marked at ₹1,600 and sold at a 12.5% discount. What is the selling price?",
+    "options": [
+      "₹1,400",
+      "₹1,420",
+      "₹1,450",
+      "₹1,580"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "12.5% is one eighth: 1,600 ÷ 8 = ₹200 off, so the price is ₹1,400."
+  },
+  {
+    "id": "MPPOLICE-T1-100",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "mppArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Algebra",
+    "stem": "If 3x - 7 = 20, what is x?",
+    "options": [
+      "7",
+      "9",
+      "11",
+      "13"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "3x = 27, so x = 9."
+  },
+  {
+    "id": "MPPOLICE-T2-001",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppIndia",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "History",
+    "stem": "Which Sultan completed the building of the Qutub Minar?",
+    "options": [
+      "Qutbuddin Aibak",
+      "Balban",
+      "Iltutmish",
+      "Razia Sultan"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Qutbuddin Aibak began the Qutub Minar around 1199 and his successor Iltutmish completed its upper storeys."
+  },
+  {
+    "id": "MPPOLICE-T2-002",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppState",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Symbols",
+    "stem": "Which tree is the state tree of Madhya Pradesh?",
+    "options": [
+      "Peepal",
+      "Neem",
+      "Sal",
+      "Banyan"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The banyan (bargad) is MP's state tree; it is also the national tree. Sal forests cover much of the east of the state."
+  },
+  {
+    "id": "MPPOLICE-T2-003",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppComputer",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Internet",
+    "stem": "What is the full form of URL?",
+    "options": [
+      "Uniform Resource Locator",
+      "Unique Routing Locator",
+      "Universal Record Link",
+      "Uniform Request Line"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A URL (Uniform Resource Locator) is the address of a page or file on the internet, such as https://www.example.com."
+  },
+  {
+    "id": "MPPOLICE-T2-004",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "History",
+    "stem": "Who led the Kheda Satyagraha of 1918 alongside Gandhi?",
+    "options": [
+      "Vallabhbhai Patel",
+      "Subhas Chandra Bose",
+      "Jawaharlal Nehru",
+      "Rajendra Prasad"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "In Kheda, Gujarat, peasants hit by crop failure asked to be excused land revenue; Vallabhbhai Patel organised them with Gandhi. Rajendra Prasad worked with Gandhi in Champaran in 1917."
+  },
+  {
+    "id": "MPPOLICE-T2-005",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppState",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Symbols",
+    "stem": "Which sport was declared the state sport of Madhya Pradesh in 2013?",
+    "options": [
+      "Kho-kho",
+      "Hockey",
+      "Kabaddi",
+      "Malkhamb"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Malkhamb, the traditional sport of yoga-like moves on a wooden pole or rope, became MP's state sport in 2013."
+  },
+  {
+    "id": "MPPOLICE-T2-006",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppIndia",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Geography",
+    "stem": "Barren Island, India's only active volcano, belongs to which island group?",
+    "options": [
+      "Lakshadweep",
+      "Nicobar Islands",
+      "Andaman Islands",
+      "Minicoy"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Barren Island lies in the Andaman Sea and is part of the Andaman Islands."
+  },
+  {
+    "id": "MPPOLICE-T2-007",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppState",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Heritage",
+    "stem": "The Great Stupa of Sanchi is in which district?",
+    "options": [
+      "Sagar",
+      "Sehore",
+      "Vidisha",
+      "Raisen"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Sanchi is in Raisen district, close to Vidisha. Its Great Stupa was first built under Ashoka and is a UNESCO World Heritage Site."
+  },
+  {
+    "id": "MPPOLICE-T2-008",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Geography",
+    "stem": "In which hills do the Eastern Ghats and the Western Ghats meet?",
+    "options": [
+      "Satpura",
+      "Aravalli",
+      "Nilgiri",
+      "Cardamom"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The two Ghats meet in the Nilgiri Hills of Tamil Nadu. The Aravalli and Satpura ranges lie far to the north."
+  },
+  {
+    "id": "MPPOLICE-T2-009",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppComputer",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Email",
+    "stem": "Which symbol separates the user name from the domain name in an email address?",
+    "options": [
+      "@ (at)",
+      "& (ampersand)",
+      "% (percent)",
+      "# (hash)"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An email address is user@domain, for example name@example.com."
+  },
+  {
+    "id": "MPPOLICE-T2-010",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppState",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "History",
+    "stem": "In which present-day district of Madhya Pradesh was Chandra Shekhar Azad born?",
+    "options": [
+      "Jhabua",
+      "Barwani",
+      "Alirajpur",
+      "Dhar"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Azad was born in 1906 at Bhabhra, now Chandrashekhar Azad Nagar, in Alirajpur district. Alirajpur was split from Jhabua in 2008."
+  },
+  {
+    "id": "MPPOLICE-T2-011",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppIndia",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Polity",
+    "stem": "The Contingency Fund of India is placed at whose disposal?",
+    "options": [
+      "The Finance Minister",
+      "The Prime Minister",
+      "The CAG",
+      "The President"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Under Article 267 the Contingency Fund is at the disposal of the President, who can advance money for urgent spending before Parliament approves it."
+  },
+  {
+    "id": "MPPOLICE-T2-012",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppState",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Heritage",
+    "stem": "The Omkareshwar Jyotirlinga stands on an island in which river?",
+    "options": [
+      "Chambal",
+      "Kshipra",
+      "Tapti",
+      "Narmada"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Omkareshwar, in Khandwa district, is on Mandhata island in the Narmada. The other jyotirlinga of MP, Mahakaleshwar, is at Ujjain on the Kshipra."
+  },
+  {
+    "id": "MPPOLICE-T2-013",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppIndia",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Polity",
+    "stem": "What is the minimum age for appointment as the Governor of a state?",
+    "options": [
+      "25 years",
+      "30 years",
+      "35 years",
+      "40 years"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Article 157 requires a Governor to be a citizen of India who has completed 35 years of age."
+  },
+  {
+    "id": "MPPOLICE-T2-014",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppComputer",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Memory",
+    "stem": "In the binary units used for computer memory, one gigabyte (GB) is equal to how many megabytes?",
+    "options": [
+      "100",
+      "256",
+      "512",
+      "1024"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "In binary units each step up is 2¹⁰ = 1024 times larger, so 1 GB = 1024 MB. (In decimal units, used by some disk makers, 1 GB is 1000 MB.)"
+  },
+  {
+    "id": "MPPOLICE-T2-015",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppState",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Heritage",
+    "stem": "The Bhimbetka rock shelters near Bhopal are best known for:",
+    "options": [
+      "Chandela temples",
+      "Stone Age paintings",
+      "Mughal step-wells",
+      "Buddhist stupas"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Bhimbetka, in Raisen district, has rock paintings from the Stone Age onwards and is a UNESCO World Heritage Site."
+  },
+  {
+    "id": "MPPOLICE-T2-016",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Economy",
+    "stem": "Operation Flood, launched in 1970 by the National Dairy Development Board, aimed to raise the output of which product?",
+    "options": [
+      "Eggs",
+      "Oilseeds",
+      "Milk",
+      "Fish"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Operation Flood, led by Verghese Kurien, built a national milk grid of dairy cooperatives, and India became the world's largest milk producer. Fish is linked with the Blue Revolution."
+  },
+  {
+    "id": "MPPOLICE-T2-017",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Science and technology",
+    "stem": "Where is ISRO's Satish Dhawan Space Centre, its main launch site?",
+    "options": [
+      "Sriharikota",
+      "Kalpakkam",
+      "Bengaluru",
+      "Thumba"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Satish Dhawan Space Centre is at Sriharikota in Andhra Pradesh. Thumba, near Thiruvananthapuram, launched India's first sounding rocket, and Kalpakkam is a nuclear centre."
+  },
+  {
+    "id": "MPPOLICE-T2-018",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppState",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "People",
+    "stem": "Which is the largest tribe of Madhya Pradesh by population?",
+    "options": [
+      "Bhil",
+      "Korku",
+      "Baiga",
+      "Gond"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Bhils, mostly in western districts such as Jhabua and Alirajpur, are the largest tribe of MP, ahead of the Gonds, as counted in the 2011 Census."
+  },
+  {
+    "id": "MPPOLICE-T2-019",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppComputer",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "MS Office",
+    "stem": "Which MS Office program is mainly used to make slide presentations?",
+    "options": [
+      "Word",
+      "Excel",
+      "PowerPoint",
+      "Access"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "PowerPoint makes slide shows. Excel is for spreadsheets, Word for documents and Access for databases."
+  },
+  {
+    "id": "MPPOLICE-T2-020",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Culture",
+    "stem": "Thrissur Pooram, a temple festival with decorated elephants, is held in which state?",
+    "options": [
+      "Karnataka",
+      "Kerala",
+      "Goa",
+      "Tamil Nadu"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Thrissur Pooram is held each April or May at the Vadakkunnathan temple in Thrissur, Kerala."
+  },
+  {
+    "id": "MPPOLICE-T2-021",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppState",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Wildlife",
+    "stem": "Kuno National Park in Sheopur district became known in 2022 for the release of which animal?",
+    "options": [
+      "Wild buffalo",
+      "Asiatic lions",
+      "Gharials",
+      "Cheetahs"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Cheetahs brought from Namibia were released at Kuno in September 2022, the first in India since the species died out here."
+  },
+  {
+    "id": "MPPOLICE-T2-022",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Books",
+    "stem": "Who wrote the novel \"Train to Pakistan\"?",
+    "options": [
+      "Mulk Raj Anand",
+      "R. K. Narayan",
+      "Vikram Seth",
+      "Khushwant Singh"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Khushwant Singh's Train to Pakistan (1956) is set during Partition. R. K. Narayan created Malgudi and Mulk Raj Anand wrote Untouchable."
+  },
+  {
+    "id": "MPPOLICE-T2-023",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppState",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Rivers",
+    "stem": "The Indira Sagar Dam at Punasa in Khandwa district is built on which river?",
+    "options": [
+      "Tapti",
+      "Betwa",
+      "Narmada",
+      "Chambal"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Indira Sagar, one of the largest reservoirs in India, is on the Narmada, with Omkareshwar dam just downstream. Gandhi Sagar is on the Chambal."
+  },
+  {
+    "id": "MPPOLICE-T2-024",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppIndia",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sports",
+    "stem": "The Deodhar Trophy is a domestic tournament in which sport?",
+    "options": [
+      "Hockey",
+      "Badminton",
+      "Cricket",
+      "Football"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Deodhar Trophy, named after Professor D. B. Deodhar, is a one-day cricket competition between zonal teams."
+  },
+  {
+    "id": "MPPOLICE-T2-025",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppComputer",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Security",
+    "stem": "Which software protects a computer from viruses and other harmful programs?",
+    "options": [
+      "Compiler",
+      "Antivirus",
+      "Spreadsheet",
+      "Browser"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Antivirus software scans for and removes malware. A compiler turns program code into machine code."
+  },
+  {
+    "id": "MPPOLICE-T2-026",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppState",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "History",
+    "stem": "Mandu is linked with the love story of Baz Bahadur and:",
+    "options": [
+      "Mumtaz Mahal",
+      "Rani Kamlapati",
+      "Rani Padmini",
+      "Rani Roopmati"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Baz Bahadur, the last Sultan of Malwa, and the singer Roopmati are remembered at Mandu in Dhar district. Rani Padmini is linked with Chittorgarh."
+  },
+  {
+    "id": "MPPOLICE-T2-027",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Polity",
+    "stem": "Which Schedule of the Constitution lists the languages recognised by it?",
+    "options": [
+      "Seventh",
+      "Twelfth",
+      "Tenth",
+      "Eighth"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Eighth Schedule lists the recognised languages. The Seventh has the Union, State and Concurrent Lists and the Tenth the anti-defection law."
+  },
+  {
+    "id": "MPPOLICE-T2-028",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppState",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Geography",
+    "stem": "Which state does NOT share a border with Madhya Pradesh?",
+    "options": [
+      "Gujarat",
+      "Rajasthan",
+      "Chhattisgarh",
+      "Jharkhand"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "MP borders Uttar Pradesh, Rajasthan, Gujarat, Maharashtra and Chhattisgarh. Jharkhand lies further east."
+  },
+  {
+    "id": "MPPOLICE-T2-029",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Environment",
+    "stem": "Simlipal National Park is in which state?",
+    "options": [
+      "Bihar",
+      "Odisha",
+      "Jharkhand",
+      "Assam"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Simlipal, in Mayurbhanj district of Odisha, is a tiger reserve and biosphere reserve."
+  },
+  {
+    "id": "MPPOLICE-T2-030",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppComputer",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Internet",
+    "stem": "Google Chrome is an example of which type of software?",
+    "options": [
+      "Search engine",
+      "Operating system",
+      "Web browser",
+      "Spreadsheet"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Chrome is a web browser used to open web pages. Google Search, which you reach through a browser, is the search engine."
+  },
+  {
+    "id": "MPPOLICE-T2-031",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppState",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Culture",
+    "stem": "Tansen, the great singer of Akbar's court, is buried in which city?",
+    "options": [
+      "Gwalior",
+      "Ujjain",
+      "Rewa",
+      "Orchha"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Tansen's tomb is in Gwalior, where the Tansen Samaroh music festival is held. He served the Raja of Rewa before joining Akbar."
+  },
+  {
+    "id": "MPPOLICE-T2-032",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppIndia",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Geography",
+    "stem": "The Nathpa Jhakri hydroelectric project is on which river?",
+    "options": [
+      "Chenab",
+      "Beas",
+      "Sutlej",
+      "Ravi"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Nathpa Jhakri, in Himachal Pradesh, is on the Sutlej, as is the Bhakra Nangal dam further down."
+  },
+  {
+    "id": "MPPOLICE-T2-033",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Analogy",
+    "stem": "Pen : Writer :: Scalpel : ?",
+    "options": [
+      "Hospital",
+      "Nurse",
+      "Surgeon",
+      "Patient"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A writer works with a pen and a surgeon works with a scalpel. The pair is tool and user."
+  },
+  {
+    "id": "MPPOLICE-T2-034",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Classification",
+    "stem": "Find the odd one out: Bronze, Steel, Brass, Zinc",
+    "options": [
+      "Brass",
+      "Bronze",
+      "Zinc",
+      "Steel"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Bronze, steel and brass are alloys. Zinc is an element (and is used to make brass)."
+  },
+  {
+    "id": "MPPOLICE-T2-035",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "Find the next number: 2, 7, 22, 67, ?",
+    "options": [
+      "134",
+      "198",
+      "201",
+      "202"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Each term is three times the previous one plus 1: 67 × 3 + 1 = 202."
+  },
+  {
+    "id": "MPPOLICE-T2-036",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Letter series",
+    "stem": "Find the next letter: Z, W, T, Q, ?",
+    "options": [
+      "P",
+      "N",
+      "O",
+      "M"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The letters go back three places each time: Z, W, T, Q, N."
+  },
+  {
+    "id": "MPPOLICE-T2-037",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Classification",
+    "stem": "Find the odd one out: 8, 64, 216, 300",
+    "options": [
+      "8",
+      "64",
+      "216",
+      "300"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "8, 64 and 216 are cubes (2³, 4³, 6³). 300 is not a perfect cube."
+  },
+  {
+    "id": "MPPOLICE-T2-038",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Analogy",
+    "stem": "Thermometer : Temperature :: Rain gauge : ?",
+    "options": [
+      "Rainfall",
+      "Air pressure",
+      "Wind speed",
+      "Humidity"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A thermometer measures temperature and a rain gauge measures rainfall. Humidity is measured by a hygrometer and wind speed by an anemometer."
+  },
+  {
+    "id": "MPPOLICE-T2-039",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Letter analogy",
+    "stem": "CEG : FHJ :: LNP : ?",
+    "options": [
+      "OQS",
+      "MOQ",
+      "NPR",
+      "PRT"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Each letter moves forward by three: C to F, E to H, G to J. So L, N, P become O, Q, S."
+  },
+  {
+    "id": "MPPOLICE-T2-040",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "Find the next number: 4, 7, 13, 22, 34, ?",
+    "options": [
+      "46",
+      "47",
+      "49",
+      "52"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The gaps are 3, 6, 9, 12, so the next gap is 15: 34 + 15 = 49."
+  },
+  {
+    "id": "MPPOLICE-T2-041",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Blood relations",
+    "stem": "Introducing a man, Vikas says, \"His wife is the only daughter of my father.\" How is the man related to Vikas?",
+    "options": [
+      "Father-in-law",
+      "Cousin",
+      "Brother-in-law",
+      "Uncle"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The only daughter of Vikas's father is Vikas's sister. Her husband is Vikas's brother-in-law (jija)."
+  },
+  {
+    "id": "MPPOLICE-T2-042",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppMental",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Coding-decoding",
+    "stem": "If GUARD is written as HVBSE, how is CRIME written?",
+    "options": [
+      "DSJNF",
+      "DSINF",
+      "BQHLD",
+      "DSJMF"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Each letter moves one place forward: C to D, R to S, I to J, M to N, E to F."
+  },
+  {
+    "id": "MPPOLICE-T2-043",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Blood relations",
+    "stem": "K is the sister of L. L is the son of M. M is the daughter of N. How is K related to N?",
+    "options": [
+      "Daughter",
+      "Niece",
+      "Sister",
+      "Granddaughter"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "K and L are M's children, and M is N's daughter. So K is N's granddaughter."
+  },
+  {
+    "id": "MPPOLICE-T2-044",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppMental",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Coding-decoding",
+    "stem": "If TRAIN is coded as SQZHM, how is BUS coded?",
+    "options": [
+      "ATS",
+      "ATR",
+      "CVT",
+      "BTR"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Each letter moves one place back: B to A, U to T, S to R."
+  },
+  {
+    "id": "MPPOLICE-T2-045",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Directions",
+    "stem": "From her house, Pooja walks 16 km west and then 30 km south. How far is she from her house?",
+    "options": [
+      "14 km",
+      "34 km",
+      "40 km",
+      "46 km"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "√(16² + 30²) = √1156 = 34 km. 46 km is the distance walked."
+  },
+  {
+    "id": "MPPOLICE-T2-046",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppMental",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Calendar",
+    "stem": "If 5 March is a Monday, what day of the week is 31 March of the same year?",
+    "options": [
+      "Friday",
+      "Sunday",
+      "Thursday",
+      "Saturday"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "31 March is 26 days after 5 March. 26 = 3 weeks + 5 days, and five days after Monday is Saturday."
+  },
+  {
+    "id": "MPPOLICE-T2-047",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppLogical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Directions",
+    "stem": "A man faces south-west. He turns 270° anticlockwise. Which direction does he face now?",
+    "options": [
+      "North-east",
+      "West",
+      "South-east",
+      "North-west"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Turning 270° anticlockwise ends in the same place as turning 90° clockwise, and 90° clockwise from south-west is north-west."
+  },
+  {
+    "id": "MPPOLICE-T2-048",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppMental",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Clock",
+    "stem": "What is the angle between the hour and minute hands of a clock at 5:10?",
+    "options": [
+      "85°",
+      "90°",
+      "95°",
+      "100°"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Angle = |30H - 5.5M| = |150 - 55| = 95°."
+  },
+  {
+    "id": "MPPOLICE-T2-049",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ranking",
+    "stem": "In a queue, Ravi is 9th from the front. Kamal is 5 places behind Ravi and 12th from the back. How many people are in the queue?",
+    "options": [
+      "24",
+      "25",
+      "26",
+      "27"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Kamal is 9 + 5 = 14th from the front and 12th from the back, so there are 14 + 12 - 1 = 25 people."
+  },
+  {
+    "id": "MPPOLICE-T2-050",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppMental",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Alphabet",
+    "stem": "If the English alphabet is written in reverse order, which letter is 11th from the left?",
+    "options": [
+      "Q",
+      "K",
+      "P",
+      "O"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Reversed, the 11th letter from the left is the 11th from the end of the normal order: 27 - 11 = 16, which is P. K is the 11th letter of the normal order."
+  },
+  {
+    "id": "MPPOLICE-T2-051",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Syllogism",
+    "stem": "Statements: All lawyers are readers. Some readers are poets. Conclusions: I. Some lawyers are poets. II. Some poets are readers. Which conclusion follows?",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "\"Some readers are poets\" can be turned round to \"some poets are readers\" (II). The poets among the readers need not be lawyers, so I does not follow."
+  },
+  {
+    "id": "MPPOLICE-T2-052",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppMental",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Mathematical operations",
+    "stem": "If × means +, + means ÷, - means × and ÷ means -, what is 16 + 4 × 3 - 5 ÷ 2?",
+    "options": [
+      "15",
+      "17",
+      "19",
+      "21"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Rewrite it as 16 ÷ 4 + 3 × 5 - 2. That is 4 + 15 - 2 = 17."
+  },
+  {
+    "id": "MPPOLICE-T2-053",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Syllogism",
+    "stem": "Statements: Some boxes are tins. All tins are jars. Conclusions: I. Some boxes are jars. II. Some jars are boxes. Which conclusion follows?",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The boxes that are tins are also jars, so some boxes are jars (I), and turned round, some jars are boxes (II)."
+  },
+  {
+    "id": "MPPOLICE-T2-054",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppMental",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Missing number",
+    "stem": "2 and 3 give 13; 3 and 4 give 25. What do 4 and 5 give by the same rule?",
+    "options": [
+      "36",
+      "39",
+      "40",
+      "41"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The rule is the sum of the squares: 4 + 9 = 13 and 9 + 16 = 25, so 16 + 25 = 41."
+  },
+  {
+    "id": "MPPOLICE-T2-055",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Arrangement",
+    "stem": "Four friends, P, Q, R and S, sit around a square table facing the centre. P sits opposite R, and Q sits to the immediate right of P. Who sits to the immediate left of P?",
+    "options": [
+      "Cannot be determined",
+      "S",
+      "Q",
+      "R"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "R takes the seat opposite P and Q the seat on P's right, so the only seat left, on P's left, is S's."
+  },
+  {
+    "id": "MPPOLICE-T2-056",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppMental",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Coding-decoding",
+    "stem": "In a code, BOOK is written as CNPJ. How is DESK written in that code?",
+    "options": [
+      "EDTL",
+      "EFTL",
+      "EDTJ",
+      "CDRJ"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The letters move +1, -1, +1, -1 in turn: D to E, E to D, S to T, K to J."
+  },
+  {
+    "id": "MPPOLICE-T2-057",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Inequality",
+    "stem": "If J ≤ K < L and M > L, which of these must be true?",
+    "options": [
+      "L < J",
+      "K = J",
+      "M > J",
+      "K > M"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "J ≤ K < L < M, so M > J. K may equal J or be larger, so K = J is not certain."
+  },
+  {
+    "id": "MPPOLICE-T2-058",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppMental",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Alphabet",
+    "stem": "Which letter is exactly midway between F and P in the English alphabet?",
+    "options": [
+      "J",
+      "L",
+      "K",
+      "M"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "F is the 6th letter and P the 16th. Midway is the 11th letter, K."
+  },
+  {
+    "id": "MPPOLICE-T2-059",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Coded relations",
+    "stem": "A * B means A is the mother of B, and A # B means A is the brother of B. If M * N # O, how is M related to O?",
+    "options": [
+      "Mother",
+      "Aunt",
+      "Sister",
+      "Grandmother"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "M is N's mother and N is O's brother, so O is also M's child. M is O's mother."
+  },
+  {
+    "id": "MPPOLICE-T2-060",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppMental",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Calendar",
+    "stem": "How many odd days are there in 400 years?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "5"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "100 years give 5 odd days, so 400 years give 4 × 5 + 1 (the extra leap day of the 400th year) = 21, which is exactly 3 weeks: 0 odd days."
+  },
+  {
+    "id": "MPPOLICE-T2-061",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Directions",
+    "stem": "Town Q is north of town P. Town R is east of Q. Town S is due south of R, level with P. In which direction is S from P?",
+    "options": [
+      "South-east",
+      "North-east",
+      "North",
+      "East"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "S is straight below R and level with P, so it lies due east of P, the same distance as R is east of Q."
+  },
+  {
+    "id": "MPPOLICE-T2-062",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppMental",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Clock",
+    "stem": "A clock shows 2:35. What time does its mirror image show?",
+    "options": [
+      "10:25",
+      "9:35",
+      "9:25",
+      "3:25"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "For a mirror image, subtract the time from 11:60: 11:60 - 2:35 = 9:25."
+  },
+  {
+    "id": "MPPOLICE-T2-063",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ordering",
+    "stem": "Hari scored more than Sonu but less than Gita. Gita scored less than Asha. Who scored the second highest?",
+    "options": [
+      "Gita",
+      "Hari",
+      "Sonu",
+      "Asha"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "From highest: Asha, Gita, Hari, Sonu. Gita is second."
+  },
+  {
+    "id": "MPPOLICE-T2-064",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppMental",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Coding-decoding",
+    "stem": "In a code, each letter is replaced by twice its position in the alphabet. What is the code for ACE?",
+    "options": [
+      "3-6-9",
+      "2-4-6",
+      "2-6-10",
+      "1-3-5"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A = 1, C = 3, E = 5. Doubled, they give 2, 6 and 10."
+  },
+  {
+    "id": "MPPOLICE-T2-065",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppLogical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Sets",
+    "stem": "Of 60 constables, 35 can drive a jeep, 30 can ride a motorcycle and 12 can do neither. How many can do both?",
+    "options": [
+      "13",
+      "15",
+      "17",
+      "18"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "60 - 12 = 48 can do at least one. Both = 35 + 30 - 48 = 17."
+  },
+  {
+    "id": "MPPOLICE-T2-066",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppMental",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Dictionary order",
+    "stem": "In dictionary order, which of these words comes last: Station, Statue, Status, Stately?",
+    "options": [
+      "Stately",
+      "Statue",
+      "Status",
+      "Station"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The order is Stately, Station, Statue, Status. At the fifth letter e comes before i and u, and Statue comes before Status because e comes before s."
+  },
+  {
+    "id": "MPPOLICE-T2-067",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Blood relations",
+    "stem": "Kavita's father-in-law is the only brother of Suresh. How is Suresh related to Kavita's husband?",
+    "options": [
+      "Paternal uncle",
+      "Brother",
+      "Maternal uncle",
+      "Father"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Kavita's father-in-law is her husband's father. Suresh is that man's brother, so Suresh is the husband's paternal uncle (chacha or tau)."
+  },
+  {
+    "id": "MPPOLICE-T2-068",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppMental",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Missing number",
+    "stem": "If 5 # 3 = 16 and 7 # 4 = 33, what is 9 # 5?",
+    "options": [
+      "46",
+      "56",
+      "64",
+      "106"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "a # b = a² - b²: 25 - 9 = 16 and 49 - 16 = 33, so 81 - 25 = 56. Adding the squares instead gives 106."
+  },
+  {
+    "id": "MPPOLICE-T2-069",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Syllogism",
+    "stem": "Statements: Every member of the team passed the fitness test. Asha is a member of the team. Conclusions: I. Asha passed the fitness test. II. Only team members took the fitness test. Which conclusion follows?",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Asha is a member, so she passed (I). The statements say nothing about who else took the test, so II does not follow."
+  },
+  {
+    "id": "MPPOLICE-T2-070",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppMental",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Calendar",
+    "stem": "26 January 2024 was a Friday. On which day of the week did 26 January 2025 fall?",
+    "options": [
+      "Friday",
+      "Saturday",
+      "Sunday",
+      "Monday"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The year between them includes 29 February 2024, so it has 366 days, 2 odd days. Two days after Friday is Sunday."
+  },
+  {
+    "id": "MPPOLICE-T2-071",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Physics",
+    "stem": "Which colour of white light bends the most when it passes through a prism?",
+    "options": [
+      "Yellow",
+      "Green",
+      "Violet",
+      "Red"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Violet has the shortest wavelength and bends the most; red bends the least, which is why it sits at the top of a rainbow."
+  },
+  {
+    "id": "MPPOLICE-T2-072",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Physics",
+    "stem": "The kilowatt-hour (kWh), shown on electricity bills, is a unit of:",
+    "options": [
+      "Current",
+      "Power",
+      "Energy",
+      "Voltage"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "One kilowatt-hour is the energy used by a 1 kW appliance in one hour, 3.6 million joules; it is the 'unit' on an electricity bill. Power is measured in watts."
+  },
+  {
+    "id": "MPPOLICE-T2-073",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Physics",
+    "stem": "\"A body at rest stays at rest unless a force acts on it\" is a statement of Newton's:",
+    "options": [
+      "Third law",
+      "Law of gravitation",
+      "Second law",
+      "First law"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Newton's first law is the law of inertia. The second law gives F = ma, and the third says every action has an equal and opposite reaction."
+  },
+  {
+    "id": "MPPOLICE-T2-074",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Physics",
+    "stem": "When light passes from air into glass, it:",
+    "options": [
+      "Goes straight through",
+      "Bends away from the normal",
+      "Bends towards the normal",
+      "Is fully reflected"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Light slows down in the denser glass and bends towards the normal. Going from glass into air it bends away from it."
+  },
+  {
+    "id": "MPPOLICE-T2-075",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Physics",
+    "stem": "Which device turns chemical energy into electrical energy?",
+    "options": [
+      "Battery",
+      "Transformer",
+      "Generator",
+      "Motor"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A battery (electric cell) turns chemical energy into electrical energy. A generator turns mechanical energy into electricity and a motor does the reverse."
+  },
+  {
+    "id": "MPPOLICE-T2-076",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Chemistry",
+    "stem": "Which metal is the best conductor of electricity?",
+    "options": [
+      "Silver",
+      "Copper",
+      "Iron",
+      "Aluminium"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Silver conducts electricity best of all metals. Copper is a close second and is used for wiring because it is far cheaper."
+  },
+  {
+    "id": "MPPOLICE-T2-077",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Chemistry",
+    "stem": "Which noble gas glows red-orange in advertising signs?",
+    "options": [
+      "Krypton",
+      "Argon",
+      "Helium",
+      "Neon"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Neon glows red-orange when electricity passes through it. Argon is used to fill ordinary bulbs."
+  },
+  {
+    "id": "MPPOLICE-T2-078",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Chemistry",
+    "stem": "Which gas is combined with hydrogen to make ammonia in the Haber process?",
+    "options": [
+      "Chlorine",
+      "Oxygen",
+      "Nitrogen",
+      "Carbon dioxide"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "In the Haber process nitrogen and hydrogen combine over an iron catalyst to make ammonia (NH₃), which is used to make fertilisers."
+  },
+  {
+    "id": "MPPOLICE-T2-079",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Chemistry",
+    "stem": "What is the valency of carbon?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Carbon has 4 electrons in its outer shell and shares them to form 4 bonds, as in methane, CH₄."
+  },
+  {
+    "id": "MPPOLICE-T2-080",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Biology",
+    "stem": "Which part of the human brain is the centre of thinking, memory and intelligence?",
+    "options": [
+      "Cerebellum",
+      "Medulla",
+      "Cerebrum",
+      "Hypothalamus"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The cerebrum, the largest part of the brain, handles thinking, memory, speech and voluntary actions. The cerebellum keeps balance and the medulla controls breathing and heartbeat."
+  },
+  {
+    "id": "MPPOLICE-T2-081",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Biology",
+    "stem": "Which blood vessels carry blood away from the heart?",
+    "options": [
+      "Lymph vessels",
+      "Arteries",
+      "Veins",
+      "Capillaries"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Arteries carry blood away from the heart, veins bring it back, and capillaries link the two in the tissues."
+  },
+  {
+    "id": "MPPOLICE-T2-082",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Health",
+    "stem": "Dengue spreads through the bite of which mosquito?",
+    "options": [
+      "Sandfly",
+      "Anopheles",
+      "Aedes",
+      "Culex"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Aedes mosquitoes, which bite by day and breed in clean standing water, spread dengue and chikungunya. Kala-azar spreads through sandflies."
+  },
+  {
+    "id": "MPPOLICE-T2-083",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Health",
+    "stem": "Which vitamin does the human skin make when it is exposed to sunlight?",
+    "options": [
+      "Vitamin K",
+      "Vitamin D",
+      "Vitamin A",
+      "Vitamin C"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Sunlight on the skin makes vitamin D, which helps the body take in calcium for strong bones. Too little of it causes rickets in children."
+  },
+  {
+    "id": "MPPOLICE-T2-084",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Biology",
+    "stem": "Which organs remove urea from the blood?",
+    "options": [
+      "Liver",
+      "Heart",
+      "Lungs",
+      "Kidneys"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The kidneys filter urea out of the blood into urine. The liver makes urea but does not remove it from the body."
+  },
+  {
+    "id": "MPPOLICE-T2-085",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Biology",
+    "stem": "Which plant tissue carries water from the roots to the leaves?",
+    "options": [
+      "Phloem",
+      "Epidermis",
+      "Xylem",
+      "Cambium"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Xylem carries water and minerals upwards. Phloem carries the food made in the leaves to other parts."
+  },
+  {
+    "id": "MPPOLICE-T2-086",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Percentage",
+    "stem": "What is 35% of 640?",
+    "options": [
+      "214",
+      "224",
+      "234",
+      "244"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "10% of 640 is 64, so 30% is 192 and 5% is 32. 192 + 32 = 224."
+  },
+  {
+    "id": "MPPOLICE-T2-087",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Profit and loss",
+    "stem": "An article bought for ₹1,250 is sold for ₹1,100. What is the loss percent?",
+    "options": [
+      "10%",
+      "12%",
+      "13.6%",
+      "15%"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Loss = ₹150 and 150 ÷ 1,250 × 100 = 12%. Dividing by the selling price instead gives about 13.6%, a common mistake."
+  },
+  {
+    "id": "MPPOLICE-T2-088",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Simple interest",
+    "stem": "A sum amounts to ₹7,360 in 3 years at 5% a year simple interest. What is the sum?",
+    "options": [
+      "₹5,888",
+      "₹6,000",
+      "₹6,256",
+      "₹6,400"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "In 3 years at 5% the sum grows by 15%, so 1.15 × sum = 7,360 and the sum is ₹6,400. Taking 15% off 7,360 gives ₹6,256, a common mistake."
+  },
+  {
+    "id": "MPPOLICE-T2-089",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Average",
+    "stem": "The average age of 5 constables is 28 years. A sixth joins and the average becomes 29. How old is the sixth constable?",
+    "options": [
+      "29",
+      "30",
+      "33",
+      "34"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "New total 6 × 29 = 174; old total 5 × 28 = 140. The new constable is 174 - 140 = 34."
+  },
+  {
+    "id": "MPPOLICE-T2-090",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ratio",
+    "stem": "The ratio of boys to girls in a school is 5 : 4, and there are 180 students. How many are girls?",
+    "options": [
+      "80",
+      "90",
+      "100",
+      "120"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "180 ÷ 9 parts = 20 a part. Girls = 4 × 20 = 80."
+  },
+  {
+    "id": "MPPOLICE-T2-091",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Time and work",
+    "stem": "6 workers finish a job in 20 days. How many days will 15 workers take?",
+    "options": [
+      "8",
+      "10",
+      "12",
+      "50"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The job is 6 × 20 = 120 worker-days. 120 ÷ 15 = 8 days. More workers means fewer days, so 50 cannot be right."
+  },
+  {
+    "id": "MPPOLICE-T2-092",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Speed",
+    "stem": "A train 300 m long runs at 54 km/h. How long does it take to pass a pole?",
+    "options": [
+      "15 s",
+      "18 s",
+      "20 s",
+      "25 s"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "54 km/h = 54 × 5/18 = 15 m/s. To pass a pole it covers its own length: 300 ÷ 15 = 20 s."
+  },
+  {
+    "id": "MPPOLICE-T2-093",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Fractions",
+    "stem": "What is 3/4 + 5/8 - 1/2?",
+    "options": [
+      "7/8",
+      "5/8",
+      "3/4",
+      "11/8"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "In eighths: 6/8 + 5/8 - 4/8 = 7/8."
+  },
+  {
+    "id": "MPPOLICE-T2-094",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Mensuration",
+    "stem": "What is the area of a circle of radius 42 cm? (Take π = 22/7.)",
+    "options": [
+      "264 cm²",
+      "1386 cm²",
+      "2772 cm²",
+      "5544 cm²"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Area = πr² = 22/7 × 42 × 42 = 5544 cm². 264 cm is the circumference, 2772 cm² the area of a semicircle and 1386 cm² the area for radius 21."
+  },
+  {
+    "id": "MPPOLICE-T2-095",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Partnership",
+    "stem": "A invests ₹20,000 and B invests ₹30,000 for the same period. Out of a profit of ₹10,000, what is A's share?",
+    "options": [
+      "₹4,000",
+      "₹5,000",
+      "₹6,000",
+      "₹7,500"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Profit is shared 20,000 : 30,000 = 2 : 3. A gets 2/5 of 10,000 = ₹4,000."
+  },
+  {
+    "id": "MPPOLICE-T2-096",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cube roots",
+    "stem": "What is the cube root of 4913?",
+    "options": [
+      "11",
+      "13",
+      "15",
+      "17"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "17 × 17 × 17 = 4913. A cube ending in 3 has a root ending in 7, and 4913 lies between 16³ = 4096 and 18³ = 5832."
+  },
+  {
+    "id": "MPPOLICE-T2-097",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppArith",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Percentage",
+    "stem": "A student needs 40% to pass. She scores 180 marks and fails by 20 marks. What are the maximum marks?",
+    "options": [
+      "400",
+      "440",
+      "450",
+      "500"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Pass marks = 180 + 20 = 200, which is 40% of the total. 200 ÷ 0.4 = 500."
+  },
+  {
+    "id": "MPPOLICE-T2-098",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppArith",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Speed",
+    "stem": "Ramesh drives to a town at 40 km/h and back by the same road at 24 km/h. What is his average speed for the whole trip?",
+    "options": [
+      "30 km/h",
+      "32 km/h",
+      "34 km/h",
+      "36 km/h"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "For equal distances, average speed = 2 × 40 × 24 ÷ (40 + 24) = 1,920 ÷ 64 = 30 km/h, not the simple average of 32."
+  },
+  {
+    "id": "MPPOLICE-T2-099",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Probability",
+    "stem": "A bag has 8 white and 3 black balls. One ball is drawn at random. What is the probability that it is black?",
+    "options": [
+      "8/11",
+      "3/8",
+      "3/11",
+      "1/3"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "There are 11 balls and 3 are black, so 3/11. 3/8 compares black with white instead of with all the balls."
+  },
+  {
+    "id": "MPPOLICE-T2-100",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "mppArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Algebra",
+    "stem": "If x + y = 10 and x - y = 4, what is xy?",
+    "options": [
+      "21",
+      "24",
+      "25",
+      "40"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Adding gives 2x = 14, so x = 7 and y = 3. xy = 21."
+  },
+  {
+    "id": "MPPOLICE-D-001",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "mppIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "History",
+    "stem": "The Elephanta Caves near Mumbai are dedicated mainly to which god?",
+    "options": [
+      "Vishnu",
+      "Mahavira",
+      "Shiva",
+      "Buddha"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Elephanta caves hold the great three-headed Shiva (Sadashiva) sculpture and are a UNESCO World Heritage Site."
+  },
+  {
+    "id": "MPPOLICE-D-002",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "mppState",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Economy",
+    "stem": "Which town in Madhya Pradesh has the Bank Note Press that prints currency notes?",
+    "options": [
+      "Dewas",
+      "Narmadapuram",
+      "Nashik",
+      "Indore"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Bank Note Press is at Dewas. Narmadapuram (Hoshangabad) has the Security Paper Mill, and Nashik in Maharashtra has another currency press."
+  },
+  {
+    "id": "MPPOLICE-D-003",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "mppComputer",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "MS Office",
+    "stem": "Which function key opens Help in most Windows programs?",
+    "options": [
+      "F5",
+      "F1",
+      "F12",
+      "F2"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "F1 opens Help. F2 renames a selected file and F5 refreshes the window."
+  },
+  {
+    "id": "MPPOLICE-D-004",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "mppIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Geography",
+    "stem": "The Gandhi Sagar Dam in Mandsaur district is built on which river?",
+    "options": [
+      "Son",
+      "Narmada",
+      "Betwa",
+      "Chambal"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Gandhi Sagar is the first of the Chambal valley dams, in Mandsaur district of Madhya Pradesh. Indira Sagar is on the Narmada."
+  },
+  {
+    "id": "MPPOLICE-D-005",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "mppState",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "History",
+    "stem": "From which town on the Narmada did Devi Ahilyabai Holkar rule?",
+    "options": [
+      "Mhow",
+      "Dewas",
+      "Maheshwar",
+      "Indore"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Ahilyabai Holkar ruled the Holkar state from Maheshwar, where she built ghats and temples. Indore later became the Holkar capital."
+  },
+  {
+    "id": "MPPOLICE-D-006",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "mppComputer",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Memory",
+    "stem": "Which of these is a secondary storage device?",
+    "options": [
+      "Register",
+      "Cache",
+      "RAM",
+      "Hard disk"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A hard disk stores data permanently. RAM, cache and registers are primary memory inside or close to the processor."
+  },
+  {
+    "id": "MPPOLICE-D-007",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "mppIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Polity",
+    "stem": "Which Amendment made education a Fundamental Right through Article 21A?",
+    "options": [
+      "42nd",
+      "61st",
+      "74th",
+      "86th"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The 86th Amendment of 2002 added Article 21A, free and compulsory education for children aged 6 to 14."
+  },
+  {
+    "id": "MPPOLICE-D-008",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "mppState",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Economy",
+    "stem": "Panna district is famous for mining which mineral?",
+    "options": [
+      "Copper",
+      "Manganese",
+      "Diamonds",
+      "Bauxite"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Panna has India's only large mechanised diamond mine, at Majhgawan. Malanjkhand in Balaghat is known for copper."
+  },
+  {
+    "id": "MPPOLICE-D-009",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "mppComputer",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Internet",
+    "stem": "What does PDF stand for?",
+    "options": [
+      "Printed Data File",
+      "Portable Document Format",
+      "Public Document Form",
+      "Page Display Format"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "PDF, the Portable Document Format, keeps a document's layout the same on every device."
+  },
+  {
+    "id": "MPPOLICE-D-010",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "mppIndia",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sports",
+    "stem": "Who was the first Indian woman to win an Olympic medal?",
+    "options": [
+      "P. V. Sindhu",
+      "Saina Nehwal",
+      "Mary Kom",
+      "Karnam Malleswari"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Karnam Malleswari won bronze in weightlifting at Sydney in 2000. Saina Nehwal and Mary Kom won bronze in 2012."
+  },
+  {
+    "id": "MPPOLICE-D-011",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "mppState",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Culture",
+    "stem": "Which festival of the Bhil tribe is held in the week before Holi?",
+    "options": [
+      "Hareli",
+      "Madai",
+      "Karma",
+      "Bhagoria"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Bhagoria is held in the weekly haats of Jhabua, Alirajpur and nearby districts before Holi. Hareli is a farming festival of Chhattisgarh."
+  },
+  {
+    "id": "MPPOLICE-D-012",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "mppComputer",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Basics",
+    "stem": "Which number system does a computer use internally?",
+    "options": [
+      "Octal",
+      "Binary",
+      "Roman",
+      "Decimal"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Computers store and process everything in binary, using only the digits 0 and 1."
+  },
+  {
+    "id": "MPPOLICE-D-013",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "mppVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Classification",
+    "stem": "Find the odd one out: Mango, Banana, Potato, Guava",
+    "options": [
+      "Mango",
+      "Banana",
+      "Potato",
+      "Guava"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Mango, banana and guava are fruits. The potato is a vegetable, a stem tuber."
+  },
+  {
+    "id": "MPPOLICE-D-014",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "mppVerbal",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "Find the next number: 200, 198, 192, 182, ?",
+    "options": [
+      "164",
+      "166",
+      "168",
+      "170"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The numbers fall by 2, 6 and 10, the gaps growing by 4. Next comes 14: 182 - 14 = 168."
+  },
+  {
+    "id": "MPPOLICE-D-015",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "mppVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Analogy",
+    "stem": "Painter : Brush :: Woodcutter : ?",
+    "options": [
+      "Forest",
+      "Log",
+      "Axe",
+      "Tree"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A painter works with a brush and a woodcutter works with an axe. The pair is worker and tool; the tree and log are what he works on."
+  },
+  {
+    "id": "MPPOLICE-D-016",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "mppVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Letter series",
+    "stem": "Find the next letter: C, H, M, R, ?",
+    "options": [
+      "W",
+      "X",
+      "U",
+      "V"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Each letter is five places after the last: R is the 18th letter, and 18 + 5 = 23, which is W."
+  },
+  {
+    "id": "MPPOLICE-D-017",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "mppLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Directions",
+    "stem": "Ajay walks 5 km south, 6 km east and then 5 km north. Where is he now from his starting point?",
+    "options": [
+      "6 km east",
+      "11 km south",
+      "6 km west",
+      "16 km east"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The 5 km south and 5 km north cancel, leaving him 6 km east of the start."
+  },
+  {
+    "id": "MPPOLICE-D-018",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "mppMental",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Coding-decoding",
+    "stem": "If MOTHER is coded as NPUIFS, how is SISTER coded?",
+    "options": [
+      "RHRSDQ",
+      "TJTUFS",
+      "TJSUFS",
+      "TJTUES"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Each letter moves one place forward: S to T, I to J, S to T, T to U, E to F, R to S."
+  },
+  {
+    "id": "MPPOLICE-D-019",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "mppLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Syllogism",
+    "stem": "Statements: No stone is a flower. Some flowers are red. Conclusions: I. Some red things are not stones. II. No stone is red. Which conclusion follows?",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The red flowers are not stones, so some red things are not stones (I). A stone could still be red, so II does not follow."
+  },
+  {
+    "id": "MPPOLICE-D-020",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "mppMental",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Clock",
+    "stem": "Through how many degrees does the hour hand of a clock turn in 3 hours 20 minutes?",
+    "options": [
+      "90°",
+      "100°",
+      "110°",
+      "200°"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The hour hand turns 30° an hour, which is half a degree a minute. In 200 minutes it turns 200 × 0.5 = 100°."
+  },
+  {
+    "id": "MPPOLICE-D-021",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "mppLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Blood relations",
+    "stem": "Meena is the sister of Sanjay's father. How is Meena related to Sanjay?",
+    "options": [
+      "Cousin",
+      "Sister",
+      "Paternal aunt",
+      "Maternal aunt"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The father's sister is the paternal aunt (bua). The mother's sister would be the maternal aunt (mausi)."
+  },
+  {
+    "id": "MPPOLICE-D-022",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "mppMental",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Alphabet",
+    "stem": "How many vowels are there between D and P in the English alphabet?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Between D and P lie E, I and O: three vowels."
+  },
+  {
+    "id": "MPPOLICE-D-023",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "mppLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ranking",
+    "stem": "In a row of 25 boys, Mohan is 10th from the right. What is his position from the left?",
+    "options": [
+      "14th",
+      "15th",
+      "16th",
+      "17th"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Position from the left = 25 - 10 + 1 = 16th."
+  },
+  {
+    "id": "MPPOLICE-D-024",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "mppMental",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mathematical operations",
+    "stem": "If - means + and + means -, what is 20 - 5 + 3?",
+    "options": [
+      "12",
+      "18",
+      "22",
+      "28"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Rewrite it as 20 + 5 - 3 = 22."
+  },
+  {
+    "id": "MPPOLICE-D-025",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "mppScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Physics",
+    "stem": "Which of these is a scalar quantity?",
+    "options": [
+      "Force",
+      "Velocity",
+      "Speed",
+      "Acceleration"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Speed has only size. Velocity, force and acceleration also have a direction, so they are vectors."
+  },
+  {
+    "id": "MPPOLICE-D-026",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "mppScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Chemistry",
+    "stem": "Which acid is found in curd?",
+    "options": [
+      "Citric acid",
+      "Lactic acid",
+      "Acetic acid",
+      "Oxalic acid"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Bacteria turn the sugar in milk into lactic acid, which sets curd. Vinegar has acetic acid."
+  },
+  {
+    "id": "MPPOLICE-D-027",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "mppScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Biology",
+    "stem": "Which cell organelle is called the 'suicide bag' of the cell?",
+    "options": [
+      "Ribosome",
+      "Golgi body",
+      "Lysosome",
+      "Centrosome"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Lysosomes hold digestive enzymes that break down worn-out parts, and can burst to digest the cell itself. Ribosomes make proteins."
+  },
+  {
+    "id": "MPPOLICE-D-028",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "mppScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Physics",
+    "stem": "What is the power of a convex lens with a focal length of 20 cm?",
+    "options": [
+      "+0.2 D",
+      "+5 D",
+      "+2 D",
+      "+20 D"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Power = 1 ÷ focal length in metres = 1 ÷ 0.2 = +5 dioptres. Using 20 instead of 0.2 is the common mistake."
+  },
+  {
+    "id": "MPPOLICE-D-029",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "mppArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Discount",
+    "stem": "Two successive discounts of 20% and 5% equal a single discount of:",
+    "options": [
+      "22%",
+      "23%",
+      "24%",
+      "25%"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "After 20% off, 80 remains; 5% off that leaves 76. So the total discount is 100 - 76 = 24%, not 25%."
+  },
+  {
+    "id": "MPPOLICE-D-030",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "mppArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "HCF and LCM",
+    "stem": "What is the LCM of 12, 15 and 20?",
+    "options": [
+      "60",
+      "120",
+      "180",
+      "240"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "12 = 2² × 3, 15 = 3 × 5, 20 = 2² × 5. LCM = 2² × 3 × 5 = 60."
+  },
+  {
+    "id": "MPPOLICE-D-031",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "mppArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Speed",
+    "stem": "Convert 126 km/h into metres per second.",
+    "options": [
+      "30 m/s",
+      "35 m/s",
+      "40 m/s",
+      "45 m/s"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Multiply by 5/18: 126 × 5 ÷ 18 = 35 m/s."
+  },
+  {
+    "id": "MPPOLICE-D-032",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "mppArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Mensuration",
+    "stem": "What is the perimeter of a rectangle 17 m long and 11 m wide?",
+    "options": [
+      "28 m",
+      "56 m",
+      "112 m",
+      "187 m"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Perimeter = 2 × (17 + 11) = 56 m. 187 m² would be its area."
+  }
+]

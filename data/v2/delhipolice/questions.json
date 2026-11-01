@@ -1,0 +1,4991 @@
+[
+  {
+    "id": "DELHIPOLICE-T1-001",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Delhi Sultanate",
+    "stem": "Which Sultan built the Alai Darwaza, the gateway beside the Qutub Minar?",
+    "options": [
+      "Iltutmish",
+      "Ghiyas-ud-din Balban",
+      "Alauddin Khalji",
+      "Firoz Shah Tughlaq"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Alauddin Khalji built the Alai Darwaza in 1311, an early Indian building with true arches. He also founded Siri, the second city of Delhi."
+  },
+  {
+    "id": "DELHIPOLICE-T1-002",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Chemistry in daily life",
+    "stem": "Which gas is filled in ordinary filament bulbs so that the filament lasts longer?",
+    "options": [
+      "Argon",
+      "Oxygen",
+      "Chlorine",
+      "Hydrogen"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An inert gas such as argon stops the hot tungsten filament from burning up. Oxygen would make it burn out at once."
+  },
+  {
+    "id": "DELHIPOLICE-T1-003",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipolicePolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Delhi and the Constitution",
+    "stem": "Delhi was given the special status of the National Capital Territory by which constitutional amendment?",
+    "options": [
+      "42nd Amendment",
+      "44th Amendment",
+      "61st Amendment",
+      "69th Amendment"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The Constitution (Sixty-ninth Amendment) Act, 1991 inserted Articles 239AA and 239AB, giving Delhi a Legislative Assembly and a Council of Ministers."
+  },
+  {
+    "id": "DELHIPOLICE-T1-004",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Rivers",
+    "stem": "Delhi stands on the banks of which river?",
+    "options": [
+      "Chambal",
+      "Ganga",
+      "Sutlej",
+      "Yamuna"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Yamuna flows through Delhi from north to south-east. It rises at Yamunotri and joins the Ganga at Prayagraj."
+  },
+  {
+    "id": "DELHIPOLICE-T1-005",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Delhi Sultanate",
+    "stem": "Which Sultan of Delhi issued copper and brass coins as token currency to be used at the value of silver?",
+    "options": [
+      "Muhammad bin Tughlaq",
+      "Firoz Shah Tughlaq",
+      "Alauddin Khalji",
+      "Sikandar Lodi"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Muhammad bin Tughlaq's token currency failed because the coins were easy to forge. He is also known for shifting the capital to Daulatabad."
+  },
+  {
+    "id": "DELHIPOLICE-T1-006",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Physics units",
+    "stem": "What is the SI unit of work and energy?",
+    "options": [
+      "Pascal",
+      "Watt",
+      "Newton",
+      "Joule"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Work and energy are measured in joules: one joule is a force of one newton moving through one metre. The watt measures power."
+  },
+  {
+    "id": "DELHIPOLICE-T1-007",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipolicePolity",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Delhi and the Constitution",
+    "stem": "Under Article 239AA, which subjects are outside the law-making powers of the Delhi Legislative Assembly?",
+    "options": [
+      "Police, public order and land",
+      "Markets, trade and shops",
+      "Water, power and transport",
+      "Health, schools and hospitals"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Article 239AA(3)(a) keeps public order, police and land with the Union. That is why Delhi Police works under the Union Ministry of Home Affairs."
+  },
+  {
+    "id": "DELHIPOLICE-T1-008",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Physical features",
+    "stem": "The Delhi Ridge is the northern end of which mountain range?",
+    "options": [
+      "Vindhya",
+      "Satpura",
+      "Aravalli",
+      "Shivalik"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Aravallis run from Gujarat through Rajasthan and Haryana, ending as the Ridge in Delhi. They are among the oldest fold mountains in the world."
+  },
+  {
+    "id": "DELHIPOLICE-T1-009",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mughal period",
+    "stem": "At the Battle of Chausa in 1539, the Mughal emperor Humayun was defeated by whom?",
+    "options": [
+      "Rana Sanga",
+      "Hemu",
+      "Sher Shah Suri",
+      "Ibrahim Lodi"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Sher Shah Suri defeated Humayun at Chausa in 1539 and again at Kannauj in 1540, and ruled from Delhi until 1545. Humayun won Delhi back only in 1555."
+  },
+  {
+    "id": "DELHIPOLICE-T1-010",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Human body",
+    "stem": "Who discovered the ABO blood groups?",
+    "options": [
+      "Robert Koch",
+      "Edward Jenner",
+      "Louis Pasteur",
+      "Karl Landsteiner"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Karl Landsteiner described the A, B and O groups in 1901. Jenner made the smallpox vaccine and Koch found the tuberculosis bacterium."
+  },
+  {
+    "id": "DELHIPOLICE-T1-011",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipolicePolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Delhi and the Constitution",
+    "stem": "How many seats does the Legislative Assembly of Delhi have?",
+    "options": [
+      "50",
+      "60",
+      "64",
+      "70"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The Government of National Capital Territory of Delhi Act, 1991, under Article 239AA, fixes the Assembly at 70 seats, all filled by direct election."
+  },
+  {
+    "id": "DELHIPOLICE-T1-012",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Neighbours",
+    "stem": "Which of these Indian states does NOT share a border with Bhutan?",
+    "options": [
+      "Sikkim",
+      "Assam",
+      "Meghalaya",
+      "Arunachal Pradesh"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Bhutan borders Sikkim, West Bengal, Assam and Arunachal Pradesh. Meghalaya borders Bangladesh, not Bhutan."
+  },
+  {
+    "id": "DELHIPOLICE-T1-013",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Delhi history",
+    "stem": "Who built the fort of Tughlaqabad in Delhi?",
+    "options": [
+      "Alauddin Khalji",
+      "Ghiyas-ud-din Tughlaq",
+      "Firoz Shah Tughlaq",
+      "Muhammad bin Tughlaq"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Ghiyas-ud-din Tughlaq, founder of the Tughlaq dynasty, built Tughlaqabad in the 1320s, the third city of Delhi."
+  },
+  {
+    "id": "DELHIPOLICE-T1-014",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electricity",
+    "stem": "An electric fuse works on which effect of electric current?",
+    "options": [
+      "Chemical effect",
+      "Magnetic effect",
+      "Heating effect",
+      "Lighting effect"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A fuse wire has a low melting point. Too much current heats it until it melts and breaks the circuit, protecting the wiring."
+  },
+  {
+    "id": "DELHIPOLICE-T1-015",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipolicePolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Directive Principles",
+    "stem": "Which Article directs the State to separate the judiciary from the executive in its public services?",
+    "options": [
+      "Article 51",
+      "Article 50",
+      "Article 44",
+      "Article 48"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Article 50 is a Directive Principle on separating the judiciary from the executive. Article 44 is the uniform civil code and Article 51 international peace and security."
+  },
+  {
+    "id": "DELHIPOLICE-T1-016",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Neighbours",
+    "stem": "Mount Everest stands on the border between Nepal and which region?",
+    "options": [
+      "Sikkim (India)",
+      "Tibet (China)",
+      "Gilgit-Baltistan",
+      "Bhutan"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Everest (Sagarmatha in Nepal, Chomolungma in Tibet) lies on the Nepal-Tibet border. Kangchenjunga, the third highest, is on the Nepal-Sikkim border."
+  },
+  {
+    "id": "DELHIPOLICE-T1-017",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Delhi Sultanate",
+    "stem": "Whose tomb, built by his son Ibrahim Lodi, stands in Delhi's Lodi Garden?",
+    "options": [
+      "Sikandar Lodi",
+      "Khizr Khan",
+      "Daulat Khan Lodi",
+      "Bahlul Lodi"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Ibrahim Lodi built the octagonal tomb of his father Sikandar Lodi around 1517 to 1518. Sikandar Lodi also founded the city of Agra in 1504."
+  },
+  {
+    "id": "DELHIPOLICE-T1-018",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Human body",
+    "stem": "What is the normal temperature of the human body in degrees Celsius?",
+    "options": [
+      "About 35",
+      "About 37",
+      "About 39",
+      "About 41"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Normal body temperature is about 37 degrees Celsius, or 98.6 degrees Fahrenheit. Above about 38 degrees is a fever."
+  },
+  {
+    "id": "DELHIPOLICE-T1-019",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipolicePolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Delhi and the Constitution",
+    "stem": "Delhi is a member of which Zonal Council?",
+    "options": [
+      "Eastern Zonal Council",
+      "Western Zonal Council",
+      "Northern Zonal Council",
+      "Central Zonal Council"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Under the States Reorganisation Act, 1956, Delhi is in the Northern Zonal Council with Haryana, Himachal Pradesh, Punjab, Rajasthan, Chandigarh, Jammu and Kashmir and Ladakh."
+  },
+  {
+    "id": "DELHIPOLICE-T1-020",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "States",
+    "stem": "Which is the smallest state of India by area?",
+    "options": [
+      "Goa",
+      "Sikkim",
+      "Tripura",
+      "Manipur"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Goa, at about 3,700 square kilometres, is the smallest state. Sikkim is second smallest and the least populous."
+  },
+  {
+    "id": "DELHIPOLICE-T1-021",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Modern India",
+    "stem": "At the Delhi Durbar of which year was the shift of the capital from Calcutta to Delhi announced?",
+    "options": [
+      "1857",
+      "1877",
+      "1905",
+      "1911"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "King George V announced the move at the Delhi Durbar of December 1911. New Delhi was formally inaugurated as the capital in 1931. The 1877 Durbar proclaimed Queen Victoria Empress of India."
+  },
+  {
+    "id": "DELHIPOLICE-T1-022",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Chemistry in daily life",
+    "stem": "Which acid is used in the batteries of cars and inverters?",
+    "options": [
+      "Sulphuric acid",
+      "Acetic acid",
+      "Nitric acid",
+      "Hydrochloric acid"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Lead-acid batteries use dilute sulphuric acid. Hydrochloric acid is made in the stomach and acetic acid is in vinegar."
+  },
+  {
+    "id": "DELHIPOLICE-T1-023",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipolicePolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Parliament",
+    "stem": "What is the maximum strength of the Rajya Sabha allowed by the Constitution?",
+    "options": [
+      "238",
+      "240",
+      "245",
+      "250"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Article 80 allows up to 250 members: 238 from the states and union territories and 12 nominated by the President. It has 245 members at present."
+  },
+  {
+    "id": "DELHIPOLICE-T1-024",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "States",
+    "stem": "The Siliguri Corridor, often called the 'Chicken's Neck', is in which state?",
+    "options": [
+      "West Bengal",
+      "Assam",
+      "Sikkim",
+      "Bihar"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The narrow Siliguri Corridor in north Bengal links the north-eastern states with the rest of India, between Nepal and Bangladesh."
+  },
+  {
+    "id": "DELHIPOLICE-T1-025",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Delhi history",
+    "stem": "Which architect planned New Delhi together with Herbert Baker?",
+    "options": [
+      "Edwin Lutyens",
+      "Le Corbusier",
+      "Laurie Baker",
+      "Charles Correa"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Edwin Lutyens designed Rashtrapati Bhavan and the central vista, and Herbert Baker the North and South Blocks and Parliament House. Le Corbusier planned Chandigarh."
+  },
+  {
+    "id": "DELHIPOLICE-T1-026",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Instruments",
+    "stem": "Which instrument measures very high temperatures, as in a furnace?",
+    "options": [
+      "Pyrometer",
+      "Thermostat",
+      "Calorimeter",
+      "Barometer"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A pyrometer reads high temperatures from a distance, using the heat radiated. A thermostat keeps a temperature steady."
+  },
+  {
+    "id": "DELHIPOLICE-T1-027",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipolicePolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Delhi and the Constitution",
+    "stem": "Delhi Police works under which Union ministry?",
+    "options": [
+      "Ministry of Personnel",
+      "Ministry of Home Affairs",
+      "Ministry of Law and Justice",
+      "Ministry of Defence"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Police and public order in Delhi are Union subjects under Article 239AA, so Delhi Police reports through the Lieutenant Governor to the Ministry of Home Affairs."
+  },
+  {
+    "id": "DELHIPOLICE-T1-028",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Lakes",
+    "stem": "Sambhar Lake, India's largest inland salt lake, is in which state?",
+    "options": [
+      "Rajasthan",
+      "Gujarat",
+      "Haryana",
+      "Madhya Pradesh"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Sambhar Lake, near Jaipur, has supplied salt for centuries and draws flamingos in winter."
+  },
+  {
+    "id": "DELHIPOLICE-T1-029",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Art and culture",
+    "stem": "Chhau, a masked dance on UNESCO's intangible heritage list, is performed in Odisha, Jharkhand and which other state?",
+    "options": [
+      "Chhattisgarh",
+      "Bihar",
+      "Assam",
+      "West Bengal"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Chhau has three styles: Mayurbhanj in Odisha, Seraikela in Jharkhand and Purulia in West Bengal. UNESCO inscribed it in 2010."
+  },
+  {
+    "id": "DELHIPOLICE-T1-030",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Human body",
+    "stem": "In a cataract operation, which part of the eye is replaced?",
+    "options": [
+      "The retina",
+      "The iris",
+      "The lens",
+      "The cornea"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A cataract clouds the eye's natural lens, which surgeons replace with a clear artificial lens. A cornea is replaced only in a corneal transplant."
+  },
+  {
+    "id": "DELHIPOLICE-T1-031",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipolicePolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Economy",
+    "stem": "In which year was the Reserve Bank of India nationalised?",
+    "options": [
+      "1935",
+      "1949",
+      "1955",
+      "1969"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The RBI began work in 1935 as a shareholders' bank and was nationalised on 1 January 1949. 1955 is when the State Bank of India was formed and 1969 when 14 large banks were nationalised."
+  },
+  {
+    "id": "DELHIPOLICE-T1-032",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Soils and crops",
+    "stem": "Which type of soil covers the largest area of India?",
+    "options": [
+      "Alluvial soil",
+      "Red soil",
+      "Laterite soil",
+      "Black soil"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Alluvial soil, laid down by rivers, covers the northern plains and the deltas, about two-fifths of the country."
+  },
+  {
+    "id": "DELHIPOLICE-T1-033",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Art and culture",
+    "stem": "The Ambubachi Mela is held every year at which temple?",
+    "options": [
+      "Meenakshi Temple",
+      "Somnath Temple",
+      "Jagannath Temple",
+      "Kamakhya Temple"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Ambubachi Mela is held each June at the Kamakhya Temple on Nilachal Hill in Guwahati, Assam."
+  },
+  {
+    "id": "DELHIPOLICE-T1-034",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Indian space research",
+    "stem": "Which Indian rocket first placed an Indian satellite, Rohini, in orbit in 1980?",
+    "options": [
+      "SLV-3",
+      "PSLV",
+      "GSLV",
+      "ASLV"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "SLV-3, led by A. P. J. Abdul Kalam, launched Rohini from Sriharikota on 18 July 1980. ASLV, PSLV and GSLV came later."
+  },
+  {
+    "id": "DELHIPOLICE-T1-035",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipolicePolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Writs",
+    "stem": "Which writ asks a person to show by what authority he holds a public office?",
+    "options": [
+      "Habeas corpus",
+      "Certiorari",
+      "Quo warranto",
+      "Mandamus"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Quo warranto means 'by what warrant'. Mandamus orders an official to do a duty, habeas corpus frees a person held unlawfully and certiorari quashes a lower court's order."
+  },
+  {
+    "id": "DELHIPOLICE-T1-036",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Passes",
+    "stem": "The Rohtang Pass, on the road from Manali to Lahaul, is in which state?",
+    "options": [
+      "Himachal Pradesh",
+      "Uttarakhand",
+      "Sikkim",
+      "Arunachal Pradesh"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Rohtang Pass in the Pir Panjal range links the Kullu valley with Lahaul and Spiti in Himachal Pradesh."
+  },
+  {
+    "id": "DELHIPOLICE-T1-037",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Delhi Sultanate",
+    "stem": "Who founded the Sayyid dynasty of the Delhi Sultanate in 1414?",
+    "options": [
+      "Khizr Khan",
+      "Alauddin Alam Shah",
+      "Mubarak Shah",
+      "Bahlul Lodi"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Khizr Khan, Timur's governor of Multan, took Delhi in 1414. His son Mubarak Shah followed him, and Alam Shah, the last Sayyid, gave way to Bahlul Lodi in 1451."
+  },
+  {
+    "id": "DELHIPOLICE-T1-038",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Indian space research",
+    "stem": "In 2023, Chandrayaan-3's lander Vikram touched down in which region of the Moon?",
+    "options": [
+      "On the lunar equator",
+      "On the far side",
+      "Near the south pole",
+      "Near the north pole"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Vikram landed near the lunar south pole on 23 August 2023, making India the first country to land there. The day is now National Space Day."
+  },
+  {
+    "id": "DELHIPOLICE-T1-039",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipolicePolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Delhi and the Constitution",
+    "stem": "Under Article 239AA, the Council of Ministers of Delhi is collectively responsible to whom?",
+    "options": [
+      "The Lok Sabha",
+      "The Union Home Ministry",
+      "The Lieutenant Governor",
+      "The Legislative Assembly"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Article 239AA(6) makes the Council of Ministers, headed by the Chief Minister, collectively responsible to the Legislative Assembly, as a state government is to its assembly."
+  },
+  {
+    "id": "DELHIPOLICE-T1-040",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Neighbours",
+    "stem": "Naypyidaw is the capital of which neighbouring country of India?",
+    "options": [
+      "Bhutan",
+      "Nepal",
+      "Myanmar",
+      "Bangladesh"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Myanmar moved its capital from Yangon to Naypyidaw in 2005. Myanmar borders Arunachal Pradesh, Nagaland, Manipur and Mizoram."
+  },
+  {
+    "id": "DELHIPOLICE-T1-041",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sports",
+    "stem": "The Duleep Trophy is a domestic championship in which sport?",
+    "options": [
+      "Golf",
+      "Hockey",
+      "Football",
+      "Cricket"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Duleep Trophy is a first-class cricket competition, named after the cricketer K. S. Duleepsinhji."
+  },
+  {
+    "id": "DELHIPOLICE-T1-042",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Human body",
+    "stem": "Where in the human body are red blood cells made?",
+    "options": [
+      "Heart",
+      "Liver",
+      "Spleen",
+      "Bone marrow"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Red blood cells are made in the red bone marrow of bones such as the ribs, spine and pelvis. Old red cells are broken down in the spleen and liver."
+  },
+  {
+    "id": "DELHIPOLICE-T1-043",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipolicePolity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Elections",
+    "stem": "Which body conducts elections to Parliament and the state legislatures?",
+    "options": [
+      "Ministry of Home Affairs",
+      "Election Commission of India",
+      "Union Public Service Commission",
+      "Supreme Court of India"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Article 324 vests the conduct of these elections, and of the President and Vice-President, in the Election Commission of India."
+  },
+  {
+    "id": "DELHIPOLICE-T1-044",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Climate",
+    "stem": "Which weather systems bring winter rain to Delhi and north-west India?",
+    "options": [
+      "Tropical cyclones",
+      "Western disturbances",
+      "Loo winds",
+      "North-east monsoon"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Western disturbances are storms from the Mediterranean region that bring winter rain to the plains and snow to the hills. The loo is a hot, dry summer wind."
+  },
+  {
+    "id": "DELHIPOLICE-T1-045",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceHistory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sports",
+    "stem": "How many players of each team are on the court at a time in basketball?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "9"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "A basketball team has five players on court. Unlimited substitutions are allowed during stoppages."
+  },
+  {
+    "id": "DELHIPOLICE-T1-046",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Chemistry in daily life",
+    "stem": "Which gas is given off when zinc reacts with dilute hydrochloric acid?",
+    "options": [
+      "Chlorine",
+      "Carbon dioxide",
+      "Oxygen",
+      "Hydrogen"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Zinc displaces hydrogen from the acid, forming zinc chloride and hydrogen gas, which burns with a pop."
+  },
+  {
+    "id": "DELHIPOLICE-T1-047",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipolicePolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Constitutional bodies",
+    "stem": "In which year was the Lokpal and Lokayuktas Act passed?",
+    "options": [
+      "2005",
+      "2009",
+      "2011",
+      "2013"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Parliament passed the Lokpal and Lokayuktas Act in December 2013, after the anti-corruption movement of 2011. 2005 is the year of the RTI Act."
+  },
+  {
+    "id": "DELHIPOLICE-T1-048",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Islands",
+    "stem": "Indira Point, the southernmost point of India, is on which island?",
+    "options": [
+      "Great Nicobar",
+      "Car Nicobar",
+      "Minicoy",
+      "Little Andaman"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Indira Point is at the southern tip of Great Nicobar in the Andaman and Nicobar Islands. Minicoy is in Lakshadweep."
+  },
+  {
+    "id": "DELHIPOLICE-T1-049",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sports",
+    "stem": "The Beighton Cup, first played in Kolkata in 1895, is a tournament in which sport?",
+    "options": [
+      "Football",
+      "Cricket",
+      "Badminton",
+      "Hockey"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Beighton Cup is one of the oldest field hockey tournaments in the world, run in Kolkata since 1895."
+  },
+  {
+    "id": "DELHIPOLICE-T1-050",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Light",
+    "stem": "Which type of mirror is used in a solar cooker to focus sunlight?",
+    "options": [
+      "Plane mirror",
+      "Cylindrical mirror",
+      "Concave mirror",
+      "Convex mirror"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A concave mirror converges sunlight to a focus, heating the cooking pot. Convex mirrors spread light out."
+  },
+  {
+    "id": "DELHIPOLICE-T1-051",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number analogy",
+    "stem": "Select the number that completes the analogy.\n\n8 : 512 :: 11 : ?",
+    "options": [
+      "121",
+      "1210",
+      "1221",
+      "1331"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "512 is the cube of 8, so the answer is the cube of 11: 11 x 11 x 11 = 1331. 121 is only the square."
+  },
+  {
+    "id": "DELHIPOLICE-T1-052",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Blood relations",
+    "stem": "Rahul has no brothers. Pointing to a girl, he says, \"Her mother is my mother's only daughter-in-law.\" How is the girl related to Rahul?",
+    "options": [
+      "Cousin",
+      "Niece",
+      "Sister",
+      "Daughter"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Rahul has no brothers, so his mother's only daughter-in-law is Rahul's wife. The girl is the daughter of Rahul's wife, so she is Rahul's daughter."
+  },
+  {
+    "id": "DELHIPOLICE-T1-053",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Word analogy",
+    "stem": "Select the word that completes the analogy.\n\nSculptor : Statue :: Weaver : ?",
+    "options": [
+      "Loom",
+      "Tailor",
+      "Thread",
+      "Cloth"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A sculptor makes a statue; a weaver makes cloth. The loom is the weaver's tool and thread is the raw material."
+  },
+  {
+    "id": "DELHIPOLICE-T1-054",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Directions",
+    "stem": "Rohit faces east. He turns 90 degrees anticlockwise and then 225 degrees clockwise. Which direction does he face now?",
+    "options": [
+      "North-east",
+      "North-west",
+      "South-east",
+      "South-west"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A 90 degree anticlockwise turn from east faces north. Turning 225 degrees clockwise from north passes east (90) and south (180) and stops 45 degrees further on, at south-west."
+  },
+  {
+    "id": "DELHIPOLICE-T1-055",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Odd one out",
+    "stem": "Select the number that does not belong with the others.\n\n9, 25, 49, 63",
+    "options": [
+      "9",
+      "25",
+      "49",
+      "63"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "9, 25 and 49 are squares of the odd numbers 3, 5 and 7. 63 is not a perfect square."
+  },
+  {
+    "id": "DELHIPOLICE-T1-056",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Directions",
+    "stem": "A constable walks 9 km south and then 12 km west. How far is he from his starting point in a straight line?",
+    "options": [
+      "3 km",
+      "9 km",
+      "12 km",
+      "15 km"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The two walks are at right angles, so the distance is the square root of 9 x 9 + 12 x 12 = 225, which is 15 km."
+  },
+  {
+    "id": "DELHIPOLICE-T1-057",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Odd one out",
+    "stem": "Select the word that does not belong with the others.",
+    "options": [
+      "Rose",
+      "Mango",
+      "Lotus",
+      "Jasmine"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Rose, lotus and jasmine are flowers; mango is a fruit."
+  },
+  {
+    "id": "DELHIPOLICE-T1-058",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ranking",
+    "stem": "Amit is 9th from the top and 21st from the bottom in his class. How many students are in the class?",
+    "options": [
+      "29",
+      "30",
+      "31",
+      "32"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Total = 9 + 21 - 1 = 29. Amit is counted in both positions, so one is subtracted."
+  },
+  {
+    "id": "DELHIPOLICE-T1-059",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "Select the number that comes next in the series.\n\n4, 9, 19, 39, ?",
+    "options": [
+      "59",
+      "69",
+      "78",
+      "79"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Each term is double the previous term plus 1: 4 x 2 + 1 = 9, 9 x 2 + 1 = 19, 19 x 2 + 1 = 39, 39 x 2 + 1 = 79."
+  },
+  {
+    "id": "DELHIPOLICE-T1-060",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Calendar",
+    "stem": "15 August 2024 was a Thursday. What day of the week was 15 August 2025?",
+    "options": [
+      "Friday",
+      "Thursday",
+      "Wednesday",
+      "Saturday"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Between the two dates there are 365 days (no 29 February falls in between), which is 52 weeks and 1 day. So the day moves one forward, to Friday."
+  },
+  {
+    "id": "DELHIPOLICE-T1-061",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Letter series",
+    "stem": "Select the letter that comes next in the series.\n\nA, C, F, J, ?",
+    "options": [
+      "P",
+      "M",
+      "O",
+      "N"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The gaps grow by one each time: A +2 = C, +3 = F, +4 = J, +5 = O."
+  },
+  {
+    "id": "DELHIPOLICE-T1-062",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Clocks",
+    "stem": "What is the angle between the hour hand and the minute hand of a clock at 7:20?",
+    "options": [
+      "80 degrees",
+      "100 degrees",
+      "110 degrees",
+      "120 degrees"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The minute hand is at 20 x 6 = 120 degrees. The hour hand is at 7 x 30 + 20 x 0.5 = 220 degrees. The angle is 220 - 120 = 100 degrees."
+  },
+  {
+    "id": "DELHIPOLICE-T1-063",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Coding-decoding",
+    "stem": "In a certain code, ARREST is written as CTTGUV. How is GUARD written in that code?",
+    "options": [
+      "ESYPB",
+      "HVBSE",
+      "IWCTF",
+      "IWDTF"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Each letter moves two places forward: A to C, R to T and so on. So G, U, A, R, D become I, W, C, T, F. ESYPB moves each letter back instead."
+  },
+  {
+    "id": "DELHIPOLICE-T1-064",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Statements and conclusions",
+    "stem": "Read the statements and decide which conclusion(s) logically follow from them, even if they seem to differ from commonly known facts.\n\nStatements: Some guards are tall. Some tall persons are athletes.\nConclusion I: Some guards are athletes.\nConclusion II: All athletes are tall.",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The tall guards and the tall athletes may be different people, so I does not follow. Only some athletes are known to be tall, so II does not follow either."
+  },
+  {
+    "id": "DELHIPOLICE-T1-065",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Coding-decoding",
+    "stem": "If BAG is coded as 10 by adding the alphabet positions of its letters, what is the code for FIG?",
+    "options": [
+      "22",
+      "23",
+      "24",
+      "26"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "B = 2, A = 1, G = 7 give 10. F = 6, I = 9, G = 7 give 6 + 9 + 7 = 22."
+  },
+  {
+    "id": "DELHIPOLICE-T1-066",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Seating arrangement",
+    "stem": "Five people A, B, C, D and E sit in a row facing north. C is in the middle. A is immediately to the left of C. E is at the right end and B sits next to E. Who sits at the left end?",
+    "options": [
+      "A",
+      "E",
+      "B",
+      "D"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "C is 3rd, A is 2nd, E is 5th and B, next to E, is 4th. The only seat left is 1st, so D is at the left end."
+  },
+  {
+    "id": "DELHIPOLICE-T1-067",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "Select the number that comes next in the series.\n\n1, 3, 7, 13, 21, ?",
+    "options": [
+      "27",
+      "29",
+      "30",
+      "31"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The differences are 2, 4, 6, 8, so the next difference is 10: 21 + 10 = 31."
+  },
+  {
+    "id": "DELHIPOLICE-T1-068",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceLogical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Arithmetical reasoning",
+    "stem": "A parking lot has 30 vehicles, all cars and motorcycles, with 100 wheels in all. How many cars are there?",
+    "options": [
+      "10",
+      "12",
+      "15",
+      "20"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "If c are cars, 4c + 2(30 - c) = 100, so 2c + 60 = 100 and c = 20. There are 10 motorcycles, the trap answer."
+  },
+  {
+    "id": "DELHIPOLICE-T1-069",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Dictionary order",
+    "stem": "Arrange the words in dictionary order. Which word comes third?\n\nPatrol, Parade, Passage, Pardon",
+    "options": [
+      "Pardon",
+      "Parade",
+      "Passage",
+      "Patrol"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "All begin with 'Pa'. The third letters are r, r, s, t, and between Parade and Pardon, 'a' comes before 'd'. The order is Parade, Pardon, Passage, Patrol."
+  },
+  {
+    "id": "DELHIPOLICE-T1-070",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceLogical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Coded relations",
+    "stem": "If 'P + Q' means P is the father of Q and 'P x Q' means P is the sister of Q, what does 'A + B x C' mean?",
+    "options": [
+      "A is the father of C",
+      "A is the uncle of C",
+      "A is the brother of C",
+      "C is the father of A"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A is the father of B, and B is the sister of C, so B and C share a father. A is the father of C."
+  },
+  {
+    "id": "DELHIPOLICE-T1-071",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Letter analogy",
+    "stem": "Select the letter pair that completes the analogy.\n\nCE : GI :: KM : ?",
+    "options": [
+      "NP",
+      "OQ",
+      "PR",
+      "OP"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Each letter moves four places forward: C to G and E to I. So K becomes O and M becomes Q."
+  },
+  {
+    "id": "DELHIPOLICE-T1-072",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ages",
+    "stem": "A father is three times as old as his son. In 10 years he will be twice as old as his son. How old is the son now?",
+    "options": [
+      "10 years",
+      "12 years",
+      "15 years",
+      "20 years"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Let the son be s. Then 3s + 10 = 2(s + 10), so s = 10. The father is 30."
+  },
+  {
+    "id": "DELHIPOLICE-T1-073",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Alphabet position",
+    "stem": "Which letter is 9th to the left of the 20th letter from the left in the English alphabet?",
+    "options": [
+      "K",
+      "L",
+      "J",
+      "C"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The 20th letter is T. Counting 9 to the left gives position 20 - 9 = 11, which is K. L and J come from miscounting by one."
+  },
+  {
+    "id": "DELHIPOLICE-T1-074",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ordering",
+    "stem": "Q is taller than P, R is shorter than P, S is taller than Q and T is shorter than R. Who is the shortest?",
+    "options": [
+      "T",
+      "Q",
+      "P",
+      "R"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "From tallest to shortest the order is S, Q, P, R, T. So T is the shortest."
+  },
+  {
+    "id": "DELHIPOLICE-T1-075",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceVerbal",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Odd one out",
+    "stem": "Select the number pair that does not belong with the others.",
+    "options": [
+      "3 : 9",
+      "6 : 30",
+      "5 : 25",
+      "4 : 16"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In three pairs the second number is the square of the first. 6 squared is 36, not 30."
+  },
+  {
+    "id": "DELHIPOLICE-T1-076",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Percentage",
+    "stem": "What is 16% of 475?",
+    "options": [
+      "76",
+      "82",
+      "86",
+      "96"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "10% of 475 is 47.5 and 6% is 28.5, so 16% is 47.5 + 28.5 = 76."
+  },
+  {
+    "id": "DELHIPOLICE-T1-077",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "LCM and HCF",
+    "stem": "What is the LCM of 14, 21 and 35?",
+    "options": [
+      "7",
+      "35",
+      "105",
+      "210"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "14 = 2 x 7, 21 = 3 x 7 and 35 = 5 x 7. The LCM is 2 x 3 x 5 x 7 = 210. 7 is their HCF."
+  },
+  {
+    "id": "DELHIPOLICE-T1-078",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Decimals",
+    "stem": "Simplify: 2.5 x 0.4 + 1.2",
+    "options": [
+      "1.2",
+      "2.2",
+      "2.4",
+      "3.2"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Multiply first: 2.5 x 0.4 = 1.0. Then 1.0 + 1.2 = 2.2."
+  },
+  {
+    "id": "DELHIPOLICE-T1-079",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Fractions",
+    "stem": "What is 3/5 of 4/9 of 270?",
+    "options": [
+      "72",
+      "80",
+      "90",
+      "120"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "4/9 of 270 is 120, and 3/5 of 120 is 72."
+  },
+  {
+    "id": "DELHIPOLICE-T1-080",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ratio",
+    "stem": "₹2,700 is divided between two people in the ratio 4 : 5. What is the larger share?",
+    "options": [
+      "₹1,200",
+      "₹1,300",
+      "₹1,350",
+      "₹1,500"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "There are 4 + 5 = 9 parts of ₹300 each. The larger share is 5 x 300 = ₹1,500; ₹1,200 is the smaller share."
+  },
+  {
+    "id": "DELHIPOLICE-T1-081",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Averages",
+    "stem": "The average of six numbers is 24. When one number is removed, the average of the rest is 22. What number was removed?",
+    "options": [
+      "22",
+      "24",
+      "30",
+      "34"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The six numbers add up to 6 x 24 = 144 and the five left add up to 5 x 22 = 110. The number removed is 144 - 110 = 34."
+  },
+  {
+    "id": "DELHIPOLICE-T1-082",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Simple interest",
+    "stem": "What is the simple interest on ₹7,500 at 8% per year for 3 years?",
+    "options": [
+      "₹1,800",
+      "₹1,948",
+      "₹2,100",
+      "₹2,400"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Simple interest = 7,500 x 8 x 3 / 100 = ₹1,800. ₹2,400 is for 4 years, and about ₹1,948 is the compound interest."
+  },
+  {
+    "id": "DELHIPOLICE-T1-083",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Compound interest",
+    "stem": "What is the compound interest on ₹8,000 at 5% per year for 2 years, compounded yearly?",
+    "options": [
+      "₹400",
+      "₹800",
+      "₹810",
+      "₹820"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "After one year the amount is 8,400; after two it is 8,820. The interest is ₹820. ₹800 is the simple interest."
+  },
+  {
+    "id": "DELHIPOLICE-T1-084",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Profit and loss",
+    "stem": "A shopkeeper buys a watch for ₹400 and sells it for ₹470. What is his profit percent?",
+    "options": [
+      "7%",
+      "14%",
+      "15%",
+      "17.5%"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Profit = 470 - 400 = 70. Profit percent is on cost price: 70 / 400 x 100 = 17.5%. Dividing by the selling price gives about 15%, the usual slip."
+  },
+  {
+    "id": "DELHIPOLICE-T1-085",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Discount",
+    "stem": "A cooler is marked at ₹4,500 and sold at a discount of 12%. What is its selling price?",
+    "options": [
+      "₹3,900",
+      "₹3,960",
+      "₹4,000",
+      "₹4,040"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "12% of 4,500 is 540, so the selling price is 4,500 - 540 = ₹3,960."
+  },
+  {
+    "id": "DELHIPOLICE-T1-086",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Mensuration",
+    "stem": "What is the perimeter of a rectangular plot 32 m long and 18 m wide?",
+    "options": [
+      "50 m",
+      "100 m",
+      "200 m",
+      "576 m"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Perimeter = 2 x (32 + 18) = 100 m. 576 is the area in square metres and 50 only half the perimeter."
+  },
+  {
+    "id": "DELHIPOLICE-T1-087",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mensuration",
+    "stem": "What is the area of a circle of radius 21 cm? (Take pi = 22/7.)",
+    "options": [
+      "132 sq cm",
+      "693 sq cm",
+      "1386 sq cm",
+      "2772 sq cm"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Area = 22/7 x 21 x 21 = 1,386 square centimetres. 132 cm is the circumference and 693 is half the area."
+  },
+  {
+    "id": "DELHIPOLICE-T1-088",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Speed",
+    "stem": "What is a speed of 72 km/h in metres per second?",
+    "options": [
+      "15 m/s",
+      "18 m/s",
+      "20 m/s",
+      "25 m/s"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Multiply km/h by 5/18 to get m/s: 72 x 5 / 18 = 20 m/s."
+  },
+  {
+    "id": "DELHIPOLICE-T1-089",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Speed",
+    "stem": "A train 240 m long runs at 54 km/h. How long does it take to pass a signal pole?",
+    "options": [
+      "16 seconds",
+      "18 seconds",
+      "20 seconds",
+      "24 seconds"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "54 km/h is 15 m/s. To pass a pole the train covers its own length: 240 / 15 = 16 seconds."
+  },
+  {
+    "id": "DELHIPOLICE-T1-090",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Time and work",
+    "stem": "A can do a piece of work in 21 days and B can do it in 42 days. In how many days can they finish it working together?",
+    "options": [
+      "10.5 days",
+      "14 days",
+      "31.5 days",
+      "63 days"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "In one day they do 1/21 + 1/42 = 3/42 = 1/14 of the work, so together they take 14 days. 31.5 is the average of the two times and 63 their sum."
+  },
+  {
+    "id": "DELHIPOLICE-T1-091",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceComputer",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "MS Word",
+    "stem": "Which keyboard shortcut saves the current document in MS Word?",
+    "options": [
+      "Ctrl + P",
+      "Ctrl + V",
+      "Ctrl + S",
+      "Ctrl + A"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Ctrl + S saves. Ctrl + P prints, Ctrl + V pastes and Ctrl + A selects everything."
+  },
+  {
+    "id": "DELHIPOLICE-T1-092",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceComputer",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "MS Excel",
+    "stem": "In MS Excel, what does the cell address B3 refer to?",
+    "options": [
+      "Column B, row 3",
+      "Sheet B, cell 3",
+      "Page B, line 3",
+      "Row B, column 3"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Excel names a cell by its column letter and then its row number, so B3 is in column B and row 3."
+  },
+  {
+    "id": "DELHIPOLICE-T1-093",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceComputer",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "MS Excel",
+    "stem": "Which formula adds the values in cells A1 to A5 in MS Excel?",
+    "options": [
+      "=TOTAL(A1:A5)",
+      "=ADD(A1:A5)",
+      "=SUM(A1-A5)",
+      "=SUM(A1:A5)"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "SUM adds a range, and a colon marks a range from one cell to another. Excel has no ADD or TOTAL function, and A1-A5 would subtract."
+  },
+  {
+    "id": "DELHIPOLICE-T1-094",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceComputer",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "E-mail",
+    "stem": "In e-mail, what does 'Bcc' stand for?",
+    "options": [
+      "Bulk carbon copy",
+      "Basic carbon copy",
+      "Blind carbon copy",
+      "Blank carbon copy"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "People in the Bcc field get the message, but other recipients cannot see their addresses."
+  },
+  {
+    "id": "DELHIPOLICE-T1-095",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceComputer",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Internet",
+    "stem": "What does HTTP stand for?",
+    "options": [
+      "HighText Transfer Protocol",
+      "HyperLink Transfer Protocol",
+      "HyperText Transmission Process",
+      "HyperText Transfer Protocol"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "HTTP, HyperText Transfer Protocol, is the set of rules a browser uses to fetch web pages from a server."
+  },
+  {
+    "id": "DELHIPOLICE-T1-096",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceComputer",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Internet",
+    "stem": "What is FTP mainly used for?",
+    "options": [
+      "Transferring files",
+      "Browsing web pages",
+      "Video calling",
+      "Sending e-mail"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "FTP, File Transfer Protocol, uploads and downloads files between computers. E-mail is sent with SMTP."
+  },
+  {
+    "id": "DELHIPOLICE-T1-097",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceComputer",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Web browsers",
+    "stem": "Which button in a web browser reloads the current page?",
+    "options": [
+      "Home",
+      "Refresh",
+      "Back",
+      "Bookmark"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Refresh (or F5) loads the page again. Back returns to the previous page and Bookmark saves the address."
+  },
+  {
+    "id": "DELHIPOLICE-T1-098",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceComputer",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Computer fundamentals",
+    "stem": "Which part of a computer is called its brain?",
+    "options": [
+      "RAM",
+      "Monitor",
+      "Hard disk",
+      "CPU"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Central Processing Unit carries out instructions and controls the other parts. RAM is working memory and the hard disk stores data."
+  },
+  {
+    "id": "DELHIPOLICE-T1-099",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceComputer",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Computer fundamentals",
+    "stem": "What is the smallest unit of data in a computer?",
+    "options": [
+      "Kilobyte",
+      "Nibble",
+      "Bit",
+      "Byte"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A bit is a single 0 or 1. Four bits make a nibble and eight bits a byte."
+  },
+  {
+    "id": "DELHIPOLICE-T1-100",
+    "section": "cbe",
+    "test": 1,
+    "module": 1,
+    "domain": "delhipoliceComputer",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Internet safety",
+    "stem": "What is 'phishing'?",
+    "options": [
+      "Blocking pop-up adverts on sites",
+      "Speeding up a slow internet link",
+      "Fake messages that steal logins",
+      "Saving backup copies of files online"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Phishing uses e-mails, SMS or websites that pretend to be a bank or office to trick people into giving passwords, OTPs or card details."
+  },
+  {
+    "id": "DELHIPOLICE-T2-001",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Delhi history",
+    "stem": "Humayun's Tomb in Delhi was commissioned by whom?",
+    "options": [
+      "Mumtaz Mahal",
+      "Bega Begum",
+      "Nur Jahan",
+      "Jahanara Begum"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Humayun's widow Bega Begum (also called Haji Begum) commissioned the tomb in the 1560s. It is the first garden tomb of its kind in India and a UNESCO World Heritage Site."
+  },
+  {
+    "id": "DELHIPOLICE-T2-002",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Physics units",
+    "stem": "One horsepower is equal to about how many watts?",
+    "options": [
+      "500",
+      "746",
+      "1000",
+      "1024"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "One horsepower is about 746 watts, a unit still used for engines and motors."
+  },
+  {
+    "id": "DELHIPOLICE-T2-003",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipolicePolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Delhi and the Constitution",
+    "stem": "Who appoints the Lieutenant Governor of Delhi?",
+    "options": [
+      "The Prime Minister",
+      "The Union Home Minister",
+      "The Chief Minister of Delhi",
+      "The President"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Delhi's Administrator, designated the Lieutenant Governor, is appointed by the President under Article 239."
+  },
+  {
+    "id": "DELHIPOLICE-T2-004",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rivers",
+    "stem": "Which river flows through the city of Hyderabad?",
+    "options": [
+      "Tungabhadra",
+      "Krishna",
+      "Musi",
+      "Godavari"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Hyderabad grew up on the banks of the Musi, a tributary of the Krishna. The Charminar stands near its south bank."
+  },
+  {
+    "id": "DELHIPOLICE-T2-005",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Delhi history",
+    "stem": "Which ruler built the Jantar Mantar observatory in Delhi?",
+    "options": [
+      "Sawai Jai Singh II",
+      "Rana Sanga",
+      "Raja Todar Mal",
+      "Raja Man Singh I"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Maharaja Sawai Jai Singh II of Jaipur built the Delhi Jantar Mantar around 1724, and others at Jaipur, Ujjain, Varanasi and Mathura."
+  },
+  {
+    "id": "DELHIPOLICE-T2-006",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Chemistry in daily life",
+    "stem": "Milk of magnesia, taken for acidity, contains which compound?",
+    "options": [
+      "Calcium chloride",
+      "Magnesium sulphate",
+      "Magnesium hydroxide",
+      "Sodium chloride"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Magnesium hydroxide is a mild base that neutralises extra acid in the stomach. Magnesium sulphate is Epsom salt."
+  },
+  {
+    "id": "DELHIPOLICE-T2-007",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipolicePolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Delhi and the Constitution",
+    "stem": "How many members does the National Capital Territory of Delhi send to the Lok Sabha?",
+    "options": [
+      "3",
+      "5",
+      "7",
+      "10"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Delhi has seven Lok Sabha constituencies under the 2008 delimitation. It has three seats in the Rajya Sabha, a common trap."
+  },
+  {
+    "id": "DELHIPOLICE-T2-008",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Neighbours",
+    "stem": "What is the capital of Nepal?",
+    "options": [
+      "Biratnagar",
+      "Pokhara",
+      "Kathmandu",
+      "Lalitpur"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Kathmandu is Nepal's capital. Nepal borders five Indian states: Uttarakhand, Uttar Pradesh, Bihar, West Bengal and Sikkim."
+  },
+  {
+    "id": "DELHIPOLICE-T2-009",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Freedom struggle",
+    "stem": "Which retired British civil servant helped found the Indian National Congress in 1885?",
+    "options": [
+      "A. O. Hume",
+      "Lord Ripon",
+      "Lord Curzon",
+      "Annie Besant"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Allan Octavian Hume helped organise the first session of the Congress in Bombay in 1885. Annie Besant led the Home Rule League in 1916."
+  },
+  {
+    "id": "DELHIPOLICE-T2-010",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Human body",
+    "stem": "Which gland releases adrenaline in moments of fear or danger?",
+    "options": [
+      "Pituitary gland",
+      "Thyroid gland",
+      "Adrenal gland",
+      "Pineal gland"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The adrenal glands above the kidneys release adrenaline, the 'fight or flight' hormone that speeds up the heart."
+  },
+  {
+    "id": "DELHIPOLICE-T2-011",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipolicePolity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Economy",
+    "stem": "Who is the ex officio chairperson of NITI Aayog?",
+    "options": [
+      "The Finance Minister",
+      "The Vice-President",
+      "The Prime Minister",
+      "The President"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Prime Minister chairs NITI Aayog, the government's policy think tank that replaced the Planning Commission in 2015."
+  },
+  {
+    "id": "DELHIPOLICE-T2-012",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceGeography",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Neighbours",
+    "stem": "How many Indian states share a border with Bangladesh?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "West Bengal, Assam, Meghalaya, Tripura and Mizoram border Bangladesh. West Bengal has the longest stretch."
+  },
+  {
+    "id": "DELHIPOLICE-T2-013",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Modern India",
+    "stem": "At the Battle of Wandiwash in 1760, the British defeated which European rival?",
+    "options": [
+      "The Danes",
+      "The French",
+      "The Portuguese",
+      "The Dutch"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Eyre Coote beat the French under Lally at Wandiwash (Vandavasi) in 1760, ending French hopes of an empire in India. The Dutch were beaten at Bedara in 1759."
+  },
+  {
+    "id": "DELHIPOLICE-T2-014",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sound",
+    "stem": "The pitch of a sound (how high or low it is) depends on its:",
+    "options": [
+      "Amplitude",
+      "Loudness",
+      "Speed",
+      "Frequency"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A higher frequency gives a higher pitch, as in a whistle. Amplitude decides loudness."
+  },
+  {
+    "id": "DELHIPOLICE-T2-015",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipolicePolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Delhi and the Constitution",
+    "stem": "Delhi became a Union Territory in which year, under the States Reorganisation Act?",
+    "options": [
+      "1952",
+      "1956",
+      "1966",
+      "1991"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Delhi was a Part C state with its own assembly from 1952 and became a Union Territory in 1956. The 69th Amendment of 1991 gave it a new assembly."
+  },
+  {
+    "id": "DELHIPOLICE-T2-016",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Physical features",
+    "stem": "Doddabetta, the highest peak of the Nilgiri Hills, is in which state?",
+    "options": [
+      "Karnataka",
+      "Tamil Nadu",
+      "Kerala",
+      "Andhra Pradesh"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Doddabetta, about 2,637 m high, is near Ooty in Tamil Nadu. Anamudi in Kerala is the highest peak of South India."
+  },
+  {
+    "id": "DELHIPOLICE-T2-017",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Delhi Sultanate",
+    "stem": "Which Sultan founded the city of Firozabad, whose ruins are the Feroz Shah Kotla in Delhi?",
+    "options": [
+      "Muhammad bin Tughlaq",
+      "Sikandar Lodi",
+      "Firoz Shah Tughlaq",
+      "Ghiyas-ud-din Tughlaq"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Firoz Shah Tughlaq built Firozabad around 1354 and brought an Ashokan pillar from Topra to stand there. Ghiyas-ud-din founded Tughlaqabad."
+  },
+  {
+    "id": "DELHIPOLICE-T2-018",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Diseases",
+    "stem": "The BCG vaccine protects against which disease?",
+    "options": [
+      "Polio",
+      "Tetanus",
+      "Tuberculosis",
+      "Measles"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "BCG (Bacillus Calmette-Guerin) is given at birth against tuberculosis. Polio drops and the MR vaccine are given separately."
+  },
+  {
+    "id": "DELHIPOLICE-T2-019",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipolicePolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Judiciary",
+    "stem": "In which year was the Delhi High Court established?",
+    "options": [
+      "1950",
+      "1956",
+      "1961",
+      "1966"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The Delhi High Court was set up on 31 October 1966 under the Delhi High Court Act, 1966. Before that, Delhi came under the Punjab High Court."
+  },
+  {
+    "id": "DELHIPOLICE-T2-020",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceGeography",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Islands",
+    "stem": "Which water body separates South Andaman from Little Andaman?",
+    "options": [
+      "Duncan Passage",
+      "Eight Degree Channel",
+      "Ten Degree Channel",
+      "Coco Channel"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Duncan Passage lies between South and Little Andaman. The Ten Degree Channel separates the Andamans from the Nicobars."
+  },
+  {
+    "id": "DELHIPOLICE-T2-021",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Modern India",
+    "stem": "The Vernacular Press Act of 1878, which curbed newspapers in Indian languages, was passed under which Viceroy?",
+    "options": [
+      "Lord Ripon",
+      "Lord Lytton",
+      "Lord Dalhousie",
+      "Lord Curzon"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Lord Lytton's government passed the Act in 1878. Lord Ripon repealed it in 1882."
+  },
+  {
+    "id": "DELHIPOLICE-T2-022",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Acids and bases",
+    "stem": "What is the normal pH of human blood?",
+    "options": [
+      "About 6.4",
+      "About 6.8",
+      "About 7.0",
+      "About 7.4"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Blood is slightly alkaline, held between about 7.35 and 7.45. Pure water is neutral at 7."
+  },
+  {
+    "id": "DELHIPOLICE-T2-023",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipolicePolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Parliament",
+    "stem": "What is the quorum for a sitting of either House of Parliament?",
+    "options": [
+      "Half of all members",
+      "One-tenth of members",
+      "One-fourth of members",
+      "One-third of members"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Article 100 sets the quorum at one-tenth of the total membership of the House, including the presiding officer."
+  },
+  {
+    "id": "DELHIPOLICE-T2-024",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Physical features",
+    "stem": "The Cardamom Hills, at the southern end of the Western Ghats, lie mainly in which state?",
+    "options": [
+      "Goa",
+      "Maharashtra",
+      "Kerala",
+      "Karnataka"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Cardamom Hills run along the Kerala-Tamil Nadu border, mostly in Kerala, and are known for cardamom, pepper and the Periyar Tiger Reserve."
+  },
+  {
+    "id": "DELHIPOLICE-T2-025",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceHistory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Delhi history",
+    "stem": "Which Sikh Guru was executed in Delhi in 1675 and is remembered at Gurudwara Sis Ganj?",
+    "options": [
+      "Guru Arjan Dev",
+      "Guru Gobind Singh",
+      "Guru Tegh Bahadur",
+      "Guru Har Krishan"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Guru Tegh Bahadur, the ninth Guru, was executed in Chandni Chowk on Aurangzeb's orders. Gurudwara Rakab Ganj marks his cremation."
+  },
+  {
+    "id": "DELHIPOLICE-T2-026",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Light",
+    "stem": "The image formed by a plane mirror is:",
+    "options": [
+      "Virtual and inverted",
+      "Real and inverted",
+      "Virtual and erect",
+      "Real and erect"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A plane mirror gives an upright, virtual image the same size as the object and laterally inverted (left and right swapped)."
+  },
+  {
+    "id": "DELHIPOLICE-T2-027",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipolicePolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Parliament",
+    "stem": "Who decides finally whether a bill is a Money Bill?",
+    "options": [
+      "The President",
+      "Speaker of the Lok Sabha",
+      "The Finance Minister",
+      "Chairman of Rajya Sabha"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Under Article 110(3) the Speaker's decision on whether a bill is a Money Bill is final."
+  },
+  {
+    "id": "DELHIPOLICE-T2-028",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Soils and crops",
+    "stem": "Which state is the largest producer of tea in India?",
+    "options": [
+      "Assam",
+      "Kerala",
+      "West Bengal",
+      "Tamil Nadu"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Assam grows about half of India's tea, mainly in the Brahmaputra valley. Darjeeling tea comes from West Bengal."
+  },
+  {
+    "id": "DELHIPOLICE-T2-029",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceHistory",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Freedom struggle",
+    "stem": "At the Congress session in which city was the Quit India resolution passed on 8 August 1942?",
+    "options": [
+      "Bombay",
+      "Allahabad",
+      "Calcutta",
+      "Lahore"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The AICC passed the resolution at Gowalia Tank in Bombay, where Gandhi gave the call 'Do or Die'. August Kranti Maidan is the ground's present name."
+  },
+  {
+    "id": "DELHIPOLICE-T2-030",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Plants",
+    "stem": "Which pigment in leaves traps sunlight for photosynthesis?",
+    "options": [
+      "Haemoglobin",
+      "Keratin",
+      "Chlorophyll",
+      "Melanin"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Chlorophyll in chloroplasts absorbs light energy. Haemoglobin carries oxygen in blood, melanin colours skin and keratin forms hair and nails."
+  },
+  {
+    "id": "DELHIPOLICE-T2-031",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipolicePolity",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Judiciary",
+    "stem": "How can a judge of the Supreme Court be removed from office?",
+    "options": [
+      "By the Chief Justice of India alone",
+      "By the Prime Minister on advice",
+      "By a vote of the Law Commission",
+      "By the President, after Parliament's address"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Under Article 124(4) the President removes a judge only after each House passes an address by a special majority on grounds of proved misbehaviour or incapacity."
+  },
+  {
+    "id": "DELHIPOLICE-T2-032",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Lakes",
+    "stem": "Kolleru Lake, a large freshwater lake in Andhra Pradesh, lies between the deltas of which two rivers?",
+    "options": [
+      "Ganga and Brahmaputra",
+      "Krishna and Kaveri",
+      "Mahanadi and Godavari",
+      "Godavari and Krishna"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Kolleru lies between the Godavari and Krishna deltas and is a bird sanctuary and Ramsar site."
+  },
+  {
+    "id": "DELHIPOLICE-T2-033",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceHistory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Art and culture",
+    "stem": "The Chapchar Kut festival is celebrated in which state?",
+    "options": [
+      "Mizoram",
+      "Sikkim",
+      "Assam",
+      "Manipur"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Chapchar Kut is Mizoram's spring festival, held after the jungle is cleared for jhum farming."
+  },
+  {
+    "id": "DELHIPOLICE-T2-034",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Chemistry in daily life",
+    "stem": "Which gas is given off when baking soda is heated, making cakes rise?",
+    "options": [
+      "Carbon dioxide",
+      "Nitrogen",
+      "Hydrogen",
+      "Oxygen"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Heating sodium hydrogencarbonate gives sodium carbonate, water and carbon dioxide; the gas bubbles make dough rise."
+  },
+  {
+    "id": "DELHIPOLICE-T2-035",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipolicePolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Emergency",
+    "stem": "A national emergency on grounds of war or armed rebellion is declared under which Article?",
+    "options": [
+      "Article 360",
+      "Article 356",
+      "Article 365",
+      "Article 352"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Article 352 covers national emergency. Article 356 is President's rule in a state and Article 360 a financial emergency."
+  },
+  {
+    "id": "DELHIPOLICE-T2-036",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Neighbours",
+    "stem": "Sir Creek, a tidal estuary in the marshes of the Rann of Kachchh, is disputed between India and which country?",
+    "options": [
+      "China",
+      "Nepal",
+      "Pakistan",
+      "Bangladesh"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Sir Creek, about 96 km long, lies between Gujarat and Sindh. India and Pakistan disagree on where the boundary runs in it."
+  },
+  {
+    "id": "DELHIPOLICE-T2-037",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Art and culture",
+    "stem": "Ustad Bismillah Khan is remembered as a master of which musical instrument?",
+    "options": [
+      "Sarod",
+      "Sitar",
+      "Tabla",
+      "Shehnai"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Bismillah Khan of Varanasi made the shehnai a concert instrument and received the Bharat Ratna in 2001."
+  },
+  {
+    "id": "DELHIPOLICE-T2-038",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Space",
+    "stem": "What is the main source of the Sun's energy?",
+    "options": [
+      "Chemical reactions",
+      "Nuclear fusion",
+      "Nuclear fission",
+      "Burning of coal"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In the Sun's core, hydrogen nuclei fuse into helium and release huge energy. Nuclear power stations on Earth use fission instead."
+  },
+  {
+    "id": "DELHIPOLICE-T2-039",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipolicePolity",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Economy",
+    "stem": "Which authority issues the one-rupee note in India?",
+    "options": [
+      "Reserve Bank of India",
+      "Security Printing Press",
+      "State Bank of India",
+      "Ministry of Finance"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The one-rupee note is issued by the Government of India and signed by the Finance Secretary. All other notes are issued by the RBI and signed by its Governor."
+  },
+  {
+    "id": "DELHIPOLICE-T2-040",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Neighbours",
+    "stem": "The Sundarbans delta is shared by India and which country?",
+    "options": [
+      "Sri Lanka",
+      "Bangladesh",
+      "Nepal",
+      "Myanmar"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Sundarbans, the world's largest mangrove forest, lie in the Ganga-Brahmaputra delta in West Bengal and Bangladesh. It is a home of the Bengal tiger."
+  },
+  {
+    "id": "DELHIPOLICE-T2-041",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceHistory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sports",
+    "stem": "The Santosh Trophy is a national championship in which sport?",
+    "options": [
+      "Kabaddi",
+      "Football",
+      "Hockey",
+      "Volleyball"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Santosh Trophy is the national football championship for state teams, first held in 1941."
+  },
+  {
+    "id": "DELHIPOLICE-T2-042",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Indian space research",
+    "stem": "In which year was India's Mars Orbiter Mission (Mangalyaan) launched?",
+    "options": [
+      "2008",
+      "2013",
+      "2016",
+      "2019"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Mangalyaan was launched in November 2013 and reached Mars orbit in September 2014. Chandrayaan-1 went to the Moon in 2008."
+  },
+  {
+    "id": "DELHIPOLICE-T2-043",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipolicePolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Economy",
+    "stem": "In which year was NABARD set up?",
+    "options": [
+      "1982",
+      "1985",
+      "1991",
+      "1995"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The National Bank for Agriculture and Rural Development was set up in July 1982 to finance farming and rural development. 1975 saw the first regional rural banks."
+  },
+  {
+    "id": "DELHIPOLICE-T2-044",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Passes",
+    "stem": "Khardung La, one of the highest motorable passes, is in which region?",
+    "options": [
+      "Himachal Pradesh",
+      "Arunachal Pradesh",
+      "Sikkim",
+      "Ladakh"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Khardung La lies north of Leh in Ladakh and leads to the Nubra valley."
+  },
+  {
+    "id": "DELHIPOLICE-T2-045",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceHistory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sports",
+    "stem": "The term 'bully off' was long used to start play in which sport?",
+    "options": [
+      "Golf",
+      "Rugby",
+      "Polo",
+      "Hockey"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Hockey matches once began with a bully off, two players tapping sticks over the ball. A centre pass is used today."
+  },
+  {
+    "id": "DELHIPOLICE-T2-046",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Nutrition",
+    "stem": "Pellagra is caused by a lack of which vitamin?",
+    "options": [
+      "Vitamin B12",
+      "Vitamin B1 (thiamine)",
+      "Vitamin D",
+      "Vitamin B3 (niacin)"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Lack of niacin causes pellagra, with skin rashes, diarrhoea and confusion. Lack of thiamine causes beriberi and lack of vitamin D causes rickets."
+  },
+  {
+    "id": "DELHIPOLICE-T2-047",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipolicePolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Constitutional bodies",
+    "stem": "The Union Public Service Commission is set up under which Article?",
+    "options": [
+      "Article 315",
+      "Article 324",
+      "Article 280",
+      "Article 148"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Article 315 provides for public service commissions for the Union and the states. Article 280 is the Finance Commission and Article 324 the Election Commission."
+  },
+  {
+    "id": "DELHIPOLICE-T2-048",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rivers",
+    "stem": "The Hogenakkal Falls are on which river?",
+    "options": [
+      "Tungabhadra",
+      "Krishna",
+      "Godavari",
+      "Kaveri"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Hogenakkal Falls are on the Kaveri at the Tamil Nadu-Karnataka border, known for coracle rides."
+  },
+  {
+    "id": "DELHIPOLICE-T2-049",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sports",
+    "stem": "Which Indian city hosted the first Asian Games in 1951?",
+    "options": [
+      "Chennai",
+      "New Delhi",
+      "Mumbai",
+      "Kolkata"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The first Asian Games were held in New Delhi in March 1951. Delhi hosted them again in 1982."
+  },
+  {
+    "id": "DELHIPOLICE-T2-050",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electricity",
+    "stem": "Why is the metal body of an electric iron connected to the earth wire?",
+    "options": [
+      "To reduce the electricity bill each month",
+      "To carry any leakage current safely to the ground",
+      "To keep the supply voltage steady at 220 V",
+      "To make the iron heat up much faster"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "If a live wire touches the metal body, the earth wire carries the current to the ground instead of through the user, so it prevents an electric shock."
+  },
+  {
+    "id": "DELHIPOLICE-T2-051",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number analogy",
+    "stem": "Select the number that completes the analogy.\n\n5 : 24 :: 9 : ?",
+    "options": [
+      "72",
+      "80",
+      "81",
+      "82"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "24 is 5 squared minus 1. So the answer is 9 squared minus 1: 81 - 1 = 80."
+  },
+  {
+    "id": "DELHIPOLICE-T2-052",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Blood relations",
+    "stem": "Pointing to a woman, Vikram said, \"Her father is the only son of my father.\" How is the woman related to Vikram?",
+    "options": [
+      "Niece",
+      "Daughter",
+      "Cousin",
+      "Sister"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The only son of Vikram's father is Vikram himself. So the woman's father is Vikram, and she is his daughter."
+  },
+  {
+    "id": "DELHIPOLICE-T2-053",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Word analogy",
+    "stem": "Select the word that completes the analogy.\n\nNeedle : Sew :: Axe : ?",
+    "options": [
+      "Chop",
+      "Iron",
+      "Sharp",
+      "Wood"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A needle is used to sew; an axe is used to chop. The pair is a tool and its use."
+  },
+  {
+    "id": "DELHIPOLICE-T2-054",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceLogical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Directions",
+    "stem": "At 5 p.m. Meera's shadow falls directly in front of her. Which direction is she facing?",
+    "options": [
+      "North",
+      "West",
+      "South",
+      "East"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "In the evening the sun is in the west, so her shadow falls to the east. If the shadow is in front of her, she is facing east."
+  },
+  {
+    "id": "DELHIPOLICE-T2-055",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Odd one out",
+    "stem": "Select the number that does not belong with the others.\n\n17, 19, 23, 27",
+    "options": [
+      "17",
+      "19",
+      "23",
+      "27"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "17, 19 and 23 are prime numbers. 27 is 3 x 9, so it is not prime."
+  },
+  {
+    "id": "DELHIPOLICE-T2-056",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Directions",
+    "stem": "Arjun walks 10 km north, turns left and walks 4 km, then turns left again and walks 7 km. How far is he from his starting point?",
+    "options": [
+      "5 km",
+      "7 km",
+      "11 km",
+      "21 km"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "He ends 10 - 7 = 3 km north and 4 km west of the start. The straight-line distance is the square root of 9 + 16 = 25, which is 5 km."
+  },
+  {
+    "id": "DELHIPOLICE-T2-057",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Odd one out",
+    "stem": "Select the item that does not belong with the others.",
+    "options": [
+      "Barometer",
+      "Microscope",
+      "Thermometer",
+      "Speedometer"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A thermometer, a barometer and a speedometer measure a quantity. A microscope magnifies small objects."
+  },
+  {
+    "id": "DELHIPOLICE-T2-058",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ranking",
+    "stem": "In a row of 42 students, Kiran is 17th from the right. What is her position from the left?",
+    "options": [
+      "20th",
+      "24th",
+      "25th",
+      "26th"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Position from the left = 42 - 17 + 1 = 26."
+  },
+  {
+    "id": "DELHIPOLICE-T2-059",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "Select the number that comes next in the series.\n\n1, 3, 12, 60, ?",
+    "options": [
+      "120",
+      "240",
+      "300",
+      "360"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The multipliers go up by one: x 3, x 4, x 5, then x 6. 60 x 6 = 360."
+  },
+  {
+    "id": "DELHIPOLICE-T2-060",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Calendar",
+    "stem": "How many odd days are there in a leap year?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "A leap year has 366 days, which is 52 weeks and 2 days. An ordinary year has 1 odd day."
+  },
+  {
+    "id": "DELHIPOLICE-T2-061",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Letter series",
+    "stem": "Select the letter that comes next in the series.\n\nF, H, K, O, ?",
+    "options": [
+      "U",
+      "S",
+      "R",
+      "T"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The gaps grow by one each time: F +2 = H, +3 = K, +4 = O, +5 = T."
+  },
+  {
+    "id": "DELHIPOLICE-T2-062",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceLogical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Clocks",
+    "stem": "How many times in a day are the hour hand and the minute hand of a clock at right angles?",
+    "options": [
+      "22",
+      "24",
+      "44",
+      "48"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Two right angles an hour would give 24 in 12 hours, but the ones at 3 o'clock and 9 o'clock each serve two hours, so there are 22. In 24 hours that is 44."
+  },
+  {
+    "id": "DELHIPOLICE-T2-063",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Coding-decoding",
+    "stem": "In a certain code, DELHI is written as EFMIJ. How is MUMBAI written in that code?",
+    "options": [
+      "NVNBCJ",
+      "LTLAZH",
+      "NUNCBJ",
+      "NVNCBJ"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Each letter moves one place forward. M, U, M, B, A, I become N, V, N, C, B, J."
+  },
+  {
+    "id": "DELHIPOLICE-T2-064",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Statements and conclusions",
+    "stem": "Read the statements and decide which conclusion(s) logically follow from them, even if they seem to differ from commonly known facts.\n\nStatements: All constables are trained. No trained person is careless.\nConclusion I: No constable is careless.\nConclusion II: Some careless persons are constables.",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Every constable is trained, and no trained person is careless, so no constable is careless. I follows and II contradicts it."
+  },
+  {
+    "id": "DELHIPOLICE-T2-065",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Coding-decoding",
+    "stem": "In a certain code, ROAD is written as DAOR. How is GATE written in that code?",
+    "options": [
+      "ETAG",
+      "GTAE",
+      "EATG",
+      "TEGA"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The code writes the word backwards, so GATE becomes ETAG."
+  },
+  {
+    "id": "DELHIPOLICE-T2-066",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Seating arrangement",
+    "stem": "Five boys sit in a row facing north. P is to the left of Q but to the right of R. S is to the right of Q and T is to the left of R. Who sits in the middle?",
+    "options": [
+      "R",
+      "Q",
+      "T",
+      "P"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "From left to right the order is T, R, P, Q, S. The middle seat, the 3rd, is P's."
+  },
+  {
+    "id": "DELHIPOLICE-T2-067",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "Select the number that comes next in the series.\n\n8, 10, 14, 22, 38, ?",
+    "options": [
+      "54",
+      "62",
+      "66",
+      "70"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The differences double each time: 2, 4, 8, 16, so the next is 32: 38 + 32 = 70."
+  },
+  {
+    "id": "DELHIPOLICE-T2-068",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Arithmetical reasoning",
+    "stem": "At the first stop of a bus, half the passengers get off and 10 get on. There are now 35 passengers. How many were on the bus at the start?",
+    "options": [
+      "45",
+      "50",
+      "60",
+      "70"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "If x passengers were on board, x / 2 + 10 = 35, so x / 2 = 25 and x = 50."
+  },
+  {
+    "id": "DELHIPOLICE-T2-069",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceVerbal",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Dictionary order",
+    "stem": "Arrange the words in dictionary order.\n\n1. Warrant  2. Ward  3. Warden  4. Warm",
+    "options": [
+      "3, 2, 4, 1",
+      "2, 4, 3, 1",
+      "2, 3, 1, 4",
+      "2, 3, 4, 1"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Ward comes before Warden because it is shorter with the same start. Then Warm (m) comes before Warrant (r). So: Ward, Warden, Warm, Warrant."
+  },
+  {
+    "id": "DELHIPOLICE-T2-070",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceLogical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Coded relations",
+    "stem": "If 'P # Q' means P is the brother of Q and 'P @ Q' means P is the mother of Q, what does 'X @ Y # Z' mean?",
+    "options": [
+      "X is the aunt of Z",
+      "X is the mother of Z",
+      "X is the sister of Z",
+      "Z is the mother of X"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "X is the mother of Y, and Y is the brother of Z, so Y and Z share a mother. X is the mother of Z."
+  },
+  {
+    "id": "DELHIPOLICE-T2-071",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Word analogy",
+    "stem": "Select the word that completes the analogy.\n\nBird : Flock :: Cow : ?",
+    "options": [
+      "Swarm",
+      "Pride",
+      "Pack",
+      "Herd"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A group of birds is a flock and a group of cows is a herd. Wolves form a pack, bees a swarm and lions a pride."
+  },
+  {
+    "id": "DELHIPOLICE-T2-072",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceLogical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Ages",
+    "stem": "The ages of A and B add up to 60. Six years ago their ages were in the ratio 5 : 3. How old is B now?",
+    "options": [
+      "18 years",
+      "24 years",
+      "30 years",
+      "36 years"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Six years ago their ages added up to 48, split 5 : 3 as 30 and 18. Adding 6 gives A = 36 and B = 24. 18 is B's age six years ago."
+  },
+  {
+    "id": "DELHIPOLICE-T2-073",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Odd one out",
+    "stem": "Select the letter pair that does not belong with the others.",
+    "options": [
+      "CE",
+      "GI",
+      "KM",
+      "PS"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "In CE, GI and KM the second letter is two places after the first. In PS it is three places after."
+  },
+  {
+    "id": "DELHIPOLICE-T2-074",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Arithmetical reasoning",
+    "stem": "In a group, 12 people play cricket, 9 play football and 4 play both. How many play at least one of the two?",
+    "options": [
+      "13",
+      "17",
+      "21",
+      "25"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Players of at least one = 12 + 9 - 4 = 17. Adding 12 and 9 counts the 4 who play both twice."
+  },
+  {
+    "id": "DELHIPOLICE-T2-075",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceVerbal",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Coding-decoding",
+    "stem": "In a certain code, 'sun is hot' is written as 'pa ka ta' and 'hot tea' is written as 'ka ri'. What is the code for 'hot'?",
+    "options": [
+      "ri",
+      "ka",
+      "ta",
+      "pa"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "'hot' is the only word in both sentences, and 'ka' is the only code in both. So 'hot' is 'ka'."
+  },
+  {
+    "id": "DELHIPOLICE-T2-076",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Percentage",
+    "stem": "What is 125% of 96?",
+    "options": [
+      "100",
+      "112",
+      "116",
+      "120"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "125% is 5/4, and 5/4 x 96 = 120."
+  },
+  {
+    "id": "DELHIPOLICE-T2-077",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "LCM and HCF",
+    "stem": "What is the HCF of 90 and 150?",
+    "options": [
+      "15",
+      "30",
+      "45",
+      "450"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "90 = 3 x 30 and 150 = 5 x 30, and 3 and 5 share no factor, so the HCF is 30. 450 is the LCM."
+  },
+  {
+    "id": "DELHIPOLICE-T2-078",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Decimals",
+    "stem": "What is 0.75 + 1/8 as a decimal?",
+    "options": [
+      "0.625",
+      "0.785",
+      "0.825",
+      "0.875"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "1/8 is 0.125, and 0.75 + 0.125 = 0.875."
+  },
+  {
+    "id": "DELHIPOLICE-T2-079",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Fractions",
+    "stem": "Which of these lists the fractions 2/3, 3/4, 5/7 and 7/9 from largest to smallest?",
+    "options": [
+      "7/9, 5/7, 3/4, 2/3",
+      "3/4, 5/7, 7/9, 2/3",
+      "3/4, 7/9, 5/7, 2/3",
+      "7/9, 3/4, 5/7, 2/3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "As decimals: 7/9 = 0.778, 3/4 = 0.75, 5/7 = 0.714 and 2/3 = 0.667. So the order is 7/9, 3/4, 5/7, 2/3."
+  },
+  {
+    "id": "DELHIPOLICE-T2-080",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Percentage",
+    "stem": "The price of an article is raised by 10% and then reduced by 10%. What is the overall change?",
+    "options": [
+      "1% increase",
+      "No change",
+      "2% decrease",
+      "1% decrease"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Starting from 100, a 10% rise gives 110 and a 10% cut gives 99. That is a 1% decrease, because the cut is on the larger amount."
+  },
+  {
+    "id": "DELHIPOLICE-T2-081",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ratio",
+    "stem": "The ages of A and B are in the ratio 3 : 5 and add up to 64 years. How old is B?",
+    "options": [
+      "24 years",
+      "30 years",
+      "32 years",
+      "40 years"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "There are 8 parts of 8 years each. B has 5 parts, 40 years; A has 24."
+  },
+  {
+    "id": "DELHIPOLICE-T2-082",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceArith",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Speed",
+    "stem": "A cyclist goes from a village to a town at 20 km/h and returns along the same road at 30 km/h. What is the average speed for the whole journey?",
+    "options": [
+      "22 km/h",
+      "24 km/h",
+      "25 km/h",
+      "26 km/h"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "For equal distances the average speed is 2 x 20 x 30 / (20 + 30) = 24 km/h, not the simple average of 25."
+  },
+  {
+    "id": "DELHIPOLICE-T2-083",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Simple interest",
+    "stem": "At simple interest, a sum becomes 1.6 times itself in 5 years. What is the rate of interest per year?",
+    "options": [
+      "10%",
+      "12%",
+      "15%",
+      "32%"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The interest is 0.6 times the principal, or 60%, in 5 years, so 60 / 5 = 12% a year. 32% comes from dividing 160 by 5."
+  },
+  {
+    "id": "DELHIPOLICE-T2-084",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceArith",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Compound interest",
+    "stem": "What is the difference between compound and simple interest on ₹4,000 at 5% per year for 2 years?",
+    "options": [
+      "₹5",
+      "₹10",
+      "₹20",
+      "₹40"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "For 2 years the difference is P x (r/100) x (r/100) = 4,000 x 0.05 x 0.05 = ₹10."
+  },
+  {
+    "id": "DELHIPOLICE-T2-085",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Profit and loss",
+    "stem": "A cycle bought for ₹750 is sold at a loss of 8%. What is its selling price?",
+    "options": [
+      "₹682",
+      "₹690",
+      "₹700",
+      "₹710"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "8% of 750 is 60, so the selling price is 750 - 60 = ₹690."
+  },
+  {
+    "id": "DELHIPOLICE-T2-086",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceArith",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Discount",
+    "stem": "What single discount is equal to two successive discounts of 25% and 8%?",
+    "options": [
+      "30%",
+      "31%",
+      "32%",
+      "33%"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "After 25% off, 75 remains; 8% of 75 is 6, which leaves 69. The total discount is 100 - 69 = 31%, less than 33% because the second cut is on a smaller price."
+  },
+  {
+    "id": "DELHIPOLICE-T2-087",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Mensuration",
+    "stem": "The area of a square field is 324 sq m. What is its perimeter?",
+    "options": [
+      "36 m",
+      "54 m",
+      "64 m",
+      "72 m"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The side is the square root of 324, which is 18 m. The perimeter is 4 x 18 = 72 m."
+  },
+  {
+    "id": "DELHIPOLICE-T2-088",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mensuration",
+    "stem": "What is the volume of a box 10 cm long, 8 cm wide and 5 cm high?",
+    "options": [
+      "200 cubic cm",
+      "230 cubic cm",
+      "340 cubic cm",
+      "400 cubic cm"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Volume = 10 x 8 x 5 = 400 cubic centimetres. 340 is its total surface area in square centimetres."
+  },
+  {
+    "id": "DELHIPOLICE-T2-089",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Speed",
+    "stem": "A car covers 180 km in 2 hours 30 minutes. What is its speed?",
+    "options": [
+      "70 km/h",
+      "72 km/h",
+      "75 km/h",
+      "90 km/h"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "2 hours 30 minutes is 2.5 hours, and 180 / 2.5 = 72 km/h. 90 km/h comes from dividing by 2."
+  },
+  {
+    "id": "DELHIPOLICE-T2-090",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Time and work",
+    "stem": "8 men can finish a job in 21 days. In how many days can 12 men finish it?",
+    "options": [
+      "14 days",
+      "15 days",
+      "18 days",
+      "21 days"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The job needs 8 x 21 = 168 man-days, and 168 / 12 = 14 days."
+  },
+  {
+    "id": "DELHIPOLICE-T2-091",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceComputer",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "MS Word",
+    "stem": "In MS Word, which key runs the spelling and grammar check?",
+    "options": [
+      "F1",
+      "F7",
+      "F5",
+      "F12"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "F7 starts the spelling and grammar check. F1 opens Help and F12 opens Save As."
+  },
+  {
+    "id": "DELHIPOLICE-T2-092",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceComputer",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "MS Word",
+    "stem": "Which text alignment lines text up evenly along both the left and the right margins?",
+    "options": [
+      "Right",
+      "Justify",
+      "Left",
+      "Center"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Justify adds space between words so every full line meets both margins, as in newspapers."
+  },
+  {
+    "id": "DELHIPOLICE-T2-093",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceComputer",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "MS Excel",
+    "stem": "What is an MS Excel file, which can hold several worksheets, called?",
+    "options": [
+      "Notebook",
+      "Folder",
+      "Database",
+      "Workbook"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An Excel file is a workbook, and each tab in it is a worksheet. New workbooks open with one or more blank sheets."
+  },
+  {
+    "id": "DELHIPOLICE-T2-094",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceComputer",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "MS Excel",
+    "stem": "Which MS Excel function returns the largest value in a range of cells?",
+    "options": [
+      "MAX",
+      "COUNT",
+      "SUM",
+      "AVERAGE"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "MAX returns the largest value and MIN the smallest. COUNT counts cells that hold numbers."
+  },
+  {
+    "id": "DELHIPOLICE-T2-095",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceComputer",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "MS Excel",
+    "stem": "In an MS Excel worksheet, how are the rows labelled?",
+    "options": [
+      "By letters",
+      "By colours",
+      "By numbers",
+      "By symbols"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Rows are numbered 1, 2, 3 and so on, while columns are lettered A, B, C."
+  },
+  {
+    "id": "DELHIPOLICE-T2-096",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceComputer",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Internet",
+    "stem": "In the web address https://www.example.com/page, which part is the domain name?",
+    "options": [
+      "https",
+      "/page",
+      "www.example.com",
+      "example/page"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The domain name identifies the website. https is the protocol, and /page is the path to one page on the site."
+  },
+  {
+    "id": "DELHIPOLICE-T2-097",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceComputer",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "E-mail",
+    "stem": "Which of these is a web-based e-mail service?",
+    "options": [
+      "Google Maps",
+      "Gmail",
+      "Google Drive",
+      "Google Translate"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Gmail sends and receives e-mail in a browser or app. Google Drive stores files and Maps gives directions."
+  },
+  {
+    "id": "DELHIPOLICE-T2-098",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceComputer",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "E-mail",
+    "stem": "In e-mail, what is an 'attachment'?",
+    "options": [
+      "A file sent with the e-mail",
+      "The e-mail's subject line",
+      "A folder for deleted mail",
+      "A list of saved contacts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An attachment is a file, such as a photo or PDF, sent along with an e-mail message."
+  },
+  {
+    "id": "DELHIPOLICE-T2-099",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceComputer",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "E-banking",
+    "stem": "In online banking, what does OTP stand for?",
+    "options": [
+      "Only Token Pass",
+      "Open Trust Protocol",
+      "Online Transfer Pin",
+      "One Time Password"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An OTP is a code sent to your phone or e-mail that works for one login or payment only. It should never be shared with anyone."
+  },
+  {
+    "id": "DELHIPOLICE-T2-100",
+    "section": "cbe",
+    "test": 2,
+    "module": 1,
+    "domain": "delhipoliceComputer",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Video conferencing",
+    "stem": "Which device is needed to show your face to others in a video conference?",
+    "options": [
+      "Webcam",
+      "Plotter",
+      "Scanner",
+      "Printer"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A webcam captures live video. A scanner copies documents, and printers and plotters produce paper output."
+  },
+  {
+    "id": "DELHIPOLICE-D-001",
+    "section": "cbe",
+    "test": 0,
+    "module": 1,
+    "domain": "delhipoliceHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Art and culture",
+    "stem": "Who composed the Sanskrit poem Gita Govinda?",
+    "options": [
+      "Tulsidas",
+      "Kalidasa",
+      "Surdas",
+      "Jayadeva"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Jayadeva, a 12th-century poet from Odisha, wrote the Gita Govinda about Radha and Krishna. It is sung in Odissi dance."
+  },
+  {
+    "id": "DELHIPOLICE-D-002",
+    "section": "cbe",
+    "test": 0,
+    "module": 1,
+    "domain": "delhipolicePolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Schedules",
+    "stem": "Defence and foreign affairs are subjects in which list of the Seventh Schedule?",
+    "options": [
+      "State List",
+      "Concurrent List",
+      "Residuary List",
+      "Union List"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Only Parliament can make laws on Union List subjects such as defence, foreign affairs and railways. Police and public order are in the State List."
+  },
+  {
+    "id": "DELHIPOLICE-D-003",
+    "section": "cbe",
+    "test": 0,
+    "module": 1,
+    "domain": "delhipoliceGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rivers",
+    "stem": "The Teesta river flows through Sikkim and which other Indian state before entering Bangladesh?",
+    "options": [
+      "West Bengal",
+      "Bihar",
+      "Assam",
+      "Meghalaya"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Teesta rises in north Sikkim, flows through north Bengal and joins the Brahmaputra (Jamuna) in Bangladesh."
+  },
+  {
+    "id": "DELHIPOLICE-D-004",
+    "section": "cbe",
+    "test": 0,
+    "module": 1,
+    "domain": "delhipoliceScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Air and gases",
+    "stem": "Which gas is given from cylinders to patients who have difficulty breathing?",
+    "options": [
+      "Carbon dioxide",
+      "Hydrogen",
+      "Nitrogen",
+      "Oxygen"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Hospitals give oxygen from cylinders or pipelines to patients whose lungs cannot take in enough from ordinary air."
+  },
+  {
+    "id": "DELHIPOLICE-D-005",
+    "section": "cbe",
+    "test": 0,
+    "module": 1,
+    "domain": "delhipoliceHistory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Art and culture",
+    "stem": "Pandit Shivkumar Sharma was a maestro of which instrument?",
+    "options": [
+      "Sitar",
+      "Flute",
+      "Santoor",
+      "Sarangi"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Shivkumar Sharma made the santoor, a hammered string instrument from Kashmir, a classical concert instrument."
+  },
+  {
+    "id": "DELHIPOLICE-D-006",
+    "section": "cbe",
+    "test": 0,
+    "module": 1,
+    "domain": "delhipolicePolity",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Delhi and the Constitution",
+    "stem": "Under Article 239AB, what can the President do if the administration of Delhi cannot be carried on under Article 239AA?",
+    "options": [
+      "Merge Delhi with a neighbouring state",
+      "Suspend the working of Article 239AA",
+      "Declare a financial emergency in Delhi",
+      "Dissolve the Lok Sabha and call elections"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Article 239AB lets the President, on the Lieutenant Governor's report or otherwise, suspend the operation of Article 239AA or any of its provisions, much like President's rule in a state."
+  },
+  {
+    "id": "DELHIPOLICE-D-007",
+    "section": "cbe",
+    "test": 0,
+    "module": 1,
+    "domain": "delhipoliceGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Soils and crops",
+    "stem": "Laterite soil forms mainly under which conditions?",
+    "options": [
+      "Low rain and cold winters",
+      "Heavy rain and high heat",
+      "Dry heat and strong winds",
+      "Snow and long frosts"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Heavy rain washes silica and lime out of the soil in hot regions, leaving iron and aluminium. Laterite is found in the Western Ghats, Odisha and the north-east."
+  },
+  {
+    "id": "DELHIPOLICE-D-008",
+    "section": "cbe",
+    "test": 0,
+    "module": 1,
+    "domain": "delhipoliceScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sound",
+    "stem": "What is the usual range of hearing for a healthy young person?",
+    "options": [
+      "200 Hz to 200,000 Hz",
+      "2 Hz to 2,000 Hz",
+      "20 Hz to 2,000 Hz",
+      "20 Hz to 20,000 Hz"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Humans hear about 20 to 20,000 hertz. Sound above that is ultrasound, used in medical scans; below it is infrasound."
+  },
+  {
+    "id": "DELHIPOLICE-D-009",
+    "section": "cbe",
+    "test": 0,
+    "module": 1,
+    "domain": "delhipoliceHistory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Art and culture",
+    "stem": "Warli painting is a tribal art form of which state?",
+    "options": [
+      "Andhra Pradesh",
+      "Maharashtra",
+      "Odisha",
+      "Bihar"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Warli people of the Sahyadri foothills in Maharashtra paint with white on mud walls. Madhubani is from Bihar, Pattachitra from Odisha and Kalamkari from Andhra Pradesh."
+  },
+  {
+    "id": "DELHIPOLICE-D-010",
+    "section": "cbe",
+    "test": 0,
+    "module": 1,
+    "domain": "delhipolicePolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Emergency",
+    "stem": "Which Part of the Constitution contains the emergency provisions?",
+    "options": [
+      "Part XVI",
+      "Part XVIII",
+      "Part XV",
+      "Part XX"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Part XVIII (Articles 352 to 360) covers national, state and financial emergencies. Part XV is elections and Part XX amendment of the Constitution."
+  },
+  {
+    "id": "DELHIPOLICE-D-011",
+    "section": "cbe",
+    "test": 0,
+    "module": 1,
+    "domain": "delhipoliceGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Lakes",
+    "stem": "Pangong Tso, a high-altitude brackish lake, is shared between Ladakh and which country's territory?",
+    "options": [
+      "Nepal",
+      "Pakistan",
+      "Bhutan",
+      "China"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Pangong Tso is about 134 km long. Roughly 40% of it lies in Ladakh and the rest in Tibet, China. Its water is brackish."
+  },
+  {
+    "id": "DELHIPOLICE-D-012",
+    "section": "cbe",
+    "test": 0,
+    "module": 1,
+    "domain": "delhipoliceScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Diseases",
+    "stem": "Filariasis (elephantiasis) is spread mainly by which mosquito in India?",
+    "options": [
+      "Culex",
+      "Mansonia",
+      "Aedes",
+      "Anopheles"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "In India most filariasis is carried by the Culex mosquito, which breeds in dirty standing water. Anopheles spreads malaria and Aedes spreads dengue."
+  },
+  {
+    "id": "DELHIPOLICE-D-013",
+    "section": "cbe",
+    "test": 0,
+    "module": 1,
+    "domain": "delhipoliceHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Freedom struggle",
+    "stem": "Who was a founder of the Ghadar Party, set up in 1913 on the Pacific coast of North America?",
+    "options": [
+      "Bhagat Singh",
+      "Madan Lal Dhingra",
+      "Udham Singh",
+      "Lala Har Dayal"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Lala Har Dayal founded the Ghadar Party with Sohan Singh Bhakna and others among Indian migrants in the United States and Canada. Bhagat Singh was born in 1907."
+  },
+  {
+    "id": "DELHIPOLICE-D-014",
+    "section": "cbe",
+    "test": 0,
+    "module": 1,
+    "domain": "delhipolicePolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Economy",
+    "stem": "Which body decides the repo rate in India?",
+    "options": [
+      "Securities and Exchange Board",
+      "Reserve Bank of India",
+      "Ministry of Finance",
+      "NITI Aayog"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The repo rate, at which the RBI lends to banks, is set by the RBI's Monetary Policy Committee. SEBI regulates the securities market."
+  },
+  {
+    "id": "DELHIPOLICE-D-015",
+    "section": "cbe",
+    "test": 0,
+    "module": 1,
+    "domain": "delhipoliceGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "States",
+    "stem": "Delhi shares its borders with which two states?",
+    "options": [
+      "Haryana and Uttar Pradesh",
+      "Punjab and Rajasthan",
+      "Uttar Pradesh and Rajasthan",
+      "Haryana and Punjab"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Delhi is bordered by Haryana on three sides and Uttar Pradesh on the east, across the Yamuna."
+  },
+  {
+    "id": "DELHIPOLICE-D-016",
+    "section": "cbe",
+    "test": 0,
+    "module": 1,
+    "domain": "delhipoliceScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electricity",
+    "stem": "Which part in an electric iron keeps its temperature steady?",
+    "options": [
+      "Fuse",
+      "Thermostat",
+      "Transformer",
+      "Rheostat"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A thermostat switches the heating element off when the set temperature is reached and on again when it cools."
+  },
+  {
+    "id": "DELHIPOLICE-D-017",
+    "section": "cbe",
+    "test": 0,
+    "module": 1,
+    "domain": "delhipoliceVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number analogy",
+    "stem": "Select the number that completes the analogy.\n\n9 : 72 :: 11 : ?",
+    "options": [
+      "99",
+      "110",
+      "121",
+      "132"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "72 is 9 x 8, a number times the number before it. So the answer is 11 x 10 = 110."
+  },
+  {
+    "id": "DELHIPOLICE-D-018",
+    "section": "cbe",
+    "test": 0,
+    "module": 1,
+    "domain": "delhipoliceLogical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Blood relations",
+    "stem": "M is the son of N. N is the sister of O. O is the father of P. How is M related to P?",
+    "options": [
+      "Uncle",
+      "Nephew",
+      "Cousin",
+      "Brother"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "N is P's father's sister, so N is P's aunt. M, N's son, is P's cousin."
+  },
+  {
+    "id": "DELHIPOLICE-D-019",
+    "section": "cbe",
+    "test": 0,
+    "module": 1,
+    "domain": "delhipoliceVerbal",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "Select the number that comes next in the series.\n\n200, 199, 195, 186, ?",
+    "options": [
+      "168",
+      "170",
+      "172",
+      "174"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The numbers subtracted are squares: 1, 4, 9, then 16. 186 - 16 = 170."
+  },
+  {
+    "id": "DELHIPOLICE-D-020",
+    "section": "cbe",
+    "test": 0,
+    "module": 1,
+    "domain": "delhipoliceLogical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Directions",
+    "stem": "A man faces west. He turns 45 degrees clockwise, then 180 degrees clockwise, then 270 degrees anticlockwise. Which direction does he face now?",
+    "options": [
+      "South-west",
+      "South-east",
+      "North-east",
+      "North-west"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Net turn: 45 + 180 - 270 = 45 degrees anticlockwise. Turning anticlockwise from west moves towards south, so he faces south-west."
+  },
+  {
+    "id": "DELHIPOLICE-D-021",
+    "section": "cbe",
+    "test": 0,
+    "module": 1,
+    "domain": "delhipoliceVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Odd one out",
+    "stem": "Select the instrument that does not belong with the others.",
+    "options": [
+      "Sarangi",
+      "Tabla",
+      "Veena",
+      "Sitar"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The sitar, veena and sarangi are string instruments. The tabla is a pair of drums."
+  },
+  {
+    "id": "DELHIPOLICE-D-022",
+    "section": "cbe",
+    "test": 0,
+    "module": 1,
+    "domain": "delhipoliceLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ranking",
+    "stem": "In a queue, Ravi is 12th from the front and Sita is 18th from the front. How many people stand between them?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The people between them are 13th to 17th, which is 18 - 12 - 1 = 5."
+  },
+  {
+    "id": "DELHIPOLICE-D-023",
+    "section": "cbe",
+    "test": 0,
+    "module": 1,
+    "domain": "delhipoliceVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Coding-decoding",
+    "stem": "If each letter is replaced by the letter just before it in the alphabet, how is CRIME written?",
+    "options": [
+      "BRHLD",
+      "BQHLD",
+      "BQHMD",
+      "DSJNF"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "C to B, R to Q, I to H, M to L and E to D give BQHLD. DSJNF moves each letter forward instead."
+  },
+  {
+    "id": "DELHIPOLICE-D-024",
+    "section": "cbe",
+    "test": 0,
+    "module": 1,
+    "domain": "delhipoliceLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Clocks",
+    "stem": "A clock loses 4 minutes every hour. It is set right at 8 a.m. What time will it show at 8 p.m. the same day?",
+    "options": [
+      "7:20 p.m.",
+      "8:48 p.m.",
+      "7:12 p.m.",
+      "7:48 p.m."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "In 12 hours it loses 12 x 4 = 48 minutes, so it shows 48 minutes behind 8 p.m.: 7:12 p.m."
+  },
+  {
+    "id": "DELHIPOLICE-D-025",
+    "section": "cbe",
+    "test": 0,
+    "module": 1,
+    "domain": "delhipoliceArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "LCM and HCF",
+    "stem": "What is the smallest number that is exactly divisible by 9, 12 and 15?",
+    "options": [
+      "90",
+      "180",
+      "360",
+      "540"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The LCM of 9, 12 and 15 is 2 x 2 x 3 x 3 x 5 = 180. 90 is not divisible by 12."
+  },
+  {
+    "id": "DELHIPOLICE-D-026",
+    "section": "cbe",
+    "test": 0,
+    "module": 1,
+    "domain": "delhipoliceArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Percentage",
+    "stem": "If 40% of a number is 180, what is the number?",
+    "options": [
+      "72",
+      "400",
+      "450",
+      "480"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The number is 180 / 0.4 = 450. 72 is 40% of 180, the reverse calculation."
+  },
+  {
+    "id": "DELHIPOLICE-D-027",
+    "section": "cbe",
+    "test": 0,
+    "module": 1,
+    "domain": "delhipoliceArith",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Time and work",
+    "stem": "Pipe A fills a tank in 4 hours and pipe B empties it in 12 hours. If both are opened together on an empty tank, how long will it take to fill?",
+    "options": [
+      "3 hours",
+      "4 hours",
+      "5 hours",
+      "6 hours"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Each hour the tank gains 1/4 - 1/12 = 2/12 = 1/6 of its volume, so it fills in 6 hours. 3 hours is the time if both pipes were filling, and 4 hours ignores pipe B."
+  },
+  {
+    "id": "DELHIPOLICE-D-028",
+    "section": "cbe",
+    "test": 0,
+    "module": 1,
+    "domain": "delhipoliceArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Speed",
+    "stem": "A boat goes at 15 km/h in still water and the stream flows at 3 km/h. How long does it take to go 36 km downstream?",
+    "options": [
+      "1.5 hours",
+      "2 hours",
+      "2.4 hours",
+      "3 hours"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Downstream speed is 15 + 3 = 18 km/h, so 36 / 18 = 2 hours. 3 hours is the upstream time at 12 km/h."
+  },
+  {
+    "id": "DELHIPOLICE-D-029",
+    "section": "cbe",
+    "test": 0,
+    "module": 1,
+    "domain": "delhipoliceComputer",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Computer fundamentals",
+    "stem": "Which of these is an input device?",
+    "options": [
+      "Monitor",
+      "Keyboard",
+      "Speaker",
+      "Printer"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A keyboard sends data into the computer. Monitors, printers and speakers are output devices."
+  },
+  {
+    "id": "DELHIPOLICE-D-030",
+    "section": "cbe",
+    "test": 0,
+    "module": 1,
+    "domain": "delhipoliceComputer",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "MS Excel",
+    "stem": "Cells B1 to B4 hold 10, 20, 30 and 40. What does =AVERAGE(B1:B4) return?",
+    "options": [
+      "20",
+      "25",
+      "30",
+      "100"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The total is 100 over 4 cells, so the average is 25. 100 is what =SUM(B1:B4) returns."
+  },
+  {
+    "id": "DELHIPOLICE-D-031",
+    "section": "cbe",
+    "test": 0,
+    "module": 1,
+    "domain": "delhipoliceComputer",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Internet",
+    "stem": "What is a blog?",
+    "options": [
+      "A chart in a spreadsheet",
+      "A driver for a printer",
+      "A type of computer virus",
+      "A website of dated posts"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A blog is a website, run by a person or group, with entries listed newest first."
+  },
+  {
+    "id": "DELHIPOLICE-D-032",
+    "section": "cbe",
+    "test": 0,
+    "module": 1,
+    "domain": "delhipoliceComputer",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Internet safety",
+    "stem": "Which protocol encrypts the connection between a web browser and a website?",
+    "options": [
+      "HTTPS",
+      "HTTP",
+      "FTP",
+      "SMTP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "HTTPS (HTTP Secure) encrypts the data sent between the browser and the site, so passwords and card details cannot be read on the way. Plain HTTP does not, and SMTP sends e-mail."
+  },
+  {
+    "id": "DELHIPOLICE-D-033",
+    "section": "cbe",
+    "test": 0,
+    "module": 1,
+    "domain": "delhipoliceComputer",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "E-mail",
+    "stem": "Which e-mail folder holds the messages you have received?",
+    "options": [
+      "Drafts",
+      "Inbox",
+      "Outbox",
+      "Sent"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Received mail arrives in the Inbox. Drafts holds unsent messages you are writing and Sent holds those you have sent."
+  },
+  {
+    "id": "DELHIPOLICE-D-034",
+    "section": "cbe",
+    "test": 0,
+    "module": 1,
+    "domain": "delhipoliceComputer",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Internet",
+    "stem": "What is the main or first page of a website usually called?",
+    "options": [
+      "Home page",
+      "Cookie",
+      "Site map",
+      "Cache"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The home page is the starting page of a website, with links to its other pages. A cookie is a small file a site stores in the browser."
+  }
+]

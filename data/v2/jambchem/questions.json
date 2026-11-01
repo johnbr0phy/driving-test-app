@@ -1,0 +1,4415 @@
+[
+  {
+    "id": "JAMBCHEM-T1-001",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jambchemMatter",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Separation of mixtures",
+    "stem": "Which method best separates a mixture of iodine crystals and common salt?",
+    "options": [
+      "Distillation",
+      "Decantation",
+      "Sublimation",
+      "Filtration"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Iodine sublimes on gentle heating and collects on a cold surface, while sodium chloride stays behind. Both solids would pass through filtration together unless one were dissolved first."
+  },
+  {
+    "id": "JAMBCHEM-T1-002",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jambchemMatter",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Gas laws",
+    "stem": "A gas occupies 240 cm³ at 750 mmHg. What volume will it occupy at 600 mmHg if the temperature stays constant?",
+    "options": [
+      "192 cm³",
+      "240 cm³",
+      "270 cm³",
+      "300 cm³"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Boyle's law: P₁V₁ = P₂V₂, so V₂ = 240 × 750 / 600 = 300 cm³. 192 cm³ comes from inverting the pressure ratio."
+  },
+  {
+    "id": "JAMBCHEM-T1-003",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jambchemMatter",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Kinetic theory",
+    "stem": "The smell of frying akara soon reaches every room of a house. This is because gas molecules:",
+    "options": [
+      "rise and stay near the ceiling",
+      "are attracted to the walls",
+      "are pushed out by the heat",
+      "spread out by random motion"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Diffusion: the odour molecules move randomly and spread from where they are concentrated to where they are not. Convection helps, but the molecules would spread in still air too."
+  },
+  {
+    "id": "JAMBCHEM-T1-004",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jambchemMatter",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Gas laws",
+    "stem": "Under the same conditions, a volume of oxygen takes 40 s to diffuse through a porous plug. How long will the same volume of hydrogen take? (H = 1, O = 16)",
+    "options": [
+      "10 s",
+      "20 s",
+      "40 s",
+      "160 s"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Graham's law: time is proportional to the square root of the molar mass. t(H₂) = 40 × √(2/32) = 40 × 1/4 = 10 s. 160 s multiplies by the ratio instead of dividing."
+  },
+  {
+    "id": "JAMBCHEM-T1-005",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jambchemStoich",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mole concept",
+    "stem": "How many moles of calcium trioxocarbonate(IV), CaCO₃, are in 35 g of the salt? (Ca = 40, C = 12, O = 16)",
+    "options": [
+      "0.35 mol",
+      "0.70 mol",
+      "2.86 mol",
+      "3.50 mol"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Molar mass of CaCO₃ = 40 + 12 + 48 = 100 g/mol, so 35 g is 35/100 = 0.35 mol. 2.86 mol divides the molar mass by the mass."
+  },
+  {
+    "id": "JAMBCHEM-T1-006",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jambchemStoich",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Laws of chemical combination",
+    "stem": "Two oxides of copper contain 64 g of copper combined with 16 g and with 8 g of oxygen. This illustrates the law of:",
+    "options": [
+      "definite proportions",
+      "reciprocal proportions",
+      "conservation of mass",
+      "multiple proportions"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The same mass of copper combines with masses of oxygen in the simple ratio 2:1, which is the law of multiple proportions. Definite proportions is about one compound having a fixed composition."
+  },
+  {
+    "id": "JAMBCHEM-T1-007",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jambchemStoich",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Stoichiometry",
+    "stem": "What mass of magnesium oxide is formed when 3.6 g of magnesium burns completely in oxygen? (Mg = 24, O = 16)",
+    "options": [
+      "2.4 g",
+      "4.2 g",
+      "5.4 g",
+      "6.0 g"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "2Mg + O₂ → 2MgO. 3.6 g of Mg is 0.15 mol, which gives 0.15 mol of MgO, 0.15 × 40 = 6.0 g. 2.4 g is the mass of oxygen taken up, and 5.4 g adds only half of it."
+  },
+  {
+    "id": "JAMBCHEM-T1-008",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jambchemStoich",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Empirical formula",
+    "stem": "A hydrocarbon contains 85.7% carbon by mass. What is its empirical formula? (C = 12, H = 1)",
+    "options": [
+      "CH₃",
+      "CH",
+      "CH₂",
+      "C₂H₅"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "C: 85.7/12 = 7.14; H: 14.3/1 = 14.3. The ratio 7.14 : 14.3 is 1 : 2, so the empirical formula is CH₂. CH₃ would contain 80% carbon."
+  },
+  {
+    "id": "JAMBCHEM-T1-009",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jambchemStoich",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Suspensions and colloids",
+    "stem": "Emulsion paint is classified as a colloid, while Harmattan haze is classified as:",
+    "options": [
+      "a gel",
+      "a suspension",
+      "a true solution",
+      "an emulsion"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The dust particles of Harmattan haze are large enough to settle out in time, so the syllabus treats it as a suspension. Emulsion paint, fog and rubber solution are colloids, whose particles stay dispersed."
+  },
+  {
+    "id": "JAMBCHEM-T1-010",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jambchemAtomic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Atomic structure",
+    "stem": "An atom of element X has 13 protons and 14 neutrons. What is its mass number?",
+    "options": [
+      "13",
+      "14",
+      "26",
+      "27"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Mass number = protons + neutrons = 13 + 14 = 27. 13 is the atomic number."
+  },
+  {
+    "id": "JAMBCHEM-T1-011",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jambchemAtomic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electron configuration",
+    "stem": "Which is the electron configuration of an atom with atomic number 16?",
+    "options": [
+      "1s² 2s² 2p⁴ 3s² 3p⁶",
+      "1s² 2s² 2p⁶ 3s² 3p⁶",
+      "1s² 2s² 2p⁶ 3s² 3p⁴",
+      "1s² 2s² 2p⁶ 3s⁴ 3p²"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Sixteen electrons fill 1s, 2s, 2p and 3s (12 electrons), leaving 4 in 3p. This is sulphur. 3s cannot hold four electrons."
+  },
+  {
+    "id": "JAMBCHEM-T1-012",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jambchemAtomic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Isotopes",
+    "stem": "Chlorine consists of ³⁵Cl and ³⁷Cl in the ratio 3 : 1. What is its relative atomic mass?",
+    "options": [
+      "35.0",
+      "35.5",
+      "36.0",
+      "36.5"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Average = (3 × 35 + 1 × 37) / 4 = 142/4 = 35.5. 36.0 is the simple average, which ignores the abundance."
+  },
+  {
+    "id": "JAMBCHEM-T1-013",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jambchemAtomic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Chemical bonding",
+    "stem": "The bond formed when ammonia donates its lone pair to a hydrogen ion is:",
+    "options": [
+      "a coordinate bond",
+      "an electrovalent bond",
+      "a metallic bond",
+      "a hydrogen bond"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "In NH₄⁺ both electrons of the new bond come from nitrogen, which makes it a coordinate (dative) bond. Once formed it is identical to the other N-H bonds."
+  },
+  {
+    "id": "JAMBCHEM-T1-014",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jambchemAtomic",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Periodicity",
+    "stem": "Across a period from sodium to chlorine, the first ionization energy generally:",
+    "options": [
+      "decreases",
+      "increases",
+      "rises then falls to zero",
+      "stays the same"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Nuclear charge increases while the electrons go into the same shell, so they are held more tightly and are harder to remove."
+  },
+  {
+    "id": "JAMBCHEM-T1-015",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jambchemAtomic",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Nuclear chemistry",
+    "stem": "Iodine-131, used in treating thyroid disease, has a half-life of 8 days. What mass of a 12 g sample is left after 24 days?",
+    "options": [
+      "0.75 g",
+      "1.5 g",
+      "3.0 g",
+      "4.0 g"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "24 days is three half-lives: 12 → 6 → 3 → 1.5 g. 4.0 g divides by three instead of halving three times, and 3.0 g stops after two half-lives."
+  },
+  {
+    "id": "JAMBCHEM-T1-016",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jambchemAcids",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "pH",
+    "stem": "What is the pH of a 0.001 mol dm⁻³ solution of hydrochloric acid?",
+    "options": [
+      "0.001",
+      "1",
+      "3",
+      "11"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "HCl is fully ionized, so [H⁺] = 10⁻³ mol dm⁻³ and pH = -log 10⁻³ = 3. 11 is the pOH."
+  },
+  {
+    "id": "JAMBCHEM-T1-017",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jambchemAcids",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Types of salt",
+    "stem": "Sodium hydrogen tetraoxosulphate(VI), NaHSO₄, is an example of:",
+    "options": [
+      "a normal salt",
+      "an acid salt",
+      "a double salt",
+      "a basic salt"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "It still contains a replaceable hydrogen, so it is an acid salt. Potash alum, KAl(SO₄)₂·12H₂O, is a double salt."
+  },
+  {
+    "id": "JAMBCHEM-T1-018",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jambchemAcids",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Titration",
+    "stem": "25.0 cm³ of 0.10 mol dm⁻³ sodium hydroxide is neutralized by 20.0 cm³ of hydrochloric acid. What is the concentration of the acid?",
+    "options": [
+      "0.080 mol dm⁻³",
+      "0.125 mol dm⁻³",
+      "0.200 mol dm⁻³",
+      "0.250 mol dm⁻³"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "NaOH + HCl reacts 1 : 1. Moles of NaOH = 0.025 × 0.10 = 0.0025 mol, so [HCl] = 0.0025 / 0.020 = 0.125 mol dm⁻³. 0.080 mol dm⁻³ swaps the two volumes."
+  },
+  {
+    "id": "JAMBCHEM-T1-019",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jambchemAcids",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Oxidation numbers",
+    "stem": "What is the oxidation number of manganese in KMnO₄?",
+    "options": [
+      "+2",
+      "+4",
+      "+6",
+      "+7"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "K is +1 and the four oxygens total -8, so Mn + 1 - 8 = 0 and Mn = +7. +6 is manganese in K₂MnO₄."
+  },
+  {
+    "id": "JAMBCHEM-T1-020",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jambchemAcids",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Redox",
+    "stem": "In the reaction Zn + CuSO₄ → ZnSO₄ + Cu, the zinc is:",
+    "options": [
+      "reduced, acting as an oxidizing agent",
+      "oxidized, acting as a reducing agent",
+      "reduced, acting as a reducing agent",
+      "oxidized, acting as an oxidizing agent"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Zinc loses two electrons (0 to +2), so it is oxidized, and by giving those electrons to Cu²⁺ it acts as the reducing agent."
+  },
+  {
+    "id": "JAMBCHEM-T1-021",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jambchemPhysical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Faraday's laws",
+    "stem": "What mass of silver is deposited when a current of 0.6 A flows through silver trioxonitrate(V) solution for 4825 s? (Ag = 108, F = 96500 C mol⁻¹)",
+    "options": [
+      "0.81 g",
+      "1.62 g",
+      "3.24 g",
+      "6.48 g"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Charge = 0.6 × 4825 = 2895 C = 0.03 F. Ag⁺ needs one electron, so 0.03 mol of silver, 0.03 × 108 = 3.24 g, is deposited. 1.62 g treats silver as Ag²⁺."
+  },
+  {
+    "id": "JAMBCHEM-T1-022",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jambchemPhysical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Products of electrolysis",
+    "stem": "In the electrolysis of very dilute sodium chloride solution with inert electrodes, the main gas given off at the anode is:",
+    "options": [
+      "sodium vapour",
+      "oxygen",
+      "chlorine",
+      "hydrogen"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "When the solution is very dilute, OH⁻ ions (from water) are discharged in preference to the few Cl⁻ ions, so oxygen forms at the anode. In concentrated brine chlorine forms instead. Hydrogen forms at the cathode in both."
+  },
+  {
+    "id": "JAMBCHEM-T1-023",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jambchemPhysical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Energy changes",
+    "stem": "When ammonium chloride dissolves in water, the beaker feels cold. The process is:",
+    "options": [
+      "exothermic, with negative ΔH",
+      "exothermic, with positive ΔH",
+      "endothermic, with negative ΔH",
+      "endothermic, with positive ΔH"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The solution takes in heat from its surroundings, so the beaker cools: an endothermic change has a positive ΔH."
+  },
+  {
+    "id": "JAMBCHEM-T1-024",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jambchemPhysical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Spontaneity",
+    "stem": "For a reaction, ΔH = -40 kJ mol⁻¹ and ΔS = -100 J K⁻¹ mol⁻¹. What is ΔG at 300 K?",
+    "options": [
+      "-70 kJ mol⁻¹",
+      "-10 kJ mol⁻¹",
+      "+30 kJ mol⁻¹",
+      "+29960 kJ mol⁻¹"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "ΔG = ΔH - TΔS = -40 - 300 × (-0.100) = -40 + 30 = -10 kJ mol⁻¹, so the reaction is spontaneous at 300 K. +29960 forgets to change J to kJ."
+  },
+  {
+    "id": "JAMBCHEM-T1-025",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jambchemPhysical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rates of reaction",
+    "stem": "Equal masses of marble, as lumps and as powder, are each added to excess of the same dilute hydrochloric acid. Compared with the lumps, the powder gives:",
+    "options": [
+      "a faster reaction and the same total volume of gas",
+      "the same rate and the same total volume of gas",
+      "a faster reaction and a larger total volume of gas",
+      "a slower reaction and a smaller total volume of gas"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The powder's larger surface area means more collisions per second, so the rate is higher. The mass of calcium trioxocarbonate(IV), and so the total carbon(IV) oxide, is the same, so both rate curves level off at the same volume."
+  },
+  {
+    "id": "JAMBCHEM-T1-026",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jambchemPhysical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Chemical equilibrium",
+    "stem": "For N₂O₄(g) ⇌ 2NO₂(g), ΔH positive, which change moves the equilibrium to the right?",
+    "options": [
+      "Adding a catalyst",
+      "Raising the pressure",
+      "Raising the temperature",
+      "Lowering the temperature"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The forward reaction is endothermic, so heating favours it (Le Chatelier). Higher pressure favours the side with fewer gas molecules, the left. A catalyst does not shift equilibrium."
+  },
+  {
+    "id": "JAMBCHEM-T1-027",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jambchemNonmetals",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hardness of water",
+    "stem": "Temporary hardness of water is caused by dissolved:",
+    "options": [
+      "calcium hydrogen trioxocarbonate(IV)",
+      "calcium tetraoxosulphate(VI)",
+      "sodium chloride",
+      "magnesium tetraoxosulphate(VI)"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Calcium and magnesium hydrogen trioxocarbonates(IV) decompose on boiling, so the hardness is removed by boiling. Sulphates and chlorides of calcium and magnesium cause permanent hardness."
+  },
+  {
+    "id": "JAMBCHEM-T1-028",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jambchemNonmetals",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Sulphur compounds",
+    "stem": "In the Contact process, sulphur(VI) oxide is absorbed in concentrated tetraoxosulphate(VI) acid rather than in water because with water it:",
+    "options": [
+      "forms a mist of acid that is hard to absorb",
+      "is reduced back to sulphur(IV) oxide",
+      "does not react at all",
+      "forms trioxosulphate(IV) acid instead"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "SO₃ reacts so violently with water that it forms a fine mist of acid droplets. Absorbing it in the concentrated acid gives oleum, H₂S₂O₇, which is then diluted with water to the required strength."
+  },
+  {
+    "id": "JAMBCHEM-T1-029",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jambchemNonmetals",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Nitrogen compounds",
+    "stem": "Which test confirms that a gas is ammonia?",
+    "options": [
+      "It turns damp red litmus blue",
+      "It relights a glowing splint",
+      "It bleaches damp blue litmus paper",
+      "It turns lime water milky"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Ammonia is the only common alkaline gas, so it turns damp red litmus blue. Carbon(IV) oxide turns lime water milky and oxygen relights a glowing splint."
+  },
+  {
+    "id": "JAMBCHEM-T1-030",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jambchemNonmetals",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Carbon compounds",
+    "stem": "Carbon(II) oxide is prepared in the laboratory by warming concentrated tetraoxosulphate(VI) acid with:",
+    "options": [
+      "calcium trioxocarbonate(IV)",
+      "ethanol",
+      "methanoic acid",
+      "zinc granules"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The concentrated acid dehydrates methanoic acid: HCOOH → CO + H₂O. Calcium trioxocarbonate(IV) with dilute acid gives carbon(IV) oxide, and ethanol is dehydrated to ethene."
+  },
+  {
+    "id": "JAMBCHEM-T1-031",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jambchemNonmetals",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Air pollution",
+    "stem": "Tetraethyllead was once added to petrol to raise its octane number. It was phased out mainly because car exhausts then released:",
+    "options": [
+      "ozone",
+      "extra water vapour",
+      "toxic lead compounds",
+      "chlorofluorocarbons"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Lead compounds from exhausts are poisonous and harm the nervous system, especially in children. Nigeria and most other countries now sell only unleaded petrol."
+  },
+  {
+    "id": "JAMBCHEM-T1-032",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jambchemMetals",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Aluminium",
+    "stem": "In the electrolytic extraction of aluminium, the alumina is dissolved in molten cryolite in order to:",
+    "options": [
+      "protect the carbon anodes",
+      "lower the operating temperature",
+      "reduce the alumina chemically",
+      "remove iron impurities"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Pure alumina melts above 2000 °C; dissolved in cryolite, Na₃AlF₆, it can be electrolysed at about 950 °C, which saves energy. The carbon anodes still burn away in the oxygen formed."
+  },
+  {
+    "id": "JAMBCHEM-T1-033",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jambchemMetals",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Iron",
+    "stem": "In the blast furnace, the main reducing agent for iron(III) oxide is:",
+    "options": [
+      "silicon(IV) oxide",
+      "carbon(II) oxide",
+      "limestone",
+      "hot air"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Coke burns to carbon(II) oxide, which reduces Fe₂O₃ to iron: Fe₂O₃ + 3CO → 2Fe + 3CO₂. Limestone removes impurities as slag."
+  },
+  {
+    "id": "JAMBCHEM-T1-034",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jambchemMetals",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Transition metals",
+    "stem": "Which property is typical of first-row transition metals?",
+    "options": [
+      "They do not form complex ions",
+      "They have only one oxidation state",
+      "They are softer than sodium",
+      "They form coloured compounds"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Partly filled d orbitals give transition metal ions colours, variable oxidation states and the ability to form complexes. Sodium is far softer."
+  },
+  {
+    "id": "JAMBCHEM-T1-035",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jambchemMetals",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Chemistry and industry",
+    "stem": "Making soap from palm oil and caustic soda in a factory is an example of:",
+    "options": [
+      "a chemical industry using local materials",
+      "a metallurgical industry",
+      "a fermentation industry using yeast",
+      "a petrochemical industry"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Soap making turns a local vegetable oil into a new product by saponification, a chemical process. Petrochemical industries start from crude oil or natural gas."
+  },
+  {
+    "id": "JAMBCHEM-T1-036",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jambchemOrganic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Alkanes",
+    "stem": "What is the general formula of the alkanes?",
+    "options": [
+      "CₙH₂ₙ₊₂",
+      "CₙH₂ₙ₋₂",
+      "CₙH₂ₙ₊₁OH",
+      "CₙH₂ₙ"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Alkanes are saturated: each carbon has four single bonds, giving CₙH₂ₙ₊₂. CₙH₂ₙ is the alkenes and CₙH₂ₙ₋₂ the alkynes."
+  },
+  {
+    "id": "JAMBCHEM-T1-037",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jambchemOrganic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Isomerism",
+    "stem": "How many structural isomers have the formula C₆H₁₄?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Hexane, 2-methylpentane, 3-methylpentane, 2,2-dimethylbutane and 2,3-dimethylbutane. Names such as 4-methylpentane or 2-ethylbutane repeat these numbered or chained the wrong way, which is how 6 or 7 is reached."
+  },
+  {
+    "id": "JAMBCHEM-T1-038",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jambchemOrganic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Alkenes",
+    "stem": "Ethene decolourizes bromine water because it:",
+    "options": [
+      "is acidic",
+      "undergoes an addition reaction",
+      "undergoes a substitution reaction",
+      "is a strong reducing agent"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Bromine adds across the C=C double bond to give 1,2-dibromoethane. Alkanes react only by substitution, and only in light."
+  },
+  {
+    "id": "JAMBCHEM-T1-039",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jambchemOrganic",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Alkanols",
+    "stem": "In the Lucas test at room temperature, which alkanol makes the reagent turn cloudy only after about five minutes?",
+    "options": [
+      "Propan-2-ol",
+      "Ethanol",
+      "2-methylpropan-2-ol",
+      "Methanol"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Propan-2-ol is a secondary alkanol, which reacts in a few minutes. 2-methylpropan-2-ol, a tertiary alkanol, turns cloudy at once, while primary alkanols such as ethanol and methanol hardly react at room temperature."
+  },
+  {
+    "id": "JAMBCHEM-T1-040",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jambchemOrganic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Alkanoates",
+    "stem": "Boiling a fat or oil with sodium hydroxide solution to make soap is called:",
+    "options": [
+      "polymerization",
+      "esterification",
+      "hydrogenation",
+      "saponification"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Alkaline hydrolysis of the ester gives the sodium salt of the fatty acid (soap) and propane-1,2,3-triol (glycerol). Hydrogenation of oils makes margarine."
+  },
+  {
+    "id": "JAMBCHEM-T2-001",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jambchemMatter",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Separation of mixtures",
+    "stem": "Which technique is used to separate the coloured dyes in a sample of black ink?",
+    "options": [
+      "Fractional distillation",
+      "Sublimation",
+      "Paper chromatography",
+      "Magnetic separation"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The dyes travel at different rates up the paper because they differ in solubility and attraction to the paper. Distillation would not separate dyes that do not boil."
+  },
+  {
+    "id": "JAMBCHEM-T2-002",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jambchemMatter",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Gas laws",
+    "stem": "A fixed mass of gas has a volume of 150 cm³ at 27 °C. At what temperature will its volume be 200 cm³, pressure constant?",
+    "options": [
+      "36 °C",
+      "127 °C",
+      "225 °C",
+      "400 °C"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Charles' law uses kelvin: T₂ = 300 × 200 / 150 = 400 K, which is 127 °C. 400 °C forgets to convert back from kelvin, and 36 °C uses 27 °C directly in the ratio."
+  },
+  {
+    "id": "JAMBCHEM-T2-003",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jambchemMatter",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Purity",
+    "stem": "A sample of a solid melts sharply at the value given in data books. This shows that the sample is:",
+    "options": [
+      "pure",
+      "an element",
+      "a mixture",
+      "a compound"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A sharp, correct melting point is a test of purity; impurities lower the melting point and spread it over a range. It does not tell an element from a compound."
+  },
+  {
+    "id": "JAMBCHEM-T2-004",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jambchemMatter",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Gas laws",
+    "stem": "What volume does 0.25 mol of nitrogen occupy at s.t.p.? (Molar volume = 22.4 dm³)",
+    "options": [
+      "5.6 dm³",
+      "11.2 dm³",
+      "22.4 dm³",
+      "89.6 dm³"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Volume = 0.25 × 22.4 = 5.6 dm³. 89.6 dm³ divides 22.4 by 0.25 instead of multiplying."
+  },
+  {
+    "id": "JAMBCHEM-T2-005",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jambchemStoich",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mole concept",
+    "stem": "How many molecules are in 2.2 g of carbon(IV) oxide? (C = 12, O = 16, Avogadro's number = 6.02 × 10²³)",
+    "options": [
+      "$3.01 \\times 10^{22}$",
+      "$9.03 \\times 10^{22}$",
+      "$3.01 \\times 10^{23}$",
+      "$1.32 \\times 10^{24}$"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "2.2 g of CO₂ (44 g/mol) is 0.05 mol, which is 0.05 × 6.02 × 10²³ = 3.01 × 10²² molecules. 9.03 × 10²² counts atoms, three per molecule, and 1.32 × 10²⁴ multiplies the mass by Avogadro's number."
+  },
+  {
+    "id": "JAMBCHEM-T2-006",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jambchemStoich",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Stoichiometry",
+    "stem": "What volume of hydrogen at s.t.p. is released when 4.6 g of sodium reacts completely with water? (Na = 23, molar volume = 22.4 dm³)",
+    "options": [
+      "1.12 dm³",
+      "2.24 dm³",
+      "4.48 dm³",
+      "8.96 dm³"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "2Na + 2H₂O → 2NaOH + H₂. 4.6 g of Na is 0.2 mol, giving 0.1 mol of H₂, 0.1 × 22.4 = 2.24 dm³. 4.48 dm³ forgets that two sodium atoms give one H₂ molecule."
+  },
+  {
+    "id": "JAMBCHEM-T2-007",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jambchemStoich",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Formulae",
+    "stem": "What is the percentage by mass of nitrogen in ammonium trioxonitrate(V), NH₄NO₃? (N = 14, H = 1, O = 16)",
+    "options": [
+      "17.5%",
+      "28%",
+      "35%",
+      "60%"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Molar mass = 80 g/mol and it contains two nitrogen atoms: 28/80 × 100 = 35%. 17.5% counts only one nitrogen."
+  },
+  {
+    "id": "JAMBCHEM-T2-008",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jambchemStoich",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Solubility",
+    "stem": "At 40 °C, 20 cm³ of a saturated solution of a salt (molar mass 74.5 g/mol) gives 5.96 g of dry salt on evaporation. What is the solubility in mol dm⁻³?",
+    "options": [
+      "0.08 mol dm⁻³",
+      "0.4 mol dm⁻³",
+      "4.0 mol dm⁻³",
+      "298 mol dm⁻³"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Moles = 5.96 / 74.5 = 0.08 mol in 20 cm³, so in 1000 cm³: 0.08 × 50 = 4.0 mol dm⁻³. 0.08 is the moles in the sample, not per dm³."
+  },
+  {
+    "id": "JAMBCHEM-T2-009",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jambchemStoich",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Solubility",
+    "stem": "A solution that holds more solute than it normally can at that temperature is:",
+    "options": [
+      "unsaturated",
+      "saturated",
+      "supersaturated",
+      "highly concentrated"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A supersaturated solution is unstable: a seed crystal or a scratch makes the excess solute crystallize out at once."
+  },
+  {
+    "id": "JAMBCHEM-T2-010",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jambchemAtomic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Atomic structure",
+    "stem": "How many neutrons are in the nucleus of ³⁹₁₉K?",
+    "options": [
+      "19",
+      "20",
+      "39",
+      "58"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Neutrons = mass number minus atomic number = 39 - 19 = 20."
+  },
+  {
+    "id": "JAMBCHEM-T2-011",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jambchemAtomic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Atomic models",
+    "stem": "Which statement of Dalton's atomic theory is no longer accepted?",
+    "options": [
+      "Atoms are not created or destroyed in a reaction",
+      "Atoms combine in simple whole-number ratios",
+      "Atoms cannot be split into smaller particles",
+      "Elements are made of very small particles called atoms"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Atoms are made of protons, neutrons and electrons, and nuclei can be split, so the idea that atoms are indivisible has been dropped. The other three statements still hold in ordinary chemical reactions."
+  },
+  {
+    "id": "JAMBCHEM-T2-012",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jambchemAtomic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Shapes of molecules",
+    "stem": "Which molecule is tetrahedral?",
+    "options": [
+      "CO₂",
+      "CH₄",
+      "NH₃",
+      "H₂O"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Carbon in methane has four bonding pairs and no lone pairs, giving a tetrahedron. NH₃ is pyramidal, H₂O bent and CO₂ linear."
+  },
+  {
+    "id": "JAMBCHEM-T2-013",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jambchemAtomic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Chemical bonding",
+    "stem": "Which pair of elements is most likely to form an electrovalent compound?",
+    "options": [
+      "Calcium and fluorine",
+      "Nitrogen and oxygen",
+      "Sulphur and chlorine",
+      "Carbon and hydrogen"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Calcium readily loses two electrons and fluorine readily gains one, so they form the ionic compound CaF₂. The other pairs are non-metals that share electrons."
+  },
+  {
+    "id": "JAMBCHEM-T2-014",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jambchemAtomic",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Quantum numbers",
+    "stem": "What is the maximum number of electrons in the p subshell of any shell?",
+    "options": [
+      "6",
+      "8",
+      "10",
+      "18"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "A p subshell has three orbitals (ml = -1, 0, +1), each holding two electrons of opposite spin, so 6 in all. 8 is the maximum for the whole second shell."
+  },
+  {
+    "id": "JAMBCHEM-T2-015",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jambchemAtomic",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Nuclear chemistry",
+    "stem": "²³⁸₉₂U emits one alpha particle. What are the mass number and atomic number of the new nucleus?",
+    "options": [
+      "234 and 90",
+      "238 and 91",
+      "236 and 90",
+      "234 and 92"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An alpha particle is ⁴₂He, so the mass number falls by 4 to 234 and the atomic number by 2 to 90, giving thorium. 238 and 91 is the result of beta emission."
+  },
+  {
+    "id": "JAMBCHEM-T2-016",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jambchemAcids",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Basicity",
+    "stem": "What is the basicity of tetraoxophosphate(V) acid, H₃PO₄?",
+    "options": [
+      "3",
+      "4",
+      "7",
+      "8"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Basicity is the number of replaceable hydrogen ions per molecule; H₃PO₄ has three. 4 counts the oxygen atoms."
+  },
+  {
+    "id": "JAMBCHEM-T2-017",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jambchemAcids",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "pH",
+    "stem": "A solution has a hydroxide ion concentration of 1 × 10⁻⁴ mol dm⁻³ at 25 °C. What is its pH?",
+    "options": [
+      "4",
+      "7",
+      "10",
+      "14"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "pOH = 4, and pH + pOH = 14 at 25 °C, so pH = 10. 4 is the pOH, not the pH."
+  },
+  {
+    "id": "JAMBCHEM-T2-018",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jambchemAcids",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hydrolysis of salts",
+    "stem": "An aqueous solution of ammonium chloride is acidic because the salt:",
+    "options": [
+      "contains free chlorine",
+      "comes from a weak acid and a strong base",
+      "releases ammonia gas",
+      "comes from a strong acid and a weak base"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "NH₄⁺, from the weak base ammonia, reacts with water to give H₃O⁺. Sodium ethanoate, from a weak acid and strong base, gives an alkaline solution."
+  },
+  {
+    "id": "JAMBCHEM-T2-019",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jambchemAcids",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Oxidation numbers",
+    "stem": "What is the oxidation number of chromium in the dichromate ion, Cr₂O₇²⁻?",
+    "options": [
+      "+3",
+      "+6",
+      "+7",
+      "+12"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Seven oxygens total -14 and the ion carries -2, so the two chromiums total +12, +6 each. +12 forgets to divide by two."
+  },
+  {
+    "id": "JAMBCHEM-T2-020",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jambchemAcids",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "IUPAC nomenclature",
+    "stem": "What is the IUPAC name of NaNO₂?",
+    "options": [
+      "sodium dioxonitrate(IV)",
+      "sodium trioxonitrate(V)",
+      "sodium trioxonitrate(III)",
+      "sodium dioxonitrate(III)"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "NO₂⁻ has two oxygens (dioxo) and nitrogen at +3 (0 = +1 + N - 4, so N = +3). Sodium trioxonitrate(V) is NaNO₃."
+  },
+  {
+    "id": "JAMBCHEM-T2-021",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jambchemPhysical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Faraday's laws",
+    "stem": "How many faradays are needed to deposit 13.5 g of aluminium from molten aluminium oxide? (Al = 27)",
+    "options": [
+      "0.5 F",
+      "1.5 F",
+      "3.0 F",
+      "4.5 F"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "13.5 g is 0.5 mol of Al, and Al³⁺ + 3e⁻ → Al needs 3 F per mole: 0.5 × 3 = 1.5 F. 0.5 F forgets the charge of the ion."
+  },
+  {
+    "id": "JAMBCHEM-T2-022",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jambchemPhysical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electrochemical series",
+    "stem": "Which metal will displace copper from copper(II) tetraoxosulphate(VI) solution?",
+    "options": [
+      "Silver",
+      "Gold",
+      "Iron",
+      "Mercury"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Iron is above copper in the electrochemical series, so it gives electrons to Cu²⁺ ions. Silver, gold and mercury are below copper."
+  },
+  {
+    "id": "JAMBCHEM-T2-023",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jambchemPhysical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Electrochemical cells",
+    "stem": "A cell is made from zinc and silver half-cells. E°(Zn²⁺/Zn) = -0.76 V and E°(Ag⁺/Ag) = +0.80 V. What is the e.m.f. of the cell?",
+    "options": [
+      "-1.56 V",
+      "0.04 V",
+      "0.80 V",
+      "1.56 V"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Silver, with the higher potential, is the cathode: E(cell) = E(cathode) - E(anode) = 0.80 - (-0.76) = 1.56 V. 0.04 V subtracts the sizes and ignores the sign, and -1.56 V takes zinc as the cathode. Doubling the silver equation does not change its E°."
+  },
+  {
+    "id": "JAMBCHEM-T2-024",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jambchemPhysical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Corrosion",
+    "stem": "Galvanizing iron with zinc protects it from rusting because zinc:",
+    "options": [
+      "does not conduct electricity",
+      "absorbs all moisture from the air",
+      "is less reactive than iron",
+      "corrodes in preference to iron"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Zinc is above iron in the electrochemical series, so even if the coating is scratched the zinc is oxidized first (sacrificial protection)."
+  },
+  {
+    "id": "JAMBCHEM-T2-025",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jambchemPhysical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Chemical equilibrium",
+    "stem": "A catalyst is added to a reversible reaction. What is its effect?",
+    "options": [
+      "The equilibrium yield of product rises",
+      "The equilibrium shifts to the left",
+      "Equilibrium is reached sooner, with the same yield",
+      "Only the forward reaction speeds up"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A catalyst lowers the activation energy of the forward and backward reactions equally, so equilibrium is reached faster but its position, and so the yield, is unchanged."
+  },
+  {
+    "id": "JAMBCHEM-T2-026",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jambchemPhysical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Chemical equilibrium",
+    "stem": "For 3Fe(s) + 4H₂O(g) ⇌ Fe₃O₄(s) + 4H₂(g), what is the effect of raising the pressure?",
+    "options": [
+      "No shift in the position",
+      "A shift to the right",
+      "A shift to the left",
+      "A shift that stops the reaction"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "There are four moles of gas on each side, so changing the pressure favours neither side. The solids do not count."
+  },
+  {
+    "id": "JAMBCHEM-T2-027",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jambchemNonmetals",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hydrogen",
+    "stem": "Hydrogen is usually prepared in the laboratory by the action of dilute hydrochloric acid on:",
+    "options": [
+      "silver foil",
+      "lead shot",
+      "zinc granules",
+      "copper turnings"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Zinc is above hydrogen in the electrochemical series and reacts steadily: Zn + 2HCl → ZnCl₂ + H₂. Copper and silver are below hydrogen and do not react."
+  },
+  {
+    "id": "JAMBCHEM-T2-028",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jambchemNonmetals",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Halogens",
+    "stem": "Chlorine bleaches damp litmus paper because, with water, it forms:",
+    "options": [
+      "tetraoxochlorate(VII) acid",
+      "oxochlorate(I) acid, HOCl",
+      "hydrogen chloride gas",
+      "chlorine dioxide"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Cl₂ + H₂O → HCl + HOCl. The oxochlorate(I) acid releases oxygen that oxidizes the dye. Dry chlorine does not bleach dry litmus."
+  },
+  {
+    "id": "JAMBCHEM-T2-029",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jambchemNonmetals",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Oxides",
+    "stem": "Which oxide is amphoteric?",
+    "options": [
+      "Zinc oxide",
+      "Sodium oxide",
+      "Carbon(II) oxide",
+      "Sulphur(IV) oxide"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Zinc oxide reacts with both acids and alkalis. Sodium oxide is basic, sulphur(IV) oxide acidic and carbon(II) oxide neutral."
+  },
+  {
+    "id": "JAMBCHEM-T2-030",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jambchemNonmetals",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Sulphur compounds",
+    "stem": "Concentrated tetraoxosulphate(VI) acid turns sugar black because it acts as:",
+    "options": [
+      "a bleaching agent",
+      "a reducing agent",
+      "a dehydrating agent",
+      "a catalyst"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The acid removes the elements of water from C₁₂H₂₂O₁₁, leaving black carbon. It is also an oxidizing agent, but here it is acting as a dehydrating agent."
+  },
+  {
+    "id": "JAMBCHEM-T2-031",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jambchemNonmetals",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Nitrogen cycle",
+    "stem": "In the nitrogen cycle, nitrogen from the air is made into nitrogen compounds in the soil by:",
+    "options": [
+      "burning of fossil fuels in cars",
+      "denitrifying bacteria",
+      "decay of dead leaves",
+      "nitrogen-fixing bacteria"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Bacteria in the root nodules of legumes such as groundnut and beans fix atmospheric nitrogen. Denitrifying bacteria return nitrogen to the air."
+  },
+  {
+    "id": "JAMBCHEM-T2-032",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jambchemMetals",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sodium compounds",
+    "stem": "Sodium trioxocarbonate(IV) is manufactured from brine, limestone and ammonia by the:",
+    "options": [
+      "Downs process",
+      "Haber process",
+      "Solvay process",
+      "Contact process"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Solvay (ammonia-soda) process precipitates sodium hydrogen trioxocarbonate(IV), which is heated to give Na₂CO₃. The Downs cell makes sodium metal."
+  },
+  {
+    "id": "JAMBCHEM-T2-033",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jambchemMetals",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Calcium",
+    "stem": "Which ion gives a brick-red colour in a flame test?",
+    "options": [
+      "Na⁺",
+      "K⁺",
+      "Ca²⁺",
+      "Cu²⁺"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Calcium gives brick-red, sodium golden yellow, potassium lilac and copper a blue-green flame."
+  },
+  {
+    "id": "JAMBCHEM-T2-034",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jambchemMetals",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Alloys",
+    "stem": "Bronze, used for medals and statues, is an alloy of:",
+    "options": [
+      "lead and tin",
+      "copper and tin",
+      "copper and zinc",
+      "iron and carbon"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Bronze is copper with tin. Brass is copper with zinc, steel is iron with carbon and soft solder is lead with tin."
+  },
+  {
+    "id": "JAMBCHEM-T2-035",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jambchemMetals",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Astronomical chemistry",
+    "stem": "The layer of the earth made up of rocks and soil is the:",
+    "options": [
+      "hydrosphere",
+      "lithosphere",
+      "atmosphere",
+      "stratosphere"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The lithosphere is the solid outer layer. The hydrosphere is the earth's water, and the stratosphere is a layer of the atmosphere."
+  },
+  {
+    "id": "JAMBCHEM-T2-036",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jambchemOrganic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "IUPAC nomenclature",
+    "stem": "What is the IUPAC name of CH₃CH(CH₃)CH₂CH₃?",
+    "options": [
+      "2-methylbutane",
+      "3-methylbutane",
+      "pentane",
+      "2-methylpropane"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The longest chain has four carbons, butane, with a methyl group on carbon 2 counting from the nearer end. 3-methylbutane numbers from the wrong end."
+  },
+  {
+    "id": "JAMBCHEM-T2-037",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jambchemOrganic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Petroleum",
+    "stem": "A high octane number shows that a petrol:",
+    "options": [
+      "resists knocking in the engine",
+      "contains much sulphur",
+      "is mostly straight-chain alkanes",
+      "has a high boiling point"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Octane number measures resistance to knocking. Branched alkanes such as 2,2,4-trimethylpentane have high octane numbers, while straight chains knock."
+  },
+  {
+    "id": "JAMBCHEM-T2-038",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jambchemOrganic",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Alkanoic acids",
+    "stem": "Ethanoic acid reacts with ethanol, with a little concentrated H₂SO₄, to give:",
+    "options": [
+      "ethane and carbon(IV) oxide",
+      "ethyl ethanoate and water",
+      "sodium ethanoate and hydrogen",
+      "ethene and water"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "This is esterification: CH₃COOH + C₂H₅OH ⇌ CH₃COOC₂H₅ + H₂O. The ester has a fruity smell."
+  },
+  {
+    "id": "JAMBCHEM-T2-039",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jambchemOrganic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Alkynes",
+    "stem": "Ethyne burned in oxygen is used for welding and cutting metals because:",
+    "options": [
+      "it does not burn in air",
+      "its flame is extremely hot",
+      "it forms a protective polymer",
+      "it removes rust from the metal"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The oxy-acetylene flame reaches about 3000 °C, hot enough to melt steel. Ethyne burns readily in air too, with a smoky flame."
+  },
+  {
+    "id": "JAMBCHEM-T2-040",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jambchemOrganic",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Empirical formula",
+    "stem": "An organic compound contains 52.2% carbon, 13.0% hydrogen and 34.8% oxygen by mass. What is its empirical formula? (C = 12, H = 1, O = 16)",
+    "options": [
+      "CH₃O",
+      "C₂H₄O",
+      "C₂H₆O",
+      "C₃H₈O"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "C: 52.2/12 = 4.35; H: 13.0/1 = 13.0; O: 34.8/16 = 2.18. Dividing by 2.18 gives 2 : 6 : 1, so C₂H₆O, as in ethanol."
+  },
+  {
+    "id": "JAMBCHEM-D-001",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemMatter",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Separation of mixtures",
+    "stem": "Kerosene and water are separated with a separating funnel because they are:",
+    "options": [
+      "liquids with the same boiling point",
+      "immiscible liquids",
+      "liquids with equal densities",
+      "miscible liquids"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Immiscible liquids form two layers, and the lower, denser layer is run off through the tap. Miscible liquids such as ethanol and water need fractional distillation."
+  },
+  {
+    "id": "JAMBCHEM-D-002",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemMatter",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Separation of mixtures",
+    "stem": "Ethanol (b.p. 78 °C) is best separated from water by:",
+    "options": [
+      "evaporation to dryness",
+      "crystallization",
+      "fractional distillation",
+      "simple distillation"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The boiling points are close and the liquids are miscible, so a fractionating column is needed. Simple distillation suits a solid dissolved in a liquid."
+  },
+  {
+    "id": "JAMBCHEM-D-003",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemMatter",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Separation of mixtures",
+    "stem": "Iron filings are removed from a mixture with sulphur powder by:",
+    "options": [
+      "centrifugation",
+      "magnetization",
+      "sublimation",
+      "filtration"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Iron is magnetic and sulphur is not. Filtration fails because neither solid dissolves in water."
+  },
+  {
+    "id": "JAMBCHEM-D-004",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemMatter",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Separation of mixtures",
+    "stem": "Which process separates cream from milk in a dairy?",
+    "options": [
+      "Distillation",
+      "Chromatography",
+      "Sublimation",
+      "Centrifugation"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Spinning drives the denser liquid outward and leaves the lighter fat in the middle, where it is drawn off."
+  },
+  {
+    "id": "JAMBCHEM-D-005",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemMatter",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Physical and chemical change",
+    "stem": "Which of these is a chemical change?",
+    "options": [
+      "Souring of palm wine",
+      "Melting of shea butter",
+      "Freezing of water in a tray",
+      "Dissolving sugar in tea"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Palm wine turns sour as microorganisms ferment its sugar into ethanol and then ethanoic acid, new substances that cannot be turned back. The others change only the state or arrangement of the same substance."
+  },
+  {
+    "id": "JAMBCHEM-D-006",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemMatter",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Elements, compounds and mixtures",
+    "stem": "Air is classified as a mixture because its components:",
+    "options": [
+      "can be separated by physical means",
+      "react together when heated",
+      "all boil at one temperature",
+      "are combined in a fixed ratio"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Liquid air is separated into nitrogen, oxygen and argon by fractional distillation, a physical process. A compound has a fixed composition and one boiling point."
+  },
+  {
+    "id": "JAMBCHEM-D-007",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemMatter",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Separation of mixtures",
+    "stem": "Petrol, kerosene and diesel are obtained from crude oil by:",
+    "options": [
+      "filtration",
+      "fractional distillation",
+      "cracking",
+      "fractional crystallization"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The fractions boil over different temperature ranges and condense at different heights of the column. Cracking breaks large molecules; it is not how the fractions are first separated."
+  },
+  {
+    "id": "JAMBCHEM-D-008",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemMatter",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Gas laws",
+    "stem": "A gas has a volume of 380 cm³ at 47 °C and 760 mmHg. What is its volume at s.t.p.?",
+    "options": [
+      "324.2 cm³",
+      "356.2 cm³",
+      "380.0 cm³",
+      "445.4 cm³"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "With pressure already at 760 mmHg, only temperature changes: V = 380 × 273 / 320 = 324.2 cm³, where 47 °C is 320 K. 445.4 cm³ uses the inverse ratio."
+  },
+  {
+    "id": "JAMBCHEM-D-009",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemMatter",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Gas laws",
+    "stem": "At constant temperature, the pressure of a gas is doubled. What happens to its volume?",
+    "options": [
+      "It is doubled",
+      "It is halved",
+      "It is unchanged",
+      "It is quartered"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Boyle's law: pressure and volume are inversely proportional, so doubling the pressure halves the volume."
+  },
+  {
+    "id": "JAMBCHEM-D-010",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemMatter",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Gas laws",
+    "stem": "Equal volumes of all gases at the same temperature and pressure contain equal numbers of molecules. This is:",
+    "options": [
+      "Gay-Lussac's law",
+      "Graham's law",
+      "Dalton's law",
+      "Avogadro's law"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Avogadro's law links volume to the number of molecules. Gay-Lussac's law of combining volumes says reacting gases combine in simple whole-number ratios by volume."
+  },
+  {
+    "id": "JAMBCHEM-D-011",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemMatter",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Gas laws",
+    "stem": "A mixture of gases at 120 kPa contains 0.3 mol of nitrogen and 0.9 mol of oxygen. What is the partial pressure of nitrogen?",
+    "options": [
+      "30 kPa",
+      "36 kPa",
+      "40 kPa",
+      "90 kPa"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Dalton's law: partial pressure = mole fraction × total pressure = (0.3/1.2) × 120 = 30 kPa. 90 kPa is the partial pressure of oxygen, and 36 kPa multiplies 0.3 by 120 without finding the fraction."
+  },
+  {
+    "id": "JAMBCHEM-D-012",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemMatter",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Gas laws",
+    "stem": "The vapour density of a gas is 22. What is its relative molecular mass?",
+    "options": [
+      "11",
+      "22",
+      "33",
+      "44"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Relative molecular mass = 2 × vapour density = 44, since vapour density compares the gas with hydrogen, whose molecule has a mass of 2."
+  },
+  {
+    "id": "JAMBCHEM-D-013",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemMatter",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Gas laws",
+    "stem": "How many moles of gas are in a 4.1 dm³ cylinder at 2.0 atm and 127 °C? (R = 0.082 atm dm³ mol⁻¹ K⁻¹)",
+    "options": [
+      "0.25 mol",
+      "0.50 mol",
+      "0.79 mol",
+      "1.00 mol"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "n = PV/RT = (2.0 × 4.1) / (0.082 × 400) = 8.2 / 32.8 = 0.25 mol. 0.79 mol uses 127 instead of 400 K."
+  },
+  {
+    "id": "JAMBCHEM-D-014",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemMatter",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Kinetic theory",
+    "stem": "When a liquid evaporates, its temperature falls because:",
+    "options": [
+      "the fastest molecules escape",
+      "the vapour pressure falls",
+      "the molecules lose mass",
+      "the slowest molecules escape"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Molecules with the most kinetic energy leave the surface, so the average kinetic energy of those left, and so the temperature, falls."
+  },
+  {
+    "id": "JAMBCHEM-D-015",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemMatter",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Kinetic theory",
+    "stem": "Real gases behave most like ideal gases at:",
+    "options": [
+      "low temperature and high pressure",
+      "low temperature and low pressure",
+      "high temperature and low pressure",
+      "high temperature and high pressure"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "At high temperature and low pressure the molecules are far apart, so intermolecular attraction and the volume of the molecules themselves matter least."
+  },
+  {
+    "id": "JAMBCHEM-D-016",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemMatter",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Kinetic theory",
+    "stem": "Which change of state takes place without passing through the liquid state?",
+    "options": [
+      "Sublimation",
+      "Evaporation",
+      "Condensation",
+      "Melting"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Sublimation goes straight from solid to vapour, as with iodine, naphthalene and ammonium chloride."
+  },
+  {
+    "id": "JAMBCHEM-D-017",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemMatter",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Purity",
+    "stem": "The presence of an impurity in a liquid usually:",
+    "options": [
+      "lowers its density only",
+      "leaves its boiling point unchanged",
+      "raises its boiling point",
+      "lowers its boiling point"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A dissolved non-volatile impurity raises the boiling point and lowers the freezing point, which is why salted water boils above 100 °C."
+  },
+  {
+    "id": "JAMBCHEM-D-018",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemStoich",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Laws of chemical combination",
+    "stem": "Pure water from a river, rain or a laboratory always contains hydrogen and oxygen in the mass ratio 1:8. This is the law of:",
+    "options": [
+      "definite proportions",
+      "multiple proportions",
+      "conservation of mass",
+      "combining volumes"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The law of definite (constant) proportions says a pure compound always has the same elements in the same proportion by mass, whatever its source."
+  },
+  {
+    "id": "JAMBCHEM-D-019",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemStoich",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Laws of chemical combination",
+    "stem": "When a candle burns in a closed jar, the total mass of the jar and contents stays the same. This illustrates the law of:",
+    "options": [
+      "definite proportions",
+      "conservation of mass",
+      "multiple proportions",
+      "reciprocal proportions"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Matter is neither created nor destroyed in a chemical reaction; the wax and oxygen become carbon(IV) oxide and water of equal total mass."
+  },
+  {
+    "id": "JAMBCHEM-D-020",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemStoich",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mole concept",
+    "stem": "Relative atomic masses are measured relative to:",
+    "options": [
+      "the mass of one proton",
+      "the mass of a hydrogen atom",
+      "one-sixteenth of an oxygen-16 atom",
+      "one-twelfth of a carbon-12 atom"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Since 1961 the standard is carbon-12, whose atom is given a mass of exactly 12 units."
+  },
+  {
+    "id": "JAMBCHEM-D-021",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemStoich",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mole concept",
+    "stem": "What is the mass of 0.15 mol of sodium trioxocarbonate(IV), Na₂CO₃? (Na = 23, C = 12, O = 16)",
+    "options": [
+      "6.9 g",
+      "8.4 g",
+      "12.6 g",
+      "15.9 g"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Molar mass = 46 + 12 + 48 = 106 g/mol, so 0.15 mol has a mass of 15.9 g. 12.6 g uses 84 g/mol, the molar mass of sodium hydrogen trioxocarbonate(IV)."
+  },
+  {
+    "id": "JAMBCHEM-D-022",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemStoich",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Mole concept",
+    "stem": "How many oxygen atoms are in 0.5 mol of tetraoxosulphate(VI) acid, H₂SO₄? (Avogadro's number = 6.02 × 10²³)",
+    "options": [
+      "$3.01 \\times 10^{23}$",
+      "$6.02 \\times 10^{23}$",
+      "$1.204 \\times 10^{24}$",
+      "$2.408 \\times 10^{24}$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Each molecule has 4 oxygen atoms: 0.5 × 4 × 6.02 × 10²³ = 1.204 × 10²⁴. 3.01 × 10²³ is the number of molecules."
+  },
+  {
+    "id": "JAMBCHEM-D-023",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemStoich",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Stoichiometry",
+    "stem": "What mass of calcium oxide is obtained by heating 25 g of limestone, CaCO₃, to constant mass? (Ca = 40, C = 12, O = 16)",
+    "options": [
+      "11 g",
+      "14 g",
+      "25 g",
+      "56 g"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "CaCO₃ → CaO + CO₂. 25 g is 0.25 mol, giving 0.25 mol of CaO (56 g/mol), 14 g. 11 g is the mass of carbon(IV) oxide given off."
+  },
+  {
+    "id": "JAMBCHEM-D-024",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemStoich",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Stoichiometry",
+    "stem": "In 2C₂H₆ + 7O₂ → 4CO₂ + 6H₂O, what volume of oxygen is needed to burn 30 cm³ of ethane, all volumes at the same temperature and pressure?",
+    "options": [
+      "30 cm³",
+      "60 cm³",
+      "105 cm³",
+      "210 cm³"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "By Gay-Lussac's law the volume ratio equals the mole ratio, 2 : 7, so oxygen = 30 × 7/2 = 105 cm³. 210 cm³ uses 7 without dividing by 2."
+  },
+  {
+    "id": "JAMBCHEM-D-025",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemStoich",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Equations",
+    "stem": "In the balanced equation 4Al + xO₂ → 2Al₂O₃, what is the value of x?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "6"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The right side has 2 × 3 = 6 oxygen atoms, so x O₂ must supply 6 atoms: x = 3."
+  },
+  {
+    "id": "JAMBCHEM-D-026",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemStoich",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Empirical formula",
+    "stem": "A compound contains 40% calcium, 12% carbon and 48% oxygen by mass. What is its formula? (Ca = 40, C = 12, O = 16)",
+    "options": [
+      "CaCO₂",
+      "CaC₂O₄",
+      "CaCO₃",
+      "Ca₂CO₃"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Mole ratio Ca : C : O = 40/40 : 12/12 : 48/16 = 1 : 1 : 3, so the formula is CaCO₃."
+  },
+  {
+    "id": "JAMBCHEM-D-027",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemStoich",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Molecular formula",
+    "stem": "A compound has the empirical formula CH₂O and a relative molecular mass of 180. What is its molecular formula? (C = 12, H = 1, O = 16)",
+    "options": [
+      "C₂H₄O₂",
+      "C₁₂H₂₂O₁₁",
+      "C₃H₆O₃",
+      "C₆H₁₂O₆"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "CH₂O has a mass of 30, and 180/30 = 6, so the molecular formula is C₆H₁₂O₆, glucose. C₁₂H₂₂O₁₁ is sucrose, a different empirical formula."
+  },
+  {
+    "id": "JAMBCHEM-D-028",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemStoich",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Solubility",
+    "stem": "The solubility of most solid salts in water:",
+    "options": [
+      "does not depend on temperature",
+      "increases as temperature rises",
+      "depends only on pressure",
+      "decreases as temperature rises"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Most solubility curves slope upward, which is why a hot saturated solution deposits crystals on cooling. Gases behave the other way."
+  },
+  {
+    "id": "JAMBCHEM-D-029",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemStoich",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Solubility curves",
+    "stem": "A salt's solubility is 0.60 mol dm⁻³ at 60 °C and 0.25 mol dm⁻³ at 20 °C. How many moles crystallize when 2 dm³ of the saturated solution is cooled from 60 °C to 20 °C?",
+    "options": [
+      "0.25 mol",
+      "0.35 mol",
+      "0.50 mol",
+      "0.70 mol"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Each dm³ deposits 0.60 minus 0.25 = 0.35 mol, so 2 dm³ deposits 0.70 mol. 0.35 mol is for one dm³ only."
+  },
+  {
+    "id": "JAMBCHEM-D-030",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemStoich",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Solvents",
+    "stem": "Which solvent is best for removing a grease stain from a shirt?",
+    "options": [
+      "Brine",
+      "Kerosene",
+      "Water",
+      "Ethanoic acid"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Grease is non-polar and dissolves in a non-polar solvent such as kerosene or turpentine. Water does not dissolve fats."
+  },
+  {
+    "id": "JAMBCHEM-D-031",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemStoich",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Suspensions and colloids",
+    "stem": "Which property distinguishes a suspension from a true solution?",
+    "options": [
+      "Its particles settle on standing",
+      "It is always strongly coloured",
+      "It passes through filter paper",
+      "It conducts electricity"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Suspended particles are large enough to settle and be trapped by filter paper. True solutions never settle."
+  },
+  {
+    "id": "JAMBCHEM-D-032",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemStoich",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Suspensions and colloids",
+    "stem": "Scattering of a light beam by the particles of a colloid is called the:",
+    "options": [
+      "Tyndall effect",
+      "Brownian effect",
+      "photoelectric effect",
+      "Joule effect"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Colloidal particles are big enough to scatter light, so the beam is visible, as in sunlight through dusty air. True solutions do not scatter light."
+  },
+  {
+    "id": "JAMBCHEM-D-033",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemAtomic",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Quantum numbers",
+    "stem": "The principal quantum number, n, of an electron tells you its:",
+    "options": [
+      "orbital shape",
+      "main energy level (shell)",
+      "direction of spin",
+      "orbital orientation in space"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "n = 1, 2, 3 ... names the shell, and higher n means higher energy and a larger orbit. The azimuthal number gives the shape, the magnetic number the orientation and the spin number the spin."
+  },
+  {
+    "id": "JAMBCHEM-D-034",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemAtomic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Atomic models",
+    "stem": "Millikan's oil-drop experiment determined the:",
+    "options": [
+      "charge-to-mass ratio of a neutron",
+      "mass of a proton",
+      "size of the nucleus",
+      "charge on an electron"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Millikan found that the charges on oil drops were always whole-number multiples of one smallest charge, the charge on the electron. Thomson had measured the electron's charge-to-mass ratio."
+  },
+  {
+    "id": "JAMBCHEM-D-035",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemAtomic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electron configuration",
+    "stem": "Which rule says that electrons fill degenerate orbitals singly before pairing?",
+    "options": [
+      "Pauli exclusion principle",
+      "Aufbau principle",
+      "Octet rule",
+      "Hund's rule"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Hund's rule of maximum multiplicity explains why nitrogen has three unpaired 2p electrons. Pauli says no two electrons share all four quantum numbers."
+  },
+  {
+    "id": "JAMBCHEM-D-036",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemAtomic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electron configuration",
+    "stem": "An element has the configuration 1s² 2s² 2p⁶ 3s² 3p¹. To which group of the periodic table does it belong?",
+    "options": [
+      "Group 1 (IA)",
+      "Group 3 (IIIA)",
+      "Group 5 (VA)",
+      "Group 2 (IIA)"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "It has three outer electrons (3s² 3p¹), so it is in Group 3; it is aluminium."
+  },
+  {
+    "id": "JAMBCHEM-D-037",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemAtomic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Isotopes",
+    "stem": "Protium, deuterium and tritium, the three isotopes of hydrogen, differ in their number of:",
+    "options": [
+      "protons",
+      "valence electrons",
+      "electrons",
+      "neutrons"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "All three have one proton and one electron; they have 0, 1 and 2 neutrons, so their mass numbers are 1, 2 and 3."
+  },
+  {
+    "id": "JAMBCHEM-D-038",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemAtomic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Orbitals",
+    "stem": "The shape of an s orbital is:",
+    "options": [
+      "tetrahedral",
+      "planar",
+      "dumb-bell",
+      "spherical"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An s orbital is spherical around the nucleus; each p orbital is dumb-bell shaped along one axis."
+  },
+  {
+    "id": "JAMBCHEM-D-039",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemAtomic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Periodicity",
+    "stem": "Down Group 1 from lithium to potassium, the atomic radius:",
+    "options": [
+      "decreases",
+      "increases",
+      "falls then rises",
+      "stays the same"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Each element down the group adds a new electron shell, so the outer electron sits further from the nucleus."
+  },
+  {
+    "id": "JAMBCHEM-D-040",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemAtomic",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Periodicity",
+    "stem": "Which element of Period 3 (sodium to argon) has the highest electronegativity?",
+    "options": [
+      "Chlorine",
+      "Argon",
+      "Sodium",
+      "Sulphur"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Electronegativity rises across a period as nuclear charge grows, so chlorine is highest among the elements that form bonds. Argon, a noble gas, is usually given no value, and sodium is the lowest."
+  },
+  {
+    "id": "JAMBCHEM-D-041",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemAtomic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Periodicity",
+    "stem": "Neon is used in advertising signs and is unreactive because its atom has:",
+    "options": [
+      "seven electrons in its outer shell",
+      "a full outer shell of eight electrons",
+      "no electrons in its outer shell",
+      "one electron in its outer shell"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Neon (2, 8) is a noble gas in Group 0 (18). A full octet means it neither gains, loses nor shares electrons easily."
+  },
+  {
+    "id": "JAMBCHEM-D-042",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemAtomic",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Chemical bonding",
+    "stem": "Ethanol mixes with water in all proportions, but ethane hardly dissolves in water. This is because ethanol:",
+    "options": [
+      "forms hydrogen bonds with water",
+      "contains a metallic bond",
+      "is an ionic compound",
+      "has a larger molar mass"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The O-H group of ethanol forms hydrogen bonds with water molecules. Ethane is non-polar and cannot. Ethanol is covalent, not ionic."
+  },
+  {
+    "id": "JAMBCHEM-D-043",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemAtomic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Chemical bonding",
+    "stem": "Which substance contains a coordinate bond?",
+    "options": [
+      "CH₃CH₂OH",
+      "CH₄",
+      "[Cu(NH₃)₄]²⁺",
+      "NaCl"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "In the tetraamminecopper(II) ion each ammonia donates a lone pair to the copper ion. NaCl is ionic, and CH₄ and ethanol have only ordinary covalent bonds."
+  },
+  {
+    "id": "JAMBCHEM-D-044",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemAtomic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Shapes of molecules",
+    "stem": "The shape of the ammonia molecule is:",
+    "options": [
+      "pyramidal",
+      "tetrahedral",
+      "planar",
+      "linear"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Nitrogen has three bonding pairs and one lone pair; the lone pair pushes the hydrogens down into a pyramid."
+  },
+  {
+    "id": "JAMBCHEM-D-045",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemAtomic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Nuclear chemistry",
+    "stem": "An alpha particle is identical to:",
+    "options": [
+      "a helium nucleus",
+      "a fast electron",
+      "a high-energy photon",
+      "a hydrogen nucleus"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An alpha particle is two protons and two neutrons, ⁴₂He²⁺. A fast electron is a beta particle and a photon is gamma radiation."
+  },
+  {
+    "id": "JAMBCHEM-D-046",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemAtomic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Nuclear chemistry",
+    "stem": "When a nucleus emits a beta particle, its atomic number:",
+    "options": [
+      "decreases by two",
+      "stays the same",
+      "increases by one",
+      "decreases by one"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A neutron becomes a proton and an electron is ejected, so the atomic number rises by 1 while the mass number is unchanged."
+  },
+  {
+    "id": "JAMBCHEM-D-047",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemAtomic",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Nuclear chemistry",
+    "stem": "A 64 g sample of a radioisotope decays until only 8 g remains, which takes 27 minutes. What is its half-life?",
+    "options": [
+      "9 min",
+      "13.5 min",
+      "18 min",
+      "27 min"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "64 → 32 → 16 → 8 g is three half-lives in 27 minutes, so each is 9 minutes. 13.5 min counts only two halvings, and 27 min is the whole time."
+  },
+  {
+    "id": "JAMBCHEM-D-048",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemAtomic",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Nuclear chemistry",
+    "stem": "Which radioisotope is used to estimate the age of old wood, bones and cloth?",
+    "options": [
+      "Cobalt-60",
+      "Carbon-14",
+      "Iodine-131",
+      "Uranium-238"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Living things take in carbon-14 while alive; after death it decays with a half-life of about 5,700 years, so the fraction left gives the age. Cobalt-60 treats cancer and iodine-131 the thyroid."
+  },
+  {
+    "id": "JAMBCHEM-D-049",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemAcids",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Properties of acids",
+    "stem": "An acid turns blue litmus paper:",
+    "options": [
+      "green",
+      "red",
+      "yellow",
+      "colourless"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Litmus is red in acid and blue in alkali, so blue litmus turns red in an acid."
+  },
+  {
+    "id": "JAMBCHEM-D-050",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemAcids",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Definitions",
+    "stem": "In the Brønsted-Lowry theory, an acid is a substance that:",
+    "options": [
+      "releases hydroxide ions",
+      "donates a proton",
+      "donates a lone pair",
+      "accepts a proton"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A Brønsted-Lowry acid is a proton (H⁺) donor and a base is a proton acceptor."
+  },
+  {
+    "id": "JAMBCHEM-D-051",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemAcids",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Strong and weak acids",
+    "stem": "Which of these is a strong acid?",
+    "options": [
+      "Ethanoic acid",
+      "Trioxonitrate(V) acid",
+      "Citric acid",
+      "Trioxocarbonate(IV) acid"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "HNO₃ ionizes completely in water. Ethanoic, trioxocarbonate(IV) and citric acids are weak: only a small fraction of their molecules ionize."
+  },
+  {
+    "id": "JAMBCHEM-D-052",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemAcids",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Preparation of salts",
+    "stem": "Which salt is best prepared by precipitation?",
+    "options": [
+      "Potassium trioxonitrate(V)",
+      "Zinc tetraoxosulphate(VI)",
+      "Lead(II) chloride",
+      "Sodium chloride"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Lead(II) chloride is insoluble, so it forms as a precipitate when solutions of a lead salt and a chloride are mixed. Soluble salts are made by neutralization or by action of acid on a metal."
+  },
+  {
+    "id": "JAMBCHEM-D-053",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemAcids",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Strong and weak acids",
+    "stem": "1 mol dm⁻³ hydrochloric acid conducts electricity better than 1 mol dm⁻³ ethanoic acid because hydrochloric acid:",
+    "options": [
+      "is fully ionized in water",
+      "is more concentrated",
+      "contains more hydrogen atoms",
+      "has a higher molar mass"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Conductance depends on the number of ions present. At the same concentration HCl ionizes completely, while ethanoic acid is only slightly ionized."
+  },
+  {
+    "id": "JAMBCHEM-D-054",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemAcids",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Indicators",
+    "stem": "Which indicator is most suitable for titrating ethanoic acid with sodium hydroxide?",
+    "options": [
+      "Methyl red",
+      "Litmus solution",
+      "Methyl orange",
+      "Phenolphthalein"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A weak acid and strong base give an end point above pH 7, which matches phenolphthalein's range (about 8.3 to 10). Methyl orange changes in acid."
+  },
+  {
+    "id": "JAMBCHEM-D-055",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemAcids",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Titration",
+    "stem": "What volume of 0.20 mol dm⁻³ H₂SO₄ neutralizes 30.0 cm³ of 0.50 mol dm⁻³ KOH?",
+    "options": [
+      "12.0 cm³",
+      "18.75 cm³",
+      "37.5 cm³",
+      "75.0 cm³"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "H₂SO₄ + 2KOH → K₂SO₄ + 2H₂O. Moles of KOH = 0.015, so acid = 0.0075 mol, and volume = 0.0075 / 0.20 = 0.0375 dm³ = 37.5 cm³. 75.0 cm³ ignores the 1 : 2 ratio."
+  },
+  {
+    "id": "JAMBCHEM-D-056",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemAcids",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Buffers",
+    "stem": "A buffer solution is one that:",
+    "options": [
+      "keeps its pH nearly constant",
+      "always has a pH of exactly 7",
+      "changes colour at its end point",
+      "neutralizes any amount of acid"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A mixture such as ethanoic acid and sodium ethanoate keeps its pH almost steady when small amounts of acid or base are added. Blood is buffered near pH 7.4."
+  },
+  {
+    "id": "JAMBCHEM-D-057",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemAcids",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "pH",
+    "stem": "A solution of pH 2 has how many times the hydrogen ion concentration of a solution of pH 5?",
+    "options": [
+      "3",
+      "30",
+      "100",
+      "1000"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Each pH unit is a factor of ten, so three units is 10³ = 1000. 3 is the difference in pH, not in concentration."
+  },
+  {
+    "id": "JAMBCHEM-D-058",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemAcids",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Redox",
+    "stem": "Oxidation is defined in terms of electron transfer as:",
+    "options": [
+      "gain of hydrogen",
+      "loss of electrons",
+      "gain of electrons",
+      "loss of oxygen"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Oxidation is loss of electrons and reduction is gain (OIL RIG). Gain of hydrogen and loss of oxygen are reduction."
+  },
+  {
+    "id": "JAMBCHEM-D-059",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemAcids",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Oxidation numbers",
+    "stem": "What is the oxidation number of sulphur in H₂S?",
+    "options": [
+      "-2",
+      "+2",
+      "+4",
+      "+6"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Each hydrogen is +1, so sulphur must be -2 to make the molecule neutral."
+  },
+  {
+    "id": "JAMBCHEM-D-060",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemAcids",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Oxidizing and reducing agents",
+    "stem": "Acidified potassium heptaoxodichromate(VI) changes from orange to green when it:",
+    "options": [
+      "is neutralized by an alkali",
+      "oxidizes a reducing agent",
+      "reduces an oxidizing agent",
+      "is diluted with water"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The orange Cr₂O₇²⁻ ion is reduced to green Cr³⁺ while it oxidizes something else, such as sulphur(IV) oxide or ethanol. It is a test for reducing agents."
+  },
+  {
+    "id": "JAMBCHEM-D-061",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemAcids",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Redox",
+    "stem": "Which change is a reduction?",
+    "options": [
+      "Fe²⁺ → Fe³⁺",
+      "Cl⁻ → Cl₂",
+      "Fe³⁺ → Fe²⁺",
+      "Cu → Cu²⁺"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Fe³⁺ gains an electron to become Fe²⁺, so its oxidation number falls from +3 to +2. The other three changes all lose electrons."
+  },
+  {
+    "id": "JAMBCHEM-D-062",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemAcids",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Balancing redox equations",
+    "stem": "In MnO₄⁻ + 8H⁺ + ne⁻ → Mn²⁺ + 4H₂O, what is the value of n?",
+    "options": [
+      "3",
+      "5",
+      "7",
+      "8"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Manganese goes from +7 to +2, a gain of 5 electrons. Check: charge on the left is -1 + 8 - 5 = +2, matching Mn²⁺."
+  },
+  {
+    "id": "JAMBCHEM-D-063",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemAcids",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "IUPAC nomenclature",
+    "stem": "The IUPAC name of K₂CO₃ is potassium:",
+    "options": [
+      "tetraoxocarbonate(IV)",
+      "dioxocarbonate(IV)",
+      "trioxocarbonate(II)",
+      "trioxocarbonate(IV)"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The anion has three oxygens and carbon is in the +4 state, so it is trioxocarbonate(IV)."
+  },
+  {
+    "id": "JAMBCHEM-D-064",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemPhysical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electrolytes",
+    "stem": "Which of these is a non-electrolyte?",
+    "options": [
+      "Dilute sulphuric acid",
+      "Sodium chloride solution",
+      "Molten lead(II) bromide",
+      "Sugar solution"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Sugar dissolves as neutral molecules, so its solution has no free ions to carry current."
+  },
+  {
+    "id": "JAMBCHEM-D-065",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemPhysical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Products of electrolysis",
+    "stem": "During the electrolysis of dilute tetraoxosulphate(VI) acid with platinum electrodes, the ratio of the volume of hydrogen to oxygen is:",
+    "options": [
+      "4 : 1",
+      "1 : 1",
+      "1 : 2",
+      "2 : 1"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "This is in effect the electrolysis of water, 2H₂O → 2H₂ + O₂: twice as much hydrogen as oxygen by volume."
+  },
+  {
+    "id": "JAMBCHEM-D-066",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemPhysical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Products of electrolysis",
+    "stem": "When copper(II) tetraoxosulphate(VI) solution is electrolysed with copper electrodes, the anode:",
+    "options": [
+      "gives off hydrogen",
+      "gains a coating of copper",
+      "gives off oxygen",
+      "dissolves, losing mass"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Copper atoms at the anode lose electrons and go into solution as Cu²⁺, so the anode loses mass while the cathode gains it. This is how copper is purified."
+  },
+  {
+    "id": "JAMBCHEM-D-067",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemPhysical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Uses of electrolysis",
+    "stem": "Sodium metal is extracted industrially by electrolysis of:",
+    "options": [
+      "molten sodium tetraoxosulphate(VI)",
+      "sodium chloride solution",
+      "molten sodium chloride",
+      "sodium trioxocarbonate(IV) solution"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "From aqueous solution hydrogen, not sodium, is discharged at the cathode, so the molten chloride is used (Downs cell)."
+  },
+  {
+    "id": "JAMBCHEM-D-068",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemPhysical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Faraday's laws",
+    "stem": "A current of 4.0 A deposits 1.92 g of copper from copper(II) solution. For how long did it flow? (Cu = 64, F = 96500 C mol⁻¹)",
+    "options": [
+      "482.5 s",
+      "723.8 s",
+      "1447.5 s",
+      "2895.0 s"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "1.92 g is 0.03 mol of Cu, needing 0.06 F = 5790 C. Time = 5790 / 4.0 = 1447.5 s. 723.8 s treats copper as Cu⁺."
+  },
+  {
+    "id": "JAMBCHEM-D-069",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemPhysical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Energy changes",
+    "stem": "A reaction gives out heat to its surroundings. Its enthalpy change is:",
+    "options": [
+      "always above 100 kJ",
+      "zero",
+      "positive",
+      "negative"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "In an exothermic reaction the products have less enthalpy than the reactants, so ΔH is negative."
+  },
+  {
+    "id": "JAMBCHEM-D-070",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemPhysical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Entropy",
+    "stem": "Which change involves an increase in entropy?",
+    "options": [
+      "Two gases mixing in a closed flask",
+      "Steam condensing to water",
+      "A gas being compressed at constant temperature",
+      "Ammonia and hydrogen chloride forming solid ammonium chloride"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Entropy is a measure of disorder; mixed gases are more disordered than separate ones. The other three changes make the system more ordered."
+  },
+  {
+    "id": "JAMBCHEM-D-071",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemPhysical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Spontaneity",
+    "stem": "A reaction is at equilibrium when:",
+    "options": [
+      "ΔS is negative",
+      "ΔG is negative",
+      "ΔG = 0",
+      "ΔH = 0"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "When ΔG = 0 there is no driving force in either direction. A negative ΔG means the forward change is spontaneous."
+  },
+  {
+    "id": "JAMBCHEM-D-072",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemPhysical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Spontaneity",
+    "stem": "A reaction has ΔH = +60 kJ mol⁻¹ and ΔS = +150 J K⁻¹ mol⁻¹. Above what temperature is it spontaneous?",
+    "options": [
+      "0.4 K",
+      "2.5 K",
+      "90 K",
+      "400 K"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "It becomes spontaneous when TΔS exceeds ΔH: T = 60000 / 150 = 400 K. 0.4 K leaves ΔH in kilojoules."
+  },
+  {
+    "id": "JAMBCHEM-D-073",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemPhysical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Activation energy",
+    "stem": "On an energy profile, the reactants are at 50 kJ mol⁻¹, the top of the curve at 130 kJ mol⁻¹ and the products at 20 kJ mol⁻¹. What is the activation energy of the forward reaction?",
+    "options": [
+      "30 kJ mol⁻¹",
+      "80 kJ mol⁻¹",
+      "110 kJ mol⁻¹",
+      "130 kJ mol⁻¹"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Activation energy = top of the curve minus the reactants = 130 - 50 = 80 kJ mol⁻¹. 110 kJ mol⁻¹ is the activation energy of the backward reaction, and 30 kJ mol⁻¹ is the size of ΔH."
+  },
+  {
+    "id": "JAMBCHEM-D-074",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemPhysical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rates of reaction",
+    "stem": "Which reaction is speeded up by light?",
+    "options": [
+      "Magnesium with hydrochloric acid",
+      "Marble with hydrochloric acid",
+      "Hydrogen peroxide with manganese(IV) oxide",
+      "Methane with chlorine"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The chlorination of an alkane is a photochemical reaction: light splits chlorine molecules into reactive atoms. Manganese(IV) oxide acts as a catalyst, not light."
+  },
+  {
+    "id": "JAMBCHEM-D-075",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemPhysical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Rates of reaction",
+    "stem": "Sodium thiosulphate reacts with acid to give a sulphur cloudiness. If the cross takes 80 s to disappear at 30 °C, and the rate doubles for every 10 °C rise, how long will it take at 50 °C?",
+    "options": [
+      "20 s",
+      "40 s",
+      "160 s",
+      "320 s"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "A 20 °C rise doubles the rate twice, making it four times faster, so the time is 80 / 4 = 20 s. 40 s doubles only once."
+  },
+  {
+    "id": "JAMBCHEM-D-076",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemPhysical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Chemical equilibrium",
+    "stem": "In the Haber process, N₂ + 3H₂ ⇌ 2NH₃ (ΔH negative), high pressure is used because it:",
+    "options": [
+      "makes the reaction endothermic",
+      "favours the side with fewer gas molecules",
+      "removes the need for any catalyst",
+      "speeds up only the backward reaction"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Four moles of gas react to give two, so higher pressure pushes the equilibrium toward ammonia. An iron catalyst is still used."
+  },
+  {
+    "id": "JAMBCHEM-D-077",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemPhysical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Chemical equilibrium",
+    "stem": "A dynamic equilibrium is reached when:",
+    "options": [
+      "all reactants have been used up",
+      "the reaction has completely stopped",
+      "forward and backward rates are equal",
+      "the product concentration is zero"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Both reactions continue at equal rates, so the concentrations stay constant even though molecules keep reacting."
+  },
+  {
+    "id": "JAMBCHEM-D-078",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemNonmetals",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hydrogen",
+    "stem": "Industrially, hydrogen can be obtained from water gas, a mixture of:",
+    "options": [
+      "methane and steam",
+      "nitrogen and hydrogen",
+      "carbon(IV) oxide and hydrogen",
+      "carbon(II) oxide and hydrogen"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Steam passed over red-hot coke gives water gas, CO + H₂. The hydrogen is then separated from the carbon(II) oxide."
+  },
+  {
+    "id": "JAMBCHEM-D-079",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemNonmetals",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Halogens",
+    "stem": "Chlorine is prepared in the laboratory by heating concentrated hydrochloric acid with:",
+    "options": [
+      "zinc granules",
+      "calcium trioxocarbonate(IV)",
+      "sodium hydroxide",
+      "manganese(IV) oxide"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "MnO₂ oxidizes HCl to chlorine: MnO₂ + 4HCl → MnCl₂ + Cl₂ + 2H₂O. Zinc and hydrochloric acid give hydrogen."
+  },
+  {
+    "id": "JAMBCHEM-D-080",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemNonmetals",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Halogens",
+    "stem": "Which reagent confirms the presence of chloride ions in a solution?",
+    "options": [
+      "Lime water",
+      "Acidified potassium heptaoxodichromate(VI)",
+      "Silver trioxonitrate(V) with dilute HNO₃",
+      "Barium chloride with dilute HCl"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Chloride ions give a white precipitate of silver chloride that dissolves in ammonia solution. Barium chloride tests for tetraoxosulphate(VI) ions."
+  },
+  {
+    "id": "JAMBCHEM-D-081",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemNonmetals",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Oxygen",
+    "stem": "Oxygen is obtained commercially by:",
+    "options": [
+      "decomposing hydrogen peroxide solution",
+      "heating potassium trioxochlorate(V)",
+      "fractional distillation of liquid air",
+      "electrolysis of brine"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Liquid air is distilled: nitrogen (b.p. -196 °C) boils off before oxygen (b.p. -183 °C). The other methods are laboratory or by-product routes."
+  },
+  {
+    "id": "JAMBCHEM-D-082",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemNonmetals",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ozone",
+    "stem": "Ozone, O₃, is described as an allotrope of oxygen because it:",
+    "options": [
+      "is a different form of the same element",
+      "contains a different isotope of oxygen",
+      "is oxygen in the liquid state",
+      "is a compound of oxygen and hydrogen"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Allotropes are forms of one element in the same physical state that differ in the arrangement of atoms: O₂ and O₃."
+  },
+  {
+    "id": "JAMBCHEM-D-083",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemNonmetals",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Water",
+    "stem": "A substance that absorbs moisture from the air and dissolves in it, such as calcium chloride, is described as:",
+    "options": [
+      "anhydrous",
+      "hygroscopic only",
+      "efflorescent",
+      "deliquescent"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Deliquescent substances take in enough water to form a solution. Hygroscopic substances absorb water without dissolving, and efflorescent crystals lose their water of crystallization to the air."
+  },
+  {
+    "id": "JAMBCHEM-D-084",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemNonmetals",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Hardness of water",
+    "stem": "Permanent hardness of water can be removed by adding:",
+    "options": [
+      "washing soda",
+      "slaked lime only",
+      "alum",
+      "chlorine"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Sodium trioxocarbonate(IV) precipitates the Ca²⁺ and Mg²⁺ ions as insoluble trioxocarbonates(IV). Boiling does not remove permanent hardness."
+  },
+  {
+    "id": "JAMBCHEM-D-085",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemNonmetals",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Water",
+    "stem": "Water dissolves many ionic salts, such as sodium chloride, because its molecules are:",
+    "options": [
+      "very large",
+      "polar",
+      "non-polar",
+      "ionic"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The partly negative oxygen and partly positive hydrogens of water attract the ions and pull them out of the crystal. Non-polar solvents such as kerosene do not dissolve salts."
+  },
+  {
+    "id": "JAMBCHEM-D-086",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemNonmetals",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sulphur compounds",
+    "stem": "Hydrogen sulphide is identified by its smell and by turning:",
+    "options": [
+      "damp red litmus blue",
+      "lime water milky",
+      "lead(II) ethanoate paper black",
+      "starch-iodide paper blue-black"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "H₂S gives black lead(II) sulphide with lead(II) ethanoate paper. It smells of rotten eggs."
+  },
+  {
+    "id": "JAMBCHEM-D-087",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemNonmetals",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Nitrogen compounds",
+    "stem": "In the Haber process for ammonia, the catalyst used is:",
+    "options": [
+      "finely divided nickel",
+      "platinum gauze",
+      "finely divided iron",
+      "vanadium(V) oxide"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Iron speeds up N₂ + 3H₂ ⇌ 2NH₃ at about 450 °C and 200 atm. Platinum gauze catalyses the oxidation of ammonia in making trioxonitrate(V) acid."
+  },
+  {
+    "id": "JAMBCHEM-D-088",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemNonmetals",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Nitrogen compounds",
+    "stem": "Heating copper(II) trioxonitrate(V) gives copper(II) oxide, oxygen and a brown gas. The brown gas is:",
+    "options": [
+      "nitrogen(I) oxide",
+      "nitrogen(IV) oxide",
+      "nitrogen(II) oxide",
+      "nitrogen gas"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "2Cu(NO₃)₂ → 2CuO + 4NO₂ + O₂. Nitrogen(IV) oxide is the reddish-brown gas; nitrogen(II) oxide is colourless."
+  },
+  {
+    "id": "JAMBCHEM-D-089",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemNonmetals",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Carbon",
+    "stem": "Activated charcoal is used in water filters and gas masks because it:",
+    "options": [
+      "kills bacteria by oxidizing them",
+      "adsorbs gases and coloured impurities",
+      "reacts with water to make it pure",
+      "dissolves poisonous gases in its pores"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Charcoal is a porous form of carbon with a huge surface area, so molecules of gases and dyes stick to its surface (adsorption)."
+  },
+  {
+    "id": "JAMBCHEM-D-090",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemNonmetals",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Carbon compounds",
+    "stem": "On heating, which trioxocarbonate(IV) does NOT decompose?",
+    "options": [
+      "Calcium trioxocarbonate(IV)",
+      "Zinc trioxocarbonate(IV)",
+      "Sodium trioxocarbonate(IV)",
+      "Copper(II) trioxocarbonate(IV)"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Trioxocarbonates(IV) of sodium and potassium are stable to heat. Those of calcium, zinc and copper break down to the oxide and carbon(IV) oxide."
+  },
+  {
+    "id": "JAMBCHEM-D-091",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemNonmetals",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Coal",
+    "stem": "Destructive distillation of coal gives coke, coal tar, ammoniacal liquor and:",
+    "options": [
+      "petrol",
+      "coal gas",
+      "synthesis gas",
+      "natural gas"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Heating coal strongly without air drives off coal gas and the liquid products, leaving coke. Synthesis gas is made from coke or methane afterwards."
+  },
+  {
+    "id": "JAMBCHEM-D-092",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemNonmetals",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Air",
+    "stem": "Which noble gas makes up nearly 1% of dry air by volume?",
+    "options": [
+      "Neon",
+      "Argon",
+      "Krypton",
+      "Helium"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Dry air is about 78% nitrogen, 21% oxygen, 0.9% argon and 0.04% carbon(IV) oxide. Neon, helium and krypton are present only in traces."
+  },
+  {
+    "id": "JAMBCHEM-D-093",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemNonmetals",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Air pollution",
+    "stem": "Burning PVC (polyvinyl chloride) waste in an open dump pollutes the air with:",
+    "options": [
+      "hydrogen chloride and other toxic fumes",
+      "pure carbon(IV) oxide and water only",
+      "oxygen and nitrogen",
+      "chlorofluorocarbons"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "PVC contains chlorine, so burning it gives off acidic hydrogen chloride along with soot and other toxic compounds. Plastics should be recycled or disposed of safely, not burned in the open."
+  },
+  {
+    "id": "JAMBCHEM-D-094",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemNonmetals",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Soil and water pollution",
+    "stem": "Which of these is a non-biodegradable pollutant?",
+    "options": [
+      "Old newspapers",
+      "Food waste",
+      "Cow dung",
+      "Polythene bags"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Microorganisms cannot break down polythene, so it persists in soil and drains for many years. The others rot naturally."
+  },
+  {
+    "id": "JAMBCHEM-D-095",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemMetals",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Properties of metals",
+    "stem": "Metals conduct electricity because they have:",
+    "options": [
+      "high melting points",
+      "shared pairs of electrons",
+      "free-moving ions in solution",
+      "mobile delocalized electrons"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "In metallic bonding, outer electrons are free to move through the lattice of positive ions and carry the current."
+  },
+  {
+    "id": "JAMBCHEM-D-096",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemMetals",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sodium compounds",
+    "stem": "Sodium hydroxide is produced industrially by:",
+    "options": [
+      "electrolysis of brine",
+      "the Solvay process",
+      "heating sodium trioxocarbonate(IV)",
+      "burning sodium in air"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Electrolysis of concentrated sodium chloride solution gives chlorine at the anode, hydrogen at the cathode, and sodium hydroxide in solution."
+  },
+  {
+    "id": "JAMBCHEM-D-097",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemMetals",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Sodium compounds",
+    "stem": "Sodium hydroxide solution added drop by drop, then in excess, to a solution gives a white precipitate that dissolves in excess. The metal ion could be:",
+    "options": [
+      "Fe²⁺",
+      "Cu²⁺",
+      "Ca²⁺",
+      "Zn²⁺"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Zinc hydroxide is amphoteric and dissolves in excess alkali to form a zincate. Calcium hydroxide stays as a white precipitate, iron(II) gives green and copper(II) blue."
+  },
+  {
+    "id": "JAMBCHEM-D-098",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemMetals",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Calcium",
+    "stem": "Quicklime, CaO, is obtained by:",
+    "options": [
+      "electrolysis of calcium chloride",
+      "heating limestone strongly",
+      "dissolving chalk in acid",
+      "adding water to lime"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "CaCO₃ → CaO + CO₂ on strong heating, as in a lime kiln. Adding water to quicklime gives slaked lime, Ca(OH)₂."
+  },
+  {
+    "id": "JAMBCHEM-D-099",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemMetals",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Calcium",
+    "stem": "Mortar sets and hardens mainly because calcium hydroxide:",
+    "options": [
+      "loses its water of crystallization",
+      "dissolves slowly in rain water",
+      "reacts chemically with the sand",
+      "absorbs carbon(IV) oxide from the air"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Slaked lime in mortar slowly reacts with carbon(IV) oxide to form hard calcium trioxocarbonate(IV), binding the sand grains."
+  },
+  {
+    "id": "JAMBCHEM-D-100",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemMetals",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Aluminium",
+    "stem": "Aluminium resists corrosion even though it is a reactive metal because:",
+    "options": [
+      "a thin oxide layer protects it",
+      "it lies below iron in the series",
+      "it is always coated with paint",
+      "it does not react with oxygen"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A tough, unreactive layer of aluminium oxide forms at once on the surface and stops further attack."
+  },
+  {
+    "id": "JAMBCHEM-D-101",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemMetals",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Tin",
+    "stem": "Tin is used to coat iron food cans because tin:",
+    "options": [
+      "is more reactive than iron",
+      "makes the can magnetic",
+      "is unreactive and non-toxic",
+      "is cheaper than iron"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Tin resists attack by food acids. If the coating is scratched, though, the iron rusts faster, since iron is more reactive than tin."
+  },
+  {
+    "id": "JAMBCHEM-D-102",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemMetals",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Transition metals",
+    "stem": "What is the electron configuration of iron, atomic number 26?",
+    "options": [
+      "[Ar] 3d⁶ 4s²",
+      "[Ar] 4s² 4p⁶",
+      "[Ar] 3d⁷ 4s¹",
+      "[Ar] 3d⁸"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "After argon (18 electrons), 4s fills before 3d: 4s² then 3d⁶, giving 26 electrons."
+  },
+  {
+    "id": "JAMBCHEM-D-103",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemMetals",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Iron",
+    "stem": "Steel is preferred to cast iron for building bridges because steel:",
+    "options": [
+      "has a much lower density",
+      "contains more carbon",
+      "is stronger and less brittle",
+      "never rusts in moist air"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Cast iron has about 3 to 4% carbon and is brittle. Steel has much less carbon, so it is tough and can be rolled and welded."
+  },
+  {
+    "id": "JAMBCHEM-D-104",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemMetals",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Iron",
+    "stem": "Adding sodium hydroxide to a solution gives a reddish-brown precipitate. The solution contains:",
+    "options": [
+      "Fe³⁺ ions",
+      "Fe²⁺ ions",
+      "Cu²⁺ ions",
+      "Zn²⁺ ions"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Iron(III) hydroxide is reddish-brown. Iron(II) hydroxide is dirty green, copper(II) hydroxide blue and zinc hydroxide white."
+  },
+  {
+    "id": "JAMBCHEM-D-105",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemMetals",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Copper",
+    "stem": "Copper(II) tetraoxosulphate(VI) crystals turn white when heated because they:",
+    "options": [
+      "absorb oxygen from the air",
+      "decompose to copper metal",
+      "lose their water of crystallization",
+      "are reduced to copper(I) oxide"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Blue CuSO₄·5H₂O becomes white anhydrous CuSO₄. Adding water turns it blue again, a test for water."
+  },
+  {
+    "id": "JAMBCHEM-D-106",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemMetals",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Alloys",
+    "stem": "Alnico, used to make strong permanent magnets, is iron alloyed with:",
+    "options": [
+      "lead, antimony and tin",
+      "chromium only",
+      "copper and zinc",
+      "aluminium, nickel and cobalt"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The name gives it away: Al-Ni-Co. Copper and zinc make brass, lead, antimony and tin make type-metal, and chromium is in stainless steel."
+  },
+  {
+    "id": "JAMBCHEM-D-107",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemMetals",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Alloys",
+    "stem": "Type-metal, once used to cast printing type, is an alloy mainly of:",
+    "options": [
+      "aluminium and copper",
+      "lead, antimony and tin",
+      "copper and tin",
+      "iron and nickel"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Type-metal is mostly lead hardened with antimony and tin; it expands slightly as it sets, giving sharp letters. Copper and tin make bronze, aluminium and copper duralumin, and iron and nickel permalloy."
+  },
+  {
+    "id": "JAMBCHEM-D-108",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemMetals",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Chemistry and industry",
+    "stem": "Using microorganisms to make products such as ethanol, vaccines or antibiotics is called:",
+    "options": [
+      "petrochemistry",
+      "biotechnology",
+      "metallurgy",
+      "electroplating"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Biotechnology uses living organisms or their enzymes in industry, as in brewing and in producing insulin."
+  },
+  {
+    "id": "JAMBCHEM-D-109",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemMetals",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Chemistry and industry",
+    "stem": "Which industry depends mainly on crude oil and natural gas as raw materials?",
+    "options": [
+      "The petrochemical industry",
+      "The cement industry",
+      "The glass industry",
+      "The soft drinks industry"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Petrochemical plants make plastics, fertilizers and solvents from crude oil and natural gas. Cement needs limestone and clay, and glass needs sand."
+  },
+  {
+    "id": "JAMBCHEM-D-110",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemMetals",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Astronomical chemistry",
+    "stem": "After oxygen, which element is the most abundant in the earth's crust by mass?",
+    "options": [
+      "Calcium",
+      "Iron",
+      "Silicon",
+      "Aluminium"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Silicon makes up about 28% of the crust, combined with oxygen in silica and silicates. Aluminium, the most abundant metal, is third at about 8%."
+  },
+  {
+    "id": "JAMBCHEM-D-111",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemMetals",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Astronomical chemistry",
+    "stem": "Which planet has a thick atmosphere made mostly of carbon(IV) oxide?",
+    "options": [
+      "Jupiter",
+      "Saturn",
+      "Mercury",
+      "Venus"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Venus's atmosphere is about 96% carbon(IV) oxide, and its greenhouse effect makes it the hottest planet. Jupiter and Saturn are mostly hydrogen and helium, and Mercury has almost no atmosphere."
+  },
+  {
+    "id": "JAMBCHEM-D-112",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemMetals",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Astronomical chemistry",
+    "stem": "The sun is made up mainly of:",
+    "options": [
+      "hydrogen and helium",
+      "carbon and iron",
+      "oxygen and nitrogen",
+      "neon and argon"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "About three-quarters of the sun's mass is hydrogen and nearly a quarter helium, which nuclear fusion produces from hydrogen."
+  },
+  {
+    "id": "JAMBCHEM-D-113",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemOrganic",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Tetravalency",
+    "stem": "Carbon forms a very large number of compounds mainly because its atoms can:",
+    "options": [
+      "exist as several stable isotopes",
+      "form only ionic bonds",
+      "lose four electrons easily",
+      "link to one another in chains and rings"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Catenation, the ability to link to other carbon atoms in long chains and rings, together with four bonds per atom, explains the huge variety of organic compounds."
+  },
+  {
+    "id": "JAMBCHEM-D-114",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemOrganic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Alkanes",
+    "stem": "Methane reacts with chlorine in sunlight by:",
+    "options": [
+      "substitution",
+      "polymerization",
+      "addition",
+      "hydrolysis"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Chlorine atoms replace hydrogen atoms one at a time, giving chloromethane and then more chlorinated products. Alkanes have no double bond to add across."
+  },
+  {
+    "id": "JAMBCHEM-D-115",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemOrganic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Petroleum",
+    "stem": "Which fraction of crude oil has the highest boiling range and is used for surfacing roads?",
+    "options": [
+      "Petrol",
+      "Refinery gas",
+      "Bitumen",
+      "Kerosene"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Bitumen is the thick residue left at the bottom of the fractionating column. Refinery gas boils lowest and petrol and kerosene come off in between."
+  },
+  {
+    "id": "JAMBCHEM-D-116",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemOrganic",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Isomerism",
+    "stem": "But-2-ene can exist as cis and trans forms because:",
+    "options": [
+      "rotation about the C=C bond is restricted",
+      "its carbon chain can branch",
+      "it contains a ring of carbons",
+      "it has a chiral carbon atom"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The double bond cannot rotate, and each doubly bonded carbon carries two different groups, so geometric isomers exist."
+  },
+  {
+    "id": "JAMBCHEM-D-117",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemOrganic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Polymers",
+    "stem": "Polythene is made from ethene by:",
+    "options": [
+      "condensation polymerization",
+      "fermentation",
+      "saponification",
+      "addition polymerization"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Many ethene molecules join by opening their double bonds, with no small molecule lost. Nylon is a condensation polymer."
+  },
+  {
+    "id": "JAMBCHEM-D-118",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemOrganic",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Polymers",
+    "stem": "Nylon is a condensation polymer because, as its monomers join:",
+    "options": [
+      "no atoms at all are lost",
+      "a small molecule such as water is lost",
+      "their double bonds open up",
+      "they form a single giant ring"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In condensation polymerization each link releases a small molecule, such as water or hydrogen chloride. Addition polymers such as polythene form by opening C=C double bonds with nothing lost."
+  },
+  {
+    "id": "JAMBCHEM-D-119",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemOrganic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Aromatic hydrocarbons",
+    "stem": "Benzene, C₆H₆, prefers substitution to addition reactions because:",
+    "options": [
+      "it has no carbon-carbon double bonds at all",
+      "its carbon atoms are sp³ hybridized",
+      "its delocalized ring of electrons is stable",
+      "it is fully saturated like the alkanes"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The six π electrons are spread evenly round the ring. Substitution keeps this stable ring, while addition would destroy it."
+  },
+  {
+    "id": "JAMBCHEM-D-120",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemOrganic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Alkanols",
+    "stem": "Ethanol is made by fermentation of sugars with the enzyme zymase from:",
+    "options": [
+      "pepsin",
+      "yeast",
+      "bacteria in milk",
+      "malt"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Yeast converts glucose to ethanol and carbon(IV) oxide. Local gin such as ogogoro is distilled from fermented palm wine."
+  },
+  {
+    "id": "JAMBCHEM-D-121",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemOrganic",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Alkanols",
+    "stem": "Propan-2-ol is classified as a secondary alkanol because the carbon bearing the OH group is:",
+    "options": [
+      "the second atom in the chain",
+      "bonded to two OH groups",
+      "bonded to two other carbon atoms",
+      "bonded to three other carbon atoms"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The class depends on how many carbons are attached to the C-OH carbon: one for primary, two for secondary, three for tertiary."
+  },
+  {
+    "id": "JAMBCHEM-D-122",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemOrganic",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Alkanols",
+    "stem": "Ethanol is warmed under reflux with excess acidified potassium heptaoxodichromate(VI). The final organic product is:",
+    "options": [
+      "ethyl ethanoate",
+      "ethanoic acid",
+      "ethene",
+      "ethanal"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A primary alkanol is oxidized first to the alkanal, ethanal, and then, with excess oxidant and reflux, to the alkanoic acid, ethanoic acid. Ethene comes from dehydration, not oxidation."
+  },
+  {
+    "id": "JAMBCHEM-D-123",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemOrganic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Alkanoic acids",
+    "stem": "Ethanedioic acid (oxalic acid) is an example of:",
+    "options": [
+      "a dicarboxylic acid",
+      "an amino acid",
+      "an aromatic acid",
+      "a long-chain fatty acid"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "It has two COOH groups, HOOC-COOH. Benzenecarboxylic acid is the syllabus example of an aromatic acid."
+  },
+  {
+    "id": "JAMBCHEM-D-124",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemOrganic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Soaps and detergents",
+    "stem": "Soap is made from fats and oils, while most soapless detergents are made from:",
+    "options": [
+      "palm kernel oil",
+      "petroleum products",
+      "animal fat",
+      "wood ash"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Soapless detergents such as alkylbenzene sulphonates are made from petroleum chemicals. Their calcium salts are soluble, so unlike soap they form no scum in hard water."
+  },
+  {
+    "id": "JAMBCHEM-D-125",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemOrganic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Amines",
+    "stem": "Which compound is an alkanamine?",
+    "options": [
+      "CH₃NH₂",
+      "CH₃CONH₂",
+      "CH₃COOH",
+      "CH₃CN"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Methylamine has an NH₂ group on an alkyl carbon. CH₃CONH₂ is an amide and CH₃CN a nitrile."
+  },
+  {
+    "id": "JAMBCHEM-D-126",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemOrganic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Carbohydrates",
+    "stem": "Hydrolysis of starch from cassava produces:",
+    "options": [
+      "fatty acids",
+      "amino acids",
+      "fructose and galactose",
+      "glucose"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Starch is a polysaccharide of glucose units, so acid or enzyme hydrolysis gives glucose, via maltose."
+  },
+  {
+    "id": "JAMBCHEM-D-127",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemOrganic",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Proteins",
+    "stem": "Ninhydrin solution is used to detect:",
+    "options": [
+      "amino acids",
+      "reducing sugars",
+      "starch",
+      "fats and oils"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Amino acids and proteins give a purple colour when warmed with ninhydrin. Iodine tests for starch and Fehling's solution for reducing sugars."
+  },
+  {
+    "id": "JAMBCHEM-D-128",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jambchemOrganic",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Polymers",
+    "stem": "A plastic that can be softened by heat and reshaped many times is:",
+    "options": [
+      "cross-linked",
+      "thermoplastic",
+      "vulcanized",
+      "thermosetting"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Thermoplastics such as polythene have chains with weak forces between them. Thermosetting plastics such as bakelite are cross-linked and char instead of softening."
+  }
+]

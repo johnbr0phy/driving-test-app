@@ -1,7 +1,7 @@
 # Builder brief: one exam for the next-100 wave
 
 You build ONE practice exam for Tigertest. Up to ten builders work at once in the same checkout,
-`/home/user/driving-test-app` (branch `next100-batch2`), each on a different exam. The integrator
+`/home/user/driving-test-app` (branch `next100-batch5`), each on a different exam. The integrator
 applies shared-file changes, builds, screenshots and commits. Your exam's row is in the table at the
 bottom of this file and in `tools/next100/QUEUE.md`.
 
@@ -78,6 +78,15 @@ short.
   last), Only I / Only II / Both / Neither / Either, inequality and syllogism conclusion sets, and
   all-number options (sorted ascending) get natural order plus `lockedOrder` in build.py. See
   `tools/next100/sscgd/build.py`. A plain count answer "None" is fine to shuffle.
+- Sorted number options: when all options are numbers they are sorted and locked, so write
+  distractors so the key is sometimes the smallest or largest value (an overshooting error, an
+  undershooting error). Across the bank the key should sit in an end slot about as often as chance
+  (4 options about half the time, 5 options about 40%); otherwise test-wise candidates drop the ends.
+- Key-first, then sort: author every item's key as the first option and let build.py move it. If
+  the build sorts all-number options, it must find the key's value after sorting. One batch-2
+  bank wrote numeric options already ascending, so the smallest value was marked correct on 12
+  items. Before you finish, check each all-number item: the marked key must equal the value the
+  explanation arrives at.
 - `tools/validate_v2_bank.py` rewrites `lib/v2/bankSizes.ts`. Run it from a /tmp copy with that
   write stubbed out; put your bankSizes line in WIRING.md.
 - Duplicates: grep EVERY existing bank of your family (all India banks: ssccgl, rrbntpc, ibpspo,
@@ -90,38 +99,46 @@ short.
 - Hues: suggest one; the integrator settles clashes (rule: within 8 degrees of another theme,
   differ by 15 points of saturation or 8 of lightness; lightness 30 to 48%).
 
-## Batch 2
+## Lessons from batches 2 and 3 (apply them too)
+- Every item that reads a shared passage, cloze passage, table or puzzle must carry `stimulusId`
+  (and `caseStep`/order as the template does). One batch-1 bank left cloze blanks without it, so a
+  passage was never shown. Check: no stem says "blank (n)", "the passage" or "the table" without one.
+- The wheel of theme hues is crowded (360 themes). Suggest a hue, but the integrator picks the final
+  one and writes it into both `app/globals.css` and your config. Reviewers never change the theme.
+- Batch 3's dedupe pass still found 33 repeats after per-bank reviews: favourite textbook numbers
+  (8-15-17, 5-12-13, x - 1/x, 30% up 10% off, A and B fill/empty a tank) and favourite facts recur.
+  Pick less common numbers and facts from the start, and grep your numbers against the family.
+
+## Lessons from batch 4 (apply them too)
+- Builders working on the same syllabus at the same time keep landing on each other's replacements.
+  In this batch the four JAMB subjects share nothing with each other, but the five Nigeria v1 banks
+  (police, CDCFIB, army, customs) share GK, English and maths: before writing, each picks a lane
+  (see the notes) and greps the others' files on disk as it goes.
+- Official notices often load from a CDN or mirror when the body's site does not (NTA's s3waas
+  mirror, digitaloceanspaces CDNs, Scribd copies of the PDF). Try those before falling back to
+  guides, and label guide-only figures.
+- Run the hue checker yourself (rule in "Lessons from batch 1"); white text on the brand must be at
+  least 4.5:1, so a lightness above about 42% usually fails.
+
+## Batch 5
 
 | id | Test | Engine | Template | Region | slug | landing | suggested hue |
 |---|---|---|---|---|---|---|---|
-| sbiclerk | SBI Clerk (Junior Associates) Prelims | v2 | ibpsclerk | IN | /sbi-clerk | /sbi-clerk-prelims-practice-test | 205 75% 34% |
-| sbipo | SBI PO Prelims | v2 | ibpspo | IN | /sbi-po | /sbi-po-prelims-practice-test | 218 70% 30% |
-| ibpsrrb | IBPS RRB Office Assistant (Clerk) Prelims | v2 | ibpsclerk | IN | /ibps-rrb-clerk | /ibps-rrb-office-assistant-practice-test | 92 50% 30% |
-| biharpolice | Bihar Police Constable (CSBC) written exam | v2 | uppolice | IN | /bihar-police-constable | /bihar-police-constable-practice-test | 18 60% 40% |
-| rajpolice | Rajasthan Police Constable written exam | v2 | uppolice | IN | /rajasthan-police-constable | /rajasthan-police-constable-practice-test | 40 75% 34% |
-| delhipolice | Delhi Police Constable (Executive) CBE (SSC) | v2 | sscgd | IN | /delhi-police-constable | /delhi-police-constable-practice-test | 248 40% 36% |
-| mppolice | MP Police Constable (ESB) written exam | v2 | uppolice | IN | /mp-police-constable | /mp-police-constable-practice-test | 165 50% 30% |
-| apush | AP US History (multiple-choice section) | v2 | appsych | US | /ap-us-history | /ap-us-history-practice-test | 0 45% 38% |
-| apbio | AP Biology (multiple-choice section) | v2 | appsych | US | /ap-biology | /ap-biology-practice-test | 112 45% 34% |
-| phcse | Philippine Civil Service Exam (Professional and Subprofessional) | v2 | rrbntpc (one section) | PH | /civil-service-exam | /civil-service-exam-reviewer-practice-test | 222 60% 32% |
+| jambmath | JAMB UTME Mathematics | v2 | jambeng (KaTeX like apcalcab) | NG | /jamb-mathematics | /jamb-mathematics-practice-test | 150 40% 30% |
+| jambbio | JAMB UTME Biology | v2 | jambeng | NG | /jamb-biology | /jamb-biology-practice-test | 135 30% 32% |
+| jambchem | JAMB UTME Chemistry | v2 | jambeng | NG | /jamb-chemistry | /jamb-chemistry-practice-test | 190 35% 30% |
+| jambphys | JAMB UTME Physics | v2 | jambeng | NG | /jamb-physics | /jamb-physics-practice-test | 225 30% 36% |
+| ngpolice | Nigeria Police Force constable recruitment CBT | v1 | tools/next100/pkdrive; idBase 13200, stateCode NGPOLICE, prefix NGPOL- | NG | /nigeria-police-recruitment | /nigeria-police-recruitment-practice-test | 215 45% 30% |
+| cdcfib | CDCFIB recruitment CBT (Civil Defence, Correctional, Fire, Immigration) | v1 | pkdrive; idBase 13300, stateCode NGCDCFIB, prefix NGCDCFIB- | NG | /cdcfib-recruitment | /cdcfib-recruitment-practice-test | 15 35% 32% |
+| ngarmy | Nigerian Army recruitment exam (DSSC/RRI aptitude test) | v1 | pkdrive; idBase 13400, stateCode NGARMY, prefix NGARMY- | NG | /nigerian-army-recruitment | /nigerian-army-recruitment-practice-test | 80 30% 30% |
+| ngcustoms | Nigeria Customs Service recruitment CBT | v1 | pkdrive; idBase 13500, stateCode NGCUSTOMS, prefix NGCUS- | NG | /nigeria-customs-recruitment | /nigeria-customs-recruitment-practice-test | 200 50% 30% |
+| trcnpqe | TRCN Professional Qualifying Examination | v1 | phlet (teacher licensure, v1); idBase 13600, stateCode TRCNPQE, prefix TRCN- | NG | /trcn-pqe | /trcn-pqe-practice-test | 170 30% 34% |
+| apgov | AP U.S. Government and Politics (multiple-choice section) | v2 | apush (stimulus sets) | US | /ap-us-government | /ap-us-government-practice-test | 0 35% 36% |
 
 Exam-specific notes:
-- `sbiclerk`, `sbipo`, `ibpsrrb`: confirm the latest official pattern from the SBI / IBPS notification
-  (sectional timing, counts, negative marking). Keep clear of ibpspo and ibpsclerk items.
-- State police exams: write General Hindi (Bihar, Rajasthan, MP) in Hindi like `uppolice`; state GK
-  is static facts about that state (history, geography, culture), never officeholders. Rajasthan's
-  paper has its own Rajasthan GK and computer sections; MP's ESB paper includes general science
-  and Hindi; Bihar's CSBC paper is Hindi, English, maths, science, social science and GK at class 10
-  level. Confirm each from the latest advertisement and date-stamp it. Physical tests not modelled.
-- `delhipolice`: SSC conducts it; reasoning, GK/current affairs (static only), quant and computer
-  fundamentals (MS Office, internet, email). Keep clear of the SSC banks.
-- `apush`, `apbio`: the current College Board course and exam description (download the CED PDF);
-  model Section I only (APUSH: stimulus-based sets of 3 or 4 on original primary-source-style excerpts
-  you write yourself, never real copyrighted passages beyond short public-domain quotes; AP Bio:
-  data and experiment sets). Free response not modelled; landing says so. Score as percent with a
-  note on the 1 to 5 scale. Put both, and appsych, into a new hub group "AP exams" in WIRING.md.
-- `phcse`: CSC's Career Service Examination, Pen and Paper (CSE-PPT) Professional and
-  Subprofessional: verbal, analytical, numerical ability, clerical (Subprofessional), and general
-  information (Philippine Constitution, RA 6713 Code of Conduct, peace and human rights, environment).
-  One bank serving both levels; say how they differ. US spelling as used in the Philippines, pesos.
+- Nigeria family: banks on disk are ngfrsc (v1) and jambeng (v2); all ten of this batch join it. British spelling as used in Nigeria, naira, Nigerian names and places. Static facts only: no office-holders, no current affairs, no figures that change yearly (salaries, quotas, cut-offs). Confirm each exam body's current format from its own site or notice (jamb.gov.ng and its brochure/syllabus for 2027; npf.gov.ng / policerecruitment.gov.ng and the Police Service Commission; cdcfib.gov.ng; recruitment.army.mil.ng; customs.gov.ng; trcn.gov.ng). Where a body publishes no question count or pass mark, write a Tigertest target and say so.
+- JAMB subjects: each is one UTME subject of 40 questions out of 100 (Use of English is 60), all four subjects sharing a 2-hour clock; confirm against the current JAMB brochure. Model 40 four-option questions in 30 minutes (the pro rata share), two tests with Test 2 held out, drills by syllabus topic area. Follow the current JAMB UTME syllabus for the subject. jambmath: KaTeX, every answer computed and asserted; jambchem and jambphys: numeric answers computed and asserted, all-number options sorted and locked. No overlap with neet/jeemain/mhtcet (grep them) or each other.
+- The four recruitment CBTs (ngpolice, cdcfib, ngarmy, ngcustoms): these are general aptitude tests (English, quantitative reasoning, general knowledge and current affairs, sometimes verbal/logical reasoning). Confirm the latest exercise's pattern. To avoid colliding with each other, split the GK lanes: ngpolice takes Nigerian civics, the 1999 Constitution and policing; cdcfib takes the four services (Civil Defence, Correctional, Fire, Immigration), Nigerian geography and environment; ngarmy takes Nigerian history (pre-colonial to independence), the armed forces and Africa/ECOWAS/AU; ngcustoms takes economics, trade, ports, ECOWAS trade, and world geography. English and maths items: use fresh sentences and numbers, and grep the other three banks on disk before finalising.
+- trcnpqe: TRCN PQE for teacher registration (education theory, pedagogy, curriculum, assessment, educational psychology, the teaching profession and its ethics, Nigerian education policy such as the National Policy on Education, ICT in education). Confirm the current format (CBT, number of questions, pass mark) from trcn.gov.ng. Check against phlet, ctet, reet, uptet, ugcnet for overlap.
+- apgov: Section I only (55 questions, 80 minutes, 50% per the current CED; confirm), with the required foundational documents and Supreme Court cases as the College Board lists them; original stimuli (quantitative charts as tables, text-based excerpts written as practice texts, short quotes from public-domain founding documents allowed); add to "AP exams". Check against apush.
 

@@ -1,0 +1,35 @@
+{
+  "id": "ngcustoms",
+  "stateCode": "NGCUSTOMS",
+  "idBase": 13500,
+  "prefix": "NGCUS-",
+  "slug": "/nigeria-customs-recruitment",
+  "landingPath": "/nigeria-customs-recruitment-practice-test",
+  "dataFile": "data/nigeria-customs-questions.json",
+  "name": "Nigeria Customs Recruitment Practice Test",
+  "shortName": "Customs recruitment",
+  "examLabel": "Nigeria Customs recruitment CBT",
+  "fullName": "Nigeria Customs Service recruitment computer-based test (CBT)",
+  "icon": "badge",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 70,
+  "categories": [
+    {"key": "cusGrammar", "label": "English: Grammar & Usage", "perTest": 8, "pool": 32, "segment": "GRM"},
+    {"key": "cusVocab", "label": "English: Vocabulary & Comprehension", "perTest": 7, "pool": 28, "segment": "VOC"},
+    {"key": "cusArith", "label": "Maths: Arithmetic, Percentages & Duty", "perTest": 7, "pool": 28, "segment": "ARI"},
+    {"key": "cusQuant", "label": "Maths: Algebra, Ratio & Data", "perTest": 6, "pool": 24, "segment": "QNT"},
+    {"key": "cusReason", "label": "Verbal & Logical Reasoning", "perTest": 5, "pool": 20, "segment": "RSN"},
+    {"key": "cusCustoms", "label": "Customs, Trade & Ports", "perTest": 7, "pool": 28, "segment": "CUS"},
+    {"key": "cusEconomy", "label": "Economics & ECOWAS Trade", "perTest": 5, "pool": 20, "segment": "ECO"},
+    {"key": "cusWorld", "label": "World Geography & Capitals", "perTest": 5, "pool": 20, "segment": "WLD"}
+  ],
+  "notes": "4 tests x 50 = 200, every item used once in tests. NCS publishes no question count, time, subject split or pass mark for its recruitment CBT; 50 questions and a 70% target are Tigertest's. Topic lane for the Nigeria recruitment family (batch 5): ngcustoms takes customs, trade, ports, economics, ECOWAS trade and world geography. Dashboard = 5 topic sets + 4 tests = 9 steps.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 13501, "name": "English Language", "categories": ["cusGrammar", "cusVocab"], "size": 60},
+    {"setNumber": 2, "id": 13502, "name": "Mathematics", "categories": ["cusArith", "cusQuant"], "size": 52},
+    {"setNumber": 3, "id": 13503, "name": "Customs, Trade & Ports", "categories": ["cusCustoms"], "size": 28},
+    {"setNumber": 4, "id": 13504, "name": "Economics, ECOWAS & World Geography", "categories": ["cusEconomy", "cusWorld"], "size": 40},
+    {"setNumber": 5, "id": 13505, "name": "Logical Reasoning", "categories": ["cusReason"], "size": 20}
+  ]
+}

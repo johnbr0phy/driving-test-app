@@ -2370,4 +2370,649 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Provincial Motor Vehicles Ordinance 1965 (Punjab Transport Department copy amended to November 2023: section 4, Third, Tenth and Eleventh Schedules), road signs in Pakistan and provincial licensing guidance, checked November 2026",
     source: { name: "Punjab Driving License Information Management System (DLIMS)", url: "https://dlims.punjab.gov.pk/" },
   },
+  sbipo: {
+    answer:
+      "The SBI PO Preliminary Examination is an online objective test of 100 marks in one hour, with separate timing for each section: English Language 40 questions in 20 minutes, Quantitative Aptitude 30 questions in 20 minutes and Reasoning Ability 30 questions in 20 minutes. This is the pattern in SBI's 2026 advertisement; earlier cycles had 30, 35 and 35 questions. A quarter of a question's marks is deducted for every wrong answer. There is no sectional cut-off in the Prelims: candidates are ranked by category on their total marks and about ten times the vacancies are called for the Main Examination. Prelims marks are not counted in the final merit list.",
+    rows: [
+      { label: "Questions", value: "100" },
+      { label: "Time", value: "1 hour, 20 minutes per section" },
+      { label: "Sections", value: "English 40, Quantitative Aptitude 30, Reasoning Ability 30" },
+      { label: "Marks", value: "100 in all" },
+      { label: "Negative marking", value: "1/4 of the question's marks per wrong answer" },
+      { label: "Cut-off", value: "No sectional cut-off; about 10 times the vacancies per category go to the Mains" },
+      { label: "Given by", value: "State Bank of India (CRPD), online" },
+      { label: "Next stages", value: "Main Examination, then psychometric test, group exercise and interview" },
+    ],
+    basedOn: "the SBI advertisement CRPD/PO/2026-27/09 (Recruitment of Probationary Officers, 18 June 2026), section 8, Selection Procedure",
+    source: { name: "SBI Careers", url: "https://sbi.bank.in/web/careers/current-openings" },
+  },
+  sbiclerk: {
+    answer:
+      "The SBI Clerk (Junior Associates) Preliminary Examination is one online objective test of 100 questions for 100 marks in one hour, with each section timed separately: English Language 30 questions in 20 minutes, Numerical Ability 35 in 20 minutes and Reasoning Ability 35 in 20 minutes. A quarter of a question's marks is deducted for each wrong answer. There are no minimum qualifying marks for any section or for the total: SBI shortlists about ten times the vacancies in each category for the Main exam by aggregate marks, and only Main exam marks count in the final merit list. The 2026 advertisement set the Prelims tentatively for September 2026.",
+    rows: [
+      { label: "Questions", value: "100 (five options each in past papers)" },
+      { label: "Time", value: "1 hour, 20 minutes per section" },
+      { label: "Sections", value: "English 30, Numerical Ability 35, Reasoning Ability 35" },
+      { label: "Marks", value: "1 per question, 100 in all" },
+      { label: "Negative marking", value: "1/4 mark per wrong answer" },
+      { label: "Result", value: "No sectional cutoff; about 10 times the vacancies called to the Mains by total marks" },
+      { label: "Given by", value: "State Bank of India (CRPD), online" },
+      { label: "Medium", value: "English test in English; the others in English, Hindi and, in many states, the state's language" },
+    ],
+    basedOn: "SBI's Recruitment of Junior Associates (Customer Support & Sales) advertisement CRPD/CR/2026-27/17 (registration 11 to 31 August 2026), section 4, Selection Procedure",
+    source: { name: "State Bank of India Careers", url: "https://sbi.bank.in/web/careers/current-openings" },
+  },
+  ibpsrrb: {
+    answer:
+      "The IBPS RRB Office Assistant (Multipurpose) Preliminary Examination, often called IBPS RRB Clerk, is one online objective paper of 80 questions in 45 minutes, with each test timed separately: Reasoning 40 questions in 25 minutes and Numerical Ability 40 questions in 20 minutes. Each question carries one mark and a quarter of a mark is deducted for every wrong answer. Candidates must clear a minimum cutoff set by IBPS in both tests; Prelims is qualifying for the Main examination, and only Main marks count for the final merit list and provisional allotment to a Regional Rural Bank. Under the CRP RRBs-XV notification of 1 September 2026, the Prelims is scheduled for November or December 2026.",
+    rows: [
+      { label: "Questions", value: "80 (five options each in past papers)" },
+      { label: "Time", value: "45 minutes: Reasoning 25, Numerical Ability 20" },
+      { label: "Sections", value: "Reasoning 40, Numerical Ability 40" },
+      { label: "Marks", value: "1 per question, 80 in all" },
+      { label: "Negative marking", value: "1/4 mark per wrong answer" },
+      { label: "Result", value: "A cutoff in both tests, set by IBPS, then the Mains" },
+      { label: "Given by", value: "Institute of Banking Personnel Selection (IBPS), online" },
+      { label: "Medium", value: "English, Hindi or the state's listed language" },
+    ],
+    basedOn: "the IBPS CRP RRBs-XV notification of 1 September 2026, section D (Online Examination Structure) and E (Penalty for Wrong Answers)",
+    source: { name: "IBPS", url: "https://www.ibps.in" },
+  },
+  delhipolice: {
+    answer:
+      "The Delhi Police Constable (Executive) Computer Based Examination (CBE) is conducted by the Staff Selection Commission for Delhi Police. It is one objective paper of 100 multiple-choice questions for 100 marks in 90 minutes: General Knowledge and Current Affairs 50, Reasoning 25, Numerical Ability 15, and Computer Fundamentals, MS Excel, MS Word, Communication, Internet, WWW and Web Browsers 10, at matriculation level, in English and Hindi. Each wrong answer loses 0.25 marks. Candidates who reach the cut-off marks are shortlisted for the Physical Endurance and Measurement Test and document verification with Delhi Police, and the final merit list follows the CBE marks.",
+    rows: [
+      { label: "Questions", value: "100 (GK 50, Reasoning 25, Numerical Ability 15, Computer 10)" },
+      { label: "Time", value: "90 minutes, no sectional timing" },
+      { label: "Marks", value: "1 per right answer, 100 in all" },
+      { label: "Negative marking", value: "0.25 per wrong answer" },
+      { label: "Cut-off for PE&MT", value: "UR 35, SC/ST/OBC/EWS 30, ex-servicemen 25 (normalised marks)" },
+      { label: "Level", value: "Matriculation (Class 10)" },
+      { label: "Language", value: "English and Hindi" },
+      { label: "Next stages", value: "PE&MT and document verification by Delhi Police, medical examination" },
+      { label: "Given by", value: "Staff Selection Commission, computer-based, for Delhi Police" },
+    ],
+    basedOn: "the SSC notice for the Constable (Executive) Male and Female in Delhi Police Examination, 2025 (22 September 2025)",
+    source: { name: "Staff Selection Commission", url: "https://ssc.gov.in" },
+    tigertest:
+      "Tigertest has two full Delhi Police Constable mock tests of 100 questions in 90 minutes and eight topic drills: four for general knowledge, two for reasoning, one for numerical ability and one for computer. All of it is free with no account required; scores are percent correct, with negative marking explained rather than applied.",
+  },
+  biharpolice: {
+    answer:
+      "The Bihar Police Constable written exam is set by the Central Selection Board of Constable (CSBC), Bihar, for Constable posts in Bihar Police and the Bihar Special Armed Police. Under Advertisement No. 01/2025 (19,838 posts) it is one objective OMR paper of 100 questions in 2 hours, one mark each, at Class 10 (Matric) level on Hindi, English, Mathematics, Social Science, Science and General Knowledge with current affairs. The advertisement mentions no deduction for wrong answers. Candidates under 30% are out; the written exam only shortlists about five times the vacancies for the physical efficiency test, whose marks make the final merit list.",
+    rows: [
+      { label: "Questions", value: "100 objective (1 mark each, 100 marks), OMR sheet" },
+      { label: "Time", value: "2 hours" },
+      { label: "Subjects", value: "Hindi, English, Maths, Social Science, Science, GK and current affairs (Class 10 level)" },
+      { label: "Negative marking", value: "None mentioned in Advt. 01/2025; check your notice" },
+      { label: "Minimum", value: "30% to stay in; written exam is qualifying only" },
+      { label: "Latest exam", value: "16 July to 3 August 2025 (Advt. 01/2025, 19,838 posts)" },
+      { label: "Next stage", value: "Physical efficiency test (final merit on its marks)" },
+      { label: "Given by", value: "Central Selection Board of Constable (CSBC), Bihar" },
+    ],
+    basedOn: "CSBC Advertisement No. 01/2025 and its exam notice of 12 June 2025, checked November 2026",
+    source: { name: "Central Selection Board of Constable, Bihar", url: "https://csbc.bihar.gov.in" },
+  },
+  rajpolice: {
+    answer:
+      "The Rajasthan Police Constable written exam is set by Rajasthan Police for constable posts. As guides report the 2025 notification, it has 150 objective questions in 2 hours, in three parts: logical ability, reasoning and basic computer knowledge 60; general knowledge, general science, social science, current affairs and laws on crimes against women and children 45; and Rajasthan's history, culture, geography, economy and polity 45. A quarter of a question's marks is taken off for each wrong answer. There is no Hindi language section; the paper is set in Hindi and English. The latest written exam was held on 13 and 14 September 2025; candidates who clear it go on to physical tests and document checks.",
+    rows: [
+      { label: "Questions", value: "150 objective (1 mark each, per guides)" },
+      { label: "Time", value: "2 hours" },
+      { label: "Parts", value: "Reasoning and computer 60, GK with laws on women and children 45, Rajasthan GK 45" },
+      { label: "Negative marking", value: "A quarter of a question's marks per wrong answer (per guides)" },
+      { label: "Latest exam", value: "13 and 14 September 2025 (notification of 9 April 2025)" },
+      { label: "Next stages", value: "Physical efficiency and standards tests, documents and medical" },
+      { label: "Given by", value: "Rajasthan Police" },
+    ],
+    basedOn: "the Rajasthan Police constable recruitment of 2025 as reported by exam guides, checked November 2026",
+    source: { name: "Rajasthan Police", url: "https://police.rajasthan.gov.in" },
+  },
+  mppolice: {
+    answer:
+      "The MP Police Constable written exam is the Police Constable Recruitment Test of the Madhya Pradesh Employees Selection Board (MPESB). Guides report 100 objective questions worth 1 mark each, 100 marks in all, in 2 hours, with no negative marking, in three parts: General Knowledge and Reasoning 40, Intellectual and Mental Ability 30, and Science and Simple Arithmetic 30. The latest recruitment, for 7,500 posts, held its online written exam from 30 October 2025; candidates shortlisted on written marks go on to the physical tests.",
+    rows: [
+      { label: "Questions", value: "100 objective (1 mark each, 100 marks)" },
+      { label: "Time", value: "2 hours" },
+      { label: "Parts", value: "GK and Reasoning 40, Intellectual and Mental Ability 30, Science and Simple Arithmetic 30" },
+      { label: "Negative marking", value: "None (per guides)" },
+      { label: "Latest exam", value: "From 30 October 2025, online (7,500 posts)" },
+      { label: "Next stages", value: "Physical tests, document verification and medical" },
+      { label: "Given by", value: "Madhya Pradesh Employees Selection Board (MPESB)" },
+    ],
+    basedOn: "the MPESB Police Constable Recruitment Test 2025 as reported by exam guides, checked November 2026",
+    source: { name: "Madhya Pradesh Employees Selection Board", url: "https://esb.mp.gov.in" },
+  },
+  apush: {
+    answer:
+      "The AP U.S. History Exam is a fully digital, 3 hour 15 minute exam from the College Board. Section I has 55 multiple-choice questions in 55 minutes (40% of the score), usually in sets of three or four that share a primary or secondary source, plus 3 short-answer questions in 40 minutes (20%). Section II has a document-based question in 60 minutes (25%) and a long essay in 40 minutes (15%). The course runs from 1491 to the present in nine periods; Periods 3 to 8 are each 10% to 17% of the multiple-choice section. Scores are reported from 1 to 5, and wrong answers are not penalized.",
+    rows: [
+      { label: "Multiple choice", value: "55 questions, 55 minutes, 40% of score" },
+      { label: "Short answer", value: "3 questions, 40 minutes, 20%" },
+      { label: "Essays", value: "DBQ 60 minutes (25%), long essay 40 minutes (15%)" },
+      { label: "Answer choices", value: "4 per multiple-choice question" },
+      { label: "Periods", value: "9, from 1491 to the present" },
+      { label: "Score", value: "1 to 5; no penalty for wrong answers" },
+      { label: "Given by", value: "College Board, digital in the Bluebook app" },
+    ],
+    basedOn: "the College Board AP U.S. History Course and Exam Description (effective fall 2026) and AP Central exam page",
+    source: { name: "College Board AP Central", url: "https://apcentral.collegeboard.org/courses/ap-united-states-history/exam" },
+    tigertest:
+      "Tigertest has two full 55-question AP U.S. History multiple-choice sections and seven drills by period, all free with no account required. The short-answer questions and essays are not included.",
+  },
+  apbio: {
+    answer:
+      "The AP Biology Exam is a 3-hour exam from the College Board, given in May. Section I has 60 multiple-choice questions with four choices in 90 minutes (50% of the score), some in sets of typically four to five that share a stimulus; Section II has 6 free-response questions in 90 minutes (50%). The exam is hybrid digital: multiple choice in the Bluebook app, free responses handwritten. A calculator is allowed and a formula sheet is provided. Scores are reported from 1 to 5, and wrong answers are not penalized.",
+    rows: [
+      { label: "Multiple choice", value: "60 questions, 90 minutes, 50% of score" },
+      { label: "Free response", value: "6 questions (2 long, 4 short), 90 minutes, 50%" },
+      { label: "Answer choices", value: "4 per multiple-choice question" },
+      { label: "Units", value: "8, from 8-11% (Chemistry of Life) to 13-20% (Natural Selection)" },
+      { label: "Calculator", value: "Four-function, scientific or graphing; formula sheet provided" },
+      { label: "Score", value: "1 to 5; no penalty for wrong answers" },
+    ],
+    basedOn: "the College Board AP Biology exam page and Course and Exam Description (effective fall 2025)",
+    source: { name: "College Board AP Central", url: "https://apcentral.collegeboard.org/courses/ap-biology/exam" },
+    tigertest:
+      "Tigertest has two full 60-question AP Biology multiple-choice sections and eight drills, one per unit, all free with no account required. The free-response section is not included.",
+  },
+  phcse: {
+    answer:
+      "The Civil Service Exam (Career Service Examination, Pen and Paper Test or CSE-PPT) is the Civil Service Commission's test for eligibility for permanent government positions in the Philippines. It has two levels. Both test verbal ability (in English and Filipino), numerical ability and general information on the Philippine Constitution, R.A. 6713, peace and human rights, and the environment; the Professional level adds analytical ability and the Subprofessional level adds clerical ability. For the 2026 sittings the Professional level had 170 items in 3 hours and 10 minutes and the Subprofessional level 165 items in 2 hours and 40 minutes. You need a general rating of at least 80.00 to pass. Professional eligibility covers first and second level positions; Subprofessional covers first level positions only.",
+    rows: [
+      { label: "Professional", value: "170 items, 3 hours 10 minutes (2026)" },
+      { label: "Subprofessional", value: "165 items, 2 hours 40 minutes (2026)" },
+      { label: "Both levels", value: "Verbal, numerical, general information" },
+      { label: "Level-specific", value: "Analytical (Professional), clerical (Subprofessional)" },
+      { label: "Passing", value: "General rating of 80.00" },
+      { label: "2026 dates", value: "8 March and 9 August 2026" },
+      { label: "Run by", value: "Civil Service Commission (CSC)" },
+    ],
+    basedOn: "the CSC examination announcements for the March and August 2026 CSE-PPT (No. 08, s. 2025 and No. 03, s. 2026) as reported, checked November 2026",
+    source: { name: "Civil Service Commission", url: "https://csc.gov.ph" },
+  },
+  upscse: {
+    answer:
+      "The UPSC Civil Services Preliminary Examination is the screening stage for the IAS, IPS, IFS and other central services. It has two compulsory objective papers of 200 marks each, two hours each, set in Hindi and English. General Studies Paper I decides who qualifies for the Main examination; Paper II (CSAT) is qualifying, with 33% needed. Every question has four options, and one-third of a question's marks is deducted for each wrong answer. Guides list 100 questions in Paper I and 80 in Paper II. Prelims marks are not counted in the final ranking.",
+    rows: [
+      { label: "Papers", value: "GS Paper I and GS Paper II (CSAT), 200 marks each" },
+      { label: "Time", value: "2 hours per paper" },
+      { label: "Questions", value: "Paper I 100, Paper II 80 (as guides list)" },
+      { label: "Negative marking", value: "One-third of the question's marks per wrong answer" },
+      { label: "CSAT", value: "Qualifying, 33% needed" },
+      { label: "Languages", value: "Hindi and English" },
+      { label: "Given by", value: "Union Public Service Commission (UPSC)" },
+    ],
+    basedOn: "UPSC Examination Notice No. 05/2026-CSE (4 February 2026); the 2027 Preliminary is scheduled for 23 May 2027",
+    source: { name: "Union Public Service Commission", url: "https://upsc.gov.in" },
+  },
+  ssccpo: {
+    answer:
+      "SSC CPO Paper-I is the first stage of the Staff Selection Commission's Sub-Inspector in Delhi Police and Central Armed Police Forces exam. From the 2026 notice it is a computer-based test of 100 multiple-choice questions in 1 hour, four parts of 25 (General Intelligence and Reasoning, General Knowledge and General Awareness, Quantitative Aptitude, English Comprehension), each with its own 15-minute timer. Each question carries 1 mark and a wrong answer loses 0.25. Paper-I shortlists candidates for the physical tests; the final merit list is made from Paper-II.",
+    rows: [
+      { label: "Questions", value: "100 (25 in each of four parts)" },
+      { label: "Time", value: "1 hour, 15 minutes per part" },
+      { label: "Marks", value: "1 per right answer, 100 in all" },
+      { label: "Negative marking", value: "0.25 per wrong answer (0.50 in Paper-II)" },
+      { label: "Parts", value: "Reasoning, General Knowledge, Quantitative Aptitude, English" },
+      { label: "Qualifying marks", value: "30% UR, 25% OBC/EWS, 20% others" },
+      { label: "Languages", value: "Hindi and English (English part in English)" },
+      { label: "Given by", value: "Staff Selection Commission, computer-based" },
+    ],
+    basedOn: "the SSC notice for the Sub-Inspector in Delhi Police and Central Armed Police Forces Examination, 2026 (10 September 2026), paragraphs 12 and 16",
+    source: { name: "Staff Selection Commission", url: "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_capf_2026.pdf" },
+  },
+  rrbalp: {
+    answer:
+      "RRB ALP CBT 1 is the first-stage Computer Based Test that the Railway Recruitment Boards hold for Assistant Loco Pilot posts. Under CEN 01/2026 it has 75 multiple-choice questions in 60 minutes on Mathematics, General Intelligence and Reasoning and General Science at class 10 level; General Awareness, part of earlier ALP CBT 1 papers, was dropped. One third of a mark is deducted for each wrong answer. CBT 1 is a screening test: its marks do not count in the final merit, and shortlisted candidates go on to CBT 2 and a computer based aptitude test.",
+    rows: [
+      { label: "Questions", value: "75 multiple choice" },
+      { label: "Time", value: "60 minutes" },
+      { label: "Subjects", value: "Mathematics, General Intelligence and Reasoning, General Science (class 10)" },
+      { label: "Negative marking", value: "1/3 mark per wrong answer" },
+      { label: "Qualifying marks (reported)", value: "UR and EWS 40%, OBC and SC 30%, ST 25%" },
+      { label: "Next stages", value: "CBT 2 (Part A and trade Part B), computer based aptitude test" },
+      { label: "Given by", value: "Railway Recruitment Boards (RRBs)" },
+    ],
+    basedOn: "the RRB Assistant Loco Pilot notice CEN 01/2026 (11,127 posts), as summarised by exam guides",
+    source: { name: "Railway Recruitment Boards", url: "https://www.rrbcdg.gov.in" },
+  },
+  rpfconst: {
+    answer:
+      "The RPF Constable exam is the Computer Based Test for Constable (Executive) posts in the Railway Protection Force and the Railway Protection Special Force. In the last recruitment, CEN RPF 02/2024 run by the Railway Recruitment Boards (CBT held in March 2025), it had 120 multiple-choice questions in 90 minutes: exam guides give 50 on General Awareness, 35 on Arithmetic and 35 on General Intelligence and Reasoning. One third of a mark is deducted for each wrong answer, and guides report minimum qualifying marks of 35 percent for UR, EWS and OBC and 30 percent for SC and ST. Shortlisted candidates then take the Physical Efficiency and Physical Measurement Tests (qualifying) and document verification. The next notice had not been published as of November 2026.",
+    rows: [
+      { label: "Questions", value: "120 multiple choice" },
+      { label: "Time", value: "90 minutes" },
+      { label: "Sections", value: "General Awareness 50, Arithmetic 35, Reasoning 35 (as reported by guides)" },
+      { label: "Negative marking", value: "1/3 mark per wrong answer" },
+      { label: "Qualifying marks", value: "UR, EWS and OBC 35%, SC and ST 30% (as reported by guides)" },
+      { label: "Next stages", value: "PET and PMT (qualifying), document verification" },
+      { label: "Given by", value: "Railway Recruitment Boards (CEN RPF 02/2024)" },
+    ],
+    basedOn: "the RRB notice CEN RPF 02/2024 (Constable) and its March 2025 CBT",
+    source: { name: "Railway Recruitment Boards", url: "https://www.rrbcdg.gov.in" },
+  },
+  nda: {
+    answer:
+      "The NDA and NA exam is the Union Public Service Commission's written test, held twice a year, for entry to the National Defence Academy (Army, Navy and Air Force wings) and the Naval Academy. It has two objective papers of 2.5 hours each: Mathematics, 120 questions for 300 marks, and the General Ability Test, 150 questions for 600 marks, made up of English (200 marks) and General Knowledge (400 marks). A third of a question's marks is deducted for each wrong answer. Candidates who qualify go on to the 900-mark SSB interview.",
+    rows: [
+      { label: "Papers", value: "Mathematics; General Ability Test" },
+      { label: "Questions", value: "120 in Mathematics, 150 in the GAT" },
+      { label: "Time", value: "2.5 hours per paper" },
+      { label: "Marks", value: "Mathematics 300, GAT 600 (English 200, General Knowledge 400)" },
+      { label: "Negative marking", value: "One third of a question's marks per wrong answer" },
+      { label: "Next stage", value: "SSB interview, 900 marks" },
+      { label: "Sittings", value: "Twice a year: NDA (I) in April, NDA (II) in September" },
+      { label: "Given by", value: "Union Public Service Commission" },
+    ],
+    basedOn: "UPSC Examination Notice No. 10/2026-NDA-II of 20 May 2026 (exam 13 September 2026); question counts per the question papers",
+    source: { name: "Union Public Service Commission", url: "https://upsc.gov.in" },
+  },
+  agniveer: {
+    answer:
+      "The Agniveer (General Duty) Common Entrance Exam is the online written test that is the first step of Indian Army recruitment under the Agnipath scheme. Guides describe the GD paper as 50 multiple-choice questions for 100 marks in 60 minutes: 15 on General Knowledge, 15 on General Science, 15 on Mathematics and 5 on Logical Reasoning, 2 marks each with half a mark deducted for a wrong answer, and a pass mark of 35. The Army holds the CEE in 13 languages; shortlisted candidates then go to a recruitment rally for physical tests and a medical examination.",
+    rows: [
+      { label: "Questions", value: "50 multiple choice, 2 marks each (guides)" },
+      { label: "Time", value: "60 minutes (guides)" },
+      { label: "Sections", value: "GK 15, General Science 15, Maths 15, Reasoning 5 (guides)" },
+      { label: "Negative marking", value: "0.5 mark per wrong answer (guides)" },
+      { label: "Pass mark", value: "35 out of 100 for GD (guides)" },
+      { label: "Languages", value: "13 languages" },
+      { label: "Next stages", value: "Recruitment rally (physical tests), then medical" },
+      { label: "Given by", value: "Indian Army" },
+    ],
+    basedOn: "the Army's 2025-26 recruiting press release and the 2026 cycle notice (registration 13 February to 1 April 2026, extended to 10 April per news reports, CEE from June 2026), with the GD paper pattern as reported by guides",
+    source: { name: "Join Indian Army", url: "https://joinindianarmy.nic.in" },
+  },
+  agniveervayu: {
+    answer:
+      "The Agniveervayu Science subjects test is the Phase I online test for the Indian Air Force's Agnipath entry for candidates with Physics, Mathematics and English in Class 12. It lasts 60 minutes and covers English, Physics and Mathematics to the 10+2 CBSE syllabus; guides report 70 questions, 20 English, 25 Physics and 25 Mathematics. Each right answer earns 1 mark and each wrong answer loses 0.25. Questions are in English and Hindi except the English paper. Marks are normalised, and the cut-off for Phase II (fitness and adaptability tests) is set state by state.",
+    rows: [
+      { label: "Time", value: "60 minutes (Science subjects)" },
+      { label: "Subjects", value: "English, Physics, Mathematics (10+2 CBSE)" },
+      { label: "Questions", value: "70 as guides report: English 20, Physics 25, Maths 25" },
+      { label: "Marking", value: "+1 right, -0.25 wrong, 0 unattempted" },
+      { label: "Language", value: "English and Hindi, except the English paper" },
+      { label: "Cut-off", value: "Normalised marks; state-wise cut-offs for Phase II" },
+      { label: "Next stages", value: "Physical Fitness Test, Adaptability Tests I and II, medical" },
+      { label: "Given by", value: "Indian Air Force (CASB), online" },
+    ],
+    basedOn: "the IAF notification for Agniveervayu intake 01/2027 (January 2026), paragraphs 26 to 37",
+    source: { name: "Indian Air Force, CASB", url: "https://iafrecruitment.edcil.co.in" },
+  },
+  apworld: {
+    answer:
+      "The AP World History: Modern Exam is a fully digital, 3 hour 15 minute exam from the College Board. Section I has 55 multiple-choice questions in 55 minutes (40% of the score), usually in sets of three or four that share a primary or secondary source, plus 3 short-answer questions in 40 minutes (20%). Section II has a document-based question in 60 minutes (25%) and a long essay in 40 minutes (15%). The course runs from c. 1200 to the present in nine units; Units 3 to 6 are each 12% to 15% of the multiple-choice section and the other five units 8% to 10% each. Scores are reported from 1 to 5, and wrong answers are not penalized.",
+    rows: [
+      { label: "Multiple choice", value: "55 questions, 55 minutes, 40% of score" },
+      { label: "Short answer", value: "3 questions, 40 minutes, 20%" },
+      { label: "Essays", value: "DBQ 60 minutes (25%), long essay 40 minutes (15%)" },
+      { label: "Answer choices", value: "4 per multiple-choice question" },
+      { label: "Units", value: "9, from c. 1200 to the present" },
+      { label: "Score", value: "1 to 5; no penalty for wrong answers" },
+      { label: "Given by", value: "College Board, digital in the Bluebook app" },
+    ],
+    basedOn: "the College Board AP World History: Modern Course and Exam Description (effective fall 2026) and AP Central exam page",
+    source: { name: "College Board AP Central", url: "https://apcentral.collegeboard.org/courses/ap-world-history/exam" },
+    tigertest:
+      "Tigertest has two full 55-question AP World History: Modern multiple-choice sections and six drills by unit, all free with no account required. The short-answer questions and essays are not included.",
+  },
+  aplang: {
+    answer:
+      "The AP English Language and Composition Exam is a fully digital, 3 hour 15 minute exam from the College Board. Section I has 45 multiple-choice questions in 60 minutes (45% of the score): 23 to 25 reading questions on nonfiction passages and 20 to 22 writing questions that ask how a draft could be revised, in five sets. Section II has three essays, synthesis, rhetorical analysis and argument, in 2 hours 15 minutes including a 15-minute reading period (55%). Scores are reported from 1 to 5, and wrong answers are not penalized.",
+    rows: [
+      { label: "Multiple choice", value: "45 questions, 60 minutes, 45% of score" },
+      { label: "Question types", value: "23-25 reading, 20-22 writing (revision)" },
+      { label: "Essays", value: "3 (synthesis, rhetorical analysis, argument), 2 hr 15 min, 55%" },
+      { label: "Answer choices", value: "4 per multiple-choice question" },
+      { label: "Skill categories", value: "Rhetorical situation, claims and evidence, reasoning and organization, style" },
+      { label: "Score", value: "1 to 5; no penalty for wrong answers" },
+      { label: "Given by", value: "College Board, digital in the Bluebook app" },
+    ],
+    basedOn: "the College Board AP English Language and Composition Course and Exam Description (effective fall 2024) and AP Central exam page",
+    source: { name: "College Board AP Central", url: "https://apcentral.collegeboard.org/courses/ap-english-language-and-composition/exam" },
+    tigertest:
+      "Tigertest has two full 45-question AP English Language multiple-choice sections and eight drills by skill category, all free with no account required. The essays are not included.",
+  },
+  phlet: {
+    answer:
+      "The Licensure Examination for Teachers (LET), officially the Licensure Examination for Professional Teachers (LEPT), is given by the Professional Regulation Commission (PRC) through the Board for Professional Teachers; a license is required to teach in Philippine schools. The elementary exam has two parts on one Sunday: General Education, 150 items from 8 to 10 a.m., and Professional Education, 150 items from 11 a.m. to 2 p.m. For elementary examinees without a specialization General Education is 40% of the rating and Professional Education 60%; secondary examinees, and elementary examinees with an early childhood or special needs specialization, also take a specialization part (20/40/40). To pass you need a general average of at least 75% with no rating below 50% in any part.",
+    rows: [
+      { label: "Run by", value: "PRC, Board for Professional Teachers" },
+      { label: "Elementary parts", value: "General Education 150 items, Professional Education 150 items" },
+      { label: "Time", value: "GenEd 2 hours (8 to 10 a.m.), ProfEd 3 hours (11 a.m. to 2 p.m.)" },
+      { label: "Weights (elementary)", value: "General Education 40%, Professional Education 60% (with a specialization, guides report 20/40/40)" },
+      { label: "Pass mark", value: "General average 75%, no part below 50%" },
+      { label: "Biggest area", value: "Curriculum, methods and educational technology, 45 of 150 ProfEd items" },
+      { label: "Sittings", value: "Usually twice a year (March and September); check PRC" },
+      { label: "Not modelled here", value: "Secondary and elementary specialization subjects" },
+    ],
+    basedOn: "PRC enhanced Table of Specifications for the LEPT (Board Resolution No. 11, s. 2022, Annex A, amended by Board Resolution No. 11, s. 2025), the PRC LEPT examination program and BPT Resolution No. 228, s. 1996, checked November 2026",
+    source: { name: "Professional Regulation Commission", url: "https://www.prc.gov.ph/" },
+  },
+  jeemain: {
+    answer:
+      "JEE (Main) Paper 1 is the National Testing Agency's computer-based entrance test for B.E. and B.Tech. admission to NITs, IIITs and other centrally funded institutes, and the qualifying test for JEE (Advanced). It has 75 questions for 300 marks in 3 hours: 25 each in Mathematics, Physics and Chemistry, of which 20 are multiple choice (Section A) and 5 need a numerical value typed as an integer (Section B). Every answer earns 4 marks if correct and loses 1 if wrong, in both sections. For 2027 it is held in two sessions, January and April, and the better NTA score counts.",
+    rows: [
+      { label: "Subjects", value: "Mathematics, Physics, Chemistry (equal weight)" },
+      { label: "Questions", value: "75: per subject 20 multiple choice and 5 numerical value" },
+      { label: "Time", value: "3 hours" },
+      { label: "Marks", value: "300 (100 per subject)" },
+      { label: "Marking", value: "+4 correct, -1 wrong in both sections, 0 unanswered" },
+      { label: "Result", value: "NTA scores (percentiles); the better of two sessions counts" },
+      { label: "2027 sessions", value: "20 to 24 and 28 January, and 2 to 7 April 2027" },
+      { label: "Languages", value: "13, including English and Hindi" },
+      { label: "Given by", value: "National Testing Agency" },
+    ],
+    basedOn: "JEE (Main) 2027 Information Bulletin and syllabus, National Testing Agency, published 24 October 2026",
+    source: { name: "National Testing Agency", url: "https://jeemain.nta.nic.in" },
+  },
+  neet: {
+    answer:
+      "NEET (UG) is the National Testing Agency's entrance exam for MBBS, BDS, AYUSH and other undergraduate medical courses in India. Per the NEET (UG) 2026 information bulletin it is one pen-and-paper paper of 180 compulsory multiple-choice questions in 180 minutes: Physics 45, Chemistry 45 and Biology (Botany and Zoology) 90, for 720 marks. A correct answer earns 4 marks and a wrong one loses 1. It is offered in 13 languages, and admission needs at least the 50th percentile (40th for SC, ST and OBC candidates).",
+    rows: [
+      { label: "Questions", value: "180, all compulsory, four options each" },
+      { label: "Subjects", value: "Physics 45, Chemistry 45, Biology (Botany and Zoology) 90" },
+      { label: "Time", value: "180 minutes (2026 window 2:00 to 5:15 PM including formalities)" },
+      { label: "Marks", value: "720" },
+      { label: "Marking", value: "+4 correct, -1 wrong, 0 unanswered" },
+      { label: "Mode", value: "Pen and paper, one shift" },
+      { label: "Languages", value: "13, including English and Hindi" },
+      { label: "Qualifying", value: "50th percentile (40th for SC, ST, OBC-NCL)" },
+      { label: "Given by", value: "National Testing Agency" },
+    ],
+    basedOn: "NTA Information Bulletin for NEET (UG) 2026 and NTA notices of 15 May and 12 June 2026 (re-examination held 21 June 2026)",
+    source: { name: "National Testing Agency", url: "https://neet.nta.nic.in" },
+  },
+  mhtcet: {
+    answer:
+      "MHT-CET is the Maharashtra State Common Entrance Test Cell's entrance test for first-year engineering, technology and pharmacy degrees in Maharashtra. In the PCM group it has two papers of multiple choice questions, each worth 100 marks in 90 minutes: Mathematics, 50 questions at 2 marks each, and Physics and Chemistry, 50 questions each at 1 mark each. Questions follow the Maharashtra State Board syllabus, about 20 percent Std XI and 80 percent Std XII, and there is no negative marking. In 2026 the PCM group could sit the exam twice, in April and in May.",
+    rows: [
+      { label: "Papers", value: "Mathematics; Physics and Chemistry" },
+      { label: "Questions", value: "50 Mathematics, 50 Physics, 50 Chemistry" },
+      { label: "Marks", value: "100 per paper (Mathematics 2 per question, Physics and Chemistry 1)" },
+      { label: "Time", value: "90 minutes per paper" },
+      { label: "Negative marking", value: "None" },
+      { label: "Syllabus", value: "Maharashtra State Board, about 20% Std XI and 80% Std XII" },
+      { label: "Results", value: "Percentiles across sessions" },
+      { label: "Given by", value: "State Common Entrance Test Cell, Maharashtra" },
+    ],
+    basedOn: "State CET Cell syllabus and marking scheme for MHT-CET 2026 and its PCM result notices of 16 and 19 June 2026",
+    source: { name: "State Common Entrance Test Cell, Maharashtra", url: "https://cetcell.mahacet.org" },
+  },
+  cuet: {
+    answer:
+      "The CUET (UG) General Aptitude Test (test code 501) is one of the 37 papers of the Common University Entrance Test for undergraduate admission to central and participating universities, conducted by the National Testing Agency. Under the CUET (UG) 2026 Information Bulletin it has 50 compulsory multiple-choice questions in 60 minutes, taken as a computer based test in 13 mediums. Each right answer earns 5 marks and each wrong one loses 1. The syllabus is general knowledge, current affairs, general mental ability, numerical ability, quantitative reasoning (arithmetic, algebra, geometry, mensuration and statistics) and logical and analytical reasoning; NTA's 2026 syllabus for test 501 also lists general science and environment literacy. Candidates may take up to five CUET papers, and each university decides which papers a course requires.",
+    rows: [
+      { label: "Questions", value: "50, all compulsory" },
+      { label: "Time", value: "60 minutes" },
+      { label: "Marks", value: "5 per right answer, 250 in all" },
+      { label: "Negative marking", value: "1 mark per wrong answer" },
+      { label: "Syllabus", value: "GK and current affairs, mental ability, numerical ability, quantitative, logical and analytical reasoning, general science and environment" },
+      { label: "Mode", value: "Computer based test, multiple shifts, NTA scores" },
+      { label: "Mediums", value: "13 Indian languages, English included" },
+      { label: "Paper choice", value: "Up to five CUET papers in all, languages included" },
+      { label: "Given by", value: "National Testing Agency" },
+    ],
+    basedOn: "the CUET (UG) 2026 Information Bulletin and the 2026 General Test (501) syllabus of the National Testing Agency",
+    source: { name: "National Testing Agency", url: "https://cuet.nta.nic.in" },
+    tigertest:
+      "Tigertest has two full CUET General Test practice tests of 50 questions in 60 minutes and eight topic drills: three for general knowledge and one each for mental ability, numerical ability, quantitative reasoning, logical reasoning and analytical reasoning. All of it is free with no account required; scores are percent correct, with the +5/-1 marking explained rather than applied.",
+  },
+  reet: {
+    answer:
+      "REET Level 1 is the Rajasthan Eligibility Examination for Teachers of Classes 1 to 5, conducted by the Board of Secondary Education, Rajasthan. Under the REET 2024 notification (exam held 27 and 28 February 2025), it has 150 one-mark multiple-choice questions in 2 hours 30 minutes, in five parts of 30: Child Development and Pedagogy, Language I, Language II, Mathematics and Environmental Studies. Each question has four options, and the OMR sheet has a fifth bubble, E, for a question the candidate chooses not to answer; a question with no bubble filled loses one-third of a mark, more than 10 percent left with no bubble disqualifies, and no deduction is set for a wrong answer. General candidates qualify with 60 percent and SC, OBC, MBC, EWS and ST candidates with 55 percent, with lower marks for some other groups, and the certificate is valid for life. No new REET notice had been published as of November 2026.",
+    rows: [
+      { label: "Questions", value: "150 MCQs, 1 mark each" },
+      { label: "Time", value: "2 hours 30 minutes" },
+      { label: "Parts", value: "CDP, Language I, Language II, Maths, EVS (30 each)" },
+      { label: "Negative marking", value: "1/3 mark for a question with no bubble filled (E = not answering); none for wrong answers" },
+      { label: "Qualifying mark", value: "60% general; 55% SC, OBC, MBC, EWS, ST (36% ST in TSP areas)" },
+      { label: "Latest exam", value: "REET 2024, held 27 and 28 February 2025" },
+      { label: "Certificate", value: "Valid for life" },
+      { label: "Conducted by", value: "Board of Secondary Education, Rajasthan (BSER)" },
+    ],
+    basedOn: "the board's REET 2024 notification No. 01/2024 of 12 December 2024, checked November 2026",
+    source: { name: "Board of Secondary Education, Rajasthan", url: "https://rajeduboard.rajasthan.gov.in/" },
+  },
+  uptet: {
+    answer:
+      "UPTET Paper 1 is the Uttar Pradesh Teacher Eligibility Test for teachers of Classes 1 to 5, conducted since 2026 by the Uttar Pradesh Education Service Selection Commission (UPESSC). It has 150 one-mark multiple-choice questions in 2 hours 30 minutes, in five sections of 30: Child Development and Pedagogy, Language I (Hindi), Language II (English, Urdu or Sanskrit), Mathematics and Environmental Studies. There is no negative marking. The qualifying mark is 90 of 150 (60 percent) for general candidates and 82 of 150 (55 percent) for SC, ST, OBC, EWS, dependants of freedom fighters, ex-servicemen and candidates with disabilities. The 2026 test (Advertisement No. 01/UPTET/2026, published 20 March 2026) was held on OMR sheets on 2 to 4 July 2026, with results on 26 August 2026.",
+    rows: [
+      { label: "Questions", value: "150 MCQs, 1 mark each" },
+      { label: "Time", value: "2 hours 30 minutes" },
+      { label: "Sections", value: "CDP, Hindi, Language II, Maths, EVS (30 each)" },
+      { label: "Language II", value: "English, Urdu or Sanskrit" },
+      { label: "Negative marking", value: "None" },
+      { label: "Qualifying mark", value: "90/150 (60%) general, 82/150 (55%) reserved" },
+      { label: "Latest test", value: "2 to 4 July 2026 (OMR); result 26 August 2026" },
+      { label: "Certificate", value: "Valid for life (UP government order, June 2021)" },
+      { label: "Conducted by", value: "UP Education Service Selection Commission (UPESSC)" },
+    ],
+    basedOn: "the UPESSC UPTET 2026 information booklet (Adv. No. 01/UPTET/2026) and the August 2026 result reports, checked November 2026",
+    source: { name: "UPESSC", url: "https://upessc.up.gov.in" },
+  },
+  ugcnet: {
+    answer:
+      "UGC-NET is the National Eligibility Test that the National Testing Agency conducts for the University Grants Commission, usually in June and December cycles, to decide eligibility for Junior Research Fellowship, Assistant Professor and PhD admission. It is a computer-based test of two papers in one 3-hour sitting with no break. Paper 1, the General Paper on Teaching and Research Aptitude, has 50 compulsory questions for 100 marks, five from each of ten units; Paper 2, on the candidate's subject, has 100 questions for 200 marks. Each question carries 2 marks and there is no negative marking. Candidates need at least 40% aggregate across both papers (35% for reserved categories) to be considered.",
+    rows: [
+      { label: "Paper 1", value: "50 questions, 100 marks, 5 from each of 10 units" },
+      { label: "Paper 2", value: "100 questions, 200 marks, on your subject" },
+      { label: "Time", value: "3 hours for both papers, no break" },
+      { label: "Negative marking", value: "None (2 marks per correct answer)" },
+      { label: "Minimum to be considered", value: "40% aggregate of both papers (35% reserved)" },
+      { label: "Languages", value: "English and Hindi" },
+      { label: "Given by", value: "National Testing Agency (NTA) for the UGC" },
+    ],
+    basedOn: "the NTA UGC-NET December 2026 information bulletin and the UGC NET Bureau's Paper I syllabus (code 00)",
+    source: { name: "NTA UGC-NET", url: "https://ugcnet.nta.nic.in/" },
+  },
+  aissee: {
+    answer:
+      "The AISSEE (All India Sainik Schools Entrance Examination) is the National Testing Agency's entrance test for Class 6 and Class 9 of the Sainik Schools and approved New Sainik Schools, run for the Sainik Schools Society of the Ministry of Defence. Under the AISSEE-2026 Information Bulletin, the Class 6 paper has 125 multiple-choice questions for 300 marks in 150 minutes, on an OMR sheet: Language 25 questions (2 marks each), Mathematics 50 (3 marks each), Intelligence 25 and General Knowledge 25 (2 marks each), with no negative marking. Candidates aged 10 to 12 can take it in English, Hindi or 11 other languages, and girls may apply for Class 6. To qualify for the existing Sainik Schools a candidate needs at least 25 percent in each subject and 40 percent overall (no minimum for SC and ST candidates there); seats are then given by school-wise merit lists and e-counselling.",
+    rows: [
+      { label: "Questions", value: "125 multiple choice, 300 marks" },
+      { label: "Time", value: "150 minutes" },
+      { label: "Sections", value: "Language 25, Mathematics 50, Intelligence 25, General Knowledge 25" },
+      { label: "Marking", value: "3 marks per Mathematics question, 2 for the others, no negative marking" },
+      { label: "Qualifying marks", value: "25% in each subject and 40% overall (existing Sainik Schools; none for SC/ST)" },
+      { label: "Who can take it", value: "Boys and girls aged 10 to 12 on 31 March of the admission year" },
+      { label: "Given by", value: "National Testing Agency (NTA) for the Sainik Schools Society" },
+    ],
+    basedOn: "the AISSEE-2026 Information Bulletin (exam held on 18 January 2026); check the AISSEE-2027 bulletin when NTA publishes it",
+    source: { name: "National Testing Agency", url: "https://exams.nta.nic.in/sainik-school-society/" },
+  },
+  aphug: {
+    answer:
+      "The AP Human Geography Exam is a fully digital, 2 hour 15 minute exam from the College Board. Section I has 60 multiple-choice questions in 60 minutes, 50% of the score; some stand alone and some come in sets, and about 30% to 40% use a map, table, chart, graph, image, infographic or landscape. Section II has 3 free-response questions in 75 minutes, the other 50%. The course has seven units: Unit 1, Thinking Geographically, is 8% to 10% of the multiple-choice section and Units 2 to 7 are 12% to 17% each. Scores are reported from 1 to 5, and wrong answers are not penalized.",
+    rows: [
+      { label: "Multiple choice", value: "60 questions, 60 minutes, 50% of score" },
+      { label: "Free response", value: "3 questions, 75 minutes, 50% of score" },
+      { label: "Answer choices", value: "5 per multiple-choice question" },
+      { label: "Stimulus questions", value: "About 30% to 40% of the multiple choice" },
+      { label: "Units", value: "7: Unit 1 8-10%, Units 2 to 7 12-17% each" },
+      { label: "Score", value: "1 to 5; no penalty for wrong answers" },
+      { label: "Given by", value: "College Board, digital in the Bluebook app" },
+    ],
+    basedOn: "the College Board AP Human Geography Course and Exam Description (effective fall 2020, clarifications as of June 2026) and AP Central exam page",
+    source: { name: "College Board AP Central", url: "https://apcentral.collegeboard.org/courses/ap-human-geography/exam" },
+    tigertest:
+      "Tigertest has two full 60-question AP Human Geography multiple-choice sections and seven drills, one per unit, all free with no account required. The free-response questions are not included, and maps and images are described in words.",
+  },
+  apcalcab: {
+    answer:
+      "The AP Calculus AB Exam is a 3 hour 10 minute exam from the College Board, given in May. From May 2027, Section I has 42 multiple-choice questions with four choices in 1 hour 40 minutes (50% of the score): Part A, 29 questions in 62 minutes with no calculator, and Part B, 13 questions in 38 minutes with a graphing calculator required. Section II has 6 free-response questions in 90 minutes (50%). The exam is hybrid digital: multiple choice in the Bluebook app, which has a built-in Desmos graphing calculator for the calculator parts, and free responses handwritten. Scores are reported from 1 to 5, and wrong answers are not penalized.",
+    rows: [
+      { label: "Multiple choice", value: "42 questions, 1 hr 40 min, 50% of score" },
+      { label: "Part A", value: "29 questions, 62 minutes, no calculator" },
+      { label: "Part B", value: "13 questions, 38 minutes, graphing calculator required" },
+      { label: "Free response", value: "6 questions, 90 minutes, 50%" },
+      { label: "Answer choices", value: "4 per multiple-choice question" },
+      { label: "Units", value: "8, from 5-10% (Differential Equations) to 15-20% (Integration)" },
+      { label: "Score", value: "1 to 5; no penalty for wrong answers" },
+    ],
+    basedOn: "the College Board AP Calculus AB exam page and Course and Exam Description with the clarifications for fall 2026 (May 2027 exam)",
+    source: { name: "College Board AP Central", url: "https://apcentral.collegeboard.org/courses/ap-calculus-ab/exam" },
+    tigertest:
+      "Tigertest has two full 42-question AP Calculus AB multiple-choice sections and eight drills, one per unit, all free with no account required. The free-response section is not included.",
+  },
+  jambmath: {
+    answer:
+      "Mathematics is one of the subjects of the JAMB Unified Tertiary Matriculation Examination (UTME), the computer-based test for admission to Nigerian universities, polytechnics and colleges of education, and is required for most science, engineering and social science courses. Guides give the UTME as 180 objective questions in 2 hours across four subjects: Use of English has 60 questions and each other subject, Mathematics included, 40. Each subject is scored out of 100, so the total is out of 400. The syllabus has five sections: Number and Numeration, Algebra, Geometry and Trigonometry, Calculus, and Statistics. Candidates may not bring a calculator; guides say the CBT has a basic on-screen one. JAMB set minimum scores of 150 for universities and 100 for polytechnics and colleges of education for 2026 admissions; institutions and courses set their own, usually higher, cut-off marks.",
+    rows: [
+      { label: "Questions", value: "40 in Mathematics (180 in the whole UTME)" },
+      { label: "Time", value: "2 hours for all four subjects" },
+      { label: "Format", value: "Computer-based, objective (multiple choice)" },
+      { label: "Sections", value: "Number and Numeration, Algebra, Geometry and Trigonometry, Calculus, Statistics" },
+      { label: "Score", value: "Out of 100 per subject, 400 in all" },
+      { label: "2026 minimum score", value: "150 universities, 100 polytechnics and colleges of education" },
+      { label: "Run by", value: "Joint Admissions and Matriculation Board (JAMB)" },
+    ],
+    basedOn: "the JAMB website and widely reproduced UTME syllabus guides, checked November 2026. Question counts are guides' figures; JAMB publishes no count per topic",
+    source: { name: "JAMB", url: "https://www.jamb.gov.ng" },
+  },
+  jambbio: {
+    answer:
+      "Biology is one of the subjects in JAMB's Unified Tertiary Matriculation Examination (UTME), the computer-based test for admission to Nigerian universities, polytechnics and colleges of education, and is required for most medical, health, agricultural and life-science courses. The UTME is 180 objective questions in 2 hours across four subjects: Use of English has 60 questions and each of the other three subjects, Biology included, has 40. Each subject is scored out of 100, so the total is out of 400. The Biology syllabus has five sections: Variety of Organisms, Form and Functions, Ecology, Heredity and Variations, and Evolution. JAMB set minimum scores of 150 for universities and 100 for polytechnics and colleges of education for 2026 admissions; institutions and courses set their own, usually higher, cut-off marks.",
+    rows: [
+      { label: "Questions", value: "40 in Biology (180 in the whole UTME)" },
+      { label: "Time", value: "2 hours for all four subjects" },
+      { label: "Format", value: "Computer-based, objective (multiple choice)" },
+      { label: "Sections", value: "Variety of Organisms, Form and Functions, Ecology, Heredity and Variations, Evolution" },
+      { label: "Score", value: "Out of 100 per subject, 400 in all" },
+      { label: "2026 minimum score", value: "150 universities, 100 polytechnics and colleges of education" },
+      { label: "Run by", value: "Joint Admissions and Matriculation Board (JAMB)" },
+    ],
+    basedOn: "the JAMB website and widely reproduced UTME syllabus guides, checked November 2026. JAMB publishes no split of the 40 questions by topic",
+    source: { name: "JAMB", url: "https://www.jamb.gov.ng" },
+  },
+  jambchem: {
+    answer:
+      "Chemistry is one of the subjects of the JAMB Unified Tertiary Matriculation Examination (UTME), the computer-based test for admission to Nigerian universities, polytechnics and colleges of education, and is required for courses such as medicine, pharmacy and engineering. The UTME is 180 objective questions in 2 hours across four subjects: Use of English has 60 questions and each other subject, including Chemistry, 40. Each subject is scored out of 100, so the total is out of 400. The JAMB Chemistry syllabus has 18 topics, from separation of mixtures and the mole to electrolysis, metals, organic compounds and astronomical chemistry. JAMB set minimum scores of 150 for universities and 100 for polytechnics and colleges of education for 2026 admissions; institutions and courses set their own, usually higher, cut-off marks.",
+    rows: [
+      { label: "Questions", value: "40 in Chemistry (180 in the whole UTME)" },
+      { label: "Time", value: "2 hours for all four subjects" },
+      { label: "Format", value: "Computer-based, four-option multiple choice" },
+      { label: "Syllabus", value: "18 topics, physical, inorganic and organic chemistry" },
+      { label: "Score", value: "Out of 100 per subject, 400 in all" },
+      { label: "2026 minimum score", value: "150 universities, 100 polytechnics and colleges of education" },
+      { label: "Run by", value: "Joint Admissions and Matriculation Board (JAMB)" },
+    ],
+    basedOn: "the JAMB UTME Chemistry syllabus (copy for the 2026/2027 cycle), the JAMB website and UTME guides, checked November 2026",
+    source: { name: "JAMB", url: "https://www.jamb.gov.ng" },
+  },
+  jambphys: {
+    answer:
+      "Physics is one of the subjects candidates for science, engineering and medical courses take in the JAMB Unified Tertiary Matriculation Examination (UTME), the computer-based test for admission to Nigerian universities, polytechnics and colleges of education. Guides that reproduce the JAMB brochure give the UTME as 180 objective questions in 2 hours across four subjects: Use of English has 60 questions and each other subject, Physics included, has 40. Each subject is scored out of 100, so the total is out of 400. The Physics syllabus runs from measurement, motion and energy through heat, waves and light to electricity, magnetism, modern physics, electronics, and fibre optics and lasers. JAMB set minimum scores of 150 for universities and 100 for polytechnics and colleges of education for 2026 admissions; institutions and courses set their own, usually higher, cut-off marks.",
+    rows: [
+      { label: "Questions", value: "40 in Physics (180 in the whole UTME)" },
+      { label: "Time", value: "2 hours for all four subjects" },
+      { label: "Format", value: "Computer-based, four-option multiple choice" },
+      { label: "Syllabus", value: "Mechanics, heat, waves and optics, electricity and magnetism, modern physics and electronics" },
+      { label: "Score", value: "Out of 100 per subject, 400 in all" },
+      { label: "2026 minimum score", value: "150 universities, 100 polytechnics and colleges of education" },
+      { label: "Run by", value: "Joint Admissions and Matriculation Board (JAMB)" },
+    ],
+    basedOn: "the JAMB website and UTME Physics syllabus guides that reproduce the IBASS brochure, checked November 2026. Question counts are guides' figures; JAMB publishes no topic weights",
+    source: { name: "JAMB", url: "https://www.jamb.gov.ng" },
+  },
+  apgov: {
+    answer:
+      "The AP U.S. Government and Politics Exam is a fully digital, 3-hour exam from the College Board. Section I has 55 multiple-choice questions in 80 minutes (50% of the score): about 30 stand alone and the rest come in sets on quantitative data, a foundational document or other text, and visuals such as maps and cartoons. Section II has four free-response questions in 100 minutes (50%): concept application, quantitative analysis, SCOTUS comparison and an argument essay. The course has five units and requires 13 foundational documents (four added for 2026-27) and 14 Supreme Court cases. Scores are reported from 1 to 5, and wrong answers are not penalized.",
+    rows: [
+      { label: "Multiple choice", value: "55 questions, 80 minutes, 50% of score" },
+      { label: "Free response", value: "4 questions, 100 minutes, 50%" },
+      { label: "Answer choices", value: "4 per multiple-choice question" },
+      { label: "Units", value: "5; Unit 2 (branches) is 25-36% of the multiple choice" },
+      { label: "Required content", value: "13 foundational documents, 14 Supreme Court cases" },
+      { label: "Score", value: "1 to 5; no penalty for wrong answers" },
+      { label: "Given by", value: "College Board, digital in the Bluebook app" },
+    ],
+    basedOn: "the College Board AP U.S. Government and Politics Course and Exam Description (effective fall 2026), its fall 2026 clarifications and the AP Central exam page",
+    source: { name: "College Board AP Central", url: "https://apcentral.collegeboard.org/courses/ap-united-states-government-and-politics/exam" },
+    tigertest:
+      "Tigertest has two full 55-question AP U.S. Government and Politics multiple-choice sections and seven drills by unit, all free with no account required. The free-response questions are not included.",
+  },
+  ngpolice: {
+    answer:
+      "Constables are recruited into the Nigeria Police Force by the Police Service Commission (PSC), working with the Force. In the 2025/2026 exercise for 50,000 constables, applicants applied free on the PSC portal, then attended physical, medical and credentials screening, and those who passed sat a written aptitude test on 28 to 30 April 2026 at centres in all 36 states and the FCT, before background checks. In 2024 the PSC had JAMB run the test as a CBT. The PSC does not publish the number of questions, the time or a pass mark; guides describe English, mathematics, general knowledge and current affairs. General Duty applicants in 2025/2026 had to be 18 to 25 with five credits including English and Mathematics.",
+    rows: [
+      { label: "Run by", value: "Police Service Commission, with the Nigeria Police Force" },
+      { label: "Format", value: "Written aptitude test, computer based (CBT)" },
+      { label: "Questions and time", value: "Not published (guides: 60 to 100 questions in up to an hour)" },
+      { label: "Subjects (guides)", value: "English, mathematics, general knowledge, current affairs" },
+      { label: "Pass mark", value: "Not published" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions, 70% target" },
+      { label: "Age (General Duty, 2025/2026)", value: "18 to 25" },
+      { label: "Education (General Duty)", value: "Five credits incl. English and Mathematics" },
+      { label: "Cost", value: "Free (the PSC warns against anyone charging)" },
+    ],
+    basedOn: "Police Service Commission notices of December 2025 to April 2026, the 2025/2026 recruitment advertisement and the PSC's 2024 statement on the JAMB-run CBT, checked November 2026",
+    source: { name: "Police Service Commission", url: "https://www.psc.gov.ng/" },
+  },
+  cdcfib: {
+    answer:
+      "The CDCFIB recruitment test is the computer-based test set by the Civil Defence, Correctional, Fire and Immigration Services Board, which recruits for four paramilitary services under the Federal Ministry of Interior: the Nigeria Security and Civil Defence Corps, the Nigerian Correctional Service, the Federal Fire Service and the Nigeria Immigration Service. You apply through the Board's recruitment portal when an exercise opens; shortlisted applicants take the test, then physical screening, document checks and a medical. In the 2025 exercise the test was online from 12 to 19 November, taken on a laptop, desktop or phone with camera and microphone and watched by AI proctoring. The Board does not publish the number of questions, the time limit, the subjects or a pass mark; guides describe multiple-choice questions on English, mathematics, reasoning, general knowledge and the services.",
+    rows: [
+      { label: "Run by", value: "Civil Defence, Correctional, Fire and Immigration Services Board (CDCFIB)" },
+      { label: "Services", value: "NSCDC, Correctional Service, Federal Fire Service, Immigration Service" },
+      { label: "Format (2025)", value: "Online CBT, multiple choice, AI-proctored, at a scheduled slot" },
+      { label: "Questions and time", value: "Not published by the Board (guides report 100; some candidates reported 40)" },
+      { label: "Pass mark", value: "Not published" },
+      { label: "Topics (guides)", value: "English, mathematics, reasoning, general knowledge, the four services" },
+      { label: "After the CBT", value: "Physical screening, document checks, medical" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions, 70% target" },
+    ],
+    basedOn: "Board instructions for the November 2025 online CBT as reported by Nigerian news outlets, with the cdcfib.gov.ng portal under maintenance, checked November 2026",
+    source: { name: "CDCFIB", url: "https://cdcfib.gov.ng" },
+  },
+  ngarmy: {
+    answer:
+      "The Nigerian Army recruits soldiers through its Regular Recruits Intake (RRI) and officers through Short Service (SSC) and Direct Short Service (DSSC) courses, applied for free on its recruitment portal. It does not publish a syllabus, question count or pass mark for its written tests. For the 90th and 91st Regular Recruits Intakes (2025 and 2026), the Army said there would be no pre-selection computer-based test: shortlisted applicants were screened in their state of origin on documents, physical fitness and medical fitness (the 89th intake, in 2025, had announced one). Officer applicants go before a selection board; for Short Service Course 49/2026 it was reported to include document checks, physical, medical and academic tests and an oral interview. Candidates and guides describe written aptitude papers in English language, mathematics and general knowledge. For 91RRI, applicants needed at least four passes including English Language in no more than two sittings and had to apply through their state of origin.",
+    rows: [
+      { label: "Run by", value: "Nigerian Army (recruitment portal)" },
+      { label: "Routes", value: "Regular Recruits Intake, SSC and DSSC officer courses" },
+      { label: "Pre-selection CBT", value: "None in the 90th and 91st intakes (the 89th had one)" },
+      { label: "Recruit screening", value: "State of origin: documents, physical fitness, medical" },
+      { label: "Officer selection board", value: "Documents, physical, medical, academic tests, interview (SSC 49/2026, per reports)" },
+      { label: "Written test content", value: "Not published; guides say English, mathematics, general knowledge" },
+      { label: "Pass mark", value: "Not published" },
+      { label: "Recruit entry (91RRI)", value: "4 passes incl. English, 2 sittings max; NIN and BVN" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions, 70% target" },
+    ],
+    basedOn: "the Army's 91RRI (2026), SSC 49/2026 and DSSC 29/2026 notices as reprinted in Nigerian news and job listings, checked November 2026; the portal itself could not be loaded",
+    source: { name: "Nigerian Army recruitment portal", url: "https://recruitment.army.mil.ng" },
+  },
+  ngcustoms: {
+    answer:
+      "The Nigeria Customs Service recruits through an online application, document screening and then a computer-based test (CBT). In the exercise advertised on 27 December 2024 for 3,927 places in the Superintendent, Inspectorate and Customs Assistant cadres, 573,523 people applied and 286,697 were invited to the CBT in September and October 2025. Candidates sat it online from any location, on a laptop or desktop with a webcam, after a compulsory pre-test two days earlier; Superintendent applicants were told to expect a further CBT. The Service has not published the number of questions, the time or the pass mark. Guides describe a general aptitude test in English, mathematics and general knowledge.",
+    rows: [
+      { label: "Run by", value: "Nigeria Customs Service" },
+      { label: "Cadres", value: "Superintendent, Inspectorate, Customs Assistant" },
+      { label: "Format", value: "Online CBT on a laptop or desktop with webcam (2025)" },
+      { label: "Pre-test", value: "Compulsory, two days before the CBT (2025)" },
+      { label: "Questions and pass mark", value: "Not published by the Service" },
+      { label: "Subjects (guides)", value: "English, mathematics, general knowledge" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions, 70% target" },
+      { label: "Latest exercise", value: "Advertised 27 December 2024; CBT September to October 2025" },
+    ],
+    basedOn: "Nigeria Customs Service press release on its recruitment CBT (September 2025) and news reports of the 9 October 2025 Inspectorate and Customs Assistant CBT, checked November 2026",
+    source: { name: "Nigeria Customs Service", url: "https://customs.gov.ng/" },
+  },
+  trcnpqe: {
+    answer:
+      "The Professional Qualifying Examination (PQE) is the computer-based exam candidates take as part of registration with the Teachers Registration Council of Nigeria (TRCN), the regulator set up by the TRCN Act of 1993. TRCN's PQE curriculum guide lists 60 questions in 60 minutes, held in batches in May and November diets, across five core areas worth 20% each: Pedagogy, Literacy, Numeracy, ICT and Safeguarding. Candidates need at least an NCE, PGDE or PDE in Education and sit under Category A (PhD), B (master's), C (bachelor's or PGDE) or D (NCE). TRCN does not publish a pass mark on its PQE pages.",
+    rows: [
+      { label: "Run by", value: "Teachers Registration Council of Nigeria (TRCN)" },
+      { label: "Questions", value: "60" },
+      { label: "Time", value: "60 minutes" },
+      { label: "Format", value: "Computer-based, multiple choice" },
+      { label: "Areas", value: "Pedagogy, Literacy, Numeracy, ICT, Safeguarding, 20% each" },
+      { label: "Diets", value: "May and November, in batches" },
+      { label: "Eligibility", value: "At least an NCE, PGDE or PDE in Education" },
+      { label: "Pass mark", value: "Not published by TRCN (guides say 50%)" },
+    ],
+    basedOn: "the TRCN PQE curriculum guide, registration and PQE past questions pages on trcn.gov.ng, checked November 2026",
+    source: { name: "Teachers Registration Council of Nigeria", url: "https://trcn.gov.ng/pqe-curriculum" },
+  },
 };

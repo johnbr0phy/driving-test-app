@@ -1,0 +1,4984 @@
+[
+  {
+    "id": "NEET-T1-001",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "neetMech",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Units and dimensions",
+    "stem": "What is the dimensional formula of the coefficient of viscosity?",
+    "options": [
+      "[M⁻¹L⁻¹T]",
+      "[ML²T⁻¹]",
+      "[MLT⁻²]",
+      "[ML⁻¹T⁻¹]"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "From F = ηA(dv/dx), η = F/(A × dv/dx) = [MLT⁻²]/([L²][T⁻¹]) = [ML⁻¹T⁻¹]. [MLT⁻²] is force itself."
+  },
+  {
+    "id": "NEET-T1-002",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "neetMech",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Projectile motion",
+    "stem": "A ball is thrown at 25 m/s at 53° above the horizontal. Taking g = 10 m/s² and sin 53° = 0.8, what is its time of flight?",
+    "options": [
+      "2 s",
+      "3 s",
+      "4 s",
+      "5 s"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "T = 2u sin θ / g = 2 × 25 × 0.8 / 10 = 4 s. 5 s forgets the sin θ, 3 s uses cos 53° = 0.6, and 2 s drops the factor of 2."
+  },
+  {
+    "id": "NEET-T1-003",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "neetMech",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Laws of motion",
+    "stem": "A 5 kg block and a 3 kg block are joined by a light string on a smooth floor. A 20 N horizontal force pulls the 5 kg block, which tows the 3 kg block behind it. What is the tension in the string?",
+    "options": [
+      "7.5 N",
+      "10 N",
+      "12.5 N",
+      "20 N"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Both blocks share a = 20/8 = 2.5 m/s². The string only has to accelerate the 3 kg block, so T = 3 × 2.5 = 7.5 N. 12.5 N is the net force on the 5 kg block, and 10 N splits the pull equally."
+  },
+  {
+    "id": "NEET-T1-004",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "neetMech",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Friction",
+    "stem": "A 2 kg crate rests on a level floor. The coefficient of static friction between them is 0.4. What is the least horizontal push that just starts it moving? (g = 10 m/s²)",
+    "options": [
+      "8 N",
+      "10 N",
+      "16 N",
+      "20 N"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Limiting friction is μs N = μs mg = 0.4 × 2 × 10 = 8 N, so a push just over 8 N starts the crate. 20 N is the crate's weight, 16 N doubles the friction, and 10 N would need μs = 0.5."
+  },
+  {
+    "id": "NEET-T1-005",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "neetMech",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Work and energy",
+    "stem": "The kinetic energy of a body increases by a factor of 4 while its mass stays the same. By what factor does its linear momentum change?",
+    "options": [
+      "2",
+      "4",
+      "16",
+      "√2"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "p = √(2mK), so p grows as the square root of K: √4 = 2. 16 squares the factor instead of taking its root."
+  },
+  {
+    "id": "NEET-T1-006",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "neetMech",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Rotational motion",
+    "stem": "What is the moment of inertia of a uniform solid sphere of mass M and radius R about a tangent to its surface?",
+    "options": [
+      "2/5 MR²",
+      "2/3 MR²",
+      "7/5 MR²",
+      "3/2 MR²"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "About a diameter I = 2/5 MR². By the parallel axis theorem, about a tangent I = 2/5 MR² + MR² = 7/5 MR². 2/3 MR² is a thin spherical shell about a diameter."
+  },
+  {
+    "id": "NEET-T1-007",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "neetMech",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Gravitation",
+    "stem": "A planet has half the radius of the Earth and twice its density. If the escape speed from the Earth is 11.2 km/s, what is it from this planet? (√2 ≈ 1.41)",
+    "options": [
+      "5.6 km/s",
+      "7.9 km/s",
+      "11.2 km/s",
+      "15.8 km/s"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "v = √(2GM/R) with M = (4/3)πR³ρ, so v is proportional to R√ρ. Here v = 11.2 × ½ × √2 ≈ 7.9 km/s. 5.6 km/s ignores the change in density."
+  },
+  {
+    "id": "NEET-T1-008",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "neetMech",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Satellites",
+    "stem": "Statement I: A geostationary satellite orbits the Earth from west to east.\n\nStatement II: The orbital period of a geostationary satellite equals the Earth's period of rotation.\n\nChoose the correct answer:",
+    "options": [
+      "Both Statement I and Statement II are true",
+      "Both Statement I and Statement II are false",
+      "Statement I is true but Statement II is false",
+      "Statement I is false but Statement II is true"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Both are true. A geostationary satellite must turn in the same sense as the Earth (west to east) in the equatorial plane, with a period of one sidereal day, so it stays over one point."
+  },
+  {
+    "id": "NEET-T1-009",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "neetMech",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Fluids",
+    "stem": "Small raindrops fall at a terminal velocity given by Stokes' law. If a drop's radius is doubled, its terminal velocity becomes:",
+    "options": [
+      "8 times",
+      "2 times",
+      "Half",
+      "4 times"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "v = 2r²(ρ - σ)g / 9η, so terminal velocity is proportional to r². Doubling r gives 2² = 4 times. 8 times would follow the weight, which goes as r³."
+  },
+  {
+    "id": "NEET-T1-010",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "neetMech",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Refrigerators",
+    "stem": "A Carnot refrigerator keeps its interior at -23 °C in a room at 27 °C. What is its coefficient of performance?",
+    "options": [
+      "0.2",
+      "0.83",
+      "1.2",
+      "5"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "β = T₂/(T₁ - T₂) = 250/(300 - 250) = 5, using kelvin. 0.83 is T₂/T₁, 1.2 is T₁/T₂, and 0.2 inverts the correct ratio."
+  },
+  {
+    "id": "NEET-T1-011",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "neetMech",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Kinetic theory",
+    "stem": "The rms speed of the molecules of a gas at 300 K is v. What is it at 1200 K?",
+    "options": [
+      "4v",
+      "√2 v",
+      "v/2",
+      "2v"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "v(rms) = √(3RT/M), so it is proportional to √T. The temperature rises four times, so the speed doubles. 4v forgets the square root."
+  },
+  {
+    "id": "NEET-T1-012",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "neetMech",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Simple harmonic motion",
+    "stem": "A 1 kg mass on a spring of force constant 100 N/m oscillates with an amplitude of 5 cm. What is its maximum speed?",
+    "options": [
+      "0.05 m/s",
+      "0.5 m/s",
+      "5 m/s",
+      "50 m/s"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "ω = √(k/m) = 10 rad/s, and v(max) = Aω = 0.05 × 10 = 0.5 m/s. 5 m/s uses 5 cm as 0.5 m."
+  },
+  {
+    "id": "NEET-T1-013",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "neetMech",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Sound waves",
+    "stem": "A pipe 25 cm long is closed at one end. The speed of sound is 340 m/s. What is the frequency of its second overtone?",
+    "options": [
+      "680 Hz",
+      "1020 Hz",
+      "1360 Hz",
+      "1700 Hz"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "A closed pipe has only odd harmonics: f₁ = v/4L = 340 Hz, and the overtones are 3f₁ and 5f₁. The second overtone is 5 × 340 = 1700 Hz; 1020 Hz is the first overtone."
+  },
+  {
+    "id": "NEET-T1-014",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "neetElectro",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Coulomb's law",
+    "stem": "Two point charges repel with a force F in air. They are moved to half their separation and placed in a medium of dielectric constant 4. What is the new force?",
+    "options": [
+      "4F",
+      "16F",
+      "F/4",
+      "F"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Halving r multiplies the force by 4, and a medium of dielectric constant 4 divides it by 4, so the force is F again. 16F ignores the medium."
+  },
+  {
+    "id": "NEET-T1-015",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "neetElectro",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Capacitors",
+    "stem": "Two 3 μF capacitors are joined in series, and the pair is connected in parallel with a third 3 μF capacitor. What is the equivalent capacitance?",
+    "options": [
+      "1 μF",
+      "2 μF",
+      "4.5 μF",
+      "9 μF"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The series pair gives 3/2 = 1.5 μF; adding 3 μF in parallel gives 4.5 μF. 1 μF is all three in series, and 9 μF all three in parallel."
+  },
+  {
+    "id": "NEET-T1-016",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "neetElectro",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Energy in a capacitor",
+    "stem": "A 5 μF capacitor is charged to 200 V. How much energy does it store?",
+    "options": [
+      "0.5 mJ",
+      "1 mJ",
+      "10 mJ",
+      "100 mJ"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "U = ½CV² = ½ × 5 × 10⁻⁶ × 40,000 = 0.1 J = 100 mJ. 10 mJ slips a power of ten, 1 mJ is the charge CV in millicoulombs, not an energy, and 0.5 mJ forgets to square V."
+  },
+  {
+    "id": "NEET-T1-017",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "neetElectro",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Internal resistance",
+    "stem": "A cell of emf 4.5 V and internal resistance 0.3 Ω is connected across a 1.2 Ω resistor. What is the potential difference across the cell's terminals?",
+    "options": [
+      "0.9 V",
+      "3.6 V",
+      "4.5 V",
+      "5.4 V"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "I = 4.5/(1.2 + 0.3) = 3 A, so the terminal voltage is IR = 3 × 1.2 = 3.6 V. 0.9 V is the drop across the internal resistance, and 5.4 V adds that drop instead of subtracting it."
+  },
+  {
+    "id": "NEET-T1-018",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "neetElectro",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Resistance",
+    "stem": "A wire of resistance R is drawn out uniformly until its radius is half the original. What is its new resistance?",
+    "options": [
+      "2R",
+      "4R",
+      "8R",
+      "16R"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Halving the radius cuts the area to a quarter, and since the volume is fixed the length becomes 4 times. R = ρL/A rises by 4 × 4 = 16. 4R counts only the change in area."
+  },
+  {
+    "id": "NEET-T1-019",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "neetElectro",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Motion in a magnetic field",
+    "stem": "A proton and a deuteron with the same kinetic energy enter the same uniform magnetic field at right angles to it. What is the ratio of the radius of the deuteron's path to that of the proton?",
+    "options": [
+      "2",
+      "√2",
+      "1",
+      "1/√2"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "r = mv/(qB) = √(2mK)/(qB). Both carry charge e, and the deuteron has twice the mass, so its radius is √2 times larger. 2 would be the ratio at equal speeds."
+  },
+  {
+    "id": "NEET-T1-020",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "neetElectro",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Solenoid",
+    "stem": "A long solenoid has 500 turns per metre and carries a current of 3 A. What is the magnetic field inside it? (μ₀ = 4π × 10⁻⁷ T m/A)",
+    "options": [
+      "6π × 10⁻⁴ T",
+      "12π × 10⁻⁴ T",
+      "6π × 10⁻⁷ T",
+      "3π × 10⁻⁴ T"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "B = μ₀nI = 4π × 10⁻⁷ × 500 × 3 = 6π × 10⁻⁴ T, about 1.9 mT. 3π × 10⁻⁴ T is the field at either end of the solenoid, half the value inside."
+  },
+  {
+    "id": "NEET-T1-021",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "neetElectro",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Lenz's law",
+    "stem": "Assertion (A): A strong magnet dropped down a long vertical copper tube falls with an acceleration less than g.\n\nReason (R): The changing flux induces eddy currents in the tube that oppose the magnet's motion.\n\nChoose the correct answer:",
+    "options": [
+      "Both A and R are true, and R explains A",
+      "Both A and R are true, but R does not explain A",
+      "A is true but R is false",
+      "A is false but R is true"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Both are true and R explains A. By Lenz's law the eddy currents set up a field that opposes the change, so they brake the falling magnet; copper is not magnetic, so without induction it would fall freely."
+  },
+  {
+    "id": "NEET-T1-022",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "neetElectro",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "AC circuits",
+    "stem": "In a series LCR circuit at resonance, what is the phase difference between the current and the applied voltage?",
+    "options": [
+      "Zero",
+      "π/4",
+      "π/2",
+      "π"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "At resonance X(L) = X(C), so the reactances cancel, the impedance equals R and the current is in phase with the voltage. The power factor is 1."
+  },
+  {
+    "id": "NEET-T1-023",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "neetElectro",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Lenses",
+    "stem": "A convex lens of focal length 20 cm is placed in contact with a concave lens of focal length 40 cm. What is the power of the combination?",
+    "options": [
+      "+2.5 D",
+      "+7.5 D",
+      "-2.5 D",
+      "+5 D"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "P = 100/f(cm): +5 D for the convex lens and -2.5 D for the concave lens. In contact the powers add: +2.5 D. +7.5 D forgets the concave lens is negative."
+  },
+  {
+    "id": "NEET-T1-024",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "neetElectro",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Interference",
+    "stem": "Why must the two slits in Young's experiment be lit from one single source rather than two separate lamps?",
+    "options": [
+      "So both slits are equally bright",
+      "So the fringes are wider",
+      "So their phase difference stays fixed",
+      "So the light has one wavelength"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A sustained interference pattern needs coherent sources, whose phase difference does not change with time. Two independent lamps change phase randomly, so the fringes would wash out."
+  },
+  {
+    "id": "NEET-T1-025",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "neetElectro",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Photoelectric effect",
+    "stem": "Photons of energy 6.2 eV fall on a metal whose work function is 4.5 eV. What is the stopping potential?",
+    "options": [
+      "1.7 V",
+      "4.5 V",
+      "6.2 V",
+      "10.7 V"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The maximum kinetic energy of the photoelectrons is 6.2 - 4.5 = 1.7 eV, so a retarding potential of 1.7 V stops them. 10.7 V adds the work function instead of subtracting it."
+  },
+  {
+    "id": "NEET-T1-026",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "neetPhysChem",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Mole concept",
+    "stem": "How many moles of oxygen atoms are present in 4.4 g of carbon dioxide? (C = 12, O = 16)",
+    "options": [
+      "0.1",
+      "0.2",
+      "0.4",
+      "2"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "4.4 g of CO₂ is 4.4/44 = 0.1 mol of molecules, and each molecule has two O atoms, so 0.2 mol of O atoms. 0.1 counts molecules, not atoms."
+  },
+  {
+    "id": "NEET-T1-027",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "neetPhysChem",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Quantum numbers",
+    "stem": "How many electrons in an atom can have the quantum numbers n = 3, l = 1 and mₗ = 0?",
+    "options": [
+      "2",
+      "3",
+      "6",
+      "10"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "n, l and mₗ together fix one orbital (one of the three 3p orbitals), and an orbital holds 2 electrons of opposite spin. 3 is the number of 3p orbitals and 6 the whole 3p subshell."
+  },
+  {
+    "id": "NEET-T1-028",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "neetPhysChem",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Molecular orbital theory",
+    "stem": "According to molecular orbital theory, which of these species is paramagnetic?",
+    "options": [
+      "O₂",
+      "N₂",
+      "CN⁻",
+      "CO"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "O₂ has two unpaired electrons in its degenerate π* orbitals, which is why liquid oxygen is attracted to a magnet. N₂, CO and CN⁻ are isoelectronic with 14 electrons, all paired."
+  },
+  {
+    "id": "NEET-T1-029",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "neetPhysChem",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Spontaneity",
+    "stem": "A reaction has a positive ΔH and a positive ΔS. When is it spontaneous?",
+    "options": [
+      "At every temperature",
+      "At no temperature",
+      "Only at high temperature",
+      "Only at low temperature"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "ΔG = ΔH - TΔS. With both positive, ΔG becomes negative only when TΔS exceeds ΔH, that is, above a certain temperature. The low-temperature case fits negative ΔH with negative ΔS."
+  },
+  {
+    "id": "NEET-T1-030",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "neetPhysChem",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Colligative properties",
+    "stem": "Acetic acid dissolved in benzene forms dimers through hydrogen bonding. What is its van't Hoff factor, i, if association is nearly complete?",
+    "options": [
+      "About 3",
+      "About 0.5",
+      "About 2",
+      "Exactly 1"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Two molecules join into one particle, so the number of particles is about halved and i ≈ 0.5. The observed molar mass is about twice the true value of 60. In water, acetic acid ionises slightly and i is a little above 1."
+  },
+  {
+    "id": "NEET-T1-031",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "neetPhysChem",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "pH",
+    "stem": "What is the pH of a 10⁻³ M aqueous solution of NaOH at 25 °C?",
+    "options": [
+      "3",
+      "10",
+      "11",
+      "13"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "[OH⁻] = 10⁻³ M, so pOH = 3 and pH = 14 - 3 = 11. 3 is the pOH, or the pH of 10⁻³ M HCl."
+  },
+  {
+    "id": "NEET-T1-032",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "neetPhysChem",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Le Chatelier's principle",
+    "stem": "For the reaction N₂(g) + 3H₂(g) ⇌ 2NH₃(g), ΔH < 0:\n\nStatement I: Adding a catalyst increases the equilibrium yield of ammonia.\n\nStatement II: Increasing the pressure favours the formation of ammonia.\n\nChoose the correct answer:",
+    "options": [
+      "Both Statement I and Statement II are true",
+      "Both Statement I and Statement II are false",
+      "Statement I is true but Statement II is false",
+      "Statement I is false but Statement II is true"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "A catalyst speeds up the forward and backward reactions equally, so equilibrium is reached sooner but the yield is unchanged. Higher pressure favours the side with fewer gas moles (2 against 4), so Statement II is true."
+  },
+  {
+    "id": "NEET-T1-033",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "neetPhysChem",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electrochemical cells",
+    "stem": "E° for Zn²⁺/Zn is -0.76 V and for Cu²⁺/Cu is +0.34 V. What is the standard emf of the Daniell cell?",
+    "options": [
+      "-1.10 V",
+      "0.42 V",
+      "0.76 V",
+      "1.10 V"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "E°cell = E°cathode - E°anode = 0.34 - (-0.76) = 1.10 V, with copper as the cathode. 0.42 V adds the two potentials, -0.76 + 0.34, and drops the sign."
+  },
+  {
+    "id": "NEET-T1-034",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "neetPhysChem",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "First-order kinetics",
+    "stem": "A first-order reaction has a half-life of 30 minutes. How long does it take to reach 75% completion?",
+    "options": [
+      "45 min",
+      "60 min",
+      "90 min",
+      "120 min"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "75% complete means 25% remains, which is two half-lives: 2 × 30 = 60 min. 45 min treats the reaction as zero order, scaling time with the fraction used."
+  },
+  {
+    "id": "NEET-T1-035",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "neetInorg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ionisation enthalpy",
+    "stem": "Which of these period 3 elements has a lower first ionisation enthalpy than the element just before it?",
+    "options": [
+      "Aluminium",
+      "Silicon",
+      "Chlorine",
+      "Phosphorus"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Aluminium's 3p electron is shielded by the filled 3s subshell and leaves more easily than magnesium's 3s electron, so Al is lower than Mg. Silicon, phosphorus and chlorine are each higher than the element before."
+  },
+  {
+    "id": "NEET-T1-036",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "neetInorg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electron gain enthalpy",
+    "stem": "Why is the electron gain enthalpy of fluorine less negative than that of chlorine?",
+    "options": [
+      "Its lower electronegativity",
+      "Its completely filled 2p subshell",
+      "Its larger atomic radius",
+      "Repulsion in its small 2p subshell"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The added electron enters the compact 2p subshell of fluorine, where it is strongly repelled by the electrons already there. In chlorine's larger 3p subshell the repulsion is much less."
+  },
+  {
+    "id": "NEET-T1-037",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "neetInorg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Inert pair effect",
+    "stem": "Assertion (A): For thallium, the +1 oxidation state is more stable than the +3 state.\n\nReason (R): Down group 13, the ns² electrons become increasingly reluctant to take part in bonding.\n\nChoose the correct answer:",
+    "options": [
+      "Both A and R are true, and R explains A",
+      "Both A and R are true, but R does not explain A",
+      "A is true but R is false",
+      "A is false but R is true"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Both are true and R explains A. This inert pair effect grows down the group because the s electrons are poorly shielded by the d and f electrons, so Tl⁺ is more stable than Tl³⁺."
+  },
+  {
+    "id": "NEET-T1-038",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "neetInorg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Group 15 trends",
+    "stem": "Which group 15 element cannot expand its covalency beyond four?",
+    "options": [
+      "Arsenic",
+      "Nitrogen",
+      "Phosphorus",
+      "Antimony"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Nitrogen, the first member, has no d orbitals in its valence shell, so its maximum covalency is 4 (as in NH₄⁺). Phosphorus can form PCl₅."
+  },
+  {
+    "id": "NEET-T1-039",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "neetInorg",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Magnetic moment",
+    "stem": "What is the spin-only magnetic moment of the V³⁺ ion? (V: atomic number 23)",
+    "options": [
+      "2.83 BM",
+      "3.87 BM",
+      "4.90 BM",
+      "5.92 BM"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "V³⁺ is 3d² with 2 unpaired electrons, so μ = √(n(n + 2)) = √8 ≈ 2.83 BM. 3.87 BM is for 3 unpaired electrons, which would be V²⁺."
+  },
+  {
+    "id": "NEET-T1-040",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "neetInorg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Lanthanoids",
+    "stem": "What is the most common oxidation state shown by the lanthanoids?",
+    "options": [
+      "+3",
+      "+4",
+      "+6",
+      "+2"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "All lanthanoids show +3. Some also show +2 or +4 when that gives an empty, half-filled or filled 4f subshell, as Eu²⁺ and Ce⁴⁺ do."
+  },
+  {
+    "id": "NEET-T1-041",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "neetInorg",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Coordination compounds",
+    "stem": "What are the coordination number and the oxidation state of platinum in [Pt(en)₂Cl₂]²⁺?",
+    "options": [
+      "6 and +2",
+      "6 and +4",
+      "4 and +4",
+      "4 and +2"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Each ethane-1,2-diamine (en) is bidentate, so 2 × 2 + 2 = 6 donor atoms. en is neutral and each Cl is -1, so x - 2 = +2 and x = +4. 4 counts ligands rather than donor atoms."
+  },
+  {
+    "id": "NEET-T1-042",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "neetInorg",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Crystal field theory",
+    "stem": "How many unpaired electrons are there in the complex ion [Fe(CN)₆]⁴⁻?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "4"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Iron here is Fe²⁺, 3d⁶. CN⁻ is a strong-field ligand, so all six electrons pair in the t₂g set, giving a low-spin, diamagnetic complex. 4 is the high-spin count, as in [Fe(H₂O)₆]²⁺."
+  },
+  {
+    "id": "NEET-T1-043",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "neetOrg",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "IUPAC nomenclature",
+    "stem": "What is the IUPAC name of (CH₃)₂CH-CH₂-OH?",
+    "options": [
+      "2-Methylpropan-1-ol",
+      "2-Methylpropan-3-ol",
+      "1,1-Dimethylethanol",
+      "Isobutan-1-ol"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The longest chain holding the OH carbon has three carbons, numbered from the OH end, with a methyl on C-2. Numbering from the other end (3-ol) gives the OH a higher locant."
+  },
+  {
+    "id": "NEET-T1-044",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "neetOrg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Carbocations",
+    "stem": "Which of these carbocations is the most stable?",
+    "options": [
+      "(CH₃)₃C⁺",
+      "CH₃⁺",
+      "(CH₃)₂CH⁺",
+      "CH₃CH₂⁺"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Each alkyl group stabilises the positive carbon by inductive effect and hyperconjugation. The tertiary cation has three, so it is the most stable; the methyl cation is the least."
+  },
+  {
+    "id": "NEET-T1-045",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "neetOrg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Wurtz reaction",
+    "stem": "Which alkane cannot be prepared by the Wurtz reaction?",
+    "options": [
+      "Hexane",
+      "Ethane",
+      "Methane",
+      "Butane"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Wurtz reaction joins two alkyl groups from alkyl halides with sodium in dry ether, so the product always has at least two carbon atoms. Methane, with one, cannot form this way."
+  },
+  {
+    "id": "NEET-T1-046",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "neetOrg",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Aromaticity",
+    "stem": "Which of these species is aromatic?",
+    "options": [
+      "Cyclopentadienyl anion",
+      "Cycloheptatriene",
+      "Cyclopentadienyl cation",
+      "Cyclooctatetraene"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Hückel's rule needs a planar, fully conjugated ring with (4n + 2) π electrons. The anion has 6; the cation has 4 (antiaromatic), and the other two are not fully conjugated planar rings with 4n + 2 electrons."
+  },
+  {
+    "id": "NEET-T1-047",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "neetOrg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Nucleophilic substitution",
+    "stem": "An SN2 reaction takes place at a chiral carbon atom. What happens to its configuration?",
+    "options": [
+      "It is lost entirely",
+      "It is inverted",
+      "It is racemised",
+      "It is retained"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The nucleophile attacks from the side opposite the leaving group in one step, flipping the molecule like an umbrella in the wind (Walden inversion). Racemisation is typical of SN1."
+  },
+  {
+    "id": "NEET-T1-048",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "neetOrg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Acidity of phenols",
+    "stem": "Which of these compounds is the most acidic?",
+    "options": [
+      "Phenol",
+      "Ethanol",
+      "p-Nitrophenol",
+      "p-Cresol"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The nitro group withdraws electrons by -I and -R effects and stabilises the phenoxide ion, so p-nitrophenol is more acidic than phenol. The methyl of p-cresol does the opposite, and ethanol is weaker still."
+  },
+  {
+    "id": "NEET-T1-049",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "neetOrg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Tests for carbonyl compounds",
+    "stem": "Which of these compounds forms a silver mirror with Tollens' reagent?",
+    "options": [
+      "Propanone",
+      "Propan-2-ol",
+      "Diethyl ether",
+      "Propanal"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Aldehydes are oxidised by Tollens' reagent, reducing Ag⁺ to metallic silver. Propanone, a ketone, is not easily oxidised and gives no mirror."
+  },
+  {
+    "id": "NEET-T1-050",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "neetOrg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Preparation of amines",
+    "stem": "Which reaction converts a primary amide into a primary amine with one carbon atom fewer?",
+    "options": [
+      "Carbylamine reaction",
+      "Gabriel phthalimide synthesis",
+      "Hoffmann bromamide reaction",
+      "Sandmeyer reaction"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Heating an amide with Br₂ and NaOH removes the carbonyl carbon as carbonate, so ethanamide gives methanamine. The Gabriel synthesis keeps the carbon chain of the alkyl halide."
+  },
+  {
+    "id": "NEET-T1-051",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "neetDiversity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Taxonomic hierarchy",
+    "stem": "Which sequence of taxonomic categories runs from the lowest to the highest?",
+    "options": [
+      "Species, genus, family, order",
+      "Genus, species, order, family",
+      "Family, genus, species, order",
+      "Species, family, genus, order"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Species is the basic unit; related species form a genus, genera a family and families an order, followed by class, phylum or division, and kingdom."
+  },
+  {
+    "id": "NEET-T1-052",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "neetDiversity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Kingdom Monera",
+    "stem": "In Nostoc and Anabaena, what are heterocysts specialised for?",
+    "options": [
+      "Taking up phosphate",
+      "Storing reserve food",
+      "Nitrogen fixation",
+      "Asexual spore formation"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Heterocysts are thick-walled cells of these cyanobacteria that keep oxygen out, so the enzyme nitrogenase can fix atmospheric nitrogen."
+  },
+  {
+    "id": "NEET-T1-053",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "neetDiversity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Kingdom Protista",
+    "stem": "The cell walls of diatoms form nearly indestructible shells because they contain:",
+    "options": [
+      "Silica",
+      "Cellulose",
+      "Calcium carbonate",
+      "Chitin"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Diatom walls are made of silica, and they pile up over long periods as diatomaceous earth, which is used in polishing and filtering."
+  },
+  {
+    "id": "NEET-T1-054",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "neetDiversity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Kingdom Fungi",
+    "stem": "Neurospora, used widely in biochemical and genetic work, belongs to which class of fungi?",
+    "options": [
+      "Deuteromycetes",
+      "Basidiomycetes",
+      "Phycomycetes",
+      "Ascomycetes"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Neurospora is a sac fungus: its sexual spores, ascospores, form in asci. Mushrooms and rusts are basidiomycetes, and Mucor is a phycomycete."
+  },
+  {
+    "id": "NEET-T1-055",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "neetDiversity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Viroids",
+    "stem": "How do viroids differ from viruses?",
+    "options": [
+      "They lack a protein coat",
+      "They cannot infect plants",
+      "They contain DNA, not RNA",
+      "They lack nucleic acid"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A viroid is a free, low molecular weight RNA with no protein coat; one causes potato spindle tuber disease. Viruses have a protein capsid around their nucleic acid."
+  },
+  {
+    "id": "NEET-T1-056",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "neetDiversity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Bryophytes",
+    "stem": "In bryophytes, which phase of the life cycle is the dominant, independent plant body?",
+    "options": [
+      "The haploid sporophyte",
+      "The haploid gametophyte",
+      "The diploid gametophyte",
+      "The diploid sporophyte"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The moss or liverwort plant you see is the haploid gametophyte. The diploid sporophyte stays attached to it and depends on it for food."
+  },
+  {
+    "id": "NEET-T1-057",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "neetDiversity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Gymnosperms",
+    "stem": "Which gymnosperm has coralloid roots associated with nitrogen-fixing cyanobacteria?",
+    "options": [
+      "Cycas",
+      "Cedrus",
+      "Pinus",
+      "Ginkgo"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Cycas has small specialised coralloid roots that house nitrogen-fixing cyanobacteria. The roots of Pinus instead form mycorrhizae with fungi."
+  },
+  {
+    "id": "NEET-T1-058",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "neetDiversity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Animal kingdom",
+    "stem": "Which phylum is radially symmetrical and diploblastic, and has stinging cells called cnidoblasts?",
+    "options": [
+      "Porifera",
+      "Cnidaria",
+      "Ctenophora",
+      "Platyhelminthes"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Cnidarians such as Hydra and Physalia use cnidoblasts for defence and capturing prey. Ctenophores are also radial and diploblastic but have comb plates and no cnidoblasts."
+  },
+  {
+    "id": "NEET-T1-059",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "neetDiversity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Inflorescence",
+    "stem": "In which type of inflorescence does the main axis end in a flower, so that it has limited growth?",
+    "options": [
+      "Spike",
+      "Catkin",
+      "Cymose",
+      "Racemose"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "In a cymose inflorescence the tip of the main axis becomes a flower and further flowers come from side branches. In racemose types the axis keeps growing."
+  },
+  {
+    "id": "NEET-T1-060",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "neetDiversity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Plant families",
+    "stem": "A papilionaceous corolla with vexillary aestivation and diadelphous stamens is typical of which family?",
+    "options": [
+      "Malvaceae",
+      "Poaceae",
+      "Brassicaceae",
+      "Fabaceae"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Members of Fabaceae (Leguminosae), such as the pea, have a standard, two wings and a keel, and nine fused plus one free stamen. Malvaceae have monadelphous stamens."
+  },
+  {
+    "id": "NEET-T1-061",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "neetDiversity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Plant anatomy",
+    "stem": "Which feature identifies a monocot stem in a transverse section?",
+    "options": [
+      "Scattered vascular bundles",
+      "A well-marked pith",
+      "Open vascular bundles",
+      "Bundles arranged in a ring"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Monocot stems have many closed vascular bundles scattered through the ground tissue, each with a sclerenchymatous sheath. Dicot stems have open bundles in a ring around a pith."
+  },
+  {
+    "id": "NEET-T1-062",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "neetDiversity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cell organelles",
+    "stem": "Which organelle is the main site of synthesis of lipids and steroid hormones?",
+    "options": [
+      "Smooth ER",
+      "Lysosome",
+      "Golgi body",
+      "Rough ER"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The smooth endoplasmic reticulum, which has no ribosomes, makes lipids; in animal cells it makes steroid hormones too. Rough ER, studded with ribosomes, makes proteins."
+  },
+  {
+    "id": "NEET-T1-063",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "neetDiversity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Meiosis",
+    "stem": "In which stage of prophase I does crossing over take place?",
+    "options": [
+      "Leptotene",
+      "Zygotene",
+      "Diplotene",
+      "Pachytene"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Homologous chromosomes pair (synapsis) in zygotene, and in pachytene non-sister chromatids exchange segments at recombination nodules. In diplotene the chiasmata become visible."
+  },
+  {
+    "id": "NEET-T1-064",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "neetDiversity",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "C4 pathway",
+    "stem": "In C4 plants, which molecule first accepts CO₂ in the mesophyll cells?",
+    "options": [
+      "RuBP",
+      "PEP",
+      "PGA",
+      "OAA"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Phosphoenolpyruvate (PEP) takes up CO₂ with PEP carboxylase, giving oxaloacetic acid (OAA), the first stable product. RuBP is the acceptor in the C3 cycle."
+  },
+  {
+    "id": "NEET-T1-065",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "neetGenetics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Embryo sac",
+    "stem": "A typical mature embryo sac of a flowering plant is:",
+    "options": [
+      "7-nucleate and 8-celled",
+      "7-nucleate and 7-celled",
+      "8-nucleate and 7-celled",
+      "8-nucleate and 8-celled"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Three mitotic divisions give 8 nuclei: three antipodals, an egg and two synergids form cells, and the two polar nuclei share one large central cell. So 8 nuclei in 7 cells."
+  },
+  {
+    "id": "NEET-T1-066",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "neetGenetics",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Endosperm",
+    "stem": "What is the ploidy of the endosperm in most flowering plants?",
+    "options": [
+      "Triploid",
+      "Tetraploid",
+      "Haploid",
+      "Diploid"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The primary endosperm nucleus forms when a male gamete fuses with the two polar nuclei (triple fusion), so it is 3n. The zygote is 2n."
+  },
+  {
+    "id": "NEET-T1-067",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "neetGenetics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Outbreeding devices",
+    "stem": "Which arrangement prevents both autogamy and geitonogamy?",
+    "options": [
+      "Monoecy",
+      "Dioecy",
+      "Protandry",
+      "Cleistogamy"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In dioecious plants such as papaya, male and female flowers are on separate plants, so pollen cannot reach a flower of the same plant. Monoecy prevents autogamy but not geitonogamy."
+  },
+  {
+    "id": "NEET-T1-068",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "neetGenetics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Special modes of reproduction",
+    "stem": "What is the formation of seeds without fertilisation called?",
+    "options": [
+      "Polyembryony",
+      "Vivipary",
+      "Apomixis",
+      "Parthenocarpy"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Apomixis, seen in some grasses and Asteraceae, is a form of asexual reproduction that mimics sexual reproduction. Parthenocarpy is the formation of fruit without fertilisation, as in seedless banana."
+  },
+  {
+    "id": "NEET-T1-069",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "neetGenetics",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Male reproductive system",
+    "stem": "Which cells of the testis secrete testosterone?",
+    "options": [
+      "Leydig cells",
+      "Spermatogonia",
+      "Spermatids",
+      "Sertoli cells"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Leydig (interstitial) cells lie between the seminiferous tubules and make androgens. Sertoli cells inside the tubules nourish the developing sperm."
+  },
+  {
+    "id": "NEET-T1-070",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "neetGenetics",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Oogenesis",
+    "stem": "At birth, the primary oocytes in a human female's ovaries are arrested at which stage?",
+    "options": [
+      "Prophase I",
+      "Anaphase I",
+      "Prophase II",
+      "Metaphase II"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Primary oocytes begin meiosis in the foetal ovary and stop in prophase I until puberty. The secondary oocyte released at ovulation is held at metaphase II until a sperm enters."
+  },
+  {
+    "id": "NEET-T1-071",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "neetGenetics",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Menstrual cycle",
+    "stem": "Ovulation in the human menstrual cycle is set off by a mid-cycle surge of:",
+    "options": [
+      "Oxytocin",
+      "LH",
+      "Progesterone",
+      "FSH"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "LH and FSH both peak in the middle of the cycle, but the LH surge causes the Graafian follicle to rupture and release the ovum. Progesterone rises afterwards from the corpus luteum."
+  },
+  {
+    "id": "NEET-T1-072",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "neetGenetics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Assisted reproduction",
+    "stem": "In ZIFT, where is the zygote or early embryo (up to 8 blastomeres) placed?",
+    "options": [
+      "The uterus",
+      "The fallopian tube",
+      "The cervix",
+      "The ovary"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Zygote intra-fallopian transfer places the early embryo in the fallopian tube. Embryos with more than 8 blastomeres are placed in the uterus instead (IUT)."
+  },
+  {
+    "id": "NEET-T1-073",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "neetGenetics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mendelian inheritance",
+    "stem": "What ratio of phenotypes does a dihybrid test cross, AaBb × aabb, give when the genes assort independently?",
+    "options": [
+      "1 : 2 : 1",
+      "3 : 1",
+      "1 : 1 : 1 : 1",
+      "9 : 3 : 3 : 1"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The AaBb parent makes four kinds of gametes in equal numbers, and the aabb parent shows each one directly, so the four phenotypes appear equally. 9 : 3 : 3 : 1 comes from selfing the dihybrid."
+  },
+  {
+    "id": "NEET-T1-074",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "neetGenetics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Blood groups",
+    "stem": "A man of blood group AB marries a woman of blood group O. Which blood groups can their children have?",
+    "options": [
+      "O only",
+      "A or B only",
+      "AB or O only",
+      "A, B or AB"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The father passes Iᴬ or Iᴮ and the mother always passes i, so the children are Iᴬi (group A) or Iᴮi (group B). None can be AB or O."
+  },
+  {
+    "id": "NEET-T1-075",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "neetGenetics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sex-linked inheritance",
+    "stem": "A colour-blind man marries a woman who is homozygous for normal vision. What fraction of their sons will be colour-blind?",
+    "options": [
+      "None",
+      "One quarter",
+      "Half",
+      "All"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Sons get their X chromosome from their mother, who carries only normal alleles, so no son is colour-blind. All the daughters will be carriers."
+  },
+  {
+    "id": "NEET-T1-076",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "neetGenetics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "DNA structure",
+    "stem": "In a double-stranded DNA molecule, 23% of the bases are guanine. What percentage are adenine?",
+    "options": [
+      "23%",
+      "27%",
+      "46%",
+      "54%"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "By Chargaff's rule G = C = 23%, which leaves 54% for A + T, and A = T = 27%. 46% is G + C, and 54% is A + T together."
+  },
+  {
+    "id": "NEET-T1-077",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "neetGenetics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Lac operon",
+    "stem": "In the lac operon of E. coli, which molecule acts as the inducer?",
+    "options": [
+      "Glucose",
+      "The repressor",
+      "RNA polymerase",
+      "Lactose"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Lactose (as allolactose) binds the repressor and inactivates it, so the repressor leaves the operator and the structural genes are transcribed."
+  },
+  {
+    "id": "NEET-T1-078",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "neetGenetics",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Hardy-Weinberg principle",
+    "stem": "In a population in Hardy-Weinberg equilibrium, 4% of individuals show a recessive trait. What is the frequency of heterozygotes?",
+    "options": [
+      "0.04",
+      "0.16",
+      "0.2",
+      "0.32"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "q² = 0.04, so q = 0.2 and p = 0.8. Heterozygotes are 2pq = 2 × 0.8 × 0.2 = 0.32. 0.16 forgets the 2, 0.2 is q itself, and 0.04 is the recessive fraction q²."
+  },
+  {
+    "id": "NEET-T1-079",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "neetEcology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Malaria",
+    "stem": "Which stage of Plasmodium enters the human body when an infected female Anopheles mosquito bites?",
+    "options": [
+      "Trophozoite",
+      "Merozoite",
+      "Sporozoite",
+      "Gametocyte"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Sporozoites from the mosquito's salivary glands reach the liver and then the red blood cells. Gametocytes are the stage the mosquito picks up from human blood."
+  },
+  {
+    "id": "NEET-T1-080",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "neetEcology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Immunity",
+    "stem": "Which class of antibody can cross the placenta from mother to foetus?",
+    "options": [
+      "IgE",
+      "IgM",
+      "IgG",
+      "IgA"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "IgG crosses the placenta and gives the newborn passive immunity. IgA reaches the baby in colostrum, and IgE is involved in allergies."
+  },
+  {
+    "id": "NEET-T1-081",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "neetEcology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "AIDS",
+    "stem": "Which cells does HIV mainly infect and destroy?",
+    "options": [
+      "Platelets",
+      "Red blood cells",
+      "B cells",
+      "Helper T cells"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "HIV enters macrophages, which keep making virus, and then helper T lymphocytes (T₄ or CD4 cells), whose numbers fall steadily, weakening immunity."
+  },
+  {
+    "id": "NEET-T1-082",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "neetEcology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Biofertilisers",
+    "stem": "Which of these is a free-living, nitrogen-fixing bacterium used as a biofertiliser?",
+    "options": [
+      "Glomus",
+      "Rhizobium",
+      "Azotobacter",
+      "Lactobacillus"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Azotobacter and Azospirillum fix nitrogen while free-living in the soil. Rhizobium fixes nitrogen only in the root nodules of legumes, and Glomus is a mycorrhizal fungus."
+  },
+  {
+    "id": "NEET-T1-083",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "neetEcology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sewage treatment",
+    "stem": "In the secondary (biological) treatment of sewage, what are the flocs that form in the aeration tanks?",
+    "options": [
+      "Clumps of grit and sand",
+      "Lumps of chemical coagulant",
+      "Algae grown in settling tanks",
+      "Bacteria bound by fungal filaments"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Aerobic microbes grow into flocs, masses of bacteria held together by fungal filaments, which consume much of the organic matter. Grit and sand are removed earlier, in primary treatment."
+  },
+  {
+    "id": "NEET-T1-084",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "neetEcology",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Restriction enzymes",
+    "stem": "EcoRI recognises the sequence 5'-GAATTC-3'. Between which two bases does it cut each strand?",
+    "options": [
+      "T and C",
+      "G and A",
+      "A and T",
+      "A and A"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "EcoRI cuts between G and A on both strands, which leaves single-stranded AATT overhangs, the sticky ends that pair with any fragment cut by the same enzyme."
+  },
+  {
+    "id": "NEET-T1-085",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "neetEcology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Recombinant DNA",
+    "stem": "Which enzyme joins DNA fragments in recombinant DNA technology?",
+    "options": [
+      "DNA ligase",
+      "Restriction enzyme",
+      "Exonuclease",
+      "DNA polymerase"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "DNA ligase seals the sugar-phosphate backbone between fragments with matching sticky ends. Restriction enzymes do the cutting."
+  },
+  {
+    "id": "NEET-T1-086",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "neetEcology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Bt crops",
+    "stem": "Why does the Bt toxin kill insect larvae without harming the bacterium that makes it?",
+    "options": [
+      "The larva's acidic gut activates it",
+      "The bacterium is immune to all toxins",
+      "Only insect cells can take it up",
+      "The larva's alkaline gut activates it"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Bacillus thuringiensis stores the toxin as an inactive protoxin. In the alkaline gut of the larva it is converted to the active form, which binds the midgut cells and makes pores that kill the insect."
+  },
+  {
+    "id": "NEET-T1-087",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "neetEcology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Population interactions",
+    "stem": "The koel (cuckoo) lays its eggs in the nest of the crow, and the crow incubates them and raises the young. What is this interaction called?",
+    "options": [
+      "Brood parasitism",
+      "Competition",
+      "Mutualism",
+      "Commensalism"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The cuckoo gains while the host crow spends its effort raising another species' young, so it is parasitism; the parasite's eggs have evolved to look like the host's. In commensalism the other species would be unaffected."
+  },
+  {
+    "id": "NEET-T1-088",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "neetEcology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Energy flow",
+    "stem": "Producers in a food chain fix 10,000 J of energy. By the 10 percent law, how much reaches the tertiary consumers?",
+    "options": [
+      "1 J",
+      "10 J",
+      "100 J",
+      "1000 J"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Only about 10% passes to each higher level: 1000 J to primary, 100 J to secondary and 10 J to tertiary consumers. 100 J stops one level too early."
+  },
+  {
+    "id": "NEET-T1-089",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "neetHumanPhys",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Respiratory volumes",
+    "stem": "Which sum gives the vital capacity of the lungs?",
+    "options": [
+      "TV + ERV + RV",
+      "TV + IRV + ERV",
+      "IRV + ERV + RV",
+      "TV + IRV"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Vital capacity is the most air a person can breathe out after the deepest breath in: tidal volume plus both reserve volumes. Adding the residual volume gives total lung capacity."
+  },
+  {
+    "id": "NEET-T1-090",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "neetHumanPhys",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Transport of oxygen",
+    "stem": "Which change shifts the oxygen-haemoglobin dissociation curve to the right, helping haemoglobin release oxygen in the tissues?",
+    "options": [
+      "Higher pH",
+      "Lower pCO₂",
+      "Lower temperature",
+      "Higher pCO₂ and H⁺"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "In the tissues pCO₂, H⁺ concentration and temperature are high, which lowers haemoglobin's affinity for O₂ (the Bohr effect). The opposite conditions in the alveoli favour loading."
+  },
+  {
+    "id": "NEET-T1-091",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "neetHumanPhys",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Blood",
+    "stem": "Which type of white blood cell is the most numerous in human blood?",
+    "options": [
+      "Lymphocytes",
+      "Neutrophils",
+      "Monocytes",
+      "Basophils"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Neutrophils make up about 60 to 65% of the leucocytes and are phagocytic. Lymphocytes are next at about 20 to 25%, and basophils are the fewest."
+  },
+  {
+    "id": "NEET-T1-092",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "neetHumanPhys",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "ECG",
+    "stem": "What does the QRS complex of a normal ECG represent?",
+    "options": [
+      "Ventricular repolarisation",
+      "Atrial repolarisation",
+      "Ventricular depolarisation",
+      "Atrial depolarisation"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The P wave is atrial depolarisation, the QRS complex is the depolarisation of the ventricles that starts their contraction, and the T wave is their return to normal."
+  },
+  {
+    "id": "NEET-T1-093",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "neetHumanPhys",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cardiac output",
+    "stem": "A person's heart beats 72 times a minute and pumps 70 mL with each beat. What is the cardiac output?",
+    "options": [
+      "3.5 L/min",
+      "5.04 L/min",
+      "7.2 L/min",
+      "50.4 L/min"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Cardiac output = stroke volume × heart rate = 70 × 72 = 5040 mL, about 5 L per minute. 50.4 slips the decimal point."
+  },
+  {
+    "id": "NEET-T1-094",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "neetHumanPhys",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Nephron",
+    "stem": "Which part of the nephron is almost impermeable to water?",
+    "options": [
+      "Collecting duct",
+      "Proximal convoluted tubule",
+      "Ascending limb of Henle's loop",
+      "Descending limb of Henle's loop"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The ascending limb lets electrolytes out but not water, so the filtrate gets more dilute as it rises. The descending limb is permeable to water."
+  },
+  {
+    "id": "NEET-T1-095",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "neetHumanPhys",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Regulation of kidney function",
+    "stem": "A fall in glomerular blood flow makes the juxtaglomerular cells release which substance?",
+    "options": [
+      "ADH",
+      "Renin",
+      "ANF",
+      "Aldosterone"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Renin converts angiotensinogen to angiotensin I, which becomes angiotensin II; this narrows blood vessels and makes the adrenal cortex release aldosterone. ANF from the heart works the other way."
+  },
+  {
+    "id": "NEET-T1-096",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "neetHumanPhys",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Modes of excretion",
+    "stem": "Which of these animals is uricotelic?",
+    "options": [
+      "Mammals",
+      "Birds",
+      "Bony fishes",
+      "Amphibians"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Birds, reptiles, land snails and insects excrete nitrogen as uric acid, which saves water. Mammals and amphibians are ureotelic, and bony fishes ammonotelic."
+  },
+  {
+    "id": "NEET-T1-097",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "neetHumanPhys",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Muscle contraction",
+    "stem": "Which band of a sarcomere becomes shorter when a skeletal muscle contracts?",
+    "options": [
+      "The A band",
+      "The I band",
+      "The Z line",
+      "The M line"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The thin filaments slide over the thick ones, pulling the Z lines closer. The I band shortens but the A band, the length of the thick filaments, stays the same."
+  },
+  {
+    "id": "NEET-T1-098",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "neetHumanPhys",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Muscle contraction",
+    "stem": "Which part of a skeletal muscle's contractile proteins acts as an ATPase, splitting ATP to power the cross-bridge cycle?",
+    "options": [
+      "The F-actin filament",
+      "The myosin head",
+      "The troponin complex",
+      "The tropomyosin strand"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The globular head of each myosin monomer (heavy meromyosin) is an active ATPase with binding sites for ATP and for actin. The energy from ATP hydrolysis lets the head bind actin and pull the thin filament."
+  },
+  {
+    "id": "NEET-T1-099",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "neetHumanPhys",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Nerve impulse",
+    "stem": "At rest, the axon membrane is much more permeable to which ion?",
+    "options": [
+      "K⁺",
+      "Ca²⁺",
+      "Na⁺",
+      "Cl⁻"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The resting membrane is more permeable to potassium and nearly impermeable to sodium. With the sodium-potassium pump this keeps the inside about 70 mV negative."
+  },
+  {
+    "id": "NEET-T1-100",
+    "section": "bio",
+    "test": 1,
+    "module": 1,
+    "domain": "neetHumanPhys",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Endocrine disorders",
+    "stem": "Acromegaly in adults is caused by too much of which hormone?",
+    "options": [
+      "Growth hormone",
+      "Cortisol",
+      "Insulin",
+      "Thyroxine"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Excess growth hormone after growth has stopped enlarges the face, hands and feet. In childhood the same excess causes gigantism."
+  },
+  {
+    "id": "NEET-T2-001",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "neetMech",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Units and dimensions",
+    "stem": "Which pair of quantities has the same dimensions?",
+    "options": [
+      "Pressure and energy",
+      "Power and momentum",
+      "Work and torque",
+      "Impulse and force"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Both work and torque are force times distance, [ML²T⁻²], though torque is not measured in joules. Impulse is force times time, so it has an extra [T]."
+  },
+  {
+    "id": "NEET-T2-002",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "neetMech",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Kinematics",
+    "stem": "A car moving at 72 km/h brakes uniformly and stops in 40 m. What is the magnitude of its deceleration?",
+    "options": [
+      "5 m/s²",
+      "10 m/s²",
+      "64.8 m/s²",
+      "129.6 m/s²"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "72 km/h = 20 m/s. From v² = u² - 2as, a = 20²/(2 × 40) = 5 m/s². 10 m/s² drops the 2, and 64.8 comes from leaving the speed in km/h."
+  },
+  {
+    "id": "NEET-T2-003",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "neetMech",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Relative velocity",
+    "stem": "A boat moves at 5 km/h in still water. It crosses a river 1 km wide, flowing at 3 km/h, along the straight line joining the two banks. How long does the crossing take?",
+    "options": [
+      "7.5 min",
+      "12 min",
+      "15 min",
+      "20 min"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "To go straight across, the boat heads upstream so its velocity across the river is √(5² - 3²) = 4 km/h. Time = 1/4 h = 15 min. 12 min uses 5 km/h as the speed across."
+  },
+  {
+    "id": "NEET-T2-004",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "neetMech",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Circular motion",
+    "stem": "A curve of radius 90 m is to be banked so that cars at 30 m/s need no friction. Taking g = 10 m/s², what is the angle of banking?",
+    "options": [
+      "26.6°",
+      "30°",
+      "37°",
+      "45°"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "tan θ = v²/(rg) = 900/900 = 1, so θ = 45°. 26.6° comes from tan θ = 0.5, which doubles r or g by mistake."
+  },
+  {
+    "id": "NEET-T2-005",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "neetMech",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Collisions",
+    "stem": "A 2 kg ball moving at 6 m/s strikes a 4 kg ball at rest, and the two stick together. How much kinetic energy is lost?",
+    "options": [
+      "12 J",
+      "18 J",
+      "24 J",
+      "36 J"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Momentum: 12 = 6v, so v = 2 m/s. KE before = ½ × 2 × 36 = 36 J; after = ½ × 6 × 4 = 12 J. The loss is 24 J; 12 J is the energy left."
+  },
+  {
+    "id": "NEET-T2-006",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "neetMech",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Power",
+    "stem": "A motor lifts a 40 kg load through 15 m in 25 s at a steady speed. Taking g = 10 m/s², what power does it deliver?",
+    "options": [
+      "240 W",
+      "480 W",
+      "2400 W",
+      "6000 W"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "P = mgh/t = 40 × 10 × 15 / 25 = 240 W. 6000 W is the work done in joules, not divided by the time, and 2400 W slips a power of ten."
+  },
+  {
+    "id": "NEET-T2-007",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "neetMech",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Angular momentum",
+    "stem": "A skater spinning with arms out pulls them in, halving her moment of inertia. No external torque acts. What happens to her rotational kinetic energy?",
+    "options": [
+      "It doubles",
+      "It becomes four times",
+      "It stays the same",
+      "It halves"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "L = Iω is conserved, so ω doubles. KE = L²/2I, and with L fixed and I halved the energy doubles. The extra energy comes from the work her muscles do."
+  },
+  {
+    "id": "NEET-T2-008",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "neetMech",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Gravitation",
+    "stem": "A body weighs 72 N on the Earth's surface. What will it weigh at a height of R/2 above the surface, where R is the Earth's radius?",
+    "options": [
+      "32 N",
+      "36 N",
+      "48 N",
+      "72 N"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "g' = g × R²/(R + h)² = g/(1.5)² = 4g/9. The weight is 72 × 4/9 = 32 N. 48 N uses 1/r instead of 1/r², 36 N simply halves the weight, and 72 N ignores the height."
+  },
+  {
+    "id": "NEET-T2-009",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "neetMech",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Elasticity",
+    "stem": "A steel wire 2 m long with a cross-section of 1 mm² carries a load of 100 N. Young's modulus of steel is 2 × 10¹¹ N/m². By how much does it stretch?",
+    "options": [
+      "0.5 mm",
+      "1 mm",
+      "2 mm",
+      "10 mm"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Δl = FL/(AY) = 100 × 2 / (10⁻⁶ × 2 × 10¹¹) = 10⁻³ m = 1 mm. 0.5 mm forgets the 2 m length."
+  },
+  {
+    "id": "NEET-T2-010",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "neetMech",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Thermal radiation",
+    "stem": "The absolute temperature of a black body is doubled. By what factor does the power it radiates change?",
+    "options": [
+      "2 times",
+      "4 times",
+      "8 times",
+      "16 times"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Stefan-Boltzmann law: P = σAT⁴, so doubling T gives 2⁴ = 16 times. 4 times would be a T² law."
+  },
+  {
+    "id": "NEET-T2-011",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "neetMech",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Thermodynamic processes",
+    "stem": "Statement I: In an isothermal expansion of an ideal gas, the internal energy of the gas does not change.\n\nStatement II: In an adiabatic expansion of an ideal gas, the temperature of the gas stays constant.\n\nChoose the correct answer:",
+    "options": [
+      "Both Statement I and Statement II are true",
+      "Both Statement I and Statement II are false",
+      "Statement I is true but Statement II is false",
+      "Statement I is false but Statement II is true"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The internal energy of an ideal gas depends only on temperature, so it is unchanged in an isothermal process. In an adiabatic expansion no heat enters, so the gas does work from its internal energy and cools."
+  },
+  {
+    "id": "NEET-T2-012",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "neetMech",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Degrees of freedom",
+    "stem": "How many degrees of freedom does a rigid diatomic gas molecule have at room temperature?",
+    "options": [
+      "3",
+      "5",
+      "6",
+      "7"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "It has 3 translational and 2 rotational degrees of freedom; rotation about the bond axis and vibration do not count at room temperature. 7 adds the two vibrational modes that appear at high temperature."
+  },
+  {
+    "id": "NEET-T2-013",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "neetMech",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Beats",
+    "stem": "A tuning fork of unknown frequency gives 4 beats per second with a 256 Hz fork. When the unknown fork is loaded with a little wax, the beats rise to 6 per second. What was its original frequency?",
+    "options": [
+      "250 Hz",
+      "252 Hz",
+      "260 Hz",
+      "262 Hz"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The unknown fork is 252 or 260 Hz. Wax lowers its frequency: from 260 Hz the beats would fall, from 252 Hz they rise. So it was 252 Hz."
+  },
+  {
+    "id": "NEET-T2-014",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "neetElectro",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electric dipole",
+    "stem": "In which orientation does an electric dipole in a uniform electric field have the least potential energy?",
+    "options": [
+      "At 45° to the field",
+      "At 90° to the field",
+      "Along the field",
+      "Against the field"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "U = -pE cos θ, which is least (-pE) at θ = 0, with the dipole moment along the field. That is the stable equilibrium; at 180° the energy is greatest."
+  },
+  {
+    "id": "NEET-T2-015",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "neetElectro",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Gauss's law",
+    "stem": "A closed surface encloses an electric dipole made of charges +q and -q. What is the net electric flux through the surface?",
+    "options": [
+      "q/ε₀",
+      "q/2ε₀",
+      "Zero",
+      "2q/ε₀"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "By Gauss's law the flux depends only on the net charge enclosed, which is +q - q = 0. Field lines leave from +q and the same number end on -q inside."
+  },
+  {
+    "id": "NEET-T2-016",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "neetElectro",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electrostatics of conductors",
+    "stem": "Statement I: Electric field lines cross an equipotential surface at right angles.\n\nStatement II: Two different equipotential surfaces can intersect each other.\n\nChoose the correct answer:",
+    "options": [
+      "Both Statement I and Statement II are true",
+      "Both Statement I and Statement II are false",
+      "Statement I is true but Statement II is false",
+      "Statement I is false but Statement II is true"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Statement I is true: a field component along the surface would do work moving a charge between points at the same potential. Statement II is false: at a crossing point the field would have two directions, one normal to each surface, which is impossible."
+  },
+  {
+    "id": "NEET-T2-017",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "neetElectro",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Drift velocity",
+    "stem": "A steady current flows through a copper wire. At a point where the wire's diameter is half as large, the drift velocity of the electrons is:",
+    "options": [
+      "4 times",
+      "Half",
+      "2 times",
+      "Unchanged"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "I = neAv(d) is the same everywhere along the wire. Halving the diameter cuts the area to a quarter, so the drift velocity rises 4 times."
+  },
+  {
+    "id": "NEET-T2-018",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "neetElectro",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Circuits",
+    "stem": "A 6 Ω and a 3 Ω resistor in parallel are connected in series with a 4 Ω resistor across a 12 V battery of negligible internal resistance. What current flows through the 3 Ω resistor?",
+    "options": [
+      "4/3 A",
+      "2 A",
+      "4 A",
+      "6 A"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The parallel pair is 2 Ω, so the total is 6 Ω and the battery current is 2 A. The pair has 4 V across it, so the 3 Ω resistor carries 4/3 A and the 6 Ω carries 2/3 A. 6 A leaves out the 4 Ω resistor."
+  },
+  {
+    "id": "NEET-T2-019",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "neetElectro",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Electric power",
+    "stem": "A 100 W and a 40 W bulb, both rated for 220 V, are connected in series across a 220 V supply. Which glows brighter?",
+    "options": [
+      "Both equally",
+      "Neither lights",
+      "The 40 W bulb",
+      "The 100 W bulb"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "R = V²/P, so the 40 W bulb has the larger resistance (1210 Ω against 484 Ω). In series both carry the same current, and P = I²R is larger in the bigger resistance, so the 40 W bulb glows brighter."
+  },
+  {
+    "id": "NEET-T2-020",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "neetElectro",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Magnetic materials",
+    "stem": "Which of these substances is diamagnetic?",
+    "options": [
+      "Aluminium",
+      "Nickel",
+      "Platinum",
+      "Bismuth"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Bismuth has a small negative susceptibility and is weakly repelled by a magnet. Aluminium and platinum are paramagnetic, and nickel is ferromagnetic."
+  },
+  {
+    "id": "NEET-T2-021",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "neetElectro",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Galvanometer to ammeter",
+    "stem": "A galvanometer of resistance 45 Ω gives full-scale deflection at 50 mA. How is it converted to an ammeter reading up to 0.5 A?",
+    "options": [
+      "5 Ω in parallel",
+      "5 Ω in series",
+      "45 Ω in parallel",
+      "4.5 Ω in series"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A shunt S in parallel carries the extra current: S = I(g)G/(I - I(g)) = 0.05 × 45 / 0.45 = 5 Ω. A resistance in series would make a voltmeter instead."
+  },
+  {
+    "id": "NEET-T2-022",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "neetElectro",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Motional emf",
+    "stem": "A rod 0.6 m long moves at 3 m/s through a uniform magnetic field of 0.25 T, with the rod, its velocity and the field all mutually perpendicular. What emf is induced across its ends?",
+    "options": [
+      "0.15 V",
+      "0.45 V",
+      "0.9 V",
+      "1.8 V"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "ε = Blv = 0.25 × 0.6 × 3 = 0.45 V. 0.9 V doubles the length, 0.15 V leaves out the speed, and 1.8 V leaves out the field."
+  },
+  {
+    "id": "NEET-T2-023",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "neetElectro",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Transformer",
+    "stem": "An ideal transformer has 50 turns in its primary and 1000 in its secondary. The primary is connected to 230 V AC. What is the secondary voltage?",
+    "options": [
+      "11.5 V",
+      "460 V",
+      "2300 V",
+      "4600 V"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "V(s)/V(p) = N(s)/N(p) = 20, so V(s) = 230 × 20 = 4600 V. 11.5 V uses the turns ratio upside down."
+  },
+  {
+    "id": "NEET-T2-024",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "neetElectro",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Electromagnetic waves",
+    "stem": "Which electromagnetic waves are produced when fast electrons are suddenly stopped by a metal target?",
+    "options": [
+      "X-rays",
+      "Gamma rays",
+      "Microwaves",
+      "Ultraviolet rays"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Rapidly decelerated electrons radiate X-rays, as in an X-ray tube. Gamma rays come from changes inside atomic nuclei."
+  },
+  {
+    "id": "NEET-T2-025",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "neetElectro",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rectifiers",
+    "stem": "A full-wave rectifier is fed from a 50 Hz AC supply. What is the fundamental frequency of the ripple in its output?",
+    "options": [
+      "25 Hz",
+      "50 Hz",
+      "100 Hz",
+      "200 Hz"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "A full-wave rectifier passes both half-cycles, giving two output pulses per input cycle, so the ripple is at 2 × 50 = 100 Hz. A half-wave rectifier would give 50 Hz."
+  },
+  {
+    "id": "NEET-T2-026",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "neetPhysChem",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Molarity",
+    "stem": "4 g of NaOH is dissolved in water and the solution is made up to 250 mL. What is its molarity? (Na = 23, O = 16, H = 1)",
+    "options": [
+      "0.016 M",
+      "0.04 M",
+      "0.1 M",
+      "0.4 M"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "4 g is 4/40 = 0.1 mol, in 0.250 L: 0.1/0.25 = 0.4 M. 0.1 M is the number of moles, not divided by the volume, and 0.04 M divides by 2.5 L."
+  },
+  {
+    "id": "NEET-T2-027",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "neetPhysChem",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hydrogen spectrum",
+    "stem": "Which electron transition in a hydrogen atom emits a line of the Balmer series?",
+    "options": [
+      "n = 4 to n = 2",
+      "n = 2 to n = 4",
+      "n = 4 to n = 1",
+      "n = 4 to n = 3"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Balmer lines end on n = 2 and lie in the visible region. Transitions to n = 1 are Lyman (ultraviolet), to n = 3 Paschen, and 2 to 4 is an absorption."
+  },
+  {
+    "id": "NEET-T2-028",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "neetPhysChem",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "VSEPR theory",
+    "stem": "Which of these molecules has a see-saw shape?",
+    "options": [
+      "XeF₄",
+      "CH₄",
+      "SF₄",
+      "BrF₃"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "SF₄ has four bond pairs and one lone pair around sulphur; the lone pair takes an equatorial position, giving a see-saw. XeF₄ (two lone pairs) is square planar and BrF₃ is T-shaped."
+  },
+  {
+    "id": "NEET-T2-029",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "neetPhysChem",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Hess's law",
+    "stem": "ΔH for C(s) + O₂(g) → CO₂(g) is -393.5 kJ mol⁻¹, and for CO(g) + ½O₂(g) → CO₂(g) it is -283.0 kJ mol⁻¹. What is ΔH for C(s) + ½O₂(g) → CO(g)?",
+    "options": [
+      "-110.5 kJ mol⁻¹",
+      "-676.5 kJ mol⁻¹",
+      "-283.0 kJ mol⁻¹",
+      "+110.5 kJ mol⁻¹"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Subtract the second equation from the first: -393.5 - (-283.0) = -110.5 kJ mol⁻¹. -676.5 adds the two equations instead."
+  },
+  {
+    "id": "NEET-T2-030",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "neetPhysChem",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Raoult's law",
+    "stem": "18 g of glucose (molar mass 180) is dissolved in 178.2 g of water at 100 °C, where pure water's vapour pressure is 760 mm Hg. What is the vapour pressure of the solution?",
+    "options": [
+      "7.6 mm Hg",
+      "684.0 mm Hg",
+      "752.4 mm Hg",
+      "767.6 mm Hg"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Moles: glucose 0.1, water 9.9, so the solute's mole fraction is 0.01. The lowering is 760 × 0.01 = 7.6 mm Hg, leaving 752.4 mm Hg. 7.6 is the lowering itself."
+  },
+  {
+    "id": "NEET-T2-031",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "neetPhysChem",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Buffers",
+    "stem": "Which of these mixtures in water acts as a buffer?",
+    "options": [
+      "HCl and NaCl",
+      "HNO₃ and NaNO₃",
+      "NaOH and NaCl",
+      "CH₃COOH and CH₃COONa"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A buffer needs a weak acid with its salt (or a weak base with its salt). Acetic acid and sodium acetate qualify; the others pair a strong acid or base with its salt."
+  },
+  {
+    "id": "NEET-T2-032",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "neetPhysChem",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Oxidation number",
+    "stem": "What is the oxidation number of nitrogen in hydroxylamine, NH₂OH?",
+    "options": [
+      "-1",
+      "-3",
+      "+1",
+      "+3"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "With H as +1 and O as -2: x + 2(+1) + (-2) + (+1) = 0, so x = -1. -3 is nitrogen's state in ammonia."
+  },
+  {
+    "id": "NEET-T2-033",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "neetPhysChem",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rate law",
+    "stem": "The rate law of a reaction is rate = k[A][B]². By what factor does the rate change if [A] is doubled and [B] is tripled?",
+    "options": [
+      "6 times",
+      "12 times",
+      "18 times",
+      "36 times"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The new rate is k(2[A])(3[B])² = 2 × 9 = 18 times the old one. 6 times ignores the square on [B], and 36 times squares [A] as well."
+  },
+  {
+    "id": "NEET-T2-034",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "neetPhysChem",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rate constant",
+    "stem": "What is the unit of the rate constant of a second-order reaction?",
+    "options": [
+      "s⁻¹",
+      "L² mol⁻² s⁻¹",
+      "mol L⁻¹ s⁻¹",
+      "L mol⁻¹ s⁻¹"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "For order n the unit is (mol L⁻¹)¹⁻ⁿ s⁻¹; with n = 2 that is L mol⁻¹ s⁻¹. mol L⁻¹ s⁻¹ is zero order and s⁻¹ is first order."
+  },
+  {
+    "id": "NEET-T2-035",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "neetInorg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ionic radii",
+    "stem": "Which order of ionic radius is correct for these isoelectronic ions?",
+    "options": [
+      "F⁻ > O²⁻ > Mg²⁺ > Na⁺",
+      "Na⁺ > Mg²⁺ > O²⁻ > F⁻",
+      "Mg²⁺ > Na⁺ > F⁻ > O²⁻",
+      "O²⁻ > F⁻ > Na⁺ > Mg²⁺"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "All four have 10 electrons. The more protons pull on them, the smaller the ion, so radius falls as nuclear charge rises from O (8) to Mg (12)."
+  },
+  {
+    "id": "NEET-T2-036",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "neetInorg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Group 16 hydrides",
+    "stem": "Which of these hydrides is the strongest acid in water?",
+    "options": [
+      "H₂Se",
+      "H₂O",
+      "H₂S",
+      "H₂Te"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Down group 16 the H-E bond gets longer and weaker, so the hydride gives up H⁺ more easily. H₂Te is the strongest acid and H₂O the weakest."
+  },
+  {
+    "id": "NEET-T2-037",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "neetInorg",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Halogens",
+    "stem": "Which halogen is the strongest oxidising agent?",
+    "options": [
+      "Bromine",
+      "Iodine",
+      "Fluorine",
+      "Chlorine"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Fluorine has the highest standard reduction potential of the halogens, helped by its low bond dissociation enthalpy and high hydration enthalpy of F⁻, so it oxidises the other halide ions."
+  },
+  {
+    "id": "NEET-T2-038",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "neetInorg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Group 15 trends",
+    "stem": "Which element of group 15 is a true metal?",
+    "options": [
+      "Arsenic",
+      "Bismuth",
+      "Phosphorus",
+      "Antimony"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Metallic character increases down the group: nitrogen and phosphorus are non-metals, arsenic and antimony metalloids, and bismuth a metal."
+  },
+  {
+    "id": "NEET-T2-039",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "neetInorg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Magnetic properties",
+    "stem": "Which of these ions has the largest spin-only magnetic moment?",
+    "options": [
+      "Fe²⁺",
+      "Cu²⁺",
+      "Mn²⁺",
+      "Cr³⁺"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Mn²⁺ is 3d⁵ with 5 unpaired electrons (μ ≈ 5.92 BM). Fe²⁺ has 4, Cr³⁺ 3 and Cu²⁺ 1, so their moments are smaller."
+  },
+  {
+    "id": "NEET-T2-040",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "neetInorg",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Potassium permanganate",
+    "stem": "In the first step of making potassium permanganate, MnO₂ is fused with KOH in air. What product forms?",
+    "options": [
+      "K₂MnO₄",
+      "MnSO₄",
+      "KMnO₄",
+      "Mn₂O₇"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Fusion with KOH and an oxidising agent turns MnO₂ (+4) into dark green potassium manganate, K₂MnO₄ (+6). This is then oxidised, chemically or electrolytically, to KMnO₄ (+7)."
+  },
+  {
+    "id": "NEET-T2-041",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "neetInorg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Isomerism",
+    "stem": "[Co(NH₃)₅(NO₂)]²⁺ and [Co(NH₃)₅(ONO)]²⁺ are an example of which kind of isomerism?",
+    "options": [
+      "Hydrate isomerism",
+      "Linkage isomerism",
+      "Ionisation isomerism",
+      "Coordination isomerism"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The nitrite ligand is ambidentate: it binds through N (nitro) in one and through O (nitrito) in the other. Ionisation isomers swap a ligand with a counter ion."
+  },
+  {
+    "id": "NEET-T2-042",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "neetInorg",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Valence bond theory",
+    "stem": "What are the hybridisation and shape of [Ni(CO)₄]?",
+    "options": [
+      "sp³d², octahedral",
+      "d²sp³, octahedral",
+      "dsp², square planar",
+      "sp³, tetrahedral"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Nickel is in the 0 state, 3d⁸4s². Strong-field CO pairs the electrons into 3d¹⁰, leaving 4s and 4p for sp³ hybrids, so the complex is tetrahedral and diamagnetic."
+  },
+  {
+    "id": "NEET-T2-043",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "neetOrg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Purification",
+    "stem": "Aniline is volatile in steam and immiscible with water. Which method is used to purify it?",
+    "options": [
+      "Crystallisation",
+      "Steam distillation",
+      "Sublimation",
+      "Chromatography"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In steam distillation the mixture boils when the two vapour pressures add up to atmospheric pressure, so aniline distils below its own boiling point and does not decompose."
+  },
+  {
+    "id": "NEET-T2-044",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "neetOrg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Lassaigne's test",
+    "stem": "In Lassaigne's test, a Prussian blue colour shows the presence of which element?",
+    "options": [
+      "Phosphorus",
+      "Nitrogen",
+      "Chlorine",
+      "Sulphur"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Fusion with sodium converts nitrogen to NaCN, which with FeSO₄ and then Fe³⁺ gives Prussian blue, iron(III) hexacyanoferrate(II). Sulphur gives a violet colour with sodium nitroprusside."
+  },
+  {
+    "id": "NEET-T2-045",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "neetOrg",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Structural isomers",
+    "stem": "How many structural isomers does pentane, C₅H₁₂, have?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "n-pentane, 2-methylbutane (isopentane) and 2,2-dimethylpropane (neopentane). Butane, C₄H₁₀, has 2."
+  },
+  {
+    "id": "NEET-T2-046",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "neetOrg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Acidity of alkynes",
+    "stem": "Why is ethyne more acidic than ethene?",
+    "options": [
+      "It has more hydrogen atoms",
+      "Its carbon has more s character",
+      "Its C-H bond is longer",
+      "Its carbon has more p character"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An sp carbon has 50% s character against 33% for sp², so it holds the electron pair of the C-H bond closer and the conjugate base is more stable. Ethyne has fewer hydrogens, not more."
+  },
+  {
+    "id": "NEET-T2-047",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "neetOrg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electrophilic substitution",
+    "stem": "What is the electrophile in the nitration of benzene with concentrated nitric and sulphuric acids?",
+    "options": [
+      "NO⁺",
+      "NO₂⁻",
+      "NO₂⁺",
+      "NO₃⁻"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Sulphuric acid protonates nitric acid, which loses water to give the nitronium ion, NO₂⁺. This attacks the π electrons of the ring."
+  },
+  {
+    "id": "NEET-T2-048",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "neetOrg",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Haloarenes",
+    "stem": "Assertion (A): Chlorobenzene undergoes electrophilic substitution more slowly than benzene.\n\nReason (R): The chlorine atom of chlorobenzene directs an incoming electrophile to the meta position.\n\nChoose the correct answer:",
+    "options": [
+      "Both A and R are true, and R explains A",
+      "Both A and R are true, but R does not explain A",
+      "A is true but R is false",
+      "A is false but R is true"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "A is true: chlorine's -I effect withdraws electron density and deactivates the ring. R is false: its +R effect still makes chlorine an ortho- and para-directing group."
+  },
+  {
+    "id": "NEET-T2-049",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "neetOrg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Tests for phenols",
+    "stem": "Which reagent distinguishes phenol from ethanol?",
+    "options": [
+      "Fehling's solution",
+      "Tollens' reagent",
+      "Sodium metal",
+      "Neutral FeCl₃ solution"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Phenol gives a violet colour with neutral ferric chloride, and ethanol does not. Both react with sodium to give hydrogen, so sodium does not tell them apart."
+  },
+  {
+    "id": "NEET-T2-050",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "neetOrg",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Carbohydrates",
+    "stem": "Why is sucrose a non-reducing sugar?",
+    "options": [
+      "It cannot be hydrolysed by acids",
+      "Its fructose unit has no carbonyl carbon",
+      "It has no free hydroxyl groups",
+      "Both reducing carbons form the glycosidic link"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "In sucrose, C-1 of α-D-glucose is joined to C-2 of β-D-fructose, so neither unit keeps a free aldehyde or ketone group to reduce Fehling's or Tollens' reagent. Maltose and lactose keep one free reducing end."
+  },
+  {
+    "id": "NEET-T2-051",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "neetDiversity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Binomial nomenclature",
+    "stem": "How should a biological name such as Mangifera indica be marked when it is handwritten rather than printed?",
+    "options": [
+      "The name put in quotation marks",
+      "Each word underlined separately",
+      "Both words in capital letters",
+      "Only the first word underlined"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "By the rules of binomial nomenclature a printed name is in italics, and a handwritten one has the generic name and the specific epithet underlined separately to show their Latin origin."
+  },
+  {
+    "id": "NEET-T2-052",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "neetDiversity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Lichens",
+    "stem": "Lichens are a symbiotic association between which two partners?",
+    "options": [
+      "An alga and a fungus",
+      "A bacterium and a fern",
+      "A fungus and a moss",
+      "An alga and a moss"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "In a lichen the algal partner (phycobiont) makes food by photosynthesis and the fungal partner (mycobiont) gives shelter and absorbs water and minerals."
+  },
+  {
+    "id": "NEET-T2-053",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "neetDiversity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Euglenoids",
+    "stem": "What covers the body of euglenoids such as Euglena in place of a cell wall?",
+    "options": [
+      "A protein-rich pellicle",
+      "A cellulose wall",
+      "A silica shell",
+      "Chitin plates"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Euglenoids lack a cell wall; a flexible, protein-rich layer called the pellicle covers the cell. Silica shells belong to diatoms."
+  },
+  {
+    "id": "NEET-T2-054",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "neetDiversity",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Pteridophytes",
+    "stem": "Heterospory, seen in Selaginella and Salvinia, is regarded as a step towards:",
+    "options": [
+      "Vascular tissue",
+      "The seed habit",
+      "Double fertilisation",
+      "Alternation of generations"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "When the female gametophyte develops inside the megaspore and stays on the parent, the arrangement is the forerunner of the seed, seen fully in gymnosperms and angiosperms."
+  },
+  {
+    "id": "NEET-T2-055",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "neetDiversity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Algae",
+    "stem": "Agar, used in growing microbes, is obtained commercially from which red algae?",
+    "options": [
+      "Gelidium",
+      "Chlorella",
+      "Fucus",
+      "Laminaria"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Gelidium and Gracilaria are red algae that yield agar. Laminaria and Fucus are brown algae, and Chlorella is a green alga used as a food supplement."
+  },
+  {
+    "id": "NEET-T2-056",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "neetDiversity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Chordates",
+    "stem": "Which class of vertebrates has a cartilaginous endoskeleton and placoid scales?",
+    "options": [
+      "Cyclostomata",
+      "Osteichthyes",
+      "Amphibia",
+      "Chondrichthyes"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Sharks and rays (Chondrichthyes) have cartilage skeletons and tiny tooth-like placoid scales. Bony fishes have bony skeletons, and cyclostomes have no scales or paired fins."
+  },
+  {
+    "id": "NEET-T2-057",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "neetDiversity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Non-chordates",
+    "stem": "Nereis, Pheretima and Hirudinaria belong to which phylum?",
+    "options": [
+      "Arthropoda",
+      "Aschelminthes",
+      "Annelida",
+      "Mollusca"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "All three are segmented worms with metameric segmentation and a true coelom: a sandworm, the earthworm and the blood-sucking leech."
+  },
+  {
+    "id": "NEET-T2-058",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "neetDiversity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Fruits",
+    "stem": "The mango is a drupe. Which part of the fruit is eaten?",
+    "options": [
+      "The seed coat",
+      "The thalamus",
+      "The mesocarp",
+      "The endocarp"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A drupe develops from a monocarpellary superior ovary. In the mango the fleshy mesocarp is eaten, while the endocarp forms the hard stone; in the coconut it is the endosperm."
+  },
+  {
+    "id": "NEET-T2-059",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "neetDiversity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Placentation",
+    "stem": "Which type of placentation is found in the ovary of mustard?",
+    "options": [
+      "Parietal",
+      "Basal",
+      "Marginal",
+      "Axile"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "In mustard and Argemone the ovules sit on the inner wall of the ovary, and the ovary becomes two-chambered by a false septum. Axile placentation is seen in China rose and tomato."
+  },
+  {
+    "id": "NEET-T2-060",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "neetDiversity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Meristems",
+    "stem": "Which tissue increases the girth of the stem in dicots?",
+    "options": [
+      "Apical meristem",
+      "Vascular cambium",
+      "Intercalary meristem",
+      "Protoderm"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The vascular cambium, a lateral meristem, forms secondary xylem inwards and secondary phloem outwards. Apical meristems add length, and intercalary meristems act at the nodes of grasses."
+  },
+  {
+    "id": "NEET-T2-061",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "neetDiversity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Enzymes",
+    "stem": "Malonate inhibits succinic dehydrogenase because it closely resembles succinate. This is an example of:",
+    "options": [
+      "Allosteric activation",
+      "Non-competitive inhibition",
+      "Feedback activation",
+      "Competitive inhibition"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A competitive inhibitor looks like the substrate and competes for the active site. Adding more substrate can overcome it."
+  },
+  {
+    "id": "NEET-T2-062",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "neetDiversity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mitochondria",
+    "stem": "Statement I: Mitochondria contain their own circular DNA and 70S ribosomes.\n\nStatement II: The outer membrane of a mitochondrion folds inwards to form the cristae.\n\nChoose the correct answer:",
+    "options": [
+      "Both Statement I and Statement II are true",
+      "Both Statement I and Statement II are false",
+      "Statement I is true but Statement II is false",
+      "Statement I is false but Statement II is true"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Statement I is true: mitochondria have circular DNA and 70S ribosomes and can make some of their own proteins. Statement II is false: the cristae are infoldings of the inner membrane."
+  },
+  {
+    "id": "NEET-T2-063",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "neetDiversity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Glycolysis",
+    "stem": "How many ATP molecules are gained directly, as a net figure, when one glucose molecule goes through glycolysis?",
+    "options": [
+      "2",
+      "4",
+      "8",
+      "36"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Glycolysis uses 2 ATP and forms 4 by substrate-level phosphorylation, a net gain of 2, along with 2 NADH. 4 is the gross figure."
+  },
+  {
+    "id": "NEET-T2-064",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "neetDiversity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Plant growth regulators",
+    "stem": "Bolting, the sudden elongation of the internodes just before flowering in rosette plants such as cabbage, is promoted by:",
+    "options": [
+      "Ethylene",
+      "Cytokinins",
+      "Abscisic acid",
+      "Gibberellins"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Gibberellins promote internode elongation, so spraying them on rosette plants such as cabbage and beet causes bolting. Abscisic acid generally inhibits growth."
+  },
+  {
+    "id": "NEET-T2-065",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "neetGenetics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pollination",
+    "stem": "In which plant does pollination take place through water?",
+    "options": [
+      "Water hyacinth",
+      "Lotus",
+      "Water lily",
+      "Vallisneria"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Vallisneria releases its male flowers or pollen onto the water surface, where they drift to the female flowers. Water hyacinth and water lily live in water but are pollinated by insects or wind."
+  },
+  {
+    "id": "NEET-T2-066",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "neetGenetics",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Double fertilisation",
+    "stem": "In double fertilisation, one male gamete fuses with the egg. What does the other fuse with?",
+    "options": [
+      "A synergid",
+      "An antipodal cell",
+      "The two polar nuclei",
+      "The nucellus"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The second male gamete fuses with the two polar nuclei in the central cell (triple fusion), forming the triploid primary endosperm nucleus."
+  },
+  {
+    "id": "NEET-T2-067",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "neetGenetics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Polyembryony",
+    "stem": "In which plant is polyembryony commonly seen?",
+    "options": [
+      "Mustard",
+      "Pea",
+      "Wheat",
+      "Citrus"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "In many Citrus varieties, nucellar cells around the embryo sac divide and grow into extra embryos, so one seed holds several embryos."
+  },
+  {
+    "id": "NEET-T2-068",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "neetGenetics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pollen grain",
+    "stem": "The tough exine of a pollen grain is made of which substance?",
+    "options": [
+      "Pectin",
+      "Cellulose",
+      "Sporopollenin",
+      "Lignin"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Sporopollenin resists high temperature, strong acids and alkalis, and no known enzyme breaks it down, which is why pollen is preserved as fossils. The intine is made of cellulose and pectin."
+  },
+  {
+    "id": "NEET-T2-069",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "neetGenetics",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Spermatogenesis",
+    "stem": "How many sperms are formed from one primary spermatocyte?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Meiosis I gives two secondary spermatocytes and meiosis II gives four spermatids, which become four sperms. One primary oocyte, in contrast, gives one ovum and polar bodies."
+  },
+  {
+    "id": "NEET-T2-070",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "neetGenetics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Implantation",
+    "stem": "At which stage does the human embryo implant in the endometrium of the uterus?",
+    "options": [
+      "Blastocyst",
+      "Gastrula",
+      "Morula",
+      "Zygote"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The morula becomes a blastocyst, whose trophoblast attaches to the endometrium and the inner cell mass becomes the embryo. Implantation happens about a week after fertilisation."
+  },
+  {
+    "id": "NEET-T2-071",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "neetGenetics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pregnancy",
+    "stem": "Which hormone is produced only during pregnancy, by the placenta?",
+    "options": [
+      "hCG",
+      "FSH",
+      "Oxytocin",
+      "Prolactin"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The placenta makes hCG and hPL; with relaxin, which the ovary secretes late in pregnancy, these are found only in pregnancy. FSH comes from the anterior pituitary, and oxytocin from the hypothalamus via the posterior pituitary."
+  },
+  {
+    "id": "NEET-T2-072",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "neetGenetics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Contraception",
+    "stem": "How do copper-releasing IUDs such as CuT mainly prevent pregnancy?",
+    "options": [
+      "They block the cervix",
+      "They reduce sperm motility",
+      "They release progesterone",
+      "They block ovulation"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Copper ions suppress sperm motility and their ability to fertilise, and IUDs also increase phagocytosis of sperm in the uterus. Hormone-releasing IUDs such as LNG-20 work on the cervix and uterus instead."
+  },
+  {
+    "id": "NEET-T2-073",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "neetGenetics",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Incomplete dominance",
+    "stem": "In snapdragon, red (RR) crossed with white (rr) gives pink F₁ plants. A pink F₁ plant is crossed back to the white parent. What do the offspring show?",
+    "options": [
+      "All pink",
+      "1 pink : 1 white",
+      "1 red : 1 white",
+      "1 red : 2 pink : 1 white"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Rr × rr gives Rr and rr in equal numbers, and with incomplete dominance Rr is pink, so half are pink and half white. No offspring can be red, since every one gets r from the white parent."
+  },
+  {
+    "id": "NEET-T2-074",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "neetGenetics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Chromosomal disorders",
+    "stem": "What is the karyotype of a person with Klinefelter's syndrome?",
+    "options": [
+      "47, +21",
+      "47, XXY",
+      "45, X0",
+      "46, XY"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Klinefelter's syndrome has an extra X chromosome in a male. 45, X0 is Turner's syndrome and 47, +21 is Down's syndrome."
+  },
+  {
+    "id": "NEET-T2-075",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "neetGenetics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sex determination",
+    "stem": "In honey bees, what is the chromosome set of a male (drone)?",
+    "options": [
+      "Tetraploid",
+      "Haploid",
+      "Diploid",
+      "Triploid"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Drones develop from unfertilised eggs by parthenogenesis, so they have 16 chromosomes, while queens and workers come from fertilised eggs and have 32. This is haplodiploid sex determination."
+  },
+  {
+    "id": "NEET-T2-076",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "neetGenetics",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Transcription",
+    "stem": "In eukaryotes, which enzyme transcribes the precursor of mRNA (hnRNA)?",
+    "options": [
+      "RNA polymerase III",
+      "RNA polymerase II",
+      "DNA polymerase III",
+      "RNA polymerase I"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "RNA polymerase I makes rRNAs, II makes hnRNA, and III makes tRNA, 5S rRNA and snRNAs."
+  },
+  {
+    "id": "NEET-T2-077",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "neetGenetics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Genetic code",
+    "stem": "Of the 64 codons, how many code for amino acids?",
+    "options": [
+      "3",
+      "20",
+      "61",
+      "64"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Three codons, UAA, UAG and UGA, are stop codons, leaving 61 that code for the 20 amino acids. The code is therefore degenerate."
+  },
+  {
+    "id": "NEET-T2-078",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "neetGenetics",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Evolution",
+    "stem": "Darwin's finches of the Galapagos Islands are an example of:",
+    "options": [
+      "Industrial melanism",
+      "Genetic drift",
+      "Adaptive radiation",
+      "Convergent evolution"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "From one seed-eating ancestor, many forms evolved with beaks suited to different foods, spreading into different habitats. The marsupials of Australia are another example."
+  },
+  {
+    "id": "NEET-T2-079",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "neetEcology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Human diseases",
+    "stem": "In which disease do houseflies act as mechanical carriers of the parasite from faeces to food and water?",
+    "options": [
+      "Malaria",
+      "Filariasis",
+      "Amoebiasis",
+      "Pneumonia"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Amoebiasis (amoebic dysentery) is caused by the protozoan Entamoeba histolytica in the large intestine, and houseflies carry it to food. Malaria and filariasis are spread by mosquitoes, and pneumonia by droplets."
+  },
+  {
+    "id": "NEET-T2-080",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "neetEcology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Typhoid",
+    "stem": "Which test is used to confirm typhoid fever?",
+    "options": [
+      "Western blot",
+      "Widal test",
+      "Mantoux test",
+      "ELISA"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Widal test detects antibodies against Salmonella typhi in the blood. ELISA is used for HIV, and the Mantoux test for tuberculosis."
+  },
+  {
+    "id": "NEET-T2-081",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "neetEcology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cancer",
+    "stem": "Which property of normal cells is lost in cancer cells, so that they keep dividing when they touch other cells?",
+    "options": [
+      "Membrane transport",
+      "Contact inhibition",
+      "Cell division",
+      "Protein synthesis"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Contact with other cells normally stops cell division. Cancer cells lose this, so they divide without limit and form masses called tumours."
+  },
+  {
+    "id": "NEET-T2-082",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "neetEcology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Microbes in industry",
+    "stem": "Statins, which lower blood cholesterol, are produced commercially from which microbe?",
+    "options": [
+      "Streptococcus",
+      "Monascus purpureus",
+      "Trichoderma polysporum",
+      "Aspergillus niger"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Monascus purpureus makes statins, which competitively inhibit the enzyme that makes cholesterol. Trichoderma polysporum gives cyclosporin A, and Aspergillus niger citric acid."
+  },
+  {
+    "id": "NEET-T2-083",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "neetEcology",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Human insulin",
+    "stem": "How were the A and B chains of the first genetically engineered human insulin produced?",
+    "options": [
+      "Synthesised chemically in vitro",
+      "Made separately, then joined",
+      "Extracted from cattle pancreas",
+      "Made together as proinsulin"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "DNA for each chain was put into E. coli separately; the chains were extracted and linked by disulphide bonds to form insulin, so no C peptide had to be removed."
+  },
+  {
+    "id": "NEET-T2-084",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "neetEcology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "PCR",
+    "stem": "Why is Taq polymerase used in the polymerase chain reaction?",
+    "options": [
+      "It needs no primers to start",
+      "It joins Okazaki fragments",
+      "It cuts DNA at specific sites",
+      "It stays active at high temperature"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Taq polymerase comes from Thermus aquaticus, a bacterium of hot springs, so it survives the repeated high-temperature denaturation steps of PCR."
+  },
+  {
+    "id": "NEET-T2-085",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "neetEcology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Gel electrophoresis",
+    "stem": "After agarose gel electrophoresis, separated DNA bands are stained with ethidium bromide. How are they then seen?",
+    "options": [
+      "As orange bands under UV light",
+      "As green bands under a lamp",
+      "As blue bands in daylight",
+      "As dark bands under X-rays"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Ethidium bromide slips between the DNA bases and glows orange under ultraviolet light, so the bands show up when the gel is put on a UV transilluminator."
+  },
+  {
+    "id": "NEET-T2-086",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "neetEcology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Population growth",
+    "stem": "A population grows in a habitat with limited resources. Which growth curve does it follow?",
+    "options": [
+      "Exponential",
+      "Sigmoid",
+      "Bell-shaped",
+      "Linear"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Growth is slow at first, then fast, and then levels off at the carrying capacity K, giving the S-shaped logistic (Verhulst-Pearl) curve. A J-shaped exponential curve needs unlimited resources."
+  },
+  {
+    "id": "NEET-T2-087",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "neetEcology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ecological pyramids",
+    "stem": "Which ecological pyramid is always upright?",
+    "options": [
+      "Pyramid of numbers",
+      "Pyramid of energy",
+      "Age pyramid",
+      "Pyramid of biomass"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Energy always falls from one trophic level to the next, so the pyramid of energy can never be inverted. The biomass pyramid in the sea and the number pyramid of a tree can be."
+  },
+  {
+    "id": "NEET-T2-088",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "neetEcology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Biodiversity conservation",
+    "stem": "Sacred groves protected by communities are an example of:",
+    "options": [
+      "Seed banking",
+      "Ex situ conservation",
+      "Cryopreservation",
+      "In situ conservation"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Sacred groves protect species in their natural habitat, as do national parks and biosphere reserves. Zoos, botanical gardens and seed banks are ex situ."
+  },
+  {
+    "id": "NEET-T2-089",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "neetHumanPhys",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Regulation of breathing",
+    "stem": "The pneumotaxic centre, which can shorten inspiration and so change the breathing rate, lies in which part of the brain?",
+    "options": [
+      "Pons",
+      "Hypothalamus",
+      "Medulla oblongata",
+      "Cerebellum"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The pneumotaxic centre is in the pons. It moderates the respiratory rhythm centre of the medulla by cutting inspiration short, which raises the breathing rate."
+  },
+  {
+    "id": "NEET-T2-090",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "neetHumanPhys",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Respiratory disorders",
+    "stem": "In emphysema, damage to the alveolar walls mainly causes:",
+    "options": [
+      "Weaker diaphragm muscles",
+      "More mucus in the trachea",
+      "Narrower bronchioles",
+      "Less surface for gas exchange"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Emphysema, often caused by smoking, breaks down the alveolar walls, so the surface area for diffusion of gases falls. Narrowing of the bronchioles is typical of asthma."
+  },
+  {
+    "id": "NEET-T2-091",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "neetHumanPhys",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Coagulation",
+    "stem": "Which ion is essential for the clotting of blood?",
+    "options": [
+      "Na⁺",
+      "Ca²⁺",
+      "K⁺",
+      "Mg²⁺"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Calcium ions take part in the cascade that turns prothrombin into thrombin and fibrinogen into fibrin. Blood kept with citrate or oxalate, which remove calcium, does not clot."
+  },
+  {
+    "id": "NEET-T2-092",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "neetHumanPhys",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rh factor",
+    "stem": "When can erythroblastosis foetalis occur?",
+    "options": [
+      "An Rh⁻ mother with an Rh⁺ foetus",
+      "An Rh⁺ mother with an Rh⁺ foetus",
+      "An Rh⁺ mother with an Rh⁻ foetus",
+      "An Rh⁻ mother with an Rh⁻ foetus"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "At her first delivery an Rh⁻ mother can be exposed to the foetus's Rh antigen and make antibodies. In a later Rh⁺ pregnancy these cross the placenta and destroy the foetus's red cells."
+  },
+  {
+    "id": "NEET-T2-093",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "neetHumanPhys",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Conducting system of the heart",
+    "stem": "The bundle of His carries the wave of excitation from:",
+    "options": [
+      "The atria to the SA node",
+      "The AV node to the ventricles",
+      "The ventricles to the atria",
+      "The SA node to the AV node"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The SA node starts each beat and the impulse spreads over the atria to the AV node. The bundle of His and its branches and Purkinje fibres then carry it through the ventricular walls."
+  },
+  {
+    "id": "NEET-T2-094",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "neetHumanPhys",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Heart sounds",
+    "stem": "The first heart sound, 'lub', is caused by the closure of:",
+    "options": [
+      "The AV valves",
+      "The aortic valve only",
+      "The bicuspid valve only",
+      "The semilunar valves"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Lub comes from the tricuspid and bicuspid (AV) valves closing as the ventricles start to contract. Dub comes from the semilunar valves closing at the end of ventricular systole."
+  },
+  {
+    "id": "NEET-T2-095",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "neetHumanPhys",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Urine formation",
+    "stem": "What is the glomerular filtration rate of a healthy adult?",
+    "options": [
+      "1.5 mL/min",
+      "12.5 mL/min",
+      "60 mL/min",
+      "125 mL/min"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The kidneys filter about 125 mL of blood plasma a minute, or 180 litres a day. About 1.5 litres of urine is passed a day, so nearly 99% of the filtrate is reabsorbed."
+  },
+  {
+    "id": "NEET-T2-096",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "neetHumanPhys",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Osmoregulation",
+    "stem": "Where is ADH (vasopressin) synthesised?",
+    "options": [
+      "In the adrenal cortex",
+      "In the posterior pituitary",
+      "In the kidney tubules",
+      "In the hypothalamus"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Neurosecretory cells of the hypothalamus make ADH and oxytocin; their axons carry the hormones to the posterior pituitary (neurohypophysis), which only stores and releases them."
+  },
+  {
+    "id": "NEET-T2-097",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "neetHumanPhys",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Joints",
+    "stem": "What type of joint is found between the atlas and the axis vertebrae?",
+    "options": [
+      "Saddle joint",
+      "Gliding joint",
+      "Pivot joint",
+      "Hinge joint"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The pivot joint lets the head turn from side to side. A saddle joint is found between the carpal and metacarpal of the thumb, and a hinge joint at the knee."
+  },
+  {
+    "id": "NEET-T2-098",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "neetHumanPhys",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Skeletal disorders",
+    "stem": "Gout is an inflammation of the joints caused by deposits of:",
+    "options": [
+      "Uric acid crystals",
+      "Cholesterol",
+      "Lactic acid",
+      "Calcium phosphate"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "In gout, uric acid builds up and crystallises in the joints. Lactic acid builds up in muscles during hard exercise and causes fatigue, not gout."
+  },
+  {
+    "id": "NEET-T2-099",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "neetHumanPhys",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Synaptic transmission",
+    "stem": "At a chemical synapse, which ion enters the axon terminal and triggers the release of neurotransmitter?",
+    "options": [
+      "Na⁺",
+      "Cl⁻",
+      "Ca²⁺",
+      "K⁺"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "When an impulse reaches the terminal, calcium ions flow in and the synaptic vesicles fuse with the membrane and release their neurotransmitter into the cleft."
+  },
+  {
+    "id": "NEET-T2-100",
+    "section": "bio",
+    "test": 2,
+    "module": 1,
+    "domain": "neetHumanPhys",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Endocrine glands",
+    "stem": "Which hormone is secreted by the pineal gland?",
+    "options": [
+      "Melatonin",
+      "Calcitonin",
+      "Oxytocin",
+      "Thymosin"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Melatonin helps regulate the 24-hour rhythm of the body, such as the sleep-wake cycle. Thymosin comes from the thymus and calcitonin from the thyroid."
+  },
+  {
+    "id": "NEET-D-001",
+    "section": "phy",
+    "test": 0,
+    "module": 1,
+    "domain": "neetMech",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Vertical circle",
+    "stem": "A stone tied to a string of length R is whirled in a vertical circle. What is the least speed it must have at the lowest point for the string to stay taut all the way round?",
+    "options": [
+      "√(2gR)",
+      "√(3gR)",
+      "√(gR)",
+      "√(5gR)"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "At the top the least speed is √(gR), when gravity alone provides the centripetal force. Energy conservation over a height 2R gives v² = gR + 4gR, so v = √(5gR) at the bottom."
+  },
+  {
+    "id": "NEET-D-002",
+    "section": "phy",
+    "test": 0,
+    "module": 1,
+    "domain": "neetMech",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Centre of mass",
+    "stem": "A 2 kg particle is at x = 0 and a 6 kg particle is at x = 4 m. Where is their centre of mass?",
+    "options": [
+      "x = 2.67 m",
+      "x = 3 m",
+      "x = 1 m",
+      "x = 2 m"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "x = (2 × 0 + 6 × 4)/8 = 24/8 = 3 m, closer to the heavier particle. x = 1 m measures from the heavy particle by mistake."
+  },
+  {
+    "id": "NEET-D-003",
+    "section": "phy",
+    "test": 0,
+    "module": 1,
+    "domain": "neetMech",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Surface tension",
+    "stem": "Statement I: Water rises higher in a narrow capillary tube than in a wide one.\n\nStatement II: The height of capillary rise is inversely proportional to the radius of the tube.\n\nChoose the correct answer:",
+    "options": [
+      "Both Statement I and Statement II are true",
+      "Both Statement I and Statement II are false",
+      "Statement I is true but Statement II is false",
+      "Statement I is false but Statement II is true"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Both are true. Jurin's law, h = 2T cos θ/(rρg), gives h proportional to 1/r, which is why the narrower tube shows the greater rise."
+  },
+  {
+    "id": "NEET-D-004",
+    "section": "phy",
+    "test": 0,
+    "module": 1,
+    "domain": "neetElectro",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Radioactivity",
+    "stem": "A radioactive isotope has a half-life of 5 days. How much of a 20 g sample remains undecayed after 15 days?",
+    "options": [
+      "2.5 g",
+      "5 g",
+      "6.67 g",
+      "10 g"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "15 days is three half-lives, so 20 × (½)³ = 2.5 g remains. 10 g is after one half-life, and 6.67 g divides 20 by 3, treating the decay as linear."
+  },
+  {
+    "id": "NEET-D-005",
+    "section": "phy",
+    "test": 0,
+    "module": 1,
+    "domain": "neetElectro",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Logic gates",
+    "stem": "Which logic gate is called a universal gate because any other gate can be built from it alone?",
+    "options": [
+      "NAND",
+      "AND",
+      "XOR",
+      "OR"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "NAND (and also NOR) can be combined to make NOT, AND, OR and every other gate. AND, OR and XOR cannot make NOT on their own."
+  },
+  {
+    "id": "NEET-D-006",
+    "section": "phy",
+    "test": 0,
+    "module": 1,
+    "domain": "neetElectro",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Bohr model",
+    "stem": "The energy of the electron in the ground state of hydrogen is -13.6 eV. What is its energy in the n = 2 state?",
+    "options": [
+      "-27.2 eV",
+      "-13.6 eV",
+      "-6.8 eV",
+      "-3.4 eV"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "E(n) = -13.6/n² eV, so E(2) = -13.6/4 = -3.4 eV. -6.8 eV divides by n instead of n², and -27.2 eV multiplies by n."
+  },
+  {
+    "id": "NEET-D-007",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "neetPhysChem",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Avogadro number",
+    "stem": "How many oxygen atoms are present in 0.5 mol of ozone, O₃? (Nₐ = 6.02 × 10²³ mol⁻¹)",
+    "options": [
+      "1.81 × 10²⁴",
+      "3.01 × 10²³",
+      "6.02 × 10²³",
+      "9.03 × 10²³"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "0.5 mol of O₃ is 0.5 × 6.02 × 10²³ = 3.01 × 10²³ molecules, each with 3 atoms: 9.03 × 10²³ atoms. 3.01 × 10²³ counts molecules."
+  },
+  {
+    "id": "NEET-D-008",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "neetPhysChem",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Entropy and free energy",
+    "stem": "Statement I: The entropy of a system increases when ice melts.\n\nStatement II: For a reaction at equilibrium at constant temperature and pressure, ΔG = 0.\n\nChoose the correct answer:",
+    "options": [
+      "Both Statement I and Statement II are true",
+      "Both Statement I and Statement II are false",
+      "Statement I is true but Statement II is false",
+      "Statement I is false but Statement II is true"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Both are true. Liquid water is more disordered than ice, so melting raises the entropy, and at equilibrium there is no further driving force, so ΔG = 0."
+  },
+  {
+    "id": "NEET-D-009",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "neetPhysChem",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Faraday's laws",
+    "stem": "How much charge is needed to deposit 1 mol of copper metal from a solution of Cu²⁺ ions?",
+    "options": [
+      "0.5 F",
+      "1 F",
+      "2 F",
+      "4 F"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Cu²⁺ + 2e⁻ → Cu, so each mole of copper needs 2 mol of electrons, that is 2 faradays (about 193,000 C)."
+  },
+  {
+    "id": "NEET-D-010",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "neetPhysChem",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Effect of temperature",
+    "stem": "Why does a small rise in temperature greatly increase the rate of most reactions?",
+    "options": [
+      "The activation energy itself falls",
+      "More molecules exceed the activation energy",
+      "The equilibrium constant rises",
+      "The reaction becomes more exothermic"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "At a higher temperature the Maxwell-Boltzmann distribution shifts, and the fraction of collisions with energy above Eₐ rises sharply. Eₐ itself does not change unless a catalyst is used."
+  },
+  {
+    "id": "NEET-D-011",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "neetInorg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Salt analysis",
+    "stem": "In qualitative analysis, the brown ring test confirms the presence of which anion?",
+    "options": [
+      "Sulphate",
+      "Carbonate",
+      "Nitrate",
+      "Chloride"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Fresh FeSO₄ and concentrated H₂SO₄ poured down the side give a brown ring of [Fe(H₂O)₅NO]²⁺ at the junction when nitrate is present."
+  },
+  {
+    "id": "NEET-D-012",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "neetInorg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Potassium dichromate",
+    "stem": "Statement I: Acidifying a yellow solution of potassium chromate turns it orange.\n\nStatement II: In the dichromate ion, chromium is in the +7 oxidation state.\n\nChoose the correct answer:",
+    "options": [
+      "Both Statement I and Statement II are true",
+      "Both Statement I and Statement II are false",
+      "Statement I is true but Statement II is false",
+      "Statement I is false but Statement II is true"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Statement I is true: in acid, 2CrO₄²⁻ + 2H⁺ gives orange Cr₂O₇²⁻. Statement II is false: chromium is +6 in both chromate and dichromate, so the change is not a redox reaction."
+  },
+  {
+    "id": "NEET-D-013",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "neetInorg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ligands",
+    "stem": "Which of these ligands is hexadentate?",
+    "options": [
+      "EDTA⁴⁻",
+      "C₂O₄²⁻",
+      "NH₃",
+      "en"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Ethylenediaminetetraacetate binds through two N and four O atoms, wrapping a metal ion in one chelate. Ethane-1,2-diamine (en) and oxalate are bidentate, and NH₃ unidentate."
+  },
+  {
+    "id": "NEET-D-014",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "neetInorg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Titrations",
+    "stem": "In the titration of oxalic acid against KMnO₄, why is no separate indicator added?",
+    "options": [
+      "KMnO₄ acts as its own indicator",
+      "Phenolphthalein is already present",
+      "Oxalic acid changes colour",
+      "The reaction is too slow"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Permanganate is intensely purple while Mn²⁺ is almost colourless, so the first drop of excess KMnO₄ leaves a pale pink colour that marks the end point."
+  },
+  {
+    "id": "NEET-D-015",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "neetOrg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Carboxylic acids",
+    "stem": "What does a carboxylic acid with an α-hydrogen give in the Hell-Volhard-Zelinsky reaction?",
+    "options": [
+      "An α-halo acid",
+      "An alkane",
+      "An ester",
+      "An acid chloride"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Treated with Cl₂ or Br₂ and a little red phosphorus, the acid is halogenated at the α-carbon. An acid chloride forms with SOCl₂ or PCl₅ instead."
+  },
+  {
+    "id": "NEET-D-016",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "neetOrg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Tests for amines",
+    "stem": "Which reagent is used to distinguish primary, secondary and tertiary amines?",
+    "options": [
+      "Hinsberg's reagent",
+      "Tollens' reagent",
+      "Fehling's solution",
+      "Lucas reagent"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Hinsberg's reagent, benzenesulphonyl chloride, gives an alkali-soluble product with primary amines, an insoluble one with secondary amines and none with tertiary amines. The Lucas reagent distinguishes alcohols."
+  },
+  {
+    "id": "NEET-D-017",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "neetOrg",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Structure of glucose",
+    "stem": "Prolonged heating of glucose with HI gives n-hexane. What does this show about glucose?",
+    "options": [
+      "It has a ring of five carbons",
+      "Its six carbons form a straight chain",
+      "It contains an aldehyde group",
+      "It has five hydroxyl groups"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Reduction removes every oxygen, and the product is the unbranched alkane n-hexane, so the six carbon atoms of glucose are in a straight chain. The aldehyde group is shown by the reaction with HCN or bromine water."
+  },
+  {
+    "id": "NEET-D-018",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "neetOrg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Practical organic chemistry",
+    "stem": "Aniline yellow (p-aminoazobenzene) is prepared from benzenediazonium chloride and aniline by which reaction?",
+    "options": [
+      "Acetylation",
+      "Azo coupling",
+      "Nitration",
+      "Halogenation"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The diazonium ion is a weak electrophile that attacks the para position of aniline, joining the two rings through an -N=N- azo group, which gives the colour."
+  },
+  {
+    "id": "NEET-D-019",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "neetDiversity",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Photorespiration",
+    "stem": "Statement I: Photorespiration produces neither ATP nor NADPH.\n\nStatement II: C4 plants show little photorespiration because they build up a high CO₂ concentration around RuBisCO in the bundle sheath.\n\nChoose the correct answer:",
+    "options": [
+      "Both Statement I and Statement II are true",
+      "Both Statement I and Statement II are false",
+      "Statement I is true but Statement II is false",
+      "Statement I is false but Statement II is true"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Both are true. When RuBisCO binds O₂ instead of CO₂ the plant wastes fixed carbon and gains no ATP or NADPH. C4 plants deliver CO₂ to the bundle sheath, so RuBisCO works as a carboxylase."
+  },
+  {
+    "id": "NEET-D-020",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "neetDiversity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Respiratory quotient",
+    "stem": "What is the respiratory quotient (RQ) when fats such as tripalmitin are the respiratory substrate?",
+    "options": [
+      "More than 1",
+      "Less than 1",
+      "Exactly 1",
+      "Zero"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Fats are poor in oxygen, so they need more O₂ than the CO₂ they release: for tripalmitin RQ is about 0.7. Carbohydrates give an RQ of 1."
+  },
+  {
+    "id": "NEET-D-021",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "neetDiversity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cell cycle",
+    "stem": "In animal cells, during which phase of the cell cycle do the centrioles duplicate?",
+    "options": [
+      "Prophase",
+      "S phase",
+      "G₁ phase",
+      "G₂ phase"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In the S phase DNA is replicated in the nucleus, and the centriole also duplicates in the cytoplasm. In prophase the centrioles move to opposite poles."
+  },
+  {
+    "id": "NEET-D-022",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "neetDiversity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Prokaryotes",
+    "stem": "How many of these organisms are prokaryotes?\n\nNostoc, Mycoplasma, Euglena, yeast, Anabaena",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Nostoc and Anabaena are cyanobacteria and Mycoplasma is a wall-less bacterium, all prokaryotes. Euglena is a protist and yeast a fungus, both eukaryotes."
+  },
+  {
+    "id": "NEET-D-023",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "neetGenetics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "DNA replication",
+    "stem": "The Meselson and Stahl experiment with heavy nitrogen (¹⁵N) showed that DNA replication is:",
+    "options": [
+      "Semiconservative",
+      "Conservative",
+      "Random",
+      "Dispersive"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "After one generation in ¹⁴N all the DNA had hybrid density, and after two half was hybrid and half light. Each new molecule keeps one old strand."
+  },
+  {
+    "id": "NEET-D-024",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "neetGenetics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "DNA fingerprinting",
+    "stem": "DNA fingerprinting is based mainly on differences between people in:",
+    "options": [
+      "Ribosomal RNA genes",
+      "The genetic code",
+      "Genes for enzymes",
+      "Repetitive DNA (VNTRs)"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Satellite DNA such as VNTRs varies in copy number from person to person, so the band pattern of fragments is nearly unique. Coding genes differ far less."
+  },
+  {
+    "id": "NEET-D-025",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "neetGenetics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Reproductive health",
+    "stem": "Statement I: Amniocentesis can detect chromosomal abnormalities in a developing foetus.\n\nStatement II: In India, amniocentesis may legally be used to find out the sex of a foetus.\n\nChoose the correct answer:",
+    "options": [
+      "Both Statement I and Statement II are true",
+      "Both Statement I and Statement II are false",
+      "Statement I is true but Statement II is false",
+      "Statement I is false but Statement II is true"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Statement I is true: cells from the amniotic fluid are used to check the chromosomes. Statement II is false: using the test to determine the sex of a foetus is banned in India to prevent female foeticide."
+  },
+  {
+    "id": "NEET-D-026",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "neetGenetics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Natural selection",
+    "stem": "Which type of natural selection favours individuals at both extremes of a trait?",
+    "options": [
+      "Artificial",
+      "Directional",
+      "Stabilising",
+      "Disruptive"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Disruptive selection removes the average forms and can split a population into two peaks. Stabilising selection favours the average, and directional selection one extreme."
+  },
+  {
+    "id": "NEET-D-027",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "neetEcology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Vaccines",
+    "stem": "The hepatitis B vaccine is produced from:",
+    "options": [
+      "Attenuated virus",
+      "Horse serum",
+      "Recombinant yeast",
+      "Killed bacteria"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The gene for the hepatitis B surface antigen is expressed in yeast, and the purified protein is used as the vaccine. It is an example of recombinant DNA technology."
+  },
+  {
+    "id": "NEET-D-028",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "neetEcology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Biopiracy and patents",
+    "stem": "Statement I: Biopiracy is the use of bio-resources under an agreed benefit-sharing contract with the countries and people concerned.\n\nStatement II: Patents can never be granted for any product made using a living organism.\n\nChoose the correct answer:",
+    "options": [
+      "Both Statement I and Statement II are true",
+      "Both Statement I and Statement II are false",
+      "Statement I is true but Statement II is false",
+      "Statement I is false but Statement II is true"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Both are false. Biopiracy is the use of bio-resources without proper authorisation or compensation, not under an agreed contract. Patents have been granted for products and processes based on biological resources, which is why biopiracy is a concern."
+  },
+  {
+    "id": "NEET-D-029",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "neetEcology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Productivity",
+    "stem": "The rate at which producers make biomass by photosynthesis is called:",
+    "options": [
+      "Standing crop",
+      "Decomposition rate",
+      "Secondary productivity",
+      "Primary productivity"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Gross primary productivity is the total rate; net primary productivity subtracts the producers' respiration losses. Standing crop is the biomass present at one moment."
+  },
+  {
+    "id": "NEET-D-030",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "neetEcology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Biodiversity conservation",
+    "stem": "How many of these are ex situ methods of conservation?\n\nZoological park, botanical garden, sacred grove, national park, seed bank",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Zoological parks, botanical gardens and seed banks keep organisms away from their natural habitat. Sacred groves and national parks protect them where they live."
+  },
+  {
+    "id": "NEET-D-031",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "neetHumanPhys",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Animal tissues",
+    "stem": "Which cell junctions stop substances from leaking between neighbouring epithelial cells?",
+    "options": [
+      "Gap junctions",
+      "Plasmodesmata",
+      "Adhering junctions",
+      "Tight junctions"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Tight junctions seal the gaps between cells, as in the lining of the gut. Adhering junctions cement cells together, gap junctions let ions and small molecules pass, and plasmodesmata are found in plants."
+  },
+  {
+    "id": "NEET-D-032",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "neetHumanPhys",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Frog",
+    "stem": "How many chambers does the heart of a frog have?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "A frog's heart has two atria and one ventricle, and a sinus venosus and conus arteriosus attached to it. Fish have two chambers, and birds and mammals four."
+  },
+  {
+    "id": "NEET-D-033",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "neetHumanPhys",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hormone action",
+    "stem": "Assertion (A): Insulin acts through receptors on the surface of its target cells.\n\nReason (R): Insulin is a peptide hormone and cannot readily pass through the lipid plasma membrane.\n\nChoose the correct answer:",
+    "options": [
+      "Both A and R are true, and R explains A",
+      "Both A and R are true, but R does not explain A",
+      "A is true but R is false",
+      "A is false but R is true"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Both are true and R explains A. Peptide hormones bind membrane receptors and act through second messengers, while steroid hormones such as cortisol pass through the membrane to receptors inside the cell."
+  },
+  {
+    "id": "NEET-D-034",
+    "section": "bio",
+    "test": 0,
+    "module": 1,
+    "domain": "neetHumanPhys",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Respiratory volumes",
+    "stem": "A person has a tidal volume of 500 mL, an IRV of 2500 mL, an ERV of 1000 mL and a residual volume of 1100 mL. What is the total lung capacity?",
+    "options": [
+      "2100 mL",
+      "3000 mL",
+      "4000 mL",
+      "5100 mL"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Total lung capacity adds all four volumes: 500 + 2500 + 1000 + 1100 = 5100 mL. 4000 mL is the vital capacity, 2100 mL the functional residual capacity and 3000 mL the inspiratory capacity."
+  }
+]

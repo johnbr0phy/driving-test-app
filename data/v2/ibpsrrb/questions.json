@@ -1,0 +1,4650 @@
+{
+  "stimuli": [
+    {
+      "id": "IBPSRRB-T1-PZ1",
+      "title": "Puzzle: stacked boxes",
+      "text": "Seven boxes J, K, L, M, N, O and P are kept one above another in a single stack. The bottom position is numbered 1 and the top position is numbered 7.\n\n- Only two boxes are kept between K and M, and M is kept above K.\n- J is kept immediately below M.\n- O is kept immediately above L.\n- L is kept above M.\n- P is kept immediately above K.\n- N is not kept above P."
+    },
+    {
+      "id": "IBPSRRB-T1-PZ2",
+      "title": "Puzzle: linear seating",
+      "text": "Six friends Harish, Meena, Sunil, Gita, Pavan and Rani sit in a straight row, all facing north. Positions are counted from the left end.\n\n- Gita sits fourth from the left end.\n- Only two persons sit between Gita and Harish.\n- Rani sits at one of the ends.\n- Pavan sits immediately to the left of Rani.\n- Meena is not an immediate neighbour of Gita."
+    },
+    {
+      "id": "IBPSRRB-T1-PZ3",
+      "title": "Puzzle: sowing schedule",
+      "text": "Six farmers Ajay, Balu, Chitra, Dinesh, Elina and Feroz each sow a different crop (wheat, mustard, gram, maize, paddy and cotton) on a different day of one week, from Monday to Saturday.\n\n- Ajay sows on Thursday.\n- Only two farmers sow between Ajay and Dinesh.\n- Elina sows on the day after Ajay, and Balu sows on some day after Elina.\n- Chitra sows on some day before Feroz.\n- Wheat is sown on Tuesday, and paddy on the last day.\n- Dinesh sows gram.\n- Mustard is sown on the day immediately after maize.\n- Cotton is not sown on Friday."
+    },
+    {
+      "id": "IBPSRRB-T1-DI1",
+      "title": "Data interpretation: loans by branch",
+      "text": "The table shows the number of crop loans and tractor loans sanctioned by five branches of a regional rural bank in one year.\n\n| Branch | Crop loans | Tractor loans |\n|---|---|---|\n| Rampur | 420 | 60 |\n| Sitapur | 360 | 90 |\n| Kheda | 480 | 72 |\n| Nandgaon | 300 | 45 |\n| Bhimtal | 240 | 33 |"
+    },
+    {
+      "id": "IBPSRRB-T1-DI2",
+      "title": "Data interpretation: milk collection",
+      "text": "The table shows the milk collected in one day at five village collection centres and the percentage of it that came from cows. The rest came from buffaloes.\n\n| Centre | Total milk (litres) | From cows |\n|---|---|---|\n| A | 1200 | 45% |\n| B | 900 | 60% |\n| C | 1500 | 40% |\n| D | 800 | 75% |\n| E | 1000 | 52% |"
+    },
+    {
+      "id": "IBPSRRB-T2-PZ1",
+      "title": "Puzzle: circular seating",
+      "text": "Six persons Ravi, Sona, Tarun, Uma, Vimal and Wahida sit around a circular table at equal distances, all facing the centre. (For a person facing the centre, the seat to the left is the next seat clockwise.)\n\n- Wahida sits opposite Ravi.\n- Uma sits immediately to the left of Ravi.\n- Sona sits second to the right of Uma.\n- Tarun is not an immediate neighbour of Sona."
+    },
+    {
+      "id": "IBPSRRB-T2-PZ2",
+      "title": "Puzzle: comparison",
+      "text": "Five persons Imran, Jaya, Kamal, Lokesh and Neha each carry one bag of rice, and no two bags weigh the same.\n\n- Imran's bag is heavier than Jaya's but lighter than Neha's.\n- Kamal's bag is the heaviest.\n- Lokesh's bag is lighter than Jaya's.\n- Neha's bag weighs 42 kg and the lightest bag weighs 18 kg.\n- Imran's bag weighs 12 kg more than Lokesh's.\n- Jaya's bag is 6 kg lighter than Imran's."
+    },
+    {
+      "id": "IBPSRRB-T2-PZ3",
+      "title": "Puzzle: floors and fruits",
+      "text": "Five persons Gopal, Asha, Mohan, Kiran and Leela live on the five floors of a building, one on each floor. The lowest floor is numbered 1 and the top floor 5. Each likes a different fruit: guava, banana, mango, apple or orange.\n\n- Leela lives on the top floor, and only one person lives between Mohan and Leela.\n- Asha lives immediately below Mohan.\n- Kiran lives on a floor above Gopal.\n- The person who likes guava lives on the lowest floor.\n- Kiran likes apple.\n- The person who likes mango lives immediately above the person who likes banana.\n- Leela does not like mango."
+    },
+    {
+      "id": "IBPSRRB-T2-DI1",
+      "title": "Data interpretation: Kisan Credit Card applications",
+      "text": "The table shows the number of Kisan Credit Card applications received and approved at five bank branches in one quarter.\n\n| Branch | Received | Approved |\n|---|---|---|\n| P | 250 | 210 |\n| Q | 320 | 256 |\n| R | 180 | 162 |\n| S | 400 | 300 |\n| T | 150 | 129 |"
+    },
+    {
+      "id": "IBPSRRB-T2-DI2",
+      "title": "Data interpretation: wheat production",
+      "text": "The table shows the wheat produced (in tonnes) by four villages in three years.\n\n| Village | 2023 | 2024 | 2025 |\n|---|---|---|---|\n| Alipur | 120 | 135 | 150 |\n| Belwa | 96 | 108 | 132 |\n| Chandi | 150 | 140 | 168 |\n| Dharpur | 84 | 102 | 90 |"
+    },
+    {
+      "id": "IBPSRRB-D-PZ1",
+      "title": "Puzzle: meeting months",
+      "text": "Six persons P, Q, R, S, T and U each attend a village meeting in a different month of the same year. The meetings are held only in February, April, June, August, October and December.\n\n- P attends in a month that has 30 days.\n- Only one person attends between P and Q.\n- Q attends in some month after U.\n- S attends in the last of these months.\n- T attends in some month before R, and R attends immediately before P."
+    },
+    {
+      "id": "IBPSRRB-D-DI1",
+      "title": "Data interpretation: self-help groups",
+      "text": "The table shows the number of members in five self-help groups of a village and the percentage of members who are women. The rest are men.\n\n| Group | Members | Women |\n|---|---|---|\n| Lotus | 40 | 75% |\n| Jasmine | 50 | 60% |\n| Marigold | 36 | 50% |\n| Rose | 45 | 80% |\n| Tulsi | 30 | 70% |"
+    }
+  ],
+  "questions": [
+    {
+      "id": "IBPSRRB-T1-001",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbLogic",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Inequality",
+      "stem": "A statement is followed by two conclusions, I and II. Assume the statement is true and decide which conclusion(s) definitely follow.\n\nStatement: T ≥ U > V = W ≤ X\n\nI. T > W\n\nII. X ≥ V",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "I: T ≥ U > V = W gives T > W, true. II: X ≥ W = V gives X ≥ V, true. Both follow."
+    },
+    {
+      "id": "IBPSRRB-T1-002",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Inequality",
+      "stem": "A statement is followed by two conclusions, I and II. Assume the statement is true and decide which conclusion(s) definitely follow.\n\nStatement: C ≤ D < E ≥ F > G\n\nI. C < E\n\nII. D > F",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "I: C ≤ D < E gives C < E, true. II: D < E and E ≥ F point in opposite directions, so D and F cannot be compared. Only I follows."
+    },
+    {
+      "id": "IBPSRRB-T1-003",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Inequality",
+      "stem": "A statement is followed by two conclusions, I and II. Assume the statement is true and decide which conclusion(s) definitely follow.\n\nStatement: M > N ≥ O = P < Q\n\nI. M ≥ Q\n\nII. N ≥ P",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "I: M > ... = P < Q points in opposite directions, so M and Q cannot be compared. II: N ≥ O = P gives N ≥ P, true. Only II follows."
+    },
+    {
+      "id": "IBPSRRB-T1-004",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Inequality",
+      "stem": "A statement is followed by two conclusions, I and II. Assume the statement is true and decide which conclusion(s) definitely follow.\n\nStatement: R ≥ S = T ≥ U < Y\n\nI. R > U\n\nII. R = U",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "R ≥ S = T ≥ U gives R ≥ U. Neither 'R > U' nor 'R = U' is certain alone, but one of them must be true. Either I or II follows."
+    },
+    {
+      "id": "IBPSRRB-T1-005",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbLogic",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Inequality",
+      "stem": "A statement is followed by two conclusions, I and II. Assume the statement is true and decide which conclusion(s) definitely follow.\n\nStatement: G < H ≤ I = J > K\n\nI. G < K\n\nII. I < K",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "I: G < H ≤ I = J > K changes direction at J, so G and K cannot be compared. II: I = J > K gives I > K, so 'I < K' is false. Neither follows."
+    },
+    {
+      "id": "IBPSRRB-T1-006",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbLogic",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Syllogism",
+      "stem": "Some statements are followed by two conclusions, I and II. Take the statements to be true even if they seem to differ from commonly known facts, and decide which conclusion(s) logically follow.\n\nStatements: All farmers are voters. Some voters are traders.\n\nI. Some traders are voters.\n\nII. All farmers are traders.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "'Some voters are traders' means the same as 'some traders are voters', so I follows. The traders among the voters need not include any farmer, so II does not follow. Only I follows."
+    },
+    {
+      "id": "IBPSRRB-T1-007",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Syllogism",
+      "stem": "Some statements are followed by two conclusions, I and II. Take the statements to be true even if they seem to differ from commonly known facts, and decide which conclusion(s) logically follow.\n\nStatements: Some ponds are wells. No well is a river.\n\nI. Some ponds are not rivers.\n\nII. No pond is a river.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The ponds that are wells cannot be rivers, so some ponds are not rivers (I). Other ponds may still be rivers, so II is not certain. Only I follows."
+    },
+    {
+      "id": "IBPSRRB-T1-008",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Syllogism",
+      "stem": "Some statements are followed by two conclusions, I and II. Take the statements to be true even if they seem to differ from commonly known facts, and decide which conclusion(s) logically follow.\n\nStatements: All tractors are engines. No engine is a cart.\n\nI. No tractor is a cart.\n\nII. No cart is a tractor.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "Every tractor is an engine and no engine is a cart, so no tractor is a cart (I). A 'no' statement works both ways, so no cart is a tractor (II). Both follow."
+    },
+    {
+      "id": "IBPSRRB-T1-009",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbPuzzle",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Stacking puzzle",
+      "stimulusId": "IBPSRRB-T1-PZ1",
+      "stem": "Which box is kept at the bottom of the stack?",
+      "options": [
+        "P",
+        "K",
+        "J",
+        "N",
+        "O"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Bottom to top: N, K, P, J, M, L, O. O is just above L and L is above M, so M is at most 5th, and K (two boxes below M) is 1st or 2nd. If K were 1st, N could not be kept below P, so K is 2nd and M 5th. Then P is 3rd, J 4th, L 6th, O 7th and N 1st."
+    },
+    {
+      "id": "IBPSRRB-T1-010",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Stacking puzzle",
+      "stimulusId": "IBPSRRB-T1-PZ1",
+      "stem": "How many boxes are kept between N and L?",
+      "options": [
+        "Four",
+        "Five",
+        "Two",
+        "Three",
+        "One"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Bottom to top: N, K, P, J, M, L, O. O is just above L and L is above M, so M is at most 5th, and K (two boxes below M) is 1st or 2nd. If K were 1st, N could not be kept below P, so K is 2nd and M 5th. Then P is 3rd, J 4th, L 6th, O 7th and N 1st. N is at 1 and L at 6, so K, P, J and M lie between them."
+    },
+    {
+      "id": "IBPSRRB-T1-011",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbPuzzle",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Stacking puzzle",
+      "stimulusId": "IBPSRRB-T1-PZ1",
+      "stem": "Which box is kept immediately below J?",
+      "options": [
+        "N",
+        "K",
+        "L",
+        "M",
+        "P"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Bottom to top: N, K, P, J, M, L, O. O is just above L and L is above M, so M is at most 5th, and K (two boxes below M) is 1st or 2nd. If K were 1st, N could not be kept below P, so K is 2nd and M 5th. Then P is 3rd, J 4th, L 6th, O 7th and N 1st."
+    },
+    {
+      "id": "IBPSRRB-T1-012",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Stacking puzzle",
+      "stimulusId": "IBPSRRB-T1-PZ1",
+      "stem": "Which box is third from the top?",
+      "options": [
+        "M",
+        "O",
+        "P",
+        "L",
+        "J"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Bottom to top: N, K, P, J, M, L, O. O is just above L and L is above M, so M is at most 5th, and K (two boxes below M) is 1st or 2nd. If K were 1st, N could not be kept below P, so K is 2nd and M 5th. Then P is 3rd, J 4th, L 6th, O 7th and N 1st. Counting down from the top: O, L, then M."
+    },
+    {
+      "id": "IBPSRRB-T1-013",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbPuzzle",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Stacking puzzle",
+      "stimulusId": "IBPSRRB-T1-PZ1",
+      "stem": "Four of the following five pairs are alike in that exactly one box is kept between the two boxes of the pair. Which pair does NOT belong?",
+      "options": [
+        "P and M",
+        "M and O",
+        "K and M",
+        "J and L",
+        "N and P"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Bottom to top: N, K, P, J, M, L, O. O is just above L and L is above M, so M is at most 5th, and K (two boxes below M) is 1st or 2nd. If K were 1st, N could not be kept below P, so K is 2nd and M 5th. Then P is 3rd, J 4th, L 6th, O 7th and N 1st. N-P (1 and 3), P-M (3 and 5), J-L (4 and 6) and M-O (5 and 7) each have one box between them. K (2) and M (5) have two boxes, P and J, between them."
+    },
+    {
+      "id": "IBPSRRB-T1-014",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbPuzzle",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Linear seating",
+      "stimulusId": "IBPSRRB-T1-PZ2",
+      "stem": "Who sits at the left end of the row?",
+      "options": [
+        "Harish",
+        "Meena",
+        "Pavan",
+        "Sunil",
+        "Rani"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Left to right: Harish, Meena, Sunil, Gita, Pavan, Rani. Gita is 4th, so Harish (two seats between) is 1st. Rani is then at the right end and Pavan 5th. Meena cannot be 3rd (next to Gita), so Meena is 2nd and Sunil 3rd."
+    },
+    {
+      "id": "IBPSRRB-T1-015",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Linear seating",
+      "stimulusId": "IBPSRRB-T1-PZ2",
+      "stem": "Who sits third from the right end?",
+      "options": [
+        "Rani",
+        "Meena",
+        "Pavan",
+        "Sunil",
+        "Gita"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Left to right: Harish, Meena, Sunil, Gita, Pavan, Rani. Gita is 4th, so Harish (two seats between) is 1st. Rani is then at the right end and Pavan 5th. Meena cannot be 3rd (next to Gita), so Meena is 2nd and Sunil 3rd. From the right: Rani, Pavan, then Gita."
+    },
+    {
+      "id": "IBPSRRB-T1-016",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbPuzzle",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Linear seating",
+      "stimulusId": "IBPSRRB-T1-PZ2",
+      "stem": "Who sits immediately to the left of Gita?",
+      "options": [
+        "Sunil",
+        "Pavan",
+        "Meena",
+        "Harish",
+        "Rani"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Left to right: Harish, Meena, Sunil, Gita, Pavan, Rani. Gita is 4th, so Harish (two seats between) is 1st. Rani is then at the right end and Pavan 5th. Meena cannot be 3rd (next to Gita), so Meena is 2nd and Sunil 3rd. Facing north, a person's left is toward the left end, so Gita's immediate left is Sunil (3rd)."
+    },
+    {
+      "id": "IBPSRRB-T1-017",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Linear seating",
+      "stimulusId": "IBPSRRB-T1-PZ2",
+      "stem": "How many persons sit between Meena and Pavan?",
+      "options": [
+        "Four",
+        "Three",
+        "Two",
+        "One",
+        "None"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Left to right: Harish, Meena, Sunil, Gita, Pavan, Rani. Gita is 4th, so Harish (two seats between) is 1st. Rani is then at the right end and Pavan 5th. Meena cannot be 3rd (next to Gita), so Meena is 2nd and Sunil 3rd. Meena is 2nd and Pavan 5th, with Sunil and Gita between them."
+    },
+    {
+      "id": "IBPSRRB-T1-018",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Linear seating",
+      "stimulusId": "IBPSRRB-T1-PZ2",
+      "stem": "Which of the following pairs sit next to each other?",
+      "options": [
+        "Gita and Rani",
+        "Harish and Sunil",
+        "Meena and Gita",
+        "Sunil and Gita",
+        "Harish and Pavan"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Left to right: Harish, Meena, Sunil, Gita, Pavan, Rani. Gita is 4th, so Harish (two seats between) is 1st. Rani is then at the right end and Pavan 5th. Meena cannot be 3rd (next to Gita), so Meena is 2nd and Sunil 3rd. Sunil (3rd) and Gita (4th) are neighbours. Every other pair has at least one seat between them."
+    },
+    {
+      "id": "IBPSRRB-T1-019",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbPuzzle",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Scheduling puzzle",
+      "stimulusId": "IBPSRRB-T1-PZ3",
+      "stem": "Which crop does Ajay sow?",
+      "options": [
+        "Maize",
+        "Mustard",
+        "Gram",
+        "Cotton",
+        "Wheat"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Monday to Saturday: Dinesh (gram), Chitra (wheat), Feroz (cotton), Ajay (maize), Elina (mustard), Balu (paddy). Ajay is on Thursday, so Dinesh is on Monday, Elina on Friday and Balu on Saturday; Chitra before Feroz puts them on Tuesday and Wednesday. Maize and mustard on consecutive days with cotton not on Friday leaves cotton on Wednesday, maize on Thursday and mustard on Friday."
+    },
+    {
+      "id": "IBPSRRB-T1-020",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbPuzzle",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Scheduling puzzle",
+      "stimulusId": "IBPSRRB-T1-PZ3",
+      "stem": "Who sows on Wednesday?",
+      "options": [
+        "Feroz",
+        "Elina",
+        "Chitra",
+        "Dinesh",
+        "Ajay"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Monday to Saturday: Dinesh (gram), Chitra (wheat), Feroz (cotton), Ajay (maize), Elina (mustard), Balu (paddy). Ajay is on Thursday, so Dinesh is on Monday, Elina on Friday and Balu on Saturday; Chitra before Feroz puts them on Tuesday and Wednesday. Maize and mustard on consecutive days with cotton not on Friday leaves cotton on Wednesday, maize on Thursday and mustard on Friday."
+    },
+    {
+      "id": "IBPSRRB-T1-021",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Scheduling puzzle",
+      "stimulusId": "IBPSRRB-T1-PZ3",
+      "stem": "Which crop is sown on Friday?",
+      "options": [
+        "Paddy",
+        "Wheat",
+        "Maize",
+        "Cotton",
+        "Mustard"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Monday to Saturday: Dinesh (gram), Chitra (wheat), Feroz (cotton), Ajay (maize), Elina (mustard), Balu (paddy). Ajay is on Thursday, so Dinesh is on Monday, Elina on Friday and Balu on Saturday; Chitra before Feroz puts them on Tuesday and Wednesday. Maize and mustard on consecutive days with cotton not on Friday leaves cotton on Wednesday, maize on Thursday and mustard on Friday. Maize is on Thursday, so mustard, the next day's crop, is on Friday."
+    },
+    {
+      "id": "IBPSRRB-T1-022",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Scheduling puzzle",
+      "stimulusId": "IBPSRRB-T1-PZ3",
+      "stem": "How many farmers sow between Chitra and Elina?",
+      "options": [
+        "None",
+        "Two",
+        "One",
+        "Three",
+        "Four"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Monday to Saturday: Dinesh (gram), Chitra (wheat), Feroz (cotton), Ajay (maize), Elina (mustard), Balu (paddy). Ajay is on Thursday, so Dinesh is on Monday, Elina on Friday and Balu on Saturday; Chitra before Feroz puts them on Tuesday and Wednesday. Maize and mustard on consecutive days with cotton not on Friday leaves cotton on Wednesday, maize on Thursday and mustard on Friday. Chitra is on Tuesday and Elina on Friday, with Feroz and Ajay between them."
+    },
+    {
+      "id": "IBPSRRB-T1-023",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbPuzzle",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Scheduling puzzle",
+      "stimulusId": "IBPSRRB-T1-PZ3",
+      "stem": "Which of the following combinations is correct?",
+      "options": [
+        "Chitra, Monday, gram",
+        "Feroz, Wednesday, wheat",
+        "Balu, Saturday, paddy",
+        "Dinesh, Tuesday, gram",
+        "Elina, Thursday, mustard"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Monday to Saturday: Dinesh (gram), Chitra (wheat), Feroz (cotton), Ajay (maize), Elina (mustard), Balu (paddy). Ajay is on Thursday, so Dinesh is on Monday, Elina on Friday and Balu on Saturday; Chitra before Feroz puts them on Tuesday and Wednesday. Maize and mustard on consecutive days with cotton not on Friday leaves cotton on Wednesday, maize on Thursday and mustard on Friday. Balu sows paddy on Saturday. Each other option puts a farmer on the wrong day or with the wrong crop."
+    },
+    {
+      "id": "IBPSRRB-T1-024",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbCoding",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Coding-decoding",
+      "stem": "In a certain code language, FIELD is written as HKGNF. How is SEEDS written in that code?",
+      "options": [
+        "UGGFU",
+        "UGGEU",
+        "UGHFU",
+        "TFFET",
+        "VGGFU"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Each letter moves two places forward: F to H, I to K, E to G, L to N, D to F. So SEEDS becomes UGGFU."
+    },
+    {
+      "id": "IBPSRRB-T1-025",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbCoding",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Coding-decoding",
+      "stem": "In a certain code language, PLOUGH is written as IHVPMQ. How is HARVEST written in that code?",
+      "options": [
+        "UTFWSBI",
+        "TSEVRAH",
+        "UTFWSBH",
+        "UTFXSBI",
+        "IBSWFTU"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The word is written backwards and each letter then moves one place forward: PLOUGH reversed is HGUOLP, which becomes IHVPMQ. HARVEST reversed is TSEVRAH, which becomes UTFWSBI."
+    },
+    {
+      "id": "IBPSRRB-T1-026",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbCoding",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Coding-decoding",
+      "stem": "In a certain code language, 'rain helps the crop' is written as 'ka lo mi su', 'the crop needs water' as 'lo pa su ze', and 'water helps farmers' as 'pa ka ti'. What is the code for 'rain'?",
+      "options": [
+        "mi",
+        "su",
+        "lo",
+        "ze",
+        "ka"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "'Helps' is in the first and third sentences, so its code is their common word 'ka'. 'The' and 'crop' share 'lo' and 'su' with the second sentence. That leaves 'mi' for 'rain'."
+    },
+    {
+      "id": "IBPSRRB-T1-027",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbCoding",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Coding-decoding",
+      "stem": "If each letter is given the number of its position in the alphabet (A = 1, B = 2, and so on) and a word is coded as the sum of its letters, CROP is coded as 52. What is the code for SOIL?",
+      "options": [
+        "50",
+        "52",
+        "53",
+        "54",
+        "55"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "S = 19, O = 15, I = 9 and L = 12, and 19 + 15 + 9 + 12 = 55. (CROP: 3 + 18 + 15 + 16 = 52.)"
+    },
+    {
+      "id": "IBPSRRB-T1-028",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbCoding",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Alphabet",
+      "stem": "Using the English alphabet (A to Z), answer the question.\n\nIf the English alphabet is written in reverse order (Z first), which letter will be 6th to the left of the 20th letter from the left?",
+      "options": [
+        "S",
+        "L",
+        "M",
+        "N",
+        "A"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "In reverse order the 20th letter from the left is G. Six places to its left is the 14th letter of the reversed alphabet, which is M (counting back from G: H, I, J, K, L, M)."
+    },
+    {
+      "id": "IBPSRRB-T1-029",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbCoding",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Letter series",
+      "stem": "Which letter pair comes next in the series? CX, FU, IR, LO, ?",
+      "options": [
+        "OK",
+        "OM",
+        "PL",
+        "NL",
+        "OL"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "The first letters move forward by three (C, F, I, L, O) and the second letters move back by three (X, U, R, O, L): OL."
+    },
+    {
+      "id": "IBPSRRB-T1-030",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbCoding",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Alphabet",
+      "stem": "How many pairs of letters are there in the word WINTER which have as many letters between them in the word as in the English alphabet?",
+      "options": [
+        "Four",
+        "Two",
+        "One",
+        "None",
+        "Three"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "W and T have two letters between them in the word (I, N) and two in the alphabet (U, V). W and R have four between them in both, and T and R one (E in the word, S in the alphabet). That makes three pairs."
+    },
+    {
+      "id": "IBPSRRB-T1-031",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbCoding",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Alphabet",
+      "stem": "If the letters of the word SILVER are arranged in alphabetical order, how many letters will remain in the same position?",
+      "options": [
+        "None",
+        "Four",
+        "Two",
+        "One",
+        "Three"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "In alphabetical order SILVER becomes EILRSV. I (second) and L (third) stay in their places, so two letters do."
+    },
+    {
+      "id": "IBPSRRB-T1-032",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbRelations",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Blood relations",
+      "stem": "Sohan is the brother of Rina. Rina is the daughter of Kamla, and Ashok is Kamla's husband. How is Sohan related to Ashok?",
+      "options": [
+        "Grandson",
+        "Son",
+        "Brother",
+        "Son-in-law",
+        "Nephew"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Rina is the daughter of Kamla and Ashok, and Sohan is Rina's brother, so Sohan is their son."
+    },
+    {
+      "id": "IBPSRRB-T1-033",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbRelations",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Blood relations",
+      "stem": "Pointing to a young man, Neeta said, 'His mother is the only daughter of my mother.' How is Neeta related to the young man?",
+      "options": [
+        "Grandmother",
+        "Mother",
+        "Daughter",
+        "Sister",
+        "Aunt"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Neeta is a daughter of her mother, so the only daughter of her mother is Neeta herself. She is the young man's mother."
+    },
+    {
+      "id": "IBPSRRB-T1-034",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbRelations",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Blood relations",
+      "stem": "In a certain code, 'P * Q' means P is the wife of Q, 'P @ Q' means P is the father of Q, and 'P # Q' means P is the sister of Q. If M * N @ O # R, how is M related to R?",
+      "options": [
+        "Daughter",
+        "Sister",
+        "Grandmother",
+        "Aunt",
+        "Mother"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "M is N's wife, N is O's father and O is R's sister, so R is also N's child. N's wife M is R's mother."
+    },
+    {
+      "id": "IBPSRRB-T1-035",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbRelations",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Direction sense",
+      "stem": "Ravi walks 12 m east, turns left and walks 5 m, then turns left again and walks 24 m. How far is he from his starting point?",
+      "options": [
+        "13 m",
+        "17 m",
+        "29 m",
+        "31 m",
+        "41 m"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "After 12 m east and 5 m north, walking 24 m west leaves him 12 m west and 5 m north of the start. √(12² + 5²) = √169 = 13 m."
+    },
+    {
+      "id": "IBPSRRB-T1-036",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbRelations",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Direction sense",
+      "stem": "Meera faces north. She turns 135° clockwise, then 90° anticlockwise, then 180°. Which direction does she face now?",
+      "options": [
+        "South-east",
+        "North-east",
+        "North-west",
+        "West",
+        "South-west"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "North turned 135° clockwise is south-east, and 90° anticlockwise from there is north-east. A further 180° turn gives south-west."
+    },
+    {
+      "id": "IBPSRRB-T1-037",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbRelations",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Direction sense",
+      "stem": "Village P is 8 km north of village Q, and village R is 8 km east of Q. In which direction is R from P?",
+      "options": [
+        "South",
+        "South-west",
+        "East",
+        "North-east",
+        "South-east"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "From P, go 8 km south to reach Q and then 8 km east to reach R, so R is south-east of P."
+    },
+    {
+      "id": "IBPSRRB-T1-038",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbRelations",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Order and ranking",
+      "stem": "In a row of 38 students facing north, Bhaskar is 15th from the left end. What is his position from the right end?",
+      "options": [
+        "22nd",
+        "23rd",
+        "24th",
+        "25th",
+        "26th"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Position from the right = 38 − 15 + 1 = 24th."
+    },
+    {
+      "id": "IBPSRRB-T1-039",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbRelations",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Order and ranking",
+      "stem": "Priya ranks 9th from the top and 23rd from the bottom in her class. How many students are in the class?",
+      "options": [
+        "30",
+        "31",
+        "32",
+        "33",
+        "34"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Total = 9 + 23 − 1 = 31; Priya is counted in both ranks, so subtract one."
+    },
+    {
+      "id": "IBPSRRB-T1-040",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbRelations",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Order and ranking",
+      "stem": "Of five trees, the mango tree is taller than the neem tree but shorter than the peepal tree. The banyan tree is the tallest, and the teak tree is shorter than the neem tree. Which tree is the shortest?",
+      "options": [
+        "Banyan",
+        "Teak",
+        "Mango",
+        "Peepal",
+        "Neem"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Tallest to shortest: banyan, peepal, mango, neem, teak. The teak tree is the shortest."
+    },
+    {
+      "id": "IBPSRRB-T1-041",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Simplification",
+      "stem": "What will come in place of the question mark (?) in the following question?\n\n35% of 760 + 3/5 of 455 = ?",
+      "options": [
+        "539",
+        "549",
+        "559",
+        "569",
+        "579"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "35% of 760 = 266 and 3/5 of 455 = 273, so the total is 539."
+    },
+    {
+      "id": "IBPSRRB-T1-042",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Simplification",
+      "stem": "What will come in place of the question mark (?) in the following question?\n\n924 ÷ 28 × 6 − 75 = ?",
+      "options": [
+        "93",
+        "103",
+        "113",
+        "123",
+        "133"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Work left to right for ÷ and ×: 924 ÷ 28 = 33, 33 × 6 = 198, and 198 − 75 = 123."
+    },
+    {
+      "id": "IBPSRRB-T1-043",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Simplification",
+      "stem": "What will come in place of the question mark (?) in the following question?\n\n√1296 × 7 − 15² = ?",
+      "options": [
+        "22",
+        "27",
+        "32",
+        "37",
+        "42"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "√1296 = 36 and 36 × 7 = 252. 15² = 225, and 252 − 225 = 27."
+    },
+    {
+      "id": "IBPSRRB-T1-044",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Simplification",
+      "stem": "What will come in place of the question mark (?) in the following question?\n\n?% of 640 = 176",
+      "options": [
+        "17.5",
+        "20",
+        "22.5",
+        "25",
+        "27.5"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "? = 176 ÷ 640 × 100 = 27.5."
+    },
+    {
+      "id": "IBPSRRB-T1-045",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Simplification",
+      "stem": "What will come in place of the question mark (?) in the following question?\n\n2.4 × 65 + 0.6 × 85 = ?",
+      "options": [
+        "187",
+        "197",
+        "207",
+        "217",
+        "227"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "2.4 × 65 = 156 and 0.6 × 85 = 51, so the total is 207."
+    },
+    {
+      "id": "IBPSRRB-T1-046",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Simplification",
+      "stem": "What will come in place of the question mark (?) in the following question?\n\n19² + 21² − 400 = ?",
+      "options": [
+        "372",
+        "382",
+        "392",
+        "402",
+        "412"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "19² = 361 and 21² = 441, which add to 802. 802 − 400 = 402."
+    },
+    {
+      "id": "IBPSRRB-T1-047",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Simplification",
+      "stem": "What will come in place of the question mark (?) in the following question?\n\n(5/6 of 1080) ÷ 12 = ?",
+      "options": [
+        "75",
+        "80",
+        "85",
+        "90",
+        "95"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "5/6 of 1080 = 900, and 900 ÷ 12 = 75."
+    },
+    {
+      "id": "IBPSRRB-T1-048",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Simplification",
+      "stem": "What will come in place of the question mark (?) in the following question?\n\n?³ + 144 = 30% of 1200",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "30% of 1200 = 360, so ?³ = 360 − 144 = 216 and ? = 6."
+    },
+    {
+      "id": "IBPSRRB-T1-049",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Approximation",
+      "stem": "What approximate value will come in place of the question mark (?) in the following question? (You are not expected to calculate the exact value.)\n\n44.97% of 1199.8 + 15.02 × 8.99 ≈ ?",
+      "options": [
+        "660",
+        "675",
+        "690",
+        "705",
+        "720"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Round to 45% of 1200 + 15 × 9 = 540 + 135 = 675."
+    },
+    {
+      "id": "IBPSRRB-T1-050",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Approximation",
+      "stem": "What approximate value will come in place of the question mark (?) in the following question? (You are not expected to calculate the exact value.)\n\n2015.9 ÷ 47.98 + 13.03² ≈ ?",
+      "options": [
+        "211",
+        "221",
+        "231",
+        "241",
+        "251"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Round to 2016 ÷ 48 + 13² = 42 + 169 = 211."
+    },
+    {
+      "id": "IBPSRRB-T1-051",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Approximation",
+      "stem": "What approximate value will come in place of the question mark (?) in the following question? (You are not expected to calculate the exact value.)\n\n√899 × 7.98 + 60.1 ≈ ?",
+      "options": [
+        "260",
+        "270",
+        "280",
+        "290",
+        "300"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "√899 is just under 30, so round to 30 × 8 + 60 = 240 + 60 = 300."
+    },
+    {
+      "id": "IBPSRRB-T1-052",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "What will come in place of the question mark (?) in the following number series?\n\n8, 17, 35, 71, 143, ?",
+      "options": [
+        "279",
+        "285",
+        "286",
+        "287",
+        "289"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Each term is double the previous one plus 1: 143 × 2 + 1 = 287."
+    },
+    {
+      "id": "IBPSRRB-T1-053",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "What will come in place of the question mark (?) in the following number series?\n\n12, 13, 17, 26, 42, ?",
+      "options": [
+        "67",
+        "68",
+        "71",
+        "73",
+        "76"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The differences are 1, 4, 9 and 16, the squares of 1 to 4. The next difference is 25, so 42 + 25 = 67."
+    },
+    {
+      "id": "IBPSRRB-T1-054",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "What will come in place of the question mark (?) in the following number series?\n\n5040, 2520, 840, 210, 42, ?",
+      "options": [
+        "6",
+        "7",
+        "8",
+        "10",
+        "14"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Each term is divided by 2, 3, 4 and 5 in turn. The next division is by 6: 42 ÷ 6 = 7."
+    },
+    {
+      "id": "IBPSRRB-T1-055",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbNumber",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "What will come in place of the question mark (?) in the following number series?\n\n2, 3, 8, 27, 112, ?",
+      "options": [
+        "448",
+        "555",
+        "560",
+        "561",
+        "565"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "The pattern is × 1 + 1, × 2 + 2, × 3 + 3, × 4 + 4. Next is 112 × 5 + 5 = 565."
+    },
+    {
+      "id": "IBPSRRB-T1-056",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "What will come in place of the question mark (?) in the following number series?\n\n18, 27, 45, 81, 153, ?",
+      "options": [
+        "297",
+        "306",
+        "315",
+        "333",
+        "369"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The differences are 9, 18, 36 and 72, doubling each time. The next difference is 144, so 153 + 144 = 297."
+    },
+    {
+      "id": "IBPSRRB-T1-057",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbDI",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "IBPSRRB-T1-DI1",
+      "stem": "How many crop loans did the five branches sanction in all?",
+      "options": [
+        "1750",
+        "1800",
+        "1850",
+        "1900",
+        "2100"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "420 + 360 + 480 + 300 + 240 = 1800."
+    },
+    {
+      "id": "IBPSRRB-T1-058",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbDI",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "IBPSRRB-T1-DI1",
+      "stem": "Sitapur's tractor loans are what percentage of its crop loans?",
+      "options": [
+        "20%",
+        "22.5%",
+        "25%",
+        "30%",
+        "33.33%"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "90 ÷ 360 × 100 = 25%."
+    },
+    {
+      "id": "IBPSRRB-T1-059",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbDI",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "IBPSRRB-T1-DI1",
+      "stem": "What is the average number of tractor loans per branch?",
+      "options": [
+        "60",
+        "62",
+        "66",
+        "72",
+        "75"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "60 + 90 + 72 + 45 + 33 = 300, and 300 ÷ 5 = 60."
+    },
+    {
+      "id": "IBPSRRB-T1-060",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbDI",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "IBPSRRB-T1-DI1",
+      "stem": "What is the ratio of Kheda's crop loans to Nandgaon's crop loans?",
+      "options": [
+        "8 : 5",
+        "4 : 3",
+        "6 : 5",
+        "5 : 8",
+        "8 : 7"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "480 : 300, dividing both by 60, is 8 : 5."
+    },
+    {
+      "id": "IBPSRRB-T1-061",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbDI",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "IBPSRRB-T1-DI1",
+      "stem": "Rampur's crop loans are what percentage more than Nandgaon's?",
+      "options": [
+        "28.57%",
+        "30%",
+        "35%",
+        "40%",
+        "42%"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Rampur sanctioned 120 more crop loans than Nandgaon. 120 ÷ 300 × 100 = 40%. (28.57% measures the gap against Rampur's 420, the wrong base.)"
+    },
+    {
+      "id": "IBPSRRB-T1-062",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbDI",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "IBPSRRB-T1-DI2",
+      "stem": "How many litres of milk came from cows at centre C?",
+      "options": [
+        "600",
+        "640",
+        "675",
+        "720",
+        "900"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "40% of 1500 = 600 litres."
+    },
+    {
+      "id": "IBPSRRB-T1-063",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbDI",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "IBPSRRB-T1-DI2",
+      "stem": "How many litres of milk came from buffaloes at centre B?",
+      "options": [
+        "300",
+        "320",
+        "340",
+        "360",
+        "540"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Cows gave 60%, so buffaloes gave 40% of 900 = 360 litres."
+    },
+    {
+      "id": "IBPSRRB-T1-064",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbDI",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "IBPSRRB-T1-DI2",
+      "stem": "How many litres of milk came from cows at centres A and D together?",
+      "options": [
+        "1040",
+        "1060",
+        "1080",
+        "1100",
+        "1140"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "A: 45% of 1200 = 540. D: 75% of 800 = 600. Together 1140 litres."
+    },
+    {
+      "id": "IBPSRRB-T1-065",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbDI",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "IBPSRRB-T1-DI2",
+      "stem": "What is the average total milk collected per centre?",
+      "options": [
+        "1040",
+        "1060",
+        "1080",
+        "1100",
+        "1120"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "1200 + 900 + 1500 + 800 + 1000 = 5400, and 5400 ÷ 5 = 1080 litres."
+    },
+    {
+      "id": "IBPSRRB-T1-066",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbDI",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "IBPSRRB-T1-DI2",
+      "stem": "What is the ratio of buffalo milk at centre E to buffalo milk at centre D?",
+      "options": [
+        "12 : 5",
+        "5 : 12",
+        "26 : 15",
+        "12 : 7",
+        "13 : 5"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "E: 48% of 1000 = 480 litres. D: 25% of 800 = 200 litres. 480 : 200 = 12 : 5."
+    },
+    {
+      "id": "IBPSRRB-T1-067",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Profit and loss",
+      "stem": "A farmer buys a pump set for ₹12,500 and later sells it at a loss of 8%. At what price does he sell it?",
+      "options": [
+        "₹11,500",
+        "₹11,800",
+        "₹12,000",
+        "₹12,420",
+        "₹13,500"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Loss = 8% of 12,500 = ₹1,000, so the selling price is 12,500 − 1,000 = ₹11,500."
+    },
+    {
+      "id": "IBPSRRB-T1-068",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Simple interest",
+      "stem": "What is the simple interest on ₹8,400 at 6.5% per annum for 2 years?",
+      "options": [
+        "₹546",
+        "₹1,008",
+        "₹1,092",
+        "₹1,120",
+        "₹1,176"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "SI = 8,400 × 6.5 × 2 ÷ 100 = ₹1,092."
+    },
+    {
+      "id": "IBPSRRB-T1-069",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Compound interest",
+      "stem": "What is the compound interest on ₹15,000 at 10% per annum for 2 years, compounded annually?",
+      "options": [
+        "₹2,850",
+        "₹3,000",
+        "₹3,075",
+        "₹3,150",
+        "₹3,300"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Amount = 15,000 × 1.1 × 1.1 = ₹18,150, so the interest is ₹3,150. (₹3,000 is the simple interest.)"
+    },
+    {
+      "id": "IBPSRRB-T1-070",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Average",
+      "stem": "The average of five numbers is 46. If one number, 30, is removed, what is the average of the remaining four?",
+      "options": [
+        "40",
+        "44",
+        "46",
+        "48",
+        "50"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "The five numbers total 5 × 46 = 230. Without 30 the total is 200, and 200 ÷ 4 = 50."
+    },
+    {
+      "id": "IBPSRRB-T1-071",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Ratio and proportion",
+      "stem": "₹4,500 is divided among Kavya, Lalita and Meghna in the ratio 3 : 5 : 7. What is Meghna's share?",
+      "options": [
+        "₹1,500",
+        "₹1,800",
+        "₹2,100",
+        "₹2,250",
+        "₹2,400"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The ratio has 3 + 5 + 7 = 15 parts. Meghna gets 7/15 of 4,500 = ₹2,100."
+    },
+    {
+      "id": "IBPSRRB-T1-072",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Time and work",
+      "stem": "Gopi can finish a job in 14 days and Hari in 35 days. In how many days can they finish it working together?",
+      "options": [
+        "10 days",
+        "11.5 days",
+        "21 days",
+        "24.5 days",
+        "49 days"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Together they do 1/14 + 1/35 = 5/70 + 2/70 = 7/70 = 1/10 of the job a day, so they need 10 days. (24.5 days averages the two times, and 49 days adds them.)"
+    },
+    {
+      "id": "IBPSRRB-T1-073",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Speed, time and distance",
+      "stem": "A 420 m long train passes a signal post in 24 seconds. What is its speed in km/h?",
+      "options": [
+        "17.5 km/h",
+        "54 km/h",
+        "63 km/h",
+        "70 km/h",
+        "75.6 km/h"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Speed = 420 ÷ 24 = 17.5 m/s, and 17.5 × 18/5 = 63 km/h. (17.5 is the speed in metres per second.)"
+    },
+    {
+      "id": "IBPSRRB-T1-074",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbArith",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Ages",
+      "stem": "The ages of Mohan and his son are in the ratio 7 : 2. After 5 years the ratio will be 8 : 3. What is the son's present age?",
+      "options": [
+        "8 years",
+        "10 years",
+        "12 years",
+        "14 years",
+        "15 years"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Let the ages be 7x and 2x. Then 3(7x + 5) = 8(2x + 5), so 21x + 15 = 16x + 40 and x = 5. The son is 2 × 5 = 10 years old."
+    },
+    {
+      "id": "IBPSRRB-T1-075",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Percentage",
+      "stem": "The population of a village is 5,000. It rises by 10% in one year and by 20% in the next. What is the population after two years?",
+      "options": [
+        "6,500",
+        "6,600",
+        "7,000",
+        "7,200",
+        "7,260"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "5,000 × 1.1 = 5,500, and 5,500 × 1.2 = 6,600. (6,500 adds the two rates as 30% of 5,000.)"
+    },
+    {
+      "id": "IBPSRRB-T1-076",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Mixtures",
+      "stem": "A 60-litre mixture of milk and water has milk and water in the ratio 5 : 1. How many litres of water must be added to make the ratio 5 : 3?",
+      "options": [
+        "5 litres",
+        "10 litres",
+        "12 litres",
+        "20 litres",
+        "30 litres"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "The mixture has 50 litres of milk and 10 of water. For 5 : 3 there must be 30 litres of water, so 20 litres are added. (30 litres is the water needed in all, not the amount to add.)"
+    },
+    {
+      "id": "IBPSRRB-T1-077",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Boats and streams",
+      "stem": "A boat goes 20 km/h in still water and the stream flows at 4 km/h. How long will the boat take to go 72 km downstream?",
+      "options": [
+        "2.5 hours",
+        "3 hours",
+        "3.6 hours",
+        "4.5 hours",
+        "6 hours"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Downstream speed = 20 + 4 = 24 km/h, and 72 ÷ 24 = 3 hours. (3.6 hours ignores the stream; 4.5 hours is the upstream time.)"
+    },
+    {
+      "id": "IBPSRRB-T1-078",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Partnership",
+      "stem": "Xavier invests ₹20,000 for 12 months and Yusuf invests ₹30,000 for 6 months. Out of a profit of ₹14,000, what is Xavier's share?",
+      "options": [
+        "₹5,600",
+        "₹6,000",
+        "₹7,000",
+        "₹8,000",
+        "₹8,400"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Shares go by capital × time: 20,000 × 12 = 2,40,000 and 30,000 × 6 = 1,80,000, a ratio of 4 : 3. Xavier gets 4/7 of 14,000 = ₹8,000."
+    },
+    {
+      "id": "IBPSRRB-T1-079",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Discount",
+      "stem": "A sewing machine is marked at ₹2,400 and sold at a discount of 15%. What is its selling price?",
+      "options": [
+        "₹2,000",
+        "₹2,040",
+        "₹2,060",
+        "₹2,100",
+        "₹2,160"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Discount = 15% of 2,400 = ₹360, so the selling price is 2,400 − 360 = ₹2,040."
+    },
+    {
+      "id": "IBPSRRB-T1-080",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "ibpsrrbArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Probability",
+      "stem": "A bag has 4 red and 6 green balls. One ball is drawn at random. What is the probability that it is green?",
+      "options": [
+        "2/3",
+        "3/5",
+        "2/5",
+        "1/2",
+        "3/4"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "There are 6 green balls out of 10, so the probability is 6/10 = 3/5."
+    },
+    {
+      "id": "IBPSRRB-T2-001",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbLogic",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Inequality",
+      "stem": "A statement is followed by two conclusions, I and II. Assume the statement is true and decide which conclusion(s) definitely follow.\n\nStatement: B ≤ C = D < E ≥ F\n\nI. B < E\n\nII. D ≤ F",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "I: B ≤ C = D < E gives B < E, true. II: D < E and E ≥ F point in opposite directions, so D and F cannot be compared. Only I follows."
+    },
+    {
+      "id": "IBPSRRB-T2-002",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Inequality",
+      "stem": "A statement is followed by two conclusions, I and II. Assume the statement is true and decide which conclusion(s) definitely follow.\n\nStatement: K > L ≥ M ≥ N = O\n\nI. K > O\n\nII. L ≥ O",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "I: K > L ≥ M ≥ N = O gives K > O, true. II: L ≥ M ≥ N = O gives L ≥ O, true. Both follow."
+    },
+    {
+      "id": "IBPSRRB-T2-003",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Inequality",
+      "stem": "A statement is followed by two conclusions, I and II. Assume the statement is true and decide which conclusion(s) definitely follow.\n\nStatement: P < Q ≤ R > S = T\n\nI. Q > T\n\nII. R > T",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "I: Q ≤ R and R > S point in opposite directions, so Q and T cannot be compared. II: R > S = T gives R > T, true. Only II follows."
+    },
+    {
+      "id": "IBPSRRB-T2-004",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Inequality",
+      "stem": "A statement is followed by two conclusions, I and II. Assume the statement is true and decide which conclusion(s) definitely follow.\n\nStatement: V ≥ W > X ≤ Y = Z\n\nI. W ≥ Z\n\nII. V > X",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "I: W > X and X ≤ Y point in opposite directions, so W and Z cannot be compared. II: V ≥ W > X gives V > X, true. Only II follows."
+    },
+    {
+      "id": "IBPSRRB-T2-005",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbLogic",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Inequality",
+      "stem": "A statement is followed by two conclusions, I and II. Assume the statement is true and decide which conclusion(s) definitely follow.\n\nStatement: A = B ≥ C ≥ D > E\n\nI. C > A\n\nII. C = A",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "A = B ≥ C gives A ≥ C, so C can never be greater than A, and I is false. C may equal A or be less than it, so II is not certain either. Neither follows. (Had the conclusions been 'A > C' and 'A = C', the answer would be either-or.)"
+    },
+    {
+      "id": "IBPSRRB-T2-006",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbLogic",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Syllogism",
+      "stem": "Some statements are followed by two conclusions, I and II. Take the statements to be true even if they seem to differ from commonly known facts, and decide which conclusion(s) logically follow.\n\nStatements: All mangoes are fruits. All fruits are plants.\n\nI. All mangoes are plants.\n\nII. Some fruits are mangoes.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "Every mango is a fruit and every fruit is a plant, so all mangoes are plants (I). Every mango is a fruit, so some fruits are mangoes (II). Both follow."
+    },
+    {
+      "id": "IBPSRRB-T2-007",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Syllogism",
+      "stem": "Some statements are followed by two conclusions, I and II. Take the statements to be true even if they seem to differ from commonly known facts, and decide which conclusion(s) logically follow.\n\nStatements: Some baskets are trays. Some trays are jars.\n\nI. Some baskets are jars.\n\nII. No basket is a jar.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Two 'some' statements give no definite link between baskets and jars. But the two conclusions cover every case: either some baskets are jars or none is. Either I or II follows."
+    },
+    {
+      "id": "IBPSRRB-T2-008",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Syllogism",
+      "stem": "Some statements are followed by two conclusions, I and II. Take the statements to be true even if they seem to differ from commonly known facts, and decide which conclusion(s) logically follow.\n\nStatements: No pen is a pencil. Some pencils are erasers.\n\nI. Some erasers are not pens.\n\nII. All erasers are pens.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The erasers that are pencils cannot be pens, so some erasers are not pens (I). That rules out 'all erasers are pens' (II). Only I follows."
+    },
+    {
+      "id": "IBPSRRB-T2-009",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbPuzzle",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Circular seating",
+      "stimulusId": "IBPSRRB-T2-PZ1",
+      "stem": "Who sits opposite Uma?",
+      "options": [
+        "Ravi",
+        "Sona",
+        "Wahida",
+        "Vimal",
+        "Tarun"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Clockwise from Ravi: Ravi, Uma, Tarun, Wahida, Vimal, Sona. Wahida is opposite Ravi (3rd seat on), Uma is the next seat clockwise from Ravi, and Sona, second to Uma's right (anticlockwise), is just anticlockwise of Ravi. Tarun cannot sit next to Sona, so he takes the seat between Uma and Wahida and Vimal the seat between Wahida and Sona. Uma is in the 2nd seat clockwise from Ravi's and Vimal three seats on, in the 5th."
+    },
+    {
+      "id": "IBPSRRB-T2-010",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Circular seating",
+      "stimulusId": "IBPSRRB-T2-PZ1",
+      "stem": "Who sits immediately to the right of Wahida?",
+      "options": [
+        "Vimal",
+        "Sona",
+        "Ravi",
+        "Uma",
+        "Tarun"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Clockwise from Ravi: Ravi, Uma, Tarun, Wahida, Vimal, Sona. Wahida is opposite Ravi (3rd seat on), Uma is the next seat clockwise from Ravi, and Sona, second to Uma's right (anticlockwise), is just anticlockwise of Ravi. Tarun cannot sit next to Sona, so he takes the seat between Uma and Wahida and Vimal the seat between Wahida and Sona. A person's right is the next seat anticlockwise, so Wahida's immediate right is Tarun. Vimal is on her left."
+    },
+    {
+      "id": "IBPSRRB-T2-011",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbPuzzle",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Circular seating",
+      "stimulusId": "IBPSRRB-T2-PZ1",
+      "stem": "Who sits between Vimal and Ravi?",
+      "options": [
+        "Tarun",
+        "Sona",
+        "Wahida",
+        "Uma",
+        "Nobody"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Clockwise from Ravi: Ravi, Uma, Tarun, Wahida, Vimal, Sona. Wahida is opposite Ravi (3rd seat on), Uma is the next seat clockwise from Ravi, and Sona, second to Uma's right (anticlockwise), is just anticlockwise of Ravi. Tarun cannot sit next to Sona, so he takes the seat between Uma and Wahida and Vimal the seat between Wahida and Sona."
+    },
+    {
+      "id": "IBPSRRB-T2-012",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Circular seating",
+      "stimulusId": "IBPSRRB-T2-PZ1",
+      "stem": "Who sits second to the left of Tarun?",
+      "options": [
+        "Ravi",
+        "Uma",
+        "Vimal",
+        "Sona",
+        "Wahida"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Clockwise from Ravi: Ravi, Uma, Tarun, Wahida, Vimal, Sona. Wahida is opposite Ravi (3rd seat on), Uma is the next seat clockwise from Ravi, and Sona, second to Uma's right (anticlockwise), is just anticlockwise of Ravi. Tarun cannot sit next to Sona, so he takes the seat between Uma and Wahida and Vimal the seat between Wahida and Sona. Going clockwise (left) from Tarun: Wahida, then Vimal."
+    },
+    {
+      "id": "IBPSRRB-T2-013",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbPuzzle",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Circular seating",
+      "stimulusId": "IBPSRRB-T2-PZ1",
+      "stem": "Which of the following is true?",
+      "options": [
+        "Uma sits between Ravi and Tarun",
+        "Sona sits opposite Uma",
+        "Wahida sits second to the left of Ravi",
+        "Vimal sits immediately left of Sona",
+        "Tarun sits opposite Ravi"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Clockwise from Ravi: Ravi, Uma, Tarun, Wahida, Vimal, Sona. Wahida is opposite Ravi (3rd seat on), Uma is the next seat clockwise from Ravi, and Sona, second to Uma's right (anticlockwise), is just anticlockwise of Ravi. Tarun cannot sit next to Sona, so he takes the seat between Uma and Wahida and Vimal the seat between Wahida and Sona. Uma's two neighbours are Ravi and Tarun. Opposite Uma is Vimal, opposite Ravi is Wahida, Sona's immediate left is Ravi, and Ravi's second left is Tarun."
+    },
+    {
+      "id": "IBPSRRB-T2-014",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbPuzzle",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Comparison puzzle",
+      "stimulusId": "IBPSRRB-T2-PZ2",
+      "stem": "Whose bag is the third heaviest?",
+      "options": [
+        "Imran",
+        "Lokesh",
+        "Neha",
+        "Kamal",
+        "Jaya"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Heaviest to lightest: Kamal, Neha (42 kg), Imran (30 kg), Jaya (24 kg), Lokesh (18 kg). Lokesh is lightest, so his bag is 18 kg, Imran's is 18 + 12 = 30 kg and Jaya's is 30 − 6 = 24 kg. Kamal's is above 42 kg."
+    },
+    {
+      "id": "IBPSRRB-T2-015",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Comparison puzzle",
+      "stimulusId": "IBPSRRB-T2-PZ2",
+      "stem": "How much does Imran's bag weigh?",
+      "options": [
+        "24 kg",
+        "26 kg",
+        "28 kg",
+        "30 kg",
+        "36 kg"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Heaviest to lightest: Kamal, Neha (42 kg), Imran (30 kg), Jaya (24 kg), Lokesh (18 kg). Lokesh is lightest, so his bag is 18 kg, Imran's is 18 + 12 = 30 kg and Jaya's is 30 − 6 = 24 kg. Kamal's is above 42 kg."
+    },
+    {
+      "id": "IBPSRRB-T2-016",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Comparison puzzle",
+      "stimulusId": "IBPSRRB-T2-PZ2",
+      "stem": "How much does Jaya's bag weigh?",
+      "options": [
+        "24 kg",
+        "26 kg",
+        "28 kg",
+        "30 kg",
+        "36 kg"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Heaviest to lightest: Kamal, Neha (42 kg), Imran (30 kg), Jaya (24 kg), Lokesh (18 kg). Lokesh is lightest, so his bag is 18 kg, Imran's is 18 + 12 = 30 kg and Jaya's is 30 − 6 = 24 kg. Kamal's is above 42 kg."
+    },
+    {
+      "id": "IBPSRRB-T2-017",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbPuzzle",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Comparison puzzle",
+      "stimulusId": "IBPSRRB-T2-PZ2",
+      "stem": "How many bags are lighter than Neha's?",
+      "options": [
+        "One",
+        "None",
+        "Two",
+        "Three",
+        "Four"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Heaviest to lightest: Kamal, Neha (42 kg), Imran (30 kg), Jaya (24 kg), Lokesh (18 kg). Lokesh is lightest, so his bag is 18 kg, Imran's is 18 + 12 = 30 kg and Jaya's is 30 − 6 = 24 kg. Kamal's is above 42 kg. Imran's, Jaya's and Lokesh's bags are lighter than Neha's."
+    },
+    {
+      "id": "IBPSRRB-T2-018",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Comparison puzzle",
+      "stimulusId": "IBPSRRB-T2-PZ2",
+      "stem": "Which of the following could be the weight of Kamal's bag?",
+      "options": [
+        "36 kg",
+        "38 kg",
+        "40 kg",
+        "42 kg",
+        "45 kg"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "Heaviest to lightest: Kamal, Neha (42 kg), Imran (30 kg), Jaya (24 kg), Lokesh (18 kg). Lokesh is lightest, so his bag is 18 kg, Imran's is 18 + 12 = 30 kg and Jaya's is 30 − 6 = 24 kg. Kamal's is above 42 kg. Kamal's bag is the heaviest, so it must weigh more than Neha's 42 kg; 42 kg itself is ruled out because no two bags weigh the same."
+    },
+    {
+      "id": "IBPSRRB-T2-019",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbPuzzle",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Floor puzzle",
+      "stimulusId": "IBPSRRB-T2-PZ3",
+      "stem": "Who likes guava?",
+      "options": [
+        "Kiran",
+        "Leela",
+        "Asha",
+        "Gopal",
+        "Mohan"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Floors 1 to 5: Gopal (guava), Asha (banana), Mohan (mango), Kiran (apple), Leela (orange). Leela is on 5, so Mohan is on 3 and Asha on 2; Kiran above Gopal puts Kiran on 4 and Gopal on 1. Guava is on 1 and apple on 4, so the mango-above-banana pair must be floors 2 and 3, and Leela has orange."
+    },
+    {
+      "id": "IBPSRRB-T2-020",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbPuzzle",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Floor puzzle",
+      "stimulusId": "IBPSRRB-T2-PZ3",
+      "stem": "Which fruit does Leela like?",
+      "options": [
+        "Mango",
+        "Guava",
+        "Banana",
+        "Apple",
+        "Orange"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Floors 1 to 5: Gopal (guava), Asha (banana), Mohan (mango), Kiran (apple), Leela (orange). Leela is on 5, so Mohan is on 3 and Asha on 2; Kiran above Gopal puts Kiran on 4 and Gopal on 1. Guava is on 1 and apple on 4, so the mango-above-banana pair must be floors 2 and 3, and Leela has orange."
+    },
+    {
+      "id": "IBPSRRB-T2-021",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Floor puzzle",
+      "stimulusId": "IBPSRRB-T2-PZ3",
+      "stem": "How many persons live between Asha and Leela?",
+      "options": [
+        "Three",
+        "Two",
+        "One",
+        "None",
+        "Four"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Floors 1 to 5: Gopal (guava), Asha (banana), Mohan (mango), Kiran (apple), Leela (orange). Leela is on 5, so Mohan is on 3 and Asha on 2; Kiran above Gopal puts Kiran on 4 and Gopal on 1. Guava is on 1 and apple on 4, so the mango-above-banana pair must be floors 2 and 3, and Leela has orange. Asha is on 2 and Leela on 5, with Mohan and Kiran between them."
+    },
+    {
+      "id": "IBPSRRB-T2-022",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Floor puzzle",
+      "stimulusId": "IBPSRRB-T2-PZ3",
+      "stem": "Who lives immediately above the person who likes mango?",
+      "options": [
+        "Kiran",
+        "Mohan",
+        "Leela",
+        "Gopal",
+        "Asha"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Floors 1 to 5: Gopal (guava), Asha (banana), Mohan (mango), Kiran (apple), Leela (orange). Leela is on 5, so Mohan is on 3 and Asha on 2; Kiran above Gopal puts Kiran on 4 and Gopal on 1. Guava is on 1 and apple on 4, so the mango-above-banana pair must be floors 2 and 3, and Leela has orange. Mohan likes mango and lives on 3, so the person on 4, Kiran, is immediately above him."
+    },
+    {
+      "id": "IBPSRRB-T2-023",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Floor puzzle",
+      "stimulusId": "IBPSRRB-T2-PZ3",
+      "stem": "On which floor does the person who likes banana live?",
+      "options": [
+        "Floor 5",
+        "Floor 2",
+        "Floor 1",
+        "Floor 4",
+        "Floor 3"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Floors 1 to 5: Gopal (guava), Asha (banana), Mohan (mango), Kiran (apple), Leela (orange). Leela is on 5, so Mohan is on 3 and Asha on 2; Kiran above Gopal puts Kiran on 4 and Gopal on 1. Guava is on 1 and apple on 4, so the mango-above-banana pair must be floors 2 and 3, and Leela has orange. Asha likes banana and lives on floor 2."
+    },
+    {
+      "id": "IBPSRRB-T2-024",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbCoding",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Coding-decoding",
+      "stem": "In a certain code language, GRAIN is written as HQBHO. How is MANGO written in that code?",
+      "options": [
+        "NZOFP",
+        "NZPFP",
+        "NBOHP",
+        "NZOHP",
+        "LZMFN"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The letters move one place forward and one place back in turn: G+1 = H, R−1 = Q, A+1 = B, I−1 = H, N+1 = O. So M+1 = N, A−1 = Z, N+1 = O, G−1 = F, O+1 = P: NZOFP."
+    },
+    {
+      "id": "IBPSRRB-T2-025",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbCoding",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Coding-decoding",
+      "stem": "In a certain code language, SEED is written as HVVW. How is CROP written in that code?",
+      "options": [
+        "YILK",
+        "XJLK",
+        "XILK",
+        "DSPQ",
+        "XILJ"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Each letter is replaced by the letter in the same position from the other end of the alphabet: S to H, E to V, D to W. So C becomes X, R becomes I, O becomes L and P becomes K: XILK."
+    },
+    {
+      "id": "IBPSRRB-T2-026",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbCoding",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Coding-decoding",
+      "stem": "In a certain code language, 'farmers save water' is written as 'te ro gi', 'water helps fields' as 'gi pu ka', and 'fields need farmers' as 'ka te mo'. What is the code for 'helps'?",
+      "options": [
+        "ka",
+        "mo",
+        "te",
+        "pu",
+        "gi"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "'Water' is common to the first two sentences, so it is 'gi'. 'Fields' is common to the second and third, so it is 'ka'. The remaining word of the second sentence, 'helps', is 'pu'."
+    },
+    {
+      "id": "IBPSRRB-T2-027",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbCoding",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Coding-decoding",
+      "stem": "In a certain code language, RURAL is written as UXUDO. Which word is written as IDUPV in that code?",
+      "options": [
+        "FBRMS",
+        "FARMS",
+        "GBSNT",
+        "FARNS",
+        "EZQLR"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Each letter moves three places forward (R to U, U to X, A to D). To decode, move each letter of IDUPV three places back: I to F, D to A, U to R, P to M, V to S. The word is FARMS."
+    },
+    {
+      "id": "IBPSRRB-T2-028",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbCoding",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Letter series",
+      "stem": "Which letter comes next in the series? B, E, J, Q, ?",
+      "options": [
+        "V",
+        "W",
+        "Z",
+        "Y",
+        "X"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The letters are at alphabet positions 2, 5, 10 and 17, which rise by 3, 5 and 7. The next rise is 9, giving position 26: Z."
+    },
+    {
+      "id": "IBPSRRB-T2-029",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbCoding",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Coding-decoding",
+      "stem": "In a certain code language, WELL is written as XGOP. How is PUMP written in that code?",
+      "options": [
+        "QVPT",
+        "RWPT",
+        "QWPS",
+        "QWPT",
+        "QWOT"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The letters move forward by 1, 2, 3 and 4 places in turn: W+1 = X, E+2 = G, L+3 = O, L+4 = P. So P+1 = Q, U+2 = W, M+3 = P, P+4 = T: QWPT."
+    },
+    {
+      "id": "IBPSRRB-T2-030",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbCoding",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Alphabet",
+      "stem": "Using the English alphabet (A to Z), answer the question.\n\nWhich letter is 5th to the left of the 18th letter from the right end of the alphabet?",
+      "options": [
+        "C",
+        "N",
+        "E",
+        "D",
+        "M"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The 18th letter from the right is the 9th from the left, I. Five places to its left is the 4th letter, D."
+    },
+    {
+      "id": "IBPSRRB-T2-031",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbCoding",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Alphabet",
+      "stem": "If the letters of the word VILLAGE are written in reverse order, which letter will be third from the left?",
+      "options": [
+        "G",
+        "I",
+        "A",
+        "E",
+        "L"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "VILLAGE written backwards is EGALLIV, so the third letter from the left is A."
+    },
+    {
+      "id": "IBPSRRB-T2-032",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbRelations",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Blood relations",
+      "stem": "X is the brother of Y. Y is the son of Z, and W is the father of Z. How is X related to W?",
+      "options": [
+        "Great-grandson",
+        "Son",
+        "Nephew",
+        "Brother",
+        "Grandson"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "X is Y's brother, so X is also Z's child. Z's father W is therefore X's grandfather, and X is his grandson."
+    },
+    {
+      "id": "IBPSRRB-T2-033",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbRelations",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Blood relations",
+      "stem": "Introducing a woman, Arun said, 'She is the wife of the only son of my paternal grandfather.' How is the woman related to Arun?",
+      "options": [
+        "Aunt",
+        "Grandmother",
+        "Mother",
+        "Wife",
+        "Sister"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The only son of Arun's paternal grandfather is Arun's father, so the woman is his father's wife, his mother."
+    },
+    {
+      "id": "IBPSRRB-T2-034",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbRelations",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Blood relations",
+      "stem": "A is the father of B. B is the husband of C. D is the son of B, and E is the sister of D. How is E related to A?",
+      "options": [
+        "Grandson",
+        "Sister",
+        "Granddaughter",
+        "Niece",
+        "Daughter"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "D and E are B's children and B is A's son, so E is A's granddaughter."
+    },
+    {
+      "id": "IBPSRRB-T2-035",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbRelations",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Direction sense",
+      "stem": "A man walks 30 km north, turns right and walks 7 km, then turns right again and walks 6 km. How far is he from his starting point?",
+      "options": [
+        "7 km",
+        "13 km",
+        "24 km",
+        "25 km",
+        "31 km"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "After turning right twice he is walking south, so he ends 30 − 6 = 24 km north and 7 km east of the start. √(24² + 7²) = √625 = 25 km."
+    },
+    {
+      "id": "IBPSRRB-T2-036",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbRelations",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Direction sense",
+      "stem": "Sunita faces north-west. She turns 135° clockwise. Which direction does she face now?",
+      "options": [
+        "North",
+        "East",
+        "North-east",
+        "South",
+        "West"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "From north-west, 45° clockwise reaches north and another 90° reaches east."
+    },
+    {
+      "id": "IBPSRRB-T2-037",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbRelations",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Direction sense",
+      "stem": "If north-east is called south, south-east is called west, and all other directions are renamed in the same way, what will west be called?",
+      "options": [
+        "North-east",
+        "South-west",
+        "East",
+        "North",
+        "South-east"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "North-east to south is a turn of 135° clockwise, and south-east to west is the same turn. Turning west 135° clockwise passes north-west and north to reach north-east."
+    },
+    {
+      "id": "IBPSRRB-T2-038",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbRelations",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Order and ranking",
+      "stem": "In a queue, Kabir is 11th from the front and Sahil is 17th from the back. Kabir is ahead of Sahil, and there are 5 persons between them. How many persons are in the queue?",
+      "options": [
+        "32",
+        "33",
+        "34",
+        "35",
+        "36"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Sahil is 11 + 5 + 1 = 17th from the front and 17th from the back, so the queue has 17 + 17 − 1 = 33 persons."
+    },
+    {
+      "id": "IBPSRRB-T2-039",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbRelations",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Order and ranking",
+      "stem": "In a row of 35 people, Tanvi is 12th from the left end and Vikram is 18th from the right end. How many people sit between them?",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "8",
+        "11"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Vikram is 35 − 18 + 1 = 18th from the left. Between the 12th and 18th positions are 18 − 12 − 1 = 5 people."
+    },
+    {
+      "id": "IBPSRRB-T2-040",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbRelations",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Order and ranking",
+      "stem": "Among five friends, Deepak scored more than Farah. Ganesh scored less than Farah but more than Hema, and Ishaan scored the most. Who scored the second highest?",
+      "options": [
+        "Deepak",
+        "Farah",
+        "Hema",
+        "Ganesh",
+        "Ishaan"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Highest to lowest: Ishaan, Deepak, Farah, Ganesh, Hema. Deepak is second."
+    },
+    {
+      "id": "IBPSRRB-T2-041",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Simplification",
+      "stem": "What will come in place of the question mark (?) in the following question?\n\n45% of 680 + 4/7 of 588 = ?",
+      "options": [
+        "632",
+        "642",
+        "652",
+        "662",
+        "672"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "45% of 680 = 306 and 4/7 of 588 = 336, so the total is 642."
+    },
+    {
+      "id": "IBPSRRB-T2-042",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Simplification",
+      "stem": "What will come in place of the question mark (?) in the following question?\n\n1008 ÷ 36 × 9 − 110 = ?",
+      "options": [
+        "102",
+        "112",
+        "122",
+        "132",
+        "142"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "Work left to right for ÷ and ×: 1008 ÷ 36 = 28, 28 × 9 = 252, and 252 − 110 = 142."
+    },
+    {
+      "id": "IBPSRRB-T2-043",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Simplification",
+      "stem": "What will come in place of the question mark (?) in the following question?\n\n√1764 × 5 + 11² = ?",
+      "options": [
+        "311",
+        "321",
+        "331",
+        "341",
+        "351"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "√1764 = 42 and 42 × 5 = 210. 11² = 121, and 210 + 121 = 331."
+    },
+    {
+      "id": "IBPSRRB-T2-044",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Simplification",
+      "stem": "What will come in place of the question mark (?) in the following question?\n\n18% of ? = 234",
+      "options": [
+        "1000",
+        "1100",
+        "1200",
+        "1300",
+        "1400"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "? = 234 ÷ 0.18 = 1300."
+    },
+    {
+      "id": "IBPSRRB-T2-045",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Simplification",
+      "stem": "What will come in place of the question mark (?) in the following question?\n\n3.5 × 48 − 1.25 × 64 = ?",
+      "options": [
+        "78",
+        "84",
+        "88",
+        "92",
+        "98"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "3.5 × 48 = 168 and 1.25 × 64 = 80, so the difference is 88."
+    },
+    {
+      "id": "IBPSRRB-T2-046",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Simplification",
+      "stem": "What will come in place of the question mark (?) in the following question?\n\n24² − 16² + 4³ = ?",
+      "options": [
+        "384",
+        "394",
+        "404",
+        "414",
+        "424"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "24² = 576 and 16² = 256, a difference of 320. 4³ = 64, and 320 + 64 = 384."
+    },
+    {
+      "id": "IBPSRRB-T2-047",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Simplification",
+      "stem": "What will come in place of the question mark (?) in the following question?\n\n(7/12 of 1296) ÷ 27 = ?",
+      "options": [
+        "20",
+        "22",
+        "24",
+        "26",
+        "28"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "7/12 of 1296 = 756, and 756 ÷ 27 = 28."
+    },
+    {
+      "id": "IBPSRRB-T2-048",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbNumber",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Simplification",
+      "stem": "What will come in place of the question mark (?) in the following question?\n\n?² − 89 = 55% of 800",
+      "options": [
+        "21",
+        "23",
+        "25",
+        "27",
+        "29"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "55% of 800 = 440, so ?² = 440 + 89 = 529 and ? = 23."
+    },
+    {
+      "id": "IBPSRRB-T2-049",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Approximation",
+      "stem": "What approximate value will come in place of the question mark (?) in the following question? (You are not expected to calculate the exact value.)\n\n64.98% of 879.9 − 12.03 × 14.97 ≈ ?",
+      "options": [
+        "392",
+        "407",
+        "422",
+        "437",
+        "452"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Round to 65% of 880 − 12 × 15 = 572 − 180 = 392."
+    },
+    {
+      "id": "IBPSRRB-T2-050",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Approximation",
+      "stem": "What approximate value will come in place of the question mark (?) in the following question? (You are not expected to calculate the exact value.)\n\n3359.8 ÷ 41.99 + 8.97² ≈ ?",
+      "options": [
+        "131",
+        "141",
+        "151",
+        "161",
+        "171"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Round to 3360 ÷ 42 + 9² = 80 + 81 = 161."
+    },
+    {
+      "id": "IBPSRRB-T2-051",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Approximation",
+      "stem": "What approximate value will come in place of the question mark (?) in the following question? (You are not expected to calculate the exact value.)\n\n√1443 × 6.02 + 49.9 ≈ ?",
+      "options": [
+        "268",
+        "278",
+        "288",
+        "298",
+        "308"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "√1443 is just under 38, so round to 38 × 6 + 50 = 228 + 50 = 278."
+    },
+    {
+      "id": "IBPSRRB-T2-052",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "What will come in place of the question mark (?) in the following number series?\n\n6, 13, 27, 55, 111, ?",
+      "options": [
+        "223",
+        "224",
+        "225",
+        "227",
+        "233"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Each term is double the previous one plus 1: 111 × 2 + 1 = 223."
+    },
+    {
+      "id": "IBPSRRB-T2-053",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbNumber",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "What will come in place of the question mark (?) in the following number series?\n\n21, 22, 30, 57, 121, ?",
+      "options": [
+        "185",
+        "221",
+        "242",
+        "246",
+        "250"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "The differences are 1, 8, 27 and 64, the cubes of 1 to 4. The next difference is 125, so 121 + 125 = 246."
+    },
+    {
+      "id": "IBPSRRB-T2-054",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "What will come in place of the question mark (?) in the following number series?\n\n7, 14, 42, 168, 840, ?",
+      "options": [
+        "1680",
+        "3360",
+        "4200",
+        "4480",
+        "5040"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "Each term is multiplied by 2, 3, 4 and 5 in turn. The next multiplier is 6: 840 × 6 = 5040."
+    },
+    {
+      "id": "IBPSRRB-T2-055",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbNumber",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "What will come in place of the question mark (?) in the following number series?\n\n4, 6, 15, 49, 201, ?",
+      "options": [
+        "1010",
+        "1011",
+        "1012",
+        "1016",
+        "1206"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The pattern is × 1 + 2, × 2 + 3, × 3 + 4, × 4 + 5. Next is 201 × 5 + 6 = 1011."
+    },
+    {
+      "id": "IBPSRRB-T2-056",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "What will come in place of the question mark (?) in the following number series?\n\n100, 99, 95, 86, 70, ?",
+      "options": [
+        "40",
+        "44",
+        "45",
+        "46",
+        "50"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The differences are −1, −4, −9 and −16, minus the squares of 1 to 4. The next is −25, so 70 − 25 = 45."
+    },
+    {
+      "id": "IBPSRRB-T2-057",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbDI",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "IBPSRRB-T2-DI1",
+      "stem": "How many applications were approved at the five branches in all?",
+      "options": [
+        "1027",
+        "1037",
+        "1047",
+        "1057",
+        "1067"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "210 + 256 + 162 + 300 + 129 = 1057."
+    },
+    {
+      "id": "IBPSRRB-T2-058",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbDI",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "IBPSRRB-T2-DI1",
+      "stem": "What percentage of the applications received at branch R were approved?",
+      "options": [
+        "84%",
+        "85%",
+        "86%",
+        "88%",
+        "90%"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "162 ÷ 180 × 100 = 90%."
+    },
+    {
+      "id": "IBPSRRB-T2-059",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbDI",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "IBPSRRB-T2-DI1",
+      "stem": "Which branch approved the lowest percentage of the applications it received?",
+      "options": [
+        "T",
+        "S",
+        "P",
+        "Q",
+        "R"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Approval rates: P 84%, Q 80%, R 90%, S 75%, T 86%. S is lowest even though it approved the most applications."
+    },
+    {
+      "id": "IBPSRRB-T2-060",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbDI",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "IBPSRRB-T2-DI1",
+      "stem": "How many applications were not approved at branches Q and S together?",
+      "options": [
+        "144",
+        "154",
+        "164",
+        "174",
+        "184"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Q: 320 − 256 = 64. S: 400 − 300 = 100. Together 164."
+    },
+    {
+      "id": "IBPSRRB-T2-061",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbDI",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "IBPSRRB-T2-DI1",
+      "stem": "What is the average number of applications received per branch?",
+      "options": [
+        "260",
+        "264",
+        "270",
+        "280",
+        "325"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "250 + 320 + 180 + 400 + 150 = 1300, and 1300 ÷ 5 = 260."
+    },
+    {
+      "id": "IBPSRRB-T2-062",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbDI",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "IBPSRRB-T2-DI2",
+      "stem": "What was the total wheat production of the four villages in 2025, in tonnes?",
+      "options": [
+        "540",
+        "555",
+        "570",
+        "585",
+        "600"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "150 + 132 + 168 + 90 = 540 tonnes."
+    },
+    {
+      "id": "IBPSRRB-T2-063",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbDI",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "IBPSRRB-T2-DI2",
+      "stem": "By what percentage did Belwa's production rise from 2023 to 2025?",
+      "options": [
+        "27.27%",
+        "32%",
+        "36%",
+        "37.5%",
+        "40%"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "It rose from 96 to 132, by 36 tonnes. 36 ÷ 96 × 100 = 37.5%. (27.27% measures the rise against 132, the wrong base.)"
+    },
+    {
+      "id": "IBPSRRB-T2-064",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbDI",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "IBPSRRB-T2-DI2",
+      "stem": "What was Alipur's average production over the three years, in tonnes?",
+      "options": [
+        "125",
+        "130",
+        "132",
+        "135",
+        "138"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "120 + 135 + 150 = 405, and 405 ÷ 3 = 135 tonnes."
+    },
+    {
+      "id": "IBPSRRB-T2-065",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbDI",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "IBPSRRB-T2-DI2",
+      "stem": "What is the ratio of Alipur's production in 2023 to Chandi's production in 2025?",
+      "options": [
+        "6 : 7",
+        "7 : 5",
+        "4 : 5",
+        "5 : 6",
+        "5 : 7"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "120 : 168, dividing both by 24, is 5 : 7."
+    },
+    {
+      "id": "IBPSRRB-T2-066",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbDI",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "IBPSRRB-T2-DI2",
+      "stem": "By how many tonnes did the total production of the four villages rise from 2023 to 2024?",
+      "options": [
+        "25",
+        "30",
+        "35",
+        "40",
+        "45"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "2023 total: 120 + 96 + 150 + 84 = 450. 2024 total: 135 + 108 + 140 + 102 = 485. The rise is 35 tonnes."
+    },
+    {
+      "id": "IBPSRRB-T2-067",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Profit and loss",
+      "stem": "A trader buys a sack of rice for ₹840 and sells it for ₹1,050. What is his profit percentage?",
+      "options": [
+        "20%",
+        "21%",
+        "24%",
+        "25%",
+        "30%"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Profit = ₹210, and 210 ÷ 840 × 100 = 25%. (20% divides the profit by the selling price, the wrong base.)"
+    },
+    {
+      "id": "IBPSRRB-T2-068",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Simple interest",
+      "stem": "A sum amounts to ₹9,440 in 3 years at 6% per annum simple interest. What is the sum?",
+      "options": [
+        "₹7,500",
+        "₹7,740",
+        "₹7,900",
+        "₹8,000",
+        "₹8,200"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Three years at 6% adds 18%, so the sum is 9,440 ÷ 1.18 = ₹8,000."
+    },
+    {
+      "id": "IBPSRRB-T2-069",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbArith",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Compound interest",
+      "stem": "What is the difference between compound interest and simple interest on ₹20,000 at 5% per annum for 2 years?",
+      "options": [
+        "₹50",
+        "₹100",
+        "₹200",
+        "₹250",
+        "₹2,050"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "For 2 years the difference is P × (r/100)² = 20,000 × 0.05 × 0.05 = ₹50."
+    },
+    {
+      "id": "IBPSRRB-T2-070",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Average",
+      "stem": "The average weight of 8 students is 45 kg. When a new student joins, the average becomes 46 kg. What does the new student weigh?",
+      "options": [
+        "46 kg",
+        "50 kg",
+        "53 kg",
+        "54 kg",
+        "55 kg"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "The 9 students weigh 9 × 46 = 414 kg and the first 8 weighed 8 × 45 = 360 kg, so the new student weighs 54 kg."
+    },
+    {
+      "id": "IBPSRRB-T2-071",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbArith",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Ratio and proportion",
+      "stem": "The incomes of Anju and Babita are in the ratio 4 : 3 and their spending in the ratio 3 : 2. Each saves ₹3,000 a month. What is Anju's monthly income?",
+      "options": [
+        "₹9,000",
+        "₹10,000",
+        "₹12,000",
+        "₹13,500",
+        "₹15,000"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Let incomes be 4x and 3x and spending 3y and 2y. Then 4x − 3y = 3,000 and 3x − 2y = 3,000, which give x = 3,000 and y = 3,000. Anju earns ₹12,000 and spends ₹9,000."
+    },
+    {
+      "id": "IBPSRRB-T2-072",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Time and work",
+      "stem": "9 men can finish a job in 16 days. In how many days can 12 men finish it, working at the same rate?",
+      "options": [
+        "10 days",
+        "12 days",
+        "14 days",
+        "16 days",
+        "18 days"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The job takes 9 × 16 = 144 man-days, and 144 ÷ 12 = 12 days."
+    },
+    {
+      "id": "IBPSRRB-T2-073",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Speed, time and distance",
+      "stem": "A car covers 240 km in 4 hours. By how much must its speed increase to cover the same distance in 3 hours?",
+      "options": [
+        "5 km/h",
+        "10 km/h",
+        "15 km/h",
+        "20 km/h",
+        "80 km/h"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Its speed is 240 ÷ 4 = 60 km/h and must become 240 ÷ 3 = 80 km/h, an increase of 20 km/h."
+    },
+    {
+      "id": "IBPSRRB-T2-074",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Ages",
+      "stem": "The sum of the ages of a mother and her daughter is 50 years. Five years ago the mother was seven times as old as the daughter. How old is the daughter now?",
+      "options": [
+        "8 years",
+        "10 years",
+        "12 years",
+        "14 years",
+        "15 years"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Let the daughter be d. Then 50 − d − 5 = 7(d − 5), so 45 − d = 7d − 35 and d = 10. The mother is 40."
+    },
+    {
+      "id": "IBPSRRB-T2-075",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Percentage",
+      "stem": "In an examination 35% of the students failed and 260 passed. How many students took the examination?",
+      "options": [
+        "400",
+        "420",
+        "450",
+        "480",
+        "520"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "65% passed, so 260 is 65% of the total, which is 260 ÷ 0.65 = 400."
+    },
+    {
+      "id": "IBPSRRB-T2-076",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Pipes and cisterns",
+      "stem": "Pipe A fills a tank in 12 hours and pipe B empties it in 18 hours. If both are opened together on an empty tank, how long will it take to fill?",
+      "options": [
+        "7.2 hours",
+        "15 hours",
+        "30 hours",
+        "36 hours",
+        "40 hours"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Each hour 1/12 − 1/18 = 1/36 of the tank fills, so it takes 36 hours. (7.2 hours is the answer if both pipes filled.)"
+    },
+    {
+      "id": "IBPSRRB-T2-077",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Speed, time and distance",
+      "stem": "A 320 m long train running at 90 km/h crosses a platform 255 m long. How long does it take?",
+      "options": [
+        "10.2 seconds",
+        "12.8 seconds",
+        "18 seconds",
+        "20 seconds",
+        "23 seconds"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "The train covers 320 + 255 = 575 m at 90 × 5/18 = 25 m/s, which takes 23 seconds. (12.8 seconds counts only the train's own length, 10.2 seconds only the platform.)"
+    },
+    {
+      "id": "IBPSRRB-T2-078",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Mixtures",
+      "stem": "In what ratio must rice costing ₹42 a kg be mixed with rice costing ₹60 a kg to get a mixture worth ₹48 a kg?",
+      "options": [
+        "2 : 1",
+        "1 : 2",
+        "3 : 2",
+        "3 : 1",
+        "7 : 10"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "By alligation, cheaper : dearer = (60 − 48) : (48 − 42) = 12 : 6 = 2 : 1."
+    },
+    {
+      "id": "IBPSRRB-T2-079",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Number system",
+      "stem": "The sum of three consecutive even numbers is 114. What is the largest of them?",
+      "options": [
+        "38",
+        "40",
+        "42",
+        "44",
+        "46"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The middle number is 114 ÷ 3 = 38, so the numbers are 36, 38 and 40."
+    },
+    {
+      "id": "IBPSRRB-T2-080",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "ibpsrrbArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Probability",
+      "stem": "Three fair coins are tossed together. What is the probability of getting exactly two heads?",
+      "options": [
+        "1/2",
+        "3/8",
+        "5/8",
+        "1/4",
+        "2/3"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Of the eight equally likely outcomes, three (HHT, HTH, THH) have exactly two heads, so the probability is 3/8."
+    },
+    {
+      "id": "IBPSRRB-D-001",
+      "section": "reason",
+      "test": 0,
+      "module": 1,
+      "domain": "ibpsrrbLogic",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Inequality",
+      "stem": "A statement is followed by two conclusions, I and II. Assume the statement is true and decide which conclusion(s) definitely follow.\n\nStatement: H ≥ I > J ≤ K < L\n\nI. H > J\n\nII. L > J",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "I: H ≥ I > J gives H > J, true. II: L > K ≥ J gives L > J, true. Both follow."
+    },
+    {
+      "id": "IBPSRRB-D-002",
+      "section": "reason",
+      "test": 0,
+      "module": 1,
+      "domain": "ibpsrrbLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Inequality",
+      "stem": "A statement is followed by two conclusions, I and II. Assume the statement is true and decide which conclusion(s) definitely follow.\n\nStatement: Q = R < S ≤ T > U\n\nI. S > U\n\nII. R < T",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "I: S ≤ T and T > U point in opposite directions, so S and U cannot be compared. II: R < S ≤ T gives R < T, true. Only II follows."
+    },
+    {
+      "id": "IBPSRRB-D-003",
+      "section": "reason",
+      "test": 0,
+      "module": 1,
+      "domain": "ibpsrrbLogic",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Inequality",
+      "stem": "A statement is followed by two conclusions, I and II. Assume the statement is true and decide which conclusion(s) definitely follow.\n\nStatement: D ≤ E ≤ F = G ≤ H\n\nI. D < H\n\nII. D = H",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "D ≤ E ≤ F = G ≤ H gives D ≤ H. Neither 'D < H' nor 'D = H' is certain alone, but one must be true. Either I or II follows."
+    },
+    {
+      "id": "IBPSRRB-D-004",
+      "section": "reason",
+      "test": 0,
+      "module": 1,
+      "domain": "ibpsrrbLogic",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Syllogism",
+      "stem": "Some statements are followed by two conclusions, I and II. Take the statements to be true even if they seem to differ from commonly known facts, and decide which conclusion(s) logically follow.\n\nStatements: No cow is a goat. All goats are animals.\n\nI. Some animals are not cows.\n\nII. No animal is a cow.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The animals that are goats cannot be cows, so some animals are not cows (I). Other animals may be cows, so II is not certain. Only I follows."
+    },
+    {
+      "id": "IBPSRRB-D-005",
+      "section": "reason",
+      "test": 0,
+      "module": 1,
+      "domain": "ibpsrrbLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Syllogism",
+      "stem": "Some statements are followed by two conclusions, I and II. Take the statements to be true even if they seem to differ from commonly known facts, and decide which conclusion(s) logically follow.\n\nStatements: All seeds are grains. Some grains are pulses.\n\nI. Some seeds are pulses.\n\nII. All pulses are grains.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "The pulses among the grains need not include any seed, so I is not certain. Only some grains are said to be pulses, so 'all pulses are grains' is not certain either. Neither follows."
+    },
+    {
+      "id": "IBPSRRB-D-006",
+      "section": "reason",
+      "test": 0,
+      "module": 1,
+      "domain": "ibpsrrbLogic",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Syllogism",
+      "stem": "Some statements are followed by two conclusions, I and II. Take the statements to be true even if they seem to differ from commonly known facts, and decide which conclusion(s) logically follow.\n\nStatements: Some bags are boxes. All boxes are cartons.\n\nI. Some cartons are bags.\n\nII. Some bags are not cartons.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The bags that are boxes are also cartons, so some cartons are bags (I). Whether any bag lies outside the cartons is not settled, so II is only a possibility. Only I follows."
+    },
+    {
+      "id": "IBPSRRB-D-007",
+      "section": "reason",
+      "test": 0,
+      "module": 1,
+      "domain": "ibpsrrbPuzzle",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Scheduling puzzle",
+      "stimulusId": "IBPSRRB-D-PZ1",
+      "stem": "Who attends the meeting in August?",
+      "options": [
+        "T",
+        "P",
+        "U",
+        "R",
+        "Q"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "In order: February T, April R, June P, August U, October Q, December S. R is immediately before P; if P were in April, R would be in February and T could not come before R, so P is in June, R in April and T in February. S is in December; U before Q puts U in August and Q in October, with U between P and Q."
+    },
+    {
+      "id": "IBPSRRB-D-008",
+      "section": "reason",
+      "test": 0,
+      "module": 1,
+      "domain": "ibpsrrbPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Scheduling puzzle",
+      "stimulusId": "IBPSRRB-D-PZ1",
+      "stem": "How many persons attend between T and U?",
+      "options": [
+        "Three",
+        "None",
+        "One",
+        "Four",
+        "Two"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "In order: February T, April R, June P, August U, October Q, December S. R is immediately before P; if P were in April, R would be in February and T could not come before R, so P is in June, R in April and T in February. S is in December; U before Q puts U in August and Q in October, with U between P and Q. T is in February and U in August, with R and P between them."
+    },
+    {
+      "id": "IBPSRRB-D-009",
+      "section": "reason",
+      "test": 0,
+      "module": 1,
+      "domain": "ibpsrrbPuzzle",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Scheduling puzzle",
+      "stimulusId": "IBPSRRB-D-PZ1",
+      "stem": "Who attends immediately after P?",
+      "options": [
+        "T",
+        "Q",
+        "R",
+        "S",
+        "U"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "In order: February T, April R, June P, August U, October Q, December S. R is immediately before P; if P were in April, R would be in February and T could not come before R, so P is in June, R in April and T in February. S is in December; U before Q puts U in August and Q in October, with U between P and Q."
+    },
+    {
+      "id": "IBPSRRB-D-010",
+      "section": "reason",
+      "test": 0,
+      "module": 1,
+      "domain": "ibpsrrbPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Scheduling puzzle",
+      "stimulusId": "IBPSRRB-D-PZ1",
+      "stem": "In which month does Q attend?",
+      "options": [
+        "April",
+        "December",
+        "June",
+        "October",
+        "August"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "In order: February T, April R, June P, August U, October Q, December S. R is immediately before P; if P were in April, R would be in February and T could not come before R, so P is in June, R in April and T in February. S is in December; U before Q puts U in August and Q in October, with U between P and Q."
+    },
+    {
+      "id": "IBPSRRB-D-011",
+      "section": "reason",
+      "test": 0,
+      "module": 1,
+      "domain": "ibpsrrbPuzzle",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Scheduling puzzle",
+      "stimulusId": "IBPSRRB-D-PZ1",
+      "stem": "Which of the following is true?",
+      "options": [
+        "S attends in October",
+        "R attends in April",
+        "P attends in February",
+        "T attends in June",
+        "U attends after Q"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "In order: February T, April R, June P, August U, October Q, December S. R is immediately before P; if P were in April, R would be in February and T could not come before R, so P is in June, R in April and T in February. S is in December; U before Q puts U in August and Q in October, with U between P and Q. R is in April. T is in February, S in December, U before Q, and P in June."
+    },
+    {
+      "id": "IBPSRRB-D-012",
+      "section": "reason",
+      "test": 0,
+      "module": 1,
+      "domain": "ibpsrrbCoding",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Coding-decoding",
+      "stem": "In a certain code language, COTTON is written as DPUUPO. How is WHEAT written in that code?",
+      "options": [
+        "XIGBU",
+        "VGDZS",
+        "XIFBU",
+        "YIFBU",
+        "XIFBS"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Each letter moves one place forward: C to D, O to P, T to U. So WHEAT becomes XIFBU."
+    },
+    {
+      "id": "IBPSRRB-D-013",
+      "section": "reason",
+      "test": 0,
+      "module": 1,
+      "domain": "ibpsrrbCoding",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Coding-decoding",
+      "stem": "In a certain code language, 'buy fresh milk' is written as 'la fe sa', 'milk is fresh' as 'sa po la', and 'is it cheap' as 'po zu ri'. What is the code for 'buy'?",
+      "options": [
+        "zu",
+        "la",
+        "po",
+        "sa",
+        "fe"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "'Milk' and 'fresh' are in the first two sentences, so they are 'la' and 'sa' in some order. That leaves 'fe' for 'buy'."
+    },
+    {
+      "id": "IBPSRRB-D-014",
+      "section": "reason",
+      "test": 0,
+      "module": 1,
+      "domain": "ibpsrrbCoding",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Coding-decoding",
+      "stem": "If DAM is coded as 18 by adding the alphabet positions of its letters (A = 1, B = 2, and so on), what is the code for CANAL?",
+      "options": [
+        "31",
+        "32",
+        "33",
+        "34",
+        "35"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "C = 3, A = 1, N = 14, A = 1 and L = 12, and 3 + 1 + 14 + 1 + 12 = 31. (DAM: 4 + 1 + 13 = 18.)"
+    },
+    {
+      "id": "IBPSRRB-D-015",
+      "section": "reason",
+      "test": 0,
+      "module": 1,
+      "domain": "ibpsrrbCoding",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Letter series",
+      "stem": "Which letter pair comes next in the series? BZ, DX, FV, HT, ?",
+      "options": [
+        "JR",
+        "JQ",
+        "JS",
+        "KR",
+        "IR"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The first letters move forward two places (B, D, F, H, J) and the second letters move back two places (Z, X, V, T, R): JR."
+    },
+    {
+      "id": "IBPSRRB-D-016",
+      "section": "reason",
+      "test": 0,
+      "module": 1,
+      "domain": "ibpsrrbCoding",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Alphabet",
+      "stem": "How many letters are there between the 8th letter from the left and the 4th letter from the right in the English alphabet?",
+      "options": [
+        "12",
+        "13",
+        "14",
+        "15",
+        "16"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The 8th letter from the left is H (position 8) and the 4th from the right is W (position 23). Between them are 23 − 8 − 1 = 14 letters."
+    },
+    {
+      "id": "IBPSRRB-D-017",
+      "section": "reason",
+      "test": 0,
+      "module": 1,
+      "domain": "ibpsrrbCoding",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Alphabet",
+      "stem": "If the letters of the word PLANT are arranged in alphabetical order, which letter will be in the middle?",
+      "options": [
+        "N",
+        "P",
+        "L",
+        "A",
+        "T"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "In alphabetical order PLANT becomes ALNPT, and the middle (third) letter is N."
+    },
+    {
+      "id": "IBPSRRB-D-018",
+      "section": "reason",
+      "test": 0,
+      "module": 1,
+      "domain": "ibpsrrbRelations",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Blood relations",
+      "stem": "Pointing to a woman, Rajesh said, 'Her husband is the only son of my mother's mother.' How is the woman related to Rajesh?",
+      "options": [
+        "Grandmother",
+        "Cousin",
+        "Maternal aunt",
+        "Sister",
+        "Mother"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The only son of Rajesh's mother's mother is his mother's brother, his maternal uncle. The woman is that uncle's wife, so she is Rajesh's maternal aunt (mami)."
+    },
+    {
+      "id": "IBPSRRB-D-019",
+      "section": "reason",
+      "test": 0,
+      "module": 1,
+      "domain": "ibpsrrbRelations",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Blood relations",
+      "stem": "L is the mother of M. M is the brother of N, and O is the husband of N. How is L related to O?",
+      "options": [
+        "Mother",
+        "Aunt",
+        "Sister-in-law",
+        "Mother-in-law",
+        "Grandmother"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "N is L's daughter (M's sibling, and married to O), so L is the mother of O's wife: his mother-in-law."
+    },
+    {
+      "id": "IBPSRRB-D-020",
+      "section": "reason",
+      "test": 0,
+      "module": 1,
+      "domain": "ibpsrrbRelations",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Direction sense",
+      "stem": "From her house, Asha walks 4 km west and then 3 km north. In which direction is she now from her house?",
+      "options": [
+        "South-west",
+        "North-east",
+        "North",
+        "West",
+        "North-west"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "She is west and north of her house, so she is to its north-west."
+    },
+    {
+      "id": "IBPSRRB-D-021",
+      "section": "reason",
+      "test": 0,
+      "module": 1,
+      "domain": "ibpsrrbRelations",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Direction sense",
+      "stem": "Kunal faces west. He turns 270° anticlockwise. Which direction does he face now?",
+      "options": [
+        "South",
+        "East",
+        "North",
+        "West",
+        "North-west"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Anticlockwise from west: 90° gives south, 180° gives east and 270° gives north."
+    },
+    {
+      "id": "IBPSRRB-D-022",
+      "section": "reason",
+      "test": 0,
+      "module": 1,
+      "domain": "ibpsrrbRelations",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Order and ranking",
+      "stem": "In a row of trees, a neem tree is 9th from either end. How many trees are in the row?",
+      "options": [
+        "15",
+        "16",
+        "17",
+        "18",
+        "19"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Total = 9 + 9 − 1 = 17; the neem tree is counted from both ends, so subtract one."
+    },
+    {
+      "id": "IBPSRRB-D-023",
+      "section": "reason",
+      "test": 0,
+      "module": 1,
+      "domain": "ibpsrrbRelations",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Order and ranking",
+      "stem": "Amit is taller than Bhanu, and Bhanu is taller than Chetan. Dev is taller than Amit. Who is the tallest?",
+      "options": [
+        "Cannot be determined",
+        "Bhanu",
+        "Amit",
+        "Dev",
+        "Chetan"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Dev is taller than Amit, who is taller than Bhanu and Chetan, so Dev is the tallest."
+    },
+    {
+      "id": "IBPSRRB-D-024",
+      "section": "quant",
+      "test": 0,
+      "module": 1,
+      "domain": "ibpsrrbNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Simplification",
+      "stem": "What will come in place of the question mark (?) in the following question?\n\n55% of 460 + 2/9 of 1170 = ?",
+      "options": [
+        "473",
+        "483",
+        "493",
+        "503",
+        "513"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "55% of 460 = 253 and 2/9 of 1170 = 260, so the total is 513."
+    },
+    {
+      "id": "IBPSRRB-D-025",
+      "section": "quant",
+      "test": 0,
+      "module": 1,
+      "domain": "ibpsrrbNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Simplification",
+      "stem": "What will come in place of the question mark (?) in the following question?\n\n1350 ÷ 45 × 8 + 37 = ?",
+      "options": [
+        "257",
+        "267",
+        "277",
+        "287",
+        "297"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "1350 ÷ 45 = 30, 30 × 8 = 240, and 240 + 37 = 277."
+    },
+    {
+      "id": "IBPSRRB-D-026",
+      "section": "quant",
+      "test": 0,
+      "module": 1,
+      "domain": "ibpsrrbNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Simplification",
+      "stem": "What will come in place of the question mark (?) in the following question?\n\n√2025 × 6 − 6³ = ?",
+      "options": [
+        "44",
+        "48",
+        "54",
+        "60",
+        "64"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "√2025 = 45 and 45 × 6 = 270. 6³ = 216, and 270 − 216 = 54."
+    },
+    {
+      "id": "IBPSRRB-D-027",
+      "section": "quant",
+      "test": 0,
+      "module": 1,
+      "domain": "ibpsrrbNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Approximation",
+      "stem": "What approximate value will come in place of the question mark (?) in the following question? (You are not expected to calculate the exact value.)\n\n74.95% of 1279.8 − 18.02² ≈ ?",
+      "options": [
+        "576",
+        "596",
+        "616",
+        "636",
+        "656"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Round to 75% of 1280 − 18² = 960 − 324 = 636."
+    },
+    {
+      "id": "IBPSRRB-D-028",
+      "section": "quant",
+      "test": 0,
+      "module": 1,
+      "domain": "ibpsrrbNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "What will come in place of the question mark (?) in the following number series?\n\n9, 17, 33, 65, 129, ?",
+      "options": [
+        "257",
+        "258",
+        "259",
+        "263",
+        "265"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Each term is double the previous one minus 1: 129 × 2 − 1 = 257."
+    },
+    {
+      "id": "IBPSRRB-D-029",
+      "section": "quant",
+      "test": 0,
+      "module": 1,
+      "domain": "ibpsrrbNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "What will come in place of the question mark (?) in the following number series?\n\n3, 5, 10, 12, 24, 26, ?",
+      "options": [
+        "28",
+        "48",
+        "50",
+        "52",
+        "54"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "The steps alternate + 2 and × 2: 26 × 2 = 52."
+    },
+    {
+      "id": "IBPSRRB-D-030",
+      "section": "quant",
+      "test": 0,
+      "module": 1,
+      "domain": "ibpsrrbDI",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "IBPSRRB-D-DI1",
+      "stem": "How many women are members of the Rose group?",
+      "options": [
+        "36",
+        "38",
+        "40",
+        "42",
+        "45"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "80% of 45 = 36."
+    },
+    {
+      "id": "IBPSRRB-D-031",
+      "section": "quant",
+      "test": 0,
+      "module": 1,
+      "domain": "ibpsrrbDI",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "IBPSRRB-D-DI1",
+      "stem": "How many men are members of the Jasmine group?",
+      "options": [
+        "20",
+        "25",
+        "30",
+        "32",
+        "35"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Women are 60%, so men are 40% of 50 = 20."
+    },
+    {
+      "id": "IBPSRRB-D-032",
+      "section": "quant",
+      "test": 0,
+      "module": 1,
+      "domain": "ibpsrrbDI",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "IBPSRRB-D-DI1",
+      "stem": "How many members do the five groups have in all?",
+      "options": [
+        "191",
+        "196",
+        "201",
+        "206",
+        "211"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "40 + 50 + 36 + 45 + 30 = 201."
+    },
+    {
+      "id": "IBPSRRB-D-033",
+      "section": "quant",
+      "test": 0,
+      "module": 1,
+      "domain": "ibpsrrbDI",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "IBPSRRB-D-DI1",
+      "stem": "How many women are there in the five groups together?",
+      "options": [
+        "115",
+        "120",
+        "125",
+        "130",
+        "135"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "Lotus 30, Jasmine 30, Marigold 18, Rose 36 and Tulsi 21 add up to 135."
+    },
+    {
+      "id": "IBPSRRB-D-034",
+      "section": "quant",
+      "test": 0,
+      "module": 1,
+      "domain": "ibpsrrbDI",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "IBPSRRB-D-DI1",
+      "stem": "What is the ratio of men in Lotus to men in Tulsi?",
+      "options": [
+        "10 : 9",
+        "5 : 4",
+        "4 : 3",
+        "9 : 10",
+        "10 : 7"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Lotus has 25% of 40 = 10 men and Tulsi 30% of 30 = 9 men, so the ratio is 10 : 9."
+    },
+    {
+      "id": "IBPSRRB-D-035",
+      "section": "quant",
+      "test": 0,
+      "module": 1,
+      "domain": "ibpsrrbArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Profit and loss",
+      "stem": "By selling a bicycle for ₹1,710, a shopkeeper loses 5%. What did the bicycle cost him?",
+      "options": [
+        "₹1,620",
+        "₹1,750",
+        "₹1,795",
+        "₹1,800",
+        "₹1,900"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "The selling price is 95% of the cost, so the cost is 1,710 ÷ 0.95 = ₹1,800. (₹1,795 adds 5% of the selling price, the wrong base.)"
+    },
+    {
+      "id": "IBPSRRB-D-036",
+      "section": "quant",
+      "test": 0,
+      "module": 1,
+      "domain": "ibpsrrbArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Simple interest",
+      "stem": "₹5,000 earns ₹1,200 as simple interest in 4 years. What is the rate of interest per annum?",
+      "options": [
+        "5%",
+        "6%",
+        "6.5%",
+        "12%",
+        "24%"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Rate = 1,200 × 100 ÷ (5,000 × 4) = 6% per annum. (24% is the total over four years.)"
+    },
+    {
+      "id": "IBPSRRB-D-037",
+      "section": "quant",
+      "test": 0,
+      "module": 1,
+      "domain": "ibpsrrbArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Time and work",
+      "stem": "Leela and Mala together finish a job in 18 days. Leela alone can finish it in 30 days. How long would Mala take alone?",
+      "options": [
+        "12 days",
+        "24 days",
+        "40 days",
+        "45 days",
+        "48 days"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Mala does 1/18 − 1/30 = 1/45 of the job a day, so she needs 45 days. (12 days is just 30 − 18.)"
+    },
+    {
+      "id": "IBPSRRB-D-038",
+      "section": "quant",
+      "test": 0,
+      "module": 1,
+      "domain": "ibpsrrbArith",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Speed, time and distance",
+      "stem": "Walking at 5 km/h, Ravi reaches his office 10 minutes late. Walking at 6 km/h, he reaches 5 minutes early. How far is his office?",
+      "options": [
+        "7.5 km",
+        "9 km",
+        "10 km",
+        "12 km",
+        "15 km"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The two times differ by 15 minutes, 1/4 hour. d/5 − d/6 = d/30 = 1/4, so d = 7.5 km."
+    },
+    {
+      "id": "IBPSRRB-D-039",
+      "section": "quant",
+      "test": 0,
+      "module": 1,
+      "domain": "ibpsrrbArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Percentage",
+      "stem": "The price of milk rises by 50%. By what percentage must a family cut its use of milk to keep its spending the same?",
+      "options": [
+        "25%",
+        "33.33%",
+        "40%",
+        "50%",
+        "66.67%"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The cut is 50 ÷ (100 + 50) × 100 = 33.33%. Cutting by 50% would reduce the spending."
+    },
+    {
+      "id": "IBPSRRB-D-040",
+      "section": "quant",
+      "test": 0,
+      "module": 1,
+      "domain": "ibpsrrbArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Average",
+      "stem": "The average of four consecutive odd numbers is 24. What is the largest of them?",
+      "options": [
+        "27",
+        "29",
+        "31",
+        "33",
+        "35"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The numbers are centred on 24, so they are 21, 23, 25 and 27."
+    }
+  ]
+}

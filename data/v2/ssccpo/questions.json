@@ -1,0 +1,4991 @@
+{
+  "stimuli": [
+    {
+      "id": "SSCCPO-CL1",
+      "title": "Cloze test: community policing",
+      "text": "Read the passage and choose the most appropriate word for each numbered blank.\n\nIn many towns, the police now spend time in schools, markets and housing colonies, getting to know residents by name. This is what is (1) ........ community policing. It builds trust (2) ........ the police and the people. When residents trust the officers in their area, they are more likely to (3) ........ crimes and share information. This helps the police (4) ........ small problems from becoming serious ones."
+    },
+    {
+      "id": "SSCCPO-RC1",
+      "title": "Reading comprehension: science at the crime scene",
+      "text": "For more than a century, fingerprints have helped investigators link a suspect to a crime. Today they are only one of many tools. A single hair, a drop of blood or a few skin cells can now yield a DNA profile, and mobile phone records and CCTV footage can show where a person was at a given moment.\n\nThese methods have made investigations far more reliable, but they depend on what happens in the first hour. A crime scene must be sealed at once, because careless footsteps, a curious onlooker or an officer without gloves can destroy evidence or contaminate it with new traces. Samples must be labelled, packed and sent to the laboratory along an unbroken chain of custody.\n\nScience, in other words, is only as good as the care of the people who collect and handle the evidence."
+    },
+    {
+      "id": "SSCCPO-CL2",
+      "title": "Cloze test: online fraud",
+      "text": "Read the passage and choose the most appropriate word for each numbered blank.\n\nLast week a police officer gave our college a lecture (1) ........ cyber fraud. She explained that a bank will (2) ........ ask for your OTP or PIN over the phone. Many people (3) ........ savings were stolen had shared these numbers with a caller who claimed to be a bank official. She advised us to report any such fraud (4) ........, because money can often be traced and frozen if the police act within the first few hours."
+    },
+    {
+      "id": "SSCCPO-RC2",
+      "title": "Reading comprehension: a night on coastal patrol",
+      "text": "It was a little after midnight when the marine police boat left the harbour for its routine patrol. The sea was calm and the four-member team scanned the dark water with binoculars and a searchlight, checking every vessel they passed against the list of boats registered in the area.\n\nAbout ten kilometres out, they spotted a small fishing boat moving without its navigation lights. Such boats are sometimes used to smuggle goods, so the team came alongside and asked the crew to stop. On board they found only three tired fishermen, a catch of fish and a pile of nets. The men explained that their engine had failed in the evening, and by the time they had repaired it, their battery was too weak to run the lights. They had drifted far from their usual waters.\n\nThe team guided the boat back towards the shore and noted the details in their logbook before going on with the patrol."
+    }
+  ],
+  "questions": [
+    {
+      "id": "SSCCPO-T1-001",
+      "section": "gi",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Number analogy",
+      "stem": "Select the option that is related to the third term in the same way as the second term is related to the first term.\n\n7 : 56 :: 9 : ?",
+      "options": [
+        "90",
+        "99",
+        "108",
+        "110"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Each number is multiplied by the next whole number: 7 x 8 = 56, so 9 x 10 = 90. 99 uses 9 x 11 and 110 uses 10 x 11, which skip a step."
+    },
+    {
+      "id": "SSCCPO-T1-002",
+      "section": "gi",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Blood relations",
+      "stem": "Pointing to a girl, Meena says, \"She is the daughter of my husband's only brother.\" How is the girl related to Meena?",
+      "options": [
+        "Sister-in-law",
+        "Niece",
+        "Daughter",
+        "Cousin"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Meena's husband's brother is her brother-in-law, and his daughter is Meena's niece. She would be Meena's daughter only if her father were Meena's husband, and she is a cousin of Meena's children, not of Meena."
+    },
+    {
+      "id": "SSCCPO-T1-003",
+      "section": "gi",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Semantic analogy",
+      "stem": "Select the option that is related to the third term in the same way as the second term is related to the first term.\n\nThermometer : Temperature :: Barometer : ?",
+      "options": [
+        "Pressure",
+        "Humidity",
+        "Wind speed",
+        "Rainfall"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A thermometer measures temperature and a barometer measures atmospheric pressure. Humidity is measured with a hygrometer and wind speed with an anemometer."
+    },
+    {
+      "id": "SSCCPO-T1-004",
+      "section": "gi",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Directions",
+      "stem": "Ravi walks 6 km north, turns right and walks 8 km, then turns right again and walks 12 km. How far is he from his starting point, and in which direction?",
+      "options": [
+        "10 km, north-east",
+        "14 km, south-east",
+        "10 km, south-east",
+        "8 km, east"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "He ends 8 km east and 12 - 6 = 6 km south of the start. The distance is the square root of 64 + 36 = 10 km, towards the south-east."
+    },
+    {
+      "id": "SSCCPO-T1-005",
+      "section": "gi",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Number classification",
+      "stem": "Select the odd one out.\n\n121, 169, 225, 291",
+      "options": [
+        "121",
+        "169",
+        "225",
+        "291"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "121, 169 and 225 are perfect squares (11, 13 and 15 squared). 291 is not a square; 17 squared is 289."
+    },
+    {
+      "id": "SSCCPO-T1-006",
+      "section": "gi",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Ranking",
+      "stem": "In a row of 38 trainees, Gopal is 14th from the left end and Hari is 9th from the right end. How many trainees stand between them?",
+      "options": [
+        "15",
+        "16",
+        "17",
+        "23"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Hari is 38 - 9 + 1 = 30th from the left. Between positions 14 and 30 there are 30 - 14 - 1 = 15 trainees. 16 forgets to subtract 1."
+    },
+    {
+      "id": "SSCCPO-T1-007",
+      "section": "gi",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Letter series",
+      "stem": "Select the term that will come next in the series.\n\nBDG, EGJ, HJM, ?",
+      "options": [
+        "KMO",
+        "KMP",
+        "KLP",
+        "JMP"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Each letter moves 3 places forward from one term to the next: B, E, H, K; D, G, J, M; G, J, M, P. So the next term is KMP."
+    },
+    {
+      "id": "SSCCPO-T1-008",
+      "section": "gi",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Syllogism",
+      "stem": "Read the statements and decide which conclusion(s) logically follow, even if the statements seem to be at variance with known facts.\n\nStatements: All inspectors are officers. Some officers are graduates.\nConclusions: I. Some inspectors are graduates. II. Some graduates are officers.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Both I and II follow",
+        "Neither follows"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "'Some officers are graduates' converts to 'Some graduates are officers', so II follows. The graduate officers need not be inspectors, so I does not follow."
+    },
+    {
+      "id": "SSCCPO-T1-009",
+      "section": "gi",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "Select the term that will come next in the series.\n\n2, 4, 10, 28, 82, ?",
+      "options": [
+        "164",
+        "226",
+        "242",
+        "244"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Each term is three times the previous term minus 2: 2 x 3 - 2 = 4, 4 x 3 - 2 = 10, 10 x 3 - 2 = 28, 28 x 3 - 2 = 82, so 82 x 3 - 2 = 244. Doubling gives 164."
+    },
+    {
+      "id": "SSCCPO-T1-010",
+      "section": "gi",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Calendar",
+      "stem": "26 January 2026 was a Monday. What day of the week will 26 January 2027 be?",
+      "options": [
+        "Sunday",
+        "Tuesday",
+        "Wednesday",
+        "Monday"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The year between the two dates does not include a 29 February, so it has 365 days, one odd day. The weekday moves on by one, from Monday to Tuesday."
+    },
+    {
+      "id": "SSCCPO-T1-011",
+      "section": "gi",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Coding-decoding",
+      "stem": "In a certain code language, PILOT is written as QJMPU. How is CAMEL written in that language?",
+      "options": [
+        "DBNFM",
+        "DCNFM",
+        "DBNEM",
+        "EBNFM"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Each letter is moved one place forward: P to Q, I to J, L to M, O to P, T to U. So C, A, M, E, L become D, B, N, F, M."
+    },
+    {
+      "id": "SSCCPO-T1-012",
+      "section": "gi",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Clocks",
+      "stem": "What is the angle between the hour hand and the minute hand of a clock at 8:20?",
+      "options": [
+        "100°",
+        "110°",
+        "120°",
+        "130°"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Angle = |30 x hours - 5.5 x minutes| = |240 - 110| = 130°. At 8:20 the hour hand has moved 10° past the 8, so it is not 120°."
+    },
+    {
+      "id": "SSCCPO-T1-013",
+      "section": "gi",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Coding-decoding",
+      "stem": "In a certain code language, FOREST is written as TSEROF. How is BRANCH written in that language?",
+      "options": [
+        "HCANRB",
+        "HCNARB",
+        "BHCNAR",
+        "HNCARB"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The word is simply written in reverse order: FOREST becomes TSEROF, so BRANCH becomes HCNARB."
+    },
+    {
+      "id": "SSCCPO-T1-014",
+      "section": "gi",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Statement and conclusion",
+      "stem": "Statement: The police have advised residents to keep their doors locked at night after a rise in thefts in the colony.\nConclusions: I. Thefts have increased in the colony. II. Locked doors can help reduce thefts.\n\nWhich conclusion(s) follow?",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Both I and II follow",
+        "Neither follows"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The statement says thefts have risen, so I follows. The advice to lock doors only makes sense if locking helps prevent thefts, so II follows too."
+    },
+    {
+      "id": "SSCCPO-T1-015",
+      "section": "gi",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Word building",
+      "stem": "Which word cannot be formed using the letters of the word CONSTITUTION?",
+      "options": [
+        "CASINO",
+        "UNION",
+        "TUITION",
+        "NOTION"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "CONSTITUTION has no letter A, so CASINO cannot be formed. TUITION, NOTION and UNION use only letters it contains, in the numbers available."
+    },
+    {
+      "id": "SSCCPO-T1-016",
+      "section": "gi",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Venn relations",
+      "stem": "In which group does one class contain both of the other two, which have no members in common?",
+      "options": [
+        "Animals, dogs, pets",
+        "Fruits, mangoes, green things",
+        "Doctors, women, mothers",
+        "Vegetables, potatoes, onions"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Potatoes and onions are both vegetables and no potato is an onion. Doctors, women and mothers overlap; some pets are dogs; some mangoes are green."
+    },
+    {
+      "id": "SSCCPO-T1-017",
+      "section": "gi",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Dictionary order",
+      "stem": "Arrange the words in the order in which they appear in an English dictionary.\n\n1. Sanction  2. Sandal  3. Sanctity  4. Sanatorium  5. Sandwich",
+      "options": [
+        "4, 3, 1, 2, 5",
+        "4, 1, 3, 2, 5",
+        "4, 1, 3, 5, 2",
+        "1, 3, 4, 2, 5"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Sanatorium (s-a-n-a) comes first. Sanction and Sanctity share 'sancti'; then 'o' comes before 't', so Sanction is before Sanctity. Sandal comes before Sandwich ('a' before 'w')."
+    },
+    {
+      "id": "SSCCPO-T1-018",
+      "section": "gi",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Seating arrangement",
+      "stem": "Six cadets P, Q, R, S, T and U stand in a row facing north. P is at the left end. R is third from the right end. S is to the immediate left of R. T is next to P. Q is not at the right end. Who is at the right end?",
+      "options": [
+        "Q",
+        "T",
+        "R",
+        "U"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Number the places 1 to 6 from the left. P is 1, R is 4, S is 3 and T is 2. Q and U take 5 and 6, and Q is not at the end, so U is at the right end."
+    },
+    {
+      "id": "SSCCPO-T1-019",
+      "section": "gi",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Mathematical operations",
+      "stem": "If '+' means 'x', 'x' means '-', '-' means '÷' and '÷' means '+', what is the value of the expression?\n\n24 - 4 + 3 ÷ 5 x 2",
+      "options": [
+        "9",
+        "11",
+        "15",
+        "21"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Replacing the signs gives 24 ÷ 4 x 3 + 5 - 2. Division and multiplication first: 6 x 3 = 18, then 18 + 5 - 2 = 21."
+    },
+    {
+      "id": "SSCCPO-T1-020",
+      "section": "gi",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Emotional intelligence",
+      "stem": "On crowd duty, a colleague loses his temper with a member of the public. What is the best first step?",
+      "options": [
+        "Let them settle it themselves",
+        "Calmly step in and defuse it",
+        "Back up your colleague's tone",
+        "Report him to seniors at once"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Calming the situation first protects both the public and the colleague; any report can follow later. Walking away or joining in lets it get worse."
+    },
+    {
+      "id": "SSCCPO-T1-021",
+      "section": "gi",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoVerbal",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Missing number",
+      "stem": "In each row the third number follows the same rule from the first two. Find the missing number.\n\nRow 1: 2, 3, 13\nRow 2: 4, 1, 17\nRow 3: 3, 5, ?",
+      "options": [
+        "25",
+        "28",
+        "30",
+        "34"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "The third number is the sum of the squares of the first two: 4 + 9 = 13 and 16 + 1 = 17. So 9 + 25 = 34. Always check a rule on both given rows before using it."
+    },
+    {
+      "id": "SSCCPO-T1-022",
+      "section": "gi",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Inequalities",
+      "stem": "If P > Q ≥ R = S < T, which of these is definitely true?",
+      "options": [
+        "S ≥ T",
+        "T > Q",
+        "P > S",
+        "Q > S"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "P > Q and Q ≥ R = S, so P > S. Q could equal S, the link between T and Q is unknown, and S < T rules out S ≥ T."
+    },
+    {
+      "id": "SSCCPO-T1-023",
+      "section": "gi",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Address matching",
+      "stem": "Which pair of roll numbers is exactly the same?",
+      "options": [
+        "R7K-4492 and R1K-4492",
+        "R7X-4492 and R7K-4492",
+        "R7K-4429 and R7K-4492",
+        "R7K-4492 and R7K-4492"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Only the first pair matches character for character. The others differ in the order of the last digits, in K and X, or in 7 and 1."
+    },
+    {
+      "id": "SSCCPO-T1-024",
+      "section": "gi",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoLogic",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Coded relations",
+      "stem": "'A + B' means A is the father of B, 'A x B' means A is the sister of B and 'A - B' means A is the wife of B. What does P - Q + R x S mean?",
+      "options": [
+        "P is the mother of S",
+        "P is the aunt of S",
+        "P is the grandmother of S",
+        "P is the sister of S"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "P is the wife of Q, Q is the father of R, and R is the sister of S. So Q is also S's father and his wife P is S's mother."
+    },
+    {
+      "id": "SSCCPO-T1-025",
+      "section": "gi",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Letter-number analogy",
+      "stem": "Select the option that is related to the third term in the same way as the second term is related to the first term.\n\nACE : 135 :: BDF : ?",
+      "options": [
+        "235",
+        "246",
+        "247",
+        "256"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Each letter is replaced by its position in the alphabet: A = 1, C = 3, E = 5. So B, D, F become 2, 4, 6."
+    },
+    {
+      "id": "SSCCPO-T1-026",
+      "section": "ga",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Constitution",
+      "stem": "Which Article of the Constitution provides for the National Commission for Scheduled Castes?",
+      "options": [
+        "Article 338A",
+        "Article 324",
+        "Article 338",
+        "Article 340"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Article 338 sets up the National Commission for Scheduled Castes. Article 338A is the commission for Scheduled Tribes and Article 340 the commission on backward classes."
+    },
+    {
+      "id": "SSCCPO-T1-027",
+      "section": "ga",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Rivers",
+      "stem": "Dudhsagar Falls, on the Goa and Karnataka border, are on which river?",
+      "options": [
+        "Mandovi",
+        "Kaveri",
+        "Zuari",
+        "Sharavati"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Dudhsagar Falls are on the Mandovi in the Western Ghats. Jog Falls are on the Sharavati."
+    },
+    {
+      "id": "SSCCPO-T1-028",
+      "section": "ga",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Constitution",
+      "stem": "Which Article of the Constitution says that no person accused of an offence shall be compelled to be a witness against himself?",
+      "options": [
+        "Article 22",
+        "Article 32",
+        "Article 20",
+        "Article 19"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Article 20(3) protects against self-incrimination; Article 20 also bars ex post facto punishment and double jeopardy. Article 22 covers arrest and detention, and Article 32 the right to move the Supreme Court."
+    },
+    {
+      "id": "SSCCPO-T1-029",
+      "section": "ga",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Vegetation",
+      "stem": "The Sundarbans mangrove forest is named after which tree that grows there?",
+      "options": [
+        "Deodar",
+        "Teak",
+        "Sundari",
+        "Sal"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The Sundarbans take their name from the sundari, a mangrove tree common in the delta. Sal and teak are trees of the tropical deciduous forests and deodar of the Himalayas."
+    },
+    {
+      "id": "SSCCPO-T1-030",
+      "section": "ga",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Modern history",
+      "stem": "Which battle of 1764 confirmed British control over Bengal and Bihar and led to the grant of the Diwani?",
+      "options": [
+        "Third Battle of Panipat",
+        "Battle of Buxar",
+        "Battle of Wandiwash",
+        "Battle of Plassey"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "At Buxar (1764) the Company defeated the combined forces of Mir Qasim, the Nawab of Awadh and Shah Alam II; the Treaty of Allahabad (1765) gave it the Diwani. Plassey was in 1757."
+    },
+    {
+      "id": "SSCCPO-T1-031",
+      "section": "ga",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoScience",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Economy",
+      "stem": "In government finance, what does the fiscal deficit measure?",
+      "options": [
+        "Imports minus exports",
+        "Revenue spending minus revenue receipts",
+        "Spending minus non-debt receipts",
+        "Interest paid on past loans"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The fiscal deficit is total expenditure minus total receipts other than borrowings, so it shows how much the government must borrow. Revenue spending minus revenue receipts is the revenue deficit."
+    },
+    {
+      "id": "SSCCPO-T1-032",
+      "section": "ga",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Social reform",
+      "stem": "Who founded the Bahishkrit Hitakarini Sabha in Bombay in 1924 to work for the uplift of the depressed classes?",
+      "options": [
+        "E. V. Ramasamy",
+        "Sree Narayana Guru",
+        "B. R. Ambedkar",
+        "Jyotirao Phule"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "B. R. Ambedkar founded the Bahishkrit Hitakarini Sabha in 1924 to spread education and improve the condition of the depressed classes. Phule founded the Satyashodhak Samaj in 1873 and E. V. Ramasamy led the Self-Respect Movement."
+    },
+    {
+      "id": "SSCCPO-T1-033",
+      "section": "ga",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Biology",
+      "stem": "Which instrument measures the amount of glucose in a drop of blood?",
+      "options": [
+        "Sphygmomanometer",
+        "Spirometer",
+        "Glucometer",
+        "Stethoscope"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A glucometer reads blood sugar from a drop of blood on a test strip. A sphygmomanometer measures blood pressure, a spirometer the volume of air breathed, and a stethoscope is for listening to the heart and lungs."
+    },
+    {
+      "id": "SSCCPO-T1-034",
+      "section": "ga",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoHistory",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Culture",
+      "stem": "Thang-Ta is a traditional martial art of which state?",
+      "options": [
+        "Kerala",
+        "Punjab",
+        "Assam",
+        "Manipur"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Thang-Ta (sword and spear) comes from Manipur. Kalaripayattu is from Kerala and Gatka from Punjab."
+    },
+    {
+      "id": "SSCCPO-T1-035",
+      "section": "ga",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Chemistry",
+      "stem": "Calcium carbide, illegally used to ripen fruit, gives off which gas when it reacts with moisture?",
+      "options": [
+        "Ammonia",
+        "Acetylene",
+        "Ethylene",
+        "Methane"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Calcium carbide and water produce acetylene (ethyne), which acts like the natural ripening hormone ethylene. Ethylene itself is the gas permitted for ripening chambers."
+    },
+    {
+      "id": "SSCCPO-T1-036",
+      "section": "ga",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoHistory",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Neighbouring countries",
+      "stem": "Which neighbouring country shares a border with the Indian states of Sikkim, West Bengal, Assam and Arunachal Pradesh?",
+      "options": [
+        "Nepal",
+        "Bhutan",
+        "Myanmar",
+        "Bangladesh"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Bhutan borders Sikkim, West Bengal, Assam and Arunachal Pradesh. Nepal does not touch Assam or Arunachal Pradesh, and Bangladesh does not touch Sikkim."
+    },
+    {
+      "id": "SSCCPO-T1-037",
+      "section": "ga",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Biology",
+      "stem": "Which part of the human ear helps the body keep its balance?",
+      "options": [
+        "Eustachian tube",
+        "Semicircular canals",
+        "Cochlea",
+        "Eardrum"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The fluid-filled semicircular canals of the inner ear sense movement of the head. The cochlea is for hearing and the Eustachian tube balances air pressure."
+    },
+    {
+      "id": "SSCCPO-T1-038",
+      "section": "ga",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Art and architecture",
+      "stem": "The Hoysala temples of Belur and Halebidu are in which present-day state?",
+      "options": [
+        "Andhra Pradesh",
+        "Karnataka",
+        "Tamil Nadu",
+        "Kerala"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Belur and Halebidu, in Hassan district of Karnataka, hold the star-shaped Hoysala temples of the 12th century. They are a UNESCO World Heritage Site with Somanathapura."
+    },
+    {
+      "id": "SSCCPO-T1-039",
+      "section": "ga",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Indian geography",
+      "stem": "The Satpura range lies between which two rivers?",
+      "options": [
+        "Godavari and Krishna",
+        "Narmada and Tapi",
+        "Mahanadi and Son",
+        "Ganga and Yamuna"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The Satpura range runs between the Narmada to the north and the Tapi to the south, both of which flow west into the Arabian Sea. The Vindhyas lie north of the Narmada."
+    },
+    {
+      "id": "SSCCPO-T1-040",
+      "section": "ga",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Constitution",
+      "stem": "Which Schedule of the Constitution deals with the administration of tribal areas in Assam, Meghalaya, Tripura and Mizoram?",
+      "options": [
+        "Fifth Schedule",
+        "Sixth Schedule",
+        "Eleventh Schedule",
+        "Seventh Schedule"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The Sixth Schedule sets up autonomous district councils in those four states. The Fifth Schedule covers Scheduled Areas in other states and the Eleventh lists panchayat subjects."
+    },
+    {
+      "id": "SSCCPO-T1-041",
+      "section": "ga",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Neighbouring countries",
+      "stem": "Mount Everest lies on the border between Nepal and which country?",
+      "options": [
+        "Pakistan",
+        "China",
+        "India",
+        "Bhutan"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Everest lies on the border of Nepal and the Tibet region of China. India's highest peak, Kangchenjunga, is on the Nepal and Sikkim border."
+    },
+    {
+      "id": "SSCCPO-T1-042",
+      "section": "ga",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Parliament",
+      "stem": "Under which Article can Parliament create a new All India Service, once the Rajya Sabha has passed a resolution supporting it?",
+      "options": [
+        "Article 315",
+        "Article 312",
+        "Article 311",
+        "Article 309"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Article 312 lets Parliament create All India Services after a Rajya Sabha resolution backed by two-thirds of members present and voting. Article 315 sets up public service commissions and Article 311 protects civil servants from arbitrary dismissal."
+    },
+    {
+      "id": "SSCCPO-T1-043",
+      "section": "ga",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Economy",
+      "stem": "NABARD was set up mainly to provide what?",
+      "options": [
+        "Housing loans in cities",
+        "Foreign trade finance",
+        "Rural and farm credit",
+        "Stock market regulation"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "NABARD (1982) is the apex body for agriculture and rural development finance. EXIM Bank finances foreign trade, the National Housing Bank housing, and SEBI regulates markets."
+    },
+    {
+      "id": "SSCCPO-T1-044",
+      "section": "ga",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Ancient history",
+      "stem": "Who discovered the Harappan site of Mohenjo-daro in 1922?",
+      "options": [
+        "Mortimer Wheeler",
+        "John Marshall",
+        "Daya Ram Sahni",
+        "R. D. Banerji"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "R. D. Banerji found Mohenjo-daro in 1922. Daya Ram Sahni excavated Harappa in 1921, and John Marshall directed the Archaeological Survey at the time."
+    },
+    {
+      "id": "SSCCPO-T1-045",
+      "section": "ga",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Physics",
+      "stem": "What causes an echo?",
+      "options": [
+        "Dispersion of sound",
+        "Absorption of sound",
+        "Refraction of sound",
+        "Reflection of sound"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "An echo is sound reflected back from a large surface such as a cliff or wall. It is heard separately if it returns at least about 0.1 seconds after the original sound."
+    },
+    {
+      "id": "SSCCPO-T1-046",
+      "section": "ga",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "National movement",
+      "stem": "Who presided over the Lahore session of the Indian National Congress in 1929, where Purna Swaraj was adopted as the goal?",
+      "options": [
+        "Motilal Nehru",
+        "Vallabhbhai Patel",
+        "Jawaharlal Nehru",
+        "Subhas Chandra Bose"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Jawaharlal Nehru presided at Lahore in December 1929, and the tricolour was hoisted on the banks of the Ravi. His father Motilal presided over the Calcutta session of 1928."
+    },
+    {
+      "id": "SSCCPO-T1-047",
+      "section": "ga",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Biology",
+      "stem": "Which of these diseases is caused by a virus?",
+      "options": [
+        "Cholera",
+        "Tuberculosis",
+        "Typhoid",
+        "Rabies"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Rabies is caused by a virus spread by animal bites. Tuberculosis, typhoid and cholera are caused by bacteria."
+    },
+    {
+      "id": "SSCCPO-T1-048",
+      "section": "ga",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Neighbouring countries",
+      "stem": "Which Indian state shares borders with Nepal, Bhutan and China?",
+      "options": [
+        "Arunachal Pradesh",
+        "Uttarakhand",
+        "West Bengal",
+        "Sikkim"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Sikkim borders Nepal to the west, Bhutan to the east and the Tibet region of China to the north. West Bengal borders Nepal, Bhutan and Bangladesh; Arunachal Pradesh borders Bhutan, China and Myanmar."
+    },
+    {
+      "id": "SSCCPO-T1-049",
+      "section": "ga",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Indian geography",
+      "stem": "Vembanad Lake, with the Kuttanad backwaters on its southern side, is in which state?",
+      "options": [
+        "Tamil Nadu",
+        "Goa",
+        "Kerala",
+        "Karnataka"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Vembanad, often called the longest lake in India, lies in Kerala between Kochi and Alappuzha. Kuttanad, the rice bowl of Kerala, farms land below sea level beside it."
+    },
+    {
+      "id": "SSCCPO-T1-050",
+      "section": "ga",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoHistory",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Constitution",
+      "stem": "Under which Article can the Supreme Court review its own judgment or order?",
+      "options": [
+        "Article 131",
+        "Article 137",
+        "Article 136",
+        "Article 143"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Article 137 gives the Supreme Court power to review its own judgments. Article 136 is special leave to appeal, Article 131 its original jurisdiction and Article 143 the President's reference."
+    },
+    {
+      "id": "SSCCPO-T1-051",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Percentage",
+      "stem": "The population of a town rose by 10% in one year and fell by 10% the next year. It is now 29,700. What was it two years ago?",
+      "options": [
+        "29,403",
+        "29,700",
+        "30,000",
+        "31,000"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The population was multiplied by 1.1 and then 0.9, that is by 0.99. So the original was 29,700 ÷ 0.99 = 30,000. A 10% rise and a 10% fall do not cancel out."
+    },
+    {
+      "id": "SSCCPO-T1-052",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoAdvanced",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Algebra",
+      "stem": "If x² + 1/x² = 62 and x is positive, what is the value of x + 1/x?",
+      "options": [
+        "4",
+        "6",
+        "7",
+        "8"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "(x + 1/x)² = x² + 2 + 1/x² = 64, so x + 1/x = 8. Subtracting 2 instead would give the square root of 60, which is not a whole number."
+    },
+    {
+      "id": "SSCCPO-T1-053",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Profit and loss",
+      "stem": "By selling an article for ₹1,064 a trader gains 12%. At what price should he sell it to gain 20%?",
+      "options": [
+        "₹1,120",
+        "₹1,140",
+        "₹1,149",
+        "₹1,160"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Cost price = 1,064 ÷ 1.12 = ₹950. For a 20% gain he must sell at 950 x 1.2 = ₹1,140. Adding 8% to ₹1,064 gives about ₹1,149, which works on the wrong base."
+    },
+    {
+      "id": "SSCCPO-T1-054",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoAdvanced",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Algebra",
+      "stem": "If a + b = 9 and ab = 14, what is the value of a³ + b³?",
+      "options": [
+        "351",
+        "378",
+        "405",
+        "729"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "a³ + b³ = (a + b)³ - 3ab(a + b) = 729 - 3 x 14 x 9 = 729 - 378 = 351. (The numbers are 2 and 7: 8 + 343 = 351.)"
+    },
+    {
+      "id": "SSCCPO-T1-055",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Discount",
+      "stem": "What single discount is equal to two successive discounts of 20% and 15%?",
+      "options": [
+        "32%",
+        "34%",
+        "35%",
+        "40%"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "After both discounts the buyer pays 0.80 x 0.85 = 0.68 of the price, so the single discount is 32%. Simply adding gives 35%, which overstates it."
+    },
+    {
+      "id": "SSCCPO-T1-056",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoAdvanced",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Linear graphs",
+      "stem": "The line 3x + 4y = 24 meets the x-axis at A and the y-axis at B. What is the area of triangle OAB, where O is the origin?",
+      "options": [
+        "12 sq units",
+        "14 sq units",
+        "24 sq units",
+        "48 sq units"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Putting y = 0 gives A = (8, 0) and putting x = 0 gives B = (0, 6). The area is 1/2 x 8 x 6 = 24 square units."
+    },
+    {
+      "id": "SSCCPO-T1-057",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Ratio and proportion",
+      "stem": "The ratio of boys to girls in a class is 5 : 3. When 8 more girls join, the ratio becomes 5 : 4. How many boys are there?",
+      "options": [
+        "24",
+        "32",
+        "35",
+        "40"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Let boys = 5x and girls = 3x. Then 5x ÷ (3x + 8) = 5/4, so 20x = 15x + 40 and x = 8. Boys = 40."
+    },
+    {
+      "id": "SSCCPO-T1-058",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoAdvanced",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Triangle centres",
+      "stem": "What is the point where the three medians of a triangle meet called?",
+      "options": [
+        "Centroid",
+        "Orthocentre",
+        "Circumcentre",
+        "Incentre"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The medians meet at the centroid, which divides each median in the ratio 2 : 1. Angle bisectors meet at the incentre and altitudes at the orthocentre."
+    },
+    {
+      "id": "SSCCPO-T1-059",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Averages",
+      "stem": "The average age of 30 constables is 26 years. When the inspector's age is included, the average rises by 1 year. What is the inspector's age?",
+      "options": [
+        "27 years",
+        "55 years",
+        "56 years",
+        "57 years"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "31 people now average 27, a total of 837 years. The 30 constables total 780, so the inspector is 837 - 780 = 57. Shortcut: 27 + 30 x 1 = 57."
+    },
+    {
+      "id": "SSCCPO-T1-060",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoAdvanced",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Similarity",
+      "stem": "In triangle ABC, DE is parallel to BC, with D on AB and E on AC. If AD = 4 cm, DB = 6 cm and AE = 6 cm, what is EC?",
+      "options": [
+        "4 cm",
+        "6 cm",
+        "9 cm",
+        "10 cm"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "By the basic proportionality theorem AD/DB = AE/EC, so 4/6 = 6/EC and EC = 9 cm."
+    },
+    {
+      "id": "SSCCPO-T1-061",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Simple interest",
+      "stem": "A sum of money doubles itself in 8 years at simple interest. In how many years will it become four times itself?",
+      "options": [
+        "12 years",
+        "16 years",
+        "20 years",
+        "24 years"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Doubling means interest of 100% in 8 years, so 12.5% a year. To become four times, the interest must be 300%, which takes 300 ÷ 12.5 = 24 years."
+    },
+    {
+      "id": "SSCCPO-T1-062",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoAdvanced",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Circles",
+      "stem": "An arc of a circle subtends an angle of 130° at the centre. What angle does it subtend at a point on the remaining part of the circle?",
+      "options": [
+        "50°",
+        "65°",
+        "115°",
+        "130°"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The angle at the circumference is half the angle at the centre on the same arc: 130 ÷ 2 = 65°."
+    },
+    {
+      "id": "SSCCPO-T1-063",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Compound interest",
+      "stem": "What is the difference between the compound interest and the simple interest on ₹12,500 for 2 years at 6% per annum?",
+      "options": [
+        "₹30",
+        "₹45",
+        "₹90",
+        "₹750"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "For 2 years the difference is P x (R/100) squared = 12,500 x 0.06 x 0.06 = ₹45. It is the interest earned in year 2 on the first year's interest of ₹750. ₹90 doubles the correct figure."
+    },
+    {
+      "id": "SSCCPO-T1-064",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoAdvanced",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Tangents",
+      "stem": "A point is 17 cm from the centre of a circle of radius 8 cm. What is the length of a tangent drawn from the point to the circle?",
+      "options": [
+        "9 cm",
+        "15 cm",
+        "17 cm",
+        "25 cm"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The tangent is perpendicular to the radius, so its length is the square root of 17² - 8² = 289 - 64 = 225, which is 15 cm."
+    },
+    {
+      "id": "SSCCPO-T1-065",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoArith",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Partnership",
+      "stem": "A invests ₹40,000 and B invests ₹60,000 in a business. After 6 months A adds ₹20,000 more. Out of a year's profit of ₹33,000, what is A's share?",
+      "options": [
+        "₹15,000",
+        "₹16,500",
+        "₹18,000",
+        "₹22,000"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "A's capital-months = 40,000 x 6 + 60,000 x 6 = 6,00,000; B's = 60,000 x 12 = 7,20,000. The ratio is 5 : 6, so A gets 33,000 x 5/11 = ₹15,000."
+    },
+    {
+      "id": "SSCCPO-T1-066",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoAdvanced",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Mensuration",
+      "stem": "What is the volume of a right circular cone with radius 7 cm and height 12 cm?",
+      "options": [
+        "308 cubic cm",
+        "528 cubic cm",
+        "616 cubic cm",
+        "1,848 cubic cm"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Volume = 1/3 x πr²h = 1/3 x 22/7 x 49 x 12 = 616 cubic cm. Forgetting the 1/3 gives 1,848, the volume of a cylinder of the same size."
+    },
+    {
+      "id": "SSCCPO-T1-067",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Mixture and alligation",
+      "stem": "In what ratio must wheat at ₹32 per kg be mixed with wheat at ₹47 per kg to get a mixture worth ₹38 per kg?",
+      "options": [
+        "9 : 4",
+        "2 : 3",
+        "3 : 2",
+        "5 : 4"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "By alligation, cheaper : dearer = (47 - 38) : (38 - 32) = 9 : 6 = 3 : 2. More of the cheaper wheat is needed because ₹38 is nearer ₹32."
+    },
+    {
+      "id": "SSCCPO-T1-068",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoAdvanced",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Mensuration",
+      "stem": "What is the total surface area of a solid hemisphere of radius 7 cm?",
+      "options": [
+        "154 sq cm",
+        "308 sq cm",
+        "462 sq cm",
+        "616 sq cm"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Total surface area = curved surface 2πr² + flat base πr² = 3πr² = 3 x 22/7 x 49 = 462 sq cm. 308 sq cm is the curved surface alone."
+    },
+    {
+      "id": "SSCCPO-T1-069",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoArith",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Time and work",
+      "stem": "A and B can finish a job in 12 days, B and C in 15 days, and A and C in 20 days. How long will A, B and C take working together?",
+      "options": [
+        "5 days",
+        "10 days",
+        "12 days",
+        "15 days"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Adding the three pairs: 1/12 + 1/15 + 1/20 = 12/60 = 1/5, which is twice the work of A, B and C in a day. So together they do 1/10 a day and need 10 days."
+    },
+    {
+      "id": "SSCCPO-T1-070",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoAdvanced",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Trigonometry",
+      "stem": "If sin θ = 3/5 and θ is acute, what is the value of tan θ + sec θ?",
+      "options": [
+        "3/2",
+        "8/5",
+        "7/4",
+        "2"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "With sin θ = 3/5, cos θ = 4/5, so tan θ = 3/4 and sec θ = 5/4. Their sum is 8/4 = 2."
+    },
+    {
+      "id": "SSCCPO-T1-071",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Trains",
+      "stem": "A train 240 m long passes a pole in 16 seconds. How long will it take to cross a platform 360 m long?",
+      "options": [
+        "16 s",
+        "24 s",
+        "36 s",
+        "40 s"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Speed = 240 ÷ 16 = 15 m/s. To cross the platform it covers 240 + 360 = 600 m, which takes 600 ÷ 15 = 40 s. Using only the platform length gives 24 s."
+    },
+    {
+      "id": "SSCCPO-T1-072",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoAdvanced",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Heights and distances",
+      "stem": "From a point 25 m from the foot of a tower on level ground, the angle of elevation of the top is 60°. What is the height of the tower?",
+      "options": [
+        "50 m",
+        "25√3 m",
+        "25 m",
+        "25/√3 m"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "tan 60° = height ÷ 25, and tan 60° = √3, so the height is 25√3 m (about 43.3 m). 25/√3 m comes from using tan 30°."
+    },
+    {
+      "id": "SSCCPO-T1-073",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Boats and streams",
+      "stem": "A boat goes 42 km downstream in 3 hours and 20 km upstream in 2 hours. What is the speed of the stream?",
+      "options": [
+        "2 km/h",
+        "4 km/h",
+        "5 km/h",
+        "12 km/h"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Downstream speed = 42 ÷ 3 = 14 km/h and upstream speed = 20 ÷ 2 = 10 km/h. Stream speed = (14 - 10) ÷ 2 = 2 km/h; the boat's own speed is 12 km/h. 4 km/h forgets to halve."
+    },
+    {
+      "id": "SSCCPO-T1-074",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoAdvanced",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stem": "A police station recorded 240 complaints in 2022, 300 in 2023, 270 in 2024 and 330 in 2025. By what percentage did the number rise from 2022 to 2025?",
+      "options": [
+        "10%",
+        "27.3%",
+        "30%",
+        "37.5%"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "The rise is 330 - 240 = 90 on a base of 240, so 90 ÷ 240 x 100 = 37.5%. Dividing by 330 instead gives 27.3%, and 10% is only the last year's rise (300 to 330)."
+    },
+    {
+      "id": "SSCCPO-T1-075",
+      "section": "qa",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "HCF and LCM",
+      "stem": "The HCF of two numbers is 18 and their LCM is 540. If one number is 108, what is the other?",
+      "options": [
+        "36",
+        "54",
+        "72",
+        "90"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "The product of two numbers equals LCM x HCF, so the other number is 540 x 18 ÷ 108 = 90."
+    },
+    {
+      "id": "SSCCPO-T1-076",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Spot the error",
+      "stem": "The sentence below is divided into parts. Select the part that contains a grammatical error. If there is no error, select 'No error'.\n\nEither the driver or his helpers / has to stay / with the truck at night.",
+      "options": [
+        "Either the driver or his helpers",
+        "has to stay",
+        "with the truck at night",
+        "No error"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "With 'either ... or', the verb agrees with the nearer subject. 'Helpers' is plural, so the verb should be 'have to stay'."
+    },
+    {
+      "id": "SSCCPO-T1-077",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Synonyms",
+      "stem": "Select the most appropriate synonym of the given word.\n\nPrudent",
+      "options": [
+        "Proud",
+        "Reckless",
+        "Sensible",
+        "Silent"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Prudent means careful and sensible, thinking ahead before acting. 'Reckless' is its opposite."
+    },
+    {
+      "id": "SSCCPO-T1-078",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Fill in the blanks",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nThe court acquitted him ______ all the charges.",
+      "options": [
+        "with",
+        "for",
+        "from",
+        "of"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The verb 'acquit' takes 'of': a person is acquitted of a charge. 'Charged with' and 'accused of' are other fixed pairs."
+    },
+    {
+      "id": "SSCCPO-T1-079",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Antonyms",
+      "stem": "Select the most appropriate antonym of the given word.\n\nLenient",
+      "options": [
+        "Strict",
+        "Willing",
+        "Lazy",
+        "Gentle"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Lenient means mild in punishment or rules; its opposite is strict. 'Gentle' is close to a synonym."
+    },
+    {
+      "id": "SSCCPO-T1-080",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Fill in the blanks",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nShe is ______ honest officer who never takes a bribe.",
+      "options": [
+        "an",
+        "the",
+        "a",
+        "one"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "'Honest' begins with a vowel sound because the h is silent, so it takes 'an'. The choice of article depends on sound, not spelling."
+    },
+    {
+      "id": "SSCCPO-T1-081",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Idioms and phrases",
+      "stem": "Select the most appropriate meaning of the given idiom.\n\nTo turn a blind eye",
+      "options": [
+        "To pretend not to notice",
+        "To be very angry",
+        "To stare at something",
+        "To lose one's sight"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "To turn a blind eye is to ignore something wrong on purpose, as an official might ignore a rule being broken."
+    },
+    {
+      "id": "SSCCPO-T1-082",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Improvement of sentences",
+      "stem": "Select the most appropriate option to replace the underlined part of the sentence. If no improvement is needed, select 'No improvement'.\n\nIf he __would have informed__ us earlier, we could have helped him.",
+      "options": [
+        "has informed",
+        "informs",
+        "had informed",
+        "No improvement"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "An unreal condition about the past takes the past perfect in the 'if' clause: 'If he had informed us earlier'. 'Would have' belongs only in the main clause."
+    },
+    {
+      "id": "SSCCPO-T1-083",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "One-word substitution",
+      "stem": "Select the option that can be used as a one-word substitute for the given group of words.\n\nA person who saw a crime happen and can describe it",
+      "options": [
+        "Complainant",
+        "Eyewitness",
+        "Informer",
+        "Spectator"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "An eyewitness saw the event with his or her own eyes and can describe it. A spectator watches a show or match, a complainant makes a complaint and an informer passes on information to the police."
+    },
+    {
+      "id": "SSCCPO-T1-084",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Active and passive voice",
+      "stem": "Select the passive form of the sentence.\n\nThe police have arrested the smugglers.",
+      "options": [
+        "The smugglers have been arrested by the police.",
+        "The smugglers were arrested by the police.",
+        "The smugglers had been arrested by the police.",
+        "The smugglers are arrested by the police."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The active verb is present perfect ('have arrested'), so the passive keeps that tense: 'have been arrested'. 'Were arrested' is simple past."
+    },
+    {
+      "id": "SSCCPO-T1-085",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Spellings",
+      "stem": "Select the correctly spelt word.\n\n(a close watch kept on a suspect or a place)",
+      "options": [
+        "Servaillance",
+        "Surveillance",
+        "Surveilance",
+        "Survelliance"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Surveillance (close watch kept on someone) is spelt s-u-r-v-e-i-l-l-a-n-c-e: 'veil' in the middle, double l."
+    },
+    {
+      "id": "SSCCPO-T1-086",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Direct and indirect narration",
+      "stem": "Select the correct indirect form of the sentence.\n\nThe officer said to me, \"Where are you going?\"",
+      "options": [
+        "The officer asked me that where I was going.",
+        "The officer said to me where I am going.",
+        "The officer asked me where was I going.",
+        "The officer asked me where I was going."
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A question becomes 'asked' with statement word order (subject before verb) and the tense moves back: 'where I was going'. No 'that' is used before a question word."
+    },
+    {
+      "id": "SSCCPO-T1-087",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoVocab",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Synonyms",
+      "stem": "Select the most appropriate synonym of the given word.\n\nLucid",
+      "options": [
+        "Loud",
+        "Clear",
+        "Dull",
+        "Lucky"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Lucid means clear and easy to understand, as in a lucid explanation. 'Lucky' only looks similar, and 'dull' is close to the opposite."
+    },
+    {
+      "id": "SSCCPO-T1-088",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Spot the error",
+      "stem": "The sentence below is divided into parts. Select the part that contains a grammatical error. If there is no error, select 'No error'.\n\nEach of the candidates / have been asked / to bring an identity card.",
+      "options": [
+        "Each of the candidates",
+        "have been asked",
+        "to bring an identity card",
+        "No error"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "'Each' is singular, even when followed by 'of the candidates', so the verb must be 'has been asked'."
+    },
+    {
+      "id": "SSCCPO-T1-089",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Antonyms",
+      "stem": "Select the most appropriate antonym of the given word.\n\nConceal",
+      "options": [
+        "Reveal",
+        "Ignore",
+        "Hide",
+        "Cover"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "To conceal is to hide something; to reveal is to show or make it known. 'Hide' and 'cover' are synonyms."
+    },
+    {
+      "id": "SSCCPO-T1-090",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Fill in the blanks",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nThe suspect has been absconding ______ three weeks.",
+      "options": [
+        "by",
+        "since",
+        "for",
+        "from"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "'For' is used with a length of time (three weeks) and the present perfect continuous. 'Since' needs a point in time, such as 'since 3 May'."
+    },
+    {
+      "id": "SSCCPO-T1-091",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Sentence completion",
+      "stem": "Select the most appropriate option to complete the sentence.\n\nThe evidence against him was so ______ that the court had to let him go.",
+      "options": [
+        "detailed",
+        "flimsy",
+        "solid",
+        "fresh"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The court let him go, so the evidence must have been weak, which 'flimsy' means. Solid or detailed evidence would lead to a conviction."
+    },
+    {
+      "id": "SSCCPO-T1-092",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Sentence structure",
+      "stem": "Select the grammatically correct sentence beginning with 'Hardly'.",
+      "options": [
+        "Hardly did he left when it rained.",
+        "Hardly had he left than it rained.",
+        "Hardly had he left when it rained.",
+        "Hardly he had left when it rained."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "After 'hardly' at the start, the verb comes before the subject ('had he left'), and 'hardly' is followed by 'when', not 'than'."
+    },
+    {
+      "id": "SSCCPO-T1-093",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Cloze test",
+      "stimulusId": "SSCCPO-CL1",
+      "stem": "Cloze passage 1: select the most appropriate word for blank (1).",
+      "options": [
+        "call",
+        "called",
+        "calls",
+        "calling"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "After 'is' the passive needs the past participle: 'what is called community policing'."
+    },
+    {
+      "id": "SSCCPO-T1-094",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Cloze test",
+      "stimulusId": "SSCCPO-CL1",
+      "stem": "Cloze passage 1: select the most appropriate word for blank (2).",
+      "options": [
+        "between",
+        "among",
+        "beside",
+        "across"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "'Between' is used for the relationship of two parties, the police and the people. 'Among' is for three or more."
+    },
+    {
+      "id": "SSCCPO-T1-095",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Cloze test",
+      "stimulusId": "SSCCPO-CL1",
+      "stem": "Cloze passage 1: select the most appropriate word for blank (3).",
+      "options": [
+        "reports",
+        "reporting",
+        "reported",
+        "report"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "'More likely to' is followed by the base form of the verb: 'more likely to report crimes'."
+    },
+    {
+      "id": "SSCCPO-T1-096",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Cloze test",
+      "stimulusId": "SSCCPO-CL1",
+      "stem": "Cloze passage 1: select the most appropriate word for blank (4).",
+      "options": [
+        "promote",
+        "prevent",
+        "provoke",
+        "permit"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The passage says that trust helps the police stop trouble early, so they can 'prevent' problems from becoming serious. 'Provoke' and 'promote' mean the opposite."
+    },
+    {
+      "id": "SSCCPO-T1-097",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "SSCCPO-RC1",
+      "stem": "Reading passage 1: what is the main idea of the passage?",
+      "options": [
+        "DNA tests are very costly",
+        "Fingerprints are now outdated",
+        "Most crimes are never solved",
+        "Forensic science aids investigation"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The passage describes how fingerprints, DNA and digital records help investigators find the truth. It never says fingerprints are outdated or that tests are costly."
+    },
+    {
+      "id": "SSCCPO-T1-098",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "SSCCPO-RC1",
+      "stem": "Reading passage 1: according to the passage, why must a crime scene be protected?",
+      "options": [
+        "So evidence is not spoiled",
+        "So the press can take photos",
+        "So the suspect can return",
+        "So the area can be cleaned"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The passage says the scene must be sealed because careless footsteps or handling can destroy or contaminate the evidence."
+    },
+    {
+      "id": "SSCCPO-T1-099",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "SSCCPO-RC1",
+      "stem": "Reading passage 1: what does the word 'contaminate' mean as used in the passage?",
+      "options": [
+        "Collect quickly",
+        "Count carefully",
+        "Store safely",
+        "Spoil by mixing in"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "To contaminate is to make something impure by adding something to it, as a careless touch can add new traces to evidence."
+    },
+    {
+      "id": "SSCCPO-T1-100",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "ssccpoVocab",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "SSCCPO-RC1",
+      "stem": "Reading passage 1: which statement does the passage support?",
+      "options": [
+        "Science needs careful handling",
+        "Labs make no mistakes",
+        "Old methods never worked",
+        "Science can replace officers"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The last paragraph says science is only as good as the care of the people who collect and handle the evidence. It does not say science replaces officers."
+    },
+    {
+      "id": "SSCCPO-T2-001",
+      "section": "gi",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Number analogy",
+      "stem": "Select the option that is related to the third term in the same way as the second term is related to the first term.\n\n4 : 65 :: 6 : ?",
+      "options": [
+        "217",
+        "219",
+        "222",
+        "343"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The rule is the cube plus 1: 4 cubed is 64 and 64 + 1 = 65. 6 cubed is 216, so the answer is 217. 343 is 7 cubed."
+    },
+    {
+      "id": "SSCCPO-T2-002",
+      "section": "gi",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoLogic",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Blood relations",
+      "stem": "Mohan is the only son of Ramesh. Ritu is the daughter-in-law of Ramesh. How is Ritu related to Mohan?",
+      "options": [
+        "Cousin",
+        "Wife",
+        "Sister-in-law",
+        "Sister"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A daughter-in-law is a son's wife. Ramesh has only one son, Mohan, so Ritu must be Mohan's wife."
+    },
+    {
+      "id": "SSCCPO-T2-003",
+      "section": "gi",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Semantic analogy",
+      "stem": "Select the option that is related to the third term in the same way as the second term is related to the first term.\n\nOrnithology : Birds :: Entomology : ?",
+      "options": [
+        "Fossils",
+        "Fishes",
+        "Words",
+        "Insects"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Ornithology is the study of birds and entomology the study of insects. The study of words and their origins is etymology, a common mix-up."
+    },
+    {
+      "id": "SSCCPO-T2-004",
+      "section": "gi",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Directions",
+      "stem": "A patrol jeep goes 10 km east, turns left and goes 4 km, turns left and goes 7 km, then turns left and goes 8 km. Where is it now from its starting point?",
+      "options": [
+        "5 km south-east",
+        "5 km south-west",
+        "5 km north-east",
+        "7 km south-east"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "It ends 10 - 7 = 3 km east and 8 - 4 = 4 km south of the start. The distance is the square root of 9 + 16 = 5 km, to the south-east."
+    },
+    {
+      "id": "SSCCPO-T2-005",
+      "section": "gi",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Semantic classification",
+      "stem": "Select the odd one out.\n\nLucknow, Patna, Bhopal, Indore",
+      "options": [
+        "Indore",
+        "Patna",
+        "Lucknow",
+        "Bhopal"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Lucknow, Patna and Bhopal are state capitals (Uttar Pradesh, Bihar and Madhya Pradesh). Indore is a large city in Madhya Pradesh but not its capital."
+    },
+    {
+      "id": "SSCCPO-T2-006",
+      "section": "gi",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Ranking",
+      "stem": "Among the students of a class who passed an exam, Seema is 8th from the top and 31st from the bottom. 6 students failed and 4 were absent. How many students are in the class?",
+      "options": [
+        "38",
+        "42",
+        "44",
+        "48"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Students who passed = 8 + 31 - 1 = 38. Adding 6 who failed and 4 who were absent gives 48."
+    },
+    {
+      "id": "SSCCPO-T2-007",
+      "section": "gi",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Letter series",
+      "stem": "Select the term that will come next in the series.\n\nZ, W, S, N, ?",
+      "options": [
+        "G",
+        "H",
+        "J",
+        "I"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The letters step back by 3, 4, 5 and then 6 places: Z (26), W (23), S (19), N (14), so the next is 14 - 6 = 8, which is H."
+    },
+    {
+      "id": "SSCCPO-T2-008",
+      "section": "gi",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Syllogism",
+      "stem": "Read the statements and decide which conclusion(s) logically follow, even if the statements seem to be at variance with known facts.\n\nStatements: No constable is careless. All guards are constables.\nConclusions: I. No guard is careless. II. Some careless people are guards.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Both I and II follow",
+        "Neither follows"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Every guard is a constable and no constable is careless, so no guard is careless and I follows. II contradicts I, so it does not follow."
+    },
+    {
+      "id": "SSCCPO-T2-009",
+      "section": "gi",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "Select the term that will come next in the series.\n\n7, 12, 22, 42, 82, ?",
+      "options": [
+        "122",
+        "158",
+        "160",
+        "162"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Each term is double the previous term minus 2: 7 x 2 - 2 = 12, 12 x 2 - 2 = 22, and so on, so 82 x 2 - 2 = 162. The differences 5, 10, 20, 40 also double, giving 82 + 80 = 162."
+    },
+    {
+      "id": "SSCCPO-T2-010",
+      "section": "gi",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoLogic",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Calendar",
+      "stem": "If the 3rd day of a month is a Monday, what day of the week is the 29th of the same month?",
+      "options": [
+        "Sunday",
+        "Monday",
+        "Friday",
+        "Saturday"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The 29th is 26 days after the 3rd. 26 = 3 x 7 + 5, so the day moves 5 places on from Monday, to Saturday."
+    },
+    {
+      "id": "SSCCPO-T2-011",
+      "section": "gi",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Coding-decoding",
+      "stem": "In a certain code, MOBILE is written as 13-15-2-9-12-5. How is TABLET written in that code?",
+      "options": [
+        "20-1-2-12-4-20",
+        "19-1-2-12-5-20",
+        "20-1-2-12-5-20",
+        "20-2-1-12-5-20"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Each letter is written as its position in the alphabet: T = 20, A = 1, B = 2, L = 12, E = 5, T = 20."
+    },
+    {
+      "id": "SSCCPO-T2-012",
+      "section": "gi",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoLogic",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Clocks",
+      "stem": "At what time between 4 o'clock and 5 o'clock are the hands of a clock together?",
+      "options": [
+        "21 9/11 minutes past 4",
+        "20 minutes past 4",
+        "21 3/11 minutes past 4",
+        "22 2/11 minutes past 4"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "At 4 o'clock the minute hand is 20 minute spaces behind and gains 11/12 of a space each minute. It catches up after 20 ÷ (11/12) = 240/11 = 21 9/11 minutes."
+    },
+    {
+      "id": "SSCCPO-T2-013",
+      "section": "gi",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Coding-decoding",
+      "stem": "In a certain code, CAB is written as 6. How is BED written in that code?",
+      "options": [
+        "11",
+        "20",
+        "30",
+        "40"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "The code multiplies the alphabet positions: C x A x B = 3 x 1 x 2 = 6. BED = 2 x 5 x 4 = 40. Adding them would give 11."
+    },
+    {
+      "id": "SSCCPO-T2-014",
+      "section": "gi",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Statement and conclusion",
+      "stem": "Statement: All candidates must report at the venue by 8 a.m.; the gates close at 8:30 a.m.\nConclusions: I. A candidate who arrives at 8:45 a.m. will not be allowed in. II. The exam begins at 8 a.m.\n\nWhich conclusion(s) follow?",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Both I and II follow",
+        "Neither follows"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The gates are closed by 8:45 a.m., so I follows. Reporting time is not the start time; the exam may begin later, so II does not follow."
+    },
+    {
+      "id": "SSCCPO-T2-015",
+      "section": "gi",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Word building",
+      "stem": "Which word cannot be formed using the letters of the word MANAGEMENT?",
+      "options": [
+        "MENTAL",
+        "MAGNET",
+        "MEANT",
+        "AGENT"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "MANAGEMENT has no letter L, so MENTAL cannot be formed. MAGNET, AGENT and MEANT use only its letters."
+    },
+    {
+      "id": "SSCCPO-T2-016",
+      "section": "gi",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Venn relations",
+      "stem": "In which group do all three classes overlap, so that some members belong to all three?",
+      "options": [
+        "Cats, dogs, animals",
+        "Months, weeks, days",
+        "Iron, metals, gold",
+        "Indians, women, doctors"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Some Indians are women who are also doctors. Cats and dogs never overlap, iron and gold never overlap, and months, weeks and days are separate units."
+    },
+    {
+      "id": "SSCCPO-T2-017",
+      "section": "gi",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Dictionary order",
+      "stem": "If the words are arranged in dictionary order, which word comes third?\n\nPattern, Patent, Patrol, Pastel, Patron",
+      "options": [
+        "Patron",
+        "Patent",
+        "Patrol",
+        "Pattern"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The order is Pastel, Patent, Patrol, Patron, Pattern: 's' comes before 't' in the third letter, then 'pate' before 'patr' before 'patt', and Patrol before Patron because 'l' comes before 'n'."
+    },
+    {
+      "id": "SSCCPO-T2-018",
+      "section": "gi",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Seating arrangement",
+      "stem": "Six people P, Q, R, S, T and U sit around a round table facing the centre. P is opposite S. Q is to the immediate right of P. T is opposite Q. Who is opposite R?",
+      "options": [
+        "P",
+        "T",
+        "Q",
+        "U"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "P and S take one opposite pair and Q and T another. R and U are left for the third pair of opposite seats, so R faces U whichever side Q is on."
+    },
+    {
+      "id": "SSCCPO-T2-019",
+      "section": "gi",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Mathematical operations",
+      "stem": "If 'P' means '+', 'Q' means 'x', 'R' means '-' and 'S' means '÷', what is the value of the expression?\n\n36 S 4 P 7 Q 3 R 10",
+      "options": [
+        "20",
+        "23",
+        "27",
+        "38"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The expression is 36 ÷ 4 + 7 x 3 - 10. Division and multiplication first: 9 + 21 - 10 = 20. Working left to right without that rule gives (9 + 7) x 3 - 10 = 38."
+    },
+    {
+      "id": "SSCCPO-T2-020",
+      "section": "gi",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Emotional intelligence",
+      "stem": "A junior officer in your team keeps making the same mistake in his daily reports. What is the most effective response?",
+      "options": [
+        "Show him how to get it right",
+        "Ignore it since it is minor",
+        "Correct it yourself every time",
+        "Warn him in front of the team"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Showing him the correct way stops the error at its source and builds his skill. Fixing it yourself or shaming him in public leaves the problem in place."
+    },
+    {
+      "id": "SSCCPO-T2-021",
+      "section": "gi",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Missing number",
+      "stem": "Find the missing number that follows the same rule.\n\n3 → 11, 5 → 27, 7 → ?",
+      "options": [
+        "49",
+        "51",
+        "53",
+        "56"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Each number is squared and 2 is added: 9 + 2 = 11, 25 + 2 = 27, so 49 + 2 = 51. 49 forgets to add the 2."
+    },
+    {
+      "id": "SSCCPO-T2-022",
+      "section": "gi",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Inequalities",
+      "stem": "If A ≥ B > C, C = D and D < E, which of these is definitely true?",
+      "options": [
+        "C > B",
+        "A > D",
+        "E > A",
+        "B < D"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A ≥ B > C = D, so A > D. B is greater than D, not less; the relation between E and A is unknown; and C is less than B."
+    },
+    {
+      "id": "SSCCPO-T2-023",
+      "section": "gi",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Number classification",
+      "stem": "Select the pair that does not follow the same rule as the others.",
+      "options": [
+        "3 and 27",
+        "4 and 64",
+        "5 and 125",
+        "6 and 206"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "In each pair the second number is the cube of the first: 27, 64 and 125. 6 cubed is 216, not 206."
+    },
+    {
+      "id": "SSCCPO-T2-024",
+      "section": "gi",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoLogic",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Order and ranking",
+      "stem": "Among five constables, Pooja is heavier than Ritu but lighter than Seema. Tara is lighter than Ritu. Uma is heavier than Seema. Who is the lightest?",
+      "options": [
+        "Ritu",
+        "Seema",
+        "Pooja",
+        "Tara"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "From heaviest to lightest the order is Uma, Seema, Pooja, Ritu, Tara. Ritu is lighter than Pooja but heavier than Tara."
+    },
+    {
+      "id": "SSCCPO-T2-025",
+      "section": "gi",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoVerbal",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Coding-decoding",
+      "stem": "In a certain code, 'ki la pa' means 'police keep order', 'pa zo ru' means 'order and law' and 'la mu' means 'keep calm'. Which code means 'police'?",
+      "options": [
+        "mu",
+        "pa",
+        "ki",
+        "la"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "'Order' is common to the first two sentences, so pa = order. 'Keep' is common to the first and third, so la = keep. The remaining code in the first sentence, ki, means police."
+    },
+    {
+      "id": "SSCCPO-T2-026",
+      "section": "ga",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoHistory",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Parliament",
+      "stem": "Under which Article can Parliament make laws on a State List subject if the Rajya Sabha passes a resolution saying it is in the national interest?",
+      "options": [
+        "Article 250",
+        "Article 252",
+        "Article 253",
+        "Article 249"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Article 249 needs a Rajya Sabha resolution backed by two-thirds of members present and voting. Article 250 applies during an emergency, Article 252 when states consent and Article 253 to carry out international agreements."
+    },
+    {
+      "id": "SSCCPO-T2-027",
+      "section": "ga",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Rivers",
+      "stem": "The Rihand Dam, whose reservoir is the Govind Ballabh Pant Sagar, is in which state?",
+      "options": [
+        "Jharkhand",
+        "Bihar",
+        "Madhya Pradesh",
+        "Uttar Pradesh"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The Rihand Dam is on the Rihand river in Sonbhadra district of Uttar Pradesh; its reservoir reaches into Madhya Pradesh. It is one of India's largest artificial lakes."
+    },
+    {
+      "id": "SSCCPO-T2-028",
+      "section": "ga",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Internal security",
+      "stem": "Which Central Armed Police Force guards India's borders with Nepal and Bhutan?",
+      "options": [
+        "Sashastra Seema Bal",
+        "Indo-Tibetan Border Police",
+        "Border Security Force",
+        "Assam Rifles"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The Sashastra Seema Bal is the border guarding force for Nepal (since 2001) and Bhutan (since 2004). The BSF guards the Pakistan and Bangladesh borders, the ITBP the China border and the Assam Rifles the Myanmar border."
+    },
+    {
+      "id": "SSCCPO-T2-029",
+      "section": "ga",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Agriculture",
+      "stem": "What is sericulture?",
+      "options": [
+        "Keeping honeybees",
+        "Growing flowers",
+        "Breeding fish",
+        "Rearing silkworms"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Sericulture is the rearing of silkworms to produce silk. Keeping bees is apiculture, breeding fish pisciculture and growing flowers floriculture."
+    },
+    {
+      "id": "SSCCPO-T2-030",
+      "section": "ga",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Medieval history",
+      "stem": "The Treaty of Purandar of 1665 was signed between Shivaji and which Mughal commander?",
+      "options": [
+        "Shaista Khan",
+        "Raja Jaswant Singh",
+        "Afzal Khan",
+        "Raja Jai Singh"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Raja Jai Singh of Amber besieged Purandar and made Shivaji give up 23 forts under the treaty. Afzal Khan was a Bijapur general, and Shaista Khan was attacked by Shivaji at Pune in 1663."
+    },
+    {
+      "id": "SSCCPO-T2-031",
+      "section": "ga",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Economy",
+      "stem": "What does the Cash Reserve Ratio (CRR) require banks to do?",
+      "options": [
+        "Keep a share of deposits with RBI",
+        "Keep foreign currency reserves",
+        "Hold gold equal to their loans",
+        "Buy government bonds for all loans"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "CRR is the share of deposits a bank must keep as cash with the Reserve Bank. The share kept in liquid assets such as government securities is the SLR."
+    },
+    {
+      "id": "SSCCPO-T2-032",
+      "section": "ga",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoHistory",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Literature",
+      "stem": "Who wrote the novel Anandamath, which contains the song Vande Mataram?",
+      "options": [
+        "Ishwar Chandra Vidyasagar",
+        "Bankim Chandra Chatterjee",
+        "Sarat Chandra Chatterjee",
+        "Rabindranath Tagore"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Bankim Chandra Chatterjee published Anandamath in 1882. Tagore wrote Jana Gana Mana, the national anthem."
+    },
+    {
+      "id": "SSCCPO-T2-033",
+      "section": "ga",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Physics",
+      "stem": "What is the SI unit of luminous intensity?",
+      "options": [
+        "Lumen",
+        "Dioptre",
+        "Lux",
+        "Candela"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The candela is the SI base unit of luminous intensity. The lumen measures luminous flux, the lux illuminance and the dioptre the power of a lens."
+    },
+    {
+      "id": "SSCCPO-T2-034",
+      "section": "ga",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoHistory",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Culture",
+      "stem": "Wangala, the 'hundred drums' harvest festival, is celebrated by the Garo people of which state?",
+      "options": [
+        "Tripura",
+        "Nagaland",
+        "Meghalaya",
+        "Mizoram"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Wangala is the post-harvest festival of the Garos of Meghalaya, held to thank the sun god. Mizoram's Chapchar Kut and Nagaland's Hornbill Festival are different events."
+    },
+    {
+      "id": "SSCCPO-T2-035",
+      "section": "ga",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Chemistry",
+      "stem": "Malic acid is found mainly in which fruit?",
+      "options": [
+        "Grapes",
+        "Tamarind",
+        "Apples",
+        "Lemons"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Malic acid gives apples their sharp taste. Lemons are rich in citric acid, and tamarind and grapes in tartaric acid."
+    },
+    {
+      "id": "SSCCPO-T2-036",
+      "section": "ga",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoHistory",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Neighbouring countries",
+      "stem": "The Kaladan Multi-Modal Transit Transport Project links Kolkata with Mizoram through which neighbouring country?",
+      "options": [
+        "Myanmar",
+        "Bangladesh",
+        "Nepal",
+        "Bhutan"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The Kaladan project runs by sea from Kolkata to Sittwe port in Myanmar, up the Kaladan river and then by road into Mizoram, giving the north-east a route that avoids the Siliguri corridor."
+    },
+    {
+      "id": "SSCCPO-T2-037",
+      "section": "ga",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Biology",
+      "stem": "Which white blood cells produce antibodies?",
+      "options": [
+        "Eosinophils",
+        "Lymphocytes",
+        "Basophils",
+        "Neutrophils"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "B-lymphocytes make antibodies that mark germs for destruction. Neutrophils engulf bacteria, eosinophils act against parasites and in allergies, and basophils release histamine."
+    },
+    {
+      "id": "SSCCPO-T2-038",
+      "section": "ga",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoHistory",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Ancient history",
+      "stem": "Who wrote the Sanskrit play Mudrarakshasa, about the rise of Chandragupta Maurya?",
+      "options": [
+        "Vishakhadatta",
+        "Kalidasa",
+        "Ashvaghosha",
+        "Banabhatta"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Vishakhadatta's Mudrarakshasa tells how Chanakya won over the minister Rakshasa. Ashvaghosha wrote the Buddhacharita and Banabhatta the Harshacharita."
+    },
+    {
+      "id": "SSCCPO-T2-039",
+      "section": "ga",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Indian geography",
+      "stem": "Which mountain pass connects Sikkim with Tibet?",
+      "options": [
+        "Zoji La",
+        "Nathu La",
+        "Bomdi La",
+        "Shipki La"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Nathu La links Sikkim with Tibet. Zoji La links Srinagar and Leh, Shipki La is in Himachal Pradesh and Bomdi La in Arunachal Pradesh."
+    },
+    {
+      "id": "SSCCPO-T2-040",
+      "section": "ga",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoHistory",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Constitution",
+      "stem": "Which Part of the Constitution deals with the government of the states, including the Governor and the state legislatures?",
+      "options": [
+        "Part VIII",
+        "Part V",
+        "Part IV",
+        "Part VI"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Part VI (Articles 152 to 237) covers the states: the Governor, the Council of Ministers, the state legislature and the High Courts. Part V covers the Union, Part IV the Directive Principles and Part VIII the Union Territories."
+    },
+    {
+      "id": "SSCCPO-T2-041",
+      "section": "ga",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Rivers",
+      "stem": "By what name is the Brahmaputra known in Tibet?",
+      "options": [
+        "Jamuna",
+        "Tsangpo",
+        "Padma",
+        "Meghna"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "In Tibet the river is the Tsangpo (Yarlung Tsangpo). In Bangladesh it is called the Jamuna; the Padma is the Ganga there."
+    },
+    {
+      "id": "SSCCPO-T2-042",
+      "section": "ga",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Parliament",
+      "stem": "Under which Article can Parliament provide for settling disputes over the waters of inter-state rivers?",
+      "options": [
+        "Article 249",
+        "Article 263",
+        "Article 262",
+        "Article 280"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Article 262 lets Parliament provide for the adjudication of inter-state river water disputes and bar the courts from them. Article 263 is about an Inter-State Council and Article 280 the Finance Commission."
+    },
+    {
+      "id": "SSCCPO-T2-043",
+      "section": "ga",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Economy",
+      "stem": "In the Indian economy, what does 'disinvestment' mean?",
+      "options": [
+        "Selling govt stake in PSUs",
+        "Cutting the repo rate",
+        "Raising import duties",
+        "Printing more currency"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Disinvestment is the government selling part or all of its shareholding in public sector undertakings, usually to raise money or bring in private management."
+    },
+    {
+      "id": "SSCCPO-T2-044",
+      "section": "ga",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Modern history",
+      "stem": "The Ilbert Bill controversy of 1883 took place during the term of which Viceroy?",
+      "options": [
+        "Lord Dufferin",
+        "Lord Lytton",
+        "Lord Ripon",
+        "Lord Curzon"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The Ilbert Bill, under Lord Ripon, proposed letting Indian judges try Europeans, and the European protest against it angered educated Indians."
+    },
+    {
+      "id": "SSCCPO-T2-045",
+      "section": "ga",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Physics",
+      "stem": "What energy change takes place in an electric motor?",
+      "options": [
+        "Mechanical to electrical",
+        "Chemical to electrical",
+        "Electrical to mechanical",
+        "Heat to electrical"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A motor uses electrical energy to produce motion. A generator does the reverse, turning mechanical energy into electrical energy."
+    },
+    {
+      "id": "SSCCPO-T2-046",
+      "section": "ga",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "National movement",
+      "stem": "Who founded the Indian Association in Calcutta in 1876, along with Ananda Mohan Bose?",
+      "options": [
+        "Surendranath Banerjee",
+        "Dadabhai Naoroji",
+        "A. O. Hume",
+        "Womesh Chandra Bonnerjee"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Surendranath Banerjee and Ananda Mohan Bose founded the Indian Association in 1876, one of the forerunners of the Congress. W. C. Bonnerjee presided over the first Congress session in 1885."
+    },
+    {
+      "id": "SSCCPO-T2-047",
+      "section": "ga",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Biology",
+      "stem": "Which of these is found in a plant cell but not in an animal cell?",
+      "options": [
+        "Cell wall",
+        "Ribosome",
+        "Mitochondria",
+        "Nucleus"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Plant cells have a cellulose cell wall (and chloroplasts) that animal cells lack. Both kinds have a nucleus, mitochondria and ribosomes."
+    },
+    {
+      "id": "SSCCPO-T2-048",
+      "section": "ga",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoHistory",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Constitution",
+      "stem": "Under which Article is a State Election Commission set up to conduct panchayat elections?",
+      "options": [
+        "Article 243E",
+        "Article 243K",
+        "Article 243G",
+        "Article 324"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Article 243K, added by the 73rd Amendment, gives panchayat elections to a State Election Commission. Article 324 covers the Election Commission of India, which does not run panchayat polls."
+    },
+    {
+      "id": "SSCCPO-T2-049",
+      "section": "ga",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Neighbouring countries",
+      "stem": "Which of these countries is NOT a member of SAARC?",
+      "options": [
+        "Maldives",
+        "Myanmar",
+        "Bhutan",
+        "Afghanistan"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "SAARC has eight members: Afghanistan, Bangladesh, Bhutan, India, Maldives, Nepal, Pakistan and Sri Lanka. Myanmar is not a member."
+    },
+    {
+      "id": "SSCCPO-T2-050",
+      "section": "ga",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Art and architecture",
+      "stem": "The Gommateshwara (Bahubali) statue at Shravanabelagola was commissioned by Chavundaraya, a minister of which dynasty?",
+      "options": [
+        "Hoysala",
+        "Western Ganga",
+        "Pallava",
+        "Rashtrakuta"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Chavundaraya, minister of the Western Ganga kings, had the monolithic Bahubali statue carved in the late 10th century. The Hoysalas built Belur and Halebidu later, in the 12th century."
+    },
+    {
+      "id": "SSCCPO-T2-051",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Percentage",
+      "stem": "In an election between two candidates, the winner got 56% of the valid votes and won by 9,360 votes. How many valid votes were cast?",
+      "options": [
+        "70,000",
+        "72,000",
+        "78,000",
+        "84,000"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The winner got 56% and the loser 44%, a margin of 12%. So 12% of the votes = 9,360 and the total = 9,360 ÷ 0.12 = 78,000."
+    },
+    {
+      "id": "SSCCPO-T2-052",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoAdvanced",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Algebra",
+      "stem": "If a - b = 3 and a² + b² = 29, what is the value of ab?",
+      "options": [
+        "10",
+        "13",
+        "16",
+        "20"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "(a - b)² = a² + b² - 2ab, so 9 = 29 - 2ab and ab = 10. (The numbers are 5 and 2.)"
+    },
+    {
+      "id": "SSCCPO-T2-053",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Profit and loss",
+      "stem": "A dealer marks his goods 35% above cost price and allows a discount of 12%. What is his profit percentage?",
+      "options": [
+        "17.6%",
+        "18.8%",
+        "20%",
+        "23%"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Selling price = 1.35 x 0.88 = 1.188 times the cost price, a profit of 18.8%. Subtracting 12 from 35 gives 23%, which ignores that the discount is on the marked price."
+    },
+    {
+      "id": "SSCCPO-T2-054",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoAdvanced",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Linear equations",
+      "stem": "If 2x + 3y = 13 and 3x - 2y = 0, what is the value of x + y?",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "13"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "From the second equation y = 1.5x. Then 2x + 4.5x = 13 gives x = 2 and y = 3, so x + y = 5."
+    },
+    {
+      "id": "SSCCPO-T2-055",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoArith",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Profit and loss",
+      "stem": "A trader sells at cost price but uses a weight of 960 g in place of 1 kg. What is his gain percentage?",
+      "options": [
+        "3 23/24%",
+        "4%",
+        "4 1/6%",
+        "4 1/2%"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "He gives 960 g and is paid for 1,000 g, so he gains 40 g on 960 g. Gain = 40/960 x 100 = 4 1/6%. 4% wrongly divides by 1,000."
+    },
+    {
+      "id": "SSCCPO-T2-056",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoAdvanced",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Linear graphs",
+      "stem": "At which point does the line 2x - 5y = 10 cut the y-axis?",
+      "options": [
+        "(0, -5)",
+        "(0, 2)",
+        "(0, -2)",
+        "(5, 0)"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "On the y-axis x = 0, so -5y = 10 and y = -2. The point (5, 0) is where the line cuts the x-axis."
+    },
+    {
+      "id": "SSCCPO-T2-057",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Ratio and proportion",
+      "stem": "₹7,000 is divided among P, Q and R so that P : Q = 2 : 3 and Q : R = 4 : 5. What is R's share?",
+      "options": [
+        "₹1,600",
+        "₹2,400",
+        "₹2,600",
+        "₹3,000"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Make Q the same in both ratios: P : Q = 8 : 12 and Q : R = 12 : 15, so P : Q : R = 8 : 12 : 15, 35 parts in all. R gets 7,000 x 15/35 = ₹3,000; Q gets ₹2,400."
+    },
+    {
+      "id": "SSCCPO-T2-058",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoAdvanced",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Triangle centres",
+      "stem": "In triangle ABC, angle A = 70° and angle B = 50°. The bisectors of angles B and C meet at I. What is angle BIC?",
+      "options": [
+        "110°",
+        "120°",
+        "125°",
+        "135°"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "For the incentre, angle BIC = 90° + A/2 = 90° + 35° = 125°. Check: angle C = 60°, so IBC = 25°, ICB = 30° and BIC = 180 - 55 = 125°."
+    },
+    {
+      "id": "SSCCPO-T2-059",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoArith",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Averages",
+      "stem": "The average of 11 results is 50. The average of the first six is 49 and the average of the last six is 52. What is the sixth result?",
+      "options": [
+        "50",
+        "51",
+        "52",
+        "56"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "The first six total 294 and the last six total 312; together they count the sixth result twice. So the sixth = 294 + 312 - 550 = 56."
+    },
+    {
+      "id": "SSCCPO-T2-060",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoAdvanced",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Polygons",
+      "stem": "Each interior angle of a regular polygon is 160°. How many sides does it have?",
+      "options": [
+        "18",
+        "20",
+        "24",
+        "36"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Each exterior angle is 180 - 160 = 20°, and the exterior angles add up to 360°, so there are 360 ÷ 20 = 18 sides. 20 is the exterior angle, not the number of sides."
+    },
+    {
+      "id": "SSCCPO-T2-061",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Simple interest",
+      "stem": "₹8,000 amounts to ₹9,920 in 3 years at simple interest. What is the rate of interest per annum?",
+      "options": [
+        "6%",
+        "7.5%",
+        "8%",
+        "10%"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Interest = 9,920 - 8,000 = ₹1,920. Rate = 1,920 x 100 ÷ (8,000 x 3) = 8%."
+    },
+    {
+      "id": "SSCCPO-T2-062",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoAdvanced",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Circles",
+      "stem": "A chord of length 16 cm is 6 cm from the centre of a circle. What is the radius?",
+      "options": [
+        "8 cm",
+        "10 cm",
+        "11 cm",
+        "12 cm"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The perpendicular from the centre bisects the chord into halves of 8 cm. Radius = square root of 8² + 6² = square root of 100 = 10 cm."
+    },
+    {
+      "id": "SSCCPO-T2-063",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Compound interest",
+      "stem": "At what rate of compound interest per annum will ₹10,000 become ₹12,100 in 2 years?",
+      "options": [
+        "10%",
+        "10.5%",
+        "11%",
+        "21%"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "12,100 ÷ 10,000 = 1.21, which is 1.1 squared, so the rate is 10%. 10.5% would be the simple-interest rate that gives the same amount."
+    },
+    {
+      "id": "SSCCPO-T2-064",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoAdvanced",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Mensuration",
+      "stem": "What is the curved surface area of a right circular cylinder with radius 7 cm and height 12 cm?",
+      "options": [
+        "264 sq cm",
+        "528 sq cm",
+        "836 sq cm",
+        "1,848 sq cm"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Curved surface area = 2πrh = 2 x 22/7 x 7 x 12 = 528 sq cm. Adding the two ends (308 sq cm) gives the total, 836 sq cm; 264 sq cm forgets the 2."
+    },
+    {
+      "id": "SSCCPO-T2-065",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Time and work",
+      "stem": "A can do a piece of work in 10 days and B in 15 days. They work together and are paid ₹4,500. What is A's share?",
+      "options": [
+        "₹1,800",
+        "₹2,250",
+        "₹2,700",
+        "₹3,000"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Wages follow the work done. A does 1/10 a day and B 1/15 a day, a ratio of 3 : 2. A gets 4,500 x 3/5 = ₹2,700."
+    },
+    {
+      "id": "SSCCPO-T2-066",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoAdvanced",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Mensuration",
+      "stem": "What is the volume of a sphere of radius 3 cm?",
+      "options": [
+        "108π cubic cm",
+        "36π cubic cm",
+        "27π cubic cm",
+        "12π cubic cm"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Volume = 4/3 x π x r³ = 4/3 x π x 27 = 36π cubic cm. 12π is the surface area divided by 3 and 108π uses 4πr³."
+    },
+    {
+      "id": "SSCCPO-T2-067",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Pipes and cisterns",
+      "stem": "Pipe A can fill a tank in 14 hours and pipe B can empty it in 21 hours. If both are opened together, how long will the empty tank take to fill?",
+      "options": [
+        "8.4 hours",
+        "21 hours",
+        "35 hours",
+        "42 hours"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Net filling per hour = 1/14 - 1/21 = 3/42 - 2/42 = 1/42 of the tank, so it fills in 42 hours. 8.4 hours wrongly adds the two rates."
+    },
+    {
+      "id": "SSCCPO-T2-068",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoAdvanced",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Mensuration",
+      "stem": "A cuboid measuring 12 cm by 8 cm by 6 cm is melted and recast into cubes of side 2 cm. How many cubes are made?",
+      "options": [
+        "72",
+        "96",
+        "144",
+        "288"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Volume of the cuboid = 576 cubic cm and of each cube 8 cubic cm, so 576 ÷ 8 = 72 cubes."
+    },
+    {
+      "id": "SSCCPO-T2-069",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Time and distance",
+      "stem": "A car covers the first half of a journey at 36 km/h and the second half at 54 km/h. What is its average speed for the whole journey?",
+      "options": [
+        "42 km/h",
+        "43.2 km/h",
+        "44 km/h",
+        "45 km/h"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "For equal distances the average speed is 2 x 36 x 54 ÷ (36 + 54) = 3,888 ÷ 90 = 43.2 km/h. 45 km/h is the simple average of the speeds, which is wrong here."
+    },
+    {
+      "id": "SSCCPO-T2-070",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoAdvanced",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Trigonometry",
+      "stem": "What is the value of sin² 30° + cos² 60° + tan² 45°?",
+      "options": [
+        "1",
+        "5/4",
+        "3/2",
+        "2"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "sin 30° = cos 60° = 1/2, so each square is 1/4, and tan 45° = 1. The sum is 1/4 + 1/4 + 1 = 3/2."
+    },
+    {
+      "id": "SSCCPO-T2-071",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Trains",
+      "stem": "Two trains 160 m and 140 m long run in opposite directions at 42 km/h and 66 km/h. How long do they take to cross each other?",
+      "options": [
+        "10 s",
+        "12 s",
+        "15 s",
+        "45 s"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Relative speed = 42 + 66 = 108 km/h = 30 m/s. They must cover 160 + 140 = 300 m, which takes 300 ÷ 30 = 10 s. 45 s would be the time if they ran in the same direction (24 km/h)."
+    },
+    {
+      "id": "SSCCPO-T2-072",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoAdvanced",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Complementary angles",
+      "stem": "What is the value of sin 37° ÷ cos 53°?",
+      "options": [
+        "0",
+        "√3",
+        "2",
+        "1"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "37° and 53° add up to 90°, so sin 37° = cos (90° - 37°) = cos 53°. The ratio is 1."
+    },
+    {
+      "id": "SSCCPO-T2-073",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "HCF and LCM",
+      "stem": "What is the smallest number that leaves a remainder of 5 when divided by 8, 12 or 18?",
+      "options": [
+        "72",
+        "77",
+        "101",
+        "149"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The LCM of 8, 12 and 18 is 72, so the number is 72 + 5 = 77. 149 (144 + 5) also works but is not the smallest."
+    },
+    {
+      "id": "SSCCPO-T2-074",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoAdvanced",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Pie chart",
+      "stem": "A pie chart of a district police budget shows: salaries 52%, vehicles 18%, equipment 12%, buildings 10% and others 8%. What is the central angle of the sector for vehicles?",
+      "options": [
+        "18°",
+        "43.2°",
+        "64.8°",
+        "72°"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The whole circle is 360°, so 18% of it is 0.18 x 360 = 64.8°. 43.2° is the angle for equipment (12%)."
+    },
+    {
+      "id": "SSCCPO-T2-075",
+      "section": "qa",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Square roots",
+      "stem": "What is the value of √0.0169 x √1.44?",
+      "options": [
+        "0.0156",
+        "0.156",
+        "0.165",
+        "1.56"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "√0.0169 = 0.13 and √1.44 = 1.2, so the product is 0.13 x 1.2 = 0.156. Count the decimal places carefully."
+    },
+    {
+      "id": "SSCCPO-T2-076",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Spot the error",
+      "stem": "The sentence below is divided into parts. Select the part that contains a grammatical error. If there is no error, select 'No error'.\n\nThe number of road accidents / have gone down / since the new rules came in.",
+      "options": [
+        "The number of road accidents",
+        "have gone down",
+        "since the new rules came in",
+        "No error"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "'The number of' takes a singular verb because the subject is 'number': 'has gone down'. 'A number of' would take a plural verb."
+    },
+    {
+      "id": "SSCCPO-T2-077",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Synonyms",
+      "stem": "Select the most appropriate synonym of the given word.\n\nAbandon",
+      "options": [
+        "Adopt",
+        "Desert",
+        "Defend",
+        "Accept"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "To abandon is to leave behind for good, which is to desert. 'Adopt' and 'defend' are close to opposites."
+    },
+    {
+      "id": "SSCCPO-T2-078",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Fill in the blanks",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nThe witness was not able to identify the man ______ the dim light.",
+      "options": [
+        "on",
+        "in",
+        "by",
+        "at"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "We speak of seeing something 'in' the light or 'in' the dark. 'By the light' is possible in other sentences but not with 'dim light' here."
+    },
+    {
+      "id": "SSCCPO-T2-079",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Antonyms",
+      "stem": "Select the most appropriate antonym of the given word.\n\nGullible",
+      "options": [
+        "Trusting",
+        "Sceptical",
+        "Naive",
+        "Simple"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Gullible means too easily believing what one is told; its opposite is sceptical, slow to believe without proof. 'Naive' and 'trusting' are close to synonyms."
+    },
+    {
+      "id": "SSCCPO-T2-080",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Fill in the blanks",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nBy the time the patrol arrived, the thieves ______.",
+      "options": [
+        "had escaped",
+        "have escaped",
+        "escaped",
+        "were escaping"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Of two past actions, the earlier one takes the past perfect: the thieves had escaped before the patrol arrived."
+    },
+    {
+      "id": "SSCCPO-T2-081",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Idioms and phrases",
+      "stem": "Select the most appropriate meaning of the given idiom.\n\nTo beat about the bush",
+      "options": [
+        "To work very hard",
+        "To avoid the main point",
+        "To defeat a rival",
+        "To search a forest"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "To beat about the bush is to talk around a subject without coming to the point."
+    },
+    {
+      "id": "SSCCPO-T2-082",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Improvement of sentences",
+      "stem": "Select the most appropriate option to replace the underlined part of the sentence. If no improvement is needed, select 'No improvement'.\n\nUnless you __do not leave__ now, you will miss the last bus.",
+      "options": [
+        "did not leave",
+        "leave",
+        "will not leave",
+        "No improvement"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "'Unless' already means 'if not', so adding 'do not' makes a double negative: 'Unless you leave now'. The 'unless' clause takes the simple present for a future condition."
+    },
+    {
+      "id": "SSCCPO-T2-083",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "One-word substitution",
+      "stem": "Select the option that can be used as a one-word substitute for the given group of words.\n\nA person who breaks the law for the first time",
+      "options": [
+        "Habitual offender",
+        "Fugitive",
+        "First offender",
+        "Accomplice"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A first offender has not broken the law before. A habitual offender repeats crimes, a fugitive is on the run and an accomplice helps another commit a crime."
+    },
+    {
+      "id": "SSCCPO-T2-084",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Active and passive voice",
+      "stem": "Select the active form of the sentence.\n\nThe documents were being checked by the clerk.",
+      "options": [
+        "The clerk was checking the documents.",
+        "The clerk had checked the documents.",
+        "The clerk is checking the documents.",
+        "The clerk checked the documents."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "'Were being checked' is the past continuous passive, so the active is 'was checking'."
+    },
+    {
+      "id": "SSCCPO-T2-085",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Spellings",
+      "stem": "Select the correctly spelt word.\n\n(a period of a thousand years)",
+      "options": [
+        "Milennium",
+        "Milenium",
+        "Millennium",
+        "Millenium"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Millennium has a double l and a double n: m-i-l-l-e-n-n-i-u-m, from the Latin mille (thousand) and annus (year)."
+    },
+    {
+      "id": "SSCCPO-T2-086",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Direct and indirect narration",
+      "stem": "Select the correct indirect form of the sentence.\n\nThe constable said, \"Let us wait for the inspector.\"",
+      "options": [
+        "The constable suggested that they should wait for the inspector.",
+        "The constable suggested that let them wait for the inspector.",
+        "The constable said that let us wait for the inspector.",
+        "The constable told that they will wait for the inspector."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A sentence with 'Let us' that makes a proposal is reported with 'suggested that ... should'. 'Let us' itself is not kept after 'that', and 'told' needs an object."
+    },
+    {
+      "id": "SSCCPO-T2-087",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoVocab",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Synonyms",
+      "stem": "Select the most appropriate synonym of the given word.\n\nMeticulous",
+      "options": [
+        "Hasty",
+        "Nervous",
+        "Generous",
+        "Thorough"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Meticulous means paying close attention to every detail, which is thorough. 'Hasty' is close to the opposite."
+    },
+    {
+      "id": "SSCCPO-T2-088",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Spot the error",
+      "stem": "The sentence below is divided into parts. Select the part that contains a grammatical error. If there is no error, select 'No error'.\n\nHe did not know / how to operate / a wireless set nor a computer.",
+      "options": [
+        "He did not know",
+        "how to operate",
+        "a wireless set nor a computer",
+        "No error"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "'Nor' cannot follow a plain 'not' like this. After 'did not know' the sentence needs 'a wireless set or a computer'."
+    },
+    {
+      "id": "SSCCPO-T2-089",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Antonyms",
+      "stem": "Select the most appropriate antonym of the given word.\n\nVague",
+      "options": [
+        "Hazy",
+        "Doubtful",
+        "Precise",
+        "Unclear"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Vague means not clear or exact; its opposite is precise. 'Unclear' and 'hazy' are synonyms."
+    },
+    {
+      "id": "SSCCPO-T2-090",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoGrammar",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Fill in the blanks",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nNo sooner had the alarm rung ______ the guards rushed to the gate.",
+      "options": [
+        "then",
+        "than",
+        "when",
+        "that"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "'No sooner' is always paired with 'than'. 'Hardly' and 'scarcely' are the ones that take 'when'."
+    },
+    {
+      "id": "SSCCPO-T2-091",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Idioms and phrases",
+      "stem": "Select the most appropriate meaning of the given idiom.\n\nTo keep one's fingers crossed",
+      "options": [
+        "To keep a secret",
+        "To hope for a good result",
+        "To refuse to help",
+        "To make a promise"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "People keep their fingers crossed when they hope that something will turn out well, such as an exam result."
+    },
+    {
+      "id": "SSCCPO-T2-092",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Sentence structure",
+      "stem": "Select the grammatically correct sentence beginning with 'One of'.",
+      "options": [
+        "One of my friends is a constable.",
+        "One of my friend are a constable.",
+        "One of my friend is a constable.",
+        "One of my friends are a constable."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "'One of' is followed by a plural noun ('my friends') and a singular verb, because the subject is 'one'."
+    },
+    {
+      "id": "SSCCPO-T2-093",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Cloze test",
+      "stimulusId": "SSCCPO-CL2",
+      "stem": "Cloze passage 2: select the most appropriate word for blank (1).",
+      "options": [
+        "in",
+        "with",
+        "at",
+        "on"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "We say a talk or a lecture 'on' a subject: 'a lecture on cyber fraud'."
+    },
+    {
+      "id": "SSCCPO-T2-094",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Cloze test",
+      "stimulusId": "SSCCPO-CL2",
+      "stem": "Cloze passage 2: select the most appropriate word for blank (2).",
+      "options": [
+        "sometimes",
+        "often",
+        "never",
+        "always"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The officer is warning the students: a bank will never ask for your OTP. 'Always' or 'often' would reverse the advice."
+    },
+    {
+      "id": "SSCCPO-T2-095",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Cloze test",
+      "stimulusId": "SSCCPO-CL2",
+      "stem": "Cloze passage 2: select the most appropriate word for blank (3).",
+      "options": [
+        "whom",
+        "who",
+        "whose",
+        "which"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The blank links 'people' to 'savings', which belong to them, so the possessive relative pronoun 'whose' is needed."
+    },
+    {
+      "id": "SSCCPO-T2-096",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Cloze test",
+      "stimulusId": "SSCCPO-CL2",
+      "stem": "Cloze passage 2: select the most appropriate word for blank (4).",
+      "options": [
+        "reluctantly",
+        "immediately",
+        "eventually",
+        "rarely"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The advice is to report fraud straight away so the money can be traced. 'Eventually' or 'reluctantly' would not help the victim."
+    },
+    {
+      "id": "SSCCPO-T2-097",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "SSCCPO-RC2",
+      "stem": "Reading passage 2: what is the passage mainly about?",
+      "options": [
+        "A coastal patrol by boat",
+        "Building a new jetty",
+        "A storm on the open sea",
+        "Rules for fishermen"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The passage follows a marine police team on a night patrol of the coast and the boat they stop. The storm and the jetty are not mentioned."
+    },
+    {
+      "id": "SSCCPO-T2-098",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "SSCCPO-RC2",
+      "stem": "Reading passage 2: why did the team stop the fishing boat?",
+      "options": [
+        "It had no lights on",
+        "It was sinking fast",
+        "It flew a foreign flag",
+        "It asked for help"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The passage says the boat was moving without navigation lights, which made the team suspicious."
+    },
+    {
+      "id": "SSCCPO-T2-099",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "SSCCPO-RC2",
+      "stem": "Reading passage 2: what does the word 'routine' mean as used in the passage?",
+      "options": [
+        "Secret and risky",
+        "Quick and careless",
+        "Rare and special",
+        "Regular and usual"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A routine patrol is a regular one carried out as part of normal duty. The passage contrasts it with the unusual boat they find."
+    },
+    {
+      "id": "SSCCPO-T2-100",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "ssccpoVocab",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Reading comprehension",
+      "stimulusId": "SSCCPO-RC2",
+      "stem": "Reading passage 2: what can be inferred about the fishermen?",
+      "options": [
+        "They were part of the team",
+        "They were hiding smuggled goods",
+        "They were lost, not smuggling",
+        "They had stolen the boat"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The team found only fish and nets, and the fishermen's lights had failed after their engine trouble. They had drifted off course, so they were not smugglers."
+    },
+    {
+      "id": "SSCCPO-D-001",
+      "section": "gi",
+      "test": 0,
+      "module": 1,
+      "domain": "ssccpoVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Number analogy",
+      "stem": "Select the option that is related to the third term in the same way as the second term is related to the first term.\n\n6 : 15 :: 10 : ?",
+      "options": [
+        "40",
+        "45",
+        "50",
+        "55"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The rule is n x (n - 1) ÷ 2: 6 x 5 ÷ 2 = 15, so 10 x 9 ÷ 2 = 45. 55 would use 10 x 11 ÷ 2."
+    },
+    {
+      "id": "SSCCPO-D-002",
+      "section": "gi",
+      "test": 0,
+      "module": 1,
+      "domain": "ssccpoLogic",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Blood relations",
+      "stem": "P is the brother of Q. Q is the sister of R. R is the son of S. How is P related to S?",
+      "options": [
+        "Brother",
+        "Nephew",
+        "Father",
+        "Son"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "P, Q and R are siblings, and R is a son of S, so S is their parent. P is male (a brother), so P is S's son."
+    },
+    {
+      "id": "SSCCPO-D-003",
+      "section": "gi",
+      "test": 0,
+      "module": 1,
+      "domain": "ssccpoVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Letter analogy",
+      "stem": "Select the option that is related to the third term in the same way as the second term is related to the first term.\n\nDRIVE : EQJUF :: CLOCK : ?",
+      "options": [
+        "DKPBL",
+        "DMPBL",
+        "DKPDL",
+        "BKPBL"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The letters move +1, -1, +1, -1, +1: D to E, R to Q, I to J, V to U, E to F. For CLOCK: C to D, L to K, O to P, C to B, K to L, giving DKPBL."
+    },
+    {
+      "id": "SSCCPO-D-004",
+      "section": "gi",
+      "test": 0,
+      "module": 1,
+      "domain": "ssccpoLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Directions",
+      "stem": "Sunita faces north. She turns 90° clockwise, then 180° anticlockwise, then 45° clockwise. Which direction does she face now?",
+      "options": [
+        "North-west",
+        "North-east",
+        "West",
+        "South-west"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "North turned 90° clockwise is east; 180° anticlockwise from east is west; 45° clockwise from west is north-west."
+    },
+    {
+      "id": "SSCCPO-D-005",
+      "section": "gi",
+      "test": 0,
+      "module": 1,
+      "domain": "ssccpoVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Mixed series",
+      "stem": "Select the term that will come next in the series.\n\nC2, F10, I50, L250, ?",
+      "options": [
+        "N1250",
+        "O1000",
+        "O1250",
+        "P1250"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The letters move three places each time (C, F, I, L, O) and the numbers are multiplied by 5 (2, 10, 50, 250, 1250)."
+    },
+    {
+      "id": "SSCCPO-D-006",
+      "section": "gi",
+      "test": 0,
+      "module": 1,
+      "domain": "ssccpoLogic",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Syllogism",
+      "stem": "Read the statements and decide which conclusion(s) logically follow, even if the statements seem to be at variance with known facts.\n\nStatements: Some files are reports. All reports are documents.\nConclusions: I. Some files are documents. II. All documents are files.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Both I and II follow",
+        "Neither follows"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The files that are reports are also documents, so I follows. Nothing says every document is a file, so II does not follow."
+    },
+    {
+      "id": "SSCCPO-D-007",
+      "section": "gi",
+      "test": 0,
+      "module": 1,
+      "domain": "ssccpoVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Semantic classification",
+      "stem": "Select the odd one out.\n\nBarometer, Hygrometer, Anemometer, Stethoscope",
+      "options": [
+        "Stethoscope",
+        "Hygrometer",
+        "Barometer",
+        "Anemometer"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A barometer, a hygrometer and an anemometer measure the weather (air pressure, humidity and wind speed). A stethoscope is a doctor's instrument for listening to the heart and lungs."
+    },
+    {
+      "id": "SSCCPO-D-008",
+      "section": "gi",
+      "test": 0,
+      "module": 1,
+      "domain": "ssccpoLogic",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Social intelligence",
+      "stem": "At a public meeting where you are posted, an elderly man cannot find his family. What should you do first?",
+      "options": [
+        "Ask him to keep searching alone",
+        "Keep him safe and announce it",
+        "Send him to the nearest station",
+        "Hand him to a stranger nearby"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Keeping him with you and making an announcement reunites him fastest while he stays safe. Sending him off alone or with a stranger puts him at risk."
+    },
+    {
+      "id": "SSCCPO-D-009",
+      "section": "ga",
+      "test": 0,
+      "module": 1,
+      "domain": "ssccpoHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Constitution",
+      "stem": "Article 350A asks every state to provide facilities for children of linguistic minorities to be taught in what at the primary stage?",
+      "options": [
+        "Sanskrit",
+        "English only",
+        "Their mother tongue",
+        "Hindi only"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Article 350A says every state should try to provide instruction in the mother tongue at the primary stage to children of linguistic minority groups. Article 343 deals with the official language of the Union."
+    },
+    {
+      "id": "SSCCPO-D-010",
+      "section": "ga",
+      "test": 0,
+      "module": 1,
+      "domain": "ssccpoScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Indian geography",
+      "stem": "Saddle Peak, the highest point of the Andaman Islands, is on which island?",
+      "options": [
+        "Great Nicobar",
+        "North Andaman",
+        "South Andaman",
+        "Middle Andaman"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Saddle Peak (about 732 m) is on North Andaman, near Diglipur. Port Blair, now Sri Vijaya Puram, is on South Andaman."
+    },
+    {
+      "id": "SSCCPO-D-011",
+      "section": "ga",
+      "test": 0,
+      "module": 1,
+      "domain": "ssccpoHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Modern history",
+      "stem": "The Treaty of Salbai of 1782 ended which war?",
+      "options": [
+        "First Anglo-Maratha War",
+        "First Anglo-Burmese War",
+        "First Anglo-Mysore War",
+        "First Anglo-Sikh War"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The Treaty of Salbai ended the First Anglo-Maratha War (1775 to 1782). The First Anglo-Mysore War ended with the Treaty of Madras in 1769."
+    },
+    {
+      "id": "SSCCPO-D-012",
+      "section": "ga",
+      "test": 0,
+      "module": 1,
+      "domain": "ssccpoScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Earth science",
+      "stem": "Which layer of the atmosphere reflects radio waves back to the Earth?",
+      "options": [
+        "Troposphere",
+        "Stratosphere",
+        "Exosphere",
+        "Ionosphere"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The ionosphere holds charged particles that reflect some radio waves, which is how long-distance radio signals travel. Weather happens in the troposphere."
+    },
+    {
+      "id": "SSCCPO-D-013",
+      "section": "ga",
+      "test": 0,
+      "module": 1,
+      "domain": "ssccpoHistory",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Neighbouring countries",
+      "stem": "Which of these Indian states shares a border with Myanmar?",
+      "options": [
+        "Mizoram",
+        "Sikkim",
+        "Meghalaya",
+        "Tripura"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Myanmar borders Arunachal Pradesh, Nagaland, Manipur and Mizoram. Tripura and Meghalaya border only Bangladesh, and Sikkim borders Nepal, Bhutan and China."
+    },
+    {
+      "id": "SSCCPO-D-014",
+      "section": "ga",
+      "test": 0,
+      "module": 1,
+      "domain": "ssccpoScience",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Economy",
+      "stem": "Which Five-Year Plan was based on the Mahalanobis model, with its stress on heavy industry?",
+      "options": [
+        "Fifth Plan",
+        "First Plan",
+        "Second Plan",
+        "Third Plan"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The Second Plan (1956 to 1961) followed P. C. Mahalanobis's model of rapid heavy industrialisation. The First Plan focused on agriculture."
+    },
+    {
+      "id": "SSCCPO-D-015",
+      "section": "ga",
+      "test": 0,
+      "module": 1,
+      "domain": "ssccpoHistory",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Polity",
+      "stem": "The Sarkaria Commission, set up in 1983, examined which subject?",
+      "options": [
+        "Electoral reforms",
+        "Tribal welfare",
+        "Centre-state relations",
+        "Police reforms"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The Sarkaria Commission reported in 1988 on relations between the Union and the states, including the governor's role and Article 356. Police reforms were studied by other bodies."
+    },
+    {
+      "id": "SSCCPO-D-016",
+      "section": "ga",
+      "test": 0,
+      "module": 1,
+      "domain": "ssccpoScience",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Chemistry",
+      "stem": "What does iron need in order to rust?",
+      "options": [
+        "Sunlight and salt",
+        "Oxygen and moisture",
+        "Nitrogen and heat",
+        "Carbon dioxide only"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Rust (hydrated iron oxide) forms when iron reacts with oxygen in the presence of water. Salt speeds it up but is not required."
+    },
+    {
+      "id": "SSCCPO-D-017",
+      "section": "qa",
+      "test": 0,
+      "module": 1,
+      "domain": "ssccpoArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Percentage",
+      "stem": "The price of dal falls by 16 2/3%. By what percentage can a family increase the quantity it buys while spending the same amount?",
+      "options": [
+        "12.5%",
+        "15%",
+        "16.67%",
+        "20%"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "A fall of 1/6 means the price is 5/6 of what it was, so the same money buys 6/5 as much, an increase of 1/5 = 20%."
+    },
+    {
+      "id": "SSCCPO-D-018",
+      "section": "qa",
+      "test": 0,
+      "module": 1,
+      "domain": "ssccpoAdvanced",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Degree and radian",
+      "stem": "How many degrees are there in 5π/6 radians?",
+      "options": [
+        "120°",
+        "135°",
+        "150°",
+        "165°"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "π radians = 180°, so 5π/6 = 5 x 180 ÷ 6 = 150°."
+    },
+    {
+      "id": "SSCCPO-D-019",
+      "section": "qa",
+      "test": 0,
+      "module": 1,
+      "domain": "ssccpoArith",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Profit and loss",
+      "stem": "A sells an article to B at 10% profit and B sells it to C at 20% profit. If C pays ₹3,960, what did the article cost A?",
+      "options": [
+        "₹2,772",
+        "₹3,000",
+        "₹3,168",
+        "₹3,300"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Price to C = cost x 1.1 x 1.2 = 1.32 x cost, so cost = 3,960 ÷ 1.32 = ₹3,000. ₹3,300 is only B's cost price."
+    },
+    {
+      "id": "SSCCPO-D-020",
+      "section": "qa",
+      "test": 0,
+      "module": 1,
+      "domain": "ssccpoAdvanced",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Surds",
+      "stem": "If x = √3 + √2, what is the value of x + 1/x?",
+      "options": [
+        "2√2",
+        "2",
+        "√3",
+        "2√3"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "1/x = 1 ÷ (√3 + √2) = √3 - √2 after rationalising, since (√3 + √2)(√3 - √2) = 1. So x + 1/x = 2√3."
+    },
+    {
+      "id": "SSCCPO-D-021",
+      "section": "qa",
+      "test": 0,
+      "module": 1,
+      "domain": "ssccpoArith",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Ratio and proportion",
+      "stem": "Two numbers are in the ratio 3 : 5. If 9 is subtracted from each, the ratio becomes 12 : 23. What is the larger number?",
+      "options": [
+        "33",
+        "44",
+        "45",
+        "55"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Let them be 3x and 5x. 23(3x - 9) = 12(5x - 9) gives 69x - 207 = 60x - 108, so 9x = 99 and x = 11. The numbers are 33 and 55."
+    },
+    {
+      "id": "SSCCPO-D-022",
+      "section": "qa",
+      "test": 0,
+      "module": 1,
+      "domain": "ssccpoAdvanced",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Heights and distances",
+      "stem": "A man whose eyes are 1.5 m above the ground stands 28.5 m from a tower and sees its top at an angle of elevation of 45°. How tall is the tower?",
+      "options": [
+        "27 m",
+        "28.5 m",
+        "30 m",
+        "31.5 m"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "At 45° the height above eye level equals the distance, 28.5 m. Adding the eye height gives 28.5 + 1.5 = 30 m."
+    },
+    {
+      "id": "SSCCPO-D-023",
+      "section": "qa",
+      "test": 0,
+      "module": 1,
+      "domain": "ssccpoArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Boats and streams",
+      "stem": "A man rows at 9 km/h in still water and the stream flows at 3 km/h. How long will he take to row 24 km downstream and come back?",
+      "options": [
+        "4 hours",
+        "5.33 hours",
+        "6 hours",
+        "8 hours"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Downstream speed 12 km/h takes 2 hours; upstream speed 6 km/h takes 4 hours. Total 6 hours. Using 9 km/h both ways gives 5.33 hours."
+    },
+    {
+      "id": "SSCCPO-D-024",
+      "section": "qa",
+      "test": 0,
+      "module": 1,
+      "domain": "ssccpoAdvanced",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Histogram",
+      "stem": "In a frequency table of marks, 0-10 has 4 students, 10-20 has 9, 20-30 has 15, 30-40 has 7 and 40-50 has 5. Which is the modal class?",
+      "options": [
+        "40-50",
+        "10-20",
+        "20-30",
+        "30-40"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The modal class is the class with the highest frequency, here 20-30 with 15 students. In a histogram it is the tallest bar."
+    },
+    {
+      "id": "SSCCPO-D-025",
+      "section": "eng",
+      "test": 0,
+      "module": 1,
+      "domain": "ssccpoGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Spot the error",
+      "stem": "The sentence below is divided into parts. Select the part that contains a grammatical error. If there is no error, select 'No error'.\n\nThe jury were divided / in their opinions / and could not reach a verdict.",
+      "options": [
+        "The jury were divided",
+        "in their opinions",
+        "and could not reach a verdict",
+        "No error"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "A collective noun takes a plural verb when its members act separately, as here where they disagree. 'The jury were divided in their opinions' is correct."
+    },
+    {
+      "id": "SSCCPO-D-026",
+      "section": "eng",
+      "test": 0,
+      "module": 1,
+      "domain": "ssccpoVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Synonyms",
+      "stem": "Select the most appropriate synonym of the given word.\n\nPonder",
+      "options": [
+        "Consider",
+        "Hurry",
+        "Wander",
+        "Forget"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "To ponder is to think about something carefully, which is to consider it. 'Wander' only sounds similar."
+    },
+    {
+      "id": "SSCCPO-D-027",
+      "section": "eng",
+      "test": 0,
+      "module": 1,
+      "domain": "ssccpoGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Fill in the blanks",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nThe new constable is not used to ______ night shifts.",
+      "options": [
+        "work",
+        "working",
+        "works",
+        "worked"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "In 'be used to', 'to' is a preposition, so it is followed by the -ing form: 'used to working'."
+    },
+    {
+      "id": "SSCCPO-D-028",
+      "section": "eng",
+      "test": 0,
+      "module": 1,
+      "domain": "ssccpoVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Antonyms",
+      "stem": "Select the most appropriate antonym of the given word.\n\nHostile",
+      "options": [
+        "Distant",
+        "Silent",
+        "Friendly",
+        "Angry"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Hostile means unfriendly or aggressive, so friendly is the antonym."
+    },
+    {
+      "id": "SSCCPO-D-029",
+      "section": "eng",
+      "test": 0,
+      "module": 1,
+      "domain": "ssccpoGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Improvement of sentences",
+      "stem": "Select the most appropriate option to replace the underlined part of the sentence. If no improvement is needed, select 'No improvement'.\n\nThe officer, along with his team, __were__ honoured for bravery.",
+      "options": [
+        "are",
+        "have been",
+        "was",
+        "No improvement"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Words added with 'along with' do not change the subject. 'The officer' is singular, so the verb is 'was'."
+    },
+    {
+      "id": "SSCCPO-D-030",
+      "section": "eng",
+      "test": 0,
+      "module": 1,
+      "domain": "ssccpoVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "One-word substitution",
+      "stem": "Select the option that can be used as a one-word substitute for the given group of words.\n\nA written statement made on oath",
+      "options": [
+        "Petition",
+        "Affidavit",
+        "Warrant",
+        "Summons"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "An affidavit is a written statement sworn on oath. A summons orders someone to appear in court and a warrant authorises an arrest or search."
+    },
+    {
+      "id": "SSCCPO-D-031",
+      "section": "eng",
+      "test": 0,
+      "module": 1,
+      "domain": "ssccpoGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Active and passive voice",
+      "stem": "Select the passive form of the sentence.\n\nWho broke the lock?",
+      "options": [
+        "Whom was the lock broken?",
+        "Who was the lock broken by him?",
+        "By whom the lock was broken?",
+        "By whom was the lock broken?"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "In the passive, 'who' becomes 'by whom', and a question keeps the verb before the subject: 'By whom was the lock broken?'"
+    },
+    {
+      "id": "SSCCPO-D-032",
+      "section": "eng",
+      "test": 0,
+      "module": 1,
+      "domain": "ssccpoVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Idioms and phrases",
+      "stem": "Select the most appropriate meaning of the given idiom.\n\nTo smell a rat",
+      "options": [
+        "To feel very hungry",
+        "To suspect something wrong",
+        "To dislike a person",
+        "To find a hidden animal"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "To smell a rat is to sense that something is not as it should be, as an alert officer might."
+    }
+  ]
+}

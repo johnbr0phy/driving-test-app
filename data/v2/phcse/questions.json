@@ -1,0 +1,5222 @@
+[
+  {
+    "id": "PHCSE-T1-001",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseGrammar",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Subject-verb agreement",
+    "stem": "Choose the word that best completes the sentence: \"Each of the applicants ___ required to submit a photocopy of a valid ID.\"",
+    "options": [
+      "have been",
+      "are",
+      "were",
+      "is"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "\"Each\" is singular, so it takes the singular verb \"is\". The plural noun \"applicants\" sits inside the prepositional phrase and does not control the verb."
+  },
+  {
+    "id": "PHCSE-T1-002",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseVocab",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Synonyms",
+    "stem": "Choose the word closest in meaning to the underlined word: \"Thank you for your __prompt__ reply to our letter.\"",
+    "options": [
+      "polite",
+      "late",
+      "long",
+      "quick"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "\"Prompt\" means done without delay, so quick. A prompt reply may also be polite, but that is not what the word means."
+  },
+  {
+    "id": "PHCSE-T1-003",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseReading",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Main idea",
+    "stem": "Read the passage, then answer the question.\n\nMany towns once sent all their garbage to open dumpsites. The dumps smelled, drew rats and leaked dirty water into nearby streams. Today a growing number of barangays sort waste at the source. Kitchen scraps go to compost pits, bottles and cans are sold to junk shops, and only what cannot be used again goes to a sanitary landfill. As a result, trucks make fewer trips and the landfill fills more slowly.\n\nWhat is the passage mainly about?",
+    "options": [
+      "How sorting waste reduces what reaches landfills",
+      "Why towns should build more landfills",
+      "How junk shops set prices for bottles",
+      "Why rats are attracted to open dumpsites"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Every sentence after the first leads to one point: sorting at the source means less waste reaches the landfill. Rats and junk shops are details, and the passage never argues for more landfills."
+  },
+  {
+    "id": "PHCSE-T1-004",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseGrammar",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Subject-verb agreement",
+    "stem": "Choose the word that best completes the sentence: \"Mathematics ___ my favorite subject in high school.\"",
+    "options": [
+      "are",
+      "was",
+      "have been",
+      "were"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "\"Mathematics\" ends in -s but names one subject, so it takes a singular verb. The past time \"in high school\" needs \"was\"."
+  },
+  {
+    "id": "PHCSE-T1-005",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseVocab",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Synonyms",
+    "stem": "Choose the word closest in meaning to the underlined word: \"The agency was __lauded__ for its quick response to the flood.\"",
+    "options": [
+      "blamed",
+      "praised",
+      "funded",
+      "warned"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "To laud is to praise. \"Blamed\" is close to its opposite."
+  },
+  {
+    "id": "PHCSE-T1-006",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseReading",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Inference",
+    "stem": "Read the passage, then answer the question.\n\nThe municipal library extended its hours to 8:00 p.m. on weekdays last June. In the months that followed, the number of borrowers rose sharply, and most of the new borrowers signed in after 5:00 p.m. Many of them listed their occupation as office worker or student.\n\nWhat can be inferred from the passage?",
+    "options": [
+      "The library hired new staff in June",
+      "Students prefer reading at home at night",
+      "The library will soon close on weekends",
+      "Many borrowers could not visit during office hours"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "New borrowers came mostly after 5:00 p.m. and were workers or students, which suggests the old hours did not suit them. Nothing is said about weekends or hiring."
+  },
+  {
+    "id": "PHCSE-T1-007",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseGrammar",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Verb tense",
+    "stem": "Choose the word that best completes the sentence: \"By the time the director arrived, the staff ___ the hall.\"",
+    "options": [
+      "cleans",
+      "will clean",
+      "had cleaned",
+      "has cleaned"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The cleaning was finished before another past action (the director arrived), so the past perfect \"had cleaned\" is correct."
+  },
+  {
+    "id": "PHCSE-T1-008",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseVocab",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Synonyms",
+    "stem": "Choose the word closest in meaning to the underlined word: \"The hall has __ample__ space for all the applicants.\"",
+    "options": [
+      "narrow",
+      "too little",
+      "plenty of",
+      "noisy"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Ample means more than enough, so plenty of. The sentence says there is room for every applicant."
+  },
+  {
+    "id": "PHCSE-T1-009",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseReading",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Author's purpose",
+    "stem": "Read the passage, then answer the question.\n\nBefore you sign a contract, read every page, not just the first and the last. Ask about any term you do not understand, and never sign a page with blank spaces that someone else could fill in later. Keep a copy of everything you sign.\n\nWhat is the author's main purpose?",
+    "options": [
+      "To advise readers on signing contracts safely",
+      "To describe the history of written contracts",
+      "To explain how contracts are written by lawyers",
+      "To warn readers never to sign any contract"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The passage gives step-by-step advice for signing safely. It does not forbid signing, and it says nothing about how lawyers draft contracts or their history."
+  },
+  {
+    "id": "PHCSE-T1-010",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseGrammar",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pronoun case",
+    "stem": "Choose the word that best completes the sentence: \"The supervisor gave the new forms to Ana and ___.\"",
+    "options": [
+      "I",
+      "mine",
+      "me",
+      "myself"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "\"To Ana and me\": the pronoun is the object of the preposition \"to\", so the object form \"me\" is needed. Drop \"Ana and\" to check: \"gave the forms to me\"."
+  },
+  {
+    "id": "PHCSE-T1-011",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseVocab",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Synonyms",
+    "stem": "Choose the word closest in meaning to the underlined word: \"The treasurer is __scrupulous__ in handling public funds.\"",
+    "options": [
+      "careful and honest",
+      "rich and powerful",
+      "slow and lazy",
+      "new and untrained"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Scrupulous means very careful to do what is right and correct, so careful and honest. That is the quality wanted in someone who handles public money."
+  },
+  {
+    "id": "PHCSE-T1-012",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseReading",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Detail",
+    "stem": "Read the passage, then answer the question.\n\nThe province's coffee farmers once sold their beans fresh, at low prices, to traders who visited after harvest. Three years ago a cooperative bought a shared drying and roasting machine. Members now sell roasted coffee in sealed bags to cafes in the city, and their income per kilo has more than doubled.\n\nAccording to the passage, what allowed the farmers to sell to city cafes?",
+    "options": [
+      "A shared drying and roasting machine",
+      "Higher prices paid by traders",
+      "A larger coffee harvest each year",
+      "A new road built to the city"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The passage links the change to the cooperative's shared machine, which let members sell roasted, bagged coffee. Roads and harvest size are not mentioned."
+  },
+  {
+    "id": "PHCSE-T1-013",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseGrammar",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pronoun case",
+    "stem": "Choose the word that best completes the sentence: \"___ do you think will be named the employee of the month?\"",
+    "options": [
+      "Whom",
+      "Whose",
+      "Who",
+      "Which"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The pronoun is the subject of \"will be named\" (\"you think he will be named\"), so the subject form \"Who\" is correct. \"Do you think\" is only an inserted clause."
+  },
+  {
+    "id": "PHCSE-T1-014",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseVocab",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Antonyms",
+    "stem": "Choose the word most nearly OPPOSITE in meaning to: \"optional\"",
+    "options": [
+      "unusual",
+      "required",
+      "available",
+      "useful"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Optional means left to your own choice; its opposite is required, meaning it must be done."
+  },
+  {
+    "id": "PHCSE-T1-015",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseReading",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Tone",
+    "stem": "Read the passage, then answer the question.\n\nThe new online appointment system was supposed to end the long lines. Instead, the website crashes every morning at eight, the confirmation emails arrive a day late, and applicants still line up outside the gate before dawn. One more improvement like this, and the office may need a second gate.\n\nWhat is the writer's tone?",
+    "options": [
+      "Admiring",
+      "Sarcastic",
+      "Hopeful",
+      "Neutral"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The last sentence calls the failure an \"improvement\" and jokes about needing a second gate, which is sarcasm. The listed problems rule out an admiring or hopeful tone."
+  },
+  {
+    "id": "PHCSE-T1-016",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseGrammar",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Prepositions",
+    "stem": "Choose the word that best completes the sentence: \"The new policy will take effect ___ January 2.\"",
+    "options": [
+      "in",
+      "on",
+      "at",
+      "by"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Use \"on\" with a specific date or day, \"in\" with months and years, and \"at\" with clock times."
+  },
+  {
+    "id": "PHCSE-T1-017",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseVocab",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Antonyms",
+    "stem": "Choose the word most nearly OPPOSITE in meaning to: \"reluctant\"",
+    "options": [
+      "careful",
+      "tired",
+      "eager",
+      "unwilling"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Reluctant means unwilling or hesitant, so its opposite is eager. \"Unwilling\" is a synonym."
+  },
+  {
+    "id": "PHCSE-T1-018",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseReading",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Paragraph organization",
+    "stem": "Arrange the sentences to form a logical paragraph.\n\n1. Finally, the approved request is forwarded to the cashier for payment.\n2. First, the employee fills out a reimbursement form.\n3. The supervisor then checks the receipts and signs the form.\n4. Next, the employee attaches the official receipts to it.",
+    "options": [
+      "2, 4, 3, 1",
+      "2, 3, 4, 1",
+      "4, 2, 3, 1",
+      "2, 4, 1, 3"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The signal words give the order: \"First\" (2), \"Next\" (4), \"then\" (3) and \"Finally\" (1). The supervisor must check the receipts after they are attached."
+  },
+  {
+    "id": "PHCSE-T1-019",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseGrammar",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Conditional",
+    "stem": "Choose the words that best complete the sentence: \"If I ___ the deadline earlier, I would have filed my application on time.\"",
+    "options": [
+      "knew",
+      "have known",
+      "would know",
+      "had known"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A past unreal condition uses \"if\" + past perfect (\"had known\") with \"would have\" + past participle in the main clause."
+  },
+  {
+    "id": "PHCSE-T1-020",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseVocab",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Antonyms",
+    "stem": "Choose the word most nearly OPPOSITE in meaning to: \"brisk\"",
+    "options": [
+      "lively",
+      "slow",
+      "cold",
+      "quick"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Brisk means quick and full of energy, as in a brisk walk. Its opposite is slow; \"lively\" is close in meaning to brisk."
+  },
+  {
+    "id": "PHCSE-T1-021",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseReading",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Paragraph organization",
+    "stem": "Arrange the sentences to form a logical paragraph.\n\n1. These warm waters give storms the energy they need to grow.\n2. The Philippines lies beside the Pacific Ocean, where the sea is warm for much of the year.\n3. This is why the country is hit by many typhoons every year.\n4. Storms that form over the Pacific often move west toward the islands.",
+    "options": [
+      "1, 2, 4, 3",
+      "2, 4, 1, 3",
+      "2, 1, 4, 3",
+      "4, 2, 1, 3"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Sentence 2 introduces the setting, 1 explains what \"these warm waters\" do, 4 says where the storms go, and 3 draws the conclusion with \"This is why\"."
+  },
+  {
+    "id": "PHCSE-T1-022",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseGrammar",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Correct usage",
+    "stem": "Which sentence is grammatically correct?",
+    "options": [
+      "Lesser people attended this year's seminar.",
+      "Fewer people attended this year's seminar.",
+      "Few people has attended this year's seminar.",
+      "Less people attended this year's seminar."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "\"Fewer\" is used with things you can count (people); \"less\" is for amounts that cannot be counted, such as water or time."
+  },
+  {
+    "id": "PHCSE-T1-023",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseVocab",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Meaning in context",
+    "stem": "What does the underlined word mean? \"The two offices agreed to __consolidate__ their records into one database.\"",
+    "options": [
+      "combine",
+      "examine",
+      "divide",
+      "delete"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "To consolidate is to bring separate parts together into one. The phrase \"into one database\" signals combining."
+  },
+  {
+    "id": "PHCSE-T1-024",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseReading",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Paragraph organization",
+    "stem": "Which sentence best completes the paragraph?\n\n\"Regular exercise helps the body in many ways. It strengthens the heart and lungs and helps control weight. ___\"",
+    "options": [
+      "However, many people have no time to cook.",
+      "It can also lift mood and improve sleep.",
+      "The first marathon was run in Greece.",
+      "Some gyms charge a monthly membership."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The paragraph lists benefits of exercise, so the best closing sentence adds more benefits. The others change the topic."
+  },
+  {
+    "id": "PHCSE-T1-025",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseGrammar",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Parallelism",
+    "stem": "Which sentence is grammatically correct?",
+    "options": [
+      "She likes to read, writing and cooking.",
+      "She likes reading, writing and cooking.",
+      "She likes reading, to write and cook.",
+      "She likes reading, writing and to cook."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Items in a series should have the same form. \"Reading, writing and cooking\" are all -ing forms; the others mix -ing forms with infinitives."
+  },
+  {
+    "id": "PHCSE-T1-026",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseVocab",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Meaning in context",
+    "stem": "What does the underlined word mean? \"Please accept our __sincere__ apology for the delay in releasing your permit.\"",
+    "options": [
+      "late and unwanted",
+      "honest and genuine",
+      "short and quick",
+      "formal and printed"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Sincere means honest and meant from the heart, so a sincere apology is a genuine one."
+  },
+  {
+    "id": "PHCSE-T1-027",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseReading",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Vocabulary in context",
+    "stem": "Read the passage, then answer the question.\n\nThe town council debated the proposal for three hours. Several members worried about the cost, and one asked for a study of the traffic it would cause. In the end the council decided to __defer__ the vote until the study was complete.\n\nAs used in the passage, \"defer\" most nearly means:",
+    "options": [
+      "put off",
+      "speed up",
+      "count",
+      "cancel"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The council waits \"until the study was complete\", so the vote is put off, not cancelled."
+  },
+  {
+    "id": "PHCSE-T1-028",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseGrammar",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Modifiers",
+    "stem": "Which sentence is grammatically correct?",
+    "options": [
+      "Walking to the office, the building looked old.",
+      "Walking to the office, I saw the old building.",
+      "While walking to the office, the building was old.",
+      "Walking to the office, the old building was seen."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The opening phrase must describe the subject that follows it. Only \"I\" can be walking; in the other sentences the building seems to be walking, which is a dangling modifier."
+  },
+  {
+    "id": "PHCSE-T1-029",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseVocab",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Idioms",
+    "stem": "What does the underlined idiom mean? \"The manager told us to __keep our ears to the ground__ about the reorganization.\"",
+    "options": [
+      "avoid any gossip",
+      "stay very quiet",
+      "work much harder",
+      "watch for news"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "To keep your ear to the ground is to stay alert to news and rumors about what is happening."
+  },
+  {
+    "id": "PHCSE-T1-030",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseReading",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Conclusion",
+    "stem": "Read the passage, then answer the question.\n\nA study of public offices found that those using a numbered queue ticket served clients in an average of 12 minutes. Offices without a ticket system averaged 31 minutes, and staff there reported more arguments over who was next in line.\n\nWhich conclusion is best supported by the passage?",
+    "options": [
+      "Offices without tickets have fewer clients",
+      "Queue tickets make staff work longer hours",
+      "Queue tickets are linked to faster, calmer service",
+      "Clients prefer offices that open early"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Ticket offices were faster and had fewer arguments, so the passage supports a link between tickets and faster, calmer service. Nothing is said about hours, client numbers or opening times."
+  },
+  {
+    "id": "PHCSE-T1-031",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseAnalytical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Word analogy",
+    "stem": "CHEF : KITCHEN :: JUDGE : ?",
+    "options": [
+      "Gavel",
+      "Courtroom",
+      "Verdict",
+      "Lawyer"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A chef works in a kitchen; a judge works in a courtroom. A lawyer, a verdict and a gavel are all linked to judges, but none is a workplace."
+  },
+  {
+    "id": "PHCSE-T1-032",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseAnalytical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Word analogy",
+    "stem": "BROOM : SWEEP :: SAW : ?",
+    "options": [
+      "Carpenter",
+      "Sharp",
+      "Cut",
+      "Wood"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A broom is used to sweep; a saw is used to cut. Wood is what a saw cuts, and a carpenter is the person who uses it."
+  },
+  {
+    "id": "PHCSE-T1-033",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseAnalytical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Word analogy",
+    "stem": "CUB : LION :: FAWN : ?",
+    "options": [
+      "Goat",
+      "Carabao",
+      "Deer",
+      "Horse"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A cub is a young lion; a fawn is a young deer. A young horse is a foal and a young goat is a kid."
+  },
+  {
+    "id": "PHCSE-T1-034",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseAnalytical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Word analogy",
+    "stem": "BLIND : SIGHT :: DEAF : ?",
+    "options": [
+      "Hearing",
+      "Sound",
+      "Silence",
+      "Ear"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A blind person lacks sight; a deaf person lacks hearing. Sound is what is heard and the ear is the organ, but the pair is a condition and the sense it takes away."
+  },
+  {
+    "id": "PHCSE-T1-035",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseAnalytical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Word analogy",
+    "stem": "GOVERNOR : PROVINCE :: MAYOR : ?",
+    "options": [
+      "Region",
+      "Barangay",
+      "Congress",
+      "Municipality"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A governor heads a province; a mayor heads a city or municipality. A barangay is headed by a punong barangay."
+  },
+  {
+    "id": "PHCSE-T1-036",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseAnalytical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Word analogy",
+    "stem": "ODOMETER : DISTANCE :: SPEEDOMETER : ?",
+    "options": [
+      "Time",
+      "Fuel",
+      "Speed",
+      "Distance"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An odometer measures the distance a vehicle has traveled; a speedometer measures its speed. Fuel is shown by a fuel gauge, and distance belongs to the odometer."
+  },
+  {
+    "id": "PHCSE-T1-037",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseAnalytical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Word analogy",
+    "stem": "POTTER : CLAY :: CARPENTER : ?",
+    "options": [
+      "Workshop",
+      "Wood",
+      "Hammer",
+      "Chair"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A potter shapes clay; a carpenter works with wood. The pair is worker to the material, so a tool (hammer), a product (chair) or a workplace does not fit."
+  },
+  {
+    "id": "PHCSE-T1-038",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseAnalytical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Logic",
+    "stem": "Statements: All inspectors are employees. All employees wear IDs.\n\nConclusions:\nI. All inspectors wear IDs.\nII. Everyone who wears an ID is an inspector.\n\nWhich conclusion follows?",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Inspectors are inside the group of employees, and all employees wear IDs, so I follows. II reverses the statement: other employees also wear IDs, so it does not follow."
+  },
+  {
+    "id": "PHCSE-T1-039",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseAnalytical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Logic",
+    "stem": "Statements: Some files are red. All red things in the office are labeled.\n\nConclusions:\nI. Some files are labeled.\nII. All files are labeled.\n\nWhich conclusion follows?",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The red files are labeled, so at least some files are labeled (I). Nothing is said about files that are not red, so II does not follow."
+  },
+  {
+    "id": "PHCSE-T1-040",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseAnalytical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Logic",
+    "stem": "Statements: No cashier is a guard. Some guards are drivers.\n\nConclusions:\nI. No driver is a cashier.\nII. Some drivers are not cashiers.\n\nWhich conclusion follows?",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The drivers who are guards cannot be cashiers, so some drivers are not cashiers (II). Other drivers who are not guards could still be cashiers, so I does not follow."
+  },
+  {
+    "id": "PHCSE-T1-041",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseAnalytical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Logic",
+    "stem": "Statements: All mangoes are fruits. Some fruits are sour.\n\nConclusions:\nI. Some mangoes are sour.\nII. Some fruits are mangoes.\n\nWhich conclusion follows?",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The sour fruits may all be other kinds of fruit, so I does not follow. Every mango is a fruit, so at least some fruits are mangoes (II)."
+  },
+  {
+    "id": "PHCSE-T1-042",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseAnalytical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Conclusions",
+    "stem": "Statement: The city will fine anyone caught throwing garbage on the street.\n\nConclusions:\nI. No one will ever throw garbage on the street again.\nII. The city wants to keep its streets clean.\n\nWhich conclusion follows?",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "A fine for littering shows the city's aim of clean streets (II). A fine discourages littering but cannot guarantee that no one will ever do it, so I does not follow."
+  },
+  {
+    "id": "PHCSE-T1-043",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseAnalytical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Conclusions",
+    "stem": "Statement: Of the 40 employees in the division, 25 attended the training, and all of those who attended passed the test.\n\nConclusions:\nI. At least 25 employees in the division passed the test.\nII. Some employees in the division did not attend the training.\n\nWhich conclusion follows?",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "All 25 attendees passed, so at least 25 passed (I). Only 25 of 40 attended, so 15 did not (II). Both follow."
+  },
+  {
+    "id": "PHCSE-T1-044",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseAnalytical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Conclusions",
+    "stem": "Statement: Every applicant who passed the written test was interviewed. Maria, an applicant, was not interviewed.\n\nConclusions:\nI. Maria failed her interview.\nII. Maria did not pass the written test.\n\nWhich conclusion follows?",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "If Maria had passed, she would have been interviewed; she was not, so she did not pass (II). She had no interview, so she cannot have failed one (I)."
+  },
+  {
+    "id": "PHCSE-T1-045",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseAnalytical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Conclusions",
+    "stem": "Statement: In the town center, traffic is heavy only on weekdays.\n\nConclusions:\nI. Traffic in the town center is not heavy on Sundays.\nII. Traffic in the town center is heavy every day of the week.\n\nWhich conclusion follows?",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "\"Only on weekdays\" means it is not heavy on weekends, which includes Sundays (I). II contradicts the statement."
+  },
+  {
+    "id": "PHCSE-T1-046",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseAnalytical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Data interpretation",
+    "stem": "The table shows the business permit applications a municipal office received and approved in four months.\n\n| Month | Applications received | Applications approved |\n|---|---|---|\n| January | 240 | 180 |\n| February | 300 | 210 |\n| March | 360 | 288 |\n| April | 200 | 170 |\n\nHow many applications did the office receive in the four months altogether?",
+    "options": [
+      "848",
+      "1,040",
+      "1,060",
+      "1,100"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "240 + 300 + 360 + 200 = 1,100. 848 is the total approved, not received."
+  },
+  {
+    "id": "PHCSE-T1-047",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseAnalytical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Data interpretation",
+    "stem": "The table shows the business permit applications a municipal office received and approved in four months.\n\n| Month | Applications received | Applications approved |\n|---|---|---|\n| January | 240 | 180 |\n| February | 300 | 210 |\n| March | 360 | 288 |\n| April | 200 | 170 |\n\nIn which month was the share of applications approved the highest?",
+    "options": [
+      "January",
+      "March",
+      "April",
+      "February"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Approval rates: January 180/240 = 75%, February 210/300 = 70%, March 288/360 = 80%, April 170/200 = 85%. March approved the most applications, but April approved the largest share."
+  },
+  {
+    "id": "PHCSE-T1-048",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseAnalytical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Data interpretation",
+    "stem": "The table shows the business permit applications a municipal office received and approved in four months.\n\n| Month | Applications received | Applications approved |\n|---|---|---|\n| January | 240 | 180 |\n| February | 300 | 210 |\n| March | 360 | 288 |\n| April | 200 | 170 |\n\nBy what percent did the number of applications received increase from January to March?",
+    "options": [
+      "50%",
+      "60%",
+      "120%",
+      "150%"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The increase is 360 - 240 = 120, and 120 / 240 = 50%. 150% is March as a percent of January, not the increase, and 120% reads the increase of 120 as a percent."
+  },
+  {
+    "id": "PHCSE-T1-049",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseAnalytical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Data interpretation",
+    "stem": "The table shows the business permit applications a municipal office received and approved in four months.\n\n| Month | Applications received | Applications approved |\n|---|---|---|\n| January | 240 | 180 |\n| February | 300 | 210 |\n| March | 360 | 288 |\n| April | 200 | 170 |\n\nWhat was the average number of applications approved per month?",
+    "options": [
+      "212",
+      "225",
+      "275",
+      "288"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Total approved = 180 + 210 + 288 + 170 = 848, and 848 / 4 = 212. 275 is the average received (1,100 / 4), and 288 is the highest single month."
+  },
+  {
+    "id": "PHCSE-T1-050",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseAnalytical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Data interpretation",
+    "stem": "The table shows how the Santos family divides its monthly income. The five items make up the whole income.\n\n| Item | Amount per month |\n|---|---|\n| Food | ₱12,000 |\n| Rent | ₱7,500 |\n| Transportation | ₱3,000 |\n| Utilities | ₱4,500 |\n| Savings | ₱3,000 |\n\nWhat percent of the family's monthly income goes to food?",
+    "options": [
+      "12%",
+      "25%",
+      "30%",
+      "40%"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The total income is 12,000 + 7,500 + 3,000 + 4,500 + 3,000 = ₱30,000. Food is 12,000 / 30,000 = 40%."
+  },
+  {
+    "id": "PHCSE-T1-051",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseAnalytical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Data interpretation",
+    "stem": "The table shows how the Santos family divides its monthly income. The five items make up the whole income.\n\n| Item | Amount per month |\n|---|---|\n| Food | ₱12,000 |\n| Rent | ₱7,500 |\n| Transportation | ₱3,000 |\n| Utilities | ₱4,500 |\n| Savings | ₱3,000 |\n\nWhat is the ratio of rent to utilities?",
+    "options": [
+      "5 : 3",
+      "5 : 2",
+      "3 : 5",
+      "3 : 2"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Rent : utilities = 7,500 : 4,500. Divide both by 1,500 to get 5 : 3."
+  },
+  {
+    "id": "PHCSE-T1-052",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseAnalytical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Data interpretation",
+    "stem": "The table shows how the Santos family divides its monthly income. The five items make up the whole income.\n\n| Item | Amount per month |\n|---|---|\n| Food | ₱12,000 |\n| Rent | ₱7,500 |\n| Transportation | ₱3,000 |\n| Utilities | ₱4,500 |\n| Savings | ₱3,000 |\n\nIf the family's food spending rises by 10% and the other amounts stay the same, what will the family's total monthly spending and savings be?",
+    "options": [
+      "₱31,200",
+      "₱32,000",
+      "₱33,000",
+      "₱43,200"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Food rises by 10% of 12,000 = ₱1,200, so the total goes from ₱30,000 to ₱31,200. ₱33,000 would be a 10% rise in the whole budget, and ₱43,200 adds the new food amount (₱13,200) to the old total."
+  },
+  {
+    "id": "PHCSE-T1-053",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseAnalytical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ordering",
+    "stem": "Ana is taller than Ben. Ben is taller than Carlo. Dina is shorter than Carlo. Who is the tallest?",
+    "options": [
+      "Dina",
+      "Carlo",
+      "Ben",
+      "Ana"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "From tallest to shortest the order is Ana, Ben, Carlo, Dina."
+  },
+  {
+    "id": "PHCSE-T1-054",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseAnalytical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Abstract reasoning",
+    "stem": "What letter comes next in the series? A, D, I, P, ?",
+    "options": [
+      "V",
+      "Y",
+      "W",
+      "X"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The letters stand at positions 1, 4, 9 and 16 of the alphabet, the square numbers. The next square is 25, which is Y."
+  },
+  {
+    "id": "PHCSE-T1-055",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseAnalytical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Coding",
+    "stem": "In a certain code, HAND is written as IBOE. How is FOOT written in the same code?",
+    "options": [
+      "GPPU",
+      "ENNS",
+      "HQQV",
+      "GPPT"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Each letter moves one place forward: H to I, A to B, N to O, D to E. So F, O, O, T become G, P, P, U. ENNS moves each letter back instead."
+  },
+  {
+    "id": "PHCSE-T1-056",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseWordProblems",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Discount",
+    "stem": "A store sells a rice cooker for ₱2,400 after a 20% discount. What was the original price?",
+    "options": [
+      "₱2,640",
+      "₱2,880",
+      "₱2,920",
+      "₱3,000"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The sale price is 80% of the original, so the original is 2,400 ÷ 0.8 = ₱3,000. Adding 20% of ₱2,400 (₱2,880) uses the wrong base."
+  },
+  {
+    "id": "PHCSE-T1-057",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseNumbers",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Fractions",
+    "stem": "What is 5/6 + 3/8?",
+    "options": [
+      "1 7/24",
+      "1 5/24",
+      "8/14",
+      "1 1/24"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Use the common denominator 24: 20/24 + 9/24 = 29/24 = 1 5/24. Adding tops and bottoms (8/14) is a common mistake."
+  },
+  {
+    "id": "PHCSE-T1-058",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseWordProblems",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Work",
+    "stem": "Pedro can paint a room alone in 12 hours, and Jun can paint it alone in 24 hours. How long will it take them working together?",
+    "options": [
+      "8 hours",
+      "12 hours",
+      "18 hours",
+      "36 hours"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Together they paint 1/12 + 1/24 = 2/24 + 1/24 = 3/24 = 1/8 of the room per hour, so they need 8 hours. Together they must be faster than Pedro alone (12 hours); 18 hours is the average and 36 hours the sum of the two times."
+  },
+  {
+    "id": "PHCSE-T1-059",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseNumbers",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Decimals",
+    "stem": "What is 0.35 x 0.2?",
+    "options": [
+      "0.007",
+      "0.07",
+      "0.55",
+      "0.7"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "35 x 2 = 70, and the factors have 2 + 1 = 3 decimal places, so the product is 0.070 = 0.07. 0.55 is the sum, not the product."
+  },
+  {
+    "id": "PHCSE-T1-060",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseWordProblems",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Average speed",
+    "stem": "A bus travels 180 km to a town at 60 km/h and returns along the same road at 90 km/h. What is its average speed for the round trip?",
+    "options": [
+      "72 km/h",
+      "75 km/h",
+      "80 km/h",
+      "150 km/h"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Time out = 180 ÷ 60 = 3 h, time back = 180 ÷ 90 = 2 h. Average speed = 360 km ÷ 5 h = 72 km/h, not the simple mean of 75."
+  },
+  {
+    "id": "PHCSE-T1-061",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseNumbers",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Order of operations",
+    "stem": "What is 48 ÷ 6 + 4 x 3 - 5?",
+    "options": [
+      "15",
+      "20",
+      "25",
+      "31"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Divide and multiply first: 48 ÷ 6 = 8 and 4 x 3 = 12. Then 8 + 12 - 5 = 15. Working strictly left to right gives the wrong answer 31; forgetting the - 5 gives 20, and adding it gives 25."
+  },
+  {
+    "id": "PHCSE-T1-062",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseWordProblems",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Ages",
+    "stem": "Liza is now 4 times as old as her son. In 20 years she will be twice as old as he will be. How old is Liza now?",
+    "options": [
+      "10 years",
+      "30 years",
+      "36 years",
+      "40 years"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Let the son be s, so Liza is 4s. Then 4s + 20 = 2(s + 20), so 4s + 20 = 2s + 40 and s = 10. Liza is 40; 10 is the son's age now and 30 his age in 20 years."
+  },
+  {
+    "id": "PHCSE-T1-063",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseNumbers",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Percent",
+    "stem": "What is 15% of 360?",
+    "options": [
+      "24",
+      "36",
+      "45",
+      "54"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "10% of 360 is 36 and 5% is 18, so 15% is 36 + 18 = 54."
+  },
+  {
+    "id": "PHCSE-T1-064",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseWordProblems",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Simple interest",
+    "stem": "How much simple interest does ₱50,000 earn at 6% per year for 3 years?",
+    "options": [
+      "₱3,000",
+      "₱9,000",
+      "₱9,550",
+      "₱18,000"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Simple interest = 50,000 x 0.06 x 3 = ₱9,000. About ₱9,550 would be compound interest, and ₱3,000 is only one year."
+  },
+  {
+    "id": "PHCSE-T1-065",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseNumbers",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number sequence",
+    "stem": "What number comes next? 4, 9, 19, 39, 79, ?",
+    "options": [
+      "119",
+      "158",
+      "159",
+      "160"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Each term is double the previous one plus 1: 79 x 2 + 1 = 159. Adding 40 (as from 39 to 79) gives the wrong answer 119."
+  },
+  {
+    "id": "PHCSE-T1-066",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseWordProblems",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Mixture",
+    "stem": "How many liters of water must be added to 12 liters of a 25% alcohol solution to make a 20% solution?",
+    "options": [
+      "3 liters",
+      "4 liters",
+      "5 liters",
+      "15 liters"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The solution has 0.25 x 12 = 3 L of alcohol. For 3 L to be 20% the total must be 3 ÷ 0.2 = 15 L, so add 15 - 12 = 3 L of water. 15 L is the new total, not the water added."
+  },
+  {
+    "id": "PHCSE-T1-067",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseNumbers",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number sequence",
+    "stem": "What number comes next? 5, 11, 19, 29, 41, ?",
+    "options": [
+      "53",
+      "54",
+      "55",
+      "57"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The differences are 6, 8, 10, 12, so the next difference is 14: 41 + 14 = 55."
+  },
+  {
+    "id": "PHCSE-T1-068",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseWordProblems",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ratio",
+    "stem": "Three partners share a profit of ₱84,000 in the ratio 2 : 3 : 7. How much is the largest share?",
+    "options": [
+      "₱28,000",
+      "₱35,000",
+      "₱42,000",
+      "₱49,000"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "There are 2 + 3 + 7 = 12 parts, so one part is 84,000 ÷ 12 = ₱7,000. The largest share is 7 x 7,000 = ₱49,000."
+  },
+  {
+    "id": "PHCSE-T1-069",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseNumbers",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Number sequence",
+    "stem": "What number comes next? 256, 64, 16, 4, ?",
+    "options": [
+      "0",
+      "1/4",
+      "1",
+      "2"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Each term is one fourth of the one before: 4 ÷ 4 = 1."
+  },
+  {
+    "id": "PHCSE-T1-070",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseWordProblems",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Percent change",
+    "stem": "An office's monthly electric bill rose from ₱8,000 to ₱9,000. By what percent did it increase?",
+    "options": [
+      "1.25%",
+      "10%",
+      "11.1%",
+      "12.5%"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The increase is ₱1,000, and 1,000 ÷ 8,000 = 12.5%. Dividing by the new bill (9,000) gives about 11.1%, which uses the wrong base."
+  },
+  {
+    "id": "PHCSE-T1-071",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseNumbers",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Number sequence",
+    "stem": "What number comes next? 5, 10, 8, 16, 14, ?",
+    "options": [
+      "12",
+      "18",
+      "26",
+      "28"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The pattern alternates: multiply by 2, then subtract 2. After 14 comes 14 x 2 = 28."
+  },
+  {
+    "id": "PHCSE-T1-072",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseWordProblems",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Consecutive numbers",
+    "stem": "The sum of three consecutive odd numbers is 93. What is the largest of them?",
+    "options": [
+      "27",
+      "29",
+      "31",
+      "33"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The middle number is 93 ÷ 3 = 31, so the numbers are 29, 31 and 33. The largest is 33."
+  },
+  {
+    "id": "PHCSE-T1-073",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseNumbers",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Square roots",
+    "stem": "What is the square root of 1,296?",
+    "options": [
+      "36",
+      "38",
+      "44",
+      "46"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "36 x 36 = 1,296. The last digit 6 points to a root ending in 4 or 6, and 35 x 35 = 1,225 is too small."
+  },
+  {
+    "id": "PHCSE-T1-074",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseWordProblems",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Rate",
+    "stem": "A typist types 45 words per minute. How long will it take to type a 2,700-word report?",
+    "options": [
+      "45 minutes",
+      "54 minutes",
+      "60 minutes",
+      "75 minutes"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "2,700 ÷ 45 = 60 minutes, or one hour."
+  },
+  {
+    "id": "PHCSE-T1-075",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseNumbers",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "LCM",
+    "stem": "What is the least common multiple of 12, 20 and 45?",
+    "options": [
+      "60",
+      "90",
+      "180",
+      "360"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "12 = 2^2 x 3, 20 = 2^2 x 5, 45 = 3^2 x 5. Take the highest powers: 4 x 9 x 5 = 180."
+  },
+  {
+    "id": "PHCSE-T1-076",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseWordProblems",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Perimeter",
+    "stem": "A rectangular lot measures 25 m by 18 m. Fencing costs ₱350 per meter. How much will it cost to fence the whole lot?",
+    "options": [
+      "₱15,050",
+      "₱30,100",
+      "₱31,500",
+      "₱157,500"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Perimeter = 2 x (25 + 18) = 86 m, and 86 x 350 = ₱30,100. ₱157,500 uses the area (450 m²) instead of the perimeter."
+  },
+  {
+    "id": "PHCSE-T1-077",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseNumbers",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Percent",
+    "stem": "What is 2.5% written as a decimal?",
+    "options": [
+      "0.0025",
+      "0.025",
+      "0.25",
+      "2.5"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Divide by 100 by moving the decimal point two places left: 2.5% = 0.025."
+  },
+  {
+    "id": "PHCSE-T1-078",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseWordProblems",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Average",
+    "stem": "The average of seven numbers is 25. When one number is removed, the average of the remaining six is 23. What number was removed?",
+    "options": [
+      "2",
+      "23",
+      "25",
+      "37"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The seven numbers total 7 x 25 = 175 and the six total 6 x 23 = 138. The removed number is 175 - 138 = 37. 2 is only the difference of the averages."
+  },
+  {
+    "id": "PHCSE-T1-079",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseNumbers",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Integers",
+    "stem": "What is (-8) + 15 - (-6)?",
+    "options": [
+      "-17",
+      "1",
+      "13",
+      "29"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Subtracting a negative is adding: -8 + 15 + 6 = 13. Forgetting the double negative gives 1."
+  },
+  {
+    "id": "PHCSE-T1-080",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseWordProblems",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Successive discounts",
+    "stem": "A price is reduced by 10%, and the new price is then reduced by 20%. What single discount is this equal to?",
+    "options": [
+      "28%",
+      "30%",
+      "32%",
+      "72%"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "After both cuts the price is 0.9 x 0.8 = 0.72 of the original, a total discount of 28% (72% is the price that is left). Adding 10% and 20% (30%) ignores that the second cut is on a smaller price."
+  },
+  {
+    "id": "PHCSE-T1-081",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseConstitution",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Article IX-B",
+    "stem": "Under the 1987 Constitution, appointments in the civil service are made according to merit and fitness, determined as far as practicable by:",
+    "options": [
+      "the appointing officer's choice",
+      "recommendation of Congress",
+      "competitive examination",
+      "length of residence"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Article IX-B, Section 2(2): appointments are made according to merit and fitness determined, as far as practicable, by competitive examination, except for policy-determining, primarily confidential or highly technical positions."
+  },
+  {
+    "id": "PHCSE-T1-082",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcsePublicService",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "R.A. 6713",
+    "stem": "Within how many working days from receipt must public officials and employees respond to letters and requests from the public under R.A. 6713?",
+    "options": [
+      "5 working days",
+      "15 working days",
+      "30 working days",
+      "45 working days"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Section 5(a) of R.A. 6713 requires a response within 15 working days from receipt, stating the action taken. 45 working days is the deadline for heads of office to submit annual performance reports."
+  },
+  {
+    "id": "PHCSE-T1-083",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseConstitution",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Article IX-B",
+    "stem": "According to the Constitution, the civil service covers all branches, agencies and instrumentalities of the government, including government-owned or controlled corporations:",
+    "options": [
+      "listed on the stock exchange",
+      "created after 1987 only",
+      "owned by local governments",
+      "with original charters"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Article IX-B, Section 2(1) covers GOCCs \"with original charters\", that is, those created by a special law. Corporations set up under the general corporation law are outside the civil service."
+  },
+  {
+    "id": "PHCSE-T1-084",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcsePublicService",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "R.A. 6713",
+    "stem": "Under R.A. 6713, the Statement of Assets, Liabilities and Net Worth (SALN) must be filed every year on or before:",
+    "options": [
+      "December 31",
+      "April 30",
+      "January 31",
+      "June 30"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Section 8 requires the SALN within 30 days after assuming office, on or before April 30 of every year, and within 30 days after leaving the service."
+  },
+  {
+    "id": "PHCSE-T1-085",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseConstitution",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Article IX-B",
+    "stem": "Which activity does the Constitution expressly prohibit for officers and employees in the civil service?",
+    "options": [
+      "Joining a labor organization",
+      "Partisan political campaigning",
+      "Voting in national elections",
+      "Taking a civil service exam"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Article IX-B, Section 2(4) bars civil servants from engaging, directly or indirectly, in any electioneering or partisan political campaign. Section 2(5) protects their right to self-organization, so joining an organization is allowed."
+  },
+  {
+    "id": "PHCSE-T1-086",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcsePublicService",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "R.A. 6713",
+    "stem": "Which norm of conduct in R.A. 6713 requires public servants to serve everyone without unfair discrimination, regardless of party affiliation?",
+    "options": [
+      "Commitment to democracy",
+      "Political neutrality",
+      "Simple living",
+      "Professionalism"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Section 4(d), political neutrality, requires service to everyone without unfair discrimination regardless of party affiliation or preference."
+  },
+  {
+    "id": "PHCSE-T1-087",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseConstitution",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Article XI",
+    "stem": "Which article of the 1987 Constitution begins with \"Public office is a public trust\"?",
+    "options": [
+      "Article II, Declaration of Principles and State Policies",
+      "Article IX, Constitutional Commissions",
+      "Article III, Bill of Rights",
+      "Article XI, Accountability of Public Officers"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Article XI, Section 1 opens: \"Public office is a public trust. Public officers and employees must, at all times, be accountable to the people...\""
+  },
+  {
+    "id": "PHCSE-T1-088",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcsePublicService",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "R.A. 6713",
+    "stem": "Under R.A. 6713, the prohibited acts in Section 7 continue to apply for how long after an official resigns, retires or leaves public office?",
+    "options": [
+      "Six months",
+      "One year",
+      "Three years",
+      "Two years"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Section 7 says its prohibitions continue to apply for one year after resignation, retirement or separation from public office."
+  },
+  {
+    "id": "PHCSE-T1-089",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseConstitution",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Legislative department",
+    "stem": "How many senators make up the Senate under the 1987 Constitution?",
+    "options": [
+      "12",
+      "18",
+      "24",
+      "30"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Article VI, Section 2: the Senate is composed of 24 senators elected at large by the qualified voters of the Philippines. Half are elected every three years."
+  },
+  {
+    "id": "PHCSE-T1-090",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcsePublicService",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "R.A. 6713",
+    "stem": "Under R.A. 6713, \"relatives\" are persons related to the official within which degree of consanguinity or affinity?",
+    "options": [
+      "Second civil degree",
+      "Fourth civil degree",
+      "Third civil degree",
+      "Sixth civil degree"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Section 3(k) defines relatives as persons within the fourth civil degree of consanguinity or affinity, including bilas, inso and balae."
+  },
+  {
+    "id": "PHCSE-T1-091",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseConstitution",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Executive department",
+    "stem": "For how long may the President proclaim martial law or suspend the privilege of the writ of habeas corpus before Congress must extend it?",
+    "options": [
+      "48 hours",
+      "30 days",
+      "60 days",
+      "90 days"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Article VII, Section 18 limits the proclamation or suspension to a period not exceeding 60 days unless Congress extends it. The President must report to Congress within 48 hours."
+  },
+  {
+    "id": "PHCSE-T1-092",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcsePublicService",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Human rights",
+    "stem": "Which body does the 1987 Constitution create to investigate violations of civil and political rights?",
+    "options": [
+      "Commission on Elections",
+      "Civil Service Commission",
+      "Commission on Human Rights",
+      "Commission on Audit"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Article XIII, Section 17 creates the independent Commission on Human Rights, which investigates all forms of human rights violations involving civil and political rights."
+  },
+  {
+    "id": "PHCSE-T1-093",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseConstitution",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Accountability",
+    "stem": "Which body has the exclusive power to initiate all cases of impeachment?",
+    "options": [
+      "The Office of the Ombudsman",
+      "The House of Representatives",
+      "The Senate",
+      "The Supreme Court"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Article XI, Section 3: the House of Representatives has the exclusive power to initiate impeachment; the Senate has the sole power to try and decide the case."
+  },
+  {
+    "id": "PHCSE-T1-094",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcsePublicService",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Human rights",
+    "stem": "The Universal Declaration of Human Rights was adopted by the United Nations General Assembly in what year?",
+    "options": [
+      "1945",
+      "1948",
+      "1966",
+      "1987"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The UDHR was adopted on December 10, 1948, which is why Human Rights Day is marked on December 10. The UN itself was founded in 1945, and the two international covenants date from 1966."
+  },
+  {
+    "id": "PHCSE-T1-095",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseConstitution",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Judicial department",
+    "stem": "How many justices make up the Supreme Court, including the Chief Justice?",
+    "options": [
+      "9",
+      "12",
+      "14",
+      "15"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Article VIII, Section 4(1): the Supreme Court is composed of a Chief Justice and 14 Associate Justices, 15 in all."
+  },
+  {
+    "id": "PHCSE-T1-096",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcsePublicService",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Peace process",
+    "stem": "Which law created the Bangsamoro Autonomous Region in Muslim Mindanao (BARMM)?",
+    "options": [
+      "R.A. 9262",
+      "R.A. 6734",
+      "R.A. 11054",
+      "R.A. 9003"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "R.A. 11054 of 2018, the Bangsamoro Organic Law, created BARMM after a plebiscite in 2019, replacing the ARMM that R.A. 6734 had set up in 1989."
+  },
+  {
+    "id": "PHCSE-T1-097",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseConstitution",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Declaration of principles",
+    "stem": "The 1987 Constitution declares that civilian authority is, at all times, supreme over:",
+    "options": [
+      "the Church",
+      "local governments",
+      "the military",
+      "the courts"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Article II, Section 3: \"Civilian authority is, at all times, supreme over the military.\""
+  },
+  {
+    "id": "PHCSE-T1-098",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcsePublicService",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Environment",
+    "stem": "Which law requires waste to be segregated at the source and bans open dumpsites?",
+    "options": [
+      "Philippine Clean Air Act",
+      "Philippine Clean Water Act",
+      "Ecological Solid Waste Management Act",
+      "Climate Change Act"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "R.A. 9003 of 2000, the Ecological Solid Waste Management Act, requires segregation at source, materials recovery facilities and the closure of open dumpsites."
+  },
+  {
+    "id": "PHCSE-T1-099",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcseConstitution",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Amendments",
+    "stem": "Under Article XVII, a petition for amendment by people's initiative must be signed by at least what share of all registered voters?",
+    "options": [
+      "3 percent",
+      "5 percent",
+      "10 percent",
+      "12 percent"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Article XVII, Section 2 requires at least 12% of the total registered voters, with every legislative district represented by at least 3% of its registered voters."
+  },
+  {
+    "id": "PHCSE-T1-100",
+    "section": "cse",
+    "test": 1,
+    "module": 1,
+    "domain": "phcsePublicService",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Environment",
+    "stem": "Which judicial writ may be filed to protect the constitutional right to a balanced and healthful ecology when the damage affects two or more cities or provinces?",
+    "options": [
+      "Writ of habeas corpus",
+      "Writ of kalikasan",
+      "Writ of habeas data",
+      "Writ of amparo"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The writ of kalikasan, under the Supreme Court's 2010 Rules of Procedure for Environmental Cases, covers environmental damage of such magnitude that it harms life, health or property in two or more cities or provinces."
+  },
+  {
+    "id": "PHCSE-T2-001",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseGrammar",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Subject-verb agreement",
+    "stem": "Choose the word that best completes the sentence: \"The list of requirements ___ posted on the bulletin board.\"",
+    "options": [
+      "have",
+      "is",
+      "are",
+      "were"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The subject is \"list\", which is singular, so the verb is \"is\". \"Of requirements\" only describes the list."
+  },
+  {
+    "id": "PHCSE-T2-002",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseVocab",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Synonyms",
+    "stem": "Choose the word closest in meaning to the underlined word: \"The town honored an __eminent__ doctor at the ceremony.\"",
+    "options": [
+      "rich and proud",
+      "young and new",
+      "strict and harsh",
+      "famous and respected"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Eminent means famous and respected in a field, so the town was honoring a well-known, admired doctor."
+  },
+  {
+    "id": "PHCSE-T2-003",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseReading",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Main idea",
+    "stem": "Read the passage, then answer the question.\n\nMangroves grow along muddy coasts where rivers meet the sea. Their tangled roots slow down waves and hold the soil in place. Young fish and crabs hide among the roots until they are big enough to swim out to sea. For coastal villages, mangroves are both a shield and a nursery.\n\nWhat is the main idea of the passage?",
+    "options": [
+      "Fishermen should catch fish among the roots",
+      "Mangroves grow best in deep, clear water",
+      "Crabs are the most common animal at sea",
+      "Mangroves protect coasts and shelter young sea life"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The last sentence sums it up: mangroves are a shield (against waves) and a nursery (for young fish and crabs). The passage says they grow on muddy coasts, not in deep water."
+  },
+  {
+    "id": "PHCSE-T2-004",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseGrammar",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Subject-verb agreement",
+    "stem": "Choose the word that best completes the sentence: \"My brother and my cousin ___ working in the same municipal office.\"",
+    "options": [
+      "has",
+      "was",
+      "is",
+      "are"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Two subjects joined by \"and\" make a plural subject, so the plural verb \"are\" is correct."
+  },
+  {
+    "id": "PHCSE-T2-005",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseVocab",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Synonyms",
+    "stem": "Choose the word closest in meaning to the underlined word: \"The staff worked in a __spacious__ room.\"",
+    "options": [
+      "roomy",
+      "dark",
+      "cold",
+      "noisy"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Spacious means having plenty of space, so roomy."
+  },
+  {
+    "id": "PHCSE-T2-006",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseReading",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Detail",
+    "stem": "Read the passage, then answer the question.\n\nThe health center is open from Monday to Friday, 8:00 a.m. to 5:00 p.m. Free vaccinations for children are given every Wednesday morning. Parents must bring the child's vaccination card. Senior citizens may get a free blood pressure check on any weekday.\n\nWhen are free vaccinations for children given?",
+    "options": [
+      "Saturday mornings",
+      "Any weekday",
+      "Monday to Friday afternoons",
+      "Wednesday mornings"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The passage says vaccinations are given \"every Wednesday morning\". \"Any weekday\" applies to the blood pressure checks."
+  },
+  {
+    "id": "PHCSE-T2-007",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseGrammar",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Verb tense",
+    "stem": "Choose the word that best completes the sentence: \"Yesterday, the barangay captain ___ the new health center.\"",
+    "options": [
+      "opens",
+      "opened",
+      "will open",
+      "has opened"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "\"Yesterday\" marks a finished past time, so the simple past \"opened\" is correct. The present perfect is not used with a stated past time."
+  },
+  {
+    "id": "PHCSE-T2-008",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseVocab",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Synonyms",
+    "stem": "Choose the word closest in meaning to the underlined word: \"The receptionist was __courteous__ to every visitor.\"",
+    "options": [
+      "late",
+      "polite",
+      "rude",
+      "busy"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Courteous means polite and respectful. \"Rude\" is the opposite."
+  },
+  {
+    "id": "PHCSE-T2-009",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseReading",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Detail",
+    "stem": "Read the passage, then answer the question.\n\nTo renew a business permit, the owner submits the old permit, the barangay clearance and proof of payment of local taxes. The papers are checked at Window 3. If they are complete, the new permit is released at Window 5 after two working days.\n\nWhere are the renewal papers checked?",
+    "options": [
+      "At Window 3",
+      "At the barangay hall",
+      "At Window 5",
+      "At the tax office"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Papers are checked at Window 3; Window 5 is where the new permit is released."
+  },
+  {
+    "id": "PHCSE-T2-010",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseGrammar",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Verb tense",
+    "stem": "Choose the words that best complete the sentence: \"She ___ in this office since 2018.\"",
+    "options": [
+      "worked",
+      "is working",
+      "works",
+      "has worked"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "\"Since 2018\" describes an action that began in the past and continues now, which calls for the present perfect \"has worked\"."
+  },
+  {
+    "id": "PHCSE-T2-011",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseVocab",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Synonyms",
+    "stem": "Choose the word closest in meaning to the underlined word: \"The applicant felt __anxious__ while waiting for the interview.\"",
+    "options": [
+      "proud",
+      "bored",
+      "worried",
+      "sleepy"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Anxious means worried or nervous about something that is about to happen, as many people feel before an interview."
+  },
+  {
+    "id": "PHCSE-T2-012",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseReading",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Inference",
+    "stem": "Read the passage, then answer the question.\n\nWhen Lorna arrived at the office, the lights were off and the door was locked. A sign on the glass said the building had no power until noon. She sighed, checked her watch and walked to the coffee shop across the street.\n\nWhat can be inferred about Lorna?",
+    "options": [
+      "She had the key to open the door",
+      "She forgot that it was a holiday",
+      "She planned to wait until the office reopened",
+      "She decided to quit her job that morning"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "She checked the time and went across the street instead of going home, which suggests she meant to wait. The sign explains the closure, so it was not a holiday she forgot."
+  },
+  {
+    "id": "PHCSE-T2-013",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseGrammar",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Articles",
+    "stem": "Choose the word that best completes the sentence: \"Please submit ___ honest answer to every question.\"",
+    "options": [
+      "an",
+      "the",
+      "any",
+      "a"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "\"Honest\" begins with a vowel sound because the h is silent, so it takes \"an\"."
+  },
+  {
+    "id": "PHCSE-T2-014",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseVocab",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Antonyms",
+    "stem": "Choose the word most nearly OPPOSITE in meaning to: \"ascend\"",
+    "options": [
+      "float",
+      "rise",
+      "climb",
+      "descend"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "To ascend is to go up; the opposite is to descend. \"Climb\" and \"rise\" are close in meaning to ascend."
+  },
+  {
+    "id": "PHCSE-T2-015",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseReading",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sequence",
+    "stem": "Read the passage, then answer the question.\n\nWhen the fire alarm sounds, stop work at once. Leave your belongings and walk, do not run, to the nearest exit. Use the stairs, not the elevator. Once outside, go to the assembly area in the parking lot and wait for the head count.\n\nWhat should employees do right after leaving the building?",
+    "options": [
+      "Call the fire station",
+      "Go to the assembly area",
+      "Take the elevator down",
+      "Return for their belongings"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The passage says that once outside, employees go to the assembly area in the parking lot and wait for the head count."
+  },
+  {
+    "id": "PHCSE-T2-016",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseGrammar",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Subject-verb agreement",
+    "stem": "Choose the word that best completes the sentence: \"One of the computers in the records section ___ not working.\"",
+    "options": [
+      "have been",
+      "is",
+      "were",
+      "are"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The subject is \"one\", which is singular, so the verb is \"is\". \"Of the computers\" does not make the subject plural."
+  },
+  {
+    "id": "PHCSE-T2-017",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseVocab",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Antonyms",
+    "stem": "Choose the word most nearly OPPOSITE in meaning to: \"robust\"",
+    "options": [
+      "weak",
+      "healthy",
+      "large",
+      "strong"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Robust means strong and healthy, so its opposite is weak. \"Strong\" and \"healthy\" are close in meaning to robust."
+  },
+  {
+    "id": "PHCSE-T2-018",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseReading",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Paragraph organization",
+    "stem": "Arrange the sentences to form a logical paragraph.\n\n1. Then she poured the batter into a greased pan.\n2. First, Rosa mixed the flour, sugar and eggs in a bowl.\n3. After forty minutes, the cake was ready.\n4. She baked it in a hot oven.",
+    "options": [
+      "1, 2, 4, 3",
+      "2, 1, 4, 3",
+      "2, 1, 3, 4",
+      "2, 4, 1, 3"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Mixing comes first (2), then pouring into the pan (1), then baking (4), and the cake is ready after forty minutes (3)."
+  },
+  {
+    "id": "PHCSE-T2-019",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseGrammar",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Prepositions",
+    "stem": "Choose the word that best completes the sentence: \"The office is closed ___ Saturdays and Sundays.\"",
+    "options": [
+      "at",
+      "on",
+      "for",
+      "in"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Days of the week take \"on\": on Monday, on Saturdays."
+  },
+  {
+    "id": "PHCSE-T2-020",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseVocab",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Antonyms",
+    "stem": "Choose the word most nearly OPPOSITE in meaning to: \"optimistic\"",
+    "options": [
+      "pessimistic",
+      "hopeful",
+      "cheerful",
+      "realistic"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Optimistic means expecting good things; pessimistic means expecting the worst. \"Hopeful\" is a synonym."
+  },
+  {
+    "id": "PHCSE-T2-021",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseReading",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Paragraph organization",
+    "stem": "Arrange the sentences to form a logical paragraph.\n\n1. As a result, many residents now ride the bus to work.\n2. Last year the city opened a new bus route along the main avenue.\n3. Traffic on the avenue has also become lighter.\n4. The buses run every ten minutes and the fare is low.",
+    "options": [
+      "2, 4, 1, 3",
+      "2, 4, 3, 1",
+      "4, 2, 1, 3",
+      "2, 1, 4, 3"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Sentence 2 introduces the route, 4 describes it, 1 gives the result (\"As a result\"), and 3 adds a further effect (\"also\")."
+  },
+  {
+    "id": "PHCSE-T2-022",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseGrammar",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Correct usage",
+    "stem": "Which sentence is grammatically correct?",
+    "options": [
+      "They're forms are on the table over there.",
+      "Their forms are on the table over there.",
+      "Their forms are on the table over their.",
+      "There forms are on the table over their."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "\"Their\" shows ownership, \"there\" shows place, and \"they're\" means \"they are\". Only the first sentence uses each correctly."
+  },
+  {
+    "id": "PHCSE-T2-023",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseVocab",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Meaning in context",
+    "stem": "What does the underlined word mean? \"The heavy rain caused the event to be __postponed__ until next week.\"",
+    "options": [
+      "made much shorter",
+      "cancelled for good",
+      "moved to a later time",
+      "held indoors"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "To postpone is to put off until later. \"Until next week\" shows the event still happens, so it was not cancelled."
+  },
+  {
+    "id": "PHCSE-T2-024",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseReading",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Paragraph organization",
+    "stem": "Which sentence best completes the paragraph?\n\n\"Water is precious during the dry season. Fix leaking faucets right away. ___ Use a pail instead of a hose when washing the car.\"",
+    "options": [
+      "Rain falls often in the wet season.",
+      "Buy bottled water for every meal.",
+      "Water boils at 100 degrees Celsius.",
+      "Turn off the tap while brushing your teeth."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The paragraph lists ways to save water, so the missing sentence should be another water-saving tip."
+  },
+  {
+    "id": "PHCSE-T2-025",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseGrammar",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Correct usage",
+    "stem": "Which sentence is grammatically correct?",
+    "options": [
+      "The report was wrote by Liza and me.",
+      "The report was written by Liza and me.",
+      "The report were written by Liza and me.",
+      "The report was written by Liza and I."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "\"By\" takes the object form \"me\", the passive needs the past participle \"written\", and the singular subject \"report\" takes \"was\"."
+  },
+  {
+    "id": "PHCSE-T2-026",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseVocab",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Meaning in context",
+    "stem": "What does the underlined word mean? \"After the twelve-hour shift, the nurses were __weary__ and went straight home.\"",
+    "options": [
+      "very angry",
+      "very happy",
+      "very tired",
+      "very hungry"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Weary means very tired, which fits people at the end of a twelve-hour shift."
+  },
+  {
+    "id": "PHCSE-T2-027",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseReading",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Vocabulary in context",
+    "stem": "Read the passage, then answer the question.\n\nThe old bridge had become __hazardous__. Its railings were rusted, several planks were missing, and it shook whenever a tricycle crossed it. The town closed it until repairs could be made.\n\nAs used in the passage, \"hazardous\" most nearly means:",
+    "options": [
+      "dangerous",
+      "expensive",
+      "crowded",
+      "beautiful"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Rusted railings, missing planks and shaking describe a dangerous bridge, which is why the town closed it."
+  },
+  {
+    "id": "PHCSE-T2-028",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseGrammar",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Comparison",
+    "stem": "Choose the word that best completes the sentence: \"Of the three applicants, Marco is the ___.\"",
+    "options": [
+      "qualifiedest",
+      "more qualified",
+      "most qualified",
+      "much qualified"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "When three or more are compared, use the superlative (\"most qualified\"). \"More\" compares only two."
+  },
+  {
+    "id": "PHCSE-T2-029",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseVocab",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Idioms",
+    "stem": "What does the underlined idiom mean? \"Losing the old job turned out to be __a blessing in disguise__ for Rosa.\"",
+    "options": [
+      "a problem she could not solve",
+      "a secret that was found out",
+      "a good thing that first seemed bad",
+      "a gift she did not want"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "\"A blessing in disguise\" is something that seems unlucky at first but later turns out to be good."
+  },
+  {
+    "id": "PHCSE-T2-030",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseReading",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Conclusion",
+    "stem": "Read the passage, then answer the question.\n\nIn a survey of 200 market vendors, 150 said they lost sales on rainy days because the market had no roof. After a roof was built over the main aisle, the same vendors reported that rainy-day sales were close to their usual level.\n\nWhich statement is best supported by the passage?",
+    "options": [
+      "The roof helped vendors keep their sales on rainy days",
+      "Rainy days happen less often since the roof was built",
+      "Most vendors left the market after the roof was built",
+      "Only half the vendors were asked about their sales"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Sales on rainy days returned to near normal after the roof went up. The survey covered all 200 vendors, and the roof cannot change the weather."
+  },
+  {
+    "id": "PHCSE-T2-031",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseClerical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Filing",
+    "stem": "File names by surname, then first name, letter by letter. Which name comes FIRST?",
+    "options": [
+      "Reyes, Andres P.",
+      "Reyes, Ana M.",
+      "Reyna, Abel C.",
+      "Reyes, Antonio B."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "All three Reyes names come before Reyna (REYE before REYN). Among them, Ana comes before Andres because A comes before D in the third letter, and Andres before Antonio."
+  },
+  {
+    "id": "PHCSE-T2-032",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseClerical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Filing",
+    "stem": "File names by surname, then first name, letter by letter. Remember that nothing comes before something. Which name comes FIRST?",
+    "options": [
+      "Cruzado, Abel",
+      "Cruzat, Ben",
+      "Cruz, Maria",
+      "Cuenca, Ana"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "\"Nothing comes before something\": Cruz is complete after its four letters, so it files before the longer surnames that begin with CRUZ. Cuenca comes last because CRU is before CUE."
+  },
+  {
+    "id": "PHCSE-T2-033",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseClerical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Filing",
+    "stem": "File names by surname, then first name, letter by letter. Which name is filed THIRD?",
+    "options": [
+      "Bautista, Carla",
+      "Bautista, Carlo",
+      "Bautista, Carmen",
+      "Batista, Carl"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The order is Batista, Carl (BATI before BAUT); Bautista, Carla; Bautista, Carlo (A before O in the fifth letter); then Bautista, Carmen (L before M)."
+  },
+  {
+    "id": "PHCSE-T2-034",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseClerical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Filing",
+    "stem": "File names by surname, then first name, letter by letter. Which name is filed SECOND?",
+    "options": [
+      "Mendez, Luis",
+      "Medina, Lito",
+      "Mendoza, Luz",
+      "Mendoza, Lucia"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The order is Medina (MED before MEN), Mendez (E before O in the fifth letter), Mendoza, Lucia, then Mendoza, Luz (C before Z)."
+  },
+  {
+    "id": "PHCSE-T2-035",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseClerical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Filing",
+    "stem": "File names by surname, then first name, letter by letter. A name with no middle initial files before the same name with one. Which name comes FIRST?",
+    "options": [
+      "Garcia, Jose",
+      "Garcia, Josefina",
+      "Garcia, Jose C.",
+      "Garcia, Jose A."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "\"Nothing comes before something\": Garcia, Jose with no initial comes first, then Jose A., Jose C., and finally Josefina, whose first name is longer."
+  },
+  {
+    "id": "PHCSE-T2-036",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseClerical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Filing",
+    "stem": "Business names are filed word by word as written, ignoring the word \"The\". Which name comes FIRST?",
+    "options": [
+      "Baguio Pine Traders",
+      "Bagong Buhay Cooperative",
+      "The Bayanihan Credit Union",
+      "Bagumbayan Farmers Association"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Compare letter by letter: BAGO comes before BAGU, so Bagong Buhay is first. \"The\" is ignored, so The Bayanihan files under B-A-Y and comes last."
+  },
+  {
+    "id": "PHCSE-T2-037",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseClerical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Filing",
+    "stem": "File names by surname, then first name, letter by letter. Arrange the names in filing order:\n\n1. Santos, Elena\n2. Santiago, Rey\n3. Sanchez, Mila\n4. Santos, Edgar",
+    "options": [
+      "2, 3, 4, 1",
+      "3, 2, 4, 1",
+      "3, 4, 2, 1",
+      "3, 2, 1, 4"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Sanchez comes first (SANC before SANT), then Santiago (SANTI before SANTO), then the two Santos names: Edgar before Elena (D before L)."
+  },
+  {
+    "id": "PHCSE-T2-038",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseClerical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Filing",
+    "stem": "Titles such as Atty., Dr., Engr. and Ms. are ignored in filing, and persons are filed by surname. Which comes FIRST?",
+    "options": [
+      "Dr. Ella Quiambao",
+      "Engr. Noel Panganiban",
+      "Ms. Rina Salazar",
+      "Atty. Paolo Ramos"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Ignoring the titles, the surnames run Panganiban, Quiambao, Ramos, Salazar. Filing by the title would wrongly put Atty. first."
+  },
+  {
+    "id": "PHCSE-T2-039",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseClerical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Filing",
+    "stem": "Folders are filed by date, oldest first. Which folder is filed FIRST?",
+    "options": [
+      "December 20, 2023",
+      "March 3, 2024",
+      "January 15, 2025",
+      "December 2, 2023"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Compare the years first: the two 2023 dates come before 2024 and 2025. Between them, December 2 comes before December 20."
+  },
+  {
+    "id": "PHCSE-T2-040",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseClerical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Filing",
+    "stem": "Case folders are filed in ascending order by year and then by case number. Which folder is filed THIRD?",
+    "options": [
+      "2023-0915",
+      "2024-0153",
+      "2024-0135",
+      "2024-0103"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The order is 2023-0915 (the earlier year), then 2024-0103, 2024-0135 and 2024-0153."
+  },
+  {
+    "id": "PHCSE-T2-041",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseClerical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Filing",
+    "stem": "File names by surname, then first name, letter by letter. In which pair is the first name correctly filed before the second?",
+    "options": [
+      "Lima, Tess / Lim, Tess",
+      "Ling, Rose / Lin, Rose",
+      "Lim, Ben / Lim, Belen",
+      "Lim, Ana / Lim, Andrea"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Ana files before Andrea (A before D in the third letter). Belen comes before Ben, and Lim and Lin come before Lima and Ling because nothing comes before something."
+  },
+  {
+    "id": "PHCSE-T2-042",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseClerical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Filing",
+    "stem": "A cabinet has four drawers labeled A to F, G to L, M to R and S to Z by the first letter of the surname. Which drawer holds the folder of \"Ocampo, Rodel\"?",
+    "options": [
+      "S to Z",
+      "M to R",
+      "G to L",
+      "A to F"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Folders are filed by surname, so Ocampo goes under O, which is in the M to R drawer. R is the first name and is not used to choose the drawer."
+  },
+  {
+    "id": "PHCSE-T2-043",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseClerical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Spelling",
+    "stem": "Which word is spelled correctly?",
+    "options": [
+      "occurrence",
+      "occurrance",
+      "occurence",
+      "ocurrence"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Occurrence has double c, double r and ends in -ence: occur doubles its r before -ence."
+  },
+  {
+    "id": "PHCSE-T2-044",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseClerical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Spelling",
+    "stem": "Which word is spelled correctly?",
+    "options": [
+      "acquaintance",
+      "acquantance",
+      "acquaintence",
+      "aquaintance"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Acquaintance has a c before the q and ends in -ance."
+  },
+  {
+    "id": "PHCSE-T2-045",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseClerical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Spelling",
+    "stem": "Which word is spelled correctly?",
+    "options": [
+      "achieve",
+      "acheeve",
+      "acheive",
+      "achive"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "\"I before e except after c\": there is no c before the ie, so achieve."
+  },
+  {
+    "id": "PHCSE-T2-046",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseClerical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Spelling",
+    "stem": "Which word is spelled correctly?",
+    "options": [
+      "maintenance",
+      "maintanance",
+      "maintainance",
+      "maintenence"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Maintenance drops the i of maintain: main-ten-ance."
+  },
+  {
+    "id": "PHCSE-T2-047",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseClerical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Spelling",
+    "stem": "Which word is spelled correctly?",
+    "options": [
+      "commitment",
+      "commitmint",
+      "committment",
+      "comitment"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Commitment has double m but only one t before -ment: commit + ment."
+  },
+  {
+    "id": "PHCSE-T2-048",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseClerical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Spelling",
+    "stem": "Which word is spelled correctly?",
+    "options": [
+      "maintenance",
+      "maintanance",
+      "maintainance",
+      "maintenence"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The verb is maintain, but the noun drops the i: main-te-nance."
+  },
+  {
+    "id": "PHCSE-T2-049",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseClerical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Spelling",
+    "stem": "Which word is spelled correctly?",
+    "options": [
+      "accessible",
+      "acessible",
+      "accessable",
+      "accesible"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Accessible has double c, double s and ends in -ible."
+  },
+  {
+    "id": "PHCSE-T2-050",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseClerical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Spelling",
+    "stem": "Which word is spelled correctly?",
+    "options": [
+      "permissible",
+      "permmissible",
+      "permissable",
+      "permisible"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Permissible has double s and ends in -ible."
+  },
+  {
+    "id": "PHCSE-T2-051",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseClerical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Spelling",
+    "stem": "Which word is spelled correctly?",
+    "options": [
+      "questionnaire",
+      "questionnaier",
+      "questionaire",
+      "questionnare"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Questionnaire has double n and ends in -aire."
+  },
+  {
+    "id": "PHCSE-T2-052",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseClerical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Spelling",
+    "stem": "Which word is spelled correctly?",
+    "options": [
+      "recommend",
+      "reccomend",
+      "reccommend",
+      "recomend"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Recommend has one c and double m: re + commend."
+  },
+  {
+    "id": "PHCSE-T2-053",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseClerical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Spelling",
+    "stem": "Which word is misspelled?",
+    "options": [
+      "receipt",
+      "schedule",
+      "goverment",
+      "address"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct spelling is government: govern + ment, so there is an n before the m. The other three are spelled correctly."
+  },
+  {
+    "id": "PHCSE-T2-054",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseClerical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Spelling",
+    "stem": "Which word is misspelled?",
+    "options": [
+      "exaggerate",
+      "threshold",
+      "definately",
+      "perseverance"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct spelling is definitely, built on the word finite. Threshold, exaggerate and perseverance are correct."
+  },
+  {
+    "id": "PHCSE-T2-055",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseClerical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Spelling",
+    "stem": "Choose the correctly spelled word to complete the sentence: \"Please keep the ___ for your payment.\"",
+    "options": [
+      "reciept",
+      "receipet",
+      "receipt",
+      "receit"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Receipt has a silent p and follows \"e before i after c\"."
+  },
+  {
+    "id": "PHCSE-T2-056",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseWordProblems",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Change",
+    "stem": "Ana bought 3 notebooks at ₱45 each and 2 pens at ₱18 each. She paid with a ₱500 bill. How much change did she get?",
+    "options": [
+      "₱329",
+      "₱339",
+      "₱371",
+      "₱437"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Notebooks cost 3 x 45 = ₱135 and pens 2 x 18 = ₱36, a total of ₱171. Change = 500 - 171 = ₱329. ₱437 counts only one notebook and one pen."
+  },
+  {
+    "id": "PHCSE-T2-057",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseNumbers",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Addition",
+    "stem": "What is 1,248 + 3,795?",
+    "options": [
+      "5,043",
+      "5,053",
+      "5,143",
+      "6,043"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "8 + 5 = 13, carry 1; 4 + 9 + 1 = 14, carry 1; 2 + 7 + 1 = 10, carry 1; 1 + 3 + 1 = 5. The sum is 5,043."
+  },
+  {
+    "id": "PHCSE-T2-058",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseWordProblems",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Rate",
+    "stem": "A clerk files 48 folders an hour. How many folders can she file in 6.5 hours?",
+    "options": [
+      "288",
+      "302",
+      "312",
+      "336"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "48 x 6 = 288 and 48 x 0.5 = 24, so 288 + 24 = 312."
+  },
+  {
+    "id": "PHCSE-T2-059",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseNumbers",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Subtraction",
+    "stem": "What is 7,002 - 3,568?",
+    "options": [
+      "3,434",
+      "3,534",
+      "3,544",
+      "4,434"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Borrow across the zeros: 7,002 - 3,568 = 3,434. Check: 3,434 + 3,568 = 7,002."
+  },
+  {
+    "id": "PHCSE-T2-060",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseWordProblems",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Division",
+    "stem": "A sack of rice weighs 25 kg. A family uses 1.25 kg a day. How many days will the sack last?",
+    "options": [
+      "18 days",
+      "20 days",
+      "22 days",
+      "24 days"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "25 ÷ 1.25 = 20 days."
+  },
+  {
+    "id": "PHCSE-T2-061",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseNumbers",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Multiplication",
+    "stem": "What is 36 x 25?",
+    "options": [
+      "750",
+      "800",
+      "875",
+      "900"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "36 x 25 = 36 x 100 ÷ 4 = 3,600 ÷ 4 = 900."
+  },
+  {
+    "id": "PHCSE-T2-062",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseWordProblems",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Wages",
+    "stem": "Mang Ramon earns ₱650 a day and works 22 days a month. How much does he earn in a month?",
+    "options": [
+      "₱13,000",
+      "₱13,650",
+      "₱14,300",
+      "₱14,950"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "650 x 22 = 650 x 20 + 650 x 2 = 13,000 + 1,300 = ₱14,300."
+  },
+  {
+    "id": "PHCSE-T2-063",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseNumbers",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Division",
+    "stem": "What is 2,856 ÷ 12?",
+    "options": [
+      "228",
+      "238",
+      "248",
+      "2,380"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "12 x 200 = 2,400, leaving 456; 12 x 38 = 456. So the answer is 238."
+  },
+  {
+    "id": "PHCSE-T2-064",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseWordProblems",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Percent",
+    "stem": "Of 120 employees in an office, 45 are men. What percent are women?",
+    "options": [
+      "37.5%",
+      "45%",
+      "60%",
+      "62.5%"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Women = 120 - 45 = 75, and 75 ÷ 120 = 0.625 = 62.5%. 37.5% is the share of men."
+  },
+  {
+    "id": "PHCSE-T2-065",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseNumbers",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Fractions",
+    "stem": "What is 2/5 of 450?",
+    "options": [
+      "180",
+      "200",
+      "225",
+      "270"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "450 ÷ 5 = 90, and 2 x 90 = 180. 270 is three fifths, the part left over."
+  },
+  {
+    "id": "PHCSE-T2-066",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseWordProblems",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Speed",
+    "stem": "A jeepney travels 21 km in 35 minutes. What is its speed in kilometers per hour?",
+    "options": [
+      "21 km/h",
+      "24 km/h",
+      "36 km/h",
+      "42 km/h"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "35 minutes is 35/60 = 7/12 of an hour, so speed = 21 ÷ 7/12 = 21 x 12 ÷ 7 = 36 km/h. 42 km/h would be the speed for 30 minutes."
+  },
+  {
+    "id": "PHCSE-T2-067",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseNumbers",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Fractions",
+    "stem": "What is 1/2 + 1/3?",
+    "options": [
+      "1/6",
+      "2/5",
+      "2/3",
+      "5/6"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Use sixths: 3/6 + 2/6 = 5/6. Adding the tops and the bottoms gives the wrong answer 2/5."
+  },
+  {
+    "id": "PHCSE-T2-068",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseWordProblems",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Time",
+    "stem": "A meeting started at 9:45 a.m. and lasted 2 hours and 35 minutes. What time did it end?",
+    "options": [
+      "12:20 p.m.",
+      "12:30 p.m.",
+      "11:20 a.m.",
+      "12:10 p.m."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "9:45 + 2 hours = 11:45; 11:45 + 35 minutes = 12:20 p.m."
+  },
+  {
+    "id": "PHCSE-T2-069",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseNumbers",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Decimals",
+    "stem": "What is 4.75 + 2.6?",
+    "options": [
+      "5.01",
+      "6.35",
+      "7.35",
+      "7.45"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Line up the decimal points: 4.75 + 2.60 = 7.35. 5.01 comes from adding 2.6 as if it were 0.26."
+  },
+  {
+    "id": "PHCSE-T2-070",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseWordProblems",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ratio",
+    "stem": "The ratio of men to women among 56 employees is 3 : 4. How many women are there?",
+    "options": [
+      "14",
+      "24",
+      "28",
+      "32"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "There are 3 + 4 = 7 parts, so one part is 56 ÷ 7 = 8 employees. Women = 4 x 8 = 32; men are 24. 28 is simply half the staff."
+  },
+  {
+    "id": "PHCSE-T2-071",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseNumbers",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Percent",
+    "stem": "What is 20% of 115?",
+    "options": [
+      "22",
+      "23",
+      "25",
+      "92"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "20% is one fifth, and 115 ÷ 5 = 23. 92 is the remaining 80%."
+  },
+  {
+    "id": "PHCSE-T2-072",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseWordProblems",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Profit",
+    "stem": "A vendor buys an item for ₱800 and sells it for ₱1,000. What is her profit as a percent of the cost?",
+    "options": [
+      "12.5%",
+      "15%",
+      "20%",
+      "25%"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Profit = ₱200, and 200 ÷ 800 = 25%. 20% would be the profit as a share of the selling price."
+  },
+  {
+    "id": "PHCSE-T2-073",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseNumbers",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Number sequence",
+    "stem": "What number comes next? 7, 13, 19, 25, ?",
+    "options": [
+      "30",
+      "31",
+      "32",
+      "37"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Each term is 6 more than the one before: 25 + 6 = 31."
+  },
+  {
+    "id": "PHCSE-T2-074",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseWordProblems",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Fractions",
+    "stem": "A water tank holds 1,500 liters and is 2/5 full. How many more liters are needed to fill it?",
+    "options": [
+      "300 liters",
+      "600 liters",
+      "750 liters",
+      "900 liters"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "It holds 2/5 x 1,500 = 600 L now, so 1,500 - 600 = 900 L more are needed."
+  },
+  {
+    "id": "PHCSE-T2-075",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseNumbers",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Number sequence",
+    "stem": "What number comes next? 1, 8, 27, 64, ?",
+    "options": [
+      "81",
+      "100",
+      "125",
+      "216"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "These are the cubes 1 x 1 x 1, 2 x 2 x 2, 3 x 3 x 3 and 4 x 4 x 4, so the next is 5 x 5 x 5 = 125."
+  },
+  {
+    "id": "PHCSE-T2-076",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseWordProblems",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Decimals",
+    "stem": "Three boxes weigh 12.5 kg, 8.75 kg and 10.25 kg. What is their total weight?",
+    "options": [
+      "30.5 kg",
+      "31.25 kg",
+      "31.5 kg",
+      "32.5 kg"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "12.5 + 8.75 = 21.25, and 21.25 + 10.25 = 31.5 kg."
+  },
+  {
+    "id": "PHCSE-T2-077",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseNumbers",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number sequence",
+    "stem": "What number comes next? 4, 20, 100, 500, ?",
+    "options": [
+      "520",
+      "1,000",
+      "2,000",
+      "2,500"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Each term is five times the one before: 500 x 5 = 2,500. Adding 20 (520) or doubling (1,000) misses the pattern."
+  },
+  {
+    "id": "PHCSE-T2-078",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseWordProblems",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Proportion",
+    "stem": "If 5 kg of mangoes cost ₱450, how much do 8 kg cost?",
+    "options": [
+      "₱680",
+      "₱720",
+      "₱750",
+      "₱810"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "One kilo costs 450 ÷ 5 = ₱90, so 8 kg cost 8 x 90 = ₱720."
+  },
+  {
+    "id": "PHCSE-T2-079",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseNumbers",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number sequence",
+    "stem": "What number comes next? 120, 116, 108, 96, 80, ?",
+    "options": [
+      "40",
+      "56",
+      "60",
+      "64"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The amounts taken away grow by 4: 4, 8, 12, 16, then 20. So 80 - 20 = 60."
+  },
+  {
+    "id": "PHCSE-T2-080",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseWordProblems",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Overtime",
+    "stem": "A worker is paid ₱80 an hour and 1.25 times that rate for overtime. How much does he earn for 8 regular hours and 2 overtime hours?",
+    "options": [
+      "₱640",
+      "₱800",
+      "₱820",
+      "₱840"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Regular pay = 8 x 80 = ₱640. The overtime rate is 80 x 1.25 = ₱100, so 2 hours earn ₱200. Total ₱840. ₱640 leaves out the overtime."
+  },
+  {
+    "id": "PHCSE-T2-081",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseConstitution",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Declaration of principles",
+    "stem": "According to Article II of the 1987 Constitution, sovereignty resides in:",
+    "options": [
+      "the Congress",
+      "the President",
+      "the Supreme Court",
+      "the people"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Article II, Section 1: \"Sovereignty resides in the people and all government authority emanates from them.\""
+  },
+  {
+    "id": "PHCSE-T2-082",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcsePublicService",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "R.A. 6713",
+    "stem": "R.A. 6713 is known as the:",
+    "options": [
+      "Code of Conduct and Ethical Standards",
+      "Local Government Code",
+      "Anti-Graft and Corrupt Practices Act",
+      "Government Auditing Code of the Philippines"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "R.A. 6713 of 1989 is the Code of Conduct and Ethical Standards for Public Officials and Employees. The Anti-Graft and Corrupt Practices Act is R.A. 3019 and the Local Government Code is R.A. 7160. The Government Auditing Code is a 1978 decree, not a republic act."
+  },
+  {
+    "id": "PHCSE-T2-083",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseConstitution",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Bill of Rights",
+    "stem": "In which article of the 1987 Constitution is the Bill of Rights found?",
+    "options": [
+      "Article XIII",
+      "Article III",
+      "Article IV",
+      "Article II"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Article III is the Bill of Rights. Article II states principles and policies, Article IV covers citizenship and Article XIII social justice and human rights."
+  },
+  {
+    "id": "PHCSE-T2-084",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcsePublicService",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "R.A. 6713",
+    "stem": "Which norm of conduct in R.A. 6713 says public servants should lead modest lives and avoid extravagant display of wealth?",
+    "options": [
+      "Professionalism",
+      "Responsiveness to the public",
+      "Political neutrality",
+      "Simple living"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Section 4(h), simple living, requires modest lives appropriate to one's position and income, with no extravagant or ostentatious display of wealth."
+  },
+  {
+    "id": "PHCSE-T2-085",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseConstitution",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Executive department",
+    "stem": "What is the term of office of the President under the 1987 Constitution?",
+    "options": [
+      "Six years, with no reelection",
+      "Three years, with two reelections",
+      "Four years, with one reelection",
+      "Six years, with one reelection"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Article VII, Section 4: the President is elected for a term of six years and is not eligible for any reelection."
+  },
+  {
+    "id": "PHCSE-T2-086",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcsePublicService",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "R.A. 6713",
+    "stem": "Which norm of conduct in R.A. 6713 includes promoting the use of locally produced goods, resources and technology?",
+    "options": [
+      "Justness and sincerity",
+      "Commitment to democracy",
+      "Commitment to public interest",
+      "Nationalism and patriotism"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Section 4(f), nationalism and patriotism, calls for loyalty to the Republic and the Filipino people and promoting locally produced goods, resources and technology."
+  },
+  {
+    "id": "PHCSE-T2-087",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseConstitution",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Suffrage",
+    "stem": "What is the minimum age to vote under Article V of the 1987 Constitution?",
+    "options": [
+      "18 years",
+      "20 years",
+      "21 years",
+      "25 years"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Article V, Section 1 gives suffrage to citizens at least 18 years old who meet the residence requirements."
+  },
+  {
+    "id": "PHCSE-T2-088",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcsePublicService",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "R.A. 6713",
+    "stem": "Under R.A. 6713, which government agency has the primary responsibility for administering and enforcing the Code?",
+    "options": [
+      "Department of Justice",
+      "Civil Service Commission",
+      "Commission on Audit",
+      "Commission on Elections"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Section 12 gives the Civil Service Commission primary responsibility for administering and enforcing the Act and authority to issue its rules."
+  },
+  {
+    "id": "PHCSE-T2-089",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseConstitution",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Constitutional commissions",
+    "stem": "Which three are the constitutional commissions under Article IX?",
+    "options": [
+      "Civil Service, Human Rights, Audit",
+      "Civil Service, Elections, Audit",
+      "Civil Service, Elections, Ombudsman",
+      "Elections, Audit, Ombudsman"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Article IX names three independent constitutional commissions: the Civil Service Commission, the Commission on Elections and the Commission on Audit. The Commission on Human Rights is created under Article XIII."
+  },
+  {
+    "id": "PHCSE-T2-090",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcsePublicService",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "R.A. 6713",
+    "stem": "R.A. 6713 says documents should, as far as practicable, need no more than how many signatories?",
+    "options": [
+      "Five",
+      "Seven",
+      "Three",
+      "Two"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Section 5(c) requires documents to be processed within a reasonable time and, as far as practicable, to carry not more than three signatories."
+  },
+  {
+    "id": "PHCSE-T2-091",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseConstitution",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Bill of Rights",
+    "stem": "Under the Bill of Rights, a person under investigation for an offense has the right to:",
+    "options": [
+      "refuse to give his or her name",
+      "be released without bail",
+      "remain silent and have counsel",
+      "choose the investigating officer"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Article III, Section 12(1) guarantees the right to be informed of the right to remain silent and to have competent and independent counsel, preferably of one's own choice."
+  },
+  {
+    "id": "PHCSE-T2-092",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcsePublicService",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Human rights",
+    "stem": "Human Rights Day is observed every year on:",
+    "options": [
+      "June 12",
+      "August 21",
+      "December 10",
+      "November 30"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "December 10 marks the adoption of the Universal Declaration of Human Rights in 1948. June 12 is Independence Day and November 30 is Bonifacio Day."
+  },
+  {
+    "id": "PHCSE-T2-093",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseConstitution",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Language",
+    "stem": "What is the national language of the Philippines under the 1987 Constitution?",
+    "options": [
+      "Cebuano",
+      "Filipino",
+      "English",
+      "Tagalog"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Article XIV, Section 6: \"The national language of the Philippines is Filipino.\" Filipino and, until otherwise provided by law, English are the official languages."
+  },
+  {
+    "id": "PHCSE-T2-094",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcsePublicService",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Human rights",
+    "stem": "Which law protects women and their children from physical, sexual, psychological and economic abuse by a partner?",
+    "options": [
+      "Anti-Torture Act of 2009",
+      "Anti-Trafficking Act of 2003",
+      "Safe Spaces Act of 2019",
+      "Anti-VAWC Act of 2004"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "R.A. 9262, the Anti-Violence Against Women and Their Children (Anti-VAWC) Act of 2004, covers physical, sexual, psychological and economic abuse by a partner or former partner. The Safe Spaces Act covers gender-based harassment in streets, workplaces and online."
+  },
+  {
+    "id": "PHCSE-T2-095",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseConstitution",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Declaration of principles",
+    "stem": "Which principle does the 1987 Constitution declare \"inviolable\"?",
+    "options": [
+      "Supremacy of the President",
+      "Public ownership of all land",
+      "Compulsory military service",
+      "Separation of Church and State"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Article II, Section 6: \"The separation of Church and State shall be inviolable.\""
+  },
+  {
+    "id": "PHCSE-T2-096",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcsePublicService",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Peace and human rights",
+    "stem": "The Philippines is a party to the United Nations convention that protects the rights of every person below 18 years of age. What is it called?",
+    "options": [
+      "Charter of the United Nations",
+      "Convention on the Rights of the Child",
+      "Universal Declaration of Human Rights",
+      "Geneva Convention on Refugees"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Convention on the Rights of the Child (1989) covers every person below 18. The Philippines ratified it in 1990."
+  },
+  {
+    "id": "PHCSE-T2-097",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseConstitution",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Bill of Rights",
+    "stem": "Under the Bill of Rights, no person shall be imprisoned for:",
+    "options": [
+      "murder",
+      "estafa",
+      "theft",
+      "debt"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Article III, Section 20: \"No person shall be imprisoned for debt or non-payment of a poll tax.\" Theft, estafa and murder are crimes punished by law."
+  },
+  {
+    "id": "PHCSE-T2-098",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcsePublicService",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Environment",
+    "stem": "Which law sets national air quality standards and bans the incineration of municipal, medical and hazardous waste that gives off toxic fumes?",
+    "options": [
+      "Philippine Clean Air Act of 1999",
+      "Philippine Clean Water Act of 2004",
+      "Climate Change Act of 2009",
+      "Philippine Fisheries Code of 1998"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "R.A. 8749, the Philippine Clean Air Act of 1999, sets air quality standards and bans incinerating municipal, biomedical and hazardous waste in a way that emits poisonous and toxic fumes. Open burning of solid waste is also banned under R.A. 9003."
+  },
+  {
+    "id": "PHCSE-T2-099",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcseConstitution",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "History of the Constitution",
+    "stem": "On what date was the 1987 Constitution ratified by the Filipino people in a plebiscite?",
+    "options": [
+      "January 17, 1973",
+      "February 2, 1987",
+      "October 15, 1986",
+      "February 25, 1986"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The plebiscite was held on February 2, 1987. The Constitutional Commission presented its draft on October 15, 1986, February 25, 1986 ended the EDSA People Power Revolution, and January 17, 1973 is when the 1973 Constitution was proclaimed ratified."
+  },
+  {
+    "id": "PHCSE-T2-100",
+    "section": "cse",
+    "test": 2,
+    "module": 1,
+    "domain": "phcsePublicService",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Environment",
+    "stem": "Which agency is the lead government agency for environment and natural resources?",
+    "options": [
+      "DENR",
+      "DOTr",
+      "DILG",
+      "DPWH"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Department of Environment and Natural Resources (DENR) manages and protects the country's environment and natural resources. DILG oversees local governments, DPWH public works and DOTr transportation."
+  },
+  {
+    "id": "PHCSE-D-001",
+    "section": "cse",
+    "test": 0,
+    "module": 1,
+    "domain": "phcseGrammar",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Subject-verb agreement",
+    "stem": "Choose the word that best completes the sentence: \"The committee ___ its decision after a long meeting.\"",
+    "options": [
+      "announce",
+      "have announce",
+      "announced",
+      "announcing"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "\"Committee\" acting as one body is singular, which the singular pronoun \"its\" confirms, so it takes the singular past form \"announced\"."
+  },
+  {
+    "id": "PHCSE-D-002",
+    "section": "cse",
+    "test": 0,
+    "module": 1,
+    "domain": "phcseVocab",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Synonyms",
+    "stem": "Choose the word closest in meaning to the underlined word: \"The office will __disseminate__ the memo to all divisions.\"",
+    "options": [
+      "revise",
+      "spread",
+      "approve",
+      "withdraw"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "To disseminate is to spread information widely, here to all divisions."
+  },
+  {
+    "id": "PHCSE-D-003",
+    "section": "cse",
+    "test": 0,
+    "module": 1,
+    "domain": "phcseReading",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Main idea",
+    "stem": "Read the passage, then answer the question.\n\nA good filing system saves time every day. When folders are labeled clearly and kept in order, any staff member can find a document in seconds. When they are not, people waste hours searching and important papers can be lost for good.\n\nWhat is the main idea?",
+    "options": [
+      "Folders should always be the same color",
+      "Only one person should handle the files",
+      "Papers are lost mainly because of floods",
+      "An orderly filing system saves time and papers"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The first sentence states the point, and the rest contrasts order (quick finding) with disorder (lost time and papers)."
+  },
+  {
+    "id": "PHCSE-D-004",
+    "section": "cse",
+    "test": 0,
+    "module": 1,
+    "domain": "phcseGrammar",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Verb forms",
+    "stem": "Choose the word that best completes the sentence: \"The documents have already been ___ to the regional office.\"",
+    "options": [
+      "sending",
+      "send",
+      "sent",
+      "sended"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "After \"have been\" the passive needs the past participle. The past participle of \"send\" is \"sent\"; \"sended\" is not a word."
+  },
+  {
+    "id": "PHCSE-D-005",
+    "section": "cse",
+    "test": 0,
+    "module": 1,
+    "domain": "phcseVocab",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Antonyms",
+    "stem": "Choose the word most nearly OPPOSITE in meaning to: \"conceal\"",
+    "options": [
+      "protect",
+      "hide",
+      "reveal",
+      "forget"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "To conceal is to hide; the opposite is to reveal. \"Hide\" is a synonym."
+  },
+  {
+    "id": "PHCSE-D-006",
+    "section": "cse",
+    "test": 0,
+    "module": 1,
+    "domain": "phcseReading",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Inference",
+    "stem": "Read the passage, then answer the question.\n\nThe notice at the pier said that all boats to the island were cancelled because of a storm signal. Ben read it, folded his ticket into his wallet and asked the guard where the nearest inn was.\n\nWhat can be inferred about Ben?",
+    "options": [
+      "He expects to travel once the trips resume",
+      "He plans to swim across to the island",
+      "He works as a guard at the pier",
+      "He has decided to sell his ticket"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "He keeps his ticket and looks for a place to stay, so he expects to sail when the trips resume."
+  },
+  {
+    "id": "PHCSE-D-007",
+    "section": "cse",
+    "test": 0,
+    "module": 1,
+    "domain": "phcseGrammar",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Correct usage",
+    "stem": "Which sentence is grammatically correct?",
+    "options": [
+      "The new rule affect every office.",
+      "The new rule affects every office.",
+      "The new rule effect every office.",
+      "The new rule effects every office."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "\"Affect\" is the verb meaning to influence; \"effect\" is usually a noun (a result). The singular subject \"rule\" also needs \"affects\"."
+  },
+  {
+    "id": "PHCSE-D-008",
+    "section": "cse",
+    "test": 0,
+    "module": 1,
+    "domain": "phcseVocab",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Meaning in context",
+    "stem": "What does the underlined word mean? \"The complaint was __dismissed__ because it lacked evidence.\"",
+    "options": [
+      "made public",
+      "thrown out",
+      "approved",
+      "delayed"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A dismissed complaint is rejected and not pursued, here for lack of evidence."
+  },
+  {
+    "id": "PHCSE-D-009",
+    "section": "cse",
+    "test": 0,
+    "module": 1,
+    "domain": "phcseReading",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Paragraph organization",
+    "stem": "Arrange the sentences to form a logical paragraph.\n\n1. Because of this, farmers in the area now plant drought-tolerant rice.\n2. In recent years the dry season in the region has grown longer.\n3. They also store rainwater in small farm ponds.\n4. Many fields no longer get enough water for ordinary rice.",
+    "options": [
+      "2, 1, 4, 3",
+      "2, 4, 1, 3",
+      "2, 4, 3, 1",
+      "4, 2, 1, 3"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Sentence 2 states the cause, 4 its effect on fields, 1 the farmers' response (\"Because of this\"), and 3 a second response (\"also\")."
+  },
+  {
+    "id": "PHCSE-D-010",
+    "section": "cse",
+    "test": 0,
+    "module": 1,
+    "domain": "phcseClerical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Filing",
+    "stem": "File names by surname, then first name, letter by letter. Treat a surname prefix such as De or Del as part of the surname and ignore spaces. Which name is filed LAST?",
+    "options": [
+      "Del Rosario, Mia",
+      "Delgado, Rita",
+      "Dela Cruz, Pedro",
+      "De Leon, Jose"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Read as one word, the surnames are DELACRUZ, DELEON, DELGADO and DELROSARIO. Compare the fourth letters: A, E, G, R, so Del Rosario is last."
+  },
+  {
+    "id": "PHCSE-D-011",
+    "section": "cse",
+    "test": 0,
+    "module": 1,
+    "domain": "phcseClerical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Filing",
+    "stem": "Business names are filed word by word as written, ignoring the word \"The\". Which name comes LAST?",
+    "options": [
+      "The Bayanihan Credit Union",
+      "Baguio Pine Traders",
+      "Bagong Buhay Cooperative",
+      "Bagumbayan Farmers Association"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "With \"The\" ignored, Bayanihan files under B-A-Y, after every name beginning B-A-G."
+  },
+  {
+    "id": "PHCSE-D-012",
+    "section": "cse",
+    "test": 0,
+    "module": 1,
+    "domain": "phcseClerical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Filing",
+    "stem": "Arrange the memos from oldest to newest:\n\n1. 5 May 2025\n2. 15 April 2025\n3. 2 May 2025\n4. 30 April 2025",
+    "options": [
+      "4, 2, 3, 1",
+      "2, 4, 1, 3",
+      "2, 3, 4, 1",
+      "2, 4, 3, 1"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "April comes before May: 15 April, then 30 April, then 2 May, then 5 May."
+  },
+  {
+    "id": "PHCSE-D-013",
+    "section": "cse",
+    "test": 0,
+    "module": 1,
+    "domain": "phcseAnalytical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Word analogy",
+    "stem": "LOUD : QUIET :: FULL : ?",
+    "options": [
+      "Heavy",
+      "Empty",
+      "Round",
+      "Large"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Loud and quiet are opposites; the opposite of full is empty."
+  },
+  {
+    "id": "PHCSE-D-014",
+    "section": "cse",
+    "test": 0,
+    "module": 1,
+    "domain": "phcseClerical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Filing",
+    "stem": "Subject folders are filed alphabetically by heading, letter by letter. Which heading comes FIRST?",
+    "options": [
+      "Leave Credits",
+      "Leave Applications",
+      "Legal Opinions",
+      "Learning Sessions"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "LEAR comes before LEAV because R comes before V, so Learning Sessions is first. Legal comes last (LEG after LEA)."
+  },
+  {
+    "id": "PHCSE-D-015",
+    "section": "cse",
+    "test": 0,
+    "module": 1,
+    "domain": "phcseClerical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Filing",
+    "stem": "File names by surname, then first name, letter by letter. Which name comes LAST?",
+    "options": [
+      "Yabut, Zaldy",
+      "Yap, Wilson",
+      "Ylagan, Abel",
+      "Yu, Annie"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Compare the second letters: A, A, L, U. Yu has U, so it comes last. The first names do not matter here."
+  },
+  {
+    "id": "PHCSE-D-016",
+    "section": "cse",
+    "test": 0,
+    "module": 1,
+    "domain": "phcseClerical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Filing",
+    "stem": "Which name is out of alphabetical order in this list?\n\nAbad, Acosta, Adriano, Abellera, Aguilar",
+    "options": [
+      "Acosta",
+      "Abellera",
+      "Aguilar",
+      "Adriano"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Abellera (ABE) belongs between Abad (ABA) and Acosta (ACO), not after Adriano."
+  },
+  {
+    "id": "PHCSE-D-017",
+    "section": "cse",
+    "test": 0,
+    "module": 1,
+    "domain": "phcseClerical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Filing",
+    "stem": "File names by surname, then first name, letter by letter. Which name should be filed between \"Pascual, Dan\" and \"Pascual, Dina\"?",
+    "options": [
+      "Pascual, Dale",
+      "Pascual, Dolor",
+      "Pascual, Dennis",
+      "Pasco, Daniel"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "DAN comes before DENNIS, which comes before DINA (E between A and I). Dale files before Dan, Dolor after Dina, and Pasco before every Pascual."
+  },
+  {
+    "id": "PHCSE-D-018",
+    "section": "cse",
+    "test": 0,
+    "module": 1,
+    "domain": "phcseClerical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Filing",
+    "stem": "Drawers are labeled with the first two letters of the first and last surnames inside: Aa to Di, Do to Ka, Ke to Ra, Re to Zy. Which drawer holds \"Kalaw, Nestor\"?",
+    "options": [
+      "Re to Zy",
+      "Ke to Ra",
+      "Do to Ka",
+      "Aa to Di"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Kalaw begins with KA, which is the end of the Do to Ka drawer. Ke to Ra starts at KE, after KA."
+  },
+  {
+    "id": "PHCSE-D-019",
+    "section": "cse",
+    "test": 0,
+    "module": 1,
+    "domain": "phcseClerical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Spelling",
+    "stem": "Which word is spelled correctly?",
+    "options": [
+      "privilege",
+      "privilige",
+      "priviledge",
+      "privelege"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Privilege has no d: p-r-i-v-i-l-e-g-e."
+  },
+  {
+    "id": "PHCSE-D-020",
+    "section": "cse",
+    "test": 0,
+    "module": 1,
+    "domain": "phcseClerical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Spelling",
+    "stem": "Which word is spelled correctly?",
+    "options": [
+      "liaison",
+      "laison",
+      "liason",
+      "liaision"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Liaison has an i on both sides of the a: l-i-a-i-s-o-n."
+  },
+  {
+    "id": "PHCSE-D-021",
+    "section": "cse",
+    "test": 0,
+    "module": 1,
+    "domain": "phcseAnalytical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Conclusions",
+    "stem": "Statement: Some employees of the agency ride bicycles to work.\n\nConclusions:\nI. All employees of the agency own bicycles.\nII. No employee of the agency drives a car to work.\n\nWhich conclusion follows?",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "\"Some\" says nothing about all employees, so I does not follow, and nothing is said about cars, so II does not follow."
+  },
+  {
+    "id": "PHCSE-D-022",
+    "section": "cse",
+    "test": 0,
+    "module": 1,
+    "domain": "phcseClerical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Spelling",
+    "stem": "Which word is spelled correctly?",
+    "options": [
+      "miscellaneous",
+      "mischellaneous",
+      "miscelaneous",
+      "miscellanious"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Miscellaneous has double l and ends in -eous."
+  },
+  {
+    "id": "PHCSE-D-023",
+    "section": "cse",
+    "test": 0,
+    "module": 1,
+    "domain": "phcseClerical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Spelling",
+    "stem": "Which word is spelled correctly?",
+    "options": [
+      "noticeable",
+      "notisable",
+      "noticable",
+      "noticeible"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Noticeable keeps the e of notice before -able so the c stays soft."
+  },
+  {
+    "id": "PHCSE-D-024",
+    "section": "cse",
+    "test": 0,
+    "module": 1,
+    "domain": "phcseClerical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Spelling",
+    "stem": "Which word is spelled correctly?",
+    "options": [
+      "bureaucracy",
+      "burocracy",
+      "beaurocracy",
+      "bureaucrasy"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Bureaucracy begins with bureau and ends in -cracy, as in democracy."
+  },
+  {
+    "id": "PHCSE-D-025",
+    "section": "cse",
+    "test": 0,
+    "module": 1,
+    "domain": "phcseClerical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Spelling",
+    "stem": "Which word is spelled correctly?",
+    "options": [
+      "guarantee",
+      "guarentee",
+      "guarrantee",
+      "garantee"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Guarantee has one r and ends in -antee."
+  },
+  {
+    "id": "PHCSE-D-026",
+    "section": "cse",
+    "test": 0,
+    "module": 1,
+    "domain": "phcseClerical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Spelling",
+    "stem": "Which word is spelled correctly?",
+    "options": [
+      "eligible",
+      "eligibel",
+      "eligable",
+      "elligible"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Eligible has one l at the start and ends in -ible."
+  },
+  {
+    "id": "PHCSE-D-027",
+    "section": "cse",
+    "test": 0,
+    "module": 1,
+    "domain": "phcseClerical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Spelling",
+    "stem": "Which word is spelled correctly?",
+    "options": [
+      "surveillance",
+      "surveillence",
+      "surveilance",
+      "survelliance"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Surveillance has double l and ends in -ance."
+  },
+  {
+    "id": "PHCSE-D-028",
+    "section": "cse",
+    "test": 0,
+    "module": 1,
+    "domain": "phcseClerical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Spelling",
+    "stem": "Which word is spelled correctly?",
+    "options": [
+      "colleague",
+      "colleaugue",
+      "collegue",
+      "colleage"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Colleague has double l and ends in -league, like league."
+  },
+  {
+    "id": "PHCSE-D-029",
+    "section": "cse",
+    "test": 0,
+    "module": 1,
+    "domain": "phcseAnalytical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Directions",
+    "stem": "Lito walks 5 km north, then 3 km east, then 5 km south. How far is he from his starting point?",
+    "options": [
+      "3 km",
+      "5 km",
+      "8 km",
+      "13 km"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The 5 km north and 5 km south cancel out, leaving him 3 km east of where he started. 13 km is the total distance walked."
+  },
+  {
+    "id": "PHCSE-D-030",
+    "section": "cse",
+    "test": 0,
+    "module": 1,
+    "domain": "phcseClerical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Spelling",
+    "stem": "Which word is misspelled?",
+    "options": [
+      "independent",
+      "harass",
+      "occassion",
+      "rhythm"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct spelling is occasion, with double c and one s. Harass, independent and rhythm are correct."
+  },
+  {
+    "id": "PHCSE-D-031",
+    "section": "cse",
+    "test": 0,
+    "module": 1,
+    "domain": "phcseClerical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Spelling",
+    "stem": "Which word is misspelled?",
+    "options": [
+      "mischievous",
+      "millennium",
+      "mispell",
+      "inoculate"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct spelling is misspell: mis + spell, so double s. The other three are correct."
+  },
+  {
+    "id": "PHCSE-D-032",
+    "section": "cse",
+    "test": 0,
+    "module": 1,
+    "domain": "phcseClerical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Spelling",
+    "stem": "Which word is misspelled?",
+    "options": [
+      "February",
+      "pronunciation",
+      "entrepeneur",
+      "Wednesday"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The correct spelling is entrepreneur, with r after the first p. Pronunciation, February and Wednesday are correct."
+  },
+  {
+    "id": "PHCSE-D-033",
+    "section": "cse",
+    "test": 0,
+    "module": 1,
+    "domain": "phcseClerical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Spelling",
+    "stem": "Choose the correctly spelled word to complete the sentence: \"Please order more ___ for the office: paper, envelopes and folders.\"",
+    "options": [
+      "stationairy",
+      "stationery",
+      "stationary",
+      "stationnery"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Stationery (with e) means writing materials; stationary (with a) means not moving."
+  },
+  {
+    "id": "PHCSE-D-034",
+    "section": "cse",
+    "test": 0,
+    "module": 1,
+    "domain": "phcseNumbers",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Fractions",
+    "stem": "What is 3 1/2 x 2/7?",
+    "options": [
+      "1/2",
+      "1",
+      "2",
+      "7"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Change the mixed number: 3 1/2 = 7/2. Then 7/2 x 2/7 = 14/14 = 1."
+  },
+  {
+    "id": "PHCSE-D-035",
+    "section": "cse",
+    "test": 0,
+    "module": 1,
+    "domain": "phcseWordProblems",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Time and distance",
+    "stem": "A train leaves at 7:30 a.m. and travels 210 km at 70 km/h. What time does it arrive?",
+    "options": [
+      "9:30 a.m.",
+      "10:30 a.m.",
+      "10:00 a.m.",
+      "11:00 a.m."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Travel time = 210 ÷ 70 = 3 hours, and 7:30 a.m. + 3 hours = 10:30 a.m."
+  },
+  {
+    "id": "PHCSE-D-036",
+    "section": "cse",
+    "test": 0,
+    "module": 1,
+    "domain": "phcseNumbers",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number sequence",
+    "stem": "What number comes next? 1, 3, 4, 7, 11, 18, ?",
+    "options": [
+      "25",
+      "27",
+      "29",
+      "36"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Each term is the sum of the two before it: 11 + 18 = 29."
+  },
+  {
+    "id": "PHCSE-D-037",
+    "section": "cse",
+    "test": 0,
+    "module": 1,
+    "domain": "phcseWordProblems",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Percent",
+    "stem": "A number increased by 40% gives 182. What is the number?",
+    "options": [
+      "120",
+      "130",
+      "140",
+      "142"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "1.4 x n = 182, so n = 182 ÷ 1.4 = 130. Subtracting 40 from 182 (142) treats the percent as a plain number."
+  },
+  {
+    "id": "PHCSE-D-038",
+    "section": "cse",
+    "test": 0,
+    "module": 1,
+    "domain": "phcseNumbers",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Comparing numbers",
+    "stem": "Which fraction is equal to 0.625?",
+    "options": [
+      "3/5",
+      "5/8",
+      "5/6",
+      "7/8"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "0.625 = 625/1000; divide top and bottom by 125 to get 5/8. As decimals, 3/5 = 0.6, 5/6 is about 0.833 and 7/8 = 0.875."
+  },
+  {
+    "id": "PHCSE-D-039",
+    "section": "cse",
+    "test": 0,
+    "module": 1,
+    "domain": "phcseWordProblems",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Work",
+    "stem": "One pipe fills a tank in 4 hours and another fills it in 12 hours. How long do both pipes take together?",
+    "options": [
+      "3 hours",
+      "4 hours",
+      "6 hours",
+      "8 hours"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Together they fill 1/4 + 1/12 = 3/12 + 1/12 = 4/12 = 1/3 of the tank per hour, so 3 hours. Two pipes must beat the faster pipe alone (4 hours); 8 hours is the average of the two times."
+  },
+  {
+    "id": "PHCSE-D-040",
+    "section": "cse",
+    "test": 0,
+    "module": 1,
+    "domain": "phcseConstitution",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Accountability",
+    "stem": "Which officials may be removed from office through impeachment?",
+    "options": [
+      "Governors and city or municipal mayors",
+      "Senators and members of the House",
+      "The President and Supreme Court justices",
+      "Department secretaries and bureau heads"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Article XI, Section 2 lists the President, the Vice-President, the members of the Supreme Court, the members of the constitutional commissions and the Ombudsman. Members of Congress are disciplined by their own chamber."
+  },
+  {
+    "id": "PHCSE-D-041",
+    "section": "cse",
+    "test": 0,
+    "module": 1,
+    "domain": "phcsePublicService",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "R.A. 6713",
+    "stem": "Under R.A. 6713, an official who has a conflict of interest must divest his or her shares in a private business within how many days of assuming office?",
+    "options": [
+      "15 days",
+      "30 days",
+      "45 days",
+      "60 days"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Section 9 requires resignation from any position in the private business within 30 days and divestment of shareholdings or interest within 60 days of assuming office."
+  },
+  {
+    "id": "PHCSE-D-042",
+    "section": "cse",
+    "test": 0,
+    "module": 1,
+    "domain": "phcseConstitution",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Declaration of principles",
+    "stem": "The 1987 Constitution says the State shall protect and advance the right of the people to:",
+    "options": [
+      "tax-free personal income",
+      "a guaranteed government job",
+      "a balanced and healthful ecology",
+      "free housing from the government"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Article II, Section 16: \"The State shall protect and advance the right of the people to a balanced and healthful ecology in accord with the rhythm and harmony of nature.\""
+  },
+  {
+    "id": "PHCSE-D-043",
+    "section": "cse",
+    "test": 0,
+    "module": 1,
+    "domain": "phcsePublicService",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Environment",
+    "stem": "Which law created the Climate Change Commission and set up the national framework for climate change action?",
+    "options": [
+      "Philippine Mining Act of 1995",
+      "Philippine Clean Air Act of 1999",
+      "Climate Change Act of 2009",
+      "Ecological Solid Waste Management Act of 2000"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "R.A. 9729, the Climate Change Act of 2009, created the Climate Change Commission to coordinate climate policy and plans."
+  },
+  {
+    "id": "PHCSE-D-044",
+    "section": "cse",
+    "test": 0,
+    "module": 1,
+    "domain": "phcseConstitution",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Article IX-B",
+    "stem": "Under Article IX-B, a candidate who has lost in an election may not be appointed to any government office within what period after the election?",
+    "options": [
+      "Six months",
+      "Two years",
+      "One year",
+      "Three years"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Article IX-B, Section 6: no candidate who has lost in any election shall, within one year after the election, be appointed to any office in the government or any GOCC."
+  },
+  {
+    "id": "PHCSE-D-045",
+    "section": "cse",
+    "test": 0,
+    "module": 1,
+    "domain": "phcsePublicService",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Disaster risk",
+    "stem": "Which law created the National Disaster Risk Reduction and Management Council (NDRRMC)?",
+    "options": [
+      "R.A. 9275",
+      "R.A. 10121",
+      "R.A. 9729",
+      "R.A. 8749"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "R.A. 10121, the Philippine Disaster Risk Reduction and Management Act of 2010, created the NDRRMC. R.A. 9729 is the Climate Change Act, R.A. 8749 the Clean Air Act and R.A. 9275 the Clean Water Act."
+  }
+]

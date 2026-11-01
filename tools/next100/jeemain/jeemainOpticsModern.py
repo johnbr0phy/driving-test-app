@@ -1,0 +1,75 @@
+# Physics: thermodynamics and kinetic theory of gases, waves and sound,
+# optics, dual nature of matter and radiation, atoms and nuclei, and
+# electronic devices (JEE (Main) 2027 syllabus units 8, 9, 10 (waves) and 16
+# to 19). Key written first; numerical value answers are computed here and
+# asserted by N().
+from math import log2
+assert round(13.6 / 9, 2) == 1.51 and round(13.6 - 13.6 / 9, 2) == 12.09
+
+ITEMS = [
+    # ---------- Practice Test 1: Section A ----------
+    S(1, 2, "Carnot engine", "A Carnot engine with its sink at 27 °C has an efficiency of 25%. What is the temperature of its source?",
+      ["400 K", "75 K", "375 K", "1200 K"],
+      "$\\eta = 1 - \\frac{T_2}{T_1}$, so $\\frac{300}{T_1} = 0.75$ and $T_1 = 400$ K (127 °C). 1200 K divides 300 by 0.25 instead of 0.75, and 375 K adds 25% to the sink temperature."),
+    S(1, 1, "Kinetic theory", "Hydrogen and oxygen gases are at the same temperature. What is the ratio of the rms speed of hydrogen molecules to that of oxygen molecules?",
+      ["4 : 1", "16 : 1", "1 : 4", "2 : 1"],
+      "$v_{rms} = \\sqrt{\\frac{3RT}{M}}$, so the ratio is $\\sqrt{\\frac{32}{2}} = 4$. 16 : 1 forgets the square root."),
+    S(1, 2, "Organ pipes", "An open pipe and a closed pipe have the same length. What is the ratio of the fundamental frequency of the open pipe to that of the closed pipe?",
+      ["2 : 1", "1 : 2", "1 : 1", "4 : 1"],
+      "Open pipe: $f = \\frac{v}{2L}$. Closed pipe: $f = \\frac{v}{4L}$, since a node at the closed end makes the length a quarter wavelength. The ratio is 2 : 1."),
+    S(1, 1, "Spherical mirrors", "An object stands 15 cm in front of a concave mirror of focal length 10 cm. Where is the image, and what kind is it?",
+      ["30 cm in front, real and inverted", "30 cm behind, virtual and erect", "6 cm in front, real and inverted", "6 cm behind, virtual and erect"],
+      "$\\frac{1}{v} + \\frac{1}{u} = \\frac{1}{f}$ with $u = -15$ and $f = -10$: $\\frac{1}{v} = -\\frac{1}{10} + \\frac{1}{15} = -\\frac{1}{30}$, so $v = -30$ cm, in front of the mirror: real, inverted and twice the size. 6 cm comes from adding $\\frac{1}{10} + \\frac{1}{15}$."),
+    S(1, 2, "Photoelectric effect", "A metal has a threshold wavelength of 620 nm. Light of wavelength 310 nm falls on it. What is the greatest kinetic energy of the photoelectrons? (Take $hc = 1240$ eV nm.)",
+      ["2.0 eV", "1.0 eV", "4.0 eV", "6.0 eV"],
+      "The photon energy is $\\frac{1240}{310} = 4.0$ eV and the work function is $\\frac{1240}{620} = 2.0$ eV, so $K_{max} = 4.0 - 2.0 = 2.0$ eV. 4.0 eV forgets to subtract the work function."),
+    S(1, 1, "Logic gates", "Which two-input gate gives an output of 1 only when both of its inputs are 0?",
+      ["NOR", "NAND", "OR", "XNOR"],
+      "NOR is OR followed by NOT: OR is 0 only for inputs 0 and 0, so NOR is 1 only then. NAND is 0 only when both inputs are 1, and XNOR is 1 for inputs 0, 0 and also 1, 1."),
+    # ---------- Practice Test 1: Section B ----------
+    N(1, 2, "Radioactive decay", "After 36 days, one eighth of a radioactive sample remains. What is its half-life, in days?",
+      round(36 / log2(8)), 12,
+      "$\\frac{1}{8} = \\left(\\frac{1}{2}\\right)^3$, so 36 days is 3 half-lives and the half-life is 12 days."),
+    # ---------- Practice Test 2: Section A ----------
+    S(2, 2, "First law of thermodynamics", "An ideal gas expands adiabatically and reversibly. Which is true?",
+      ["No heat flows and the gas cools", "No heat flows and the gas warms", "Its internal energy stays the same", "Heat flows in and the gas cools"],
+      "Adiabatic means $Q = 0$, so $\\Delta U = -W$. The gas does work as it expands, so its internal energy, and hence its temperature, falls. Unchanged internal energy describes an isothermal expansion."),
+    S(2, 2, "Thermal conduction", "Two rods of equal length and cross-section, with thermal conductivities $K$ and $2K$, are joined end to end. What is the conductivity of the combined rod?",
+      ["$\\frac{4K}{3}$", "$\\frac{3K}{2}$", "$3K$", "$\\frac{2K}{3}$"],
+      "In series the thermal resistances add: $\\frac{2L}{K_{eq}} = \\frac{L}{K} + \\frac{L}{2K}$, so $K_{eq} = \\frac{2K_1K_2}{K_1 + K_2} = \\frac{4K}{3}$. $\\frac{3K}{2}$ is the simple average, which is wrong for series flow."),
+    S(2, 1, "Young's double slit", "In a double-slit experiment the slits are 0.5 mm apart and the screen is 1 m away. Light of wavelength 500 nm is used. What is the fringe width?",
+      ["1 mm", "0.1 mm", "0.5 mm", "2 mm"],
+      "$\\beta = \\frac{\\lambda D}{d} = \\frac{500 \\times 10^{-9} \\times 1}{0.5 \\times 10^{-3}} = 10^{-3}$ m $= 1$ mm."),
+    S(2, 2, "Bohr model", "How much energy is needed to ionise a hydrogen atom that is in its second excited state?",
+      ["1.51 eV", "3.4 eV", "12.09 eV", "13.6 eV"],
+      "$E_n = -\\frac{13.6}{n^2}$ eV, and the second excited state is $n = 3$: $E_3 = -1.51$ eV, so 1.51 eV frees the electron. 3.4 eV is for $n = 2$, the first excited state, and 12.09 eV is the energy to raise it from $n = 1$ to $n = 3$."),
+    S(2, 2, "de Broglie wavelength", "An electron starting from rest is accelerated through 100 V. What is its de Broglie wavelength, approximately?",
+      ["1.23 Å", "0.123 Å", "0.39 Å", "12.3 Å"],
+      "$\\lambda = \\frac{h}{\\sqrt{2meV}} \\approx \\frac{12.27}{\\sqrt{V}}$ Å $= \\frac{12.27}{10} \\approx 1.23$ Å. 12.3 Å forgets the square root of 100."),
+    S(2, 2, "Doppler effect", "A source of sound of frequency $f$ moves straight towards a stationary listener at one tenth of the speed of sound. What frequency does the listener hear?",
+      ["$\\frac{10f}{9}$", "$\\frac{9f}{10}$", "$\\frac{11f}{10}$", "$\\frac{10f}{11}$"],
+      "For a moving source, $f' = f\\frac{v}{v - v_s} = f\\frac{v}{0.9v} = \\frac{10f}{9}$. $\\frac{11f}{10}$ is the result for a listener moving at $0.1v$ towards a still source."),
+    # ---------- Practice Test 2: Section B ----------
+    N(2, 3, "Radioactive decay series", "$^{238}_{92}$U decays to $^{206}_{82}$Pb by a series of alpha and beta-minus decays. How many decays are there in all?",
+      (238 - 206) // 4 + (82 - (92 - 2 * ((238 - 206) // 4))), 14,
+      "Only alpha decay changes the mass number, so there are $\\frac{238 - 206}{4} = 8$ alpha decays, taking $Z$ to $92 - 16 = 76$. Each beta-minus decay raises $Z$ by 1, so 6 are needed to reach 82. $8 + 6 = 14$."),
+    # ---------- Drill only ----------
+    S(0, 2, "Specific heats", "One mole of a monatomic ideal gas is mixed with one mole of a diatomic ideal gas. What is $\\gamma = \\frac{C_p}{C_v}$ for the mixture?",
+      ["3/2", "4/3", "23/15", "5/3"],
+      "$C_v = \\frac{1}{2}\\left(\\frac{3}{2}R + \\frac{5}{2}R\\right) = 2R$ and $C_p = C_v + R = 3R$, so $\\gamma = \\frac{3}{2}$. 23/15 averages the two $\\gamma$ values, which is not how heat capacities combine."),
+    S(0, 1, "Total internal reflection", "What is the critical angle for light going from glass of refractive index $\\sqrt{2}$ into air?",
+      ["45°", "30°", "60°", "90°"],
+      "$\\sin C = \\frac{1}{n} = \\frac{1}{\\sqrt{2}}$, so $C = 45^\\circ$."),
+    S(0, 1, "Semiconductors", "In an n-type semiconductor, what are the majority carriers and what kind of impurity is added?",
+      ["Electrons; a pentavalent impurity", "Holes; a trivalent impurity", "Electrons; a trivalent impurity", "Holes; a pentavalent impurity"],
+      "A pentavalent donor such as phosphorus has one electron more than silicon needs for bonding, so free electrons are the majority carriers. A trivalent impurity makes a p-type semiconductor."),
+    S(0, 1, "Photoelectric effect", "Statement I: The maximum kinetic energy of photoelectrons depends on the frequency of the light, not its intensity. Statement II: Above the threshold frequency, the number of photoelectrons emitted per second rises with intensity. Which is correct?",
+      [STATEMENTS[0], STATEMENTS[1], STATEMENTS[2], STATEMENTS[3]],
+      "$K_{max} = h\\nu - \\phi$ involves only the frequency. Greater intensity means more photons per second, each freeing at most one electron, so the photocurrent rises. Both statements are true."),
+    N(0, 1, "Lenses in contact", "Thin lenses of power $+5$ D and $-3$ D are placed in contact. What is the focal length of the combination, in cm?",
+      round(100 / (5 - 3)), 50,
+      "Powers add: $P = 5 - 3 = +2$ D, so $f = \\frac{1}{2}$ m $= 50$ cm, a converging combination."),
+    N(0, 2, "Work in an isobaric process", "Two moles of an ideal gas are heated at constant pressure through 50 K. How much work, in joules, does the gas do? (Take $R = 8.3$ J/mol K.)",
+      round(2 * 8.3 * 50), 830,
+      "At constant pressure $W = p\\Delta V = nR\\Delta T = 2 \\times 8.3 \\times 50 = 830$ J."),
+]

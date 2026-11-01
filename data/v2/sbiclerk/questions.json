@@ -1,0 +1,5293 @@
+{
+  "stimuli": [
+    {
+      "id": "SBICLK-T1-RC",
+      "title": "Reading comprehension",
+      "text": "Read the passage and answer the questions that follow.\n\nIn many villages of India, the clatter of the handloom was once heard from morning till night. A skilled weaver could spend a week on a single sari, and the cloth carried patterns handed down through families for generations. Over the last fifty years, however, cheap cloth from power looms has taken much of this market. A power-loom sari that looks similar at a glance can be sold at a fraction of the price, and many buyers do not know, or do not care, how their cloth was made. Young people in weaving families have drifted to factory and city jobs that pay a steady wage.\n\nThe weaver's problem is often not skill but access. Most weavers sell to a local trader who supplies the yarn, buys the finished cloth and sets the price. The trader carries the risk of unsold stock, so he pays little, and the weaver rarely learns what the cloth finally sells for in a city shop.\n\nOnline selling has begun to open a second door. A cooperative that photographs its saris and lists them on a website or a social media page can reach buyers in distant cities who are willing to pay more for genuine handwoven cloth. Some groups now attach a short note to each piece naming the weaver and the number of days it took to make. Buyers say this story is part of what they pay for.\n\nThe new door has its own costs. Good photographs, careful packing, returns and online payments all demand skills that weavers did not need before. Cooperatives that have succeeded usually had help, from a designer who suggested colours that city buyers want or a young member who managed the website.\n\nHandloom will not win a price war against the power loom, and it does not need to. Its future lies with buyers who value what only a pair of hands and a wooden loom can make, and with finding ways to reach those buyers directly."
+    },
+    {
+      "id": "SBICLK-T1-CZ",
+      "title": "Cloze test",
+      "text": "Read the passage. Each numbered blank has a question below asking which word fits it best.\n\nA self-help group usually begins with ten to fifteen women from the same village who agree to save a small sum every week. At first the amounts are tiny, and the members may ........ (1) whether such small savings can make any difference. Over a few months, however, the common fund grows, and the group starts giving small loans to its own members at a fair rate. Because every member knows the borrower, repayment is ........ (2) high. Once the group has kept proper records for some time, a bank is often ........ (3) to lend it a larger amount. Many members say the biggest change is not the money but the ........ (4) they gain from speaking at meetings and dealing with officials. The group, in short, ........ (5) its members a voice as well as a purse."
+    },
+    {
+      "id": "SBICLK-T1-DI1",
+      "title": "Data interpretation: new savings accounts",
+      "text": "The table shows the number of new savings accounts opened at five branches of a bank in July and August.\n\n| Branch | July | August |\n|---|---|---|\n| Unnao | 160 | 200 |\n| Hardoi | 270 | 243 |\n| Kanpur | 340 | 374 |\n| Banda | 125 | 175 |\n| Etah | 225 | 252 |"
+    },
+    {
+      "id": "SBICLK-T1-DI2",
+      "title": "Data interpretation: loan applications",
+      "text": "The table shows the number of education loan applications received by five branches of a bank in a year and the percentage of them that were approved. Every application was either approved or rejected.\n\n| Branch | Applications | Approved |\n|---|---|---|\n| A | 400 | 35% |\n| B | 250 | 48% |\n| C | 320 | 25% |\n| D | 500 | 42% |\n| E | 360 | 50% |"
+    },
+    {
+      "id": "SBICLK-T1-PZ1",
+      "title": "Puzzle: linear row",
+      "text": "Seven persons J, K, L, M, N, O and P sit in a straight row, all facing north.\n\n- N sits exactly in the middle of the row.\n- Only two persons sit between N and M, and M sits to the right of N.\n- K sits immediately to the right of N.\n- J sits second to the left of K.\n- O sits immediately to the left of M.\n- P does not sit at either end of the row."
+    },
+    {
+      "id": "SBICLK-T1-PZ2",
+      "title": "Puzzle: exam months",
+      "text": "Six persons, Kavya, Lokesh, Meera, Nitin, Pallavi and Rohan, take an exam in six different months of the same year: January, March, April, July, September and November, one person in each month.\n\n- Lokesh takes his exam in the last of these months.\n- Only one person takes the exam between Nitin and Lokesh.\n- Kavya takes her exam in the month immediately before Nitin's (among the months given).\n- Pallavi takes her exam in a month that has 30 days.\n- Meera takes her exam before Rohan."
+    },
+    {
+      "id": "SBICLK-T1-PZ3",
+      "title": "Puzzle: circular table",
+      "text": "Eight persons P, Q, R, S, T, U, V and W sit around a circular table, equally spaced and all facing the centre.\n\n- U sits immediately to the left of S.\n- P sits second to the left of S.\n- R sits third to the right of W.\n- T sits third to the right of Q.\n- V sits next to R."
+    },
+    {
+      "id": "SBICLK-T2-RC",
+      "title": "Reading comprehension",
+      "text": "Read the passage and answer the questions that follow.\n\nA few years ago, a vegetable seller on a city pavement dealt only in cash. Customers who forgot their wallets walked away, and at the end of each day the seller counted a bag of coins and crumpled notes, part of which went to a moneylender who had advanced the morning's stock at a steep daily rate. Today many such sellers display a printed QR code on a piece of cardboard beside their scales. A customer scans it with a phone, and the payment reaches the seller's bank account within seconds.\n\nThe change has brought more than convenience. Because each payment is recorded, the seller's account now shows a history of daily sales. Banks that once had no way to judge a street vendor's income can look at these records and offer a small working-capital loan at a far lower rate than the moneylender's. For many vendors, this is the first loan they have ever received from a bank.\n\nThe shift is not complete. Some older vendors distrust payments they cannot hold in their hands, and a few have lost money to fraudsters who send fake payment messages or ask them to scan a code to 'receive' money. Network failures in crowded markets can also leave a customer and a seller staring at a screen that will not load. For these reasons, most vendors still keep a cash box alongside the QR code.\n\nExperts argue that the next step is not more technology but more trust. Simple training in spotting fraud, quick help when a payment goes astray and patient explanation by bank staff in the local language would do more than any new app to bring the remaining vendors on board.\n\nThe cardboard QR code may look humble, but for many small sellers it has become a bridge between the pavement and the formal banking system."
+    },
+    {
+      "id": "SBICLK-T2-CZ",
+      "title": "Cloze test",
+      "text": "Read the passage. Each numbered blank has a question below asking which word fits it best.\n\nMany first-time borrowers sign a loan agreement without reading it, trusting that the bank or the shop has explained everything. This trust is often ........ (1), but not always. A loan may carry processing charges, insurance that the borrower did not ask for, or a penalty for paying early. None of these is hidden in the legal sense, since each is ........ (2) somewhere in the document. The problem is that the document is long and the borrower is in a hurry. Financial counsellors therefore ........ (3) a simple habit: before signing, ask for the total amount you will repay and compare it with the amount you will receive. This one figure ........ (4) most of the costs that the fine print spreads across several pages. A borrower who asks this question is far less likely to be ........ (5) later."
+    },
+    {
+      "id": "SBICLK-T2-DI1",
+      "title": "Data interpretation: bus passengers",
+      "text": "The table shows the number of passengers (in hundreds) who used four city bus routes on three days.\n\n| Route | Monday | Tuesday | Wednesday |\n|---|---|---|---|\n| R1 | 45 | 52 | 60 |\n| R2 | 36 | 40 | 47 |\n| R3 | 62 | 55 | 58 |\n| R4 | 30 | 33 | 45 |"
+    },
+    {
+      "id": "SBICLK-T2-DI2",
+      "title": "Data interpretation: income and expenditure",
+      "text": "The table shows the monthly income and monthly expenditure of five persons, in thousands of rupees. Savings = income − expenditure.\n\n| Person | Income | Expenditure |\n|---|---|---|\n| Ravi | 48 | 36 |\n| Seema | 60 | 42 |\n| Tanvir | 55 | 44 |\n| Usha | 40 | 26 |\n| Vijay | 72 | 54 |"
+    },
+    {
+      "id": "SBICLK-T2-PZ1",
+      "title": "Puzzle: floors and fruits",
+      "text": "Six persons, Gaurav, Isha, Jatin, Komal, Manoj and Nisha, live on the six floors of a building, one on each floor. The lowest floor is numbered 1 and the top floor 6. Each of them likes a different fruit: mango, guava, apple, banana, grapes and orange.\n\n- Gaurav lives on an even-numbered floor but not on the top floor.\n- Isha lives on the top floor.\n- Manoj lives immediately below Isha.\n- Only one person lives between Gaurav and Jatin.\n- Nisha lives immediately above Jatin.\n- Komal likes mango and Manoj likes grapes.\n- Gaurav likes banana.\n- The person who likes guava lives immediately below the person who likes apple."
+    },
+    {
+      "id": "SBICLK-T2-PZ2",
+      "title": "Puzzle: days of the week",
+      "text": "Seven persons B, C, D, E, F, G and H attend a workshop on the seven days of one week, Monday to Sunday, one person each day.\n\n- B attends on Thursday.\n- Only two persons attend between B and D, and D attends after B.\n- E attends on the day immediately after B.\n- G attends on the day immediately before D.\n- C attends after F but before H."
+    },
+    {
+      "id": "SBICLK-T2-PZ3",
+      "title": "Puzzle: number of books",
+      "text": "Six persons A, B, C, D, E and F each have a different number of books.\n\n- A has more books than D but fewer than C.\n- F has fewer books than A but more than D.\n- B has more books than only one person, E.\n- B has 18 books and C has 45 books."
+    },
+    {
+      "id": "SBICLK-D-RC",
+      "title": "Short passage",
+      "text": "Read the passage and answer the questions that follow.\n\nYoung people who take up their first job often find that their salary disappears faster than they expected. Rent, travel and food take the first share, and small online purchases quietly take the rest. Advisers suggest a habit that sounds old-fashioned but works: on the day the salary arrives, move a fixed part of it into a separate savings account or a recurring deposit before spending anything. Saving what is left at the end of the month rarely works, because little is ever left. The fixed amount can be small at first; what matters is that it is set aside first and without fail. Over time the habit, more than the amount, builds a cushion for emergencies."
+    },
+    {
+      "id": "SBICLK-D-DI",
+      "title": "Data interpretation: library books issued",
+      "text": "The table shows the number of fiction and non-fiction books issued by a library in four weeks.\n\n| Week | Fiction | Non-fiction |\n|---|---|---|\n| Week 1 | 120 | 80 |\n| Week 2 | 150 | 90 |\n| Week 3 | 135 | 105 |\n| Week 4 | 165 | 75 |"
+    },
+    {
+      "id": "SBICLK-D-PZ",
+      "title": "Puzzle: five in a row",
+      "text": "Five colleagues V, W, X, Y and Z sit in a row, all facing north.\n\n- V sits exactly in the middle.\n- W sits at the right end.\n- Y sits between V and W.\n- Z sits immediately to the left of V."
+    }
+  ],
+  "questions": [
+    {
+      "id": "SBICLK-T1-001",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Main idea",
+      "stimulusId": "SBICLK-T1-RC",
+      "stem": "Which of the following best expresses the central idea of the passage?",
+      "options": [
+        "Young people should be kept from leaving weaving families",
+        "Weavers have lost their skills over the last fifty years",
+        "Local traders pay weavers more than city shops ever could",
+        "Handloom can last by reaching buyers who value handwoven cloth",
+        "Power looms should be banned to protect handloom weavers"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The passage explains why handloom lost its market and ends by saying its future lies with 'buyers who value what only a pair of hands and a wooden loom can make' and reaching them directly. It says the problem is access, not skill, and never calls for a ban."
+    },
+    {
+      "id": "SBICLK-T1-002",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkReading",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Detail",
+      "stimulusId": "SBICLK-T1-RC",
+      "stem": "According to the passage, why has handloom lost much of its market?",
+      "options": [
+        "Similar-looking power-loom cloth sells far more cheaply",
+        "Handwoven saris are no longer allowed in city shops",
+        "Buyers now prefer plain cloth without any pattern",
+        "The government has stopped buying handwoven cloth",
+        "Weavers have run short of yarn in recent years"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The first paragraph says 'a power-loom sari that looks similar at a glance can be sold at a fraction of the price'."
+    },
+    {
+      "id": "SBICLK-T1-003",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkReading",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Detail",
+      "stimulusId": "SBICLK-T1-RC",
+      "stem": "What does the local trader do, according to the passage?",
+      "options": [
+        "Lends weavers money to buy power looms",
+        "Supplies yarn, buys the cloth and sets the price",
+        "Teaches young weavers the family patterns",
+        "Sells the weavers' saris on a website",
+        "Photographs each sari for city buyers"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The second paragraph says the trader 'supplies the yarn, buys the finished cloth and sets the price'."
+    },
+    {
+      "id": "SBICLK-T1-004",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Inference",
+      "stimulusId": "SBICLK-T1-RC",
+      "stem": "Why, according to the passage, does the trader pay the weaver little?",
+      "options": [
+        "He sells the cloth abroad at a lower price",
+        "He must pay a designer to choose new colours",
+        "He is required by law to keep prices low",
+        "He knows the weaver will soon leave for the city",
+        "He bears the risk that some cloth will not sell"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "The passage says 'the trader carries the risk of unsold stock, so he pays little'."
+    },
+    {
+      "id": "SBICLK-T1-005",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkReading",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Detail",
+      "stimulusId": "SBICLK-T1-RC",
+      "stem": "What do some cooperatives now attach to each piece of cloth?",
+      "options": [
+        "A certificate from a government textile office",
+        "A note naming the weaver and the days it took",
+        "A sample of the yarn used to weave the sari",
+        "A discount coupon for the buyer's next purchase",
+        "A photograph of the city shop that sells it"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The third paragraph says some groups attach 'a short note to each piece naming the weaver and the number of days it took to make'."
+    },
+    {
+      "id": "SBICLK-T1-006",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Detail",
+      "stimulusId": "SBICLK-T1-RC",
+      "stem": "Which of the following is NOT mentioned in the passage as something online selling demands?",
+      "options": [
+        "Accepting payments online",
+        "Handling returns from buyers",
+        "Packing the cloth carefully",
+        "Taking good photographs",
+        "Renting a showroom in a big city"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "The fourth paragraph lists 'good photographs, careful packing, returns and online payments'. A city showroom is never mentioned."
+    },
+    {
+      "id": "SBICLK-T1-007",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkReading",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Inference",
+      "stimulusId": "SBICLK-T1-RC",
+      "stem": "What does the writer mean by saying handloom 'will not win a price war against the power loom, and it does not need to'?",
+      "options": [
+        "Its buyers pay for craft and story, not for the lowest price",
+        "City buyers no longer compare the prices of saris",
+        "Handloom saris already cost less than power-loom saris",
+        "Weavers should cut their prices until they match factories",
+        "Power looms will soon stop making saris altogether"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The next sentence says handloom's future lies with buyers who value handmade cloth. It need not be cheapest because those buyers pay for what a hand loom makes and the story behind it."
+    },
+    {
+      "id": "SBICLK-T1-008",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkReading",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Tone",
+      "stimulusId": "SBICLK-T1-RC",
+      "stem": "Which of the following best describes the tone of the passage?",
+      "options": [
+        "Careless and casual",
+        "Mocking and ironic",
+        "Angry and accusing",
+        "Gloomy and defeated",
+        "Realistic but hopeful"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "The writer is frank about the costs and the lost market but sees a real way forward: realistic but hopeful."
+    },
+    {
+      "id": "SBICLK-T1-009",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Synonym",
+      "stimulusId": "SBICLK-T1-RC",
+      "stem": "Choose the word most similar in meaning to 'drifted' as used in the passage.",
+      "options": [
+        "Returned",
+        "Escaped",
+        "Floated",
+        "Rushed",
+        "Moved"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Young people 'have drifted to factory and city jobs' means they have gradually moved there. 'Floated' is the literal sense of drift, not the one used here."
+    },
+    {
+      "id": "SBICLK-T1-010",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkReading",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Antonym",
+      "stimulusId": "SBICLK-T1-RC",
+      "stem": "Choose the word most nearly OPPOSITE in meaning to 'genuine' as used in the passage.",
+      "options": [
+        "Pure",
+        "Real",
+        "Fake",
+        "Honest",
+        "Original"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "'Genuine handwoven cloth' means real, authentic cloth. The opposite is 'fake'; the other options are close in meaning to 'genuine'."
+    },
+    {
+      "id": "SBICLK-T1-011",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkCloze",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Cloze",
+      "stimulusId": "SBICLK-T1-CZ",
+      "stem": "Which word fits blank (1) best?",
+      "options": [
+        "admit",
+        "decide",
+        "wonder",
+        "promise",
+        "insist"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "At first the members are unsure, so they 'may wonder whether' small savings help. 'Insist whether' and 'promise whether' are not idiomatic, and the next sentence ('however') shows doubt, not certainty."
+    },
+    {
+      "id": "SBICLK-T1-012",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkCloze",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Cloze",
+      "stimulusId": "SBICLK-T1-CZ",
+      "stem": "Which word fits blank (2) best?",
+      "options": [
+        "never",
+        "seldom",
+        "rarely",
+        "hardly",
+        "usually"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Because every member knows the borrower, repayment is usually high. 'Rarely', 'never', 'hardly' and 'seldom' would contradict the reason given."
+    },
+    {
+      "id": "SBICLK-T1-013",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkCloze",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Cloze",
+      "stimulusId": "SBICLK-T1-CZ",
+      "stem": "Which word fits blank (3) best?",
+      "options": [
+        "forbidden",
+        "afraid",
+        "reluctant",
+        "willing",
+        "unable"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Proper records give a bank confidence, so it is 'willing to lend'. 'Afraid', 'unable', 'forbidden' and 'reluctant' all reverse the sense of 'once the group has kept proper records'."
+    },
+    {
+      "id": "SBICLK-T1-014",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkCloze",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Cloze",
+      "stimulusId": "SBICLK-T1-CZ",
+      "stem": "Which word fits blank (4) best?",
+      "options": [
+        "distance",
+        "permission",
+        "salary",
+        "property",
+        "confidence"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "What members gain 'from speaking at meetings and dealing with officials' is confidence. The sentence contrasts it with money, so 'salary' and 'property' do not fit."
+    },
+    {
+      "id": "SBICLK-T1-015",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkCloze",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Cloze",
+      "stimulusId": "SBICLK-T1-CZ",
+      "stem": "Which word fits blank (5) best?",
+      "options": [
+        "costs",
+        "takes",
+        "denies",
+        "gives",
+        "owes"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The group 'gives its members a voice as well as a purse', summing up the two gains in the passage. 'Takes', 'costs' and 'denies' reverse the meaning."
+    },
+    {
+      "id": "SBICLK-T1-016",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkCloze",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Single filler",
+      "stem": "Choose the word that fits the blank to make the sentence grammatically correct and meaningful.\n\nThe bank has ........ its working hours so that customers can visit after office time.",
+      "options": [
+        "enlarged",
+        "stretched",
+        "extended",
+        "widened",
+        "expanded"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Hours, deadlines and periods of time are 'extended'. The other verbs are used for physical size or space."
+    },
+    {
+      "id": "SBICLK-T1-017",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkCloze",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Single filler",
+      "stem": "Choose the word that fits the blank to make the sentence grammatically correct and meaningful.\n\nEven after two reminders, he ........ to submit the documents before the last date.",
+      "options": [
+        "denied",
+        "missed",
+        "avoided",
+        "lacked",
+        "failed"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "'Failed to submit' fits the infinitive 'to submit'. 'Avoid' and 'miss' take the -ing form ('avoided submitting'), and 'lacked to' and 'denied to' are not English."
+    },
+    {
+      "id": "SBICLK-T1-018",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkCloze",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Single filler",
+      "stem": "Choose the word that fits the blank to make the sentence grammatically correct and meaningful.\n\nThe new scheme is ........ at helping small traders get loans without collateral.",
+      "options": [
+        "pointed",
+        "aimed",
+        "shot",
+        "targeted",
+        "directed"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The fixed phrase is 'aimed at helping'. 'Targeted at helping' and 'directed at helping' are less natural with a gerund, and 'pointed' and 'shot' do not fit a scheme."
+    },
+    {
+      "id": "SBICLK-T1-019",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkCloze",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Double filler",
+      "stem": "Choose the pair of words that fits the two blanks, in order, to make the sentence meaningful.\n\nThe manager was ........ with the report because it was ........ and full of errors.",
+      "options": [
+        "displeased, careless",
+        "angry, perfect",
+        "satisfied, careless",
+        "pleased, accurate",
+        "happy, hurried"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A report full of errors is careless, and it would leave the manager displeased. In each other pair, one word clashes with 'full of errors' or with the other blank."
+    },
+    {
+      "id": "SBICLK-T1-020",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkCloze",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Double filler",
+      "stem": "Choose the pair of words that fits the two blanks, in order, to make the sentence meaningful.\n\nPrices of vegetables usually ........ after the monsoon, when fresh supplies ........ the markets.",
+      "options": [
+        "rise, leave",
+        "fall, reach",
+        "stay, miss",
+        "fall, avoid",
+        "rise, flood"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "When fresh supplies reach the markets, prices fall. 'Rise, flood' contradicts itself: a flood of supply lowers prices."
+    },
+    {
+      "id": "SBICLK-T1-021",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Error spotting",
+      "stem": "Read the sentence and find the part that contains an error. If there is no error, choose E.\n\nThe police (A) / has arrested (B) / the two men who (C) / robbed the shop. (D) / No error (E)",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "'Police' is a plural noun in standard English, so it takes 'have': 'The police have arrested ...'."
+    },
+    {
+      "id": "SBICLK-T1-022",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Error spotting",
+      "stem": "Read the sentence and find the part that contains an error. If there is no error, choose E.\n\nMr Rao is one of the officers (A) / who has worked (B) / in all three branches (C) / of the bank. (D) / No error (E)",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "In 'one of the officers who...', the relative pronoun 'who' refers to 'officers' (plural), so the verb is 'have worked', not 'has worked'."
+    },
+    {
+      "id": "SBICLK-T1-023",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Error spotting",
+      "stem": "Read the sentence and find the part that contains an error. If there is no error, choose E.\n\nThere were (A) / less people (B) / at the branch (C) / than we expected. (D) / No error (E)",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "'People' is countable, so it takes 'fewer', not 'less': 'fewer people'."
+    },
+    {
+      "id": "SBICLK-T1-024",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Error spotting",
+      "stem": "Read the sentence and find the part that contains an error. If there is no error, choose E.\n\nThe report comprises of (A) / three chapters (B) / and a short (C) / summary at the end. (D) / No error (E)",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "'Comprise' takes a direct object with no 'of': 'The report comprises three chapters' (or 'consists of')."
+    },
+    {
+      "id": "SBICLK-T1-025",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkGrammar",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Error spotting",
+      "stem": "Read the sentence and find the part that contains an error. If there is no error, choose E.\n\nThe members of the committee (A) / have submitted (B) / their report (C) / to the director. (D) / No error (E)",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "The sentence is correct. The subject is 'the members', which is plural, so 'have submitted' and 'their report' both agree with it."
+    },
+    {
+      "id": "SBICLK-T1-026",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Sentence improvement",
+      "stem": "Which of the following should replace the part in bold to make the sentence correct? If no replacement is needed, choose 'No improvement'.\n\nShe **returned back** the book to the library on time.",
+      "options": [
+        "returned",
+        "returned again",
+        "has returned back",
+        "returning back",
+        "No improvement"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "'Return' already means 'give back', so 'back' is redundant: 'She returned the book ...'."
+    },
+    {
+      "id": "SBICLK-T1-027",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Sentence improvement",
+      "stem": "Which of the following should replace the part in bold to make the sentence correct? If no replacement is needed, choose 'No improvement'.\n\nI would rather walk **than to wait** for the bus in this heat.",
+      "options": [
+        "than waiting",
+        "than wait",
+        "than waited",
+        "instead to wait",
+        "No improvement"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "'Would rather' is followed by the plain verb on both sides: 'I would rather walk than wait'."
+    },
+    {
+      "id": "SBICLK-T1-028",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Sentence improvement",
+      "stem": "Which of the following should replace the part in bold to make the sentence correct? If no replacement is needed, choose 'No improvement'.\n\nThe box was **too heavy that he could not** lift it.",
+      "options": [
+        "so heavy that he could not",
+        "too heavy so that he could not",
+        "very heavy that he could not",
+        "heavy enough that he could not",
+        "No improvement"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The pattern is 'so ... that': 'so heavy that he could not lift it'. 'Too' is used with 'to': 'too heavy to lift'."
+    },
+    {
+      "id": "SBICLK-T1-029",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Phrase rearrangement",
+      "stem": "The parts of a sentence, labelled P, Q, R and S, are given in jumbled order after the fixed opening. Choose the order that makes a meaningful sentence.\n\nThe new branch manager\n\nP. to reduce the waiting time\nQ. has opened two more counters\nR. who come in the morning\nS. for senior citizens",
+      "options": [
+        "QPSR",
+        "PQSR",
+        "QRSP",
+        "SRQP",
+        "QRPS"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The new branch manager (Q) has opened two more counters (P) to reduce the waiting time (S) for senior citizens (R) who come in the morning."
+    },
+    {
+      "id": "SBICLK-T1-030",
+      "section": "eng",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkGrammar",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Phrase rearrangement",
+      "stem": "The parts of a sentence, labelled P, Q, R and S, are given in jumbled order after the fixed opening. Choose the order that makes a meaningful sentence.\n\nAlthough the monsoon arrived late this year,\n\nP. that supply drinking water\nQ. most of the reservoirs\nR. were full by September\nS. to the city",
+      "options": [
+        "QRPS",
+        "PSQR",
+        "QPSR",
+        "QSPR",
+        "SQPR"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Although the monsoon arrived late this year, (Q) most of the reservoirs (P) that supply drinking water (S) to the city (R) were full by September. The relative clause 'that supply drinking water to the city' must follow 'reservoirs' directly."
+    },
+    {
+      "id": "SBICLK-T1-031",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Simplification",
+      "stem": "What will come in place of the question mark (?) in the following question?\n\n35% of 840 + 120 = ?",
+      "options": [
+        "384",
+        "394",
+        "404",
+        "414",
+        "424"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "35% of 840 = 294, and 294 + 120 = 414."
+    },
+    {
+      "id": "SBICLK-T1-032",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Simplification",
+      "stem": "What will come in place of the question mark (?) in the following question?\n\n24² − 18² = ?",
+      "options": [
+        "212",
+        "222",
+        "232",
+        "242",
+        "252"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "24² = 576 and 18² = 324, so 576 − 324 = 252. (Or (24 + 18)(24 − 18) = 42 × 6 = 252.)"
+    },
+    {
+      "id": "SBICLK-T1-033",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Simplification",
+      "stem": "What will come in place of the question mark (?) in the following question?\n\n1938 ÷ 34 × 4 = ?",
+      "options": [
+        "188",
+        "198",
+        "208",
+        "218",
+        "228"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "Work left to right: 1938 ÷ 34 = 57, then 57 × 4 = 228."
+    },
+    {
+      "id": "SBICLK-T1-034",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Simplification",
+      "stem": "What will come in place of the question mark (?) in the following question?\n\n3/5 of 2/7 of 1295 = ?",
+      "options": [
+        "222",
+        "232",
+        "242",
+        "252",
+        "262"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "2/7 of 1295 = 370, and 3/5 of 370 = 222."
+    },
+    {
+      "id": "SBICLK-T1-035",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Simplification",
+      "stem": "What will come in place of the question mark (?) in the following question?\n\n√1369 + 14 × 8 = ?",
+      "options": [
+        "141",
+        "145",
+        "149",
+        "153",
+        "157"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "√1369 = 37 and 14 × 8 = 112, so 37 + 112 = 149."
+    },
+    {
+      "id": "SBICLK-T1-036",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Simplification",
+      "stem": "What will come in place of the question mark (?) in the following question?\n\n? + 17.5% of 480 = 200",
+      "options": [
+        "108",
+        "112",
+        "116",
+        "120",
+        "124"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "17.5% of 480 = 84, so ? = 200 − 84 = 116."
+    },
+    {
+      "id": "SBICLK-T1-037",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Simplification",
+      "stem": "What will come in place of the question mark (?) in the following question?\n\n13³ − 2000 = ?",
+      "options": [
+        "185",
+        "189",
+        "193",
+        "197",
+        "201"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "13³ = 2197, and 2197 − 2000 = 197."
+    },
+    {
+      "id": "SBICLK-T1-038",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Simplification",
+      "stem": "What will come in place of the question mark (?) in the following question?\n\n(48 × 25) ÷ 16 + ? = 100",
+      "options": [
+        "25",
+        "30",
+        "35",
+        "40",
+        "45"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "48 × 25 = 1200 and 1200 ÷ 16 = 75, so ? = 100 − 75 = 25."
+    },
+    {
+      "id": "SBICLK-T1-039",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Approximation",
+      "stem": "What approximate value will come in place of the question mark (?) in the following question? (You are not expected to calculate the exact value.)\n\n39.97% of 649.8 + 120.2 = ?",
+      "options": [
+        "380",
+        "400",
+        "420",
+        "440",
+        "460"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Round to 40% of 650 + 120 = 260 + 120 = 380."
+    },
+    {
+      "id": "SBICLK-T1-040",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Approximation",
+      "stem": "What approximate value will come in place of the question mark (?) in the following question? (You are not expected to calculate the exact value.)\n\n1259.9 ÷ 14.97 × 3.02 = ?",
+      "options": [
+        "212",
+        "232",
+        "252",
+        "272",
+        "292"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Round to 1260 ÷ 15 × 3 = 84 × 3 = 252."
+    },
+    {
+      "id": "SBICLK-T1-041",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Approximation",
+      "stem": "What approximate value will come in place of the question mark (?) in the following question? (You are not expected to calculate the exact value.)\n\n√624 × 12.02 − 99.9 = ?",
+      "options": [
+        "180",
+        "200",
+        "220",
+        "240",
+        "260"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "√624 is just under √625 = 25. So 25 × 12 − 100 = 300 − 100 = 200."
+    },
+    {
+      "id": "SBICLK-T1-042",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "What will come in place of the question mark (?) in the following number series?\n\n5, 13, 29, 61, 125, ?",
+      "options": [
+        "243",
+        "249",
+        "251",
+        "253",
+        "263"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Each term is double the previous plus 3: 125 × 2 + 3 = 253. (251 comes from adding 1 instead of 3.)"
+    },
+    {
+      "id": "SBICLK-T1-043",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "What will come in place of the question mark (?) in the following number series?\n\n5, 6, 10, 19, 35, ?",
+      "options": [
+        "54",
+        "56",
+        "58",
+        "60",
+        "62"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "The differences are 1, 4, 9, 16, the squares of 1 to 4. The next difference is 25: 35 + 25 = 60."
+    },
+    {
+      "id": "SBICLK-T1-044",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "What will come in place of the question mark (?) in the following number series?\n\n720, 120, 24, 6, 2, ?",
+      "options": [
+        "0.5",
+        "1",
+        "1.5",
+        "2",
+        "3"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Divide by 6, 5, 4, 3 and then 2: 2 ÷ 2 = 1."
+    },
+    {
+      "id": "SBICLK-T1-045",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkNumber",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "What will come in place of the question mark (?) in the following number series?\n\n12, 18, 27, 40.5, ?",
+      "options": [
+        "54",
+        "60",
+        "60.75",
+        "61.5",
+        "81"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Each term is 1.5 times the previous: 40.5 × 1.5 = 60.75."
+    },
+    {
+      "id": "SBICLK-T1-046",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkDI",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "SBICLK-T1-DI1",
+      "stem": "How many new savings accounts were opened at the five branches in all in August?",
+      "options": [
+        "1224",
+        "1234",
+        "1244",
+        "1254",
+        "1264"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "200 + 243 + 374 + 175 + 252 = 1244."
+    },
+    {
+      "id": "SBICLK-T1-047",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkDI",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "SBICLK-T1-DI1",
+      "stem": "By what percentage did the number of new accounts at Unnao rise from July to August?",
+      "options": [
+        "20%",
+        "25%",
+        "30%",
+        "35%",
+        "40%"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Unnao rose from 160 to 200, an increase of 40. 40 ÷ 160 × 100 = 25%."
+    },
+    {
+      "id": "SBICLK-T1-048",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkDI",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "SBICLK-T1-DI1",
+      "stem": "What is the average number of new accounts opened per branch in July?",
+      "options": [
+        "216",
+        "220",
+        "224",
+        "228",
+        "232"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "July total = 160 + 270 + 340 + 125 + 225 = 1120, and 1120 ÷ 5 = 224."
+    },
+    {
+      "id": "SBICLK-T1-049",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkDI",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "SBICLK-T1-DI1",
+      "stem": "What is the ratio of new accounts at Banda in August to new accounts at Etah in July?",
+      "options": [
+        "7 : 8",
+        "9 : 7",
+        "7 : 9",
+        "5 : 7",
+        "5 : 9"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Banda in August opened 175 and Etah in July 225. 175 : 225, dividing both by 25, is 7 : 9."
+    },
+    {
+      "id": "SBICLK-T1-050",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkDI",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "SBICLK-T1-DI1",
+      "stem": "Which branch had the highest percentage increase in new accounts from July to August?",
+      "options": [
+        "Unnao",
+        "Kanpur",
+        "Banda",
+        "Etah",
+        "Hardoi"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Unnao 40/160 = 25%, Kanpur 34/340 = 10%, Banda 50/125 = 40%, Etah 27/225 = 12%. Hardoi fell by 10%. Banda is highest."
+    },
+    {
+      "id": "SBICLK-T1-051",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkDI",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "SBICLK-T1-DI2",
+      "stem": "How many applications were approved at branch D?",
+      "options": [
+        "170",
+        "180",
+        "190",
+        "200",
+        "210"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "42% of 500 = 210."
+    },
+    {
+      "id": "SBICLK-T1-052",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkDI",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "SBICLK-T1-DI2",
+      "stem": "How many applications were rejected at branch C?",
+      "options": [
+        "210",
+        "220",
+        "230",
+        "240",
+        "250"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "25% of 320 = 80 were approved, so 320 − 80 = 240 were rejected."
+    },
+    {
+      "id": "SBICLK-T1-053",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkDI",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "SBICLK-T1-DI2",
+      "stem": "How many applications were approved at branches A and E together?",
+      "options": [
+        "280",
+        "290",
+        "300",
+        "310",
+        "320"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "A: 35% of 400 = 140. E: 50% of 360 = 180. Together 140 + 180 = 320."
+    },
+    {
+      "id": "SBICLK-T1-054",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkDI",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "SBICLK-T1-DI2",
+      "stem": "At branch B, how many more applications were rejected than approved?",
+      "options": [
+        "8",
+        "10",
+        "12",
+        "14",
+        "16"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "48% of 250 = 120 were approved, so 130 were rejected. 130 − 120 = 10."
+    },
+    {
+      "id": "SBICLK-T1-055",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkDI",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "SBICLK-T1-DI2",
+      "stem": "What is the ratio of rejected applications at branch A to rejected applications at branch E?",
+      "options": [
+        "13 : 9",
+        "13 : 10",
+        "10 : 9",
+        "7 : 5",
+        "9 : 13"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Rejected at A = 400 − 140 = 260. Rejected at E = 360 − 180 = 180. 260 : 180 = 13 : 9."
+    },
+    {
+      "id": "SBICLK-T1-056",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Profit and loss",
+      "stem": "A trader buys a table fan for ₹1,250 and sells it at a loss of 12%. What is the selling price?",
+      "options": [
+        "₹1,100",
+        "₹1,120",
+        "₹1,140",
+        "₹1,160",
+        "₹1,180"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Loss = 12% of 1,250 = ₹150, so the selling price is 1,250 − 150 = ₹1,100."
+    },
+    {
+      "id": "SBICLK-T1-057",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Simple interest",
+      "stem": "A sum earns ₹2,250 as simple interest in 5 years at 6% per annum. What is the sum?",
+      "options": [
+        "₹6,750",
+        "₹7,000",
+        "₹7,250",
+        "₹7,500",
+        "₹7,750"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Interest for 5 years at 6% is 30% of the sum. 2,250 ÷ 0.30 = ₹7,500."
+    },
+    {
+      "id": "SBICLK-T1-058",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Compound interest",
+      "stem": "What amount will ₹16,000 grow to in 2 years at 10% per annum, compounded annually?",
+      "options": [
+        "₹19,040",
+        "₹19,200",
+        "₹19,360",
+        "₹19,520",
+        "₹19,680"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "After year 1: 16,000 × 1.1 = 17,600. After year 2: 17,600 × 1.1 = ₹19,360. (₹19,200 would be simple interest.)"
+    },
+    {
+      "id": "SBICLK-T1-059",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Average",
+      "stem": "The average age of 30 students in a class is 14 years. When the teacher's age is included, the average rises by 1 year. What is the teacher's age?",
+      "options": [
+        "42 years",
+        "43 years",
+        "44 years",
+        "45 years",
+        "46 years"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "The 31 people now average 15 years, a total of 465. The students alone total 30 × 14 = 420. The teacher is 465 − 420 = 45."
+    },
+    {
+      "id": "SBICLK-T1-060",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Partnership",
+      "stem": "Anita and Bhavesh start a business with ₹24,000 and ₹36,000 for one year. Out of a profit of ₹15,000, what is Anita's share?",
+      "options": [
+        "₹5,500",
+        "₹6,000",
+        "₹6,500",
+        "₹7,000",
+        "₹7,500"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Shares are in the ratio 24,000 : 36,000 = 2 : 3. Anita gets 2/5 of 15,000 = ₹6,000."
+    },
+    {
+      "id": "SBICLK-T1-061",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Pipes and cisterns",
+      "stem": "Pipe A can fill a tank in 6 hours and pipe B can empty the full tank in 18 hours. If both are opened together on an empty tank, in how many hours will it be full?",
+      "options": [
+        "4.5 hours",
+        "6 hours",
+        "7 hours",
+        "8 hours",
+        "9 hours"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "Each hour the tank gains 1/6 − 1/18 = 3/18 − 1/18 = 2/18 = 1/9, so it fills in 9 hours. (4.5 hours would come from adding the two rates, as if B also filled the tank.)"
+    },
+    {
+      "id": "SBICLK-T1-062",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkArith",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Speed and distance",
+      "stem": "Walking at 4 km/h, Harish reaches his office 12 minutes late. Walking at 5 km/h, he reaches 9 minutes early. How far is his office?",
+      "options": [
+        "7 km",
+        "8 km",
+        "9 km",
+        "10 km",
+        "11 km"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The two times differ by 21 minutes, or 21/60 hour. d/4 − d/5 = d/20, so d/20 = 21/60 and d = 7 km."
+    },
+    {
+      "id": "SBICLK-T1-063",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Percentage",
+      "stem": "A candidate needs 40% of the maximum marks to pass. Sunita scored 186 marks and failed by 34 marks. What are the maximum marks?",
+      "options": [
+        "530",
+        "550",
+        "570",
+        "590",
+        "610"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The pass mark is 186 + 34 = 220, which is 40% of the maximum. 220 ÷ 0.4 = 550."
+    },
+    {
+      "id": "SBICLK-T1-064",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkArith",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Ages",
+      "stem": "The sum of the present ages of a father and his son is 50 years. Five years ago, the father was four times as old as the son. What is the son's present age?",
+      "options": [
+        "13 years",
+        "15 years",
+        "17 years",
+        "19 years",
+        "21 years"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Let the son be S, so the father is 50 − S. Five years ago: 45 − S = 4(S − 5), so 45 − S = 4S − 20, 5S = 65 and S = 13. (The father is 37; five years ago 32 = 4 × 8.)"
+    },
+    {
+      "id": "SBICLK-T1-065",
+      "section": "quant",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Probability",
+      "stem": "A bag has 3 red, 6 blue and 5 green balls. One ball is drawn at random. What is the probability that it is NOT blue?",
+      "options": [
+        "4/7",
+        "5/14",
+        "3/7",
+        "3/14",
+        "1/2"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "There are 14 balls and 8 of them are not blue, so the probability is 8/14 = 4/7."
+    },
+    {
+      "id": "SBICLK-T1-066",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkLogic",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Inequality",
+      "stem": "A statement is followed by two conclusions, I and II. Assume the statement is true and decide which conclusion(s) definitely follow.\n\nStatement: M ≥ N > O = P < Q\n\nI. M > P\n\nII. Q > O",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "I: M ≥ N > O = P gives M > P, true. II: Q > P = O gives Q > O, true. Both follow."
+    },
+    {
+      "id": "SBICLK-T1-067",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkLogic",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Inequality",
+      "stem": "A statement is followed by two conclusions, I and II. Assume the statement is true and decide which conclusion(s) definitely follow.\n\nStatement: F > G ≥ H < J = K\n\nI. F > H\n\nII. G < K",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "I: F > G ≥ H gives F > H, true. II: G ≥ H and H < J point in opposite directions, so G and K cannot be compared. Only I follows."
+    },
+    {
+      "id": "SBICLK-T1-068",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Inequality",
+      "stem": "A statement is followed by two conclusions, I and II. Assume the statement is true and decide which conclusion(s) definitely follow.\n\nStatement: G ≤ H < I ≥ J > K\n\nI. H > K\n\nII. I > K",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "I: H < I and I ≥ J point in opposite directions, so H and K cannot be compared. II: I ≥ J > K gives I > K, true. Only II follows."
+    },
+    {
+      "id": "SBICLK-T1-069",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Inequality",
+      "stem": "A statement is followed by two conclusions, I and II. Assume the statement is true and decide which conclusion(s) definitely follow.\n\nStatement: J ≤ K = L ≤ M > N\n\nI. M > J\n\nII. M = J",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "J ≤ K = L ≤ M gives M ≥ J. Neither 'M > J' nor 'M = J' is certain alone, but one of them must be true. Either I or II follows."
+    },
+    {
+      "id": "SBICLK-T1-070",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Syllogism",
+      "stem": "Some statements are followed by two conclusions, I and II. Take the statements to be true even if they seem to differ from commonly known facts, and decide which conclusion(s) logically follow.\n\nStatements: All kites are toys. Some gifts are kites.\n\nI. All toys are gifts.\n\nII. Some toys are gifts.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Nothing says every toy is a gift, so I is not certain. The gifts that are kites are also toys, so some toys are gifts (II). Only II follows."
+    },
+    {
+      "id": "SBICLK-T1-071",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Syllogism",
+      "stem": "Some statements are followed by two conclusions, I and II. Take the statements to be true even if they seem to differ from commonly known facts, and decide which conclusion(s) logically follow.\n\nStatements: All shops are stalls. Some shops are kiosks.\n\nI. Some stalls are kiosks.\n\nII. All kiosks are stalls.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The shops that are kiosks are also stalls, so some stalls are kiosks (I). The kiosks that are not shops may or may not be stalls, so II is not certain. Only I follows."
+    },
+    {
+      "id": "SBICLK-T1-072",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkLogic",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Syllogism",
+      "stem": "Some statements are followed by two conclusions, I and II. Take the statements to be true even if they seem to differ from commonly known facts, and decide which conclusion(s) logically follow.\n\nStatements: No pot is a pan. Some pans are jugs.\n\nI. Some jugs are pots.\n\nII. No jug is a pot.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Jugs that are not pans may or may not be pots, so neither conclusion is certain alone. But they cover every case between them (either some jugs are pots or none is), so either I or II follows."
+    },
+    {
+      "id": "SBICLK-T1-073",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkLogic",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Syllogism",
+      "stem": "Some statements are followed by two conclusions, I and II. Take the statements to be true even if they seem to differ from commonly known facts, and decide which conclusion(s) logically follow.\n\nStatements: No sock is a shoe. All boots are shoes.\n\nI. No boot is a sock.\n\nII. Some shoes are not socks.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "Every boot is a shoe and no shoe is a sock, so no boot is a sock (I). The shoes that are boots are not socks, so some shoes are not socks (II). Both follow."
+    },
+    {
+      "id": "SBICLK-T1-074",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkPuzzle",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Linear seating",
+      "stimulusId": "SBICLK-T1-PZ1",
+      "stem": "Who sits at the extreme left end of the row?",
+      "options": [
+        "O",
+        "J",
+        "P",
+        "L",
+        "K"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Left to right: L, P, J, N, K, O, M. N is 4th (the middle of seven), M is three places to its right (7th), K is 5th and J, second to the left of K, is 3rd. O is immediately left of M (6th). L and P take 1st and 2nd, and P is not at an end, so P is 2nd and L 1st."
+    },
+    {
+      "id": "SBICLK-T1-075",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Linear seating",
+      "stimulusId": "SBICLK-T1-PZ1",
+      "stem": "How many persons sit between P and K?",
+      "options": [
+        "Four",
+        "None",
+        "One",
+        "Two",
+        "Three"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Left to right: L, P, J, N, K, O, M. N is 4th (the middle of seven), M is three places to its right (7th), K is 5th and J, second to the left of K, is 3rd. O is immediately left of M (6th). L and P take 1st and 2nd, and P is not at an end, so P is 2nd and L 1st. P is 2nd and K 5th, so J and N sit between them."
+    },
+    {
+      "id": "SBICLK-T1-076",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkPuzzle",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Linear seating",
+      "stimulusId": "SBICLK-T1-PZ1",
+      "stem": "Who sits second to the right of J?",
+      "options": [
+        "P",
+        "N",
+        "O",
+        "M",
+        "K"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Left to right: L, P, J, N, K, O, M. N is 4th (the middle of seven), M is three places to its right (7th), K is 5th and J, second to the left of K, is 3rd. O is immediately left of M (6th). L and P take 1st and 2nd, and P is not at an end, so P is 2nd and L 1st. J is 3rd; second to the right is 5th, K."
+    },
+    {
+      "id": "SBICLK-T1-077",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkPuzzle",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Linear seating",
+      "stimulusId": "SBICLK-T1-PZ1",
+      "stem": "Which pair sits at the two ends of the row?",
+      "options": [
+        "L and O",
+        "P and M",
+        "J and M",
+        "L and M",
+        "P and O"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Left to right: L, P, J, N, K, O, M. N is 4th (the middle of seven), M is three places to its right (7th), K is 5th and J, second to the left of K, is 3rd. O is immediately left of M (6th). L and P take 1st and 2nd, and P is not at an end, so P is 2nd and L 1st."
+    },
+    {
+      "id": "SBICLK-T1-078",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Linear seating",
+      "stimulusId": "SBICLK-T1-PZ1",
+      "stem": "What is O's position counted from the right end of the row?",
+      "options": [
+        "Second",
+        "Third",
+        "Fourth",
+        "First",
+        "Fifth"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Left to right: L, P, J, N, K, O, M. N is 4th (the middle of seven), M is three places to its right (7th), K is 5th and J, second to the left of K, is 3rd. O is immediately left of M (6th). L and P take 1st and 2nd, and P is not at an end, so P is 2nd and L 1st. O is 6th from the left of seven, so 2nd from the right."
+    },
+    {
+      "id": "SBICLK-T1-079",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkPuzzle",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Month puzzle",
+      "stimulusId": "SBICLK-T1-PZ2",
+      "stem": "In which month does Rohan take his exam?",
+      "options": [
+        "April",
+        "January",
+        "March",
+        "July",
+        "September"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "In order: January Meera, March Rohan, April Kavya, July Nitin, September Pallavi, November Lokesh. Lokesh has November, the last month. With one person between them, Nitin has July, and Kavya the month before, April. Of January, March and September, only September has 30 days, so Pallavi has September. Meera comes before Rohan: Meera January, Rohan March."
+    },
+    {
+      "id": "SBICLK-T1-080",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkPuzzle",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Month puzzle",
+      "stimulusId": "SBICLK-T1-PZ2",
+      "stem": "Who takes the exam in January?",
+      "options": [
+        "Rohan",
+        "Meera",
+        "Nitin",
+        "Kavya",
+        "Pallavi"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "In order: January Meera, March Rohan, April Kavya, July Nitin, September Pallavi, November Lokesh. Lokesh has November, the last month. With one person between them, Nitin has July, and Kavya the month before, April. Of January, March and September, only September has 30 days, so Pallavi has September. Meera comes before Rohan: Meera January, Rohan March."
+    },
+    {
+      "id": "SBICLK-T1-081",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Month puzzle",
+      "stimulusId": "SBICLK-T1-PZ2",
+      "stem": "How many persons take their exams between Meera and Kavya?",
+      "options": [
+        "Four",
+        "Two",
+        "Three",
+        "None",
+        "One"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "In order: January Meera, March Rohan, April Kavya, July Nitin, September Pallavi, November Lokesh. Lokesh has November, the last month. With one person between them, Nitin has July, and Kavya the month before, April. Of January, March and September, only September has 30 days, so Pallavi has September. Meera comes before Rohan: Meera January, Rohan March. Only Rohan (March) falls between Meera (January) and Kavya (April)."
+    },
+    {
+      "id": "SBICLK-T1-082",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Month puzzle",
+      "stimulusId": "SBICLK-T1-PZ2",
+      "stem": "Whose exam comes immediately after Kavya's?",
+      "options": [
+        "Lokesh",
+        "Pallavi",
+        "Nitin",
+        "Meera",
+        "Rohan"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "In order: January Meera, March Rohan, April Kavya, July Nitin, September Pallavi, November Lokesh. Lokesh has November, the last month. With one person between them, Nitin has July, and Kavya the month before, April. Of January, March and September, only September has 30 days, so Pallavi has September. Meera comes before Rohan: Meera January, Rohan March."
+    },
+    {
+      "id": "SBICLK-T1-083",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Month puzzle",
+      "stimulusId": "SBICLK-T1-PZ2",
+      "stem": "Which of the following is true?",
+      "options": [
+        "Pallavi's exam is in September",
+        "Kavya's exam is in March",
+        "Lokesh's exam is in July",
+        "Nitin's exam is in April",
+        "Meera's exam is after Rohan's"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "In order: January Meera, March Rohan, April Kavya, July Nitin, September Pallavi, November Lokesh. Lokesh has November, the last month. With one person between them, Nitin has July, and Kavya the month before, April. Of January, March and September, only September has 30 days, so Pallavi has September. Meera comes before Rohan: Meera January, Rohan March."
+    },
+    {
+      "id": "SBICLK-T1-084",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Circular seating",
+      "stimulusId": "SBICLK-T1-PZ3",
+      "stem": "Who sits opposite T?",
+      "options": [
+        "U",
+        "V",
+        "Q",
+        "S",
+        "W"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Clockwise from P (facing the centre, a person's left is the next seat clockwise): P, T, R, V, Q, W, S, U. Clockwise from S come U and then P. R is three seats anticlockwise of W, and T three seats anticlockwise of Q, so W and Q take the two seats just anticlockwise of S, R and T the two seats just clockwise of P, and V the seat between those pairs. V is next to R, so R sits beside V and T beside P; then Q sits beside V and W beside S. T is the seat immediately clockwise of P; four seats on from T is W."
+    },
+    {
+      "id": "SBICLK-T1-085",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Circular seating",
+      "stimulusId": "SBICLK-T1-PZ3",
+      "stem": "Who sits immediately to the right of Q?",
+      "options": [
+        "W",
+        "T",
+        "S",
+        "R",
+        "V"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Clockwise from P (facing the centre, a person's left is the next seat clockwise): P, T, R, V, Q, W, S, U. Clockwise from S come U and then P. R is three seats anticlockwise of W, and T three seats anticlockwise of Q, so W and Q take the two seats just anticlockwise of S, R and T the two seats just clockwise of P, and V the seat between those pairs. V is next to R, so R sits beside V and T beside P; then Q sits beside V and W beside S. A person's right is the next seat anticlockwise, so Q's immediate right is V. W is on Q's left."
+    },
+    {
+      "id": "SBICLK-T1-086",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkPuzzle",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Circular seating",
+      "stimulusId": "SBICLK-T1-PZ3",
+      "stem": "How many persons sit between U and R, counting clockwise from U?",
+      "options": [
+        "Three",
+        "One",
+        "Five",
+        "Two",
+        "Four"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Clockwise from P (facing the centre, a person's left is the next seat clockwise): P, T, R, V, Q, W, S, U. Clockwise from S come U and then P. R is three seats anticlockwise of W, and T three seats anticlockwise of Q, so W and Q take the two seats just anticlockwise of S, R and T the two seats just clockwise of P, and V the seat between those pairs. V is next to R, so R sits beside V and T beside P; then Q sits beside V and W beside S. Clockwise from U come P and T, then R."
+    },
+    {
+      "id": "SBICLK-T1-087",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkPuzzle",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Circular seating",
+      "stimulusId": "SBICLK-T1-PZ3",
+      "stem": "Who sits third to the left of W?",
+      "options": [
+        "P",
+        "Q",
+        "S",
+        "T",
+        "U"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Clockwise from P (facing the centre, a person's left is the next seat clockwise): P, T, R, V, Q, W, S, U. Clockwise from S come U and then P. R is three seats anticlockwise of W, and T three seats anticlockwise of Q, so W and Q take the two seats just anticlockwise of S, R and T the two seats just clockwise of P, and V the seat between those pairs. V is next to R, so R sits beside V and T beside P; then Q sits beside V and W beside S. Moving clockwise (left) from W: S, U, then P."
+    },
+    {
+      "id": "SBICLK-T1-088",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Circular seating",
+      "stimulusId": "SBICLK-T1-PZ3",
+      "stem": "Which pair sits opposite each other?",
+      "options": [
+        "T and V",
+        "R and S",
+        "Q and T",
+        "U and W",
+        "P and V"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Clockwise from P (facing the centre, a person's left is the next seat clockwise): P, T, R, V, Q, W, S, U. Clockwise from S come U and then P. R is three seats anticlockwise of W, and T three seats anticlockwise of Q, so W and Q take the two seats just anticlockwise of S, R and T the two seats just clockwise of P, and V the seat between those pairs. V is next to R, so R sits beside V and T beside P; then Q sits beside V and W beside S."
+    },
+    {
+      "id": "SBICLK-T1-089",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Coding-decoding",
+      "stem": "In a certain code, CASH is written as DBTI. How is NOTE written in that code?",
+      "options": [
+        "OPUE",
+        "PQVG",
+        "MNSD",
+        "OPUF",
+        "OOUF"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Each letter moves one place forward: C→D, A→B, S→T, H→I. So N→O, O→P, T→U, E→F: OPUF."
+    },
+    {
+      "id": "SBICLK-T1-090",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Coding-decoding",
+      "stem": "In a certain code, BANK is written as LOBC. How is FUND written in that code?",
+      "options": [
+        "GVOE",
+        "DNUF",
+        "FPWH",
+        "EOVG",
+        "EOVF"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The word is reversed and each letter moved one place forward: BANK → KNAB → LOBC. FUND → DNUF → EOVG."
+    },
+    {
+      "id": "SBICLK-T1-091",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Coding-decoding",
+      "stem": "In a certain code language, 'pay bill now' is written as 'ko ru ta', 'bill is due' as 'ta mi le' and 'now or later' as 'ru si vo'. What is the code for 'pay'?",
+      "options": [
+        "ru",
+        "ko",
+        "ta",
+        "mi",
+        "si"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "'Bill' appears in the first two sentences, and so does 'ta'. 'Now' appears in the first and third, and so does 'ru'. The code left for 'pay' is 'ko'."
+    },
+    {
+      "id": "SBICLK-T1-092",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Blood relations",
+      "stem": "Pointing to a girl, Ramesh says, \"Her mother is the only sister of my wife.\" How is the girl related to Ramesh?",
+      "options": [
+        "Niece",
+        "Aunt",
+        "Cousin",
+        "Sister",
+        "Daughter"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The girl's mother is Ramesh's wife's sister, his sister-in-law. Her daughter is Ramesh's niece."
+    },
+    {
+      "id": "SBICLK-T1-093",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkVerbal",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Blood relations",
+      "stem": "A is the brother of B. C is the mother of A. D is the father of C. How is B related to D?",
+      "options": [
+        "Granddaughter",
+        "Grandchild",
+        "Nephew",
+        "Grandson",
+        "Son"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "B is a child of C (A's brother's sibling shares the mother C), and C is D's daughter, so B is D's grandchild. B's gender is not given, so neither 'grandson' nor 'granddaughter' is certain."
+    },
+    {
+      "id": "SBICLK-T1-094",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Direction sense",
+      "stem": "Nikhil walks 6 km north, turns right and walks 8 km, then turns right again and walks 6 km. How far is he from his starting point, and in which direction?",
+      "options": [
+        "8 km East",
+        "14 km East",
+        "10 km North-east",
+        "6 km South",
+        "8 km West"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "After 6 km north and 8 km east, turning right faces him south. 6 km south brings him back level with the start, 8 km to its east."
+    },
+    {
+      "id": "SBICLK-T1-095",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Direction sense",
+      "stem": "Farhan is facing south. He turns 135° clockwise and then 45° anticlockwise. Which direction is he facing now?",
+      "options": [
+        "South-west",
+        "North",
+        "East",
+        "West",
+        "North-west"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "From south, 90° clockwise is west and 135° is north-west. Turning back 45° anticlockwise leaves him facing west."
+    },
+    {
+      "id": "SBICLK-T1-096",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Ranking",
+      "stem": "In a row of 61 students, Payal is 23rd from the left end. What is her position from the right end?",
+      "options": [
+        "39th",
+        "40th",
+        "41st",
+        "42nd",
+        "43rd"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Position from the right = total − position from the left + 1 = 61 − 23 + 1 = 39th."
+    },
+    {
+      "id": "SBICLK-T1-097",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Alphabet",
+      "stem": "Which letter is 7th to the right of the 15th letter from the left in the English alphabet?",
+      "options": [
+        "V",
+        "X",
+        "H",
+        "U",
+        "W"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The 15th letter is O. Seven places to its right is the 22nd letter, V."
+    },
+    {
+      "id": "SBICLK-T1-098",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Letter series",
+      "stem": "Which letter pair comes next in the series? AY, BX, CW, DV, ?",
+      "options": [
+        "EV",
+        "DU",
+        "EU",
+        "ET",
+        "FU"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The first letters move forward (A, B, C, D, E) and the second letters move backward (Y, X, W, V, U): EU."
+    },
+    {
+      "id": "SBICLK-T1-099",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Alphabet",
+      "stem": "If the letters of the word MARKET are arranged in alphabetical order, which letter will be third from the right?",
+      "options": [
+        "T",
+        "E",
+        "K",
+        "M",
+        "R"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "In alphabetical order the letters are A, E, K, M, R, T. Third from the right is M."
+    },
+    {
+      "id": "SBICLK-T1-100",
+      "section": "reason",
+      "test": 1,
+      "module": 1,
+      "domain": "sbiclerkVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Odd one out",
+      "stem": "Find the odd one out: 64, 100, 144, 160, 196",
+      "options": [
+        "64",
+        "100",
+        "144",
+        "160",
+        "196"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "64, 100, 144 and 196 are the squares of 8, 10, 12 and 14. 160 is not a perfect square."
+    },
+    {
+      "id": "SBICLK-T2-001",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Main idea",
+      "stimulusId": "SBICLK-T2-RC",
+      "stem": "Which of the following would be the most suitable title for the passage?",
+      "options": [
+        "Why Moneylenders Should Be Banned",
+        "How to Build a Mobile Payment App",
+        "Network Failures in Crowded Markets",
+        "The Rising Price of City Vegetables",
+        "Street Vendors and the Road to the Bank"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "The passage is about how QR payments are linking street vendors to banks and what still holds some back. The other titles pick up a single detail or are not discussed."
+    },
+    {
+      "id": "SBICLK-T2-002",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkReading",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Detail",
+      "stimulusId": "SBICLK-T2-RC",
+      "stem": "How did the vegetable seller pay for the morning's stock before digital payments?",
+      "options": [
+        "With credit from the wholesale market",
+        "With a loan from the nearest bank",
+        "With an advance from a moneylender",
+        "With savings kept in a post office",
+        "With money sent by city relatives"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The first paragraph says part of the day's cash went to 'a moneylender who had advanced the morning's stock at a steep daily rate'."
+    },
+    {
+      "id": "SBICLK-T2-003",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Detail",
+      "stimulusId": "SBICLK-T2-RC",
+      "stem": "According to the passage, how do QR payments help a vendor get a bank loan?",
+      "options": [
+        "The moneylender passes the vendor's records to the bank",
+        "The recorded payments show the bank a history of sales",
+        "Customers guarantee the loan when they scan the code",
+        "The payment app lends money to the vendor directly",
+        "The bank gives a loan to everyone who displays a code"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The second paragraph says 'each payment is recorded', so the account shows 'a history of daily sales' that banks can use to judge income."
+    },
+    {
+      "id": "SBICLK-T2-004",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Inference",
+      "stimulusId": "SBICLK-T2-RC",
+      "stem": "Why do most vendors still keep a cash box?",
+      "options": [
+        "The QR code must be replaced by a new one every day",
+        "Banks do not allow vendors to receive large payments",
+        "Customers are not allowed to pay small sums by phone",
+        "Moneylenders insist on being repaid only in cash",
+        "Distrust, fraud and network failures make cash a backup"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "The third paragraph lists older vendors' distrust, fraudsters and network failures, then says 'for these reasons, most vendors still keep a cash box'."
+    },
+    {
+      "id": "SBICLK-T2-005",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Detail",
+      "stimulusId": "SBICLK-T2-RC",
+      "stem": "Which trick used by fraudsters is described in the passage?",
+      "options": [
+        "Paying with notes that turn out to be counterfeit",
+        "Stealing the vendor's phone at the end of the day",
+        "Asking the vendor to scan a code to 'receive' money",
+        "Changing the vendor's printed code at night",
+        "Posing as bank staff offering cheap loans"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The passage mentions 'fake payment messages' and asking vendors 'to scan a code to receive money'."
+    },
+    {
+      "id": "SBICLK-T2-006",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Detail",
+      "stimulusId": "SBICLK-T2-RC",
+      "stem": "What do experts say would bring the remaining vendors on board?",
+      "options": [
+        "A new app that works without any internet connection",
+        "A law requiring every customer to pay by phone",
+        "Closing the cash counters at local banks",
+        "Training, quick help and explanation in the local language",
+        "Higher loans for vendors who give up cash"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The fourth paragraph says training in spotting fraud, quick help and patient explanation in the local language 'would do more than any new app'."
+    },
+    {
+      "id": "SBICLK-T2-007",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkReading",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Inference",
+      "stimulusId": "SBICLK-T2-RC",
+      "stem": "What does the writer mean by calling the QR code 'a bridge between the pavement and the formal banking system'?",
+      "options": [
+        "It replaces bank branches in crowded city markets",
+        "It lets vendors move their stalls into bank buildings",
+        "It is a path that customers use to cross the road",
+        "It allows banks to collect rent from pavement sellers",
+        "It links small sellers to banks and their services"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Through QR payments vendors gain bank accounts, records and loans: the code connects street trade with formal banking."
+    },
+    {
+      "id": "SBICLK-T2-008",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Detail",
+      "stimulusId": "SBICLK-T2-RC",
+      "stem": "Which of the following is NOT mentioned in the passage as a problem with QR payments?",
+      "options": [
+        "Distrust among older vendors",
+        "Networks failing in crowds",
+        "Requests to scan a fake code",
+        "Fake payment messages",
+        "A fee charged on every payment"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "The passage mentions distrust, fake messages, scam codes and network failures, but never any fee on payments."
+    },
+    {
+      "id": "SBICLK-T2-009",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Synonym",
+      "stimulusId": "SBICLK-T2-RC",
+      "stem": "Choose the word most similar in meaning to 'steep' as used in the passage.",
+      "options": [
+        "Hidden",
+        "Fair",
+        "Excessive",
+        "Fixed",
+        "Sloping"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A 'steep daily rate' is a very high, excessive rate of interest. 'Sloping' is the literal meaning of steep, not the one used here."
+    },
+    {
+      "id": "SBICLK-T2-010",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Antonym",
+      "stimulusId": "SBICLK-T2-RC",
+      "stem": "Choose the word most nearly OPPOSITE in meaning to 'humble' as used in the passage.",
+      "options": [
+        "Lowly",
+        "Plain",
+        "Grand",
+        "Simple",
+        "Modest"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The cardboard code 'may look humble', that is, simple and modest. The opposite is 'grand'."
+    },
+    {
+      "id": "SBICLK-T2-011",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkCloze",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Cloze",
+      "stimulusId": "SBICLK-T2-CZ",
+      "stem": "Which word fits blank (1) best?",
+      "options": [
+        "justified",
+        "punished",
+        "wasted",
+        "refused",
+        "ignored"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "'This trust is often justified, but not always' means it is usually deserved. The phrase 'but not always' needs a word that is mostly true; the other options are negative."
+    },
+    {
+      "id": "SBICLK-T2-012",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkCloze",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Cloze",
+      "stimulusId": "SBICLK-T2-CZ",
+      "stem": "Which word fits blank (2) best?",
+      "options": [
+        "mentioned",
+        "invented",
+        "forgotten",
+        "doubted",
+        "removed"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The charges are not hidden 'since each is mentioned somewhere in the document'. 'Removed' or 'forgotten' would mean they are not in the document at all."
+    },
+    {
+      "id": "SBICLK-T2-013",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkCloze",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Cloze",
+      "stimulusId": "SBICLK-T2-CZ",
+      "stem": "Which word fits blank (3) best?",
+      "options": [
+        "recommend",
+        "prohibit",
+        "question",
+        "regret",
+        "postpone"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Counsellors recommend a simple habit, which the sentence then describes. 'Prohibit' and 'regret' reverse the sense."
+    },
+    {
+      "id": "SBICLK-T2-014",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkCloze",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Cloze",
+      "stimulusId": "SBICLK-T2-CZ",
+      "stem": "Which word fits blank (4) best?",
+      "options": [
+        "excludes",
+        "cancels",
+        "hides",
+        "doubles",
+        "captures"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "The total repayment captures, or includes, the costs spread across the pages. 'Hides' and 'excludes' say the opposite, and the figure cannot cancel or double costs."
+    },
+    {
+      "id": "SBICLK-T2-015",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkCloze",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Cloze",
+      "stimulusId": "SBICLK-T2-CZ",
+      "stem": "Which word fits blank (5) best?",
+      "options": [
+        "satisfied",
+        "promoted",
+        "surprised",
+        "rewarded",
+        "invited"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A borrower who knows the total cost is less likely to be surprised later by extra charges. The other words do not fit an unpleasant discovery."
+    },
+    {
+      "id": "SBICLK-T2-016",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkCloze",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Single filler",
+      "stem": "Choose the word that fits the blank to make the sentence grammatically correct and meaningful.\n\nPlease ........ the form in capital letters and sign it at the bottom.",
+      "options": [
+        "fill on",
+        "fill up to",
+        "fill with",
+        "fill at",
+        "fill in"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "A form is filled in (or filled out). The other prepositions are not used with 'form'."
+    },
+    {
+      "id": "SBICLK-T2-017",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkCloze",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Single filler",
+      "stem": "Choose the word that fits the blank to make the sentence grammatically correct and meaningful.\n\nThe customer was ........ about the extra charge and asked for a written explanation.",
+      "options": [
+        "proud",
+        "careful",
+        "fond",
+        "pleased",
+        "puzzled"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Someone who asks for an explanation of a charge is puzzled by it. 'Fond about' and 'proud about' are unidiomatic, and 'pleased' does not fit the request."
+    },
+    {
+      "id": "SBICLK-T2-018",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkCloze",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Single filler",
+      "stem": "Choose the word that fits the blank to make the sentence grammatically correct and meaningful.\n\nThe two branches will be ........ next month to cut running costs.",
+      "options": [
+        "melted",
+        "joined up",
+        "mixed",
+        "merged",
+        "married"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Branches, banks and companies are 'merged'. 'Mixed' and 'melted' are used for substances, and 'joined up' is informal and unusual here."
+    },
+    {
+      "id": "SBICLK-T2-019",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkCloze",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Double filler",
+      "stem": "Choose the pair of words that fits the two blanks, in order, to make the sentence meaningful.\n\nThe road was ........ for repairs, so the buses had to take a ........ route.",
+      "options": [
+        "opened, shorter",
+        "closed, faster",
+        "closed, longer",
+        "repaired, closed",
+        "widened, blocked"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A road closed for repairs forces buses onto a longer route. 'Opened, shorter' and 'closed, faster' do not follow, and the last two pairs make no sense in the second blank."
+    },
+    {
+      "id": "SBICLK-T2-020",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkCloze",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Double filler",
+      "stem": "Choose the pair of words that fits the two blanks, in order, to make the sentence meaningful.\n\nAlthough the task looked ........ at first, it turned out to be quite .........",
+      "options": [
+        "simple, easy",
+        "difficult, simple",
+        "hard, tough",
+        "easy, effortless",
+        "tiring, exhausting"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "'Although' needs a contrast: difficult at first, but simple in the end. Every other pair has two words with the same meaning."
+    },
+    {
+      "id": "SBICLK-T2-021",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Error spotting",
+      "stem": "Read the sentence and find the part that contains an error. If there is no error, choose E.\n\nA pair of shoes (A) / are kept (B) / near the door (C) / for guests. (D) / No error (E)",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The subject is 'a pair', which is singular: 'A pair of shoes is kept near the door'."
+    },
+    {
+      "id": "SBICLK-T2-022",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Error spotting",
+      "stem": "Read the sentence and find the part that contains an error. If there is no error, choose E.\n\nBeing a public holiday, (A) / the bank (B) / remained closed (C) / all day. (D) / No error (E)",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "As written, 'being a public holiday' describes 'the bank', which makes no sense. The opening needs its own subject: 'It being a public holiday, the bank remained closed' (or 'As it was a public holiday, ...')."
+    },
+    {
+      "id": "SBICLK-T2-023",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Error spotting",
+      "stem": "Read the sentence and find the part that contains an error. If there is no error, choose E.\n\nWho's pen (A) / is this (B) / lying on (C) / the counter? (D) / No error (E)",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "'Who's' is short for 'who is'. The possessive is 'whose': 'Whose pen is this lying on the counter?'"
+    },
+    {
+      "id": "SBICLK-T2-024",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkGrammar",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Error spotting",
+      "stem": "Read the sentence and find the part that contains an error. If there is no error, choose E.\n\nThe scissors (A) / is kept (B) / in the top drawer (C) / of the desk. (D) / No error (E)",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "'Scissors' is a plural noun (like 'trousers' and 'spectacles'), so it takes 'are': 'The scissors are kept ...'. ('A pair of scissors is' would be singular.)"
+    },
+    {
+      "id": "SBICLK-T2-025",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Error spotting",
+      "stem": "Read the sentence and find the part that contains an error. If there is no error, choose E.\n\nThe officer asked (A) / the visitor to wait (B) / outside the cabin (C) / for a few minutes. (D) / No error (E)",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "The sentence is correct: 'asked someone to wait' is the right pattern, and the rest of the sentence agrees."
+    },
+    {
+      "id": "SBICLK-T2-026",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Sentence improvement",
+      "stem": "Which of the following should replace the part in bold to make the sentence correct? If no replacement is needed, choose 'No improvement'.\n\nIf I **was the manager**, I would open the branch on Sundays.",
+      "options": [
+        "were the manager",
+        "am the manager",
+        "had been manager",
+        "will be the manager",
+        "No improvement"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "An imaginary present condition uses 'were' for every subject: 'If I were the manager, I would ...'."
+    },
+    {
+      "id": "SBICLK-T2-027",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Sentence improvement",
+      "stem": "Which of the following should replace the part in bold to make the sentence correct? If no replacement is needed, choose 'No improvement'.\n\nHe **has been working** in this bank for twelve years.",
+      "options": [
+        "is working",
+        "was working",
+        "had worked",
+        "works",
+        "No improvement"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "The present perfect continuous with 'for twelve years' is correct for an action that began in the past and is still going on."
+    },
+    {
+      "id": "SBICLK-T2-028",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Sentence improvement",
+      "stem": "Which of the following should replace the part in bold to make the sentence correct? If no replacement is needed, choose 'No improvement'.\n\nThe manager made him **to wait** outside the cabin for an hour.",
+      "options": [
+        "wait",
+        "waiting",
+        "to waiting",
+        "for waiting",
+        "No improvement"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "'Make' in the active voice takes the bare infinitive without 'to': 'made him wait'. ('He was made to wait' keeps 'to' only in the passive.)"
+    },
+    {
+      "id": "SBICLK-T2-029",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Phrase rearrangement",
+      "stem": "The parts of a sentence, labelled P, Q, R and S, are given in jumbled order after the fixed opening. Choose the order that makes a meaningful sentence.\n\nTo open a savings account,\n\nP. along with two photographs\nQ. you must fill in the form\nR. and submit it at the counter\nS. and a copy of your identity proof",
+      "options": [
+        "PQSR",
+        "QSPR",
+        "QPSR",
+        "SPQR",
+        "RQPS"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "To open a savings account, (Q) you must fill in the form (P) along with two photographs (S) and a copy of your identity proof (R) and submit it at the counter."
+    },
+    {
+      "id": "SBICLK-T2-030",
+      "section": "eng",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkGrammar",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Phrase rearrangement",
+      "stem": "The parts of a sentence, labelled P, Q, R and S, are given in jumbled order after the fixed opening. Choose the order that makes a meaningful sentence.\n\nThe farmers of the village\n\nP. where they could sell\nQ. formed a cooperative\nR. their milk directly\nS. and set up a collection centre",
+      "options": [
+        "QPSR",
+        "SQPR",
+        "QSRP",
+        "QSPR",
+        "PRQS"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "The farmers of the village (Q) formed a cooperative (S) and set up a collection centre (P) where they could sell (R) their milk directly."
+    },
+    {
+      "id": "SBICLK-T2-031",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Simplification",
+      "stem": "What will come in place of the question mark (?) in the following question?\n\n45% of 620 − 79 = ?",
+      "options": [
+        "160",
+        "170",
+        "180",
+        "190",
+        "200"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "45% of 620 = 279, and 279 − 79 = 200."
+    },
+    {
+      "id": "SBICLK-T2-032",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Simplification",
+      "stem": "What will come in place of the question mark (?) in the following question?\n\n28² − 19² = ?",
+      "options": [
+        "393",
+        "403",
+        "413",
+        "423",
+        "433"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "28² = 784 and 19² = 361, so 784 − 361 = 423. (Or (28 + 19)(28 − 19) = 47 × 9 = 423.)"
+    },
+    {
+      "id": "SBICLK-T2-033",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Simplification",
+      "stem": "What will come in place of the question mark (?) in the following question?\n\n2346 ÷ 23 + 48 = ?",
+      "options": [
+        "148",
+        "150",
+        "152",
+        "154",
+        "156"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "2346 ÷ 23 = 102, and 102 + 48 = 150."
+    },
+    {
+      "id": "SBICLK-T2-034",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Simplification",
+      "stem": "What will come in place of the question mark (?) in the following question?\n\n5/8 of 4/9 of 2160 = ?",
+      "options": [
+        "560",
+        "580",
+        "600",
+        "620",
+        "640"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "4/9 of 2160 = 960, and 5/8 of 960 = 600."
+    },
+    {
+      "id": "SBICLK-T2-035",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Simplification",
+      "stem": "What will come in place of the question mark (?) in the following question?\n\n√2025 × 6 − 3² = ?",
+      "options": [
+        "253",
+        "257",
+        "261",
+        "265",
+        "269"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "√2025 = 45, 45 × 6 = 270, and 270 − 9 = 261."
+    },
+    {
+      "id": "SBICLK-T2-036",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Simplification",
+      "stem": "What will come in place of the question mark (?) in the following question?\n\n12.5% of 1600 + ? = 15² + 25",
+      "options": [
+        "40",
+        "45",
+        "50",
+        "55",
+        "60"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "12.5% of 1600 = 200 and 15² + 25 = 250, so ? = 250 − 200 = 50."
+    },
+    {
+      "id": "SBICLK-T2-037",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Simplification",
+      "stem": "What will come in place of the question mark (?) in the following question?\n\n4.5 × 18 + 6.5 × 12 = ?",
+      "options": [
+        "147",
+        "151",
+        "155",
+        "159",
+        "163"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "4.5 × 18 = 81 and 6.5 × 12 = 78, so 81 + 78 = 159."
+    },
+    {
+      "id": "SBICLK-T2-038",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Simplification",
+      "stem": "What will come in place of the question mark (?) in the following question?\n\n? ÷ 14 × 9 = 243",
+      "options": [
+        "348",
+        "358",
+        "368",
+        "378",
+        "388"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "? ÷ 14 = 243 ÷ 9 = 27, so ? = 27 × 14 = 378."
+    },
+    {
+      "id": "SBICLK-T2-039",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Approximation",
+      "stem": "What approximate value will come in place of the question mark (?) in the following question? (You are not expected to calculate the exact value.)\n\n59.89% of 1199.7 − 280.1 = ?",
+      "options": [
+        "360",
+        "380",
+        "400",
+        "420",
+        "440"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "Round to 60% of 1200 − 280 = 720 − 280 = 440."
+    },
+    {
+      "id": "SBICLK-T2-040",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Approximation",
+      "stem": "What approximate value will come in place of the question mark (?) in the following question? (You are not expected to calculate the exact value.)\n\n3599.8 ÷ 59.9 + 14.98² = ?",
+      "options": [
+        "245",
+        "265",
+        "285",
+        "305",
+        "325"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Round to 3600 ÷ 60 + 15² = 60 + 225 = 285."
+    },
+    {
+      "id": "SBICLK-T2-041",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkNumber",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Approximation",
+      "stem": "What approximate value will come in place of the question mark (?) in the following question? (You are not expected to calculate the exact value.)\n\n17.97 × 22.04 + 11.03 × 7.96 = ?",
+      "options": [
+        "464",
+        "484",
+        "504",
+        "524",
+        "544"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Round to 18 × 22 + 11 × 8 = 396 + 88 = 484."
+    },
+    {
+      "id": "SBICLK-T2-042",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "What will come in place of the question mark (?) in the following number series?\n\n3, 7, 19, 55, 163, ?",
+      "options": [
+        "481",
+        "483",
+        "485",
+        "487",
+        "489"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Each term is three times the previous minus 2: 163 × 3 − 2 = 487."
+    },
+    {
+      "id": "SBICLK-T2-043",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkNumber",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "What will come in place of the question mark (?) in the following number series?\n\n2, 3, 11, 38, 102, ?",
+      "options": [
+        "221",
+        "223",
+        "225",
+        "227",
+        "229"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "The differences are 1, 8, 27, 64, the cubes of 1 to 4. The next difference is 125: 102 + 125 = 227."
+    },
+    {
+      "id": "SBICLK-T2-044",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "What will come in place of the question mark (?) in the following number series?\n\n6, 3, 3, 4.5, 9, ?",
+      "options": [
+        "19.5",
+        "21",
+        "22.5",
+        "24",
+        "25.5"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Multiply by 0.5, 1, 1.5, 2 and then 2.5: 9 × 2.5 = 22.5."
+    },
+    {
+      "id": "SBICLK-T2-045",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "What will come in place of the question mark (?) in the following number series?\n\n15, 23, 39, 63, 95, ?",
+      "options": [
+        "131",
+        "135",
+        "139",
+        "143",
+        "147"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The differences are 8, 16, 24, 32, rising by 8. The next is 40: 95 + 40 = 135."
+    },
+    {
+      "id": "SBICLK-T2-046",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkDI",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "SBICLK-T2-DI1",
+      "stem": "How many passengers used route R3 over the three days together?",
+      "options": [
+        "16,500",
+        "17,000",
+        "17,500",
+        "18,000",
+        "18,500"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "62 + 55 + 58 = 175 hundred, which is 17,500 passengers."
+    },
+    {
+      "id": "SBICLK-T2-047",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkDI",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "SBICLK-T2-DI1",
+      "stem": "What was the average number of passengers per route on Wednesday?",
+      "options": [
+        "4,800",
+        "4,950",
+        "5,100",
+        "5,250",
+        "5,400"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Wednesday total = 60 + 47 + 58 + 45 = 210 hundred. 210 ÷ 4 = 52.5 hundred, which is 5,250."
+    },
+    {
+      "id": "SBICLK-T2-048",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkDI",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "SBICLK-T2-DI1",
+      "stem": "By what percentage did the passengers on route R4 rise from Monday to Wednesday?",
+      "options": [
+        "40%",
+        "45%",
+        "50%",
+        "55%",
+        "60%"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "R4 rose from 30 to 45 hundred, an increase of 15. 15 ÷ 30 × 100 = 50%."
+    },
+    {
+      "id": "SBICLK-T2-049",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkDI",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "SBICLK-T2-DI1",
+      "stem": "What is the ratio of passengers on route R2 to passengers on route R1, both on Monday?",
+      "options": [
+        "4 : 3",
+        "3 : 4",
+        "5 : 4",
+        "6 : 7",
+        "4 : 5"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "R2 on Monday had 36 and R1 had 45. 36 : 45, dividing both by 9, is 4 : 5."
+    },
+    {
+      "id": "SBICLK-T2-050",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkDI",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "SBICLK-T2-DI1",
+      "stem": "By how many passengers did route R3 on Monday exceed route R2 on Tuesday?",
+      "options": [
+        "2,000",
+        "2,200",
+        "2,400",
+        "2,600",
+        "2,800"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "R3 on Monday had 62 hundred and R2 on Tuesday 40 hundred. 62 − 40 = 22 hundred, which is 2,200."
+    },
+    {
+      "id": "SBICLK-T2-051",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkDI",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "SBICLK-T2-DI2",
+      "stem": "Whose savings are the largest percentage of their income?",
+      "options": [
+        "Seema",
+        "Tanvir",
+        "Usha",
+        "Ravi",
+        "Vijay"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Savings as a share of income: Ravi 12/48 = 25%, Seema 18/60 = 30%, Tanvir 11/55 = 20%, Usha 14/40 = 35%, Vijay 18/72 = 25%. Usha is highest."
+    },
+    {
+      "id": "SBICLK-T2-052",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkDI",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "SBICLK-T2-DI2",
+      "stem": "What are the total monthly savings of all five persons?",
+      "options": [
+        "₹73,000",
+        "₹78,000",
+        "₹83,000",
+        "₹88,000",
+        "₹93,000"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Savings are 12, 18, 11, 14 and 18 thousand, which add to 73 thousand: ₹73,000."
+    },
+    {
+      "id": "SBICLK-T2-053",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkDI",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "SBICLK-T2-DI2",
+      "stem": "Tanvir's expenditure is what percentage of his income?",
+      "options": [
+        "80%",
+        "85%",
+        "90%",
+        "95%",
+        "100%"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "44 ÷ 55 × 100 = 80%."
+    },
+    {
+      "id": "SBICLK-T2-054",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkDI",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "SBICLK-T2-DI2",
+      "stem": "What is the average monthly income of the five persons?",
+      "options": [
+        "₹55,000",
+        "₹56,000",
+        "₹57,000",
+        "₹58,000",
+        "₹59,000"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "48 + 60 + 55 + 40 + 72 = 275 thousand, and 275 ÷ 5 = 55 thousand: ₹55,000."
+    },
+    {
+      "id": "SBICLK-T2-055",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkDI",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "SBICLK-T2-DI2",
+      "stem": "What is the ratio of Seema's savings to Usha's savings?",
+      "options": [
+        "9 : 7",
+        "6 : 5",
+        "9 : 8",
+        "3 : 2",
+        "7 : 9"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Seema saves 60 − 42 = 18 thousand and Usha 40 − 26 = 14 thousand. 18 : 14 = 9 : 7."
+    },
+    {
+      "id": "SBICLK-T2-056",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Profit and loss",
+      "stem": "A shopkeeper marks an article 25% above its cost price and then gives a discount of 8%. What is his profit percentage?",
+      "options": [
+        "11%",
+        "12%",
+        "13%",
+        "14%",
+        "15%"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "If the cost is 100, the marked price is 125 and the selling price is 92% of 125 = 115. Profit = 15%."
+    },
+    {
+      "id": "SBICLK-T2-057",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Simple interest",
+      "stem": "₹4,500 earns ₹810 as simple interest in 2 years. What is the rate of interest per annum?",
+      "options": [
+        "8%",
+        "8.5%",
+        "9%",
+        "9.5%",
+        "10%"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Rate = 810 × 100 ÷ (4,500 × 2) = 81,000 ÷ 9,000 = 9%."
+    },
+    {
+      "id": "SBICLK-T2-058",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkArith",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Compound interest",
+      "stem": "What is the difference between the compound interest and the simple interest on ₹18,000 for 2 years at 5% per annum, compounded annually?",
+      "options": [
+        "₹33",
+        "₹37",
+        "₹41",
+        "₹45",
+        "₹49"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "For 2 years the difference is P × (R/100)² = 18,000 × 0.05 × 0.05 = ₹45."
+    },
+    {
+      "id": "SBICLK-T2-059",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Average",
+      "stem": "The average of six numbers is 28. If one of them, 38, is replaced by 20, what is the new average?",
+      "options": [
+        "23",
+        "23.5",
+        "24",
+        "24.5",
+        "25"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "The total falls from 6 × 28 = 168 by 18 to 150, and 150 ÷ 6 = 25."
+    },
+    {
+      "id": "SBICLK-T2-060",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkArith",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Mixtures",
+      "stem": "An 80-litre mixture has milk and water in the ratio 5 : 3. How many litres of water must be added to make the ratio 5 : 4?",
+      "options": [
+        "2 litres",
+        "4 litres",
+        "6 litres",
+        "8 litres",
+        "10 litres"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "Milk = 50 litres and water = 30 litres. For 5 : 4, water must be 50 ÷ 5 × 4 = 40 litres, so add 10."
+    },
+    {
+      "id": "SBICLK-T2-061",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Time and work",
+      "stem": "Kiran and Lata together can finish a piece of work in 12 days. Kiran alone can finish it in 20 days. In how many days can Lata finish it alone?",
+      "options": [
+        "30 days",
+        "32 days",
+        "34 days",
+        "36 days",
+        "38 days"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Lata's daily work = 1/12 − 1/20 = 5/60 − 3/60 = 2/60 = 1/30, so she needs 30 days."
+    },
+    {
+      "id": "SBICLK-T2-062",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Boats and streams",
+      "stem": "A boat's speed in still water is 18 km/h and the stream flows at 6 km/h. How long will the boat take to go 72 km downstream and come back?",
+      "options": [
+        "7 hours",
+        "8 hours",
+        "9 hours",
+        "10 hours",
+        "11 hours"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Downstream speed is 24 km/h (3 hours for 72 km); upstream speed is 12 km/h (6 hours). Total 9 hours."
+    },
+    {
+      "id": "SBICLK-T2-063",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Percentage",
+      "stem": "A town has 25,000 people. Its population rises by 8% in one year and falls by 5% the next. What is the population after two years?",
+      "options": [
+        "25,600",
+        "25,650",
+        "25,700",
+        "25,750",
+        "25,800"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "25,000 × 1.08 = 27,000, and 27,000 × 0.95 = 25,650."
+    },
+    {
+      "id": "SBICLK-T2-064",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkArith",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Ratio",
+      "stem": "The incomes of Mohit and Naina are in the ratio 5 : 4 and their expenditures in the ratio 3 : 2. If each saves ₹6,000 a month, what is Mohit's income?",
+      "options": [
+        "₹7,000",
+        "₹9,000",
+        "₹11,000",
+        "₹13,000",
+        "₹15,000"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "Let incomes be 5k and 4k and expenditures 3m and 2m. 5k − 3m = 6,000 and 4k − 2m = 6,000 give m = 2k − 3,000, so 5k − 6k + 9,000 = 6,000 and k = 3,000. Mohit earns 5 × 3,000 = ₹15,000."
+    },
+    {
+      "id": "SBICLK-T2-065",
+      "section": "quant",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Trains",
+      "stem": "Two trains 175 m and 225 m long run on parallel tracks in opposite directions at 48 km/h and 72 km/h. How long do they take to cross each other completely?",
+      "options": [
+        "4 seconds",
+        "6 seconds",
+        "8 seconds",
+        "10 seconds",
+        "12 seconds"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "Relative speed = 48 + 72 = 120 km/h = 100/3 m/s. They must cover 175 + 225 = 400 m, which takes 400 × 3/100 = 12 seconds."
+    },
+    {
+      "id": "SBICLK-T2-066",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkLogic",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Inequality",
+      "stem": "A statement is followed by two conclusions, I and II. Assume the statement is true and decide which conclusion(s) definitely follow.\n\nStatement: P > Q ≥ R > S\n\nI. P > S\n\nII. R ≥ P",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "I: P > Q ≥ R > S gives P > S, true. II: P > Q ≥ R gives P > R, so 'R ≥ P' is false. Only I follows."
+    },
+    {
+      "id": "SBICLK-T2-067",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Inequality",
+      "stem": "A statement is followed by two conclusions, I and II. Assume the statement is true and decide which conclusion(s) definitely follow.\n\nStatement: K ≤ L = M < N ≥ O\n\nI. M > O\n\nII. N > K",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "I: M < N and N ≥ O point in opposite directions, so M and O cannot be compared. II: K ≤ L = M < N gives N > K, true. Only II follows."
+    },
+    {
+      "id": "SBICLK-T2-068",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Inequality",
+      "stem": "A statement is followed by two conclusions, I and II. Assume the statement is true and decide which conclusion(s) definitely follow.\n\nStatement: W = X ≥ Y ≤ Z\n\nI. W > Z\n\nII. Z > X",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "X ≥ Y and Y ≤ Z point in opposite directions, so neither W nor X can be compared with Z. Neither follows."
+    },
+    {
+      "id": "SBICLK-T2-069",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Inequality",
+      "stem": "A statement is followed by two conclusions, I and II. Assume the statement is true and decide which conclusion(s) definitely follow.\n\nStatement: C > D ≥ E ≥ F < G\n\nI. D > F\n\nII. D = F",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "D ≥ E ≥ F gives D ≥ F. Neither 'D > F' nor 'D = F' is certain alone, but one must be true. Either I or II follows."
+    },
+    {
+      "id": "SBICLK-T2-070",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkLogic",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Syllogism",
+      "stem": "Some statements are followed by two conclusions, I and II. Take the statements to be true even if they seem to differ from commonly known facts, and decide which conclusion(s) logically follow.\n\nStatements: Some doctors are teachers. All teachers are singers.\n\nI. Some doctors are singers.\n\nII. All singers are doctors.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The doctors who are teachers are also singers, so some doctors are singers (I). Nothing says every singer is a doctor. Only I follows."
+    },
+    {
+      "id": "SBICLK-T2-071",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Syllogism",
+      "stem": "Some statements are followed by two conclusions, I and II. Take the statements to be true even if they seem to differ from commonly known facts, and decide which conclusion(s) logically follow.\n\nStatements: All coats are jackets. Some coats are scarves.\n\nI. Some jackets are scarves.\n\nII. Some scarves are coats.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "The coats that are scarves are also jackets, so some jackets are scarves (I). 'Some coats are scarves' is the same as 'some scarves are coats' (II). Both follow."
+    },
+    {
+      "id": "SBICLK-T2-072",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Syllogism",
+      "stem": "Some statements are followed by two conclusions, I and II. Take the statements to be true even if they seem to differ from commonly known facts, and decide which conclusion(s) logically follow.\n\nStatements: Some forks are spoons. No spoon is a knife.\n\nI. Some forks are knives.\n\nII. No fork is a knife.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Forks that are not spoons may or may not be knives, so neither conclusion is certain alone. But the two conclusions cover every case, so either I or II follows."
+    },
+    {
+      "id": "SBICLK-T2-073",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkLogic",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Syllogism",
+      "stem": "Some statements are followed by two conclusions, I and II. Take the statements to be true even if they seem to differ from commonly known facts, and decide which conclusion(s) logically follow.\n\nStatements: No chair is a bed. Some beds are sofas.\n\nI. Some sofas are chairs.\n\nII. No sofa is a bed.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Whether any sofa is a chair is not settled, so I is only a possibility. II contradicts 'some beds are sofas'. Neither follows."
+    },
+    {
+      "id": "SBICLK-T2-074",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkPuzzle",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Floor puzzle",
+      "stimulusId": "SBICLK-T2-PZ1",
+      "stem": "Who likes apple?",
+      "options": [
+        "Gaurav",
+        "Jatin",
+        "Nisha",
+        "Isha",
+        "Komal"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Floors 1 to 6: Komal (mango), Jatin (guava), Nisha (apple), Gaurav (banana), Manoj (grapes), Isha (orange). Isha is on 6 and Manoj on 5. Gaurav is on 2 or 4; on 2, Jatin would be on 4 and Nisha on 5, which is taken, so Gaurav is on 4, Jatin on 2, Nisha on 3 and Komal on 1. Guava and apple are on adjacent floors among 2, 3 and 6, so guava is on 2 and apple on 3, leaving orange for Isha."
+    },
+    {
+      "id": "SBICLK-T2-075",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Floor puzzle",
+      "stimulusId": "SBICLK-T2-PZ1",
+      "stem": "On which floor does the person who likes guava live?",
+      "options": [
+        "Floor 1",
+        "Floor 2",
+        "Floor 3",
+        "Floor 4",
+        "Floor 5"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Floors 1 to 6: Komal (mango), Jatin (guava), Nisha (apple), Gaurav (banana), Manoj (grapes), Isha (orange). Isha is on 6 and Manoj on 5. Gaurav is on 2 or 4; on 2, Jatin would be on 4 and Nisha on 5, which is taken, so Gaurav is on 4, Jatin on 2, Nisha on 3 and Komal on 1. Guava and apple are on adjacent floors among 2, 3 and 6, so guava is on 2 and apple on 3, leaving orange for Isha."
+    },
+    {
+      "id": "SBICLK-T2-076",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Floor puzzle",
+      "stimulusId": "SBICLK-T2-PZ1",
+      "stem": "How many persons live between Komal and Manoj?",
+      "options": [
+        "None",
+        "One",
+        "Four",
+        "Two",
+        "Three"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Floors 1 to 6: Komal (mango), Jatin (guava), Nisha (apple), Gaurav (banana), Manoj (grapes), Isha (orange). Isha is on 6 and Manoj on 5. Gaurav is on 2 or 4; on 2, Jatin would be on 4 and Nisha on 5, which is taken, so Gaurav is on 4, Jatin on 2, Nisha on 3 and Komal on 1. Guava and apple are on adjacent floors among 2, 3 and 6, so guava is on 2 and apple on 3, leaving orange for Isha. Komal is on 1 and Manoj on 5, so Jatin, Nisha and Gaurav live between them."
+    },
+    {
+      "id": "SBICLK-T2-077",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkPuzzle",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Floor puzzle",
+      "stimulusId": "SBICLK-T2-PZ1",
+      "stem": "Which fruit does Isha like?",
+      "options": [
+        "Orange",
+        "Banana",
+        "Apple",
+        "Guava",
+        "Grapes"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Floors 1 to 6: Komal (mango), Jatin (guava), Nisha (apple), Gaurav (banana), Manoj (grapes), Isha (orange). Isha is on 6 and Manoj on 5. Gaurav is on 2 or 4; on 2, Jatin would be on 4 and Nisha on 5, which is taken, so Gaurav is on 4, Jatin on 2, Nisha on 3 and Komal on 1. Guava and apple are on adjacent floors among 2, 3 and 6, so guava is on 2 and apple on 3, leaving orange for Isha."
+    },
+    {
+      "id": "SBICLK-T2-078",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Floor puzzle",
+      "stimulusId": "SBICLK-T2-PZ1",
+      "stem": "Who lives immediately above the person who likes apple?",
+      "options": [
+        "Gaurav",
+        "Komal",
+        "Isha",
+        "Manoj",
+        "Jatin"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Floors 1 to 6: Komal (mango), Jatin (guava), Nisha (apple), Gaurav (banana), Manoj (grapes), Isha (orange). Isha is on 6 and Manoj on 5. Gaurav is on 2 or 4; on 2, Jatin would be on 4 and Nisha on 5, which is taken, so Gaurav is on 4, Jatin on 2, Nisha on 3 and Komal on 1. Guava and apple are on adjacent floors among 2, 3 and 6, so guava is on 2 and apple on 3, leaving orange for Isha. Apple is Nisha's, on floor 3; Gaurav is on floor 4."
+    },
+    {
+      "id": "SBICLK-T2-079",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkPuzzle",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Day puzzle",
+      "stimulusId": "SBICLK-T2-PZ2",
+      "stem": "Who attends on Wednesday?",
+      "options": [
+        "H",
+        "G",
+        "F",
+        "C",
+        "B"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Monday to Sunday: F, C, H, B, E, G, D. B is on Thursday, so D, three days later, is on Sunday. E is on Friday and G on Saturday. F, C and H take Monday to Wednesday in that order."
+    },
+    {
+      "id": "SBICLK-T2-080",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Day puzzle",
+      "stimulusId": "SBICLK-T2-PZ2",
+      "stem": "How many persons attend between F and E?",
+      "options": [
+        "Four",
+        "Three",
+        "Two",
+        "One",
+        "Five"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Monday to Sunday: F, C, H, B, E, G, D. B is on Thursday, so D, three days later, is on Sunday. E is on Friday and G on Saturday. F, C and H take Monday to Wednesday in that order. C, H and B attend between Monday (F) and Friday (E)."
+    },
+    {
+      "id": "SBICLK-T2-081",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkPuzzle",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Day puzzle",
+      "stimulusId": "SBICLK-T2-PZ2",
+      "stem": "On which day does C attend?",
+      "options": [
+        "Tuesday",
+        "Wednesday",
+        "Friday",
+        "Saturday",
+        "Monday"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Monday to Sunday: F, C, H, B, E, G, D. B is on Thursday, so D, three days later, is on Sunday. E is on Friday and G on Saturday. F, C and H take Monday to Wednesday in that order."
+    },
+    {
+      "id": "SBICLK-T2-082",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Day puzzle",
+      "stimulusId": "SBICLK-T2-PZ2",
+      "stem": "Who attends on the day immediately after G?",
+      "options": [
+        "H",
+        "E",
+        "F",
+        "B",
+        "D"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Monday to Sunday: F, C, H, B, E, G, D. B is on Thursday, so D, three days later, is on Sunday. E is on Friday and G on Saturday. F, C and H take Monday to Wednesday in that order."
+    },
+    {
+      "id": "SBICLK-T2-083",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Day puzzle",
+      "stimulusId": "SBICLK-T2-PZ2",
+      "stem": "Which of the following is true?",
+      "options": [
+        "H attends before C",
+        "F attends on Tuesday",
+        "D attends on Saturday",
+        "E attends on Friday",
+        "B attends after E"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Monday to Sunday: F, C, H, B, E, G, D. B is on Thursday, so D, three days later, is on Sunday. E is on Friday and G on Saturday. F, C and H take Monday to Wednesday in that order."
+    },
+    {
+      "id": "SBICLK-T2-084",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkPuzzle",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Comparison",
+      "stimulusId": "SBICLK-T2-PZ3",
+      "stem": "Who has the most books?",
+      "options": [
+        "C",
+        "D",
+        "F",
+        "B",
+        "A"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Most to fewest: C, A, F, D, B, E. C > A > F > D, B has more than only E, so B is fifth and E last."
+    },
+    {
+      "id": "SBICLK-T2-085",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Comparison",
+      "stimulusId": "SBICLK-T2-PZ3",
+      "stem": "Who has the third-highest number of books?",
+      "options": [
+        "C",
+        "A",
+        "F",
+        "D",
+        "B"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Most to fewest: C, A, F, D, B, E. C > A > F > D, B has more than only E, so B is fifth and E last."
+    },
+    {
+      "id": "SBICLK-T2-086",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Comparison",
+      "stimulusId": "SBICLK-T2-PZ3",
+      "stem": "How many persons have more books than D?",
+      "options": [
+        "One",
+        "Four",
+        "Three",
+        "Two",
+        "Five"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Most to fewest: C, A, F, D, B, E. C > A > F > D, B has more than only E, so B is fifth and E last. C, A and F have more books than D."
+    },
+    {
+      "id": "SBICLK-T2-087",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkPuzzle",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Comparison",
+      "stimulusId": "SBICLK-T2-PZ3",
+      "stem": "If D has 6 more books than B, which of the following could be the number of F's books?",
+      "options": [
+        "18",
+        "22",
+        "24",
+        "31",
+        "46"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Most to fewest: C, A, F, D, B, E. C > A > F > D, B has more than only E, so B is fifth and E last. D has 18 + 6 = 24. F has more than D (24) and fewer than A, who has fewer than C (45). Of the options only 31 lies between 24 and 45."
+    },
+    {
+      "id": "SBICLK-T2-088",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Comparison",
+      "stimulusId": "SBICLK-T2-PZ3",
+      "stem": "Who has fewer books than F but more books than B?",
+      "options": [
+        "None of them",
+        "D",
+        "C",
+        "A",
+        "E"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Most to fewest: C, A, F, D, B, E. C > A > F > D, B has more than only E, so B is fifth and E last."
+    },
+    {
+      "id": "SBICLK-T2-089",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Coding-decoding",
+      "stem": "In a certain code, DESK is written as FGUM. How is CHAIR written in that code?",
+      "options": [
+        "EJCKS",
+        "DIBJS",
+        "FKDLU",
+        "EJCKT",
+        "EICKT"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Each letter moves two places forward: D→F, E→G, S→U, K→M. So C→E, H→J, A→C, I→K, R→T: EJCKT."
+    },
+    {
+      "id": "SBICLK-T2-090",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Coding-decoding",
+      "stem": "If A = 1, B = 2, C = 3 and so on, and CAB is coded as 6 (3 + 1 + 2), what is the code for FACE?",
+      "options": [
+        "11",
+        "12",
+        "13",
+        "14",
+        "15"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "F = 6, A = 1, C = 3 and E = 5. 6 + 1 + 3 + 5 = 15."
+    },
+    {
+      "id": "SBICLK-T2-091",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Coding-decoding",
+      "stem": "In a certain code language, 'bank gives loan' is written as 'ri su ka', 'loan is cheap' as 'ka nu te' and 'cheap and best' as 'te pa li'. What is the code for 'is'?",
+      "options": [
+        "ri",
+        "te",
+        "nu",
+        "ka",
+        "pa"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "'Loan' is common to the first two sentences, and so is 'ka'. 'Cheap' is common to the last two, and so is 'te'. The code left for 'is' in 'ka nu te' is 'nu'."
+    },
+    {
+      "id": "SBICLK-T2-092",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Blood relations",
+      "stem": "Introducing a man, Sunita said, \"He is the father of my husband's only brother.\" How is the man related to Sunita?",
+      "options": [
+        "Father",
+        "Husband",
+        "Father-in-law",
+        "Brother-in-law",
+        "Uncle"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The father of Sunita's husband's brother is also her husband's father. So the man is Sunita's father-in-law."
+    },
+    {
+      "id": "SBICLK-T2-093",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Blood relations",
+      "stem": "M is the mother of N. N is the brother of O. O is the wife of K. How is K related to M?",
+      "options": [
+        "Son-in-law",
+        "Husband",
+        "Brother",
+        "Son",
+        "Nephew"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "O is N's sister, so O is M's daughter. K is O's husband, so K is M's son-in-law."
+    },
+    {
+      "id": "SBICLK-T2-094",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkVerbal",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Direction sense",
+      "stem": "Asha walks 10 m south, turns left and walks 15 m, turns left again and walks 10 m, then turns right and walks 5 m. How far is she from her starting point, and in which direction?",
+      "options": [
+        "20 m East",
+        "15 m East",
+        "25 m East",
+        "10 m North",
+        "20 m West"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Facing south, a left turn faces east (15 m). Another left faces north (10 m), which brings her back level with the start, 15 m east of it. A right turn faces east again: 5 m more makes 20 m east."
+    },
+    {
+      "id": "SBICLK-T2-095",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Direction sense",
+      "stem": "A clock is placed flat on a table so that, at 12:00, its minute hand points north. In which direction will the hour hand point at 3:00?",
+      "options": [
+        "South",
+        "North",
+        "North-east",
+        "West",
+        "East"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "The 12 on the dial points north, so the 3, a quarter turn clockwise, points east. At 3:00 the hour hand points to the 3: east."
+    },
+    {
+      "id": "SBICLK-T2-096",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Ranking",
+      "stem": "Arun is 17th from the top and 24th from the bottom in his class. How many students are in the class?",
+      "options": [
+        "39",
+        "40",
+        "41",
+        "42",
+        "43"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Total = 17 + 24 − 1 = 40. (Arun is counted in both positions, so subtract 1.)"
+    },
+    {
+      "id": "SBICLK-T2-097",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Alphabet",
+      "stem": "If the English alphabet is written in reverse order, which letter will be 10th from the left?",
+      "options": [
+        "P",
+        "J",
+        "Q",
+        "K",
+        "R"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "In reverse order the 10th letter from the left is the 10th from the end of the normal alphabet: 26 − 10 + 1 = 17th, Q."
+    },
+    {
+      "id": "SBICLK-T2-098",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Letter series",
+      "stem": "Which letter comes next in the series? G, I, L, P, ?",
+      "options": [
+        "T",
+        "U",
+        "V",
+        "S",
+        "W"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The gaps grow by one: G (+2) I (+3) L (+4) P (+5) U."
+    },
+    {
+      "id": "SBICLK-T2-099",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkVerbal",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Letter pairs",
+      "stem": "How many pairs of letters in the word GARDEN have as many letters between them in the word as in the English alphabet?",
+      "options": [
+        "Two",
+        "Four",
+        "One",
+        "None",
+        "Three"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "G and D have two letters between them in the word (A, R) and in the alphabet (E, F). D and E are next to each other in both. No other pair matches, so there are two."
+    },
+    {
+      "id": "SBICLK-T2-100",
+      "section": "reason",
+      "test": 2,
+      "module": 1,
+      "domain": "sbiclerkVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Odd one out",
+      "stem": "Choose the odd pair: 3 : 9, 5 : 25, 7 : 49, 8 : 56, 11 : 121",
+      "options": [
+        "7 : 49",
+        "5 : 25",
+        "8 : 56",
+        "11 : 121",
+        "3 : 9"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "In every other pair the second number is the square of the first. 8² is 64, not 56."
+    },
+    {
+      "id": "SBICLK-D-001",
+      "section": "eng",
+      "test": 0,
+      "module": 1,
+      "domain": "sbiclerkReading",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Main idea",
+      "stimulusId": "SBICLK-D-RC",
+      "stem": "What is the main advice given in the passage?",
+      "options": [
+        "Avoid every online purchase until the end of the month",
+        "Save whatever money is left on the last day of the month",
+        "Set aside a fixed part of the salary as soon as it arrives",
+        "Borrow money for emergencies instead of keeping savings",
+        "Choose a job that pays enough to cover rent and travel"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The passage advises moving 'a fixed part of it into a separate savings account or a recurring deposit before spending anything'. It says saving what is left at month end 'rarely works'."
+    },
+    {
+      "id": "SBICLK-D-002",
+      "section": "eng",
+      "test": 0,
+      "module": 1,
+      "domain": "sbiclerkReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Inference",
+      "stimulusId": "SBICLK-D-RC",
+      "stem": "According to the passage, why does saving at the end of the month rarely work?",
+      "options": [
+        "Salaries are paid only at the start of the month",
+        "Recurring deposits must be opened on payday",
+        "Banks do not accept deposits at month end",
+        "Rent rises sharply in the last week of the month",
+        "Little or nothing is usually left by then"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "The passage says it 'rarely works, because little is ever left'."
+    },
+    {
+      "id": "SBICLK-D-003",
+      "section": "eng",
+      "test": 0,
+      "module": 1,
+      "domain": "sbiclerkReading",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Synonym",
+      "stimulusId": "SBICLK-D-RC",
+      "stem": "Choose the word most similar in meaning to 'cushion' as used in the passage.",
+      "options": [
+        "Safeguard",
+        "Reward",
+        "Pillow",
+        "Burden",
+        "Debt"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A cushion for emergencies is money kept aside to soften a shock, a safeguard. 'Pillow' is the literal meaning, not the one used here."
+    },
+    {
+      "id": "SBICLK-D-004",
+      "section": "eng",
+      "test": 0,
+      "module": 1,
+      "domain": "sbiclerkCloze",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Single filler",
+      "stem": "Choose the word that fits the blank to make the sentence grammatically correct and meaningful.\n\nHe could not attend the meeting ........ he was unwell.",
+      "options": [
+        "whether",
+        "although",
+        "until",
+        "unless",
+        "because"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "Being unwell is the reason he could not attend, so 'because' links the clauses."
+    },
+    {
+      "id": "SBICLK-D-005",
+      "section": "eng",
+      "test": 0,
+      "module": 1,
+      "domain": "sbiclerkCloze",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Single filler",
+      "stem": "Choose the word that fits the blank to make the sentence grammatically correct and meaningful.\n\nThe cashier counted the notes twice to ........ that none was missing.",
+      "options": [
+        "assure",
+        "ensure",
+        "secure",
+        "insure",
+        "measure"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "'Ensure' means make certain. 'Insure' is for insurance and 'assure' takes a person as object ('assure him that')."
+    },
+    {
+      "id": "SBICLK-D-006",
+      "section": "eng",
+      "test": 0,
+      "module": 1,
+      "domain": "sbiclerkCloze",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Double filler",
+      "stem": "Choose the pair of words that fits the two blanks, in order, to make the sentence meaningful.\n\nThe festival sale ........ large crowds, and the shops ........ out of stock by evening.",
+      "options": [
+        "lost, came",
+        "attracted, ran",
+        "attracted, kept",
+        "avoided, ran",
+        "drew, stayed"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Large crowds were attracted and the shops ran out of stock. 'Kept out of stock' and 'stayed out of stock' are not the idiom."
+    },
+    {
+      "id": "SBICLK-D-007",
+      "section": "eng",
+      "test": 0,
+      "module": 1,
+      "domain": "sbiclerkGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Error spotting",
+      "stem": "Read the sentence and find the part that contains an error. If there is no error, choose E.\n\nMy brother did not (A) / went to the market (B) / yesterday as (C) / it was raining. (D) / No error (E)",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "After the auxiliary 'did', the main verb takes its base form: 'did not go', not 'did not went'."
+    },
+    {
+      "id": "SBICLK-D-008",
+      "section": "eng",
+      "test": 0,
+      "module": 1,
+      "domain": "sbiclerkGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Sentence improvement",
+      "stem": "Which of the following should replace the part in bold to make the sentence correct? If no replacement is needed, choose 'No improvement'.\n\nThe new manager **is having** two cars and a flat in the city.",
+      "options": [
+        "has",
+        "was having",
+        "is owning",
+        "have",
+        "No improvement"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "'Have' in the sense of own or possess is a state, not an action, so it is not used in the continuous form: 'The new manager has two cars'."
+    },
+    {
+      "id": "SBICLK-D-009",
+      "section": "eng",
+      "test": 0,
+      "module": 1,
+      "domain": "sbiclerkGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Phrase rearrangement",
+      "stem": "The parts of a sentence, labelled P, Q, R and S, are given in jumbled order after the fixed opening. Choose the order that makes a meaningful sentence.\n\nBefore leaving the office,\n\nP. and switched off\nQ. the clerk locked\nR. the lights and fans\nS. all the cupboards",
+      "options": [
+        "QSPR",
+        "QPSR",
+        "SQPR",
+        "QRPS",
+        "PRQS"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Before leaving the office, (Q) the clerk locked (S) all the cupboards (P) and switched off (R) the lights and fans."
+    },
+    {
+      "id": "SBICLK-D-010",
+      "section": "quant",
+      "test": 0,
+      "module": 1,
+      "domain": "sbiclerkNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Simplification",
+      "stem": "What will come in place of the question mark (?) in the following question?\n\n65% of 360 + 3/4 of 96 = ?",
+      "options": [
+        "266",
+        "276",
+        "286",
+        "296",
+        "306"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "65% of 360 = 234 and 3/4 of 96 = 72, so 234 + 72 = 306."
+    },
+    {
+      "id": "SBICLK-D-011",
+      "section": "quant",
+      "test": 0,
+      "module": 1,
+      "domain": "sbiclerkNumber",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Approximation",
+      "stem": "What approximate value will come in place of the question mark (?) in the following question? (You are not expected to calculate the exact value.)\n\n24.98 × 31.97 − 199.9 = ?",
+      "options": [
+        "600",
+        "620",
+        "640",
+        "660",
+        "680"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Round to 25 × 32 − 200 = 800 − 200 = 600."
+    },
+    {
+      "id": "SBICLK-D-012",
+      "section": "quant",
+      "test": 0,
+      "module": 1,
+      "domain": "sbiclerkNumber",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "What will come in place of the question mark (?) in the following number series?\n\n14, 16, 20, 26, 34, ?",
+      "options": [
+        "36",
+        "38",
+        "40",
+        "42",
+        "44"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "The differences are 2, 4, 6, 8. The next is 10: 34 + 10 = 44."
+    },
+    {
+      "id": "SBICLK-D-013",
+      "section": "quant",
+      "test": 0,
+      "module": 1,
+      "domain": "sbiclerkDI",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "SBICLK-D-DI",
+      "stem": "How many fiction books were issued in the four weeks together?",
+      "options": [
+        "540",
+        "550",
+        "560",
+        "570",
+        "580"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "120 + 150 + 135 + 165 = 570."
+    },
+    {
+      "id": "SBICLK-D-014",
+      "section": "quant",
+      "test": 0,
+      "module": 1,
+      "domain": "sbiclerkDI",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "SBICLK-D-DI",
+      "stem": "In week 3, what percentage of the books issued were non-fiction?",
+      "options": [
+        "41.25%",
+        "42.5%",
+        "43.75%",
+        "45%",
+        "46.25%"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Week 3 issued 135 + 105 = 240 books. 105 ÷ 240 × 100 = 43.75%."
+    },
+    {
+      "id": "SBICLK-D-015",
+      "section": "quant",
+      "test": 0,
+      "module": 1,
+      "domain": "sbiclerkDI",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Data interpretation",
+      "stimulusId": "SBICLK-D-DI",
+      "stem": "What is the ratio of fiction books issued in week 2 to non-fiction books issued in week 3?",
+      "options": [
+        "10 : 9",
+        "7 : 10",
+        "3 : 2",
+        "5 : 4",
+        "10 : 7"
+      ],
+      "correct": [
+        4
+      ],
+      "explanation": "150 : 105, dividing both by 15, is 10 : 7."
+    },
+    {
+      "id": "SBICLK-D-016",
+      "section": "quant",
+      "test": 0,
+      "module": 1,
+      "domain": "sbiclerkArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Discount",
+      "stem": "A watch marked ₹3,200 is sold after two successive discounts of 25% and 10%. What is the selling price?",
+      "options": [
+        "₹2,000",
+        "₹2,080",
+        "₹2,160",
+        "₹2,240",
+        "₹2,400"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "3,200 × 0.75 = 2,400, and 2,400 × 0.9 = ₹2,160. (A single 35% discount would give ₹2,080.)"
+    },
+    {
+      "id": "SBICLK-D-017",
+      "section": "quant",
+      "test": 0,
+      "module": 1,
+      "domain": "sbiclerkArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Simple interest",
+      "stem": "At what rate of simple interest per annum will a sum become three times itself in 20 years?",
+      "options": [
+        "5%",
+        "8%",
+        "10%",
+        "12%",
+        "15%"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Tripling means the interest is twice the sum, 200% in 20 years. 200 ÷ 20 = 10% a year. (5% would only double the sum.)"
+    },
+    {
+      "id": "SBICLK-D-018",
+      "section": "quant",
+      "test": 0,
+      "module": 1,
+      "domain": "sbiclerkArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Percentage",
+      "stem": "A salary is increased by 10% and the new salary is then increased by 20%. What is the total increase?",
+      "options": [
+        "An increase of 30%",
+        "An increase of 32%",
+        "An increase of 28%",
+        "An increase of 22%",
+        "An increase of 35%"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "1.1 × 1.2 = 1.32, so the final value is 132% of the original: an increase of 32%, not 10 + 20 = 30%."
+    },
+    {
+      "id": "SBICLK-D-019",
+      "section": "reason",
+      "test": 0,
+      "module": 1,
+      "domain": "sbiclerkLogic",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Inequality",
+      "stem": "A statement is followed by two conclusions, I and II. Assume the statement is true and decide which conclusion(s) definitely follow.\n\nStatement: R > S ≥ T = U\n\nI. R > U\n\nII. U ≤ S",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        4
+      ],
+      "lockedOrder": true,
+      "explanation": "I: R > S ≥ T = U gives R > U, true. II: S ≥ T = U gives S ≥ U, which is the same as U ≤ S. Both follow."
+    },
+    {
+      "id": "SBICLK-D-020",
+      "section": "reason",
+      "test": 0,
+      "module": 1,
+      "domain": "sbiclerkLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Syllogism",
+      "stem": "Some statements are followed by two conclusions, I and II. Take the statements to be true even if they seem to differ from commonly known facts, and decide which conclusion(s) logically follow.\n\nStatements: No fan is a cooler. Some heaters are coolers.\n\nI. Some heaters are not fans.\n\nII. Some fans are heaters.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The heaters that are coolers cannot be fans, so some heaters are not fans (I). Whether any fan is a heater is not settled. Only I follows."
+    },
+    {
+      "id": "SBICLK-D-021",
+      "section": "reason",
+      "test": 0,
+      "module": 1,
+      "domain": "sbiclerkLogic",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Syllogism",
+      "stem": "Some statements are followed by two conclusions, I and II. Take the statements to be true even if they seem to differ from commonly known facts, and decide which conclusion(s) logically follow.\n\nStatements: Some rods are poles. All poles are beams.\n\nI. All rods are beams.\n\nII. No beam is a rod.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows",
+        "Both I and II follow"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Only the rods that are poles are known to be beams, so I is not certain. Those rods are beams, so II is false. Neither follows."
+    },
+    {
+      "id": "SBICLK-D-022",
+      "section": "reason",
+      "test": 0,
+      "module": 1,
+      "domain": "sbiclerkPuzzle",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Linear seating",
+      "stimulusId": "SBICLK-D-PZ",
+      "stem": "Who sits at the left end of the row?",
+      "options": [
+        "Z",
+        "Y",
+        "X",
+        "W",
+        "V"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Left to right: X, Z, V, Y, W. V is 3rd and W 5th, so Y is 4th. Z is 2nd, immediately left of V, and X takes 1st."
+    },
+    {
+      "id": "SBICLK-D-023",
+      "section": "reason",
+      "test": 0,
+      "module": 1,
+      "domain": "sbiclerkPuzzle",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Linear seating",
+      "stimulusId": "SBICLK-D-PZ",
+      "stem": "Who sits second to the right of Z?",
+      "options": [
+        "None of them",
+        "V",
+        "W",
+        "Y",
+        "X"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Left to right: X, Z, V, Y, W. V is 3rd and W 5th, so Y is 4th. Z is 2nd, immediately left of V, and X takes 1st. Z is 2nd; second to the right is 4th, Y."
+    },
+    {
+      "id": "SBICLK-D-024",
+      "section": "reason",
+      "test": 0,
+      "module": 1,
+      "domain": "sbiclerkPuzzle",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Linear seating",
+      "stimulusId": "SBICLK-D-PZ",
+      "stem": "How many persons sit between X and Y?",
+      "options": [
+        "Two",
+        "None",
+        "Three",
+        "Four",
+        "One"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Left to right: X, Z, V, Y, W. V is 3rd and W 5th, so Y is 4th. Z is 2nd, immediately left of V, and X takes 1st. Z and V sit between X (1st) and Y (4th)."
+    },
+    {
+      "id": "SBICLK-D-025",
+      "section": "reason",
+      "test": 0,
+      "module": 1,
+      "domain": "sbiclerkVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Coding-decoding",
+      "stem": "If BAT is coded as 2-1-20, how is CUP coded?",
+      "options": [
+        "3-21-15",
+        "2-21-16",
+        "4-21-16",
+        "3-21-16",
+        "3-20-16"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Each letter is replaced by its position in the alphabet: C = 3, U = 21, P = 16."
+    },
+    {
+      "id": "SBICLK-D-026",
+      "section": "reason",
+      "test": 0,
+      "module": 1,
+      "domain": "sbiclerkVerbal",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Blood relations",
+      "stem": "A's mother is the sister of B, and B is a man. How is B related to A?",
+      "options": [
+        "Maternal uncle",
+        "Grandfather",
+        "Father",
+        "Cousin",
+        "Brother"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "B is the brother of A's mother, which makes him A's maternal uncle."
+    },
+    {
+      "id": "SBICLK-D-027",
+      "section": "reason",
+      "test": 0,
+      "module": 1,
+      "domain": "sbiclerkVerbal",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Direction sense",
+      "stem": "Rahul walks 16 km west and then 12 km south. What is the shortest distance between him and his starting point?",
+      "options": [
+        "4 km",
+        "14 km",
+        "20 km",
+        "24 km",
+        "28 km"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The two walks form a right angle, so the distance is √(16² + 12²) = √400 = 20 km. (28 km is the distance walked, not the distance from the start.)"
+    }
+  ]
+}

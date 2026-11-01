@@ -1,0 +1,4440 @@
+{
+  "stimuli": [
+    {
+      "id": "APGOV-T1-S01",
+      "title": "Federalist No. 51, 1788 (adapted excerpt)",
+      "text": "But what is government itself, but the greatest of all reflections on human nature? If men were angels, no government would be necessary. If angels were to govern men, neither external nor internal controls on government would be necessary. In framing a government which is to be administered by men over men, the great difficulty lies in this: you must first enable the government to control the governed; and in the next place oblige it to control itself. ... Ambition must be made to counteract ambition."
+    },
+    {
+      "id": "APGOV-T2-S01",
+      "title": "Brutus No. 1, 1787 (adapted excerpt)",
+      "text": "In a republic, the manners, sentiments, and interests of the people should be similar. If this be not the case, there will be a constant clashing of opinions; and the representatives of one part will be continually striving against those of the other. ... The legislature under this constitution may pass any law which they may think necessary and proper to carry into effect the powers given them. ... A free republic cannot succeed over a country of such immense extent as that of the whole United States."
+    },
+    {
+      "id": "APGOV-D-S01",
+      "title": "Federalist No. 39, 1788 (adapted excerpt)",
+      "text": "The proposed Constitution, therefore, is, in strictness, neither a national nor a federal Constitution, but a composition of both. In its foundation it is federal, not national; in the sources from which its ordinary powers are drawn, it is partly federal and partly national; in the operation of these powers, it is national, not federal; in the extent of them, again, it is federal, not national; and, finally, in the authoritative mode of introducing amendments, it is neither wholly federal nor wholly national."
+    },
+    {
+      "id": "APGOV-T1-S02",
+      "title": "Bills in one two-year Congress (hypothetical data for practice)",
+      "text": "| Stage | House bills | Senate bills |\n|---|---|---|\n| Introduced | 8,000 | 4,500 |\n| Reported out of committee | 700 | 450 |\n| Passed the chamber where introduced | 600 | 400 |\n| Enacted into law | 200 | 120 |"
+    },
+    {
+      "id": "APGOV-T1-S03",
+      "title": "Infographic (described in words)",
+      "text": "An infographic titled \"Ways a president can act without Congress\" shows three boxes. The first reads \"Executive orders: direct how federal agencies carry out laws.\" The second reads \"Executive agreements: deals with foreign leaders that do not go to the Senate.\" The third reads \"Signing statements: the president's view of how a new law should be enforced.\" Arrows from all three boxes point to a larger box labelled \"Growing presidential power.\""
+    },
+    {
+      "id": "APGOV-T2-S02",
+      "title": "Regular vetoes and overrides under four presidents (hypothetical data for practice)",
+      "text": "| President | Party controlling Congress | Regular vetoes | Vetoes overridden |\n|---|---|---|---|\n| President A | Same party | 2 | 0 |\n| President B | Other party | 30 | 6 |\n| President C | Split between parties | 12 | 1 |\n| President D | Other party | 25 | 4 |"
+    },
+    {
+      "id": "APGOV-T2-S03",
+      "title": "Political cartoon (described in words)",
+      "text": "A tall figure labelled \"Executive Branch\" towers over a much smaller figure labelled \"Congress.\" The tall figure holds a stack of papers marked \"Executive Order,\" \"Emergency Declaration\" and \"Signing Statement.\" The small figure holds up a tiny sign that reads \"Article I.\""
+    },
+    {
+      "id": "APGOV-D-S02",
+      "title": "Federalist No. 70, 1788 (adapted excerpt)",
+      "text": "Energy in the executive is a leading character in the definition of good government. ... The ingredients which constitute energy in the executive are, first, unity; secondly, duration; thirdly, an adequate provision for its support; fourthly, competent powers. ... Decision, activity, secrecy, and dispatch will generally characterize the proceedings of one man in a much more eminent degree than the proceedings of any greater number."
+    },
+    {
+      "id": "APGOV-T1-S04",
+      "title": "Petitions to the Supreme Court in one term (hypothetical data for practice)",
+      "text": "| Petitions | Number |\n|---|---|\n| Petitions for a writ of certiorari filed | 4,000 |\n| Petitions granted | 60 |\n| Cases decided with a signed opinion | 58 |"
+    },
+    {
+      "id": "APGOV-T2-S04",
+      "title": "Federal judicial nominees confirmed by the Senate (hypothetical data for practice)",
+      "text": "| Senate majority | Nominees sent to the Senate | Nominees confirmed |\n|---|---|---|\n| Same party as the president | 80 | 72 |\n| Other party | 80 | 48 |"
+    },
+    {
+      "id": "APGOV-D-S03",
+      "title": "Federalist No. 78, 1788 (adapted excerpt)",
+      "text": "Whoever attentively considers the different departments of power must perceive, that, in a government in which they are separated from each other, the judiciary, from the nature of its functions, will always be the least dangerous to the political rights of the Constitution. ... It may truly be said to have neither FORCE nor WILL, but merely judgment. ... The interpretation of the laws is the proper and peculiar province of the courts."
+    },
+    {
+      "id": "APGOV-T1-S05",
+      "title": "A high school newspaper editorial (practice text)",
+      "text": "Last week three students were suspended for wearing T-shirts with a slogan opposing the city's new youth curfew. Not one class was interrupted. Nobody shouted, and no teacher had to stop a lesson. We did not give up our rights when we walked through the front doors of this building. If a public school can punish quiet political expression, it is teaching us that the Constitution ends at the parking lot."
+    },
+    {
+      "id": "APGOV-T2-S05",
+      "title": "A political scientist's overview (practice text)",
+      "text": "For most of American history, the Bill of Rights limited only the national government. The change came case by case. Over the twentieth century, the Supreme Court used the due process clause of the Fourteenth Amendment to apply most of the protections in the Bill of Rights to the states, one right at a time. A few protections, such as the right to be indicted by a grand jury, still bind only the federal government."
+    },
+    {
+      "id": "APGOV-D-S04",
+      "title": "Emancipation Proclamation, 1863 (adapted excerpt)",
+      "text": "All persons held as slaves within any State or designated part of a State, the people whereof shall then be in rebellion against the United States, shall be then, thenceforward, and forever free; and the Executive Government of the United States, including the military and naval authority thereof, will recognize and maintain the freedom of such persons."
+    },
+    {
+      "id": "APGOV-T1-S06",
+      "title": "Views on the size of government by age (percent of adults, hypothetical data for practice)",
+      "text": "| Age group | Prefer a bigger government with more services | Prefer a smaller government with fewer services |\n|---|---|---|\n| 18-29 | 62 | 36 |\n| 30-49 | 52 | 46 |\n| 50-64 | 43 | 55 |\n| 65 and older | 38 | 59 |\n\nOther respondents gave no answer."
+    },
+    {
+      "id": "APGOV-T2-S06",
+      "title": "Poll on a proposed national policy (percent, hypothetical data for practice)",
+      "text": "| Group | Support | Oppose |\n|---|---|---|\n| All adults | 51 | 46 |\n| Democrats | 78 | 20 |\n| Republicans | 22 | 75 |\n| Independents | 49 | 47 |\n\nRandom sample of 1,000 adults. Margin of error: plus or minus 3 percentage points for all adults."
+    },
+    {
+      "id": "APGOV-D-S05",
+      "title": "Adam Smith, The Wealth of Nations, 1776 (adapted excerpt)",
+      "text": "It is not from the benevolence of the butcher, the brewer, or the baker, that we expect our dinner, but from their regard to their own interest. We address ourselves, not to their humanity but to their self-love, and never talk to them of our own necessities but of their advantages."
+    },
+    {
+      "id": "APGOV-T1-S07",
+      "title": "Turnout by age in two elections (percent of eligible citizens voting, hypothetical data for practice)",
+      "text": "| Age group | Presidential election year | Midterm election year |\n|---|---|---|\n| 18-24 | 48 | 28 |\n| 25-44 | 58 | 40 |\n| 45-64 | 68 | 55 |\n| 65 and older | 72 | 64 |"
+    },
+    {
+      "id": "APGOV-T1-S08",
+      "title": "Map (described in words)",
+      "text": "A map of the United States shades each state by the party whose candidate won its electoral votes in a presidential election. The Northeast and the West Coast are mostly one shade; most of the South and the Great Plains are the other. A note under the map reads: \"In 48 states and the District of Columbia, the candidate who wins the most popular votes in the state receives all of its electoral votes.\""
+    },
+    {
+      "id": "APGOV-T2-S07",
+      "title": "How adults describe their party (percent, hypothetical data for practice)",
+      "text": "| Year | Democrat | Republican | Independent |\n|---|---|---|---|\n| Year 1 | 35 | 30 | 33 |\n| Year 15 | 32 | 29 | 37 |\n| Year 30 | 29 | 27 | 42 |\n\nOther respondents named another party or gave no answer."
+    },
+    {
+      "id": "APGOV-T2-S08",
+      "title": "Infographic (described in words)",
+      "text": "A flowchart titled \"How a party picks its presidential nominee\" has four steps. Step 1: Candidates compete in state primaries and caucuses from winter to spring. Step 2: The results award delegates to each candidate. Step 3: Delegates meet at the party's national convention in the summer. Step 4: The convention formally nominates the candidate who holds a majority of the delegates."
+    },
+    {
+      "id": "APGOV-D-S06",
+      "title": "Turnout by education (percent of eligible citizens voting, hypothetical data for practice)",
+      "text": "| Education | Turnout |\n|---|---|\n| No high school diploma | 35 |\n| High school diploma | 52 |\n| Some college | 62 |\n| Bachelor's degree or more | 77 |"
+    },
+    {
+      "id": "APGOV-T1-S09",
+      "title": "Political cartoon (described in words)",
+      "text": "A member of Congress sits at a desk piled high with bags of money labelled \"Super PAC.\" A lobbyist leans over and whispers in his ear. Behind a velvet rope, a long line of ordinary voters holds small signs that read \"Hello?\""
+    },
+    {
+      "id": "APGOV-T1-S10",
+      "title": "Incumbents re-elected (percent of those running again, hypothetical data for practice)",
+      "text": "| Election | House | Senate |\n|---|---|---|\n| Election 1 | 96 | 88 |\n| Election 2 | 93 | 79 |\n| Election 3 | 97 | 91 |"
+    },
+    {
+      "id": "APGOV-T2-S09",
+      "title": "Infographic (described in words)",
+      "text": "An infographic titled \"Where adults say they get most of their news\" compares two years, ten years apart. Television falls from the largest bar to the second largest. Print newspapers shrink to a small bar. Social media and news websites grow from a middle-sized bar to the largest. (Hypothetical data for practice.)"
+    },
+    {
+      "id": "APGOV-T2-S10",
+      "title": "Where two House candidates' campaign money came from (percent of money raised, hypothetical data for practice)",
+      "text": "| Source | Incumbent | Challenger |\n|---|---|---|\n| Individual donors | 55 | 70 |\n| Political action committees (PACs) | 40 | 10 |\n| Candidate's own money | 5 | 20 |"
+    },
+    {
+      "id": "APGOV-D-S07",
+      "title": "A campaign manager's memo (practice text)",
+      "text": "We cannot win this district on television ads alone. Our data team has matched the voter file with consumer records, so we know which households care most about school funding and which care most about property taxes. Each group will get its own message: text messages, targeted online ads and volunteers at the door. Small online donations from supporters will carry us to the final week, and we will not depend on the state party."
+    }
+  ],
+  "questions": [
+    {
+      "id": "APGOV-T1-001",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovFoundations",
+      "skill": "Source analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APGOV-T1-S01",
+      "stem": "The author's main argument is that",
+      "options": [
+        "a government must be built to restrain itself",
+        "government is unneeded in a virtuous republic",
+        "every federal official should be elected directly",
+        "a strong executive is the best cure for faction"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Madison says the government must first control the governed and then be obliged to control itself, which the Constitution does through separate branches that check one another."
+    },
+    {
+      "id": "APGOV-T1-002",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovFoundations",
+      "skill": "Source analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APGOV-T1-S01",
+      "stem": "Which feature of the Constitution best reflects the idea that \"ambition must be made to counteract ambition\"?",
+      "options": [
+        "The method of amending the Constitution in Article V",
+        "Equal representation of the states in the Senate",
+        "The ban on religious tests for federal office",
+        "The House's power to impeach executive officers"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Impeachment gives one branch a weapon against officials of another, so each branch's ambition guards against the others. Equal Senate seats concern federalism, not checks between branches."
+    },
+    {
+      "id": "APGOV-T1-003",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovFoundations",
+      "skill": "Concept application",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APGOV-T1-S01",
+      "stem": "Which change would the author most likely see as a threat to the principle in the excerpt?",
+      "options": [
+        "A president who vetoes many bills",
+        "A legislature able to remove judges at will",
+        "Senators chosen directly by the voters",
+        "A state adding rights to its own constitution"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "If the legislature could remove judges whenever it liked, the courts could no longer check it, and power would gather in one branch. Frequent vetoes are the checks working as designed."
+    },
+    {
+      "id": "APGOV-T1-004",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovFoundations",
+      "skill": "Source analysis",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APGOV-T1-S01",
+      "stem": "The author of Brutus No. 1 would most likely respond to the excerpt that",
+      "options": [
+        "a strong president is the best check on Congress",
+        "a large republic will still drift toward tyranny",
+        "the national government should control the states",
+        "separated branches make the states unnecessary"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Brutus argued that no free republic could govern so large a country and that the new national government would swallow the states, whatever its internal checks."
+    },
+    {
+      "id": "APGOV-T1-005",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovFoundations",
+      "skill": "Concept application",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Under the Articles of Confederation, a change to the Articles required",
+      "options": [
+        "a two-thirds vote of Congress",
+        "a national convention of delegates",
+        "the approval of every state",
+        "approval by nine of the thirteen states"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Amendments needed the consent of all thirteen state legislatures, so a single state could block any reform. Nine states were needed only to pass major laws."
+    },
+    {
+      "id": "APGOV-T1-006",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovFoundations",
+      "skill": "Concept application",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A state law conflicts with a valid federal statute on the same subject. Which part of the Constitution settles the conflict?",
+      "options": [
+        "The full faith and credit clause",
+        "The supremacy clause",
+        "The Tenth Amendment",
+        "The privileges and immunities clause"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The supremacy clause in Article VI makes the Constitution and federal laws made under it the supreme law of the land, so the valid federal statute prevails."
+    },
+    {
+      "id": "APGOV-T1-007",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovFoundations",
+      "skill": "Concept application",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A city lets residents vote directly on how to spend part of its budget. This is an example of",
+      "options": [
+        "elite democracy",
+        "pluralist democracy",
+        "participatory democracy",
+        "a confederal system of states"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Participatory democracy stresses broad, direct involvement of citizens in decisions. Pluralist democracy works through competing groups, and elite democracy through a small, educated few."
+    },
+    {
+      "id": "APGOV-T1-008",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovFoundations",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Congress gives states highway money only if they set the drinking age at 21. This is an example of",
+      "options": [
+        "a block grant states may spend freely",
+        "an unfunded mandate on the states",
+        "a categorical grant with conditions",
+        "a power the Constitution reserves to states"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The money is for a specific purpose and comes with a condition attached, the mark of a categorical grant. A block grant gives broad discretion, and an unfunded mandate gives no money at all."
+    },
+    {
+      "id": "APGOV-T1-009",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovFoundations",
+      "skill": "Concept application",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Which is an exclusive power of the national government?",
+      "options": [
+        "Establishing courts",
+        "Coining money",
+        "Collecting taxes",
+        "Borrowing money"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Article I gives Congress the power to coin money and Article I, Section 10 forbids the states to do it. Taxing, borrowing and setting up courts are concurrent powers."
+    },
+    {
+      "id": "APGOV-T1-010",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovFoundations",
+      "skill": "SCOTUS application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A state puts a special tax only on the branch of a federally chartered bank inside its borders. Which required case most directly supports striking the tax down?",
+      "options": [
+        "Baker v. Carr",
+        "United States v. Lopez",
+        "Marbury v. Madison",
+        "McCulloch v. Maryland"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "In McCulloch the Court held that Congress could charter a bank under the necessary and proper clause and that a state could not tax it, since federal law is supreme over state law."
+    },
+    {
+      "id": "APGOV-T1-011",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovCongress",
+      "skill": "Data analysis",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APGOV-T1-S02",
+      "stem": "According to the table, about what percent of House bills introduced were enacted into law?",
+      "options": [
+        "2.5%",
+        "7.5%",
+        "8.75%",
+        "33%"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "200 enacted out of 8,000 introduced is 200 / 8,000 = 2.5%. The 33% figure divides by the 600 bills that passed the House, not by all bills introduced."
+    },
+    {
+      "id": "APGOV-T1-012",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovCongress",
+      "skill": "Data analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APGOV-T1-S02",
+      "stem": "Which conclusion is best supported by the data?",
+      "options": [
+        "Most bills that pass a chamber become law",
+        "Most bills never leave committee",
+        "Senate committees report most of their bills",
+        "The Senate enacts more bills than the House"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Only 700 of 8,000 House bills and 450 of 4,500 Senate bills were reported out of committee, about 9 to 10 percent. Of bills that passed a chamber, only about a third became law."
+    },
+    {
+      "id": "APGOV-T1-013",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovCongress",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APGOV-T1-S02",
+      "stem": "Which feature of Congress best explains the pattern in the table?",
+      "options": [
+        "The president vetoes most bills",
+        "Committees screen out most bills",
+        "Filibusters block most House bills",
+        "Courts strike down most new laws"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Standing committees decide which bills get hearings and markup, and most bills die there without action. The filibuster exists only in the Senate, and vetoes are rare."
+    },
+    {
+      "id": "APGOV-T1-014",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovCongress",
+      "skill": "Source analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APGOV-T1-S03",
+      "stem": "Which concept does the infographic illustrate?",
+      "options": [
+        "Checks Congress places on the president",
+        "Formal powers listed in Article I",
+        "Informal powers of the presidency",
+        "Powers the president shares with governors"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Executive orders, executive agreements and signing statements are not spelled out in the Constitution; presidents use them as informal powers to act without Congress."
+    },
+    {
+      "id": "APGOV-T1-015",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovCongress",
+      "skill": "Concept application",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APGOV-T1-S03",
+      "stem": "Which action could Congress take to limit the use of a power shown in the infographic?",
+      "options": [
+        "Remove the president by majority vote",
+        "Veto the executive order by majority vote",
+        "Ask the Supreme Court for an advisory opinion",
+        "Deny funding for carrying out an order"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Congress controls appropriations, so it can refuse to fund what an order directs. Congress has no veto over the president, removal needs a two-thirds Senate vote after impeachment, and federal courts give no advisory opinions."
+    },
+    {
+      "id": "APGOV-T1-016",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovCongress",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A senator follows her constituents' wishes on local issues but her own judgment on foreign policy. She is acting under the",
+      "options": [
+        "trustee model",
+        "partisan model",
+        "politico model",
+        "delegate model"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The politico model blends the delegate and trustee roles, following constituents on some issues and personal judgment on others."
+    },
+    {
+      "id": "APGOV-T1-017",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovCongress",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "In the Senate, ending a filibuster on most legislation requires",
+      "options": [
+        "approval from the Senate Rules Committee",
+        "a cloture vote of three-fifths of senators",
+        "a two-thirds vote of senators present",
+        "a simple majority of senators present and voting"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Under Senate Rule XXII, cloture on most legislation needs three-fifths of the senators duly chosen and sworn, which is 60 of 100."
+    },
+    {
+      "id": "APGOV-T1-018",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovCongress",
+      "skill": "Concept application",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Which body in the House sets the terms of debate and amendment for most major bills?",
+      "options": [
+        "The Ways and Means Committee",
+        "The Committee of the Whole",
+        "A conference committee",
+        "The Rules Committee"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The House Rules Committee writes a rule for each major bill setting debate time and which amendments may be offered. Ways and Means handles taxes."
+    },
+    {
+      "id": "APGOV-T1-019",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovCongress",
+      "skill": "Concept application",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A president uses the bully pulpit by",
+      "options": [
+        "issuing orders to federal agencies",
+        "vetoing bills as Congress adjourns",
+        "making appointments during a recess",
+        "appealing directly to the public"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The bully pulpit is the president's ability to speak to the nation and rally public opinion to pressure Congress."
+    },
+    {
+      "id": "APGOV-T1-020",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovCourts",
+      "skill": "Data analysis",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APGOV-T1-S04",
+      "stem": "About what percent of the petitions filed did the Court agree to hear?",
+      "options": [
+        "1.5%",
+        "2.5%",
+        "6%",
+        "15%"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "60 granted out of 4,000 filed is 60 / 4,000 = 0.015, or 1.5%. Moving the decimal one place too far gives 15%."
+    },
+    {
+      "id": "APGOV-T1-021",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovCourts",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APGOV-T1-S04",
+      "stem": "Which practice explains how the Court decides which petitions in the table to grant?",
+      "options": [
+        "The rule of four",
+        "A majority vote of the justices",
+        "A two-thirds vote of the justices",
+        "Approval by the solicitor general"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The Court grants certiorari when at least four of the nine justices vote to hear a case. The solicitor general argues for the government but does not decide."
+    },
+    {
+      "id": "APGOV-T1-022",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovCourts",
+      "skill": "SCOTUS application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "In Marbury v. Madison (1803), the Court ruled that part of the Judiciary Act of 1789 was unconstitutional. The case matters today because it",
+      "options": [
+        "let states refuse unconstitutional laws",
+        "gave Congress power over the Court's size",
+        "required the Senate to confirm all judges",
+        "let courts strike down acts of Congress"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "By refusing to apply a section of a federal law that conflicted with the Constitution, the Court established its power to declare acts of the other branches void."
+    },
+    {
+      "id": "APGOV-T1-023",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovCourts",
+      "skill": "Concept application",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "When the Court relies on its own earlier decisions to decide a similar new case, it is following",
+      "options": [
+        "stare decisis",
+        "judicial review",
+        "original jurisdiction",
+        "senatorial courtesy"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Stare decisis (\"let the decision stand\") means following precedent so that the law stays stable and predictable."
+    },
+    {
+      "id": "APGOV-T1-024",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovCourts",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A justice who believes courts should defer to elected branches unless a law clearly breaks the Constitution favors",
+      "options": [
+        "broad judicial review",
+        "judicial restraint",
+        "judicial activism",
+        "a living constitution"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Judicial restraint asks judges to uphold laws passed by elected officials unless they plainly violate the Constitution. Judicial activism is more willing to strike laws down or set policy."
+    },
+    {
+      "id": "APGOV-T1-025",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovCourts",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which is a way Congress can check the federal courts?",
+      "options": [
+        "Overturning a constitutional ruling by vote",
+        "Changing their appellate jurisdiction",
+        "Removing justices for unpopular rulings",
+        "Vetoing a decision of the Court"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Article III lets Congress make exceptions to the Court's appellate jurisdiction. A constitutional ruling can be undone only by amendment or a later ruling, and impeachment is for misconduct, not decisions."
+    },
+    {
+      "id": "APGOV-T1-026",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovCourts",
+      "skill": "Concept application",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Close, lasting ties among a congressional committee, a federal agency and an interest group are called",
+      "options": [
+        "a party caucus",
+        "a policy mandate",
+        "a patronage system",
+        "an iron triangle"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "In an iron triangle the committee funds the agency, the agency serves the group, and the group supports the committee members, so all three gain."
+    },
+    {
+      "id": "APGOV-T1-027",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovCourts",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Congress passes a law requiring \"safe\" drinking water, and the Environmental Protection Agency sets the exact limit for each chemical. This shows",
+      "options": [
+        "congressional oversight of agencies",
+        "bureaucratic rule-making discretion",
+        "an executive agreement with Congress",
+        "judicial review of agency rules"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Congress often writes laws in general terms and leaves agencies to fill in the details by issuing rules, which gives the bureaucracy real policy-making power."
+    },
+    {
+      "id": "APGOV-T1-028",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovRights",
+      "skill": "SCOTUS application",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APGOV-T1-S05",
+      "stem": "The editorial's argument is most directly supported by",
+      "options": [
+        "Schenck v. United States",
+        "Engel v. Vitale",
+        "Gideon v. Wainwright",
+        "Tinker v. Des Moines"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "In Tinker the Court held that public school students wearing black armbands to protest the Vietnam War were protected by the First Amendment's free speech clause."
+    },
+    {
+      "id": "APGOV-T1-029",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovRights",
+      "skill": "SCOTUS application",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APGOV-T1-S05",
+      "stem": "Under the precedent the editors rely on, the school could most likely punish the shirts if it showed that",
+      "options": [
+        "they would substantially disrupt school",
+        "the city council objected to them",
+        "their message was about a political issue",
+        "most parents disliked the message"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Tinker allows schools to limit student expression that would materially and substantially disrupt the school. Dislike of a political message is not enough."
+    },
+    {
+      "id": "APGOV-T1-030",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovRights",
+      "skill": "Concept application",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APGOV-T1-S05",
+      "stem": "The First Amendment limits a public school, a body of state government, because the Supreme Court has",
+      "options": [
+        "ruled that public schools are federal agencies",
+        "used the supremacy clause against state laws",
+        "applied the Tenth Amendment to every public school",
+        "incorporated it through the Fourteenth Amendment"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Through selective incorporation, the Court has used the Fourteenth Amendment's due process clause to apply the First Amendment's protections to state and local governments."
+    },
+    {
+      "id": "APGOV-T1-031",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovRights",
+      "skill": "SCOTUS application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A public school district begins each day with a short nondenominational prayer led by teachers, though students may stay silent. Which required case shows the policy is unconstitutional?",
+      "options": [
+        "Tinker v. Des Moines",
+        "McDonald v. Chicago",
+        "Engel v. Vitale",
+        "Wisconsin v. Yoder"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Engel held that school-sponsored prayer violates the establishment clause even when it is nondenominational and students may decline to take part."
+    },
+    {
+      "id": "APGOV-T1-032",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovRights",
+      "skill": "SCOTUS application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A man charged with a felony in state court cannot afford a lawyer, and the judge refuses to appoint one. Which required case protects him?",
+      "options": [
+        "New York Times Co. v. United States",
+        "Gideon v. Wainwright",
+        "Wisconsin v. Yoder",
+        "Shaw v. Reno"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Gideon held that the Sixth Amendment right to counsel applies to the states through the Fourteenth Amendment, so states must provide lawyers to poor felony defendants."
+    },
+    {
+      "id": "APGOV-T1-033",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovRights",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Police must warn a suspect in custody of the right to remain silent before questioning. The warning protects a right in the",
+      "options": [
+        "Eighth Amendment",
+        "Fifth Amendment",
+        "Second Amendment",
+        "First Amendment"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The Miranda warnings protect the Fifth Amendment privilege against self-incrimination. The Eighth Amendment concerns bail and punishment."
+    },
+    {
+      "id": "APGOV-T1-034",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovRights",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Title IX of the Education Amendments of 1972 prohibits",
+      "options": [
+        "age discrimination in hiring",
+        "religious tests for any federal or state office",
+        "sex discrimination in federally funded schools",
+        "racial segregation in public housing"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Title IX bars discrimination on the basis of sex in education programs that receive federal money, and it greatly expanded girls' and women's school sports."
+    },
+    {
+      "id": "APGOV-T1-035",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovRights",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "In \"Letter from a Birmingham Jail,\" Martin Luther King, Jr. argues that people have a moral duty to",
+      "options": [
+        "use force against officials who break the law",
+        "disobey unjust laws openly and peacefully",
+        "leave civil rights to the federal courts",
+        "obey every law until a court strikes it down"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "King defends nonviolent civil disobedience: breaking an unjust law in the open, without violence and accepting the penalty, rather than waiting for change."
+    },
+    {
+      "id": "APGOV-T1-036",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovRights",
+      "skill": "SCOTUS application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Amish parents refuse to keep their children in school past eighth grade, citing their faith, and the state fines them. Which required case supports the parents?",
+      "options": [
+        "Wisconsin v. Yoder",
+        "Tinker v. Des Moines",
+        "Baker v. Carr",
+        "Engel v. Vitale"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Yoder held that requiring Amish children to attend school beyond eighth grade violates the free exercise clause. Engel concerned the establishment clause."
+    },
+    {
+      "id": "APGOV-T1-037",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovIdeology",
+      "skill": "Data analysis",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APGOV-T1-S06",
+      "stem": "Which statement is supported by the data?",
+      "options": [
+        "Support for bigger government falls with age",
+        "Every age group prefers smaller government",
+        "Views on government do not differ by age",
+        "Most adults over 50 want a bigger government"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Support for a bigger government drops steadily from 62% among 18-29 year olds to 38% among those 65 and older, while support for a smaller government rises."
+    },
+    {
+      "id": "APGOV-T1-038",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovIdeology",
+      "skill": "Data analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APGOV-T1-S06",
+      "stem": "By how many percentage points does support for a bigger government among 18-29 year olds exceed that among adults 65 and older?",
+      "options": [
+        "14",
+        "23",
+        "24",
+        "26"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "62 - 38 = 24 points. Comparing the smaller-government column (59 - 36) gives 23, and mixing columns (62 - 36) gives 26."
+    },
+    {
+      "id": "APGOV-T1-039",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovIdeology",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APGOV-T1-S06",
+      "stem": "A pollster wants a survey like this one to reflect all adults. The most important step is",
+      "options": [
+        "letting anyone choose to respond",
+        "surveying only registered voters",
+        "drawing a random sample",
+        "asking questions in a leading way"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "In a random sample every adult has an equal chance of being chosen, so the sample mirrors the population. Self-selected samples over-represent people with strong views."
+    },
+    {
+      "id": "APGOV-T1-040",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovIdeology",
+      "skill": "Concept application",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A candidate promises to lower taxes and reduce government regulation of business. This platform is most consistent with",
+      "options": [
+        "Keynesian economic theory",
+        "liberal ideology",
+        "socialist ideology",
+        "conservative ideology"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Conservatives generally favor lower taxes, less regulation and a smaller role for government in the economy."
+    },
+    {
+      "id": "APGOV-T1-041",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovIdeology",
+      "skill": "Concept application",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "The Federal Reserve raises interest rates to slow inflation. This is an example of",
+      "options": [
+        "fiscal policy",
+        "a supply-side tax cut",
+        "deficit spending",
+        "monetary policy"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Monetary policy is the Federal Reserve's control of the money supply and interest rates. Fiscal policy is taxing and spending by Congress and the president."
+    },
+    {
+      "id": "APGOV-T1-042",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovIdeology",
+      "skill": "Concept application",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A poll asks, \"Do you support the reckless plan to cut school funding?\" The main problem with the poll is that",
+      "options": [
+        "the sample is too large",
+        "the question wording is biased",
+        "the poll uses random sampling",
+        "the margin of error is too small"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The word \"reckless\" pushes respondents toward one answer, so the results measure the wording as much as opinion."
+    },
+    {
+      "id": "APGOV-T1-043",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovIdeology",
+      "skill": "Concept application",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Which is usually the most important early agent of political socialization?",
+      "options": [
+        "Political parties",
+        "The family",
+        "Social media",
+        "Interest groups"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Children first learn political attitudes and often party loyalty at home; schools, peers and media add to them later."
+    },
+    {
+      "id": "APGOV-T1-044",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovVoting",
+      "skill": "Data analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APGOV-T1-S07",
+      "stem": "Which age group's turnout fell the most from the presidential election to the midterm election?",
+      "options": [
+        "Ages 18-24",
+        "Ages 25-44",
+        "Ages 45-64",
+        "Ages 65 and older"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "Turnout among 18-24 year olds fell 20 points (48 to 28), compared with 18, 13 and 8 points for the older groups."
+    },
+    {
+      "id": "APGOV-T1-045",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovVoting",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APGOV-T1-S07",
+      "stem": "Which reform would most likely raise turnout among the youngest voters in the table?",
+      "options": [
+        "Moving all elections to midterm years",
+        "Same-day voter registration",
+        "Ending absentee voting by mail",
+        "Closing polling places on campuses"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Young people move often and are least likely to be registered, so letting them register and vote on the same day removes a key barrier. The table shows midterms have lower turnout."
+    },
+    {
+      "id": "APGOV-T1-046",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovVoting",
+      "skill": "Source analysis",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APGOV-T1-S08",
+      "stem": "The note on the map describes",
+      "options": [
+        "proportional representation",
+        "ranked-choice voting",
+        "the winner-take-all system",
+        "a two-round runoff system"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Giving all of a state's electoral votes to the candidate with the most popular votes there is the winner-take-all system. Maine and Nebraska instead award some votes by district."
+    },
+    {
+      "id": "APGOV-T1-047",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovVoting",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APGOV-T1-S08",
+      "stem": "Because of the system in the note, presidential candidates tend to",
+      "options": [
+        "need a majority of the national vote",
+        "focus on competitive swing states",
+        "spend most time in the safest states",
+        "campaign equally in every state"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A narrow win in a closely divided state earns all its electoral votes, so campaigns pour time and money into swing states. A candidate can win without a national popular majority."
+    },
+    {
+      "id": "APGOV-T1-048",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovVoting",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Third parties rarely win seats in Congress mainly because of",
+      "options": [
+        "federal limits on how large a party may be",
+        "the Electoral College's role in House races",
+        "a constitutional ban on third parties",
+        "single-member districts with plurality rule"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "When one candidate wins each district with the most votes, a third party with steady but small support wins nothing, so voters drift to the two major parties."
+    },
+    {
+      "id": "APGOV-T1-049",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovVoting",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A voter picks the candidate whose tax plan will most help her own family's budget. This is",
+      "options": [
+        "straight-ticket voting",
+        "party-line voting",
+        "retrospective voting",
+        "rational-choice voting"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Rational-choice voting is based on what the voter judges to be in her own interest. Retrospective voting judges past performance."
+    },
+    {
+      "id": "APGOV-T1-050",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovCampaigns",
+      "skill": "Source analysis",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APGOV-T1-S09",
+      "stem": "The cartoon's main message is that",
+      "options": [
+        "members of Congress ignore rich donors",
+        "voters give too much money to campaigns",
+        "lobbying has been banned by federal law",
+        "big donors drown out ordinary voters"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The money piled on the desk and the lobbyist at the member's ear, with voters held behind a rope, suggest that wealthy interests get access that ordinary citizens do not."
+    },
+    {
+      "id": "APGOV-T1-051",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovCampaigns",
+      "skill": "SCOTUS application",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APGOV-T1-S09",
+      "stem": "Which required case most directly opened the way for the kind of spending shown in the cartoon?",
+      "options": [
+        "Baker v. Carr",
+        "New York Times Co. v. United States",
+        "Citizens United v. FEC",
+        "Shaw v. Reno"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Citizens United held that independent political spending by corporations, associations and unions is protected speech, which led to super PACs that may raise and spend without limit."
+    },
+    {
+      "id": "APGOV-T1-052",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovCampaigns",
+      "skill": "Data analysis",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APGOV-T1-S10",
+      "stem": "Which statement is supported by the table?",
+      "options": [
+        "Fewer than half of incumbents in either house won",
+        "Senate incumbents always won reelection",
+        "House incumbents won more often than Senate ones",
+        "Reelection rates rose in every election"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "House rates (93 to 97%) were above Senate rates (79 to 91%) in every election. Senate rates were never 100%, and both fell in Election 2."
+    },
+    {
+      "id": "APGOV-T1-053",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovCampaigns",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APGOV-T1-S10",
+      "stem": "Which best explains the high rates for House incumbents?",
+      "options": [
+        "Ballots that do not list any party",
+        "Term limits on members of the House",
+        "Name recognition and safe districts",
+        "House elections held every six years"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Incumbents are better known, raise more money, do casework for constituents and often run in districts drawn to favor their party. There are no congressional term limits."
+    },
+    {
+      "id": "APGOV-T1-054",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovCampaigns",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Many people enjoy the benefits an interest group wins without joining or paying dues. This is",
+      "options": [
+        "the bandwagon effect in polls",
+        "the iron triangle",
+        "the coattail effect",
+        "the free-rider problem"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Because the benefits go to everyone, people have an incentive to let others pay, which makes it hard for groups to recruit members."
+    },
+    {
+      "id": "APGOV-T1-055",
+      "section": "mcq",
+      "test": 1,
+      "module": 1,
+      "domain": "apgovCampaigns",
+      "skill": "Concept application",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "News coverage focused on who is ahead in the polls rather than on candidates' policies is called",
+      "options": [
+        "yellow journalism",
+        "investigative journalism",
+        "horse-race journalism",
+        "the fairness doctrine"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Horse-race journalism treats a campaign like a race, stressing poll standings and strategy over issues."
+    },
+    {
+      "id": "APGOV-T2-001",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovFoundations",
+      "skill": "Source analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APGOV-T2-S01",
+      "stem": "The author's main concern is that",
+      "options": [
+        "small republics fall to majority factions",
+        "the president will dominate Congress",
+        "a large republic cannot represent its people well",
+        "the states will keep too much power over foreign trade"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Brutus argues that people across so wide a country have different interests, so their representatives will clash and a free republic cannot work at that size."
+    },
+    {
+      "id": "APGOV-T2-002",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovFoundations",
+      "skill": "SCOTUS application",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APGOV-T2-S01",
+      "stem": "The author's warning about laws \"necessary and proper\" to carry out federal powers anticipated the debate later decided in",
+      "options": [
+        "Gideon v. Wainwright",
+        "New York Times Co. v. United States",
+        "Engel v. Vitale",
+        "McCulloch v. Maryland"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "McCulloch read the necessary and proper clause broadly, upholding a national bank as an implied power, the very expansion Brutus feared."
+    },
+    {
+      "id": "APGOV-T2-003",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovFoundations",
+      "skill": "Source analysis",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APGOV-T2-S01",
+      "stem": "Madison answered arguments like this one in Federalist No. 10 by claiming that a large republic",
+      "options": [
+        "lets the states keep their own armed militias",
+        "makes factions disappear over time",
+        "makes it harder for one faction to dominate",
+        "gives each citizen a direct vote on laws"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Madison argued that a large republic takes in so many interests that no single faction is likely to form a majority and oppress the rest. He thought the causes of faction could not be removed."
+    },
+    {
+      "id": "APGOV-T2-004",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovFoundations",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APGOV-T2-S01",
+      "stem": "Which part of the Constitution was added in part to answer fears like the author's about distant national power?",
+      "options": [
+        "The Fourteenth Amendment",
+        "The Seventeenth Amendment",
+        "The Twelfth Amendment",
+        "The Tenth Amendment"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The Tenth Amendment, part of the Bill of Rights demanded by Anti-Federalists, reserves to the states or the people the powers not delegated to the national government."
+    },
+    {
+      "id": "APGOV-T2-005",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovFoundations",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The Declaration of Independence says people may \"alter or abolish\" a government that destroys their rights. This idea reflects",
+      "options": [
+        "the principle of judicial review",
+        "the pluralist model of democracy",
+        "the divine right of kings",
+        "social contract theory"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Social contract theory holds that government exists by agreement of the people to protect their rights, so a government that breaks the agreement loses its claim to obedience."
+    },
+    {
+      "id": "APGOV-T2-006",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovFoundations",
+      "skill": "Concept application",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Which step that Article V allows has never been used to add an amendment to the Constitution?",
+      "options": [
+        "Ratification by conventions in three-fourths of the states",
+        "Proposal by a two-thirds vote in both houses of Congress",
+        "Proposal by a convention called by two-thirds of the states",
+        "Ratification by three-fourths of the state legislatures"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Every amendment so far was proposed by Congress, never by a convention called on the application of two-thirds of the state legislatures. Most were ratified by state legislatures, and the Twenty-first Amendment was ratified by state conventions."
+    },
+    {
+      "id": "APGOV-T2-007",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovFoundations",
+      "skill": "Concept application",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A federal law requires states to make polling places accessible to voters with disabilities but gives no money to do it. This is",
+      "options": [
+        "a block grant",
+        "a categorical grant",
+        "an unfunded mandate",
+        "a reserved power"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A mandate is a federal requirement on the states; when it comes without money to pay for it, it is unfunded. Both kinds of grant send money."
+    },
+    {
+      "id": "APGOV-T2-008",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovFoundations",
+      "skill": "SCOTUS application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Congress makes it a federal crime to carry a knife near any public park, citing its power over interstate commerce. Which required case would opponents cite?",
+      "options": [
+        "Tinker v. Des Moines",
+        "United States v. Lopez",
+        "Citizens United v. FEC",
+        "McCulloch v. Maryland"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "In Lopez the Court held that carrying a gun near a school was not economic activity substantially affecting interstate commerce, so Congress had exceeded its commerce power."
+    },
+    {
+      "id": "APGOV-T2-009",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovFoundations",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Since the 1990s, Congress has given states more control over some programs, such as welfare, through block grants. This trend is called",
+      "options": [
+        "nullification",
+        "devolution",
+        "secession",
+        "preemption"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Devolution shifts responsibility from the national government back to the states. Preemption is the opposite, federal law displacing state law."
+    },
+    {
+      "id": "APGOV-T2-010",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovFoundations",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The course lists the Gettysburg Address, given during the Civil War, among the foundational documents mainly because it",
+      "options": [
+        "explained the Supreme Court's role in the war",
+        "set out the president's war powers in law",
+        "reaffirmed equality and government by the people",
+        "ended slavery in the states loyal to the Union"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The College Board framework says the address reaffirmed equality and popular sovereignty as foundations of American democracy. It was a speech, not a law, and it freed no one."
+    },
+    {
+      "id": "APGOV-T2-011",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovCongress",
+      "skill": "Data analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APGOV-T2-S02",
+      "stem": "Which president had the highest share of regular vetoes overridden?",
+      "options": [
+        "President A",
+        "President B",
+        "President C",
+        "President D"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "President B had 6 of 30 overridden (20%), President D 4 of 25 (16%), President C 1 of 12 (about 8%) and President A none."
+    },
+    {
+      "id": "APGOV-T2-012",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovCongress",
+      "skill": "Data analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APGOV-T2-S02",
+      "stem": "Which conclusion do the veto data best support?",
+      "options": [
+        "Most vetoes are overridden by Congress",
+        "Overrides are most common under unified government",
+        "Presidents veto more when their party controls Congress",
+        "Vetoes are more common under divided government"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The two presidents facing a Congress of the other party issued 30 and 25 vetoes; the one with his own party in control issued 2. Overrides were a small share for everyone."
+    },
+    {
+      "id": "APGOV-T2-013",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovCongress",
+      "skill": "Concept application",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APGOV-T2-S02",
+      "stem": "Near the end of a session, a president facing a Congress like President B's wants to block a bill without risking an override. The president could use",
+      "options": [
+        "a line-item veto",
+        "a pocket veto",
+        "an executive agreement",
+        "a signing statement"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "If Congress adjourns within ten days (Sundays excepted) of sending a bill and the president does not sign it, the bill dies and cannot be overridden. The line-item veto was struck down in 1998."
+    },
+    {
+      "id": "APGOV-T2-014",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovCongress",
+      "skill": "Source analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APGOV-T2-S03",
+      "stem": "The cartoonist's main point is that",
+      "options": [
+        "states block most executive orders",
+        "Congress now controls the executive branch",
+        "presidents have taken power from Congress",
+        "the courts have weakened the presidency"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The towering executive holding orders and declarations next to a tiny Congress with a sign reading \"Article I\" suggests the president now exercises powers the Constitution gave to Congress."
+    },
+    {
+      "id": "APGOV-T2-015",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovCongress",
+      "skill": "Source analysis",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APGOV-T2-S03",
+      "stem": "Which argument from the foundational documents could be used to defend the executive in the cartoon?",
+      "options": [
+        "Factions are best controlled in a large republic",
+        "The judiciary is the least dangerous branch",
+        "Energy in the executive aids good government",
+        "A free republic needs a small territory"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Federalist No. 70 argues that a single, energetic executive acts with decision and dispatch, which supporters of strong presidential power often cite."
+    },
+    {
+      "id": "APGOV-T2-016",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovCongress",
+      "skill": "Concept application",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Gridlock in Washington is most likely when",
+      "options": [
+        "the president signs most bills sent to the desk",
+        "different parties hold Congress and the presidency",
+        "one party holds the presidency and both chambers of Congress",
+        "the House and Senate pass identical bills quickly"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Divided government gives each party a check on the other, so bills stall more often than when one party controls both branches."
+    },
+    {
+      "id": "APGOV-T2-017",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovCongress",
+      "skill": "Concept application",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "The House of Representatives has the sole power to",
+      "options": [
+        "impeach federal officials",
+        "try impeachments",
+        "ratify treaties",
+        "confirm the president's cabinet nominees"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The House impeaches (brings charges) by majority vote; the Senate holds the trial. Confirmations and treaty approval belong to the Senate."
+    },
+    {
+      "id": "APGOV-T2-018",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovCongress",
+      "skill": "Concept application",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Two members of Congress agree to vote for each other's bills. This practice is",
+      "options": [
+        "pork barrel spending",
+        "a discharge petition",
+        "a filibuster",
+        "logrolling"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Logrolling is vote trading. Pork barrel spending is money directed to a member's district."
+    },
+    {
+      "id": "APGOV-T2-019",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovCongress",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which presidential power is a formal power stated in Article II?",
+      "options": [
+        "Granting pardons",
+        "Using the bully pulpit",
+        "Issuing signing statements",
+        "Making executive agreements"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Article II gives the president power to grant reprieves and pardons for federal offenses. The other three are informal powers developed through practice."
+    },
+    {
+      "id": "APGOV-T2-020",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovCourts",
+      "skill": "Data analysis",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APGOV-T2-S04",
+      "stem": "What percent of nominees were confirmed when the other party held the Senate majority?",
+      "options": [
+        "40%",
+        "60%",
+        "75%",
+        "90%"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "48 of 80 is 60%. 90% is the rate under a Senate of the president's party, 75% is the overall rate (120 of 160), and 40% is the share not confirmed."
+    },
+    {
+      "id": "APGOV-T2-021",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovCourts",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APGOV-T2-S04",
+      "stem": "Which constitutional feature best explains the difference shown in the table?",
+      "options": [
+        "The Senate's power to confirm judges",
+        "The president's power to remove judges",
+        "The courts' power of judicial review",
+        "The House's role in approving nominees"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Judges are appointed with the advice and consent of the Senate, so a Senate majority from the other party can slow or block nominees. Presidents cannot remove federal judges, and the House has no role."
+    },
+    {
+      "id": "APGOV-T2-022",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovCourts",
+      "skill": "SCOTUS application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Voters in a fast-growing city sue because their state has not redrawn legislative districts in sixty years, so their votes count for far less than rural votes. Which required case lets federal courts hear the claim?",
+      "options": [
+        "Engel v. Vitale",
+        "Shaw v. Reno",
+        "Baker v. Carr",
+        "Marbury v. Madison"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Baker v. Carr held that apportionment is not a political question beyond the courts, so voters may challenge unequal districts under the equal protection clause. Shaw v. Reno concerned race-based districting."
+    },
+    {
+      "id": "APGOV-T2-023",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovCourts",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Because federal courts have no army and no budget of their own, their power depends most on",
+      "options": [
+        "the votes of state legislatures",
+        "public acceptance of their rulings",
+        "approval by the attorney general's office",
+        "a yearly review by the House"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Courts must rely on the other branches to enforce rulings, so their legitimacy, the public's belief that their decisions are proper, is their main source of power."
+    },
+    {
+      "id": "APGOV-T2-024",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovCourts",
+      "skill": "Concept application",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A congressional committee holds hearings at which agency heads explain how they spent their funds. This is",
+      "options": [
+        "executive privilege",
+        "a presidential signing statement",
+        "judicial review",
+        "congressional oversight"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Oversight is Congress's review of how the executive branch carries out the laws, through hearings, investigations and control of funding."
+    },
+    {
+      "id": "APGOV-T2-025",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovCourts",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Federal civil servants may not take part in partisan political activity while on duty. This limit comes from",
+      "options": [
+        "the War Powers Resolution",
+        "the Hatch Act",
+        "the Freedom of Information Act",
+        "the Budget and Impoundment Control Act"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The Hatch Act restricts the partisan political activity of federal employees to keep the civil service neutral. The Freedom of Information Act opens agency records to the public."
+    },
+    {
+      "id": "APGOV-T2-026",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovCourts",
+      "skill": "Concept application",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Most cases reach the Supreme Court through",
+      "options": [
+        "its appellate jurisdiction",
+        "its original jurisdiction",
+        "requests from the president",
+        "referrals from Congress"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Nearly all of the Court's cases are appeals from lower federal courts or state supreme courts. Original jurisdiction covers only a few cases, such as disputes between states."
+    },
+    {
+      "id": "APGOV-T2-027",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovCourts",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A critic says the Court is \"legislating from the bench\" when it strikes down a popular law. The critic objects to",
+      "options": [
+        "judicial activism",
+        "senatorial courtesy",
+        "judicial restraint",
+        "stare decisis"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The charge of legislating from the bench is a criticism of judicial activism, judges using rulings to make policy that critics think belongs to elected branches."
+    },
+    {
+      "id": "APGOV-T2-028",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovRights",
+      "skill": "Source analysis",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APGOV-T2-S05",
+      "stem": "The process the author describes is known as",
+      "options": [
+        "dual federalism",
+        "prior restraint",
+        "selective incorporation",
+        "the judicial restraint doctrine"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Selective incorporation is the case-by-case application of Bill of Rights protections to the states through the Fourteenth Amendment's due process clause."
+    },
+    {
+      "id": "APGOV-T2-029",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovRights",
+      "skill": "SCOTUS application",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APGOV-T2-S05",
+      "stem": "Which required case is an example of the process in the passage?",
+      "options": [
+        "Baker v. Carr",
+        "United States v. Lopez",
+        "McDonald v. Chicago",
+        "Marbury v. Madison"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "McDonald held that the Second Amendment right to keep and bear arms for self-defense applies to the states, incorporating it through the Fourteenth Amendment."
+    },
+    {
+      "id": "APGOV-T2-030",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovRights",
+      "skill": "Source analysis",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APGOV-T2-S05",
+      "stem": "According to the author, before the change described the Bill of Rights",
+      "options": [
+        "had never been tested in court",
+        "covered only the federal courts",
+        "applied only to the state governments",
+        "limited only the national government"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The passage says that for most of American history the Bill of Rights limited only the national government, until the Court began applying it to the states."
+    },
+    {
+      "id": "APGOV-T2-031",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovRights",
+      "skill": "SCOTUS application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A newspaper obtains a secret government study of a war, and the government asks a court to stop publication. Which required case most supports the newspaper?",
+      "options": [
+        "Schenck v. United States",
+        "Tinker v. Des Moines",
+        "New York Times Co. v. United States",
+        "Citizens United v. Federal Election Commission"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "In the Pentagon Papers case the Court ruled that the government had not met the heavy burden required for prior restraint, even with national security claims."
+    },
+    {
+      "id": "APGOV-T2-032",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovRights",
+      "skill": "SCOTUS application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A state draws a congressional district shaped only to gather voters of one race, with no other explanation. Under which required case can voters challenge it?",
+      "options": [
+        "Shaw v. Reno",
+        "Baker v. Carr",
+        "Engel v. Vitale",
+        "Brown v. Board of Education"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Shaw v. Reno held that a district drawn with race as the only factor can be challenged under the equal protection clause. Baker v. Carr concerned unequal population."
+    },
+    {
+      "id": "APGOV-T2-033",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovRights",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A state law forbids a church to use wine in its religious services. The church would most likely argue that the law violates",
+      "options": [
+        "the full faith and credit clause",
+        "the free exercise clause",
+        "the equal protection clause",
+        "the establishment clause"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A law that burdens the practice of a religion raises a free exercise claim. The establishment clause bars government support for religion."
+    },
+    {
+      "id": "APGOV-T2-034",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovRights",
+      "skill": "Concept application",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "Supreme Court debate over affirmative action in admissions has centered on",
+      "options": [
+        "the Tenth Amendment",
+        "the equal protection clause",
+        "the First Amendment's free exercise clause",
+        "the commerce clause"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The cases ask whether considering race or other characteristics in admissions is consistent with the Fourteenth Amendment's guarantee of equal protection of the laws."
+    },
+    {
+      "id": "APGOV-T2-035",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovRights",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "In Griswold v. Connecticut (1965), the Court recognized a right to privacy that it found",
+      "options": [
+        "stated in the First Amendment",
+        "created by an act of Congress",
+        "limited to federal workers",
+        "implied by several amendments"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The Constitution never names a right to privacy; the Court reasoned that it is implied by several Bill of Rights guarantees and protected by due process."
+    },
+    {
+      "id": "APGOV-T2-036",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovRights",
+      "skill": "Concept application",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A prison sentence far out of proportion to a minor crime would most likely be challenged under the",
+      "options": [
+        "Sixth Amendment",
+        "Fourth Amendment",
+        "Third Amendment",
+        "Eighth Amendment"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The Eighth Amendment forbids cruel and unusual punishments and excessive bail and fines."
+    },
+    {
+      "id": "APGOV-T2-037",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovIdeology",
+      "skill": "Data analysis",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APGOV-T2-S06",
+      "stem": "Which conclusion is best supported by the poll?",
+      "options": [
+        "Democrats are evenly divided on it",
+        "Independents strongly oppose the new policy",
+        "Most Republicans support the policy",
+        "Views on the policy split sharply by party"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "78% of Democrats support it while 75% of Republicans oppose it, a wide partisan gap. Independents are close to even."
+    },
+    {
+      "id": "APGOV-T2-038",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovIdeology",
+      "skill": "Data analysis",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APGOV-T2-S06",
+      "stem": "Given the margin of error, the result for all adults is best described as",
+      "options": [
+        "too close to call with confidence",
+        "a clear majority in favor",
+        "a clear majority opposed",
+        "proof that the policy will pass Congress"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Support could be as low as 48% and opposition as high as 49%, so the ranges overlap and the poll cannot say which side has a majority."
+    },
+    {
+      "id": "APGOV-T2-039",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovIdeology",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APGOV-T2-S06",
+      "stem": "The pattern among party members in the poll is an example of",
+      "options": [
+        "political efficacy",
+        "partisan polarization",
+        "a rally effect",
+        "the bandwagon effect in polling"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Polarization means the parties' members hold increasingly opposite views, as the 78 to 22 split shows."
+    },
+    {
+      "id": "APGOV-T2-040",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovIdeology",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A voter wants the government to stay out of both the economy and people's personal choices. This view is best called",
+      "options": [
+        "liberal",
+        "libertarian",
+        "conservative",
+        "authoritarian"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Libertarians favor minimal government in both economic and social life. Liberals tend to favor more economic regulation, and conservatives more social regulation."
+    },
+    {
+      "id": "APGOV-T2-041",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovIdeology",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "During a recession, Congress increases spending and cuts taxes to boost demand. This approach reflects",
+      "options": [
+        "supply-side economics",
+        "laissez-faire economics",
+        "monetary policy",
+        "Keynesian economics"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Keynesian theory holds that government should raise demand in a downturn through spending and tax cuts, even with deficits. Laissez-faire means leaving the economy alone."
+    },
+    {
+      "id": "APGOV-T2-042",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovIdeology",
+      "skill": "Concept application",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Surveys of voters taken as they leave polling places on Election Day are",
+      "options": [
+        "tracking polls",
+        "push polls",
+        "benchmark polls",
+        "exit polls"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Exit polls question voters right after they vote. Tracking polls follow opinion over a campaign, and push polls are campaign tactics disguised as surveys."
+    },
+    {
+      "id": "APGOV-T2-043",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovIdeology",
+      "skill": "Concept application",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A court orders a governor to obey a state law just as any other resident must. This reflects the core value of",
+      "options": [
+        "the rule of law",
+        "individualism",
+        "free enterprise",
+        "equality of opportunity"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The course lists the rule of law among core American values: no one, however powerful, is above the law."
+    },
+    {
+      "id": "APGOV-T2-044",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovVoting",
+      "skill": "Data analysis",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APGOV-T2-S07",
+      "stem": "Which trend does the table show?",
+      "options": [
+        "A growing share of adults call themselves independent",
+        "The Democratic share grows over the thirty years",
+        "The shares of all three groups stay roughly the same over time",
+        "A growing share of adults call themselves Republican"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Independents rise from 33% to 42% over thirty years while both major parties' shares fall."
+    },
+    {
+      "id": "APGOV-T2-045",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovVoting",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APGOV-T2-S07",
+      "stem": "The trend in the table is most consistent with",
+      "options": [
+        "a rise in party-line voting",
+        "dealignment from the parties",
+        "the growth of party machines",
+        "a critical realignment"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Dealignment is a decline in attachment to either party. A realignment would shift lasting support from one party to the other."
+    },
+    {
+      "id": "APGOV-T2-046",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovVoting",
+      "skill": "Source analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APGOV-T2-S08",
+      "stem": "Compared with the period before the 1970s, the process in the infographic gives",
+      "options": [
+        "voters, not party leaders, the main say",
+        "party leaders more control over nominees",
+        "Congress a role in naming nominees",
+        "caucuses in place of every primary"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Reforms after 1968 tied delegates to primary and caucus results, so voters rather than party bosses at conventions now largely choose nominees."
+    },
+    {
+      "id": "APGOV-T2-047",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovVoting",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APGOV-T2-S08",
+      "stem": "States that move their contests in Step 1 earlier to gain influence are",
+      "options": [
+        "gerrymandering",
+        "front-loading",
+        "dealigning",
+        "logrolling"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Front-loading is scheduling primaries and caucuses early in the season, when they can shape which candidates survive."
+    },
+    {
+      "id": "APGOV-T2-048",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovVoting",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The National Voter Registration Act of 1993 made it easier to vote by",
+      "options": [
+        "allowing online voting in all federal races",
+        "mailing every adult a ballot automatically",
+        "letting people register at motor vehicle offices",
+        "making Election Day a paid holiday in every state"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Known as the motor voter law, it required states to offer voter registration when people apply for or renew a driver's license, and by mail."
+    },
+    {
+      "id": "APGOV-T2-049",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovVoting",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Voters who punish the president's party because the economy did poorly over the past year are",
+      "options": [
+        "voting prospectively",
+        "voting retrospectively",
+        "splitting their tickets",
+        "acting as delegates"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Retrospective voting judges candidates or parties by past results. Prospective voting judges them by promises for the future."
+    },
+    {
+      "id": "APGOV-T2-050",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovCampaigns",
+      "skill": "Source analysis",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APGOV-T2-S09",
+      "stem": "The infographic shows",
+      "options": [
+        "television overtaking online news",
+        "a decline in social media use",
+        "a steady rise in trust in printed newspapers",
+        "a shift from traditional to digital news"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Television and print fall while social media and news websites become the largest source, a move from traditional to digital media."
+    },
+    {
+      "id": "APGOV-T2-051",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovCampaigns",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APGOV-T2-S09",
+      "stem": "One concern raised by the trend in the infographic is that",
+      "options": [
+        "the government will take over running the newspapers",
+        "people may see mostly news that fits their views",
+        "news will become impossible to find",
+        "television stations will be banned"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Social media feeds tailor content to users, so people can end up in echo chambers that reinforce their views and spread unverified stories."
+    },
+    {
+      "id": "APGOV-T2-052",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovCampaigns",
+      "skill": "Data analysis",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APGOV-T2-S10",
+      "stem": "Compared with the challenger, the incumbent relied more on money from",
+      "options": [
+        "public financing",
+        "individual donors",
+        "political action committees",
+        "the candidate's own personal savings"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "PACs gave 40% of the incumbent's money but only 10% of the challenger's. The challenger relied more on individual donors and personal money."
+    },
+    {
+      "id": "APGOV-T2-053",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovCampaigns",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APGOV-T2-S10",
+      "stem": "Which best explains why PACs give more to incumbents than to challengers?",
+      "options": [
+        "Incumbents usually win reelection",
+        "PACs may give only to incumbents",
+        "Incumbents receive public funds",
+        "Challengers may not accept PAC money"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "PACs seek access to the officials who will vote on their issues, and incumbents are very likely to be in office after the election."
+    },
+    {
+      "id": "APGOV-T2-054",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovCampaigns",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A former member of Congress becomes a lobbyist for firms her committee once oversaw. Critics call this",
+      "options": [
+        "senatorial courtesy",
+        "front-loading",
+        "the revolving door",
+        "the free-rider problem"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The revolving door is the movement of people between government jobs and the industries or groups they deal with."
+    },
+    {
+      "id": "APGOV-T2-055",
+      "section": "mcq",
+      "test": 2,
+      "module": 1,
+      "domain": "apgovCampaigns",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "An interest group rates members of Congress on key votes and publishes the scores. The main aim of this tactic is to",
+      "options": [
+        "file briefs in Supreme Court cases",
+        "write bills for congressional committees",
+        "replace the parties' primary elections",
+        "inform voters and pressure members"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Scorecards tell members' voters how they voted on the group's issues, which pressures members to vote the group's way."
+    },
+    {
+      "id": "APGOV-D-001",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovFoundations",
+      "skill": "Source analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APGOV-D-S01",
+      "stem": "The author's main claim is that the Constitution",
+      "options": [
+        "creates a purely national government",
+        "keeps the Articles' league of states",
+        "lets each state veto federal laws",
+        "blends national and state features"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Madison calls the plan \"neither a national nor a federal Constitution, but a composition of both\": some parts rest on the states and some on the people as a whole."
+    },
+    {
+      "id": "APGOV-D-002",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovFoundations",
+      "skill": "Source analysis",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APGOV-D-S01",
+      "stem": "Which feature of the Constitution is \"federal\" in the author's sense because it treats the states as equals?",
+      "options": [
+        "Federal laws acting on individuals",
+        "Taxes collected from each citizen",
+        "Equal state votes in the Senate",
+        "House seats assigned by population"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "In Federalist No. 39, \"federal\" means resting on the states as equal political bodies. Equal Senate representation does that; House seats by population rest on the people."
+    },
+    {
+      "id": "APGOV-D-003",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovFoundations",
+      "skill": "Source analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APGOV-D-S01",
+      "stem": "In saying the powers \"operate\" nationally, the author means that federal laws",
+      "options": [
+        "cover every subject of government",
+        "apply directly to individual citizens",
+        "must first be approved by each state legislature",
+        "are enforced only by state courts"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Under the Articles, Congress acted on the states; under the Constitution, federal laws reach individuals directly. The extent of the powers is limited, which Madison calls federal."
+    },
+    {
+      "id": "APGOV-D-004",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovFoundations",
+      "skill": "Concept application",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A political scientist argues that a small, wealthy and educated group shapes most policy decisions. This view reflects",
+      "options": [
+        "the pluralist model",
+        "the direct model of democracy",
+        "the participatory model",
+        "the elite model of democracy"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The elite model holds that a limited, highly educated or wealthy few hold most influence. The pluralist model sees many competing groups."
+    },
+    {
+      "id": "APGOV-D-005",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovFoundations",
+      "skill": "Concept application",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Farm, labor and business organizations each press Congress, and policy reflects bargaining among them. This best fits",
+      "options": [
+        "participatory democracy",
+        "a unitary system",
+        "elite democracy",
+        "pluralist democracy"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Pluralist democracy sees policy as the result of competition and compromise among many organized groups."
+    },
+    {
+      "id": "APGOV-D-006",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovFoundations",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which weakness of the Articles of Confederation did the Constitution address by creating a national executive?",
+      "options": [
+        "No way for states to send delegates",
+        "No power to declare war",
+        "No power to make treaties",
+        "No one to enforce national laws"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The Articles had a Congress but no separate executive to carry out its decisions. Congress under the Articles could already declare war and make treaties."
+    },
+    {
+      "id": "APGOV-D-007",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovFoundations",
+      "skill": "Concept application",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "The necessary and proper clause is the main basis for",
+      "options": [
+        "the original jurisdiction of courts",
+        "the reserved powers of the states",
+        "the president's executive privilege",
+        "the implied powers of Congress"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The clause lets Congress make laws needed to carry out its listed powers, so it can act on powers that are implied rather than spelled out."
+    },
+    {
+      "id": "APGOV-D-008",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovFoundations",
+      "skill": "Concept application",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A court judgment won in one state is enforced by the courts of another state because of",
+      "options": [
+        "the full faith and credit clause",
+        "the supremacy clause",
+        "the commerce clause",
+        "the necessary and proper clause of Article I"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Article IV requires each state to give full faith and credit to the public acts, records and court rulings of the other states."
+    },
+    {
+      "id": "APGOV-D-009",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovFoundations",
+      "skill": "Concept application",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Congress gives a state a lump sum for community development that it may spend as it chooses within that broad area. This is",
+      "options": [
+        "a revenue tariff",
+        "an unfunded mandate",
+        "a block grant",
+        "a categorical grant"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A block grant funds a broad policy area and leaves the details to the state. A categorical grant is for a narrow purpose with conditions."
+    },
+    {
+      "id": "APGOV-D-010",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovFoundations",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Cooperative federalism is best described as",
+      "options": [
+        "levels of government sharing policy work",
+        "the national government ruling the states",
+        "states able to nullify federal laws",
+        "the nation and states in separate spheres"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Under cooperative federalism the national and state governments share responsibility for policies such as highways and health care. Separate spheres describe dual federalism."
+    },
+    {
+      "id": "APGOV-D-011",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovFoundations",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The Constitution's bans on ex post facto laws and bills of attainder are examples of",
+      "options": [
+        "powers reserved to the states",
+        "implied powers of Congress",
+        "limits on government power",
+        "the president's emergency powers"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Article I forbids Congress (and the states) to punish acts after the fact or to declare a person guilty by statute, so these protect individuals by limiting government."
+    },
+    {
+      "id": "APGOV-D-012",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovFoundations",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Article V makes amending the Constitution difficult mainly to",
+      "options": [
+        "keep the states out of the process",
+        "give the president a veto on amendments",
+        "let the courts approve each change first",
+        "protect it from short-lived majorities"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Supermajorities in Congress and the states mean only broad, lasting agreement can change the Constitution. The president and courts have no formal role, and the states have a large one."
+    },
+    {
+      "id": "APGOV-D-013",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovFoundations",
+      "skill": "Concept application",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "The Declaration of Independence's ideas of natural rights and consent draw most directly on the work of",
+      "options": [
+        "John Locke",
+        "Thomas Hobbes",
+        "Adam Smith",
+        "Karl Marx"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Locke argued that people have natural rights to life, liberty and property and that government rests on their consent. Hobbes favored an all-powerful sovereign."
+    },
+    {
+      "id": "APGOV-D-014",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovCongress",
+      "skill": "Source analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APGOV-D-S02",
+      "stem": "In the excerpt, \"unity\" refers to",
+      "options": [
+        "one person holding the executive power",
+        "agreement between president and Congress",
+        "one party controlling every branch",
+        "a council sharing executive decisions"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Hamilton argues for a single executive rather than a plural one, since one person acts with more decision, secrecy and dispatch than a group."
+    },
+    {
+      "id": "APGOV-D-015",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovCongress",
+      "skill": "Source analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APGOV-D-S02",
+      "stem": "Which feature of the Constitution reflects the excerpt's call for \"duration\"?",
+      "options": [
+        "A four-year presidential term",
+        "Two-year terms for representatives",
+        "Six-year terms for senators",
+        "Life terms for federal judges"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Duration means a term long enough for the executive to act firmly; the Constitution gives the president four years with the chance of reelection."
+    },
+    {
+      "id": "APGOV-D-016",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovCongress",
+      "skill": "Source analysis",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APGOV-D-S02",
+      "stem": "An Anti-Federalist would most likely reply to the excerpt that a single executive",
+      "options": [
+        "would be controlled by the courts",
+        "should be chosen by state legislatures",
+        "could grow into a kind of monarch",
+        "would be too weak to act in a crisis"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Anti-Federalists feared that one powerful executive with a long term and command of the army could become a king in all but name."
+    },
+    {
+      "id": "APGOV-D-017",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovCongress",
+      "skill": "Concept application",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A representative polls her district and votes as most residents prefer, even against her own view. She is acting under the",
+      "options": [
+        "delegate model",
+        "politico model",
+        "trustee model",
+        "unitary model"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A delegate votes as constituents wish; a trustee uses personal judgment about their interests."
+    },
+    {
+      "id": "APGOV-D-018",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovCongress",
+      "skill": "Concept application",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A member adds money for a bridge in her own district to a large spending bill. This is known as",
+      "options": [
+        "pork barrel spending",
+        "gerrymandering",
+        "logrolling",
+        "a pocket veto of the bill"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Pork barrel spending directs federal money to a member's district or state. Logrolling is trading votes."
+    },
+    {
+      "id": "APGOV-D-019",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovCongress",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "House members can force a bill out of a committee that refuses to act on it by",
+      "options": [
+        "a discharge petition",
+        "a senatorial hold",
+        "a cloture motion",
+        "a conference committee report"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A discharge petition signed by a majority of House members (218) brings a bill to the floor. Cloture ends debate in the Senate."
+    },
+    {
+      "id": "APGOV-D-020",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovCongress",
+      "skill": "Concept application",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "When the House and Senate pass different versions of a bill, the differences can be settled by",
+      "options": [
+        "a conference committee",
+        "the Speaker alone",
+        "the Supreme Court",
+        "the House Rules Committee"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A conference committee of members from both chambers writes a compromise version, which each chamber must then pass."
+    },
+    {
+      "id": "APGOV-D-021",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovCongress",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which is an example of mandatory spending in the federal budget?",
+      "options": [
+        "Highway funding",
+        "Social Security benefits",
+        "Defense spending",
+        "Grants for scientific research"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Mandatory spending, such as Social Security and Medicare, is set by existing law and paid automatically. Discretionary spending, such as defense, is set each year in appropriations."
+    },
+    {
+      "id": "APGOV-D-022",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovCongress",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The custom that lets senators from a nominee's home state block a federal district judge is",
+      "options": [
+        "a filibuster",
+        "senatorial courtesy",
+        "judicial restraint",
+        "executive privilege"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Through senatorial courtesy, home-state senators can stop a district court or similar nomination, usually by withholding approval on the Judiciary Committee's blue slip."
+    },
+    {
+      "id": "APGOV-D-023",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovCongress",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A president refuses to hand Congress records of private advice from aides, claiming",
+      "options": [
+        "executive privilege",
+        "the pocket veto",
+        "senatorial courtesy",
+        "sovereign immunity"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Executive privilege is the claimed right to keep some executive communications confidential; the Court in United States v. Nixon held it is not absolute."
+    },
+    {
+      "id": "APGOV-D-024",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovCongress",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Second-term presidents often have less influence over Congress late in their terms mainly because",
+      "options": [
+        "they lose the veto power",
+        "their cabinet must resign by law",
+        "Congress must approve their staff",
+        "they cannot seek another term"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The Twenty-second Amendment bars a third elected term, so a second-term president becomes a lame duck as members look to the next election."
+    },
+    {
+      "id": "APGOV-D-025",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovCongress",
+      "skill": "Concept application",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Under the Constitution, bills for raising revenue must start in",
+      "options": [
+        "the House of Representatives",
+        "the Treasury Department",
+        "the Senate",
+        "a joint committee of both houses"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Article I, Section 7 requires revenue bills to originate in the House, the chamber closest to the people; the Senate may amend them."
+    },
+    {
+      "id": "APGOV-D-026",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovCongress",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which situation is an example of divided government?",
+      "options": [
+        "One party holds both chambers and the presidency",
+        "One party holds the House, another the presidency",
+        "A state's two senators come from different parties",
+        "Two parties share seats on the same committee"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Divided government means different parties control the presidency and at least one chamber of Congress."
+    },
+    {
+      "id": "APGOV-D-027",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovCourts",
+      "skill": "Source analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APGOV-D-S03",
+      "stem": "The author calls the judiciary \"least dangerous\" because it",
+      "options": [
+        "shares its law-making power with the Senate",
+        "controls neither the money nor the army",
+        "can be overruled by the states",
+        "is chosen directly by the people"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Hamilton says Congress holds the purse and the president the sword, while the courts have only judgment and must rely on the other branches to enforce rulings."
+    },
+    {
+      "id": "APGOV-D-028",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovCourts",
+      "skill": "Source analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APGOV-D-S03",
+      "stem": "Which feature of the Constitution does Federalist No. 78 defend to protect the independence of judges?",
+      "options": [
+        "Election to fixed terms",
+        "Selection by state legislatures",
+        "Removal by a vote of the House",
+        "Service during good behavior"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Hamilton defends tenure during good behavior, in effect life terms, so judges can rule against popular majorities without fear for their jobs."
+    },
+    {
+      "id": "APGOV-D-029",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovCourts",
+      "skill": "SCOTUS application",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APGOV-D-S03",
+      "stem": "The excerpt's claim that interpreting the laws belongs to the courts was put into practice in",
+      "options": [
+        "Citizens United v. FEC",
+        "Wisconsin v. Yoder",
+        "McDonald v. Chicago",
+        "Marbury v. Madison"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Marbury established judicial review, the courts' power to decide that a law conflicts with the Constitution, as Hamilton had argued."
+    },
+    {
+      "id": "APGOV-D-030",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovCourts",
+      "skill": "Concept application",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A lower federal court is bound to follow",
+      "options": [
+        "advisory rulings from Congress",
+        "opinions of state governors",
+        "precedents set by the Supreme Court",
+        "the dissenting opinion in a split decision"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Under stare decisis and the court hierarchy, lower courts must apply the Supreme Court's precedents. Dissents carry no binding force."
+    },
+    {
+      "id": "APGOV-D-031",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovCourts",
+      "skill": "Concept application",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A justice who disagrees with the majority and explains why writes",
+      "options": [
+        "an amicus brief",
+        "a dissenting opinion",
+        "a concurring opinion",
+        "a per curiam opinion"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A dissent explains why a justice disagrees with the ruling. A concurrence agrees with the result for different reasons."
+    },
+    {
+      "id": "APGOV-D-032",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovCourts",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A justice who agrees with the result but for different reasons writes",
+      "options": [
+        "a writ of certiorari",
+        "a dissenting opinion",
+        "a concurring opinion",
+        "a majority opinion"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A concurring opinion supports the outcome while giving separate reasoning."
+    },
+    {
+      "id": "APGOV-D-033",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovCourts",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "An interest group that is not a party to a case files written arguments to influence the Court. This filing is",
+      "options": [
+        "a writ of certiorari",
+        "an amicus curiae brief",
+        "a writ of habeas corpus",
+        "a class action suit"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "An amicus curiae (friend of the court) brief lets outside groups present arguments in a case they are not party to."
+    },
+    {
+      "id": "APGOV-D-034",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovCourts",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which is an independent regulatory agency?",
+      "options": [
+        "The Department of Defense",
+        "The Department of State",
+        "The Office of Management and Budget",
+        "The Federal Election Commission"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Independent regulatory agencies such as the FEC are run by commissioners with fixed terms and stand outside the cabinet departments. OMB is part of the Executive Office of the President."
+    },
+    {
+      "id": "APGOV-D-035",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovCourts",
+      "skill": "Concept application",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Most federal civil servants keep their jobs when a new president takes office because",
+      "options": [
+        "they are hired under merit rules",
+        "Congress appoints them for life",
+        "the Senate confirms each of them",
+        "they are elected by the voters"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Most federal workers are hired and protected under civil service merit rules. Only a few thousand top posts are political appointments."
+    },
+    {
+      "id": "APGOV-D-036",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovCourts",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A president can most directly shape an agency's direction by",
+      "options": [
+        "firing its civil service staff",
+        "setting its budget without Congress",
+        "appointing its top leaders",
+        "rewriting its authorizing law alone"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Presidents name agency heads and other political appointees, who set priorities. Laws and budgets need Congress, and civil servants are protected by merit rules."
+    },
+    {
+      "id": "APGOV-D-037",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovCourts",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Congress's power of the purse helps it hold agencies accountable by",
+      "options": [
+        "reviewing rules in federal court",
+        "appointing each agency's leaders",
+        "issuing executive orders to them",
+        "deciding how much money they get"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Through appropriations Congress can raise, cut or attach conditions to agency funding. Appointments are made by the president."
+    },
+    {
+      "id": "APGOV-D-038",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovCourts",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A business sues, saying an agency's new rule goes beyond what its authorizing law allows. If the court agrees, it will",
+      "options": [
+        "remove the agency's head",
+        "set the rule aside",
+        "order Congress to pass a new law",
+        "rewrite the agency's law"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Courts can strike down agency rules that exceed the authority Congress delegated, a check on the bureaucracy. Courts cannot rewrite statutes or fire officials."
+    },
+    {
+      "id": "APGOV-D-039",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovCourts",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The number of justices on the Supreme Court is set by",
+      "options": [
+        "an act of Congress",
+        "the chief justice",
+        "an order of the president",
+        "Article III of the Constitution"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The Constitution creates the Supreme Court but leaves its size to Congress, which has changed it several times by statute."
+    },
+    {
+      "id": "APGOV-D-040",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovRights",
+      "skill": "Source analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APGOV-D-S04",
+      "stem": "The proclamation is an example of a president acting through",
+      "options": [
+        "executive power alone",
+        "an act of Congress",
+        "a treaty",
+        "a constitutional amendment"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Lincoln issued the proclamation on his own authority as president, without a vote of Congress or an amendment."
+    },
+    {
+      "id": "APGOV-D-041",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovRights",
+      "skill": "Source analysis",
+      "difficulty": 3,
+      "format": "single",
+      "stimulusId": "APGOV-D-S04",
+      "stem": "Why did supporters of emancipation still push for a constitutional amendment after the proclamation?",
+      "options": [
+        "The proclamation had applied only to free states",
+        "The Supreme Court had struck it down",
+        "Congress had vetoed the proclamation",
+        "A wartime order could be challenged or undone"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "An order resting on wartime power could be questioned in court or reversed later; an amendment would end slavery permanently and everywhere."
+    },
+    {
+      "id": "APGOV-D-042",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovRights",
+      "skill": "Source analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APGOV-D-S04",
+      "stem": "The course pairs the proclamation with later civil rights decisions as examples of",
+      "options": [
+        "the courts limiting the war powers",
+        "states gaining power over the national government",
+        "government acting to protect minority rights",
+        "Congress delegating power to agencies"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The framework lists the proclamation, followed by the Thirteenth Amendment, among the times government protected rather than restricted minority rights."
+    },
+    {
+      "id": "APGOV-D-043",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovRights",
+      "skill": "Concept application",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A government order that blocks a story before it is published is called",
+      "options": [
+        "slander",
+        "seditious libel",
+        "libel",
+        "prior restraint"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Prior restraint is censorship in advance of publication, which the Court presumes unconstitutional. Libel is a false written statement that harms a reputation."
+    },
+    {
+      "id": "APGOV-D-044",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovRights",
+      "skill": "Concept application",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Burning a flag as a political protest is protected as",
+      "options": [
+        "fighting words",
+        "obscenity",
+        "commercial speech",
+        "symbolic speech"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The Court treats expressive conduct such as flag burning or wearing armbands as symbolic speech under the First Amendment."
+    },
+    {
+      "id": "APGOV-D-045",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovRights",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A state pays the salaries of teachers at the schools of only one religion. This most likely violates",
+      "options": [
+        "the Second Amendment",
+        "the commerce clause",
+        "the free exercise clause",
+        "the establishment clause"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Government funding that favors or supports one religion runs against the establishment clause's bar on government establishment of religion."
+    },
+    {
+      "id": "APGOV-D-046",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovRights",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A defendant held for years while prosecutors delay her trial without reason could claim a violation of the",
+      "options": [
+        "Third Amendment",
+        "Seventh Amendment",
+        "Sixth Amendment",
+        "Tenth Amendment"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The Sixth Amendment guarantees a speedy and public trial in criminal cases. The Seventh concerns juries in civil suits."
+    },
+    {
+      "id": "APGOV-D-047",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovRights",
+      "skill": "Concept application",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "After a jury acquits a defendant, the state cannot try her again for the same crime because of",
+      "options": [
+        "the right to counsel",
+        "the right to a speedy trial",
+        "the ban on double jeopardy",
+        "the ban on cruel punishment"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The Fifth Amendment says no one may be twice put in jeopardy for the same offense."
+    },
+    {
+      "id": "APGOV-D-048",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovRights",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which is best described as a civil right rather than a civil liberty?",
+      "options": [
+        "Freedom to worship as one chooses",
+        "Equal treatment regardless of race",
+        "Freedom to criticize public officials",
+        "Freedom from unreasonable searches"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Civil rights are protections against discrimination, such as equal treatment. Civil liberties are freedoms protected from government interference."
+    },
+    {
+      "id": "APGOV-D-049",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovRights",
+      "skill": "SCOTUS application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Brown v. Board of Education (1954) and Shaw v. Reno (1993) were both decided under",
+      "options": [
+        "the equal protection clause",
+        "the Tenth Amendment's reserved powers",
+        "the establishment clause",
+        "the commerce clause"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Brown held that race-based school segregation violates equal protection, and Shaw that a district drawn only by race can be challenged under the same clause of the Fourteenth Amendment."
+    },
+    {
+      "id": "APGOV-D-050",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovRights",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The Voting Rights Act of 1965 attacked racial discrimination in voting mainly by",
+      "options": [
+        "lowering the voting age to 18",
+        "ending poll taxes in all federal elections",
+        "offering registration at motor vehicle offices",
+        "suspending literacy tests and adding federal oversight"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The act suspended literacy tests and put federal examiners and federal review of election-law changes in places with a history of discrimination. The Twenty-fourth Amendment ended poll taxes in federal elections, the Twenty-sixth lowered the voting age, and the 1993 motor voter law added registration at motor vehicle offices."
+    },
+    {
+      "id": "APGOV-D-051",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovRights",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The Court has applied most of the Bill of Rights to the states through the due process clause of the",
+      "options": [
+        "Tenth Amendment",
+        "Fourteenth Amendment",
+        "First Amendment",
+        "Fifth Amendment"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The Fourteenth Amendment says no state may deprive a person of liberty without due process of law. The Fifth Amendment's due process clause limits the federal government."
+    },
+    {
+      "id": "APGOV-D-052",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovRights",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "After an attack, Congress widens government collection of phone records. Critics would most likely argue that this threatens",
+      "options": [
+        "the Second Amendment right to bear arms",
+        "Fourth Amendment privacy protections",
+        "the Sixth Amendment right to counsel",
+        "the powers reserved to the states"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Surveillance raises the question of balancing national security against the Fourth Amendment's protection from unreasonable searches and seizures."
+    },
+    {
+      "id": "APGOV-D-053",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovIdeology",
+      "skill": "Source analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APGOV-D-S05",
+      "stem": "Smith's main point in the excerpt is that",
+      "options": [
+        "merchants should act out of charity",
+        "self-interest in markets meets people's needs",
+        "trade should stay inside each town and its own market",
+        "government must set the price of food"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Smith argues that we get our dinner because sellers profit from selling it, so self-interest, not kindness, supplies people's wants through exchange."
+    },
+    {
+      "id": "APGOV-D-054",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovIdeology",
+      "skill": "Source analysis",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APGOV-D-S05",
+      "stem": "Which core value in the course is most closely tied to Smith's ideas?",
+      "options": [
+        "Free enterprise",
+        "Popular sovereignty",
+        "Equality of outcome",
+        "Rule of law"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The course describes free enterprise as the pursuit of self-interest, competition and limited regulation of the market, as espoused by Adam Smith."
+    },
+    {
+      "id": "APGOV-D-055",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovIdeology",
+      "skill": "Source analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APGOV-D-S05",
+      "stem": "A policymaker who draws on Smith's ideas would most likely favor",
+      "options": [
+        "government ownership of industry",
+        "fixed prices for basic goods",
+        "limited regulation of markets",
+        "high tariffs on imported goods"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Smith argued that competition guided by self-interest allocates resources well and opposed most trade barriers, so his followers favor light regulation."
+    },
+    {
+      "id": "APGOV-D-056",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovIdeology",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which policy best reflects the value of equality of opportunity?",
+      "options": [
+        "Free public schools open to all",
+        "Jobs assigned by lottery",
+        "Equal incomes for every family in the country",
+        "Higher taxes on savings"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Equality of opportunity means everyone gets an equal chance to compete, as free public education aims to give; equal incomes would be equality of outcome."
+    },
+    {
+      "id": "APGOV-D-057",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovIdeology",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A liberal is more likely than a conservative to support",
+      "options": [
+        "less spending on the environment",
+        "lower tax rates on the very highest incomes",
+        "cuts to social welfare programs",
+        "more government regulation of business"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Liberals generally favor a larger government role in regulating the economy and providing services. The other three are conservative positions."
+    },
+    {
+      "id": "APGOV-D-058",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovIdeology",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A major event shapes the political views of an entire age group for the rest of their lives. This is",
+      "options": [
+        "a life-cycle effect of aging",
+        "a sampling error",
+        "a rally effect",
+        "a generational effect"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A generational effect comes from shared formative experiences, such as a war or depression, during youth. A life-cycle effect is change as people age."
+    },
+    {
+      "id": "APGOV-D-059",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovIdeology",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A sharp but short rise in public approval of the president after a foreign attack is",
+      "options": [
+        "a rally-round-the-flag effect",
+        "a coattail effect",
+        "an electoral mandate from voters",
+        "a party realignment"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "In a crisis, Americans often unite behind the president for a time, so approval jumps and then fades."
+    },
+    {
+      "id": "APGOV-D-060",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovIdeology",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Increasing a poll's random sample from 400 to 1,600 people would most likely",
+      "options": [
+        "raise its margin of error",
+        "shrink its margin of error",
+        "make its wording neutral",
+        "remove every source of sampling bias"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Sampling error falls as a random sample grows: quadrupling the sample roughly halves the margin of error. A larger sample does not fix bias or wording."
+    },
+    {
+      "id": "APGOV-D-061",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovIdeology",
+      "skill": "Concept application",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "An online poll that anyone can join is less reliable mainly because",
+      "options": [
+        "respondents select themselves",
+        "it is always too small",
+        "its sample is too random",
+        "its questions are too short to answer well"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Self-selected samples draw people with strong feelings or interest, so they do not represent the population."
+    },
+    {
+      "id": "APGOV-D-062",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovIdeology",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Members of the Federal Reserve Board serve long, staggered terms so that",
+      "options": [
+        "it is shielded from short-term politics",
+        "the president controls interest rates",
+        "Congress can set interest rates every day",
+        "voters can remove members quickly"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Long terms give the Fed independence, so monetary policy is set without pressure from each election cycle."
+    },
+    {
+      "id": "APGOV-D-063",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovIdeology",
+      "skill": "Concept application",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Cutting tax rates to encourage investment and work, expecting growth to follow, is",
+      "options": [
+        "supply-side economics",
+        "Keynesian economics",
+        "monetary policy",
+        "a progressive income tax"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Supply-side economics holds that lower taxes and less regulation raise production and growth."
+    },
+    {
+      "id": "APGOV-D-064",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovIdeology",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "People who get news mostly from feeds that match their own views may grow more polarized because of",
+      "options": [
+        "exit polling",
+        "random sampling",
+        "echo chambers",
+        "the equal-time rule"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Echo chambers repeat and reinforce what people already believe, so opposing views rarely reach them."
+    },
+    {
+      "id": "APGOV-D-065",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovIdeology",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A conservative is more likely than a liberal to support",
+      "options": [
+        "national health insurance",
+        "fewer limits on gun ownership",
+        "higher taxes on the very top incomes",
+        "stricter environmental rules"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Conservatives generally oppose new limits on gun ownership and favor lower taxes and less regulation; the other three are liberal positions."
+    },
+    {
+      "id": "APGOV-D-066",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovVoting",
+      "skill": "Data analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APGOV-D-S06",
+      "stem": "Turnout among people with a bachelor's degree or more is how many percentage points higher than among people without a high school diploma?",
+      "options": [
+        "15",
+        "17",
+        "25",
+        "42"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "77 - 35 = 42 points. 25 compares the degree group with diploma holders (77 - 52), and 17 compares diploma holders with those without one."
+    },
+    {
+      "id": "APGOV-D-067",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovVoting",
+      "skill": "Data analysis",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APGOV-D-S06",
+      "stem": "Which statement is best supported by the table?",
+      "options": [
+        "Education has no link to turnout",
+        "Most people without a diploma vote",
+        "Graduates vote less than others",
+        "Turnout rises with education"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Turnout climbs at every step, from 35% without a diploma to 77% with a degree."
+    },
+    {
+      "id": "APGOV-D-068",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovVoting",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APGOV-D-S06",
+      "stem": "Which explanation of the pattern fits political science research best?",
+      "options": [
+        "Ballots are printed only for graduates",
+        "Only graduates may register to vote",
+        "Graduates live in states with more elections",
+        "Education raises political efficacy"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Education builds knowledge, skills and a sense that one's vote matters (efficacy), all linked to higher turnout. No law limits voting by education."
+    },
+    {
+      "id": "APGOV-D-069",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovVoting",
+      "skill": "Concept application",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A citizen who believes her vote can change government policy has high",
+      "options": [
+        "partisan polarization",
+        "political efficacy",
+        "political socialization",
+        "party identification"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Political efficacy is the belief that one can understand and influence politics; people with high efficacy vote more."
+    },
+    {
+      "id": "APGOV-D-070",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovVoting",
+      "skill": "Concept application",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Which is a main function of political parties?",
+      "options": [
+        "Confirming federal judges",
+        "Counting the electoral votes each January",
+        "Writing federal regulations",
+        "Recruiting and nominating candidates"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Parties recruit candidates, nominate them, mobilize voters and organize government. Agencies write regulations and the Senate confirms judges."
+    },
+    {
+      "id": "APGOV-D-071",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovVoting",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A lasting shift in which groups support each party, often marked by one election, is",
+      "options": [
+        "ticket splitting",
+        "a dealignment",
+        "a realignment",
+        "a rally effect"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "In a critical election and realignment, new coalitions form and last for years. Dealignment is a weakening of party ties without a new alignment."
+    },
+    {
+      "id": "APGOV-D-072",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovVoting",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Third parties most often affect American politics by",
+      "options": [
+        "electing presidents in close races",
+        "winning control of several state legislatures",
+        "pushing major parties to adopt their ideas",
+        "naming most federal judges"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "When a third party's issue draws votes, a major party often takes up the issue to win those voters back."
+    },
+    {
+      "id": "APGOV-D-073",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovVoting",
+      "skill": "Concept application",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A voter chooses a Republican for president and a Democrat for the House. This is",
+      "options": [
+        "ticket splitting",
+        "logrolling",
+        "front-loading",
+        "straight-ticket voting"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Ticket splitting is voting for candidates of different parties for different offices on the same ballot."
+    },
+    {
+      "id": "APGOV-D-074",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovVoting",
+      "skill": "Concept application",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A closed primary is one in which",
+      "options": [
+        "only registered party members may vote",
+        "any registered voter may take part",
+        "party leaders choose the nominee",
+        "the top two finishers always advance"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Closed primaries limit voting to the party's registered members. Open primaries let voters choose a party's ballot on the day."
+    },
+    {
+      "id": "APGOV-D-075",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovVoting",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which is a structural barrier to voting?",
+      "options": [
+        "Low interest in the candidates",
+        "Weak attachment to a party",
+        "Distrust of elected officials",
+        "An early registration deadline"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Structural barriers are rules and procedures, such as registration deadlines, that make voting harder. The others are attitudes."
+    },
+    {
+      "id": "APGOV-D-076",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovVoting",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Turnout in the United States is lower than in some democracies partly because some of those countries",
+      "options": [
+        "ban absentee voting",
+        "require citizens to vote",
+        "elect far more officials each year",
+        "use electoral colleges"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Compulsory voting, as in Australia, pushes turnout far higher. Electing more officials more often tends to lower turnout through voter fatigue."
+    },
+    {
+      "id": "APGOV-D-077",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovVoting",
+      "skill": "Concept application",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A party's formal statement of its positions, adopted at its national convention, is its",
+      "options": [
+        "platform",
+        "mandate",
+        "caucus",
+        "plurality"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The platform sets out the party's positions on issues; individual planks address specific policies."
+    },
+    {
+      "id": "APGOV-D-078",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovVoting",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Under proportional representation, a party winning 20 percent of the vote would usually get",
+      "options": [
+        "about a fifth of the seats",
+        "a single seat for the whole party",
+        "half the seats in the legislature",
+        "no seats unless it came first"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Proportional systems give parties seats in rough proportion to their vote share, which helps smaller parties win seats."
+    },
+    {
+      "id": "APGOV-D-079",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovCampaigns",
+      "skill": "Source analysis",
+      "difficulty": 1,
+      "format": "single",
+      "stimulusId": "APGOV-D-S07",
+      "stem": "The memo best illustrates",
+      "options": [
+        "a ban on television advertising",
+        "the use of data to target voters",
+        "the power of party machines",
+        "the decline of campaign spending"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The campaign matches voter files with consumer data to send different messages to different households, a hallmark of modern campaigns."
+    },
+    {
+      "id": "APGOV-D-080",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovCampaigns",
+      "skill": "Source analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APGOV-D-S07",
+      "stem": "Which change in modern campaigns does the memo reflect?",
+      "options": [
+        "Candidate-centered campaigns with their own staff",
+        "Campaigns paid for only with public funds",
+        "Party machines running the campaigns of candidates",
+        "Candidates relying on newspapers to reach voters"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The campaign has its own data team and donors and says it will not depend on the state party, showing how campaigns center on candidates and professional consultants."
+    },
+    {
+      "id": "APGOV-D-081",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovCampaigns",
+      "skill": "Source analysis",
+      "difficulty": 2,
+      "format": "single",
+      "stimulusId": "APGOV-D-S07",
+      "stem": "The memo's reliance on small online donations reflects which development?",
+      "options": [
+        "A ban on all contributions from individuals",
+        "Raising money from many supporters online",
+        "Federal limits on large donations ending",
+        "Parties paying for most House races"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The internet lets campaigns collect many small gifts cheaply, so a candidate can fund a race from a broad base of supporters."
+    },
+    {
+      "id": "APGOV-D-082",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovCampaigns",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "A super PAC may",
+      "options": [
+        "coordinate ads with a candidate's staff",
+        "spend without limit but not coordinate",
+        "spend only public matching funds",
+        "give unlimited sums directly to candidates"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Super PACs may raise and spend unlimited sums on independent expenditures but may not give directly to or coordinate with candidates."
+    },
+    {
+      "id": "APGOV-D-083",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovCampaigns",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "The Bipartisan Campaign Reform Act of 2002 mainly targeted",
+      "options": [
+        "limits on lobbying by former members",
+        "soft money given to the parties",
+        "hard money given to candidates",
+        "the public funding of primaries"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The act, also called McCain-Feingold, banned national parties from raising unlimited soft money and regulated issue ads near elections."
+    },
+    {
+      "id": "APGOV-D-084",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovCampaigns",
+      "skill": "Concept application",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Parties, interest groups, elections and the media are called linkage institutions because they",
+      "options": [
+        "link the branches of government",
+        "connect the states to each other",
+        "connect citizens to their government",
+        "join the House and Senate in conference"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Linkage institutions are channels through which people's concerns become political issues on the government's agenda."
+    },
+    {
+      "id": "APGOV-D-085",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovCampaigns",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "When heavy news coverage leads the public to see an issue as important, the media is",
+      "options": [
+        "buying attack ads",
+        "setting the agenda",
+        "acting as a watchdog",
+        "running push polls"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Agenda setting is the media's influence on which issues the public and officials think matter most."
+    },
+    {
+      "id": "APGOV-D-086",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovCampaigns",
+      "skill": "Concept application",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Reporters uncover misuse of funds by a city agency. The media is acting as",
+      "options": [
+        "a pollster",
+        "a scorekeeper",
+        "a watchdog",
+        "a lobbyist"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "As a watchdog, the press investigates officials and exposes wrongdoing. As a scorekeeper it tracks who is winning politically."
+    },
+    {
+      "id": "APGOV-D-087",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovCampaigns",
+      "skill": "Concept application",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "Each state's number of electoral votes equals",
+      "options": [
+        "the number of its counties",
+        "its population divided by one million",
+        "its House seats alone",
+        "its House seats plus its two senators"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Article II gives each state as many electors as it has senators and representatives in Congress."
+    },
+    {
+      "id": "APGOV-D-088",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovCampaigns",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "Which advantage most helps House incumbents win reelection?",
+      "options": [
+        "Public funding of their campaigns",
+        "Constituent service and casework",
+        "Free television time by law",
+        "Term limits on their challengers"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Helping constituents with problems involving federal agencies builds goodwill and name recognition that challengers lack."
+    },
+    {
+      "id": "APGOV-D-089",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovCampaigns",
+      "skill": "Concept application",
+      "difficulty": 1,
+      "format": "single",
+      "stem": "A group that works on only one issue, such as expanding or limiting gun rights, is",
+      "options": [
+        "a political party",
+        "a labor union",
+        "a single-issue group",
+        "a business trade association"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Single-issue groups focus narrowly on one policy and often judge candidates by that issue alone."
+    },
+    {
+      "id": "APGOV-D-090",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovCampaigns",
+      "skill": "Concept application",
+      "difficulty": 2,
+      "format": "single",
+      "stem": "An interest group urges its members to call their senators before a key vote. This is",
+      "options": [
+        "an amicus brief",
+        "direct lobbying by staff",
+        "a filibuster",
+        "grassroots lobbying"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Grassroots lobbying mobilizes ordinary members to contact officials. Direct lobbying is the group's own lobbyists meeting officials."
+    },
+    {
+      "id": "APGOV-D-091",
+      "section": "mcq",
+      "test": 0,
+      "module": 1,
+      "domain": "apgovCampaigns",
+      "skill": "SCOTUS application",
+      "difficulty": 3,
+      "format": "single",
+      "stem": "The Court has allowed limits on how much a person may give directly to a candidate, while Citizens United struck limits on independent spending. The difference rests on",
+      "options": [
+        "the size of the candidate's district",
+        "the Court's view that money is not speech",
+        "a ban on speech by individuals",
+        "the risk of corruption from direct gifts"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The Court treats direct contributions as carrying a risk of corruption or its appearance, which justifies limits; it found that independent spending does not, and treats both as forms of speech."
+    }
+  ]
+}

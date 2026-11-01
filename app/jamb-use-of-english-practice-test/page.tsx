@@ -10,7 +10,7 @@ import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
-const title = "Free JAMB Use of English Practice Test 2026 - UTME CBT";
+const title = "Free JAMB Use of English Practice Test 2027 - UTME CBT";
 const metaDescription =
   "Free JAMB UTME Use of English practice: 200 original questions on comprehension, cloze, lexis and structure and oral forms, with 60-question timed tests. Every answer explained.";
 const description =
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   title,
   description: metaDescription,
   keywords:
-    "JAMB Use of English practice test, JAMB English past questions alternative, UTME English practice, JAMB CBT practice English, JAMB English 2026, JAMB oral English questions, JAMB lexis and structure, JAMB comprehension practice, JAMB cloze test",
+    "JAMB Use of English practice test, JAMB English past questions alternative, UTME English practice, JAMB CBT practice English, JAMB English 2027, JAMB oral English questions, JAMB lexis and structure, JAMB comprehension practice, JAMB cloze test",
   alternates: {
     canonical: `${siteUrl}/jamb-use-of-english-practice-test`,
   },

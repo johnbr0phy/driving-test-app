@@ -1,0 +1,4920 @@
+[
+  {
+    "id": "BIHARPOLICE-T1-001",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpHindi",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "पर्यायवाची",
+    "stem": "\"चंद्रमा\" का पर्यायवाची शब्द कौन-सा है?",
+    "options": [
+      "रवि",
+      "दिवाकर",
+      "शशि",
+      "भानु"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "शशि (also राकेश, इंदु, सोम) means the moon. भानु, रवि and दिवाकर are all names of the sun."
+  },
+  {
+    "id": "BIHARPOLICE-T1-002",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpHindi",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "पर्यायवाची",
+    "stem": "\"पृथ्वी\" का पर्यायवाची शब्द कौन-सा है?",
+    "options": [
+      "नभ",
+      "व्योम",
+      "वसुधा",
+      "अंबर"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "वसुधा (also धरती, भूमि, वसुंधरा) means the earth. अंबर, व्योम and नभ all mean the sky."
+  },
+  {
+    "id": "BIHARPOLICE-T1-003",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpHindi",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "विलोम",
+    "stem": "\"उदय\" का विलोम शब्द क्या है?",
+    "options": [
+      "प्रकाश",
+      "अस्त",
+      "उदित",
+      "उत्थान"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "उदय (rising) is the opposite of अस्त (setting), as in सूर्योदय and सूर्यास्त. उत्थान and उदित are close in meaning to उदय."
+  },
+  {
+    "id": "BIHARPOLICE-T1-004",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpHindi",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "विलोम",
+    "stem": "\"सजीव\" का विलोम शब्द क्या है?",
+    "options": [
+      "सजग",
+      "सक्रिय",
+      "निर्जीव",
+      "सचेत"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "सजीव (living) is opposite to निर्जीव (lifeless). सजग, सक्रिय and सचेत mean alert or active, not the opposite."
+  },
+  {
+    "id": "BIHARPOLICE-T1-005",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpHindi",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "एक शब्द",
+    "stem": "\"जो दूसरों का उपकार करता हो\" के लिए एक शब्द क्या है?",
+    "options": [
+      "परोपकारी",
+      "स्वार्थी",
+      "कृतज्ञ",
+      "उपकृत"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "परोपकारी is one who does good to others. उपकृत is the person who received the favour, and कृतज्ञ is one who is grateful for it."
+  },
+  {
+    "id": "BIHARPOLICE-T1-006",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpHindi",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "एक शब्द",
+    "stem": "\"जो दिखाई न दे\" के लिए एक शब्द क्या है?",
+    "options": [
+      "दृष्टिहीन",
+      "दूरदर्शी",
+      "पारदर्शी",
+      "अदृश्य"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "अदृश्य means invisible. दृष्टिहीन is a person who cannot see, and पारदर्शी is something you can see through."
+  },
+  {
+    "id": "BIHARPOLICE-T1-007",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpHindi",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "तत्सम-तद्भव",
+    "stem": "\"हस्त\" का तद्भव रूप क्या है?",
+    "options": [
+      "पाणि",
+      "हाथ",
+      "भुजा",
+      "कर"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "हस्त is the tatsam (Sanskrit) word and हाथ its tadbhav form. कर and पाणि are tatsam synonyms of हस्त, and भुजा means the arm."
+  },
+  {
+    "id": "BIHARPOLICE-T1-008",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpHindi",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "मुहावरे",
+    "stem": "\"आस्तीन का साँप\" मुहावरे का अर्थ है:",
+    "options": [
+      "छिपा हुआ धन",
+      "डरपोक व्यक्ति",
+      "जहरीला जीव",
+      "धोखेबाज मित्र"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "आस्तीन का साँप is a friend who turns out to be a traitor, like a snake hidden in one's own sleeve."
+  },
+  {
+    "id": "BIHARPOLICE-T1-009",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpHindi",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "मुहावरे",
+    "stem": "\"घी के दीये जलाना\" मुहावरे का अर्थ है:",
+    "options": [
+      "पूजा करना",
+      "खुशियाँ मनाना",
+      "धन उड़ाना",
+      "अँधेरा मिटाना"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "घी के दीये जलाना means to celebrate with great joy, as when long-awaited good news arrives."
+  },
+  {
+    "id": "BIHARPOLICE-T1-010",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpHindi",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "लोकोक्ति",
+    "stem": "\"नाच न जाने आँगन टेढ़ा\" लोकोक्ति का अर्थ है:",
+    "options": [
+      "नाचना सीखना कठिन है",
+      "आँगन की मरम्मत करना",
+      "अपनी कमी दूसरों पर डालना",
+      "मेहनत से सब मिलता है"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Someone who cannot dance blames the uneven courtyard: a person hides his own lack of skill by finding fault elsewhere."
+  },
+  {
+    "id": "BIHARPOLICE-T1-011",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpHindi",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "संधि",
+    "stem": "\"गणेश\" का सही संधि-विच्छेद क्या है?",
+    "options": [
+      "गणि + ईश",
+      "गणे + श",
+      "गण + ईश",
+      "गण + एश"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "गण + ईश: अ + ई = ए, which is गुण संधि (like परमेश्वर = परम + ईश्वर). गण + एश would give गणैश (वृद्धि) and गणि + ईश would give गणीश."
+  },
+  {
+    "id": "BIHARPOLICE-T1-012",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpHindi",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "समास",
+    "stem": "\"नीलकमल\" में कौन-सा समास है?",
+    "options": [
+      "द्विगु",
+      "बहुव्रीहि",
+      "द्वंद्व",
+      "कर्मधारय"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "नीलकमल = नीला है जो कमल. The first word describes the second (विशेषण-विशेष्य), so it is कर्मधारय समास."
+  },
+  {
+    "id": "BIHARPOLICE-T1-013",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpHindi",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "लिंग",
+    "stem": "निम्नलिखित में से कौन-सा शब्द पुल्लिंग है?",
+    "options": [
+      "सड़क",
+      "नदी",
+      "पुस्तक",
+      "पर्वत"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "पर्वत is masculine (ऊँचा पर्वत). नदी, पुस्तक and सड़क are feminine (बहती नदी, मोटी पुस्तक, चौड़ी सड़क)."
+  },
+  {
+    "id": "BIHARPOLICE-T1-014",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpHindi",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "वचन",
+    "stem": "\"कथा\" का बहुवचन (मूल रूप, बिना विभक्ति) क्या है?",
+    "options": [
+      "कथाएँ",
+      "कथें",
+      "कथाओं",
+      "कथाये"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Feminine nouns ending in आ take एँ in the plural: कथा to कथाएँ. कथाओं is the oblique form used before a विभक्ति (कथाओं में)."
+  },
+  {
+    "id": "BIHARPOLICE-T1-015",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpHindi",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "रचनाकार",
+    "stem": "\"पद्मावत\" के रचनाकार कौन हैं?",
+    "options": [
+      "जायसी",
+      "सूरदास",
+      "कबीर",
+      "रहीम"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "पद्मावत was written by मलिक मुहम्मद जायसी, a Sufi poet of the प्रेममार्गी branch of the भक्ति period."
+  },
+  {
+    "id": "BIHARPOLICE-T1-016",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Synonyms",
+    "stem": "Choose the word closest in meaning to AFFLUENT.",
+    "options": [
+      "Generous",
+      "Poor",
+      "Wealthy",
+      "Famous"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An affluent person or family has plenty of money: wealthy. Poor is the opposite."
+  },
+  {
+    "id": "BIHARPOLICE-T1-017",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Synonyms",
+    "stem": "Choose the word closest in meaning to SERENE.",
+    "options": [
+      "Noisy",
+      "Angry",
+      "Busy",
+      "Calm"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Serene means calm and peaceful, as in a serene lake. Noisy and angry are near opposites."
+  },
+  {
+    "id": "BIHARPOLICE-T1-018",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpEnglish",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Antonyms",
+    "stem": "Choose the word opposite in meaning to RIGID.",
+    "options": [
+      "Stiff",
+      "Firm",
+      "Flexible",
+      "Solid"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Rigid means unable to bend; flexible means bending easily. Stiff and firm are close to rigid."
+  },
+  {
+    "id": "BIHARPOLICE-T1-019",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Antonyms",
+    "stem": "Choose the word opposite in meaning to ADVANCE.",
+    "options": [
+      "Approach",
+      "Progress",
+      "Proceed",
+      "Retreat"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "To advance is to move forward; to retreat is to move back. Proceed and progress are synonyms."
+  },
+  {
+    "id": "BIHARPOLICE-T1-020",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Prepositions",
+    "stem": "Fill in the blank: The man was charged ___ theft.",
+    "options": [
+      "with",
+      "by",
+      "for",
+      "of"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "In the legal sense, a person is charged with an offence. Accused takes of (accused of theft)."
+  },
+  {
+    "id": "BIHARPOLICE-T1-021",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Articles",
+    "stem": "Fill in the blank: She is ___ university teacher.",
+    "options": [
+      "the",
+      "a",
+      "an",
+      "one"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "University begins with a \"yu\" consonant sound, so it takes a, even though it is spelt with a vowel."
+  },
+  {
+    "id": "BIHARPOLICE-T1-022",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Tenses",
+    "stem": "Fill in the blank: By next March, she ___ her degree.",
+    "options": [
+      "will have completed",
+      "completes",
+      "has completed",
+      "had completed"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An action that will be finished before a point in the future takes the future perfect: will have + past participle."
+  },
+  {
+    "id": "BIHARPOLICE-T1-023",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpEnglish",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Spelling",
+    "stem": "Choose the correctly spelt word.",
+    "options": [
+      "Ocassion",
+      "Occassion",
+      "Occasion",
+      "Ocasion"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Occasion has a double c and a single s: o-c-c-a-s-i-o-n."
+  },
+  {
+    "id": "BIHARPOLICE-T1-024",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Idioms",
+    "stem": "What does the idiom \"to call it a day\" mean?",
+    "options": [
+      "To name a holiday",
+      "To wake up early",
+      "To finish a phone call",
+      "To stop working for the day"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "To call it a day is to decide to stop working, usually because enough has been done."
+  },
+  {
+    "id": "BIHARPOLICE-T1-025",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "One-word substitution",
+    "stem": "Choose one word for: one who knows everything.",
+    "options": [
+      "Omniscient",
+      "Ambitious",
+      "Omnipotent",
+      "Omnipresent"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Omniscient means all-knowing. Omnipotent is all-powerful and omnipresent is present everywhere."
+  },
+  {
+    "id": "BIHARPOLICE-T1-026",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Voice",
+    "stem": "Choose the passive form of: The farmer ploughs the field.",
+    "options": [
+      "The field has been ploughed by the farmer.",
+      "The field is ploughed by the farmer.",
+      "The field is being ploughed by the farmer.",
+      "The field was ploughed by the farmer."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Simple present active (ploughs) becomes is/are + past participle in the passive: is ploughed."
+  },
+  {
+    "id": "BIHARPOLICE-T1-027",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Narration",
+    "stem": "Choose the indirect form of: He said to me, \"I will help you.\"",
+    "options": [
+      "He told me that he will help me.",
+      "He told me that he would help me.",
+      "He said me that he would help me.",
+      "He told me that I would help him."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Said to me becomes told me, will becomes would, and I/you become he/me. \"Said me\" is wrong: said takes to before its object."
+  },
+  {
+    "id": "BIHARPOLICE-T1-028",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Error spotting",
+    "stem": "Find the part of the sentence that has an error.\n\nThe news are very encouraging today.",
+    "options": [
+      "The news",
+      "are very",
+      "encouraging today",
+      "No error"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "News is an uncountable noun that takes a singular verb: The news is very encouraging."
+  },
+  {
+    "id": "BIHARPOLICE-T1-029",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpEnglish",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Sentence improvement",
+    "stem": "In the sentence \"My cousin is junior than me by three years\", choose the best replacement for \"junior than me\".",
+    "options": [
+      "more junior to me",
+      "junior from me",
+      "junior to me",
+      "No improvement"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Senior, junior, superior and inferior take to, not than: My cousin is junior to me by three years."
+  },
+  {
+    "id": "BIHARPOLICE-T1-030",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Conditionals",
+    "stem": "Fill in the blank: Unless you work hard, you ___ pass the exam.",
+    "options": [
+      "would not",
+      "will not",
+      "had not",
+      "did not"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Unless means if not and, like if in a real future condition, takes the simple present with will in the main clause."
+  },
+  {
+    "id": "BIHARPOLICE-T1-031",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpMaths",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Percentage",
+    "stem": "What is 35% of 840?",
+    "options": [
+      "210",
+      "252",
+      "284",
+      "294"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "35% of 840 = 840 × 35/100 = 294. (252 is 30% and 210 is 25% of 840.)"
+  },
+  {
+    "id": "BIHARPOLICE-T1-032",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpMaths",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Profit and loss",
+    "stem": "A cycle bought for ₹750 is sold for ₹840. What is the profit percent?",
+    "options": [
+      "9%",
+      "10%",
+      "10.7%",
+      "12%"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Profit = 840 - 750 = ₹90, and profit % = 90/750 × 100 = 12%. Dividing by the selling price (90/840) gives the wrong 10.7%."
+  },
+  {
+    "id": "BIHARPOLICE-T1-033",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Simple interest",
+    "stem": "What is the simple interest on ₹5,600 at 7.5% per annum for 3 years?",
+    "options": [
+      "₹420",
+      "₹840",
+      "₹1,120",
+      "₹1,260"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "SI = P × R × T / 100 = 5,600 × 7.5 × 3 / 100 = ₹1,260. ₹420 is the interest for one year only and ₹840 for two years."
+  },
+  {
+    "id": "BIHARPOLICE-T1-034",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ratio",
+    "stem": "If A : B = 3 : 5 and B : C = 4 : 7, what is A : B : C?",
+    "options": [
+      "12 : 20 : 35",
+      "3 : 20 : 35",
+      "3 : 5 : 7",
+      "12 : 15 : 35"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Make B the same in both: A : B = 12 : 20 and B : C = 20 : 35, so A : B : C = 12 : 20 : 35."
+  },
+  {
+    "id": "BIHARPOLICE-T1-035",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpMaths",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Average",
+    "stem": "What is the average of 23, 27, 31, 35, 39 and 43?",
+    "options": [
+      "31",
+      "33",
+      "34",
+      "35"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Sum = 198 and there are 6 numbers, so the average is 198 ÷ 6 = 33. For evenly spaced numbers it is halfway between the first and last."
+  },
+  {
+    "id": "BIHARPOLICE-T1-036",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Time and work",
+    "stem": "A can finish a job in 21 days and B in 28 days. Working together, in how many days will they finish it?",
+    "options": [
+      "12",
+      "14",
+      "24.5",
+      "49"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Together they do 1/21 + 1/28 = (4 + 3)/84 = 1/12 of the job a day, so they need 12 days. Averaging the days (24.5) or adding them (49) is a common slip."
+  },
+  {
+    "id": "BIHARPOLICE-T1-037",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Speed and trains",
+    "stem": "A train 180 m long runs at 54 km/h. How many seconds does it take to pass a pole?",
+    "options": [
+      "12",
+      "15",
+      "18",
+      "24"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "54 km/h = 54 × 5/18 = 15 m/s. To pass a pole the train covers its own length: 180 ÷ 15 = 12 seconds. 15 is the speed in m/s, not the time."
+  },
+  {
+    "id": "BIHARPOLICE-T1-038",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "HCF and LCM",
+    "stem": "What is the HCF of 105 and 175?",
+    "options": [
+      "15",
+      "25",
+      "35",
+      "525"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "105 = 3 × 5 × 7 and 175 = 5² × 7, so the HCF is 5 × 7 = 35. 525 is their LCM."
+  },
+  {
+    "id": "BIHARPOLICE-T1-039",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mensuration",
+    "stem": "What is the area of a circle of radius 10.5 cm? (Take π = 22/7.)",
+    "options": [
+      "66 cm²",
+      "173.25 cm²",
+      "346.5 cm²",
+      "693 cm²"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Area = πr² = 22/7 × 10.5 × 10.5 = 346.5 cm². 66 cm is the circumference, 2πr."
+  },
+  {
+    "id": "BIHARPOLICE-T1-040",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Quadratic equations",
+    "stem": "What are the roots of x² - 9x + 20 = 0?",
+    "options": [
+      "2 and 10",
+      "−4 and −5",
+      "1 and 20",
+      "4 and 5"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Find two numbers with product 20 and sum 9: 4 and 5. So (x - 4)(x - 5) = 0 and x = 4 or 5. 2 and 10 multiply to 20 but add to 12."
+  },
+  {
+    "id": "BIHARPOLICE-T1-041",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Arithmetic progression",
+    "stem": "What is the 10th term of the AP 3, 7, 11, 15, ...?",
+    "options": [
+      "39",
+      "40",
+      "43",
+      "47"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "a = 3 and d = 4, so the 10th term = a + 9d = 3 + 36 = 39. Using 10d instead of 9d gives the wrong 43, and 47 is the 12th term."
+  },
+  {
+    "id": "BIHARPOLICE-T1-042",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Trigonometry",
+    "stem": "What is the value of cos² 60° + sin² 30°?",
+    "options": [
+      "1",
+      "3/4",
+      "1/4",
+      "1/2"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "cos 60° = 1/2 and sin 30° = 1/2, so the value is 1/4 + 1/4 = 1/2. It is not sin² + cos² of the same angle, so it is not 1."
+  },
+  {
+    "id": "BIHARPOLICE-T1-043",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Statistics",
+    "stem": "What is the median of 7, 3, 9, 5, 11, 1 and 13?",
+    "options": [
+      "5",
+      "7",
+      "9",
+      "11"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Put the numbers in order first: 1, 3, 5, 7, 9, 11, 13. With 7 values the median is the 4th, which is 7."
+  },
+  {
+    "id": "BIHARPOLICE-T1-044",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Probability",
+    "stem": "A bag has 5 red, 7 blue and 3 white balls. One ball is drawn at random. What is the probability that it is white?",
+    "options": [
+      "4/5",
+      "1/5",
+      "1/4",
+      "1/3"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "There are 15 balls and 3 are white, so the probability is 3/15 = 1/5. 1/4 wrongly compares white (3) with the other balls (12)."
+  },
+  {
+    "id": "BIHARPOLICE-T1-045",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mensuration",
+    "stem": "What is the volume of a cylinder of radius 3.5 cm and height 8 cm? (Take π = 22/7.)",
+    "options": [
+      "154 cm³",
+      "176 cm³",
+      "308 cm³",
+      "616 cm³"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Volume = πr²h = 22/7 × 3.5 × 3.5 × 8 = 308 cm³. 176 is the curved surface area, 2πrh, in cm²."
+  },
+  {
+    "id": "BIHARPOLICE-T1-046",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "National movement",
+    "stem": "Which law of 1919 allowed the government to detain people without trial and led Gandhi to call a nationwide hartal?",
+    "options": [
+      "Rowlatt Act",
+      "Ilbert Bill",
+      "Vernacular Press Act",
+      "Pitt's India Act"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Rowlatt Act (1919) allowed detention without trial. Protests against it led to the hartal of April 1919 and, in Amritsar, to the Jallianwala Bagh massacre."
+  },
+  {
+    "id": "BIHARPOLICE-T1-047",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Soils",
+    "stem": "In the northern plains, khadar is:",
+    "options": [
+      "Old alluvium",
+      "Laterite soil",
+      "New alluvium",
+      "Black soil"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Khadar is the newer, finer alluvium renewed by floods every year, very fertile. Bhangar is the older alluvium, higher up and often with kankar nodules."
+  },
+  {
+    "id": "BIHARPOLICE-T1-048",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "National movement",
+    "stem": "After Gandhi's arrest in 1930, who led the salt satyagraha raid on the Dharasana salt works?",
+    "options": [
+      "Aruna Asaf Ali",
+      "Sarojini Naidu",
+      "Annie Besant",
+      "Kasturba Gandhi"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Sarojini Naidu, with Imam Sahib, led the non-violent volunteers at Dharasana in May 1930, where they were beaten but did not hit back."
+  },
+  {
+    "id": "BIHARPOLICE-T1-049",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Agriculture",
+    "stem": "Zaid crops such as watermelon and cucumber are grown:",
+    "options": [
+      "Between rabi and kharif",
+      "Only in midwinter",
+      "Only in the monsoon",
+      "Only on hill slopes"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Zaid is the short summer season between the rabi and kharif seasons, used for watermelon, muskmelon, cucumber and fodder."
+  },
+  {
+    "id": "BIHARPOLICE-T1-050",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpHistory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "National movement",
+    "stem": "The Dandi March of 1930 was undertaken to break which law?",
+    "options": [
+      "The arms law",
+      "The forest law",
+      "The press law",
+      "The salt law"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Gandhi walked from Sabarmati to Dandi and made salt from sea water, breaking the salt law and starting the Civil Disobedience Movement."
+  },
+  {
+    "id": "BIHARPOLICE-T1-051",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "India: location",
+    "stem": "The Tropic of Cancer passes through how many Indian states?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "It crosses Gujarat, Rajasthan, Madhya Pradesh, Chhattisgarh, Jharkhand, West Bengal, Tripura and Mizoram."
+  },
+  {
+    "id": "BIHARPOLICE-T1-052",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "National movement",
+    "stem": "At which session of 1907 did the Indian National Congress split into Moderates and Extremists?",
+    "options": [
+      "Lucknow",
+      "Lahore",
+      "Surat",
+      "Calcutta"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "At the Surat session of 1907 the Moderates, led by Gokhale, and the Extremists, led by Tilak, split. They came together again at Lucknow in 1916."
+  },
+  {
+    "id": "BIHARPOLICE-T1-053",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "India: location",
+    "stem": "In which hemispheres does the Indian mainland lie?",
+    "options": [
+      "Southern and western",
+      "Northern and western",
+      "Southern and eastern",
+      "Northern and eastern"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The mainland lies between about 8°N and 37°N and 68°E and 97°E, so it is entirely in the northern and eastern hemispheres."
+  },
+  {
+    "id": "BIHARPOLICE-T1-054",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "National movement",
+    "stem": "The Poona Pact of 1932 was signed between Gandhi and:",
+    "options": [
+      "B. R. Ambedkar",
+      "Subhas Chandra Bose",
+      "Muhammad Ali Jinnah",
+      "Motilal Nehru"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Poona Pact gave the depressed classes reserved seats in the legislatures, elected by the general electorate, in place of separate electorates."
+  },
+  {
+    "id": "BIHARPOLICE-T1-055",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Minerals",
+    "stem": "Koderma in Jharkhand is known for which mineral?",
+    "options": [
+      "Copper",
+      "Bauxite",
+      "Mica",
+      "Manganese"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Koderma-Gaya-Hazaribagh belt is a leading mica area. Mica is used in electrical and electronic goods."
+  },
+  {
+    "id": "BIHARPOLICE-T1-056",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpHistory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Nationalism in Europe",
+    "stem": "The French Revolution began in 1789 with the storming of which prison?",
+    "options": [
+      "The Louvre",
+      "The Bastille",
+      "Versailles",
+      "The Tuileries"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "On 14 July 1789 a crowd stormed the Bastille, a fortress-prison in Paris that stood for the king's power."
+  },
+  {
+    "id": "BIHARPOLICE-T1-057",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rivers",
+    "stem": "The Krishna river rises near:",
+    "options": [
+      "Amarkantak",
+      "Talakaveri",
+      "Nashik",
+      "Mahabaleshwar"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Krishna rises near Mahabaleshwar in the Western Ghats. The Godavari rises near Nashik, the Narmada at Amarkantak and the Kaveri at Talakaveri."
+  },
+  {
+    "id": "BIHARPOLICE-T1-058",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Nationalism in Europe",
+    "stem": "Who was the chief architect of German unification, completed in 1871?",
+    "options": [
+      "Count Cavour",
+      "Otto von Bismarck",
+      "Giuseppe Garibaldi",
+      "Giuseppe Mazzini"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Bismarck, the chief minister of Prussia, unified Germany through wars, and in 1871 the Prussian king was proclaimed German Emperor. Mazzini, Garibaldi and Cavour worked for Italian unification."
+  },
+  {
+    "id": "BIHARPOLICE-T1-059",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rivers",
+    "stem": "The Son river, which joins the Ganga near Patna, rises at:",
+    "options": [
+      "Amarkantak",
+      "Nashik",
+      "Mahabaleshwar",
+      "Gangotri"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Son rises on the Amarkantak plateau, near the source of the Narmada, and flows north-east to join the Ganga upstream of Patna."
+  },
+  {
+    "id": "BIHARPOLICE-T1-060",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpHistory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ancient India",
+    "stem": "Which Magadha king built the fort of Pataligrama, which later grew into Pataliputra?",
+    "options": [
+      "Bimbisara",
+      "Chandragupta Maurya",
+      "Ajatashatru",
+      "Ashoka"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Ajatashatru of the Haryanka dynasty fortified the village of Pataligrama on the Ganga. His successors made Pataliputra the capital of Magadha."
+  },
+  {
+    "id": "BIHARPOLICE-T1-061",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Climate",
+    "stem": "Pre-monsoon showers in Kerala and Karnataka that help mangoes ripen are called:",
+    "options": [
+      "Loo",
+      "Mango showers",
+      "Kalbaisakhi",
+      "Western disturbances"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Mango showers fall before the monsoon. Kalbaisakhi are evening storms in Bengal, and loo is the hot dry summer wind of the northern plains."
+  },
+  {
+    "id": "BIHARPOLICE-T1-062",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ancient India",
+    "stem": "Which Chinese pilgrim visited India during the reign of Chandragupta II?",
+    "options": [
+      "Fa-Hien",
+      "Hiuen Tsang",
+      "Megasthenes",
+      "I-Tsing"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Fa-Hien came in the early 5th century under Chandragupta II. Hiuen Tsang came under Harsha, and Megasthenes was a Greek envoy at the Mauryan court."
+  },
+  {
+    "id": "BIHARPOLICE-T1-063",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sectors of economy",
+    "stem": "Which best describes the organised sector?",
+    "options": [
+      "Found only in rural areas",
+      "Run only by the government",
+      "Registered, with regular terms of work",
+      "Without any rules on work"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Organised-sector enterprises are registered with the government and follow its rules on pay, hours and leave. Private firms can be organised too."
+  },
+  {
+    "id": "BIHARPOLICE-T1-064",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Local government",
+    "stem": "The 29 subjects given to panchayats are listed in which Schedule of the Constitution?",
+    "options": [
+      "Eleventh Schedule",
+      "Twelfth Schedule",
+      "Seventh Schedule",
+      "Tenth Schedule"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The 73rd Amendment added the Eleventh Schedule with 29 subjects for panchayats; the 74th added the Twelfth Schedule with 18 for municipalities."
+  },
+  {
+    "id": "BIHARPOLICE-T1-065",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Employment",
+    "stem": "MGNREGA 2005 guarantees how many days of wage employment a year to a rural household?",
+    "options": [
+      "50 days",
+      "100 days",
+      "150 days",
+      "200 days"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The Mahatma Gandhi National Rural Employment Guarantee Act promises 100 days of work a year to every rural household that asks for it."
+  },
+  {
+    "id": "BIHARPOLICE-T1-066",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Local government",
+    "stem": "Under the 73rd Amendment, at least what share of seats in panchayats must be reserved for women?",
+    "options": [
+      "Two-thirds",
+      "One-half",
+      "One-third",
+      "One-fourth"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Constitution sets a minimum of one-third. States may give more: Bihar reserves half the seats in its panchayats for women."
+  },
+  {
+    "id": "BIHARPOLICE-T1-067",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Development",
+    "stem": "The Human Development Index (HDI) is published by:",
+    "options": [
+      "WTO",
+      "UNDP",
+      "IMF",
+      "World Bank"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The United Nations Development Programme publishes the HDI in its Human Development Report, combining health, education and income."
+  },
+  {
+    "id": "BIHARPOLICE-T1-068",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Judiciary",
+    "stem": "Under which Article can a High Court issue writs to enforce rights?",
+    "options": [
+      "Article 214",
+      "Article 32",
+      "Article 124",
+      "Article 226"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Article 226 lets High Courts issue writs for fundamental rights and other legal rights; Article 32 is the Supreme Court's power. Article 214 just says each state shall have a High Court."
+  },
+  {
+    "id": "BIHARPOLICE-T1-069",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Consumer rights",
+    "stem": "Which body certifies industrial and consumer goods with the ISI mark?",
+    "options": [
+      "Reserve Bank of India",
+      "Bureau of Indian Standards",
+      "Indian Council of Agriculture",
+      "Food Corporation of India"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The ISI mark is given by the Bureau of Indian Standards. AGMARK is used for farm products."
+  },
+  {
+    "id": "BIHARPOLICE-T1-070",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Parliament",
+    "stem": "Who presides over the Lok Sabha when both the Speaker and the Deputy Speaker are absent?",
+    "options": [
+      "A member from the panel of chairpersons",
+      "The Prime Minister",
+      "The senior-most minister",
+      "The Vice-President"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Speaker names a panel of chairpersons, and one of them presides when both the Speaker and the Deputy Speaker are away."
+  },
+  {
+    "id": "BIHARPOLICE-T1-071",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electricity",
+    "stem": "Resistors of 6 Ω and 3 Ω are joined in parallel. What is their combined resistance?",
+    "options": [
+      "2 Ω",
+      "4.5 Ω",
+      "9 Ω",
+      "18 Ω"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "In parallel, 1/R = 1/6 + 1/3 = 3/6, so R = 2 Ω. The combined resistance is less than the smaller resistor; 9 Ω is the series total."
+  },
+  {
+    "id": "BIHARPOLICE-T1-072",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Light",
+    "stem": "What is the power of a concave lens of focal length 25 cm?",
+    "options": [
+      "+0.25 D",
+      "+4 D",
+      "−0.25 D",
+      "−4 D"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Power = 1/f with f in metres. f = -0.25 m for a concave lens, so P = -4 dioptres. Using 0.25 without inverting gives the wrong 0.25 D."
+  },
+  {
+    "id": "BIHARPOLICE-T1-073",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Light",
+    "stem": "A ray falls on a plane mirror at an angle of incidence of 35°. What is the angle of reflection?",
+    "options": [
+      "35°",
+      "55°",
+      "70°",
+      "145°"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "By the law of reflection, the angle of reflection equals the angle of incidence, both measured from the normal. 55° would be measured from the mirror."
+  },
+  {
+    "id": "BIHARPOLICE-T1-074",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electricity",
+    "stem": "A current of 0.5 A flows through a resistor of 20 Ω. What is the potential difference across it?",
+    "options": [
+      "5 V",
+      "10 V",
+      "20 V",
+      "40 V"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Ohm's law: V = IR = 0.5 × 20 = 10 V. Dividing 20 by 0.5 gives the wrong 40 V."
+  },
+  {
+    "id": "BIHARPOLICE-T1-075",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electricity",
+    "stem": "Two resistors of 6 Ω each are connected in parallel. What is their combined resistance?",
+    "options": [
+      "1.5 Ω",
+      "3 Ω",
+      "6 Ω",
+      "12 Ω"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "In parallel, 1/R = 1/6 + 1/6 = 1/3, so R = 3 Ω. In series they would add to 12 Ω."
+  },
+  {
+    "id": "BIHARPOLICE-T1-076",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Acids and bases",
+    "stem": "A solution turns blue litmus red. Its pH is most likely:",
+    "options": [
+      "More than 7",
+      "Exactly 14",
+      "Exactly 7",
+      "Less than 7"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Turning blue litmus red shows an acid, and acids have a pH below 7. Bases turn red litmus blue and have a pH above 7."
+  },
+  {
+    "id": "BIHARPOLICE-T1-077",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Salts",
+    "stem": "What is the common name of calcium oxychloride (CaOCl₂)?",
+    "options": [
+      "Plaster of Paris",
+      "Baking soda",
+      "Bleaching powder",
+      "Washing soda"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Calcium oxychloride is bleaching powder, made by passing chlorine over dry slaked lime. It is used to disinfect drinking water."
+  },
+  {
+    "id": "BIHARPOLICE-T1-078",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Metals",
+    "stem": "Iron rusts when it is exposed to:",
+    "options": [
+      "Dry air only",
+      "Moist air",
+      "Pure nitrogen",
+      "Boiled water in a sealed tube"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Rusting needs both oxygen and water. Dry air or boiled water with no dissolved air will not rust iron."
+  },
+  {
+    "id": "BIHARPOLICE-T1-079",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Chemical reactions",
+    "stem": "Quicklime reacts with water to form slaked lime. What type of reaction is this?",
+    "options": [
+      "Decomposition",
+      "Displacement",
+      "Double displacement",
+      "Combination"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "CaO + H₂O → Ca(OH)₂: two substances combine into one, and heat is given out."
+  },
+  {
+    "id": "BIHARPOLICE-T1-080",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Periodic table",
+    "stem": "The modern periodic table arranges elements in order of increasing:",
+    "options": [
+      "Atomic mass",
+      "Number of neutrons",
+      "Atomic number",
+      "Density"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The modern periodic law says properties repeat with atomic number. Mendeleev had arranged elements by atomic mass."
+  },
+  {
+    "id": "BIHARPOLICE-T1-081",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpScience",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Life processes",
+    "stem": "Which plant tissue carries the food made in the leaves to other parts of the plant?",
+    "options": [
+      "Cambium",
+      "Phloem",
+      "Epidermis",
+      "Xylem"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Phloem carries sugars from the leaves to the roots, stems and fruits. Xylem carries water and minerals up from the roots."
+  },
+  {
+    "id": "BIHARPOLICE-T1-082",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Life processes",
+    "stem": "How many chambers does the heart of a fish have?",
+    "options": [
+      "Four",
+      "One",
+      "Two",
+      "Three"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A fish heart has one atrium and one ventricle and pumps blood through the gills once per circuit. Amphibians have three chambers, and birds and mammals four."
+  },
+  {
+    "id": "BIHARPOLICE-T1-083",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Life processes",
+    "stem": "In humans, urine is stored in the:",
+    "options": [
+      "Urinary bladder",
+      "Urethra",
+      "Kidney",
+      "Ureter"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The kidneys make urine, the ureters carry it to the urinary bladder where it is stored, and the urethra lets it out."
+  },
+  {
+    "id": "BIHARPOLICE-T1-084",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Heredity",
+    "stem": "In Mendel's monohybrid cross, what is the phenotypic ratio of tall to short plants in the F2 generation?",
+    "options": [
+      "1 : 1",
+      "9 : 3 : 3 : 1",
+      "1 : 2 : 1",
+      "3 : 1"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Tt × Tt gives TT, Tt, Tt and tt: three tall to one short. 1 : 2 : 1 is the genotypic ratio and 9 : 3 : 3 : 1 is from a dihybrid cross."
+  },
+  {
+    "id": "BIHARPOLICE-T1-085",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Environment",
+    "stem": "Which of these wastes is biodegradable?",
+    "options": [
+      "Vegetable peels",
+      "Glass bottles",
+      "Aluminium foil",
+      "Plastic bags"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Bacteria and fungi can break down vegetable peels. Plastic, glass and aluminium stay in the environment for a very long time."
+  },
+  {
+    "id": "BIHARPOLICE-T1-086",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpBihar",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Bihar: polity",
+    "stem": "Bihar Diwas, marking the creation of Bihar as a separate province in 1912, is celebrated on:",
+    "options": [
+      "15 November",
+      "1 April",
+      "22 March",
+      "26 January"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Bihar was separated from the Bengal Presidency on 22 March 1912. (1 April 1936 is when Odisha was separated from Bihar.)"
+  },
+  {
+    "id": "BIHARPOLICE-T1-087",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpGK",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Important days",
+    "stem": "National Unity Day (Rashtriya Ekta Diwas), on Sardar Patel's birth anniversary, is observed on:",
+    "options": [
+      "14 November",
+      "23 January",
+      "2 October",
+      "31 October"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Sardar Vallabhbhai Patel was born on 31 October 1875; the day has been observed as National Unity Day since 2014."
+  },
+  {
+    "id": "BIHARPOLICE-T1-088",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpBihar",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Bihar: polity",
+    "stem": "Jharkhand was carved out of Bihar as a new state in:",
+    "options": [
+      "1956",
+      "1991",
+      "1998",
+      "2000"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Jharkhand became a separate state on 15 November 2000, taking the Chota Nagpur plateau and its mineral belt."
+  },
+  {
+    "id": "BIHARPOLICE-T1-089",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpGK",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Organisations",
+    "stem": "The International Court of Justice sits at:",
+    "options": [
+      "Vienna",
+      "New York",
+      "The Hague",
+      "Geneva"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The International Court of Justice, the UN's main court, sits in the Peace Palace at The Hague, in the Netherlands."
+  },
+  {
+    "id": "BIHARPOLICE-T1-090",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpBihar",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Bihar: heritage",
+    "stem": "The Mahabodhi Temple, a UNESCO World Heritage Site, is at:",
+    "options": [
+      "Rajgir",
+      "Bodh Gaya",
+      "Vaishali",
+      "Pawapuri"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Mahabodhi Temple marks where the Buddha attained enlightenment under the Bodhi tree. It was inscribed as a World Heritage Site in 2002."
+  },
+  {
+    "id": "BIHARPOLICE-T1-091",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpGK",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sports",
+    "stem": "How many players make up a polo team on the field?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "A polo team has four mounted players on the field."
+  },
+  {
+    "id": "BIHARPOLICE-T1-092",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpBihar",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Bihar: culture",
+    "stem": "Madhubani painting comes from which region of Bihar?",
+    "options": [
+      "Mithila",
+      "Magadh",
+      "Anga",
+      "Bhojpur"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Madhubani or Mithila painting, done with natural colours and fine line work, grew in the Mithila region of north Bihar."
+  },
+  {
+    "id": "BIHARPOLICE-T1-093",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpGK",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Books",
+    "stem": "In which language did Rabindranath Tagore first write Gitanjali, the work behind his 1913 Nobel Prize?",
+    "options": [
+      "English",
+      "Bengali",
+      "Hindi",
+      "Sanskrit"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Gitanjali was written in Bengali; Tagore's own English version won him the Nobel Prize in Literature in 1913."
+  },
+  {
+    "id": "BIHARPOLICE-T1-094",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpBihar",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Bihar: wildlife",
+    "stem": "Valmiki Tiger Reserve, Bihar's only tiger reserve, is in which district?",
+    "options": [
+      "West Champaran",
+      "Araria",
+      "Gaya",
+      "Kaimur"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Valmiki National Park and Tiger Reserve lies in West Champaran, on the Nepal border, next to Nepal's Chitwan National Park."
+  },
+  {
+    "id": "BIHARPOLICE-T1-095",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpGK",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Awards",
+    "stem": "The Jnanpith Award is given for excellence in:",
+    "options": [
+      "Film direction",
+      "Sports coaching",
+      "Science teaching",
+      "Literature"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Jnanpith Award, India's highest literary honour, is given to writers for their contribution to Indian literature."
+  },
+  {
+    "id": "BIHARPOLICE-T1-096",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpBihar",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Bihar: symbols",
+    "stem": "Which animal is the state animal of Bihar?",
+    "options": [
+      "Elephant",
+      "Gaur",
+      "Nilgai",
+      "Tiger"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The gaur, or Indian bison, is Bihar's state animal. The house sparrow is the state bird."
+  },
+  {
+    "id": "BIHARPOLICE-T1-097",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpGK",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Monuments",
+    "stem": "The Gateway of India is in which city?",
+    "options": [
+      "Mumbai",
+      "New Delhi",
+      "Chennai",
+      "Kolkata"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Gateway of India stands on the waterfront of Mumbai; India Gate is in New Delhi."
+  },
+  {
+    "id": "BIHARPOLICE-T1-098",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpBihar",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Bihar: personalities",
+    "stem": "Dr Rajendra Prasad, the first President of India, was born at Ziradei in which district of Bihar?",
+    "options": [
+      "Muzaffarpur",
+      "Gopalganj",
+      "Saran",
+      "Siwan"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Rajendra Prasad was born at Ziradei in present-day Siwan district in 1884."
+  },
+  {
+    "id": "BIHARPOLICE-T1-099",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpGK",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "National symbols",
+    "stem": "Which river was declared the National River of India in 2008?",
+    "options": [
+      "Brahmaputra",
+      "Godavari",
+      "Ganga",
+      "Yamuna"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Ganga was declared India's National River in November 2008. It flows west to east across Bihar, past Buxar, Patna and Bhagalpur."
+  },
+  {
+    "id": "BIHARPOLICE-T1-100",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "bihpBihar",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Bihar: history",
+    "stem": "Which leader of the 1857 revolt in Bihar came from Jagdishpur?",
+    "options": [
+      "Nana Sahib",
+      "Kunwar Singh",
+      "Maulvi Ahmadullah",
+      "Tantia Tope"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Babu Kunwar Singh of Jagdishpur (Bhojpur district) led the revolt in Bihar at about 80 years of age."
+  },
+  {
+    "id": "BIHARPOLICE-T2-001",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpHindi",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "पर्यायवाची",
+    "stem": "\"आकाश\" का पर्यायवाची शब्द कौन-सा है?",
+    "options": [
+      "गगन",
+      "सलिल",
+      "अनिल",
+      "धरणी"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "गगन (also अंबर, नभ, व्योम) means the sky. धरणी is earth, सलिल is water and अनिल is wind."
+  },
+  {
+    "id": "BIHARPOLICE-T2-002",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpHindi",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "पर्यायवाची",
+    "stem": "\"घोड़ा\" का पर्यायवाची शब्द कौन-सा है?",
+    "options": [
+      "अश्व",
+      "गर्दभ",
+      "शृगाल",
+      "उष्ट्र"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "अश्व (also तुरंग, हय, घोटक) means horse. गर्दभ is a donkey, उष्ट्र a camel and शृगाल a jackal."
+  },
+  {
+    "id": "BIHARPOLICE-T2-003",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpHindi",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "विलोम",
+    "stem": "\"आशा\" का विलोम शब्द क्या है?",
+    "options": [
+      "अभिलाषा",
+      "आस्था",
+      "निराशा",
+      "प्रतीक्षा"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "आशा (hope) is opposite to निराशा (despair). अभिलाषा (wish) and आस्था (faith) are not opposites."
+  },
+  {
+    "id": "BIHARPOLICE-T2-004",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpHindi",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "विलोम",
+    "stem": "\"प्राचीन\" का विलोम शब्द क्या है?",
+    "options": [
+      "अर्वाचीन",
+      "प्रवीण",
+      "पुरातन",
+      "प्राच्य"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "प्राचीन (ancient) is opposite to अर्वाचीन (modern). पुरातन is a synonym, प्राच्य means eastern and प्रवीण means skilled."
+  },
+  {
+    "id": "BIHARPOLICE-T2-005",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpHindi",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "एक शब्द",
+    "stem": "\"जो बहुत कम भोजन करता हो\" के लिए एक शब्द क्या है?",
+    "options": [
+      "अल्पाहारी",
+      "सर्वाहारी",
+      "मांसाहारी",
+      "शाकाहारी"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "अल्पाहारी is one who eats little (अल्प = little). शाकाहारी, मांसाहारी and सर्वाहारी describe what is eaten, not how much."
+  },
+  {
+    "id": "BIHARPOLICE-T2-006",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpHindi",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "एक शब्द",
+    "stem": "\"जिसकी गिनती न की जा सके\" के लिए एक शब्द क्या है?",
+    "options": [
+      "अजेय",
+      "अगणित",
+      "अतुलनीय",
+      "अनुपम"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "अगणित (also अनगिनत) means countless. अनुपम and अतुलनीय mean matchless, and अजेय means unconquerable."
+  },
+  {
+    "id": "BIHARPOLICE-T2-007",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpHindi",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "तत्सम-तद्भव",
+    "stem": "\"कर्म\" का तद्भव रूप क्या है?",
+    "options": [
+      "कृत्य",
+      "क्रिया",
+      "काम",
+      "कार्य"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "कर्म (tatsam) becomes काम in everyday Hindi. कार्य, कृत्य and क्रिया are themselves tatsam words."
+  },
+  {
+    "id": "BIHARPOLICE-T2-008",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpHindi",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "मुहावरे",
+    "stem": "\"अँगूठा दिखाना\" मुहावरे का अर्थ है:",
+    "options": [
+      "साफ मना कर देना",
+      "धमकी देना",
+      "रास्ता बताना",
+      "प्रशंसा करना"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "अँगूठा दिखाना means to refuse flatly, usually at the moment help was expected."
+  },
+  {
+    "id": "BIHARPOLICE-T2-009",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpHindi",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "मुहावरे",
+    "stem": "\"कान भरना\" मुहावरे का अर्थ है:",
+    "options": [
+      "ध्यान से सुनना",
+      "सलाह देना",
+      "शोर मचाना",
+      "चुगली करना"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "कान भरना means to poison someone's mind against another by telling tales (चुगली)."
+  },
+  {
+    "id": "BIHARPOLICE-T2-010",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpHindi",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "लोकोक्ति",
+    "stem": "\"का बरखा जब कृषि सुखानी\" लोकोक्ति का अर्थ है:",
+    "options": [
+      "मेहनत का फल मीठा",
+      "बारिश से खेती बढ़ती है",
+      "अधिक वर्षा हानिकारक",
+      "समय बीतने पर मदद व्यर्थ"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "What use is rain once the crop has dried? Help that comes too late is useless. The line is from तुलसीदास."
+  },
+  {
+    "id": "BIHARPOLICE-T2-011",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpHindi",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "संधि",
+    "stem": "\"महेश\" का सही संधि-विच्छेद क्या है?",
+    "options": [
+      "महा + ईश",
+      "महा + एश",
+      "महे + श",
+      "महि + ईश"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "महा + ईश: आ + ई = ए, which is गुण संधि. महा + एश would give महैश (वृद्धि) and महि + ईश would give महीश."
+  },
+  {
+    "id": "BIHARPOLICE-T2-012",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpHindi",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "समास",
+    "stem": "\"चौराहा\" में कौन-सा समास है?",
+    "options": [
+      "कर्मधारय",
+      "द्विगु",
+      "द्वंद्व",
+      "अव्ययीभाव"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "चौराहा = चार राहों का समूह. When the first part is a number and the whole names a group, it is द्विगु समास."
+  },
+  {
+    "id": "BIHARPOLICE-T2-013",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpHindi",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "कारक",
+    "stem": "\"मोहन ने गरीबों को कपड़े दिए।\" इस वाक्य में \"गरीबों को\" में कौन-सा कारक है?",
+    "options": [
+      "संप्रदान कारक",
+      "कर्म कारक",
+      "अपादान कारक",
+      "संबंध कारक"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "When को marks the person for whom something is given, it is संप्रदान कारक. The thing given (कपड़े) is the कर्म."
+  },
+  {
+    "id": "BIHARPOLICE-T2-014",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpHindi",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "उपसर्ग",
+    "stem": "\"प्रतिदिन\" शब्द में कौन-सा उपसर्ग है?",
+    "options": [
+      "प्रत",
+      "प्रति",
+      "दिन",
+      "प्र"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "प्रति + दिन = प्रतिदिन (every day). दिन is the root word, not the prefix."
+  },
+  {
+    "id": "BIHARPOLICE-T2-015",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpHindi",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "रचनाकार",
+    "stem": "\"रश्मिरथी\" के रचनाकार कौन हैं?",
+    "options": [
+      "पंत",
+      "महादेवी वर्मा",
+      "निराला",
+      "दिनकर"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "रश्मिरथी, a long poem on Karna, is by रामधारी सिंह दिनकर, the राष्ट्रकवि born in Simaria, Begusarai district of Bihar."
+  },
+  {
+    "id": "BIHARPOLICE-T2-016",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpEnglish",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Synonyms",
+    "stem": "Choose the word closest in meaning to VICTORY.",
+    "options": [
+      "Battle",
+      "Defeat",
+      "Triumph",
+      "Effort"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Victory and triumph both mean a win. Defeat is the opposite."
+  },
+  {
+    "id": "BIHARPOLICE-T2-017",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Synonyms",
+    "stem": "Choose the word closest in meaning to PROSPER.",
+    "options": [
+      "Wander",
+      "Suffer",
+      "Flourish",
+      "Decline"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "To prosper is to do well and grow successful: to flourish. Decline is the opposite."
+  },
+  {
+    "id": "BIHARPOLICE-T2-018",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Antonyms",
+    "stem": "Choose the word opposite in meaning to HAUGHTY.",
+    "options": [
+      "Clever",
+      "Rude",
+      "Modest",
+      "Proud"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A haughty person behaves as if better than others; a modest person does not boast. Proud is close in meaning to haughty."
+  },
+  {
+    "id": "BIHARPOLICE-T2-019",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpEnglish",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Antonyms",
+    "stem": "Choose the word opposite in meaning to SCARCITY.",
+    "options": [
+      "Shortage",
+      "Famine",
+      "Poverty",
+      "Abundance"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Scarcity is a shortage of something; abundance is a plentiful supply. Shortage and famine mean much the same as scarcity."
+  },
+  {
+    "id": "BIHARPOLICE-T2-020",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Prepositions",
+    "stem": "Fill in the blank: He prides himself ___ his honesty.",
+    "options": [
+      "of",
+      "in",
+      "for",
+      "on"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The verb pride oneself takes on: He prides himself on his honesty. (The adjective proud takes of.)"
+  },
+  {
+    "id": "BIHARPOLICE-T2-021",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Subject-verb agreement",
+    "stem": "Fill in the blank: Each of the students ___ a prize.",
+    "options": [
+      "has won",
+      "have won",
+      "are winning",
+      "were won"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Each is singular, so it takes a singular verb (has won), even when followed by \"of the students\"."
+  },
+  {
+    "id": "BIHARPOLICE-T2-022",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Spelling",
+    "stem": "Which of these words is spelt correctly?",
+    "options": [
+      "Accommodate",
+      "Acommodate",
+      "Acomodate",
+      "Accomodate"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Accommodate has a double c and a double m: a-c-c-o-m-m-o-d-a-t-e."
+  },
+  {
+    "id": "BIHARPOLICE-T2-023",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Idioms",
+    "stem": "What does the idiom \"to bite off more than you can chew\" mean?",
+    "options": [
+      "To speak rudely to elders",
+      "To eat too quickly",
+      "To waste money on food",
+      "To take on more than you can manage"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "To bite off more than you can chew is to accept a task that is too big or difficult for you to finish."
+  },
+  {
+    "id": "BIHARPOLICE-T2-024",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "One-word substitution",
+    "stem": "Choose one word for: a place where birds are kept.",
+    "options": [
+      "Kennel",
+      "Aviary",
+      "Aquarium",
+      "Apiary"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An aviary houses birds. An apiary keeps bees, an aquarium fish and a kennel dogs."
+  },
+  {
+    "id": "BIHARPOLICE-T2-025",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpEnglish",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Voice",
+    "stem": "Choose the passive form of: Who wrote this letter?",
+    "options": [
+      "By whom was this letter written?",
+      "Who was written this letter?",
+      "By whom this letter is written?",
+      "Whom was this letter wrote by?"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Who becomes by whom, and the simple past wrote becomes was written, keeping the question order: By whom was this letter written?"
+  },
+  {
+    "id": "BIHARPOLICE-T2-026",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpEnglish",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Narration",
+    "stem": "Choose the indirect form of: He said to her, \"Are you coming to the meeting?\"",
+    "options": [
+      "He asked her that was she coming to the meeting.",
+      "He said to her if she is coming to the meeting.",
+      "He asked her was she coming to the meeting?",
+      "He asked her if she was coming to the meeting."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A yes-no question is reported with asked + if or whether, in statement word order, with the tense moved back: are coming becomes was coming."
+  },
+  {
+    "id": "BIHARPOLICE-T2-027",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Error spotting",
+    "stem": "Find the part of the sentence that has an error.\n\nHe is one of the best player that our school has produced.",
+    "options": [
+      "He is one of the best",
+      "player that",
+      "our school has produced",
+      "No error"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "One of the best is followed by a plural noun: one of the best players."
+  },
+  {
+    "id": "BIHARPOLICE-T2-028",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpEnglish",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Error spotting",
+    "stem": "Find the part of the sentence that has an error.\n\nThe children were playing in the garden.",
+    "options": [
+      "The children",
+      "were playing",
+      "in the garden",
+      "No error"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The plural subject children takes were, and the sentence is correct as it stands."
+  },
+  {
+    "id": "BIHARPOLICE-T2-029",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sentence improvement",
+    "stem": "In the sentence \"She is capable to do the work\", choose the best replacement for \"capable to do\".",
+    "options": [
+      "capable in doing",
+      "capable for doing",
+      "capable of doing",
+      "No improvement"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Capable is followed by of + -ing form: She is capable of doing the work."
+  },
+  {
+    "id": "BIHARPOLICE-T2-030",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Subjunctive",
+    "stem": "Fill in the blank: I wish I ___ a bird.",
+    "options": [
+      "being",
+      "were",
+      "will be",
+      "am"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An unreal wish about the present uses were for every person: I wish I were a bird."
+  },
+  {
+    "id": "BIHARPOLICE-T2-031",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Percentage",
+    "stem": "A number is increased by 30% and the result is then decreased by 30%. What is the net change?",
+    "options": [
+      "3% decrease",
+      "9% decrease",
+      "9% increase",
+      "No change"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "100 becomes 130, and 30% off 130 is 91, so the net change is a 9% decrease. In general a rise and fall of x% gives a fall of x²/100 %."
+  },
+  {
+    "id": "BIHARPOLICE-T2-032",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Discount",
+    "stem": "An article marked at ₹1,500 is sold after two successive discounts of 10% and 20%. What is the selling price?",
+    "options": [
+      "₹1,050",
+      "₹1,080",
+      "₹1,100",
+      "₹1,200"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "1,500 × 0.9 = 1,350, then 1,350 × 0.8 = ₹1,080. A single 30% discount (₹1,050) is not the same as 10% then 20%."
+  },
+  {
+    "id": "BIHARPOLICE-T2-033",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Compound interest",
+    "stem": "What is the compound interest on ₹12,500 at 8% per annum for 2 years, compounded annually?",
+    "options": [
+      "₹1,040",
+      "₹2,000",
+      "₹2,080",
+      "₹2,160"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Amount = 12,500 × 1.08 × 1.08 = ₹14,580, so CI = ₹2,080. Simple interest would be only ₹2,000."
+  },
+  {
+    "id": "BIHARPOLICE-T2-034",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ages",
+    "stem": "A father is 4 times as old as his son. After 5 years he will be 3 times as old as his son. What is the son's present age?",
+    "options": [
+      "10 years",
+      "12 years",
+      "15 years",
+      "40 years"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Let the son be s. Then 4s + 5 = 3(s + 5), so s = 10. The father is 40; in 5 years 45 = 3 × 15. 15 is the son's age in 5 years, and 40 the father's age now."
+  },
+  {
+    "id": "BIHARPOLICE-T2-035",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpMaths",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Partnership",
+    "stem": "A invests ₹6,000 for 12 months and B invests ₹8,000 for 6 months. Out of a profit of ₹5,000, what is A's share?",
+    "options": [
+      "₹2,000",
+      "₹2,143",
+      "₹2,500",
+      "₹3,000"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Shares go by money × time: 6,000 × 12 = 72,000 and 8,000 × 6 = 48,000, a ratio of 3 : 2. A gets 3/5 of 5,000 = ₹3,000."
+  },
+  {
+    "id": "BIHARPOLICE-T2-036",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Average speed",
+    "stem": "A bus goes from one town to another at 45 km/h and comes back by the same road at 36 km/h. What is its average speed for the round trip?",
+    "options": [
+      "40 km/h",
+      "40.5 km/h",
+      "42 km/h",
+      "45 km/h"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "For equal distances, average speed = 2ab/(a + b) = 2 × 45 × 36 / 81 = 40 km/h, not the simple average of 40.5."
+  },
+  {
+    "id": "BIHARPOLICE-T2-037",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpMaths",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Pipes and cisterns",
+    "stem": "Pipes A and B fill a tank in 10 and 15 hours, and pipe C empties it in 30 hours. With all three open, in how many hours will the empty tank fill?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "7.5"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Net rate = 1/10 + 1/15 - 1/30 = (3 + 2 - 1)/30 = 4/30 of the tank an hour, so it fills in 30/4 = 7.5 hours. Ignoring C gives 6 hours."
+  },
+  {
+    "id": "BIHARPOLICE-T2-038",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "LCM",
+    "stem": "What is the smallest number that leaves a remainder of 4 when divided by 12, 15 or 20?",
+    "options": [
+      "56",
+      "60",
+      "64",
+      "124"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "LCM of 12, 15 and 20 is 60, so the number is 60 + 4 = 64."
+  },
+  {
+    "id": "BIHARPOLICE-T2-039",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpMaths",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Mensuration",
+    "stem": "What is the length of the diagonal of a rectangle 48 m long and 14 m wide?",
+    "options": [
+      "34 m",
+      "50 m",
+      "52 m",
+      "62 m"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Diagonal = √(48² + 14²) = √(2304 + 196) = √2500 = 50 m. Adding the sides (62 m) ignores Pythagoras."
+  },
+  {
+    "id": "BIHARPOLICE-T2-040",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpMaths",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Linear equations",
+    "stem": "If x + y = 14 and x - y = 4, what is the value of x?",
+    "options": [
+      "4",
+      "5",
+      "7",
+      "9"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Adding the two equations gives 2x = 18, so x = 9 and y = 5. 7 is half of 14, which ignores the second equation."
+  },
+  {
+    "id": "BIHARPOLICE-T2-041",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpMaths",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Arithmetic progression",
+    "stem": "What is the sum of the first 15 terms of the AP 2, 5, 8, 11, ...?",
+    "options": [
+      "330",
+      "345",
+      "360",
+      "690"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "S = n/2 × [2a + (n - 1)d] = 15/2 × (4 + 42) = 15/2 × 46 = 345."
+  },
+  {
+    "id": "BIHARPOLICE-T2-042",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Trigonometry",
+    "stem": "If sin θ = 3/5 and θ is an acute angle, what is cos θ?",
+    "options": [
+      "2/5",
+      "5/4",
+      "4/5",
+      "3/4"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "sin² θ + cos² θ = 1, so cos² θ = 1 - 9/25 = 16/25 and cos θ = 4/5 (a 3-4-5 triangle). 3/4 is tan θ."
+  },
+  {
+    "id": "BIHARPOLICE-T2-043",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mensuration",
+    "stem": "What is the total surface area of a cube with an edge of 6 cm?",
+    "options": [
+      "36 cm²",
+      "72 cm²",
+      "144 cm²",
+      "216 cm²"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "A cube has 6 square faces: 6 × 6² = 216 cm². 144 cm² is only the 4 side faces."
+  },
+  {
+    "id": "BIHARPOLICE-T2-044",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Probability",
+    "stem": "A fair die is thrown once. What is the probability of getting a prime number?",
+    "options": [
+      "1/2",
+      "1/3",
+      "1/6",
+      "2/3"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The primes on a die are 2, 3 and 5: three of six outcomes, so 1/2. 1 is not a prime number."
+  },
+  {
+    "id": "BIHARPOLICE-T2-045",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpMaths",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Simplification",
+    "stem": "What is 25% of 480 + 40% of 150?",
+    "options": [
+      "160",
+      "170",
+      "180",
+      "200"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "25% of 480 = 120 and 40% of 150 = 60, so the total is 180."
+  },
+  {
+    "id": "BIHARPOLICE-T2-046",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "National movement",
+    "stem": "At which session in 1907 did the Congress split between the Moderates and the Extremists?",
+    "options": [
+      "Nagpur",
+      "Calcutta",
+      "Surat",
+      "Lucknow"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Congress split at Surat in 1907. The two groups came together again at Lucknow in 1916."
+  },
+  {
+    "id": "BIHARPOLICE-T2-047",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Soils",
+    "stem": "Which soil, formed on crystalline igneous rocks, looks red because of iron?",
+    "options": [
+      "Desert soil",
+      "Alluvial soil",
+      "Red soil",
+      "Black soil"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Red soil develops on old crystalline rocks where rainfall is low; iron spread through it gives the red colour, and it looks yellow when hydrated."
+  },
+  {
+    "id": "BIHARPOLICE-T2-048",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpHistory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "National movement",
+    "stem": "Who coined the slogan \"Inquilab Zindabad\"?",
+    "options": [
+      "Subhas Chandra Bose",
+      "Maulana Hasrat Mohani",
+      "Bhagat Singh",
+      "Bal Gangadhar Tilak"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The poet and freedom fighter Maulana Hasrat Mohani coined Inquilab Zindabad in 1921. Bhagat Singh and his comrades later made it famous."
+  },
+  {
+    "id": "BIHARPOLICE-T2-049",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Agriculture",
+    "stem": "Makhana (fox nut), a speciality of north Bihar, grows in:",
+    "options": [
+      "Dry sandy soil",
+      "Salt marshes by the sea",
+      "Hill terraces",
+      "Ponds and wetlands"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Makhana is the seed of a water plant grown in ponds and wetlands, mainly in the Mithila region of Bihar."
+  },
+  {
+    "id": "BIHARPOLICE-T2-050",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpHistory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "National movement",
+    "stem": "The Swadeshi Movement of 1905 began as a protest against:",
+    "options": [
+      "The Rowlatt Act",
+      "The salt tax",
+      "The Simon Commission",
+      "The partition of Bengal"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "When Bengal was divided in 1905, nationalists called for boycotting British goods and using Indian-made (swadeshi) goods."
+  },
+  {
+    "id": "BIHARPOLICE-T2-051",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "India: location",
+    "stem": "Pulicat Lake, a coastal lagoon, lies on the border of Andhra Pradesh and:",
+    "options": [
+      "Kerala",
+      "Karnataka",
+      "Odisha",
+      "Tamil Nadu"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Pulicat Lake straddles the Andhra Pradesh-Tamil Nadu border; the island of Sriharikota separates it from the Bay of Bengal."
+  },
+  {
+    "id": "BIHARPOLICE-T2-052",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ancient India",
+    "stem": "Which of these Harappan sites is in present-day Haryana?",
+    "options": [
+      "Rakhigarhi",
+      "Dholavira",
+      "Kalibangan",
+      "Lothal"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Rakhigarhi, in Hisar district, is one of the largest Harappan sites. Lothal and Dholavira are in Gujarat and Kalibangan is in Rajasthan."
+  },
+  {
+    "id": "BIHARPOLICE-T2-053",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Minerals",
+    "stem": "Bauxite is the ore of which metal?",
+    "options": [
+      "Zinc",
+      "Aluminium",
+      "Copper",
+      "Iron"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Aluminium is extracted from bauxite. Odisha has India's largest bauxite reserves."
+  },
+  {
+    "id": "BIHARPOLICE-T2-054",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Medieval India",
+    "stem": "The Bhakti saint Kabir is traditionally said to be a disciple of:",
+    "options": [
+      "Tulsidas",
+      "Chaitanya",
+      "Ramananda",
+      "Namdev"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Tradition makes Kabir a disciple of Ramananda in Varanasi. Tulsidas and Chaitanya lived later, and Namdev lived earlier, in Maharashtra."
+  },
+  {
+    "id": "BIHARPOLICE-T2-055",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "India: location",
+    "stem": "Which channel separates Minicoy from the Maldives?",
+    "options": [
+      "Duncan Passage",
+      "Eight Degree Channel",
+      "Palk Strait",
+      "Ten Degree Channel"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Eight Degree Channel lies between Minicoy in Lakshadweep and the Maldives. The Ten Degree Channel separates the Andaman and Nicobar Islands."
+  },
+  {
+    "id": "BIHARPOLICE-T2-056",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "National movement",
+    "stem": "Which leader wrote Gita Rahasya while imprisoned at Mandalay?",
+    "options": [
+      "Aurobindo Ghosh",
+      "Bal Gangadhar Tilak",
+      "Lala Lajpat Rai",
+      "Gopal Krishna Gokhale"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Tilak wrote Gita Rahasya during his imprisonment at Mandalay in Burma (1908 to 1914)."
+  },
+  {
+    "id": "BIHARPOLICE-T2-057",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Physical features",
+    "stem": "Which is the highest peak of the Western Ghats?",
+    "options": [
+      "Guru Shikhar",
+      "Mahendragiri",
+      "Anamudi",
+      "Doddabetta"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Anamudi in Kerala is the highest peak of the Western Ghats. Doddabetta is in the Nilgiris, Mahendragiri in the Eastern Ghats and Guru Shikhar in the Aravallis."
+  },
+  {
+    "id": "BIHARPOLICE-T2-058",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Nationalism in Europe",
+    "stem": "Who led the volunteer army known as the Red Shirts in the unification of Italy?",
+    "options": [
+      "Otto von Bismarck",
+      "Giuseppe Mazzini",
+      "Giuseppe Garibaldi",
+      "Count Cavour"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Garibaldi's Red Shirts took Sicily and Naples in 1860. Mazzini founded Young Italy, and Cavour led as Sardinia-Piedmont's chief minister."
+  },
+  {
+    "id": "BIHARPOLICE-T2-059",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Transport",
+    "stem": "The North-South Corridor of the national highways links Srinagar with:",
+    "options": [
+      "Kanyakumari",
+      "Mumbai",
+      "Thiruvananthapuram",
+      "Chennai"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The North-South Corridor runs from Srinagar to Kanyakumari; the East-West Corridor runs from Silchar to Porbandar."
+  },
+  {
+    "id": "BIHARPOLICE-T2-060",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpHistory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Constitution",
+    "stem": "On which date did the Constitution of India come into force?",
+    "options": [
+      "26 November 1949",
+      "30 January 1948",
+      "15 August 1947",
+      "26 January 1950"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "It was adopted on 26 November 1949 and came into force on 26 January 1950, now Republic Day."
+  },
+  {
+    "id": "BIHARPOLICE-T2-061",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Development",
+    "stem": "Per capita income is the national income divided by the:",
+    "options": [
+      "Total population",
+      "Number of households",
+      "Number of taxpayers",
+      "Number of workers"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Per capita income is average income: total national income divided by the whole population."
+  },
+  {
+    "id": "BIHARPOLICE-T2-062",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Fundamental rights",
+    "stem": "What is the status of the right to property today?",
+    "options": [
+      "A Directive Principle",
+      "A Fundamental Duty",
+      "A legal right (Article 300A)",
+      "A fundamental right (Article 31)"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The 44th Amendment (1978) removed property from the Fundamental Rights and made it a legal right under Article 300A."
+  },
+  {
+    "id": "BIHARPOLICE-T2-063",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Money and credit",
+    "stem": "Which institution supervises the working of banks in India?",
+    "options": [
+      "Ministry of Commerce",
+      "State Bank of India",
+      "Reserve Bank of India",
+      "NITI Aayog"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The RBI watches over banks, for example the cash they must hold. The State Bank of India is a commercial bank itself."
+  },
+  {
+    "id": "BIHARPOLICE-T2-064",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Parliament",
+    "stem": "A no-confidence motion against the Council of Ministers can be moved only in:",
+    "options": [
+      "Either House",
+      "The Lok Sabha",
+      "The Rajya Sabha",
+      "A joint sitting"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Council of Ministers is collectively responsible to the Lok Sabha under Article 75(3), so a no-confidence motion can be moved only there."
+  },
+  {
+    "id": "BIHARPOLICE-T2-065",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Globalisation",
+    "stem": "Which organisation aims to liberalise international trade?",
+    "options": [
+      "World Trade Organization",
+      "UNESCO",
+      "World Health Organization",
+      "International Labour Organization"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The WTO, set up in 1995, makes rules for trade between countries and aims to remove trade barriers."
+  },
+  {
+    "id": "BIHARPOLICE-T2-066",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpHistory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Parliament",
+    "stem": "The first hour of a sitting of Parliament, when members ask ministers questions, is called:",
+    "options": [
+      "Adjournment",
+      "Question Hour",
+      "Zero Hour",
+      "Recess"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A sitting usually opens with Question Hour, when members question ministers about the work of their ministries."
+  },
+  {
+    "id": "BIHARPOLICE-T2-067",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Employment",
+    "stem": "When more people work on a farm than are needed, so that removing some does not lower output, it is called:",
+    "options": [
+      "Disguised unemployment",
+      "Frictional unemployment",
+      "Educated unemployment",
+      "Seasonal unemployment"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Disguised (hidden) unemployment is common in agriculture: family members all appear to work, but their work adds nothing extra."
+  },
+  {
+    "id": "BIHARPOLICE-T2-068",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Federalism",
+    "stem": "In which list of the Seventh Schedule is education placed?",
+    "options": [
+      "Residuary powers",
+      "Union List",
+      "State List",
+      "Concurrent List"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Education was moved from the State List to the Concurrent List by the 42nd Amendment (1976), so both the Union and the states can make laws on it."
+  },
+  {
+    "id": "BIHARPOLICE-T2-069",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Resources",
+    "stem": "Which of these is a non-renewable resource?",
+    "options": [
+      "Wind",
+      "Coal",
+      "Solar energy",
+      "Forests"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Coal took millions of years to form and cannot be replaced once used. Sun, wind and forests can be renewed."
+  },
+  {
+    "id": "BIHARPOLICE-T2-070",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpHistory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "State government",
+    "stem": "The Chief Minister of a state is appointed by the:",
+    "options": [
+      "Governor",
+      "Prime Minister",
+      "Speaker of the Legislative Assembly",
+      "President"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Under Article 164 the Governor appoints the Chief Minister, usually the leader of the majority party in the Legislative Assembly."
+  },
+  {
+    "id": "BIHARPOLICE-T2-071",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Light",
+    "stem": "A concave mirror has a radius of curvature of 30 cm. What is its focal length?",
+    "options": [
+      "7.5 cm",
+      "15 cm",
+      "30 cm",
+      "60 cm"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "For a spherical mirror f = R/2 = 30/2 = 15 cm."
+  },
+  {
+    "id": "BIHARPOLICE-T2-072",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Human eye",
+    "stem": "For a young adult with normal vision, the near point of the eye is at about:",
+    "options": [
+      "10 cm",
+      "25 cm",
+      "50 cm",
+      "100 cm"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The least distance of distinct vision is about 25 cm; nearer than that, the eye lens cannot curve enough to focus."
+  },
+  {
+    "id": "BIHARPOLICE-T2-073",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Light",
+    "stem": "The twinkling of stars is due to:",
+    "options": [
+      "Dispersion by dust",
+      "Scattering of light",
+      "Reflection by clouds",
+      "Atmospheric refraction"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Starlight is bent by air layers of changing density, so the apparent position and brightness of the star keep changing. Planets are closer and look like discs, so they do not twinkle."
+  },
+  {
+    "id": "BIHARPOLICE-T2-074",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electricity",
+    "stem": "An electric heater draws 5 A at 220 V. What is its power?",
+    "options": [
+      "44 W",
+      "225 W",
+      "1100 W",
+      "2200 W"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "P = VI = 220 × 5 = 1100 W. 44 is the resistance in ohms (220 ÷ 5), not the power."
+  },
+  {
+    "id": "BIHARPOLICE-T2-075",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Magnetism",
+    "stem": "A freely suspended bar magnet comes to rest pointing in which direction?",
+    "options": [
+      "East-west",
+      "Any direction",
+      "North-east to south-west",
+      "North-south"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Earth's magnetic field turns a freely suspended magnet until its north pole points roughly to geographic north, so it lies north-south."
+  },
+  {
+    "id": "BIHARPOLICE-T2-076",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Acids and bases",
+    "stem": "An acid reacts with a base to form:",
+    "options": [
+      "Salt and hydrogen",
+      "Acid and oxygen",
+      "Salt and water",
+      "Oxide and water"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Neutralisation gives a salt and water, for example HCl + NaOH → NaCl + H₂O. Hydrogen is given off when an acid reacts with a metal."
+  },
+  {
+    "id": "BIHARPOLICE-T2-077",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Carbon compounds",
+    "stem": "Which allotrope of carbon is a good conductor of electricity?",
+    "options": [
+      "Charcoal ash",
+      "Diamond",
+      "Coal tar",
+      "Graphite"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "In graphite each carbon is bonded to three others, leaving electrons free to move, so it conducts. Diamond, with four bonds per atom, does not."
+  },
+  {
+    "id": "BIHARPOLICE-T2-078",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Metals",
+    "stem": "Which of these metals is the most reactive?",
+    "options": [
+      "Potassium",
+      "Copper",
+      "Gold",
+      "Iron"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Potassium is at the top of the reactivity series and reacts violently with water. Gold is among the least reactive."
+  },
+  {
+    "id": "BIHARPOLICE-T2-079",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Carbon compounds",
+    "stem": "Which is the first member of the alkane series?",
+    "options": [
+      "Ethyne",
+      "Methane",
+      "Ethene",
+      "Ethane"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Methane, CH₄, has one carbon atom. Ethene and ethyne have double and triple bonds, so they are not alkanes."
+  },
+  {
+    "id": "BIHARPOLICE-T2-080",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Carbon compounds",
+    "stem": "Soaps are sodium or potassium salts of:",
+    "options": [
+      "Mineral acids",
+      "Amino acids",
+      "Long-chain fatty acids",
+      "Alcohols"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Soap is made by heating fats or oils with an alkali (saponification), which gives sodium or potassium salts of long-chain fatty acids."
+  },
+  {
+    "id": "BIHARPOLICE-T2-081",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Life processes",
+    "stem": "Digestion of starch begins in the:",
+    "options": [
+      "Mouth",
+      "Stomach",
+      "Small intestine",
+      "Large intestine"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Salivary amylase in the mouth begins breaking starch into sugar. The stomach starts the digestion of proteins."
+  },
+  {
+    "id": "BIHARPOLICE-T2-082",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Life processes",
+    "stem": "Exchange of gases in a leaf takes place mainly through the:",
+    "options": [
+      "Phloem",
+      "Stomata",
+      "Root hairs",
+      "Xylem"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Stomata are tiny pores on the leaf surface that let in carbon dioxide and let out oxygen and water vapour."
+  },
+  {
+    "id": "BIHARPOLICE-T2-083",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Control and coordination",
+    "stem": "Which plant hormone makes a shoot bend towards light?",
+    "options": [
+      "Cytokinin",
+      "Abscisic acid",
+      "Auxin",
+      "Ethylene"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Auxin collects on the shaded side of the shoot, which grows faster, so the shoot bends towards the light."
+  },
+  {
+    "id": "BIHARPOLICE-T2-084",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Control and coordination",
+    "stem": "Iodine is needed by which gland to make the hormone thyroxine?",
+    "options": [
+      "Adrenal",
+      "Pituitary",
+      "Pancreas",
+      "Thyroid"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The thyroid uses iodine to make thyroxine; too little iodine causes goitre, which is why salt is iodised."
+  },
+  {
+    "id": "BIHARPOLICE-T2-085",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Environment",
+    "stem": "Under the 10 per cent law, how much of the energy at one trophic level passes to the next?",
+    "options": [
+      "About 50%",
+      "About 10%",
+      "About 90%",
+      "About 1%"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Only about 10% of the energy is passed on; the rest is used in life processes or lost as heat, which is why food chains are short."
+  },
+  {
+    "id": "BIHARPOLICE-T2-086",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpBihar",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Bihar: history",
+    "stem": "The Vikramshila Mahavihara near Bhagalpur was founded by which Pala king?",
+    "options": [
+      "Mahipala",
+      "Dharmapala",
+      "Gopala",
+      "Devapala"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Dharmapala founded Vikramshila around 800 CE. Gopala was the first Pala king."
+  },
+  {
+    "id": "BIHARPOLICE-T2-087",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpGK",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sports",
+    "stem": "Which country hosted the first FIFA World Cup, in 1930?",
+    "options": [
+      "Brazil",
+      "England",
+      "Uruguay",
+      "Italy"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Uruguay hosted and won the first FIFA World Cup in 1930."
+  },
+  {
+    "id": "BIHARPOLICE-T2-088",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpBihar",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Bihar: culture",
+    "stem": "The Sonepur cattle fair is held where the Ganga meets which river?",
+    "options": [
+      "Gandak",
+      "Punpun",
+      "Son",
+      "Bagmati"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Sonepur Mela, one of Asia's oldest cattle fairs, begins at Kartik Purnima at the meeting of the Gandak and the Ganga."
+  },
+  {
+    "id": "BIHARPOLICE-T2-089",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpGK",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Monuments",
+    "stem": "The Ajanta caves are in which state?",
+    "options": [
+      "Karnataka",
+      "Odisha",
+      "Madhya Pradesh",
+      "Maharashtra"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Ajanta caves, with Buddhist paintings, are in Aurangabad district of Maharashtra."
+  },
+  {
+    "id": "BIHARPOLICE-T2-090",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpBihar",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Bihar: heritage",
+    "stem": "The tomb of Sher Shah Suri is at:",
+    "options": [
+      "Patna",
+      "Gaya",
+      "Munger",
+      "Sasaram"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Sher Shah's tomb stands in the middle of a lake at Sasaram, in Rohtas district."
+  },
+  {
+    "id": "BIHARPOLICE-T2-091",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpGK",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "World",
+    "stem": "Which country is called the Land of the Rising Sun?",
+    "options": [
+      "Korea",
+      "Thailand",
+      "Japan",
+      "China"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Japan's own name, Nippon, means the origin of the sun."
+  },
+  {
+    "id": "BIHARPOLICE-T2-092",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpBihar",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Bihar: heritage",
+    "stem": "Takht Sri Harimandir Ji, Patna Sahib, marks the birthplace of:",
+    "options": [
+      "Guru Nanak",
+      "Guru Gobind Singh",
+      "Guru Arjan Dev",
+      "Guru Tegh Bahadur"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Guru Gobind Singh, the tenth Sikh Guru, was born in Patna in 1666. Patna Sahib is one of the five Takhts."
+  },
+  {
+    "id": "BIHARPOLICE-T2-093",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpGK",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Awards",
+    "stem": "Every Nobel Prize is presented in Sweden except the Peace Prize, which is presented in:",
+    "options": [
+      "Switzerland",
+      "Denmark",
+      "Finland",
+      "Norway"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Nobel Peace Prize is awarded in Oslo, Norway; the other prizes are presented in Stockholm."
+  },
+  {
+    "id": "BIHARPOLICE-T2-094",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpBihar",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Bihar: history",
+    "stem": "The Second Buddhist Council was held at:",
+    "options": [
+      "Kundalvana",
+      "Pataliputra",
+      "Vaishali",
+      "Rajgir"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The First Council was at Rajgir, the Second at Vaishali and the Third at Pataliputra under Ashoka."
+  },
+  {
+    "id": "BIHARPOLICE-T2-095",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpGK",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sports",
+    "stem": "The term \"duck\" is used in which sport?",
+    "options": [
+      "Cricket",
+      "Badminton",
+      "Hockey",
+      "Football"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "In cricket a batter who is out without scoring is out for a duck."
+  },
+  {
+    "id": "BIHARPOLICE-T2-096",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpBihar",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Bihar: heritage",
+    "stem": "At which place in Bihar did Mahavira attain nirvana?",
+    "options": [
+      "Kundagram",
+      "Pawapuri",
+      "Kesariya",
+      "Bodh Gaya"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Mahavira died at Pawapuri in Nalanda district, where the Jal Mandir stands. He was born at Kundagram near Vaishali."
+  },
+  {
+    "id": "BIHARPOLICE-T2-097",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpGK",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sports",
+    "stem": "In which city were the first modern Olympic Games held in 1896?",
+    "options": [
+      "Paris",
+      "Rome",
+      "London",
+      "Athens"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The first modern Olympics were held in Athens, Greece, in 1896. Paris hosted the second Games in 1900."
+  },
+  {
+    "id": "BIHARPOLICE-T2-098",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpBihar",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Bihar: crafts",
+    "stem": "Bhagalpur is famous for which kind of silk?",
+    "options": [
+      "Muga",
+      "Mulberry",
+      "Tussar",
+      "Eri"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Bhagalpur, the Silk City, is known for tussar silk. Muga and eri silk come mainly from Assam."
+  },
+  {
+    "id": "BIHARPOLICE-T2-099",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpGK",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Culture",
+    "stem": "Chhath Puja, a major festival of Bihar, is dedicated to:",
+    "options": [
+      "The Sun god",
+      "Lord Shiva",
+      "Lord Ganesha",
+      "Goddess Durga"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Chhath Puja honours Surya, the Sun god, with prayers at rivers and ponds at sunset and sunrise."
+  },
+  {
+    "id": "BIHARPOLICE-T2-100",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "bihpBihar",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Bihar: heritage",
+    "stem": "The Barabar caves, among the oldest rock-cut caves in India, belong to which period?",
+    "options": [
+      "Mughal",
+      "Mauryan",
+      "Pala",
+      "Gupta"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Barabar caves in Jehanabad district were cut in the 3rd century BCE under the Mauryas and given to the Ajivika sect."
+  },
+  {
+    "id": "BIHARPOLICE-D-001",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "bihpHindi",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "अलंकार",
+    "stem": "\"पीपर पात सरिस मन डोला\" में कौन-सा अलंकार है?",
+    "options": [
+      "उपमा",
+      "अनुप्रास",
+      "रूपक",
+      "यमक"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The mind is compared with a peepal leaf using the comparing word सरिस (like), so it is उपमा. रूपक makes the two the same, with no comparing word."
+  },
+  {
+    "id": "BIHARPOLICE-D-002",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "bihpHindi",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "वर्तनी",
+    "stem": "किस शब्द की वर्तनी सही है?",
+    "options": [
+      "अतयधिक",
+      "अत्यधिक",
+      "अत्यधीक",
+      "अत्याधिक"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "अति + अधिक = अत्यधिक (यण संधि). अत्याधिक is a very common misspelling."
+  },
+  {
+    "id": "BIHARPOLICE-D-003",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "bihpHindi",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "प्रत्यय",
+    "stem": "\"लिखावट\" शब्द में कौन-सा प्रत्यय है?",
+    "options": [
+      "आवट",
+      "वट",
+      "आव",
+      "लिख"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "लिख + आवट = लिखावट. The same suffix gives सजावट and बनावट."
+  },
+  {
+    "id": "BIHARPOLICE-D-004",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "bihpHindi",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "रस",
+    "stem": "हास्य रस का स्थायी भाव क्या है?",
+    "options": [
+      "शोक",
+      "रति",
+      "हास",
+      "क्रोध"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "हास्य रस has हास as its स्थायी भाव. रति belongs to शृंगार, शोक to करुण and क्रोध to रौद्र."
+  },
+  {
+    "id": "BIHARPOLICE-D-005",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "bihpEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Synonyms",
+    "stem": "Choose the word closest in meaning to ADEQUATE.",
+    "options": [
+      "Ancient",
+      "Excessive",
+      "Scarce",
+      "Sufficient"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Adequate means enough for what is needed, that is, sufficient. Scarce is the opposite."
+  },
+  {
+    "id": "BIHARPOLICE-D-006",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "bihpEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Antonyms",
+    "stem": "Choose the word opposite in meaning to OPTIMIST.",
+    "options": [
+      "Idealist",
+      "Pessimist",
+      "Activist",
+      "Realist"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An optimist expects the best; a pessimist expects the worst."
+  },
+  {
+    "id": "BIHARPOLICE-D-007",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "bihpEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "One-word substitution",
+    "stem": "Choose one word for: the killing of one's own father.",
+    "options": [
+      "Patricide",
+      "Homicide",
+      "Suicide",
+      "Matricide"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Patricide is killing one's father (pater). Matricide is killing one's mother, and homicide is killing any person."
+  },
+  {
+    "id": "BIHARPOLICE-D-008",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "bihpEnglish",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Idioms",
+    "stem": "What does the idiom \"to bury the hatchet\" mean?",
+    "options": [
+      "To start a quarrel",
+      "To hide a weapon",
+      "To make peace",
+      "To dig a grave"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "To bury the hatchet is to end a quarrel and become friends again."
+  },
+  {
+    "id": "BIHARPOLICE-D-009",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "bihpMaths",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Cube roots",
+    "stem": "What is the cube root of 2744?",
+    "options": [
+      "11",
+      "12",
+      "13",
+      "14"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "14 × 14 × 14 = 196 × 14 = 2744. A cube ending in 4 has a cube root ending in 4."
+  },
+  {
+    "id": "BIHARPOLICE-D-010",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "bihpMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Coordinate geometry",
+    "stem": "What is the distance between the points (2, 3) and (8, 11)?",
+    "options": [
+      "10",
+      "12",
+      "14",
+      "100"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Distance = √[(8 - 2)² + (11 - 3)²] = √(36 + 64) = √100 = 10. Adding 6 and 8 gives the wrong 14, and forgetting the square root gives 100."
+  },
+  {
+    "id": "BIHARPOLICE-D-011",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "bihpMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Profit and loss",
+    "stem": "By selling an article for ₹450 a man loses 10%. At what price should he sell it to gain 10%?",
+    "options": [
+      "₹495",
+      "₹500",
+      "₹540",
+      "₹550"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "450 is 90% of the cost, so cost = ₹500. A 10% gain means selling at ₹550. ₹495 wrongly adds 10% to the loss price."
+  },
+  {
+    "id": "BIHARPOLICE-D-012",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "bihpMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ratio",
+    "stem": "Two numbers are in the ratio 4 : 9 and their difference is 45. What is the smaller number?",
+    "options": [
+      "27",
+      "36",
+      "45",
+      "81"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The difference is 9 - 4 = 5 parts = 45, so one part is 9 and the smaller number is 4 × 9 = 36. 81 is the larger number."
+  },
+  {
+    "id": "BIHARPOLICE-D-013",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "bihpHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "National movement",
+    "stem": "The Khilafat Movement in India was led by:",
+    "options": [
+      "The Nehrus",
+      "The Ali brothers",
+      "Bhagat Singh and Sukhdev",
+      "Tilak and Gokhale"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Muhammad Ali and Shaukat Ali led the Khilafat Movement, which Gandhi joined with the Non-Cooperation Movement in 1920."
+  },
+  {
+    "id": "BIHARPOLICE-D-014",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "bihpGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Agriculture",
+    "stem": "Bihar's Muzaffarpur district is famous for which fruit?",
+    "options": [
+      "Mango",
+      "Grapes",
+      "Litchi",
+      "Apple"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Muzaffarpur is India's best-known litchi area, and its Shahi litchi has a GI tag."
+  },
+  {
+    "id": "BIHARPOLICE-D-015",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "bihpHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Nationalism in Europe",
+    "stem": "The French Civil Code of 1804 is better known as:",
+    "options": [
+      "The Treaty of Vienna",
+      "The Bill of Rights",
+      "The Napoleonic Code",
+      "The Code of Hammurabi"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Napoleon's Civil Code of 1804 ended privileges based on birth and made all men equal before the law."
+  },
+  {
+    "id": "BIHARPOLICE-D-016",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "bihpGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rivers",
+    "stem": "Before its dams were built, the Damodar river was called the sorrow of:",
+    "options": [
+      "Bihar",
+      "Odisha",
+      "Bengal",
+      "Assam"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Damodar's floods once ravaged Bengal; the Damodar Valley Corporation (1948) built dams to control them."
+  },
+  {
+    "id": "BIHARPOLICE-D-017",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "bihpHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ancient India",
+    "stem": "Which Harappan site is known for its dockyard?",
+    "options": [
+      "Rakhigarhi",
+      "Lothal",
+      "Banawali",
+      "Kalibangan"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Lothal, in Gujarat, had a brick dockyard linked to an old course of the Sabarmati, used for trade."
+  },
+  {
+    "id": "BIHARPOLICE-D-018",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "bihpGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Development",
+    "stem": "What does inflation mean?",
+    "options": [
+      "A rise in the number of banks",
+      "A fall in the value of exports",
+      "An increase in the population",
+      "A general rise in prices over time"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Inflation is a general rise in the price level, so each rupee buys less than before."
+  },
+  {
+    "id": "BIHARPOLICE-D-019",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "bihpHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Union executive",
+    "stem": "Which Article of the Constitution provides that there shall be a Vice-President of India?",
+    "options": [
+      "Article 63",
+      "Article 74",
+      "Article 72",
+      "Article 52"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Article 63 creates the office of Vice-President. Article 52 creates the office of President, 72 is the pardoning power and 74 the Council of Ministers."
+  },
+  {
+    "id": "BIHARPOLICE-D-020",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "bihpGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Population",
+    "stem": "The sex ratio is the number of females per how many males?",
+    "options": [
+      "100",
+      "500",
+      "1,000",
+      "10,000"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "In India the sex ratio is stated as females per 1,000 males."
+  },
+  {
+    "id": "BIHARPOLICE-D-021",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "bihpScience",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Light",
+    "stem": "Light travels at 2 × 10⁸ m/s in a medium. What is the refractive index of the medium? (Speed of light in vacuum = 3 × 10⁸ m/s.)",
+    "options": [
+      "0.67",
+      "1.5",
+      "2",
+      "6"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Refractive index = speed in vacuum ÷ speed in the medium = 3 ÷ 2 = 1.5."
+  },
+  {
+    "id": "BIHARPOLICE-D-022",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "bihpScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Salts",
+    "stem": "Washing soda is:",
+    "options": [
+      "Calcium sulphate hemihydrate",
+      "Calcium oxychloride",
+      "Sodium carbonate decahydrate",
+      "Sodium hydrogencarbonate"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Washing soda is Na₂CO₃·10H₂O. The others are baking soda, plaster of Paris and bleaching powder."
+  },
+  {
+    "id": "BIHARPOLICE-D-023",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "bihpScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Reproduction",
+    "stem": "Hydra reproduces asexually by:",
+    "options": [
+      "Budding",
+      "Spore formation",
+      "Fragmentation",
+      "Binary fission"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A small bud grows on the side of a Hydra and separates into a new individual."
+  },
+  {
+    "id": "BIHARPOLICE-D-024",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "bihpScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Human body",
+    "stem": "Which blood group is called the universal recipient?",
+    "options": [
+      "A positive",
+      "O negative",
+      "B negative",
+      "AB positive"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "AB positive blood has no anti-A or anti-B antibodies and carries the Rh factor, so it can receive red cells of any ABO and Rh group. O negative is the universal donor."
+  },
+  {
+    "id": "BIHARPOLICE-D-025",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "bihpBihar",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Bihar: polity",
+    "stem": "How many seats does the Bihar Legislative Assembly have?",
+    "options": [
+      "182",
+      "224",
+      "230",
+      "243"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The Bihar Vidhan Sabha has 243 elected seats (Karnataka has 224, Madhya Pradesh 230 and Gujarat 182). Bihar also has a Legislative Council, so its legislature is bicameral."
+  },
+  {
+    "id": "BIHARPOLICE-D-026",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "bihpGK",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Important days",
+    "stem": "National Science Day, marking the discovery of the Raman effect, is observed on:",
+    "options": [
+      "28 February",
+      "11 May",
+      "5 September",
+      "14 November"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "C. V. Raman announced the Raman effect on 28 February 1928. 11 May is National Technology Day."
+  },
+  {
+    "id": "BIHARPOLICE-D-027",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "bihpBihar",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Bihar: wildlife",
+    "stem": "Kanwar Lake (Kabartal), Bihar's first Ramsar site, is in which district?",
+    "options": [
+      "Begusarai",
+      "Purnia",
+      "Katihar",
+      "Darbhanga"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Kanwar Lake in Begusarai is a large oxbow wetland left behind by a meandering river. It was designated in 2020 and is important for migratory birds."
+  },
+  {
+    "id": "BIHARPOLICE-D-028",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "bihpGK",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Monuments",
+    "stem": "The Statue of Unity in Gujarat depicts:",
+    "options": [
+      "B. R. Ambedkar",
+      "Mahatma Gandhi",
+      "Vallabhbhai Patel",
+      "Subhas Chandra Bose"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Statue of Unity, 182 m tall, near the Sardar Sarovar Dam, depicts Sardar Vallabhbhai Patel."
+  },
+  {
+    "id": "BIHARPOLICE-D-029",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "bihpBihar",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Bihar: geography",
+    "stem": "Mahatma Gandhi Setu across the Ganga links Patna with:",
+    "options": [
+      "Begusarai",
+      "Hajipur",
+      "Munger",
+      "Sonepur"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Mahatma Gandhi Setu, opened in 1982, joins Patna to Hajipur in Vaishali district."
+  },
+  {
+    "id": "BIHARPOLICE-D-030",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "bihpGK",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Instruments",
+    "stem": "Which instrument measures wind speed?",
+    "options": [
+      "Hygrometer",
+      "Anemometer",
+      "Barometer",
+      "Altimeter"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An anemometer, usually spinning cups, measures wind speed. A barometer measures air pressure and an altimeter height."
+  },
+  {
+    "id": "BIHARPOLICE-D-031",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "bihpBihar",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Bihar: culture",
+    "stem": "Which language of Bihar is included in the Eighth Schedule of the Constitution?",
+    "options": [
+      "Angika",
+      "Bhojpuri",
+      "Magahi",
+      "Maithili"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Maithili was added to the Eighth Schedule by the 92nd Amendment (2003). Bhojpuri, Magahi and Angika are not in it."
+  },
+  {
+    "id": "BIHARPOLICE-D-032",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "bihpGK",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "National symbols",
+    "stem": "The national emblem of India is adapted from the Lion Capital found at:",
+    "options": [
+      "Lauriya Nandangarh",
+      "Sanchi",
+      "Sarnath",
+      "Vaishali"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The emblem comes from Ashoka's Lion Capital at Sarnath, with the motto Satyameva Jayate."
+  }
+]

@@ -55,6 +55,21 @@ const BORROWED_SETS: Record<string, string> = {
   // India exams wear their family's tiger; Pakistan's car test the car tiger; JNVST (age 10 to 12) the times tables tiger.
   ibpsclerk: "ibpspo", rrbgroupd: "rrbntpc", sscgd: "ssccgl", sscchsl: "ssccgl", sscmts: "ssccgl", uppolice: "police", jnvst: "timestables",
   pkdrive: "driving",
+  // Bank exams wear the IBPS PO tiger; state police exams the police tiger.
+  sbipo: "ibpspo", sbiclerk: "ibpspo", ibpsrrb: "ibpspo",
+  delhipolice: "police", biharpolice: "police", rajpolice: "police", mppolice: "police",
+  // Next-100 batch 3: UPSC and SSC CPO the SSC CGL tiger, RRB ALP the RRB NTPC tiger, RPF the police tiger,
+  // the defence exams the military-entrance (ASVAB) tiger, the Philippine LET the teacher-licensing (Praxis) tiger.
+  upscse: "ssccgl", ssccpo: "ssccgl", rrbalp: "rrbntpc", rpfconst: "police",
+  nda: "asvab", agniveer: "asvab", agniveervayu: "asvab", phlet: "praxis",
+  // Next-100 batch 4: the college entrance exams the college-entrance (SAT) tiger, the teacher eligibility tests
+  // the CTET tiger, the Sainik School entrance the military-entrance (ASVAB) tiger.
+  jeemain: "sat", neet: "sat", mhtcet: "sat", cuet: "sat",
+  reet: "ctet", uptet: "ctet", ugcnet: "ctet", aissee: "asvab",
+  // Next-100 batch 5: the JAMB UTME subjects (Use of English too) the college-entrance (SAT) tiger; the Nigeria
+  // recruitment tests the police, firefighter, military-entrance and security-guard tigers; the TRCN PQE the Praxis tiger.
+  jambeng: "sat", jambmath: "sat", jambbio: "sat", jambchem: "sat", jambphys: "sat",
+  ngpolice: "police", cdcfib: "ffi", ngarmy: "asvab", ngcustoms: "security", trcnpqe: "praxis",
 };
 
 export function hasTigerSet(examId: string): boolean {

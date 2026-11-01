@@ -1,0 +1,4253 @@
+[
+  {
+    "id": "JEEMAIN-T1-001",
+    "section": "maths",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainAlgebra",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Relations",
+    "stem": "How many relations on the set $A = \\{1, 2, 3\\}$ are both reflexive and symmetric?",
+    "options": [
+      "8",
+      "27",
+      "64",
+      "512"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Reflexive fixes the 3 pairs $(a, a)$. Symmetric means the 3 off-diagonal pairs come in 3 matched couples, each in or out, so there are $2^3 = 8$ such relations. 64 counts the reflexive relations only ($2^6$) and 512 counts every relation ($2^9$)."
+  },
+  {
+    "id": "JEEMAIN-T1-002",
+    "section": "maths",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainCalculus",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Limits",
+    "stem": "What is $\\lim_{x \\to 0} \\dfrac{\\tan x - \\sin x}{x^3}$?",
+    "options": [
+      "0",
+      "1/6",
+      "1/3",
+      "1/2"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\tan x - \\sin x = \\tan x(1 - \\cos x) \\approx x \\cdot \\frac{x^2}{2}$, so the limit is $\\frac{1}{2}$. 1/3 is the $x^3$ coefficient of $\\tan x - x$ and 1/6 that of $x - \\sin x$; neither is the difference asked for."
+  },
+  {
+    "id": "JEEMAIN-T1-003",
+    "section": "maths",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainCoordGeo",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Trigonometric equations",
+    "stem": "How many solutions does $\\sin 2x = \\cos x$ have in the interval $[0, 2\\pi]$?",
+    "options": [
+      "2",
+      "4",
+      "6",
+      "8"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\sin 2x - \\cos x = \\cos x(2\\sin x - 1) = 0$. $\\cos x = 0$ gives $\\frac{\\pi}{2}, \\frac{3\\pi}{2}$, and $\\sin x = \\frac{1}{2}$ gives $\\frac{\\pi}{6}, \\frac{5\\pi}{6}$: four solutions. Dividing by $\\cos x$ loses the first two and leaves 2."
+  },
+  {
+    "id": "JEEMAIN-T1-004",
+    "section": "maths",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainAlgebra",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Complex numbers",
+    "stem": "Which curve is the locus of the points $z$ in the Argand plane with $|z - 2 - 3i| = |z + 4 - 3i|$?",
+    "options": [
+      "The line $x = -1$",
+      "The line $y = 3$",
+      "A circle centred at $(-1, 3)$",
+      "The line $x = 1$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The points are equidistant from $(2, 3)$ and $(-4, 3)$, so they lie on the perpendicular bisector of that segment. Its midpoint is $(-1, 3)$ and the segment is horizontal, so the bisector is the vertical line $x = -1$."
+  },
+  {
+    "id": "JEEMAIN-T1-005",
+    "section": "maths",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainCalculus",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Limits",
+    "stem": "What is $\\lim_{x \\to \\infty} \\left(1 + \\dfrac{3}{x}\\right)^{2x}$?",
+    "options": [
+      "$e^{3/2}$",
+      "$e^6$",
+      "$e^3$",
+      "$e^5$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "$\\left(1 + \\frac{3}{x}\\right)^{2x} = \\left[\\left(1 + \\frac{3}{x}\\right)^{x}\\right]^2 \\to (e^3)^2 = e^6$. $e^3$ ignores the power 2, and $e^5$ adds the exponents instead of multiplying them."
+  },
+  {
+    "id": "JEEMAIN-T1-006",
+    "section": "maths",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainCoordGeo",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Straight lines",
+    "stem": "What is the distance between the parallel lines $3x + 4y - 7 = 0$ and $6x + 8y + 11 = 0$?",
+    "options": [
+      "2/5",
+      "4/5",
+      "5/2",
+      "18/5"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Write the second line as $3x + 4y + \\frac{11}{2} = 0$. The distance is $\\frac{|-7 - 11/2|}{\\sqrt{3^2 + 4^2}} = \\frac{25/2}{5} = \\frac{5}{2}$. 18/5 uses 11 without first halving the equation."
+  },
+  {
+    "id": "JEEMAIN-T1-007",
+    "section": "maths",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainAlgebra",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Quadratic equations",
+    "stem": "If $\\alpha$ and $\\beta$ are the roots of $x^2 - 7x + 11 = 0$, what is $\\alpha^3 + \\beta^3$?",
+    "options": [
+      "27",
+      "112",
+      "310",
+      "574"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\alpha + \\beta = 7$ and $\\alpha\\beta = 11$. $\\alpha^3 + \\beta^3 = (\\alpha + \\beta)^3 - 3\\alpha\\beta(\\alpha + \\beta) = 343 - 231 = 112$. 27 is $\\alpha^2 + \\beta^2$, and 574 adds the 231 instead of subtracting it."
+  },
+  {
+    "id": "JEEMAIN-T1-008",
+    "section": "maths",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainCalculus",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Differentiability",
+    "stem": "$f(x) = ax + b$ for $x < 1$ and $f(x) = x^2 + 1$ for $x \\geq 1$. For which $a$ and $b$ is $f$ differentiable at $x = 1$?",
+    "options": [
+      "$a = 2,\\ b = 1$",
+      "$a = 0,\\ b = 2$",
+      "$a = 2,\\ b = 0$",
+      "$a = 1,\\ b = 1$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Continuity at 1 needs $a + b = 2$. Equal one-sided derivatives need $a = 2x = 2$ at $x = 1$. So $a = 2$ and $b = 0$. $a = 1, b = 1$ is continuous but has a corner."
+  },
+  {
+    "id": "JEEMAIN-T1-009",
+    "section": "maths",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainCoordGeo",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Circles",
+    "stem": "Which is the equation of the circle on the segment joining $(1, 2)$ and $(5, -4)$ as diameter?",
+    "options": [
+      "$x^2 + y^2 - 6x + 2y + 13 = 0$",
+      "$x^2 + y^2 - 6x - 2y - 3 = 0$",
+      "$x^2 + y^2 + 6x - 2y - 3 = 0$",
+      "$x^2 + y^2 - 6x + 2y - 3 = 0$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The diameter form is $(x - 1)(x - 5) + (y - 2)(y + 4) = 0$, which expands to $x^2 - 6x + 5 + y^2 + 2y - 8 = 0$, that is $x^2 + y^2 - 6x + 2y - 3 = 0$. The centre is $(3, -1)$."
+  },
+  {
+    "id": "JEEMAIN-T1-010",
+    "section": "maths",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainAlgebra",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Determinants",
+    "stem": "$A$ is a $3 \\times 3$ matrix with $|A| = 5$. What is $|\\text{adj}(2A)|$?",
+    "options": [
+      "40",
+      "100",
+      "200",
+      "1600"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "For an $n \\times n$ matrix $B$, $|\\text{adj}\\,B| = |B|^{n-1}$. Here $|2A| = 2^3 \\times 5 = 40$, so $|\\text{adj}(2A)| = 40^2 = 1600$. 40 is $|2A|$ itself, and 200 is $2^3 \\times |\\text{adj}\\,A|$, which scales by the wrong power of 2."
+  },
+  {
+    "id": "JEEMAIN-T1-011",
+    "section": "maths",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainCalculus",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Derivatives",
+    "stem": "What is the derivative of $\\ln\\left(x + \\sqrt{x^2 + 1}\\right)$?",
+    "options": [
+      "$\\dfrac{1}{\\sqrt{x^2 + 1}}$",
+      "$\\sqrt{x^2 + 1}$",
+      "$\\dfrac{x}{\\sqrt{x^2 + 1}}$",
+      "$\\dfrac{1}{x + \\sqrt{x^2 + 1}}$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The chain rule gives $\\frac{1 + \\frac{x}{\\sqrt{x^2 + 1}}}{x + \\sqrt{x^2 + 1}} = \\frac{\\sqrt{x^2 + 1} + x}{\\sqrt{x^2 + 1}\\,(x + \\sqrt{x^2 + 1})} = \\frac{1}{\\sqrt{x^2 + 1}}$. $\\frac{1}{x + \\sqrt{x^2 + 1}}$ forgets to differentiate the inside."
+  },
+  {
+    "id": "JEEMAIN-T1-012",
+    "section": "maths",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainCoordGeo",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Conic sections",
+    "stem": "What is the eccentricity of the hyperbola $\\dfrac{x^2}{16} - \\dfrac{y^2}{9} = 1$?",
+    "options": [
+      "$\\frac{\\sqrt{7}}{4}$",
+      "$\\frac{5}{3}$",
+      "$\\frac{5}{4}$",
+      "$\\frac{4}{5}$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "For a hyperbola, $e^2 = 1 + \\frac{b^2}{a^2} = 1 + \\frac{9}{16} = \\frac{25}{16}$, so $e = \\frac{5}{4}$. $\\frac{\\sqrt{7}}{4}$ uses the ellipse rule $1 - \\frac{b^2}{a^2}$, and a hyperbola's $e$ is always above 1."
+  },
+  {
+    "id": "JEEMAIN-T1-013",
+    "section": "maths",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainAlgebra",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Permutations",
+    "stem": "How many 5-digit numbers divisible by 4 can be formed from the digits 1, 2, 3, 4 and 5, each used exactly once?",
+    "options": [
+      "24",
+      "30",
+      "36",
+      "48"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "A number is divisible by 4 when its last two digits are. With distinct digits from 1 to 5 those endings are 12, 24, 32 and 52. Each ending leaves 3 digits to arrange in $3! = 6$ ways, so $4 \\times 6 = 24$."
+  },
+  {
+    "id": "JEEMAIN-T1-014",
+    "section": "maths",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainCalculus",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Maxima and minima",
+    "stem": "What is the local maximum value of $f(x) = x^3 - 6x^2 + 9x + 4$?",
+    "options": [
+      "1",
+      "3",
+      "4",
+      "8"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$f'(x) = 3x^2 - 12x + 9 = 3(x - 1)(x - 3)$. $f''(1) = -6 < 0$, so $x = 1$ gives a local maximum, $f(1) = 1 - 6 + 9 + 4 = 8$. 4 is the local minimum value $f(3)$; 1 and 3 are the $x$ values."
+  },
+  {
+    "id": "JEEMAIN-T1-015",
+    "section": "maths",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainCoordGeo",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Three-dimensional geometry",
+    "stem": "What is the angle between two lines with direction ratios $1, 2, 2$ and $2, 2, 1$?",
+    "options": [
+      "$\\cos^{-1}\\frac{2}{3}$",
+      "$\\cos^{-1}\\frac{4}{9}$",
+      "$\\frac{\\pi}{2}$",
+      "$\\cos^{-1}\\frac{8}{9}$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "$\\cos\\theta = \\frac{1 \\cdot 2 + 2 \\cdot 2 + 2 \\cdot 1}{\\sqrt{9}\\sqrt{9}} = \\frac{8}{9}$. Each set of ratios has length 3, so the denominator is 9. Taking the middle product as $-4$ gives 0 and the wrong answer $\\frac{\\pi}{2}$."
+  },
+  {
+    "id": "JEEMAIN-T1-016",
+    "section": "maths",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainAlgebra",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Binomial theorem",
+    "stem": "What is the term independent of $x$ in the expansion of $\\left(2x^2 - \\frac{1}{x}\\right)^9$?",
+    "options": [
+      "-672",
+      "84",
+      "672",
+      "5376"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$T_{r+1} = \\binom{9}{r}(2x^2)^{9-r}\\left(-\\frac{1}{x}\\right)^r$ has power $18 - 3r$, which is 0 at $r = 6$. The term is $\\binom{9}{6} \\cdot 2^3 \\cdot (-1)^6 = 84 \\times 8 = 672$. The sign is $+$ because $r$ is even."
+  },
+  {
+    "id": "JEEMAIN-T1-017",
+    "section": "maths",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainCalculus",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Definite integrals",
+    "stem": "What is $\\displaystyle\\int_0^{\\pi/2} \\cos^3 x \\, dx$?",
+    "options": [
+      "$\\dfrac{3\\pi}{16}$",
+      "$\\dfrac{1}{3}$",
+      "$\\dfrac{2}{3}$",
+      "$\\dfrac{\\pi}{4}$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Write $\\cos^3 x = (1 - \\sin^2 x)\\cos x$ and put $t = \\sin x$: $\\int_0^1 (1 - t^2)\\,dt = 1 - \\frac{1}{3} = \\frac{2}{3}$. $\\frac{3\\pi}{16}$ is $\\int_0^{\\pi/2}\\cos^4 x\\,dx$, where the even power brings in a factor $\\frac{\\pi}{2}$."
+  },
+  {
+    "id": "JEEMAIN-T1-018",
+    "section": "maths",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainCoordGeo",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Vector product",
+    "stem": "The diagonals of a parallelogram are $3\\hat{i} + \\hat{j} - 2\\hat{k}$ and $\\hat{i} - 3\\hat{j} + 4\\hat{k}$. What is its area?",
+    "options": [
+      "$5\\sqrt{2}$",
+      "$5\\sqrt{3}$",
+      "$\\sqrt{75}/2$",
+      "$10\\sqrt{3}$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "With diagonals $\\vec{d_1}$ and $\\vec{d_2}$, the area is $\\frac{1}{2}|\\vec{d_1} \\times \\vec{d_2}|$. The cross product is $-2\\hat{i} - 14\\hat{j} - 10\\hat{k}$, of length $\\sqrt{300} = 10\\sqrt{3}$, so the area is $5\\sqrt{3}$. $10\\sqrt{3}$ forgets the $\\frac{1}{2}$ that applies to diagonals."
+  },
+  {
+    "id": "JEEMAIN-T1-019",
+    "section": "maths",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainAlgebra",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "AM and GM",
+    "stem": "$x$ and $y$ are positive real numbers with $xy = 9$. What is the least value of $4x + y$?",
+    "options": [
+      "12",
+      "13",
+      "15",
+      "37"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "By AM $\\geq$ GM, $4x + y \\geq 2\\sqrt{4xy} = 2\\sqrt{36} = 12$, with equality when $4x = y$, that is $x = \\frac{3}{2}$, $y = 6$. 15 is the value at $x = y = 3$, and 13 the value at $x = 1$, $y = 9$."
+  },
+  {
+    "id": "JEEMAIN-T1-020",
+    "section": "maths",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainCalculus",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Area under curves",
+    "stem": "What is the area of the region enclosed by the curve $y = x^2 - 4$ and the $x$-axis?",
+    "options": [
+      "16/3",
+      "8",
+      "28/3",
+      "32/3"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The curve cuts the axis at $x = \\pm 2$ and lies below it between them. Area $= \\int_{-2}^{2}(4 - x^2)\\,dx = 16 - \\frac{16}{3} = \\frac{32}{3}$. 16/3 is half of it, the part from 0 to 2 only."
+  },
+  {
+    "id": "JEEMAIN-T1-021",
+    "section": "maths",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainAlgebra",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Arithmetic progression",
+    "stem": "What is the sum of all two-digit numbers that leave a remainder of 3 when divided by 7? Type the integer only.",
+    "numeric": {
+      "answers": [
+        "676"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "The numbers are 10, 17, ..., 94, an AP with $d = 7$ and $\\frac{94 - 10}{7} + 1 = 13$ terms. Their sum is $\\frac{13}{2}(10 + 94) = 676$."
+  },
+  {
+    "id": "JEEMAIN-T1-022",
+    "section": "maths",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainCalculus",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Definite integrals",
+    "stem": "What is the value of $\\displaystyle\\int_0^4 |x - 1| \\, dx$? Type the integer only.",
+    "numeric": {
+      "answers": [
+        "5"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "Split at $x = 1$: $\\int_0^1 (1 - x)\\,dx = \\frac{1}{2}$ and $\\int_1^4 (x - 1)\\,dx = \\frac{9}{2}$. The total is 5."
+  },
+  {
+    "id": "JEEMAIN-T1-023",
+    "section": "maths",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainCoordGeo",
+    "difficulty": 3,
+    "format": "numeric",
+    "skill": "Statistics",
+    "stem": "Five observations have mean 6 and variance 8. Three of them are 2, 5 and 9. What is the product of the other two? Type the integer only.",
+    "numeric": {
+      "answers": [
+        "43"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "The sum is $5 \\times 6 = 30$, so the other two add to $30 - 16 = 14$. The sum of squares is $5(8 + 6^2) = 220$, so theirs is $220 - 110 = 110$. Then $2ab = 14^2 - 110 = 86$ and $ab = 43$."
+  },
+  {
+    "id": "JEEMAIN-T1-024",
+    "section": "maths",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainAlgebra",
+    "difficulty": 3,
+    "format": "numeric",
+    "skill": "Systems of equations",
+    "stem": "For what value of $k$ does the system $x + y + z = 6$, $x + 2y + 3z = 10$, $x + 2y + kz = 14$ have no solution? Type the integer only.",
+    "numeric": {
+      "answers": [
+        "3"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "The coefficient determinant is $1(2k - 6) - 1(k - 3) + 1(2 - 2) = k - 3$, which is zero at $k = 3$. Then the second and third equations read $x + 2y + 3z = 10$ and $x + 2y + 3z = 14$, which contradict each other, so there is no solution."
+  },
+  {
+    "id": "JEEMAIN-T1-025",
+    "section": "maths",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainCalculus",
+    "difficulty": 3,
+    "format": "numeric",
+    "skill": "Maxima and minima",
+    "stem": "A rectangle is inscribed in a semicircle of radius 6, with one side along the diameter. What is the largest possible area of the rectangle? Type the integer only.",
+    "numeric": {
+      "answers": [
+        "36"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "With half-width $x$, the area is $A = 2x\\sqrt{36 - x^2}$. $A^2 = 4x^2(36 - x^2)$ is greatest at $x^2 = 18$, giving $A = 2 \\cdot 18 = 36$, which is $r^2$."
+  },
+  {
+    "id": "JEEMAIN-T1-026",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainMechanics",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Dimensions",
+    "stem": "What are the dimensions of Planck's constant $h$?",
+    "options": [
+      "$[MLT^{-1}]$",
+      "$[ML^2T^{-1}]$",
+      "$[ML^2T^{-2}]$",
+      "$[ML^2T^{-3}]$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "$E = h\\nu$, so $h = \\frac{E}{\\nu}$ has dimensions $\\frac{[ML^2T^{-2}]}{[T^{-1}]} = [ML^2T^{-1}]$, the same as angular momentum. $[ML^2T^{-2}]$ is energy itself."
+  },
+  {
+    "id": "JEEMAIN-T1-027",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainElectro",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electric field",
+    "stem": "Point charges of $+4\\ \\mu$C and $+1\\ \\mu$C are 30 cm apart. Where on the line between them is the electric field zero?",
+    "options": [
+      "15 cm from each charge",
+      "24 cm from the 4 $\\mu$C charge",
+      "10 cm from the 4 $\\mu$C charge",
+      "20 cm from the 4 $\\mu$C charge"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The fields cancel where $\\frac{4}{x^2} = \\frac{1}{(30 - x)^2}$, so $\\frac{x}{30 - x} = 2$ and $x = 20$ cm from the larger charge. The null point is always nearer the smaller charge; 24 cm uses the ratio 4 instead of its square root 2."
+  },
+  {
+    "id": "JEEMAIN-T1-028",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainOpticsModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Carnot engine",
+    "stem": "A Carnot engine with its sink at 27 °C has an efficiency of 25%. What is the temperature of its source?",
+    "options": [
+      "75 K",
+      "375 K",
+      "400 K",
+      "1200 K"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\eta = 1 - \\frac{T_2}{T_1}$, so $\\frac{300}{T_1} = 0.75$ and $T_1 = 400$ K (127 °C). 1200 K divides 300 by 0.25 instead of 0.75, and 375 K adds 25% to the sink temperature."
+  },
+  {
+    "id": "JEEMAIN-T1-029",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainMechanics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Errors in measurement",
+    "stem": "$P = \\dfrac{a^2b^3}{c}$, and $a$, $b$ and $c$ are measured with errors of 1%, 2% and 3%. What is the largest possible percentage error in $P$?",
+    "options": [
+      "5%",
+      "6%",
+      "8%",
+      "11%"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Relative errors add, each multiplied by its power: $2(1\\%) + 3(2\\%) + 1(3\\%) = 11\\%$. Dividing by $c$ still adds its error; subtracting it gives 5%, and ignoring the powers gives 6%."
+  },
+  {
+    "id": "JEEMAIN-T1-030",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainElectro",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Capacitors",
+    "stem": "Capacitors of 2, 3 and 6 $\\mu$F are joined in series across a 12 V battery. What charge does each one hold?",
+    "options": [
+      "6 $\\mu$C",
+      "12 $\\mu$C",
+      "24 $\\mu$C",
+      "132 $\\mu$C"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\frac{1}{C} = \\frac{1}{2} + \\frac{1}{3} + \\frac{1}{6} = 1$, so $C = 1\\ \\mu$F and $Q = CV = 12\\ \\mu$C, the same on each capacitor in series. 132 $\\mu$C uses the parallel value $11\\ \\mu$F."
+  },
+  {
+    "id": "JEEMAIN-T1-031",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainOpticsModern",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Kinetic theory",
+    "stem": "Hydrogen and oxygen gases are at the same temperature. What is the ratio of the rms speed of hydrogen molecules to that of oxygen molecules?",
+    "options": [
+      "16 : 1",
+      "2 : 1",
+      "1 : 4",
+      "4 : 1"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "$v_{rms} = \\sqrt{\\frac{3RT}{M}}$, so the ratio is $\\sqrt{\\frac{32}{2}} = 4$. 16 : 1 forgets the square root."
+  },
+  {
+    "id": "JEEMAIN-T1-032",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainMechanics",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Projectile motion",
+    "stem": "A ball is thrown at $30^\\circ$ above the horizontal at 40 m/s. What is its greatest height?",
+    "options": [
+      "20 m",
+      "40 m",
+      "60 m",
+      "80 m"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$H = \\frac{u^2\\sin^2\\theta}{2g} = \\frac{1600 \\times \\frac{1}{4}}{20} = 20$ m. Using $\\cos^2\\theta$ gives 60 m, and leaving out the 2 in $2g$ gives 40 m."
+  },
+  {
+    "id": "JEEMAIN-T1-033",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainElectro",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Gauss's law",
+    "stem": "A point charge $q$ sits at one corner of a cube. What is the total electric flux through the cube's six faces?",
+    "options": [
+      "$\\frac{q}{24\\varepsilon_0}$",
+      "$\\frac{q}{8\\varepsilon_0}$",
+      "$\\frac{q}{\\varepsilon_0}$",
+      "$\\frac{q}{6\\varepsilon_0}$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Eight such cubes meeting at the corner would enclose the charge completely and share $\\frac{q}{\\varepsilon_0}$ equally, so one cube gets $\\frac{q}{8\\varepsilon_0}$. The three faces that meet at the charge carry no flux, and each of the other three carries $\\frac{q}{24\\varepsilon_0}$."
+  },
+  {
+    "id": "JEEMAIN-T1-034",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainOpticsModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Organ pipes",
+    "stem": "An open pipe and a closed pipe have the same length. What is the ratio of the fundamental frequency of the open pipe to that of the closed pipe?",
+    "options": [
+      "4 : 1",
+      "2 : 1",
+      "1 : 1",
+      "1 : 2"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Open pipe: $f = \\frac{v}{2L}$. Closed pipe: $f = \\frac{v}{4L}$, since a node at the closed end makes the length a quarter wavelength. The ratio is 2 : 1."
+  },
+  {
+    "id": "JEEMAIN-T1-035",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainMechanics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Laws of motion",
+    "stem": "Masses of 3 kg and 2 kg hang from the ends of a light string over a smooth, light pulley. What is the tension in the string?",
+    "options": [
+      "20 N",
+      "24 N",
+      "25 N",
+      "30 N"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$a = \\frac{(3 - 2)g}{5} = 2$ m/s$^2$. For the 2 kg mass, $T - 20 = 2 \\times 2$, so $T = 24$ N, between the two weights of 20 N and 30 N as it must be."
+  },
+  {
+    "id": "JEEMAIN-T1-036",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainMechanics",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Friction",
+    "stem": "What is the least coefficient of static friction that lets a block rest on a rough plane inclined at $30^\\circ$?",
+    "options": [
+      "$\\frac{1}{2}$",
+      "$\\sqrt{3}$",
+      "$\\frac{1}{\\sqrt{3}}$",
+      "$\\frac{\\sqrt{3}}{2}$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The block stays put when $\\mu mg\\cos\\theta \\geq mg\\sin\\theta$, so $\\mu \\geq \\tan 30^\\circ = \\frac{1}{\\sqrt{3}}$. $\\frac{1}{2}$ is $\\sin 30^\\circ$ alone."
+  },
+  {
+    "id": "JEEMAIN-T1-037",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainElectro",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Internal resistance",
+    "stem": "A cell of emf 9 V and internal resistance 0.5 $\\Omega$ is connected across a 4 $\\Omega$ resistor. What is the terminal voltage?",
+    "options": [
+      "1 V",
+      "4.5 V",
+      "8 V",
+      "9 V"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$I = \\frac{9}{4 + 0.5} = 2$ A, so $V = E - Ir = 9 - 1 = 8$ V, which is also $IR = 2 \\times 4$. 1 V is the drop inside the cell, and 9 V is the emf, the terminal voltage only when no current flows."
+  },
+  {
+    "id": "JEEMAIN-T1-038",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainOpticsModern",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Spherical mirrors",
+    "stem": "An object stands 15 cm in front of a concave mirror of focal length 10 cm. Where is the image, and what kind is it?",
+    "options": [
+      "6 cm in front, real and inverted",
+      "30 cm behind, virtual and erect",
+      "30 cm in front, real and inverted",
+      "6 cm behind, virtual and erect"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "$\\frac{1}{v} + \\frac{1}{u} = \\frac{1}{f}$ with $u = -15$ and $f = -10$: $\\frac{1}{v} = -\\frac{1}{10} + \\frac{1}{15} = -\\frac{1}{30}$, so $v = -30$ cm, in front of the mirror: real, inverted and twice the size. 6 cm comes from adding $\\frac{1}{10} + \\frac{1}{15}$."
+  },
+  {
+    "id": "JEEMAIN-T1-039",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainMechanics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Work by a variable force",
+    "stem": "A force $F = 3x^2$ newtons acts along the $x$-axis. How much work does it do as the body moves from $x = 0$ to $x = 2$ m?",
+    "options": [
+      "4 J",
+      "8 J",
+      "12 J",
+      "24 J"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$W = \\int_0^2 3x^2\\,dx = [x^3]_0^2 = 8$ J. 24 J multiplies the final force of 12 N by the 2 m, treating the force as constant."
+  },
+  {
+    "id": "JEEMAIN-T1-040",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainElectro",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Magnetic field of a wire",
+    "stem": "A long straight wire carries a current of 10 A. What is the magnetic field 5 cm from it? ($\\mu_0 = 4\\pi \\times 10^{-7}$ T m/A)",
+    "options": [
+      "$2 \\times 10^{-5}$ T",
+      "$8 \\times 10^{-5}$ T",
+      "$4 \\times 10^{-5}$ T",
+      "$4\\pi \\times 10^{-5}$ T"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "$B = \\frac{\\mu_0 I}{2\\pi r} = \\frac{2 \\times 10^{-7} \\times 10}{0.05} = 4 \\times 10^{-5}$ T. $4\\pi \\times 10^{-5}$ T uses the loop formula $\\frac{\\mu_0 I}{2r}$ by mistake."
+  },
+  {
+    "id": "JEEMAIN-T1-041",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainOpticsModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Photoelectric effect",
+    "stem": "A metal has a threshold wavelength of 620 nm. Light of wavelength 310 nm falls on it. What is the greatest kinetic energy of the photoelectrons? (Take $hc = 1240$ eV nm.)",
+    "options": [
+      "1.0 eV",
+      "2.0 eV",
+      "4.0 eV",
+      "6.0 eV"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The photon energy is $\\frac{1240}{310} = 4.0$ eV and the work function is $\\frac{1240}{620} = 2.0$ eV, so $K_{max} = 4.0 - 2.0 = 2.0$ eV. 4.0 eV forgets to subtract the work function."
+  },
+  {
+    "id": "JEEMAIN-T1-042",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainMechanics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rolling motion",
+    "stem": "A uniform disc rolls without slipping on a level floor. What fraction of its kinetic energy is rotational?",
+    "options": [
+      "2/7",
+      "1/3",
+      "1/2",
+      "2/3"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$K_{rot} = \\frac{1}{2} \\cdot \\frac{1}{2}mr^2\\omega^2 = \\frac{1}{4}mv^2$ and $K_{total} = \\frac{1}{2}mv^2 + \\frac{1}{4}mv^2 = \\frac{3}{4}mv^2$, so the fraction is $\\frac{1}{3}$. 1/2 is the value for a ring, 2/7 for a solid sphere, and 2/3 is the disc's translational share."
+  },
+  {
+    "id": "JEEMAIN-T1-043",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainElectro",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Lenz's law",
+    "stem": "The south pole of a bar magnet, held close to one face of a closed coil, is pulled away from it. What does that face of the coil become while the magnet moves?",
+    "options": [
+      "A south pole, repelling the magnet",
+      "A north pole, attracting the magnet",
+      "No pole, as there is no iron core",
+      "A south pole, attracting the magnet"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "By Lenz's law the induced current opposes the change that causes it, here the retreat of a south pole, so the near face becomes a north pole and pulls on the magnet, opposing its removal. Work done against that pull is what appears as electrical energy."
+  },
+  {
+    "id": "JEEMAIN-T1-044",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainOpticsModern",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Logic gates",
+    "stem": "Which two-input gate gives an output of 1 only when both of its inputs are 0?",
+    "options": [
+      "NAND",
+      "XNOR",
+      "OR",
+      "NOR"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "NOR is OR followed by NOT: OR is 0 only for inputs 0 and 0, so NOR is 1 only then. NAND is 0 only when both inputs are 1, and XNOR is 1 for inputs 0, 0 and also 1, 1."
+  },
+  {
+    "id": "JEEMAIN-T1-045",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainMechanics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Escape speed",
+    "stem": "A planet has the same mass as Earth but half its radius. Earth's escape speed is 11.2 km/s. What is the planet's?",
+    "options": [
+      "7.9 km/s",
+      "11.2 km/s",
+      "15.8 km/s",
+      "22.4 km/s"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$v_e = \\sqrt{\\frac{2GM}{R}}$, so halving $R$ at the same $M$ multiplies it by $\\sqrt{2}$: $11.2 \\times 1.414 \\approx 15.8$ km/s. 22.4 km/s doubles it, forgetting the square root, and 7.9 km/s divides by $\\sqrt{2}$."
+  },
+  {
+    "id": "JEEMAIN-T1-046",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainMechanics",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Conservation of momentum",
+    "stem": "A 50 g bullet moving at 200 m/s embeds itself in a 950 g block at rest on a smooth table. At what speed, in m/s, does the block move off? Type the integer only.",
+    "numeric": {
+      "answers": [
+        "10"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "Momentum is conserved in the impact: $0.05 \\times 200 = (0.05 + 0.95)v$, so $v = 10$ m/s. Kinetic energy is not conserved, since the collision is perfectly inelastic."
+  },
+  {
+    "id": "JEEMAIN-T1-047",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainElectro",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Combinations of resistors",
+    "stem": "A uniform wire of resistance 16 $\\Omega$ is bent into a circle. What is the resistance, in ohms, between two points that divide the circumference in the ratio 1 : 3? Type the integer only.",
+    "numeric": {
+      "answers": [
+        "3"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "The two arcs are 4 $\\Omega$ and 12 $\\Omega$, in parallel between the points: $\\frac{4 \\times 12}{4 + 12} = 3\\ \\Omega$."
+  },
+  {
+    "id": "JEEMAIN-T1-048",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainOpticsModern",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Radioactive decay",
+    "stem": "After 36 days, one eighth of a radioactive sample remains. What is its half-life, in days? Type the integer only.",
+    "numeric": {
+      "answers": [
+        "12"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "$\\frac{1}{8} = \\left(\\frac{1}{2}\\right)^3$, so 36 days is 3 half-lives and the half-life is 12 days."
+  },
+  {
+    "id": "JEEMAIN-T1-049",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainMechanics",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Simple harmonic motion",
+    "stem": "A 0.2 kg block on a spring of force constant 80 N/m oscillates with amplitude 3 cm. What is its greatest speed, in cm/s? Type the integer only.",
+    "numeric": {
+      "answers": [
+        "60"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "$\\omega = \\sqrt{\\frac{k}{m}} = \\sqrt{400} = 20$ rad/s, and $v_{max} = A\\omega = 3 \\times 20 = 60$ cm/s, reached at the mean position."
+  },
+  {
+    "id": "JEEMAIN-T1-050",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainElectro",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Alternating current",
+    "stem": "A series LCR circuit has $L = 0.5$ H and $C = 8\\ \\mu$F. What is its resonant angular frequency, in rad/s? Type the integer only.",
+    "numeric": {
+      "answers": [
+        "500"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "$\\omega_0 = \\frac{1}{\\sqrt{LC}} = \\frac{1}{\\sqrt{0.5 \\times 8 \\times 10^{-6}}} = \\frac{1}{\\sqrt{4 \\times 10^{-6}}} = \\frac{1}{2 \\times 10^{-3}} = 500$ rad/s. The resistance does not affect it."
+  },
+  {
+    "id": "JEEMAIN-T1-051",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainInorganic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ionisation enthalpy",
+    "stem": "Which of Be, B, C and N has the lowest first ionisation enthalpy?",
+    "options": [
+      "N",
+      "B",
+      "C",
+      "Be"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Ionisation enthalpy generally rises across a period, but B is lower than Be: its outer electron is in a 2p orbital, higher in energy and better shielded than Be's filled 2s pair."
+  },
+  {
+    "id": "JEEMAIN-T1-052",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainOrganic",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "IUPAC nomenclature",
+    "stem": "What is the IUPAC name of CH$_3$-CH(CH$_3$)-CH$_2$-CH(OH)-CH$_3$?",
+    "options": [
+      "2-Methylpentan-4-ol",
+      "4-Methylpentan-2-ol",
+      "4-Methylpentan-1-ol",
+      "2-Methylpentan-2-ol"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The longest chain has 5 carbons, numbered from the end nearer the OH group, so OH is on C2 and the methyl group on C4: 4-methylpentan-2-ol. Numbering from the other end gives the wrong locants 2 and 4 swapped."
+  },
+  {
+    "id": "JEEMAIN-T1-053",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainPhysical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Mole concept",
+    "stem": "How many moles of oxygen atoms are there in 4.9 g of sulphuric acid ($M = 98$ g/mol)?",
+    "options": [
+      "0.05 mol",
+      "0.1 mol",
+      "0.15 mol",
+      "0.2 mol"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "4.9 g is $\\frac{4.9}{98} = 0.05$ mol of H$_2$SO$_4$, and each molecule has 4 O atoms, so there are $4 \\times 0.05 = 0.2$ mol of O atoms. 0.05 mol counts molecules, not atoms."
+  },
+  {
+    "id": "JEEMAIN-T1-054",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainInorganic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electron gain enthalpy",
+    "stem": "Which of these elements has the least negative electron gain enthalpy?",
+    "options": [
+      "Fluorine",
+      "Nitrogen",
+      "Chlorine",
+      "Oxygen"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Nitrogen's half-filled $2p^3$ subshell is stable, so adding an electron releases almost no energy (its value is close to zero). O, F and Cl all release energy, Cl the most."
+  },
+  {
+    "id": "JEEMAIN-T1-055",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainOrganic",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Acidity",
+    "stem": "Which of these is the strongest acid?",
+    "options": [
+      "CH₃COOH",
+      "H₂O",
+      "C₂H₅OH",
+      "C₆H₅OH"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The acetate ion spreads its negative charge equally over two oxygen atoms, so acetic acid ($\\text{p}K_a \\approx 4.8$) is far stronger than phenol ($\\approx 10$), while ethanol is weaker even than water."
+  },
+  {
+    "id": "JEEMAIN-T1-056",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainPhysical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Quantum numbers",
+    "stem": "What is the largest number of electrons that can have $n = 3$ and $l = 2$?",
+    "options": [
+      "2",
+      "5",
+      "6",
+      "10"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$l = 2$ is a d subshell with $2l + 1 = 5$ orbitals, each holding 2 electrons: 10 in all. 5 counts orbitals, and 6 is the capacity of a p subshell."
+  },
+  {
+    "id": "JEEMAIN-T1-057",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainInorganic",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Hydrogen halides",
+    "stem": "Which hydrogen halide has the highest boiling point?",
+    "options": [
+      "HF",
+      "HBr",
+      "HI",
+      "HCl"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "HF molecules are linked by strong hydrogen bonds, so HF boils at about 20 °C, far above HCl. Among the other three the boiling point rises with size: HCl < HBr < HI."
+  },
+  {
+    "id": "JEEMAIN-T1-058",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainOrganic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Addition to alkenes",
+    "stem": "Propene reacts with HBr in the presence of benzoyl peroxide. What is the main product?",
+    "options": [
+      "Propan-2-ol",
+      "1,2-Dibromopropane",
+      "2-Bromopropane",
+      "1-Bromopropane"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Peroxide makes the addition go by free radicals: Br$\\cdot$ adds to the end carbon to give the more stable secondary radical, so Br ends up on C1 (anti-Markovnikov, the Kharasch effect). Without peroxide, 2-bromopropane forms."
+  },
+  {
+    "id": "JEEMAIN-T1-059",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainPhysical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "VSEPR theory",
+    "stem": "What is the shape of the BrF$_5$ molecule?",
+    "options": [
+      "Square pyramidal",
+      "Square planar",
+      "Octahedral",
+      "Trigonal bipyramidal"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Br has 5 bond pairs and 1 lone pair, an octahedral arrangement of 6 pairs. With one corner taken by the lone pair, the five F atoms form a square pyramid. Trigonal bipyramidal would need 5 pairs and no lone pair."
+  },
+  {
+    "id": "JEEMAIN-T1-060",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainInorganic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Oxoacids of phosphorus",
+    "stem": "Which oxoacid of phosphorus is dibasic?",
+    "options": [
+      "H₃PO₄",
+      "H₃PO₂",
+      "H₃PO₃",
+      "H₄P₂O₇"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Only H atoms bonded to O are acidic. H$_3$PO$_3$ has two P-OH groups and one P-H bond, so it is dibasic. H$_3$PO$_4$ is tribasic and H$_3$PO$_2$ is monobasic."
+  },
+  {
+    "id": "JEEMAIN-T1-061",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainOrganic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Nucleophilic substitution",
+    "stem": "Which of these bromides reacts fastest with hydroxide ion by the $\\text{S}_\\text{N}2$ mechanism?",
+    "options": [
+      "CH₃CH₂Br",
+      "CH₃Br",
+      "(CH₃)₃CBr",
+      "(CH₃)₂CHBr"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In $\\text{S}_\\text{N}2$ the nucleophile attacks from the back of the carbon, so crowding slows it: methyl > primary > secondary > tertiary. (CH$_3$)$_3$CBr is fastest by $\\text{S}_\\text{N}1$, not $\\text{S}_\\text{N}2$."
+  },
+  {
+    "id": "JEEMAIN-T1-062",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainPhysical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Gibbs energy",
+    "stem": "A reaction has $\\Delta H = +40$ kJ/mol and $\\Delta S = +125$ J/(K mol). When is it spontaneous?",
+    "options": [
+      "Above 0.32 K",
+      "At every temperature",
+      "Above 320 K",
+      "Below 320 K"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "$\\Delta G = \\Delta H - T\\Delta S < 0$ needs $T > \\frac{\\Delta H}{\\Delta S} = \\frac{40\\,000}{125} = 320$ K. Mixing kJ with J gives the 0.32 K slip."
+  },
+  {
+    "id": "JEEMAIN-T1-063",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainInorganic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "f-block elements",
+    "stem": "Why are cerium(IV) compounds good oxidising agents?",
+    "options": [
+      "Ce⁴⁺ is a very large ion",
+      "Ce⁴⁺ readily changes to the more stable Ce³⁺",
+      "Ce⁴⁺ has unpaired 5d electrons",
+      "Ce⁴⁺ has a half-filled 4f subshell"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "+3 is the characteristic lanthanoid state. Ce$^{4+}$ (an empty 4f shell) is stable enough to exist but readily gains an electron to become Ce$^{3+}$, oxidising something else. Ce$^{4+}$ has no 4f electrons, so it is not half-filled."
+  },
+  {
+    "id": "JEEMAIN-T1-064",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainOrganic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Iodoform test",
+    "stem": "Which of these compounds does NOT give the iodoform test?",
+    "options": [
+      "Pentan-3-one",
+      "Propan-2-ol",
+      "Ethanol",
+      "Acetophenone"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The test needs a CH$_3$CO- group or a CH$_3$CH(OH)- group that can be oxidised to one. Pentan-3-one has an ethyl group on each side of its C=O. Ethanol and propan-2-ol are oxidised to ethanal and propanone, and acetophenone is a methyl ketone."
+  },
+  {
+    "id": "JEEMAIN-T1-065",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainPhysical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "pH",
+    "stem": "What is the pH of 0.0005 M barium hydroxide solution at 25 °C, assuming complete ionisation?",
+    "options": [
+      "3",
+      "10.7",
+      "11",
+      "12"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Each Ba(OH)$_2$ gives two OH$^-$ ions, so $[\\text{OH}^-] = 0.001$ M, pOH $= 3$ and pH $= 14 - 3 = 11$. 10.7 takes $[\\text{OH}^-]$ as 0.0005 M, forgetting the factor 2, and 3 is the pOH."
+  },
+  {
+    "id": "JEEMAIN-T1-066",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainInorganic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Magnetic moment",
+    "stem": "What is the spin-only magnetic moment of the high-spin Co$^{2+}$ ion ($Z$ of Co = 27)?",
+    "options": [
+      "1.73 BM",
+      "2.83 BM",
+      "3.87 BM",
+      "4.90 BM"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Co$^{2+}$ is $3d^7$; high-spin it has 3 unpaired electrons, and $\\mu = \\sqrt{3 \\times 5} = \\sqrt{15} \\approx 3.87$ BM. 4.90 BM is for 4 unpaired electrons, as in Fe$^{2+}$."
+  },
+  {
+    "id": "JEEMAIN-T1-067",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainOrganic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Basicity of amines",
+    "stem": "Which of these is the strongest base in water?",
+    "options": [
+      "C₆H₅NH₂",
+      "(CH₃)₂NH",
+      "(CH₃)₃N",
+      "CH₃NH₂"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Methyl groups push electrons onto N, but in water the ion also needs hydrogen bonds to solvate it. The balance makes the secondary amine strongest: (CH$_3$)$_2$NH > CH$_3$NH$_2$ > (CH$_3$)$_3$N. Aniline is weakest, its lone pair spread into the ring."
+  },
+  {
+    "id": "JEEMAIN-T1-068",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainPhysical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electrochemical cells",
+    "stem": "$E^\\circ(\\text{Ag}^+/\\text{Ag}) = +0.80$ V and $E^\\circ(\\text{Ni}^{2+}/\\text{Ni}) = -0.25$ V. What is $E^\\circ$ for the cell $\\text{Ni} \\mid \\text{Ni}^{2+} \\parallel \\text{Ag}^+ \\mid \\text{Ag}$?",
+    "options": [
+      "-1.05 V",
+      "0.55 V",
+      "1.05 V",
+      "1.85 V"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$E^\\circ_{cell} = E^\\circ_{cathode} - E^\\circ_{anode} = 0.80 - (-0.25) = 1.05$ V. Standard potentials are not multiplied by the 2 in the balanced equation, so 1.85 V is wrong."
+  },
+  {
+    "id": "JEEMAIN-T1-069",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainInorganic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Valence bond theory",
+    "stem": "What are the hybridisation and shape of $[\\text{Ni(CN)}_4]^{2-}$?",
+    "options": [
+      "sp³, tetrahedral",
+      "sp³d², octahedral",
+      "d²sp³, octahedral",
+      "dsp², square planar"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Ni$^{2+}$ is $3d^8$. The strong-field CN$^-$ pairs up the d electrons, freeing one 3d orbital for dsp$^2$ hybridisation, so the complex is square planar and diamagnetic. [NiCl$_4$]$^{2-}$, with a weak field, is the tetrahedral one."
+  },
+  {
+    "id": "JEEMAIN-T1-070",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainOrganic",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Carbohydrates",
+    "stem": "Which of these disaccharides is a non-reducing sugar?",
+    "options": [
+      "Sucrose",
+      "Lactose",
+      "Maltose",
+      "Cellobiose"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "In sucrose the glycosidic link joins C1 of glucose to C2 of fructose, so both anomeric carbons are tied up and neither can open to a free aldehyde or ketone group. Maltose, lactose and cellobiose each keep one free hemiacetal group and reduce Tollens' and Fehling's reagents."
+  },
+  {
+    "id": "JEEMAIN-T1-071",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainPhysical",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Chemical kinetics",
+    "stem": "In a first-order reaction the concentration of the reactant falls from 0.8 M to 0.1 M in 45 minutes. What is the half-life, in minutes? Type the integer only.",
+    "numeric": {
+      "answers": [
+        "15"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "0.8 to 0.4 to 0.2 to 0.1 M is 3 halvings, and for a first-order reaction each takes the same time. So $t_{1/2} = \\frac{45}{3} = 15$ min."
+  },
+  {
+    "id": "JEEMAIN-T1-072",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainPhysical",
+    "difficulty": 1,
+    "format": "numeric",
+    "skill": "Molarity",
+    "stem": "What mass of glucose ($M = 180$ g/mol), in grams, is needed to make 500 mL of a 0.2 M solution? Type the integer only.",
+    "numeric": {
+      "answers": [
+        "18"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "Moles needed $= 0.2 \\times 0.5 = 0.1$ mol, and $0.1 \\times 180 = 18$ g."
+  },
+  {
+    "id": "JEEMAIN-T1-073",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainInorganic",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Crystal field theory",
+    "stem": "How many unpaired electrons does the high-spin complex $[\\text{Fe(H}_2\\text{O)}_6]^{2+}$ have? Type the integer only.",
+    "numeric": {
+      "answers": [
+        "4"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "Fe$^{2+}$ is $3d^6$. Water is a weak-field ligand, so the configuration is $t_{2g}^4 e_g^2$: one pair and four single electrons."
+  },
+  {
+    "id": "JEEMAIN-T1-074",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainOrganic",
+    "difficulty": 1,
+    "format": "numeric",
+    "skill": "Bonding in organic molecules",
+    "stem": "How many sigma ($\\sigma$) bonds are there in one molecule of propene, CH$_2$=CH-CH$_3$? Type the integer only.",
+    "numeric": {
+      "answers": [
+        "8"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "There are 6 C-H bonds and 2 C-C bonds, each of which has one $\\sigma$ bond; the C=C double bond adds one $\\pi$ bond. So there are 8 $\\sigma$ bonds and 1 $\\pi$ bond."
+  },
+  {
+    "id": "JEEMAIN-T1-075",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "jeemainPhysical",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Electrolysis",
+    "stem": "A current of 2 A passes through copper(II) sulphate solution for 4825 s. How many millimoles of copper are deposited? (Take $F = 96\\,500$ C/mol.) Type the integer only.",
+    "numeric": {
+      "answers": [
+        "50"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "$Q = 2 \\times 4825 = 9650$ C $= 0.1$ F. Cu$^{2+}$ needs 2 electrons per atom, so $0.05$ mol $= 50$ mmol of copper is deposited."
+  },
+  {
+    "id": "JEEMAIN-T2-001",
+    "section": "maths",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainAlgebra",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sets",
+    "stem": "In a survey of 80 people, 52 read Hindi newspapers, 38 read English newspapers and 6 read neither. How many read both?",
+    "options": [
+      "6",
+      "8",
+      "10",
+      "16"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "74 people read at least one, and $n(H \\cup E) = n(H) + n(E) - n(H \\cap E)$, so $74 = 52 + 38 - n(H \\cap E)$ and $n(H \\cap E) = 16$. 10 is $90 - 80$, which forgets the 6 who read neither."
+  },
+  {
+    "id": "JEEMAIN-T2-002",
+    "section": "maths",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainCalculus",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Domain",
+    "stem": "What is the domain of $f(x) = \\dfrac{1}{\\sqrt{x^2 - 5x + 6}}$?",
+    "options": [
+      "$(2, 3)$",
+      "$(-\\infty, 2) \\cup (3, \\infty)$",
+      "$[2, 3]$",
+      "$(-\\infty, 2] \\cup [3, \\infty)$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The square root must be of a positive number (it is in the denominator), so $(x - 2)(x - 3) > 0$, which holds for $x < 2$ or $x > 3$. Including 2 and 3 would make the denominator zero."
+  },
+  {
+    "id": "JEEMAIN-T2-003",
+    "section": "maths",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainCoordGeo",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Trigonometric ratios",
+    "stem": "What is the value of $\\tan 75^\\circ - \\cot 75^\\circ$?",
+    "options": [
+      "$\\sqrt{3}$",
+      "$2 + \\sqrt{3}$",
+      "$4$",
+      "$2\\sqrt{3}$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "$\\tan 75^\\circ = 2 + \\sqrt{3}$ and $\\cot 75^\\circ = 2 - \\sqrt{3}$, so the difference is $2\\sqrt{3}$. 4 is their sum, and $2 + \\sqrt{3}$ is $\\tan 75^\\circ$ alone."
+  },
+  {
+    "id": "JEEMAIN-T2-004",
+    "section": "maths",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainAlgebra",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cube roots of unity",
+    "stem": "$\\omega$ is a complex cube root of unity. What is $(1 + \\omega - \\omega^2)^3$?",
+    "options": [
+      "-8",
+      "-4",
+      "0",
+      "8"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$1 + \\omega + \\omega^2 = 0$, so $1 + \\omega = -\\omega^2$ and $1 + \\omega - \\omega^2 = -2\\omega^2$. Cubing gives $-8\\omega^6 = -8$, since $\\omega^3 = 1$. 8 drops the minus sign."
+  },
+  {
+    "id": "JEEMAIN-T2-005",
+    "section": "maths",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainCalculus",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Limits",
+    "stem": "What is $\\lim_{x \\to 0} \\dfrac{e^{3x} - 1 - 3x}{x^2}$?",
+    "options": [
+      "3/2",
+      "9/4",
+      "3",
+      "9/2"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$e^{3x} = 1 + 3x + \\frac{9x^2}{2} + \\cdots$, so the numerator is $\\frac{9x^2}{2} + \\cdots$ and the limit is $\\frac{9}{2}$. 3/2 uses $\\frac{3x^2}{2}$, squaring $x$ but not the 3."
+  },
+  {
+    "id": "JEEMAIN-T2-006",
+    "section": "maths",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainCoordGeo",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Straight lines",
+    "stem": "What is the foot of the perpendicular from $(2, 3)$ to the line $x + y - 11 = 0$?",
+    "options": [
+      "$(6, 5)$",
+      "$(4, 7)$",
+      "$(5, 6)$",
+      "$(8, 9)$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The foot is $(2, 3) - \\frac{2 + 3 - 11}{1^2 + 1^2}(1, 1) = (2, 3) + 3(1, 1) = (5, 6)$, which lies on the line. $(8, 9)$ is the mirror image, twice as far along the normal."
+  },
+  {
+    "id": "JEEMAIN-T2-007",
+    "section": "maths",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainAlgebra",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Quadratic equations",
+    "stem": "How many real solutions does $x^2 - 5|x| + 6 = 0$ have?",
+    "options": [
+      "0",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Write $x^2 = |x|^2$: $|x|^2 - 5|x| + 6 = 0$ gives $|x| = 2$ or $|x| = 3$, so $x = \\pm 2, \\pm 3$, four solutions. 2 counts only the positive roots."
+  },
+  {
+    "id": "JEEMAIN-T2-008",
+    "section": "maths",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainCalculus",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Implicit differentiation",
+    "stem": "The curve $x^2 + xy + y^2 = 7$ passes through $(1, 2)$. What is $\\dfrac{dy}{dx}$ there?",
+    "options": [
+      "-1",
+      "-4/5",
+      "-2/5",
+      "4/5"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Differentiate: $2x + y + xy' + 2yy' = 0$. At $(1, 2)$: $2 + 2 + y'(1 + 4) = 0$, so $y' = -\\frac{4}{5}$. Dropping the $xy'$ term gives $-1$, and dropping the $y$ from the product rule gives $-\\frac{2}{5}$."
+  },
+  {
+    "id": "JEEMAIN-T2-009",
+    "section": "maths",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainCoordGeo",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Conic sections",
+    "stem": "Which line is a tangent to the parabola $y^2 = 8x$ with slope 2?",
+    "options": [
+      "$y = 2x + 4$",
+      "$y = 2x - 1$",
+      "$y = 2x + 1$",
+      "$y = 2x + 2$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "For $y^2 = 4ax$ the tangent with slope $m$ is $y = mx + \\frac{a}{m}$. Here $a = 2$ and $m = 2$, so $y = 2x + 1$. Substituting gives $(2x + 1)^2 = 8x$, that is $(2x - 1)^2 = 0$, a double root."
+  },
+  {
+    "id": "JEEMAIN-T2-010",
+    "section": "maths",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainAlgebra",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Matrices",
+    "stem": "The matrix $A = \\begin{pmatrix} 3 & 1 \\\\ -1 & 2 \\end{pmatrix}$ satisfies $A^2 - 5A + 7I = O$. Which of these is $A^{-1}$?",
+    "options": [
+      "$\\frac{1}{7}(5I - A)$",
+      "$\\frac{1}{5}(7I - A)$",
+      "$7(5I - A)$",
+      "$\\frac{1}{7}(A - 5I)$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Multiply $A^2 - 5A + 7I = O$ by $A^{-1}$: $A - 5I + 7A^{-1} = O$, so $A^{-1} = \\frac{1}{7}(5I - A)$. Check: $|A| = 6 + 1 = 7$ and $5I - A$ is $\\text{adj}\\,A$."
+  },
+  {
+    "id": "JEEMAIN-T2-011",
+    "section": "maths",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainCalculus",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Monotonicity",
+    "stem": "What is the largest open interval on which $f(x) = xe^{-x}$ is increasing?",
+    "options": [
+      "$(0, \\infty)$",
+      "$(-\\infty, 1)$",
+      "$(1, \\infty)$",
+      "$(-\\infty, 0)$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "$f'(x) = e^{-x} - xe^{-x} = e^{-x}(1 - x)$. Since $e^{-x} > 0$, $f'(x) > 0$ exactly when $x < 1$. On $(1, \\infty)$ the function decreases, and $(-\\infty, 0)$ is only part of the interval where it increases."
+  },
+  {
+    "id": "JEEMAIN-T2-012",
+    "section": "maths",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainCoordGeo",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Conic sections",
+    "stem": "What is the length of the latus rectum of the ellipse $9x^2 + 25y^2 = 225$?",
+    "options": [
+      "9/5",
+      "18/5",
+      "6",
+      "50/3"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Divide by 225: $\\frac{x^2}{25} + \\frac{y^2}{9} = 1$, so $a = 5$ and $b = 3$. The latus rectum is $\\frac{2b^2}{a} = \\frac{18}{5}$. 6 is the minor axis $2b$, and 50/3 is $\\frac{2a^2}{b}$, with $a$ and $b$ swapped."
+  },
+  {
+    "id": "JEEMAIN-T2-013",
+    "section": "maths",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainAlgebra",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Combinations",
+    "stem": "In how many ways can 8 identical balls be put into 3 different boxes so that no box is empty?",
+    "options": [
+      "21",
+      "28",
+      "45",
+      "56"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Give each box one ball first, then share the other 5 freely among 3 boxes: $\\binom{5 + 2}{2} = \\binom{7}{2} = 21$. 45 is $\\binom{10}{2}$, which allows empty boxes."
+  },
+  {
+    "id": "JEEMAIN-T2-014",
+    "section": "maths",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainCalculus",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Integration by parts",
+    "stem": "What is $\\displaystyle\\int xe^{2x} \\, dx$?",
+    "options": [
+      "$\\frac{e^{2x}}{2}(x - 1) + C$",
+      "$\\frac{e^{2x}}{2}(2x - 1) + C$",
+      "$\\frac{e^{2x}}{4}(2x + 1) + C$",
+      "$\\frac{e^{2x}}{4}(2x - 1) + C$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "By parts with $u = x$: $\\frac{xe^{2x}}{2} - \\int \\frac{e^{2x}}{2}dx = \\frac{xe^{2x}}{2} - \\frac{e^{2x}}{4} = \\frac{e^{2x}}{4}(2x - 1)$. Differentiating it gives back $xe^{2x}$."
+  },
+  {
+    "id": "JEEMAIN-T2-015",
+    "section": "maths",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainCoordGeo",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Bayes' theorem",
+    "stem": "Bag I has 3 red and 2 black balls; bag II has 2 red and 3 black balls. A bag is chosen at random and one ball drawn from it is red. What is the probability that it came from bag I?",
+    "options": [
+      "3/10",
+      "2/5",
+      "1/2",
+      "3/5"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$P(I \\mid R) = \\frac{\\frac{1}{2} \\cdot \\frac{3}{5}}{\\frac{1}{2} \\cdot \\frac{3}{5} + \\frac{1}{2} \\cdot \\frac{2}{5}} = \\frac{3}{5}$. 3/10 is $P(I \\cap R)$, the joint probability, not the conditional one."
+  },
+  {
+    "id": "JEEMAIN-T2-016",
+    "section": "maths",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainAlgebra",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Binomial theorem",
+    "stem": "In the expansion of $(1 + x)^n$, the coefficients of the 5th and 9th terms are equal. What is $n$?",
+    "options": [
+      "10",
+      "12",
+      "13",
+      "14"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The 5th and 9th terms have coefficients $\\binom{n}{4}$ and $\\binom{n}{8}$. $\\binom{n}{4} = \\binom{n}{8}$ with $4 \\neq 8$ needs $4 + 8 = n$, so $n = 12$. 13 adds the term numbers instead of the indices $r$."
+  },
+  {
+    "id": "JEEMAIN-T2-017",
+    "section": "maths",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainCalculus",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Properties of definite integrals",
+    "stem": "What is $\\displaystyle\\int_0^{\\pi/2} \\frac{\\sin x}{\\sin x + \\cos x} \\, dx$?",
+    "options": [
+      "$\\dfrac{\\pi}{8}$",
+      "$\\dfrac{\\pi}{4}$",
+      "$1$",
+      "$\\dfrac{\\pi}{2}$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Call it $I$. Replacing $x$ by $\\frac{\\pi}{2} - x$ gives the same integral with $\\cos x$ on top. Adding the two forms, $2I = \\int_0^{\\pi/2} 1\\,dx = \\frac{\\pi}{2}$, so $I = \\frac{\\pi}{4}$."
+  },
+  {
+    "id": "JEEMAIN-T2-018",
+    "section": "maths",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainCoordGeo",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Statistics",
+    "stem": "Statement I: Adding 5 to every observation leaves the variance unchanged. Statement II: Multiplying every observation by 2 doubles the variance. Which is correct?",
+    "options": [
+      "Both Statement I and Statement II are true",
+      "Both Statement I and Statement II are false",
+      "Statement I is true but Statement II is false",
+      "Statement I is false but Statement II is true"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "A shift moves the mean by the same amount, so deviations and the variance are unchanged. Multiplying by 2 doubles each deviation, so the variance is multiplied by $2^2 = 4$; it is the standard deviation that doubles."
+  },
+  {
+    "id": "JEEMAIN-T2-019",
+    "section": "maths",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainAlgebra",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Geometric progression",
+    "stem": "The 3rd and 7th terms of a GP of positive terms are 12 and 192. What is the sum of its first 6 terms?",
+    "options": [
+      "63",
+      "93",
+      "96",
+      "189"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$ar^2 = 12$ and $ar^6 = 192$, so $r^4 = 16$, $r = 2$ and $a = 3$. $S_6 = 3 \\cdot \\frac{2^6 - 1}{2 - 1} = 189$. 93 is $S_5$, the sum of 5 terms, and 96 is the 6th term."
+  },
+  {
+    "id": "JEEMAIN-T2-020",
+    "section": "maths",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainCalculus",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Differential equations",
+    "stem": "What is the general solution of $\\dfrac{dy}{dx} + \\dfrac{y}{x} = x^2$ for $x > 0$?",
+    "options": [
+      "$y = \\frac{x^4}{4} + Cx$",
+      "$xy = \\frac{x^3}{3} + C$",
+      "$xy = \\frac{x^4}{4} + C$",
+      "$y = \\frac{x^3}{3} + C$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "It is linear with integrating factor $e^{\\int dx/x} = x$. Then $\\frac{d}{dx}(xy) = x \\cdot x^2 = x^3$, so $xy = \\frac{x^4}{4} + C$. $\\frac{x^3}{3}$ forgets to multiply the right side by the integrating factor."
+  },
+  {
+    "id": "JEEMAIN-T2-021",
+    "section": "maths",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainAlgebra",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Functions",
+    "stem": "How many onto (surjective) functions are there from $\\{1, 2, 3, 4\\}$ to $\\{a, b, c\\}$? Type the integer only.",
+    "numeric": {
+      "answers": [
+        "36"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "By inclusion and exclusion, onto maps from a 4-set to a 3-set number $3^4 - \\binom{3}{1}2^4 + \\binom{3}{2}1^4 = 81 - 48 + 3 = 36$."
+  },
+  {
+    "id": "JEEMAIN-T2-022",
+    "section": "maths",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainCalculus",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Definite integrals",
+    "stem": "What is the value of $\\displaystyle\\int_1^{e^4} \\frac{\\ln x}{x} \\, dx$? Type the integer only.",
+    "numeric": {
+      "answers": [
+        "8"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "Put $t = \\ln x$, $dt = \\frac{dx}{x}$: the limits become 0 and 4 and the integral is $\\int_0^4 t\\,dt = \\frac{16}{2} = 8$."
+  },
+  {
+    "id": "JEEMAIN-T2-023",
+    "section": "maths",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainCoordGeo",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Vectors",
+    "stem": "The vectors $2\\hat{i} - \\hat{j} + 3\\hat{k}$, $\\hat{i} + 4\\hat{j} - 2\\hat{k}$ and $\\lambda\\hat{i} + 5\\hat{j} + 5\\hat{k}$ are coplanar. What is $\\lambda$? Type the integer only.",
+    "numeric": {
+      "answers": [
+        "8"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "Coplanar vectors have a zero scalar triple product: $2(20 + 10) + 1(5 + 2\\lambda) + 3(5 - 4\\lambda) = 60 + 5 + 2\\lambda + 15 - 12\\lambda = 80 - 10\\lambda = 0$, so $\\lambda = 8$."
+  },
+  {
+    "id": "JEEMAIN-T2-024",
+    "section": "maths",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainAlgebra",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Complex numbers",
+    "stem": "What is the modulus of $\\dfrac{(\\sqrt{3} + i)^6}{(1 - i)^4}$? Type the integer only.",
+    "numeric": {
+      "answers": [
+        "16"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "$|\\sqrt{3} + i| = 2$ and $|1 - i| = \\sqrt{2}$. The modulus of a quotient of powers is $\\frac{2^6}{(\\sqrt{2})^4} = \\frac{64}{4} = 16$."
+  },
+  {
+    "id": "JEEMAIN-T2-025",
+    "section": "maths",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainCalculus",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Maxima and minima",
+    "stem": "$f(x) = x^3 + ax^2 + bx$ has turning points at $x = 1$ and $x = 3$. What is $b - a$? Type the integer only.",
+    "numeric": {
+      "answers": [
+        "15"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "$f'(x) = 3x^2 + 2ax + b$ must equal $3(x - 1)(x - 3) = 3x^2 - 12x + 9$. So $2a = -12$, $a = -6$, and $b = 9$, giving $b - a = 15$."
+  },
+  {
+    "id": "JEEMAIN-T2-026",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainMechanics",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Relative velocity",
+    "stem": "Rain falls vertically at 6 m/s. A cyclist rides horizontally at 8 m/s. At what speed does the rain hit the cyclist, relative to the cyclist?",
+    "options": [
+      "2 m/s",
+      "8 m/s",
+      "10 m/s",
+      "14 m/s"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\vec{v}_{rain/cyclist} = \\vec{v}_{rain} - \\vec{v}_{cyclist}$; the two are at right angles, so its size is $\\sqrt{6^2 + 8^2} = 10$ m/s. 14 and 2 m/s add or subtract the speeds as if they were in a line."
+  },
+  {
+    "id": "JEEMAIN-T2-027",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainElectro",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electric potential",
+    "stem": "The potential along the $x$-axis is $V = 4x^2$ volts ($x$ in metres). What is the electric field at $x = 1$ m?",
+    "options": [
+      "4 V/m along $+x$",
+      "8 V/m along $+x$",
+      "4 V/m along $-x$",
+      "8 V/m along $-x$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "$E = -\\frac{dV}{dx} = -8x$, which is $-8$ V/m at $x = 1$: 8 V/m pointing along $-x$, towards falling potential. 4 V/m is the potential itself, not its gradient."
+  },
+  {
+    "id": "JEEMAIN-T2-028",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainOpticsModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "First law of thermodynamics",
+    "stem": "An ideal gas expands adiabatically and reversibly. Which is true?",
+    "options": [
+      "Its internal energy stays the same",
+      "No heat flows and the gas cools",
+      "No heat flows and the gas warms",
+      "Heat flows in and the gas cools"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Adiabatic means $Q = 0$, so $\\Delta U = -W$. The gas does work as it expands, so its internal energy, and hence its temperature, falls. Unchanged internal energy describes an isothermal expansion."
+  },
+  {
+    "id": "JEEMAIN-T2-029",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainMechanics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Kinematics",
+    "stem": "A particle moves along a line with $x = t^3 - 6t^2 + 9t$ (in metres, $t$ in seconds). What is its acceleration the first time it is momentarily at rest?",
+    "options": [
+      "-12 m/s²",
+      "-6 m/s²",
+      "0 m/s²",
+      "6 m/s²"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$v = 3t^2 - 12t + 9 = 3(t - 1)(t - 3)$ is first zero at $t = 1$ s. $a = 6t - 12 = -6$ m/s$^2$ then. At the second stop, $t = 3$ s, it is $+6$ m/s$^2$."
+  },
+  {
+    "id": "JEEMAIN-T2-030",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainElectro",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Dielectrics",
+    "stem": "A capacitor storing energy $U$ stays connected to its battery while a slab of dielectric constant $K$ is slid in to fill the gap. What is the stored energy now?",
+    "options": [
+      "$K^2U$",
+      "$KU$",
+      "$\\frac{U}{K}$",
+      "$U$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The battery holds $V$ fixed while $C$ becomes $KC$, so $U = \\frac{1}{2}CV^2$ rises to $KU$; the battery supplies the extra charge. $\\frac{U}{K}$ is the result when the battery is disconnected first, fixing $Q$."
+  },
+  {
+    "id": "JEEMAIN-T2-031",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainOpticsModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Thermal conduction",
+    "stem": "Two rods of equal length and cross-section, with thermal conductivities $K$ and $2K$, are joined end to end. What is the conductivity of the combined rod?",
+    "options": [
+      "$\\frac{2K}{3}$",
+      "$3K$",
+      "$\\frac{4K}{3}$",
+      "$\\frac{3K}{2}$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "In series the thermal resistances add: $\\frac{2L}{K_{eq}} = \\frac{L}{K} + \\frac{L}{2K}$, so $K_{eq} = \\frac{2K_1K_2}{K_1 + K_2} = \\frac{4K}{3}$. $\\frac{3K}{2}$ is the simple average, which is wrong for series flow."
+  },
+  {
+    "id": "JEEMAIN-T2-032",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainMechanics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Circular motion",
+    "stem": "A curve of radius 90 m is banked at $45^\\circ$. At what speed can a car take it with no friction needed?",
+    "options": [
+      "15 m/s",
+      "25 m/s",
+      "30 m/s",
+      "90 m/s"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Without friction, $\\tan\\theta = \\frac{v^2}{rg}$, so $v = \\sqrt{rg\\tan\\theta} = \\sqrt{90 \\times 10 \\times 1} = 30$ m/s. Using $\\sin 45^\\circ$ in place of $\\tan 45^\\circ$ gives about 25 m/s."
+  },
+  {
+    "id": "JEEMAIN-T2-033",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainElectro",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Resistance",
+    "stem": "A wire is stretched uniformly until it is 20% longer. By what percentage does its resistance increase?",
+    "options": [
+      "20%",
+      "22%",
+      "40%",
+      "44%"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The volume is fixed, so the area falls by the same factor the length rises: $R \\propto L^2$, and $1.2^2 = 1.44$, a 44% increase. 40% is the small-change estimate $2 \\times 20\\%$, which is not accurate for so large a stretch."
+  },
+  {
+    "id": "JEEMAIN-T2-034",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainOpticsModern",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Young's double slit",
+    "stem": "In a double-slit experiment the slits are 0.5 mm apart and the screen is 1 m away. Light of wavelength 500 nm is used. What is the fringe width?",
+    "options": [
+      "0.1 mm",
+      "0.5 mm",
+      "1 mm",
+      "2 mm"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\beta = \\frac{\\lambda D}{d} = \\frac{500 \\times 10^{-9} \\times 1}{0.5 \\times 10^{-3}} = 10^{-3}$ m $= 1$ mm."
+  },
+  {
+    "id": "JEEMAIN-T2-035",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainMechanics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Explosions",
+    "stem": "A 3 kg shell at rest bursts into pieces of 1 kg and 2 kg. The 1 kg piece flies off at 12 m/s. How much kinetic energy does the burst release?",
+    "options": [
+      "36 J",
+      "54 J",
+      "72 J",
+      "108 J"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Momentum stays zero, so the 2 kg piece moves at 6 m/s the other way. Energy released $= \\frac{1}{2}(1)(12^2) + \\frac{1}{2}(2)(6^2) = 72 + 36 = 108$ J. 72 J counts the small piece only."
+  },
+  {
+    "id": "JEEMAIN-T2-036",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainMechanics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Angular momentum",
+    "stem": "A disc spins freely about its axis. An identical disc, not rotating, is dropped gently onto it along the same axis, and the two turn together. What fraction of the original kinetic energy is lost?",
+    "options": [
+      "None of it",
+      "Three quarters",
+      "One quarter",
+      "One half"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "No outside torque acts, so $L = I\\omega$ is conserved: $I\\omega = 2I\\omega'$ and $\\omega' = \\frac{\\omega}{2}$. The new energy is $\\frac{1}{2}(2I)\\left(\\frac{\\omega}{2}\\right)^2 = \\frac{1}{2} \\cdot \\frac{1}{2}I\\omega^2$, half the old, so one half is lost to friction between the discs. Three quarters assumes $\\omega$ halves while $I$ stays the same."
+  },
+  {
+    "id": "JEEMAIN-T2-037",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainElectro",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Motion in a magnetic field",
+    "stem": "A proton and an alpha particle with equal kinetic energies move at right angles to the same uniform magnetic field. What is the ratio of the radius of the proton's path to that of the alpha particle's?",
+    "options": [
+      "2 : 1",
+      "1 : 2",
+      "1 : 1",
+      "1 : 4"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "$r = \\frac{mv}{qB} = \\frac{\\sqrt{2mK}}{qB}$. The alpha particle has 4 times the mass and 2 times the charge: $\\frac{\\sqrt{4}}{2} = 1$, so the radii are equal. 1 : 2 is the answer for equal speeds."
+  },
+  {
+    "id": "JEEMAIN-T2-038",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainOpticsModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Bohr model",
+    "stem": "How much energy is needed to ionise a hydrogen atom that is in its second excited state?",
+    "options": [
+      "1.51 eV",
+      "3.4 eV",
+      "12.09 eV",
+      "13.6 eV"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$E_n = -\\frac{13.6}{n^2}$ eV, and the second excited state is $n = 3$: $E_3 = -1.51$ eV, so 1.51 eV frees the electron. 3.4 eV is for $n = 2$, the first excited state, and 12.09 eV is the energy to raise it from $n = 1$ to $n = 3$."
+  },
+  {
+    "id": "JEEMAIN-T2-039",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainMechanics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Acceleration due to gravity",
+    "stem": "At what height above Earth's surface does $g$ fall to one ninth of its surface value? ($R$ is Earth's radius.)",
+    "options": [
+      "$\\frac{R}{3}$",
+      "$8R$",
+      "$2R$",
+      "$3R$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "$g' = g\\frac{R^2}{(R + h)^2} = \\frac{g}{9}$ needs $R + h = 3R$, so $h = 2R$. $3R$ is the distance from Earth's centre, not the height above the surface."
+  },
+  {
+    "id": "JEEMAIN-T2-040",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainElectro",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Galvanometer",
+    "stem": "A galvanometer of resistance 50 $\\Omega$ gives full-scale deflection at 5 mA. How is it made into an ammeter reading up to 1 A?",
+    "options": [
+      "About 0.25 $\\Omega$ in parallel",
+      "About 200 $\\Omega$ in series",
+      "About 4 $\\Omega$ in parallel",
+      "About 0.25 $\\Omega$ in series"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A shunt in parallel carries the excess: $S = \\frac{I_gG}{I - I_g} = \\frac{0.005 \\times 50}{0.995} \\approx 0.25\\ \\Omega$. A large resistance in series would make it a voltmeter instead."
+  },
+  {
+    "id": "JEEMAIN-T2-041",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainOpticsModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "de Broglie wavelength",
+    "stem": "An electron starting from rest is accelerated through 100 V. What is its de Broglie wavelength, approximately?",
+    "options": [
+      "0.123 Å",
+      "0.39 Å",
+      "1.23 Å",
+      "12.3 Å"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\lambda = \\frac{h}{\\sqrt{2meV}} \\approx \\frac{12.27}{\\sqrt{V}}$ Å $= \\frac{12.27}{10} \\approx 1.23$ Å. 12.3 Å forgets the square root of 100."
+  },
+  {
+    "id": "JEEMAIN-T2-042",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainMechanics",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Viscosity",
+    "stem": "Two identical raindrops falling at terminal speed $v$ merge into one drop. What is the terminal speed of the new drop?",
+    "options": [
+      "$2v$",
+      "$2^{1/3}v$",
+      "$4v$",
+      "$2^{2/3}v$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Volume doubles, so the radius becomes $2^{1/3}r$. Terminal speed is proportional to $r^2$ (Stokes' law), so it becomes $2^{2/3}v$, about $1.59v$."
+  },
+  {
+    "id": "JEEMAIN-T2-043",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainElectro",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electromagnetic waves",
+    "stem": "In an electromagnetic wave travelling in a vacuum, what is the ratio of the electric field amplitude $E_0$ to the magnetic field amplitude $B_0$?",
+    "options": [
+      "$c$",
+      "$1$",
+      "$c^2$",
+      "$\\frac{1}{c}$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "In a plane electromagnetic wave $E_0 = cB_0$, so $\\frac{E_0}{B_0} = c = 3 \\times 10^8$ m/s. The fields are in phase and at right angles to each other and to the direction of travel."
+  },
+  {
+    "id": "JEEMAIN-T2-044",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainOpticsModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Doppler effect",
+    "stem": "A source of sound of frequency $f$ moves straight towards a stationary listener at one tenth of the speed of sound. What frequency does the listener hear?",
+    "options": [
+      "$\\frac{11f}{10}$",
+      "$\\frac{10f}{11}$",
+      "$\\frac{9f}{10}$",
+      "$\\frac{10f}{9}$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "For a moving source, $f' = f\\frac{v}{v - v_s} = f\\frac{v}{0.9v} = \\frac{10f}{9}$. $\\frac{11f}{10}$ is the result for a listener moving at $0.1v$ towards a still source."
+  },
+  {
+    "id": "JEEMAIN-T2-045",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainMechanics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Elasticity",
+    "stem": "A wire is stretched by a load. A second wire of the same material has twice the length and twice the radius and carries the same load. How does its extension compare?",
+    "options": [
+      "Half as much",
+      "A quarter as much",
+      "The same",
+      "Twice as much"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Extension $\\Delta L = \\frac{FL}{AY}$ is proportional to $\\frac{L}{r^2}$, here $\\frac{2}{4} = \\frac{1}{2}$. A quarter forgets that the length also doubled."
+  },
+  {
+    "id": "JEEMAIN-T2-046",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainMechanics",
+    "difficulty": 1,
+    "format": "numeric",
+    "skill": "Power",
+    "stem": "A pump lifts 600 kg of water through a height of 20 m in one minute. What is its power output, in watts? Type the integer only.",
+    "numeric": {
+      "answers": [
+        "2000"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "$P = \\frac{mgh}{t} = \\frac{600 \\times 10 \\times 20}{60} = 2000$ W."
+  },
+  {
+    "id": "JEEMAIN-T2-047",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainElectro",
+    "difficulty": 1,
+    "format": "numeric",
+    "skill": "Self-induction",
+    "stem": "The current in a coil of self-inductance 0.4 H falls steadily from 10 A to 2 A in 0.1 s. What is the size of the induced emf, in volts? Type the integer only.",
+    "numeric": {
+      "answers": [
+        "32"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "$|e| = L\\frac{\\Delta I}{\\Delta t} = 0.4 \\times \\frac{8}{0.1} = 32$ V."
+  },
+  {
+    "id": "JEEMAIN-T2-048",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainOpticsModern",
+    "difficulty": 3,
+    "format": "numeric",
+    "skill": "Radioactive decay series",
+    "stem": "$^{238}_{92}$U decays to $^{206}_{82}$Pb by a series of alpha and beta-minus decays. How many decays are there in all? Type the integer only.",
+    "numeric": {
+      "answers": [
+        "14"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "Only alpha decay changes the mass number, so there are $\\frac{238 - 206}{4} = 8$ alpha decays, taking $Z$ to $92 - 16 = 76$. Each beta-minus decay raises $Z$ by 1, so 6 are needed to reach 82. $8 + 6 = 14$."
+  },
+  {
+    "id": "JEEMAIN-T2-049",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainMechanics",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Simple pendulum",
+    "stem": "The length of a simple pendulum is increased by 44%. By what percentage does its period increase? Type the integer only.",
+    "numeric": {
+      "answers": [
+        "20"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "$T \\propto \\sqrt{L}$, so the new period is $\\sqrt{1.44}\\,T = 1.2T$, an increase of 20%. The small-error rule $\\frac{1}{2} \\times 44\\% = 22\\%$ is only approximate for a change this large."
+  },
+  {
+    "id": "JEEMAIN-T2-050",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainElectro",
+    "difficulty": 3,
+    "format": "numeric",
+    "skill": "Electric power",
+    "stem": "Bulbs rated 100 W, 220 V and 25 W, 220 V are joined in series across a 220 V supply. What power, in watts, does the 25 W bulb use? Type the integer only.",
+    "numeric": {
+      "answers": [
+        "16"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "$R = \\frac{V^2}{P}$ gives 484 $\\Omega$ and 1936 $\\Omega$. The current is $\\frac{220}{2420} = \\frac{1}{11}$ A, so the 25 W bulb uses $\\frac{1936}{121} = 16$ W, more than the 100 W bulb's 4 W."
+  },
+  {
+    "id": "JEEMAIN-T2-051",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainInorganic",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ionic radius",
+    "stem": "Which of these isoelectronic ions is the smallest?",
+    "options": [
+      "Ca²⁺",
+      "Cl⁻",
+      "K⁺",
+      "S²⁻"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "All have 18 electrons. Ca$^{2+}$ has the most protons (20) pulling on them, so it is the smallest; S$^{2-}$, with 16 protons, is the largest."
+  },
+  {
+    "id": "JEEMAIN-T2-052",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainOrganic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Purification",
+    "stem": "Which method separates o-nitrophenol from p-nitrophenol?",
+    "options": [
+      "Simple crystallisation",
+      "Sublimation",
+      "Chromatography on paper only",
+      "Steam distillation"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "o-Nitrophenol forms an intramolecular hydrogen bond, so it is volatile in steam. p-Nitrophenol forms intermolecular hydrogen bonds with its neighbours and stays behind."
+  },
+  {
+    "id": "JEEMAIN-T2-053",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainPhysical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Quantum numbers",
+    "stem": "Which set of quantum numbers is not allowed for an electron?",
+    "options": [
+      "$n = 2,\\ l = 2,\\ m = 0$",
+      "$n = 4,\\ l = 0,\\ m = 0$",
+      "$n = 2,\\ l = 1,\\ m = 1$",
+      "$n = 3,\\ l = 2,\\ m = -2$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "$l$ runs from 0 to $n - 1$, so $n = 2$ allows only $l = 0$ or 1. The other sets obey $0 \\leq l \\leq n - 1$ and $-l \\leq m \\leq l$."
+  },
+  {
+    "id": "JEEMAIN-T2-054",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainInorganic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Group 15 hydrides",
+    "stem": "Which group 15 hydride is the strongest reducing agent?",
+    "options": [
+      "PH₃",
+      "AsH₃",
+      "BiH₃",
+      "NH₃"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Down the group the E-H bond weakens, so the hydride gives up hydrogen more easily and reducing power rises from NH$_3$ to BiH$_3$."
+  },
+  {
+    "id": "JEEMAIN-T2-055",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainOrganic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electronic effects",
+    "stem": "Which group attached to a benzene ring withdraws electrons from the ring by resonance?",
+    "options": [
+      "-OCH₃",
+      "-NH₂",
+      "-OH",
+      "-NO₂"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The nitro group shows a $-R$ effect, pulling $\\pi$ electron density out of the ring and deactivating it. -OH, -NH$_2$ and -OCH$_3$ have lone pairs that they donate into the ring ($+R$)."
+  },
+  {
+    "id": "JEEMAIN-T2-056",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainPhysical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Molecular orbital theory",
+    "stem": "Which of these species is diamagnetic?",
+    "options": [
+      "O₂²⁻",
+      "O₂",
+      "O₂⁺",
+      "O₂⁻"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "O$_2$ has two unpaired electrons in its $\\pi^*$ orbitals. O$_2^+$ and O$_2^-$ each have one. O$_2^{2-}$ fills both $\\pi^*$ orbitals, so all its electrons are paired."
+  },
+  {
+    "id": "JEEMAIN-T2-057",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainInorganic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Interhalogen compounds",
+    "stem": "What is the shape of the ClF$_3$ molecule?",
+    "options": [
+      "Trigonal planar",
+      "Pyramidal",
+      "See-saw",
+      "T-shaped"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Cl has 3 bond pairs and 2 lone pairs, a trigonal bipyramidal arrangement. The lone pairs take two equatorial positions, leaving a T shape. Trigonal planar would need no lone pairs."
+  },
+  {
+    "id": "JEEMAIN-T2-058",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainOrganic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ozonolysis",
+    "stem": "What are the products of reductive ozonolysis of 2-methylbut-2-ene, (CH$_3$)$_2$C=CHCH$_3$?",
+    "options": [
+      "Two molecules of propanone",
+      "Propanone and ethanal",
+      "Propanal and ethanal",
+      "Butanone and methanal"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Ozonolysis cuts the C=C and makes each carbon a C=O. (CH$_3$)$_2$C= becomes propanone and =CHCH$_3$ becomes ethanal."
+  },
+  {
+    "id": "JEEMAIN-T2-059",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainPhysical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Entropy",
+    "stem": "For which change is the entropy change of the system negative?",
+    "options": [
+      "A gas expanding into a vacuum",
+      "Water evaporating",
+      "Water freezing to ice",
+      "Ice melting to water"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Freezing locks molecules into an ordered lattice, so the system's entropy falls. Melting, evaporating and free expansion all spread energy and matter more widely, raising entropy."
+  },
+  {
+    "id": "JEEMAIN-T2-060",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainInorganic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Potassium dichromate",
+    "stem": "In acidic solution, how many electrons does each dichromate ion, Cr$_2$O$_7^{2-}$, gain when it acts as an oxidising agent?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "6"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Each Cr goes from +6 to +3, gaining 3 electrons, and the ion has two Cr atoms, so it gains 6. 3 is the figure per chromium atom."
+  },
+  {
+    "id": "JEEMAIN-T2-061",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainOrganic",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Friedel-Crafts reaction",
+    "stem": "Benzene is treated with chloromethane and anhydrous AlCl$_3$. What is the main product?",
+    "options": [
+      "Chlorobenzene",
+      "Acetophenone",
+      "Toluene",
+      "Benzyl chloride"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "This is Friedel-Crafts alkylation: AlCl$_3$ produces a methyl electrophile that substitutes onto the ring, giving methylbenzene (toluene). Acetophenone comes from acylation with an acyl chloride."
+  },
+  {
+    "id": "JEEMAIN-T2-062",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainPhysical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Equilibrium constants",
+    "stem": "For $\\text{N}_2(g) + 3\\text{H}_2(g) \\rightleftharpoons 2\\text{NH}_3(g)$, how is $K_p$ related to $K_c$?",
+    "options": [
+      "$K_p = K_c(RT)^{-1}$",
+      "$K_p = K_c(RT)^{2}$",
+      "$K_p = K_c(RT)^{-2}$",
+      "$K_p = K_c$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "$K_p = K_c(RT)^{\\Delta n_g}$ with $\\Delta n_g = 2 - 4 = -2$. Taking reactants minus products gives the wrong sign, $+2$."
+  },
+  {
+    "id": "JEEMAIN-T2-063",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainInorganic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Lanthanoids",
+    "stem": "Which lanthanoid commonly shows a +2 oxidation state as well as +3?",
+    "options": [
+      "Lutetium",
+      "Gadolinium",
+      "Cerium",
+      "Europium"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Eu$^{2+}$ is $4f^7$, a stable half-filled subshell, so europium readily forms +2 compounds. Cerium's extra state is +4, and Gd$^{3+}$ and Lu$^{3+}$ are already $4f^7$ and $4f^{14}$."
+  },
+  {
+    "id": "JEEMAIN-T2-064",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainOrganic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Aldol condensation",
+    "stem": "Which of these aldehydes undergoes aldol condensation with dilute NaOH?",
+    "options": [
+      "2,2-Dimethylpropanal",
+      "Methanal",
+      "Ethanal",
+      "Benzaldehyde"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Aldol condensation needs an $\\alpha$-hydrogen to form the enolate. Ethanal has three. Methanal, benzaldehyde and 2,2-dimethylpropanal have none, so they give the Cannizzaro reaction instead."
+  },
+  {
+    "id": "JEEMAIN-T2-065",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainPhysical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rate law",
+    "stem": "The rate law is $r = k[A][B]^2$. If $[A]$ is tripled and $[B]$ is halved, by what factor does the rate change?",
+    "options": [
+      "3/4",
+      "3/2",
+      "3",
+      "6"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The new rate is $k(3[A])\\left(\\frac{[B]}{2}\\right)^2 = 3 \\times \\frac{1}{4} = \\frac{3}{4}$ of the old one. 3/2 forgets to square the factor $\\frac{1}{2}$ for $[B]$."
+  },
+  {
+    "id": "JEEMAIN-T2-066",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainInorganic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Crystal field theory",
+    "stem": "Which of these complexes is low-spin?",
+    "options": [
+      "[Mn(H₂O)₆]²⁺",
+      "[Co(NH₃)₆]³⁺",
+      "[CoF₆]³⁻",
+      "[MnCl₄]²⁻"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Co$^{3+}$ is $3d^6$, and ammonia's field is large enough with a 3+ ion to pair all six electrons in $t_{2g}$, a low-spin, diamagnetic complex. F$^-$, H$_2$O and Cl$^-$ are weak-field ligands here."
+  },
+  {
+    "id": "JEEMAIN-T2-067",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainOrganic",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Diazonium salts",
+    "stem": "Which amine gives a diazonium salt that is stable at 0 to 5 °C when treated with nitrous acid?",
+    "options": [
+      "N-Methylaniline",
+      "Aniline",
+      "Ethylamine",
+      "Benzylamine"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Aromatic primary amines give arenediazonium salts, stabilised by the ring, at 0 to 5 °C. Aliphatic primary amines such as ethylamine and benzylamine give diazonium ions that lose N$_2$ at once; N-methylaniline is secondary and gives an N-nitroso compound."
+  },
+  {
+    "id": "JEEMAIN-T2-068",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainPhysical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Colligative properties",
+    "stem": "Which 0.01 molal aqueous solution has the lowest freezing point, assuming complete dissociation?",
+    "options": [
+      "Sucrose",
+      "NaCl",
+      "Al₂(SO₄)₃",
+      "K₂SO₄"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Depression of freezing point is $iK_fm$. Al$_2$(SO$_4$)$_3$ gives 5 ions ($i = 5$), K$_2$SO$_4$ 3, NaCl 2 and sucrose 1, so the aluminium sulphate solution freezes lowest."
+  },
+  {
+    "id": "JEEMAIN-T2-069",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainInorganic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Isomerism in complexes",
+    "stem": "$[\\text{Co(NH}_3)_5\\text{Br}]\\text{SO}_4$ and $[\\text{Co(NH}_3)_5\\text{SO}_4]\\text{Br}$ are which kind of isomers?",
+    "options": [
+      "Ionisation isomers",
+      "Linkage isomers",
+      "Hydrate isomers",
+      "Coordination isomers"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The two swap an ion between the coordination sphere and the counter-ion, so they give different ions in solution: one gives SO$_4^{2-}$, the other Br$^-$. Linkage isomers differ in which atom of a ligand binds."
+  },
+  {
+    "id": "JEEMAIN-T2-070",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainOrganic",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Amino acids",
+    "stem": "Which of these amino acids is not optically active?",
+    "options": [
+      "Glycine",
+      "Valine",
+      "Alanine",
+      "Leucine"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Glycine, H$_2$N-CH$_2$-COOH, has two hydrogens on its $\\alpha$-carbon, so that carbon is not chiral. The others carry a side chain there and exist as D and L forms."
+  },
+  {
+    "id": "JEEMAIN-T2-071",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainPhysical",
+    "difficulty": 1,
+    "format": "numeric",
+    "skill": "Stoichiometry",
+    "stem": "What mass of oxygen, in grams, is needed to burn 8 g of methane completely? Type the integer only.",
+    "numeric": {
+      "answers": [
+        "32"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "CH$_4$ + 2O$_2$ $\\to$ CO$_2$ + 2H$_2$O. 8 g of methane is 0.5 mol, which needs 1 mol, or 32 g, of O$_2$."
+  },
+  {
+    "id": "JEEMAIN-T2-072",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainPhysical",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Buffer solutions",
+    "stem": "A buffer contains a weak acid of $\\text{p}K_a = 5$ and its sodium salt, with the salt concentration 100 times the acid concentration. What is its pH? Type the integer only.",
+    "numeric": {
+      "answers": [
+        "7"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "By the Henderson equation, pH $= \\text{p}K_a + \\log\\frac{[\\text{salt}]}{[\\text{acid}]} = 5 + \\log 100 = 5 + 2 = 7$."
+  },
+  {
+    "id": "JEEMAIN-T2-073",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainInorganic",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Oxides of phosphorus",
+    "stem": "How many P-O-P bridges are there in one molecule of P$_4$O$_{10}$? Type the integer only.",
+    "numeric": {
+      "answers": [
+        "6"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "The four P atoms sit at the corners of a tetrahedron and each of its 6 edges is bridged by an O atom. The other 4 O atoms are terminal P=O groups."
+  },
+  {
+    "id": "JEEMAIN-T2-074",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainOrganic",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Stereoisomerism",
+    "stem": "How many chiral carbon atoms are there in the open-chain form of glucose? Type the integer only.",
+    "numeric": {
+      "answers": [
+        "4"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "Open-chain glucose is CHO-(CHOH)$_4$-CH$_2$OH. C2, C3, C4 and C5 each carry four different groups; C1 (CHO) and C6 (CH$_2$OH) do not. That gives $2^4 = 16$ stereoisomers of the aldohexose."
+  },
+  {
+    "id": "JEEMAIN-T2-075",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "jeemainPhysical",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Chemical kinetics",
+    "stem": "A first-order reaction has a half-life of 12 minutes. How many minutes does it take to be 93.75% complete? Type the integer only.",
+    "numeric": {
+      "answers": [
+        "48"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "93.75% complete leaves $\\frac{1}{16} = \\left(\\frac{1}{2}\\right)^4$, which takes 4 half-lives: $4 \\times 12 = 48$ min."
+  },
+  {
+    "id": "JEEMAIN-D-001",
+    "section": "maths",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainAlgebra",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Relations",
+    "stem": "$R$ is the relation on the integers given by $a\\,R\\,b$ when $a - b$ is divisible by 5. Which describes $R$?",
+    "options": [
+      "Reflexive and transitive only",
+      "Symmetric and transitive only",
+      "An equivalence relation",
+      "Reflexive and symmetric only"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "$a - a = 0$ is divisible by 5 (reflexive); if $5 \\mid a - b$ then $5 \\mid b - a$ (symmetric); and $a - c = (a - b) + (b - c)$ (transitive). So $R$ is an equivalence relation, congruence modulo 5."
+  },
+  {
+    "id": "JEEMAIN-D-002",
+    "section": "maths",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainCalculus",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Limits",
+    "stem": "What is $\\lim_{x \\to \\pi/2} \\dfrac{1 - \\sin x}{\\left(\\frac{\\pi}{2} - x\\right)^2}$?",
+    "options": [
+      "0",
+      "1/8",
+      "1/4",
+      "1/2"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Put $h = \\frac{\\pi}{2} - x$. Then $1 - \\sin x = 1 - \\cos h \\approx \\frac{h^2}{2}$, so the limit is $\\frac{1}{2}$."
+  },
+  {
+    "id": "JEEMAIN-D-003",
+    "section": "maths",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainCoordGeo",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Trigonometric equations",
+    "stem": "What is the general solution of $\\tan\\theta = -1$, where $n$ is any integer?",
+    "options": [
+      "$\\frac{n\\pi}{2} - \\frac{\\pi}{4}$",
+      "$n\\pi - \\frac{\\pi}{4}$",
+      "$2n\\pi - \\frac{\\pi}{4}$",
+      "$n\\pi + \\frac{\\pi}{4}$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "$\\tan$ has period $\\pi$ and $\\tan\\left(-\\frac{\\pi}{4}\\right) = -1$, so $\\theta = n\\pi - \\frac{\\pi}{4}$. $2n\\pi - \\frac{\\pi}{4}$ misses half the solutions, such as $\\frac{3\\pi}{4}$."
+  },
+  {
+    "id": "JEEMAIN-D-004",
+    "section": "maths",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainAlgebra",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Quadratic equations",
+    "stem": "For which values of $k$ are the roots of $x^2 + kx + 9 = 0$ not real?",
+    "options": [
+      "$k < -6$ or $k > 6$",
+      "$k > 6$ only",
+      "$-3 < k < 3$",
+      "$-6 < k < 6$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The roots are not real when the discriminant is negative: $k^2 - 36 < 0$, so $-6 < k < 6$. $k < -6$ or $k > 6$ is where the roots are real and different."
+  },
+  {
+    "id": "JEEMAIN-D-005",
+    "section": "maths",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainCalculus",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Derivatives",
+    "stem": "What is $\\dfrac{d}{dx}\\ln(\\sec x + \\tan x)$?",
+    "options": [
+      "$\\sec^2 x$",
+      "$\\sec x$",
+      "$\\tan x$",
+      "$\\sec x \\tan x$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The chain rule gives $\\frac{\\sec x\\tan x + \\sec^2 x}{\\sec x + \\tan x} = \\frac{\\sec x(\\tan x + \\sec x)}{\\sec x + \\tan x} = \\sec x$."
+  },
+  {
+    "id": "JEEMAIN-D-006",
+    "section": "maths",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainCoordGeo",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Circles",
+    "stem": "What is the length of the tangent from the point $(6, 1)$ to the circle $x^2 + y^2 - 4x + 2y - 4 = 0$?",
+    "options": [
+      "$\\sqrt{13}$",
+      "$3$",
+      "$11$",
+      "$\\sqrt{11}$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The tangent length is $\\sqrt{S_1}$, where $S_1 = 36 + 1 - 24 + 2 - 4 = 11$. So it is $\\sqrt{11}$; 11 forgets the square root."
+  },
+  {
+    "id": "JEEMAIN-D-007",
+    "section": "maths",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainAlgebra",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Matrices",
+    "stem": "Statement I: The determinant of every skew-symmetric matrix of odd order is zero. Statement II: Every square matrix is the sum of a symmetric matrix and a skew-symmetric matrix. Which is correct?",
+    "options": [
+      "Both Statement I and Statement II are true",
+      "Both Statement I and Statement II are false",
+      "Statement I is true but Statement II is false",
+      "Statement I is false but Statement II is true"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "For skew-symmetric $A$ of odd order $n$, $|A| = |A^T| = |-A| = (-1)^n|A| = -|A|$, so $|A| = 0$. And $A = \\frac{1}{2}(A + A^T) + \\frac{1}{2}(A - A^T)$ splits any square matrix that way. Both statements are true."
+  },
+  {
+    "id": "JEEMAIN-D-008",
+    "section": "maths",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainCalculus",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mean value theorem",
+    "stem": "For $f(x) = x^3$ on $[0, 3]$, which $c$ satisfies the conclusion of Lagrange's mean value theorem?",
+    "options": [
+      "$1$",
+      "$\\frac{3}{2}$",
+      "$\\sqrt{3}$",
+      "$\\sqrt{2}$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The mean slope is $\\frac{27 - 0}{3 - 0} = 9$. $f'(c) = 3c^2 = 9$ gives $c = \\sqrt{3}$, which lies in $(0, 3)$. $\\frac{3}{2}$ is the midpoint, which works only for quadratics."
+  },
+  {
+    "id": "JEEMAIN-D-009",
+    "section": "maths",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainCoordGeo",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Probability",
+    "stem": "Two fair dice are thrown. What is the probability that the sum of the numbers is a prime number?",
+    "options": [
+      "1/3",
+      "7/18",
+      "5/12",
+      "1/2"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The prime sums are 2, 3, 5, 7 and 11, which occur in 1, 2, 4, 6 and 2 ways: 15 of the 36 outcomes, so $\\frac{15}{36} = \\frac{5}{12}$. Forgetting the sum 2 gives $\\frac{14}{36} = \\frac{7}{18}$."
+  },
+  {
+    "id": "JEEMAIN-D-010",
+    "section": "maths",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainAlgebra",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Series",
+    "stem": "What is $\\sum_{k=1}^{20} k(k + 1)$?",
+    "options": [
+      "1540",
+      "2660",
+      "2870",
+      "3080"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\sum k(k + 1) = \\sum k^2 + \\sum k = 2870 + 210 = 3080$, or directly $\\frac{n(n + 1)(n + 2)}{3} = \\frac{20 \\cdot 21 \\cdot 22}{3} = 3080$. 2870 is $\\sum k^2$ alone."
+  },
+  {
+    "id": "JEEMAIN-D-011",
+    "section": "maths",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainCalculus",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Continuity",
+    "stem": "Statement I: $f(x) = |x|$ is continuous at $x = 0$. Statement II: $f(x) = |x|$ is differentiable at $x = 0$. Which is correct?",
+    "options": [
+      "Both Statement I and Statement II are true",
+      "Both Statement I and Statement II are false",
+      "Statement I is true but Statement II is false",
+      "Statement I is false but Statement II is true"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$|x| \\to 0 = f(0)$ from both sides, so it is continuous. But the left derivative is $-1$ and the right derivative is $+1$, a corner, so it is not differentiable there."
+  },
+  {
+    "id": "JEEMAIN-D-012",
+    "section": "maths",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainCoordGeo",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Direction cosines",
+    "stem": "A line makes equal acute angles with all three coordinate axes. What are its direction cosines?",
+    "options": [
+      "$\\frac{1}{\\sqrt{3}}, \\frac{1}{\\sqrt{3}}, \\frac{1}{\\sqrt{3}}$",
+      "$\\frac{1}{\\sqrt{2}}, \\frac{1}{\\sqrt{2}}, 0$",
+      "$\\frac{1}{3}, \\frac{1}{3}, \\frac{1}{3}$",
+      "$1, 1, 1$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "With $l = m = n$ and $l^2 + m^2 + n^2 = 1$, $3l^2 = 1$ and $l = \\frac{1}{\\sqrt{3}}$ for acute angles. $1, 1, 1$ are direction ratios, not cosines."
+  },
+  {
+    "id": "JEEMAIN-D-013",
+    "section": "maths",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainAlgebra",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Combinations",
+    "stem": "A committee of 4 is chosen from 6 men and 5 women. In how many ways can this be done if it has at least 3 women? Type the integer only.",
+    "numeric": {
+      "answers": [
+        "65"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "Exactly 3 women: $\\binom{5}{3}\\binom{6}{1} = 60$. All 4 women: $\\binom{5}{4} = 5$. Total $60 + 5 = 65$."
+  },
+  {
+    "id": "JEEMAIN-D-014",
+    "section": "maths",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainCalculus",
+    "difficulty": 1,
+    "format": "numeric",
+    "skill": "Area under curves",
+    "stem": "What is the area of the region bounded by $y = |x|$ and the line $y = 4$? Type the integer only.",
+    "numeric": {
+      "answers": [
+        "16"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "The region is a triangle with vertices $(0, 0)$, $(-4, 4)$ and $(4, 4)$: base 8 and height 4, so the area is $\\frac{1}{2} \\cdot 8 \\cdot 4 = 16$."
+  },
+  {
+    "id": "JEEMAIN-D-015",
+    "section": "maths",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainCoordGeo",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Probability",
+    "stem": "A fair coin is tossed $n$ times. What is the least $n$ for which the probability of at least one head is at least 0.99? Type the integer only.",
+    "numeric": {
+      "answers": [
+        "7"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "$1 - \\left(\\frac{1}{2}\\right)^n \\geq 0.99$ means $2^n \\geq 100$. $2^6 = 64$ is too small and $2^7 = 128$ is enough, so $n = 7$."
+  },
+  {
+    "id": "JEEMAIN-D-016",
+    "section": "maths",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainAlgebra",
+    "difficulty": 3,
+    "format": "numeric",
+    "skill": "Series",
+    "stem": "What is the sum of the infinite series $1 + \\frac{3}{2} + \\frac{5}{4} + \\frac{7}{8} + \\cdots$? Type the integer only.",
+    "numeric": {
+      "answers": [
+        "6"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "This is an arithmetico-geometric series with $a = 1$, $d = 2$, $r = \\frac{1}{2}$. Its sum is $\\frac{a}{1 - r} + \\frac{dr}{(1 - r)^2} = 2 + \\frac{1}{1/4} = 2 + 4 = 6$."
+  },
+  {
+    "id": "JEEMAIN-D-017",
+    "section": "maths",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainCalculus",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Definite integrals",
+    "stem": "What is the value of $\\displaystyle\\int_0^{3\\pi} |\\sin x| \\, dx$? Type the integer only.",
+    "numeric": {
+      "answers": [
+        "6"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "$|\\sin x|$ has period $\\pi$ and $\\int_0^{\\pi}\\sin x\\,dx = 2$, so over three periods the integral is $3 \\times 2 = 6$."
+  },
+  {
+    "id": "JEEMAIN-D-018",
+    "section": "maths",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainCoordGeo",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Statistics",
+    "stem": "What is the variance of the seven numbers 2, 4, 6, 8, 10, 12 and 14? Type the integer only.",
+    "numeric": {
+      "answers": [
+        "16"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "The mean is 8 and the squared deviations are 36, 16, 4, 0, 4, 16, 36, which add to 112. The variance is $\\frac{112}{7} = 16$."
+  },
+  {
+    "id": "JEEMAIN-D-019",
+    "section": "phy",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainMechanics",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Apparent weight",
+    "stem": "A 50 kg person stands on a scale in a lift that accelerates upwards at 2 m/s$^2$. What does the scale read?",
+    "options": [
+      "400 N",
+      "500 N",
+      "600 N",
+      "700 N"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$N - mg = ma$, so $N = m(g + a) = 50 \\times 12 = 600$ N. 400 N is the reading when the lift accelerates downwards."
+  },
+  {
+    "id": "JEEMAIN-D-020",
+    "section": "phy",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainElectro",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electric dipole",
+    "stem": "How much work is needed to turn an electric dipole of moment $p$ in a uniform field $E$ from lying along the field to pointing against it?",
+    "options": [
+      "$pE$",
+      "$0$",
+      "$4pE$",
+      "$2pE$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "$U = -pE\\cos\\theta$ goes from $-pE$ at $0^\\circ$ to $+pE$ at $180^\\circ$, so the work needed is $2pE$. $pE$ is the work to turn it only to $90^\\circ$."
+  },
+  {
+    "id": "JEEMAIN-D-021",
+    "section": "phy",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainOpticsModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Specific heats",
+    "stem": "One mole of a monatomic ideal gas is mixed with one mole of a diatomic ideal gas. What is $\\gamma = \\frac{C_p}{C_v}$ for the mixture?",
+    "options": [
+      "4/3",
+      "3/2",
+      "23/15",
+      "5/3"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$C_v = \\frac{1}{2}\\left(\\frac{3}{2}R + \\frac{5}{2}R\\right) = 2R$ and $C_p = C_v + R = 3R$, so $\\gamma = \\frac{3}{2}$. 23/15 averages the two $\\gamma$ values, which is not how heat capacities combine."
+  },
+  {
+    "id": "JEEMAIN-D-022",
+    "section": "phy",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainMechanics",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Collisions",
+    "stem": "A ball hits an identical ball at rest head-on in a perfectly elastic collision. What happens?",
+    "options": [
+      "The balls exchange velocities",
+      "The first ball bounces straight back",
+      "Both stop",
+      "Both move on at half the speed"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "For equal masses in a head-on elastic collision, momentum and kinetic energy can both be conserved only if the velocities swap: the first ball stops and the second moves off with its speed. Moving on together at half the speed loses kinetic energy."
+  },
+  {
+    "id": "JEEMAIN-D-023",
+    "section": "phy",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainElectro",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Metre bridge",
+    "stem": "In a metre bridge, an unknown resistance $X$ is in the left gap and 6 $\\Omega$ in the right gap. The balance point is 40 cm from the left end. What is $X$?",
+    "options": [
+      "2.4 $\\Omega$",
+      "4 $\\Omega$",
+      "6 $\\Omega$",
+      "9 $\\Omega$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "At balance $\\frac{X}{6} = \\frac{40}{60}$, so $X = 4\\ \\Omega$. 9 $\\Omega$ puts the lengths the wrong way round."
+  },
+  {
+    "id": "JEEMAIN-D-024",
+    "section": "phy",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainOpticsModern",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Total internal reflection",
+    "stem": "What is the critical angle for light going from glass of refractive index $\\sqrt{2}$ into air?",
+    "options": [
+      "30°",
+      "45°",
+      "60°",
+      "90°"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\sin C = \\frac{1}{n} = \\frac{1}{\\sqrt{2}}$, so $C = 45^\\circ$."
+  },
+  {
+    "id": "JEEMAIN-D-025",
+    "section": "phy",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainMechanics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Centre of mass",
+    "stem": "How far from the centre is the centre of mass of a thin uniform semicircular ring of radius $R$?",
+    "options": [
+      "$\\frac{R}{\\pi}$",
+      "$\\frac{4R}{3\\pi}$",
+      "$\\frac{2R}{\\pi}$",
+      "$\\frac{R}{2}$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "For a ring, $y_{cm} = \\frac{1}{\\pi R}\\int_0^{\\pi} R\\sin\\theta \\cdot R\\,d\\theta = \\frac{2R}{\\pi}$. $\\frac{4R}{3\\pi}$ is the value for a semicircular disc."
+  },
+  {
+    "id": "JEEMAIN-D-026",
+    "section": "phy",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainElectro",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Alternating current",
+    "stem": "An alternating current is $i = 10\\sin\\omega t$ amperes. What is its rms value?",
+    "options": [
+      "$10\\sqrt{2}$ A",
+      "5 A",
+      "10 A",
+      "$5\\sqrt{2}$ A"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "$I_{rms} = \\frac{I_0}{\\sqrt{2}} = \\frac{10}{\\sqrt{2}} = 5\\sqrt{2} \\approx 7.07$ A. 5 A halves the peak instead of dividing it by $\\sqrt{2}$."
+  },
+  {
+    "id": "JEEMAIN-D-027",
+    "section": "phy",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainOpticsModern",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Semiconductors",
+    "stem": "In an n-type semiconductor, what are the majority carriers and what kind of impurity is added?",
+    "options": [
+      "Electrons; a pentavalent impurity",
+      "Holes; a pentavalent impurity",
+      "Electrons; a trivalent impurity",
+      "Holes; a trivalent impurity"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A pentavalent donor such as phosphorus has one electron more than silicon needs for bonding, so free electrons are the majority carriers. A trivalent impurity makes a p-type semiconductor."
+  },
+  {
+    "id": "JEEMAIN-D-028",
+    "section": "phy",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainMechanics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Kepler's laws",
+    "stem": "Statement I: A planet's radius vector sweeps out equal areas in equal times. Statement II: The gravitational force on a planet is directed towards the Sun, so its angular momentum about the Sun is constant. Which is correct?",
+    "options": [
+      "Both Statement I and Statement II are true",
+      "Both Statement I and Statement II are false",
+      "Statement I is true but Statement II is false",
+      "Statement I is false but Statement II is true"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "A central force exerts no torque about the Sun, so $L$ is conserved, and areal speed $\\frac{dA}{dt} = \\frac{L}{2m}$ is then constant. Both statements are true, and II explains I."
+  },
+  {
+    "id": "JEEMAIN-D-029",
+    "section": "phy",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainElectro",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Conductors",
+    "stem": "Statement I: The electric field inside a charged hollow conducting sphere is zero. Statement II: The electric potential inside a charged hollow conducting sphere is zero. Which is correct?",
+    "options": [
+      "Both Statement I and Statement II are true",
+      "Both Statement I and Statement II are false",
+      "Statement I is true but Statement II is false",
+      "Statement I is false but Statement II is true"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "There is no charge inside, so $E = 0$ there. With $E = 0$ the potential is constant inside, equal to its surface value $\\frac{kQ}{R}$, which is not zero."
+  },
+  {
+    "id": "JEEMAIN-D-030",
+    "section": "phy",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainOpticsModern",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Photoelectric effect",
+    "stem": "Statement I: The maximum kinetic energy of photoelectrons depends on the frequency of the light, not its intensity. Statement II: Above the threshold frequency, the number of photoelectrons emitted per second rises with intensity. Which is correct?",
+    "options": [
+      "Both Statement I and Statement II are true",
+      "Both Statement I and Statement II are false",
+      "Statement I is true but Statement II is false",
+      "Statement I is false but Statement II is true"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$K_{max} = h\\nu - \\phi$ involves only the frequency. Greater intensity means more photons per second, each freeing at most one electron, so the photocurrent rises. Both statements are true."
+  },
+  {
+    "id": "JEEMAIN-D-031",
+    "section": "phy",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainMechanics",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Projectile motion",
+    "stem": "A stone is thrown at 30 m/s at $15^\\circ$ above the horizontal over level ground. How far away, in metres, does it land? Type the integer only.",
+    "numeric": {
+      "answers": [
+        "45"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "$R = \\frac{u^2\\sin 2\\theta}{g} = \\frac{900 \\times \\sin 30^\\circ}{10} = 45$ m."
+  },
+  {
+    "id": "JEEMAIN-D-032",
+    "section": "phy",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainElectro",
+    "difficulty": 1,
+    "format": "numeric",
+    "skill": "Energy in a capacitor",
+    "stem": "A 10 $\\mu$F capacitor is charged to 40 V. How much energy does it store, in millijoules? Type the integer only.",
+    "numeric": {
+      "answers": [
+        "8"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "$U = \\frac{1}{2}CV^2 = \\frac{1}{2} \\times 10 \\times 10^{-6} \\times 1600 = 8 \\times 10^{-3}$ J $= 8$ mJ."
+  },
+  {
+    "id": "JEEMAIN-D-033",
+    "section": "phy",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainOpticsModern",
+    "difficulty": 1,
+    "format": "numeric",
+    "skill": "Lenses in contact",
+    "stem": "Thin lenses of power $+5$ D and $-3$ D are placed in contact. What is the focal length of the combination, in cm? Type the integer only.",
+    "numeric": {
+      "answers": [
+        "50"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "Powers add: $P = 5 - 3 = +2$ D, so $f = \\frac{1}{2}$ m $= 50$ cm, a converging combination."
+  },
+  {
+    "id": "JEEMAIN-D-034",
+    "section": "phy",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainMechanics",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Torque",
+    "stem": "A disc with moment of inertia 2 kg m$^2$ spins at 10 rad/s. A steady opposing torque of 4 N m acts on it. How many seconds does it take to stop? Type the integer only.",
+    "numeric": {
+      "answers": [
+        "5"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "$\\alpha = \\frac{\\tau}{I} = 2$ rad/s$^2$, so $t = \\frac{\\omega}{\\alpha} = \\frac{10}{2} = 5$ s. Equivalently, the angular impulse $\\tau t$ equals the angular momentum $I\\omega = 20$."
+  },
+  {
+    "id": "JEEMAIN-D-035",
+    "section": "phy",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainElectro",
+    "difficulty": 1,
+    "format": "numeric",
+    "skill": "Force on a conductor",
+    "stem": "A straight wire 0.8 m long carries 5 A at right angles to a uniform magnetic field of 0.5 T. What force, in newtons, acts on it? Type the integer only.",
+    "numeric": {
+      "answers": [
+        "2"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "$F = BIL\\sin 90^\\circ = 0.5 \\times 5 \\times 0.8 = 2$ N."
+  },
+  {
+    "id": "JEEMAIN-D-036",
+    "section": "phy",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainOpticsModern",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Work in an isobaric process",
+    "stem": "Two moles of an ideal gas are heated at constant pressure through 50 K. How much work, in joules, does the gas do? (Take $R = 8.3$ J/mol K.) Type the integer only.",
+    "numeric": {
+      "answers": [
+        "830"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "At constant pressure $W = p\\Delta V = nR\\Delta T = 2 \\times 8.3 \\times 50 = 830$ J."
+  },
+  {
+    "id": "JEEMAIN-D-037",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainPhysical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Real gases",
+    "stem": "At very high pressure the compressibility factor $Z$ of a real gas is greater than 1. What is the main cause?",
+    "options": [
+      "Attraction between molecules",
+      "The volume of the molecules",
+      "Collisions with the walls",
+      "Ionisation of the gas"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "At high pressure the molecules' own volume (van der Waals $b$) is a large part of the container, so the gas is harder to compress than an ideal gas and $Z > 1$. Attraction ($a$) lowers $Z$ below 1, which matters more at moderate pressure."
+  },
+  {
+    "id": "JEEMAIN-D-038",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainInorganic",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Diagonal relationship",
+    "stem": "Which pair of elements shows a diagonal relationship?",
+    "options": [
+      "Li and Be",
+      "Li and Mg",
+      "Li and Na",
+      "Be and Mg"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Li (group 1, period 2) resembles Mg (group 2, period 3), one step down and to the right, because their charge-to-size ratios are similar. Li and Na are in the same group."
+  },
+  {
+    "id": "JEEMAIN-D-039",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainOrganic",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Lassaigne's test",
+    "stem": "In Lassaigne's test, the sodium fusion extract gives a violet colour with sodium nitroprusside. Which element does this show?",
+    "options": [
+      "Nitrogen",
+      "Chlorine",
+      "Sulphur",
+      "Phosphorus"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Sulphur forms Na$_2$S during fusion, and sulphide ion gives a violet colour with sodium nitroprusside. Nitrogen is shown by Prussian blue."
+  },
+  {
+    "id": "JEEMAIN-D-040",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainPhysical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Thermodynamic properties",
+    "stem": "Which of these is an intensive property?",
+    "options": [
+      "Enthalpy",
+      "Temperature",
+      "Volume",
+      "Mass"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An intensive property does not depend on the amount of substance. Splitting a sample in two halves its volume, mass and enthalpy but leaves its temperature unchanged."
+  },
+  {
+    "id": "JEEMAIN-D-041",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainInorganic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Inert pair effect",
+    "stem": "Why is lead(IV) oxide, PbO$_2$, a strong oxidising agent?",
+    "options": [
+      "Pb²⁺ is more stable than Pb⁴⁺",
+      "PbO₂ is strongly basic",
+      "Pb⁴⁺ is more stable than Pb²⁺",
+      "Lead is a non-metal"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Down group 14 the $6s^2$ pair is reluctant to bond (the inert pair effect), so +2 is lead's stable state. PbO$_2$ readily gains electrons to reach it, oxidising other substances."
+  },
+  {
+    "id": "JEEMAIN-D-042",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainOrganic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Stability of alkenes",
+    "stem": "Which of these alkenes is the most stable?",
+    "options": [
+      "2,3-Dimethylbut-2-ene",
+      "Propene",
+      "Ethene",
+      "But-1-ene"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "More alkyl groups on the C=C give more hyperconjugation and a lower heat of hydrogenation. 2,3-Dimethylbut-2-ene is tetrasubstituted, the most stable here."
+  },
+  {
+    "id": "JEEMAIN-D-043",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainPhysical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Conductance",
+    "stem": "Statement I: The molar conductivity of a weak electrolyte rises steeply on dilution. Statement II: The degree of dissociation of a weak electrolyte rises on dilution. Which is correct?",
+    "options": [
+      "Both Statement I and Statement II are true",
+      "Both Statement I and Statement II are false",
+      "Statement I is true but Statement II is false",
+      "Statement I is false but Statement II is true"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "By Ostwald's dilution law, $\\alpha \\approx \\sqrt{\\frac{K_a}{c}}$ grows as $c$ falls, so many more ions form and $\\Lambda_m$ rises steeply. Both statements are true."
+  },
+  {
+    "id": "JEEMAIN-D-044",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainInorganic",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Colour of ions",
+    "stem": "Statement I: Copper(II) salts are coloured but zinc(II) salts are white. Statement II: The Zn$^{2+}$ ion has a completely filled $3d^{10}$ subshell. Which is correct?",
+    "options": [
+      "Both Statement I and Statement II are true",
+      "Both Statement I and Statement II are false",
+      "Statement I is true but Statement II is false",
+      "Statement I is false but Statement II is true"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Colour in these ions comes from d-d transitions. Cu$^{2+}$ ($3d^9$) has a vacancy to excite into; Zn$^{2+}$ ($3d^{10}$) has none, so its salts are white. Both statements are true."
+  },
+  {
+    "id": "JEEMAIN-D-045",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainOrganic",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Acidity of phenol",
+    "stem": "Statement I: Phenol is a stronger acid than ethanol. Statement II: The phenoxide ion is stabilised by resonance with the benzene ring. Which is correct?",
+    "options": [
+      "Both Statement I and Statement II are true",
+      "Both Statement I and Statement II are false",
+      "Statement I is true but Statement II is false",
+      "Statement I is false but Statement II is true"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The negative charge of phenoxide spreads into the ring, which stabilises it; ethoxide has no such resonance. So phenol loses its proton more easily. Both statements are true."
+  },
+  {
+    "id": "JEEMAIN-D-046",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainPhysical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Oxidation number",
+    "stem": "What is the oxidation number of sulphur in peroxodisulphuric acid, H$_2$S$_2$O$_8$?",
+    "options": [
+      "+5",
+      "+6",
+      "+7",
+      "+8"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "H$_2$S$_2$O$_8$ has one peroxide O-O link, whose two oxygens are $-1$ each; the other six are $-2$. So $2(+1) + 2x + 6(-2) + 2(-1) = 0$ gives $x = +6$. Taking all eight oxygens as $-2$ gives the impossible +7."
+  },
+  {
+    "id": "JEEMAIN-D-047",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainInorganic",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ligands",
+    "stem": "Which of these ligands is ambidentate?",
+    "options": [
+      "Ethane-1,2-diamine",
+      "NO₂⁻",
+      "NH₃",
+      "H₂O"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An ambidentate ligand can bind through either of two atoms: NO$_2^-$ binds through N (nitro) or O (nitrito), giving linkage isomers. Ethane-1,2-diamine uses both its N atoms at once, which makes it bidentate."
+  },
+  {
+    "id": "JEEMAIN-D-048",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainOrganic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Reimer-Tiemann reaction",
+    "stem": "Phenol is treated with chloroform and aqueous NaOH, then acidified. What is the main product?",
+    "options": [
+      "Picric acid",
+      "Salicylaldehyde",
+      "Benzoic acid",
+      "Salicylic acid"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Reimer-Tiemann reaction puts a CHO group on the ring ortho to OH, giving 2-hydroxybenzaldehyde. Salicylic acid comes from Kolbe's reaction with CO$_2$."
+  },
+  {
+    "id": "JEEMAIN-D-049",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainPhysical",
+    "difficulty": 1,
+    "format": "numeric",
+    "skill": "Molarity",
+    "stem": "How many millimoles of NaOH are there in 200 mL of a 0.5 M solution? Type the integer only.",
+    "numeric": {
+      "answers": [
+        "100"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "Millimoles $=$ molarity $\\times$ volume in mL $= 0.5 \\times 200 = 100$."
+  },
+  {
+    "id": "JEEMAIN-D-050",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainInorganic",
+    "difficulty": 1,
+    "format": "numeric",
+    "skill": "Electronic configuration",
+    "stem": "How many unpaired electrons does a chromium atom ($Z = 24$) have in its ground state? Type the integer only.",
+    "numeric": {
+      "answers": [
+        "6"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "Chromium is $[\\text{Ar}]\\,3d^5 4s^1$: a half-filled d subshell is extra stable, so one 4s electron moves to 3d. That leaves 5 + 1 = 6 unpaired electrons."
+  },
+  {
+    "id": "JEEMAIN-D-051",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainOrganic",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Degree of unsaturation",
+    "stem": "What is the double bond equivalent (degree of unsaturation) of naphthalene, C$_{10}$H$_8$? Type the integer only.",
+    "numeric": {
+      "answers": [
+        "7"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "DBE $= \\frac{2C + 2 - H}{2} = \\frac{22 - 8}{2} = 7$: two rings and five C=C double bonds."
+  },
+  {
+    "id": "JEEMAIN-D-052",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainPhysical",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Order of reaction",
+    "stem": "Doubling the concentration of the only reactant makes the rate 8 times faster. What is the order of the reaction? Type the integer only.",
+    "numeric": {
+      "answers": [
+        "3"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "Rate $\\propto [A]^n$, so $2^n = 8$ and $n = 3$."
+  },
+  {
+    "id": "JEEMAIN-D-053",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainInorganic",
+    "difficulty": 1,
+    "format": "numeric",
+    "skill": "Werner's theory",
+    "stem": "How many ions does one formula unit of $[\\text{Co(NH}_3)_6]\\text{Cl}_3$ give in water? Type the integer only.",
+    "numeric": {
+      "answers": [
+        "4"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "The complex ion $[\\text{Co(NH}_3)_6]^{3+}$ stays intact and the three Cl$^-$ outside the brackets are free: 1 + 3 = 4 ions."
+  },
+  {
+    "id": "JEEMAIN-D-054",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "jeemainOrganic",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Peptides",
+    "stem": "How many different tripeptides can be made from glycine and alanine, using each amino acid as often as you like? Type the integer only.",
+    "numeric": {
+      "answers": [
+        "8"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "explanation": "Each of the 3 positions can be either amino acid, and order matters (Gly-Ala-Ala differs from Ala-Ala-Gly), so there are $2^3 = 8$ tripeptides."
+  }
+]

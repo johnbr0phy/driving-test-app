@@ -1,0 +1,36 @@
+{
+  "id": "phlet",
+  "stateCode": "PHLET",
+  "idBase": 13100,
+  "prefix": "PHLET-",
+  "slug": "/let-reviewer",
+  "landingPath": "/let-reviewer-practice-test",
+  "dataFile": "data/philippines-let-questions.json",
+  "name": "LET Reviewer Practice Test",
+  "shortName": "LET",
+  "examLabel": "LET",
+  "fullName": "Licensure Examination for Professional Teachers (LET/LEPT), Elementary",
+  "icon": "graduation",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 75,
+  "categories": [
+    {"key": "phletComm", "label": "English & Filipino Communication", "perTest": 4, "pool": 16, "segment": "COM"},
+    {"key": "phletSciMath", "label": "Science, Technology & Mathematics", "perTest": 4, "pool": 16, "segment": "SCM"},
+    {"key": "phletCivic", "label": "Philippine History, Rizal & Ethics", "perTest": 6, "pool": 24, "segment": "CIV"},
+    {"key": "phletPractical", "label": "Contemporary World, Art & the Self", "perTest": 6, "pool": 24, "segment": "PRA"},
+    {"key": "phletProfession", "label": "The Teaching Profession", "perTest": 5, "pool": 20, "segment": "PRO"},
+    {"key": "phletCurriculum", "label": "Curriculum, Methods & Ed Tech", "perTest": 9, "pool": 36, "segment": "CUR"},
+    {"key": "phletLearners", "label": "Child & Adolescent Learners", "perTest": 6, "pool": 24, "segment": "LRN"},
+    {"key": "phletAssess", "label": "Assessment of Learning", "perTest": 4, "pool": 16, "segment": "ASM"},
+    {"key": "phletField", "label": "Field Study, Internship & Action Research", "perTest": 6, "pool": 24, "segment": "FLD"}
+  ],
+  "notes": "Real Elementary LEPT: General Education 150 items (40% of the rating) and Professional Education 150 items (60%), PRC Annex A enhanced TOS (Board Resolution No. 11, s. 2022). Each 50-question test follows the rating weights: 20 GenEd (A Intellectual 40% = 8, split 4 communication + 4 science/maths; B Personal and Civic 30% = 6; C Practical Skills 30% = 6) and 30 ProfEd (A Teaching Profession 15% = 5, B Curriculum/Methods/EdTech 30% = 9, C Learners 20% = 6, D Assessment 15% = 4, E Field Study 20% = 6; A and D are both 15%, rounded 5 and 4). Pools exactly 4x per-test.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 13101, "name": "GenEd: Communication, Science & Math", "categories": ["phletComm", "phletSciMath"], "size": 32},
+    {"setNumber": 2, "id": 13102, "name": "GenEd: History, Rizal, Ethics & Society", "categories": ["phletCivic", "phletPractical"], "size": 48},
+    {"setNumber": 3, "id": 13103, "name": "ProfEd: Teaching Profession & Assessment", "categories": ["phletProfession", "phletAssess"], "size": 36},
+    {"setNumber": 4, "id": 13104, "name": "ProfEd: Curriculum, Methods & Ed Tech", "categories": ["phletCurriculum"], "size": 36},
+    {"setNumber": 5, "id": 13105, "name": "ProfEd: Learners & Field Study", "categories": ["phletLearners", "phletField"], "size": 48}
+  ]
+}

@@ -109,7 +109,7 @@ export function formatPrice(price: PremiumPrice): string {
       maximumFractionDigits: whole ? 0 : 2,
     }).format(price.amount);
   try {
-    if (code === "SGD") return format("narrowSymbol").replace("$", "S$");
+    if (code === "SGD") return format("narrowSymbol").replace(/^\$/, "S$");
     const narrow = format("narrowSymbol");
     return narrow.startsWith("$") && code !== "USD" ? format("symbol") : narrow;
   } catch {

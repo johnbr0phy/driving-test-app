@@ -1,7 +1,7 @@
 # Builder brief: one exam for the next-100 wave
 
 You build ONE practice exam for Tigertest. Up to ten builders work at once in the same checkout,
-`/home/user/driving-test-app` (branch `next100-batchN`), each on a different exam. The integrator
+`/home/user/driving-test-app` (branch `next100-batch2`), each on a different exam. The integrator
 applies shared-file changes, builds, screenshots and commits. Your exam's row is in the table at the
 bottom of this file and in `tools/next100/QUEUE.md`.
 
@@ -72,33 +72,56 @@ Print the validator output, the key-longest share, the list of files you wrote, 
 the integrator should check (a hue clash, a fact you could not confirm, a region question). Keep it
 short.
 
-## Batch 1
+## Lessons from batch 1 (apply them)
+- Positional options must not shuffle: the app shuffles v2 options unless `lockedOrder: true`.
+  Error spotting (parts in sentence order, then "No error"), sentence improvement ("No improvement"
+  last), Only I / Only II / Both / Neither / Either, inequality and syllogism conclusion sets, and
+  all-number options (sorted ascending) get natural order plus `lockedOrder` in build.py. See
+  `tools/next100/sscgd/build.py`. A plain count answer "None" is fine to shuffle.
+- `tools/validate_v2_bank.py` rewrites `lib/v2/bankSizes.ts`. Run it from a /tmp copy with that
+  write stubbed out; put your bankSizes line in WIRING.md.
+- Duplicates: grep EVERY existing bank of your family (all India banks: ssccgl, rrbntpc, ibpspo,
+  ctet, rrbgroupd, sscgd, sscchsl, sscmts, uppolice, ibpsclerk, jnvst; all AP/US school banks:
+  appsych, sat, act, psat, ged) and rewrite any item with the same fact and answer or the same
+  numbers. Batch 1 reviewers rewrote about 200 such items; do it while writing.
+- Official PDFs often load by direct URL when the HTML site does not (ssc.gov.in/api/attachment/...,
+  state government mirrors on s3waas.gov.in, newspaper copies of the notification PDF). Try them
+  before falling back to guides, and label anything from guides.
+- Hues: suggest one; the integrator settles clashes (rule: within 8 degrees of another theme,
+  differ by 15 points of saturation or 8 of lightness; lightness 30 to 48%).
 
-| id | Test | Engine | Template | Region | slug | landing | hue (HSL) |
+## Batch 2
+
+| id | Test | Engine | Template | Region | slug | landing | suggested hue |
 |---|---|---|---|---|---|---|---|
-| rrbgroupd | RRB Group D (Level 1) CBT | v2 | rrbntpc | IN | /rrb-group-d | /rrb-group-d-practice-test | 6 55% 36% |
-| sscgd | SSC GD Constable (CBE) | v2 | ssccgl | IN | /ssc-gd-constable | /ssc-gd-constable-practice-test | 132 45% 30% |
-| sscchsl | SSC CHSL Tier 1 | v2 | ssccgl | IN | /ssc-chsl | /ssc-chsl-practice-test | 196 55% 34% |
-| sscmts | SSC MTS and Havaldar | v2 | ssccgl | IN | /ssc-mts | /ssc-mts-practice-test | 26 70% 38% |
-| uppolice | UP Police Constable (UPPRPB) | v2 | rrbntpc | IN | /up-police-constable | /up-police-constable-practice-test | 236 45% 30% |
-| ibpsclerk | IBPS Clerk Prelims | v2 | ibpspo | IN | /ibps-clerk | /ibps-clerk-prelims-practice-test | 338 55% 34% |
-| jnvst | JNVST Class 6 (Navodaya Vidyalaya) | v2 | rrbntpc | IN | /jnvst | /jnvst-class-6-practice-test | 54 70% 32% |
-| jambeng | JAMB UTME Use of English | v2 | ibpspo (shared passages as stimuli) | NG | /jamb-use-of-english | /jamb-use-of-english-practice-test | 140 60% 24% |
-| appsych | AP Psychology (MCQ section) | v2 | gre (single section, stimuli where the real exam uses them) | US | /ap-psychology | /ap-psychology-practice-test | 274 35% 42% |
-| pkdrive | Pakistan driving licence test (sign and rules) | v1 | nzroad; idBase 13000, stateCode PKDRIVE, prefix PKDRV- | PK, wire as GLOBAL | /pakistan-driving-test | /pakistan-driving-licence-test | 152 70% 22% |
+| sbiclerk | SBI Clerk (Junior Associates) Prelims | v2 | ibpsclerk | IN | /sbi-clerk | /sbi-clerk-prelims-practice-test | 205 75% 34% |
+| sbipo | SBI PO Prelims | v2 | ibpspo | IN | /sbi-po | /sbi-po-prelims-practice-test | 218 70% 30% |
+| ibpsrrb | IBPS RRB Office Assistant (Clerk) Prelims | v2 | ibpsclerk | IN | /ibps-rrb-clerk | /ibps-rrb-office-assistant-practice-test | 92 50% 30% |
+| biharpolice | Bihar Police Constable (CSBC) written exam | v2 | uppolice | IN | /bihar-police-constable | /bihar-police-constable-practice-test | 18 60% 40% |
+| rajpolice | Rajasthan Police Constable written exam | v2 | uppolice | IN | /rajasthan-police-constable | /rajasthan-police-constable-practice-test | 40 75% 34% |
+| delhipolice | Delhi Police Constable (Executive) CBE (SSC) | v2 | sscgd | IN | /delhi-police-constable | /delhi-police-constable-practice-test | 248 40% 36% |
+| mppolice | MP Police Constable (ESB) written exam | v2 | uppolice | IN | /mp-police-constable | /mp-police-constable-practice-test | 165 50% 30% |
+| apush | AP US History (multiple-choice section) | v2 | appsych | US | /ap-us-history | /ap-us-history-practice-test | 0 45% 38% |
+| apbio | AP Biology (multiple-choice section) | v2 | appsych | US | /ap-biology | /ap-biology-practice-test | 112 45% 34% |
+| phcse | Philippine Civil Service Exam (Professional and Subprofessional) | v2 | rrbntpc (one section) | PH | /civil-service-exam | /civil-service-exam-reviewer-practice-test | 222 60% 32% |
 
 Exam-specific notes:
-- Indian government exams: avoid overlap with the existing `ssccgl`, `rrbntpc`, `ibpspo` and `ctet`
-  banks (grep them; rewrite any item that tests the same fact with the same numbers). General
-  awareness is static facts only. Rupees and Indian names. Negative marking is explained, not
-  scored, as in `rrbntpc`.
-- `uppolice`: one state's recruitment exam; date-stamp the notification you used.
-- `jnvst`: the test is for Class 5 students (about age 10 to 12); write for that reader. Mental
-  ability items that need figures must be redone as text or left out, and the landing says so.
-- `jambeng`: Nigerian English context; comprehension and cloze passages are original.
-- `appsych`: the current College Board course framework (the 2024 redesign) and exam format; the
-  free-response section is not modelled and the landing says so. Score as percent with a note on the
-  1 to 5 scale. US exam: no "Region" work needed beyond US.
-- `pkdrive`: Punjab, Sindh, KP and Islamabad run their own tests; build for what they share
-  (signs, rules of the road from the national highway code) and say where provinces differ. Signs
-  are described in words. Left-hand traffic.
+- `sbiclerk`, `sbipo`, `ibpsrrb`: confirm the latest official pattern from the SBI / IBPS notification
+  (sectional timing, counts, negative marking). Keep clear of ibpspo and ibpsclerk items.
+- State police exams: write General Hindi (Bihar, Rajasthan, MP) in Hindi like `uppolice`; state GK
+  is static facts about that state (history, geography, culture), never officeholders. Rajasthan's
+  paper has its own Rajasthan GK and computer sections; MP's ESB paper includes general science
+  and Hindi; Bihar's CSBC paper is Hindi, English, maths, science, social science and GK at class 10
+  level. Confirm each from the latest advertisement and date-stamp it. Physical tests not modelled.
+- `delhipolice`: SSC conducts it; reasoning, GK/current affairs (static only), quant and computer
+  fundamentals (MS Office, internet, email). Keep clear of the SSC banks.
+- `apush`, `apbio`: the current College Board course and exam description (download the CED PDF);
+  model Section I only (APUSH: stimulus-based sets of 3 or 4 on original primary-source-style excerpts
+  you write yourself, never real copyrighted passages beyond short public-domain quotes; AP Bio:
+  data and experiment sets). Free response not modelled; landing says so. Score as percent with a
+  note on the 1 to 5 scale. Put both, and appsych, into a new hub group "AP exams" in WIRING.md.
+- `phcse`: CSC's Career Service Examination, Pen and Paper (CSE-PPT) Professional and
+  Subprofessional: verbal, analytical, numerical ability, clerical (Subprofessional), and general
+  information (Philippine Constitution, RA 6713 Code of Conduct, peace and human rights, environment).
+  One bank serving both levels; say how they differ. US spelling as used in the Philippines, pesos.
+

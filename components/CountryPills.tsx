@@ -243,7 +243,8 @@ export function CountryPills({ current, onChange, lang = "en" }: { current: Regi
         id="more-countries"
         hidden={!open}
         aria-label={c.moreCountries}
-        className="mt-3 grid w-full max-w-xl grid-cols-2 gap-1 rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-2 text-sm sm:grid-cols-3"
+        // `grid` would override the hidden attribute, so the class switches too.
+        className={`mt-3 ${open ? "grid" : "hidden"} w-full max-w-xl grid-cols-2 gap-1 rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-2 text-sm sm:grid-cols-3`}
       >
         {moreRegions.map((r) => (
           <li key={r.code}>

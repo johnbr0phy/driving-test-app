@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { ThemedScreenshot } from "@/components/ThemedScreenshot";
-import { TEST_CATALOG, TEST_GROUPS } from "@/lib/testCatalog";
+import { TEST_CATALOG } from "@/lib/testCatalog";
 import { TestCard, TestCatalogGrid } from "@/components/TestCatalogGrid";
 import { CountUp } from "@/components/CountUp";
 import { getPopularTests } from "@/lib/server/popularTests";
@@ -13,7 +13,7 @@ import { ORGANIZATION_ID, WEBSITE_ID } from "@/lib/siteSchema";
 import { EXAM_FACTS } from "@/lib/examFacts";
 import { HUB_PAGES_UPDATED_AT } from "@/lib/seoDates";
 import { states } from "@/data/states";
-import { NON_DRIVING_TESTS, REGIONS, REGION_HOME, REGION_HREFLANG, Region, orderGroupsForRegion, regionHomePath, regionOfTest, regionInfo } from "@/lib/region";
+import { NON_DRIVING_TESTS, REGIONS, REGION_HOME, REGION_HREFLANG, Region, regionHomePath, regionOfTest, regionInfo } from "@/lib/region";
 import type { TestCatalogEntry } from "@/lib/testCatalog";
 import { countryNameIn, homeCopy } from "@/components/home/homeCopy";
 import type { Language } from "@/i18n";
@@ -230,6 +230,23 @@ export async function HomePage({ region, lang: pickedLang }: { region: Region; l
 
       {search && <SearchHome initialRegion={region} popularity={popularity} trending={trending} answeredThisWeek={totalAnswered} />}
 
+      {/* The search homepages: every test right under the box, like /tests (the US
+          lists every country's tests, other countries their own and worldwide). */}
+      {search && (
+      <div id="all-tests" className="max-w-5xl mx-auto px-6 pt-10 pb-16 md:pb-24 scroll-mt-6">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 text-center mb-6">
+          {us ? c.everyTest : c.testsFor(inName)}
+        </h2>
+        <TestCatalogGrid showPopular={false} nested region={region} regionPicker localOnly={!us} lang={lang} searchBox={false} />
+        {!us && (
+          <p className="mt-10 text-sm text-gray-600 dark:text-gray-300">
+            {c.usExamPrompt}{" "}
+            <Link href="/tests" className="font-medium text-brand-dark hover:underline">{c.seeAllTests(examCount)}</Link>
+          </p>
+        )}
+      </div>
+      )}
+
       {!search && (<>
       {/* Hero */}
       <div className="relative overflow-hidden">
@@ -268,7 +285,7 @@ export async function HomePage({ region, lang: pickedLang }: { region: Region; l
       </>)}
 
       {/* Popular this week (outside the US only once someone there has answered questions) */}
-      {popular.length > 0 && (
+      {!search && popular.length > 0 && (
       <div className="max-w-5xl mx-auto px-6 pb-16 md:pb-20">
         <div className="flex items-end justify-between mb-5">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50">
@@ -327,8 +344,9 @@ export async function HomePage({ region, lang: pickedLang }: { region: Region; l
       )}
 
       {/* Outside the US: the country's own tests (none yet on a brand-new country page) */}
-      {home && localTests.length > 0 && (
-          <div className="max-w-5xl mx-auto px-6 pb-16 md:pb-20">
+      {home && localTests.length > 0 && (!search || localTests.some((t) => aboutTest(t, lang))) && (
+          <div className={`max-w-5xl mx-auto px-6 pb-16 md:pb-20 ${search ? "pt-4" : ""}`}>
+            {!search && (<>
             <div className="flex flex-wrap items-end justify-between gap-x-6 gap-y-2 mb-5">
               <div>
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50">{native ? home.testsTitle : c.testsFor(inName)}</h2>
@@ -343,10 +361,11 @@ export async function HomePage({ region, lang: pickedLang }: { region: Region; l
                 <TestCard key={test.id} test={test} answered={answeredById.get(test.id) ?? null} lang={lang} />
               ))}
             </div>
+            </>)}
             {/* The facts of each real test in plain sentences: what search
                 snippets and AI answers quote for "<country> driving test". */}
             {localTests.some((t) => aboutTest(t, lang)) && (
-              <div className="mt-12">
+              <div className={search ? "" : "mt-12"}>
                 <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-50 mb-6">
                   {localTests.length === 1 ? c.aboutTheTest : c.aboutEachTest}
                 </h2>
@@ -439,38 +458,6 @@ export async function HomePage({ region, lang: pickedLang }: { region: Region; l
 
       </>)}
 
-      {/* The search homepages' catalog: every test as plain links, so crawlers
-          (and anyone who would rather browse) reach each landing from the homepage. */}
-      {search && (
-      <div id="all-tests" className="max-w-5xl mx-auto px-6 py-14 md:py-20 scroll-mt-6">
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 mb-8">
-          {us ? c.everyTest : c.testsFor(inName)}
-        </h2>
-        <div className="columns-1 sm:columns-2 lg:columns-3 gap-8">
-          {catalogLinksFor(region).map((g) => (
-            <div key={g.title} className="break-inside-avoid mb-7">
-              <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-50 mb-2">{g.title}</h3>
-              <ul className="space-y-1.5">
-                {g.tests.map((t) => (
-                  <li key={t.id}>
-                    <Link href={t.href} className="text-sm text-gray-600 dark:text-gray-300 hover:text-brand-dark hover:underline">
-                      {nameIn(t, lang)}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
-        {!us && (
-          <p className="mt-4 text-sm text-gray-600 dark:text-gray-300">
-            {c.usExamPrompt}{" "}
-            <Link href="/tests" className="font-medium text-brand-dark hover:underline">{c.seeAllTests(examCount)}</Link>
-          </p>
-        )}
-      </div>
-      )}
-
       {/* FAQ */}
       <div className="bg-gray-50 dark:bg-gray-950 py-16 md:py-24">
         <div className="max-w-3xl mx-auto px-6">
@@ -520,12 +507,4 @@ async function trendingFor(region: Region, ranked: { test: TestCatalogEntry; ans
     if (!trending.includes(name)) trending.push(name);
   }
   return trending;
-}
-
-/** The catalog groups a search homepage links to: every group in the US (US and
- *  worldwide first), elsewhere only the country's own and worldwide tests. */
-function catalogLinksFor(region: Region) {
-  const local = (id: string) => regionOfTest(id) === region || regionOfTest(id) === "GLOBAL";
-  const groups = region === "US" ? TEST_GROUPS : TEST_GROUPS.map((g) => ({ ...g, tests: g.tests.filter((t) => local(t.id)) }));
-  return orderGroupsForRegion(groups.filter((g) => g.tests.length > 0), region);
 }

@@ -14,8 +14,8 @@ import { ThemeToggle } from "@/components/ThemeToggle";
 import { examLanguages, getExamByPath } from "@/lib/exams";
 import { relatedTests } from "@/lib/testCatalog";
 import { getExamV2ByPath } from "@/lib/v2/registry";
-import { isDmvPath } from "@/lib/pageLanguage";
-import { DMV_LANGUAGES } from "@/i18n";
+import { isDmvPath, pageLanguage } from "@/lib/pageLanguage";
+import { DMV_LANGUAGES, LANGUAGES } from "@/i18n";
 
 
 const popularStateSlugs = [
@@ -70,7 +70,13 @@ export function Footer() {
   // on its English landing page.
   const examLangs = v1Exam ? examLanguages(v1Exam) : [];
   const onTranslatedExamApp = !!v1Exam && examLangs.length > 1 && !!pathname?.startsWith(`${v1Exam.slug}/`);
-  const showLanguageToggle = !isHomepage && !isSeoPage && !isQuizPage && (!isAltExam || onTranslatedExamApp);
+  // Offer only the languages this page will actually switch to: the homepage
+  // and the country homepages are fixed to their own language, so a picker
+  // there would save a choice and change nothing (lib/pageLanguage.ts).
+  const offeredLanguages = (isAltExam ? examLangs : isDmvPath(pathname) ? DMV_LANGUAGES : LANGUAGES.map((l) => l.code))
+    .filter((lang) => pageLanguage(pathname, lang) === lang);
+  const showLanguageToggle =
+    !isHomepage && !isSeoPage && !isQuizPage && (!isAltExam || onTranslatedExamApp) && offeredLanguages.length > 1;
 
   const dataTheme = exam?.id;
 
@@ -155,9 +161,7 @@ export function Footer() {
           <div className="flex flex-wrap items-center justify-center md:justify-end gap-x-4 gap-y-2 text-gray-500 dark:text-gray-400">
             <CountrySwitcher />
             {/* DMV pages offer only the DMV's languages; neutral pages every language. */}
-            {showLanguageToggle && (
-              <LanguageSwitcher languages={isAltExam ? examLangs : isDmvPath(pathname) ? DMV_LANGUAGES : undefined} />
-            )}
+            {showLanguageToggle && <LanguageSwitcher languages={offeredLanguages} />}
             <ThemeToggle className="h-7 w-7" />
             <Link href="/create" className="hover:text-brand hover:underline">
               {t("footer.makeAQuiz")}

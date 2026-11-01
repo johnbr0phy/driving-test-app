@@ -14,6 +14,8 @@ import { ThemeToggle } from "@/components/ThemeToggle";
 import { examLanguages, getExamByPath } from "@/lib/exams";
 import { relatedTests } from "@/lib/testCatalog";
 import { getExamV2ByPath } from "@/lib/v2/registry";
+import { isDmvPath } from "@/lib/pageLanguage";
+import { DMV_LANGUAGES } from "@/i18n";
 
 
 const popularStateSlugs = [
@@ -27,7 +29,7 @@ const popularStates = popularStateSlugs
   .filter(Boolean);
 
 export function Footer() {
-  const { t, language, setLanguage } = useTranslation();
+  const { t, language } = useTranslation();
   const pathname = usePathname();
   const themePath = useThemePath();
   const isEs = language === "es";
@@ -152,16 +154,19 @@ export function Footer() {
           </p>
           <div className="flex flex-wrap items-center justify-center md:justify-end gap-x-4 gap-y-2 text-gray-500 dark:text-gray-400">
             <CountrySwitcher />
-            {showLanguageToggle && <LanguageSwitcher languages={isAltExam ? examLangs : undefined} />}
+            {/* DMV pages offer only the DMV's languages; neutral pages every language. */}
+            {showLanguageToggle && (
+              <LanguageSwitcher languages={isAltExam ? examLangs : isDmvPath(pathname) ? DMV_LANGUAGES : undefined} />
+            )}
             <ThemeToggle className="h-7 w-7" />
             <Link href="/create" className="hover:text-brand hover:underline">
-              Make a quiz
+              {t("footer.makeAQuiz")}
             </Link>
             <Link href="/teach" className="hover:text-brand hover:underline">
-              For Teachers
+              {t("footer.forTeachers")}
             </Link>
             <Link href="/privacy" className="hover:text-brand hover:underline">
-              Privacy Policy
+              {t("footer.privacyPolicy")}
             </Link>
           </div>
         </div>

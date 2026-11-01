@@ -114,6 +114,7 @@ import "./grdriving";
 import "./rodrpciv";
 import "./hukresz";
 import "./mttheory";
+import "./detheorie";
 import "./phlet";
 import "./ngpolice";
 import "./cdcfib";

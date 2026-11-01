@@ -3,16 +3,23 @@ import { EXAM_FACTS } from "@/lib/examFacts";
 import { EXAM_LANDINGS_UPDATED_AT } from "@/lib/seoDates";
 import { getCatalogEntry } from "@/lib/testCatalog";
 import { ORGANIZATION_ID } from "@/lib/siteSchema";
-import { regionOfTest } from "@/lib/region";
+import { isRegion, regionInfo, regionOfTest } from "@/lib/region";
 
-// Pages for the UK, Canada and Australia are written in that country's English.
-const LANGUAGE_BY_REGION = { US: "en-US", GLOBAL: "en-US", UK: "en-GB", CA: "en-CA", AU: "en-AU", IN: "en-IN", IE: "en-IE", NZ: "en-NZ", PH: "en-PH", MY: "en-MY", SG: "en-SG", HK: "en-HK", AE: "en-AE", ZA: "en-ZA", NG: "en-NG", KE: "en-KE", PK: "en-PK", ES: "en-ES", PT: "en-PT", RO: "en-RO", SE: "en-SE", GR: "en-GR", DK: "en-DK", HU: "en-HU", BE: "en-BE", FI: "en-FI", MT: "en-MT" } as const;
+// EXAM_FACTS are English, written in the exam's country's English: en-GB for
+// the UK, en-IN for India, and "en-<country>" where the country's homepage is
+// in another language (en-DE).
+function factsLocale(examId: string): string {
+  const r = regionOfTest(examId);
+  if (!isRegion(r)) return "en-US";
+  const info = regionInfo(r);
+  return info.lang === "en" ? info.locale : `en-${r}`;
+}
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
 /** "2026-10-12" -> "October 2026", in UTC so the server's zone never shifts the month. */
-function monthYear(iso: string): string {
-  return new Date(`${iso}T00:00:00Z`).toLocaleDateString("en-US", { month: "long", year: "numeric", timeZone: "UTC" });
+function monthYear(iso: string, locale: string): string {
+  return new Intl.DateTimeFormat(locale, { month: "long", year: "numeric", timeZone: "UTC" }).format(new Date(`${iso}T00:00:00Z`));
 }
 
 // "At a glance" block under an exam landing's hero: a plain answer about the
@@ -26,6 +33,7 @@ export function ExamFacts({ examId }: { examId: string }) {
   if (!facts || !test) return null;
 
   const url = `${siteUrl}${test.href}`;
+  const locale = factsLocale(examId);
   const tigertest =
     facts.tigertest ??
     `Tigertest has ${test.questions.toLocaleString("en-US")} ${test.shortName} practice questions with explanations${
@@ -41,7 +49,7 @@ export function ExamFacts({ examId }: { examId: string }) {
     name: test.name,
     description: facts.answer,
     dateModified: EXAM_LANDINGS_UPDATED_AT,
-    inLanguage: LANGUAGE_BY_REGION[regionOfTest(examId)],
+    inLanguage: locale,
     isPartOf: { "@id": `${siteUrl}/#website` },
     publisher: { "@id": ORGANIZATION_ID },
     ...(facts.source ? { citation: facts.source.url } : {}),
@@ -65,7 +73,7 @@ export function ExamFacts({ examId }: { examId: string }) {
           ))}
         </dl>
         <p className="mt-5 text-sm text-gray-500 dark:text-gray-400">
-          Updated <time dateTime={EXAM_LANDINGS_UPDATED_AT}>{monthYear(EXAM_LANDINGS_UPDATED_AT)}</time> by the
+          Updated <time dateTime={EXAM_LANDINGS_UPDATED_AT}>{monthYear(EXAM_LANDINGS_UPDATED_AT, locale)}</time> by the
           Tigertest team. Practice questions follow {facts.basedOn}. Exam rules change, so confirm current details
           {facts.source ? (
             <>

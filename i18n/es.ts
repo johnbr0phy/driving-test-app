@@ -42,6 +42,9 @@ export const es: TranslationKeys = {
     allTests: "Todos los exámenes →",
     sendMe: "Envíame",
     quoteIfPass: "una cita para la página si apruebas!",
+    makeAQuiz: "Crea un cuestionario",
+    forTeachers: "Para docentes",
+    privacyPolicy: "Política de privacidad",
   },
 
   // Landing page

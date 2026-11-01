@@ -209,6 +209,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   rodrpciv: { title: "Romania Driving Theory Test", description: "Review priority to the right, trams, level crossings, speed limits and signs for the category B exam." },
   hukresz: { title: "Hungary KRESZ Theory Test", description: "Practise Hungarian signs, the right-hand rule, trams, speed limits and level crossings in English, in full 55-question tests." },
   mttheory: { title: "Malta Driving Theory Test", description: "Practise Maltese signs, roundabouts, speed limits and parking rules for the Transport Malta theory test." },
+  detheorie: { title: "German Driving Theory Test", description: "Practise German right of way, signs, hazard awareness and the StVO in German for the Klasse B Theorieprüfung." },
   sbipo: { title: "SBI PO Prelims Mock Test", description: "Full 100-question mock tests on the 2026 pattern: English 40, Quant 30 and Reasoning 30, with 20-minute sectional timing." },
   sbiclerk: { title: "SBI Clerk Prelims Mock Test", description: "Practice English, numerical ability and reasoning in full 100-question mock tests with 20-minute sectional timing." },
   ibpsrrb: { title: "IBPS RRB Office Assistant Prelims Mock Test", description: "Practice reasoning and numerical ability in full 80-question mock tests with 25 and 20-minute sectional timing." },

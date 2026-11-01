@@ -150,3 +150,18 @@ Notes for every EU builder:
 - Region pages: write the home copy blocks in WIRING.md in the same shape as PK's (`REGION_HOME`, `faqsFor`, hreflang). The integrator adds the routes, middleware country mapping (ISO code to region) and sitemap lines.
 - The EU family is new: grep each other's banks on disk while writing (all ten share the same harmonised rules, so near-identical items are likely; vary wording, numbers and scenarios, and keep each bank to its own country's rule details).
 
+
+## Native-language batch (LANGUAGES.md phase 1)
+
+Exams whose own language is not English, on the platform built in phase 0 (`tools/next100/LANGUAGES.md`).
+- A native exam (detheorie) is written directly in its language from the official law and
+  manuals; never draft in English and translate. A translation of an existing English exam
+  (esdgt `es`, ptimt `pt`) keeps every questionId, category, key and option order and may reword
+  stems for idiom.
+- Write `tools/next100/<id>/glossary.md` (the authority's terms) and, in `WIRING.md`, the config
+  fields: `language`, `locale`, `english` (name, shortName, fullName), `review`, and for a
+  translation the `translations.<lang>` block with `locale` and `landingPath` (and `shortName` if it
+  differs). The landing is the three-line `TranslatedExamLanding` wrapper (`samples`, `related`).
+- Validate with `validate_bank.py --lang <lang>` (a native bank) or
+  `validate_translation.py <base> <translation> --lang <lang>` (a translation).
+- Typography as in LANGUAGES.md 5.1; same house rules as every bank.

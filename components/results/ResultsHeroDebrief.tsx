@@ -21,10 +21,13 @@ export function ResultsHeroDebrief({
   results,
   onDrill,
   onNextLocked,
+  categoryLabels,
 }: {
   results: ReadyTestResults;
   onDrill: () => void;
   onNextLocked: () => void;
+  /** A registry exam's own (localized) category labels; the DMV's come from i18n. */
+  categoryLabels?: Record<string, string>;
 }) {
   const router = useRouter();
   const [showFireworks, setShowFireworks] = useState(false);
@@ -60,8 +63,8 @@ export function ResultsHeroDebrief({
     setShowFireworks(passed && newlyCompleted);
   }, [passed, testSession.id]);
 
-  const progressLabel = { en: "See your progress", es: "Ver tu progreso", vi: "Xem tiến độ của bạn", ko: "내 진행 상황 보기", zh: "查看你的进步" }[language];
-  const completedLabel = { en: "Practice test complete", es: "Prueba de práctica completada", vi: "Hoàn thành bài thi thử", ko: "모의시험 완료", zh: "模拟考试完成" }[language];
+  const progressLabel = { en: "See your progress", es: "Ver tu progreso", vi: "Xem tiến độ của bạn", ko: "내 진행 상황 보기", zh: "查看你的进步", de: "Fortschritt ansehen", fr: "Voir votre progression", it: "Vedi i tuoi progressi", pl: "Zobacz postępy", nl: "Bekijk je voortgang", pt: "Ver o progresso" }[language];
+  const completedLabel = { en: "Practice test complete", es: "Prueba de práctica completada", vi: "Hoàn thành bài thi thử", ko: "모의시험 완료", zh: "模拟考试完成", de: "Übungstest geschafft", fr: "Test d'entraînement terminé", it: "Test di esercitazione completato", pl: "Test próbny ukończony", nl: "Oefentoets klaar", pt: "Teste de treino concluído" }[language];
 
   const passThreshold = Math.ceil(totalQuestions * 0.7);
   const answersFromPass = Math.max(passThreshold - score, 1);
@@ -80,7 +83,7 @@ export function ResultsHeroDebrief({
     coachLine = percentage >= 100 ? t("results.debriefPerfectCoach") : t("results.debriefPassCoach");
     coachSub =
       missCount > 0 && weakCategories[0]
-        ? t("results.debriefPassSubWeak").replace("{{cat}}", t(`categories.${weakCategories[0].category}`))
+        ? t("results.debriefPassSubWeak").replace("{{cat}}", categoryLabels?.[weakCategories[0].category] ?? t(`categories.${weakCategories[0].category}`))
         : t("results.debriefPassSubClean");
   } else {
     coachLine =

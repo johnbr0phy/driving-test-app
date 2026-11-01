@@ -44,6 +44,9 @@ export const zh: TranslationKeys = {
     allTests: "所有考试 →",
     sendMe: "考过了的话，",
     quoteIfPass: "欢迎发一句感言给我放在首页！",
+    makeAQuiz: "制作测验",
+    forTeachers: "教师专区",
+    privacyPolicy: "隐私政策",
   },
 
   // Landing page

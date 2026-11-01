@@ -44,6 +44,9 @@ export const ko: TranslationKeys = {
     allTests: "전체 시험 보기 →",
     sendMe: "합격하시면",
     quoteIfPass: "홈페이지에 실을 후기를 보내주세요!",
+    makeAQuiz: "퀴즈 만들기",
+    forTeachers: "교사용",
+    privacyPolicy: "개인정보 처리방침",
   },
 
   // Landing page

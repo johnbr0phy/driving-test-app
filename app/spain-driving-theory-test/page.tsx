@@ -1,5 +1,6 @@
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
+import { examLandingAlternates } from "@/lib/examSeo";
 import Image from "next/image";
 import { getTigerAsset } from "@/lib/tigerAssets";
 import { Smartphone, Monitor } from "lucide-react";
@@ -24,6 +25,7 @@ export const metadata: Metadata = {
     "dgt theory test english, spain driving theory test, spanish driving test in english, permiso b test, dgt exam practice, examen teorico dgt ingles, spain driving licence theory, carnet de conducir test english, dgt test questions 2026, driving in spain test",
   alternates: {
     canonical: `${siteUrl}/spain-driving-theory-test`,
+    languages: examLandingAlternates("esdgt"),
   },
   openGraph: {
     title,

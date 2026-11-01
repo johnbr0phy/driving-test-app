@@ -13,6 +13,9 @@ import { EXAM_FACTS } from "@/lib/examFacts";
 import { HUB_PAGES_UPDATED_AT } from "@/lib/seoDates";
 import { states } from "@/data/states";
 import { NON_DRIVING_TESTS, REGIONS, REGION_HOME, REGION_HREFLANG, Region, regionHomePath, regionOfTest, regionInfo } from "@/lib/region";
+import type { TestCatalogEntry } from "@/lib/testCatalog";
+import { homeCopy } from "@/components/home/homeCopy";
+import { landingContent } from "@/lib/landingContent";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 const examCount = TEST_CATALOG.length;
@@ -42,7 +45,7 @@ export const homeMetadata: Metadata = {
   twitter: { card: "summary_large_image", title, description: metaDescription, images: [shareImageUrl("home")] },
 };
 
-/** /uk, /ie, /ca, /au, /nz and /in: the country's own title, description and canonical. */
+/** /uk, /ie, /de...: the country's own title, description and canonical, in its language. */
 export function countryHomeMetadata(region: Exclude<Region, "US">): Metadata {
   const { title: t, description: d } = REGION_HOME[region];
   const url = `${siteUrl}${regionHomePath(region)}`;
@@ -113,28 +116,27 @@ const AUTHORITY: Record<Exclude<Region, "US">, string> = {
   BE: "GOCA, any exam centre or the regional authorities",
   FI: "Traficom, Ajovarma or A-Katsastus",
   MT: "Transport Malta",
+  DE: "TÜV/DEKRA",
 };
 
 function faqsFor(region: Region) {
   if (region === "US") return usFaqs;
   const local = TEST_CATALOG.filter((t) => regionOfTest(t.id) === region && !NON_DRIVING_TESTS.has(t.id)).length;
-  const where = regionInfo(region).inName;
-  return [
-    {
-      q: "What is Tigertest?",
-      a: `Tigertest is a free practice test site. For ${where} it has ${local === 1 ? "a driving test" : `${local} driving tests`} written from the official ${local === 1 ? "rules" : "handbooks"}, plus certifications that are the same everywhere, such as CompTIA and AWS. Every question explains the right answer.`,
-    },
-    {
-      q: "Is Tigertest free?",
-      a: `Yes. Every test for ${where} is free, with no subscription.`,
-    },
-    usFaqs[2],
-    usFaqs[3],
-    {
-      q: "Is Tigertest an official test?",
-      a: `No. Tigertest is independent and is not affiliated with ${AUTHORITY[region]} or any testing company. The questions are original and written from the official handbooks.`,
-    },
-  ];
+  const { inName, lang } = regionInfo(region);
+  return homeCopy(lang).faqs({ local, inName, authority: AUTHORITY[region], examCount });
+}
+
+/** "About each test": the exam's facts answer, in English (EXAM_FACTS) or, on a
+ *  page in another language, the facts answer of the exam's landing in that
+ *  language (lib/landingContent.ts). */
+function aboutTest(t: TestCatalogEntry, lang: string): string | undefined {
+  if (lang === "en") return EXAM_FACTS[t.id]?.answer;
+  return landingContent(t.id, lang)?.facts.answer;
+}
+
+/** A test's name in the page's language: a native exam's own name on its country's page, else the English one. */
+function nameIn(t: TestCatalogEntry, lang: string): string {
+  return t.nativeName && t.language === lang ? t.nativeName : t.name;
 }
 
 function jsonLdFor(region: Region) {
@@ -159,11 +161,11 @@ function jsonLdFor(region: Region) {
     },
     {
       "@type": "ItemList",
-      name: us ? "Tigertest practice tests" : `Tigertest practice tests for ${regionInfo(region).inName}`,
+      name: us ? "Tigertest practice tests" : homeCopy(regionInfo(region).lang).listName(regionInfo(region).inName),
       itemListElement: listed.map((t, i) => ({
         "@type": "ListItem",
         position: i + 1,
-        name: t.name,
+        name: nameIn(t, regionInfo(region).lang),
         url: `${siteUrl}${t.href}`,
       })),
     },
@@ -214,6 +216,10 @@ export async function HomePage({ region }: { region: Region }) {
   const localTests = TEST_CATALOG.filter((t) => regionOfTest(t.id) === region && !NON_DRIVING_TESTS.has(t.id)).sort(byAnswered);
   const home = us ? null : REGION_HOME[region];
   const faqs = faqsFor(region);
+  const { lang, inName } = regionInfo(region);
+  const c = homeCopy(lang);
+  // A country's main CTA points at its first test; it waits until that test is in the catalog.
+  const cta = home && TEST_CATALOG.some((t) => t.href === home.cta.href) ? home.cta : null;
 
   return (
     <div className="flex-1 bg-white dark:bg-gray-900">
@@ -224,7 +230,7 @@ export async function HomePage({ region }: { region: Region }) {
         <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 pt-14 pb-12 md:pt-20 md:pb-16 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-50 tracking-tight mb-6">
-            Free practice tests that get you to a pass
+            {c.heroTitle}
           </h1>
           <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-8">
             {home ? home.lead : `${examCount} exams, from the DMV permit test to the SAT, nursing and IT certs. Every answer explained. No signup.`}
@@ -234,18 +240,20 @@ export async function HomePage({ region }: { region: Region }) {
               href="#all-tests"
               className="inline-flex items-center gap-2 rounded-full bg-gray-900 dark:bg-white px-8 py-4 text-lg font-semibold text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors"
             >
-              Find your test <ArrowRight className="h-5 w-5" aria-hidden="true" />
+              {c.findYourTest} <ArrowRight className="h-5 w-5" aria-hidden="true" />
             </a>
+            {(us || cta) && (
             <Link
-              href={home ? home.cta.href : "/dmv-practice-test"}
+              href={cta ? cta.href : "/dmv-practice-test"}
               className="inline-flex items-center rounded-full border border-gray-300 dark:border-gray-700 px-8 py-4 text-lg font-semibold text-gray-900 dark:text-gray-50 hover:border-brand hover:text-brand transition-colors"
             >
-              {home ? home.cta.label : "DMV permit test"}
+              {cta ? cta.label : "DMV permit test"}
             </Link>
+            )}
           </div>
           {totalAnswered !== null && totalAnswered > 0 && (
             <p className="mt-6 text-sm text-gray-500 dark:text-gray-400">
-              <CountUp value={totalAnswered} className="font-semibold text-gray-900 dark:text-gray-50" /> questions answered this week
+              <CountUp value={totalAnswered} className="font-semibold text-gray-900 dark:text-gray-50" /> {c.answeredThisWeek}
             </p>
           )}
         </div>
@@ -256,15 +264,15 @@ export async function HomePage({ region }: { region: Region }) {
       <div className="max-w-5xl mx-auto px-6 pb-16 md:pb-20">
         <div className="flex items-end justify-between mb-5">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50">
-            {popular[0]?.answered !== null ? "Popular this week" : "Popular tests"}
+            {popular[0]?.answered !== null ? c.popularThisWeek : c.popularTests}
           </h2>
           <Link href="/tests" className="text-sm font-medium text-brand-dark hover:underline">
-            All {examCount} tests &rarr;
+            {c.allTests(examCount)} &rarr;
           </Link>
         </div>
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {popular.map(({ test, answered }) => (
-            <TestCard key={test.id} test={test} answered={answered} />
+            <TestCard key={test.id} test={test} answered={answered} lang={lang} />
           ))}
         </div>
       </div>
@@ -310,8 +318,8 @@ export async function HomePage({ region }: { region: Region }) {
       </div>
       )}
 
-      {/* Outside the US: the country's own tests */}
-      {home && (
+      {/* Outside the US: the country's own tests (none yet on a brand-new country page) */}
+      {home && localTests.length > 0 && (
           <div className="max-w-5xl mx-auto px-6 pb-16 md:pb-20">
             <div className="flex flex-wrap items-end justify-between gap-x-6 gap-y-2 mb-5">
               <div>
@@ -319,28 +327,28 @@ export async function HomePage({ region }: { region: Region }) {
                 <p className="mt-2 max-w-2xl text-gray-600 dark:text-gray-300">{home.testsSub}</p>
               </div>
               <Link href="/tests" className="text-sm font-medium text-brand-dark hover:underline">
-                All {examCount} tests &rarr;
+                {c.allTests(examCount)} &rarr;
               </Link>
             </div>
             <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {localTests.map((test) => (
-                <TestCard key={test.id} test={test} answered={answeredById.get(test.id) ?? null} />
+                <TestCard key={test.id} test={test} answered={answeredById.get(test.id) ?? null} lang={lang} />
               ))}
             </div>
             {/* The facts of each real test in plain sentences: what search
                 snippets and AI answers quote for "<country> driving test". */}
-            {localTests.some((t) => EXAM_FACTS[t.id]) && (
+            {localTests.some((t) => aboutTest(t, lang)) && (
               <div className="mt-12">
                 <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-50 mb-6">
-                  {localTests.length === 1 ? "About the test" : "About each test"}
+                  {localTests.length === 1 ? c.aboutTheTest : c.aboutEachTest}
                 </h2>
                 <div className="space-y-6">
-                  {localTests.filter((t) => EXAM_FACTS[t.id]).map((test) => (
+                  {localTests.filter((t) => aboutTest(t, lang)).map((test) => (
                     <div key={test.id}>
                       <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-1">
-                        <Link href={test.href} className="hover:text-brand-dark hover:underline">{test.name}</Link>
+                        <Link href={test.href} className="hover:text-brand-dark hover:underline">{nameIn(test, lang)}</Link>
                       </h3>
-                      <p className="text-gray-600 dark:text-gray-300">{EXAM_FACTS[test.id].answer}</p>
+                      <p className="text-gray-600 dark:text-gray-300">{aboutTest(test, lang)}</p>
                     </div>
                   ))}
                 </div>
@@ -352,24 +360,21 @@ export async function HomePage({ region }: { region: Region }) {
       {/* How it works: real screens from the app, one step per row */}
       <div className="max-w-5xl mx-auto px-6 py-16 md:py-24">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-14 md:mb-20">
-          How Tigertest works
+          {c.howItWorks}
         </h2>
 
         <div className="space-y-16 md:space-y-24">
           <div className="grid md:grid-cols-5 gap-8 md:gap-12 items-center">
             <div className="md:col-span-2">
-              <p className="text-sm font-semibold text-brand-dark mb-2">Step 1</p>
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 mb-3">Learn it on your phone</h3>
-              <p className="text-lg text-gray-600 dark:text-gray-300">
-                Tap an answer and see right away whether it&apos;s right and why. Questions you miss come back until you
-                get them, so a few minutes on the bus actually counts.
-              </p>
+              <p className="text-sm font-semibold text-brand-dark mb-2">{c.steps[0].label}</p>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 mb-3">{c.steps[0].title}</h3>
+              <p className="text-lg text-gray-600 dark:text-gray-300">{c.steps[0].body}</p>
             </div>
             <div className="md:col-span-3 flex justify-center items-start gap-3 sm:gap-4">
               {[
-                { src: "/landing/sat-mobile.png", alt: "SAT math drill on a phone" },
-                { src: "/landing/cst-mobile.png", alt: "Surgical technologist question on a phone" },
-                { src: "/landing/cna-mobile.png", alt: "CNA practice question on a phone" },
+                { src: "/landing/sat-mobile.png", alt: c.shotAlts.phones[0] },
+                { src: "/landing/cst-mobile.png", alt: c.shotAlts.phones[1] },
+                { src: "/landing/cna-mobile.png", alt: c.shotAlts.phones[2] },
               ].map((shot, i) => (
                 <div
                   key={shot.src}
@@ -383,39 +388,34 @@ export async function HomePage({ region }: { region: Region }) {
 
           <div className="grid md:grid-cols-5 gap-8 md:gap-12 items-center">
             <div className="md:col-span-2 md:order-2">
-              <p className="text-sm font-semibold text-brand-dark mb-2">Step 2</p>
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 mb-3">Sit the real thing</h3>
-              <p className="text-lg text-gray-600 dark:text-gray-300">
-                When the questions feel easy, take a full practice test built from the real exam&apos;s outline, with the
-                same mix of topics. Then you know your score before it counts.
-              </p>
+              <p className="text-sm font-semibold text-brand-dark mb-2">{c.steps[1].label}</p>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 mb-3">{c.steps[1].title}</h3>
+              <p className="text-lg text-gray-600 dark:text-gray-300">{c.steps[1].body}</p>
             </div>
             <div className="md:col-span-3 md:order-1">
               <div className="rounded-2xl shadow-xl overflow-hidden border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900">
-                <ThemedScreenshot src="/landing/sat-desktop.png" alt="Timed SAT practice test on a computer" width={1215} height={790} sizes="(min-width: 1024px) 560px, 100vw" className="w-full h-auto" />
+                <ThemedScreenshot src="/landing/sat-desktop.png" alt={c.shotAlts.desktop} width={1215} height={790} sizes="(min-width: 1024px) 560px, 100vw" className="w-full h-auto" />
               </div>
             </div>
           </div>
 
           <div className="grid md:grid-cols-5 gap-8 md:gap-12 items-center">
             <div className="md:col-span-2">
-              <p className="text-sm font-semibold text-brand-dark mb-2">Step 3</p>
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 mb-3">Know when you&apos;re ready</h3>
-              <p className="text-lg text-gray-600 dark:text-gray-300">
-                Your dashboard turns green as you finish each set and pass each test. When it&apos;s all green, go book
-                the exam.
-              </p>
+              <p className="text-sm font-semibold text-brand-dark mb-2">{c.steps[2].label}</p>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 mb-3">{c.steps[2].title}</h3>
+              <p className="text-lg text-gray-600 dark:text-gray-300">{c.steps[2].body}</p>
             </div>
             <div className="md:col-span-3">
               <div className="rounded-2xl shadow-xl overflow-hidden border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900">
-                <ThemedScreenshot src="/dashboard.png" alt="Tigertest DMV dashboard with training sets and practice tests" width={1320} height={1143} sizes="(min-width: 1024px) 560px, 100vw" className="w-full h-auto" />
+                <ThemedScreenshot src="/dashboard.png" alt={c.shotAlts.dashboard} width={1320} height={1143} sizes="(min-width: 1024px) 560px, 100vw" className="w-full h-auto" />
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Social proof */}
+      {/* Social proof (English quotes, so English pages only) */}
+      {lang === "en" && (
       <div className="bg-brand-light py-14">
         <div className="max-w-5xl mx-auto px-6">
           <p className="text-gray-600 dark:text-gray-300 text-center mb-8 flex items-center justify-center gap-2">
@@ -442,17 +442,18 @@ export async function HomePage({ region }: { region: Region }) {
           </div>
         </div>
       </div>
+      )}
 
       {/* Every test */}
       <div id="all-tests" className="max-w-5xl mx-auto px-6 py-16 md:py-24 scroll-mt-6">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-8">
-          {us ? "Every practice test" : `Practice tests for ${regionInfo(region).inName}`}
+          {us ? c.everyTest : c.testsFor(inName)}
         </h2>
-        <TestCatalogGrid showPopular={false} nested region={region} regionPicker localOnly />
+        <TestCatalogGrid showPopular={false} nested region={region} regionPicker localOnly lang={lang} />
         {!us && (
           <p className="mt-10 text-center text-sm text-gray-600 dark:text-gray-300">
-            Moving to the US or studying for a US exam?{" "}
-            <Link href="/tests" className="font-medium text-brand-dark hover:underline">See all {examCount} tests</Link>
+            {c.usExamPrompt}{" "}
+            <Link href="/tests" className="font-medium text-brand-dark hover:underline">{c.seeAllTests(examCount)}</Link>
           </p>
         )}
       </div>
@@ -461,7 +462,7 @@ export async function HomePage({ region }: { region: Region }) {
       <div className="bg-gray-50 dark:bg-gray-950 py-16 md:py-24">
         <div className="max-w-3xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-12">
-            Frequently asked questions
+            {c.faqTitle}
           </h2>
           <div className="space-y-8">
             {faqs.map((f) => (
@@ -476,15 +477,13 @@ export async function HomePage({ region }: { region: Region }) {
 
       {/* Request a test */}
       <div className="max-w-3xl mx-auto px-6 py-16 text-center">
-        <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-50 mb-3">Don&apos;t see your exam?</h2>
-        <p className="text-gray-600 dark:text-gray-300 mb-6">
-          We add new tests based on requests. Tell us which one you are studying for.
-        </p>
+        <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-50 mb-3">{c.requestTitle}</h2>
+        <p className="text-gray-600 dark:text-gray-300 mb-6">{c.requestBody}</p>
         <Link
           href="/request-test"
           className="inline-flex items-center gap-2 bg-brand text-white px-6 py-3 rounded-full font-medium hover:bg-brand-hover transition-colors"
         >
-          Request a test
+          {c.requestCta}
         </Link>
       </div>
     </div>

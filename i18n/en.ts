@@ -42,6 +42,9 @@ export const en = {
     allTests: "All tests →",
     sendMe: "Send me",
     quoteIfPass: "a quote for the homepage if you pass!",
+    makeAQuiz: "Make a quiz",
+    forTeachers: "For Teachers",
+    privacyPolicy: "Privacy Policy",
   },
 
   // Landing page

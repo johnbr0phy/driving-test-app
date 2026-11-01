@@ -2411,6 +2411,21 @@
     --brand-gradient-to: 15 70% 96%;
   }
 
+  /* German car theory test (Führerschein Klasse B) theme: anthracite, the black of the German
+     flag and of German road-sign lettering, with a gold tint on the gradient */
+  [data-theme="detheorie"] {
+    --brand: 0 0% 24%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 45 60% 96%;
+    --brand-hover: 0 0% 18%;
+    --brand-dark: 0 0% 16%;
+    --brand-darker: 0 0% 10%;
+    --brand-muted: 0 0% 66%;
+    --brand-border: 0 0% 78%;
+    --brand-border-light: 0 0% 88%;
+    --brand-gradient-to: 45 90% 93%;
+  }
+
   /* SBI PO theme: bank blue (v2 exam; matches lib/v2/exams/sbipo.ts theme) */
   [data-theme="sbipo"] {
     --brand: 212 70% 46%;
@@ -5029,6 +5044,18 @@
     --brand-muted: 0 35% 45%;
     --brand-dark: 0 88% 65%;
     --brand-darker: 0 83% 78%;
+  }
+
+  .dark [data-theme="detheorie"] {
+    --brand: 0 0% 45.9%;
+    --brand-hover: 0 0% 37.9%;
+    --brand-light: 45 45% 13%;
+    --brand-gradient-to: 45 40% 11%;
+    --brand-border-light: 0 0% 24%;
+    --brand-border: 0 0% 34%;
+    --brand-muted: 0 0% 45%;
+    --brand-dark: 0 0% 65%;
+    --brand-darker: 0 0% 78%;
   }
 
   .dark [data-theme="sbipo"] {

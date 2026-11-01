@@ -26,8 +26,10 @@ import oshaEs from "./examTranslations/osha.es.json";
 import forkliftEs from "./examTranslations/forklift.es.json";
 import cnaEs from "./examTranslations/cna.es.json";
 import epa608Es from "./examTranslations/epa608.es.json";
+import esdgtEs from "./examTranslations/esdgt.es.json";
+import ptimtPt from "./examTranslations/ptimt.pt.json";
 
-export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "bedriving" | "dkteori" | "setrafik" | "fitheory" | "grdriving" | "rodrpciv" | "hukresz" | "mttheory" | "phlet" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "htl" | "cst" | "crcst";
+export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "bedriving" | "dkteori" | "setrafik" | "fitheory" | "grdriving" | "rodrpciv" | "hukresz" | "mttheory" | "detheorie" | "phlet" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "detheorie" | "htl" | "cst" | "crcst";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -102,16 +104,35 @@ export interface ExamConfig {
     /** Theme-specific analytics tag suffix. */
     analyticsKey: string;
   };
+  /** Language of the base bank and the base copy above (name, categoryLabels,
+   *  copy). Default "en". A native exam (detheorie) sets its own: its pages run
+   *  in that language whatever the person chose (lib/pageLanguage.ts). */
+  language?: Language;
+  /** BCP 47 tag of the base language for hreflang, og:locale, JSON-LD
+   *  inLanguage and dates ("de-DE"). Default from the region, else "en-US". */
+  locale?: string;
+  /** English names for English surfaces (catalog, /tests, the All tests menu,
+   *  llms.txt, admin, emails) when the base language is not English. */
+  english?: { name: string; shortName: string; fullName: string };
+  /** Review state per language: "machine" (machine-translated), "model"
+   *  (written natively by a model), "native" (a paid native reviewer is done). */
+  review?: Partial<Record<Language, "machine" | "model" | "native">>;
   /** Other languages the exam is offered in (a translated bank in
    *  lib/banks/<examId>.ts plus this copy). The language switcher shows on the
-   *  exam's app pages only when there is at least one. */
-  translations?: Partial<Record<Exclude<Language, "en">, ExamTranslation>>;
+   *  exam's app pages only when there is at least one. Any language but the
+   *  base one: a German-base exam may carry `en`. */
+  translations?: Partial<Record<Language, ExamTranslation>>;
 }
 
 /** Everything a person reads in an ExamConfig, in one other language. */
 export interface ExamTranslation {
   /** The exam's landing page in this language (/es/examen-practica-cdl). */
   landingPath: string;
+  /** Short credential name in this language, when it differs from the base one. */
+  shortName?: string;
+  /** BCP 47 tag of this translation ("es-ES" for Spain's DGT test; US
+   *  translations default to "<lang>-US"). */
+  locale?: string;
   name: string;
   examLabel: string;
   fullName: string;
@@ -157,6 +178,12 @@ const TEST_SET_NAMES: Record<Language, (n: number) => string> = {
   vi: (n) => `Bộ luyện tập ${n}`,
   ko: (n) => `연습 세트 ${n}`,
   zh: (n) => `练习组 ${n}`,
+  de: (n) => `Übungsset ${n}`,
+  fr: (n) => `Série d'entraînement ${n}`,
+  it: (n) => `Set di esercizi ${n}`,
+  pl: (n) => `Zestaw treningowy ${n}`,
+  nl: (n) => `Oefenset ${n}`,
+  pt: (n) => `Conjunto de treino ${n}`,
 };
 
 const cdl: ExamConfig = {
@@ -8424,6 +8451,10 @@ const esdgt: ExamConfig = {
     sourceLine: "Based on the Spanish Reglamento General de Circulación as in force in November 2026. Original questions; 30 per test, 27 to pass like the real exam (which has 3 options per question).",
     analyticsKey: "esdgt",
   },
+  review: { es: "machine" },
+  translations: {
+    es: examTranslation(esdgtEs),
+  },
 };
 
 const ptimt: ExamConfig = {
@@ -8489,6 +8520,10 @@ const ptimt: ExamConfig = {
     ],
     sourceLine: "Based on Portugal's Código da Estrada and the IMT theory programme. Original questions in English; 30 per test, 27 to pass like the real exam.",
     analyticsKey: "ptimt",
+  },
+  review: { pt: "machine" },
+  translations: {
+    pt: examTranslation(ptimtPt),
   },
 };
 
@@ -9041,6 +9076,83 @@ const mttheory: ExamConfig = {
   },
 };
 
+const detheorie: ExamConfig = {
+  id: "detheorie",
+  stateCode: "DETHEORIE",
+  idBase: 14700,
+  slug: "/fuehrerschein-theorie",
+  landingPath: "/de/fuehrerschein-theorie-test",
+  name: "Führerschein Theorie Test Klasse B",
+  shortName: "Führerschein Theorie",
+  examLabel: "Theorieprüfung Klasse B",
+  fullName: "Theoretische Fahrerlaubnisprüfung Klasse B (Pkw)",
+  questionIdPrefix: "DETH-",
+  icon: "car",
+  testCount: 7,
+  questionsPerTest: 30,
+  passPct: 93,
+  language: "de",
+  locale: "de-DE",
+  english: {
+    name: "German Driving Theory Test (Class B)",
+    shortName: "German driving theory test",
+    fullName: "German driving licence theory test, class B car (Führerschein Klasse B), in German",
+  },
+  review: { de: "model" },
+  // Real test (FeV Anlage 7 Nr. 1.2, TÜV NORD, TÜV | DEKRA arge tp 21; checked 2026-11-01): class
+  // B first licence, 30 questions (20 Grundstoff, 10 Zusatzstoff), 2 to 5 error points each (110),
+  // pass with at most 10, two wrong 5-point questions fail; no fixed time, guide time 45 minutes;
+  // German plus 12 foreign languages; catalogue revised each 1 April and 1 October; up to three
+  // video tasks; multi-answer and image-selection tasks. A reform (smaller catalogue, equal
+  // weighting) passed cabinet on 20 May 2026 for early 2027, not in force. Categories are the
+  // eight Sachgebiete of FeV Anlage 7 Nr. 1.1; the 7/6/4/5/2/2/2/2 split is Tigertest's own.
+  // Seven tests of 30, pools exactly 7x each count (210, all original, written in German).
+  // Single best answer of four, equal weight, so passPct 93 (28 of 30) is Tigertest's target.
+  blueprint: {
+    dethGefahren: 7,
+    dethVerhalten: 6,
+    dethVorfahrt: 4,
+    dethZeichen: 5,
+    dethUmwelt: 2,
+    dethBetrieb: 2,
+    dethTechnik: 2,
+    dethEignung: 2,
+  },
+  // Five topic sets (reviewer, Nov 2026), not testSets(): 5 + 7 tests = 12 dashboard steps.
+  trainingSets: [
+    { setNumber: 1, id: 14701, name: "Gefahrenlehre", categories: ["dethGefahren"], size: 49, weightLabel: "7 von 30 Fragen je Testbogen" },
+    { setNumber: 2, id: 14702, name: "Verhalten im Verkehr", categories: ["dethVerhalten"], size: 42, weightLabel: "6 von 30 Fragen je Testbogen" },
+    { setNumber: 3, id: 14703, name: "Vorfahrt und Vorrang", categories: ["dethVorfahrt"], size: 28, weightLabel: "4 von 30 Fragen je Testbogen" },
+    { setNumber: 4, id: 14704, name: "Verkehrszeichen", categories: ["dethZeichen"], size: 35, weightLabel: "5 von 30 Fragen je Testbogen" },
+    { setNumber: 5, id: 14705, name: "Fahrzeug, Umwelt und Fahreignung", categories: ["dethUmwelt", "dethBetrieb", "dethTechnik", "dethEignung"], size: 56, weightLabel: "8 von 30 Fragen je Testbogen" },
+  ],
+  categoryLabels: {
+    dethGefahren: "Gefahrenlehre",
+    dethVerhalten: "Verhalten im Verkehr",
+    dethVorfahrt: "Vorfahrt und Vorrang",
+    dethZeichen: "Verkehrszeichen",
+    dethUmwelt: "Umweltschutz",
+    dethBetrieb: "Vorschriften über den Betrieb der Fahrzeuge",
+    dethTechnik: "Technik",
+    dethEignung: "Eignung und Befähigung von Kraftfahrern",
+  },
+  copy: {
+    guestPrompt: "um deinen Fortschritt für die Theorieprüfung zu speichern und jede falsche Antwort im Blick zu behalten",
+    trainingHeading: "Übungssets",
+    trainingSub: "Jedes Übungsset deckt ein Sachgebiet der Prüfung ab. Du bekommst sofort Rückmeldung, und falsch beantwortete Fragen kommen wieder, bis du sie sicher kannst.",
+    testsHeading: "Testbögen · 30 Fragen, höchstens 2 Fehler",
+    heroSubs: [
+      "Fünf Übungssets, sieben Testbögen. Gefahrenlehre und Verhalten im Verkehr kommen am häufigsten dran.",
+      "Erst das Set meistern, dann den Testbogen.",
+      "Die Hälfte ist geschafft. Mach einen Testbogen.",
+      "Fehler wiederholen, dann noch einmal testen.",
+      "Alles grün. Melde dich zur Theorieprüfung an.",
+    ],
+    sourceLine: "Nach StVO, StVZO und Fahrerlaubnis-Verordnung, Stand November 2026. Eigene Fragen, nicht aus dem amtlichen Fragenkatalog; 30 pro Testbogen, ohne Fehlerpunkte-Gewichtung.",
+    analyticsKey: "detheorie",
+  },
+};
+
 const phlet: ExamConfig = {
   id: "phlet",
   stateCode: "PHLET",
@@ -9451,7 +9563,7 @@ const trcnpqe: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, cna, ptcb, phleb, ccma, cet, danb, foodmgr, realestate, insurance, notary, sie, series7, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, cosmetology, barber, vtne, nasm, rbt, cpc, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, phlto, zak53, sgbtt, aerta, ngfrsc, kentsa, mykpp, hkdrive, pkdrive, esdgt, ptimt, bedriving, dkteori, setrafik, fitheory, grdriving, rodrpciv, hukresz, mttheory, phlet, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, gulfrn, inrto, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, cna, ptcb, phleb, ccma, cet, danb, foodmgr, realestate, insurance, notary, sie, series7, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, cosmetology, barber, vtne, nasm, rbt, cpc, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, phlto, zak53, sgbtt, aerta, ngfrsc, kentsa, mykpp, hkdrive, pkdrive, esdgt, ptimt, bedriving, dkteori, setrafik, fitheory, grdriving, rodrpciv, hukresz, mttheory, detheorie, phlet, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, gulfrn, inrto, htl, cst, crcst];
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
 export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA, realestatePA, realestateIL, realestateOH, realestateGA, realestateNC, realestateMI, realestateVA, realestateWA, realestateAZ, realestateTN, insuranceNY, insurancePA, insuranceIL, insuranceOH, insuranceGA, insuranceNC, insuranceMI, insuranceNJ, insuranceVA, insuranceWA, pncNY, pncPA, pncIL, pncOH, pncGA, pncNC, pncMI, pncNJ, pncVA, pncWA];
@@ -9565,18 +9677,36 @@ export function trainingPartName(p: TrainingPart, lang: Language = "en"): string
   if (lang === "vi") return `${p.set.name}, phần ${p.part}/${p.partCount}`;
   if (lang === "ko") return `${p.set.name}, ${p.partCount}부 중 ${p.part}부`;
   if (lang === "zh") return `${p.set.name}，第 ${p.part} 部分（共 ${p.partCount} 部分）`;
+  if (lang === "de") return `${p.set.name}, Teil ${p.part} von ${p.partCount}`;
+  if (lang === "fr") return `${p.set.name}, partie ${p.part} sur ${p.partCount}`;
+  if (lang === "it") return `${p.set.name}, parte ${p.part} di ${p.partCount}`;
+  if (lang === "pl") return `${p.set.name}, część ${p.part} z ${p.partCount}`;
+  if (lang === "nl") return `${p.set.name}, deel ${p.part} van ${p.partCount}`;
+  if (lang === "pt") return `${p.set.name}, parte ${p.part} de ${p.partCount}`;
   return `${p.set.name}, part ${p.part} of ${p.partCount}`;
 }
 
-/** Languages an exam is offered in, English first. */
+/** The language of an exam's base bank and copy ("en" unless it is native). */
+export function examBaseLanguage(exam: ExamConfig): Language {
+  return exam.language ?? "en";
+}
+
+/** Languages an exam is offered in, its base language first. */
 export function examLanguages(exam: ExamConfig): Language[] {
-  return ["en", ...(Object.keys(exam.translations ?? {}) as Language[])];
+  const base = examBaseLanguage(exam);
+  return [base, ...(Object.keys(exam.translations ?? {}) as Language[]).filter((l) => l !== base)];
 }
 
 /** The language an exam's content shows in: the person's choice when the
- *  exam is offered in it, English otherwise. */
+ *  exam is offered in it, the exam's base language otherwise (an English-UI
+ *  person opening a German exam gets German questions). */
 export function examLanguage(exam: ExamConfig, language: Language): Language {
-  return examLanguages(exam).includes(language) ? language : "en";
+  return examLanguages(exam).includes(language) ? language : examBaseLanguage(exam);
+}
+
+/** English names for English surfaces (catalog, /tests, llms.txt...). */
+export function examEnglishName(exam: ExamConfig): { name: string; shortName: string; fullName: string } {
+  return exam.english ?? { name: exam.name, shortName: exam.shortName, fullName: exam.fullName };
 }
 
 const localized = new Map<string, ExamConfig>();
@@ -9584,7 +9714,7 @@ const localized = new Map<string, ExamConfig>();
 /** The exam with its copy, set names and category labels in `lang`. IDs,
  *  blueprint and everything else stay as they are. */
 export function localizeExam(exam: ExamConfig, lang: Language): ExamConfig {
-  const tr = lang === "en" ? undefined : exam.translations?.[lang];
+  const tr = lang === examBaseLanguage(exam) ? undefined : exam.translations?.[lang];
   if (!tr) return exam;
   const key = `${exam.id}:${lang}`;
   const cached = localized.get(key);
@@ -9592,6 +9722,7 @@ export function localizeExam(exam: ExamConfig, lang: Language): ExamConfig {
   const result: ExamConfig = {
     ...exam,
     name: tr.name,
+    shortName: tr.shortName ?? exam.shortName,
     examLabel: tr.examLabel,
     fullName: tr.fullName,
     // English part names never show in another language: a translation
@@ -9626,4 +9757,4 @@ export type ExamAnalyticsKey = ExamId | typeof DMV_ANALYTICS_KEY;
 export const EXAM_ANALYTICS_KEYS: ExamAnalyticsKey[] = [DMV_ANALYTICS_KEY, ...EXAMS.map((e) => e.id)];
 export const examAnalyticsKey = (exam: ExamConfig | undefined): ExamAnalyticsKey => (exam ? examFamilyId(exam) : DMV_ANALYTICS_KEY);
 export const examAnalyticsLabel = (key: string): string =>
-  key === DMV_ANALYTICS_KEY ? "DMV permit test" : getExamById(key)?.shortName ?? key;
+  key === DMV_ANALYTICS_KEY ? "DMV permit test" : (() => { const e = getExamById(key); return e ? examEnglishName(e).shortName : key; })();

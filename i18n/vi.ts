@@ -42,6 +42,9 @@ export const vi: TranslationKeys = {
     allTests: "Tất cả bài thi →",
     sendMe: "Gửi cho tôi",
     quoteIfPass: "một lời nhận xét cho trang chủ nếu bạn thi đậu!",
+    makeAQuiz: "Tạo bài kiểm tra",
+    forTeachers: "Dành cho giáo viên",
+    privacyPolicy: "Chính sách quyền riêng tư",
   },
 
   // Landing page

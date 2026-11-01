@@ -22,7 +22,7 @@ export default async function HomeV2Page() {
   const popularity: Record<string, number> = {};
   for (const p of tests) popularity[p.test.id] = p.answered ?? 0;
 
-  // The feed under the box: this week's most practised tests from the visitor's
+  // Popular tests near the visitor, used to top up Trending searches: this week's most practised tests from the visitor's
   // country (or worldwide), topped up with the country's own tests.
   const local = (id: string) => regionOfTest(id) === region || regionOfTest(id) === "GLOBAL";
   const feed = tests.filter((p) => local(p.test.id));
@@ -40,5 +40,5 @@ export default async function HomeV2Page() {
     if (!trending.includes(name)) trending.push(name);
   }
 
-  return <SearchHome initialRegion={region} popularity={popularity} popular={feed.slice(0, 6)} trending={trending} />;
+  return <SearchHome initialRegion={region} popularity={popularity} trending={trending} />;
 }

@@ -4,17 +4,24 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { Search, X, ArrowUpRight, Mic, Grip, Menu, TrendingUp } from "lucide-react";
+import { Search, X, ArrowUpRight, Mic, Grip, Menu, TrendingUp, ChevronRight } from "lucide-react";
+import { useTestsInProgress } from "@/hooks/useTestsInProgress";
 import { FLAGS, readRegionCookie } from "@/components/CountryPills";
 import { useAuth } from "@/contexts/AuthContext";
 import { isInternalBrowser } from "@/lib/internal";
 import { Region, TestRegion, regionInfo, regionOfTest } from "@/lib/region";
 import { normalizeQuery, searchAllTests, SearchHit } from "@/lib/testSearch";
-import type { TestCatalogEntry } from "@/lib/testCatalog";
 import { getTigerAsset } from "@/lib/tigerAssets";
 
 const flagOf = (r: TestRegion) => (r === "GLOBAL" ? "🌐" : FLAGS[r]);
 const TRACK_DELAY_MS = 1200;
+
+function progressLine(mastered: number, testsTaken: number): string {
+  const parts = [];
+  if (mastered > 0) parts.push(testsTaken > 0 ? `${mastered} mastered` : `${mastered} question${mastered === 1 ? "" : "s"} mastered`);
+  if (testsTaken > 0) parts.push(`${testsTaken} test${testsTaken === 1 ? "" : "s"} taken`);
+  return parts.join(" · ") || "Started";
+}
 
 // The bit of the Web Speech API the mic button uses (not in the TS DOM lib).
 interface SpeechRec {
@@ -35,13 +42,11 @@ interface SpeechRec {
 export function SearchHome({
   initialRegion,
   popularity,
-  popular,
   trending,
 }: {
   initialRegion: Region;
   popularity: Record<string, number>;
-  popular: { test: TestCatalogEntry; answered: number | null }[];
-  /** What people searched most this week (signed-out view), topped up with popular test names. */
+  /** What people searched most this week, topped up with popular test names. */
   trending: string[];
 }) {
   const router = useRouter();
@@ -147,6 +152,7 @@ export function SearchHome({
   }
 
   const [menuOpen, setMenuOpen] = useState(false);
+  const started = useTestsInProgress();
   const avatar = user?.photoURL;
   const initial = (user?.displayName || user?.email || "?").trim()[0]?.toUpperCase();
 
@@ -316,61 +322,56 @@ export function SearchHome({
         )}
       </div>
 
-      {/* Signed out, like Google: trending searches under the box. */}
-      {!showResults && !user && trending.length > 0 && (
-        <section className="mx-auto w-full max-w-2xl px-4 pt-8 pb-16">
-          <h2 className="px-2 pb-2 text-2xl text-gray-900 dark:text-gray-50">Trending searches</h2>
-          <ul>
-            {trending.map((text) => (
-              <li key={text} className="border-b border-gray-200 dark:border-gray-800 last:border-b-0">
-                <button
-                  type="button"
-                  onClick={() => runTrending(text)}
-                  className="w-full flex items-center gap-5 px-3 py-4 text-left text-lg text-gray-900 dark:text-gray-50 hover:bg-gray-50 dark:hover:bg-gray-900 rounded-xl"
-                >
-                  <TrendingUp className="w-5 h-5 shrink-0 text-gray-600 dark:text-gray-300" aria-hidden />
-                  {text}
-                </button>
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
+      {!showResults && (
+        <div className="mx-auto w-full max-w-2xl px-4 pt-8 pb-16 space-y-8">
+          {/* Anyone with progress on this device or account: their tests, the current one first. */}
+          {started.length > 0 && (
+            <section>
+              <h2 className="px-2 pb-2 text-2xl text-gray-900 dark:text-gray-50">Pick up where you left off</h2>
+              <ul>
+                {started.slice(0, 4).map(({ test, mastered, testsTaken }) => (
+                  <li key={test.id} className="border-b border-gray-200 dark:border-gray-800 last:border-b-0">
+                    <Link
+                      href={test.dashboardHref}
+                      className="flex items-center gap-4 px-2 py-3 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-900"
+                    >
+                      <span data-theme={test.theme} className="w-12 h-12 shrink-0 rounded-full bg-brand-light dark:bg-brand-darker grid place-items-center overflow-hidden">
+                        <Image src={getTigerAsset(test.id)} alt="" width={48} height={48} className="w-11 h-11 object-contain" />
+                      </span>
+                      <span className="min-w-0 flex-1">
+                        <span className="block text-lg text-gray-900 dark:text-gray-50 truncate">{test.name}</span>
+                        <span className="block text-sm text-gray-500 dark:text-gray-400 truncate">{progressLine(mastered, testsTaken)}</span>
+                      </span>
+                      <span className="text-xl leading-none shrink-0">{flagOf(regionOfTest(test.id))}</span>
+                      <ChevronRight className="w-5 h-5 shrink-0 text-gray-400" />
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
 
-      {/* Signed in, the feed: this week's most practised tests near you, like Google's Discover. */}
-      {!showResults && user && popular.length > 0 && (
-        <section className="mx-auto w-full max-w-2xl px-4 pt-10 pb-16">
-          <h2 className="px-1 pb-3 text-sm font-semibold text-gray-500 dark:text-gray-400">
-            {flagOf(region)} Popular this week in {regionInfo(region).name}
-          </h2>
-          <div className="grid gap-4 sm:grid-cols-2">
-            {popular.map(({ test, answered }) => (
-              <Link
-                key={test.id}
-                href={test.dashboardHref}
-                data-theme={test.theme}
-                className="group block rounded-3xl overflow-hidden bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 hover:shadow-md transition-shadow"
-              >
-                <div className="relative h-36 bg-gradient-to-br from-brand-light to-brand-muted dark:from-brand-darker dark:to-brand-dark grid place-items-center">
-                  <Image src={getTigerAsset(test.id)} alt="" width={112} height={112} className="w-28 h-28 object-contain group-hover:scale-105 transition-transform" />
-                  <span className="absolute top-3 right-3 text-2xl leading-none">{flagOf(regionOfTest(test.id))}</span>
-                </div>
-                <div className="p-4">
-                  <h3 className="text-lg font-bold leading-snug text-gray-900 dark:text-gray-50">{test.name}</h3>
-                  <p className="mt-1 text-sm text-gray-600 dark:text-gray-300 line-clamp-2">{test.blurb}</p>
-                  <p className="mt-3 text-xs text-gray-500 dark:text-gray-400">
-                    {answered ? `${answered.toLocaleString()} questions answered this week` : `${test.questions} questions`} · {test.org}
-                  </p>
-                </div>
-              </Link>
-            ))}
-          </div>
-          <p className="mt-8 text-center text-sm">
-            <Link href="/tests" className="text-gray-500 dark:text-gray-400 underline hover:text-gray-900 dark:hover:text-gray-50">
-              Browse every test
-            </Link>
-          </p>
-        </section>
+          {/* Like Google: what people are searching for. A tap runs the search. */}
+          {trending.length > 0 && (
+            <section>
+              <h2 className="px-2 pb-2 text-2xl text-gray-900 dark:text-gray-50">Trending searches</h2>
+              <ul>
+                {trending.map((text) => (
+                  <li key={text} className="border-b border-gray-200 dark:border-gray-800 last:border-b-0">
+                    <button
+                      type="button"
+                      onClick={() => runTrending(text)}
+                      className="w-full flex items-center gap-5 px-3 py-4 text-left text-lg text-gray-900 dark:text-gray-50 hover:bg-gray-50 dark:hover:bg-gray-900 rounded-xl"
+                    >
+                      <TrendingUp className="w-5 h-5 shrink-0 text-gray-600 dark:text-gray-300" aria-hidden />
+                      {text}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
+        </div>
       )}
     </main>
   );

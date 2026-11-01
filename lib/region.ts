@@ -1,41 +1,50 @@
 // Which country's tests a visitor sees first. Each country has its own
 // indexable homepage: the US at "/", the others at /uk, /ie, /ca, /au, /nz, /in,
 // /ph, /my, /sg, /hk, /ae, /za, /ng, /ke, /pk,
-// /es, /pt, /ro, /se, /gr, /dk, /hu, /be, /fi and /mt. A view
+// /es, /pt, /ro, /se, /gr, /dk, /hu, /be, /fi, /mt and /de. A view
 // setting only: it never touches progress, and every test stays reachable from
 // every country. middleware.ts sets it from Vercel's request country on the
 // first visit and sends a visitor from any other country we cover from "/" to their
 // country's page; the CountryPills change it.
 
-export type Region = "US" | "CA" | "UK" | "IE" | "AU" | "NZ" | "IN" | "PH" | "MY" | "SG" | "HK" | "AE" | "ZA" | "NG" | "KE" | "PK" | "ES" | "PT" | "RO" | "SE" | "GR" | "DK" | "HU" | "BE" | "FI" | "MT";
+import type { Language } from "@/i18n";
 
-export const REGIONS: { code: Region; name: string; short: string; inName: string }[] = [
-  { code: "US", name: "United States", short: "US", inName: "the US" },
-  { code: "CA", name: "Canada", short: "CA", inName: "Canada" },
-  { code: "UK", name: "United Kingdom", short: "UK", inName: "the UK" },
-  { code: "IE", name: "Ireland", short: "IE", inName: "Ireland" },
-  { code: "AU", name: "Australia", short: "AU", inName: "Australia" },
-  { code: "NZ", name: "New Zealand", short: "NZ", inName: "New Zealand" },
-  { code: "IN", name: "India", short: "IN", inName: "India" },
-  { code: "PH", name: "Philippines", short: "PH", inName: "the Philippines" },
-  { code: "MY", name: "Malaysia", short: "MY", inName: "Malaysia" },
-  { code: "SG", name: "Singapore", short: "SG", inName: "Singapore" },
-  { code: "HK", name: "Hong Kong", short: "HK", inName: "Hong Kong" },
-  { code: "AE", name: "United Arab Emirates", short: "UAE", inName: "the UAE" },
-  { code: "ZA", name: "South Africa", short: "ZA", inName: "South Africa" },
-  { code: "NG", name: "Nigeria", short: "NG", inName: "Nigeria" },
-  { code: "KE", name: "Kenya", short: "KE", inName: "Kenya" },
-  { code: "PK", name: "Pakistan", short: "PK", inName: "Pakistan" },
-  { code: "ES", name: "Spain", short: "ES", inName: "Spain" },
-  { code: "PT", name: "Portugal", short: "PT", inName: "Portugal" },
-  { code: "RO", name: "Romania", short: "RO", inName: "Romania" },
-  { code: "SE", name: "Sweden", short: "SE", inName: "Sweden" },
-  { code: "GR", name: "Greece", short: "GR", inName: "Greece" },
-  { code: "DK", name: "Denmark", short: "DK", inName: "Denmark" },
-  { code: "HU", name: "Hungary", short: "HU", inName: "Hungary" },
-  { code: "BE", name: "Belgium", short: "BE", inName: "Belgium" },
-  { code: "FI", name: "Finland", short: "FI", inName: "Finland" },
-  { code: "MT", name: "Malta", short: "MT", inName: "Malta" },
+export type Region = "US" | "CA" | "UK" | "IE" | "AU" | "NZ" | "IN" | "PH" | "MY" | "SG" | "HK" | "AE" | "ZA" | "NG" | "KE" | "PK" | "ES" | "PT" | "RO" | "SE" | "GR" | "DK" | "HU" | "BE" | "FI" | "MT" | "DE";
+
+/**
+ * Every country with its own homepage. `lang` is the language its homepage is
+ * written in and `locale` its BCP 47 tag (hreflang, og:locale, JSON-LD and
+ * dates). Spain and Portugal stay English until their Spanish and Portuguese
+ * exams ship; Germany is German from day one.
+ */
+export const REGIONS: { code: Region; name: string; short: string; inName: string; lang: Language; locale: string }[] = [
+  { code: "US", name: "United States", short: "US", inName: "the US", lang: "en", locale: "en-US" },
+  { code: "CA", name: "Canada", short: "CA", inName: "Canada", lang: "en", locale: "en-CA" },
+  { code: "UK", name: "United Kingdom", short: "UK", inName: "the UK", lang: "en", locale: "en-GB" },
+  { code: "IE", name: "Ireland", short: "IE", inName: "Ireland", lang: "en", locale: "en-IE" },
+  { code: "AU", name: "Australia", short: "AU", inName: "Australia", lang: "en", locale: "en-AU" },
+  { code: "NZ", name: "New Zealand", short: "NZ", inName: "New Zealand", lang: "en", locale: "en-NZ" },
+  { code: "IN", name: "India", short: "IN", inName: "India", lang: "en", locale: "en-IN" },
+  { code: "PH", name: "Philippines", short: "PH", inName: "the Philippines", lang: "en", locale: "en-PH" },
+  { code: "MY", name: "Malaysia", short: "MY", inName: "Malaysia", lang: "en", locale: "en-MY" },
+  { code: "SG", name: "Singapore", short: "SG", inName: "Singapore", lang: "en", locale: "en-SG" },
+  { code: "HK", name: "Hong Kong", short: "HK", inName: "Hong Kong", lang: "en", locale: "en-HK" },
+  { code: "AE", name: "United Arab Emirates", short: "UAE", inName: "the UAE", lang: "en", locale: "en-AE" },
+  { code: "ZA", name: "South Africa", short: "ZA", inName: "South Africa", lang: "en", locale: "en-ZA" },
+  { code: "NG", name: "Nigeria", short: "NG", inName: "Nigeria", lang: "en", locale: "en-NG" },
+  { code: "KE", name: "Kenya", short: "KE", inName: "Kenya", lang: "en", locale: "en-KE" },
+  { code: "PK", name: "Pakistan", short: "PK", inName: "Pakistan", lang: "en", locale: "en-PK" },
+  { code: "ES", name: "Spain", short: "ES", inName: "Spain", lang: "en", locale: "en-ES" },
+  { code: "PT", name: "Portugal", short: "PT", inName: "Portugal", lang: "en", locale: "en-PT" },
+  { code: "RO", name: "Romania", short: "RO", inName: "Romania", lang: "en", locale: "en-RO" },
+  { code: "SE", name: "Sweden", short: "SE", inName: "Sweden", lang: "en", locale: "en-SE" },
+  { code: "GR", name: "Greece", short: "GR", inName: "Greece", lang: "en", locale: "en-GR" },
+  { code: "DK", name: "Denmark", short: "DK", inName: "Denmark", lang: "en", locale: "en-DK" },
+  { code: "HU", name: "Hungary", short: "HU", inName: "Hungary", lang: "en", locale: "en-HU" },
+  { code: "BE", name: "Belgium", short: "BE", inName: "Belgium", lang: "en", locale: "en-BE" },
+  { code: "FI", name: "Finland", short: "FI", inName: "Finland", lang: "en", locale: "en-FI" },
+  { code: "MT", name: "Malta", short: "MT", inName: "Malta", lang: "en", locale: "en-MT" },
+  { code: "DE", name: "Germany", short: "DE", inName: "Germany", lang: "de", locale: "de-DE" },
 ];
 
 /** The chosen region, e.g. "UK". */
@@ -77,6 +86,9 @@ export function regionFromCountry(cc: string | null | undefined): Region | null 
     case "BE": return "BE";
     case "FI": return "FI";
     case "MT": return "MT";
+    // Germany only: Austria, Switzerland, Luxembourg and Liechtenstein have
+    // their own tests and rules, so they stay unmapped.
+    case "DE": return "DE";
     default: return null;
   }
 }
@@ -86,9 +98,8 @@ export function regionHomePath(r: Region): string {
   return r === "US" ? "/" : `/${r.toLowerCase()}`;
 }
 
-/** hreflang for each country's homepage, the US page doubling as the default. */
-export const REGION_HREFLANG: Record<Region, string> = { US: "en-US", CA: "en-CA", UK: "en-GB", AU: "en-AU", IN: "en-IN", IE: "en-IE", NZ: "en-NZ",
-  PH: "en-PH", MY: "en-MY", SG: "en-SG", HK: "en-HK", AE: "en-AE", ZA: "en-ZA", NG: "en-NG", KE: "en-KE", PK: "en-PK", ES: "en-ES", PT: "en-PT", RO: "en-RO", SE: "en-SE", GR: "en-GR", DK: "en-DK", HU: "en-HU", BE: "en-BE", FI: "en-FI", MT: "en-MT" };
+/** hreflang for each country's homepage (its locale), the US page doubling as the default. */
+export const REGION_HREFLANG = Object.fromEntries(REGIONS.map((r) => [r.code, r.locale])) as Record<Region, string>;
 
 export function regionInfo(r: Region) {
   return REGIONS.find((x) => x.code === r)!;
@@ -109,6 +120,7 @@ const TEST_REGIONS: Record<string, TestRegion> = {
   naplan7: "AU", ocnsw: "AU", vicsel: "AU", hscmaths: "AU", aursa: "AU", aurcg: "AU", aufss: "AU", aufirstaid: "AU", auforklift: "AU", auwah: "AU", aucit: "AU",
   nzroad: "NZ",
   phlto: "PH", phcse: "PH", phlet: "PH", mykpp: "MY", sgbtt: "SG", hkdrive: "HK", aerta: "AE", zak53: "ZA", ngfrsc: "NG", kentsa: "KE", pkdrive: "PK",
+  detheorie: "DE",
   esdgt: "ES", ptimt: "PT", rodrpciv: "RO", setrafik: "SE", grdriving: "GR", dkteori: "DK", hukresz: "HU", bedriving: "BE", fitheory: "FI", mttheory: "MT",
   jambeng: "NG", jambmath: "NG", jambbio: "NG", jambchem: "NG", jambphys: "NG",
   ngpolice: "NG", cdcfib: "NG", ngarmy: "NG", ngcustoms: "NG", trcnpqe: "NG",
@@ -346,6 +358,16 @@ export const REGION_HOME: Record<Exclude<Region, "US">, {
     cta: { label: "Finnish theory test", href: "/finland-driving-theory-test" },
     testsTitle: "Category B theory test",
     testsSub: "200 questions on the Finnish Road Traffic Act, in km/h for right-hand traffic. Four full 50-question tests, 43 to pass.",
+  },
+  // Written in German (REGIONS[].lang). The CTA shows once detheorie is in
+  // the catalog (HomePage hides a CTA whose test is not listed yet).
+  DE: {
+    title: "Führerschein Theorie kostenlos üben | Tigertest",
+    description: "Kostenlose Übungstests für die Theorieprüfung Klasse B: eigene Fragen zu StVO, Vorfahrt und Verkehrszeichen, jede Antwort erklärt. Ohne Anmeldung.",
+    lead: "Übe für die theoretische Führerscheinprüfung Klasse B. Eigene Fragen zu Vorfahrt, Verkehrszeichen, Geschwindigkeit und Gefahrenlehre nach der StVO, jede Antwort erklärt. Ohne Anmeldung.",
+    cta: { label: "Führerschein-Theorie", href: "/de/fuehrerschein-theorie-test" },
+    testsTitle: "Theorieprüfung Klasse B",
+    testsSub: "Fragen nach StVO und Fahrerlaubnis-Verordnung, in km/h für den Rechtsverkehr. Videofragen und Fehlerpunkte werden nicht nachgebildet.",
   },
   MT: {
     title: "Free Malta Driving Theory Test Practice | Tigertest",

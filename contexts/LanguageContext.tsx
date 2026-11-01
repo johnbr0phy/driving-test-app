@@ -1,17 +1,23 @@
 "use client";
 
 import { createContext, useContext, useEffect, useMemo, useCallback } from "react";
+import { usePathname } from "next/navigation";
 import { Language, createT } from "@/i18n";
 import { useStore } from "@/store/useStore";
+import { pageLanguage } from "@/lib/pageLanguage";
 
 interface LanguageContextType {
+  /** The language this page shows its chrome in (lib/pageLanguage.ts). */
   language: Language;
+  /** The person's own choice, stored and synced; pages may override it. */
+  preferredLanguage: Language;
   setLanguage: (lang: Language) => void;
   t: (key: string) => string;
 }
 
 const LanguageContext = createContext<LanguageContextType>({
   language: "en",
+  preferredLanguage: "en",
   setLanguage: () => {},
   t: (key: string) => key,
 });
@@ -21,13 +27,17 @@ export function useLanguage() {
 }
 
 export function useTranslation() {
-  const { t, language, setLanguage } = useLanguage();
-  return { t, language, setLanguage };
+  const { t, language, preferredLanguage, setLanguage } = useLanguage();
+  return { t, language, preferredLanguage, setLanguage };
 }
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const language = useStore((state) => state.language);
+  const preferredLanguage = useStore((state) => state.language);
   const setStoreLanguage = useStore((state) => state.setLanguage);
+  const pathname = usePathname();
+  // A native-language exam runs in its own language, the DMV only in the
+  // languages it has questions for, a country homepage in its country's.
+  const language = pageLanguage(pathname, preferredLanguage);
 
   const setLanguage = useCallback(
     (lang: Language) => {
@@ -36,7 +46,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     [setStoreLanguage]
   );
 
-  // Update the html lang attribute when language changes
+  // Update the html lang attribute when the page's language changes
   useEffect(() => {
     document.documentElement.lang = language;
   }, [language]);
@@ -44,8 +54,8 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const t = useMemo(() => createT(language), [language]);
 
   const value = useMemo(
-    () => ({ language, setLanguage, t }),
-    [language, setLanguage, t]
+    () => ({ language, preferredLanguage, setLanguage, t }),
+    [language, preferredLanguage, setLanguage, t]
   );
 
   return (

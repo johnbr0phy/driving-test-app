@@ -1,5 +1,5 @@
 // Question types
-export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "EPA608" | "CNA" | "PTCB" | "PHLEB" | "CCMA" | "CET" | "DANB" | "EMT" | "FOODMGR" | "REALESTATE" | "LIFEHEALTH" | "NOTARY" | "TEAS" | "AWSCCP" | "APLUS" | "FOODHANDLER" | "BOATING" | "HUNTER" | "SECPLUS" | "HESI" | "ASVAB" | "CPR" | "OSHA" | "FORKLIFT" | "ALCOHOL" | "ACCUPLACER" | "SECGUARD" | "LIFEGUARD" | "COSMO" | "PNC" | "VTNE" | "CAQC" | "UKLGV" | "AUQLD" | "AUSA" | "AUVIC" | "UKADI" | "UKCAR" | "UKPCV" | "CABC" | "AUNSW" | "UKMOTO" | "CAAB" | "CAON" | "CAMB" | "AUWA" | "UKSIA" | "UK18ED" | "CSCS" | "UKFOOD" | "UKAPLH" | "UKFAW" | "UKCARE" | "CAPAL" | "CAELEC" | "CAPSW" | "CASFA" | "CAWHMIS" | "CAGUARD" | "CAAUTO" | "CAPLUMB" | "CACARP" | "CAWELD" | "AUWHITE" | "AURSA" | "AURCG" | "AUFSS" | "AUFIRSTAID" | "AUFORKLIFT" | "AUWAH" | "UKLITU" | "CACIT" | "AUCIT" | "GULFRN" | "INRTO" | "NASM" | "RBT" | "CPC" | "JELEC" | "BARBER" | "FFI" | "POLICE" | "SIE" | "SERIES7" | "PCOC" | "CASK" | "CANS" | "UKSERU" | "NZROAD" | "IEDTT" | "PHLTO" | "ZAK53" | "SGBTT" | "AERTA" | "NGFRSC" | "KENTSA" | "MYKPP" | "HKDRIVE" | "PKDRIVE" | "ESDGT" | "PTIMT" | "BEDRIVE" | "DKTEORI" | "SETRAFIK" | "FITHEORY" | "GRDRIVE" | "RODRPCIV" | "HUKRESZ" | "MTTHEORY" | "PHLET" | "NGPOLICE" | "NGCDCFIB" | "NGARMY" | "NGCUSTOMS" | "TRCNPQE" | "HTL" | "CST" | "CRCST";
+export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "EPA608" | "CNA" | "PTCB" | "PHLEB" | "CCMA" | "CET" | "DANB" | "EMT" | "FOODMGR" | "REALESTATE" | "LIFEHEALTH" | "NOTARY" | "TEAS" | "AWSCCP" | "APLUS" | "FOODHANDLER" | "BOATING" | "HUNTER" | "SECPLUS" | "HESI" | "ASVAB" | "CPR" | "OSHA" | "FORKLIFT" | "ALCOHOL" | "ACCUPLACER" | "SECGUARD" | "LIFEGUARD" | "COSMO" | "PNC" | "VTNE" | "CAQC" | "UKLGV" | "AUQLD" | "AUSA" | "AUVIC" | "UKADI" | "UKCAR" | "UKPCV" | "CABC" | "AUNSW" | "UKMOTO" | "CAAB" | "CAON" | "CAMB" | "AUWA" | "UKSIA" | "UK18ED" | "CSCS" | "UKFOOD" | "UKAPLH" | "UKFAW" | "UKCARE" | "CAPAL" | "CAELEC" | "CAPSW" | "CASFA" | "CAWHMIS" | "CAGUARD" | "CAAUTO" | "CAPLUMB" | "CACARP" | "CAWELD" | "AUWHITE" | "AURSA" | "AURCG" | "AUFSS" | "AUFIRSTAID" | "AUFORKLIFT" | "AUWAH" | "UKLITU" | "CACIT" | "AUCIT" | "GULFRN" | "INRTO" | "NASM" | "RBT" | "CPC" | "JELEC" | "BARBER" | "FFI" | "POLICE" | "SIE" | "SERIES7" | "PCOC" | "CASK" | "CANS" | "UKSERU" | "NZROAD" | "IEDTT" | "PHLTO" | "ZAK53" | "SGBTT" | "AERTA" | "NGFRSC" | "KENTSA" | "MYKPP" | "HKDRIVE" | "PKDRIVE" | "ESDGT" | "PTIMT" | "BEDRIVE" | "DKTEORI" | "SETRAFIK" | "FITHEORY" | "GRDRIVE" | "RODRPCIV" | "HUKRESZ" | "MTTHEORY" | "DETHEORIE" | "PHLET" | "NGPOLICE" | "NGCDCFIB" | "NGARMY" | "NGCUSTOMS" | "TRCNPQE" | "HTL" | "CST" | "CRCST";
 
 // Test mode
 export type TestMode = "dmv" | "cdl" | "htl";
@@ -1025,6 +1025,15 @@ export type QuestionCategory =
   | "mtVulnerable"
   | "mtSafety"
   | "mtEmergency"
+  // German car theory test (Klasse B)
+  | "dethGefahren"
+  | "dethVerhalten"
+  | "dethVorfahrt"
+  | "dethZeichen"
+  | "dethUmwelt"
+  | "dethBetrieb"
+  | "dethTechnik"
+  | "dethEignung"
   // Philippines LET (LEPT)
   | "phletComm"
   | "phletSciMath"

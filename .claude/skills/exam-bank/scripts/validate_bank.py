@@ -3,6 +3,14 @@
 
 Usage:
   python3 -I validate_bank.py data/<bank>.json [--pool cat=N ...] [--max-key-longest 0.20]
+                              [--lang de] [--len-scale 1.3]
+
+--lang xx checks a bank written in (or translated into) another language: that
+language's "all/none of the above" phrases and option-reference connectors are
+banned too (the English ones stay banned). --len-scale multiplies the 12..42
+average-option range and the 110-character limit, since the same idea takes
+more characters in German than in English; it defaults per language (de 1.3,
+nl 1.25, fr 1.2, pl 1.2, it 1.15, pt 1.15, es 1.15, tr 1.1, else 1.0).
 
 With --pool flags the category counts are checked exactly; without them the
 counts are only reported. Exit code 0 on PASS, 1 on FAIL.
@@ -19,7 +27,7 @@ Checks (hard failures):
   length      key > 1.2x the average wrong option in more than 30% of items,
               key the single longest option in more than --max-key-longest (default 25%),
               bank average option length outside 12..42 characters,
-              more than 5 options over 110 characters
+              more than 5 options over 110 characters (both scaled by --len-scale)
 Soft reports: options over 110 chars, "varies by state" only on the key, provider names in stems.
 Thresholds were set so every bank written to the house style passes and the
 batch that ignored it (keys 46 to 84 chars, key-longest 56 to 90%) fails.
@@ -36,9 +44,36 @@ from collections import Counter, defaultdict
 
 KEYS = ["type", "state", "questionId", "category", "question", "optionA", "optionB",
         "optionC", "optionD", "correctAnswer", "correctIndex", "explanation"]
-BANNED = re.compile(r"all of the above|none of the above|—", re.I)
-# An option that only points at other options: "Both A and B", "A and C", "B or D".
-OPTION_REF = re.compile(r"^(both\s+)?[abcd](\s+and\s+|\s*,\s*|\s+or\s+)[abcd]$", re.I)
+# Per language: "all/none of the above" phrases, the words that join two option
+# letters ("A and B"), and the "both" word that can open such an option.
+LANG_RULES = {
+    "en": (r"all of the above|none of the above", ["and", "or"], ["both"]),
+    "es": (r"todas las anteriores|ninguna de las anteriores", ["y", "o"], ["ambas", "ambos", "tanto"]),
+    "de": (r"alle (antworten|genannten|oben genannten)|keine der (antworten|genannten)", ["und", "oder"], ["beide"]),
+    "fr": (r"toutes les réponses|aucune (de ces|des) réponses|toutes les propositions", ["et", "ou"], ["les deux"]),
+    "it": (r"tutte le precedenti|nessuna delle precedenti|tutte le risposte", ["e", "o"], ["entrambe", "entrambi"]),
+    "pl": (r"wszystkie powyższe|żadna z powyższych|wszystkie odpowiedzi", ["i", "lub", "oraz"], ["obie", "oba"]),
+    "nl": (r"alle bovenstaande|geen van de bovenstaande|alle antwoorden", ["en", "of"], ["beide"]),
+    "pt": (r"todas as anteriores|nenhuma das anteriores|todas as respostas", ["e", "ou"], ["ambas", "ambos"]),
+    "tr": (r"^hepsi$|^hiçbiri$|yukarıdakilerin hepsi", ["ve", "veya"], ["ikisi de"]),
+    "id": (r"semua benar|semua jawaban benar|tidak ada yang benar", ["dan", "atau"], ["keduanya"]),
+}
+LEN_SCALE = {"de": 1.3, "nl": 1.25, "fr": 1.2, "pl": 1.2, "it": 1.15, "pt": 1.15, "es": 1.15, "tr": 1.1}
+
+
+def banned_re(lang: str) -> re.Pattern:
+    phrases = [LANG_RULES["en"][0]] + ([LANG_RULES[lang][0]] if lang != "en" else [])
+    return re.compile("|".join(phrases) + "|—", re.I)
+
+
+def option_ref_re(lang: str) -> re.Pattern:
+    """An option that only points at other options: "Both A and B", "A und C", "B ou D"."""
+    langs = ["en"] + ([lang] if lang != "en" else [])
+    joins = sorted({j for L in langs for j in LANG_RULES[L][1]})
+    boths = sorted({b for L in langs for b in LANG_RULES[L][2]})
+    return re.compile(
+        rf"^(({'|'.join(map(re.escape, boths))})\s+)?[abcd](\s+({'|'.join(joins)})\s+|\s*,\s*)[abcd]$", re.I
+    )
 PROVIDERS = re.compile(r"\b(red cross|american heart|AHA|TIPS|TABC|ServSafe|YMCA|Ellis|NASM|ACE)\b")
 ID_RE = re.compile(r"^([A-Z0-9]+-)([A-Z0-9]+)-(\d{3})$")
 SIGN_MAP = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "..", "..", "lib", "signImages.ts")
@@ -60,7 +95,13 @@ def main() -> int:
     ap.add_argument("--pool", action="append", default=[], help="category=count, repeatable")
     ap.add_argument("--max-key-longest", type=float, default=0.25)
     ap.add_argument("--rows", type=int, default=200)
+    ap.add_argument("--lang", default="en", choices=sorted(LANG_RULES), help="language the bank is written in")
+    ap.add_argument("--len-scale", type=float, default=None, help="scale for the length limits (default per --lang)")
     args = ap.parse_args()
+    scale = args.len_scale if args.len_scale is not None else LEN_SCALE.get(args.lang, 1.0)
+    BANNED = banned_re(args.lang)
+    OPTION_REF = option_ref_re(args.lang)
+    soft_limit = round(110 * scale)
 
     rows = json.load(open(args.bank, encoding="utf-8"))
     errs: list[str] = []
@@ -148,9 +189,9 @@ def main() -> int:
             key_far += 1
         if ln[k] == max(ln.values()) and list(ln.values()).count(ln[k]) == 1:
             key_long += 1
-        if max(ln.values()) > 110:
+        if max(ln.values()) > soft_limit:
             over_110 += 1
-            warns.append(f"{qid}: option over 110 chars")
+            warns.append(f"{qid}: option over {soft_limit} chars")
         vs = {L for L, v in opts.items() if "varies by state" in v.lower() or "house policy" in v.lower()}
         if vs == {k}:
             varies_key_only += 1
@@ -176,14 +217,15 @@ def main() -> int:
         errs.append(f"key is the longest option in {long_share:.0%} of items (max {args.max_key_longest:.0%})")
     # Floor is low on purpose: vocabulary and numeric banks (ASVAB, HESI) legitimately
     # run short. The floor only catches a degenerate bank, not a terse one.
-    if not 12 <= avg_opt <= 42:
-        errs.append(f"average option length {avg_opt:.0f} chars (want 12-42)")
+    lo, hi = 12 * scale, 42 * scale
+    if not lo <= avg_opt <= hi:
+        errs.append(f"average option length {avg_opt:.0f} chars (want {lo:.0f}-{hi:.0f})")
     if over_110 > 5:
-        errs.append(f"{over_110} options over 110 chars (max 5)")
+        errs.append(f"{over_110} options over {soft_limit} chars (max 5)")
     if varies_key_only > 3:
         warns.append(f"'varies by state'/'house policy' only on the key in {varies_key_only} items (a tell)")
 
-    print(f"rows {len(rows)}  categories {dict(counts)}")
+    print(f"lang {args.lang}  len-scale {scale}  rows {len(rows)}  categories {dict(counts)}")
     print(f"letters {dict(letters)}  avg option {avg_opt:.0f} chars  key-longest {long_share:.0%}  key>1.2x {far_share:.0%}")
     for w in warns[:20]:
         print("warn:", w)

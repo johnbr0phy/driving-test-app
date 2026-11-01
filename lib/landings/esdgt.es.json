@@ -1,0 +1,108 @@
+{
+  "metaTitle": "Test DGT Permiso B 2026 - Practica Gratis el Teórico",
+  "metaDescription": "Test del examen teórico de la DGT para el permiso B gratis: 200 preguntas originales con explicación, seis tests de 30 preguntas como el examen real y cinco bloques por temas. Sin registro.",
+  "keywords": "test dgt, test permiso b, examen teórico dgt, test dgt 2026, test de conducir gratis, examen teórico carnet de conducir, preguntas examen dgt, test autoescuela gratis, test teórico permiso b, test dgt online",
+  "breadcrumb": {
+    "home": "Inicio",
+    "allTests": "Todos los tests",
+    "current": "Test DGT del permiso B"
+  },
+  "h1": "Test DGT del Permiso B 2026 Gratis",
+  "subtitle": "200 preguntas originales sobre las normas que pregunta el examen teórico de la DGT para el permiso B: señales, prioridad, límites de velocidad, adelantamiento a ciclistas, estacionamiento, alumbrado, alcohol y la baliza V-16. Seis tests de 30 preguntas, 27 para aprobar. Pensado para el móvil. Sin registro.",
+  "facts": {
+    "h2": "El examen teórico de la DGT en resumen",
+    "answer": "El examen teórico de la DGT es la primera prueba para obtener el permiso B. Tiene 30 preguntas tipo test con tres opciones cada una, dispones de 30 minutos y apruebas con un máximo de tres fallos, es decir, con 27 respuestas correctas. Para el permiso B se ofrece en castellano, en las lenguas cooficiales (catalán, euskera, gallego y valenciano), en inglés, francés y alemán, y en una versión de lectura fácil. Puedes presentarte desde tres meses antes de cumplir 18 años, la edad mínima para el permiso, y el aprobado se conserva durante dos años mientras haces el examen práctico. Las preguntas se basan en el Reglamento General de Circulación: señales, prioridad, límites de velocidad, adelantamientos, estacionamiento, alumbrado, alcohol, elementos de seguridad y qué hacer tras un accidente.",
+    "tigertest": "Tigertest tiene 200 preguntas de práctica originales con explicación, en castellano, todas gratis y sin registro. No está afiliado a la Dirección General de Tráfico (DGT).",
+    "rows": [
+      { "label": "Organiza", "value": "DGT (Dirección General de Tráfico), jefaturas provinciales" },
+      { "label": "Preguntas", "value": "30 tipo test, tres opciones cada una" },
+      { "label": "Tiempo", "value": "30 minutos" },
+      { "label": "Para aprobar", "value": "Máximo 3 fallos (27 de 30)" },
+      { "label": "Idiomas", "value": "Castellano, lenguas cooficiales, inglés, francés, alemán" },
+      { "label": "Edad mínima (permiso B)", "value": "18 años (primer examen hasta tres meses antes)" },
+      { "label": "El aprobado se conserva", "value": "Dos años" },
+      { "label": "Tests de Tigertest", "value": "6 x 30 preguntas, 27 para aprobar" }
+    ],
+    "footnote": "Basado en el Reglamento General de Circulación (con el Real Decreto 518/2026, en vigor desde el 1 de octubre de 2026), el Reglamento General de Conductores y la información de la DGT sobre el examen teórico, revisado en noviembre de 2026. Las normas cambian, así que confirma los detalles actuales con"
+  },
+  "howItWorks": {
+    "h2": "Cómo funciona",
+    "cards": [
+      {
+        "h3": "Practica por temas",
+        "p": "Cinco bloques de entrenamiento: señales y marcas viales, prioridad e intersecciones, velocidad y adelantamientos, estacionamiento y alumbrado, y permisos, alcohol y emergencias. Las preguntas que fallas vuelven hasta que las domines."
+      },
+      {
+        "h3": "Tests de examen completos",
+        "p": "Seis tests de 30 preguntas como el examen real, con 27 aciertos para aprobar, la regla de los tres fallos de la DGT. Ninguna pregunta se repite entre tests, y cada respuesta explica la norma y el error más habitual."
+      }
+    ]
+  },
+  "topics": {
+    "h2": "Basado en el Reglamento General de Circulación",
+    "p": "Cada pregunta se ha escrito a partir del Reglamento General de Circulación vigente en noviembre de 2026, con los cambios del 1 de octubre de 2026: adelantar a ciclistas al menos 20 km/h por debajo del límite y con 1,5 metros de separación, el carril de emergencia en los atascos de autopista y las normas con nieve. Las señales se describen con palabras, en km/h y metros. La DGT no publica cuánto pesa cada tema, así que el reparto sigue el temario, con las señales y la prioridad como lo más importante. El examen real tiene tres opciones por pregunta; las nuestras tienen cuatro.",
+    "items": [
+      "Señales y agentes (17%)",
+      "Prioridad, intersecciones y glorietas (13%)",
+      "Velocidad, distancias y carriles (13%)",
+      "Permisos, documentación y vehículo (10%)",
+      "Marcas viales y semáforos (10%)",
+      "Adelantamientos y usuarios vulnerables (10%)",
+      "Alumbrado, túneles y mal tiempo (10%)",
+      "Alcohol, distracciones y emergencias (10%)",
+      "Parada y estacionamiento (7%)"
+    ]
+  },
+  "howToPass": {
+    "h2": "Cómo aprobar el examen teórico de la DGT",
+    "steps": [
+      {
+        "h3": "1. Apréndete los límites de velocidad como una tabla",
+        "p": "Muchos fallos vienen de los números. Para un turismo: 120 km/h en autopistas y autovías, 90 en carreteras convencionales, 50 en travesía y, en poblado, 20, 30 o 50 km/h según la calle sea de plataforma única, tenga un carril por sentido o dos o más. Añade los 60 km/h de velocidad mínima en autopista y los 80 y 90 con remolque."
+      },
+      {
+        "h3": "2. Ten claro quién pasa primero",
+        "p": "Sin señales, cede el paso a los que vienen por la derecha, pero tienen prioridad los vehículos que ya circulan por la glorieta, los que van sobre raíles, los de la vía pavimentada y los que ya están en la autopista. Las señales de los agentes prevalecen sobre la señalización circunstancial, esta sobre los semáforos, después las señales verticales y por último las marcas viales. Aprende también las señales con el brazo de los agentes."
+      },
+      {
+        "h3": "3. Ponte al día con los cambios de 2026",
+        "p": "Desde el 1 de enero de 2026, la baliza V-16 conectada es la única forma válida de señalizar una avería. Desde el 1 de octubre de 2026, fuera de poblado se adelanta a los ciclistas al menos 20 km/h por debajo del límite, se abre un carril de emergencia en los atascos de autopista y con nieve se circula por la derecha sin adelantar. Las preguntas sobre normas antiguas, como los triángulos, están desfasadas."
+      },
+      {
+        "h3": "4. Apunta a dos fallos o menos",
+        "p": "El examen real permite tres fallos en 30 preguntas, así que deja margen. Tigertest mide tu acierto por temas: repasa las preguntas que fallaste, vuelve a entrenar el bloque más flojo y haz los seis tests hasta aprobar cada uno con 28 o más."
+      }
+    ]
+  },
+  "faqTitle": "Preguntas frecuentes sobre el examen teórico de la DGT",
+  "faqs": [
+    {
+      "q": "¿Cuántas preguntas tiene el examen teórico de la DGT y cuántos fallos se permiten?",
+      "a": "El examen del permiso B tiene 30 preguntas tipo test con tres opciones cada una y dispones de 30 minutos. Apruebas con un máximo de tres fallos, es decir, necesitas 27 respuestas correctas. El aprobado se conserva dos años mientras completas el examen práctico. En noviembre de 2026 la DGT indica que el formato no cambia; las preguntas con vídeos de percepción del riesgo están en estudio, sin fecha."
+    },
+    {
+      "q": "¿En qué idiomas puedo hacer el examen teórico?",
+      "a": "Para el permiso B, la DGT ofrece el examen en castellano, en la lengua cooficial de la comunidad donde te examines (catalán, euskera, gallego o valenciano) y en inglés, francés y alemán. El idioma se elige al presentar la solicitud. También hay una versión de lectura fácil para los permisos A1, A2 y B. Tigertest tiene este mismo test en inglés, por si lo prefieres."
+    },
+    {
+      "q": "¿Qué temas entran en el examen teórico?",
+      "a": "El temario del Reglamento General de Conductores incluye las normas de circulación, sobre todo señales, prioridad y límites de velocidad, además de los factores de riesgo de los accidentes, la actitud con los demás usuarios, el alcohol, las drogas, la fatiga y las distracciones, la distancia de seguridad y el estado de la vía, los túneles, los usuarios vulnerables, la documentación del vehículo, qué hacer tras un accidente, la carga y los pasajeros, cómo bajar del vehículo, la mecánica básica, los elementos de seguridad y la conducción eficiente."
+    },
+    {
+      "q": "¿Qué cambios de 2026 tengo que conocer?",
+      "a": "Desde el 1 de enero de 2026, la baliza V-16 conectada es la única forma válida de señalizar un turismo detenido por avería o accidente; los triángulos de preseñalización ya no valen. Desde el 1 de octubre de 2026, el Real Decreto 518/2026 obliga a adelantar a los ciclistas fuera de poblado al menos 20 km/h por debajo del límite y con al menos 1,5 metros de separación, a cambiar completamente de carril cuando haya más de uno en tu sentido, a abrir un carril de emergencia en los atascos de autopista y a circular por la derecha sin adelantar cuando nieva en autopistas y autovías."
+    },
+    {
+      "q": "¿Son las preguntas reales de la DGT?",
+      "a": "No. Todas las preguntas son originales, escritas por Tigertest a partir del Reglamento General de Circulación, el Reglamento General de Conductores y la información de la DGT, así que evalúan los mismos conocimientos sin copiar ninguna pregunta oficial. Las señales se describen con palabras, así que estudia también las imágenes de las señales españolas. Nuestras preguntas tienen cuatro opciones, una más que el examen real. Es práctica gratuita, no está afiliada a la Dirección General de Tráfico (DGT) y no sirve para pedir cita ni sustituye al examen."
+    },
+    {
+      "q": "¿El test de Tigertest es gratis?",
+      "a": "Sí. Los seis tests y los cinco bloques de entrenamiento son gratis y no necesitas cuenta. Crea una cuenta gratuita si quieres guardar tu progreso en el móvil y en el ordenador."
+    }
+  ],
+  "finalCta": {
+    "h2": "¿Listo para aprobar el teórico de la DGT?",
+    "p": "Empieza gratis. Sin registro. 200 preguntas sobre las normas de circulación españolas."
+  }
+}

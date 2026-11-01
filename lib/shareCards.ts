@@ -1,7 +1,8 @@
 import { TEST_CATALOG } from "./testCatalog";
 import { EXAMS_V2 } from "./v2/registry";
 import { states } from "@/data/states";
-import { getExamById } from "./exams";
+import { examBaseLanguage, examLanguage, getExamById, localizeExam } from "./exams";
+import { isLanguage } from "@/i18n";
 import { hasTigerSet } from "./tigerAssets";
 import { EXAM_SHARE_COPY } from "./shareCardCopy";
 
@@ -43,6 +44,7 @@ const hubs: Record<string, ShareCard> = {
   hu: { title: "Free practice tests for Hungary", lines: ["Free practice tests", "for Hungary"], description: "KRESZ theory exam in English, college entrance and IT certifications.", footer: "Find your test at tigertest.io/hu", color: "#568159", tint: "#F3F7F3", mascots: ["dmv", "sat", "aws"] },
   be: { title: "Free practice tests for Belgium", lines: ["Free practice tests", "for Belgium"], description: "Category B theory exam in English, college entrance and IT certifications.", footer: "Find your test at tigertest.io/be", color: "#857300", tint: "#FDFBED", mascots: ["dmv", "sat", "aws"] },
   fi: { title: "Free practice tests for Finland", lines: ["Free practice tests", "for Finland"], description: "Teoriakoe in English, college entrance and IT certifications.", footer: "Find your test at tigertest.io/fi", color: "#002385", tint: "#EDF1FD", mascots: ["dmv", "sat", "aws"] },
+  de: { title: "Kostenlose Übungstests für Deutschland", lines: ["Kostenlose Übungstests", "für Deutschland"], description: "Führerschein-Theorie und Zertifizierungen. Jede Antwort erklärt.", footer: "Finde deinen Test auf tigertest.io/de", color: "#1F1F1F", tint: "#F2F2F2", mascots: ["dmv", "sat", "aws"] },
   mt: { title: "Free practice tests for Malta", lines: ["Free practice tests", "for Malta"], description: "Transport Malta theory test, college entrance and IT certifications.", footer: "Find your test at tigertest.io/mt", color: "#C00C0C", tint: "#FDEDED", mascots: ["dmv", "sat", "aws"] },
 };
 
@@ -52,6 +54,20 @@ const dmvCopy: Record<string, { title: (state?: string) => string; description: 
   vi: { title: s => s ? `Thi thử DMV ${s}` : "Thi thử bằng lái DMV", description: "Ôn thi bằng lái với câu hỏi phù hợp cho từng tiểu bang.", footer: "Luyện tập miễn phí. Có giải thích đáp án." },
   ko: { title: s => s ? `${s} DMV 모의시험` : "DMV 운전면허 모의시험", description: "주별 문제로 운전면허 필기시험을 준비하세요.", footer: "무료 연습. 모든 정답에 해설 제공." },
   zh: { title: s => s ? `${s} DMV 模拟考试` : "DMV 驾照模拟考试", description: "通过各州的练习题，准备驾照笔试。", footer: "免费练习，每个答案都有解析。" },
+};
+
+// The footer line of an exam card in each language a card can be drawn in.
+// Inter (the card font) has no CJK glyphs, so ko and zh cards stay English.
+const CARD_FOOTERS: Record<string, string> = {
+  en: general.footer,
+  es: "Práctica gratis. Cada respuesta explicada.",
+  vi: "Luyện tập miễn phí. Có giải thích đáp án.",
+  de: "Kostenlos üben. Jede Antwort erklärt.",
+  fr: "Entraînement gratuit. Chaque réponse expliquée.",
+  it: "Esercitazione gratuita. Ogni risposta spiegata.",
+  pl: "Darmowe ćwiczenia. Każda odpowiedź wyjaśniona.",
+  nl: "Gratis oefenen. Elk antwoord uitgelegd.",
+  pt: "Treino gratuito. Cada resposta explicada.",
 };
 
 // Versioned card copy is separate from longer search descriptions and bank counts.
@@ -69,12 +85,19 @@ export function getShareCard(id: string, language = "en"): ShareCard | undefined
   }
   const exam = TEST_CATALOG.find(e => e.id === id) ?? getExamById(id);
   if (!exam) return undefined;
-  const copy = EXAM_SHARE_COPY[id];
+  // A registry exam's card is in the asked language when the exam is offered
+  // in it, else in its base language (a German exam's card is German), never
+  // in a language the card font cannot draw.
+  const registered = getExamById(id);
+  const wanted = registered && isLanguage(language) ? examLanguage(registered, language) : registered ? examBaseLanguage(registered) : "en";
+  const cardLang = CARD_FOOTERS[wanted] ? wanted : "en";
+  const localized = registered && cardLang !== "en" ? localizeExam(registered, cardLang) : null;
+  const copy = localized ? { title: localized.name, description: localized.fullName } : EXAM_SHARE_COPY[id];
   const theme = EXAMS_V2.find(e => e.id === id)?.theme;
   const color = theme ? `hsl(${theme.brand.replace(/ /g, ", ")})` : SHARE_COLORS[id]?.color ?? SHARE_COLORS[id.split("-")[0]]?.color ?? general.color;
   const tint = theme ? `hsl(${theme.brandLight.replace(/ /g, ", ")})` : SHARE_COLORS[id]?.tint ?? SHARE_COLORS[id.split("-")[0]]?.tint ?? general.tint;
   const ink = color.replace(/(hsl\([^,]+,[^,]+,)\s*([\d.]+)%\)/, (_, prefix, lightness) => `${prefix} ${Math.min(35, Number(lightness))}%)`);
-  return { ...general, title: copy?.title ?? exam.name.replace(/ Practice Tests?$/i, ""), description: copy?.description ?? ("blurb" in exam ? exam.blurb : `Practise ${exam.fullName}. Review the topics to work on next.`), color: ink, tint, mascots: [hasTigerSet(id) ? id : hasTigerSet(id.split("-")[0]) ? id.split("-")[0] : id] };
+  return { ...general, footer: CARD_FOOTERS[cardLang], title: copy?.title ?? exam.name.replace(/ Practice Tests?$/i, ""), description: copy?.description ?? ("blurb" in exam ? exam.blurb : `Practise ${exam.fullName}. Review the topics to work on next.`), color: ink, tint, mascots: [hasTigerSet(id) ? id : hasTigerSet(id.split("-")[0]) ? id.split("-")[0] : id] };
 }
 
 // Light-mode exam brand colours, matching globals.css.
@@ -662,6 +685,10 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
   "mttheory": {
     "color": "hsl(0, 88%, 40%)",
     "tint": "hsl(0, 80%, 96%)"
+  },
+  "detheorie": {
+    "color": "hsl(0, 0%, 24%)",
+    "tint": "hsl(45, 60%, 96%)"
   },
   "phlet": {
     "color": "hsl(160, 25%, 40%)",

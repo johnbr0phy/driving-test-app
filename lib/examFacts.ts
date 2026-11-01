@@ -2531,6 +2531,22 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Transport Malta's licensing guidance and the Highway Code of Malta (updated 25 July 2025), checked November 2026",
     source: { name: "Transport Malta: Obtaining your driving licence", url: "https://www.transport.gov.mt/land/licence/obtaining-your-driving-licence-786" },
   },
+  detheorie: {
+    answer:
+      "The German theory test (theoretische Fahrerlaubnisprüfung) for a first class B car licence has 30 questions, answered on screen at a TÜV or DEKRA test centre: 20 from the basic material that applies to every licence class (Grundstoff) and 10 class B questions (Zusatzstoff). Each question carries 2 to 5 error points depending on its importance for road safety, 110 in all. You pass with no more than 10 error points, but two wrong 5-point questions always fail. There is no fixed time limit; the guide time is 45 minutes. The test is in German and can also be taken in 12 foreign languages, including English, Turkish, Russian and Arabic. Questions come from the official catalogue published by TÜV | DEKRA arge tp 21, revised each April and October; some have several correct answers, some ask for a number, and up to three are short videos. A reform with a smaller catalogue and equal weighting is planned for 2027.",
+    rows: [
+      { label: "Run by", value: "TÜV and DEKRA test centres (official test bodies)" },
+      { label: "Questions", value: "30 (20 basic, 10 class B)" },
+      { label: "Scoring", value: "2 to 5 error points per question, 110 in all" },
+      { label: "Pass mark", value: "At most 10 error points, not two 5-point errors" },
+      { label: "Time", value: "No fixed limit, guide time 45 minutes" },
+      { label: "Languages", value: "German and 12 foreign languages incl. English" },
+      { label: "Catalogue updates", value: "Each 1 April and 1 October" },
+      { label: "Tigertest mock tests", value: "7 x 30 questions in German, 28 to pass" },
+    ],
+    basedOn: "Fahrerlaubnis-Verordnung Anlage 7, TÜV NORD and TÜV | DEKRA arge tp 21 guidance on the theory test, StVO, StVZO and StVG as in force, checked November 2026",
+    source: { name: "TÜV | DEKRA arge tp 21: driving licence test", url: "https://fahrerlaubnis.tuev-dekra.de/en/" },
+  },
   sbipo: {
     answer:
       "The SBI PO Preliminary Examination is an online objective test of 100 marks in one hour, with separate timing for each section: English Language 40 questions in 20 minutes, Quantitative Aptitude 30 questions in 20 minutes and Reasoning Ability 30 questions in 20 minutes. This is the pattern in SBI's 2026 advertisement; earlier cycles had 30, 35 and 35 questions. A quarter of a question's marks is deducted for every wrong answer. There is no sectional cut-off in the Prelims: candidates are ranked by category on their total marks and about ten times the vacancies are called for the Main Examination. Prelims marks are not counted in the final merit list.",

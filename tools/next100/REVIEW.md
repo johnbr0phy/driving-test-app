@@ -51,6 +51,20 @@ EU batch: compare against every EU driving bank (esdgt, ptimt, rodrpciv, setrafi
 ## 3b. Passages and theme
 Every item that reads a shared passage, cloze, table or puzzle carries `stimulusId`. Do not change the config's theme; the integrator owns hues.
 
+## 3c. Native-language banks
+For a bank written in (or translated into) another language, read it in that language:
+- Grammar, spelling and register: questions neutral or formal like the official catalogues
+  (German "Sie" or impersonal), UI copy in the consumer-app register (German "du", French "vous",
+  Italian "tu", Polish "ty", Dutch "je", European Portuguese without pronouns).
+- Official terms: the authority's own words for the test and the rules (StVO, Vorfahrt,
+  permiso B, glorieta, Código da Estrada, rotunda), consistent with `glossary.md`.
+- Typography: decimal comma, German „ “ and Polish „ ” quotes, French « » and a non-breaking space
+  before ? ! : ;, km/h and m, dates DD.MM.YYYY.
+- Every key against the cited article of the law or manual, as for any bank.
+- Translations: run `validate_translation.py <base> <translation> --lang <lang>` (same ids, order,
+  categories and keys; every text translated; the shuffle guard agrees per row) and fix the
+  translation, never the key. Native banks: `validate_bank.py --lang <lang>`.
+
 ## 4. Landing and facts
 Check every claim about the real exam on the landing, in the config's `scoreNote`/copy and in the
 examFacts block of `WIRING.md` against `sources.md`. Fix anything unsupported or label it ("guides

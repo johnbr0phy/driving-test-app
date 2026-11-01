@@ -1,5 +1,6 @@
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
+import { examLandingAlternates } from "@/lib/examSeo";
 import Image from "next/image";
 import { getTigerAsset } from "@/lib/tigerAssets";
 import { Smartphone, Monitor } from "lucide-react";
@@ -24,6 +25,7 @@ export const metadata: Metadata = {
     "portugal driving theory test, imt theory exam english, exame de codigo, codigo da estrada test, portugal driving test in english, carta de conducao exam, category b theory test portugal, imt exam questions practice, portuguese driving licence theory, driving test portugal 2026",
   alternates: {
     canonical: `${siteUrl}/portugal-driving-theory-test`,
+    languages: examLandingAlternates("ptimt"),
   },
   openGraph: {
     title,

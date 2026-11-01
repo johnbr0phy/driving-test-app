@@ -155,9 +155,13 @@ export function SearchHome({
   }
 
   // Run a trending search the way Google does: it fills the box and shows the results.
+  // The list sits below the fold, so go back to the top: the top bar, the box and the
+  // results come into view together. On a phone the keyboard stays down (focusing would
+  // raise it over the results and let the browser scroll the bar away).
   function runTrending(text: string) {
     setQuery(text);
-    inputRef.current?.focus();
+    window.scrollTo({ top: 0 });
+    if (window.matchMedia("(pointer: fine)").matches) inputRef.current?.focus({ preventScroll: true });
   }
 
   const started = useTestsInProgress();

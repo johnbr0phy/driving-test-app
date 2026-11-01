@@ -9,9 +9,12 @@ const SHARE_COPY_IDS = new Set(["jelec", "sie", "series7", "pcoc", "ffi", "polic
 
 const REMAINING_MASCOT_IDS = new Set(["capm", "psm", "itil", "cissp", "rbt", "cpc", "pcoc", "ukseru", "ibpspo", "ctet", "praxis", "gre", "gmat", "sie", "series7", "ssccgl", "rrbntpc"]);
 
+// The homepage cards were redrawn like the search homepage, and /tests and /teach got their own (Nov 2026).
+const HUB_IDS = new Set(["home", "tests", "teach", "uk", "ca", "au", "in", "ie", "nz", "ph", "my", "sg", "hk", "ae", "za", "ng", "pk", "ke", "es", "pt", "ro", "se", "gr", "dk", "hu", "be", "fi", "mt", "de"]);
+
 export function shareImageUrl(id: string, language = "en"): string {
   const query = new URLSearchParams({
-    v: SHARE_COPY_IDS.has(id) ? "share-copy-1" : REMAINING_MASCOT_IDS.has(id) ? "remaining-mascots-1" : ROLE_MASCOT_IDS.has(id) ? "role-mascots-1" : NEW_MASCOT_IDS.has(id) ? "citizenship-pmp-1" : SHARE_IMAGE_VERSION,
+    v: HUB_IDS.has(id) ? "search-home-1" : SHARE_COPY_IDS.has(id) ? "share-copy-1" : REMAINING_MASCOT_IDS.has(id) ? "remaining-mascots-1" : ROLE_MASCOT_IDS.has(id) ? "role-mascots-1" : NEW_MASCOT_IDS.has(id) ? "citizenship-pmp-1" : SHARE_IMAGE_VERSION,
   });
   if (language !== "en") query.set("lang", language);
   return `/og/${encodeURIComponent(id)}?${query.toString()}`;

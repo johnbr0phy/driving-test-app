@@ -20,9 +20,9 @@ export const metadata: Metadata = {
     url: `${siteUrl}/tests`,
     siteName: "Tigertest",
     type: "website",
-    images: [{ url: shareImageUrl("home"), width: 1200, height: 630, alt: `Tigertest: ${TEST_CATALOG.length} free practice tests` }],
+    images: [{ url: shareImageUrl("tests"), width: 1200, height: 630, alt: `Tigertest: ${TEST_CATALOG.length} free practice tests` }],
   },
-  twitter: { card: "summary_large_image", title, description, images: [shareImageUrl("home")] },
+  twitter: { card: "summary_large_image", title, description, images: [shareImageUrl("tests")] },
 };
 
 const jsonLd = {

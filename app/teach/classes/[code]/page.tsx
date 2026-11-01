@@ -8,7 +8,7 @@ import { useCallback, useEffect, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
 import Link from "next/link";
 import { QRCodeSVG } from "qrcode.react";
-import { Check, ChevronRight, Copy, QrCode, RefreshCw } from "lucide-react";
+import { Check, ChevronRight, Copy, Loader2, QrCode, RefreshCw } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 import { classLink, classUrl, teachFetch } from "@/lib/teachClient";
 import { normalizeClassCode, type ClassReport, type ClassStudentRow } from "@/lib/classes";
@@ -79,7 +79,14 @@ export default function ClassPage() {
       </div>
     );
   }
-  if (!report) return <div className="flex-1 bg-gray-50 dark:bg-gray-950 px-4 py-12 text-center text-sm text-gray-500 dark:text-gray-400">Loading your class…</div>;
+  if (!report) {
+    return (
+      <div className="flex-1 bg-gray-50 dark:bg-gray-950 px-4 py-16 flex flex-col items-center gap-3 text-sm text-gray-500 dark:text-gray-400" role="status">
+        <Loader2 className="w-8 h-8 animate-spin text-gray-400" aria-hidden="true" />
+        Loading your class…
+      </div>
+    );
+  }
 
   const accuracy = pct(report.correct, report.answered);
   const card = "rounded-xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 p-5";

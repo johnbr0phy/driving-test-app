@@ -9,7 +9,8 @@ const nextConfig: NextConfig = {
   outputFileTracingIncludes: {
     // Only the DMV faces: exam tigers are fetched over HTTP (see the route).
     "/api/og/score-card": ["./public/tiger_face_*.png"],
-    "/og/[examId]": ["./public/tigers/**/*.png", "./public/tiger_face_03.png", "./public/fonts/share/*"],
+    // The exam card shows face 3 of each mascot set, nothing else from public/tigers.
+    "/og/[examId]": ["./public/tigers/*/tiger_face_03.png", "./public/tiger_face_03.png", "./public/fonts/share/*"],
     "/og/q/[code]": ["./public/tiger.png", "./public/tiger_face_03.png"],
   },
   // The quiz card reads two images from public/; keep the big asset folders
@@ -19,6 +20,8 @@ const nextConfig: NextConfig = {
     // The score card reads public/ by a computed path, so tracing would pull in
     // all of it; it reads only tiger_face_*.png from disk (258 MB, Nov 2026).
     "/api/og/score-card": ["./public/tigers/**", "./public/landing/**", "./public/basics-audio/**", "./public/logos/**"],
+    // Same for the exam card: its computed path traced all of public/ (262 MB).
+    "/og/[examId]": ["./public/tigers/*/tiger_face_0[124-8].png", "./public/landing/**", "./public/basics-audio/**", "./public/logos/**"],
   },
   images: {
     formats: ["image/avif", "image/webp"],

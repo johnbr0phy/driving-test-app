@@ -1,9 +1,9 @@
 "use client";
 
-import { useState, type CSSProperties, type ReactNode } from "react";
+import { useEffect, useState, type CSSProperties, type ReactNode } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { BarChart3, ChevronDown } from "lucide-react";
+import { BarChart3, ChevronDown, Plus, Users } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { AdminLink } from "@/components/AdminLink";
@@ -11,12 +11,11 @@ import { BrandLockup } from "@/components/BrandLockup";
 import { FLAGS } from "@/components/CountryPills";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { TestSearchSheet } from "@/components/TestSearchSheet";
-import { useTeaches } from "@/components/TeachLink";
+import { currentClassCode, rememberCurrentClass, useStudentClass, useTeacherClasses, useTeaches } from "@/components/TeachLink";
 import { useAuth } from "@/contexts/AuthContext";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { TestThemeProvider, themes } from "@/contexts/TestThemeContext";
 import { useExamStarted } from "@/hooks/useExamStarted";
-import { useCurrentTest } from "@/hooks/useHomePath";
 import { useHydration } from "@/hooks/useHydration";
 import { useThemePath } from "@/hooks/useThemePath";
 import { states } from "@/data/states";
@@ -24,6 +23,7 @@ import { createT, DMV_LANGUAGES, type Language } from "@/i18n";
 import { examBaseLanguage, examLandingPath, examLanguages, getExamByPath, getExamVariants } from "@/lib/exams";
 import { useTestLanguage } from "@/hooks/useTestLanguage";
 import { isDmvPath } from "@/lib/pageLanguage";
+import { classExamHome } from "@/lib/classes";
 import { REGIONS, regionHomePath, regionOfTest } from "@/lib/region";
 import { getCatalogEntry, type TestCatalogEntry } from "@/lib/testCatalog";
 import { v2DarkThemeStyle } from "@/lib/v2/darkTheme";
@@ -34,7 +34,7 @@ import { useV2Store } from "@/store/useV2Store";
 // Pages that are the search for a test themselves, so they carry no test chip.
 const HOME_PATHS = new Set(["/tests", ...REGIONS.map((r) => regionHomePath(r.code))]);
 // English homepages open on the big wordmark and search box (SearchHome), so
-// the header there drops its logo and border and keeps the tabs on phones.
+// the header there drops its border.
 const SEARCH_HOMES = new Set(REGIONS.filter((r) => r.lang === "en").map((r) => regionHomePath(r.code)));
 
 /**
@@ -59,9 +59,10 @@ const pill = "rounded-full px-4 py-2 text-sm font-semibold whitespace-nowrap tra
 
 /**
  * The one header on every page that is not a test runner: full width, the
- * Tigertest logo (to the homepage), TESTS / TEACH tabs, a chip naming the test
- * on screen (or the current test) that opens the test search, then Your
- * Stats and the account. It replaced the DMV, exam and v2 headers and the All
+ * tiger (to the homepage), then either a pill naming the test on screen (it
+ * opens the test search) or the class on screen (a teacher's class page), or,
+ * on every other page, the TESTS / TEACH tabs (TEACH reads CLASSES for a
+ * teacher or a class's student), then Your Stats and the account. It replaced the DMV, exam and v2 headers and the All
  * tests menu (Nov 2026).
  */
 export function SiteHeader() {
@@ -93,8 +94,15 @@ function HeaderBar({ path, themePath, examId, v2Id }: { path: string; themePath:
   const hydrated = useHydration();
   const guest = useStore((s) => s.isGuest);
   const selectedState = useStore((s) => s.selectedState);
-  const current = useCurrentTest();
   const [searchOpen, setSearchOpen] = useState(false);
+  const teaches = useTeaches();
+  const studentClass = useStudentClass();
+  const classCode = path.match(/^\/teach\/classes\/([^/]+)/)?.[1]?.toUpperCase();
+  const [lastClass, setLastClass] = useState<string | null>(null);
+  useEffect(() => {
+    if (classCode) rememberCurrentClass(classCode);
+    setLastClass(currentClassCode());
+  }, [classCode]);
 
   const exam = examId ? getExamByPath(themePath) : undefined;
   const examV2 = v2Id ? getExamV2ByPath(themePath) : undefined;
@@ -119,15 +127,22 @@ function HeaderBar({ path, themePath, examId, v2Id }: { path: string; themePath:
         Object.keys(s.questionStats?.[v2Id] ?? {}).length > 0),
   );
 
-  // The chip: the test this page belongs to, else the current test; none on the search pages.
+  // The pill: the test this page belongs to; none on the search pages or
+  // pages that belong to no test, which show the tabs instead.
   const pageTest: TestCatalogEntry | undefined = exam
     ? getCatalogEntry(exam.id)
     : examV2
       ? getCatalogEntry(examV2.id)
       : dmv
         ? getCatalogEntry("dmv")
-        : current;
-  const chipTest = HOME_PATHS.has(path) ? undefined : pageTest;
+        : undefined;
+  const chipTest = HOME_PATHS.has(path) || classCode ? undefined : pageTest;
+  const classPill = !!classCode && !!user;
+
+  // TEACH becomes CLASSES once this browser teaches or is in a class: a
+  // teacher goes back to the class they last opened, a student to their class's test.
+  const classesTab = teaches || !!studentClass;
+  const teachHref = teaches ? (lastClass ? `/teach/classes/${lastClass}` : "/teach") : studentClass ? classExamHome(studentClass.examId) : "/teach";
   const stateName = states.find((s) => s.code === selectedState)?.name;
   const chipLabel = chipTest ? (chipTest.id === "dmv" && stateName ? `DMV · ${stateName}` : chipTest.shortName) : "";
   const chipRegion = chipTest ? regionOfTest(chipTest.id) : "GLOBAL";
@@ -193,15 +208,16 @@ function HeaderBar({ path, themePath, examId, v2Id }: { path: string; themePath:
   return (
     <header className={searchHome ? "bg-white dark:bg-gray-950" : "border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900"}>
       <div className="flex h-14 items-center gap-2 px-3 sm:gap-3 sm:px-6">
-        {!searchHome && <BrandLockup />}
+        <BrandLockup />
 
-        <nav
-          aria-label="Site"
-          className={`${searchHome ? "flex" : "hidden sm:flex"} self-stretch items-stretch gap-6 text-sm font-semibold tracking-wide ${searchHome ? "" : "ml-2"}`}
-        >
-          <TabLink href="/" active={!onTeach}>TESTS</TabLink>
-          <TabLink href="/teach" active={onTeach}>TEACH</TabLink>
-        </nav>
+        {!chipTest && !classPill && (
+          <nav aria-label="Site" className="ml-1 flex self-stretch items-stretch gap-5 sm:gap-6 text-sm font-semibold tracking-wide">
+            <TabLink href="/" active={!onTeach}>TESTS</TabLink>
+            <TabLink href={teachHref} active={onTeach}>{classesTab ? "CLASSES" : "TEACH"}</TabLink>
+          </nav>
+        )}
+
+        {classPill && classCode && <ClassPill code={classCode} />}
 
         {chipTest && (
           <button
@@ -241,6 +257,49 @@ function HeaderBar({ path, themePath, examId, v2Id }: { path: string; themePath:
       </div>
       <TestSearchSheet open={searchOpen} onOpenChange={setSearchOpen} />
     </header>
+  );
+}
+
+function ClassPill({ code }: { code: string }) {
+  const [open, setOpen] = useState(false);
+  const classes = useTeacherClasses(true);
+  const name = classes?.find((c) => c.code === code)?.name ?? code;
+  const item = "flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-left text-sm text-gray-800 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800";
+
+  return (
+    <Popover open={open} onOpenChange={setOpen}>
+      <PopoverTrigger
+        aria-label={`Switch class, currently ${name}`}
+        className="ml-1 flex h-9 min-w-0 max-w-[16rem] items-center gap-1.5 rounded-full border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 pl-3 pr-2 text-sm font-semibold text-gray-900 dark:text-gray-50 transition-colors hover:bg-gray-100 dark:hover:bg-gray-800"
+      >
+        <Users className="h-4 w-4 shrink-0 text-gray-500 dark:text-gray-400" aria-hidden />
+        <span className="truncate">{name}</span>
+        <ChevronDown className="h-4 w-4 shrink-0 text-gray-500 dark:text-gray-400" aria-hidden />
+      </PopoverTrigger>
+      <PopoverContent align="start" collisionPadding={12} className="w-72 max-h-[min(28rem,calc(100dvh-6rem))] overflow-y-auto rounded-2xl p-1.5">
+        {classes?.map((c) => (
+          <Link
+            key={c.code}
+            href={`/teach/classes/${c.code}`}
+            onClick={() => setOpen(false)}
+            aria-current={c.code === code ? "page" : undefined}
+            className={`${item} ${c.code === code ? "bg-gray-100 dark:bg-gray-800 font-semibold" : ""}`}
+          >
+            <span className="min-w-0 flex-1 truncate">{c.name}</span>
+            <span className="shrink-0 text-xs text-gray-500 dark:text-gray-400">{c.memberCount}</span>
+          </Link>
+        ))}
+        <div className={classes?.length ? "mt-1 border-t border-gray-100 dark:border-gray-800 pt-1" : ""}>
+          <Link href="/teach" onClick={() => setOpen(false)} className={item}>
+            All classes
+          </Link>
+          <Link href="/teach/new" onClick={() => setOpen(false)} className={item}>
+            <Plus className="h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden />
+            New class
+          </Link>
+        </div>
+      </PopoverContent>
+    </Popover>
   );
 }
 

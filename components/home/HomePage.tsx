@@ -14,8 +14,10 @@ import { HUB_PAGES_UPDATED_AT } from "@/lib/seoDates";
 import { states } from "@/data/states";
 import { NON_DRIVING_TESTS, REGIONS, REGION_HOME, REGION_HREFLANG, Region, regionHomePath, regionOfTest, regionInfo } from "@/lib/region";
 import type { TestCatalogEntry } from "@/lib/testCatalog";
-import { homeCopy } from "@/components/home/homeCopy";
+import { countryNameIn, homeCopy } from "@/components/home/homeCopy";
+import type { Language } from "@/i18n";
 import { landingContent } from "@/lib/landingContent";
+import { getExamById } from "@/lib/exams";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 const examCount = TEST_CATALOG.length;
@@ -66,28 +68,6 @@ export function countryHomeMetadata(region: Exclude<Region, "US">): Metadata {
   };
 }
 
-const usFaqs = [
-  {
-    q: "What is Tigertest?",
-    a: `Tigertest is a free practice test site for ${examCount} exams, from the DMV permit test in every state to the SAT, ACT, nursing, healthcare, IT, trade and licensing exams. Each test follows the real exam's published outline, and every question explains the right answer.`,
-  },
-  {
-    q: "Is Tigertest free?",
-    a: "Yes. Almost every test is completely free. The DMV has free practice tests and training plus an optional one-time $9.99 Premium purchase (not a subscription) that unlocks two more tests and training sets and full stats on every US exam.",
-  },
-  {
-    q: "Do I need an account?",
-    a: "No. You can start any test without signing up. Make a free account if you want your progress saved across devices.",
-  },
-  {
-    q: "How does Tigertest help me pass?",
-    a: "Training mode gives instant feedback and brings back the questions you miss until you know them. Full practice tests then simulate the real exam, and your results show which topics still need work.",
-  },
-  {
-    q: "Is Tigertest affiliated with the DMV or any testing company?",
-    a: "No. Tigertest is independent and is not affiliated with any DMV, testing company or certification body.",
-  },
-];
 
 // Outside the US the FAQ talks about that country's tests, never the DMV.
 const AUTHORITY: Record<Exclude<Region, "US">, string> = {
@@ -119,11 +99,19 @@ const AUTHORITY: Record<Exclude<Region, "US">, string> = {
   DE: "TÜV/DEKRA",
 };
 
-function faqsFor(region: Region) {
-  if (region === "US") return usFaqs;
+// AUTHORITY is written for an English sentence ("the IMT"); other languages
+// get the bare names, and Belgium's list in Dutch on its own page.
+const AUTHORITY_NL_BE = "GOCA, de examencentra of de gewestelijke overheden";
+function authorityIn(region: Exclude<Region, "US">, lang: Language): string {
+  if (lang === "en") return AUTHORITY[region];
+  if (region === "BE" && lang === "nl") return AUTHORITY_NL_BE;
+  return AUTHORITY[region].replace(/^the /, "");
+}
+
+function faqsFor(region: Region, lang: Language = regionInfo(region).lang) {
+  if (region === "US") return homeCopy(lang).usFaqs(examCount);
   const local = TEST_CATALOG.filter((t) => regionOfTest(t.id) === region && !NON_DRIVING_TESTS.has(t.id)).length;
-  const { inName, lang } = regionInfo(region);
-  return homeCopy(lang).faqs({ local, inName, authority: AUTHORITY[region], examCount });
+  return homeCopy(lang).faqs({ local, inName: countryNameIn(region, lang), authority: authorityIn(region, lang), examCount });
 }
 
 /** "About each test": the exam's facts answer, in English (EXAM_FACTS) or, on a
@@ -135,6 +123,13 @@ function aboutTest(t: TestCatalogEntry, lang: string): string | undefined {
 }
 
 /** A test's name in the page's language: a native exam's own name on its country's page, else the English one. */
+/** The catalog test a landing path belongs to: its main landing or one of its translated ones. */
+function catalogTestForHref(href: string): TestCatalogEntry | undefined {
+  return TEST_CATALOG.find(
+    (t) => t.href === href || Object.values(getExamById(t.id)?.translations ?? {}).some((tr) => tr?.landingPath === href)
+  );
+}
+
 function nameIn(t: TestCatalogEntry, lang: string): string {
   return t.nativeName && t.language === lang ? t.nativeName : t.name;
 }
@@ -161,7 +156,7 @@ function jsonLdFor(region: Region) {
     },
     {
       "@type": "ItemList",
-      name: us ? "Tigertest practice tests" : homeCopy(regionInfo(region).lang).listName(regionInfo(region).inName),
+      name: us ? "Tigertest practice tests" : homeCopy(regionInfo(region).lang).listName(countryNameIn(region, regionInfo(region).lang)),
       itemListElement: listed.map((t, i) => ({
         "@type": "ListItem",
         position: i + 1,
@@ -199,8 +194,11 @@ const quotes = [
 ];
 
 // The homepage for one country (lib/region.ts): "/" for the US, app/uk,
-// app/ca and app/au for the others, each its own indexable page.
-export async function HomePage({ region }: { region: Region }) {
+// app/ca and app/au for the others, each its own indexable page, in the
+// country's language. `lang` serves it in another language for someone who
+// picked one (middleware.ts rewrites to app/home-lang/[region]/[lang]): the
+// country's own lines (REGION_HOME) then give way to the copy's generic ones.
+export async function HomePage({ region, lang: pickedLang }: { region: Region; lang?: Language }) {
   const us = region === "US";
   const { tests: ranked, totalAnswered } = await getPopularTests(us ? 6 : 100);
   // Outside the US "Popular this week" only counts the country's own and worldwide tests,
@@ -215,11 +213,16 @@ export async function HomePage({ region }: { region: Region }) {
   const byAnswered = (a: { id: string }, b: { id: string }) => (answeredById.get(b.id) ?? 0) - (answeredById.get(a.id) ?? 0);
   const localTests = TEST_CATALOG.filter((t) => regionOfTest(t.id) === region && !NON_DRIVING_TESTS.has(t.id)).sort(byAnswered);
   const home = us ? null : REGION_HOME[region];
-  const faqs = faqsFor(region);
-  const { lang, inName } = regionInfo(region);
+  const nativeLang = regionInfo(region).lang;
+  const lang = pickedLang ?? nativeLang;
+  const native = lang === nativeLang;
+  const faqs = faqsFor(region, lang);
+  const inName = countryNameIn(region, lang);
   const c = homeCopy(lang);
-  // A country's main CTA points at its first test; it waits until that test is in the catalog.
-  const cta = home && TEST_CATALOG.some((t) => t.href === home.cta.href) ? home.cta : null;
+  // A country's main CTA points at its first test (or that test's landing in
+  // the page's language); it waits until that test is in the catalog.
+  const ctaTest = home ? catalogTestForHref(home.cta.href) : undefined;
+  const cta = home && ctaTest ? (native ? home.cta : { label: nameIn(ctaTest, lang), href: ctaTest.href }) : null;
 
   return (
     <div className="flex-1 bg-white dark:bg-gray-900">
@@ -233,7 +236,7 @@ export async function HomePage({ region }: { region: Region }) {
             {c.heroTitle}
           </h1>
           <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-8">
-            {home ? home.lead : `${examCount} exams, from the DMV permit test to the SAT, nursing and IT certs. Every answer explained. No signup.`}
+            {home ? (native ? home.lead : c.countryLead(inName)) : c.usLead(examCount)}
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
             <a
@@ -247,7 +250,7 @@ export async function HomePage({ region }: { region: Region }) {
               href={cta ? cta.href : "/dmv-practice-test"}
               className="inline-flex items-center rounded-full border border-gray-300 dark:border-gray-700 px-8 py-4 text-lg font-semibold text-gray-900 dark:text-gray-50 hover:border-brand hover:text-brand transition-colors"
             >
-              {cta ? cta.label : "DMV permit test"}
+              {cta ? cta.label : c.dmv.cta}
             </Link>
             )}
           </div>
@@ -285,12 +288,12 @@ export async function HomePage({ region }: { region: Region }) {
         <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-10">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 mb-3">
-              Taking your DMV permit test?
+              {c.dmv.title}
             </h2>
             <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              200 questions written from your state&apos;s own driver&apos;s manual, for all 50 states and DC.{" "}
+              {c.dmv.body}{" "}
               <Link href="/dmv-practice-test" className="text-brand-dark hover:underline font-medium">
-                About the DMV practice test
+                {c.dmv.about}
               </Link>
             </p>
           </div>
@@ -304,14 +307,14 @@ export async function HomePage({ region }: { region: Region }) {
                 <span className="font-medium text-gray-900 dark:text-gray-50 text-sm">{state.name}</span>
                 <span className="text-xs text-gray-500 dark:text-gray-400">
                   <span aria-hidden="true">{state.writtenTestQuestions}Q</span>
-                  <span className="sr-only">, {state.writtenTestQuestions} questions on the written test</span>
+                  <span className="sr-only">, {c.dmv.questionsOnTest(state.writtenTestQuestions)}</span>
                 </span>
               </Link>
             ))}
           </div>
           <div className="text-center mt-8">
             <Link href="/practice-tests-by-state" className="text-brand-dark hover:text-brand-darker font-medium hover:underline">
-              View all 50 states &rarr;
+              {c.dmv.viewAll} &rarr;
             </Link>
           </div>
         </div>
@@ -323,8 +326,8 @@ export async function HomePage({ region }: { region: Region }) {
           <div className="max-w-5xl mx-auto px-6 pb-16 md:pb-20">
             <div className="flex flex-wrap items-end justify-between gap-x-6 gap-y-2 mb-5">
               <div>
-                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50">{home.testsTitle}</h2>
-                <p className="mt-2 max-w-2xl text-gray-600 dark:text-gray-300">{home.testsSub}</p>
+                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50">{native ? home.testsTitle : c.testsFor(inName)}</h2>
+                {native && <p className="mt-2 max-w-2xl text-gray-600 dark:text-gray-300">{home.testsSub}</p>}
               </div>
               <Link href="/tests" className="text-sm font-medium text-brand-dark hover:underline">
                 {c.allTests(examCount)} &rarr;

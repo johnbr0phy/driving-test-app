@@ -46,7 +46,7 @@ export function QuizLibrary({ quizzes }: { quizzes: QuizSummary[] }) {
       {shown.length === 0 ? (
         <p className="text-sm text-gray-600 dark:text-gray-300">No quiz matches &quot;{query}&quot;.</p>
       ) : (
-        <ul className="grid gap-4 sm:grid-cols-2">
+        <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           {shown.map((z) => (
             <li key={z.code}>
               <Link

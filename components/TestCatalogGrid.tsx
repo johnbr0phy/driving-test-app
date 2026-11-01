@@ -37,7 +37,7 @@ export function TestCard({ test, answered, headingLevel = 3, lang = "en" }: { te
   // Cards sit under a section or group heading, so their names are one level below it.
   const Heading = headingLevel === 4 ? "h4" : "h3";
   return (
-    <div data-theme={test.theme} className="h-full">
+    <div data-theme={test.theme} className="h-full min-w-0">
       <Link
         href={landingIn(test, lang)}
         className="group flex h-full items-center gap-3 rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-5 transition-all hover:border-brand hover:shadow-lg"
@@ -224,7 +224,7 @@ export function TestCatalogGrid({
           <GroupHeading className="text-sm font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400 mb-4">
             {group.title}
           </GroupHeading>
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {group.tests.map((t) => (
               <TestCard key={t.id} test={t} headingLevel={nested ? 4 : 3} lang={lang} />
             ))}

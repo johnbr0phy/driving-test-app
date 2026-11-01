@@ -78,7 +78,7 @@ export function ExamRelatedTests({ examId, lang = "en" }: { examId: string; lang
         {copy.title}
       </h2>
       <p className="text-gray-600 dark:text-gray-300 text-center mb-8">{copy.sub}</p>
-      <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {tests.map((test) => (
           <li key={test.id}>
             <Link

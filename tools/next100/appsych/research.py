@@ -166,7 +166,7 @@ ITEMS = [
       stim="APPSYCH-T2-S2"),
     Q(2, 1, "Descriptive statistics",
       "What is the range of the quiz scores?",
-      ["2", "4", "5", "10"],
+      ["4", "2", "5", "10"],
       "The range is the highest score minus the lowest: 10 - 6 = 4.",
       stim="APPSYCH-T2-S2"),
     Q(2, 1, "Sampling",

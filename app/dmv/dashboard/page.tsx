@@ -20,7 +20,6 @@ import { AttemptChart, sessionsToAttemptPoints } from "@/components/AttemptChart
 import { computeMissSummary, isDrillFree } from "@/lib/missedQuestions";
 import { ProgressCard, Collapse } from "@/components/dashboard/ProgressCard";
 import { DmvStatePrompt, DmvStateLine } from "@/components/dashboard/DmvStatePicker";
-import { TestLanguageChoice } from "@/components/TestLanguageChoice";
 import { useDmvTestLanguage } from "@/hooks/useTestLanguage";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { trackBeginCheckout, trackPaywallDismissed, trackPaywallHit, trackPurchase, trackStateSelected, trackViewItem } from "@/lib/analytics";
@@ -438,8 +437,14 @@ function DashboardContent() {
               <div className="text-xs text-gray-500 dark:text-gray-400">{t("dashboard.stampComplete").toLowerCase()}</div>
             </div>
           </div>
-          <DmvStateLine />
-          <TestLanguageChoice offered={dmvLanguages.offered} value={dmvLanguages.lang} onChange={dmvLanguages.setLang} className="mt-3" />
+          <DmvStateLine
+            language={{
+              offered: dmvLanguages.offered,
+              value: dmvLanguages.lang,
+              onChange: dmvLanguages.setLang,
+              settled: dmvLanguages.picked || completedSteps > 0,
+            }}
+          />
         </div>
 
         {/* Interleaved Training + Tests */}

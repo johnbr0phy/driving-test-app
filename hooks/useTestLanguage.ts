@@ -31,6 +31,8 @@ export function useTestLanguage(examId: string, offered: Language[], base: Langu
   return {
     lang: testLanguageFor(pick, offered, preferredLanguage, base),
     offered,
+    /** True once the person picked a language for this exam. */
+    picked: !!pick && offered.includes(pick),
     setLang: (lang: Language) => setTestLanguage(examId, lang),
   };
 }

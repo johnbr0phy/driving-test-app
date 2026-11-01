@@ -7,6 +7,12 @@
 import { en, type TranslationKeys } from './en';
 
 export const de: TranslationKeys = {
+  // Interface language (Settings, footer) and a test's question language (its dashboard)
+  languageChoice: {
+    questionsIn: "Fragen auf",
+    language: "Sprache",
+    languageNote: "Seiten werden in dieser Sprache angezeigt. Jeder Test bietet nur die Sprachen an, in denen es ihn gibt.",
+  },
   common: {
     dmvHeaderTitle: "DMV Practice Test",
     logOut: "Abmelden",

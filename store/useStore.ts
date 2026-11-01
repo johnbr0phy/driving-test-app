@@ -9,6 +9,7 @@ import { trackQuestionsAnswered } from '@/lib/analytics';
 import { splitLegacySets } from '@/lib/legacySetSplits';
 import { queueAchievementCelebration } from '@/lib/achievementCelebration';
 import { isLanguage, type Language } from '@/i18n';
+import { languageIsChosen, writeLanguageCookie } from '@/lib/language';
 import { examAnalyticsKey, examFamilyId, examTestIds, getExamById, getExamByStateCode, getExamForQuestionId, getExamForSetId, getExamForTestId, getExamTrainingSetSize, isExamQuestionId } from '@/lib/exams';
 
 /**
@@ -71,8 +72,22 @@ export function userDataHasProgress(data: Record<string, unknown> | undefined): 
 interface AppState {
 
   // Language
+  /**
+   * The person's own interface language (contexts/LanguageContext.tsx). Until
+   * they pick one (languageChosen) pages use their country's language instead;
+   * a stored language other than English predates the flag and counts as picked.
+   */
   language: Language;
+  languageChosen: boolean;
   setLanguage: (lang: Language) => void;
+  /**
+   * The language each test's questions are in, picked on its dashboard, keyed
+   * by exam id ("dmv" for the DMV). Only languages the exam exists in are
+   * offered; with no pick the questions follow `language` when the exam has
+   * it, else its own language (hooks/useTestLanguage.ts).
+   */
+  testLanguages: Partial<Record<string, Language>>;
+  setTestLanguage: (examId: string, lang: Language) => void;
 
   // Guest mode
   isGuest: boolean;
@@ -269,6 +284,8 @@ export const useStore = create<AppState>()(
     (set, get) => ({
       // Initial state
       language: 'en' as Language,
+      languageChosen: false,
+      testLanguages: {},
       isGuest: false,
       selectedState: null,
       emailConsent: true,
@@ -314,7 +331,23 @@ export const useStore = create<AppState>()(
 
       // Actions
       setLanguage: (lang: Language) => {
-        set({ language: lang });
+        set({ language: lang, languageChosen: true });
+        writeLanguageCookie(lang);
+        // Only these fields, right away, like setRegion: a choice made before
+        // the account has loaded must not wait for a full save.
+        const { userId, isGuest } = get();
+        if (userId && !isGuest) {
+          updateDoc(doc(db, 'users', userId), { language: lang, languageChosen: true }).catch(() => {});
+        }
+      },
+
+      setTestLanguage: (examId: string, lang: Language) => {
+        const testLanguages = { ...get().testLanguages, [examId]: lang };
+        set({ testLanguages });
+        const { userId, isGuest } = get();
+        if (userId && !isGuest) {
+          updateDoc(doc(db, 'users', userId), { testLanguages }).catch(() => {});
+        }
       },
 
       startGuestSession: () => {
@@ -941,7 +974,12 @@ export const useStore = create<AppState>()(
             const data = userDoc.data();
             set({
               selectedState: data.selectedState || null,
-              language: isLanguage(data.language) ? data.language : get().language,
+              // A language picked on this device before signing in wins over
+              // an account that never picked one.
+              ...(isLanguage(data.language) && languageIsChosen({ language: data.language, languageChosen: data.languageChosen === true })
+                ? { language: data.language, languageChosen: true }
+                : {}),
+              testLanguages: { ...get().testLanguages, ...(data.testLanguages && typeof data.testLanguages === 'object' ? data.testLanguages : {}) },
               currentTests: data.currentTests || {},
               completedTests: data.completedTests || [],
               testAttempts: data.testAttempts || [],
@@ -1038,7 +1076,7 @@ export const useStore = create<AppState>()(
       },
 
       saveToFirestore: async () => {
-        const { userId, isGuest, selectedState, currentTests, completedTests, testAttempts, training, trainingSets, trainingAnswerHistory, activeDates, photoURL, language, emailConsent, superAmazing, superAmazingUnlockedAt, superAmazingUnlocks, primaryExam, primaryExamAt, region, regionAt, examStates, startedExams } = get();
+        const { userId, isGuest, selectedState, currentTests, completedTests, testAttempts, training, trainingSets, trainingAnswerHistory, activeDates, photoURL, language, languageChosen, testLanguages, emailConsent, superAmazing, superAmazingUnlockedAt, superAmazingUnlocks, primaryExam, primaryExamAt, region, regionAt, examStates, startedExams } = get();
         if (!userId || isGuest) return; // Don't save if no user is logged in or guest mode
         // Never write an account this store has not loaded: it would replace
         // the saved progress with whatever this browser holds.
@@ -1140,6 +1178,8 @@ export const useStore = create<AppState>()(
             trainingAnswerHistory,
             activeDates: updatedActiveDates,
             language,
+            languageChosen: languageIsChosen({ language, languageChosen }),
+            testLanguages,
             superAmazing,
             superAmazingUnlockedAt,
             superAmazingUnlocks,

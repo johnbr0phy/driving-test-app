@@ -1,6 +1,12 @@
 import type { TranslationKeys } from './en';
 
 export const zh: TranslationKeys = {
+  // Interface language (Settings, footer) and a test's question language (its dashboard)
+  languageChoice: {
+    questionsIn: "题目语言",
+    language: "语言",
+    languageNote: "页面以此语言显示。每个考试只提供其已有的语言。",
+  },
   // Common
   common: {
     dmvHeaderTitle: "DMV 模拟考试",

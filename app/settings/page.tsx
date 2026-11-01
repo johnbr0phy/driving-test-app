@@ -14,7 +14,7 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import Link from "next/link";
-import { Loader2, User, AlertTriangle, MapPin, LayoutGrid, ChevronRight, LogOut, Trash2, SunMoon } from "lucide-react";
+import { Loader2, User, AlertTriangle, MapPin, LayoutGrid, ChevronRight, LogOut, Trash2, SunMoon, Languages } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { useStore } from "@/store/useStore";
@@ -29,6 +29,7 @@ import { V2Sync } from "@/components/v2/V2Sync";
 import { TestIcon } from "@/components/TestIcon";
 import { hasTigerSet } from "@/lib/tigerAssets";
 import { ThemeSegmentedControl } from "@/components/ThemeToggle";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 
 export default function SettingsPage() {
   const router = useRouter();
@@ -243,6 +244,20 @@ export default function SettingsPage() {
                 <Link href="/tests">{t("footer.allTests")}</Link>
               </Button>
             )}
+          </CardContent>
+        </Card>
+
+        {/* Language: the person's own, which every page follows (lib/language.ts) */}
+        <Card className="bg-gray-50 dark:bg-gray-950 mb-6">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <Languages className="h-5 w-5" />
+              {t("languageChoice.language")}
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <LanguageSwitcher />
+            <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">{t("languageChoice.languageNote")}</p>
           </CardContent>
         </Card>
 

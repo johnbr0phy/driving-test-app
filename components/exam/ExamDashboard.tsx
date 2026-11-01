@@ -22,6 +22,7 @@ import { computeMissSummary } from "@/lib/missedQuestions";
 import { ExamConfig, TrainingPart, examFamilyId, examLandingPath, getExamById, examTrainingParts, getExamVariant, hasTestSets, trainingPartName, trainingPartOf } from "@/lib/exams";
 import { useTestSetMigration } from "@/hooks/useTestSetMigration";
 import { ExamStateLine, ExamStatePrompt } from "@/components/exam/ExamStatePicker";
+import { TestLanguageChoice } from "@/components/TestLanguageChoice";
 import { ClassBanner } from "@/components/exam/ClassBanner";
 import { ClassMissRecovery } from "@/components/exam/ClassMissRecovery";
 import { TeachNudge } from "@/components/TeachNudge";
@@ -50,7 +51,7 @@ function getTigerFace(complete: number, total: number, examId: string): string {
 }
 
 export function ExamDashboard({ exam: source }: { exam: ExamConfig }) {
-  const { exam, routes, ui, lang } = useLocalizedExam(source);
+  const { exam, routes, ui, lang, testLanguages, setTestLanguage } = useLocalizedExam(source);
   // Common Mistakes card, once this exam has enough answers (lib/communityStats.ts).
   const communityOn = useCommunityAvailable(source.id);
   const router = useRouter();
@@ -379,6 +380,7 @@ export function ExamDashboard({ exam: source }: { exam: ExamConfig }) {
             </div>
           </div>
           <ExamStateLine exam={exam} />
+          <TestLanguageChoice offered={testLanguages} value={lang} onChange={setTestLanguage} className="mt-3" />
           <TeachNudge dashboardKey={exam.id} examId={exam.variantOf ?? exam.id} done={completedSteps} />
         </div>
 

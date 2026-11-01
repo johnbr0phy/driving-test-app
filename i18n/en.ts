@@ -1,4 +1,10 @@
 export const en = {
+  // Interface language (Settings, footer) and a test's question language (its dashboard)
+  languageChoice: {
+    questionsIn: "Questions in",
+    language: "Language",
+    languageNote: "Pages show in this language. Each test offers only the languages it exists in.",
+  },
   // Common
   common: {
     dmvHeaderTitle: "DMV Practice Test",

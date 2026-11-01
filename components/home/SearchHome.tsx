@@ -4,14 +4,13 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { Search, X, ArrowUpRight, Mic, Grip, Menu, TrendingUp, ChevronRight } from "lucide-react";
+import { Search, X, ArrowUpRight, Mic, Grip, Menu, TrendingUp, ChevronRight, History } from "lucide-react";
 import { useTestsInProgress } from "@/hooks/useTestsInProgress";
 import { FLAGS, readRegionCookie } from "@/components/CountryPills";
 import { useAuth } from "@/contexts/AuthContext";
 import { isInternalBrowser } from "@/lib/internal";
 import { Region, TestRegion, regionInfo, regionOfTest } from "@/lib/region";
 import { normalizeQuery, searchAllTests, SearchHit } from "@/lib/testSearch";
-import { getTigerAsset } from "@/lib/tigerAssets";
 
 const flagOf = (r: TestRegion) => (r === "GLOBAL" ? "🌐" : FLAGS[r]);
 const TRACK_DELAY_MS = 1200;
@@ -333,11 +332,9 @@ export function SearchHome({
                   <li key={test.id} className="border-b border-gray-200 dark:border-gray-800 last:border-b-0">
                     <Link
                       href={test.dashboardHref}
-                      className="flex items-center gap-4 px-2 py-3 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-900"
+                      className="flex items-center gap-5 px-3 py-3 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-900"
                     >
-                      <span data-theme={test.theme} className="w-12 h-12 shrink-0 rounded-full bg-brand-light dark:bg-brand-darker grid place-items-center overflow-hidden">
-                        <Image src={getTigerAsset(test.id)} alt="" width={48} height={48} className="w-11 h-11 object-contain" />
-                      </span>
+                      <History className="w-5 h-5 shrink-0 text-gray-600 dark:text-gray-300" aria-hidden />
                       <span className="min-w-0 flex-1">
                         <span className="block text-lg text-gray-900 dark:text-gray-50 truncate">{test.name}</span>
                         <span className="block text-sm text-gray-500 dark:text-gray-400 truncate">{progressLine(mastered, testsTaken)}</span>

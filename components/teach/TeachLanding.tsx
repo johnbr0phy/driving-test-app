@@ -107,7 +107,7 @@ export function TeachLanding({ signedIn }: { signedIn: boolean }) {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-50 mb-6 tracking-tight text-balance">
             Free practice tests for your whole class
           </h1>
-          <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-10 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-10 max-w-2xl mx-auto text-pretty">
             Post one link. Students practice on their phones with just a name. You see who practiced, their scores, and exactly what your class keeps getting wrong.
           </p>
           <div className="flex flex-col items-center gap-3">
@@ -203,7 +203,7 @@ export function TeachLanding({ signedIn }: { signedIn: boolean }) {
       <div className="py-14 md:py-20">
         <div className="max-w-2xl mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-4">We&apos;re building this for instructors</h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 text-pretty">
             We want to work with teachers to make Tigertest great for your class. Get in touch and tell us what you teach and what would help, and we&apos;ll build it with you.
           </p>
           <a

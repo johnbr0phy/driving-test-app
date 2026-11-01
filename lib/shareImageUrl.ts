@@ -4,6 +4,9 @@ const NEW_MASCOT_IDS = new Set(["uklitu", "cacit", "aucit", "pmp"]);
 
 const ROLE_MASCOT_IDS = new Set(["ffi", "police", "faapvt", "nasm", "barber", "jelec"]);
 
+// Dedicated artwork replaces cached generic artwork for these exams only.
+const AP_PH_MASCOT_IDS = new Set(["appsych", "apush", "apbio", "apworld", "aplang", "apcalcab", "aphug", "apgov", "phcse"]);
+
 // Exams that got their own short share copy (Oct 31) instead of the long catalog blurb.
 const SHARE_COPY_IDS = new Set(["jelec", "sie", "series7", "pcoc", "ffi", "police", "nasm", "rbt", "cpc", "iedtt", "cask", "cans", "ukseru", "nzroad", "netplus", "gcdl", "phlto", "zak53", "sgbtt", "aerta", "ngfrsc", "kentsa", "mykpp", "hkdrive", "rrbgroupd", "sscgd", "sscchsl", "sscmts", "uppolice", "ibpsclerk", "jnvst", "jambeng", "appsych", "pkdrive", "sbipo", "sbiclerk", "ibpsrrb", "delhipolice", "biharpolice", "rajpolice", "mppolice", "apush", "apbio", "phcse", "upscse", "ssccpo", "rrbalp", "rpfconst", "nda", "agniveer", "agniveervayu", "apworld", "aplang", "phlet", "jeemain", "neet", "mhtcet", "cuet", "reet", "uptet", "ugcnet", "aissee", "aphug", "apcalcab", "jambmath", "jambbio", "jambchem", "jambphys", "apgov", "ngpolice", "cdcfib", "ngarmy", "ngcustoms", "trcnpqe", "esdgt", "ptimt", "bedriving", "dkteori", "setrafik", "fitheory", "grdriving", "rodrpciv", "hukresz", "mttheory"]);
 
@@ -14,7 +17,7 @@ const HUB_IDS = new Set(["home", "tests", "teach", "uk", "ca", "au", "in", "ie",
 
 export function shareImageUrl(id: string, language = "en"): string {
   const query = new URLSearchParams({
-    v: HUB_IDS.has(id) ? "search-home-1" : SHARE_COPY_IDS.has(id) ? "share-copy-1" : REMAINING_MASCOT_IDS.has(id) ? "remaining-mascots-1" : ROLE_MASCOT_IDS.has(id) ? "role-mascots-1" : NEW_MASCOT_IDS.has(id) ? "citizenship-pmp-1" : SHARE_IMAGE_VERSION,
+    v: AP_PH_MASCOT_IDS.has(id) ? "ap-ph-mascots-1" : HUB_IDS.has(id) ? "search-home-1" : SHARE_COPY_IDS.has(id) ? "share-copy-1" : REMAINING_MASCOT_IDS.has(id) ? "remaining-mascots-1" : ROLE_MASCOT_IDS.has(id) ? "role-mascots-1" : NEW_MASCOT_IDS.has(id) ? "citizenship-pmp-1" : SHARE_IMAGE_VERSION,
   });
   if (language !== "en") query.set("lang", language);
   return `/og/${encodeURIComponent(id)}?${query.toString()}`;

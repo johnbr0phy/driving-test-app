@@ -31,6 +31,8 @@ export const TIGER_EXAM_IDS = [
   "cissp",
   "itil", "cpc", "gmat",
   "sie", "series7", "ssccgl", "rrbntpc",
+  // Reviewed AP subject and Philippine civil-service mascots.
+  "appsych", "apush", "apbio", "apworld", "aplang", "apcalcab", "aphug", "apgov", "phcse",
 ] as const;
 
 export type TigerExpression = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;

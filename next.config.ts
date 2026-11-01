@@ -8,7 +8,7 @@ const BUILD_LAST_MODIFIED = new Date().toUTCString();
 const nextConfig: NextConfig = {
   outputFileTracingIncludes: {
     // Only the DMV faces: exam tigers are fetched over HTTP (see the route).
-    "/api/og/score-card": ["./public/tiger_face_*.png"],
+    "/api/og/score-card": ["./public/tiger_face_*.png", "./public/fonts/share/*"],
     "/og/[examId]": ["./public/tigers/*/tiger_face_03.png", "./public/tiger_face_03.png", "./public/fonts/share/*"],
     "/og/connect": ["./public/tiger.png", "./public/tiger_face_03.png"],
     "/og/q/[code]": ["./public/tiger.png", "./public/tiger_face_03.png"],

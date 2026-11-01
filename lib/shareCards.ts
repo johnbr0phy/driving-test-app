@@ -1,4 +1,5 @@
 import { TEST_CATALOG } from "./testCatalog";
+import { REGIONS } from "./region";
 import { EXAMS_V2 } from "./v2/registry";
 import { states } from "@/data/states";
 import { examBaseLanguage, examLanguage, getExamById, localizeExam } from "./exams";
@@ -15,11 +16,18 @@ export interface ShareCard {
   color: string;
   tint: string;
   mascots: string[];
+  /** "search": a homepage card drawn like the homepage (wordmark, search box,
+   *  weekly answers). "teach": the class page card. Unset: the exam card. */
+  kind?: "search" | "teach";
+  /** The line under the wordmark on a search card. */
+  tagline?: string;
 }
 
 const general = { footer: "Free practice. Every answer explained.", color: "#B84B05", tint: "#FFF0DF" };
 const hubs: Record<string, ShareCard> = {
-  home: { title: "Free practice tests. Find your next step.", lines: ["Free practice tests.", "Find your next step."], description: "Driving, school, healthcare and work. Learn with every answer.", footer: "Start practising at tigertest.io", color: "#C34D07", tint: "#FFF0DE", mascots: ["sat", "nclex", "dmv"] },
+  home: { title: "Free practice tests. Find your next step.", description: "Driving, school, healthcare and work. Learn with every answer.", footer: "tigertest.io", color: "#C34D07", tint: "#FFF0DE", mascots: [], kind: "search", tagline: "Free prep, any test, anywhere." },
+  tests: { title: `${TEST_CATALOG.length} free practice tests`, lines: [`${TEST_CATALOG.length} free`, "practice tests"], description: `Driving, school, healthcare, IT and trades, in ${REGIONS.length} countries. Every answer explained.`, footer: "See them all at tigertest.io/tests", color: "#C34D07", tint: "#FFF0DE", mascots: ["sat", "nclex", "dmv"] },
+  teach: { title: "Free practice tests for your whole class", lines: ["Free practice tests", "for your whole class"], description: "Post one link. See who practiced and what your class keeps getting wrong.", footer: "Make a class at tigertest.io/teach", color: "#C34D07", tint: "#FFF0DE", mascots: [], kind: "teach" },
   uk: { title: "Free UK practice tests", lines: ["Free UK", "practice tests"], description: "Driving theory, GCSEs, school entrance and workplace certificates.", footer: "Find your test at tigertest.io/uk", color: "#1E4F91", tint: "#EAF1FC", mascots: ["ks2", "uksia", "gcsemaths"] },
   ca: { title: "Free Canadian practice tests", lines: ["Free Canadian", "practice tests"], description: "Driving knowledge, school assessments, healthcare and Red Seal trades.", footer: "Find your test at tigertest.io/ca", color: "#B02D38", tint: "#FCEDEF", mascots: ["osslt", "rexpn", "caelec"] },
   au: { title: "Free Australian practice tests", lines: ["Free Australian", "practice tests"], description: "Learner licences, NAPLAN, selective entry and workplace certificates.", footer: "Find your test at tigertest.io/au", color: "#17644B", tint: "#E7F5ED", mascots: ["naplan", "auforklift", "auwhite"] },
@@ -44,7 +52,7 @@ const hubs: Record<string, ShareCard> = {
   hu: { title: "Free practice tests for Hungary", lines: ["Free practice tests", "for Hungary"], description: "KRESZ theory exam in English, college entrance and IT certifications.", footer: "Find your test at tigertest.io/hu", color: "#568159", tint: "#F3F7F3", mascots: ["dmv", "sat", "aws"] },
   be: { title: "Free practice tests for Belgium", lines: ["Free practice tests", "for Belgium"], description: "Category B theory exam in English, college entrance and IT certifications.", footer: "Find your test at tigertest.io/be", color: "#857300", tint: "#FDFBED", mascots: ["dmv", "sat", "aws"] },
   fi: { title: "Free practice tests for Finland", lines: ["Free practice tests", "for Finland"], description: "Teoriakoe in English, college entrance and IT certifications.", footer: "Find your test at tigertest.io/fi", color: "#002385", tint: "#EDF1FD", mascots: ["dmv", "sat", "aws"] },
-  de: { title: "Kostenlose Übungstests für Deutschland", lines: ["Kostenlose Übungstests", "für Deutschland"], description: "Führerschein-Theorie und Zertifizierungen. Jede Antwort erklärt.", footer: "Finde deinen Test auf tigertest.io/de", color: "#1F1F1F", tint: "#F2F2F2", mascots: ["dmv", "sat", "aws"] },
+  de: { title: "Kostenlose Übungstests für Deutschland", lines: ["Kostenlose", "Übungstests für", "Deutschland"], description: "Führerschein-Theorie und Zertifizierungen. Jede Antwort erklärt.", footer: "Finde deinen Test auf tigertest.io/de", color: "#1F1F1F", tint: "#F2F2F2", mascots: ["dmv", "sat", "aws"] },
   mt: { title: "Free practice tests for Malta", lines: ["Free practice tests", "for Malta"], description: "Transport Malta theory test, college entrance and IT certifications.", footer: "Find your test at tigertest.io/mt", color: "#C00C0C", tint: "#FDEDED", mascots: ["dmv", "sat", "aws"] },
 };
 
@@ -74,6 +82,12 @@ const CARD_FOOTERS: Record<string, string> = {
 export function getShareCard(id: string, language = "en"): ShareCard | undefined {
   if (Object.prototype.hasOwnProperty.call(hubs, id)) {
     const card = hubs[id];
+    // English country homepages open on the search, so their cards are drawn like it too.
+    const region = REGIONS.find((r) => r.code.toLowerCase() === id);
+    if (region && region.code !== "US" && region.lang === "en") {
+      return { ...card, kind: "search", tagline: card.title, footer: `tigertest.io/${id}` };
+    }
+    if (card.kind) return card;
     const split = card.description.indexOf(". ");
     return { ...card, descriptionLines: split >= 0 ? [card.description.slice(0, split + 1), card.description.slice(split + 2)] : undefined };
   }

@@ -33,7 +33,7 @@ export default function ResultsPage() {
   return (
     <div className="flex-1 bg-gray-50 dark:bg-gray-950">
       <p className="px-4 pt-4 text-center text-sm text-gray-500 dark:text-gray-400">
-            {stateName} · {language === "es" ? `Examen ${testId}` : language === "vi" ? `Bài Thi ${testId}` : language === "ko" ? `시험 ${testId}` : language === "zh" ? `模拟考试 ${testId}` : `Test ${testId}`} ·{" "}
+            {stateName} · {t(`practiceTests.${testId}`)} ·{" "}
             {attemptNumber === 1 ? t("results.firstAttempt") : `${t("results.attempt")} ${attemptNumber}`}
           </p>
       <ResultsHeroDebrief

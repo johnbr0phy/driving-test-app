@@ -5,29 +5,19 @@ import { join } from "path";
 import { states } from "@/data/states";
 import { getExamByStateCode } from "@/lib/exams";
 import { getTigerFace } from "@/lib/resultsCopy";
+import { createT } from "@/i18n";
 
 export const runtime = "nodejs";
 
-// Cache font data at module level so it's only loaded once
-let interBoldData: ArrayBuffer | null = null;
-let interBlackData: ArrayBuffer | null = null;
-
-async function loadFonts(): Promise<{ interBoldData: ArrayBuffer; interBlackData: ArrayBuffer } | null> {
-  try {
-    if (!interBoldData) {
-      const res = await fetch("https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuFuYMZhrib2Bg-4.ttf");
-      if (!res.ok) return null;
-      interBoldData = await res.arrayBuffer();
-    }
-    if (!interBlackData) {
-      const res = await fetch("https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuDyfMZhrib2Bg-4.ttf");
-      if (!res.ok) return null;
-      interBlackData = await res.arrayBuffer();
-    }
-    return { interBoldData, interBlackData };
-  } catch {
-    return null;
-  }
+// Inter from the repo (the same files as the 1200x630 cards). The card used to
+// fetch Inter from fonts.gstatic.com, whose URLs had gone stale, so it fell
+// back to a thin default face.
+let fonts: Promise<{ name: string; data: Buffer; weight: 400 | 700; style: "normal" }[]> | undefined;
+function loadFonts() {
+  fonts ??= Promise.all(([400, 700] as const).map(async weight => ({
+    name: "Inter", data: await readFile(join(process.cwd(), "public/fonts/share", `Inter-${weight === 400 ? "Regular" : "Bold"}.ttf`)), weight, style: "normal" as const,
+  }))).catch(error => { fonts = undefined; throw error; });
+  return fonts;
 }
 
 /**
@@ -134,8 +124,14 @@ export async function GET(request: NextRequest) {
 
   // Load tiger face image and fonts in parallel
   const tigerFile = getTigerFace(percentage, exam?.id);
-  const [tigerData, fonts] = await Promise.all([loadTiger(tigerFile, percentage, request.nextUrl.origin), loadFonts()]);
+  const [tigerData, brandData, fonts] = await Promise.all([
+    loadTiger(tigerFile, percentage, request.nextUrl.origin),
+    readFile(join(process.cwd(), "public/tiger_face_03.png")),
+    loadFonts(),
+  ]);
   const tigerBase64 = `data:image/png;base64,${tigerData.toString("base64")}`;
+  const brandBase64 = `data:image/png;base64,${brandData.toString("base64")}`;
+  const good = passed || isTraining;
 
   const tagline = isTraining && exam
     ? `MASTERED MY ${exam.shortName} TRAINING`
@@ -145,22 +141,24 @@ export async function GET(request: NextRequest) {
       : lang === "vi"
         ? "ĐÃ THÀNH THẠO PHẦN LUYỆN TẬP DMV"
         : "MASTERED MY DMV TRAINING")
-    : getTagline(percentage, lang);
+    : exam
+      ? getTagline(percentage, lang).replace("DMV", exam.shortName.toUpperCase())
+      : getTagline(percentage, lang);
   const stateName = stateObj.name;
 
-  const trainingSetNames: Record<string, Record<number, string>> = {
-    en: { 1: "Signs & Signals", 2: "Rules of the Road", 3: "Safety & Emergencies", 4: "State Laws" },
-    es: { 1: "Señales y semáforos", 2: "Reglas de tránsito", 3: "Seguridad y emergencias", 4: "Leyes estatales" },
-    vi: { 1: "Biển báo & tín hiệu", 2: "Luật đi đường", 3: "An toàn & khẩn cấp", 4: "Luật tiểu bang" },
-  };
+  // The DMV's own names for its sets and tests ("Signs & Signals", "Test A"),
+  // in the card's language; Korean and Chinese cards are English (no CJK font).
+  const t = createT(lang === "es" || lang === "vi" ? lang : "en");
 
   const examSetName = exam && isTraining
     ? exam.trainingSets.find((def) => def.setNumber === setId)?.name
     : undefined;
   const displayTestId = exam && testId !== null ? testId - exam.idBase : testId;
   const modeLabel = isTraining
-    ? (examSetName || trainingSetNames[lang]?.[setId!] || trainingSetNames["en"][setId!])
-    : (lang === "es" ? `Examen ${displayTestId}` : lang === "vi" ? `Bài Thi ${displayTestId}` : `Test ${displayTestId}`);
+    ? (examSetName || t(`trainingSets.${setId}`))
+    : exam
+      ? `Test ${displayTestId}`
+      : t(`practiceTests.${displayTestId}`);
   const correctLabel = lang === "es"
     ? `${score} de ${total} correctas`
     : lang === "vi"
@@ -179,6 +177,8 @@ export async function GET(request: NextRequest) {
     ? (lang === "es" ? "ENTRENAMIENTO DMV" : lang === "vi" ? "LUYỆN TẬP DMV" : "DMV TRAINING")
     : (lang === "es" ? "EXAMEN DE PRÁCTICA DEL DMV" : lang === "vi" ? "BÀI THI THỬ DMV" : "DMV PRACTICE TEST");
 
+  // The site's light look (Nov 2026): the Tigertest lockup on white fading to
+  // green for a pass or mastery, orange for a miss.
   const response = new ImageResponse(
     (
       <div
@@ -189,150 +189,49 @@ export async function GET(request: NextRequest) {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          background: (passed || isTraining)
-            ? "linear-gradient(180deg, #0a0a0a 0%, #091a0f 25%, #0c2414 50%, #042a12 75%, #052e16 100%)"
-            : "linear-gradient(180deg, #0a0a0a 0%, #1a0f09 25%, #241409 50%, #2e1a07 75%, #431407 100%)",
+          background: good
+            ? "linear-gradient(180deg, #ffffff 0%, #ffffff 22%, #dcfce7 100%)"
+            : "linear-gradient(180deg, #ffffff 0%, #ffffff 22%, #ffedd5 100%)",
           fontFamily: "Inter",
-          color: "white",
+          color: "#152230",
           padding: "60px",
         }}
       >
-        {/* Tigertest branding */}
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            marginBottom: 50,
-          }}
-        >
-          <div
-            style={{
-              display: "flex",
-              fontSize: 48,
-              fontWeight: 700,
-              letterSpacing: "4px",
-              color: "#d4d4d4",
-              marginBottom: 12,
-            }}
-          >
-            tigertest.io
-          </div>
-          <div
-            style={{
-              display: "flex",
-              fontSize: 32,
-              color: "#737373",
-              letterSpacing: "2px",
-            }}
-          >
-            {subtitle}
-          </div>
+        <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={brandBase64} width={88} height={88} alt="" />
+          <div style={{ display: "flex", fontSize: 84, fontWeight: 700, letterSpacing: "-3px" }}>Tigertest</div>
         </div>
+        <div style={{ display: "flex", marginTop: 14, marginBottom: 56, fontSize: 30, color: "#6b7280", letterSpacing: "3px" }}>{subtitle}</div>
 
-        {/* Tiger face */}
-        <img
-          src={tigerBase64}
-          width={360}
-          height={360}
-          style={{
-            marginBottom: 50,
-          }}
-        />
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src={tigerBase64} width={380} height={380} alt="" style={{ marginBottom: 50 }} />
 
-        {/* Tagline */}
-        <div
-          style={{
-            display: "flex",
-            fontSize: 56,
-            fontWeight: 800,
-            textAlign: "center",
-            marginBottom: 40,
-            color: passed ? "#86efac" : "#fdba74",
-            letterSpacing: "2px",
-          }}
-        >
+        <div style={{ display: "flex", fontSize: 54, fontWeight: 700, textAlign: "center", marginBottom: 36, color: good ? "#15803d" : "#c2410c", letterSpacing: "2px" }}>
           {tagline}
         </div>
 
-        {/* Giant percentage */}
-        <div
-          style={{
-            display: "flex",
-            fontSize: 200,
-            fontWeight: 900,
-            lineHeight: 1,
-            marginBottom: 20,
-            color: passed ? "#22c55e" : "#f97316",
-          }}
-        >
+        <div style={{ display: "flex", fontSize: 220, fontWeight: 700, lineHeight: 1, letterSpacing: "-6px", marginBottom: 20, color: good ? "#16a34a" : "#ea580c" }}>
           {percentage}%
         </div>
 
-        {/* X out of 50 correct */}
-        <div
-          style={{
-            display: "flex",
-            fontSize: 40,
-            color: "#a3a3a3",
-            marginBottom: 40,
-          }}
-        >
-          {correctLabel}
-        </div>
+        <div style={{ display: "flex", fontSize: 40, color: "#4b5563", marginBottom: 40 }}>{correctLabel}</div>
 
-        {/* PASSED/FAILED badge */}
-        <div
-          style={{
-            display: "flex",
-            fontSize: 36,
-            fontWeight: 700,
-            padding: "16px 60px",
-            borderRadius: 100,
-            marginBottom: 50,
-            background: passed ? "#16a34a" : "#ea580c",
-            color: "white",
-            letterSpacing: "3px",
-          }}
-        >
+        <div style={{ display: "flex", fontSize: 36, fontWeight: 700, padding: "16px 60px", borderRadius: 100, marginBottom: 50, background: good ? "#16a34a" : "#ea580c", color: "white", letterSpacing: "3px" }}>
           {passLabel}
         </div>
 
-        {/* State + Test */}
-        <div
-          style={{
-            display: "flex",
-            fontSize: 36,
-            color: "#a3a3a3",
-            marginBottom: 80,
-          }}
-        >
+        <div style={{ display: "flex", fontSize: 36, color: "#4b5563", marginBottom: 90 }}>
           {stateName} · {modeLabel}
         </div>
 
-        {/* tigertest.io */}
-        <div
-          style={{
-            display: "flex",
-            fontSize: 40,
-            fontWeight: 600,
-            color: "#737373",
-            letterSpacing: "2px",
-          }}
-        >
-          tigertest.io
-        </div>
+        <div style={{ display: "flex", fontSize: 40, fontWeight: 700, color: good ? "#15803d" : "#c2410c", letterSpacing: "1px" }}>tigertest.io</div>
       </div>
     ),
     {
       width: 1080,
       height: 1920,
-      ...(fonts && {
-        fonts: [
-          { name: "Inter", data: fonts.interBoldData, weight: 700 as const, style: "normal" as const },
-          { name: "Inter", data: fonts.interBlackData, weight: 900 as const, style: "normal" as const },
-        ],
-      }),
+      fonts,
       headers: {
         "Cache-Control": "public, max-age=86400",
       },

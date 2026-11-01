@@ -13,7 +13,8 @@ export const metadata: Metadata = {
   title,
   description,
   alternates: { canonical: `${siteUrl}/teach` },
-  openGraph: { title: `${title} | Tigertest`, description, url: `${siteUrl}/teach`, images: [shareImageUrl("home")] },
+  openGraph: { title: `${title} | Tigertest`, description, url: `${siteUrl}/teach`, images: [shareImageUrl("teach")] },
+  twitter: { card: "summary_large_image", title: `${title} | Tigertest`, description, images: [shareImageUrl("teach")] },
 };
 
 export default function TeachLayout({ children }: { children: React.ReactNode }) {

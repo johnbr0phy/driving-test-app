@@ -424,14 +424,14 @@
     "state": "ALL",
     "questionId": "S65-ANL-015",
     "category": "s65Analysis",
-    "question": "A portfolio returned 11% with a standard deviation of 16%, and Treasury bills yielded 3%. Its Sharpe ratio is:",
-    "optionA": "0.69",
+    "question": "A portfolio returned 13% with a standard deviation of 16%, and Treasury bills yielded 3%. Its Sharpe ratio is about:",
+    "optionA": "0.81",
     "optionB": "0.19",
-    "optionC": "0.5",
-    "optionD": "2.0",
+    "optionC": "0.63",
+    "optionD": "1.6",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Sharpe ratio = (11% - 3%) / 16% = 0.5. It measures excess return per unit of total risk; 0.69 forgets to subtract the risk-free rate."
+    "explanation": "Sharpe ratio = (13% - 3%) / 16% = 0.625, about 0.63. It measures excess return per unit of total risk; 0.81 forgets to subtract the risk-free rate, and 1.6 turns the ratio upside down."
   },
   {
     "type": "SERIES65",
@@ -1642,14 +1642,14 @@
     "state": "ALL",
     "questionId": "S65-TAX-002",
     "category": "s65TaxRetire",
-    "question": "A client inherits stock her father bought for $8,000. It was worth $31,000 when he died. Her cost basis is:",
-    "optionA": "$8,000",
-    "optionB": "$31,000",
+    "question": "A father gives his daughter stock he bought for $8,000. It is worth $31,000 on the day of the gift. Her cost basis for figuring a gain is:",
+    "optionA": "$31,000",
+    "optionB": "$8,000",
     "optionC": "$23,000",
     "optionD": "$19,500",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Inherited assets generally get a basis stepped up to fair market value at the date of death, so the $23,000 of gain during the father's life is never taxed."
+    "explanation": "A gift of appreciated property carries over the donor's basis, so her basis is his $8,000 and the $23,000 of built-in gain is taxed when she sells. Had she inherited the stock instead, her basis would step up to its value at his death."
   },
   {
     "type": "SERIES65",
@@ -2048,14 +2048,14 @@
     "state": "ALL",
     "questionId": "S65-ADV-007",
     "category": "s65Advisers",
-    "question": "A state Administrator suspects a federal covered adviser of defrauding clients in the state. The Administrator:",
-    "optionA": "Must refer it to the SEC only",
-    "optionB": "Has no authority over it",
-    "optionC": "May bring an antifraud action",
-    "optionD": "Can act only after an SEC order",
+    "question": "An SEC-registered adviser has a place of business in a state. Under NSMIA, the state may require the firm itself to:",
+    "optionA": "Register with the state",
+    "optionB": "Keep extra books and records",
+    "optionC": "Notice file and pay a fee",
+    "optionD": "Meet a state net worth test",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "NSMIA took registration of federal covered advisers away from the states but preserved each state's authority to investigate and bring enforcement actions for fraud."
+    "explanation": "NSMIA bars states from registering federal covered advisers or adding books, records, net capital or bonding rules, but a state may require a notice filing (copies of Form ADV), a fee and consent to service of process."
   },
   {
     "type": "SERIES65",
@@ -2132,14 +2132,14 @@
     "state": "ALL",
     "questionId": "S65-ADV-013",
     "category": "s65Advisers",
-    "question": "An individual applies to register as an investment adviser representative. The application form is:",
-    "optionA": "Form U4",
-    "optionB": "Form ADV",
-    "optionC": "Form BD",
-    "optionD": "Form U5",
+    "question": "A client must be given the education, business background and disciplinary history of the IAR who advises her. This is in:",
+    "optionA": "Form ADV Part 2B",
+    "optionB": "Form ADV Part 1A",
+    "optionC": "Form U5",
+    "optionD": "Form BD",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Agents and IARs register with Form U4 through CRD. The firm itself files Form ADV; Form U5 records a termination."
+    "explanation": "Part 2B, the brochure supplement, describes the individuals who give advice. Part 2A is the firm's brochure, Part 1 goes to regulators, and Form U5 records an individual's termination."
   },
   {
     "type": "SERIES65",
@@ -2286,14 +2286,14 @@
     "state": "ALL",
     "questionId": "S65-LAW-004",
     "category": "s65StateLaw",
-    "question": "A company sells shares to accredited investors under Rule 506 of Regulation D. A state may require:",
-    "optionA": "Registration by qualification",
-    "optionB": "Registration by coordination",
-    "optionC": "Approval of the offering",
-    "optionD": "A copy of its Form D and a fee",
+    "question": "A company sells shares to residents of a state under Rule 506 of Regulation D. A state that requires a Form D notice filing generally wants it:",
+    "optionA": "Before any offer in the state",
+    "optionB": "Within 90 days of the first sale",
+    "optionC": "Only after the offering closes",
+    "optionD": "Within 15 days of the first sale there",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Rule 506 offerings are federal covered securities under NSMIA, so states cannot require registration but may require a notice filing (Form D), a fee and consent to service of process."
+    "explanation": "Rule 506 securities are federal covered, so states cannot require registration, only a notice filing. NASAA states generally ask for the Form D, a fee and consent to service of process no later than 15 days after the first sale in the state."
   },
   {
     "type": "SERIES65",
@@ -2342,14 +2342,14 @@
     "state": "ALL",
     "questionId": "S65-LAW-008",
     "category": "s65StateLaw",
-    "question": "An individual is paid a fee for each investor she brings to a small company raising money. Under most state laws she is:",
-    "optionA": "Exempt as a finder",
-    "optionB": "An investment adviser",
-    "optionC": "Outside securities law",
-    "optionD": "An agent of the issuer",
+    "question": "Under the Uniform Securities Act, which of these is NOT a security?",
+    "optionA": "A variable annuity contract",
+    "optionB": "A collateral trust certificate",
+    "optionC": "A profit-sharing agreement interest",
+    "optionD": "A fixed annuity contract",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Someone paid per investor to find buyers for an issuer is effecting sales for it and generally must register as an agent. A few states have narrow finder rules."
+    "explanation": "The Act's definition excludes insurance, endowment and annuity contracts under which an insurer promises a fixed sum. Variable annuities, collateral trust certificates and profit-sharing interests are all securities."
   },
   {
     "type": "SERIES65",
@@ -2454,14 +2454,14 @@
     "state": "ALL",
     "questionId": "S65-LAW-016",
     "category": "s65StateLaw",
-    "question": "Under the Uniform Securities Act, a registered offering's prospectus may say that the state has:",
-    "optionA": "Approved the offering",
-    "optionB": "Found it a sound investment",
-    "optionC": "Passed on its accuracy",
-    "optionD": "Registered the securities",
+    "question": "A newspaper published in State A has had more than two-thirds of its circulation outside State A over the past year. An offer printed in it is:",
+    "optionA": "An offer made only in State A",
+    "optionB": "An offer made in every state",
+    "optionC": "An exempt offer everywhere",
+    "optionD": "Not an offer made in State A",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "A registration statement's filing or effectiveness never means the Administrator has found it accurate or passed on the merits; saying so is unlawful. Stating that the securities are registered is factual."
+    "explanation": "Under the Uniform Securities Act, an offer in a newspaper published outside the state, or published in the state with more than two-thirds of its circulation outside it over the past 12 months, is not an offer made in that state."
   },
   {
     "type": "SERIES65",
@@ -2552,11 +2552,11 @@
     "state": "ALL",
     "questionId": "S65-ETH-007",
     "category": "s65Ethics",
-    "question": "An IAR's website says she holds a professional designation she never earned. This is:",
+    "question": "An IAR tells a prospective client she holds a professional designation she never earned. This is:",
     "optionA": "Fine if she is studying for it",
     "optionB": "Puffery, not a violation",
     "optionC": "Misrepresenting qualifications",
-    "optionD": "Allowed with a disclaimer",
+    "optionD": "Allowed if no fee is charged",
     "correctAnswer": "C",
     "correctIndex": 2,
     "explanation": "Misrepresenting an adviser's or IAR's qualifications, or the nature of its services or fees, is an unethical practice and fraud."
@@ -2636,14 +2636,14 @@
     "state": "ALL",
     "questionId": "S65-ETH-013",
     "category": "s65Ethics",
-    "question": "An adviser has written discretion over a conservative retiree's account and buys speculative options in it. This is:",
-    "optionA": "Unsuitable for her goals",
-    "optionB": "Allowed, since it has discretion",
-    "optionC": "Allowed if the trade profits",
-    "optionD": "Required to diversify her",
+    "question": "An adviser buys a stock for all its discretionary clients in one block, then gives the best-priced fills to its own account. This is:",
+    "optionA": "An unfair trade allocation",
+    "optionB": "Fine, since the firm placed it",
+    "optionC": "Required for best execution",
+    "optionD": "Allowed if clients profit",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Discretion lets the adviser choose trades without asking each time, but every trade must still fit the client's objectives, risk tolerance and investment policy."
+    "explanation": "The duty of loyalty requires allocating block trades fairly, usually at the average price, under written procedures. Favoring the firm's own or preferred accounts puts the adviser ahead of its clients."
   },
   {
     "type": "SERIES65",
@@ -2790,13 +2790,13 @@
     "state": "ALL",
     "questionId": "S65-ETH-024",
     "category": "s65Ethics",
-    "question": "An adviser believes an 85-year-old client is being pressured by a relative to drain her account. Under laws based on NASAA's model act, the adviser may:",
-    "optionA": "Close the account at once",
-    "optionB": "Freeze it indefinitely",
-    "optionC": "Do nothing, as it's private",
-    "optionD": "Report it and delay payment",
+    "question": "A new client grants an adviser discretion by phone, and the adviser places the first discretionary trade. Under NASAA's model rule, written authority must be obtained within:",
+    "optionA": "30 calendar days",
+    "optionB": "90 days",
+    "optionC": "5 business days",
+    "optionD": "10 business days",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "NASAA's model act for vulnerable adults lets qualified individuals report suspected financial exploitation to the state and delay a disbursement for a limited period."
+    "explanation": "NASAA's unethical practices rule lets an adviser act on oral discretionary authority for no more than 10 business days after the first discretionary order; after that it needs the client's written authority."
   }
 ]

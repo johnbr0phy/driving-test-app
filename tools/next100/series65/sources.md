@@ -73,3 +73,14 @@ Act). Items testing the same fact with the same answer were rewritten: this bank
 adviser side (IA and IAR definitions, federal covered advisers, fiduciary duty, custody,
 discretion, fees) and uses different Uniform Securities Act facts (sale and offer definitions,
 manual and existing-holder exemptions, qualification escrow, survival of actions).
+
+## Review pass (2026-11-02)
+Every item re-read and every calculation recomputed. Rewritten for overlap with series63 (same fact,
+same answer): ADV-007 (now NSMIA notice filing by an SEC-registered adviser), ADV-013 (now Form ADV
+Part 2B), LAW-004 (now the 15-day Form D notice timing), LAW-008 (now fixed annuity excluded from
+"security"), LAW-016 (now the two-thirds out-of-state newspaper rule, USA 1956 414 / 2002 610),
+ETH-013 (now fair block-trade allocation), ETH-024 (now NASAA's 10-business-day written
+discretion rule). Rewritten for overlap with series7: TAX-002 (now carryover basis on a gift of
+appreciated stock instead of step-up), ANL-015 (Sharpe numbers changed so the key differs from
+SERIES7-SUI-020). ETH-007 reworded so it is not about a website (adviser advertising rules change
+in 2027).

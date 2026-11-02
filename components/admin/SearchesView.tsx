@@ -93,7 +93,7 @@ export function SearchesView() {
           </div>
         ))}
       </div>
-      <Table title="Found nothing: build these" note="Most searched first, where the last search returned no test." rows={data.misses} showPicks={false} />
+      <Table title="Found nothing: build these" note="Most searched first, where the last search returned no test and nothing was opened from it." rows={data.misses} showPicks={false} />
       <Table title="Most searched" note="Every query, with the tests people opened from it." rows={data.top} showPicks />
       <Table title="Latest" note="The 50 most recent searches." rows={data.recent} showPicks />
     </div>

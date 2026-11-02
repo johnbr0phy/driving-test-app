@@ -69,8 +69,14 @@ def check_format(q):
         bad.append(f"unknown format {f}")
     return bad
 
+# A stem about the test itself (its length, pass mark, timing, languages, retakes),
+# never a real exam question. Same rule as the v1 validate_bank.py META check.
+import importlib.util
+_vb = importlib.util.spec_from_file_location("vb", os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".claude", "skills", "exam-bank", "scripts", "validate_bank.py"))
+_m = importlib.util.module_from_spec(_vb); _vb.loader.exec_module(_m)
 for q in questions:
     errors += [f"{q['id']}: {b}" for b in check_format(q)]
+    if q["id"] not in _m.META_OK and _m.META.search(q["stem"]): errors.append(f"{q['id']}: asks about the test itself, not its subject")
     if q["test"] == 0 and (q["module"] != 1 or q.get("variant")): errors.append(f"{q['id']}: drill-only item must be module 1 with no variant")
     if q.get("stimulusId") and q["stimulusId"] not in stimuli: errors.append(f"{q['id']}: unknown stimulus {q['stimulusId']}")
     if q.get("figure") and not os.path.exists("public" + q["figure"]["src"]): errors.append(f"{q['id']}: missing figure {q['figure']['src']}")

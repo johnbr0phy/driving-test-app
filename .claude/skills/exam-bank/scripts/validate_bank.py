@@ -22,6 +22,9 @@ Checks (hard failures):
   key         correctIndex matches correctAnswer
   letters     each letter between 20% and 30% of the bank
   banned      All/None of the above, Both A, A and B, em-dash, empty strings
+  meta        a stem about the test itself (how many questions, pass mark, time limit,
+              languages, booking, retakes, how long a pass is valid, the question bank):
+              no real test asks these, so they never belong in a bank
   dupes       duplicate options within a row, duplicate stems across the bank (a question shown
               with a sign image from lib/signImages.ts may share its stem: the image is the question)
   length      key > 1.2x the average wrong option in more than 30% of items,
@@ -74,6 +77,23 @@ def option_ref_re(lang: str) -> re.Pattern:
     return re.compile(
         rf"^(({'|'.join(map(re.escape, boths))})\s+)?[abcd](\s+({'|'.join(joins)})\s+|\s*,\s*)[abcd]$", re.I
     )
+# A question about the test itself rather than its subject. English stems only.
+META = re.compile(
+    r"how many (questions|wrong answers|mistakes|errors|correct answers)\b.{0,80}\b(test|exam)"
+    r"|\b(test|exam)\b.{0,80}\bhow many (questions|wrong|mistakes|errors|correct)"
+    r"|\bpass(ing)? (mark|score)\b.{0,80}\b(test|exam)|\b(test|exam)\b.{0,80}\bpass(ing)? (mark|score)"
+    r"|\b(theory|knowledge|written|permit|citizenship|computer[- ]based|multiple[- ]choice)( \w+)? (test|exam)\b"
+    r".{0,80}\b(questions|minutes|time limit|languages?|offered|valid|kept|wait|retake|resit|re-sit|again|book|"
+    r"centre|center|cheat|attempt)"
+    r"|\b(sit|book|take|taking|retake|fail|failed|pass|passed|passing) (the|a|your) (theory|knowledge|written|permit)"
+    r"( \w+)? (test|exam)"
+    r"|question bank|\bguides (say|describe|report)",
+    re.I,
+)
+# Items that mention a test but are about the subject: licensing law the real exam does
+# test (state producer and broker license law, the CDL hazmat threat assessment, FAA
+# 14 CFR 61.39) and a logic puzzle that happens to be about a test.
+META_OK = {"CDLE-HM-003", "LHNJ-NJLIC-004", "PCNJ-NJLIC-004", "REMI-MILIC-004", "FAAPVT-D-081", "PHCSE-T1-044"}
 PROVIDERS = re.compile(r"\b(red cross|american heart|AHA|TIPS|TABC|ServSafe|YMCA|Ellis|NASM|ACE)\b")
 ID_RE = re.compile(r"^([A-Z0-9]+-)([A-Z0-9]+)-(\d{3})$")
 SIGN_MAP = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "..", "..", "lib", "signImages.ts")
@@ -179,6 +199,8 @@ def main() -> int:
             if BANNED.search(s):
                 errs.append(f"{qid}: banned phrase or em-dash")
                 break
+        if args.lang == "en" and qid not in META_OK and META.search(q):
+            errs.append(f"{qid}: asks about the test itself, not its subject")
         if PROVIDERS.search(q):
             warns.append(f"{qid}: provider named in stem")
 

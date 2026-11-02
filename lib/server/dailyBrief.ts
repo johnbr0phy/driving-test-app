@@ -63,8 +63,48 @@ function schoolNumbers(t: TeachAdminPayload, sinceIso: string | null) {
   };
 }
 
+/**
+ * Homepage searches (/home-v2, app/api/analytics/search) since the previous
+ * update, or the last 24 hours for the first one: what people typed that
+ * found no test, and what found tests but had none opened. These are the
+ * tests to build next, or a search alias we are missing.
+ */
+async function searchNumbers(db: Firestore, sinceIso: string | null) {
+  const day = 24 * 60 * 60 * 1000;
+  // A Monday update covers the weekend; never reach back more than a week.
+  const since = new Date(Math.max(sinceIso ? Date.parse(sinceIso) : Date.now() - day, Date.now() - 7 * day));
+  const sinceDay = since.toISOString().slice(0, 10);
+  const snap = await db.collection('searchQueries').where('lastAt', '>=', since.toISOString()).get();
+  const rows = snap.docs.map((d) => {
+    const v = d.data();
+    const daily = (v.daily ?? {}) as Record<string, number>;
+    const picks = (v.picks ?? {}) as Record<string, number>;
+    return {
+      query: String(v.q ?? ''),
+      // By UTC day, so the first day may reach a little before `since`.
+      timesTyped: Object.entries(daily).reduce((s, [d, n]) => (d >= sinceDay ? s + n : s), 0),
+      timesTypedAllTime: v.count ?? 0,
+      foundNothing: (v.lastResults ?? 0) === 0,
+      testsOpened: Object.keys(picks),
+      countries: Object.keys(v.byRegion ?? {}),
+    };
+  });
+  rows.sort((a, b) => b.timesTyped - a.timesTyped || b.timesTypedAllTime - a.timesTypedAllTime);
+  const strip = ({ foundNothing: _f, testsOpened: _t, ...r }: (typeof rows)[number]) => r;
+  return {
+    since: since.toISOString(),
+    searches: rows.reduce((s, r) => s + r.timesTyped, 0),
+    foundNothing: rows.filter((r) => r.foundNothing).slice(0, 40).map(strip),
+    foundTestsButNoneOpened: rows.filter((r) => !r.foundNothing && r.testsOpened.length === 0).slice(0, 20).map(strip),
+  };
+}
+
 /** The page's payload cut down to what an update can talk about. */
-export function briefNumbers(p: OpportunitiesPayload, schools: ReturnType<typeof schoolNumbers> | null = null) {
+export function briefNumbers(
+  p: OpportunitiesPayload,
+  schools: ReturnType<typeof schoolNumbers> | null = null,
+  searches: Awaited<ReturnType<typeof searchNumbers>> | null = null,
+) {
   const dollars = (cents: number) => Math.round(cents) / 100;
   return {
     last30Days: {
@@ -129,6 +169,8 @@ export function briefNumbers(p: OpportunitiesPayload, schools: ReturnType<typeof
     trackingProblems: p.health.filter((h) => h.status !== 'ok').map((h) => h.title),
     // Missing when the classes could not be read; the update goes on without them.
     teachersAndSchools: schools,
+    // Missing when the searches could not be read.
+    homepageSearches: searches,
   };
 }
 
@@ -139,8 +181,11 @@ const SYSTEM = `You write the morning update for John, who runs Tigertest (tiger
 John does not like reading much text. Write:
 - line 1: one headline sentence, at most 15 words, saying the single most important thing today
 - then 3 to 5 lines starting with "- ", each at most 25 words
+- then, when homepageSearches has anything worth acting on, one last line starting with "- Searches:" (at most 35 words)
 
 What to cover, most important first. A milestone beats everything: a first ever (the first class a teacher made, the first school linking to us, a first sale on a new paywall) is the headline, named specifically (which school, which exam). teachersAndSchools.newClassesSincePreviousUpdate and newSchoolsLinkingSincePreviousUpdate list what is new since the previous update; any entry there is news, and when allTime.classes or allTime.schoolsLinkingToUs equals the number new, it is the first ever. Teachers and schools matter more than their small numbers suggest: one class brings a room of students and the next class. After that: money (revenue and purchases, and which paywall sold), what changed since the previous update, a country that is growing or still empty (byCountry; name it, and the exam driving it), anything unusual (a spike, a drop, an exam suddenly busy), and one concrete thing worth doing. Skip anything that has not changed and is not actionable.
+
+The "Searches:" line is about tests to build next. homepageSearches lists what people typed on the homepage search since the previous update that found no test (foundNothing) or found tests but opened none. For each, work out the real exam the person meant (expand acronyms, fix typos, use their country) and check it against the list of tests we already have. If we have it, it is a search fix: say "add <query> as a name for <test>". If we do not, and it is a real exam many people take with a written multiple-choice part, suggest building it, best first, with how many times it was typed. Ignore gibberish, names and stray letters. Say when a query is ambiguous rather than guessing. Leave the line out when there is nothing worth acting on.
 
 Rules: use only the numbers given, never estimate or invent one. Round to whole numbers and say "$120", "about 1,400". Plain everyday words, no jargon like "cohort", "conversion rate" or "funnel". No em-dashes, no bold, no headings, nothing before the headline or after the last bullet. If the data is too thin to say something, say less rather than padding.`;
 
@@ -152,6 +197,7 @@ export async function writeBrief(numbers: BriefNumbers, previous: DailyBrief | n
   const user = [
     `Today is ${today}.`,
     `Today's numbers:\n${JSON.stringify(numbers, null, 1)}`,
+    `Tests we already have (for the searches line):\n${TEST_CATALOG.map((t) => `${t.name} (${t.shortName})`).join('; ')}`,
     previous
       ? `The previous update was written on ${previous.date}. It said:\n${previous.headline}\n${previous.bullets.map((b) => `- ${b}`).join('\n')}\n\nIts numbers were:\n${JSON.stringify(previous.numbers, null, 1)}`
       : 'There is no previous update; this is the first one.',
@@ -182,7 +228,7 @@ export function parseBrief(text: string): { headline: string; bullets: string[] 
   const headline = lines.find((l) => !isBullet(l))?.replace(/^#+\s*/, '') ?? '';
   const bullets = lines.filter(isBullet).map((l) => l.replace(/^[-•*]\s+/, ''));
   if (!headline || bullets.length === 0) throw new Error(`Unexpected update format: ${text.slice(0, 200)}`);
-  return { headline, bullets: bullets.slice(0, 5) };
+  return { headline, bullets: bullets.slice(0, 6) };
 }
 
 export async function latestBrief(db: Firestore, before?: string): Promise<DailyBrief | null> {
@@ -202,7 +248,13 @@ export async function createBrief(db: Firestore, payload: OpportunitiesPayload):
   } catch (error) {
     console.error('[daily-brief] classes unavailable', error);
   }
-  const numbers = briefNumbers(payload, schools);
+  let searches: Awaited<ReturnType<typeof searchNumbers>> | null = null;
+  try {
+    searches = await searchNumbers(db, previous?.generatedAt ?? null);
+  } catch (error) {
+    console.error('[daily-brief] searches unavailable', error);
+  }
+  const numbers = briefNumbers(payload, schools, searches);
   const { headline, bullets } = await writeBrief(numbers, previous);
   const brief: DailyBrief = { date, headline, bullets, generatedAt: new Date().toISOString(), model: BRIEF_MODEL, numbers };
   await db.doc(`dailyBriefs/${date}`).set(brief);

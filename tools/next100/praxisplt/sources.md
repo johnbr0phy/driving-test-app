@@ -72,6 +72,7 @@ transfer, spaced practice, think-aloud, measurable objectives, backward design, 
 level, social vs academic language, gifted early finisher, 504 eligibility, wheelchair access,
 bell-ringer, few positive rules, ignoring call-outs, whiteboard responses, partly correct
 answers, nonverbal listening, fair use of a film clip, diagnostic pre-test, validity, small
-standard deviation and mean of a score set).
+standard deviation and mean of a score set, least restrictive environment, FERPA right to
+inspect records, peer-reviewed research as the credible source, rubric self-assessment).
 
 All 200 items are original; no ETS sample question or commercial item was used.

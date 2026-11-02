@@ -1,8 +1,8 @@
 CAT = "pltLaw"; SEG = "LAW"
 Q = [
-("A parent asks to see her child's school records. Under FERPA, the school must:",
- "Let her inspect them", ["Refuse until the child is 18", "Show only the grades page", "Charge her a fee to view them"],
- "The Family Educational Rights and Privacy Act gives parents the right to inspect and review their child's education records and to ask for corrections."),
+("Under FERPA, the rights over a student's education records pass from the parents to the student when the student:",
+ "Turns 18 or enters college", ["Starts middle school", "Turns 16 years old", "Finishes elementary school"],
+ "FERPA rights belong to parents until the student turns 18 or attends a postsecondary school, when they transfer to the student, who is then an eligible student."),
 ("A teacher wants to post students' test scores with their names on the hallway bulletin board. Under FERPA, this is:",
  "A violation of privacy", ["Allowed if scores are high", "Required for accountability", "Allowed for students under 10"],
  "Test scores are part of education records. Publicly posting them with names discloses private information without consent."),

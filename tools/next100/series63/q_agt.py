@@ -1,11 +1,11 @@
 CAT = "s63Agents"; SEG = "AGT"
 Q = [
-("Under the Uniform Securities Act, an agent can only be:",
- "An individual", ["A corporation", "A partnership", "A trust"],
- "The USA defines an agent as an individual who represents a broker-dealer or issuer in effecting or attempting to effect securities transactions. A firm registers as a broker-dealer, never as an agent."),
-("A human resources officer explains her company's stock purchase plan to employees and gets no pay for sales. Under the USA she is:",
+("Which form does a firm file to register an individual agent with the states?",
+ "Form U4", ["Form BD", "Form ADV Part 2", "Form U5"],
+ "Form U4, the uniform application for securities industry registration, registers agents and IARs through the CRD system. Form BD registers the firm, and Form U5 ends an individual's registration."),
+("A bank employee sells the bank's own stock to its customers and gets no extra pay for it. Under the USA she is:",
  "Not an agent", ["An agent of the issuer", "An agent of a broker-dealer", "An investment adviser rep"],
- "An individual representing an issuer in transactions with its employees is excluded from the agent definition when no commission or other remuneration is paid, directly or indirectly, for soliciting them."),
+ "Bank securities are exempt securities, and an individual representing the issuer in transactions in them is excluded from the agent definition. Selling them for a broker-dealer would require registration."),
 ("An employee of a county sells the county's own bonds to investors. Under the USA she is:",
  "Excluded as an agent", ["An agent who must register", "A broker-dealer", "An investment adviser"],
  "An individual representing an issuer in transactions in certain exempt securities, including government and municipal securities, is excluded from the agent definition. Selling the same bonds for a broker-dealer would require registration."),

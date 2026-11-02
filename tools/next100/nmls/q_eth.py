@@ -1,6 +1,6 @@
 CAT = "nmlsEthics"; SEG = "ETH"
 Q = [
-("A lender refuses to make loans in a neighborhood because most of its residents are of one national origin. This practice is called:",
+("A lender sets higher minimum loan amounts in ZIP codes where most residents share one national origin, though incomes there match nearby areas. This is a form of:",
  "Redlining", ["Steering", "Blockbusting", "Loan flipping"],
  "Redlining is refusing or limiting credit in an area because of the race, national origin or other protected traits of its residents. It violates the Fair Housing Act and ECOA."),
 ("An originator steers a borrower who qualifies for a prime loan into a costlier subprime loan because it pays the originator more. This is:",

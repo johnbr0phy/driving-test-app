@@ -21,7 +21,7 @@ Q = [
 ("Interest on a home equity loan whose proceeds paid off credit card debt is:",
  "Not deductible", ["Fully deductible", "Deductible up to 50%", "Deductible for AGI"],
  "Home equity interest is deductible only when the loan is used to buy, build or substantially improve the home. Paying off credit cards makes it personal interest."),
-("After the $100 floor per event, a personal casualty loss is deductible only to the extent the total exceeds what share of AGI?",
+("After the $100 floor per event, a personal casualty loss is generally deductible only to the extent the total exceeds what share of AGI?",
  "10%", ["7.5%", "2%", "50%"],
  "Personal casualty losses that qualify are reduced by $100 per event and then by 10% of AGI. The 7.5% floor is for medical expenses."),
 ("The qualified business income deduction is generally 20% of QBI, limited to 20% of the taxpayer's:",

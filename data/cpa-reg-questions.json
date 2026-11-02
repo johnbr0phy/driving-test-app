@@ -1614,7 +1614,7 @@
     "state": "ALL",
     "questionId": "CPAREG-DED-008",
     "category": "cparegDeductions",
-    "question": "After the $100 floor per event, a personal casualty loss is deductible only to the extent the total exceeds what share of AGI?",
+    "question": "After the $100 floor per event, a personal casualty loss is generally deductible only to the extent the total exceeds what share of AGI?",
     "optionA": "7.5%",
     "optionB": "2%",
     "optionC": "50%",

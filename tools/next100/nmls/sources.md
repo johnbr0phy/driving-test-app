@@ -69,6 +69,11 @@ pace (190 min for 120 items is about 1.6 min each).
   error acknowledged in 5 business days.
 - Regulation B (12 CFR 1002): 30-day notice, public assistance and alimony income, appraisal copies
   and the 3-business-day notice, incompleteness notice, age.
+- Regulation B final rule (91 Fed. Reg. 21,620, issued 2026-04-22, effective 2026-07-21): removes
+  disparate-impact (effects test) liability from ECOA/Reg B and narrows discouragement; it does not
+  affect the Fair Housing Act. Item NMLS-ETH-003 is therefore framed under the Fair Housing Act.
+  https://www.huschblackwell.com/newsandinsights/cfpb-finalizes-major-regulation-b-overhaul-disparate-impact-out-discouragement-narrowed-and-spcps-restricted
+  (checked 2026-11-02).
 - Regulation C (HMDA): visual observation or surname for in-person applications.
 - FCRA/FACTA: adverse action notice contents, Red Flags Rule. Homebuyers Privacy Protection Act
   (signed 2025-09-05, effective 2026-03, trigger leads only with consent or an existing relationship

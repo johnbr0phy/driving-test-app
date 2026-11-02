@@ -7,7 +7,6 @@ import { Smartphone, Monitor } from "lucide-react";
 import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHero";
 import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
-import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
 
 const siteUrl = SITE_URL;
@@ -105,7 +104,6 @@ const jsonLd = {
             text: "No. Every question is original, written by Tigertest from the published ETS test specifications for 5622, so it practices the same content without copying any ETS item. Tigertest is not affiliated with ETS or the Praxis program; check ets.org for test dates, registration and any changes to the test.",
           },
         },
-        classFaqJsonLd("praxisplt"),
       ],
     },
   ],
@@ -300,7 +298,6 @@ export default function PraxisPltLandingPage() {
               No. Every question is original, written by Tigertest from the published ETS test specifications for 5622, so it practices the same content without copying any ETS item. Tigertest is not affiliated with ETS or the Praxis program; check ets.org for test dates, registration and any changes to the test.
             </p>
           </div>
-          <ExamClassFaq examId="praxisplt" />
         </div>
       </div>
 

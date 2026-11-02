@@ -68,3 +68,11 @@ Checked 2026-11-02.
 Exam format, fees, registration, retakes and the T-TEP timeline are landing and examFacts facts
 only. No money figures. All items original; no official representative questions or prep-manual
 items were used.
+
+## Review note (2026-11-02)
+
+The study guide framework page (TX_SG_obj_160.htm, fetched 2026-11-02) confirms 100
+selected-response questions, possible unscored questions and the 34/13/33/20 domain weights, but
+does not mention decision sets; the landing now attributes decision sets to prep guides.
+Texas Family Code 261.101(c): the duty to report applies without exception to persons whose
+communications may otherwise be privileged (used in TXPPR-PRO-023).

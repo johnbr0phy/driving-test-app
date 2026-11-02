@@ -76,7 +76,7 @@ const jsonLd = {
           name: "How many questions are on the PPR and how long is it?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "The PPR is a computer-administered test of 100 selected-response questions. The appointment is 5 hours: a 15-minute tutorial and compliance agreement, then 4 hours and 45 minutes of testing. Some questions may be unscored, and many come in decision sets, a teaching scenario followed by several questions. Each practice test here has 50 questions weighted like the real domains.",
+            text: "The PPR is a computer-administered test of 100 selected-response questions. The appointment is 5 hours: a 15-minute tutorial and compliance agreement, then 4 hours and 45 minutes of testing. Some questions may be unscored, and prep guides describe decision sets, a teaching scenario followed by several questions. Each practice test here has 50 questions weighted like the real domains.",
           },
         },
         {
@@ -181,7 +181,7 @@ export default function TexesPprLandingPage() {
                 Built on the PPR Exam Framework
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-                The official framework splits the PPR into four domains and 13 competencies. Every practice test here keeps each domain close to its real share. Questions are short teaching scenarios like the real exam&apos;s; the real decision sets, several questions on one longer scenario, are written here as single questions. Every question is original. Tigertest is not affiliated with the Texas Education Agency, the State Board for Educator Certification or Pearson.
+                The official framework splits the PPR into four domains and 13 competencies. Every practice test here keeps each domain close to its real share. Questions are short teaching scenarios like the real exam&apos;s; the decision sets prep guides describe, several questions on one longer scenario, are written here as single questions. Every question is original. Tigertest is not affiliated with the Texas Education Agency, the State Board for Educator Certification or Pearson.
               </p>
               <div className="space-y-3">
                 {contentAreas.map((area) => (
@@ -273,7 +273,7 @@ export default function TexesPprLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">How many questions are on the PPR and how long is it?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              The PPR is a computer-administered test of 100 selected-response questions. The appointment is 5 hours: a 15-minute tutorial and compliance agreement, then 4 hours and 45 minutes of testing. Some questions may be unscored, and many come in decision sets, a teaching scenario followed by several questions. Each practice test here has 50 questions weighted like the real domains.
+              The PPR is a computer-administered test of 100 selected-response questions. The appointment is 5 hours: a 15-minute tutorial and compliance agreement, then 4 hours and 45 minutes of testing. Some questions may be unscored, and prep guides describe decision sets, a teaching scenario followed by several questions. Each practice test here has 50 questions weighted like the real domains.
             </p>
           </div>
           <div>

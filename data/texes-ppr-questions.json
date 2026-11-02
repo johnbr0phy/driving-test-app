@@ -620,14 +620,14 @@
     "state": "ALL",
     "questionId": "TXPPR-DIV-013",
     "category": "txpprDiversity",
-    "question": "Students may show what they learned about a novel through an essay, a podcast or a comic, all scored with the same rubric. What is differentiated?",
-    "optionA": "The product",
-    "optionB": "The content",
-    "optionC": "The standard",
+    "question": "All students study the causes of the Dust Bowl, but each reads a text matched to his or her reading level. What is differentiated?",
+    "optionA": "The content materials",
+    "optionB": "The product",
+    "optionC": "The learning goal",
     "optionD": "The rubric",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Differentiating the product lets students choose how to show learning while the content, the standard and the criteria stay the same for everyone."
+    "explanation": "Varying the texts students read differentiates content access while the learning goal and the criteria stay the same for everyone."
   },
   {
     "type": "TEXESPPR",
@@ -2104,14 +2104,14 @@
     "state": "ALL",
     "questionId": "TXPPR-FBK-007",
     "category": "txpprFeedback",
-    "question": "Students rate their own drafts with a checklist before turning them in. This builds:",
-    "optionA": "Peer competition",
-    "optionB": "Grade inflation",
-    "optionC": "Self-assessment skills",
-    "optionD": "Dependence on the teacher",
+    "question": "Students keep a chart of their own weekly quiz scores and set a goal for the next one. What is the main benefit?",
+    "optionA": "Less grading for the teacher",
+    "optionB": "Ranking the class",
+    "optionC": "Ownership of their progress",
+    "optionD": "Fewer quizzes to give",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Self-assessment helps students judge their work against criteria and take ownership of improvement."
+    "explanation": "Tracking their own data and setting goals helps students see progress, link it to their effort and take responsibility for the next step."
   },
   {
     "type": "TEXESPPR",
@@ -2202,14 +2202,14 @@
     "state": "ALL",
     "questionId": "TXPPR-FBK-014",
     "category": "txpprFeedback",
-    "question": "A teacher gives a pretest in the first week of a unit. Its main purpose is to:",
-    "optionA": "Assign final grades",
-    "optionB": "Diagnose prior knowledge",
-    "optionC": "Compare to other schools",
-    "optionD": "Rank the students",
+    "question": "Early in a unit, a teacher gives a spelling inventory that sorts each student's errors by spelling pattern. What is its main purpose?",
+    "optionA": "Assign report card grades",
+    "optionB": "Find which patterns to teach",
+    "optionC": "Compare with other schools",
+    "optionD": "Rank the spellers",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Diagnostic assessment shows prior knowledge and gaps so the teacher can plan."
+    "explanation": "A diagnostic inventory shows which patterns each student controls and which are next, so the teacher can group and plan instruction."
   },
   {
     "type": "TEXESPPR",

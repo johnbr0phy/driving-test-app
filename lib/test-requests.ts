@@ -34,7 +34,7 @@ export function getTestRequestPick(id: unknown): TestRequestPick | null {
 }
 
 /** Where a click came from, for the admin breakdown. */
-export const TEST_REQUEST_SOURCES = ["email", "unsubscribe", "page"] as const;
+export const TEST_REQUEST_SOURCES = ["email", "unsubscribe", "page", "search"] as const;
 export type TestRequestSource = (typeof TEST_REQUEST_SOURCES)[number];
 
 export function asTestRequestSource(v: unknown): TestRequestSource {
@@ -43,3 +43,10 @@ export function asTestRequestSource(v: unknown): TestRequestSource {
 
 /** Longest free-text answer stored. */
 export const TEST_REQUEST_MAX_DETAILS = 1000;
+
+/** Loose email check for the "let me know when it ships" box. */
+export function asNotifyEmail(v: unknown): string | null {
+  if (typeof v !== "string") return null;
+  const email = v.trim().toLowerCase().slice(0, 254);
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) ? email : null;
+}

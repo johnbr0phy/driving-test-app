@@ -2,7 +2,7 @@
 # Each item: (question, key, [3 distractors], explanation). Source: NSW Road User Handbook.
 ITEMS = [
     ("Where must a learner driver display L plates?",
-     "Front and back, clearly visible", ["Only on the back window", "Only on the front windscreen", "On the driver's door only"],
+     "On the front and back", ["Only on the back window", "Only on the front windscreen", "On the driver's door only"],
      "L plates must be displayed on the front and back of the car, with the letter clearly visible from outside. Take them off when a full licence holder drives."),
     ("Must a learner or P driver carry their licence while driving?",
      "Yes, every time they drive", ["No, only full licence holders must", "Only when driving at night", "Only when driving interstate"],

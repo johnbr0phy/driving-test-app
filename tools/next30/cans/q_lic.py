@@ -7,7 +7,7 @@ ITEMS = [
  'Written consent from a parent', 'A driver training certificate', 'A supervising driver present', 'A letter from their school',
  'Applicants under 18 need written parental or guardian consent. A driver training course is optional for a learner and only shortens the wait for the road test.'),
 ('What must you carry when you drive in Nova Scotia?',
- 'Licence, permit and insurance card', 'Licence and birth certificate', 'Licence and health card only', 'Only the vehicle permit',
+ 'Licence, permit and insurance card', 'Your licence and your birth certificate', 'Licence and health card only', 'Only the vehicle permit',
  'Carry your driver\'s licence, the vehicle permit (registration) and the proof of insurance card, and show them to a peace officer who asks.'),
 ("While driving on a learner's licence, who must be in the front passenger seat?",
  'A fully licensed supervising driver', "Any adult with a driver's licence", 'A parent, whatever licence they hold', 'Anyone 19 or older',

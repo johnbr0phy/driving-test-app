@@ -56,7 +56,7 @@ ITEMS = [
  "Never while a learner", ["In daylight on quiet roads", "After six months as a learner", "When driving to school or work"],
  "In the Learner Stage a qualified supervising driver must be in the front passenger seat every time you drive. You may drive alone only after passing the road test."),
 ("What must you carry with you when you drive?",
- "Your licence and registration", ["Your birth certificate", "Your passport and licence", "Only your insurance card"],
+ "Your licence and registration", ["Your birth certificate", "A passport or any other photo ID", "Only your insurance card"],
  "Always carry your driver's licence and the vehicle's registration card when driving, and show them to a peace officer who asks. Other ID does not replace your licence."),
 ("When does time in the Learner or Intermediate Stage stop counting toward the minimum?",
  "While the licence is not valid", ["While you drive out of province", "While you drive a rental car", "While you hold an older photo"],

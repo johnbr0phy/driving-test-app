@@ -58,7 +58,7 @@ ITEMS = [
  "Pull over safely and stop", "Keep driving but go slower", "Drive on to your destination", "Turn up the radio to wake them",
  "A supervisor must be awake and able to help or take over at any moment. If they cannot, you are effectively driving alone, so stop until they can supervise."),
 ("Who in a moving vehicle must wear a seatbelt?",
- "Every person in the vehicle", "Only the driver", "Only front-seat riders", "Only passengers under 16",
+ "Every person in the vehicle", "Only the driver", "Only people in the front seats", "Only passengers under 16",
  "Everyone in the vehicle must wear a properly adjusted seatbelt or use a child restraint. Drivers are also responsible for passengers under 16."),
 ("Your vision test is passed only with your glasses on. What happens to your licence?",
  "It requires corrective lenses", "You cannot get a licence", "You may drive in daylight only", "You must retest each year",

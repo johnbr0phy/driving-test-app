@@ -258,7 +258,7 @@
     "category": "cambLicence",
     "question": "What must you carry with you when you drive?",
     "optionA": "Your birth certificate",
-    "optionB": "Your passport and licence",
+    "optionB": "A passport or any other photo ID",
     "optionC": "Your licence and registration",
     "optionD": "Only your insurance card",
     "correctAnswer": "C",

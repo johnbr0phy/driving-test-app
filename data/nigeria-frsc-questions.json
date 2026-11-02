@@ -102,14 +102,14 @@
     "state": "ALL",
     "questionId": "NGFRSC-LIC-008",
     "category": "ngLicence",
-    "question": "In the driving test, you must read a number plate in daylight from:",
+    "question": "To meet the eyesight standard for driving, you must be able to read a number plate in daylight from:",
     "optionA": "10 metres",
     "optionB": "15 metres",
     "optionC": "45 metres",
     "optionD": "23 metres",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "The test checks that you can read a vehicle number plate at 23 metres in daylight, with glasses if you wear them."
+    "explanation": "A driver must be able to read a vehicle number plate at 23 metres in daylight. If you need glasses or lenses to do so, wear them every time you drive."
   },
   {
     "type": "NGFRSC",
@@ -214,14 +214,14 @@
     "state": "ALL",
     "questionId": "NGFRSC-LIC-016",
     "category": "ngLicence",
-    "question": "A learner fails the driving test. How soon may they apply for another learner's permit?",
-    "optionA": "The very next working day",
-    "optionB": "After one calendar week",
-    "optionC": "After six calendar months",
-    "optionD": "After one calendar month",
+    "question": "A court has suspended your driver's licence. Until the suspension ends, you:",
+    "optionA": "May drive within your state",
+    "optionB": "May drive in daylight only",
+    "optionC": "May drive if you pay a bond",
+    "optionD": "Must not drive at all",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "A learner who fails, or does not complete, the test may apply for another permit, but not before one calendar month from that test."
+    "explanation": "A suspended licence gives no right to drive anywhere in Nigeria. Driving during a suspension is an offence that can lead to a longer ban."
   },
   {
     "type": "NGFRSC",

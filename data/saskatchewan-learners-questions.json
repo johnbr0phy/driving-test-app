@@ -1448,7 +1448,7 @@
     "category": "caskLicence",
     "question": "Who in a moving vehicle must wear a seatbelt?",
     "optionA": "Only the driver",
-    "optionB": "Only front-seat riders",
+    "optionB": "Only people in the front seats",
     "optionC": "Only passengers under 16",
     "optionD": "Every person in the vehicle",
     "correctAnswer": "D",

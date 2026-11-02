@@ -24,7 +24,7 @@ ITEMS = [
      "2 years", "1 year", "18 months", "3 years",
      "After passing the road test you hold a probationary licence for 2 years. You must keep fewer than 4 demerit points and follow the zero-alcohol rule."),
     ("Which documents must you carry when driving in Quebec?",
-     "Licence, registration and insurance", "Licence and birth certificate", "Licence and health insurance card", "Registration and a passport",
+     "Licence, registration and insurance", "Licence and your birth certificate", "Licence and your health insurance card", "Registration and a passport",
      "You must carry your driver's licence, the vehicle registration certificate and proof of liability insurance, and show them to a peace officer on request."),
        ("Which drivers with a regular Class 5 licence must still follow the zero-alcohol rule?",
      "Those under 22", "Those under 19", "Those under 21", "Those under 25",

@@ -2777,13 +2777,13 @@
     "questionId": "SETRF-PER-015",
     "category": "setrPersonal",
     "question": "When you practise driving privately with your supervisor, the car must carry:",
-    "optionA": "A green L plate",
+    "optionA": "A red L plate",
     "optionB": "Flashing hazard lights",
-    "optionC": "An ÖVNINGSKÖRNING sign",
+    "optionC": "A green ÖVNINGSKÖR sign",
     "optionD": "A yellow roof light",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "During private practice the car must have a sign reading ÖVNINGSKÖRNING, clearly visible to traffic behind, so other road users know a learner is driving."
+    "explanation": "During private practice the car must have a green sign reading ÖVNINGSKÖR at the back, clearly visible to traffic behind, so other road users know a learner is driving."
   },
   {
     "type": "SETRAFIK",

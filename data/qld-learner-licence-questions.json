@@ -746,14 +746,14 @@
     "state": "ALL",
     "questionId": "AUQLD-LIC-006",
     "category": "auqldLicence",
-    "question": "A P1 driver under 25 has an open licence holder in the front seat between 11pm and 5am. What passenger limit applies?",
-    "optionA": "Still only 1 passenger under 21",
-    "optionB": "The limit does not apply",
-    "optionC": "No passengers under 21 at all",
-    "optionD": "Only immediate family members",
+    "question": "To supervise a learner, how long must a person have held an open licence for that type of vehicle?",
+    "optionA": "At least 6 months",
+    "optionB": "At least 1 year",
+    "optionC": "At least 3 years",
+    "optionD": "At least 5 years",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "The late-night limit of one passenger under 21 does not apply when a supervisor with an open licence sits in the front passenger seat."
+    "explanation": "A supervisor must hold an open licence for the vehicle the learner is driving and must have held it for at least the past year."
   },
   {
     "type": "AUQLD",

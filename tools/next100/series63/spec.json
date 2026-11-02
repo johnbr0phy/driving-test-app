@@ -1,0 +1,35 @@
+{
+  "id": "series63",
+  "stateCode": "SERIES63",
+  "idBase": 15300,
+  "prefix": "S63-",
+  "slug": "/series-63",
+  "landingPath": "/series-63-practice-test",
+  "dataFile": "data/series-63-questions.json",
+  "name": "Series 63 Practice Test",
+  "shortName": "Series 63",
+  "examLabel": "Series 63 exam",
+  "fullName": "NASAA Series 63 Uniform Securities Agent State Law Exam",
+  "icon": "building",
+  "testCount": 3,
+  "questionsPerTest": 60,
+  "passPct": 71,
+  "categories": [
+    {"key": "s63Advisers", "label": "Investment Advisers", "perTest": 3, "pool": 10, "segment": "IAD"},
+    {"key": "s63Iars", "label": "Investment Adviser Representatives", "perTest": 3, "pool": 10, "segment": "IAR"},
+    {"key": "s63BrokerDealers", "label": "Broker-Dealers", "perTest": 7, "pool": 24, "segment": "BDR"},
+    {"key": "s63Agents", "label": "Agents of Broker-Dealers", "perTest": 8, "pool": 26, "segment": "AGT"},
+    {"key": "s63Securities", "label": "Securities & Issuers", "perTest": 5, "pool": 18, "segment": "SEC"},
+    {"key": "s63Remedies", "label": "Remedies & Administrative Provisions", "perTest": 7, "pool": 24, "segment": "REM"},
+    {"key": "s63Communication", "label": "Communication with Customers", "perTest": 12, "pool": 40, "segment": "COM"},
+    {"key": "s63Ethics", "label": "Ethical Practices & Obligations", "perTest": 15, "pool": 48, "segment": "ETH"}
+  ],
+  "notes": "NASAA Series 63 test specifications effective June 12, 2023 (overview dated Sept 1, 2023): 60 scored items, 3/3/7/8/5/7/12/15 by subject. Three real-length 60-question tests use exactly those counts; each pool is 3x its count plus 1 to 4 training-only spares (20 in all). Pass line ceil(0.71 x 60) = 43, the real 43 of 60.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 15301, "name": "Investment Advisers & IARs", "categories": ["s63Advisers", "s63Iars"], "size": 20},
+    {"setNumber": 2, "id": 15302, "name": "Broker-Dealers & Agents", "categories": ["s63BrokerDealers", "s63Agents"], "size": 50},
+    {"setNumber": 3, "id": 15303, "name": "Securities, Issuers & Remedies", "categories": ["s63Securities", "s63Remedies"], "size": 42},
+    {"setNumber": 4, "id": 15304, "name": "Communication with Customers", "categories": ["s63Communication"], "size": 40},
+    {"setNumber": 5, "id": 15305, "name": "Ethical Practices & Obligations", "categories": ["s63Ethics"], "size": 48}
+  ]
+}

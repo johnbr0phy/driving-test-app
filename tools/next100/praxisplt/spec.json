@@ -1,0 +1,36 @@
+{
+  "id": "praxisplt",
+  "stateCode": "PRAXISPLT",
+  "idBase": 15800,
+  "prefix": "PLT-",
+  "slug": "/praxis-plt",
+  "landingPath": "/praxis-plt-practice-test",
+  "dataFile": "data/praxis-plt-questions.json",
+  "name": "Praxis PLT K-6 Practice Test",
+  "shortName": "Praxis PLT",
+  "examLabel": "Praxis PLT K-6",
+  "fullName": "Praxis Principles of Learning and Teaching: Grades K-6 (5622)",
+  "icon": "graduation",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 70,
+  "categories": [
+    {"key": "pltDevelopment", "label": "Student Development & the Learning Process", "perTest": 6, "pool": 24, "segment": "DEV"},
+    {"key": "pltDiverse", "label": "Students as Diverse Learners", "perTest": 5, "pool": 20, "segment": "DIV"},
+    {"key": "pltMotivation", "label": "Motivation & the Learning Environment", "perTest": 4, "pool": 16, "segment": "MOT"},
+    {"key": "pltPlanning", "label": "Planning Instruction", "perTest": 5, "pool": 20, "segment": "PLN"},
+    {"key": "pltStrategies", "label": "Instructional Strategies", "perTest": 6, "pool": 24, "segment": "STR"},
+    {"key": "pltQuestioning", "label": "Questioning & Communication", "perTest": 4, "pool": 16, "segment": "QUE"},
+    {"key": "pltAssessStrategies", "label": "Assessment & Evaluation Strategies", "perTest": 5, "pool": 20, "segment": "ASM"},
+    {"key": "pltTesting", "label": "Standardized Tests & Scoring", "perTest": 5, "pool": 20, "segment": "TST"},
+    {"key": "pltProfessional", "label": "Professional Growth & Collaboration", "perTest": 6, "pool": 24, "segment": "PRO"},
+    {"key": "pltLaw", "label": "Laws & Court Decisions", "perTest": 4, "pool": 16, "segment": "LAW"}
+  ],
+  "notes": "ETS 5622 Test at a Glance: 2 hours, 70 selected-response (I Students as Learners 21, 22.5%; II Instructional Process 21, 22.5%; III Assessment 14, 15%; IV Professional Development, Leadership and Community 14, 15%) plus 4 constructed-response on two case histories (V Analysis of Instructional Scenarios, 25%). Only the selected-response part is modelled. 21/21/14/14 of 70 scales to 15/15/10/10 of 50; each ETS category is split along its own subheadings (I.A/B/C 6/5/4, II.A/B/C+D 5/6/4, III.A/B 5/5, IV items 1-6 / item 7 6/4). Pools exactly 4x per test.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 15801, "name": "Students as Learners", "categories": ["pltDevelopment", "pltDiverse", "pltMotivation"], "size": 60},
+    {"setNumber": 2, "id": 15802, "name": "Instructional Process", "categories": ["pltPlanning", "pltStrategies", "pltQuestioning"], "size": 60},
+    {"setNumber": 3, "id": 15803, "name": "Assessment", "categories": ["pltAssessStrategies", "pltTesting"], "size": 40},
+    {"setNumber": 4, "id": 15804, "name": "Professional Development, Leadership & Community", "categories": ["pltProfessional", "pltLaw"], "size": 40}
+  ]
+}

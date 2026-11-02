@@ -55,7 +55,7 @@ const faqs = [
   },
   {
     q: "What happens if I do not pass the NMLS test?",
-    a: "Under the SAFE Act you may retake the test after waiting at least 30 days, and you get three attempts in a row on that schedule. After a third failure in a row you must wait at least 180 days. Most candidates also need 20 hours of NMLS-approved pre-licensing education before they can be licensed.",
+    a: "Under the SAFE Act you may retake the test after waiting at least 30 days, and you get three attempts in a row on that schedule. After a third failure in a row you must wait at least six months. Most candidates also need 20 hours of NMLS-approved pre-licensing education before they can be licensed.",
   },
   {
     q: "Are these the real NMLS test questions?",

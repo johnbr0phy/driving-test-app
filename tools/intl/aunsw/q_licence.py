@@ -1,12 +1,12 @@
 # nswLicence: licences, GLS restrictions, penalties, seatbelts and child restraints (24)
 # Each item: (question, key, [3 distractors], explanation). Source: NSW Road User Handbook.
 ITEMS = [
-    ("What is the minimum age to enrol in the DKT online?",
-     "15 years and 11 months", ["16 years and 11 months", "15 years and 10 months", "16 years and 6 months"],
-     "You can enrol in the DKT online at 15 years and 11 months. The in-person DKT needs you to be 16, and you can only get the learner licence itself at 16."),
-    ("What is the minimum age to sit the DKT in person at a service centre?",
-     "16 years", ["15 years and 11 months", "17 years", "15 years"],
-     "The in-person DKT is for people aged 16 or older. Only the DKT online can be started at 15 years and 11 months."),
+    ("Where must a learner driver display L plates?",
+     "On the front and back", ["Only on the back window", "Only on the front windscreen", "On the driver's door only"],
+     "L plates must be displayed on the front and back of the car, with the letter clearly visible from outside. Take them off when a full licence holder drives."),
+    ("Must a learner or P driver carry their licence while driving?",
+     "Yes, every time they drive", ["No, only full licence holders must", "Only when driving at night", "Only when driving interstate"],
+     "Learner and provisional drivers must carry their licence whenever they drive and show it to police on request. A digital licence counts."),
     ("If you are under 25, how many hours must your learner log book show before the Driving Test?",
      "120 hours, 20 at night", ["100 hours, 10 at night", "120 hours, 10 at night", "80 hours, 20 at night"],
      "Learners under 25 must log at least 120 hours of supervised driving, including 20 hours at night. Learners aged 25 or over do not need to log hours."),

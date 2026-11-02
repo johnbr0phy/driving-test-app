@@ -22,6 +22,9 @@ Checks (hard failures):
   key         correctIndex matches correctAnswer
   letters     each letter between 20% and 30% of the bank
   banned      All/None of the above, Both A, A and B, em-dash, empty strings
+  meta        a stem about the test itself (how many questions, pass mark, time limit,
+              languages, booking, retakes, how long a pass is valid, the question bank):
+              no real test asks these, so they never belong in a bank
   dupes       duplicate options within a row, duplicate stems across the bank (a question shown
               with a sign image from lib/signImages.ts may share its stem: the image is the question)
   length      key > 1.2x the average wrong option in more than 30% of items,
@@ -74,6 +77,64 @@ def option_ref_re(lang: str) -> re.Pattern:
     return re.compile(
         rf"^(({'|'.join(map(re.escape, boths))})\s+)?[abcd](\s+({'|'.join(joins)})\s+|\s*,\s*)[abcd]$", re.I
     )
+# A question about the test itself rather than its subject: its length, pass mark, time,
+# languages, booking, retakes, how long a pass stays valid, who may sit it. English stems only.
+# A stem is flagged when it says "pass mark", "question bank" or "guides say", or names a test or exam (other than a breath, road, medical... test)
+# and uses one of these words. Builders researched the real exam's format first and then
+# turned those facts into questions; no real test asks them.
+META_NONTEST = re.compile(
+    r"\b(breath|drug|alcohol|BAC|chemical|road|driving|drive|car|motorcycle|practical|fitness|patch|"
+    r"strand|lab|laboratory|blood|skills?|eye|vision|sobriety|saliva|screening|swimming|urine|"
+    r"pregnancy|leak|functional|operational|hydrostatic|smoke|fit|tuberculin|TB|hearing|stress|pull|"
+    r"spark|bump|tensile|bend|dye|ultrasonic|radiographic|hazard perception|risk perception|physical|"
+    r"breast|pelvic|dental|oral|rectal|neurological|clinical|diagnostic|pressure|continuity|"
+    r"insulation|polarity|earth|loop|unit|class|classroom|spelling|math|maths|weekly|final|school|"
+    r"science|history|reading|placement|standardi[sz]ed|aptitude|achievement|formative|summative|"
+    r"intelligence|chi-square|statistical|hypothesis|DNA|genetic|soil|water|paper|treadmill|allergy|"
+    r"skin|glucose|tolerance|culture|rapid|antigen|PCR|HIV|strep|flu|COVID|home|7-pay)\s+"
+    r"(tests?|exams?|examinations?)\b|\b(exam|examination) (room|table|gloves|light)\b",
+    re.I,
+)
+META_ALONE = re.compile(r"\bpass(ing)? mark\b|question bank|\bguides (say|describe|report)", re.I)
+META_TEST = re.compile(r"\b(tests?|exams?|examinations?)\b", re.I)
+META_WORDS = re.compile(
+    r"how many (questions|wrong answers|mistakes|errors|correct answers|parts)|questions (are|must|make up|does)"
+    r"|\bpass(ing)? (mark|score)|\bscore (do you need|is required|must)|time limit"
+    r"|how (long|much time) do(es)? (you|it) (have|allow)|how much time does|\blanguages?\b|in English\b"
+    r"|\boffered\b|\bvalid\b|stays valid|\bis kept\b|\bretak\w*|\bresit|re-sit|\bwait\b|\bbook(ed|ing)?\b"
+    r"|test cent|exam cent|\bcheat|\battempts?\b|\bfail(s|ed)?\b|\bsit\b|how is the|\btaken\b|wrong answers"
+    r"|question bank|guides (say|describe|report)|minimum age|before you can (book|take|sit)"
+    r"|before (taking|you take|booking)|arrive|can be correct|for the first time|need to pass|\bto pass\b"
+    r"|must you (score|get right)|where (must|do|can) you take|how often (may|can) you take|how early"
+    r"|when must you pass|usually take|\btake it\b|\bonline\b|\bportal\b",
+    re.I,
+)
+
+
+class _Meta:
+    """META.search(stem): truthy when the stem asks about the test itself."""
+    @staticmethod
+    def search(stem: str) -> bool:
+        if META_ALONE.search(stem):
+            return True
+        s = META_NONTEST.sub(" ", stem)
+        return bool(META_TEST.search(s) and META_WORDS.search(s))
+
+
+META = _Meta()
+# Allowed: licensing law the real exam tests (state insurance and real estate license law,
+# FINRA registration, the CDL hazmat threat assessment, FAA 14 CFR 61.39, ADI "the driving
+# test" band, the UK CBT certificate), and maths or logic items that are about some other exam.
+META_OK_ID = re.compile(r"^(LH|PC|RE)[A-Z]{2}-[A-Z]{2}(LIC|REG)-|^SIE-REG-|^UKADI-TST-")
+META_OK = {"CDLE-HM-003", "FAAPVT-D-081", "UKMOTO-DOC-002", "PHCSE-T1-044", "IBPSRRB-T2-075",
+           "SSCCPO-T2-006", "SSCCPO-T2-014", "APPSYCH-T2-026", "NETPLUS-T1-007", "SECPLUS-T2-083",
+           "NGCUS-VOC-024", "NGCUS-VOC-025", "PHLET-PRO-006", "PHLET-ASM-002", "TRCN-SAF-017"}
+
+
+def is_meta(qid: str, stem: str) -> bool:
+    return qid not in META_OK and not META_OK_ID.match(qid) and META.search(stem)
+
+
 PROVIDERS = re.compile(r"\b(red cross|american heart|AHA|TIPS|TABC|ServSafe|YMCA|Ellis|NASM|ACE)\b")
 ID_RE = re.compile(r"^([A-Z0-9]+-)([A-Z0-9]+)-(\d{3})$")
 SIGN_MAP = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "..", "..", "lib", "signImages.ts")
@@ -179,6 +240,8 @@ def main() -> int:
             if BANNED.search(s):
                 errs.append(f"{qid}: banned phrase or em-dash")
                 break
+        if args.lang == "en" and is_meta(qid, q):
+            errs.append(f"{qid}: asks about the test itself, not its subject")
         if PROVIDERS.search(q):
             warns.append(f"{qid}: provider named in stem")
 

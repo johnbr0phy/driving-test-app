@@ -116,14 +116,14 @@
     "state": "ALL",
     "questionId": "KENTSA-LIC-009",
     "category": "keLicence",
-    "question": "Which of these does the NTSA driving test check, under the Traffic Act?",
-    "optionA": "Knowledge of the Highway Code",
-    "optionB": "Knowledge of engine repairs",
-    "optionC": "Knowledge of road construction",
-    "optionD": "Knowledge of vehicle valuation",
+    "question": "Your driving licence has expired. May you still drive?",
+    "optionA": "No, renew it first",
+    "optionB": "Yes, for three more months",
+    "optionC": "Yes, on rural roads only",
+    "optionD": "Yes, if you carry it with you",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "The test must cover the rules of the road, road signals and signs, the Highway Code and physical fitness to drive."
+    "explanation": "An expired licence gives no right to drive. Renew it with NTSA before you take the wheel again."
   },
   {
     "type": "KENTSA",

@@ -2594,14 +2594,14 @@
     "state": "ALL",
     "questionId": "CABC-LIC-002",
     "category": "cabcLicence",
-    "question": "How many questions must you get right on the 50-question passenger vehicle knowledge test?",
-    "optionA": "35",
-    "optionB": "40",
-    "optionC": "38",
-    "optionD": "45",
+    "question": "Who is responsible for making sure passengers under 16 are buckled up?",
+    "optionA": "Each passenger",
+    "optionB": "The driver",
+    "optionC": "The child's parent",
+    "optionD": "The front passenger",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "You need 40 of 50 correct, which is 80 per cent. The test ends early once you reach 40 right or pass the allowed number wrong."
+    "explanation": "The driver must make sure every passenger under 16 wears a seatbelt or sits in the right child seat. Passengers 16 and older are responsible for themselves."
   },
   {
     "type": "CABC",

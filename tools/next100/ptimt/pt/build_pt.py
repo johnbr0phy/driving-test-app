@@ -17,7 +17,7 @@ OUT = ROOT / "data" / "portugal-imt-questions_pt.json"
 FIELDS = ["question", "optionA", "optionB", "optionC", "optionD", "explanation"]
 
 # Text allowed to equal the English: numbers, units and sign codes only.
-WHITELIST = re.compile(r"^[\d\s.,/%]*(km/h|m|g/l|mm|cm)?$")
+WHITELIST = re.compile(r"^[\d\s.,/%]*(km/h|m|g/l|mm|cm|kg)?$")
 # Brazilian forms that must not appear in pt-PT copy.
 BRAZILIAN = [r"\bvocê\b", r"\btela\b", r"\bcelular\b", r"\bmotorista\b", r"\bacostamento\b",
              r"\bpedestre", r"\bônibus\b", r"\bcarteira de motorista\b", r"\btrem\b", r"\bfaixa de pedestres\b",

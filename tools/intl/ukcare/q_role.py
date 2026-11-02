@@ -58,7 +58,7 @@ Q = [
 ("Why must you know the limits of your role?",
  "To keep people and yourself safe", ["To avoid taking on any extra tasks", "To finish every shift on time", "To be promoted sooner than others"],
  "Staying within your role and competence protects people from harm and protects you. Tasks outside it should be referred to the right person."),
-("What could your career progress to after you complete the Care Certificate?",
- "More qualifications and roles", ["Nothing, it is the final step", "Only a manager's job straight away", "A nursing registration automatically"],
- "The Care Certificate is a starting point. Workers can go on to qualifications such as the Level 2 Adult Social Care Certificate and higher diplomas, and to senior or specialist roles."),
+("A person you support sends you a friend request on social media. What should you do?",
+ "Politely decline and stay professional", ["Accept it to build trust", "Accept it but never post anything", "Ignore it and tell nobody"],
+ "Your relationship with the people you support is a working one with clear boundaries. Follow your employer's social media policy, decline kindly and tell your manager if it happens again."),
 ]

@@ -6864,14 +6864,14 @@
   "state": "VA",
   "questionId": "VA-011",
   "category": "gdlLicensing",
-  "question": "在弗吉尼亚州，如果未成年人DMV笔试三次不及格，会怎样？",
-  "optionA": "可以立即重考",
-  "optionB": "等待30天后重考",
-  "optionC": "必须完成驾驶员教育课程",
-  "optionD": "申请驾照的资格被暂停",
+  "question": "在弗吉尼亚州，未满18岁的驾驶人首次因扣分交通违规被定罪后，必须做什么？",
+  "optionA": "重新参加路考",
+  "optionB": "缴纳500美元驾驶安全费",
+  "optionC": "完成驾驶改进课程",
+  "optionD": "再持有学习驾照九个月",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "DMV笔试三次不及格的未成年人，必须先完成驾驶员教育课程才能重考。"
+  "explanation": "未满18岁的驾驶人首次因扣分违规被定罪，必须完成驾驶改进课程（driver improvement clinic）。"
  },
  {
   "type": "State-Specific",

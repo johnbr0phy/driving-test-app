@@ -74,14 +74,14 @@
     "state": "ALL",
     "questionId": "UKSERU-LIC-006",
     "category": "serLicensing",
-    "question": "How does TfL assess your English reading and writing for a PHV licence?",
-    "optionA": "Through a separate essay test",
-    "optionB": "Through the SERU assessment",
-    "optionC": "Through the topographical test",
-    "optionD": "Through an interview at TfL",
+    "question": "Another licensed PHV driver asks to wear your badge for one shift. What should you do?",
+    "optionA": "Agree if they hold a PHV licence",
+    "optionB": "Refuse, as only you may wear it",
+    "optionC": "Agree if your operator approves",
+    "optionD": "Agree for short journeys only",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Passing SERU also shows the reading and writing skills TfL needs. Speaking and listening are tested separately in a TfL building."
+    "explanation": "Your badge identifies you, and only you, as a licensed driver. Letting anyone else wear or use it is a serious breach that can cost you your licence."
   },
   {
     "type": "UKSERU",

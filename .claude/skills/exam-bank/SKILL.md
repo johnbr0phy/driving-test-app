@@ -28,6 +28,11 @@ outline and revision in a comment on the ExamConfig blueprint. For a bank-only j
 rewrite, extra questions for an existing exam) only the state code, prefix, categories and pools
 matter; mark the routing fields "n/a".
 
+The real exam's format (question count, time, pass mark, languages, booking, retakes) is researched
+for the landing, the FAQ and `lib/examFacts.ts`, not for the bank. Never turn it into questions,
+and never plan a category (or part of one) to hold it: a licence or law category covers rules a
+holder lives by. If the handbook has too few of those, make the category smaller.
+
 ## 2. Write the questions
 
 Schema, one object per question, exactly these keys in this order:
@@ -94,6 +99,14 @@ current text. Wrong paragraph citations were the single most common factual erro
 powers, card renewal) is "varies by state" in both stem and key. Never assert one state's rule.
 Never name a training provider in a stem (no Red Cross, TIPS, ServSafe, AHA); the bank serves every
 provider's course. Never ask for a dollar amount, a point value or an X/Y/Z insurance limit.
+
+**Never ask about the test itself.** Every question tests the subject, never the exam: no
+question count, pass mark, wrong answers allowed, time limit, languages offered, booking, test
+centre, ID on the day, retake waits, cheating, how long a pass stays valid, who writes the
+questions, or the age to sit the test. No real test asks these, and a learner who meets one
+rightly thinks the bank is padded. Those facts belong on the landing page (`lib/examFacts.ts`,
+the FAQ). Licensing rules a holder lives by (learner and probation limits, alcohol limits,
+documents to carry) are fine. The validator fails these stems (`META` in `validate_bank.py`).
 
 **Banned:** "All of the above", "None of the above", "Both A and B", options that refer to other
 options, duplicate options in a row, duplicate or near-duplicate stems in the bank.

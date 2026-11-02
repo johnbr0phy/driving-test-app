@@ -2290,7 +2290,7 @@
     "optionA": "Registration by qualification",
     "optionB": "Registration by coordination",
     "optionC": "Approval of the offering",
-    "optionD": "A notice filing and a fee",
+    "optionD": "A copy of its Form D and a fee",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "Rule 506 offerings are federal covered securities under NSMIA, so states cannot require registration but may require a notice filing (Form D), a fee and consent to service of process."

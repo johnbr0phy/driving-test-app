@@ -1,9 +1,9 @@
 CAT = "txpprTechnology"; SEG = "TEC"
 # Competency 009 (technology).
 Q = [
-("A teacher wants students to judge whether a website is reliable. Which check matters most?",
- "Who wrote it and their sources", ["The site's color scheme", "The number of images used", "How long the page is"],
- "Reliability depends on who wrote it, their expertise and the evidence they cite, not on appearance."),
+("To judge an unfamiliar website, a student leaves it and checks what other sources say about the site and its author. This strategy is:",
+ "Lateral reading", ["Close reading", "Skimming", "Scanning"],
+ "Lateral reading, used by professional fact-checkers, judges a source by what others say about it instead of by its own look and claims."),
 ("A teacher wants to show a short clip from a film for a lesson. What should guide her decision?",
  "Copyright and fair use", ["Student preference", "The film's popularity", "Her own movie ratings"],
  "Fair use weighs the purpose, the nature of the work, the amount used and the effect on its market."),
@@ -16,9 +16,9 @@ Q = [
 ("A student with a visual impairment needs to read class handouts. Which technology helps most?",
  "Text-to-speech software", ["A faster printer", "A larger projector screen", "A spell checker"],
  "Assistive technology such as screen readers or magnifiers gives the student access to the same text."),
-("Which use of technology best supports collaboration?",
- "A shared document", ["A timed drill app", "A slide show by the teacher", "A digital worksheet done alone"],
- "Shared documents let students build one product together and see each other's contributions."),
+("A teacher posts a video lesson online. Which step makes it accessible to a student who is deaf?",
+ "Add accurate captions", ["Turn up the volume", "Seat him near the speakers", "Skip the video for him"],
+ "Accurate captions give the student the same content at the same time. Excusing him from the video denies him access to the lesson."),
 ("A teacher plans to use a new science simulation. What should come first?",
  "Match it to the objective", ["Pick the newest tool", "Let students explore freely", "Skip a teacher preview"],
  "Technology is chosen because it serves the learning goal, and the teacher previews it before class."),

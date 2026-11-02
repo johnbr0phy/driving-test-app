@@ -55,24 +55,56 @@ function editDistance(a: string, b: string, max: number): number {
 // it has other words, so "sat practice test" searches for "sat".
 const GENERIC = new Set(["practice", "test", "tests", "exam", "exams", "mock", "free", "quiz", "questions", "question", "prep", "online", "sample", "paper", "papers", "2026", "2027"]);
 
-// Spellings of one subject, so "maths" (UK) finds the SAT's "math" and the reverse.
-const SYNONYMS: Record<string, string> = { maths: "math", mathematics: "math", mathematical: "math", sciences: "science" };
+// Spellings and plurals of one word, so "maths" (UK) finds the SAT's "math",
+// "licence" finds "license" and the reverse. Applied to every query term.
+const SYNONYMS: Record<string, string> = {
+  maths: "math", mathematics: "math", mathematical: "math", sciences: "science",
+  licence: "license", licences: "license", licenses: "license", defence: "defense",
+  practise: "practice", programme: "program", programmes: "program",
+  drivers: "driver", learners: "learner", nurses: "nurse", teachers: "teacher", electricians: "electrician",
+  plumbers: "plumber", welders: "welder", carpenters: "carpenter", firefighters: "firefighter", guards: "guard", banks: "bank",
+};
 
-// School subjects. A query made only of these is a topic search ("maths",
-// "biology"), not a test's name: every country has tests for it, so the
-// visitor's own country leads instead of whichever test has the word in its name.
-const SUBJECTS = new Set(["math", "english", "science", "reading", "writing", "grammar", "spelling", "vocabulary", "biology", "chemistry", "physics", "history", "algebra", "geometry", "calculus", "arithmetic", "statistics", "numeracy", "literacy"]);
+/** Other spellings a term also matches in a test's text ("license" matches "licence"). */
+const FORMS: Record<string, string[]> = { license: ["license", "licence"], defense: ["defense", "defence"] };
+
+// Topic words: a subject, a field or a kind of test that many countries have.
+// A query made only of these (plus generic words) is a topic search ("maths",
+// "driving test", "police exam"), not a test's name, so tests about the topic
+// come first and, among them, the visitor's own country leads instead of
+// whichever country's test happens to have the word in its name.
+const TOPICS = new Set([
+  // school subjects
+  "math", "english", "science", "reading", "writing", "grammar", "spelling", "vocabulary", "biology", "chemistry", "physics",
+  "history", "geography", "algebra", "geometry", "calculus", "arithmetic", "statistics", "numeracy", "literacy", "economics",
+  // school and admissions
+  "school", "primary", "secondary", "high", "kids", "children", "entrance", "admission", "admissions", "college", "university", "scholarship", "grade",
+  // driving
+  "driving", "driver", "license", "permit", "learner", "theory", "road", "signs", "motorcycle", "motorbike",
+  // civic, public service, jobs
+  "citizenship", "civics", "police", "constable", "security", "guard", "army", "military", "defense", "navy", "bank", "banking",
+  "clerk", "government", "civil", "service", "railway", "recruitment", "job", "jobs",
+  // health and care
+  "nursing", "nurse", "medical", "health", "healthcare", "pharmacy", "first", "aid", "care", "carer",
+  // trades and work
+  "electrician", "electrical", "plumber", "plumbing", "carpenter", "carpentry", "welder", "welding", "forklift", "construction",
+  "safety", "food", "hygiene", "handler", "alcohol", "fire", "firefighter", "trade", "trades", "apprenticeship",
+  "teacher", "teaching", "insurance", "real", "estate", "computer", "programming", "cloud",
+]);
 
 /** A term matches at the start of a word; terms of 4+ letters may also match inside one ("theory" in "cartheory"). */
 function termIn(term: string, text: string, textWords: string[]): boolean {
-  if (term.length >= 4) return text.includes(term);
-  return textWords.some((w) => w.startsWith(term));
+  return (FORMS[term] ?? [term]).some((f) => (f.length >= 4 ? text.includes(f) : textWords.some((w) => w.startsWith(f))));
 }
 
 const typoBudget = (term: string) => (term.length >= 7 ? 2 : term.length >= 4 ? 1 : 0);
 
 /** How well one term matches a title: exact word 3, word prefix 2, substring 1. */
 function titleScore(term: string, titleWords: string[], title: string): number {
+  return Math.max(...(FORMS[term] ?? [term]).map((f) => titleScoreOne(f, titleWords, title)));
+}
+
+function titleScoreOne(term: string, titleWords: string[], title: string): number {
   if (titleWords.includes(term)) return 3;
   if (titleWords.some((w) => w.startsWith(term))) return 2;
   // Short terms only count at a word start, so "act" never matches "practice".
@@ -164,22 +196,23 @@ function stateHits(terms: string[]): SearchHit[] {
  */
 export function searchAllTests(query: string, region: Region, popularity: Record<string, number> = {}): SearchResult {
   const q = normalizeQuery(query);
-  const allTerms = words(q).map((t) => SYNONYMS[t] ?? t);
+  const allTerms = words(q.replace(/'s\b/g, "")).map((t) => SYNONYMS[t] ?? t);
   if (allTerms.length === 0) return { hits: [], fuzzy: false };
   const specific = allTerms.filter((t) => !GENERIC.has(t));
   const terms = specific.length > 0 ? specific : allTerms;
 
   const regionRank = (r: TestRegion) => (r === region ? 0 : r === "GLOBAL" ? 1 : 2);
 
-  // A subject search: tests about the subject first (in their name or aliases),
-  // the visitor's country first among those, then tests that only mention it.
-  if (terms.every((t) => SUBJECTS.has(t))) {
-    const about = (c: Candidate) => (terms.every((t) => termIn(t, c.topic, c.topicWords)) ? 0 : 1);
+  // A topic search: tests about the topic first (the words in their name or
+  // aliases, most words first), the visitor's country first among those,
+  // then this week's popularity; tests that only mention it come last.
+  if (terms.every((t) => TOPICS.has(t))) {
+    const about = (c: Candidate) => terms.filter((t) => termIn(t, c.topic, c.topicWords)).length;
     const hits = candidates()
       .filter((c) => terms.every((t) => termIn(t, c.text, c.textWords)))
       .sort(
         (a, b) =>
-          about(a) - about(b) ||
+          about(b) - about(a) ||
           regionRank(regionOfTest(a.test.id)) - regionRank(regionOfTest(b.test.id)) ||
           (popularity[b.test.id] ?? 0) - (popularity[a.test.id] ?? 0),
       )

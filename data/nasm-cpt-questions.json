@@ -2566,14 +2566,14 @@
     "state": "ALL",
     "questionId": "NASM-PRO-004",
     "category": "nasmProfessional",
-    "question": "Which current certification is required to sit for the NASM-CPT exam?",
-    "optionA": "A college degree in exercise science",
-    "optionB": "A registered dietitian license",
-    "optionC": "A physical therapy license",
-    "optionD": "CPR and AED",
+    "question": "An older client trips during a session and bumps their head, then says they feel fine. The trainer should:",
+    "optionA": "Resume the planned workout at once",
+    "optionB": "Switch to seated upper-body work",
+    "optionC": "Give them a pain reliever",
+    "optionD": "Stop and watch for injury signs",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Candidates need a high school diploma or equivalent and current CPR and AED certification before taking the exam."
+    "explanation": "Stop the session, check for signs of a head injury such as confusion or headache, and refer for medical care if any appear. Giving medication is outside a trainer's scope."
   },
   {
     "type": "NASM",

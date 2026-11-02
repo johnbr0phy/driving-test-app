@@ -28,6 +28,11 @@ outline and revision in a comment on the ExamConfig blueprint. For a bank-only j
 rewrite, extra questions for an existing exam) only the state code, prefix, categories and pools
 matter; mark the routing fields "n/a".
 
+The real exam's format (question count, time, pass mark, languages, booking, retakes) is researched
+for the landing, the FAQ and `lib/examFacts.ts`, not for the bank. Never turn it into questions,
+and never plan a category (or part of one) to hold it: a licence or law category covers rules a
+holder lives by. If the handbook has too few of those, make the category smaller.
+
 ## 2. Write the questions
 
 Schema, one object per question, exactly these keys in this order:

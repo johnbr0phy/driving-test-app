@@ -21,6 +21,9 @@ Read `.claude/skills/exam-bank/SKILL.md` first and follow its house style. In sh
 - Signs are described in words (no images).
 - No em-dashes anywhere. The brand is "Tigertest".
 - Use the country's own spelling (licence, metres, kerb in Commonwealth countries) and its units.
+- Never ask about the test itself (question count, pass mark, time, languages, booking, retakes, how
+  long a pass is valid, age to sit it). Those facts go on the landing and in examFacts only. Fill the
+  licence category with rules a driver lives by, or shrink it. `validate_bank.py` fails these stems.
 - Don't put money figures (fines, fees) in questions. Leave out rules you cannot confirm from an official
   source, and anything the "avoid" list below names.
 

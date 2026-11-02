@@ -9,7 +9,10 @@ wiring shared files at the same time: touch ONLY your exam's files listed above.
 ## 1. Read every item
 For each question ask: is the key right, is anything in the stem or explanation factually wrong or
 out of date (as of October 2026), could a well-prepared candidate defend a different option, is it
-too easy because the key stands out by length or tone? Recompute every number, every arithmetic and
+too easy because the key stands out by length or tone? Does it ask about the test itself (its
+length, pass mark, time, languages, booking, retakes, how long a pass is valid, who may sit it)?
+Rewrite those as real subject questions in the same category: no real test asks them, however
+accurate the fact. Recompute every number, every arithmetic and
 data item, every unit conversion. For language items, check grammar and idiom in the language used
 (Hindi items in `uppolice` need a careful Hindi read: spelling, matras, the grammar rule tested).
 Use web search (ToolSearch `select:WebSearch`) for any fact you are not sure of.

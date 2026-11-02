@@ -21,6 +21,12 @@ latest notification or syllabus. Prefer the exam body's own site, notification P
 Record every source with its URL and the date you checked it in `tools/next100/<id>/sources.md`.
 If a figure cannot be confirmed, leave it out or label it ("guides say", "Tigertest's target").
 Never assert one state's or one year's rule as permanent; date-stamp anything that changes yearly.
+These format facts go in `sources.md`, the landing, the FAQ and `lib/examFacts.ts`, never into the
+bank. No question may ask about the test itself (question count, pass mark, wrong answers allowed,
+time, languages, booking, test centre, retakes, how long a pass is valid, who writes the questions,
+age to sit it): no real test asks them. A licence or law category is filled with rules a driver or
+holder lives by (learner and probation limits, alcohol limits, documents), not exam admin; if the
+handbook has too few such rules, shrink the category. `validate_bank.py` fails these stems.
 Questions are original. Never copy a past paper, an official sample, or a commercial app's items,
 even when they are easy to find.
 

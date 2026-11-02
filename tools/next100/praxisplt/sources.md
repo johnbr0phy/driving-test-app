@@ -76,3 +76,18 @@ standard deviation and mean of a score set, least restrictive environment, FERPA
 inspect records, peer-reviewed research as the credible source, rubric self-assessment).
 
 All 200 items are original; no ETS sample question or commercial item was used.
+
+## Review pass (2026-11-02)
+
+Rewritten after a cross-bank check against phlet, trcnpqe, Praxis Core, ctet, reet, uptet and
+appsych (same fact and answer elsewhere): MOT-003 (intrinsic reading, now learned helplessness),
+MOT-011 (Maslow safety, now esteem), MOT-012 (proximity control, now Premack principle), QUE-001
+(wait time before calling, now wait time after a response), STR-014 (gradual release, now K-W-L),
+STR-019 (inductive reasoning, now inference), ASM-001 (anecdotal record, now rating scale),
+ASM-019 (test blueprint, now learning-log self-assessment), TST-001 (percentile, now stanine),
+TST-014 (norm-referenced comparison, now standard error of measurement), PRO-024 (teaching
+portfolio, now National Board Certification), LAW-016 (need-to-know sharing, now FERPA directory
+information with notice and opt-out, 34 CFR 99.37). Accuracy fixes: DEV-012 Kohlberg stage 3
+label "good boy-nice girl"; DIV-019 stem and explanation (consent for the initial evaluation and
+separate consent before services first start, 34 CFR 300.300); PRO-023 IEP team membership
+(34 CFR 300.321).

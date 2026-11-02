@@ -1,7 +1,7 @@
 CAT = "pltQuestioning"; SEG = "QUE"
 Q = [
-("After a student answers, the teacher pauses about three seconds before saying anything. The main benefit of this pause is that:",
- "Students can extend the answer", ["The lesson moves more quickly", "The teacher can grade the answer", "Fewer students need to speak"],
+("When a student finishes answering, the teacher stays silent for about three seconds before responding. What does this pause mainly allow?",
+ "Students to extend the answer", ["The lesson to move faster", "The teacher to grade the answer", "Fewer students to speak up"],
  "Wait time after a student's response (sometimes called wait time II) gives the speaker and classmates time to add to, revise or support the answer before the teacher evaluates it."),
 ("During a lesson on magnets, which question best promotes higher-level thinking?",
  "\"Why do you think the nail stuck?\"", ["\"What color is this magnet?\"", "\"Is this magnet heavy?\"", "\"What is this object called?\""],

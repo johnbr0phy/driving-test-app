@@ -68,8 +68,8 @@ Q = [
  "Incident analysis is examining a specific event in detail to understand what happened and how to respond better next time."),
 ("A school forms a team of the teacher, parents, a special education teacher and a school psychologist to plan services for a student with a disability. This is the:",
  "IEP team", ["PTA board", "School board", "Grade-level team"],
- "IDEA requires an IEP team that includes the parents, a general education teacher, a special education teacher and someone who can interpret evaluation results."),
-("A teacher's portfolio of lesson plans, student work samples and reflections is mainly used to:",
- "Document and reflect on growth", ["Rank her students' abilities", "Replace classroom observation", "Show students' test scores only"],
- "A teaching portfolio gathers evidence of practice and reflection, supporting both self-assessment and professional growth."),
+ "IDEA requires an IEP team that includes the parents, at least one general education teacher if the child is or may be in general education, at least one special education teacher, a district representative and someone who can interpret evaluation results."),
+("An experienced teacher seeks a voluntary advanced credential earned by submitting portfolio entries on her teaching and passing a content assessment. This credential is:",
+ "National Board Certification", ["An initial state license", "Tenure at her school", "A substitute permit"],
+ "National Board Certification, from the National Board for Professional Teaching Standards, is a voluntary advanced credential based on portfolio components and a content knowledge assessment. A state license is the required credential to teach."),
 ]

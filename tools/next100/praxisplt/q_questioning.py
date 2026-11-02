@@ -1,8 +1,8 @@
 CAT = "pltQuestioning"; SEG = "QUE"
 Q = [
-("After asking a question, a teacher waits several seconds before calling on anyone. The most likely result is:",
- "Longer, more thoughtful answers", ["Fewer students answering", "More off-task behavior", "Faster pace with less depth"],
- "Increasing wait time to three seconds or more is linked to longer answers, more students responding and higher-level thinking."),
+("After a student answers, the teacher pauses about three seconds before saying anything. The main benefit of this pause is that:",
+ "Students can extend the answer", ["The lesson moves more quickly", "The teacher can grade the answer", "Fewer students need to speak"],
+ "Wait time after a student's response (sometimes called wait time II) gives the speaker and classmates time to add to, revise or support the answer before the teacher evaluates it."),
 ("During a lesson on magnets, which question best promotes higher-level thinking?",
  "\"Why do you think the nail stuck?\"", ["\"What color is this magnet?\"", "\"Is this magnet heavy?\"", "\"What is this object called?\""],
  "Asking why invites students to explain and reason about cause. The others ask for simple observation or recall."),

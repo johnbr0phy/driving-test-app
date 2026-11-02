@@ -162,7 +162,7 @@
     "optionA": "Punishment and obedience",
     "optionB": "Social contract orientation",
     "optionC": "Universal ethical principles",
-    "optionD": "Good boy-good girl",
+    "optionD": "Good boy-nice girl",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "Seeking approval by being seen as good is stage 3, the first stage of the conventional level. Avoiding punishment is stage 1, preconventional."
@@ -592,14 +592,14 @@
     "state": "ALL",
     "questionId": "PLT-DIV-019",
     "category": "pltDiverse",
-    "question": "A teacher suspects a student has a learning disability in reading. Before any change in placement, IDEA requires:",
+    "question": "A teacher suspects a student has a learning disability in reading. Before the student can first receive special education services, IDEA requires:",
     "optionA": "A move to a resource room",
     "optionB": "A note on the report card",
     "optionC": "Parent consent and an evaluation",
     "optionD": "A decision by the teacher alone",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "IDEA requires informed parent consent and a full and individual evaluation before a child is found eligible and placed in special education."
+    "explanation": "IDEA requires informed parent consent for a full and individual initial evaluation, and separate parent consent before special education services are first provided."
   },
   {
     "type": "PRAXISPLT",
@@ -648,14 +648,14 @@
     "state": "ALL",
     "questionId": "PLT-MOT-003",
     "category": "pltMotivation",
-    "question": "A student reads mystery novels at home simply because she loves them. Her motivation is:",
-    "optionA": "Extrinsic",
-    "optionB": "Vicarious",
-    "optionC": "Intrinsic",
-    "optionD": "Conditioned",
+    "question": "After failing many math quizzes, a fourth grader stops trying even on easy problems and says, \"It doesn't matter what I do.\" This pattern is called:",
+    "optionA": "Self-actualization",
+    "optionB": "Reciprocal determinism",
+    "optionC": "Learned helplessness",
+    "optionD": "Mastery orientation",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Intrinsic motivation comes from interest or enjoyment in the activity itself. Extrinsic motivation comes from outside rewards or pressures."
+    "explanation": "Learned helplessness (Seligman) is the belief, built from repeated failure, that one's actions do not change outcomes, so the student stops trying. Tasks the student can succeed at and feedback that links success to effort and strategy help reverse it."
   },
   {
     "type": "PRAXISPLT",
@@ -760,28 +760,28 @@
     "state": "ALL",
     "questionId": "PLT-MOT-011",
     "category": "pltMotivation",
-    "question": "Maslow's hierarchy implies that a student who feels unsafe in class will most likely:",
-    "optionA": "Learn faster to avoid any danger",
-    "optionB": "Seek out more challenging tasks",
-    "optionC": "Struggle to focus on learning",
-    "optionD": "Be motivated mainly by grades",
+    "question": "A fifth grader feels safe in class and has good friends there. Now he wants to be recognized for his skill and respected by classmates. In Maslow's hierarchy, which need is he working on?",
+    "optionA": "Safety",
+    "optionB": "Physiological",
+    "optionC": "Esteem",
+    "optionD": "Self-actualization",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Maslow placed safety and belonging below the needs for esteem and growth, so unmet lower needs crowd out attention to learning."
+    "explanation": "Maslow ordered needs from physiological and safety, through love and belonging, to esteem and then self-actualization. Recognition, competence and respect are esteem needs."
   },
   {
     "type": "PRAXISPLT",
     "state": "ALL",
     "questionId": "PLT-MOT-012",
     "category": "pltMotivation",
-    "question": "A teacher who stands near a student who is whispering, without stopping the lesson, is using:",
-    "optionA": "Response cost",
-    "optionB": "Time-out in a corner",
-    "optionC": "Public reprimand",
-    "optionD": "Proximity control",
+    "question": "A teacher tells students they may go to the computer center as soon as they finish their spelling practice. This uses:",
+    "optionA": "Negative reinforcement",
+    "optionB": "Classical conditioning",
+    "optionC": "Response cost",
+    "optionD": "The Premack principle",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Moving near a student is a low-key intervention that often stops minor misbehavior without interrupting instruction."
+    "explanation": "The Premack principle uses a preferred activity (computer time) to reinforce a less preferred one (spelling practice), sometimes called Grandma's rule. Nothing unpleasant is removed, so it is not negative reinforcement."
   },
   {
     "type": "PRAXISPLT",
@@ -1306,14 +1306,14 @@
     "state": "ALL",
     "questionId": "PLT-STR-014",
     "category": "pltStrategies",
-    "question": "Over several weeks, a teacher shifts from writing a paragraph with the class, to helping pairs write, to having students write alone. This is the:",
-    "optionA": "Spiral curriculum design",
-    "optionB": "Gradual release model",
-    "optionC": "Token economy system",
-    "optionD": "Direct reinforcement plan",
+    "question": "Before a unit on bats, students list what they already know and what they want to find out. After the unit they add what they learned. This strategy is a:",
+    "optionA": "Venn diagram",
+    "optionB": "K-W-L chart",
+    "optionC": "Cloze procedure",
+    "optionD": "Learning contract",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "The \"I do, we do, you do\" model gradually moves responsibility from teacher to student as competence grows."
+    "explanation": "A K-W-L chart (Know, Want to know, Learned) activates prior knowledge, sets a purpose for learning and has students reflect on what they learned."
   },
   {
     "type": "PRAXISPLT",
@@ -1376,14 +1376,14 @@
     "state": "ALL",
     "questionId": "PLT-STR-019",
     "category": "pltStrategies",
-    "question": "A student solves a puzzle by noticing a pattern in several examples and stating a general rule. This is:",
-    "optionA": "Deductive reasoning",
-    "optionB": "Rote memorization",
-    "optionC": "Inductive reasoning",
-    "optionD": "Free recall",
+    "question": "In a story, a character comes inside shaking water off an umbrella. A student says, \"It must be raining outside.\" The student is:",
+    "optionA": "Summarizing the plot",
+    "optionB": "Sequencing events",
+    "optionC": "Making an inference",
+    "optionD": "Restating a fact",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Inductive reasoning moves from specific examples to a general rule. Deductive reasoning applies a general rule to a specific case."
+    "explanation": "An inference combines clues in the text with background knowledge to reach a conclusion the text does not state directly."
   },
   {
     "type": "PRAXISPLT",
@@ -1460,14 +1460,14 @@
     "state": "ALL",
     "questionId": "PLT-QUE-001",
     "category": "pltQuestioning",
-    "question": "After asking a question, a teacher waits several seconds before calling on anyone. The most likely result is:",
-    "optionA": "Longer, more thoughtful answers",
-    "optionB": "Fewer students answering",
-    "optionC": "More off-task behavior",
-    "optionD": "Faster pace with less depth",
+    "question": "After a student answers, the teacher pauses about three seconds before saying anything. The main benefit of this pause is that:",
+    "optionA": "Students can extend the answer",
+    "optionB": "The lesson moves more quickly",
+    "optionC": "The teacher can grade the answer",
+    "optionD": "Fewer students need to speak",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Increasing wait time to three seconds or more is linked to longer answers, more students responding and higher-level thinking."
+    "explanation": "Wait time after a student's response (sometimes called wait time II) gives the speaker and classmates time to add to, revise or support the answer before the teacher evaluates it."
   },
   {
     "type": "PRAXISPLT",
@@ -1684,14 +1684,14 @@
     "state": "ALL",
     "questionId": "PLT-ASM-001",
     "category": "pltAssessStrategies",
-    "question": "A teacher jots brief notes on what a student said and did while building a block tower. These records are:",
-    "optionA": "Anecdotal notes",
-    "optionB": "A scoring guide",
-    "optionC": "A norm-referenced test",
-    "optionD": "An analytical checklist",
+    "question": "A teacher scores each student's participation in discussion as 1 (rarely), 2 (sometimes), 3 (often) or 4 (always). This tool is a:",
+    "optionA": "Rating scale",
+    "optionB": "Anecdotal record",
+    "optionC": "Running record",
+    "optionD": "Norm-referenced test",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Anecdotal notes are short, factual descriptions of what a teacher observes, useful for informal assessment of young children."
+    "explanation": "A rating scale records how often or how well a behavior occurs along a set of levels. An anecdotal record is a narrative note, and a checklist only marks whether a behavior is present."
   },
   {
     "type": "PRAXISPLT",
@@ -1936,14 +1936,14 @@
     "state": "ALL",
     "questionId": "PLT-ASM-019",
     "category": "pltAssessStrategies",
-    "question": "A teacher plans a test with questions matched to each objective of the unit and its importance. This planning tool is a:",
-    "optionA": "Anecdotal record",
-    "optionB": "Grade book",
-    "optionC": "Test blueprint",
-    "optionD": "Behavior log",
+    "question": "At the end of each science lesson, students write in a learning log what they understood and what still confuses them. This mainly builds:",
+    "optionA": "Norm-referenced scoring",
+    "optionB": "Inter-rater reliability",
+    "optionC": "Self-assessment",
+    "optionD": "Content validity",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "A test blueprint (table of specifications) matches items to objectives and their weight, which supports content validity."
+    "explanation": "Learning logs ask students to judge their own understanding, a form of self-assessment that also shows the teacher what to reteach."
   },
   {
     "type": "PRAXISPLT",
@@ -1964,14 +1964,14 @@
     "state": "ALL",
     "questionId": "PLT-TST-001",
     "category": "pltTesting",
-    "question": "A fourth grader's score report shows a percentile rank of 62 in reading. The best explanation for a parent is:",
-    "optionA": "She outscored about 62% of peers",
-    "optionB": "She answered 62% of items correctly",
-    "optionC": "She reads at a level of 6.2",
-    "optionD": "She is in the bottom 38% of her class",
+    "question": "A student's score report shows a stanine of 8 in math. The best description of this score is:",
+    "optionA": "Well above average",
+    "optionB": "Exactly average",
+    "optionC": "Below average",
+    "optionD": "Eight items correct",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "A percentile rank compares the student with the norm group. It is not the percentage of items answered correctly."
+    "explanation": "Stanines divide normal-curve scores into nine bands with a mean of 5: 1 to 3 are below average, 4 to 6 average and 7 to 9 above average, so 8 is well above average."
   },
   {
     "type": "PRAXISPLT",
@@ -2146,14 +2146,14 @@
     "state": "ALL",
     "questionId": "PLT-TST-014",
     "category": "pltTesting",
-    "question": "A district wants to compare its students with a national sample of students in the same grade. It should use a:",
-    "optionA": "Criterion-referenced quiz",
-    "optionB": "Norm-referenced test",
-    "optionC": "Teacher-made checklist",
-    "optionD": "Student self-assessment",
+    "question": "A student scores 158 on a test whose standard error of measurement is 4. Which statement is most accurate?",
+    "optionA": "Her true score is exactly 158",
+    "optionB": "Her true score is likely 154 to 162",
+    "optionC": "She missed 4 questions on it",
+    "optionD": "Her true score is surely above 160",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Norm-referenced tests compare each student with a representative norm group, such as a national sample."
+    "explanation": "The standard error of measurement estimates how far an observed score may be from the true score. About 68% of the time the true score lies within one SEM, here 154 to 162, so no single score is exact."
   },
   {
     "type": "PRAXISPLT",
@@ -2559,21 +2559,21 @@
     "optionD": "Grade-level team",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "IDEA requires an IEP team that includes the parents, a general education teacher, a special education teacher and someone who can interpret evaluation results."
+    "explanation": "IDEA requires an IEP team that includes the parents, at least one general education teacher if the child is or may be in general education, at least one special education teacher, a district representative and someone who can interpret evaluation results."
   },
   {
     "type": "PRAXISPLT",
     "state": "ALL",
     "questionId": "PLT-PRO-024",
     "category": "pltProfessional",
-    "question": "A teacher's portfolio of lesson plans, student work samples and reflections is mainly used to:",
-    "optionA": "Rank her students' abilities",
-    "optionB": "Replace classroom observation",
-    "optionC": "Show students' test scores only",
-    "optionD": "Document and reflect on growth",
+    "question": "An experienced teacher seeks a voluntary advanced credential earned by submitting portfolio entries on her teaching and passing a content assessment. This credential is:",
+    "optionA": "An initial state license",
+    "optionB": "Tenure at her school",
+    "optionC": "A substitute permit",
+    "optionD": "National Board Certification",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "A teaching portfolio gathers evidence of practice and reflection, supporting both self-assessment and professional growth."
+    "explanation": "National Board Certification, from the National Board for Professional Teaching Standards, is a voluntary advanced credential based on portfolio components and a content knowledge assessment. A state license is the required credential to teach."
   },
   {
     "type": "PRAXISPLT",
@@ -2790,13 +2790,13 @@
     "state": "ALL",
     "questionId": "PLT-LAW-016",
     "category": "pltLaw",
-    "question": "A teacher wants to discuss a student's learning disability with another teacher who has no role in the student's education. Under FERPA and good practice, she should:",
-    "optionA": "Share it freely with all staff",
-    "optionB": "Share it with the class to help",
-    "optionC": "Post it in the staff room",
-    "optionD": "Share it only with those who need to know",
+    "question": "A school wants to print students' names and grade levels in the yearbook without asking each family. Under FERPA it may release this directory information if it has:",
+    "optionA": "Removed every student's photo first",
+    "optionB": "Asked the state for approval",
+    "optionC": "Waited until students turn 18",
+    "optionD": "Given notice and a chance to opt out",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Confidential information is shared only with school officials with a legitimate educational interest in the student."
+    "explanation": "FERPA lets schools disclose directory information, such as name and grade level, without consent if they have told parents what counts as directory information and given them a reasonable time to opt out."
   }
 ]

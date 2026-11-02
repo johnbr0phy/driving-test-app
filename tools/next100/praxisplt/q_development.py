@@ -34,7 +34,7 @@ Q = [
  "Initiative versus guilt", ["Trust versus mistrust", "Identity versus role confusion", "Intimacy versus isolation"],
  "Initiative versus guilt covers roughly ages 3 to 6. Children who may plan and start activities develop a sense of purpose; heavy criticism produces guilt."),
 ("A sixth grader says rules should be followed \"because that is what good kids do and it makes people like you.\" Which Kohlberg stage is this?",
- "Good boy-good girl", ["Punishment and obedience", "Social contract orientation", "Universal ethical principles"],
+ "Good boy-nice girl", ["Punishment and obedience", "Social contract orientation", "Universal ethical principles"],
  "Seeking approval by being seen as good is stage 3, the first stage of the conventional level. Avoiding punishment is stage 1, preconventional."),
 ("Which statement about typical development in grades K-6 is most accurate?",
  "Milestones come at different ages", ["All children walk and talk at the same age", "Physical growth stops at about age 8", "Moral reasoning is fixed by kindergarten"],

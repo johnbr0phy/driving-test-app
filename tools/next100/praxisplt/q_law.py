@@ -45,7 +45,7 @@ Q = [
 ("Tenure for a public school teacher generally means that the teacher:",
  "Can be dismissed only with due process", ["Can never be dismissed for any reason", "Earns a higher fixed salary", "Need not renew her license"],
  "Tenure gives procedural protection: dismissal requires cause and due process. The rules and timelines vary by state."),
-("A teacher wants to discuss a student's learning disability with another teacher who has no role in the student's education. Under FERPA and good practice, she should:",
- "Share it only with those who need to know", ["Share it freely with all staff", "Share it with the class to help", "Post it in the staff room"],
- "Confidential information is shared only with school officials with a legitimate educational interest in the student."),
+("A school wants to print students' names and grade levels in the yearbook without asking each family. Under FERPA it may release this directory information if it has:",
+ "Given notice and a chance to opt out", ["Removed every student's photo first", "Asked the state for approval", "Waited until students turn 18"],
+ "FERPA lets schools disclose directory information, such as name and grade level, without consent if they have told parents what counts as directory information and given them a reasonable time to opt out."),
 ]

@@ -98,7 +98,11 @@ function testHit(test: TestCatalogEntry): SearchHit {
 }
 
 /** DMV states named in the query, e.g. "texas permit test" or "ny dmv". */
-const DRIVING = /^(dmv|dps|mvd|bmv|rmv|permit|driving|driver|drivers|license|licence|learners?|written|knowledge|test|practice|exam|free|online|car|road|signs?|state)$/;
+const DRIVING = /^(dmv|dps|mvd|bmv|rmv|permit|driving|driver|drivers|license|licence|learners?|written|knowledge|test|practice|exam|free|online|car|road|signs?|state|city)$/;
+const DRIVING_WORD = /^(dmv|dps|mvd|bmv|rmv|permit|driving|driver|drivers|license|licence|learners?)$/;
+
+/** Short names people type for a state, beyond its two-letter code. */
+const STATE_ALIASES: Record<string, string> = { nyc: "ny", nys: "ny", socal: "ca", norcal: "ca" };
 
 /**
  * Where a state's name sits in the query, as [first term, terms used], or null.
@@ -121,24 +125,35 @@ function nameRun(terms: string[], nameWords: string[]): [number, number] | null 
   return null;
 }
 
-function stateHits(terms: string[]): SearchHit[] {
-  const hits: SearchHit[] = [];
+interface StateHit {
+  hit: SearchHit;
+  /** Found only by a bare code ("ny", "az") with no driving word, so a test literally named that ranks first. */
+  bareCode: boolean;
+}
+
+function stateHits(rawTerms: string[]): StateHit[] {
+  const terms = rawTerms.map((t) => STATE_ALIASES[t] ?? t);
+  const drivingWord = terms.some((t) => DRIVING_WORD.test(t));
+  const hits: StateHit[] = [];
   for (const s of states) {
     const run = nameRun(terms, s.name.toLowerCase().split(" "));
-    // Two-letter codes only count next to a driving word, so "ca" alone or "ma" in a word never fires.
+    // A code ("ny", "nyc", "ca") counts as a whole word on its own or with driving words.
     const code = s.code.toLowerCase();
-    const byCode = terms.includes(code) && terms.some((t) => /^(dmv|permit|driving|driver|drivers|license|licence|learners?)$/.test(t));
+    const byCode = terms.includes(code);
     if (!run && !byCode) continue;
-    // Only a driving search: "texas real estate" is not the Texas permit test.
+    // Only a driving search: "texas real estate" or "ny real estate" is not the permit test.
     const rest = terms.filter((t, i) => !(run && i >= run[0] && i < run[0] + run[1]) && t !== code);
     if (rest.every((t) => DRIVING.test(t))) {
       hits.push({
-        key: `dmv:${s.code}`,
-        test: dmv(),
-        title: `${s.name} ${s.dmvName === "DMV" ? "DMV" : `${s.dmvName}`} Permit Test`,
-        subtitle: `${s.writtenTestQuestions} questions, ${s.passingScore}% to pass`,
-        href: `/dmv/dashboard?state=${s.code}`,
-        region: "US",
+        hit: {
+          key: `dmv:${s.code}`,
+          test: dmv(),
+          title: `${s.name} ${s.dmvName === "DMV" ? "DMV" : `${s.dmvName}`} Permit Test`,
+          subtitle: `${s.writtenTestQuestions} questions, ${s.passingScore}% to pass`,
+          href: `/dmv/dashboard?state=${s.code}`,
+          region: "US",
+        },
+        bareCode: !run && !drivingWord,
       });
     }
   }
@@ -181,8 +196,13 @@ export function searchAllTests(query: string, region: Region, popularity: Record
 
   const stateMatches = stateHits(allTerms);
   if (exact.length > 0 || stateMatches.length > 0) {
-    const tests = rank(exact).filter((h) => !(stateMatches.length && h.key === "dmv"));
-    return { hits: [...stateMatches, ...tests].slice(0, MAX_HITS), fuzzy: false };
+    const drop = (h: SearchHit) => !(stateMatches.length && h.key === "dmv");
+    // A bare code goes first unless a test is literally named it ("az" is also AZ-900).
+    const named = exact.filter((x) => x.score >= 3 * terms.length);
+    const lead = stateMatches.some((m) => m.bareCode) ? rank(named).filter(drop) : [];
+    const leadKeys = new Set(lead.map((h) => h.key));
+    const tests = rank(exact).filter((h) => drop(h) && !leadKeys.has(h.key));
+    return { hits: [...lead, ...stateMatches.map((m) => m.hit), ...tests].slice(0, MAX_HITS), fuzzy: false };
   }
 
   // Nothing exact: allow a typo or two per word ("cdl permitt", "nclx").

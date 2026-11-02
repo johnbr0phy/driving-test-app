@@ -3340,7 +3340,7 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
       { label: "Domains", value: "I 34%, II 13%, III 33%, IV 20% (13 competencies)" },
       { label: "Grades covered", value: "Early childhood to grade 12" },
       { label: "Alternative", value: "edTPA is accepted alongside the PPR; T-TEP planned, pending SBEC" },
-      { label: "Not modelled here", value: "Decision sets are written as single scenario questions" },
+      { label: "Not modelled here", value: "Decision sets (as prep guides describe them) are written as single scenario questions" },
     ],
     basedOn: "Texas Educator Certification Examination Program test page and exam framework for 160 PPR EC-12, TEA's Chapter 235 pedagogy standards FAQ (May 2025) and TEA educator preparation newsletters (April and July 2026), checked November 2026",
     source: { name: "Texas Educator Certification Examination Program", url: "https://www.tx.nesinc.com/" },

@@ -66,6 +66,7 @@ const TEACHES: Record<string, string> = {
   aucit: "citizenship or English classes for new migrants",
   rbt: "the 40-hour RBT training or supervise RBT candidates",
   cpc: "a medical coding program",
+  cca: "a medical coding or HIM program",
   jelec: "an electrical apprenticeship or NEC code class",
   barber: "at a barber school",
   ffi: "a fire academy",

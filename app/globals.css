@@ -2987,6 +2987,20 @@
     --brand-gradient-to: 195 30% 95%;
   }
 
+  /* CCA (AHIMA Certified Coding Associate) theme: clinical teal */
+  [data-theme="cca"] {
+    --brand: 188 62% 40%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 188 62% 96%;
+    --brand-hover: 188 62% 35%;
+    --brand-dark: 188 62% 31%;
+    --brand-darker: 188 52% 22%;
+    --brand-muted: 188 35% 72%;
+    --brand-border: 188 38% 80%;
+    --brand-border-light: 188 34% 89%;
+    --brand-gradient-to: 160 50% 96%;
+  }
+
   /* Dark mode. Tokens follow Tailwind's gray scale so the dark: variants
      written in components (gray-950 page, gray-900 card, gray-800 border)
      and the shadcn primitives read as one surface system. */
@@ -5532,6 +5546,16 @@
     --brand-muted: 170 15% 45%;
     --brand-dark: 170 20% 65%;
     --brand-darker: 170 20% 78%;
+  }
+
+  .dark [data-theme="cca"] {
+    --brand-light: 188 45% 13%;
+    --brand-gradient-to: 160 40% 11%;
+    --brand-border-light: 188 34% 24%;
+    --brand-border: 188 38% 34%;
+    --brand-muted: 188 35% 45%;
+    --brand-dark: 188 62% 65%;
+    --brand-darker: 188 52% 78%;
   }
 
 }

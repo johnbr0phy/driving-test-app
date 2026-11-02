@@ -857,6 +857,17 @@ export const en = {
     rbtReduce: "Behavior Reduction",
     rbtDoc: "Documentation & Reporting",
     rbtEthics: "Ethics",
+    // cca
+    ccaIcdcm: "ICD-10-CM Coding",
+    ccaPcs: "ICD-10-PCS Coding",
+    ccaCpt: "CPT, HCPCS & Modifiers",
+    ccaEm: "Evaluation & Management",
+    ccaPayment: "DRGs, APCs & Risk Adjustment",
+    ccaClaims: "NCCI, Medical Necessity & Claims",
+    ccaRecords: "Health Records & Data Content",
+    ccaCompliance: "Compliance & Ethical Coding",
+    ccaIt: "Information Technologies",
+    ccaPrivacy: "Confidentiality & Privacy",
     // cpc
     cpcTerm: "Medical Terminology",
     cpcAnat: "Anatomy",

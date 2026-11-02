@@ -74,6 +74,8 @@ const BORROWED_SETS: Record<string, string> = {
   // recruitment tests the police, firefighter, military-entrance and security-guard tigers; the TRCN PQE the Praxis tiger.
   jambeng: "sat", jambmath: "sat", jambbio: "sat", jambchem: "sat", jambphys: "sat",
   ngpolice: "police", cdcfib: "ffi", ngarmy: "asvab", ngcustoms: "security", trcnpqe: "praxis",
+  // AHIMA CCA shares the CPC medical coding tiger.
+  cca: "cpc",
 };
 
 export function hasTigerSet(examId: string): boolean {

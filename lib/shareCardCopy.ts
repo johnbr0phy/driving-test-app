@@ -174,6 +174,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   nasm: { title: "NASM CPT Exam", description: "Review the OPT model, assessments, program design, exercise technique and client coaching." },
   rbt: { title: "RBT Exam", description: "Study measurement, assessment, skill acquisition, behavior reduction, documentation and ethics." },
   cpc: { title: "CPC Exam", description: "Review coding guidelines, modifiers, ICD-10-CM, E/M and every CPT section with case questions." },
+  cca: { title: "CCA Exam", description: "Review ICD-10-CM, ICD-10-PCS, CPT, DRGs, claims, compliance and HIPAA for AHIMA's coding exam." },
   iedtt: { title: "Ireland Driver Theory Test", description: "Study signs, junctions, speed, motorways and vulnerable road users from the Rules of the Road." },
   cask: { title: "Saskatchewan Learner's Test", description: "Review SGI signs, right-of-way, graduated licensing and winter driving for your Class 7 test." },
   cans: { title: "Nova Scotia Learner's Test", description: "Review signs, right-of-way, speed and graduated licensing for your Class 7 knowledge test." },

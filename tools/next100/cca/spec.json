@@ -1,0 +1,18 @@
+{
+  "id": "cca", "stateCode": "CCA", "idBase": 14800, "slug": "/cca", "landingPath": "/cca-practice-test",
+  "questionIdPrefix": "CCA-", "passPct": 70,
+  "outline": "AHIMA CCA Exam Content Outline, effective 05/01/2022 (2024 rev): D1 Clinical Classification Systems 30-34%, D2 Reimbursement Methodologies 21-25%, D3 Health Records and Data Content 13-17%, D4 Compliance 12-16%, D5 Information Technologies 6-10%, D6 Confidentiality & Privacy 6-10%",
+  "categories": [
+    {"key": "ccaIcdcm", "seg": "ICM", "label": "ICD-10-CM Coding", "perTest": 6, "pool": 24, "file": "icd", "domain": 1},
+    {"key": "ccaPcs", "seg": "PCS", "label": "ICD-10-PCS Coding", "perTest": 4, "pool": 16, "file": "icd", "domain": 1},
+    {"key": "ccaCpt", "seg": "CPT", "label": "CPT, HCPCS & Modifiers", "perTest": 4, "pool": 16, "file": "icd", "domain": 1},
+    {"key": "ccaEm", "seg": "EM", "label": "Evaluation & Management", "perTest": 2, "pool": 8, "file": "icd", "domain": 1},
+    {"key": "ccaPayment", "seg": "PAY", "label": "DRGs, APCs & Risk Adjustment", "perTest": 6, "pool": 24, "file": "reimb", "domain": 2},
+    {"key": "ccaClaims", "seg": "CLM", "label": "NCCI, Medical Necessity & Claims", "perTest": 6, "pool": 24, "file": "reimb", "domain": 2},
+    {"key": "ccaRecords", "seg": "REC", "label": "Health Records & Data Content", "perTest": 7, "pool": 28, "file": "records", "domain": 3},
+    {"key": "ccaCompliance", "seg": "CMP", "label": "Compliance & Ethical Coding", "perTest": 7, "pool": 28, "file": "reimb", "domain": 4},
+    {"key": "ccaIt", "seg": "IT", "label": "Information Technologies", "perTest": 4, "pool": 16, "file": "records", "domain": 5},
+    {"key": "ccaPrivacy", "seg": "PRV", "label": "Confidentiality & Privacy", "perTest": 4, "pool": 16, "file": "records", "domain": 6}
+  ],
+  "trainingSets": "testSets(14800, 4): Training Set N = Practice Test N, DMV-style"
+}

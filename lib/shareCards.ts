@@ -576,6 +576,10 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
     "color": "hsl(280, 40%, 43%)",
     "tint": "hsl(280, 40%, 96%)"
   },
+  "cca": {
+    "color": "hsl(188, 62%, 40%)",
+    "tint": "hsl(188, 62%, 96%)"
+  },
   "jelec": {
     "color": "hsl(36, 90%, 28%)",
     "tint": "hsl(36, 80%, 96%)"

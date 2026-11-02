@@ -39,7 +39,7 @@ const TEACHER_LED = new Set([
   "aursa", "aurcg", "aufss", "auforklift", "auwah",
   "uklitu", "cacit", "aucit",
   // Next 30 batch (October 2026)
-  "rbt", "cpc", "jelec", "barber", "ffi", "police", "faapvt",
+  "rbt", "cpc", "cca", "jelec", "barber", "ffi", "police", "faapvt",
   "psat", "praxis", "gre", "gmat", "netplus", "cissp", "gcdl", "itil", "psm", "capm",
   "ssccgl", "rrbntpc", "ctet", "ibpspo",
   "rrbgroupd", "sscgd", "sscchsl", "sscmts", "uppolice", "ibpsclerk", "jnvst", "jambeng", "appsych",

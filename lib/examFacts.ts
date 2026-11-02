@@ -1675,6 +1675,22 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "AAPC's Taking the CPC Exam page, checked October 2026",
     source: { name: "AAPC: Taking the CPC Exam", url: "https://www.aapc.com/certifications/cpc/taking-the-cpc-exam" },
   },
+  cca: {
+    answer:
+      "The CCA is AHIMA's Certified Coding Associate exam, the entry-level credential for medical coders in hospitals and physician practices. It has 105 multiple-choice questions, 90 scored and 15 unscored pretest items, in 2 hours at a Pearson VUE test center, and you cannot go back to an earlier question. The passing score is a scaled 300. It covers six domains: clinical classification systems (30 to 34 percent), reimbursement methodologies, health records and data content, compliance, information technologies, and confidentiality and privacy. You must bring the current ICD-10-CM, ICD-10-PCS and AMA CPT Professional code books.",
+    rows: [
+      { label: "Questions", value: "105 multiple choice (90 scored, 15 pretest)" },
+      { label: "Time", value: "2 hours, no going back" },
+      { label: "Pass mark", value: "Scaled score of 300" },
+      { label: "Code books", value: "ICD-10-CM, ICD-10-PCS and CPT Professional (2026, required)" },
+      { label: "Biggest domain", value: "Clinical Classification Systems, 30-34%" },
+      { label: "Eligibility", value: "High school diploma; coding training recommended" },
+      { label: "Where", value: "Pearson VUE test centers" },
+      { label: "Run by", value: "AHIMA" },
+    ],
+    basedOn: "AHIMA's CCA certification page, the CCA Exam Content Outline (2024 rev) and the 2026 required code book list, checked November 2026",
+    source: { name: "AHIMA: Certified Coding Associate (CCA)", url: "https://ahima.org/certification/cca/" },
+  },
   jelec: {
     answer:
       "The journeyman electrician exam is a state or city licensing exam on the National Electrical Code, electrical theory and calculations, taken after a set amount of supervised work, often about 8,000 hours or a completed apprenticeship. There is no single national version: many places use the ICC national journeyman exam of about 80 multiple-choice questions in 4 hours, open book with the NEC, and 70 percent is the most common passing score. Most exams now test the 2023 NEC, but each state sets its own edition, eligibility and pass mark.",

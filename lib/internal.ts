@@ -1,4 +1,5 @@
 import { ADMIN_EMAILS } from "./admin";
+import { analyticsDeclined } from "@/lib/privacyRegion";
 
 /**
  * Internal accounts: John's own logins, used to test the product. Their
@@ -38,6 +39,9 @@ export function isTestBrowser(): boolean {
   if (typeof window === "undefined") return false;
   if (!PRODUCTION_HOSTS.includes(window.location.hostname)) return true;
   if (/\bClaude\//.test(navigator.userAgent)) return true;
+  // Not a test browser, but one whose person declined analytics on the cookie
+  // banner or /privacy: the anonymous counters gated here skip it too.
+  if (analyticsDeclined()) return true;
   return navigator.webdriver === true;
 }
 

@@ -120,7 +120,7 @@ export default function JoinClassPage() {
               {info.name}: {info.examName} practice
             </p>
             <label htmlFor="student-name" className="block text-sm text-gray-700 dark:text-gray-200 mb-1.5">
-              Your name, as your instructor knows it
+              Your first name (and last initial), as your instructor knows it
             </label>
             <Input
               id="student-name"
@@ -131,7 +131,7 @@ export default function JoinClassPage() {
               }}
               placeholder="Barney B."
               maxLength={40}
-              autoComplete="name"
+              autoComplete="off"
               autoFocus={!joined}
               aria-invalid={error ? true : undefined}
               aria-describedby={error ? "student-name-error" : undefined}
@@ -156,7 +156,8 @@ export default function JoinClassPage() {
               </button>
             )}
             <p className="text-xs text-gray-500 dark:text-gray-400 mt-3">
-              {info.teacherName} will see your practice scores on this exam: questions answered, accuracy and test scores. Free, no account needed.
+              {info.teacherName} will see your practice scores on this exam: questions answered, accuracy and test scores. Free, no account needed.{" "}
+              <Link href="/privacy" className="underline">Privacy</Link>
             </p>
           </form>
         )}

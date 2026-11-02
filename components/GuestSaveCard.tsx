@@ -11,6 +11,7 @@ import { useIsNativeApp } from "@/hooks/useIsNativeApp";
 import { trackFunnelStep } from "@/lib/funnel";
 import { trackGuestPrompt } from "@/lib/analytics";
 import { getExamByStateCode, isExamQuestionId } from "@/lib/exams";
+import { defaultEmailConsent } from "@/lib/privacyRegion";
 import { useStore } from "@/store/useStore";
 import type { TestSession } from "@/types";
 import type { DrillState, TestResultV2 } from "@/lib/v2/types";
@@ -84,7 +85,7 @@ export function GuestSaveCard({ signupHref, answered = 0, tests = 0, score, data
     // between first answer and account created.
     trackFunnelStep("signup_view");
     // Same default as the signup page's Google button.
-    setEmailConsent(true);
+    setEmailConsent(defaultEmailConsent());
     try {
       await loginWithGoogle();
     } catch (err: unknown) {

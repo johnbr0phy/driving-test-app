@@ -30,6 +30,7 @@ import { TestIcon } from "@/components/TestIcon";
 import { hasTigerSet } from "@/lib/tigerAssets";
 import { ThemeSegmentedControl } from "@/components/ThemeToggle";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import { DeleteAccountSection } from "@/components/DeleteAccountSection";
 
 export default function SettingsPage() {
   const router = useRouter();
@@ -298,6 +299,7 @@ export default function SettingsPage() {
                   {t("settings.resetAllData")}
                 </Button>
               </div>
+              <DeleteAccountSection />
             </div>
           </CardContent>
         </Card>

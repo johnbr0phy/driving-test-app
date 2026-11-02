@@ -1,3 +1,4 @@
+import { postalFooterLine } from "@/lib/emailPostal";
 /**
  * The SAT/ACT launch email as a four-way split test (v1, v3, v4, v5; a
  * parent-angle v2 was cut because few parents sign up).
@@ -94,7 +95,7 @@ function shell(v: { subject: string; preheader: string }, heroHtml: string, head
               <p style="margin: 0; color: #999999; font-size: 12px; line-height: 1.6; text-align: center;">
                 <a href="${SITE}/unsubscribe?token={{unsubscribeToken}}" style="color: #FF6B35; text-decoration: none;">Unsubscribe</a>
                 &nbsp;&bull;&nbsp;
-                <a href="${SITE}/privacy" style="color: #FF6B35; text-decoration: none;">Privacy Policy</a>
+                <a href="${SITE}/privacy" style="color: #FF6B35; text-decoration: none;">Privacy Policy</a>${postalFooterLine()}
               </p>
             </td>
           </tr>

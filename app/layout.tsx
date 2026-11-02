@@ -12,6 +12,8 @@ import { THEME_INIT_SCRIPT } from "@/contexts/ThemeContext";
 import { SITE_JSON_LD } from "@/lib/siteSchema";
 import { SITE_URL } from "@/lib/siteUrl";
 import { URL_LANG_INIT_SCRIPT } from "@/lib/urlLanguage";
+import { ANALYTICS_INIT_SCRIPT, GA_ID } from "@/lib/privacyRegion";
+import { AnalyticsConsent } from "@/components/AnalyticsConsent";
 
 // viewport-fit=cover (page extends behind the notch/home indicator) is
 // only wanted inside the native app shell, where env(safe-area-inset-*)
@@ -103,6 +105,10 @@ export default function RootLayout({
         {/* Sets <html lang> for pages written in another language before
             first paint (lib/urlLanguage.ts). */}
         <script dangerouslySetInnerHTML={{ __html: URL_LANG_INIT_SCRIPT }} />
+        {/* Google Analytics stays off until it is allowed here: consent in
+            the EEA/UK/CH, never on children's tests or for class members
+            (lib/privacyRegion.ts). Must run before the gtag script below. */}
+        <script dangerouslySetInnerHTML={{ __html: ANALYTICS_INIT_SCRIPT }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SITE_JSON_LD) }} />
       </head>
       {/* min-h-screen (100vh) rather than min-h-dvh: dvh resizes as the iOS
@@ -117,9 +123,10 @@ export default function RootLayout({
           <SiteHeader />
           <main id="main-content" tabIndex={-1} className="flex-1 flex flex-col">{children}</main>
           <Footer />
+          <AnalyticsConsent />
         </Providers>
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-28J0RC9MJ5"
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
           strategy="afterInteractive"
         />
         <Script id="google-analytics" strategy="afterInteractive">
@@ -127,7 +134,7 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-28J0RC9MJ5');
+            gtag('config', '${GA_ID}');
           `}
         </Script>
       </body>

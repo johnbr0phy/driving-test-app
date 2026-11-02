@@ -26,9 +26,25 @@ export function markInternalBrowser() {
   }
 }
 
-/** True on a browser an internal account has signed into, or while one is signed in. */
+const PRODUCTION_HOSTS = ["tigertest.io", "www.tigertest.io"];
+
+/**
+ * A browser that is testing the site, not using it: any copy of the site that
+ * is not tigertest.io (localhost and preview deployments write to the live
+ * Firestore too), Claude's own browser (its user agent carries "Claude/"), and
+ * automated browsers (Playwright, the screenshot scripts).
+ */
+export function isTestBrowser(): boolean {
+  if (typeof window === "undefined") return false;
+  if (!PRODUCTION_HOSTS.includes(window.location.hostname)) return true;
+  if (/\bClaude\//.test(navigator.userAgent)) return true;
+  return navigator.webdriver === true;
+}
+
+/** True on a test browser, on a browser an internal account has signed into, or while one is signed in. */
 export function isInternalBrowser(currentEmail?: string | null): boolean {
   if (isInternalEmail(currentEmail)) return true;
+  if (isTestBrowser()) return true;
   try {
     return typeof window !== "undefined" && localStorage.getItem(FLAG) === "1";
   } catch {

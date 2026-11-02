@@ -1,3 +1,4 @@
+import { ClassMembershipSync } from "@/components/ClassMembershipSync";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
@@ -111,6 +112,7 @@ export default function RootLayout({
         <NativeAppShell />
         <Providers>
           <SuperAmazingFireworks />
+          <ClassMembershipSync />
           <a href="#main-content" className="skip-link">Skip to main content</a>
           <SiteHeader />
           <main id="main-content" tabIndex={-1} className="flex-1 flex flex-col">{children}</main>

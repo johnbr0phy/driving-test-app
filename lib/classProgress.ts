@@ -1,10 +1,12 @@
 import type { Question } from "@/types";
 import type { ClassAnswerEvent, ClassHistoryAnswer, ClassPublicInfo, ClassTestEvent } from "@/lib/classes";
+import { MEMBERSHIPS_CHANGED, changeAccountMemberships } from "@/lib/classMembershipSync";
 
-// The student side of instructor classes (lib/classes.ts). The classes this
-// browser joined live in localStorage; practice on a class's exam is queued
-// and sent to /api/classes/[code]/progress every few seconds and when the
-// page is hidden. No account needed: the browser's memberId is the student.
+// The student side of instructor classes (lib/classes.ts). The classes joined
+// live in localStorage, copied from the account while signed in
+// (lib/classMembershipSync.ts); practice on a class's exam is queued and sent
+// to /api/classes/[code]/progress every few seconds and when the page is
+// hidden. No account needed: the memberId is the student.
 
 export interface ClassMembership {
   code: string;
@@ -35,6 +37,12 @@ function saveMemberships(list: ClassMembership[]) {
   } catch {
     // Storage blocked: the student stays joined for this page only.
   }
+  window.dispatchEvent(new Event(MEMBERSHIPS_CHANGED));
+}
+
+/** Replace this browser's copy (the account's list on sign-in, nothing on sign-out). */
+export function replaceMemberships(list: ClassMembership[]) {
+  saveMemberships(list);
 }
 
 export function getMembership(code: string): ClassMembership | undefined {
@@ -44,6 +52,7 @@ export function getMembership(code: string): ClassMembership | undefined {
 /** Add or replace one membership (a class's or a quiz's). */
 export function saveMembership(membership: ClassMembership) {
   saveMemberships([...getMemberships().filter((m) => m.code !== membership.code), membership]);
+  changeAccountMemberships({ add: membership });
 }
 
 /** This browser's class memberships as "CODE:memberId,..." for CLASS_PROOF_HEADER, so a class-only quiz opens for its students. */
@@ -126,6 +135,7 @@ export function classMembership(code: string): ClassMembership | undefined {
 
 export function leaveClass(code: string) {
   saveMemberships(getMemberships().filter((m) => m.code !== code));
+  changeAccountMemberships({ remove: code });
 }
 
 // ─── Reporting ──────────────────────────────────────────────────────────────

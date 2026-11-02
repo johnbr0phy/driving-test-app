@@ -76,7 +76,7 @@ interface Metrics {
   testRequests?: {
     total: number;
     byPick: { id: string; label: string; clicks: number; withDetails: number }[];
-    details: { pick: string; details: string; examId: string | null; source: string; at: string }[];
+    details: { pick: string; details: string; examId: string | null; source: string; email?: string | null; at: string }[];
   };
   questionsByExamBackfillPending?: boolean;
   // Optional on purpose: a response predating this field (a stale cached
@@ -707,7 +707,7 @@ function TestRequests({ data }: { data: NonNullable<Metrics["testRequests"]> }) 
         <p className="text-xs text-gray-500 dark:text-gray-400">{fmtInt(data.total)} answers</p>
       </div>
       {data.total === 0 ? (
-        <p className="text-sm text-gray-500 dark:text-gray-400">No answers yet. They arrive from the new-tests email and the unsubscribe page.</p>
+        <p className="text-sm text-gray-500 dark:text-gray-400">No answers yet. They arrive from the new-tests email, the unsubscribe page and searches that find nothing.</p>
       ) : (
         <div className="grid gap-6 lg:grid-cols-2">
           <table className="w-full text-sm self-start">
@@ -750,6 +750,7 @@ function TestRequests({ data }: { data: NonNullable<Metrics["testRequests"]> }) 
                       {pickLabel(d.pick)}
                       {d.examId ? ` · was studying ${d.examId}` : ""}
                       {` · via ${d.source}`}
+                      {d.email ? ` · tell ${d.email} when it ships` : ""}
                       {d.at ? ` · ${d.at.slice(0, 10)}` : ""}
                     </p>
                   </li>

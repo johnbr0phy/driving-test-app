@@ -13,6 +13,7 @@ import { trackSearch } from "@/lib/searchTracking";
 import { Region, TestRegion, regionInfo, regionOfTest } from "@/lib/region";
 import { normalizeQuery, searchAllTests, SearchHit, SearchResult } from "@/lib/testSearch";
 import { TEST_CATALOG } from "@/lib/testCatalog";
+import { asNotifyEmail } from "@/lib/test-requests";
 
 const flagOf = (r: TestRegion) => (r === "GLOBAL" ? "🌐" : FLAGS[r]);
 const TRACK_DELAY_MS = 1200;
@@ -261,7 +262,7 @@ export function SearchHome({
           <div className="mt-3 pb-10">
             {result.partial && settled ? (
               <p className="px-4 pb-2 text-sm text-gray-600 dark:text-gray-300">
-                We don&apos;t have &ldquo;{query.trim()}&rdquo; yet, and we&apos;ve noted it. Closest matches:
+                We don&apos;t have &ldquo;{query.trim()}&rdquo; yet. Closest matches:
               </p>
             ) : (
               result.fuzzy && <p className="px-4 pb-2 text-sm text-gray-500 dark:text-gray-400">Closest matches:</p>
@@ -287,23 +288,13 @@ export function SearchHome({
                 </li>
               ))}
             </ul>
+            {result.partial && settled && (
+              <MissingTest query={query.trim()} signedInEmail={user?.email ?? null} />
+            )}
           </div>
         )}
 
-        {miss && (
-          <div className="mt-4 rounded-3xl bg-gray-100 dark:bg-gray-900 p-6 text-center">
-            <p className="font-semibold text-gray-900 dark:text-gray-50">We don&apos;t have &ldquo;{query.trim()}&rdquo; yet.</p>
-            <p className="mt-1 text-sm text-gray-600 dark:text-gray-300">We&apos;ve noted it. The tests people search for most get built next.</p>
-            <div className="mt-4 flex flex-col sm:flex-row gap-2 justify-center">
-              <Link href="/request-test?src=search&pick=other" className="inline-flex items-center justify-center rounded-full bg-black text-white dark:bg-white dark:text-black px-5 py-2.5 text-sm font-semibold">
-                Tell us about this test
-              </Link>
-              <Link href="/create" className="inline-flex items-center justify-center rounded-full border border-gray-300 dark:border-gray-700 px-5 py-2.5 text-sm font-semibold text-gray-900 dark:text-gray-50">
-                Make your own quiz now
-              </Link>
-            </div>
-          </div>
-        )}
+        {miss && <MissingTest query={query.trim()} signedInEmail={user?.email ?? null} />}
       </div>
 
       {!showResults && (
@@ -356,5 +347,93 @@ export function SearchHome({
         </div>
       )}
     </section>
+  );
+}
+
+/**
+ * A search that found nothing (or only near misses): ask for an email so we
+ * can say when the test ships. Posts to the test-request endpoint with the
+ * search as the named test, so it lands on the Growth tab and emails John.
+ */
+function MissingTest({ query, signedInEmail }: { query: string; signedInEmail: string | null }) {
+  const [email, setEmail] = useState(signedInEmail ?? "");
+  const [state, setState] = useState<"idle" | "sending" | "done" | "error">("idle");
+  const [sentFor, setSentFor] = useState("");
+  useEffect(() => {
+    if (signedInEmail) setEmail((e) => e || signedInEmail);
+  }, [signedInEmail]);
+  // A new search gets a fresh form.
+  const done = state === "done" && sentFor === query;
+  const valid = asNotifyEmail(email) !== null;
+
+  async function submit(e: React.FormEvent) {
+    e.preventDefault();
+    if (!valid || state === "sending") return;
+    setState("sending");
+    try {
+      const res = await fetch("/api/feedback/test-request", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ pick: "other", source: "search", details: query, email }),
+      });
+      if (!res.ok) throw new Error(String(res.status));
+      setSentFor(query);
+      setState("done");
+    } catch {
+      setState("error");
+    }
+  }
+
+  return (
+    <div className="mt-4 rounded-3xl bg-gray-100 dark:bg-gray-900 p-6 text-center">
+      {done ? (
+        <>
+          <p className="font-semibold text-gray-900 dark:text-gray-50">Thanks! We&apos;re on it.</p>
+          <p className="mt-1 text-sm text-gray-600 dark:text-gray-300">
+            We&apos;ll email {email.trim()} when &ldquo;{query}&rdquo; ships.
+          </p>
+        </>
+      ) : (
+        <>
+          <p className="font-semibold text-gray-900 dark:text-gray-50">Are we missing your test?</p>
+          <p className="mt-1 text-sm text-gray-600 dark:text-gray-300">
+            Let us know and we&apos;ll build it for you. Add your email address and we&apos;ll let you know when it ships.
+          </p>
+          <form onSubmit={submit} className="mt-4 mx-auto flex max-w-md flex-col sm:flex-row gap-2">
+            <label htmlFor="missing-test-email" className="sr-only">Email address</label>
+            <input
+              id="missing-test-email"
+              type="email"
+              inputMode="email"
+              autoComplete="email"
+              required
+              placeholder="you@example.com"
+              value={email}
+              onChange={(e) => {
+                setEmail(e.target.value);
+                if (state === "error") setState("idle");
+              }}
+              className="min-w-0 flex-1 rounded-full border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-950 px-4 py-2.5 text-sm text-gray-900 dark:text-gray-50 placeholder:text-gray-400"
+            />
+            <button
+              type="submit"
+              disabled={!valid || state === "sending"}
+              className="inline-flex items-center justify-center rounded-full bg-black text-white dark:bg-white dark:text-black px-5 py-2.5 text-sm font-semibold disabled:opacity-50"
+            >
+              {state === "sending" ? "Sending..." : "Let me know"}
+            </button>
+          </form>
+          {state === "error" && (
+            <p className="mt-2 text-sm text-red-600 dark:text-red-400">That didn&apos;t go through. Please try again.</p>
+          )}
+          <p className="mt-4 text-sm text-gray-600 dark:text-gray-300">
+            Can&apos;t wait?{" "}
+            <Link href="/create" className="font-semibold text-gray-900 dark:text-gray-50 underline underline-offset-2">
+              Make your own quiz now
+            </Link>
+          </p>
+        </>
+      )}
+    </div>
   );
 }

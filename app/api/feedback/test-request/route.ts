@@ -7,8 +7,10 @@
  *        redirect happens even if the write fails: the person should never
  *        see an error for clicking a button in an email.
  *
- *   POST {token?, pick, details}
- *        The free-text follow-up from /request-test. Stores the text and
+ *   POST {token?, pick, details, source?, email?}
+ *        The free-text follow-up from /request-test, or a search that found
+ *        nothing on /home-v2 (details = the search, email = who to tell when
+ *        it ships). Stores the text and
  *        emails John, because a named exam is the signal that decides what
  *        gets built next.
  *
@@ -23,6 +25,7 @@ import { resolveUserExamId } from "@/lib/email-voice";
 import { sendEmail } from "@/lib/resend";
 import { CAMPAIGN_REPLY_TO } from "@/lib/cron-email";
 import {
+  asNotifyEmail,
   asTestRequestSource,
   getTestRequestPick,
   TEST_REQUEST_MAX_DETAILS,
@@ -34,9 +37,10 @@ interface RecordArgs {
   pick: string;
   source: TestRequestSource;
   details?: string;
+  email?: string | null;
 }
 
-async function recordRequest({ uid, pick, source, details }: RecordArgs): Promise<void> {
+async function recordRequest({ uid, pick, source, details, email }: RecordArgs): Promise<void> {
   const db = getAdminDb();
   const now = new Date().toISOString();
 
@@ -58,6 +62,7 @@ async function recordRequest({ uid, pick, source, details }: RecordArgs): Promis
       source,
       examId,
       ...(details ? { details } : {}),
+      ...(email ? { email, notifyWhenShipped: true } : {}),
       ...(existing ? {} : { createdAt: now }),
       updatedAt: now,
     },
@@ -102,12 +107,13 @@ export async function POST(request: NextRequest) {
       typeof body?.details === "string"
         ? body.details.trim().slice(0, TEST_REQUEST_MAX_DETAILS)
         : "";
+    const email = asNotifyEmail(body?.email);
 
     if (details.length < 2) {
       return NextResponse.json({ success: false, error: "Tell us which test" }, { status: 400 });
     }
 
-    await recordRequest({ uid, pick: pick.id, source, details });
+    await recordRequest({ uid, pick: pick.id, source, details, email });
 
     // A named exam is worth an immediate heads-up. Transactional budget, so a
     // busy campaign day can never crowd it out.
@@ -116,7 +122,9 @@ export async function POST(request: NextRequest) {
       to: CAMPAIGN_REPLY_TO,
       subject: `Test request: ${details.slice(0, 60)}`,
       html: `<p><strong>${escapeHtml(details)}</strong></p>
-<p>Category: ${pick.label}<br>Source: ${source}<br>User: ${uid ?? "anonymous"}</p>`,
+<p>Category: ${pick.label}<br>Source: ${source}<br>User: ${uid ?? "anonymous"}${
+        email ? `<br>Tell them when it ships: ${escapeHtml(email)}` : ""
+      }</p>`,
     });
     if (!notify.ok) console.error("[test-request] notify failed:", notify.error);
 

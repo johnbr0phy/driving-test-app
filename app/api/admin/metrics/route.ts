@@ -113,7 +113,7 @@ async function buildMetrics() {
   // plus every free-text answer, newest first: the text is what names the
   // exam to build.
   const requestCounts = new Map<string, { clicks: number; withDetails: number }>();
-  const requestDetails: { pick: string; details: string; examId: string | null; source: string; at: string }[] = [];
+  const requestDetails: { pick: string; details: string; examId: string | null; source: string; email: string | null; at: string }[] = [];
   let testRequestsTotal = 0;
   testRequestsSnap.forEach((doc) => {
     const d = doc.data();
@@ -129,6 +129,7 @@ async function buildMetrics() {
         details: d.details.trim(),
         examId: typeof d.examId === 'string' ? d.examId : null,
         source: typeof d.source === 'string' ? d.source : 'page',
+        email: typeof d.email === 'string' ? d.email : null,
         at: typeof d.updatedAt === 'string' ? d.updatedAt : (typeof d.createdAt === 'string' ? d.createdAt : ''),
       });
     }

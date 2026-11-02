@@ -683,7 +683,7 @@
     "optionD": "The debt becomes past due",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Attachment needs value, the debtor's rights in the collateral and an authenticated security agreement (or the creditor's possession). Filing is a way to perfect, not to attach."
+    "explanation": "Attachment needs value, the debtor's rights in the collateral and a signed (authenticated) security agreement (or the creditor's possession). Filing is a way to perfect, not to attach."
   },
   {
     "type": "CPAREG",
@@ -1614,14 +1614,14 @@
     "state": "ALL",
     "questionId": "CPAREG-DED-008",
     "category": "cparegDeductions",
-    "question": "After the $100 floor per event, a personal casualty loss is generally deductible only to the extent the total exceeds what share of AGI?",
+    "question": "A personal casualty loss from a declared disaster is reduced by $100 per event. The total is then deductible only to the extent it exceeds what share of AGI?",
     "optionA": "7.5%",
     "optionB": "2%",
     "optionC": "50%",
     "optionD": "10%",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Personal casualty losses that qualify are reduced by $100 per event and then by 10% of AGI. The 7.5% floor is for medical expenses."
+    "explanation": "Personal casualty losses are deductible only when they come from a declared disaster (other losses offset only personal casualty gains). They are reduced by $100 per event and then by 10% of AGI; special qualified disaster relief can replace these floors. The 7.5% floor is for medical expenses."
   },
   {
     "type": "CPAREG",

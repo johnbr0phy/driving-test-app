@@ -2,7 +2,7 @@ CAT = "cparegCreditors"; SEG = "CRE"
 Q = [
 ("Under UCC Article 9, a security interest attaches when value is given, the debtor has rights in the collateral, and:",
  "There is a security agreement", ["A financing statement is filed", "The debtor is notified in writing", "The debt becomes past due"],
- "Attachment needs value, the debtor's rights in the collateral and an authenticated security agreement (or the creditor's possession). Filing is a way to perfect, not to attach."),
+ "Attachment needs value, the debtor's rights in the collateral and a signed (authenticated) security agreement (or the creditor's possession). Filing is a way to perfect, not to attach."),
 ("A store sells a TV on credit to a consumer for home use and keeps a purchase-money security interest. The interest is perfected:",
  "Automatically on attachment", ["Only on filing", "When the store keeps the TV", "Twenty days after the sale"],
  "A purchase-money security interest in consumer goods is perfected automatically when it attaches, with no filing needed."),

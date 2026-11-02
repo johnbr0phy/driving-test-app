@@ -2,7 +2,8 @@
 
 import { useEffect, useState } from "react";
 import { useAuth } from "@/contexts/AuthContext";
-import { getMemberships, type ClassMembership } from "@/lib/classProgress";
+import type { ClassMembership } from "@/lib/classProgress";
+import { useClassMemberships } from "@/hooks/useClassMemberships";
 import type { ClassSummary } from "@/lib/classes";
 import { teachFetch } from "@/lib/teachClient";
 
@@ -115,12 +116,8 @@ export function useTeacherClasses(enabled: boolean): ClassSummary[] | null {
   return classes;
 }
 
-/** The latest class (not quiz) this browser joined as a student, read after hydration. */
+/** The latest class (not quiz) joined as a student, kept current through sign-in and sign-out. */
 export function useStudentClass(): ClassMembership | null {
-  const [membership, setMembership] = useState<ClassMembership | null>(null);
-  useEffect(() => {
-    const classes = getMemberships().filter((m) => m.kind !== "quiz");
-    setMembership(classes[classes.length - 1] ?? null);
-  }, []);
-  return membership;
+  const classes = useClassMemberships().filter((m) => m.kind !== "quiz");
+  return classes[classes.length - 1] ?? null;
 }

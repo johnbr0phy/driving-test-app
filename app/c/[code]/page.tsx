@@ -11,6 +11,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { DMV_EXAM_ID, classExamHome, normalizeClassCode, type ClassPublicInfo } from "@/lib/classes";
 import { getMembership, joinClass } from "@/lib/classProgress";
+import { MEMBERSHIPS_CHANGED } from "@/lib/classMembershipSync";
 import { trackClassJoinView } from "@/lib/teachTracking";
 import { useAuth } from "@/contexts/AuthContext";
 import { useStore } from "@/store/useStore";
@@ -55,6 +56,20 @@ export default function JoinClassPage() {
       alive = false;
     };
   }, [code]);
+
+  // Signing in brings the account's classes in after this page has loaded.
+  useEffect(() => {
+    if (!info) return;
+    const read = () => {
+      const existing = getMembership(info.code);
+      if (existing) {
+        setName(existing.name);
+        setJoined(true);
+      }
+    };
+    window.addEventListener(MEMBERSHIPS_CHANGED, read);
+    return () => window.removeEventListener(MEMBERSHIPS_CHANGED, read);
+  }, [info]);
 
   // A DMV class is for one state. A student practicing another state chooses:
   // switch (which resets their DMV progress, as Settings warns) or keep theirs.

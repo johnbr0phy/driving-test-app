@@ -1,21 +1,13 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import { Users } from "lucide-react";
-import { leaveClass, membershipsForExam, type ClassMembership } from "@/lib/classProgress";
-import { MEMBERSHIPS_CHANGED } from "@/lib/classMembershipSync";
+import { leaveClass } from "@/lib/classProgress";
+import { useClassMemberships } from "@/hooks/useClassMemberships";
 
 // On an exam dashboard: which instructor class this person practices for,
 // so a student always knows their scores are shared, with a way out.
 export function ClassBanner({ examId, className = "" }: { examId: string; className?: string }) {
-  const [classes, setClasses] = useState<ClassMembership[]>([]);
-  useEffect(() => {
-    const read = () => setClasses(membershipsForExam(examId));
-    read();
-    // The account's classes arrive after sign-in, and sign-out clears them.
-    window.addEventListener(MEMBERSHIPS_CHANGED, read);
-    return () => window.removeEventListener(MEMBERSHIPS_CHANGED, read);
-  }, [examId]);
+  const classes = useClassMemberships().filter((m) => m.examId === examId);
   if (!classes.length) return null;
 
   return (
@@ -36,7 +28,6 @@ export function ClassBanner({ examId, className = "" }: { examId: string; classN
             onClick={() => {
               if (!window.confirm(`Leave ${m.className}? ${m.teacherName} will stop seeing your new practice.`)) return;
               leaveClass(m.code);
-              setClasses(membershipsForExam(examId));
             }}
           >
             Leave

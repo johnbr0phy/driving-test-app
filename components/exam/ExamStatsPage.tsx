@@ -18,7 +18,7 @@ import { useAuth } from "@/contexts/AuthContext";
 import { auth } from "@/lib/firebase";
 import { trackBeginCheckout, trackDailyQuizAnswer, trackPaywallDismissed, trackPaywallHit, trackViewItem } from "@/lib/analytics";
 import { paywallVariantForCheckout } from "@/lib/paywallTest";
-import { isClassStudent } from "@/lib/classProgress";
+import { inClassFor, useClassMemberships } from "@/hooks/useClassMemberships";
 import { usePurchaseReturn } from "@/hooks/usePurchaseReturn";
 import { PaywallModal } from "@/components/PaywallModal";
 import { Question } from "@/types";
@@ -88,8 +88,7 @@ function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
     searchParams.get("tab") === "community" ? "community" : "yours"
   );
   const showCommunity = communityOn && activeTab === "community";
-  const [inClass, setInClass] = useState(false);
-  useEffect(() => setInClass(isClassStudent(source.id) || (!!source.variantOf && isClassStudent(source.variantOf))), [source.id, source.variantOf]);
+  const inClass = inClassFor(useClassMemberships(), source.id, source.variantOf);
   const isPremium = hydrated && (hasPremiumAccess() || inClass);
 
   // Paywall hits and checkouts are keyed "<examId>_stats" (the family id for a

@@ -1,4 +1,4 @@
-import { TEST_CATALOG, TestCatalogEntry, haystack } from "./testCatalog";
+import { TEST_CATALOG, TestCatalogEntry, haystack, searchAliases } from "./testCatalog";
 import { regionOfTest, Region, TestRegion } from "./region";
 import { states } from "@/data/states";
 
@@ -55,6 +55,14 @@ function editDistance(a: string, b: string, max: number): number {
 // it has other words, so "sat practice test" searches for "sat".
 const GENERIC = new Set(["practice", "test", "tests", "exam", "exams", "mock", "free", "quiz", "questions", "question", "prep", "online", "sample", "paper", "papers", "2026", "2027"]);
 
+// Spellings of one subject, so "maths" (UK) finds the SAT's "math" and the reverse.
+const SYNONYMS: Record<string, string> = { maths: "math", mathematics: "math", mathematical: "math", sciences: "science" };
+
+// School subjects. A query made only of these is a topic search ("maths",
+// "biology"), not a test's name: every country has tests for it, so the
+// visitor's own country leads instead of whichever test has the word in its name.
+const SUBJECTS = new Set(["math", "english", "science", "reading", "writing", "grammar", "spelling", "vocabulary", "biology", "chemistry", "physics", "history", "algebra", "geometry", "calculus", "arithmetic", "statistics", "numeracy", "literacy"]);
+
 /** A term matches at the start of a word; terms of 4+ letters may also match inside one ("theory" in "cartheory"). */
 function termIn(term: string, text: string, textWords: string[]): boolean {
   if (term.length >= 4) return text.includes(term);
@@ -77,6 +85,9 @@ interface Candidate {
   textWords: string[];
   title: string;
   titleWords: string[];
+  /** Title plus search aliases: where a test says what it is about, not just mentions it. */
+  topic: string;
+  topicWords: string[];
 }
 
 let CANDIDATES: Candidate[] | null = null;
@@ -85,7 +96,8 @@ function candidates(): Candidate[] {
     CANDIDATES = TEST_CATALOG.map((test) => {
       const text = haystack(test);
       const title = `${test.shortName} ${test.name}`.toLowerCase();
-      return { test, text, textWords: words(text), title, titleWords: words(title) };
+      const topic = `${title} ${searchAliases(test.id)}`.toLowerCase();
+      return { test, text, textWords: words(text), title, titleWords: words(title), topic, topicWords: words(topic) };
     });
   }
   return CANDIDATES;
@@ -152,12 +164,28 @@ function stateHits(terms: string[]): SearchHit[] {
  */
 export function searchAllTests(query: string, region: Region, popularity: Record<string, number> = {}): SearchResult {
   const q = normalizeQuery(query);
-  const allTerms = words(q);
+  const allTerms = words(q).map((t) => SYNONYMS[t] ?? t);
   if (allTerms.length === 0) return { hits: [], fuzzy: false };
   const specific = allTerms.filter((t) => !GENERIC.has(t));
   const terms = specific.length > 0 ? specific : allTerms;
 
   const regionRank = (r: TestRegion) => (r === region ? 0 : r === "GLOBAL" ? 1 : 2);
+
+  // A subject search: tests about the subject first (in their name or aliases),
+  // the visitor's country first among those, then tests that only mention it.
+  if (terms.every((t) => SUBJECTS.has(t))) {
+    const about = (c: Candidate) => (terms.every((t) => termIn(t, c.topic, c.topicWords)) ? 0 : 1);
+    const hits = candidates()
+      .filter((c) => terms.every((t) => termIn(t, c.text, c.textWords)))
+      .sort(
+        (a, b) =>
+          about(a) - about(b) ||
+          regionRank(regionOfTest(a.test.id)) - regionRank(regionOfTest(b.test.id)) ||
+          (popularity[b.test.id] ?? 0) - (popularity[a.test.id] ?? 0),
+      )
+      .map((c) => testHit(c.test));
+    if (hits.length > 0) return { hits: hits.slice(0, MAX_HITS), fuzzy: false };
+  }
   const rank = (list: { c: Candidate; score: number }[]) =>
     list
       .sort(

@@ -22,7 +22,7 @@ import { getQuestionsData } from "@/lib/testGenerator";
 import { getExamForQuestionId } from "@/lib/exams";
 import { CommunityWrongQuestions } from "@/components/CommunityWrongQuestions";
 import { QuizRow } from "@/components/QuizRow";
-import { isClassStudent } from "@/lib/classProgress";
+import { inClassFor, useClassMemberships } from "@/hooks/useClassMemberships";
 import { DMV_EXAM_ID } from "@/lib/classes";
 import { paywallVariantForCheckout } from "@/lib/paywallTest";
 import { usePremiumPrice } from "@/hooks/usePremiumPrice";
@@ -62,8 +62,7 @@ function StatsContent() {
 
   const { user } = useAuth();
   // Students in a teacher's DMV class see every stat without Premium.
-  const [inClass, setInClass] = useState(false);
-  useEffect(() => setInClass(isClassStudent(DMV_EXAM_ID)), []);
+  const inClass = inClassFor(useClassMemberships(), DMV_EXAM_ID);
   const isPremium = hydrated ? hasPremiumAccess() || inClass : false;
   const FREE_QUESTION_LIMIT = 5;
   const FREE_QUESTION_LIMIT_MOBILE = 2;

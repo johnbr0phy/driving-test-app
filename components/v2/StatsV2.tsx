@@ -33,7 +33,7 @@ import { useIsPremium } from "@/hooks/useIsPremium";
 import { useUpgradeFlow } from "@/hooks/useUpgradeFlow";
 import { usePurchaseReturn } from "@/hooks/usePurchaseReturn";
 import { useCommunityAvailable, useExamCommunityStats } from "@/hooks/useCommunityStats";
-import { isClassStudent } from "@/lib/classProgress";
+import { inClassFor, useClassMemberships } from "@/hooks/useClassMemberships";
 import { trackDailyQuizAnswer } from "@/lib/analytics";
 import { PaywallModal } from "@/components/PaywallModal";
 import { GatedStatsList, LockedPreview, STATS_FREE_ROWS, StatsPageShell, StatsTab, StatsTabs } from "@/components/stats/StatsParts";
@@ -72,8 +72,7 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
   // V2_STATS_PAYWALL to bring back the v1 rule (locked past the #1 topic and
   // two mistakes in every country; class students free).
   const { isPremium: paid, ready: premiumReady } = useIsPremium();
-  const [inClass, setInClass] = useState(false);
-  useEffect(() => setInClass(isClassStudent(exam.id)), [exam.id]);
+  const inClass = inClassFor(useClassMemberships(), exam.id);
   const unlocked = !V2_STATS_PAYWALL || paid || inClass;
   const upgrade = useUpgradeFlow(`${exam.id}_stats`, routes.stats);
   const openPaywall = (item: string, label: string) =>

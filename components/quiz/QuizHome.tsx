@@ -18,6 +18,7 @@ import { useHydration } from "@/hooks/useHydration";
 import { getSiteTigerAsset } from "@/lib/tigerAssets";
 import { QUIZ_TEST_MAX_QUESTIONS, quizLink, quizPath, quizPracticeSets, quizQuestionId, quizUrl, type QuizPublic } from "@/lib/quizzes";
 import { joinQuiz, quizMembership } from "@/lib/quizProgress";
+import { MEMBERSHIPS_CHANGED } from "@/lib/classMembershipSync";
 import { leaveClass, type ClassMembership } from "@/lib/classProgress";
 import { codeProgress, useQuizStore } from "@/store/useQuizStore";
 import { QuizStates, useQuiz } from "@/components/quiz/QuizLoader";
@@ -63,6 +64,13 @@ export function QuizHome({ code, initial }: { code: string; initial: QuizPublic 
   useEffect(() => {
     if (state.joinedAs) setMembership(quizMembership(code));
   }, [state.joinedAs, code]);
+
+  // The account's memberships arrive after sign-in, and sign-out clears them.
+  useEffect(() => {
+    const read = () => setMembership(quizMembership(code));
+    window.addEventListener(MEMBERSHIPS_CHANGED, read);
+    return () => window.removeEventListener(MEMBERSHIPS_CHANGED, read);
+  }, [code]);
 
   useEffect(() => {
     setMembership(quizMembership(code));

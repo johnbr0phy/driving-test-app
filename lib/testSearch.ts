@@ -26,6 +26,8 @@ export interface SearchResult {
 }
 
 const MAX_HITS = 8;
+/** A topic search ("maths", "nursing") lists every test about it; the lists scroll. */
+const MAX_TOPIC_HITS = 60;
 
 /** Normalise a query the same way for matching and for tracking. */
 export function normalizeQuery(q: string): string {
@@ -208,16 +210,26 @@ export function searchAllTests(query: string, region: Region, popularity: Record
   // then this week's popularity; tests that only mention it come last.
   if (terms.every((t) => TOPICS.has(t))) {
     const about = (c: Candidate) => terms.filter((t) => termIn(t, c.topic, c.topicWords)).length;
-    const hits = candidates()
-      .filter((c) => terms.every((t) => termIn(t, c.text, c.textWords)))
+    const matched = candidates().filter((c) => terms.every((t) => termIn(t, c.text, c.textWords)));
+    // Other countries' tests stay together under their flag, the country with
+    // this week's most popular test first, so a long list reads country by country.
+    const countryPop: Record<string, number> = {};
+    for (const c of matched) {
+      const r = regionOfTest(c.test.id);
+      countryPop[r] = Math.max(countryPop[r] ?? 0, popularity[c.test.id] ?? 0);
+    }
+    const country = (c: Candidate) => regionOfTest(c.test.id);
+    const hits = matched
       .sort(
         (a, b) =>
           about(b) - about(a) ||
-          regionRank(regionOfTest(a.test.id)) - regionRank(regionOfTest(b.test.id)) ||
+          regionRank(country(a)) - regionRank(country(b)) ||
+          (countryPop[country(b)] ?? 0) - (countryPop[country(a)] ?? 0) ||
+          country(a).localeCompare(country(b)) ||
           (popularity[b.test.id] ?? 0) - (popularity[a.test.id] ?? 0),
       )
       .map((c) => testHit(c.test));
-    if (hits.length > 0) return { hits: hits.slice(0, MAX_HITS), fuzzy: false };
+    if (hits.length > 0) return { hits: hits.slice(0, MAX_TOPIC_HITS), fuzzy: false };
   }
   const rank = (list: { c: Candidate; score: number }[]) =>
     list

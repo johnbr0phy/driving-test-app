@@ -8,8 +8,9 @@ import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHe
 import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
+import { SITE_URL } from "@/lib/siteUrl";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
+const siteUrl = SITE_URL;
 
 const title = "Free NAPLAN Year 9 Practice Test 2027 - Reading, Conventions, Numeracy";
 const metaDescription =

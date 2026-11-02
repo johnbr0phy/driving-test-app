@@ -73,7 +73,7 @@ export const stateLandingData: Record<string, StateLandingInfo> = {
     notableRules: [
       "California requires 50 hours of supervised driving practice (10 hours at night) before taking the road test.",
       "Provisional license holders under 18 cannot carry passengers under 20 for the first 12 months unless accompanied by a licensed driver 25 or older.",
-      "California's written test has 46 questions — the most among all states — and you need to answer 39 correctly (83%) to pass."
+      "California's written test for applicants under 18 has 46 questions, and you need to answer 38 correctly (83%) to pass."
     ],
     neighboringSlugs: ["oregon", "nevada", "arizona"],
     onlineTestInfo: "No, the California DMV written test must be taken in person at a DMV office. You can make an appointment online to reduce wait times."
@@ -279,7 +279,7 @@ export const stateLandingData: Record<string, StateLandingInfo> = {
     handbookUrl: "https://mva.maryland.gov/pages/driver-manuals.aspx",
     handbookName: "Maryland Driver's Manual",
     notableRules: [
-      "Maryland requires a passing score of 85%, one of the highest thresholds in the country.",
+      "Maryland requires 22 correct answers out of 25 (88%), one of the highest thresholds in the country.",
       "Permit holders must be at least 15 years and 9 months old — an unusual age requirement.",
       "Maryland requires 60 hours of supervised driving (10 at night) before taking the road test."
     ],
@@ -357,7 +357,7 @@ export const stateLandingData: Record<string, StateLandingInfo> = {
     handbookUrl: "https://dojmt.gov/driving/driver-licensing/",
     handbookName: "Montana Driver Manual",
     notableRules: [
-      "Montana requires a passing score of 82%, slightly above the national average.",
+      "Montana requires 27 correct answers out of 33 (82%), slightly above the national average.",
       "Montana allows learner's permits at 14 years and 6 months with a completed driver education course.",
       "Montana does not have a statewide handheld cell phone ban for adult drivers, though texting while driving is prohibited."
     ],

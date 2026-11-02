@@ -51,6 +51,7 @@ export const es: TranslationKeys = {
     makeAQuiz: "Crea un cuestionario",
     forTeachers: "Para docentes",
     privacyPolicy: "Política de privacidad",
+    about: "Acerca de",
   },
 
   // Landing page
@@ -107,7 +108,7 @@ export const es: TranslationKeys = {
     faq2Q: "¿Puedo usar Tigertest gratis?",
     faq2A: "Sí. Tigertest es gratis para empezar en los 50 estados, sin tarjeta de crédito ni cuenta. Los usuarios gratuitos tienen los Conjuntos de Entrenamiento 1 y 2 y los Exámenes de Práctica 1 y 2. Premium ($9.99 una sola vez, no es una suscripción) desbloquea los Conjuntos de Entrenamiento 3 y 4, los Exámenes de Práctica 3 y 4 y el análisis completo de preguntas.",
     faq3Q: "¿Qué puntuación necesito para aprobar el examen del DMV?",
-    faq3A: "La mayoría de los estados requieren una puntuación del 80% o más para aprobar. Algunos estados como Nueva York requieren solo el 70%, mientras que estados como Idaho y Maryland requieren el 85%. Tigertest rastrea tu progreso y muestra tu probabilidad de aprobar mientras practicas.",
+    faq3A: "La mayoría de los estados requieren una puntuación del 80% o más para aprobar. Algunos estados como Nueva York requieren solo el 70%, mientras que Idaho requiere el 85% y Maryland el 88% (22 de 25). Tigertest rastrea tu progreso y muestra tu probabilidad de aprobar mientras practicas.",
     faq4Q: "¿Cómo debo estudiar para el examen de permiso del DMV?",
     faq4A: "Comienza con el modo entrenamiento de Tigertest para aprender las preguntas con retroalimentación instantánea. Una vez que te sientas seguro, haz exámenes de práctica para simular el examen real. La mayoría de los usuarios aprueban después de completar los 4 conjuntos de entrenamiento y obtener 80%+ en los exámenes de práctica.",
     faq5Q: "¿Cuál es el mejor sitio web gratuito de exámenes de práctica del DMV?",

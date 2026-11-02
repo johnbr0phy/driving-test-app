@@ -233,7 +233,7 @@ function OAuthLoginContent() {
         <CardContent>
           <div className="space-y-4">
             {formError && (
-              <div className="bg-red-50 dark:bg-red-950 border border-red-200 dark:border-red-800 text-red-700 dark:text-red-300 px-4 py-3 rounded text-sm">
+              <div id="auth-error" role="alert" className="bg-red-50 dark:bg-red-950 border border-red-200 dark:border-red-800 text-red-700 dark:text-red-300 px-4 py-3 rounded text-sm">
                 {formError}
               </div>
             )}
@@ -245,7 +245,7 @@ function OAuthLoginContent() {
               onClick={handleGoogleSignIn}
               disabled={submitting}
             >
-              <svg className="mr-2 h-4 w-4" viewBox="0 0 24 24">
+              <svg aria-hidden="true" className="mr-2 h-4 w-4" viewBox="0 0 24 24">
                 <path
                   fill="currentColor"
                   d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
@@ -280,7 +280,9 @@ function OAuthLoginContent() {
                 <Label htmlFor="email">Email</Label>
                 <Input
                   id="email"
+                  aria-describedby={formError ? "auth-error" : undefined}
                   type="email"
+                  autoComplete="email"
                   placeholder="your@email.com"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
@@ -293,6 +295,7 @@ function OAuthLoginContent() {
                 <Label htmlFor="password">Password</Label>
                 <Input
                   id="password"
+                  aria-describedby={formError ? "auth-error" : undefined}
                   type="password"
                   placeholder={mode === 'signup' ? 'At least 6 characters' : '••••••••'}
                   autoComplete={mode === 'signup' ? 'new-password' : 'current-password'}

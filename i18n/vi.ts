@@ -51,6 +51,7 @@ export const vi: TranslationKeys = {
     makeAQuiz: "Tạo bài kiểm tra",
     forTeachers: "Dành cho giáo viên",
     privacyPolicy: "Chính sách quyền riêng tư",
+    about: "Giới thiệu",
   },
 
   // Landing page
@@ -107,7 +108,7 @@ export const vi: TranslationKeys = {
     faq2Q: "Tôi có thể dùng Tigertest miễn phí không?",
     faq2A: "Có. Tigertest miễn phí để bắt đầu ở cả 50 tiểu bang, không cần thẻ tín dụng hay tài khoản. Người dùng miễn phí được dùng Bộ luyện tập 1 và 2 và Bài thi thử 1 và 2. Premium ($9.99 trả một lần, không phải gói thuê bao) mở khóa Bộ luyện tập 3 và 4, Bài thi thử 3 và 4 và phân tích câu hỏi đầy đủ.",
     faq3Q: "Tôi cần bao nhiêu điểm để thi đậu DMV?",
-    faq3A: "Hầu hết các tiểu bang yêu cầu điểm 80% trở lên để đậu. Một số bang như New York chỉ yêu cầu 70%, trong khi các bang như Idaho và Maryland yêu cầu 85%. Tigertest theo dõi tiến độ của bạn và hiển thị xác suất thi đậu khi bạn luyện tập.",
+    faq3A: "Hầu hết các tiểu bang yêu cầu điểm 80% trở lên để đậu. Một số bang như New York chỉ yêu cầu 70%, trong khi Idaho yêu cầu 85% và Maryland 88% (22 trên 25 câu). Tigertest theo dõi tiến độ của bạn và hiển thị xác suất thi đậu khi bạn luyện tập.",
     faq4Q: "Tôi nên học thế nào cho bài thi bằng lái tạm DMV?",
     faq4A: "Bắt đầu với chế độ luyện tập của Tigertest để học các câu hỏi với phản hồi tức thì. Khi cảm thấy tự tin, hãy làm bài thi thử để mô phỏng kỳ thi thật. Hầu hết người dùng thi đậu sau khi hoàn thành cả 4 bộ luyện tập và đạt 80%+ ở các bài thi thử.",
     faq5Q: "Trang web thi thử DMV miễn phí tốt nhất là gì?",

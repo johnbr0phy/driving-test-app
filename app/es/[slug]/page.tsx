@@ -14,13 +14,15 @@ import {
   ExternalLink,
   ChevronRight,
 } from "lucide-react";
-import { states, getStateBySlug } from "@/data/states";
+import { states, getStateBySlug, permitAgeText } from "@/data/states";
+import { DMV_LANGUAGE_PAGES_UPDATED_AT } from "@/lib/seoDates";
 import { getStateLandingInfoEs } from "@/data/stateLandingDataEs";
 import { isViState } from "@/data/viStates";
 import { isZhState } from "@/data/zhStates";
 import { isKoState } from "@/data/koStates";
+import { SITE_URL } from "@/lib/siteUrl";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
+const siteUrl = SITE_URL;
 
 // Mirrors the English state page so AI engines see a consistent publish date
 // across language variants.
@@ -119,9 +121,7 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
     notFound();
   }
 
-  const rawPassing = Math.ceil(
-    (state.writtenTestQuestions * state.passingScore) / 100
-  );
+  const rawPassing = state.passCount;
 
   const neighboringStates = landingInfo.neighboringSlugs
     .map((s) => getStateBySlug(s))
@@ -143,7 +143,7 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
     },
     {
       question: `¿Qué edad debo tener para obtener un permiso de aprendiz en ${state.name}?`,
-      answer: `En ${state.name}, puedes solicitar un permiso de aprendiz a los ${state.minPermitAge} años. Debes aprobar el examen escrito de conocimientos y un examen de visión para recibir tu permiso.`,
+      answer: `En ${state.name}, puedes solicitar un permiso de aprendiz a los ${permitAgeText(state.minPermitAge, "es")}. Debes aprobar el examen escrito de conocimientos y un examen de visión para recibir tu permiso.`,
     },
     {
       question: `¿Qué pasa si repruebo el examen de permiso de ${state.name}?`,
@@ -189,8 +189,9 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
     ],
   };
 
-  // Build-time timestamp; baked into the static page on each deploy.
-  const lastModifiedIso = new Date().toISOString();
+  // Hand-bumped in lib/seoDates.ts when the state pages change, so the
+  // date does not move on every deploy.
+  const lastModifiedIso = DMV_LANGUAGE_PAGES_UPDATED_AT;
 
   // JSON-LD: WebApplication / LearningResource — mirrors the English page so
   // Spanish results are equally citable in AI answers.
@@ -399,7 +400,7 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
             <CardContent className="p-4 md:p-6 text-center">
               <Clock className="h-6 w-6 md:h-8 md:w-8 text-brand-dark mx-auto mb-2" />
               <div className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 mb-1">
-                {state.minPermitAge}
+                {permitAgeText(state.minPermitAge, "es")}
               </div>
               <div className="text-sm text-gray-600 dark:text-gray-300">Edad Mín. para Permiso</div>
             </CardContent>
@@ -451,7 +452,7 @@ export default async function SpanishStateDMVPage({ params }: PageProps) {
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300">
                   Debes tener al menos{" "}
-                  <strong>{state.minPermitAge} años</strong> para solicitar un
+                  <strong>{permitAgeText(state.minPermitAge, "es")}</strong> para solicitar un
                   permiso de aprendiz en {state.name}. Necesitarás aprobar el
                   examen escrito de conocimientos y un examen de visión antes de
                   que se emita tu permiso.

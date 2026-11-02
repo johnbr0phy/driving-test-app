@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { SITE_URL } from "@/lib/siteUrl";
 import { QUIZZES_PAGES_UPDATED_AT } from "@/lib/seoDates";
 
 // /developers: the technical page for anyone wiring an agent to Tigertest,
@@ -7,11 +8,11 @@ import { QUIZZES_PAGES_UPDATED_AT } from "@/lib/seoDates";
 // ask for. Endpoint, auth, the tool list and example prompts. /create is
 // the version for people; this one is for reviewers and builders.
 
-const SITE = "https://www.tigertest.io";
+const SITE = SITE_URL;
 const SUPPORT_EMAIL = "john@johnbrophy.net";
 
 export const metadata: Metadata = {
-  title: "Tigertest for agents and developers",
+  title: { absolute: "Tigertest for agents and developers" },
   description:
     "Connect any AI agent to Tigertest over MCP: discover their tests in progress and practice catalog exams or custom quizzes, make quizzes, and read who played. OAuth 2.1 with PKCE, no API key.",
   alternates: { canonical: `${SITE}/developers` },

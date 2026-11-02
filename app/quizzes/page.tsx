@@ -4,6 +4,7 @@ import { Plus } from "lucide-react";
 import { listPublicQuizzes } from "@/lib/server/quizzes";
 import type { QuizSummary } from "@/lib/quizzes";
 import { QuizLibrary } from "@/components/quiz/create/QuizLibrary";
+import { SITE_URL } from "@/lib/siteUrl";
 
 // The public quiz library: every quiz a member set to Public, featured first,
 // then most played. Rebuilt every five minutes. (The sitemap and the quiz
@@ -11,7 +12,7 @@ import { QuizLibrary } from "@/components/quiz/create/QuizLibrary";
 
 export const revalidate = 300;
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
+const siteUrl = SITE_URL;
 const title = "Practice tests made by Tigertest members";
 const description =
   "Browse practice tests other Tigertest members made from their own notes and study sets, play any in Practice, Test or Flashcards mode, or make your own.";

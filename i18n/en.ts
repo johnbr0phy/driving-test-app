@@ -51,6 +51,7 @@ export const en = {
     makeAQuiz: "Make a quiz",
     forTeachers: "For Teachers",
     privacyPolicy: "Privacy Policy",
+    about: "About",
   },
 
   // Landing page
@@ -107,7 +108,7 @@ export const en = {
     faq2Q: "Can I use Tigertest for free?",
     faq2A: "Yes. Tigertest is free to start in all 50 states, with no credit card or account required. Free users get Training Sets 1 and 2 and Practice Tests 1 and 2. Premium ($9.99 one-time, not a subscription) unlocks Training Sets 3 and 4, Practice Tests 3 and 4 and full question analytics.",
     faq3Q: "What score do I need to pass the DMV test?",
-    faq3A: "Most states require a score of 80% or higher to pass. Some states like New York require only 70%, while states like Idaho and Maryland require 85%. Tigertest tracks your progress and shows your pass probability as you practice.",
+    faq3A: "Most states require a score of 80% or higher to pass. Some states like New York require only 70%, while Idaho requires 85% and Maryland 88% (22 of 25). Tigertest tracks your progress and shows your pass probability as you practice.",
     faq4Q: "How should I study for the DMV permit test?",
     faq4A: "Start with Tigertest's training mode to learn questions with instant feedback. Once you feel confident, take practice tests to simulate the real exam. Most users pass after completing all 4 training sets and scoring 80%+ on practice tests.",
     faq5Q: "What is the best free DMV practice test website?",

@@ -6,8 +6,9 @@ import { getCatalogEntry } from "@/lib/testCatalog";
 import { getSignIdForQuestion } from "@/lib/signImages";
 import { hasPositionDependentAnswers } from "@/lib/shuffleOptions";
 import type { Question } from "@/types";
+import { SITE_URL } from "@/lib/siteUrl";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
+const siteUrl = SITE_URL;
 
 const LETTERS = ["A", "B", "C", "D"] as const;
 

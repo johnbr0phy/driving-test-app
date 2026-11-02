@@ -54,6 +54,7 @@ export const it: TranslationKeys = {
     makeAQuiz: "Crea un quiz",
     forTeachers: "Per gli insegnanti",
     privacyPolicy: "Informativa sulla privacy",
+    about: "Chi siamo",
   },
 
   landing: en.landing,

@@ -4,8 +4,9 @@ import Link from "next/link";
 import { ChevronRight, Languages } from "lucide-react";
 import { getStateByCode } from "@/data/states";
 import { VI_STATE_CODES } from "@/data/viStates";
+import { SITE_URL } from "@/lib/siteUrl";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
+const siteUrl = SITE_URL;
 
 export const metadata: Metadata = {
   title: { absolute: "Thi Thử DMV Bằng Tiếng Việt Theo Tiểu Bang 2026 - Miễn Phí | Tigertest" },

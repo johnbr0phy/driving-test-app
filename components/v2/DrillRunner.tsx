@@ -94,6 +94,19 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
   const currentId = useRef<string | null>(null);
   const answerSubmitted = useRef(false);
   const scroller = useRef<HTMLDivElement>(null);
+  // Revealing disables the options, which drops focus to the page. Put it on
+  // Next so a keyboard user carries on from there; the feedback is in a
+  // role="status" region, which is announced wherever focus is. Only when focus
+  // was actually lost, so a click elsewhere (or a screen reader reading on) is
+  // left alone.
+  const nextRef = useRef<HTMLButtonElement | null>(null);
+  useEffect(() => {
+    if (!revealed) return;
+    const active = document.activeElement as HTMLElement | null;
+    if (!active || active === document.body || (active as HTMLButtonElement).disabled) {
+      nextRef.current?.focus({ preventScroll: true });
+    }
+  }, [revealed]);
 
   useEffect(() => {
     if (hydrated && !drill) router.replace(routes.dashboard);
@@ -261,7 +274,7 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
         <div className="v2-safe-bottom shrink-0 border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-3 pt-3">
           <div className="mx-auto flex max-w-2xl gap-2">
             {revealed ? (
-              <button type="button" onClick={() => { if (earnedMastery || !(guestPrompt.takeStep() || sharePrompt.takeStep())) load(); }} className="v2-tap w-full rounded-xl bg-brand text-base font-bold text-white">Next</button>
+              <button ref={nextRef} type="button" onClick={() => { if (earnedMastery || !(guestPrompt.takeStep() || sharePrompt.takeStep())) load(); }} className="v2-tap w-full rounded-xl bg-brand text-base font-bold text-white">Next</button>
             ) : question.format === "single" ? (
               <div className="v2-tap flex w-full items-center justify-center text-sm text-gray-500 dark:text-gray-400">Tap an answer to check it</div>
             ) : (

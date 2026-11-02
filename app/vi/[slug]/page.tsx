@@ -15,13 +15,15 @@ import {
   ChevronRight,
   Languages,
 } from "lucide-react";
-import { getStateBySlug, getStateByCode } from "@/data/states";
+import { getStateBySlug, getStateByCode, permitAgeText } from "@/data/states";
+import { DMV_LANGUAGE_PAGES_UPDATED_AT } from "@/lib/seoDates";
 import { getStateLandingInfoVi } from "@/data/stateLandingDataVi";
 import { VI_STATE_CODES } from "@/data/viStates";
 import { isZhState } from "@/data/zhStates";
 import { isKoState } from "@/data/koStates";
+import { SITE_URL } from "@/lib/siteUrl";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
+const siteUrl = SITE_URL;
 
 // Mirrors the English state page so AI engines see a consistent publish date
 // across language variants.
@@ -119,9 +121,7 @@ export default async function VietnameseStateDMVPage({ params }: PageProps) {
     notFound();
   }
 
-  const rawPassing = Math.ceil(
-    (state.writtenTestQuestions * state.passingScore) / 100
-  );
+  const rawPassing = state.passCount;
 
   // Only link to neighbors that also have a Vietnamese page.
   const neighboringStates = landingInfo.neighboringSlugs
@@ -150,7 +150,7 @@ export default async function VietnameseStateDMVPage({ params }: PageProps) {
     },
     {
       question: `Bao nhiêu tuổi thì được lấy giấy phép tập lái ở ${state.name}?`,
-      answer: `Ở ${state.name}, bạn có thể xin giấy phép tập lái (learner's permit) từ ${state.minPermitAge}. Bạn phải đậu bài thi viết và bài kiểm tra thị lực để được cấp giấy phép.`,
+      answer: `Ở ${state.name}, bạn có thể xin giấy phép tập lái (learner's permit) từ ${permitAgeText(state.minPermitAge, "vi")}. Bạn phải đậu bài thi viết và bài kiểm tra thị lực để được cấp giấy phép.`,
     },
     {
       question: `Nếu tôi rớt bài thi ở ${state.name} thì sao?`,
@@ -196,8 +196,9 @@ export default async function VietnameseStateDMVPage({ params }: PageProps) {
     ],
   };
 
-  // Build-time timestamp; baked into the static page on each deploy.
-  const lastModifiedIso = new Date().toISOString();
+  // Hand-bumped in lib/seoDates.ts when the state pages change, so the
+  // date does not move on every deploy.
+  const lastModifiedIso = DMV_LANGUAGE_PAGES_UPDATED_AT;
 
   // JSON-LD: WebApplication / LearningResource — mirrors the English page so
   // Vietnamese results are equally citable in AI answers.
@@ -426,7 +427,7 @@ export default async function VietnameseStateDMVPage({ params }: PageProps) {
             <CardContent className="p-4 md:p-6 text-center">
               <Clock className="h-6 w-6 md:h-8 md:w-8 text-brand-dark mx-auto mb-2" />
               <div className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 mb-1">
-                {state.minPermitAge}
+                {permitAgeText(state.minPermitAge, "vi")}
               </div>
               <div className="text-sm text-gray-600 dark:text-gray-300">Tuổi Tối Thiểu Lấy Permit</div>
             </CardContent>
@@ -474,7 +475,7 @@ export default async function VietnameseStateDMVPage({ params }: PageProps) {
                   Tuổi Tối Thiểu Và Điều Kiện
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300">
-                  Bạn phải từ <strong>{state.minPermitAge}</strong> trở lên để
+                  Bạn phải từ <strong>{permitAgeText(state.minPermitAge, "vi")}</strong> trở lên để
                   xin giấy phép tập lái ở {state.name}. Bạn cần đậu bài thi
                   viết và bài kiểm tra thị lực trước khi được cấp giấy phép.
                 </p>

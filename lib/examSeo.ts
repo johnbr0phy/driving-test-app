@@ -4,8 +4,9 @@ import { getExamById, examBaseLanguage, examLandingPath } from "./exams";
 import type { Language } from "@/i18n";
 import { isRegion, regionInfo, regionOfTest } from "./region";
 import type { ExamV2Config } from "./v2/types";
+import { SITE_URL } from "@/lib/siteUrl";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
+const siteUrl = SITE_URL;
 
 /** The exam's own share card, so a shared app link never shows the DMV card. */
 function shareTags(id: string, title: string, description: string, landing: string): Metadata {

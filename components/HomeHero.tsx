@@ -59,6 +59,7 @@ export function HomeHero() {
               width={280}
               height={560}
               className="w-[200px] md:w-[240px]"
+              sizes="(min-width: 768px) 240px, 200px"
             />
           </div>
           <p className="text-sm text-gray-500 dark:text-gray-400 mt-6 text-center">{t("landing.trainOnMobile")}</p>
@@ -72,6 +73,7 @@ export function HomeHero() {
               width={700}
               height={480}
               className="w-[320px] md:w-[500px]"
+              sizes="(min-width: 768px) 500px, 320px"
             />
           </div>
           <p className="text-sm text-gray-500 dark:text-gray-400 mt-6 text-center">{t("landing.testOnDesktop")}</p>

@@ -55,6 +55,7 @@ export const de: TranslationKeys = {
     makeAQuiz: "Quiz erstellen",
     forTeachers: "Für Lehrkräfte",
     privacyPolicy: "Datenschutzerklärung",
+    about: "Über uns",
   },
 
   landing: en.landing,

@@ -495,13 +495,13 @@
     "questionId": "S63-BDR-016",
     "category": "s63BrokerDealers",
     "question": "Under the USA, which of these is NOT a 'person'?",
-    "optionA": "A trust",
+    "optionA": "A joint-stock company",
     "optionB": "A government",
     "optionC": "An unincorporated association",
     "optionD": "A deceased individual",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "The USA defines a person to include individuals, corporations, partnerships, associations, trusts, unincorporated organizations and governments. A deceased individual can no longer act as a person."
+    "explanation": "The USA defines a person to include individuals, corporations, partnerships, associations, joint-stock companies, certain trusts, unincorporated organizations and governments. A deceased individual can no longer act as a person."
   },
   {
     "type": "SERIES63",
@@ -817,7 +817,7 @@
     "questionId": "S63-AGT-015",
     "category": "s63Agents",
     "question": "Absent an order from the Administrator, an agent's registration becomes effective:",
-    "optionA": "At 3 p.m. on the second business day",
+    "optionA": "Five business days after filing",
     "optionB": "When FINRA approves it",
     "optionC": "At noon on the 30th day after filing",
     "optionD": "Ten days after filing",
@@ -1061,21 +1061,21 @@
     "optionD": "Thirty days after the offering",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Qualification is the full state registration used when neither coordination nor notification is available. It takes effect only when the Administrator so orders."
+    "explanation": "Qualification is the full state registration used when neither coordination nor filing is available. It takes effect only when the Administrator so orders."
   },
   {
     "type": "SERIES63",
     "state": "ALL",
     "questionId": "S63-SEC-007",
     "category": "s63Securities",
-    "question": "Under the 1956 Uniform Securities Act, registration by notification becomes effective, if no stop order intervenes:",
-    "optionA": "Noon of the thirtieth day after filing",
-    "optionB": "When the SEC acts",
-    "optionC": "3 p.m. on the second business day",
-    "optionD": "Only by Administrator order",
+    "question": "Under the USA as amended by NASAA, registration by filing is open to an issuer that is also registering the offering with the SEC and:",
+    "optionA": "Is offering its first securities",
+    "optionB": "Sells only within one state",
+    "optionC": "Meets seasoning and size tests",
+    "optionD": "Has no federal registration",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "A notification filing becomes effective automatically at 3 p.m. Eastern time on the second full business day after filing, or earlier if the Administrator allows. Noon of the 30th day is the rule for broker-dealer and agent registration."
+    "explanation": "Registration by filing replaced the original act's registration by notification. It is for established issuers registering with the SEC: 36 months in business, a class of equity held by 500 or more holders, minimum net worth, at least $5 a share for equity, among other tests, plus previously qualified mutual funds and UITs."
   },
   {
     "type": "SERIES63",
@@ -1292,14 +1292,14 @@
     "state": "ALL",
     "questionId": "S63-REM-005",
     "category": "s63Remedies",
-    "question": "After a summary order postponing or suspending a registration, a hearing must begin, if requested in writing, within:",
+    "question": "After the Administrator summarily suspends an agent's registration, the agent requests a hearing in writing. The matter must be set down for hearing within:",
     "optionA": "15 days of the request",
     "optionB": "10 days of the request",
     "optionC": "30 days of the request",
     "optionD": "60 days of the request",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "The Administrator must promptly notify the person of a summary order and the right to a hearing. On a written request, the matter is set for a hearing to begin within 15 days after the request is received."
+    "explanation": "The Administrator must promptly notify the person of a summary order and the right to a hearing. Section 204(c) provides that within 15 days after receipt of a written request, the matter will be set down for hearing. If no hearing is requested or ordered, the order stays in effect until modified or vacated."
   },
   {
     "type": "SERIES63",
@@ -1810,28 +1810,28 @@
     "state": "ALL",
     "questionId": "S63-COM-018",
     "category": "s63Communication",
-    "question": "A new margin customer buys $2,600 of stock. Under Regulation T and FINRA's minimum equity rule, she must deposit:",
-    "optionA": "$1,300",
-    "optionB": "$2,000",
-    "optionC": "$2,600",
-    "optionD": "$1,000",
+    "question": "A new margin customer buys $1,500 of stock. Under Regulation T and FINRA's minimum equity rule, she must deposit:",
+    "optionA": "$750",
+    "optionB": "$1,500",
+    "optionC": "$2,000",
+    "optionD": "$375",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Reg T alone would require $1,300 (50%), but FINRA Rule 4210 requires at least $2,000 of equity in a margin account. For a purchase of $2,000 or more, the deposit is the greater of the two."
+    "explanation": "FINRA Rule 4210 requires $2,000 of equity in a new margin account, but never more than the purchase price. For a purchase under $2,000 the customer pays in full, here $1,500. $750 would be Reg T's 50% alone."
   },
   {
     "type": "SERIES63",
     "state": "ALL",
     "questionId": "S63-COM-019",
     "category": "s63Communication",
-    "question": "FINRA Rule 4210's minimum maintenance requirement for most short stock positions is:",
-    "optionA": "25% of market value",
-    "optionB": "50% of market value",
-    "optionC": "30% of market value",
-    "optionD": "100% of market value",
+    "question": "A cash account customer buys stock and sells it before paying for the purchase, then never pays. Under Regulation T the account is generally:",
+    "optionA": "Frozen for 30 days",
+    "optionB": "Closed for good",
+    "optionC": "Frozen for 90 days",
+    "optionD": "Converted to margin",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Short positions in stocks priced at $5 or more need maintenance of the greater of $5 a share or 30% of market value. 25% is the minimum for long positions."
+    "explanation": "This is free riding. Regulation T freezes the cash account for 90 days, during which the customer must have the full purchase price in the account before any buy is executed."
   },
   {
     "type": "SERIES63",
@@ -1908,14 +1908,14 @@
     "state": "ALL",
     "questionId": "S63-COM-025",
     "category": "s63Communication",
-    "question": "A put option is out of the money when the stock price is:",
-    "optionA": "Above the strike price",
-    "optionB": "Below the strike price",
-    "optionC": "Equal to the premium",
-    "optionD": "Below strike minus premium",
+    "question": "A call with a $25 strike trades at $1.50 when the stock is $23. Its intrinsic value is:",
+    "optionA": "$0",
+    "optionB": "$1.50",
+    "optionC": "$2",
+    "optionD": "$3.50",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "A put has intrinsic value only when the stock is below the strike. Above the strike it is out of the money, and its premium is all time value."
+    "explanation": "A call has intrinsic value only when the stock is above the strike. At $23 this $25 call is out of the money, so its intrinsic value is $0 and the whole $1.50 premium is time value."
   },
   {
     "type": "SERIES63",
@@ -2286,14 +2286,14 @@
     "state": "ALL",
     "questionId": "S63-ETH-012",
     "category": "s63Ethics",
-    "question": "A customer tells an agent to buy 300 shares of a named stock today, leaving timing and price to her. This:",
-    "optionA": "Needs written discretion",
-    "optionB": "Is barred by the USA",
-    "optionC": "Needs Administrator consent",
-    "optionD": "Needs no written discretion",
+    "question": "An agent holds no written discretionary authority. Which customer instruction may she carry out?",
+    "optionA": "Buy a bank stock that looks cheap",
+    "optionB": "Sell what you must to raise $5,000",
+    "optionC": "Trade ABC however you see fit",
+    "optionD": "Buy 300 ABC at a good price today",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "When the customer sets the security, amount and action, leaving only time and price to the agent is not discretion requiring written authority, and it lasts only for that day."
+    "explanation": "Only time and price may be left to the agent without written authority. Choosing the security, the amount, or whether to buy or sell is discretion that NASAA's policy requires to be authorized in writing first."
   },
   {
     "type": "SERIES63",
@@ -2496,14 +2496,14 @@
     "state": "ALL",
     "questionId": "S63-ETH-027",
     "category": "s63Ethics",
-    "question": "Under FINRA rules, an agent may share in the gains and losses of a customer's account only with:",
-    "optionA": "The customer's verbal consent",
-    "optionB": "A written promise to cover any losses",
-    "optionC": "Written OK from firm and client",
-    "optionD": "An equal 50/50 split",
+    "question": "An agent splits her commission on a customer trade with an agent of an unaffiliated broker-dealer. Under NASAA's policy this is:",
+    "optionA": "Allowed if both are registered",
+    "optionB": "Allowed if the customer is told",
+    "optionC": "An unethical practice",
+    "optionD": "Allowed for one-time trades",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Sharing in a customer account requires prior written authorization from the firm and a joint account, with sharing in proportion to the agent's contribution unless the customer is immediate family."
+    "explanation": "NASAA's statement of policy bars an agent from splitting commissions or profits with anyone not registered as an agent of the same broker-dealer, or of a broker-dealer under common control."
   },
   {
     "type": "SERIES63",
@@ -2517,7 +2517,7 @@
     "optionD": "20%",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Outside immediate family accounts, an agent's share of profits and losses must be in direct proportion to her financial contribution, here 20%."
+    "explanation": "Sharing needs written authorization from the customer and the firm. Outside immediate family accounts, the agent's share of profits and losses must be in direct proportion to her financial contribution, here 20%."
   },
   {
     "type": "SERIES63",

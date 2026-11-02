@@ -45,12 +45,14 @@ different scenario.
   https://www.nasaa.org/wp-content/uploads/2021/10/1956-Uniform-Securities-Act-with-NASAA-Updates-and-Commentary.pdf
   Definitions (401: agent, broker-dealer, investment adviser, IAR, person, security, offer),
   registration effective at noon on the 30th day (202), notice of agent changes, grounds for
-  denial, summary orders and the 15-day hearing, cancellation, 30-day withdrawal and one-year
-  revocation window (204), consent to service of process (414), registration by notification
-  (3 p.m. on the second full business day), coordination, qualification (302 to 304), stop orders
+  denial, summary orders with the matter set down for hearing within 15 days of a written
+  request (204(c)), cancellation, 30-day withdrawal and one-year revocation window (204(e)),
+  consent to service of process (414), registration by filing (302; NASAA's amendments replaced
+  the original act's registration by notification and its 3 p.m. second-business-day rule, so the
+  bank does not test that rule), coordination, qualification (303, 304), stop orders
   (306), exempt securities and transactions incl. the 10-offeree limited offering (402),
-  investigations, oaths and subpoenas (407), cease and desist (408), criminal penalties and the
-  no-knowledge rule (409), civil liability, rescission offers (410), judicial review (411),
+  investigations, oaths and subpoenas (407), cease and desist (408), criminal penalties ($5,000
+  and/or 3 years) and the no-knowledge rule for imprisonment (409), civil liability, rescission offers (410), judicial review by petition within 60 days of a final order (411),
   interpretive opinions (412), offers in the state (414), non-waiver.
 - NSMIA (1996) and Investment Advisers Act 203A, SEC Rules 203A-1 and 203A-3 (de minimis fewer
   than 6 clients; $100M/$110M SEC thresholds; IAR place of business).
@@ -75,3 +77,11 @@ different scenario.
   10-22 (Reg D due diligence); FINRA By-Laws Art. V (Form U4 amendments within 30 days, U5 copy).
 - SEC v. W.J. Howey Co., 328 U.S. 293 (1946); Uniform Prudent Investor Act (1994); SIPC
   (no cover for market losses, commodity futures or fixed annuities).
+
+## Review (2026-11-02)
+Statute details checked against the NASAA PDF above (text of 201(b), 201(d), 202, 204(c)-(e),
+302, 303, 401, 409, 410, 411): 15 days (set down for hearing), 30-day withdrawal with one-year
+revocation window, no imprisonment without knowledge of a rule or order, 60 days for judicial
+review, noon of the 30th day for registrations all confirmed. Registration by notification is not
+in the amended act (replaced by registration by filing), so S63-SEC-007 now tests filing.
+Duplicates against series-7, sie and nmls rewritten: S63-COM-018, -019, -025, S63-ETH-012, -027.

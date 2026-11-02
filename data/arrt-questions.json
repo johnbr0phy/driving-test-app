@@ -242,14 +242,14 @@
     "state": "ALL",
     "questionId": "ARRT-CAR-018",
     "category": "arrtCare",
-    "question": "A patient has suspected pulmonary tuberculosis. Which precautions apply?",
-    "optionA": "Contact precautions",
-    "optionB": "Airborne precautions",
-    "optionC": "Droplet precautions",
-    "optionD": "Neutropenic precautions",
+    "question": "Two radiographers do a mobile exam on a patient in isolation. How do they usually divide the work?",
+    "optionA": "Both position the patient",
+    "optionB": "One touches the patient, one the unit",
+    "optionC": "Both stay outside the room",
+    "optionD": "One works, one records dose",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "TB spreads by small airborne particles, so staff wear a fit-tested N95 respirator and the patient wears a surgical mask during transport."
+    "explanation": "In the clean and dirty method one radiographer handles the patient and the covered image receptor, while the other operates the mobile unit and touches nothing contaminated."
   },
   {
     "type": "ARRT",
@@ -298,14 +298,14 @@
     "state": "ALL",
     "questionId": "ARRT-CAR-022",
     "category": "arrtCare",
-    "question": "What should be done with a used needle after an injection?",
-    "optionA": "Recap it using both hands",
-    "optionB": "Put it uncapped in a sharps box",
-    "optionC": "Bend it before disposal",
-    "optionD": "Place it in a trash bag",
+    "question": "Wiping the x-ray table with disinfectant between patients is an example of:",
+    "optionA": "Surgical asepsis",
+    "optionB": "Medical asepsis",
+    "optionC": "Sterilization",
+    "optionD": "Reverse isolation",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Needles are never recapped by hand, bent or broken; they go straight into a puncture-resistant sharps container to prevent sticks."
+    "explanation": "Medical asepsis reduces the number and spread of microorganisms, as when cleaning surfaces between patients. Surgical asepsis and sterilization remove all of them."
   },
   {
     "type": "ARRT",
@@ -326,14 +326,14 @@
     "state": "ALL",
     "questionId": "ARRT-CAR-024",
     "category": "arrtCare",
-    "question": "Bowel perforation is suspected and a GI study is ordered. Which contrast agent is preferred?",
-    "optionA": "Thick barium sulfate",
-    "optionB": "Air insufflation only",
-    "optionC": "Gadolinium chelate",
-    "optionD": "Water-soluble iodine",
+    "question": "A patient who takes metformin has severe kidney disease (eGFR below 30) and receives IV iodinated contrast. What is usually done with the metformin?",
+    "optionA": "Doubled the night before",
+    "optionB": "Given with the contrast",
+    "optionC": "Stopped for one year",
+    "optionD": "Held for 48 hours after",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Barium leaking into the peritoneal cavity causes serious peritonitis, so a water-soluble iodinated agent is used when perforation is possible."
+    "explanation": "Under ACR guidance, metformin is held at the time of and for 48 hours after contrast in patients with an eGFR below 30 or acute kidney injury, and restarted once kidney function is rechecked, because of the risk of lactic acidosis."
   },
   {
     "type": "ARRT",
@@ -410,14 +410,14 @@
     "state": "ALL",
     "questionId": "ARRT-CAR-030",
     "category": "arrtCare",
-    "question": "A patient begins a tonic-clonic seizure on the table. What should the radiographer do first?",
-    "optionA": "Hold the limbs still",
-    "optionB": "Protect them from injury",
-    "optionC": "Put a bite block in the mouth",
-    "optionD": "Give oral fluids",
+    "question": "A trauma patient arrives on a backboard in a cervical collar for a cross-table lateral spine. What should be done with the collar?",
+    "optionA": "Remove it first",
+    "optionB": "Leave it in place",
+    "optionC": "Loosen it to turn the head",
+    "optionD": "Swap it for a pillow",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Keep the patient from falling or striking hard objects, do not restrain the limbs or put anything in the mouth, and call for help."
+    "explanation": "The collar stays on and the head is not moved until a physician has cleared the cervical spine on the images. The cross-table lateral is taken without moving the patient."
   },
   {
     "type": "ARRT",
@@ -1936,14 +1936,14 @@
     "state": "ALL",
     "questionId": "ARRT-HSP-007",
     "category": "arrtHead",
-    "question": "For a lateral skull, which plane is perpendicular to the image receptor?",
-    "optionA": "Midsagittal plane",
-    "optionB": "Orbitomeatal line",
+    "question": "For a lateral skull, which line is placed perpendicular to the image receptor?",
+    "optionA": "Orbitomeatal line",
+    "optionB": "Acanthiomeatal line",
     "optionC": "Interpupillary line",
-    "optionD": "Coronal plane",
+    "optionD": "Infraorbitomeatal line",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "The midsagittal plane is parallel and the interpupillary line perpendicular to the receptor, so the orbital roofs and mandibular rami superimpose."
+    "explanation": "The midsagittal plane is parallel and the interpupillary line perpendicular to the receptor, so the orbital roofs and mandibular rami superimpose. The IOML stays parallel to the transverse axis of the receptor."
   },
   {
     "type": "ARRT",

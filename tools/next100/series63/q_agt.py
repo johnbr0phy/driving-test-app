@@ -43,7 +43,7 @@ Q = [
  "A contract existed before she left", ["Her clients sign waivers", "She keeps her registration", "The Administrator approves each payment"],
  "Continuing commissions to a retired registered person are allowed under a bona fide contract entered into while registered, provided the person does not solicit new business or open new accounts."),
 ("Absent an order from the Administrator, an agent's registration becomes effective:",
- "At noon on the 30th day after filing", ["At 3 p.m. on the second business day", "When FINRA approves it", "Ten days after filing"],
+ "At noon on the 30th day after filing", ["Five business days after filing", "When FINRA approves it", "Ten days after filing"],
  "Under the USA, a broker-dealer, agent or adviser registration becomes effective at noon of the thirtieth day after a complete application is filed, unless the Administrator acts sooner or a proceeding is pending."),
 ("An agent registered only in State A phones a prospect in State B to recommend a stock. She:",
  "Must be registered in State B", ["Needs only State A registration", "Needs only her firm's approval", "Is outside State B's reach"],

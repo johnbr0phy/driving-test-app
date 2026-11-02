@@ -1,6 +1,7 @@
 import type { QuizPublic } from "@/lib/quizzes";
 import { quizExamId } from "@/lib/quizzes";
 import { classMembership, getMembership, saveMembership, type ClassMembership } from "@/lib/classProgress";
+import { isInternalBrowser } from "@/lib/internal";
 
 // The player side of quizzes (lib/quizzes.ts): giving a name on a quiz page
 // makes this browser a member of the quiz, stored with the class memberships
@@ -57,7 +58,7 @@ const PLAYED_KEY = "tigertest-quizzes-played";
 
 /** Count this browser once per quiz, on its first answer. */
 export function recordQuizPlayOnce(code: string) {
-  if (typeof window === "undefined") return;
+  if (typeof window === "undefined" || isInternalBrowser()) return;
   let played: string[] = [];
   try {
     played = JSON.parse(localStorage.getItem(PLAYED_KEY) ?? "[]");

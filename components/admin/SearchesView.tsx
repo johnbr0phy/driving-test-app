@@ -70,40 +70,32 @@ function Table({ title, note, rows, showPicks }: { title: string; note: string; 
   );
 }
 
-// Admin view of what people type into the test search (homepage and header chip). API: /api/admin/searches (admin only).
-export default function HomeV2SearchesPage() {
+// The Searches tab on /admin: what people type into the test search (the
+// homepage box and the header's test search). API: /api/admin/searches.
+export function SearchesView() {
   const { data, error, loading } = useAdminFetch<Payload>("/api/admin/searches");
+  if (loading) return <TabLoading />;
+  if (error || !data) return <TabError message={error || "Failed to load"} />;
   return (
-    <main className="min-h-screen bg-gray-50 dark:bg-gray-950 px-4 py-8">
-      <div className="max-w-5xl mx-auto space-y-4">
-        <div>
-          <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-50">Homepage searches</h1>
-          <p className="text-sm text-gray-600 dark:text-gray-300">
-            What people type on the <Link href="/" className="underline">homepage</Link> and the header&apos;s test search. Searches that find nothing are the tests to build next.
-          </p>
-        </div>
-        {loading && <TabLoading />}
-        {error && <TabError message={error} />}
-        {data && (
-          <>
-            <div className="grid grid-cols-3 gap-3">
-              {[
-                ["Searches", data.totals.total],
-                ["Found nothing", data.totals.misses],
-                ["Tests opened", data.totals.picks],
-              ].map(([label, n]) => (
-                <div key={label} className={CARD}>
-                  <div className="text-2xl font-bold tabular-nums text-gray-900 dark:text-gray-50">{n}</div>
-                  <div className="text-sm text-gray-500 dark:text-gray-400">{label}</div>
-                </div>
-              ))}
-            </div>
-            <Table title="Found nothing: build these" note="Most searched first, where the last search returned no test." rows={data.misses} showPicks={false} />
-            <Table title="Most searched" note="Every query, with the tests people opened from it." rows={data.top} showPicks />
-            <Table title="Latest" note="The 50 most recent searches." rows={data.recent} showPicks />
-          </>
-        )}
+    <div className="space-y-4">
+      <p className="text-sm text-gray-600 dark:text-gray-300">
+        What people type into the search on the <Link href="/" className="underline">homepage</Link> and in the header. Searches that find nothing are the tests to build next.
+      </p>
+      <div className="grid grid-cols-3 gap-3">
+        {[
+          ["Searches", data.totals.total],
+          ["Found nothing", data.totals.misses],
+          ["Tests opened", data.totals.picks],
+        ].map(([label, n]) => (
+          <div key={label} className={CARD}>
+            <div className="text-2xl font-bold tabular-nums text-gray-900 dark:text-gray-50">{n}</div>
+            <div className="text-sm text-gray-500 dark:text-gray-400">{label}</div>
+          </div>
+        ))}
       </div>
-    </main>
+      <Table title="Found nothing: build these" note="Most searched first, where the last search returned no test." rows={data.misses} showPicks={false} />
+      <Table title="Most searched" note="Every query, with the tests people opened from it." rows={data.top} showPicks />
+      <Table title="Latest" note="The 50 most recent searches." rows={data.recent} showPicks />
+    </div>
   );
 }

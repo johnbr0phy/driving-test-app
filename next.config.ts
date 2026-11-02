@@ -75,7 +75,7 @@ const nextConfig: NextConfig = {
       // state itself. Not permanent: old links (emails, Stripe returns,
       // bookmarks) keep working and their query strings carry over.
       { source: "/dashboard", destination: "/dmv/dashboard", permanent: false },
-      // The search homepage trial became the homepage (Nov 2026); /home-v2/searches stays.
+      // The search homepage trial became the homepage (Nov 2026).
       { source: "/home-v2", destination: "/", permanent: true },
       { source: "/onboarding/select-state", destination: "/dmv/dashboard", permanent: false },
       // Connector setup and the quiz maker are one page now; #add-to-claude
@@ -94,6 +94,7 @@ const nextConfig: NextConfig = {
       { source: "/admin/opportunities", destination: "/admin", permanent: false },
       { source: "/admin/v2", destination: "/admin?tab=growth", permanent: false },
       { source: "/admin/teach", destination: "/admin?tab=teachers", permanent: false },
+      { source: "/home-v2/searches", destination: "/admin?tab=searches", permanent: false },
       // Every exam has the same app URLs: /<exam>/dashboard, /<exam>/practice/<n>
       // and /<exam>/test/<n> (bare /<exam> redirects to its dashboard). These map
       // the older shapes: /training?set=n (DMV and v1), /<exam>/train?drill=key

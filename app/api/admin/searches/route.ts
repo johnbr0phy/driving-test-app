@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getAdminDb } from '@/lib/firebase-admin';
 import { requireAdmin } from '@/lib/server/adminAuth';
 
-// Admin read of homepage searches (/home-v2/searches): totals, the most
+// Admin read of test searches (the Searches tab on /admin): totals, the most
 // searched queries, and the ones that found nothing (tests to build next).
 export async function GET(request: NextRequest) {
   const denied = await requireAdmin(request);

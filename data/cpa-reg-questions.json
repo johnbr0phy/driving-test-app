@@ -858,14 +858,14 @@
     "state": "ALL",
     "questionId": "CPAREG-STR-002",
     "category": "cparegStructure",
-    "question": "In a limited partnership, which partner has unlimited personal liability for its debts?",
-    "optionA": "Each limited partner",
-    "optionB": "Each general partner",
-    "optionC": "The largest investor",
-    "optionD": "The newest partner",
+    "question": "A limited partner who takes no part in managing the partnership is liable for its debts:",
+    "optionA": "Jointly and severally",
+    "optionB": "Only up to her investment",
+    "optionC": "In proportion to profits",
+    "optionD": "Up to twice her investment",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "A limited partnership needs at least one general partner, who is personally liable. Limited partners risk only their investment."
+    "explanation": "A limited partner's risk is limited to her contribution. The general partners are personally liable for the limited partnership's obligations."
   },
   {
     "type": "CPAREG",
@@ -1740,14 +1740,14 @@
     "state": "ALL",
     "questionId": "CPAREG-DED-017",
     "category": "cparegDeductions",
-    "question": "Mia sells stock at a $2,000 loss on December 20 and buys the same stock back on January 5. The loss is:",
+    "question": "Mia buys more shares of a stock on November 25, then on December 20 sells her older shares of it at a $2,000 loss. The loss is:",
     "optionA": "Deferred into the new shares",
     "optionB": "Deductible this year",
     "optionC": "Lost permanently",
     "optionD": "Deductible next year",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "The repurchase falls within 30 days, so the wash sale rule disallows the loss and adds it to the basis of the new shares."
+    "explanation": "The wash sale window runs 30 days before and after the sale, so a purchase 25 days earlier counts. The loss is disallowed and added to the basis of the November shares."
   },
   {
     "type": "CPAREG",
@@ -2034,28 +2034,28 @@
     "state": "ALL",
     "questionId": "CPAREG-COR-002",
     "category": "cparegCorp",
-    "question": "Which item is a permanent difference between book income and taxable income?",
-    "optionA": "Accelerated depreciation",
-    "optionB": "Municipal bond interest",
-    "optionC": "Warranty reserve accruals",
-    "optionD": "Rent received in advance",
+    "question": "A corporation's book income of $400,000 includes $12,000 of municipal bond interest and is net of an $8,000 fine paid to a state. Adjusting for these two items, taxable income is:",
+    "optionA": "$404,000",
+    "optionB": "$396,000",
+    "optionC": "$420,000",
+    "optionD": "$380,000",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Tax-exempt interest is in book income but never in taxable income, so it never reverses. The other items are timing differences."
+    "explanation": "Tax-exempt interest is subtracted and the nondeductible fine is added back: $400,000 - $12,000 + $8,000 = $396,000."
   },
   {
     "type": "CPAREG",
     "state": "ALL",
     "questionId": "CPAREG-COR-003",
     "category": "cparegCorp",
-    "question": "Which item creates a temporary difference between book and taxable income?",
-    "optionA": "Fines paid to a government",
-    "optionB": "Key-person life premiums",
-    "optionC": "A bad debt allowance",
-    "optionD": "Tax-exempt interest",
+    "question": "On Schedule M-1, which item is subtracted from book income to reach taxable income?",
+    "optionA": "Excess of capital losses",
+    "optionB": "Federal income tax expense",
+    "optionC": "Life insurance proceeds received",
+    "optionD": "Nondeductible meal costs",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Books expense estimated bad debts through an allowance, while tax deducts them when written off, so the difference reverses over time."
+    "explanation": "Life insurance proceeds are book income but excluded from taxable income, so they are subtracted. The other three are added back to book income."
   },
   {
     "type": "CPAREG",

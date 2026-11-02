@@ -38,13 +38,19 @@ All checked 2026-11-02.
   Interventions 20%, Indirect Client Care 12%, Legal and Ethical Compliance 20%. Spanish forms
   exist. NOT modelled: this bank follows the current (2019 job analysis) outline; the landing and
   examFacts say the change is coming.
-- ACA Code of Ethics (2014), American Counseling Association: standards cited by number in
-  explanations (A.2.b informed consent content, A.4.b personal values, A.5.c former clients five
-  years, A.10.e bartering, A.10.f gifts, A.11.a abandonment, A.11.c termination, B.4.a group
-  confidentiality, B.5.b parents and guardians, B.6.g disclosure or transfer of records, C.2.b new
-  specialty areas, C.2.g impairment, E.5.d refraining from diagnosis, H.1.b distance counseling
-  laws, H.6.a virtual professional presence). Section numbers from the 2014 code as published;
-  checked against memory of the code, not re-read on 2026-11-02.
+- ACA Code of Ethics (2014), American Counseling Association,
+  https://www.counseling.org/docs/default-source/default-document-library/ethics/2014-aca-code-of-ethics.pdf
+  (PDF text re-read 2026-11-02): standards cited by number in explanations, each checked against
+  the code text: A.2.b informed consent content (incl. fees and billing), A.4.b personal values,
+  A.5.c former clients five years plus documented forethought, A.10.e bartering (not exploitive,
+  client requests, accepted community practice, written contract), A.10.f gifts (relationship,
+  value, client's and counselor's motivation), A.11.c termination, A.11.d transfer of services,
+  A.12 abandonment and client neglect (was wrongly cited as A.11.a, which is competence within
+  termination and referral), B.4.a group confidentiality (importance and parameters; the code
+  itself does not say "cannot be guaranteed", so the explanation no longer attributes that to it),
+  B.5.b parents and guardians, B.6.g disclosure or transfer of records, C.2.b new specialty areas,
+  C.2.g impairment, E.5.d refraining from diagnosis, H.1.b distance counseling laws of both
+  locations, H.6.a separate professional and personal virtual presence.
 - APA, DSM-5-TR (2022): diagnostic durations used (MDD 2 weeks, persistent depressive disorder 2
   years in adults, manic episode 1 week, hypomanic 4 days, cyclothymic 2 years, GAD 6 months,
   panic disorder 1 month of worry, acute stress disorder 3 days to 1 month, PTSD more than 1 month,

@@ -543,7 +543,7 @@
     "optionD": "The consumer has a score under 620",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "The Act amended the FCRA so that trigger leads from a mortgage credit inquiry can go only to a lender with the consumer's consent or an existing relationship, and the lender must still make a firm offer of credit."
+    "explanation": "The Act amended the FCRA so that trigger leads from a mortgage credit inquiry can go only to a lender the consumer has authorized, or to one making a firm offer of credit that already has a relationship with the consumer (it originated or services the current mortgage, or holds an account with the consumer)."
   },
   {
     "type": "NMLS",
@@ -2328,14 +2328,14 @@
     "state": "ALL",
     "questionId": "NMLS-ETH-003",
     "category": "nmlsEthics",
-    "question": "A lender applies the same minimum loan amount to every applicant, but the rule excludes far more applicants of one race without a business need. Under fair lending law this may be:",
+    "question": "A lender applies the same minimum loan amount to every applicant, but the rule excludes far more applicants of one race without a business need. Under the Fair Housing Act this may be:",
     "optionA": "Disparate treatment",
     "optionB": "Redlining",
     "optionC": "Disparate impact",
     "optionD": "Reverse redlining",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Disparate impact is a neutral policy that falls more heavily on a protected group without a legitimate business justification. Disparate treatment is treating applicants differently because of a protected trait."
+    "explanation": "Disparate impact is a neutral policy that falls more heavily on a protected group without a legitimate business justification; courts recognize it under the Fair Housing Act. Since July 21, 2026, Regulation B no longer treats it as an ECOA violation. Disparate treatment is treating applicants differently because of a protected trait."
   },
   {
     "type": "NMLS",
@@ -2664,7 +2664,7 @@
     "state": "ALL",
     "questionId": "NMLS-ETH-027",
     "category": "nmlsEthics",
-    "question": "A borrower has the same address listed on several recent applications at different lenders, each claiming owner occupancy. This suggests:",
+    "question": "In the same week, a borrower applies at three lenders to buy three different houses and states on each application that the house will be the primary residence. This suggests:",
     "optionA": "Normal rate shopping",
     "optionB": "A refinance in progress",
     "optionC": "Shotgunning fraud",

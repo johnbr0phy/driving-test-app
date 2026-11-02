@@ -20,7 +20,7 @@ Q = [
  "The Red Flags Rule requires financial institutions and creditors with covered accounts to run a written program that spots, detects and responds to warning signs of identity theft."),
 ("Since the Homebuyers Privacy Protection Act took effect in March 2026, a credit bureau may sell a mortgage trigger lead to a lender only if:",
  "The consumer agrees or is a customer", ["The lender pays a higher fee for it", "The lead is sent within 24 hours", "The consumer has a score under 620"],
- "The Act amended the FCRA so that trigger leads from a mortgage credit inquiry can go only to a lender with the consumer's consent or an existing relationship, and the lender must still make a firm offer of credit."),
+ "The Act amended the FCRA so that trigger leads from a mortgage credit inquiry can go only to a lender the consumer has authorized, or to one making a firm offer of credit that already has a relationship with the consumer (it originated or services the current mortgage, or holds an account with the consumer)."),
 ("A mortgage lender plans to share borrowers' names and loan balances with an unrelated home warranty company for its marketing. Under the Gramm-Leach-Bliley Act, borrowers must first get:",
  "Notice and a chance to opt out", ["A refund of the application fee", "A free copy of their credit report", "A new Loan Estimate"],
  "GLBA's privacy rule requires a privacy notice and gives consumers the right to opt out of sharing with nonaffiliated third parties, with exceptions such as service providers and legal or regulatory requests."),

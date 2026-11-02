@@ -95,7 +95,7 @@
     "optionD": "It ends on the last group day",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Standard B.4.a asks group leaders to stress the importance of confidentiality and explain that it cannot be guaranteed, since other members are not bound the way the counselor is."
+    "explanation": "Standard B.4.a asks group leaders to explain the importance and limits of confidentiality for the group. The leader is bound by it, but other members are not bound the same way, so the leader cannot promise that everyone will keep it."
   },
   {
     "type": "NCE",
@@ -123,7 +123,7 @@
     "optionD": "Moving all her clients to her new practice",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Standard A.11.a bars abandoning clients. When a counselor leaves, she plans transfers, refers appropriately and makes sure care continues."
+    "explanation": "Standard A.12 bars abandoning or neglecting clients, and A.11.d asks that transfers keep open communication with clients and the new practitioners. A leaving counselor plans transfers and makes sure care continues."
   },
   {
     "type": "NCE",

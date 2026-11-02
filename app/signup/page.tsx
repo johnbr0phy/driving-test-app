@@ -10,6 +10,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { states } from "@/data/states";
+import { defaultEmailConsent } from "@/lib/privacyRegion";
 import { useStore } from "@/store/useStore";
 import { trackFunnelStep } from "@/lib/funnel";
 import { WebViewGoogleWarning } from "@/components/WebViewGoogleWarning";
@@ -48,7 +49,9 @@ function SignupPageContent() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
-  const [emailConsent, setEmailConsent] = useState(true);
+  // Unticked in the EEA, UK, Switzerland and Canada (lib/privacyRegion.ts).
+  const [emailConsent, setEmailConsent] = useState(false);
+  useEffect(() => setEmailConsent(defaultEmailConsent()), []);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
@@ -152,8 +155,9 @@ function SignupPageContent() {
     setLoading(true);
 
     try {
-      // Set email consent preference (default true for Google sign-in)
-      setStoreEmailConsent(true);
+      // Google has no checkbox: opted in where the law allows it
+      // (lib/privacyRegion.ts), and every email has one-click unsubscribe.
+      setStoreEmailConsent(defaultEmailConsent());
 
       // On mobile, loginWithGoogle never returns — it navigates to the
       // Google redirect flow. Stash the chosen state so the effect below
@@ -381,6 +385,13 @@ function SignupPageContent() {
                 {t("common.logIn")}
               </Link>
             </div>
+
+            <p className="text-center text-xs text-gray-500 dark:text-gray-400">
+              By creating an account you agree to the{" "}
+              <Link href="/terms" className="underline">Terms</Link> and{" "}
+              <Link href="/privacy" className="underline">Privacy Policy</Link> and confirm you are 13 or older (16 in
+              the EU and UK, unless a parent agrees).
+            </p>
           </div>
         </CardContent>
       </Card>

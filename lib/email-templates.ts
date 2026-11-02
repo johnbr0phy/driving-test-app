@@ -13,6 +13,7 @@
 // exam name, question counts and links match the exam the reader is studying.
 // Pass voiceFor("dmv") for the original DMV copy.
 
+import { postalFooterLine } from "@/lib/emailPostal";
 import { EmailVoice, dashboardUrl, statsUrl } from "@/lib/email-voice";
 import { TEST_REQUEST_PICKS } from "@/lib/test-requests";
 import { EXAMS_V2 } from "@/lib/v2/registry";
@@ -102,7 +103,7 @@ ${body}
           <tr>
             <td style="padding: 24px 40px; background-color: #FFF9F5; border-top: 1px solid #f0f0f0;">
               <p style="margin: 0; color: #999999; font-size: 12px; line-height: 1.6; text-align: center;">
-                ${footerLinks}
+                ${footerLinks}${unsubscribe ? postalFooterLine() : ""}
               </p>
             </td>
           </tr>

@@ -1740,7 +1740,7 @@
     "state": "ALL",
     "questionId": "CPAREG-DED-017",
     "category": "cparegDeductions",
-    "question": "Mia buys more shares of a stock on November 25, then on December 20 sells her older shares of it at a $2,000 loss. The loss is:",
+    "question": "Mia buys 100 more shares of a stock on November 25, then on December 20 sells 100 older shares of it at a $2,000 loss. The loss is:",
     "optionA": "Deferred into the new shares",
     "optionB": "Deductible this year",
     "optionC": "Lost permanently",

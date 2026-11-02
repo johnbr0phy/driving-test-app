@@ -48,7 +48,7 @@ Q = [
 ("A taxpayer sells her personal car at a loss. The loss is:",
  "Not deductible", ["A capital loss", "An ordinary loss", "Deductible to $3,000"],
  "A loss on the sale of a personal-use asset is not deductible, even though a gain on the same asset would be taxable."),
-("Mia buys more shares of a stock on November 25, then on December 20 sells her older shares of it at a $2,000 loss. The loss is:",
+("Mia buys 100 more shares of a stock on November 25, then on December 20 sells 100 older shares of it at a $2,000 loss. The loss is:",
  "Deferred into the new shares", ["Deductible this year", "Lost permanently", "Deductible next year"],
  "The wash sale window runs 30 days before and after the sale, so a purchase 25 days earlier counts. The loss is disallowed and added to the basis of the November shares."),
 ("Ed sells stock to his brother at a $3,000 loss. Ed's loss is:",

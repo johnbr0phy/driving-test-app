@@ -14,13 +14,15 @@ import {
   ExternalLink,
   ChevronRight,
 } from "lucide-react";
-import { getStateBySlug, getStateByCode } from "@/data/states";
+import { getStateBySlug, getStateByCode, permitAgeText } from "@/data/states";
+import { DMV_LANGUAGE_PAGES_UPDATED_AT } from "@/lib/seoDates";
 import { getStateLandingInfoKo } from "@/data/stateLandingDataKo";
 import { KO_STATE_CODES } from "@/data/koStates";
 import { isZhState } from "@/data/zhStates";
 import { isViState } from "@/data/viStates";
+import { SITE_URL } from "@/lib/siteUrl";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
+const siteUrl = SITE_URL;
 
 // Mirrors the English state page so AI engines see a consistent publish date
 // across language variants.
@@ -118,9 +120,7 @@ export default async function KoreanStateDMVPage({ params }: PageProps) {
     notFound();
   }
 
-  const rawPassing = Math.ceil(
-    (state.writtenTestQuestions * state.passingScore) / 100
-  );
+  const rawPassing = state.passCount;
 
   const neighboringStates = landingInfo.neighboringSlugs
     .map((s) => getStateBySlug(s))
@@ -142,7 +142,7 @@ export default async function KoreanStateDMVPage({ params }: PageProps) {
     },
     {
       question: `${state.name}에서 임시 면허는 몇 살부터 받을 수 있나요?`,
-      answer: `${state.name}에서는 만 ${state.minPermitAge}세부터 임시 면허를 신청할 수 있습니다. 면허를 받으려면 필기시험과 시력 검사를 모두 통과해야 합니다.`,
+      answer: `${state.name}에서는 만 ${permitAgeText(state.minPermitAge, "ko")}부터 임시 면허를 신청할 수 있습니다. 면허를 받으려면 필기시험과 시력 검사를 모두 통과해야 합니다.`,
     },
     {
       question: `${state.name} 필기시험에 불합격하면 어떻게 되나요?`,
@@ -188,8 +188,9 @@ export default async function KoreanStateDMVPage({ params }: PageProps) {
     ],
   };
 
-  // Build-time timestamp; baked into the static page on each deploy.
-  const lastModifiedIso = new Date().toISOString();
+  // Hand-bumped in lib/seoDates.ts when the state pages change, so the
+  // date does not move on every deploy.
+  const lastModifiedIso = DMV_LANGUAGE_PAGES_UPDATED_AT;
 
   // JSON-LD: WebApplication / LearningResource — mirrors the English page so
   // Korean results are equally citable in AI answers.
@@ -398,7 +399,7 @@ export default async function KoreanStateDMVPage({ params }: PageProps) {
             <CardContent className="p-4 md:p-6 text-center">
               <Clock className="h-6 w-6 md:h-8 md:w-8 text-brand-dark mx-auto mb-2" />
               <div className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 mb-1">
-                {state.minPermitAge}
+                {permitAgeText(state.minPermitAge, "ko")}
               </div>
               <div className="text-sm text-gray-600 dark:text-gray-300">임시 면허 최소 연령</div>
             </CardContent>
@@ -445,7 +446,7 @@ export default async function KoreanStateDMVPage({ params }: PageProps) {
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300">
                   {state.name}에서 임시 면허를 신청하려면 만{" "}
-                  <strong>{state.minPermitAge}세</strong> 이상이어야 합니다.
+                  <strong>{permitAgeText(state.minPermitAge, "ko")}</strong> 이상이어야 합니다.
                   면허가 발급되기 전에 필기시험과 시력 검사를 모두 통과해야
                   합니다.
                 </p>

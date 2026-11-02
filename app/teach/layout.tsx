@@ -1,11 +1,12 @@
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import type { Metadata } from "next";
+import { SITE_URL } from "@/lib/siteUrl";
 
 const title = "Free Practice Tests for Your Class";
 const description =
   "Make a free Tigertest class for any test on the site. Post one link, students join with a name, and you see who practiced and what the class keeps missing.";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
+const siteUrl = SITE_URL;
 
 // Absolute, like every other canonical: a relative one resolves against
 // metadataBase (the www asset origin), not the sitemap's host.

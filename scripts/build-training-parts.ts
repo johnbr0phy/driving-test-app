@@ -55,10 +55,12 @@ function splitPoints(cats: string[]): number[] {
 }
 
 const out: Record<string, { starts: string[]; sizes: number[] }> = {};
+const bankSizes: Record<string, number> = {};
 const problems: string[] = [];
 
 for (const exam of ALL_EXAMS) {
   const bank = getExamQuestions(exam.id);
+  bankSizes[exam.id] = bank.length;
   for (const def of exam.trainingSets) {
     const ids = getExamTrainingSetQuestions(exam, def.setNumber).map((q) => q.questionId);
     if (ids.length !== def.size) problems.push(`${exam.id} set ${def.setNumber}: size ${def.size}, bank has ${ids.length}`);
@@ -75,17 +77,27 @@ for (const exam of ALL_EXAMS) {
   }
 }
 
-const file = join(process.cwd(), "lib/trainingParts.json");
-const json = JSON.stringify(out, null, 2) + "\n";
+const files: { path: string; json: string; what: string }[] = [
+  { path: join(process.cwd(), "lib/trainingParts.json"), json: JSON.stringify(out, null, 2) + "\n", what: `${Object.keys(out).length} split sets` },
+  { path: join(process.cwd(), "lib/examBankSizes.json"), json: JSON.stringify(bankSizes, null, 2) + "\n", what: `${Object.keys(bankSizes).length} bank sizes` },
+];
 if (problems.length) console.warn(`Set sizes that do not match the bank:\n  ${problems.join("\n  ")}`);
 if (process.argv.includes("--check")) {
-  const current = readFileSync(file, "utf8");
-  if (current !== json) {
-    console.error("lib/trainingParts.json is stale: run npx tsx scripts/build-training-parts.ts");
-    process.exit(1);
+  let stale = false;
+  for (const f of files) {
+    let current = "";
+    try { current = readFileSync(f.path, "utf8"); } catch { /* missing counts as stale */ }
+    if (current !== f.json) {
+      console.error(`${f.path} is stale: run npx tsx scripts/build-training-parts.ts`);
+      stale = true;
+    } else {
+      console.log(`${f.path} is up to date (${f.what})`);
+    }
   }
-  console.log(`lib/trainingParts.json is up to date (${Object.keys(out).length} split sets)`);
+  if (stale) process.exit(1);
 } else {
-  writeFileSync(file, json);
-  console.log(`Wrote ${Object.keys(out).length} split sets to lib/trainingParts.json`);
+  for (const f of files) {
+    writeFileSync(f.path, f.json);
+    console.log(`Wrote ${f.what} to ${f.path}`);
+  }
 }

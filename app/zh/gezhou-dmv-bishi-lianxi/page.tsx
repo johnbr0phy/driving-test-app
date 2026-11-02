@@ -4,8 +4,9 @@ import Link from "next/link";
 import { ChevronRight, Info } from "lucide-react";
 import { getStateByCode } from "@/data/states";
 import { ZH_STATE_CODES } from "@/data/zhStates";
+import { SITE_URL } from "@/lib/siteUrl";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
+const siteUrl = SITE_URL;
 
 export const metadata: Metadata = {
   title: { absolute: "各州DMV笔试模拟考试 2026 - 免费 | Tigertest" },

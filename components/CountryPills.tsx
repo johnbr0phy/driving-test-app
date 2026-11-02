@@ -203,11 +203,11 @@ export function CountryPills({ current, onChange, lang = "en" }: { current: Regi
   return (
     <div ref={box} className="flex flex-col items-center">
       {onChange ? (
-        <div role="radiogroup" aria-label={c.showTestsFor} className={row}>
+        <div role="group" aria-label={c.showTestsFor} className={row}>
           {rowRegions.map((r) => {
             const on = r.code === current;
             return (
-              <button key={r.code} type="button" role="radio" aria-checked={on} aria-label={nameOf(r.code)} title={nameOf(r.code)} onClick={() => !on && save(r.code)} className={pill(on)}>
+              <button key={r.code} type="button" aria-pressed={on} aria-label={nameOf(r.code)} title={nameOf(r.code)} onClick={() => !on && save(r.code)} className={pill(on)}>
                 {label(r)}
               </button>
             );

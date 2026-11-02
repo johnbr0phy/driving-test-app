@@ -46,6 +46,7 @@ export function SearchHome({
   popularity,
   trending,
   answeredThisWeek,
+  headline,
 }: {
   initialRegion: Region;
   popularity: Record<string, number>;
@@ -53,6 +54,10 @@ export function SearchHome({
   trending: string[];
   /** Questions answered on Tigertest in the last 7 days, null when unknown. */
   answeredThisWeek: number | null;
+  /** A country homepage's own h1 ("Free UK practice tests: driving, school and more",
+   *  lib/regionHeadline.ts). It takes the tagline's place and the wordmark is no longer
+   *  the heading; the US page leaves it unset. */
+  headline?: string;
 }) {
   const router = useRouter();
   const { user } = useAuth();
@@ -172,23 +177,35 @@ export function SearchHome({
         {/* The wordmark. Shrinks to one line while searching so results stay above a phone keyboard. */}
         <div className={`flex items-center justify-center ${showResults ? "gap-2 pt-3 pb-4" : "gap-3 pt-10 pb-3 sm:pt-[12vh] sm:pb-4"}`}>
           <Image src="/tiger.png" alt="" width={96} height={96} priority className={showResults ? "w-8 h-8" : "w-16 h-16 sm:w-24 sm:h-24"} />
-          <h1 className={`font-extrabold tracking-tight text-gray-900 dark:text-gray-50 ${showResults ? "text-2xl" : "text-5xl sm:text-7xl"}`}>
-            Tigertest
-            {/* What the page is, for search engines and screen readers; the wordmark stays the visible heading. */}
-            <span className="sr-only">: free practice tests for {TEST_CATALOG.length} exams</span>
-          </h1>
+          {headline ? (
+            <p className={`font-extrabold tracking-tight text-gray-900 dark:text-gray-50 ${showResults ? "text-2xl" : "text-5xl sm:text-7xl"}`}>Tigertest</p>
+          ) : (
+            <h1 className={`font-extrabold tracking-tight text-gray-900 dark:text-gray-50 ${showResults ? "text-2xl" : "text-5xl sm:text-7xl"}`}>
+              Tigertest
+              {/* What the page is, for search engines and screen readers; the wordmark stays the visible heading. */}
+              <span className="sr-only">: free practice tests for {TEST_CATALOG.length} exams</span>
+            </h1>
+          )}
         </div>
+
+        {/* A country page's h1 sits in the tagline's row, and stays in the page (visually hidden) while searching. */}
+        {headline && (
+          <h1 className={showResults ? "sr-only" : "text-center text-base font-medium text-gray-700 dark:text-gray-200 sm:text-lg"}>{headline}</h1>
+        )}
 
         {!showResults && (
           <>
-            <p className="text-center text-base text-gray-600 dark:text-gray-300 sm:text-lg">Free prep, any test, anywhere.</p>
-            {answeredThisWeek !== null && answeredThisWeek > 0 ? (
+            {!headline && <p className="text-center text-base text-gray-600 dark:text-gray-300 sm:text-lg">Free prep, any test, anywhere.</p>}
+            {/* The weekly count is site-wide (mostly the US), so a country page drops it; its h1 often wraps to a second line in that space. */}
+            {!headline && answeredThisWeek !== null && answeredThisWeek > 0 ? (
               <p className="pt-2 pb-7 text-center text-sm text-gray-500 dark:text-gray-400 sm:pb-9">
                 <span aria-hidden className="mr-2 inline-block h-1.5 w-1.5 rounded-full bg-green-500 align-middle ring-[3px] ring-green-500/25" />
                 <CountUp value={answeredThisWeek} className="font-semibold text-gray-900 dark:text-gray-50 tabular-nums" /> questions answered this week
               </p>
             ) : (
-              <div className="pb-8 sm:pb-10" />
+              // A country page's h1 can wrap to two lines on a phone, so its gap is a line
+              // shorter: the search box stays where it is on the US page.
+              <div className={headline ? "pb-2 sm:pb-10" : "pb-8 sm:pb-10"} />
             )}
           </>
         )}

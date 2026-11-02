@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { SITE_URL } from "@/lib/siteUrl";
 import { QUIZZES_PAGES_UPDATED_AT } from "@/lib/seoDates";
 
 // /terms: plain-language terms of service. Written for the connector
@@ -7,7 +8,7 @@ import { QUIZZES_PAGES_UPDATED_AT } from "@/lib/seoDates";
 // is the first user-generated content on the site. A draft for John to
 // review, not legal advice.
 
-const SITE = "https://tigertest.io";
+const SITE = SITE_URL;
 const CONTACT = "john@johnbrophy.net";
 
 export const metadata: Metadata = {

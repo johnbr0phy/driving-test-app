@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/lib/siteUrl";
 import { SITEMAP_SEGMENTS } from "@/lib/sitemaps";
 import { MetadataRoute } from "next";
 
@@ -6,7 +7,7 @@ import { MetadataRoute } from "next";
 // the landing and state pages people actually ask about.
 const DISALLOW = [
   "/api/",
-  "/test",
+  "/test/", // not "/test": that would also block the /tests hub
   "/training",
   "/practice/", // not "/practice": that would also block /practice-tests-by-state
   "/drill", // the DMV miss drill; exam drills (/cdl/drill) are noindex instead
@@ -51,12 +52,10 @@ const AI_CRAWLERS = [
   "CCBot",
 ];
 
-// "/test" is a prefix rule, so it also caught the /tests hub. The longer
-// allow wins for Google and Bing.
-const ALLOW = ["/", "/tests"];
+const ALLOW = ["/"];
 
 export default function robots(): MetadataRoute.Robots {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
+  const siteUrl = SITE_URL;
 
   return {
     rules: [

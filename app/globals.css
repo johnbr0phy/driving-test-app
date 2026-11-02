@@ -1825,12 +1825,12 @@
 
   /* South Africa K53 learner's theme */
   [data-theme="zak53"] {
-    --brand: 81 90% 30%;
+    --brand: 81 90% 25%;
     --brand-foreground: 0 0% 100%;
     --brand-light: 81 60% 95%;
-    --brand-hover: 81 90% 25%;
-    --brand-dark: 81 90% 22%;
-    --brand-darker: 81 80% 15%;
+    --brand-hover: 81 90% 20%;
+    --brand-dark: 81 90% 19%;
+    --brand-darker: 81 80% 13%;
     --brand-muted: 81 30% 70%;
     --brand-border: 81 35% 78%;
     --brand-border-light: 81 30% 88%;
@@ -4549,6 +4549,8 @@
   }
 
   .dark [data-theme="zak53"] {
+    --brand: 81 90% 26.7%;
+    --brand-hover: 81 90% 20%;
     --brand-light: 81 45% 13%;
     --brand-gradient-to: 120 40% 11%;
     --brand-border-light: 81 30% 24%;

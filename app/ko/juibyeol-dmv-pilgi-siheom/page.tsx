@@ -4,8 +4,9 @@ import Link from "next/link";
 import { ChevronRight, Info } from "lucide-react";
 import { getStateByCode } from "@/data/states";
 import { KO_STATE_CODES } from "@/data/koStates";
+import { SITE_URL } from "@/lib/siteUrl";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
+const siteUrl = SITE_URL;
 
 export const metadata: Metadata = {
   title: { absolute: "주별 DMV 필기시험 연습문제 2026 - 무료 | Tigertest" },

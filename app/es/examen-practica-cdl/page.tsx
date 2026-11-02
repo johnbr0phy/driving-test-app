@@ -5,14 +5,15 @@ import Link from "next/link";
 import { ExternalLink, Monitor, Smartphone } from "lucide-react";
 import { getTigerAsset } from "@/lib/tigerAssets";
 import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHero";
-import { EXAM_LANDINGS_UPDATED_AT } from "@/lib/seoDates";
+import { landingUpdatedAt } from "@/lib/landingDates";
 import { ORGANIZATION_ID } from "@/lib/siteSchema";
+import { SITE_URL } from "@/lib/siteUrl";
 
 // Spanish landing for the CDL general knowledge test. The app pages are the
 // same /cdl/* routes in Spanish (ExamConfig.translations.es); the CTA here
 // switches the app language before opening the dashboard.
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
+const siteUrl = SITE_URL;
 const url = `${siteUrl}/es/examen-practica-cdl`;
 const enUrl = `${siteUrl}/cdl-practice-test`;
 
@@ -101,7 +102,7 @@ const jsonLd = {
       name: title,
       description,
       inLanguage: "es-US",
-      dateModified: EXAM_LANDINGS_UPDATED_AT,
+      dateModified: landingUpdatedAt("cdl"),
       isPartOf: { "@id": `${siteUrl}/#website` },
       publisher: { "@id": ORGANIZATION_ID },
       citation: "https://www.fmcsa.dot.gov/registration/commercial-drivers-license",
@@ -183,7 +184,7 @@ export default function CDLLandingPageEs() {
               href="https://www.fmcsa.dot.gov/registration/commercial-drivers-license"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-brand-dark hover:underline [overflow-wrap:anywhere]"
+              className="text-brand-dark underline underline-offset-2 hover:decoration-2 [overflow-wrap:anywhere]"
             >
               FMCSA
               <ExternalLink className="ml-0.5 inline h-3 w-3 align-baseline" aria-hidden="true" />

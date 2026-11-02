@@ -14,13 +14,15 @@ import {
   ExternalLink,
   ChevronRight,
 } from "lucide-react";
-import { getStateBySlug, getStateByCode } from "@/data/states";
+import { getStateBySlug, getStateByCode, permitAgeText } from "@/data/states";
+import { DMV_LANGUAGE_PAGES_UPDATED_AT } from "@/lib/seoDates";
 import { getStateLandingInfoZh } from "@/data/stateLandingDataZh";
 import { ZH_STATE_CODES } from "@/data/zhStates";
 import { isViState } from "@/data/viStates";
 import { isKoState } from "@/data/koStates";
+import { SITE_URL } from "@/lib/siteUrl";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
+const siteUrl = SITE_URL;
 
 // Mirrors the English state page so AI engines see a consistent publish date
 // across language variants.
@@ -118,9 +120,7 @@ export default async function ChineseStateDMVPage({ params }: PageProps) {
     notFound();
   }
 
-  const rawPassing = Math.ceil(
-    (state.writtenTestQuestions * state.passingScore) / 100
-  );
+  const rawPassing = state.passCount;
 
   const neighboringStates = landingInfo.neighboringSlugs
     .map((s) => getStateBySlug(s))
@@ -142,7 +142,7 @@ export default async function ChineseStateDMVPage({ params }: PageProps) {
     },
     {
       question: `在${state.name}几岁可以申请学习驾照？`,
-      answer: `在${state.name}，年满${state.minPermitAge}岁即可申请学习驾照。申请时必须通过笔试和视力检查。`,
+      answer: `在${state.name}，年满${permitAgeText(state.minPermitAge, "zh")}即可申请学习驾照。申请时必须通过笔试和视力检查。`,
     },
     {
       question: `${state.name}笔试没通过怎么办？`,
@@ -188,8 +188,9 @@ export default async function ChineseStateDMVPage({ params }: PageProps) {
     ],
   };
 
-  // Build-time timestamp; baked into the static page on each deploy.
-  const lastModifiedIso = new Date().toISOString();
+  // Hand-bumped in lib/seoDates.ts when the state pages change, so the
+  // date does not move on every deploy.
+  const lastModifiedIso = DMV_LANGUAGE_PAGES_UPDATED_AT;
 
   // JSON-LD: WebApplication / LearningResource. Mirrors the English page so
   // Chinese results are equally citable in AI answers.
@@ -397,7 +398,7 @@ export default async function ChineseStateDMVPage({ params }: PageProps) {
             <CardContent className="p-4 md:p-6 text-center">
               <Clock className="h-6 w-6 md:h-8 md:w-8 text-brand-dark mx-auto mb-2" />
               <div className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 mb-1">
-                {state.minPermitAge}
+                {permitAgeText(state.minPermitAge, "zh")}
               </div>
               <div className="text-sm text-gray-600 dark:text-gray-300">学习驾照最低年龄</div>
             </CardContent>
@@ -444,7 +445,7 @@ export default async function ChineseStateDMVPage({ params }: PageProps) {
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300">
                   在{state.name}申请学习驾照，必须年满
-                  <strong>{state.minPermitAge}岁</strong>
+                  <strong>{permitAgeText(state.minPermitAge, "zh")}</strong>
                   。领取学习驾照之前，必须通过笔试和视力检查。
                 </p>
               </div>

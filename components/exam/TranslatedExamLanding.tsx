@@ -6,7 +6,7 @@ import { ExternalLink, Monitor, Smartphone } from "lucide-react";
 import type { Language } from "@/i18n";
 import { getTigerAsset } from "@/lib/tigerAssets";
 import { EXAM_FACTS } from "@/lib/examFacts";
-import { EXAM_LANDINGS_UPDATED_AT } from "@/lib/seoDates";
+import { landingUpdatedAt } from "@/lib/landingDates";
 import { ORGANIZATION_ID } from "@/lib/siteSchema";
 import { examBaseLanguage, getExamById, localizeExam, type ExamId } from "@/lib/exams";
 import { examLandingAlternates, examLandingLocale } from "@/lib/examSeo";
@@ -15,6 +15,7 @@ import type { TranslatedLandingContent } from "@/lib/landingContent";
 import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHero";
 import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
+import { SITE_URL } from "@/lib/siteUrl";
 
 export type { TranslatedLandingContent };
 
@@ -30,7 +31,7 @@ export type { TranslatedLandingContent };
 // must import its bank module, "@/lib/banks/<id>", first) and `related` (the
 // exam's hub group and its country page).
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
+const siteUrl = SITE_URL;
 
 // Offers on an EU exam's page are in euros (or the country's own currency).
 const CURRENCY: Record<string, string> = {
@@ -106,7 +107,7 @@ export function TranslatedExamLanding({
         name: c.metaTitle,
         description: c.metaDescription,
         inLanguage,
-        dateModified: EXAM_LANDINGS_UPDATED_AT,
+        dateModified: landingUpdatedAt(examId),
         isPartOf: { "@id": `${siteUrl}/#website` },
         publisher: { "@id": ORGANIZATION_ID },
         ...(source ? { citation: source.url } : {}),
@@ -170,7 +171,7 @@ export function TranslatedExamLanding({
                   href={source.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-brand-dark hover:underline [overflow-wrap:anywhere]"
+                  className="text-brand-dark underline underline-offset-2 hover:decoration-2 [overflow-wrap:anywhere]"
                 >
                   {source.name}
                   <ExternalLink className="ml-0.5 inline h-3 w-3 align-baseline" aria-hidden="true" />

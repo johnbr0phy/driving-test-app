@@ -8,7 +8,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { useSearchParams } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import Image from "next/image";
 import { ArrowLeft, Flag } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -17,6 +17,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { TrainingCard } from "@/components/TrainingCard";
 import { FocusBar } from "@/components/FocusBar";
 import { Fireworks } from "@/components/Fireworks";
+import { AccessibleOverlay } from "@/components/AccessibleOverlay";
 import { useHydration } from "@/hooks/useHydration";
 import { useSound } from "@/hooks/useSound";
 import { shuffleQuestionOptions } from "@/lib/shuffleOptions";
@@ -63,6 +64,7 @@ export function QuizPractice({ code }: { code: string }) {
   const state = useQuiz(code);
   const quiz = state.quiz;
   const searchParams = useSearchParams();
+  const router = useRouter();
   const idsParam = searchParams.get("ids");
   const setParam = idsParam ? null : searchParams.get("set");
   const scope = idsParam ?? setParam;
@@ -147,7 +149,11 @@ export function QuizPractice({ code }: { code: string }) {
       {fireworks && <Fireworks duration={3000} onComplete={() => setFireworks(false)} />}
 
       {complete && (
-        <div className="fixed inset-0 z-50 overflow-y-auto animate-in fade-in duration-300">
+        <AccessibleOverlay
+          aria-label={idsParam ? "Misses cleared" : setParam ? "Set mastered" : "Every question mastered"}
+          onClose={() => router.push(home)}
+          className="fixed inset-0 z-50 overflow-y-auto animate-in fade-in duration-300"
+        >
           <div className="min-h-screen bg-gradient-to-b from-gray-950 to-green-950">
             <div className="relative max-w-6xl mx-auto px-4 pt-4">
               <Button asChild variant="ghost" className="text-gray-400 hover:text-white hover:bg-white/10 -ml-2">
@@ -202,7 +208,7 @@ export function QuizPractice({ code }: { code: string }) {
               )}
             </div>
           </div>
-        </div>
+        </AccessibleOverlay>
       )}
 
       <FocusBar exitHref={home} title={quiz.title} />

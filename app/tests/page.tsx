@@ -3,8 +3,9 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { TEST_CATALOG } from "@/lib/testCatalog";
 import { TestCatalogGrid } from "@/components/TestCatalogGrid";
+import { SITE_URL } from "@/lib/siteUrl";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
+const siteUrl = SITE_URL;
 
 const title = `All Practice Tests: Browse ${TEST_CATALOG.length} Free Exams by Category`;
 const description =

@@ -12,8 +12,11 @@ import { states } from "@/data/states";
 import { HomeHero, HomeCTA } from "@/components/HomeHero";
 import { T } from "@/components/T";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
+import { SITE_URL } from "@/lib/siteUrl";
+import { landingUpdatedAt } from "@/lib/landingDates";
+import { ORGANIZATION_ID, WEBSITE_ID } from "@/lib/siteSchema";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
+const siteUrl = SITE_URL;
 
 const pageUrl = `${siteUrl}/dmv-practice-test`;
 const title = "Free DMV Practice Test 2026 - All 50 States";
@@ -50,7 +53,7 @@ const faqs = [
   {
     k: "faq3",
     q: "What score do I need to pass the DMV test?",
-    a: "Most states require a score of 80% or higher to pass. Some states like New York require only 70%, while states like Idaho and Maryland require 85%. Tigertest tracks your progress and shows your pass probability as you practice.",
+    a: "Most states require a score of 80% or higher to pass. Some states like New York require only 70%, while Idaho requires 85% and Maryland 88% (22 of 25). Tigertest tracks your progress and shows your pass probability as you practice.",
   },
   {
     k: "faq4",
@@ -67,6 +70,17 @@ const faqs = [
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": `${pageUrl}#webpage`,
+      url: pageUrl,
+      name: title,
+      description,
+      inLanguage: "en-US",
+      dateModified: landingUpdatedAt("dmv"),
+      isPartOf: { "@id": WEBSITE_ID },
+      publisher: { "@id": ORGANIZATION_ID },
+    },
     {
       "@type": "WebApplication",
       name: "Tigertest - Free DMV Practice Tests",

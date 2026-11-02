@@ -362,7 +362,7 @@ function ScoreBar({ min, max, value, goal }: { min: number; max: number; value: 
         <div className={`absolute inset-y-0 left-0 rounded-full ${value >= goal ? "bg-green-500" : "bg-brand"}`} style={{ width: at(value) }} />
         <div className="absolute -top-1 w-0.5 rounded bg-gray-900 dark:bg-gray-50" style={{ left: at(goal), height: "18px" }} aria-hidden="true" />
       </div>
-      <div className="mt-1 flex justify-between text-[10px] tabular-nums text-gray-400">
+      <div className="mt-1 flex justify-between text-[10px] tabular-nums text-gray-500 dark:text-gray-400">
         <span>{min}</span>
         <span>{max}</span>
       </div>

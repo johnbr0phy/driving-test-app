@@ -3,8 +3,9 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import { states } from "@/data/states";
+import { SITE_URL } from "@/lib/siteUrl";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
+const siteUrl = SITE_URL;
 
 export const metadata: Metadata = {
   title: { absolute: "Exámenes de Práctica DMV por Estado 2026 - Gratis | Tigertest" },

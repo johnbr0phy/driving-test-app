@@ -3,8 +3,9 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import { states } from "@/data/states";
+import { SITE_URL } from "@/lib/siteUrl";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
+const siteUrl = SITE_URL;
 
 export const metadata: Metadata = {
   title: { absolute: "DMV Practice Tests by State 2026 - Free Permit Practice | Tigertest" },
@@ -165,9 +166,7 @@ export default function PracticeTestsByStatePage() {
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-gray-800 bg-white dark:bg-gray-900">
               {states.map((state) => {
-                const correctToPass = Math.ceil(
-                  (state.writtenTestQuestions * state.passingScore) / 100
-                );
+                const correctToPass = state.passCount;
                 return (
                   <tr key={state.slug} className="hover:bg-brand-light">
                     <th

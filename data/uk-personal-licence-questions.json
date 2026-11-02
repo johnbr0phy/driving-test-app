@@ -676,14 +676,14 @@
     "state": "ALL",
     "questionId": "UKAPLH-PER-025",
     "category": "ukaplhPersonal",
-    "question": "Who awards the licensing qualification needed for a personal licence?",
-    "optionA": "An accredited awarding body",
-    "optionB": "The council licensing committee",
-    "optionC": "The local police licensing unit",
-    "optionD": "The Home Office licensing team",
+    "question": "A personal licence holder sells alcohol at a hall with no premises licence, club certificate or TEN. Is this lawful?",
+    "optionA": "No, the venue needs authorisation",
+    "optionB": "Yes, the personal licence covers it",
+    "optionC": "Yes, if under 50 people attend",
+    "optionD": "Yes, in the daytime only",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "The qualification is issued by an awarding body accredited by the Secretary of State. The council then grants the licence itself."
+    "explanation": "A personal licence only lets the holder authorise sales at premises that are authorised. Selling where there is no premises licence, club certificate or TEN is an unauthorised licensable activity."
   },
   {
     "type": "UKAPLH",

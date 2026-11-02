@@ -270,14 +270,14 @@
     "state": "ALL",
     "questionId": "UKCARE-ROL-020",
     "category": "ukcareRole",
-    "question": "What could your career progress to after you complete the Care Certificate?",
-    "optionA": "Nothing, it is the final step",
-    "optionB": "Only a manager's job straight away",
-    "optionC": "A nursing registration automatically",
-    "optionD": "More qualifications and roles",
+    "question": "A person you support sends you a friend request on social media. What should you do?",
+    "optionA": "Accept it to build trust",
+    "optionB": "Accept it but never post anything",
+    "optionC": "Ignore it and tell nobody",
+    "optionD": "Politely decline and stay professional",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "The Care Certificate is a starting point. Workers can go on to qualifications such as the Level 2 Adult Social Care Certificate and higher diplomas, and to senior or specialist roles."
+    "explanation": "Your relationship with the people you support is a working one with clear boundaries. Follow your employer's social media policy, decline kindly and tell your manager if it happens again."
   },
   {
     "type": "UKCARE",

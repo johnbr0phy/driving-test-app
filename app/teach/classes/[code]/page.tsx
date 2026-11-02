@@ -4,14 +4,14 @@
 // misses most, the most-missed questions and one row per student; a row
 // opens what that student needs help with.
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useState, type FormEvent } from "react";
 import { useParams, useRouter } from "next/navigation";
 import Link from "next/link";
 import { QRCodeSVG } from "qrcode.react";
-import { Check, ChevronRight, Copy, Loader2, QrCode, RefreshCw } from "lucide-react";
+import { Check, ChevronRight, Copy, Loader2, Pencil, QrCode, RefreshCw } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 import { classLink, classUrl, teachFetch } from "@/lib/teachClient";
-import { normalizeClassCode, type ClassReport, type ClassStudentRow } from "@/lib/classes";
+import { MAX_NAME_LENGTH, normalizeClassCode, type ClassReport, type ClassStudentRow } from "@/lib/classes";
 import { ClassQuestions } from "@/components/teach/ClassQuestions";
 import { StudentDetail } from "@/components/teach/StudentDetail";
 import { scoreBar, scoreChip, scoreLevel, scoreTrack } from "@/components/teach/scoreColors";
@@ -42,6 +42,10 @@ export default function ClassPage() {
   const [refreshing, setRefreshing] = useState(false);
   // By name and join time, so Refresh shows the open student's new numbers.
   const [selectedKey, setSelectedKey] = useState<string | null>(null);
+  const [editingName, setEditingName] = useState(false);
+  const [nameDraft, setNameDraft] = useState("");
+  const [savingName, setSavingName] = useState(false);
+  const [nameError, setNameError] = useState("");
 
   const load = useCallback(async () => {
     if (!user) return;
@@ -68,6 +72,32 @@ export default function ClassPage() {
       setTimeout(() => setCopied(false), 2000);
     } catch {
       // Clipboard blocked: the link is on screen to copy by hand.
+    }
+  };
+
+  const startRename = () => {
+    setNameDraft(report?.name ?? "");
+    setNameError("");
+    setEditingName(true);
+  };
+
+  const saveName = async (e: FormEvent) => {
+    e.preventDefault();
+    if (!user || !report) return;
+    const name = nameDraft.trim();
+    if (!name || name === report.name) {
+      setEditingName(false);
+      return;
+    }
+    setSavingName(true);
+    try {
+      const res = await teachFetch<{ name: string }>(user, `/api/classes/${code}`, { method: "PATCH", body: JSON.stringify({ name }) });
+      setReport({ ...report, name: res.name });
+      setEditingName(false);
+    } catch (err) {
+      setNameError(err instanceof Error ? err.message : "Couldn't rename the class");
+    } finally {
+      setSavingName(false);
     }
   };
 
@@ -98,7 +128,32 @@ export default function ClassPage() {
         <div className="flex flex-wrap items-start justify-between gap-4">
           <div className="min-w-0">
             <Link href="/teach" className="text-sm text-gray-600 dark:text-gray-300 underline">Your classes</Link>
-            <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-50 mt-2">{report.name}</h1>
+            {editingName ? (
+              <form onSubmit={saveName} className="mt-2 flex flex-wrap items-center gap-2">
+                <label htmlFor="class-name" className="sr-only">Class name</label>
+                <input
+                  id="class-name"
+                  value={nameDraft}
+                  onChange={(e) => setNameDraft(e.target.value)}
+                  onKeyDown={(e) => { if (e.key === "Escape") setEditingName(false); }}
+                  maxLength={MAX_NAME_LENGTH}
+                  autoFocus
+                  className="min-w-0 flex-1 rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 px-3 py-1.5 text-lg font-semibold text-gray-900 dark:text-gray-50"
+                />
+                <button type="submit" disabled={savingName} className="rounded-md bg-black text-white dark:bg-white dark:text-black px-3 py-1.5 text-sm font-medium">
+                  {savingName ? "Saving…" : "Save"}
+                </button>
+                <button type="button" onClick={() => setEditingName(false)} className="rounded-md px-2 py-1.5 text-sm text-gray-600 dark:text-gray-300">Cancel</button>
+                {nameError && <p className="w-full text-sm text-red-600 dark:text-red-400">{nameError}</p>}
+              </form>
+            ) : (
+              <div className="mt-2 flex items-center gap-2">
+                <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-50">{report.name}</h1>
+                <button type="button" onClick={startRename} aria-label="Rename class" title="Rename class" className="rounded-md p-1.5 text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50">
+                  <Pencil className="w-4 h-4" aria-hidden="true" />
+                </button>
+              </div>
+            )}
             <p className="text-sm text-gray-600 dark:text-gray-300">
               {report.examName} · {report.memberCount} {report.memberCount === 1 ? "student" : "students"}
             </p>

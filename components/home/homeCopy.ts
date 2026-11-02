@@ -49,9 +49,10 @@ export interface HomeCopy {
   };
   /** "Tigertest practice tests for Germany" (JSON-LD ItemList name). */
   listName: (inName: string) => string;
-  /** FAQ for a country homepage. `local`: how many of the country's own driving tests there are.
+  /** FAQ for a country homepage. `local`: how many of the country's own driving tests there are;
+   *  `others`: its other tests (school, trade, citizenship...), counted in the English copy.
    *  `inName` is the country's name in this language ("the UK" in English). */
-  faqs: (args: { local: number; inName: string; authority: string; examCount: number }) => { q: string; a: string }[];
+  faqs: (args: { local: number; others?: number; inName: string; authority: string; examCount: number }) => { q: string; a: string }[];
   // Test cards and catalog search (components/TestCatalogGrid.tsx)
   card: {
     questions: (n: number) => string;
@@ -154,13 +155,15 @@ const en: HomeCopy = {
     viewAll: "View all 50 states",
   },
   listName: (inName) => `Tigertest practice tests for ${inName}`,
-  faqs: ({ local, inName, authority }) => [
+  faqs: ({ local, others = 0, inName, authority }) => [
     {
       q: "What is Tigertest?",
       a:
-        local === 0
+        local + others === 0
           ? `Tigertest is a free practice test site. For ${inName} it has certifications that are the same everywhere, such as CompTIA and AWS. Every question explains the right answer.`
-          : `Tigertest is a free practice test site. For ${inName} it has ${local === 1 ? "a driving test" : `${local} driving tests`} written from the official ${local === 1 ? "rules" : "handbooks"}, plus certifications that are the same everywhere, such as CompTIA and AWS. Every question explains the right answer.`,
+          : others === 0
+            ? `Tigertest is a free practice test site. For ${inName} it has ${local === 1 ? "a driving test" : `${local} driving tests`} written from the official ${local === 1 ? "rules" : "handbooks"}, plus certifications that are the same everywhere, such as CompTIA and AWS. Every question explains the right answer.`
+            : `Tigertest is a free practice test site. For ${inName} it has ${local + others} practice tests${local > 0 ? `, ${local === 1 ? "one of them a driving test" : `${local} of them driving tests`},` : ""} written from the official handbooks and syllabuses, plus certifications that are the same everywhere, such as CompTIA and AWS. Every question explains the right answer.`,
     },
     { q: "Is Tigertest free?", a: `Yes. Every test for ${inName} is free, with no subscription.` },
     {

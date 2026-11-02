@@ -6,13 +6,14 @@ import { CopyUrl } from "@/components/connect/CopyUrl";
 import { ClaudeLogo, OpenAILogo } from "@/components/connect/AssistantLogos";
 import { CreateYourQuizzes } from "@/components/quiz/create/CreateYourQuizzes";
 import CreateQuizDemo from "@/components/stageshow/demos/CreateQuizDemo";
+import { SITE_URL } from "@/lib/siteUrl";
 
 // /create: make a quiz. Quizzes are written by the person's own Claude or
 // ChatGPT, so this is how to add the Tigertest MCP server (app/api/mcp) as a
 // custom connector, what it can do and a short FAQ, with the account's own
 // quizzes under the hero once signed in. /connect redirects here.
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
+const siteUrl = SITE_URL;
 const MCP_URL = "https://www.tigertest.io/api/mcp";
 
 const title = "Use Tigertest in ChatGPT and Claude";
@@ -20,7 +21,7 @@ const description =
   "Add Tigertest to Claude or ChatGPT: turn your notes into a shareable practice quiz, or keep practicing the tests you have in progress.";
 
 export const metadata: Metadata = {
-  title,
+  title: { absolute: title },
   description,
   alternates: { canonical: `${siteUrl}/create` },
   openGraph: {

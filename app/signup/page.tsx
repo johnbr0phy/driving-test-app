@@ -335,6 +335,7 @@ function SignupPageContent() {
                   <Input
                     id="confirmPassword"
                     type="password"
+                    autoComplete="new-password"
                     placeholder="••••••••"
                     value={confirmPassword}
                     onChange={(e) => setConfirmPassword(e.target.value)}
@@ -376,7 +377,7 @@ function SignupPageContent() {
 
             <div className="text-center text-sm text-gray-600 dark:text-gray-300">
               {t("common.alreadyHaveAccount")}{" "}
-              <Link href={redirectTo ? `/login?redirect=${encodeURIComponent(redirectTo)}` : "/login"} className="text-brand-dark hover:underline font-semibold">
+              <Link href={redirectTo ? `/login?redirect=${encodeURIComponent(redirectTo)}` : "/login"} className="text-brand-dark underline underline-offset-2 hover:decoration-2 font-semibold">
                 {t("common.logIn")}
               </Link>
             </div>

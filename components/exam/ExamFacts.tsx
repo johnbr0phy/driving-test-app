@@ -1,9 +1,10 @@
 import { ExternalLink } from "lucide-react";
 import { EXAM_FACTS } from "@/lib/examFacts";
-import { EXAM_LANDINGS_UPDATED_AT } from "@/lib/seoDates";
+import { landingUpdatedAt } from "@/lib/landingDates";
 import { getCatalogEntry } from "@/lib/testCatalog";
 import { ORGANIZATION_ID } from "@/lib/siteSchema";
 import { isRegion, regionInfo, regionOfTest } from "@/lib/region";
+import { SITE_URL } from "@/lib/siteUrl";
 
 // EXAM_FACTS are English, written in the exam's country's English: en-GB for
 // the UK, en-IN for India, and "en-<country>" where the country's homepage is
@@ -15,7 +16,7 @@ function factsLocale(examId: string): string {
   return info.lang === "en" ? info.locale : `en-${r}`;
 }
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
+const siteUrl = SITE_URL;
 
 /** "2026-10-12" -> "October 2026", in UTC so the server's zone never shifts the month. */
 function monthYear(iso: string, locale: string): string {
@@ -48,7 +49,7 @@ export function ExamFacts({ examId }: { examId: string }) {
     // Catalog names already say "Practice Test" ("CNA Practice Test").
     name: test.name,
     description: facts.answer,
-    dateModified: EXAM_LANDINGS_UPDATED_AT,
+    dateModified: landingUpdatedAt(examId),
     inLanguage: locale,
     isPartOf: { "@id": `${siteUrl}/#website` },
     publisher: { "@id": ORGANIZATION_ID },
@@ -73,7 +74,7 @@ export function ExamFacts({ examId }: { examId: string }) {
           ))}
         </dl>
         <p className="mt-5 text-sm text-gray-500 dark:text-gray-400">
-          Updated <time dateTime={EXAM_LANDINGS_UPDATED_AT}>{monthYear(EXAM_LANDINGS_UPDATED_AT, locale)}</time> by the
+          Updated <time dateTime={landingUpdatedAt(examId)}>{monthYear(landingUpdatedAt(examId), locale)}</time> by the
           Tigertest team. Practice questions follow {facts.basedOn}. Exam rules change, so confirm current details
           {facts.source ? (
             <>
@@ -82,7 +83,7 @@ export function ExamFacts({ examId }: { examId: string }) {
                 href={facts.source.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-brand-dark hover:underline [overflow-wrap:anywhere]"
+                className="text-brand-dark underline underline-offset-2 hover:decoration-2 [overflow-wrap:anywhere]"
               >
                 {facts.source.name}
                 <ExternalLink className="ml-0.5 inline h-3 w-3 align-baseline" aria-hidden="true" />

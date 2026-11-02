@@ -273,7 +273,7 @@ export default function TestPage() {
           <div className="text-sm font-semibold mb-3">
             🎯 {t("progressOverviewWithTest").replace("{test}", t(`practiceTests.${testId}`))}
           </div>
-          <div className="grid grid-cols-10 gap-1">
+          <div className="grid grid-cols-10 gap-1" aria-hidden="true">
             {questions.map((_, index) => (
               <div
                 key={index}

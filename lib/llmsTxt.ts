@@ -4,13 +4,14 @@ import { EXAM_FACTS } from "./examFacts";
 import { EXAMS } from "./exams";
 import { TEST_CATALOG, TEST_GROUPS, getCatalogEntry, type TestCatalogEntry } from "./testCatalog";
 import { NON_DRIVING_TESTS, REGIONS, regionHomePath, regionOfTest } from "./region";
+import { SITE_URL } from "@/lib/siteUrl";
 
 // /llms.txt and /llms-full.txt (https://llmstxt.org), built from the test
 // catalog, the exam facts and the state data, so a new exam or a changed
 // state figure shows up here without anyone remembering to edit a file.
 // The DMV leads both files: it is the product that earns the money.
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
+const siteUrl = SITE_URL;
 
 function countryList(): string {
   const names = REGIONS.filter((r) => r.code !== "US").map((r) => r.inName);
@@ -66,6 +67,7 @@ State pages:
 
 const FOOTER = `## Notes for AI assistants
 
+- Who makes Tigertest, how the questions are written and how to report a mistake: ${siteUrl}/about
 - Tigertest is independent and is not affiliated with any DMV, testing company or certification body. Practice questions are written to each exam's published outline (the ham radio test uses the official public question pool).
 - Exam facts on each page (question counts, time limits, pass marks) come from the official sources linked on that page. Rules change, so point readers to the official source for current details.
 - Every exam's practice is free. The DMV has free tests plus an optional one-time $9.99 Premium purchase that unlocks two more DMV tests and training sets and the full stats pages of every exam.`;
@@ -127,7 +129,7 @@ export function renderLlmsTxt(): string {
 function stateTable(): string {
   const rows = states.map((s) => {
     const info = getStateLandingInfo(s.code);
-    const toPass = Math.ceil((s.writtenTestQuestions * s.passingScore) / 100);
+    const toPass = s.passCount;
     const text = info?.onlineTestInfo ?? "";
     const online = text.startsWith("Yes") ? "Yes" : text.startsWith("No") || /taken in person/.test(text) ? "No" : "Some providers";
     return `| [${s.name}](${siteUrl}/${s.slug}-dmv-practice-test) | ${s.writtenTestQuestions} | ${s.passingScore}% (${toPass}) | ${s.minPermitAge} | ${info?.retakeWaitTime ?? ""} | ${online} | ${info?.handbookName ?? ""} |`;

@@ -14,13 +14,15 @@ import {
   ExternalLink,
   ChevronRight,
 } from "lucide-react";
-import { states, getStateBySlug } from "@/data/states";
+import { states, getStateBySlug, permitAgeText } from "@/data/states";
+import { STATE_PAGES_UPDATED_AT } from "@/lib/seoDates";
 import { stateLandingData, getStateLandingInfo } from "@/data/stateLandingData";
 import { isViState } from "@/data/viStates";
 import { isZhState } from "@/data/zhStates";
 import { isKoState } from "@/data/koStates";
+import { SITE_URL } from "@/lib/siteUrl";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
+const siteUrl = SITE_URL;
 
 // Original publish date for state DMV practice test pages. Bump only on a
 // major content refactor — schema requires a real, stable publishedAt.
@@ -54,9 +56,6 @@ export async function generateMetadata({
     return { title: "State Not Found" };
   }
 
-  const rawPassing = Math.ceil(
-    (state.writtenTestQuestions * state.passingScore) / 100
-  );
   const title = `${state.name} DMV Practice Test 2026 - Free Permit Practice | Tigertest`;
   const description = `Pass your ${state.name} permit test on the first try. ${state.writtenTestQuestions} free practice questions based on the ${state.name} driver's manual. Start practicing now.`;
   const canonicalUrl = `${siteUrl}/${state.slug}-dmv-practice-test`;
@@ -122,9 +121,7 @@ export default async function StateDMVPracticeTestPage({
     notFound();
   }
 
-  const rawPassing = Math.ceil(
-    (state.writtenTestQuestions * state.passingScore) / 100
-  );
+  const rawPassing = state.passCount;
 
   const neighboringStates = landingInfo.neighboringSlugs
     .map((s) => getStateBySlug(s))
@@ -146,7 +143,7 @@ export default async function StateDMVPracticeTestPage({
     },
     {
       question: `How old do I have to be to get a learner's permit in ${state.name}?`,
-      answer: `In ${state.name}, you can apply for a learner's permit at ${state.minPermitAge} years old. You must pass the written knowledge test and a vision screening to receive your permit.`,
+      answer: `In ${state.name}, you can apply for a learner's permit at ${permitAgeText(state.minPermitAge, "en")}. You must pass the written knowledge test and a vision screening to receive your permit.`,
     },
     {
       question: `What happens if I fail the ${state.name} permit test?`,
@@ -168,8 +165,9 @@ export default async function StateDMVPracticeTestPage({
     })),
   };
 
-  // Build-time timestamp; baked into the static page on each deploy.
-  const lastModifiedIso = new Date().toISOString();
+  // Hand-bumped in lib/seoDates.ts when the state pages change, so the
+  // date does not move on every deploy.
+  const lastModifiedIso = STATE_PAGES_UPDATED_AT;
 
   // JSON-LD: WebApplication / LearningResource schema with publish + modified
   // dates so AI engines treat the page as fresh and citable.
@@ -372,7 +370,7 @@ export default async function StateDMVPracticeTestPage({
             <strong>{state.writtenTestQuestions} multiple-choice questions</strong>{" "}
             and requires a <strong>{state.passingScore}% score</strong> ({rawPassing}{" "}
             correct) to pass. Applicants must be at least{" "}
-            <strong>{state.minPermitAge}</strong> years old. Tigertest offers 200
+            <strong>{permitAgeText(state.minPermitAge, "en")}</strong>. Tigertest offers 200
             free practice questions drawn from the official{" "}
             {landingInfo.handbookName} so you pass on your first try.
           </p>
@@ -462,7 +460,7 @@ export default async function StateDMVPracticeTestPage({
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300">
                   You must be at least{" "}
-                  <strong>{state.minPermitAge} years old</strong> to apply for
+                  <strong>{permitAgeText(state.minPermitAge, "en")}</strong> to apply for
                   a learner&apos;s permit in {state.name}. You will need to
                   pass the written knowledge test and a vision screening before
                   your permit is issued.

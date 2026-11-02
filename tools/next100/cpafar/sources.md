@@ -28,9 +28,15 @@ review course or question bank was copied. Checked 2026-11-02.
     (incl. modification vs extinguishment, troubled debt restructuring, covenants), equity; accounting
     changes and errors, contingencies and commitments, revenue (five-step model, contract costs,
     not-for-profit contributions), income taxes, fair value measurement, lessee accounting, subsequent events.
-  - Not in FAR (moved to BAR in 2024) and not asked here: business combinations beyond consolidation
-    eliminations, derivatives and hedging, stock compensation, defined benefit pensions, lessor accounting,
-    government-wide statement preparation.
+  - Not in FAR (BAR Area II/III in the 2026 Blueprints) and not asked here: business combinations
+    (acquisition method, goodwill, bargain purchase, acquisition costs), indefinite-lived intangibles
+    including goodwill, internally developed software, research and development, VIEs and foreign
+    currency translation, stock compensation, derivatives and hedging, lessor accounting, employee
+    benefit plan statements, government-wide statement preparation. FAR keeps consolidation
+    eliminations with noncontrolling interests (Area I.A.6), foreign currency transaction gains and
+    losses, finite-lived intangibles, purchased software and cloud computing arrangements (Area II.F).
+    Review 2026-11-02 rewrote five items that tested BAR topics (STM-010, STM-027, STM-028, LLA-015,
+    LLA-019).
 - AICPA, "Summary of revisions to the Uniform CPA Examination Blueprints effective January 1, 2027"
   (approved by the Board of Examiners September 16, 2026):
   https://assets.ctfassets.net/rb9cdnjh59cm/5CsrSRU2mFGsmWEo9FqwLy/83e5ec97beab5daff376dba518589e75/Summary_of_Changes_to_the_Exam_Blueprints_effective_01012027.pdf
@@ -46,10 +52,9 @@ review course or question bank was copied. Checked 2026-11-02.
   jurisdiction) are left out of the bank and only described as varying on the landing.
 
 ## Standards used in the questions (current as of 2026-11-02)
-- FASB ASC 205-20, 220, 230, 250, 321, 323, 326 (CECL), 330 (ASU 2015-11 LCNRV), 350, 350-40 and
-  ASU 2018-15 (cloud computing implementation costs), 360, 410, 420, 450, 470-10, 470-50, 470-60,
-  505, 606, 730, 740 (ASU 2015-17 noncurrent deferred taxes), 805 (acquisition costs, bargain purchase,
-  goodwill with NCI at fair value), 810, 820, 830, 835-30 (ASU 2015-03 debt issuance costs),
+- FASB ASC 205-20, 220, 230, 250, 321, 323, 326 (CECL), 330 (ASU 2015-11 LCNRV), 350 (finite-lived and purchased
+  intangibles, purchased software), ASU 2018-15 (cloud computing implementation costs), 360, 410, 420, 450, 470-10, 470-50, 470-60,
+  505, 606, 740 (ASU 2015-17 noncurrent deferred taxes), 810 (eliminations, noncontrolling interest), 820, 830, 835-30 (ASU 2015-03 debt issuance costs),
   842 (lessee), 855, 860, 958 (ASU 2016-14 net asset classes, liquidity and functional expense
   disclosures; ASU 2018-08 conditional contributions; contributed services and agency transfers).
 - GASB Codification: governmental funds on current financial resources / modified accrual,

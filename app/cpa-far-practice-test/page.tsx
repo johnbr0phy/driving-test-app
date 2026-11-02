@@ -51,7 +51,7 @@ const faqs = [
   },
   {
     q: "What content does FAR cover in 2026?",
-    a: "The AICPA Blueprints effective January 1, 2026 split FAR into three areas: Financial Reporting (30 to 40%), Select Balance Sheet Accounts (30 to 40%) and Select Transactions (25 to 35%). The Blueprints effective January 1, 2027 only add a reference to the section introduction and do not change the FAR content. Business combinations beyond consolidation, derivatives, stock compensation, pensions and lessor accounting are tested in the BAR Discipline section, not FAR.",
+    a: "The AICPA Blueprints effective January 1, 2026 split FAR into three areas: Financial Reporting (30 to 40%), Select Balance Sheet Accounts (30 to 40%) and Select Transactions (25 to 35%). The Blueprints effective January 1, 2027 only add a reference to the section introduction and do not change the FAR content. Business combinations, goodwill and other indefinite-lived intangibles, internally developed software, research and development, foreign currency translation, derivatives and hedging, stock compensation, lessor accounting and employee benefit plan statements are tested in the BAR Discipline section, not FAR.",
   },
   {
     q: "Does this practice test include task-based simulations?",

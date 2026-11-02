@@ -76,6 +76,10 @@ const BORROWED_SETS: Record<string, string> = {
   ngpolice: "police", cdcfib: "ffi", ngarmy: "asvab", ngcustoms: "security", trcnpqe: "praxis",
   // AHIMA CCA shares the CPC medical coding tiger.
   cca: "cpc",
+  // Next-20 batch A: the CPA sections the CPC tiger, Series 63/65 the Series 7 tiger, NMLS the real estate
+  // tiger, ARRT the HTL lab tiger, ASWB and NCE the RBT tiger, the teacher exams the Praxis tiger.
+  cpafar: "cpc", cpareg: "cpc", series63: "series7", series65: "series7", nmls: "realestate",
+  arrt: "htl", aswb: "rbt", nce: "rbt", texesppr: "praxis", praxisplt: "praxis",
 };
 
 export function hasTigerSet(examId: string): boolean {

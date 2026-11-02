@@ -57,3 +57,15 @@ Checked 2026-11-02.
 
 All 200 items are original, written for Tigertest from the outline above. None is copied from any
 published registry review or ARRT material.
+
+## Review pass (2026-11-02)
+
+Every calculation recomputed (mAs, time, inverse and direct square, 15% rule, grid factors 8:1 = 4,
+12:1 = 5, 16:1 = 6, magnification, heat units 1.35 / 1.41, 2% SID tolerance, 10 mSv x age) and every
+positioning angle checked against standard positioning texts. Six Patient Care items were rewritten
+because they repeated a fact and answer already in the CNA, CCMA, CET, phlebotomy or VTNE banks
+(normal pulse and respiratory rates, TB airborne precautions, needle disposal, water-soluble contrast
+for perforation, seizure first aid); the replacements cover the clean and dirty mobile isolation
+method, medical asepsis, creatinine before contrast, metformin and contrast (ACR Manual on Contrast
+Media: hold for 48 hours when eGFR is below 30 or in AKI), ordered oxygen, and the cervical collar on
+a trauma cross-table lateral. The lateral skull item (HSP-007) now asks for a line, not a plane. NCRP Report 180 (2018) keeps the NCRP 116 effective dose limits used here.

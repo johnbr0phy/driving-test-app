@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { isEmbeddedBrowser, openInDefaultBrowser } from "@/lib/webview-detect";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "@/contexts/LanguageContext";
+import { AccessibleOverlay } from "@/components/AccessibleOverlay";
 
 interface WebViewGoogleWarningProps {
   onGoogleSignIn: () => void;
@@ -59,7 +60,7 @@ export function WebViewGoogleWarning({ onGoogleSignIn, disabled, label, classNam
         onClick={handleGoogleClick}
         disabled={disabled}
       >
-        <svg className="mr-2 h-4 w-4" viewBox="0 0 24 24">
+        <svg aria-hidden="true" className="mr-2 h-4 w-4" viewBox="0 0 24 24">
           <path
             fill="currentColor"
             d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
@@ -82,7 +83,11 @@ export function WebViewGoogleWarning({ onGoogleSignIn, disabled, label, classNam
 
       {/* WebView Warning Modal */}
       {showWarning && (
-        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
+        <AccessibleOverlay
+          onClose={() => setShowWarning(false)}
+          aria-label={t("webView.openInBrowser")}
+          className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4"
+        >
           <div className="bg-white dark:bg-gray-900 rounded-lg p-6 max-w-md w-full">
             <h3 className="text-lg font-semibold mb-2">{t("webView.openInBrowser")}</h3>
             <p className="text-gray-600 dark:text-gray-300 text-sm mb-4">
@@ -97,7 +102,7 @@ export function WebViewGoogleWarning({ onGoogleSignIn, disabled, label, classNam
                 onClick={openInDefaultBrowser}
                 className="w-full bg-black dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200"
               >
-                <svg className="mr-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg aria-hidden="true" className="mr-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
                 {t("webView.openInBrowser")}
@@ -109,14 +114,14 @@ export function WebViewGoogleWarning({ onGoogleSignIn, disabled, label, classNam
               >
                 {copied ? (
                   <>
-                    <svg className="mr-2 h-4 w-4 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg aria-hidden="true" className="mr-2 h-4 w-4 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                     {t("webView.linkCopied")}
                   </>
                 ) : (
                   <>
-                    <svg className="mr-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg aria-hidden="true" className="mr-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
                     </svg>
                     {t("webView.copyLink")}
@@ -132,7 +137,7 @@ export function WebViewGoogleWarning({ onGoogleSignIn, disabled, label, classNam
               </Button>
             </div>
           </div>
-        </div>
+        </AccessibleOverlay>
       )}
     </>
   );

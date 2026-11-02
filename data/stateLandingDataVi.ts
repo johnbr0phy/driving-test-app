@@ -28,7 +28,7 @@ export const stateLandingDataVi: Record<string, StateLandingInfo> = {
     notableRules: [
       "California yêu cầu 50 giờ lái xe có giám sát (10 giờ vào ban đêm) trước khi tham gia bài thi thực hành lái xe.",
       "Người có bằng lái tạm thời dưới 18 tuổi không được chở hành khách dưới 20 tuổi trong 12 tháng đầu, trừ khi có tài xế từ 25 tuổi trở lên đi cùng.",
-      "Bài thi viết của California có 46 câu hỏi — nhiều nhất trong tất cả các tiểu bang — và bạn cần trả lời đúng 39 câu (83%) để đậu."
+      "Bài thi viết của California cho người dưới 18 tuổi có 46 câu hỏi, và bạn cần trả lời đúng 38 câu (83%) để đậu."
     ],
     neighboringSlugs: ["oregon", "nevada", "arizona"],
     onlineTestInfo: "Không, bài thi viết của DMV California phải được thực hiện trực tiếp tại văn phòng DMV. Bạn có thể đặt lịch hẹn trực tuyến để giảm thời gian chờ đợi."
@@ -65,7 +65,7 @@ export const stateLandingDataVi: Record<string, StateLandingInfo> = {
     handbookUrl: "https://mva.maryland.gov/pages/driver-manuals.aspx",
     handbookName: "Maryland Driver's Manual",
     notableRules: [
-      "Maryland yêu cầu điểm đậu là 85%, một trong những ngưỡng cao nhất cả nước.",
+      "Maryland yêu cầu trả lời đúng 22 trên 25 câu (88%), một trong những ngưỡng cao nhất cả nước.",
       "Người xin giấy phép tập lái phải ít nhất 15 tuổi 9 tháng — một yêu cầu về độ tuổi khác thường.",
       "Maryland yêu cầu 60 giờ lái xe có giám sát (10 giờ vào ban đêm) trước khi tham gia bài thi thực hành lái xe."
     ],

@@ -4,13 +4,14 @@ import { notFound } from "next/navigation";
 import { getQuiz } from "@/lib/server/quizzes";
 import { QUIZ_PUBLIC_MIN_PLAYS, isQuizCode, normalizeQuizCode, quizPublic, type QuizDoc } from "@/lib/quizzes";
 import { QuizLanding } from "@/components/quiz/QuizLanding";
+import { SITE_URL } from "@/lib/siteUrl";
 
 // A quiz's home, tigertest.io/q/<code>: rendered on the server so a shared
 // link carries the quiz's own title and description. A private or class quiz
 // is sent to the client empty, which fetches it with the owner's token or the
 // browser's class membership (lib/server/quizAccess.ts).
 
-const SITE = "https://tigertest.io";
+const SITE = SITE_URL;
 
 type Loaded = { ok: true; quiz: QuizDoc | null } | { ok: false };
 
@@ -35,14 +36,14 @@ export async function generateMetadata({ params }: { params: Promise<{ code: str
   // The share card (app/og/q/[code]/route.tsx); ?v= changes with every edit so a cached card never outlives it.
   const images = [{ url: `${SITE}/og/q/${code}?v=${encodeURIComponent(quiz.updatedAt)}`, width: 1200, height: 630, alt: quiz.title }];
   if (quiz.visibility === "private") {
-    return { title: "Private quiz | Tigertest", alternates: { canonical }, robots: { index: false, follow: false } };
+    return { title: "Private quiz", alternates: { canonical }, robots: { index: false, follow: false } };
   }
   if (quiz.visibility === "class") {
     const title = `${quiz.title} | Class quiz`;
     const description = `A practice quiz for ${quiz.classTeacherName || quiz.ownerName}'s class on Tigertest.`;
     return { title, description, alternates: { canonical }, robots: { index: false, follow: false }, openGraph: { title, description, url: canonical, siteName: "Tigertest", type: "website", images }, twitter: { card: "summary_large_image", title, description, images } };
   }
-  const title = `${quiz.title} | Tigertest quiz`;
+  const title = `${quiz.title} quiz`;
   const description = quiz.description || `${quiz.questions.length} practice questions on ${quiz.title}`;
   const indexable = quiz.visibility === "public" && (quiz.plays ?? 0) >= QUIZ_PUBLIC_MIN_PLAYS;
   return {

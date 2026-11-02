@@ -6,10 +6,10 @@ import { KO_STATE_CODES } from "@/data/koStates";
 import { ZH_STATE_CODES } from "@/data/zhStates";
 import {
   DMV_LANGUAGE_PAGES_UPDATED_AT,
-  EXAM_LANDINGS_UPDATED_AT,
   HUB_PAGES_UPDATED_AT,
   QUIZZES_PAGES_UPDATED_AT,
   STATE_PAGES_UPDATED_AT,
+  ABOUT_PAGE_UPDATED_AT,
 } from "./seoDates";
 
 // The sitemap is split into one file per page family so Search Console
@@ -31,7 +31,9 @@ export interface SitemapEntry {
   priority?: number;
 }
 
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
+export { SITE_URL } from "@/lib/siteUrl";
+import { SITE_URL } from "@/lib/siteUrl";
+import { landingUpdatedAt, latestLandingUpdate } from "@/lib/landingDates";
 
 export function isSitemapSegment(value: string): value is SitemapSegment {
   return (SITEMAP_SEGMENTS as readonly string[]).includes(value);
@@ -42,7 +44,7 @@ export async function buildSegment(segment: SitemapSegment): Promise<SitemapEntr
     case "dmv":
       return [
         { url: SITE_URL, lastModified: HUB_PAGES_UPDATED_AT, changeFrequency: "daily", priority: 1 },
-        { url: `${SITE_URL}/dmv-practice-test`, lastModified: STATE_PAGES_UPDATED_AT, changeFrequency: "weekly", priority: 0.9 },
+        { url: `${SITE_URL}/dmv-practice-test`, lastModified: landingUpdatedAt("dmv"), changeFrequency: "weekly", priority: 0.9 },
         {
           url: `${SITE_URL}/practice-tests-by-state`,
           lastModified: STATE_PAGES_UPDATED_AT,
@@ -113,15 +115,17 @@ export async function buildSegment(segment: SitemapSegment): Promise<SitemapEntr
         // Country homepages (lib/region.ts); "/" is the US one, in the dmv segment.
         ...["uk", "ie", "ca", "au", "nz", "in", "ph", "my", "sg", "hk", "ae", "za", "ng", "ke", "pk", "es", "pt", "ro", "se", "gr", "dk", "hu", "be", "fi", "mt", "de"].map((c) => ({ url: `${SITE_URL}/${c}`, lastModified: HUB_PAGES_UPDATED_AT, changeFrequency: "daily" as const, priority: 0.9 })),
         { url: `${SITE_URL}/teach`, lastModified: HUB_PAGES_UPDATED_AT, changeFrequency: "monthly", priority: 0.7 },
+        { url: `${SITE_URL}/about`, lastModified: ABOUT_PAGE_UPDATED_AT, changeFrequency: "monthly", priority: 0.4 },
+        // Each landing's own last change (lib/landingDates.ts), not one date for all.
         ...EXAMS_V2.map((exam) => ({
           url: `${SITE_URL}${exam.landingPath}`,
-          lastModified: EXAM_LANDINGS_UPDATED_AT,
+          lastModified: landingUpdatedAt(exam.id),
           changeFrequency: "monthly" as const,
           priority: 0.8,
         })),
         ...EXAMS.map((exam) => ({
           url: `${SITE_URL}${examLandingPath(exam)}`,
-          lastModified: EXAM_LANDINGS_UPDATED_AT,
+          lastModified: landingUpdatedAt(exam.id),
           changeFrequency: "monthly" as const,
           priority: 0.8,
         })),
@@ -129,7 +133,7 @@ export async function buildSegment(segment: SitemapSegment): Promise<SitemapEntr
         ...EXAMS.flatMap((exam) =>
           Object.values(exam.translations ?? {}).map((tr) => ({
             url: `${SITE_URL}${tr.landingPath}`,
-            lastModified: EXAM_LANDINGS_UPDATED_AT,
+            lastModified: landingUpdatedAt(exam.id),
             changeFrequency: "monthly" as const,
             priority: 0.7,
           }))
@@ -194,7 +198,7 @@ export function renderIndex(): string {
   const latest = [
     STATE_PAGES_UPDATED_AT,
     DMV_LANGUAGE_PAGES_UPDATED_AT,
-    EXAM_LANDINGS_UPDATED_AT,
+    latestLandingUpdate(),
     HUB_PAGES_UPDATED_AT,
     QUIZZES_PAGES_UPDATED_AT,
   ].sort().at(-1);

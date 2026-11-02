@@ -1267,7 +1267,8 @@ export interface State {
   slug: string; // URL-friendly name (e.g., "california")
   dmvName: string; // Official DMV name (e.g., "DMV", "BMV", "RMV")
   writtenTestQuestions: number; // Number of questions on actual DMV test
-  passingScore: number; // Percentage needed to pass
+  passCount: number; // Correct answers needed to pass the real test
+  passingScore: number; // Percentage needed to pass, derived from passCount in data/states.ts
   minPermitAge: string; // Minimum age for learner's permit
 }
 

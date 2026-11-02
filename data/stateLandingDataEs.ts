@@ -61,7 +61,7 @@ export const stateLandingDataEs: Record<string, StateLandingInfo> = {
     notableRules: [
       "California requiere 50 horas de práctica de conducción supervisada (10 horas de noche) antes de tomar el examen práctico de manejo.",
       "Los titulares de licencia provisional menores de 18 años no pueden llevar pasajeros menores de 20 años durante los primeros 12 meses, a menos que estén acompañados por un conductor con licencia de 25 años o más.",
-      "El examen escrito de California tiene 46 preguntas — la mayor cantidad entre todos los estados — y necesitas responder 39 correctamente (83%) para aprobar."
+      "El examen escrito de California para menores de 18 años tiene 46 preguntas, y necesitas responder 38 correctamente (83%) para aprobar."
     ],
     neighboringSlugs: ["oregon", "nevada", "arizona"],
     onlineTestInfo: "No, el examen escrito del DMV de California debe tomarse en persona en una oficina del DMV. Puedes hacer una cita en línea para reducir los tiempos de espera."
@@ -267,7 +267,7 @@ export const stateLandingDataEs: Record<string, StateLandingInfo> = {
     handbookUrl: "https://mva.maryland.gov/pages/driver-manuals.aspx",
     handbookName: "Maryland Driver's Manual",
     notableRules: [
-      "Maryland requiere una puntuación aprobatoria del 85%, uno de los umbrales más altos del país.",
+      "Maryland requiere 22 respuestas correctas de 25 (88%), uno de los umbrales más altos del país.",
       "Los titulares de permiso deben tener al menos 15 años y 9 meses — un requisito de edad inusual.",
       "Maryland requiere 60 horas de conducción supervisada (10 de noche) antes de tomar el examen práctico de manejo."
     ],
@@ -345,7 +345,7 @@ export const stateLandingDataEs: Record<string, StateLandingInfo> = {
     handbookUrl: "https://dojmt.gov/driving/driver-licensing/",
     handbookName: "Montana Driver Manual",
     notableRules: [
-      "Montana requiere una puntuación aprobatoria del 82%, ligeramente por encima del promedio nacional.",
+      "Montana requiere 27 respuestas correctas de 33 (82%), ligeramente por encima del promedio nacional.",
       "Montana permite permisos de aprendizaje a los 14 años y 6 meses con un curso de educación vial completado.",
       "Montana no tiene una prohibición estatal de teléfonos celulares de mano para conductores adultos, aunque enviar mensajes de texto mientras se conduce está prohibido."
     ],

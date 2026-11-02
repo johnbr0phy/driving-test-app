@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import { urlLanguageHeaders } from "./lib/urlLanguage";
 
 // Captured once at build/server-start — used as the Last-Modified header
 // on SEO-facing routes so Bingbot, ChatGPT-Bot, etc. see a fresh value
@@ -165,6 +166,8 @@ const nextConfig: NextConfig = {
           },
         ],
       },
+      // Pages written in another language say so (lib/urlLanguage.ts).
+      ...urlLanguageHeaders(),
       ...seoPaths.map((source) => ({
         source,
         headers: [

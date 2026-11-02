@@ -19,8 +19,10 @@ import { countryNameIn, homeCopy } from "@/components/home/homeCopy";
 import type { Language } from "@/i18n";
 import { landingContent } from "@/lib/landingContent";
 import { getExamById } from "@/lib/exams";
+import { SITE_URL } from "@/lib/siteUrl";
+import { regionHeadline } from "@/lib/regionHeadline";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
+const siteUrl = SITE_URL;
 const examCount = TEST_CATALOG.length;
 
 const title = `Tigertest: Free Practice Tests for ${examCount} Exams - DMV, SAT & More`;
@@ -111,8 +113,11 @@ function authorityIn(region: Exclude<Region, "US">, lang: Language): string {
 
 function faqsFor(region: Region, lang: Language = regionInfo(region).lang) {
   if (region === "US") return homeCopy(lang).usFaqs(examCount);
-  const local = TEST_CATALOG.filter((t) => regionOfTest(t.id) === region && !NON_DRIVING_TESTS.has(t.id)).length;
-  return homeCopy(lang).faqs({ local, inName: countryNameIn(region, lang), authority: authorityIn(region, lang), examCount });
+  const own = TEST_CATALOG.filter((t) => regionOfTest(t.id) === region);
+  const local = own.filter((t) => !NON_DRIVING_TESTS.has(t.id)).length;
+  // Every other test of the country (school, trade, citizenship...), so the FAQ's count is the whole list.
+  const others = own.length - local;
+  return homeCopy(lang).faqs({ local, others, inName: countryNameIn(region, lang), authority: authorityIn(region, lang), examCount });
 }
 
 /** "About each test": the exam's facts answer, in English (EXAM_FACTS) or, on a
@@ -223,20 +228,23 @@ export async function HomePage({ region, lang: pickedLang }: { region: Region; l
   const popularity: Record<string, number> = {};
   for (const p of allRanked) popularity[p.test.id] = p.answered ?? 0;
   const trending = search ? await trendingFor(region, allRanked) : [];
+  // An English country page's own h1 and lead, from the catalog (lib/regionHeadline.ts).
+  const headline = search && !us ? regionHeadline(region) : null;
 
   return (
     <div className={`flex-1 bg-white ${search ? "dark:bg-gray-950" : "dark:bg-gray-900"}`}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFor(region)) }} />
 
-      {search && <SearchHome initialRegion={region} popularity={popularity} trending={trending} answeredThisWeek={totalAnswered} />}
+      {search && <SearchHome initialRegion={region} popularity={popularity} trending={trending} answeredThisWeek={totalAnswered} headline={headline?.h1} />}
 
       {/* The search homepages: every test right under the box, like /tests (the US
           lists every country's tests, other countries their own and worldwide). */}
       {search && (
       <div id="all-tests" className="max-w-5xl mx-auto px-6 pt-10 pb-16 md:pb-24 scroll-mt-6">
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 text-center mb-6">
+        <h2 className={`text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 text-center ${headline ? "mb-3" : "mb-6"}`}>
           {us ? c.everyTest : c.testsFor(inName)}
         </h2>
+        {headline && <p className="mx-auto mb-6 max-w-2xl text-center text-gray-600 dark:text-gray-300">{headline.lead}</p>}
         <TestCatalogGrid showPopular={false} nested region={region} regionPicker localOnly={!us} lang={lang} searchBox={false} />
         {!us && (
           <p className="mt-10 text-sm text-gray-600 dark:text-gray-300">
@@ -314,7 +322,7 @@ export async function HomePage({ region, lang: pickedLang }: { region: Region; l
             </h2>
             <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
               {c.dmv.body}{" "}
-              <Link href="/dmv-practice-test" className="text-brand-dark hover:underline font-medium">
+              <Link href="/dmv-practice-test" className="text-brand-dark underline underline-offset-2 hover:decoration-2 font-medium">
                 {c.dmv.about}
               </Link>
             </p>
@@ -500,7 +508,8 @@ async function trendingFor(region: Region, ranked: { test: TestCatalogEntry; ans
     if (feed.length >= 6) break;
     if (regionOfTest(test.id) === region && !feed.includes(test)) feed.push(test);
   }
-  const trending = await getTrendingSearches(6);
+  // Outside the US only searches made there, so /uk never shows the US list.
+  const trending = await getTrendingSearches(6, region === "US" ? undefined : region);
   for (const test of feed) {
     if (trending.length >= 6) break;
     const name = test.name.toLowerCase();

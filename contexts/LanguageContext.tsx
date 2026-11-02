@@ -6,6 +6,7 @@ import { Language, createT } from "@/i18n";
 import { useStore } from "@/store/useStore";
 import { pageLanguage, testPageLanguage } from "@/lib/pageLanguage";
 import { countryLanguage, languageIsChosen, readLanguageCookie, writeLanguageCookie } from "@/lib/language";
+import { urlLanguage } from "@/lib/urlLanguage";
 
 interface LanguageContextType {
   /** The language this page shows its chrome in (lib/pageLanguage.ts). */
@@ -69,10 +70,12 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     [setStoreLanguage, router]
   );
 
-  // Update the html lang attribute when the page's language changes
+  // Update the html lang attribute when the page's language changes. A page
+  // written in another language (/es/..., /de/...) keeps its URL's language:
+  // its content is in it even when the header and footer follow the person's.
   useEffect(() => {
-    document.documentElement.lang = language;
-  }, [language]);
+    document.documentElement.lang = urlLanguage(pathname) ?? language;
+  }, [language, pathname]);
 
   const t = useMemo(() => createT(language), [language]);
 

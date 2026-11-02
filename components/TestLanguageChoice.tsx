@@ -28,15 +28,14 @@ export function TestLanguageChoice({
   return (
     <div className={`flex flex-wrap items-center justify-center gap-2 text-sm ${className}`}>
       <span className="text-gray-600 dark:text-gray-300">{t("languageChoice.questionsIn")}</span>
-      <div role="radiogroup" aria-label={t("languageChoice.questionsIn")} className="inline-flex flex-wrap gap-1 rounded-full bg-gray-100 dark:bg-gray-800 p-1">
+      <div role="group" aria-label={t("languageChoice.questionsIn")} className="inline-flex flex-wrap gap-1 rounded-full bg-gray-100 dark:bg-gray-800 p-1">
         {options.map((l) => {
           const active = l.code === value;
           return (
             <button
               key={l.code}
               type="button"
-              role="radio"
-              aria-checked={active}
+              aria-pressed={active}
               lang={l.code}
               onClick={() => onChange(l.code)}
               className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1 transition-colors ${

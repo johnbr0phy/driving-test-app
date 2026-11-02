@@ -16,7 +16,7 @@ export const stateLandingDataZh: Record<string, StateLandingInfo> = {
     notableRules: [
       "加州要求在参加路考之前完成50小时有人监督的驾驶练习（其中10小时为夜间驾驶）。",
       "18岁以下的临时驾照持有人在前12个月内不得搭载20岁以下的乘客，除非有25岁或以上的持照驾驶人陪同。",
-      "加州笔试共46道题，是全美各州中题目最多的，您需要答对39题（83%）才能通过。"
+      "加州18岁以下申请人的笔试共46道题，您需要答对38题（83%）才能通过。"
     ],
     neighboringSlugs: ["oregon", "nevada", "arizona"],
     onlineTestInfo: "不可以。加州DMV笔试必须亲自到DMV办公室参加。您可以在网上预约，以缩短等候时间。"

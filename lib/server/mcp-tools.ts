@@ -797,14 +797,14 @@ const tools: ToolEntry[] = [
 
           const user = await getUser(ctx.userId);
           const stateData = user?.selectedState ? (await import('@/data/states')).states.find(s => s.code === user.selectedState) : null;
-          const passingScore = stateData?.passingScore ?? 40;
+          const passingScore = stateData?.passingScore ?? 80; // a percent, like the site's pass line
 
           return ok({
             sessionId: completeResult.data.sessionId,
             testId,
             score: correctCount,
             totalQuestions: session.questions.length,
-            passed: correctCount >= passingScore,
+            passed: session.questions.length > 0 && (correctCount / session.questions.length) * 100 >= passingScore,
             passingScore,
             breakdown,
             categoryStats,
@@ -873,7 +873,7 @@ const tools: ToolEntry[] = [
 
           const user = await getUser(ctx.userId);
           const stateData = user?.selectedState ? (await import('@/data/states')).states.find(s => s.code === user.selectedState) : null;
-          const passingScore = stateData?.passingScore ?? 40;
+          const passingScore = stateData?.passingScore ?? 80; // a percent, like the site's pass line
 
           const breakdown = session.questions.map((q, i) => {
             const ua = session.answers[i];
@@ -895,7 +895,7 @@ const tools: ToolEntry[] = [
             state: session.state,
             score: session.score,
             totalQuestions: session.totalQuestions,
-            passed: session.score >= passingScore,
+            passed: session.totalQuestions > 0 && (session.score / session.totalQuestions) * 100 >= passingScore,
             passingScore,
             startedAt: session.startedAt,
             completedAt: session.completedAt,

@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { SITEMAP_SEGMENTS, buildSegment } from "@/lib/sitemaps";
+import { SITE_URL } from "@/lib/siteUrl";
 
 // IndexNow submission endpoint. POSTs the canonical URL list to
 // api.indexnow.org so Bing (and downstream consumers like ChatGPT search
@@ -7,10 +8,8 @@ import { SITEMAP_SEGMENTS, buildSegment } from "@/lib/sitemaps";
 // of waiting on Bing's normal crawl cadence.
 //
 // Trigger via Vercel Cron (see vercel.json) or manually:
-//   curl -X POST https://tigertest.io/api/indexnow/ping \
+//   curl -X POST https://www.tigertest.io/api/indexnow/ping \
 //     -H "Authorization: Bearer $CRON_SECRET"
-
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
 
 function verifyAuth(req: NextRequest): boolean {
   const secret = process.env.CRON_SECRET;

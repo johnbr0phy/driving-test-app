@@ -9,6 +9,8 @@ import { SuperAmazingFireworks } from "@/components/SuperAmazingFireworks";
 import { NativeAppShell } from "@/components/NativeAppShell";
 import { THEME_INIT_SCRIPT } from "@/contexts/ThemeContext";
 import { SITE_JSON_LD } from "@/lib/siteSchema";
+import { SITE_URL } from "@/lib/siteUrl";
+import { URL_LANG_INIT_SCRIPT } from "@/lib/urlLanguage";
 
 // viewport-fit=cover (page extends behind the notch/home indicator) is
 // only wanted inside the native app shell, where env(safe-area-inset-*)
@@ -20,15 +22,10 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tigertest.io";
-
-// Share images (relative og:image / twitter:image URLs) resolve against the
-// host that actually serves the site. tigertest.io redirects to www, and
-// some card crawlers (X) will not follow a redirect for an image.
-const assetOrigin = siteUrl.replace("://tigertest.io", "://www.tigertest.io");
+const siteUrl = SITE_URL;
 
 export const metadata: Metadata = {
-  metadataBase: new URL(assetOrigin),
+  metadataBase: new URL(siteUrl),
   title: {
     default: "Free Practice Tests for Driving, School & Work | Tigertest",
     template: "%s | Tigertest",
@@ -102,6 +99,9 @@ export default function RootLayout({
         {/* Applies the saved colour scheme before first paint so dark-mode
             readers never see a white flash. See contexts/ThemeContext.tsx. */}
         <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
+        {/* Sets <html lang> for pages written in another language before
+            first paint (lib/urlLanguage.ts). */}
+        <script dangerouslySetInnerHTML={{ __html: URL_LANG_INIT_SCRIPT }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SITE_JSON_LD) }} />
       </head>
       {/* min-h-screen (100vh) rather than min-h-dvh: dvh resizes as the iOS

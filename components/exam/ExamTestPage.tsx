@@ -171,7 +171,7 @@ export function ExamTestPage({ exam: source }: { exam: ExamConfig }) {
           <div className="text-sm font-semibold mb-3">
             🎯 {t("progressOverviewWithTest").replace("{test}", ui.examTestN(exam.shortName, testNumber))}
           </div>
-          <div className="grid grid-cols-10 gap-1">
+          <div className="grid grid-cols-10 gap-1" aria-hidden="true">
             {questions.map((_, index) => (
               <div
                 key={index}

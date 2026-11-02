@@ -9,14 +9,13 @@ import { CountUp } from "@/components/CountUp";
 import { useTestsInProgress } from "@/hooks/useTestsInProgress";
 import { FLAGS, readRegionCookie } from "@/components/CountryPills";
 import { useAuth } from "@/contexts/AuthContext";
-import { trackSearch } from "@/lib/searchTracking";
+import { useSearchTracking } from "@/hooks/useSearchTracking";
 import { Region, TestRegion, regionInfo, regionOfTest } from "@/lib/region";
 import { normalizeQuery, searchAllTests, SearchHit, SearchResult } from "@/lib/testSearch";
 import { TEST_CATALOG } from "@/lib/testCatalog";
 import { asNotifyEmail } from "@/lib/test-requests";
 
 const flagOf = (r: TestRegion) => (r === "GLOBAL" ? "🌐" : FLAGS[r]);
-const TRACK_DELAY_MS = 1200;
 const SETTLE_MS = 800;
 
 function progressLine(mastered: number, testsTaken: number): string {
@@ -66,7 +65,6 @@ export function SearchHome({
   const [query, setQuery] = useState("");
   const [active, setActive] = useState(0);
   const inputRef = useRef<HTMLInputElement>(null);
-  const sent = useRef(new Set<string>());
 
   // A country the visitor picked on this device beats the server's guess.
   useEffect(() => {
@@ -118,26 +116,11 @@ export function SearchHome({
 
   useEffect(() => setActive(0), [query]);
 
-  function trackQuery(text: string, results: number) {
-    if (text.length < 2 || sent.current.has(text)) return;
-    sent.current.add(text);
-    trackSearch({ kind: "query", q: text, results }, region, user?.email);
-  }
-
-  // Count a query once the visitor stops typing, so "c", "ca", "cal" never count.
-  useEffect(() => {
-    if (q.length < 2) return;
-    const results = foundCount;
-    const timer = setTimeout(() => trackQuery(q, results), TRACK_DELAY_MS);
-    return () => clearTimeout(timer);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [q, foundCount]);
+  // One row per search on the Searches tab, not one per pause (hooks/useSearchTracking).
+  const tracking = useSearchTracking(q, foundCount, region, user?.email);
 
   function open(hit: SearchHit) {
-    if (q.length >= 2) {
-      trackQuery(q, foundCount);
-      trackSearch({ kind: "pick", q, pick: hit.key }, region, user?.email);
-    }
+    tracking.picked(q, foundCount, hit.key);
     router.push(hit.href);
   }
 
@@ -154,7 +137,7 @@ export function SearchHome({
       const hit = result.hits[active];
       setSettledQ(q);
       if (hit) open(hit);
-      else trackQuery(q, 0);
+      else tracking.submit(q, 0);
     } else if (e.key === "Escape") {
       setQuery("");
     }

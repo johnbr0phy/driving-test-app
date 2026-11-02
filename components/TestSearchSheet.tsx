@@ -8,13 +8,12 @@ import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { FLAGS, readRegionCookie } from "@/components/CountryPills";
 import { useAuth } from "@/contexts/AuthContext";
 import { useTestsInProgress } from "@/hooks/useTestsInProgress";
+import { useSearchTracking } from "@/hooks/useSearchTracking";
 import { Region, TestRegion, regionHomePath, regionOfTest } from "@/lib/region";
 import { normalizeQuery, searchAllTests, SearchHit } from "@/lib/testSearch";
-import { trackSearch } from "@/lib/searchTracking";
 import { useStore } from "@/store/useStore";
 
 const flagOf = (r: TestRegion) => (r === "GLOBAL" ? "🌐" : FLAGS[r]);
-const TRACK_DELAY_MS = 1200;
 
 function progressLine(mastered: number, testsTaken: number): string {
   const parts = [];
@@ -35,7 +34,6 @@ export function TestSearchSheet({ open, onOpenChange }: { open: boolean; onOpenC
   const [query, setQuery] = useState("");
   const [active, setActive] = useState(0);
   const inputRef = useRef<HTMLInputElement>(null);
-  const sent = useRef(new Set<string>());
   const started = useTestsInProgress();
 
   useEffect(() => {
@@ -49,27 +47,15 @@ export function TestSearchSheet({ open, onOpenChange }: { open: boolean; onOpenC
   const found = result.partial ? 0 : result.hits.length;
   useEffect(() => setActive(0), [query]);
 
-  const trackQuery = (text: string, results: number) => {
-    if (text.length < 2 || sent.current.has(text)) return;
-    sent.current.add(text);
-    trackSearch({ kind: "query", q: text, results }, region, user?.email);
-  };
-  useEffect(() => {
-    if (q.length < 2) return;
-    const timer = setTimeout(() => trackQuery(q, found), TRACK_DELAY_MS);
-    return () => clearTimeout(timer);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [q, found]);
+  // One row per search, sent when they open a test, clear the box or close the sheet.
+  const tracking = useSearchTracking(q, found, region, user?.email);
 
   const go = (href: string) => {
     onOpenChange(false);
     router.push(href);
   };
   const pick = (hit: SearchHit) => {
-    if (q.length >= 2) {
-      trackQuery(q, found);
-      trackSearch({ kind: "pick", q, pick: hit.key }, region, user?.email);
-    }
+    tracking.picked(q, found, hit.key);
     go(hit.href);
   };
 
@@ -107,7 +93,7 @@ export function TestSearchSheet({ open, onOpenChange }: { open: boolean; onOpenC
                 e.preventDefault();
                 const hit = result.hits[active];
                 if (hit) pick(hit);
-                else trackQuery(q, 0);
+                else tracking.submit(q, 0);
               }
             }}
             placeholder="Search for your test"

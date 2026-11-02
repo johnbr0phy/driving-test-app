@@ -233,7 +233,7 @@ export async function HomePage({ region, lang: pickedLang }: { region: Region; l
       {/* The search homepages: every test right under the box, like /tests (the US
           lists every country's tests, other countries their own and worldwide). */}
       {search && (
-      <div id="all-tests" className="max-w-5xl mx-auto px-6 pt-10 pb-16 md:pb-24 scroll-mt-6">
+      <div id="all-tests" data-search-rest className="max-w-5xl mx-auto px-6 pt-10 pb-16 md:pb-24 scroll-mt-6">
         <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 text-center mb-6">
           {us ? c.everyTest : c.testsFor(inName)}
         </h2>
@@ -306,7 +306,7 @@ export async function HomePage({ region, lang: pickedLang }: { region: Region; l
       {/* The US: the DMV state grid */}
       {us && (
       /* DMV by state: keeps the homepage linking straight to the state pages */
-      <div className="bg-gray-50 dark:bg-gray-950 py-14 md:py-20">
+      <div data-search-rest className="bg-gray-50 dark:bg-gray-950 py-14 md:py-20">
         <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-10">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 mb-3">
@@ -345,7 +345,7 @@ export async function HomePage({ region, lang: pickedLang }: { region: Region; l
 
       {/* Outside the US: the country's own tests (none yet on a brand-new country page) */}
       {home && localTests.length > 0 && (!search || localTests.some((t) => aboutTest(t, lang))) && (
-          <div className={`max-w-5xl mx-auto px-6 pb-16 md:pb-20 ${search ? "pt-4" : ""}`}>
+          <div data-search-rest className={`max-w-5xl mx-auto px-6 pb-16 md:pb-20 ${search ? "pt-4" : ""}`}>
             {!search && (<>
             <div className="flex flex-wrap items-end justify-between gap-x-6 gap-y-2 mb-5">
               <div>
@@ -459,7 +459,7 @@ export async function HomePage({ region, lang: pickedLang }: { region: Region; l
       </>)}
 
       {/* FAQ */}
-      <div className="bg-gray-50 dark:bg-gray-950 py-16 md:py-24">
+      <div data-search-rest className="bg-gray-50 dark:bg-gray-950 py-16 md:py-24">
         <div className="max-w-3xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-12">
             {c.faqTitle}
@@ -476,7 +476,7 @@ export async function HomePage({ region, lang: pickedLang }: { region: Region; l
       </div>
 
       {/* Request a test */}
-      <div className="max-w-3xl mx-auto px-6 py-16 text-center">
+      <div data-search-rest className="max-w-3xl mx-auto px-6 py-16 text-center">
         <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-50 mb-3">{c.requestTitle}</h2>
         <p className="text-gray-600 dark:text-gray-300 mb-6">{c.requestBody}</p>
         <Link

@@ -167,7 +167,7 @@ export function SearchHome({
   const started = useTestsInProgress();
 
   return (
-    <section aria-label="Find your test" className="bg-white dark:bg-gray-950">
+    <section aria-label="Find your test" data-search-home data-searching={showResults || undefined} className="bg-white dark:bg-gray-950">
       <div className="mx-auto w-full max-w-2xl px-4">
         {/* The wordmark. Shrinks to one line while searching so results stay above a phone keyboard. */}
         <div className={`flex items-center justify-center ${showResults ? "gap-2 pt-3 pb-4" : "gap-3 pt-10 pb-3 sm:pt-[12vh] sm:pb-4"}`}>

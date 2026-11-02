@@ -50,19 +50,19 @@ T = {
         "A partir de los 65 años la vigencia de los permisos de turismo y motocicleta baja de diez a cinco años. Los tres años se aplican a los permisos de camión y autobús después de los 65.",
     ),
     "ESDGT-LIC-010": (
-        "Una vez aprobada la prueba teórica, el aprobado se conserva durante:",
-        "Un año", "Dos años", "Seis meses", "Tres años",
-        "La DGT conserva una prueba aprobada durante dos años. Si en ese plazo no ha obtenido el permiso, tendrá que repetir todas las pruebas.",
+        "Su permiso B caducó el mes pasado. ¿Puede seguir conduciendo?",
+        "Sí, durante tres meses más", "No, hasta que lo renueve", "Sí, dentro de su provincia", "Sí, si lleva la tarjeta antigua",
+        "Un permiso caducado no le autoriza a conducir. Renuévelo antes de volver a ponerse al volante; conducir con él es conducir sin un permiso válido.",
     ),
     "ESDGT-LIC-011": (
-        "En el examen teórico de la DGT para el permiso B, ¿cuántos fallos como máximo puede cometer para aprobar?",
-        "3", "4", "5", "6",
-        "El examen tiene 30 preguntas y se aprueba con un máximo de tres fallos, es decir, con 27 respuestas correctas.",
+        "Antes de renovar su permiso B, debe superar:",
+        "Un curso de reciclaje de conducción", "Una ITV de su propio coche", "Un reconocimiento médico en un CRC", "Un curso de primeros auxilios",
+        "La renovación exige un reconocimiento psicofísico en un Centro de Reconocimiento de Conductores (CRC), que confirma que sigue siendo apto para conducir.",
     ),
     "ESDGT-LIC-012": (
-        "¿Cuándo puede presentarse por primera vez al examen teórico?",
-        "Solo después de cumplir 18 años", "Hasta un año antes de los 18", "A los 16, con un padre o tutor", "Hasta tres meses antes de los 18",
-        "La DGT permite hacer el primer examen desde tres meses antes de alcanzar la edad mínima exigida para el permiso.",
+        "Presta su coche a un amigo. Como titular, debe asegurarse de que el amigo:",
+        "Tiene más de 25 años", "Ya lo ha conducido antes", "Vive en su mismo domicilio", "Tiene un permiso válido",
+        "El titular no debe dejar conducir a nadie que no tenga un permiso válido para ese vehículo. Si lo hace, puede tener que responder por ello.",
     ),
     "ESDGT-LIC-013": (
         "Un turismo nuevo debe pasar su primera ITV (inspección técnica periódica) cuando tiene:",

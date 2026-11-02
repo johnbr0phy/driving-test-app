@@ -18,14 +18,14 @@
     "state": "ALL",
     "questionId": "CAQC-LIC-002",
     "category": "caqcLicence",
-    "question": "How long must you hold a Class 5 learner's licence before you can take the SAAQ knowledge test?",
-    "optionA": "6 months",
-    "optionB": "10 months",
-    "optionC": "8 months",
-    "optionD": "12 months",
+    "question": "Where must the accompanying rider sit while a learner drives?",
+    "optionA": "Directly behind the learner",
+    "optionB": "Beside the learner driver",
+    "optionC": "Anywhere in the vehicle",
+    "optionD": "In the back seat, centre",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "The SAAQ knowledge test can be booked once you have held the learner's licence for at least 10 months. The road test needs at least 12 months."
+    "explanation": "The accompanying rider must sit beside the learner so they can give advice and help at any moment. Sitting in the back does not meet the rule."
   },
   {
     "type": "CAQC",
@@ -102,14 +102,14 @@
     "state": "ALL",
     "questionId": "CAQC-LIC-008",
     "category": "caqcLicence",
-    "question": "If you fail the SAAQ knowledge test, how long must you wait to retake it?",
-    "optionA": "At least 7 days",
-    "optionB": "At least 14 days",
-    "optionC": "At least 60 days",
-    "optionD": "At least 28 days",
+    "question": "Which documents must you carry when driving in Quebec?",
+    "optionA": "Licence and birth certificate",
+    "optionB": "Licence and health insurance card",
+    "optionC": "Registration and a passport",
+    "optionD": "Licence, registration and insurance",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "After a failed knowledge test you book another appointment and must wait at least 28 days before taking it again."
+    "explanation": "You must carry your driver's licence, the vehicle registration certificate and proof of liability insurance, and show them to a peace officer on request."
   },
   {
     "type": "CAQC",
@@ -130,14 +130,14 @@
     "state": "ALL",
     "questionId": "CAQC-LIC-010",
     "category": "caqcLicence",
-    "question": "What score must you get on each part of the SAAQ knowledge test?",
-    "optionA": "60%",
-    "optionB": "75%",
-    "optionC": "70%",
-    "optionD": "80%",
+    "question": "When may a learner's licence holder drive without an accompanying rider?",
+    "optionA": "In daylight on quiet roads",
+    "optionB": "Never",
+    "optionC": "After six months of practice",
+    "optionD": "When driving to school or work",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "The knowledge test has three parts: the Highway Safety Code, road signs and signals, and driving behaviours. You need 75% on each part, not just overall."
+    "explanation": "A learner's licence lets you drive only with an accompanying rider seated beside you. Driving alone means driving without a valid licence for that vehicle."
   },
   {
     "type": "CAQC",

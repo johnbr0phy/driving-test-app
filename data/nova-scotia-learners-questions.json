@@ -1432,14 +1432,14 @@
     "state": "ALL",
     "questionId": "CANS-LIC-003",
     "category": "cansLicence",
-    "question": "How many questions must you answer correctly on each part of the Class 7 knowledge test?",
-    "optionA": "15 of 20",
-    "optionB": "18 of 20",
-    "optionC": "16 of 20",
-    "optionD": "14 of 20",
+    "question": "What must you carry when you drive in Nova Scotia?",
+    "optionA": "Licence and birth certificate",
+    "optionB": "Licence and health card only",
+    "optionC": "Licence, permit and insurance card",
+    "optionD": "Only the vehicle permit",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "The test has a rules of the road part and a road sign part, each 20 multiple-choice questions, and you must get at least 16 right on each (80 percent)."
+    "explanation": "Carry your driver's licence, the vehicle permit (registration) and the proof of insurance card, and show them to a peace officer who asks."
   },
   {
     "type": "CANS",

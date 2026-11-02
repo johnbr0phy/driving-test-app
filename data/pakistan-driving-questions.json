@@ -60,14 +60,14 @@
     "state": "ALL",
     "questionId": "PKDRV-LIC-005",
     "category": "pkLicence",
-    "question": "Who sets how long you must wait between your learner permit and your driving test?",
-    "optionA": "Your licensing authority",
-    "optionB": "Your driving school instructor",
-    "optionC": "The federal transport ministry",
-    "optionD": "The motorway police",
+    "question": "You bought a used car last month and it is still registered in the seller's name. You should:",
+    "optionA": "Have the ownership transferred",
+    "optionB": "Keep driving it in their name",
+    "optionC": "Take off the number plates",
+    "optionD": "Carry only the sale receipt",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Punjab, Sindh, KP, Balochistan and Islamabad each set their own waiting period, so check the rule where you apply."
+    "explanation": "When a vehicle changes hands, the transfer must be recorded with the excise and taxation office so the registration shows the real owner."
   },
   {
     "type": "PKDRIVE",
@@ -270,14 +270,14 @@
     "state": "ALL",
     "questionId": "PKDRV-LIC-020",
     "category": "pkLicence",
-    "question": "After the sign or theory test, applicants usually take:",
-    "optionA": "A mechanical repair test",
-    "optionB": "A written essay",
-    "optionC": "A first aid exam",
-    "optionD": "A practical road test",
+    "question": "Besides its registration, a bus or wagon carrying paying passengers also needs:",
+    "optionA": "A toll tag",
+    "optionB": "A school badge",
+    "optionC": "An owner's sticker",
+    "optionD": "A route permit",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Once you pass the sign or theory test, you show your driving skills in a practical test, which often includes driving and parking between cones."
+    "explanation": "Public service vehicles need a route permit and a certificate of fitness under the Motor Vehicles Ordinance, and the driver needs a licence for that vehicle."
   },
   {
     "type": "PKDRIVE",

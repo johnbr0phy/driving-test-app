@@ -2734,14 +2734,14 @@
     "state": "ALL",
     "questionId": "SETRF-PER-012",
     "category": "setrPersonal",
-    "question": "What must you complete before you take the theory test?",
-    "optionA": "A first aid course",
-    "optionB": "A motorway driving course",
-    "optionC": "Ten driving school lessons",
-    "optionD": "Both parts of the risk course",
+    "question": "During private practice (övningskörning), who counts in law as the driver of the car?",
+    "optionA": "The learner",
+    "optionB": "Both of them equally",
+    "optionC": "The car's owner",
+    "optionD": "The supervisor",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Both parts of the risk education (riskutbildning) must be done and still valid when you arrive for the theory test."
+    "explanation": "The supervisor (handledare) is treated as the driver during practice, so the alcohol rules apply to them and they must be ready to step in at any moment."
   },
   {
     "type": "SETRAFIK",
@@ -2776,14 +2776,14 @@
     "state": "ALL",
     "questionId": "SETRF-PER-015",
     "category": "setrPersonal",
-    "question": "For theory tests passed from 19 August 2026, how long is a pass valid?",
-    "optionA": "Four months",
-    "optionB": "Two years",
-    "optionC": "One year",
-    "optionD": "Six months",
+    "question": "When you practise driving privately with your supervisor, the car must carry:",
+    "optionA": "A green L plate",
+    "optionB": "Flashing hazard lights",
+    "optionC": "An ÖVNINGSKÖRNING sign",
+    "optionD": "A yellow roof light",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "From 19 August 2026, a passed B theory test is valid for one year instead of four months. You must pass the driving test within that time."
+    "explanation": "During private practice the car must have a sign reading ÖVNINGSKÖRNING, clearly visible to traffic behind, so other road users know a learner is driving."
   },
   {
     "type": "SETRAFIK",

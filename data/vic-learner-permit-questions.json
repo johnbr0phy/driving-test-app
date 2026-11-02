@@ -298,14 +298,14 @@
     "state": "ALL",
     "questionId": "AUVIC-LIC-022",
     "category": "auvicLicence",
-    "question": "What happens if your Learner Log Book is incomplete when you arrive for your drive test?",
-    "optionA": "You sit the test anyway",
-    "optionB": "No test for six weeks",
-    "optionC": "You fill it in on the day",
-    "optionD": "A two-week wait",
+    "question": "Where must the supervising driver sit while a learner drives?",
+    "optionA": "Directly behind the learner",
+    "optionB": "In the front passenger seat",
+    "optionC": "Anywhere in the car",
+    "optionD": "In the back, in the middle",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "An incomplete or incorrect log book is not accepted: you lose your booking and test fees and cannot take the test for at least six weeks."
+    "explanation": "Your supervising driver must sit beside you in the front passenger seat so they can give instructions and help if something goes wrong."
   },
   {
     "type": "AUVIC",

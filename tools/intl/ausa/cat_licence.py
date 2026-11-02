@@ -81,7 +81,7 @@ ITEMS = [
     ("A full licence holder is disqualified after how many demerit points?",
      "12 in 3 years", "8 in 3 years", "12 in 1 year", "15 in 3 years",
      "Full licence holders who reach 12 or more points within three years are disqualified, or may choose a 12-month good behaviour option."),
-    ("In the online myLs learner's theory test, how many questions must you answer correctly?",
-     "27 of 30", "24 of 30", "25 of 30", "30 of 30",
-     "The myLs theory test has 30 questions and you need 27 correct. It can be attempted as many times as needed."),
+    ("Must a learner carry their learner's permit while driving?",
+     "Yes, whenever they drive", "No, only full licence holders do", "Only when driving at night", "Only when driving interstate",
+     "Learner and provisional drivers must carry their permit or licence every time they drive and show it to police when asked."),
 ]

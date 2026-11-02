@@ -830,14 +830,14 @@
     "state": "ALL",
     "questionId": "AUSA-LIC-028",
     "category": "ausaLicence",
-    "question": "In the online myLs learner's theory test, how many questions must you answer correctly?",
-    "optionA": "24 of 30",
-    "optionB": "25 of 30",
-    "optionC": "30 of 30",
-    "optionD": "27 of 30",
+    "question": "Must a learner carry their learner's permit while driving?",
+    "optionA": "No, only full licence holders do",
+    "optionB": "Only when driving at night",
+    "optionC": "Only when driving interstate",
+    "optionD": "Yes, whenever they drive",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "The myLs theory test has 30 questions and you need 27 correct. It can be attempted as many times as needed."
+    "explanation": "Learner and provisional drivers must carry their permit or licence every time they drive and show it to police when asked."
   },
   {
     "type": "AUSA",

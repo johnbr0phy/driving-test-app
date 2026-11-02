@@ -26,8 +26,8 @@ sample item was copied. Checked 2026-11-02.
 - NASAA, "Exams FAQ" (updated February 14, 2025):
   https://nasaa.org/wp-content/uploads/2025/02/Exams-FAQ-PRINTABLE-2025.pdf (checked 2026-11-02):
   92 of 130 is not a percentage cut; no sponsor needed (unsponsored candidates enroll through
-  FINRA); passing is a prerequisite to IAR registration, and most states accept CFP, ChFC, PFS,
-  CFA and other designations instead (updated May 2024); the Series 66 equals the 63 plus 65;
+  FINRA); passing is a prerequisite to IAR registration, and most states accept CFP, ChFC and other
+  NASAA-approved designations instead (list updated May 2024); the Series 66 equals the 63 plus 65;
   two-year rule for state registration.
 
 ## Mock test design

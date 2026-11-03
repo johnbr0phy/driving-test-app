@@ -26,6 +26,11 @@ Checked 2026-11-03.
   jurisdiction. Computer-based at Prometric, on fixed dates four times a year (January, April, July,
   October).
 
+- CMS, Medicare Benefit Policy Manual, Chapter 15, section 220.3 (documentation requirements for
+  therapy services): the clinician writes a progress report at least once every 10 treatment days;
+  assistants may write elements of progress between reports but not the progress report itself.
+  https://www.cms.gov/Regulations-and-Guidance/Guidance/Manuals/Downloads/bp102c15.pdf
+
 ## Bank decisions
 
 - Per 50-question test: 8 / 12 / 11 / 9 / 3 / 3 / 4, the outline midpoints scaled to 50. The small
@@ -53,7 +58,8 @@ Checked 2026-11-03.
   nitroglycerin and orthostatic dizziness), 220 - age target HR (now heart rate reserve with less
   common numbers), age of walking (now order of milestones), hypoglycemia first aid (now
   hyperglycemia with ketones), supine in pregnancy (now diastasis recti), paper chart correction
-  (now objective documentation).
+  (now Medicare progress reports). Review pass (2026-11-03): a parallel-bars head strike replaced the
+  gym trip that echoed NASM-PRO-004; weak distractors replaced on four items.
 
 All 200 items are original, written for Tigertest from the FSBPT outline. None is copied from FSBPT's
 PEAT, sample questions or any commercial review.

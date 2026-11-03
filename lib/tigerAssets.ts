@@ -80,6 +80,11 @@ const BORROWED_SETS: Record<string, string> = {
   // tiger, ARRT the HTL lab tiger, ASWB and NCE the RBT tiger, the teacher exams the Praxis tiger.
   cpafar: "cpc", cpareg: "cpc", series63: "series7", series65: "series7", nmls: "realestate",
   arrt: "htl", aswb: "rbt", nce: "rbt", texesppr: "praxis", praxisplt: "praxis",
+  // Next-20 batch B: CMA the CCMA tiger, NBDHE the DANB tiger, NPTE-PTA the NASM tiger, the home inspector
+  // the OSHA tiger, the Texas adjuster the P&C tiger, Salesforce the AWS tiger, CFA the Series 7 tiger, and
+  // CPA AUD, ACCA FA and AAT Level 2 the CPC tiger like the other accounting exams.
+  cma: "ccma", nbdhe: "danb", nptepta: "nasm", nhie: "osha", txadjuster: "pnc", sfadmin: "aws", cfal1: "series7",
+  cpaaud: "cpc", accafa: "cpc", aatl2: "cpc",
 };
 
 export function hasTigerSet(examId: string): boolean {

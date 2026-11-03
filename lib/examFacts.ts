@@ -3361,4 +3361,153 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "The ETS Praxis Study Companion for Principles of Learning and Teaching: Grades K-6 (5622) and the ETS 5622 test page, checked November 2026",
     source: { name: "ETS Praxis: PLT Grades K-6 (5622)", url: "https://praxis.ets.org/test/5622.html" },
   },
+  cma: {
+    answer:
+      "The CMA (AAMA) Certification Exam is the Certifying Board of the American Association of Medical Assistants' exam for medical assistants, which earns the CMA (AAMA) credential. It has 200 multiple-choice questions on a computer, 180 scored and 20 unscored pretest items, given in four 40-minute segments (160 minutes of test time) at a PSI test center or by live remote proctoring. Under the current content outline the scored questions are Clinical Competency 106, General 38 and Administrative 36. Scores run from 200 to 800, and the minimum passing score is 405. The credential is recertified every 60 months.",
+    rows: [
+      { label: "Questions", value: "200 multiple choice (180 scored, 20 pretest)" },
+      { label: "Time", value: "160 minutes, four 40-minute segments" },
+      { label: "Pass mark", value: "Scaled score of 405 (scale 200 to 800)" },
+      { label: "Content", value: "Clinical 106 (59%), General 38 (21%), Administrative 36 (20%)" },
+      { label: "Where", value: "PSI test center or live remote proctoring" },
+      { label: "Recertification", value: "Every 60 months, by CEUs or by exam" },
+      { label: "Run by", value: "Certifying Board of the American Association of Medical Assistants (AAMA)" },
+    ],
+    basedOn: "The AAMA Content Outline for the CMA (AAMA) Certification Exam (Rev 1/26) and the AAMA certification FAQ, checked November 2026",
+    source: { name: "AAMA: CMA (AAMA) Certification", url: "https://www.aama-ntl.org/certification" },
+  },
+  nhie: {
+    answer:
+      "The National Home Inspector Examination (NHIE) is the home inspector competency exam written by the Examination Board of Professional Home Inspectors (EBPHI) and used for licensing in 35 states and several Canadian provinces. It has 200 multiple-choice questions, 25 of them unscored pretest items, in four hours. Scores are scaled from 200 to 800 and 500 passes. It covers property and building inspection (70%), analysis of findings and reporting (20%) and professional responsibilities (10%), and is delivered by PSI in most states and Pearson VUE in a few.",
+    rows: [
+      { label: "Questions", value: "200 (175 scored, 25 pretest)" },
+      { label: "Time", value: "4 hours" },
+      { label: "Passing score", value: "500 on a 200 to 800 scale" },
+      { label: "Largest domain", value: "Property and building inspection, 70%" },
+      { label: "Where", value: "PSI test centers; Pearson VUE in FL, NV and TX" },
+      { label: "Run by", value: "Examination Board of Professional Home Inspectors (EBPHI)" },
+    ],
+    basedOn: "EBPHI FAQ and NHIE content outline, checked November 2026",
+    source: { name: "EBPHI: Frequently Asked Questions", url: "https://nationalhomeinspectorexam.org/frequently-asked-questions-2/" },
+  },
+  txadjuster: {
+    answer:
+      "The Texas All-Lines Adjuster exam is the licensing exam the Texas Department of Insurance requires for the all-lines adjuster license, which covers property, casualty and workers' compensation claims. Pearson VUE gives it in English or Spanish: 150 scored multiple-choice questions in 150 minutes, reported as a scaled score from 0 to 100 with 70 passing. Under the outline effective September 1, 2026, it covers general property and casualty product knowledge (40%), insurance terms and concepts (40%) and Texas statutes and rules for adjusting (20%). A TDI-approved adjuster course or a CPCU or AIC designation can replace the exam.",
+    rows: [
+      { label: "Questions", value: "150 scored" },
+      { label: "Time", value: "150 minutes" },
+      { label: "Passing score", value: "70 (scaled, 0 to 100)" },
+      { label: "Largest areas", value: "P&C product knowledge and insurance terms, 40% each" },
+      { label: "Languages", value: "English or Spanish" },
+      { label: "Run by", value: "Texas Department of Insurance, delivered by Pearson VUE" },
+    ],
+    basedOn: "Pearson VUE Texas candidate handbook and content outline effective September 1, 2026, checked November 2026",
+    source: { name: "Pearson VUE: Texas Insurance", url: "https://www.pearsonvue.com/us/en/tx/insurance.html" },
+  },
+  sfadmin: {
+    answer:
+      "The Salesforce Certified Platform Administrator exam, formerly Salesforce Certified Administrator, is Salesforce's core admin certification. Guides quoting the current exam guide give 60 scored multiple-choice and multiple-select questions plus up to 5 unscored ones in 105 minutes, with 68% needed to pass the English exam. Its eight sections were refreshed for 2026: Configuration and Setup 15%, Object Manager and Lightning App Builder 15%, Sales and Marketing Applications 10%, Service and Support Applications 10%, Productivity and Collaboration 10%, Data and Analytics Management 17%, Automation 15% and Agentforce 8%.",
+    rows: [
+      { label: "Questions", value: "60 scored, plus up to 5 unscored" },
+      { label: "Time", value: "105 minutes" },
+      { label: "Passing score", value: "68% (English exam)" },
+      { label: "Largest section", value: "Data and Analytics Management, 17%" },
+      { label: "New section", value: "Agentforce, 8%" },
+      { label: "Run by", value: "Salesforce, registered through Trailhead" },
+    ],
+    basedOn: "Salesforce Platform Administrator exam guide as quoted by study guides, checked November 2026",
+    source: { name: "Trailhead: Salesforce Certified Platform Administrator", url: "https://trailhead.salesforce.com/credentials/platformadministrator" },
+  },
+  cfal1: {
+    answer:
+      "CFA Level I is the first of three exams in the CFA Program run by CFA Institute. It has 180 multiple-choice questions in two sessions of 90, each 135 minutes long, and every question has three answer choices. All questions count equally and there is no penalty for wrong answers. CFA Institute sets the minimum passing score after each exam and does not publish it; results are pass or do not pass. For exams from February 2027 the topic weights are Ethics 10 to 15%, Quantitative Methods 11 to 14%, Economics 6 to 9%, Financial Statement Analysis 11 to 14%, Corporate Finance 6 to 9%, Equities 11 to 14%, Fixed Income 11 to 14%, Derivatives and Risk Management 6 to 9%, Alternative Investments 6 to 9% and Portfolio Construction 8 to 12%.",
+    rows: [
+      { label: "Questions", value: "180 multiple choice, 3 choices each" },
+      { label: "Time", value: "Two sessions of 135 minutes" },
+      { label: "Wrong answers", value: "No penalty" },
+      { label: "Passing score", value: "Set after each exam, not published" },
+      { label: "Topics", value: "10, Ethics to Portfolio Construction" },
+      { label: "Also required", value: "One Practical Skills Module" },
+      { label: "Run by", value: "CFA Institute" },
+    ],
+    basedOn: "the CFA Institute Level I exam page and its 2026 and 2027 topic weights, checked November 2026",
+    source: { name: "CFA Institute: Level I exam", url: "https://www.cfainstitute.org/programs/cfa-program/candidate-resources/level-i-exam" },
+  },
+  cpaaud: {
+    answer:
+      "AUD (Auditing and Attestation) is one of the three Core sections of the Uniform CPA Examination, developed by the AICPA and delivered with NASBA and the state boards of accountancy. It lasts 4 hours and has 78 multiple-choice questions and 7 task-based simulations, each half of the score. Scores run from 0 to 99 and 75 passes; it is a scaled score, not a percent correct. Under the Blueprints effective January 1, 2026 its four content areas are Ethics, Professional Responsibilities and General Principles (15 to 25%), Assessing Risk and Developing a Planned Response (25 to 35%), Performing Further Procedures and Obtaining Evidence (30 to 40%) and Forming Conclusions and Reporting (10 to 20%).",
+    rows: [
+      { label: "Time", value: "4 hours" },
+      { label: "Questions", value: "78 multiple choice, 7 task-based simulations" },
+      { label: "Score weighting", value: "50% multiple choice, 50% simulations" },
+      { label: "Passing score", value: "75 on a 0 to 99 scale" },
+      { label: "Content areas", value: "Ethics and General Principles, Risk Assessment, Further Procedures and Evidence, Reporting" },
+      { label: "Blueprint", value: "AICPA, effective January 1, 2026" },
+      { label: "Run by", value: "AICPA, NASBA and state boards of accountancy" },
+    ],
+    basedOn: "the AICPA CPA Exam Blueprints effective January 1, 2026 and the 2027 summary of changes, checked November 2026",
+    source: { name: "AICPA: What is tested on the CPA Exam", url: "https://www.aicpa-cima.com/resources/article/learn-what-is-tested-on-the-cpa-exam" },
+  },
+  accafa: {
+    answer:
+      "Financial Accounting (FA) is one of ACCA's three Applied Knowledge exams, also sat as FFA in the Foundations in Accountancy. It is a two-hour computer-based exam, available on demand, with all questions compulsory: Section A has 35 objective test questions worth two marks each and Section B has two 15-mark multi-task questions, one on consolidation and one on preparing accounts. The pass mark is 50%. ACCA lists no syllabus change for September 2026 to August 2027, so the IFRS 18 statement formats introduced in September 2025 still apply.",
+    rows: [
+      { label: "Time", value: "2 hours" },
+      { label: "Section A", value: "35 objective test questions, 2 marks each" },
+      { label: "Section B", value: "2 multi-task questions, 15 marks each" },
+      { label: "Total marks", value: "100" },
+      { label: "Pass mark", value: "50%" },
+      { label: "Format", value: "Computer-based, on demand" },
+      { label: "Syllabus", value: "September 2026 to August 2027 (no change from 2025-26)" },
+      { label: "Run by", value: "ACCA (Association of Chartered Certified Accountants)" },
+    ],
+    basedOn: "ACCA's FA/FFA syllabus and study guide and its 2025/26 to 2026/27 syllabus changes guidance, checked November 2026",
+    source: { name: "ACCA: Financial Accounting (FA/FFA) essentials on one page", url: "https://accaglobal.com/gb/en/student/exam-support-resources/fundamentals-exams-study-resources/f3/session-cbe-introduction/financial-accounting-fa-essentials-on-one-page.html" },
+  },
+  aatl2: {
+    answer:
+      "The AAT Level 2 Certificate in Accounting, formerly the Foundation Certificate in Accounting, is the entry-level qualification of AAT, the Association of Accounting Technicians. It has four mandatory units. Introduction to Bookkeeping, Principles of Bookkeeping Controls and Principles of Costing are each assessed by a 1 hour 30 minute computer-marked assessment, and The Business Environment by a 2 hour synoptic assessment. All assessments are computer based and booked on demand through a training provider or venue. AAT's pass mark is 70% on every assessment, and the qualification is graded Pass, Merit or Distinction.",
+    rows: [
+      { label: "Units", value: "4 mandatory: bookkeeping, controls, costing, business environment" },
+      { label: "Grade weighting", value: "25% / 25% / 20% / 30% (synoptic)" },
+      { label: "Unit assessments", value: "3, each 1 hour 30 minutes, computer marked" },
+      { label: "Synoptic assessment", value: "2 hours, partly human marked" },
+      { label: "Pass mark", value: "70% on every assessment" },
+      { label: "Grades", value: "Pass 70%, Merit 80%, Distinction 90%" },
+      { label: "Typical study time", value: "About a year (255 guided learning hours)" },
+      { label: "Run by", value: "AAT, through approved training providers" },
+    ],
+    basedOn: "AAT's Level 2 Certificate in Accounting (Q2022) qualification specification, version 5.7, checked November 2026",
+    source: { name: "AAT: Level 2 Certificate in Accounting", url: "https://www.aat.org.uk/qualifications-and-courses/accounting/level-2-certificate-accounting" },
+  },
+  nbdhe: {
+    answer:
+      "The National Board Dental Hygiene Examination (NBDHE) is the Joint Commission on National Dental Examinations' written board exam for dental hygienists, used by US licensing jurisdictions as part of dental hygiene licensure. It has 350 multiple-choice questions in two sessions: 200 discipline-based questions in 3 hours 30 minutes and 150 case-based questions on 12 to 15 patient cases in 4 hours, about 9 hours in all with breaks. Under the updated specifications scheduled for November 2026, the discipline-based questions are Scientific Basis 56, Clinical Dental Hygiene Services 124 and Research Principles and Community Health 20. Results are pass or fail; scale scores run from 49 to 99 and 75 is the minimum passing score.",
+    rows: [
+      { label: "Questions", value: "350 multiple choice (200 discipline-based, 150 case-based)" },
+      { label: "Time", value: "3 h 30 min + 4 h of testing, about 9 hours with breaks" },
+      { label: "Pass mark", value: "Scale score of 75 (scale 49 to 99), reported pass or fail" },
+      { label: "Content", value: "Scientific Basis 56, Clinical Services 124, Research and Community Health 20, Cases 150" },
+      { label: "Patient cases", value: "12 to 15 cases: geriatric, periodontal, pediatric, special needs, medically compromised" },
+      { label: "Where", value: "Pearson VUE test centers in the US and Canada, year-round" },
+      { label: "Run by", value: "Joint Commission on National Dental Examinations (JCNDE)" },
+    ],
+    basedOn: "The JCNDE NBDHE 2026 Candidate Guide (updated September 17, 2026) and the JCNDE NBDHE page, checked November 2026",
+    source: { name: "JCNDE: NBDHE", url: "https://jcnde.ada.org/nbdhe" },
+  },
+  nptepta: {
+    answer:
+      "The NPTE-PTA is the National Physical Therapy Examination for Physical Therapist Assistants, developed by the Federation of State Boards of Physical Therapy (FSBPT) and used by state boards to license PTAs. It has 180 multiple-choice questions in four sections of 45, with 4 hours of testing time; 140 are scored and 40 are unscored pretest items. The content outline in effect since January 2024 weights musculoskeletal (31 to 40 scored items), neuromuscular and nervous (27 to 35) and cardiovascular and pulmonary (20 to 27) most. Scores are scaled from 200 to 800, and the passing standard in every jurisdiction is 600.",
+    rows: [
+      { label: "Questions", value: "180 multiple choice (140 scored, 40 pretest)" },
+      { label: "Time", value: "4 hours of testing, 4 sections of 45" },
+      { label: "Pass mark", value: "Scaled score of 600 (200 to 800)" },
+      { label: "Biggest areas", value: "Musculoskeletal 31-40, neuromuscular 27-35, cardiopulmonary 20-27" },
+      { label: "Test dates", value: "Fixed dates in January, April, July and October" },
+      { label: "Where", value: "Computer-based at Prometric test centers" },
+      { label: "Run by", value: "Federation of State Boards of Physical Therapy (FSBPT)" },
+    ],
+    basedOn: "The FSBPT NPTE-PTA Test Content Outline (effective January 2024) and the NPTE Candidate Handbook (version 2025.02), checked November 2026",
+    source: { name: "FSBPT: NPTE Content", url: "https://www.fsbpt.org/Free-Resources/NPTE-Development/NPTE-Content" },
+  },
 };

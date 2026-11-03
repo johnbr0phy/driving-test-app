@@ -26,6 +26,9 @@ on:
     paths: ["data/**", "tools/**"]
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   integrity:
     runs-on: ubuntu-latest

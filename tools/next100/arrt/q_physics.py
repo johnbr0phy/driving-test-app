@@ -1,0 +1,73 @@
+CAT = "arrtPhysics"; SEG = "PHY"
+
+def isq(i1, d1, d2):
+    """Inverse square law: new intensity at d2."""
+    return i1 * (d1 / d2) ** 2
+
+_a = isq(40, 40, 80)    # 10
+_b = isq(12, 72, 36)    # 48
+_c = isq(90, 30, 45)    # 40
+assert _a == 10 and _b == 48 and abs(_c - 40) < 1e-9
+
+Q = [
+("Where are the electrons that produce x-rays released in the x-ray tube?",
+ "At the cathode filament", ["At the anode target", "At the anode rotor", "At the tube window"],
+ "Heating the tungsten filament on the cathode releases electrons by thermionic emission. They are then accelerated across the tube to the anode."),
+("About how much of the energy of the electrons striking the anode becomes x-rays?",
+ "Less than 1%", ["About 25%", "About 50%", "More than 90%"],
+ "Over 99% of the electrons' kinetic energy becomes heat at the target; under 1% becomes x-ray photons, which is why tube heat limits matter."),
+("Which target interaction produces most of the photons in a diagnostic x-ray beam?",
+ "Bremsstrahlung", ["Characteristic", "Photoelectric", "Coherent scatter"],
+ "Most of the beam comes from bremsstrahlung (braking) radiation as electrons slow near tungsten nuclei. Characteristic photons are a small share."),
+("Which factor sets the highest photon energy in the x-ray beam?",
+ "kVp", ["mA", "Exposure time", "Focal spot size"],
+ "The maximum photon energy in keV equals the kVp. mA and time change the number of photons, not their maximum energy."),
+("Raising the mAs while keeping kVp the same changes the beam's:",
+ "Quantity", ["Quality", "Maximum energy", "Wavelength range"],
+ "mAs controls how many photons are produced (quantity). kVp and filtration control penetrating ability (quality)."),
+("As x-ray photon energy increases, its wavelength:",
+ "Decreases", ["Increases", "Stays the same", "Doubles"],
+ "Energy and wavelength are inversely related: higher energy photons have shorter wavelengths and higher frequency."),
+("Which photon interaction completely absorbs the photon and adds most to patient dose?",
+ "Photoelectric", ["Compton scatter", "Coherent scatter", "Pair production"],
+ "In photoelectric absorption the photon gives all its energy to an inner-shell electron and disappears, depositing dose and creating image contrast."),
+("Which interaction is the main source of scatter reaching the radiographer?",
+ "Compton scatter", ["Photoelectric absorption", "Coherent scatter", "Bremsstrahlung"],
+ "Compton interactions eject an outer-shell electron and send a lower-energy photon off at an angle. The patient becomes the main source of occupational exposure."),
+("The chance of photoelectric absorption rises sharply when tissue has a higher:",
+ "Atomic number", ["Water content", "Air content", "Temperature"],
+ "Photoelectric probability rises with about the cube of the atomic number, so bone and iodine absorb far more than soft tissue."),
+("An exposure rate is 40 mGy per hour at 40 cm from a source. What is it at 80 cm?",
+ f"{_a:g} mGy per hour", ["20 mGy per hour", "80 mGy per hour", "5 mGy per hour"],
+ "By the inverse square law, doubling distance cuts intensity to one quarter: 40 x (40/80) squared = 10 mGy per hour. 20 is the mistake of halving."),
+("Intensity is 12 units at a 72-inch SID. What is it at 36 inches?",
+ f"{_b:g} units", ["24 units", "6 units", "3 units"],
+ "Inverse square law: 12 x (72/36) squared = 12 x 4 = 48. Halving the distance quadruples intensity."),
+("A meter reads 90 units at 30 cm. What does it read at 45 cm?",
+ f"{_c:g} units", ["60 units", "135 units", "202.5 units"],
+ "I2 = 90 x (30/45) squared = 90 x 0.444 = 40. Dividing by the distance ratio alone gives 60, which forgets to square it."),
+("What is the SI unit of absorbed dose and air kerma?",
+ "Gray (Gy)", ["Sievert (Sv)", "Becquerel (Bq)", "Coulomb per kilogram"],
+ "Absorbed dose and air kerma are both measured in gray (1 J/kg). The sievert is for equivalent and effective dose."),
+("Which SI unit expresses effective dose?",
+ "Sievert (Sv)", ["Gray (Gy)", "Coulomb per kilogram", "Becquerel (Bq)"],
+ "Effective dose weights the absorbed dose by radiation and tissue weighting factors and is expressed in sieverts."),
+("Which cells are most radiosensitive?",
+ "Lymphocytes", ["Mature nerve cells", "Muscle cells", "Mature red blood cells"],
+ "Under the law of Bergonie and Tribondeau, immature, rapidly dividing, undifferentiated cells are most sensitive. Lymphocytes are the most sensitive blood cells."),
+("Which effect is stochastic?",
+ "Cancer", ["Skin erythema", "Cataracts", "Hair loss"],
+ "Stochastic effects have no threshold and their probability, not severity, rises with dose: cancer and genetic effects. The others are tissue reactions with thresholds."),
+("A cataract caused by radiation is an example of a:",
+ "Tissue reaction", ["Stochastic effect", "Genetic effect", "Carcinogenic effect"],
+ "Cataracts appear only above a threshold dose and worsen with higher dose, which defines a deterministic effect (tissue reaction)."),
+("Which radiation has the highest linear energy transfer (LET)?",
+ "Alpha particles", ["Diagnostic x-rays", "Gamma rays", "Fast electrons"],
+ "Alpha particles deposit their energy densely along a short path, giving high LET and high relative biological effectiveness. X-rays are low LET."),
+("Well-oxygenated tissue compared with poorly oxygenated tissue is:",
+ "More radiosensitive", ["Less radiosensitive", "Equally radiosensitive", "Resistant to all damage"],
+ "The oxygen effect: oxygen makes free radical damage more lasting, so oxygenated tissue is more sensitive to low-LET radiation."),
+("Which acute radiation syndrome appears at the lowest whole-body dose?",
+ "Hematopoietic", ["Gastrointestinal", "Central nervous system", "Cutaneous"],
+ "The bone marrow (hematopoietic) syndrome appears from about 1 Gy, below the GI and CNS syndromes, because blood-forming cells are very sensitive."),
+]

@@ -1,0 +1,35 @@
+{
+  "id": "arrt",
+  "stateCode": "ARRT",
+  "idBase": 15500,
+  "prefix": "ARRT-",
+  "slug": "/arrt-radiography",
+  "landingPath": "/arrt-radiography-practice-test",
+  "dataFile": "data/arrt-questions.json",
+  "name": "ARRT Radiography Practice Test",
+  "shortName": "ARRT",
+  "examLabel": "ARRT Radiography exam",
+  "fullName": "ARRT Radiography certification exam",
+  "icon": "activity",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 75,
+  "categories": [
+    {"key": "arrtCare", "label": "Patient Care", "perTest": 8, "pool": 32, "segment": "CAR"},
+    {"key": "arrtPhysics", "label": "Radiation Physics & Radiobiology", "perTest": 5, "pool": 20, "segment": "PHY"},
+    {"key": "arrtProtect", "label": "Radiation Protection", "perTest": 7, "pool": 28, "segment": "PRO"},
+    {"key": "arrtAcq", "label": "Image Acquisition & Evaluation", "perTest": 7, "pool": 28, "segment": "ACQ"},
+    {"key": "arrtEquip", "label": "Equipment Operation & QA", "perTest": 6, "pool": 24, "segment": "EQP"},
+    {"key": "arrtHead", "label": "Head, Spine & Pelvis Procedures", "perTest": 5, "pool": 20, "segment": "HSP"},
+    {"key": "arrtThorax", "label": "Thorax & Abdomen Procedures", "perTest": 5, "pool": 20, "segment": "THX"},
+    {"key": "arrtExtrem", "label": "Extremity Procedures", "perTest": 7, "pool": 28, "segment": "EXT"}
+  ],
+  "notes": "ARRT Radiography content specifications (implemented January 2022, in force through February 28, 2027): 200 scored items, Patient Care 33; Safety 50 (physics/radiobiology 21, protection 29); Image Production 51 (acquisition/evaluation 26, equipment/QA 25); Procedures 66 (head/spine/pelvis 18, thorax/abdomen 20, extremities 28). Scaled to 50 per test: 8/5/7/7/6/5/5/7. Pools are exactly 4x per-test.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 15501, "name": "Patient Care", "categories": ["arrtCare"], "size": 32},
+    {"setNumber": 2, "id": 15502, "name": "Safety: Physics & Radiation Protection", "categories": ["arrtPhysics", "arrtProtect"], "size": 48},
+    {"setNumber": 3, "id": 15503, "name": "Image Production", "categories": ["arrtAcq", "arrtEquip"], "size": 52},
+    {"setNumber": 4, "id": 15504, "name": "Head, Spine, Thorax & Abdomen", "categories": ["arrtHead", "arrtThorax"], "size": 40},
+    {"setNumber": 5, "id": 15505, "name": "Extremity Procedures", "categories": ["arrtExtrem"], "size": 28}
+  ]
+}

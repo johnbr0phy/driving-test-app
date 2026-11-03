@@ -29,7 +29,7 @@ import epa608Es from "./examTranslations/epa608.es.json";
 import esdgtEs from "./examTranslations/esdgt.es.json";
 import ptimtPt from "./examTranslations/ptimt.pt.json";
 
-export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "zak53c3" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "bedriving" | "dkteori" | "setrafik" | "fitheory" | "grdriving" | "rodrpciv" | "hukresz" | "mttheory" | "detheorie" | "phlet" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "detheorie" | "htl" | "cst" | "crcst";
+export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "zak53c3" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "bedriving" | "dkteori" | "setrafik" | "fitheory" | "grdriving" | "rodrpciv" | "hukresz" | "mttheory" | "detheorie" | "phlet" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "detheorie" | "htl" | "cst" | "crcst";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -7990,7 +7990,7 @@ const zak53: ExamConfig = {
 const zak53c3: ExamConfig = {
   id: "zak53c3",
   stateCode: "ZAK53C3",
-  idBase: 14900,
+  idBase: 15900,
   slug: "/k53-code-3",
   landingPath: "/k53-code-3-learners-test",
   name: "K53 Code 3 Learner's Practice Test (C1 and C)",
@@ -8022,12 +8022,12 @@ const zak53c3: ExamConfig = {
     c3Controls: 6,
   },
   trainingSets: [
-    { setNumber: 1, id: 14901, name: "Licences, PrDP & Right of Way", categories: ["c3Licence", "c3RightOfWay"], size: 44, weightLabel: "11 of 50 test questions" },
-    { setNumber: 2, id: 14902, name: "Speed, Overtaking, Parking & Loads", categories: ["c3Speed", "c3Parking"], size: 44, weightLabel: "11 of 50 test questions" },
-    { setNumber: 3, id: 14903, name: "Regulatory Signs", categories: ["c3Regulatory"], size: 36, weightLabel: "9 of 50 test questions" },
-    { setNumber: 4, id: 14904, name: "Warning Signs", categories: ["c3Warning"], size: 24, weightLabel: "6 of 50 test questions" },
-    { setNumber: 5, id: 14905, name: "Guidance Signs, Markings & Signals", categories: ["c3Guidance", "c3Markings"], size: 28, weightLabel: "7 of 50 test questions" },
-    { setNumber: 6, id: 14906, name: "Heavy Vehicle Controls", categories: ["c3Controls"], size: 24, weightLabel: "6 of 50 test questions" },
+    { setNumber: 1, id: 15901, name: "Licences, PrDP & Right of Way", categories: ["c3Licence", "c3RightOfWay"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 2, id: 15902, name: "Speed, Overtaking, Parking & Loads", categories: ["c3Speed", "c3Parking"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 3, id: 15903, name: "Regulatory Signs", categories: ["c3Regulatory"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 4, id: 15904, name: "Warning Signs", categories: ["c3Warning"], size: 24, weightLabel: "6 of 50 test questions" },
+    { setNumber: 5, id: 15905, name: "Guidance Signs, Markings & Signals", categories: ["c3Guidance", "c3Markings"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 6, id: 15906, name: "Heavy Vehicle Controls", categories: ["c3Controls"], size: 24, weightLabel: "6 of 50 test questions" },
   ],
   categoryLabels: {
     c3Licence: "Licences, PrDP, Alcohol & Crashes",
@@ -9697,7 +9697,685 @@ const trcnpqe: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, cna, ptcb, phleb, ccma, cet, danb, foodmgr, realestate, insurance, notary, sie, series7, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, phlto, zak53, zak53c3, sgbtt, aerta, ngfrsc, kentsa, mykpp, hkdrive, pkdrive, esdgt, ptimt, bedriving, dkteori, setrafik, fitheory, grdriving, rodrpciv, hukresz, mttheory, detheorie, phlet, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, gulfrn, inrto, htl, cst, crcst];
+const cpafar: ExamConfig = {
+  id: "cpafar",
+  stateCode: "CPAFAR",
+  idBase: 14900,
+  slug: "/cpa-far",
+  landingPath: "/cpa-far-practice-test",
+  name: "CPA FAR Practice Test",
+  shortName: "CPA FAR",
+  examLabel: "CPA Exam FAR section",
+  fullName: "CPA Exam Financial Accounting and Reporting (FAR) section",
+  questionIdPrefix: "CPAFAR-",
+  icon: "calculator",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 75,
+  // AICPA Uniform CPA Examination Blueprints effective January 1, 2026 (the 2027 Blueprints,
+  // approved Sept 16, 2026, only add an NCGA reference to the FAR introduction; checked Nov 2026).
+  // Real FAR: 4 hours, 50 MCQs + 7 TBSs, scored 50/50, 75 on a 0-99 scale to pass. MCQ half only.
+  // Area I Financial Reporting 30-40% -> 17, Area II Select Balance Sheet Accounts 30-40% -> 18,
+  // Area III Select Transactions 25-35% -> 15 per 50-question test. All items original.
+  blueprint: {
+    cpafarStatements: 7,
+    cpafarNfpGov: 4,
+    cpafarPublic: 6,
+    cpafarCurrent: 6,
+    cpafarLongLived: 7,
+    cpafarLiabilities: 5,
+    cpafarChanges: 5,
+    cpafarRevenue: 4,
+    cpafarTaxLeases: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 14901, name: "Financial Statements & Consolidation", categories: ["cpafarStatements"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 2, id: 14902, name: "Not-for-Profit, Government & Public Companies", categories: ["cpafarNfpGov", "cpafarPublic"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 3, id: 14903, name: "Cash, Receivables & Inventory", categories: ["cpafarCurrent"], size: 24, weightLabel: "6 of 50 test questions" },
+    { setNumber: 4, id: 14904, name: "PP&E, Intangibles & Investments", categories: ["cpafarLongLived"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 5, id: 14905, name: "Liabilities, Debt & Equity", categories: ["cpafarLiabilities"], size: 20, weightLabel: "5 of 50 test questions" },
+    { setNumber: 6, id: 14906, name: "Changes, Contingencies & Revenue", categories: ["cpafarChanges", "cpafarRevenue"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 7, id: 14907, name: "Income Taxes, Fair Value & Leases", categories: ["cpafarTaxLeases"], size: 24, weightLabel: "6 of 50 test questions" },
+  ],
+  categoryLabels: {
+    cpafarStatements: "Financial Statements & Consolidation",
+    cpafarNfpGov: "Not-for-Profit & Government Reporting",
+    cpafarPublic: "Public Companies, Special Frameworks & Ratios",
+    cpafarCurrent: "Cash, Receivables & Inventory",
+    cpafarLongLived: "PP&E, Intangibles & Investments",
+    cpafarLiabilities: "Liabilities, Debt & Equity",
+    cpafarChanges: "Accounting Changes, Contingencies & Subsequent Events",
+    cpafarRevenue: "Revenue Recognition & Contributions",
+    cpafarTaxLeases: "Income Taxes, Fair Value & Leases",
+  },
+  copy: {
+    guestPrompt: "to save your CPA FAR progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Seven sets covering all three areas of the AICPA FAR blueprint. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 multiple-choice questions weighted like the FAR blueprint, 75% readiness line",
+    heroSubs: [
+      "Seven sets, four tests. Start with the statements.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Practice simulations, then sit FAR.",
+    ],
+    sourceLine: "Based on the AICPA's 2026 FAR blueprint. Original multiple-choice questions; simulations not included. Not affiliated with the AICPA or NASBA.",
+    analyticsKey: "cpafar",
+  },
+};
+
+const cpareg: ExamConfig = {
+  id: "cpareg",
+  stateCode: "CPAREG",
+  idBase: 15000,
+  slug: "/cpa-reg",
+  landingPath: "/cpa-reg-practice-test",
+  name: "CPA REG Practice Test",
+  shortName: "CPA REG",
+  examLabel: "CPA Exam REG section",
+  fullName: "CPA Exam Taxation and Regulation (REG) section",
+  questionIdPrefix: "CPAREG-",
+  icon: "calculator",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 75,
+  // AICPA Uniform CPA Examination Blueprints, effective January 2026 (approved Aug. 18, 2025;
+  // checked 2026-11-02), REG: 72 MCQs + 8 TBSs in 4 hours, MCQ 50% of score, 75 scaled to pass.
+  // Areas I 10-20%, II 15-25%, III 5-15%, IV 22-32%, V 23-33%; midpoints scaled to 50:
+  // I 7 (ethics 3, procedures 4), II 10 (agency/contracts 5, debtor-creditor/federal laws 3,
+  // structure 2), III 5, IV 14 (income 5, deductions/losses 5, filing status/credits 4),
+  // V 14 (C corps/state 6, S corps/partnerships/LLCs/exempt 8). No indexed amounts (blueprint
+  // assumption). TBSs not modelled. All items original.
+  blueprint: {
+    cparegEthics: 3,
+    cparegProcedure: 4,
+    cparegContracts: 5,
+    cparegCreditors: 3,
+    cparegStructure: 2,
+    cparegProperty: 5,
+    cparegIncome: 5,
+    cparegDeductions: 5,
+    cparegCredits: 4,
+    cparegCorp: 6,
+    cparegFlowThrough: 8,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 15001, name: "Ethics & Tax Procedures", categories: ["cparegEthics", "cparegProcedure"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 2, id: 15002, name: "Business Law", categories: ["cparegContracts", "cparegCreditors", "cparegStructure"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 3, id: 15003, name: "Property & Gross Income", categories: ["cparegProperty", "cparegIncome"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 4, id: 15004, name: "Deductions, Losses & Credits", categories: ["cparegDeductions", "cparegCredits"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 5, id: 15005, name: "C Corporations", categories: ["cparegCorp"], size: 24, weightLabel: "6 of 50 test questions" },
+    { setNumber: 6, id: 15006, name: "S Corps, Partnerships & Exempt Orgs", categories: ["cparegFlowThrough"], size: 32, weightLabel: "8 of 50 test questions" },
+  ],
+  categoryLabels: {
+    cparegEthics: "Ethics, Preparer Rules & Legal Duties",
+    cparegProcedure: "Federal Tax Procedures",
+    cparegContracts: "Agency & Contracts",
+    cparegCreditors: "Debtor-Creditor & Federal Laws",
+    cparegStructure: "Business Structure",
+    cparegProperty: "Basis & Cost Recovery",
+    cparegIncome: "Individual Gross Income",
+    cparegDeductions: "Individual Deductions & Loss Limits",
+    cparegCredits: "Filing Status, Tax & Credits",
+    cparegCorp: "C Corporations & State Tax",
+    cparegFlowThrough: "S Corps, Partnerships, LLCs & Exempt Orgs",
+  },
+  copy: {
+    guestPrompt: "to save your CPA REG progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Six sets covering all five areas of the AICPA's REG blueprint. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 multiple-choice questions weighted like the REG blueprint, 75% target",
+    heroSubs: [
+      "Six sets, four mock tests. Individual and entity tax weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Schedule your REG section.",
+    ],
+    sourceLine: "Based on the AICPA's 2026 REG blueprint. Original multiple-choice questions; 50 per test, weighted like the real section's five areas, 75% target. Not affiliated with the AICPA or NASBA.",
+    analyticsKey: "cpareg",
+  },
+};
+
+const nmls: ExamConfig = {
+  id: "nmls",
+  stateCode: "NMLS",
+  idBase: 15100,
+  slug: "/nmls",
+  landingPath: "/nmls-safe-practice-test",
+  name: "NMLS SAFE Practice Test",
+  shortName: "NMLS SAFE",
+  examLabel: "SAFE MLO test",
+  fullName: "NMLS SAFE Mortgage Loan Originator Test",
+  questionIdPrefix: "NMLS-",
+  icon: "building",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 75,
+  // NMLS "SAFE MLO National Test with Uniform State Test Content Outline" (NMLS Resource Center,
+  // checked 2026-11-02; test specifications as of April 5, 2021): 120 items (115 scored), 190
+  // minutes, 75% to pass. Federal Mortgage Related Laws 24%, Uniform State Content 11%, General
+  // Mortgage Knowledge 20%, Mortgage Loan Origination Activities 27%, Ethics 18%, scaled to 50 by
+  // largest remainder: federal 12 (Reg Z 4, RESPA/Reg X/TRID 4, ECOA and other federal 4), UST 6,
+  // general 10 (programs 5, products 5), origination 13 (application 7, closing/calculations 6),
+  // ethics 9. All items original; federal law as in force November 2026.
+  blueprint: {
+    nmlsTila: 4,
+    nmlsRespa: 4,
+    nmlsFederal: 4,
+    nmlsState: 6,
+    nmlsPrograms: 5,
+    nmlsProducts: 5,
+    nmlsApplication: 7,
+    nmlsClosing: 6,
+    nmlsEthics: 9,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 15101, name: "TILA, RESPA & TRID", categories: ["nmlsTila", "nmlsRespa"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 2, id: 15102, name: "Other Federal Laws & State Licensing", categories: ["nmlsFederal", "nmlsState"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 3, id: 15103, name: "Mortgage Programs & Products", categories: ["nmlsPrograms", "nmlsProducts"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 4, id: 15104, name: "Origination, Closing & Calculations", categories: ["nmlsApplication", "nmlsClosing"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 5, id: 15105, name: "Ethics, Fraud & Fair Lending", categories: ["nmlsEthics"], size: 36, weightLabel: "9 of 50 test questions" },
+  ],
+  categoryLabels: {
+    nmlsTila: "TILA & Regulation Z",
+    nmlsRespa: "RESPA, Regulation X & TRID",
+    nmlsFederal: "ECOA & Other Federal Laws",
+    nmlsState: "Uniform State Content & SAFE Act",
+    nmlsPrograms: "Mortgage Programs",
+    nmlsProducts: "Mortgage Products & Terms",
+    nmlsApplication: "Application & Qualification",
+    nmlsClosing: "Closing & Calculations",
+    nmlsEthics: "Ethics, Fraud & Fair Lending",
+  },
+  copy: {
+    guestPrompt: "to save your NMLS progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets covering all five areas of the NMLS content outline. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions weighted like the real SAFE MLO test, 75% to pass",
+    heroSubs: [
+      "Five sets, four mock tests. Origination and federal law weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Schedule your SAFE MLO test.",
+    ],
+    sourceLine: "Based on the NMLS SAFE MLO content outline. Original questions; 50 per test, weighted like the real 120-question test, 75% to pass. Not affiliated with NMLS.",
+    analyticsKey: "nmls",
+  },
+};
+
+const series65: ExamConfig = {
+  id: "series65",
+  stateCode: "SERIES65",
+  idBase: 15200,
+  slug: "/series-65",
+  landingPath: "/series-65-practice-test",
+  name: "Series 65 Practice Test",
+  shortName: "Series 65",
+  examLabel: "Series 65 exam",
+  fullName: "NASAA Series 65 Uniform Investment Adviser Law Examination",
+  questionIdPrefix: "S65-",
+  icon: "building",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 71,
+  // NASAA Series 65 test specifications effective June 12, 2023 (still current, checked
+  // 2026-11-02): 130 scored items (+10 pretest), 180 minutes, 92 of 130 to pass (about 70.8%;
+  // passPct 71 = ceil(0.71 * 50) = 36). Sections I economics 15% (20), II investment vehicles
+  // 25% (32), III client recommendations and strategies 30% (39), IV laws, regulations and
+  // ethics 30% (39), scaled to 50 as 8/12/15/15 and split by outline subsection: I.A+D 4,
+  // I.B+C 4; II.A-C 5, II.D-G+J-K 3, II.H-I+L-N 4; III.A-B 3, III.C-D+J-K 6, III.E-I 6;
+  // IV.A-B 5, IV.C-F 4, IV.G-H 6. All items original.
+  blueprint: {
+    s65Economy: 4,
+    s65Analysis: 4,
+    s65FixedIncome: 5,
+    s65Equity: 3,
+    s65Pooled: 4,
+    s65Clients: 3,
+    s65Portfolio: 6,
+    s65TaxRetire: 6,
+    s65Advisers: 5,
+    s65StateLaw: 4,
+    s65Ethics: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 15201, name: "Economics & Analysis", categories: ["s65Economy", "s65Analysis"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 2, id: 15202, name: "Investment Vehicles", categories: ["s65FixedIncome", "s65Equity", "s65Pooled"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 3, id: 15203, name: "Clients & Portfolio Strategy", categories: ["s65Clients", "s65Portfolio"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 4, id: 15204, name: "Taxes, Retirement & Estates", categories: ["s65TaxRetire"], size: 24, weightLabel: "6 of 50 test questions" },
+    { setNumber: 5, id: 15205, name: "Advisers & State Law", categories: ["s65Advisers", "s65StateLaw"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 6, id: 15206, name: "Ethics & Fiduciary Duty", categories: ["s65Ethics"], size: 24, weightLabel: "6 of 50 test questions" },
+  ],
+  categoryLabels: {
+    s65Economy: "Economics & Risk",
+    s65Analysis: "Financial Reporting & Analysis",
+    s65FixedIncome: "Cash & Fixed Income",
+    s65Equity: "Equities & Derivatives",
+    s65Pooled: "Funds, Alternatives & Insurance",
+    s65Clients: "Client Types & Profiles",
+    s65Portfolio: "Portfolio Management & Trading",
+    s65TaxRetire: "Taxes, Retirement & Estates",
+    s65Advisers: "Regulation of Advisers & IARs",
+    s65StateLaw: "Securities, Agents & Administrator",
+    s65Ethics: "Ethics & Fiduciary Duty",
+  },
+  copy: {
+    guestPrompt: "to save your Series 65 progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Six sets covering all four sections of NASAA's Series 65 outline. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions weighted like the real Series 65, 36 to pass",
+    heroSubs: [
+      "Six sets, four mock tests. Law and strategy weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Schedule your Series 65.",
+    ],
+    sourceLine: "Based on NASAA's Series 65 test specifications. Original questions; 50 per test, weighted like the real 130-question exam. Not affiliated with NASAA or FINRA.",
+    analyticsKey: "series65",
+  },
+};
+
+const series63: ExamConfig = {
+  id: "series63",
+  stateCode: "SERIES63",
+  idBase: 15300,
+  slug: "/series-63",
+  landingPath: "/series-63-practice-test",
+  name: "Series 63 Practice Test",
+  shortName: "Series 63",
+  examLabel: "Series 63 exam",
+  fullName: "NASAA Series 63 Uniform Securities Agent State Law Exam",
+  questionIdPrefix: "S63-",
+  icon: "building",
+  testCount: 3,
+  questionsPerTest: 60,
+  passPct: 71,
+  // NASAA Series 63 test specifications effective June 12, 2023 (overview dated Sept 1, 2023;
+  // checked November 2026): 65 items, 60 scored, 75 minutes, 43 of 60 to pass, Uniform
+  // Securities Act of 1956 as amended by NASAA. Per test exactly NASAA's counts: investment
+  // advisers 3, IARs 3, broker-dealers 7, agents 8, securities and issuers 5, remedies and
+  // administrative provisions 7, communication with customers 12, ethical practices 15.
+  // passPct 71 gives ceil(42.6) = 43 of 60. Pools are 3x per test plus 20 training-only spares.
+  // NASAA is updating adviser advertising items (May 2026 model rule amendments) in early 2027;
+  // no item tests adviser advertising. All items original.
+  blueprint: {
+    s63Advisers: 3,
+    s63Iars: 3,
+    s63BrokerDealers: 7,
+    s63Agents: 8,
+    s63Securities: 5,
+    s63Remedies: 7,
+    s63Communication: 12,
+    s63Ethics: 15,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 15301, name: "Investment Advisers & IARs", categories: ["s63Advisers", "s63Iars"], size: 20, weightLabel: "6 of 60 test questions" },
+    { setNumber: 2, id: 15302, name: "Broker-Dealers & Agents", categories: ["s63BrokerDealers", "s63Agents"], size: 50, weightLabel: "15 of 60 test questions" },
+    { setNumber: 3, id: 15303, name: "Securities, Issuers & Remedies", categories: ["s63Securities", "s63Remedies"], size: 42, weightLabel: "12 of 60 test questions" },
+    { setNumber: 4, id: 15304, name: "Communication with Customers", categories: ["s63Communication"], size: 40, weightLabel: "12 of 60 test questions" },
+    { setNumber: 5, id: 15305, name: "Ethical Practices & Obligations", categories: ["s63Ethics"], size: 48, weightLabel: "15 of 60 test questions" },
+  ],
+  categoryLabels: {
+    s63Advisers: "Investment Advisers",
+    s63Iars: "Investment Adviser Representatives",
+    s63BrokerDealers: "Broker-Dealers",
+    s63Agents: "Agents of Broker-Dealers",
+    s63Securities: "Securities & Issuers",
+    s63Remedies: "Remedies & Administrative Provisions",
+    s63Communication: "Communication with Customers",
+    s63Ethics: "Ethical Practices & Obligations",
+  },
+  copy: {
+    guestPrompt: "to save your Series 63 progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets covering all eight subjects of NASAA's Series 63 outline. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 60 questions weighted like the real Series 63, 43 to pass",
+    heroSubs: [
+      "Five sets, three full mock tests. Ethics weighs most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Schedule your Series 63.",
+    ],
+    sourceLine: "Based on NASAA's Series 63 test specifications. Original questions; 60 per test in the real exam's proportions, 43 of 60 to pass. Not affiliated with NASAA or FINRA.",
+    analyticsKey: "series63",
+  },
+};
+
+const aswb: ExamConfig = {
+  id: "aswb",
+  stateCode: "ASWB",
+  idBase: 15400,
+  slug: "/aswb-masters",
+  landingPath: "/aswb-masters-practice-test",
+  name: "ASWB Masters Practice Test",
+  shortName: "ASWB Masters",
+  examLabel: "ASWB Masters exam",
+  fullName: "ASWB Masters social work licensing exam",
+  questionIdPrefix: "ASWB-",
+  icon: "heart",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // ASWB Masters content outline in the 2026 Examination Guidebook, for exams from August 3, 2026
+  // (checked November 2026): 122 questions (110 scored, 12 pretest) in 4 hours; I Values and Ethics
+  // 35%, II Assessment and Planning 33%, III Intervention and Practice 32%, scaled to 50 per test as
+  // 18/16/16 and split by competency: IA 6, IB 7, IC 5; IIA 8, IIB+IIC 8; IIIA+IIIB 10, IIIC+IIID 6.
+  // ASWB reports pass/fail against a per-form number correct; 70% is a readiness marker. All items original.
+  blueprint: {
+    aswbEthics: 6,
+    aswbService: 7,
+    aswbDiversity: 5,
+    aswbConcepts: 8,
+    aswbMethods: 8,
+    aswbIntervention: 10,
+    aswbEvalSup: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 15401, name: "Ethics & Service Delivery", categories: ["aswbEthics", "aswbService"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 2, id: 15402, name: "Diversity & Human Behavior", categories: ["aswbDiversity", "aswbConcepts"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 3, id: 15403, name: "Assessment Methods & Planning", categories: ["aswbMethods"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 4, id: 15404, name: "Intervention Methods & Practice", categories: ["aswbIntervention"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 5, id: 15405, name: "Evaluation, Research & Supervision", categories: ["aswbEvalSup"], size: 24, weightLabel: "6 of 50 test questions" },
+  ],
+  categoryLabels: {
+    aswbEthics: "Ethical Principles & Responsibilities",
+    aswbService: "Ethical Service Delivery",
+    aswbDiversity: "Diversity & Social Justice",
+    aswbConcepts: "Assessment Concepts",
+    aswbMethods: "Assessment Methods & Planning",
+    aswbIntervention: "Intervention Methods & Practice",
+    aswbEvalSup: "Evaluation, Research & Supervision",
+  },
+  copy: {
+    guestPrompt: "to save your ASWB Masters progress and track every question you miss",
+    trainingHeading: "Train by content area",
+    trainingSub: "Five sets covering all three areas of the 2026 ASWB Masters outline. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock exams · 50 questions weighted like the real exam",
+    heroSubs: [
+      "Three content areas, four mock exams. Ethics weighs most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock exam.",
+      "Fix the misses, then retake.",
+      "All done. Schedule your ASWB exam.",
+    ],
+    sourceLine: "Based on the ASWB Masters content outline (2026 Examination Guidebook). Original questions; 50 per test, weighted like the real exam. Not affiliated with ASWB.",
+    analyticsKey: "aswb",
+  },
+};
+
+const arrt: ExamConfig = {
+  id: "arrt",
+  stateCode: "ARRT",
+  idBase: 15500,
+  slug: "/arrt-radiography",
+  landingPath: "/arrt-radiography-practice-test",
+  name: "ARRT Radiography Practice Test",
+  shortName: "ARRT",
+  examLabel: "ARRT Radiography exam",
+  fullName: "ARRT Radiography certification exam",
+  questionIdPrefix: "ARRT-",
+  icon: "activity",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 75,
+  // ARRT Radiography Examination Content Specifications, board approved January 2021, in effect
+  // January 1, 2022 through February 28, 2027 (checked November 2026): 200 scored + 30 unscored
+  // pilot questions. Patient Care 33; Safety 50 (radiation physics and radiobiology 21, radiation
+  // protection 29); Image Production 51 (image acquisition and evaluation 26, equipment operation
+  // and QA 25); Procedures 66 (head, spine and pelvis 18, thorax and abdomen 20, extremities 28).
+  // Scaled to 50 per test: 8/5/7/7/6/5/5/7. ARRT reports a scaled score (75 to pass, per guides);
+  // 75% is a readiness marker. Revised specifications from March 1, 2027: 31/46/51/72.
+  // No image items. All items original.
+  blueprint: {
+    arrtCare: 8,
+    arrtPhysics: 5,
+    arrtProtect: 7,
+    arrtAcq: 7,
+    arrtEquip: 6,
+    arrtHead: 5,
+    arrtThorax: 5,
+    arrtExtrem: 7,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 15501, name: "Patient Care", categories: ["arrtCare"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 2, id: 15502, name: "Radiation Physics & Protection", categories: ["arrtPhysics", "arrtProtect"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 3, id: 15503, name: "Image Production", categories: ["arrtAcq", "arrtEquip"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 4, id: 15504, name: "Head, Spine, Thorax & Abdomen", categories: ["arrtHead", "arrtThorax"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 5, id: 15505, name: "Extremity Procedures", categories: ["arrtExtrem"], size: 28, weightLabel: "7 of 50 test questions" },
+  ],
+  categoryLabels: {
+    arrtCare: "Patient Care",
+    arrtPhysics: "Radiation Physics & Radiobiology",
+    arrtProtect: "Radiation Protection",
+    arrtAcq: "Image Acquisition & Evaluation",
+    arrtEquip: "Equipment Operation & QA",
+    arrtHead: "Head, Spine & Pelvis Procedures",
+    arrtThorax: "Thorax & Abdomen Procedures",
+    arrtExtrem: "Extremity Procedures",
+  },
+  copy: {
+    guestPrompt: "to save your ARRT progress and track every question you miss",
+    trainingHeading: "Train by ARRT content category",
+    trainingSub: "Five sets covering all four categories of the ARRT Radiography content specifications. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock exams · 50 questions weighted like the real 200 scored",
+    heroSubs: [
+      "Four categories, four mock exams. Procedures weighs most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock exam.",
+      "Fix the misses, then retake.",
+      "All done. You're registry ready.",
+    ],
+    sourceLine: "Based on the ARRT Radiography Examination Content Specifications. Original questions; 50 per test, weighted like the real exam. Not affiliated with ARRT.",
+    analyticsKey: "arrt",
+  },
+};
+
+const nce: ExamConfig = {
+  id: "nce",
+  stateCode: "NCE",
+  idBase: 15600,
+  slug: "/nce",
+  landingPath: "/nce-practice-test",
+  name: "NCE Practice Test",
+  shortName: "NCE",
+  examLabel: "NCE",
+  fullName: "National Counselor Examination (NCE)",
+  questionIdPrefix: "NCE-",
+  icon: "heart",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // NBCC NCE Content Outline (job analysis finalized June 2019, (c) 2023; checked 2026-11-02):
+  // 200 MCQs, 160 scored, in 225 minutes. Scored items by domain: Professional Practice and
+  // Ethics 19, Intake, Assessment, and Diagnosis 19, Areas of Clinical Focus 47, Treatment
+  // Planning 14, Counseling Skills and Interventions 48, Core Counseling Attributes 13
+  // (12/12/29/9/30/8%), scaled here to 50 per test (6/6/14/5/15/4). Questions also cover the eight
+  // CACREP core areas the outline aligns to (research and statistics sit in Ethics, per task 1B).
+  // NBCC sets the pass point per form by modified Angoff; 70% is a readiness marker.
+  // The July 1, 2027 version (170 items, 3 options, new domains) is not modelled yet.
+  blueprint: {
+    nceEthics: 6,
+    nceAssess: 6,
+    nceClinical: 14,
+    ncePlan: 5,
+    nceSkills: 15,
+    nceAttrib: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 15601, name: "Ethics, Assessment & Diagnosis", categories: ["nceEthics", "nceAssess"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 2, id: 15602, name: "Areas of Clinical Focus", categories: ["nceClinical"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 3, id: 15603, name: "Counseling Skills & Interventions", categories: ["nceSkills"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 4, id: 15604, name: "Treatment Planning & Core Attributes", categories: ["ncePlan", "nceAttrib"], size: 36, weightLabel: "9 of 50 test questions" },
+  ],
+  categoryLabels: {
+    nceEthics: "Professional Practice & Ethics",
+    nceAssess: "Intake, Assessment & Diagnosis",
+    nceClinical: "Areas of Clinical Focus",
+    ncePlan: "Treatment Planning",
+    nceSkills: "Counseling Skills & Interventions",
+    nceAttrib: "Core Counseling Attributes",
+  },
+  copy: {
+    guestPrompt: "to save your NCE progress and track every question you miss",
+    trainingHeading: "Train by NCE domain",
+    trainingSub: "Four sets covering all six domains of the NBCC content outline. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock exams · 50 questions weighted like the real 160 scored",
+    heroSubs: [
+      "Six domains, four mock exams. Counseling skills weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock exam.",
+      "Fix the misses, then retake.",
+      "All done. Schedule your NCE.",
+    ],
+    sourceLine: "Based on the NBCC NCE content outline, the ACA Code of Ethics (2014) and the DSM-5-TR. Original questions; 50 per test, weighted like the real exam. Not affiliated with NBCC.",
+    analyticsKey: "nce",
+  },
+};
+
+const texesppr: ExamConfig = {
+  id: "texesppr",
+  stateCode: "TEXESPPR",
+  idBase: 15700,
+  slug: "/texes-ppr",
+  landingPath: "/texes-ppr-practice-test",
+  name: "TExES PPR Practice Test",
+  shortName: "TExES PPR",
+  examLabel: "PPR",
+  fullName: "TExES Pedagogy and Professional Responsibilities EC-12 (160)",
+  questionIdPrefix: "TXPPR-",
+  icon: "graduation",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // TExES PPR EC-12 (160) exam framework (tx.nesinc.com study guide section 3, checked 2026-11-02):
+  // Domain I Designing Instruction and Assessment 34% (competencies 001-004), Domain II Classroom
+  // Environment 13% (005-006), Domain III Implementing Responsive Instruction and Assessment 33%
+  // (007-010), Domain IV Professional Roles and Responsibilities 20% (011-013). The real test is
+  // 100 selected-response questions in a 5-hour appointment, scaled 100-300, 240 to pass; 80% is
+  // Tigertest's readiness line. Per 50-question test: I 17 (8/5/4), II 7, III 16 (9/3/4), IV 10
+  // (3/7). Pools are exactly 4x each count. All items original.
+  blueprint: {
+    txpprDevelop: 8,
+    txpprDiversity: 5,
+    txpprPlanning: 4,
+    txpprEnvironment: 7,
+    txpprInstruction: 9,
+    txpprTechnology: 3,
+    txpprFeedback: 4,
+    txpprFamily: 3,
+    txpprProfessional: 7,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 15701, name: "Human Development & Learning", categories: ["txpprDevelop"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 2, id: 15702, name: "Diversity & Planning", categories: ["txpprDiversity", "txpprPlanning"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 3, id: 15703, name: "Classroom Environment", categories: ["txpprEnvironment"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 4, id: 15704, name: "Communication & Engagement", categories: ["txpprInstruction"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 5, id: 15705, name: "Technology, Assessment & Feedback", categories: ["txpprTechnology", "txpprFeedback"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 6, id: 15706, name: "Families, Ethics & Texas Law", categories: ["txpprFamily", "txpprProfessional"], size: 40, weightLabel: "10 of 50 test questions" },
+  ],
+  categoryLabels: {
+    txpprDevelop: "Human Development & Learning",
+    txpprDiversity: "Student Diversity",
+    txpprPlanning: "Goals, Objectives & Planning",
+    txpprEnvironment: "Classroom Environment & Management",
+    txpprInstruction: "Communication & Engagement",
+    txpprTechnology: "Technology in Instruction",
+    txpprFeedback: "Assessment & Feedback",
+    txpprFamily: "Family Involvement",
+    txpprProfessional: "Professional, Legal & Ethical Roles",
+  },
+  copy: {
+    guestPrompt: "to save your PPR progress and track every question you miss",
+    trainingHeading: "Train by PPR competency",
+    trainingSub: "Six sets covering all 13 competencies of the PPR framework, from human development to Texas legal and ethical duties. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the four domains",
+    heroSubs: [
+      "Four domains, 13 competencies. Start with Set 1.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. You're ready for the PPR.",
+    ],
+    sourceLine: "Based on the TExES PPR EC-12 (160) exam framework. Original questions; 50 per test, weighted like the four domains. Not affiliated with TEA, SBEC or Pearson.",
+    analyticsKey: "texesppr",
+  },
+};
+
+const praxisplt: ExamConfig = {
+  id: "praxisplt",
+  stateCode: "PRAXISPLT",
+  idBase: 15800,
+  slug: "/praxis-plt",
+  landingPath: "/praxis-plt-practice-test",
+  name: "Praxis PLT K-6 Practice Test",
+  shortName: "Praxis PLT",
+  examLabel: "Praxis PLT K-6",
+  fullName: "Praxis Principles of Learning and Teaching: Grades K-6 (5622)",
+  questionIdPrefix: "PLT-",
+  icon: "graduation",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // ETS Praxis Study Companion for 5622 (Test at a Glance, checked 2026-11-02): 2 hours, 70
+  // selected-response + 4 constructed-response on two case histories. Selected response: I
+  // Students as Learners 21 (22.5%), II Instructional Process 21 (22.5%), III Assessment 14 (15%),
+  // IV Professional Development, Leadership and Community 14 (15%); V (constructed response,
+  // 25%) not modelled. 21/21/14/14 of 70 scales to 15/15/10/10 of 50, split by ETS subheadings:
+  // I.A 6, I.B 5, I.C 4; II.A 5, II.B 6, II.C+D 4; III.A 5, III.B 5; IV.1-6 6, IV.7 4.
+  // ETS sets no pass mark (states do); 70% is a readiness line. Pools exactly 4x. All items original.
+  blueprint: {
+    pltDevelopment: 6,
+    pltDiverse: 5,
+    pltMotivation: 4,
+    pltPlanning: 5,
+    pltStrategies: 6,
+    pltQuestioning: 4,
+    pltAssessStrategies: 5,
+    pltTesting: 5,
+    pltProfessional: 6,
+    pltLaw: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 15801, name: "Students as Learners", categories: ["pltDevelopment", "pltDiverse", "pltMotivation"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 2, id: 15802, name: "Instructional Process", categories: ["pltPlanning", "pltStrategies", "pltQuestioning"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 3, id: 15803, name: "Assessment", categories: ["pltAssessStrategies", "pltTesting"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 4, id: 15804, name: "Professional Development, Leadership & Community", categories: ["pltProfessional", "pltLaw"], size: 40, weightLabel: "10 of 50 test questions" },
+  ],
+  categoryLabels: {
+    pltDevelopment: "Student Development & the Learning Process",
+    pltDiverse: "Students as Diverse Learners",
+    pltMotivation: "Motivation & the Learning Environment",
+    pltPlanning: "Planning Instruction",
+    pltStrategies: "Instructional Strategies",
+    pltQuestioning: "Questioning & Communication",
+    pltAssessStrategies: "Assessment & Evaluation Strategies",
+    pltTesting: "Standardized Tests & Scoring",
+    pltProfessional: "Professional Growth & Collaboration",
+    pltLaw: "Laws & Court Decisions",
+  },
+  copy: {
+    guestPrompt: "to save your Praxis PLT progress and track every question you miss",
+    trainingHeading: "Train by PLT content category",
+    trainingSub: "Four sets, one per ETS selected-response category: students as learners, instructional process, assessment, and professional development, leadership and community. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 selected-response questions, weighted like the 5622",
+    heroSubs: [
+      "Four categories, four practice tests. Students and instruction weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. You're ready for the PLT.",
+    ],
+    sourceLine: "Based on the ETS test specifications for Praxis PLT K-6 (5622). Original selected-response questions; the case-history written responses are not modelled. Not affiliated with ETS.",
+    analyticsKey: "praxisplt",
+  },
+};
+
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, cna, ptcb, phleb, ccma, cet, danb, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, cosmetology, barber, vtne, nasm, rbt, cpc, cca, aswb, nce, arrt, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, phlto, zak53, zak53c3, sgbtt, aerta, ngfrsc, kentsa, mykpp, hkdrive, pkdrive, esdgt, ptimt, bedriving, dkteori, setrafik, fitheory, grdriving, rodrpciv, hukresz, mttheory, detheorie, phlet, texesppr, praxisplt, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, gulfrn, inrto, htl, cst, crcst];
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
 export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA, realestatePA, realestateIL, realestateOH, realestateGA, realestateNC, realestateMI, realestateVA, realestateWA, realestateAZ, realestateTN, insuranceNY, insurancePA, insuranceIL, insuranceOH, insuranceGA, insuranceNC, insuranceMI, insuranceNJ, insuranceVA, insuranceWA, pncNY, pncPA, pncIL, pncOH, pncGA, pncNC, pncMI, pncNJ, pncVA, pncWA];

@@ -34,9 +34,10 @@ const sha1 = (s: string | Buffer) => createHash("sha1").update(s).digest("hex");
 
 function sentences(html: string): string[] {
   const text = html
-    .replace(/<script[\s\S]*?<\/script>/gi, " ")
-    .replace(/<style[\s\S]*?<\/style>/gi, " ")
-    .replace(/<noscript[\s\S]*?<\/noscript>/gi, " ")
+    // Text extraction for a fingerprint, not sanitizing: the result is only hashed.
+    .replace(/<script\b[\s\S]*?<\/script\b[^>]*>/gi, " ")
+    .replace(/<style\b[\s\S]*?<\/style\b[^>]*>/gi, " ")
+    .replace(/<noscript\b[\s\S]*?<\/noscript\b[^>]*>/gi, " ")
     .replace(/<(br|\/p|\/li|\/h\d|\/td|\/tr|\/div)[^>]*>/gi, "\n")
     .replace(/<[^>]+>/g, " ")
     .replace(/&nbsp;/g, " ")

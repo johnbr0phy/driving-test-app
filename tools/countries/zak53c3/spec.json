@@ -1,0 +1,36 @@
+{
+  "id": "zak53c3",
+  "stateCode": "ZAK53C3",
+  "idBase": 14900,
+  "prefix": "ZAC3-",
+  "slug": "/k53-code-3",
+  "landingPath": "/k53-code-3-learners-test",
+  "dataFile": "data/south-africa-k53-code-3-questions.json",
+  "name": "K53 Code 3 Learner's Practice Test (C1 and C)",
+  "shortName": "K53 Code 3 learner's",
+  "examLabel": "K53 Code 3 learner's licence test",
+  "fullName": "South Africa K53 learner's licence test, Code 3 (heavy vehicles, for a C1 or C licence)",
+  "icon": "truck",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 80,
+  "categories": [
+    {"key": "c3Licence", "label": "Licences, PrDP, Alcohol & Crashes", "perTest": 5, "pool": 20, "segment": "LIC", "file": "q_licence.py"},
+    {"key": "c3RightOfWay", "label": "Intersections & Right of Way", "perTest": 6, "pool": 24, "segment": "ROW", "file": "q_rightofway.py"},
+    {"key": "c3Speed", "label": "Speed, Following & Overtaking", "perTest": 6, "pool": 24, "segment": "SPD", "file": "q_speed.py"},
+    {"key": "c3Parking", "label": "Stopping, Parking, Lights & Loads", "perTest": 5, "pool": 20, "segment": "PRK", "file": "q_parking.py"},
+    {"key": "c3Regulatory", "label": "Regulatory Signs", "perTest": 9, "pool": 36, "segment": "REG", "file": "q_regulatory.py"},
+    {"key": "c3Warning", "label": "Warning Signs", "perTest": 6, "pool": 24, "segment": "WRN", "file": "q_warning.py"},
+    {"key": "c3Guidance", "label": "Guidance & Information Signs", "perTest": 3, "pool": 12, "segment": "GDE", "file": "q_guidance.py"},
+    {"key": "c3Markings", "label": "Road Markings & Traffic Signals", "perTest": 4, "pool": 16, "segment": "MRK", "file": "q_markings.py"},
+    {"key": "c3Controls", "label": "Heavy Vehicle Controls (Code 3)", "perTest": 6, "pool": 24, "segment": "CTL", "file": "q_controls.py"}
+  ],
+  "trainingSets": [
+    {"setNumber": 1, "id": 14901, "name": "Licences, PrDP & Right of Way", "categories": ["c3Licence", "c3RightOfWay"], "size": 44},
+    {"setNumber": 2, "id": 14902, "name": "Speed, Overtaking, Parking & Loads", "categories": ["c3Speed", "c3Parking"], "size": 44},
+    {"setNumber": 3, "id": 14903, "name": "Regulatory Signs", "categories": ["c3Regulatory"], "size": 36},
+    {"setNumber": 4, "id": 14904, "name": "Warning Signs", "categories": ["c3Warning"], "size": 24},
+    {"setNumber": 5, "id": 14905, "name": "Guidance Signs, Markings & Signals", "categories": ["c3Guidance", "c3Markings"], "size": 28},
+    {"setNumber": 6, "id": 14906, "name": "Heavy Vehicle Controls", "categories": ["c3Controls"], "size": 24}
+  ]
+}

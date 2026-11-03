@@ -1837,6 +1837,20 @@
     --brand-gradient-to: 120 45% 95%;
   }
 
+  /* South Africa K53 Code 3 (heavy vehicle) learner's theme */
+  [data-theme="zak53c3"] {
+    --brand: 38 90% 28%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 38 60% 95%;
+    --brand-hover: 38 90% 23%;
+    --brand-dark: 38 90% 21%;
+    --brand-darker: 38 80% 14%;
+    --brand-muted: 38 30% 70%;
+    --brand-border: 38 35% 78%;
+    --brand-border-light: 38 30% 88%;
+    --brand-gradient-to: 30 45% 95%;
+  }
+
   /* Singapore BTT theme */
   [data-theme="sgbtt"] {
     --brand: 0 100% 32%;
@@ -4572,6 +4586,18 @@
     --brand-muted: 81 30% 45%;
     --brand-dark: 81 90% 65%;
     --brand-darker: 81 80% 78%;
+  }
+
+  .dark [data-theme="zak53c3"] {
+    --brand: 38 90% 33.3%;
+    --brand-hover: 38 90% 25.3%;
+    --brand-light: 38 45% 13%;
+    --brand-gradient-to: 30 40% 11%;
+    --brand-border-light: 38 30% 24%;
+    --brand-border: 38 35% 34%;
+    --brand-muted: 38 30% 45%;
+    --brand-dark: 38 90% 65%;
+    --brand-darker: 38 80% 78%;
   }
 
   .dark [data-theme="sgbtt"] {

@@ -1012,6 +1012,16 @@ export const en = {
     zaGuidance: "Guidance & Information Signs",
     zaMarkings: "Road Markings & Traffic Signals",
     zaControls: "Vehicle Controls (Code 2)",
+    // zak53c3
+    c3Licence: "Licences, PrDP, Alcohol & Crashes",
+    c3RightOfWay: "Intersections & Right of Way",
+    c3Speed: "Speed, Following & Overtaking",
+    c3Parking: "Stopping, Parking, Lights & Loads",
+    c3Regulatory: "Regulatory Signs",
+    c3Warning: "Warning Signs",
+    c3Guidance: "Guidance & Information Signs",
+    c3Markings: "Road Markings & Traffic Signals",
+    c3Controls: "Heavy Vehicle Controls (Code 3)",
     // sgbtt
     sgSigns: "Traffic Signs",
     sgMarkings: "Road Markings & Signals",

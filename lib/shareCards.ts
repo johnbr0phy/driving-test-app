@@ -636,6 +636,10 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
     "color": "hsl(81, 90%, 30%)",
     "tint": "hsl(81, 60%, 95%)"
   },
+  "zak53c3": {
+    "color": "hsl(38, 90%, 28%)",
+    "tint": "hsl(38, 60%, 95%)"
+  },
   "sgbtt": {
     "color": "hsl(0, 100%, 32%)",
     "tint": "hsl(0, 70%, 96%)"

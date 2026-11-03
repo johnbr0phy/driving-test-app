@@ -30,7 +30,7 @@ Q = [
  "Output tax less input tax: $18,350 - $11,620 = $6,730. Output tax is higher, so the business owes the difference."),
 ("A business that is not registered for sales tax buys equipment for $3,000 plus $600 sales tax. The equipment is recorded at:",
  "$3,600", ["$3,000", "$2,400", "$600"],
- "An unregistered business cannot reclaim input tax, so the tax is part of the cost of the asset. A registered business would record $3,000 and a $600 receivable from the tax authority."),
+ "An unregistered business cannot reclaim input tax, so the tax is part of the cost: $3,000 + $600 = $3,600. A registered business would record $3,000 and a $600 receivable from the tax authority."),
 ("Goods with a list price of $8,000 are sold on credit with a 15% trade discount. The revenue recorded is:",
  m(8000 * 0.85), [m(8000), m(8000 * 0.15), m(8000 * 1.15)],
  "Trade discounts are deducted before the sale is recorded: $8,000 x 85% = $6,800. The discount is never shown as a separate expense."),

@@ -30,7 +30,7 @@ Q = [
  "The part-exchange allowance is the disposal proceeds. Carrying amount is $18,000 - $11,200 = $6,800, so $7,500 - $6,800 = a $700 gain."),
 ("A new lorry is bought by trading in an old lorry, for which the dealer allows $9,000, and paying $45,000 in cash. The cost of the new lorry recorded in the ledger is:",
  m(9000 + 45000), [m(45000), m(45000 + 9000 + 9000), m(9000)],
- "The new asset's cost is the full price: cash $45,000 plus the $9,000 allowance, which is the value given up in the old lorry. The allowance is also the old lorry's disposal proceeds."),
+ "The new asset's cost is the full price, $54,000: cash $45,000 plus the $9,000 allowance, which is the value given up in the old lorry. The allowance is also the old lorry's disposal proceeds."),
 ("A building cost $400,000 and has accumulated depreciation of $80,000. It is revalued to $510,000. The revaluation surplus is:",
  m(510000 - 320000), [m(510000 - 400000), m(510000), m(80000)],
  "Surplus = valuation - carrying amount = $510,000 - ($400,000 - $80,000) = $190,000. The accumulated depreciation is eliminated on revaluation."),

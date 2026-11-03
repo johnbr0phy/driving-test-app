@@ -42,7 +42,7 @@ Q = [
  "IAS 10 requires the nature of the event and an estimate of its financial effect to be disclosed, so users are not misled, but the figures are not changed."),
 ("Inventory with a cost of $9,000 at the year end is sold after the year end for net proceeds of $6,500. This is:",
  "Adjusting: write down by $2,500", ["Non-adjusting: disclose only", "Adjusting: write down by $6,500", "Non-adjusting: no disclosure"],
- "The sale is evidence of the inventory's net realisable value at the year end, so inventory is written down from $9,000 to $6,500."),
+ "The sale is evidence of the inventory's net realisable value at the year end, so inventory is written down by $2,500, from $9,000 to $6,500."),
 ("Under IAS 7 as amended by IFRS 18, the indirect method of calculating operating cash flows starts from:",
  "Operating profit", ["Profit for the year", "Profit before income taxes", "Revenue less cost of sales"],
  "IFRS 18 amended IAS 7 so that the indirect method reconciles from operating profit, the subtotal now required in the statement of profit or loss."),

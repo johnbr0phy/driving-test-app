@@ -53,7 +53,7 @@ no published percent.
 
 ## Rules and facts used (codes the outline names)
 - IRC 2021 (https://codes.iccsafe.org/content/IRC2021P2), section numbers given for the integrator's reference only
-  (the bank cites the IRC by name, never by section; the 2021 text was not reloaded for this build): grade fall 6 in within 10 ft (R401.3); wood clearance to earth, 18 in joists / 12 in girders
+  (the bank cites the IRC by name, never by section; the builder wrote these from memory, and the reviewer re-checked each figure on 2026-11-03 against published summaries of the 2021 text, e.g. jaspector.com IRC 2021 pages and ICC CodeNotes: garage door self-closing R302.5.1, AAV at least 4 in above the drain vented P3114, stair-side guard triangle 6 in and infill 4 3/8 in R312.1.3): grade fall 6 in within 10 ft (R401.3); wood clearance to earth, 18 in joists / 12 in girders
   in crawl spaces (R317.1); anchor bolts 6 ft (R403.1.6); joist notches and holes (R502.8.1); stud
   notching 25% bearing / 40% non-bearing, boring 40% / 60% (R602.6); guards over 30 in, 4 in sphere,
   4 3/8 in at stair sides (R312.1); stairs 7 3/4 in riser, 10 in tread, 3/8 in variation (R311.7.5),

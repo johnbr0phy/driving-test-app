@@ -1,7 +1,7 @@
 CAT = "cpaaudSpecial"; SEG = "SPC"
 Q = [
 ("When inventory is material, AU-C 501 requires the auditor to attend the physical count unless it is:",
- "Impracticable to do so", ["Held at a third party", "Counted by the client", "Below materiality"],
+ "Impracticable to do so", ["Tracked on a perpetual system", "Counted by the client", "Insured against loss"],
  "If attendance is impracticable, the auditor performs alternative procedures. If those cannot give sufficient evidence, the opinion is modified for a scope limitation."),
 ("During the inventory count, the auditor traces a sample of tags to the final inventory listing. This tests:",
  "Completeness", ["Existence", "Valuation", "Rights and obligations"],
@@ -41,7 +41,7 @@ Q = [
  "When the total approaches materiality, the risk that undetected misstatements push it over is higher, so the auditor considers more procedures or asks for corrections."),
 ("Written representations from management should be dated:",
  "As of the auditor's report date", ["As of the balance sheet date", "On the date of the engagement letter", "On the report release date"],
- "The representation letter is dated as near as practicable to, but not after, the date of the auditor's report, and covers all periods referred to in it."),
+ "AU-C 580 requires the representations to be dated as of the date of the auditor's report, and covers all periods referred to in it."),
 ("Who should normally sign the management representation letter?",
  "The CEO and CFO", ["The audit committee chair", "The internal auditor", "The controller's staff"],
  "Representations come from management with overall responsibility for financial and operating matters, usually the chief executive and chief financial officers."),
@@ -54,7 +54,7 @@ Q = [
 ("Which procedure covers the period between the balance sheet date and the auditor's report date?",
  "Reading minutes of later meetings", ["Confirming year-end receivables balances", "Testing year-end controls", "Observing the inventory count"],
  "Subsequent events procedures include reading later minutes and interim statements, inquiring of management and inquiring of legal counsel."),
-("A subsequent event occurs after fieldwork but before the report is released, and the statements are adjusted for it. The auditor may:",
+("A subsequent event occurs after the date of the auditor's report but before the report is released, and the statements are adjusted for it. The auditor may:",
  "Dual-date the report", ["Date it at year-end", "Leave the event out", "Issue two reports"],
  "With dual dating, the report keeps its original date except for the note on the later event, which carries its own date. The auditor's responsibility for later events is limited to that note."),
 ("After the report is released, the auditor learns of a fact that existed at the report date and would have changed the report. The auditor should first:",

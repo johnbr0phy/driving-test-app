@@ -214,14 +214,14 @@
     "state": "ALL",
     "questionId": "NHIE-EXT-016",
     "category": "nhieExterior",
-    "question": "Which detail helps keep water from rotting the house rim joist behind a deck ledger?",
-    "optionA": "Wider gaps between boards",
-    "optionB": "Sealing the joist hangers",
-    "optionC": "Caulk along the bottom",
-    "optionD": "Flashing over the ledger",
+    "question": "A deck ledger has no flashing, and the house band joist behind it is soft when probed. The most likely cause of the decay is:",
+    "optionA": "Ground contact at the posts",
+    "optionB": "Condensation in the joist bays",
+    "optionC": "Overloaded joist hangers",
+    "optionD": "Water trapped at the ledger",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Flashing installed over the ledger and lapped under the siding sheds water past the connection. Caulk alone fails and can trap water."
+    "explanation": "Without flashing lapped under the siding and over the ledger, rain runs into the joint and soaks the band joist, which decays where it cannot dry."
   },
   {
     "type": "NHIE",
@@ -242,14 +242,14 @@
     "state": "ALL",
     "questionId": "NHIE-EXT-018",
     "category": "nhieExterior",
-    "question": "Openings in a deck guard should be small enough that a sphere of what diameter cannot pass through?",
-    "optionA": "6 inches",
-    "optionB": "4 inches",
+    "question": "On the open side of a stair, the triangle formed by the riser, the tread and the bottom rail of the guard must not pass a sphere of what diameter?",
+    "optionA": "4 inches",
+    "optionB": "6 inches",
     "optionC": "4 3/8 inches",
-    "optionD": "5 inches",
+    "optionD": "8 inches",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "The 4-inch sphere rule keeps a small child's head from passing through. 4 3/8 inches applies only to openings at the side of stair treads."
+    "explanation": "The IRC allows that triangle up to a 6-inch sphere. Other guard openings follow the 4-inch rule, and the infill of guards on the open sides of stairs may pass up to 4 3/8 inches."
   },
   {
     "type": "NHIE",
@@ -410,14 +410,14 @@
     "state": "ALL",
     "questionId": "NHIE-EXT-030",
     "category": "nhieExterior",
-    "question": "Where a sloped shingle roof meets a sidewall, the IRC calls for:",
-    "optionA": "One long continuous L-shaped flashing",
-    "optionB": "Step flashing at each course",
-    "optionC": "A bead of roofing cement",
+    "question": "Where a shingle roof meets a brick chimney or masonry wall, the upper edge of the step flashing should be covered by:",
+    "optionA": "A bead of roofing cement only",
+    "optionB": "Counterflashing set into the mortar",
+    "optionC": "The next course of shingles",
     "optionD": "A strip of drip edge",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Individual step flashings woven with each shingle course shed water down the roof. A single long flashing lets water run behind it."
+    "explanation": "Counterflashing let into a mortar joint laps over the step flashing so water cannot get behind it. Roofing cement alone dries, cracks and leaks."
   },
   {
     "type": "NHIE",
@@ -1488,14 +1488,14 @@
     "state": "ALL",
     "questionId": "NHIE-PLB-003",
     "category": "nhiePlumbing",
-    "question": "The IRC calls for a pressure reducing valve when static water pressure in the house exceeds:",
-    "optionA": "60 psi",
-    "optionB": "100 psi",
-    "optionC": "80 psi",
-    "optionD": "120 psi",
+    "question": "A gauge on an outdoor hose bibb reads 95 psi with no water running. The inspector should recommend:",
+    "optionA": "A thermal expansion tank",
+    "optionB": "A larger water meter",
+    "optionC": "A pressure reducing valve",
+    "optionD": "A backflow preventer",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Pressure above 80 psi strains fixtures and supply lines, so a pressure reducing valve is required."
+    "explanation": "The IRC calls for a pressure reducing valve when static pressure exceeds 80 psi, since high pressure strains fixtures and supply lines. An expansion tank only absorbs heated water."
   },
   {
     "type": "NHIE",
@@ -1547,11 +1547,11 @@
     "question": "An air admittance valve on a drain must be:",
     "optionA": "Hidden inside a wall cavity",
     "optionB": "Set below the trap arm",
-    "optionC": "Accessible and above the trap",
+    "optionC": "Accessible and above the drain",
     "optionD": "The only vent for the house",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "AAVs open to let air in when the drain flows. They must stay reachable for replacement, sit above the trap weir, and not replace the main vent."
+    "explanation": "AAVs open to let air in when the drain flows. They must stay reachable for replacement and sit at least 4 inches above the drain they vent, and at least one vent must still run to the outdoors."
   },
   {
     "type": "NHIE",
@@ -1565,7 +1565,7 @@
     "optionD": "1/4 inch per foot",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Small drains need 1/4 inch per foot to carry solids. Pipe 3 inches and larger may slope 1/8 inch per foot."
+    "explanation": "Small drains need 1/4 inch per foot to carry solids. Pipe 3 to 6 inches may slope 1/8 inch per foot."
   },
   {
     "type": "NHIE",

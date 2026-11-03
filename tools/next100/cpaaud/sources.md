@@ -52,7 +52,8 @@ simulation, commercial review course or question bank was copied. Checked 2026-1
 - AICPA Code of Professional Conduct: conceptual framework (threats and safeguards), independence
   (covered members, immediate family and close relatives, unpaid fees older than one year, loans from
   financial institution clients, gifts, trustee relationships, nonattest services and the SKE designee),
-  contingent fees, commissions, confidentiality, acts discreditable (client records).
+  contingent fees, commissions, confidentiality, acts discreditable (client-provided records returned even if fees are unpaid; supporting records may
+  be withheld while fees for that work are due).
 - SEC independence rules and Sarbanes-Oxley: prohibited nonaudit services, partner rotation (lead and
   concurring 5 years on, 5 off), one-year cooling-off, audit committee preapproval.
   PCAOB Rules 3524 and 3526.
@@ -70,8 +71,9 @@ simulation, commercial review course or question bank was copied. Checked 2026-1
 - SQMS 1 (eight components, risk-based quality objectives, risks and responses) and SQMS 2 (engagement
   quality reviews, two-year cooling-off for a former engagement partner), effective December 15, 2025.
 - PCAOB: AS 1215 (seven-year retention), AS 2201 (integrated audit, top-down approach, adverse ICFR
-  opinion for a material weakness, same report date), AS 2310 as revised in 2024 (confirmation of cash
-  held by third parties and receivables), AS 2415 (going concern, one year beyond the balance sheet
+  opinion for a material weakness, same report date), AS 2310 (new standard adopted 2023, SEC order Release 34-99060,
+  https://www.sec.gov/files/rules/pcaob/2023/34-99060.pdf, effective for fiscal years ending on or after
+  June 15, 2025; confirmation of cash held by third parties and receivables), AS 2415 (going concern, one year beyond the balance sheet
   date), AS 3101 (CAMs, exemptions, auditor tenure), AS 4105 (interim reviews). QC 1000 effective
   December 15, 2026 (PCAOB postponement, Aug 28, 2025:
   https://pcaobus.org/news-events/news-releases/news-release-detail/pcaob-postpones-effective-date-of-qc-1000-and-related-standards--rules--and-forms,

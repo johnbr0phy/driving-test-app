@@ -200,14 +200,14 @@
     "state": "ALL",
     "questionId": "CPAAUD-ETH-015",
     "category": "cpaaudEthics",
-    "question": "A former client asks for the records it gave the CPA, but owes the CPA fees. Under the AICPA Code, the CPA should:",
-    "optionA": "Keep them until the fees are paid",
-    "optionB": "Return copies, keeping originals",
-    "optionC": "Return the client's records",
-    "optionD": "Return them one year later",
+    "question": "A former client owes fees for last year's work and asks for the adjusting entries the CPA prepared in that work but the client never recorded. Under the AICPA Code, the CPA:",
+    "optionA": "Must provide them at once",
+    "optionB": "Must give them to the state board",
+    "optionC": "May withhold them until paid",
+    "optionD": "Must destroy them after a year",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Client-provided records must be returned on request even when fees are unpaid. Withholding them is an act discreditable to the profession."
+    "explanation": "Those entries are supporting records. They may be withheld while fees are due for that specific work. Records the client provided, by contrast, must be returned on request even when fees are unpaid."
   },
   {
     "type": "CPAAUD",
@@ -305,7 +305,7 @@
     "optionD": "Publish the proposed audit fee in full",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Rule 3526 requires the firm to describe in writing to the audit committee all relationships that may reasonably bear on independence, discuss them, and affirm its independence."
+    "explanation": "Rule 3526 requires the firm to describe in writing to the audit committee all relationships that may reasonably bear on independence, discuss their potential effects on independence, and document the discussion."
   },
   {
     "type": "CPAAUD",
@@ -746,14 +746,14 @@
     "state": "ALL",
     "questionId": "CPAAUD-PLN-014",
     "category": "cpaaudPlanning",
-    "question": "When rising demand meets a fixed supply of a product, standard economics predicts:",
-    "optionA": "Lower prices",
-    "optionB": "Higher prices",
-    "optionC": "Unchanged prices",
-    "optionD": "Lower quantities sold",
+    "question": "Market interest rates rise sharply during the year. Which balance is most likely to carry a higher risk of misstatement as a result?",
+    "optionA": "Common stock at par value",
+    "optionB": "Fixed-rate bonds held at fair value",
+    "optionC": "Prepaid rent for next quarter",
+    "optionD": "Accrued payroll at year-end",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "With supply fixed, an increase in demand pushes the equilibrium price up. The auditor uses such economic factors to set expectations, for example for revenue."
+    "explanation": "When rates rise, the fair value of fixed-rate debt securities falls, so their valuation, and any credit loss or impairment judgment, becomes riskier. The auditor uses such economic factors in assessing inherent risk."
   },
   {
     "type": "CPAAUD",
@@ -1320,14 +1320,14 @@
     "state": "ALL",
     "questionId": "CPAAUD-RSK-015",
     "category": "cpaaudRisk",
-    "question": "In a group audit, the group engagement team decides to make reference to a component auditor's report. The group auditor's report must:",
+    "question": "In a group audit, the group auditor decides to make reference to a component auditor's report. The group auditor's report must:",
     "optionA": "Name the component audit firm",
     "optionB": "Disclaim on that component",
     "optionC": "State the share it audited",
     "optionD": "Attach the component's report",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "When reference is made, the report indicates the magnitude of the portion of the statements audited by the component auditor. The other firm is not named without its permission."
+    "explanation": "When reference is made, the report indicates the magnitude of the portion of the statements audited by the component auditor. The other firm is not named without its permission. SAS 149 renamed the group engagement team the group auditor but kept this option."
   },
   {
     "type": "CPAAUD",
@@ -1474,7 +1474,7 @@
     "state": "ALL",
     "questionId": "CPAAUD-EVD-006",
     "category": "cpaaudEvidence",
-    "question": "Negative confirmations of receivables are suitable only when, among other conditions:",
+    "question": "In an audit of a nonissuer, negative confirmations of receivables are suitable as the only substantive procedure only when, among other conditions:",
     "optionA": "Balances are few and large",
     "optionB": "A low exception rate is expected",
     "optionC": "Control risk is assessed high",
@@ -1719,7 +1719,7 @@
     "optionD": "Retained earnings",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "AS 2310, as revised in 2024, requires confirming cash and cash equivalents held by third parties and accounts receivable, unless an exception applies."
+    "explanation": "AS 2310, adopted in 2023 and effective for fiscal years ending on or after June 15, 2025, requires confirming cash and cash equivalents held by third parties and accounts receivable, unless an exception applies."
   },
   {
     "type": "CPAAUD",
@@ -1966,9 +1966,9 @@
     "category": "cpaaudSpecial",
     "question": "When inventory is material, AU-C 501 requires the auditor to attend the physical count unless it is:",
     "optionA": "Impracticable to do so",
-    "optionB": "Held at a third party",
+    "optionB": "Tracked on a perpetual system",
     "optionC": "Counted by the client",
-    "optionD": "Below materiality",
+    "optionD": "Insured against loss",
     "correctAnswer": "A",
     "correctIndex": 0,
     "explanation": "If attendance is impracticable, the auditor performs alternative procedures. If those cannot give sufficient evidence, the opinion is modified for a scope limitation."
@@ -2153,7 +2153,7 @@
     "optionD": "On the report release date",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "The representation letter is dated as near as practicable to, but not after, the date of the auditor's report, and covers all periods referred to in it."
+    "explanation": "AU-C 580 requires the representations to be dated as of the date of the auditor's report, and covers all periods referred to in it."
   },
   {
     "type": "CPAAUD",
@@ -2216,7 +2216,7 @@
     "state": "ALL",
     "questionId": "CPAAUD-SPC-019",
     "category": "cpaaudSpecial",
-    "question": "A subsequent event occurs after fieldwork but before the report is released, and the statements are adjusted for it. The auditor may:",
+    "question": "A subsequent event occurs after the date of the auditor's report but before the report is released, and the statements are adjusted for it. The auditor may:",
     "optionA": "Date it at year-end",
     "optionB": "Leave the event out",
     "optionC": "Dual-date the report",

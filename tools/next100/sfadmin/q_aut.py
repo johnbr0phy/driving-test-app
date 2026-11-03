@@ -83,7 +83,7 @@ Q = [
  'Collection choice sets (and record choice sets) generate choices for screen components from a collection of records.'),
 ('A screen flow updates records the user cannot normally edit. What does this depend on?',
  "The flow's run context", ["The user's page layout", 'The report folder', 'The compact layout'],
- 'Flows can run in user context or in system context with or without sharing. Screen flows run in user context unless the admin changes it.'),
+ 'Flows can run in user context or in system context with or without sharing. Screen flows launched by a user normally run in user context unless the admin changes it.'),
 ('A screen flow should be one click away for agents on every page of the console. Where can the admin add it?',
  'The utility bar', ['A report folder', 'A list view filter', 'A matching rule'],
  "Flows can be added to an app's utility bar, as well as to Lightning pages and quick actions."),

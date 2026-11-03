@@ -41,7 +41,7 @@ Q = [
  'Login IP ranges on a profile block logins from any address outside the ranges. Trusted IP ranges for the org only skip identity verification; they do not block.'),
 ('Support agents must not log in on weekends. Where does the admin restrict this?',
  'Login hours on the profile', ['Business hours in Company Settings', 'Session timeout settings', "The agents' role in the hierarchy"],
- 'Login hours are set on the profile. Outside them users cannot log in, and anyone already logged in is logged out when the hours end.'),
+ 'Login hours are set on the profile. Outside them users cannot log in, and a user still logged in when the hours end can view the current page but cannot take any further action.'),
 ('A regional manager should reset passwords and edit users in his own region, without being a full admin. Which feature allows this?',
  'Delegated administration', ['A muting permission set', 'The Login As feature', 'A public group with admin rights'],
  'Delegated administration lets chosen users manage users in specified roles and their subordinates, and assign specified profiles and permission sets.'),

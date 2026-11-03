@@ -12,6 +12,14 @@ practice question was copied, and no prep provider is named. Checked 2026-11-03.
   certification" and "ADM 201", so the landing uses both names.
 
 ## Exam format and section weights
+Section weights confirmed (review, 2026-11-03) from Salesforce's own Trailhead module "Get Started
+with Administrator Certification Prep"
+(https://trailhead.salesforce.com/content/learn/modules/administrator-certification-prep-setup-and-objects/get-started-with-administrator-certification-prep):
+Configuration and setup 15%, Object Manager and Lightning App Builder 15%, Sales and marketing
+applications 10%, Service and support applications 10%, Productivity and collaboration 10%, Data
+and analytics management 17%, Automation 15%, Agentforce 8%. The module points to the exam guide
+for logistics, so question count, time and pass mark stay "guides say". On the review pass the
+Help article and admin blog again failed to render (empty page / 403).
 The official exam guide (Salesforce Help article 005298966,
 https://help.salesforce.com/s/articleView?id=005298966&type=1&language=en_US, linked from the
 Trailhead page) and Salesforce's admin blog post "What the Salesforce Certified Platform
@@ -41,7 +49,7 @@ Guides say (label as such on the landing where not confirmed):
   (Salesforce certification programme; not in the bank).
 
 ## Product names as of November 2026
-- Agentforce: "topics" were renamed "subagents" in April 2026 with no change in function
+- Agentforce: "topics" were renamed "subagents" with no change in function (Salesforce's Agentforce legacy guide, https://www.salesforce.com/agentforce/legacy-guide/, and Trailhead say "Subagents (previously named Topics)"; the April 2026 date is from secondary sources only, so the bank says "formerly called topics" without a date)
   (Salesforce developer docs, "Get Started with Agent Script",
   https://developer.salesforce.com/docs/einstein/genai/guide/agent-script.html, per search
   summary 2026-11-03; page returned 403 to our fetcher). Agent Script is the scripting language

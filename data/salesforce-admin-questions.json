@@ -193,7 +193,7 @@
     "optionD": "The agents' role in the hierarchy",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Login hours are set on the profile. Outside them users cannot log in, and anyone already logged in is logged out when the hours end."
+    "explanation": "Login hours are set on the profile. Outside them users cannot log in, and a user still logged in when the hours end can view the current page but cannot take any further action."
   },
   {
     "type": "SFADMIN",
@@ -1642,7 +1642,7 @@
     "state": "ALL",
     "questionId": "SFADM-PRD-018",
     "category": "sfadminProductivity",
-    "question": "Sales reps want a reply sent from Salesforce to appear in the contact's Gmail thread. What should be set up?",
+    "question": "Sales reps work mostly in Gmail and want to see related Salesforce records and log emails without leaving the inbox. What should be set up?",
     "optionA": "Web-to-Lead forms",
     "optionB": "The Gmail integration",
     "optionC": "A Chatter group for email",
@@ -2076,7 +2076,7 @@
     "state": "ALL",
     "questionId": "SFADM-DAT-029",
     "category": "sfadminData",
-    "question": "Rows in a report should turn red when an amount is below target. Which feature does this?",
+    "question": "Summary totals in a report should show in red when an amount is below target. Which feature does this?",
     "optionA": "Conditional formatting",
     "optionB": "A row-level formula",
     "optionC": "A cross filter on Amount",
@@ -2118,7 +2118,7 @@
     "state": "ALL",
     "questionId": "SFADM-DAT-032",
     "category": "sfadminData",
-    "question": "A report must show only records created by the user running it. Which filter should be set?",
+    "question": "A report must show only records owned by the user running it. Which filter should be set?",
     "optionA": "A cross filter",
     "optionB": "A bucket field",
     "optionC": "A row limit",
@@ -2531,7 +2531,7 @@
     "optionD": "The flow's run context",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Flows can run in user context or in system context with or without sharing. Screen flows run in user context unless the admin changes it."
+    "explanation": "Flows can run in user context or in system context with or without sharing. Screen flows launched by a user normally run in user context unless the admin changes it."
   },
   {
     "type": "SFADMIN",
@@ -2573,7 +2573,7 @@
     "optionD": "A list view",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Subagents, called topics before April 2026, bundle a description, instructions and the actions the agent can use for one area of work."
+    "explanation": "Subagents, formerly called topics, bundle a description, instructions and the actions the agent can use for one area of work."
   },
   {
     "type": "SFADMIN",

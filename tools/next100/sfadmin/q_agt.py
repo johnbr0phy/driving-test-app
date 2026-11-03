@@ -2,7 +2,7 @@ CAT = "sfadminAgentforce"; SEG = "AGT"
 Q = [
 ('In an Agentforce agent, what groups related actions with the instructions for one kind of job, such as order status?',
  'A subagent', ['A permission set group', 'A record type', 'A list view'],
- 'Subagents, called topics before April 2026, bundle a description, instructions and the actions the agent can use for one area of work.'),
+ 'Subagents, formerly called topics, bundle a description, instructions and the actions the agent can use for one area of work.'),
 ("How does an agent decide which subagent should handle a customer's message?",
  'Subagent descriptions', ['The record owner', "The user's role", 'The page layout'],
  "The agent's reasoning engine compares the request with each subagent's description and scope, so clear descriptions route requests well."),

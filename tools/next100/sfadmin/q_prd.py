@@ -51,7 +51,7 @@ Q = [
 ('New users keep missing a step in a process. Which feature shows them a prompt or walkthrough on the page?',
  'In-App Guidance', ['Setup Audit Trail', 'Health Check', 'Schema Builder'],
  'In-App Guidance lets admins add prompts and walkthroughs to Lightning pages to point users to features or steps.'),
-("Sales reps want a reply sent from Salesforce to appear in the contact's Gmail thread. What should be set up?",
+("Sales reps work mostly in Gmail and want to see related Salesforce records and log emails without leaving the inbox. What should be set up?",
  'The Gmail integration', ['Web-to-Lead forms', 'A Chatter group for email', 'A macro in the console'],
  'The Gmail and Outlook integrations let reps work with Salesforce records from their inbox and log emails to records.'),
 ('Files uploaded by marketing should be organised and shared with the whole company in one place. What should they use?',

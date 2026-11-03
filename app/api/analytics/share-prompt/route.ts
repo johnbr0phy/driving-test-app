@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getAdminDb } from '@/lib/firebase-admin';
 import { FieldValue } from 'firebase-admin/firestore';
+import { isBotRequest } from '@/lib/botUserAgent';
 
 // John's "tell a friend" prompt in training (components/SharePromptStep):
 // each action counted in analytics/sharePrompt, total, daily and by page.
@@ -9,6 +10,8 @@ const ACTIONS = new Set(['shown', 'skipped', 'share', 'copy']);
 const WHERE = new Set(['dmv_training', 'training', 'drill']);
 
 export async function POST(request: NextRequest) {
+  // Bots never count in /admin (lib/botUserAgent.ts).
+  if (isBotRequest(request)) return NextResponse.json({ ok: true });
   try {
     const body = await request.json().catch(() => ({}));
     const action = body.action;

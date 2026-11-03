@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { FieldValue } from 'firebase-admin/firestore';
 import { getAdminDb } from '@/lib/firebase-admin';
 import { EXAMS_V2 } from '@/lib/v2/registry';
+import { isBotRequest } from '@/lib/botUserAgent';
 
 // Basics usage events from every browser (lib/v2/basicsTracking). One
 // aggregate doc, analytics/v2Basics:
@@ -14,6 +15,8 @@ const EVENTS = new Set(['skill_open', 'skill_learned', 'brushup_shown', 'brushup
 const SKILL_EVENTS = new Set(['skill_open', 'skill_learned', 'brushup_shown', 'brushup']);
 
 export async function POST(request: NextRequest) {
+  // Bots never count in /admin (lib/botUserAgent.ts).
+  if (isBotRequest(request)) return NextResponse.json({ ok: true });
   try {
     const body = await request.json().catch(() => ({}));
     const event = typeof body.event === 'string' ? body.event : '';

@@ -8,6 +8,7 @@ import {
   regionFromCountry,
   regionHomePath,
 } from "@/lib/region";
+import { CRAWLER_UA } from "@/lib/botUserAgent";
 import { LANG_COOKIE, isHomeLanguage } from "@/lib/homeLanguages";
 
 const HOME_REGION = new Map(REGIONS.map((r) => [regionHomePath(r.code), r]));
@@ -23,7 +24,7 @@ const HOME_REGION = new Map(REGIONS.map((r) => [regionHomePath(r.code), r]));
 // pages through links, the sitemap and hreflang.
 // AI fetchers that act for a person (Claude-User, Perplexity-User) carry no
 // "bot" in their user-agent, so they are named.
-const CRAWLER = /bot|crawler|spider|slurp|bingpreview|facebookexternalhit|embedly|preview|lighthouse|claude-user|perplexity-user|chatgpt|google-extended|ccbot|anthropic/i;
+const CRAWLER = CRAWLER_UA;
 
 export function middleware(req: NextRequest) {
   const crawler = CRAWLER.test(req.headers.get("user-agent") ?? "");

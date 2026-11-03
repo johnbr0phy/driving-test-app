@@ -12,6 +12,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { FieldValue } from "firebase-admin/firestore";
 import { getAdminDb } from "@/lib/firebase-admin";
 import { uidFromToken } from "@/lib/unsubscribe";
+import { isBotRequest } from "@/lib/botUserAgent";
 
 const KEY_RE = /^[A-Za-z0-9_]{1,40}$/;
 /** Same-site paths only: "/sat-practice-test", never "//evil.com" or a URL. */
@@ -32,7 +33,8 @@ export async function GET(request: NextRequest) {
   }
 
   const uid = uidFromToken(params.get("t"));
-  if (uid && KEY_RE.test(campaign) && KEY_RE.test(variant)) {
+  // Mail scanners that open every link are bots: redirect them, never record.
+  if (uid && KEY_RE.test(campaign) && KEY_RE.test(variant) && !isBotRequest(request)) {
     try {
       const ref = getAdminDb().collection("users").doc(uid);
       const now = new Date().toISOString();

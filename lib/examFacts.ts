@@ -2090,6 +2090,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the CompTIA Network+ N10-009 exam objectives",
     source: { name: "CompTIA", url: "https://www.comptia.org/en-us/certifications/network/" },
   },
+  cysa: {
+    answer:
+      "The CompTIA CySA+ exam (CS0-004) has a maximum of 85 questions in 165 minutes, multiple choice and performance-based, and you need 750 on a 100 to 900 scale to pass. It covers Security Operations 34%, Vulnerability Management 26%, Incident Response and Management 24% and Reporting and Communication 16%. CS0-004 launched on June 23, 2026; the English CS0-003 exam retires on December 22, 2026.",
+    rows: [
+      { label: "Questions", value: "Up to 85" },
+      { label: "Time", value: "165 minutes" },
+      { label: "Passing score", value: "750 on a 100 to 900 scale" },
+      { label: "Exam code", value: "CS0-004 (CS0-003 until Dec 22, 2026)" },
+      { label: "Valid for", value: "3 years" },
+      { label: "Given by", value: "CompTIA, at Pearson VUE or online" },
+    ],
+    basedOn: "the CompTIA CySA+ CS0-004 exam objectives",
+    source: { name: "CompTIA", url: "https://www.comptia.org/en-us/certifications/cybersecurity-analyst/" },
+  },
   cissp: {
     answer:
       "The CISSP exam is computerized adaptive in every language: 100 to 150 questions in 3 hours, answered in order with no going back. It is scored on a 0 to 1000 scale and 700 passes. The April 15, 2024 outline weights eight domains: Security and Risk Management 16%, Asset Security 10%, Security Architecture and Engineering 13%, Communication and Network Security 13%, Identity and Access Management 13%, Security Assessment and Testing 12%, Security Operations 13% and Software Development Security 10%. Certification also needs five years of paid work in two or more domains.",

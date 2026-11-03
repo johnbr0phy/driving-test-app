@@ -40,6 +40,7 @@ export const BANK_SIZES: Record<string, number> = {
   gre: 194,
   gmat: 169,
   netplus: 204,
+  cysa: 0,
   cissp: 224,
   itil: 160,
   psm: 200,

@@ -40,7 +40,7 @@ const TEACHER_LED = new Set([
   "uklitu", "cacit", "aucit",
   // Next 30 batch (October 2026)
   "rbt", "cpc", "cca", "aswb", "arrt", "nce", "jelec", "barber", "ffi", "police", "faapvt",
-  "psat", "praxis", "gre", "gmat", "netplus", "cissp", "gcdl", "itil", "psm", "capm",
+  "psat", "praxis", "gre", "gmat", "netplus", "cysa", "cissp", "gcdl", "itil", "psm", "capm",
   "ssccgl", "rrbntpc", "ctet", "ibpspo",
   "rrbgroupd", "sscgd", "sscchsl", "sscmts", "uppolice", "ibpsclerk", "jnvst", "jambeng", "appsych",
   // Next-100 batch 2 (November 2026)

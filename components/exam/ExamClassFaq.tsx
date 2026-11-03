@@ -85,6 +85,7 @@ const TEACHES: Record<string, string> = {
   gre: "GRE prep",
   gmat: "GMAT prep",
   netplus: "a networking or Network+ course",
+  cysa: "a cybersecurity analyst or CySA+ course",
   cissp: "a CISSP or information security course",
   gcdl: "a cloud fundamentals course",
   itil: "an IT service management course",

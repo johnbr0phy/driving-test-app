@@ -2,10 +2,13 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getAdminDb, getAdminAuth } from '@/lib/firebase-admin';
 import { FieldValue } from 'firebase-admin/firestore';
 import { isInternalEmail } from '@/lib/internal';
+import { isBotRequest } from '@/lib/botUserAgent';
 
 const KEY_RE = /^[a-zA-Z0-9_]+$/;
 
 export async function POST(request: NextRequest) {
+  // Bots never count in /admin (lib/botUserAgent.ts).
+  if (isBotRequest(request)) return NextResponse.json({ ok: true });
   try {
     const body = await request.json().catch(() => ({}));
     const itemId = typeof body.itemId === 'string' ? body.itemId : '';

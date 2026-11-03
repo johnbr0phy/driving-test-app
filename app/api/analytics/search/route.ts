@@ -5,6 +5,7 @@ import { getAdminDb } from '@/lib/firebase-admin';
 import { normalizeQuery } from '@/lib/testSearch';
 import { getCatalogEntry } from '@/lib/testCatalog';
 import { isRegion } from '@/lib/region';
+import { isBotRequest } from '@/lib/botUserAgent';
 
 // What people type into the search on the homepage (/ and the English country homepages). One doc per
 // normalised query in `searchQueries` (count, how many found nothing, which
@@ -12,6 +13,8 @@ import { isRegion } from '@/lib/region';
 // analytics/search. Searches that find nothing are the list of tests to build
 // next. Internal browsers never send (components/home/SearchHome).
 export async function POST(request: NextRequest) {
+  // Bots never count in /admin (lib/botUserAgent.ts).
+  if (isBotRequest(request)) return NextResponse.json({ ok: true });
   try {
     const body = await request.json().catch(() => ({}));
     const q = normalizeQuery(String(body.q ?? ''));

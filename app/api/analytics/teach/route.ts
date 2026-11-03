@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { FieldValue } from 'firebase-admin/firestore';
 import { getAdminDb } from '@/lib/firebase-admin';
 import { isClassCode, normalizeClassCode } from '@/lib/classes';
+import { isBotRequest } from '@/lib/botUserAgent';
 
 // Teacher funnel aggregate (see lib/teachTracking.ts). One counter per step,
 // total and per UTC day, in analytics/teach. Landing views are also split by
@@ -20,6 +21,8 @@ function hostKey(host: unknown): string | null {
 }
 
 export async function POST(request: NextRequest) {
+  // Bots never count in /admin (lib/botUserAgent.ts).
+  if (isBotRequest(request)) return NextResponse.json({ ok: true });
   try {
     const body = await request.json().catch(() => ({}));
     const step = typeof body.step === 'string' ? body.step : '';

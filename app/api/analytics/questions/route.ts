@@ -6,6 +6,7 @@ import { EXAMS_V2 } from '@/lib/v2/registry';
 import { isInternalEmail } from '@/lib/internal';
 import { grantAnswers, requestIp } from '@/lib/server/answerRateLimit';
 import { BROWSER_ID_RE, recordAnswerActivity } from '@/lib/server/weeklyActiveLearners';
+import { isBotRequest } from '@/lib/botUserAgent';
 
 // Largest batch a client can legitimately accumulate: a full test completion
 // (171 questions on the ACT) plus a burst of training answers.
@@ -19,6 +20,8 @@ function toCount(value: unknown): number {
 }
 
 export async function POST(request: NextRequest) {
+  // Bots never count in /admin (lib/botUserAgent.ts).
+  if (isBotRequest(request)) return NextResponse.json({ ok: true });
   try {
     const body = await request.json().catch(() => ({}));
     const raw = typeof body.count === 'number' && Number.isFinite(body.count) ? Math.floor(body.count) : 1;

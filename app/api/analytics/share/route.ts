@@ -1,8 +1,11 @@
 import { NextResponse } from 'next/server';
 import { getAdminDb } from '@/lib/firebase-admin';
 import { FieldValue } from 'firebase-admin/firestore';
+import { isBotRequest } from '@/lib/botUserAgent';
 
-export async function POST() {
+export async function POST(request: Request) {
+  // Bots never count in /admin (lib/botUserAgent.ts).
+  if (isBotRequest(request)) return NextResponse.json({ ok: true });
   try {
     const db = getAdminDb();
     const today = new Date().toISOString().split('T')[0]; // YYYY-MM-DD

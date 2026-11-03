@@ -16,7 +16,8 @@ With --pool flags the category counts are checked exactly; without them the
 counts are only reported. Exit code 0 on PASS, 1 on FAIL.
 
 Checks (hard failures):
-  schema      exactly the 12 keys, in order; type/state constant; question ends ? or :
+  schema      exactly the 12 keys, in order; type/state constant
+  stem end    every question ends with ? or : (a fill-in-the-blank stem ends with a colon)
   pools       200 rows and exact per-category counts when --pool is given
   ids         <prefix><SEG>-NNN unique and sequential per segment, rows grouped by category
   key         correctIndex matches correctAnswer
@@ -204,7 +205,7 @@ def main() -> int:
                 errs.append(f"{qid}: empty {k}")
         q = r["question"].strip()
         if not (q.endswith("?") or q.endswith(":")):
-            warns.append(f"{qid}: stem does not end with ? or :")
+            errs.append(f"{qid}: stem does not end with ? or :")
         m = ID_RE.match(qid)
         if not m:
             errs.append(f"{qid}: bad id format")
@@ -292,6 +293,8 @@ def main() -> int:
     print(f"letters {dict(letters)}  avg option {avg_opt:.0f} chars  key-longest {long_share:.0%}  key>1.2x {far_share:.0%}")
     for w in warns[:20]:
         print("warn:", w)
+    if len(warns) > 20:
+        print(f"... {len(warns) - 20} more warnings")
     for e in errs[:40]:
         print("FAIL:", e)
     if len(errs) > 40:

@@ -1,8 +1,8 @@
 CAT = "txadjWorkComp"; SEG = "WCP"
 Q = [
-("An injured Texas worker is off work for 10 days. Income benefits begin to accrue on:",
- "The eighth day of disability", ["The first day of disability", "The fourth day of disability", "The 15th day of disability"],
- "Labor Code 408.082 pays no income benefits for the first week. When disability lasts more than a week, benefits accrue from the eighth day."),
+("An injured Texas worker is disabled from the day of the injury and is off work for 10 days. Income benefits begin to accrue on:",
+ "The eighth day after the injury", ["The day of the injury", "The fourth day after the injury", "The 15th day after the injury"],
+ "Labor Code 408.082 pays no income benefits unless disability lasts at least a week. When it lasts longer than a week, weekly benefits begin to accrue on the eighth day after the date of the injury (or after disability began, if it began later)."),
 ("A Texas worker's disability lasts three weeks. Income benefits are then computed from:",
  "The day disability began", ["The eighth day of disability", "The day of return to work", "The 15th day of disability"],
  "Under Labor Code 408.082(c), when disability continues for two weeks or longer, compensation is computed from the date the disability began."),

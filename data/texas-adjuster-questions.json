@@ -438,14 +438,14 @@
     "state": "ALL",
     "questionId": "TXADJ-HOM-016",
     "category": "txadjHome",
-    "question": "Under the ISO homeowners forms, theft of property of an insured full-time student at a school residence is covered only if the student was there at some time during the past:",
+    "question": "Under the current (2022) edition of the ISO HO-3, theft of property of an insured full-time student at a school residence is covered only if the student was there at some time during the past:",
     "optionA": "30 days",
-    "optionB": "60 days",
+    "optionB": "120 days",
     "optionC": "180 days",
     "optionD": "90 days",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Theft coverage for an insured student's property at a residence occupied to attend school applies only if the student has been there at any time during the 90 days before the loss."
+    "explanation": "In the 2022 edition, theft coverage for an insured student's property at a residence occupied to attend school applies only if the student has been there at any time during the 90 days before the loss. The earlier 2011 edition used 60 days."
   },
   {
     "type": "TXADJ",
@@ -1922,14 +1922,14 @@
     "state": "ALL",
     "questionId": "TXADJ-LIA-002",
     "category": "txadjLiability",
-    "question": "Lightning knocks out a home's power during a freeze, and the pipes later burst for lack of heat. Under proximate cause, which event is treated as causing the water loss?",
-    "optionA": "The freezing weather",
+    "question": "Lightning strikes a home's electrical panel, the freezer loses power, and the food inside spoils. Under the proximate cause rule, which event is treated as causing the spoilage?",
+    "optionA": "The loss of power",
     "optionB": "The lightning strike",
-    "optionC": "The burst pipe itself",
-    "optionD": "The water damage",
+    "optionC": "The warm freezer",
+    "optionD": "The spoiled food",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "The proximate cause is the event that sets in motion an unbroken chain of events leading to the loss. Here that chain began with the lightning."
+    "explanation": "The proximate cause is the event that sets in motion an unbroken chain of events leading to the loss. Here that chain began with the lightning, and the power loss was only a link in it."
   },
   {
     "type": "TXADJ",
@@ -2223,7 +2223,7 @@
     "optionD": "Equal to the claimant's",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Texas Civil Practice and Remedies Code Section 33.013 makes a defendant more than 50 percent responsible jointly and severally liable. Others pay only their own share."
+    "explanation": "Texas Civil Practice and Remedies Code Section 33.013 makes a defendant more than 50 percent responsible jointly and severally liable. Other defendants generally pay only their own share."
   },
   {
     "type": "TXADJ",
@@ -2510,14 +2510,14 @@
     "state": "ALL",
     "questionId": "TXADJ-CLM-004",
     "category": "txadjClaims",
-    "question": "After a weather catastrophe or major natural disaster declared by the commissioner, Texas prompt payment deadlines are extended by:",
+    "question": "After a weather-related catastrophe or major natural disaster, as defined by the commissioner, Texas prompt payment deadlines are extended by:",
     "optionA": "An extra 30 days",
     "optionB": "An extra 45 days",
     "optionC": "An extra five days",
     "optionD": "An extra 15 days",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Insurance Code 542.059(b) extends the Subchapter B claim-handling deadlines by an additional 15 days after a weather-related catastrophe or major natural disaster."
+    "explanation": "Insurance Code 542.059(b) extends the Subchapter B claim-handling deadlines for an additional 15 days in the event of a weather-related catastrophe or major natural disaster, as defined by the commissioner."
   },
   {
     "type": "TXADJ",
@@ -2636,14 +2636,14 @@
     "state": "ALL",
     "questionId": "TXADJ-WCP-001",
     "category": "txadjWorkComp",
-    "question": "An injured Texas worker is off work for 10 days. Income benefits begin to accrue on:",
-    "optionA": "The eighth day of disability",
-    "optionB": "The first day of disability",
-    "optionC": "The fourth day of disability",
-    "optionD": "The 15th day of disability",
+    "question": "An injured Texas worker is disabled from the day of the injury and is off work for 10 days. Income benefits begin to accrue on:",
+    "optionA": "The eighth day after the injury",
+    "optionB": "The day of the injury",
+    "optionC": "The fourth day after the injury",
+    "optionD": "The 15th day after the injury",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Labor Code 408.082 pays no income benefits for the first week. When disability lasts more than a week, benefits accrue from the eighth day."
+    "explanation": "Labor Code 408.082 pays no income benefits unless disability lasts at least a week. When it lasts longer than a week, weekly benefits begin to accrue on the eighth day after the date of the injury (or after disability began, if it began later)."
   },
   {
     "type": "TXADJ",

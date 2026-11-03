@@ -4288,7 +4288,7 @@
     "state": "ALL",
     "questionId": "HAM-T8-016",
     "category": "hamSignals",
-    "question": "What is meant by the term \"NTSC?\"",
+    "question": "What is meant by the term \"NTSC\"?",
     "optionA": "A digital transmission standard for encrypting data",
     "optionB": "A special mode for satellite uplink",
     "optionC": "An analog fast-scan color TV signal",

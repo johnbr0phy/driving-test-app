@@ -23,6 +23,7 @@ EXPECTED = {"CA": 150, "NJ": 110}
 src = pathlib.Path(sys.argv[1]).read_bytes()
 assert hashlib.sha256(src).hexdigest() == FORMS_SHA256, "forms file is not the reviewed handoff version"
 root = pathlib.Path(__file__).resolve().parent.parent
+PATCHES = json.loads((root / "tools" / "re_state_patches.json").read_text(encoding="utf-8"))
 
 for form in json.loads(src)["forms"]:
     code = form["jurisdiction"]
@@ -41,6 +42,19 @@ for form in json.loads(src)["forms"]:
         out["sourceQuestionId"] = q["questionId"]
         bank.append(out)
     assert len(bank) == EXPECTED[code] == len({q["questionId"] for q in bank})
+    # Post-review edits (Nov 2026): option rewrites that stop the longest
+    # answer giving away the key, and NJ letter rebalancing. A correctAnswer
+    # entry moves the key to that letter (its option text moves with it).
+    for q in bank:
+        p = PATCHES.get(code, {}).get(q["questionId"])
+        if not p:
+            continue
+        for k, v in p.items():
+            if k.startswith("option"):
+                q[k] = v
+        if "correctAnswer" in p:
+            q["correctAnswer"] = p["correctAnswer"]
+            q["correctIndex"] = "ABCD".index(p["correctAnswer"])
     (root / OUT[code]).write_text(json.dumps(bank, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     counts = {}
     for q in bank:

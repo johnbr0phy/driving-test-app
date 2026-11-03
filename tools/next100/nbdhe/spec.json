@@ -1,0 +1,42 @@
+{
+  "id": "nbdhe",
+  "stateCode": "NBDHE",
+  "idBase": 16700,
+  "prefix": "NBDHE-",
+  "slug": "/nbdhe",
+  "landingPath": "/nbdhe-practice-test",
+  "dataFile": "data/nbdhe-questions.json",
+  "name": "NBDHE Practice Test",
+  "shortName": "NBDHE",
+  "examLabel": "NBDHE",
+  "fullName": "National Board Dental Hygiene Examination",
+  "icon": "tooth",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 75,
+  "categories": [
+    {"key": "nbdheAnat", "label": "Anatomy, Histology & Embryology", "perTest": 3, "pool": 12, "segment": "ANA"},
+    {"key": "nbdheBiosci", "label": "Physiology, Nutrition, Microbiology & Immunology", "perTest": 3, "pool": 12, "segment": "BIO"},
+    {"key": "nbdhePathPharm", "label": "Pathology & Pharmacology", "perTest": 3, "pool": 12, "segment": "PPH"},
+    {"key": "nbdheAssess", "label": "Patient Assessment", "perTest": 3, "pool": 12, "segment": "ASM"},
+    {"key": "nbdheRad", "label": "Dental Radiography", "perTest": 3, "pool": 12, "segment": "RAD"},
+    {"key": "nbdheCare", "label": "Care Planning, Emergencies & Pain Control", "perTest": 4, "pool": 16, "segment": "CAR"},
+    {"key": "nbdhePerio", "label": "Periodontal Disease Management", "perTest": 4, "pool": 16, "segment": "PER"},
+    {"key": "nbdhePrev", "label": "Preventive Agents", "perTest": 3, "pool": 12, "segment": "PRV"},
+    {"key": "nbdheSupport", "label": "Supportive Treatment Services", "perTest": 2, "pool": 8, "segment": "SUP"},
+    {"key": "nbdheProf", "label": "Professional Responsibility", "perTest": 2, "pool": 8, "segment": "PRO"},
+    {"key": "nbdheCommunity", "label": "Research & Community Health", "perTest": 3, "pool": 12, "segment": "COM"},
+    {"key": "nbdheCasePerio", "label": "Cases: Adult Periodontal & Geriatric", "perTest": 9, "pool": 36, "segment": "CPA"},
+    {"key": "nbdheCaseMed", "label": "Cases: Medically Compromised & Special Needs", "perTest": 5, "pool": 20, "segment": "CMC"},
+    {"key": "nbdheCasePeds", "label": "Cases: Pediatric", "perTest": 3, "pool": 12, "segment": "CPD"}
+  ],
+  "notes": "NBDHE test specifications after the update scheduled for November 2026 (2026 Candidate Guide, updated 9/17/2026): 350 items, discipline-based 200 (Scientific Basis 56, Provision of Clinical Dental Hygiene Services 124, Research Principles and Community Health 20) and case-based 150 on 12 to 15 cases. Per 50-question test: scientific 9, clinical discipline 21, community 3, case scenarios 17 (Tigertest's split; real share of case items is 43%). Pools are exactly 4x per-test.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 16701, "name": "Scientific Basis", "categories": ["nbdheAnat", "nbdheBiosci", "nbdhePathPharm"], "size": 36},
+    {"setNumber": 2, "id": 16702, "name": "Assessment, Radiography & Care Planning", "categories": ["nbdheAssess", "nbdheRad", "nbdheCare"], "size": 40},
+    {"setNumber": 3, "id": 16703, "name": "Periodontics, Prevention & Supportive Care", "categories": ["nbdhePerio", "nbdhePrev", "nbdheSupport"], "size": 36},
+    {"setNumber": 4, "id": 16704, "name": "Professional Responsibility & Community Health", "categories": ["nbdheProf", "nbdheCommunity"], "size": 20},
+    {"setNumber": 5, "id": 16705, "name": "Patient Cases: Adult Periodontal & Geriatric", "categories": ["nbdheCasePerio"], "size": 36},
+    {"setNumber": 6, "id": 16706, "name": "Patient Cases: Medically Compromised, Special Needs & Pediatric", "categories": ["nbdheCaseMed", "nbdheCasePeds"], "size": 32}
+  ]
+}

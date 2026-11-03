@@ -215,3 +215,40 @@ Notes for every batch A builder:
 - Never name a commercial prep provider. Say "not affiliated with" the exam body on the landing.
 - Teacher exams: TEACHER_LED is no (people self-study); exam prep programs may still set them, so
   add a TEACHES line only if the template does.
+
+## Next-20 batch B: licensing and certification exams people pay for (Nov 2026)
+
+Same rules as batch A (read that section too). All v1. Branch `next20-batch-b` (built on batch A,
+so batch A's ten exams are on disk: grep them for duplicates). Templates now include batch A's own
+folders, which carry the latest WIRING.md shape: finance and accounting copy `tools/next100/cpafar`
+(and `app/cpa-far`, `app/cpa-far-practice-test`); healthcare copies `tools/next100/arrt`; licensing
+copies `tools/next100/nmls`. Worldwide (GLOBAL) exams also follow `tools/global/gulfrn` for the
+region lines; the UK exam follows `tools/intl/ukfood` (British spelling, region UK).
+
+| id | Test | Region | idBase | stateCode | prefix | slug | landing | hue |
+|---|---|---|---|---|---|---|---|---|
+| cma | CMA (AAMA) Certified Medical Assistant exam | US | 15900 | CMA | CMA- | /cma-aama | /cma-aama-practice-test | 330 35% 32% |
+| nhie | National Home Inspector Examination | US | 16000 | NHIE | NHIE- | /home-inspector | /home-inspector-exam-practice-test | 30 35% 28% |
+| txadjuster | Texas All-Lines Adjuster exam (Pearson VUE) | US | 16100 | TXADJ | TXADJ- | /texas-adjuster | /texas-all-lines-adjuster-practice-test | 343 35% 32% |
+| sfadmin | Salesforce Certified Platform Administrator | GLOBAL | 16200 | SFADMIN | SFADM- | /salesforce-admin | /salesforce-administrator-practice-test | 238 80% 28% |
+| cfal1 | CFA Program Level I | GLOBAL | 16300 | CFAL1 | CFAL1- | /cfa-level-1 | /cfa-level-1-practice-test | 220 25% 26% |
+| cpaaud | CPA Exam AUD (Auditing and Attestation), multiple choice only | US | 16400 | CPAAUD | CPAAUD- | /cpa-aud | /cpa-aud-practice-test | 152 15% 30% |
+| accafa | ACCA Financial Accounting (FA) | GLOBAL | 16500 | ACCAFA | ACCAFA- | /acca-fa | /acca-fa-practice-test | 341 70% 38% |
+| aatl2 | AAT Level 2 Foundation Certificate in Accounting | UK | 16600 | AATL2 | AATL2- | /aat-level-2 | /aat-level-2-practice-test | 270 25% 32% |
+| nbdhe | National Board Dental Hygiene Examination | US | 16700 | NBDHE | NBDHE- | /nbdhe | /nbdhe-practice-test | 180 40% 26% |
+| nptepta | NPTE for Physical Therapist Assistants | US | 16800 | NPTEPTA | PTA- | /npte-pta | /npte-pta-practice-test | 100 30% 26% |
+
+Notes for every batch B builder:
+- Hues above are already checked for white-text contrast (4.5:1) and against every theme; use as given.
+- Real formats v1 cannot show: CFA Level I has 3 options (ours 4, say so); Salesforce "choose two"
+  becomes single answer; NBDHE case-based items and NPTE-PTA scenarios become text scenarios; CPA AUD
+  simulations not modelled. Say each on the landing.
+- Never name a commercial prep provider. Say "not affiliated with" the exam body on the landing.
+- Lanes and duplicates: cpaaud must not repeat cpafar or cpareg; accafa, aatl2 and cpafar share
+  bookkeeping basics (grep each other: accafa is IFRS and UK/international terms, aatl2 UK bookkeeping
+  and costing, cpafar US GAAP); cfal1 overlaps series65, series7, sie, cpafar on ethics, quant,
+  equity and fixed income (grep them); cma overlaps ccma, phlebotomy, cet, cna (grep them); nbdhe
+  overlaps danb; nptepta overlaps nasm-cpt and the healthcare banks; txadjuster overlaps
+  property-casualty, property-casualty-tx and life-health-tx; nhie has no close family but grep
+  journeyman-electrician and osha.
+- Region GLOBAL or UK needs the TEST_REGIONS line in WIRING.md; US is the default.

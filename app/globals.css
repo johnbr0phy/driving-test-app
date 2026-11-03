@@ -3141,6 +3141,146 @@
     --brand-gradient-to: 35 70% 95%;
   }
 
+  /* CMA (AAMA) theme */
+  [data-theme="cma"] {
+    --brand: 330 35% 32%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 330 40% 96%;
+    --brand-hover: 330 35% 27%;
+    --brand-dark: 330 35% 24%;
+    --brand-darker: 330 35% 16%;
+    --brand-muted: 330 20% 72%;
+    --brand-border: 330 25% 80%;
+    --brand-border-light: 330 25% 89%;
+    --brand-gradient-to: 345 40% 96%;
+  }
+
+  /* National Home Inspector Examination theme */
+  [data-theme="nhie"] {
+    --brand: 30 35% 28%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 30 35% 96%;
+    --brand-hover: 30 35% 24%;
+    --brand-dark: 30 35% 20%;
+    --brand-darker: 30 30% 14%;
+    --brand-muted: 30 20% 70%;
+    --brand-border: 30 20% 80%;
+    --brand-border-light: 30 18% 89%;
+    --brand-gradient-to: 205 40% 95%;
+  }
+
+  /* Texas all-lines adjuster theme */
+  [data-theme="txadjuster"] {
+    --brand: 343 35% 32%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 343 35% 96%;
+    --brand-hover: 343 35% 27%;
+    --brand-dark: 343 35% 24%;
+    --brand-darker: 343 30% 16%;
+    --brand-muted: 343 20% 70%;
+    --brand-border: 343 20% 80%;
+    --brand-border-light: 343 18% 89%;
+    --brand-gradient-to: 205 60% 95%;
+  }
+
+  /* Salesforce Platform Administrator theme */
+  [data-theme="sfadmin"] {
+    --brand: 238 80% 28%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 238 80% 96%;
+    --brand-hover: 238 80% 23%;
+    --brand-dark: 238 80% 20%;
+    --brand-darker: 238 75% 14%;
+    --brand-muted: 238 35% 70%;
+    --brand-border: 238 35% 80%;
+    --brand-border-light: 238 33% 89%;
+    --brand-gradient-to: 205 60% 95%;
+  }
+
+  /* CFA Program Level I theme */
+  [data-theme="cfal1"] {
+    --brand: 220 25% 26%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 220 25% 96%;
+    --brand-hover: 220 25% 21%;
+    --brand-dark: 220 25% 18%;
+    --brand-darker: 220 22% 12%;
+    --brand-muted: 220 15% 70%;
+    --brand-border: 220 15% 80%;
+    --brand-border-light: 220 14% 89%;
+    --brand-gradient-to: 40 50% 95%;
+  }
+
+  /* CPA Exam AUD theme */
+  [data-theme="cpaaud"] {
+    --brand: 152 15% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 152 15% 96%;
+    --brand-hover: 152 15% 25%;
+    --brand-dark: 152 15% 24%;
+    --brand-darker: 152 15% 16%;
+    --brand-muted: 152 12% 70%;
+    --brand-border: 152 12% 80%;
+    --brand-border-light: 152 10% 89%;
+    --brand-gradient-to: 45 70% 95%;
+  }
+
+  /* ACCA Financial Accounting (FA) theme */
+  [data-theme="accafa"] {
+    --brand: 341 70% 38%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 341 70% 96%;
+    --brand-hover: 341 70% 33%;
+    --brand-dark: 341 70% 30%;
+    --brand-darker: 341 60% 18%;
+    --brand-muted: 341 30% 70%;
+    --brand-border: 341 30% 80%;
+    --brand-border-light: 341 25% 89%;
+    --brand-gradient-to: 20 70% 95%;
+  }
+
+  /* AAT Level 2 Certificate in Accounting theme (UK) */
+  [data-theme="aatl2"] {
+    --brand: 270 25% 32%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 270 30% 96%;
+    --brand-hover: 270 25% 27%;
+    --brand-dark: 270 25% 24%;
+    --brand-darker: 270 22% 15%;
+    --brand-muted: 270 15% 70%;
+    --brand-border: 270 15% 80%;
+    --brand-border-light: 270 14% 89%;
+    --brand-gradient-to: 45 60% 95%;
+  }
+
+  /* NBDHE theme */
+  [data-theme="nbdhe"] {
+    --brand: 180 40% 26%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 180 35% 95%;
+    --brand-hover: 180 40% 22%;
+    --brand-dark: 180 40% 20%;
+    --brand-darker: 180 40% 14%;
+    --brand-muted: 180 25% 68%;
+    --brand-border: 180 28% 78%;
+    --brand-border-light: 180 25% 88%;
+    --brand-gradient-to: 195 35% 96%;
+  }
+
+  /* NPTE-PTA theme */
+  [data-theme="nptepta"] {
+    --brand: 100 30% 26%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 100 30% 95%;
+    --brand-hover: 100 30% 22%;
+    --brand-dark: 100 30% 20%;
+    --brand-darker: 100 30% 14%;
+    --brand-muted: 100 20% 70%;
+    --brand-border: 100 22% 78%;
+    --brand-border-light: 100 20% 88%;
+    --brand-gradient-to: 120 25% 96%;
+  }
+
   /* Dark mode. Tokens follow Tailwind's gray scale so the dark: variants
      written in components (gray-950 page, gray-900 card, gray-800 border)
      and the shadcn primitives read as one surface system. */
@@ -5814,6 +5954,126 @@
     --brand-muted: 57 30% 45%;
     --brand-dark: 57 50% 65%;
     --brand-darker: 57 45% 78%;
+  }
+
+  .dark [data-theme="cma"] {
+    --brand: 330 35% 50%;
+    --brand-hover: 330 35% 42%;
+    --brand-light: 330 40% 13%;
+    --brand-gradient-to: 345 40% 11%;
+    --brand-border-light: 330 25% 24%;
+    --brand-border: 330 25% 34%;
+    --brand-muted: 330 20% 45%;
+    --brand-dark: 330 35% 65%;
+    --brand-darker: 330 35% 78%;
+  }
+
+  .dark [data-theme="nhie"] {
+    --brand: 30 35% 42.9%;
+    --brand-hover: 30 35% 34.9%;
+    --brand-light: 30 35% 13%;
+    --brand-gradient-to: 205 40% 11%;
+    --brand-border-light: 30 18% 24%;
+    --brand-border: 30 20% 34%;
+    --brand-muted: 30 20% 45%;
+    --brand-dark: 30 35% 65%;
+    --brand-darker: 30 30% 78%;
+  }
+
+  .dark [data-theme="txadjuster"] {
+    --brand: 343 35% 50%;
+    --brand-hover: 343 35% 42%;
+    --brand-light: 343 35% 13%;
+    --brand-gradient-to: 205 40% 11%;
+    --brand-border-light: 343 18% 24%;
+    --brand-border: 343 20% 34%;
+    --brand-muted: 343 20% 45%;
+    --brand-dark: 343 35% 65%;
+    --brand-darker: 343 30% 78%;
+  }
+
+  .dark [data-theme="sfadmin"] {
+    --brand: 238 80% 50%;
+    --brand-hover: 238 80% 42%;
+    --brand-light: 238 45% 13%;
+    --brand-gradient-to: 205 40% 11%;
+    --brand-border-light: 238 33% 24%;
+    --brand-border: 238 35% 34%;
+    --brand-muted: 238 35% 45%;
+    --brand-dark: 238 80% 69%;
+    --brand-darker: 238 75% 78%;
+  }
+
+  .dark [data-theme="cfal1"] {
+    --brand: 220 25% 50%;
+    --brand-hover: 220 25% 42%;
+    --brand-light: 220 25% 13%;
+    --brand-gradient-to: 40 40% 11%;
+    --brand-border-light: 220 14% 24%;
+    --brand-border: 220 15% 34%;
+    --brand-muted: 220 15% 45%;
+    --brand-dark: 220 25% 65%;
+    --brand-darker: 220 22% 78%;
+  }
+
+  .dark [data-theme="cpaaud"] {
+    --brand: 152 15% 42.3%;
+    --brand-hover: 152 15% 34.3%;
+    --brand-light: 152 15% 13%;
+    --brand-gradient-to: 45 40% 11%;
+    --brand-border-light: 152 10% 24%;
+    --brand-border: 152 12% 34%;
+    --brand-muted: 152 12% 45%;
+    --brand-dark: 152 15% 65%;
+    --brand-darker: 152 15% 78%;
+  }
+
+  .dark [data-theme="accafa"] {
+    --brand: 341 70% 50%;
+    --brand-hover: 341 70% 42%;
+    --brand-light: 341 45% 13%;
+    --brand-gradient-to: 20 40% 11%;
+    --brand-border-light: 341 25% 24%;
+    --brand-border: 341 30% 34%;
+    --brand-muted: 341 30% 45%;
+    --brand-dark: 341 70% 65%;
+    --brand-darker: 341 60% 78%;
+  }
+
+  .dark [data-theme="aatl2"] {
+    --brand: 270 25% 50%;
+    --brand-hover: 270 25% 42%;
+    --brand-light: 270 30% 13%;
+    --brand-gradient-to: 45 40% 11%;
+    --brand-border-light: 270 14% 24%;
+    --brand-border: 270 15% 34%;
+    --brand-muted: 270 15% 45%;
+    --brand-dark: 270 25% 65%;
+    --brand-darker: 270 22% 78%;
+  }
+
+  .dark [data-theme="nbdhe"] {
+    --brand: 180 40% 35.8%;
+    --brand-hover: 180 40% 27.8%;
+    --brand-light: 180 35% 13%;
+    --brand-gradient-to: 195 35% 11%;
+    --brand-border-light: 180 25% 24%;
+    --brand-border: 180 28% 34%;
+    --brand-muted: 180 25% 45%;
+    --brand-dark: 180 40% 65%;
+    --brand-darker: 180 40% 78%;
+  }
+
+  .dark [data-theme="nptepta"] {
+    --brand: 100 30% 38.4%;
+    --brand-hover: 100 30% 30.4%;
+    --brand-light: 100 30% 13%;
+    --brand-gradient-to: 120 25% 11%;
+    --brand-border-light: 100 20% 24%;
+    --brand-border: 100 22% 34%;
+    --brand-muted: 100 20% 45%;
+    --brand-dark: 100 30% 65%;
+    --brand-darker: 100 30% 78%;
   }
 
 }

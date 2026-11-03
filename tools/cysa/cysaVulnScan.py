@@ -55,9 +55,9 @@ ITEMS = [
            [0, 1, 2, 3],
            "Nikto is a web server scanner, Metasploit is an exploitation framework used to validate findings, GDB is a debugger and ScoutSuite audits AWS, Azure and Google Cloud configurations. Each answers a different question about the same finding."),
     single(1, "PCI DSS", 2,
-           "An online retailer stores cardholder data and must meet PCI DSS v4.0. Who must perform its quarterly external vulnerability scans?",
-           ["An Approved Scanning Vendor (ASV)", "A Qualified Security Assessor (QSA)", "The retailer's internal security team", "The acquiring bank's fraud analysts"],
-           "PCI DSS requires external scans at least once every three months by a PCI SSC Approved Scanning Vendor. A QSA performs the overall compliance assessment, and internal staff may run the internal scans."),
+           "A retailer under PCI DSS v4.0.1 runs its quarterly internal vulnerability scan. Which findings must be resolved and rescanned for the scan to pass?",
+           ["All high-risk and critical findings", "Every finding of any severity", "Only findings an ASV confirms", "Only findings on internet-facing hosts"],
+           "PCI DSS requirement 11.3.1 says internal scans pass when high-risk and critical vulnerabilities, as ranked by the entity's risk process, are resolved and rescanned. ASVs are required only for the external scans."),
 
     # ---------------- Test 2 ----------------
     single(2, "Asset discovery", 1,
@@ -73,7 +73,7 @@ ITEMS = [
            ["Turn on safe checks in the policy", "Raise the number of hosts scanned at once", "Switch the policy to an unauthenticated scan", "Add the full plugin set to every scan"],
            "Safe checks tell the scanner to skip tests that could crash a service and to judge those flaws from banners or versions instead. Scanning more hosts at once adds load, and an unauthenticated scan still runs the same disruptive checks."),
     single(2, "Nmap", 2,
-           "A data center firewall drops ICMP, so " + cmd("nmap 10.30.5.0/24") + " reports that no hosts are up even though the servers are running. Which option should the analyst add?",
+           "A data center firewall drops ICMP and Nmap's TCP discovery probes, so " + cmd("nmap 10.30.5.0/24") + " reports that no hosts are up even though the servers are running. Which option should the analyst add?",
            [cmd("-Pn") + " to skip host discovery", cmd("-sn") + " to skip the port scan", cmd("-O") + " to detect the operating system", cmd("-F") + " to scan fewer ports"],
            "With -Pn, Nmap treats every address as up and scans its ports, so hosts that ignore ping are still tested. The -sn option does the reverse, a ping sweep with no port scan, which would find nothing here."),
     numeric(2, "Nmap output", 2,

@@ -53,9 +53,9 @@ ITEMS = [
            ["Transfer", "Accept", "Avoid", "Mitigate"],
            "Insurance shifts the financial impact to a third party, which is risk transference. Mitigation would reduce the likelihood or impact with controls, such as better backups."),
     numeric(1, "Remediation SLA", 2,
-            "Policy says critical findings must be fixed within 72 hours of detection. A critical finding was detected Monday at 09:00, and it is now Tuesday at 15:00. How many hours are left before the deadline? Type the number only.",
-            42,
-            "Monday 09:00 to Tuesday 15:00 is 30 hours, so 72 minus 30 leaves 42 hours. Tracking time against the SLA lets the team escalate before the deadline is missed."),
+            "Policy gives high findings 14 days to be remediated. The report shows one high finding detected 9 days ago and another detected 17 days ago. How many days past the SLA is the older finding? Type the number only.",
+            3,
+            "17 minus 14 is 3 days overdue, while the 9-day finding still has 5 days left. Reporting days past SLA shows which owners need escalation first."),
 
     # ---------------- Test 2 ----------------
     single(2, "CVSS v3.1", 1,

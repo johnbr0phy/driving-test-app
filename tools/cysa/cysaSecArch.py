@@ -144,7 +144,7 @@ ITEMS = [
            ["User accounts that were created", "User accounts that were locked out", "Logons that used explicit credentials", "Changes to the audit policy"],
            "The command filters the Security log for event ID 4720, which records a user account being created. Lockouts are 4740 and explicit credential logons are 4648."),
     single(0, "Containers", 2,
-           "A team wants to stop containers with known vulnerable packages from ever reaching production. Where is the most effective place to add a check?",
-           ["Scan images in the registry before deploy", "Scan running hosts once a quarter", "Review container logs after each release", "Add a WAF in front of every container"],
-           "Scanning images as they are built or pushed to the registry, and blocking deployment on failures, catches vulnerable packages before any container runs. Quarterly host scans and log reviews find the problem only after it is live."),
+           "Images are scanned at build time, but a critical CVE was published for a base image after it was pushed. Which control stops that image from being deployed today?",
+           ["Registry rescans with an admission check", "Container log review after each release", "A quarterly scan of the running hosts", "A WAF in front of every container"],
+           "Registry rescans pick up CVEs published after the build, and an admission check that rejects failing images stops them from running. Build-time scans only see what was known when the image was built."),
 ]

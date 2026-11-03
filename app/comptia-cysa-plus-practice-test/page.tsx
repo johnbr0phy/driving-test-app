@@ -13,9 +13,9 @@ const siteUrl = SITE_URL;
 
 const title = "Free CompTIA CySA+ Practice Test 2026 (CS0-004)";
 const metaDescription =
-  "Free CySA+ CS0-004 practice tests: __N__ original questions on logs, threat hunting, vulnerability scans, CVSS, incident response and reporting, all explained.";
+  "Free CySA+ CS0-004 practice tests: 194 original questions on logs, threat hunting, vulnerability scans, CVSS, incident response and reporting, all explained.";
 const description =
-  "Free CompTIA CySA+ (CS0-004) practice tests with __N__ original questions weighted to the exam objectives: logging, SIEM and EDR, indicators of compromise, threat intelligence and hunting, vulnerability scanning and prioritization with CVSS, EPSS and KEV, the incident response life cycle and evidence handling, and vulnerability and incident reporting.";
+  "Free CompTIA CySA+ (CS0-004) practice tests with 194 original questions weighted to the exam objectives: logging, SIEM and EDR, indicators of compromise, threat intelligence and hunting, vulnerability scanning and prioritization with CVSS, EPSS and KEV, the incident response life cycle and evidence handling, and vulnerability and incident reporting.";
 
 const faqs = [
   {
@@ -80,7 +80,7 @@ const jsonLd = {
       operatingSystem: "Any",
       offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
       featureList: [
-        "__N__ original CySA+ practice questions",
+        "194 original CySA+ practice questions",
         "2 full 85-question practice tests in 165 minutes",
         "8 drills covering all four CS0-004 domains",
         "Log reading, choose-two, matching and ordering items",
@@ -128,7 +128,7 @@ export default function CysaPlusLandingPage() {
           <ExamLandingHero
             dashboardHref="/comptia-cysa-plus/dashboard"
             shortName="CySA+"
-            subtitle="__N__ original questions weighted to the CS0-004 exam objectives, with log excerpts, matching and ordering items. Tuned for mobile. No account needed."
+            subtitle="194 original questions weighted to the CS0-004 exam objectives, with log excerpts, matching and ordering items. Tuned for mobile. No account needed."
             shots={{ mobile: "/landing/cysa-mobile.png", desktop: "/landing/cysa-desktop.png" }}
           />
         </div>
@@ -276,7 +276,7 @@ export default function CysaPlusLandingPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">Ready to Pass CySA+?</h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Free to start. No account required. __N__ questions across all four domains.</p>
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Free to start. No account required. 194 questions across all four domains.</p>
           <ExamLandingCTA dashboardHref="/comptia-cysa-plus/dashboard" />
         </div>
       </div>

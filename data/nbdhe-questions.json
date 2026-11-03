@@ -438,14 +438,14 @@
     "state": "ALL",
     "questionId": "NBDHE-PPH-008",
     "category": "nbdhePathPharm",
-    "question": "How many milligrams of anesthetic are in 1 mL of a 4% solution?",
-    "optionA": "4 mg",
-    "optionB": "400 mg",
-    "optionC": "0.4 mg",
-    "optionD": "40 mg",
+    "question": "How many milligrams of articaine are in one 1.7 mL cartridge of 4% articaine with epinephrine?",
+    "optionA": "40 mg",
+    "optionB": "72 mg",
+    "optionC": "6.8 mg",
+    "optionD": "68 mg",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "A 4% solution has 4 g per 100 mL, which is 40 mg per mL. Multiply the percent by 10 to get mg per mL."
+    "explanation": "A 4% solution has 4 g per 100 mL, or 40 mg per mL. 40 mg x 1.7 mL = 68 mg. Using 1.8 mL gives 72 mg; 40 mg is only one milliliter."
   },
   {
     "type": "NBDHE",
@@ -1824,14 +1824,14 @@
     "state": "ALL",
     "questionId": "NBDHE-COM-011",
     "category": "nbdheCommunity",
-    "question": "An evaluation done while a community program is running, to improve it as it goes, is:",
-    "optionA": "Summative evaluation",
-    "optionB": "Outcome evaluation",
-    "optionC": "Formative evaluation",
-    "optionD": "Impact assessment",
+    "question": "A county survey finds untreated decay in 120 of the 400 adults examined. What is the prevalence of untreated decay?",
+    "optionA": "12%",
+    "optionB": "40%",
+    "optionC": "30%",
+    "optionD": "3%",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Formative evaluation happens during the program to adjust it. Summative evaluation judges results at the end."
+    "explanation": "Prevalence is existing cases divided by the people examined: 120 / 400 = 0.30, or 30%. It describes one point in time, not new cases."
   },
   {
     "type": "NBDHE",

@@ -73,3 +73,7 @@ Checked 2026-11-03.
   radiosensitivity) and data/nce-questions.json (type I error) and replaced the repeats.
 - No exam-admin questions, no fees, no commercial prep provider named. Not affiliated with the
   JCNDE or the ADA.
+- Review pass (2026-11-03): rewrote items that repeated a fact and answer in arrt (hypoglycemia
+  signs), ontario-psw (adult respiratory rate), cca (Notice of Privacy Practices), vtne (mg per mL
+  of a lidocaine solution) and aswb-masters (formative evaluation); sharpened two stems whose
+  wording gave the key away (Aggregatibacter, minocycline microspheres) and two awkward stems.

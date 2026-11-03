@@ -3208,4 +3208,157 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the TRCN PQE curriculum guide, registration and PQE past questions pages on trcn.gov.ng, checked November 2026",
     source: { name: "Teachers Registration Council of Nigeria", url: "https://trcn.gov.ng/pqe-curriculum" },
   },
+  cpafar: {
+    answer:
+      "FAR (Financial Accounting and Reporting) is one of the three Core sections of the Uniform CPA Examination, developed by the AICPA and delivered with NASBA and the state boards of accountancy. It lasts 4 hours and has 50 multiple-choice questions and 7 task-based simulations, each half of the score. Scores run from 0 to 99 and 75 passes; it is a scaled score, not a percent correct. Under the Blueprints effective January 1, 2026 its three content areas are Financial Reporting (30 to 40%), Select Balance Sheet Accounts (30 to 40%) and Select Transactions (25 to 35%).",
+    rows: [
+      { label: "Time", value: "4 hours" },
+      { label: "Questions", value: "50 multiple choice, 7 task-based simulations" },
+      { label: "Score weighting", value: "50% multiple choice, 50% simulations" },
+      { label: "Passing score", value: "75 on a 0 to 99 scale" },
+      { label: "Content areas", value: "Financial Reporting, Balance Sheet Accounts, Select Transactions" },
+      { label: "Blueprint", value: "AICPA, effective January 1, 2026" },
+      { label: "Run by", value: "AICPA, NASBA and state boards of accountancy" },
+    ],
+    basedOn: "the AICPA CPA Exam Blueprints effective January 1, 2026 and the 2027 summary of changes, checked November 2026",
+    source: { name: "AICPA: What is tested on the CPA Exam", url: "https://www.aicpa-cima.com/resources/article/learn-what-is-tested-on-the-cpa-exam" },
+  },
+  cpareg: {
+    answer:
+      "REG, Taxation and Regulation, is one of the three Core sections of the Uniform CPA Examination. It runs 4 hours with 72 multiple-choice questions and 8 task-based simulations, each worth half the score, and scores are reported from 0 to 99 with 75 to pass. Under the AICPA's blueprint effective January 2026 it covers ethics, professional responsibilities and federal tax procedures (10 to 20%), business law (15 to 25%), federal taxation of property transactions (5 to 15%), of individuals (22 to 32%) and of entities (23 to 33%). Candidates are not tested on tax amounts indexed to inflation.",
+    rows: [
+      { label: "Section time", value: "4 hours" },
+      { label: "Multiple-choice questions", value: "72, in two testlets of 36" },
+      { label: "Task-based simulations", value: "8" },
+      { label: "Score weighting", value: "50% MCQ, 50% simulations" },
+      { label: "Passing score", value: "75 on a 0 to 99 scale" },
+      { label: "Largest areas", value: "Taxation of entities and of individuals, about 55%" },
+      { label: "Run by", value: "AICPA, with NASBA and state boards of accountancy" },
+    ],
+    basedOn: "the AICPA's Uniform CPA Examination Blueprints effective January 2026 and NASBA's score information, checked November 2026",
+    source: { name: "AICPA: Learn what is tested on the CPA Exam", url: "https://www.aicpa-cima.com/resources/download/learn-what-is-tested-on-the-cpa-exam" },
+  },
+  nmls: {
+    answer:
+      "The NMLS SAFE Mortgage Loan Originator Test is the National Test with Uniform State Content that every state uses to license mortgage loan originators under the federal SAFE Act. It has 120 multiple-choice questions, 115 scored and 5 unscored, in 190 minutes, and you need 75% or better to pass. It covers federal mortgage laws (24%), Uniform State Content (11%), general mortgage knowledge (20%), loan origination activities (27%) and ethics (18%), and is taken at a Prometric test center or online with remote proctoring.",
+    rows: [
+      { label: "Questions", value: "120 (115 scored, 5 unscored)" },
+      { label: "Time", value: "190 minutes" },
+      { label: "Passing score", value: "75%" },
+      { label: "Largest area", value: "Loan origination activities, 27%" },
+      { label: "Where", value: "Prometric test center or online" },
+      { label: "Run by", value: "NMLS, delivered by Prometric" },
+    ],
+    basedOn: "NMLS SAFE MLO Test Handbook and content outline, checked November 2026",
+    source: { name: "NMLS: SAFE MLO Test", url: "https://mortgage.nationwidelicensingsystem.org/knowledge/Products/nmls/pubs/testingHbk/education/mlo_testing/mlo_test_guide/mlo_testing_hbk_intro.html" },
+  },
+  series65: {
+    answer:
+      "The Series 65 is the Uniform Investment Adviser Law Examination, written by NASAA and administered by FINRA. It has 130 scored multiple-choice questions plus 10 unscored pretest questions in 180 minutes, and you pass by answering at least 92 of the 130 scored questions correctly. Most states require it, or an approved professional designation such as the CFP, before registering an investment adviser representative. No firm sponsorship is needed. Its four sections are economic factors (15%), investment vehicles (25%), client recommendations and strategies (30%), and laws, regulations and ethics (30%).",
+    rows: [
+      { label: "Questions", value: "130 scored, plus 10 unscored" },
+      { label: "Time", value: "180 minutes" },
+      { label: "Passing score", value: "92 of 130 correct" },
+      { label: "Sponsorship", value: "Not required" },
+      { label: "Qualifies you as", value: "Investment adviser representative (IAR)" },
+      { label: "Largest sections", value: "Recommendations 30%, laws and ethics 30%" },
+      { label: "Run by", value: "NASAA, administered by FINRA" },
+    ],
+    basedOn: "NASAA's Series 65 content outline (effective June 12, 2023) and exam page, checked November 2026",
+    source: { name: "NASAA: Series 65 Exam Content Outline", url: "https://www.nasaa.org/exams/study-guides/series-65-exam-content-outline/" },
+  },
+  series63: {
+    answer:
+      "The Series 63 is the Uniform Securities Agent State Law Examination, written by NASAA and administered by FINRA. It has 65 multiple-choice questions, 60 scored and 5 unscored, in 75 minutes, and you pass by answering at least 43 of the 60 scored questions correctly. Most states require it before an agent of a broker-dealer can register there. It tests the Uniform Securities Act of 1956 as amended by NASAA, NASAA's model rules and statements of policy, and federal and FINRA rules on agents, ethics and customer communications, with ethical practices the largest subject at 25%.",
+    rows: [
+      { label: "Questions", value: "60 scored, plus 5 unscored" },
+      { label: "Time", value: "75 minutes" },
+      { label: "Passing score", value: "43 of 60 correct" },
+      { label: "Largest subject", value: "Ethical practices, 25%" },
+      { label: "Law tested", value: "Uniform Securities Act of 1956, as amended by NASAA" },
+      { label: "Corequisite", value: "None" },
+      { label: "Run by", value: "NASAA, administered by FINRA" },
+    ],
+    basedOn: "NASAA's Series 63 overview and test specifications (effective June 12, 2023) and FINRA's Series 63 page, checked November 2026",
+    source: { name: "NASAA: Series 63 Exam", url: "https://www.nasaa.org/exams/study-guides/series-63-exam-content-outline/" },
+  },
+  aswb: {
+    answer:
+      "The ASWB Masters exam is the Association of Social Work Boards licensing exam that most US states and several Canadian provinces use for the first license after a master's degree in social work, often called the LMSW. Since August 3, 2026 it has 122 multiple-choice questions in two sections of 61, with four hours to finish; 12 are unscored pretest questions, so 110 count. Questions have three or four options. The outline has three content areas: Values and Ethics 35%, Assessment and Planning 33%, and Intervention and Practice 32%. The result is pass or fail, with the number of correct answers needed set for each exam form.",
+    rows: [
+      { label: "Questions", value: "122 multiple choice (110 scored, 12 pretest)" },
+      { label: "Time", value: "4 hours, two sections of 61" },
+      { label: "Options", value: "3 or 4 per question" },
+      { label: "Pass mark", value: "Pass/fail; number correct needed varies slightly by exam form" },
+      { label: "Content", value: "Values and Ethics 35%, Assessment and Planning 33%, Intervention and Practice 32%" },
+      { label: "Since", value: "August 3, 2026 (2026 outline, 3 content areas)" },
+      { label: "Where", value: "Pearson test centers, after board approval" },
+      { label: "Run by", value: "Association of Social Work Boards (ASWB)" },
+    ],
+    basedOn: "The ASWB Examination Guidebook (2026), Masters content outline, checked November 2026",
+    source: { name: "ASWB: Examination Guidebook", url: "https://www.aswb.org/wp-content/uploads/2026/05/2026-Social-Work-Licensing-Exam-Guidebook-5.4.2026.pdf" },
+  },
+  arrt: {
+    answer:
+      "The ARRT Radiography exam is the American Registry of Radiologic Technologists' certification exam for radiographers, the registry that leads to the R.T.(R) credential most states use for licensing. It has 230 multiple-choice questions on a computer, 200 scored and 30 unscored pilot items. Under the content specifications in force through February 28, 2027, the scored questions are Patient Care 33, Safety 50, Image Production 51 and Procedures 66. Revised specifications take effect on March 1, 2027 (31, 46, 51 and 72). Results are reported as a scaled score; study guides report 75 on a 1 to 99 scale as the passing standard.",
+    rows: [
+      { label: "Questions", value: "230 multiple choice (200 scored, 30 pilot)" },
+      { label: "Pass mark", value: "Scaled score of 75 (1 to 99), per study guides" },
+      { label: "Content", value: "Patient Care 33, Safety 50, Image Production 51, Procedures 66" },
+      { label: "Biggest category", value: "Procedures, 66 of 200" },
+      { label: "From March 1, 2027", value: "Patient Care 31, Safety 46, Image Production 51, Procedures 72" },
+      { label: "Credential", value: "R.T.(R), Registered Technologist in Radiography" },
+      { label: "Run by", value: "American Registry of Radiologic Technologists (ARRT)" },
+    ],
+    basedOn: "The ARRT Radiography Examination Content Specifications (2022) and ARRT's May 2026 notice of the 2027 revision, checked November 2026",
+    source: { name: "ARRT: Updated Radiography Documents", url: "https://www.arrt.org/news/article/2026/05/01/updated-radiography-documents-2026" },
+  },
+  nce: {
+    answer:
+      "The National Counselor Examination (NCE) is the National Board for Certified Counselors' exam for entry-level professional counselors, required for counselor licensure in many states and one of two exam options for the National Certified Counselor (NCC) credential. It has 200 multiple-choice questions in 3 hours and 45 minutes, 160 scored and 40 unscored field-test items, with a 15-minute break after question 100, taken at a Pearson VUE test center or online through OnVUE. The content outline has six domains: professional practice and ethics, intake, assessment and diagnosis, areas of clinical focus, treatment planning, counseling skills and interventions, and core counseling attributes. NBCC sets the passing point for each form by a modified Angoff method. From July 1, 2027 a new version has 170 questions with three options each and six new domains.",
+    rows: [
+      { label: "Questions", value: "200 multiple choice (160 scored, 40 field-test)" },
+      { label: "Time", value: "3 hours 45 minutes, plus a 15-minute break after question 100" },
+      { label: "Pass mark", value: "Set per form by modified Angoff; no published percentage" },
+      { label: "Content", value: "6 domains, aligned with the 8 CACREP core areas" },
+      { label: "Biggest domain", value: "Counseling Skills and Interventions, 48 of 160" },
+      { label: "Where", value: "Pearson VUE test centers or online (OnVUE)" },
+      { label: "Coming July 1, 2027", value: "170 questions, 3 options each, scaled 100 to 500, 360 to pass" },
+      { label: "Run by", value: "National Board for Certified Counselors (NBCC)" },
+    ],
+    basedOn: "NBCC's NCE content outline and state licensure handbook (rev. September 2024), and the 2027 exam specifications, checked November 2026",
+    source: { name: "NBCC: National Counselor Examination", url: "https://www.nbcc.org/exams/nce" },
+  },
+  texesppr: {
+    answer:
+      "The TExES Pedagogy and Professional Responsibilities EC-12 (160), the PPR, is the pedagogy exam most Texas teacher candidates take for a standard classroom certificate, alongside a content exam. It is a computer-administered test of 100 selected-response questions, some unscored, in a 5-hour appointment (4 hours 45 minutes of testing), offered year round by appointment. Scores run from 100 to 300 and 240 passes. It covers four domains and 13 competencies: designing instruction and assessment (34%), the classroom environment (13%), implementing instruction and assessment (33%) and professional roles and responsibilities (20%). TEA plans a performance-based Texas Test of Educator Proficiency (T-TEP) to replace it as the required pedagogy assessment, pending SBEC action; TEA's 2026 newsletters list 2029.",
+    rows: [
+      { label: "Run by", value: "Texas Educator Certification Examination Program (Pearson) for TEA" },
+      { label: "Questions", value: "100 selected-response, some unscored" },
+      { label: "Time", value: "5-hour appointment, 4 hours 45 minutes of testing" },
+      { label: "Passing score", value: "240 on a 100 to 300 scale" },
+      { label: "Domains", value: "I 34%, II 13%, III 33%, IV 20% (13 competencies)" },
+      { label: "Grades covered", value: "Early childhood to grade 12" },
+      { label: "Alternative", value: "edTPA is accepted alongside the PPR; T-TEP planned, pending SBEC" },
+      { label: "Not modelled here", value: "Decision sets (as prep guides describe them) are written as single scenario questions" },
+    ],
+    basedOn: "Texas Educator Certification Examination Program test page and exam framework for 160 PPR EC-12, TEA's Chapter 235 pedagogy standards FAQ (May 2025) and TEA educator preparation newsletters (April and July 2026), checked November 2026",
+    source: { name: "Texas Educator Certification Examination Program", url: "https://www.tx.nesinc.com/" },
+  },
+  praxisplt: {
+    answer:
+      "Praxis Principles of Learning and Teaching: Grades K-6 (test code 5622) is an ETS test that many states require for an elementary teaching license. It lasts 2 hours and has 70 selected-response questions plus 4 constructed-response questions about two case histories. The selected-response questions cover Students as Learners (22.5% of the score), Instructional Process (22.5%), Assessment (15%), and Professional Development, Leadership and Community (15%); the written responses, Analysis of Instructional Scenarios, are the other 25%. ETS does not set a passing score: each state sets its own qualifying score.",
+    rows: [
+      { label: "Run by", value: "ETS (Praxis program)" },
+      { label: "Questions", value: "70 selected response + 4 constructed response on two case histories" },
+      { label: "Time", value: "2 hours (about 70 minutes selected response, 50 minutes written)" },
+      { label: "Content", value: "Students as Learners 22.5%, Instructional Process 22.5%, Assessment 15%, Professional Development 15%, case histories 25%" },
+      { label: "Pass mark", value: "Set by each state (guides report 160 on a 100-200 scale in many states)" },
+      { label: "Delivery", value: "Computer delivered, at a test center or at home online" },
+      { label: "Based on", value: "InTASC Model Core Teaching Standards" },
+      { label: "Not modelled here", value: "The four case-history written responses" },
+    ],
+    basedOn: "The ETS Praxis Study Companion for Principles of Learning and Teaching: Grades K-6 (5622) and the ETS 5622 test page, checked November 2026",
+    source: { name: "ETS Praxis: PLT Grades K-6 (5622)", url: "https://praxis.ets.org/test/5622.html" },
+  },
 };

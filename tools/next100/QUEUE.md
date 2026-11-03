@@ -114,3 +114,12 @@ v2 = sectioned/timed exam (template named in the batch brief). Region is the Tig
 | 98 | 10 | iesafepass | Safe Pass (Ireland) | IE | v1 |
 | 99 | 10 | iegarda | Garda Trainee assessment | IE | v2 |
 | 100 | 10 | ieclerical | Clerical Officer competition (publicjobs) | IE | v2 |
+
+## Next 20 (Nov 2, 2026): ranked by who pays
+
+All v1 (the stats page sells Premium), chosen for adults whose job or licence rides on the exam.
+Batch A (brief: "Next-20 batch A" in BRIEF.md): cpafar, cpareg, nmls, series65, series63, aswb, arrt,
+nce, texesppr, praxisplt. Batch B (next): CMA (AAMA), NHIE home inspector, Texas all-lines adjuster,
+Salesforce Administrator, CFA Level I, CPA AUD, ACCA FA, AAT Level 2, NBDHE, NPTE-PTA.
+Deferred from batches 6 and 7 above (low revenue per learner): the PK and PH batches, AP Stats/Chem,
+LSAT, MCAT, MBE.

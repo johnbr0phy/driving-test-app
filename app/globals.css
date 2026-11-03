@@ -3001,6 +3001,146 @@
     --brand-gradient-to: 160 50% 96%;
   }
 
+  /* CPA Exam FAR theme */
+  [data-theme="cpafar"] {
+    --brand: 147 35% 38%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 147 35% 96%;
+    --brand-hover: 147 35% 33%;
+    --brand-dark: 147 35% 30%;
+    --brand-darker: 147 30% 20%;
+    --brand-muted: 147 30% 70%;
+    --brand-border: 147 30% 80%;
+    --brand-border-light: 147 27% 89%;
+    --brand-gradient-to: 45 70% 95%;
+  }
+
+  /* CPA Exam REG theme */
+  [data-theme="cpareg"] {
+    --brand: 170 23% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 170 25% 96%;
+    --brand-hover: 170 23% 25%;
+    --brand-dark: 170 23% 22%;
+    --brand-darker: 170 18% 14%;
+    --brand-muted: 170 23% 70%;
+    --brand-border: 170 23% 80%;
+    --brand-border-light: 170 20% 89%;
+    --brand-gradient-to: 45 70% 95%;
+  }
+
+  /* NMLS SAFE MLO theme */
+  [data-theme="nmls"] {
+    --brand: 48 35% 36%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 48 35% 96%;
+    --brand-hover: 48 35% 31%;
+    --brand-dark: 48 35% 28%;
+    --brand-darker: 48 30% 18%;
+    --brand-muted: 48 30% 70%;
+    --brand-border: 48 30% 80%;
+    --brand-border-light: 48 27% 89%;
+    --brand-gradient-to: 205 60% 95%;
+  }
+
+  /* NASAA Series 65 theme */
+  [data-theme="series65"] {
+    --brand: 161 15% 32%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 161 25% 96%;
+    --brand-hover: 161 15% 27%;
+    --brand-dark: 161 15% 24%;
+    --brand-darker: 161 10% 14%;
+    --brand-muted: 161 15% 70%;
+    --brand-border: 161 15% 80%;
+    --brand-border-light: 161 12% 89%;
+    --brand-gradient-to: 45 70% 95%;
+  }
+
+  /* NASAA Series 63 theme */
+  [data-theme="series63"] {
+    --brand: 203 25% 42%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 203 25% 96%;
+    --brand-hover: 203 25% 37%;
+    --brand-dark: 203 25% 32%;
+    --brand-darker: 203 22% 20%;
+    --brand-muted: 203 18% 70%;
+    --brand-border: 203 18% 80%;
+    --brand-border-light: 203 16% 89%;
+    --brand-gradient-to: 45 70% 95%;
+  }
+
+  /* ASWB Masters (social work licensing) theme */
+  [data-theme="aswb"] {
+    --brand: 290 35% 42%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 290 50% 96%;
+    --brand-hover: 290 35% 36%;
+    --brand-dark: 290 35% 32%;
+    --brand-darker: 290 32% 22%;
+    --brand-muted: 290 22% 72%;
+    --brand-border: 290 24% 80%;
+    --brand-border-light: 290 22% 89%;
+    --brand-gradient-to: 260 40% 96%;
+  }
+
+  /* ARRT Radiography theme */
+  [data-theme="arrt"] {
+    --brand: 191 100% 28%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 191 60% 96%;
+    --brand-hover: 191 100% 23%;
+    --brand-dark: 191 100% 20%;
+    --brand-darker: 191 95% 14%;
+    --brand-muted: 191 30% 70%;
+    --brand-border: 191 30% 80%;
+    --brand-border-light: 191 27% 89%;
+    --brand-gradient-to: 205 60% 96%;
+  }
+
+  /* NCE (National Counselor Examination) theme */
+  [data-theme="nce"] {
+    --brand: 265 20% 40%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 265 30% 96%;
+    --brand-hover: 265 20% 34%;
+    --brand-dark: 265 22% 30%;
+    --brand-darker: 265 22% 20%;
+    --brand-muted: 265 14% 72%;
+    --brand-border: 265 16% 80%;
+    --brand-border-light: 265 18% 89%;
+    --brand-gradient-to: 225 25% 96%;
+  }
+
+  /* TExES PPR EC-12 (160) theme */
+  [data-theme="texesppr"] {
+    --brand: 352 40% 38%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 352 45% 96%;
+    --brand-hover: 352 40% 32%;
+    --brand-dark: 352 40% 28%;
+    --brand-darker: 352 40% 18%;
+    --brand-muted: 352 25% 72%;
+    --brand-border: 352 25% 82%;
+    --brand-border-light: 352 25% 90%;
+    --brand-gradient-to: 15 45% 96%;
+  }
+
+  /* Praxis PLT K-6 (5622) theme */
+  [data-theme="praxisplt"] {
+    --brand: 57 50% 29%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 57 50% 96%;
+    --brand-hover: 57 50% 24%;
+    --brand-dark: 57 50% 21%;
+    --brand-darker: 57 45% 14%;
+    --brand-muted: 57 30% 70%;
+    --brand-border: 57 30% 80%;
+    --brand-border-light: 57 27% 89%;
+    --brand-gradient-to: 35 70% 95%;
+  }
+
   /* Dark mode. Tokens follow Tailwind's gray scale so the dark: variants
      written in components (gray-950 page, gray-900 card, gray-800 border)
      and the shadcn primitives read as one surface system. */
@@ -5556,6 +5696,124 @@
     --brand-muted: 188 35% 45%;
     --brand-dark: 188 62% 65%;
     --brand-darker: 188 52% 78%;
+  }
+
+  .dark [data-theme="cpafar"] {
+    --brand-light: 147 35% 13%;
+    --brand-gradient-to: 45 40% 11%;
+    --brand-border-light: 147 27% 24%;
+    --brand-border: 147 30% 34%;
+    --brand-muted: 147 30% 45%;
+    --brand-dark: 147 35% 65%;
+    --brand-darker: 147 30% 78%;
+  }
+
+  .dark [data-theme="cpareg"] {
+    --brand: 170 23% 40.1%;
+    --brand-hover: 170 23% 32.1%;
+    --brand-light: 170 25% 13%;
+    --brand-gradient-to: 45 40% 11%;
+    --brand-border-light: 170 20% 24%;
+    --brand-border: 170 23% 34%;
+    --brand-muted: 170 23% 45%;
+    --brand-dark: 170 23% 65%;
+    --brand-darker: 170 18% 78%;
+  }
+
+  .dark [data-theme="nmls"] {
+    --brand: 48 35% 37.8%;
+    --brand-hover: 48 35% 31%;
+    --brand-light: 48 35% 13%;
+    --brand-gradient-to: 205 40% 11%;
+    --brand-border-light: 48 27% 24%;
+    --brand-border: 48 30% 34%;
+    --brand-muted: 48 30% 45%;
+    --brand-dark: 48 35% 65%;
+    --brand-darker: 48 30% 78%;
+  }
+
+  .dark [data-theme="series65"] {
+    --brand: 161 15% 42.2%;
+    --brand-hover: 161 15% 34.2%;
+    --brand-light: 161 25% 13%;
+    --brand-gradient-to: 45 40% 11%;
+    --brand-border-light: 161 12% 24%;
+    --brand-border: 161 15% 34%;
+    --brand-muted: 161 15% 45%;
+    --brand-dark: 161 15% 65%;
+    --brand-darker: 161 10% 78%;
+  }
+
+  .dark [data-theme="series63"] {
+    --brand: 203 25% 45%;
+    --brand-hover: 203 25% 37%;
+    --brand-light: 203 25% 13%;
+    --brand-gradient-to: 45 40% 11%;
+    --brand-border-light: 203 16% 24%;
+    --brand-border: 203 18% 34%;
+    --brand-muted: 203 18% 45%;
+    --brand-dark: 203 25% 65%;
+    --brand-darker: 203 22% 78%;
+  }
+
+  .dark [data-theme="aswb"] {
+    --brand: 290 35% 50%;
+    --brand-hover: 290 35% 42%;
+    --brand-light: 290 45% 13%;
+    --brand-gradient-to: 260 40% 11%;
+    --brand-border-light: 290 22% 24%;
+    --brand-border: 290 24% 34%;
+    --brand-muted: 290 22% 45%;
+    --brand-dark: 290 35% 65%;
+    --brand-darker: 290 32% 78%;
+  }
+
+  .dark [data-theme="arrt"] {
+    --brand: 191 100% 30.7%;
+    --brand-hover: 191 100% 23%;
+    --brand-light: 191 45% 13%;
+    --brand-gradient-to: 205 40% 11%;
+    --brand-border-light: 191 27% 24%;
+    --brand-border: 191 30% 34%;
+    --brand-muted: 191 30% 45%;
+    --brand-dark: 191 100% 65%;
+    --brand-darker: 191 95% 78%;
+  }
+
+  .dark [data-theme="nce"] {
+    --brand: 265 20% 50%;
+    --brand-hover: 265 20% 42%;
+    --brand-light: 265 30% 13%;
+    --brand-gradient-to: 225 25% 11%;
+    --brand-border-light: 265 18% 24%;
+    --brand-border: 265 16% 34%;
+    --brand-muted: 265 14% 45%;
+    --brand-dark: 265 22% 65%;
+    --brand-darker: 265 22% 78%;
+  }
+
+  .dark [data-theme="texesppr"] {
+    --brand: 352 40% 50%;
+    --brand-hover: 352 40% 42%;
+    --brand-light: 352 45% 13%;
+    --brand-gradient-to: 15 40% 11%;
+    --brand-border-light: 352 25% 24%;
+    --brand-border: 352 25% 34%;
+    --brand-muted: 352 25% 45%;
+    --brand-dark: 352 40% 65%;
+    --brand-darker: 352 40% 78%;
+  }
+
+  .dark [data-theme="praxisplt"] {
+    --brand: 57 50% 32.3%;
+    --brand-hover: 57 50% 24.3%;
+    --brand-light: 57 45% 13%;
+    --brand-gradient-to: 35 40% 11%;
+    --brand-border-light: 57 27% 24%;
+    --brand-border: 57 30% 34%;
+    --brand-muted: 57 30% 45%;
+    --brand-dark: 57 50% 65%;
+    --brand-darker: 57 45% 78%;
   }
 
 }

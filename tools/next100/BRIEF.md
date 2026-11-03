@@ -171,3 +171,47 @@ Exams whose own language is not English, on the platform built in phase 0 (`tool
 - Validate with `validate_bank.py --lang <lang>` (a native bank) or
   `validate_translation.py <base> <translation> --lang <lang>` (a translation).
 - Typography as in LANGUAGES.md 5.1; same house rules as every bank.
+
+## Next-20 batch A: US licensing exams people pay for (Nov 2026)
+
+Chosen for who pays: adults in the US whose job or licence depends on the exam, with a real exam
+fee and retake cost, who already buy prep. All v1 (the stats page sells Premium on v1 exams), region
+US. Branch `next20-batch-a`. Templates: finance exams copy `tools/next30/series7` (and its
+`app/series-7`, `app/series-7-practice-test`); healthcare and social work copy `tools/next30/rbt`;
+teacher exams copy `tools/next100/phlet`. Each template has a `WIRING.md`: write yours in the same
+sections.
+
+| id | Test | idBase | stateCode | prefix | slug | landing | hue |
+|---|---|---|---|---|---|---|---|
+| cpafar | CPA Exam FAR (Financial Accounting and Reporting), multiple choice only | 14900 | CPAFAR | CPAFAR- | /cpa-far | /cpa-far-practice-test | 150 45% 38% |
+| cpareg | CPA Exam REG (Taxation and Regulation), multiple choice only | 15000 | CPAREG | CPAREG- | /cpa-reg | /cpa-reg-practice-test | 170 40% 38% |
+| nmls | NMLS SAFE Mortgage Loan Originator Test (national component with Uniform State Content) | 15100 | NMLS | NMLS- | /nmls | /nmls-safe-practice-test | 45 55% 42% |
+| series65 | FINRA/NASAA Series 65 (Uniform Investment Adviser Law Exam) | 15200 | SERIES65 | S65- | /series-65 | /series-65-practice-test | 161 45% 38% |
+| series63 | Series 63 (Uniform Securities Agent State Law Exam) | 15300 | SERIES63 | S63- | /series-63 | /series-63-practice-test | 203 25% 42% |
+| aswb | ASWB Masters exam (social work licensing) | 15400 | ASWB | ASWB- | /aswb-masters | /aswb-masters-practice-test | 290 35% 42% |
+| arrt | ARRT Radiography certification exam | 15500 | ARRT | ARRT- | /arrt-radiography | /arrt-radiography-practice-test | 186 90% 34% |
+| nce | NBCC National Counselor Examination (NCE) | 15600 | NCE | NCE- | /nce | /nce-practice-test | 265 20% 40% |
+| texesppr | TExES Pedagogy and Professional Responsibilities EC-12 (160) | 15700 | TEXESPPR | TXPPR- | /texes-ppr | /texes-ppr-practice-test | 352 40% 38% |
+| praxisplt | Praxis Principles of Learning and Teaching: Grades K-6 (5622) | 15800 | PRAXISPLT | PLT- | /praxis-plt | /praxis-plt-practice-test | 51 80% 38% |
+
+Notes for every batch A builder:
+- The hue above is already checked against every theme; use it as given.
+- Money: amounts inside a worked problem (an accounting entry, a loan payment, a tax computation)
+  are fine. Exam fees, prices, and yearly indexed figures (tax brackets, standard deduction,
+  contribution limits, gift exclusion, conforming loan limits) are not, unless the item names the
+  year and `sources.md` cites the official figure. Prefer rules that do not change each year.
+- Model the real blueprint's content areas and weights from the exam body's current outline (AICPA
+  Blueprints 2026 for FAR/REG; NMLS SAFE content outline; NASAA Series 63/65 outlines; ASWB Masters
+  content outline; ARRT Radiography content specifications (2027 changes are noted on the landing if
+  announced); NBCC NCE content; TEA TExES 160 framework; ETS 5622 test at a glance). Constructed
+  responses, task-based simulations and image items are not modelled; the landing says so.
+- Images: ARRT items describe positioning, anatomy and image findings in words, never "see image".
+- Lanes and duplicates: series63 and series65 both test the Uniform Securities Act; series65 also
+  overlaps series7 and sie on products. Grep `data/series-7-questions.json`, `data/sie-questions.json`
+  and each other's files as you write and use different scenarios and numbers. aswb and nce share
+  ethics, DSM-5-TR and theory: grep each other. texesppr and praxisplt share pedagogy: grep each other
+  and `data/v2/praxis`, `data/philippines-let-questions.json`, `data/v2/ctet`. cpafar and cpareg do
+  not overlap (FAR has no tax; REG has no GAAP), and cpareg must not repeat `data/cca-questions.json`.
+- Never name a commercial prep provider. Say "not affiliated with" the exam body on the landing.
+- Teacher exams: TEACHER_LED is no (people self-study); exam prep programs may still set them, so
+  add a TEACHES line only if the template does.

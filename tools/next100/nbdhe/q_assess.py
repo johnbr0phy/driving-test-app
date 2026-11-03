@@ -24,7 +24,7 @@ Q = [
 ("Which instrument is designed to measure furcation involvement?",
  "Nabers probe", ["Shepherd's hook explorer", "Williams probe", "Pigtail explorer"],
  "The curved Nabers probe reaches into horizontal furcation defects. A straight probe measures vertical pocket depth."),
-("When probing, how far should the probe be walked around each tooth?",
+("How should the probe be moved around each tooth when probing?",
  "In small steps along the sulcus", ["Once at each of six points", "Only at the deepest site", "In wide sweeps along the crown"],
  "Walking the probe in short up-and-down steps around the whole sulcus finds narrow deep sites. Six readings per tooth are then recorded."),
 ("In Angle's classification, a patient whose mandibular first molar sits distal to the normal position has:",

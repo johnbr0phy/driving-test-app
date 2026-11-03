@@ -30,7 +30,7 @@ Q = [
 ("For most patients treated for periodontitis, the usual periodontal maintenance interval is:",
  "Every 3 months", ["Every 6 months", "Every 12 months", "Every 2 weeks"],
  "A 3-month interval keeps subgingival biofilm from rebuilding a pathogenic flora. The interval is adjusted to each patient's stability."),
-("Which locally delivered agent is a minocycline powder placed into a pocket after scaling?",
+("Which locally delivered agent is placed into the pocket as a dry powder after scaling?",
  "Minocycline microspheres", ["Chlorhexidine chip", "Doxycycline polymer gel", "Metronidazole tablet"],
  "Minocycline microspheres are placed as a dry powder and release drug over about two weeks. The chlorhexidine chip and doxycycline gel are other locally delivered options."),
 ("Low-dose doxycycline (20 mg twice a day) helps periodontal therapy mainly by:",

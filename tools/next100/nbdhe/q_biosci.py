@@ -18,7 +18,7 @@ Q = [
 ("Which bacterium is most closely linked to the start of enamel caries?",
  "Streptococcus mutans", ["Lactobacillus casei", "Treponema denticola", "Fusobacterium nucleatum"],
  "Mutans streptococci initiate enamel caries. Lactobacilli thrive in an already acidic, cavitated lesion and are linked to its progression."),
-("Which organism, now classed as Aggregatibacter, is linked to molar-incisor pattern periodontitis in young people?",
+("Which organism is most closely linked to molar-incisor pattern periodontitis in adolescents?",
  "A. actinomycetemcomitans", ["Porphyromonas gingivalis", "Prevotella intermedia", "Actinomyces viscosus"],
  "Aggregatibacter actinomycetemcomitans produces a leukotoxin and is associated with the molar-incisor pattern of rapidly progressing periodontitis in adolescents."),
 ("Which gram-positive organism dominates early supragingival plaque as it forms on the pellicle?",

@@ -54,7 +54,7 @@ Q = [
 ("Case: 55-year-old man with a deep cervical enamel projection into the buccal furcation of tooth 30. Why does it matter?",
  "It favors furcation pockets", ["It prevents calculus there", "It strengthens the root", "It marks a root fracture"],
  "Cervical enamel projections block connective tissue attachment, so pockets and furcation involvement form there more easily."),
-("Case: 45-year-old man, recently started an at-home doxycycline 20 mg twice daily after SRP. He asks why the dose is so low. What is the best answer?",
+("Case: 45-year-old man, recently started doxycycline 20 mg twice daily after SRP. He asks why the dose is so low. What is the best answer?",
  "It slows tissue breakdown", ["It cures the gum infection", "It whitens the teeth", "It stops tartar forming"],
  "Subantimicrobial-dose doxycycline inhibits collagenase and does not act as an antibiotic. It is used alongside scaling and root planing."),
 ("Case: 45-year-old man after SRP has a 6 mm site on tooth 14. The dentist orders a local antimicrobial. When is it placed?",

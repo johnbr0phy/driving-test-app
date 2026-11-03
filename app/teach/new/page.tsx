@@ -131,7 +131,7 @@ function NewClassForm() {
                 </button>
               </div>
             ) : (
-              <div className="rounded-xl border border-gray-200 dark:border-gray-800">
+              <div className="rounded-xl border border-gray-200 dark:border-gray-800 has-[input:focus]:border-[#1d4ed8] has-[input:focus]:ring-1 has-[input:focus]:ring-[#1d4ed8] dark:has-[input:focus]:border-[#93c5fd] dark:has-[input:focus]:ring-[#93c5fd]">
                 <div className="relative border-b border-gray-200 dark:border-gray-800">
                   <Search className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" aria-hidden="true" />
                   <input
@@ -140,7 +140,7 @@ function NewClassForm() {
                     onChange={(e) => setQuery(e.target.value)}
                     placeholder="Search: surgical tech, NCLEX, SAT, real estate…"
                     aria-label="Search tests"
-                    className="w-full bg-transparent pl-9 pr-3 py-3 text-base md:text-sm text-gray-900 dark:text-gray-50 outline-none"
+                    className="w-full bg-transparent pl-9 pr-3 py-3 text-base md:text-sm text-gray-900 dark:text-gray-50 outline-none focus-in-parent"
                   />
                 </div>
                 <div className="max-h-80 overflow-y-auto p-2">

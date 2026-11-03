@@ -157,11 +157,12 @@ export function statsUrl(voice: EmailVoice, campaign: string): string {
  * Exam pages link to /signup?redirect=/<slug>/dashboard, so the redirect
  * target wins. The one-tap Google button on GuestSaveCard signs people up on
  * the exam page itself (no redirect), so the page's own path is next. Last,
- * the test this device was in most recently (`lastTestPath`), else the DMV.
+ * the device's current test (`currentExamId`, the store's primaryExam), else
+ * the DMV.
  */
 export function examIdFromSignupUrl(
   url: string | null | undefined,
-  lastTestPath?: string | null,
+  currentExamId?: string | null,
 ): string {
   const examFor = (path: string | null | undefined) =>
     path ? (getExamV2ByPath(path)?.id ?? getExamByPath(path)?.id ?? null) : null;
@@ -174,7 +175,25 @@ export function examIdFromSignupUrl(
       // fall through
     }
   }
-  return fromUrl ?? examFor(lastTestPath) ?? "dmv";
+  return fromUrl ?? (isKnownExamId(currentExamId) ? currentExamId : null) ?? "dmv";
+}
+
+/**
+ * True when the signup came from the instructor pages: /signup?redirect=/teach/...
+ * (the /teach "Create a class" buttons and the /teach/new login bounce) or a
+ * sign-in on a /teach page itself. Those people get the teacher welcome, not
+ * an exam's, and no current test is set for them.
+ */
+export function isTeacherSignupUrl(url: string | null | undefined): boolean {
+  if (!url) return false;
+  const isTeach = (path: string | null | undefined) =>
+    !!path && (path === "/teach" || path.startsWith("/teach/") || path.startsWith("/teach?"));
+  try {
+    const parsed = new URL(url, SITE);
+    return isTeach(parsed.searchParams.get("redirect")) || isTeach(parsed.pathname);
+  } catch {
+    return false;
+  }
 }
 
 /**

@@ -7,7 +7,10 @@ import { isKnownExamId, voiceFor } from "@/lib/email-voice";
 
 export async function POST(request: NextRequest) {
   try {
-    const { userId, emailConsent, examId: rawExamId } = await request.json();
+    const { userId, emailConsent, examId: rawExamId, teacher: rawTeacher } = await request.json();
+    // Signed up from /teach: the teacher welcome, and no exam is guessed for
+    // them (it would become their current test, shown in the header chip).
+    const teacher = rawTeacher === true;
 
     // Which exam the signup came from (the client reads it off the signup
     // page's ?redirect= param). Drives the copy and links below, and is
@@ -65,7 +68,7 @@ export async function POST(request: NextRequest) {
       };
       // First exam wins here; the client overwrites it whenever the person
       // opens another exam's dashboard.
-      if (!data?.primaryExam) {
+      if (!teacher && !data?.primaryExam) {
         updates.primaryExam = examId;
       }
       // First-time stamp so admin conversion stats can compute time-to-purchase.
@@ -83,7 +86,7 @@ export async function POST(request: NextRequest) {
     const greeting = firstName ? `Hey ${firstName},` : "Hey there,";
     const unsubscribeToken = Buffer.from(userId).toString("base64");
 
-    const html = EMAIL_TEMPLATES.welcome(voiceFor(examId))
+    const html = EMAIL_TEMPLATES[teacher ? "welcomeTeacher" : "welcome"](voiceFor(examId))
       .replace(/{{greeting}}/g, greeting)
       .replace(/{{unsubscribeToken}}/g, unsubscribeToken);
 

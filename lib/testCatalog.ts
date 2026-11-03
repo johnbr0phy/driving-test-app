@@ -387,7 +387,7 @@ const SEARCH_ALIASES: Record<string, string> = {
   caon: "ontario g1 g1 test g1 knowledge test g1 practice test mto drivetest ontario driver's licence ontario drivers test canada learner permit g2 written test",
   camb: "manitoba mpi class 5 5l learner knowledge test permit driving test winnipeg brandon autopac driver handbook gdl canada",
   auwa: "wa learners permit theory test western australia perth drive safe handbook l plates p plates road rules dot dvs computerised theory test ctt australia",
-  dmv: "driver license permit learners written knowledge road signs state",
+  dmv: "driving test driver license driver's license drivers licence permit test learners permit written knowledge test road signs state dmv",
   timestables: "times tables multiplication tables check mtc year 2 year 3 year 4 ks1 ks2 key stage maths math kids children primary school multiplication division",
   ks2: "ks2 sats year 6 sats key stage 2 tests national curriculum tests spag gps grammar punctuation spelling reading test arithmetic reasoning scaled score primary school england",
   gcsemaths: "gcse maths math mathematics foundation tier practice paper past paper mock exam revision resit grade 4 grade 5 non calculator calculator aqa edexcel ocr year 10 year 11 ks4 key stage 4 england uk",
@@ -461,12 +461,12 @@ const SEARCH_ALIASES: Record<string, string> = {
   nclex: "nclex rn registered nurse board exam licensure ngn next generation sata select all that apply ncsbn nursing boards",
   nclexpn: "nclex pn lpn lvn practical nurse vocational nurse board exam licensure ngn next generation sata select all that apply ncsbn nursing boards",
   hesi: "hesi a2 admission assessment nursing entrance exam evolve elsevier",
-  asvab: "asvab afqt military army navy air force marines coast guard enlistment recruiter picat",
+  asvab: "asvab afqt math arithmetic reasoning math knowledge military army navy air force marines coast guard enlistment recruiter picat",
   cpr: "cpr aed first aid bls basic life support heartsaver red cross aha certification babysitting",
   osha: "osha 10 osha 30 outreach construction general industry safety card focus four",
   forklift: "forklift certification powered industrial truck operator license warehouse pallet jack osha",
   alcohol: "alcohol server seller certification bartender license tabc tips rbs responsible beverage service",
-  accuplacer: "accuplacer college placement test community college next generation college board",
+  accuplacer: "accuplacer college placement test math arithmetic algebra reading writing community college next generation college board",
   security: "security guard card license unarmed guard officer test pre-assignment",
   lifeguard: "lifeguard certification pool waterfront red cross ymca written exam",
   pnc: "property casualty insurance license p&c producer agent exam homeowners auto commercial",
@@ -510,10 +510,10 @@ const SEARCH_ALIASES: Record<string, string> = {
   hkdrive: "hong kong driving test hk driving test written test hong kong driving theory test transport department written test part a test road users code test hk learner driver test private car written test hong kong driving licence test td written test",
   iedtt: "driver theory test ireland irish theory test dtt rsa theory test rules of the road ireland learner permit test ndls theory test ireland practice prometric theorytest.ie",
   faapvt: "private pilot ppl written knowledge test par faa airplane student pilot ground school checkride acs sectional",
-  psat: "psat psat nmsqt psat 10 psat/nmsqt national merit scholarship qualifying test selection index semifinalist college board bluebook digital psat 10th grade 11th grade junior",
+  psat: "psat psat nmsqt math reading writing psat 10 psat/nmsqt national merit scholarship qualifying test selection index semifinalist college board bluebook digital psat 10th grade 11th grade junior",
   praxis: "praxis core praxis 1 ppst core academic skills for educators 5713 5723 5733 5752 teacher certification teacher education program admission ets reading writing math",
-  gre: "gre general test graduate record examination ets graduate school masters phd admissions verbal reasoning quantitative reasoning quant text completion sentence equivalence quantitative comparison shorter gre",
-  gmat: "gmat focus edition gmac mba business school graduate management admission test data insights data sufficiency critical reasoning quant verbal 805",
+  gre: "gre general test math graduate record examination ets graduate school masters phd admissions verbal reasoning quantitative reasoning quant text completion sentence equivalence quantitative comparison shorter gre",
+  gmat: "gmat focus edition math gmac mba business school graduate management admission test data insights data sufficiency critical reasoning quant verbal 805",
   netplus: "comptia network plus network+ n10-009 n10 009 net+ networking certification subnetting osi ports",
   cissp: "cissp isc2 isc² certified information systems security professional cybersecurity security manager cat exam eight domains cism",
   itil: "itil itil4 itil 4 foundation itil v4 itil v5 itil version 5 peoplecert axelos it service management itsm service desk incident problem change management certification",
@@ -587,6 +587,11 @@ const SEARCH_ALIASES: Record<string, string> = {
 };
 
 /** Everything a test can be found by (names, org, blurb, aliases), lowercased. */
+/** The extra search words for a test (empty when it has none). */
+export function searchAliases(id: string): string {
+  return SEARCH_ALIASES[id] ?? "";
+}
+
 export function haystack(t: TestCatalogEntry): string {
   return [t.shortName, t.name, t.nativeName ?? "", t.nativeShortName ?? "", t.org, t.blurb, SEARCH_ALIASES[t.id] ?? ""].join(" ").toLowerCase();
 }

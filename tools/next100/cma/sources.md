@@ -58,3 +58,12 @@ is what the landing and facts use.
 
 All 200 items are original, written for Tigertest from the outline above. None is copied from AAMA
 practice exams or any commercial review.
+
+## Review (2026-11-03)
+
+- AAMA certification page re-read (https://www.aama-ntl.org/certification): "The minimum passing
+  score (MPS) is 405" on the 200 to 800 scale. Confirmed.
+- Replaced after the cross-bank check: CMA-INT-025 (crutch pad 2 inches below the axilla, same fact
+  as nptepta PTA-EQP-003; now elbow flexion at the handgrips), CMA-LAB-004 (hematocrit definition,
+  same as phlebotomy PHL-SPEC-016; now a raised WBC count) and CMA-LAB-010 (centrifuge balance tube,
+  same as phlebotomy PHL-PROC-001; now external controls on a new lot of a CLIA-waived kit).

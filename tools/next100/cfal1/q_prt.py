@@ -29,7 +29,7 @@ Q = [
  "VaR is a minimum loss at a given probability: on 5% of days losses should be 2 million or more. It says nothing about how large losses in the tail can be."),
 ("An investor believes she can pick winning stocks far better than her record shows. This is:",
  "Overconfidence bias", ["Loss aversion bias", "Status quo bias", "Endowment bias"],
- "Overconfidence, a cognitive bias, leads investors to overrate their skill and trade too much. Loss aversion, status quo and endowment are emotional biases."),
+ "Overconfidence leads investors to overrate their skill and trade too much; CFA Institute classes it as an emotional bias with cognitive aspects. Loss aversion is reluctance to realize losses, status quo bias is a preference for doing nothing, and endowment bias values what one already owns more highly."),
 ("In a defined benefit pension plan, the investment risk is borne mainly by the:",
  "Plan sponsor", ["Plan participant", "Plan's custodian", "Government regulator"],
  "The employer promises a set benefit, so poor returns must be made up with higher contributions. In a defined contribution plan the participant bears the risk."),

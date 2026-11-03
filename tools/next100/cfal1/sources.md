@@ -56,7 +56,8 @@ be 15-20%; the landing says so.
   Standards of Practice Handbook; GIPS (firm-wide compliance, composites of all actual fee-paying
   discretionary portfolios).
 - IFRS: IAS 2 (inventories, LIFO prohibited, write-down reversals), IAS 7 (interest and dividend
-  classification), IAS 16 (revaluation model), IAS 36 (recoverable amount, goodwill not amortised),
+  classification; the IFRS 18 amendments to IAS 7, periods from 1 January 2027, remove most of the
+  choices, so the bank asks the stable US GAAP rule and notes the IFRS change in explanations), IAS 16 (revaluation model), IAS 36 (recoverable amount, goodwill not amortised),
   IAS 38 (development costs), IFRS 16 (lessee single model). US GAAP contrasts only where IFRS differs.
 - Standard formulas (time value of money, Bayes, portfolio variance, CAPM, WACC, Gordon growth,
   justified P/E, duration and convexity, put-call parity, binomial pricing, Treynor, M-squared,
@@ -68,6 +69,15 @@ be 15-20%; the landing says so.
   the 2027 outline, plus seven topic training sets. 70% is Tigertest's readiness line, not an
   official pass mark.
 - Item sets and vignettes are a Level II and III format; Level I is stand-alone items, as here.
+
+## Review (2026-11-03)
+- Re-fetched https://www.cfainstitute.org/programs/cfa-program/candidate-resources/level-i-exam on
+  2026-11-03: it shows both the 2026 and the 2027 Level I weight tables as above, 180 questions in two
+  sessions of 90, 135 minutes each. Some prep sites (AnalystPrep, UWorld) still say the weights did not
+  change; the official page and 300hours confirm they did.
+- Reviewer also compared against `data/acca-fa-questions.json` and `data/cpa-aud-questions.json` and
+  rewrote items that shared a fact and answer with ACCA FA (LIFO ban, IAS 2 measurement), Series 7
+  (MBS prepayment risk) and the SIE (premium bond coupon vs YTM, a 50 call at 3).
 
 ## Duplicate checks
 Grepped `data/series-65-questions.json`, `data/series-7-questions.json`, `data/sie-questions.json`

@@ -900,28 +900,28 @@
     "state": "ALL",
     "questionId": "CFAL1-FSA-001",
     "category": "cfal1Fsa",
-    "question": "Under IFRS, interest paid by a company may be classified in the statement of cash flows as:",
-    "optionA": "Operating or financing",
-    "optionB": "Operating only",
-    "optionC": "Financing only",
-    "optionD": "Investing or financing",
+    "question": "Under US GAAP, interest paid on a company's debt is classified in the statement of cash flows as:",
+    "optionA": "Operating activities",
+    "optionB": "Financing activities",
+    "optionC": "Investing activities",
+    "optionD": "Operating or financing, by choice",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "IFRS lets a company choose to report interest paid in operating or financing activities, applied consistently. US GAAP requires it in operating activities."
+    "explanation": "US GAAP puts interest paid in operating activities. IAS 7 has let IFRS reporters choose operating or financing, and the IAS 7 amendments that come with IFRS 18 (periods from 1 January 2027) put it in financing for most companies, so check the basis before comparing cash flow from operations."
   },
   {
     "type": "CFAL1",
     "state": "ALL",
     "questionId": "CFAL1-FSA-002",
     "category": "cfal1Fsa",
-    "question": "Under IFRS, dividends received by a company may be classified in the statement of cash flows as:",
-    "optionA": "Financing only",
-    "optionB": "Operating or investing",
-    "optionC": "Investing only",
-    "optionD": "Operating or financing",
+    "question": "Under US GAAP, dividends a company receives from its investments are classified in the statement of cash flows as:",
+    "optionA": "Investing activities",
+    "optionB": "Operating activities",
+    "optionC": "Financing activities",
+    "optionD": "Operating or investing, by choice",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "IFRS allows dividends and interest received in operating or investing activities. Under US GAAP both are operating cash flows."
+    "explanation": "US GAAP treats dividends and interest received as operating cash flows. IAS 7 has allowed IFRS reporters to show them in operating or investing activities, and with IFRS 18 (from 2027) most companies show them in investing."
   },
   {
     "type": "CFAL1",
@@ -942,14 +942,14 @@
     "state": "ALL",
     "questionId": "CFAL1-FSA-004",
     "category": "cfal1Fsa",
-    "question": "Which inventory cost formula is prohibited under IFRS?",
-    "optionA": "FIFO",
-    "optionB": "Weighted average cost",
-    "optionC": "Specific identification",
-    "optionD": "LIFO",
+    "question": "A US GAAP company reports LIFO ending inventory of 260 and a LIFO reserve of 40. To compare it with a FIFO company, its ending inventory restated to FIFO is:",
+    "optionA": "220",
+    "optionB": "260",
+    "optionC": "340",
+    "optionD": "300",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "IFRS bans last-in, first-out. US GAAP still permits LIFO, which is why LIFO reserve adjustments matter when comparing companies."
+    "explanation": "FIFO inventory = LIFO inventory + LIFO reserve = 260 + 40 = 300. Subtracting the reserve gives 220, and 340 adds it twice. IFRS prohibits LIFO, so this adjustment is also needed to compare a LIFO company with an IFRS reporter."
   },
   {
     "type": "CFAL1",
@@ -1152,14 +1152,14 @@
     "state": "ALL",
     "questionId": "CFAL1-FSA-019",
     "category": "cfal1Fsa",
-    "question": "Under IFRS, inventories are measured at the:",
-    "optionA": "Higher of cost and fair value",
-    "optionB": "Lower of cost and replacement cost",
+    "question": "Under US GAAP, inventory measured using FIFO or weighted average cost is carried at the:",
+    "optionA": "Lower of cost or market",
+    "optionB": "Higher of cost and fair value",
     "optionC": "Lower of cost and net realizable value",
-    "optionD": "Fair value through profit or loss",
+    "optionD": "Current replacement cost",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "IAS 2 carries inventory at the lower of cost and NRV for every cost formula. Replacement cost enters only under the US GAAP lower of cost or market rule for LIFO and retail."
+    "explanation": "Since ASU 2015-11, US GAAP measures FIFO and average-cost inventory at the lower of cost and NRV, as IFRS does for all inventory. The older lower of cost or market rule, which uses replacement cost, remains only for LIFO and the retail method."
   },
   {
     "type": "CFAL1",
@@ -1502,7 +1502,7 @@
     "state": "ALL",
     "questionId": "CFAL1-EQT-004",
     "category": "cfal1Equity",
-    "question": "In a price-weighted index, which stock's price change has the greatest effect on the index value?",
+    "question": "In a price-weighted index, the same percentage price change has the greatest effect on the index value when it happens to:",
     "optionA": "The largest company by value",
     "optionB": "The most heavily traded stock",
     "optionC": "The lowest-priced stock",
@@ -1544,14 +1544,14 @@
     "state": "ALL",
     "questionId": "CFAL1-EQT-007",
     "category": "cfal1Equity",
-    "question": "If markets are semi-strong form efficient, which approach should fail to earn consistent abnormal returns?",
-    "optionA": "Trading on material inside information",
-    "optionB": "Holding a diversified index fund",
-    "optionC": "Analysis of public financial statements",
-    "optionD": "Accepting higher systematic risk",
+    "question": "If markets are semi-strong form efficient but not strong form efficient, which approach could still earn abnormal returns?",
+    "optionA": "Analysis of public financial statements",
+    "optionB": "Technical analysis of past prices",
+    "optionC": "Trading on material inside information",
+    "optionD": "Screening stocks on published P/E ratios",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Semi-strong efficiency means prices reflect all public information, so analysing published statements cannot reliably beat the market. Inside information is ruled out only by strong-form efficiency."
+    "explanation": "Semi-strong efficiency means prices already reflect all public information, including past prices and published statements, so none of those can reliably beat the market. Only private information is not yet in prices; strong-form efficiency would rule that out too, and trading on it is illegal in most markets."
   },
   {
     "type": "CFAL1",
@@ -1810,14 +1810,14 @@
     "state": "ALL",
     "questionId": "CFAL1-FIX-002",
     "category": "cfal1Fixed",
-    "question": "A bond trades at a premium to par. Its coupon rate is:",
-    "optionA": "Below its yield to maturity",
-    "optionB": "Above its yield to maturity",
-    "optionC": "Equal to its yield to maturity",
-    "optionD": "Equal to its current yield",
+    "question": "A fixed-rate bond trades at a premium to par. If its yield to maturity stays the same, as the bond approaches maturity its price will:",
+    "optionA": "Rise further above par",
+    "optionB": "Fall toward par",
+    "optionC": "Stay at today's price",
+    "optionD": "Fall below par, then recover",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Investors pay more than par when the coupon is higher than the market yield. As the bond nears maturity its price pulls back toward par."
+    "explanation": "With an unchanged yield, a premium bond's price moves along the constant-yield path toward par (the pull to par), reaching par at maturity. A discount bond's price rises toward par in the same way."
   },
   {
     "type": "CFAL1",
@@ -1992,14 +1992,14 @@
     "state": "ALL",
     "questionId": "CFAL1-FIX-015",
     "category": "cfal1Fixed",
-    "question": "When interest rates fall sharply, holders of mortgage pass-through securities face:",
-    "optionA": "Extension risk",
-    "optionB": "Inflation risk",
-    "optionC": "Contraction risk",
-    "optionD": "Currency risk",
+    "question": "A mortgage pool is assumed to prepay at a conditional prepayment rate (CPR) of 6% a year. The single monthly mortality rate (SMM) is closest to:",
+    "optionA": "0.500%",
+    "optionB": "0.600%",
+    "optionC": "0.514%",
+    "optionD": "0.050%",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Borrowers refinance when rates fall, so principal comes back early and must be reinvested at lower rates. Extension risk is the opposite, when rates rise and prepayments slow."
+    "explanation": "SMM = 1 - (1 - CPR)^(1/12) = 1 - 0.94^(1/12) = 0.514%. Dividing 6% by 12 gives 0.500%, which ignores that each month's prepayment applies to a smaller remaining balance."
   },
   {
     "type": "CFAL1",
@@ -2146,14 +2146,14 @@
     "state": "ALL",
     "questionId": "CFAL1-DER-002",
     "category": "cfal1Deriv",
-    "question": "An investor buys a call with a strike of 50 for a premium of 3. At expiry the stock is at 58. Her profit per share is:",
-    "optionA": "8",
-    "optionB": "5",
-    "optionC": "11",
-    "optionD": "3",
+    "question": "An investor buys a call with a strike of 45 for a premium of 2.50. At expiry the stock is at 51. Her profit per share is:",
+    "optionA": "6.00",
+    "optionB": "3.50",
+    "optionC": "8.50",
+    "optionD": "2.50",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Payoff = max(0, 58 - 50) = 8, less the premium of 3, gives a profit of 5. 8 is the payoff before the premium."
+    "explanation": "Payoff = max(0, 51 - 45) = 6.00, less the premium of 2.50, gives a profit of 3.50. 6.00 is the payoff before the premium, and 8.50 adds the premium instead of subtracting it."
   },
   {
     "type": "CFAL1",
@@ -2713,7 +2713,7 @@
     "optionD": "Endowment bias",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Overconfidence, a cognitive bias, leads investors to overrate their skill and trade too much. Loss aversion, status quo and endowment are emotional biases."
+    "explanation": "Overconfidence leads investors to overrate their skill and trade too much; CFA Institute classes it as an emotional bias with cognitive aspects. Loss aversion is reluctance to realize losses, status quo bias is a preference for doing nothing, and endowment bias values what one already owns more highly."
   },
   {
     "type": "CFAL1",

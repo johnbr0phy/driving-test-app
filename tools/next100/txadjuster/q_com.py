@@ -1,7 +1,7 @@
 CAT = "txadjCommercial"; SEG = "COM"
 Q = [
 ("A tenant restaurant installed a walk-in cooler room it may not legally remove at lease end. Under the Building and Personal Property form, the tenant's interest is covered as:",
- "Improvements and betterments", ["The landlord's building", "Property of others", "Fixtures under Building"],
+ "Improvements and betterments", ["The landlord's building", "Property of others", "Fixtures under Building coverage"],
  "Your business personal property includes the tenant's use interest in improvements and betterments it paid for and cannot legally remove."),
 ("Under the Building and Personal Property form, covered property moved to another place to protect it from a covered peril is covered there for up to:",
  "30 days", ["Five days", "10 days", "60 days"],
@@ -10,7 +10,7 @@ Q = [
  "Equipment breakdown", ["Causes of loss special form", "Business income", "A contractor's floater"],
  "Commercial property forms exclude mechanical breakdown and electrical arcing. Equipment breakdown (boiler and machinery) coverage pays for sudden breakdown of covered equipment."),
 ("An equipment breakdown inspector finds a boiler in a dangerous condition. Under the policy, the insurer may:",
- "Suspend coverage on the boiler", ["Cancel the entire policy now", "Raise the premium midterm", "Order the business closed"],
+ "Suspend coverage on the boiler", ["Cancel the entire policy at once", "Raise the premium midterm", "Order the business closed"],
  "The suspension condition lets the insurer immediately suspend coverage on an object found in or exposed to a dangerous condition by delivering written notice. Other objects stay covered."),
 ("Which item is an object of the kind an equipment breakdown policy is designed to cover?",
  "A steam boiler", ["A building's foundation", "A fleet of delivery vans", "Inventory on the shelves"],
@@ -37,7 +37,7 @@ Q = [
  "Inside the Premises", ["Outside the Premises", "Employee Theft", "Funds Transfer Fraud"],
  "Inside the Premises, theft of money and securities, covers money and securities inside the premises or a banking premises, including safe burglary."),
 ("Under the commercial crime forms, coverage for a particular employee ends as soon as the insured, apart from anyone in collusion, learns that the employee:",
- "Committed a dishonest act", ["Missed a cash count", "Moved to another branch", "Took unpaid leave"],
+ "Committed a dishonest act", ["Missed a cash count", "Moved to another branch office", "Took unpaid leave"],
  "Employee theft coverage on an employee terminates immediately when the insured or an officer not in collusion learns of any theft or dishonest act by that employee, before or during the policy."),
 ("A fraudster sends the insured's bank an instruction posing as the insured, and the bank moves money out of the insured's account. The crime coverage for this is:",
  "Funds Transfer Fraud", ["Forgery or Alteration", "Employee Theft", "Outside the Premises"],

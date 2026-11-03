@@ -7,7 +7,7 @@ Q = [
  "30 days", ["15 days", "45 days", "60 days"],
  "Insurance Code 542.056(b) allows 30 days, instead of 15 business days, when the insurer reasonably believes the loss resulted from arson."),
 ("After notifying a claimant that a claim will be paid, a Texas insurer that is not a surplus lines insurer must pay within:",
- "Five business days", ["15 business days", "10 calendar days", "30 calendar days"],
+ "Five business days", ["15 business days", "10 calendar days", "Twenty business days"],
  "Insurance Code 542.057 requires payment no later than the fifth business day after notice of acceptance, or after the claimant performs any condition of payment."),
 ("After a weather catastrophe or major natural disaster declared by the commissioner, Texas prompt payment deadlines are extended by:",
  "An extra 15 days", ["An extra 30 days", "An extra 45 days", "An extra five days"],

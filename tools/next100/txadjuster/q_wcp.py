@@ -34,6 +34,6 @@ Q = [
  "15 days", ["Seven days", "30 days", "60 days"],
  "Labor Code 409.021 requires the carrier to begin benefits or give written notice of refusal within 15 days. A refusal must state the grounds, which then limit its later defense."),
 ("Which worker is generally not subject to the Texas workers' compensation law?",
- "A domestic worker in a home", ["A retail store clerk", "A construction laborer", "An office receptionist"],
+ "A domestic worker in a home", ["A retail store clerk", "A construction site laborer", "An office receptionist"],
  "Labor Code 406.091 excludes domestic and casual workers at a personal residence, most farm and ranch employees, and workers covered by a federal system. An employer may elect to cover some of them."),
 ]

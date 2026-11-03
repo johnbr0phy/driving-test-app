@@ -159,7 +159,8 @@ KNOWN_BANKS = {
     "ham-questions.json": dict(rows=397, max_over=17,
         why="the official NCVEC 2026-2030 pool; its wording is the FCC's and cannot be shortened"),
     "de-theorie-questions.json": dict(rows=210, why="seven 30-question tests"),
-    "cdl-questions.json": dict(rows=600, why="six tests from a 600-question bank"),
+    "cdl-questions.json": dict(rows=600, max_avg=43,
+        why="six tests from a 600-question bank; long-form options average 43 chars after the Nov 2026 key-length fix"),
 }
 # State versions (real estate, life & health, P&C): one full-length test per state, each row
 # carrying the state code and the national question it came from (sourceQuestionId).
@@ -318,7 +319,7 @@ def main() -> int:
         errs.append(f"key is the longest option in {long_share:.0%} of items (max {args.max_key_longest:.0%})")
     # Floor is low on purpose: vocabulary and numeric banks (ASVAB, HESI) legitimately
     # run short. The floor only catches a degenerate bank, not a terse one.
-    lo, hi = 12 * scale, 42 * scale
+    lo, hi = 12 * scale, known.get("max_avg", 42) * scale
     if not lo <= avg_opt <= hi:
         errs.append(f"average option length {avg_opt:.0f} chars (want {lo:.0f}-{hi:.0f})")
     max_over = known.get("max_over", 5)

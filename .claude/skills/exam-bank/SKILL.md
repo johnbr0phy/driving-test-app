@@ -126,9 +126,12 @@ python3 -I .claude/skills/exam-bank/scripts/validate_bank.py data/<file>.json \
 ```
 
 It checks the schema, pools, ID sequence, key/index agreement, letter balance, banned phrases,
-duplicates, and the length rules above, and exits non-zero on failure. Fix until it prints PASS.
-Every bank written in house style passes it as of October 2026; the two that do not are the ham
-pool (official FCC text, so its long options are kept verbatim) and the original CDL bank.
+duplicates, stems ending in `?` or `:`, and the length rules above, and exits non-zero on failure.
+Fix until it prints PASS. Banks that differ from a new 200-question bank on purpose (HTL's 214
+interleaved rows, the official ham pool, CDL's 600, the German 210) are listed with the reason in
+`KNOWN_BANKS`, and state versions (`real-estate-tx-questions.json` and the like) are recognised by
+file name: any length, their state code, `sourceQuestionId`, unique rather than sequential ids.
+Add a bank to `KNOWN_BANKS` only for a real design reason, never to hide a quality failure.
 Then have a second pass read every item for factual accuracy and second-defensible-answer
 problems: spawn a reviewer agent with the bank and the source outline and ask for a JSON list of
 `questionId`, severity (wrong-key, factual, ambiguous, weak), issue, fix. Without an Agent tool,

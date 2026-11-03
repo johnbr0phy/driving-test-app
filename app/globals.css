@@ -6146,6 +6146,15 @@ html.native-app body {
 .dark :where(a, button, input, select, textarea, [tabindex]):focus-visible {
   outline-color: #93c5fd !important;
 }
+/* Text fields match :focus-visible on every tap, so a ring floating 3px outside
+   them lands on whatever sits next to them (a results list, a label). Draw it
+   inside the field instead: still visible, never over the neighbours. */
+:where(input:not([type="button"], [type="submit"], [type="reset"], [type="checkbox"], [type="radio"], [type="range"], [type="color"], [type="file"]), textarea, select):focus-visible {
+  outline-width: 2px !important;
+  outline-offset: -2px;
+}
+/* A field inside a box that shows focus itself (focus-within border). */
+.focus-in-parent:focus-visible { outline: none !important; }
 /* Dashboard row wrappers are tabIndex=-1 focus targets, never tab stops: a tap
    focuses them, so they draw their own ring only when returned to. */
 .progress-row:focus-visible { outline: none !important; }

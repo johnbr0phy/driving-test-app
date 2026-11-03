@@ -27822,7 +27822,7 @@
     "state": "VT",
     "questionId": "VT-028",
     "category": "stateUnique",
-    "question": "No debe hacer un cambio de sentido en Vermont a menos que pueda ser visto desde qué distancia en cada dirección.",
+    "question": "En Vermont, ¿desde qué distancia en cada dirección deben poder verlo para que pueda hacer un cambio de sentido?",
     "optionA": "200 pies",
     "optionB": "300 pies",
     "optionC": "500 pies",

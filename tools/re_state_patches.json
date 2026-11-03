@@ -1,0 +1,407 @@
+{
+ "_note": "Applied after the build by tools/build_re_state_banks.py (Nov 2026): length-tell fixes and NJ letter balance. Keys keep their meaning; a correctAnswer entry moves the key to that letter.",
+ "CA": {
+  "RECA-DISC-003": {
+   "optionA": "Have the owner tear it out right away and bag it for regular household trash",
+   "optionB": "Sand the insulation smooth and repaint it with ordinary latex paint",
+   "optionC": "Vent the basement air to the outdoors with a fan running around the clock",
+   "optionD": "Leave it undisturbed and call an asbestos professional before any repair"
+  },
+  "RECA-CA-CID-EV-001": {
+   "optionA": "Any total prohibition is valid if it was adopted before the owner bought the unit",
+   "optionB": "EV charging installations are exempt from all safety, permit, and insurance requirements",
+   "optionC": "The prohibition is void; reasonable restrictions and safety rules still apply",
+   "optionD": "Only stations installed inside the owner's dwelling unit receive statutory protection"
+  },
+  "RECA-ALL-RG-TITLE-001": {
+   "optionB": "The policy eliminates the ownership dispute as a matter of law once it is issued",
+   "optionC": "Review title and policy separately; willingness to insure does not prove marketable title",
+   "optionD": "Any recorded title defect legally prevents an insurer from offering any coverage on the property"
+  },
+  "RECA-CA-R4-PROBATE-002": {
+   "optionB": "Only the original buyer may bid at the hearing, and only to match its own price",
+   "optionC": "The buyer becomes the owner when the representative signs the acceptance",
+   "optionD": "No; qualifying overbids may still be considered at the confirmation hearing"
+  },
+  "RECA-CA-HAZARD-001": {
+   "optionA": "They estimate hazard areas but do not predict whether a property will suffer a disaster",
+   "optionB": "They guarantee that a property outside every mapped zone is free of any natural hazard risk",
+   "optionC": "They replace every need for a geologist, engineer, or other professional hazard advice",
+   "optionD": "They guarantee that earthquake and fire insurance will be available at standard rates"
+  },
+  "RECA-CA-R3-FAIR-003": {
+   "optionA": "The chance to pay a nonrefundable fee to bypass all credit and income screening",
+   "optionB": "A reasonable chance to show ability to pay the rent share with other verifiable evidence",
+   "optionC": "Only the chance to appeal to the credit bureau within 30 days after a denial",
+   "optionD": "Only a choice between two credit-report companies selected in advance by the housing provider"
+  },
+  "RECA-CA-R3-RECOVERY-001": {
+   "optionA": "A drop in a property's market value after closing with no wrongdoing by any licensee",
+   "optionB": "An unpaid fraud award against a licensee after required collection efforts fail",
+   "optionC": "Any ordinary repair expense the buyer discovers after closing, such as a roof leak",
+   "optionD": "A commission disagreement between two brokers with no fraud or conversion finding"
+  },
+  "RECA-CA-R3-CE-001": {
+   "optionA": "At least 18 consumer protection hours plus required courses like implicit bias and fair housing",
+   "optionB": "Only consumer-service courses of any kind, as long as their combined total reaches 45 hours",
+   "optionC": "A single nine-hour survey course as the only subject requirement for a first renewal",
+   "optionD": "Only an examination-preparation course plus one four-hour ethics course of the licensee's choice"
+  },
+  "RECA-CA-R3-DRE-002": {
+   "optionA": "A proven licensing violation automatically cancels the purchase contract and refunds the deposit",
+   "optionC": "DRE can investigate licensing violations but cannot award damages or cancel contracts"
+  },
+  "RECA-CA-R4-ADVANCE-MODIFICATION-STAGES-001": {
+   "optionA": "Separate stage labels always permit upfront compensation for each finished stage",
+   "optionB": "Borrower consent in a signed fee agreement waives the restriction",
+   "optionC": "The fee is lawful if it is held in the licensee's personal savings account until the loan closes",
+   "optionD": "No fee may be demanded until every promised modification service is fully performed"
+  },
+  "RECA-CA-CID-SHORTTERM-001": {
+   "optionB": "Yes, unless every owner votes for the ban at a membership meeting",
+   "optionC": "Only if the home is a condominium rather than a planned development",
+   "optionD": "No; it expressly permits banning rentals of 30 days or less"
+  },
+  "RECA-CA-CID-RENTALCAP-001": {
+   "optionA": "Rental caps may not go below 25% of separate interests",
+   "optionD": "The minimum is 50% of separate interests in every development"
+  },
+  "RECA-CA-CID-COMMONAREA-001": {
+   "optionA": "A majority of board members alone, at an open board meeting",
+   "optionB": "Affirmative votes of at least 67% of the separate interests",
+   "optionC": "Unanimous approval of all owners in every case",
+   "optionD": "At least 25% of members attending a duly noticed meeting"
+  },
+  "RECA-ALL-RG-TRUST-001": {
+   "optionA": "Income entitlement automatically makes Sam a co-trustee with full signing power",
+   "optionB": "Every trust beneficiary may convey any trust asset on the trust's behalf",
+   "optionC": "Identify the authorized trustee and review the trust's authority to convey",
+   "optionD": "A trustee may never sell real property held in a trust"
+  },
+  "RECA-CA-BUYER-004": {
+   "optionA": "Yes, any showing to an unrepresented visitor automatically creates buyer agency",
+   "optionB": "No; showing the home for the seller alone does not create buyer agency",
+   "optionC": "Yes, unless the visitor signs a written waiver of representation",
+   "optionD": "No, but only if the visitor already holds a real estate license"
+  },
+  "RECA-CA-BUYER-003": {
+   "optionA": "Automatic renewal is valid if each renewal term is only 30 days",
+   "optionB": "Automatic renewal is valid once the buyer has made a first purchase offer",
+   "optionC": "Automatic renewal is valid if the buyer initials the clause and receives a copy"
+  },
+  "RECA-CA-BUYER-002": {
+   "optionA": "Signing is practicable only after the seller accepts the buyer's written offer",
+   "optionB": "A rebuttable presumption that signing before the showing is practicable",
+   "optionC": "The agreement is required only after escrow closes and funds are paid",
+   "optionD": "No agreement is needed for an in-person showing of a listed home"
+  },
+  "RECA-CA-COMP-001": {
+   "optionA": "Payment only from the broker the salesperson is then licensed under"
+  },
+  "RECA-CA-AGENCY-002": {
+   "optionB": "Treat the refusal as permission to omit all other agency disclosures",
+   "optionC": "Wait until closing to document the refusal in the file",
+   "optionD": "Prepare, sign, and date a written declaration of the refusal"
+  },
+  "RECA-CA-R4-INTEREST-001": {
+   "optionA": "Only disclosure that the broker holds an active real estate license",
+   "optionB": "Written disclosure of the full profit and the client's written approval of it",
+   "optionC": "Only an oral promise to charge no commission on the sale",
+   "optionD": "No disclosure at all, because an option always removes the broker's fiduciary duties"
+  },
+  "RECA-VAL-014": {
+   "optionB": "Define the appraisal problem and its intended use",
+   "optionD": "Collect fresh data on recent comparable sales nearby"
+  },
+  "RECA-ALL-RG-VALUE-001": {
+   "optionA": "An AVM is always controlling because it analyzes more sales by computer",
+   "optionB": "An appraisal guarantees the next sale price within a few percent",
+   "optionC": "Average the two estimates and treat the result as the legally binding value of the house",
+   "optionD": "Compare each method's data, date, and assumptions; neither is a guaranteed price"
+  },
+  "RECA-CA-R4-MLO-PROCESSOR-CONTRACTOR-001": {
+   "optionA": "The contractor is automatically exempt because all of its loan work is clerical",
+   "optionC": "The contractor must hold its own MLO endorsement for this processing work"
+  },
+  "RECA-CA-R4-MLO-DRE-SPONSOR-001": {
+   "optionA": "Only the employing broker needs an MLO endorsement for the salesperson's acts",
+   "optionB": "Both the salesperson and the employing broker must hold MLO endorsements",
+   "optionC": "Only an NMLS identification number, with no DRE endorsement, is needed"
+  },
+  "RECA-CA-R4-MLO-REGISTERED-DEPOSITORY-001": {
+   "optionA": "A registered originator employed by a covered depository institution, acting as such",
+   "optionB": "Any independent finder who hands borrowers a business card and refers loans",
+   "optionC": "Any originator whose borrower signs a written waiver of state licensing",
+   "optionD": "An unregistered originator working only for an unlicensed private lender in the state"
+  },
+  "RECA-ALL-RG-SHORT-001": {
+   "optionA": "Treat the first lender's approval as consent for every lender on the property",
+   "optionC": "Assume the buyer automatically takes over the shortage owed to the second lender",
+   "optionD": "Resolve the second lender's approval and release before treating it as ready"
+  },
+  "RECA-CA-R5-ASSIST-AD-PREPUBLICATION-001": {
+   "optionA": "Publish now and request licensee review afterward",
+   "optionB": "Publish if the seller has approved the wording",
+   "optionD": "Publish if the assistant avoids signing the advertisement"
+  },
+  "RECA-CA-R5-CE-EXEMPT-RESTRICTED-001": {
+   "optionA": "The restriction defeats the required good-standing condition",
+   "optionB": "Every licensee over 70 is exempt regardless of license status"
+  },
+  "RECA-CON-017": {
+   "optionA": "Valid only if a notary witnesses the electronic signing session",
+   "optionB": "Valid only for leases of real property under one year",
+   "optionC": "Legal effect cannot be denied solely because it is electronic",
+   "optionD": "Effective only after the related deed is recorded"
+  },
+  "RECA-CA-R3-DRE-001": {
+   "optionB": "DRE can investigate unlicensed persons doing acts that require a license",
+   "optionC": "Only a trade association or local board of Realtors may investigate",
+   "optionD": "DRE gains jurisdiction only after the person applies for a real estate license"
+  },
+  "RECA-CA-R3-RENEW-002": {
+   "optionD": "May continue under the existing license unless DRE gives notice otherwise"
+  },
+  "RECA-CA-R3-FAIR-002": {
+   "optionA": "No; extra charges solely because of the subsidy remain prohibited",
+   "optionB": "Yes; every deposit at or below the cap is lawful",
+   "optionC": "Yes, if the manager labels the extra amount an administrative reserve",
+   "optionD": "Only if the tenant offers a co-signer with good credit"
+  },
+  "RECA-CA-R3-RECOVERY-002": {
+   "optionC": "Make reasonable asset searches and collection efforts first"
+  },
+  "RECA-CA-INSPECT-001": {
+   "optionA": "A destructive inspection that opens all walls and ceilings",
+   "optionB": "A competent, diligent visual inspection, disclosing material facts it reveals",
+   "optionC": "A licensed structural engineer's written certification of the foundation and framing",
+   "optionD": "Only a review of the seller's completed Transfer Disclosure Statement"
+  },
+  "RECA-CA-R3-ENTRY-001": {
+   "optionA": "Any three real estate continuing-education courses approved by DRE for renewal",
+   "optionB": "Real Estate Principles, Real Estate Practice, and one approved elective",
+   "optionC": "Real Estate Principles alone plus two years of sales experience",
+   "optionD": "Three approved electives without Principles or Practice"
+  }
+ },
+ "NJ": {
+  "RENJ-NJ-RG-TRUST-002": {
+   "optionD": "Whether the trust lets one co-trustee sell alone",
+   "optionA": "That the signer is also a beneficiary of the trust",
+   "optionB": "That the signer is the older of the two trustees"
+  },
+  "RENJ-ALL-RG-TRUST-001": {
+   "optionC": "Confirm the trustee's authority under the trust",
+   "optionD": "A trustee may never sell real property held in trust"
+  },
+  "RENJ-NJ-RG-CONDO-001": {
+   "optionC": "Check the master deed, bylaws, rules and approval needs",
+   "optionA": "Rely only on the municipal permit and building code"
+  },
+  "RENJ-NJ-RG-VALUE-002": {
+   "optionB": "Remove the small footnote so the cover and the report no longer conflict",
+   "optionA": "No correction is needed if the seller paid nothing for it",
+   "optionC": "Keep the appraisal label, since comparable sales were used in the report",
+   "optionD": "Call it a CMA, with the non-appraisal notice in equal or larger print",
+   "correctAnswer": "D"
+  },
+  "RENJ-ALL-RG-VALUE-001": {
+   "optionD": "Compare their data, timing and purpose; neither guarantees a price",
+   "optionB": "An appraisal guarantees the next sale price of the house",
+   "optionC": "Average the two estimates and treat the result as legally binding on the owner"
+  },
+  "RENJ-SH-GAP-EQUITY-001": {
+   "optionC": "A home equity loan for the lump sum; a HELOC for repeated draws"
+  },
+  "RENJ-SH-GAP-FHA-001": {
+   "optionB": "A private lender makes it; FHA insurance reduces the lender's risk"
+  },
+  "RENJ-SH-GAP-BUILD-001": {
+   "optionB": "The draw schedule releases funds as work progresses"
+  },
+  "RENJ-SH-GAP-BRIDGE-002": {
+   "optionB": "A payoff or lender-approved plan before maturity",
+   "optionC": "The ongoing marketing period cancels the loan's interest"
+  },
+  "RENJ-SH-GAP-PROCESS-001": {
+   "optionB": "The required facts start the estimate; documents can come later"
+  },
+  "RENJ-SH-GAP-USDA-001": {
+   "optionD": "Applicant income, primary-residence use and lender checks",
+   "optionA": "Only whether the lot is zoned for growing crops",
+   "optionB": "Only whether the seller once financed it with a USDA loan",
+   "optionC": "Nothing else; the map listing guarantees the funding"
+  },
+  "RENJ-CON-017": {
+   "optionC": "Legal effect cannot be denied just because it is electronic",
+   "optionA": "Valid only if a notary watches the electronic signing in person",
+   "optionB": "Valid only for leases with terms under one year",
+   "optionD": "Effective only after the deed is recorded in the county"
+  },
+  "RENJ-CON-011": {
+   "optionD": "The buyer may raise duress to resist enforcement"
+  },
+  "RENJ-SH-GAP-LEASE-002": {
+   "optionB": "Rent payments did not satisfy the separate election notice"
+  },
+  "RENJ-SH-GAP-LEASE-001": {
+   "optionA": "A leaves the choice to buy with the tenant; B obligates a purchase"
+  },
+  "RENJ-SH-GAP-DOCS-001": {
+   "optionB": "The first adds to the agreement; the second changes a term"
+  },
+  "RENJ-NJ-RG-POA-001": {
+   "optionB": "No; durability keeps listed powers but adds no sale power"
+  },
+  "RENJ-NJ-RG-POA-003": {
+   "optionC": "Stop using it; verify the estate representative's authority",
+   "optionB": "Backdate the signature to the day before the principal died"
+  },
+  "RENJ-NJ-RG-POA-002": {
+   "optionD": "The trigger has not occurred, so it is not yet effective",
+   "optionA": "Travel out of state automatically activates the power",
+   "optionB": "Granting sale authority eliminates the trigger condition",
+   "optionC": "A notary can waive the incapacity trigger at signing"
+  },
+  "RENJ-DISC-012": {
+   "optionD": "A Phase II investigation with environmental sampling",
+   "optionA": "Immediate listing of the property as a Superfund site",
+   "optionB": "A wetlands delineation survey of the whole parcel",
+   "optionC": "Closing on schedule with no further environmental review"
+  },
+  "RENJ-DISC-011": {
+   "optionB": "A timely Phase I meeting all-appropriate-inquiries rules",
+   "optionA": "An extended-coverage owner's title policy for the industrial parcel",
+   "optionC": "A residential home warranty covering the buildings",
+   "optionD": "A short-term radon test of the main building"
+  },
+  "RENJ-ALL-RG-SCREEN-001": {
+   "optionC": "Adverse-action notice is required for that condition",
+   "optionB": "Only a complete denial of the application requires notice"
+  },
+  "RENJ-NJ-RG-PROBATE-002": {
+   "optionB": "Treat them separately; survivorship property skips probate"
+  },
+  "RENJ-ALL-RG-SHORT-001": {
+   "optionD": "Obtain the second lender's approval and release first",
+   "optionB": "Close now and tell the second lender afterward"
+  },
+  "RENJ-ALL-RG-TITLE-001": {
+   "optionC": "Insurability alone does not prove marketable title"
+  },
+  "RENJ-NJ-RG-LAD-001": {
+   "optionB": "Refuse the instruction and apply lawful rental criteria"
+  },
+  "RENJ-ALL-RG-ADA-002": {
+   "optionC": "Assess whether barrier removal is readily achievable"
+  },
+  "RENJ-ALL-RG-ONLINE-001": {
+   "optionC": "Make the disclosure clear on phones, or change or drop the claim",
+   "optionD": "Rely on the fact that phone users can call the office for details"
+  },
+  "RENJ-ALL-RG-WORKER-001": {
+   "optionA": "Self-employed treatment for federal tax purposes only"
+  },
+  "RENJ-ALL-RG-ADA-001": {
+   "optionB": "The rental office can be a Title III public accommodation"
+  },
+  "RENJ-NJ-SURRENDER-NOT-IMMUNITY-001": {
+   "optionA": "Surrender does not end REC jurisdiction over those charges"
+  },
+  "RENJ-NJ-REFERRAL-LICENSE-SERVICE-LIMIT-001": {
+   "optionC": "Refer the prospect through the broker's referral process"
+  },
+  "RENJ-NJ-ATTORNEY-REVIEW-EMAIL-001": {
+   "optionA": "Email is a permitted method for the disapproval notice"
+  },
+  "RENJ-NJ-RG-RTF-003": {
+   "optionD": "Only the deed to the devisee fits this exemption"
+  },
+  "RENJ-NJ-REBATE-AFFILIATE-CONDITION-001": {
+   "optionA": "No; a rebate cannot depend on using affiliate services"
+  },
+  "RENJ-NJ-REBATE-ELIGIBLE-RECIPIENT-001": {
+   "optionC": "A broker rebates part of its commission to the purchaser"
+  },
+  "RENJ-NJ-REBATE-LENDER-NONDISCLOSURE-001": {
+   "optionD": "Disclose the rebate to all parties, including the lender",
+   "optionB": "Describe it as a personal gift so no disclosure is needed"
+  },
+  "RENJ-NJ-REBATE-ADVERTISEMENT-TAX-NOTICE-001": {
+   "optionB": "Disclose tax duties and advise a tax professional, in text as large as the ad",
+   "optionA": "State that a commission rebate is always tax-free to the buyer",
+   "optionC": "Give the buyer tax information only after the closing",
+   "optionD": "Replace the notice with the broker's own opinion about the buyer's tax bracket"
+  },
+  "RENJ-NJ-BRANCH-OFFICE-SUPERVISOR-001": {
+   "optionA": "A licensed broker employed as broker-salesperson by the office's broker"
+  },
+  "RENJ-NJ-MOUNT-LAUREL-OBLIGATION-001": {
+   "optionC": "Towns must zone to allow their fair share of regional low- and moderate-income housing",
+   "optionB": "Every income-eligible applicant must receive a home in the municipality of choice",
+   "optionD": "Municipalities may satisfy it solely by prohibiting all new rental housing"
+  },
+  "RENJ-NJ-MOUNT-LAUREL-FUNDING-MISCONCEPTION-001": {
+   "optionD": "The zoning duty remains; the town need not generally build or fund the homes",
+   "optionB": "The Real Estate Commission must pay to construct the homes",
+   "optionC": "Only towns that already own suitable vacant land have any duty"
+  },
+  "RENJ-NJ-MOUNT-LAUREL-INCLUSIONARY-ZONING-001": {
+   "optionA": "Offer incentives such as higher density and reduced costs"
+  },
+  "RENJ-NJ-PROMOTION-COMPENSATION-TIMING-001": {
+   "optionB": "Give written disclosure no later than when the offer is extended"
+  },
+  "RENJ-NJ-SALES-PROMOTION-DRAWING-001": {
+   "optionD": "The drawing falls within the statutory prohibition"
+  },
+  "RENJ-NJ-OUT-OF-STATE-DEVELOPMENT-SCOPE-001": {
+   "optionC": "It can apply to offerings made in or into New Jersey"
+  },
+  "RENJ-NJ-GUARANTY-FUND-PURPOSE-001": {
+   "optionB": "Conversion of client funds in a brokerage transaction",
+   "optionA": "A home's market value falling sharply after the purchase"
+  },
+  "RENJ-NJ-RG-ENTITY-002": {
+   "optionC": "Verify authority to bind the LLC; membership is not enough"
+  },
+  "RENJ-ALL-RG-SOLE-001": {
+   "optionB": "Tenancy in common among Morgan, the tenant, and the lender",
+   "optionA": "Severalty, subject to the lease and the loan lien",
+   "correctAnswer": "A"
+  },
+  "RENJ-PRAC-001": {
+   "optionB": "Recommend that the seller consult an attorney",
+   "optionC": "Have the broker write the clause instead of the salesperson",
+   "optionD": "Add the clause after the buyer signs the contract"
+  },
+  "RENJ-PRAC-018": {
+   "optionD": "The ad is illegal despite the owner exemption",
+   "optionA": "The ad is legal under the single-family owner exemption"
+  },
+  "RENJ-NJ-AGENCY-TERMINATION-001": {
+   "optionB": "Only the return of the yard sign and lockbox"
+  },
+  "RENJ-NJ-REFERRAL-DUAL-STATUS-001": {
+   "optionD": "Holding both licenses at the same time is prohibited"
+  },
+  "RENJ-DISC-002": {
+   "optionA": "A 10-day chance for a lead inspection or risk assessment"
+  },
+  "RENJ-PROP-026": {
+   "optionA": "Transfers to A's buyer with the land",
+   "optionB": "Ends, because easements are personal rights",
+   "correctAnswer": "A"
+  },
+  "RENJ-PROP-004": {
+   "optionA": "Personal property, through severance",
+   "optionB": "Real property, through annexation",
+   "correctAnswer": "A"
+  },
+  "RENJ-MATH-007": {
+   "optionD": "$296,000",
+   "optionB": "$29,600",
+   "correctAnswer": "D"
+  }
+ }
+}

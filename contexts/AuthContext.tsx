@@ -18,7 +18,7 @@ import {
 } from "firebase/auth";
 import { auth } from "@/lib/firebase";
 import { useStore } from "@/store/useStore";
-import { examIdFromSignupUrl } from "@/lib/email-voice";
+import { examIdFromSignupUrl, isTeacherSignupUrl } from "@/lib/email-voice";
 import { AccountConflictDialog } from "@/components/AccountConflictDialog";
 import { isInternalEmail, markInternalBrowser } from "@/lib/internal";
 import { claimEnrollments } from "@/lib/enrollment";
@@ -66,16 +66,15 @@ async function sendWelcomeEmail(userId: string, email: string, displayName: stri
   try {
     // The page URL says which exam the welcome email should be about: the
     // ?redirect= target on /signup, or the exam page itself for one-tap
-    // Google on GuestSaveCard. Else the last test this device was in.
-    let lastTestPath: string | null = null;
-    try {
-      lastTestPath = localStorage.getItem("tigertest-last-test-path");
-    } catch {}
-    const examId = examIdFromSignupUrl(typeof window !== "undefined" ? window.location.href : null, lastTestPath);
+    // Google on GuestSaveCard. Else this device's current test. A signup
+    // from /teach is a teacher: they get the teacher welcome instead.
+    const href = typeof window !== "undefined" ? window.location.href : null;
+    const teacher = isTeacherSignupUrl(href);
+    const examId = teacher ? undefined : examIdFromSignupUrl(href, useStore.getState().primaryExam);
     await fetch("/api/send-welcome-email", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ userId, email, displayName, emailConsent, examId }),
+      body: JSON.stringify({ userId, email, displayName, emailConsent, examId, teacher }),
     });
   } catch (err) {
     console.error("Failed to send welcome email:", err);

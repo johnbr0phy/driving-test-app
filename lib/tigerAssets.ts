@@ -33,6 +33,9 @@ export const TIGER_EXAM_IDS = [
   "sie", "series7", "ssccgl", "rrbntpc",
   // Reviewed AP subject and Philippine civil-service mascots.
   "appsych", "apush", "apbio", "apworld", "aplang", "apcalcab", "aphug", "apgov", "phcse",
+  // Reviewed next-20 batch A professional exam mascots.
+  "cpafar", "cpareg", "nmls", "series63", "series65",
+  "aswb", "arrt", "nce", "texesppr", "praxisplt",
 ] as const;
 
 export type TigerExpression = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
@@ -76,10 +79,6 @@ const BORROWED_SETS: Record<string, string> = {
   ngpolice: "police", cdcfib: "ffi", ngarmy: "asvab", ngcustoms: "security", trcnpqe: "praxis",
   // AHIMA CCA shares the CPC medical coding tiger.
   cca: "cpc",
-  // Next-20 batch A: the CPA sections the CPC tiger, Series 63/65 the Series 7 tiger, NMLS the real estate
-  // tiger, ARRT the HTL lab tiger, ASWB and NCE the RBT tiger, the teacher exams the Praxis tiger.
-  cpafar: "cpc", cpareg: "cpc", series63: "series7", series65: "series7", nmls: "realestate",
-  arrt: "htl", aswb: "rbt", nce: "rbt", texesppr: "praxis", praxisplt: "praxis",
   // Next-20 batch B: CMA the CCMA tiger, NBDHE the DANB tiger, NPTE-PTA the NASM tiger, the home inspector
   // the OSHA tiger, the Texas adjuster the P&C tiger, Salesforce the AWS tiger, CFA the Series 7 tiger, and
   // CPA AUD, ACCA FA and AAT Level 2 the CPC tiger like the other accounting exams.

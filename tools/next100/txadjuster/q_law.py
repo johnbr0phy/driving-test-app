@@ -47,5 +47,5 @@ Q = [
  "Insurance Code 4101.203 makes it a misdemeanor, punishable by a fine, up to six months in county jail, or both."),
 ("The commissioner may issue an emergency cease and desist order, before a hearing, when a person's conduct:",
  "Threatens immediate irreparable harm", ["Draws a single complaint", "Breaks an insurer's own guideline", "Raises premiums above average"],
- "Under Insurance Code Chapter 83, an emergency cease and desist order may issue when the conduct is fraudulent, hazardous or creates an immediate danger, or is causing or will cause immediate, irreparable harm."),
+ "Insurance Code 83.051 lets the commissioner act ex parte when the conduct is fraudulent, creates an immediate danger to public safety, or is causing or can be expected to cause public injury that is likely at any moment and cannot be repaired."),
 ]

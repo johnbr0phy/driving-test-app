@@ -66,7 +66,7 @@ Q = [
 ("Where a habitable room is above a garage, the garage ceiling should have at least:",
  "5/8-inch Type X gypsum", ["1/2-inch regular gypsum", "3/4-inch plywood", "Foil-faced insulation"],
  "Type X gypsum is fire rated. The thicker 5/8-inch layer protects rooms above from a garage fire."),
-("A door between a garage and the house must be solid wood or steel at least 1 3/8 inches thick, honeycomb-core steel, or rated for:",
+("A door between a garage and the house must be solid wood or solid or honeycomb-core steel at least 1 3/8 inches thick, or be fire rated for:",
  "20 minutes", ["10 minutes", "45 minutes", "60 minutes"],
  "The IRC accepts a 20-minute fire-rated door as an alternative. The door must also be self-closing or automatic-closing."),
 ("A fire sprinkler head that has been painted over should be reported because it:",

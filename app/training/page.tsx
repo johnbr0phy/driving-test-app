@@ -421,6 +421,7 @@ function TrainingPageContent() {
             selectedAnswer={selectedAnswer}
             onAnswerSelect={handleAnswerSelect}
             onNext={handleNext}
+            reportExamId="dmv"
           />
         ) : (
           <Card className="w-full">

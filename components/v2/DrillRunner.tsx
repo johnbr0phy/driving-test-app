@@ -36,6 +36,7 @@ import { useSharePrompt } from "@/hooks/useSharePrompt";
 import { SharePromptStep } from "@/components/SharePromptStep";
 import { v2GuestAnswered } from "@/components/GuestSaveCard";
 import { recordClassAnswerById, v2Pick } from "@/lib/classProgress";
+import { ReportExamQuestion } from "@/components/ReportExamQuestion";
 import { AchievementCelebration } from "@/components/AchievementCelebration";
 
 /**
@@ -265,6 +266,11 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
                   <span className="block text-sm text-gray-500 dark:text-gray-400">{hasExplainer(missedSkill) ? "Listen to the 30-second explainer, or read the rule" : "The rule, the trick and two examples"}</span>
                 </span>
               </button>
+            </div>
+          )}
+          {revealed && question && !done && !guestPrompt.showing && !sharePrompt.showing && (
+            <div className="mt-4">
+              <ReportExamQuestion key={question.id} examId={exam.id} questionId={question.id} picked={v2Pick(question.format, answer)} />
             </div>
           )}
         </div>

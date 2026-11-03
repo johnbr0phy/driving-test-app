@@ -1,0 +1,73 @@
+name: Question banks
+
+# Every PR that touches a question bank, its sources or the code that reads
+# them. The integrity check (answer keys, duplicate options, translations
+# against their base bank, v2 stimulus references) blocks the merge; the
+# house-style validators run on the banks the PR changed and only warn, since
+# some older banks predate them.
+
+on:
+  pull_request:
+    paths:
+      - "data/**"
+      - "tools/**"
+      - "lib/banks/**"
+      - "lib/v2/banks/**"
+      - "lib/exams.ts"
+      - "lib/trainingParts.json"
+      - "lib/examBankSizes.json"
+      - "lib/examFreshness.json"
+      - "lib/examSources.json"
+      - "scripts/build-training-parts.ts"
+      - ".claude/skills/exam-bank/scripts/**"
+      - ".github/workflows/question-banks.yml"
+  push:
+    branches: [main]
+    paths: ["data/**", "tools/**"]
+  workflow_dispatch:
+
+jobs:
+  integrity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Bank integrity (blocking)
+        run: python3 -I tools/check_banks.py
+
+      - name: Freshness registry is well formed (blocking)
+        run: python3 -I tools/check_freshness.py
+
+      - name: Source index is current (blocking)
+        run: python3 -I tools/build_exam_sources.py --check
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci --no-audit --no-fund
+
+      - name: Training parts and bank sizes are current (blocking)
+        run: npx tsx scripts/build-training-parts.ts --check
+
+      - name: House style on changed v1 banks (warning only)
+        if: github.event_name == 'pull_request'
+        continue-on-error: true
+        run: |
+          base="${{ github.event.pull_request.base.sha }}"
+          changed=$(git diff --name-only "$base" HEAD -- 'data/*.json' | grep -v '_[a-z][a-z]\.json$' || true)
+          status=0
+          for f in $changed; do
+            [ -f "$f" ] || continue
+            echo "::group::$f"
+            python3 -I .claude/skills/exam-bank/scripts/validate_bank.py "$f" || { status=1; echo "::warning file=$f::house-style validator failed"; }
+            echo "::endgroup::"
+          done
+          exit $status

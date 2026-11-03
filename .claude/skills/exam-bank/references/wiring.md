@@ -148,8 +148,19 @@ A native exam is a normal v1 exam whose base bank and base copy are in its own l
   translation of an existing bank with `validate_translation.py <base> <translation> --lang <lang>`.
 - `EXAM_FACTS[<id>]` stays English (the English landing and llms.txt read it).
 
+## 10b. Question quality hooks
+- `sources.md` lists the official sources first: the source watch (`/api/cron/source-watch`)
+  reads the first three https URLs of every `tools/**/sources.md` each week. Then run
+  `python3 -I tools/build_exam_sources.py` so `lib/examSources.json` includes the exam (CI fails
+  when it is stale).
+- If the real exam has a known dated change (new outline, law, format, sunset), add an event to
+  `lib/examFreshness.json` (`python3 -I tools/check_freshness.py`).
+- `python3 -I tools/check_banks.py` must PASS (answer keys, duplicate options, translations
+  against the base bank, globally unique v1 ids). CI runs it on every PR.
+
 ## 13. Verify before committing
 ```bash
+python3 -I tools/check_banks.py
 npx tsc --noEmit -p .
 npm run lint          # zero errors
 npm run build

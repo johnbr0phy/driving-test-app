@@ -1,0 +1,106 @@
+name: Question audit
+
+# Weekly: Claude re-answers about 1,000 questions blind plus everything reported,
+# flagged or due for a dated change (scripts/question-audit.ts), then Claude
+# Code fixes the confirmed findings in the bank sources and opens a PR. Nothing
+# merges without review: the PR is the approval step.
+#
+# Needs repository secrets ANTHROPIC_API_KEY and FIREBASE_SERVICE_ACCOUNT_KEY
+# (without the Firebase key it runs the sweep and freshness checks only).
+
+on:
+  schedule:
+    - cron: "17 6 * * 1" # Mondays 06:17 UTC
+  workflow_dispatch:
+    inputs:
+      sweep:
+        description: "Random questions to sweep"
+        default: "1000"
+
+permissions:
+  contents: write
+  pull-requests: write
+  id-token: write
+
+concurrency:
+  group: question-audit
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci --no-audit --no-fund
+
+      - name: Index every question
+        run: python3 -I tools/check_banks.py --export "$RUNNER_TEMP/questions.json"
+
+      - name: Audit
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
+        run: npx tsx scripts/question-audit.ts --index "$RUNNER_TEMP/questions.json" --sweep "${{ github.event.inputs.sweep || '1000' }}" --out audits
+
+      - name: Count findings
+        id: findings
+        run: |
+          f="audits/$(date -u +%F).json"
+          n=$(python3 -c "import json,sys; print(len(json.load(open('$f'))['findings']))")
+          echo "count=$n" >> "$GITHUB_OUTPUT"
+          echo "file=$f" >> "$GITHUB_OUTPUT"
+          echo "report=${f%.json}.md" >> "$GITHUB_OUTPUT"
+
+      - name: Fix findings with Claude Code
+        if: steps.findings.outputs.count != '0'
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          claude_args: --max-turns 200 --allowedTools "Read,Edit,Write,Glob,Grep,Bash(python3:*),Bash(npx tsx:*),Bash(git diff:*),Bash(git status:*)"
+          prompt: |
+            Read CLAUDE.md, then the question audit at ${{ steps.findings.outputs.report }}
+            (details in ${{ steps.findings.outputs.file }}).
+
+            For each finding, decide for yourself whether it is right: open the question
+            in its bank and the exam's tools/**/sources.md, and check the rule. Fix only
+            the ones you agree with. Fix the source the bank is built from (the Python or
+            JSON under tools/ named in CLAUDE.md for that exam), never only the built JSON,
+            then run that exam's build script so data/ matches. A key change must also be
+            made in every translated bank of that exam (data/<bank>_<lang>.json).
+
+            After all fixes run:
+              python3 -I tools/check_banks.py
+              npx tsx scripts/build-training-parts.ts
+            and the exam's own validator (.claude/skills/exam-bank/scripts/validate_bank.py
+            for v1 banks, tools/validate_v2_bank.py for v2), and fix anything they report.
+
+            Finally append to ${{ steps.findings.outputs.report }} a section "## What was
+            changed" listing each finding as Fixed (one line on the change) or Not changed
+            (one line on why). Do not commit; the next step opens the PR.
+
+      - name: Open PR
+        if: steps.findings.outputs.count != '0'
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: question-audit/${{ github.run_id }}
+          title: "Question audit: ${{ steps.findings.outputs.count }} findings"
+          commit-message: "Question audit fixes and report"
+          body-path: ${{ steps.findings.outputs.report }}
+          add-paths: |
+            audits/**
+            data/**
+            tools/**
+            lib/trainingParts.json
+            lib/examBankSizes.json
+            lib/v2/bankSizes.ts

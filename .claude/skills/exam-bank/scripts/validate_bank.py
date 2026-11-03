@@ -151,12 +151,28 @@ def sign_question_ids() -> set[str]:
     return set(re.findall(r'^\s*"([^"]+)":', block, re.M))
 
 
+# Banks that differ from a new 200-question bank on purpose. Each entry says why;
+# anything not listed here is held to the full house style.
+KNOWN_BANKS = {
+    "htl-questions.json": dict(rows=214, interleaved=True,
+        why="six staining categories share HTL-STN- ids, so they interleave in id order (Oct 2026 split)"),
+    "ham-questions.json": dict(rows=397, max_over=17,
+        why="the official NCVEC 2026-2030 pool; its wording is the FCC's and cannot be shortened"),
+    "de-theorie-questions.json": dict(rows=210, why="seven 30-question tests"),
+    "cdl-questions.json": dict(rows=600, max_avg=43,
+        why="six tests from a 600-question bank; long-form options average 43 chars after the Nov 2026 key-length fix"),
+}
+# State versions (real estate, life & health, P&C): one full-length test per state, each row
+# carrying the state code and the national question it came from (sourceQuestionId).
+VARIANT_FILE = re.compile(r"^(real-estate|life-health|property-casualty)-([a-z]{2})-questions\.json$")
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("bank")
     ap.add_argument("--pool", action="append", default=[], help="category=count, repeatable")
     ap.add_argument("--max-key-longest", type=float, default=0.25)
-    ap.add_argument("--rows", type=int, default=200)
+    ap.add_argument("--rows", type=int, default=None, help="expected rows (default 200, or the bank's known size)")
     ap.add_argument("--lang", default="en", choices=sorted(LANG_RULES), help="language the bank is written in")
     ap.add_argument("--len-scale", type=float, default=None, help="scale for the length limits (default per --lang)")
     args = ap.parse_args()
@@ -169,18 +185,30 @@ def main() -> int:
     errs: list[str] = []
     warns: list[str] = []
     pools = {k: int(v) for k, v in (p.split("=") for p in args.pool)}
+    name = os.path.basename(args.bank)
+    known = KNOWN_BANKS.get(name, {})
+    vm = VARIANT_FILE.match(name)
+    variant_state = vm.group(2).upper() if vm else None
+    row_keys = KEYS + ["sourceQuestionId"] if variant_state else KEYS
+    if known:
+        print(f"known bank: {known['why']}")
+    elif variant_state:
+        print(f"state version ({variant_state}): one full-length test, any number of rows")
 
-    if len(rows) != args.rows:
-        errs.append(f"rows: {len(rows)} (expected {args.rows})")
+    expected_rows = args.rows or known.get("rows", 200)
+    if not variant_state and len(rows) != expected_rows:
+        errs.append(f"rows: {len(rows)} (expected {expected_rows})")
 
     types = Counter(r.get("type") for r in rows)
     states = Counter(r.get("state") for r in rows)
     if len(types) != 1:
         errs.append(f"type varies: {dict(types)}")
-    if states != Counter({"ALL": len(rows)}):
-        errs.append(f"state must be ALL: {dict(states)}")
+    want_state = variant_state or "ALL"
+    if states != Counter({want_state: len(rows)}):
+        errs.append(f"state must be {want_state}: {dict(states)}")
 
     seen_stems: dict[str, str] = {}
+    seen_ids: set[str] = set()
     with_sign = sign_question_ids()
     seg_last: dict[str, int] = defaultdict(int)
     prefixes = set()
@@ -194,10 +222,10 @@ def main() -> int:
 
     for r in rows:
         qid = r.get("questionId", "?")
-        if set(r.keys()) != set(KEYS):
-            errs.append(f"{qid}: keys {sorted(set(r.keys()) ^ set(KEYS))}")
+        if set(r.keys()) != set(row_keys):
+            errs.append(f"{qid}: keys {sorted(set(r.keys()) ^ set(row_keys))}")
             continue
-        if list(r.keys()) != KEYS and not key_order_warned:
+        if list(r.keys()) != row_keys and not key_order_warned:
             warns.append("keys are not in the canonical order (fine for old banks; new banks should match)")
             key_order_warned = True
         for k in KEYS:
@@ -206,8 +234,18 @@ def main() -> int:
         q = r["question"].strip()
         if not (q.endswith("?") or q.endswith(":")):
             errs.append(f"{qid}: stem does not end with ? or :")
-        m = ID_RE.match(qid)
-        if not m:
+        if variant_state:
+            # Ids come from the national bank (or the state's form), so they skip numbers
+            # and the state's own outline sets the order: only uniqueness is checked.
+            if qid in seen_ids:
+                errs.append(f"{qid}: duplicate id")
+            seen_ids.add(qid)
+            m = None
+        else:
+            m = ID_RE.match(qid)
+        if variant_state:
+            pass
+        elif not m:
             errs.append(f"{qid}: bad id format")
         else:
             prefixes.add(m.group(1))
@@ -217,7 +255,7 @@ def main() -> int:
                 errs.append(f"{qid}: expected {seg}-{seg_last[seg] + 1:03d}")
             seg_last[seg] = n
         if not cat_order or cat_order[-1] != r["category"]:
-            if r["category"] in cat_order:
+            if r["category"] in cat_order and not known.get("interleaved") and not variant_state:
                 errs.append(f"{qid}: category {r['category']} not contiguous")
             cat_order.append(r["category"])
 
@@ -281,11 +319,12 @@ def main() -> int:
         errs.append(f"key is the longest option in {long_share:.0%} of items (max {args.max_key_longest:.0%})")
     # Floor is low on purpose: vocabulary and numeric banks (ASVAB, HESI) legitimately
     # run short. The floor only catches a degenerate bank, not a terse one.
-    lo, hi = 12 * scale, 42 * scale
+    lo, hi = 12 * scale, known.get("max_avg", 42) * scale
     if not lo <= avg_opt <= hi:
         errs.append(f"average option length {avg_opt:.0f} chars (want {lo:.0f}-{hi:.0f})")
-    if over_110 > 5:
-        errs.append(f"{over_110} options over {soft_limit} chars (max 5)")
+    max_over = known.get("max_over", 5)
+    if over_110 > max_over:
+        errs.append(f"{over_110} options over {soft_limit} chars (max {max_over})")
     if varies_key_only > 3:
         warns.append(f"'varies by state'/'house policy' only on the key in {varies_key_only} items (a tell)")
 

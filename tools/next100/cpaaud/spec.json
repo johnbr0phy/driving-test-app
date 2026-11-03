@@ -1,0 +1,38 @@
+{
+  "id": "cpaaud",
+  "stateCode": "CPAAUD",
+  "idBase": 16400,
+  "prefix": "CPAAUD-",
+  "slug": "/cpa-aud",
+  "landingPath": "/cpa-aud-practice-test",
+  "dataFile": "data/cpa-aud-questions.json",
+  "name": "CPA AUD Practice Test",
+  "shortName": "CPA AUD",
+  "examLabel": "CPA Exam AUD section",
+  "fullName": "CPA Exam Auditing and Attestation (AUD) section",
+  "icon": "calculator",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 75,
+  "categories": [
+    {"key": "cpaaudEthics", "label": "Ethics & Independence", "perTest": 6, "pool": 24, "segment": "ETH", "area": "I"},
+    {"key": "cpaaudEngagement", "label": "Engagement Terms, Documentation & Quality", "perTest": 4, "pool": 16, "segment": "ENG", "area": "I"},
+    {"key": "cpaaudPlanning", "label": "Planning, Risk Assessment & Materiality", "perTest": 5, "pool": 20, "segment": "PLN", "area": "II"},
+    {"key": "cpaaudControls", "label": "Internal Control & IT", "perTest": 5, "pool": 20, "segment": "CTL", "area": "II"},
+    {"key": "cpaaudRisk", "label": "Fraud, Specialists & Specific Risk Areas", "perTest": 5, "pool": 20, "segment": "RSK", "area": "II"},
+    {"key": "cpaaudEvidence", "label": "Audit Evidence & Procedures", "perTest": 6, "pool": 24, "segment": "EVD", "area": "III"},
+    {"key": "cpaaudSampling", "label": "Audit Sampling", "perTest": 4, "pool": 16, "segment": "SMP", "area": "III"},
+    {"key": "cpaaudSpecial", "label": "Special Matters, Representations & Subsequent Events", "perTest": 7, "pool": 28, "segment": "SPC", "area": "III"},
+    {"key": "cpaaudAuditReports", "label": "Audit Reports", "perTest": 4, "pool": 16, "segment": "ARP", "area": "IV"},
+    {"key": "cpaaudOtherReports", "label": "Attestation, SSARS & Other Reports", "perTest": 4, "pool": 16, "segment": "ORP", "area": "IV"}
+  ],
+  "notes": "AICPA Uniform CPA Examination Blueprints effective January 1, 2026 (the 2027 Blueprints only revise examples in four Area III representative tasks and do not change AUD's scope): Area I Ethics, Professional Responsibilities and General Principles 15-25%, Area II Assessing Risk and Developing a Planned Response 25-35%, Area III Performing Further Procedures and Obtaining Evidence 30-40%, Area IV Forming Conclusions and Reporting 10-20%. Per 50-question test: I 10 (20%), II 15 (30%), III 17 (34%), IV 8 (16%). Pools are exactly 4x per-test counts. Real AUD: 4 hours, 78 MCQs (two testlets of 39) and 7 TBSs, scored 50/50; here a 50-question MCQ mock at a time, simulations not modelled.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 16401, "name": "Ethics, Independence & Engagement Basics", "categories": ["cpaaudEthics", "cpaaudEngagement"], "size": 40},
+    {"setNumber": 2, "id": 16402, "name": "Planning, Materiality & Internal Control", "categories": ["cpaaudPlanning", "cpaaudControls"], "size": 40},
+    {"setNumber": 3, "id": 16403, "name": "Fraud, Specialists & Specific Risks", "categories": ["cpaaudRisk"], "size": 20},
+    {"setNumber": 4, "id": 16404, "name": "Evidence & Sampling", "categories": ["cpaaudEvidence", "cpaaudSampling"], "size": 40},
+    {"setNumber": 5, "id": 16405, "name": "Special Matters & Subsequent Events", "categories": ["cpaaudSpecial"], "size": 28},
+    {"setNumber": 6, "id": 16406, "name": "Audit, Attestation & SSARS Reports", "categories": ["cpaaudAuditReports", "cpaaudOtherReports"], "size": 32}
+  ]
+}

@@ -76,6 +76,6 @@ receivables, sales tax, $ amounts (ACCA's international exams use $).
 ## Overlap checks (2026-11-03)
 Numbers and stems compared against `data/cpa-far-questions.json`, `data/cpa-reg-questions.json`,
 `tools/next100/aatl2/q_*.py` (written at the same time), `tools/next100/cfal1`, `tools/next100/cpaaud`.
-Eight items had their figures changed to avoid shared number sets (INV-004, NCA-010, NCA-015,
+Ten items had their figures changed to avoid shared number sets (INV-004, NCA-010, NCA-015,
 NCA-021, ACR-011, FST-023, CON-004, CON-005, INT-001, INT-008), and REC-012's scenario was changed
 away from aatl2's similarly named customers.

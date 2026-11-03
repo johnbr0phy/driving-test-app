@@ -52,8 +52,8 @@ per item). Pass line 70% is Tigertest's readiness target: the real exam is scale
 no published percent.
 
 ## Rules and facts used (codes the outline names)
-- IRC 2021 (https://codes.iccsafe.org/content/IRC2021P2), checked 2026-11-03 against the sections
-  named: grade fall 6 in within 10 ft (R401.3); wood clearance to earth, 18 in joists / 12 in girders
+- IRC 2021 (https://codes.iccsafe.org/content/IRC2021P2), section numbers given for the integrator's reference only
+  (the bank cites the IRC by name, never by section; the 2021 text was not reloaded for this build): grade fall 6 in within 10 ft (R401.3); wood clearance to earth, 18 in joists / 12 in girders
   in crawl spaces (R317.1); anchor bolts 6 ft (R403.1.6); joist notches and holes (R502.8.1); stud
   notching 25% bearing / 40% non-bearing, boring 40% / 60% (R602.6); guards over 30 in, 4 in sphere,
   4 3/8 in at stair sides (R312.1); stairs 7 3/4 in riser, 10 in tread, 3/8 in variation (R311.7.5),

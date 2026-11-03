@@ -1,6 +1,6 @@
 CAT = "accafaConsolidation"; SEG = "CON"
 def m(v): return "${:,.0f}".format(v)
-_cons = 600000 + 150000 * 2.40
+_cons = 640000 + 120000 * 2.40
 Q = [
 ("A subsidiary is an entity that is:",
  "Controlled by another entity", ["Significantly influenced by another", "Owned 20% to 50% by one investor", "Jointly controlled by two investors"],
@@ -11,12 +11,12 @@ Q = [
 ("P owns 45% of S's voting shares. Under an agreement with other shareholders, P can appoint most of S's board. S is:",
  "A subsidiary of P", ["An associate of P", "A trade investment of P", "Unrelated to P"],
  "Control does not depend on holding over half the shares. The power to appoint a majority of the board gives P control, so S is consolidated."),
-("P bought 80% of S for $600,000 cash plus 150,000 of its own shares with a fair value of $2.40 each. The non-controlling interest's fair value was $240,000. S's net assets had a carrying amount of $870,000, and its land was worth $60,000 more than its carrying amount. Goodwill is:",
- m(_cons + 240000 - 930000), [m(600000 + 150000 + 240000 - 930000), m(_cons - 930000), m(_cons + 240000 - 870000)],
- "Consideration is $600,000 + $360,000 = $960,000. Goodwill = $960,000 + $240,000 - ($870,000 + $60,000) = $270,000. Valuing the shares at $1 each would give $60,000."),
-("At acquisition, the non-controlling interest (20%) in S was measured at its fair value of $240,000. S has made post-acquisition profits of $150,000. The non-controlling interest in the consolidated statement of financial position is:",
- m(240000 + 0.2 * 150000), [m(240000), m(240000 + 150000), m(240000 - 0.2 * 150000)],
- "NCI = fair value at acquisition + NCI share of post-acquisition profits = $240,000 + 20% x $150,000 = $270,000."),
+("P bought 80% of S for $640,000 cash plus 120,000 of its own shares with a fair value of $2.40 each. The non-controlling interest's fair value was $230,000. S's net assets had a carrying amount of $845,000, and its land was worth $55,000 more than its carrying amount. Goodwill is:",
+ m(_cons + 230000 - 900000), [m(640000 + 120000 + 230000 - 900000), m(_cons - 900000), m(_cons + 230000 - 845000)],
+ "Consideration is $640,000 + $288,000 = $928,000. Goodwill = $928,000 + $230,000 - ($845,000 + $55,000) = $258,000. Valuing the shares at $1 each would give $90,000."),
+("At acquisition, the non-controlling interest (20%) in S was measured at its fair value of $230,000. S has made post-acquisition profits of $135,000. The non-controlling interest in the consolidated statement of financial position is:",
+ m(230000 + 0.2 * 135000), [m(230000), m(230000 + 135000), m(230000 - 0.2 * 135000)],
+ "NCI = fair value at acquisition + NCI share of post-acquisition profits = $230,000 + 20% x $135,000 = $257,000."),
 ("P's receivables are $84,000 and S's are $57,000. S's receivables include $6,500 owed by P, and the current accounts agree. Consolidated receivables are:",
  m(84000 + 57000 - 6500), [m(84000 + 57000), m(84000 + 57000 - 2 * 6500), m(84000 + 57000 + 6500)],
  "Intra-group balances are cancelled: $84,000 + $57,000 - $6,500 = $134,500. P's matching $6,500 payable is removed from consolidated payables."),

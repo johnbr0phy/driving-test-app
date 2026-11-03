@@ -550,14 +550,14 @@
     "state": "ALL",
     "questionId": "ACCAFA-INV-004",
     "category": "accafaInventory",
-    "question": "A business holds three product lines: A cost $4,200, NRV $5,100; B cost $3,600, NRV $2,900; C cost $1,750, NRV $1,900. Closing inventory is:",
-    "optionA": "$9,550",
-    "optionB": "$9,900",
-    "optionC": "$10,600",
-    "optionD": "$8,850",
+    "question": "A business holds three product lines: A cost $4,200, NRV $5,100; B cost $3,700, NRV $2,850; C cost $1,750, NRV $1,900. Closing inventory is:",
+    "optionA": "$9,650",
+    "optionB": "$9,850",
+    "optionC": "$10,700",
+    "optionD": "$8,800",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "The lower of cost and NRV is applied line by line: $4,200 + $2,900 + $1,750 = $8,850. Comparing the totals ($9,550 cost against $9,900 NRV) would hide the loss on line B."
+    "explanation": "The lower of cost and NRV is applied line by line: $4,200 + $2,850 + $1,750 = $8,800. Comparing the totals ($9,650 cost against $9,850 NRV) would hide the loss on line B."
   },
   {
     "type": "ACCAFA",
@@ -858,14 +858,14 @@
     "state": "ALL",
     "questionId": "ACCAFA-NCA-010",
     "category": "accafaNonCurrent",
-    "question": "A building cost $400,000 and has accumulated depreciation of $80,000. It is revalued to $510,000. The revaluation surplus is:",
-    "optionA": "$110,000",
-    "optionB": "$190,000",
-    "optionC": "$510,000",
-    "optionD": "$80,000",
+    "question": "A building cost $430,000 and has accumulated depreciation of $86,000. It is revalued to $525,000. The revaluation surplus is:",
+    "optionA": "$95,000",
+    "optionB": "$181,000",
+    "optionC": "$525,000",
+    "optionD": "$86,000",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Surplus = valuation - carrying amount = $510,000 - ($400,000 - $80,000) = $190,000. The accumulated depreciation is eliminated on revaluation."
+    "explanation": "Surplus = valuation - carrying amount = $525,000 - ($430,000 - $86,000) = $181,000. The accumulated depreciation is eliminated on revaluation."
   },
   {
     "type": "ACCAFA",
@@ -928,14 +928,14 @@
     "state": "ALL",
     "questionId": "ACCAFA-NCA-015",
     "category": "accafaNonCurrent",
-    "question": "Equipment cost $50,000, with a residual value of $2,000 and an eight-year life, depreciated straight line. After three years the residual value is revised to $7,000 with five years left. The new annual charge is:",
-    "optionA": "$6,000",
-    "optionB": "$6,400",
-    "optionC": "$5,000",
-    "optionD": "$5,375",
+    "question": "Equipment cost $54,000, with a residual value of $3,000 and an eight-year life, depreciated straight line. After three years the residual value is revised to $8,000 with five years left. The new annual charge is:",
+    "optionA": "$6,375",
+    "optionB": "$6,975",
+    "optionC": "$5,375",
+    "optionD": "$5,750",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "After three years at $6,000 the carrying amount is $32,000. New charge = ($32,000 - $7,000) / 5 = $5,000."
+    "explanation": "After three years at $6,375 the carrying amount is $34,875. New charge = ($34,875 - $8,000) / 5 = $5,375."
   },
   {
     "type": "ACCAFA",
@@ -1012,14 +1012,14 @@
     "state": "ALL",
     "questionId": "ACCAFA-NCA-021",
     "category": "accafaNonCurrent",
-    "question": "In a year a company spent $48,000 on research, $36,000 on development before the IAS 38 criteria were met, and $92,000 on development after they were met. The amount capitalised is:",
-    "optionA": "$92,000",
-    "optionB": "$128,000",
-    "optionC": "$176,000",
-    "optionD": "$140,000",
+    "question": "In a year a company spent $51,000 on research, $33,000 on development before the IAS 38 criteria were met, and $87,000 on development after they were met. The amount capitalised is:",
+    "optionA": "$87,000",
+    "optionB": "$120,000",
+    "optionC": "$171,000",
+    "optionD": "$138,000",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Only development costs incurred after all the criteria are met are capitalised: $92,000. Earlier development costs and all research costs are expensed and are not reinstated later."
+    "explanation": "Only development costs incurred after all the criteria are met are capitalised: $87,000. Earlier development costs and all research costs are expensed and are not reinstated later."
   },
   {
     "type": "ACCAFA",
@@ -1264,14 +1264,14 @@
     "state": "ALL",
     "questionId": "ACCAFA-ACR-011",
     "category": "accafaAccruals",
-    "question": "Receivables are $86,400 before a debt of $2,400 is written off. The allowance for receivables is then to be 3% of receivables. The opening allowance was $2,950. The total charge to profit or loss is:",
-    "optionA": "$4,920",
-    "optionB": "$2,830",
-    "optionC": "$1,970",
-    "optionD": "$2,520",
+    "question": "Receivables are $86,400 before a debt of $2,300 is written off. The allowance for receivables is then to be 3% of receivables. The opening allowance was $2,870. The total charge to profit or loss is:",
+    "optionA": "$4,823",
+    "optionB": "$2,647",
+    "optionC": "$1,953",
+    "optionD": "$2,523",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Required allowance = 3% x $84,000 = $2,520, a decrease of $430 from $2,950. The charge is the write-off less the decrease: $2,400 - $430 = $1,970."
+    "explanation": "Required allowance = 3% x $84,100 = $2,523, a decrease of $347 from $2,870. The charge is the write-off less the decrease: $2,300 - $347 = $1,953."
   },
   {
     "type": "ACCAFA",
@@ -1894,14 +1894,14 @@
     "state": "ALL",
     "questionId": "ACCAFA-REC-012",
     "category": "accafaReconciliations",
-    "question": "A credit sale to J Patel is posted to the account of J Patil. This is an error of:",
+    "question": "A payment to the supplier Amberley Ltd is debited to the account of the supplier Amberton Ltd. This is an error of:",
     "optionA": "Principle",
     "optionB": "Omission",
     "optionC": "Compensation",
     "optionD": "Commission",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "The right type of account was used, but the wrong customer's. Both sides are posted, so the trial balance still agrees."
+    "explanation": "The right type of account was used, but the wrong supplier's. Both sides are posted, so the trial balance still agrees."
   },
   {
     "type": "ACCAFA",
@@ -2384,14 +2384,14 @@
     "state": "ALL",
     "questionId": "ACCAFA-FST-023",
     "category": "accafaStatements",
-    "question": "Sales were $240,000 at a gross profit margin of 30%. Opening inventory was $18,000 and purchases $172,000. Closing inventory is:",
-    "optionA": "$5,385",
+    "question": "Sales were $260,000 at a gross profit margin of 30%. Opening inventory was $21,000 and purchases $186,000. Closing inventory is:",
+    "optionA": "$7,000",
     "optionB": "$4,000",
-    "optionC": "$22,000",
-    "optionD": "$18,000",
+    "optionC": "$25,000",
+    "optionD": "$21,000",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Cost of sales is 70% of sales, $168,000. Closing inventory = $18,000 + $172,000 - $168,000 = $22,000. Treating 30% as a mark-up on cost gives about $5,385."
+    "explanation": "Cost of sales is 70% of sales, $182,000. Closing inventory = $21,000 + $186,000 - $182,000 = $25,000. Treating 30% as a mark-up on cost gives $7,000."
   },
   {
     "type": "ACCAFA",
@@ -2510,28 +2510,28 @@
     "state": "ALL",
     "questionId": "ACCAFA-CON-004",
     "category": "accafaConsolidation",
-    "question": "P bought 80% of S for $600,000 cash plus 150,000 of its own shares with a fair value of $2.40 each. The non-controlling interest's fair value was $240,000. S's net assets had a carrying amount of $870,000, and its land was worth $60,000 more than its carrying amount. Goodwill is:",
-    "optionA": "$60,000",
-    "optionB": "$30,000",
-    "optionC": "$330,000",
-    "optionD": "$270,000",
+    "question": "P bought 80% of S for $640,000 cash plus 120,000 of its own shares with a fair value of $2.40 each. The non-controlling interest's fair value was $230,000. S's net assets had a carrying amount of $845,000, and its land was worth $55,000 more than its carrying amount. Goodwill is:",
+    "optionA": "$90,000",
+    "optionB": "$28,000",
+    "optionC": "$313,000",
+    "optionD": "$258,000",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Consideration is $600,000 + $360,000 = $960,000. Goodwill = $960,000 + $240,000 - ($870,000 + $60,000) = $270,000. Valuing the shares at $1 each would give $60,000."
+    "explanation": "Consideration is $640,000 + $288,000 = $928,000. Goodwill = $928,000 + $230,000 - ($845,000 + $55,000) = $258,000. Valuing the shares at $1 each would give $90,000."
   },
   {
     "type": "ACCAFA",
     "state": "ALL",
     "questionId": "ACCAFA-CON-005",
     "category": "accafaConsolidation",
-    "question": "At acquisition, the non-controlling interest (20%) in S was measured at its fair value of $240,000. S has made post-acquisition profits of $150,000. The non-controlling interest in the consolidated statement of financial position is:",
-    "optionA": "$270,000",
-    "optionB": "$240,000",
-    "optionC": "$390,000",
-    "optionD": "$210,000",
+    "question": "At acquisition, the non-controlling interest (20%) in S was measured at its fair value of $230,000. S has made post-acquisition profits of $135,000. The non-controlling interest in the consolidated statement of financial position is:",
+    "optionA": "$257,000",
+    "optionB": "$230,000",
+    "optionC": "$365,000",
+    "optionD": "$203,000",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "NCI = fair value at acquisition + NCI share of post-acquisition profits = $240,000 + 20% x $150,000 = $270,000."
+    "explanation": "NCI = fair value at acquisition + NCI share of post-acquisition profits = $230,000 + 20% x $135,000 = $257,000."
   },
   {
     "type": "ACCAFA",
@@ -2692,14 +2692,14 @@
     "state": "ALL",
     "questionId": "ACCAFA-INT-001",
     "category": "accafaInterpretation",
-    "question": "Current assets are $186,000, including inventory of $74,000. Current liabilities are $124,000. The quick (acid test) ratio is:",
+    "question": "Current assets are $186,000, including inventory of $71,000. Current liabilities are $128,000. The quick (acid test) ratio is:",
     "optionA": "0.9:1",
     "optionB": "1.5:1",
     "optionC": "0.6:1",
     "optionD": "2.5:1",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Quick ratio = (current assets - inventory) / current liabilities = $112,000 / $124,000 = 0.9:1. Including inventory gives the current ratio of 1.5:1."
+    "explanation": "Quick ratio = (current assets - inventory) / current liabilities = $115,000 / $128,000 = 0.9:1. Including inventory gives the current ratio of 1.5:1."
   },
   {
     "type": "ACCAFA",
@@ -2790,13 +2790,13 @@
     "state": "ALL",
     "questionId": "ACCAFA-INT-008",
     "category": "accafaInterpretation",
-    "question": "Profit before financing and income taxes is $126,000. Equity is $640,000 and non-current liabilities are $200,000. Return on capital employed is:",
-    "optionA": "19.7%",
-    "optionB": "12.6%",
+    "question": "Profit before financing and income taxes is $117,000. Equity is $610,000 and non-current liabilities are $170,000. Return on capital employed is:",
+    "optionA": "19.2%",
+    "optionB": "11.7%",
     "optionC": "18.0%",
     "optionD": "15.0%",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "ROCE = $126,000 / ($640,000 + $200,000) = 15.0%. Using equity alone as capital employed gives 19.7%."
+    "explanation": "ROCE = $117,000 / ($610,000 + $170,000) = 15.0%. Using equity alone as capital employed gives 19.2%."
   }
 ]

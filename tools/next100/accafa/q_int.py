@@ -5,9 +5,9 @@ _rec = 61200 / 496400 * 365
 _inv = 47000 / 391000 * 365
 assert r(_rec) == "45.0" and r(_inv) == "43.9"
 Q = [
-("Current assets are $186,000, including inventory of $74,000. Current liabilities are $124,000. The quick (acid test) ratio is:",
+("Current assets are $186,000, including inventory of $71,000. Current liabilities are $128,000. The quick (acid test) ratio is:",
  "0.9:1", ["1.5:1", "0.6:1", "2.5:1"],
- "Quick ratio = (current assets - inventory) / current liabilities = $112,000 / $124,000 = 0.9:1. Including inventory gives the current ratio of 1.5:1."),
+ "Quick ratio = (current assets - inventory) / current liabilities = $115,000 / $128,000 = 0.9:1. Including inventory gives the current ratio of 1.5:1."),
 ("Trade receivables are $61,200 and credit sales for the year are $496,400. The receivables collection period is:",
  r(_rec) + " days", [r(496400 / 61200) + " days", "49.9 days", "54.8 days"],
  "Collection period = $61,200 / $496,400 x 365 = 45.0 days. 8.1 is the number of times receivables turn over in a year, not days."),
@@ -26,7 +26,7 @@ Q = [
 ("A business's receivables collection period rises from 38 days to 61 days. The most likely cause is:",
  "Weaker credit control", ["Faster payment by customers", "Stricter credit limits", "Lower inventory levels"],
  "Customers are taking longer to pay, which points to poorer chasing of debts or more generous terms. Faster payment and stricter limits would shorten the period."),
-("Profit before financing and income taxes is $126,000. Equity is $640,000 and non-current liabilities are $200,000. Return on capital employed is:",
- "15.0%", ["19.7%", "12.6%", "18.0%"],
- "ROCE = $126,000 / ($640,000 + $200,000) = 15.0%. Using equity alone as capital employed gives 19.7%."),
+("Profit before financing and income taxes is $117,000. Equity is $610,000 and non-current liabilities are $170,000. Return on capital employed is:",
+ "15.0%", ["19.2%", "11.7%", "18.0%"],
+ "ROCE = $117,000 / ($610,000 + $170,000) = 15.0%. Using equity alone as capital employed gives 19.2%."),
 ]

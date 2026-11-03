@@ -29,7 +29,7 @@ Q = [
  "Payroll holds personal and pay details. Data protection law requires them to be kept secure and seen only by those who need them."),
 ("Which UK law, alongside the UK GDPR, sets rules for handling personal data?",
  "Data Protection Act 2018", ["Companies Act 2006", "Equality Act 2010", "Consumer Rights Act 2015"],
- "The Data Protection Act 2018 and the UK GDPR govern how organisations collect, store and share personal data."),
+ "The Data Protection Act 2018 (as amended by the Data (Use and Access) Act 2025) and the UK GDPR govern how organisations collect, store and share personal data."),
 ("Two tasks are waiting: one is urgent and important, the other is neither. Which should be done first?",
  "The urgent and important one", ["Whichever is easiest", "The one given most recently", "The one a colleague prefers"],
  "Workload is prioritised by urgency and importance. Tasks that are neither can wait or be dropped."),

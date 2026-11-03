@@ -22,7 +22,7 @@ Q = [
  "Gearing = $300,000 / ($300,000 + $700,000) = 30.0%. Debt divided by equity alone gives 42.9%."),
 ("Profit before financing and income taxes is $84,000 and interest expense is $12,000. Interest cover is:",
  "7 times", ["6 times", "0.14 times", "8 times"],
- "Interest cover = profit before interest / interest = $84,000 / $12,000 = 7 times. Deducting the interest first gives 6, which understates cover."),
+ "Interest cover = profit before financing and income taxes / interest expense = $84,000 / $12,000 = 7 times. Deducting the interest first gives 6, which understates cover."),
 ("A business's receivables collection period rises from 38 days to 61 days. The most likely cause is:",
  "Weaker credit control", ["Faster payment by customers", "Stricter credit limits", "Lower inventory levels"],
  "Customers are taking longer to pay, which points to poorer chasing of debts or more generous terms. Faster payment and stricter limits would shorten the period."),

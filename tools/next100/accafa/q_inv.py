@@ -10,9 +10,9 @@ assert (_u, round(_c)) == (180, 1485)
 _periodic = 180 * (600 + 2400 + 1350) / 550
 assert round(_periodic) == 1424
 Q = [
-("Under IAS 2, inventories are measured at:",
- "Lower of cost and net realisable value", ["Higher of cost and net realisable value", "Lower of cost and replacement cost", "Expected selling price less profit"],
- "IAS 2 measures inventories at the lower of cost and net realisable value (estimated selling price less costs to complete and sell). Replacement cost is not used."),
+("Under IAS 2, net realisable value is the estimated selling price less:",
+ "Costs to complete and to sell", ["The normal profit margin", "The original purchase cost", "Replacement cost of the item"],
+ "NRV is the estimated selling price in the ordinary course of business less the estimated costs of completion and the costs needed to make the sale. Inventory is then carried at the lower of cost and NRV."),
 ("Which cost is excluded from the cost of inventory?",
  "Carriage outwards", ["Carriage inwards", "Import duties", "Production overheads"],
  "Cost includes costs of purchase and conversion and bringing the goods to their present location. Carriage outwards is a cost of selling, so it is a distribution expense."),
@@ -28,9 +28,9 @@ Q = [
 ("Opening inventory was 100 units at $6. The business bought 300 units at $8, sold 250 units, bought 150 units at $9, then sold 120 units. Closing inventory using continuous weighted average cost is:",
  m(_c), [m(_periodic), m(150 * 9 + 30 * 8), m(150 * 9)],
  "After the first purchase the average is $3,000 / 400 = $7.50, leaving 150 units at $1,125. After the second purchase it is $2,475 / 300 = $8.25, so the 180 units left are worth $1,485. A periodic average gives about $1,424."),
-("When purchase prices are rising, compared with AVCO, FIFO gives:",
- "Higher closing inventory and profit", ["Lower closing inventory and profit", "Higher cost of sales and lower profit", "The same profit in every period"],
- "FIFO leaves the newest, dearest units in closing inventory and charges older, cheaper costs to cost of sales, so both closing inventory and profit are higher."),
+("When purchase prices are falling, compared with AVCO, FIFO gives:",
+ "Lower closing inventory and profit", ["Higher closing inventory and profit", "Lower cost of sales and higher profit", "The same profit in every period"],
+ "FIFO leaves the newest units, now the cheapest, in closing inventory and charges the older, dearer costs to cost of sales, so closing inventory and profit are both lower than under AVCO."),
 ("The year-end entry to record closing inventory is:",
  "Dr Inventory (SOFP), Cr Cost of sales", ["Dr Cost of sales, Cr Inventory (SOFP)", "Dr Purchases, Cr Inventory (SOFP)", "Dr Inventory (SOFP), Cr Revenue"],
  "Closing inventory is an asset and reduces cost of sales. Next year the opening inventory is transferred back with Dr Cost of sales, Cr Inventory."),
@@ -55,7 +55,7 @@ Q = [
 ("Which must be disclosed in the notes to the financial statements about inventories?",
  "The cost formula used", ["The names of major suppliers", "The selling price of each line", "Who carried out the count"],
  "IAS 2 requires disclosure of the accounting policy, including the cost formula (such as FIFO or weighted average), and the carrying amount by classification."),
-("Which inventory cost formula is not permitted under IFRS Accounting Standards?",
- "LIFO", ["FIFO", "Weighted average cost", "Specific identification"],
- "IAS 2 permits FIFO and weighted average, and specific identification for items that are not interchangeable. Last in, first out is prohibited."),
+("Under IAS 2, the specific identification of individual costs must be used for items that:",
+ "Are not ordinarily interchangeable", ["Are bought in large quantities", "Have fallen below their cost", "Are held for less than a year"],
+ "Items such as custom-built goods or individual works of art are costed at their own specific cost. Large numbers of interchangeable items use FIFO or weighted average instead."),
 ]

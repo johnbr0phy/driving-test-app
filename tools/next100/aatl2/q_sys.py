@@ -1,7 +1,7 @@
 CAT = "aatl2Systems"; SEG = "SYS"
 Q = [
 ("Which document does a supplier send each month listing the invoices, credit notes and payments on a customer's account?",
- "Statement of account", ["Remittance advice", "Credit note", "Customer remittance advice"],
+ "Statement of account", ["Remittance advice", "Credit note", "Purchase order"],
  "A statement of account summarises the account for the period and shows the balance owed. A remittance advice goes the other way, from the customer, to say what a payment covers."),
 ("Hollins Ltd pays three of a supplier's invoices by BACS and emails a note naming them. The note is a:",
  "Remittance advice", ["Statement of account", "Petty cash voucher", "Purchase order"],

@@ -178,6 +178,29 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
       ].join("\n"),
     }),
 
+  // Sent at signup instead of `welcome` when the account was made from /teach
+  // (the signup's redirect is a /teach page). The voice is unused: a teacher
+  // has no exam yet, and picks one when they make a class.
+  welcomeTeacher: () =>
+    emailShell({
+      title: "Welcome to Tigertest",
+      heading: "Welcome to Tigertest",
+      body: [
+        p("{{greeting}}"),
+        p(
+          `Thanks for signing up to teach with Tigertest. Classes are free, for any test on the site.`,
+        ),
+        ul([
+          "Make a class and pick the test your students are preparing for.",
+          "Share the class link. Students join with the name you know them by, no account needed.",
+          "See who practiced, their scores, and the topics and questions your class keeps missing.",
+        ]),
+        cta(`${SITE}/teach/new?${utm("welcome_teacher")}`, "Make your first class"),
+        p(`Questions or ideas? Just reply to this email. It comes straight to me.`),
+        signoff("Thanks,"),
+      ].join("\n"),
+    }),
+
   // Stalled study. 25+ questions answered, no test completed, idle 6h.
   firstTestReminder: (v) =>
     emailShell({

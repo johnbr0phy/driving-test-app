@@ -73,6 +73,8 @@ async function sendWelcomeEmail(userId: string, email: string, displayName: stri
     const examId = teacher ? undefined : examIdFromSignupUrl(href, useStore.getState().primaryExam);
     await fetch("/api/send-welcome-email", {
       method: "POST",
+      // Finish the request even if the page navigates away right after signup.
+      keepalive: true,
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ userId, email, displayName, emailConsent, examId, teacher }),
     });

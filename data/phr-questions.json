@@ -1334,14 +1334,14 @@
     "state": "ALL",
     "questionId": "PHR-REW-020",
     "category": "phrRewards",
-    "question": "Under COBRA, the plan may charge a qualified beneficiary at most what share of the plan's cost, outside a disability extension?",
-    "optionA": "100%",
-    "optionB": "110%",
-    "optionC": "150%",
-    "optionD": "102%",
+    "question": "A former employee elects COBRA continuation coverage. Within how many days of electing must the first premium be paid?",
+    "optionA": "30 days",
+    "optionB": "60 days",
+    "optionC": "14 days",
+    "optionD": "45 days",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "The premium is capped at 102% of the plan's cost, the extra 2% covering administration. During the disability extension it can reach 150%."
+    "explanation": "The first payment is due 45 days after the election. Later monthly premiums get a grace period of at least 30 days, and the plan administrator has 14 days to send the election notice after being told of the event."
   },
   {
     "type": "PHR",
@@ -1376,14 +1376,14 @@
     "state": "ALL",
     "questionId": "PHR-REW-023",
     "category": "phrRewards",
-    "question": "A health savings account can only be opened by someone covered by:",
-    "optionA": "Any employer health plan",
-    "optionB": "Medicare Part A",
-    "optionC": "A high-deductible health plan",
-    "optionD": "A health maintenance organization",
+    "question": "An employee with a health savings account leaves the company. What happens to the money in the account?",
+    "optionA": "It returns to the employer",
+    "optionB": "It is forfeited at year end",
+    "optionC": "It stays with the employee",
+    "optionD": "It must be cashed out and taxed",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "HSA eligibility requires coverage under a qualifying high-deductible health plan and no other disqualifying coverage, such as Medicare."
+    "explanation": "An HSA is owned by the employee, so the balance, including employer contributions, is portable and carries over year to year. A health FSA, by contrast, is generally use-it-or-lose-it."
   },
   {
     "type": "PHR",
@@ -1420,12 +1420,12 @@
     "category": "phrRewards",
     "question": "Which reward is a non-monetary recognition?",
     "optionA": "A cost-of-living raise",
-    "optionB": "Paid volunteer time",
+    "optionB": "Praise at a team meeting",
     "optionC": "An annual bonus",
     "optionD": "A shift differential",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Paid volunteer time, flexible schedules and public recognition are non-monetary rewards. Raises, bonuses and differentials are direct pay."
+    "explanation": "Public praise, thank-you notes and visible credit for good work are non-monetary recognition. Raises, bonuses and shift differentials are direct pay."
   },
   {
     "type": "PHR",
@@ -2779,7 +2779,7 @@
     "question": "Which report is most useful for an annual EEO-1 filing?",
     "optionA": "Training hours by course and job group",
     "optionB": "Overtime by cost center",
-    "optionC": "Headcount by job group, sex and race",
+    "optionC": "Headcount by job category, sex and race",
     "optionD": "Turnover by tenure band",
     "correctAnswer": "C",
     "correctIndex": 2,

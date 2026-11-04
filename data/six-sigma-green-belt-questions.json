@@ -39,7 +39,7 @@
     "optionD": "The process capability index",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Ishikawa popularized the cause and effect (fishbone) diagram and quality circles. The Pareto principle is credited to Juran's work, the control chart to Shewhart."
+    "explanation": "Ishikawa popularized the cause and effect (fishbone) diagram and quality circles. Juran popularized the Pareto principle, and Shewhart developed the control chart."
   },
   {
     "type": "CSSGB",
@@ -592,14 +592,14 @@
     "state": "ALL",
     "questionId": "CSSGB-DEF-019",
     "category": "cssgbDefine",
-    "question": "Which project planning tool shows the longest path of dependent tasks?",
-    "optionA": "Work breakdown structure",
-    "optionB": "RACI chart",
-    "optionC": "Critical path method",
-    "optionD": "Affinity diagram",
+    "question": "Which management and planning tool draws project tasks as boxes joined by arrows to show their order, dependencies and durations?",
+    "optionA": "Affinity diagram",
+    "optionB": "Tree diagram",
+    "optionC": "Activity network diagram",
+    "optionD": "Matrix diagram",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "CPM finds the sequence of dependent activities with zero slack. Any delay on the critical path delays the whole project."
+    "explanation": "An activity network diagram (arrow diagram) sequences tasks and their durations, which lets the team find the critical path and the slack on other tasks."
   },
   {
     "type": "CSSGB",
@@ -634,14 +634,14 @@
     "state": "ALL",
     "questionId": "CSSGB-DEF-022",
     "category": "cssgbDefine",
-    "question": "Which project document breaks the total work into smaller deliverables?",
-    "optionA": "Activity network diagram",
-    "optionB": "Work breakdown structure",
-    "optionC": "Stakeholder register",
-    "optionD": "Responsibility matrix",
+    "question": "A team breaks the goal \"reduce billing errors\" into sub-goals and then into specific actions, level by level. Which planning tool is this?",
+    "optionA": "Affinity diagram",
+    "optionB": "Tree diagram",
+    "optionC": "Interrelationship digraph",
+    "optionD": "Activity network diagram",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "A WBS decomposes project scope into deliverables and work packages. A Gantt chart then schedules those tasks over time."
+    "explanation": "A tree diagram breaks a broad goal into successively finer levels of detail until the branches are specific actions or measures. A CTQ tree is one use of it."
   },
   {
     "type": "CSSGB",
@@ -676,28 +676,28 @@
     "state": "ALL",
     "questionId": "CSSGB-DEF-025",
     "category": "cssgbDefine",
-    "question": "At project closure, what should the team do with lessons learned?",
-    "optionA": "Share them across the organization",
-    "optionB": "Keep them inside the team only",
-    "optionC": "Delete them once they are filed",
-    "optionD": "Send them only to key suppliers",
+    "question": "At project closure, against what are the project's results judged?",
+    "optionA": "The goals in the charter",
+    "optionB": "The hours the team worked",
+    "optionC": "Other projects' savings",
+    "optionD": "The original budget alone",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Closure reviews results against the charter, stores documentation and passes lessons learned on, so other teams can avoid the same mistakes."
+    "explanation": "The closure review compares results with the charter's goals and metrics, confirms the sponsor and process owner accept them, and stores the documentation."
   },
   {
     "type": "CSSGB",
     "state": "ALL",
     "questionId": "CSSGB-DEF-026",
     "category": "cssgbDefine",
-    "question": "A team writes 60 customer comments on sticky notes and groups them by natural themes. Which tool is this?",
-    "optionA": "Interrelationship digraph",
-    "optionB": "Affinity diagram",
-    "optionC": "Tree diagram",
-    "optionD": "Matrix diagram",
+    "question": "In an affinity diagram, once sticky notes are sorted into groups, what is added to each group?",
+    "optionA": "The name of each idea's author",
+    "optionB": "A header card naming the theme",
+    "optionC": "A risk priority number",
+    "optionD": "A control limit",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "An affinity diagram organizes many ideas into natural groups. An interrelationship digraph then shows cause and effect links between the groups."
+    "explanation": "Members sort the notes silently into natural groups, then write a header card that captures each group's theme. An interrelationship digraph can then link the groups."
   },
   {
     "type": "CSSGB",
@@ -2469,13 +2469,13 @@
     "questionId": "CSSGB-CTL-005",
     "category": "cssgbControl",
     "question": "Which pattern on a control chart signals a special cause even though every point is inside the limits?",
-    "optionA": "A long run on one side of the center",
+    "optionA": "Six points in a row steadily rising",
     "optionB": "Points spread randomly about the center",
     "optionC": "About two thirds within one sigma",
     "optionD": "No points beyond the limits",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Run rules flag non-random patterns: a long run on one side of the center line, a steady trend, or repeated points near a limit, as well as points beyond the limits."
+    "explanation": "Run rules flag non-random patterns inside the limits, such as six points in a row steadily increasing or decreasing (a trend), a long run on one side of the center line, or repeated points near a limit."
   },
   {
     "type": "CSSGB",

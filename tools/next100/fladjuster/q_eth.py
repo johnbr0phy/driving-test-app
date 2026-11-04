@@ -33,7 +33,7 @@ Q = [
 ("A Florida adjuster who believes a fraudulent insurance act has been committed must report it to the Department's:",
  "Division of Criminal Investigations", ["Division of Consumer Services", "Florida Office of Insurance Regulation", "Florida Highway Patrol"],
  "s. 626.989 requires an insurer, adjuster or other licensee with knowledge or belief of a fraudulent insurance act to send a report to the Division of Criminal Investigations."),
-("The Florida Insurance Guaranty Association pays covered claims when:",
- "An admitted insurer becomes insolvent", ["A surplus lines insurer refuses to pay", "Citizens runs short of funds", "A claim exceeds the limits"],
- "Under s. 631.54, a covered claim is an unpaid claim within the coverage and limits of a policy issued by an insolvent member insurer; surplus lines policies are not protected."),
+("The Florida Insurance Guaranty Association covers an insolvent insurer's unpaid claim if the claimant is a Florida resident at the time of the event or the property is:",
+ "Permanently located in Florida", ["Insured for over a year", "Owned by a business", "Mortgaged to a Florida bank"],
+ "s. 631.54 defines a covered claim to include residents of Florida at the time of the insured event or property permanently located in Florida."),
 ]

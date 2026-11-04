@@ -51,3 +51,10 @@ Grepped `data/v2/pmp`, `data/v2/capm`, `data/v2/itil`, `data/cpa-reg-questions.j
 Tuckman, poka-yoke, SMED. The PERT item first used PMP's 4/7/16 days and the team-stage item
 duplicated PMP's storming scenario; both were rewritten (PERT now 3/9/21, team stage now
 adjourning).
+
+Review pass (2026-11-04): every numerical key recomputed (Cp/Cpk, DPMO, sigma level, DPU, RTY,
+control limits, t, F, chi square, sample size, regression, DOE effects, binomial and Poisson);
+all correct. Five Define/Control items rewritten for overlap with CAPM/PMP: CSSGB-DEF-019
+(critical path, now activity network diagram), DEF-022 (WBS, now tree diagram), DEF-025
+(lessons learned, now closure against the charter), DEF-026 (affinity grouping, now header
+cards), CTL-005 (run on one side, as PMP-T1-060, now a six-point trend).

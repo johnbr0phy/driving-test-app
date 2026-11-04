@@ -64,7 +64,7 @@ Q = [
 ("A study plans to mislead participants about its purpose. Deception in research is allowed only when:",
  "Approved and followed by debriefing", ["The researcher believes it will help", "Participants are paid enough", "The study is very short"],
  "Deception is permitted only when the study's value justifies it, no other method works, an institutional review board approves it and participants are debriefed. Payment does not justify deception."),
-("A client asks his clinician to write a letter supporting his request for a service animal. She has never assessed his need for one. She should:",
+("A client asks his clinician to write a letter supporting his request for an emotional support animal in his apartment. She has never assessed his need for one. She should:",
  "Assess him first or decline", ["Write the letter to keep rapport", "Copy a template from the internet", "Sign a letter his friend drafted"],
  "A clinician writes only what she can support from her own professional assessment. Writing an unsupported letter misrepresents her professional judgment."),
 ("A therapist wants to accept a referral fee from a treatment center for each client she sends there. This is:",

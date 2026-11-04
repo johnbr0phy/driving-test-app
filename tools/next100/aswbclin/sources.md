@@ -48,7 +48,9 @@
   four horsemen; Linehan's DBT (modes, chain analysis, DEAR MAN, opposite action); Miller and
   Rollnick (OARS, sustain talk); Foa (prolonged exposure); Resick (CPT stuck points); TF-CBT;
   PCIT; IPT problem areas; EFT stages; MBCT; Stoltenberg's integrated developmental model; CDC
-  suicide rates by age and sex (men 75 and older highest).
+  suicide rates by age and sex (men 75 and older highest: 40.7 per 100,000 in 2023 and 40.1 in 2024,
+  NCHS Data Brief 572, https://www.cdc.gov/nchs/products/databriefs/db572.htm, checked 2026-11-04);
+  Boss's ambiguous loss; command hallucination risk assessment.
 
 Tigertest's pass line of 70% is a readiness target, not the official pass mark.
 

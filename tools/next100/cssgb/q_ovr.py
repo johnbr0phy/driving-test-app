@@ -9,7 +9,7 @@ Q = [
  "Juran's trilogy is quality planning, quality control and quality improvement. Plan, do, check is part of the PDCA cycle, not the trilogy."),
 ("Kaoru Ishikawa is best known in Six Sigma for which tool?",
  "The fishbone diagram", ["The Pareto chart", "The control chart", "The process capability index"],
- "Ishikawa popularized the cause and effect (fishbone) diagram and quality circles. The Pareto principle is credited to Juran's work, the control chart to Shewhart."),
+ "Ishikawa popularized the cause and effect (fishbone) diagram and quality circles. Juran popularized the Pareto principle, and Shewhart developed the control chart."),
 ("What is the main financial reason an organization launches a Six Sigma program?",
  "To cut the cost of poor quality", ["To raise headcount in quality", "To replace its audit program", "To win an industry quality award"],
  "Six Sigma ties every project to measurable business results, mostly by reducing defects, rework and waste that make up the cost of poor quality."),

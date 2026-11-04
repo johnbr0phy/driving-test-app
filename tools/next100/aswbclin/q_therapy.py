@@ -60,7 +60,7 @@ Q = [
  "Transference is the client's redirection of feelings from an earlier relationship onto the therapist. Exploring it helps the client understand patterns in his current relationships."),
 ("Which treatment for a client with a stimulant use disorder gives vouchers or prizes for drug-free urine tests?",
  "Contingency management", ["Aversion therapy", "Milieu therapy", "Medication-assisted treatment"],
- "Contingency management reinforces abstinence with tangible rewards. It is one of the most effective treatments for stimulant use disorders, which have no approved medication."),
+ "Contingency management reinforces abstinence with tangible rewards. It is one of the most effective treatments for stimulant use disorders, for which no medication has FDA approval."),
 ("A woman has both PTSD and an alcohol use disorder. An integrated, present-focused group model designed for this pairing is:",
  "Seeking Safety", ["Wraparound", "Housing First", "Twelve-step facilitation"],
  "Seeking Safety is a present-focused, coping skills model for people with trauma and substance use problems, taught in a session-by-session format without requiring trauma processing."),

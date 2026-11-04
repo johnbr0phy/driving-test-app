@@ -66,3 +66,15 @@ appetite owner, access review owner, SSO risk, low humidity, problem management 
 output, CSF 2.0 Govern) were rewritten to other facts. Topics CISSP already asks (emergency
 change follow-up, test restores, pen test authorization, phishing metrics, fire suppression
 without water, dismissed administrator) were left out.
+
+## Review pass (2026-11-04)
+- NIST, "The NIST Cybersecurity Framework (CSF) 2.0", NIST CSWP 29, February 2024: Tiers
+  (Partial, Risk Informed, Repeatable, Adaptive) characterize the rigor of cybersecurity risk
+  governance and management practices; Profiles describe current and target outcomes (GOV-010).
+- ISACA IS Audit and Assurance Standards (2021): proficiency (1006) and the use of other experts'
+  work (1206) (AUD-025, AUD-029).
+- Rewritten for overlap with other banks: ACQ-001 (CISSP-T1-008, cost-effective stage), AUD-025
+  (CPAAUD-CTL-016, walkthrough), AUD-012 (CPAAUD-EVD-015, completeness of client data), GOV-010
+  (CISSP-T1-078, mandatory vacation), OPS-023 (SECPLUS-D-008, journaling), PRO-022
+  (SECPLUS-T1-055, IoT segmentation); inside this bank GOV-013 (same fact as OPS-029) and OPS-026
+  (same fact as GOV-009).

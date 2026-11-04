@@ -1,8 +1,8 @@
 CAT = "cisaAcquisition"; SEG = "ACQ"
 Q = [
-("At which stage of system development is it most cost-effective for an IS auditor to influence controls?",
- "Requirements and design", ["Just after go-live in production", "During the post-implementation review", "When the system is being retired"],
- "Controls designed in from the start are cheaper and more effective than controls bolted on later. Auditor input at requirements and design has the most effect."),
+("What is the main purpose of a feasibility study at the start of a system acquisition?",
+ "To judge if a solution is justified", ["To write the detailed program specifications", "To train users on the new system", "To test the system's response times"],
+ "A feasibility study weighs technical, economic and operational factors and the alternatives, such as build, buy or change nothing, so management can decide whether the project should go ahead."),
 ("An IS auditor is invited to join a development project team. How should the auditor take part without losing independence?",
  "Advise on controls, not design them", ["Approve the system for go-live", "Write the access control code", "Sign off the user acceptance results"],
  "The auditor can review and recommend, but designing or approving controls would mean later auditing their own work."),
@@ -70,6 +70,6 @@ Q = [
  "Required peer approval in the pipeline", ["Monthly manual sign-off of all releases", "Fewer deployments each week", "Developer access to production"],
  "In continuous delivery, segregation is enforced by the pipeline itself, such as mandatory independent code review and approval gates before deployment."),
 ("An organization is building a machine learning model to approve loans. What should an IS auditor check about its training data?",
- "Its quality and potential bias", ["Its file names and folders", "The color of its charts", "The speed of the training server"],
+ "Its quality and potential bias", ["Its file names and folders", "The format of its output reports", "The speed of the training server"],
  "A model learns from its data. Incomplete or biased training data can produce unfair or wrong decisions, so data quality and bias testing need controls and evidence."),
 ]

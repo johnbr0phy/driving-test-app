@@ -56,7 +56,7 @@ Q = [
  "System integration", ["Manual re-entry", "A paper file", "A new job analysis"],
  "Integration through an interface or API moves data between systems automatically, avoiding re-keying errors."),
 ("Which report is most useful for an annual EEO-1 filing?",
- "Headcount by job group, sex and race", ["Training hours by course and job group", "Overtime by cost center", "Turnover by tenure band"],
+ "Headcount by job category, sex and race", ["Training hours by course and job group", "Overtime by cost center", "Turnover by tenure band"],
  "The EEO-1 Component 1 report counts employees by job category, sex and race or ethnicity, so the HRIS must capture those fields."),
 ("A front-line user of the new HRIS reports she cannot see her team's time cards. The first support step is to:",
  "Check her role and permissions", ["Reinstall the whole system", "Give her administrator access", "Tell her to use paper time cards for now"],

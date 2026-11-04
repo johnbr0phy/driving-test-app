@@ -1,6 +1,6 @@
 # Wiring for `cisa` (ISACA Certified Information Systems Auditor, GLOBAL, v1)
 
-Files already written by the builder: `data/cisa-questions.json` (200, PASS, key-longest 5%),
+Files already written by the builder: `data/cisa-questions.json` (200, PASS, key-longest 6%),
 `lib/banks/cisa.ts`, `app/cisa/*` (layout, redirect, dashboard, drill, stats, copied from
 `app/salesforce-admin/`; no test or practice folders, the shared `app/[slug]` routes serve them),
 `app/cisa-practice-test/page.tsx`, `tools/next100/cisa/*` (spec, sources, `q_*.py`, `build.py`,

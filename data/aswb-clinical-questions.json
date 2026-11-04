@@ -109,7 +109,7 @@
     "optionD": "It is a medical emergency",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Confidential information may be disclosed without consent when needed to prevent serious harm, as in a medical emergency, limited to what is needed. Being a licensed provider is not by itself the reason."
+    "explanation": "Confidential information may be disclosed without consent when needed to prevent serious harm, as in a medical emergency, limited to what is needed. Outside an emergency the social worker would normally seek the client's consent before sharing with another provider, so the emergency is what justifies the disclosure here."
   },
   {
     "type": "ASWBCLIN",
@@ -305,7 +305,7 @@
     "optionD": "Let the client decide alone",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "The NASW code asks social workers to make a responsible effort to resolve conflicts between ethics and law, consulting as needed. Where they cannot be reconciled, the law usually governs while she works to change it."
+    "explanation": "The NASW Code of Ethics asks social workers to make a responsible effort to resolve a conflict between ethical standards and laws or regulations in a way consistent with the code's values, and to seek proper consultation when no reasonable resolution appears possible."
   },
   {
     "type": "ASWBCLIN",
@@ -634,7 +634,7 @@
     "state": "ALL",
     "questionId": "ASWBCLIN-SVC-022",
     "category": "aswbclinService",
-    "question": "A client asks his clinician to write a letter supporting his request for a service animal. She has never assessed his need for one. She should:",
+    "question": "A client asks his clinician to write a letter supporting his request for an emotional support animal in his apartment. She has never assessed his need for one. She should:",
     "optionA": "Write the letter to keep rapport",
     "optionB": "Assess him first or decline",
     "optionC": "Copy a template from the internet",
@@ -1656,14 +1656,14 @@
     "state": "ALL",
     "questionId": "ASWBCLIN-DX-027",
     "category": "aswbclinDiagnosis",
-    "question": "Which group has the HIGHEST rate of suicide in the United States?",
+    "question": "By age and sex, which group has the HIGHEST suicide rate in the United States, according to CDC data?",
     "optionA": "Women aged 45 to 64 years",
     "optionB": "Teenage girls",
     "optionC": "Men aged 75 and older",
     "optionD": "Men aged 25 to 34 years",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Older men, particularly those over 75, have the highest suicide rate, and firearms are the most common method. Women attempt more often, but men die by suicide at much higher rates."
+    "explanation": "In CDC (NCHS) data for 2023 and 2024, men aged 75 and older had the highest rate of any age and sex group, about 40 per 100,000, and firearms are the most common method. Women attempt more often, but men die by suicide at three to four times the rate. By race and ethnicity, American Indian and Alaska Native people have the highest rates."
   },
   {
     "type": "ASWBCLIN",
@@ -1852,14 +1852,14 @@
     "state": "ALL",
     "questionId": "ASWBCLIN-PLN-013",
     "category": "aswbclinPlanning",
-    "question": "A crisis clinic has three walk-ins at once. Who should the clinician see FIRST?",
-    "optionA": "A man told by voices to jump",
-    "optionB": "A woman needing a housing referral",
-    "optionC": "A teen upset about failing a class",
-    "optionD": "A father asking about parenting classes",
+    "question": "A client with schizophrenia says voices are telling him to hurt himself. To judge his risk, the clinician should FIRST ask:",
+    "optionA": "Whether he plans to obey the voices",
+    "optionB": "When the voices first started",
+    "optionC": "Whether his family hears them too",
+    "optionD": "What the voices sound like",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Triage puts imminent danger first. Command hallucinations to harm oneself signal acute risk, while the other needs can safely wait."
+    "explanation": "With command hallucinations, risk depends on whether the person believes and intends to follow the commands, along with plan, means and past acts. That answer guides the choice of level of care, such as emergency evaluation."
   },
   {
     "type": "ASWBCLIN",
@@ -2181,7 +2181,7 @@
     "optionD": "Contingency management",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Contingency management reinforces abstinence with tangible rewards. It is one of the most effective treatments for stimulant use disorders, which have no approved medication."
+    "explanation": "Contingency management reinforces abstinence with tangible rewards. It is one of the most effective treatments for stimulant use disorders, for which no medication has FDA approval."
   },
   {
     "type": "ASWBCLIN",
@@ -2552,14 +2552,14 @@
     "state": "ALL",
     "questionId": "ASWBCLIN-PRA-015",
     "category": "aswbclinPractice",
-    "question": "A parent says she does not know how to calm her 3-year-old's tantrums. Which intervention BEST builds parenting capacity?",
-    "optionA": "Give her a book and end the visit",
-    "optionB": "Tell her to wait until he outgrows it",
-    "optionC": "Coach her in the moment during play",
-    "optionD": "Recommend stricter physical discipline",
+    "question": "A woman whose husband has advanced dementia says, \"He is here, but he is gone.\" She feels she cannot grieve or move on. This is BEST described as:",
+    "optionA": "Anticipatory mourning",
+    "optionB": "Prolonged grief disorder",
+    "optionC": "Ambiguous loss",
+    "optionD": "Caregiver role strain",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Live coaching and modeling, with practice and feedback, builds parenting skills more effectively than information alone. Physical punishment is linked to worse outcomes."
+    "explanation": "Pauline Boss's term ambiguous loss describes a loss without clarity or closure, such as a loved one who is physically present but psychologically absent. Naming it helps the family tolerate the ambiguity rather than wait for a resolution."
   },
   {
     "type": "ASWBCLIN",

@@ -59,6 +59,10 @@
     {
       "path": "/api/cron/source-watch",
       "schedule": "10 4 * * *"
+    },
+    {
+      "path": "/api/cron/welcome-backstop",
+      "schedule": "25 * * * *"
     }
   ]
 }

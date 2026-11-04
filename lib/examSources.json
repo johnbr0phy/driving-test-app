@@ -81,6 +81,11 @@
   "https://www.aswb.org/wp-content/uploads/2026/05/2026-Social-Work-Licensing-Exam-Guidebook-5.4.2026.pdf",
   "https://www.aswb.org/2026-blueprints/"
  ],
+ "aswbclin": [
+  "https://www.aswb.org/wp-content/uploads/2026/05/2026-Social-Work-Licensing-Exam-Guidebook-5.4.2026.pdf",
+  "https://www.aswb.org/2026-blueprints/",
+  "https://www.cdc.gov/nchs/products/databriefs/db572.htm"
+ ],
  "aucit": [
   "https://immi.homeaffairs.gov.au/citizenship-subsite/files/our-common-bond-testable.pdf",
   "https://immi.homeaffairs.gov.au/citizenship/test-and-interview/learn-about-citizenship-interview-and-test/learn-about-citizenship-test",
@@ -270,15 +275,30 @@
   "https://learningcontent.cisco.com/documents/marketing/exam-topics/200-301_CCNA_v2.0_Exam_Topics_PDF.pdf",
   "https://blogs.cisco.com/learning/stay-on-track-get-certified-before-the-ccna-refresh"
  ],
+ "ccs": [
+  "https://ahima.org/certification/ccs/",
+  "https://www.ahima.org/media/ecklaulp/css-exam-content-outline-1-1.pdf",
+  "https://www.ahima.org/media/4vxpzr3q/ccs_2026_codebook_list.pdf"
+ ],
  "cdcfib": [
   "https://cdcfib.gov.ng",
   "https://nairametrics.com/2025/11/26/cdcfib-2025-recruitment-over-200000-candidates-fail-computer%e2%80%91based-test",
   "https://arbiterz.com/?p=54640"
  ],
+ "cemap": [
+  "https://www.walbrook.ac.uk/libf/professional-qualifications/your-professional-studies/improvements-cemap-from-30-september-2025",
+  "https://www.walbrook.ac.uk/hubfs/files/documents/pe/fsre-specification-2026.pdf",
+  "https://www.walbrook.ac.uk/hubfs/files/documents/pe/cemap-qualification-specification-march-2026.pdf"
+ ],
  "cfal1": [
   "https://www.cfainstitute.org/programs/cfa-program/candidate-resources/level-i-exam",
   "https://www.cfainstitute.org/programs/cfa-program/candidate-resources/exam-results",
   "https://soleadea.org/cfa-exam/curriculum-changes-2027"
+ ],
+ "cisa": [
+  "https://www.isaca.org/credentialing/cisa/cisa-exam-content-outline",
+  "https://www.isaca.org/about-us/newsroom/press-releases/2024/isacas-cisa-exam-updated-to-reflect-innovations-and-evolving-technologies-impacting-it-audit",
+  "https://www.isaca.org/credentialing/cisa"
  ],
  "cissp": [
   "https://www.isc2.org/certifications/cissp/cissp-certification-exam-outline"
@@ -311,10 +331,18 @@
   "https://www.citb.co.uk/courses-and-qualifications/hse-test-and-cards/about-hse-test/",
   "https://www.cscs.uk.com/frequently-asked-questions/test/"
  ],
+ "cssgb": [
+  "https://www.asq.org/cert/six-sigma-green-belt",
+  "https://www.asq.org/cert/resource/pdf/certification/cssgb-cert-insert.pdf",
+  "https://www.asq.org/cert/resource/pdf/certification/cert-fact-sheet-cssgb.pdf"
+ ],
  "cuet": [
   "https://cdnbbsr.s3waas.gov.in/s3d1a21da7bca4abff8b0b61b87597de73/uploads/2026/01/202601031633478370.pdf",
   "https://cuet.nta.nic.in/information-bulletin/",
   "https://clsite-file1.s3.amazonaws.com/8132_CUET-2026-Notification.pdf"
+ ],
+ "cysa": [
+  "https://www.comptia.org/en-us/certifications/cybersecurity-analyst/"
  ],
  "delhipolice": [
   "https://ssc.gov.in",
@@ -352,6 +380,11 @@
   "https://www.traficom.fi/sites/default/files/media/regulation/Kuljettajantutkinnon%20teoriakoem%C3%A4%C3%A4r%C3%A4ys.pdf",
   "https://traficom.fi/en/drivers-and-vehicles/driving-licenses/driving-examination",
   "https://a-katsastus.fi/en/driving-licences-and-permits/what-happens-during-the-theory-test"
+ ],
+ "fladjuster": [
+  "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/121003.pdf",
+  "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/121000.pdf",
+  "https://www.pearsonvue.com/us/en/fl/insurance.html"
  ],
  "fsmaths": [
   "https://www.gov.uk/government/publications/functional-skills-subject-content-mathematics/subject-content-functional-skills-maths",
@@ -475,6 +508,11 @@
   "https://dera.ioe.ac.uk/23400/1/2016_KS2_Englishreading_framework_PDFA.pdf",
   "https://www.gov.uk/government/publications/key-stage-2-english-reading-test-framework",
   "https://dera.ioe.ac.uk/25864/1/2016_KS2_EnglishGPS_framework_PDFA.pdf"
+ ],
+ "llqp": [
+  "https://www.insurancecouncilofbc.com/llqp/exam-information-and-registration/about-the-exam/in-person-exams/",
+  "https://www.gov.nl.ca/dgsnl/files/insurance-pdf-memo-llqp-2018.pdf",
+  "https://lautorite.qc.ca/en/becoming-a-professional/insurance-of-persons-and-group-insurance-of-persons/examinations/pilot-exam-questions"
  ],
  "mhtcet": [
   "https://cetcell.mahacet.org/",
@@ -608,6 +646,11 @@
   "https://lawphil.net/statutes/repacts/ra1964/ra_4136_1964.html",
   "https://lawphil.net/statutes/repacts/ra2017/ra_10930_2017.html"
  ],
+ "phr": [
+  "https://www.hrci.org/our-programs/our-certifications/phr",
+  "https://www.hrci.org/docs/default-source/2024-document-control/hrci_phr-exam-content-outline-2024.pdf",
+  "https://www.hrci.org/docs/default-source/pdf-documents/cert-handbook.pdf"
+ ],
  "pkdrive": [
   "https://en.wikipedia.org/wiki/Driving_licence_in_Pakistan",
   "https://gopunjab.pk/driving-license-online-punjab/",
@@ -624,6 +667,11 @@
   "https://praxis.ets.org/on/demandware.static/-/Library-Sites-ets-praxisLibrary/default/pdfs/5723.pdf",
   "https://praxis.ets.org/on/demandware.static/-/Library-Sites-ets-praxisLibrary/default/pdfs/5733.pdf",
   "https://praxis.ets.org/on/demandware.static/-/Library-Sites-ets-praxisLibrary/default/pdfs/5713.pdf"
+ ],
+ "praxis5001": [
+  "https://praxis.ets.org/on/demandware.static/-/Library-Sites-ets-praxisLibrary/default/pdfs/5001.pdf",
+  "https://www.ets.org/pdfs/praxis/5001.pdf",
+  "https://praxis.ets.org/test/5001.html"
  ],
  "praxisplt": [
   "https://praxis.ets.org/on/demandware.static/-/Library-Sites-ets-praxisLibrary/default/pdfs/5622.pdf",
@@ -648,6 +696,11 @@
  ],
  "rbt": [
   "https://www.bacb.com/wp-content/uploads/2023/12/RBT-3rd-Edition-Test-Content-Outline-240903-a.pdf"
+ ],
+ "rdexam": [
+  "https://www.cdrnet.org/vault/2459/web//2027-2031%20RD%20Test%20Specifications%20and%20Expanded%20Study%20Outline.pdf",
+  "https://admin.cdrnet.org/vault/2459/web/4.5%20RD%20Test%20Specifications%202022-2026.pdf",
+  "https://www.cdrnet.org/vault/2459/web//Exam%20FAQ%202025.pdf"
  ],
  "reet": [
   "https://rajeduboard.rajasthan.gov.in",
@@ -845,5 +898,10 @@
   "https://www.gov.za/services/driving-licence/apply-learners-licence",
   "https://www.arrivealive.co.za/speed-limits-and-the-law",
   "https://carinsurance.arrivealive.co.za/where-are-you-not-allowed-to-stop-or-park-under-the-national-road-traffic-regulations/"
+ ],
+ "zak53c3": [
+  "https://www.gov.za/services/driving-licence/apply-learners-licence",
+  "https://en.wikipedia.org/wiki/Driving_licence_in_South_Africa",
+  "https://wcedonline.westerncape.gov.za/circulars/circulars15/e44_15.html"
  ]
 }

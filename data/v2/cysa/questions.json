@@ -1,0 +1,4240 @@
+[
+  {
+    "id": "CYSA-T1-001",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaSecArch",
+    "skill": "Log ingestion",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "During traffic peaks the SIEM is missing firewall events, and the firewall sends its logs as syslog over UDP 514. Which change best stops the loss?",
+    "explanation": "UDP gives no delivery guarantee, so events are dropped silently when the collector is busy; TCP adds acknowledgment and TLS protects the logs in transit. A longer retention period keeps stored events longer but does nothing for events that never arrived.",
+    "options": [
+      "Raise firewall logging to debug",
+      "Send the events as SNMP traps",
+      "Lengthen the SIEM retention period",
+      "Send syslog over TCP with TLS"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CYSA-T1-002",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaThreat",
+    "skill": "Network indicators",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Proxy logs for one workstation show this pattern all afternoon:\n\n$$\\begin{array}{l}\\texttt{13:02:10 10.1.2.15 GET cdn-sync.example/u 200 412 bytes}\\\\\\texttt{13:03:10 10.1.2.15 GET cdn-sync.example/u 200 409 bytes}\\\\\\texttt{13:04:11 10.1.2.15 GET cdn-sync.example/u 200 415 bytes}\\\\\\texttt{13:05:10 10.1.2.15 GET cdn-sync.example/u 200 411 bytes}\\end{array}$$\n\nWhat does this most likely indicate?",
+    "explanation": "Small requests of almost the same size to one domain at a fixed interval are the classic signature of malware checking in with its controller. Streaming and update downloads move far more data, and NTP uses UDP 123, not web requests.",
+    "options": [
+      "An NTP client syncing its clock",
+      "A user streaming online video",
+      "A Windows Update download job",
+      "Command-and-control beaconing"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CYSA-T1-003",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaVulnScan",
+    "skill": "Credentialed scanning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A weekly unauthenticated scan of the Windows server farm reports only a few low findings, but the patch team's own audit shows dozens of missing security updates on the same servers. What should the analyst change so the scan sees what the audit sees?",
+    "explanation": "A credentialed scan logs in and reads installed patches, registry values and file versions, which a remote scan cannot see. Scanning more ports still only shows what each service exposes over the network.",
+    "options": [
+      "Schedule the scan outside business hours",
+      "Move the scanner onto the server VLAN",
+      "Widen the scan to all 65,535 TCP ports",
+      "Scan with a service account login"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CYSA-T1-004",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaVulnPrior",
+    "skill": "CVSS v3.1",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A finding carries this vector:\n$$\\begin{array}{l}\\texttt{CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H}\\end{array}$$\nWhich description matches it?",
+    "explanation": "AV:N is network (remote), PR:N means no privileges are required and UI:N means no user has to do anything, with high impact on all three of C, I and A, which scores 9.8. AV:L would be local and AV:P physical access.",
+    "options": [
+      "Remote, admin login, no user action",
+      "Remote, no login, no user action",
+      "Physical, no login, no user action",
+      "Local, no login, a user must click"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CYSA-T1-005",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaIrFrame",
+    "skill": "MITRE ATT&CK",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "An analyst tags an EDR alert with the identifier T1059.001 so it lines up with a shared catalog of adversary tactics and techniques. Which framework uses identifiers like this?",
+    "explanation": "MITRE ATT&CK numbers each technique and sub-technique (T1059.001 is PowerShell under Command and Scripting Interpreter). The Cyber Kill Chain has seven named phases but no technique identifiers.",
+    "options": [
+      "OSSTMM",
+      "MITRE ATT&CK",
+      "Cyber Kill Chain",
+      "Diamond Model"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CYSA-T1-006",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaIrHandle",
+    "skill": "Chain of custody",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "An analyst removes a drive from a compromised laptop and hands it to the forensics lab. Which record shows every person who held the drive, when and why?",
+    "explanation": "A chain of custody form documents each transfer of evidence, with names, times and purpose, so the evidence can be shown to be untampered. A hash log proves the data is unchanged but not who handled it.",
+    "options": [
+      "Incident ticket timeline",
+      "Evidence hash log",
+      "Legal hold notice",
+      "Chain of custody form"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CYSA-T1-007",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaVulnReport",
+    "skill": "Stakeholder reporting",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The CIO asks the vulnerability team for a monthly report to decide whether risk is rising and where to spend next quarter. Which report fits this reader?",
+    "explanation": "Executives need trends, risk and the few exposures that drive decisions, not technical detail. Per-host patch lists suit system administrators, who do the fixing.",
+    "options": [
+      "A per-host list of missing patches and versions",
+      "Risk trends and top exposures by business unit",
+      "The raw scanner CSV sorted by IP address",
+      "A full export of every finding with plugin output"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CYSA-T1-008",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaIrReport",
+    "skill": "Executive summary",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The CEO wants a one-page view of last week's ransomware incident before a board meeting. What belongs in the executive summary?",
+    "explanation": "An executive summary states what happened, what it cost the business, where things stand and what leaders must decide. Technical detail such as IoCs and log events goes in the body or appendices.",
+    "options": [
+      "Malware disassembly notes and IoC lists",
+      "Each analyst's shift notes and ticket numbers",
+      "Every log event in the full incident timeline",
+      "Business impact, status and decisions needed"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CYSA-T1-009",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaSecArch",
+    "skill": "Time synchronization",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "While building an incident timeline, an analyst sees that every web server event appears about 7 minutes after the matching firewall event. Both devices log in UTC. What is the most likely cause?",
+    "explanation": "A steady offset of a few minutes between devices that both log in UTC is clock drift, which a shared NTP source prevents. A time zone mistake would show as whole hours, and a parser or facility setting would not shift every timestamp by the same minutes.",
+    "options": [
+      "The web server rotates its logs hourly",
+      "The SIEM parser uses the wrong format",
+      "The hosts use no common NTP source",
+      "The firewall logs to another facility"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CYSA-T1-010",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaThreat",
+    "skill": "Network indicators",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Match each traffic pattern seen in firewall logs to the activity it most likely shows.",
+    "explanation": "A port scan probes many ports on one host, while a sweep checks one port across many hosts to find live systems. A flood from many sources is a DDoS, and small requests at a fixed rhythm suggest beaconing.",
+    "rows": [
+      "One source, many ports, one target",
+      "One source, one port, many targets",
+      "Many sources flooding one target",
+      "Small regular requests to one domain"
+    ],
+    "columns": [
+      "Beaconing",
+      "Host sweep",
+      "Port scan",
+      "DDoS"
+    ],
+    "correct": [
+      2,
+      1,
+      3,
+      0
+    ]
+  },
+  {
+    "id": "CYSA-T1-011",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaVulnScan",
+    "skill": "Agent-based scanning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Sales staff work from home and connect to the VPN for only a few minutes a week, so the weekly network scan almost never finds their laptops online. Which approach gives current vulnerability data for these laptops?",
+    "explanation": "An agent runs on the laptop itself, assesses it on a schedule wherever it is and reports when it next has a connection. A network scan, credentialed or not, only reaches hosts that are online when it runs.",
+    "options": [
+      "Agent-based scanning on each laptop",
+      "A passive sensor on the core switch",
+      "An external scan of the VPN gateway",
+      "A credentialed scan from the data center"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CYSA-T1-012",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaVulnPrior",
+    "skill": "CVSS v4.0",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "CVSS v4.0 dropped the Scope metric that v3.1 used for flaws whose impact reaches beyond the vulnerable component. How does v4.0 express that impact instead?",
+    "explanation": "CVSS v4.0 splits impact into Vulnerable System (VC, VI, VA) and Subsequent System (SC, SI, SA) metrics, which replace Scope. Attack Requirements is a new exploitability metric, and Exploit Maturity sits in the Threat group.",
+    "options": [
+      "The Supplemental Safety metric",
+      "The Subsequent System metrics",
+      "The Attack Requirements metric",
+      "The Exploit Maturity metric"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CYSA-T1-013",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaIrFrame",
+    "skill": "Diamond Model",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An analyst records an intrusion with the Diamond Model: a known group, a custom remote access trojan, a rented VPS used for command and control, and the finance department's file server. Which vertex is the remote access trojan?",
+    "explanation": "In the Diamond Model the capability is the tool or technique the adversary uses, here the trojan. The rented VPS is the infrastructure vertex, the means of delivering and controlling the capability.",
+    "options": [
+      "Victim",
+      "Adversary",
+      "Capability",
+      "Infrastructure"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CYSA-T1-014",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaIrHandle",
+    "skill": "Order of volatility",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An analyst at a live Linux server has time to capture only one evidence source before the business powers the server off. Which should be captured?",
+    "explanation": "RAM is lost at power-off and holds running processes, network connections and keys, so it is captured first. The disk and its log files survive shutdown, and SIEM logs are already stored elsewhere.",
+    "options": [
+      "Files in /var/log",
+      "Off-host SIEM logs",
+      "System memory (RAM)",
+      "The local disk image"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CYSA-T1-015",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaSecArch",
+    "skill": "Time synchronization",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A firewall logs an outbound connection at 18:20 UTC. The workstation that made it records local time in a zone that is UTC minus 5 hours, with no daylight saving in effect. At what hour of the day (24-hour clock) does the workstation log show the same connection? Type the number only.",
+    "explanation": "Local time is UTC minus 5 hours, so 18:20 UTC is 13:20 on the workstation. Normalizing every source to UTC in the SIEM avoids this kind of hand conversion during an investigation.",
+    "numeric": {
+      "answers": [
+        "13"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "CYSA-T1-016",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaThreat",
+    "skill": "Rogue devices",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A network access control alert reports a new MAC address in a conference room, and its vendor prefix belongs to a single-board computer maker the company never buys from. What should the analyst do first to locate it?",
+    "explanation": "The switch MAC address table maps the address to a physical port, which leads straight to the device and its cable. Blocking the prefix everywhere may stop it but loses the chance to find and preserve it.",
+    "options": [
+      "Find its port in the switch MAC table",
+      "Run a full credentialed vulnerability scan",
+      "Reimage the conference room PCs",
+      "Block the vendor prefix on every switch"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CYSA-T1-017",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaVulnReport",
+    "skill": "Inhibitors to remediation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A scan flags an outdated web server on an imaging system. The device runs vendor software, and its support contract says only the vendor may change it. Which inhibitor to remediation is this?",
+    "explanation": "The fix is blocked because the system is proprietary and only the vendor may change it, so the analyst must work through the vendor and add compensating controls. Business process interruption is about downtime the business will not accept.",
+    "options": [
+      "Business process interruption",
+      "Organizational governance",
+      "Proprietary system",
+      "Degrading functionality"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CYSA-T1-018",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaIrReport",
+    "skill": "Regulatory communication",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A breach exposes personal data of EU residents and is likely to put their rights at risk. Under the GDPR, within how many hours of becoming aware must the controller notify the supervisory authority? Type the number only.",
+    "explanation": "GDPR Article 33 requires notification to the supervisory authority without undue delay and, where feasible, within 72 hours of becoming aware. Individuals must also be told without undue delay when the risk to them is high.",
+    "numeric": {
+      "answers": [
+        "72"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "CYSA-T1-019",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaVulnScan",
+    "skill": "OT scanning",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "At a water treatment plant, an earlier active scan made a programmable logic controller reboot and stop a pump. The plant still wants to know which controllers run outdated firmware. Which approach fits best?",
+    "explanation": "Passive tools identify OT devices and firmware from the traffic they already send, without sending probes that fragile controllers may not handle. Running an active scan at night still sends the same probes that caused the reboot.",
+    "options": [
+      "Passive monitoring of the OT network traffic",
+      "Fuzzing the controllers' Modbus service ports",
+      "A credentialed Nessus scan of each controller",
+      "An aggressive Nmap scan during the night shift"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CYSA-T1-020",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaVulnPrior",
+    "skill": "EPSS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A vulnerability report lists an EPSS score next to each CVE. What does the EPSS score estimate?",
+    "explanation": "FIRST's Exploit Prediction Scoring System gives the probability, from 0 to 1, that a CVE will be exploited in the wild in the next 30 days. Severity, the damage if exploited, is what CVSS measures.",
+    "options": [
+      "The damage done if it is exploited",
+      "The time until a vendor patch ships",
+      "The chance of exploitation in 30 days",
+      "The number of hosts that are affected"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CYSA-T1-021",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaSecArch",
+    "skill": "Windows registry",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An analyst finds a new value under $\\texttt{HKLM\\textbackslash{}Software\\textbackslash{}Microsoft\\textbackslash{}Windows\\textbackslash{}CurrentVersion\\textbackslash{}Run}$ that points to an executable in a temp folder. What does this value do?",
+    "explanation": "Values under the machine Run key launch each time any user logs on, which is why malware uses it for persistence. A RunOnce key runs a program a single time, and drivers are registered under the Services key, not Run.",
+    "options": [
+      "Loads the program as a boot-time driver",
+      "Starts the program at every user logon",
+      "Runs the program once at the next reboot",
+      "Sets the program as a file association"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CYSA-T1-022",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaThreat",
+    "skill": "Host indicators",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A server's CPU has been near 100% for two days, and the top process is $\\texttt{svchost.exe}$ running from $\\texttt{C:\\textbackslash{}Users\\textbackslash{}Public\\textbackslash{}}$. What does this most likely indicate?",
+    "explanation": "The real svchost.exe runs only from the System32 folder, so a copy in a public user folder is a disguise, and sustained high CPU suggests a cryptominer. A legitimate service host would never run from that path.",
+    "options": [
+      "Malware posing as a system process",
+      "A stuck Windows Update service job",
+      "A disk that is failing to respond",
+      "A normal service host under heavy load"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CYSA-T1-023",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaIrFrame",
+    "skill": "Cyber Kill Chain",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Mail logs show a message with a macro-laden spreadsheet reaching 40 mailboxes. No one has opened it yet. At which Cyber Kill Chain phase was the attack stopped?",
+    "explanation": "Delivery is the transmission of the weapon to the target, here the email reaching mailboxes. Weaponization happened earlier when the attacker built the macro document, and exploitation would begin only when a user opened it.",
+    "options": [
+      "Delivery",
+      "Exploitation",
+      "Weaponization",
+      "Installation"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CYSA-T1-024",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaIrHandle",
+    "skill": "Data integrity",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An analyst computes a SHA-256 hash of a forensic image when it is made and again a month later before analysis. The two hashes differ. What does this show?",
+    "explanation": "A matching hash shows the data is bit-for-bit unchanged, so a different hash means the image changed after acquisition. A working write blocker protects the source drive and would not change the image's hash.",
+    "options": [
+      "The image is encrypted at rest",
+      "The write blocker worked correctly",
+      "The drive used a different file system",
+      "The image was altered or corrupted"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CYSA-T1-025",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaSecArch",
+    "skill": "Linux file system",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "On a Linux server, an analyst suspects an attacker copied the local password hashes. Which file holds those hashes?",
+    "explanation": "Modern Linux keeps password hashes in /etc/shadow, readable only by root. /etc/passwd lists accounts but holds only a placeholder where the hash once was.",
+    "options": [
+      "$\\texttt{/etc/group}$",
+      "$\\texttt{/etc/sudoers}$",
+      "$\\texttt{/etc/shadow}$",
+      "$\\texttt{/etc/passwd}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CYSA-T1-026",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaVulnScan",
+    "skill": "Nmap",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An analyst runs $\\texttt{nmap -sn 10.20.0.0/24}$ against a new office subnet. What does this scan do?",
+    "explanation": "The -sn option performs host discovery only (a ping sweep) and skips the port scan, which suits a quick asset inventory. A SYN scan is -sS and version detection is -sV.",
+    "options": [
+      "Fingerprints the operating system of hosts",
+      "Runs a TCP SYN scan of all ports",
+      "Detects service versions on open ports",
+      "Finds live hosts without scanning ports"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CYSA-T1-027",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaVulnPrior",
+    "skill": "CISA KEV",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A scanner finding links to an entry in CISA's Known Exploited Vulnerabilities catalog. What does that entry tell the analyst?",
+    "explanation": "CISA adds a CVE to KEV when there is reliable evidence of active exploitation and clear remediation guidance, so it should jump the queue. KEV entries range across CVSS scores, and most already have a fix.",
+    "options": [
+      "It affects only federal government systems",
+      "No vendor patch is available for it yet",
+      "Attackers are exploiting it in the wild",
+      "Its CVSS base score is at least 9.0"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CYSA-T1-028",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaThreat",
+    "skill": "Host indicators",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An analyst lists scheduled tasks on a workstation and finds this entry:\n\n$$\\begin{array}{l}\\texttt{TaskName: \\textbackslash{}MicrosoftEdgeCheck}\\\\\\texttt{Run As User: SYSTEM}\\\\\\texttt{Schedule: every 15 minutes}\\\\\\texttt{Task To Run: powershell.exe -w hidden -enc SQBFAFgA...}\\end{array}$$\n\nWhat is the most likely purpose of the task?",
+    "explanation": "A hidden, encoded PowerShell command that runs every 15 minutes as SYSTEM under a browser-like name is a way to keep malware running across reboots. It does not move between hosts or send data by itself.",
+    "options": [
+      "Privilege escalation by token theft",
+      "Data exfiltration over DNS queries",
+      "Lateral movement over admin SMB shares",
+      "Persistence through a scheduled task"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CYSA-T1-029",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaIrFrame",
+    "skill": "Cyber Kill Chain",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "An analyst is writing up an intrusion and wants to describe it phase by phase. Reconnaissance is already written up. Put the remaining Lockheed Martin Cyber Kill Chain phases in order.",
+    "explanation": "The chain runs from researching the target, building the weapon and delivering it, through exploiting a flaw and installing persistence, to opening a control channel and finally acting on the goal. Breaking any earlier link stops the later ones.",
+    "options": [
+      "Weaponization",
+      "Delivery",
+      "Exploitation",
+      "Installation",
+      "Command and control",
+      "Actions on objectives"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": "CYSA-T1-030",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaIrHandle",
+    "skill": "Legal hold",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Legal counsel expects a lawsuit and tells IT to stop the automatic deletion of email and files for 12 employees until further notice. What has counsel issued?",
+    "explanation": "A legal hold suspends normal deletion so relevant data is preserved for litigation or investigation. A retention policy is the normal schedule that the hold overrides.",
+    "options": [
+      "A nondisclosure agreement",
+      "A legal hold",
+      "A chain of custody",
+      "A data retention policy"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CYSA-T1-031",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaVulnReport",
+    "skill": "SLA tracking",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Policy gives critical findings 72 hours from detection to be remediated. A critical finding was detected Tuesday at 08:00, and it is now Wednesday at 20:00. How many hours remain before the SLA deadline? Type the number only.",
+    "explanation": "From Tuesday 08:00 to Wednesday 20:00 is 36 hours, so 72 minus 36 leaves 36 hours. Tracking time left, not just age, lets the report warn owners before a breach of SLA.",
+    "numeric": {
+      "answers": [
+        "36"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "CYSA-T1-032",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaIrReport",
+    "skill": "Media communication",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "During an outage caused by an incident, a reporter calls a SOC analyst directly and asks what happened. What should the analyst do?",
+    "explanation": "The IR plan names who speaks to the media so the message is accurate and consistent. Even verified facts shared by an analyst can harm the investigation or the company's legal position.",
+    "options": [
+      "Pass the call along to the incident's lead analyst",
+      "Decline and post an update on social media",
+      "Confirm only the facts the team has verified",
+      "Refer the reporter to the designated PR contact"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CYSA-T1-033",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaSecArch",
+    "skill": "Segmentation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After a breach, the post-incident review finds the attacker moved from one web server to the database tier and then to file servers because all of them sat on one flat VLAN. Which architecture change most directly limits this movement?",
+    "explanation": "Microsegmentation applies allow rules between individual workloads, so a compromised web server cannot freely reach other tiers. A second perimeter firewall still leaves east-west traffic inside the flat network unchecked.",
+    "options": [
+      "Longer retention of firewall logs",
+      "A larger subnet for the data center",
+      "Microsegmentation between workloads",
+      "A second internet-facing firewall"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CYSA-T1-034",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaThreat",
+    "skill": "Application indicators",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Overnight, a new local administrator account named svc_backup2 appeared on a public web server with no change ticket. What should the analyst do next?",
+    "explanation": "The account is evidence, so the analyst first learns how and by what process it was created, which shows the scope of the compromise. Deleting it or rebooting destroys evidence before containment is planned.",
+    "options": [
+      "Reboot the web server to clear it",
+      "Reset every domain user password now",
+      "Delete the new account right away",
+      "Check logs for what created the account"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CYSA-T1-035",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaVulnScan",
+    "skill": "Nmap output",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An Nmap scan of a web server returns this output:\n$$\\begin{array}{l}\\texttt{PORT\\ \\ \\ \\ \\ STATE\\ \\ \\ \\ \\ SERVICE}\\\\\\texttt{22/tcp\\ \\ \\ open\\ \\ \\ \\ \\ \\ ssh}\\\\\\texttt{80/tcp\\ \\ \\ filtered\\ \\ http}\\\\\\texttt{443/tcp\\ \\ closed\\ \\ \\ \\ https}\\end{array}$$\nWhat does the state of port 80 most likely mean?",
+    "explanation": "Filtered means Nmap got no reply or an ICMP unreachable, so it cannot tell whether the port is open, usually because a firewall drops the probes. A closed port answers with a TCP reset, as port 443 did here.",
+    "options": [
+      "A service is listening on it",
+      "The web server refused a login",
+      "The host answered with a reset",
+      "A firewall dropped the probes"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CYSA-T1-036",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaVulnPrior",
+    "skill": "Prioritization",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Four findings come in on the same day: a CVSS 9.1 flaw on a lab server with no network path to production, a CVSS 7.5 flaw on the internet-facing VPN gateway that is in CISA's KEV catalog, a CVSS 8.0 flaw on the internal wiki with an EPSS of 0.01, and a CVSS 6.5 flaw on a print server. Which should be fixed first?",
+    "explanation": "The VPN flaw is known to be exploited and sits on an exposed, critical asset, so its real risk is highest. The 9.1 has the top base score, but with no network path to production an attacker has little way to reach it.",
+    "options": [
+      "Wiki server, CVSS 8.0",
+      "Lab server, CVSS 9.1",
+      "VPN gateway, CVSS 7.5",
+      "Print server, CVSS 6.5"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CYSA-T1-037",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaSecArch",
+    "skill": "Zero trust",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A remote employee passes MFA on a company laptop, but the device posture check reports that its EDR agent has not reported in for 10 days. In a zero trust design, what should happen to the access request?",
+    "explanation": "Zero trust evaluates every request on identity and device health together, so a failed posture check blocks or restricts access even after a good MFA login. Ownership of the device grants no implicit trust.",
+    "options": [
+      "Allow it because the user passed MFA",
+      "Allow it because the device is company owned",
+      "Allow it and send the SOC an alert only",
+      "Deny or limit it until posture is fixed"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CYSA-T1-038",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaIrFrame",
+    "skill": "NIST SP 800-61",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A SOC manager is updating the IR plan to NIST SP 800-61 Rev. 3, published in April 2025. Around which model does that revision organize incident response activities?",
+    "explanation": "Rev. 3 maps incident response to the six Cybersecurity Framework 2.0 Functions: Govern, Identify, Protect, Detect, Respond and Recover. The older four-phase lifecycle from Rev. 2 is still widely taught but is no longer the document's structure.",
+    "options": [
+      "The ATT&CK enterprise tactics",
+      "The OSSTMM test channels",
+      "The CSF 2.0 Functions",
+      "The Kill Chain phases"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CYSA-T1-039",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaIrHandle",
+    "skill": "Containment",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A workstation is beaconing to a known command and control domain. The analyst must stop it reaching other hosts while keeping memory intact for analysis. What should the analyst do first?",
+    "explanation": "EDR network containment cuts the host off from everything except the management console, so the threat cannot spread and memory stays available. Powering off or reimaging destroys volatile evidence.",
+    "options": [
+      "Power it off and pull the drive",
+      "Delete the file and keep watching",
+      "Reimage it from the golden image",
+      "Isolate it through the EDR agent"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CYSA-T1-040",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaThreat",
+    "skill": "Email header analysis",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A spoofed invoice email reached inboxes. Its header shows:\n\n$$\\begin{array}{l}\\texttt{Authentication-Results: mx.contoso.com;}\\\\\\texttt{\\ spf=fail smtp.mailfrom=contoso.com;}\\\\\\texttt{\\ dkim=none;}\\\\\\texttt{\\ dmarc=fail (p=none) header.from=contoso.com}\\end{array}$$\n\nWhy was the message delivered?",
+    "explanation": "DMARC failed, but a policy of p=none tells receivers only to report, not to quarantine or reject. Moving the domain to quarantine or reject would stop such mail; SPF did not pass, so its record was not the reason.",
+    "options": [
+      "The DKIM key length is too short",
+      "The message passed a reverse DNS check",
+      "The sender's SPF record allows all",
+      "The domain's DMARC policy is none"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CYSA-T1-041",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaSecArch",
+    "skill": "Cloud shared responsibility",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A vulnerability report flags a missing operating system patch on a virtual machine the company rents from an IaaS provider. Who is responsible for applying the patch?",
+    "explanation": "In IaaS the provider secures the physical hosts and hypervisor, while the customer manages the guest operating system and everything above it. The provider never patches the customer's guest OS.",
+    "options": [
+      "The provider and customer equally",
+      "The customer",
+      "The cloud provider",
+      "The hypervisor vendor"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CYSA-T1-042",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaVulnScan",
+    "skill": "Web app testing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "During a manual test of a web application, an analyst needs to catch each request between the browser and the server, change a hidden form field and resend it. Which tool is built for this?",
+    "explanation": "Burp Suite is an intercepting proxy that lets the tester pause, edit and replay HTTP requests. Nikto scans a web server for known files and misconfigurations but does not proxy traffic.",
+    "options": [
+      "Burp Suite",
+      "OpenVAS",
+      "Nikto",
+      "ScoutSuite"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CYSA-T1-043",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaVulnPrior",
+    "skill": "SQL injection",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A web server log shows this request:\n$$\\begin{array}{l}\\texttt{GET /products?id=12\\%27\\%20OR\\%20\\%271\\%27\\%3D\\%271 HTTP/1.1}\\end{array}$$\nWhich attack is this, and what is the best fix?",
+    "explanation": "Decoded, the parameter is 12' OR '1'='1, a classic attempt to make a WHERE clause always true. Parameterized queries keep input as data so it cannot change the SQL; output encoding stops script injection, not SQL.",
+    "options": [
+      "Cross-site scripting; output encoding",
+      "Request forgery; anti-forgery tokens",
+      "SQL injection; parameterized queries",
+      "Path traversal; path canonicalization"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CYSA-T1-044",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaVulnReport",
+    "skill": "Metrics and KPIs",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "A manager wants two KPIs that show whether the vulnerability management program is getting better at fixing problems. Which metrics should the report track? (Choose two.)",
+    "explanation": "Time to remediate and SLA compliance measure how fast and how reliably findings are fixed. Plugin and scan counts measure scanning activity, not remediation outcomes.",
+    "options": [
+      "Count of scans scheduled each week",
+      "Share of findings closed within SLA",
+      "Mean time to remediate by severity",
+      "Number of scanner plugins installed"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "select": 2
+  },
+  {
+    "id": "CYSA-T1-045",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaIrReport",
+    "skill": "Root cause analysis",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Lessons learned found that an attacker phished a user's password and used it to log in to the VPN, which accepts passwords alone. What is the root cause to fix?",
+    "explanation": "Root cause is the underlying condition that let the incident happen; with MFA enforced, a stolen password alone would not have worked. The click was the trigger, but users will always click some links.",
+    "options": [
+      "The alert fired outside office hours",
+      "The attacker used valid credentials",
+      "The user clicked the phishing link",
+      "VPN logins did not require MFA"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CYSA-T1-046",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaThreat",
+    "skill": "Obfuscated links",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A phishing email shows the link text https://portal.contoso.com, but hovering reveals $\\texttt{http://contoso.com.login-verify.example/auth}$. Which domain will actually receive the request?",
+    "explanation": "A host name is read from the right: the registered domain is login-verify.example, and contoso.com is only a subdomain label the attacker chose. The link text is decoration and has no effect on where the browser goes.",
+    "options": [
+      "contoso.com",
+      "verify.example",
+      "login-verify.example",
+      "portal.contoso.com"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CYSA-T1-047",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaIrFrame",
+    "skill": "NIST SP 800-61",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Using the NIST SP 800-61 Rev. 3 mapping, an IR team files its work to contain an infected server and stop the attacker's access under one CSF 2.0 Function. Which Function is it?",
+    "explanation": "Respond covers incident management, analysis, mitigation (containment and eradication) and incident communication. Recover covers restoring assets and operations after the incident is under control.",
+    "options": [
+      "Protect",
+      "Respond",
+      "Detect",
+      "Recover"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CYSA-T1-048",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaIrHandle",
+    "skill": "Containment and eradication",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "An analyst is writing up the response to a compromised file server. Classify each action by incident response step.",
+    "explanation": "Quarantining the server and blocking its C2 domain limit the damage, which is containment. Removing the persistence mechanism is eradication, and restoring data with close monitoring is recovery.",
+    "rows": [
+      "Move the server to a quarantine VLAN",
+      "Block the C2 domain at the DNS resolver",
+      "Remove the attacker's scheduled task",
+      "Restore shares from a clean backup and monitor"
+    ],
+    "columns": [
+      "Containment",
+      "Recovery",
+      "Eradication"
+    ],
+    "correct": [
+      0,
+      0,
+      2,
+      1
+    ]
+  },
+  {
+    "id": "CYSA-T1-049",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaSecArch",
+    "skill": "Containers",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An orchestrator restarted a compromised container, and the analyst finds that its logs and changed files are gone. What should be in place to keep this evidence next time?",
+    "explanation": "Containers are ephemeral, so anything written inside them disappears when they are replaced; forwarding logs to a central platform keeps them. Running as root increases risk and preserves nothing.",
+    "options": [
+      "Ship container logs to a central store",
+      "Pin the image to its latest version tag",
+      "Raise the memory limit on the container",
+      "Run the container as the root user"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CYSA-T1-050",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaVulnScan",
+    "skill": "Cloud scanning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team wants to check its AWS accounts against the CIS AWS Foundations Benchmark, looking for public S3 buckets, unused access keys and logging that is turned off. Which tool fits this job?",
+    "explanation": "Prowler audits AWS (and also Azure, Google Cloud and Kubernetes) configurations against CIS and other frameworks through the provider's APIs. Nikto and Metasploit test hosts and services, not cloud account settings.",
+    "options": [
+      "Wireshark",
+      "Metasploit",
+      "Prowler",
+      "Nikto"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CYSA-T1-051",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaVulnPrior",
+    "skill": "IDOR",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A customer changes the address $\\texttt{/api/invoices/10442}$ to $\\texttt{/api/invoices/10443}$ and sees another customer's invoice. Which vulnerability is this?",
+    "explanation": "The app trusts the object ID in the request and never checks that the invoice belongs to the logged-in user, which is an IDOR, a form of broken access control. The fix is a server-side authorization check on every object.",
+    "options": [
+      "Server-side request forgery",
+      "Insecure direct object reference",
+      "Cross-site request forgery",
+      "Insecure deserialization"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CYSA-T1-052",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaThreat",
+    "skill": "File hashing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An analyst has a suspicious attachment from a targeted phishing email and wants to know whether it is known malware without running it or sharing its contents. What should they do first?",
+    "explanation": "Looking up the file's SHA-256 hash reveals whether it is already known without executing it or disclosing the file. Uploading a targeted sample to a public scanner can tip off the attacker and expose company data in the file.",
+    "options": [
+      "Open it on a spare test laptop",
+      "Check its hash against reputation data",
+      "Open it in an isolated sandbox VM",
+      "Upload the file to a public online scanner"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CYSA-T1-053",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaSecArch",
+    "skill": "Privileged access management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A review finds that five administrators share one domain admin password stored in a spreadsheet, so the SOC cannot tell who used it. What fixes both the sharing and the attribution problem?",
+    "explanation": "A privileged access management vault checks credentials out to named users, logs each use and can rotate the password afterward. A longer or more often changed password is still shared, so actions still cannot be attributed.",
+    "options": [
+      "A separate spreadsheet for each admin",
+      "A password change every 30 days",
+      "A longer password for the shared account",
+      "A PAM vault with per-user checkout"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CYSA-T1-054",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaVulnReport",
+    "skill": "Recurrence",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Each month the same outdated library appears on newly built web servers, even though last month's hosts were patched and verified. What should the report recommend?",
+    "explanation": "A finding that recurs on fresh builds points to the source, usually a golden image or template that still carries the old library. Scanning more often only finds the same problem sooner.",
+    "options": [
+      "Accept the risk for the newly built hosts",
+      "Raise the severity rating of the finding",
+      "Scan the new web servers twice as often",
+      "Update the base image used for new builds"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CYSA-T1-055",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaIrReport",
+    "skill": "Lessons learned",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "A lessons-learned meeting is held two weeks after a contained intrusion. Which outcomes should it produce? (Choose two.)",
+    "explanation": "Lessons learned turns what went wrong into specific improvements, each with an owner and a date so they get done. A blame-focused review makes people hide mistakes next time.",
+    "options": [
+      "Blame assigned to the first responder",
+      "The case closed before actions are set",
+      "An owner and due date for each action",
+      "Playbook updates for the gaps found"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "select": 2
+  },
+  {
+    "id": "CYSA-T1-056",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaIrFrame",
+    "skill": "Preparation",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The IR team, legal counsel, communications staff and two executives meet in a conference room and talk through how they would handle a ransomware attack. No systems are touched. What type of exercise is this?",
+    "explanation": "A tabletop exercise is a discussion-based walk-through of a scenario that tests roles, decisions and the plan without touching production. A full-scale simulation exercises real systems and people as if the incident were live.",
+    "options": [
+      "Red team engagement",
+      "Tabletop exercise",
+      "Full-scale simulation",
+      "Parallel recovery test"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CYSA-T1-057",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaIrHandle",
+    "skill": "Scope and impact",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "To scope an incident, an analyst pulls these firewall log lines:\n\n$$\\begin{array}{l}\\texttt{10.1.4.22 -> 203.0.113.50:443 ALLOW}\\\\\\texttt{10.1.4.31 -> 198.51.100.9:443 ALLOW}\\\\\\texttt{10.1.4.22 -> 203.0.113.50:443 ALLOW}\\\\\\texttt{10.1.7.15 -> 203.0.113.50:443 ALLOW}\\\\\\texttt{10.1.9.40 -> 203.0.113.50:8443 ALLOW}\\\\\\texttt{10.1.4.31 -> 203.0.113.51:443 ALLOW}\\end{array}$$\n\nHow many distinct internal hosts connected to the C2 address 203.0.113.50? Type the number only.",
+    "explanation": "The hosts 10.1.4.22, 10.1.7.15 and 10.1.9.40 reached 203.0.113.50 (10.1.4.22 twice). 10.1.4.31 connected only to other addresses, including 203.0.113.51, which is not the C2 address.",
+    "numeric": {
+      "answers": [
+        "3"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "CYSA-T1-058",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaThreat",
+    "skill": "Packet capture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An analyst needs a capture of only HTTPS traffic to and from host 10.1.1.5 on interface eth0, saved to a file. Which command does this?",
+    "explanation": "The -w flag writes packets to a file, and host 10.1.1.5 and port 443 keeps only that host's HTTPS traffic. Using or would capture all of the host's traffic plus every other host's port 443 traffic, and -r reads a file instead of writing one.",
+    "options": [
+      "$\\texttt{tcpdump -i eth0 -r out.pcap host 10.1.1.5 and port 443}$",
+      "$\\texttt{tcpdump -i eth0 -w out.pcap net 10.1.1.0 and port 80}$",
+      "$\\texttt{tcpdump -i eth0 -w out.pcap host 10.1.1.5 and port 443}$",
+      "$\\texttt{tcpdump -i eth0 -w out.pcap host 10.1.1.5 or port 443}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CYSA-T1-059",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaVulnScan",
+    "skill": "False positives",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A scanner flags a Linux web server as vulnerable because its Apache banner shows an old version. The distribution's package changelog shows that the fix was backported into the installed package. How should the analyst classify the finding?",
+    "explanation": "The scanner reported a flaw that is not there, which is a false positive; banner checks often miss vendor backports. A false negative is the opposite, a real flaw the scanner did not report.",
+    "options": [
+      "False positive",
+      "False negative",
+      "True positive",
+      "True negative"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CYSA-T1-060",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaVulnPrior",
+    "skill": "SSRF",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A web app lets users give a URL for a profile picture, and the server fetches it. The proxy log shows the server requesting $\\texttt{http://169.254.169.254/latest/meta-data/iam/}$ after one upload. Which vulnerability is being exploited?",
+    "explanation": "The attacker made the server send a request to the cloud metadata service, which only the server can reach, to steal credentials. Fixes include an allowlist of destinations and requiring IMDSv2 tokens.",
+    "options": [
+      "Open redirect",
+      "Server-side request forgery",
+      "Remote file inclusion",
+      "Reflected cross-site scripting"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CYSA-T1-061",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaSecArch",
+    "skill": "MFA",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Sign-in logs show a user received 40 push approval requests between 02:00 and 02:20, and the last one was approved from the user's phone. Which change best reduces the chance of this attack succeeding?",
+    "explanation": "This is MFA fatigue: the attacker already has the password and floods prompts until one is approved. Number matching makes the user type a code shown on the sign-in screen, which a tired user cannot do by accident. SMS codes are weaker, not stronger.",
+    "options": [
+      "A longer password for the user",
+      "SMS codes in place of push prompts",
+      "A shorter VPN session timeout",
+      "Number matching on push prompts"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CYSA-T1-062",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaThreat",
+    "skill": "Threat actors",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "An intelligence report on a group targeting the SOC's sector describes affiliates who rent its ransomware, a leak site for stolen data, and payment demands scaled to each victim's revenue. Which type of actor does the report describe?",
+    "explanation": "A ransomware-as-a-service model with extortion and revenue-based demands shows a financial motive run like a business, which marks organized crime. Nation-state groups usually seek espionage or disruption, and hacktivists act for a cause rather than payment.",
+    "options": [
+      "Hacktivist",
+      "Malicious insider",
+      "Organized crime",
+      "Nation-state"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CYSA-T1-063",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaIrFrame",
+    "skill": "Preparation",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "A team is writing a ransomware playbook before any incident occurs. Which two items should the playbook define? (Choose two.)",
+    "explanation": "A playbook gives responders the decision authority and the concrete response steps for one incident type, such as isolating an endpoint. Scan schedules, budgets and password rules belong in other policies and procedures.",
+    "options": [
+      "Who may authorize taking systems offline",
+      "Password complexity rules for users",
+      "The quarterly vulnerability scan schedule",
+      "The annual budget for security tools",
+      "Steps to isolate an infected endpoint"
+    ],
+    "correct": [
+      0,
+      4
+    ],
+    "select": 2
+  },
+  {
+    "id": "CYSA-T1-064",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaIrHandle",
+    "skill": "Cloud incidents",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A compromised virtual machine in a public cloud must be removed from service, but the team needs its disks for analysis. What should be done before the instance is terminated?",
+    "explanation": "Terminating an instance can delete its attached volumes, so snapshots preserve the disks as evidence. Rebooting loses memory and does not remove a persistent attacker.",
+    "options": [
+      "Reboot it to clear the attacker",
+      "Snapshot its disk volumes first",
+      "Terminate it and start a clean copy",
+      "Delete its security group rules"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CYSA-T1-065",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaSecArch",
+    "skill": "MFA",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "The SOC wants to move administrators to MFA methods that resist phishing proxies. Which two methods meet that goal? (Choose two.)",
+    "explanation": "FIDO2 keys and smart cards perform a cryptographic check bound to the real site or a certificate, so a fake proxy site cannot relay them. One-time codes and push approvals can be typed or approved into a phishing page and replayed.",
+    "options": [
+      "Push approval prompts",
+      "FIDO2 security keys",
+      "Email one-time codes",
+      "SMS one-time codes",
+      "Certificate-based smart cards"
+    ],
+    "correct": [
+      1,
+      4
+    ],
+    "select": 2
+  },
+  {
+    "id": "CYSA-T1-066",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaVulnScan",
+    "skill": "Static and dynamic analysis",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "A development team is choosing tests for a new payment API. Which two are forms of dynamic analysis? (Choose two.)",
+    "explanation": "Dynamic analysis tests the software while it runs, as DAST and fuzzing do. SAST, code review and software composition analysis of dependencies all examine code or manifests without running them.",
+    "options": [
+      "Fuzzing the running API with malformed requests",
+      "A SAST scan of the source code at each commit",
+      "A check of the dependency list for flawed libraries",
+      "A peer review of the pull request's code",
+      "A DAST scan of the API running in staging"
+    ],
+    "correct": [
+      0,
+      4
+    ],
+    "select": 2
+  },
+  {
+    "id": "CYSA-T1-067",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaVulnPrior",
+    "skill": "Compensating controls",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "A scan finds a critical flaw in the login page of a vendor-supplied HR portal. The vendor's fix is six weeks away, and the portal must stay online. Which two are compensating controls the analyst could recommend? (Choose two.)",
+    "explanation": "Compensating controls cut the risk when the real fix cannot be applied yet, here by blocking the exploit at the WAF (virtual patching) and shrinking who can reach the page. Moving dates, relabeling or rescanning leave the exposure unchanged.",
+    "options": [
+      "A weekly rescan until the fix arrives",
+      "A WAF rule that blocks the exploit pattern",
+      "A later due date for the finding in the tracker",
+      "A false positive label on the finding",
+      "Access to the portal only through the VPN"
+    ],
+    "correct": [
+      1,
+      4
+    ],
+    "select": 2
+  },
+  {
+    "id": "CYSA-T1-068",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaVulnReport",
+    "skill": "Inhibitors to remediation",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "An analyst sorts the reasons owners gave for not fixing findings this quarter. Match each reason to its inhibitor to remediation.",
+    "explanation": "A patch that breaks features degrades functionality, a reboot during production interrupts a business process, and approval rules are organizational governance. An unsupported OS is a legacy system with no patch to apply.",
+    "rows": [
+      "The patch breaks a plugin users depend on",
+      "A reboot would stop the production line mid-shift",
+      "The fix waits for the monthly change board",
+      "The server runs an OS the vendor no longer supports"
+    ],
+    "columns": [
+      "Business process interruption",
+      "Legacy system",
+      "Organizational governance",
+      "Degrading functionality"
+    ],
+    "correct": [
+      3,
+      0,
+      2,
+      1
+    ]
+  },
+  {
+    "id": "CYSA-T1-069",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaIrReport",
+    "skill": "Stakeholder communication",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "An IR lead plans who to bring in for each part of a data breach. Match each need to the stakeholder.",
+    "explanation": "Crimes such as extortion go to law enforcement, mandatory notices go to regulators, and legal counsel handles contracts and privilege. Public relations owns statements to the media.",
+    "rows": [
+      "An extortion demand that may be a crime",
+      "Required breach notice in a regulated sector",
+      "Contract duties and privilege over reports",
+      "A statement for a news story"
+    ],
+    "columns": [
+      "Regulators",
+      "Public relations",
+      "Legal counsel",
+      "Law enforcement"
+    ],
+    "correct": [
+      3,
+      0,
+      2,
+      1
+    ]
+  },
+  {
+    "id": "CYSA-T1-070",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaThreat",
+    "skill": "Threat intelligence sharing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The SOC wants its threat intelligence platform to pull indicators from its industry sharing group automatically, in a structured, machine-readable form. What should the group provide?",
+    "explanation": "STIX is the structured language for indicators, actors and TTPs, and TAXII is the protocol for exchanging it automatically. PDF reports and emailed spreadsheets need a person to read and enter them.",
+    "options": [
+      "An RSS feed of PDF intel reports",
+      "A syslog stream sent over TLS",
+      "A TAXII feed of STIX objects",
+      "A weekly CSV of IPs by email"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CYSA-T1-071",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaSecArch",
+    "skill": "Security architecture controls",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Match each SOC need to the technology that meets it.",
+    "explanation": "A CASB gives visibility and control over cloud app use, DLP inspects content for sensitive data, SOAR automates response playbooks, and PAM controls privileged credentials.",
+    "rows": [
+      "See which unsanctioned cloud apps staff use",
+      "Stop card numbers leaving in email",
+      "Run an enrichment playbook on each alert",
+      "Grant time-limited admin credentials"
+    ],
+    "columns": [
+      "PAM",
+      "SOAR",
+      "CASB",
+      "DLP"
+    ],
+    "correct": [
+      2,
+      3,
+      1,
+      0
+    ]
+  },
+  {
+    "id": "CYSA-T1-072",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaIrFrame",
+    "skill": "IR roles",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "During a major breach, one person sets priorities for the responders, approves containment decisions and is the single point of contact for senior management. Which role is this?",
+    "explanation": "The incident commander (incident manager) coordinates the response and owns decisions and status reporting. The lead forensic analyst works the evidence but does not direct the whole response.",
+    "options": [
+      "Lead forensic analyst",
+      "Chief privacy officer",
+      "SOC tier 1 analyst",
+      "Incident commander"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CYSA-T1-073",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaIrHandle",
+    "skill": "Eradication",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Analysis shows a kernel-level rootkit on a server that hides its own files and processes. Which eradication step is most reliable?",
+    "explanation": "A rootkit controls what the running system reports, so scans and manual deletion cannot be trusted to find every part. Rebuilding from known-good media is the reliable way to remove it.",
+    "options": [
+      "Rebuild it from trusted media",
+      "Delete the rootkit's driver file",
+      "Run a full antivirus scan",
+      "Roll back to a restore point"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CYSA-T1-074",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaVulnScan",
+    "skill": "Scanning tools",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Match each task to the tool that fits it best.",
+    "explanation": "Nikto is a web server scanner, Metasploit is an exploitation framework used to validate findings, GDB is a debugger and ScoutSuite audits AWS, Azure and Google Cloud configurations. Each answers a different question about the same finding.",
+    "rows": [
+      "Find default files and outdated software on a web server",
+      "Confirm that a reported flaw can really be exploited",
+      "Step through a binary to see what caused a crash",
+      "Audit cloud accounts against security best practices"
+    ],
+    "columns": [
+      "Nikto",
+      "Metasploit",
+      "ScoutSuite",
+      "GDB"
+    ],
+    "correct": [
+      0,
+      1,
+      3,
+      2
+    ]
+  },
+  {
+    "id": "CYSA-T1-075",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaVulnPrior",
+    "skill": "Risk response",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "After a risk review, a company buys a cyber insurance policy that covers losses from ransomware. Which risk response is this?",
+    "explanation": "Insurance shifts the financial impact to a third party, which is risk transference. Mitigation would reduce the likelihood or impact with controls, such as better backups.",
+    "options": [
+      "Avoid",
+      "Transfer",
+      "Accept",
+      "Mitigate"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CYSA-T1-076",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaThreat",
+    "skill": "Intelligence confidence",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A single unverified forum post lists an IP address as a ransomware server, and the intelligence platform rates it low confidence. How should the SOC use it?",
+    "explanation": "A low-confidence indicator is still useful for detection and context, but blocking automatically on it risks disrupting legitimate traffic. Discarding it throws away a possible early warning.",
+    "options": [
+      "Alert on it but do not auto-block",
+      "Block it at every firewall at once",
+      "Add it to the vulnerability scanner",
+      "Discard it until it is confirmed"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CYSA-T1-077",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaSecArch",
+    "skill": "Regular expressions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A SOAR rule uses the regular expression $\\texttt{\\^{}10\\textbackslash{}.20\\textbackslash{}.\\textbackslash{}d\\{1,3\\}\\textbackslash{}.\\textbackslash{}d\\{1,3\\}\\$}$ to decide whether an address is internal. Which addresses does it match?",
+    "explanation": "The pattern fixes the first two octets as 10 and 20 and allows any one to three digits in the last two, which covers 10.20.0.0/16. A /24 would need the third octet fixed as well.",
+    "options": [
+      "Addresses in 10.0.0.0/8",
+      "Addresses in 10.20.0.0/24",
+      "Addresses in 10.20.0.0/16",
+      "Any address ending in .20"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CYSA-T1-078",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaVulnReport",
+    "skill": "Compliance reporting",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A merchant must show its acquiring bank that its internet-facing cardholder data environment passed this quarter's external vulnerability scan. Which report does it provide?",
+    "explanation": "PCI DSS requires quarterly external scans performed by an Approved Scanning Vendor, and the passing ASV report is the evidence. Internal scans are also required but do not replace the external ASV scan.",
+    "options": [
+      "A CIS benchmark configuration report for the servers",
+      "A passing scan report from an Approved Scanning Vendor",
+      "An internal credentialed scan report from the SOC",
+      "A penetration test executive summary from the last audit"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CYSA-T1-079",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaIrReport",
+    "skill": "Post-incident activity",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "Put these post-incident reporting activities in order.",
+    "explanation": "The timeline gives the meeting a shared set of facts, the meeting produces findings and recommendations for the report, and the recommendations are then tracked until done.",
+    "options": [
+      "Assemble the incident timeline from all sources",
+      "Hold the lessons-learned meeting",
+      "Write and distribute the final incident report",
+      "Track each recommendation to completion"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "CYSA-T1-080",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaIrFrame",
+    "skill": "Testing methodologies",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A testing team wants a peer-reviewed methodology for security testing that measures operational security across human, physical, wireless, telecommunications and data network channels. Which methodology fits?",
+    "explanation": "The Open Source Security Testing Methodology Manual (OSSTMM) defines tests and metrics across these operational channels. The OWASP Testing Guide is focused on web applications.",
+    "options": [
+      "MITRE ATT&CK",
+      "OSSTMM",
+      "OWASP Testing Guide",
+      "Diamond Model"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CYSA-T1-081",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaIrHandle",
+    "skill": "Evidence acquisition",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "An analyst is imaging a suspect hard drive for a case that may go to court. Which two steps help preserve the evidence's integrity? (Choose two.)",
+    "explanation": "A write blocker stops any change to the source, and matching hashes of the source and image prove the copy is exact. Defragmenting, mounting read-write or booting the suspect system all change the evidence.",
+    "options": [
+      "Hash the source drive and the image",
+      "Boot the suspect system to copy files",
+      "Mount the drive read-write to browse it",
+      "Defragment the drive before imaging",
+      "Connect it through a hardware write blocker"
+    ],
+    "correct": [
+      0,
+      4
+    ],
+    "select": 2
+  },
+  {
+    "id": "CYSA-T1-082",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaVulnScan",
+    "skill": "PCI DSS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A retailer under PCI DSS v4.0.1 runs its quarterly internal vulnerability scan. Which findings must be resolved and rescanned for the scan to pass?",
+    "explanation": "PCI DSS requirement 11.3.1 says internal scans pass when high-risk and critical vulnerabilities, as ranked by the entity's risk process, are resolved and rescanned. ASVs are required only for the external scans.",
+    "options": [
+      "Only findings on internet-facing hosts",
+      "All high-risk and critical findings",
+      "Only findings an ASV confirms",
+      "Every finding of any severity"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CYSA-T1-083",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaVulnPrior",
+    "skill": "Remediation SLA",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Policy gives high findings 14 days to be remediated. The report shows one high finding detected 9 days ago and another detected 17 days ago. How many days past the SLA is the older finding? Type the number only.",
+    "explanation": "17 minus 14 is 3 days overdue, while the 9-day finding still has 5 days left. Reporting days past SLA shows which owners need escalation first.",
+    "numeric": {
+      "answers": [
+        "3"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "CYSA-T1-084",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaThreat",
+    "skill": "Threat hunting",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two activities are examples of threat hunting? (Choose two.)",
+    "explanation": "Hunting is proactive: analysts form a hypothesis, often from new intelligence, and search data for activity that no alert has caught. Working an existing alert queue is triage, and scanning and patching are vulnerability management.",
+    "options": [
+      "Running the weekly vulnerability scan",
+      "Searching logs for a newly reported TTP",
+      "Patching hosts listed in a scan report",
+      "Testing a hypothesis against EDR telemetry",
+      "Triaging alerts already in the SIEM queue"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "select": 2
+  },
+  {
+    "id": "CYSA-T1-085",
+    "section": "cysa",
+    "test": 1,
+    "module": 1,
+    "domain": "cysaSecArch",
+    "skill": "AI in the SOC",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "A SOC plans to use a generative AI assistant to summarize incidents. Which two are risks the team should plan for? (Choose two.)",
+    "explanation": "Generative models can state wrong details with confidence, and prompts may carry incident data to a third party unless the service is approved for it. Faster triage and consistent enrichment are the benefits the team is hoping for, not risks.",
+    "options": [
+      "Faster triage of low-risk alerts",
+      "Fewer analyst hours on repetitive work",
+      "Sensitive data sent to an outside model",
+      "Confident summaries that contain errors",
+      "Consistent enrichment of every alert"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "select": 2
+  },
+  {
+    "id": "CYSA-T2-001",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaSecArch",
+    "skill": "JSON and APIs",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A SOAR playbook receives this alert from the email gateway:\n\n$$\\begin{array}{l}\\texttt{\\{\"alert\": \"phish\\_click\",}\\\\\\texttt{\\ \"sender\": \"billing@contoso-pay.example\",}\\\\\\texttt{\\ \"recipient\": \"jlee@contoso.com\",}\\\\\\texttt{\\ \"src\\_ip\": \"10.1.4.22\",}\\\\\\texttt{\\ \"url\\_domain\": \"contoso-pay.example\"\\}}\\end{array}$$\n\nWhich field should the playbook use to isolate the device that clicked the link?",
+    "explanation": "The src_ip value is the internal address of the device that made the click, so it is what an EDR isolation step needs. The recipient names the user, not the device, and sender and url_domain identify the attacker's side.",
+    "options": [
+      "$\\texttt{sender}$",
+      "$\\texttt{url\\_domain}$",
+      "$\\texttt{recipient}$",
+      "$\\texttt{src\\_ip}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CYSA-T2-002",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaThreat",
+    "skill": "Network indicators",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "NetFlow shows a finance workstation sent 18 GB to an unfamiliar external IP between 02:00 and 03:30. The workstation has no backup or sync software installed. What does this most likely indicate?",
+    "explanation": "A large outbound transfer at night to an unknown address, with no software that explains it, points to data theft. An update download would be inbound, and the missing backup software rules out a backup job.",
+    "options": [
+      "A failing network adapter",
+      "A large Windows update download",
+      "Possible data exfiltration",
+      "A scheduled cloud backup job"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CYSA-T2-003",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaVulnScan",
+    "skill": "Asset discovery",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A company is starting a vulnerability management program and finds that nobody knows how many devices are on its networks. What should the team do first?",
+    "explanation": "A program can only scan, rank and fix what it knows about, so asset discovery and an inventory with owners and criticality come first. Patching before the inventory exists leaves unknown hosts untouched.",
+    "options": [
+      "Run a penetration test of the perimeter",
+      "Discover and inventory the assets",
+      "Accept the risk of unknown devices",
+      "Deploy patches to every server"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CYSA-T2-004",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaVulnPrior",
+    "skill": "CVSS v3.1",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A finding has a CVSS v3.1 base score of 7.2. Which qualitative severity rating does that score have?",
+    "explanation": "In CVSS v3.1, 7.0 to 8.9 is High, 4.0 to 6.9 is Medium and 9.0 to 10.0 is Critical. CVSS v4.0 uses the same rating bands.",
+    "options": [
+      "Low",
+      "Critical",
+      "Medium",
+      "High"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CYSA-T2-005",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaIrFrame",
+    "skill": "MITRE ATT&CK",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "EDR telemetry shows an attacker reading the memory of the LSASS process on a domain-joined workstation. Which MITRE ATT&CK tactic does this behavior serve?",
+    "explanation": "Dumping LSASS memory (OS Credential Dumping) is a Credential Access technique: the goal is to steal password hashes or tickets. Those credentials may later enable lateral movement, but that is a different tactic.",
+    "options": [
+      "Defense Evasion",
+      "Privilege Escalation",
+      "Credential Access",
+      "Lateral Movement"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CYSA-T2-006",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaIrHandle",
+    "skill": "Container incidents",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A container in a Kubernetes pod is running a cryptominer. The orchestrator will replace the pod if it fails a health check. What should the analyst do first?",
+    "explanation": "Containers are ephemeral, so their logs and writable layer disappear when the pod is replaced; capturing them first preserves the evidence. Restarting, scaling to zero or redeploying all destroy it.",
+    "options": [
+      "Export its logs and file system first",
+      "Scale the deployment to zero replicas",
+      "Rebuild the image and redeploy at once",
+      "Restart the pod to clear the attacker"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CYSA-T2-007",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaVulnReport",
+    "skill": "Stakeholder identification",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Fixing a critical finding on the payroll server needs a four-hour outage during the pay cycle. Who should agree to the outage window?",
+    "explanation": "The business owner accepts the operational impact of downtime and can pick a window that does not hurt payroll. The SOC can report the risk but does not own the business process.",
+    "options": [
+      "The payroll system's business owner",
+      "The external financial auditor",
+      "The SOC's tier 1 analysts",
+      "The scanner vendor's technical support team"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CYSA-T2-008",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaIrReport",
+    "skill": "Incident timeline",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An analyst builds a timeline from firewall logs in UTC, EDR events in Eastern time and mail gateway logs in Pacific time. What must be done first?",
+    "explanation": "Events from different sources can only be put in true order once they share one time reference, usually UTC. Separate sections hide the sequence that the timeline exists to show.",
+    "options": [
+      "List each source in its own report section",
+      "Sort each source by its local clock time",
+      "Normalize all timestamps to one time zone",
+      "Keep only the events from the firewall logs"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CYSA-T2-009",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaSecArch",
+    "skill": "SSO",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "Put the steps of a SAML single sign-on login, started at the application, in order.",
+    "explanation": "In a service provider initiated SAML flow, the application sends the user to the identity provider, the user signs in there, and the IdP returns a signed assertion that the application checks before creating a session.",
+    "options": [
+      "The user opens the cloud application",
+      "The application redirects the user to the IdP",
+      "The user authenticates at the IdP",
+      "The IdP returns a signed assertion",
+      "The application validates it and grants access"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "id": "CYSA-T2-010",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaThreat",
+    "skill": "DNS analysis",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "DNS logs show one host making thousands of queries like these:\n\n$$\\begin{array}{l}\\texttt{a3f9c1e07b.d4.tunnel-cdn.example TXT}\\\\\\texttt{77be02c9a1.d4.tunnel-cdn.example TXT}\\\\\\texttt{c01d9e44f2.d4.tunnel-cdn.example TXT}\\end{array}$$\n\nWhat is the most likely activity?",
+    "explanation": "Long random labels under one domain, many TXT lookups and high volume from one host show data being carried inside DNS queries and answers. A domain generation algorithm would produce many different registered domains, not subdomains of one.",
+    "options": [
+      "DNS tunneling",
+      "DNS cache poisoning",
+      "Fast flux hosting",
+      "DNS amplification"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CYSA-T2-011",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaVulnScan",
+    "skill": "Internal and external scanning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The security manager wants to know exactly what an attacker on the internet can reach on the company's public IP range. Which scan answers that question?",
+    "explanation": "An external scan runs from the internet side, so it sees only the services the firewall and perimeter really expose. An internal scan sees far more than an outside attacker could reach.",
+    "options": [
+      "An internal scan from the server VLAN",
+      "An agent-based scan on each web server",
+      "An external scan from the internet",
+      "A passive scan on the core switch"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CYSA-T2-012",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaVulnPrior",
+    "skill": "CVSS v4.0",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A flaw can be exploited only when the target runs a race-prone configuration that the attacker cannot control and must wait for. Which CVSS v4.0 base metric captures that condition?",
+    "explanation": "Attack Requirements (AT) covers deployment and execution conditions on the target, such as a race window or a specific setting, that the attacker cannot control. Attack Complexity covers actions needed to defeat security measures like ASLR.",
+    "options": [
+      "Privileges Required",
+      "Attack Requirements",
+      "User Interaction",
+      "Attack Complexity"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CYSA-T2-013",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaIrFrame",
+    "skill": "MITRE ATT&CK",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A junior analyst asks how ATT&CK tactics differ from techniques. In ATT&CK, what does a tactic describe?",
+    "explanation": "A tactic is the why: the adversary's tactical goal, such as Persistence or Exfiltration. A technique is the how: the method used to reach that goal.",
+    "options": [
+      "A tool linked to a threat group",
+      "The specific method used for an action",
+      "A detection rule for a behavior",
+      "The adversary's goal for an action"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CYSA-T2-014",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaIrHandle",
+    "skill": "Container incidents",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "The investigation finds the cryptominer binary was built into the base image stored in the company's container registry. Which eradication step addresses the root cause?",
+    "explanation": "Every pod started from the tainted image carries the miner, so the image itself must be rebuilt and every workload redeployed from it. Deleting the binary in running pods leaves the image to reinfect new ones.",
+    "options": [
+      "Fix the image and redeploy all pods",
+      "Restart every pod from the same image",
+      "Delete the binary inside running pods",
+      "Add more replicas to spread the load"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CYSA-T2-015",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaSecArch",
+    "skill": "PKI",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An internal server's TLS certificate is still within its validity dates, but the server team reports its private key was copied by an attacker and the CA has revoked it. What should clients check to reject the certificate?",
+    "explanation": "Revocation is published through OCSP responders and certificate revocation lists, so a client that checks them rejects a revoked certificate before it expires. Expiry, key length and name all still look valid here.",
+    "options": [
+      "Its expiry date against the system clock",
+      "Its status through OCSP or the CRL",
+      "Its key length against the TLS policy",
+      "Its subject name against DNS"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CYSA-T2-016",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaThreat",
+    "skill": "Host indicators",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "EDR flags $\\texttt{explorer.exe}$ making outbound connections, and memory analysis finds executable code in it that matches no file on disk. Which type of threat does this suggest?",
+    "explanation": "Code that lives only in another process's memory, with nothing on disk, is the mark of fileless malware injected into a trusted process. A corrupted file would exist on disk and would not add network behavior.",
+    "options": [
+      "A browser add-on making routine update checks",
+      "Fileless malware using process injection",
+      "A corrupted explorer.exe system file",
+      "A disk-based worm copying itself"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CYSA-T2-017",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaVulnReport",
+    "skill": "Inhibitors to remediation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A shared research server is run by a partner university under a memorandum of understanding, and a scan finds a critical flaw on it. What should the analyst do?",
+    "explanation": "An MOU sets who may change the system and how issues are raised, so the finding goes to the partner through the agreed contacts. Patching it directly would break the agreement even if the team has access.",
+    "options": [
+      "Raise it through the MOU's named contacts",
+      "Mark the finding as a false positive for now",
+      "Patch it using the team's domain admin rights",
+      "Remove the server from the scanning scope"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CYSA-T2-018",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaIrReport",
+    "skill": "Metrics",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "The quarterly report lists three incidents with the time from initial compromise to detection:\n\n$$\\begin{array}{l}\\texttt{INCIDENT\\ \\ \\ COMPROMISE\\_TO\\_DETECTION\\_HOURS}\\\\\\texttt{IR-101\\ \\ \\ \\ \\ 10}\\\\\\texttt{IR-102\\ \\ \\ \\ \\ 6}\\\\\\texttt{IR-103\\ \\ \\ \\ \\ 14}\\end{array}$$\n\nWhat is the mean time to detect, in hours? Type the number only.",
+    "explanation": "Mean time to detect averages the time from compromise to detection: (10 + 6 + 14) / 3 = 10 hours. Mean time to respond starts at detection, so it would use different times.",
+    "numeric": {
+      "answers": [
+        "10"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "CYSA-T2-019",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaVulnScan",
+    "skill": "Scan impact",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A scan of the print servers ran with every plugin enabled, including denial of service checks, and an old print server crashed partway through. What should the analyst change in the scan policy?",
+    "explanation": "Safe checks tell the scanner to skip tests that could crash a service and to judge those flaws from banners or versions instead. Scanning more hosts at once adds load, and an unauthenticated scan still runs the same disruptive checks.",
+    "options": [
+      "Raise the number of hosts scanned at once",
+      "Turn on safe checks in the policy",
+      "Switch the policy to an unauthenticated scan",
+      "Add the full plugin set to every scan"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CYSA-T2-020",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaVulnPrior",
+    "skill": "CVSS v4.0",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A vendor advisory gives a score of CVSS-BT 8.1. Which metric groups were used to produce that score?",
+    "explanation": "CVSS v4.0 labels a score by the groups used: CVSS-B, CVSS-BT, CVSS-BE or CVSS-BTE, where T is the Threat group. Temporal was the v3.1 name, and Supplemental metrics never change the score.",
+    "options": [
+      "Base and Environmental",
+      "Base and Threat",
+      "Base and Temporal",
+      "Base and Supplemental"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CYSA-T2-021",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaSecArch",
+    "skill": "Serverless",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A serverless function in a public cloud was abused to read data from a storage bucket. Where should the analyst look first for evidence?",
+    "explanation": "With serverless the customer has no access to the underlying hosts, so evidence comes from the provider's function invocation logs and API audit logs. Memory dumps and disk images of the host are not available to the customer.",
+    "options": [
+      "The provider's invocation and audit logs",
+      "A disk image of the function's server",
+      "A memory dump of the server running the function",
+      "The host operating system event log"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CYSA-T2-022",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaThreat",
+    "skill": "Registry indicators",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An analyst finds this registry value on a server:\n\n$$\\begin{array}{l}\\texttt{HKLM\\textbackslash{}SOFTWARE\\textbackslash{}Microsoft\\textbackslash{}Windows NT\\textbackslash{}CurrentVersion}\\\\\\texttt{\\ \\ \\textbackslash{}Image File Execution Options\\textbackslash{}sethc.exe}\\\\\\texttt{\\ \\ Debugger = C:\\textbackslash{}Windows\\textbackslash{}System32\\textbackslash{}cmd.exe}\\end{array}$$\n\nWhat does it give an attacker?",
+    "explanation": "The Debugger value makes Windows start cmd.exe whenever sethc.exe (Sticky Keys) is launched, and pressing Shift five times at the logon screen then gives a SYSTEM command prompt without signing in. It is a known backdoor, not a startup entry.",
+    "options": [
+      "A silent keyboard driver install",
+      "A program that runs at each logon",
+      "A faster start for accessibility tools",
+      "A SYSTEM shell at the logon screen"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CYSA-T2-023",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaIrFrame",
+    "skill": "Diamond Model",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An analyst finds a command and control IP address in one intrusion, then searches proxy logs and threat feeds for other organizations that contacted the same address. In Diamond Model terms, what is the analyst doing?",
+    "explanation": "The IP address is infrastructure, and using one vertex to discover related events is called pivoting. Pivoting on capability would start from the malware itself, for example its hash or code.",
+    "options": [
+      "Pivoting on the social-political axis",
+      "Pivoting on the adversary's capability",
+      "Pivoting on the victim's identity",
+      "Pivoting on the infrastructure"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CYSA-T2-024",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaIrHandle",
+    "skill": "Cloud incidents",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Cloud audit logs show a long-term access key for a service account making API calls from an unfamiliar IP address. What is the best first containment step?",
+    "explanation": "Deactivating the exposed key stops the attacker's API access at once while keeping it on record for the investigation. MFA on console login does not affect API calls made with an access key.",
+    "options": [
+      "Require MFA for console login",
+      "Rotate the root password",
+      "Deactivate the access key",
+      "Delete the buckets it touched"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CYSA-T2-025",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaSecArch",
+    "skill": "SASE",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Branch office users reach the internet through a cloud-delivered secure web gateway that is part of the company's SASE service. An analyst needs the web logs for one branch user. Where are they?",
+    "explanation": "With SASE the inspection happens in the provider's cloud points of presence, so the web logs are kept and searched there or exported from it to the SIEM. Branch traffic never passes through a headquarters proxy.",
+    "options": [
+      "In the SASE provider's console",
+      "On the branch's local firewall",
+      "On the user's DNS resolver",
+      "On the headquarters proxy server"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CYSA-T2-026",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaVulnScan",
+    "skill": "Nmap",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A data center firewall drops ICMP and Nmap's TCP discovery probes, so $\\texttt{nmap 10.30.5.0/24}$ reports that no hosts are up even though the servers are running. Which option should the analyst add?",
+    "explanation": "With -Pn, Nmap treats every address as up and scans its ports, so hosts that ignore ping are still tested. The -sn option does the reverse, a ping sweep with no port scan, which would find nothing here.",
+    "options": [
+      "$\\texttt{-sn}$ to skip the port scan",
+      "$\\texttt{-F}$ to scan fewer ports",
+      "$\\texttt{-O}$ to detect the operating system",
+      "$\\texttt{-Pn}$ to skip host discovery"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CYSA-T2-027",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaVulnPrior",
+    "skill": "Zero-day",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The vendor of the company's email gateway warns of a flaw that attackers are actively exploiting. No patch exists yet, but the advisory gives a configuration workaround. What should the analyst recommend now?",
+    "explanation": "With an exploited zero-day and no patch, the vendor's mitigation plus closer monitoring cuts the risk now. Waiting for the patch leaves an exposed, exploited system as it is, and rescanning only confirms what is already known.",
+    "options": [
+      "Wait for the patch and then deploy it",
+      "Accept the risk until the next patch cycle",
+      "Rescan the gateway every hour until patched",
+      "Apply the workaround and monitor closely"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CYSA-T2-028",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaThreat",
+    "skill": "Application indicators",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A public web app returns HTTP 503 errors. Its logs show tens of thousands of requests to $\\texttt{/search?q=}$ with random terms from hundreds of IPs, while network bandwidth stays normal. What is the most likely cause?",
+    "explanation": "Many requests to an expensive search page exhaust the application's resources while bandwidth looks normal, which is a layer 7 DoS. A volumetric flood would fill the link, and an expired certificate causes TLS errors, not 503s.",
+    "options": [
+      "A misrouted DNS record for the site",
+      "An application-layer DoS attack",
+      "An expired TLS server certificate",
+      "A volumetric UDP flood attack"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CYSA-T2-029",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaIrFrame",
+    "skill": "Cyber Kill Chain",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After exploiting a vulnerable web form, an attacker drops a web shell into the site's upload folder so they can return later. Which Cyber Kill Chain phase is the web shell?",
+    "explanation": "Installation is placing persistent access, such as a web shell or backdoor, on the target. Exploitation was the earlier step of abusing the web form flaw to run code.",
+    "options": [
+      "Exploitation",
+      "Installation",
+      "Command and control",
+      "Actions on objectives"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CYSA-T2-030",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaIrHandle",
+    "skill": "Order of volatility",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Following the order of volatility on a live Windows server, which of these should an analyst collect first?",
+    "explanation": "The ARP cache is held in memory and changes within minutes, so it is among the most volatile sources. The swap file, hibernation file and event logs are stored on disk and survive longer.",
+    "options": [
+      "The event log files",
+      "The swap file",
+      "The hibernation file",
+      "The ARP cache"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CYSA-T2-031",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaVulnReport",
+    "skill": "Top 10 reports",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A manager asks the analyst to add a top 10 list of the highest risk findings to the monthly vulnerability report. What is the main value of this list?",
+    "explanation": "A top 10 list points limited remediation time at the findings that matter most. It says nothing about scan coverage and does not replace remediation deadlines.",
+    "options": [
+      "It focuses effort on the highest risks",
+      "It proves the scanner covers every asset",
+      "It replaces the need for an SLA policy",
+      "It shows auditors every finding was fixed"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CYSA-T2-032",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaIrReport",
+    "skill": "Stakeholder communication",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Evidence suggests an employee copied customer files before resigning. Who should the IR team involve before interviewing the employee?",
+    "explanation": "Insider cases raise employment and legal issues, so HR and legal guide the interview and how evidence is handled. Coworkers could tip off the employee or spread rumors.",
+    "options": [
+      "The public relations team alone",
+      "An external forensics contractor",
+      "The employee's direct coworkers",
+      "Human resources and legal counsel"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CYSA-T2-033",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaSecArch",
+    "skill": "Hybrid identity",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An employee's on-premises directory account was disabled 20 minutes ago, yet the cloud sign-in log shows the account signing in to webmail 5 minutes ago. Directory sync runs every 30 minutes. What explains this?",
+    "explanation": "In a hybrid setup the disable takes effect in the cloud only after the next sync cycle, so the account still worked there. For urgent cases the analyst should also disable the account or revoke its sessions directly in the cloud directory.",
+    "options": [
+      "The help desk had re-enabled the account",
+      "The change had not synced to the cloud yet",
+      "The user's MFA token had been cloned",
+      "The cloud audit log runs a day behind"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CYSA-T2-034",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaThreat",
+    "skill": "Social engineering",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The help desk gets a phone call from someone claiming to be the CFO, who is traveling and urgently needs a password reset before a board meeting. Which attack does this most likely represent?",
+    "explanation": "Vishing is voice phishing, here with an urgent pretext and an impersonated executive. Whaling targets executives as victims, usually by email, and smishing uses text messages.",
+    "options": [
+      "Tailgating",
+      "Smishing",
+      "Whaling",
+      "Vishing"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CYSA-T2-035",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaVulnScan",
+    "skill": "Nmap output",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "An analyst checks which hosts expose Remote Desktop and gets this output:\n$$\\begin{array}{l}\\texttt{Nmap scan report for 10.8.4.11}\\\\\\texttt{3389/tcp open\\ \\ \\ \\ \\ \\ ms-wbt-server}\\\\\\texttt{Nmap scan report for 10.8.4.12}\\\\\\texttt{3389/tcp closed\\ \\ \\ \\ ms-wbt-server}\\\\\\texttt{Nmap scan report for 10.8.4.15}\\\\\\texttt{3389/tcp open\\ \\ \\ \\ \\ \\ ms-wbt-server}\\\\\\texttt{Nmap scan report for 10.8.4.20}\\\\\\texttt{3389/tcp filtered\\ \\ ms-wbt-server}\\\\\\texttt{Nmap scan report for 10.8.4.31}\\\\\\texttt{3389/tcp open\\ \\ \\ \\ \\ \\ ms-wbt-server}\\end{array}$$\nHow many hosts have Remote Desktop open? Type the number only.",
+    "explanation": "Port 3389 is open on 10.8.4.11, 10.8.4.15 and 10.8.4.31. The closed host answered with a reset and the filtered one gave no answer, so neither is confirmed as reachable.",
+    "numeric": {
+      "answers": [
+        "3"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "CYSA-T2-036",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaVulnPrior",
+    "skill": "XSS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A user posts a product review that contains a script tag. Every shopper who later opens the product page runs the script, which sends their session cookie to an outside host. Which vulnerability is this?",
+    "explanation": "The script is saved on the server and served to every visitor, which makes it stored XSS. Reflected XSS bounces script off a single crafted request, and the fixes for both are output encoding plus a content security policy.",
+    "options": [
+      "Stored cross-site scripting",
+      "DOM-based cross-site scripting",
+      "Cross-site request forgery",
+      "Reflected cross-site scripting"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CYSA-T2-037",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaSecArch",
+    "skill": "Log ingestion",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A SIEM receives logs from three firewall vendors that each name the source address field differently. Which SIEM function maps them to one common field so a single search works?",
+    "explanation": "Normalization parses each vendor's format into a common schema. Correlation links related events once they share fields, and aggregation collects logs in one place.",
+    "options": [
+      "Correlation",
+      "Aggregation",
+      "Normalization",
+      "Deduplication"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CYSA-T2-038",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaIrFrame",
+    "skill": "Cyber Kill Chain",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "An analyst is building an intrusion timeline. Match each observation to its Cyber Kill Chain phase.",
+    "explanation": "Scanning is reconnaissance, the email reaching users is delivery, regular beaconing is the command and control channel, and sending data out is acting on the objective (exfiltration).",
+    "rows": [
+      "Port scans of the public web servers from one IP",
+      "A phishing email with a malicious link reaches users",
+      "A workstation contacts an external domain every 60 seconds",
+      "An archive of HR files is sent out over HTTPS"
+    ],
+    "columns": [
+      "Actions on objectives",
+      "Command and control",
+      "Delivery",
+      "Reconnaissance"
+    ],
+    "correct": [
+      3,
+      2,
+      1,
+      0
+    ]
+  },
+  {
+    "id": "CYSA-T2-039",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaIrHandle",
+    "skill": "Data integrity",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A lab has verified evidence images with MD5 only. Counsel worries that MD5 collisions could be used to challenge the evidence. What change best addresses the concern?",
+    "explanation": "SHA-256 has no practical collisions, so recording it alongside or instead of MD5 strengthens proof of integrity. Encryption protects confidentiality but does not prove the image is unchanged.",
+    "options": [
+      "Encrypt each image with AES-256",
+      "Store a second copy on a NAS",
+      "Compress each image to save space",
+      "Add a SHA-256 hash of each image"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CYSA-T2-040",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaThreat",
+    "skill": "Domain research",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A phishing email links to a domain the analyst has never seen. Which tool shows when the domain was registered and through which registrar?",
+    "explanation": "WHOIS returns registration data such as creation date, registrar and name servers, and a domain created days ago is a common phishing sign. nslookup resolves the name to records but shows no registration details.",
+    "options": [
+      "netstat",
+      "WHOIS",
+      "nslookup",
+      "traceroute"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CYSA-T2-041",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaSecArch",
+    "skill": "Linux logs",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "An analyst needs the SSH login attempts on an Ubuntu server. Which log file should they read?",
+    "explanation": "Debian and Ubuntu write authentication events, including sshd logins, to /var/log/auth.log. Red Hat family systems use /var/log/secure for the same events.",
+    "options": [
+      "$\\texttt{/var/log/secure}$",
+      "$\\texttt{/var/log/boot.log}$",
+      "$\\texttt{/var/log/dmesg}$",
+      "$\\texttt{/var/log/auth.log}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CYSA-T2-042",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaVulnScan",
+    "skill": "Web app scanning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team wants a free, open-source tool that spiders a web application and runs automated active scans against it as a step in the CI pipeline. Which tool fits?",
+    "explanation": "ZAP is an open-source web proxy and dynamic scanner with spidering, active scanning and automation for pipelines. Nessus is a general network vulnerability scanner, and Prowler audits cloud accounts.",
+    "options": [
+      "GDB",
+      "Prowler",
+      "Nessus",
+      "ZAP"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CYSA-T2-043",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaVulnPrior",
+    "skill": "Path traversal",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A web server log shows this request:\n$$\\begin{array}{l}\\texttt{GET /download?file=..\\%2F..\\%2F..\\%2Fetc\\%2Fpasswd HTTP/1.1}\\end{array}$$\nWhich attack is being attempted?",
+    "explanation": "The encoded ../ sequences try to climb out of the download folder to read a system file. The fix is to map requests to an allowlist of file names rather than passing paths through; remote file inclusion loads a file from another server.",
+    "options": [
+      "Remote file inclusion",
+      "Path traversal",
+      "Command injection",
+      "SQL injection"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CYSA-T2-044",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaVulnReport",
+    "skill": "Action plans",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Patching a public web server breaks a critical integration, and the vendor fix is 60 days away. What should the action plan include until the patch can be applied?",
+    "explanation": "A compensating control such as a WAF rule reduces the risk while the real fix waits, and the plan should still track the patch. An open-ended acceptance leaves the exposure with no review date.",
+    "options": [
+      "A WAF rule as a compensating control",
+      "A risk acceptance with no end date",
+      "A lower CVSS base score on the finding",
+      "Removal of the host from scan scope"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CYSA-T2-045",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaIrReport",
+    "skill": "Alert volume",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After a new SIEM rule went live, alert volume tripled and analysts close 90% of its alerts as benign. What should the monthly SOC report recommend?",
+    "explanation": "A rule that mostly fires on benign activity wastes analyst time and buries real alerts, so it should be tuned. Adding staff treats the symptom and leaves the noise in place.",
+    "options": [
+      "Raise the rule's alerts to critical",
+      "Turn off all SIEM correlation rules",
+      "Hire more tier 1 analysts for alerts",
+      "Tune the rule to cut false positives"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CYSA-T2-046",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaThreat",
+    "skill": "Sandboxing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A sample produces a clean report after 5 minutes in the sandbox, yet the same file infected a workstation. Strings in the sample show a call that waits 20 minutes before doing anything. What explains the clean report?",
+    "explanation": "Malware often sleeps longer than a sandbox runs, so the analysis ends before any malicious behavior starts. Packing hides code from static analysis but does not stop the sample from acting in a sandbox.",
+    "options": [
+      "Packing that hid the file's strings",
+      "A hash collision with a clean file",
+      "A false positive in the original EDR alert",
+      "Sandbox evasion by delayed execution"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CYSA-T2-047",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaIrFrame",
+    "skill": "IR lifecycle",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Two weeks after closing a breach, the IR team meets to review what worked, what failed and what to change. In the classic four-phase NIST incident response lifecycle, which phase is this?",
+    "explanation": "The lessons-learned meeting is post-incident activity, whose outputs feed back into preparation. Containment, eradication and recovery had already ended when the incident was closed.",
+    "options": [
+      "Detection and analysis",
+      "Preparation",
+      "Post-incident activity",
+      "Containment, eradication and recovery"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CYSA-T2-048",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaIrHandle",
+    "skill": "Evidence acquisition",
+    "difficulty": 1,
+    "format": "matrix",
+    "stem": "An analyst is planning collection on a running host. Classify each evidence source as volatile or non-volatile.",
+    "explanation": "Network connections and RAM are lost when the host powers off or changes state, so they are volatile. Files on disk and logs already archived in the SIEM persist.",
+    "rows": [
+      "Established TCP connections",
+      "Contents of RAM",
+      "Prefetch files on the disk",
+      "Archived SIEM logs"
+    ],
+    "columns": [
+      "Volatile",
+      "Non-volatile"
+    ],
+    "correct": [
+      0,
+      0,
+      1,
+      1
+    ]
+  },
+  {
+    "id": "CYSA-T2-049",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaSecArch",
+    "skill": "Windows logs",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A SIEM dashboard shows thousands of Windows Security event ID 4625 records from one server in an hour. What do these events record?",
+    "explanation": "Event ID 4625 is an account that failed to log on, so a burst of them suggests password guessing. Successful logons are 4624 and lockouts are 4740.",
+    "options": [
+      "Successful logons",
+      "Explicit credential use",
+      "Failed logon attempts",
+      "Account lockouts"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CYSA-T2-050",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaVulnScan",
+    "skill": "Fuzzing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Developers want to find inputs that crash a new image parser by feeding it millions of randomly mutated files and watching for faults. Which technique is this?",
+    "explanation": "Fuzzing sends large volumes of malformed or random input to running code to find crashes and memory errors. Static analysis and code review read the code without running it.",
+    "options": [
+      "Static code analysis",
+      "Fuzzing",
+      "Manual code review",
+      "Software composition analysis"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CYSA-T2-051",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaVulnPrior",
+    "skill": "AI vulnerabilities",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A support chatbot summarizes incoming customer emails. One email contains hidden text telling the model to ignore its instructions and reply with the customer account list. Which attack is this?",
+    "explanation": "Instructions hidden in content the model reads are indirect prompt injection. Defenses include treating such content as untrusted data, limiting what the model can access and filtering its output; data poisoning corrupts the training set instead.",
+    "options": [
+      "Training data poisoning",
+      "Indirect prompt injection",
+      "Model inversion attack",
+      "Insecure deserialization"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CYSA-T2-052",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaThreat",
+    "skill": "Security tools",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Match each analyst task to the tool best suited to it.",
+    "explanation": "EDR works on the endpoint and can isolate it, a SIEM correlates logs from many sources, packet capture tools such as Wireshark show full session contents, and reputation services rate domains and IPs.",
+    "rows": [
+      "Isolate a laptop and view its process tree",
+      "Correlate firewall and directory logs",
+      "Inspect every packet of one session",
+      "Check whether a domain is known bad"
+    ],
+    "columns": [
+      "Packet capture",
+      "SIEM",
+      "DNS reputation",
+      "EDR"
+    ],
+    "correct": [
+      3,
+      1,
+      0,
+      2
+    ]
+  },
+  {
+    "id": "CYSA-T2-053",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaSecArch",
+    "skill": "Zero trust",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two practices are core principles of a zero trust architecture? (Choose two.)",
+    "explanation": "Zero trust removes trust based on network location: each request is checked and given only the access it needs. Trusting the LAN, a single VPN login or open east-west traffic are the perimeter assumptions it replaces.",
+    "options": [
+      "Allow east-west traffic by default",
+      "Verify every access request explicitly",
+      "Authenticate once at the VPN gateway",
+      "Trust devices on the internal LAN",
+      "Grant least-privilege access per session"
+    ],
+    "correct": [
+      1,
+      4
+    ],
+    "select": 2
+  },
+  {
+    "id": "CYSA-T2-054",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaVulnReport",
+    "skill": "SLA tracking",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Remediation SLAs are 15 days for critical, 30 for high and 90 for medium findings. The report shows these open findings:\n\n$$\\begin{array}{l}\\texttt{HOST\\ \\ \\ \\ \\ SEVERITY\\ \\ \\ AGE\\_DAYS}\\\\\\texttt{web01\\ \\ \\ \\ Critical\\ \\ \\ 20}\\\\\\texttt{web02\\ \\ \\ \\ High\\ \\ \\ \\ \\ \\ \\ 25}\\\\\\texttt{db01\\ \\ \\ \\ \\ Critical\\ \\ \\ 10}\\\\\\texttt{db02\\ \\ \\ \\ \\ High\\ \\ \\ \\ \\ \\ \\ 41}\\\\\\texttt{app01\\ \\ \\ \\ Medium\\ \\ \\ \\ \\ 70}\\\\\\texttt{app02\\ \\ \\ \\ Critical\\ \\ \\ 16}\\end{array}$$\n\nHow many hosts are past their SLA? Type the number only.",
+    "explanation": "web01 (20 days, critical) and app02 (16 days, critical) are past 15 days, and db02 (41 days, high) is past 30 days. The others are still inside their windows.",
+    "numeric": {
+      "answers": [
+        "3"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "CYSA-T2-055",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaIrReport",
+    "skill": "Recommendations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A reviewer says the recommendations in a draft incident report will not get done. How should they be written?",
+    "explanation": "Recommendations that name a concrete action, a priority and an owner can be tracked to completion. General advice is easy to agree with and easy to ignore.",
+    "options": [
+      "Brief, leaving the details to each team",
+      "Broad, so they apply to any future incident",
+      "Specific, prioritized and assigned to owners",
+      "Technical, listing every tool used in the case"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CYSA-T2-056",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaIrFrame",
+    "skill": "Preparation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A document explains how payroll will be processed by hand from printed records while the HR system is down for an extended period. Which document is this part of?",
+    "explanation": "A business continuity plan keeps essential business functions running during a disruption, including manual workarounds. A disaster recovery runbook focuses on restoring the IT systems themselves.",
+    "options": [
+      "Disaster recovery runbook",
+      "Business continuity plan",
+      "Data retention policy",
+      "Incident response playbook"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CYSA-T2-057",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaIrHandle",
+    "skill": "Scope and impact",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "After containing an intrusion, an analyst works out which systems, accounts and data the attacker touched. What is this activity?",
+    "explanation": "Scoping establishes how far the incident reached, which drives eradication, recovery and notification. Root cause analysis asks why it happened, usually in the lessons-learned phase.",
+    "options": [
+      "Scoping the incident",
+      "Attack surface mapping",
+      "Root cause analysis",
+      "Threat modeling"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CYSA-T2-058",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaThreat",
+    "skill": "Email header analysis",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A message has From: billing@contoso.com, and its header shows $\\texttt{dkim=pass header.d=mailer-blast.example}$ with $\\texttt{dmarc=fail}$. Why did DMARC fail even though DKIM passed?",
+    "explanation": "DMARC needs a passing SPF or DKIM result whose domain matches the visible From domain. A valid signature from mailer-blast.example proves nothing about contoso.com, so alignment fails.",
+    "options": [
+      "The DMARC record is set to p=reject",
+      "The From domain has no SPF record set",
+      "The DKIM domain does not align with From",
+      "The DKIM signature was made after delivery"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CYSA-T2-059",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaVulnScan",
+    "skill": "Scan results",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Classify each scan result.",
+    "explanation": "A positive is a reported finding and a negative is no finding; true or false says whether the scanner was right. Missed real flaws, false negatives, are the dangerous kind because nobody looks for them.",
+    "rows": [
+      "The scanner flags a missing patch, and the patch is missing",
+      "The scanner flags a patched service from its old banner",
+      "The scanner misses an exposed admin page an analyst found",
+      "The scanner reports nothing on a host that has no flaw"
+    ],
+    "columns": [
+      "False negative",
+      "True negative",
+      "True positive",
+      "False positive"
+    ],
+    "correct": [
+      2,
+      3,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "CYSA-T2-060",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaVulnPrior",
+    "skill": "Race condition",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A tester sends two withdrawal requests for the full balance at the same moment, and both succeed because each one passed the balance check before either updated the account. Which flaw is this?",
+    "explanation": "This is a time-of-check to time-of-use race: the check and the update are not atomic. Locking or a single transaction for the check and the debit fixes it.",
+    "options": [
+      "An integer overflow",
+      "A race condition",
+      "A buffer overflow",
+      "A session fixation"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CYSA-T2-061",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaSecArch",
+    "skill": "Privileged access management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Administrators request elevated rights through a portal, a manager approves, and the rights are removed automatically after two hours. What is this approach called?",
+    "explanation": "Just-in-time access grants privileges only for an approved task and window, so there are no standing admin rights for an attacker to steal. Standing access is exactly what it removes.",
+    "options": [
+      "Standing administrative access",
+      "Discretionary access control",
+      "Just-in-time access",
+      "Attribute-based access control"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CYSA-T2-062",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaThreat",
+    "skill": "TTPs",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "New intelligence says an actor downloads tools with the built-in $\\texttt{certutil}$ utility instead of custom malware. Which hunt follows most directly from it?",
+    "explanation": "The TTP is living off the land with certutil, so the hunt looks for certutil started with URL or download arguments in EDR or process logs. The other searches do not test that behavior.",
+    "options": [
+      "Firewall denies on TCP port 23 from the internet",
+      "Process events for certutil with a URL",
+      "New DNS A records on servers",
+      "Failed logons above a threshold"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CYSA-T2-063",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaIrFrame",
+    "skill": "Preparation",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Before any incident occurs, the IR team packs forensic laptops, write blockers, cables, blank drives and an up-to-date call list into a case kept ready to grab. What is this case called?",
+    "explanation": "A jump kit holds the tools and supplies responders need so they can act at once. A golden image is a trusted system build used to restore or reimage hosts.",
+    "options": [
+      "Golden image",
+      "Evidence locker",
+      "Jump kit",
+      "Honeynet"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CYSA-T2-064",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaIrHandle",
+    "skill": "Recovery",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An analyst restores a web server from a backup taken before the compromise. What must happen before it goes back into production?",
+    "explanation": "A clean restore still has the vulnerability the attacker exploited, so it would be compromised again unless that flaw is fixed first. Moving the IP address does not remove the weakness.",
+    "options": [
+      "Move it to a new IP address",
+      "Restore the newest backup instead",
+      "Clear its logs for a fresh start",
+      "Patch the flaw the attacker used"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CYSA-T2-065",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaSecArch",
+    "skill": "Cloud shared responsibility",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Under the cloud shared responsibility model, who must fix each finding?",
+    "explanation": "The customer always owns its identities, data and access settings, and in IaaS the guest OS too, so the open bucket and weak password policy are customer fixes. The hypervisor belongs to the provider.",
+    "rows": [
+      "Unpatched guest OS on a rented IaaS VM",
+      "Weak password policy in a SaaS email tenant",
+      "A flaw in the provider's hypervisor",
+      "A storage bucket left open to the public"
+    ],
+    "columns": [
+      "Customer",
+      "Provider"
+    ],
+    "correct": [
+      0,
+      0,
+      1,
+      0
+    ]
+  },
+  {
+    "id": "CYSA-T2-066",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaVulnScan",
+    "skill": "CIS benchmarks",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A team wants to check every new Linux server build against a consensus-based hardening guide and score how well its configuration matches. Which reference fits?",
+    "explanation": "CIS Benchmarks are consensus configuration guides for operating systems, cloud and applications, and scanners can audit builds against them. The OWASP Top 10 lists web application risks, not server settings.",
+    "options": [
+      "NIST SP 800-61r3",
+      "CIS Benchmarks",
+      "OWASP Top 10",
+      "MITRE ATT&CK"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CYSA-T2-067",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaVulnPrior",
+    "skill": "Control types",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Classify each control by its type.",
+    "explanation": "Preventive controls stop an attack, detective controls notice one, corrective controls fix the damage and deterrent controls discourage the attempt. The same tool can play different roles, so classify by what the control does here.",
+    "rows": [
+      "A WAF rule that blocks SQL injection strings",
+      "A SIEM alert on repeated failed logins",
+      "Restoring a server from a clean backup",
+      "A login banner warning that use is monitored"
+    ],
+    "columns": [
+      "Corrective",
+      "Deterrent",
+      "Preventive",
+      "Detective"
+    ],
+    "correct": [
+      2,
+      3,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "CYSA-T2-068",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaVulnReport",
+    "skill": "Report contents",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "A vulnerability report goes to the system administrators who will do the fixing. What should it give them for each finding? (Choose two.)",
+    "explanation": "Owners need to know exactly which hosts and versions are affected and what to change, plus how to confirm the fix. Spending trends are for executives, and scanner details do not help remediation.",
+    "options": [
+      "Board spending trends by quarter",
+      "Affected hosts and vulnerable versions",
+      "The scanner license and build number",
+      "The fix and how to verify it worked"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "select": 2
+  },
+  {
+    "id": "CYSA-T2-069",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaIrReport",
+    "skill": "Customer communication",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "A company must tell customers that their account data was exposed. What should the notice include? (Choose two.)",
+    "explanation": "Customers need to know what was affected and what they can do, such as resetting passwords or watching their accounts. Technical IoCs mean little to them, and naming staff creates legal risk.",
+    "options": [
+      "What data was exposed and when",
+      "Steps customers can take to protect themselves",
+      "Names of the staff who made the mistake",
+      "The attacker's IP addresses and malware hashes"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "select": 2
+  },
+  {
+    "id": "CYSA-T2-070",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaThreat",
+    "skill": "Intelligence sources",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A regional hospital wants vetted threat intelligence that is specific to healthcare and shared in confidence among similar organizations. Which source fits best?",
+    "explanation": "An Information Sharing and Analysis Center collects and shares intelligence among members of one sector under sharing rules. OSINT and social media are open to all and unvetted.",
+    "options": [
+      "Its sector's ISAC",
+      "Public OSINT feeds",
+      "Dark web forums",
+      "Social media posts"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CYSA-T2-071",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaSecArch",
+    "skill": "Data loss prevention",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A DLP rule that matches any 16-digit number in outbound email keeps flagging order numbers as card numbers. Which change reduces these false positives while still catching real card numbers?",
+    "explanation": "Real payment card numbers pass the Luhn checksum, while most random order numbers do not, so the check removes many false matches. Widening the pattern would match even more order numbers.",
+    "options": [
+      "Add a Luhn checksum test to the rule",
+      "Move the rule from email to endpoints",
+      "Block all attachments in outbound email",
+      "Widen the pattern to 13 to 19 digits"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CYSA-T2-072",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaIrFrame",
+    "skill": "Testing methodologies",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A tester needs a detailed set of web application test cases covering authentication, session management, input validation and business logic. Which resource provides it?",
+    "explanation": "The OWASP Web Security Testing Guide describes how to test each area of a web application. The OWASP Top 10 is an awareness list of the most critical risk categories, not a set of test procedures.",
+    "options": [
+      "The OWASP Testing Guide",
+      "The ATT&CK Enterprise matrix",
+      "The OWASP Top 10 list",
+      "The OSSTMM manual"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CYSA-T2-073",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaIrHandle",
+    "skill": "Recovery",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A compromised SCADA HMI has been restored, but the vendor's patch for the exploited flaw will not be available for three months. What best reduces the risk until then?",
+    "explanation": "Isolating the HMI on a tightly filtered segment is a compensating control that limits who can reach the flaw. A daily scan is detective: it reports the vulnerability but does not reduce exposure.",
+    "options": [
+      "Restrict it to an isolated segment",
+      "Re-enable remote vendor access",
+      "Accept the risk with no changes",
+      "Run a daily vulnerability scan"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CYSA-T2-074",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaVulnScan",
+    "skill": "Credentialed scanning",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two are advantages of a credentialed scan over an unauthenticated one? (Choose two.)",
+    "explanation": "Logging in lets the scanner check patches, configuration and local software directly, which cuts false positives and finds more. An unauthenticated scan is the one that shows the outsider's view and needs no account.",
+    "options": [
+      "It puts no load at all on the target host",
+      "It needs no account on the target host",
+      "It finds local flaws a remote scan cannot see",
+      "It shows what an outside attacker would see",
+      "It reads installed patch levels on the host"
+    ],
+    "correct": [
+      2,
+      4
+    ],
+    "select": 2
+  },
+  {
+    "id": "CYSA-T2-075",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaVulnPrior",
+    "skill": "Patch management",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "Put the steps for fixing a newly reported missing patch in order.",
+    "explanation": "Find what is affected, test the patch so it does not break the service, get change approval with a rollback plan, deploy in the agreed window, then rescan to confirm the finding is closed.",
+    "options": [
+      "Identify the affected assets",
+      "Test the patch in staging",
+      "Get approval for the change",
+      "Deploy it in the maintenance window",
+      "Rescan to verify the fix"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "id": "CYSA-T2-076",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaThreat",
+    "skill": "Host indicators",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "A team suspects cryptomining malware on its build servers. Which two indicators best support that suspicion? (Choose two.)",
+    "explanation": "Mining keeps the CPU or GPU busy for long periods and talks to a mining pool, often on a pool's own port. Failed logons and new accounts point to other stages of an attack, and miners send little data out.",
+    "options": [
+      "Sustained high processor use",
+      "Many failed logons to the server",
+      "Connections to a mining pool port",
+      "A new local admin account",
+      "Large outbound file uploads"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "select": 2
+  },
+  {
+    "id": "CYSA-T2-077",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaSecArch",
+    "skill": "AI and machine learning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A new behavior analytics tool learned its baseline during a two-week holiday when few staff worked. Now it raises hundreds of anomaly alerts each day for normal work. What is the most likely cause?",
+    "explanation": "Behavior models compare activity to what they learned as normal, so a baseline from a quiet holiday makes ordinary workdays look anomalous. Retraining on a typical period fixes it.",
+    "options": [
+      "Its baseline came from unrepresentative data",
+      "Its log sources use different time zones",
+      "Its detection rules were written for Linux servers",
+      "Its alerts are sent to the wrong queue"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CYSA-T2-078",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaVulnReport",
+    "skill": "Stakeholder reporting",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "The vulnerability team sends different reports to different readers. Match each report to the audience it is written for.",
+    "explanation": "Executives get trends and risk, administrators get the host-level detail they act on, and auditors get proof that required scans were done. One report rarely serves all three well.",
+    "rows": [
+      "Risk trend by business unit",
+      "Per-host findings with fix steps",
+      "Evidence of required quarterly scans"
+    ],
+    "columns": [
+      "Executives",
+      "Compliance auditors",
+      "System administrators"
+    ],
+    "correct": [
+      0,
+      2,
+      1
+    ]
+  },
+  {
+    "id": "CYSA-T2-079",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaIrReport",
+    "skill": "Metrics",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "An analyst defines the metrics for the SOC's monthly report. Match each description to its metric.",
+    "explanation": "Detection time runs from compromise to discovery, response time from discovery to containment, and alert volume counts the work landing on analysts. Watching all three shows where the process is slow.",
+    "rows": [
+      "Time from compromise to first detection",
+      "Time from detection to containment",
+      "Alerts raised per analyst per shift"
+    ],
+    "columns": [
+      "Alert volume",
+      "Mean time to respond",
+      "Mean time to detect"
+    ],
+    "correct": [
+      2,
+      1,
+      0
+    ]
+  },
+  {
+    "id": "CYSA-T2-080",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaIrFrame",
+    "skill": "NIST SP 800-61",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "Under NIST SP 800-61 Rev. 3, which two activities fall under the CSF 2.0 Respond Function? (Choose two.)",
+    "explanation": "Respond includes incident management, analysis, mitigation, and incident reporting and communication. Restoring from backups belongs to Recover, monitoring to Detect and asset inventory to Identify.",
+    "options": [
+      "Mitigating the incident to stop its spread",
+      "Maintaining an inventory of assets",
+      "Reporting the incident to stakeholders",
+      "Restoring assets from clean backups",
+      "Monitoring networks for adverse events"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "select": 2
+  },
+  {
+    "id": "CYSA-T2-081",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaIrHandle",
+    "skill": "Chain of custody",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "An analyst is transferring a seized laptop to an outside forensics firm. Which two actions maintain chain of custody? (Choose two.)",
+    "explanation": "Each handoff is recorded with signatures and times, and a tamper-evident seal shows the item was not opened in transit. Unsecured storage and late labeling create gaps a court could question.",
+    "options": [
+      "Sign and date the custody form at handoff",
+      "Leave it on the analyst's desk overnight",
+      "Label the evidence bag after the transfer",
+      "Seal the laptop in a tamper-evident bag",
+      "Email the image hash to the whole team"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "select": 2
+  },
+  {
+    "id": "CYSA-T2-082",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaVulnScan",
+    "skill": "Validating findings",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A scan flags a critical remote code execution flaw in an SMB service, and the change board wants proof that it is exploitable before approving emergency downtime. In an approved test window, which tool would the analyst use to prove it?",
+    "explanation": "Metasploit runs exploit modules against a target to confirm that a finding is real, which should only happen with approval and a defined scope. OpenVAS is another scanner and would only report the same finding again.",
+    "options": [
+      "Nikto",
+      "Burp Suite Scanner",
+      "Metasploit",
+      "OpenVAS"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CYSA-T2-083",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaVulnPrior",
+    "skill": "Secure SDLC",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "A development manager wants to catch security flaws before code ever reaches production. Which two practices do that? (Choose two.)",
+    "explanation": "Threat modeling and static analysis find flaws in design and code, early in the SDLC when they are cheapest to fix. Penetration tests, production scans and bug bounties are valuable but find flaws that are already deployed.",
+    "options": [
+      "A bug bounty program after release",
+      "SAST in the commit pipeline",
+      "A quarterly production vulnerability scan",
+      "Threat modeling during design",
+      "An annual external penetration test"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "select": 2
+  },
+  {
+    "id": "CYSA-T2-084",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaThreat",
+    "skill": "Log analysis",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "The SIEM returns these firewall entries for a known malicious IP:\n\n$$\\begin{array}{l}\\texttt{09:14 10.4.2.31 to 203.0.113.50:8443 allow}\\\\\\texttt{09:16 10.4.2.31 to 203.0.113.50:8443 allow}\\\\\\texttt{09:21 10.4.7.18 to 203.0.113.50:8443 allow}\\\\\\texttt{09:33 10.4.2.44 to 203.0.113.50:8443 allow}\\\\\\texttt{09:35 10.4.7.18 to 203.0.113.50:8443 allow}\\end{array}$$\n\nHow many internal hosts contacted the malicious IP? Type the number only.",
+    "explanation": "The distinct sources are 10.4.2.31, 10.4.7.18 and 10.4.2.44, so three hosts need investigation even though there are five entries. Counting hosts rather than log lines sets the scope of the response.",
+    "numeric": {
+      "answers": [
+        "3"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "CYSA-T2-085",
+    "section": "cysa",
+    "test": 2,
+    "module": 1,
+    "domain": "cysaSecArch",
+    "skill": "Encryption",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A host is beaconing over HTTPS, and the analyst needs to see the HTTP requests inside the sessions, not only the destinations. What must be in place?",
+    "explanation": "The content of HTTPS sessions is encrypted, so only a proxy that decrypts and re-encrypts traffic can show the requests. DNS logs and NetFlow show where the host connected but never what it sent.",
+    "options": [
+      "DNS query logging at the resolver",
+      "TLS inspection at the web proxy",
+      "A longer packet capture window",
+      "NetFlow export from the core switch"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CYSA-D-001",
+    "section": "cysa",
+    "test": 0,
+    "module": 1,
+    "domain": "cysaSecArch",
+    "skill": "APIs",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A SOAR playbook that queries a threat intelligence API starts failing during a phishing wave, and each call returns HTTP status 429. What does this mean?",
+    "explanation": "Status 429 is Too Many Requests: the playbook is calling faster than the service allows, so it needs throttling or caching. An invalid key returns 401, and a missing resource returns 404.",
+    "options": [
+      "The API rate limit was exceeded",
+      "The API server had an internal error",
+      "The API key has expired",
+      "The requested indicator was not found"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CYSA-D-002",
+    "section": "cysa",
+    "test": 0,
+    "module": 1,
+    "domain": "cysaThreat",
+    "skill": "Packet capture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In Wireshark, an analyst wants to see only HTTP requests that submit form data, such as captured logins. Which display filter fits?",
+    "explanation": "Form submissions such as logins are usually sent with POST, so filtering on that method isolates them. Port 443 traffic is encrypted, so its form data would not be visible without decryption.",
+    "options": [
+      "$\\texttt{http.response.code == 200}$",
+      "$\\texttt{tcp.port == 443}$",
+      "$\\texttt{http.request.method == \"POST\"}$",
+      "$\\texttt{http.request.method == \"GET\"}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CYSA-D-003",
+    "section": "cysa",
+    "test": 0,
+    "module": 1,
+    "domain": "cysaVulnScan",
+    "skill": "Debuggers",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Fuzzing found an input that crashes a custom network service. The analyst wants to see which instruction overwrote the return address on the stack. What should the analyst do?",
+    "explanation": "A debugger such as GDB or WinDbg shows registers, memory and the faulting instruction as the crash happens. A packet capture shows the input that was sent but not what it did inside the program.",
+    "options": [
+      "Scan the service with Nikto",
+      "Run the service in a debugger",
+      "Capture its traffic with tcpdump",
+      "Rescan the host with OpenVAS"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CYSA-D-004",
+    "section": "cysa",
+    "test": 0,
+    "module": 1,
+    "domain": "cysaVulnPrior",
+    "skill": "Insecure deserialization",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A Java web app stores a serialized object in a cookie and rebuilds it on every request. An attacker crafts a cookie whose object runs a system command when the server rebuilds it. Which vulnerability is this?",
+    "explanation": "Rebuilding untrusted serialized objects can trigger code during deserialization. The fix is to avoid deserializing client data, or to sign it and allow only expected classes.",
+    "options": [
+      "Stored cross-site scripting",
+      "XML external entity",
+      "Insecure deserialization",
+      "Session fixation"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CYSA-D-005",
+    "section": "cysa",
+    "test": 0,
+    "module": 1,
+    "domain": "cysaIrFrame",
+    "skill": "NIST SP 800-61",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A CISO assigns incident response roles, responsibilities and decision authority in policy before any incident. Under the NIST SP 800-61 Rev. 3 mapping, which CSF 2.0 Function covers this?",
+    "explanation": "Rev. 3 treats preparation as supported by Govern, Identify and Protect, and setting roles, responsibilities and policy is part of Govern. Respond covers the actions taken once an incident is under way.",
+    "options": [
+      "Respond",
+      "Recover",
+      "Detect",
+      "Govern"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CYSA-D-006",
+    "section": "cysa",
+    "test": 0,
+    "module": 1,
+    "domain": "cysaIrHandle",
+    "skill": "Recovery",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Analysis shows the attacker first got in nine days ago, and nightly backups were taken throughout. Which backup should the team restore from?",
+    "explanation": "Backups taken after initial access may already contain the attacker's backdoor, so the restore point must predate the intrusion. A matching hash only shows the backup file is unchanged, not that its contents are clean.",
+    "options": [
+      "The oldest backup still retained",
+      "The newest full backup on the server",
+      "Any backup whose hash still matches",
+      "The last backup before the intrusion"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CYSA-D-007",
+    "section": "cysa",
+    "test": 0,
+    "module": 1,
+    "domain": "cysaVulnReport",
+    "skill": "Inhibitors to remediation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A managed service provider's contract allows changes to hosted servers only in one monthly window, so a critical fix must wait three weeks. Which inhibitor to remediation is this?",
+    "explanation": "The delay comes from the contract with the provider, which is an SLA inhibitor. The analyst should report the gap and ask for an emergency change or a compensating control.",
+    "options": [
+      "Legacy system limitations",
+      "Business process interruption",
+      "Degrading functionality",
+      "Service level agreement terms"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CYSA-D-008",
+    "section": "cysa",
+    "test": 0,
+    "module": 1,
+    "domain": "cysaIrReport",
+    "skill": "Root cause analysis",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In a post-incident review, the team keeps asking why each cause happened until it reaches a missing process step. Which technique is this?",
+    "explanation": "The five whys repeats the question why until it reaches a cause the organization can fix. A tabletop exercise rehearses a scenario before an incident rather than analyzing one after.",
+    "options": [
+      "Tabletop exercise",
+      "Kill chain mapping",
+      "Five whys analysis",
+      "Business impact analysis"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CYSA-D-009",
+    "section": "cysa",
+    "test": 0,
+    "module": 1,
+    "domain": "cysaSecArch",
+    "skill": "Scripting",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An analyst runs $\\texttt{Get-WinEvent -FilterHashtable @\\{LogName=\"Security\"; Id=4720\\}}$ on a domain controller. What will the output list?",
+    "explanation": "The command filters the Security log for event ID 4720, which records a user account being created. Lockouts are 4740 and explicit credential logons are 4648.",
+    "options": [
+      "User accounts that were locked out",
+      "User accounts that were created",
+      "Logons that used explicit credentials",
+      "Changes to the audit policy"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CYSA-D-010",
+    "section": "cysa",
+    "test": 0,
+    "module": 1,
+    "domain": "cysaThreat",
+    "skill": "Intelligence lifecycle",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A threat intelligence team has gathered raw feeds, logs and reports. Which step of the intelligence lifecycle converts them into a consistent, usable format before analysts study them?",
+    "explanation": "Processing normalizes, translates and de-duplicates collected data so it can be analyzed. Collection gathers it in the first place, and dissemination delivers finished intelligence to the people who need it.",
+    "options": [
+      "Dissemination",
+      "Collection",
+      "Processing",
+      "Feedback"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CYSA-D-011",
+    "section": "cysa",
+    "test": 0,
+    "module": 1,
+    "domain": "cysaVulnScan",
+    "skill": "Container scanning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team wants to stop container images with known-vulnerable packages from ever reaching production. Where should the image scan run?",
+    "explanation": "Scanning images at build time, and blocking images that fail, keeps flawed packages out before they run. Scanning after deployment finds the same problems only once they are already exposed.",
+    "options": [
+      "In the CI pipeline when the image is built",
+      "On a passive sensor on the cluster network",
+      "In the quarterly external network scan",
+      "On production hosts after each deploy"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CYSA-D-012",
+    "section": "cysa",
+    "test": 0,
+    "module": 1,
+    "domain": "cysaVulnPrior",
+    "skill": "Attack surface management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team continuously discovers the company's internet-facing assets, including forgotten subdomains and cloud hosts spun up outside IT, to find exposures before attackers do. Which practice is this?",
+    "explanation": "Attack surface management is ongoing discovery and monitoring of exposed assets, known and unknown. A penetration test is a scoped, point-in-time exercise against assets the company already listed.",
+    "options": [
+      "Threat modeling",
+      "Attack surface management",
+      "Bug bounty program",
+      "External penetration testing"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CYSA-D-013",
+    "section": "cysa",
+    "test": 0,
+    "module": 1,
+    "domain": "cysaIrFrame",
+    "skill": "Diamond Model",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An analyst links several Diamond Model events from one intrusion into an ordered sequence showing how the adversary moved from phishing to exfiltration. What is this sequence called?",
+    "explanation": "An activity thread chains events in causal order across one adversary operation. An activity group clusters similar events and threads that share features, often to attribute them to the same actor.",
+    "options": [
+      "Activity group",
+      "Attack graph model",
+      "Activity thread",
+      "Attack tree"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CYSA-D-014",
+    "section": "cysa",
+    "test": 0,
+    "module": 1,
+    "domain": "cysaIrHandle",
+    "skill": "Evidence acquisition",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An analyst runs a memory capture tool on a live Windows workstation. Where should the memory image be written?",
+    "explanation": "Writing the image to external media avoids overwriting unallocated space and files on the suspect drive that may hold evidence. Any location on the host's own disk changes that disk.",
+    "options": [
+      "To a temporary folder on the host",
+      "To the suspect's C: drive",
+      "To the user's Documents folder",
+      "To external forensic media"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CYSA-D-015",
+    "section": "cysa",
+    "test": 0,
+    "module": 1,
+    "domain": "cysaVulnReport",
+    "skill": "Metrics and KPIs",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A director asks whether remediation is keeping up with the new findings each scan cycle brings. Which metric answers this best?",
+    "explanation": "Comparing new findings with closed ones shows whether the backlog is growing or shrinking. Scan and asset counts show activity and scope, not progress.",
+    "options": [
+      "New versus closed findings per month",
+      "Number of scans run per month",
+      "Count of assets recorded in the CMDB",
+      "Average CVSS of all scanner plugins"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CYSA-D-016",
+    "section": "cysa",
+    "test": 0,
+    "module": 1,
+    "domain": "cysaIrReport",
+    "skill": "Impact reporting",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A draft incident report's impact section lists only the number of IoCs collected. What should the impact section describe instead?",
+    "explanation": "Impact is what the incident did to the business: downtime, data exposed, customers affected and cost. IoC counts and tooling belong in the technical sections.",
+    "options": [
+      "Tools and scripts used during the analysis",
+      "Hours each analyst spent on the case",
+      "Effects on operations, data and customers",
+      "Firewall rules changed during the work"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CYSA-D-017",
+    "section": "cysa",
+    "test": 0,
+    "module": 1,
+    "domain": "cysaSecArch",
+    "skill": "Containers",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Images are scanned at build time, but a critical CVE was published for a base image after it was pushed. Which control stops that image from being deployed today?",
+    "explanation": "Registry rescans pick up CVEs published after the build, and an admission check that rejects failing images stops them from running. Build-time scans only see what was known when the image was built.",
+    "options": [
+      "Registry rescans with an admission check",
+      "A WAF in front of every container",
+      "Container log review after each release",
+      "A quarterly scan of the running hosts"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CYSA-D-018",
+    "section": "cysa",
+    "test": 0,
+    "module": 1,
+    "domain": "cysaThreat",
+    "skill": "Rogue devices",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A wireless scan finds an access point broadcasting the corporate SSID with open authentication and a BSSID that is not in the company's inventory. What is it most likely to be?",
+    "explanation": "A copy of the corporate SSID on unknown hardware with no authentication is set up to lure users into connecting so the attacker can capture traffic or credentials. A real AP's second band would appear in the inventory.",
+    "options": [
+      "A wireless range extender",
+      "A misconfigured guest network",
+      "An evil twin access point",
+      "A second band of a real AP"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CYSA-D-019",
+    "section": "cysa",
+    "test": 0,
+    "module": 1,
+    "domain": "cysaVulnScan",
+    "skill": "Scan perspective",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A scan from the user VLAN shows a database server with only port 443 open, but a scan from the server VLAN shows ports 1433 and 3389 open as well. What is the most likely reason?",
+    "explanation": "Results depend on where the scanner sits, because firewalls and ACLs between segments decide which ports a probe can reach. A stale plugin feed changes which flaws are reported, not which ports respond.",
+    "options": [
+      "A firewall filters traffic between the VLANs",
+      "The scanner's plugin feed was out of date",
+      "The database service crashed during the first scan",
+      "The host's agent blocked the first scan's probes"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CYSA-D-020",
+    "section": "cysa",
+    "test": 0,
+    "module": 1,
+    "domain": "cysaVulnPrior",
+    "skill": "Risk response",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A legacy FTP service has several unpatched flaws. Rather than fix it, the company moves its few users to a managed file transfer service and shuts the FTP server down. Which risk response is this?",
+    "explanation": "Stopping the risky activity altogether removes the risk, which is avoidance. Mitigation would keep the service running and add controls to reduce the risk.",
+    "options": [
+      "Transfer",
+      "Mitigate",
+      "Accept",
+      "Avoid"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CYSA-D-021",
+    "section": "cysa",
+    "test": 0,
+    "module": 1,
+    "domain": "cysaIrFrame",
+    "skill": "MITRE ATT&CK",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An analyst maps every current SIEM and EDR detection rule to ATT&CK techniques and colors the matrix by coverage. What does this exercise mainly reveal?",
+    "explanation": "Mapping detections to techniques shows which adversary behaviors the SOC can and cannot see, guiding new rules and threat hunts. ATT&CK describes behavior, so it does not list missing patches.",
+    "options": [
+      "The attacker's real identity",
+      "Gaps in detection coverage",
+      "Unpatched CVEs on servers",
+      "The owners of each asset"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CYSA-D-022",
+    "section": "cysa",
+    "test": 0,
+    "module": 1,
+    "domain": "cysaIrHandle",
+    "skill": "Cloud incidents",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company's SaaS CRM account is compromised. The IR team cannot reach the provider's servers. What evidence should the team rely on?",
+    "explanation": "Under the shared responsibility model the customer cannot image a SaaS provider's infrastructure, so investigations depend on the audit logs, exports and APIs the provider makes available. Contracts should secure that access before an incident.",
+    "options": [
+      "A disk image of the SaaS servers",
+      "Logs and APIs the provider offers",
+      "Memory dumps from the provider",
+      "Packet captures on the provider LAN"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CYSA-D-023",
+    "section": "cysa",
+    "test": 0,
+    "module": 1,
+    "domain": "cysaVulnReport",
+    "skill": "Prioritized findings",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two findings in the report have the same CVSS base score of 9.8. One is on the internet-facing payment server, the other on an isolated lab host. How should the report rank them?",
+    "explanation": "A base score ignores context, so the report adds asset value and exposure to set priority, putting the public payment server first. Equal scores do not mean equal risk to the business.",
+    "options": [
+      "Neither, until a rescan confirms them",
+      "Payment server first, by asset value",
+      "Equal rank, since the scores match",
+      "Lab host first, as it is easier to fix"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CYSA-D-024",
+    "section": "cysa",
+    "test": 0,
+    "module": 1,
+    "domain": "cysaIrReport",
+    "skill": "Communication channels",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Analysts suspect the attacker can read the company's email and chat. How should the IR team coordinate during the response?",
+    "explanation": "If the attacker may see normal channels, the team switches to an out-of-band channel such as separate phones or a separate platform. Encrypted email still runs on the system the attacker may control.",
+    "options": [
+      "Use encrypted company email",
+      "Use an out-of-band channel",
+      "Use the main chat workspace",
+      "Use the ticketing system notes"
+    ],
+    "correct": [
+      1
+    ]
+  }
+]

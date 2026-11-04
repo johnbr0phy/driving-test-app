@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 // consent and children's pages), app/api/account/delete (what deletion
 // removes), lib/classes.ts and lib/quizzes.ts (what teachers and quiz makers
 // see), lib/funnel.ts and the other anonymous counters.
-const UPDATED = "November 3, 2026";
+const UPDATED = "November 4, 2026";
 const CONTACT = "john@johnbrophy.net";
 
 const h2 = "text-2xl font-semibold mb-4 mt-2";

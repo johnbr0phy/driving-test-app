@@ -29,7 +29,7 @@ import epa608Es from "./examTranslations/epa608.es.json";
 import esdgtEs from "./examTranslations/esdgt.es.json";
 import ptimtPt from "./examTranslations/ptimt.pt.json";
 
-export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "bedriving" | "dkteori" | "setrafik" | "fitheory" | "grdriving" | "rodrpciv" | "hukresz" | "mttheory" | "detheorie" | "phlet" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "detheorie" | "htl" | "cst" | "crcst";
+export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "bedriving" | "dkteori" | "setrafik" | "fitheory" | "grdriving" | "rodrpciv" | "hukresz" | "mttheory" | "detheorie" | "phlet" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "detheorie" | "htl" | "cst" | "crcst" | "zak53c3";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -7987,6 +7987,76 @@ const zak53: ExamConfig = {
   },
 };
 
+const zak53c3: ExamConfig = {
+  id: "zak53c3",
+  stateCode: "ZAK53C3",
+  idBase: 16900,
+  slug: "/k53-code-3",
+  landingPath: "/k53-code-3-learners-test",
+  name: "K53 Code 3 Learner's Practice Test (C1 and C)",
+  shortName: "K53 Code 3 learner's",
+  examLabel: "K53 Code 3 learner's licence test",
+  fullName: "South Africa K53 learner's licence test, Code 3 (heavy vehicles, for a C1 or C licence)",
+  questionIdPrefix: "ZAC3-",
+  icon: "truck",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // The Code 3 learner's test is the K53 learner's test for heavy vehicles (over 3,500 kg GVM, from
+  // 18), the step before a C1 or C licence. Same three sections as Code 2 (rules of the road, signs
+  // and markings, vehicle controls); the controls section is for a heavy vehicle. No official
+  // breakdown is published, so each mock test uses the Code 2 bank's split: rules 22 (5/6/6/5),
+  // signs and markings 22 (9/6/3/4), controls 6. Rules from the National Road Traffic Act 93 of
+  // 1996 and Regulations 2000 (PrDP, professional-driver alcohol limit, 80 km/h over 9,000 kg GVM),
+  // gov.za and the SADC Road Traffic Signs Manual, checked 2026-11-03. passPct 80 = 40 of 50,
+  // Tigertest's own target. All items original and none shared with zak53; signs described in words.
+  blueprint: {
+    c3Licence: 5,
+    c3RightOfWay: 6,
+    c3Speed: 6,
+    c3Parking: 5,
+    c3Regulatory: 9,
+    c3Warning: 6,
+    c3Guidance: 3,
+    c3Markings: 4,
+    c3Controls: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 16901, name: "Licences, PrDP & Right of Way", categories: ["c3Licence", "c3RightOfWay"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 2, id: 16902, name: "Speed, Overtaking, Parking & Loads", categories: ["c3Speed", "c3Parking"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 3, id: 16903, name: "Regulatory Signs", categories: ["c3Regulatory"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 4, id: 16904, name: "Warning Signs", categories: ["c3Warning"], size: 24, weightLabel: "6 of 50 test questions" },
+    { setNumber: 5, id: 16905, name: "Guidance Signs, Markings & Signals", categories: ["c3Guidance", "c3Markings"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 6, id: 16906, name: "Heavy Vehicle Controls", categories: ["c3Controls"], size: 24, weightLabel: "6 of 50 test questions" },
+  ],
+  categoryLabels: {
+    c3Licence: "Licences, PrDP, Alcohol & Crashes",
+    c3RightOfWay: "Intersections & Right of Way",
+    c3Speed: "Speed, Following & Overtaking",
+    c3Parking: "Stopping, Parking, Lights & Loads",
+    c3Regulatory: "Regulatory Signs",
+    c3Warning: "Warning Signs",
+    c3Guidance: "Guidance & Information Signs",
+    c3Markings: "Road Markings & Traffic Signals",
+    c3Controls: "Heavy Vehicle Controls (Code 3)",
+  },
+  copy: {
+    guestPrompt: "to save your K53 Code 3 progress and track every question you miss",
+    trainingHeading: "Train by K53 section",
+    trainingSub: "Six sets covering the rules of the road for heavy vehicles, road signs and markings, and truck controls. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions in the real test's mix, 40 to pass",
+    heroSubs: [
+      "Rules, signs and truck controls, like the real test.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your Code 3 learner's test at the DLTC.",
+    ],
+    sourceLine: "Based on the National Road Traffic Act and Regulations and the SADC road sign manual. Original questions; 50 per test, 40 to pass (Tigertest's target).",
+    analyticsKey: "zak53c3",
+  },
+};
+
 const sgbtt: ExamConfig = {
   id: "sgbtt",
   stateCode: "SGBTT",
@@ -11014,7 +11084,695 @@ const nptepta: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, nhie, cna, ptcb, phleb, ccma, cma, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, cosmetology, barber, vtne, nasm, rbt, cpc, cca, sfadmin, aswb, nce, arrt, nptepta, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, phlto, zak53, sgbtt, aerta, ngfrsc, kentsa, mykpp, hkdrive, pkdrive, esdgt, ptimt, bedriving, dkteori, setrafik, fitheory, grdriving, rodrpciv, hukresz, mttheory, detheorie, phlet, texesppr, praxisplt, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, gulfrn, inrto, htl, cst, crcst];
+// Next-20 batch C (November 2026)
+const aswbclin: ExamConfig = {
+  id: "aswbclin",
+  stateCode: "ASWBCLIN",
+  idBase: 16900,
+  slug: "/aswb-clinical",
+  landingPath: "/aswb-clinical-practice-test",
+  name: "ASWB Clinical Practice Test",
+  shortName: "ASWB Clinical",
+  examLabel: "ASWB Clinical exam",
+  fullName: "ASWB Clinical social work licensing exam",
+  questionIdPrefix: "ASWBCLIN-",
+  icon: "heart",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // ASWB Clinical content outline in the 2026 Examination Guidebook, for exams from August 3, 2026
+  // (checked November 2026): 122 questions (110 scored, 12 pretest) in 4 hours; I Values and Ethics
+  // 36%, II Assessment and Planning 32%, III Intervention and Practice 32%, scaled to 50 per test as
+  // 18/16/16: IA 6, IB 7, IC 5; IIA 5, IIB (DSM-5-TR, mental status, risk) 7, IIC (planning,
+  // medications) 4; III evidence-based models 8, crisis/trauma/grief/case management 4, IIIC+IIID 4.
+  // ASWB reports pass/fail against a per-form number correct; 70% is a readiness marker. All items original.
+  blueprint: {
+    aswbclinEthics: 6,
+    aswbclinService: 7,
+    aswbclinDiversity: 5,
+    aswbclinConcepts: 5,
+    aswbclinDiagnosis: 7,
+    aswbclinPlanning: 4,
+    aswbclinTherapy: 8,
+    aswbclinPractice: 4,
+    aswbclinEvalSup: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 16901, name: "Clinical Ethics & Service Delivery", categories: ["aswbclinEthics", "aswbclinService"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 2, id: 16902, name: "Diversity & Human Behavior", categories: ["aswbclinDiversity", "aswbclinConcepts"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 3, id: 16903, name: "Diagnosis & Treatment Planning", categories: ["aswbclinDiagnosis", "aswbclinPlanning"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 4, id: 16904, name: "Evidence-Based Treatment Models", categories: ["aswbclinTherapy"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 5, id: 16905, name: "Crisis, Evaluation & Supervision", categories: ["aswbclinPractice", "aswbclinEvalSup"], size: 32, weightLabel: "8 of 50 test questions" },
+  ],
+  categoryLabels: {
+    aswbclinEthics: "Ethical Principles & Responsibilities",
+    aswbclinService: "Ethical Service Delivery",
+    aswbclinDiversity: "Diversity & Social Justice",
+    aswbclinConcepts: "Assessment Concepts",
+    aswbclinDiagnosis: "DSM-5-TR Diagnosis & Mental Status",
+    aswbclinPlanning: "Treatment Planning & Medications",
+    aswbclinTherapy: "Evidence-Based Treatment Models",
+    aswbclinPractice: "Crisis, Trauma & Case Management",
+    aswbclinEvalSup: "Evaluation, Supervision & Administration",
+  },
+  copy: {
+    guestPrompt: "to save your ASWB Clinical progress and track every question you miss",
+    trainingHeading: "Train by content area",
+    trainingSub: "Five sets covering all three areas of the 2026 ASWB Clinical outline. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock exams · 50 questions weighted like the real exam",
+    heroSubs: [
+      "Three content areas, four mock exams. Ethics weighs most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock exam.",
+      "Fix the misses, then retake.",
+      "All done. Schedule your LCSW exam.",
+    ],
+    sourceLine: "Based on the ASWB Clinical content outline (2026 Examination Guidebook). Original questions; 50 per test, weighted like the real exam. Not affiliated with ASWB.",
+    analyticsKey: "aswbclin",
+  },
+};
+
+const phr: ExamConfig = {
+  id: "phr",
+  stateCode: "PHR",
+  idBase: 17000,
+  slug: "/phr",
+  landingPath: "/phr-practice-test",
+  name: "PHR Practice Test",
+  shortName: "PHR",
+  examLabel: "PHR exam",
+  fullName: "HRCI Professional in Human Resources (PHR)",
+  questionIdPrefix: "PHR-",
+  icon: "building",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // HRCI PHR Exam Content Outline (took effect 2024; on hrci.org, checked 2026-11-04): 115 items
+  // (90 scored + 25 pretest), 2 hours, scaled score with 500 to pass (no percentage published, so
+  // 70% is Tigertest's readiness line). Business Management 14%, Workforce Planning and Talent
+  // Acquisition 14%, Learning and Development 10%, Total Rewards 15%, Employee Engagement 17%,
+  // Employee and Labor Relations 20%, HR Information Management 10%, scaled to 50: 7, 7, 5, 7.5,
+  // 8.5, 10, 5; the tied half remainders go to Engagement (9) over Total Rewards (7). Employee and
+  // Labor Relations is split 5/5. US federal employment law as in force November 2026.
+  blueprint: {
+    phrBusiness: 7,
+    phrTalent: 7,
+    phrLearning: 5,
+    phrRewards: 7,
+    phrEngagement: 9,
+    phrCompliance: 5,
+    phrLabor: 5,
+    phrHris: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 17001, name: "Business Management & HR Information", categories: ["phrBusiness", "phrHris"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 2, id: 17002, name: "Talent Acquisition & Learning", categories: ["phrTalent", "phrLearning"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 3, id: 17003, name: "Total Rewards", categories: ["phrRewards"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 4, id: 17004, name: "Employee Engagement", categories: ["phrEngagement"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 5, id: 17005, name: "Employee & Labor Relations", categories: ["phrCompliance", "phrLabor"], size: 40, weightLabel: "10 of 50 test questions" },
+  ],
+  categoryLabels: {
+    phrBusiness: "Business Management",
+    phrTalent: "Workforce Planning & Talent Acquisition",
+    phrLearning: "Learning & Development",
+    phrRewards: "Total Rewards",
+    phrEngagement: "Employee Engagement",
+    phrCompliance: "EEO, Leave, Safety & Policies",
+    phrLabor: "Labor Relations & Complaints",
+    phrHris: "HR Information Management",
+  },
+  copy: {
+    guestPrompt: "to save your PHR progress and track every question you miss",
+    trainingHeading: "Train by functional area",
+    trainingSub: "Five sets covering all seven functional areas of the PHR content outline. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions weighted like the real PHR, 70% readiness line",
+    heroSubs: [
+      "Five sets, four mock tests. Employee relations and engagement weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Schedule your PHR exam.",
+    ],
+    sourceLine: "Based on the HRCI PHR Exam Content Outline (2024). Original questions; 50 per test, weighted like the real 115-question exam. 70% is Tigertest's readiness line; HRCI reports a scaled score. Not affiliated with HRCI.",
+    analyticsKey: "phr",
+  },
+};
+
+const cisa: ExamConfig = {
+  id: "cisa",
+  stateCode: "CISA",
+  idBase: 17100,
+  slug: "/cisa",
+  landingPath: "/cisa-practice-test",
+  name: "CISA Practice Test",
+  shortName: "CISA",
+  examLabel: "CISA exam",
+  fullName: "ISACA Certified Information Systems Auditor (CISA)",
+  questionIdPrefix: "CISA-",
+  icon: "shield",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // ISACA CISA Exam Content Outline, job practice effective 1 August 2024 (checked 2026-11-04):
+  // 150 questions (4 hours, scaled 200 to 800 with 450 to pass, per guides quoting the candidate
+  // guide). Domain 1 Information System Auditing Process 18%, Domain 2 Governance and Management
+  // of IT 18%, Domain 3 IS Acquisition, Development and Implementation 12%, Domain 4 IS Operations
+  // and Business Resilience 26%, Domain 5 Protection of Information Assets 26%, scaled to 50:
+  // 9/9/6/13/13 exactly. Four 50-question tests at the real pace; 70% is Tigertest's readiness line.
+  blueprint: {
+    cisaAudit: 9,
+    cisaGovernance: 9,
+    cisaAcquisition: 6,
+    cisaOperations: 13,
+    cisaProtection: 13,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 17101, name: "Auditing Process", categories: ["cisaAudit"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 2, id: 17102, name: "Governance & Management of IT", categories: ["cisaGovernance"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 3, id: 17103, name: "Acquisition & Development", categories: ["cisaAcquisition"], size: 24, weightLabel: "6 of 50 test questions" },
+    { setNumber: 4, id: 17104, name: "Operations & Resilience", categories: ["cisaOperations"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 5, id: 17105, name: "Protection of Information Assets", categories: ["cisaProtection"], size: 52, weightLabel: "13 of 50 test questions" },
+  ],
+  categoryLabels: {
+    cisaAudit: "Information System Auditing Process",
+    cisaGovernance: "Governance & Management of IT",
+    cisaAcquisition: "IS Acquisition, Development & Implementation",
+    cisaOperations: "IS Operations & Business Resilience",
+    cisaProtection: "Protection of Information Assets",
+  },
+  copy: {
+    guestPrompt: "to save your CISA progress and track every question you miss",
+    trainingHeading: "Train by domain",
+    trainingSub: "Five sets, one for each CISA job practice domain. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real exam, 70% readiness line",
+    heroSubs: [
+      "Five domain sets, four tests. Operations and protection weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Book your CISA exam.",
+    ],
+    sourceLine: "Based on ISACA's CISA job practice areas (effective August 2024). Original questions; 50 per test, weighted like the real exam. Not affiliated with ISACA.",
+    analyticsKey: "cisa",
+  },
+};
+
+const cssgb: ExamConfig = {
+  id: "cssgb",
+  stateCode: "CSSGB",
+  idBase: 17200,
+  slug: "/six-sigma-green-belt",
+  landingPath: "/six-sigma-green-belt-practice-test",
+  name: "Six Sigma Green Belt Practice Test",
+  shortName: "Six Sigma Green Belt",
+  examLabel: "CSSGB exam",
+  fullName: "ASQ Certified Six Sigma Green Belt",
+  questionIdPrefix: "CSSGB-",
+  icon: "target",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // ASQ CSSGB 2022 Body of Knowledge (asq.org, checked 2026-11-04): 110 questions, 100 scored,
+  // 4 h 18 min, open book; I. Overview 11, II. Define 20, III. Measure 20, IV. Analyze 18,
+  // V. Improve 16, VI. Control 15 of 100. Halved to 6/10/10/9/8/7 for 50-question tests (the two
+  // half remainders split one up, one down). ASQE reports a scaled pass of 550 with no raw
+  // percentage; 70% is Tigertest's readiness line.
+  blueprint: {
+    cssgbOverview: 6,
+    cssgbDefine: 10,
+    cssgbMeasure: 10,
+    cssgbAnalyze: 9,
+    cssgbImprove: 8,
+    cssgbControl: 7,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 17201, name: "Six Sigma & the Organization", categories: ["cssgbOverview"], size: 24, weightLabel: "6 of 50 test questions" },
+    { setNumber: 2, id: 17202, name: "Define Phase", categories: ["cssgbDefine"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 3, id: 17203, name: "Measure Phase", categories: ["cssgbMeasure"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 4, id: 17204, name: "Analyze Phase", categories: ["cssgbAnalyze"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 5, id: 17205, name: "Improve Phase", categories: ["cssgbImprove"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 6, id: 17206, name: "Control Phase", categories: ["cssgbControl"], size: 28, weightLabel: "7 of 50 test questions" },
+  ],
+  categoryLabels: {
+    cssgbOverview: "Six Sigma & the Organization",
+    cssgbDefine: "Define Phase",
+    cssgbMeasure: "Measure Phase",
+    cssgbAnalyze: "Analyze Phase",
+    cssgbImprove: "Improve Phase",
+    cssgbControl: "Control Phase",
+  },
+  copy: {
+    guestPrompt: "to save your Six Sigma Green Belt progress and track every question you miss",
+    trainingHeading: "Train by DMAIC phase",
+    trainingSub: "Six sets, one per section of the 2022 Body of Knowledge. Every calculation is worked out, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real exam, 70% readiness line",
+    heroSubs: [
+      "Six sets, four tests. Define and Measure weigh most.",
+      "Master each phase, then test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Book your Green Belt exam.",
+    ],
+    sourceLine: "Based on the ASQ CSSGB Body of Knowledge (2022). Original questions; 50 per test, weighted like the real exam, with a 70% readiness line. Not affiliated with ASQ.",
+    analyticsKey: "cssgb",
+  },
+};
+
+const ccs: ExamConfig = {
+  id: "ccs",
+  stateCode: "CCS",
+  idBase: 17300,
+  slug: "/ccs",
+  landingPath: "/ccs-practice-test",
+  name: "CCS Practice Test",
+  shortName: "CCS",
+  examLabel: "CCS exam",
+  fullName: "AHIMA Certified Coding Specialist (CCS) exam",
+  questionIdPrefix: "CCS-",
+  icon: "book",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // AHIMA CCS Exam Content Outline, effective 05/01/2024 (checked 2026-11-04): Coding Knowledge
+  // and Skills 39-41%, Coding Documentation 18-22%, Provider Queries 9-11%, Regulatory Compliance
+  // 18-22%, Information Technologies 9-11%; medical scenarios (inpatient, outpatient, ED) not
+  // modelled. Midpoints scaled to 50 per test: 20 (inpatient ICD-10-CM 6, ICD-10-PCS 4,
+  // outpatient/ED 5, MS-DRGs/APCs/edits 5; the Domain 1 split is Tigertest's), 10, 5, 10, 5. The
+  // real exam is 107 items (97 scored) in 4 hours with a passing scaled score of 300; 70% is a
+  // readiness line. Guidelines and concepts only: no CPT descriptors, no code-book lookups.
+  // All items original.
+  blueprint: {
+    ccsInpatient: 6,
+    ccsPcs: 4,
+    ccsOutpatient: 5,
+    ccsDrg: 5,
+    ccsDocumentation: 10,
+    ccsQueries: 5,
+    ccsCompliance: 10,
+    ccsIt: 5,
+  },
+  trainingSets: testSets(17300, 4),
+  categoryLabels: {
+    ccsInpatient: "Inpatient Diagnosis Coding",
+    ccsPcs: "ICD-10-PCS Procedures",
+    ccsOutpatient: "Outpatient & ED Coding",
+    ccsDrg: "MS-DRGs, APCs & Edits",
+    ccsDocumentation: "Coding Documentation",
+    ccsQueries: "Provider Queries",
+    ccsCompliance: "Regulatory Compliance",
+    ccsIt: "Information Technologies",
+  },
+  copy: {
+    guestPrompt: "to save your CCS progress and track every question you miss",
+    trainingHeading: "Train by practice test",
+    trainingSub: "Each set holds one practice test's questions, all five AHIMA CCS domains. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real exam",
+    heroSubs: [
+      "Five domains, four tests. Coding skills weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Schedule your CCS exam.",
+    ],
+    sourceLine: "Weighted to the AHIMA CCS Exam Content Outline. Original questions on coding guidelines and concepts; not affiliated with AHIMA.",
+    analyticsKey: "ccs",
+  },
+};
+
+const rdexam: ExamConfig = {
+  id: "rdexam",
+  stateCode: "RDEXAM",
+  idBase: 17400,
+  slug: "/registered-dietitian",
+  landingPath: "/registered-dietitian-exam-practice-test",
+  name: "RD Exam Practice Test",
+  shortName: "RD Exam",
+  examLabel: "RD exam",
+  fullName: "CDR Registration Examination for Dietitians",
+  questionIdPrefix: "RDEXAM-",
+  icon: "utensils",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // CDR Registered Dietitian Examination Test Specifications, January 1, 2027 to December 31, 2031
+  // (approved June 25, 2025; checked November 2026): I Fundamentals of Dietetics Practice 23%,
+  // II Community and Public Health Nutrition 22%, III Human Nutrition and Medical Nutrition
+  // Therapy 40%, IV Food Science and Food Systems 15%. Scaled to 50 per test: I 12 (6/3/3),
+  // II 11 (6/5), III 20 (6/5/5/4), IV 7 (3/4); the split inside each domain is Tigertest's.
+  // The real exam is computer adaptive (125 to 145 questions in 3 hours, scaled 1 to 50, 25 to
+  // pass); 70% is a readiness marker. All items original.
+  blueprint: {
+    rdMgmt: 6,
+    rdResearch: 3,
+    rdPractice: 3,
+    rdCommunity: 6,
+    rdEducation: 5,
+    rdNutrition: 6,
+    rdAssessment: 5,
+    rdMnt: 5,
+    rdSupport: 4,
+    rdFoodSci: 3,
+    rdFoodservice: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 17401, name: "Management, Research & Practice", categories: ["rdMgmt", "rdResearch", "rdPractice"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 2, id: 17402, name: "Community Nutrition & Education", categories: ["rdCommunity", "rdEducation"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 3, id: 17403, name: "Human Nutrition & Physiology", categories: ["rdNutrition"], size: 24, weightLabel: "6 of 50 test questions" },
+    { setNumber: 4, id: 17404, name: "Screening, Assessment & Diagnosis", categories: ["rdAssessment"], size: 20, weightLabel: "5 of 50 test questions" },
+    { setNumber: 5, id: 17405, name: "Medical Nutrition Therapy & Nutrition Support", categories: ["rdMnt", "rdSupport"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 6, id: 17406, name: "Food Science & Foodservice", categories: ["rdFoodSci", "rdFoodservice"], size: 28, weightLabel: "7 of 50 test questions" },
+  ],
+  categoryLabels: {
+    rdMgmt: "Management & Leadership",
+    rdResearch: "Research Applications",
+    rdPractice: "Professional Practice & Marketing",
+    rdCommunity: "Community Nutrition & Programs",
+    rdEducation: "Nutrition Education & Counseling",
+    rdNutrition: "Human Nutrition & Physiology",
+    rdAssessment: "Screening, Assessment & Diagnosis",
+    rdMnt: "Medical Nutrition Therapy",
+    rdSupport: "Enteral & Parenteral Nutrition",
+    rdFoodSci: "Food Science",
+    rdFoodservice: "Menus & Foodservice Systems",
+  },
+  copy: {
+    guestPrompt: "to save your RD exam progress and track every question you miss",
+    trainingHeading: "Train by CDR domain",
+    trainingSub: "Six sets covering the four domains of the CDR test specifications. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock exams · 50 questions weighted like the CDR domains",
+    heroSubs: [
+      "Four domains, four mock exams. Medical nutrition therapy weighs most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock exam.",
+      "Fix the misses, then retake.",
+      "All done. You're ready for the RD exam.",
+    ],
+    sourceLine: "Based on the CDR Registration Examination for Dietitians test specifications. Original questions; 50 per test, weighted like the real exam. Not affiliated with the Commission on Dietetic Registration.",
+    analyticsKey: "rdexam",
+  },
+};
+
+const praxis5001: ExamConfig = {
+  id: "praxis5001",
+  stateCode: "PX5001",
+  idBase: 17500,
+  slug: "/praxis-elementary",
+  landingPath: "/praxis-elementary-education-practice-test",
+  name: "Praxis Elementary Education Practice Test",
+  shortName: "Praxis 5001",
+  examLabel: "Praxis Elementary Education 5001",
+  fullName: "Praxis Elementary Education: Multiple Subjects (5001)",
+  questionIdPrefix: "PX5001-",
+  icon: "graduation",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // ETS Praxis Study Companion for 5001 (2024, checked 2026-11-04): 245 questions in 4 h 35 min,
+  // four separately timed subtests: 5002 RLA 80/90 min (Reading 38, Writing, Speaking and
+  // Listening 42), 5003 Math 50/65 min (Numbers 20, Algebraic Thinking 15, Geometry/Data 15),
+  // 5004 Social Studies 60/60 min (US history and government 27, Geography/Anthropology/
+  // Sociology 18, World History and Economics 15), 5005 Science 55/60 min (Earth, Life, Physical
+  // about 18 each). Subtest shares of 245 scale to 17/10/12/11 of 50, split by ETS category.
+  // ETS sets no pass mark (states set one per subtest); 70% is a readiness line. Pools exactly 4x.
+  // Single-answer only: multiple-selection, grid and numeric-entry formats are not modelled.
+  blueprint: {
+    px5Foundational: 3,
+    px5Texts: 5,
+    px5Writing: 4,
+    px5Language: 5,
+    px5Number: 4,
+    px5Algebra: 3,
+    px5GeomData: 3,
+    px5UsGov: 5,
+    px5Geography: 4,
+    px5WorldEcon: 3,
+    px5Earth: 4,
+    px5Life: 4,
+    px5Physical: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 17501, name: "Reading", categories: ["px5Foundational", "px5Texts"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 2, id: 17502, name: "Writing, Language, Speaking & Listening", categories: ["px5Writing", "px5Language"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 3, id: 17503, name: "Mathematics", categories: ["px5Number", "px5Algebra", "px5GeomData"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 4, id: 17504, name: "Social Studies", categories: ["px5UsGov", "px5Geography", "px5WorldEcon"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 5, id: 17505, name: "Science", categories: ["px5Earth", "px5Life", "px5Physical"], size: 44, weightLabel: "11 of 50 test questions" },
+  ],
+  categoryLabels: {
+    px5Foundational: "Foundational Reading Skills",
+    px5Texts: "Literature & Informational Texts",
+    px5Writing: "Writing & Research",
+    px5Language: "Language, Speaking & Listening",
+    px5Number: "Numbers & Operations",
+    px5Algebra: "Algebraic Thinking",
+    px5GeomData: "Geometry, Measurement, Data & Probability",
+    px5UsGov: "US History, Government & Citizenship",
+    px5Geography: "Geography, Anthropology & Sociology",
+    px5WorldEcon: "World History & Economics",
+    px5Earth: "Earth Science",
+    px5Life: "Life Science",
+    px5Physical: "Physical Science",
+  },
+  copy: {
+    guestPrompt: "to save your Praxis 5001 progress and track every question you miss",
+    trainingHeading: "Train by subtest",
+    trainingSub: "Five sets that follow the four subtests: reading, writing and language, mathematics, social studies and science. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions mixing all four subtests like the 5001",
+    heroSubs: [
+      "Four subjects, five sets, four practice tests. Reading and language arts weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. You're ready for the 5001.",
+    ],
+    sourceLine: "Based on the ETS content topics for Praxis Elementary Education: Multiple Subjects (5001), subtests 5002 to 5005. Original single-answer questions. Not affiliated with ETS.",
+    analyticsKey: "praxis5001",
+  },
+};
+
+const fladjuster: ExamConfig = {
+  id: "fladjuster",
+  stateCode: "FLADJ",
+  idBase: 17600,
+  slug: "/florida-adjuster",
+  landingPath: "/florida-6-20-adjuster-practice-test",
+  name: "Florida 6-20 Adjuster Practice Test",
+  shortName: "FL 6-20 Adjuster",
+  examLabel: "Florida 6-20 exam",
+  fullName: "Florida All-Lines Adjuster license exam (6-20)",
+  questionIdPrefix: "FLADJ-",
+  icon: "umbrella",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Florida Insurance Examination Content Outlines effective January 1, 2026 (Pearson VUE 121003),
+  // Florida Adjuster's All Lines Insurance: 100 scored questions plus 10 pretest in 2 hours, 70% to
+  // pass (handbook 121000). I concepts, contracts and adjusting 14%, II casualty/liability 28%,
+  // III fire and allied lines, marine and dwelling 28%, IV motor vehicle physical damage and
+  // mechanical breakdown 15%, V health 2%, VI residual markets 2%, VII Florida statutes 11%,
+  // scaled to 50 as 7/14/14/7/1/1/6 (V and VI share one category of 2):
+  // I = concepts 4, adjusting 3; II = auto 4, PIP/UM 3, liability/boiler/crime 4, workers' comp 3;
+  // III = homeowners/dwelling 6, commercial 3, flood 2, marine 3; IV = 7; V+VI = 2;
+  // VII = licensing 3, conduct/ethics 3. All items original; Florida law as in force November 2026.
+  blueprint: {
+    fladjConcepts: 4,
+    fladjAdjusting: 3,
+    fladjAuto: 4,
+    fladjPip: 3,
+    fladjLiability: 4,
+    fladjWorkComp: 3,
+    fladjHome: 6,
+    fladjCommercial: 3,
+    fladjFlood: 2,
+    fladjMarine: 3,
+    fladjPhysDamage: 7,
+    fladjResidual: 2,
+    fladjLicensing: 3,
+    fladjConduct: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 17601, name: "Insurance Concepts & Adjusting", categories: ["fladjConcepts", "fladjAdjusting"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 2, id: 17602, name: "Auto Liability, PIP & UM", categories: ["fladjAuto", "fladjPip"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 3, id: 17603, name: "Auto Physical Damage & Mechanical Breakdown", categories: ["fladjPhysDamage"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 4, id: 17604, name: "Liability, Workers' Comp & Residual Markets", categories: ["fladjLiability", "fladjWorkComp", "fladjResidual"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 5, id: 17605, name: "Homeowners, Dwelling & Flood", categories: ["fladjHome", "fladjFlood"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 6, id: 17606, name: "Commercial Property & Marine", categories: ["fladjCommercial", "fladjMarine"], size: 24, weightLabel: "6 of 50 test questions" },
+    { setNumber: 7, id: 17607, name: "Florida Licensing, Conduct & Ethics", categories: ["fladjLicensing", "fladjConduct"], size: 24, weightLabel: "6 of 50 test questions" },
+  ],
+  categoryLabels: {
+    fladjConcepts: "Insurance Concepts & Contracts",
+    fladjAdjusting: "Adjusting Practices & Settlements",
+    fladjAuto: "Auto Liability (Personal & Business)",
+    fladjPip: "Florida PIP & Uninsured Motorists",
+    fladjLiability: "General Liability, Umbrella, Boiler & Crime",
+    fladjWorkComp: "Florida Workers' Compensation",
+    fladjHome: "Homeowners, Dwelling & Hurricane Rules",
+    fladjCommercial: "Commercial Property & BOP",
+    fladjFlood: "Flood Insurance",
+    fladjMarine: "Inland Marine, Ocean Marine & Aviation",
+    fladjPhysDamage: "Auto Physical Damage & Mechanical Breakdown",
+    fladjResidual: "Health Insurance & Residual Markets",
+    fladjLicensing: "Florida Adjuster Licensing",
+    fladjConduct: "Florida Adjuster Conduct & Ethics",
+  },
+  copy: {
+    guestPrompt: "to save your Florida 6-20 progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Seven sets covering all seven parts of the Florida all-lines adjuster outline. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions weighted like the real Florida 6-20 exam, 70% to pass",
+    heroSubs: [
+      "Seven sets, four mock tests. Casualty and property lines are over half the exam.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Schedule your Florida 6-20 exam.",
+    ],
+    sourceLine: "Based on the Florida all-lines adjuster content outline effective January 2026. Original questions; 50 per test, weighted like the real 100-question exam. Not affiliated with the Florida Department of Financial Services or Pearson VUE.",
+    analyticsKey: "fladjuster",
+  },
+};
+
+const llqp: ExamConfig = {
+  id: "llqp",
+  stateCode: "LLQP",
+  idBase: 17700,
+  slug: "/llqp",
+  landingPath: "/llqp-practice-test",
+  name: "LLQP Practice Test",
+  shortName: "LLQP",
+  examLabel: "LLQP exam",
+  fullName: "Life Licence Qualification Program (LLQP) exam",
+  questionIdPrefix: "LLQP-",
+  icon: "umbrella",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 60,
+  // Harmonized LLQP (CISRO curriculum), four modules written separately: Life Insurance,
+  // Accident and Sickness Insurance, Segregated Funds and Annuities (35 questions, 30 scored each),
+  // Ethics and Professional Practice (25 questions, 20 scored), 75 minutes each, 60% per module
+  // (Insurance Council of BC; Service NL). Mixed mock tests weighted 30/30/30/20 scaled to 50:
+  // Life 14 = products 5, contracts 4, tax/estate/business 5; A&S 13 = disability 5,
+  // CI/LTC/health 4, group/government/tax 4; Seg funds and annuities 13 = seg funds 6,
+  // annuities/registered plans 4, investing 3; Ethics 10 = regulation/law 4, conduct 6.
+  // All items original; Canadian law and CCIR/CISRO guidance as of November 2026.
+  blueprint: {
+    llqpLifeProducts: 5,
+    llqpLifeContract: 4,
+    llqpLifeTax: 5,
+    llqpDisability: 5,
+    llqpHealth: 4,
+    llqpGroupGov: 4,
+    llqpSegFunds: 6,
+    llqpAnnuities: 4,
+    llqpInvesting: 3,
+    llqpRegulation: 4,
+    llqpConduct: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 17701, name: "Life Insurance", categories: ["llqpLifeProducts", "llqpLifeContract", "llqpLifeTax"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 2, id: 17702, name: "Accident & Sickness Insurance", categories: ["llqpDisability", "llqpHealth", "llqpGroupGov"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 3, id: 17703, name: "Segregated Funds & Annuities", categories: ["llqpSegFunds", "llqpAnnuities", "llqpInvesting"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 4, id: 17704, name: "Ethics & Professional Practice", categories: ["llqpRegulation", "llqpConduct"], size: 40, weightLabel: "10 of 50 test questions" },
+  ],
+  categoryLabels: {
+    llqpLifeProducts: "Life Insurance Products & Riders",
+    llqpLifeContract: "Life Contracts, Underwriting & Beneficiaries",
+    llqpLifeTax: "Life Taxation, Needs, Estate & Business",
+    llqpDisability: "Disability Insurance",
+    llqpHealth: "Critical Illness, Long-Term Care & Health",
+    llqpGroupGov: "Group Benefits, Government Plans & Tax",
+    llqpSegFunds: "Segregated Funds",
+    llqpAnnuities: "Annuities & Registered Plans",
+    llqpInvesting: "Investment Basics",
+    llqpRegulation: "Regulation, Law & Compliance",
+    llqpConduct: "Professional Conduct & Fair Treatment",
+  },
+  copy: {
+    guestPrompt: "to save your LLQP progress and track every question you miss",
+    trainingHeading: "Train by module",
+    trainingSub: "One set for each LLQP module: life, accident and sickness, segregated funds and annuities, and ethics. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions across all four modules, 60% to pass",
+    heroSubs: [
+      "Four modules, four mock tests. Each real module is passed on its own.",
+      "Master each module's set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your LLQP modules.",
+    ],
+    sourceLine: "Based on the harmonized LLQP's four modules, Canadian law and CCIR/CISRO guidance as of November 2026. Original questions; 50 per test, mixing the modules in proportion. Not affiliated with CISRO, any provincial regulator or the AMF.",
+    analyticsKey: "llqp",
+  },
+};
+
+const cemap: ExamConfig = {
+  id: "cemap",
+  stateCode: "CEMAP",
+  idBase: 17800,
+  slug: "/cemap",
+  landingPath: "/cemap-1-practice-test",
+  name: "CeMAP 1 Practice Test",
+  shortName: "CeMAP 1",
+  examLabel: "CeMAP Module 1 (FSRE)",
+  fullName: "CeMAP Module 1: Financial Services, Regulation and Ethics (FSRE)",
+  questionIdPrefix: "CEMAP-",
+  icon: "house",
+  testCount: 5,
+  questionsPerTest: 40,
+  passPct: 70,
+  // LIBF (Walbrook Institute London) Level 4 FSRE qualification specification v7, July 2026
+  // (checked Nov 2026): CeMAP Module 1 since 30 Sept 2025, replacing UKFR. Units FRE1 and FRE2,
+  // each a 1-hour exam of 25 standalone MCQs + 3 case studies x 5 linked MCQs = 40 marks, 70% to
+  // pass each unit. No published weights per learning outcome, so each 40-question mock is 20 FRE1
+  // (LO1-LO5) and 20 FRE2 (LO6-LO8), split by the breadth of each LO (Tigertest's split).
+  // ceil(0.7 x 40) = 28, the real unit pass mark. All items original.
+  blueprint: {
+    cemapMarkets: 4,
+    cemapConsumer: 3,
+    cemapLaw: 5,
+    cemapRegHistory: 3,
+    cemapFca: 5,
+    cemapAdvice: 4,
+    cemapConduct: 4,
+    cemapCompliance: 5,
+    cemapClients: 4,
+    cemapEthics: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 17801, name: "Financial Markets & Consumers", categories: ["cemapMarkets", "cemapConsumer"], size: 35, weightLabel: "7 of 40 test questions" },
+    { setNumber: 2, id: 17802, name: "Law, Wills & Trusts", categories: ["cemapLaw"], size: 25, weightLabel: "5 of 40 test questions" },
+    { setNumber: 3, id: 17803, name: "Regulation, the FCA & the PRA", categories: ["cemapRegHistory", "cemapFca"], size: 40, weightLabel: "8 of 40 test questions" },
+    { setNumber: 4, id: 17804, name: "Advice, Clients & Conduct", categories: ["cemapAdvice", "cemapConduct", "cemapClients"], size: 60, weightLabel: "12 of 40 test questions" },
+    { setNumber: 5, id: 17805, name: "Compliance & Ethics", categories: ["cemapCompliance", "cemapEthics"], size: 40, weightLabel: "8 of 40 test questions" },
+  ],
+  categoryLabels: {
+    cemapMarkets: "Financial Markets & the Economy",
+    cemapConsumer: "Consumer Needs & Products",
+    cemapLaw: "Law, Wills & Trusts",
+    cemapRegHistory: "How UK Regulation Developed",
+    cemapFca: "The FCA, PRA & the Handbook",
+    cemapAdvice: "Advice Skills & the Fact Find",
+    cemapConduct: "Principles, Consumer Duty & Conduct",
+    cemapCompliance: "AML, Data, Complaints & Redress",
+    cemapClients: "Clients, Disclosure & Advice Standards",
+    cemapEthics: "Ethics & Professionalism",
+  },
+  copy: {
+    guestPrompt: "to save your CeMAP 1 progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets covering both FSRE units, FRE1 and FRE2. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 40 questions like one real unit, 70% to pass",
+    heroSubs: [
+      "Five sets, five mock tests. Start with markets.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Sit FRE1 and FRE2.",
+    ],
+    sourceLine: "Based on LIBF's FSRE (CeMAP Module 1) syllabus for FRE1 and FRE2. Original questions; case studies written as single questions. Not affiliated with LIBF or Walbrook Institute London.",
+    analyticsKey: "cemap",
+  },
+};
+
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, nhie, cna, ptcb, phleb, ccma, cma, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, sfadmin, phr, cisa, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, phlto, zak53, zak53c3, sgbtt, aerta, ngfrsc, kentsa, mykpp, hkdrive, pkdrive, esdgt, ptimt, bedriving, dkteori, setrafik, fitheory, grdriving, rodrpciv, hukresz, mttheory, detheorie, phlet, texesppr, praxisplt, praxis5001, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, gulfrn, inrto, htl, cst, crcst];
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
 export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA, realestatePA, realestateIL, realestateOH, realestateGA, realestateNC, realestateMI, realestateVA, realestateWA, realestateAZ, realestateTN, insuranceNY, insurancePA, insuranceIL, insuranceOH, insuranceGA, insuranceNC, insuranceMI, insuranceNJ, insuranceVA, insuranceWA, pncNY, pncPA, pncIL, pncOH, pncGA, pncNC, pncMI, pncNJ, pncVA, pncWA];

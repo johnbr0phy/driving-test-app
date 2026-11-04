@@ -40,7 +40,7 @@ const TEACHER_LED = new Set([
   "uklitu", "cacit", "aucit",
   // Next 30 batch (October 2026)
   "rbt", "cpc", "cca", "aswb", "arrt", "nce", "jelec", "barber", "ffi", "police", "faapvt",
-  "psat", "praxis", "gre", "gmat", "netplus", "cissp", "gcdl", "itil", "psm", "capm",
+  "psat", "praxis", "gre", "gmat", "netplus", "cysa", "cissp", "gcdl", "itil", "psm", "capm",
   "ssccgl", "rrbntpc", "ctet", "ibpspo",
   "rrbgroupd", "sscgd", "sscchsl", "sscmts", "uppolice", "ibpsclerk", "jnvst", "jambeng", "appsych",
   // Next-100 batch 2 (November 2026)
@@ -53,6 +53,8 @@ const TEACHER_LED = new Set([
   "jambmath", "jambbio", "jambchem", "jambphys", "apgov", "ngpolice", "trcnpqe",
   // Next-20 batch B (November 2026)
   "cma", "nbdhe", "nptepta", "aatl2", "accafa",
+  // Next-20 batch C (November 2026)
+  "aswbclin", "phr", "ccs", "rdexam", "cemap",
 ]);
 
 export function isTeacherLedExam(id: string): boolean {

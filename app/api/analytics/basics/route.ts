@@ -11,8 +11,8 @@ import { isBotRequest } from '@/lib/botUserAgent';
 //   exams.<exam>.<event>_cold       ...with none learned in that drill
 //   skills.<exam>.<skill>.<event>   per-skill counts (skill_open, skill_learned, brushup*)
 //   drills.<exam>.<drill>.<event>[_basics|_cold]
-const EVENTS = new Set(['skill_open', 'skill_learned', 'brushup_shown', 'brushup', 'exam_start', 'drill_mastered']);
-const SKILL_EVENTS = new Set(['skill_open', 'skill_learned', 'brushup_shown', 'brushup']);
+const EVENTS = new Set(['skill_open', 'skill_learned', 'brushup_shown', 'brushup', 'exam_start', 'drill_mastered', 'play_start', 'play_done']);
+const SKILL_EVENTS = new Set(['skill_open', 'skill_learned', 'brushup_shown', 'brushup', 'play_start', 'play_done']);
 
 export async function POST(request: NextRequest) {
   // Bots never count in /admin (lib/botUserAgent.ts).

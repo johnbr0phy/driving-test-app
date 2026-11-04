@@ -199,7 +199,8 @@
         { "ask": "Which do you undo first?", "options": ["The + 4", "The × 3"], "answer": 0, "then": "Clear the loose number first. Subtract 4 from both sides.", "hint": "The last thing done to x was adding 4. Undo that first.", "line": "3x + 4 − 4 = 19 − 4" },
         { "ask": "19 − 4 = ?", "options": ["15", "23"], "answer": 0, "then": "Now it reads 3x = 15.", "line": "3x = 15" },
         { "ask": "How do you undo × 3?", "options": ["Divide by 3", "Subtract 3"], "answer": 0, "then": "Divide both sides by 3.", "hint": "Undo multiplying with dividing.", "line": "x = 15 ÷ 3 = 5" },
-        { "ask": "Check it. 3(5) + 4 = ?", "options": ["19", "15"], "answer": 0, "then": "19. It matches the original, so x = 5 is right.", "line": "Check: 3·5 + 4 = 19 ✓" }
+        { "ask": "Check it. 3(5) + 4 = ?", "options": ["19", "15"], "answer": 0, "then": "19. It matches the original, so x = 5 is right.", "line": "Check: 3·5 + 4 = 19 ✓" },
+        { "say": "Now you do it. Drag the parts of the equation, or tap them.", "play": "solveX" }
       ]
     },
     "questions": [

@@ -179,7 +179,7 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
     setRuleOpen(true);
   };
   const overlay = walking ? (
-    <BasicsWalkthrough exam={exam} skill={skill} doneLabel="Try it again" onDone={closeOverlay} onClose={closeOverlay} onRead={openRuleSheet} />
+    <BasicsWalkthrough exam={exam} skill={skill} drillKey={drill.key} doneLabel="Try it again" onDone={closeOverlay} onClose={closeOverlay} onRead={openRuleSheet} />
   ) : explainer ? (
     <BasicsExplainer exam={exam} skill={skill} doneLabel="Try it again" onDone={closeOverlay} onClose={closeOverlay} onRead={openRuleSheet} />
   ) : null;
@@ -201,7 +201,7 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
     // X leaves the skill for the drill's Basics list, like the text card's X; "Read it" is the way to the card.
     const exitToOverview = () => router.push(overviewHref);
     if (walkable && !readMode) {
-      return <BasicsWalkthrough exam={exam} skill={skill} doneLabel={doneLabel} onDone={start} onClose={exitToOverview} onRead={() => setReadMode(true)} />;
+      return <BasicsWalkthrough exam={exam} skill={skill} drillKey={drill.key} doneLabel={doneLabel} onDone={start} onClose={exitToOverview} onRead={() => setReadMode(true)} />;
     }
     if (explainable && !readMode) {
       return <BasicsExplainer exam={exam} skill={skill} doneLabel={doneLabel} onDone={start} onClose={exitToOverview} onRead={() => setReadMode(true)} />;

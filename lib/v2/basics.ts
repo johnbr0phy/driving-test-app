@@ -59,6 +59,12 @@ export interface WalkthroughStep {
   then?: string;
   hint?: string;
   line?: string;
+  /**
+   * A board the student solves by moving its parts (components/v2/play),
+   * named by key ("solveX"). `say` is the line above it. The step is done
+   * once the board is solved; every move also works as a tap.
+   */
+  play?: string;
 }
 
 /**

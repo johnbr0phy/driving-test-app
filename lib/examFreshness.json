@@ -1,0 +1,158 @@
+{
+  "_about": "Dated changes to real exams that a bank must follow. The /admin Questions tab lists each event as upcoming (within 60 days) or due (date passed, not marked done). Add one with every new exam whose outline, law or format is known to change, and set done to the date the bank was updated. Checked in CI by tools/check_freshness.py. Every exam is also due for a full review 365 days after its bank last changed (lib/landingDates.json).",
+  "reviewAfterDays": 365,
+  "events": [
+    {
+      "exam": "ccna",
+      "date": "2027-02-03",
+      "kind": "outline",
+      "what": "CCNA 200-301 v2.0 replaces v1.1: five domains, new weights.",
+      "action": "Re-weight the blueprint and drills to v2.0; retire topics v2.0 drops.",
+      "source": "https://learningnetwork.cisco.com/s/ccna-exam-topics"
+    },
+    {
+      "exam": "arrt",
+      "date": "2027-03-01",
+      "kind": "outline",
+      "what": "ARRT Radiography content specifications revised: 31/46/51/72, CR removed.",
+      "action": "Re-weight to 31/46/51/72 and retire ARRT-EQP-014.",
+      "source": "https://www.arrt.org/pages/arrt-reference-documents/by-document-type/examination-content-specifications"
+    },
+    {
+      "exam": "nce",
+      "date": "2027-07-01",
+      "kind": "format",
+      "what": "New NCE: 170 items, three options, six new domains, scaled 100 to 500 with 360 to pass.",
+      "action": "Rebuild the bank to three options and the new domains; update facts and landing.",
+      "source": "https://www.nbcc.org/exams/nce"
+    },
+    {
+      "exam": "series63",
+      "date": "2027-02-01",
+      "kind": "law",
+      "what": "NASAA adviser advertising rules (May 2026 model rule amendments) reach the exam in early 2027.",
+      "action": "Add adviser advertising, testimonial and social media items once NASAA updates the outline.",
+      "source": "https://www.nasaa.org/exams/"
+    },
+    {
+      "exam": "series65",
+      "date": "2027-02-01",
+      "kind": "law",
+      "what": "NASAA adviser advertising rules (May 2026 model rule amendments) reach the exam in early 2027.",
+      "action": "Add adviser advertising, testimonial and social media items once NASAA updates the outline.",
+      "source": "https://www.nasaa.org/exams/"
+    },
+    {
+      "exam": "uksia",
+      "date": "2027-04-01",
+      "kind": "outline",
+      "what": "SIA review due to replace the April 2021 door supervision specifications in spring 2027.",
+      "action": "Check the new SIA specifications and re-weight or rewrite.",
+      "source": "https://www.gov.uk/government/news/sia-launches-major-review-of-security-licence-qualifications"
+    },
+    {
+      "exam": "nzroad",
+      "date": "2027-01-25",
+      "kind": "law",
+      "what": "New Zealand graduated licensing changes take effect.",
+      "action": "Move the changes from the landing into the bank where the theory test asks them.",
+      "source": "https://www.nzta.govt.nz/driver-licences/"
+    },
+    {
+      "exam": "sgbtt",
+      "date": "2027-01-01",
+      "kind": "law",
+      "what": "DIPS demerit point thresholds change.",
+      "action": "Bank does not ask the thresholds; confirm nothing else in the handbook moved.",
+      "source": "https://www.police.gov.sg/Advisories/Traffic"
+    },
+    {
+      "exam": "detheorie",
+      "date": "2027-01-01",
+      "kind": "law",
+      "what": "German driving licence reform (2027) changes the theory test.",
+      "action": "Read the final rules and update questions, sets and the landing.",
+      "source": "https://bmdv.bund.de/"
+    },
+    {
+      "exam": "itil",
+      "date": "2027-12-31",
+      "kind": "sunset",
+      "what": "PeopleCert plans to sunset all ITIL 4 modules.",
+      "action": "Decide whether to build ITIL (Version 5) Foundation and retire ITIL 4.",
+      "source": "https://www.peoplecert.org/help-and-support/faq-itil"
+    },
+    {
+      "exam": "netplus",
+      "date": "2027-06-01",
+      "kind": "sunset",
+      "what": "CompTIA estimates N10-009 retires in 2027.",
+      "action": "Watch for N10-010 objectives and rebuild when published.",
+      "source": "https://www.comptia.org/certifications/network"
+    },
+    {
+      "exam": "apush",
+      "date": "2027-05-01",
+      "kind": "format",
+      "what": "College Board updates the short-answer and long essay questions for May 2027.",
+      "action": "Multiple choice is unaffected; confirm the landing copy.",
+      "source": "https://apcentral.collegeboard.org/courses/ap-united-states-history"
+    },
+    {
+      "exam": "apworld",
+      "date": "2027-05-01",
+      "kind": "format",
+      "what": "College Board updates the short-answer and long essay questions for May 2027.",
+      "action": "Multiple choice is unaffected; confirm the landing copy.",
+      "source": "https://apcentral.collegeboard.org/courses/ap-world-history"
+    },
+    {
+      "exam": "cfal1",
+      "date": "2027-02-01",
+      "kind": "outline",
+      "what": "2027 Level I topic weights apply from the February 2027 window (bank already follows them).",
+      "action": "Confirm the landing no longer mentions the 2026 weights.",
+      "source": "https://www.cfainstitute.org/programs/cfa-program/candidate-resources/level-i-exam"
+    },
+    {
+      "exam": "accafa",
+      "date": "2027-09-01",
+      "kind": "outline",
+      "what": "Next ACCA FA/FFA syllabus and study guide year starts.",
+      "action": "Compare the new study guide with the bank.",
+      "source": "https://www.accaglobal.com/content/dam/acca/global/PDF-students/fia/studyguides/FA.FFA%20S25-A26%20syllabus%20and%20study%20guide.pdf"
+    },
+    {
+      "exam": "upscse",
+      "date": "2027-02-01",
+      "kind": "notice",
+      "what": "UPSC CSE 2027 examination notice expected (Prelims 23 May 2027). (upsc.gov.in does not answer automated requests; source is a coaching site's calendar, check the notice on upsc.gov.in itself)",
+      "action": "Check the notice for pattern or syllabus changes.",
+      "source": "https://www.drishtiias.com/blog/upsc-calendar-2027-exam-dates"
+    },
+    {
+      "exam": "jeemain",
+      "date": "2027-01-20",
+      "kind": "notice",
+      "what": "JEE Main 2027 Session 1 begins.",
+      "action": "Confirm the 2027 bulletin pattern matches the bank after the session.",
+      "source": "https://jeemain.nta.nic.in/"
+    },
+    {
+      "exam": "eqao9",
+      "date": "2027-06-30",
+      "kind": "review",
+      "what": "First school year in which the EQAO Grade 9 result counts as 20% of the course mark.",
+      "action": "Check the 2026-2027 framework for blueprint changes.",
+      "source": "https://www.eqao.com/the-assessments/grade-9-math/"
+    },
+    {
+      "exam": "gcsescience",
+      "date": "2027-08-31",
+      "kind": "review",
+      "what": "The 2025-2027 physics equation sheet period ends.",
+      "action": "Check whether Ofqual extends the equation sheet; update the reference panel.",
+      "source": "https://www.aqa.org.uk/news/gcse-maths-and-gcse-sciences-formulae-and-equation-sheets-for-2025-2027"
+    }
+  ]
+}

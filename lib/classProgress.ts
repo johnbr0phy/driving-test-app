@@ -1,6 +1,7 @@
 import type { Question } from "@/types";
 import type { ClassAnswerEvent, ClassHistoryAnswer, ClassPublicInfo, ClassTestEvent } from "@/lib/classes";
 import { MEMBERSHIPS_CHANGED, changeAccountMemberships } from "@/lib/classMembershipSync";
+import { recordQuestionPick } from "@/lib/questionPicks";
 
 // The student side of instructor classes (lib/classes.ts). The classes joined
 // live in localStorage, copied from the account while signed in
@@ -188,6 +189,9 @@ export function v2Pick(format: string | undefined, answer: unknown): number | un
 
 /** Same, for banks whose questions are not v1 Questions (v2: id and domain). */
 export function recordClassAnswerById(examId: string, questionId: string, category: string, correct: boolean, pick?: number) {
+  // Every answered exam question, class or not, also feeds the anonymous
+  // option-pick counts behind the question quality flags (lib/questionPicks.ts).
+  recordQuestionPick(examId, questionId, correct, pick);
   enqueue(examId, (q) =>
     q.answers.push({ q: questionId, c: category || "other", ok: correct, ...(!correct && pick !== undefined ? { p: pick } : {}) }),
   );

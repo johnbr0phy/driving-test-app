@@ -121,7 +121,7 @@ export default function PrivacyPage() {
               <li><strong>Google Analytics</strong>: site usage, where allowed (see Cookies).</li>
               <li><strong>Stripe</strong>: payments.</li>
               <li><strong>Resend</strong>: sending email.</li>
-              <li><strong>Anthropic</strong>: writes our internal daily summary from site-wide totals. No personal information is sent.</li>
+              <li><strong>Anthropic</strong>: writes our internal daily summary from site-wide totals, and checks our questions and answer keys. Question reports are sent without any personal information; no other personal information is sent.</li>
             </ul>
             <p className={`${p} mt-3`}>
               Other people see your information only where the feature is built for it: a teacher sees the name and
@@ -151,7 +151,8 @@ export default function PrivacyPage() {
               </li>
               <li>
                 <strong>Our own counts:</strong> anonymous totals such as questions answered and signups, using a random
-                ID in your browser. Turning off analytics stops these too.
+                ID in your browser, and for each question how many people picked each answer (added up per question, with
+                no ID, so we can find questions whose answer key is wrong). Turning off analytics stops these too.
               </li>
             </ul>
             <p className={`${p} mt-3`}>

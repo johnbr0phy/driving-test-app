@@ -6,7 +6,7 @@ Q = [
 ('Before recommending a product, an agent must first:',
  'Do a needs analysis', ['Quote the premium', 'Complete the application', 'Collect the first premium'],
  'Knowing the client (finances, goals, family, risk tolerance) comes before any recommendation, and the analysis is documented.'),
-("A client is told her old policy 'has no value left', which is untrue, so that she will switch to a new insurer. The agent is guilty of:",
+("A client is told her old policy \"has no value left\", which is untrue, so that she will switch to a new insurer. The agent is guilty of:",
  'Twisting', ['Rebating', 'Churning', 'Tied selling'],
  'Twisting is inducing a replacement through misrepresentation or an incomplete comparison. It is prohibited in every province.'),
 ("An agent repeatedly replaces a client's policies mainly to earn new first-year commissions. This is:",

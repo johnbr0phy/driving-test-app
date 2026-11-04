@@ -2496,7 +2496,7 @@
     "state": "ALL",
     "questionId": "LLQP-CND-003",
     "category": "llqpConduct",
-    "question": "A client is told her old policy 'has no value left', which is untrue, so that she will switch to a new insurer. The agent is guilty of:",
+    "question": "A client is told her old policy \"has no value left\", which is untrue, so that she will switch to a new insurer. The agent is guilty of:",
     "optionA": "Rebating",
     "optionB": "Churning",
     "optionC": "Twisting",

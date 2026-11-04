@@ -11,6 +11,9 @@
  *   NCLEX..., from users/{uid}.v2 via lib/v2/questionStats.ts, held-out tests
  *   left out so they stay unseen), only for exams with enough answers
  *   (lib/communityStats.ts), plus the list of tests that qualify
+ * - globalStats/exitQuestions — per exam, the last question quiet accounts
+ *   answered before leaving, against what its traffic predicts (lib/exitQuestions.ts,
+ *   the Exit questions card on the /admin Growth tab)
  * - globalStats/studyTimes — answers in the last 90 days by Eastern weekday and
  *   hour (7 x 24 grid), for picking email send times (the /admin Growth tab)
  *
@@ -21,7 +24,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { getAdminDb, getAdminAuth } from "@/lib/firebase-admin";
 import { FieldPath } from "firebase-admin/firestore";
 import { getQuestionsData } from "@/lib/testGenerator";
-import { ALL_EXAMS } from "@/lib/exams";
+import { ALL_EXAMS, getExamByStateCode } from "@/lib/exams";
 import { EXAMS_V2 } from "@/lib/v2/registry";
 import { heldOutTests } from "@/lib/v2/training";
 import { v2QuestionPerformance } from "@/lib/v2/questionStats";
@@ -33,6 +36,8 @@ import {
   type ExamCommunityQuestion,
   type ExamCommunityStats,
 } from "@/lib/communityStats";
+import { createExitTally } from "@/lib/exitQuestions";
+import { states as STATES } from "@/data/states";
 
 // Paging every account one after another passed 60s at ~5,000 accounts
 // (timed out nightly from Oct 19 2026, so the docs kept the old 2,000-account
@@ -168,9 +173,19 @@ export async function GET(req: NextRequest) {
       }
     };
 
+    // Exit questions: the DMV by its own ids, exams by prefix.
+    const dmvPassPct = new Map(STATES.map((st) => [st.code, st.passingScore]));
+    const exits = createExitTally({
+      now: Date.now(),
+      examOf: (id) => (dmvIds.has(id) ? COMMUNITY_DMV_KEY : examOf(id)),
+      passPctOf: (state, examId) =>
+        examId === COMMUNITY_DMV_KEY ? dmvPassPct.get(state ?? "") ?? 80 : getExamByStateCode(state)?.passPct ?? 80,
+    });
+
     const addUser = (doc: FirebaseFirestore.QueryDocumentSnapshot) => {
       if (!realUids.has(doc.id)) return;
       const data = doc.data();
+      exits.add(data);
       const history: any[] = Array.isArray(data.trainingAnswerHistory) ? data.trainingAnswerHistory : [];
       for (const entry of history) {
         tally(doc.id, entry?.answeredAt);
@@ -276,6 +291,8 @@ export async function GET(req: NextRequest) {
       timeZone: "America/New_York",
       updatedAt: new Date().toISOString(),
     });
+
+    await db.collection("globalStats").doc("exitQuestions").set(exits.build());
 
     await db
       .collection("globalStats")

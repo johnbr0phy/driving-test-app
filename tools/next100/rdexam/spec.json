@@ -1,0 +1,39 @@
+{
+  "id": "rdexam",
+  "stateCode": "RDEXAM",
+  "idBase": 17400,
+  "prefix": "RDEXAM-",
+  "slug": "/registered-dietitian",
+  "landingPath": "/registered-dietitian-exam-practice-test",
+  "dataFile": "data/rd-exam-questions.json",
+  "name": "RD Exam Practice Test",
+  "shortName": "RD Exam",
+  "examLabel": "RD exam",
+  "fullName": "CDR Registration Examination for Dietitians",
+  "icon": "utensils",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 70,
+  "categories": [
+    {"key": "rdMgmt", "label": "Management & Leadership", "perTest": 6, "pool": 24, "segment": "MGT"},
+    {"key": "rdResearch", "label": "Research Applications", "perTest": 3, "pool": 12, "segment": "RES"},
+    {"key": "rdPractice", "label": "Professional Practice & Marketing", "perTest": 3, "pool": 12, "segment": "PRA"},
+    {"key": "rdCommunity", "label": "Community Nutrition & Programs", "perTest": 6, "pool": 24, "segment": "COM"},
+    {"key": "rdEducation", "label": "Nutrition Education & Counseling", "perTest": 5, "pool": 20, "segment": "EDU"},
+    {"key": "rdNutrition", "label": "Human Nutrition & Physiology", "perTest": 6, "pool": 24, "segment": "NUT"},
+    {"key": "rdAssessment", "label": "Screening, Assessment & Diagnosis", "perTest": 5, "pool": 20, "segment": "ASM"},
+    {"key": "rdMnt", "label": "Medical Nutrition Therapy", "perTest": 5, "pool": 20, "segment": "MNT"},
+    {"key": "rdSupport", "label": "Enteral & Parenteral Nutrition", "perTest": 4, "pool": 16, "segment": "SUP"},
+    {"key": "rdFoodSci", "label": "Food Science", "perTest": 3, "pool": 12, "segment": "FSC"},
+    {"key": "rdFoodservice", "label": "Menus & Foodservice Systems", "perTest": 4, "pool": 16, "segment": "FSV"}
+  ],
+  "notes": "CDR RD Examination Test Specifications January 1, 2027 to December 31, 2031 (approved June 25, 2025): Domain I Fundamentals of Dietetics Practice 23%, II Community and Public Health Nutrition 22%, III Human Nutrition and Medical Nutrition Therapy 40%, IV Food Science and Food Systems 15%. Scaled to 50 per test: I 12 (6/3/3), II 11 (6/5), III 20 (6/5/5/4), IV 7 (3/4). The split inside each domain is Tigertest's. Pools are exactly 4x per-test.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 17401, "name": "Management, Research & Practice", "categories": ["rdMgmt", "rdResearch", "rdPractice"], "size": 48},
+    {"setNumber": 2, "id": 17402, "name": "Community Nutrition & Education", "categories": ["rdCommunity", "rdEducation"], "size": 44},
+    {"setNumber": 3, "id": 17403, "name": "Human Nutrition & Physiology", "categories": ["rdNutrition"], "size": 24},
+    {"setNumber": 4, "id": 17404, "name": "Screening, Assessment & Diagnosis", "categories": ["rdAssessment"], "size": 20},
+    {"setNumber": 5, "id": 17405, "name": "Medical Nutrition Therapy & Nutrition Support", "categories": ["rdMnt", "rdSupport"], "size": 36},
+    {"setNumber": 6, "id": 17406, "name": "Food Science & Foodservice", "categories": ["rdFoodSci", "rdFoodservice"], "size": 28}
+  ]
+}

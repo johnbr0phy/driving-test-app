@@ -1,0 +1,16 @@
+{
+  "id": "ccs", "stateCode": "CCS", "idBase": 17300, "slug": "/ccs", "landingPath": "/ccs-practice-test",
+  "questionIdPrefix": "CCS-", "passPct": 70,
+  "outline": "AHIMA CCS Exam Content Outline, effective 05/01/2024: D1 Coding Knowledge and Skills 39-41%, D2 Coding Documentation 18-22%, D3 Provider Queries 9-11%, D4 Regulatory Compliance 18-22%, D5 Information Technologies 9-11%; medical scenarios inpatient, outpatient and emergency department one third each (not modelled)",
+  "categories": [
+    {"key": "ccsInpatient", "seg": "INP", "label": "Inpatient Diagnosis Coding", "perTest": 6, "pool": 24, "file": "inpatient", "domain": 1},
+    {"key": "ccsPcs", "seg": "PCS", "label": "ICD-10-PCS Procedures", "perTest": 4, "pool": 16, "file": "inpatient", "domain": 1},
+    {"key": "ccsOutpatient", "seg": "OUT", "label": "Outpatient & ED Coding", "perTest": 5, "pool": 20, "file": "outpatient", "domain": 1},
+    {"key": "ccsDrg", "seg": "DRG", "label": "MS-DRGs, APCs & Edits", "perTest": 5, "pool": 20, "file": "outpatient", "domain": 1},
+    {"key": "ccsDocumentation", "seg": "DOC", "label": "Coding Documentation", "perTest": 10, "pool": 40, "file": "docs", "domain": 2},
+    {"key": "ccsQueries", "seg": "QRY", "label": "Provider Queries", "perTest": 5, "pool": 20, "file": "docs", "domain": 3},
+    {"key": "ccsCompliance", "seg": "CMP", "label": "Regulatory Compliance", "perTest": 10, "pool": 40, "file": "compliance", "domain": 4},
+    {"key": "ccsIt", "seg": "IT", "label": "Information Technologies", "perTest": 5, "pool": 20, "file": "compliance", "domain": 5}
+  ],
+  "trainingSets": "testSets(17300, 4): Training Set N = Practice Test N, DMV-style (8 dashboard steps)"
+}

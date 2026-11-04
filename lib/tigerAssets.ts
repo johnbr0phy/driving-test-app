@@ -38,6 +38,8 @@ export const TIGER_EXAM_IDS = [
   "aswb", "arrt", "nce", "texesppr", "praxisplt",
   // Reviewed next-20 batch B roles without a close existing family mascot.
   "nhie", "nptepta",
+  // Reviewed next-20 batch C dietitian and human resources role mascots.
+  "rdexam", "phr",
 ] as const;
 
 export type TigerExpression = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
@@ -85,10 +87,9 @@ const BORROWED_SETS: Record<string, string> = {
   // Accounting exams share the ledger-and-calculator CPA FAR tiger, not the medical-coding CPC tiger.
   cma: "ccma", nbdhe: "danb", txadjuster: "pnc", sfadmin: "aws", cfal1: "series7",
   cpaaud: "cpafar", accafa: "cpafar", aatl2: "cpafar",
-  // Next-20 batch C: ASWB Clinical the ASWB tiger, PHR the CAPM tiger, CISA the CISSP tiger, Six Sigma the PMP
-  // tiger, CCS the coding tiger, the RD exam the food manager tiger, Praxis 5001 the Praxis tiger, the Florida
-  // adjuster the P&C tiger, LLQP the life and health tiger, CeMAP the NMLS mortgage tiger.
-  aswbclin: "aswb", phr: "capm", cisa: "cissp", cssgb: "pmp", ccs: "cpc", rdexam: "foodmgr", praxis5001: "praxis",
+  // Next-20 batch C reuses the reviewed social-work, cybersecurity, project-management, coding,
+  // teaching, insurance and mortgage families. Dietitian and HR exams have their own sets above.
+  aswbclin: "aswb", cisa: "cissp", cssgb: "pmp", ccs: "cpc", praxis5001: "praxis",
   fladjuster: "pnc", llqp: "insurance", cemap: "nmls",
 };
 

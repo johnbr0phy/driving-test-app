@@ -228,14 +228,14 @@
     "state": "ALL",
     "questionId": "LLQP-LPR-017",
     "category": "llqpLifeProducts",
-    "question": "An automatic premium loan provision:",
-    "optionA": "Pays a missed premium from cash value",
-    "optionB": "Waives every premium after age 65",
-    "optionC": "Lends the owner money at no interest",
-    "optionD": "Converts the policy to term coverage early",
+    "question": "An owner takes a policy loan against the cash value and dies before repaying it. The beneficiary receives:",
+    "optionA": "The death benefit less the loan and interest",
+    "optionB": "The full death benefit, as the loan is forgiven",
+    "optionC": "Only the cash value left in the policy",
+    "optionD": "Nothing until the estate repays the loan",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "If a premium is unpaid at the end of the grace period, the insurer lends it against the cash value so the policy does not lapse. Interest accrues on the loan."
+    "explanation": "An unpaid policy loan, with its accrued interest, is deducted from the death benefit at claim. The policy itself secures the loan, so the estate is not asked to repay it."
   },
   {
     "type": "LLQP",
@@ -312,14 +312,14 @@
     "state": "ALL",
     "questionId": "LLQP-LCT-003",
     "category": "llqpLifeContract",
-    "question": "A policy has been in force for three years. The insurer finds an honest error in the health answers. Generally, the insurer:",
-    "optionA": "Can void the policy at any time",
-    "optionB": "Can cut the death benefit in half",
-    "optionC": "Cannot void the policy",
-    "optionD": "Can void it once it refunds premiums",
+    "question": "Eighteen months after issue, the insurer learns the insured did not disclose heart treatment she had before applying. The policy has been in force under two years, so the insurer:",
+    "optionA": "Must keep it, as the policy was issued",
+    "optionB": "Can only lower the face amount by half",
+    "optionC": "Can void it for material non-disclosure",
+    "optionD": "Can void it only if it proves fraud",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "After two years in force, a life policy cannot be voided for a misrepresentation or non-disclosure unless it was fraudulent. Within two years a material misstatement can void it."
+    "explanation": "Within the first two years, a material misrepresentation or non-disclosure lets the insurer void the contract, even without fraud. After two years, only fraud does."
   },
   {
     "type": "LLQP",
@@ -942,14 +942,14 @@
     "state": "ALL",
     "questionId": "LLQP-DIS-012",
     "category": "llqpDisability",
-    "question": "A presumptive disability clause treats the insured as totally disabled after:",
-    "optionA": "Any hospital stay of one week",
-    "optionB": "Being laid off by an employer",
-    "optionC": "Two missed days of work in a row at the job",
-    "optionD": "Loss of sight, speech or two limbs",
+    "question": "A partial disability benefit in an individual policy usually pays:",
+    "optionA": "The full total disability benefit for life",
+    "optionB": "Nothing until total disability is proven",
+    "optionC": "Only a refund of the premiums paid",
+    "optionD": "A set share, often 50%, for a limited time",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Presumptive disability pays full benefits for specified severe losses, even if the person keeps working."
+    "explanation": "Partial disability pays a fixed share of the total benefit, commonly 50%, for a short period such as six months, while the insured can do some but not all duties. Residual benefits instead follow the income actually lost."
   },
   {
     "type": "LLQP",
@@ -1068,14 +1068,14 @@
     "state": "ALL",
     "questionId": "LLQP-HLT-001",
     "category": "llqpHealth",
-    "question": "A critical illness policy pays:",
-    "optionA": "A lump sum when a covered illness is found",
-    "optionB": "A monthly income while disabled",
-    "optionC": "Hospital bills as they arrive",
-    "optionD": "Only if the illness causes death within a year",
+    "question": "Priya owns a personal critical illness policy and receives its lump sum after a stroke. How is the benefit taxed?",
+    "optionA": "It is received tax-free",
+    "optionB": "It is taxed as her regular income",
+    "optionC": "Half is taxed as a capital gain",
+    "optionD": "It is taxed only if she returns to work",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Critical illness insurance pays a tax-free lump sum once the insured is diagnosed with a covered condition and meets the survival period, whatever the money is used for."
+    "explanation": "A critical illness benefit from a personally owned policy is generally not taxable in Canada, and she may spend it as she wishes. Personal premiums are not deductible."
   },
   {
     "type": "LLQP",
@@ -1663,7 +1663,7 @@
     "optionD": "Only until the contract has been signed",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Under CCIR/CISRO guidance, a seg fund buyer may cancel within two business days of receiving confirmation (with a deemed receipt five business days after mailing). It applies to the new deposit only on later deposits."
+    "explanation": "Under CCIR/CISRO guidance, a seg fund buyer may cancel within two business days of receiving confirmation (with a deemed receipt five business days after mailing). For a later deposit, the right covers only that deposit."
   },
   {
     "type": "LLQP",
@@ -1691,7 +1691,7 @@
     "optionD": "A copy of the insurer's accounts",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "The guidance expects the Information Folder and the Fund Facts for each fund chosen to be delivered at or before the sale."
+    "explanation": "The 2025 guidance expects the intermediary to deliver the Information Folder and the Fund Facts for each fund chosen before the client applies, and to explain them."
   },
   {
     "type": "LLQP",
@@ -1999,7 +1999,7 @@
     "optionD": "At a flat 10%",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Under the attribution rule, withdrawals within three calendar years of the last spousal contribution are taxed to the contributing spouse."
+    "explanation": "Under the attribution rule, a withdrawal in the year of any spousal contribution or the next two calendar years is taxed to the contributing spouse."
   },
   {
     "type": "LLQP",
@@ -2090,14 +2090,14 @@
     "state": "ALL",
     "questionId": "LLQP-INV-002",
     "category": "llqpInvesting",
-    "question": "When interest rates rise, the market value of existing bonds usually:",
-    "optionA": "Rises",
-    "optionB": "Falls",
-    "optionC": "Stays the same",
-    "optionD": "Doubles",
+    "question": "Interest rates rise sharply. Which holding in a bond seg fund would usually lose the most market value?",
+    "optionA": "A 1-year treasury bill",
+    "optionB": "A 25-year government bond",
+    "optionC": "A 2-year provincial bond",
+    "optionD": "A 3-year corporate bond",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Existing bonds pay a fixed coupon; when new bonds pay more, older bonds are worth less. Longer terms fall more."
+    "explanation": "Bond prices move against rates, and the longer the term to maturity, the bigger the price change. A 25-year bond is hit hardest; short-term holdings barely move."
   },
   {
     "type": "LLQP",
@@ -2440,14 +2440,14 @@
     "state": "ALL",
     "questionId": "LLQP-REG-015",
     "category": "llqpRegulation",
-    "question": "An agent licensed in Quebec must, in addition to the LLQP exams, follow ethics rules based on:",
+    "question": "In Quebec, the rules on insurance of persons, such as beneficiary designations and creditor protection, are set mainly by:",
     "optionA": "The Ontario Insurance Act",
-    "optionB": "U.S. state insurance law",
+    "optionB": "The federal Insurance Companies Act",
     "optionC": "The Civil Code of Quebec",
     "optionD": "The Canada Health Act",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Quebec follows civil law; its LLQP ethics module is the Civil Code version and its practice rules come from Quebec law. Details vary in Quebec."
+    "explanation": "Quebec is a civil law province: insurance of persons is governed by the Civil Code of Quebec (arts. 2415 ff.), while representatives' conduct falls under Quebec's distribution of financial products law and the AMF. Common-law provinces use their Insurance Acts."
   },
   {
     "type": "LLQP",

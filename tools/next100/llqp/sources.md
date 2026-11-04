@@ -31,6 +31,12 @@ only licence needs the A&S and Ethics modules (varies by province; left as "vari
   Used: two-business-day right to cancel a seg fund contract or deposit, Fund Facts and
   Information Folder, chargeback schedule at most 36 months, 10% chargeback-exempt withdrawal,
   60 days' notice to owners of a fund merger or closure, leveraging-strategy suitability.
+  Re-checked 2026-11-04 against the guidance PDF text: right to cancel within two business days of
+  receiving confirmation, deemed received five business days after sending (s. 2.5.1.1(h));
+  10% chargeback-exempt withdrawal of units held at December 31 (2.3.4.1); chargeback period not
+  greater than 36 months (2.3.5.1); Information Folder and Fund Facts delivered before the customer
+  applies (7.2.2.1); 60 days' notice to regulators, intermediaries and owners of a merger or closing
+  (9.3.1.1). The 75% / 10-year minimums are not in this guidance (industry guideline and provincial rules).
 - CLHIA guideline on individual variable insurance contracts (seg funds): maturity and death
   benefit guarantees of at least 75% of deposits, maturity at least 10 years after the contract
   or deposit (common knowledge in the industry; stated without a guideline number).
@@ -39,7 +45,7 @@ only licence needs the A&S and Ethics modules (varies by province; left as "vari
   except fraud, misstatement of age, reinstatement within two years, beneficiary designations
   (revocable unless irrevocable is filed with the insurer), family-class beneficiaries and
   creditor protection, payment for minors, 30-day grace period.
-- Civil Code of Quebec, arts. 2415 ff. (insurance of persons): spouse designated as beneficiary is
+- Civil Code of Quebec, arts. 2415 ff. (insurance of persons; insurance generally from art. 2389): spouse designated as beneficiary is
   irrevocable unless stated otherwise (art. 2449); creditor protection for the policyholder's
   married or civil union spouse, descendants and ascendants (art. 2457). Used only as
   "In Quebec" items.

@@ -13,7 +13,7 @@ Q = [
  "Federal court", ["State circuit court", "County court", "Small claims court"],
  "Suits on Standard Flood Insurance Policy claims must be brought in the United States District Court for the district where the property is, within one year of the written denial."),
 ("Under Florida law, a homeowner may buy flood coverage from:",
- "Private insurers as well as NFIP", ["Only the federal NFIP", "Only Citizens Property", "Only surplus lines carriers"],
+ "Private insurers as well as NFIP", ["Only the federal NFIP", "Only Citizens Property", "Only surplus lines carriers in Florida"],
  "s. 627.715 sets rules for private flood insurance written by authorized and eligible surplus lines insurers, alongside the NFIP."),
 ("NFIP building coverage in a basement is limited mainly to:",
  "Utilities and listed equipment", ["All finished walls and floors", "Furniture and carpeting", "No property at all"],

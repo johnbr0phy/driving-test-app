@@ -13,7 +13,7 @@ Q = [
  "Flood insurance", ["Umbrella liability", "Mechanical breakdown", "Sinkhole coverage"],
  "s. 627.351(6) requires Citizens personal lines policyholders to have flood coverage, phased in by dwelling replacement cost from January 1, 2024 to January 1, 2027 for all remaining properties."),
 ("Citizens Property Insurance Corporation is meant for property owners who:",
- "Cannot get coverage elsewhere", ["Have the lowest risk scores", "Own commercial auto fleets", "Want flood-only protection"],
+ "Cannot get coverage elsewhere", ["Have the lowest risk scores", "Own large commercial auto fleets", "Want flood-only protection"],
  "Citizens is Florida's residual market for property: it covers owners entitled in good faith to insurance who cannot obtain it in the voluntary market."),
 ("The Florida Automobile Joint Underwriting Association provides:",
  "Auto coverage when none is available", ["Flood coverage for coastal homeowners", "Workers' comp for employers", "Health plans for drivers"],

@@ -13,7 +13,7 @@ Q = [
  "Explain the reason for each change", ["Get the insured to sign it in advance", "Wait 30 days before sending it", "Delete the earlier estimate"],
  "Rule 69B-220.201(3)(m), F.A.C., requires an explanation for any change to a prior detailed estimate and keeping the documents that support it."),
 ("Florida's code of ethics bars an adjuster from steering a claimant to a repair firm in which the adjuster has:",
- "An undisclosed financial interest", ["A valid state contractor license", "A record of good repair work", "An office close to the loss"],
+ "An undisclosed financial interest", ["A valid state contractor license", "A record of good repair work", "An office very close to the loss site"],
  "Rule 69B-220.201(3)(a), F.A.C., bars referring or steering a claimant to a person in whom the adjuster has an undisclosed financial interest or from whom the adjuster expects compensation."),
 ("Under Florida's unfair claim settlement practices law, on the insured's written request the insurer must affirm or deny coverage within 30 days after:",
  "Proof of loss is completed", ["The loss first occurs", "An adjuster is assigned", "The policy next renews"],
@@ -34,6 +34,6 @@ Q = [
  "Division of Criminal Investigations", ["Division of Consumer Services", "Florida Office of Insurance Regulation", "Florida Highway Patrol"],
  "s. 626.989 requires an insurer, adjuster or other licensee with knowledge or belief of a fraudulent insurance act to send a report to the Division of Criminal Investigations."),
 ("The Florida Insurance Guaranty Association covers an insolvent insurer's unpaid claim if the claimant is a Florida resident at the time of the event or the property is:",
- "Permanently located in Florida", ["Insured for over a year", "Owned by a business", "Mortgaged to a Florida bank"],
+ "Permanently located in Florida", ["Insured for over a year", "Owned by a business", "Mortgaged to a Florida-based bank"],
  "s. 631.54 defines a covered claim to include residents of Florida at the time of the insured event or property permanently located in Florida."),
 ]

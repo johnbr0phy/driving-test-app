@@ -1,8 +1,8 @@
 CAT = "rdEducation"; SEG = "EDU"
 Q = [
-("A client has bought measuring cups and plans to start logging meals next week. Which stage of change is this?",
- "Preparation", ["Contemplation", "Action", "Maintenance"],
- "Preparation means intending to act within about a month and already taking small steps. Contemplation is weighing change without a plan; action is the first months of doing it."),
+("For the past 2 months a client has logged every meal and switched from soda to water. Which stage of change is this?",
+ "Action", ["Preparation", "Maintenance", "Contemplation"],
+ "Action is the first 6 months of an actual, observable change. Preparation comes before it (small steps, intending to act within a month), and maintenance begins once the change has lasted more than 6 months."),
 ("A client in precontemplation is referred for weight counseling. What approach fits this stage best?",
  "Raise awareness of the issue", ["Set a detailed weekly meal plan", "Plan for relapse triggers", "Track daily food intake"],
  "In precontemplation the client does not yet see a problem, so the aim is to build awareness and explore concerns without pressure. Action plans and self-monitoring suit later stages."),

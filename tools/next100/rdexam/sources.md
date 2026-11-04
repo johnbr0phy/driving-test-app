@@ -57,7 +57,7 @@ Checked 2026-11-04.
 - IDDSI framework (levels 0 to 7).
 - ADA Standards of Care: 15-15 rule; metformin and vitamin B12.
 - FDA Food Code 2022: two-stage cooling (135 °F to 70 °F in 2 hours, to 41 °F within 4 more).
-- Federal programs: USDA FNS (WIC, SNAP, SNAP-Ed, CACFP, NSLP, SFMNP), Older Americans Act Title
+- Federal programs: USDA FNS (WIC, SNAP, CACFP, CSFP, NSLP, SFMNP; SNAP-Ed is not asked: its funding ended September 30, 2025 under the One Big Beautiful Bill Act), Older Americans Act Title
   III; NHANES, BRFSS (CDC); Healthy People 2030 (HHS ODPHP); Hunger Vital Sign.
 
 ## Calculations (all recomputed)

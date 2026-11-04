@@ -1,8 +1,8 @@
 CAT = "llqpHealth"; SEG = "HLT"
 Q = [
-("A critical illness policy pays:",
- "A lump sum when a covered illness is found", ["A monthly income while disabled", "Hospital bills as they arrive", "Only if the illness causes death within a year"],
- "Critical illness insurance pays a tax-free lump sum once the insured is diagnosed with a covered condition and meets the survival period, whatever the money is used for."),
+("Priya owns a personal critical illness policy and receives its lump sum after a stroke. How is the benefit taxed?",
+ "It is received tax-free", ["It is taxed as her regular income", "Half is taxed as a capital gain", "It is taxed only if she returns to work"],
+ "A critical illness benefit from a personally owned policy is generally not taxable in Canada, and she may spend it as she wishes. Personal premiums are not deductible."),
 ("Most critical illness policies require the insured to survive a diagnosis for a period, commonly:",
  "30 days", ["1 year", "7 days", "90 days"],
  "A survival period, typically 30 days after diagnosis, must pass before the lump sum is paid. If the insured dies sooner, the claim usually is not paid."),

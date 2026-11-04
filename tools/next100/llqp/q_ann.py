@@ -32,7 +32,7 @@ Q = [
  "A RRIF is a payout vehicle with a minimum withdrawal each year after the first; RRSP contributions are not allowed into it."),
 ("Ines contributed to a spousal RRSP this year and her husband withdraws from it the next year. The withdrawal is taxed:",
  "To Ines", ["To her husband", "Half to each spouse", "At a flat 10%"],
- "Under the attribution rule, withdrawals within three calendar years of the last spousal contribution are taxed to the contributing spouse."),
+ "Under the attribution rule, a withdrawal in the year of any spousal contribution or the next two calendar years is taxed to the contributing spouse."),
 ("At death, a RRIF can pass to a surviving spouse without immediate tax if the spouse is named as:",
  "Successor annuitant", ["Executor of the will", "Trustee for the children", "Power of attorney"],
  "Naming the spouse or common-law partner as successor annuitant (or beneficiary with a transfer) defers the tax that would otherwise be due on the full value in the final return."),

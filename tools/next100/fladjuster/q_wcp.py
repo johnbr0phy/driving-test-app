@@ -25,7 +25,7 @@ Q = [
  "120 days", ["60 days", "90 days", "180 days"],
  "Under s. 440.20(4), a carrier that pays pending investigation must admit or deny within 120 days after the initial provision of benefits, or it waives the right to deny, with narrow exceptions."),
 ("In Florida workers' compensation, the work accident must be the major contributing cause of the injury, which means:",
- "More than 50 percent responsible", ["At least 25 percent responsible", "Responsible in any part", "The only possible cause"],
+ "More than 50 percent responsible", ["At least 25 percent of the cause", "Responsible in any part", "The only possible cause"],
  "s. 440.09(1) defines major contributing cause as the cause more than 50 percent responsible for the injury compared with all other causes combined."),
 ("Florida workers' compensation benefits are not payable if the injury was caused primarily by:",
  "The worker's intoxication", ["A coworker's carelessness", "The employer's negligence", "A missing machine guard"],

@@ -1,14 +1,14 @@
 CAT = "rdSupport"; SEG = "SUP"
 Q = [
 ("A patient receives a 1.2 kcal/mL formula at 65 mL/h for 24 hours. How many kilocalories does this provide?",
- "1,872 kcal", ["1,560 kcal", "1,404 kcal", "2,246 kcal"],
- "Volume is 65 x 24 = 1,560 mL, and 1,560 x 1.2 = 1,872 kcal. Stopping at the volume gives 1,560, and running only 18 hours gives 1,404."),
+ "1,872 kcal", ["1,560 kcal", "1,404 kcal", "1,248 kcal"],
+ "Volume is 65 x 24 = 1,560 mL, and 1,560 x 1.2 = 1,872 kcal. Stopping at the volume gives 1,560, and running only 18 or 16 hours gives 1,404 or 1,248."),
 ("A patient needs 1,800 kcal a day from a 1.5 kcal/mL formula given in 5 equal bolus feedings. How much is each feeding?",
  "240 mL", ["200 mL", "300 mL", "360 mL"],
  "Total volume = 1,800 / 1.5 = 1,200 mL a day, and 1,200 / 5 = 240 mL per feeding. Dividing the kilocalories by 5 instead of the volume gives 360."),
 ("A PN solution has 280 g of dextrose a day. How many kilocalories does the dextrose provide?",
- "952 kcal", ["1,120 kcal", "840 kcal", "1,092 kcal"],
- "IV dextrose monohydrate gives 3.4 kcal/g: 280 x 3.4 = 952 kcal. Using 4 kcal/g, the value for dietary carbohydrate, gives 1,120."),
+ "952 kcal", ["1,120 kcal", "1,148 kcal", "2,520 kcal"],
+ "IV dextrose monohydrate gives 3.4 kcal/g: 280 x 3.4 = 952 kcal. Using 4 kcal/g, the value for dietary carbohydrate, gives 1,120, and using 9 kcal/g, the value for fat, gives 2,520."),
 ("A patient receives 250 mL of 20% IV lipid emulsion. How many kilocalories is that?",
  "500 kcal", ["450 kcal", "275 kcal", "725 kcal"],
  "A 20% lipid emulsion provides about 2.0 kcal/mL (fat plus the glycerol and phospholipid), so 250 x 2 = 500 kcal. Counting only 50 g of fat at 9 kcal/g gives 450; a 10% emulsion gives about 1.1 kcal/mL."),

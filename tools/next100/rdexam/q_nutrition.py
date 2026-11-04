@@ -1,8 +1,8 @@
 CAT = "rdNutrition"; SEG = "NUT"
 Q = [
 ("A snack has 12 g protein, 8 g fat and 30 g carbohydrate. How many kilocalories does it provide?",
- "240 kcal", ["200 kcal", "210 kcal", "330 kcal"],
- "Protein and carbohydrate give 4 kcal/g and fat 9 kcal/g: (12 x 4) + (8 x 9) + (30 x 4) = 48 + 72 + 120 = 240. Using 4 kcal/g for everything gives 200."),
+ "240 kcal", ["200 kcal", "224 kcal", "210 kcal"],
+ "Protein and carbohydrate give 4 kcal/g and fat 9 kcal/g: (12 x 4) + (8 x 9) + (30 x 4) = 48 + 72 + 120 = 240. Using 4 kcal/g for everything gives 200, and 7 kcal/g (the value for alcohol) for the fat gives 224."),
 ("Where is most dietary iron absorbed?",
  "Duodenum", ["Terminal ileum", "Stomach", "Colon"],
  "Iron is absorbed mainly in the duodenum and upper jejunum, helped by stomach acid and vitamin C. The terminal ileum is where vitamin B12 and bile salts are absorbed."),

@@ -10,6 +10,7 @@ import {
 } from "recharts";
 import { CARD, ROW, STICKY_COL, TabError, TabHeader, TabLoading, TableScroll, fmtUpdated, useAdminFetch } from "@/components/admin/AdminTabParts";
 import { BasicsProgress } from "@/components/admin/BasicsProgress";
+import { ExitQuestions } from "@/components/admin/ExitQuestions";
 import { WeeklyActiveLearners } from "@/components/admin/WeeklyActiveLearners";
 
 // ─── Palette (validated: dataviz reference palette, light mode) ─────────────
@@ -1137,6 +1138,9 @@ export function GrowthTab() {
 
         {/* SAT, ACT and the other v2 exams with Basics: steps and Basics use */}
         <BasicsProgress />
+
+        {/* The last question before an account went quiet, per exam */}
+        <ExitQuestions />
 
         {/* Quiz creation, play and report counters. */}
         {metrics.quizzes && <QuizzesCard data={metrics.quizzes} />}

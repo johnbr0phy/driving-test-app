@@ -23,7 +23,7 @@ const SYSTEM = `You search the web for places where people talk about Tigertest 
 
 Find posts, comments, threads, articles, videos and pages that mention Tigertest or link to tigertest.io: Reddit, Quora, forums, Facebook groups, X, YouTube, TikTok, blogs, news, school or course pages, app and tool directories, AI tool lists. Search with several phrasings ("tigertest", "tigertest.io", "tiger test practice test", "tigertest dmv", "tigertest reddit", site:reddit.com tigertest, and so on).
 
-Only include a page when you saw it in the results and it is clearly about this Tigertest. Leave out other things named Tiger Test or TigerTest (software testing tools, medical or animal tests, sports), pages on tigertest.io itself, and pages published before ${MENTIONS_SINCE}. When a page shows no date, include it only if the result suggests it is recent, with the date left blank. Never invent a URL.
+Only include a page when you saw it in the results and it is clearly about this Tigertest. Leave out other things named Tiger Test or TigerTest (software testing tools, medical or animal tests, sports), pages on tigertest.io itself, Tigertest's own code on GitHub (github.com/johnbr0phy), and pages published before ${MENTIONS_SINCE}. When a page shows no date, include it only if the result suggests it is recent, with the date left blank. Never invent a URL.
 
 Answer with one line per page and nothing else, in this form:
 URL | site name | YYYY-MM-DD or blank | what it says about Tigertest, at most 20 words
@@ -42,6 +42,8 @@ export function parseMentions(text: string): Omit<WebMention, 'isNew'>[] {
       continue;
     }
     if (host === 'tigertest.io' || host.endsWith('.tigertest.io')) continue;
+    // Our own repo and pull requests are not people talking about us.
+    if (host === 'github.com' && /^\/johnbr0phy\//i.test(new URL(parts[0]).pathname)) continue;
     const date = /^\d{4}-\d{2}-\d{2}$/.test(parts[2]) ? parts[2] : '';
     if (date && date < MENTIONS_SINCE) continue;
     out.push({ url: parts[0], site: parts[1] || host, date, summary: parts.slice(3).join(' | ').replace(/\*\*/g, '') });

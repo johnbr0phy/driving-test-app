@@ -1889,6 +1889,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "gov.za learner's licence service page, the National Road Traffic Act and Regulations, and RTMC (May 2026), checked October 2026; section counts and marks from study guides",
     source: { name: "gov.za: Apply for a learner's licence", url: "https://www.gov.za/services/driving-licence/apply-learners-licence" },
   },
+  zak53c3: {
+    answer:
+      "The Code 3 learner's licence is South Africa's learner's licence for heavy motor vehicles over 3,500 kg GVM, the step before a C1 (3,500 to 16,000 kg) or C (over 16,000 kg) driving licence and the articulated EC1 and EC codes. You must be at least 18. It is the same K53 learner's test as for a car, written at a driving licence testing centre (DLTC) in three sections: rules of the road, road signs and markings, and vehicle controls, the controls section being for a heavy vehicle. Study guides say the test is 64 questions (28, 28 and 8) with each section passed separately. The learner's licence is valid for 24 months, cannot be extended, and lets you drive only under the supervision of a driver licensed for that vehicle. To drive a goods vehicle over 3,500 kg GVM for work you also need a professional driving permit (PrDP).",
+    rows: [
+      { label: "Covers", value: "Heavy vehicles over 3,500 kg GVM (C1, C, EC1, EC)" },
+      { label: "Minimum age", value: "18" },
+      { label: "Sections", value: "Rules, signs and markings, vehicle controls (28/28/8, guides say)" },
+      { label: "Pass mark", value: "Each section separately (guides say 22, 23 and 6)" },
+      { label: "Valid for", value: "24 months, cannot be extended" },
+      { label: "Driving on it", value: "Only supervised by a driver licensed for the vehicle" },
+      { label: "Run by", value: "Driving licence testing centres (DLTCs)" },
+    ],
+    basedOn: "gov.za learner's licence service page and the National Road Traffic Act and Regulations, checked November 2026; section counts and marks from study guides",
+    source: { name: "gov.za: Apply for a learner's licence", url: "https://www.gov.za/services/driving-licence/apply-learners-licence" },
+  },
   sgbtt: {
     answer:
       "The Basic Theory Test (BTT) is the first theory test for a driving licence in Singapore. It tests traffic rules, traffic regulations, traffic signs and signals and general road safety, from Part B of the Traffic Police handbook Basic Theory of Driving. You take it, with an eyesight test, at one of the three driving centres. Guides say it is 50 multiple-choice questions in 50 minutes with 45 needed to pass; the Traffic Police do not publish the format. Passing lets you apply for a Provisional Driving Licence, valid for 2 years, to learn with a licensed instructor; car learners then take the Final Theory Test.",

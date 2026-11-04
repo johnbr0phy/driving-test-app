@@ -5,6 +5,7 @@ import { EXAMS_V2 } from '@/lib/v2/registry';
 import { isInternalEmail } from '@/lib/internal';
 import { enrollmentDocId } from '@/lib/server/enrollments';
 import { BROWSER_ID_RE, learnerLinkRef } from '@/lib/server/weeklyActiveLearners';
+import { isBotRequest } from '@/lib/botUserAgent';
 
 // Records that a person answered a question in an exam (lib/enrollment).
 // Signed in: one doc per (exam, uid), and the browser's guest docs for the
@@ -14,6 +15,8 @@ import { BROWSER_ID_RE, learnerLinkRef } from '@/lib/server/weeklyActiveLearners
 const KNOWN_EXAM_KEYS = new Set<string>([...EXAM_ANALYTICS_KEYS, ...EXAMS_V2.map((e) => e.id)]);
 
 export async function POST(request: NextRequest) {
+  // Bots never count in /admin (lib/botUserAgent.ts).
+  if (isBotRequest(request)) return NextResponse.json({ ok: true });
   try {
     const body = await request.json().catch(() => ({}));
     const exams = (Array.isArray(body.exams) ? body.exams : [])

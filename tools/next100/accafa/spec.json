@@ -1,0 +1,40 @@
+{
+  "id": "accafa",
+  "stateCode": "ACCAFA",
+  "idBase": 16500,
+  "prefix": "ACCAFA-",
+  "slug": "/acca-fa",
+  "landingPath": "/acca-fa-practice-test",
+  "dataFile": "data/acca-fa-questions.json",
+  "name": "ACCA FA Practice Test",
+  "shortName": "ACCA FA",
+  "examLabel": "ACCA Financial Accounting (FA) exam",
+  "fullName": "ACCA Applied Knowledge Financial Accounting (FA) exam",
+  "icon": "calculator",
+  "region": "GLOBAL",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 50,
+  "categories": [
+    {"key": "accafaContext", "label": "Context, Regulation & Accounting Concepts", "perTest": 4, "pool": 16, "segment": "CTX", "syllabus": "A, B"},
+    {"key": "accafaBookkeeping", "label": "Double Entry, Documents, Sales & Cash", "perTest": 5, "pool": 20, "segment": "BKP", "syllabus": "C, D1, D2"},
+    {"key": "accafaInventory", "label": "Inventories", "perTest": 4, "pool": 16, "segment": "INV", "syllabus": "D3"},
+    {"key": "accafaNonCurrent", "label": "Non-current Assets, Depreciation & Intangibles", "perTest": 7, "pool": 28, "segment": "NCA", "syllabus": "D4, D5, D6"},
+    {"key": "accafaAccruals", "label": "Accruals, Prepayments, Receivables & Payables", "perTest": 6, "pool": 24, "segment": "ACR", "syllabus": "D7, D8"},
+    {"key": "accafaCapital", "label": "Provisions, Capital Structure & Finance Costs", "perTest": 5, "pool": 20, "segment": "CAP", "syllabus": "D9, D10"},
+    {"key": "accafaReconciliations", "label": "Reconciliations, Trial Balance & Errors", "perTest": 6, "pool": 24, "segment": "REC", "syllabus": "E, F"},
+    {"key": "accafaStatements", "label": "Financial Statements, Cash Flows & Incomplete Records", "perTest": 7, "pool": 28, "segment": "FST", "syllabus": "G"},
+    {"key": "accafaConsolidation", "label": "Consolidated Financial Statements", "perTest": 4, "pool": 16, "segment": "CON", "syllabus": "H"},
+    {"key": "accafaInterpretation", "label": "Interpretation & Ratios", "perTest": 2, "pool": 8, "segment": "INT", "syllabus": "I"}
+  ],
+  "notes": "ACCA FA/FFA syllabus and study guide September 2025 to August 2026 (IFRS 18 formats examinable, IAS 1 not), carried into the September 2026 to August 2027 syllabus year unchanged per ACCA's syllabus changes guidance. ACCA publishes no weighting by syllabus area; the per-test split is Tigertest's, leaning on double entry, non-current assets and statements and giving consolidation 4 because Section B always tests it. Real exam: 2 hours, Section A 35 two-mark OT questions, Section B two 15-mark MTQs (consolidation, accounts preparation), pass mark 50%. Only Section A style single-answer OT questions are modelled.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 16501, "name": "Context, Concepts & Double Entry", "categories": ["accafaContext", "accafaBookkeeping"], "size": 36},
+    {"setNumber": 2, "id": 16502, "name": "Inventories & Non-current Assets", "categories": ["accafaInventory", "accafaNonCurrent"], "size": 44},
+    {"setNumber": 3, "id": 16503, "name": "Accruals, Receivables & Payables", "categories": ["accafaAccruals"], "size": 24},
+    {"setNumber": 4, "id": 16504, "name": "Provisions, Share Capital & Finance Costs", "categories": ["accafaCapital"], "size": 20},
+    {"setNumber": 5, "id": 16505, "name": "Reconciliations, Trial Balance & Errors", "categories": ["accafaReconciliations"], "size": 24},
+    {"setNumber": 6, "id": 16506, "name": "Financial Statements & Cash Flows", "categories": ["accafaStatements"], "size": 28},
+    {"setNumber": 7, "id": 16507, "name": "Consolidation & Interpretation", "categories": ["accafaConsolidation", "accafaInterpretation"], "size": 24}
+  ]
+}

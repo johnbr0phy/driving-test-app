@@ -644,6 +644,46 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
     "color": "hsl(57, 50%, 29%)",
     "tint": "hsl(57, 50%, 96%)"
   },
+  "cma": {
+    "color": "hsl(330, 35%, 32%)",
+    "tint": "hsl(330, 35%, 96%)"
+  },
+  "nhie": {
+    "color": "hsl(30, 35%, 28%)",
+    "tint": "hsl(30, 35%, 96%)"
+  },
+  "txadjuster": {
+    "color": "hsl(343, 35%, 32%)",
+    "tint": "hsl(343, 35%, 96%)"
+  },
+  "sfadmin": {
+    "color": "hsl(238, 80%, 28%)",
+    "tint": "hsl(238, 50%, 96%)"
+  },
+  "cfal1": {
+    "color": "hsl(220, 25%, 26%)",
+    "tint": "hsl(220, 25%, 96%)"
+  },
+  "cpaaud": {
+    "color": "hsl(152, 15%, 30%)",
+    "tint": "hsl(152, 15%, 96%)"
+  },
+  "accafa": {
+    "color": "hsl(341, 70%, 38%)",
+    "tint": "hsl(341, 50%, 96%)"
+  },
+  "aatl2": {
+    "color": "hsl(270, 25%, 32%)",
+    "tint": "hsl(270, 25%, 96%)"
+  },
+  "nbdhe": {
+    "color": "hsl(180, 40%, 26%)",
+    "tint": "hsl(180, 40%, 96%)"
+  },
+  "nptepta": {
+    "color": "hsl(100, 30%, 26%)",
+    "tint": "hsl(100, 30%, 96%)"
+  },
   "pcoc": {
     "color": "hsl(220, 50%, 46%)",
     "tint": "hsl(220, 50%, 96%)"

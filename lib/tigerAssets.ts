@@ -36,6 +36,8 @@ export const TIGER_EXAM_IDS = [
   // Reviewed next-20 batch A professional exam mascots.
   "cpafar", "cpareg", "nmls", "series63", "series65",
   "aswb", "arrt", "nce", "texesppr", "praxisplt",
+  // Reviewed next-20 batch B roles without a close existing family mascot.
+  "nhie", "nptepta",
 ] as const;
 
 export type TigerExpression = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
@@ -56,7 +58,7 @@ const BORROWED_SETS: Record<string, string> = {
   awssaa: "aws", az900: "aws", ccna: "aplus", gulfrn: "nclex", uknmc: "nclex",
   cask: "driving", cans: "driving", nzroad: "driving", iedtt: "driving",
   phlto: "driving", mykpp: "driving", sgbtt: "driving", hkdrive: "driving", aerta: "driving", zak53: "driving", zak53c3: "cdl", ngfrsc: "driving", kentsa: "driving",
-  psat: "sat", netplus: "secplus", gcdl: "aws",
+  psat: "sat", netplus: "secplus", cysa: "secplus", gcdl: "aws",
   // India exams wear their family's tiger; Pakistan's car test the car tiger; JNVST (age 10 to 12) the times tables tiger.
   ibpsclerk: "ibpspo", rrbgroupd: "rrbntpc", sscgd: "ssccgl", sscchsl: "ssccgl", sscmts: "ssccgl", uppolice: "police", jnvst: "timestables",
   pkdrive: "driving",
@@ -79,6 +81,10 @@ const BORROWED_SETS: Record<string, string> = {
   ngpolice: "police", cdcfib: "ffi", ngarmy: "asvab", ngcustoms: "security", trcnpqe: "praxis",
   // AHIMA CCA shares the CPC medical coding tiger.
   cca: "cpc",
+  // Next-20 batch B reuses reviewed medical-assisting, dental, insurance, cloud and finance families.
+  // Accounting exams share the ledger-and-calculator CPA FAR tiger, not the medical-coding CPC tiger.
+  cma: "ccma", nbdhe: "danb", txadjuster: "pnc", sfadmin: "aws", cfal1: "series7",
+  cpaaud: "cpafar", accafa: "cpafar", aatl2: "cpafar",
 };
 
 export function hasTigerSet(examId: string): boolean {

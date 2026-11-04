@@ -1,0 +1,40 @@
+{
+  "id": "cfal1",
+  "stateCode": "CFAL1",
+  "idBase": 16300,
+  "prefix": "CFAL1-",
+  "slug": "/cfa-level-1",
+  "landingPath": "/cfa-level-1-practice-test",
+  "dataFile": "data/cfa-level-1-questions.json",
+  "name": "CFA Level I Practice Test",
+  "shortName": "CFA Level I",
+  "examLabel": "CFA Level I exam",
+  "fullName": "CFA Program Level I exam",
+  "icon": "calculator",
+  "region": "GLOBAL",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 70,
+  "categories": [
+    {"key": "cfal1Ethics", "label": "Ethical & Professional Standards", "perTest": 6, "pool": 24, "segment": "ETH"},
+    {"key": "cfal1Quant", "label": "Quantitative Methods", "perTest": 6, "pool": 24, "segment": "QNT"},
+    {"key": "cfal1Econ", "label": "Economics", "perTest": 4, "pool": 16, "segment": "ECO"},
+    {"key": "cfal1Fsa", "label": "Financial Statement Analysis", "perTest": 6, "pool": 24, "segment": "FSA"},
+    {"key": "cfal1Corp", "label": "Corporate Finance", "perTest": 4, "pool": 16, "segment": "CRP"},
+    {"key": "cfal1Equity", "label": "Equities", "perTest": 6, "pool": 24, "segment": "EQT"},
+    {"key": "cfal1Fixed", "label": "Fixed Income", "perTest": 6, "pool": 24, "segment": "FIX"},
+    {"key": "cfal1Deriv", "label": "Derivatives & Risk Management", "perTest": 4, "pool": 16, "segment": "DER"},
+    {"key": "cfal1Alts", "label": "Alternative Investments", "perTest": 4, "pool": 16, "segment": "ALT"},
+    {"key": "cfal1Portfolio", "label": "Portfolio Construction", "perTest": 4, "pool": 16, "segment": "PRT"}
+  ],
+  "notes": "CFA Institute Level I topic weights for exams from February 2027 (cfainstitute.org Level I exam page, checked 2026-11-03): Ethics 10-15%, Quant 11-14%, Economics 6-9%, FSA 11-14%, Corporate Finance 6-9%, Equities 11-14%, Fixed Income 11-14%, Derivatives and Risk Management 6-9%, Alternative Investments 6-9%, Portfolio Construction 8-12%. Per 50-question test 6/6/4/6/4/6/6/4/4/4 = 12/12/8/12/8/12/12/8/8/8%, all inside the 2027 ranges. Pools are 4x per-test, so no item repeats across tests. Real items have 3 options; ours have 4.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 16301, "name": "Ethical & Professional Standards", "categories": ["cfal1Ethics"], "size": 24},
+    {"setNumber": 2, "id": 16302, "name": "Quantitative Methods", "categories": ["cfal1Quant"], "size": 24},
+    {"setNumber": 3, "id": 16303, "name": "Economics & Corporate Finance", "categories": ["cfal1Econ", "cfal1Corp"], "size": 32},
+    {"setNumber": 4, "id": 16304, "name": "Financial Statement Analysis", "categories": ["cfal1Fsa"], "size": 24},
+    {"setNumber": 5, "id": 16305, "name": "Equities", "categories": ["cfal1Equity"], "size": 24},
+    {"setNumber": 6, "id": 16306, "name": "Fixed Income", "categories": ["cfal1Fixed"], "size": 24},
+    {"setNumber": 7, "id": 16307, "name": "Derivatives, Alternatives & Portfolios", "categories": ["cfal1Deriv", "cfal1Alts", "cfal1Portfolio"], "size": 48}
+  ]
+}

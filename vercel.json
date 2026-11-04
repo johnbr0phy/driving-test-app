@@ -51,6 +51,10 @@
     {
       "path": "/api/cron/weekly-active-learners",
       "schedule": "20 3 * * *"
+    },
+    {
+      "path": "/api/cron/welcome-backstop",
+      "schedule": "25 * * * *"
     }
   ]
 }

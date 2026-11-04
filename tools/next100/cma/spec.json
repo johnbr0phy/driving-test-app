@@ -1,0 +1,37 @@
+{
+  "id": "cma",
+  "stateCode": "CMA",
+  "idBase": 15900,
+  "prefix": "CMA-",
+  "slug": "/cma-aama",
+  "landingPath": "/cma-aama-practice-test",
+  "dataFile": "data/cma-questions.json",
+  "name": "CMA (AAMA) Practice Test",
+  "shortName": "CMA (AAMA)",
+  "examLabel": "CMA (AAMA) exam",
+  "fullName": "CMA (AAMA) Certification Exam",
+  "icon": "stethoscope",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 70,
+  "categories": [
+    {"key": "cmaIntake", "label": "Patient Intake & Discharge", "perTest": 7, "pool": 28, "segment": "INT"},
+    {"key": "cmaSafety", "label": "Safety, Infection Control & First Aid", "perTest": 6, "pool": 24, "segment": "SAF"},
+    {"key": "cmaProcedures", "label": "Procedures, Instruments & Anatomy", "perTest": 6, "pool": 24, "segment": "PRO"},
+    {"key": "cmaLab", "label": "Lab & Diagnostic Testing", "perTest": 5, "pool": 20, "segment": "LAB"},
+    {"key": "cmaPharm", "label": "Pharmacology", "perTest": 5, "pool": 20, "segment": "PHA"},
+    {"key": "cmaLegal", "label": "Legal & Ethical Issues", "perTest": 6, "pool": 24, "segment": "LEG"},
+    {"key": "cmaComm", "label": "Communication", "perTest": 5, "pool": 20, "segment": "COM"},
+    {"key": "cmaBilling", "label": "Billing, Coding & Insurance", "perTest": 6, "pool": 24, "segment": "BIL"},
+    {"key": "cmaScheduling", "label": "Scheduling & Health Records", "perTest": 4, "pool": 16, "segment": "SCH"}
+  ],
+  "notes": "AAMA Content Outline for the CMA (AAMA) Certification Exam, Rev 1/26: 180 scored of 200 items. Clinical Competency 106 (59%: A intake/discharge, B safety/infection control, C procedures/examinations, D pharmacology), General 38 (21%: E legal/ethical, F communication), Administrative 36 (20%: G billing/coding/insurance, H scheduling/HIM). Scaled to 50 per test: clinical 29 (7/6/6/5/5), general 11 (6/5), administrative 10 (6/4). AAMA publishes no split inside each section; the split is Tigertest's. Pools are exactly 4x per-test.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 15901, "name": "Patient Intake & Documentation", "categories": ["cmaIntake"], "size": 28},
+    {"setNumber": 2, "id": 15902, "name": "Safety, Infection Control & First Aid", "categories": ["cmaSafety"], "size": 24},
+    {"setNumber": 3, "id": 15903, "name": "Procedures, Instruments & Anatomy", "categories": ["cmaProcedures"], "size": 24},
+    {"setNumber": 4, "id": 15904, "name": "Lab Tests & Pharmacology", "categories": ["cmaLab", "cmaPharm"], "size": 40},
+    {"setNumber": 5, "id": 15905, "name": "Legal, Ethics & Communication", "categories": ["cmaLegal", "cmaComm"], "size": 44},
+    {"setNumber": 6, "id": 15906, "name": "Billing, Coding & Scheduling", "categories": ["cmaBilling", "cmaScheduling"], "size": 40}
+  ]
+}

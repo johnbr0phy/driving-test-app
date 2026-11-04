@@ -1,0 +1,37 @@
+{
+  "id": "sfadmin",
+  "stateCode": "SFADMIN",
+  "idBase": 16200,
+  "prefix": "SFADM-",
+  "slug": "/salesforce-admin",
+  "landingPath": "/salesforce-administrator-practice-test",
+  "dataFile": "data/salesforce-admin-questions.json",
+  "name": "Salesforce Platform Administrator Practice Test",
+  "shortName": "Salesforce Admin",
+  "examLabel": "Platform Administrator exam",
+  "fullName": "Salesforce Certified Platform Administrator",
+  "icon": "cloud",
+  "region": "GLOBAL",
+  "testCount": 3,
+  "questionsPerTest": 60,
+  "passPct": 68,
+  "categories": [
+    {"key": "sfadminConfig", "label": "Configuration & Setup", "perTest": 9, "pool": 30, "segment": "CFG", "section": "Configuration and Setup 15%"},
+    {"key": "sfadminObjects", "label": "Object Manager & Lightning App Builder", "perTest": 9, "pool": 30, "segment": "OBJ", "section": "Object Manager and Lightning App Builder 15%"},
+    {"key": "sfadminSales", "label": "Sales & Marketing Apps", "perTest": 6, "pool": 20, "segment": "SAL", "section": "Sales and Marketing Applications 10%"},
+    {"key": "sfadminService", "label": "Service & Support Apps", "perTest": 6, "pool": 20, "segment": "SVC", "section": "Service and Support Applications 10%"},
+    {"key": "sfadminProductivity", "label": "Productivity & Collaboration", "perTest": 6, "pool": 20, "segment": "PRD", "section": "Productivity and Collaboration 10%"},
+    {"key": "sfadminData", "label": "Data & Analytics Management", "perTest": 10, "pool": 33, "segment": "DAT", "section": "Data and Analytics Management 17%"},
+    {"key": "sfadminAutomation", "label": "Automation", "perTest": 9, "pool": 30, "segment": "AUT", "section": "Automation 15%"},
+    {"key": "sfadminAgentforce", "label": "Agentforce", "perTest": 5, "pool": 17, "segment": "AGT", "section": "Agentforce 8%"}
+  ],
+  "notes": "Exam guide weights 15/15/10/10/10/17/15/8 of 60 scored items: 9/9/6/6/6/10.2/9/4.8, rounded by largest remainder to 9/9/6/6/6/10/9/5 = 60. Three real-length tests of 60; pools are 3x per test plus 20 training-only spares (the last items of each pool). passPct 68 gives ceil(40.8) = 41 of 60. Real 'choose two/three' items are written as single answer.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 16201, "name": "Configuration & Setup", "categories": ["sfadminConfig"], "size": 30},
+    {"setNumber": 2, "id": 16202, "name": "Object Manager & Lightning App Builder", "categories": ["sfadminObjects"], "size": 30},
+    {"setNumber": 3, "id": 16203, "name": "Sales & Service Apps", "categories": ["sfadminSales", "sfadminService"], "size": 40},
+    {"setNumber": 4, "id": 16204, "name": "Productivity & Agentforce", "categories": ["sfadminProductivity", "sfadminAgentforce"], "size": 37},
+    {"setNumber": 5, "id": 16205, "name": "Data & Analytics", "categories": ["sfadminData"], "size": 33},
+    {"setNumber": 6, "id": 16206, "name": "Automation", "categories": ["sfadminAutomation"], "size": 30}
+  ]
+}

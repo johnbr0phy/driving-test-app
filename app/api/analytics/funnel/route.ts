@@ -3,6 +3,7 @@ import { getAdminDb, getAdminAuth } from '@/lib/firebase-admin';
 import { FieldValue } from 'firebase-admin/firestore';
 import { isInternalEmail } from '@/lib/internal';
 import { regionFromCountry } from '@/lib/region';
+import { isBotRequest } from '@/lib/botUserAgent';
 
 // Visitor funnel aggregate (see lib/funnel.ts). One counter per step, total
 // and per UTC day; signups are also split by whether the browser practiced
@@ -12,6 +13,8 @@ const STEPS = new Set(['visit', 'answered', 'signup_view', 'dmv_picker', 'dmv_st
 const VISIT_SOURCES = new Set(['chatgpt', 'perplexity', 'gemini', 'copilot', 'claude', 'ai_other', 'search', 'friend', 'direct', 'other']);
 
 export async function POST(request: NextRequest) {
+  // Bots never count in /admin (lib/botUserAgent.ts).
+  if (isBotRequest(request)) return NextResponse.json({ ok: true });
   try {
     const body = await request.json().catch(() => ({}));
     const step = typeof body.step === 'string' ? body.step : '';

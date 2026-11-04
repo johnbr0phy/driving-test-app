@@ -5,6 +5,7 @@ import { CAMPAIGN_REPLY_TO } from '@/lib/cron-email';
 import { SCHOOL_KIND_LABELS, schoolKind } from '@/lib/schoolHosts';
 import { getCatalogEntryByPath } from '@/lib/testCatalog';
 import { classExamInfo, isClassCode, normalizeClassCode } from '@/lib/classes';
+import { isBotRequest } from '@/lib/botUserAgent';
 
 // Visits from a school's LMS or website (lib/schoolReferral.ts). One doc per
 // host in schoolReferrals, with per-course and per-landing counts. The first
@@ -15,6 +16,8 @@ import { classExamInfo, isClassCode, normalizeClassCode } from '@/lib/classes';
 const MAX_ALERTS_PER_DAY = 20;
 
 export async function POST(request: NextRequest) {
+  // Bots never count in /admin (lib/botUserAgent.ts).
+  if (isBotRequest(request)) return NextResponse.json({ ok: true });
   try {
     const body = await request.json().catch(() => ({}));
     const host = typeof body.host === 'string' ? body.host.toLowerCase().slice(0, 120) : '';

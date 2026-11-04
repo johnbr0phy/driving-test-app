@@ -6,6 +6,7 @@ import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   signInWithPopup,
+  getAdditionalUserInfo,
   GoogleAuthProvider,
   getAuth,
   onAuthStateChanged,
@@ -15,6 +16,18 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
+
+// The welcome email for an account made on this page. keepalive lets it
+// finish while the page redirects back to the assistant; anything still
+// missed is sent by /api/cron/welcome-backstop.
+function sendWelcome(userId: string) {
+  fetch('/api/send-welcome-email', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    keepalive: true,
+    body: JSON.stringify({ userId, emailConsent: true, examId: null }),
+  }).catch(() => {});
+}
 
 export default function OAuthLoginPage() {
   return (
@@ -130,11 +143,7 @@ function OAuthLoginContent() {
       const auth = getAuth(firebaseApp);
       if (mode === 'signup') {
         const credential = await createUserWithEmailAndPassword(auth, email, password);
-        fetch('/api/send-welcome-email', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ userId: credential.user.uid, email, displayName: null, emailConsent: true, examId: null }),
-        }).catch(() => {});
+        sendWelcome(credential.user.uid);
         await completeAuthorization(credential.user.getIdToken());
         return;
       }
@@ -168,6 +177,9 @@ function OAuthLoginContent() {
       const auth = getAuth(firebaseApp);
       const provider = new GoogleAuthProvider();
       const credential = await signInWithPopup(auth, provider);
+      // Connecting from a chat is many people's first contact: a new Google
+      // account made here gets the welcome too.
+      if (getAdditionalUserInfo(credential)?.isNewUser) sendWelcome(credential.user.uid);
       await completeAuthorization(credential.user.getIdToken());
     } catch (err: unknown) {
       const code =

@@ -29,7 +29,7 @@ import epa608Es from "./examTranslations/epa608.es.json";
 import esdgtEs from "./examTranslations/esdgt.es.json";
 import ptimtPt from "./examTranslations/ptimt.pt.json";
 
-export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "zak53c3" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "bedriving" | "dkteori" | "setrafik" | "fitheory" | "grdriving" | "rodrpciv" | "hukresz" | "mttheory" | "detheorie" | "phlet" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "detheorie" | "htl" | "cst" | "crcst";
+export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "zak53c3" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "bedriving" | "dkteori" | "setrafik" | "fitheory" | "grdriving" | "rodrpciv" | "hukresz" | "mttheory" | "detheorie" | "phlet" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "detheorie" | "htl" | "cst" | "crcst";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -7990,7 +7990,7 @@ const zak53: ExamConfig = {
 const zak53c3: ExamConfig = {
   id: "zak53c3",
   stateCode: "ZAK53C3",
-  idBase: 15900,
+  idBase: 16900,
   slug: "/k53-code-3",
   landingPath: "/k53-code-3-learners-test",
   name: "K53 Code 3 Learner's Practice Test (C1 and C)",
@@ -8022,12 +8022,12 @@ const zak53c3: ExamConfig = {
     c3Controls: 6,
   },
   trainingSets: [
-    { setNumber: 1, id: 15901, name: "Licences, PrDP & Right of Way", categories: ["c3Licence", "c3RightOfWay"], size: 44, weightLabel: "11 of 50 test questions" },
-    { setNumber: 2, id: 15902, name: "Speed, Overtaking, Parking & Loads", categories: ["c3Speed", "c3Parking"], size: 44, weightLabel: "11 of 50 test questions" },
-    { setNumber: 3, id: 15903, name: "Regulatory Signs", categories: ["c3Regulatory"], size: 36, weightLabel: "9 of 50 test questions" },
-    { setNumber: 4, id: 15904, name: "Warning Signs", categories: ["c3Warning"], size: 24, weightLabel: "6 of 50 test questions" },
-    { setNumber: 5, id: 15905, name: "Guidance Signs, Markings & Signals", categories: ["c3Guidance", "c3Markings"], size: 28, weightLabel: "7 of 50 test questions" },
-    { setNumber: 6, id: 15906, name: "Heavy Vehicle Controls", categories: ["c3Controls"], size: 24, weightLabel: "6 of 50 test questions" },
+    { setNumber: 1, id: 16901, name: "Licences, PrDP & Right of Way", categories: ["c3Licence", "c3RightOfWay"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 2, id: 16902, name: "Speed, Overtaking, Parking & Loads", categories: ["c3Speed", "c3Parking"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 3, id: 16903, name: "Regulatory Signs", categories: ["c3Regulatory"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 4, id: 16904, name: "Warning Signs", categories: ["c3Warning"], size: 24, weightLabel: "6 of 50 test questions" },
+    { setNumber: 5, id: 16905, name: "Guidance Signs, Markings & Signals", categories: ["c3Guidance", "c3Markings"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 6, id: 16906, name: "Heavy Vehicle Controls", categories: ["c3Controls"], size: 24, weightLabel: "6 of 50 test questions" },
   ],
   categoryLabels: {
     c3Licence: "Licences, PrDP, Alcohol & Crashes",
@@ -10375,7 +10375,716 @@ const praxisplt: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, cna, ptcb, phleb, ccma, cet, danb, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, cosmetology, barber, vtne, nasm, rbt, cpc, cca, aswb, nce, arrt, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, phlto, zak53, zak53c3, sgbtt, aerta, ngfrsc, kentsa, mykpp, hkdrive, pkdrive, esdgt, ptimt, bedriving, dkteori, setrafik, fitheory, grdriving, rodrpciv, hukresz, mttheory, detheorie, phlet, texesppr, praxisplt, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, gulfrn, inrto, htl, cst, crcst];
+const cma: ExamConfig = {
+  id: "cma",
+  stateCode: "CMA",
+  idBase: 15900,
+  slug: "/cma-aama",
+  landingPath: "/cma-aama-practice-test",
+  name: "CMA (AAMA) Practice Test",
+  shortName: "CMA (AAMA)",
+  examLabel: "CMA (AAMA) exam",
+  fullName: "CMA (AAMA) Certification Exam",
+  questionIdPrefix: "CMA-",
+  icon: "stethoscope",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // AAMA Content Outline for the CMA (AAMA) Certification Exam, Rev 1/26 (checked November 2026):
+  // 200 questions, 180 scored + 20 pretest. Clinical Competency 106 (59%: patient intake and
+  // discharge, safety and infection control, procedures/examinations, pharmacology); General 38
+  // (21%: legal and ethical issues, communication); Administrative 36 (20%: billing, coding and
+  // insurance; scheduling and health information management). Scaled to 50 per test: clinical 29
+  // (7/6/6/5/5), general 11 (6/5), administrative 10 (6/4); the split inside each section is
+  // Tigertest's. AAMA reports a scaled score (200 to 800, 405 to pass); 70% is a readiness marker.
+  // No image items. All items original.
+  blueprint: {
+    cmaIntake: 7,
+    cmaSafety: 6,
+    cmaProcedures: 6,
+    cmaLab: 5,
+    cmaPharm: 5,
+    cmaLegal: 6,
+    cmaComm: 5,
+    cmaBilling: 6,
+    cmaScheduling: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 15901, name: "Patient Intake & Documentation", categories: ["cmaIntake"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 2, id: 15902, name: "Safety, Infection Control & First Aid", categories: ["cmaSafety"], size: 24, weightLabel: "6 of 50 test questions" },
+    { setNumber: 3, id: 15903, name: "Procedures, Instruments & Anatomy", categories: ["cmaProcedures"], size: 24, weightLabel: "6 of 50 test questions" },
+    { setNumber: 4, id: 15904, name: "Lab Tests & Pharmacology", categories: ["cmaLab", "cmaPharm"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 5, id: 15905, name: "Legal, Ethics & Communication", categories: ["cmaLegal", "cmaComm"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 6, id: 15906, name: "Billing, Coding & Scheduling", categories: ["cmaBilling", "cmaScheduling"], size: 40, weightLabel: "10 of 50 test questions" },
+  ],
+  categoryLabels: {
+    cmaIntake: "Patient Intake & Discharge",
+    cmaSafety: "Safety, Infection Control & First Aid",
+    cmaProcedures: "Procedures, Instruments & Anatomy",
+    cmaLab: "Lab & Diagnostic Testing",
+    cmaPharm: "Pharmacology",
+    cmaLegal: "Legal & Ethical Issues",
+    cmaComm: "Communication",
+    cmaBilling: "Billing, Coding & Insurance",
+    cmaScheduling: "Scheduling & Health Records",
+  },
+  copy: {
+    guestPrompt: "to save your CMA (AAMA) progress and track every question you miss",
+    trainingHeading: "Train by AAMA content area",
+    trainingSub: "Six sets covering the clinical, general and administrative sections of the AAMA content outline. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock exams · 50 questions weighted like the real 180 scored",
+    heroSubs: [
+      "Three sections, four mock exams. Clinical weighs most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock exam.",
+      "Fix the misses, then retake.",
+      "All done. You're ready for the CMA (AAMA).",
+    ],
+    sourceLine: "Based on the AAMA Content Outline for the CMA (AAMA) Certification Exam. Original questions; 50 per test, weighted like the real exam. Not affiliated with the AAMA.",
+    analyticsKey: "cma",
+  },
+};
+
+const nhie: ExamConfig = {
+  id: "nhie",
+  stateCode: "NHIE",
+  idBase: 16000,
+  slug: "/home-inspector",
+  landingPath: "/home-inspector-exam-practice-test",
+  name: "Home Inspector Practice Test",
+  shortName: "Home Inspector",
+  examLabel: "NHIE",
+  fullName: "National Home Inspector Examination (NHIE)",
+  questionIdPrefix: "NHIE-",
+  icon: "house",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // EBPHI "Overview: Policies, Procedures, Content" content outline (PDF dated 2023, posted 2024,
+  // checked 2026-11-03): 200 items (175 scored), 4 hours, scaled 200-800, 500 to pass. Domain 1
+  // Property and Building Inspection/Site Review 70% (13 tasks), Domain 2 Analysis of Findings and
+  // Reporting 20%, Domain 3 Professional Responsibilities 10%, scaled to 50: site/exterior/roof 8
+  // (5+5+6%), structure and interior 5 (6+4%), electrical 4 (7%), heating and cooling 4 (4+5%),
+  // insulation, moisture and exhaust 5 (5+5%), plumbing and fuel 3 (6%), fireplaces and life
+  // safety 6 (6+6%); reporting tasks 1-2 4 (4+4%), tasks 3-4 6 (6+6%); professional 5. 70% is
+  // Tigertest's readiness line (the real cut is a scaled 500). All items original.
+  blueprint: {
+    nhieExterior: 8,
+    nhieStructure: 5,
+    nhieElectrical: 4,
+    nhieHvac: 4,
+    nhieVentilation: 5,
+    nhiePlumbing: 3,
+    nhieFireplace: 6,
+    nhieReporting: 4,
+    nhieDefects: 6,
+    nhieProfessional: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 16001, name: "Site, Exterior & Roofing", categories: ["nhieExterior"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 2, id: 16002, name: "Structure, Interiors, Fireplaces & Life Safety", categories: ["nhieStructure", "nhieFireplace"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 3, id: 16003, name: "Electrical & Plumbing", categories: ["nhieElectrical", "nhiePlumbing"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 4, id: 16004, name: "Heating, Cooling & Ventilation", categories: ["nhieHvac", "nhieVentilation"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 5, id: 16005, name: "Reporting & Professional Practice", categories: ["nhieReporting", "nhieDefects", "nhieProfessional"], size: 60, weightLabel: "15 of 50 test questions" },
+  ],
+  categoryLabels: {
+    nhieExterior: "Site, Exterior & Roofing",
+    nhieStructure: "Structure & Interiors",
+    nhieElectrical: "Electrical Systems",
+    nhieHvac: "Heating & Cooling",
+    nhieVentilation: "Insulation, Moisture & Exhaust",
+    nhiePlumbing: "Plumbing & Fuel Systems",
+    nhieFireplace: "Fireplaces, Chimneys & Life Safety",
+    nhieReporting: "Inspection Methods & Limitations",
+    nhieDefects: "Defects, Service Life & Referrals",
+    nhieProfessional: "Agreements, Ethics & Liability",
+  },
+  copy: {
+    guestPrompt: "to save your home inspector exam progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets covering all three domains of the EBPHI content outline. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions weighted like the real NHIE, 70% target",
+    heroSubs: [
+      "Five sets, four mock tests. Inspecting the house is 70% of the exam.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Schedule your home inspector exam.",
+    ],
+    sourceLine: "Based on the EBPHI content outline for the National Home Inspector Examination. Original questions; 50 per test, weighted like the real 200-question exam. Not affiliated with EBPHI.",
+    analyticsKey: "nhie",
+  },
+};
+
+const txadjuster: ExamConfig = {
+  id: "txadjuster",
+  stateCode: "TXADJ",
+  idBase: 16100,
+  slug: "/texas-adjuster",
+  landingPath: "/texas-all-lines-adjuster-practice-test",
+  name: "Texas All-Lines Adjuster Practice Test",
+  shortName: "TX Adjuster",
+  examLabel: "Texas adjuster exam",
+  fullName: "Texas All-Lines Adjuster license exam",
+  questionIdPrefix: "TXADJ-",
+  icon: "umbrella",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Pearson VUE Texas Insurance Content Outlines (#124401, effective September 1, 2026), All Lines
+  // Adjuster: 150 scoreable questions in 150 minutes (handbook #124400), scaled score 70 to pass.
+  // I General P&C product knowledge for adjusters 40%, II Insurance terms and related concepts
+  // 40%, III Texas statutes and rules for P&C adjusting 20%, scaled to 50 as 20/20/10:
+  // I = fire policy 4, homeowners 5, auto 4, commercial 4, marine/additional/E&O 3;
+  // II = valuation 7, contracts 7, perils/negligence 6; III = licensing 4, claims 3, workers' comp 3.
+  // All items original; Texas law as in force November 2026.
+  blueprint: {
+    txadjFire: 4,
+    txadjHome: 5,
+    txadjAuto: 4,
+    txadjCommercial: 4,
+    txadjMarine: 3,
+    txadjValuation: 7,
+    txadjContract: 7,
+    txadjLiability: 6,
+    txadjLaw: 4,
+    txadjClaims: 3,
+    txadjWorkComp: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 16101, name: "Fire Policy & Homeowners", categories: ["txadjFire", "txadjHome"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 2, id: 16102, name: "Auto, Commercial & Marine", categories: ["txadjAuto", "txadjCommercial", "txadjMarine"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 3, id: 16103, name: "Valuation & Loss Settlement", categories: ["txadjValuation"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 4, id: 16104, name: "Contracts, Perils & Liability", categories: ["txadjContract", "txadjLiability"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 5, id: 16105, name: "Texas Law, Claims & Workers' Comp", categories: ["txadjLaw", "txadjClaims", "txadjWorkComp"], size: 40, weightLabel: "10 of 50 test questions" },
+  ],
+  categoryLabels: {
+    txadjFire: "Standard Fire Policy & Loss Requirements",
+    txadjHome: "Homeowners & Dwelling Coverage",
+    txadjAuto: "Personal & Commercial Auto",
+    txadjCommercial: "Commercial Property, Boiler, BOP & Crime",
+    txadjMarine: "Marine, Additional Coverages & E&O",
+    txadjValuation: "Valuation & Loss Settlement",
+    txadjContract: "Contracts & Policy Provisions",
+    txadjLiability: "Perils, Negligence & Liability",
+    txadjLaw: "Texas Licensing & the Commissioner",
+    txadjClaims: "Texas Claims Practices",
+    txadjWorkComp: "Texas Workers' Compensation",
+  },
+  copy: {
+    guestPrompt: "to save your Texas adjuster progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets covering all three parts of the Pearson VUE all-lines adjuster outline. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions weighted like the real all-lines adjuster exam, 70% to pass",
+    heroSubs: [
+      "Five sets, four mock tests. Product knowledge and terms are 80% of the exam.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Schedule your Texas adjuster exam.",
+    ],
+    sourceLine: "Based on the Pearson VUE Texas all-lines adjuster content outline effective September 2026. Original questions; 50 per test, weighted like the real 150-question exam. Not affiliated with TDI or Pearson VUE.",
+    analyticsKey: "txadjuster",
+  },
+};
+
+const sfadmin: ExamConfig = {
+  id: "sfadmin",
+  stateCode: "SFADMIN",
+  idBase: 16200,
+  slug: "/salesforce-admin",
+  landingPath: "/salesforce-administrator-practice-test",
+  name: "Salesforce Platform Administrator Practice Test",
+  shortName: "Salesforce Admin",
+  examLabel: "Platform Administrator exam",
+  fullName: "Salesforce Certified Platform Administrator",
+  questionIdPrefix: "SFADM-",
+  icon: "cloud",
+  testCount: 3,
+  questionsPerTest: 60,
+  passPct: 68,
+  // Salesforce Certified Platform Administrator exam guide (blueprint refreshed December 15,
+  // 2025, figures from guides quoting it, checked 2026-11-03): 60 scored items plus up to 5
+  // unscored, 105 minutes, 68% to pass (English). Configuration and Setup 15%, Object Manager
+  // and Lightning App Builder 15%, Sales and Marketing Applications 10%, Service and Support
+  // Applications 10%, Productivity and Collaboration 10%, Data and Analytics Management 17%,
+  // Automation 15%, Agentforce 8%, scaled to 60 by largest remainder: 9/9/6/6/6/10/9/5. Three
+  // real-length tests; 20 training-only spares. Choose-two items written as single answer.
+  blueprint: {
+    sfadminConfig: 9,
+    sfadminObjects: 9,
+    sfadminSales: 6,
+    sfadminService: 6,
+    sfadminProductivity: 6,
+    sfadminData: 10,
+    sfadminAutomation: 9,
+    sfadminAgentforce: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 16201, name: "Configuration & Setup", categories: ["sfadminConfig"], size: 30, weightLabel: "9 of 60 test questions" },
+    { setNumber: 2, id: 16202, name: "Object Manager & Lightning App Builder", categories: ["sfadminObjects"], size: 30, weightLabel: "9 of 60 test questions" },
+    { setNumber: 3, id: 16203, name: "Sales & Service Apps", categories: ["sfadminSales", "sfadminService"], size: 40, weightLabel: "12 of 60 test questions" },
+    { setNumber: 4, id: 16204, name: "Productivity & Agentforce", categories: ["sfadminProductivity", "sfadminAgentforce"], size: 37, weightLabel: "11 of 60 test questions" },
+    { setNumber: 5, id: 16205, name: "Data & Analytics", categories: ["sfadminData"], size: 33, weightLabel: "10 of 60 test questions" },
+    { setNumber: 6, id: 16206, name: "Automation", categories: ["sfadminAutomation"], size: 30, weightLabel: "9 of 60 test questions" },
+  ],
+  categoryLabels: {
+    sfadminConfig: "Configuration & Setup",
+    sfadminObjects: "Object Manager & Lightning App Builder",
+    sfadminSales: "Sales & Marketing Apps",
+    sfadminService: "Service & Support Apps",
+    sfadminProductivity: "Productivity & Collaboration",
+    sfadminData: "Data & Analytics Management",
+    sfadminAutomation: "Automation",
+    sfadminAgentforce: "Agentforce",
+  },
+  copy: {
+    guestPrompt: "to save your Salesforce admin progress and track every question you miss",
+    trainingHeading: "Train by section",
+    trainingSub: "Six sets covering all eight sections of the Platform Administrator exam guide. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 60 questions weighted like the real exam, 68% to pass",
+    heroSubs: [
+      "Six sets, three full-length tests. Data, security and Flow weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Book your Platform Administrator exam.",
+    ],
+    sourceLine: "Based on the Salesforce Certified Platform Administrator exam guide. Original questions; 60 per test, weighted like the real exam, 68% to pass. Not affiliated with Salesforce.",
+    analyticsKey: "sfadmin",
+  },
+};
+
+const cfal1: ExamConfig = {
+  id: "cfal1",
+  stateCode: "CFAL1",
+  idBase: 16300,
+  slug: "/cfa-level-1",
+  landingPath: "/cfa-level-1-practice-test",
+  name: "CFA Level I Practice Test",
+  shortName: "CFA Level I",
+  examLabel: "CFA Level I exam",
+  fullName: "CFA Program Level I exam",
+  questionIdPrefix: "CFAL1-",
+  icon: "calculator",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // CFA Institute Level I topic weights for exams from February 2027 (cfainstitute.org Level I
+  // exam page, checked Nov 3, 2026): Ethics 10-15, Quant 11-14, Economics 6-9, FSA 11-14,
+  // Corporate Finance 6-9, Equities 11-14, Fixed Income 11-14, Derivatives & Risk Mgmt 6-9,
+  // Alternatives 6-9, Portfolio Construction 8-12. Per 50: 12/12/8/12/8/12/12/8/8/8%.
+  // Real exam: 180 three-option items in two 135-minute sessions; MPS not published. All items original.
+  blueprint: {
+    cfal1Ethics: 6,
+    cfal1Quant: 6,
+    cfal1Econ: 4,
+    cfal1Fsa: 6,
+    cfal1Corp: 4,
+    cfal1Equity: 6,
+    cfal1Fixed: 6,
+    cfal1Deriv: 4,
+    cfal1Alts: 4,
+    cfal1Portfolio: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 16301, name: "Ethical & Professional Standards", categories: ["cfal1Ethics"], size: 24, weightLabel: "6 of 50 test questions" },
+    { setNumber: 2, id: 16302, name: "Quantitative Methods", categories: ["cfal1Quant"], size: 24, weightLabel: "6 of 50 test questions" },
+    { setNumber: 3, id: 16303, name: "Economics & Corporate Finance", categories: ["cfal1Econ", "cfal1Corp"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 4, id: 16304, name: "Financial Statement Analysis", categories: ["cfal1Fsa"], size: 24, weightLabel: "6 of 50 test questions" },
+    { setNumber: 5, id: 16305, name: "Equities", categories: ["cfal1Equity"], size: 24, weightLabel: "6 of 50 test questions" },
+    { setNumber: 6, id: 16306, name: "Fixed Income", categories: ["cfal1Fixed"], size: 24, weightLabel: "6 of 50 test questions" },
+    { setNumber: 7, id: 16307, name: "Derivatives, Alternatives & Portfolios", categories: ["cfal1Deriv", "cfal1Alts", "cfal1Portfolio"], size: 48, weightLabel: "12 of 50 test questions" },
+  ],
+  categoryLabels: {
+    cfal1Ethics: "Ethical & Professional Standards",
+    cfal1Quant: "Quantitative Methods",
+    cfal1Econ: "Economics",
+    cfal1Fsa: "Financial Statement Analysis",
+    cfal1Corp: "Corporate Finance",
+    cfal1Equity: "Equities",
+    cfal1Fixed: "Fixed Income",
+    cfal1Deriv: "Derivatives & Risk Management",
+    cfal1Alts: "Alternative Investments",
+    cfal1Portfolio: "Portfolio Construction",
+  },
+  copy: {
+    guestPrompt: "to save your CFA Level I progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Seven sets covering all ten Level I topics. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the Level I topic outline, 70% readiness line",
+    heroSubs: [
+      "Seven sets, four tests. Start with ethics.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Take a full-length mock, then sit Level I.",
+    ],
+    sourceLine: "Based on CFA Institute's Level I topic weights for 2027. Original questions with four choices (the real exam has three). Not affiliated with CFA Institute.",
+    analyticsKey: "cfal1",
+  },
+};
+
+const cpaaud: ExamConfig = {
+  id: "cpaaud",
+  stateCode: "CPAAUD",
+  idBase: 16400,
+  slug: "/cpa-aud",
+  landingPath: "/cpa-aud-practice-test",
+  name: "CPA AUD Practice Test",
+  shortName: "CPA AUD",
+  examLabel: "CPA Exam AUD section",
+  fullName: "CPA Exam Auditing and Attestation (AUD) section",
+  questionIdPrefix: "CPAAUD-",
+  icon: "calculator",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 75,
+  // AICPA Uniform CPA Examination Blueprints effective January 1, 2026 (the 2027 Blueprints, approved
+  // Sept 16, 2026, only revise examples in four Area III tasks; checked Nov 2026).
+  // Real AUD: 4 hours, 78 MCQs (39 + 39) + 7 TBSs, scored 50/50, 75 on a 0-99 scale to pass. MCQ half only.
+  // Area I Ethics, Professional Responsibilities and General Principles 15-25% -> 10,
+  // Area II Assessing Risk and Developing a Planned Response 25-35% -> 15,
+  // Area III Performing Further Procedures and Obtaining Evidence 30-40% -> 17,
+  // Area IV Forming Conclusions and Reporting 10-20% -> 8 per 50-question test. All items original.
+  blueprint: {
+    cpaaudEthics: 6,
+    cpaaudEngagement: 4,
+    cpaaudPlanning: 5,
+    cpaaudControls: 5,
+    cpaaudRisk: 5,
+    cpaaudEvidence: 6,
+    cpaaudSampling: 4,
+    cpaaudSpecial: 7,
+    cpaaudAuditReports: 4,
+    cpaaudOtherReports: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 16401, name: "Ethics, Independence & Engagement Basics", categories: ["cpaaudEthics", "cpaaudEngagement"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 2, id: 16402, name: "Planning, Materiality & Internal Control", categories: ["cpaaudPlanning", "cpaaudControls"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 3, id: 16403, name: "Fraud, Specialists & Specific Risks", categories: ["cpaaudRisk"], size: 20, weightLabel: "5 of 50 test questions" },
+    { setNumber: 4, id: 16404, name: "Evidence & Sampling", categories: ["cpaaudEvidence", "cpaaudSampling"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 5, id: 16405, name: "Special Matters & Subsequent Events", categories: ["cpaaudSpecial"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 6, id: 16406, name: "Audit, Attestation & SSARS Reports", categories: ["cpaaudAuditReports", "cpaaudOtherReports"], size: 32, weightLabel: "8 of 50 test questions" },
+  ],
+  categoryLabels: {
+    cpaaudEthics: "Ethics & Independence",
+    cpaaudEngagement: "Engagement Terms, Documentation & Quality",
+    cpaaudPlanning: "Planning, Risk Assessment & Materiality",
+    cpaaudControls: "Internal Control & IT",
+    cpaaudRisk: "Fraud, Specialists & Specific Risk Areas",
+    cpaaudEvidence: "Audit Evidence & Procedures",
+    cpaaudSampling: "Audit Sampling",
+    cpaaudSpecial: "Special Matters, Representations & Subsequent Events",
+    cpaaudAuditReports: "Audit Reports",
+    cpaaudOtherReports: "Attestation, SSARS & Other Reports",
+  },
+  copy: {
+    guestPrompt: "to save your CPA AUD progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Six sets covering all four areas of the AICPA AUD blueprint. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 multiple-choice questions weighted like the AUD blueprint, 75% readiness line",
+    heroSubs: [
+      "Six sets, four tests. Start with independence.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Practice simulations, then sit AUD.",
+    ],
+    sourceLine: "Based on the AICPA's 2026 AUD blueprint. Original multiple-choice questions; simulations not included. Not affiliated with the AICPA, NASBA or the PCAOB.",
+    analyticsKey: "cpaaud",
+  },
+};
+
+const accafa: ExamConfig = {
+  id: "accafa",
+  stateCode: "ACCAFA",
+  idBase: 16500,
+  slug: "/acca-fa",
+  landingPath: "/acca-fa-practice-test",
+  name: "ACCA FA Practice Test",
+  shortName: "ACCA FA",
+  examLabel: "ACCA Financial Accounting (FA) exam",
+  fullName: "ACCA Applied Knowledge Financial Accounting (FA) exam",
+  questionIdPrefix: "ACCAFA-",
+  icon: "calculator",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 50,
+  // ACCA FA/FFA syllabus and study guide Sept 2025 to Aug 2026, unchanged for Sept 2026 to Aug 2027
+  // (ACCA syllabus changes guidance, checked Nov 2026). Real exam: 2 hours, Section A 35 two-mark OT
+  // questions, Section B two 15-mark MTQs, pass mark 50%. Section A style only. ACCA publishes no area
+  // weights; per 50-question test: A-B 4, C-D1-D2 5, D3 4, D4-D6 7, D7-D8 6, D9-D10 5, E-F 6, G 7, H 4, I 2.
+  blueprint: {
+    accafaContext: 4,
+    accafaBookkeeping: 5,
+    accafaInventory: 4,
+    accafaNonCurrent: 7,
+    accafaAccruals: 6,
+    accafaCapital: 5,
+    accafaReconciliations: 6,
+    accafaStatements: 7,
+    accafaConsolidation: 4,
+    accafaInterpretation: 2,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 16501, name: "Context, Concepts & Double Entry", categories: ["accafaContext", "accafaBookkeeping"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 2, id: 16502, name: "Inventories & Non-current Assets", categories: ["accafaInventory", "accafaNonCurrent"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 3, id: 16503, name: "Accruals, Receivables & Payables", categories: ["accafaAccruals"], size: 24, weightLabel: "6 of 50 test questions" },
+    { setNumber: 4, id: 16504, name: "Provisions, Share Capital & Finance Costs", categories: ["accafaCapital"], size: 20, weightLabel: "5 of 50 test questions" },
+    { setNumber: 5, id: 16505, name: "Reconciliations, Trial Balance & Errors", categories: ["accafaReconciliations"], size: 24, weightLabel: "6 of 50 test questions" },
+    { setNumber: 6, id: 16506, name: "Financial Statements & Cash Flows", categories: ["accafaStatements"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 7, id: 16507, name: "Consolidation & Interpretation", categories: ["accafaConsolidation", "accafaInterpretation"], size: 24, weightLabel: "6 of 50 test questions" },
+  ],
+  categoryLabels: {
+    accafaContext: "Context, Regulation & Accounting Concepts",
+    accafaBookkeeping: "Double Entry, Documents, Sales & Cash",
+    accafaInventory: "Inventories",
+    accafaNonCurrent: "Non-current Assets, Depreciation & Intangibles",
+    accafaAccruals: "Accruals, Prepayments, Receivables & Payables",
+    accafaCapital: "Provisions, Capital Structure & Finance Costs",
+    accafaReconciliations: "Reconciliations, Trial Balance & Errors",
+    accafaStatements: "Financial Statements, Cash Flows & Incomplete Records",
+    accafaConsolidation: "Consolidated Financial Statements",
+    accafaInterpretation: "Interpretation & Ratios",
+  },
+  copy: {
+    guestPrompt: "to save your ACCA FA progress and track every question you miss",
+    trainingHeading: "Train by syllabus area",
+    trainingSub: "Seven sets covering every area of the ACCA FA syllabus, A to I. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 Section A style questions across the whole syllabus, 50% pass mark",
+    heroSubs: [
+      "Seven sets, four tests. Start with double entry.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Practise Section B questions, then book FA.",
+    ],
+    sourceLine: "Based on ACCA's FA syllabus and study guide for 2026-27, with IFRS 18 formats. Original Section A style questions; Section B not included. Not affiliated with ACCA.",
+    analyticsKey: "accafa",
+  },
+};
+
+const aatl2: ExamConfig = {
+  id: "aatl2",
+  stateCode: "AATL2",
+  idBase: 16600,
+  slug: "/aat-level-2",
+  landingPath: "/aat-level-2-practice-test",
+  name: "AAT Level 2 Practice Test",
+  shortName: "AAT Level 2",
+  examLabel: "AAT Level 2 Certificate in Accounting",
+  fullName: "AAT Level 2 Certificate in Accounting (formerly the Foundation Certificate)",
+  questionIdPrefix: "AATL2-",
+  icon: "calculator",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // AAT Level 2 Certificate in Accounting (Q2022, 603/6338/1), qualification specification v5.7,
+  // September 2026 (checked Nov 2026). Unit shares of the grade: Introduction to Bookkeeping 25%,
+  // Principles of Bookkeeping Controls 25%, Principles of Costing 20% (each a 1 h 30 min unit
+  // assessment), The Business Environment 30% (2 h synoptic only). AAT's pass mark is 70% on every
+  // assessment. Per 50-question test: ITBK 13 (LOs at 20% each), POBC 12 (LOs at 25% each),
+  // PCTN 10 (LOs 30/40/20/10), BENV 15 (by the synoptic assessment objectives). All items original.
+  blueprint: {
+    aatl2Systems: 4,
+    aatl2Transactions: 5,
+    aatl2CashLedgers: 4,
+    aatl2ControlBank: 6,
+    aatl2JournalTb: 6,
+    aatl2CostClass: 3,
+    aatl2CostCalc: 4,
+    aatl2Budgets: 3,
+    aatl2Law: 3,
+    aatl2Economy: 3,
+    aatl2Ethics: 3,
+    aatl2Entities: 3,
+    aatl2Finance: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 16601, name: "Introduction to Bookkeeping", categories: ["aatl2Systems", "aatl2Transactions", "aatl2CashLedgers"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 2, id: 16602, name: "Control Accounts & Bank Reconciliation", categories: ["aatl2ControlBank"], size: 24, weightLabel: "6 of 50 test questions" },
+    { setNumber: 3, id: 16603, name: "Journals, Errors & Trial Balance", categories: ["aatl2JournalTb"], size: 24, weightLabel: "6 of 50 test questions" },
+    { setNumber: 4, id: 16604, name: "Principles of Costing", categories: ["aatl2CostClass", "aatl2CostCalc", "aatl2Budgets"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 5, id: 16605, name: "Law, Economy & Business Entities", categories: ["aatl2Law", "aatl2Economy", "aatl2Entities"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 6, id: 16606, name: "Ethics, Finance Function & Information", categories: ["aatl2Ethics", "aatl2Finance"], size: 24, weightLabel: "6 of 50 test questions" },
+  ],
+  categoryLabels: {
+    aatl2Systems: "Bookkeeping Systems & Documents",
+    aatl2Transactions: "Customer & Supplier Transactions",
+    aatl2CashLedgers: "Cash Book, Petty Cash & Ledgers",
+    aatl2ControlBank: "Control Accounts & Bank Reconciliation",
+    aatl2JournalTb: "Journals, Errors & Trial Balance",
+    aatl2CostClass: "Cost Classification & Cost Centres",
+    aatl2CostCalc: "Inventory, Labour & Overhead Costs",
+    aatl2Budgets: "Budgets, Variances & Spreadsheets",
+    aatl2Law: "Contract Law & the Legal System",
+    aatl2Economy: "The Economic Environment",
+    aatl2Ethics: "Ethics, CSR & Sustainability",
+    aatl2Entities: "Business Entities & Formation",
+    aatl2Finance: "The Finance Function & Information",
+  },
+  copy: {
+    guestPrompt: "to save your AAT Level 2 progress and track every question you miss",
+    trainingHeading: "Train by unit",
+    trainingSub: "Six sets covering all four units of the AAT Level 2 Certificate in Accounting. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions weighted like the four units, 70% to pass",
+    heroSubs: [
+      "Six sets, four mock tests. Start with bookkeeping.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your AAT assessments.",
+    ],
+    sourceLine: "Based on AAT's Level 2 Certificate in Accounting (Q2022) specification. Original questions; ledger, spreadsheet and written tasks not included. Not affiliated with AAT.",
+    analyticsKey: "aatl2",
+  },
+};
+
+const nbdhe: ExamConfig = {
+  id: "nbdhe",
+  stateCode: "NBDHE",
+  idBase: 16700,
+  slug: "/nbdhe",
+  landingPath: "/nbdhe-practice-test",
+  name: "NBDHE Practice Test",
+  shortName: "NBDHE",
+  examLabel: "NBDHE",
+  fullName: "National Board Dental Hygiene Examination",
+  questionIdPrefix: "NBDHE-",
+  icon: "tooth",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 75,
+  // JCNDE NBDHE 2026 Candidate Guide (updated 9/17/2026), test specifications after the update
+  // scheduled for November 2026 (checked November 2026): 350 items. Discipline-based 200:
+  // Scientific Basis for Dental Hygiene Practice 56, Provision of Clinical Dental Hygiene
+  // Services 124, Research Principles and Community Health 20. Case-based 150 on 12 to 15 cases.
+  // Per 50-question test (Tigertest's split): scientific 9 (3/3/3), clinical 21 (3/3/4/4/3/2/2),
+  // community 3, written case scenarios 17 (9/5/3). Real result: scale score 49 to 99, 75 passes;
+  // 75% here is a readiness marker. No image items. All items original.
+  blueprint: {
+    nbdheAnat: 3,
+    nbdheBiosci: 3,
+    nbdhePathPharm: 3,
+    nbdheAssess: 3,
+    nbdheRad: 3,
+    nbdheCare: 4,
+    nbdhePerio: 4,
+    nbdhePrev: 3,
+    nbdheSupport: 2,
+    nbdheProf: 2,
+    nbdheCommunity: 3,
+    nbdheCasePerio: 9,
+    nbdheCaseMed: 5,
+    nbdheCasePeds: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 16701, name: "Scientific Basis", categories: ["nbdheAnat", "nbdheBiosci", "nbdhePathPharm"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 2, id: 16702, name: "Assessment, Radiography & Care Planning", categories: ["nbdheAssess", "nbdheRad", "nbdheCare"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 3, id: 16703, name: "Periodontics, Prevention & Supportive Care", categories: ["nbdhePerio", "nbdhePrev", "nbdheSupport"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 4, id: 16704, name: "Professional Responsibility & Community Health", categories: ["nbdheProf", "nbdheCommunity"], size: 20, weightLabel: "5 of 50 test questions" },
+    { setNumber: 5, id: 16705, name: "Patient Cases: Adult Periodontal & Geriatric", categories: ["nbdheCasePerio"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 6, id: 16706, name: "Patient Cases: Medically Compromised, Special Needs & Pediatric", categories: ["nbdheCaseMed", "nbdheCasePeds"], size: 32, weightLabel: "8 of 50 test questions" },
+  ],
+  categoryLabels: {
+    nbdheAnat: "Anatomy, Histology & Embryology",
+    nbdheBiosci: "Physiology, Nutrition, Microbiology & Immunology",
+    nbdhePathPharm: "Pathology & Pharmacology",
+    nbdheAssess: "Patient Assessment",
+    nbdheRad: "Dental Radiography",
+    nbdheCare: "Care Planning, Emergencies & Pain Control",
+    nbdhePerio: "Periodontal Disease Management",
+    nbdhePrev: "Preventive Agents",
+    nbdheSupport: "Supportive Treatment Services",
+    nbdheProf: "Professional Responsibility",
+    nbdheCommunity: "Research & Community Health",
+    nbdheCasePerio: "Cases: Adult Periodontal & Geriatric",
+    nbdheCaseMed: "Cases: Medically Compromised & Special Needs",
+    nbdheCasePeds: "Cases: Pediatric",
+  },
+  copy: {
+    guestPrompt: "to save your NBDHE progress and track every question you miss",
+    trainingHeading: "Train by NBDHE content area",
+    trainingSub: "Six sets covering the discipline-based areas of the JCNDE test specifications and two sets of written patient cases. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock exams · 50 questions with patient cases",
+    heroSubs: [
+      "Discipline questions plus patient cases. Clinical services weighs most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock exam.",
+      "Fix the misses, then retake.",
+      "All done. You're board ready.",
+    ],
+    sourceLine: "Based on the JCNDE NBDHE test specifications. Original questions; 50 per test with written patient cases. Not affiliated with the JCNDE or the ADA.",
+    analyticsKey: "nbdhe",
+  },
+};
+
+const nptepta: ExamConfig = {
+  id: "nptepta",
+  stateCode: "NPTEPTA",
+  idBase: 16800,
+  slug: "/npte-pta",
+  landingPath: "/npte-pta-practice-test",
+  name: "NPTE-PTA Practice Test",
+  shortName: "NPTE-PTA",
+  examLabel: "NPTE-PTA",
+  fullName: "National Physical Therapy Examination for Physical Therapist Assistants",
+  questionIdPrefix: "PTA-",
+  icon: "activity",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // FSBPT NPTE-PTA Test Content Outline, effective January 2024 (version 1.2, 9/28/2023), still
+  // current November 2026: 140 scored + 40 pretest items. Ranges: cardiovascular & pulmonary
+  // 20-27, musculoskeletal 31-40, neuromuscular & nervous 27-35, integumentary 3-8, metabolic &
+  // endocrine 4-6, GI 0-4, GU 0-4, lymphatic 2-6, system interactions 5-7; equipment, devices &
+  // technologies 8-10, therapeutic modalities 5-7, safety & protection 6-8, professional
+  // responsibilities 2-4, research & EBP 1-3. Midpoints scaled to 50 per test: 8/12/11/9/3/3/4.
+  // Passing standard is a scaled 600 (200 to 800); 70% is a readiness marker. All items original.
+  blueprint: {
+    ptaCardio: 8,
+    ptaMsk: 12,
+    ptaNeuro: 11,
+    ptaOther: 9,
+    ptaEquip: 3,
+    ptaModal: 3,
+    ptaProf: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 16801, name: "Cardiovascular & Pulmonary", categories: ["ptaCardio"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 2, id: 16802, name: "Musculoskeletal", categories: ["ptaMsk"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 3, id: 16803, name: "Neuromuscular & Nervous", categories: ["ptaNeuro"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 4, id: 16804, name: "Other Systems & System Interactions", categories: ["ptaOther"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 5, id: 16805, name: "Equipment, Modalities & Professional Practice", categories: ["ptaEquip", "ptaModal", "ptaProf"], size: 40, weightLabel: "10 of 50 test questions" },
+  ],
+  categoryLabels: {
+    ptaCardio: "Cardiovascular & Pulmonary",
+    ptaMsk: "Musculoskeletal",
+    ptaNeuro: "Neuromuscular & Nervous",
+    ptaOther: "Other Systems & System Interactions",
+    ptaEquip: "Equipment, Devices & Technologies",
+    ptaModal: "Therapeutic Modalities",
+    ptaProf: "Safety, Professional Roles & Evidence",
+  },
+  copy: {
+    guestPrompt: "to save your NPTE-PTA progress and track every question you miss",
+    trainingHeading: "Train by NPTE-PTA content area",
+    trainingSub: "Five sets covering every area of the FSBPT PTA content outline. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock exams · 50 questions weighted like the real 140 scored",
+    heroSubs: [
+      "Body systems first. Musculoskeletal and neuro are half the exam.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock exam.",
+      "Fix the misses, then retake.",
+      "All done. You're board ready.",
+    ],
+    sourceLine: "Based on the FSBPT NPTE-PTA Test Content Outline (2024). Original questions; 50 per test, weighted like the real exam. Not affiliated with FSBPT.",
+    analyticsKey: "nptepta",
+  },
+};
+
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, nhie, cna, ptcb, phleb, ccma, cma, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, cosmetology, barber, vtne, nasm, rbt, cpc, cca, sfadmin, aswb, nce, arrt, nptepta, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, phlto, zak53, zak53c3, sgbtt, aerta, ngfrsc, kentsa, mykpp, hkdrive, pkdrive, esdgt, ptimt, bedriving, dkteori, setrafik, fitheory, grdriving, rodrpciv, hukresz, mttheory, detheorie, phlet, texesppr, praxisplt, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, gulfrn, inrto, htl, cst, crcst];
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
 export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA, realestatePA, realestateIL, realestateOH, realestateGA, realestateNC, realestateMI, realestateVA, realestateWA, realestateAZ, realestateTN, insuranceNY, insurancePA, insuranceIL, insuranceOH, insuranceGA, insuranceNC, insuranceMI, insuranceNJ, insuranceVA, insuranceWA, pncNY, pncPA, pncIL, pncOH, pncGA, pncNC, pncMI, pncNJ, pncVA, pncWA];

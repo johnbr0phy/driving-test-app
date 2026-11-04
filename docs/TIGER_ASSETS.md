@@ -48,6 +48,11 @@ generation tool and exported at 512 × 512 while preserving transparency.
 
 Forty dedicated sets (320 PNGs) replace the borrowed/default artwork for the exams in PRs #568 and #569. See [coverage, previews and expression requirements](tiger-assets-international.md).
 
+## Professional exam batch B
+
+The ten exams in batch B use two dedicated sets. Eight exams reuse six
+existing role families. See [batch B mappings, exports and validation](tiger-assets-batch-b.md).
+
 ## Link-preview cards
 
 `app/og/[examId]/route.tsx` renders 1200 × 630 cards using happy expression 03, never the crowned results expression. `lib/shareCards.ts` resolves home, country, exam, state and DMV-language cards; `lib/shareCardCopy.ts` holds short subject-specific exam copy. The background fades from white to the exam's light theme colour, with no side stripe. The home and country cards use three relevant smiling mascots. State-specific professional exams reuse their family's mascot with their own title and copy.

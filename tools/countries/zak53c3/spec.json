@@ -1,7 +1,7 @@
 {
   "id": "zak53c3",
   "stateCode": "ZAK53C3",
-  "idBase": 15900,
+  "idBase": 16900,
   "prefix": "ZAC3-",
   "slug": "/k53-code-3",
   "landingPath": "/k53-code-3-learners-test",
@@ -26,11 +26,11 @@
     {"key": "c3Controls", "label": "Heavy Vehicle Controls (Code 3)", "perTest": 6, "pool": 24, "segment": "CTL", "file": "q_controls.py"}
   ],
   "trainingSets": [
-    {"setNumber": 1, "id": 15901, "name": "Licences, PrDP & Right of Way", "categories": ["c3Licence", "c3RightOfWay"], "size": 44},
-    {"setNumber": 2, "id": 15902, "name": "Speed, Overtaking, Parking & Loads", "categories": ["c3Speed", "c3Parking"], "size": 44},
-    {"setNumber": 3, "id": 15903, "name": "Regulatory Signs", "categories": ["c3Regulatory"], "size": 36},
-    {"setNumber": 4, "id": 15904, "name": "Warning Signs", "categories": ["c3Warning"], "size": 24},
-    {"setNumber": 5, "id": 15905, "name": "Guidance Signs, Markings & Signals", "categories": ["c3Guidance", "c3Markings"], "size": 28},
-    {"setNumber": 6, "id": 15906, "name": "Heavy Vehicle Controls", "categories": ["c3Controls"], "size": 24}
+    {"setNumber": 1, "id": 16901, "name": "Licences, PrDP & Right of Way", "categories": ["c3Licence", "c3RightOfWay"], "size": 44},
+    {"setNumber": 2, "id": 16902, "name": "Speed, Overtaking, Parking & Loads", "categories": ["c3Speed", "c3Parking"], "size": 44},
+    {"setNumber": 3, "id": 16903, "name": "Regulatory Signs", "categories": ["c3Regulatory"], "size": 36},
+    {"setNumber": 4, "id": 16904, "name": "Warning Signs", "categories": ["c3Warning"], "size": 24},
+    {"setNumber": 5, "id": 16905, "name": "Guidance Signs, Markings & Signals", "categories": ["c3Guidance", "c3Markings"], "size": 28},
+    {"setNumber": 6, "id": 16906, "name": "Heavy Vehicle Controls", "categories": ["c3Controls"], "size": 24}
   ]
 }

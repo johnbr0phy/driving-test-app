@@ -87,7 +87,7 @@ DRG = [
  "Mutually exclusive edits", ["Column two code edits", "Medically unlikely edits", "Add-on code pairing edits"],
  "NCCI once separated column one/column two edits from mutually exclusive edits. Both are now procedure-to-procedure edits."),
 ("NCCI edits for hospital outpatient claims are applied through the:",
- "The I/OCE", ["The MCE", "The grouper", "The CDM"],
+ "I/OCE", ["MCE", "MS-DRG grouper", "Chargemaster"],
  "The I/OCE applies NCCI edits and other outpatient edits to OPPS claims. The Medicare Code Editor checks inpatient claims."),
 ("An MUE with adjudication indicator 2 is:",
  "A per-day absolute limit", ["A per-claim-line limit", "A per-day clinical limit", "A per-month total limit"],

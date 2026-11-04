@@ -445,7 +445,7 @@
     "optionD": "Detachment",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Detachment is cutting off all or part of the upper or lower extremities. The body part is the most distal part remaining, and the qualifier shows the level of amputation."
+    "explanation": "Detachment is cutting off all or part of the upper or lower extremities. The body part value is where the detachment is made, here the lower leg, and the qualifier shows the level (high, mid or low)."
   },
   {
     "type": "CCS",
@@ -929,10 +929,10 @@
     "questionId": "CCS-DRG-007",
     "category": "ccsDrg",
     "question": "NCCI edits for hospital outpatient claims are applied through the:",
-    "optionA": "The MCE",
-    "optionB": "The grouper",
-    "optionC": "The I/OCE",
-    "optionD": "The CDM",
+    "optionA": "MCE",
+    "optionB": "MS-DRG grouper",
+    "optionC": "I/OCE",
+    "optionD": "Chargemaster",
     "correctAnswer": "C",
     "correctIndex": 2,
     "explanation": "The I/OCE applies NCCI edits and other outpatient edits to OPPS claims. The Medicare Code Editor checks inpatient claims."
@@ -1460,7 +1460,7 @@
     "state": "ALL",
     "questionId": "CCS-DOC-025",
     "category": "ccsDocumentation",
-    "question": "A patient admitted in the second trimester for a complication delivers in the third. The trimester character shows:",
+    "question": "A patient admitted in the second trimester for a complication stays into the third. The trimester character shows:",
     "optionA": "Admission trimester",
     "optionB": "Delivery trimester",
     "optionC": "Trimester when coded",
@@ -1999,7 +1999,7 @@
     "optionD": "Planned cesarean delivery",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Stage 3 and 4 pressure ulcers, along with unstageable ulcers, are in the HAC list when not present on admission. Stage 1 and 2 ulcers are not."
+    "explanation": "Stage III and IV pressure ulcers acquired during the stay form a CMS HAC category. Stage 1 and 2 ulcers are not on the HAC list."
   },
   {
     "type": "CCS",
@@ -2514,7 +2514,7 @@
     "optionA": "ICD-10-CM Tabular List",
     "optionB": "UHDDS definitions",
     "optionC": "AHIMA ethics standards",
-    "optionD": "The payer's policies",
+    "optionD": "Payer manuals and policies",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "Payers set billing requirements in provider manuals, policies and contracts. Coders follow them as long as they do not conflict with the HIPAA code set standards."

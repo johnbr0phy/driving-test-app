@@ -102,7 +102,7 @@ PCS = [
  "Reattachment is putting back in or on all or a portion of a separated body part to its normal location or another suitable location. Transplantation uses a body part from another individual or animal."),
 ("A below-knee amputation is coded to the root operation:",
  "Detachment", ["Resection", "Excision", "Reposition"],
- "Detachment is cutting off all or part of the upper or lower extremities. The body part is the most distal part remaining, and the qualifier shows the level of amputation."),
+ "Detachment is cutting off all or part of the upper or lower extremities. The body part value is where the detachment is made, here the lower leg, and the qualifier shows the level (high, mid or low)."),
 ("Moving a skin flap to a new site while it keeps its own blood supply is coded to:",
  "Transfer", ["Replacement", "Reposition", "Supplement"],
  "Transfer is moving all or a portion of a body part to another location to take over its function, without taking out the body part. A pedicle flap keeps its vascular and nerve supply."),

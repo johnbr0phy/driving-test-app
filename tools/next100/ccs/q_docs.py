@@ -76,7 +76,7 @@ DOCUMENTATION = [
 ("Under the coding guidelines, a nurse practitioner who treats the patient counts as:",
  "A provider", ["Another clinician", "A consultant only", "An ancillary source"],
  "The guidelines use provider for the physician or any qualified health care practitioner legally accountable for establishing the diagnosis, which includes NPs and PAs."),
-("A patient admitted in the second trimester for a complication delivers in the third. The trimester character shows:",
+("A patient admitted in the second trimester for a complication stays into the third. The trimester character shows:",
  "Admission trimester", ["Delivery trimester", "Trimester when coded", "Unspecified trimester"],
  "When an admission spans trimesters, the trimester character for the antepartum complication is based on the trimester when the complication developed, and a complication present at admission uses the admission trimester."),
 ("A note says 'uncontrolled diabetes' with no other detail. To code it, the coder needs:",

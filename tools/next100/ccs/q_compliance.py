@@ -13,7 +13,7 @@ COMPLIANCE = [
  "CMS pays the CC or MCC for HAC conditions reported with Y or W. Conditions reported with N or U do not raise payment."),
 ("Which condition is a CMS HAC category when acquired during the stay?",
  "Stage 3 or 4 pressure ulcer", ["Stage 1 pressure ulcer", "Community-acquired pneumonia", "Planned cesarean delivery"],
- "Stage 3 and 4 pressure ulcers, along with unstageable ulcers, are in the HAC list when not present on admission. Stage 1 and 2 ulcers are not."),
+ "Stage III and IV pressure ulcers acquired during the stay form a CMS HAC category. Stage 1 and 2 ulcers are not on the HAC list."),
 ("Which hospital-acquired condition is on the CMS HAC list?",
  "Catheter-associated UTI", ["Chronic kidney disease", "A ureteral kidney stone", "Prostate enlargement"],
  "Catheter-associated urinary tract infection is a HAC category, as are vascular catheter-associated infections and others that reasonable prevention can avoid."),
@@ -123,7 +123,7 @@ COMPLIANCE = [
  "A health care clearinghouse", ["A life insurance company", "A workers' comp carrier", "An employer's HR office"],
  "Covered entities are health plans, health care clearinghouses and providers who transmit health information electronically in standard transactions. Life insurers and workers' compensation carriers are not."),
 ("Payer-specific billing rules, such as a required modifier, are found in the:",
- "The payer's policies", ["ICD-10-CM Tabular List", "UHDDS definitions", "AHIMA ethics standards"],
+ "Payer manuals and policies", ["ICD-10-CM Tabular List", "UHDDS definitions", "AHIMA ethics standards"],
  "Payers set billing requirements in provider manuals, policies and contracts. Coders follow them as long as they do not conflict with the HIPAA code set standards."),
 ]
 

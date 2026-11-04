@@ -55,3 +55,11 @@ are four times each count, so no item repeats across tests. Multiple choice only
 Written against `data/cca-questions.json` and `data/cpc-questions.json`: no item repeats a fact and
 answer from either (for example CCA's modifier 77, NCCI indicators 0/1/9, CAC precision and
 OIG/False Claims items, and CPC's modifier and surgery-package items are left to those banks).
+
+## Review (2026-11-04)
+Fact pass on all 200 items. Confirmed: MUE adjudication indicator 2 is a date-of-service policy
+edit that cannot be paid above the value even on appeal (3 is clinical, payable on appeal with
+documentation); PSI 03 pressure ulcer, 06 iatrogenic pneumothorax, 13 postoperative sepsis, 90
+composite (AHRQ); HAC-POA pays the CC/MCC for Y and W. The HAC pressure ulcer category is cited as
+stages III and IV only (whether unstageable codes are in CMS HAC 04 was not confirmed, so it is not
+asserted; AHRQ PSI 03 does count unstageable ulcers).

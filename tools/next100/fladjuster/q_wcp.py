@@ -10,7 +10,7 @@ Q = [
  "21 days", ["14 days", "30 days", "10 days"],
  "s. 440.12(1) allows no compensation for the first 7 days, but if disability lasts more than 21 days, compensation is paid from the start. Medical benefits are not subject to the waiting period."),
 ("Florida temporary total disability benefits are generally paid at:",
- "66 2/3% of the average weekly wage", ["80% of the weekly wage loss", "60% of the average weekly wage", "70% of gross weekly earnings"],
+ "66 2/3% of the average weekly wage", ["80% of the weekly wage loss", "60% of the worker's average weekly wage", "70% of gross weekly earnings"],
  "s. 440.15(2)(a) pays 66 2/3 percent of the average weekly wage during temporary total disability, subject to the statewide maximum. The 80 percent rate applies only to listed catastrophic injuries."),
 ("An injured Florida worker must tell the employer about a work injury within:",
  "30 days", ["7 days", "90 days", "1 year"],

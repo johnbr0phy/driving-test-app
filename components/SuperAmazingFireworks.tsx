@@ -9,10 +9,13 @@
 // sits at z-0; while it runs, `sam-on` on <html> makes the page wrapper
 // transparent and lifts header, main and footer above it (globals.css), so
 // the show is visible only between cards, never over the UI or site chrome.
+// The peeking tigers (SuperAmazingTigers) live in the same layer, so cards
+// hide their bodies and only their heads poke out.
 
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { Fireworks } from "@/components/Fireworks";
+import { SuperAmazingTigers } from "@/components/SuperAmazingTigers";
 
 export const SUPER_AMAZING_KEY = "superAmazingMode";
 export const SUPER_AMAZING_EVENT = "super-amazing-mode";
@@ -45,6 +48,7 @@ export function SuperAmazingFireworks() {
   return (
     <div className="sam-bg fixed inset-0 z-0 pointer-events-none" aria-hidden>
       <Fireworks continuous className="absolute inset-0 pointer-events-none" />
+      <SuperAmazingTigers />
     </div>
   );
 }

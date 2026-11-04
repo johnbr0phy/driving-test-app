@@ -452,14 +452,14 @@
     "state": "ALL",
     "questionId": "FLADJ-AUT-005",
     "category": "fladjAuto",
-    "question": "Personal Auto Policy liability is excluded while a covered auto is used:",
-    "optionA": "To carry people for a fee",
-    "optionB": "To drive a friend to work",
-    "optionC": "On a rental trip abroad",
-    "optionD": "On a vacation to Canada",
+    "question": "Personal Auto Policy liability is excluded while a covered auto is:",
+    "optionA": "In an organized race at a track",
+    "optionB": "Lent to a friend for one day",
+    "optionC": "Driven on a private farm road",
+    "optionD": "Used in a share-the-expense car pool",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Part A excludes liability while an auto is used as a public or livery conveyance. Share-the-expense car pools are not livery use."
+    "explanation": "Part A excludes any vehicle while it is located inside a facility designed for racing to compete in, practice or prepare for a prearranged or organized racing or speed contest. Permissive use and share-the-expense car pools are covered."
   },
   {
     "type": "FLADJ",
@@ -1838,14 +1838,14 @@
     "state": "ALL",
     "questionId": "FLADJ-MAR-004",
     "category": "fladjMarine",
-    "question": "A contractors equipment floater covers:",
-    "optionA": "Buildings while they are being built",
-    "optionB": "Materials being installed for the owner",
-    "optionC": "Trucks licensed for road use",
-    "optionD": "Tools and mobile equipment on job sites",
+    "question": "A trip transit policy covers:",
+    "optionA": "Every shipment made in a year",
+    "optionB": "The truck that carries the goods",
+    "optionC": "Only the carrier's legal liability",
+    "optionD": "Goods on one named shipment",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Contractors equipment is a nonfiled inland marine form for movable equipment such as bulldozers, cranes and tools. Buildings under construction are builders risk and installed materials an installation floater."
+    "explanation": "A trip transit policy is an inland marine form that covers the owner's goods for a single shipment. An annual transit policy covers all shipments in the year, the truck itself is auto physical damage, and motor truck cargo covers the carrier's liability."
   },
   {
     "type": "FLADJ",

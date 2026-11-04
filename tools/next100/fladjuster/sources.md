@@ -4,7 +4,9 @@ All 200 questions are original, written from the Florida examination content out
 ISO and NFIP forms it names, and the Florida statutes and rules it cites. No Pearson VUE sample,
 past item or commercial prep question was copied, and no prep provider is named. Statute text was
 downloaded from the Florida Legislature's Online Sunshine site and read, not taken from guides.
-Checked 2026-11-04.
+Checked 2026-11-04. Reviewed 2026-11-04: key statutes (627.4025, 627.701, 627.7011, 627.70131,
+627.70132, 627.7015, 627.736, 626.852, 626.869, 626.876, 626.2815, 440.185) re-read on Online Sunshine;
+every coinsurance, hurricane deductible and valuation item recomputed.
 
 ## Exam format (official)
 - Florida Insurance Examination Content Outlines, effective January 1, 2026 (Pearson VUE
@@ -41,10 +43,13 @@ Checked 2026-11-04.
   designations); ESL candidates may request extra time. Fees listed there are not used.
 - Pearson VUE Florida insurance page: https://www.pearsonvue.com/us/en/fl/insurance.html
   (checked 2026-11-04), source of the PDFs above and the DFS FAQ (121002).
-- License type meanings (guides, not confirmed on myfloridacfo.com): 6-20 resident all-lines
-  adjuster, 7-20 nonresident all-lines adjuster, 70-20 nonresident designated home state
-  all-lines adjuster (WebCE, AdjusterPro license-type guides, searched 2026-11-04). The handbook
-  confirms only that one exam serves 0620, 0720 and 7020.
+- License type meanings (official, DFS, checked 2026-11-04): 6-20 resident all-lines adjuster
+  (https://myfloridacfo.com/docs-sf/insurance-agents-and-agency-services-libraries/agents-docs/licensure/agents-adjusters/6-20-resident-all-lines-adjuster-license.pdf
+  and the qualifications page https://myfloridacfo.com/division/agents/licensing/agents-and-adjusters/qualifications:
+  "Resident: 6-20. Non-Resident: 7-20"), 7-20 nonresident all-lines adjuster and 70-20 nonresident
+  designated home state (DHS) adjuster
+  (https://myfloridacfo.com/division/agents/licensing/agents-and-adjusters/reciprocating-states/non-res-all-lines-adjr-reciprocity
+  and the 70-20 DHS license PDF). The handbook confirms one exam serves 0620, 0720 and 7020.
 
 ## Florida law used in the bank (Online Sunshine, Florida Statutes 2026, checked 2026-11-04)
 URL pattern: http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0600-0699/0626/Sections/0626.869.html

@@ -97,7 +97,7 @@ DOCUMENTATION = [
 ("'Metastatic carcinoma from the lung' tells the coder the lung is the:",
  "Primary site", ["Secondary site", "Unknown site", "Overlapping site"],
  "Metastatic from a site means that site is the primary. Metastatic to a site means that site is secondary."),
-("A fracture not documented as displaced or nondisplaced is coded as:",
+("The record does not say whether a fracture is displaced. The default is:",
  "Displaced", ["Nondisplaced", "Unspecified", "Pathological"],
  "A fracture not indicated as displaced or nondisplaced defaults to displaced. A fracture not stated as open or closed defaults to closed."),
 ("The UB-04 type of admission shows whether the stay was:",

@@ -2005,6 +2005,20 @@
     --brand-gradient-to: 265 50% 96%;
   }
 
+  /* CompTIA CySA+ theme: deep magenta violet (v2 exam; matches lib/v2/exams/cysa.ts theme) */
+  [data-theme="cysa"] {
+    --brand: 298 90% 28%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 298 60% 96%;
+    --brand-hover: 298 90% 24%;
+    --brand-dark: 298 90% 21%;
+    --brand-darker: 298 70% 14%;
+    --brand-muted: 298 40% 70%;
+    --brand-border: 298 45% 80%;
+    --brand-border-light: 298 40% 89%;
+    --brand-gradient-to: 285 55% 96%;
+  }
+
   /* CISSP theme (v2 exam; matches lib/v2/exams/cissp.ts theme) */
   [data-theme="cissp"] {
     --brand: 220 40% 43%;
@@ -4996,6 +5010,18 @@
     --brand-muted: 252 35% 45%;
     --brand-dark: 252 40% 65%;
     --brand-darker: 252 30% 78%;
+  }
+
+  .dark [data-theme="cysa"] {
+    --brand: 298 90% 43.5%;
+    --brand-hover: 298 90% 35.5%;
+    --brand-light: 298 45% 13%;
+    --brand-gradient-to: 285 40% 11%;
+    --brand-border-light: 298 35% 24%;
+    --brand-border: 298 40% 34%;
+    --brand-muted: 298 40% 45%;
+    --brand-dark: 298 90% 65%;
+    --brand-darker: 298 70% 78%;
   }
 
   .dark [data-theme="cissp"] {

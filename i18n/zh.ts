@@ -1437,6 +1437,15 @@ export const zh: TranslationKeys = {
     netSecurity: "Network Security",
     netTroubleMethod: "Troubleshooting Method, Cabling & Tools",
     netTroubleServices: "Troubleshooting Services & Performance",
+    // CompTIA CySA+ CS0-004 domains
+    cysaSecArch: "Architecture, Logging & Automation",
+    cysaThreat: "Malicious Activity & Threat Intelligence",
+    cysaVulnScan: "Vulnerability Scanning & Tools",
+    cysaVulnPrior: "Prioritizing & Fixing Vulnerabilities",
+    cysaIrFrame: "Attack Frameworks & IR Preparation",
+    cysaIrHandle: "Detection, Containment & Recovery",
+    cysaVulnReport: "Vulnerability Reporting & Metrics",
+    cysaIrReport: "Incident Reporting & Communication",
     // Life in the UK test
     lituValues: "Values & Principles of the UK",
     lituUk: "What Is the UK",

@@ -1318,6 +1318,16 @@ export type QuestionCategory =
   | "netTroubleMethod"
   | "netTroubleServices"
 
+  // CompTIA CySA+ CS0-004 domains
+  | "cysaSecArch"
+  | "cysaThreat"
+  | "cysaVulnScan"
+  | "cysaVulnPrior"
+  | "cysaIrFrame"
+  | "cysaIrHandle"
+  | "cysaVulnReport"
+  | "cysaIrReport"
+
   // Life in the UK test
   | "lituValues"
   | "lituUk"

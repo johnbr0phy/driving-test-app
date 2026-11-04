@@ -201,6 +201,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   ukseru: { title: "SERU Assessment", description: "Study TfL private hire licensing, passenger safety, equality, safeguarding and safer driving." },
   nzroad: { title: "NZ Learner Licence Test", description: "Review give way rules, signs, road position and speed from the official Road Code." },
   phlto: { title: "LTO Exam Reviewer", description: "Review road signs, right of way, speed limits and road safety laws for your LTO exam." },
+  zak53c3: { title: "K53 Code 3 Learner's Test", description: "Study K53 rules, signs and markings, and heavy vehicle controls for Code 3 (C1 and C)." },
   zak53: { title: "K53 Learner's Licence Test", description: "Study K53 rules of the road, signs and markings, and vehicle controls for Code 2." },
   sgbtt: { title: "Singapore Basic Theory Test", description: "Review traffic signs, road markings, junctions, lanes and safe driving for your BTT." },
   aerta: { title: "UAE Driving Theory Test", description: "Review road signs, roundabouts, right of way, lanes and desert driving for the RTA test." },

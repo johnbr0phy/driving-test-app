@@ -7,7 +7,7 @@ Q = [
  "A stated moral", ["A list of sources", "A rhyming couplet", "A glossary of terms"],
  "Fables are short tales, often with animal characters, that close with an explicit moral. A rhyming couplet belongs to some poems, not to the fable form."),
 ("Which element is found in a drama but not usually in a short story?",
- "Stage directions", ["A cast of characters", "A conflict", "A setting"],
+ "Stage directions", ["Main characters", "A conflict", "A setting"],
  "Stage directions tell actors how to move and speak, a structural feature of drama. Characters, conflict and setting appear in every kind of narrative."),
 ("The pattern of stressed and unstressed syllables in a line of poetry is its:",
  "Meter", ["Rhyme scheme", "Stanza", "Alliteration"],

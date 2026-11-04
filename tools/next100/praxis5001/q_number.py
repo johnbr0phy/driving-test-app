@@ -9,7 +9,7 @@ assert 15 * F(4, 5) == 12
 assert 3 / F(1, 4) == 12
 assert 18 - 3 * 2**2 + 4 == 10
 assert F(3, 8) == F(375, 1000)
-assert abs(3.60 / 24 - 0.15) < 1e-9
+assert abs(3.40 / 20 - 0.17) < 1e-9
 assert 64 * 0.75 == 48
 assert 6 * 14 // 2 == 42  # lcm(6, 14) = 42 since gcd is 2
 assert 0.04 * 100 == 4.0  # 4 ones vs 4 hundredths
@@ -55,9 +55,9 @@ Q = [
 ("Which list is ordered from least to greatest?",
  "-0.6, 1/4, 0.3", ["0.3, 1/4, -0.6", "1/4, -0.6, 0.3", "-0.6, 0.3, 1/4"],
  "The negative number is least, and 1/4 = 0.25 is less than 0.3, so the order is -0.6, 1/4, 0.3."),
-("A 24-ounce bag of rice costs $3.60. What is the price per ounce?",
- "$0.15", ["$0.67", "$1.50", "$0.16"],
- "Unit price = total cost / number of ounces = $3.60 / 24 = $0.15. Dividing 24 by 3.60 gives ounces per dollar instead."),
+("A 20-ounce bag of rice costs $3.40. What is the price per ounce?",
+ "$0.17", ["$5.88", "$1.70", "$0.18"],
+ "Unit price = total cost / number of ounces = $3.40 / 20 = $0.17. Dividing 20 by 3.40 gives about 5.88 ounces per dollar, the reverse rate, and $1.70 misplaces the decimal point."),
 ("A lamp priced at $64 is on sale for 25% off. What is the sale price?",
  "$48", ["$16", "$39", "$80"],
  "25% of $64 is $16, and $64 - $16 = $48. $16 is only the discount, $39 subtracts 25 dollars instead of 25 percent, and $80 adds the discount."),

@@ -78,6 +78,13 @@ commercial question bank was copied. Checked 2026-11-04.
 - UK GDPR and Data Protection Act 2018, as amended by the Data (Use and Access) Act 2025 (one-month
   subject access response, 72-hour breach notification, special category data):
   https://ico.org.uk
+- The Information Commission took over from the Information Commissioner's Office on 30 September
+  2026 (DUAA 2025 ss118-119, Commencement No. 9 Regulations, SI 2026/1015):
+  https://www.gov.uk/government/news/information-commission-succeeds-the-ico-as-uks-data-protection-regulator
+  (checked 2026-11-04). Items name the Information Commission.
+- Regulated mortgage contract definition (RAO art 61(3)) no longer requires a first charge since
+  21 March 2016. SM&CR Certification Regime still in force (PS26/6 Phase 1 changes April-September
+  2026; Treasury's plan to remove certification from legislation not yet enacted, Nov 2026).
 - Consumer Rights Act 2015 (unfair terms not binding on the consumer); Public Interest Disclosure
   Act 1998; Bribery Act 2010; Criminal Justice Act 1993 (insider dealing); UK MAR.
 - Mental Capacity Act 2005 (lasting powers of attorney registered with the Office of the Public
@@ -101,3 +108,9 @@ Checked against `data/aat-level-2-questions.json` (UK), the UK workplace banks
 `nmls-questions.json`, `series-65-questions.json`. Rewrote MKT-010, MKT-013, LAW-001, LAW-002,
 LAW-006, LAW-007, ETH-004 and ETH-007, which repeated AAT Level 2 facts (Bank Rate, fiscal policy,
 sole trader and LLP liability, consideration, invitation to treat, ethics versus law, gifts).
+
+## Review pass (2026-11-04)
+Fixed FCA-024 (first charge dropped from the RMC definition), DEV-011, DEV-012, CMP-010, CMP-023
+(ICO to Information Commission), LAW-008, LAW-011, LAW-012, LAW-014, LAW-016 (England and Wales
+named; Scotland differs), CLI-006 (rewritten to MCOB 4.7A most suitable, as it repeated DEV-007's
+RDR fact). Rechecked against aat-level-2, llqp and series-65: no shared fact and answer.

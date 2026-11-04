@@ -3,9 +3,9 @@ from fractions import Fraction as F
 # Bb x Bb: one in four offspring bb
 assert F(sum(1 for a in "Bb" for b in "Bb" if a + b == "bb"), 4) == F(1, 4)
 Q = [
-("Which structure is found in plant cells but not in animal cells?",
- "Cell wall", ["Nucleus", "Cell membrane", "Mitochondria"],
- "Plant cells have a rigid cellulose cell wall, plus chloroplasts. Both plant and animal cells have a nucleus, membrane and mitochondria."),
+("Which cell structure controls which substances enter and leave the cell?",
+ "Cell membrane", ["Nucleus", "Cell wall", "Vacuole"],
+ "The cell membrane is selectively permeable, letting some substances pass and blocking others. The nucleus holds the DNA, the cell wall of a plant cell gives support, and a vacuole stores water and wastes."),
 ("During photosynthesis, plants take in carbon dioxide and release:",
  "Oxygen", ["Nitrogen", "Methane", "Carbon monoxide"],
  "Using light energy, plants combine carbon dioxide and water into sugar and give off oxygen as a by-product."),

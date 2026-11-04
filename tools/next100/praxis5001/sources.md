@@ -79,6 +79,9 @@ Checked 2026-11-04.
   matched (15% off an $80 jacket, slope 2 from two points, a Civil War soldier's letter, the
   3/5/2 marbles bag, the Tenth Amendment reserve-powers stem, the largest ocean, demand rising
   with fixed supply, "each of the ... has" agreement) were rewritten with new numbers or facts.
+  Review pass (2026-11-04) rewrote five more that repeated a GED or LET fact: the 24-ounce
+  $3.60 unit price, the plant-only cell wall, igneous rock from cooling magma, the First
+  Amendment freedoms and Congress declaring war.
 - All maths keys are recomputed by `assert` lines at the top of each maths and science source file,
   run on every build. The sample questions in the Study Companion were not reused.
 - Every item is original. Not affiliated with ETS or the Praxis program.

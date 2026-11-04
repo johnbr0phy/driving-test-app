@@ -592,14 +592,14 @@
     "state": "ALL",
     "questionId": "CEMAP-LAW-008",
     "category": "cemapLaw",
-    "question": "A contract made with a 16-year-old for goods that are not necessaries is generally:",
+    "question": "In England and Wales, a contract made with a 16-year-old for goods that are not necessaries is generally:",
     "optionA": "Void for both parties from the start",
     "optionB": "Enforceable like any other contract",
     "optionC": "Valid only if notarised",
     "optionD": "Not enforceable against the minor",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Minors lack full contractual capacity, so most such contracts cannot be enforced against them, although the minor can usually enforce them. Contracts for necessaries are an exception."
+    "explanation": "Minors lack full contractual capacity, so most such contracts cannot be enforced against them, although the minor can usually enforce them. Contracts for necessaries are an exception. Scotland differs: at 16 a person generally has full capacity to contract."
   },
   {
     "type": "CEMAP",
@@ -634,7 +634,7 @@
     "state": "ALL",
     "questionId": "CEMAP-LAW-011",
     "category": "cemapLaw",
-    "question": "Two owners hold a home as joint tenants. When one dies, their share:",
+    "question": "In England and Wales, two owners hold a home as joint tenants. When one dies, their share:",
     "optionA": "Passes under their will",
     "optionB": "Goes to the Crown",
     "optionC": "Passes to the survivor",
@@ -648,7 +648,7 @@
     "state": "ALL",
     "questionId": "CEMAP-LAW-012",
     "category": "cemapLaw",
-    "question": "Unmarried partners who want each to leave their share of the home to their own children should own it as:",
+    "question": "In England and Wales, unmarried partners who want each to leave their share of the home to their own children should own it as:",
     "optionA": "Joint tenants",
     "optionB": "Life tenants",
     "optionC": "Leaseholders in common",
@@ -676,7 +676,7 @@
     "state": "ALL",
     "questionId": "CEMAP-LAW-014",
     "category": "cemapLaw",
-    "question": "With leasehold property, the buyer owns:",
+    "question": "In England and Wales, a buyer of a leasehold flat owns:",
     "optionA": "The land and the building outright forever",
     "optionB": "The right to occupy for a fixed term",
     "optionC": "Only the right to rent it out",
@@ -704,14 +704,14 @@
     "state": "ALL",
     "questionId": "CEMAP-LAW-016",
     "category": "cemapLaw",
-    "question": "An individual voluntary arrangement (IVA) is:",
+    "question": "In England and Wales, an individual voluntary arrangement (IVA) is:",
     "optionA": "A court order seizing all assets",
     "optionB": "A government loan to clear debts",
     "optionC": "A form of company liquidation",
     "optionD": "A binding deal with creditors",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "An IVA is a binding agreement, supervised by an insolvency practitioner, to pay creditors over time. It avoids bankruptcy if enough creditors by value agree."
+    "explanation": "An IVA is a binding agreement, supervised by an insolvency practitioner, to pay creditors over time. It avoids bankruptcy if enough creditors by value agree. Scotland has protected trust deeds instead."
   },
   {
     "type": "CEMAP",
@@ -987,11 +987,11 @@
     "question": "Which body enforces data protection law in the UK?",
     "optionA": "The Financial Conduct Authority",
     "optionB": "The Competition and Markets Authority",
-    "optionC": "The Information Commissioner's Office",
+    "optionC": "The Information Commission",
     "optionD": "The Financial Ombudsman Service",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "The ICO enforces the UK GDPR and the Data Protection Act 2018, including fines for breaches. The FCA expects firms to comply but does not enforce that law."
+    "explanation": "The Information Commission, which took over from the Information Commissioner's Office on 30 September 2026 under the Data (Use and Access) Act 2025, enforces the UK GDPR and the Data Protection Act 2018, including fines for breaches. The FCA expects firms to comply but does not enforce that law."
   },
   {
     "type": "CEMAP",
@@ -999,7 +999,7 @@
     "questionId": "CEMAP-DEV-012",
     "category": "cemapRegHistory",
     "question": "Which body can investigate mergers and anti-competitive behaviour across the whole UK economy, including finance?",
-    "optionA": "The Information Commissioner's Office",
+    "optionA": "The Information Commission",
     "optionB": "The Financial Ombudsman Service",
     "optionC": "The Pensions Regulator",
     "optionD": "The Competition and Markets Authority",
@@ -1376,14 +1376,14 @@
     "state": "ALL",
     "questionId": "CEMAP-FCA-024",
     "category": "cemapFca",
-    "question": "A loan secured by a first charge on UK land, where at least 40% of the land is used as a dwelling by the borrower or a relative, is a:",
+    "question": "A loan to an individual or trustee secured on UK land, where at least 40% of the land is used as a dwelling by the borrower or a relative, is a:",
     "optionA": "Commercial buy-to-let loan",
     "optionB": "Business bridging loan",
     "optionC": "Commercial property mortgage",
     "optionD": "Regulated mortgage contract",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "This is the core definition of a regulated mortgage contract, the main type of lending covered by MCOB. Most buy-to-let loans fall outside it."
+    "explanation": "This is the core definition of a regulated mortgage contract, the main type of lending covered by MCOB. Since March 2016 it covers second charge loans as well as first charges. Most buy-to-let loans fall outside it."
   },
   {
     "type": "CEMAP",
@@ -2090,14 +2090,14 @@
     "state": "ALL",
     "questionId": "CEMAP-CMP-010",
     "category": "cemapCompliance",
-    "question": "A personal data breach likely to risk people's rights must normally be reported to the ICO within:",
+    "question": "A personal data breach likely to risk people's rights must normally be reported to the Information Commission within:",
     "optionA": "24 hours",
     "optionB": "72 hours",
     "optionC": "14 days",
     "optionD": "8 weeks",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Firms must notify the Information Commissioner's Office within 72 hours of becoming aware of a reportable breach, and tell affected people without undue delay if the risk is high."
+    "explanation": "Firms must notify the Information Commission (the ICO until 30 September 2026) within 72 hours of becoming aware of a reportable breach, and tell affected people without undue delay if the risk is high."
   },
   {
     "type": "CEMAP",
@@ -2273,7 +2273,7 @@
     "questionId": "CEMAP-CMP-023",
     "category": "cemapCompliance",
     "question": "Which body supervises most FCA-authorised firms for their anti-money laundering systems?",
-    "optionA": "The ICO",
+    "optionA": "The Information Commission",
     "optionB": "The Pensions Regulator",
     "optionC": "The FCA",
     "optionD": "The Land Registry",
@@ -2384,14 +2384,14 @@
     "state": "ALL",
     "questionId": "CEMAP-CLI-006",
     "category": "cemapClients",
-    "question": "Since the Retail Distribution Review, how is a retail investment adviser paid for advice?",
-    "optionA": "By product commission",
-    "optionB": "By an agreed adviser charge",
-    "optionC": "By a share of the fund's growth",
-    "optionD": "By a payment from the FCA",
+    "question": "When a firm gives mortgage advice, MCOB requires it to recommend a mortgage that is:",
+    "optionA": "The cheapest on the whole market",
+    "optionB": "The most suitable in its range",
+    "optionC": "The one paying it most",
+    "optionD": "The client's first choice",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Adviser charges are agreed with the client in advance and disclosed. Product commission for retail investment advice was banned from the end of 2012."
+    "explanation": "MCOB 4.7A requires an advised sale to be of a product that is appropriate to the customer's needs and circumstances and the most suitable of those the firm has available within the scope of its service."
   },
   {
     "type": "CEMAP",

@@ -684,6 +684,46 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
     "color": "hsl(100, 30%, 26%)",
     "tint": "hsl(100, 30%, 96%)"
   },
+  "aswbclin": {
+    "color": "hsl(300, 20%, 34%)",
+    "tint": "hsl(300, 20%, 96%)"
+  },
+  "phr": {
+    "color": "hsl(200, 45%, 28%)",
+    "tint": "hsl(200, 45%, 96%)"
+  },
+  "cisa": {
+    "color": "hsl(250, 20%, 32%)",
+    "tint": "hsl(250, 20%, 96%)"
+  },
+  "cssgb": {
+    "color": "hsl(14, 50%, 26%)",
+    "tint": "hsl(14, 50%, 96%)"
+  },
+  "ccs": {
+    "color": "hsl(193, 30%, 26%)",
+    "tint": "hsl(193, 30%, 96%)"
+  },
+  "rdexam": {
+    "color": "hsl(91, 20%, 26%)",
+    "tint": "hsl(91, 20%, 96%)"
+  },
+  "praxis5001": {
+    "color": "hsl(39, 40%, 26%)",
+    "tint": "hsl(39, 40%, 96%)"
+  },
+  "fladjuster": {
+    "color": "hsl(320, 30%, 30%)",
+    "tint": "hsl(320, 30%, 96%)"
+  },
+  "llqp": {
+    "color": "hsl(5, 45%, 28%)",
+    "tint": "hsl(5, 45%, 96%)"
+  },
+  "cemap": {
+    "color": "hsl(203, 30%, 26%)",
+    "tint": "hsl(203, 30%, 96%)"
+  },
   "pcoc": {
     "color": "hsl(220, 50%, 46%)",
     "tint": "hsl(220, 50%, 96%)"

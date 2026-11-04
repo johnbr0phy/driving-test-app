@@ -2258,7 +2258,7 @@
     "state": "ALL",
     "questionId": "CISA-PRO-014",
     "category": "cisaProtection",
-    "question": "Which location is generally best for a data center within a multi-storey building?",
+    "question": "Which location is generally best for a data center within a multistory building?",
     "optionA": "The basement",
     "optionB": "A middle floor",
     "optionC": "The top floor",

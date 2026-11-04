@@ -39,7 +39,7 @@ Q = [
 ("What is the main purpose of an uninterruptible power supply in a data center?",
  "To bridge power until the generator runs", ["To replace the backup generator entirely", "To cut the building's power bill each month", "To cool servers during a fire"],
  "A UPS supplies clean power for minutes, covering short outages and the time a generator needs to start. Long outages depend on the generator."),
-("Which location is generally best for a data center within a multi-storey building?",
+("Which location is generally best for a data center within a multistory building?",
  "A middle floor", ["The basement", "The top floor", "The ground floor beside the street"],
  "Middle floors avoid flooding risks in basements and roof leaks or easier access from above, and are harder to reach from the street."),
 ("What should an IS auditor look for first in a firewall rule base review?",

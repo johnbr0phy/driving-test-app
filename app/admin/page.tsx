@@ -35,6 +35,10 @@ const SearchesView = dynamic(() => import("@/components/admin/SearchesView").the
   ssr: false,
   loading: () => <TabLoading />,
 });
+const QuestionsTab = dynamic(() => import("@/components/admin/QuestionsTab").then((m) => m.QuestionsTab), {
+  ssr: false,
+  loading: () => <TabLoading />,
+});
 const UsersTab = dynamic(() => import("@/components/admin/UsersTab").then((m) => m.UsersTab), {
   ssr: false,
   loading: () => <TabLoading />,
@@ -46,6 +50,7 @@ const TABS = [
   { id: "teachers", label: "Teachers" },
   { id: "quizzes", label: "Quizzes" },
   { id: "searches", label: "Searches" },
+  { id: "questions", label: "Questions" },
   { id: "users", label: "Users" },
 ] as const;
 type TabId = (typeof TABS)[number]["id"];
@@ -159,6 +164,7 @@ function AdminTabs() {
             {t.id === "teachers" && <TeachersTab />}
             {t.id === "quizzes" && <QuizzesTab />}
             {t.id === "searches" && <SearchesView />}
+            {t.id === "questions" && <QuestionsTab />}
             {t.id === "users" && <UsersTab />}
           </div>
         ))}

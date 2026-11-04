@@ -4,6 +4,7 @@ import { CheckCircle2, XCircle } from "lucide-react";
 import { Question } from "@/types";
 import { useState, useEffect, useId, useRef } from "react";
 import { useTranslation } from "@/contexts/LanguageContext";
+import { ReportExamQuestion } from "@/components/ReportExamQuestion";
 import { QuestionImage } from "@/components/QuestionImage";
 
 const READY_MS = 300;
@@ -13,6 +14,8 @@ interface TrainingCardProps {
   selectedAnswer: string | null;
   onAnswerSelect: (answer: string) => void;
   onNext: () => void;
+  /** Exam id for "Report this question" under the explanation ("dmv" or a registry exam id). */
+  reportExamId?: string;
 }
 
 export function TrainingCard({
@@ -20,6 +23,7 @@ export function TrainingCard({
   selectedAnswer,
   onAnswerSelect,
   onNext,
+  reportExamId,
 }: TrainingCardProps) {
   const { t } = useTranslation();
   const headingId = useId();
@@ -134,9 +138,25 @@ export function TrainingCard({
               </div>
               <p className="text-gray-700 dark:text-gray-200 text-sm md:text-base">{question.explanation}</p>
             </div>
+            {reportExamId && (
+              <ReportExamQuestion
+                key={question.questionId}
+                examId={reportExamId}
+                questionId={question.questionId}
+                picked={reportPick(question.optionOrder, selectedAnswer)}
+              />
+            )}
           </div>
         )}
       </CardContent>
     </Card>
   );
+}
+
+/** The bank index of the shown letter picked, through the shuffle. */
+function reportPick(optionOrder: string | undefined, picked: string | null): number | undefined {
+  if (!picked) return undefined;
+  const bankLetter = optionOrder ? optionOrder["ABCD".indexOf(picked)] : picked;
+  const i = bankLetter ? "ABCD".indexOf(bankLetter) : -1;
+  return i >= 0 ? i : undefined;
 }

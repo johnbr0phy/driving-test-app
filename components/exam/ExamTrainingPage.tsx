@@ -397,6 +397,7 @@ function ExamTrainingContent({ exam: source }: { exam: ExamConfig }) {
             selectedAnswer={selectedAnswer}
             onAnswerSelect={handleAnswerSelect}
             onNext={handleNext}
+            reportExamId={exam.id}
           />
         ) : (
           <Card className="w-full">

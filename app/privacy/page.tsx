@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 // consent and children's pages), app/api/account/delete (what deletion
 // removes), lib/classes.ts and lib/quizzes.ts (what teachers and quiz makers
 // see), lib/funnel.ts and the other anonymous counters.
-const UPDATED = "November 2, 2026";
+const UPDATED = "November 4, 2026";
 const CONTACT = "john@johnbrophy.net";
 
 const h2 = "text-2xl font-semibold mb-4 mt-2";
@@ -55,6 +55,10 @@ export default function PrivacyPage() {
                 <strong>Classes and quizzes:</strong> if you join a teacher&apos;s class or play a quiz under a name, the name
                 you type and your answers and scores on that class&apos;s test or that quiz. If you teach a class or make a
                 quiz, its name, questions and settings.
+              </li>
+              <li>
+                <strong>Question reports:</strong> if you report a question, the reason you pick, anything you write, the
+                language and page, and which option you chose. Reports are not linked to your account.
               </li>
               <li>
                 <strong>Searches and requests:</strong> what you type into the test search (stored without who typed it) and

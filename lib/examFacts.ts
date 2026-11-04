@@ -3524,4 +3524,155 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "The FSBPT NPTE-PTA Test Content Outline (effective January 2024) and the NPTE Candidate Handbook (version 2025.02), checked November 2026",
     source: { name: "FSBPT: NPTE Content", url: "https://www.fsbpt.org/Free-Resources/NPTE-Development/NPTE-Content" },
   },
+  aswbclin: {
+    answer:
+      "The ASWB Clinical exam is the Association of Social Work Boards licensing exam that most US states and several Canadian provinces use for the clinical social work license, often called the LCSW, usually after a master's degree in social work and about two years of supervised clinical experience. Since August 3, 2026 it has 122 multiple-choice questions in two sections of 61, with four hours to finish; 12 are unscored pretest questions, so 110 count. Questions have three or four options. The Clinical outline has three content areas: Values and Ethics 36%, Assessment and Planning 32%, and Intervention and Practice 32%. The result is pass or fail, with the number of correct answers needed set for each exam form.",
+    rows: [
+      { label: "Questions", value: "122 multiple choice (110 scored, 12 pretest)" },
+      { label: "Time", value: "4 hours, two sections of 61" },
+      { label: "Options", value: "3 or 4 per question" },
+      { label: "Pass mark", value: "Pass/fail; number correct needed varies slightly by exam form" },
+      { label: "Content", value: "Values and Ethics 36%, Assessment and Planning 32%, Intervention and Practice 32%" },
+      { label: "Since", value: "August 3, 2026 (2026 outline, 3 content areas)" },
+      { label: "Where", value: "Pearson test centers, after board approval" },
+      { label: "Run by", value: "Association of Social Work Boards (ASWB)" },
+    ],
+    basedOn: "The ASWB Examination Guidebook (August 2026), Clinical content outline, checked November 2026",
+    source: { name: "ASWB: Examination Guidebook", url: "https://www.aswb.org/wp-content/uploads/2026/05/2026-Social-Work-Licensing-Exam-Guidebook-5.4.2026.pdf" },
+  },
+  phr: {
+    answer:
+      "The PHR (Professional in Human Resources) is HRCI's certification for HR professionals who implement programs and run day-to-day HR operations under US law. The exam has 115 multiple-choice and other objective questions, 90 scored and 25 unscored pretest items, in 2 hours plus 30 minutes of administration time, taken at a Pearson VUE center or online through OnVUE. Scores are scaled and 500 passes. It covers seven functional areas: business management (14%), workforce planning and talent acquisition (14%), learning and development (10%), total rewards (15%), employee engagement (17%), employee and labor relations (20%) and HR information management (10%).",
+    rows: [
+      { label: "Questions", value: "115 (90 scored, 25 pretest)" },
+      { label: "Time", value: "2 hours, plus 30 minutes administration" },
+      { label: "Passing score", value: "500 on a scaled score" },
+      { label: "Largest area", value: "Employee and labor relations, 20%" },
+      { label: "Where", value: "Pearson VUE center or online (OnVUE)" },
+      { label: "Run by", value: "HRCI" },
+    ],
+    basedOn: "HRCI PHR certification page, Exam Content Outline (2024) and Certification Policies and Procedures Handbook (October 2026), checked November 2026",
+    source: { name: "HRCI: PHR certification", url: "https://www.hrci.org/our-programs/our-certifications/phr" },
+  },
+  cisa: {
+    answer:
+      "The CISA (Certified Information Systems Auditor) exam is ISACA's certification exam for IT audit, control and assurance professionals. ISACA's content outline gives 150 questions across five job practice domains, in effect since 1 August 2024: Information System Auditing Process 18%, Governance and Management of IT 18%, Information Systems Acquisition, Development and Implementation 12%, Information Systems Operations and Business Resilience 26%, and Protection of Information Assets 26%. Guides quoting ISACA's candidate guide give 4 hours and a scaled score of 200 to 800, with 450 needed to pass. It is taken on a computer at a PSI test center or with a remote proctor.",
+    rows: [
+      { label: "Questions", value: "150 multiple choice" },
+      { label: "Time", value: "4 hours (guides quoting ISACA)" },
+      { label: "Passing score", value: "450 on a 200 to 800 scale" },
+      { label: "Largest domains", value: "Operations and resilience, protection of assets, 26% each" },
+      { label: "Outline in effect", value: "Since 1 August 2024" },
+      { label: "Certification", value: "Also needs 5 years of IS audit, control or security work" },
+      { label: "Run by", value: "ISACA, delivered by PSI" },
+    ],
+    basedOn: "ISACA CISA exam content outline and certification requirements, checked November 2026",
+    source: { name: "ISACA: CISA Exam Content Outline", url: "https://www.isaca.org/credentialing/cisa/cisa-exam-content-outline" },
+  },
+  cssgb: {
+    answer:
+      "The ASQ Certified Six Sigma Green Belt (CSSGB) exam is ASQ's certification for people who work on process improvement projects, usually supporting a Black Belt. The computer-based exam has 110 multiple-choice questions, 100 of them scored, with 4 hours 18 minutes of exam time; it is open book and in English. Its 2022 Body of Knowledge sets the scored questions per section: Overview 11, Define 20, Measure 20, Analyze 18, Improve 16 and Control 15. ASQ reports a pass as a scaled score of 550, needs three years of relevant work experience and does not require recertification.",
+    rows: [
+      { label: "Questions", value: "110 (100 scored, 10 unscored)" },
+      { label: "Time", value: "4 hours 18 minutes (4.5-hour appointment)" },
+      { label: "Passing score", value: "550 (scaled)" },
+      { label: "Format", value: "Open book, multiple choice, on-screen calculator" },
+      { label: "Largest sections", value: "Define and Measure, 20 questions each" },
+      { label: "Run by", value: "ASQ, delivered by Prometric" },
+    ],
+    basedOn: "ASQ CSSGB certification page and 2022 Body of Knowledge, checked November 2026",
+    source: { name: "ASQ: Six Sigma Green Belt Certification", url: "https://www.asq.org/cert/six-sigma-green-belt" },
+  },
+  ccs: {
+    answer:
+      "The CCS is AHIMA's Certified Coding Specialist exam, the mastery-level credential for coders in hospitals and other facilities who code inpatient, outpatient and emergency department records. It has 107 questions, 97 scored and 10 unscored pretest items, in 4 hours at a Pearson VUE test center, and you can flag questions and move between them before you submit. The passing score is a scaled 300. Its five domains are Coding Knowledge and Skills (39 to 41 percent), Coding Documentation, Provider Queries, Regulatory Compliance and Information Technologies, with medical scenarios split across inpatient, outpatient and ED cases. You must bring the 2026 ICD-10-CM, ICD-10-PCS and AMA CPT Professional code books.",
+    rows: [
+      { label: "Questions", value: "107 (97 scored, 10 pretest)" },
+      { label: "Time", value: "4 hours, flagging allowed" },
+      { label: "Pass mark", value: "Scaled score of 300" },
+      { label: "Code books", value: "ICD-10-CM, ICD-10-PCS and CPT Professional (2026, required)" },
+      { label: "Biggest domain", value: "Coding Knowledge and Skills, 39-41%" },
+      { label: "Eligibility", value: "Recommended: coding experience or a CCA, RHIT or RHIA" },
+      { label: "Where", value: "Pearson VUE test centers" },
+      { label: "Run by", value: "AHIMA" },
+    ],
+    basedOn: "AHIMA's CCS certification page, the CCS Exam Content Outline (effective May 1, 2024) and the 2026 required code book list, checked November 2026",
+    source: { name: "AHIMA: Certified Coding Specialist (CCS)", url: "https://ahima.org/certification/ccs/" },
+  },
+  rdexam: {
+    answer:
+      "The Registration Examination for Dietitians (the RD exam) is the Commission on Dietetic Registration's credentialing exam for the Registered Dietitian (RD) or Registered Dietitian Nutritionist (RDN) credential. It is computer adaptive and taken year-round at Pearson VUE test centers: each candidate answers between 125 and 145 four-option questions (100 to 120 scored plus 25 unscored pretest) in 3 hours, with no going back to earlier questions. Scores are scaled from 1 to 50, and 25 is the minimum passing score. Under the test specifications in force from January 1, 2027 the domains are Fundamentals of Dietetics Practice 23%, Community and Public Health Nutrition 22%, Human Nutrition and Medical Nutrition Therapy 40% and Food Science and Food Systems 15%; exams through December 31, 2026 follow the 2022 to 2026 outline.",
+    rows: [
+      { label: "Questions", value: "125 to 145, computer adaptive (25 unscored pretest)" },
+      { label: "Time", value: "3 hours" },
+      { label: "Pass mark", value: "Scaled score of 25 (scale 1 to 50)" },
+      { label: "Content from 2027", value: "Practice 23%, Community 22%, Nutrition and MNT 40%, Food 15%" },
+      { label: "Through 2026", value: "Principles 21%, Nutrition Care 45%, Management 21%, Foodservice 13%" },
+      { label: "Where", value: "Pearson VUE test centers, year-round" },
+      { label: "Run by", value: "Commission on Dietetic Registration (CDR)" },
+    ],
+    basedOn: "The CDR Registered Dietitian Examination Test Specifications (2022 to 2026 and 2027 to 2031) and the CDR RD and DTR Exam FAQ (2025), checked November 2026",
+    source: { name: "CDR: Registration Examination for Dietitians", url: "https://www.cdrnet.org/rdexamoverview" },
+  },
+  praxis5001: {
+    answer:
+      "Praxis Elementary Education: Multiple Subjects (test code 5001) is an ETS content knowledge test that many states require for a generalist elementary teaching license. It has 245 questions in 4 hours 35 minutes, split into four separately timed subtests: Reading and Language Arts (5002) 80 questions in 90 minutes, Mathematics (5003) 50 in 65 minutes, Social Studies (5004) 60 in 60 minutes and Science (5005) 55 in 60 minutes. Questions are selected response and numeric entry, with an on-screen scientific calculator for math and science. ETS does not set a passing score: each state sets a qualifying score for each subtest. ETS plans to replace 5001 with the Elementary Education Fundamentals tests, with 5001 targeted to retire in August 2028.",
+    rows: [
+      { label: "Run by", value: "ETS (Praxis program)" },
+      { label: "Questions", value: "245 in four subtests: 5002 RLA 80, 5003 Math 50, 5004 Social Studies 60, 5005 Science 55" },
+      { label: "Time", value: "4 hours 35 minutes (90, 65, 60 and 60 minutes, each subtest timed separately)" },
+      { label: "Content", value: "RLA: Reading 47%, Writing, Speaking and Listening 53%. Math: Numbers 40%, Algebraic Thinking 30%, Geometry and Data 30%. Social Studies: US history and government 45%, geography 30%, world history and economics 25%. Science: Earth, Life, Physical a third each" },
+      { label: "Pass mark", value: "Set by each state, for each subtest" },
+      { label: "Delivery", value: "Computer delivered, at a test center or at home online; all four subtests in one session or separately" },
+      { label: "Calculator", value: "On-screen scientific calculator on Math and Science" },
+      { label: "Status", value: "Targeted to retire August 2028, replaced by Elementary Education Fundamentals (states set the switch date)" },
+      { label: "Not modelled here", value: "Multiple-selection, grid and numeric-entry formats (written as single-answer questions)" },
+    ],
+    basedOn: "The ETS Praxis Study Companion for Elementary Education: Multiple Subjects (5001), the ETS 5001 test page and the ETS Praxis Steps FAQ, checked November 2026",
+    source: { name: "ETS Praxis: Elementary Education Multiple Subjects (5001)", url: "https://praxis.ets.org/test/5001.html" },
+  },
+  fladjuster: {
+    answer:
+      "The Florida 6-20 exam is the Florida All-Lines Adjuster exam, the licensing exam the Florida Department of Financial Services requires for the all-lines adjuster license, which covers every line of insurance except life and annuities. Pearson VUE gives it in English: 100 scored questions plus 10 unscored pretest questions in 2 hours, with 70 percent correct to pass. Under the content outline effective January 1, 2026, it covers casualty and liability insurance (28%), fire and allied lines, marine and dwelling (28%), motor vehicle physical damage and mechanical breakdown (15%), insurance concepts and adjusting practices (14%), Florida statutes and rules (11%), health (2%) and residual markets (2%). The same exam serves the nonresident 7-20 and 70-20 licenses.",
+    rows: [
+      { label: "Questions", value: "100 scored plus 10 pretest" },
+      { label: "Time", value: "2 hours" },
+      { label: "Passing score", value: "70% correct" },
+      { label: "Largest areas", value: "Casualty/liability and fire/allied lines, 28% each" },
+      { label: "Languages", value: "English" },
+      { label: "Run by", value: "Florida Department of Financial Services, delivered by Pearson VUE" },
+    ],
+    basedOn: "Florida content outlines effective January 1, 2026 and the Pearson VUE Florida candidate handbook, checked November 2026",
+    source: { name: "Pearson VUE: Florida Insurance", url: "https://www.pearsonvue.com/us/en/fl/insurance.html" },
+  },
+  llqp: {
+    answer:
+      "The Life Licence Qualification Program (LLQP) is the harmonized exam that Canada's provincial and territorial insurance regulators require before licensing a life insurance agent; CISRO oversees the curriculum. It is written as four separate modules: Life Insurance, Accident and Sickness Insurance, and Segregated Funds and Annuities, each with 35 multiple-choice questions scored out of 30, and Ethics and Professional Practice, with 25 questions scored out of 20 (Common Law, or Civil Code in Quebec). Each module includes five unscored pilot questions, allows 75 minutes, and must be passed with 60% on its own.",
+    rows: [
+      { label: "Modules", value: "Life; Accident and Sickness; Segregated Funds and Annuities; Ethics" },
+      { label: "Questions", value: "35 per module (30 scored); Ethics 25 (20 scored)" },
+      { label: "Time", value: "75 minutes per module" },
+      { label: "Pass mark", value: "60% on each module" },
+      { label: "Format", value: "Multiple choice, four options" },
+      { label: "Run by", value: "Provincial and territorial insurance regulators (AMF in Quebec)" },
+    ],
+    basedOn: "Insurance Council of British Columbia LLQP exam page and Service NL LLQP memo, checked November 2026",
+    source: { name: "Insurance Council of BC: Taking the LLQP exam", url: "https://www.insurancecouncilofbc.com/llqp/exam-information-and-registration/about-the-exam/in-person-exams/" },
+  },
+  cemap: {
+    answer:
+      "CeMAP Module 1 is the first part of the LIBF Certificate in Mortgage Advice and Practice, the qualification that meets the FCA's education standard for mortgage advisers in the UK. Since 30 September 2025 it is the Financial Services, Regulation and Ethics (FSRE) module, which replaced UK Financial Regulation (UKFR). It has two units, FRE1 (Industry, Regulation and Key Parties) and FRE2 (Skills, Principles and Ethical Behaviours). Each is a one-hour online exam with remote invigilation: 25 multiple-choice questions and 3 case studies with 5 linked questions, 40 marks in all, and 70% (28 of 40) is needed to pass each unit.",
+    rows: [
+      { label: "Units", value: "2: FRE1 and FRE2 (the FSRE module)" },
+      { label: "Questions per unit", value: "25 MCQs + 3 case studies of 5 = 40" },
+      { label: "Time", value: "1 hour per unit" },
+      { label: "Pass mark", value: "70% (28 of 40) on each unit" },
+      { label: "Higher passes", value: "Merit 80%, distinction 90%" },
+      { label: "Format", value: "Online, remote invigilation, no booking" },
+      { label: "Replaced", value: "UKFR, from 30 September 2025" },
+      { label: "Run by", value: "LIBF, part of Walbrook Institute London" },
+    ],
+    basedOn: "LIBF's FSRE qualification specification (version 7, July 2026) and CeMAP qualification specification (April 2026), checked November 2026",
+    source: { name: "Walbrook (LIBF): Financial Services, Regulation and Ethics", url: "https://www.walbrook.ac.uk/libf/professional-qualifications/financial-and-mortgage-advice/financial-services-regulation-and-ethics-fsre/" },
+  },
 };

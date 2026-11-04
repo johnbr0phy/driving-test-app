@@ -44,6 +44,10 @@ export function WeeklyActiveLearnersCard({ rollup }: { rollup: WalRollup }) {
   const max = Math.max(...rollup.weeks.map((w) => w.total), 1);
   const history = rollup.weeks.some((w) => w.guestsIncomplete);
   const since = fmtDay(rollup.guestTrackingSince);
+  const latest = rollup.weeks[rollup.weeks.length - 1];
+  const unverified = latest.unverifiedGuests ?? 0;
+  const bots = latest.botGuests ?? 0;
+  const countries = (rollup.guestCountries ?? []).slice(0, 6);
 
   return (
     <div className="bg-white dark:bg-gray-900 rounded-xl border border-gray-200/80 dark:border-gray-800/80 shadow-sm p-5 mb-6">
@@ -63,6 +67,12 @@ export function WeeklyActiveLearnersCard({ rollup }: { rollup: WalRollup }) {
             <span className="inline-block w-2 h-2 rounded-sm mr-1 align-middle" style={{ backgroundColor: GUEST }} />
             {fmt(rollup.current.guests)} guests
           </p>
+          {countries.length > 0 && (
+            <p className="mt-1 text-[11px] text-gray-500 dark:text-gray-400 tabular-nums">
+              Guests by country:{" "}
+              {countries.map((c) => `${c.country === "??" ? "unknown" : c.country} ${fmt(c.guests)}`).join(" · ")}
+            </p>
+          )}
         </div>
         <p className="text-[11px] text-gray-500 dark:text-gray-400">
           Updated {new Date(rollup.updatedAt).toLocaleString("en-US", { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" })}
@@ -98,6 +108,20 @@ export function WeeklyActiveLearnersCard({ rollup }: { rollup: WalRollup }) {
           </>
         )}{" "}
         From {since}, a learner counts on a day an answer is accepted. A guest who creates an account counts once.
+        {rollup.guestMetaSince && (
+          <>
+            {" "}
+            Each guest&apos;s browser is re-checked against the bot rules every night
+            {bots > 0 ? ` (${fmt(bots)} dropped this week)` : ""}.
+            {unverified > 0 && (
+              <>
+                {" "}
+                {fmt(unverified)} of this week&apos;s guests answered only before {fmtDay(rollup.guestMetaSince)}, when no
+                browser was recorded, so they could not be checked.
+              </>
+            )}
+          </>
+        )}
       </p>
     </div>
   );

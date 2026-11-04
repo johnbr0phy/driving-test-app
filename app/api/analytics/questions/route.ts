@@ -7,6 +7,7 @@ import { isInternalEmail } from '@/lib/internal';
 import { grantAnswers, requestIp } from '@/lib/server/answerRateLimit';
 import { BROWSER_ID_RE, recordAnswerActivity } from '@/lib/server/weeklyActiveLearners';
 import { isBotRequest } from '@/lib/botUserAgent';
+import { visitorCountry } from '@/lib/server/visitorCountry';
 
 // Largest batch a client can legitimately accumulate: a full test completion
 // (171 questions on the ACT) plus a burst of training answers.
@@ -94,7 +95,12 @@ export async function POST(request: NextRequest) {
     }
     if (!internal && (uid || browserId)) {
       try {
-        learner = await recordAnswerActivity(db, { uid, browserId });
+        learner = await recordAnswerActivity(db, {
+          uid,
+          browserId,
+          userAgent: request.headers.get('user-agent'),
+          country: visitorCountry(request),
+        });
       } catch (err) {
         console.error('Error recording learner activity:', err);
       }

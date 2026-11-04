@@ -1,5 +1,6 @@
 import { FieldPath, FieldValue, type Firestore } from 'firebase-admin/firestore';
 import { getInternalUids } from '@/lib/server/internalUsers';
+import { isBotUserAgent } from '@/lib/botUserAgent';
 
 // Weekly Active Learners (WAL).
 //
@@ -17,6 +18,12 @@ import { getInternalUids } from '@/lib/server/internalUsers';
 // A browser id linked to an account (written on signup, and again on a
 // signed-in answer) counts as that account, so the person counts once.
 //
+// Each guest answer-day also stores the request's user agent and country
+// (guestMeta). The rebuild re-checks that user agent against the current bot
+// rules, so a guest flagged later drops out. Guests recorded before guestMeta
+// existed (GUEST_META_SINCE) cannot be re-checked and are counted as
+// unverified on the card.
+//
 // /admin reads analytics/weeklyActiveLearners only. This module's rebuild
 // scans users. The page does not.
 
@@ -31,6 +38,11 @@ export const WAL_WINDOW_DAYS = 7;
 
 /** First UTC day a logged-out answer stores a browser id. */
 export const GUEST_TRACKING_SINCE = '2026-10-21';
+
+/** First UTC day every guest answer-day carries a user agent (bot filter live on the answer route since Nov 3). */
+export const GUEST_META_SINCE = '2026-11-04';
+
+const UA_MAX = 400;
 
 export const LEARNER_DAYS_COLLECTION = 'learnerDays';
 export const LEARNER_LINKS_COLLECTION = 'learnerLinks';
@@ -47,6 +59,15 @@ export interface WalWeek extends WalCounts {
   endDate: string;
   /** The window includes a day before guest browser ids were stored. */
   guestsIncomplete: boolean;
+  /** Guests in `guests` with no stored user agent in this window (recorded before GUEST_META_SINCE). */
+  unverifiedGuests?: number;
+  /** Guests dropped because their stored user agent reads as a bot. */
+  botGuests?: number;
+}
+
+export interface GuestMeta {
+  ua?: string;
+  c?: string;
 }
 
 export interface WalRollup {
@@ -58,6 +79,9 @@ export interface WalRollup {
   /** current.total - previous.total */
   change: number;
   weeks: WalWeek[];
+  guestMetaSince?: string;
+  /** Current week's guests by ISO country ('??' when unknown), largest first. */
+  guestCountries?: { country: string; guests: number }[];
 }
 
 export interface WalSource {
@@ -65,7 +89,10 @@ export interface WalSource {
   /** Non-internal uid -> activeDates. Days on or after guest tracking are ignored. */
   activeDatesByUser: ReadonlyMap<string, readonly string[]>;
   /** UTC day -> ids recorded when an answer batch was accepted. */
-  answerDays: ReadonlyMap<string, { users: readonly string[]; guests: readonly string[] }>;
+  answerDays: ReadonlyMap<
+    string,
+    { users: readonly string[]; guests: readonly string[]; guestMeta?: ReadonlyMap<string, GuestMeta> }
+  >;
   /** browser id -> uid. Written when a guest creates an account or answers while signed in. */
   links: ReadonlyMap<string, string>;
   internalUids: ReadonlySet<string>;
@@ -113,9 +140,13 @@ function activeUsersByDay(source: WalSource): Map<string, Set<string>> {
 export function buildWalRollup(source: WalSource): WalRollup {
   const asOfDate = utcDayKey(source.asOfMs);
   const history = activeUsersByDay(source);
+  let currentGuestCountry = new Map<string, string>();
   const weeks: WalWeek[] = walWindowBounds(asOfDate).map(({ startDate, endDate }) => {
     const signedIn = new Set<string>();
     const guestIds = new Set<string>();
+    // Every user agent and country seen for a guest in this window.
+    const guestUas = new Map<string, string[]>();
+    const guestCountry = new Map<string, string>();
     for (const day of eachDay(startDate, endDate)) {
       if (day < GUEST_TRACKING_SINCE) {
         const ids = history.get(day);
@@ -128,18 +159,36 @@ export function buildWalRollup(source: WalSource): WalRollup {
         if (!source.internalUids.has(uid)) signedIn.add(uid);
       }
       for (const gid of rec.guests) {
-        if (BROWSER_ID_RE.test(gid)) guestIds.add(gid);
+        if (!BROWSER_ID_RE.test(gid)) continue;
+        guestIds.add(gid);
+        const meta = rec.guestMeta?.get(gid);
+        if (meta?.ua) {
+          const list = guestUas.get(gid) ?? [];
+          list.push(meta.ua);
+          guestUas.set(gid, list);
+        }
+        if (meta?.c && !guestCountry.has(gid)) guestCountry.set(gid, meta.c);
       }
     }
     const guests = new Set<string>();
+    let unverified = 0;
+    let bots = 0;
     for (const gid of guestIds) {
       const uid = source.links.get(gid);
       if (uid) {
         if (!source.internalUids.has(uid)) signedIn.add(uid);
         continue;
       }
+      const uas = guestUas.get(gid);
+      if (uas && uas.some((ua) => isBotUserAgent(ua, source.asOfMs))) {
+        bots++;
+        continue;
+      }
+      if (!uas) unverified++;
       guests.add(gid);
     }
+    currentGuestCountry = new Map([...guestCountry].filter(([gid]) => guests.has(gid)));
+    for (const gid of guests) if (!currentGuestCountry.has(gid)) currentGuestCountry.set(gid, '??');
     return {
       startDate,
       endDate,
@@ -147,18 +196,27 @@ export function buildWalRollup(source: WalSource): WalRollup {
       guests: guests.size,
       total: signedIn.size + guests.size,
       guestsIncomplete: startDate < GUEST_TRACKING_SINCE,
+      unverifiedGuests: unverified,
+      botGuests: bots,
     };
   });
   const current = weeks[weeks.length - 1];
   const previous = weeks[weeks.length - 2];
+  const byCountry = new Map<string, number>();
+  for (const c of currentGuestCountry.values()) byCountry.set(c, (byCountry.get(c) ?? 0) + 1);
+  const guestCountries = [...byCountry]
+    .map(([country, guests]) => ({ country, guests }))
+    .sort((a, b) => b.guests - a.guests || a.country.localeCompare(b.country));
   return {
     updatedAt: new Date(source.asOfMs).toISOString(),
     asOfDate,
     guestTrackingSince: GUEST_TRACKING_SINCE,
+    guestMetaSince: GUEST_META_SINCE,
     current: { total: current.total, signedIn: current.signedIn, guests: current.guests },
     previous: { total: previous.total, signedIn: previous.signedIn, guests: previous.guests },
     change: current.total - previous.total,
     weeks,
+    guestCountries,
   };
 }
 
@@ -204,7 +262,7 @@ function stringList(value: unknown): string[] {
  */
 export async function recordAnswerActivity(
   db: Firestore,
-  input: { uid: string | null; browserId: string | null; now?: Date },
+  input: { uid: string | null; browserId: string | null; userAgent?: string | null; country?: string | null; now?: Date },
 ): Promise<boolean> {
   const browserId = input.browserId && BROWSER_ID_RE.test(input.browserId) ? input.browserId : null;
   const uid = input.uid;
@@ -218,7 +276,14 @@ export async function recordAnswerActivity(
       batch.set(db.collection(LEARNER_LINKS_COLLECTION).doc(browserId), { uid }, { merge: true });
     }
   } else {
-    batch.set(dayRef, { guests: FieldValue.arrayUnion(browserId) }, { merge: true });
+    const meta: GuestMeta = {};
+    if (input.userAgent) meta.ua = input.userAgent.slice(0, UA_MAX);
+    if (input.country && /^[A-Z]{2}$/.test(input.country)) meta.c = input.country;
+    batch.set(
+      dayRef,
+      { guests: FieldValue.arrayUnion(browserId), guestMeta: { [browserId!]: meta } },
+      { merge: true },
+    );
   }
   await batch.commit();
   return true;
@@ -227,6 +292,20 @@ export async function recordAnswerActivity(
 /** Link a guest browser to the account that just signed in. */
 export function learnerLinkRef(db: Firestore, browserId: string) {
   return db.collection(LEARNER_LINKS_COLLECTION).doc(browserId);
+}
+
+function guestMetaMap(value: unknown): Map<string, GuestMeta> {
+  const map = new Map<string, GuestMeta>();
+  if (!value || typeof value !== 'object') return map;
+  for (const [id, raw] of Object.entries(value as Record<string, unknown>)) {
+    if (!raw || typeof raw !== 'object') continue;
+    const r = raw as Record<string, unknown>;
+    map.set(id, {
+      ua: typeof r.ua === 'string' ? r.ua : undefined,
+      c: typeof r.c === 'string' ? r.c : undefined,
+    });
+  }
+  return map;
 }
 
 const PAGE = 500;
@@ -257,7 +336,7 @@ export async function rebuildWeeklyActiveLearners(db: Firestore, now = new Date(
     cursor = page.docs[page.docs.length - 1]!.id;
   }
 
-  const answerDays = new Map<string, { users: string[]; guests: string[] }>();
+  const answerDays = new Map<string, { users: string[]; guests: string[]; guestMeta: Map<string, GuestMeta> }>();
   const refs = [];
   for (let day = earliest; day <= asOfDate; day = shiftDay(day, 1)) {
     if (day < GUEST_TRACKING_SINCE) continue;
@@ -268,7 +347,11 @@ export async function rebuildWeeklyActiveLearners(db: Firestore, now = new Date(
     for (const snap of snaps) {
       if (!snap.exists) continue;
       const data = snap.data() ?? {};
-      answerDays.set(snap.id, { users: stringList(data.users), guests: stringList(data.guests) });
+      answerDays.set(snap.id, {
+        users: stringList(data.users),
+        guests: stringList(data.guests),
+        guestMeta: guestMetaMap(data.guestMeta),
+      });
     }
   }
 

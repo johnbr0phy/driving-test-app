@@ -12,7 +12,7 @@ import { getStripe } from '@/lib/stripe';
  * the hour, so it is ready by 7am Eastern in summer and 6am in winter.
  * Writes once per Eastern day; ?force=1 rewrites.
  */
-export const maxDuration = 60;
+export const maxDuration = 300;
 
 export async function GET(request: NextRequest) {
   if (!verifyCronSecret(request)) {

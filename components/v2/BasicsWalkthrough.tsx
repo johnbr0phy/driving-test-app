@@ -4,12 +4,20 @@ import { AccessibleOverlay } from "@/components/AccessibleOverlay";
 
 import { ReactNode, useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 import { BookOpen, X } from "lucide-react";
 import { ExamV2Config } from "@/lib/v2/types";
 import { BasicsSkill, WalkthroughStep, basicsOptionOrder } from "@/lib/v2/basics";
 import { DataTable, Passage } from "./BasicsRuleCard";
 import { getTigerAsset } from "@/lib/tigerAssets";
 import { useSound } from "@/hooks/useSound";
+import { trackBasics } from "@/lib/v2/basicsTracking";
+
+// The drag boards carry their own library, so they load only on a step that has one.
+const BasicsPlay = dynamic(() => import("./play/BasicsPlay"), {
+  ssr: false,
+  loading: () => <div className="h-[150px] w-full animate-pulse rounded-xl bg-gray-100 dark:bg-gray-800" />,
+});
 
 /**
  * The click-through tutorial for one Basics skill: the board (an
@@ -20,9 +28,11 @@ import { useSound } from "@/hooks/useSound";
  * column under the board. A wrong tap shows a hint and lets them tap
  * again, with no score kept. No sound, no clock: it goes at their pace.
  */
-export function BasicsWalkthrough({ exam, skill, doneLabel, onDone, onClose, onRead }: {
+export function BasicsWalkthrough({ exam, skill, drillKey, doneLabel, onDone, onClose, onRead }: {
   exam: ExamV2Config;
   skill: BasicsSkill;
+  /** The drill the skill was opened from, for counting drag-board use. */
+  drillKey?: string;
   /** The button on the last step: "Got it, try 2 questions", "Try it again"... */
   doneLabel: string;
   onDone: () => void;
@@ -36,6 +46,7 @@ export function BasicsWalkthrough({ exam, skill, doneLabel, onDone, onClose, onR
   const [index, setIndex] = useState(0);
   const [picked, setPicked] = useState<number | null>(null);
   const [wrong, setWrong] = useState<number[]>([]);
+  const [played, setPlayed] = useState(false);
   const cardRef = useRef<HTMLDivElement | null>(null);
   const stepRef = useRef<HTMLParagraphElement | null>(null);
   const nextRef = useRef<HTMLButtonElement | null>(null);
@@ -44,6 +55,7 @@ export function BasicsWalkthrough({ exam, skill, doneLabel, onDone, onClose, onR
     setIndex(0);
     setPicked(null);
     setWrong([]);
+    setPlayed(false);
   }, [skill.id]);
 
   // The control that had focus goes away (Next on a new ask step, the options
@@ -62,7 +74,8 @@ export function BasicsWalkthrough({ exam, skill, doneLabel, onDone, onClose, onR
 
   const step = steps[index];
   const isAsk = !!step.ask;
-  const solved = !isAsk || (picked !== null && picked === step.answer);
+  const isPlay = !!step.play;
+  const solved = isPlay ? played : !isAsk || (picked !== null && picked === step.answer);
   const last = index === steps.length - 1;
   const lastLineAt = steps.reduce((at, s, i) => (s.line ? i : at), -1);
   const doneLines = steps.slice(0, index + (solved ? 1 : 0)).map((s, i) => ({ line: s.line, i })).filter((x): x is { line: string; i: number } => !!x.line);
@@ -89,9 +102,10 @@ export function BasicsWalkthrough({ exam, skill, doneLabel, onDone, onClose, onR
     setIndex(index + 1);
     setPicked(null);
     setWrong([]);
+    setPlayed(false);
   };
 
-  const face = !isAsk ? 3 : solved ? 1 : wrong.length ? 5 : 4;
+  const face = isPlay ? (solved ? 1 : 4) : !isAsk ? 3 : solved ? 1 : wrong.length ? 5 : 4;
 
   return (
     <AccessibleOverlay onClose={onClose} className="fixed inset-0 z-[95] flex flex-col bg-gray-50 text-gray-900 dark:bg-gray-950 dark:text-gray-50" aria-label={`${skill.name} walkthrough`}>
@@ -166,7 +180,22 @@ export function BasicsWalkthrough({ exam, skill, doneLabel, onDone, onClose, onR
                   </div>
                 </>
               ) : (
-                <p ref={stepRef} tabIndex={-1} className="text-[19px] leading-snug outline-none">{step.say}</p>
+                <>
+                  <p ref={stepRef} tabIndex={-1} className="text-[19px] leading-snug outline-none">{step.say}</p>
+                  {isPlay && (
+                    <div className="mt-3">
+                      <BasicsPlay
+                        play={step.play!}
+                        onStart={() => drillKey && trackBasics("play_start", exam.id, drillKey, { skill: skill.id })}
+                        onSolved={() => {
+                          if (!played) playCorrectSound();
+                          setPlayed(true);
+                          if (drillKey) trackBasics("play_done", exam.id, drillKey, { skill: skill.id });
+                        }}
+                      />
+                    </div>
+                  )}
+                </>
               )}
             </Bubble>
           </div>
@@ -181,7 +210,7 @@ export function BasicsWalkthrough({ exam, skill, doneLabel, onDone, onClose, onR
             </button>
           ) : (
             <>
-              <div className="flex-1 text-center text-sm text-gray-500 dark:text-gray-400">Tap an answer</div>
+              <div className="flex-1 text-center text-sm text-gray-500 dark:text-gray-400">{isPlay ? "Solve it on the board" : "Tap an answer"}</div>
               <button type="button" onClick={onDone} className="v2-tap px-3 text-sm font-semibold text-gray-500 dark:text-gray-400">
                 Skip
               </button>

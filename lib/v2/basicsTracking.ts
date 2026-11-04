@@ -14,11 +14,13 @@ import { isInternalBrowser } from "@/lib/internal";
 //   exam_start      first exam-level answer in a drill that has Basics;
 //                   basicsFirst = a skill of that drill was learned before it
 //   drill_mastered  every exam-level question of that drill mastered
+//   play_start      first move on a walkthrough's drag board (components/v2/play)
+//   play_done       ...and solved it
 //
 // Counted since BASICS_TRACKING_SINCE (lib/server/v2Progress). Internal
 // browsers never send.
 
-export type BasicsEvent = "skill_open" | "skill_learned" | "brushup_shown" | "brushup" | "exam_start" | "drill_mastered";
+export type BasicsEvent = "skill_open" | "skill_learned" | "brushup_shown" | "brushup" | "exam_start" | "drill_mastered" | "play_start" | "play_done";
 
 const FLAG_PREFIX = "tigertest-basics:";
 

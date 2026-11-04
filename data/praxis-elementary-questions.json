@@ -1089,7 +1089,7 @@
     "optionD": "52",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Exponent first: 2^2 = 4. Then multiply: 3 x 4 = 12. Then work left to right: 18 - 12 + 4 = 10. Working left to right from the start gives 64."
+    "explanation": "Exponent first: 2^2 = 4. Then multiply: 3 x 4 = 12. Then work left to right: 18 - 12 + 4 = 10. Subtracting before multiplying, (18 - 3) x 4 + 4, gives 64."
   },
   {
     "type": "PX5001",

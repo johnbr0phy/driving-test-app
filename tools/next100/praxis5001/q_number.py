@@ -45,7 +45,7 @@ Q = [
  "With the same numerator of 1, a smaller denominator means larger pieces of the same whole, so 1/5 is greatest."),
 ("What is the value of 18 - 3 x 2^2 + 4?",
  "10", ["64", "2", "52"],
- "Exponent first: 2^2 = 4. Then multiply: 3 x 4 = 12. Then work left to right: 18 - 12 + 4 = 10. Working left to right from the start gives 64."),
+ "Exponent first: 2^2 = 4. Then multiply: 3 x 4 = 12. Then work left to right: 18 - 12 + 4 = 10. Subtracting before multiplying, (18 - 3) x 4 + 4, gives 64."),
 ("Which property is shown by 9 x (6 + 2) = 9 x 6 + 9 x 2?",
  "Distributive property", ["Commutative property", "Associative property", "Identity property"],
  "The factor 9 is distributed over each addend inside the parentheses. The commutative property only changes order, as in 6 + 2 = 2 + 6."),

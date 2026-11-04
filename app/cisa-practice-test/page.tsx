@@ -120,7 +120,7 @@ export default function CisaLandingPage() {
           <ExamLandingHero
             dashboardHref="/cisa/dashboard"
             shortName="CISA"
-            subtitle="200 original questions on ISACA&apos;s five CISA domains: the audit process, IT governance, acquisition and development, operations and resilience, and protecting information assets. Four 50-question tests weighted like the real exam. Tuned for mobile. No account needed."
+            subtitle="200 original questions on ISACA's five CISA domains: the audit process, IT governance, acquisition and development, operations and resilience, and protecting information assets. Four 50-question tests weighted like the real exam. Tuned for mobile. No account needed."
             shots={{ mobile: "/landing/cisa-mobile.png", desktop: "/landing/cisa-desktop.png" }}
           />
         </div>
@@ -236,7 +236,7 @@ export default function CisaLandingPage() {
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Practise at the real pace</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Practice at the real pace</h3>
               <p>
                 The real exam gives you about a minute and a half per question for 4 hours. Take each 50-question test here in about 80 minutes, review every explanation, and retake the domains you miss until you score 70% or better on every test.
               </p>

@@ -8,7 +8,7 @@ import { getStripe } from '@/lib/stripe';
 
 // "Write a fresh one" on the /admin Today tab: today's update on demand,
 // replacing the morning's (lib/server/dailyBrief).
-export const maxDuration = 60;
+export const maxDuration = 300;
 
 export async function POST(request: NextRequest) {
   const authHeader = request.headers.get('authorization');

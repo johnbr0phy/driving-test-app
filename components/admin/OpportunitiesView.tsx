@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import { Sparkles, ChevronDown, CheckCircle2, AlertTriangle, XCircle, DollarSign, TrendingUp, Repeat, Wrench } from "lucide-react";
 import type { OpportunitiesPayload } from "@/lib/server/opportunities";
 import type { DailyBrief } from "@/lib/server/dailyBrief";
+import { MENTIONS_SINCE } from "@/lib/webMentionsSince";
 import { CARD, ROW, STICKY_COL, TabHeader, TableScroll, fmtUpdated } from "@/components/admin/AdminTabParts";
 
 // The Opportunities tab body on /admin, given the API payload. Kept apart
@@ -184,6 +185,36 @@ function RateCell({ value }: { value: number | null }) {
   );
 }
 
+/** Pages on the web that talk about Tigertest (lib/server/webMentions). */
+function Mentions({ brief }: { brief: DailyBrief }) {
+  // Updates written before the search existed have no list.
+  if (!brief.mentions && !brief.mentionsError) return null;
+  const mentions = brief.mentions ?? [];
+  const since = new Date(`${MENTIONS_SINCE}T12:00:00Z`).toLocaleDateString("en-US", { month: "short", day: "numeric" });
+  return (
+    <div className="mt-4 pt-3 border-t border-gray-200 dark:border-gray-800">
+      <p className="text-xs font-medium text-gray-500 dark:text-gray-400 mb-2">People talking about Tigertest on the web, since {since}</p>
+      {mentions.length > 0 ? (
+        <ul className="space-y-2">
+          {mentions.map((m) => (
+            <li key={m.url} className="text-sm leading-snug">
+              <a href={m.url} target="_blank" rel="noopener noreferrer" className="font-medium text-gray-900 dark:text-gray-50 underline underline-offset-2 break-words">
+                {m.site}
+              </a>
+              {m.isNew && <span className="ml-1.5 rounded bg-green-50 dark:bg-green-950 px-1.5 py-0.5 text-[10px] font-semibold text-green-700 dark:text-green-300">NEW</span>}
+              {m.date && <span className="ml-1.5 text-xs text-gray-500 dark:text-gray-400">{m.date}</span>}
+              <span className="block text-gray-600 dark:text-gray-300">{m.summary}</span>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p className="text-sm text-gray-600 dark:text-gray-300">Nothing found yet.</p>
+      )}
+      {brief.mentionsError && <p className="mt-2 text-xs text-red-600 dark:text-red-400">Web search failed today: {brief.mentionsError}</p>}
+    </div>
+  );
+}
+
 /** Claude's daily update (lib/server/dailyBrief), or how to get the first one. */
 function BriefCard({ brief, onWrite, writing, error }: {
   brief: DailyBrief | null;
@@ -207,7 +238,7 @@ function BriefCard({ brief, onWrite, writing, error }: {
             disabled={writing}
             className="text-xs text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-100 underline underline-offset-2 disabled:no-underline"
           >
-            {writing ? "Writing, about 20 seconds..." : brief ? "Write a fresh one" : "Write one now"}
+            {writing ? "Writing and searching the web, about a minute..." : brief ? "Write a fresh one" : "Write one now"}
           </button>
         )}
       </div>
@@ -222,6 +253,7 @@ function BriefCard({ brief, onWrite, writing, error }: {
               </li>
             ))}
           </ul>
+          <Mentions brief={brief} />
         </>
       ) : (
         <p className="text-sm text-gray-600 dark:text-gray-300">

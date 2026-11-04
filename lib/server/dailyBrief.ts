@@ -6,6 +6,7 @@ import { getInternalUids } from '@/lib/server/internalUsers';
 import { TEST_CATALOG } from '@/lib/testCatalog';
 import { REGIONS } from '@/lib/region';
 import FRESHNESS from '@/lib/examFreshness.json';
+import { mergeMentions, searchMentions, type WebMention } from '@/lib/server/webMentions';
 
 // The daily update at the top of the /admin Today tab: Claude reads the
 // page's numbers (plus the previous update's numbers, to say what changed)
@@ -23,6 +24,10 @@ export interface DailyBrief {
   model: string;
   // The numbers the update was written from, so tomorrow's can compare.
   numbers: BriefNumbers;
+  // Pages on the web that talk about Tigertest (lib/server/webMentions),
+  // kept across updates; missing when the search failed or predates it.
+  mentions?: WebMention[];
+  mentionsError?: string;
 }
 
 /** Today's date in Eastern time, the day a brief belongs to. */
@@ -30,7 +35,11 @@ export function briefDate(now = new Date()): string {
   return new Intl.DateTimeFormat('en-CA', { timeZone: 'America/New_York' }).format(now);
 }
 
-type BriefNumbers = ReturnType<typeof briefNumbers> & { questionQuality?: Awaited<ReturnType<typeof questionQualityNumbers>> };
+type BriefNumbers = ReturnType<typeof briefNumbers> & {
+  questionQuality?: Awaited<ReturnType<typeof questionQualityNumbers>>;
+  // New pages found on the web since the previous update.
+  newWebMentions?: Omit<WebMention, 'isNew'>[];
+};
 
 /**
  * Question quality (the /admin Questions tab): open student reports, the
@@ -215,6 +224,8 @@ What to cover, most important first. A milestone beats everything: a first ever 
 
 The "Searches:" line is about tests to build next. homepageSearches lists what people typed on the homepage search since the previous update that found no test (foundNothing) or found tests but opened none. For each, work out the real exam the person meant (expand acronyms, fix typos, use their country) and check it against the list of tests we already have. If we have it, it is a search fix: say "add <query> as a name for <test>". If we do not, and it is a real exam many people take with a written multiple-choice part, suggest building it, best first, with how many times it was typed. Ignore gibberish, names and stray letters. Say when a query is ambiguous rather than guessing. Leave the line out when there is nothing worth acting on.
 
+newWebMentions lists pages found on the web since the previous update where people talk about Tigertest (a Reddit thread, a forum post, a school page, an article). Real people recommending or complaining about Tigertest is news: give it a bullet naming the site and what they said, and make it the headline when it is a first or clearly matters (a big thread, a school, a complaint about a wrong answer). Do not list every link; the page shows them under the update.
+
 Rules: use only the numbers given, never estimate or invent one. Round to whole numbers and say "$120", "about 1,400". Plain everyday words, no jargon like "cohort", "conversion rate" or "funnel". No em-dashes, no bold, no headings, nothing before the headline or after the last bullet. If the data is too thin to say something, say less rather than padding.`;
 
 /** Asks Claude for today's update. Throws when the key is missing or the model declines. */
@@ -270,6 +281,14 @@ export async function latestBrief(db: Firestore, before?: string): Promise<Daily
 export async function createBrief(db: Firestore, payload: OpportunitiesPayload): Promise<DailyBrief> {
   const date = briefDate();
   const previous = await latestBrief(db, date);
+  // Runs while the numbers are gathered; it takes the longest.
+  const mentionsSearch = searchMentions(BRIEF_MODEL, date).then(
+    (found) => ({ found, error: null as string | null }),
+    (error) => {
+      console.error('[daily-brief] web mentions unavailable', error);
+      return { found: null, error: error instanceof Error ? error.message : 'Web search failed' };
+    },
+  );
   let schools: ReturnType<typeof schoolNumbers> | null = null;
   try {
     schools = schoolNumbers(await buildTeachAdmin(db, await getInternalUids()), previous?.generatedAt ?? null);
@@ -288,8 +307,17 @@ export async function createBrief(db: Firestore, payload: OpportunitiesPayload):
   } catch (error) {
     console.error('[daily-brief] question quality unavailable', error);
   }
+  const search = await mentionsSearch;
+  // New means not in the previous day's update; a rewrite today keeps this morning's finds.
+  const earlierToday = ((await db.doc(`dailyBriefs/${date}`).get()).data() as DailyBrief | undefined)?.mentions ?? [];
+  const found = [...(search.found ?? []), ...earlierToday.map(({ isNew: _n, ...m }) => m)];
+  const mentions = mergeMentions(found, previous?.mentions ?? []);
+  numbers.newWebMentions = mentions.filter((m) => m.isNew).map(({ isNew: _n, ...m }) => m);
   const { headline, bullets } = await writeBrief(numbers, previous);
-  const brief: DailyBrief = { date, headline, bullets, generatedAt: new Date().toISOString(), model: BRIEF_MODEL, numbers };
+  const brief: DailyBrief = {
+    date, headline, bullets, generatedAt: new Date().toISOString(), model: BRIEF_MODEL, numbers, mentions,
+    ...(search.error ? { mentionsError: search.error } : {}),
+  };
   await db.doc(`dailyBriefs/${date}`).set(brief);
   return brief;
 }

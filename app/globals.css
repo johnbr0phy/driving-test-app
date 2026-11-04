@@ -3309,6 +3309,146 @@
     --brand-gradient-to: 120 25% 96%;
   }
 
+  /* ASWB Clinical (LCSW licensing) theme */
+  [data-theme="aswbclin"] {
+    --brand: 300 20% 34%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 300 30% 96%;
+    --brand-hover: 300 20% 29%;
+    --brand-dark: 300 20% 26%;
+    --brand-darker: 300 18% 18%;
+    --brand-muted: 300 14% 70%;
+    --brand-border: 300 15% 80%;
+    --brand-border-light: 300 14% 89%;
+    --brand-gradient-to: 280 25% 96%;
+  }
+
+  /* HRCI PHR theme */
+  [data-theme="phr"] {
+    --brand: 200 45% 28%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 200 45% 96%;
+    --brand-hover: 200 45% 24%;
+    --brand-dark: 200 45% 20%;
+    --brand-darker: 200 40% 14%;
+    --brand-muted: 200 25% 70%;
+    --brand-border: 200 25% 80%;
+    --brand-border-light: 200 22% 89%;
+    --brand-gradient-to: 160 40% 95%;
+  }
+
+  /* ISACA CISA theme */
+  [data-theme="cisa"] {
+    --brand: 250 20% 32%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 250 20% 96%;
+    --brand-hover: 250 20% 27%;
+    --brand-dark: 250 20% 22%;
+    --brand-darker: 250 18% 15%;
+    --brand-muted: 250 12% 70%;
+    --brand-border: 250 12% 80%;
+    --brand-border-light: 250 11% 89%;
+    --brand-gradient-to: 210 40% 95%;
+  }
+
+  /* ASQ Six Sigma Green Belt theme */
+  [data-theme="cssgb"] {
+    --brand: 14 50% 26%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 14 50% 96%;
+    --brand-hover: 14 50% 21%;
+    --brand-dark: 14 50% 18%;
+    --brand-darker: 14 45% 12%;
+    --brand-muted: 14 30% 70%;
+    --brand-border: 14 30% 80%;
+    --brand-border-light: 14 28% 89%;
+    --brand-gradient-to: 35 60% 95%;
+  }
+
+  /* CCS (AHIMA Certified Coding Specialist) theme */
+  [data-theme="ccs"] {
+    --brand: 193 30% 26%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 193 35% 96%;
+    --brand-hover: 193 30% 22%;
+    --brand-dark: 193 30% 20%;
+    --brand-darker: 193 30% 14%;
+    --brand-muted: 193 18% 70%;
+    --brand-border: 193 22% 80%;
+    --brand-border-light: 193 22% 89%;
+    --brand-gradient-to: 175 35% 96%;
+  }
+
+  /* RD exam (CDR Registration Examination for Dietitians) theme */
+  [data-theme="rdexam"] {
+    --brand: 91 20% 26%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 91 30% 96%;
+    --brand-hover: 91 20% 21%;
+    --brand-dark: 91 20% 19%;
+    --brand-darker: 91 20% 13%;
+    --brand-muted: 91 12% 70%;
+    --brand-border: 91 15% 80%;
+    --brand-border-light: 91 15% 89%;
+    --brand-gradient-to: 106 30% 96%;
+  }
+
+  /* Praxis Elementary Education: Multiple Subjects (5001) theme: dark ochre brown */
+  [data-theme="praxis5001"] {
+    --brand: 39 40% 26%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 39 40% 95%;
+    --brand-hover: 39 40% 22%;
+    --brand-dark: 39 40% 18%;
+    --brand-darker: 39 40% 10%;
+    --brand-muted: 39 25% 70%;
+    --brand-border: 39 28% 80%;
+    --brand-border-light: 39 28% 89%;
+    --brand-gradient-to: 51 35% 95%;
+  }
+
+  /* Florida 6-20 all-lines adjuster theme */
+  [data-theme="fladjuster"] {
+    --brand: 320 30% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 320 30% 96%;
+    --brand-hover: 320 30% 25%;
+    --brand-dark: 320 30% 22%;
+    --brand-darker: 320 26% 15%;
+    --brand-muted: 320 18% 70%;
+    --brand-border: 320 18% 80%;
+    --brand-border-light: 320 16% 89%;
+    --brand-gradient-to: 195 60% 95%;
+  }
+
+  /* LLQP (Canada life licence) theme */
+  [data-theme="llqp"] {
+    --brand: 5 45% 28%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 5 45% 96%;
+    --brand-hover: 5 45% 23%;
+    --brand-dark: 5 45% 21%;
+    --brand-darker: 5 40% 14%;
+    --brand-muted: 5 20% 70%;
+    --brand-border: 5 20% 80%;
+    --brand-border-light: 5 18% 89%;
+    --brand-gradient-to: 0 70% 96%;
+  }
+
+  /* CeMAP Module 1 (LIBF FSRE) theme (UK) */
+  [data-theme="cemap"] {
+    --brand: 203 30% 26%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 203 35% 96%;
+    --brand-hover: 203 30% 21%;
+    --brand-dark: 203 30% 19%;
+    --brand-darker: 203 28% 12%;
+    --brand-muted: 203 15% 70%;
+    --brand-border: 203 15% 80%;
+    --brand-border-light: 203 14% 89%;
+    --brand-gradient-to: 45 60% 95%;
+  }
+
   /* Dark mode. Tokens follow Tailwind's gray scale so the dark: variants
      written in components (gray-950 page, gray-900 card, gray-800 border)
      and the shadcn primitives read as one surface system. */
@@ -6126,6 +6266,126 @@
     --brand-muted: 100 20% 45%;
     --brand-dark: 100 30% 65%;
     --brand-darker: 100 30% 78%;
+  }
+
+  .dark [data-theme="aswbclin"] {
+    --brand: 300 20% 49%;
+    --brand-hover: 300 20% 41%;
+    --brand-light: 300 30% 13%;
+    --brand-gradient-to: 280 25% 11%;
+    --brand-border-light: 300 14% 24%;
+    --brand-border: 300 15% 34%;
+    --brand-muted: 300 14% 45%;
+    --brand-dark: 300 20% 65%;
+    --brand-darker: 300 18% 78%;
+  }
+
+  .dark [data-theme="phr"] {
+    --brand: 200 45% 42.3%;
+    --brand-hover: 200 45% 34.3%;
+    --brand-light: 200 45% 13%;
+    --brand-gradient-to: 160 40% 11%;
+    --brand-border-light: 200 22% 24%;
+    --brand-border: 200 25% 34%;
+    --brand-muted: 200 25% 45%;
+    --brand-dark: 200 45% 65%;
+    --brand-darker: 200 40% 78%;
+  }
+
+  .dark [data-theme="cisa"] {
+    --brand: 250 20% 50%;
+    --brand-hover: 250 20% 42%;
+    --brand-light: 250 20% 13%;
+    --brand-gradient-to: 210 40% 11%;
+    --brand-border-light: 250 11% 24%;
+    --brand-border: 250 12% 34%;
+    --brand-muted: 250 12% 45%;
+    --brand-dark: 250 20% 65%;
+    --brand-darker: 250 18% 78%;
+  }
+
+  .dark [data-theme="cssgb"] {
+    --brand: 14 50% 48%;
+    --brand-hover: 14 50% 40%;
+    --brand-light: 14 45% 13%;
+    --brand-gradient-to: 35 40% 11%;
+    --brand-border-light: 14 28% 24%;
+    --brand-border: 14 30% 34%;
+    --brand-muted: 14 30% 45%;
+    --brand-dark: 14 50% 65%;
+    --brand-darker: 14 45% 78%;
+  }
+
+  .dark [data-theme="ccs"] {
+    --brand: 193 30% 41.6%;
+    --brand-hover: 193 30% 33.6%;
+    --brand-light: 193 35% 13%;
+    --brand-gradient-to: 175 35% 11%;
+    --brand-border-light: 193 22% 24%;
+    --brand-border: 193 22% 34%;
+    --brand-muted: 193 18% 45%;
+    --brand-dark: 193 30% 65%;
+    --brand-darker: 193 30% 78%;
+  }
+
+  .dark [data-theme="rdexam"] {
+    --brand: 91 20% 40.4%;
+    --brand-hover: 91 20% 32.4%;
+    --brand-light: 91 30% 13%;
+    --brand-gradient-to: 106 30% 11%;
+    --brand-border-light: 91 15% 24%;
+    --brand-border: 91 15% 34%;
+    --brand-muted: 91 12% 45%;
+    --brand-dark: 91 20% 65%;
+    --brand-darker: 91 20% 78%;
+  }
+
+  .dark [data-theme="praxis5001"] {
+    --brand: 39 40% 39.5%;
+    --brand-hover: 39 40% 31.5%;
+    --brand-light: 39 40% 13%;
+    --brand-gradient-to: 51 35% 11%;
+    --brand-border-light: 39 28% 24%;
+    --brand-border: 39 28% 34%;
+    --brand-muted: 39 25% 45%;
+    --brand-dark: 39 40% 65%;
+    --brand-darker: 39 40% 78%;
+  }
+
+  .dark [data-theme="fladjuster"] {
+    --brand: 320 30% 50%;
+    --brand-hover: 320 30% 42%;
+    --brand-light: 320 30% 13%;
+    --brand-gradient-to: 195 40% 11%;
+    --brand-border-light: 320 16% 24%;
+    --brand-border: 320 18% 34%;
+    --brand-muted: 320 18% 45%;
+    --brand-dark: 320 30% 65%;
+    --brand-darker: 320 26% 78%;
+  }
+
+  .dark [data-theme="llqp"] {
+    --brand: 5 45% 50%;
+    --brand-hover: 5 45% 42%;
+    --brand-light: 5 45% 13%;
+    --brand-gradient-to: 0 40% 11%;
+    --brand-border-light: 5 18% 24%;
+    --brand-border: 5 20% 34%;
+    --brand-muted: 5 20% 45%;
+    --brand-dark: 5 45% 65%;
+    --brand-darker: 5 40% 78%;
+  }
+
+  .dark [data-theme="cemap"] {
+    --brand: 203 30% 44.7%;
+    --brand-hover: 203 30% 36.7%;
+    --brand-light: 203 35% 13%;
+    --brand-gradient-to: 45 40% 11%;
+    --brand-border-light: 203 14% 24%;
+    --brand-border: 203 15% 34%;
+    --brand-muted: 203 15% 45%;
+    --brand-dark: 203 30% 65%;
+    --brand-darker: 203 28% 78%;
   }
 
 }

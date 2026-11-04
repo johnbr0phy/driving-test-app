@@ -1,0 +1,38 @@
+{
+  "id": "cemap",
+  "stateCode": "CEMAP",
+  "idBase": 17800,
+  "prefix": "CEMAP-",
+  "slug": "/cemap",
+  "landingPath": "/cemap-1-practice-test",
+  "dataFile": "data/cemap-questions.json",
+  "name": "CeMAP 1 Practice Test",
+  "shortName": "CeMAP 1",
+  "examLabel": "CeMAP Module 1 (FSRE)",
+  "fullName": "CeMAP Module 1: Financial Services, Regulation and Ethics (FSRE)",
+  "region": "UK",
+  "icon": "house",
+  "testCount": 5,
+  "questionsPerTest": 40,
+  "passPct": 70,
+  "categories": [
+    {"key": "cemapMarkets", "label": "Financial Markets & the Economy", "perTest": 4, "pool": 20, "segment": "MKT", "unit": "FRE1"},
+    {"key": "cemapConsumer", "label": "Consumer Needs & Products", "perTest": 3, "pool": 15, "segment": "CON", "unit": "FRE1"},
+    {"key": "cemapLaw", "label": "Law, Wills & Trusts", "perTest": 5, "pool": 25, "segment": "LAW", "unit": "FRE1"},
+    {"key": "cemapRegHistory", "label": "How UK Regulation Developed", "perTest": 3, "pool": 15, "segment": "DEV", "unit": "FRE1"},
+    {"key": "cemapFca", "label": "The FCA, PRA & the Handbook", "perTest": 5, "pool": 25, "segment": "FCA", "unit": "FRE1"},
+    {"key": "cemapAdvice", "label": "Advice Skills & the Fact Find", "perTest": 4, "pool": 20, "segment": "ADV", "unit": "FRE2"},
+    {"key": "cemapConduct", "label": "Principles, Consumer Duty & Conduct", "perTest": 4, "pool": 20, "segment": "CND", "unit": "FRE2"},
+    {"key": "cemapCompliance", "label": "AML, Data, Complaints & Redress", "perTest": 5, "pool": 25, "segment": "CMP", "unit": "FRE2"},
+    {"key": "cemapClients", "label": "Clients, Disclosure & Advice Standards", "perTest": 4, "pool": 20, "segment": "CLI", "unit": "FRE2"},
+    {"key": "cemapEthics", "label": "Ethics & Professionalism", "perTest": 3, "pool": 15, "segment": "ETH", "unit": "FRE2"}
+  ],
+  "notes": "CeMAP Module 1 is the LIBF (Walbrook Institute London) Level 4 FSRE module, which replaced UKFR from 30 September 2025. Two units, each a 1-hour remotely invigilated exam of 25 standalone four-option MCQs plus 3 case studies of 5 linked MCQs (40 marks), 70% (28/40) to pass each unit. No published weights per learning outcome, so per test: FRE1 (LO1-LO5) 20 and FRE2 (LO6-LO8) 20, split by the breadth of each LO's indicative content (Tigertest's split). Five mock tests of 40 = 200, pools exactly 5x per-test. Case studies are written as self-contained scenario stems.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 17801, "name": "Financial Markets & Consumers", "categories": ["cemapMarkets", "cemapConsumer"], "size": 35},
+    {"setNumber": 2, "id": 17802, "name": "Law, Wills & Trusts", "categories": ["cemapLaw"], "size": 25},
+    {"setNumber": 3, "id": 17803, "name": "Regulation, the FCA & the PRA", "categories": ["cemapRegHistory", "cemapFca"], "size": 40},
+    {"setNumber": 4, "id": 17804, "name": "Advice, Clients & Conduct", "categories": ["cemapAdvice", "cemapConduct", "cemapClients"], "size": 60},
+    {"setNumber": 5, "id": 17805, "name": "Compliance & Ethics", "categories": ["cemapCompliance", "cemapEthics"], "size": 40}
+  ]
+}

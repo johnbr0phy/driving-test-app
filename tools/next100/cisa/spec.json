@@ -1,0 +1,33 @@
+{
+  "id": "cisa",
+  "stateCode": "CISA",
+  "idBase": 17100,
+  "prefix": "CISA-",
+  "slug": "/cisa",
+  "landingPath": "/cisa-practice-test",
+  "dataFile": "data/cisa-questions.json",
+  "name": "CISA Practice Test",
+  "shortName": "CISA",
+  "examLabel": "CISA exam",
+  "fullName": "ISACA Certified Information Systems Auditor (CISA)",
+  "icon": "shield",
+  "region": "GLOBAL",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 70,
+  "categories": [
+    {"key": "cisaAudit", "label": "Information System Auditing Process", "perTest": 9, "pool": 36, "segment": "AUD", "section": "Domain 1, 18%"},
+    {"key": "cisaGovernance", "label": "Governance & Management of IT", "perTest": 9, "pool": 36, "segment": "GOV", "section": "Domain 2, 18%"},
+    {"key": "cisaAcquisition", "label": "IS Acquisition, Development & Implementation", "perTest": 6, "pool": 24, "segment": "ACQ", "section": "Domain 3, 12%"},
+    {"key": "cisaOperations", "label": "IS Operations & Business Resilience", "perTest": 13, "pool": 52, "segment": "OPS", "section": "Domain 4, 26%"},
+    {"key": "cisaProtection", "label": "Protection of Information Assets", "perTest": 13, "pool": 52, "segment": "PRO", "section": "Domain 5, 26%"}
+  ],
+  "notes": "CISA job practice effective 1 August 2024: 18/18/12/26/26 percent. Scaled to 50: 9/9/6/13/13 exactly. Four 50-question tests at the real pace (150 in 240 minutes is 1.6 minutes each, so 80 minutes per test); pools are 4x per test, no spares. passPct 70 is Tigertest's readiness line (35 of 50); the real exam reports a scaled score of 200 to 800 with 450 to pass and no published percent.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 17101, "name": "Auditing Process", "categories": ["cisaAudit"], "size": 36},
+    {"setNumber": 2, "id": 17102, "name": "Governance & Management of IT", "categories": ["cisaGovernance"], "size": 36},
+    {"setNumber": 3, "id": 17103, "name": "Acquisition & Development", "categories": ["cisaAcquisition"], "size": 24},
+    {"setNumber": 4, "id": 17104, "name": "Operations & Resilience", "categories": ["cisaOperations"], "size": 52},
+    {"setNumber": 5, "id": 17105, "name": "Protection of Information Assets", "categories": ["cisaProtection"], "size": 52}
+  ]
+}

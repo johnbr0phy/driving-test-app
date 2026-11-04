@@ -121,5 +121,6 @@ All v1 (the stats page sells Premium), chosen for adults whose job or licence ri
 Batch A (brief: "Next-20 batch A" in BRIEF.md): cpafar, cpareg, nmls, series65, series63, aswb, arrt,
 nce, texesppr, praxisplt. Batch B (brief: "Next-20 batch B"): cma, nhie, txadjuster, sfadmin, cfal1, cpaaud, accafa, aatl2,
 nbdhe, nptepta.
+Batch C (brief: "Next-20 batch C"): aswbclin, phr, cisa, cssgb, ccs, rdexam, praxis5001, fladjuster, llqp, cemap.
 Deferred from batches 6 and 7 above (low revenue per learner): the PK and PH batches, AP Stats/Chem,
 LSAT, MCAT, MBE.

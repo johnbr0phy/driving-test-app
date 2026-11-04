@@ -1,0 +1,40 @@
+{
+  "id": "praxis5001",
+  "stateCode": "PX5001",
+  "idBase": 17500,
+  "prefix": "PX5001-",
+  "slug": "/praxis-elementary",
+  "landingPath": "/praxis-elementary-education-practice-test",
+  "dataFile": "data/praxis-elementary-questions.json",
+  "name": "Praxis Elementary Education Practice Test",
+  "shortName": "Praxis 5001",
+  "examLabel": "Praxis Elementary Education 5001",
+  "fullName": "Praxis Elementary Education: Multiple Subjects (5001)",
+  "icon": "graduation",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 70,
+  "categories": [
+    {"key": "px5Foundational", "label": "Foundational Reading Skills", "perTest": 3, "pool": 12, "segment": "FND"},
+    {"key": "px5Texts", "label": "Literature & Informational Texts", "perTest": 5, "pool": 20, "segment": "TXT"},
+    {"key": "px5Writing", "label": "Writing & Research", "perTest": 4, "pool": 16, "segment": "WRI"},
+    {"key": "px5Language", "label": "Language, Speaking & Listening", "perTest": 5, "pool": 20, "segment": "LAN"},
+    {"key": "px5Number", "label": "Numbers & Operations", "perTest": 4, "pool": 16, "segment": "NUM"},
+    {"key": "px5Algebra", "label": "Algebraic Thinking", "perTest": 3, "pool": 12, "segment": "ALG"},
+    {"key": "px5GeomData", "label": "Geometry, Measurement, Data & Probability", "perTest": 3, "pool": 12, "segment": "GEO"},
+    {"key": "px5UsGov", "label": "US History, Government & Citizenship", "perTest": 5, "pool": 20, "segment": "USG"},
+    {"key": "px5Geography", "label": "Geography, Anthropology & Sociology", "perTest": 4, "pool": 16, "segment": "GEG"},
+    {"key": "px5WorldEcon", "label": "World History & Economics", "perTest": 3, "pool": 12, "segment": "WEC"},
+    {"key": "px5Earth", "label": "Earth Science", "perTest": 4, "pool": 16, "segment": "EAR"},
+    {"key": "px5Life", "label": "Life Science", "perTest": 4, "pool": 16, "segment": "LIF"},
+    {"key": "px5Physical", "label": "Physical Science", "perTest": 3, "pool": 12, "segment": "PHY"}
+  ],
+  "notes": "ETS Study Companion for 5001 (2024): 245 questions in 4 h 35 min, four separately timed subtests: 5002 Reading and Language Arts 80 in 90 min (I Reading 38, 47%; II Writing, Speaking and Listening 42, 53%), 5003 Mathematics 50 in 65 min (I Numbers and Operations 20, 40%; II Algebraic Thinking 15, 30%; III Geometry and Measurement, Data, Statistics and Probability 15, 30%), 5004 Social Studies 60 in 60 min (I US History, Government and Citizenship 27, 45%; II Geography, Anthropology and Sociology 18, 30%; III World History and Economics 15, 25%), 5005 Science 55 in 60 min (Earth, Life, Physical about 18 each). Subtest shares of 245 (32.7/20.4/24.5/22.4%) scale to 17/10/12/11 of 50; inside each, the ETS category weights: RLA reading 8 (foundational 3, texts 5) and writing/language 9 (writing 4, language 5); maths 4/3/3; social studies 5/4/3; science 4/4/3. Pools exactly 4x per test.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 17501, "name": "Reading", "categories": ["px5Foundational", "px5Texts"], "size": 32},
+    {"setNumber": 2, "id": 17502, "name": "Writing, Language, Speaking & Listening", "categories": ["px5Writing", "px5Language"], "size": 36},
+    {"setNumber": 3, "id": 17503, "name": "Mathematics", "categories": ["px5Number", "px5Algebra", "px5GeomData"], "size": 40},
+    {"setNumber": 4, "id": 17504, "name": "Social Studies", "categories": ["px5UsGov", "px5Geography", "px5WorldEcon"], "size": 48},
+    {"setNumber": 5, "id": 17505, "name": "Science", "categories": ["px5Earth", "px5Life", "px5Physical"], "size": 44}
+  ]
+}

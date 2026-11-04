@@ -55,8 +55,8 @@ export function SearchHome({
   /** Questions answered on Tigertest in the last 7 days, null when unknown. */
   answeredThisWeek: number | null;
   /** A country homepage's own h1 ("Free UK practice tests: driving, school and more",
-   *  lib/regionHeadline.ts). It takes the tagline's place and the wordmark is no longer
-   *  the heading; the US page leaves it unset. */
+   *  lib/regionHeadline.ts). Rendered visually hidden (the page
+   *  looks like the US one) and the wordmark is no longer the heading; the US page leaves it unset. */
   headline?: string;
 }) {
   const router = useRouter();
@@ -172,24 +172,20 @@ export function SearchHome({
           )}
         </div>
 
-        {/* A country page's h1 sits in the tagline's row, and stays in the page (visually hidden) while searching. */}
-        {headline && (
-          <h1 className={showResults ? "sr-only" : "text-center text-base font-medium text-gray-700 dark:text-gray-200 sm:text-lg"}>{headline}</h1>
-        )}
+        {/* A country page keeps its own h1 for search engines and screen readers, but every
+            homepage looks the same: the shared tagline and the weekly count below. */}
+        {headline && <h1 className="sr-only">{headline}</h1>}
 
         {!showResults && (
           <>
-            {!headline && <p className="text-center text-base text-gray-600 dark:text-gray-300 sm:text-lg">Free prep, any test, anywhere.</p>}
-            {/* The weekly count is site-wide (mostly the US), so a country page drops it; its h1 often wraps to a second line in that space. */}
-            {!headline && answeredThisWeek !== null && answeredThisWeek > 0 ? (
+            <p className="text-center text-base text-gray-600 dark:text-gray-300 sm:text-lg">Free prep, any test, anywhere.</p>
+            {answeredThisWeek !== null && answeredThisWeek > 0 ? (
               <p className="pt-2 pb-7 text-center text-sm text-gray-500 dark:text-gray-400 sm:pb-9">
                 <span aria-hidden className="mr-2 inline-block h-1.5 w-1.5 rounded-full bg-green-500 align-middle ring-[3px] ring-green-500/25" />
                 <CountUp value={answeredThisWeek} className="font-semibold text-gray-900 dark:text-gray-50 tabular-nums" /> questions answered this week
               </p>
             ) : (
-              // A country page's h1 can wrap to two lines on a phone, so its gap is a line
-              // shorter: the search box stays where it is on the US page.
-              <div className={headline ? "pb-2 sm:pb-10" : "pb-8 sm:pb-10"} />
+              <div className="pb-8 sm:pb-10" />
             )}
           </>
         )}

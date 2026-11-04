@@ -252,3 +252,40 @@ Notes for every batch B builder:
   property-casualty, property-casualty-tx and life-health-tx; nhie has no close family but grep
   journeyman-electrician and osha.
 - Region GLOBAL or UK needs the TEST_REGIONS line in WIRING.md; US is the default.
+
+## Next-20 batch C: more paid licensing and certification exams (Nov 2026)
+
+Same rules as batches A and B (read both sections). All v1. Branch `next20-batch-c` (from main,
+which has batches A and B wired: grep their banks for duplicates). Templates: copy the nearest batch
+A/B folder and its `WIRING.md` shape: social work and health `tools/next100/aswb` or `tools/next100/cma`;
+coding `tools/next100/cca`; finance and insurance `tools/next100/txadjuster` or `tools/next100/series65`;
+teacher exams `tools/next100/praxisplt`; IT and business `tools/next100/sfadmin` (GLOBAL region lines);
+the Canadian exam follows `tools/next30/pcoc` for region CA; the UK exam `tools/next100/aatl2` for region UK.
+
+| id | Test | Region | idBase | stateCode | prefix | slug | landing | hue |
+|---|---|---|---|---|---|---|---|---|
+| aswbclin | ASWB Clinical exam (LCSW) | US | 16900 | ASWBCLIN | ASWBCLIN- | /aswb-clinical | /aswb-clinical-practice-test | 300 20% 34% |
+| phr | HRCI Professional in Human Resources (PHR) | US | 17000 | PHR | PHR- | /phr | /phr-practice-test | 200 45% 28% |
+| cisa | ISACA Certified Information Systems Auditor (CISA) | GLOBAL | 17100 | CISA | CISA- | /cisa | /cisa-practice-test | 250 20% 32% |
+| cssgb | ASQ Certified Six Sigma Green Belt (CSSGB) | GLOBAL | 17200 | CSSGB | CSSGB- | /six-sigma-green-belt | /six-sigma-green-belt-practice-test | 14 50% 26% |
+| ccs | AHIMA Certified Coding Specialist (CCS), multiple choice only | US | 17300 | CCS | CCS- | /ccs | /ccs-practice-test | 193 30% 26% |
+| rdexam | CDR Registration Examination for Dietitians (RD exam) | US | 17400 | RDEXAM | RDEXAM- | /registered-dietitian | /registered-dietitian-exam-practice-test | 91 20% 26% |
+| praxis5001 | Praxis Elementary Education: Multiple Subjects (5001) | US | 17500 | PX5001 | PX5001- | /praxis-elementary | /praxis-elementary-education-practice-test | 39 40% 26% |
+| fladjuster | Florida 6-20 All-Lines Adjuster exam | US | 17600 | FLADJ | FLADJ- | /florida-adjuster | /florida-6-20-adjuster-practice-test | 320 30% 30% |
+| llqp | Life Licence Qualification Program (LLQP) exam, Canada | CA | 17700 | LLQP | LLQP- | /llqp | /llqp-practice-test | 5 45% 28% |
+| cemap | CeMAP 1 (LIBF), UK financial regulation for mortgage advisers | UK | 17800 | CEMAP | CEMAP- | /cemap | /cemap-1-practice-test | 203 30% 26% |
+
+Notes for every batch C builder:
+- Hues above are checked for white-text contrast (4.5:1) and against every theme; use as given.
+- Lanes and duplicates: aswbclin vs `data/aswb-masters-questions.json` and `data/nce-questions.json`
+  (clinical assessment, diagnosis and treatment, not repeats of Masters items); ccs vs `data/cca-questions.json`
+  and `data/cpc-questions.json` (CCS is inpatient and outpatient coding at a higher level, concepts only,
+  no code-book lookups); praxis5001 vs `data/praxis-plt-questions.json`, `data/texes-ppr-questions.json`,
+  `data/v2/praxis` (5001 is content knowledge: reading and language arts, maths, social studies, science);
+  fladjuster vs `data/texas-adjuster-questions.json` and `data/property-casualty-questions.json` and the
+  FL P&C variant (Florida law is the difference); llqp vs `data/life-health-questions.json` (Canadian law
+  and products, segregated funds, CLHIA guidelines); cemap vs `data/aat-level-2-questions.json` and the UK
+  banks (FCA regulation, MCOB, Consumer Duty); cisa vs `data/v2/cissp`, `data/v2/secplus`, `data/cpa-aud-questions.json`;
+  cssgb and phr have no close family, but grep `data/v2/pmp`, `data/v2/capm` and `data/cpa-reg-questions.json`.
+- Never name a commercial prep provider; say "not affiliated with" the exam body on the landing.
+- Region GLOBAL, CA or UK needs the TEST_REGIONS line in WIRING.md; US is the default.

@@ -173,7 +173,7 @@ export default function CcsLandingPage() {
                 Built on the CCS Exam Content Outline
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-                AHIMA publishes a weight range for each of the five domains, and every practice test here sits inside it: 20 coding knowledge questions (inpatient diagnoses, ICD-10-PCS, outpatient and ED coding, MS-DRGs and edits), 10 on documentation, 5 on queries, 10 on compliance and 5 on information technologies. AHIMA's outline also lists medical scenarios, a third each inpatient, outpatient and emergency department; those case-based items are not modelled here. Instructors running a coding or HIM program can set Tigertest as practice at{" "}
+                AHIMA publishes a weight range for each of the five domains, and every practice test here sits inside it: 20 coding knowledge questions (inpatient diagnoses, ICD-10-PCS, outpatient and ED coding, MS-DRGs and edits), 10 on documentation, 5 on queries, 10 on compliance and 5 on information technologies. AHIMA&apos;s outline also lists medical scenarios, a third each inpatient, outpatient and emergency department; those case-based items are not modelled here. Instructors running a coding or HIM program can set Tigertest as practice at{" "}
                 <Link href="/teach" className="text-brand-dark hover:text-brand-darker underline">tigertest.io/teach</Link>
                 {" "}and see which topics the class misses most.
               </p>

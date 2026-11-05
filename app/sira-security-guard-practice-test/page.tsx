@@ -59,7 +59,7 @@ const faqs = [
   },
   {
     q: "Are these the real SIRA exam questions?",
-    a: "No. Every question is original, written by Tigertest from Dubai Law No. (12) of 2016, the 2026 executive regulation and standard guarding, fire safety and first aid practice. The fitness assessment and the practical test are not modelled. It is free practice, not affiliated with SIRA, Dubai Police or any training centre, and it does not replace an accredited SIRA course.",
+    a: "No. Every question is original, written by Tigertest from Dubai Law No. (12) of 2016, the 2026 executive regulation and standard guarding, fire safety and first aid practice. The practical test and any fitness assessment are not modelled. It is free practice, not affiliated with SIRA, Dubai Police or any training centre, and it does not replace an accredited SIRA course.",
   },
 ];
 

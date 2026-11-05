@@ -7,6 +7,13 @@ import { urlLanguageHeaders } from "./lib/urlLanguage";
 const BUILD_LAST_MODIFIED = new Date().toUTCString();
 
 const nextConfig: NextConfig = {
+  // The webpack compile of every page and question bank sits right at the
+  // build machine's memory limit: on Nov 4 2026 a one-file change (#700) tipped
+  // it into an out-of-memory kill on Vercel. Trade a little build time for a
+  // much lower peak.
+  experimental: {
+    webpackMemoryOptimizations: true,
+  },
   outputFileTracingIncludes: {
     // Only the DMV faces: exam tigers are fetched over HTTP (see the route).
     "/api/og/score-card": ["./public/tiger_face_*.png", "./public/fonts/share/*"],

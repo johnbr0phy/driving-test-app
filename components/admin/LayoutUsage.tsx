@@ -1,8 +1,9 @@
 "use client";
 
-import { useState } from "react";
-import { CARD, ROW, STICKY_COL, TableScroll, useAdminFetch } from "@/components/admin/AdminTabParts";
-import type { LayoutAgg, LayoutUsagePayload } from "@/lib/layoutUsage";
+import { useCallback, useEffect, useRef, useState } from "react";
+import { CARD, ROW, STICKY_COL, TableScroll } from "@/components/admin/AdminTabParts";
+import { useAuth } from "@/contexts/AuthContext";
+import type { LayoutAgg, LayoutUsagePayload, LayoutUsageResponse } from "@/lib/layoutUsage";
 
 // "Dashboard layout" card on the /admin Growth tab (/api/admin/layout-usage,
 // lib/server/layoutUsage.ts): do exams laid out Set 1, Test 1, Set 2, Test 2
@@ -50,12 +51,96 @@ function Row({ label, a, sub }: { label: string; a: LayoutAgg; sub?: string }) {
   );
 }
 
-export function LayoutUsage() {
-  const { data, error, loading, updating } = useAdminFetch<LayoutUsagePayload>("/api/admin/layout-usage");
-  const [showExams, setShowExams] = useState(false);
+// A result older than this is rebuilt when the card opens.
+const STALE_MS = 12 * 3_600_000;
+const MAX_CHUNKS = 80;
+const BUSY_WAIT_MS = 5_000;
 
-  if (loading) return <div className={`${CARD} mb-6 text-sm text-gray-500 dark:text-gray-400`}>Loading dashboard layout… (scans every account, can take a minute)</div>;
-  if (error || !data) return <div className={`${CARD} mb-6 text-sm text-red-600 dark:text-red-400`}>Dashboard layout: {error ?? "no data"}</div>;
+/**
+ * Loads the saved result and, when there is none or it is stale (or on
+ * Rebuild), drives POST /api/admin/layout-usage chunk by chunk until the scan
+ * of every account finishes. Another tab already scanning answers busy: wait.
+ */
+function useLayoutUsage() {
+  const { user } = useAuth();
+  const [data, setData] = useState<LayoutUsagePayload | null>(null);
+  const [error, setError] = useState<string | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [scanned, setScanned] = useState<number | null>(null);
+  const running = useRef(false);
+
+  const call = useCallback(
+    async <T,>(method: "GET" | "POST", query = ""): Promise<T> => {
+      const token = await user?.getIdToken();
+      if (!token) throw new Error("Not authenticated");
+      const res = await fetch(`/api/admin/layout-usage${query}`, { method, headers: { Authorization: `Bearer ${token}` } });
+      const body = await res.json().catch(() => ({}));
+      if (!res.ok) throw new Error(body.details || body.error || `API error ${res.status}`);
+      return body as T;
+    },
+    [user],
+  );
+
+  const scan = useCallback(
+    async (fresh: boolean) => {
+      if (running.current) return;
+      running.current = true;
+      setScanned(0);
+      try {
+        for (let i = 0; i < MAX_CHUNKS; i++) {
+          const r = await call<{ done: boolean; busy: boolean; accounts: number }>("POST", fresh && i === 0 ? "?fresh=1" : "");
+          if (r.accounts) setScanned(r.accounts);
+          if (r.done) break;
+          if (r.busy) await new Promise((ok) => setTimeout(ok, BUSY_WAIT_MS));
+        }
+        const got = await call<LayoutUsageResponse>("GET");
+        if (got.result) setData(got.result);
+        setError(null);
+      } catch (e) {
+        setError(e instanceof Error ? e.message : "Scan failed");
+      } finally {
+        running.current = false;
+        setScanned(null);
+      }
+    },
+    [call],
+  );
+
+  useEffect(() => {
+    if (!user) return;
+    (async () => {
+      try {
+        const got = await call<LayoutUsageResponse>("GET");
+        if (got.result) setData(got.result);
+        setLoading(false);
+        const stale = !got.result || Date.now() - Date.parse(got.result.updatedAt) > STALE_MS;
+        // Resume an unfinished scan, or start one when the result is missing or old.
+        if (got.scanning || stale) await scan(false);
+      } catch (e) {
+        setError(e instanceof Error ? e.message : "Failed to load");
+        setLoading(false);
+      }
+    })();
+  }, [user, call, scan]);
+
+  return { data, error, loading, scanned, rebuild: () => scan(true) };
+}
+
+export function LayoutUsage() {
+  const { data, error, loading, scanned, rebuild } = useLayoutUsage();
+  const [showExams, setShowExams] = useState(false);
+  const scanning = scanned !== null;
+  const progress = scanning ? `Scanning accounts… ${fmt(scanned)} so far` : null;
+
+  if (loading) return <div className={`${CARD} mb-6 text-sm text-gray-500 dark:text-gray-400`}>Loading dashboard layout…</div>;
+  if (!data)
+    return (
+      <div className={`${CARD} mb-6 text-sm ${error ? "text-red-600 dark:text-red-400" : "text-gray-500 dark:text-gray-400"}`}>
+        <div className="font-semibold text-gray-900 dark:text-gray-50">Dashboard layout</div>
+        {error ? `Error: ${error}` : (progress ?? "Starting the scan…")}
+        {scanning && <div className="mt-1 text-xs">Reads every account in chunks; a few minutes the first time. Keep this tab open.</div>}
+      </div>
+    );
 
   const { cohort: c } = data;
   const change = (g: "interleaved" | "setsFirst") => rate(c[g].after.startedTest, c[g].after.people) - rate(c[g].before.startedTest, c[g].before.people);
@@ -66,11 +151,21 @@ export function LayoutUsage() {
     <div className={`${CARD} mb-6`}>
       <div className="mb-1 flex items-baseline justify-between gap-2">
         <h3 className="font-semibold text-gray-900 dark:text-gray-50">Dashboard layout</h3>
-        <span className="text-[11px] text-gray-500 dark:text-gray-400">{updating ? "updating…" : `${fmt(data.accounts)} accounts`}</span>
+        <span className="text-[11px] text-gray-500 dark:text-gray-400">
+          {progress ?? (
+            <>
+              {fmt(data.accounts)} accounts · {new Date(data.updatedAt).toLocaleString("en-US", { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" })} ·{" "}
+              <button onClick={rebuild} className="underline">
+                Rebuild
+              </button>
+            </>
+          )}
+        </span>
       </div>
       <p className="mb-4 text-xs text-gray-500 dark:text-gray-400">
         Interleaved (Set 1, Test 1, Set 2, Test 2, like the DMV) against sets first with the tests at the end. Registry exams only, accounts only, internal accounts skipped.
       </p>
+      {error && <p className="mb-3 text-xs text-red-600 dark:text-red-400">Last rebuild failed: {error}</p>}
 
       <h4 className="mb-1 text-sm font-medium text-gray-900 dark:text-gray-50">New users, before and after the {data.switchDate} switch</h4>
       <p className="mb-2 text-xs text-gray-500 dark:text-gray-400">

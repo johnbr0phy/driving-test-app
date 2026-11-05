@@ -95,6 +95,10 @@ const BORROWED_SETS: Record<string, string> = {
   // licence, security guard and NCLEX families.
   sgftt: "driving", iedttcv: "cdl", sgres: "realestate", hkiiqe1: "insurance", hklesfi1: "series7",
   nzfirearms: "hunter", nzlcq: "ukaplh", aesira: "security", mypce: "insurance", kenck: "nclex",
+  // International batch 2 (Philippines) reuses the nursing, lab, pharmacy, psychology, police, military,
+  // insurance and real estate families.
+  phnle: "nclex", phmidwife: "nclex", phmedtech: "htl", phpharm: "ptcb", phpsychom: "appsych",
+  phnapolcom: "police", phcle: "police", afpsat: "asvab", phinsurance: "insurance", phrebroker: "realestate",
 };
 
 export function hasTigerSet(examId: string): boolean {

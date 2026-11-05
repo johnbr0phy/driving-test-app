@@ -19,6 +19,11 @@
   "https://dlp.dubai.gov.ae/Legislation%20Ar%20Reference/2026/",
   "https://dlp.dubai.gov.ae/Legislation%20Reference/2018/Resolution%20No.%20(1"
  ],
+ "afpsat": [
+  "https://ejournals.ph/article.php?id=35283",
+  "https://rmn.ph/iskedyul-ng-afpsat-sa-rehiyon-dos-inanunsyo-ng-afp",
+  "https://supertutor.ph/resources/blog/gov-eligibility/afpsat-2026-complete-guide/"
+ ],
  "agniveer": [
   "https://joinindianarmy.nic.in",
   "https://www.py.gov.in/sites/default/files/indianarmy01042025pr.pdf",
@@ -671,10 +676,20 @@
   "https://tc.canada.ca/en/marine-transportation/preparing-operate-your-vessel/pleasure-craft-operator-card-pcoc",
   "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2010-91/FullText.html"
  ],
+ "phcle": [
+  "https://www.prc.gov.ph/sites/default/files/Crim%20Program%20of%20Exam%20August%202026.pdf",
+  "https://www.prc.gov.ph/sites/default/files/Program%20of%20Exam%20Feb%202026%20LE%20for%20Criminologists.pdf",
+  "https://www.prc.gov.ph/sites/default/files/2022-published%20TOS.pdf"
+ ],
  "phcse": [
   "https://tribune.net.ph/2025/10/27/csc-releases-2026-civil-service-exam-schedule-and-application-timelines",
   "https://www.thesummitexpress.com/2025/10/august-2026-civil-service-exam-cse-ppt-application-schedule-requirements.html",
   "https://cse.ph/?p=25655"
+ ],
+ "phinsurance": [
+  "https://lawphil.net/statutes/repacts/ra2013/ra_10607_2013.html",
+  "https://law.upd.edu.ph/wp-content/uploads/2021/05/IC-Circular-Letter-No-2021-01.pdf",
+  "https://law.upd.edu.ph/wp-content/uploads/2021/05/IC-Circular-Letter-No-2021-08.pdf"
  ],
  "phlet": [
   "https://www.prc.gov.ph/sites/default/files/2022%20-11%20Annex%20A%20PTeacher.pdf",
@@ -686,10 +701,45 @@
   "https://lawphil.net/statutes/repacts/ra1964/ra_4136_1964.html",
   "https://lawphil.net/statutes/repacts/ra2017/ra_10930_2017.html"
  ],
+ "phmedtech": [
+  "https://www.prc.gov.ph/sites/default/files/2023-13%20published_medtech.pdf",
+  "https://www.prc.gov.ph/sites/default/files/2023-13%20published_Annex_TOS.pdf",
+  "https://www.prc.gov.ph/sites/default/files/RA2026/RA-111621_MEDICAL%20TECHNOLOGIST_Rosales"
+ ],
+ "phmidwife": [
+  "https://www.prc.gov.ph/sites/default/files/BOM%20program%2004-2024.pdf",
+  "https://www.prc.gov.ph/sites/default/files/12%20-%20APR2026%20MIDWIVES%20tacloban.pdf",
+  "https://lawphil.net/statutes/repacts/ra1992/ra_7392_1992.html"
+ ],
+ "phnapolcom": [
+  "https://r6.napolcom.gov.ph/Exam/june2024examannouncement.pdf",
+  "https://r6.napolcom.gov.ph/index-examination.php",
+  "https://ptvnews.ph/?p=116326"
+ ],
+ "phnle": [
+  "https://www.prc.gov.ph/sites/default/files/exam%20progam%20aug%202026%20nle%20(nursing",
+  "https://www.prc.gov.ph/sites/default/files/exam%20progam%20feb%202026%20nle%20(nursing",
+  "https://www.prc.gov.ph/sites/default/files/2025-10%20%20published%20Enhanced%20TOS%20nuse.pdf"
+ ],
+ "phpharm": [
+  "https://www.prc.gov.ph/sites/default/files/April%2018%20and%2019%202026%20Exam%20Program%20(Pharmacy",
+  "https://lawphil.net/statutes/repacts/ra2016/ra_10918_2016.html",
+  "https://elibrary.judiciary.gov.ph/thebookshelf/showdocsfriendly/10/56553"
+ ],
+ "phpsychom": [
+  "https://www.prc.gov.ph/sites/default/files/24%20-%20AUG2026%20PSYCHOMETRICIANS%20-%20Tacloban.pdf",
+  "https://prc.gov.ph/articles?page=0",
+  "https://www.thesummitexpress.com/2026/08/prc-reschedules-august-2026-psychologists-psychometricians-board-exams.html"
+ ],
  "phr": [
   "https://www.hrci.org/our-programs/our-certifications/phr",
   "https://www.hrci.org/docs/default-source/2024-document-control/hrci_phr-exam-content-outline-2024.pdf",
   "https://www.hrci.org/docs/default-source/pdf-documents/cert-handbook.pdf"
+ ],
+ "phrebroker": [
+  "https://prc.gov.ph/sites/default/files/041025%20EXAM%20PROGRAM%20REAL%20ESTATE%20BROKERS_Rev1.pdf",
+  "https://www.prc.gov.ph/sites/default/files/exam%20program%20REB%202026%20revised.pdf",
+  "https://www.prc.gov.ph/sites/default/files/031924%20revised%20exam%20program%20apr%202024%20real%20estate%20brokers%20(res"
  ],
  "pkdrive": [
   "https://en.wikipedia.org/wiki/Driving_licence_in_Pakistan",

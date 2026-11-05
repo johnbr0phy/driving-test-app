@@ -1,0 +1,32 @@
+{
+  "id": "phmidwife",
+  "stateCode": "PHMIDWIFE",
+  "idBase": 19700,
+  "prefix": "PHMW-",
+  "slug": "/midwife-board-exam",
+  "landingPath": "/midwife-board-exam-reviewer-practice-test",
+  "dataFile": "data/philippines-midwife-questions.json",
+  "name": "Midwife Board Exam Reviewer Practice Test",
+  "shortName": "Midwife Board",
+  "examLabel": "Midwife Board Exam",
+  "fullName": "Midwife Licensure Examination (MLE), Philippines",
+  "icon": "heart",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 75,
+  "categories": [
+    {"key": "phmwObstetrics", "label": "Obstetrics", "perTest": 10, "pool": 40, "segment": "OBS"},
+    {"key": "phmwFundamentals", "label": "Fundamentals of Health Care", "perTest": 10, "pool": 40, "segment": "FUN"},
+    {"key": "phmwInfant", "label": "Infant Care and Feeding", "perTest": 10, "pool": 40, "segment": "INF"},
+    {"key": "phmwPhc", "label": "Primary Health Care", "perTest": 10, "pool": 40, "segment": "PHC"},
+    {"key": "phmwProfessional", "label": "Professional Growth and Development", "perTest": 10, "pool": 40, "segment": "PGD"}
+  ],
+  "notes": "Real MLE (PRC programs of April 29-30, 2024 and April 14-15, 2026): five subjects over two days, each a 2-hour session, with eight integrated sciences (sociology, bacteriology, anatomy and physiology, psychology, nutrition, parasitology, microbiology, pharmacology). R.A. 7392 Sec. 16: general rating 75%, no subject below 50%. No table of specifications with weights was found, so the five subjects get equal shares (the general rating averages them): 10 per subject per test. Item counts per subject are not in the program and are not used. Pools exactly 4x per test.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 19701, "name": "Obstetrics", "categories": ["phmwObstetrics"], "size": 40},
+    {"setNumber": 2, "id": 19702, "name": "Fundamentals of Health Care", "categories": ["phmwFundamentals"], "size": 40},
+    {"setNumber": 3, "id": 19703, "name": "Infant Care and Feeding", "categories": ["phmwInfant"], "size": 40},
+    {"setNumber": 4, "id": 19704, "name": "Primary Health Care", "categories": ["phmwPhc"], "size": 40},
+    {"setNumber": 5, "id": 19705, "name": "Professional Growth and Development", "categories": ["phmwProfessional"], "size": 40}
+  ]
+}

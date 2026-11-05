@@ -29,7 +29,7 @@ import epa608Es from "./examTranslations/epa608.es.json";
 import esdgtEs from "./examTranslations/esdgt.es.json";
 import ptimtPt from "./examTranslations/ptimt.pt.json";
 
-export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "bedriving" | "dkteori" | "setrafik" | "fitheory" | "grdriving" | "rodrpciv" | "hukresz" | "mttheory" | "detheorie" | "phlet" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "detheorie" | "htl" | "cst" | "crcst" | "zak53c3";
+export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "bedriving" | "dkteori" | "setrafik" | "fitheory" | "grdriving" | "rodrpciv" | "hukresz" | "mttheory" | "detheorie" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "detheorie" | "htl" | "cst" | "crcst" | "zak53c3";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -9358,6 +9358,693 @@ const phlet: ExamConfig = {
   },
 };
 
+const phnle: ExamConfig = {
+  id: "phnle",
+  stateCode: "PHNLE",
+  idBase: 19100,
+  slug: "/nurse-licensure-exam",
+  landingPath: "/nle-reviewer-practice-test",
+  name: "NLE Reviewer Practice Test",
+  shortName: "NLE",
+  examLabel: "NLE",
+  fullName: "Philippine Nurse Licensure Examination (NLE/PNLE)",
+  questionIdPrefix: "PHNLE-",
+  icon: "stethoscope",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 75,
+  // PRC program of the NLE, Aug 29-30, 2026 (checked 2026-11-05): five parts, Nursing Practice
+  // I to V, 2 hours each over two days. R.A. 9173 Sec. 15: general average 75%, no subject below
+  // 60% (only the 75% is scored here). Guides report 100 items per part. Annex A of Board Res.
+  // No. 10, s. 2025 (enhanced TOS) was not published with the resolution, so each part gets an
+  // equal 10 of 50 items; the split inside NP I, NP II and NP V is Tigertest's. Fundamentals and
+  // professional adjustment are integrated across parts (PRC program) and sit in phnleProf.
+  // Pools are exactly 4x each count. All items original.
+  blueprint: {
+    phnleChn: 7,
+    phnleProf: 3,
+    phnleMaternal: 7,
+    phnleGrowth: 3,
+    phnleSurgOxy: 10,
+    phnleMetabNeuro: 10,
+    phnleMental: 6,
+    phnleCritical: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 19101, name: "NP I: Community Health, Law & Ethics", categories: ["phnleChn", "phnleProf"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 2, id: 19102, name: "NP II: Mother, Child & Development", categories: ["phnleMaternal", "phnleGrowth"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 3, id: 19103, name: "NP III: Surgery, Oxygenation & Cancer", categories: ["phnleSurgOxy"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 4, id: 19104, name: "NP IV: Nutrition, Endocrine & Neuro", categories: ["phnleMetabNeuro"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 5, id: 19105, name: "NP V: Mental Health & Emergencies", categories: ["phnleMental", "phnleCritical"], size: 40, weightLabel: "10 of 50 test questions" },
+  ],
+  categoryLabels: {
+    phnleChn: "Community Health Nursing & DOH Programs",
+    phnleProf: "Nursing Law, Ethics & Leadership",
+    phnleMaternal: "Care of Mother & Adolescent",
+    phnleGrowth: "Human Growth & Development",
+    phnleSurgOxy: "Surgery, Oxygenation, Fluids, Infection & Cancer",
+    phnleMetabNeuro: "Nutrition, GI, Endocrine & Neuro-Sensory",
+    phnleMental: "Psychiatric & Mental Health Nursing",
+    phnleCritical: "Emergency & Critical Care",
+  },
+  copy: {
+    guestPrompt: "to save your NLE progress and track every question you miss",
+    trainingHeading: "Train by Nursing Practice part",
+    trainingSub: "Five sets, one for each Nursing Practice part, from community health nursing to emergency care. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock exams · 50 questions, 10 from each Nursing Practice part",
+    heroSubs: [
+      "Five parts, four mock exams. Every part counts.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock exam.",
+      "Fix the misses, then retake.",
+      "All done. You're ready for the NLE.",
+    ],
+    sourceLine: "Based on the PRC program for the Nurse Licensure Examination, Nursing Practice I to V. Original questions; 50 per test, 10 from each part. Not affiliated with the PRC.",
+    analyticsKey: "phnle",
+  },
+};
+
+const phmedtech: ExamConfig = {
+  id: "phmedtech",
+  stateCode: "PHMEDTECH",
+  idBase: 19400,
+  slug: "/medtech-board-exam",
+  landingPath: "/medtech-board-exam-reviewer-practice-test",
+  name: "MedTech Board Exam Reviewer",
+  shortName: "MTLE",
+  examLabel: "MTLE",
+  fullName: "Medical Technologist Licensure Examination (MTLE)",
+  questionIdPrefix: "PHMT-",
+  icon: "microscope",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 75,
+  // PRC Professional Regulatory Board of Medical Technology Resolution No. 13, s. 2023, Annex A
+  // (enhanced tables of specifications, applied from the August 2023 MTLE; checked 2026-11-05),
+  // and the PRC program for the August 15-16, 2026 MTLE: six subjects of 100 items, Clinical
+  // Chemistry, Microbiology and Parasitology, Hematology, Blood Banking and Serology 20% each;
+  // Clinical Microscopy and Histopathologic Techniques, MT Laws and Ethics 10% each (RA 5527
+  // Sec. 17). Each 50-question test keeps those weights: 10/10/10/10/5/5, with Micro/Para 7/3
+  // (TOS 70/30), Blood Banking/Serology 5/5 (TOS 48/52) and Histopath/Laws 3/2 (TOS 65/35).
+  // Pass: general average 75%, no major subject below 50% (RA 5527 Sec. 19); only the 75% is
+  // scored here. Pools are exactly 4x each count. All items original.
+  blueprint: {
+    phmtChem: 10,
+    phmtMicro: 7,
+    phmtPara: 3,
+    phmtCm: 5,
+    phmtHema: 10,
+    phmtBank: 5,
+    phmtSero: 5,
+    phmtHisto: 3,
+    phmtLaws: 2,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 19401, name: "Clinical Chemistry", categories: ["phmtChem"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 2, id: 19402, name: "Microbiology & Parasitology", categories: ["phmtMicro", "phmtPara"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 3, id: 19403, name: "Hematology", categories: ["phmtHema"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 4, id: 19404, name: "Blood Banking & Immunoserology", categories: ["phmtBank", "phmtSero"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 5, id: 19405, name: "Clinical Microscopy, Histopath & MT Laws", categories: ["phmtCm", "phmtHisto", "phmtLaws"], size: 40, weightLabel: "10 of 50 test questions" },
+  ],
+  categoryLabels: {
+    phmtChem: "Clinical Chemistry",
+    phmtMicro: "Microbiology",
+    phmtPara: "Parasitology",
+    phmtCm: "Clinical Microscopy",
+    phmtHema: "Hematology",
+    phmtBank: "Blood Banking",
+    phmtSero: "Immunology & Serology",
+    phmtHisto: "Histopathologic & Cytologic Techniques",
+    phmtLaws: "MT Laws, Ethics & Lab Management",
+  },
+  copy: {
+    guestPrompt: "to save your MTLE progress and track every question you miss",
+    trainingHeading: "Train by MTLE subject",
+    trainingSub: "Five sets covering all six subjects of the Medical Technologist Licensure Examination, on the PRC tables of specifications. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock exams · 50 questions, weighted like the six subjects",
+    heroSubs: [
+      "Six subjects, four mock exams. Chemistry, micro, hema and blood bank weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock exam.",
+      "Fix the misses, then retake.",
+      "All done. You're ready for the MTLE.",
+    ],
+    sourceLine: "Based on the PRC tables of specifications for the Medical Technologist Licensure Examination. Original questions; 50 per test, weighted like the real subjects. Not affiliated with the PRC.",
+    analyticsKey: "phmedtech",
+  },
+};
+
+const phpharm: ExamConfig = {
+  id: "phpharm",
+  stateCode: "PHPHARM",
+  idBase: 19500,
+  slug: "/pharmacist-board-exam",
+  landingPath: "/pharmacist-board-exam-reviewer-practice-test",
+  name: "Pharmacist Board Exam Reviewer",
+  shortName: "PhLE",
+  examLabel: "PhLE",
+  fullName: "Pharmacist Licensure Examination (PhLE), Philippines",
+  questionIdPrefix: "PHRPH-",
+  icon: "pill",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 75,
+  // PRC Professional Regulatory Board of Pharmacy, revised program of the PhLE on April 18 and 19,
+  // 2026 (checked 2026-11-05): Pharmaceutical Chemistry 20%, Pharmacognosy/Biochemistry 15%,
+  // Practice of Pharmacy 17.5% (compounding-dispensing, clinical/hospital, calculations),
+  // Pharmacology-Pharmacokinetics 15%, Pharmaceutics 17.5% (manufacturing, dosage forms, physical
+  // pharmacy, jurisprudence and ethics), Quality Control/Quality Assurance 15% (instrumentation,
+  // microbiology, public health). Each 50-question test is 10/8/9/7/9/7 by subject. Pass (R.A.
+  // 10918 Sec. 17): general weighted average 75%, no subject below 50%; only the 75% is scored here.
+  // Pools are exactly 4x each count. All items original.
+  blueprint: {
+    phpharmInorg: 5,
+    phpharmOrgMed: 5,
+    phpharmCognosy: 8,
+    phpharmPractice: 6,
+    phpharmCalc: 3,
+    phpharmPharmacol: 7,
+    phpharmPharmaceutics: 6,
+    phpharmLaw: 3,
+    phpharmQc: 7,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 19501, name: "Pharmaceutical Chemistry", categories: ["phpharmInorg", "phpharmOrgMed"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 2, id: 19502, name: "Pharmacognosy & Biochemistry", categories: ["phpharmCognosy"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 3, id: 19503, name: "Practice of Pharmacy & Calculations", categories: ["phpharmPractice", "phpharmCalc"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 4, id: 19504, name: "Pharmacology & Toxicology", categories: ["phpharmPharmacol"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 5, id: 19505, name: "Pharmaceutics & Jurisprudence", categories: ["phpharmPharmaceutics", "phpharmLaw"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 6, id: 19506, name: "QC, Microbiology & Public Health", categories: ["phpharmQc"], size: 28, weightLabel: "7 of 50 test questions" },
+  ],
+  categoryLabels: {
+    phpharmInorg: "Inorganic & Qualitative Pharmaceutical Chemistry",
+    phpharmOrgMed: "Organic & Medicinal Chemistry",
+    phpharmCognosy: "Pharmacognosy, Plant Chemistry & Biochemistry",
+    phpharmPractice: "Dispensing, Clinical & Hospital Pharmacy",
+    phpharmCalc: "Pharmaceutical Calculations",
+    phpharmPharmacol: "Pharmacology, Pharmacokinetics & Toxicology",
+    phpharmPharmaceutics: "Pharmaceutics & Manufacturing Pharmacy",
+    phpharmLaw: "Pharmacy Jurisprudence & Ethics",
+    phpharmQc: "Quality Control, Microbiology & Public Health",
+  },
+  copy: {
+    guestPrompt: "to save your PhLE progress and track every question you miss",
+    trainingHeading: "Train by PhLE subject",
+    trainingSub: "Six sets, one for each subject of the PRC exam program, from pharmaceutical chemistry to quality control. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock exams · 50 questions across all six subjects",
+    heroSubs: [
+      "Six subjects, four mock exams. Chemistry weighs most.",
+      "Master each subject set, then test.",
+      "Halfway there. Try a mock exam.",
+      "Fix the misses, then retake.",
+      "All done. You're ready for the PhLE.",
+    ],
+    sourceLine: "Based on the PRC Board of Pharmacy exam program and Philippine pharmacy law. Original questions; 50 per test, weighted like the six subjects. Not affiliated with the PRC.",
+    analyticsKey: "phpharm",
+  },
+};
+
+const phmidwife: ExamConfig = {
+  id: "phmidwife",
+  stateCode: "PHMIDWIFE",
+  idBase: 19700,
+  slug: "/midwife-board-exam",
+  landingPath: "/midwife-board-exam-reviewer-practice-test",
+  name: "Midwife Board Exam Reviewer Practice Test",
+  shortName: "Midwife Board",
+  examLabel: "Midwife Board Exam",
+  fullName: "Midwife Licensure Examination (MLE), Philippines",
+  questionIdPrefix: "PHMW-",
+  icon: "heart",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 75,
+  // PRC programs of the Midwife Licensure Examination (April 29-30, 2024 and April 14-15, 2026,
+  // checked 2026-11-05): five subjects, each a 2-hour session, with sociology, bacteriology,
+  // anatomy and physiology, psychology, nutrition, parasitology, microbiology and pharmacology
+  // integrated. R.A. 7392 Sec. 16: general rating 75%, no subject below 50%; only the 75% is
+  // scored here. No published table of specifications, so the subjects are weighted equally,
+  // 10 per test each. Pools are exactly 4x each count. All items original.
+  blueprint: {
+    phmwObstetrics: 10,
+    phmwFundamentals: 10,
+    phmwInfant: 10,
+    phmwPhc: 10,
+    phmwProfessional: 10,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 19701, name: "Obstetrics", categories: ["phmwObstetrics"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 2, id: 19702, name: "Fundamentals of Health Care", categories: ["phmwFundamentals"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 3, id: 19703, name: "Infant Care and Feeding", categories: ["phmwInfant"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 4, id: 19704, name: "Primary Health Care", categories: ["phmwPhc"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 5, id: 19705, name: "Professional Growth and Development", categories: ["phmwProfessional"], size: 40, weightLabel: "10 of 50 test questions" },
+  ],
+  categoryLabels: {
+    phmwObstetrics: "Obstetrics",
+    phmwFundamentals: "Fundamentals of Health Care",
+    phmwInfant: "Infant Care and Feeding",
+    phmwPhc: "Primary Health Care",
+    phmwProfessional: "Professional Growth and Development",
+  },
+  copy: {
+    guestPrompt: "to save your midwife board exam progress and track every question you miss",
+    trainingHeading: "Train by board exam subject",
+    trainingSub: "Five sets, one for each subject of the Midwife Licensure Examination, with the integrated sciences inside them. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock exams · 50 questions, 10 from each subject",
+    heroSubs: [
+      "Five subjects, four mock exams. Every subject counts.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock exam.",
+      "Fix the misses, then retake.",
+      "All done. You're ready for the board exam.",
+    ],
+    sourceLine: "Based on the PRC exam program and R.A. 7392. Original questions; 50 per test, 10 from each subject. Not affiliated with the PRC.",
+    analyticsKey: "phmidwife",
+  },
+};
+
+const phpsychom: ExamConfig = {
+  id: "phpsychom",
+  stateCode: "PHPSYCHOM",
+  idBase: 19300,
+  slug: "/psychometrician-board-exam",
+  landingPath: "/psychometrician-board-exam-reviewer-practice-test",
+  name: "Psychometrician Board Exam Reviewer",
+  shortName: "PmLE",
+  examLabel: "PmLE",
+  fullName: "Psychometrician Licensure Examination (PmLE), Philippines",
+  questionIdPrefix: "PHPSY-",
+  icon: "heart",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 75,
+  // PRC programs for the August 19-20, 2026 (and September 2025, August 2024) Psychometricians
+  // Licensure Examination, checked 2026-11-05: Developmental Psychology 20%, Abnormal Psychology
+  // 20%, Industrial-Organizational Psychology 20%, Psychological Assessment 40%. Each 50-question
+  // test is 10/10/10/20: Developmental 5+5, Abnormal 6+4, I/O 5+5, Assessment 8+6+6 (the split
+  // inside each subject follows the 2014 TOS outline as reposted by guides). Pass: weighted general
+  // average 75% with no subject below 60% (R.A. 10029 Sec. 18); only the 75% is scored here.
+  // Pools are exactly 4x each count. All items original.
+  blueprint: {
+    phpsyDevChild: 5,
+    phpsyDevLife: 5,
+    phpsyAbnDisorders: 6,
+    phpsyAbnCauses: 4,
+    phpsyIoHr: 5,
+    phpsyIoOrg: 5,
+    phpsyPsychometrics: 8,
+    phpsyTests: 6,
+    phpsyEthics: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 19301, name: "Developmental Psychology", categories: ["phpsyDevChild", "phpsyDevLife"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 2, id: 19302, name: "Abnormal Psychology", categories: ["phpsyAbnDisorders", "phpsyAbnCauses"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 3, id: 19303, name: "Industrial-Organizational Psychology", categories: ["phpsyIoHr", "phpsyIoOrg"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 4, id: 19304, name: "Assessment: Psychometrics & Statistics", categories: ["phpsyPsychometrics"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 5, id: 19305, name: "Assessment: Tests, Ethics & Reports", categories: ["phpsyTests", "phpsyEthics"], size: 48, weightLabel: "12 of 50 test questions" },
+  ],
+  categoryLabels: {
+    phpsyDevChild: "Developmental Theories & Childhood",
+    phpsyDevLife: "Adolescence, Adulthood & Aging",
+    phpsyAbnDisorders: "Disorders & Diagnosis",
+    phpsyAbnCauses: "Causes, Culture & Mental Health Law",
+    phpsyIoHr: "Selection, Training & Appraisal",
+    phpsyIoOrg: "Motivation, Leadership & Organizations",
+    phpsyPsychometrics: "Psychometrics & Statistics",
+    phpsyTests: "Tests & Test Administration",
+    phpsyEthics: "Ethics, R.A. 10029 & Reports",
+  },
+  copy: {
+    guestPrompt: "to save your psychometrician board exam progress and track every question you miss",
+    trainingHeading: "Train by subject",
+    trainingSub: "Five sets covering all four subjects of the PRC Psychometrician Licensure Examination, with Psychological Assessment split in two. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock exams · 50 questions, weighted 20/20/20/40 like the real rating",
+    heroSubs: [
+      "Four subjects, four mock exams. Psychological Assessment weighs most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock exam.",
+      "Fix the misses, then retake.",
+      "All done. You're ready for the board exam.",
+    ],
+    sourceLine: "Based on the PRC program for the Psychometrician Licensure Examination and R.A. 10029. Original questions; 50 per test, weighted like the real rating. Not affiliated with the PRC.",
+    analyticsKey: "phpsychom",
+  },
+};
+
+const phnapolcom: ExamConfig = {
+  id: "phnapolcom",
+  stateCode: "PHNAPOLCOM",
+  idBase: 18900,
+  slug: "/napolcom-exam",
+  landingPath: "/napolcom-exam-reviewer-practice-test",
+  name: "NAPOLCOM Exam Reviewer",
+  shortName: "NAPOLCOM exam",
+  examLabel: "PNP Entrance Exam",
+  fullName: "NAPOLCOM PNP Entrance Examination (PNPE)",
+  questionIdPrefix: "PHNAP-",
+  icon: "badge",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Source: NAPOLCOM, PNP Entrance and Promotional Examinations Announcement (June 30, 2024 exam),
+  // section X, Examination Coverage: three hours, objective multiple choice, four areas:
+  // I. General Information/Uprightness (Philippine Constitution; PNP laws R.A. 6975 and R.A. 8551
+  // as amended; criminal justice system; social awareness and value judgment; values),
+  // II. Verbal Reasoning (synonyms, antonyms; paragraph organization, reading comprehension;
+  // correct usage), III. Quantitative Reasoning (percentage, fraction, number series; problem
+  // solving, bar graph interpretation), IV. Logical Reasoning (verbal, non-verbal). NAPOLCOM
+  // publishes no item count, split or pass mark; the weights are Tigertest's own (general
+  // information 14, verbal 16, quantitative 13, logical 7 per test) and 70% follows guides.
+  // Latest sitting checked: April 19, 2026. Checked 2026-11-05. All items original.
+  blueprint: {
+    phnapVocab: 6,
+    phnapReading: 5,
+    phnapGrammar: 5,
+    phnapNumber: 7,
+    phnapProblems: 6,
+    phnapLogic: 7,
+    phnapConstitution: 6,
+    phnapPnpLaw: 5,
+    phnapValues: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 18901, name: "Vocabulary & Grammar", categories: ["phnapVocab", "phnapGrammar"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 2, id: 18902, name: "Reading & Logical Reasoning", categories: ["phnapReading", "phnapLogic"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 3, id: 18903, name: "Quantitative Reasoning", categories: ["phnapNumber", "phnapProblems"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 4, id: 18904, name: "Constitution & Criminal Justice", categories: ["phnapConstitution"], size: 24, weightLabel: "6 of 50 test questions" },
+    { setNumber: 5, id: 18905, name: "PNP Laws & Values", categories: ["phnapPnpLaw", "phnapValues"], size: 32, weightLabel: "8 of 50 test questions" },
+  ],
+  categoryLabels: {
+    phnapVocab: "Verbal: Vocabulary",
+    phnapReading: "Verbal: Paragraph Organization & Reading",
+    phnapGrammar: "Verbal: Grammar & Correct Usage",
+    phnapNumber: "Quantitative: Percentages, Fractions & Number Series",
+    phnapProblems: "Quantitative: Problem Solving & Bar Graphs",
+    phnapLogic: "Logical Reasoning",
+    phnapConstitution: "Philippine Constitution & Criminal Justice",
+    phnapPnpLaw: "PNP Laws (R.A. 6975 & R.A. 8551)",
+    phnapValues: "Values & Social Awareness",
+  },
+  copy: {
+    guestPrompt: "to save your NAPOLCOM exam progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets on the general information, verbal, quantitative and logical reasoning the PNP Entrance Examination covers. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock exams · 50 questions, aim for 35 or more",
+    heroSubs: [
+      "Five topics, four 50-question mock exams. Start with the math.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock exam.",
+      "Fix the misses, then retake.",
+      "All done. Bring your Notice of Admission and go.",
+    ],
+    sourceLine: "Based on the four subject areas in NAPOLCOM's PNP Entrance Examination announcement, the 1987 Constitution, R.A. 6975 and R.A. 8551. Original questions; 50 per test, 70% is Tigertest's target.",
+    analyticsKey: "phnapolcom",
+  },
+};
+
+const afpsat: ExamConfig = {
+  id: "afpsat",
+  stateCode: "AFPSAT",
+  idBase: 19600,
+  slug: "/afpsat",
+  landingPath: "/afpsat-reviewer-practice-test",
+  name: "AFPSAT Reviewer",
+  shortName: "AFPSAT",
+  examLabel: "AFPSAT",
+  fullName: "AFP Service Aptitude Test (AFPSAT)",
+  questionIdPrefix: "AFPSAT-",
+  icon: "badge",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Source: the AFP Service Aptitude Test, the Armed Forces of the Philippines' first filter for
+  // officer and enlisted applicants to the Army, Navy and Air Force (AFP Circulars of 2013, 2015
+  // and 2020, cited in Gamos and Usona, Graduate Forum 18(1), 2024). The AFP publishes no item
+  // count, time, subtest split or passing score; guides describe verbal, numerical, logical and
+  // abstract, spatial and mechanical reasoning, and general information, and say each service
+  // sets its own cut-off. Weights are Tigertest's own (verbal 17, numerical 12, logical 7,
+  // abstract and spatial 4, general information 10 per test) and 70% (35 of 50) is Tigertest's
+  // target. Abstract items are written in words (the real test uses figures). General
+  // information from the 1987 Constitution, R.A. 7077 and R.A. 8491. Checked 2026-11-05. Pools
+  // are exactly 4x each count (no spares). All items original.
+  blueprint: {
+    afpsatVocab: 7,
+    afpsatGrammar: 6,
+    afpsatReading: 4,
+    afpsatNumber: 6,
+    afpsatProblems: 6,
+    afpsatLogic: 7,
+    afpsatAbstract: 4,
+    afpsatCivics: 6,
+    afpsatHeritage: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 19601, name: "Vocabulary & Grammar", categories: ["afpsatVocab", "afpsatGrammar"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 2, id: 19602, name: "Reading & Logical Reasoning", categories: ["afpsatReading", "afpsatLogic"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 3, id: 19603, name: "Numerical Ability", categories: ["afpsatNumber", "afpsatProblems"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 4, id: 19604, name: "Abstract & Spatial Reasoning", categories: ["afpsatAbstract"], size: 16, weightLabel: "4 of 50 test questions" },
+    { setNumber: 5, id: 19605, name: "General Information", categories: ["afpsatCivics", "afpsatHeritage"], size: 40, weightLabel: "10 of 50 test questions" },
+  ],
+  categoryLabels: {
+    afpsatVocab: "Verbal: Vocabulary & Analogies",
+    afpsatGrammar: "Verbal: Grammar & Correct Usage",
+    afpsatReading: "Verbal: Reading Comprehension",
+    afpsatNumber: "Numerical: Arithmetic & Algebra",
+    afpsatProblems: "Numerical: Word Problems",
+    afpsatLogic: "Logical Reasoning",
+    afpsatAbstract: "Abstract & Spatial Reasoning",
+    afpsatCivics: "The Constitution & National Defense",
+    afpsatHeritage: "The AFP, History & Geography",
+  },
+  copy: {
+    guestPrompt: "to save your AFPSAT progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets on the verbal, numerical, reasoning and general information areas the AFPSAT covers. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, aim for 35 or more",
+    heroSubs: [
+      "Five topics, four 50-question tests. Verbal and numerical weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Report early and bring your documents.",
+    ],
+    sourceLine: "Based on the areas reviewers describe for the AFP Service Aptitude Test, the 1987 Constitution and the AFP's defense laws. Original questions; 50 per test, 70% is Tigertest's target.",
+    analyticsKey: "afpsat",
+  },
+};
+
+const phcle: ExamConfig = {
+  id: "phcle",
+  stateCode: "PHCLE",
+  idBase: 19000,
+  slug: "/criminologist-licensure-exam",
+  landingPath: "/criminology-board-exam-reviewer-practice-test",
+  name: "Criminology Board Exam Reviewer",
+  shortName: "CLE",
+  examLabel: "CLE",
+  fullName: "Licensure Examination for Criminologists (CLE)",
+  questionIdPrefix: "PHCLE-",
+  icon: "badge",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 75,
+  // PRC programs of the February and August 2026 Licensure Examinations for Criminologists
+  // (checked 2026-11-05): Criminal Law and Jurisprudence 20%, Law Enforcement Administration 15%,
+  // Crime Detection and Investigation 20%, Forensic Science 15%, Criminology 20%, Correctional
+  // Administration 10%. Topic splits inside CLJ, CDI and Criminology follow the Board's TOS
+  // (Board Resolution No. 05, s. 2022). Each test: 10/8/10/7/10/5. Pass: weighted average 75%
+  // with no subject below 60% (R.A. 11131 Sec. 17); only the 75% is scored here.
+  // Pools are exactly 4x each count. All items original.
+  blueprint: {
+    phcleCrimLaw: 6,
+    phcleProcedure: 4,
+    phcleLea: 8,
+    phcleInvestigation: 5,
+    phcleTrafficFireDrugs: 5,
+    phcleForensic: 7,
+    phcleCriminology: 6,
+    phcleEthicsJuvenile: 4,
+    phcleCorrections: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 19001, name: "Criminal Law & Jurisprudence", categories: ["phcleCrimLaw", "phcleProcedure"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 2, id: 19002, name: "Law Enforcement Administration", categories: ["phcleLea"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 3, id: 19003, name: "Crime Detection & Investigation", categories: ["phcleInvestigation", "phcleTrafficFireDrugs"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 4, id: 19004, name: "Forensic Science", categories: ["phcleForensic"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 5, id: 19005, name: "Criminology", categories: ["phcleCriminology", "phcleEthicsJuvenile"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 6, id: 19006, name: "Correctional Administration", categories: ["phcleCorrections"], size: 20, weightLabel: "5 of 50 test questions" },
+  ],
+  categoryLabels: {
+    phcleCrimLaw: "Criminal Law (RPC & Special Laws)",
+    phcleProcedure: "Evidence, Procedure & Human Rights",
+    phcleLea: "Law Enforcement Administration",
+    phcleInvestigation: "Criminal Investigation & Legal Medicine",
+    phcleTrafficFireDrugs: "Traffic, Fire & Drug Investigation",
+    phcleForensic: "Forensic Science",
+    phcleCriminology: "Criminology Theories & Research",
+    phcleEthicsJuvenile: "Ethics, Juvenile Justice & Dispute Resolution",
+    phcleCorrections: "Correctional Administration",
+  },
+  copy: {
+    guestPrompt: "to save your criminology board exam progress and track every question you miss",
+    trainingHeading: "Train by board subject",
+    trainingSub: "Six sets, one for each subject of the Licensure Examination for Criminologists. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock exams · 50 questions at the board subject weights",
+    heroSubs: [
+      "Six subjects, four mock exams. Criminal law, investigation and criminology weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock exam.",
+      "Fix the misses, then retake.",
+      "All done. You're ready for the board exam.",
+    ],
+    sourceLine: "Based on the PRC subject weights and the Board of Criminology table of specifications. Original questions; 50 per test, weighted like the real exam. Not affiliated with the PRC.",
+    analyticsKey: "phcle",
+  },
+};
+
+const phinsurance: ExamConfig = {
+  id: "phinsurance",
+  stateCode: "PHINS",
+  idBase: 19200,
+  slug: "/insurance-commission-exam",
+  landingPath: "/insurance-commission-exam-reviewer-practice-test",
+  name: "Insurance Commission Exam Reviewer",
+  shortName: "IC Exam",
+  examLabel: "IC licensing exam",
+  fullName: "Insurance Commission Licensing Exam for Traditional Life Agents (Philippines)",
+  questionIdPrefix: "PHINS-",
+  icon: "umbrella",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Insurance Commission qualifying exam for traditional life agents (Insurance Code, R.A. 10607,
+  // Sections 307 and 312). The IC publishes no syllabus weights and its format page could not be
+  // checked (Nov 2026); guides report 50 items, about 1 hour, 70% to pass, so 70% is a target.
+  // Per test (Tigertest's split): principles 5, contract 8, life insurance law 8, products 8,
+  // premiums and values 6, underwriting and claims 5, agent licensing and conduct 6,
+  // regulation and consumer protection 4. Philippine law as of November 2026; traditional life
+  // only (variable contracts are a separate license); no fees, rates or peso limits.
+  blueprint: {
+    phinsPrinciples: 5,
+    phinsContract: 8,
+    phinsLifeLaw: 8,
+    phinsProducts: 8,
+    phinsPolicyValues: 6,
+    phinsUnderwriting: 5,
+    phinsAgents: 6,
+    phinsRegulation: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 19201, name: "Principles & the Insurance Contract", categories: ["phinsPrinciples", "phinsContract"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 2, id: 19202, name: "Life Insurance Law & Regulation", categories: ["phinsLifeLaw", "phinsRegulation"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 3, id: 19203, name: "Products, Premiums & Policy Values", categories: ["phinsProducts", "phinsPolicyValues"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 4, id: 19204, name: "Underwriting, Claims & Agent Conduct", categories: ["phinsUnderwriting", "phinsAgents"], size: 44, weightLabel: "11 of 50 test questions" },
+  ],
+  categoryLabels: {
+    phinsPrinciples: "Risk & Principles of Insurance",
+    phinsContract: "The Insurance Contract",
+    phinsLifeLaw: "Life Insurance Law",
+    phinsProducts: "Traditional Life Products & Riders",
+    phinsPolicyValues: "Premiums, Values & Options",
+    phinsUnderwriting: "Underwriting & Claims",
+    phinsAgents: "Agent Licensing & Conduct",
+    phinsRegulation: "Regulation & Consumer Protection",
+  },
+  copy: {
+    guestPrompt: "to save your IC exam progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets: principles and the insurance contract, life insurance law and regulation, products and policy values, and underwriting, claims and agent conduct. Missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, 70% target",
+    heroSubs: [
+      "Start with the Insurance Code basics.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Ask your insurer to book your IC exam.",
+    ],
+    sourceLine: "Based on the Amended Insurance Code (R.A. 10607) and Philippine law as of November 2026. Original questions; 50 per test. Not affiliated with the Insurance Commission or any insurance company.",
+    analyticsKey: "phinsurance",
+  },
+};
+
+const phrebroker: ExamConfig = {
+  id: "phrebroker",
+  stateCode: "PHREB",
+  idBase: 19800,
+  slug: "/real-estate-broker-exam-philippines",
+  landingPath: "/real-estate-broker-board-exam-reviewer-practice-test",
+  name: "Real Estate Broker Board Exam Reviewer",
+  shortName: "REB Exam",
+  examLabel: "broker board exam",
+  fullName: "Real Estate Brokers Licensure Examination (PRC)",
+  questionIdPrefix: "PHREB-",
+  icon: "house",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 75,
+  // PRB of Real Estate Service exam program (April 2025): General/Fundamentals 25%, Special and
+  // Technical Knowledge 25%, Professional Practice 50%. Pass: average 75%, no subject below 50%
+  // (R.A. 9646 Sec. 15); only the 75% is scored here. Each 50-item test is 13 + 12 + 25, spread
+  // evenly over each subject's topics as the 2011 TOS does: 4/3/3/3, 3/3/3/3, 5/4/4/4/4/4.
+  // All items original; Philippine law as of November 2026, no tax rates, fees or peso limits.
+  blueprint: {
+    phrebOwnership: 4,
+    phrebEthics: 3,
+    phrebResa: 3,
+    phrebLawsTax: 3,
+    phrebSubdivision: 3,
+    phrebCondo: 3,
+    phrebSaleMortgageLease: 3,
+    phrebDocumentation: 3,
+    phrebBrokerage: 5,
+    phrebFinance: 4,
+    phrebUrbanLandUse: 4,
+    phrebPlanningZoning: 4,
+    phrebEcology: 4,
+    phrebAppraisal: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 19801, name: "Property Ownership & Real Estate Laws", categories: ["phrebOwnership", "phrebLawsTax"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 2, id: 19802, name: "RESA & Code of Ethics", categories: ["phrebResa", "phrebEthics"], size: 24, weightLabel: "6 of 50 test questions" },
+    { setNumber: 3, id: 19803, name: "Subdivision & Condominium", categories: ["phrebSubdivision", "phrebCondo"], size: 24, weightLabel: "6 of 50 test questions" },
+    { setNumber: 4, id: 19804, name: "Sale, Mortgage, Lease & Registration", categories: ["phrebSaleMortgageLease", "phrebDocumentation"], size: 24, weightLabel: "6 of 50 test questions" },
+    { setNumber: 5, id: 19805, name: "Brokerage Practice & Finance", categories: ["phrebBrokerage", "phrebFinance"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 6, id: 19806, name: "Urban Land Use, Planning & Zoning", categories: ["phrebUrbanLandUse", "phrebPlanningZoning"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 7, id: 19807, name: "Ecology & Basic Appraisal", categories: ["phrebEcology", "phrebAppraisal"], size: 32, weightLabel: "8 of 50 test questions" },
+  ],
+  categoryLabels: {
+    phrebOwnership: "Fundamentals of Property Ownership",
+    phrebEthics: "Code of Ethics & Responsibilities",
+    phrebResa: "Real Estate Service Act (R.A. 9646)",
+    phrebLawsTax: "Real Estate Laws & Taxation",
+    phrebSubdivision: "Subdivision Development",
+    phrebCondo: "Condominium & Other Real Estate Holdings",
+    phrebSaleMortgageLease: "Sale, Mortgage & Lease",
+    phrebDocumentation: "Documentation & Registration",
+    phrebBrokerage: "Real Estate Brokerage Practice",
+    phrebFinance: "Real Estate Finance & Economics",
+    phrebUrbanLandUse: "Urban & Land Use",
+    phrebPlanningZoning: "Planning, Development & Zoning",
+    phrebEcology: "Basic Principles of Ecology",
+    phrebAppraisal: "Basic Appraisal for Brokers",
+  },
+  copy: {
+    guestPrompt: "to save your broker board exam progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Seven sets across all three subjects: ownership and real estate laws, R.A. 9646 and ethics, subdivisions and condominiums, sale, mortgage, lease and registration, brokerage and finance, land use and zoning, and ecology and appraisal. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock exams · 50 items weighted 25/25/50, 75% to pass",
+    heroSubs: [
+      "Three subjects, four mock exams. Professional Practice is half the rating.",
+      "Master each topic set, then test.",
+      "Halfway there. Try a mock exam.",
+      "Fix the misses, then retake.",
+      "All done. Good luck on the board exam.",
+    ],
+    sourceLine: "Based on the PRC exam program for the Real Estate Brokers Licensure Examination and Philippine law as of November 2026. Original questions; 50 per mock exam, weighted 25/25/50 by subject. Not affiliated with the PRC, the Professional Regulatory Board of Real Estate Service or any review center.",
+    analyticsKey: "phrebroker",
+  },
+};
+
 const ngpolice: ExamConfig = {
   id: "ngpolice",
   stateCode: "NGPOLICE",
@@ -12431,7 +13118,7 @@ const iedttcv: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, nhie, cna, ptcb, phleb, ccma, cma, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, sfadmin, phr, cisa, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzfirearms, nzlcq, phlto, zak53, zak53c3, sgbtt, sgftt, sgres, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, esdgt, ptimt, bedriving, dkteori, setrafik, fitheory, grdriving, rodrpciv, hukresz, mttheory, detheorie, phlet, texesppr, praxisplt, praxis5001, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, gulfrn, inrto, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, nhie, cna, ptcb, phleb, ccma, cma, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, sfadmin, phr, cisa, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzfirearms, nzlcq, phlto, zak53, zak53c3, sgbtt, sgftt, sgres, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, esdgt, ptimt, bedriving, dkteori, setrafik, fitheory, grdriving, rodrpciv, hukresz, mttheory, detheorie, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, gulfrn, inrto, htl, cst, crcst];
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
 export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA, realestatePA, realestateIL, realestateOH, realestateGA, realestateNC, realestateMI, realestateVA, realestateWA, realestateAZ, realestateTN, insuranceNY, insurancePA, insuranceIL, insuranceOH, insuranceGA, insuranceNC, insuranceMI, insuranceNJ, insuranceVA, insuranceWA, pncNY, pncPA, pncIL, pncOH, pncGA, pncNC, pncMI, pncNJ, pncVA, pncWA];

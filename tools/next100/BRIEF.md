@@ -338,3 +338,84 @@ Notes for every international batch 1 builder:
 - Never name a commercial prep provider; say "not affiliated with" the exam body on the landing.
 - If an exam's official format (count, pass mark) cannot be confirmed, use a Tigertest target and say
   so in sources.md, the landing and examFacts, as `zak53` does.
+
+## International batch 2: Philippines licensure, insurance and uniformed-service exams (Nov 2026)
+
+Same rules as batches A to C and international batch 1 (read them). All v1. Branch `intl-batch-1`
+(international batch 1 is wired there: grep its banks for duplicates). Goal: take the Philippines
+(region PH, which has `phlto`, `phcse` and `phlet`) towards 20 tests with the English-language PRC
+board exams, the Insurance Commission agent exam and the police and military entrance tests people
+and review centres pay for. Templates: PRC board exams copy `tools/next100/phlet` (region PH, PRC
+format, its `WIRING.md` shape); NAPOLCOM and AFPSAT copy `tools/next100/ngpolice` (recruitment
+aptitude: English, maths, reasoning, general information) with `tools/next100/phcse` for Philippine
+verbal and numerical items; insurance copies `tools/next100/llqp` or `tools/next100/mypce`; the real
+estate broker exam copies `tools/next100/sgres`. Every exam here is region PH, so `WIRING.md` needs
+its TEST_REGIONS line (`<id>: "PH"`) and its `NON_DRIVING_TESTS` line. Hub groups, all new, placed
+after "Philippines government and licensure exams": "Philippines health board exams" (phnle,
+phmedtech, phpharm, phmidwife, phpsychom), "Philippines police, military and criminology exams"
+(phnapolcom, afpsat, phcle) and "Philippines insurance and real estate licences" (phinsurance,
+phrebroker); say the group in WIRING.md. The PRC board exams and phcle are teacher-led (review
+centres): add them to `TEACHER_LED`.
+
+| id | Test | Region | idBase | stateCode | prefix | slug | landing | hue |
+|---|---|---|---|---|---|---|---|---|
+| phnapolcom | NAPOLCOM PNP Entrance Examination | PH | 18900 | PHNAPOLCOM | PHNAP- | /napolcom-exam | /napolcom-exam-reviewer-practice-test | 225 70% 20% |
+| phcle | Criminologist Licensure Examination (PRC) | PH | 19000 | PHCLE | PHCLE- | /criminologist-licensure-exam | /criminology-board-exam-reviewer-practice-test | 350 50% 22% |
+| phnle | Philippine Nurse Licensure Examination (PRC) | PH | 19100 | PHNLE | PHNLE- | /nurse-licensure-exam | /nle-reviewer-practice-test | 185 70% 22% |
+| phinsurance | Insurance Commission licensing exam, traditional life agent | PH | 19200 | PHINS | PHINS- | /insurance-commission-exam | /insurance-commission-exam-reviewer-practice-test | 200 15% 22% |
+| phpsychom | Psychometrician Licensure Examination (PRC) | PH | 19300 | PHPSYCHOM | PHPSY- | /psychometrician-board-exam | /psychometrician-board-exam-reviewer-practice-test | 265 70% 22% |
+| phmedtech | Medical Technologist Licensure Examination (PRC) | PH | 19400 | PHMEDTECH | PHMT- | /medtech-board-exam | /medtech-board-exam-reviewer-practice-test | 170 70% 22% |
+| phpharm | Pharmacist Licensure Examination (PRC) | PH | 19500 | PHPHARM | PHRPH- | /pharmacist-board-exam | /pharmacist-board-exam-reviewer-practice-test | 140 20% 22% |
+| afpsat | AFP Service Aptitude Test (AFPSAT) | PH | 19600 | AFPSAT | AFPSAT- | /afpsat | /afpsat-reviewer-practice-test | 85 70% 20% |
+| phmidwife | Midwife Licensure Examination (PRC) | PH | 19700 | PHMIDWIFE | PHMW- | /midwife-board-exam | /midwife-board-exam-reviewer-practice-test | 330 70% 22% |
+| phrebroker | Real Estate Broker Licensure Examination (PRC) | PH | 19800 | PHREB | PHREB- | /real-estate-broker-exam-philippines | /real-estate-broker-board-exam-reviewer-practice-test | 30 70% 22% |
+
+Notes for every international batch 2 builder:
+- Hues above were checked with a script against every `[data-theme]` `--brand` in `app/globals.css`
+  and every hue in this file (white-text contrast 4.5:1 or better; nothing within 8 degrees unless
+  saturation differs by 15 or lightness by 8); use as given. idBases 18900 to 19800 are free in
+  `lib/exams.ts` and `lib/v2`; slugs and landings are free in `app/`.
+- PRC board exams (phcle, phnle, phpsychom, phmedtech, phpharm, phmidwife, phrebroker): each is several
+  subjects of 100 items (or a stated count) over two or three days, passing on a general average of 75%
+  with a per-subject floor set by each board's resolution. Blueprint the 200 items by the board's
+  current table of specifications (cite the PRC Board Resolution in sources.md), model the general
+  average only, and say on the landing that the subject floor is not modelled, as `phlet` does. Use
+  Philippine law and practice: the board's own law (R.A. 11131 Criminology, R.A. 9173 Nursing, R.A.
+  10029 Psychology, R.A. 5527 as amended Medical Technology, R.A. 10918 Pharmacy, R.A. 7392 Midwifery,
+  R.A. 9646 RESA), DOH programmes, the Philippine National Formulary, PhilHealth; generic drug names
+  (R.A. 6675); pesos.
+- phnapolcom and afpsat: aptitude tests whose official subject split and pass mark may not be
+  published (guides report a 70% rating to pass the PNP Entrance, unconfirmed; AFPSAT cut-offs vary by
+  branch). Where a figure cannot be confirmed, use a Tigertest target and say so in sources.md, the
+  landing and examFacts, as `zak53` and `ngpolice` do. General information items are static facts (the
+  1987 Constitution, R.A. 6975 and R.A. 8551 for the PNP, R.A. 7077 and the AFP's structure for
+  afpsat); no current affairs, no office-holders, nothing about insurgencies or contested politics.
+  English only (Filipino items, if any, follow `phlet`'s four-item pattern with English explanations).
+- phinsurance: Insurance Code (P.D. 612 as amended by R.A. 10607), Insurance Commission circulars on
+  agent licensing and conduct, traditional life products only (variable life is the separate VUL exam);
+  no premium rates, fees or yearly limits.
+- Lanes and duplicates: phnapolcom vs `data/nigeria-police-questions.json`, `data/police-exam-questions.json`
+  and `data/v2/phcse` (Philippine police law and PNP structure; English, maths and reasoning items written
+  fresh, no repeated stems or number sets); afpsat vs `data/v2/asvab`, `data/v2/phcse` and phnapolcom
+  (write the two side by side and check each against the other); phcle vs phnapolcom,
+  `data/police-exam-questions.json` and `data/security-guard-questions.json` (criminal law and
+  jurisprudence under the Revised Penal Code, criminalistics, crime detection, sociology of crimes,
+  correctional administration, law enforcement administration); phnle vs `data/v2/nclex`,
+  `data/v2/nclexpn`, `data/gulf-nursing-questions.json` and `data/kenya-nursing-council-questions.json`
+  (Philippine nursing law, DOH programmes, community health nursing in the Philippine setting; no repeated
+  vignettes); phmedtech vs `data/phlebotomy-questions.json` and `data/htl-questions.json` (clinical
+  chemistry, microbiology and parasitology, hematology, blood banking and immunoserology, clinical
+  microscopy, histopathology and MT laws); phpharm vs `data/ptcb-questions.json` (Philippine pharmacy law,
+  FDA Philippines, pharmacognosy, pharmaceutical chemistry, pharmacology, pharmaceutics, hospital and
+  dispensing); phmidwife vs phnle, `data/v2/nclex` and `data/cna-questions.json` (midwifery practice,
+  maternal and newborn care, family planning, primary health care); phpsychom vs `data/v2/appsych`,
+  `data/rbt-questions.json` and `data/nce-questions.json` (theories of personality, abnormal psychology,
+  industrial/organizational psychology, psychological assessment, R.A. 10029 and its code of ethics);
+  phinsurance vs `data/life-health-questions.json`, `data/llqp-questions.json` and
+  `data/malaysia-pce-questions.json`; phrebroker vs `data/real-estate-questions.json`,
+  `data/singapore-res-questions.json` and the real estate state variants (Philippine law: RESA, Civil
+  Code on property, P.D. 957, Maceda Law R.A. 6552, the Torrens system, Philippine valuation standards;
+  no tax or fee rates).
+- Never name a commercial review centre or prep provider; say "not affiliated with" the PRC, NAPOLCOM,
+  the AFP or the Insurance Commission on the landing.
+- US spelling (license, center) and pesos, as used in the Philippines and in `phlto`.

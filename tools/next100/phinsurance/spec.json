@@ -1,0 +1,35 @@
+{
+  "id": "phinsurance",
+  "stateCode": "PHINS",
+  "idBase": 19200,
+  "prefix": "PHINS-",
+  "slug": "/insurance-commission-exam",
+  "landingPath": "/insurance-commission-exam-reviewer-practice-test",
+  "dataFile": "data/philippines-insurance-questions.json",
+  "region": "PH",
+  "name": "Insurance Commission Exam Reviewer",
+  "shortName": "IC Exam",
+  "examLabel": "IC licensing exam",
+  "fullName": "Insurance Commission Licensing Exam for Traditional Life Agents (Philippines)",
+  "icon": "umbrella",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 70,
+  "categories": [
+    {"key": "phinsPrinciples", "label": "Risk & Principles of Insurance", "perTest": 5, "pool": 20, "segment": "PRN"},
+    {"key": "phinsContract", "label": "The Insurance Contract", "perTest": 8, "pool": 32, "segment": "CON"},
+    {"key": "phinsLifeLaw", "label": "Life Insurance Law", "perTest": 8, "pool": 32, "segment": "LLW"},
+    {"key": "phinsProducts", "label": "Traditional Life Products & Riders", "perTest": 8, "pool": 32, "segment": "PRD"},
+    {"key": "phinsPolicyValues", "label": "Premiums, Values & Options", "perTest": 6, "pool": 24, "segment": "VAL"},
+    {"key": "phinsUnderwriting", "label": "Underwriting & Claims", "perTest": 5, "pool": 20, "segment": "UND"},
+    {"key": "phinsAgents", "label": "Agent Licensing & Conduct", "perTest": 6, "pool": 24, "segment": "AGT"},
+    {"key": "phinsRegulation", "label": "Regulation & Consumer Protection", "perTest": 4, "pool": 16, "segment": "REG"}
+  ],
+  "notes": "The Insurance Commission publishes no syllabus weights; guides say the traditional life exam is 50 multiple-choice (and true or false) items, about 1 hour, 70% to pass (unconfirmed officially). Four 50-question mock tests at the 70% line; blueprint is Tigertest's. Content sets first: 4 sets + 4 tests = 8 steps. Pools exactly 4x per test.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 19201, "name": "Principles & the Insurance Contract", "categories": ["phinsPrinciples", "phinsContract"], "size": 52},
+    {"setNumber": 2, "id": 19202, "name": "Life Insurance Law & Regulation", "categories": ["phinsLifeLaw", "phinsRegulation"], "size": 48},
+    {"setNumber": 3, "id": 19203, "name": "Products, Premiums & Policy Values", "categories": ["phinsProducts", "phinsPolicyValues"], "size": 56},
+    {"setNumber": 4, "id": 19204, "name": "Underwriting, Claims & Agent Conduct", "categories": ["phinsUnderwriting", "phinsAgents"], "size": 44}
+  ]
+}

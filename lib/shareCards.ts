@@ -34,7 +34,7 @@ const hubs: Record<string, ShareCard> = {
   in: { title: "Free practice tests for India", lines: ["Free practice tests", "for India"], description: "Learner's licence, government jobs, JEE, NEET and teacher tests.", footer: "Find your test at tigertest.io/in", color: "#B35A00", tint: "#FFF3E0", mascots: ["dmv", "nclex", "aws"] },
   ie: { title: "Free practice tests for Ireland", lines: ["Free practice tests", "for Ireland"], description: "Car, truck and bus theory tests, college entrance and IT certifications.", footer: "Find your test at tigertest.io/ie", color: "#13704A", tint: "#E6F5EC", mascots: ["dmv", "sat", "aws"] },
   nz: { title: "Free practice tests for New Zealand", lines: ["Free practice tests", "for New Zealand"], description: "Learner and firearms licences, the LCQ and IT certifications.", footer: "Find your test at tigertest.io/nz", color: "#1F2A44", tint: "#ECEFF6", mascots: ["dmv", "sat", "aws"] },
-  ph: { title: "Free practice tests for the Philippines", lines: ["Free practice tests", "for the Philippines"], description: "LTO exam reviewer, Civil Service Exam, LET and IT certifications.", footer: "Find your test at tigertest.io/ph", color: "#1F3A5F", tint: "#EAF0F7", mascots: ["dmv", "sat", "aws"] },
+  ph: { title: "Free practice tests for the Philippines", lines: ["Free practice tests", "for the Philippines"], description: "LTO exam, Civil Service Exam, LET, PRC board exams and NAPOLCOM.", footer: "Find your test at tigertest.io/ph", color: "#1F3A5F", tint: "#EAF0F7", mascots: ["dmv", "sat", "aws"] },
   my: { title: "Free practice tests for Malaysia", lines: ["Free practice tests", "for Malaysia"], description: "KPP01 theory test, PCEIA insurance exam and IT certifications.", footer: "Find your test at tigertest.io/my", color: "#7A1FA2", tint: "#F5EAFA", mascots: ["dmv", "sat", "aws"] },
   sg: { title: "Free practice tests for Singapore", lines: ["Free practice tests", "for Singapore"], description: "Basic and Final Theory Tests, RES exam and IT certifications.", footer: "Find your test at tigertest.io/sg", color: "#A30000", tint: "#FCEBEB", mascots: ["dmv", "sat", "aws"] },
   hk: { title: "Free practice tests for Hong Kong", lines: ["Free practice tests", "for Hong Kong"], description: "Driving theory test, IIQE, LE Paper 1 and IT certifications.", footer: "Find your test at tigertest.io/hk", color: "#A3007A", tint: "#FBE9F5", mascots: ["dmv", "sat", "aws"] },
@@ -875,6 +875,46 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
   "phlet": {
     "color": "hsl(160, 25%, 40%)",
     "tint": "hsl(160, 35%, 95%)"
+  },
+  "phnle": {
+    "color": "hsl(185, 70%, 22%)",
+    "tint": "hsl(185, 70%, 96%)"
+  },
+  "phmedtech": {
+    "color": "hsl(170, 70%, 22%)",
+    "tint": "hsl(170, 70%, 96%)"
+  },
+  "phpharm": {
+    "color": "hsl(140, 20%, 22%)",
+    "tint": "hsl(140, 20%, 96%)"
+  },
+  "phmidwife": {
+    "color": "hsl(330, 70%, 22%)",
+    "tint": "hsl(330, 70%, 96%)"
+  },
+  "phpsychom": {
+    "color": "hsl(265, 70%, 22%)",
+    "tint": "hsl(265, 70%, 96%)"
+  },
+  "phnapolcom": {
+    "color": "hsl(225, 70%, 20%)",
+    "tint": "hsl(225, 70%, 96%)"
+  },
+  "afpsat": {
+    "color": "hsl(85, 70%, 20%)",
+    "tint": "hsl(85, 70%, 96%)"
+  },
+  "phcle": {
+    "color": "hsl(350, 50%, 22%)",
+    "tint": "hsl(350, 50%, 96%)"
+  },
+  "phinsurance": {
+    "color": "hsl(200, 15%, 22%)",
+    "tint": "hsl(200, 15%, 96%)"
+  },
+  "phrebroker": {
+    "color": "hsl(30, 70%, 22%)",
+    "tint": "hsl(30, 70%, 96%)"
   },
   "ngpolice": {
     "color": "hsl(235, 65%, 30%)",

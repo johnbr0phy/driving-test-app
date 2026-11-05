@@ -2912,6 +2912,162 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "PRC enhanced Table of Specifications for the LEPT (Board Resolution No. 11, s. 2022, Annex A, amended by Board Resolution No. 11, s. 2025), the PRC LEPT examination program and BPT Resolution No. 228, s. 1996, checked November 2026",
     source: { name: "Professional Regulation Commission", url: "https://www.prc.gov.ph/" },
   },
+  phnle: {
+    answer:
+      "The Philippine Nurse Licensure Examination (NLE or PNLE, the nursing board exam) is the written exam every applicant for a nursing license must pass under the Philippine Nursing Act of 2002 (R.A. 9173). The Professional Regulation Commission gives it through the Professional Regulatory Board of Nursing. It has five parts over two days, Nursing Practice I to V, each two hours: community health nursing; care of the mother and adolescent, and human growth and development; surgery, oxygenation, fluids and electrolytes, infection and immunity, and cellular aberrations; nutrition, gastrointestinal, metabolism and endocrine, and perception and coordination; and maladaptive behavior plus life-threatening and emergency care. Guides report 100 items per part. To pass you need a general average of at least 75% with no subject below 60%.",
+    rows: [
+      { label: "Run by", value: "PRC, Professional Regulatory Board of Nursing" },
+      { label: "Parts", value: "Nursing Practice I to V, over two days" },
+      { label: "Time", value: "2 hours per part" },
+      { label: "Items", value: "Guides report 100 per part (500 in all)" },
+      { label: "Pass mark", value: "General average 75%, no subject below 60% (R.A. 9173)" },
+      { label: "Format", value: "Pen and paper; calculators not allowed" },
+      { label: "2026 sittings", value: "February 26-27 and August 29-30; check PRC for the next" },
+      { label: "Not modelled here", value: "Situational item sets and the 60% subject floor" },
+    ],
+    basedOn: "PRC program of the Nurses Licensure Examination, August 29-30, 2026, Board of Nursing Resolution No. 10, s. 2025 and R.A. 9173, checked November 2026",
+    source: { name: "Professional Regulation Commission", url: "https://www.prc.gov.ph/" },
+  },
+  phmedtech: {
+    answer:
+      "The Medical Technologist Licensure Examination (MTLE), often called the MedTech board exam, is given by the Professional Regulation Commission (PRC) through the Professional Regulatory Board of Medical Technology under RA 5527; a license is required to practice as a medical technologist in the Philippines. It has six subjects over two days, each a two-hour session of 100 items: Clinical Chemistry, Microbiology and Parasitology, Hematology, and Blood Banking and Serology at 20% each, and Clinical Microscopy and Histopathologic Techniques, MT Laws and Ethics at 10% each. To pass you need a general weighted average of at least 75% with no major subject below 50%.",
+    rows: [
+      { label: "Run by", value: "PRC, Professional Regulatory Board of Medical Technology" },
+      { label: "Subjects", value: "Six, 100 items each, over two days" },
+      { label: "Time", value: "Two hours per subject, three subjects a day" },
+      { label: "Weights", value: "Chemistry, Micro/Para, Hematology, Blood Bank/Serology 20% each; Clinical Microscopy, Histopath/Laws 10% each" },
+      { label: "Pass mark", value: "General average 75%, no major subject below 50%" },
+      { label: "Calculator", value: "Non-programmable calculators allowed (PRC list)" },
+      { label: "Sittings", value: "March and August in 2026; check PRC" },
+      { label: "Not modelled here", value: "The per-subject 50% floor and the 60%-of-subjects rule" },
+    ],
+    basedOn: "PRC Professional Regulatory Board of Medical Technology Resolution No. 13, s. 2023 and its Annex A tables of specifications, the PRC program for the August 15 and 16, 2026 MTLE, and RA 5527 (Philippine Medical Technology Act of 1969), checked November 2026",
+    source: { name: "Professional Regulation Commission", url: "https://www.prc.gov.ph/" },
+  },
+  phpharm: {
+    answer:
+      "The Pharmacist Licensure Examination (PhLE) is given by the Professional Regulation Commission (PRC) through the Professional Regulatory Board of Pharmacy; under R.A. 10918, the Philippine Pharmacy Act, you must pass it to practice as a pharmacist in the Philippines, and it is held twice a year. It has six subjects over two days. In the April 2026 program they are Pharmaceutical Chemistry 20%, Pharmacognosy and Biochemistry 15%, Practice of Pharmacy 17.5%, Pharmacology and Pharmacokinetics 15%, Pharmaceutics 17.5% (with jurisprudence and ethics) and Quality Control and Quality Assurance 15%. To pass you need a general weighted average of at least 75% with no subject below 50%. Only basic calculators are allowed.",
+    rows: [
+      { label: "Run by", value: "PRC, Professional Regulatory Board of Pharmacy" },
+      { label: "Subjects", value: "Six, over two days (Saturday and Sunday)" },
+      { label: "Weights", value: "Pharm Chem 20%, Pharmacognosy 15%, Practice 17.5%, Pharmacology 15%, Pharmaceutics 17.5%, QC/QA 15%" },
+      { label: "Time per subject", value: "1.5 to 2 hours (April 2026 program)" },
+      { label: "Pass mark", value: "General weighted average 75%, no subject below 50%" },
+      { label: "Calculator", value: "Basic only (+, -, x, /, memory and square root)" },
+      { label: "Sittings", value: "Twice a year; check PRC for dates" },
+      { label: "Not modelled here", value: "The 50% per-subject floor" },
+    ],
+    basedOn: "PRC Professional Regulatory Board of Pharmacy, revised program of the Pharmacists Licensure Examination on April 18 and 19, 2026, and R.A. 10918 (Philippine Pharmacy Act) Sec. 15 to 17, checked November 2026",
+    source: { name: "Professional Regulation Commission", url: "https://www.prc.gov.ph/" },
+  },
+  phmidwife: {
+    answer:
+      "The Midwife Licensure Examination (the midwife board exam) is the written exam that the Professional Regulation Commission (PRC) and the Professional Regulatory Board of Midwifery give to graduates of midwifery; under R.A. 7392, the Philippine Midwifery Act of 1992, no one may practice midwifery without passing it. It has five subjects over two days, each a two-hour session: Obstetrics, Fundamentals of Health Care, and Infant Care and Feeding on day one, and Primary Health Care and Professional Growth and Development on day two. Sociology, bacteriology, anatomy and physiology, psychology, nutrition, parasitology, microbiology and pharmacology are integrated into those subjects. To pass you need a general rating of 75% with no grade below 50% in any subject.",
+    rows: [
+      { label: "Run by", value: "PRC, Professional Regulatory Board of Midwifery" },
+      { label: "Subjects", value: "Obstetrics; Fundamentals of Health Care; Infant Care and Feeding; Primary Health Care; Professional Growth and Development" },
+      { label: "Time", value: "2 hours per subject, over two days" },
+      { label: "Pass mark", value: "General rating 75%, no subject below 50% (R.A. 7392, Sec. 16)" },
+      { label: "Format", value: "Pen and paper; calculators not allowed" },
+      { label: "Sittings", value: "Usually twice a year; check PRC for the next" },
+      { label: "Not modelled here", value: "The 50% floor per subject" },
+    ],
+    basedOn: "PRC programs of the Midwife Licensure Examination (April 29-30, 2024 and April 14-15, 2026) and R.A. 7392, checked November 2026",
+    source: { name: "Professional Regulation Commission", url: "https://www.prc.gov.ph/" },
+  },
+  phpsychom: {
+    answer:
+      "The Psychometrician Licensure Examination (PmLE) is given by the Professional Regulation Commission (PRC) through the Professional Regulatory Board of Psychology; under the Philippine Psychology Act of 2009 (R.A. 10029) a license is needed to practice as a psychometrician, who administers, scores and interprets objective and structured personality tests (not projective tests) under a licensed psychologist's supervision. The PRC's 2024, 2025 and 2026 programs list four subjects over two days, each in a three-hour session: Developmental Psychology 20%, Abnormal Psychology 20%, Industrial-Organizational Psychology 20% and Psychological Assessment 40%. To pass you need a weighted general average of at least 75% with no subject below 60%.",
+    rows: [
+      { label: "Run by", value: "PRC, Professional Regulatory Board of Psychology" },
+      { label: "Subjects", value: "Developmental 20%, Abnormal 20%, Industrial-Organizational 20%, Psychological Assessment 40%" },
+      { label: "Time", value: "Two days, four 3-hour sessions (8 to 11 a.m. and 1 to 4 p.m.)" },
+      { label: "Pass mark", value: "Weighted general average 75%, no subject below 60% (R.A. 10029, Sec. 18)" },
+      { label: "Items per subject", value: "Not on the PRC program; guides report 150 for Assessment and 100 for the others" },
+      { label: "Calculator", value: "Non-programmable calculators on PRC's approved list" },
+      { label: "Law", value: "R.A. 10029, Philippine Psychology Act of 2009" },
+      { label: "Not modelled here", value: "The 60% floor per subject" },
+    ],
+    basedOn: "PRC programs for the Psychometricians Licensure Examination of August 2024, September 2025 and August 2026, R.A. 10029 and the Code of Ethics and Professional Standards for Psychology Practitioners (Board Resolution No. 11, s. 2017), checked November 2026",
+    source: { name: "Professional Regulation Commission", url: "https://www.prc.gov.ph/" },
+  },
+  phnapolcom: {
+    answer:
+      "The PNP Entrance Examination (PNPE) is given nationwide by the National Police Commission (NAPOLCOM), the latest confirmed sitting was on April 19, 2026, when 9,224 examinees passed it. It is an objective, multiple-choice paper with three hours allotted (8:00 to 11:00 A.M.) on four areas: general information and uprightness (the Constitution, R.A. 6975 and R.A. 8551, the criminal justice system, values), verbal reasoning, quantitative reasoning and logical reasoning. Passing confers the police eligibility needed for appointment as Patrolman or Patrolwoman. Civilian applicants must have a bachelor's degree and be 21 to 30 years old on exam day. NAPOLCOM does not publish the number of items or the passing score; guides say 70%.",
+    rows: [
+      { label: "Run by", value: "National Police Commission (NAPOLCOM)" },
+      { label: "Format", value: "Objective multiple choice" },
+      { label: "Time", value: "3 hours (8:00 to 11:00 A.M.)" },
+      { label: "Areas", value: "General information, verbal, quantitative, logical reasoning" },
+      { label: "Number of items", value: "Not published" },
+      { label: "Passing score", value: "Not published (guides: 70%)" },
+      { label: "Tigertest mock exams", value: "4 x 50 questions, 70% target" },
+      { label: "Civilian applicants", value: "Bachelor's degree, age 21 to 30 on exam day" },
+      { label: "Passing gives", value: "Police eligibility for Patrolman/Patrolwoman" },
+    ],
+    basedOn: "NAPOLCOM's PNP Entrance and Promotional Examinations Announcement (June 30, 2024 exam) and NAPOLCOM's April 2026 results release, checked November 2026",
+    source: { name: "National Police Commission", url: "https://www.napolcom.gov.ph/" },
+  },
+  afpsat: {
+    answer:
+      "The AFP Service Aptitude Test (AFPSAT) is the written aptitude test the Armed Forces of the Philippines uses as the first filter for applicants to the Philippine Army, the Philippine Navy (including the Marines) and the Philippine Air Force, for officer and enlisted programs. It is set out in AFP circulars and given in batches by the services' testing and recruitment offices around the country; applicants bring original documents such as a diploma or certificate, transcript of records or Form 137, PSA birth certificate and a government ID. The AFP does not publish the number of items, the time limit or a passing score, and guides say each service sets its own cut-off. Reviewers describe verbal, numerical, logical and abstract, spatial and mechanical reasoning and general information. Passing is followed by each service's own physical, medical and background screening.",
+    rows: [
+      { label: "Run by", value: "Armed Forces of the Philippines (service testing and recruitment offices)" },
+      { label: "For", value: "Officer and enlisted applicants to the Army, Navy and Air Force" },
+      { label: "Format", value: "Written aptitude test, multiple choice" },
+      { label: "Items and time", value: "Not published (some reviewers quote about 150 items)" },
+      { label: "Areas (guides)", value: "Verbal, numerical, logical and abstract, spatial and mechanical, general information" },
+      { label: "Passing score", value: "Not published; guides say each service sets its own" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions, 70% target" },
+      { label: "Bring (2025 regional notice)", value: "Original diploma or certificate, TOR or Form 137, PSA birth certificate, valid ID" },
+    ],
+    basedOn: "AFP regional AFPSAT announcements as reported by RMN (April 2025) and the PIA (2023), and Gamos and Usona, Graduate Forum 18(1), 2024, which cites AFP Circulars on the AFPSAT of 2013, 2015 and 2020, checked November 2026",
+    source: { name: "Armed Forces of the Philippines", url: "https://www.afp.mil.ph/" },
+  },
+  phcle: {
+    answer:
+      "The Licensure Examination for Criminologists (CLE) is given by the Professional Regulation Commission (PRC) through the Professional Regulatory Board of Criminology; passing it is required to register as a criminologist under R.A. 11131, the Philippine Criminology Profession Act of 2018. It covers six subjects over three days: Criminal Law and Jurisprudence 20%, Law Enforcement Administration 15%, Crime Detection and Investigation 20%, Forensic Science 15%, Criminology 20% and Correctional Administration 10%. To pass you need a weighted average of at least 75% with no grade below 60% in any subject; a subject below 60% with a 75% average is deferred and must be retaken within two years with at least 80%.",
+    rows: [
+      { label: "Run by", value: "PRC, Professional Regulatory Board of Criminology" },
+      { label: "Subjects", value: "Six over three days, two a day" },
+      { label: "Weights", value: "Criminal Law 20%, Law Enforcement 15%, Crime Detection 20%, Forensic Science 15%, Criminology 20%, Correctional Administration 10%" },
+      { label: "Time", value: "Morning subjects 8:00 to 11:30 a.m., afternoon subjects 1:30 to 4:00 p.m." },
+      { label: "Items", value: "100 in each 20% subject (Board table of specifications)" },
+      { label: "Pass mark", value: "Weighted average 75%, no subject below 60%" },
+      { label: "Sittings", value: "February and August in 2026; check PRC for later dates" },
+      { label: "Not modelled here", value: "The 60% subject floor and the full exam length" },
+    ],
+    basedOn: "PRC programs of the February and August 2026 Licensure Examinations for Criminologists, Board of Criminology Resolution No. 05, s. 2022 (table of specifications) and R.A. 11131 Sec. 17, checked November 2026",
+    source: { name: "Professional Regulation Commission", url: "https://www.prc.gov.ph/" },
+  },
+  phinsurance: {
+    answer:
+      "The Insurance Commission (IC) licensing exam for traditional life agents is the written qualifying exam a person must pass before the IC issues a license to sell traditional life insurance in the Philippines. Under the Amended Insurance Code (R.A. 10607), no one may act as an insurance agent or receive a commission without a license from the Insurance Commissioner, and applicants must pass a written examination. The life insurer you will represent registers you for the exam and endorses your license application; the IC runs it on paper and online. The IC does not publish the format on a page we could check: review guides report 50 multiple-choice and true or false items in about one hour, with 70% to pass. An agent's license is renewed every three years.",
+    rows: [
+      { label: "Run by", value: "Insurance Commission (attached to the Department of Finance)" },
+      { label: "Who registers you", value: "The life insurance company you will represent" },
+      { label: "Questions", value: "About 50, multiple choice and true or false (guides report)" },
+      { label: "Time", value: "About 1 hour (guides report)" },
+      { label: "Pass mark", value: "70% (guides report; not published by the IC)" },
+      { label: "Format", value: "Paper at IC venues or online (Online ACE)" },
+      { label: "License", value: "Renewed every 3 years (Insurance Code, Section 307)" },
+    ],
+    basedOn: "Amended Insurance Code (R.A. 10607) Sections 307 and 312, and IC Circular Letters 2021-01, 2021-08 and 2024-21, checked November 2026",
+    source: { name: "Republic Act No. 10607 (Lawphil)", url: "https://lawphil.net/statutes/repacts/ra2013/ra_10607_2013.html" },
+  },
+  phrebroker: {
+    answer:
+      "The Real Estate Brokers Licensure Examination is the board exam that the Professional Regulation Commission gives through the Professional Regulatory Board of Real Estate Service under R.A. 9646, the Real Estate Service Act; a license is required to practice as a real estate broker in the Philippines. In the Board's recent exam programs it is given in one day in three subjects: General/Fundamentals of Real Estate Service (25%, two hours), Special and Technical Knowledge (25%, two hours) and Professional Practice (50%, four hours). To pass you need an average of at least 75% in all subjects with no rating below 50% in any subject.",
+    rows: [
+      { label: "Subjects", value: "General/Fundamentals 25%; Special and Technical Knowledge 25%; Professional Practice 50%" },
+      { label: "Time", value: "2 h, 2 h and 4 h on one day" },
+      { label: "Items", value: "100, 100 and 200 in the Board's 2011 table of specifications" },
+      { label: "Pass mark", value: "Average 75%, no subject below 50% (R.A. 9646 Sec. 15)" },
+      { label: "Run by", value: "PRC, Professional Regulatory Board of Real Estate Service" },
+    ],
+    basedOn: "the PRC exam program for the 22 April 2025 Real Estate Brokers Licensure Examination and R.A. 9646, checked November 2026",
+    source: { name: "PRC: Real Estate Brokers Licensure Examination program (April 2025)", url: "https://prc.gov.ph/sites/default/files/041025%20EXAM%20PROGRAM%20REAL%20ESTATE%20BROKERS_Rev1.pdf" },
+  },
   jeemain: {
     answer:
       "JEE (Main) Paper 1 is the National Testing Agency's computer-based entrance test for B.E. and B.Tech. admission to NITs, IIITs and other centrally funded institutes, and the qualifying test for JEE (Advanced). It has 75 questions for 300 marks in 3 hours: 25 each in Mathematics, Physics and Chemistry, of which 20 are multiple choice (Section A) and 5 need a numerical value typed as an integer (Section B). Every answer earns 4 marks if correct and loses 1 if wrong, in both sections. For 2027 it is held in two sessions, January and April, and the better NTA score counts.",

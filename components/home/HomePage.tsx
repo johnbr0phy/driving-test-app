@@ -80,7 +80,7 @@ const AUTHORITY: Record<Exclude<Region, "US">, string> = {
   IN: "any RTO or transport department",
   IE: "the RSA or the NDLS",
   NZ: "NZTA, NZQA, Firearms Safety and Education New Zealand or any testing agent",
-  PH: "the LTO",
+  PH: "the LTO, the PRC, the Civil Service Commission, NAPOLCOM, the AFP or the Insurance Commission",
   MY: "JPJ or the Asian Institute of Insurance",
   SG: "the Traffic Police, any driving centre or CEA",
   HK: "the Transport Department, the Insurance Authority, the SFC or the HKSI Institute",

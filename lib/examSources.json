@@ -671,6 +671,11 @@
   "https://www.eqao.com/framework-osslt/",
   "https://eqao.com/the-assessments/osslt/"
  ],
+ "pakarmy": [
+  "https://www.joinpakarmy.gov.pk",
+  "https://www.pakistanarmy.gov.pk",
+  "https://www.app.com.pk/?p=1056892"
+ ],
  "pcoc": [
   "https://tc.canada.ca/en/marine-transportation/marine-safety/proof-competency-recreational-boaters",
   "https://tc.canada.ca/en/marine-transportation/preparing-operate-your-vessel/pleasure-craft-operator-card-pcoc",
@@ -746,12 +751,32 @@
   "https://gopunjab.pk/driving-license-online-punjab/",
   "https://www.pakwheels.com/blog/?p=184964"
  ],
+ "pknle": [
+  "https://pmdc.pk/Documents/law/PMDC%20Act.pdf",
+  "https://pmdc.pk/Documents/Syllabus/National%20Registration%20Examination%20(Medical",
+  "https://pmdc.pk/Documents/press/NRE%20IS%20A%20STANDARD%20EXAMINATION.pdf"
+ ],
+ "pkpaf": [
+  "https://joinpaf.gov.pk",
+  "https://www.joinpaf.gov.pk",
+  "https://www.paf.gov.pk"
+ ],
+ "pkpnmc": [
+  "https://pnmc.gov.pk/",
+  "https://pnmc.gov.pk/pnmc-act/",
+  "https://pnmc.gov.pk/wp-content/uploads/2023/09/PNMC-Amended-Act-2023.pdf"
+ ],
  "pmp": [
   "https://www.pmi.org/-/media/pmi/documents/public/pdf/certifications/new-pmp-examination-content-outline-2026.pdf",
   "https://www.pmi.org/certifications/project-management-pmp/new-exam"
  ],
  "police": [
   "https://post.ca.gov/portals/0/post_docs/publications/Applicant_Preparation_Guide_for-the-POST_Entry-Level-Law-Enforcement-Test-Battery.pdf"
+ ],
+ "ppsc": [
+  "https://en.wikipedia.org/wiki/Punjab_Public_Service_Commission_(Pakistan",
+  "https://mcqsdrive.com/blog/ppsc-syllabus-2026/",
+  "https://www.pakistani.org/pakistan/constitution/"
  ],
  "praxis": [
   "https://praxis.ets.org/on/demandware.static/-/Library-Sites-ets-praxisLibrary/default/pdfs/5723.pdf",
@@ -778,6 +803,11 @@
   "https://www.madeira.gov.pt//Portals/27/Documentos/Legislacao/2012_07_05_DecLei_138_2012_AlteraoCodigodaEstradaeAprovaoRegulamentodaHabilitacaoLegalparaConduzir.pdf",
   "https://diariodarepublica.pt/dr/detalhe/decreto-lei/138-2012-178550",
   "https://www.imt-ip.pt/pt/condutores/carta-de-conducao"
+ ],
+ "punjabpolice": [
+  "https://punjabpolice.gov.pk/node/22506",
+  "https://punjabpolice.gov.pk/system/files/Advertisement%208.1.2025_0.pdf",
+  "https://punjabpolice.gov.pk/node/28033"
  ],
  "rajpolice": [
   "https://police.rajasthan.gov.in",
@@ -1003,5 +1033,25 @@
   "https://www.gov.za/services/driving-licence/apply-learners-licence",
   "https://en.wikipedia.org/wiki/Driving_licence_in_South_Africa",
   "https://wcedonline.westerncape.gov.za/circulars/circulars15/e44_15.html"
+ ],
+ "zak53moto": [
+  "https://www.gov.za/services/driving-licence/apply-learners-licence",
+  "https://en.wikipedia.org/wiki/Driving_licence_in_South_Africa",
+  "https://www.arrivealive.co.za/the-learner-motorcyclist-do-we-test-effectively"
+ ],
+ "zapsira": [
+  "https://www.gov.za/sites/default/files/gcis_document/201409/a56-010.pdf",
+  "https://www.gov.za/documents/private-security-industry-regulation-act",
+  "https://www.justice.gov.za/legislation/acts/1977-051.pdf"
+ ],
+ "zare5": [
+  "https://www.moonstone.co.za/wp-content/uploads/library/Regulatory%20Exam%20Library/RE%20Preparation%20Guidelines/RE1%20and%20RE5%20Preparation%20Guideline.pdf",
+  "https://www.moonstone.co.za/wp-content/uploads/library/Regulatory%20Exam%20Library/RE%20Preparation%20Guidelines/Re5%20Task%20QC.pdf",
+  "https://www.moonstone.co.za/services/regulatory-exam-body/"
+ ],
+ "zasaps": [
+  "https://www.saps.gov.za/careers/",
+  "https://www.saps.gov.za/careers/downloads/2026/trainee/Police-Trainee-Advert-2026-2027.pdf",
+  "https://www.saps.gov.za/careers/ptrainees.php"
  ]
 }

@@ -2874,6 +2874,146 @@
     --brand-gradient-to: 25 70% 96%;
   }
 
+  /* PPSC general ability (Pakistan) theme */
+  [data-theme="ppsc"] {
+    --brand: 145 55% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 145 45% 95%;
+    --brand-hover: 145 55% 14%;
+    --brand-dark: 145 55% 12%;
+    --brand-darker: 145 50% 8%;
+    --brand-muted: 145 25% 65%;
+    --brand-border: 145 25% 76%;
+    --brand-border-light: 145 22% 88%;
+    --brand-gradient-to: 160 40% 95%;
+  }
+
+  /* Punjab Police (Pakistan) constable theme */
+  [data-theme="punjabpolice"] {
+    --brand: 215 40% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 215 35% 95%;
+    --brand-hover: 215 40% 15%;
+    --brand-dark: 215 40% 13%;
+    --brand-darker: 215 35% 9%;
+    --brand-muted: 215 20% 66%;
+    --brand-border: 215 20% 78%;
+    --brand-border-light: 215 18% 88%;
+    --brand-gradient-to: 200 35% 95%;
+  }
+
+  /* Pak Army soldier initial test theme */
+  [data-theme="pakarmy"] {
+    --brand: 95 70% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 95 45% 95%;
+    --brand-hover: 95 70% 14%;
+    --brand-dark: 95 70% 12%;
+    --brand-darker: 95 65% 8%;
+    --brand-muted: 95 25% 65%;
+    --brand-border: 95 25% 76%;
+    --brand-border-light: 95 22% 88%;
+    --brand-gradient-to: 80 40% 95%;
+  }
+
+  /* PAF airman test theme */
+  [data-theme="pkpaf"] {
+    --brand: 205 70% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 205 45% 95%;
+    --brand-hover: 205 70% 14%;
+    --brand-dark: 205 70% 12%;
+    --brand-darker: 205 65% 8%;
+    --brand-muted: 205 25% 65%;
+    --brand-border: 205 25% 76%;
+    --brand-border-light: 205 22% 88%;
+    --brand-gradient-to: 190 40% 95%;
+  }
+
+  /* PMDC National Registration Examination (NRE, formerly NLE) theme */
+  [data-theme="pknle"] {
+    --brand: 175 55% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 175 45% 95%;
+    --brand-hover: 175 55% 18%;
+    --brand-dark: 175 55% 16%;
+    --brand-darker: 175 50% 11%;
+    --brand-muted: 175 25% 68%;
+    --brand-border: 175 25% 78%;
+    --brand-border-light: 175 22% 88%;
+    --brand-gradient-to: 190 45% 95%;
+  }
+
+  /* PNMC nursing licensing exam theme */
+  [data-theme="pkpnmc"] {
+    --brand: 320 70% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 320 45% 95%;
+    --brand-hover: 320 70% 18%;
+    --brand-dark: 320 70% 16%;
+    --brand-darker: 320 65% 11%;
+    --brand-muted: 320 25% 68%;
+    --brand-border: 320 25% 78%;
+    --brand-border-light: 320 22% 88%;
+    --brand-gradient-to: 335 45% 95%;
+  }
+
+  /* South Africa K53 Code 1 (motorcycle) learner's theme */
+  [data-theme="zak53moto"] {
+    --brand: 25 40% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 25 35% 95%;
+    --brand-hover: 25 40% 14%;
+    --brand-dark: 25 40% 13%;
+    --brand-darker: 25 35% 9%;
+    --brand-muted: 25 20% 70%;
+    --brand-border: 25 25% 78%;
+    --brand-border-light: 25 20% 88%;
+    --brand-gradient-to: 18 30% 95%;
+  }
+
+  /* RE5 (South Africa FAIS representatives) theme */
+  [data-theme="zare5"] {
+    --brand: 40 55% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 40 55% 96%;
+    --brand-hover: 40 55% 17%;
+    --brand-dark: 40 55% 16%;
+    --brand-darker: 40 50% 10%;
+    --brand-muted: 40 25% 70%;
+    --brand-border: 40 25% 80%;
+    --brand-border-light: 40 20% 89%;
+    --brand-gradient-to: 40 70% 96%;
+  }
+
+  /* SAPS police trainee assessment theme */
+  [data-theme="zasaps"] {
+    --brand: 230 55% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 230 50% 95%;
+    --brand-hover: 230 55% 14%;
+    --brand-dark: 230 55% 14%;
+    --brand-darker: 230 55% 10%;
+    --brand-muted: 230 25% 66%;
+    --brand-border: 230 28% 78%;
+    --brand-border-light: 230 26% 88%;
+    --brand-gradient-to: 230 35% 95%;
+  }
+
+  /* PSIRA security officer (South Africa) theme */
+  [data-theme="zapsira"] {
+    --brand: 270 55% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 270 55% 96%;
+    --brand-hover: 270 55% 17%;
+    --brand-dark: 270 55% 16%;
+    --brand-darker: 270 50% 10%;
+    --brand-muted: 270 20% 70%;
+    --brand-border: 270 20% 80%;
+    --brand-border-light: 270 18% 89%;
+    --brand-gradient-to: 275 70% 96%;
+  }
+
   /* JEE Main theme: muted terracotta brown (v2 exam; matches lib/v2/exams/jeemain.ts theme) */
   [data-theme="jeemain"] {
     --brand: 18 30% 32%;
@@ -6178,6 +6318,126 @@
     --brand-muted: 30 25% 45%;
     --brand-dark: 30 70% 65%;
     --brand-darker: 30 60% 78%;
+  }
+
+  .dark [data-theme="ppsc"] {
+    --brand: 145 55% 33.7%;
+    --brand-hover: 145 55% 25.7%;
+    --brand-light: 145 45% 13%;
+    --brand-gradient-to: 160 40% 11%;
+    --brand-border-light: 145 22% 24%;
+    --brand-border: 145 25% 34%;
+    --brand-muted: 145 25% 45%;
+    --brand-dark: 145 55% 65%;
+    --brand-darker: 145 50% 78%;
+  }
+
+  .dark [data-theme="punjabpolice"] {
+    --brand: 215 40% 49.7%;
+    --brand-hover: 215 40% 41.7%;
+    --brand-light: 215 35% 13%;
+    --brand-gradient-to: 200 35% 11%;
+    --brand-border-light: 215 18% 24%;
+    --brand-border: 215 20% 34%;
+    --brand-muted: 215 20% 45%;
+    --brand-dark: 215 40% 65%;
+    --brand-darker: 215 35% 78%;
+  }
+
+  .dark [data-theme="pakarmy"] {
+    --brand: 95 70% 30.4%;
+    --brand-hover: 95 70% 22.4%;
+    --brand-light: 95 45% 13%;
+    --brand-gradient-to: 80 40% 11%;
+    --brand-border-light: 95 22% 24%;
+    --brand-border: 95 25% 34%;
+    --brand-muted: 95 25% 45%;
+    --brand-dark: 95 70% 65%;
+    --brand-darker: 95 65% 78%;
+  }
+
+  .dark [data-theme="pkpaf"] {
+    --brand: 205 70% 42.9%;
+    --brand-hover: 205 70% 34.9%;
+    --brand-light: 205 45% 13%;
+    --brand-gradient-to: 190 40% 11%;
+    --brand-border-light: 205 22% 24%;
+    --brand-border: 205 25% 34%;
+    --brand-muted: 205 25% 45%;
+    --brand-dark: 205 70% 65%;
+    --brand-darker: 205 65% 78%;
+  }
+
+  .dark [data-theme="pknle"] {
+    --brand: 175 55% 32.9%;
+    --brand-hover: 175 55% 24.9%;
+    --brand-light: 175 45% 13%;
+    --brand-gradient-to: 190 40% 11%;
+    --brand-border-light: 175 22% 24%;
+    --brand-border: 175 25% 34%;
+    --brand-muted: 175 25% 45%;
+    --brand-dark: 175 55% 65%;
+    --brand-darker: 175 50% 78%;
+  }
+
+  .dark [data-theme="pkpnmc"] {
+    --brand: 320 70% 49%;
+    --brand-hover: 320 70% 41%;
+    --brand-light: 320 45% 13%;
+    --brand-gradient-to: 335 40% 11%;
+    --brand-border-light: 320 22% 24%;
+    --brand-border: 320 25% 34%;
+    --brand-muted: 320 25% 45%;
+    --brand-dark: 320 70% 65%;
+    --brand-darker: 320 65% 78%;
+  }
+
+  .dark [data-theme="zak53moto"] {
+    --brand: 25 40% 44.2%;
+    --brand-hover: 25 40% 36.2%;
+    --brand-light: 25 35% 13%;
+    --brand-gradient-to: 18 30% 11%;
+    --brand-border-light: 25 20% 24%;
+    --brand-border: 25 25% 34%;
+    --brand-muted: 25 20% 45%;
+    --brand-dark: 25 40% 65%;
+    --brand-darker: 25 35% 78%;
+  }
+
+  .dark [data-theme="zare5"] {
+    --brand: 40 55% 37%;
+    --brand-hover: 40 55% 29%;
+    --brand-light: 40 45% 13%;
+    --brand-gradient-to: 40 40% 11%;
+    --brand-border-light: 40 20% 24%;
+    --brand-border: 40 25% 34%;
+    --brand-muted: 40 25% 45%;
+    --brand-dark: 40 55% 65%;
+    --brand-darker: 40 50% 78%;
+  }
+
+  .dark [data-theme="zasaps"] {
+    --brand: 230 55% 50%;
+    --brand-hover: 230 55% 42%;
+    --brand-light: 230 45% 13%;
+    --brand-gradient-to: 230 35% 11%;
+    --brand-border-light: 230 26% 24%;
+    --brand-border: 230 28% 34%;
+    --brand-muted: 230 25% 45%;
+    --brand-dark: 230 55% 65%;
+    --brand-darker: 230 55% 78%;
+  }
+
+  .dark [data-theme="zapsira"] {
+    --brand: 270 55% 50%;
+    --brand-hover: 270 55% 42%;
+    --brand-light: 270 45% 13%;
+    --brand-gradient-to: 275 40% 11%;
+    --brand-border-light: 270 18% 24%;
+    --brand-border: 270 20% 34%;
+    --brand-muted: 270 20% 45%;
+    --brand-dark: 270 55% 65%;
+    --brand-darker: 270 50% 78%;
   }
 
   .dark [data-theme="jeemain"] {

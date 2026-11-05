@@ -39,9 +39,9 @@ const hubs: Record<string, ShareCard> = {
   sg: { title: "Free practice tests for Singapore", lines: ["Free practice tests", "for Singapore"], description: "Basic and Final Theory Tests, RES exam and IT certifications.", footer: "Find your test at tigertest.io/sg", color: "#A30000", tint: "#FCEBEB", mascots: ["dmv", "sat", "aws"] },
   hk: { title: "Free practice tests for Hong Kong", lines: ["Free practice tests", "for Hong Kong"], description: "Driving theory test, IIQE, LE Paper 1 and IT certifications.", footer: "Find your test at tigertest.io/hk", color: "#A3007A", tint: "#FBE9F5", mascots: ["dmv", "sat", "aws"] },
   ae: { title: "Free practice tests for the UAE", lines: ["Free practice tests", "for the UAE"], description: "Driving theory test, SIRA guard exam and IT certifications.", footer: "Find your test at tigertest.io/ae", color: "#0C6B52", tint: "#E6F5F0", mascots: ["dmv", "sat", "aws"] },
-  za: { title: "Free practice tests for South Africa", lines: ["Free practice tests", "for South Africa"], description: "K53 learner's test, college entrance and IT certifications.", footer: "Find your test at tigertest.io/za", color: "#4F7408", tint: "#F0F6E3", mascots: ["dmv", "sat", "aws"] },
+  za: { title: "Free practice tests for South Africa", lines: ["Free practice tests", "for South Africa"], description: "K53 learner's tests, RE5, SAPS and PSIRA security officer grades.", footer: "Find your test at tigertest.io/za", color: "#4F7408", tint: "#F0F6E3", mascots: ["dmv", "sat", "aws"] },
   ng: { title: "Free practice tests for Nigeria", lines: ["Free practice tests", "for Nigeria"], description: "JAMB UTME, recruitment tests, the TRCN PQE and the driving test.", footer: "Find your test at tigertest.io/ng", color: "#1B6B20", tint: "#E8F4E9", mascots: ["dmv", "sat", "aws"] },
-  pk: { title: "Free practice tests for Pakistan", lines: ["Free practice tests", "for Pakistan"], description: "Driving licence sign test, college entrance and IT certifications.", footer: "Find your test at tigertest.io/pk", color: "#0B5E3A", tint: "#E6F4EC", mascots: ["dmv", "sat", "aws"] },
+  pk: { title: "Free practice tests for Pakistan", lines: ["Free practice tests", "for Pakistan"], description: "Driving licence, PPSC, police, Army, PAF, PMDC NRE and PNMC tests.", footer: "Find your test at tigertest.io/pk", color: "#0B5E3A", tint: "#E6F4EC", mascots: ["dmv", "sat", "aws"] },
   ke: { title: "Free practice tests for Kenya", lines: ["Free practice tests", "for Kenya"], description: "NTSA driving test, NCK nursing exam and IT certifications.", footer: "Find your test at tigertest.io/ke", color: "#066A6E", tint: "#E4F4F5", mascots: ["dmv", "sat", "aws"] },
   es: { title: "Free practice tests for Spain", lines: ["Free practice tests", "for Spain"], description: "DGT theory exam in English, college entrance and IT certifications.", footer: "Find your test at tigertest.io/es", color: "#970C1F", tint: "#FDEDEF", mascots: ["dmv", "sat", "aws"] },
   pt: { title: "Free practice tests for Portugal", lines: ["Free practice tests", "for Portugal"], description: "IMT theory exam in English, college entrance and IT certifications.", footer: "Find your test at tigertest.io/pt", color: "#0B8425", tint: "#EDFDF0", mascots: ["dmv", "sat", "aws"] },
@@ -915,6 +915,46 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
   "phrebroker": {
     "color": "hsl(30, 70%, 22%)",
     "tint": "hsl(30, 70%, 96%)"
+  },
+  "ppsc": {
+    "color": "hsl(145, 55%, 18%)",
+    "tint": "hsl(145, 55%, 96%)"
+  },
+  "punjabpolice": {
+    "color": "hsl(215, 40%, 18%)",
+    "tint": "hsl(215, 40%, 96%)"
+  },
+  "pakarmy": {
+    "color": "hsl(95, 70%, 18%)",
+    "tint": "hsl(95, 70%, 96%)"
+  },
+  "pknle": {
+    "color": "hsl(175, 55%, 22%)",
+    "tint": "hsl(175, 55%, 96%)"
+  },
+  "pkpnmc": {
+    "color": "hsl(320, 70%, 22%)",
+    "tint": "hsl(320, 70%, 96%)"
+  },
+  "pkpaf": {
+    "color": "hsl(205, 70%, 18%)",
+    "tint": "hsl(205, 70%, 96%)"
+  },
+  "zare5": {
+    "color": "hsl(40, 55%, 22%)",
+    "tint": "hsl(40, 55%, 96%)"
+  },
+  "zasaps": {
+    "color": "hsl(230, 55%, 18%)",
+    "tint": "hsl(230, 55%, 96%)"
+  },
+  "zak53moto": {
+    "color": "hsl(25, 40%, 18%)",
+    "tint": "hsl(25, 40%, 96%)"
+  },
+  "zapsira": {
+    "color": "hsl(270, 55%, 22%)",
+    "tint": "hsl(270, 55%, 96%)"
   },
   "ngpolice": {
     "color": "hsl(235, 65%, 30%)",

@@ -3068,6 +3068,159 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the PRC exam program for the 22 April 2025 Real Estate Brokers Licensure Examination and R.A. 9646, checked November 2026",
     source: { name: "PRC: Real Estate Brokers Licensure Examination program (April 2025)", url: "https://prc.gov.ph/sites/default/files/041025%20EXAM%20PROGRAM%20REAL%20ESTATE%20BROKERS_Rev1.pdf" },
   },
+  ppsc: {
+    answer:
+      "The Punjab Public Service Commission (PPSC), founded in 1937 and based in Lahore, recruits for posts in the Government of Punjab, Pakistan. Each advertisement links its own syllabus. Many posts use a one-paper MCQ written test, which guides describe as 100 questions in 90 minutes, with a general ability part covering general knowledge, Pakistan Studies, Islamic Studies (Ethics for non-Muslims), current affairs, geography, English, basic mathematics, everyday science and computers, often alongside questions on the post's own subject. The qualifying mark and whether wrong answers lose marks vary by post, so check the advertisement. Qualified candidates are usually interviewed.",
+    rows: [
+      { label: "Run by", value: "Punjab Public Service Commission, Lahore" },
+      { label: "Format", value: "One-paper MCQ test (syllabus set per post)" },
+      { label: "Questions and time (guides)", value: "Commonly 100 MCQs in 90 minutes" },
+      { label: "General ability topics", value: "GK, Pakistan Studies, Islamiat, current affairs, English, maths, science, computers" },
+      { label: "Pass mark", value: "Varies by post (not published as one figure)" },
+      { label: "Negative marking", value: "Varies by post; check your advertisement" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions, 70% target" },
+      { label: "After the test", value: "Interview for qualified candidates" },
+    ],
+    basedOn: "Guides to PPSC one-paper MCQ tests and search listings of PPSC syllabus notices, checked November 2026 (ppsc.gop.pk did not load when checked)",
+    source: { name: "Punjab Public Service Commission", url: "https://www.ppsc.gop.pk/" },
+  },
+  punjabpolice: {
+    answer:
+      "The Punjab Police in Pakistan recruits Constables and Lady Constables (BPS-7) district by district, through advertisements issued from the Central Police Office in Lahore. In its 2025 and 2026 advertisements, applicants in settled areas had to be 18 to 22 with a Matric certificate of at least 50% marks, a domicile of the district and minimum height (and, for men, chest) measurements, with wider limits in the de-excluded areas of Dera Ghazi Khan and Rajanpur. Candidates are measured, run 1.6 km (7 minutes for men, 10 for women), and those who pass take a written examination; those who pass that are called for interview. Punjab Police does not publish the number of questions, the time, the subjects or a pass mark for the written test.",
+    rows: [
+      { label: "Run by", value: "Punjab Police (district recruitment committees)" },
+      { label: "Posts", value: "Constable, Lady Constable (BPS-7); Driver Constable" },
+      { label: "Stages", value: "Height and chest, 1.6 km race, written test, interview" },
+      { label: "Questions and time", value: "Not published" },
+      { label: "Subjects", value: "Not published" },
+      { label: "Pass mark", value: "Not published" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions, 70% target" },
+      { label: "Age (settled areas, 2025-2026)", value: "18 to 22" },
+      { label: "Education", value: "Matric, at least 50% marks (settled areas)" },
+    ],
+    basedOn: "Punjab Police advertisements of 25 January 2025 and 31 October 2026 and its March 2025 notice on the written examinations, checked November 2026",
+    source: { name: "Punjab Police", url: "https://punjabpolice.gov.pk/" },
+  },
+  pakarmy: {
+    answer:
+      "The Pakistan Army recruits soldiers (General Duty, Technical, Driver, Military Police, Clerk, Cook and other categories) through registration online at joinpakarmy.gov.pk or in person at an Army Selection and Recruitment Centre or regimental centre. The Associated Press of Pakistan's report on the 2025 drive listed the selection process as a written test, physical and medical tests and an interview at the selection and recruitment centres. The Army does not publish a syllabus, question count or pass mark for the written test; candidates and guides describe verbal and non-verbal intelligence sections and matric-level multiple-choice questions on English, mathematics, general knowledge, Islamiat and Pakistan studies. For the drive with registration from 1 September to 23 November 2026, most soldier categories took candidates aged 17½ to 23 with at least Matric (Intermediate for clerks), as reported in the news.",
+    rows: [
+      { label: "Run by", value: "Pakistan Army (Army Selection and Recruitment Centres)" },
+      { label: "Registration", value: "Online at joinpakarmy.gov.pk or in person at an AS&RC" },
+      { label: "Selection stages", value: "Written test, physical and medical tests, interview" },
+      { label: "Written test content", value: "Not published; guides say verbal and non-verbal intelligence plus matric-level MCQs" },
+      { label: "Pass mark", value: "Not published" },
+      { label: "Age (most soldier categories, 2026 drive)", value: "17½ to 23, with relaxations for some areas" },
+      { label: "Education (2026 drive)", value: "Matric for General Duty; Intermediate for Clerk" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions, 70% target" },
+    ],
+    basedOn: "the Associated Press of Pakistan's report on the 2025 soldier recruitment drive and news reports of the 2026 advertisement, checked November 2026 (joinpakarmy.gov.pk did not load)",
+    source: { name: "Join Pak Army", url: "https://www.joinpakarmy.gov.pk" },
+  },
+  pkpaf: {
+    answer:
+      "The Pakistan Air Force recruits airmen through its official recruitment portal and its selection and recruitment centres, which announce each intake in an advertisement. The PAF does not publish a syllabus, question count or pass mark for the airman tests. Candidates and guides describe an academic test at matric or intermediate level (English, mathematics, and physics for technical trades) and intelligence tests with verbal and non-verbal parts, followed by a medical and an interview. Categories, ages and education rules are set in each advertisement, so check the current one.",
+    rows: [
+      { label: "Run by", value: "Pakistan Air Force (PAF selection and recruitment centres)" },
+      { label: "Registration", value: "Through the PAF's official recruitment portal, per each advertisement" },
+      { label: "Written test content", value: "Not published; guides say English, maths, physics and verbal and non-verbal intelligence" },
+      { label: "Pass mark", value: "Not published" },
+      { label: "Airman training", value: "PAF Airmen Academy, Korangi, Karachi (since 2019)" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions, 70% target" },
+    ],
+    basedOn: "the PAF's rank structure and training institutions as documented in November 2026; joinpaf.gov.pk and paf.gov.pk did not load when checked",
+    source: { name: "Join PAF", url: "https://joinpaf.gov.pk" },
+  },
+  pknle: {
+    answer:
+      "The National Registration Examination (NRE), formerly called the National Licensing Examination (NLE), is the exam a Pakistani graduate of a foreign medical college must pass before the Pakistan Medical and Dental Council grants full registration, under section 18 of the PMDC Act 2022. It has two steps. Step 1 is a theory paper of 200 multiple-choice questions, 30 percent applied basic sciences and 70 percent clinical sciences, and Step 2 is a 20-station clinical skills OSCE. Each needs 60 percent, with no negative marking. NUMS, Rawalpindi conducts it for the PM&DC at least twice a year.",
+    rows: [
+      { label: "Run by", value: "PM&DC, conducted by NUMS Rawalpindi" },
+      { label: "For", value: "Pakistani graduates of foreign medical colleges" },
+      { label: "Step 1", value: "200 MCQs: 60 basic sciences, 140 clinical" },
+      { label: "Step 1 length", value: "3 hours 30 minutes (June 2025 sitting)" },
+      { label: "Pass mark", value: "60% in each step, no negative marking" },
+      { label: "Step 2", value: "Clinical Skills Examination, 20 OSCE stations" },
+      { label: "Next Step 1", value: "8 November 2026 (PMDC notice of 5 October 2026)" },
+    ],
+    basedOn: "PM&DC NRE (Medical) Standards, Structure and Syllabus 2024 and PMDC press releases and notices, checked November 2026",
+    source: { name: "Pakistan Medical and Dental Council", url: "https://pmdc.pk/" },
+  },
+  pkpnmc: {
+    answer:
+      "The Pakistan Nursing and Midwifery Council (PNMC), formerly the Pakistan Nursing Council, registers and licenses nurses, midwives and Lady Health Visitors in Pakistan. The Pakistan Nursing and Midwifery Council (Amendment) Act, 2023 lists among its functions carrying out licensure examinations for the grant of a licence to practise. As of November 2026, PNMC does not publish a question count, time limit or pass mark for a registered nurse licensing exam on its website, and Generic BSN graduates must complete a one-year internship before registration.",
+    rows: [
+      { label: "Run by", value: "Pakistan Nursing and Midwifery Council" },
+      { label: "Law", value: "PNC Act 1973, amended by the PNMC (Amendment) Act 2023" },
+      { label: "Questions", value: "Not published by PNMC" },
+      { label: "Pass mark", value: "Not published by PNMC" },
+      { label: "BSN registration", value: "One-year internship required for Generic BSN graduates" },
+      { label: "Programme exams", value: "Provincial Nursing Examination Boards (Punjab, KP, Sindh, Balochistan)" },
+    ],
+    basedOn: "PNMC website (Licensing Exams, PNMC Act, registration and examination boards pages) and the PNMC (Amendment) Act 2023, checked November 2026",
+    source: { name: "Pakistan Nursing and Midwifery Council", url: "https://pnmc.gov.pk/" },
+  },
+  zak53moto: {
+    answer:
+      "The Code 1 learner's licence is South Africa's learner's licence for a motorcycle with or without a sidecar, a motor tricycle or a motor quadricycle, the step before a Code A1 (125 cc or less) or Code A (over 125 cc) motorcycle licence. You must be 16 on the day of the test for a bike of 125 cc or less and 18 for a bigger one. It is the same K53 learner's test as for a car, written at a driving licence testing centre (DLTC) after an eye test, in three sections: rules of the road, road signs and markings, and vehicle controls, the controls section being for a motorcycle. Study guides say the test is 64 questions (28, 28 and 8) with each section passed separately. The learner's licence is valid for 24 months and cannot be extended.",
+    rows: [
+      { label: "Covers", value: "Motorcycles, motor tricycles and quadricycles" },
+      { label: "Minimum age", value: "16 up to 125 cc, 18 over 125 cc" },
+      { label: "Sections", value: "Rules, signs and markings, vehicle controls (28/28/8, guides say)" },
+      { label: "Pass mark", value: "Each section separately (guides say 22, 23 and 6)" },
+      { label: "Valid for", value: "24 months, cannot be extended" },
+      { label: "Leads to", value: "Code A1 or Code A motorcycle licence" },
+      { label: "Run by", value: "Driving licence testing centres (DLTCs)" },
+    ],
+    basedOn: "gov.za learner's licence service page and the National Road Traffic Regulations as quoted by Arrive Alive, checked November 2026; section counts and marks from study guides",
+    source: { name: "gov.za: Apply for a learner's licence", url: "https://www.gov.za/services/driving-licence/apply-learners-licence" },
+  },
+  zare5: {
+    answer:
+      "The RE5 is the regulatory examination for representatives in all categories of financial services providers under South Africa's Financial Advisory and Intermediary Services (FAIS) Act, part of the fit and proper requirements set by the Financial Sector Conduct Authority (FSCA). According to the FSCA's January 2026 preparation guide, it has 50 multiple-choice questions with four options, to be answered in 2 hours, and the pass mark is 66% with no negative marking. It is a closed-book paper exam drawn from a central question bank, covers eight tasks from the FAIS Act and the General Code of Conduct to the FIC Act, the Ombud for FSPs and debarment, and can be written as many times as needed.",
+    rows: [
+      { label: "Questions", value: "50 multiple choice, four options (2% each)" },
+      { label: "Time", value: "2 hours" },
+      { label: "Pass mark", value: "66%, no negative marking" },
+      { label: "Content", value: "8 tasks on the FAIS Act, Codes of Conduct, FIC Act and Ombud" },
+      { label: "Format", value: "Closed book, paper exam at a venue" },
+      { label: "Attempts", value: "No limit" },
+      { label: "Run by", value: "FSCA, through its mandated examination body" },
+    ],
+    basedOn: "FSCA Preparation Guide for Regulatory Examinations (RE 1 and RE 5), 17 January 2026, and the RE5 task map, checked November 2026",
+    source: { name: "Preparation Guide for Regulatory Examinations (RE 1 and RE 5)", url: "https://www.moonstone.co.za/wp-content/uploads/library/Regulatory%20Exam%20Library/RE%20Preparation%20Guidelines/RE1%20and%20RE5%20Preparation%20Guideline.pdf" },
+  },
+  zasaps: {
+    answer:
+      "The South African Police Service (SAPS) recruits entry-level police trainees through advertised intakes; the 2026/2027 advertisement (reference TRA26/27) closes on 13 November 2026. Applicants must be South African citizens aged 18 to 35 at the closing date, hold a Grade 12 certificate, be proficient in English and one other official language and have no criminal convictions or pending cases. Every applicant faces fitness, psychometric and integrity testing, a medical evaluation and an interview, and vetting that includes fingerprint verification; trainees then attend a SAPS Training Academy. SAPS does not publish the number of questions, the time or a pass mark for the written assessment; guides describe literacy, numeracy and reasoning questions. Applying costs nothing. Tigertest practises the literacy, numeracy and reasoning part with four 50-question mock tests and a 70% target.",
+    rows: [
+      { label: "Run by", value: "South African Police Service (SAPS)" },
+      { label: "Assessments", value: "Fitness, psychometric and integrity testing, medical, interview, vetting" },
+      { label: "Written test content (guides)", value: "Literacy, numeracy and reasoning" },
+      { label: "Questions and time", value: "Not published" },
+      { label: "Pass mark", value: "Not published" },
+      { label: "Age and education", value: "18 to 35 at the closing date, Grade 12" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions, 70% target" },
+      { label: "Cost", value: "Free to apply" },
+    ],
+    basedOn: "SAPS entry-level police trainee advertisement 2026/2027 (TRA26/27) and e-Recruitment FAQ, checked November 2026",
+    source: { name: "South African Police Service", url: "https://www.saps.gov.za/careers/ptrainees.php" },
+  },
+  zapsira: {
+    answer:
+      "In South Africa, nobody may work as a security officer for pay without registering with the Private Security Industry Regulatory Authority (PSIRA), under section 20 of the Private Security Industry Regulation Act 56 of 2001. Section 23 requires an applicant to be a fit and proper person, a South African citizen or permanent resident, at least 18 and mentally sound, to have met the prescribed training requirements, and to have no conviction for an offence listed in the Act's Schedule (within 10 years before applying in the Act as published; the Amendment Act 18 of 2014 drops that limit once in operation). Security officer training is done in grades at PSIRA-accredited training centres, and each course ends in an assessment the centre sets. No official question count or pass mark was found; 70% is Tigertest's target.",
+    rows: [
+      { label: "Questions", value: "Set by the training centre; not published by PSIRA" },
+      { label: "Pass mark", value: "Not published; 70% is Tigertest's target" },
+      { label: "Grades covered", value: "E, D and C (Tigertest's grouping of the course topics)" },
+      { label: "Before registering", value: "Prescribed training at a PSIRA-accredited centre" },
+      { label: "Minimum age", value: "18" },
+      { label: "Citizenship", value: "South African citizen or permanent resident" },
+      { label: "Run by", value: "PSIRA-accredited training centres; registration by PSIRA" },
+    ],
+    basedOn: "Private Security Industry Regulation Act 56 of 2001, ss. 20 and 23 (Government Gazette 23051), checked November 2026; assessment format not confirmed",
+    source: { name: "South African Government: Private Security Industry Regulation Act", url: "https://www.gov.za/documents/private-security-industry-regulation-act" },
+  },
   jeemain: {
     answer:
       "JEE (Main) Paper 1 is the National Testing Agency's computer-based entrance test for B.E. and B.Tech. admission to NITs, IIITs and other centrally funded institutes, and the qualifying test for JEE (Advanced). It has 75 questions for 300 marks in 3 hours: 25 each in Mathematics, Physics and Chemistry, of which 20 are multiple choice (Section A) and 5 need a numerical value typed as an integer (Section B). Every answer earns 4 marks if correct and loses 1 if wrong, in both sections. For 2027 it is held in two sessions, January and April, and the better NTA score counts.",

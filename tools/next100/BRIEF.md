@@ -419,3 +419,109 @@ Notes for every international batch 2 builder:
 - Never name a commercial review centre or prep provider; say "not affiliated with" the PRC, NAPOLCOM,
   the AFP or the Insurance Commission on the landing.
 - US spelling (license, center) and pesos, as used in the Philippines and in `phlto`.
+
+## International batch 3: Pakistan recruitment and licensing, South Africa licensing and police (Nov 2026)
+
+Same rules as batches A to C and international batches 1 and 2 (read them). All v1. Branch
+`intl-batch-1` (international batches 1 and 2 are wired there: grep their banks for duplicates). Goal:
+give Pakistan (region PK, which has only `pkdrive`) and South Africa (region ZA, which has `zak53` and
+`zak53c3`) the English-language tests their adults pay for or train for in a class. Pakistan takes the
+three v1 tests queued in QUEUE.md batch 6 (ppsc, punjabpolice, pakarmy; the v2 ones, mdcat, nustnet,
+ecat and cssmpt, wait for a v2 batch) plus the medical and nursing licensing exams and the PAF airman
+test; South Africa takes the queued zare5 and zasaps plus the K53 motorcycle learner's and PSIRA.
+Templates: recruitment and screening tests (ppsc, punjabpolice, pakarmy, pkpaf, zasaps) copy
+`tools/next100/ngpolice` (aptitude: English, maths, reasoning, general knowledge) with
+`tools/next100/ngarmy` for the military pair and `tools/next100/cdcfib` for a GK-heavy lane; licensing
+exams copy `tools/next100/kenck` (pknle, pkpnmc: a non-US health licensing exam and its `WIRING.md`
+shape); zare5 copies `tools/next100/llqp` (non-US financial regulation); zapsira copies
+`tools/next100/aesira` (security guard, non-US law); zak53moto copies `tools/countries/zak53c3`
+(the K53 learner's with a different vehicle code). Every exam has a non-US region, so `WIRING.md`
+needs its TEST_REGIONS line (`<id>: "PK"` or `<id>: "ZA"`), its `NON_DRIVING_TESTS` line unless it
+is zak53moto, and a hub group. zak53moto joins the existing "South Africa driving tests" group.
+New groups, each placed after the country's driving group: "Pakistan government and police
+recruitment tests" (ppsc, punjabpolice, pakarmy, pkpaf), "Pakistan medical and nursing licensing
+exams" (pknle, pkpnmc), "South Africa financial services licensing exams" (zare5) and "South Africa
+police and security tests" (zasaps, zapsira); say the group in WIRING.md. pknle, pkpnmc and zapsira
+are teacher-led (medical colleges, nursing schools, PSIRA-accredited training centres): add them to
+`TEACHER_LED`.
+
+| id | Test | Region | idBase | stateCode | prefix | slug | landing | hue |
+|---|---|---|---|---|---|---|---|---|
+| ppsc | PPSC general ability and GK screening test (Punjab Public Service Commission) | PK | 19900 | PKPPSC | PPSC- | /ppsc | /ppsc-practice-test | 145 55% 18% |
+| punjabpolice | Punjab Police Constable written test | PK | 20000 | PKPUNJPOL | PJPOL- | /punjab-police-constable | /punjab-police-constable-practice-test | 215 40% 18% |
+| pakarmy | Pakistan Army soldier recruitment (initial) test | PK | 20100 | PKARMY | PKARMY- | /pak-army-test | /pak-army-initial-test-practice-test | 95 70% 18% |
+| pknle | PMDC National Licensing Examination (NLE) | PK | 20200 | PKNLE | PKNLE- | /pmdc-nle | /pmdc-nle-practice-test | 175 55% 22% |
+| pkpnmc | PNMC nursing licensing exam (registered nurse) | PK | 20300 | PKPNMC | PKPNMC- | /pnmc-licensing-exam | /pnmc-licensing-exam-practice-test | 320 70% 22% |
+| pkpaf | PAF airman recruitment test (Pakistan Air Force) | PK | 20400 | PKPAF | PKPAF- | /paf-airman-test | /paf-airman-test-practice-test | 205 70% 18% |
+| zare5 | RE5 regulatory exam for representatives (FAIS) | ZA | 20500 | ZARE5 | ZARE5- | /re5-exam | /re5-exam-practice-test | 40 55% 22% |
+| zasaps | SAPS police trainee recruitment assessment | ZA | 20600 | ZASAPS | ZASAPS- | /saps-trainee-assessment | /saps-recruitment-test-practice-test | 230 55% 18% |
+| zak53moto | K53 learner's licence test, Code 1 (motorcycle) | ZA | 20700 | ZAK53C1 | ZAC1- | /k53-motorcycle | /k53-motorcycle-learners-test | 25 40% 18% |
+| zapsira | PSIRA security officer grade assessment (Grades E to C) | ZA | 20800 | ZAPSIRA | ZAPSIRA- | /psira-security | /psira-security-officer-practice-test | 270 55% 22% |
+
+Notes for every international batch 3 builder:
+- Hues above were checked with a script against every `[data-theme]` `--brand` in `app/globals.css`
+  and every hue in this file not yet wired (white-text contrast 4.5:1 or better; nothing within 8
+  degrees unless saturation differs by 15 or lightness by 8); use as given. idBases 19900 to 20800
+  are free in `lib/exams.ts` and `lib/v2`; slugs and landings are free in `app/`.
+- Formats: none of the Pakistan recruitment tests (ppsc, punjabpolice, pakarmy, pkpaf) or zasaps
+  publishes a fixed syllabus split, count or pass mark for every sitting. Confirm what the commission
+  or force publishes (PPSC's syllabus notes, the Punjab Police advertisement, joinpakarmy.gov.pk,
+  joinpaf.gov.pk, the SAPS recruitment notice); where a figure cannot be confirmed, use a Tigertest
+  target and say so in sources.md, the landing and examFacts, as `zak53` and `ngpolice` do. Ability
+  sections of these tests that are figures only (non-verbal, spatial) are written as text patterns, as
+  `jnvst` does, and the landing says so. zasaps: model only the written literacy, numeracy and
+  reasoning part and say the psychometric personality assessment, fitness test and interview are not
+  modelled; never write personality items.
+- General knowledge (ppsc, punjabpolice, pakarmy, pkpaf) is static facts: the 1973 Constitution
+  (structure, fundamental rights, institutions), Pakistan's geography, the Pakistan Movement to 1947
+  as taught in Pakistan Studies, Islamic studies at the level the commissions set (the five pillars,
+  the Prophet's life, basic terms, Quranic chapters by name; mainstream and non-sectarian, nothing on
+  sect differences), everyday science and computers, world geography. No current affairs, no
+  office-holders, no items on Kashmir, India-Pakistan conflicts, constitutional amendments of the
+  last decade, the military's role in politics, blasphemy law, or any party; keep the Armed Forces
+  items to structure, ranks, institutions and history to 1971 stated neutrally. English only (an Urdu
+  item, if any, follows `uppolice`'s pattern with English explanations). Rupees and Pakistani names in
+  word problems.
+- pknle: PMDC's NLE as PMDC currently publishes it (Step 1 MCQs on clinical sciences for local and
+  foreign graduates; confirm the blueprint and pass mark on pmdc.pk; the practical/OSCE step is not
+  modelled). pkpnmc: PNMC's licensing exam for BSN and diploma graduates (confirm on pnmc.gov.pk).
+  Both use Pakistani practice: the EPI schedule, national TB and hepatitis programmes, DRAP, generic
+  drug names, Pakistani public health priorities, and the PMDC Act 2022 / PNMC Act 2023 where they
+  name duties; no fees.
+- zare5: the FSCA's RE5 for representatives under the FAIS Act 37 of 2002, the Determination of
+  Qualifying Criteria (Board Notice 194 of 2017 and its amendments) and the Fit and Proper
+  Requirements; FICA, POPIA, the Code of Conduct and complaints handling at the level the exam
+  tests; confirm the current question count, time and pass mark with the FSCA or its exam
+  administrator (guides report 50 questions in 2 hours, 65%); no rand thresholds or fees.
+- zapsira: the PSIRA Grade E, D and C officer training as the Private Security Industry Regulation Act
+  56 of 2001 and the Code of Conduct (2003) set it: legal powers (Criminal Procedure Act 51 of 1977,
+  section 49 use of force stated as the law reads, arrest by a private person), access control,
+  patrols, incident reports, first response, Occupational Health and Safety Act 85 of 1993; graded
+  sets (one per grade). Training centres set the papers, so the pass mark is a Tigertest target.
+  No weapons handling or firearm content (that is the separate firearm competency course).
+- zak53moto: the K53 learner's licence for Code 1 (motorcycle, motor tricycle or quadricycle), same
+  rules-signs-controls split as `zak53` (22/22/6 per test); the controls part is motorcycle controls
+  (clutch lever, front brake lever, gear lever, kill switch). Learner rules for Code A1/A (helmet,
+  daylight, no pillion) from the National Road Traffic Regulations.
+- Lanes and duplicates: zak53moto vs `data/south-africa-k53-questions.json` and
+  `data/south-africa-k53-code-3-questions.json` (no shared stem: signs reworded to a motorcyclist's
+  situation, rules items on lane position, filtering and visibility); ppsc vs punjabpolice, pakarmy,
+  pkpaf, `data/pakistan-driving-questions.json`, `data/nigeria-police-questions.json` and
+  `data/v2/phcse` (write the four Pakistan recruitment banks side by side, give each a GK lane: ppsc
+  Pakistan Studies, Constitution and world GK; punjabpolice Punjab's geography and districts, policing
+  and the Police Order 2002, criminal law basics under the PPC and CrPC; pakarmy and pkpaf the Armed
+  Forces, everyday science and maths, pakarmy with Army history and pkpaf with aviation and physics
+  basics; no repeated stems or number sets); pakarmy and pkpaf vs `data/nigerian-army-questions.json`,
+  `data/afpsat-questions.json` and `data/v2/asvab`; pknle vs `data/kenya-nursing-council-questions.json`,
+  `data/v2/nclex`, `data/v2/uknmc` and `data/philippines-nle-questions.json` (doctor's level, not
+  nursing; no repeated vignettes); pkpnmc vs `data/kenya-nursing-council-questions.json`,
+  `data/philippines-nle-questions.json`, `data/gulf-nursing-questions.json`, `data/v2/nclex` and
+  pknle; zare5 vs `data/llqp-questions.json`, `data/sie-questions.json`, `data/malaysia-pce-questions.json`
+  and `data/philippines-insurance-questions.json` (South African law only); zasaps vs
+  `data/nigeria-police-questions.json`, `data/police-exam-questions.json`,
+  `data/philippines-napolcom-questions.json` and punjabpolice; zapsira vs
+  `data/security-guard-questions.json`, `data/ontario-security-guard-questions.json`,
+  `data/sira-security-questions.json` and zasaps.
+- Never name a commercial prep provider or academy; say "not affiliated with" the PPSC, Punjab
+  Police, the Pakistan Army, PAF, PMDC, PNMC, the FSCA, SAPS, PSIRA or the RTMC on the landing.
+- British spelling for both countries (licence, centre), rupees (Rs) and rand (R).

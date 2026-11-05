@@ -29,7 +29,7 @@ import epa608Es from "./examTranslations/epa608.es.json";
 import esdgtEs from "./examTranslations/esdgt.es.json";
 import ptimtPt from "./examTranslations/ptimt.pt.json";
 
-export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "bedriving" | "dkteori" | "setrafik" | "fitheory" | "grdriving" | "rodrpciv" | "hukresz" | "mttheory" | "detheorie" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "detheorie" | "htl" | "cst" | "crcst" | "zak53c3";
+export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "bedriving" | "dkteori" | "setrafik" | "fitheory" | "grdriving" | "rodrpciv" | "hukresz" | "mttheory" | "detheorie" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "detheorie" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -13118,7 +13118,674 @@ const iedttcv: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, nhie, cna, ptcb, phleb, ccma, cma, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, sfadmin, phr, cisa, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzfirearms, nzlcq, phlto, zak53, zak53c3, sgbtt, sgftt, sgres, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, esdgt, ptimt, bedriving, dkteori, setrafik, fitheory, grdriving, rodrpciv, hukresz, mttheory, detheorie, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, gulfrn, inrto, htl, cst, crcst];
+// International batch 3: Pakistan and South Africa (Nov 2026)
+const ppsc: ExamConfig = {
+  id: "ppsc",
+  stateCode: "PKPPSC",
+  idBase: 19900,
+  slug: "/ppsc",
+  landingPath: "/ppsc-practice-test",
+  name: "PPSC Practice Test",
+  shortName: "PPSC test",
+  examLabel: "PPSC general ability test",
+  fullName: "PPSC general ability and general knowledge screening test (Punjab Public Service Commission)",
+  questionIdPrefix: "PPSC-",
+  icon: "building",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Source: the Punjab Public Service Commission (Pakistan) sets a syllabus per advertisement.
+  // ppsc.gop.pk did not load when checked (2026-11-05); guides and search snippets of PPSC
+  // syllabus PDFs describe a one-paper MCQ test of 100 questions in 90 minutes whose general
+  // ability part covers general knowledge, Pakistan Studies, Islamic Studies (Ethics for
+  // non-Muslims), current affairs, geography, English, basic maths, everyday science and
+  // computers; negative marking and the qualifying mark vary by post. Weights are Tigertest's own
+  // (English 13, maths 7, reasoning 5, Pakistan Studies 7, Constitution 6, geography 6, Islamiat 3,
+  // computers 3 per test) and 70% (35 of 50) is Tigertest's target. Constitution items checked
+  // against the 1973 Constitution text (pakistani.org). Current affairs and everyday science are
+  // not modelled. Pools are exactly 4x each count (no spares). All items original.
+  blueprint: {
+    ppscEnglish: 7,
+    ppscVocab: 6,
+    ppscMaths: 7,
+    ppscReasoning: 5,
+    ppscHistory: 7,
+    ppscConstitution: 6,
+    ppscGeography: 6,
+    ppscIslamiat: 3,
+    ppscComputer: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 19901, name: "English Grammar & Vocabulary", categories: ["ppscEnglish", "ppscVocab"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 2, id: 19902, name: "Mathematics & Reasoning", categories: ["ppscMaths", "ppscReasoning"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 3, id: 19903, name: "Pakistan Studies & Islamiat", categories: ["ppscHistory", "ppscIslamiat"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 4, id: 19904, name: "Constitution & Computers", categories: ["ppscConstitution", "ppscComputer"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 5, id: 19905, name: "Pakistan & World Geography", categories: ["ppscGeography"], size: 24, weightLabel: "6 of 50 test questions" },
+  ],
+  categoryLabels: {
+    ppscEnglish: "English: Grammar & Usage",
+    ppscVocab: "English: Vocabulary & Idioms",
+    ppscMaths: "Basic Mathematics",
+    ppscReasoning: "Reasoning & Mental Ability",
+    ppscHistory: "Pakistan Studies: History to 1956",
+    ppscConstitution: "The 1973 Constitution",
+    ppscGeography: "Pakistan & World Geography",
+    ppscIslamiat: "Islamic Studies",
+    ppscComputer: "Basic Computer Skills",
+  },
+  copy: {
+    guestPrompt: "to save your PPSC test progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets on the English, mathematics, reasoning and general knowledge in the general ability part of PPSC tests. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, aim for 35 or more",
+    heroSubs: [
+      "Five topics, four 50-question tests. English and maths weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Check your advertisement's syllabus and go.",
+    ],
+    sourceLine: "Based on the general ability syllabus of PPSC written tests and the 1973 Constitution. Original questions; 50 per test, 70% is Tigertest's target.",
+    analyticsKey: "ppsc",
+  },
+};
+
+const punjabpolice: ExamConfig = {
+  id: "punjabpolice",
+  stateCode: "PKPUNJPOL",
+  idBase: 20000,
+  slug: "/punjab-police-constable",
+  landingPath: "/punjab-police-constable-practice-test",
+  name: "Punjab Police Constable Practice Test",
+  shortName: "Punjab Police test",
+  examLabel: "Punjab Police constable test",
+  fullName: "Punjab Police (Pakistan) Constable and Lady Constable written test",
+  questionIdPrefix: "PJPOL-",
+  icon: "badge",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Source: Punjab Police advertisements for Constables and Lady Constables (BPS-7), 25 Jan 2025
+  // (province-wide) and 31 Oct 2026 (Rahim Yar Khan and Rajanpur): Matric with 50% marks, age 18 to
+  // 22 in settled areas, height and chest, 1.6 km race, then a written examination and an
+  // interview. Punjab Police publishes no question count, time, subject split or pass mark; the
+  // format can change between recruitments. Weights are Tigertest's own (English 13,
+  // maths 7, reasoning 5, Punjab 7, Police Order 7, criminal law 6, computer 5 per test), and 70%
+  // (35 of 50) is Tigertest's target. Law from the Police Order 2002 (text as promulgated), the
+  // Punjab Police Code of Conduct, the PPC 1860 and CrPC 1898. Checked 2026-11-05. Pools are
+  // exactly 4x each count (no spares). All items original.
+  blueprint: {
+    pjpolGrammar: 7,
+    pjpolVocab: 6,
+    pjpolMaths: 7,
+    pjpolReasoning: 5,
+    pjpolPunjab: 7,
+    pjpolPoliceOrder: 7,
+    pjpolCriminalLaw: 6,
+    pjpolComputer: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 20001, name: "English", categories: ["pjpolGrammar", "pjpolVocab"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 2, id: 20002, name: "Maths & Reasoning", categories: ["pjpolMaths", "pjpolReasoning"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 3, id: 20003, name: "Police Order 2002 & Policing", categories: ["pjpolPoliceOrder"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 4, id: 20004, name: "Criminal Law (PPC & CrPC)", categories: ["pjpolCriminalLaw"], size: 24, weightLabel: "6 of 50 test questions" },
+    { setNumber: 5, id: 20005, name: "Punjab & Computers", categories: ["pjpolPunjab", "pjpolComputer"], size: 48, weightLabel: "12 of 50 test questions" },
+  ],
+  categoryLabels: {
+    pjpolGrammar: "English: Grammar & Usage",
+    pjpolVocab: "English: Vocabulary & Spelling",
+    pjpolMaths: "Mathematics",
+    pjpolReasoning: "Reasoning",
+    pjpolPunjab: "Punjab: Geography & Landmarks",
+    pjpolPoliceOrder: "Police Order 2002 & Policing",
+    pjpolCriminalLaw: "Criminal Law: PPC & CrPC",
+    pjpolComputer: "Basic Computer Skills",
+  },
+  copy: {
+    guestPrompt: "to save your Punjab Police test progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets on the English, maths, reasoning, Punjab, police law and computer skills a constable candidate needs. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, aim for 35 or more",
+    heroSubs: [
+      "Five topics, four 50-question tests. English and maths weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Keep running for the race and go.",
+    ],
+    sourceLine: "Based on the Police Order 2002, the Punjab Police Code of Conduct, the PPC and CrPC, and the English, maths and reasoning the written test covers. Original questions; 50 per test, 70% is Tigertest's target.",
+    analyticsKey: "punjabpolice",
+  },
+};
+
+const pakarmy: ExamConfig = {
+  id: "pakarmy",
+  stateCode: "PKARMY",
+  idBase: 20100,
+  slug: "/pak-army-test",
+  landingPath: "/pak-army-initial-test-practice-test",
+  name: "Pak Army Initial Test Practice",
+  shortName: "Pak Army test",
+  examLabel: "Pak Army soldier initial test",
+  fullName: "Pakistan Army soldier recruitment (initial) written and intelligence test",
+  questionIdPrefix: "PKARMY-",
+  icon: "medal",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // The Pakistan Army publishes no syllabus, question count, time or pass mark for the soldier
+  // written test. Registration is online at joinpakarmy.gov.pk or at an Army Selection and
+  // Recruitment Centre; APP's report on the 2025 drive gives the selection process as a written
+  // test, physical and medical tests and an interview. Guides describe verbal and non-verbal
+  // intelligence sections and matric-level academic MCQs (English, maths, GK, Islamiat, Pakistan
+  // studies), with conflicting counts and times. Four 50-question tests at 70% (35 of 50) is
+  // Tigertest's target; weights are Tigertest's own. Non-verbal items are written as text.
+  // GK is static: Army ranks, corps and institutions, everyday science, Islamiat, national
+  // symbols. Checked 2026-11-05. Pools are exactly 4x each count (no spares). All items original.
+  blueprint: {
+    pkarmyEnglish: 8,
+    pkarmyMaths: 8,
+    pkarmyVerbal: 7,
+    pkarmyNonVerbal: 5,
+    pkarmyScience: 8,
+    pkarmyArmy: 7,
+    pkarmyIslamiat: 4,
+    pkarmyPakistan: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 20101, name: "English", categories: ["pkarmyEnglish"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 2, id: 20102, name: "Mathematics", categories: ["pkarmyMaths"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 3, id: 20103, name: "Verbal & Non-Verbal Intelligence", categories: ["pkarmyVerbal", "pkarmyNonVerbal"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 4, id: 20104, name: "Everyday Science & First Aid", categories: ["pkarmyScience"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 5, id: 20105, name: "The Army, Islamiat & Pakistan", categories: ["pkarmyArmy", "pkarmyIslamiat", "pkarmyPakistan"], size: 56, weightLabel: "14 of 50 test questions" },
+  ],
+  categoryLabels: {
+    pkarmyEnglish: "English Grammar & Vocabulary",
+    pkarmyMaths: "Mathematics",
+    pkarmyVerbal: "Verbal Intelligence",
+    pkarmyNonVerbal: "Non-Verbal Intelligence",
+    pkarmyScience: "Everyday Science & First Aid",
+    pkarmyArmy: "The Pakistan Army",
+    pkarmyIslamiat: "Islamic Studies",
+    pkarmyPakistan: "Pakistan General Knowledge",
+  },
+  copy: {
+    guestPrompt: "to save your Pak Army test progress and track every question you miss",
+    trainingHeading: "Train by subject",
+    trainingSub: "Five sets on the English, maths, intelligence and general knowledge that the soldier initial test covers. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, aim for 35 or more",
+    heroSubs: [
+      "Five subjects, four 50-question tests.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Get ready for your centre.",
+    ],
+    sourceLine: "Original questions in the subjects the soldier test covers; the Army publishes no format. 50 per test, 70% is Tigertest's target. Not affiliated with the Pakistan Army.",
+    analyticsKey: "pakarmy",
+  },
+};
+
+const pkpaf: ExamConfig = {
+  id: "pkpaf",
+  stateCode: "PKPAF",
+  idBase: 20400,
+  slug: "/paf-airman-test",
+  landingPath: "/paf-airman-test-practice-test",
+  name: "PAF Airman Test Practice",
+  shortName: "PAF airman test",
+  examLabel: "PAF airman recruitment test",
+  fullName: "Pakistan Air Force airman recruitment (initial) academic and intelligence test",
+  questionIdPrefix: "PKPAF-",
+  icon: "medal",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // The PAF publishes no syllabus, question count, time or pass mark for the airman tests that
+  // could be read (joinpaf.gov.pk and paf.gov.pk returned 503 on 2026-11-05). Guides describe an
+  // academic test (English, maths, physics for technical trades) and verbal and non-verbal
+  // intelligence tests at PAF Selection and Recruitment Centres, then a medical and an interview.
+  // Four 50-question tests at 70% (35 of 50) is Tigertest's target; weights are Tigertest's own.
+  // Non-verbal items are written as text. GK is static: PAF ranks and institutions, aviation
+  // basics, physics and electricity. Pools are exactly 4x each count (no spares). All items original.
+  blueprint: {
+    pkpafEnglish: 8,
+    pkpafMaths: 9,
+    pkpafPhysics: 8,
+    pkpafElectronics: 3,
+    pkpafVerbal: 7,
+    pkpafNonVerbal: 5,
+    pkpafAviation: 6,
+    pkpafAirForce: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 20401, name: "English", categories: ["pkpafEnglish"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 2, id: 20402, name: "Mathematics", categories: ["pkpafMaths"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 3, id: 20403, name: "Verbal & Non-Verbal Intelligence", categories: ["pkpafVerbal", "pkpafNonVerbal"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 4, id: 20404, name: "Physics & Electricity", categories: ["pkpafPhysics", "pkpafElectronics"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 5, id: 20405, name: "Aviation & the Air Force", categories: ["pkpafAviation", "pkpafAirForce"], size: 40, weightLabel: "10 of 50 test questions" },
+  ],
+  categoryLabels: {
+    pkpafEnglish: "English Grammar & Vocabulary",
+    pkpafMaths: "Mathematics",
+    pkpafPhysics: "Physics Basics",
+    pkpafElectronics: "Electricity & Electronics",
+    pkpafVerbal: "Verbal Intelligence",
+    pkpafNonVerbal: "Non-Verbal Intelligence",
+    pkpafAviation: "Aviation & Flight Basics",
+    pkpafAirForce: "The Pakistan Air Force",
+  },
+  copy: {
+    guestPrompt: "to save your PAF airman test progress and track every question you miss",
+    trainingHeading: "Train by subject",
+    trainingSub: "Five sets on the English, maths, physics, intelligence and aviation that the airman tests cover. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, aim for 35 or more",
+    heroSubs: [
+      "Five subjects, four 50-question tests.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Get ready for your centre.",
+    ],
+    sourceLine: "Original questions in the subjects the airman tests cover; the PAF publishes no format. 50 per test, 70% is Tigertest's target. Not affiliated with the Pakistan Air Force.",
+    analyticsKey: "pkpaf",
+  },
+};
+
+const pknle: ExamConfig = {
+  id: "pknle",
+  stateCode: "PKNLE",
+  idBase: 20200,
+  slug: "/pmdc-nle",
+  landingPath: "/pmdc-nle-practice-test",
+  name: "PMDC NRE (NLE) Practice Test",
+  shortName: "PMDC NRE",
+  examLabel: "PMDC NRE Step 1",
+  fullName: "PMDC National Registration Examination (formerly NLE), Step 1 theory",
+  questionIdPrefix: "PKNLE-",
+  icon: "stethoscope",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 60,
+  // PM&DC NRE (Medical) Standards, Structure and Syllabus 2024 (notified 30 April 2024; checked
+  // November 2026): Step 1 is 200 MCQs, 60 applied basic sciences (pathology 11, anatomy 11,
+  // physiology 10, clinical pharmacology 8, biochemistry 6, community medicine 6, forensic medicine
+  // 4, as printed) and 140 clinical (medicine 52, surgery 48, O&G 14, paediatrics 14, eye 6, ENT 6),
+  // 60% to pass, no negative marking. Each 50-question mock is a quarter of the paper with the same
+  // 30/70 split; the grouping of disciplines is Tigertest's. All items original.
+  blueprint: {
+    pknleAnatPhys: 5,
+    pknlePathBio: 5,
+    pknlePharm: 2,
+    pknleCommForensic: 3,
+    pknleMedicine: 13,
+    pknleSurgery: 11,
+    pknleObGyn: 4,
+    pknlePaeds: 4,
+    pknleEyeEnt: 3,
+  },
+  trainingSets: testSets(20200, 4),
+  categoryLabels: {
+    pknleAnatPhys: "Applied Anatomy & Physiology",
+    pknlePathBio: "Pathology & Biochemistry",
+    pknlePharm: "Clinical Pharmacology",
+    pknleCommForensic: "Community & Forensic Medicine",
+    pknleMedicine: "Medicine & Allied",
+    pknleSurgery: "Surgery & Allied",
+    pknleObGyn: "Obstetrics & Gynaecology",
+    pknlePaeds: "Paediatrics",
+    pknleEyeEnt: "Eye & ENT",
+  },
+  copy: {
+    guestPrompt: "to save your PMDC NRE progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per mock test, each holding exactly that test's 50 questions across basic and clinical sciences. Missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, 60% to pass",
+    heroSubs: [
+      "Basic and clinical sciences, four mock tests. Medicine and surgery are half the paper.",
+      "Master each set, then take its test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. You are ready for NRE Step 1.",
+    ],
+    sourceLine: "Based on the PM&DC NRE Standards, Structure and Syllabus 2024: 30% basic and 70% clinical sciences, 60% to pass. Original questions. Not affiliated with the Pakistan Medical and Dental Council or NUMS.",
+    analyticsKey: "pknle",
+  },
+};
+
+const pkpnmc: ExamConfig = {
+  id: "pkpnmc",
+  stateCode: "PKPNMC",
+  idBase: 20300,
+  slug: "/pnmc-licensing-exam",
+  landingPath: "/pnmc-licensing-exam-practice-test",
+  name: "PNMC Licensing Exam Practice Test",
+  shortName: "PNMC Exam",
+  examLabel: "PNMC licensing exam",
+  fullName: "Pakistan Nursing and Midwifery Council Licensing Examination (registered nurse)",
+  questionIdPrefix: "PKPNMC-",
+  icon: "stethoscope",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 60,
+  // PNMC licensing exam (checked November 2026): the PNMC (Amendment) Act, 2023 gives the Council
+  // the function of holding licensure examinations, but PNMC publishes no question count, time,
+  // pass mark or blueprint for a registered nurse licensing exam. This split over the BSN and
+  // diploma subjects is Tigertest's, and 60% is a readiness target. Pakistani practice (EPI
+  // schedule, DRAP, Lady Health Workers) and law (PNMC Act). All items original.
+  blueprint: {
+    pkpnmcFund: 7,
+    pkpnmcPharm: 4,
+    pkpnmcAdult: 9,
+    pkpnmcCritical: 4,
+    pkpnmcMaternal: 6,
+    pkpnmcPaeds: 6,
+    pkpnmcCommunity: 6,
+    pkpnmcMental: 4,
+    pkpnmcLaw: 4,
+  },
+  trainingSets: testSets(20300, 4),
+  categoryLabels: {
+    pkpnmcFund: "Fundamentals of Nursing",
+    pkpnmcPharm: "Pharmacology & Dosage",
+    pkpnmcAdult: "Adult Health Nursing",
+    pkpnmcCritical: "Critical Care & Emergency",
+    pkpnmcMaternal: "Maternal & Newborn Health",
+    pkpnmcPaeds: "Paediatric Nursing & EPI",
+    pkpnmcCommunity: "Community Health Nursing",
+    pkpnmcMental: "Mental Health Nursing",
+    pkpnmcLaw: "Law, Ethics & Leadership",
+  },
+  copy: {
+    guestPrompt: "to save your PNMC exam progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per mock test, each holding exactly that test's 50 questions across all nine topics. Missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, 60% readiness line",
+    heroSubs: [
+      "Nine topics, four mock tests. Adult health and fundamentals are the biggest.",
+      "Master each set, then take its test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. You are ready for your PNMC licensing exam.",
+    ],
+    sourceLine: "Based on WHO guidance, Pakistan's EPI schedule and Pakistani nursing law. Original questions; PNMC publishes no question count or pass mark, so 60% is a readiness target. Not affiliated with the Pakistan Nursing and Midwifery Council.",
+    analyticsKey: "pkpnmc",
+  },
+};
+
+const zak53moto: ExamConfig = {
+  id: "zak53moto",
+  stateCode: "ZAK53C1",
+  idBase: 20700,
+  slug: "/k53-motorcycle",
+  landingPath: "/k53-motorcycle-learners-test",
+  name: "K53 Motorcycle Learner's Practice Test (Code 1)",
+  shortName: "K53 motorcycle learner's",
+  examLabel: "K53 Code 1 learner's licence test",
+  fullName: "South Africa K53 learner's licence test, Code 1 (motorcycle, motor tricycle or quadricycle)",
+  questionIdPrefix: "ZAC1-",
+  icon: "bike",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // Real test: 64 random multiple-choice questions in three sections (RTMC, May 2026, as recorded
+  // for zak53). Study guides (not official) give 28 rules / 28 signs / 8 controls. No Code 1
+  // specific format is published, so each mock reuses the Code 2 split scaled to 50: rules 22
+  // (5/6/6/5), signs and markings 22 (9/6/3/4), motorcycle controls 6. Code 1 ages (16 up to
+  // 125 cc, 18 above) and 24-month validity from gov.za; helmet (reg 207) and passenger rules from
+  // the Regulations as quoted by Arrive Alive, checked 2026-11-05. passPct 80 = 40 of 50,
+  // Tigertest's own target. All items original; signs described in words.
+  blueprint: {
+    c1Licence: 5,
+    c1RightOfWay: 6,
+    c1Speed: 6,
+    c1Parking: 5,
+    c1Regulatory: 9,
+    c1Warning: 6,
+    c1Guidance: 3,
+    c1Markings: 4,
+    c1Controls: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 20701, name: "Licences, Helmets & Right of Way", categories: ["c1Licence", "c1RightOfWay"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 2, id: 20702, name: "Speed, Passengers, Lights & Parking", categories: ["c1Speed", "c1Parking"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 3, id: 20703, name: "Regulatory Signs", categories: ["c1Regulatory"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 4, id: 20704, name: "Warning Signs", categories: ["c1Warning"], size: 24, weightLabel: "6 of 50 test questions" },
+    { setNumber: 5, id: 20705, name: "Guidance Signs, Markings & Signals", categories: ["c1Guidance", "c1Markings"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 6, id: 20706, name: "Motorcycle Controls", categories: ["c1Controls"], size: 24, weightLabel: "6 of 50 test questions" },
+  ],
+  categoryLabels: {
+    c1Licence: "Licences, Helmets, Alcohol & Crashes",
+    c1RightOfWay: "Intersections & Right of Way",
+    c1Speed: "Speed, Lane Position & Overtaking",
+    c1Parking: "Passengers, Lights & Parking",
+    c1Regulatory: "Regulatory Signs",
+    c1Warning: "Warning Signs",
+    c1Guidance: "Guidance & Information Signs",
+    c1Markings: "Road Markings & Traffic Signals",
+    c1Controls: "Motorcycle Controls (Code 1)",
+  },
+  copy: {
+    guestPrompt: "to save your K53 motorcycle learner's progress and track every question you miss",
+    trainingHeading: "Train by K53 section",
+    trainingSub: "Six sets covering the rules of the road for riders, road signs and markings, and Code 1 motorcycle controls. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions in the real test's mix, 40 to pass",
+    heroSubs: [
+      "Rules, signs and controls, like the real test.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your learner's test at the DLTC.",
+    ],
+    sourceLine: "Based on the National Road Traffic Act and Regulations and the SADC road sign manual. Original questions; 50 per test, 40 to pass (Tigertest's target).",
+    analyticsKey: "zak53moto",
+  },
+};
+
+const zare5: ExamConfig = {
+  id: "zare5",
+  stateCode: "ZARE5",
+  idBase: 20500,
+  slug: "/re5-exam",
+  landingPath: "/re5-exam-practice-test",
+  name: "RE5 Practice Test",
+  shortName: "RE5",
+  examLabel: "RE5 exam",
+  fullName: "RE5 Regulatory Examination for Representatives (FAIS)",
+  questionIdPrefix: "ZARE5-",
+  icon: "umbrella",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 66,
+  // FSCA Preparation Guide for Regulatory Examinations (17 January 2026, v1): RE5 is 50 MCQs, four
+  // options, 2 hours, 66% to pass, no negative marking; eight tasks (RE5 task map, 14 January 2025),
+  // each covered at least once, no weights published. Tigertest's split per 50, led by the number of
+  // qualifying criteria per task (4/9/3/14/2/2/1/12): Task 1 FAIS Act, products and compliance
+  // officer 6; Task 2 licence and undesirable practices 6; Task 3 key individuals 3; Task 4 General
+  // Code of Conduct 13 (duties, conflicts, disclosures 7; advice, client funds, complaints 6);
+  // Task 5 records 3; Task 6 FIC Act 5; Task 7 Ombud for FSPs 3; Task 8 representatives 7 and
+  // debarment 4. South African law as of November 2026; no rand amounts.
+  blueprint: {
+    zare5Framework: 6,
+    zare5Licence: 6,
+    zare5KeyInd: 3,
+    zare5Disclosure: 7,
+    zare5Advice: 6,
+    zare5Records: 3,
+    zare5Fica: 5,
+    zare5Ombud: 3,
+    zare5Rep: 7,
+    zare5Debar: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 20501, name: "FAIS Act, Licence & Key Individuals", categories: ["zare5Framework", "zare5Licence", "zare5KeyInd"], size: 60, weightLabel: "Tasks 1 to 3 · 15 of 50 test questions" },
+    { setNumber: 2, id: 20502, name: "General Code of Conduct", categories: ["zare5Disclosure", "zare5Advice"], size: 52, weightLabel: "Task 4 · 13 of 50 test questions" },
+    { setNumber: 3, id: 20503, name: "Records, FIC Act & the Ombud", categories: ["zare5Records", "zare5Fica", "zare5Ombud"], size: 44, weightLabel: "Tasks 5 to 7 · 11 of 50 test questions" },
+    { setNumber: 4, id: 20504, name: "Representatives & Debarment", categories: ["zare5Rep", "zare5Debar"], size: 44, weightLabel: "Task 8 · 11 of 50 test questions" },
+  ],
+  categoryLabels: {
+    zare5Framework: "FAIS Act, Financial Products & Compliance Officer",
+    zare5Licence: "Maintaining the FSP Licence & Undesirable Practices",
+    zare5KeyInd: "Key Individuals",
+    zare5Disclosure: "General Duties, Conflicts & Disclosures",
+    zare5Advice: "Advice, Client Funds & Complaints",
+    zare5Records: "Record Keeping",
+    zare5Fica: "FIC Act & Money Laundering Control",
+    zare5Ombud: "The Ombud for FSPs",
+    zare5Rep: "The Representative: Role, Fit & Proper, Supervision",
+    zare5Debar: "Debarment",
+  },
+  copy: {
+    guestPrompt: "to save your RE5 progress and track every question you miss",
+    trainingHeading: "Train by task",
+    trainingSub: "Four sets that follow the RE5's eight tasks: the FAIS Act, licence and key individuals, the General Code of Conduct, records, the FIC Act and the Ombud, and representatives and debarment. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions across all eight tasks, 66% to pass",
+    heroSubs: [
+      "Eight tasks, 50 questions, 66% to pass. Start with the FAIS Act.",
+      "Master each task's set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your RE5.",
+    ],
+    sourceLine: "Based on the RE5 task map and qualifying criteria, the FAIS Act, the General Code of Conduct, BN 194 of 2017 and the FIC Act as of November 2026. Original questions; 50 per test, like the real exam. Not affiliated with the FSCA or the examination body.",
+    analyticsKey: "zare5",
+  },
+};
+
+const zasaps: ExamConfig = {
+  id: "zasaps",
+  stateCode: "ZASAPS",
+  idBase: 20600,
+  slug: "/saps-trainee-assessment",
+  landingPath: "/saps-recruitment-test-practice-test",
+  name: "SAPS Recruitment Practice Test",
+  shortName: "SAPS test",
+  examLabel: "SAPS police trainee assessment",
+  fullName: "SAPS police trainee recruitment assessment (written literacy, numeracy and reasoning)",
+  questionIdPrefix: "ZASAPS-",
+  icon: "badge",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // The South African Police Service recruits police trainees through advertised intakes; the
+  // 2026/2027 advertisement (TRA26/27) names fitness, psychometric and integrity testing, a
+  // medical evaluation, an interview and vetting (guides: the written test covers literacy,
+  // numeracy and reasoning).
+  // SAPS publishes no question count, time, subject split or pass mark. Tigertest models only
+  // the written literacy, numeracy and reasoning part; weights (English and reading 22,
+  // numeracy 18, reasoning 10 per test) and 70% (35 of 50) are Tigertest's own. Figure-only
+  // reasoning is written as text patterns. No personality, GK or law items. Checked 2026-11-05
+  // against the SAPS 2026/2027 trainee advertisement (see tools/next100/zasaps/sources.md). Pools are exactly
+  // 4x each count (no spares). All items original.
+  blueprint: {
+    zasapsGrammar: 8,
+    zasapsVocab: 6,
+    zasapsReading: 8,
+    zasapsNumber: 7,
+    zasapsWordProblems: 7,
+    zasapsData: 4,
+    zasapsVerbal: 5,
+    zasapsLogic: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 20601, name: "Grammar, Spelling & Vocabulary", categories: ["zasapsGrammar", "zasapsVocab"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 2, id: 20602, name: "Reading Comprehension", categories: ["zasapsReading"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 3, id: 20603, name: "Numbers & Data", categories: ["zasapsNumber", "zasapsData"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 4, id: 20604, name: "Word Problems", categories: ["zasapsWordProblems"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 5, id: 20605, name: "Verbal & Logical Reasoning", categories: ["zasapsVerbal", "zasapsLogic"], size: 40, weightLabel: "10 of 50 test questions" },
+  ],
+  categoryLabels: {
+    zasapsGrammar: "English: Grammar & Spelling",
+    zasapsVocab: "English: Vocabulary & Idioms",
+    zasapsReading: "Reading Comprehension",
+    zasapsNumber: "Numeracy: Numbers & Calculation",
+    zasapsWordProblems: "Numeracy: Word Problems",
+    zasapsData: "Numeracy: Tables & Data",
+    zasapsVerbal: "Verbal Reasoning",
+    zasapsLogic: "Logical & Pattern Reasoning",
+  },
+  copy: {
+    guestPrompt: "to save your SAPS assessment progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets on the English, reading, numeracy and reasoning the written trainee assessment checks. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, aim for 35 or more",
+    heroSubs: [
+      "Five topics, four 50-question tests. English and reading weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Now get fit for the physical assessment.",
+    ],
+    sourceLine: "Original literacy, numeracy and reasoning questions for the written part of the SAPS police trainee assessment. SAPS publishes no format; 50 per test and 70% are Tigertest's own.",
+    analyticsKey: "zasaps",
+  },
+};
+
+const zapsira: ExamConfig = {
+  id: "zapsira",
+  stateCode: "ZAPSIRA",
+  idBase: 20800,
+  slug: "/psira-security",
+  landingPath: "/psira-security-officer-practice-test",
+  name: "PSIRA Security Officer Practice Test",
+  shortName: "PSIRA Grades E-C",
+  examLabel: "PSIRA grade assessment",
+  fullName: "PSIRA security officer grade assessment (Grades E to C)",
+  questionIdPrefix: "ZAPSIRA-",
+  icon: "badge",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // South Africa: Private Security Industry Regulation Act 56 of 2001 (ss. 20, 23, 25, 28),
+  // Criminal Procedure Act 51 of 1977 (ss. 23, 42, 48, 49, 50), Occupational Health and Safety Act
+  // 85 of 1993 (ss. 8, 14, 15, 17). Training centres set the Grade E to C assessments; no official
+  // weights, count or pass mark were found. Tigertest's blueprint over the course topics:
+  // law 6, role 6, powers 7, access 7, patrols 6, reports 6, emergencies 7, OHS 5. 70% is
+  // Tigertest's target.
+  blueprint: {
+    zapsiraLaw: 6,
+    zapsiraRole: 6,
+    zapsiraPowers: 7,
+    zapsiraAccess: 7,
+    zapsiraPatrol: 6,
+    zapsiraReports: 6,
+    zapsiraEmergency: 7,
+    zapsiraSafety: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 20801, name: "Grade E: PSIRA, Conduct & Your Role", categories: ["zapsiraLaw", "zapsiraRole"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 2, id: 20802, name: "Grade E: Legal Powers & Access Control", categories: ["zapsiraPowers", "zapsiraAccess"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 3, id: 20803, name: "Grade D: Patrols, Radio & Reports", categories: ["zapsiraPatrol", "zapsiraReports"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 4, id: 20804, name: "Grade C: First Response & Safety", categories: ["zapsiraEmergency", "zapsiraSafety"], size: 48, weightLabel: "12 of 50 test questions" },
+  ],
+  categoryLabels: {
+    zapsiraLaw: "PSIRA, the Act & the Code of Conduct",
+    zapsiraRole: "The Security Officer's Role & Conduct",
+    zapsiraPowers: "Legal Powers: Arrest, Search & Force",
+    zapsiraAccess: "Access Control & Searching",
+    zapsiraPatrol: "Patrols, Observation & Radio",
+    zapsiraReports: "Occurrence Books, Reports & Evidence",
+    zapsiraEmergency: "First Response, Fire & First Aid",
+    zapsiraSafety: "Occupational Health & Safety",
+  },
+  copy: {
+    guestPrompt: "to save your PSIRA progress and track every question you miss",
+    trainingHeading: "Train grade by grade",
+    trainingSub: "Four sets on the Grade E to C course topics: the PSIRA Act and your role, legal powers and access control, patrols, radio and reports, and first response and safety. Missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions across every topic, 70% target",
+    heroSubs: [
+      "Four grade sets, four mock tests.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Ready for your assessment.",
+    ],
+    sourceLine: "Based on the Private Security Industry Regulation Act 56 of 2001, the Criminal Procedure Act and the OHS Act. Original questions; 50 per test, 70% is Tigertest's target. Not affiliated with PSIRA, SAPS or any training centre.",
+    analyticsKey: "zapsira",
+  },
+};
+
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, nhie, cna, ptcb, phleb, ccma, cma, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, sfadmin, phr, cisa, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzfirearms, nzlcq, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgres, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, bedriving, dkteori, setrafik, fitheory, grdriving, rodrpciv, hukresz, mttheory, detheorie, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, gulfrn, inrto, htl, cst, crcst];
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
 export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA, realestatePA, realestateIL, realestateOH, realestateGA, realestateNC, realestateMI, realestateVA, realestateWA, realestateAZ, realestateTN, insuranceNY, insurancePA, insuranceIL, insuranceOH, insuranceGA, insuranceNC, insuranceMI, insuranceNJ, insuranceVA, insuranceWA, pncNY, pncPA, pncIL, pncOH, pncGA, pncNC, pncMI, pncNJ, pncVA, pncWA];

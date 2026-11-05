@@ -57,6 +57,7 @@ const TEACHER_LED = new Set([
   "aswbclin", "phr", "ccs", "rdexam", "cemap",
   // International batch 1 (November 2026)
   "nzlcq", "aesira", "kenck",
+  "pknle", "pkpnmc", "zapsira", "punjabpolice",
   // International batch 2 (November 2026): the PRC board exams and the criminology board exam
   "phnle", "phmedtech", "phpharm", "phmidwife", "phpsychom", "phcle", "phrebroker",
 ]);

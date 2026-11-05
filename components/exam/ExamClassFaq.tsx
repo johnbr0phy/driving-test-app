@@ -193,6 +193,10 @@ const TEACHES: Record<string, string> = {
   nzlcq: "an LCQ course",
   aesira: "a SIRA basic security guard course",
   kenck: "a nursing college class",
+  pknle: "an NRE preparation class",
+  pkpnmc: "a nursing college class",
+  zapsira: "a PSIRA Grade E, D or C security officer course",
+  punjabpolice: "a police test coaching class",
 };
 
 function question(examId: string): string {

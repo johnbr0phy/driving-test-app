@@ -1,0 +1,35 @@
+{
+  "id": "zasaps",
+  "stateCode": "ZASAPS",
+  "idBase": 20600,
+  "prefix": "ZASAPS-",
+  "slug": "/saps-trainee-assessment",
+  "landingPath": "/saps-recruitment-test-practice-test",
+  "dataFile": "data/saps-recruitment-questions.json",
+  "name": "SAPS Recruitment Practice Test",
+  "shortName": "SAPS test",
+  "examLabel": "SAPS police trainee assessment",
+  "fullName": "SAPS police trainee recruitment assessment (written literacy, numeracy and reasoning)",
+  "icon": "badge",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 70,
+  "categories": [
+    {"key": "zasapsGrammar", "label": "English: Grammar & Spelling", "perTest": 8, "pool": 32, "segment": "ENG"},
+    {"key": "zasapsVocab", "label": "English: Vocabulary & Idioms", "perTest": 6, "pool": 24, "segment": "VOC"},
+    {"key": "zasapsReading", "label": "Reading Comprehension", "perTest": 8, "pool": 32, "segment": "RDG"},
+    {"key": "zasapsNumber", "label": "Numeracy: Numbers & Calculation", "perTest": 7, "pool": 28, "segment": "NUM"},
+    {"key": "zasapsWordProblems", "label": "Numeracy: Word Problems", "perTest": 7, "pool": 28, "segment": "WPR"},
+    {"key": "zasapsData", "label": "Numeracy: Tables & Data", "perTest": 4, "pool": 16, "segment": "DAT"},
+    {"key": "zasapsVerbal", "label": "Verbal Reasoning", "perTest": 5, "pool": 20, "segment": "VRB"},
+    {"key": "zasapsLogic", "label": "Logical & Pattern Reasoning", "perTest": 5, "pool": 20, "segment": "LOG"}
+  ],
+  "notes": "4 tests x 50 = 200, every item used once in tests (no spares). SAPS does not publish a question count, time, subject split or pass mark for the trainee assessment; weights and the 70% (35 of 50) line are Tigertest's own. Only the written literacy, numeracy and reasoning part is modelled: the personality questionnaire, physical fitness assessment, interview, medical and vetting are not, and no personality items are written. Figure-only (non-verbal) reasoning is written as text patterns. No general knowledge or law items. Dashboard = 5 topic sets + 4 tests = 9 steps.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 20601, "name": "Grammar, Spelling & Vocabulary", "categories": ["zasapsGrammar", "zasapsVocab"], "size": 56},
+    {"setNumber": 2, "id": 20602, "name": "Reading Comprehension", "categories": ["zasapsReading"], "size": 32},
+    {"setNumber": 3, "id": 20603, "name": "Numbers & Data", "categories": ["zasapsNumber", "zasapsData"], "size": 44},
+    {"setNumber": 4, "id": 20604, "name": "Word Problems", "categories": ["zasapsWordProblems"], "size": 28},
+    {"setNumber": 5, "id": 20605, "name": "Verbal & Logical Reasoning", "categories": ["zasapsVerbal", "zasapsLogic"], "size": 40}
+  ]
+}

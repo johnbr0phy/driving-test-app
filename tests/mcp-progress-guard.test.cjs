@@ -215,7 +215,8 @@ test('catalog snapshot writes use an atomic revision check and load the account 
   assert.doesNotMatch(save, /await updateDoc\(userRef, payload\)|await setDoc/);
   const load = source.slice(source.indexOf('loadUserData: async'), source.indexOf('checkUserHasData: async'));
   assert.match(load, /captureMcpProgressRevision\(userId, 'catalog', userDoc.data\(\)\)/);
-  assert.match(load, /language: data.language === 'en' \|\| data.language === 'es' \? data.language/);
+  // Any supported language loads, but only one the account actually picked.
+  assert.match(load, /isLanguage\(data\.language\) && languageIsChosen\(\{ language: data\.language/);
   const checkOnly = source.slice(source.indexOf('checkUserHasData: async'), source.indexOf('saveToFirestore: async'));
   assert.doesNotMatch(checkOnly, /captureMcpProgressRevision/);
 });

@@ -9,9 +9,11 @@ npm run dev       # Start Next.js dev server
 npm run build     # Production build
 npm run lint      # ESLint (next/core-web-vitals)
 npm start         # Start production server
+npm run typecheck # tsc --noEmit
+npm test          # node:test suite, tests/*.test.cjs (uses tsx to load TS)
 ```
 
-No test framework is configured. There are no unit or integration tests.
+`.github/workflows/checks.yml` runs typecheck, lint, `npm test`, `scripts/build-training-parts.ts --check` and `scripts/review-question-banks.py` on every PR and push to main; Vercel's preview covers the build. Run `npm test` before pushing, and when a test asserts on source text that a deliberate change moved, update the test to the new contract rather than deleting it.
 
 ## Architecture
 

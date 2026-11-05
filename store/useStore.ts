@@ -7,6 +7,7 @@ import { Region, isRegion } from "@/lib/region";
 import { db } from '@/lib/firebase';
 import { trackQuestionsAnswered } from '@/lib/analytics';
 import { splitLegacySets } from '@/lib/legacySetSplits';
+import { applyLegacyIdMoves } from '@/lib/legacyIdMoves';
 import { queueAchievementCelebration } from '@/lib/achievementCelebration';
 import { isLanguage, type Language } from '@/i18n';
 import { languageIsChosen, writeLanguageCookie } from '@/lib/language';
@@ -967,11 +968,15 @@ export const useStore = create<AppState>()(
 
       // Firebase sync functions
       loadUserData: async (userId: string) => {
+        let movedLegacyIds = false;
         try {
           const userDoc = await getDoc(doc(db, 'users', userId));
           captureMcpProgressRevision(userId, 'catalog', userDoc.data());
           if (userDoc.exists()) {
-            const data = userDoc.data();
+            // Old ids of exams that moved (ASWB Clinical shared K53 Code 3's block).
+            const raw = userDoc.data();
+            const data = applyLegacyIdMoves(raw);
+            movedLegacyIds = data !== raw;
             set({
               selectedState: data.selectedState || null,
               // A language picked on this device before signing in wins over
@@ -1055,6 +1060,8 @@ export const useStore = create<AppState>()(
           if (userDoc.exists() && region && region !== userDoc.data().region) {
             updateDoc(doc(db, 'users', userId), { region, regionAt }).catch(() => {});
           }
+          // Write the moved records back so server readers (admin, emails) see them too.
+          if (movedLegacyIds) get().saveToFirestore();
         } catch (error) {
           console.error('Error loading user data:', error);
           // Mark as loaded even on failure so gated UI doesn't hang forever
@@ -1383,7 +1390,7 @@ export const useStore = create<AppState>()(
       skipHydration: false,
       merge: (persisted, current) => {
         const p = (persisted ?? {}) as Partial<AppState>;
-        return { ...current, ...p, trainingSets: splitLegacySets(p.trainingSets ?? current.trainingSets) };
+        return applyLegacyIdMoves({ ...current, ...p, trainingSets: splitLegacySets(p.trainingSets ?? current.trainingSets) });
       },
       migrate: (persistedState: unknown, version: number) => {
         // If upgrading from an older version, reset all data

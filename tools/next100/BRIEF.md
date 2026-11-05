@@ -264,7 +264,7 @@ the Canadian exam follows `tools/next30/pcoc` for region CA; the UK exam `tools/
 
 | id | Test | Region | idBase | stateCode | prefix | slug | landing | hue |
 |---|---|---|---|---|---|---|---|---|
-| aswbclin | ASWB Clinical exam (LCSW) | US | 16900 | ASWBCLIN | ASWBCLIN- | /aswb-clinical | /aswb-clinical-practice-test | 300 20% 34% |
+| aswbclin | ASWB Clinical exam (LCSW) | US | 21900 (moved from 16900, which zak53c3 already held) | ASWBCLIN | ASWBCLIN- | /aswb-clinical | /aswb-clinical-practice-test | 300 20% 34% |
 | phr | HRCI Professional in Human Resources (PHR) | US | 17000 | PHR | PHR- | /phr | /phr-practice-test | 200 45% 28% |
 | cisa | ISACA Certified Information Systems Auditor (CISA) | GLOBAL | 17100 | CISA | CISA- | /cisa | /cisa-practice-test | 250 20% 32% |
 | cssgb | ASQ Certified Six Sigma Green Belt (CSSGB) | GLOBAL | 17200 | CSSGB | CSSGB- | /six-sigma-green-belt | /six-sigma-green-belt-practice-test | 14 50% 26% |

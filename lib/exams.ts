@@ -11775,7 +11775,7 @@ const nptepta: ExamConfig = {
 const aswbclin: ExamConfig = {
   id: "aswbclin",
   stateCode: "ASWBCLIN",
-  idBase: 16900,
+  idBase: 21900, // was 16900 until Nov 2026, shared by mistake with zak53c3; old progress moves here by question id (lib/legacyIdMoves.ts)
   slug: "/aswb-clinical",
   landingPath: "/aswb-clinical-practice-test",
   name: "ASWB Clinical Practice Test",
@@ -11805,11 +11805,11 @@ const aswbclin: ExamConfig = {
     aswbclinEvalSup: 4,
   },
   trainingSets: [
-    { setNumber: 1, id: 16901, name: "Clinical Ethics & Service Delivery", categories: ["aswbclinEthics", "aswbclinService"], size: 52, weightLabel: "13 of 50 test questions" },
-    { setNumber: 2, id: 16902, name: "Diversity & Human Behavior", categories: ["aswbclinDiversity", "aswbclinConcepts"], size: 40, weightLabel: "10 of 50 test questions" },
-    { setNumber: 3, id: 16903, name: "Diagnosis & Treatment Planning", categories: ["aswbclinDiagnosis", "aswbclinPlanning"], size: 44, weightLabel: "11 of 50 test questions" },
-    { setNumber: 4, id: 16904, name: "Evidence-Based Treatment Models", categories: ["aswbclinTherapy"], size: 32, weightLabel: "8 of 50 test questions" },
-    { setNumber: 5, id: 16905, name: "Crisis, Evaluation & Supervision", categories: ["aswbclinPractice", "aswbclinEvalSup"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 1, id: 21901, name: "Clinical Ethics & Service Delivery", categories: ["aswbclinEthics", "aswbclinService"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 2, id: 21902, name: "Diversity & Human Behavior", categories: ["aswbclinDiversity", "aswbclinConcepts"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 3, id: 21903, name: "Diagnosis & Treatment Planning", categories: ["aswbclinDiagnosis", "aswbclinPlanning"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 4, id: 21904, name: "Evidence-Based Treatment Models", categories: ["aswbclinTherapy"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 5, id: 21905, name: "Crisis, Evaluation & Supervision", categories: ["aswbclinPractice", "aswbclinEvalSup"], size: 32, weightLabel: "8 of 50 test questions" },
   ],
   categoryLabels: {
     aswbclinEthics: "Ethical Principles & Responsibilities",

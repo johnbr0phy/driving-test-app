@@ -1,7 +1,7 @@
 {
   "id": "aswbclin",
   "stateCode": "ASWBCLIN",
-  "idBase": 16900,
+  "idBase": 21900,
   "prefix": "ASWBCLIN-",
   "slug": "/aswb-clinical",
   "landingPath": "/aswb-clinical-practice-test",
@@ -27,10 +27,10 @@
   ],
   "notes": "ASWB Clinical content outline in the 2026 Examination Guidebook (exams from August 3, 2026): I Values and Ethics 36%, II Assessment and Planning 32%, III Intervention and Practice 32%. Scaled to 50 per test: 18/16/16 (I = 6+7+5 for IA/IB/IC; II = 5 IIA, 7 IIB DSM-5-TR and mental status, 4 IIC planning and medications; III = 8 evidence-based models, 4 crisis/trauma/grief/case management (IIIA and the rest of IIIB), 4 IIIC+IIID). Pools are exactly 4x per-test.",
   "trainingSets": [
-    {"setNumber": 1, "id": 16901, "name": "Clinical Ethics & Service Delivery", "categories": ["aswbclinEthics", "aswbclinService"], "size": 52},
-    {"setNumber": 2, "id": 16902, "name": "Diversity & Human Behavior", "categories": ["aswbclinDiversity", "aswbclinConcepts"], "size": 40},
-    {"setNumber": 3, "id": 16903, "name": "Diagnosis & Treatment Planning", "categories": ["aswbclinDiagnosis", "aswbclinPlanning"], "size": 44},
-    {"setNumber": 4, "id": 16904, "name": "Evidence-Based Treatment Models", "categories": ["aswbclinTherapy"], "size": 32},
-    {"setNumber": 5, "id": 16905, "name": "Crisis, Evaluation & Supervision", "categories": ["aswbclinPractice", "aswbclinEvalSup"], "size": 32}
+    {"setNumber": 1, "id": 21901, "name": "Clinical Ethics & Service Delivery", "categories": ["aswbclinEthics", "aswbclinService"], "size": 52},
+    {"setNumber": 2, "id": 21902, "name": "Diversity & Human Behavior", "categories": ["aswbclinDiversity", "aswbclinConcepts"], "size": 40},
+    {"setNumber": 3, "id": 21903, "name": "Diagnosis & Treatment Planning", "categories": ["aswbclinDiagnosis", "aswbclinPlanning"], "size": 44},
+    {"setNumber": 4, "id": 21904, "name": "Evidence-Based Treatment Models", "categories": ["aswbclinTherapy"], "size": 32},
+    {"setNumber": 5, "id": 21905, "name": "Crisis, Evaluation & Supervision", "categories": ["aswbclinPractice", "aswbclinEvalSup"], "size": 32}
   ]
 }

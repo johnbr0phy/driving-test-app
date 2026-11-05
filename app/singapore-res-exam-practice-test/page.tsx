@@ -119,7 +119,7 @@ export default function SgresLandingPage() {
           <ExamLandingHero
             dashboardHref="/singapore-res/dashboard"
             shortName="RES Exam"
-            subtitle="200 original questions for Singapore&apos;s Real Estate Salesperson exam on the 2027 syllabus: land law, contracts and agency, the Estate Agents Act and ethics, anti-money laundering, marketing, HDB and private transactions, and property tax and finance. Four 50-question mock tests. Tuned for mobile. No account needed."
+            subtitle="200 original questions for Singapore's Real Estate Salesperson exam on the 2027 syllabus: land law, contracts and agency, the Estate Agents Act and ethics, anti-money laundering, marketing, HDB and private transactions, and property tax and finance. Four 50-question mock tests. Tuned for mobile. No account needed."
             shots={{ mobile: "/landing/sgres-mobile.png", desktop: "/landing/sgres-desktop.png" }}
           />
         </div>

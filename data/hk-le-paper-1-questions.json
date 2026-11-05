@@ -2412,14 +2412,14 @@
     "state": "ALL",
     "questionId": "HKLE1-CAP-003",
     "category": "hkle1Capital",
-    "question": "After listing, a Main Board issuer must keep a minimum public float of generally:",
-    "optionA": "5% of issued shares",
-    "optionB": "50% of issued shares",
-    "optionC": "25% of issued shares",
-    "optionD": "75% of issued shares",
+    "question": "Under the ongoing public float rules in force since 1 January 2026, a Main Board issuer with a significant public float shortfall is delisted if it does not restore its float within:",
+    "optionA": "7 business days",
+    "optionB": "3 months",
+    "optionC": "18 months",
+    "optionD": "5 years",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "The Listing Rules generally require at least 25% of an issuer's total issued shares to be held by the public, with lower levels allowed for very large issuers."
+    "explanation": "Since 1 January 2026 trading is no longer suspended for a public float shortfall: the stock carries a -PF marker, and a Main Board issuer that has not restored its public float within 18 months is delisted (12 months on GEM)."
   },
   {
     "type": "HKLE1",

@@ -99,3 +99,40 @@ and `data/uk-personal-licence-questions.json`: every law item is New Zealand law
 sums use volumes and strengths not in the other banks; stems that matched (drug type, absorption,
 food, gender, last drink, tolerance, medical condition, aggressive refusal, expired licence) were
 rewritten with New Zealand scenarios.
+
+## Fact-check, 2026-11-05 (10 law items spot-checked in q_lic.py and q_off.py)
+legislation.govt.nz and NZLII returned 403 or a bot challenge to our fetcher, so the Act was
+checked through the Ministry of Justice summary and Health New Zealand (HPA) guidance:
+- Ministry of Justice, "Key points for businesses", checked 2026-11-05:
+  https://www.justice.govt.nz/justice-sector-policy/key-initiatives/key-initiatives-archive/sale-and-supply-of-alcohol/key-points-for-businesses/
+- HPA, "Alcohol promotions on licensed premises" (April 2024), checked 2026-11-05:
+  https://alcoholresources-prod.cloud.hpa.org.nz/assets/Uploads/6.0-554-AL_Promotions-on-license_APR-2024.pdf
+1. Default maximum hours, on-licences and clubs 8am to 4am (LIC): confirmed (MoJ, s 43).
+2. Default maximum hours, off-licences 7am to 11pm (LIC): confirmed (MoJ, s 43).
+3. Supermarket and grocery alcohol kept to a single area (LIC): confirmed (MoJ).
+4. On-licences must have low and non-alcoholic drinks, food and transport information, and free
+   water (LIC): confirmed (MoJ).
+5. Advertising a discount of 25% or more where it can be seen or heard outside the premises
+   (OFF): confirmed (MoJ, HPA; s 237).
+6. Promotions encouraging excessive consumption or with special appeal to minors (OFF):
+   confirmed (MoJ, HPA).
+7. Free alcohol (OFF): the offence is promoting or advertising free alcohol so it can be seen or
+   heard from outside the premises (MoJ, HPA). FIXED: the item now says the offer is on a street
+   sign and the key says "An offence, as it is seen outside" (it said "generally an offence").
+8. Evidence of age documents (OFF): passport, NZ driver licence, Kiwi Access card (Sale and Supply
+   of Alcohol Regulations 2013 reg 4), plus, from 28 May 2026, an approved digital ID credential
+   under the Sale and Supply of Alcohol Amendment Regulations 2026 (reg 4(d), reg 5A).
+   Harkness Henry, "Digital identification for alcohol purchases", 8 June 2026, checked 2026-11-05:
+   https://www.harknesshenry.co.nz/2026/06/08/digital-identification-for-alcohol-purchases/
+   Regulations: https://www.legislation.govt.nz/secondary-legislation/pco-drafted/2026/90/en/latest/
+   FIXED: the explanation listing the documents now adds the digital credential, and the phone-photo
+   item's key is now "Ask for approved ID instead" (it said "the original document", which is no
+   longer the only lawful option).
+9. Minor means under 18; overseas driver licences are not approved; expired documents are not
+   approved (OFF): confirmed (reg 4 lists a current passport of any country and a current NZ driver
+   licence only).
+10. Express consent from a parent or guardian, by text if the supplier has good reason to believe
+   it genuine, for supply off licensed premises (OFF, s 241): confirmed against HPA, "What the
+   Sale and Supply of Alcohol Act means for under 18s",
+   https://alcoholresources-prod.cloud.hpa.org.nz/assets/What-Sale-and-Supply-Alcohol-Act-means-for-under-18_s-March-2014.pdf ,
+   checked 2026-11-05.

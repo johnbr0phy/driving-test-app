@@ -51,7 +51,7 @@ const faqs = [
   },
   {
     q: "Do I need Paper 1 for my licence?",
-    a: "Paper 1 is listed for representatives across the regulated activity types, and responsible officers take it together with a second paper that depends on the activity, such as Paper 2, 3, 4, 5, 6 or 18. Representatives usually also need a product paper such as Paper 7 or 8. Which papers you need, and whether any exemption applies, depends on your role and the SFC's Guidelines on Competence, so check with your firm or the SFC before you book.",
+    a: "Paper 1 is listed for representatives across the regulated activity types, and responsible officers take it together with a second paper that depends on the activity, such as Paper 2, 3, 4, 5, 6 or 18. Representatives usually also need Paper 7 (Financial Markets) together with a product paper such as Paper 8, 9 or 12, or another recognised industry qualification. Which papers you need, and whether any exemption applies, depends on your role and the SFC's Guidelines on Competence, so check with your firm or the SFC before you book.",
   },
   {
     q: "How are these mock tests built?",
@@ -228,7 +228,7 @@ export default function LePaper1LandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">2. Learn the deadlines and thresholds</h3>
               <p>
-                One business day for client money and a liquid capital shortfall, two business days for a contract note, 5% and three business days for disclosure of interests, 30% for a mandatory offer, 25% public float, six months for phone recordings and seven years for most records.
+                One business day for client money and a liquid capital shortfall, two business days for a contract note, 5% and three business days for disclosure of interests, 30% for a mandatory offer, 18 months to restore a public float shortfall, six months for phone recordings and seven years for most records.
               </p>
             </div>
             <div>

@@ -72,9 +72,9 @@ Checked November 5, 2026.
   07:00 to 19:00 and use the Dublin Port Tunnel. Asked only as "use the Port Tunnel".
 - RSA fatigue advice: stop, take a caffeine drink and a 15-minute nap.
 - Rules of the Road: motorway hard shoulder only in an emergency; on other national roads a slow
-  vehicle may briefly use the hard shoulder to let traffic pass when safe; goods vehicles over
-  3,500 kg, buses and towing vehicles may not use the right-hand lane of a motorway with three or
-  more lanes except when directed or passing an obstruction.
+  vehicle may briefly use the hard shoulder to let traffic pass when safe; vehicles whose ordinary
+  speed limit is 90 km/h or less (goods vehicles over 3,500 kg among them) may not use the
+  right-hand lane of a motorway carriageway with more than one lane (S.I. 182/1997 art. 33(1)(d)).
 
 ## Copyright
 - The RSA's official truck and bus question bank (sold as the Official Driver Theory Test
@@ -91,3 +91,36 @@ Checked November 5, 2026.
   of the official C/D material (drivers' hours, tachographs, brakes, loads, passengers).
 - No fines, fees or penalty points. No vehicle weight limits (they vary by axle configuration).
 - Not modelled: the Driver CPC Step 2 case study test, the module tests, and any picture items.
+
+## Fact-check, 2026-11-05
+- Driver CPC periodic training: "one day of CPC periodic training every year ... a minimum of seven
+  hours every year" (35 hours per five-year cycle). RSA, "Periodic training and compliance",
+  https://rsa.ie/services/professional-drivers/cpc/periodic-training-and-compliance , checked 2026-11-05.
+  Confirmed.
+- Right-hand lane: Road Traffic (Traffic and Parking) Regulations 1997 (S.I. 182/1997) art. 33(1)(d)
+  as substituted in 2024: a vehicle of a class with an ordinary speed limit of not more than
+  90 km/h may not be driven "in the traffic lane nearest the right hand edge of a carriageway having
+  more than one traffic lane" except because of an obstruction or a closed lane (art. 33(1)(e)
+  exempts sections under a special or road works limit of 80 km/h or less). Revised text:
+  https://revisedacts.lawreform.ie/eli/1997/si/182/section/33/revised/en/html , checked 2026-11-05.
+  The item said "three or more lanes" and named buses: FIXED to "more than one lane" and goods
+  vehicles over 3,500 kg (some buses have a 100 km/h limit, so buses are no longer named).
+- Hard shoulder on a non-motorway national road: the Rules of the Road let a driver pull in briefly
+  to let following traffic overtake, only if no pedestrians or cyclists are on it; the RSA driver
+  tester marking guidelines also treat driving on the hard shoulder to let faster traffic pass as
+  not a fault. RSA PDFs returned 403 to our fetcher, so confirmed from secondary quotations:
+  https://theorytestpractice.ie/questions/truck/1025 and the RSA document
+  https://www.rsa.ie/docs/default-source/services/s3.2-adi/making-your-mark-marking-guidelines-for-the-driving-test.pdf ,
+  checked 2026-11-05. Kept (the item says "briefly" and "safely").
+- Five-axle HGVs and the Dublin Port Tunnel: Dublin City Council HGV Management Strategy, 5+ axle
+  vehicles barred from the city cordon 07:00 to 19:00 every day without a permit, introduced
+  19 February 2007 with the Port Tunnel. Dublin City Council, HGV permits,
+  https://www.dublincity.ie/residential/transportation/hgv-management/how-apply-heavy-goods-vehicle-permits ,
+  checked 2026-11-05. Confirmed.
+- C and D licences: a medical report (D501) with every application and renewal for C1, C, D1, D
+  and the E categories (Road Traffic (Licensing of Drivers) Regulations 2006), and a maximum
+  licence period of five years for Group 2. NDLS form text:
+  https://mail.ndls.ie/images/Documents/DrivingLicence/168342_RSA_Declaration_of_Surrender_Form_WEB.pdf
+  and the RSA medical fitness guidelines summary
+  https://irishcarman.blogspot.com/2014/05/new-medical-fitness-to-drive-guidelines.html , checked
+  2026-11-05 (ndls.ie returned 403). Confirmed.

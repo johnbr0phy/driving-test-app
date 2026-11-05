@@ -2090,14 +2090,14 @@
     "state": "ALL",
     "questionId": "IEDTTCV-ROD-010",
     "category": "iedttcvRoad",
-    "question": "On a motorway with three or more lanes, a goods vehicle over 3,500 kg:",
-    "optionA": "Must stay in the middle lane",
+    "question": "On a motorway with more than one lane in your direction, a goods vehicle over 3,500 kg:",
+    "optionA": "May overtake in the right-hand lane",
     "optionB": "Must not use the right-hand lane",
     "optionC": "May use any lane freely",
     "optionD": "Must use the hard shoulder",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Heavy goods vehicles, buses and towing vehicles may not use the outside lane of a motorway with three or more lanes, except where directed or passing an obstruction."
+    "explanation": "Vehicles limited to 90 km/h or less, such as goods vehicles over 3,500 kg, may not use the lane nearest the right-hand edge of a motorway, except to pass an obstruction or when other lanes are closed."
   },
   {
     "type": "IEDTTCV",

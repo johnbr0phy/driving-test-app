@@ -40,7 +40,7 @@
   two-year limit on avoiding a life policy except for fraud, per study material quoting para 13);
   Schedule 10 (nomination from age 16; statutory trust for spouse, child, or parent where no spouse
   or child, for non-Muslim policy owners; Muslim owner's nominee receives as executor; trustee of
-  full age, not the policy owner; assignment revokes a nomination).
+  full age, not the policy owner; an assignee has priority over the nominee, para 7).
 - Prudential Assurance Malaysia, "Trust and Nomination FAQ" (August 2024, insurer explanation of
   Schedule 10): https://www.prudential.com.my/en/.galleries/PDF/trust-and-nomination-faq.pdf
   Used: who creates a statutory trust by marital status, minor nominee's trustee is the other
@@ -66,3 +66,23 @@
 - Institute Cargo Clauses A, B and C (2009).
 
 No question asks about the PCEIA itself. No fees, limits, NCD percentages or tax figures.
+
+## Fact-check, 2026-11-05 (FSA 2013 text read from BNM's PDF of Act 758)
+- Act text: https://www.bnm.gov.my/documents/20124///35ed2b4c-1995-f91d-3891-75d69d247d55
+  (Laws of Malaysia, Act 758, as published by Bank Negara Malaysia), checked 2026-11-05.
+- Life policy in effect more than two years during the insured's lifetime cannot be avoided for
+  an inaccurate statement unless it was on a material matter and fraudulently made:
+  Schedule 9 para 13(2). Confirmed.
+- Minor aged 10 to under 16 may effect a life policy with the written consent of a parent or
+  guardian; from 16 no consent needed to effect one (consent still needed to assign):
+  Schedule 8 para 4. Confirmed.
+- Nomination from age 16: Schedule 10 para 2(1). Confirmed (also the Allianz form text above).
+- "Assignment revokes a nomination": WRONG. Schedule 10 para 3 says a nomination is revoked only
+  by the death of all nominees, a written notice or a later nomination, and "shall not be revoked
+  by a will or by any other act, event or means"; para 7 gives an assignee or pledgee priority
+  over the nominee, with the balance paid to the nominee. The LLG item was rewritten to test
+  para 7.
+- Premium paid to an authorised agent counts as paid to the insurer: no FSA provision says this
+  in those words; the item is framed as general agency law (payment to an agent authorised to
+  receive it is payment to the principal), and Schedule 9 para 12 deems an authorised agent's
+  acts and knowledge to be the insurer's for the formation or variation of the contract. Kept.

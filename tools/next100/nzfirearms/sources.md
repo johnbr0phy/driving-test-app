@@ -66,3 +66,19 @@ All checked 5 November 2026.
 - No fees, no officeholders, no question about the test itself.
 - Kept clear of `data/canadian-firearms-questions.json` (ACTS/PROVE, Canadian law) and
   `data/hunter-questions.json` (IHEA, US): a stem similarity scan found no near-duplicates after rewrites.
+
+## Fact-check, 2026-11-05
+- Regulator name: "Firearms Safety and Education New Zealand" (the new independent regulator that
+  replaced the Firearms Safety Authority, Te Tari Pūreke), as the regulator names itself on
+  https://www.firearmssafety.govt.nz/individual-licence/get-licensed/you-apply , checked 2026-11-05.
+- Arms Act 2026 in force 23 September 2026 (with the Arms Regulations 2026; ammunition seller
+  rules 23 July 2027, the rest 23 February 2028): Ministry of Justice, "Firearms reform",
+  https://www.justice.govt.nz/justice-sector-policy/key-initiatives/firearms-reform/ , checked 2026-11-05.
+- .22 rimfire semi-automatic with a magazine of 10 rounds or fewer needs no endorsement; any
+  rimfire magazine over 10 rounds, fixed or detachable, needs one: regulator's licensing table
+  (link above), checked 2026-11-05. Confirmed.
+- Centrefire semi-automatic rifles need an endorsement: same table, checked 2026-11-05; the ban on
+  military-style semi-automatics carries over into the 2026 Act (Franks Ogilvie, "Explainer: Arms
+  Act 2026", https://www.franksogilvie.co.nz/news/explainer-arms-act-2026 , checked 2026-11-05).
+  The 2026 Act's label for the class ("restricted firearm") could not be confirmed against the
+  enacted text, so the LAW item now asks for the endorsement, not the class name.

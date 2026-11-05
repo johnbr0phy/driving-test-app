@@ -71,7 +71,7 @@
 - HKEX rules and trading information (CCASS T+2, order types, auction sessions, short selling
   tick rule and designated securities, VCM 5-minute cooling-off, CBBC mandatory call, liquidity
   providers, Stock Connect northbound no day trading): https://www.hkex.com.hk/
-- Main Board Listing Rules (25% public float, notifiable and connected transactions, INEDs at
+- Main Board Listing Rules (ongoing public float rules from 1 January 2026, notifiable and connected transactions, INEDs at
   least three and one third of the board, audit committee of non-executive directors, Corporate
   Governance Code comply or explain).
 - SFC on virtual assets ("same business, same risks, same rules"; VATP licensing since June 2023).
@@ -79,3 +79,46 @@
 Lane: Hong Kong law only. Written against `data/sie-questions.json` (US) and the parallel
 `hkiiqe1` bank on disk (insurance); items repeating its JFIU, tipping off, Insurance Authority
 and PDPO direct marketing facts were rewritten. No money figures, no officeholders.
+
+## Fact-check, 2026-11-05
+- Public float: the old "generally 25%" item was replaced. HKEX adopted a tiered initial public
+  float (4 August 2025) and new ongoing public float rules from 1 January 2026 (alternative 10%
+  threshold, -PF marker instead of suspension, delisting after 18 months, 12 on GEM). HKEX,
+  "Exchange publishes conclusions on proposed amendments to Listing Rules relating to ongoing
+  public float requirements", 17 December 2025, checked 2026-11-05:
+  https://www.hkex.com.hk/News/Regulatory-Announcements/2025/251217news?sc_lang=en
+- Telephone order recordings kept at least 6 months: Code of Conduct para 3.9 (raised from three
+  months on 1 December 2012), checked 2026-11-05 via SFC enforcement summaries:
+  https://www.charltonslaw.com/sfc-fines-hsbc-for-code-of-conduct-breaches/
+- Contract note by end of 2nd business day, monthly statement within 7 business days:
+  Securities and Futures (Contract Notes, Statements of Account and Receipts) Rules, Cap. 571Q,
+  checked 2026-11-05: https://www.elegislation.gov.hk/hk/cap571Q
+- Client money into a segregated account within one business day: Securities and Futures
+  (Client Money) Rules, Cap. 571I s.4, checked 2026-11-05: https://www.elegislation.gov.hk/hk/cap571I
+- Standing authority up to 12 months: Securities and Futures (Client Securities) Rules, Cap. 571H
+  s.7, checked 2026-11-05: https://www.elegislation.gov.hk/hk/cap571H
+- Records kept 7 years: Securities and Futures (Keeping of Records) Rules, Cap. 571O,
+  checked 2026-11-05: https://www.elegislation.gov.hk/hk/cap571O
+- Changes notified within 7 business days: Securities and Futures (Licensing and Registration)
+  (Information) Rules, Cap. 571S, checked 2026-11-05: https://www.elegislation.gov.hk/hk/cap571S
+- Audited accounts and auditor's report within 4 months of year end: SFO s.156, checked
+  2026-11-05: https://www.elegislation.gov.hk/hk/cap571
+- Part XV: 5% threshold, whole percentage point crossings, notice within 3 business days
+  (SFO ss.310-325), checked 2026-11-05: https://www.elegislation.gov.hk/hk/cap571
+- AMLO CDD records kept at least 5 years after the relationship ends (Cap. 615 Sch. 2 s.20),
+  checked 2026-11-05: https://www.elegislation.gov.hk/hk/cap615
+- PDPO data access request complied with within 40 days (Cap. 486 s.19), checked 2026-11-05:
+  https://www.elegislation.gov.hk/hk/cap486
+- Manager-In-Charge regime, eight core functions: SFC circular of 16 December 2016, checked
+  2026-11-05: https://www.sfc.hk/en/Regulatory-functions/Intermediaries/Licensing/Manager-In-Charge-regime
+- REITs distribute at least 90% of audited annual net income after tax: SFC Code on Real Estate
+  Investment Trusts, checked 2026-11-05:
+  https://www.sfc.hk/en/Rules-and-standards/Codes-and-guidelines/Codes
+- Takeovers Code mandatory offer at 30% (Rule 26), checked 2026-11-05:
+  https://www.sfc.hk/en/Rules-and-standards/Codes-and-guidelines/Codes
+- INEDs at least three and at least one third of the board: Main Board Listing Rules 3.10 and
+  3.10A, checked 2026-11-05: https://en-rules.hkex.com.hk/rulebook/310a
+- Landing FAQ on papers: HKSI LE overview lists LE Paper 1 plus "LE Papers 7+8" as the recognised
+  industry qualification for Type 1, 4 and 8 representatives (Paper 9 for Types 2 and 5, Paper 12
+  for Type 9...), checked 2026-11-05 (link above); the landing sentence now says Paper 7 with a
+  product paper such as 8, 9 or 12.

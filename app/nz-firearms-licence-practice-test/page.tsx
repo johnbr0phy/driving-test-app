@@ -51,7 +51,7 @@ const faqs = [
   },
   {
     q: "What should I study for the firearms theory test?",
-    a: "The regulator says everything you need is in the Firearms Safety Code: the seven basic rules of firearm safety, the LOAD, ACTION, INSTANT and UNLOAD states, target identification, firing zones, safe handling, storage and transport, and licence holder obligations. The code is being updated for the Arms Act 2026, which came into force on 23 September 2026, so these questions use the new Act's terms, such as restricted firearms for what were called prohibited firearms.",
+    a: "The regulator says everything you need is in the Firearms Safety Code: the seven basic rules of firearm safety, the LOAD, ACTION, INSTANT and UNLOAD states, target identification, firing zones, safe handling, storage and transport, and licence holder obligations. The code is being updated for the Arms Act 2026, which came into force on 23 September 2026, so these questions follow the new Act where it changed the rules.",
   },
   {
     q: "How are these practice tests different from the real test?",

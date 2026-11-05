@@ -2132,14 +2132,14 @@
     "state": "ALL",
     "questionId": "KENCK-CHN-005",
     "category": "kenckCommunity",
-    "question": "Who directly supervises community health promoters?",
-    "optionA": "Community health assistants",
-    "optionB": "Medical superintendents",
-    "optionC": "Assistant county chiefs",
-    "optionD": "County health directors",
+    "question": "Under the Primary Health Care Act, 2023, who is assigned to supervise the community health promoters in a community health unit?",
+    "optionA": "A community health officer",
+    "optionB": "A medical superintendent",
+    "optionC": "An assistant county chief",
+    "optionD": "A county health director",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Community health assistants, health workers in the link facility, supervise and support the promoters in a community health unit."
+    "explanation": "The Act defines a community health officer as a trained health professional assigned to supervise the promoters in their community health unit, and that officer assigns each promoter their households."
   },
   {
     "type": "KENCK",

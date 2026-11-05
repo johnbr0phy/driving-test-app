@@ -55,7 +55,7 @@ mental health 3, law, ethics and leadership 4. The split is Tigertest's; NCK pub
   3 hours, NASG, uterine balloon tamponade), Pritchard magnesium sulphate regimen, chlorhexidine
   7.1% cord care (Kenya newborn policy), tetracycline eye ointment.
 - Kenya Essential Package for Health levels 1 to 6; Kenya Community Health Policy (one community
-  health promoter per about 100 households; community health assistants supervise); Primary Health
+  health promoter per about 100 households; a community health officer supervises, per the Act); Primary Health
   Care Act, 2023 (CHVs renamed community health promoters).
 - Law: Nurses and Midwives Act, Cap 257; Constitution of Kenya 2010, Article 43 and the Fourth
   Schedule; Children Act, 2022; Data Protection Act, 2019; Prohibition of Female Genital Mutilation
@@ -64,3 +64,25 @@ mental health 3, law, ethics and leadership 4. The split is Tigertest's; NCK pub
 - Mathari National Teaching and Referral Hospital (Kenya's psychiatric referral hospital).
 All 200 items are original. Checked against data/gulf-nursing-questions.json, data/cna-questions.json
 and data/v2/{nclex,nclexpn,uknmc,rexpn}: items with the same fact and answer were rewritten.
+
+## Fact-check, 2026-11-05
+- Chlorhexidine digluconate 7.1% gel (delivering 4% chlorhexidine) for newborn cord care: adopted
+  by Kenya's Ministry of Health in 2013 (expert panel, Kenya Essential Medicines List) and set out
+  in the MOH 2016 guideline; described as the national recommended practice. Kiambu County study,
+  PMC, checked 2026-11-05: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12176292/ and
+  https://afenet-journal.org/evaluating-effectiveness-of-chlorhexidine-digluconate-7-1-in-comparison-to-alternative-cord-care-practices-in-kiambu-county-kenya-a-cross-sectional-study-on-neonatal-outcomes/
+  (WHO's recommendation: chlorhexidine for cord care where neonatal mortality is high). Confirmed.
+- Supervision of community health promoters: the Primary Health Care Act, 2023 (No. 13 of 2023,
+  in force 2 November 2023) defines a "community health officer" as "a trained health professional
+  who is assigned to supervise the community health promoters under their community health unit",
+  and s 10(1) has that officer assign households to each promoter; a community health unit is up to
+  1,000 households. Bill text (as passed in these definitions):
+  https://r4d.org/wp-content/uploads/Kenya-Primary-Health-Care-Bill-2023.pdf ; Act on Kenya Law:
+  https://new.kenyalaw.org/akn/ke/act/2023/13/eng@2023-11-24 , checked 2026-11-05.
+  FIXED: the CHN item said community health assistants supervise promoters (the older Community
+  Health Strategy wording); it now asks for the Act's community health officer, and no option names
+  community health assistants, so the item has one defensible answer.
+- About 100 households per promoter: Kenya News Agency and press on the 2023 CHP rollout
+  ("ten promoters with 100 households each ... 1,000 households ... form a Community Health Unit"),
+  https://www.the-star.co.ke/news/2023-09-25-ruto-flags-off-100000-community-health-promoters-kits ,
+  checked 2026-11-05. Kept.

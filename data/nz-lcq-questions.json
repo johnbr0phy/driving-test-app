@@ -1145,7 +1145,7 @@
     "optionD": "A work security pass",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "The approved documents are a current passport, a current New Zealand driver licence and a current Kiwi Access card (formerly the HANZ 18+ card)."
+    "explanation": "Approved evidence of age documents are a current passport, a current New Zealand driver licence and a current Kiwi Access card (formerly the HANZ 18+ card), and since 28 May 2026 an approved digital ID credential."
   },
   {
     "type": "NZLCQ",
@@ -1196,12 +1196,12 @@
     "category": "nzlcqOffences",
     "question": "A young-looking patron shows a photo of his passport on his phone. What should staff do?",
     "optionA": "Accept the phone photo",
-    "optionB": "Ask for the original document",
+    "optionB": "Ask for approved ID instead",
     "optionC": "Serve a low-alcohol drink",
     "optionD": "Ask his friends to confirm his age",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Photos, photocopies and scans are not approved evidence of age; staff need to see the current original document."
+    "explanation": "Photos, photocopies and scans are not approved evidence of age. Staff need a current original document, or an approved digital ID credential from an accredited service (allowed since 28 May 2026)."
   },
   {
     "type": "NZLCQ",
@@ -1334,14 +1334,14 @@
     "state": "ALL",
     "questionId": "NZLCQ-OFF-016",
     "category": "nzlcqOffences",
-    "question": "A bar advertises a free shot for everyone who arrives before 9pm. What does the Act say about promoting free alcohol?",
-    "optionA": "It is always permitted",
-    "optionB": "It needs a special licence",
-    "optionC": "It is allowed before 9pm",
-    "optionD": "It is generally an offence",
+    "question": "A bar puts a sign on the street offering a free shot to everyone who arrives before 9pm. Under the Act this is:",
+    "optionA": "Always permitted",
+    "optionB": "Allowed with a special licence",
+    "optionC": "Allowed before 9pm",
+    "optionD": "An offence, as it is seen outside",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Promoting or advertising free alcohol is an offence, as is offering goods or services on condition that alcohol is bought."
+    "explanation": "Promoting or advertising free alcohol in a way that can be seen or heard from outside the licensed premises is an offence, as is offering goods or prizes on condition that alcohol is bought."
   },
   {
     "type": "NZLCQ",

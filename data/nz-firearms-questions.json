@@ -2377,21 +2377,21 @@
     "optionD": "A 10-year licence",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Pistols, restricted weapons, restricted firearms and restricted magazines need the right endorsement on the licence and an approved permit to possess for each item."
+    "explanation": "A pistol needs the right endorsement on the licence and an approved permit to possess for each pistol, as do the other firearms the law limits to endorsed holders."
   },
   {
     "type": "NZFIREARMS",
     "state": "ALL",
     "questionId": "NZFA-LAW-010",
     "category": "nzfaLaw",
-    "question": "For a standard licence holder, a centrefire semi-automatic rifle is:",
-    "optionA": "Allowed with a small magazine",
-    "optionB": "A restricted firearm",
-    "optionC": "Allowed for pest control",
-    "optionD": "A standard firearm",
+    "question": "A standard licence holder wants a centrefire semi-automatic rifle. Under the Arms Act 2026, they:",
+    "optionA": "Can have one with a small magazine",
+    "optionB": "Need an endorsement first",
+    "optionC": "Can use one for pest control",
+    "optionD": "Need no extra approval at all",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Centrefire semi-automatic rifles are restricted firearms under the Arms Act 2026 (prohibited firearms under the 1983 Act). A standard licence holder cannot have or use one without the right endorsement and permit."
+    "explanation": "The regulator lists semi-automatic centrefire rifles as needing an endorsement on the licence. The tight controls on these firearms brought in from 2019 carry over into the Arms Act 2026, in force since 23 September 2026."
   },
   {
     "type": "NZFIREARMS",

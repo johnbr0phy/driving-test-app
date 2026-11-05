@@ -12,7 +12,7 @@ for m in ORDER:
     for i, (q, key, wrong, expl) in enumerate(mod.Q):
         assert len(wrong) == 3, (m, i)
         assert key not in wrong, (m, i)
-        assert "—" not in q + key + "".join(wrong) + expl, (m, i)
+        assert "\u2014" not in q + key + "".join(wrong) + expl, (m, i)
         k = i % 4
         opts = list(wrong); opts.insert(k, key)
         rows.append({"type": "AESIRA", "state": "ALL", "questionId": f"AESIRA-{mod.SEG}-{i+1:03d}",

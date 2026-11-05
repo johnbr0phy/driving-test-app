@@ -24,9 +24,12 @@ const REMAINING_MASCOT_IDS = new Set(["capm", "psm", "itil", "cissp", "rbt", "cp
 // The homepage cards were redrawn like the search homepage, and /tests and /teach got their own (Nov 2026).
 const HUB_IDS = new Set(["home", "tests", "teach", "uk", "ca", "au", "in", "ie", "nz", "ph", "my", "sg", "hk", "ae", "za", "ng", "pk", "ke", "es", "pt", "ro", "se", "gr", "dk", "hu", "be", "fi", "mt", "de"]);
 
+// Share copy that quoted question counts and timings was rewritten without them (Nov 5).
+const NO_COUNTS_IDS = new Set(["appsych", "apush", "apgov", "apworld", "aphug", "aplang", "apbio", "apcalcab", "psm", "itil", "upscse", "ssccgl", "sscchsl", "ssccpo", "sscgd", "sscmts", "rrbntpc", "rrbgroupd", "rrbalp", "rpfconst", "uppolice", "delhipolice", "biharpolice", "rajpolice", "mppolice", "ibpspo", "sbipo", "ibpsclerk", "sbiclerk", "ibpsrrb", "agniveer", "agniveervayu", "jeemain", "cuet", "ugcnet", "jnvst", "aissee", "jambeng", "jambmath", "jambbio", "jambchem", "jambphys", "hukresz", "phlet", "ngpolice", "cdcfib", "ngarmy", "ngcustoms", "trcnpqe"]);
+
 export function shareImageUrl(id: string, language = "en"): string {
   const query = new URLSearchParams({
-    v: BATCH_C_MASCOT_IDS.has(id) ? "batch-c-mascots-1" : BATCH_B_MASCOT_IDS.has(id) ? "batch-b-mascots-1" : BATCH_A_MASCOT_IDS.has(id) ? "batch-a-mascots-1" : AP_PH_MASCOT_IDS.has(id) ? "ap-ph-mascots-1" : HUB_IDS.has(id) ? "search-home-1" : SHARE_COPY_IDS.has(id) ? "share-copy-1" : REMAINING_MASCOT_IDS.has(id) ? "remaining-mascots-1" : ROLE_MASCOT_IDS.has(id) ? "role-mascots-1" : NEW_MASCOT_IDS.has(id) ? "citizenship-pmp-1" : SHARE_IMAGE_VERSION,
+    v: NO_COUNTS_IDS.has(id) ? "no-counts-1" : BATCH_C_MASCOT_IDS.has(id) ? "batch-c-mascots-1" : BATCH_B_MASCOT_IDS.has(id) ? "batch-b-mascots-1" : BATCH_A_MASCOT_IDS.has(id) ? "batch-a-mascots-1" : AP_PH_MASCOT_IDS.has(id) ? "ap-ph-mascots-1" : HUB_IDS.has(id) ? "search-home-1" : SHARE_COPY_IDS.has(id) ? "share-copy-1" : REMAINING_MASCOT_IDS.has(id) ? "remaining-mascots-1" : ROLE_MASCOT_IDS.has(id) ? "role-mascots-1" : NEW_MASCOT_IDS.has(id) ? "citizenship-pmp-1" : SHARE_IMAGE_VERSION,
   });
   if (language !== "en") query.set("lang", language);
   return `/og/${encodeURIComponent(id)}?${query.toString()}`;

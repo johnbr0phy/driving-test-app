@@ -14,6 +14,18 @@ const nextConfig: NextConfig = {
   experimental: {
     webpackMemoryOptimizations: true,
   },
+  // The question banks are about 47 MB of JSON, compiled for the server and
+  // as client chunks. In production webpack tracks every nested field of an
+  // imported JSON file as its own export (json.exportsDepth = Infinity), which
+  // for ~56,000 questions pushed the compile to 7.9 GB, past the 8 GB build
+  // machine (Nov 4 2026). Banks are always used whole, so tracking only the
+  // top level changes nothing at runtime.
+  webpack(config) {
+    config.module = config.module ?? {};
+    config.module.parser = config.module.parser ?? {};
+    config.module.parser.json = { ...(config.module.parser.json ?? {}), exportsDepth: 1 };
+    return config;
+  },
   outputFileTracingIncludes: {
     // Only the DMV faces: exam tigers are fetched over HTTP (see the route).
     "/api/og/score-card": ["./public/tiger_face_*.png", "./public/fonts/share/*"],

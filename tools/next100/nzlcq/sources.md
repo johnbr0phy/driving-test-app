@@ -83,7 +83,8 @@
   holdings; powers of entry; police closure. Not used: exact closure duration, licence terms,
   acting-manager week limits, fines and fees.
 - NZ Transport Agency drink-driving limits: 250 micrograms per litre of breath / 50 mg per 100 ml
-  of blood for drivers 20 and over; zero for under-20s (https://www.nzta.govt.nz/safety/driving-safely/alcohol-and-drugs/).
+  of blood for drivers 20 and over; zero for under-20s (Land Transport Act 1998 as amended 2014;
+  settled law, page not fetched).
 - Trespass Act 1980: warning to leave (s 3) and warning to stay off for two years (s 4).
 - Private Security Personnel and Private Investigators Act 2010: crowd controllers need a licence or
   certificate of approval.

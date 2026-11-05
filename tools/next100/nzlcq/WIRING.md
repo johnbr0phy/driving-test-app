@@ -78,12 +78,11 @@ const nzlcq: ExamConfig = {
       "Fix the misses, then retake.",
       "All done. You're ready for your LCQ assessment.",
     ],
-    sourceLine: "Original questions on NZQA unit standards 4646 and 16705 and the Sale and Supply of Alcohol Act 2012. Not affiliated with NZQA, ServiceIQ or any LCQ provider.",
+    sourceLine: "Based on NZQA unit standards 4646 and 16705 and New Zealand law (Sale and Supply of Alcohol Act 2012) as of November 2026. Original questions; 50 per test, 80% is Tigertest's readiness target. Not affiliated with NZQA, ServiceIQ or any LCQ provider.",
+    analyticsKey: "nzlcq",
   },
 };
 ```
-(Match the other fields of the `copy` block to the current `llqp` config if its shape has
-changed; nothing else is exam-specific.)
 
 Append `nzlcq` to the `EXAMS` array after the last international batch 1 exam.
 

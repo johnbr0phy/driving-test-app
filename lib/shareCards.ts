@@ -32,17 +32,17 @@ const hubs: Record<string, ShareCard> = {
   ca: { title: "Free Canadian practice tests", lines: ["Free Canadian", "practice tests"], description: "Driving knowledge, school assessments, healthcare and Red Seal trades.", footer: "Find your test at tigertest.io/ca", color: "#B02D38", tint: "#FCEDEF", mascots: ["osslt", "rexpn", "caelec"] },
   au: { title: "Free Australian practice tests", lines: ["Free Australian", "practice tests"], description: "Learner licences, NAPLAN, selective entry and workplace certificates.", footer: "Find your test at tigertest.io/au", color: "#17644B", tint: "#E7F5ED", mascots: ["naplan", "auforklift", "auwhite"] },
   in: { title: "Free practice tests for India", lines: ["Free practice tests", "for India"], description: "Learner's licence, government jobs, JEE, NEET and teacher tests.", footer: "Find your test at tigertest.io/in", color: "#B35A00", tint: "#FFF3E0", mascots: ["dmv", "nclex", "aws"] },
-  ie: { title: "Free practice tests for Ireland", lines: ["Free practice tests", "for Ireland"], description: "Driver Theory Test, college entrance and IT certifications.", footer: "Find your test at tigertest.io/ie", color: "#13704A", tint: "#E6F5EC", mascots: ["dmv", "sat", "aws"] },
-  nz: { title: "Free practice tests for New Zealand", lines: ["Free practice tests", "for New Zealand"], description: "Learner licence, college entrance and IT certifications.", footer: "Find your test at tigertest.io/nz", color: "#1F2A44", tint: "#ECEFF6", mascots: ["dmv", "sat", "aws"] },
+  ie: { title: "Free practice tests for Ireland", lines: ["Free practice tests", "for Ireland"], description: "Car, truck and bus theory tests, college entrance and IT certifications.", footer: "Find your test at tigertest.io/ie", color: "#13704A", tint: "#E6F5EC", mascots: ["dmv", "sat", "aws"] },
+  nz: { title: "Free practice tests for New Zealand", lines: ["Free practice tests", "for New Zealand"], description: "Learner and firearms licences, the LCQ and IT certifications.", footer: "Find your test at tigertest.io/nz", color: "#1F2A44", tint: "#ECEFF6", mascots: ["dmv", "sat", "aws"] },
   ph: { title: "Free practice tests for the Philippines", lines: ["Free practice tests", "for the Philippines"], description: "LTO exam reviewer, Civil Service Exam, LET and IT certifications.", footer: "Find your test at tigertest.io/ph", color: "#1F3A5F", tint: "#EAF0F7", mascots: ["dmv", "sat", "aws"] },
-  my: { title: "Free practice tests for Malaysia", lines: ["Free practice tests", "for Malaysia"], description: "KPP01 theory test, college entrance and IT certifications.", footer: "Find your test at tigertest.io/my", color: "#7A1FA2", tint: "#F5EAFA", mascots: ["dmv", "sat", "aws"] },
-  sg: { title: "Free practice tests for Singapore", lines: ["Free practice tests", "for Singapore"], description: "Basic Theory Test, college entrance and IT certifications.", footer: "Find your test at tigertest.io/sg", color: "#A30000", tint: "#FCEBEB", mascots: ["dmv", "sat", "aws"] },
-  hk: { title: "Free practice tests for Hong Kong", lines: ["Free practice tests", "for Hong Kong"], description: "Driving theory test, college entrance and IT certifications.", footer: "Find your test at tigertest.io/hk", color: "#A3007A", tint: "#FBE9F5", mascots: ["dmv", "sat", "aws"] },
-  ae: { title: "Free practice tests for the UAE", lines: ["Free practice tests", "for the UAE"], description: "Driving theory test, college entrance and IT certifications.", footer: "Find your test at tigertest.io/ae", color: "#0C6B52", tint: "#E6F5F0", mascots: ["dmv", "sat", "aws"] },
+  my: { title: "Free practice tests for Malaysia", lines: ["Free practice tests", "for Malaysia"], description: "KPP01 theory test, PCEIA insurance exam and IT certifications.", footer: "Find your test at tigertest.io/my", color: "#7A1FA2", tint: "#F5EAFA", mascots: ["dmv", "sat", "aws"] },
+  sg: { title: "Free practice tests for Singapore", lines: ["Free practice tests", "for Singapore"], description: "Basic and Final Theory Tests, RES exam and IT certifications.", footer: "Find your test at tigertest.io/sg", color: "#A30000", tint: "#FCEBEB", mascots: ["dmv", "sat", "aws"] },
+  hk: { title: "Free practice tests for Hong Kong", lines: ["Free practice tests", "for Hong Kong"], description: "Driving theory test, IIQE, LE Paper 1 and IT certifications.", footer: "Find your test at tigertest.io/hk", color: "#A3007A", tint: "#FBE9F5", mascots: ["dmv", "sat", "aws"] },
+  ae: { title: "Free practice tests for the UAE", lines: ["Free practice tests", "for the UAE"], description: "Driving theory test, SIRA guard exam and IT certifications.", footer: "Find your test at tigertest.io/ae", color: "#0C6B52", tint: "#E6F5F0", mascots: ["dmv", "sat", "aws"] },
   za: { title: "Free practice tests for South Africa", lines: ["Free practice tests", "for South Africa"], description: "K53 learner's test, college entrance and IT certifications.", footer: "Find your test at tigertest.io/za", color: "#4F7408", tint: "#F0F6E3", mascots: ["dmv", "sat", "aws"] },
   ng: { title: "Free practice tests for Nigeria", lines: ["Free practice tests", "for Nigeria"], description: "JAMB UTME, recruitment tests, the TRCN PQE and the driving test.", footer: "Find your test at tigertest.io/ng", color: "#1B6B20", tint: "#E8F4E9", mascots: ["dmv", "sat", "aws"] },
   pk: { title: "Free practice tests for Pakistan", lines: ["Free practice tests", "for Pakistan"], description: "Driving licence sign test, college entrance and IT certifications.", footer: "Find your test at tigertest.io/pk", color: "#0B5E3A", tint: "#E6F4EC", mascots: ["dmv", "sat", "aws"] },
-  ke: { title: "Free practice tests for Kenya", lines: ["Free practice tests", "for Kenya"], description: "NTSA driving test, college entrance and IT certifications.", footer: "Find your test at tigertest.io/ke", color: "#066A6E", tint: "#E4F4F5", mascots: ["dmv", "sat", "aws"] },
+  ke: { title: "Free practice tests for Kenya", lines: ["Free practice tests", "for Kenya"], description: "NTSA driving test, NCK nursing exam and IT certifications.", footer: "Find your test at tigertest.io/ke", color: "#066A6E", tint: "#E4F4F5", mascots: ["dmv", "sat", "aws"] },
   es: { title: "Free practice tests for Spain", lines: ["Free practice tests", "for Spain"], description: "DGT theory exam in English, college entrance and IT certifications.", footer: "Find your test at tigertest.io/es", color: "#970C1F", tint: "#FDEDEF", mascots: ["dmv", "sat", "aws"] },
   pt: { title: "Free practice tests for Portugal", lines: ["Free practice tests", "for Portugal"], description: "IMT theory exam in English, college entrance and IT certifications.", footer: "Find your test at tigertest.io/pt", color: "#0B8425", tint: "#EDFDF0", mascots: ["dmv", "sat", "aws"] },
   ro: { title: "Free practice tests for Romania", lines: ["Free practice tests", "for Romania"], description: "Category B theory exam in English, college entrance and IT certifications.", footer: "Find your test at tigertest.io/ro", color: "#041295", tint: "#EDEEFD", mascots: ["dmv", "sat", "aws"] },
@@ -723,6 +723,46 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
   "cemap": {
     "color": "hsl(203, 30%, 26%)",
     "tint": "hsl(203, 30%, 96%)"
+  },
+  "sgftt": {
+    "color": "hsl(0, 70%, 22%)",
+    "tint": "hsl(0, 50%, 95%)"
+  },
+  "sgres": {
+    "color": "hsl(350, 70%, 22%)",
+    "tint": "hsl(350, 70%, 96%)"
+  },
+  "hkiiqe1": {
+    "color": "hsl(215, 70%, 22%)",
+    "tint": "hsl(215, 70%, 96%)"
+  },
+  "hklesfi1": {
+    "color": "hsl(275, 70%, 22%)",
+    "tint": "hsl(275, 70%, 96%)"
+  },
+  "nzfirearms": {
+    "color": "hsl(30, 55%, 22%)",
+    "tint": "hsl(30, 55%, 96%)"
+  },
+  "nzlcq": {
+    "color": "hsl(340, 70%, 22%)",
+    "tint": "hsl(340, 70%, 96%)"
+  },
+  "aesira": {
+    "color": "hsl(220, 55%, 22%)",
+    "tint": "hsl(220, 55%, 96%)"
+  },
+  "mypce": {
+    "color": "hsl(230, 25%, 22%)",
+    "tint": "hsl(230, 25%, 96%)"
+  },
+  "kenck": {
+    "color": "hsl(160, 55%, 22%)",
+    "tint": "hsl(160, 55%, 96%)"
+  },
+  "iedttcv": {
+    "color": "hsl(140, 70%, 22%)",
+    "tint": "hsl(140, 70%, 96%)"
   },
   "pcoc": {
     "color": "hsl(220, 50%, 46%)",

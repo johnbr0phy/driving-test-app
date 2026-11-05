@@ -14,6 +14,11 @@
   "https://u.ae/en/information-and-services/justice-safety-and-the-law/safety/road-safety",
   "https://gulfnews.com/uae/transport/new-uae-traffic-law-comes-into-force-1.2051739"
  ],
+ "aesira": [
+  "https://dlp.dubai.gov.ae/Legislation%20Reference/2016/Law%20No.%20(12",
+  "https://dlp.dubai.gov.ae/Legislation%20Ar%20Reference/2026/",
+  "https://dlp.dubai.gov.ae/Legislation%20Reference/2018/Resolution%20No.%20(1"
+ ],
  "agniveer": [
   "https://joinindianarmy.nic.in",
   "https://www.py.gov.in/sites/default/files/indianarmy01042025pr.pdf",
@@ -437,6 +442,16 @@
   "https://www.td.gov.hk/filemanager/en/content_172/road_users_code_2020_eng.pdf",
   "https://www.td.gov.hk/filemanager/en/publication/conditions%20imposed%20with%20issue%20of%20ldl%20(eng"
  ],
+ "hkiiqe1": [
+  "https://www.peak.edu.hk/exam/doc/IIQE_handbook_English_202609.pdf",
+  "https://www.peak.edu.hk/exam/en/iiqe",
+  "https://www.peak.edu.hk/exam/doc/syllabus_P1_eng_2024.pdf"
+ ],
+ "hklesfi1": [
+  "https://www.hksi.org/en/qualification/practising-qualifications/licensing-examination-for-securities-and-futures-intermediaries/overview/",
+  "https://www.hksi.org/media/8902/p1-syllabus_eng-v35_clean.pdf",
+  "https://www.elegislation.gov.hk/hk/cap571"
+ ],
  "hscmaths": [
   "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/assessment",
   "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/assessment/hsc-examinations"
@@ -458,6 +473,11 @@
  ],
  "iedtt": [
   "https://www.theorytest.ie/general-information/faqs/"
+ ],
+ "iedttcv": [
+  "https://www.theorytest.ie/general-information/faqs/",
+  "https://theorytest.ie/book-your-theory-test/driver-theory-test-bus-or-truck/",
+  "https://cvrt.ie/ie/Operator-Driver-Obligations/Tachograph-Equipment/~/assets/pdf/Using%20a%20Tachograph%20-%20WEB.pdf"
  ],
  "itil": [
   "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1/itil-4-foundation-2565",
@@ -499,6 +519,11 @@
   "https://cbseitms.rcil.gov.in/nvs/",
   "https://navodaya.gov.in"
  ],
+ "kenck": [
+  "https://nckenya.com/examination/",
+  "https://nckenya.com/wp-content/uploads/2026/07/Examination-instructions-and-schedule-August-November-2026-May-2027.pdf",
+  "https://digiproctor.com/nck"
+ ],
  "kentsa": [
   "https://nation.africa/kenya/news/drivers-to-sit-written-test-in-ntsa-changes-232084",
   "https://www.sheriaplex.com/kenya-acts/3088",
@@ -533,6 +558,11 @@
   "https://open-exam-prep.com/practice/my-kpp-car",
   "https://open-exam-prep.com/practice/my-kpp-combined",
   "https://thesun.my/news/malaysia-news/module-kpp01-for-motorcycle-car-licence-to-be-combined-from-aug-1-anthony-loke-pm13972805/"
+ ],
+ "mypce": [
+  "https://aiiasia.org/programmes/pre-contract-examination-for-insurance-agents-pceia/",
+  "https://aiiasia.org/exam-faqs/",
+  "https://aiiasia.org/wp-content/uploads/2024/10/MII-Guide-Book-1.pdf"
  ],
  "naplan": [
   "https://www.nap.edu.au/naplan/whats-in-the-tests",
@@ -611,6 +641,16 @@
  "nswsel": [
   "https://education.nsw.gov.au/schooling/students/oc-and-shs/going-to-a-selective-high-school/get-ready-for-the-selective-high-school-placement-test",
   "https://education.nsw.gov.au/schooling/parents-and-carers/choosing-a-school-setting/selective-high-schools/placement-test/selective-high-school-practice-tests"
+ ],
+ "nzfirearms": [
+  "https://www.firearmssafety.govt.nz/individual-licence/courses-and-education/firearms-safety-course-options",
+  "https://www.firearmssafety.govt.nz/individual-licence/courses-and-education/firearms-safety-course",
+  "https://www.firearmssafety.govt.nz/sites/default/files/2025-09/Firearms%20Safety%20Code_0.pdf"
+ ],
+ "nzlcq": [
+  "https://www.nzqa.govt.nz/nqfdocs/units/pdf/4646.pdf",
+  "https://www.nzqa.govt.nz/nqfdocs/units/pdf/16705.pdf",
+  "https://www.serviceiq.org.nz/licence-controller-qualification"
  ],
  "nzroad": [
   "https://drive.govt.nz/learner-licence/doing-the-learner-licence-test",
@@ -774,6 +814,16 @@
   "https://www.police.gov.sg/-/media/SPF/Knowledge-Hub/Traffic/BT-ENG-24126.pdf",
   "https://www.police.gov.sg/Knowledge-Hub/Traffic/Traffic-Matters/Provisional-Driving-Licence",
   "https://www.police.gov.sg/Advisories/Traffic"
+ ],
+ "sgftt": [
+  "https://www.police.gov.sg/-/media/SPF/Knowledge-Hub/Traffic/FT-ENG-2126-Revised.pdf",
+  "https://www.police.gov.sg/Knowledge-Hub/Traffic/Traffic-Matters/Online-Learning-Portal",
+  "https://help.ssdcl.com.sg/portal/en/kb/articles/how-do-i-book-the-traffic-police-theory-tests-btt-ftt-and-rtt-online"
+ ],
+ "sgres": [
+  "https://www.cea.gov.sg/real-estate-professionals/for-aspiring-real-estate-salespersons/real-estate-salesperson-examination/prepare-for-the-real-estate-salesperson-examination/",
+  "https://isomer-user-content.by.gov.sg/71/25d2fc43-4e98-400d-85bd-8ffde09d2cec/RES%20examination%20Syllabus%202027.pdf",
+  "https://isomer-user-content.by.gov.sg/71/e331bb2c-1bcd-46d7-85f1-8f2d8c448c68/RES%20FAQs%20(Version%20as%20at%2027%20Aug%202025"
  ],
  "sie": [
   "https://www.finra.org/registration-exams-ce/qualification-exams/securities-industry-essentials-exam"

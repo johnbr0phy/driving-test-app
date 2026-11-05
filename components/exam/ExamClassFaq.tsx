@@ -183,6 +183,9 @@ const TEACHES: Record<string, string> = {
   cscs: "a construction course or run CSCS test prep",
   ukfood: "Level 2 food hygiene courses",
   ukaplh: "a personal licence course",
+  nzlcq: "an LCQ course",
+  aesira: "a SIRA basic security guard course",
+  kenck: "a nursing college class",
 };
 
 function question(examId: string): string {

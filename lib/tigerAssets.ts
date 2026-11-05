@@ -91,6 +91,10 @@ const BORROWED_SETS: Record<string, string> = {
   // teaching, insurance and mortgage families. Dietitian and HR exams have their own sets above.
   aswbclin: "aswb", cisa: "cissp", cssgb: "pmp", ccs: "cpc", praxis5001: "praxis",
   fladjuster: "pnc", llqp: "insurance", cemap: "nmls",
+  // International batch 1 reuses the car, CDL, real estate, insurance, Series 7, hunter, personal
+  // licence, security guard and NCLEX families.
+  sgftt: "driving", iedttcv: "cdl", sgres: "realestate", hkiiqe1: "insurance", hklesfi1: "series7",
+  nzfirearms: "hunter", nzlcq: "ukaplh", aesira: "security", mypce: "insurance", kenck: "nclex",
 };
 
 export function hasTigerSet(examId: string): boolean {

@@ -3690,4 +3690,153 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "LIBF's FSRE qualification specification (version 7, July 2026) and CeMAP qualification specification (April 2026), checked November 2026",
     source: { name: "Walbrook (LIBF): Financial Services, Regulation and Ethics", url: "https://www.walbrook.ac.uk/libf/professional-qualifications/financial-and-mortgage-advice/financial-services-regulation-and-ethics-fsre/" },
   },
+  sgftt: {
+    answer:
+      "The Final Theory Test (FTT) is the second theory test for a class 3 or 3A car licence in Singapore, taken after the Basic Theory Test and before the practical driving test. It is based on the Traffic Police handbook Final Theory of Driving: vehicle controls, driving techniques, defensive driving, other road users, expressways, emergencies and accidents. You book it at one of the three driving centres, and you need a valid final theory pass to sit the practical test. Guides say it is 50 multiple-choice questions in 50 minutes with 45 needed to pass; the Traffic Police do not publish the format.",
+    rows: [
+      { label: "Questions", value: "50 multiple-choice (as guides say)" },
+      { label: "Pass mark", value: "45 of 50 (as guides say)" },
+      { label: "Time", value: "50 minutes (as guides say)" },
+      { label: "Licence", value: "Class 3 and 3A (car)" },
+      { label: "Before it", value: "Basic Theory Test" },
+      { label: "Next step", value: "Practical driving test" },
+      { label: "Study material", value: "Final Theory of Driving (2 Jan 2026)" },
+      { label: "Run by", value: "Traffic Police, at the three driving centres" },
+    ],
+    basedOn: "Traffic Police Final Theory of Driving handbook (published online 2.1.2026) and the Traffic Police Online Learning Portal, checked November 2026",
+    source: { name: "Singapore Police Force: Online Learning Portal", url: "https://www.police.gov.sg/Knowledge-Hub/Traffic/Traffic-Matters/Online-Learning-Portal" },
+  },
+  sgres: {
+    answer:
+      "The Real Estate Salesperson (RES) Examination is the exam the Council for Estate Agencies (CEA) requires before registering someone as a real estate salesperson in Singapore, taken after an approved RES course of at least 65 hours. It has two papers sat separately: Paper 1 on the real estate market, basic land law and dealings with interests in land, and Paper 2 on regulation of the agency industry, ethics, anti-money laundering duties, marketing and property transactions. Each paper has 60 multiple-choice questions worth 1 mark and 20 case-study questions worth 2 marks, lasts 2.5 hours, and has a passing mark of 60 out of 100. A revised syllabus applies to exams from 1 January 2027.",
+    rows: [
+      { label: "Papers", value: "Paper 1 (Units 1 and 2); Paper 2 (Units 3 and 4)" },
+      { label: "Questions", value: "60 MCQs + 20 case-study MCQs per paper (100 marks)" },
+      { label: "Time", value: "2.5 hours per paper" },
+      { label: "Pass mark", value: "60 per paper, subject to CEA review" },
+      { label: "Before the exam", value: "Approved RES course of at least 65 hours" },
+      { label: "Run by", value: "Council for Estate Agencies (CEA)" },
+    ],
+    basedOn: "CEA's Prepare for the RES Examination page and RES Examination Syllabus 2027, checked November 2026",
+    source: { name: "CEA: Prepare for the real estate salesperson examination", url: "https://www.cea.gov.sg/real-estate-professionals/for-aspiring-real-estate-salespersons/real-estate-salesperson-examination/prepare-for-the-real-estate-salesperson-examination/" },
+  },
+  hkiiqe1: {
+    answer:
+      "IIQE Paper I, Principles and Practice of Insurance, is the compulsory paper of Hong Kong's Insurance Intermediaries Qualifying Examination, which anyone seeking an Insurance Authority licence as an insurance agent, technical representative (agent) or technical representative (broker) must pass, together with the paper for their line of business. The Vocational Training Council runs it for the Insurance Authority through its PEAK Exam Centre. Paper I has 75 multiple-choice questions in 2 hours, presented in both English and Chinese, and the pass mark is 70%. It can be taken on paper or on a computer screen, and remote invigilation is offered for Paper I. Results are given as pass or fail only.",
+    rows: [
+      { label: "Questions", value: "75 multiple choice" },
+      { label: "Time", value: "2 hours" },
+      { label: "Pass mark", value: "70%" },
+      { label: "Languages", value: "English and Chinese" },
+      { label: "Syllabus", value: "IA Study Notes, 2024 Edition, seven chapters" },
+      { label: "Run by", value: "VTC (PEAK Exam Centre) for the Insurance Authority" },
+    ],
+    basedOn: "PEAK Exam Centre IIQE handbook effective 1 September 2026 and the Paper I syllabus, checked November 2026",
+    source: { name: "PEAK Exam Centre: Insurance Intermediaries Qualifying Examination", url: "https://www.peak.edu.hk/exam/en/iiqe" },
+  },
+  hklesfi1: {
+    answer:
+      "LE Paper 1, Fundamentals of Securities and Futures Regulation, is the local regulatory framework paper of the Licensing Examination for Securities and Futures Intermediaries, run by the HKSI Institute to meet the competence requirements the SFC recognises for representatives and responsible officers. It is 60 multiple-choice questions in 90 minutes with a 70% pass mark, taken as a computer-based exam in English or Traditional Chinese. Syllabus Version 3.5, in force from 30 June 2026, has nine topics, from Hong Kong's regulators and the Securities and Futures Ordinance to business conduct, anti-money laundering, listing and market misconduct.",
+    rows: [
+      { label: "Questions", value: "60 multiple choice" },
+      { label: "Time", value: "90 minutes" },
+      { label: "Pass mark", value: "70%" },
+      { label: "Languages", value: "English or Traditional Chinese" },
+      { label: "Format", value: "Computer-based, in Hong Kong or at global centres" },
+      { label: "Syllabus", value: "Version 3.5, from 30 June 2026, nine topics" },
+      { label: "Run by", value: "HKSI Institute, for SFC licensing" },
+    ],
+    basedOn: "HKSI Institute LE overview page and the Paper 1 syllabus Version 3.5, checked November 2026",
+    source: { name: "HKSI Institute: Licensing Examination for Securities and Futures Intermediaries", url: "https://www.hksi.org/en/qualification/practising-qualifications/licensing-examination-for-securities-and-futures-intermediaries/overview/" },
+  },
+  nzfirearms: {
+    answer:
+      "Anyone applying for a New Zealand firearms licence for the first time, or whose licence expired more than a year ago, must pass the free Firearms Safety Course before the vetting interview. Its theory test is 30 multiple-choice questions in 30 minutes on the Firearms Safety Code, safe firearms practice and the law, offered in English, Simplified Chinese and te reo Māori, followed by a practical session handling a deactivated firearm. The regulator publishes no pass mark; candidates report needing about 27 of 30. A failed first attempt can be resat after the practical session.",
+    rows: [
+      { label: "Questions", value: "30 multiple choice" },
+      { label: "Time", value: "30 minutes" },
+      { label: "Pass mark", value: "Not published; candidates report 27 of 30 (Tigertest's target)" },
+      { label: "Languages", value: "English, Simplified Chinese, te reo Māori" },
+      { label: "Study from", value: "Firearms Safety Code (being updated for the Arms Act 2026)" },
+      { label: "Also on the course", value: "Practical safe handling session" },
+      { label: "Run by", value: "Firearms Safety and Education New Zealand" },
+    ],
+    basedOn: "Firearms Safety and Education New Zealand's firearms safety course pages, checked November 2026",
+    source: { name: "Firearms Safety and Education NZ: Firearms safety course options", url: "https://www.firearmssafety.govt.nz/individual-licence/courses-and-education/firearms-safety-course-options" },
+  },
+  nzlcq: {
+    answer:
+      "The Licence Controller Qualification (LCQ) is the New Zealand qualification for people who manage the sale of alcohol on licensed premises, and you need it to apply for or renew a manager's certificate. It is awarded on two NZQA Level 4 unit standards: 4646, knowledge of the Sale and Supply of Alcohol Act 2012 and its implications for licensed premises (2 credits), and 16705, knowledge of host responsibility requirements as a duty manager (3 credits). Each is graded Achieved or Not Achieved by the approved course provider, which sets its own assessment; no national question count or pass mark is published, so Tigertest's mock tests use an 80% readiness target.",
+    rows: [
+      { label: "Unit standards", value: "4646 (the Act, 2 credits) and 16705 (host responsibility, 3 credits)" },
+      { label: "Level", value: "NZQA Level 4" },
+      { label: "Grading", value: "Achieved or Not Achieved, per unit standard" },
+      { label: "Assessment", value: "Set by the provider; no national question count or pass mark" },
+      { label: "Needed for", value: "Applying for or renewing a manager's certificate" },
+      { label: "Offered by", value: "ServiceIQ (online) and other approved course providers" },
+    ],
+    basedOn: "NZQA unit standards 4646 v11 and 16705 v7 (March 2023), checked November 2026",
+    source: { name: "NZQA: unit standard 16705", url: "https://www.nzqa.govt.nz/nqfdocs/units/pdf/16705.pdf" },
+  },
+  aesira: {
+    answer:
+      "In Dubai, anyone who works as a security guard needs an individual licence from the Security Industry Regulatory Agency (SIRA), under Law No. (12) of 2016. The executive regulation issued in June 2026 requires the applicant to be at least 18, hold valid UAE residence if not a UAE national, know the basics of Arabic or English, be of good conduct, and pass the theoretical and practical tests SIRA approves, usually after a basic course at a SIRA-accredited training centre. SIRA does not publish the written test's length or pass mark; guides say about 60 multiple-choice questions in English or Arabic, with about 70% commonly reported as the pass mark. The licence lasts two years.",
+    rows: [
+      { label: "Questions", value: "Not published; about 60 multiple choice (guides say)" },
+      { label: "Pass mark", value: "Not published; about 70% (guides say); 70% is Tigertest's target" },
+      { label: "Languages", value: "English or Arabic (guides say)" },
+      { label: "Before the test", value: "Basic course at a SIRA-accredited training centre" },
+      { label: "Minimum age", value: "18" },
+      { label: "Licence", value: "Valid two years; renew at least 30 days before expiry" },
+      { label: "Run by", value: "SIRA, Dubai" },
+    ],
+    basedOn: "Dubai Law No. (12) of 2016 and its executive regulation, Resolution No. (1) of 2026 (Official Gazette, 4 July 2026), checked November 2026; test length and pass mark from guides",
+    source: { name: "Dubai Legislation Portal: Law No. (12) of 2016", url: "https://dlp.dubai.gov.ae/Legislation%20Reference/2016/Law%20No.%20(12)%20of%202016.html" },
+  },
+  mypce: {
+    answer:
+      "The Pre-Contract Examination for Insurance Agents (PCEIA) is the exam a person must pass in Malaysia before an insurer can contract them as an insurance agent. It is run by the Asian Institute of Insurance (Aii), formerly the Malaysian Insurance Institute. Part A, the basics of insurance, is compulsory; a life agent adds Part C (life insurance) and a general agent adds Part B (general insurance). Each part has 50 multiple-choice questions: Parts A and C, or A and B, take 2 hours for 100 questions, and Part B or C alone takes 1 hour 30 minutes. The passing mark is 50%, and the exam is a virtual computer-based exam in English, Bahasa Malaysia or Mandarin.",
+    rows: [
+      { label: "Parts", value: "A Basics (compulsory); B General insurance; C Life insurance" },
+      { label: "Questions", value: "100 for Parts A+C or A+B (50 per part); 50 for B or C alone" },
+      { label: "Time", value: "2 hours (two parts); 1 hour 30 minutes (one part)" },
+      { label: "Pass mark", value: "50%" },
+      { label: "Format", value: "Multiple choice, virtual computer-based exam" },
+      { label: "Languages", value: "English, Bahasa Malaysia, Mandarin" },
+      { label: "Run by", value: "Asian Institute of Insurance (Aii)" },
+    ],
+    basedOn: "Asian Institute of Insurance PCEIA programme page, checked November 2026",
+    source: { name: "Asian Institute of Insurance: PCEIA", url: "https://aiiasia.org/programmes/pre-contract-examination-for-insurance-agents-pceia/" },
+  },
+  kenck: {
+    answer:
+      "The Nursing Council of Kenya (NCK) licensure examination is the exam a nurse or midwife must pass before the Council registers and licenses them to practise in Kenya. It is taken online at designated regional centres in series in August, November and May. Under the Council's 2026 and 2027 schedule, registered nurse candidates (KRCHN, BScN, KRN/M and KRN/MH) sit two papers on one day, each lasting two hours, after a compulsory rehearsal and two mock exams. The Council does not publish the number of questions or a numeric pass mark: each paper must satisfy its Board of Examiners.",
+    rows: [
+      { label: "Run by", value: "Nursing Council of Kenya" },
+      { label: "Papers", value: "2 for KRCHN, BScN, KRN/M and KRN/MH; 1 for post-basic specialties" },
+      { label: "Time", value: "2 hours per paper" },
+      { label: "Delivery", value: "Online, at designated regional centres" },
+      { label: "Questions", value: "Not published; MCQ, short and long answer" },
+      { label: "Pass mark", value: "Not published; satisfy the Board of Examiners" },
+      { label: "Next series", value: "November 2026 (results 11 December 2026), then May 2027" },
+    ],
+    basedOn: "NCK Instructions and Schedules for 2026 and 2027 Licensure Examinations and the NCK examination page, checked November 2026",
+    source: { name: "Nursing Council of Kenya: Examination", url: "https://nckenya.com/examination/" },
+  },
+  iedttcv: {
+    answer:
+      "The truck and bus Driver Theory Test is the computer test you must pass in Ireland before you can get a learner permit for a truck (category C or C1) or a bus (category D or D1). The truck test and the bus test are each 100 multiple-choice questions in 120 minutes, and you need 74 correct to pass; the combined truck and bus test is 140 questions in 180 minutes with 104 to pass. You need a full car licence first, the certificate is valid for two years, and the full bus or truck test also counts as the first step of the Driver CPC.",
+    rows: [
+      { label: "Questions", value: "100 multiple choice (C or D); 140 for the combined CD test" },
+      { label: "Time", value: "120 minutes (C or D); 180 minutes (CD)" },
+      { label: "Pass mark", value: "74 of 100 (C or D); 104 of 140 (CD)" },
+      { label: "Languages", value: "English or Irish (C, D); English only (CD and module tests)" },
+      { label: "Module test", value: "40 questions, 45 minutes, 30 to pass, to add the other category" },
+      { label: "You need first", value: "A full category B (car) licence" },
+      { label: "Certificate valid", value: "2 years" },
+      { label: "Run by", value: "Road Safety Authority (RSA), booked at theorytest.ie" },
+    ],
+    basedOn: "theorytest.ie FAQs and booking pages, checked November 2026",
+    source: { name: "Official RSA Driver Theory Test", url: "https://www.theorytest.ie/general-information/faqs/" },
+  },
 };

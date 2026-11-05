@@ -29,7 +29,7 @@ import epa608Es from "./examTranslations/epa608.es.json";
 import esdgtEs from "./examTranslations/esdgt.es.json";
 import ptimtPt from "./examTranslations/ptimt.pt.json";
 
-export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "bedriving" | "dkteori" | "setrafik" | "fitheory" | "grdriving" | "rodrpciv" | "hukresz" | "mttheory" | "detheorie" | "phlet" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "detheorie" | "htl" | "cst" | "crcst" | "zak53c3";
+export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "bedriving" | "dkteori" | "setrafik" | "fitheory" | "grdriving" | "rodrpciv" | "hukresz" | "mttheory" | "detheorie" | "phlet" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "detheorie" | "htl" | "cst" | "crcst" | "zak53c3";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -11772,7 +11772,666 @@ const cemap: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, nhie, cna, ptcb, phleb, ccma, cma, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, sfadmin, phr, cisa, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, phlto, zak53, zak53c3, sgbtt, aerta, ngfrsc, kentsa, mykpp, hkdrive, pkdrive, esdgt, ptimt, bedriving, dkteori, setrafik, fitheory, grdriving, rodrpciv, hukresz, mttheory, detheorie, phlet, texesppr, praxisplt, praxis5001, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, gulfrn, inrto, htl, cst, crcst];
+const sgftt: ExamConfig = {
+  id: "sgftt",
+  stateCode: "SGFTT",
+  idBase: 17900,
+  slug: "/singapore-ftt",
+  landingPath: "/singapore-ftt-practice-test",
+  name: "Singapore FTT Practice Test",
+  shortName: "Singapore FTT",
+  examLabel: "Final Theory Test",
+  fullName: "Singapore Final Theory Test (FTT)",
+  questionIdPrefix: "SGFTT-",
+  icon: "car",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 90,
+  // Source: Singapore Traffic Police, "Final Theory of Driving: The Official Handbook", published
+  // online 2.1.2026 (FT-ENG-2126-Revised.pdf). The Traffic Police publish no question count, pass
+  // mark or topic weights; guides say 50 questions in 50 minutes, 45 to pass, so passPct 90 =
+  // ceil(0.90 * 50) = 45. Counts follow the handbook's chapters by length. Pools are exactly 4x each
+  // count. Kept clear of the BTT bank; alcohol limit, demerit points, fines and the driving test
+  // section are not asked. All items original. Checked 2026-11-05.
+  blueprint: {
+    sgftControls: 7,
+    sgftTechnique: 8,
+    sgftManoeuvres: 9,
+    sgftDefensive: 8,
+    sgftRoadUsers: 7,
+    sgftExpressway: 5,
+    sgftEmergency: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 17901, name: "Car Controls & Driving Technique", categories: ["sgftControls", "sgftTechnique"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 2, id: 17902, name: "Lanes, Junctions & Manoeuvres", categories: ["sgftManoeuvres"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 3, id: 17903, name: "Defensive Driving & Conditions", categories: ["sgftDefensive"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 4, id: 17904, name: "Other Road Users & Expressways", categories: ["sgftRoadUsers", "sgftExpressway"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 5, id: 17905, name: "Emergencies & Vehicle Care", categories: ["sgftEmergency"], size: 24, weightLabel: "6 of 50 test questions" },
+  ],
+  categoryLabels: {
+    sgftControls: "Car Controls & Instruments",
+    sgftTechnique: "Moving Off, Gears, Bends & Slopes",
+    sgftManoeuvres: "Lanes, Junctions & Manoeuvres",
+    sgftDefensive: "Defensive Driving & Conditions",
+    sgftRoadUsers: "Pedestrians, Cyclists & Large Vehicles",
+    sgftExpressway: "Expressways",
+    sgftEmergency: "Emergencies, Accidents & Vehicle Care",
+  },
+  copy: {
+    guestPrompt: "to save your FTT progress and track every question you miss",
+    trainingHeading: "Train by handbook chapter",
+    trainingSub: "Five sets covering the Final Theory of Driving handbook, from the clutch to expressway exits. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, 45 to pass",
+    heroSubs: [
+      "Five topics, four full tests. Technique and manoeuvres weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your Final Theory Test.",
+    ],
+    sourceLine: "Based on the Traffic Police Final Theory of Driving handbook (2 January 2026). Original questions; 50 per test, 45 to pass as guides quote.",
+    analyticsKey: "sgftt",
+  },
+};
+
+const sgres: ExamConfig = {
+  id: "sgres",
+  stateCode: "SGRES",
+  idBase: 18000,
+  slug: "/singapore-res",
+  landingPath: "/singapore-res-exam-practice-test",
+  name: "Singapore RES Exam Practice Test",
+  shortName: "RES Exam",
+  examLabel: "RES exam",
+  fullName: "Singapore Real Estate Salesperson (RES) Examination",
+  questionIdPrefix: "SGRES-",
+  icon: "house",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 60,
+  // CEA RES Examination Syllabus 2027 (exams from 1 January 2027). Real exam: Paper 1 (Units 1-2)
+  // and Paper 2 (Units 3-4), each 60 MCQs + 20 case-study MCQs, 100 marks, 2.5 hours, pass mark 60.
+  // Mock tests mix both papers 25/25, split inside each paper by the syllabus's recommended
+  // training hours: Unit 1 = market 3, land law and titles 6; Unit 2 = contract and torts 6,
+  // agency and landlord-tenant 5, interests, capacity and planning 5; Unit 3 = regulation and
+  // ethics 6, PMLPFTF 3, marketing 6; Unit 4 = private sales and leasing 4, HDB 3, tax and finance 3.
+  // All items original; Singapore law and CEA, HDB, URA, SLA and IRAS rules as of November 2026,
+  // with no rates, loan limits or other figures that change often.
+  blueprint: {
+    sgresMarket: 3,
+    sgresLandLaw: 6,
+    sgresContract: 6,
+    sgresAgencyLease: 5,
+    sgresInterests: 5,
+    sgresRegulation: 6,
+    sgresAml: 3,
+    sgresMarketing: 6,
+    sgresPrivateSale: 4,
+    sgresHdb: 3,
+    sgresTaxFinance: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 18001, name: "Real Estate Market & Land Law", categories: ["sgresMarket", "sgresLandLaw", "sgresInterests"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 2, id: 18002, name: "Contract, Torts, Agency & Leases", categories: ["sgresContract", "sgresAgencyLease"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 3, id: 18003, name: "Regulation, Ethics & AML", categories: ["sgresRegulation", "sgresAml"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 4, id: 18004, name: "Marketing & Private Property Sales", categories: ["sgresMarketing", "sgresPrivateSale"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 5, id: 18005, name: "HDB, Taxes & Property Finance", categories: ["sgresHdb", "sgresTaxFinance"], size: 24, weightLabel: "6 of 50 test questions" },
+  ],
+  categoryLabels: {
+    sgresMarket: "Real Estate Market & Players",
+    sgresLandLaw: "Land Law, Estates & Titles",
+    sgresContract: "Contract Law & Property Torts",
+    sgresAgencyLease: "Law of Agency & Landlord and Tenant",
+    sgresInterests: "Interests in Land, Capacity & Planning",
+    sgresRegulation: "Agency Regulation, Ethics & Conduct",
+    sgresAml: "Anti-Money Laundering (PMLPFTF)",
+    sgresMarketing: "Real Estate Marketing & Advertising",
+    sgresPrivateSale: "Private Property Sales & Leasing",
+    sgresHdb: "HDB Sale & Rental",
+    sgresTaxFinance: "Property Taxes & Finance",
+  },
+  copy: {
+    guestPrompt: "to save your RES exam progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets across both papers: market and land law, contract and agency law, regulation and anti-money laundering, marketing and private sales, and HDB, taxes and finance. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions across Paper 1 and Paper 2, 60% to pass",
+    heroSubs: [
+      "Two papers, four mock tests. Each real paper is passed on its own.",
+      "Master each topic set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your RES exam.",
+    ],
+    sourceLine: "Based on CEA's RES Examination Syllabus for exams from January 2027 and Singapore law and HDB, URA, SLA and IRAS rules as of November 2026. Original questions; 50 per test, half from each paper. Not affiliated with CEA or any approved course provider.",
+    analyticsKey: "sgres",
+  },
+};
+
+const hkiiqe1: ExamConfig = {
+  id: "hkiiqe1",
+  stateCode: "HKIIQE1",
+  idBase: 18100,
+  slug: "/iiqe-paper-1",
+  landingPath: "/iiqe-paper-1-practice-test",
+  name: "IIQE Paper 1 Practice Test",
+  shortName: "IIQE Paper 1",
+  examLabel: "IIQE Paper 1",
+  fullName: "IIQE Paper I: Principles and Practice of Insurance",
+  questionIdPrefix: "HKIIQE1-",
+  icon: "umbrella",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Hong Kong Insurance Intermediaries Qualifying Examination, Paper I (compulsory): 75 MCQ in
+  // 2 hours, 70% to pass, English and Chinese (PEAK/VTC handbook effective 1 September 2026).
+  // Weighted by the IA Study Notes (2024 Edition) chapter weights 12/16/30/9/5/21/7 scaled to 50:
+  // Ch1 risk 6; Ch2 contract and agency 8; Ch3 principles 15 = insurable interest and utmost good
+  // faith 5, proximate cause and indemnity 5, contribution and subrogation 5; Ch4 insurer functions 5;
+  // Ch5 market 2; Ch6 regulation 11 = insurers 5, intermediaries 6; Ch7 ethics 3.
+  // All items original; Hong Kong law and IA codes as of November 2026.
+  blueprint: {
+    iiqeRisk: 6,
+    iiqeLaw: 8,
+    iiqeGoodFaith: 5,
+    iiqeIndemnity: 5,
+    iiqeContribution: 5,
+    iiqeCompany: 5,
+    iiqeMarket: 2,
+    iiqeInsurers: 5,
+    iiqeIntermediaries: 6,
+    iiqeEthics: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 18101, name: "Risk, Contract & Agency", categories: ["iiqeRisk", "iiqeLaw"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 2, id: 18102, name: "Principles of Insurance", categories: ["iiqeGoodFaith", "iiqeIndemnity", "iiqeContribution"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 3, id: 18103, name: "Insurers & the Hong Kong Market", categories: ["iiqeCompany", "iiqeMarket"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 4, id: 18104, name: "Regulation & Ethics", categories: ["iiqeInsurers", "iiqeIntermediaries", "iiqeEthics"], size: 56, weightLabel: "14 of 50 test questions" },
+  ],
+  categoryLabels: {
+    iiqeRisk: "Risk and Insurance",
+    iiqeLaw: "Contract and Agency Law",
+    iiqeGoodFaith: "Insurable Interest & Utmost Good Faith",
+    iiqeIndemnity: "Proximate Cause & Indemnity",
+    iiqeContribution: "Contribution & Subrogation",
+    iiqeCompany: "Core Functions of an Insurer",
+    iiqeMarket: "Hong Kong Insurance Market",
+    iiqeInsurers: "Regulation of Insurers",
+    iiqeIntermediaries: "Licensing & Conduct of Intermediaries",
+    iiqeEthics: "Ethics, Privacy, AML & Anti-Bribery",
+  },
+  copy: {
+    guestPrompt: "to save your IIQE Paper 1 progress and track every question you miss",
+    trainingHeading: "Train by chapter",
+    trainingSub: "Four sets that follow the Study Notes: risk with contract and agency, the principles of insurance, insurers and the market, and regulation with ethics. Missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions weighted by chapter, 70% to pass",
+    heroSubs: [
+      "Seven chapters, four mock tests. The principles of insurance are 30% of the paper.",
+      "Master each chapter set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your IIQE Paper 1.",
+    ],
+    sourceLine: "Based on the Insurance Authority's Study Notes for Principles and Practice of Insurance (2024 Edition), the Insurance Ordinance and IA codes as of November 2026. Original questions; 50 per test, weighted by chapter. Not affiliated with the Insurance Authority, the VTC or the PEAK Exam Centre.",
+    analyticsKey: "hkiiqe1",
+  },
+};
+
+const hklesfi1: ExamConfig = {
+  id: "hklesfi1",
+  stateCode: "HKLE1",
+  idBase: 18200,
+  slug: "/le-paper-1",
+  landingPath: "/le-paper-1-practice-test",
+  name: "LE Paper 1 Practice Test",
+  shortName: "LE Paper 1",
+  examLabel: "LE Paper 1",
+  fullName: "Licensing Examination for Securities and Futures Intermediaries, Paper 1: Fundamentals of Securities and Futures Regulation",
+  questionIdPrefix: "HKLE1-",
+  icon: "building",
+  testCount: 3,
+  questionsPerTest: 60,
+  passPct: 70,
+  // HKSI Institute LE Paper 1 (checked November 2026): 60 MCQs, 90 minutes, 70% pass, English or
+  // Traditional Chinese; syllabus Version 3.5 effective 30 June 2026, nine topics. HKSI publishes
+  // no topic weights; per test (Tigertest's split): overview 6, law and CO 5, SFO 9, licensing and
+  // subsidiary legislation 9, business conduct 9, operations/ICG/AML/PDPO 8, exchanges 5, public
+  // capital 5, market misconduct 4. Pools are 3x per test plus 20 training-only spares.
+  // Hong Kong law as of November 2026. All items original.
+  blueprint: {
+    hkle1Overview: 6,
+    hkle1Law: 5,
+    hkle1Sfo: 9,
+    hkle1Licensing: 9,
+    hkle1Conduct: 9,
+    hkle1Operations: 8,
+    hkle1Exchanges: 5,
+    hkle1Capital: 5,
+    hkle1Misconduct: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 18201, name: "Regulatory Overview & Hong Kong Law", categories: ["hkle1Overview", "hkle1Law"], size: 36, weightLabel: "11 of 60 test questions" },
+    { setNumber: 2, id: 18202, name: "The SFO & Market Misconduct", categories: ["hkle1Sfo", "hkle1Misconduct"], size: 44, weightLabel: "13 of 60 test questions" },
+    { setNumber: 3, id: 18203, name: "Licensing, Client Assets & Records", categories: ["hkle1Licensing"], size: 30, weightLabel: "9 of 60 test questions" },
+    { setNumber: 4, id: 18204, name: "Business Conduct & Client Relations", categories: ["hkle1Conduct"], size: 30, weightLabel: "9 of 60 test questions" },
+    { setNumber: 5, id: 18205, name: "Internal Control, AML & Privacy", categories: ["hkle1Operations"], size: 28, weightLabel: "8 of 60 test questions" },
+    { setNumber: 6, id: 18206, name: "Exchanges & Public Capital", categories: ["hkle1Exchanges", "hkle1Capital"], size: 32, weightLabel: "10 of 60 test questions" },
+  ],
+  categoryLabels: {
+    hkle1Overview: "Regulatory Overview of the Financial Industry",
+    hkle1Law: "Hong Kong Law & the Companies Ordinance",
+    hkle1Sfo: "Securities and Futures Ordinance",
+    hkle1Licensing: "Licensing & Subsidiary Legislation",
+    hkle1Conduct: "Business Conduct & Client Relations",
+    hkle1Operations: "Business Operations, Internal Control & AML",
+    hkle1Exchanges: "Participating in the Hong Kong Exchanges",
+    hkle1Capital: "Accessing Public Capital",
+    hkle1Misconduct: "Market Misconduct & Improper Trading",
+  },
+  copy: {
+    guestPrompt: "to save your LE Paper 1 progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Six sets covering all nine topics of the Paper 1 syllabus. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 60 questions like the real Paper 1, 70% to pass",
+    heroSubs: [
+      "Six sets, three full mock tests. The SFO and conduct rules weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your Paper 1.",
+    ],
+    sourceLine: "Based on the HKSI Institute's LE Paper 1 syllabus (Version 3.5, from 30 June 2026) and Hong Kong law as of November 2026. Original questions; 60 per test, topic split by Tigertest. Not affiliated with the HKSI Institute, the SFC or HKEX.",
+    analyticsKey: "hklesfi1",
+  },
+};
+
+const nzfirearms: ExamConfig = {
+  id: "nzfirearms",
+  stateCode: "NZFIREARMS",
+  idBase: 18300,
+  slug: "/nz-firearms-licence",
+  landingPath: "/nz-firearms-licence-practice-test",
+  name: "NZ Firearms Licence Practice Test",
+  shortName: "NZ firearms licence test",
+  examLabel: "firearms theory test",
+  fullName: "New Zealand firearms licence theory test (Firearms Safety Course)",
+  questionIdPrefix: "NZFA-",
+  icon: "target",
+  testCount: 6,
+  questionsPerTest: 30,
+  passPct: 90,
+  // Firearms Safety Course theory test (Firearms Safety and Education New Zealand, course options page, checked
+  // November 2026): 30 multiple-choice questions in 30 minutes on the Firearms Safety Code, safe practice and the
+  // law; no published pass mark (candidates report 27 of 30, so 90% is Tigertest's target). No topic weights are
+  // published: the blueprint follows the code's sections. Six real-length tests of 30; pools are 6x the
+  // per-test count plus 20 training-only spares. Arms Act 2026 terms throughout.
+  blueprint: {
+    nzfaRules: 5,
+    nzfaTarget: 4,
+    nzfaZone: 4,
+    nzfaStates: 4,
+    nzfaHandling: 4,
+    nzfaStorage: 3,
+    nzfaLaw: 3,
+    nzfaAmmo: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 18301, name: "The First Three Rules & Firearm States", categories: ["nzfaRules", "nzfaStates"], size: 60, weightLabel: "9 of 30 test questions" },
+    { setNumber: 2, id: 18302, name: "Identify Your Target & Firing Zone", categories: ["nzfaTarget", "nzfaZone"], size: 54, weightLabel: "8 of 30 test questions" },
+    { setNumber: 3, id: 18303, name: "Safe Handling in the Field", categories: ["nzfaHandling"], size: 27, weightLabel: "4 of 30 test questions" },
+    { setNumber: 4, id: 18304, name: "Storage, Transport, Alcohol & the Law", categories: ["nzfaStorage", "nzfaLaw"], size: 40, weightLabel: "6 of 30 test questions" },
+    { setNumber: 5, id: 18305, name: "Firearms, Ammunition & Malfunctions", categories: ["nzfaAmmo"], size: 19, weightLabel: "3 of 30 test questions" },
+  ],
+  categoryLabels: {
+    nzfaRules: "Rules 1 to 3: Loaded, Muzzle & Chamber",
+    nzfaTarget: "Rule 4: Identify Your Target",
+    nzfaZone: "Rule 5: Check Your Firing Zone",
+    nzfaStates: "States of Readiness",
+    nzfaHandling: "Safe Handling in the Field",
+    nzfaStorage: "Rules 6 & 7: Storage, Transport & Alcohol",
+    nzfaLaw: "Licence Holder Obligations & the Law",
+    nzfaAmmo: "Firearms, Ammunition & Malfunctions",
+  },
+  copy: {
+    guestPrompt: "to save your firearms licence test progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets on the Firearms Safety Code: the first three rules and the states of readiness, target identification and firing zones, safe handling, storage and the law, and ammunition. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 30 questions like the real theory test, aim for 27",
+    heroSubs: [
+      "Thirty questions on the Firearms Safety Code. Start with the seven rules.",
+      "Master each set, then try a test.",
+      "Halfway there. Take a practice test.",
+      "Fix the misses, then retake.",
+      "All done. You're ready for your safety course.",
+    ],
+    sourceLine: "Based on the Firearms Safety Code, the regulator's storage guidance and the Arms Act 2026, as of November 2026. Original questions; 30 per test, like the real theory test. Not affiliated with Firearms Safety and Education New Zealand or New Zealand Police.",
+    analyticsKey: "nzfirearms",
+  },
+};
+
+const nzlcq: ExamConfig = {
+  id: "nzlcq",
+  stateCode: "NZLCQ",
+  idBase: 18400,
+  slug: "/lcq",
+  landingPath: "/lcq-practice-test",
+  name: "LCQ Practice Test",
+  shortName: "LCQ",
+  examLabel: "LCQ assessment",
+  fullName: "Licence Controller Qualification (LCQ)",
+  questionIdPrefix: "NZLCQ-",
+  icon: "wine",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // NZQA unit standards 4646 v11 (Sale and Supply of Alcohol Act 2012, 2 credits) and 16705 v7
+  // (host responsibility as a duty manager, 3 credits), both Level 4, registered March 2023. Graded
+  // Achieved / Not Achieved by the provider; no national question count or pass mark, so 50
+  // questions and 80% are Tigertest's readiness target. Per test: 4646 = object/bodies/LAPs 6,
+  // licences/hours/conditions 8, managers 6, minors/ID/offences 8 (28); 16705 = alcohol and the
+  // body 7, intoxication and intervention 8, safe drinking environment 7 (22). Original items, New
+  // Zealand law as in force November 2026.
+  blueprint: {
+    nzlcqObject: 6,
+    nzlcqLicences: 8,
+    nzlcqManagers: 6,
+    nzlcqOffences: 8,
+    nzlcqAlcohol: 7,
+    nzlcqIntox: 8,
+    nzlcqSafety: 7,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 18401, name: "The Act & Licences", categories: ["nzlcqObject", "nzlcqLicences"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 2, id: 18402, name: "Managers, Minors & Offences", categories: ["nzlcqManagers", "nzlcqOffences"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 3, id: 18403, name: "Alcohol & Intoxication", categories: ["nzlcqAlcohol", "nzlcqIntox"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 4, id: 18404, name: "Safe Drinking Environment", categories: ["nzlcqSafety"], size: 28, weightLabel: "7 of 50 test questions" },
+  ],
+  categoryLabels: {
+    nzlcqObject: "The Act, Licensing Bodies & LAPs",
+    nzlcqLicences: "Licence Types, Hours & Conditions",
+    nzlcqManagers: "Manager's Certificates & Duty Managers",
+    nzlcqOffences: "Minors, ID, Offences & Enforcement",
+    nzlcqAlcohol: "Alcohol and the Body",
+    nzlcqIntox: "Intoxication & Intervention",
+    nzlcqSafety: "Safe Drinking Environment",
+  },
+  copy: {
+    guestPrompt: "to save your LCQ progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets across both unit standards: the Act and licences, managers and offences, alcohol and intoxication, and a safe drinking environment. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions across both unit standards, 80% readiness line",
+    heroSubs: [
+      "Two unit standards, four mock tests. Start with the Act.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. You're ready for your LCQ assessment.",
+    ],
+    sourceLine: "Based on NZQA unit standards 4646 and 16705 and New Zealand law (Sale and Supply of Alcohol Act 2012) as of November 2026. Original questions; 50 per test, 80% is Tigertest's readiness target. Not affiliated with NZQA, ServiceIQ or any LCQ provider.",
+    analyticsKey: "nzlcq",
+  },
+};
+
+const aesira: ExamConfig = {
+  id: "aesira",
+  stateCode: "AESIRA",
+  idBase: 18500,
+  slug: "/sira-security",
+  landingPath: "/sira-security-guard-practice-test",
+  name: "SIRA Security Guard Practice Test",
+  shortName: "SIRA Guard",
+  examLabel: "SIRA security guard exam",
+  fullName: "Dubai SIRA security guard licensing exam",
+  questionIdPrefix: "AESIRA-",
+  icon: "badge",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // SIRA (Dubai) individual security licence, Law No. (12) of 2016 and its executive regulation,
+  // Resolution No. (1) of 2026 (Official Gazette 783, 4 July 2026; replaces Resolution No. (1) of
+  // 2018). SIRA publishes no topic weights, count or pass mark; guides report about 60 questions and
+  // about 70%. Tigertest's blueprint over the basic guard course topics: law 6, role 6, access 8,
+  // reports 7, legal limits 5, emergencies 7, fire 5, first aid 6. 70% is Tigertest's target.
+  blueprint: {
+    aesiraLaw: 6,
+    aesiraRole: 6,
+    aesiraAccess: 8,
+    aesiraReports: 7,
+    aesiraPowers: 5,
+    aesiraEmergency: 7,
+    aesiraFire: 5,
+    aesiraFirstAid: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 18501, name: "SIRA Law & the Guard's Role", categories: ["aesiraLaw", "aesiraRole"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 2, id: 18502, name: "Access Control, Patrols & Reports", categories: ["aesiraAccess", "aesiraReports"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 3, id: 18503, name: "Legal Limits & Emergencies", categories: ["aesiraPowers", "aesiraEmergency"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 4, id: 18504, name: "Fire Safety & First Aid", categories: ["aesiraFire", "aesiraFirstAid"], size: 44, weightLabel: "11 of 50 test questions" },
+  ],
+  categoryLabels: {
+    aesiraLaw: "SIRA Law, Licences & Conduct",
+    aesiraRole: "The Guard's Role & Professional Standards",
+    aesiraAccess: "Access Control, Patrols & CCTV",
+    aesiraReports: "Observation, Reports & Evidence",
+    aesiraPowers: "Legal Limits, Arrest & Use of Force",
+    aesiraEmergency: "Emergencies, Threats & Evacuation",
+    aesiraFire: "Fire Safety",
+    aesiraFirstAid: "First Aid, Heat & Health and Safety",
+  },
+  copy: {
+    guestPrompt: "to save your SIRA guard progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets on the topics of the Dubai basic guard course: SIRA law and your role, access control and reports, legal limits and emergencies, fire safety and first aid. Missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions across every topic, 70% target",
+    heroSubs: [
+      "Four topic sets, four mock tests.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your SIRA test.",
+    ],
+    sourceLine: "Based on Dubai Law No. (12) of 2016, its 2026 executive regulation and the topics of SIRA-accredited guard training. Original questions; 50 per test, 70% is Tigertest's target. Not affiliated with SIRA, Dubai Police or any training centre.",
+    analyticsKey: "aesira",
+  },
+};
+
+const mypce: ExamConfig = {
+  id: "mypce",
+  stateCode: "MYPCE",
+  idBase: 18600,
+  slug: "/malaysia-pce",
+  landingPath: "/pce-exam-practice-test",
+  name: "Malaysia PCE Practice Test",
+  shortName: "PCEIA",
+  examLabel: "PCEIA exam",
+  fullName: "Pre-Contract Examination for Insurance Agents (PCEIA), Malaysia",
+  questionIdPrefix: "MYPCE-",
+  icon: "umbrella",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 50,
+  // Aii PCEIA (checked Nov 2026): Part A Basics of Insurance (compulsory) + Part C Life (route AC)
+  // or Part B General (route AB), 50 questions each, 100 in 2 hours, 50% to pass. Mock tests mix
+  // all three parts 20/10/20: Part A risk 5, principles 5, contract and agency law 4, legislation
+  // and regulation 4, medical and health 2; Part B motor 4, fire, property and other 6; Part C life
+  // products 6, policy law and nomination 5, rating and underwriting 4, claims 2, code of practice 3.
+  // Aii publishes no chapter weights; the split is Tigertest's. Malaysian law as of November 2026
+  // (FSA 2013 Schedules 7 to 10, IFSA 2013, Contracts Act 1950, Road Transport Act 1987, PDPA 2010, AMLA).
+  blueprint: {
+    mypceRisk: 5,
+    mypcePrinciples: 5,
+    mypceLaw: 4,
+    mypceRegulation: 4,
+    mypceHealth: 2,
+    mypceMotor: 4,
+    mypceProperty: 6,
+    mypceLifeProducts: 6,
+    mypceLifeLegal: 5,
+    mypceUnderwriting: 4,
+    mypceClaims: 2,
+    mypceEthics: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 18601, name: "Risk & Principles of Insurance", categories: ["mypceRisk", "mypcePrinciples"], size: 40, weightLabel: "Part A · 10 of 50 test questions" },
+    { setNumber: 2, id: 18602, name: "Law, Regulation & Health Insurance", categories: ["mypceLaw", "mypceRegulation", "mypceHealth"], size: 40, weightLabel: "Part A · 10 of 50 test questions" },
+    { setNumber: 3, id: 18603, name: "General Insurance (Part B)", categories: ["mypceMotor", "mypceProperty"], size: 40, weightLabel: "Part B · 10 of 50 test questions" },
+    { setNumber: 4, id: 18604, name: "Life Products & Policy Law", categories: ["mypceLifeProducts", "mypceLifeLegal"], size: 44, weightLabel: "Part C · 11 of 50 test questions" },
+    { setNumber: 5, id: 18605, name: "Underwriting, Claims & Ethics", categories: ["mypceUnderwriting", "mypceClaims", "mypceEthics"], size: 36, weightLabel: "Part C · 9 of 50 test questions" },
+  ],
+  categoryLabels: {
+    mypceRisk: "Risk & Insurance",
+    mypcePrinciples: "Principles of Insurance",
+    mypceLaw: "Contract & Agency Law",
+    mypceRegulation: "Legislation & Regulation",
+    mypceHealth: "Medical & Health Insurance",
+    mypceMotor: "Motor Insurance",
+    mypceProperty: "Fire, Property & Other General Insurance",
+    mypceLifeProducts: "Life Insurance Products",
+    mypceLifeLegal: "Life Policy Law & Nomination",
+    mypceUnderwriting: "Premium Rating & Underwriting",
+    mypceClaims: "Life Claims",
+    mypceEthics: "Code of Practice & Ethics",
+  },
+  copy: {
+    guestPrompt: "to save your PCEIA progress and track every question you miss",
+    trainingHeading: "Train by part",
+    trainingSub: "Two sets for Part A, one for Part B general insurance and two for Part C life insurance. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions across Parts A, B and C, 50% to pass",
+    heroSubs: [
+      "Part A plus Part B or C. Start with the basics.",
+      "Master each part's sets, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Register for your PCEIA.",
+    ],
+    sourceLine: "Based on the PCEIA's Parts A, B and C and Malaysian law (FSA 2013, IFSA 2013, Contracts Act 1950) as of November 2026. Original questions; 50 per test, mixing the three parts. Not affiliated with the Asian Institute of Insurance, Bank Negara Malaysia, LIAM or PIAM.",
+    analyticsKey: "mypce",
+  },
+};
+
+const kenck: ExamConfig = {
+  id: "kenck",
+  stateCode: "KENCK",
+  idBase: 18700,
+  slug: "/kenya-nursing-council",
+  landingPath: "/nursing-council-of-kenya-exam-practice-test",
+  name: "Nursing Council of Kenya Exam Practice Test",
+  shortName: "NCK Exam",
+  examLabel: "NCK licensure exam",
+  fullName: "Nursing Council of Kenya Licensure Examination (registered nurse)",
+  questionIdPrefix: "KENCK-",
+  icon: "stethoscope",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 60,
+  // Nursing Council of Kenya licensure exam (checked November 2026): online at regional centres;
+  // KRCHN, BScN, KRN/M and KRN/MH sit two 2-hour papers on one day (NCK Instructions and Schedules
+  // for 2026 and 2027 Licensure Examinations). NCK publishes no question count, pass mark or
+  // blueprint, so this split over general nursing, midwifery and community health is Tigertest's,
+  // and 60% is a readiness target. Kenyan MoH and WHO guidelines and Kenyan law. All items original.
+  blueprint: {
+    kenckFund: 7,
+    kenckPharm: 4,
+    kenckMedSurg: 9,
+    kenckMidwifery: 8,
+    kenckRepro: 3,
+    kenckPaeds: 6,
+    kenckCommunity: 6,
+    kenckMental: 3,
+    kenckLaw: 4,
+  },
+  trainingSets: testSets(18700, 4),
+  categoryLabels: {
+    kenckFund: "Fundamentals of Nursing",
+    kenckPharm: "Pharmacology & Dosage",
+    kenckMedSurg: "Medical-Surgical Nursing",
+    kenckMidwifery: "Midwifery & Newborn Care",
+    kenckRepro: "Reproductive Health",
+    kenckPaeds: "Child Health & IMCI",
+    kenckCommunity: "Community Health & PHC",
+    kenckMental: "Mental Health Nursing",
+    kenckLaw: "Law, Ethics & Leadership",
+  },
+  copy: {
+    guestPrompt: "to save your NCK exam progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per mock test, each holding exactly that test's 50 questions across all nine topics. Missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, 60% readiness line",
+    heroSubs: [
+      "Nine topics, four mock tests. Midwifery and med-surg are the biggest.",
+      "Master each set, then take its test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. You are ready for your NCK papers.",
+    ],
+    sourceLine: "Based on Kenyan Ministry of Health and WHO guidelines and Kenyan nursing law. Original questions; the Council publishes no question count or pass mark, so 60% is a readiness target. Not affiliated with the Nursing Council of Kenya.",
+    analyticsKey: "kenck",
+  },
+};
+
+const iedttcv: ExamConfig = {
+  id: "iedttcv",
+  stateCode: "IEDTTCV",
+  idBase: 18800,
+  slug: "/ireland-truck-bus-theory",
+  landingPath: "/ireland-truck-bus-theory-test",
+  name: "Ireland Truck and Bus Theory Test Practice",
+  shortName: "Truck & Bus Theory (IE)",
+  examLabel: "Truck and Bus Theory Test",
+  fullName: "Ireland Driver Theory Test, truck and bus (categories C and D, RSA)",
+  questionIdPrefix: "IEDTTCV-",
+  icon: "truck",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 74,
+  // RSA Driver Theory Test, categories C (truck) and D (bus), per theorytest.ie FAQs checked
+  // 2026-11-05: 100 questions in 120 minutes, 74 to pass, English or Irish; combined CD test 140
+  // questions, 180 minutes, 104 to pass (English only). Modelled at 50 questions at the same pace
+  // and 74%: ceil(0.74 x 50) = 37. The RSA publishes no topic weights, so these are Tigertest's,
+  // weighted to the heavy-vehicle material (EU Reg 561/2006 drivers' hours, Reg 165/2014
+  // tachographs, S.I. 546/2008 and 75/2012 speed limits, Driver CPC). Bank covers truck and bus.
+  // The official RSA question bank is copyrighted and was not used: all items original.
+  blueprint: {
+    iedttcvLicence: 4,
+    iedttcvHours: 7,
+    iedttcvTacho: 5,
+    iedttcvBrakes: 7,
+    iedttcvLoads: 6,
+    iedttcvPassengers: 6,
+    iedttcvRoad: 7,
+    iedttcvSafety: 5,
+    iedttcvEmergencies: 3,
+  },
+  trainingSets: testSets(18800, 4),
+  categoryLabels: {
+    iedttcvLicence: "Licences, Driver CPC & Roadworthiness",
+    iedttcvHours: "Drivers' Hours & Working Time",
+    iedttcvTacho: "Tachographs & Records",
+    iedttcvBrakes: "Brakes, Coupling & Vehicle Checks",
+    iedttcvLoads: "Weights, Dimensions & Load Security",
+    iedttcvPassengers: "Carrying Passengers",
+    iedttcvRoad: "Speed Limits, Lanes & Large Vehicles",
+    iedttcvSafety: "Blind Spots, Fatigue & Alcohol",
+    iedttcvEmergencies: "Eco-Driving, Breakdowns & Incidents",
+  },
+  copy: {
+    guestPrompt: "to save your truck and bus theory progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1, and so on. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions, 74% to pass, like the real test",
+    heroSubs: [
+      "Four tests on drivers' hours, tachographs, brakes, loads and passengers. You need 74%.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Book your truck or bus theory test at theorytest.ie.",
+    ],
+    sourceLine: "Original questions written from Irish and EU rules for truck and bus drivers (2026). The real C or D test is 100 questions and you need 74 right. Not affiliated with the RSA.",
+    analyticsKey: "iedttcv",
+  },
+};
+
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, nhie, cna, ptcb, phleb, ccma, cma, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, sfadmin, phr, cisa, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzfirearms, nzlcq, phlto, zak53, zak53c3, sgbtt, sgftt, sgres, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, esdgt, ptimt, bedriving, dkteori, setrafik, fitheory, grdriving, rodrpciv, hukresz, mttheory, detheorie, phlet, texesppr, praxisplt, praxis5001, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, gulfrn, inrto, htl, cst, crcst];
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
 export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA, realestatePA, realestateIL, realestateOH, realestateGA, realestateNC, realestateMI, realestateVA, realestateWA, realestateAZ, realestateTN, insuranceNY, insurancePA, insuranceIL, insuranceOH, insuranceGA, insuranceNC, insuranceMI, insuranceNJ, insuranceVA, insuranceWA, pncNY, pncPA, pncIL, pncOH, pncGA, pncNC, pncMI, pncNJ, pncVA, pncWA];

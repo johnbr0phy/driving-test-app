@@ -55,6 +55,8 @@ const TEACHER_LED = new Set([
   "cma", "nbdhe", "nptepta", "aatl2", "accafa",
   // Next-20 batch C (November 2026)
   "aswbclin", "phr", "ccs", "rdexam", "cemap",
+  // International batch 1 (November 2026)
+  "nzlcq", "aesira", "kenck",
 ]);
 
 export function isTeacherLedExam(id: string): boolean {

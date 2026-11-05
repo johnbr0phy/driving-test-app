@@ -1,0 +1,43 @@
+name: Checks
+
+# Runs on every PR and every push to main. Vercel builds the preview, so this
+# covers what a build does not: types, lint, the test suite and the generated
+# data files the dashboard depends on.
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: checks-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Tests
+        run: npm test
+
+      - name: Training parts and bank sizes are current
+        run: npx tsx scripts/build-training-parts.ts --check
+
+      - name: DMV translated banks match English
+        run: python3 -I scripts/review-question-banks.py

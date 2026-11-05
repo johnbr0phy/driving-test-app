@@ -1,0 +1,36 @@
+{
+  "id": "phpsychom",
+  "stateCode": "PHPSYCHOM",
+  "idBase": 19300,
+  "prefix": "PHPSY-",
+  "slug": "/psychometrician-board-exam",
+  "landingPath": "/psychometrician-board-exam-reviewer-practice-test",
+  "dataFile": "data/philippines-psychometrician-questions.json",
+  "name": "Psychometrician Board Exam Reviewer",
+  "shortName": "PmLE",
+  "examLabel": "PmLE",
+  "fullName": "Psychometrician Licensure Examination (PmLE), Philippines",
+  "icon": "heart",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 75,
+  "categories": [
+    {"key": "phpsyDevChild", "label": "Developmental Theories & Childhood", "perTest": 5, "pool": 20, "segment": "DVC"},
+    {"key": "phpsyDevLife", "label": "Adolescence, Adulthood & Aging", "perTest": 5, "pool": 20, "segment": "DVL"},
+    {"key": "phpsyAbnDisorders", "label": "Disorders & Diagnosis", "perTest": 6, "pool": 24, "segment": "ABD"},
+    {"key": "phpsyAbnCauses", "label": "Causes, Culture & Mental Health Law", "perTest": 4, "pool": 16, "segment": "ABC"},
+    {"key": "phpsyIoHr", "label": "Selection, Training & Appraisal", "perTest": 5, "pool": 20, "segment": "IOH"},
+    {"key": "phpsyIoOrg", "label": "Motivation, Leadership & Organizations", "perTest": 5, "pool": 20, "segment": "IOO"},
+    {"key": "phpsyPsychometrics", "label": "Psychometrics & Statistics", "perTest": 8, "pool": 32, "segment": "PSM"},
+    {"key": "phpsyTests", "label": "Tests & Test Administration", "perTest": 6, "pool": 24, "segment": "TST"},
+    {"key": "phpsyEthics", "label": "Ethics, R.A. 10029 & Reports", "perTest": 6, "pool": 24, "segment": "ETH"}
+  ],
+  "notes": "Real PmLE (PRC programs for August 2024, September 2025 and August 2026): Developmental Psychology 20%, Abnormal Psychology 20%, Industrial-Organizational Psychology 20%, Psychological Assessment 40%, four 3-hour subjects over two days. Pass: weighted general average 75%, no subject below 60% (R.A. 10029 Sec. 18). Each 50-question test is 10/10/10/20: Developmental 5+5, Abnormal 6+4, I/O 5+5, Assessment 8+6+6. Pools exactly 4x per test. Only the 75% average is modelled.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 19301, "name": "Developmental Psychology", "categories": ["phpsyDevChild", "phpsyDevLife"], "size": 40},
+    {"setNumber": 2, "id": 19302, "name": "Abnormal Psychology", "categories": ["phpsyAbnDisorders", "phpsyAbnCauses"], "size": 40},
+    {"setNumber": 3, "id": 19303, "name": "Industrial-Organizational Psychology", "categories": ["phpsyIoHr", "phpsyIoOrg"], "size": 40},
+    {"setNumber": 4, "id": 19304, "name": "Assessment: Psychometrics & Statistics", "categories": ["phpsyPsychometrics"], "size": 32},
+    {"setNumber": 5, "id": 19305, "name": "Assessment: Tests, Ethics & Reports", "categories": ["phpsyTests", "phpsyEthics"], "size": 48}
+  ]
+}

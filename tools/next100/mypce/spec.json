@@ -1,0 +1,40 @@
+{
+  "id": "mypce",
+  "stateCode": "MYPCE",
+  "idBase": 18600,
+  "prefix": "MYPCE-",
+  "slug": "/malaysia-pce",
+  "landingPath": "/pce-exam-practice-test",
+  "dataFile": "data/malaysia-pce-questions.json",
+  "region": "MY",
+  "name": "Malaysia PCE Practice Test",
+  "shortName": "PCEIA",
+  "examLabel": "PCEIA exam",
+  "fullName": "Pre-Contract Examination for Insurance Agents (PCEIA), Malaysia",
+  "icon": "umbrella",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 50,
+  "categories": [
+    {"key": "mypceRisk", "label": "Risk & Insurance", "perTest": 5, "pool": 20, "segment": "RSK", "section": "Part A"},
+    {"key": "mypcePrinciples", "label": "Principles of Insurance", "perTest": 5, "pool": 20, "segment": "PRN", "section": "Part A"},
+    {"key": "mypceLaw", "label": "Contract & Agency Law", "perTest": 4, "pool": 16, "segment": "LAW", "section": "Part A"},
+    {"key": "mypceRegulation", "label": "Legislation & Regulation", "perTest": 4, "pool": 16, "segment": "REG", "section": "Part A"},
+    {"key": "mypceHealth", "label": "Medical & Health Insurance", "perTest": 2, "pool": 8, "segment": "HLT", "section": "Part A"},
+    {"key": "mypceMotor", "label": "Motor Insurance", "perTest": 4, "pool": 16, "segment": "MOT", "section": "Part B"},
+    {"key": "mypceProperty", "label": "Fire, Property & Other General Insurance", "perTest": 6, "pool": 24, "segment": "PRP", "section": "Part B"},
+    {"key": "mypceLifeProducts", "label": "Life Insurance Products", "perTest": 6, "pool": 24, "segment": "LPD", "section": "Part C"},
+    {"key": "mypceLifeLegal", "label": "Life Policy Law & Nomination", "perTest": 5, "pool": 20, "segment": "LLG", "section": "Part C"},
+    {"key": "mypceUnderwriting", "label": "Premium Rating & Underwriting", "perTest": 4, "pool": 16, "segment": "UND", "section": "Part C"},
+    {"key": "mypceClaims", "label": "Life Claims", "perTest": 2, "pool": 8, "segment": "CLM", "section": "Part C"},
+    {"key": "mypceEthics", "label": "Code of Practice & Ethics", "perTest": 3, "pool": 12, "segment": "ETH", "section": "Part C"}
+  ],
+  "notes": "Real PCEIA: Part A (basics, compulsory) 50 + Part C (life) 50 or Part B (general) 50, 100 questions in 2 hours, 50% to pass. Mock tests mix A/B/C as 20/10/20 per 50. Pools exactly 4x per test. Content sets, so sets first, then tests: 5 sets + 4 tests = 9 steps.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 18601, "name": "Risk & Principles of Insurance", "categories": ["mypceRisk", "mypcePrinciples"], "size": 40},
+    {"setNumber": 2, "id": 18602, "name": "Law, Regulation & Health Insurance", "categories": ["mypceLaw", "mypceRegulation", "mypceHealth"], "size": 40},
+    {"setNumber": 3, "id": 18603, "name": "General Insurance (Part B)", "categories": ["mypceMotor", "mypceProperty"], "size": 40},
+    {"setNumber": 4, "id": 18604, "name": "Life Products & Policy Law", "categories": ["mypceLifeProducts", "mypceLifeLegal"], "size": 44},
+    {"setNumber": 5, "id": 18605, "name": "Underwriting, Claims & Ethics", "categories": ["mypceUnderwriting", "mypceClaims", "mypceEthics"], "size": 36}
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "ppsc",
+  "stateCode": "PKPPSC",
+  "idBase": 19900,
+  "prefix": "PPSC-",
+  "slug": "/ppsc",
+  "landingPath": "/ppsc-practice-test",
+  "dataFile": "data/ppsc-questions.json",
+  "name": "PPSC Practice Test",
+  "shortName": "PPSC test",
+  "examLabel": "PPSC general ability test",
+  "fullName": "PPSC general ability and general knowledge screening test (Punjab Public Service Commission)",
+  "icon": "badge",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 70,
+  "categories": [
+    {"key": "ppscEnglish", "label": "English: Grammar & Usage", "perTest": 7, "pool": 28, "segment": "ENG"},
+    {"key": "ppscVocab", "label": "English: Vocabulary & Idioms", "perTest": 6, "pool": 24, "segment": "VOC"},
+    {"key": "ppscMaths", "label": "Basic Mathematics", "perTest": 7, "pool": 28, "segment": "MTH"},
+    {"key": "ppscReasoning", "label": "Reasoning & Mental Ability", "perTest": 5, "pool": 20, "segment": "RSN"},
+    {"key": "ppscHistory", "label": "Pakistan Studies: History to 1956", "perTest": 7, "pool": 28, "segment": "HIS"},
+    {"key": "ppscConstitution", "label": "The 1973 Constitution", "perTest": 6, "pool": 24, "segment": "CON"},
+    {"key": "ppscGeography", "label": "Pakistan & World Geography", "perTest": 6, "pool": 24, "segment": "GEO"},
+    {"key": "ppscIslamiat", "label": "Islamic Studies", "perTest": 3, "pool": 12, "segment": "ISL"},
+    {"key": "ppscComputer", "label": "Basic Computer Skills", "perTest": 3, "pool": 12, "segment": "CMP"}
+  ],
+  "notes": "4 tests x 50 = 200, every item used once in tests (no spares). PPSC sets a syllabus per advertisement; guides describe a one-paper MCQ test of 100 questions in 90 minutes whose general ability part covers general knowledge, Pakistan Studies, Islamic Studies, current affairs, geography, English, basic mathematics, everyday science and computers. No fixed split or pass mark is published for every post; weights and 70% (35 of 50) are Tigertest's. GK lane in this batch: Pakistan Studies, the 1973 Constitution and world geography (punjabpolice: Punjab and policing; pakarmy and pkpaf: armed forces and everyday science). No current affairs or office-holders. Dashboard = 5 sets + 4 tests = 9 steps.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 19901, "name": "English Grammar & Vocabulary", "categories": ["ppscEnglish", "ppscVocab"], "size": 52},
+    {"setNumber": 2, "id": 19902, "name": "Mathematics & Reasoning", "categories": ["ppscMaths", "ppscReasoning"], "size": 48},
+    {"setNumber": 3, "id": 19903, "name": "Pakistan Studies & Islamiat", "categories": ["ppscHistory", "ppscIslamiat"], "size": 40},
+    {"setNumber": 4, "id": 19904, "name": "Constitution & Computers", "categories": ["ppscConstitution", "ppscComputer"], "size": 36},
+    {"setNumber": 5, "id": 19905, "name": "Pakistan & World Geography", "categories": ["ppscGeography"], "size": 24}
+  ]
+}

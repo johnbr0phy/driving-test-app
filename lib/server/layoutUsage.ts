@@ -1,3 +1,4 @@
+import { randomUUID } from "crypto";
 import { FieldPath } from "firebase-admin/firestore";
 import { getAdminDb } from "@/lib/firebase-admin";
 import { ALL_EXAMS, getExamByStateCode, getExamForTestId, type ExamConfig } from "@/lib/exams";
@@ -94,113 +95,193 @@ function usesOf(d: Record<string, unknown>): Map<string, Use> {
   return out;
 }
 
-const blank = (): LayoutAgg => ({ people: 0, startedTest: 0, finishedTest: 0, medianAnswers: 0, answers: [] });
-function add(a: LayoutAgg, started: boolean, finished: boolean, answers: number) {
+// Running sums, kept in analytics/layoutUsageRun between chunks. Answer
+// counts are a histogram (count -> people) so the doc stays small and the
+// median can still be read from it.
+type Acc = { people: number; startedTest: number; finishedTest: number; hist: Record<string, number> };
+type Cohort = { group: LayoutGroup; before: Acc; after: Acc };
+export type LayoutRun = {
+  cursor: string | null;
+  accounts: number;
+  startedAt: string;
+  now: number;
+  allTime: Record<LayoutGroup, Acc>;
+  perExam: Record<string, Acc & { group: LayoutGroup }>;
+  cohorts: Record<string, Cohort>;
+  leaseId?: string | null;
+  leaseUntil?: number;
+};
+
+const blankAcc = (): Acc => ({ people: 0, startedTest: 0, finishedTest: 0, hist: {} });
+// Exact up to 100 answers, then to the nearest 10, so a few heavy users never bloat the doc.
+const bucket = (n: number) => String(n <= 100 ? n : Math.round(n / 10) * 10);
+function add(a: Acc, started: boolean, finished: boolean, answers: number) {
   a.people++;
   if (started) a.startedTest++;
   if (finished) a.finishedTest++;
-  a.answers!.push(answers);
+  const k = bucket(answers);
+  a.hist[k] = (a.hist[k] ?? 0) + 1;
 }
-function finish(a: LayoutAgg): LayoutAgg {
-  const s = [...(a.answers ?? [])].sort((x, y) => x - y);
-  return { people: a.people, startedTest: a.startedTest, finishedTest: a.finishedTest, medianAnswers: s.length ? s[Math.floor(s.length / 2)] : 0 };
+function finish(a: Acc): LayoutAgg {
+  let median = 0;
+  if (a.people) {
+    const half = Math.floor(a.people / 2);
+    let seen = 0;
+    for (const k of Object.keys(a.hist).map(Number).sort((x, y) => x - y)) {
+      seen += a.hist[String(k)];
+      if (seen > half) {
+        median = k;
+        break;
+      }
+    }
+  }
+  return { people: a.people, startedTest: a.startedTest, finishedTest: a.finishedTest, medianAnswers: median };
 }
 
-export async function buildLayoutUsage(): Promise<LayoutUsagePayload> {
-  const now = Date.now();
-  const beforeEnd = SWITCH - FOLLOW_DAYS * DAY + DAY; // the whole first week on the old layout
-  const afterStart = SWITCH + DAY;
-  const afterEnd = now - FOLLOW_DAYS * DAY; // a full week of follow-up
-  const skip = await getInternalUids();
-
-  const allTime: Record<LayoutGroup, LayoutAgg> = { interleaved: blank(), setsFirst: blank() };
-  const perExam = new Map<string, LayoutAgg & { group: LayoutGroup }>();
-  // Per exam family, so the before/after comparison can keep only exams seen in both windows.
-  const cohorts = new Map<string, { group: LayoutGroup; before: LayoutAgg; after: LayoutAgg }>();
-  let accounts = 0;
-
-  const addUser = (id: string, data: Record<string, unknown>) => {
-    if (skip.has(id)) return;
-    accounts++;
-    for (const [examId, u] of usesOf(data)) {
-      const e = EXAM_BY_ID.get(examId);
-      if (!e || (u.answers.length === 0 && !u.started)) continue;
-      const g = groupOf(e);
-      const fam = familyOf(e);
-      add(allTime[g], u.started, u.finished, u.answers.length);
-      let pe = perExam.get(fam);
-      if (!pe) perExam.set(fam, (pe = { ...blank(), group: g }));
-      add(pe, u.started, u.finished, u.answers.length);
-
-      if (u.first == null) continue;
-      const win =
-        u.first >= BEFORE_START && u.first < beforeEnd ? "before" : u.first >= afterStart && u.first < afterEnd ? "after" : null;
-      if (!win) continue;
-      const end = u.first + FOLLOW_DAYS * DAY;
-      let c = cohorts.get(fam);
-      if (!c) cohorts.set(fam, (c = { group: g, before: blank(), after: blank() }));
-      add(
-        c[win],
-        u.starts.some((t) => t < end),
-        u.finishes.some((t) => t < end),
-        u.answers.filter((t) => t == null || t < end).length,
-      );
-    }
+export function newLayoutRun(): LayoutRun {
+  return {
+    cursor: null,
+    accounts: 0,
+    startedAt: new Date().toISOString(),
+    now: Date.now(),
+    allTime: { interleaved: blankAcc(), setsFirst: blankAcc() },
+    perExam: {},
+    cohorts: {},
   };
+}
 
-  // Firebase uids are alphanumeric: page these id ranges at the same time
-  // (the same split /api/cron/aggregate-stats uses).
-  const db = getAdminDb();
-  const PAGE = 500;
-  const BOUNDS = ["", "4", "8", "C", "G", "K", "O", "S", "W", "a", "e", "i", "m", "q", "u", "y", null];
-  const readRange = async (from: string, to: string | null) => {
-    let cursor: string | null = null;
-    for (;;) {
-      let q = db.collection("users").select("trainingAnswerHistory", "completedTests", "currentTests").orderBy(FieldPath.documentId()).limit(PAGE);
-      if (cursor) q = q.startAfter(cursor);
-      else if (from) q = q.startAt(from);
-      if (to) q = q.endBefore(to);
-      const page = await q.get();
-      page.forEach((doc) => addUser(doc.id, doc.data()));
-      if (page.size < PAGE) return;
-      cursor = page.docs[page.docs.length - 1].id;
-    }
-  };
-  await Promise.all(BOUNDS.slice(0, -1).map((from, i) => readRange(from as string, BOUNDS[i + 1])));
+const windows = (now: number) => ({
+  beforeEnd: SWITCH - FOLLOW_DAYS * DAY + DAY, // the whole first week on the old layout
+  afterStart: SWITCH + DAY,
+  afterEnd: now - FOLLOW_DAYS * DAY, // a full week of follow-up
+});
 
-  const cohort: LayoutUsagePayload["cohort"] = {
-    interleaved: { before: blank(), after: blank(), exams: 0 },
-    setsFirst: { before: blank(), after: blank(), exams: 0 },
+/** Adds one account to the run's sums. */
+export function addAccount(run: LayoutRun, data: Record<string, unknown>) {
+  run.accounts++;
+  const { beforeEnd, afterStart, afterEnd } = windows(run.now);
+  for (const [examId, u] of usesOf(data)) {
+    const e = EXAM_BY_ID.get(examId);
+    if (!e || (u.answers.length === 0 && !u.started)) continue;
+    const g = groupOf(e);
+    const fam = familyOf(e);
+    add(run.allTime[g], u.started, u.finished, u.answers.length);
+    add((run.perExam[fam] ??= { ...blankAcc(), group: g }), u.started, u.finished, u.answers.length);
+
+    if (u.first == null) continue;
+    const win = u.first >= BEFORE_START && u.first < beforeEnd ? "before" : u.first >= afterStart && u.first < afterEnd ? "after" : null;
+    if (!win) continue;
+    const end = u.first + FOLLOW_DAYS * DAY;
+    const c = (run.cohorts[fam] ??= { group: g, before: blankAcc(), after: blankAcc() });
+    add(
+      c[win],
+      u.starts.some((t) => t < end),
+      u.finishes.some((t) => t < end),
+      u.answers.filter((t) => t == null || t < end).length,
+    );
+  }
+}
+
+/** Turns a finished run into the card's payload. */
+export function layoutPayload(run: LayoutRun): LayoutUsagePayload {
+  const { beforeEnd, afterStart, afterEnd } = windows(run.now);
+  const merged: Record<LayoutGroup, { before: Acc; after: Acc; exams: number }> = {
+    interleaved: { before: blankAcc(), after: blankAcc(), exams: 0 },
+    setsFirst: { before: blankAcc(), after: blankAcc(), exams: 0 },
   };
-  for (const c of cohorts.values()) {
-    if (!c.before.people || !c.after.people) continue; // exams launched after the switch, or idle before it
-    const t = cohort[c.group];
+  for (const c of Object.values(run.cohorts)) {
+    if (!c.before.people || !c.after.people) continue; // launched after the switch, or idle before it
+    const t = merged[c.group];
     t.exams++;
     for (const w of ["before", "after"] as const) {
       t[w].people += c[w].people;
       t[w].startedTest += c[w].startedTest;
       t[w].finishedTest += c[w].finishedTest;
-      t[w].answers!.push(...c[w].answers!);
+      for (const [k, n] of Object.entries(c[w].hist)) t[w].hist[k] = (t[w].hist[k] ?? 0) + n;
     }
   }
-  for (const g of ["interleaved", "setsFirst"] as const) {
-    cohort[g].before = finish(cohort[g].before);
-    cohort[g].after = finish(cohort[g].after);
-  }
-
   const iso = (t: number) => new Date(t).toISOString().slice(0, 10);
   return {
-    accounts,
+    accounts: run.accounts,
     switchDate: LAYOUT_SWITCH,
     followDays: FOLLOW_DAYS,
     before: { from: iso(BEFORE_START), to: iso(beforeEnd - DAY) },
     after: { from: iso(afterStart), to: iso(afterEnd - DAY), ready: afterEnd > afterStart },
-    allTime: { interleaved: finish(allTime.interleaved), setsFirst: finish(allTime.setsFirst) },
-    cohort,
-    exams: [...perExam.entries()]
+    allTime: { interleaved: finish(run.allTime.interleaved), setsFirst: finish(run.allTime.setsFirst) },
+    cohort: {
+      interleaved: { before: finish(merged.interleaved.before), after: finish(merged.interleaved.after), exams: merged.interleaved.exams },
+      setsFirst: { before: finish(merged.setsFirst.before), after: finish(merged.setsFirst.after), exams: merged.setsFirst.exams },
+    },
+    exams: Object.entries(run.perExam)
       .map(([id, a]) => ({ id, name: EXAM_BY_ID.get(id)?.name ?? id, group: a.group, ...finish(a) }))
       .filter((e) => e.people >= 10)
       .sort((a, b) => b.people - a.people),
-    updatedAt: new Date(now).toISOString(),
+    updatedAt: new Date(run.now).toISOString(),
+  };
+}
+
+const PAGE_SIZE = 100;
+const CHUNK_BUDGET_MS = 35_000;
+const LEASE_MS = 75_000;
+const RUN_DOC = "analytics/layoutUsageRun";
+export const LAYOUT_RESULT_DOC = "globalStats/layoutUsage";
+
+/**
+ * One time-boxed chunk of the scan (every account is too many for one
+ * serverless call). Resumes from analytics/layoutUsageRun; a lease keeps two
+ * admin tabs from scanning at once. On the last chunk the payload is saved to
+ * globalStats/layoutUsage and the run doc removed.
+ */
+export async function runLayoutChunk(fresh: boolean): Promise<{ done: boolean; busy: boolean; accounts: number }> {
+  const started = Date.now();
+  const db = getAdminDb();
+  const runRef = db.doc(RUN_DOC);
+  const leaseId = randomUUID();
+  const run = await db.runTransaction(async (tx): Promise<LayoutRun | null> => {
+    const snap = await tx.get(runRef);
+    const existing = snap.exists ? (snap.data() as LayoutRun) : null;
+    if (existing?.leaseUntil && existing.leaseUntil > Date.now()) return null;
+    const state = existing && !fresh ? existing : newLayoutRun();
+    tx.set(runRef, { ...state, leaseId, leaseUntil: Date.now() + LEASE_MS });
+    return state;
+  });
+  if (!run) return { done: false, busy: true, accounts: 0 };
+
+  const skip = await getInternalUids();
+  let finished = false;
+  while (Date.now() - started < CHUNK_BUDGET_MS) {
+    let q = db.collection("users").orderBy(FieldPath.documentId()).select("trainingAnswerHistory", "completedTests", "currentTests").limit(PAGE_SIZE);
+    if (run.cursor) q = q.startAfter(run.cursor);
+    const page = await q.get();
+    for (const doc of page.docs) if (!skip.has(doc.id)) addAccount(run, doc.data());
+    if (page.size > 0) run.cursor = page.docs[page.docs.length - 1].id;
+    if (page.size < PAGE_SIZE) {
+      finished = true;
+      break;
+    }
+  }
+
+  if (!finished) {
+    const saved = await db.runTransaction(async (tx) => {
+      const snap = await tx.get(runRef);
+      if (snap.data()?.leaseId !== leaseId) return false;
+      tx.set(runRef, { ...run, leaseId: null, leaseUntil: 0 });
+      return true;
+    });
+    return { done: false, busy: !saved, accounts: run.accounts };
+  }
+  await db.doc(LAYOUT_RESULT_DOC).set(layoutPayload(run));
+  await runRef.delete();
+  return { done: true, busy: false, accounts: run.accounts };
+}
+
+/** The last finished result, and how far an unfinished scan has got. */
+export async function readLayoutUsage(): Promise<{ result: LayoutUsagePayload | null; scanning: { accounts: number; startedAt: string } | null }> {
+  const db = getAdminDb();
+  const [res, run] = await Promise.all([db.doc(LAYOUT_RESULT_DOC).get(), db.doc(RUN_DOC).get()]);
+  const r = run.data() as LayoutRun | undefined;
+  return {
+    result: (res.data() as LayoutUsagePayload | undefined) ?? null,
+    scanning: r ? { accounts: r.accounts, startedAt: r.startedAt } : null,
   };
 }

@@ -29,7 +29,7 @@ import epa608Es from "./examTranslations/epa608.es.json";
 import esdgtEs from "./examTranslations/esdgt.es.json";
 import ptimtPt from "./examTranslations/ptimt.pt.json";
 
-export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "bedriving" | "dkteori" | "setrafik" | "fitheory" | "grdriving" | "rodrpciv" | "hukresz" | "mttheory" | "detheorie" | "phlet" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "detheorie" | "htl" | "cst" | "crcst" | "zak53c3";
+export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "bedriving" | "dkteori" | "setrafik" | "fitheory" | "grdriving" | "rodrpciv" | "hukresz" | "mttheory" | "detheorie" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "detheorie" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -9413,6 +9413,693 @@ const phlet: ExamConfig = {
   },
 };
 
+const phnle: ExamConfig = {
+  id: "phnle",
+  stateCode: "PHNLE",
+  idBase: 19100,
+  slug: "/nurse-licensure-exam",
+  landingPath: "/nle-reviewer-practice-test",
+  name: "NLE Reviewer Practice Test",
+  shortName: "NLE",
+  examLabel: "NLE",
+  fullName: "Philippine Nurse Licensure Examination (NLE/PNLE)",
+  questionIdPrefix: "PHNLE-",
+  icon: "stethoscope",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 75,
+  // PRC program of the NLE, Aug 29-30, 2026 (checked 2026-11-05): five parts, Nursing Practice
+  // I to V, 2 hours each over two days. R.A. 9173 Sec. 15: general average 75%, no subject below
+  // 60% (only the 75% is scored here). Guides report 100 items per part. Annex A of Board Res.
+  // No. 10, s. 2025 (enhanced TOS) was not published with the resolution, so each part gets an
+  // equal 10 of 50 items; the split inside NP I, NP II and NP V is Tigertest's. Fundamentals and
+  // professional adjustment are integrated across parts (PRC program) and sit in phnleProf.
+  // Pools are exactly 4x each count. All items original.
+  blueprint: {
+    phnleChn: 7,
+    phnleProf: 3,
+    phnleMaternal: 7,
+    phnleGrowth: 3,
+    phnleSurgOxy: 10,
+    phnleMetabNeuro: 10,
+    phnleMental: 6,
+    phnleCritical: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 19101, name: "NP I: Community Health, Law & Ethics", categories: ["phnleChn", "phnleProf"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 2, id: 19102, name: "NP II: Mother, Child & Development", categories: ["phnleMaternal", "phnleGrowth"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 3, id: 19103, name: "NP III: Surgery, Oxygenation & Cancer", categories: ["phnleSurgOxy"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 4, id: 19104, name: "NP IV: Nutrition, Endocrine & Neuro", categories: ["phnleMetabNeuro"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 5, id: 19105, name: "NP V: Mental Health & Emergencies", categories: ["phnleMental", "phnleCritical"], size: 40, weightLabel: "10 of 50 test questions" },
+  ],
+  categoryLabels: {
+    phnleChn: "Community Health Nursing & DOH Programs",
+    phnleProf: "Nursing Law, Ethics & Leadership",
+    phnleMaternal: "Care of Mother & Adolescent",
+    phnleGrowth: "Human Growth & Development",
+    phnleSurgOxy: "Surgery, Oxygenation, Fluids, Infection & Cancer",
+    phnleMetabNeuro: "Nutrition, GI, Endocrine & Neuro-Sensory",
+    phnleMental: "Psychiatric & Mental Health Nursing",
+    phnleCritical: "Emergency & Critical Care",
+  },
+  copy: {
+    guestPrompt: "to save your NLE progress and track every question you miss",
+    trainingHeading: "Train by Nursing Practice part",
+    trainingSub: "Five sets, one for each Nursing Practice part, from community health nursing to emergency care. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock exams · 50 questions, 10 from each Nursing Practice part",
+    heroSubs: [
+      "Five parts, four mock exams. Every part counts.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock exam.",
+      "Fix the misses, then retake.",
+      "All done. You're ready for the NLE.",
+    ],
+    sourceLine: "Based on the PRC program for the Nurse Licensure Examination, Nursing Practice I to V. Original questions; 50 per test, 10 from each part. Not affiliated with the PRC.",
+    analyticsKey: "phnle",
+  },
+};
+
+const phmedtech: ExamConfig = {
+  id: "phmedtech",
+  stateCode: "PHMEDTECH",
+  idBase: 19400,
+  slug: "/medtech-board-exam",
+  landingPath: "/medtech-board-exam-reviewer-practice-test",
+  name: "MedTech Board Exam Reviewer",
+  shortName: "MTLE",
+  examLabel: "MTLE",
+  fullName: "Medical Technologist Licensure Examination (MTLE)",
+  questionIdPrefix: "PHMT-",
+  icon: "microscope",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 75,
+  // PRC Professional Regulatory Board of Medical Technology Resolution No. 13, s. 2023, Annex A
+  // (enhanced tables of specifications, applied from the August 2023 MTLE; checked 2026-11-05),
+  // and the PRC program for the August 15-16, 2026 MTLE: six subjects of 100 items, Clinical
+  // Chemistry, Microbiology and Parasitology, Hematology, Blood Banking and Serology 20% each;
+  // Clinical Microscopy and Histopathologic Techniques, MT Laws and Ethics 10% each (RA 5527
+  // Sec. 17). Each 50-question test keeps those weights: 10/10/10/10/5/5, with Micro/Para 7/3
+  // (TOS 70/30), Blood Banking/Serology 5/5 (TOS 48/52) and Histopath/Laws 3/2 (TOS 65/35).
+  // Pass: general average 75%, no major subject below 50% (RA 5527 Sec. 19); only the 75% is
+  // scored here. Pools are exactly 4x each count. All items original.
+  blueprint: {
+    phmtChem: 10,
+    phmtMicro: 7,
+    phmtPara: 3,
+    phmtCm: 5,
+    phmtHema: 10,
+    phmtBank: 5,
+    phmtSero: 5,
+    phmtHisto: 3,
+    phmtLaws: 2,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 19401, name: "Clinical Chemistry", categories: ["phmtChem"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 2, id: 19402, name: "Microbiology & Parasitology", categories: ["phmtMicro", "phmtPara"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 3, id: 19403, name: "Hematology", categories: ["phmtHema"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 4, id: 19404, name: "Blood Banking & Immunoserology", categories: ["phmtBank", "phmtSero"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 5, id: 19405, name: "Clinical Microscopy, Histopath & MT Laws", categories: ["phmtCm", "phmtHisto", "phmtLaws"], size: 40, weightLabel: "10 of 50 test questions" },
+  ],
+  categoryLabels: {
+    phmtChem: "Clinical Chemistry",
+    phmtMicro: "Microbiology",
+    phmtPara: "Parasitology",
+    phmtCm: "Clinical Microscopy",
+    phmtHema: "Hematology",
+    phmtBank: "Blood Banking",
+    phmtSero: "Immunology & Serology",
+    phmtHisto: "Histopathologic & Cytologic Techniques",
+    phmtLaws: "MT Laws, Ethics & Lab Management",
+  },
+  copy: {
+    guestPrompt: "to save your MTLE progress and track every question you miss",
+    trainingHeading: "Train by MTLE subject",
+    trainingSub: "Five sets covering all six subjects of the Medical Technologist Licensure Examination, on the PRC tables of specifications. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock exams · 50 questions, weighted like the six subjects",
+    heroSubs: [
+      "Six subjects, four mock exams. Chemistry, micro, hema and blood bank weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock exam.",
+      "Fix the misses, then retake.",
+      "All done. You're ready for the MTLE.",
+    ],
+    sourceLine: "Based on the PRC tables of specifications for the Medical Technologist Licensure Examination. Original questions; 50 per test, weighted like the real subjects. Not affiliated with the PRC.",
+    analyticsKey: "phmedtech",
+  },
+};
+
+const phpharm: ExamConfig = {
+  id: "phpharm",
+  stateCode: "PHPHARM",
+  idBase: 19500,
+  slug: "/pharmacist-board-exam",
+  landingPath: "/pharmacist-board-exam-reviewer-practice-test",
+  name: "Pharmacist Board Exam Reviewer",
+  shortName: "PhLE",
+  examLabel: "PhLE",
+  fullName: "Pharmacist Licensure Examination (PhLE), Philippines",
+  questionIdPrefix: "PHRPH-",
+  icon: "pill",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 75,
+  // PRC Professional Regulatory Board of Pharmacy, revised program of the PhLE on April 18 and 19,
+  // 2026 (checked 2026-11-05): Pharmaceutical Chemistry 20%, Pharmacognosy/Biochemistry 15%,
+  // Practice of Pharmacy 17.5% (compounding-dispensing, clinical/hospital, calculations),
+  // Pharmacology-Pharmacokinetics 15%, Pharmaceutics 17.5% (manufacturing, dosage forms, physical
+  // pharmacy, jurisprudence and ethics), Quality Control/Quality Assurance 15% (instrumentation,
+  // microbiology, public health). Each 50-question test is 10/8/9/7/9/7 by subject. Pass (R.A.
+  // 10918 Sec. 17): general weighted average 75%, no subject below 50%; only the 75% is scored here.
+  // Pools are exactly 4x each count. All items original.
+  blueprint: {
+    phpharmInorg: 5,
+    phpharmOrgMed: 5,
+    phpharmCognosy: 8,
+    phpharmPractice: 6,
+    phpharmCalc: 3,
+    phpharmPharmacol: 7,
+    phpharmPharmaceutics: 6,
+    phpharmLaw: 3,
+    phpharmQc: 7,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 19501, name: "Pharmaceutical Chemistry", categories: ["phpharmInorg", "phpharmOrgMed"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 2, id: 19502, name: "Pharmacognosy & Biochemistry", categories: ["phpharmCognosy"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 3, id: 19503, name: "Practice of Pharmacy & Calculations", categories: ["phpharmPractice", "phpharmCalc"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 4, id: 19504, name: "Pharmacology & Toxicology", categories: ["phpharmPharmacol"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 5, id: 19505, name: "Pharmaceutics & Jurisprudence", categories: ["phpharmPharmaceutics", "phpharmLaw"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 6, id: 19506, name: "QC, Microbiology & Public Health", categories: ["phpharmQc"], size: 28, weightLabel: "7 of 50 test questions" },
+  ],
+  categoryLabels: {
+    phpharmInorg: "Inorganic & Qualitative Pharmaceutical Chemistry",
+    phpharmOrgMed: "Organic & Medicinal Chemistry",
+    phpharmCognosy: "Pharmacognosy, Plant Chemistry & Biochemistry",
+    phpharmPractice: "Dispensing, Clinical & Hospital Pharmacy",
+    phpharmCalc: "Pharmaceutical Calculations",
+    phpharmPharmacol: "Pharmacology, Pharmacokinetics & Toxicology",
+    phpharmPharmaceutics: "Pharmaceutics & Manufacturing Pharmacy",
+    phpharmLaw: "Pharmacy Jurisprudence & Ethics",
+    phpharmQc: "Quality Control, Microbiology & Public Health",
+  },
+  copy: {
+    guestPrompt: "to save your PhLE progress and track every question you miss",
+    trainingHeading: "Train by PhLE subject",
+    trainingSub: "Six sets, one for each subject of the PRC exam program, from pharmaceutical chemistry to quality control. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock exams · 50 questions across all six subjects",
+    heroSubs: [
+      "Six subjects, four mock exams. Chemistry weighs most.",
+      "Master each subject set, then test.",
+      "Halfway there. Try a mock exam.",
+      "Fix the misses, then retake.",
+      "All done. You're ready for the PhLE.",
+    ],
+    sourceLine: "Based on the PRC Board of Pharmacy exam program and Philippine pharmacy law. Original questions; 50 per test, weighted like the six subjects. Not affiliated with the PRC.",
+    analyticsKey: "phpharm",
+  },
+};
+
+const phmidwife: ExamConfig = {
+  id: "phmidwife",
+  stateCode: "PHMIDWIFE",
+  idBase: 19700,
+  slug: "/midwife-board-exam",
+  landingPath: "/midwife-board-exam-reviewer-practice-test",
+  name: "Midwife Board Exam Reviewer Practice Test",
+  shortName: "Midwife Board",
+  examLabel: "Midwife Board Exam",
+  fullName: "Midwife Licensure Examination (MLE), Philippines",
+  questionIdPrefix: "PHMW-",
+  icon: "heart",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 75,
+  // PRC programs of the Midwife Licensure Examination (April 29-30, 2024 and April 14-15, 2026,
+  // checked 2026-11-05): five subjects, each a 2-hour session, with sociology, bacteriology,
+  // anatomy and physiology, psychology, nutrition, parasitology, microbiology and pharmacology
+  // integrated. R.A. 7392 Sec. 16: general rating 75%, no subject below 50%; only the 75% is
+  // scored here. No published table of specifications, so the subjects are weighted equally,
+  // 10 per test each. Pools are exactly 4x each count. All items original.
+  blueprint: {
+    phmwObstetrics: 10,
+    phmwFundamentals: 10,
+    phmwInfant: 10,
+    phmwPhc: 10,
+    phmwProfessional: 10,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 19701, name: "Obstetrics", categories: ["phmwObstetrics"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 2, id: 19702, name: "Fundamentals of Health Care", categories: ["phmwFundamentals"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 3, id: 19703, name: "Infant Care and Feeding", categories: ["phmwInfant"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 4, id: 19704, name: "Primary Health Care", categories: ["phmwPhc"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 5, id: 19705, name: "Professional Growth and Development", categories: ["phmwProfessional"], size: 40, weightLabel: "10 of 50 test questions" },
+  ],
+  categoryLabels: {
+    phmwObstetrics: "Obstetrics",
+    phmwFundamentals: "Fundamentals of Health Care",
+    phmwInfant: "Infant Care and Feeding",
+    phmwPhc: "Primary Health Care",
+    phmwProfessional: "Professional Growth and Development",
+  },
+  copy: {
+    guestPrompt: "to save your midwife board exam progress and track every question you miss",
+    trainingHeading: "Train by board exam subject",
+    trainingSub: "Five sets, one for each subject of the Midwife Licensure Examination, with the integrated sciences inside them. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock exams · 50 questions, 10 from each subject",
+    heroSubs: [
+      "Five subjects, four mock exams. Every subject counts.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock exam.",
+      "Fix the misses, then retake.",
+      "All done. You're ready for the board exam.",
+    ],
+    sourceLine: "Based on the PRC exam program and R.A. 7392. Original questions; 50 per test, 10 from each subject. Not affiliated with the PRC.",
+    analyticsKey: "phmidwife",
+  },
+};
+
+const phpsychom: ExamConfig = {
+  id: "phpsychom",
+  stateCode: "PHPSYCHOM",
+  idBase: 19300,
+  slug: "/psychometrician-board-exam",
+  landingPath: "/psychometrician-board-exam-reviewer-practice-test",
+  name: "Psychometrician Board Exam Reviewer",
+  shortName: "PmLE",
+  examLabel: "PmLE",
+  fullName: "Psychometrician Licensure Examination (PmLE), Philippines",
+  questionIdPrefix: "PHPSY-",
+  icon: "heart",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 75,
+  // PRC programs for the August 19-20, 2026 (and September 2025, August 2024) Psychometricians
+  // Licensure Examination, checked 2026-11-05: Developmental Psychology 20%, Abnormal Psychology
+  // 20%, Industrial-Organizational Psychology 20%, Psychological Assessment 40%. Each 50-question
+  // test is 10/10/10/20: Developmental 5+5, Abnormal 6+4, I/O 5+5, Assessment 8+6+6 (the split
+  // inside each subject follows the 2014 TOS outline as reposted by guides). Pass: weighted general
+  // average 75% with no subject below 60% (R.A. 10029 Sec. 18); only the 75% is scored here.
+  // Pools are exactly 4x each count. All items original.
+  blueprint: {
+    phpsyDevChild: 5,
+    phpsyDevLife: 5,
+    phpsyAbnDisorders: 6,
+    phpsyAbnCauses: 4,
+    phpsyIoHr: 5,
+    phpsyIoOrg: 5,
+    phpsyPsychometrics: 8,
+    phpsyTests: 6,
+    phpsyEthics: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 19301, name: "Developmental Psychology", categories: ["phpsyDevChild", "phpsyDevLife"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 2, id: 19302, name: "Abnormal Psychology", categories: ["phpsyAbnDisorders", "phpsyAbnCauses"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 3, id: 19303, name: "Industrial-Organizational Psychology", categories: ["phpsyIoHr", "phpsyIoOrg"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 4, id: 19304, name: "Assessment: Psychometrics & Statistics", categories: ["phpsyPsychometrics"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 5, id: 19305, name: "Assessment: Tests, Ethics & Reports", categories: ["phpsyTests", "phpsyEthics"], size: 48, weightLabel: "12 of 50 test questions" },
+  ],
+  categoryLabels: {
+    phpsyDevChild: "Developmental Theories & Childhood",
+    phpsyDevLife: "Adolescence, Adulthood & Aging",
+    phpsyAbnDisorders: "Disorders & Diagnosis",
+    phpsyAbnCauses: "Causes, Culture & Mental Health Law",
+    phpsyIoHr: "Selection, Training & Appraisal",
+    phpsyIoOrg: "Motivation, Leadership & Organizations",
+    phpsyPsychometrics: "Psychometrics & Statistics",
+    phpsyTests: "Tests & Test Administration",
+    phpsyEthics: "Ethics, R.A. 10029 & Reports",
+  },
+  copy: {
+    guestPrompt: "to save your psychometrician board exam progress and track every question you miss",
+    trainingHeading: "Train by subject",
+    trainingSub: "Five sets covering all four subjects of the PRC Psychometrician Licensure Examination, with Psychological Assessment split in two. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock exams · 50 questions, weighted 20/20/20/40 like the real rating",
+    heroSubs: [
+      "Four subjects, four mock exams. Psychological Assessment weighs most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock exam.",
+      "Fix the misses, then retake.",
+      "All done. You're ready for the board exam.",
+    ],
+    sourceLine: "Based on the PRC program for the Psychometrician Licensure Examination and R.A. 10029. Original questions; 50 per test, weighted like the real rating. Not affiliated with the PRC.",
+    analyticsKey: "phpsychom",
+  },
+};
+
+const phnapolcom: ExamConfig = {
+  id: "phnapolcom",
+  stateCode: "PHNAPOLCOM",
+  idBase: 18900,
+  slug: "/napolcom-exam",
+  landingPath: "/napolcom-exam-reviewer-practice-test",
+  name: "NAPOLCOM Exam Reviewer",
+  shortName: "NAPOLCOM exam",
+  examLabel: "PNP Entrance Exam",
+  fullName: "NAPOLCOM PNP Entrance Examination (PNPE)",
+  questionIdPrefix: "PHNAP-",
+  icon: "badge",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Source: NAPOLCOM, PNP Entrance and Promotional Examinations Announcement (June 30, 2024 exam),
+  // section X, Examination Coverage: three hours, objective multiple choice, four areas:
+  // I. General Information/Uprightness (Philippine Constitution; PNP laws R.A. 6975 and R.A. 8551
+  // as amended; criminal justice system; social awareness and value judgment; values),
+  // II. Verbal Reasoning (synonyms, antonyms; paragraph organization, reading comprehension;
+  // correct usage), III. Quantitative Reasoning (percentage, fraction, number series; problem
+  // solving, bar graph interpretation), IV. Logical Reasoning (verbal, non-verbal). NAPOLCOM
+  // publishes no item count, split or pass mark; the weights are Tigertest's own (general
+  // information 14, verbal 16, quantitative 13, logical 7 per test) and 70% follows guides.
+  // Latest sitting checked: April 19, 2026. Checked 2026-11-05. All items original.
+  blueprint: {
+    phnapVocab: 6,
+    phnapReading: 5,
+    phnapGrammar: 5,
+    phnapNumber: 7,
+    phnapProblems: 6,
+    phnapLogic: 7,
+    phnapConstitution: 6,
+    phnapPnpLaw: 5,
+    phnapValues: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 18901, name: "Vocabulary & Grammar", categories: ["phnapVocab", "phnapGrammar"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 2, id: 18902, name: "Reading & Logical Reasoning", categories: ["phnapReading", "phnapLogic"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 3, id: 18903, name: "Quantitative Reasoning", categories: ["phnapNumber", "phnapProblems"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 4, id: 18904, name: "Constitution & Criminal Justice", categories: ["phnapConstitution"], size: 24, weightLabel: "6 of 50 test questions" },
+    { setNumber: 5, id: 18905, name: "PNP Laws & Values", categories: ["phnapPnpLaw", "phnapValues"], size: 32, weightLabel: "8 of 50 test questions" },
+  ],
+  categoryLabels: {
+    phnapVocab: "Verbal: Vocabulary",
+    phnapReading: "Verbal: Paragraph Organization & Reading",
+    phnapGrammar: "Verbal: Grammar & Correct Usage",
+    phnapNumber: "Quantitative: Percentages, Fractions & Number Series",
+    phnapProblems: "Quantitative: Problem Solving & Bar Graphs",
+    phnapLogic: "Logical Reasoning",
+    phnapConstitution: "Philippine Constitution & Criminal Justice",
+    phnapPnpLaw: "PNP Laws (R.A. 6975 & R.A. 8551)",
+    phnapValues: "Values & Social Awareness",
+  },
+  copy: {
+    guestPrompt: "to save your NAPOLCOM exam progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets on the general information, verbal, quantitative and logical reasoning the PNP Entrance Examination covers. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock exams · 50 questions, aim for 35 or more",
+    heroSubs: [
+      "Five topics, four 50-question mock exams. Start with the math.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock exam.",
+      "Fix the misses, then retake.",
+      "All done. Bring your Notice of Admission and go.",
+    ],
+    sourceLine: "Based on the four subject areas in NAPOLCOM's PNP Entrance Examination announcement, the 1987 Constitution, R.A. 6975 and R.A. 8551. Original questions; 50 per test, 70% is Tigertest's target.",
+    analyticsKey: "phnapolcom",
+  },
+};
+
+const afpsat: ExamConfig = {
+  id: "afpsat",
+  stateCode: "AFPSAT",
+  idBase: 19600,
+  slug: "/afpsat",
+  landingPath: "/afpsat-reviewer-practice-test",
+  name: "AFPSAT Reviewer",
+  shortName: "AFPSAT",
+  examLabel: "AFPSAT",
+  fullName: "AFP Service Aptitude Test (AFPSAT)",
+  questionIdPrefix: "AFPSAT-",
+  icon: "badge",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Source: the AFP Service Aptitude Test, the Armed Forces of the Philippines' first filter for
+  // officer and enlisted applicants to the Army, Navy and Air Force (AFP Circulars of 2013, 2015
+  // and 2020, cited in Gamos and Usona, Graduate Forum 18(1), 2024). The AFP publishes no item
+  // count, time, subtest split or passing score; guides describe verbal, numerical, logical and
+  // abstract, spatial and mechanical reasoning, and general information, and say each service
+  // sets its own cut-off. Weights are Tigertest's own (verbal 17, numerical 12, logical 7,
+  // abstract and spatial 4, general information 10 per test) and 70% (35 of 50) is Tigertest's
+  // target. Abstract items are written in words (the real test uses figures). General
+  // information from the 1987 Constitution, R.A. 7077 and R.A. 8491. Checked 2026-11-05. Pools
+  // are exactly 4x each count (no spares). All items original.
+  blueprint: {
+    afpsatVocab: 7,
+    afpsatGrammar: 6,
+    afpsatReading: 4,
+    afpsatNumber: 6,
+    afpsatProblems: 6,
+    afpsatLogic: 7,
+    afpsatAbstract: 4,
+    afpsatCivics: 6,
+    afpsatHeritage: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 19601, name: "Vocabulary & Grammar", categories: ["afpsatVocab", "afpsatGrammar"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 2, id: 19602, name: "Reading & Logical Reasoning", categories: ["afpsatReading", "afpsatLogic"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 3, id: 19603, name: "Numerical Ability", categories: ["afpsatNumber", "afpsatProblems"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 4, id: 19604, name: "Abstract & Spatial Reasoning", categories: ["afpsatAbstract"], size: 16, weightLabel: "4 of 50 test questions" },
+    { setNumber: 5, id: 19605, name: "General Information", categories: ["afpsatCivics", "afpsatHeritage"], size: 40, weightLabel: "10 of 50 test questions" },
+  ],
+  categoryLabels: {
+    afpsatVocab: "Verbal: Vocabulary & Analogies",
+    afpsatGrammar: "Verbal: Grammar & Correct Usage",
+    afpsatReading: "Verbal: Reading Comprehension",
+    afpsatNumber: "Numerical: Arithmetic & Algebra",
+    afpsatProblems: "Numerical: Word Problems",
+    afpsatLogic: "Logical Reasoning",
+    afpsatAbstract: "Abstract & Spatial Reasoning",
+    afpsatCivics: "The Constitution & National Defense",
+    afpsatHeritage: "The AFP, History & Geography",
+  },
+  copy: {
+    guestPrompt: "to save your AFPSAT progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets on the verbal, numerical, reasoning and general information areas the AFPSAT covers. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, aim for 35 or more",
+    heroSubs: [
+      "Five topics, four 50-question tests. Verbal and numerical weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Report early and bring your documents.",
+    ],
+    sourceLine: "Based on the areas reviewers describe for the AFP Service Aptitude Test, the 1987 Constitution and the AFP's defense laws. Original questions; 50 per test, 70% is Tigertest's target.",
+    analyticsKey: "afpsat",
+  },
+};
+
+const phcle: ExamConfig = {
+  id: "phcle",
+  stateCode: "PHCLE",
+  idBase: 19000,
+  slug: "/criminologist-licensure-exam",
+  landingPath: "/criminology-board-exam-reviewer-practice-test",
+  name: "Criminology Board Exam Reviewer",
+  shortName: "CLE",
+  examLabel: "CLE",
+  fullName: "Licensure Examination for Criminologists (CLE)",
+  questionIdPrefix: "PHCLE-",
+  icon: "badge",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 75,
+  // PRC programs of the February and August 2026 Licensure Examinations for Criminologists
+  // (checked 2026-11-05): Criminal Law and Jurisprudence 20%, Law Enforcement Administration 15%,
+  // Crime Detection and Investigation 20%, Forensic Science 15%, Criminology 20%, Correctional
+  // Administration 10%. Topic splits inside CLJ, CDI and Criminology follow the Board's TOS
+  // (Board Resolution No. 05, s. 2022). Each test: 10/8/10/7/10/5. Pass: weighted average 75%
+  // with no subject below 60% (R.A. 11131 Sec. 17); only the 75% is scored here.
+  // Pools are exactly 4x each count. All items original.
+  blueprint: {
+    phcleCrimLaw: 6,
+    phcleProcedure: 4,
+    phcleLea: 8,
+    phcleInvestigation: 5,
+    phcleTrafficFireDrugs: 5,
+    phcleForensic: 7,
+    phcleCriminology: 6,
+    phcleEthicsJuvenile: 4,
+    phcleCorrections: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 19001, name: "Criminal Law & Jurisprudence", categories: ["phcleCrimLaw", "phcleProcedure"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 2, id: 19002, name: "Law Enforcement Administration", categories: ["phcleLea"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 3, id: 19003, name: "Crime Detection & Investigation", categories: ["phcleInvestigation", "phcleTrafficFireDrugs"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 4, id: 19004, name: "Forensic Science", categories: ["phcleForensic"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 5, id: 19005, name: "Criminology", categories: ["phcleCriminology", "phcleEthicsJuvenile"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 6, id: 19006, name: "Correctional Administration", categories: ["phcleCorrections"], size: 20, weightLabel: "5 of 50 test questions" },
+  ],
+  categoryLabels: {
+    phcleCrimLaw: "Criminal Law (RPC & Special Laws)",
+    phcleProcedure: "Evidence, Procedure & Human Rights",
+    phcleLea: "Law Enforcement Administration",
+    phcleInvestigation: "Criminal Investigation & Legal Medicine",
+    phcleTrafficFireDrugs: "Traffic, Fire & Drug Investigation",
+    phcleForensic: "Forensic Science",
+    phcleCriminology: "Criminology Theories & Research",
+    phcleEthicsJuvenile: "Ethics, Juvenile Justice & Dispute Resolution",
+    phcleCorrections: "Correctional Administration",
+  },
+  copy: {
+    guestPrompt: "to save your criminology board exam progress and track every question you miss",
+    trainingHeading: "Train by board subject",
+    trainingSub: "Six sets, one for each subject of the Licensure Examination for Criminologists. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock exams · 50 questions at the board subject weights",
+    heroSubs: [
+      "Six subjects, four mock exams. Criminal law, investigation and criminology weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock exam.",
+      "Fix the misses, then retake.",
+      "All done. You're ready for the board exam.",
+    ],
+    sourceLine: "Based on the PRC subject weights and the Board of Criminology table of specifications. Original questions; 50 per test, weighted like the real exam. Not affiliated with the PRC.",
+    analyticsKey: "phcle",
+  },
+};
+
+const phinsurance: ExamConfig = {
+  id: "phinsurance",
+  stateCode: "PHINS",
+  idBase: 19200,
+  slug: "/insurance-commission-exam",
+  landingPath: "/insurance-commission-exam-reviewer-practice-test",
+  name: "Insurance Commission Exam Reviewer",
+  shortName: "IC Exam",
+  examLabel: "IC licensing exam",
+  fullName: "Insurance Commission Licensing Exam for Traditional Life Agents (Philippines)",
+  questionIdPrefix: "PHINS-",
+  icon: "umbrella",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Insurance Commission qualifying exam for traditional life agents (Insurance Code, R.A. 10607,
+  // Sections 307 and 312). The IC publishes no syllabus weights and its format page could not be
+  // checked (Nov 2026); guides report 50 items, about 1 hour, 70% to pass, so 70% is a target.
+  // Per test (Tigertest's split): principles 5, contract 8, life insurance law 8, products 8,
+  // premiums and values 6, underwriting and claims 5, agent licensing and conduct 6,
+  // regulation and consumer protection 4. Philippine law as of November 2026; traditional life
+  // only (variable contracts are a separate license); no fees, rates or peso limits.
+  blueprint: {
+    phinsPrinciples: 5,
+    phinsContract: 8,
+    phinsLifeLaw: 8,
+    phinsProducts: 8,
+    phinsPolicyValues: 6,
+    phinsUnderwriting: 5,
+    phinsAgents: 6,
+    phinsRegulation: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 19201, name: "Principles & the Insurance Contract", categories: ["phinsPrinciples", "phinsContract"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 2, id: 19202, name: "Life Insurance Law & Regulation", categories: ["phinsLifeLaw", "phinsRegulation"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 3, id: 19203, name: "Products, Premiums & Policy Values", categories: ["phinsProducts", "phinsPolicyValues"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 4, id: 19204, name: "Underwriting, Claims & Agent Conduct", categories: ["phinsUnderwriting", "phinsAgents"], size: 44, weightLabel: "11 of 50 test questions" },
+  ],
+  categoryLabels: {
+    phinsPrinciples: "Risk & Principles of Insurance",
+    phinsContract: "The Insurance Contract",
+    phinsLifeLaw: "Life Insurance Law",
+    phinsProducts: "Traditional Life Products & Riders",
+    phinsPolicyValues: "Premiums, Values & Options",
+    phinsUnderwriting: "Underwriting & Claims",
+    phinsAgents: "Agent Licensing & Conduct",
+    phinsRegulation: "Regulation & Consumer Protection",
+  },
+  copy: {
+    guestPrompt: "to save your IC exam progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets: principles and the insurance contract, life insurance law and regulation, products and policy values, and underwriting, claims and agent conduct. Missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, 70% target",
+    heroSubs: [
+      "Start with the Insurance Code basics.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Ask your insurer to book your IC exam.",
+    ],
+    sourceLine: "Based on the Amended Insurance Code (R.A. 10607) and Philippine law as of November 2026. Original questions; 50 per test. Not affiliated with the Insurance Commission or any insurance company.",
+    analyticsKey: "phinsurance",
+  },
+};
+
+const phrebroker: ExamConfig = {
+  id: "phrebroker",
+  stateCode: "PHREB",
+  idBase: 19800,
+  slug: "/real-estate-broker-exam-philippines",
+  landingPath: "/real-estate-broker-board-exam-reviewer-practice-test",
+  name: "Real Estate Broker Board Exam Reviewer",
+  shortName: "REB Exam",
+  examLabel: "broker board exam",
+  fullName: "Real Estate Brokers Licensure Examination (PRC)",
+  questionIdPrefix: "PHREB-",
+  icon: "house",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 75,
+  // PRB of Real Estate Service exam program (April 2025): General/Fundamentals 25%, Special and
+  // Technical Knowledge 25%, Professional Practice 50%. Pass: average 75%, no subject below 50%
+  // (R.A. 9646 Sec. 15); only the 75% is scored here. Each 50-item test is 13 + 12 + 25, spread
+  // evenly over each subject's topics as the 2011 TOS does: 4/3/3/3, 3/3/3/3, 5/4/4/4/4/4.
+  // All items original; Philippine law as of November 2026, no tax rates, fees or peso limits.
+  blueprint: {
+    phrebOwnership: 4,
+    phrebEthics: 3,
+    phrebResa: 3,
+    phrebLawsTax: 3,
+    phrebSubdivision: 3,
+    phrebCondo: 3,
+    phrebSaleMortgageLease: 3,
+    phrebDocumentation: 3,
+    phrebBrokerage: 5,
+    phrebFinance: 4,
+    phrebUrbanLandUse: 4,
+    phrebPlanningZoning: 4,
+    phrebEcology: 4,
+    phrebAppraisal: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 19801, name: "Property Ownership & Real Estate Laws", categories: ["phrebOwnership", "phrebLawsTax"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 2, id: 19802, name: "RESA & Code of Ethics", categories: ["phrebResa", "phrebEthics"], size: 24, weightLabel: "6 of 50 test questions" },
+    { setNumber: 3, id: 19803, name: "Subdivision & Condominium", categories: ["phrebSubdivision", "phrebCondo"], size: 24, weightLabel: "6 of 50 test questions" },
+    { setNumber: 4, id: 19804, name: "Sale, Mortgage, Lease & Registration", categories: ["phrebSaleMortgageLease", "phrebDocumentation"], size: 24, weightLabel: "6 of 50 test questions" },
+    { setNumber: 5, id: 19805, name: "Brokerage Practice & Finance", categories: ["phrebBrokerage", "phrebFinance"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 6, id: 19806, name: "Urban Land Use, Planning & Zoning", categories: ["phrebUrbanLandUse", "phrebPlanningZoning"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 7, id: 19807, name: "Ecology & Basic Appraisal", categories: ["phrebEcology", "phrebAppraisal"], size: 32, weightLabel: "8 of 50 test questions" },
+  ],
+  categoryLabels: {
+    phrebOwnership: "Fundamentals of Property Ownership",
+    phrebEthics: "Code of Ethics & Responsibilities",
+    phrebResa: "Real Estate Service Act (R.A. 9646)",
+    phrebLawsTax: "Real Estate Laws & Taxation",
+    phrebSubdivision: "Subdivision Development",
+    phrebCondo: "Condominium & Other Real Estate Holdings",
+    phrebSaleMortgageLease: "Sale, Mortgage & Lease",
+    phrebDocumentation: "Documentation & Registration",
+    phrebBrokerage: "Real Estate Brokerage Practice",
+    phrebFinance: "Real Estate Finance & Economics",
+    phrebUrbanLandUse: "Urban & Land Use",
+    phrebPlanningZoning: "Planning, Development & Zoning",
+    phrebEcology: "Basic Principles of Ecology",
+    phrebAppraisal: "Basic Appraisal for Brokers",
+  },
+  copy: {
+    guestPrompt: "to save your broker board exam progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Seven sets across all three subjects: ownership and real estate laws, R.A. 9646 and ethics, subdivisions and condominiums, sale, mortgage, lease and registration, brokerage and finance, land use and zoning, and ecology and appraisal. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock exams · 50 items weighted 25/25/50, 75% to pass",
+    heroSubs: [
+      "Three subjects, four mock exams. Professional Practice is half the rating.",
+      "Master each topic set, then test.",
+      "Halfway there. Try a mock exam.",
+      "Fix the misses, then retake.",
+      "All done. Good luck on the board exam.",
+    ],
+    sourceLine: "Based on the PRC exam program for the Real Estate Brokers Licensure Examination and Philippine law as of November 2026. Original questions; 50 per mock exam, weighted 25/25/50 by subject. Not affiliated with the PRC, the Professional Regulatory Board of Real Estate Service or any review center.",
+    analyticsKey: "phrebroker",
+  },
+};
+
 const ngpolice: ExamConfig = {
   id: "ngpolice",
   stateCode: "NGPOLICE",
@@ -11827,7 +12514,1990 @@ const cemap: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, nhie, cna, ptcb, phleb, ccma, cma, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, sfadmin, phr, cisa, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, phlto, zak53, zak53c3, sgbtt, aerta, ngfrsc, kentsa, mykpp, hkdrive, pkdrive, esdgt, ptimt, bedriving, dkteori, setrafik, fitheory, grdriving, rodrpciv, hukresz, mttheory, detheorie, phlet, texesppr, praxisplt, praxis5001, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, gulfrn, inrto, htl, cst, crcst];
+const sgftt: ExamConfig = {
+  id: "sgftt",
+  stateCode: "SGFTT",
+  idBase: 17900,
+  slug: "/singapore-ftt",
+  landingPath: "/singapore-ftt-practice-test",
+  name: "Singapore FTT Practice Test",
+  shortName: "Singapore FTT",
+  examLabel: "Final Theory Test",
+  fullName: "Singapore Final Theory Test (FTT)",
+  questionIdPrefix: "SGFTT-",
+  icon: "car",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 90,
+  // Source: Singapore Traffic Police, "Final Theory of Driving: The Official Handbook", published
+  // online 2.1.2026 (FT-ENG-2126-Revised.pdf). The Traffic Police publish no question count, pass
+  // mark or topic weights; guides say 50 questions in 50 minutes, 45 to pass, so passPct 90 =
+  // ceil(0.90 * 50) = 45. Counts follow the handbook's chapters by length. Pools are exactly 4x each
+  // count. Kept clear of the BTT bank; alcohol limit, demerit points, fines and the driving test
+  // section are not asked. All items original. Checked 2026-11-05.
+  blueprint: {
+    sgftControls: 7,
+    sgftTechnique: 8,
+    sgftManoeuvres: 9,
+    sgftDefensive: 8,
+    sgftRoadUsers: 7,
+    sgftExpressway: 5,
+    sgftEmergency: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 17901, name: "Car Controls & Driving Technique", categories: ["sgftControls", "sgftTechnique"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 2, id: 17902, name: "Lanes, Junctions & Manoeuvres", categories: ["sgftManoeuvres"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 3, id: 17903, name: "Defensive Driving & Conditions", categories: ["sgftDefensive"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 4, id: 17904, name: "Other Road Users & Expressways", categories: ["sgftRoadUsers", "sgftExpressway"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 5, id: 17905, name: "Emergencies & Vehicle Care", categories: ["sgftEmergency"], size: 24, weightLabel: "6 of 50 test questions" },
+  ],
+  categoryLabels: {
+    sgftControls: "Car Controls & Instruments",
+    sgftTechnique: "Moving Off, Gears, Bends & Slopes",
+    sgftManoeuvres: "Lanes, Junctions & Manoeuvres",
+    sgftDefensive: "Defensive Driving & Conditions",
+    sgftRoadUsers: "Pedestrians, Cyclists & Large Vehicles",
+    sgftExpressway: "Expressways",
+    sgftEmergency: "Emergencies, Accidents & Vehicle Care",
+  },
+  copy: {
+    guestPrompt: "to save your FTT progress and track every question you miss",
+    trainingHeading: "Train by handbook chapter",
+    trainingSub: "Five sets covering the Final Theory of Driving handbook, from the clutch to expressway exits. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, 45 to pass",
+    heroSubs: [
+      "Five topics, four full tests. Technique and manoeuvres weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your Final Theory Test.",
+    ],
+    sourceLine: "Based on the Traffic Police Final Theory of Driving handbook (2 January 2026). Original questions; 50 per test, 45 to pass as guides quote.",
+    analyticsKey: "sgftt",
+  },
+};
+
+const sgres: ExamConfig = {
+  id: "sgres",
+  stateCode: "SGRES",
+  idBase: 18000,
+  slug: "/singapore-res",
+  landingPath: "/singapore-res-exam-practice-test",
+  name: "Singapore RES Exam Practice Test",
+  shortName: "RES Exam",
+  examLabel: "RES exam",
+  fullName: "Singapore Real Estate Salesperson (RES) Examination",
+  questionIdPrefix: "SGRES-",
+  icon: "house",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 60,
+  // CEA RES Examination Syllabus 2027 (exams from 1 January 2027). Real exam: Paper 1 (Units 1-2)
+  // and Paper 2 (Units 3-4), each 60 MCQs + 20 case-study MCQs, 100 marks, 2.5 hours, pass mark 60.
+  // Mock tests mix both papers 25/25, split inside each paper by the syllabus's recommended
+  // training hours: Unit 1 = market 3, land law and titles 6; Unit 2 = contract and torts 6,
+  // agency and landlord-tenant 5, interests, capacity and planning 5; Unit 3 = regulation and
+  // ethics 6, PMLPFTF 3, marketing 6; Unit 4 = private sales and leasing 4, HDB 3, tax and finance 3.
+  // All items original; Singapore law and CEA, HDB, URA, SLA and IRAS rules as of November 2026,
+  // with no rates, loan limits or other figures that change often.
+  blueprint: {
+    sgresMarket: 3,
+    sgresLandLaw: 6,
+    sgresContract: 6,
+    sgresAgencyLease: 5,
+    sgresInterests: 5,
+    sgresRegulation: 6,
+    sgresAml: 3,
+    sgresMarketing: 6,
+    sgresPrivateSale: 4,
+    sgresHdb: 3,
+    sgresTaxFinance: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 18001, name: "Real Estate Market & Land Law", categories: ["sgresMarket", "sgresLandLaw", "sgresInterests"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 2, id: 18002, name: "Contract, Torts, Agency & Leases", categories: ["sgresContract", "sgresAgencyLease"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 3, id: 18003, name: "Regulation, Ethics & AML", categories: ["sgresRegulation", "sgresAml"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 4, id: 18004, name: "Marketing & Private Property Sales", categories: ["sgresMarketing", "sgresPrivateSale"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 5, id: 18005, name: "HDB, Taxes & Property Finance", categories: ["sgresHdb", "sgresTaxFinance"], size: 24, weightLabel: "6 of 50 test questions" },
+  ],
+  categoryLabels: {
+    sgresMarket: "Real Estate Market & Players",
+    sgresLandLaw: "Land Law, Estates & Titles",
+    sgresContract: "Contract Law & Property Torts",
+    sgresAgencyLease: "Law of Agency & Landlord and Tenant",
+    sgresInterests: "Interests in Land, Capacity & Planning",
+    sgresRegulation: "Agency Regulation, Ethics & Conduct",
+    sgresAml: "Anti-Money Laundering (PMLPFTF)",
+    sgresMarketing: "Real Estate Marketing & Advertising",
+    sgresPrivateSale: "Private Property Sales & Leasing",
+    sgresHdb: "HDB Sale & Rental",
+    sgresTaxFinance: "Property Taxes & Finance",
+  },
+  copy: {
+    guestPrompt: "to save your RES exam progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets across both papers: market and land law, contract and agency law, regulation and anti-money laundering, marketing and private sales, and HDB, taxes and finance. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions across Paper 1 and Paper 2, 60% to pass",
+    heroSubs: [
+      "Two papers, four mock tests. Each real paper is passed on its own.",
+      "Master each topic set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your RES exam.",
+    ],
+    sourceLine: "Based on CEA's RES Examination Syllabus for exams from January 2027 and Singapore law and HDB, URA, SLA and IRAS rules as of November 2026. Original questions; 50 per test, half from each paper. Not affiliated with CEA or any approved course provider.",
+    analyticsKey: "sgres",
+  },
+};
+
+const hkiiqe1: ExamConfig = {
+  id: "hkiiqe1",
+  stateCode: "HKIIQE1",
+  idBase: 18100,
+  slug: "/iiqe-paper-1",
+  landingPath: "/iiqe-paper-1-practice-test",
+  name: "IIQE Paper 1 Practice Test",
+  shortName: "IIQE Paper 1",
+  examLabel: "IIQE Paper 1",
+  fullName: "IIQE Paper I: Principles and Practice of Insurance",
+  questionIdPrefix: "HKIIQE1-",
+  icon: "umbrella",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Hong Kong Insurance Intermediaries Qualifying Examination, Paper I (compulsory): 75 MCQ in
+  // 2 hours, 70% to pass, English and Chinese (PEAK/VTC handbook effective 1 September 2026).
+  // Weighted by the IA Study Notes (2024 Edition) chapter weights 12/16/30/9/5/21/7 scaled to 50:
+  // Ch1 risk 6; Ch2 contract and agency 8; Ch3 principles 15 = insurable interest and utmost good
+  // faith 5, proximate cause and indemnity 5, contribution and subrogation 5; Ch4 insurer functions 5;
+  // Ch5 market 2; Ch6 regulation 11 = insurers 5, intermediaries 6; Ch7 ethics 3.
+  // All items original; Hong Kong law and IA codes as of November 2026.
+  blueprint: {
+    iiqeRisk: 6,
+    iiqeLaw: 8,
+    iiqeGoodFaith: 5,
+    iiqeIndemnity: 5,
+    iiqeContribution: 5,
+    iiqeCompany: 5,
+    iiqeMarket: 2,
+    iiqeInsurers: 5,
+    iiqeIntermediaries: 6,
+    iiqeEthics: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 18101, name: "Risk, Contract & Agency", categories: ["iiqeRisk", "iiqeLaw"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 2, id: 18102, name: "Principles of Insurance", categories: ["iiqeGoodFaith", "iiqeIndemnity", "iiqeContribution"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 3, id: 18103, name: "Insurers & the Hong Kong Market", categories: ["iiqeCompany", "iiqeMarket"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 4, id: 18104, name: "Regulation & Ethics", categories: ["iiqeInsurers", "iiqeIntermediaries", "iiqeEthics"], size: 56, weightLabel: "14 of 50 test questions" },
+  ],
+  categoryLabels: {
+    iiqeRisk: "Risk and Insurance",
+    iiqeLaw: "Contract and Agency Law",
+    iiqeGoodFaith: "Insurable Interest & Utmost Good Faith",
+    iiqeIndemnity: "Proximate Cause & Indemnity",
+    iiqeContribution: "Contribution & Subrogation",
+    iiqeCompany: "Core Functions of an Insurer",
+    iiqeMarket: "Hong Kong Insurance Market",
+    iiqeInsurers: "Regulation of Insurers",
+    iiqeIntermediaries: "Licensing & Conduct of Intermediaries",
+    iiqeEthics: "Ethics, Privacy, AML & Anti-Bribery",
+  },
+  copy: {
+    guestPrompt: "to save your IIQE Paper 1 progress and track every question you miss",
+    trainingHeading: "Train by chapter",
+    trainingSub: "Four sets that follow the Study Notes: risk with contract and agency, the principles of insurance, insurers and the market, and regulation with ethics. Missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions weighted by chapter, 70% to pass",
+    heroSubs: [
+      "Seven chapters, four mock tests. The principles of insurance are 30% of the paper.",
+      "Master each chapter set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your IIQE Paper 1.",
+    ],
+    sourceLine: "Based on the Insurance Authority's Study Notes for Principles and Practice of Insurance (2024 Edition), the Insurance Ordinance and IA codes as of November 2026. Original questions; 50 per test, weighted by chapter. Not affiliated with the Insurance Authority, the VTC or the PEAK Exam Centre.",
+    analyticsKey: "hkiiqe1",
+  },
+};
+
+const hklesfi1: ExamConfig = {
+  id: "hklesfi1",
+  stateCode: "HKLE1",
+  idBase: 18200,
+  slug: "/le-paper-1",
+  landingPath: "/le-paper-1-practice-test",
+  name: "LE Paper 1 Practice Test",
+  shortName: "LE Paper 1",
+  examLabel: "LE Paper 1",
+  fullName: "Licensing Examination for Securities and Futures Intermediaries, Paper 1: Fundamentals of Securities and Futures Regulation",
+  questionIdPrefix: "HKLE1-",
+  icon: "building",
+  testCount: 3,
+  questionsPerTest: 60,
+  passPct: 70,
+  // HKSI Institute LE Paper 1 (checked November 2026): 60 MCQs, 90 minutes, 70% pass, English or
+  // Traditional Chinese; syllabus Version 3.5 effective 30 June 2026, nine topics. HKSI publishes
+  // no topic weights; per test (Tigertest's split): overview 6, law and CO 5, SFO 9, licensing and
+  // subsidiary legislation 9, business conduct 9, operations/ICG/AML/PDPO 8, exchanges 5, public
+  // capital 5, market misconduct 4. Pools are 3x per test plus 20 training-only spares.
+  // Hong Kong law as of November 2026. All items original.
+  blueprint: {
+    hkle1Overview: 6,
+    hkle1Law: 5,
+    hkle1Sfo: 9,
+    hkle1Licensing: 9,
+    hkle1Conduct: 9,
+    hkle1Operations: 8,
+    hkle1Exchanges: 5,
+    hkle1Capital: 5,
+    hkle1Misconduct: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 18201, name: "Regulatory Overview & Hong Kong Law", categories: ["hkle1Overview", "hkle1Law"], size: 36, weightLabel: "11 of 60 test questions" },
+    { setNumber: 2, id: 18202, name: "The SFO & Market Misconduct", categories: ["hkle1Sfo", "hkle1Misconduct"], size: 44, weightLabel: "13 of 60 test questions" },
+    { setNumber: 3, id: 18203, name: "Licensing, Client Assets & Records", categories: ["hkle1Licensing"], size: 30, weightLabel: "9 of 60 test questions" },
+    { setNumber: 4, id: 18204, name: "Business Conduct & Client Relations", categories: ["hkle1Conduct"], size: 30, weightLabel: "9 of 60 test questions" },
+    { setNumber: 5, id: 18205, name: "Internal Control, AML & Privacy", categories: ["hkle1Operations"], size: 28, weightLabel: "8 of 60 test questions" },
+    { setNumber: 6, id: 18206, name: "Exchanges & Public Capital", categories: ["hkle1Exchanges", "hkle1Capital"], size: 32, weightLabel: "10 of 60 test questions" },
+  ],
+  categoryLabels: {
+    hkle1Overview: "Regulatory Overview of the Financial Industry",
+    hkle1Law: "Hong Kong Law & the Companies Ordinance",
+    hkle1Sfo: "Securities and Futures Ordinance",
+    hkle1Licensing: "Licensing & Subsidiary Legislation",
+    hkle1Conduct: "Business Conduct & Client Relations",
+    hkle1Operations: "Business Operations, Internal Control & AML",
+    hkle1Exchanges: "Participating in the Hong Kong Exchanges",
+    hkle1Capital: "Accessing Public Capital",
+    hkle1Misconduct: "Market Misconduct & Improper Trading",
+  },
+  copy: {
+    guestPrompt: "to save your LE Paper 1 progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Six sets covering all nine topics of the Paper 1 syllabus. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 60 questions like the real Paper 1, 70% to pass",
+    heroSubs: [
+      "Six sets, three full mock tests. The SFO and conduct rules weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your Paper 1.",
+    ],
+    sourceLine: "Based on the HKSI Institute's LE Paper 1 syllabus (Version 3.5, from 30 June 2026) and Hong Kong law as of November 2026. Original questions; 60 per test, topic split by Tigertest. Not affiliated with the HKSI Institute, the SFC or HKEX.",
+    analyticsKey: "hklesfi1",
+  },
+};
+
+const nzfirearms: ExamConfig = {
+  id: "nzfirearms",
+  stateCode: "NZFIREARMS",
+  idBase: 18300,
+  slug: "/nz-firearms-licence",
+  landingPath: "/nz-firearms-licence-practice-test",
+  name: "NZ Firearms Licence Practice Test",
+  shortName: "NZ firearms licence test",
+  examLabel: "firearms theory test",
+  fullName: "New Zealand firearms licence theory test (Firearms Safety Course)",
+  questionIdPrefix: "NZFA-",
+  icon: "target",
+  testCount: 6,
+  questionsPerTest: 30,
+  passPct: 90,
+  // Firearms Safety Course theory test (Firearms Safety and Education New Zealand, course options page, checked
+  // November 2026): 30 multiple-choice questions in 30 minutes on the Firearms Safety Code, safe practice and the
+  // law; no published pass mark (candidates report 27 of 30, so 90% is Tigertest's target). No topic weights are
+  // published: the blueprint follows the code's sections. Six real-length tests of 30; pools are 6x the
+  // per-test count plus 20 training-only spares. Arms Act 2026 terms throughout.
+  blueprint: {
+    nzfaRules: 5,
+    nzfaTarget: 4,
+    nzfaZone: 4,
+    nzfaStates: 4,
+    nzfaHandling: 4,
+    nzfaStorage: 3,
+    nzfaLaw: 3,
+    nzfaAmmo: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 18301, name: "The First Three Rules & Firearm States", categories: ["nzfaRules", "nzfaStates"], size: 60, weightLabel: "9 of 30 test questions" },
+    { setNumber: 2, id: 18302, name: "Identify Your Target & Firing Zone", categories: ["nzfaTarget", "nzfaZone"], size: 54, weightLabel: "8 of 30 test questions" },
+    { setNumber: 3, id: 18303, name: "Safe Handling in the Field", categories: ["nzfaHandling"], size: 27, weightLabel: "4 of 30 test questions" },
+    { setNumber: 4, id: 18304, name: "Storage, Transport, Alcohol & the Law", categories: ["nzfaStorage", "nzfaLaw"], size: 40, weightLabel: "6 of 30 test questions" },
+    { setNumber: 5, id: 18305, name: "Firearms, Ammunition & Malfunctions", categories: ["nzfaAmmo"], size: 19, weightLabel: "3 of 30 test questions" },
+  ],
+  categoryLabels: {
+    nzfaRules: "Rules 1 to 3: Loaded, Muzzle & Chamber",
+    nzfaTarget: "Rule 4: Identify Your Target",
+    nzfaZone: "Rule 5: Check Your Firing Zone",
+    nzfaStates: "States of Readiness",
+    nzfaHandling: "Safe Handling in the Field",
+    nzfaStorage: "Rules 6 & 7: Storage, Transport & Alcohol",
+    nzfaLaw: "Licence Holder Obligations & the Law",
+    nzfaAmmo: "Firearms, Ammunition & Malfunctions",
+  },
+  copy: {
+    guestPrompt: "to save your firearms licence test progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets on the Firearms Safety Code: the first three rules and the states of readiness, target identification and firing zones, safe handling, storage and the law, and ammunition. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 30 questions like the real theory test, aim for 27",
+    heroSubs: [
+      "Thirty questions on the Firearms Safety Code. Start with the seven rules.",
+      "Master each set, then try a test.",
+      "Halfway there. Take a practice test.",
+      "Fix the misses, then retake.",
+      "All done. You're ready for your safety course.",
+    ],
+    sourceLine: "Based on the Firearms Safety Code, the regulator's storage guidance and the Arms Act 2026, as of November 2026. Original questions; 30 per test, like the real theory test. Not affiliated with Firearms Safety and Education New Zealand or New Zealand Police.",
+    analyticsKey: "nzfirearms",
+  },
+};
+
+const nzlcq: ExamConfig = {
+  id: "nzlcq",
+  stateCode: "NZLCQ",
+  idBase: 18400,
+  slug: "/lcq",
+  landingPath: "/lcq-practice-test",
+  name: "LCQ Practice Test",
+  shortName: "LCQ",
+  examLabel: "LCQ assessment",
+  fullName: "Licence Controller Qualification (LCQ)",
+  questionIdPrefix: "NZLCQ-",
+  icon: "wine",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // NZQA unit standards 4646 v11 (Sale and Supply of Alcohol Act 2012, 2 credits) and 16705 v7
+  // (host responsibility as a duty manager, 3 credits), both Level 4, registered March 2023. Graded
+  // Achieved / Not Achieved by the provider; no national question count or pass mark, so 50
+  // questions and 80% are Tigertest's readiness target. Per test: 4646 = object/bodies/LAPs 6,
+  // licences/hours/conditions 8, managers 6, minors/ID/offences 8 (28); 16705 = alcohol and the
+  // body 7, intoxication and intervention 8, safe drinking environment 7 (22). Original items, New
+  // Zealand law as in force November 2026.
+  blueprint: {
+    nzlcqObject: 6,
+    nzlcqLicences: 8,
+    nzlcqManagers: 6,
+    nzlcqOffences: 8,
+    nzlcqAlcohol: 7,
+    nzlcqIntox: 8,
+    nzlcqSafety: 7,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 18401, name: "The Act & Licences", categories: ["nzlcqObject", "nzlcqLicences"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 2, id: 18402, name: "Managers, Minors & Offences", categories: ["nzlcqManagers", "nzlcqOffences"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 3, id: 18403, name: "Alcohol & Intoxication", categories: ["nzlcqAlcohol", "nzlcqIntox"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 4, id: 18404, name: "Safe Drinking Environment", categories: ["nzlcqSafety"], size: 28, weightLabel: "7 of 50 test questions" },
+  ],
+  categoryLabels: {
+    nzlcqObject: "The Act, Licensing Bodies & LAPs",
+    nzlcqLicences: "Licence Types, Hours & Conditions",
+    nzlcqManagers: "Manager's Certificates & Duty Managers",
+    nzlcqOffences: "Minors, ID, Offences & Enforcement",
+    nzlcqAlcohol: "Alcohol and the Body",
+    nzlcqIntox: "Intoxication & Intervention",
+    nzlcqSafety: "Safe Drinking Environment",
+  },
+  copy: {
+    guestPrompt: "to save your LCQ progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets across both unit standards: the Act and licences, managers and offences, alcohol and intoxication, and a safe drinking environment. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions across both unit standards, 80% readiness line",
+    heroSubs: [
+      "Two unit standards, four mock tests. Start with the Act.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. You're ready for your LCQ assessment.",
+    ],
+    sourceLine: "Based on NZQA unit standards 4646 and 16705 and New Zealand law (Sale and Supply of Alcohol Act 2012) as of November 2026. Original questions; 50 per test, 80% is Tigertest's readiness target. Not affiliated with NZQA, ServiceIQ or any LCQ provider.",
+    analyticsKey: "nzlcq",
+  },
+};
+
+const aesira: ExamConfig = {
+  id: "aesira",
+  stateCode: "AESIRA",
+  idBase: 18500,
+  slug: "/sira-security",
+  landingPath: "/sira-security-guard-practice-test",
+  name: "SIRA Security Guard Practice Test",
+  shortName: "SIRA Guard",
+  examLabel: "SIRA security guard exam",
+  fullName: "Dubai SIRA security guard licensing exam",
+  questionIdPrefix: "AESIRA-",
+  icon: "badge",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // SIRA (Dubai) individual security licence, Law No. (12) of 2016 and its executive regulation,
+  // Resolution No. (1) of 2026 (Official Gazette 783, 4 July 2026; replaces Resolution No. (1) of
+  // 2018). SIRA publishes no topic weights, count or pass mark; guides report about 60 questions and
+  // about 70%. Tigertest's blueprint over the basic guard course topics: law 6, role 6, access 8,
+  // reports 7, legal limits 5, emergencies 7, fire 5, first aid 6. 70% is Tigertest's target.
+  blueprint: {
+    aesiraLaw: 6,
+    aesiraRole: 6,
+    aesiraAccess: 8,
+    aesiraReports: 7,
+    aesiraPowers: 5,
+    aesiraEmergency: 7,
+    aesiraFire: 5,
+    aesiraFirstAid: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 18501, name: "SIRA Law & the Guard's Role", categories: ["aesiraLaw", "aesiraRole"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 2, id: 18502, name: "Access Control, Patrols & Reports", categories: ["aesiraAccess", "aesiraReports"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 3, id: 18503, name: "Legal Limits & Emergencies", categories: ["aesiraPowers", "aesiraEmergency"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 4, id: 18504, name: "Fire Safety & First Aid", categories: ["aesiraFire", "aesiraFirstAid"], size: 44, weightLabel: "11 of 50 test questions" },
+  ],
+  categoryLabels: {
+    aesiraLaw: "SIRA Law, Licences & Conduct",
+    aesiraRole: "The Guard's Role & Professional Standards",
+    aesiraAccess: "Access Control, Patrols & CCTV",
+    aesiraReports: "Observation, Reports & Evidence",
+    aesiraPowers: "Legal Limits, Arrest & Use of Force",
+    aesiraEmergency: "Emergencies, Threats & Evacuation",
+    aesiraFire: "Fire Safety",
+    aesiraFirstAid: "First Aid, Heat & Health and Safety",
+  },
+  copy: {
+    guestPrompt: "to save your SIRA guard progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets on the topics of the Dubai basic guard course: SIRA law and your role, access control and reports, legal limits and emergencies, fire safety and first aid. Missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions across every topic, 70% target",
+    heroSubs: [
+      "Four topic sets, four mock tests.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your SIRA test.",
+    ],
+    sourceLine: "Based on Dubai Law No. (12) of 2016, its 2026 executive regulation and the topics of SIRA-accredited guard training. Original questions; 50 per test, 70% is Tigertest's target. Not affiliated with SIRA, Dubai Police or any training centre.",
+    analyticsKey: "aesira",
+  },
+};
+
+const mypce: ExamConfig = {
+  id: "mypce",
+  stateCode: "MYPCE",
+  idBase: 18600,
+  slug: "/malaysia-pce",
+  landingPath: "/pce-exam-practice-test",
+  name: "Malaysia PCE Practice Test",
+  shortName: "PCEIA",
+  examLabel: "PCEIA exam",
+  fullName: "Pre-Contract Examination for Insurance Agents (PCEIA), Malaysia",
+  questionIdPrefix: "MYPCE-",
+  icon: "umbrella",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 50,
+  // Aii PCEIA (checked Nov 2026): Part A Basics of Insurance (compulsory) + Part C Life (route AC)
+  // or Part B General (route AB), 50 questions each, 100 in 2 hours, 50% to pass. Mock tests mix
+  // all three parts 20/10/20: Part A risk 5, principles 5, contract and agency law 4, legislation
+  // and regulation 4, medical and health 2; Part B motor 4, fire, property and other 6; Part C life
+  // products 6, policy law and nomination 5, rating and underwriting 4, claims 2, code of practice 3.
+  // Aii publishes no chapter weights; the split is Tigertest's. Malaysian law as of November 2026
+  // (FSA 2013 Schedules 7 to 10, IFSA 2013, Contracts Act 1950, Road Transport Act 1987, PDPA 2010, AMLA).
+  blueprint: {
+    mypceRisk: 5,
+    mypcePrinciples: 5,
+    mypceLaw: 4,
+    mypceRegulation: 4,
+    mypceHealth: 2,
+    mypceMotor: 4,
+    mypceProperty: 6,
+    mypceLifeProducts: 6,
+    mypceLifeLegal: 5,
+    mypceUnderwriting: 4,
+    mypceClaims: 2,
+    mypceEthics: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 18601, name: "Risk & Principles of Insurance", categories: ["mypceRisk", "mypcePrinciples"], size: 40, weightLabel: "Part A · 10 of 50 test questions" },
+    { setNumber: 2, id: 18602, name: "Law, Regulation & Health Insurance", categories: ["mypceLaw", "mypceRegulation", "mypceHealth"], size: 40, weightLabel: "Part A · 10 of 50 test questions" },
+    { setNumber: 3, id: 18603, name: "General Insurance (Part B)", categories: ["mypceMotor", "mypceProperty"], size: 40, weightLabel: "Part B · 10 of 50 test questions" },
+    { setNumber: 4, id: 18604, name: "Life Products & Policy Law", categories: ["mypceLifeProducts", "mypceLifeLegal"], size: 44, weightLabel: "Part C · 11 of 50 test questions" },
+    { setNumber: 5, id: 18605, name: "Underwriting, Claims & Ethics", categories: ["mypceUnderwriting", "mypceClaims", "mypceEthics"], size: 36, weightLabel: "Part C · 9 of 50 test questions" },
+  ],
+  categoryLabels: {
+    mypceRisk: "Risk & Insurance",
+    mypcePrinciples: "Principles of Insurance",
+    mypceLaw: "Contract & Agency Law",
+    mypceRegulation: "Legislation & Regulation",
+    mypceHealth: "Medical & Health Insurance",
+    mypceMotor: "Motor Insurance",
+    mypceProperty: "Fire, Property & Other General Insurance",
+    mypceLifeProducts: "Life Insurance Products",
+    mypceLifeLegal: "Life Policy Law & Nomination",
+    mypceUnderwriting: "Premium Rating & Underwriting",
+    mypceClaims: "Life Claims",
+    mypceEthics: "Code of Practice & Ethics",
+  },
+  copy: {
+    guestPrompt: "to save your PCEIA progress and track every question you miss",
+    trainingHeading: "Train by part",
+    trainingSub: "Two sets for Part A, one for Part B general insurance and two for Part C life insurance. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions across Parts A, B and C, 50% to pass",
+    heroSubs: [
+      "Part A plus Part B or C. Start with the basics.",
+      "Master each part's sets, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Register for your PCEIA.",
+    ],
+    sourceLine: "Based on the PCEIA's Parts A, B and C and Malaysian law (FSA 2013, IFSA 2013, Contracts Act 1950) as of November 2026. Original questions; 50 per test, mixing the three parts. Not affiliated with the Asian Institute of Insurance, Bank Negara Malaysia, LIAM or PIAM.",
+    analyticsKey: "mypce",
+  },
+};
+
+const kenck: ExamConfig = {
+  id: "kenck",
+  stateCode: "KENCK",
+  idBase: 18700,
+  slug: "/kenya-nursing-council",
+  landingPath: "/nursing-council-of-kenya-exam-practice-test",
+  name: "Nursing Council of Kenya Exam Practice Test",
+  shortName: "NCK Exam",
+  examLabel: "NCK licensure exam",
+  fullName: "Nursing Council of Kenya Licensure Examination (registered nurse)",
+  questionIdPrefix: "KENCK-",
+  icon: "stethoscope",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 60,
+  // Nursing Council of Kenya licensure exam (checked November 2026): online at regional centres;
+  // KRCHN, BScN, KRN/M and KRN/MH sit two 2-hour papers on one day (NCK Instructions and Schedules
+  // for 2026 and 2027 Licensure Examinations). NCK publishes no question count, pass mark or
+  // blueprint, so this split over general nursing, midwifery and community health is Tigertest's,
+  // and 60% is a readiness target. Kenyan MoH and WHO guidelines and Kenyan law. All items original.
+  blueprint: {
+    kenckFund: 7,
+    kenckPharm: 4,
+    kenckMedSurg: 9,
+    kenckMidwifery: 8,
+    kenckRepro: 3,
+    kenckPaeds: 6,
+    kenckCommunity: 6,
+    kenckMental: 3,
+    kenckLaw: 4,
+  },
+  trainingSets: testSets(18700, 4),
+  categoryLabels: {
+    kenckFund: "Fundamentals of Nursing",
+    kenckPharm: "Pharmacology & Dosage",
+    kenckMedSurg: "Medical-Surgical Nursing",
+    kenckMidwifery: "Midwifery & Newborn Care",
+    kenckRepro: "Reproductive Health",
+    kenckPaeds: "Child Health & IMCI",
+    kenckCommunity: "Community Health & PHC",
+    kenckMental: "Mental Health Nursing",
+    kenckLaw: "Law, Ethics & Leadership",
+  },
+  copy: {
+    guestPrompt: "to save your NCK exam progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per mock test, each holding exactly that test's 50 questions across all nine topics. Missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, 60% readiness line",
+    heroSubs: [
+      "Nine topics, four mock tests. Midwifery and med-surg are the biggest.",
+      "Master each set, then take its test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. You are ready for your NCK papers.",
+    ],
+    sourceLine: "Based on Kenyan Ministry of Health and WHO guidelines and Kenyan nursing law. Original questions; the Council publishes no question count or pass mark, so 60% is a readiness target. Not affiliated with the Nursing Council of Kenya.",
+    analyticsKey: "kenck",
+  },
+};
+
+const iedttcv: ExamConfig = {
+  id: "iedttcv",
+  stateCode: "IEDTTCV",
+  idBase: 18800,
+  slug: "/ireland-truck-bus-theory",
+  landingPath: "/ireland-truck-bus-theory-test",
+  name: "Ireland Truck and Bus Theory Test Practice",
+  shortName: "Truck & Bus Theory (IE)",
+  examLabel: "Truck and Bus Theory Test",
+  fullName: "Ireland Driver Theory Test, truck and bus (categories C and D, RSA)",
+  questionIdPrefix: "IEDTTCV-",
+  icon: "truck",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 74,
+  // RSA Driver Theory Test, categories C (truck) and D (bus), per theorytest.ie FAQs checked
+  // 2026-11-05: 100 questions in 120 minutes, 74 to pass, English or Irish; combined CD test 140
+  // questions, 180 minutes, 104 to pass (English only). Modelled at 50 questions at the same pace
+  // and 74%: ceil(0.74 x 50) = 37. The RSA publishes no topic weights, so these are Tigertest's,
+  // weighted to the heavy-vehicle material (EU Reg 561/2006 drivers' hours, Reg 165/2014
+  // tachographs, S.I. 546/2008 and 75/2012 speed limits, Driver CPC). Bank covers truck and bus.
+  // The official RSA question bank is copyrighted and was not used: all items original.
+  blueprint: {
+    iedttcvLicence: 4,
+    iedttcvHours: 7,
+    iedttcvTacho: 5,
+    iedttcvBrakes: 7,
+    iedttcvLoads: 6,
+    iedttcvPassengers: 6,
+    iedttcvRoad: 7,
+    iedttcvSafety: 5,
+    iedttcvEmergencies: 3,
+  },
+  trainingSets: testSets(18800, 4),
+  categoryLabels: {
+    iedttcvLicence: "Licences, Driver CPC & Roadworthiness",
+    iedttcvHours: "Drivers' Hours & Working Time",
+    iedttcvTacho: "Tachographs & Records",
+    iedttcvBrakes: "Brakes, Coupling & Vehicle Checks",
+    iedttcvLoads: "Weights, Dimensions & Load Security",
+    iedttcvPassengers: "Carrying Passengers",
+    iedttcvRoad: "Speed Limits, Lanes & Large Vehicles",
+    iedttcvSafety: "Blind Spots, Fatigue & Alcohol",
+    iedttcvEmergencies: "Eco-Driving, Breakdowns & Incidents",
+  },
+  copy: {
+    guestPrompt: "to save your truck and bus theory progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1, and so on. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions, 74% to pass, like the real test",
+    heroSubs: [
+      "Four tests on drivers' hours, tachographs, brakes, loads and passengers. You need 74%.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Book your truck or bus theory test at theorytest.ie.",
+    ],
+    sourceLine: "Original questions written from Irish and EU rules for truck and bus drivers (2026). The real C or D test is 100 questions and you need 74 right. Not affiliated with the RSA.",
+    analyticsKey: "iedttcv",
+  },
+};
+
+// International batch 3: Pakistan and South Africa (Nov 2026)
+const ppsc: ExamConfig = {
+  id: "ppsc",
+  stateCode: "PKPPSC",
+  idBase: 19900,
+  slug: "/ppsc",
+  landingPath: "/ppsc-practice-test",
+  name: "PPSC Practice Test",
+  shortName: "PPSC test",
+  examLabel: "PPSC general ability test",
+  fullName: "PPSC general ability and general knowledge screening test (Punjab Public Service Commission)",
+  questionIdPrefix: "PPSC-",
+  icon: "building",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Source: the Punjab Public Service Commission (Pakistan) sets a syllabus per advertisement.
+  // ppsc.gop.pk did not load when checked (2026-11-05); guides and search snippets of PPSC
+  // syllabus PDFs describe a one-paper MCQ test of 100 questions in 90 minutes whose general
+  // ability part covers general knowledge, Pakistan Studies, Islamic Studies (Ethics for
+  // non-Muslims), current affairs, geography, English, basic maths, everyday science and
+  // computers; negative marking and the qualifying mark vary by post. Weights are Tigertest's own
+  // (English 13, maths 7, reasoning 5, Pakistan Studies 7, Constitution 6, geography 6, Islamiat 3,
+  // computers 3 per test) and 70% (35 of 50) is Tigertest's target. Constitution items checked
+  // against the 1973 Constitution text (pakistani.org). Current affairs and everyday science are
+  // not modelled. Pools are exactly 4x each count (no spares). All items original.
+  blueprint: {
+    ppscEnglish: 7,
+    ppscVocab: 6,
+    ppscMaths: 7,
+    ppscReasoning: 5,
+    ppscHistory: 7,
+    ppscConstitution: 6,
+    ppscGeography: 6,
+    ppscIslamiat: 3,
+    ppscComputer: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 19901, name: "English Grammar & Vocabulary", categories: ["ppscEnglish", "ppscVocab"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 2, id: 19902, name: "Mathematics & Reasoning", categories: ["ppscMaths", "ppscReasoning"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 3, id: 19903, name: "Pakistan Studies & Islamiat", categories: ["ppscHistory", "ppscIslamiat"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 4, id: 19904, name: "Constitution & Computers", categories: ["ppscConstitution", "ppscComputer"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 5, id: 19905, name: "Pakistan & World Geography", categories: ["ppscGeography"], size: 24, weightLabel: "6 of 50 test questions" },
+  ],
+  categoryLabels: {
+    ppscEnglish: "English: Grammar & Usage",
+    ppscVocab: "English: Vocabulary & Idioms",
+    ppscMaths: "Basic Mathematics",
+    ppscReasoning: "Reasoning & Mental Ability",
+    ppscHistory: "Pakistan Studies: History to 1956",
+    ppscConstitution: "The 1973 Constitution",
+    ppscGeography: "Pakistan & World Geography",
+    ppscIslamiat: "Islamic Studies",
+    ppscComputer: "Basic Computer Skills",
+  },
+  copy: {
+    guestPrompt: "to save your PPSC test progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets on the English, mathematics, reasoning and general knowledge in the general ability part of PPSC tests. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, aim for 35 or more",
+    heroSubs: [
+      "Five topics, four 50-question tests. English and maths weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Check your advertisement's syllabus and go.",
+    ],
+    sourceLine: "Based on the general ability syllabus of PPSC written tests and the 1973 Constitution. Original questions; 50 per test, 70% is Tigertest's target.",
+    analyticsKey: "ppsc",
+  },
+};
+
+const punjabpolice: ExamConfig = {
+  id: "punjabpolice",
+  stateCode: "PKPUNJPOL",
+  idBase: 20000,
+  slug: "/punjab-police-constable",
+  landingPath: "/punjab-police-constable-practice-test",
+  name: "Punjab Police Constable Practice Test",
+  shortName: "Punjab Police test",
+  examLabel: "Punjab Police constable test",
+  fullName: "Punjab Police (Pakistan) Constable and Lady Constable written test",
+  questionIdPrefix: "PJPOL-",
+  icon: "badge",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Source: Punjab Police advertisements for Constables and Lady Constables (BPS-7), 25 Jan 2025
+  // (province-wide) and 31 Oct 2026 (Rahim Yar Khan and Rajanpur): Matric with 50% marks, age 18 to
+  // 22 in settled areas, height and chest, 1.6 km race, then a written examination and an
+  // interview. Punjab Police publishes no question count, time, subject split or pass mark; the
+  // format can change between recruitments. Weights are Tigertest's own (English 13,
+  // maths 7, reasoning 5, Punjab 7, Police Order 7, criminal law 6, computer 5 per test), and 70%
+  // (35 of 50) is Tigertest's target. Law from the Police Order 2002 (text as promulgated), the
+  // Punjab Police Code of Conduct, the PPC 1860 and CrPC 1898. Checked 2026-11-05. Pools are
+  // exactly 4x each count (no spares). All items original.
+  blueprint: {
+    pjpolGrammar: 7,
+    pjpolVocab: 6,
+    pjpolMaths: 7,
+    pjpolReasoning: 5,
+    pjpolPunjab: 7,
+    pjpolPoliceOrder: 7,
+    pjpolCriminalLaw: 6,
+    pjpolComputer: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 20001, name: "English", categories: ["pjpolGrammar", "pjpolVocab"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 2, id: 20002, name: "Maths & Reasoning", categories: ["pjpolMaths", "pjpolReasoning"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 3, id: 20003, name: "Police Order 2002 & Policing", categories: ["pjpolPoliceOrder"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 4, id: 20004, name: "Criminal Law (PPC & CrPC)", categories: ["pjpolCriminalLaw"], size: 24, weightLabel: "6 of 50 test questions" },
+    { setNumber: 5, id: 20005, name: "Punjab & Computers", categories: ["pjpolPunjab", "pjpolComputer"], size: 48, weightLabel: "12 of 50 test questions" },
+  ],
+  categoryLabels: {
+    pjpolGrammar: "English: Grammar & Usage",
+    pjpolVocab: "English: Vocabulary & Spelling",
+    pjpolMaths: "Mathematics",
+    pjpolReasoning: "Reasoning",
+    pjpolPunjab: "Punjab: Geography & Landmarks",
+    pjpolPoliceOrder: "Police Order 2002 & Policing",
+    pjpolCriminalLaw: "Criminal Law: PPC & CrPC",
+    pjpolComputer: "Basic Computer Skills",
+  },
+  copy: {
+    guestPrompt: "to save your Punjab Police test progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets on the English, maths, reasoning, Punjab, police law and computer skills a constable candidate needs. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, aim for 35 or more",
+    heroSubs: [
+      "Five topics, four 50-question tests. English and maths weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Keep running for the race and go.",
+    ],
+    sourceLine: "Based on the Police Order 2002, the Punjab Police Code of Conduct, the PPC and CrPC, and the English, maths and reasoning the written test covers. Original questions; 50 per test, 70% is Tigertest's target.",
+    analyticsKey: "punjabpolice",
+  },
+};
+
+const pakarmy: ExamConfig = {
+  id: "pakarmy",
+  stateCode: "PKARMY",
+  idBase: 20100,
+  slug: "/pak-army-test",
+  landingPath: "/pak-army-initial-test-practice-test",
+  name: "Pak Army Initial Test Practice",
+  shortName: "Pak Army test",
+  examLabel: "Pak Army soldier initial test",
+  fullName: "Pakistan Army soldier recruitment (initial) written and intelligence test",
+  questionIdPrefix: "PKARMY-",
+  icon: "medal",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // The Pakistan Army publishes no syllabus, question count, time or pass mark for the soldier
+  // written test. Registration is online at joinpakarmy.gov.pk or at an Army Selection and
+  // Recruitment Centre; APP's report on the 2025 drive gives the selection process as a written
+  // test, physical and medical tests and an interview. Guides describe verbal and non-verbal
+  // intelligence sections and matric-level academic MCQs (English, maths, GK, Islamiat, Pakistan
+  // studies), with conflicting counts and times. Four 50-question tests at 70% (35 of 50) is
+  // Tigertest's target; weights are Tigertest's own. Non-verbal items are written as text.
+  // GK is static: Army ranks, corps and institutions, everyday science, Islamiat, national
+  // symbols. Checked 2026-11-05. Pools are exactly 4x each count (no spares). All items original.
+  blueprint: {
+    pkarmyEnglish: 8,
+    pkarmyMaths: 8,
+    pkarmyVerbal: 7,
+    pkarmyNonVerbal: 5,
+    pkarmyScience: 8,
+    pkarmyArmy: 7,
+    pkarmyIslamiat: 4,
+    pkarmyPakistan: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 20101, name: "English", categories: ["pkarmyEnglish"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 2, id: 20102, name: "Mathematics", categories: ["pkarmyMaths"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 3, id: 20103, name: "Verbal & Non-Verbal Intelligence", categories: ["pkarmyVerbal", "pkarmyNonVerbal"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 4, id: 20104, name: "Everyday Science & First Aid", categories: ["pkarmyScience"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 5, id: 20105, name: "The Army, Islamiat & Pakistan", categories: ["pkarmyArmy", "pkarmyIslamiat", "pkarmyPakistan"], size: 56, weightLabel: "14 of 50 test questions" },
+  ],
+  categoryLabels: {
+    pkarmyEnglish: "English Grammar & Vocabulary",
+    pkarmyMaths: "Mathematics",
+    pkarmyVerbal: "Verbal Intelligence",
+    pkarmyNonVerbal: "Non-Verbal Intelligence",
+    pkarmyScience: "Everyday Science & First Aid",
+    pkarmyArmy: "The Pakistan Army",
+    pkarmyIslamiat: "Islamic Studies",
+    pkarmyPakistan: "Pakistan General Knowledge",
+  },
+  copy: {
+    guestPrompt: "to save your Pak Army test progress and track every question you miss",
+    trainingHeading: "Train by subject",
+    trainingSub: "Five sets on the English, maths, intelligence and general knowledge that the soldier initial test covers. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, aim for 35 or more",
+    heroSubs: [
+      "Five subjects, four 50-question tests.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Get ready for your centre.",
+    ],
+    sourceLine: "Original questions in the subjects the soldier test covers; the Army publishes no format. 50 per test, 70% is Tigertest's target. Not affiliated with the Pakistan Army.",
+    analyticsKey: "pakarmy",
+  },
+};
+
+const pkpaf: ExamConfig = {
+  id: "pkpaf",
+  stateCode: "PKPAF",
+  idBase: 20400,
+  slug: "/paf-airman-test",
+  landingPath: "/paf-airman-test-practice-test",
+  name: "PAF Airman Test Practice",
+  shortName: "PAF airman test",
+  examLabel: "PAF airman recruitment test",
+  fullName: "Pakistan Air Force airman recruitment (initial) academic and intelligence test",
+  questionIdPrefix: "PKPAF-",
+  icon: "medal",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // The PAF publishes no syllabus, question count, time or pass mark for the airman tests that
+  // could be read (joinpaf.gov.pk and paf.gov.pk returned 503 on 2026-11-05). Guides describe an
+  // academic test (English, maths, physics for technical trades) and verbal and non-verbal
+  // intelligence tests at PAF Selection and Recruitment Centres, then a medical and an interview.
+  // Four 50-question tests at 70% (35 of 50) is Tigertest's target; weights are Tigertest's own.
+  // Non-verbal items are written as text. GK is static: PAF ranks and institutions, aviation
+  // basics, physics and electricity. Pools are exactly 4x each count (no spares). All items original.
+  blueprint: {
+    pkpafEnglish: 8,
+    pkpafMaths: 9,
+    pkpafPhysics: 8,
+    pkpafElectronics: 3,
+    pkpafVerbal: 7,
+    pkpafNonVerbal: 5,
+    pkpafAviation: 6,
+    pkpafAirForce: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 20401, name: "English", categories: ["pkpafEnglish"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 2, id: 20402, name: "Mathematics", categories: ["pkpafMaths"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 3, id: 20403, name: "Verbal & Non-Verbal Intelligence", categories: ["pkpafVerbal", "pkpafNonVerbal"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 4, id: 20404, name: "Physics & Electricity", categories: ["pkpafPhysics", "pkpafElectronics"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 5, id: 20405, name: "Aviation & the Air Force", categories: ["pkpafAviation", "pkpafAirForce"], size: 40, weightLabel: "10 of 50 test questions" },
+  ],
+  categoryLabels: {
+    pkpafEnglish: "English Grammar & Vocabulary",
+    pkpafMaths: "Mathematics",
+    pkpafPhysics: "Physics Basics",
+    pkpafElectronics: "Electricity & Electronics",
+    pkpafVerbal: "Verbal Intelligence",
+    pkpafNonVerbal: "Non-Verbal Intelligence",
+    pkpafAviation: "Aviation & Flight Basics",
+    pkpafAirForce: "The Pakistan Air Force",
+  },
+  copy: {
+    guestPrompt: "to save your PAF airman test progress and track every question you miss",
+    trainingHeading: "Train by subject",
+    trainingSub: "Five sets on the English, maths, physics, intelligence and aviation that the airman tests cover. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, aim for 35 or more",
+    heroSubs: [
+      "Five subjects, four 50-question tests.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Get ready for your centre.",
+    ],
+    sourceLine: "Original questions in the subjects the airman tests cover; the PAF publishes no format. 50 per test, 70% is Tigertest's target. Not affiliated with the Pakistan Air Force.",
+    analyticsKey: "pkpaf",
+  },
+};
+
+const pknle: ExamConfig = {
+  id: "pknle",
+  stateCode: "PKNLE",
+  idBase: 20200,
+  slug: "/pmdc-nle",
+  landingPath: "/pmdc-nle-practice-test",
+  name: "PMDC NRE (NLE) Practice Test",
+  shortName: "PMDC NRE",
+  examLabel: "PMDC NRE Step 1",
+  fullName: "PMDC National Registration Examination (formerly NLE), Step 1 theory",
+  questionIdPrefix: "PKNLE-",
+  icon: "stethoscope",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 60,
+  // PM&DC NRE (Medical) Standards, Structure and Syllabus 2024 (notified 30 April 2024; checked
+  // November 2026): Step 1 is 200 MCQs, 60 applied basic sciences (pathology 11, anatomy 11,
+  // physiology 10, clinical pharmacology 8, biochemistry 6, community medicine 6, forensic medicine
+  // 4, as printed) and 140 clinical (medicine 52, surgery 48, O&G 14, paediatrics 14, eye 6, ENT 6),
+  // 60% to pass, no negative marking. Each 50-question mock is a quarter of the paper with the same
+  // 30/70 split; the grouping of disciplines is Tigertest's. All items original.
+  blueprint: {
+    pknleAnatPhys: 5,
+    pknlePathBio: 5,
+    pknlePharm: 2,
+    pknleCommForensic: 3,
+    pknleMedicine: 13,
+    pknleSurgery: 11,
+    pknleObGyn: 4,
+    pknlePaeds: 4,
+    pknleEyeEnt: 3,
+  },
+  trainingSets: testSets(20200, 4),
+  categoryLabels: {
+    pknleAnatPhys: "Applied Anatomy & Physiology",
+    pknlePathBio: "Pathology & Biochemistry",
+    pknlePharm: "Clinical Pharmacology",
+    pknleCommForensic: "Community & Forensic Medicine",
+    pknleMedicine: "Medicine & Allied",
+    pknleSurgery: "Surgery & Allied",
+    pknleObGyn: "Obstetrics & Gynaecology",
+    pknlePaeds: "Paediatrics",
+    pknleEyeEnt: "Eye & ENT",
+  },
+  copy: {
+    guestPrompt: "to save your PMDC NRE progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per mock test, each holding exactly that test's 50 questions across basic and clinical sciences. Missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, 60% to pass",
+    heroSubs: [
+      "Basic and clinical sciences, four mock tests. Medicine and surgery are half the paper.",
+      "Master each set, then take its test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. You are ready for NRE Step 1.",
+    ],
+    sourceLine: "Based on the PM&DC NRE Standards, Structure and Syllabus 2024: 30% basic and 70% clinical sciences, 60% to pass. Original questions. Not affiliated with the Pakistan Medical and Dental Council or NUMS.",
+    analyticsKey: "pknle",
+  },
+};
+
+const pkpnmc: ExamConfig = {
+  id: "pkpnmc",
+  stateCode: "PKPNMC",
+  idBase: 20300,
+  slug: "/pnmc-licensing-exam",
+  landingPath: "/pnmc-licensing-exam-practice-test",
+  name: "PNMC Licensing Exam Practice Test",
+  shortName: "PNMC Exam",
+  examLabel: "PNMC licensing exam",
+  fullName: "Pakistan Nursing and Midwifery Council Licensing Examination (registered nurse)",
+  questionIdPrefix: "PKPNMC-",
+  icon: "stethoscope",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 60,
+  // PNMC licensing exam (checked November 2026): the PNMC (Amendment) Act, 2023 gives the Council
+  // the function of holding licensure examinations, but PNMC publishes no question count, time,
+  // pass mark or blueprint for a registered nurse licensing exam. This split over the BSN and
+  // diploma subjects is Tigertest's, and 60% is a readiness target. Pakistani practice (EPI
+  // schedule, DRAP, Lady Health Workers) and law (PNMC Act). All items original.
+  blueprint: {
+    pkpnmcFund: 7,
+    pkpnmcPharm: 4,
+    pkpnmcAdult: 9,
+    pkpnmcCritical: 4,
+    pkpnmcMaternal: 6,
+    pkpnmcPaeds: 6,
+    pkpnmcCommunity: 6,
+    pkpnmcMental: 4,
+    pkpnmcLaw: 4,
+  },
+  trainingSets: testSets(20300, 4),
+  categoryLabels: {
+    pkpnmcFund: "Fundamentals of Nursing",
+    pkpnmcPharm: "Pharmacology & Dosage",
+    pkpnmcAdult: "Adult Health Nursing",
+    pkpnmcCritical: "Critical Care & Emergency",
+    pkpnmcMaternal: "Maternal & Newborn Health",
+    pkpnmcPaeds: "Paediatric Nursing & EPI",
+    pkpnmcCommunity: "Community Health Nursing",
+    pkpnmcMental: "Mental Health Nursing",
+    pkpnmcLaw: "Law, Ethics & Leadership",
+  },
+  copy: {
+    guestPrompt: "to save your PNMC exam progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per mock test, each holding exactly that test's 50 questions across all nine topics. Missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, 60% readiness line",
+    heroSubs: [
+      "Nine topics, four mock tests. Adult health and fundamentals are the biggest.",
+      "Master each set, then take its test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. You are ready for your PNMC licensing exam.",
+    ],
+    sourceLine: "Based on WHO guidance, Pakistan's EPI schedule and Pakistani nursing law. Original questions; PNMC publishes no question count or pass mark, so 60% is a readiness target. Not affiliated with the Pakistan Nursing and Midwifery Council.",
+    analyticsKey: "pkpnmc",
+  },
+};
+
+const zak53moto: ExamConfig = {
+  id: "zak53moto",
+  stateCode: "ZAK53C1",
+  idBase: 20700,
+  slug: "/k53-motorcycle",
+  landingPath: "/k53-motorcycle-learners-test",
+  name: "K53 Motorcycle Learner's Practice Test (Code 1)",
+  shortName: "K53 motorcycle learner's",
+  examLabel: "K53 Code 1 learner's licence test",
+  fullName: "South Africa K53 learner's licence test, Code 1 (motorcycle, motor tricycle or quadricycle)",
+  questionIdPrefix: "ZAC1-",
+  icon: "bike",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // Real test: 64 random multiple-choice questions in three sections (RTMC, May 2026, as recorded
+  // for zak53). Study guides (not official) give 28 rules / 28 signs / 8 controls. No Code 1
+  // specific format is published, so each mock reuses the Code 2 split scaled to 50: rules 22
+  // (5/6/6/5), signs and markings 22 (9/6/3/4), motorcycle controls 6. Code 1 ages (16 up to
+  // 125 cc, 18 above) and 24-month validity from gov.za; helmet (reg 207) and passenger rules from
+  // the Regulations as quoted by Arrive Alive, checked 2026-11-05. passPct 80 = 40 of 50,
+  // Tigertest's own target. All items original; signs described in words.
+  blueprint: {
+    c1Licence: 5,
+    c1RightOfWay: 6,
+    c1Speed: 6,
+    c1Parking: 5,
+    c1Regulatory: 9,
+    c1Warning: 6,
+    c1Guidance: 3,
+    c1Markings: 4,
+    c1Controls: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 20701, name: "Licences, Helmets & Right of Way", categories: ["c1Licence", "c1RightOfWay"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 2, id: 20702, name: "Speed, Passengers, Lights & Parking", categories: ["c1Speed", "c1Parking"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 3, id: 20703, name: "Regulatory Signs", categories: ["c1Regulatory"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 4, id: 20704, name: "Warning Signs", categories: ["c1Warning"], size: 24, weightLabel: "6 of 50 test questions" },
+    { setNumber: 5, id: 20705, name: "Guidance Signs, Markings & Signals", categories: ["c1Guidance", "c1Markings"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 6, id: 20706, name: "Motorcycle Controls", categories: ["c1Controls"], size: 24, weightLabel: "6 of 50 test questions" },
+  ],
+  categoryLabels: {
+    c1Licence: "Licences, Helmets, Alcohol & Crashes",
+    c1RightOfWay: "Intersections & Right of Way",
+    c1Speed: "Speed, Lane Position & Overtaking",
+    c1Parking: "Passengers, Lights & Parking",
+    c1Regulatory: "Regulatory Signs",
+    c1Warning: "Warning Signs",
+    c1Guidance: "Guidance & Information Signs",
+    c1Markings: "Road Markings & Traffic Signals",
+    c1Controls: "Motorcycle Controls (Code 1)",
+  },
+  copy: {
+    guestPrompt: "to save your K53 motorcycle learner's progress and track every question you miss",
+    trainingHeading: "Train by K53 section",
+    trainingSub: "Six sets covering the rules of the road for riders, road signs and markings, and Code 1 motorcycle controls. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions in the real test's mix, 40 to pass",
+    heroSubs: [
+      "Rules, signs and controls, like the real test.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your learner's test at the DLTC.",
+    ],
+    sourceLine: "Based on the National Road Traffic Act and Regulations and the SADC road sign manual. Original questions; 50 per test, 40 to pass (Tigertest's target).",
+    analyticsKey: "zak53moto",
+  },
+};
+
+const zare5: ExamConfig = {
+  id: "zare5",
+  stateCode: "ZARE5",
+  idBase: 20500,
+  slug: "/re5-exam",
+  landingPath: "/re5-exam-practice-test",
+  name: "RE5 Practice Test",
+  shortName: "RE5",
+  examLabel: "RE5 exam",
+  fullName: "RE5 Regulatory Examination for Representatives (FAIS)",
+  questionIdPrefix: "ZARE5-",
+  icon: "umbrella",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 66,
+  // FSCA Preparation Guide for Regulatory Examinations (17 January 2026, v1): RE5 is 50 MCQs, four
+  // options, 2 hours, 66% to pass, no negative marking; eight tasks (RE5 task map, 14 January 2025),
+  // each covered at least once, no weights published. Tigertest's split per 50, led by the number of
+  // qualifying criteria per task (4/9/3/14/2/2/1/12): Task 1 FAIS Act, products and compliance
+  // officer 6; Task 2 licence and undesirable practices 6; Task 3 key individuals 3; Task 4 General
+  // Code of Conduct 13 (duties, conflicts, disclosures 7; advice, client funds, complaints 6);
+  // Task 5 records 3; Task 6 FIC Act 5; Task 7 Ombud for FSPs 3; Task 8 representatives 7 and
+  // debarment 4. South African law as of November 2026; no rand amounts.
+  blueprint: {
+    zare5Framework: 6,
+    zare5Licence: 6,
+    zare5KeyInd: 3,
+    zare5Disclosure: 7,
+    zare5Advice: 6,
+    zare5Records: 3,
+    zare5Fica: 5,
+    zare5Ombud: 3,
+    zare5Rep: 7,
+    zare5Debar: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 20501, name: "FAIS Act, Licence & Key Individuals", categories: ["zare5Framework", "zare5Licence", "zare5KeyInd"], size: 60, weightLabel: "Tasks 1 to 3 · 15 of 50 test questions" },
+    { setNumber: 2, id: 20502, name: "General Code of Conduct", categories: ["zare5Disclosure", "zare5Advice"], size: 52, weightLabel: "Task 4 · 13 of 50 test questions" },
+    { setNumber: 3, id: 20503, name: "Records, FIC Act & the Ombud", categories: ["zare5Records", "zare5Fica", "zare5Ombud"], size: 44, weightLabel: "Tasks 5 to 7 · 11 of 50 test questions" },
+    { setNumber: 4, id: 20504, name: "Representatives & Debarment", categories: ["zare5Rep", "zare5Debar"], size: 44, weightLabel: "Task 8 · 11 of 50 test questions" },
+  ],
+  categoryLabels: {
+    zare5Framework: "FAIS Act, Financial Products & Compliance Officer",
+    zare5Licence: "Maintaining the FSP Licence & Undesirable Practices",
+    zare5KeyInd: "Key Individuals",
+    zare5Disclosure: "General Duties, Conflicts & Disclosures",
+    zare5Advice: "Advice, Client Funds & Complaints",
+    zare5Records: "Record Keeping",
+    zare5Fica: "FIC Act & Money Laundering Control",
+    zare5Ombud: "The Ombud for FSPs",
+    zare5Rep: "The Representative: Role, Fit & Proper, Supervision",
+    zare5Debar: "Debarment",
+  },
+  copy: {
+    guestPrompt: "to save your RE5 progress and track every question you miss",
+    trainingHeading: "Train by task",
+    trainingSub: "Four sets that follow the RE5's eight tasks: the FAIS Act, licence and key individuals, the General Code of Conduct, records, the FIC Act and the Ombud, and representatives and debarment. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions across all eight tasks, 66% to pass",
+    heroSubs: [
+      "Eight tasks, 50 questions, 66% to pass. Start with the FAIS Act.",
+      "Master each task's set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your RE5.",
+    ],
+    sourceLine: "Based on the RE5 task map and qualifying criteria, the FAIS Act, the General Code of Conduct, BN 194 of 2017 and the FIC Act as of November 2026. Original questions; 50 per test, like the real exam. Not affiliated with the FSCA or the examination body.",
+    analyticsKey: "zare5",
+  },
+};
+
+const zasaps: ExamConfig = {
+  id: "zasaps",
+  stateCode: "ZASAPS",
+  idBase: 20600,
+  slug: "/saps-trainee-assessment",
+  landingPath: "/saps-recruitment-test-practice-test",
+  name: "SAPS Recruitment Practice Test",
+  shortName: "SAPS test",
+  examLabel: "SAPS police trainee assessment",
+  fullName: "SAPS police trainee recruitment assessment (written literacy, numeracy and reasoning)",
+  questionIdPrefix: "ZASAPS-",
+  icon: "badge",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // The South African Police Service recruits police trainees through advertised intakes; the
+  // 2026/2027 advertisement (TRA26/27) names fitness, psychometric and integrity testing, a
+  // medical evaluation, an interview and vetting (guides: the written test covers literacy,
+  // numeracy and reasoning).
+  // SAPS publishes no question count, time, subject split or pass mark. Tigertest models only
+  // the written literacy, numeracy and reasoning part; weights (English and reading 22,
+  // numeracy 18, reasoning 10 per test) and 70% (35 of 50) are Tigertest's own. Figure-only
+  // reasoning is written as text patterns. No personality, GK or law items. Checked 2026-11-05
+  // against the SAPS 2026/2027 trainee advertisement (see tools/next100/zasaps/sources.md). Pools are exactly
+  // 4x each count (no spares). All items original.
+  blueprint: {
+    zasapsGrammar: 8,
+    zasapsVocab: 6,
+    zasapsReading: 8,
+    zasapsNumber: 7,
+    zasapsWordProblems: 7,
+    zasapsData: 4,
+    zasapsVerbal: 5,
+    zasapsLogic: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 20601, name: "Grammar, Spelling & Vocabulary", categories: ["zasapsGrammar", "zasapsVocab"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 2, id: 20602, name: "Reading Comprehension", categories: ["zasapsReading"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 3, id: 20603, name: "Numbers & Data", categories: ["zasapsNumber", "zasapsData"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 4, id: 20604, name: "Word Problems", categories: ["zasapsWordProblems"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 5, id: 20605, name: "Verbal & Logical Reasoning", categories: ["zasapsVerbal", "zasapsLogic"], size: 40, weightLabel: "10 of 50 test questions" },
+  ],
+  categoryLabels: {
+    zasapsGrammar: "English: Grammar & Spelling",
+    zasapsVocab: "English: Vocabulary & Idioms",
+    zasapsReading: "Reading Comprehension",
+    zasapsNumber: "Numeracy: Numbers & Calculation",
+    zasapsWordProblems: "Numeracy: Word Problems",
+    zasapsData: "Numeracy: Tables & Data",
+    zasapsVerbal: "Verbal Reasoning",
+    zasapsLogic: "Logical & Pattern Reasoning",
+  },
+  copy: {
+    guestPrompt: "to save your SAPS assessment progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets on the English, reading, numeracy and reasoning the written trainee assessment checks. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, aim for 35 or more",
+    heroSubs: [
+      "Five topics, four 50-question tests. English and reading weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Now get fit for the physical assessment.",
+    ],
+    sourceLine: "Original literacy, numeracy and reasoning questions for the written part of the SAPS police trainee assessment. SAPS publishes no format; 50 per test and 70% are Tigertest's own.",
+    analyticsKey: "zasaps",
+  },
+};
+
+const zapsira: ExamConfig = {
+  id: "zapsira",
+  stateCode: "ZAPSIRA",
+  idBase: 20800,
+  slug: "/psira-security",
+  landingPath: "/psira-security-officer-practice-test",
+  name: "PSIRA Security Officer Practice Test",
+  shortName: "PSIRA Grades E-C",
+  examLabel: "PSIRA grade assessment",
+  fullName: "PSIRA security officer grade assessment (Grades E to C)",
+  questionIdPrefix: "ZAPSIRA-",
+  icon: "badge",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // South Africa: Private Security Industry Regulation Act 56 of 2001 (ss. 20, 23, 25, 28),
+  // Criminal Procedure Act 51 of 1977 (ss. 23, 42, 48, 49, 50), Occupational Health and Safety Act
+  // 85 of 1993 (ss. 8, 14, 15, 17). Training centres set the Grade E to C assessments; no official
+  // weights, count or pass mark were found. Tigertest's blueprint over the course topics:
+  // law 6, role 6, powers 7, access 7, patrols 6, reports 6, emergencies 7, OHS 5. 70% is
+  // Tigertest's target.
+  blueprint: {
+    zapsiraLaw: 6,
+    zapsiraRole: 6,
+    zapsiraPowers: 7,
+    zapsiraAccess: 7,
+    zapsiraPatrol: 6,
+    zapsiraReports: 6,
+    zapsiraEmergency: 7,
+    zapsiraSafety: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 20801, name: "Grade E: PSIRA, Conduct & Your Role", categories: ["zapsiraLaw", "zapsiraRole"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 2, id: 20802, name: "Grade E: Legal Powers & Access Control", categories: ["zapsiraPowers", "zapsiraAccess"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 3, id: 20803, name: "Grade D: Patrols, Radio & Reports", categories: ["zapsiraPatrol", "zapsiraReports"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 4, id: 20804, name: "Grade C: First Response & Safety", categories: ["zapsiraEmergency", "zapsiraSafety"], size: 48, weightLabel: "12 of 50 test questions" },
+  ],
+  categoryLabels: {
+    zapsiraLaw: "PSIRA, the Act & the Code of Conduct",
+    zapsiraRole: "The Security Officer's Role & Conduct",
+    zapsiraPowers: "Legal Powers: Arrest, Search & Force",
+    zapsiraAccess: "Access Control & Searching",
+    zapsiraPatrol: "Patrols, Observation & Radio",
+    zapsiraReports: "Occurrence Books, Reports & Evidence",
+    zapsiraEmergency: "First Response, Fire & First Aid",
+    zapsiraSafety: "Occupational Health & Safety",
+  },
+  copy: {
+    guestPrompt: "to save your PSIRA progress and track every question you miss",
+    trainingHeading: "Train grade by grade",
+    trainingSub: "Four sets on the Grade E to C course topics: the PSIRA Act and your role, legal powers and access control, patrols, radio and reports, and first response and safety. Missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions across every topic, 70% target",
+    heroSubs: [
+      "Four grade sets, four mock tests.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Ready for your assessment.",
+    ],
+    sourceLine: "Based on the Private Security Industry Regulation Act 56 of 2001, the Criminal Procedure Act and the OHS Act. Original questions; 50 per test, 70% is Tigertest's target. Not affiliated with PSIRA, SAPS or any training centre.",
+    analyticsKey: "zapsira",
+  },
+};
+
+// International batch 4 (November 2026): Ireland, New Zealand and Singapore
+const iesafepass: ExamConfig = {
+  id: "iesafepass",
+  stateCode: "IESAFEPASS",
+  idBase: 20900,
+  slug: "/safe-pass",
+  landingPath: "/safe-pass-practice-test",
+  name: "Safe Pass Practice Test",
+  shortName: "Safe Pass",
+  examLabel: "Safe Pass test",
+  fullName: "SOLAS Safe Pass construction health and safety awareness (Ireland)",
+  questionIdPrefix: "IESP-",
+  icon: "hardhat",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 90,
+  // SOLAS Safe Pass, the one-day construction safety awareness course required by the Safety,
+  // Health and Welfare at Work (Construction) Regulations 2013 (Schedule 4). SOLAS publishes no
+  // weights or count for the course assessment; the alternative renewal test is 50 questions,
+  // 45 to pass. Tigertest's blueprint over the course's 13 learning units: law (units 1-2) 7,
+  // accident reporting (3) 5, risk and behaviour-based safety (4, 8) 6, electricity (5) 5,
+  // excavations (6) 5, heights (7) 7, equipment and vehicles (9-10) 6, health, welfare, noise and
+  // vibration (11-12) 5, PPE (13) 4. 90% mirrors the renewal test's 45 of 50.
+  blueprint: {
+    iespLaw: 7,
+    iespAccidents: 5,
+    iespRisk: 6,
+    iespElectric: 5,
+    iespExcav: 5,
+    iespHeights: 7,
+    iespVehicles: 6,
+    iespHealth: 5,
+    iespPPE: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 20901, name: "Site Safety, the Law & Accident Reporting", categories: ["iespLaw", "iespAccidents"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 2, id: 20902, name: "Risk, Health & PPE", categories: ["iespRisk", "iespHealth", "iespPPE"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 3, id: 20903, name: "Electricity & Excavations", categories: ["iespElectric", "iespExcav"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 4, id: 20904, name: "Work at Height, Equipment & Vehicles", categories: ["iespHeights", "iespVehicles"], size: 52, weightLabel: "13 of 50 test questions" },
+  ],
+  categoryLabels: {
+    iespLaw: "Site Safety & the Law",
+    iespAccidents: "Accident Reporting & Emergencies",
+    iespRisk: "Risk Assessment & Safe Behaviour",
+    iespElectric: "Electricity",
+    iespExcav: "Excavations & Buried Services",
+    iespHeights: "Work at Height",
+    iespVehicles: "Construction Equipment & Vehicles",
+    iespHealth: "Health, Welfare, Noise & Vibration",
+    iespPPE: "Personal Protective Equipment",
+  },
+  copy: {
+    guestPrompt: "to save your Safe Pass progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets over the 13 units of the Safe Pass course: site safety law and accident reporting, risk, health and PPE, electricity and excavations, and work at height, plant and vehicles. Missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions across every unit, 45 to pass",
+    heroSubs: [
+      "Four topic sets, four mock tests.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Ready for Safe Pass.",
+    ],
+    sourceLine: "Based on the Safety, Health and Welfare at Work Act 2005, the Construction Regulations 2013, the General Application Regulations 2007, HSA guidance and the 13 Safe Pass learning units. Original questions; 50 per test, 45 to pass like the renewal test. Not affiliated with SOLAS, the HSA or any Safe Pass tutor.",
+    analyticsKey: "iesafepass",
+  },
+};
+
+const iespsv: ExamConfig = {
+  id: "iespsv",
+  stateCode: "IESPSV",
+  idBase: 21000,
+  slug: "/spsv-entry-test",
+  landingPath: "/spsv-entry-test-practice-test",
+  name: "SPSV Entry Test Practice",
+  shortName: "SPSV Entry Test",
+  examLabel: "SPSV Driver Entry Test",
+  fullName: "SPSV Driver Entry Test, Industry Knowledge module (taxi, hackney and limousine, Ireland)",
+  questionIdPrefix: "IESPSV-",
+  icon: "car",
+  testCount: 3,
+  questionsPerTest: 54,
+  passPct: 75,
+  // NTA SPSV Driver Entry Test, Industry Knowledge module (nationaltransport.ie and the Official
+  // Manual for Operating in the SPSV Industry, Edition 8.1, September 2026, checked 2026-11-05):
+  // 54 questions in 54 minutes, 75% to pass; the Area Knowledge module (36 questions on the
+  // chosen county) is not modelled. Three real-length tests of 54 at 75%: ceil(0.75 x 54) = 41.
+  // The NTA publishes no per-chapter split, so these weights follow the Manual's chapters 1 to 10.
+  // Each pool is 3x its count plus 2 to 6 training-only spares. All items original; single answer
+  // only (the real test has a few "pick two" items).
+  blueprint: {
+    spsvIndustry: 4,
+    spsvDriverLicence: 6,
+    spsvVehicle: 5,
+    spsvVehicleLicence: 5,
+    spsvOperating: 8,
+    spsvRoutes: 3,
+    spsvFares: 5,
+    spsvCustomer: 5,
+    spsvAccessibility: 4,
+    spsvBusiness: 3,
+    spsvSafety: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 21001, name: "The Industry & Driver Licensing", categories: ["spsvIndustry", "spsvDriverLicence"], size: 37, weightLabel: "10 of 54 test questions" },
+    { setNumber: 2, id: 21002, name: "Vehicles & Vehicle Licensing", categories: ["spsvVehicle", "spsvVehicleLicence"], size: 37, weightLabel: "10 of 54 test questions" },
+    { setNumber: 3, id: 21003, name: "Operating Rules & Fares", categories: ["spsvOperating", "spsvFares"], size: 49, weightLabel: "13 of 54 test questions" },
+    { setNumber: 4, id: 21004, name: "Customers & Accessibility", categories: ["spsvCustomer", "spsvAccessibility"], size: 33, weightLabel: "9 of 54 test questions" },
+    { setNumber: 5, id: 21005, name: "Routes, Business & Safety", categories: ["spsvRoutes", "spsvBusiness", "spsvSafety"], size: 44, weightLabel: "12 of 54 test questions" },
+  ],
+  categoryLabels: {
+    spsvIndustry: "The SPSV Industry & the NTA",
+    spsvDriverLicence: "SPSV Driver Licensing",
+    spsvVehicle: "Vehicle Standards & Age Rules",
+    spsvVehicleLicence: "Vehicle Licensing",
+    spsvOperating: "Working as an SPSV Operator",
+    spsvRoutes: "Finding Your Way Around",
+    spsvFares: "Fares, Receipts & Payment",
+    spsvCustomer: "Customer Service & Complaints",
+    spsvAccessibility: "Passengers with Disabilities",
+    spsvBusiness: "Running Your SPSV Business",
+    spsvSafety: "Staying Safe",
+  },
+  copy: {
+    guestPrompt: "to save your SPSV Entry Test progress and track every question you miss",
+    trainingHeading: "Train by Manual chapter",
+    trainingSub: "Five sets covering all ten study chapters of the NTA's Official Manual. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 54 questions, 41 to pass (75%), like the real module",
+    heroSubs: [
+      "Ten Manual chapters, three real-length mock tests.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. You are ready for Industry Knowledge.",
+    ],
+    sourceLine: "Original practice questions written from the NTA's Official Manual for Operating in the SPSV Industry (Edition 8.1, 2026). Industry Knowledge module only; not affiliated with the NTA. 54 per test, 75% to pass.",
+    analyticsKey: "iespsv",
+  },
+};
+
+const ieqfa: ExamConfig = {
+  id: "ieqfa",
+  stateCode: "IEQFA",
+  idBase: 21100,
+  slug: "/qfa-mcc",
+  landingPath: "/qfa-mcc-practice-test",
+  name: "QFA Regulation Practice Test",
+  shortName: "QFA Regulation",
+  examLabel: "QFA regulation exam",
+  fullName: "QFA / Minimum Competency Code exam: regulation, ethics and core products (Ireland)",
+  questionIdPrefix: "IEQFA-",
+  icon: "building",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Modelled on the LIA's QFA Regulation module (2-hour online MCQ exam of 100 questions, sittings
+  // January, May and September); pass mark not published, so 70% is Tigertest's readiness target.
+  // Tests are half length. Weights are Tigertest's, following the Central Bank's Minimum
+  // Competency Code 2017 (consolidated June 2026) Appendix 3 regulation and best practice
+  // competencies, the Consumer Protection Code 2025 (in force 24 March 2026) and core product
+  // concepts: regulators 6, MCC/F&P/IAF 6, CPC 8, contract and consumer insurance law 5,
+  // complaints/compensation/data 5, AML 4, ethics 6, protection products 5, pensions/savings/credit 5.
+  blueprint: {
+    ieqfaRegulators: 6,
+    ieqfaCompetence: 6,
+    ieqfaCpc: 8,
+    ieqfaContract: 5,
+    ieqfaRedress: 5,
+    ieqfaAml: 4,
+    ieqfaEthics: 6,
+    ieqfaProtection: 5,
+    ieqfaSavings: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 21101, name: "Regulators & Competence", categories: ["ieqfaRegulators", "ieqfaCompetence"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 2, id: 21102, name: "Consumer Protection Code & Contract Law", categories: ["ieqfaCpc", "ieqfaContract"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 3, id: 21103, name: "Complaints, Data & Anti-Money Laundering", categories: ["ieqfaRedress", "ieqfaAml"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 4, id: 21104, name: "Ethics & Professional Conduct", categories: ["ieqfaEthics"], size: 24, weightLabel: "6 of 50 test questions" },
+    { setNumber: 5, id: 21105, name: "Core Products", categories: ["ieqfaProtection", "ieqfaSavings"], size: 40, weightLabel: "10 of 50 test questions" },
+  ],
+  categoryLabels: {
+    ieqfaRegulators: "Regulators & the Regulatory Framework",
+    ieqfaCompetence: "Minimum Competency, Fitness & Probity",
+    ieqfaCpc: "Consumer Protection Code 2025",
+    ieqfaContract: "Contract Law & Consumer Insurance Contracts",
+    ieqfaRedress: "Complaints, Compensation & Data Protection",
+    ieqfaAml: "Anti-Money Laundering & Sanctions",
+    ieqfaEthics: "Ethics & Professional Conduct",
+    ieqfaProtection: "Life, Protection & General Insurance",
+    ieqfaSavings: "Pensions, Savings, Investments & Credit",
+  },
+  copy: {
+    guestPrompt: "to save your QFA regulation progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets: regulators and competence, the Consumer Protection Code and contract law, complaints, data and anti-money laundering, ethics, and core products. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions across every topic, 70% target",
+    heroSubs: [
+      "Five topic sets, four mock tests. Start with the regulators.",
+      "Master each set's rules, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your QFA exam.",
+    ],
+    sourceLine: "Based on the Central Bank's Minimum Competency Code, the Consumer Protection Code 2025 and Irish financial services law as of November 2026. Original questions; 50 per test, half the real exam's 100. 70% is Tigertest's target, not an official pass mark. Not affiliated with the LIA, the IOB, the QFA Board or the Central Bank of Ireland.",
+    analyticsKey: "ieqfa",
+  },
+};
+
+const iepsa: ExamConfig = {
+  id: "iepsa",
+  stateCode: "IEPSA",
+  idBase: 21200,
+  slug: "/psa-security-licence",
+  landingPath: "/psa-security-guard-practice-test",
+  name: "PSA Security Guard Practice Test",
+  shortName: "QQI Security Guarding",
+  examLabel: "QQI Security Guarding exam",
+  fullName: "QQI Level 4 Security Guarding Skills (4N20604) for the PSA security guard licence",
+  questionIdPrefix: "IEPSA-",
+  icon: "badge",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Ireland: QQI component specification 4N20604 Security Guarding Skills (Level 4, units 1 Private
+  // Security Sector and 2 Security Guarding Skills), required for the PSA security guard (guarding)
+  // licence by S.I. 574/2022 as amended by S.I. 204/2024. The provider sets the theory exam (50% of
+  // the award; Pass from 50%); no official count or weights. Tigertest's blueprint over the learning
+  // outcomes: law 6, role 6, powers 8, access 6, patrols 6, reports 6, emergencies 6, events and
+  // retail 6. 70% is Tigertest's target.
+  blueprint: {
+    iepsaLaw: 6,
+    iepsaRole: 6,
+    iepsaPowers: 8,
+    iepsaAccess: 6,
+    iepsaPatrol: 6,
+    iepsaReports: 6,
+    iepsaEmergency: 6,
+    iepsaEvents: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 21201, name: "The Sector, the PSA & Your Role", categories: ["iepsaLaw", "iepsaRole"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 2, id: 21202, name: "The Law: Arrest, Force & Access Control", categories: ["iepsaPowers", "iepsaAccess"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 3, id: 21203, name: "Patrols, Reports & Court", categories: ["iepsaPatrol", "iepsaReports"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 4, id: 21204, name: "Emergencies, Events & Retail", categories: ["iepsaEmergency", "iepsaEvents"], size: 48, weightLabel: "12 of 50 test questions" },
+  ],
+  categoryLabels: {
+    iepsaLaw: "PSA Licensing & the Security Sector",
+    iepsaRole: "Role, Conduct & Customer Care",
+    iepsaPowers: "Arrest, Force, Search & Trespass",
+    iepsaAccess: "Access Control, Keys & Confidentiality",
+    iepsaPatrol: "Patrols, Alarms & Radio",
+    iepsaReports: "Reports, Evidence & Court",
+    iepsaEmergency: "Emergencies, Fire & First Response",
+    iepsaEvents: "Events, Crowds & Retail Security",
+  },
+  copy: {
+    guestPrompt: "to save your Security Guarding progress and track every question you miss",
+    trainingHeading: "Train unit by unit",
+    trainingSub: "Four sets on the QQI 4N20604 course: the sector, the PSA and your role, arrest, force and access control, patrols, reports and court, and emergencies, events and retail. Missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions across every topic, 70% target",
+    heroSubs: [
+      "Four topic sets, four mock tests.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Ready for your exam.",
+    ],
+    sourceLine: "Based on the QQI 4N20604 Security Guarding Skills learning outcomes, the Private Security Services Act 2004 and the Criminal Law Act 1997. Original questions; 50 per test, 70% is Tigertest's target. Not affiliated with the PSA, QQI or any training provider.",
+    analyticsKey: "iepsa",
+  },
+};
+
+const nzmoto: ExamConfig = {
+  id: "nzmoto",
+  stateCode: "NZMOTO",
+  idBase: 21300,
+  slug: "/nz-motorcycle-learner",
+  landingPath: "/nz-motorcycle-learner-licence-practice-test",
+  name: "NZ Motorcycle Learner Licence Practice Test",
+  shortName: "NZ motorcycle learner",
+  examLabel: "NZ motorcycle learner licence test",
+  fullName: "New Zealand motorcycle learner licence theory test (Class 6)",
+  questionIdPrefix: "NZMOTO-",
+  icon: "bike",
+  testCount: 5,
+  questionsPerTest: 35,
+  passPct: 91,
+  // Real test: computer-based multi-choice theory test at a driver licensing agent, after the basic
+  // handling skills test (AA, Wikipedia). drive.govt.nz gives the learner test as 35 questions, 32 to
+  // pass, 30 minutes (car page, checked 2026-11-05); Wikipedia gives 32 of 35 for the motorcycle
+  // learner licence. NZTA's own motorcycle pages blocked automated reads, so the Class 6 format is
+  // from those sources. NZTA publishes no per-topic counts; the split is Tigertest's. Pools are 5x
+  // each count plus 25 training-only spares. passPct 91 = ceil(0.91 * 35) = 32. Learner and
+  // restricted conditions (rear L plate, no pillion, 10 pm to 5 am, no towing, LAMS under 660 cc
+  // and 150 kW/t) from Wikipedia and ACC Ride Forever. All items original; signs described in words.
+  blueprint: {
+    nzmLicence: 5,
+    nzmGear: 4,
+    nzmSigns: 4,
+    nzmGiveWay: 6,
+    nzmPosition: 6,
+    nzmControl: 5,
+    nzmHazards: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 21301, name: "Licence Conditions & Riding Gear", categories: ["nzmLicence", "nzmGear"], size: 52, weightLabel: "9 of 35 test questions" },
+    { setNumber: 2, id: 21302, name: "Signs & Giving Way", categories: ["nzmSigns", "nzmGiveWay"], size: 58, weightLabel: "10 of 35 test questions" },
+    { setNumber: 3, id: 21303, name: "Road Position, Speed & Overtaking", categories: ["nzmPosition"], size: 34, weightLabel: "6 of 35 test questions" },
+    { setNumber: 4, id: 21304, name: "Braking, Cornering & Bike Control", categories: ["nzmControl"], size: 28, weightLabel: "5 of 35 test questions" },
+    { setNumber: 5, id: 21305, name: "Road Surfaces, Weather & Hazards", categories: ["nzmHazards"], size: 28, weightLabel: "5 of 35 test questions" },
+  ],
+  categoryLabels: {
+    nzmLicence: "Licence Conditions, Alcohol & Crashes",
+    nzmGear: "Helmets, Gear & Bike Checks",
+    nzmSigns: "Signs, Signals & Markings",
+    nzmGiveWay: "Intersections & Giving Way",
+    nzmPosition: "Road Position, Speed & Overtaking",
+    nzmControl: "Braking, Cornering & Bike Control",
+    nzmHazards: "Road Surfaces, Weather & Hazards",
+  },
+  copy: {
+    guestPrompt: "to save your motorcycle learner licence progress and track every question you miss",
+    trainingHeading: "Train by topic for riders",
+    trainingSub: "Five sets on the learner and restricted conditions, helmets and gear, giving way, road position, braking and cornering, and road surface hazards. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 35 questions, 32 to pass",
+    heroSubs: [
+      "Five topics, five 35-question tests. Giving way and road position weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your motorcycle learner licence test.",
+    ],
+    sourceLine: "Based on New Zealand's road rules for motorcyclists. Original questions; 35 per test, 32 to pass like the car learner test.",
+    analyticsKey: "nzmoto",
+  },
+};
+
+const nzheavy: ExamConfig = {
+  id: "nzheavy",
+  stateCode: "NZHEAVY",
+  idBase: 21400,
+  slug: "/nz-heavy-vehicle-licence",
+  landingPath: "/nz-class-2-licence-practice-test",
+  name: "NZ Class 2 Licence Practice Test",
+  shortName: "NZ Class 2 licence",
+  examLabel: "Class 2 theory test",
+  fullName: "New Zealand Class 2 heavy vehicle learner licence theory test",
+  questionIdPrefix: "NZHV-",
+  icon: "truck",
+  testCount: 5,
+  questionsPerTest: 35,
+  passPct: 94,
+  // NZTA Class 2 (medium rigid) learner licence theory test. Its count and pass mark could not be
+  // read on nzta.govt.nz (bot wall, 2026-11-05): modelled as 35 questions,
+  // 33 to pass as reported by Wikipedia. passPct 94 = ceil(0.94 * 35) = 33. NZTA
+  // publishes no topic weights; these are Tigertest's, weighted to heavy vehicle content: licence
+  // classes, the Work Time and Logbooks Rule 2007, mass and dimensions, the Truck Loading Code, air
+  // brakes, the 90 km/h heavy vehicle limit. Pools are 5x each count plus 25 training-only spares.
+  // All items original; signs described in words.
+  blueprint: {
+    nzhvLicence: 4,
+    nzhvWork: 6,
+    nzhvMass: 6,
+    nzhvBrakes: 6,
+    nzhvRoad: 5,
+    nzhvSharing: 5,
+    nzhvSafety: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 21401, name: "Licences & Work Time", categories: ["nzhvLicence", "nzhvWork"], size: 57, weightLabel: "10 of 35 test questions" },
+    { setNumber: 2, id: 21402, name: "Mass, Dimensions & Loads", categories: ["nzhvMass"], size: 34, weightLabel: "6 of 35 test questions" },
+    { setNumber: 3, id: 21403, name: "Air Brakes & Vehicle Checks", categories: ["nzhvBrakes"], size: 34, weightLabel: "6 of 35 test questions" },
+    { setNumber: 4, id: 21404, name: "Speed, Hills & Emergencies", categories: ["nzhvRoad", "nzhvSafety"], size: 46, weightLabel: "8 of 35 test questions" },
+    { setNumber: 5, id: 21405, name: "Sharing the Road", categories: ["nzhvSharing"], size: 29, weightLabel: "5 of 35 test questions" },
+  ],
+  categoryLabels: {
+    nzhvLicence: "Licences, Classes & Alcohol",
+    nzhvWork: "Work Time & Logbooks",
+    nzhvMass: "Mass, Dimensions & Loads",
+    nzhvBrakes: "Air Brakes & Vehicle Checks",
+    nzhvRoad: "Speed, Hills & Road Position",
+    nzhvSharing: "Sharing the Road & Blind Spots",
+    nzhvSafety: "Weather, Breakdowns & Emergencies",
+  },
+  copy: {
+    guestPrompt: "to save your Class 2 theory progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets cover all 200 questions: licences and work time, loads, brakes, the road and sharing it. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 35 questions, 33 to pass",
+    heroSubs: [
+      "Five tests on work time, logbooks, loads, air brakes and heavy vehicle rules.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Check the current test details with NZTA and book your Class 2 theory test.",
+    ],
+    sourceLine: "Original questions written from New Zealand rules for heavy vehicle drivers (2026). 33 of 35 is the reported pass mark; check the real test's pass mark with NZTA. Not affiliated with NZTA Waka Kotahi.",
+    analyticsKey: "nzheavy",
+  },
+};
+
+const nzsfe: ExamConfig = {
+  id: "nzsfe",
+  stateCode: "NZSFE",
+  idBase: 21500,
+  slug: "/nz-nursing-state-final",
+  landingPath: "/nursing-council-nz-state-final-exam-practice-test",
+  name: "Nursing Council NZ State Final Exam Practice Test",
+  shortName: "NZ State Final",
+  examLabel: "State Final Examination",
+  fullName: "Nursing Council of New Zealand State Final Examination (registered nurse)",
+  questionIdPrefix: "NZSFE-",
+  icon: "stethoscope",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Nursing Council of New Zealand State Final Examination (checked November 2026): set by the
+  // Council for graduates of approved programmes before registration. The Council's public site
+  // gives no question count, time or pass standard, so this split, organised around the 2025
+  // standards of competence (six pou, in force for all purposes from 1 January 2026) and NZ
+  // clinical practice, is Tigertest's, and 70% is a readiness target. All items original.
+  blueprint: {
+    nzsfeTiriti: 5,
+    nzsfeLaw: 6,
+    nzsfeAssess: 6,
+    nzsfeMeds: 7,
+    nzsfeAcute: 9,
+    nzsfeLongTerm: 5,
+    nzsfeMental: 4,
+    nzsfeChild: 4,
+    nzsfeLead: 4,
+  },
+  trainingSets: testSets(21500, 4),
+  categoryLabels: {
+    nzsfeTiriti: "Te Tiriti, Māori Health & Cultural Safety",
+    nzsfeLaw: "Law, Ethics & Professional Practice",
+    nzsfeAssess: "Assessment & Clinical Reasoning",
+    nzsfeMeds: "Medicines & Calculations",
+    nzsfeAcute: "Acute & Medical-Surgical Care",
+    nzsfeLongTerm: "Long-term Conditions & Older Adults",
+    nzsfeMental: "Mental Health & Addiction",
+    nzsfeChild: "Child, Maternal & Whānau Health",
+    nzsfeLead: "Leadership, Safety & Communication",
+  },
+  copy: {
+    guestPrompt: "to save your State Final progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per mock test, each holding exactly that test's 50 questions across all nine topics. Missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, 70% readiness line",
+    heroSubs: [
+      "Nine topics, four mock tests. Acute care and medicines are the biggest.",
+      "Master each set, then take its test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. You are ready for State Finals.",
+    ],
+    sourceLine: "Based on New Zealand law, the Nursing Council's 2025 standards of competence and NZ clinical guidance. Original questions; the format and the 70% line are Tigertest's. Not affiliated with the Nursing Council of New Zealand.",
+    analyticsKey: "nzsfe",
+  },
+};
+
+const sgrtt: ExamConfig = {
+  id: "sgrtt",
+  stateCode: "SGRTT",
+  idBase: 21600,
+  slug: "/singapore-rtt",
+  landingPath: "/singapore-rtt-practice-test",
+  name: "Singapore RTT Practice Test",
+  shortName: "Singapore RTT",
+  examLabel: "Riding Theory Test",
+  fullName: "Singapore Riding Theory Test (RTT)",
+  questionIdPrefix: "SGRTT-",
+  icon: "bike",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 90,
+  // Source: Singapore Traffic Police, "Riding Theory Booklet, Official Handbook", published online
+  // 2.1.2026 (RT-ENG-2126.pdf). The Traffic Police publish no RTT question count, pass mark or topic
+  // weights; 50 questions with 45 to pass is Tigertest's target (the BTT/FTT format guides quote),
+  // so passPct 90 = ceil(0.90 * 50) = 45. Counts follow the handbook's chapters by length. Pools are
+  // exactly 4x each count. Kept clear of the BTT and FTT banks; alcohol figures, demerit points,
+  // fines, the practical test and the circuit course timings are not asked. All items original.
+  // Checked 2026-11-05.
+  blueprint: {
+    sgrtRider: 7,
+    sgrtMachine: 8,
+    sgrtControls: 8,
+    sgrtSkills: 8,
+    sgrtConditions: 7,
+    sgrtDefensive: 7,
+    sgrtGeneral: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 21601, name: "Rider & Motorcycle", categories: ["sgrtRider", "sgrtMachine"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 2, id: 21602, name: "Controls, Gears & Braking", categories: ["sgrtControls"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 3, id: 21603, name: "Moving Off, Turns & Junctions", categories: ["sgrtSkills"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 4, id: 21604, name: "Road Conditions & Defensive Riding", categories: ["sgrtConditions", "sgrtDefensive"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 5, id: 21605, name: "Pillions, Breakdowns & Accidents", categories: ["sgrtGeneral"], size: 20, weightLabel: "5 of 50 test questions" },
+  ],
+  categoryLabels: {
+    sgrtRider: "Rider Fitness, Gear & Posture",
+    sgrtMachine: "Motorcycle Parts, Checks & Handling",
+    sgrtControls: "Controls, Gears & Braking",
+    sgrtSkills: "Moving Off, Turns & Junctions",
+    sgrtConditions: "Bends, Slopes, Weather & Expressways",
+    sgrtDefensive: "Defensive Riding & Other Road Users",
+    sgrtGeneral: "Pillions, Breakdowns & Accidents",
+  },
+  copy: {
+    guestPrompt: "to save your RTT progress and track every question you miss",
+    trainingHeading: "Train by handbook chapter",
+    trainingSub: "Five sets covering the Riding Theory Booklet, from chain slack to emergency stops and pillions. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, target 45",
+    heroSubs: [
+      "Five topics, four full tests. The motorcycle, its controls and riding skills weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your Riding Theory Test.",
+    ],
+    sourceLine: "Based on the Traffic Police Riding Theory Booklet (2 January 2026). Original questions; 50 per test with Tigertest's 45 target (the Traffic Police publish no RTT format).",
+    analyticsKey: "sgrtt",
+  },
+};
+
+const sgm5: ExamConfig = {
+  id: "sgm5",
+  stateCode: "SGM5",
+  idBase: 21700,
+  slug: "/cmfas-m5",
+  landingPath: "/cmfas-m5-practice-test",
+  name: "CMFAS RES5 Practice Test",
+  shortName: "CMFAS RES5",
+  examLabel: "RES5",
+  fullName: "CMFAS RES5: Rules, Ethics and Skills for Financial Advisory Services (formerly Module 5)",
+  questionIdPrefix: "SGM5-",
+  icon: "building",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // SCI RES5 (checked November 2026): 150 MCQs in 3 hours, Part I (chapters 1-13, rules and
+  // regulations) 110 questions at 75%, Part II (chapters 14-27, ethics and skills) 40 at 80%.
+  // RES5 replaced CMFAS Module 5 under MAS Notice FAA-N26 from 1 April 2024. Modelled as four
+  // 50-question tests at the real pace with the 110:40 share (37 + 13); the pass line is the
+  // stricter 80%. Per test (Tigertest's split by chapter): FAA and representatives 6, conduct of
+  // business 5, FAA-N16 8, balanced scorecard and other notices 6, AML/CFT 4, ILPs, CIS, market
+  // conduct and CPF 8 (Part I 37); ethics and fair dealing 7, advisory skills 6 (Part II 13).
+  // Singapore law and MAS notices as of November 2026. All items original.
+  blueprint: {
+    sgm5Faa: 6,
+    sgm5Business: 5,
+    sgm5Advice: 8,
+    sgm5Notices: 6,
+    sgm5Aml: 4,
+    sgm5Products: 8,
+    sgm5Ethics: 7,
+    sgm5Skills: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 21701, name: "The FAA, Representatives & Conduct", categories: ["sgm5Faa", "sgm5Business"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 2, id: 21702, name: "Recommendations (FAA-N16)", categories: ["sgm5Advice"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 3, id: 21703, name: "Balanced Scorecard, Notices & AML", categories: ["sgm5Notices", "sgm5Aml"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 4, id: 21704, name: "ILPs, CIS, Market Conduct & CPF", categories: ["sgm5Products"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 5, id: 21705, name: "Ethics & Fair Dealing", categories: ["sgm5Ethics"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 6, id: 21706, name: "Advisory Skills & Financial Planning", categories: ["sgm5Skills"], size: 24, weightLabel: "6 of 50 test questions" },
+  ],
+  categoryLabels: {
+    sgm5Faa: "FAA & FAR: Advisers & Representatives",
+    sgm5Business: "Conduct of Business, MAS Powers & Offences",
+    sgm5Advice: "Recommendations on Investment Products (FAA-N16)",
+    sgm5Notices: "Balanced Scorecard & Other MAS Notices",
+    sgm5Aml: "AML/CFT (FAA-N06)",
+    sgm5Products: "ILPs, CIS, Market Conduct & CPF",
+    sgm5Ethics: "Ethics, Professionalism & Fair Dealing",
+    sgm5Skills: "Advisory Skills & Financial Planning",
+  },
+  copy: {
+    guestPrompt: "to save your RES5 progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Six sets covering both parts of the RES5 syllabus, rules and regulations and ethics and skills. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions at the real RES5 pace, 80% to pass",
+    heroSubs: [
+      "Six sets, four mock tests. FAA-N16 and the products chapters weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your RES5.",
+    ],
+    sourceLine: "Based on SCI's RES5 syllabus (which replaced CMFAS Module 5 in April 2024), the Financial Advisers Act and MAS notices as of November 2026. Original questions; 50 per test with the real 110:40 part mix, chapter split by Tigertest. Not affiliated with SCI, MAS or IBF.",
+    analyticsKey: "sgm5",
+  },
+};
+
+const sgvl: ExamConfig = {
+  id: "sgvl",
+  stateCode: "SGVL",
+  idBase: 21800,
+  slug: "/singapore-vocational-licence",
+  landingPath: "/singapore-vocational-licence-practice-test",
+  name: "Singapore Vocational Licence Practice Test",
+  shortName: "TDVL / PDVL",
+  examLabel: "TDVL / PDVL test",
+  fullName: "Singapore taxi and private hire car driver's vocational licence test (TDVL / PDVL)",
+  questionIdPrefix: "SGVL-",
+  icon: "car",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // LTA's vocational licence e-test for taxi (TDVL) and private hire car (PDVL) drivers, taken after
+  // the vocational licence course at an LTA-listed provider. Three papers: A on-the-road safety and
+  // passenger engagement, B rules and regulations, C routes and route planning. LTA and the providers
+  // publish no question count, time or pass mark, so 4 x 50 mixing the papers (A 21, B 24, C 5) and
+  // an 80% target are Tigertest's own. Rules from OneMotoring's VL pages, the VLPS Rules 2017
+  // (consolidated 30 Oct 2020) and LTA's PHC and point-to-point pages, checked November 2026.
+  blueprint: {
+    sgvlRoadSafety: 8,
+    sgvlPassenger: 8,
+    sgvlInclusive: 5,
+    sgvlLicensing: 6,
+    sgvlConduct: 8,
+    sgvlFares: 6,
+    sgvlStopping: 4,
+    sgvlRoutes: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 21801, name: "Road Safety & Stopping Rules", categories: ["sgvlRoadSafety", "sgvlStopping"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 2, id: 21802, name: "Passenger Engagement", categories: ["sgvlPassenger", "sgvlInclusive"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 3, id: 21803, name: "Licences & Demerit Points", categories: ["sgvlLicensing", "sgvlConduct"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 4, id: 21804, name: "Fares, Bookings & Routes", categories: ["sgvlFares", "sgvlRoutes"], size: 44, weightLabel: "11 of 50 test questions" },
+  ],
+  categoryLabels: {
+    sgvlRoadSafety: "On-the-Road Safety",
+    sgvlPassenger: "Passenger Engagement & Handling",
+    sgvlInclusive: "Passengers with Disabilities, Seniors & Children",
+    sgvlLicensing: "Vocational Licences & Renewal",
+    sgvlConduct: "Conduct Rules & Demerit Points (VLPS)",
+    sgvlFares: "Bookings, Decals & Fares",
+    sgvlStopping: "Pick-up, Set-down & Taxi Stands",
+    sgvlRoutes: "Routes & Route Planning",
+  },
+  copy: {
+    guestPrompt: "to save your TDVL / PDVL progress and track every question you miss",
+    trainingHeading: "Train by paper",
+    trainingSub: "Four sets covering the three papers: safety and passengers, rules and demerit points, fares, bookings and routes. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, 80% target",
+    heroSubs: [
+      "Three papers, four mock tests.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. You are ready for the e-test.",
+    ],
+    sourceLine: "Original practice questions from LTA's published vocational licence rules. Not affiliated with LTA; 50 per test, 80% is Tigertest's target (LTA publishes no count or pass mark).",
+    analyticsKey: "sgvl",
+  },
+};
+
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, nhie, cna, ptcb, phleb, ccma, cma, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, sfadmin, phr, cisa, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, bedriving, dkteori, setrafik, fitheory, grdriving, rodrpciv, hukresz, mttheory, detheorie, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, gulfrn, inrto, htl, cst, crcst];
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
 export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA, realestatePA, realestateIL, realestateOH, realestateGA, realestateNC, realestateMI, realestateVA, realestateWA, realestateAZ, realestateTN, realestateLA, insuranceNY, insurancePA, insuranceIL, insuranceOH, insuranceGA, insuranceNC, insuranceMI, insuranceNJ, insuranceVA, insuranceWA, pncNY, pncPA, pncIL, pncOH, pncGA, pncNC, pncMI, pncNJ, pncVA, pncWA];

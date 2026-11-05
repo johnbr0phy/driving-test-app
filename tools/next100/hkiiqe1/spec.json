@@ -1,0 +1,37 @@
+{
+  "id": "hkiiqe1",
+  "stateCode": "HKIIQE1",
+  "idBase": 18100,
+  "prefix": "HKIIQE1-",
+  "slug": "/iiqe-paper-1",
+  "landingPath": "/iiqe-paper-1-practice-test",
+  "dataFile": "data/hkiiqe1-questions.json",
+  "region": "HK",
+  "name": "IIQE Paper 1 Practice Test",
+  "shortName": "IIQE Paper 1",
+  "examLabel": "IIQE Paper 1",
+  "fullName": "IIQE Paper I: Principles and Practice of Insurance",
+  "icon": "umbrella",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 70,
+  "categories": [
+    {"key": "iiqeRisk", "label": "Risk and Insurance", "perTest": 6, "pool": 24, "segment": "RSK", "section": "Chapter 1 (12%)"},
+    {"key": "iiqeLaw", "label": "Contract and Agency Law", "perTest": 8, "pool": 32, "segment": "LAW", "section": "Chapter 2 (16%)"},
+    {"key": "iiqeGoodFaith", "label": "Insurable Interest and Utmost Good Faith", "perTest": 5, "pool": 20, "segment": "UGF", "section": "Chapter 3 (30%)"},
+    {"key": "iiqeIndemnity", "label": "Proximate Cause and Indemnity", "perTest": 5, "pool": 20, "segment": "IND", "section": "Chapter 3 (30%)"},
+    {"key": "iiqeContribution", "label": "Contribution and Subrogation", "perTest": 5, "pool": 20, "segment": "CON", "section": "Chapter 3 (30%)"},
+    {"key": "iiqeCompany", "label": "Core Functions of an Insurer", "perTest": 5, "pool": 20, "segment": "COF", "section": "Chapter 4 (9%)"},
+    {"key": "iiqeMarket", "label": "Hong Kong Insurance Market", "perTest": 2, "pool": 8, "segment": "MKT", "section": "Chapter 5 (5%)"},
+    {"key": "iiqeInsurers", "label": "Regulation of Insurers", "perTest": 5, "pool": 20, "segment": "REG", "section": "Chapter 6 (21%)"},
+    {"key": "iiqeIntermediaries", "label": "Licensing and Conduct of Intermediaries", "perTest": 6, "pool": 24, "segment": "LIC", "section": "Chapter 6 (21%)"},
+    {"key": "iiqeEthics", "label": "Ethics, Privacy, AML and Anti-Bribery", "perTest": 3, "pool": 12, "segment": "ETH", "section": "Chapter 7 (7%)"}
+  ],
+  "notes": "Real IIQE Paper I: 75 multiple-choice questions, 2 hours, 70% to pass, English and Chinese, pencil-and-paper or computer screen mode (PEAK handbook effective 1 September 2026); chapter weights 12/16/30/9/5/21/7 from the 2024 Study Notes. Mock tests of 50 at the same weights: 6/8/15/5/2/11/3. Pools exactly 4x per-test. Sets by chapter group (content sets), sets first then tests.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 18101, "name": "Risk, Contract & Agency", "categories": ["iiqeRisk", "iiqeLaw"], "size": 56},
+    {"setNumber": 2, "id": 18102, "name": "Principles of Insurance", "categories": ["iiqeGoodFaith", "iiqeIndemnity", "iiqeContribution"], "size": 60},
+    {"setNumber": 3, "id": 18103, "name": "Insurers & the Hong Kong Market", "categories": ["iiqeCompany", "iiqeMarket"], "size": 28},
+    {"setNumber": 4, "id": 18104, "name": "Regulation & Ethics", "categories": ["iiqeInsurers", "iiqeIntermediaries", "iiqeEthics"], "size": 56}
+  ]
+}

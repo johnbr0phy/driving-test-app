@@ -8,8 +8,6 @@ export type LayoutAgg = {
   startedTest: number;
   finishedTest: number;
   medianAnswers: number;
-  /** Build-time only; never in the payload. */
-  answers?: number[];
 };
 
 export type LayoutUsagePayload = {
@@ -23,4 +21,10 @@ export type LayoutUsagePayload = {
   cohort: Record<LayoutGroup, { before: LayoutAgg; after: LayoutAgg; exams: number }>;
   exams: (LayoutAgg & { id: string; name: string; group: LayoutGroup })[];
   updatedAt: string;
+};
+
+/** GET /api/admin/layout-usage: the last finished scan, and an unfinished one's progress. */
+export type LayoutUsageResponse = {
+  result: LayoutUsagePayload | null;
+  scanning: { accounts: number; startedAt: string } | null;
 };

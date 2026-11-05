@@ -1,0 +1,29 @@
+{
+  "id": "nzsfe",
+  "engine": "v1",
+  "stateCode": "NZSFE",
+  "idBase": 21500,
+  "prefix": "NZSFE-",
+  "slug": "/nz-nursing-state-final",
+  "landingPath": "/nursing-council-nz-state-final-exam-practice-test",
+  "dataFile": "data/nz-nursing-state-final-questions.json",
+  "name": "Nursing Council NZ State Final Exam Practice Test",
+  "shortName": "NZ State Final",
+  "examLabel": "State Final Examination",
+  "fullName": "Nursing Council of New Zealand State Final Examination (registered nurse)",
+  "icon": "stethoscope",
+  "passPct": 70,
+  "region": "NZ",
+  "categories": [
+    {"key": "nzsfeTiriti", "label": "Te Tiriti, Māori Health & Cultural Safety", "perTest": 5, "segment": "TIR"},
+    {"key": "nzsfeLaw", "label": "Law, Ethics & Professional Practice", "perTest": 6, "segment": "LAW"},
+    {"key": "nzsfeAssess", "label": "Assessment & Clinical Reasoning", "perTest": 6, "segment": "ASM"},
+    {"key": "nzsfeMeds", "label": "Medicines & Calculations", "perTest": 7, "segment": "MED"},
+    {"key": "nzsfeAcute", "label": "Acute & Medical-Surgical Care", "perTest": 9, "segment": "ACU"},
+    {"key": "nzsfeLongTerm", "label": "Long-term Conditions & Older Adults", "perTest": 5, "segment": "LTC"},
+    {"key": "nzsfeMental", "label": "Mental Health & Addiction", "perTest": 4, "segment": "MHA"},
+    {"key": "nzsfeChild", "label": "Child, Maternal & Whānau Health", "perTest": 4, "segment": "CHW"},
+    {"key": "nzsfeLead", "label": "Leadership, Safety & Communication", "perTest": 4, "segment": "LDS"}
+  ],
+  "trainingSets": "testSets(21500, 4)"
+}

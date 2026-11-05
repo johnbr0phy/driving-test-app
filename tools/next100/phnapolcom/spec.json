@@ -1,0 +1,36 @@
+{
+  "id": "phnapolcom",
+  "stateCode": "PHNAPOLCOM",
+  "idBase": 18900,
+  "prefix": "PHNAP-",
+  "slug": "/napolcom-exam",
+  "landingPath": "/napolcom-exam-reviewer-practice-test",
+  "dataFile": "data/philippines-napolcom-questions.json",
+  "name": "NAPOLCOM Exam Reviewer",
+  "shortName": "NAPOLCOM exam",
+  "examLabel": "PNP Entrance Exam",
+  "fullName": "NAPOLCOM PNP Entrance Examination (PNPE)",
+  "icon": "badge",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 70,
+  "categories": [
+    {"key": "phnapVocab", "label": "Verbal: Vocabulary", "perTest": 6, "pool": 24, "segment": "VOC"},
+    {"key": "phnapReading", "label": "Verbal: Paragraph Organization & Reading", "perTest": 5, "pool": 20, "segment": "RDG"},
+    {"key": "phnapGrammar", "label": "Verbal: Grammar & Correct Usage", "perTest": 5, "pool": 20, "segment": "GRM"},
+    {"key": "phnapNumber", "label": "Quantitative: Percentages, Fractions & Number Series", "perTest": 7, "pool": 28, "segment": "NUM"},
+    {"key": "phnapProblems", "label": "Quantitative: Problem Solving & Bar Graphs", "perTest": 6, "pool": 24, "segment": "PRB"},
+    {"key": "phnapLogic", "label": "Logical Reasoning", "perTest": 7, "pool": 28, "segment": "LOG"},
+    {"key": "phnapConstitution", "label": "Philippine Constitution & Criminal Justice", "perTest": 6, "pool": 24, "segment": "CON"},
+    {"key": "phnapPnpLaw", "label": "PNP Laws (R.A. 6975 & R.A. 8551)", "perTest": 5, "pool": 20, "segment": "PNP"},
+    {"key": "phnapValues", "label": "Values & Social Awareness", "perTest": 3, "pool": 12, "segment": "VAL"}
+  ],
+  "notes": "4 tests x 50 = 200, every item used once in tests (no spares). NAPOLCOM's announcement gives the four subject areas, 3 hours and multiple choice, but no item count, subject split or pass mark. Split is Tigertest's own: general information 14, verbal 16, quantitative 13, logical 7 per test. passPct 70 follows guides (unconfirmed by NAPOLCOM). Dashboard = 5 topic sets + 4 tests = 9 steps.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 18901, "name": "Vocabulary & Grammar", "categories": ["phnapVocab", "phnapGrammar"], "size": 44},
+    {"setNumber": 2, "id": 18902, "name": "Reading & Logical Reasoning", "categories": ["phnapReading", "phnapLogic"], "size": 48},
+    {"setNumber": 3, "id": 18903, "name": "Quantitative Reasoning", "categories": ["phnapNumber", "phnapProblems"], "size": 52},
+    {"setNumber": 4, "id": 18904, "name": "Constitution & Criminal Justice", "categories": ["phnapConstitution"], "size": 24},
+    {"setNumber": 5, "id": 18905, "name": "PNP Laws & Values", "categories": ["phnapPnpLaw", "phnapValues"], "size": 32}
+  ]
+}

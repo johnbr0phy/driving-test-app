@@ -1,0 +1,35 @@
+{
+  "id": "nzheavy",
+  "stateCode": "NZHEAVY",
+  "idBase": 21400,
+  "prefix": "NZHV-",
+  "slug": "/nz-heavy-vehicle-licence",
+  "landingPath": "/nz-class-2-licence-practice-test",
+  "dataFile": "data/nz-heavy-vehicle-licence-questions.json",
+  "name": "NZ Class 2 Licence Practice Test",
+  "shortName": "NZ Class 2 licence",
+  "examLabel": "Class 2 theory test",
+  "fullName": "New Zealand Class 2 heavy vehicle learner licence theory test",
+  "icon": "truck",
+  "region": "NZ",
+  "testCount": 5,
+  "questionsPerTest": 35,
+  "passPct": 94,
+  "categories": [
+    {"key": "nzhvLicence", "label": "Licences, Classes & Alcohol", "perTest": 4, "pool": 23, "segment": "LIC"},
+    {"key": "nzhvWork", "label": "Work Time & Logbooks", "perTest": 6, "pool": 34, "segment": "WRK"},
+    {"key": "nzhvMass", "label": "Mass, Dimensions & Loads", "perTest": 6, "pool": 34, "segment": "MAS"},
+    {"key": "nzhvBrakes", "label": "Air Brakes & Vehicle Checks", "perTest": 6, "pool": 34, "segment": "BRK"},
+    {"key": "nzhvRoad", "label": "Speed, Hills & Road Position", "perTest": 5, "pool": 29, "segment": "ROD"},
+    {"key": "nzhvSharing", "label": "Sharing the Road & Blind Spots", "perTest": 5, "pool": 29, "segment": "SHR"},
+    {"key": "nzhvSafety", "label": "Weather, Breakdowns & Emergencies", "perTest": 3, "pool": 17, "segment": "SAF"}
+  ],
+  "notes": "5 tests x 35 = 175 items in tests; pools are 5x per-test plus 25 training-only spares (3/4/4/4/4/4/2, the last items of each pool). passPct 94 gives ceil(0.94 x 35) = 33, the heavy vehicle learner test's reported 33 of 35 (Wikipedia, NZTA unreachable, 2026-11-05); not confirmed on an NZTA page.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 21401, "name": "Licences & Work Time", "categories": ["nzhvLicence", "nzhvWork"], "size": 57},
+    {"setNumber": 2, "id": 21402, "name": "Mass, Dimensions & Loads", "categories": ["nzhvMass"], "size": 34},
+    {"setNumber": 3, "id": 21403, "name": "Air Brakes & Vehicle Checks", "categories": ["nzhvBrakes"], "size": 34},
+    {"setNumber": 4, "id": 21404, "name": "Speed, Hills & Emergencies", "categories": ["nzhvRoad", "nzhvSafety"], "size": 46},
+    {"setNumber": 5, "id": 21405, "name": "Sharing the Road", "categories": ["nzhvSharing"], "size": 29}
+  ]
+}

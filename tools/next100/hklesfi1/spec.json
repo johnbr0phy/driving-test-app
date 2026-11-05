@@ -1,0 +1,38 @@
+{
+  "id": "hklesfi1",
+  "stateCode": "HKLE1",
+  "idBase": 18200,
+  "prefix": "HKLE1-",
+  "slug": "/le-paper-1",
+  "landingPath": "/le-paper-1-practice-test",
+  "dataFile": "data/hk-le-paper-1-questions.json",
+  "region": "HK",
+  "name": "LE Paper 1 Practice Test",
+  "shortName": "LE Paper 1",
+  "examLabel": "LE Paper 1",
+  "fullName": "Licensing Examination for Securities and Futures Intermediaries, Paper 1: Fundamentals of Securities and Futures Regulation",
+  "icon": "building",
+  "testCount": 3,
+  "questionsPerTest": 60,
+  "passPct": 70,
+  "categories": [
+    {"key": "hkle1Overview", "label": "Regulatory Overview of the Financial Industry", "perTest": 6, "pool": 20, "segment": "OVR", "section": "Syllabus Topic 1"},
+    {"key": "hkle1Law", "label": "Hong Kong Law & the Companies Ordinance", "perTest": 5, "pool": 16, "segment": "LAW", "section": "Syllabus Topic 2"},
+    {"key": "hkle1Sfo", "label": "Securities and Futures Ordinance", "perTest": 9, "pool": 30, "segment": "SFO", "section": "Syllabus Topic 3"},
+    {"key": "hkle1Licensing", "label": "Licensing & Subsidiary Legislation", "perTest": 9, "pool": 30, "segment": "LIC", "section": "Syllabus Topic 4"},
+    {"key": "hkle1Conduct", "label": "Business Conduct & Client Relations", "perTest": 9, "pool": 30, "segment": "CND", "section": "Syllabus Topic 5"},
+    {"key": "hkle1Operations", "label": "Business Operations, Internal Control & AML", "perTest": 8, "pool": 28, "segment": "OPS", "section": "Syllabus Topic 6"},
+    {"key": "hkle1Exchanges", "label": "Participating in the Hong Kong Exchanges", "perTest": 5, "pool": 16, "segment": "EXC", "section": "Syllabus Topic 7"},
+    {"key": "hkle1Capital", "label": "Accessing Public Capital", "perTest": 5, "pool": 16, "segment": "CAP", "section": "Syllabus Topic 8"},
+    {"key": "hkle1Misconduct", "label": "Market Misconduct & Improper Trading", "perTest": 4, "pool": 14, "segment": "MIS", "section": "Syllabus Topic 9"}
+  ],
+  "notes": "Real LE Paper 1: 60 MCQs, 90 minutes, 70% to pass (HKSI Institute), English or Traditional Chinese, computer based. HKSI publishes no per-topic weights, so the 6/5/9/9/9/8/5/5/4 split per test is Tigertest's. Three real-length 60-question tests (180) plus 20 training-only spares (the last items of each pool). Content sets first, then tests: 6 sets + 3 tests = 9 steps.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 18201, "name": "Regulatory Overview & Hong Kong Law", "categories": ["hkle1Overview", "hkle1Law"], "size": 36},
+    {"setNumber": 2, "id": 18202, "name": "The SFO & Market Misconduct", "categories": ["hkle1Sfo", "hkle1Misconduct"], "size": 44},
+    {"setNumber": 3, "id": 18203, "name": "Licensing, Client Assets & Records", "categories": ["hkle1Licensing"], "size": 30},
+    {"setNumber": 4, "id": 18204, "name": "Business Conduct & Client Relations", "categories": ["hkle1Conduct"], "size": 30},
+    {"setNumber": 5, "id": 18205, "name": "Internal Control, AML & Privacy", "categories": ["hkle1Operations"], "size": 28},
+    {"setNumber": 6, "id": 18206, "name": "Exchanges & Public Capital", "categories": ["hkle1Exchanges", "hkle1Capital"], "size": 32}
+  ]
+}

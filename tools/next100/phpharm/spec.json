@@ -1,0 +1,37 @@
+{
+  "id": "phpharm",
+  "stateCode": "PHPHARM",
+  "idBase": 19500,
+  "prefix": "PHRPH-",
+  "slug": "/pharmacist-board-exam",
+  "landingPath": "/pharmacist-board-exam-reviewer-practice-test",
+  "dataFile": "data/philippines-pharmacist-questions.json",
+  "name": "Pharmacist Board Exam Reviewer",
+  "shortName": "PhLE",
+  "examLabel": "PhLE",
+  "fullName": "Pharmacist Licensure Examination (PhLE), Philippines",
+  "icon": "pill",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 75,
+  "categories": [
+    {"key": "phpharmInorg", "label": "Inorganic & Qualitative Pharmaceutical Chemistry", "perTest": 5, "pool": 20, "segment": "INO"},
+    {"key": "phpharmOrgMed", "label": "Organic & Medicinal Chemistry", "perTest": 5, "pool": 20, "segment": "ORG"},
+    {"key": "phpharmCognosy", "label": "Pharmacognosy, Plant Chemistry & Biochemistry", "perTest": 8, "pool": 32, "segment": "COG"},
+    {"key": "phpharmPractice", "label": "Dispensing, Clinical & Hospital Pharmacy", "perTest": 6, "pool": 24, "segment": "PRA"},
+    {"key": "phpharmCalc", "label": "Pharmaceutical Calculations", "perTest": 3, "pool": 12, "segment": "CAL"},
+    {"key": "phpharmPharmacol", "label": "Pharmacology, Pharmacokinetics & Toxicology", "perTest": 7, "pool": 28, "segment": "PCL"},
+    {"key": "phpharmPharmaceutics", "label": "Pharmaceutics & Manufacturing Pharmacy", "perTest": 6, "pool": 24, "segment": "PCS"},
+    {"key": "phpharmLaw", "label": "Pharmacy Jurisprudence & Ethics", "perTest": 3, "pool": 12, "segment": "LAW"},
+    {"key": "phpharmQc", "label": "Quality Control, Microbiology & Public Health", "perTest": 7, "pool": 28, "segment": "QCM"}
+  ],
+  "notes": "Real PhLE: six subjects over two days, weights from the PRC Board of Pharmacy exam program (April 18-19, 2026): Pharmaceutical Chemistry 20%, Pharmacognosy/Biochemistry 15%, Practice of Pharmacy 17.5%, Pharmacology-Pharmacokinetics 15%, Pharmaceutics 17.5%, Quality Control/Quality Assurance 15%. Each 50-question test: chemistry 10 (5 inorganic and qualitative + 5 organic and medicinal), pharmacognosy 8, practice 9 (6 dispensing/clinical/hospital + 3 calculations), pharmacology 7, pharmaceutics 9 (6 dosage forms/physical/manufacturing + 3 jurisprudence and ethics), QC 7 = 20/16/18/14/18/14%. Pools exactly 4x per test.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 19501, "name": "Pharmaceutical Chemistry", "categories": ["phpharmInorg", "phpharmOrgMed"], "size": 40},
+    {"setNumber": 2, "id": 19502, "name": "Pharmacognosy & Biochemistry", "categories": ["phpharmCognosy"], "size": 32},
+    {"setNumber": 3, "id": 19503, "name": "Practice of Pharmacy & Calculations", "categories": ["phpharmPractice", "phpharmCalc"], "size": 36},
+    {"setNumber": 4, "id": 19504, "name": "Pharmacology & Toxicology", "categories": ["phpharmPharmacol"], "size": 28},
+    {"setNumber": 5, "id": 19505, "name": "Pharmaceutics & Jurisprudence", "categories": ["phpharmPharmaceutics", "phpharmLaw"], "size": 36},
+    {"setNumber": 6, "id": 19506, "name": "QC, Microbiology & Public Health", "categories": ["phpharmQc"], "size": 28}
+  ]
+}

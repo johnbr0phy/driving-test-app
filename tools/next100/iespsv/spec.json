@@ -1,0 +1,39 @@
+{
+  "id": "iespsv",
+  "stateCode": "IESPSV",
+  "idBase": 21000,
+  "prefix": "IESPSV-",
+  "slug": "/spsv-entry-test",
+  "landingPath": "/spsv-entry-test-practice-test",
+  "dataFile": "data/spsv-entry-test-questions.json",
+  "name": "SPSV Entry Test Practice",
+  "shortName": "SPSV Entry Test",
+  "examLabel": "SPSV Driver Entry Test",
+  "fullName": "SPSV Driver Entry Test, Industry Knowledge module (taxi, hackney and limousine, Ireland)",
+  "icon": "car",
+  "region": "IE",
+  "testCount": 3,
+  "questionsPerTest": 54,
+  "passPct": 75,
+  "categories": [
+    {"key": "spsvIndustry", "label": "The SPSV Industry & the NTA", "perTest": 4, "pool": 15, "segment": "IND", "manual": "Ch 1"},
+    {"key": "spsvDriverLicence", "label": "SPSV Driver Licensing", "perTest": 6, "pool": 22, "segment": "DRV", "manual": "Ch 2"},
+    {"key": "spsvVehicle", "label": "Vehicle Standards & Age Rules", "perTest": 5, "pool": 18, "segment": "VEH", "manual": "Ch 3, App A"},
+    {"key": "spsvVehicleLicence", "label": "Vehicle Licensing", "perTest": 5, "pool": 19, "segment": "VLC", "manual": "Ch 4"},
+    {"key": "spsvOperating", "label": "Working as an SPSV Operator", "perTest": 8, "pool": 30, "segment": "OPS", "manual": "Ch 5"},
+    {"key": "spsvRoutes", "label": "Finding Your Way Around", "perTest": 3, "pool": 11, "segment": "NAV", "manual": "Ch 6"},
+    {"key": "spsvFares", "label": "Fares, Receipts & Payment", "perTest": 5, "pool": 19, "segment": "FAR", "manual": "Ch 7"},
+    {"key": "spsvCustomer", "label": "Customer Service & Complaints", "perTest": 5, "pool": 18, "segment": "CUS", "manual": "Ch 8"},
+    {"key": "spsvAccessibility", "label": "Passengers with Disabilities", "perTest": 4, "pool": 15, "segment": "ACC", "manual": "Ch 8.5"},
+    {"key": "spsvBusiness", "label": "Running Your SPSV Business", "perTest": 3, "pool": 11, "segment": "BUS", "manual": "Ch 9"},
+    {"key": "spsvSafety", "label": "Staying Safe", "perTest": 6, "pool": 22, "segment": "SAF", "manual": "Ch 10"}
+  ],
+  "notes": "3 tests x 54 = 162 items in tests, like the real 54-question Industry Knowledge module at 75%. Pools are 3x per-test plus 2 to 6 training-only spares (the last items of each pool), 38 in all. Weights follow the Official Manual's chapters (the NTA publishes no per-chapter split).",
+  "trainingSets": [
+    {"setNumber": 1, "id": 21001, "name": "The Industry & Driver Licensing", "categories": ["spsvIndustry", "spsvDriverLicence"], "size": 37},
+    {"setNumber": 2, "id": 21002, "name": "Vehicles & Vehicle Licensing", "categories": ["spsvVehicle", "spsvVehicleLicence"], "size": 37},
+    {"setNumber": 3, "id": 21003, "name": "Operating Rules & Fares", "categories": ["spsvOperating", "spsvFares"], "size": 49},
+    {"setNumber": 4, "id": 21004, "name": "Customers & Accessibility", "categories": ["spsvCustomer", "spsvAccessibility"], "size": 33},
+    {"setNumber": 5, "id": 21005, "name": "Routes, Business & Safety", "categories": ["spsvRoutes", "spsvBusiness", "spsvSafety"], "size": 44}
+  ]
+}

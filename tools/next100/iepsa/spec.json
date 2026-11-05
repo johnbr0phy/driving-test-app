@@ -1,0 +1,35 @@
+{
+  "id": "iepsa",
+  "stateCode": "IEPSA",
+  "idBase": 21200,
+  "prefix": "IEPSA-",
+  "slug": "/psa-security-licence",
+  "landingPath": "/psa-security-guard-practice-test",
+  "dataFile": "data/ie-psa-security-questions.json",
+  "name": "PSA Security Guard Practice Test",
+  "shortName": "QQI Security Guarding",
+  "examLabel": "QQI Security Guarding exam",
+  "fullName": "QQI Level 4 Security Guarding Skills (4N20604) for the PSA security guard licence",
+  "icon": "badge",
+  "region": "IE",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 70,
+  "categories": [
+    {"key": "iepsaLaw", "label": "PSA Licensing & the Security Sector", "perTest": 6, "pool": 24, "segment": "LAW"},
+    {"key": "iepsaRole", "label": "Role, Conduct & Customer Care", "perTest": 6, "pool": 24, "segment": "ROL"},
+    {"key": "iepsaPowers", "label": "Arrest, Force, Search & Trespass", "perTest": 8, "pool": 32, "segment": "POW"},
+    {"key": "iepsaAccess", "label": "Access Control, Keys & Confidentiality", "perTest": 6, "pool": 24, "segment": "ACC"},
+    {"key": "iepsaPatrol", "label": "Patrols, Alarms & Radio", "perTest": 6, "pool": 24, "segment": "PAT"},
+    {"key": "iepsaReports", "label": "Reports, Evidence & Court", "perTest": 6, "pool": 24, "segment": "REP"},
+    {"key": "iepsaEmergency", "label": "Emergencies, Fire & First Response", "perTest": 6, "pool": 24, "segment": "EMG"},
+    {"key": "iepsaEvents", "label": "Events, Crowds & Retail Security", "perTest": 6, "pool": 24, "segment": "EVT"}
+  ],
+  "notes": "The PSA's Private Security (Licensing and Qualifications) Regulations 2022 (S.I. 574/2022, amended by S.I. 204/2024) set QQI Level 4 minor award 4N20604 Security Guarding Skills, or an equivalent, for the security guard (guarding) licence. QQI's component specification for 4N20604 sets a theory examination worth 50% and a skills demonstration worth 50%, both of which must be passed, graded Pass 50-64%, Merit 65-79%, Distinction 80-100%; the assessor (the training provider) writes the paper, so no question count or time is published. Tigertest models the theory examination: four 50-question mock tests with 70% as Tigertest's readiness target. Categories follow the award's two units (1 Private Security Sector, 2 Security Guarding Skills) and its learning outcomes; weights are Tigertest's. Content sets, so sets first, then tests.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 21201, "name": "The Sector, the PSA & Your Role", "categories": ["iepsaLaw", "iepsaRole"], "size": 48},
+    {"setNumber": 2, "id": 21202, "name": "The Law: Arrest, Force & Access Control", "categories": ["iepsaPowers", "iepsaAccess"], "size": 56},
+    {"setNumber": 3, "id": 21203, "name": "Patrols, Reports & Court", "categories": ["iepsaPatrol", "iepsaReports"], "size": 48},
+    {"setNumber": 4, "id": 21204, "name": "Emergencies, Events & Retail", "categories": ["iepsaEmergency", "iepsaEvents"], "size": 48}
+  ]
+}

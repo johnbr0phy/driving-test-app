@@ -197,6 +197,10 @@ const TEACHES: Record<string, string> = {
   pkpnmc: "a nursing college class",
   zapsira: "a PSIRA Grade E, D or C security officer course",
   punjabpolice: "a police test coaching class",
+  iesafepass: "a Safe Pass course or construction safety training",
+  iepsa: "a QQI Level 4 Security Guarding Skills course",
+  nzsfe: "a nursing school class",
+  sgvl: "the taxi or private hire car vocational licence course",
 };
 
 function question(examId: string): string {

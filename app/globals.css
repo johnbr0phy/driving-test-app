@@ -3014,6 +3014,146 @@
     --brand-gradient-to: 275 70% 96%;
   }
 
+  /* Safe Pass (Ireland) theme */
+  [data-theme="iesafepass"] {
+    --brand: 50 85% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 50 85% 95%;
+    --brand-hover: 50 85% 14%;
+    --brand-dark: 50 85% 13%;
+    --brand-darker: 50 80% 8%;
+    --brand-muted: 50 25% 68%;
+    --brand-border: 50 30% 78%;
+    --brand-border-light: 50 25% 88%;
+    --brand-gradient-to: 45 85% 95%;
+  }
+
+  /* Ireland SPSV Entry Test theme */
+  [data-theme="iespsv"] {
+    --brand: 262 85% 20%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 262 60% 96%;
+    --brand-hover: 262 85% 16%;
+    --brand-dark: 262 85% 14%;
+    --brand-darker: 262 80% 9%;
+    --brand-muted: 262 30% 70%;
+    --brand-border: 262 30% 80%;
+    --brand-border-light: 262 30% 89%;
+    --brand-gradient-to: 145 50% 95%;
+  }
+
+  /* QFA regulation (Ireland, MCC) theme */
+  [data-theme="ieqfa"] {
+    --brand: 165 40% 20%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 165 40% 96%;
+    --brand-hover: 165 40% 15%;
+    --brand-dark: 165 40% 14%;
+    --brand-darker: 165 35% 9%;
+    --brand-muted: 165 20% 70%;
+    --brand-border: 165 20% 80%;
+    --brand-border-light: 165 18% 89%;
+    --brand-gradient-to: 170 55% 96%;
+  }
+
+  /* PSA security guard, QQI Level 4 Security Guarding (Ireland) theme */
+  [data-theme="iepsa"] {
+    --brand: 245 30% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 245 30% 96%;
+    --brand-hover: 245 30% 17%;
+    --brand-dark: 245 30% 16%;
+    --brand-darker: 245 28% 10%;
+    --brand-muted: 245 15% 70%;
+    --brand-border: 245 15% 80%;
+    --brand-border-light: 245 14% 89%;
+    --brand-gradient-to: 250 40% 96%;
+  }
+
+  /* NZ motorcycle (class 6) learner licence theme */
+  [data-theme="nzmoto"] {
+    --brand: 12 85% 16%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 12 60% 95%;
+    --brand-hover: 12 85% 12%;
+    --brand-dark: 12 85% 11%;
+    --brand-darker: 12 75% 8%;
+    --brand-muted: 12 30% 70%;
+    --brand-border: 12 35% 78%;
+    --brand-border-light: 12 30% 88%;
+    --brand-gradient-to: 20 40% 95%;
+  }
+
+  /* New Zealand Class 2 heavy vehicle licence theory test theme */
+  [data-theme="nzheavy"] {
+    --brand: 80 40% 20%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 80 40% 95%;
+    --brand-hover: 80 40% 16%;
+    --brand-dark: 80 40% 15%;
+    --brand-darker: 80 40% 10%;
+    --brand-muted: 80 20% 68%;
+    --brand-border: 80 25% 78%;
+    --brand-border-light: 80 22% 88%;
+    --brand-gradient-to: 40 80% 95%;
+  }
+
+  /* Nursing Council of New Zealand State Final Examination theme */
+  [data-theme="nzsfe"] {
+    --brand: 305 30% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 305 25% 95%;
+    --brand-hover: 305 30% 18%;
+    --brand-dark: 305 30% 16%;
+    --brand-darker: 305 28% 11%;
+    --brand-muted: 305 15% 68%;
+    --brand-border: 305 15% 78%;
+    --brand-border-light: 305 12% 88%;
+    --brand-gradient-to: 320 25% 95%;
+  }
+
+  /* Singapore RTT theme */
+  [data-theme="sgrtt"] {
+    --brand: 105 60% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 105 40% 95%;
+    --brand-hover: 105 60% 18%;
+    --brand-dark: 105 60% 16%;
+    --brand-darker: 105 50% 11%;
+    --brand-muted: 105 20% 70%;
+    --brand-border: 105 25% 78%;
+    --brand-border-light: 105 20% 88%;
+    --brand-gradient-to: 120 30% 95%;
+  }
+
+  /* Singapore CMFAS RES5 (formerly M5) theme */
+  [data-theme="sgm5"] {
+    --brand: 195 60% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 195 60% 96%;
+    --brand-hover: 195 60% 14%;
+    --brand-dark: 195 60% 13%;
+    --brand-darker: 195 55% 8%;
+    --brand-muted: 195 25% 70%;
+    --brand-border: 195 25% 80%;
+    --brand-border-light: 195 22% 89%;
+    --brand-gradient-to: 200 60% 96%;
+  }
+
+  /* Singapore taxi and private hire vocational licence (TDVL / PDVL) theme */
+  [data-theme="sgvl"] {
+    --brand: 290 55% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 290 55% 96%;
+    --brand-hover: 290 55% 17%;
+    --brand-dark: 290 55% 16%;
+    --brand-darker: 290 50% 10%;
+    --brand-muted: 290 20% 70%;
+    --brand-border: 290 20% 80%;
+    --brand-border-light: 290 18% 89%;
+    --brand-gradient-to: 295 70% 96%;
+  }
+
   /* JEE Main theme: muted terracotta brown (v2 exam; matches lib/v2/exams/jeemain.ts theme) */
   [data-theme="jeemain"] {
     --brand: 18 30% 32%;
@@ -6438,6 +6578,126 @@
     --brand-muted: 270 20% 45%;
     --brand-dark: 270 55% 65%;
     --brand-darker: 270 50% 78%;
+  }
+
+  .dark [data-theme="iesafepass"] {
+    --brand: 50 85% 29%;
+    --brand-hover: 50 85% 21%;
+    --brand-light: 50 45% 13%;
+    --brand-gradient-to: 45 40% 11%;
+    --brand-border-light: 50 25% 24%;
+    --brand-border: 50 30% 34%;
+    --brand-muted: 50 25% 45%;
+    --brand-dark: 50 85% 65%;
+    --brand-darker: 50 80% 78%;
+  }
+
+  .dark [data-theme="iespsv"] {
+    --brand: 262 85% 50%;
+    --brand-hover: 262 85% 42%;
+    --brand-light: 262 45% 13%;
+    --brand-gradient-to: 145 40% 11%;
+    --brand-border-light: 262 30% 24%;
+    --brand-border: 262 30% 34%;
+    --brand-muted: 262 30% 45%;
+    --brand-dark: 262 85% 67%;
+    --brand-darker: 262 80% 78%;
+  }
+
+  .dark [data-theme="ieqfa"] {
+    --brand: 165 40% 36.2%;
+    --brand-hover: 165 40% 28.2%;
+    --brand-light: 165 40% 13%;
+    --brand-gradient-to: 170 40% 11%;
+    --brand-border-light: 165 18% 24%;
+    --brand-border: 165 20% 34%;
+    --brand-muted: 165 20% 45%;
+    --brand-dark: 165 40% 65%;
+    --brand-darker: 165 35% 78%;
+  }
+
+  .dark [data-theme="iepsa"] {
+    --brand: 245 30% 50%;
+    --brand-hover: 245 30% 42%;
+    --brand-light: 245 30% 13%;
+    --brand-gradient-to: 250 40% 11%;
+    --brand-border-light: 245 14% 24%;
+    --brand-border: 245 15% 34%;
+    --brand-muted: 245 15% 45%;
+    --brand-dark: 245 30% 65%;
+    --brand-darker: 245 28% 78%;
+  }
+
+  .dark [data-theme="nzmoto"] {
+    --brand: 12 85% 46%;
+    --brand-hover: 12 85% 38%;
+    --brand-light: 12 45% 13%;
+    --brand-gradient-to: 20 40% 11%;
+    --brand-border-light: 12 30% 24%;
+    --brand-border: 12 35% 34%;
+    --brand-muted: 12 30% 45%;
+    --brand-dark: 12 85% 65%;
+    --brand-darker: 12 75% 78%;
+  }
+
+  .dark [data-theme="nzheavy"] {
+    --brand: 80 40% 35.1%;
+    --brand-hover: 80 40% 27.1%;
+    --brand-light: 80 40% 13%;
+    --brand-gradient-to: 40 40% 11%;
+    --brand-border-light: 80 22% 24%;
+    --brand-border: 80 25% 34%;
+    --brand-muted: 80 20% 45%;
+    --brand-dark: 80 40% 65%;
+    --brand-darker: 80 40% 78%;
+  }
+
+  .dark [data-theme="nzsfe"] {
+    --brand: 305 30% 50%;
+    --brand-hover: 305 30% 42%;
+    --brand-light: 305 25% 13%;
+    --brand-gradient-to: 320 25% 11%;
+    --brand-border-light: 305 12% 24%;
+    --brand-border: 305 15% 34%;
+    --brand-muted: 305 15% 45%;
+    --brand-dark: 305 30% 65%;
+    --brand-darker: 305 28% 78%;
+  }
+
+  .dark [data-theme="sgrtt"] {
+    --brand: 105 60% 32.6%;
+    --brand-hover: 105 60% 24.6%;
+    --brand-light: 105 40% 13%;
+    --brand-gradient-to: 120 30% 11%;
+    --brand-border-light: 105 20% 24%;
+    --brand-border: 105 25% 34%;
+    --brand-muted: 105 20% 45%;
+    --brand-dark: 105 60% 65%;
+    --brand-darker: 105 50% 78%;
+  }
+
+  .dark [data-theme="sgm5"] {
+    --brand: 195 60% 38.1%;
+    --brand-hover: 195 60% 30.1%;
+    --brand-light: 195 45% 13%;
+    --brand-gradient-to: 200 40% 11%;
+    --brand-border-light: 195 22% 24%;
+    --brand-border: 195 25% 34%;
+    --brand-muted: 195 25% 45%;
+    --brand-dark: 195 60% 65%;
+    --brand-darker: 195 55% 78%;
+  }
+
+  .dark [data-theme="sgvl"] {
+    --brand: 290 55% 50%;
+    --brand-hover: 290 55% 42%;
+    --brand-light: 290 45% 13%;
+    --brand-gradient-to: 295 40% 11%;
+    --brand-border-light: 290 18% 24%;
+    --brand-border: 290 20% 34%;
+    --brand-muted: 290 20% 45%;
+    --brand-dark: 290 55% 65%;
+    --brand-darker: 290 50% 78%;
   }
 
   .dark [data-theme="jeemain"] {

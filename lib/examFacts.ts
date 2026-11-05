@@ -3221,6 +3221,155 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Private Security Industry Regulation Act 56 of 2001, ss. 20 and 23 (Government Gazette 23051), checked November 2026; assessment format not confirmed",
     source: { name: "South African Government: Private Security Industry Regulation Act", url: "https://www.gov.za/documents/private-security-industry-regulation-act" },
   },
+  iesafepass: {
+    answer:
+      "Safe Pass is a one-day construction health and safety awareness programme run by SOLAS. Under the Construction Regulations 2013, craft and general construction workers, apprentices and people doing on-site security work in Ireland must hold a valid Safe Pass card. The course is given by SOLAS-approved tutors and ends with a multiple-choice assessment that the tutor reads aloud; SOLAS does not publish its length or pass mark. Cards are valid for four years. To renew, you repeat the course or take the alternative renewal test on a computer at a Pearson test centre: 50 multiple-choice questions in 45 minutes, with 45 correct needed to pass.",
+    rows: [
+      { label: "Course", value: "One day, with a SOLAS-approved tutor" },
+      { label: "Course assessment", value: "Multiple choice, read aloud by the tutor; length and pass mark not published" },
+      { label: "Renewal test", value: "50 questions in 45 minutes at a Pearson centre" },
+      { label: "Renewal pass mark", value: "45 of 50 (90%)" },
+      { label: "Card", value: "Valid four years" },
+      { label: "Minimum age", value: "16 on the day of the course" },
+      { label: "Run by", value: "SOLAS" },
+    ],
+    basedOn: "SOLAS Safe Pass and constructioncourses.ie Safe Pass information pages, and the Construction Regulations 2013, checked November 2026",
+    source: { name: "SOLAS: Safe Pass", url: "https://www.solas.ie/construction-lp/safe-pass" },
+  },
+  iespsv: {
+    answer:
+      "The SPSV Driver Entry Test is the National Transport Authority's computer test that everyone must pass before applying to An Garda Síochána for a licence to drive a taxi, hackney or limousine in Ireland (not needed for a local area hackney driver licence). It has two modules: Industry Knowledge, 54 multiple-choice questions on SPSV regulations and good practice from the NTA's Official Manual, and Area Knowledge, 36 questions on the county you want to work in. You need 75 percent in each module, and if you fail one you retake only that module, within 12 months.",
+    rows: [
+      { label: "Questions", value: "90: Industry Knowledge 54, Area Knowledge 36" },
+      { label: "Time", value: "54 minutes and 36 minutes" },
+      { label: "Pass mark", value: "75% in each module" },
+      { label: "Format", value: "Multiple choice on a computer; a few ask for two answers" },
+      { label: "Where", value: "Five NTA test locations around Ireland" },
+      { label: "Study material", value: "NTA Official Manual for Operating in the SPSV Industry" },
+      { label: "Pass one module", value: "Retake only the other, within 12 months" },
+      { label: "Needed for", value: "An SPSV driver licence from An Garda Síochána" },
+    ],
+    basedOn: "the NTA's SPSV driver entry test page and the Official Manual for Operating in the SPSV Industry, Edition 8.1 (September 2026), checked November 2026",
+    source: { name: "NTA: The SPSV driver entry test", url: "https://www.nationaltransport.ie/taxi/driver-licensing/applying-for-an-spsv-driver-licence/the-spsv-driver-entry-test/" },
+  },
+  ieqfa: {
+    answer:
+      "The Qualified Financial Adviser (QFA) designation is a professional qualification recognised by the Central Bank of Ireland under its Minimum Competency Code, which sets the minimum knowledge anyone must have to advise consumers on, or arrange, retail financial products in Ireland. The LIA's QFA programme has six modules: Regulation, Life Assurance, Investment, Loans, Pensions and a Financial Advice capstone. The LIA says most modules, Regulation included, are a 2-hour online multiple-choice exam of 100 questions, held with remote invigilation in January, May and September; the capstone is 2.5 hours and three case study questions. The pass mark is not published on the LIA's exam pages.",
+    rows: [
+      { label: "Questions", value: "100 multiple choice (QFA Regulation, LIA)" },
+      { label: "Time", value: "2 hours" },
+      { label: "Pass mark", value: "Not published; 70% is Tigertest's target" },
+      { label: "Format", value: "Online, remotely invigilated" },
+      { label: "Sittings", value: "January, May and September" },
+      { label: "Modules", value: "Regulation, Life Assurance, Investment, Loans, Pensions, Financial Advice" },
+      { label: "Standard set by", value: "Central Bank of Ireland, Minimum Competency Code 2017" },
+    ],
+    basedOn: "LIA QFA programme and exam pages, and the Central Bank's consolidated Minimum Competency Code (June 2026) and Consumer Protection Code 2025, checked November 2026; pass mark not published",
+    source: { name: "LIA: QFA, Certificate in Professional Financial Advice", url: "https://www.lia.ie/courses/certificate-in-professional-financial-advice" },
+  },
+  iepsa: {
+    answer:
+      "In Ireland, a security guard must hold a licence from the Private Security Authority (PSA) under the Private Security Services Act 2004, and the PSA must refuse anyone under 18 or not a fit and proper person. Since 1 November 2022 the Private Security (Licensing and Qualifications) Regulations require QQI Level 4 minor award 4N20604 Security Guarding Skills, or an equivalent, for a security guard (guarding) licence. QQI's specification assesses it by a theory examination worth 50% and a skills demonstration worth 50%, both of which must be passed; the training provider writes the exam paper, so no official question count or time is published. The award is graded Pass 50 to 64%, Merit 65 to 79% and Distinction 80 to 100%. 70% is Tigertest's target for these mock tests.",
+    rows: [
+      { label: "Qualification", value: "QQI Level 4 minor award 4N20604 Security Guarding Skills (10 credits)" },
+      { label: "Assessment", value: "Theory examination 50% and skills demonstration 50%; pass both" },
+      { label: "Questions", value: "Set by the training provider; not published" },
+      { label: "Grades", value: "Pass 50-64%, Merit 65-79%, Distinction 80-100% (70% is Tigertest's target)" },
+      { label: "Licence", value: "PSA security guard (guarding) licence" },
+      { label: "Minimum age", value: "18" },
+      { label: "Run by", value: "QQI-validated training providers; licensing by the PSA" },
+    ],
+    basedOn: "QQI component specification 4N20604 and S.I. 574/2022 as amended by S.I. 204/2024, checked November 2026",
+    source: { name: "QQI: Security Guarding Skills 4N20604", url: "https://qsearch.qqi.ie/WebPart/AwardDetails?awardCode=4N20604" },
+  },
+  nzmoto: {
+    answer:
+      "The Class 6 learner licence is the first step to riding a motorcycle in New Zealand. You must be at least 16 and pass a basic handling skills test with an approved motorcycle instructor, then a computer-based multi-choice theory test on the road rules for motorcyclists at a driver licensing agent. Published guidance gives it the same format as the car learner test, 35 questions with at least 32 right to pass (drive.govt.nz gives 30 minutes for that test). On a learner licence you ride with no passenger, show an L plate on the rear, stay off the road between 10 pm and 5 am, do not tow, and ride only a LAMS-approved motorcycle.",
+    rows: [
+      { label: "Questions", value: "35 multi-choice (as the car learner test)" },
+      { label: "Pass mark", value: "32 of 35" },
+      { label: "Minimum age", value: "16" },
+      { label: "First", value: "Basic handling skills test with an instructor" },
+      { label: "Learner conditions", value: "No pillion, rear L plate, no riding 10 pm to 5 am, LAMS bike" },
+      { label: "Run by", value: "NZTA Waka Kotahi, at licensing agents" },
+    ],
+    basedOn: "drive.govt.nz learner test page, ACC Ride Forever licensing and LAMS pages, and Wikipedia's summary of NZ licensing, checked November 2026 (NZTA's motorcycle pages could not be read)",
+    source: { name: "drive.govt.nz: Doing the learner licence test", url: "https://drive.govt.nz/learner-licence/doing-the-learner-licence-test" },
+  },
+  nzheavy: {
+    answer:
+      "The Class 2 theory test is the computer test you pass in New Zealand to get a learner licence for a medium rigid truck: a rigid vehicle over 6,000 kg and up to 18,000 kg gross laden weight or a combination up to 12,000 kg. You need a full Class 1 licence first. It covers the heavy vehicle Road Code, including work time and logbook rules. Tigertest's practice tests are 35 questions with 33 to pass, the pass mark reported for the heavy learner test; check the official count and pass mark with NZTA.",
+    rows: [
+      { label: "Licence", value: "Class 2 learner licence (medium rigid vehicles)" },
+      { label: "You need first", value: "A full Class 1 (car) licence" },
+      { label: "Vehicles covered", value: "Rigid over 6,000 kg up to 18,000 kg GLW; combinations up to 12,000 kg" },
+      { label: "Practice target", value: "33 of 35 (reported; check with NZTA)" },
+      { label: "Work time", value: "5.5 h then 30 min break; 13 h a work day; 70 h then 24 h off" },
+      { label: "Run by", value: "NZTA Waka Kotahi" },
+    ],
+    basedOn: "New Zealand heavy vehicle rules as in force November 2026; NZTA's test page could not be read",
+    source: { name: "NZTA Waka Kotahi heavy vehicle licences", url: "https://www.nzta.govt.nz/driver-licences/getting-a-licence/" },
+  },
+  nzsfe: {
+    answer:
+      "The State Final Examination is the examination the Nursing Council of New Zealand (Te Kaunihera Tapuhi o Aotearoa) sets for graduates of approved nursing programmes before it registers them as registered or enrolled nurses. A New Zealand graduate applying for registration as a registered nurse supplies their State Final Examination results, support from the head of their school of nursing and two referees, and the Council registers successful applicants as soon as practicable after they pass. The Council's public website does not set out the number of questions, time or pass standard; candidates should ask their school of nursing or the Council for the current exam details.",
+    rows: [
+      { label: "Run by", value: "Nursing Council of New Zealand (Te Kaunihera Tapuhi o Aotearoa)" },
+      { label: "Who sits it", value: "Graduates of approved NZ nursing programmes, before registration" },
+      { label: "Standards", value: "Standards of competence for registered nurses 2025 (six pou), in force for all purposes from 1 January 2026" },
+      { label: "Questions and time", value: "Not published on the Council's website; ask your school of nursing" },
+      { label: "Pass standard", value: "Not published on the Council's website" },
+      { label: "After passing", value: "Registration, then an annual practising certificate" },
+    ],
+    basedOn: "Nursing Council of New Zealand: Register as a nurse, Registered nurse scope of practice (January 2025) and Standards of competence for registered nurses (2025), checked November 2026",
+    source: { name: "Nursing Council of New Zealand: Register as a nurse", url: "https://www.nursingcouncil.org.nz/Public/NCNZ/nursing-section/Register_as_a_nurse.aspx" },
+  },
+  sgrtt: {
+    answer:
+      "The Riding Theory Test (RTT) is the second theory test for a class 2B motorcycle licence in Singapore, taken after the Basic Theory Test and before the Practical Riding Test. The Traffic Police say it tests riding safety, proper riding techniques and your interaction with other road users, based on their Riding Theory Booklet. After passing it you must pass the Practical Riding Test within one year, or take the RTT again. The Traffic Police do not publish the question count or pass mark; Tigertest's mock tests use 50 questions with a target of 45, the format guides quote for the BTT and FTT.",
+    rows: [
+      { label: "Questions", value: "Not published (Tigertest mocks: 50)" },
+      { label: "Pass mark", value: "Not published (Tigertest target: 45 of 50)" },
+      { label: "Licence", value: "Class 2B (below 200 cc, or below 15 kW electric)" },
+      { label: "Before it", value: "Basic Theory Test" },
+      { label: "Next step", value: "Practical Riding Test, within one year" },
+      { label: "Study material", value: "Riding Theory Booklet (2 Jan 2026)" },
+      { label: "Practice sets", value: "English, Malay, Mandarin, Tamil (Traffic Police)" },
+      { label: "Run by", value: "Traffic Police; booked through your driving centre" },
+    ],
+    basedOn: "Traffic Police Riding Theory Booklet, Official Handbook (published online 2.1.2026), the Online Learning Portal and the Practise Driving and Riding Theory Test page, checked November 2026",
+    source: { name: "Singapore Police Force: Online Learning Portal", url: "https://www.police.gov.sg/Knowledge-Hub/Traffic/Traffic-Matters/Online-Learning-Portal" },
+  },
+  sgm5: {
+    answer:
+      "RES5, Rules, Ethics and Skills for Financial Advisory Services, is the CMFAS module set by the Singapore College of Insurance (SCI) that representatives of financial advisers in Singapore need under MAS Notice FAA-N26. It replaced CMFAS Module 5 (M5) when that notice took effect on 1 April 2024, and a valid M5 pass counts as a RES5 pass. The paper is 150 multiple-choice questions in 3 hours: 110 in Part I on rules and regulations, which needs 75%, and 40 in Part II on ethics and skills, which needs 80%. It is a closed-book computer screen examination in English at SCI, with no marks deducted for wrong answers.",
+    rows: [
+      { label: "Questions", value: "150 multiple choice (Part I 110, Part II 40)" },
+      { label: "Time", value: "3 hours" },
+      { label: "Pass mark", value: "75% in Part I and 80% in Part II" },
+      { label: "Marking", value: "1 mark each, no deduction for wrong answers" },
+      { label: "Format", value: "Closed-book computer screen exam at SCI, in English" },
+      { label: "Replaces", value: "CMFAS Module 5 (M5), from 1 April 2024" },
+      { label: "Run by", value: "Singapore College of Insurance, under MAS Notice FAA-N26" },
+    ],
+    basedOn: "SCI's RES5 exam page and MAS Notice FAA-N26, checked November 2026",
+    source: { name: "Singapore College of Insurance: RES5 exam details", url: "https://www.scicollege.org.sg/Exam/ExamDetails/RES5" },
+  },
+  sgvl: {
+    answer:
+      "In Singapore, anyone who drives a taxi or private hire car for hire needs a vocational licence from the Land Transport Authority (LTA): a Taxi Driver's Vocational Licence (TDVL), which covers taxis and private hire cars, or a Private Hire Car Driver's Vocational Licence (PDVL), which covers private hire cars only. Applicants must be Singapore Citizens aged at least 30 who have held a class 3 or 3A licence for more than a year. After LTA approves the application they attend the vocational licence course at an LTA-listed provider and sit an e-test at an LTA-appointed test centre: three papers on road safety and passenger engagement, rules and regulations, and routes. LTA does not publish the question count or pass mark. The licence is valid for three years.",
+    rows: [
+      { label: "Papers", value: "A: road safety and passengers; B: rules and regulations; C: routes" },
+      { label: "Questions", value: "Not published" },
+      { label: "Pass mark", value: "Not published; 80% is Tigertest's target" },
+      { label: "Format", value: "E-test at an LTA-appointed test centre" },
+      { label: "Before the test", value: "Vocational licence course (TDVL course 16 hours)" },
+      { label: "Licence", value: "Valid three years; refresher course every six years" },
+      { label: "Run by", value: "LTA (Land Transport Authority), Singapore" },
+    ],
+    basedOn: "LTA's OneMotoring vocational licence application and renewal pages and the course providers' published paper outlines, checked November 2026",
+    source: { name: "OneMotoring (LTA): Vocational Licence Application", url: "https://onemotoring.lta.gov.sg/content/onemotoring/home/driving/vocational_licence/vocational_licence_application.html" },
+  },
   jeemain: {
     answer:
       "JEE (Main) Paper 1 is the National Testing Agency's computer-based entrance test for B.E. and B.Tech. admission to NITs, IIITs and other centrally funded institutes, and the qualifying test for JEE (Advanced). It has 75 questions for 300 marks in 3 hours: 25 each in Mathematics, Physics and Chemistry, of which 20 are multiple choice (Section A) and 5 need a numerical value typed as an integer (Section B). Every answer earns 4 marks if correct and loses 1 if wrong, in both sections. For 2027 it is held in two sessions, January and April, and the better NTA score counts.",

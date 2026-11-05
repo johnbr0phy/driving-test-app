@@ -525,3 +525,115 @@ Notes for every international batch 3 builder:
 - Never name a commercial prep provider or academy; say "not affiliated with" the PPSC, Punjab
   Police, the Pakistan Army, PAF, PMDC, PNMC, the FSCA, SAPS, PSIRA or the RTMC on the landing.
 - British spelling for both countries (licence, centre), rupees (Rs) and rand (R).
+
+## International batch 4: Ireland, New Zealand and Singapore licences and driving tests (Nov 2026)
+
+Same rules as batches A to C and international batches 1 to 3 (read them). All v1. Branch
+`intl-batch-1` (international batches 1 to 3 are wired there: grep their banks for duplicates). Goal:
+take Ireland (region IE, which has `iedtt` and `iedttcv`), New Zealand (region NZ: `nzroad`,
+`nzfirearms`, `nzlcq`) and Singapore (region SG: `sgbtt`, `sgftt`, `sgres`) towards 20 tests with the
+English-language tests adults pay for or sit at the end of a course. Ireland takes the queued Safe Pass
+(QUEUE.md #98) plus the SPSV entry test, the QFA/MCC regulation exam and the PSA security guard award;
+New Zealand the Class 6 motorcycle and Class 2 heavy vehicle theory tests and the Nursing Council State
+Final Examination; Singapore the Riding Theory Test, CMFAS Module 5 and the taxi and private hire
+vocational licence test. Templates: iesafepass copies `tools/next100/aesira` (non-US workplace
+licence, its `WIRING.md` shape) with `tools/intl/cscs` for the construction safety content shape;
+iespsv and sgvl copy `tools/next30/ukseru` (taxi and private hire driver knowledge, non-driving);
+ieqfa copies `tools/next100/llqp` (non-US financial regulation); iepsa copies `tools/next100/zapsira`
+(security officer, non-US law); nzmoto copies `tools/next30/nzroad`; nzheavy copies
+`tools/next100/iedttcv` (heavy vehicle theory) with `tools/next30/nzroad` for NZ rules; nzsfe copies
+`tools/next100/kenck` (non-US nursing licensure); sgrtt copies `tools/countries/sgbtt` (and
+`tools/next100/sgftt`); sgm5 copies `tools/next100/hklesfi1` (Asian securities and advisory
+regulation). Every exam has a non-US region, so `WIRING.md` needs its TEST_REGIONS line (`<id>: "IE"`,
+`"NZ"` or `"SG"`), its `NON_DRIVING_TESTS` line unless it is nzmoto, nzheavy or sgrtt, and a hub group.
+nzmoto and nzheavy join the existing "New Zealand driving tests" group and sgrtt "Singapore driving
+tests"; nzsfe joins the existing "New Zealand licences" and sgm5 and sgvl "Singapore licensing exams";
+Ireland's four go in a new group, "Ireland licences and workplace certificates", placed after "Ireland
+driving tests". Say the group in WIRING.md. iesafepass, iepsa, nzsfe and sgvl are teacher-led (SOLAS
+Safe Pass trainers, QQI security course providers, nursing schools, the vocational licence course
+providers): add them to `TEACHER_LED`.
+
+| id | Test | Region | idBase | stateCode | prefix | slug | landing | hue |
+|---|---|---|---|---|---|---|---|---|
+| iesafepass | Safe Pass, SOLAS construction health and safety awareness (Ireland) | IE | 20900 | IESAFEPASS | IESP- | /safe-pass | /safe-pass-practice-test | 50 85% 18% |
+| iespsv | SPSV Entry Test, industry knowledge (taxi, hackney and limousine, Ireland) | IE | 21000 | IESPSV | IESPSV- | /spsv-entry-test | /spsv-entry-test-practice-test | 262 85% 20% |
+| ieqfa | QFA / Minimum Competency Code exam: regulation, ethics and core products (Ireland) | IE | 21100 | IEQFA | IEQFA- | /qfa-mcc | /qfa-mcc-practice-test | 165 40% 20% |
+| iepsa | QQI Level 4 Security Guarding for the PSA licence (Ireland) | IE | 21200 | IEPSA | IEPSA- | /psa-security-licence | /psa-security-guard-practice-test | 245 30% 22% |
+| nzmoto | New Zealand Class 6 motorcycle learner licence theory test | NZ | 21300 | NZMOTO | NZMOTO- | /nz-motorcycle-learner | /nz-motorcycle-learner-licence-practice-test | 12 85% 16% |
+| nzheavy | New Zealand Class 2 heavy vehicle licence theory test | NZ | 21400 | NZHEAVY | NZHV- | /nz-heavy-vehicle-licence | /nz-class-2-licence-practice-test | 80 40% 20% |
+| nzsfe | Nursing Council of New Zealand State Final Examination (registered nurse) | NZ | 21500 | NZSFE | NZSFE- | /nz-nursing-state-final | /nursing-council-nz-state-final-exam-practice-test | 305 30% 22% |
+| sgrtt | Singapore Riding Theory Test (RTT), class 2B motorcycle | SG | 21600 | SGRTT | SGRTT- | /singapore-rtt | /singapore-rtt-practice-test | 105 60% 22% |
+| sgm5 | CMFAS Module 5, Rules and Regulations for Financial Advisory Services (Singapore) | SG | 21700 | SGM5 | SGM5- | /cmfas-m5 | /cmfas-m5-practice-test | 195 60% 18% |
+| sgvl | Singapore taxi and private hire vocational licence test (TDVL / PDVL) | SG | 21800 | SGVL | SGVL- | /singapore-vocational-licence | /singapore-vocational-licence-practice-test | 290 55% 22% |
+
+Notes for every international batch 4 builder:
+- Hues above were checked with a script against every `[data-theme]` `--brand` in `app/globals.css`
+  and every hue in this file not yet wired (white-text contrast 4.5:1 or better; nothing within 8
+  degrees unless saturation differs by 15 or lightness by 8); use as given. idBases 20900 to 21800
+  are free in `lib/exams.ts` and `lib/v2`; slugs, landings, stateCodes and prefixes are free.
+- Formats: confirm each with the body that sets it, and where a figure cannot be confirmed use a
+  Tigertest target and say so in sources.md, the landing and examFacts, as `zak53` does. iesafepass:
+  SOLAS Safe Pass (blended course since 2021; SOLAS sets the assessment and does not publish it, so the
+  count and pass mark are a Tigertest target). iespsv: the NTA's SPSV Entry Test, Industry Knowledge
+  module only (confirm count, time and pass mark on nationaltransport.ie); the county Area Knowledge
+  module is not modelled and the landing says so. ieqfa: one MCC-recognised module, regulation and
+  consumer protection with core product concepts (confirm which module and its format with the
+  Institute of Bankers or the LIA; the Central Bank's Minimum Competency Code 2017 and the Consumer
+  Protection Code as revised in 2025 set the content). iepsa: the QQI Level 4 Guarding Skills and
+  Security Industry Awareness components (confirm award codes on qqi.ie; providers set the papers, so
+  the pass mark is a Tigertest target). nzmoto and nzheavy: NZTA Waka Kotahi theory tests (the car
+  learner test is 35 questions, 32 to pass, as `nzroad` models; confirm each test's own count and pass
+  mark). nzsfe: confirm the State Final Examination's count, time and pass standard on
+  nursingcouncil.org.nz (the Council has been revising its registration standards; use the current
+  ones). sgrtt: Traffic Police RTT (guides report 50 questions, 45 to pass, as BTT; confirm). sgm5:
+  confirm the current count, time and pass mark with the Singapore College of Insurance or IBF (the
+  study guide is copyrighted: write original items from the Financial Advisers Act and MAS notices,
+  never from the guide). sgvl: confirm with LTA and the vocational licence course providers.
+- Law and practice, current as of Nov 2026, no fees, fines, fares or indexed figures:
+  iesafepass the Safety, Health and Welfare at Work Act 2005, the Construction Regulations 2013 and
+  HSA codes of practice; iespsv the Taxi Regulation Act 2013 and NTA SPSV regulations (vehicle and
+  driver licences, the maximum fare structure as a concept, accessibility, passenger conduct, lost
+  property, the complaints process); ieqfa the Central Bank Acts, MCC 2017, Fitness and Probity, the
+  Consumer Protection Code, the Criminal Justice (Money Laundering and Terrorist Financing) Act 2010 as
+  amended, GDPR, the FSPO; iepsa the Private Security Services Act 2004, arrest without warrant under
+  section 4 of the Criminal Law Act 1997 stated as the law reads, reasonable force, PSA licensing,
+  access control, patrols, incident reports; nzmoto and nzheavy the Official New Zealand Road Code
+  for motorcyclists and for heavy vehicle drivers (nzheavy: work time and logbook rules, loads,
+  braking, mass and dimension concepts, sharing the road; no RUC rates); nzsfe the Health Practitioners
+  Competence Assurance Act 2003, the HDC Code of Rights, the Council's competencies including Te Tiriti
+  o Waitangi, the Medicines Act 1981 and Misuse of Drugs Act 1975, NZ generic drug names and units;
+  sgrtt the Road Traffic Act and Rules and the Traffic Police riding handbook (class 2B, 2A and 2
+  progression stated without dates that change); sgm5 the Financial Advisers Act 2001, its
+  Regulations, MAS notices and guidelines on fair dealing, the Balanced Scorecard framework,
+  representative notification under the RNF; sgvl the Point-to-Point Passenger Transport Industry
+  Act 2019, LTA vocational licence conduct rules, passenger safety and accessibility.
+- Lanes and duplicates: iesafepass vs `data/cscs-questions.json`, `data/white-card-questions.json`,
+  `data/osha-questions.json` and `data/working-at-heights-questions.json` (Irish law and HSA guidance;
+  no repeated stems); iespsv vs `data/seru-questions.json`, `data/ireland-driver-theory-questions.json`
+  and sgvl (write iespsv and sgvl side by side; each country's own law); ieqfa vs
+  `data/llqp-questions.json`, `data/cemap-questions.json`, `data/life-health-questions.json`,
+  `data/re5-questions.json`, `data/malaysia-pce-questions.json`, `data/philippines-insurance-questions.json`
+  and `data/hkiiqe1-questions.json`; iepsa vs `data/sia-door-supervisor-questions.json`,
+  `data/security-guard-questions.json`, `data/ontario-security-guard-questions.json`,
+  `data/sira-security-questions.json` and `data/psira-security-questions.json`; nzmoto vs
+  `data/nz-learner-licence-questions.json`, `data/motorcycle-questions.json`,
+  `data/uk-motorcycle-theory-questions.json`, `data/south-africa-k53-code-1-questions.json` and sgrtt;
+  nzheavy vs `data/nz-learner-licence-questions.json`, `data/uk-lgv-theory-questions.json`,
+  `data/ireland-truck-bus-theory-questions.json`, `data/cdl-questions.json` and
+  `data/south-africa-k53-code-3-questions.json`; nzsfe vs `data/v2/nclex`, `data/v2/nclexpn`,
+  `data/v2/uknmc`, `data/v2/rexpn`, `data/gulf-nursing-questions.json`,
+  `data/kenya-nursing-council-questions.json`, `data/philippines-nle-questions.json` and
+  `data/pnmc-licensing-questions.json` (NZ practice; no repeated vignettes); sgrtt vs
+  `data/singapore-btt-questions.json`, `data/singapore-ftt-questions.json`,
+  `data/motorcycle-questions.json` and nzmoto (riding-specific rules: lane position, braking,
+  protective gear, pillion, expressways on a motorcycle); sgm5 vs `data/hk-le-paper-1-questions.json`,
+  `data/hkiiqe1-questions.json`, `data/malaysia-pce-questions.json`, `data/llqp-questions.json`,
+  `data/sie-questions.json` and `data/series-65-questions.json` (Singapore law only); sgvl vs
+  `data/seru-questions.json`, `data/singapore-btt-questions.json`, `data/singapore-ftt-questions.json`
+  and iespsv.
+- Signs in nzmoto, nzheavy and sgrtt are described in words.
+- Never name a commercial prep provider or driving school; say "not affiliated with" SOLAS, the NTA,
+  the Central Bank or the qualification bodies, the PSA or QQI, NZTA Waka Kotahi, the Nursing Council
+  of New Zealand, the Singapore Traffic Police, MAS, SCI or IBF, or LTA on the landing.
+- British spelling for Ireland, New Zealand and Singapore (licence, centre); euro (€), NZ dollars ($)
+  and Singapore dollars (S$) only where a stem needs money, never a fee or fine.

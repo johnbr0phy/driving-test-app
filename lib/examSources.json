@@ -484,6 +484,26 @@
   "https://theorytest.ie/book-your-theory-test/driver-theory-test-bus-or-truck/",
   "https://cvrt.ie/ie/Operator-Driver-Obligations/Tachograph-Equipment/~/assets/pdf/Using%20a%20Tachograph%20-%20WEB.pdf"
  ],
+ "iepsa": [
+  "https://qsearch.qqi.ie/WebPart/AwardDetails?awardCode=4N20604",
+  "https://qsdocs.qqi.ie//sites/docs/AwardsLibraryPdf/4N20604_AwardSpecifications_English.pdf",
+  "https://revisedacts.lawreform.ie/eli/2004/act/12/revised/en/html"
+ ],
+ "ieqfa": [
+  "https://www.lia.ie/courses/certificate-in-professional-financial-advice",
+  "https://www.lia.ie/courses/exam-information/about-your-exam",
+  "https://www.lia.ie/courses/exam-information/exam-regulations"
+ ],
+ "iesafepass": [
+  "https://www.solas.ie/construction-lp/safe-pass",
+  "https://www.constructioncourses.ie/Home/InformationSafePass",
+  "https://www.solas.ie/faq-s"
+ ],
+ "iespsv": [
+  "https://www.nationaltransport.ie/taxi/driver-licensing/applying-for-an-spsv-driver-licence/the-spsv-driver-entry-test/",
+  "https://www.nationaltransport.ie/wp-content/uploads/2026/10/NTA_SPSV_OfficialManual_v8.1-FINAL.pdf",
+  "https://www.nationaltransport.ie/wp-content/uploads/2024/12/S.I.-No.-479-of-2024-Taxi-Regulation-Maximum-Fares-Order-2024.pdf"
+ ],
  "itil": [
   "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1/itil-4-foundation-2565",
   "https://peoplecert.org/help-and-support/faq-itil",
@@ -652,15 +672,28 @@
   "https://www.firearmssafety.govt.nz/individual-licence/courses-and-education/firearms-safety-course",
   "https://www.firearmssafety.govt.nz/sites/default/files/2025-09/Firearms%20Safety%20Code_0.pdf"
  ],
+ "nzheavy": [
+  "https://en.wikipedia.org/wiki/Driving_licence_in_New_Zealand"
+ ],
  "nzlcq": [
   "https://www.nzqa.govt.nz/nqfdocs/units/pdf/4646.pdf",
   "https://www.nzqa.govt.nz/nqfdocs/units/pdf/16705.pdf",
   "https://www.serviceiq.org.nz/licence-controller-qualification"
  ],
+ "nzmoto": [
+  "https://drive.govt.nz/learner-licence/doing-the-learner-licence-test",
+  "https://en.wikipedia.org/wiki/Driving_licence_in_New_Zealand",
+  "https://www.aa.co.nz/drivers/driver-licences/motorcycle-licence/"
+ ],
  "nzroad": [
   "https://drive.govt.nz/learner-licence/doing-the-learner-licence-test",
   "https://drive.govt.nz/learner-licence/preparing-for-and-booking-the-test",
   "https://www.nzta.govt.nz/driver-licences/"
+ ],
+ "nzsfe": [
+  "https://www.nursingcouncil.org.nz/Public/NCNZ/nursing-section/Register_as_a_nurse.aspx",
+  "https://www.nursingcouncil.org.nz/Public/Fees/NCNZ/Registration-section/Fees.aspx",
+  "https://www.nursingcouncil.org.nz/Public/NCNZ/nursing-section/Registered_nurse.aspx"
  ],
  "ocnsw": [
   "https://education.nsw.gov.au/schooling/students/oc-and-shs/going-to-an-opportunity-class/get-ready-for-the-opportunity-class-placement-test",
@@ -900,10 +933,25 @@
   "https://www.police.gov.sg/Knowledge-Hub/Traffic/Traffic-Matters/Online-Learning-Portal",
   "https://help.ssdcl.com.sg/portal/en/kb/articles/how-do-i-book-the-traffic-police-theory-tests-btt-ftt-and-rtt-online"
  ],
+ "sgm5": [
+  "https://www.mas.gov.sg/regulation/notices/notice-faa-n26",
+  "https://www.mas.gov.sg/-/media/mas-media-library/regulation/notices/cmg/notice-faa-n26/faa-n26-notice-on-competency-requirements-for-representatives-of-financial-advisers-1.pdf",
+  "https://www.scicollege.org.sg/Exam/ExamDetails/M5"
+ ],
  "sgres": [
   "https://www.cea.gov.sg/real-estate-professionals/for-aspiring-real-estate-salespersons/real-estate-salesperson-examination/prepare-for-the-real-estate-salesperson-examination/",
   "https://isomer-user-content.by.gov.sg/71/25d2fc43-4e98-400d-85bd-8ffde09d2cec/RES%20examination%20Syllabus%202027.pdf",
   "https://isomer-user-content.by.gov.sg/71/e331bb2c-1bcd-46d7-85f1-8f2d8c448c68/RES%20FAQs%20(Version%20as%20at%2027%20Aug%202025"
+ ],
+ "sgrtt": [
+  "https://www.police.gov.sg/-/media/SPF/Advisories/TP/RT-ENG-2126.pdf",
+  "https://www.police.gov.sg/Knowledge-Hub/Traffic/Traffic-Matters/Online-Learning-Portal",
+  "https://www.police.gov.sg/E-Services/Practise-Driving-and-Riding-Theory-Test"
+ ],
+ "sgvl": [
+  "https://onemotoring.lta.gov.sg/content/onemotoring/home/driving/vocational_licence/vocational_licence_application.html",
+  "https://onemotoring.lta.gov.sg/content/onemotoring/home/driving/vocational_licence.html",
+  "https://www.cdgtaxi.com.sg/vocational-licence-courses/"
  ],
  "sie": [
   "https://www.finra.org/registration-exams-ce/qualification-exams/securities-industry-essentials-exam"

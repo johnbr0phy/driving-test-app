@@ -29,7 +29,7 @@ import epa608Es from "./examTranslations/epa608.es.json";
 import esdgtEs from "./examTranslations/esdgt.es.json";
 import ptimtPt from "./examTranslations/ptimt.pt.json";
 
-export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "bedriving" | "dkteori" | "setrafik" | "fitheory" | "grdriving" | "rodrpciv" | "hukresz" | "mttheory" | "detheorie" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "detheorie" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira";
+export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "bedriving" | "dkteori" | "setrafik" | "fitheory" | "grdriving" | "rodrpciv" | "hukresz" | "mttheory" | "detheorie" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "detheorie" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -13785,7 +13785,664 @@ const zapsira: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, nhie, cna, ptcb, phleb, ccma, cma, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, sfadmin, phr, cisa, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzfirearms, nzlcq, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgres, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, bedriving, dkteori, setrafik, fitheory, grdriving, rodrpciv, hukresz, mttheory, detheorie, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, gulfrn, inrto, htl, cst, crcst];
+// International batch 4 (November 2026): Ireland, New Zealand and Singapore
+const iesafepass: ExamConfig = {
+  id: "iesafepass",
+  stateCode: "IESAFEPASS",
+  idBase: 20900,
+  slug: "/safe-pass",
+  landingPath: "/safe-pass-practice-test",
+  name: "Safe Pass Practice Test",
+  shortName: "Safe Pass",
+  examLabel: "Safe Pass test",
+  fullName: "SOLAS Safe Pass construction health and safety awareness (Ireland)",
+  questionIdPrefix: "IESP-",
+  icon: "hardhat",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 90,
+  // SOLAS Safe Pass, the one-day construction safety awareness course required by the Safety,
+  // Health and Welfare at Work (Construction) Regulations 2013 (Schedule 4). SOLAS publishes no
+  // weights or count for the course assessment; the alternative renewal test is 50 questions,
+  // 45 to pass. Tigertest's blueprint over the course's 13 learning units: law (units 1-2) 7,
+  // accident reporting (3) 5, risk and behaviour-based safety (4, 8) 6, electricity (5) 5,
+  // excavations (6) 5, heights (7) 7, equipment and vehicles (9-10) 6, health, welfare, noise and
+  // vibration (11-12) 5, PPE (13) 4. 90% mirrors the renewal test's 45 of 50.
+  blueprint: {
+    iespLaw: 7,
+    iespAccidents: 5,
+    iespRisk: 6,
+    iespElectric: 5,
+    iespExcav: 5,
+    iespHeights: 7,
+    iespVehicles: 6,
+    iespHealth: 5,
+    iespPPE: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 20901, name: "Site Safety, the Law & Accident Reporting", categories: ["iespLaw", "iespAccidents"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 2, id: 20902, name: "Risk, Health & PPE", categories: ["iespRisk", "iespHealth", "iespPPE"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 3, id: 20903, name: "Electricity & Excavations", categories: ["iespElectric", "iespExcav"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 4, id: 20904, name: "Work at Height, Equipment & Vehicles", categories: ["iespHeights", "iespVehicles"], size: 52, weightLabel: "13 of 50 test questions" },
+  ],
+  categoryLabels: {
+    iespLaw: "Site Safety & the Law",
+    iespAccidents: "Accident Reporting & Emergencies",
+    iespRisk: "Risk Assessment & Safe Behaviour",
+    iespElectric: "Electricity",
+    iespExcav: "Excavations & Buried Services",
+    iespHeights: "Work at Height",
+    iespVehicles: "Construction Equipment & Vehicles",
+    iespHealth: "Health, Welfare, Noise & Vibration",
+    iespPPE: "Personal Protective Equipment",
+  },
+  copy: {
+    guestPrompt: "to save your Safe Pass progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets over the 13 units of the Safe Pass course: site safety law and accident reporting, risk, health and PPE, electricity and excavations, and work at height, plant and vehicles. Missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions across every unit, 45 to pass",
+    heroSubs: [
+      "Four topic sets, four mock tests.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Ready for Safe Pass.",
+    ],
+    sourceLine: "Based on the Safety, Health and Welfare at Work Act 2005, the Construction Regulations 2013, the General Application Regulations 2007, HSA guidance and the 13 Safe Pass learning units. Original questions; 50 per test, 45 to pass like the renewal test. Not affiliated with SOLAS, the HSA or any Safe Pass tutor.",
+    analyticsKey: "iesafepass",
+  },
+};
+
+const iespsv: ExamConfig = {
+  id: "iespsv",
+  stateCode: "IESPSV",
+  idBase: 21000,
+  slug: "/spsv-entry-test",
+  landingPath: "/spsv-entry-test-practice-test",
+  name: "SPSV Entry Test Practice",
+  shortName: "SPSV Entry Test",
+  examLabel: "SPSV Driver Entry Test",
+  fullName: "SPSV Driver Entry Test, Industry Knowledge module (taxi, hackney and limousine, Ireland)",
+  questionIdPrefix: "IESPSV-",
+  icon: "car",
+  testCount: 3,
+  questionsPerTest: 54,
+  passPct: 75,
+  // NTA SPSV Driver Entry Test, Industry Knowledge module (nationaltransport.ie and the Official
+  // Manual for Operating in the SPSV Industry, Edition 8.1, September 2026, checked 2026-11-05):
+  // 54 questions in 54 minutes, 75% to pass; the Area Knowledge module (36 questions on the
+  // chosen county) is not modelled. Three real-length tests of 54 at 75%: ceil(0.75 x 54) = 41.
+  // The NTA publishes no per-chapter split, so these weights follow the Manual's chapters 1 to 10.
+  // Each pool is 3x its count plus 2 to 6 training-only spares. All items original; single answer
+  // only (the real test has a few "pick two" items).
+  blueprint: {
+    spsvIndustry: 4,
+    spsvDriverLicence: 6,
+    spsvVehicle: 5,
+    spsvVehicleLicence: 5,
+    spsvOperating: 8,
+    spsvRoutes: 3,
+    spsvFares: 5,
+    spsvCustomer: 5,
+    spsvAccessibility: 4,
+    spsvBusiness: 3,
+    spsvSafety: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 21001, name: "The Industry & Driver Licensing", categories: ["spsvIndustry", "spsvDriverLicence"], size: 37, weightLabel: "10 of 54 test questions" },
+    { setNumber: 2, id: 21002, name: "Vehicles & Vehicle Licensing", categories: ["spsvVehicle", "spsvVehicleLicence"], size: 37, weightLabel: "10 of 54 test questions" },
+    { setNumber: 3, id: 21003, name: "Operating Rules & Fares", categories: ["spsvOperating", "spsvFares"], size: 49, weightLabel: "13 of 54 test questions" },
+    { setNumber: 4, id: 21004, name: "Customers & Accessibility", categories: ["spsvCustomer", "spsvAccessibility"], size: 33, weightLabel: "9 of 54 test questions" },
+    { setNumber: 5, id: 21005, name: "Routes, Business & Safety", categories: ["spsvRoutes", "spsvBusiness", "spsvSafety"], size: 44, weightLabel: "12 of 54 test questions" },
+  ],
+  categoryLabels: {
+    spsvIndustry: "The SPSV Industry & the NTA",
+    spsvDriverLicence: "SPSV Driver Licensing",
+    spsvVehicle: "Vehicle Standards & Age Rules",
+    spsvVehicleLicence: "Vehicle Licensing",
+    spsvOperating: "Working as an SPSV Operator",
+    spsvRoutes: "Finding Your Way Around",
+    spsvFares: "Fares, Receipts & Payment",
+    spsvCustomer: "Customer Service & Complaints",
+    spsvAccessibility: "Passengers with Disabilities",
+    spsvBusiness: "Running Your SPSV Business",
+    spsvSafety: "Staying Safe",
+  },
+  copy: {
+    guestPrompt: "to save your SPSV Entry Test progress and track every question you miss",
+    trainingHeading: "Train by Manual chapter",
+    trainingSub: "Five sets covering all ten study chapters of the NTA's Official Manual. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 54 questions, 41 to pass (75%), like the real module",
+    heroSubs: [
+      "Ten Manual chapters, three real-length mock tests.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. You are ready for Industry Knowledge.",
+    ],
+    sourceLine: "Original practice questions written from the NTA's Official Manual for Operating in the SPSV Industry (Edition 8.1, 2026). Industry Knowledge module only; not affiliated with the NTA. 54 per test, 75% to pass.",
+    analyticsKey: "iespsv",
+  },
+};
+
+const ieqfa: ExamConfig = {
+  id: "ieqfa",
+  stateCode: "IEQFA",
+  idBase: 21100,
+  slug: "/qfa-mcc",
+  landingPath: "/qfa-mcc-practice-test",
+  name: "QFA Regulation Practice Test",
+  shortName: "QFA Regulation",
+  examLabel: "QFA regulation exam",
+  fullName: "QFA / Minimum Competency Code exam: regulation, ethics and core products (Ireland)",
+  questionIdPrefix: "IEQFA-",
+  icon: "building",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Modelled on the LIA's QFA Regulation module (2-hour online MCQ exam of 100 questions, sittings
+  // January, May and September); pass mark not published, so 70% is Tigertest's readiness target.
+  // Tests are half length. Weights are Tigertest's, following the Central Bank's Minimum
+  // Competency Code 2017 (consolidated June 2026) Appendix 3 regulation and best practice
+  // competencies, the Consumer Protection Code 2025 (in force 24 March 2026) and core product
+  // concepts: regulators 6, MCC/F&P/IAF 6, CPC 8, contract and consumer insurance law 5,
+  // complaints/compensation/data 5, AML 4, ethics 6, protection products 5, pensions/savings/credit 5.
+  blueprint: {
+    ieqfaRegulators: 6,
+    ieqfaCompetence: 6,
+    ieqfaCpc: 8,
+    ieqfaContract: 5,
+    ieqfaRedress: 5,
+    ieqfaAml: 4,
+    ieqfaEthics: 6,
+    ieqfaProtection: 5,
+    ieqfaSavings: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 21101, name: "Regulators & Competence", categories: ["ieqfaRegulators", "ieqfaCompetence"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 2, id: 21102, name: "Consumer Protection Code & Contract Law", categories: ["ieqfaCpc", "ieqfaContract"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 3, id: 21103, name: "Complaints, Data & Anti-Money Laundering", categories: ["ieqfaRedress", "ieqfaAml"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 4, id: 21104, name: "Ethics & Professional Conduct", categories: ["ieqfaEthics"], size: 24, weightLabel: "6 of 50 test questions" },
+    { setNumber: 5, id: 21105, name: "Core Products", categories: ["ieqfaProtection", "ieqfaSavings"], size: 40, weightLabel: "10 of 50 test questions" },
+  ],
+  categoryLabels: {
+    ieqfaRegulators: "Regulators & the Regulatory Framework",
+    ieqfaCompetence: "Minimum Competency, Fitness & Probity",
+    ieqfaCpc: "Consumer Protection Code 2025",
+    ieqfaContract: "Contract Law & Consumer Insurance Contracts",
+    ieqfaRedress: "Complaints, Compensation & Data Protection",
+    ieqfaAml: "Anti-Money Laundering & Sanctions",
+    ieqfaEthics: "Ethics & Professional Conduct",
+    ieqfaProtection: "Life, Protection & General Insurance",
+    ieqfaSavings: "Pensions, Savings, Investments & Credit",
+  },
+  copy: {
+    guestPrompt: "to save your QFA regulation progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets: regulators and competence, the Consumer Protection Code and contract law, complaints, data and anti-money laundering, ethics, and core products. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions across every topic, 70% target",
+    heroSubs: [
+      "Five topic sets, four mock tests. Start with the regulators.",
+      "Master each set's rules, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your QFA exam.",
+    ],
+    sourceLine: "Based on the Central Bank's Minimum Competency Code, the Consumer Protection Code 2025 and Irish financial services law as of November 2026. Original questions; 50 per test, half the real exam's 100. 70% is Tigertest's target, not an official pass mark. Not affiliated with the LIA, the IOB, the QFA Board or the Central Bank of Ireland.",
+    analyticsKey: "ieqfa",
+  },
+};
+
+const iepsa: ExamConfig = {
+  id: "iepsa",
+  stateCode: "IEPSA",
+  idBase: 21200,
+  slug: "/psa-security-licence",
+  landingPath: "/psa-security-guard-practice-test",
+  name: "PSA Security Guard Practice Test",
+  shortName: "QQI Security Guarding",
+  examLabel: "QQI Security Guarding exam",
+  fullName: "QQI Level 4 Security Guarding Skills (4N20604) for the PSA security guard licence",
+  questionIdPrefix: "IEPSA-",
+  icon: "badge",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Ireland: QQI component specification 4N20604 Security Guarding Skills (Level 4, units 1 Private
+  // Security Sector and 2 Security Guarding Skills), required for the PSA security guard (guarding)
+  // licence by S.I. 574/2022 as amended by S.I. 204/2024. The provider sets the theory exam (50% of
+  // the award; Pass from 50%); no official count or weights. Tigertest's blueprint over the learning
+  // outcomes: law 6, role 6, powers 8, access 6, patrols 6, reports 6, emergencies 6, events and
+  // retail 6. 70% is Tigertest's target.
+  blueprint: {
+    iepsaLaw: 6,
+    iepsaRole: 6,
+    iepsaPowers: 8,
+    iepsaAccess: 6,
+    iepsaPatrol: 6,
+    iepsaReports: 6,
+    iepsaEmergency: 6,
+    iepsaEvents: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 21201, name: "The Sector, the PSA & Your Role", categories: ["iepsaLaw", "iepsaRole"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 2, id: 21202, name: "The Law: Arrest, Force & Access Control", categories: ["iepsaPowers", "iepsaAccess"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 3, id: 21203, name: "Patrols, Reports & Court", categories: ["iepsaPatrol", "iepsaReports"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 4, id: 21204, name: "Emergencies, Events & Retail", categories: ["iepsaEmergency", "iepsaEvents"], size: 48, weightLabel: "12 of 50 test questions" },
+  ],
+  categoryLabels: {
+    iepsaLaw: "PSA Licensing & the Security Sector",
+    iepsaRole: "Role, Conduct & Customer Care",
+    iepsaPowers: "Arrest, Force, Search & Trespass",
+    iepsaAccess: "Access Control, Keys & Confidentiality",
+    iepsaPatrol: "Patrols, Alarms & Radio",
+    iepsaReports: "Reports, Evidence & Court",
+    iepsaEmergency: "Emergencies, Fire & First Response",
+    iepsaEvents: "Events, Crowds & Retail Security",
+  },
+  copy: {
+    guestPrompt: "to save your Security Guarding progress and track every question you miss",
+    trainingHeading: "Train unit by unit",
+    trainingSub: "Four sets on the QQI 4N20604 course: the sector, the PSA and your role, arrest, force and access control, patrols, reports and court, and emergencies, events and retail. Missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions across every topic, 70% target",
+    heroSubs: [
+      "Four topic sets, four mock tests.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Ready for your exam.",
+    ],
+    sourceLine: "Based on the QQI 4N20604 Security Guarding Skills learning outcomes, the Private Security Services Act 2004 and the Criminal Law Act 1997. Original questions; 50 per test, 70% is Tigertest's target. Not affiliated with the PSA, QQI or any training provider.",
+    analyticsKey: "iepsa",
+  },
+};
+
+const nzmoto: ExamConfig = {
+  id: "nzmoto",
+  stateCode: "NZMOTO",
+  idBase: 21300,
+  slug: "/nz-motorcycle-learner",
+  landingPath: "/nz-motorcycle-learner-licence-practice-test",
+  name: "NZ Motorcycle Learner Licence Practice Test",
+  shortName: "NZ motorcycle learner",
+  examLabel: "NZ motorcycle learner licence test",
+  fullName: "New Zealand motorcycle learner licence theory test (Class 6)",
+  questionIdPrefix: "NZMOTO-",
+  icon: "bike",
+  testCount: 5,
+  questionsPerTest: 35,
+  passPct: 91,
+  // Real test: computer-based multi-choice theory test at a driver licensing agent, after the basic
+  // handling skills test (AA, Wikipedia). drive.govt.nz gives the learner test as 35 questions, 32 to
+  // pass, 30 minutes (car page, checked 2026-11-05); Wikipedia gives 32 of 35 for the motorcycle
+  // learner licence. NZTA's own motorcycle pages blocked automated reads, so the Class 6 format is
+  // from those sources. NZTA publishes no per-topic counts; the split is Tigertest's. Pools are 5x
+  // each count plus 25 training-only spares. passPct 91 = ceil(0.91 * 35) = 32. Learner and
+  // restricted conditions (rear L plate, no pillion, 10 pm to 5 am, no towing, LAMS under 660 cc
+  // and 150 kW/t) from Wikipedia and ACC Ride Forever. All items original; signs described in words.
+  blueprint: {
+    nzmLicence: 5,
+    nzmGear: 4,
+    nzmSigns: 4,
+    nzmGiveWay: 6,
+    nzmPosition: 6,
+    nzmControl: 5,
+    nzmHazards: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 21301, name: "Licence Conditions & Riding Gear", categories: ["nzmLicence", "nzmGear"], size: 52, weightLabel: "9 of 35 test questions" },
+    { setNumber: 2, id: 21302, name: "Signs & Giving Way", categories: ["nzmSigns", "nzmGiveWay"], size: 58, weightLabel: "10 of 35 test questions" },
+    { setNumber: 3, id: 21303, name: "Road Position, Speed & Overtaking", categories: ["nzmPosition"], size: 34, weightLabel: "6 of 35 test questions" },
+    { setNumber: 4, id: 21304, name: "Braking, Cornering & Bike Control", categories: ["nzmControl"], size: 28, weightLabel: "5 of 35 test questions" },
+    { setNumber: 5, id: 21305, name: "Road Surfaces, Weather & Hazards", categories: ["nzmHazards"], size: 28, weightLabel: "5 of 35 test questions" },
+  ],
+  categoryLabels: {
+    nzmLicence: "Licence Conditions, Alcohol & Crashes",
+    nzmGear: "Helmets, Gear & Bike Checks",
+    nzmSigns: "Signs, Signals & Markings",
+    nzmGiveWay: "Intersections & Giving Way",
+    nzmPosition: "Road Position, Speed & Overtaking",
+    nzmControl: "Braking, Cornering & Bike Control",
+    nzmHazards: "Road Surfaces, Weather & Hazards",
+  },
+  copy: {
+    guestPrompt: "to save your motorcycle learner licence progress and track every question you miss",
+    trainingHeading: "Train by topic for riders",
+    trainingSub: "Five sets on the learner and restricted conditions, helmets and gear, giving way, road position, braking and cornering, and road surface hazards. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 35 questions, 32 to pass",
+    heroSubs: [
+      "Five topics, five 35-question tests. Giving way and road position weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your motorcycle learner licence test.",
+    ],
+    sourceLine: "Based on New Zealand's road rules for motorcyclists. Original questions; 35 per test, 32 to pass like the car learner test.",
+    analyticsKey: "nzmoto",
+  },
+};
+
+const nzheavy: ExamConfig = {
+  id: "nzheavy",
+  stateCode: "NZHEAVY",
+  idBase: 21400,
+  slug: "/nz-heavy-vehicle-licence",
+  landingPath: "/nz-class-2-licence-practice-test",
+  name: "NZ Class 2 Licence Practice Test",
+  shortName: "NZ Class 2 licence",
+  examLabel: "Class 2 theory test",
+  fullName: "New Zealand Class 2 heavy vehicle learner licence theory test",
+  questionIdPrefix: "NZHV-",
+  icon: "truck",
+  testCount: 5,
+  questionsPerTest: 35,
+  passPct: 94,
+  // NZTA Class 2 (medium rigid) learner licence theory test. Its count and pass mark could not be
+  // read on nzta.govt.nz (bot wall, 2026-11-05): modelled as 35 questions,
+  // 33 to pass as reported by Wikipedia. passPct 94 = ceil(0.94 * 35) = 33. NZTA
+  // publishes no topic weights; these are Tigertest's, weighted to heavy vehicle content: licence
+  // classes, the Work Time and Logbooks Rule 2007, mass and dimensions, the Truck Loading Code, air
+  // brakes, the 90 km/h heavy vehicle limit. Pools are 5x each count plus 25 training-only spares.
+  // All items original; signs described in words.
+  blueprint: {
+    nzhvLicence: 4,
+    nzhvWork: 6,
+    nzhvMass: 6,
+    nzhvBrakes: 6,
+    nzhvRoad: 5,
+    nzhvSharing: 5,
+    nzhvSafety: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 21401, name: "Licences & Work Time", categories: ["nzhvLicence", "nzhvWork"], size: 57, weightLabel: "10 of 35 test questions" },
+    { setNumber: 2, id: 21402, name: "Mass, Dimensions & Loads", categories: ["nzhvMass"], size: 34, weightLabel: "6 of 35 test questions" },
+    { setNumber: 3, id: 21403, name: "Air Brakes & Vehicle Checks", categories: ["nzhvBrakes"], size: 34, weightLabel: "6 of 35 test questions" },
+    { setNumber: 4, id: 21404, name: "Speed, Hills & Emergencies", categories: ["nzhvRoad", "nzhvSafety"], size: 46, weightLabel: "8 of 35 test questions" },
+    { setNumber: 5, id: 21405, name: "Sharing the Road", categories: ["nzhvSharing"], size: 29, weightLabel: "5 of 35 test questions" },
+  ],
+  categoryLabels: {
+    nzhvLicence: "Licences, Classes & Alcohol",
+    nzhvWork: "Work Time & Logbooks",
+    nzhvMass: "Mass, Dimensions & Loads",
+    nzhvBrakes: "Air Brakes & Vehicle Checks",
+    nzhvRoad: "Speed, Hills & Road Position",
+    nzhvSharing: "Sharing the Road & Blind Spots",
+    nzhvSafety: "Weather, Breakdowns & Emergencies",
+  },
+  copy: {
+    guestPrompt: "to save your Class 2 theory progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets cover all 200 questions: licences and work time, loads, brakes, the road and sharing it. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 35 questions, 33 to pass",
+    heroSubs: [
+      "Five tests on work time, logbooks, loads, air brakes and heavy vehicle rules.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Check the current test details with NZTA and book your Class 2 theory test.",
+    ],
+    sourceLine: "Original questions written from New Zealand rules for heavy vehicle drivers (2026). 33 of 35 is the reported pass mark; check the real test's pass mark with NZTA. Not affiliated with NZTA Waka Kotahi.",
+    analyticsKey: "nzheavy",
+  },
+};
+
+const nzsfe: ExamConfig = {
+  id: "nzsfe",
+  stateCode: "NZSFE",
+  idBase: 21500,
+  slug: "/nz-nursing-state-final",
+  landingPath: "/nursing-council-nz-state-final-exam-practice-test",
+  name: "Nursing Council NZ State Final Exam Practice Test",
+  shortName: "NZ State Final",
+  examLabel: "State Final Examination",
+  fullName: "Nursing Council of New Zealand State Final Examination (registered nurse)",
+  questionIdPrefix: "NZSFE-",
+  icon: "stethoscope",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Nursing Council of New Zealand State Final Examination (checked November 2026): set by the
+  // Council for graduates of approved programmes before registration. The Council's public site
+  // gives no question count, time or pass standard, so this split, organised around the 2025
+  // standards of competence (six pou, in force for all purposes from 1 January 2026) and NZ
+  // clinical practice, is Tigertest's, and 70% is a readiness target. All items original.
+  blueprint: {
+    nzsfeTiriti: 5,
+    nzsfeLaw: 6,
+    nzsfeAssess: 6,
+    nzsfeMeds: 7,
+    nzsfeAcute: 9,
+    nzsfeLongTerm: 5,
+    nzsfeMental: 4,
+    nzsfeChild: 4,
+    nzsfeLead: 4,
+  },
+  trainingSets: testSets(21500, 4),
+  categoryLabels: {
+    nzsfeTiriti: "Te Tiriti, Māori Health & Cultural Safety",
+    nzsfeLaw: "Law, Ethics & Professional Practice",
+    nzsfeAssess: "Assessment & Clinical Reasoning",
+    nzsfeMeds: "Medicines & Calculations",
+    nzsfeAcute: "Acute & Medical-Surgical Care",
+    nzsfeLongTerm: "Long-term Conditions & Older Adults",
+    nzsfeMental: "Mental Health & Addiction",
+    nzsfeChild: "Child, Maternal & Whānau Health",
+    nzsfeLead: "Leadership, Safety & Communication",
+  },
+  copy: {
+    guestPrompt: "to save your State Final progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per mock test, each holding exactly that test's 50 questions across all nine topics. Missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, 70% readiness line",
+    heroSubs: [
+      "Nine topics, four mock tests. Acute care and medicines are the biggest.",
+      "Master each set, then take its test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. You are ready for State Finals.",
+    ],
+    sourceLine: "Based on New Zealand law, the Nursing Council's 2025 standards of competence and NZ clinical guidance. Original questions; the format and the 70% line are Tigertest's. Not affiliated with the Nursing Council of New Zealand.",
+    analyticsKey: "nzsfe",
+  },
+};
+
+const sgrtt: ExamConfig = {
+  id: "sgrtt",
+  stateCode: "SGRTT",
+  idBase: 21600,
+  slug: "/singapore-rtt",
+  landingPath: "/singapore-rtt-practice-test",
+  name: "Singapore RTT Practice Test",
+  shortName: "Singapore RTT",
+  examLabel: "Riding Theory Test",
+  fullName: "Singapore Riding Theory Test (RTT)",
+  questionIdPrefix: "SGRTT-",
+  icon: "bike",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 90,
+  // Source: Singapore Traffic Police, "Riding Theory Booklet, Official Handbook", published online
+  // 2.1.2026 (RT-ENG-2126.pdf). The Traffic Police publish no RTT question count, pass mark or topic
+  // weights; 50 questions with 45 to pass is Tigertest's target (the BTT/FTT format guides quote),
+  // so passPct 90 = ceil(0.90 * 50) = 45. Counts follow the handbook's chapters by length. Pools are
+  // exactly 4x each count. Kept clear of the BTT and FTT banks; alcohol figures, demerit points,
+  // fines, the practical test and the circuit course timings are not asked. All items original.
+  // Checked 2026-11-05.
+  blueprint: {
+    sgrtRider: 7,
+    sgrtMachine: 8,
+    sgrtControls: 8,
+    sgrtSkills: 8,
+    sgrtConditions: 7,
+    sgrtDefensive: 7,
+    sgrtGeneral: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 21601, name: "Rider & Motorcycle", categories: ["sgrtRider", "sgrtMachine"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 2, id: 21602, name: "Controls, Gears & Braking", categories: ["sgrtControls"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 3, id: 21603, name: "Moving Off, Turns & Junctions", categories: ["sgrtSkills"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 4, id: 21604, name: "Road Conditions & Defensive Riding", categories: ["sgrtConditions", "sgrtDefensive"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 5, id: 21605, name: "Pillions, Breakdowns & Accidents", categories: ["sgrtGeneral"], size: 20, weightLabel: "5 of 50 test questions" },
+  ],
+  categoryLabels: {
+    sgrtRider: "Rider Fitness, Gear & Posture",
+    sgrtMachine: "Motorcycle Parts, Checks & Handling",
+    sgrtControls: "Controls, Gears & Braking",
+    sgrtSkills: "Moving Off, Turns & Junctions",
+    sgrtConditions: "Bends, Slopes, Weather & Expressways",
+    sgrtDefensive: "Defensive Riding & Other Road Users",
+    sgrtGeneral: "Pillions, Breakdowns & Accidents",
+  },
+  copy: {
+    guestPrompt: "to save your RTT progress and track every question you miss",
+    trainingHeading: "Train by handbook chapter",
+    trainingSub: "Five sets covering the Riding Theory Booklet, from chain slack to emergency stops and pillions. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, target 45",
+    heroSubs: [
+      "Five topics, four full tests. The motorcycle, its controls and riding skills weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your Riding Theory Test.",
+    ],
+    sourceLine: "Based on the Traffic Police Riding Theory Booklet (2 January 2026). Original questions; 50 per test with Tigertest's 45 target (the Traffic Police publish no RTT format).",
+    analyticsKey: "sgrtt",
+  },
+};
+
+const sgm5: ExamConfig = {
+  id: "sgm5",
+  stateCode: "SGM5",
+  idBase: 21700,
+  slug: "/cmfas-m5",
+  landingPath: "/cmfas-m5-practice-test",
+  name: "CMFAS RES5 Practice Test",
+  shortName: "CMFAS RES5",
+  examLabel: "RES5",
+  fullName: "CMFAS RES5: Rules, Ethics and Skills for Financial Advisory Services (formerly Module 5)",
+  questionIdPrefix: "SGM5-",
+  icon: "building",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // SCI RES5 (checked November 2026): 150 MCQs in 3 hours, Part I (chapters 1-13, rules and
+  // regulations) 110 questions at 75%, Part II (chapters 14-27, ethics and skills) 40 at 80%.
+  // RES5 replaced CMFAS Module 5 under MAS Notice FAA-N26 from 1 April 2024. Modelled as four
+  // 50-question tests at the real pace with the 110:40 share (37 + 13); the pass line is the
+  // stricter 80%. Per test (Tigertest's split by chapter): FAA and representatives 6, conduct of
+  // business 5, FAA-N16 8, balanced scorecard and other notices 6, AML/CFT 4, ILPs, CIS, market
+  // conduct and CPF 8 (Part I 37); ethics and fair dealing 7, advisory skills 6 (Part II 13).
+  // Singapore law and MAS notices as of November 2026. All items original.
+  blueprint: {
+    sgm5Faa: 6,
+    sgm5Business: 5,
+    sgm5Advice: 8,
+    sgm5Notices: 6,
+    sgm5Aml: 4,
+    sgm5Products: 8,
+    sgm5Ethics: 7,
+    sgm5Skills: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 21701, name: "The FAA, Representatives & Conduct", categories: ["sgm5Faa", "sgm5Business"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 2, id: 21702, name: "Recommendations (FAA-N16)", categories: ["sgm5Advice"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 3, id: 21703, name: "Balanced Scorecard, Notices & AML", categories: ["sgm5Notices", "sgm5Aml"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 4, id: 21704, name: "ILPs, CIS, Market Conduct & CPF", categories: ["sgm5Products"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 5, id: 21705, name: "Ethics & Fair Dealing", categories: ["sgm5Ethics"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 6, id: 21706, name: "Advisory Skills & Financial Planning", categories: ["sgm5Skills"], size: 24, weightLabel: "6 of 50 test questions" },
+  ],
+  categoryLabels: {
+    sgm5Faa: "FAA & FAR: Advisers & Representatives",
+    sgm5Business: "Conduct of Business, MAS Powers & Offences",
+    sgm5Advice: "Recommendations on Investment Products (FAA-N16)",
+    sgm5Notices: "Balanced Scorecard & Other MAS Notices",
+    sgm5Aml: "AML/CFT (FAA-N06)",
+    sgm5Products: "ILPs, CIS, Market Conduct & CPF",
+    sgm5Ethics: "Ethics, Professionalism & Fair Dealing",
+    sgm5Skills: "Advisory Skills & Financial Planning",
+  },
+  copy: {
+    guestPrompt: "to save your RES5 progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Six sets covering both parts of the RES5 syllabus, rules and regulations and ethics and skills. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions at the real RES5 pace, 80% to pass",
+    heroSubs: [
+      "Six sets, four mock tests. FAA-N16 and the products chapters weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your RES5.",
+    ],
+    sourceLine: "Based on SCI's RES5 syllabus (which replaced CMFAS Module 5 in April 2024), the Financial Advisers Act and MAS notices as of November 2026. Original questions; 50 per test with the real 110:40 part mix, chapter split by Tigertest. Not affiliated with SCI, MAS or IBF.",
+    analyticsKey: "sgm5",
+  },
+};
+
+const sgvl: ExamConfig = {
+  id: "sgvl",
+  stateCode: "SGVL",
+  idBase: 21800,
+  slug: "/singapore-vocational-licence",
+  landingPath: "/singapore-vocational-licence-practice-test",
+  name: "Singapore Vocational Licence Practice Test",
+  shortName: "TDVL / PDVL",
+  examLabel: "TDVL / PDVL test",
+  fullName: "Singapore taxi and private hire car driver's vocational licence test (TDVL / PDVL)",
+  questionIdPrefix: "SGVL-",
+  icon: "car",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // LTA's vocational licence e-test for taxi (TDVL) and private hire car (PDVL) drivers, taken after
+  // the vocational licence course at an LTA-listed provider. Three papers: A on-the-road safety and
+  // passenger engagement, B rules and regulations, C routes and route planning. LTA and the providers
+  // publish no question count, time or pass mark, so 4 x 50 mixing the papers (A 21, B 24, C 5) and
+  // an 80% target are Tigertest's own. Rules from OneMotoring's VL pages, the VLPS Rules 2017
+  // (consolidated 30 Oct 2020) and LTA's PHC and point-to-point pages, checked November 2026.
+  blueprint: {
+    sgvlRoadSafety: 8,
+    sgvlPassenger: 8,
+    sgvlInclusive: 5,
+    sgvlLicensing: 6,
+    sgvlConduct: 8,
+    sgvlFares: 6,
+    sgvlStopping: 4,
+    sgvlRoutes: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 21801, name: "Road Safety & Stopping Rules", categories: ["sgvlRoadSafety", "sgvlStopping"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 2, id: 21802, name: "Passenger Engagement", categories: ["sgvlPassenger", "sgvlInclusive"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 3, id: 21803, name: "Licences & Demerit Points", categories: ["sgvlLicensing", "sgvlConduct"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 4, id: 21804, name: "Fares, Bookings & Routes", categories: ["sgvlFares", "sgvlRoutes"], size: 44, weightLabel: "11 of 50 test questions" },
+  ],
+  categoryLabels: {
+    sgvlRoadSafety: "On-the-Road Safety",
+    sgvlPassenger: "Passenger Engagement & Handling",
+    sgvlInclusive: "Passengers with Disabilities, Seniors & Children",
+    sgvlLicensing: "Vocational Licences & Renewal",
+    sgvlConduct: "Conduct Rules & Demerit Points (VLPS)",
+    sgvlFares: "Bookings, Decals & Fares",
+    sgvlStopping: "Pick-up, Set-down & Taxi Stands",
+    sgvlRoutes: "Routes & Route Planning",
+  },
+  copy: {
+    guestPrompt: "to save your TDVL / PDVL progress and track every question you miss",
+    trainingHeading: "Train by paper",
+    trainingSub: "Four sets covering the three papers: safety and passengers, rules and demerit points, fares, bookings and routes. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, 80% target",
+    heroSubs: [
+      "Three papers, four mock tests.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. You are ready for the e-test.",
+    ],
+    sourceLine: "Original practice questions from LTA's published vocational licence rules. Not affiliated with LTA; 50 per test, 80% is Tigertest's target (LTA publishes no count or pass mark).",
+    analyticsKey: "sgvl",
+  },
+};
+
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, nhie, cna, ptcb, phleb, ccma, cma, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, sfadmin, phr, cisa, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, bedriving, dkteori, setrafik, fitheory, grdriving, rodrpciv, hukresz, mttheory, detheorie, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, gulfrn, inrto, htl, cst, crcst];
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
 export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA, realestatePA, realestateIL, realestateOH, realestateGA, realestateNC, realestateMI, realestateVA, realestateWA, realestateAZ, realestateTN, insuranceNY, insurancePA, insuranceIL, insuranceOH, insuranceGA, insuranceNC, insuranceMI, insuranceNJ, insuranceVA, insuranceWA, pncNY, pncPA, pncIL, pncOH, pncGA, pncNC, pncMI, pncNJ, pncVA, pncWA];

@@ -1,0 +1,24 @@
+{
+  "id": "iedttcv",
+  "stateCode": "IEDTTCV",
+  "idBase": 18800,
+  "prefix": "IEDTTCV-",
+  "slug": "/ireland-truck-bus-theory",
+  "landingPath": "/ireland-truck-bus-theory-test",
+  "dataFile": "data/ireland-truck-bus-theory-questions.json",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 74,
+  "region": "IE",
+  "categories": [
+    {"key": "iedttcvLicence", "label": "Licences, Driver CPC & Roadworthiness", "perTest": 4, "segment": "LIC"},
+    {"key": "iedttcvHours", "label": "Drivers' Hours & Working Time", "perTest": 7, "segment": "HRS"},
+    {"key": "iedttcvTacho", "label": "Tachographs & Records", "perTest": 5, "segment": "TAC"},
+    {"key": "iedttcvBrakes", "label": "Brakes, Coupling & Vehicle Checks", "perTest": 7, "segment": "BRK"},
+    {"key": "iedttcvLoads", "label": "Weights, Dimensions & Load Security", "perTest": 6, "segment": "LOD"},
+    {"key": "iedttcvPassengers", "label": "Carrying Passengers", "perTest": 6, "segment": "PSG"},
+    {"key": "iedttcvRoad", "label": "Speed Limits, Lanes & Large Vehicles on the Road", "perTest": 7, "segment": "ROD"},
+    {"key": "iedttcvSafety", "label": "Blind Spots, Fatigue & Alcohol", "perTest": 5, "segment": "SAF"},
+    {"key": "iedttcvEmergencies", "label": "Eco-Driving, Breakdowns & Incidents", "perTest": 3, "segment": "EMG"}
+  ]
+}

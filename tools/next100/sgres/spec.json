@@ -1,0 +1,39 @@
+{
+  "id": "sgres",
+  "stateCode": "SGRES",
+  "idBase": 18000,
+  "prefix": "SGRES-",
+  "slug": "/singapore-res",
+  "landingPath": "/singapore-res-exam-practice-test",
+  "dataFile": "data/singapore-res-questions.json",
+  "region": "SG",
+  "name": "Singapore RES Exam Practice Test",
+  "shortName": "RES Exam",
+  "examLabel": "RES exam",
+  "fullName": "Singapore Real Estate Salesperson (RES) Examination",
+  "icon": "house",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 60,
+  "categories": [
+    {"key": "sgresMarket", "label": "Real Estate Market & Players", "perTest": 3, "pool": 12, "segment": "MKT", "section": "Paper 1, Unit 1 (1.1-1.2)"},
+    {"key": "sgresLandLaw", "label": "Land Law, Estates & Titles", "perTest": 6, "pool": 24, "segment": "LND", "section": "Paper 1, Unit 1 (1.3-1.8)"},
+    {"key": "sgresContract", "label": "Contract Law & Property Torts", "perTest": 6, "pool": 24, "segment": "CON", "section": "Paper 1, Unit 2 (2.1, 2.4)"},
+    {"key": "sgresAgencyLease", "label": "Law of Agency & Landlord and Tenant", "perTest": 5, "pool": 20, "segment": "AGL", "section": "Paper 1, Unit 2 (2.2-2.3)"},
+    {"key": "sgresInterests", "label": "Interests in Land, Capacity & Planning", "perTest": 5, "pool": 20, "segment": "INT", "section": "Paper 1, Unit 2 (2.5-2.12)"},
+    {"key": "sgresRegulation", "label": "Agency Regulation, Ethics & Conduct", "perTest": 6, "pool": 24, "segment": "REG", "section": "Paper 2, Unit 3 (3.1-3.3, 3.14)"},
+    {"key": "sgresAml", "label": "Anti-Money Laundering (PMLPFTF)", "perTest": 3, "pool": 12, "segment": "AML", "section": "Paper 2, Unit 3 (3.4)"},
+    {"key": "sgresMarketing", "label": "Real Estate Marketing & Advertising", "perTest": 6, "pool": 24, "segment": "MKG", "section": "Paper 2, Unit 3 (3.5-3.13)"},
+    {"key": "sgresPrivateSale", "label": "Private Property Sales & Leasing", "perTest": 4, "pool": 16, "segment": "PVT", "section": "Paper 2, Unit 4 (4.1-4.3, 4.5)"},
+    {"key": "sgresHdb", "label": "HDB Sale & Rental", "perTest": 3, "pool": 12, "segment": "HDB", "section": "Paper 2, Unit 4 (4.4, 4.6)"},
+    {"key": "sgresTaxFinance", "label": "Property Taxes & Finance", "perTest": 3, "pool": 12, "segment": "TAX", "section": "Paper 2, Unit 4 (4.7-4.8)"}
+  ],
+  "notes": "Real RES exam (CEA): Paper 1 (Units 1 and 2) and Paper 2 (Units 3 and 4), each 2.5 hours, Section A 60 MCQs at 1 mark and Section B 20 case-study MCQs at 2 marks, 100 marks, pass mark 60 per paper; revised syllabus for exams from 1 January 2027. Mock tests mix both papers 25/25, weighted inside each paper by the syllabus's recommended training hours (Unit 1 11 h, Unit 2 23 h, Unit 3 24 h, Unit 4 15 h). Pools are exactly 4x per-test counts. Content sets, so sets first, then tests.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 18001, "name": "Real Estate Market & Land Law", "categories": ["sgresMarket", "sgresLandLaw", "sgresInterests"], "size": 56},
+    {"setNumber": 2, "id": 18002, "name": "Contract, Torts, Agency & Leases", "categories": ["sgresContract", "sgresAgencyLease"], "size": 44},
+    {"setNumber": 3, "id": 18003, "name": "Regulation, Ethics & AML", "categories": ["sgresRegulation", "sgresAml"], "size": 36},
+    {"setNumber": 4, "id": 18004, "name": "Marketing & Private Property Sales", "categories": ["sgresMarketing", "sgresPrivateSale"], "size": 40},
+    {"setNumber": 5, "id": 18005, "name": "HDB, Taxes & Property Finance", "categories": ["sgresHdb", "sgresTaxFinance"], "size": 24}
+  ]
+}

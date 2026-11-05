@@ -1,0 +1,35 @@
+{
+  "id": "sgftt",
+  "stateCode": "SGFTT",
+  "idBase": 17900,
+  "prefix": "SGFTT-",
+  "slug": "/singapore-ftt",
+  "landingPath": "/singapore-ftt-practice-test",
+  "dataFile": "data/singapore-ftt-questions.json",
+  "name": "Singapore FTT Practice Test",
+  "shortName": "Singapore FTT",
+  "examLabel": "Final Theory Test",
+  "fullName": "Singapore Final Theory Test (FTT)",
+  "icon": "car",
+  "region": "SG",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 90,
+  "categories": [
+    {"key": "sgftControls", "label": "Car Controls & Instruments", "perTest": 7, "pool": 28, "segment": "CTL"},
+    {"key": "sgftTechnique", "label": "Moving Off, Gears, Bends & Slopes", "perTest": 8, "pool": 32, "segment": "TEC"},
+    {"key": "sgftManoeuvres", "label": "Lanes, Junctions & Manoeuvres", "perTest": 9, "pool": 36, "segment": "MAN"},
+    {"key": "sgftDefensive", "label": "Defensive Driving & Conditions", "perTest": 8, "pool": 32, "segment": "DEF"},
+    {"key": "sgftRoadUsers", "label": "Pedestrians, Cyclists & Large Vehicles", "perTest": 7, "pool": 28, "segment": "RDU"},
+    {"key": "sgftExpressway", "label": "Expressways", "perTest": 5, "pool": 20, "segment": "EXP"},
+    {"key": "sgftEmergency", "label": "Emergencies, Accidents & Vehicle Care", "perTest": 6, "pool": 24, "segment": "EMG"}
+  ],
+  "notes": "4 tests x 50 = 200; every pool is exactly 4x its per-test count (no spares, no repeats across tests). passPct 90 gives ceil(0.90 x 50) = 45, the pass mark guides quote (not published by the Traffic Police). Content is the Traffic Police handbook Final Theory of Driving (published online 2.1.2026). Kept clear of the BTT bank (data/singapore-btt-questions.json): no signs, markings, parking distances, three-second rule, 1.5 m cyclist gap, 80% eyes, headlight hours, wet-road stopping, tunnel or yellow-box items. Left out: the alcohol limit (2026 Act), demerit points, fines, the driving test section and the learner restricted-area map.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 17901, "name": "Car Controls & Driving Technique", "categories": ["sgftControls", "sgftTechnique"], "size": 60},
+    {"setNumber": 2, "id": 17902, "name": "Lanes, Junctions & Manoeuvres", "categories": ["sgftManoeuvres"], "size": 36},
+    {"setNumber": 3, "id": 17903, "name": "Defensive Driving & Conditions", "categories": ["sgftDefensive"], "size": 32},
+    {"setNumber": 4, "id": 17904, "name": "Other Road Users & Expressways", "categories": ["sgftRoadUsers", "sgftExpressway"], "size": 48},
+    {"setNumber": 5, "id": 17905, "name": "Emergencies & Vehicle Care", "categories": ["sgftEmergency"], "size": 24}
+  ]
+}

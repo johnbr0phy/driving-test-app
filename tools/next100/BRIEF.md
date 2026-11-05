@@ -289,3 +289,52 @@ Notes for every batch C builder:
   cssgb and phr have no close family, but grep `data/v2/pmp`, `data/v2/capm` and `data/cpa-reg-questions.json`.
 - Never name a commercial prep provider; say "not affiliated with" the exam body on the landing.
 - Region GLOBAL, CA or UK needs the TEST_REGIONS line in WIRING.md; US is the default.
+
+## International batch 1: thin countries, English-language exams people pay for (Nov 2026)
+
+Same rules as batches A to C (read them). All v1. Branch `intl-batch-1` (from main). Goal: give
+countries that have only one Tigertest test their first non-driving or second driving test.
+Templates: driving theory tests copy `tools/next100/pkdrive` (or `tools/countries/sgbtt` for
+Singapore, `tools/countries/hkdrive` for Hong Kong, `tools/next30/iedtt` for Ireland); licensing and
+insurance copy `tools/next100/llqp` (non-US region) and its `WIRING.md` shape; security copy
+`tools/next100/txadjuster` for law items. Every exam here has a non-US region, so `WIRING.md` needs
+its TEST_REGIONS line, its `NON_DRIVING_TESTS` line when it is not a driving test, and a hub group:
+put it in the country's existing driving group only if it is a driving test, otherwise a new group
+named in WIRING.md ("Singapore licensing exams", "Hong Kong insurance and securities exams", "New
+Zealand licences", "UAE licensing exams", "Malaysia insurance exams", "Kenya licensing exams").
+
+| id | Test | Region | idBase | stateCode | prefix | slug | landing | hue |
+|---|---|---|---|---|---|---|---|---|
+| sgftt | Singapore Final Theory Test (FTT), class 3/3A | SG | 17900 | SGFTT | SGFTT- | /singapore-ftt | /singapore-ftt-practice-test | 0 70% 22% |
+| sgres | Singapore Real Estate Salesperson (RES) exam | SG | 18000 | SGRES | SGRES- | /singapore-res | /singapore-res-exam-practice-test | 350 70% 22% |
+| hkiiqe1 | Hong Kong IIQE Paper 1, Principles and Practice of Insurance | HK | 18100 | HKIIQE1 | HKIIQE1- | /iiqe-paper-1 | /iiqe-paper-1-practice-test | 215 70% 22% |
+| hklesfi1 | Hong Kong LE Paper 1, Fundamentals of Securities and Futures Regulation | HK | 18200 | HKLE1 | HKLE1- | /le-paper-1 | /le-paper-1-practice-test | 275 70% 22% |
+| nzfirearms | New Zealand firearms licence safety test | NZ | 18300 | NZFIREARMS | NZFA- | /nz-firearms-licence | /nz-firearms-licence-practice-test | 30 55% 22% |
+| nzlcq | New Zealand Licence Controller Qualification (duty manager) | NZ | 18400 | NZLCQ | NZLCQ- | /lcq | /lcq-practice-test | 340 70% 22% |
+| aesira | UAE SIRA security guard licensing exam (Dubai) | AE | 18500 | AESIRA | AESIRA- | /sira-security | /sira-security-guard-practice-test | 220 55% 22% |
+| mypce | Malaysia Pre-Contract Examination for insurance agents (PCE) | MY | 18600 | MYPCE | MYPCE- | /malaysia-pce | /pce-exam-practice-test | 230 25% 22% |
+| kenck | Nursing Council of Kenya licensure exam (registered nurse) | KE | 18700 | KENCK | KENCK- | /kenya-nursing-council | /nursing-council-of-kenya-exam-practice-test | 160 55% 22% |
+| iedttcv | Ireland Driver Theory Test, truck and bus (categories C and D) | IE | 18800 | IEDTTCV | IEDTTCV- | /ireland-truck-bus-theory | /ireland-truck-bus-theory-test | 140 70% 22% |
+
+Notes for every international batch 1 builder:
+- Hues above are checked for white-text contrast and clashes; use as given.
+- Lanes and duplicates: sgftt vs `data/singapore-btt-questions.json` (FTT is Part C, expressways,
+  defensive driving, the rules BTT leaves out; no repeats); iedttcv vs
+  `data/ireland-driver-theory-questions.json` (heavy vehicle rules: tachographs, weights, braking,
+  load security, passengers); hkiiqe1 vs `data/hong-kong-driving-questions.json` only by style and
+  vs `data/property-casualty-questions.json` and `data/llqp-questions.json` (Hong Kong law: Insurance
+  Ordinance, IA, conduct requirements); hklesfi1 vs `data/v2/sie` / `data/sie-questions.json` (SFO,
+  SFC, HKEX rules, not US); mypce vs `data/llqp-questions.json`, `data/life-health-questions.json`
+  (Malaysian law: Financial Services Act 2013, BNM, MII syllabus; general and life parts);
+  aesira vs `data/security-guard-questions.json` and `data/ontario-security-guard-questions.json`
+  (Dubai law and SIRA rules); kenck vs NCLEX and `data/v2/gulfrn` (Kenyan practice and law,
+  NCK scope, Kenyan public health priorities, Kenyan drug names where they differ); nzlcq vs
+  `data/alcohol-server-questions.json` and `data/au-rsa-questions.json` (Sale and Supply of Alcohol
+  Act 2012, host responsibility, duty manager duties); nzfirearms vs `data/canadian-firearms-questions.json`
+  and `data/hunter-questions.json` (NZ Arms Code, Arms Act as amended 2020 and later, the seven
+  firearms safety rules as NZ Police states them); sgres vs `data/real-estate-questions.json`
+  (Singapore law: Estate Agents Act, CEA, HDB and URA rules, stamp duty concepts without rates).
+- Educational safety content only for nzfirearms (no modification or acquisition workarounds).
+- Never name a commercial prep provider; say "not affiliated with" the exam body on the landing.
+- If an exam's official format (count, pass mark) cannot be confirmed, use a Tigertest target and say
+  so in sources.md, the landing and examFacts, as `zak53` does.

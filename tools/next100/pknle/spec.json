@@ -1,0 +1,30 @@
+{
+  "id": "pknle",
+  "engine": "v1",
+  "stateCode": "PKNLE",
+  "idBase": 20200,
+  "prefix": "PKNLE-",
+  "slug": "/pmdc-nle",
+  "landingPath": "/pmdc-nle-practice-test",
+  "dataFile": "data/pmdc-nle-questions.json",
+  "name": "PMDC NRE (NLE) Practice Test",
+  "shortName": "PMDC NRE",
+  "examLabel": "PMDC NRE Step 1",
+  "fullName": "PMDC National Registration Examination (formerly National Licensing Examination), Step 1 theory",
+  "icon": "stethoscope",
+  "passPct": 60,
+  "region": "PK",
+  "hue": "175 55% 22%",
+  "categories": [
+    {"key": "pknleAnatPhys", "label": "Applied Anatomy & Physiology", "perTest": 5, "segment": "ANP"},
+    {"key": "pknlePathBio", "label": "Pathology & Biochemistry", "perTest": 5, "segment": "PAB"},
+    {"key": "pknlePharm", "label": "Clinical Pharmacology", "perTest": 2, "segment": "PHA"},
+    {"key": "pknleCommForensic", "label": "Community & Forensic Medicine", "perTest": 3, "segment": "CFM"},
+    {"key": "pknleMedicine", "label": "Medicine & Allied", "perTest": 13, "segment": "MED"},
+    {"key": "pknleSurgery", "label": "Surgery & Allied", "perTest": 11, "segment": "SUR"},
+    {"key": "pknleObGyn", "label": "Obstetrics & Gynaecology", "perTest": 4, "segment": "OBG"},
+    {"key": "pknlePaeds", "label": "Paediatrics", "perTest": 4, "segment": "PAE"},
+    {"key": "pknleEyeEnt", "label": "Eye & ENT", "perTest": 3, "segment": "EYE"}
+  ],
+  "trainingSets": "testSets(20200, 4)"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "sgvl",
+  "stateCode": "SGVL",
+  "idBase": 21800,
+  "prefix": "SGVL-",
+  "slug": "/singapore-vocational-licence",
+  "landingPath": "/singapore-vocational-licence-practice-test",
+  "dataFile": "data/singapore-vocational-licence-questions.json",
+  "name": "Singapore Vocational Licence Practice Test",
+  "shortName": "TDVL / PDVL",
+  "examLabel": "TDVL / PDVL test",
+  "fullName": "Singapore taxi and private hire car driver's vocational licence test (TDVL / PDVL)",
+  "icon": "car",
+  "region": "SG",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 80,
+  "categories": [
+    {"key": "sgvlRoadSafety", "label": "On-the-Road Safety", "perTest": 8, "pool": 32, "segment": "SAF", "paper": "A"},
+    {"key": "sgvlPassenger", "label": "Passenger Engagement & Handling", "perTest": 8, "pool": 32, "segment": "PAS", "paper": "A"},
+    {"key": "sgvlInclusive", "label": "Passengers with Disabilities, Seniors & Children", "perTest": 5, "pool": 20, "segment": "INC", "paper": "A"},
+    {"key": "sgvlLicensing", "label": "Vocational Licences & Renewal", "perTest": 6, "pool": 24, "segment": "LIC", "paper": "B"},
+    {"key": "sgvlConduct", "label": "Conduct Rules & Demerit Points (VLPS)", "perTest": 8, "pool": 32, "segment": "CON", "paper": "B"},
+    {"key": "sgvlFares", "label": "Bookings, Decals & Fares", "perTest": 6, "pool": 24, "segment": "FAR", "paper": "B"},
+    {"key": "sgvlStopping", "label": "Pick-up, Set-down & Taxi Stands", "perTest": 4, "pool": 16, "segment": "STP", "paper": "B"},
+    {"key": "sgvlRoutes", "label": "Routes & Route Planning", "perTest": 5, "pool": 20, "segment": "RTE", "paper": "C"}
+  ],
+  "notes": "LTA and the course providers publish no question count, time or pass mark for the e-test (three papers: A safety and passenger engagement, B rules and regulations, C routes). Four 50-question mock tests, 80% Tigertest's target. Pools are exactly 4x per-test, no spares. Papers weighted A 21, B 24, C 5 per test (Tigertest's split; Paper C's street-directory and landmark tasks are only partly modelled).",
+  "trainingSets": [
+    {"setNumber": 1, "id": 21801, "name": "Road Safety & Stopping Rules", "categories": ["sgvlRoadSafety", "sgvlStopping"], "size": 48},
+    {"setNumber": 2, "id": 21802, "name": "Passenger Engagement", "categories": ["sgvlPassenger", "sgvlInclusive"], "size": 52},
+    {"setNumber": 3, "id": 21803, "name": "Licences & Demerit Points", "categories": ["sgvlLicensing", "sgvlConduct"], "size": 56},
+    {"setNumber": 4, "id": 21804, "name": "Fares, Bookings & Routes", "categories": ["sgvlFares", "sgvlRoutes"], "size": 44}
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "zare5",
+  "stateCode": "ZARE5",
+  "idBase": 20500,
+  "prefix": "ZARE5-",
+  "slug": "/re5-exam",
+  "landingPath": "/re5-exam-practice-test",
+  "dataFile": "data/re5-questions.json",
+  "region": "ZA",
+  "name": "RE5 Practice Test",
+  "shortName": "RE5",
+  "examLabel": "RE5 exam",
+  "fullName": "RE5 Regulatory Examination for Representatives (FAIS)",
+  "icon": "umbrella",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 66,
+  "categories": [
+    {"key": "zare5Framework", "label": "FAIS Act, Financial Products & Compliance Officer", "perTest": 6, "pool": 24, "segment": "FWK", "task": 1},
+    {"key": "zare5Licence", "label": "Maintaining the FSP Licence & Undesirable Practices", "perTest": 6, "pool": 24, "segment": "LIC", "task": 2},
+    {"key": "zare5KeyInd", "label": "Key Individuals", "perTest": 3, "pool": 12, "segment": "KEY", "task": 3},
+    {"key": "zare5Disclosure", "label": "General Duties, Conflicts & Disclosures", "perTest": 7, "pool": 28, "segment": "DIS", "task": 4},
+    {"key": "zare5Advice", "label": "Advice, Client Funds & Complaints", "perTest": 6, "pool": 24, "segment": "ADV", "task": 4},
+    {"key": "zare5Records", "label": "Record Keeping", "perTest": 3, "pool": 12, "segment": "REC", "task": 5},
+    {"key": "zare5Fica", "label": "FIC Act & Money Laundering Control", "perTest": 5, "pool": 20, "segment": "FIC", "task": 6},
+    {"key": "zare5Ombud", "label": "The Ombud for FSPs", "perTest": 3, "pool": 12, "segment": "OMB", "task": 7},
+    {"key": "zare5Rep", "label": "The Representative: Role, Fit & Proper, Supervision", "perTest": 7, "pool": 28, "segment": "REP", "task": 8},
+    {"key": "zare5Debar", "label": "Debarment", "perTest": 4, "pool": 16, "segment": "DEB", "task": 8}
+  ],
+  "notes": "Real RE5 (FSCA Preparation Guide for Regulatory Examinations, 17 January 2026, v1): 50 multiple-choice questions, four options, one correct, 2 hours, 66% to pass, no negative marking, closed book, paper format, eight tasks each covered at least once; question complexity 30/40/20/10 across four levels. No published weight per task, so the per-task split is Tigertest's, led by the number of qualifying criteria per task (4/9/3/14/2/2/1/12). Four full-length 50-question tests, four content sets (sets first, then tests), 8 dashboard steps.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 20501, "name": "FAIS Act, Licence & Key Individuals", "categories": ["zare5Framework", "zare5Licence", "zare5KeyInd"], "size": 60},
+    {"setNumber": 2, "id": 20502, "name": "General Code of Conduct", "categories": ["zare5Disclosure", "zare5Advice"], "size": 52},
+    {"setNumber": 3, "id": 20503, "name": "Records, FIC Act & the Ombud", "categories": ["zare5Records", "zare5Fica", "zare5Ombud"], "size": 44},
+    {"setNumber": 4, "id": 20504, "name": "Representatives & Debarment", "categories": ["zare5Rep", "zare5Debar"], "size": 44}
+  ]
+}

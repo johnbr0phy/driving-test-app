@@ -1,0 +1,37 @@
+{
+  "id": "sgm5",
+  "stateCode": "SGM5",
+  "idBase": 21700,
+  "prefix": "SGM5-",
+  "slug": "/cmfas-m5",
+  "landingPath": "/cmfas-m5-practice-test",
+  "dataFile": "data/sg-cmfas-res5-questions.json",
+  "region": "SG",
+  "name": "CMFAS RES5 Practice Test",
+  "shortName": "CMFAS RES5",
+  "examLabel": "RES5",
+  "fullName": "CMFAS RES5: Rules, Ethics and Skills for Financial Advisory Services (formerly Module 5)",
+  "icon": "building",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 80,
+  "categories": [
+    {"key": "sgm5Faa", "label": "FAA & FAR: Advisers & Representatives", "perTest": 6, "pool": 24, "segment": "FAA", "section": "Part I, chapters 1 and 8 (FAA, FAR, fit and proper, FAA-N26)"},
+    {"key": "sgm5Business", "label": "Conduct of Business, MAS Powers & Offences", "perTest": 5, "pool": 20, "segment": "BUS", "section": "Part I, chapter 2"},
+    {"key": "sgm5Advice", "label": "Recommendations on Investment Products (FAA-N16)", "perTest": 8, "pool": 32, "segment": "ADV", "section": "Part I, chapters 3 and 9"},
+    {"key": "sgm5Notices", "label": "Balanced Scorecard & Other MAS Notices", "perTest": 6, "pool": 24, "segment": "NOT", "section": "Part I, chapters 4 and 6"},
+    {"key": "sgm5Aml", "label": "AML/CFT (FAA-N06)", "perTest": 4, "pool": 16, "segment": "AML", "section": "Part I, chapter 5"},
+    {"key": "sgm5Products", "label": "ILPs, CIS, Market Conduct & CPF", "perTest": 8, "pool": 32, "segment": "PRD", "section": "Part I, chapters 7, 11, 12 and 13"},
+    {"key": "sgm5Ethics", "label": "Ethics, Professionalism & Fair Dealing", "perTest": 7, "pool": 28, "segment": "ETH", "section": "Part II, chapters 14 to 20"},
+    {"key": "sgm5Skills", "label": "Advisory Skills & Financial Planning", "perTest": 6, "pool": 24, "segment": "SKL", "section": "Part II, chapters 21 to 27"}
+  ],
+  "notes": "Real RES5 (SCI, replaced CMFAS Module 5 under MAS Notice FAA-N26 from 1 April 2024): 150 MCQs in 3 hours, Part I 110 questions (75% to pass) and Part II 40 (80% to pass), English, computer screen exam at SCI, closed book. Modelled as four 50-question mock tests at the real pace (1.2 minutes a question) with the Part I : Part II mix kept (37 : 13 per test); the single pass line is the stricter 80%. The 6/5/8/6/4/8 Part I and 7/6 Part II split by chapter is Tigertest's. 6 sets + 4 tests = 10 steps.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 21701, "name": "The FAA, Representatives & Conduct", "categories": ["sgm5Faa", "sgm5Business"], "size": 44},
+    {"setNumber": 2, "id": 21702, "name": "Recommendations (FAA-N16)", "categories": ["sgm5Advice"], "size": 32},
+    {"setNumber": 3, "id": 21703, "name": "Balanced Scorecard, Notices & AML", "categories": ["sgm5Notices", "sgm5Aml"], "size": 40},
+    {"setNumber": 4, "id": 21704, "name": "ILPs, CIS, Market Conduct & CPF", "categories": ["sgm5Products"], "size": 32},
+    {"setNumber": 5, "id": 21705, "name": "Ethics & Fair Dealing", "categories": ["sgm5Ethics"], "size": 28},
+    {"setNumber": 6, "id": 21706, "name": "Advisory Skills & Financial Planning", "categories": ["sgm5Skills"], "size": 24}
+  ]
+}

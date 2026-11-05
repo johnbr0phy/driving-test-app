@@ -1,0 +1,35 @@
+{
+  "id": "phnle",
+  "stateCode": "PHNLE",
+  "idBase": 19100,
+  "prefix": "PHNLE-",
+  "slug": "/nurse-licensure-exam",
+  "landingPath": "/nle-reviewer-practice-test",
+  "dataFile": "data/philippines-nle-questions.json",
+  "name": "NLE Reviewer Practice Test",
+  "shortName": "NLE",
+  "examLabel": "NLE",
+  "fullName": "Philippine Nurse Licensure Examination (NLE/PNLE)",
+  "icon": "stethoscope",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 75,
+  "categories": [
+    {"key": "phnleChn", "label": "Community Health Nursing & DOH Programs", "perTest": 7, "pool": 28, "segment": "CHN"},
+    {"key": "phnleProf", "label": "Nursing Law, Ethics & Leadership", "perTest": 3, "pool": 12, "segment": "PRO"},
+    {"key": "phnleMaternal", "label": "Care of Mother & Adolescent", "perTest": 7, "pool": 28, "segment": "MAT"},
+    {"key": "phnleGrowth", "label": "Human Growth & Development", "perTest": 3, "pool": 12, "segment": "GRO"},
+    {"key": "phnleSurgOxy", "label": "Surgery, Oxygenation, Fluids, Infection & Cancer", "perTest": 10, "pool": 40, "segment": "NP3"},
+    {"key": "phnleMetabNeuro", "label": "Nutrition, GI, Endocrine & Neuro-Sensory", "perTest": 10, "pool": 40, "segment": "NP4"},
+    {"key": "phnleMental", "label": "Psychiatric & Mental Health Nursing", "perTest": 6, "pool": 24, "segment": "PSY"},
+    {"key": "phnleCritical", "label": "Emergency & Critical Care", "perTest": 4, "pool": 16, "segment": "CRT"}
+  ],
+  "notes": "Real NLE: five Nursing Practice parts (I to V) of 2 hours each over two days (PRC program, Aug 29-30, 2026), each a subject in the general average (R.A. 9173 Sec. 15: 75% average, no subject below 60%). Guides report 100 items per part. Each 50-question mock gives each part 10 items: NP I 7 CHN + 3 professional practice (integrated), NP II 7 maternal + 3 growth and development, NP III 10, NP IV 10, NP V 6 psychiatric + 4 emergency. Splits inside a part are Tigertest's; Annex A of BON Res. 10 s. 2025 was not available. Pools exactly 4x per test.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 19101, "name": "NP I: Community Health, Law & Ethics", "categories": ["phnleChn", "phnleProf"], "size": 40},
+    {"setNumber": 2, "id": 19102, "name": "NP II: Mother, Child & Development", "categories": ["phnleMaternal", "phnleGrowth"], "size": 40},
+    {"setNumber": 3, "id": 19103, "name": "NP III: Surgery, Oxygenation & Cancer", "categories": ["phnleSurgOxy"], "size": 40},
+    {"setNumber": 4, "id": 19104, "name": "NP IV: Nutrition, Endocrine & Neuro", "categories": ["phnleMetabNeuro"], "size": 40},
+    {"setNumber": 5, "id": 19105, "name": "NP V: Mental Health & Emergencies", "categories": ["phnleMental", "phnleCritical"], "size": 40}
+  ]
+}

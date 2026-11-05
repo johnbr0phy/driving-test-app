@@ -1,0 +1,36 @@
+{
+  "id": "phmedtech",
+  "stateCode": "PHMEDTECH",
+  "idBase": 19400,
+  "prefix": "PHMT-",
+  "slug": "/medtech-board-exam",
+  "landingPath": "/medtech-board-exam-reviewer-practice-test",
+  "dataFile": "data/philippines-medtech-questions.json",
+  "name": "MedTech Board Exam Reviewer",
+  "shortName": "MTLE",
+  "examLabel": "MTLE",
+  "fullName": "Medical Technologist Licensure Examination (MTLE)",
+  "icon": "microscope",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 75,
+  "categories": [
+    {"key": "phmtChem", "label": "Clinical Chemistry", "perTest": 10, "pool": 40, "segment": "CHM"},
+    {"key": "phmtMicro", "label": "Microbiology", "perTest": 7, "pool": 28, "segment": "MIC"},
+    {"key": "phmtPara", "label": "Parasitology", "perTest": 3, "pool": 12, "segment": "PAR"},
+    {"key": "phmtCm", "label": "Clinical Microscopy", "perTest": 5, "pool": 20, "segment": "CMS"},
+    {"key": "phmtHema", "label": "Hematology", "perTest": 10, "pool": 40, "segment": "HEM"},
+    {"key": "phmtBank", "label": "Blood Banking", "perTest": 5, "pool": 20, "segment": "BBK"},
+    {"key": "phmtSero", "label": "Immunology & Serology", "perTest": 5, "pool": 20, "segment": "SER"},
+    {"key": "phmtHisto", "label": "Histopathologic & Cytologic Techniques", "perTest": 3, "pool": 12, "segment": "HIS"},
+    {"key": "phmtLaws", "label": "MT Laws, Ethics & Lab Management", "perTest": 2, "pool": 8, "segment": "LAW"}
+  ],
+  "notes": "Real MTLE: six subjects of 100 items each over two days (PRC program, Aug 15-16 2026): Clinical Chemistry 20%, Microbiology and Parasitology 20%, Clinical Microscopy 10%, Hematology 20%, Blood Banking and Serology 20%, Histopathologic Techniques, MT Laws and Ethics 10% (RA 5527 Sec. 17; PRB-MT Res. No. 13, s. 2023, Annex A TOS). Each 50-question test keeps the weights: 10/10/5/10/10/5. Microbiology and Parasitology split 7/3 (TOS: Microbiology 70%, Parasitology 30%); Blood Banking and Serology split 5/5 (TOS sections A-E 48 items, F-J 52 items); Histopath/Laws split 3/2 (TOS: histopathology A-E 65 items, laws, ethics, management F-I 35 items). Pools exactly 4x per-test.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 19401, "name": "Clinical Chemistry", "categories": ["phmtChem"], "size": 40},
+    {"setNumber": 2, "id": 19402, "name": "Microbiology & Parasitology", "categories": ["phmtMicro", "phmtPara"], "size": 40},
+    {"setNumber": 3, "id": 19403, "name": "Hematology", "categories": ["phmtHema"], "size": 40},
+    {"setNumber": 4, "id": 19404, "name": "Blood Banking & Immunoserology", "categories": ["phmtBank", "phmtSero"], "size": 40},
+    {"setNumber": 5, "id": 19405, "name": "Clinical Microscopy, Histopath & MT Laws", "categories": ["phmtCm", "phmtHisto", "phmtLaws"], "size": 40}
+  ]
+}

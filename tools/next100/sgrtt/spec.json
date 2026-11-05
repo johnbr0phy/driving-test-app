@@ -1,0 +1,35 @@
+{
+  "id": "sgrtt",
+  "stateCode": "SGRTT",
+  "idBase": 21600,
+  "prefix": "SGRTT-",
+  "slug": "/singapore-rtt",
+  "landingPath": "/singapore-rtt-practice-test",
+  "dataFile": "data/singapore-rtt-questions.json",
+  "name": "Singapore RTT Practice Test",
+  "shortName": "Singapore RTT",
+  "examLabel": "Riding Theory Test",
+  "fullName": "Singapore Riding Theory Test (RTT)",
+  "icon": "bike",
+  "region": "SG",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 90,
+  "categories": [
+    {"key": "sgrtRider", "label": "Rider Fitness, Gear & Posture", "perTest": 7, "pool": 28, "segment": "RDR"},
+    {"key": "sgrtMachine", "label": "Motorcycle Parts, Checks & Handling", "perTest": 8, "pool": 32, "segment": "MCH"},
+    {"key": "sgrtControls", "label": "Controls, Gears & Braking", "perTest": 8, "pool": 32, "segment": "CTL"},
+    {"key": "sgrtSkills", "label": "Moving Off, Turns & Junctions", "perTest": 8, "pool": 32, "segment": "SKL"},
+    {"key": "sgrtConditions", "label": "Bends, Slopes, Weather & Expressways", "perTest": 7, "pool": 28, "segment": "CND"},
+    {"key": "sgrtDefensive", "label": "Defensive Riding & Other Road Users", "perTest": 7, "pool": 28, "segment": "DEF"},
+    {"key": "sgrtGeneral", "label": "Pillions, Breakdowns & Accidents", "perTest": 5, "pool": 20, "segment": "GEN"}
+  ],
+  "notes": "4 tests x 50 = 200; every pool is exactly 4x its per-test count (no spares, no repeats across tests). passPct 90 gives ceil(0.90 x 50) = 45, a Tigertest target: the Traffic Police publish no RTT question count or pass mark (checked 2026-11-05), and 50 questions with 45 to pass is the BTT/FTT format guides quote, not confirmed for the RTT this session. Content is the Traffic Police Riding Theory Booklet, Official Handbook (published online 2.1.2026). Kept clear of the BTT and FTT banks (no signs, markings, headlight hours, road hogging, yellow boxes, flashing amber, missed exits, expressway lists beyond the motorcycle entries). Left out: the alcohol figures (2026 Act changes them), demerit points, fines, red-light and speed camera penalties, the practical test procedure, the circuit course timings, and the handbook's conflicting 2/3/4/6-second following rules except the six-second rule.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 21601, "name": "Rider & Motorcycle", "categories": ["sgrtRider", "sgrtMachine"], "size": 60},
+    {"setNumber": 2, "id": 21602, "name": "Controls, Gears & Braking", "categories": ["sgrtControls"], "size": 32},
+    {"setNumber": 3, "id": 21603, "name": "Moving Off, Turns & Junctions", "categories": ["sgrtSkills"], "size": 32},
+    {"setNumber": 4, "id": 21604, "name": "Road Conditions & Defensive Riding", "categories": ["sgrtConditions", "sgrtDefensive"], "size": 56},
+    {"setNumber": 5, "id": 21605, "name": "Pillions, Breakdowns & Accidents", "categories": ["sgrtGeneral"], "size": 20}
+  ]
+}

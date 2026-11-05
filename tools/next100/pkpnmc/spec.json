@@ -1,0 +1,29 @@
+{
+  "id": "pkpnmc",
+  "engine": "v1",
+  "stateCode": "PKPNMC",
+  "idBase": 20300,
+  "prefix": "PKPNMC-",
+  "slug": "/pnmc-licensing-exam",
+  "landingPath": "/pnmc-licensing-exam-practice-test",
+  "dataFile": "data/pnmc-licensing-questions.json",
+  "name": "PNMC Licensing Exam Practice Test",
+  "shortName": "PNMC Exam",
+  "examLabel": "PNMC licensing exam",
+  "fullName": "Pakistan Nursing and Midwifery Council Licensing Examination (registered nurse)",
+  "icon": "stethoscope",
+  "passPct": 60,
+  "region": "PK",
+  "categories": [
+    {"key": "pkpnmcFund", "label": "Fundamentals of Nursing", "perTest": 7, "segment": "FUN"},
+    {"key": "pkpnmcPharm", "label": "Pharmacology & Dosage", "perTest": 4, "segment": "PHA"},
+    {"key": "pkpnmcAdult", "label": "Adult Health Nursing", "perTest": 9, "segment": "ADU"},
+    {"key": "pkpnmcCritical", "label": "Critical Care & Emergency", "perTest": 4, "segment": "CRI"},
+    {"key": "pkpnmcMaternal", "label": "Maternal & Newborn Health", "perTest": 6, "segment": "MAT"},
+    {"key": "pkpnmcPaeds", "label": "Paediatric Nursing & EPI", "perTest": 6, "segment": "PAE"},
+    {"key": "pkpnmcCommunity", "label": "Community Health Nursing", "perTest": 6, "segment": "COM"},
+    {"key": "pkpnmcMental", "label": "Mental Health Nursing", "perTest": 4, "segment": "MEN"},
+    {"key": "pkpnmcLaw", "label": "Law, Ethics & Leadership", "perTest": 4, "segment": "LAW"}
+  ],
+  "trainingSets": "testSets(20300, 4)"
+}

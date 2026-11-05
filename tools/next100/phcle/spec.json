@@ -1,0 +1,37 @@
+{
+  "id": "phcle",
+  "stateCode": "PHCLE",
+  "idBase": 19000,
+  "prefix": "PHCLE-",
+  "slug": "/criminologist-licensure-exam",
+  "landingPath": "/criminology-board-exam-reviewer-practice-test",
+  "dataFile": "data/criminologist-licensure-questions.json",
+  "name": "Criminology Board Exam Reviewer",
+  "shortName": "CLE",
+  "examLabel": "CLE",
+  "fullName": "Licensure Examination for Criminologists (CLE)",
+  "icon": "badge",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 75,
+  "categories": [
+    {"key": "phcleCrimLaw", "label": "Criminal Law (RPC & Special Laws)", "perTest": 6, "pool": 24, "segment": "LAW"},
+    {"key": "phcleProcedure", "label": "Evidence, Procedure & Human Rights", "perTest": 4, "pool": 16, "segment": "PRO"},
+    {"key": "phcleLea", "label": "Law Enforcement Administration", "perTest": 8, "pool": 32, "segment": "LEA"},
+    {"key": "phcleInvestigation", "label": "Criminal Investigation & Legal Medicine", "perTest": 5, "pool": 20, "segment": "INV"},
+    {"key": "phcleTrafficFireDrugs", "label": "Traffic, Fire & Drug Investigation", "perTest": 5, "pool": 20, "segment": "TFD"},
+    {"key": "phcleForensic", "label": "Forensic Science", "perTest": 7, "pool": 28, "segment": "FOR"},
+    {"key": "phcleCriminology", "label": "Criminology Theories & Research", "perTest": 6, "pool": 24, "segment": "CRM"},
+    {"key": "phcleEthicsJuvenile", "label": "Ethics, Juvenile Justice & Dispute Resolution", "perTest": 4, "pool": 16, "segment": "EJJ"},
+    {"key": "phcleCorrections", "label": "Correctional Administration", "perTest": 5, "pool": 20, "segment": "COR"}
+  ],
+  "notes": "Real CLE: six subjects over three days, weighted Criminal Law and Jurisprudence 20%, Law Enforcement Administration 15%, Crime Detection and Investigation 20%, Forensic Science 15%, Criminology 20%, Correctional Administration 10% (PRC program of the August 1 to 3, 2026 LEC). Board Res. No. 05 s. 2022 TOS: about five items per 1% (100 items in each 20% subject). Each 50-question test: 10 CLJ (6+4), 8 LEA, 10 CDI (5+5), 7 FS, 10 Criminology (6+4), 5 Correctional. The two 15% subjects round to 8 and 7. Pools exactly 4x per test.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 19001, "name": "Criminal Law & Jurisprudence", "categories": ["phcleCrimLaw", "phcleProcedure"], "size": 40},
+    {"setNumber": 2, "id": 19002, "name": "Law Enforcement Administration", "categories": ["phcleLea"], "size": 32},
+    {"setNumber": 3, "id": 19003, "name": "Crime Detection & Investigation", "categories": ["phcleInvestigation", "phcleTrafficFireDrugs"], "size": 40},
+    {"setNumber": 4, "id": 19004, "name": "Forensic Science", "categories": ["phcleForensic"], "size": 28},
+    {"setNumber": 5, "id": 19005, "name": "Criminology", "categories": ["phcleCriminology", "phcleEthicsJuvenile"], "size": 40},
+    {"setNumber": 6, "id": 19006, "name": "Correctional Administration", "categories": ["phcleCorrections"], "size": 20}
+  ]
+}

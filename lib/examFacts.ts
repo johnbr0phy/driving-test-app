@@ -2912,6 +2912,464 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "PRC enhanced Table of Specifications for the LEPT (Board Resolution No. 11, s. 2022, Annex A, amended by Board Resolution No. 11, s. 2025), the PRC LEPT examination program and BPT Resolution No. 228, s. 1996, checked November 2026",
     source: { name: "Professional Regulation Commission", url: "https://www.prc.gov.ph/" },
   },
+  phnle: {
+    answer:
+      "The Philippine Nurse Licensure Examination (NLE or PNLE, the nursing board exam) is the written exam every applicant for a nursing license must pass under the Philippine Nursing Act of 2002 (R.A. 9173). The Professional Regulation Commission gives it through the Professional Regulatory Board of Nursing. It has five parts over two days, Nursing Practice I to V, each two hours: community health nursing; care of the mother and adolescent, and human growth and development; surgery, oxygenation, fluids and electrolytes, infection and immunity, and cellular aberrations; nutrition, gastrointestinal, metabolism and endocrine, and perception and coordination; and maladaptive behavior plus life-threatening and emergency care. Guides report 100 items per part. To pass you need a general average of at least 75% with no subject below 60%.",
+    rows: [
+      { label: "Run by", value: "PRC, Professional Regulatory Board of Nursing" },
+      { label: "Parts", value: "Nursing Practice I to V, over two days" },
+      { label: "Time", value: "2 hours per part" },
+      { label: "Items", value: "Guides report 100 per part (500 in all)" },
+      { label: "Pass mark", value: "General average 75%, no subject below 60% (R.A. 9173)" },
+      { label: "Format", value: "Pen and paper; calculators not allowed" },
+      { label: "2026 sittings", value: "February 26-27 and August 29-30; check PRC for the next" },
+      { label: "Not modelled here", value: "Situational item sets and the 60% subject floor" },
+    ],
+    basedOn: "PRC program of the Nurses Licensure Examination, August 29-30, 2026, Board of Nursing Resolution No. 10, s. 2025 and R.A. 9173, checked November 2026",
+    source: { name: "Professional Regulation Commission", url: "https://www.prc.gov.ph/" },
+  },
+  phmedtech: {
+    answer:
+      "The Medical Technologist Licensure Examination (MTLE), often called the MedTech board exam, is given by the Professional Regulation Commission (PRC) through the Professional Regulatory Board of Medical Technology under RA 5527; a license is required to practice as a medical technologist in the Philippines. It has six subjects over two days, each a two-hour session of 100 items: Clinical Chemistry, Microbiology and Parasitology, Hematology, and Blood Banking and Serology at 20% each, and Clinical Microscopy and Histopathologic Techniques, MT Laws and Ethics at 10% each. To pass you need a general weighted average of at least 75% with no major subject below 50%.",
+    rows: [
+      { label: "Run by", value: "PRC, Professional Regulatory Board of Medical Technology" },
+      { label: "Subjects", value: "Six, 100 items each, over two days" },
+      { label: "Time", value: "Two hours per subject, three subjects a day" },
+      { label: "Weights", value: "Chemistry, Micro/Para, Hematology, Blood Bank/Serology 20% each; Clinical Microscopy, Histopath/Laws 10% each" },
+      { label: "Pass mark", value: "General average 75%, no major subject below 50%" },
+      { label: "Calculator", value: "Non-programmable calculators allowed (PRC list)" },
+      { label: "Sittings", value: "March and August in 2026; check PRC" },
+      { label: "Not modelled here", value: "The per-subject 50% floor and the 60%-of-subjects rule" },
+    ],
+    basedOn: "PRC Professional Regulatory Board of Medical Technology Resolution No. 13, s. 2023 and its Annex A tables of specifications, the PRC program for the August 15 and 16, 2026 MTLE, and RA 5527 (Philippine Medical Technology Act of 1969), checked November 2026",
+    source: { name: "Professional Regulation Commission", url: "https://www.prc.gov.ph/" },
+  },
+  phpharm: {
+    answer:
+      "The Pharmacist Licensure Examination (PhLE) is given by the Professional Regulation Commission (PRC) through the Professional Regulatory Board of Pharmacy; under R.A. 10918, the Philippine Pharmacy Act, you must pass it to practice as a pharmacist in the Philippines, and it is held twice a year. It has six subjects over two days. In the April 2026 program they are Pharmaceutical Chemistry 20%, Pharmacognosy and Biochemistry 15%, Practice of Pharmacy 17.5%, Pharmacology and Pharmacokinetics 15%, Pharmaceutics 17.5% (with jurisprudence and ethics) and Quality Control and Quality Assurance 15%. To pass you need a general weighted average of at least 75% with no subject below 50%. Only basic calculators are allowed.",
+    rows: [
+      { label: "Run by", value: "PRC, Professional Regulatory Board of Pharmacy" },
+      { label: "Subjects", value: "Six, over two days (Saturday and Sunday)" },
+      { label: "Weights", value: "Pharm Chem 20%, Pharmacognosy 15%, Practice 17.5%, Pharmacology 15%, Pharmaceutics 17.5%, QC/QA 15%" },
+      { label: "Time per subject", value: "1.5 to 2 hours (April 2026 program)" },
+      { label: "Pass mark", value: "General weighted average 75%, no subject below 50%" },
+      { label: "Calculator", value: "Basic only (+, -, x, /, memory and square root)" },
+      { label: "Sittings", value: "Twice a year; check PRC for dates" },
+      { label: "Not modelled here", value: "The 50% per-subject floor" },
+    ],
+    basedOn: "PRC Professional Regulatory Board of Pharmacy, revised program of the Pharmacists Licensure Examination on April 18 and 19, 2026, and R.A. 10918 (Philippine Pharmacy Act) Sec. 15 to 17, checked November 2026",
+    source: { name: "Professional Regulation Commission", url: "https://www.prc.gov.ph/" },
+  },
+  phmidwife: {
+    answer:
+      "The Midwife Licensure Examination (the midwife board exam) is the written exam that the Professional Regulation Commission (PRC) and the Professional Regulatory Board of Midwifery give to graduates of midwifery; under R.A. 7392, the Philippine Midwifery Act of 1992, no one may practice midwifery without passing it. It has five subjects over two days, each a two-hour session: Obstetrics, Fundamentals of Health Care, and Infant Care and Feeding on day one, and Primary Health Care and Professional Growth and Development on day two. Sociology, bacteriology, anatomy and physiology, psychology, nutrition, parasitology, microbiology and pharmacology are integrated into those subjects. To pass you need a general rating of 75% with no grade below 50% in any subject.",
+    rows: [
+      { label: "Run by", value: "PRC, Professional Regulatory Board of Midwifery" },
+      { label: "Subjects", value: "Obstetrics; Fundamentals of Health Care; Infant Care and Feeding; Primary Health Care; Professional Growth and Development" },
+      { label: "Time", value: "2 hours per subject, over two days" },
+      { label: "Pass mark", value: "General rating 75%, no subject below 50% (R.A. 7392, Sec. 16)" },
+      { label: "Format", value: "Pen and paper; calculators not allowed" },
+      { label: "Sittings", value: "Usually twice a year; check PRC for the next" },
+      { label: "Not modelled here", value: "The 50% floor per subject" },
+    ],
+    basedOn: "PRC programs of the Midwife Licensure Examination (April 29-30, 2024 and April 14-15, 2026) and R.A. 7392, checked November 2026",
+    source: { name: "Professional Regulation Commission", url: "https://www.prc.gov.ph/" },
+  },
+  phpsychom: {
+    answer:
+      "The Psychometrician Licensure Examination (PmLE) is given by the Professional Regulation Commission (PRC) through the Professional Regulatory Board of Psychology; under the Philippine Psychology Act of 2009 (R.A. 10029) a license is needed to practice as a psychometrician, who administers, scores and interprets objective and structured personality tests (not projective tests) under a licensed psychologist's supervision. The PRC's 2024, 2025 and 2026 programs list four subjects over two days, each in a three-hour session: Developmental Psychology 20%, Abnormal Psychology 20%, Industrial-Organizational Psychology 20% and Psychological Assessment 40%. To pass you need a weighted general average of at least 75% with no subject below 60%.",
+    rows: [
+      { label: "Run by", value: "PRC, Professional Regulatory Board of Psychology" },
+      { label: "Subjects", value: "Developmental 20%, Abnormal 20%, Industrial-Organizational 20%, Psychological Assessment 40%" },
+      { label: "Time", value: "Two days, four 3-hour sessions (8 to 11 a.m. and 1 to 4 p.m.)" },
+      { label: "Pass mark", value: "Weighted general average 75%, no subject below 60% (R.A. 10029, Sec. 18)" },
+      { label: "Items per subject", value: "Not on the PRC program; guides report 150 for Assessment and 100 for the others" },
+      { label: "Calculator", value: "Non-programmable calculators on PRC's approved list" },
+      { label: "Law", value: "R.A. 10029, Philippine Psychology Act of 2009" },
+      { label: "Not modelled here", value: "The 60% floor per subject" },
+    ],
+    basedOn: "PRC programs for the Psychometricians Licensure Examination of August 2024, September 2025 and August 2026, R.A. 10029 and the Code of Ethics and Professional Standards for Psychology Practitioners (Board Resolution No. 11, s. 2017), checked November 2026",
+    source: { name: "Professional Regulation Commission", url: "https://www.prc.gov.ph/" },
+  },
+  phnapolcom: {
+    answer:
+      "The PNP Entrance Examination (PNPE) is given nationwide by the National Police Commission (NAPOLCOM), the latest confirmed sitting was on April 19, 2026, when 9,224 examinees passed it. It is an objective, multiple-choice paper with three hours allotted (8:00 to 11:00 A.M.) on four areas: general information and uprightness (the Constitution, R.A. 6975 and R.A. 8551, the criminal justice system, values), verbal reasoning, quantitative reasoning and logical reasoning. Passing confers the police eligibility needed for appointment as Patrolman or Patrolwoman. Civilian applicants must have a bachelor's degree and be 21 to 30 years old on exam day. NAPOLCOM does not publish the number of items or the passing score; guides say 70%.",
+    rows: [
+      { label: "Run by", value: "National Police Commission (NAPOLCOM)" },
+      { label: "Format", value: "Objective multiple choice" },
+      { label: "Time", value: "3 hours (8:00 to 11:00 A.M.)" },
+      { label: "Areas", value: "General information, verbal, quantitative, logical reasoning" },
+      { label: "Number of items", value: "Not published" },
+      { label: "Passing score", value: "Not published (guides: 70%)" },
+      { label: "Tigertest mock exams", value: "4 x 50 questions, 70% target" },
+      { label: "Civilian applicants", value: "Bachelor's degree, age 21 to 30 on exam day" },
+      { label: "Passing gives", value: "Police eligibility for Patrolman/Patrolwoman" },
+    ],
+    basedOn: "NAPOLCOM's PNP Entrance and Promotional Examinations Announcement (June 30, 2024 exam) and NAPOLCOM's April 2026 results release, checked November 2026",
+    source: { name: "National Police Commission", url: "https://www.napolcom.gov.ph/" },
+  },
+  afpsat: {
+    answer:
+      "The AFP Service Aptitude Test (AFPSAT) is the written aptitude test the Armed Forces of the Philippines uses as the first filter for applicants to the Philippine Army, the Philippine Navy (including the Marines) and the Philippine Air Force, for officer and enlisted programs. It is set out in AFP circulars and given in batches by the services' testing and recruitment offices around the country; applicants bring original documents such as a diploma or certificate, transcript of records or Form 137, PSA birth certificate and a government ID. The AFP does not publish the number of items, the time limit or a passing score, and guides say each service sets its own cut-off. Reviewers describe verbal, numerical, logical and abstract, spatial and mechanical reasoning and general information. Passing is followed by each service's own physical, medical and background screening.",
+    rows: [
+      { label: "Run by", value: "Armed Forces of the Philippines (service testing and recruitment offices)" },
+      { label: "For", value: "Officer and enlisted applicants to the Army, Navy and Air Force" },
+      { label: "Format", value: "Written aptitude test, multiple choice" },
+      { label: "Items and time", value: "Not published (some reviewers quote about 150 items)" },
+      { label: "Areas (guides)", value: "Verbal, numerical, logical and abstract, spatial and mechanical, general information" },
+      { label: "Passing score", value: "Not published; guides say each service sets its own" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions, 70% target" },
+      { label: "Bring (2025 regional notice)", value: "Original diploma or certificate, TOR or Form 137, PSA birth certificate, valid ID" },
+    ],
+    basedOn: "AFP regional AFPSAT announcements as reported by RMN (April 2025) and the PIA (2023), and Gamos and Usona, Graduate Forum 18(1), 2024, which cites AFP Circulars on the AFPSAT of 2013, 2015 and 2020, checked November 2026",
+    source: { name: "Armed Forces of the Philippines", url: "https://www.afp.mil.ph/" },
+  },
+  phcle: {
+    answer:
+      "The Licensure Examination for Criminologists (CLE) is given by the Professional Regulation Commission (PRC) through the Professional Regulatory Board of Criminology; passing it is required to register as a criminologist under R.A. 11131, the Philippine Criminology Profession Act of 2018. It covers six subjects over three days: Criminal Law and Jurisprudence 20%, Law Enforcement Administration 15%, Crime Detection and Investigation 20%, Forensic Science 15%, Criminology 20% and Correctional Administration 10%. To pass you need a weighted average of at least 75% with no grade below 60% in any subject; a subject below 60% with a 75% average is deferred and must be retaken within two years with at least 80%.",
+    rows: [
+      { label: "Run by", value: "PRC, Professional Regulatory Board of Criminology" },
+      { label: "Subjects", value: "Six over three days, two a day" },
+      { label: "Weights", value: "Criminal Law 20%, Law Enforcement 15%, Crime Detection 20%, Forensic Science 15%, Criminology 20%, Correctional Administration 10%" },
+      { label: "Time", value: "Morning subjects 8:00 to 11:30 a.m., afternoon subjects 1:30 to 4:00 p.m." },
+      { label: "Items", value: "100 in each 20% subject (Board table of specifications)" },
+      { label: "Pass mark", value: "Weighted average 75%, no subject below 60%" },
+      { label: "Sittings", value: "February and August in 2026; check PRC for later dates" },
+      { label: "Not modelled here", value: "The 60% subject floor and the full exam length" },
+    ],
+    basedOn: "PRC programs of the February and August 2026 Licensure Examinations for Criminologists, Board of Criminology Resolution No. 05, s. 2022 (table of specifications) and R.A. 11131 Sec. 17, checked November 2026",
+    source: { name: "Professional Regulation Commission", url: "https://www.prc.gov.ph/" },
+  },
+  phinsurance: {
+    answer:
+      "The Insurance Commission (IC) licensing exam for traditional life agents is the written qualifying exam a person must pass before the IC issues a license to sell traditional life insurance in the Philippines. Under the Amended Insurance Code (R.A. 10607), no one may act as an insurance agent or receive a commission without a license from the Insurance Commissioner, and applicants must pass a written examination. The life insurer you will represent registers you for the exam and endorses your license application; the IC runs it on paper and online. The IC does not publish the format on a page we could check: review guides report 50 multiple-choice and true or false items in about one hour, with 70% to pass. An agent's license is renewed every three years.",
+    rows: [
+      { label: "Run by", value: "Insurance Commission (attached to the Department of Finance)" },
+      { label: "Who registers you", value: "The life insurance company you will represent" },
+      { label: "Questions", value: "About 50, multiple choice and true or false (guides report)" },
+      { label: "Time", value: "About 1 hour (guides report)" },
+      { label: "Pass mark", value: "70% (guides report; not published by the IC)" },
+      { label: "Format", value: "Paper at IC venues or online (Online ACE)" },
+      { label: "License", value: "Renewed every 3 years (Insurance Code, Section 307)" },
+    ],
+    basedOn: "Amended Insurance Code (R.A. 10607) Sections 307 and 312, and IC Circular Letters 2021-01, 2021-08 and 2024-21, checked November 2026",
+    source: { name: "Republic Act No. 10607 (Lawphil)", url: "https://lawphil.net/statutes/repacts/ra2013/ra_10607_2013.html" },
+  },
+  phrebroker: {
+    answer:
+      "The Real Estate Brokers Licensure Examination is the board exam that the Professional Regulation Commission gives through the Professional Regulatory Board of Real Estate Service under R.A. 9646, the Real Estate Service Act; a license is required to practice as a real estate broker in the Philippines. In the Board's recent exam programs it is given in one day in three subjects: General/Fundamentals of Real Estate Service (25%, two hours), Special and Technical Knowledge (25%, two hours) and Professional Practice (50%, four hours). To pass you need an average of at least 75% in all subjects with no rating below 50% in any subject.",
+    rows: [
+      { label: "Subjects", value: "General/Fundamentals 25%; Special and Technical Knowledge 25%; Professional Practice 50%" },
+      { label: "Time", value: "2 h, 2 h and 4 h on one day" },
+      { label: "Items", value: "100, 100 and 200 in the Board's 2011 table of specifications" },
+      { label: "Pass mark", value: "Average 75%, no subject below 50% (R.A. 9646 Sec. 15)" },
+      { label: "Run by", value: "PRC, Professional Regulatory Board of Real Estate Service" },
+    ],
+    basedOn: "the PRC exam program for the 22 April 2025 Real Estate Brokers Licensure Examination and R.A. 9646, checked November 2026",
+    source: { name: "PRC: Real Estate Brokers Licensure Examination program (April 2025)", url: "https://prc.gov.ph/sites/default/files/041025%20EXAM%20PROGRAM%20REAL%20ESTATE%20BROKERS_Rev1.pdf" },
+  },
+  ppsc: {
+    answer:
+      "The Punjab Public Service Commission (PPSC), founded in 1937 and based in Lahore, recruits for posts in the Government of Punjab, Pakistan. Each advertisement links its own syllabus. Many posts use a one-paper MCQ written test, which guides describe as 100 questions in 90 minutes, with a general ability part covering general knowledge, Pakistan Studies, Islamic Studies (Ethics for non-Muslims), current affairs, geography, English, basic mathematics, everyday science and computers, often alongside questions on the post's own subject. The qualifying mark and whether wrong answers lose marks vary by post, so check the advertisement. Qualified candidates are usually interviewed.",
+    rows: [
+      { label: "Run by", value: "Punjab Public Service Commission, Lahore" },
+      { label: "Format", value: "One-paper MCQ test (syllabus set per post)" },
+      { label: "Questions and time (guides)", value: "Commonly 100 MCQs in 90 minutes" },
+      { label: "General ability topics", value: "GK, Pakistan Studies, Islamiat, current affairs, English, maths, science, computers" },
+      { label: "Pass mark", value: "Varies by post (not published as one figure)" },
+      { label: "Negative marking", value: "Varies by post; check your advertisement" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions, 70% target" },
+      { label: "After the test", value: "Interview for qualified candidates" },
+    ],
+    basedOn: "Guides to PPSC one-paper MCQ tests and search listings of PPSC syllabus notices, checked November 2026 (ppsc.gop.pk did not load when checked)",
+    source: { name: "Punjab Public Service Commission", url: "https://www.ppsc.gop.pk/" },
+  },
+  punjabpolice: {
+    answer:
+      "The Punjab Police in Pakistan recruits Constables and Lady Constables (BPS-7) district by district, through advertisements issued from the Central Police Office in Lahore. In its 2025 and 2026 advertisements, applicants in settled areas had to be 18 to 22 with a Matric certificate of at least 50% marks, a domicile of the district and minimum height (and, for men, chest) measurements, with wider limits in the de-excluded areas of Dera Ghazi Khan and Rajanpur. Candidates are measured, run 1.6 km (7 minutes for men, 10 for women), and those who pass take a written examination; those who pass that are called for interview. Punjab Police does not publish the number of questions, the time, the subjects or a pass mark for the written test.",
+    rows: [
+      { label: "Run by", value: "Punjab Police (district recruitment committees)" },
+      { label: "Posts", value: "Constable, Lady Constable (BPS-7); Driver Constable" },
+      { label: "Stages", value: "Height and chest, 1.6 km race, written test, interview" },
+      { label: "Questions and time", value: "Not published" },
+      { label: "Subjects", value: "Not published" },
+      { label: "Pass mark", value: "Not published" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions, 70% target" },
+      { label: "Age (settled areas, 2025-2026)", value: "18 to 22" },
+      { label: "Education", value: "Matric, at least 50% marks (settled areas)" },
+    ],
+    basedOn: "Punjab Police advertisements of 25 January 2025 and 31 October 2026 and its March 2025 notice on the written examinations, checked November 2026",
+    source: { name: "Punjab Police", url: "https://punjabpolice.gov.pk/" },
+  },
+  pakarmy: {
+    answer:
+      "The Pakistan Army recruits soldiers (General Duty, Technical, Driver, Military Police, Clerk, Cook and other categories) through registration online at joinpakarmy.gov.pk or in person at an Army Selection and Recruitment Centre or regimental centre. The Associated Press of Pakistan's report on the 2025 drive listed the selection process as a written test, physical and medical tests and an interview at the selection and recruitment centres. The Army does not publish a syllabus, question count or pass mark for the written test; candidates and guides describe verbal and non-verbal intelligence sections and matric-level multiple-choice questions on English, mathematics, general knowledge, Islamiat and Pakistan studies. For the drive with registration from 1 September to 23 November 2026, most soldier categories took candidates aged 17½ to 23 with at least Matric (Intermediate for clerks), as reported in the news.",
+    rows: [
+      { label: "Run by", value: "Pakistan Army (Army Selection and Recruitment Centres)" },
+      { label: "Registration", value: "Online at joinpakarmy.gov.pk or in person at an AS&RC" },
+      { label: "Selection stages", value: "Written test, physical and medical tests, interview" },
+      { label: "Written test content", value: "Not published; guides say verbal and non-verbal intelligence plus matric-level MCQs" },
+      { label: "Pass mark", value: "Not published" },
+      { label: "Age (most soldier categories, 2026 drive)", value: "17½ to 23, with relaxations for some areas" },
+      { label: "Education (2026 drive)", value: "Matric for General Duty; Intermediate for Clerk" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions, 70% target" },
+    ],
+    basedOn: "the Associated Press of Pakistan's report on the 2025 soldier recruitment drive and news reports of the 2026 advertisement, checked November 2026 (joinpakarmy.gov.pk did not load)",
+    source: { name: "Join Pak Army", url: "https://www.joinpakarmy.gov.pk" },
+  },
+  pkpaf: {
+    answer:
+      "The Pakistan Air Force recruits airmen through its official recruitment portal and its selection and recruitment centres, which announce each intake in an advertisement. The PAF does not publish a syllabus, question count or pass mark for the airman tests. Candidates and guides describe an academic test at matric or intermediate level (English, mathematics, and physics for technical trades) and intelligence tests with verbal and non-verbal parts, followed by a medical and an interview. Categories, ages and education rules are set in each advertisement, so check the current one.",
+    rows: [
+      { label: "Run by", value: "Pakistan Air Force (PAF selection and recruitment centres)" },
+      { label: "Registration", value: "Through the PAF's official recruitment portal, per each advertisement" },
+      { label: "Written test content", value: "Not published; guides say English, maths, physics and verbal and non-verbal intelligence" },
+      { label: "Pass mark", value: "Not published" },
+      { label: "Airman training", value: "PAF Airmen Academy, Korangi, Karachi (since 2019)" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions, 70% target" },
+    ],
+    basedOn: "the PAF's rank structure and training institutions as documented in November 2026; joinpaf.gov.pk and paf.gov.pk did not load when checked",
+    source: { name: "Join PAF", url: "https://joinpaf.gov.pk" },
+  },
+  pknle: {
+    answer:
+      "The National Registration Examination (NRE), formerly called the National Licensing Examination (NLE), is the exam a Pakistani graduate of a foreign medical college must pass before the Pakistan Medical and Dental Council grants full registration, under section 18 of the PMDC Act 2022. It has two steps. Step 1 is a theory paper of 200 multiple-choice questions, 30 percent applied basic sciences and 70 percent clinical sciences, and Step 2 is a 20-station clinical skills OSCE. Each needs 60 percent, with no negative marking. NUMS, Rawalpindi conducts it for the PM&DC at least twice a year.",
+    rows: [
+      { label: "Run by", value: "PM&DC, conducted by NUMS Rawalpindi" },
+      { label: "For", value: "Pakistani graduates of foreign medical colleges" },
+      { label: "Step 1", value: "200 MCQs: 60 basic sciences, 140 clinical" },
+      { label: "Step 1 length", value: "3 hours 30 minutes (June 2025 sitting)" },
+      { label: "Pass mark", value: "60% in each step, no negative marking" },
+      { label: "Step 2", value: "Clinical Skills Examination, 20 OSCE stations" },
+      { label: "Next Step 1", value: "8 November 2026 (PMDC notice of 5 October 2026)" },
+    ],
+    basedOn: "PM&DC NRE (Medical) Standards, Structure and Syllabus 2024 and PMDC press releases and notices, checked November 2026",
+    source: { name: "Pakistan Medical and Dental Council", url: "https://pmdc.pk/" },
+  },
+  pkpnmc: {
+    answer:
+      "The Pakistan Nursing and Midwifery Council (PNMC), formerly the Pakistan Nursing Council, registers and licenses nurses, midwives and Lady Health Visitors in Pakistan. The Pakistan Nursing and Midwifery Council (Amendment) Act, 2023 lists among its functions carrying out licensure examinations for the grant of a licence to practise. As of November 2026, PNMC does not publish a question count, time limit or pass mark for a registered nurse licensing exam on its website, and Generic BSN graduates must complete a one-year internship before registration.",
+    rows: [
+      { label: "Run by", value: "Pakistan Nursing and Midwifery Council" },
+      { label: "Law", value: "PNC Act 1973, amended by the PNMC (Amendment) Act 2023" },
+      { label: "Questions", value: "Not published by PNMC" },
+      { label: "Pass mark", value: "Not published by PNMC" },
+      { label: "BSN registration", value: "One-year internship required for Generic BSN graduates" },
+      { label: "Programme exams", value: "Provincial Nursing Examination Boards (Punjab, KP, Sindh, Balochistan)" },
+    ],
+    basedOn: "PNMC website (Licensing Exams, PNMC Act, registration and examination boards pages) and the PNMC (Amendment) Act 2023, checked November 2026",
+    source: { name: "Pakistan Nursing and Midwifery Council", url: "https://pnmc.gov.pk/" },
+  },
+  zak53moto: {
+    answer:
+      "The Code 1 learner's licence is South Africa's learner's licence for a motorcycle with or without a sidecar, a motor tricycle or a motor quadricycle, the step before a Code A1 (125 cc or less) or Code A (over 125 cc) motorcycle licence. You must be 16 on the day of the test for a bike of 125 cc or less and 18 for a bigger one. It is the same K53 learner's test as for a car, written at a driving licence testing centre (DLTC) after an eye test, in three sections: rules of the road, road signs and markings, and vehicle controls, the controls section being for a motorcycle. Study guides say the test is 64 questions (28, 28 and 8) with each section passed separately. The learner's licence is valid for 24 months and cannot be extended.",
+    rows: [
+      { label: "Covers", value: "Motorcycles, motor tricycles and quadricycles" },
+      { label: "Minimum age", value: "16 up to 125 cc, 18 over 125 cc" },
+      { label: "Sections", value: "Rules, signs and markings, vehicle controls (28/28/8, guides say)" },
+      { label: "Pass mark", value: "Each section separately (guides say 22, 23 and 6)" },
+      { label: "Valid for", value: "24 months, cannot be extended" },
+      { label: "Leads to", value: "Code A1 or Code A motorcycle licence" },
+      { label: "Run by", value: "Driving licence testing centres (DLTCs)" },
+    ],
+    basedOn: "gov.za learner's licence service page and the National Road Traffic Regulations as quoted by Arrive Alive, checked November 2026; section counts and marks from study guides",
+    source: { name: "gov.za: Apply for a learner's licence", url: "https://www.gov.za/services/driving-licence/apply-learners-licence" },
+  },
+  zare5: {
+    answer:
+      "The RE5 is the regulatory examination for representatives in all categories of financial services providers under South Africa's Financial Advisory and Intermediary Services (FAIS) Act, part of the fit and proper requirements set by the Financial Sector Conduct Authority (FSCA). According to the FSCA's January 2026 preparation guide, it has 50 multiple-choice questions with four options, to be answered in 2 hours, and the pass mark is 66% with no negative marking. It is a closed-book paper exam drawn from a central question bank, covers eight tasks from the FAIS Act and the General Code of Conduct to the FIC Act, the Ombud for FSPs and debarment, and can be written as many times as needed.",
+    rows: [
+      { label: "Questions", value: "50 multiple choice, four options (2% each)" },
+      { label: "Time", value: "2 hours" },
+      { label: "Pass mark", value: "66%, no negative marking" },
+      { label: "Content", value: "8 tasks on the FAIS Act, Codes of Conduct, FIC Act and Ombud" },
+      { label: "Format", value: "Closed book, paper exam at a venue" },
+      { label: "Attempts", value: "No limit" },
+      { label: "Run by", value: "FSCA, through its mandated examination body" },
+    ],
+    basedOn: "FSCA Preparation Guide for Regulatory Examinations (RE 1 and RE 5), 17 January 2026, and the RE5 task map, checked November 2026",
+    source: { name: "Preparation Guide for Regulatory Examinations (RE 1 and RE 5)", url: "https://www.moonstone.co.za/wp-content/uploads/library/Regulatory%20Exam%20Library/RE%20Preparation%20Guidelines/RE1%20and%20RE5%20Preparation%20Guideline.pdf" },
+  },
+  zasaps: {
+    answer:
+      "The South African Police Service (SAPS) recruits entry-level police trainees through advertised intakes; the 2026/2027 advertisement (reference TRA26/27) closes on 13 November 2026. Applicants must be South African citizens aged 18 to 35 at the closing date, hold a Grade 12 certificate, be proficient in English and one other official language and have no criminal convictions or pending cases. Every applicant faces fitness, psychometric and integrity testing, a medical evaluation and an interview, and vetting that includes fingerprint verification; trainees then attend a SAPS Training Academy. SAPS does not publish the number of questions, the time or a pass mark for the written assessment; guides describe literacy, numeracy and reasoning questions. Applying costs nothing. Tigertest practises the literacy, numeracy and reasoning part with four 50-question mock tests and a 70% target.",
+    rows: [
+      { label: "Run by", value: "South African Police Service (SAPS)" },
+      { label: "Assessments", value: "Fitness, psychometric and integrity testing, medical, interview, vetting" },
+      { label: "Written test content (guides)", value: "Literacy, numeracy and reasoning" },
+      { label: "Questions and time", value: "Not published" },
+      { label: "Pass mark", value: "Not published" },
+      { label: "Age and education", value: "18 to 35 at the closing date, Grade 12" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions, 70% target" },
+      { label: "Cost", value: "Free to apply" },
+    ],
+    basedOn: "SAPS entry-level police trainee advertisement 2026/2027 (TRA26/27) and e-Recruitment FAQ, checked November 2026",
+    source: { name: "South African Police Service", url: "https://www.saps.gov.za/careers/ptrainees.php" },
+  },
+  zapsira: {
+    answer:
+      "In South Africa, nobody may work as a security officer for pay without registering with the Private Security Industry Regulatory Authority (PSIRA), under section 20 of the Private Security Industry Regulation Act 56 of 2001. Section 23 requires an applicant to be a fit and proper person, a South African citizen or permanent resident, at least 18 and mentally sound, to have met the prescribed training requirements, and to have no conviction for an offence listed in the Act's Schedule (within 10 years before applying in the Act as published; the Amendment Act 18 of 2014 drops that limit once in operation). Security officer training is done in grades at PSIRA-accredited training centres, and each course ends in an assessment the centre sets. No official question count or pass mark was found; 70% is Tigertest's target.",
+    rows: [
+      { label: "Questions", value: "Set by the training centre; not published by PSIRA" },
+      { label: "Pass mark", value: "Not published; 70% is Tigertest's target" },
+      { label: "Grades covered", value: "E, D and C (Tigertest's grouping of the course topics)" },
+      { label: "Before registering", value: "Prescribed training at a PSIRA-accredited centre" },
+      { label: "Minimum age", value: "18" },
+      { label: "Citizenship", value: "South African citizen or permanent resident" },
+      { label: "Run by", value: "PSIRA-accredited training centres; registration by PSIRA" },
+    ],
+    basedOn: "Private Security Industry Regulation Act 56 of 2001, ss. 20 and 23 (Government Gazette 23051), checked November 2026; assessment format not confirmed",
+    source: { name: "South African Government: Private Security Industry Regulation Act", url: "https://www.gov.za/documents/private-security-industry-regulation-act" },
+  },
+  iesafepass: {
+    answer:
+      "Safe Pass is a one-day construction health and safety awareness programme run by SOLAS. Under the Construction Regulations 2013, craft and general construction workers, apprentices and people doing on-site security work in Ireland must hold a valid Safe Pass card. The course is given by SOLAS-approved tutors and ends with a multiple-choice assessment that the tutor reads aloud; SOLAS does not publish its length or pass mark. Cards are valid for four years. To renew, you repeat the course or take the alternative renewal test on a computer at a Pearson test centre: 50 multiple-choice questions in 45 minutes, with 45 correct needed to pass.",
+    rows: [
+      { label: "Course", value: "One day, with a SOLAS-approved tutor" },
+      { label: "Course assessment", value: "Multiple choice, read aloud by the tutor; length and pass mark not published" },
+      { label: "Renewal test", value: "50 questions in 45 minutes at a Pearson centre" },
+      { label: "Renewal pass mark", value: "45 of 50 (90%)" },
+      { label: "Card", value: "Valid four years" },
+      { label: "Minimum age", value: "16 on the day of the course" },
+      { label: "Run by", value: "SOLAS" },
+    ],
+    basedOn: "SOLAS Safe Pass and constructioncourses.ie Safe Pass information pages, and the Construction Regulations 2013, checked November 2026",
+    source: { name: "SOLAS: Safe Pass", url: "https://www.solas.ie/construction-lp/safe-pass" },
+  },
+  iespsv: {
+    answer:
+      "The SPSV Driver Entry Test is the National Transport Authority's computer test that everyone must pass before applying to An Garda Síochána for a licence to drive a taxi, hackney or limousine in Ireland (not needed for a local area hackney driver licence). It has two modules: Industry Knowledge, 54 multiple-choice questions on SPSV regulations and good practice from the NTA's Official Manual, and Area Knowledge, 36 questions on the county you want to work in. You need 75 percent in each module, and if you fail one you retake only that module, within 12 months.",
+    rows: [
+      { label: "Questions", value: "90: Industry Knowledge 54, Area Knowledge 36" },
+      { label: "Time", value: "54 minutes and 36 minutes" },
+      { label: "Pass mark", value: "75% in each module" },
+      { label: "Format", value: "Multiple choice on a computer; a few ask for two answers" },
+      { label: "Where", value: "Five NTA test locations around Ireland" },
+      { label: "Study material", value: "NTA Official Manual for Operating in the SPSV Industry" },
+      { label: "Pass one module", value: "Retake only the other, within 12 months" },
+      { label: "Needed for", value: "An SPSV driver licence from An Garda Síochána" },
+    ],
+    basedOn: "the NTA's SPSV driver entry test page and the Official Manual for Operating in the SPSV Industry, Edition 8.1 (September 2026), checked November 2026",
+    source: { name: "NTA: The SPSV driver entry test", url: "https://www.nationaltransport.ie/taxi/driver-licensing/applying-for-an-spsv-driver-licence/the-spsv-driver-entry-test/" },
+  },
+  ieqfa: {
+    answer:
+      "The Qualified Financial Adviser (QFA) designation is a professional qualification recognised by the Central Bank of Ireland under its Minimum Competency Code, which sets the minimum knowledge anyone must have to advise consumers on, or arrange, retail financial products in Ireland. The LIA's QFA programme has six modules: Regulation, Life Assurance, Investment, Loans, Pensions and a Financial Advice capstone. The LIA says most modules, Regulation included, are a 2-hour online multiple-choice exam of 100 questions, held with remote invigilation in January, May and September; the capstone is 2.5 hours and three case study questions. The pass mark is not published on the LIA's exam pages.",
+    rows: [
+      { label: "Questions", value: "100 multiple choice (QFA Regulation, LIA)" },
+      { label: "Time", value: "2 hours" },
+      { label: "Pass mark", value: "Not published; 70% is Tigertest's target" },
+      { label: "Format", value: "Online, remotely invigilated" },
+      { label: "Sittings", value: "January, May and September" },
+      { label: "Modules", value: "Regulation, Life Assurance, Investment, Loans, Pensions, Financial Advice" },
+      { label: "Standard set by", value: "Central Bank of Ireland, Minimum Competency Code 2017" },
+    ],
+    basedOn: "LIA QFA programme and exam pages, and the Central Bank's consolidated Minimum Competency Code (June 2026) and Consumer Protection Code 2025, checked November 2026; pass mark not published",
+    source: { name: "LIA: QFA, Certificate in Professional Financial Advice", url: "https://www.lia.ie/courses/certificate-in-professional-financial-advice" },
+  },
+  iepsa: {
+    answer:
+      "In Ireland, a security guard must hold a licence from the Private Security Authority (PSA) under the Private Security Services Act 2004, and the PSA must refuse anyone under 18 or not a fit and proper person. Since 1 November 2022 the Private Security (Licensing and Qualifications) Regulations require QQI Level 4 minor award 4N20604 Security Guarding Skills, or an equivalent, for a security guard (guarding) licence. QQI's specification assesses it by a theory examination worth 50% and a skills demonstration worth 50%, both of which must be passed; the training provider writes the exam paper, so no official question count or time is published. The award is graded Pass 50 to 64%, Merit 65 to 79% and Distinction 80 to 100%. 70% is Tigertest's target for these mock tests.",
+    rows: [
+      { label: "Qualification", value: "QQI Level 4 minor award 4N20604 Security Guarding Skills (10 credits)" },
+      { label: "Assessment", value: "Theory examination 50% and skills demonstration 50%; pass both" },
+      { label: "Questions", value: "Set by the training provider; not published" },
+      { label: "Grades", value: "Pass 50-64%, Merit 65-79%, Distinction 80-100% (70% is Tigertest's target)" },
+      { label: "Licence", value: "PSA security guard (guarding) licence" },
+      { label: "Minimum age", value: "18" },
+      { label: "Run by", value: "QQI-validated training providers; licensing by the PSA" },
+    ],
+    basedOn: "QQI component specification 4N20604 and S.I. 574/2022 as amended by S.I. 204/2024, checked November 2026",
+    source: { name: "QQI: Security Guarding Skills 4N20604", url: "https://qsearch.qqi.ie/WebPart/AwardDetails?awardCode=4N20604" },
+  },
+  nzmoto: {
+    answer:
+      "The Class 6 learner licence is the first step to riding a motorcycle in New Zealand. You must be at least 16 and pass a basic handling skills test with an approved motorcycle instructor, then a computer-based multi-choice theory test on the road rules for motorcyclists at a driver licensing agent. Published guidance gives it the same format as the car learner test, 35 questions with at least 32 right to pass (drive.govt.nz gives 30 minutes for that test). On a learner licence you ride with no passenger, show an L plate on the rear, stay off the road between 10 pm and 5 am, do not tow, and ride only a LAMS-approved motorcycle.",
+    rows: [
+      { label: "Questions", value: "35 multi-choice (as the car learner test)" },
+      { label: "Pass mark", value: "32 of 35" },
+      { label: "Minimum age", value: "16" },
+      { label: "First", value: "Basic handling skills test with an instructor" },
+      { label: "Learner conditions", value: "No pillion, rear L plate, no riding 10 pm to 5 am, LAMS bike" },
+      { label: "Run by", value: "NZTA Waka Kotahi, at licensing agents" },
+    ],
+    basedOn: "drive.govt.nz learner test page, ACC Ride Forever licensing and LAMS pages, and Wikipedia's summary of NZ licensing, checked November 2026 (NZTA's motorcycle pages could not be read)",
+    source: { name: "drive.govt.nz: Doing the learner licence test", url: "https://drive.govt.nz/learner-licence/doing-the-learner-licence-test" },
+  },
+  nzheavy: {
+    answer:
+      "The Class 2 theory test is the computer test you pass in New Zealand to get a learner licence for a medium rigid truck: a rigid vehicle over 6,000 kg and up to 18,000 kg gross laden weight or a combination up to 12,000 kg. You need a full Class 1 licence first. It covers the heavy vehicle Road Code, including work time and logbook rules. Tigertest's practice tests are 35 questions with 33 to pass, the pass mark reported for the heavy learner test; check the official count and pass mark with NZTA.",
+    rows: [
+      { label: "Licence", value: "Class 2 learner licence (medium rigid vehicles)" },
+      { label: "You need first", value: "A full Class 1 (car) licence" },
+      { label: "Vehicles covered", value: "Rigid over 6,000 kg up to 18,000 kg GLW; combinations up to 12,000 kg" },
+      { label: "Practice target", value: "33 of 35 (reported; check with NZTA)" },
+      { label: "Work time", value: "5.5 h then 30 min break; 13 h a work day; 70 h then 24 h off" },
+      { label: "Run by", value: "NZTA Waka Kotahi" },
+    ],
+    basedOn: "New Zealand heavy vehicle rules as in force November 2026; NZTA's test page could not be read",
+    source: { name: "NZTA Waka Kotahi heavy vehicle licences", url: "https://www.nzta.govt.nz/driver-licences/getting-a-licence/" },
+  },
+  nzsfe: {
+    answer:
+      "The State Final Examination is the examination the Nursing Council of New Zealand (Te Kaunihera Tapuhi o Aotearoa) sets for graduates of approved nursing programmes before it registers them as registered or enrolled nurses. A New Zealand graduate applying for registration as a registered nurse supplies their State Final Examination results, support from the head of their school of nursing and two referees, and the Council registers successful applicants as soon as practicable after they pass. The Council's public website does not set out the number of questions, time or pass standard; candidates should ask their school of nursing or the Council for the current exam details.",
+    rows: [
+      { label: "Run by", value: "Nursing Council of New Zealand (Te Kaunihera Tapuhi o Aotearoa)" },
+      { label: "Who sits it", value: "Graduates of approved NZ nursing programmes, before registration" },
+      { label: "Standards", value: "Standards of competence for registered nurses 2025 (six pou), in force for all purposes from 1 January 2026" },
+      { label: "Questions and time", value: "Not published on the Council's website; ask your school of nursing" },
+      { label: "Pass standard", value: "Not published on the Council's website" },
+      { label: "After passing", value: "Registration, then an annual practising certificate" },
+    ],
+    basedOn: "Nursing Council of New Zealand: Register as a nurse, Registered nurse scope of practice (January 2025) and Standards of competence for registered nurses (2025), checked November 2026",
+    source: { name: "Nursing Council of New Zealand: Register as a nurse", url: "https://www.nursingcouncil.org.nz/Public/NCNZ/nursing-section/Register_as_a_nurse.aspx" },
+  },
+  sgrtt: {
+    answer:
+      "The Riding Theory Test (RTT) is the second theory test for a class 2B motorcycle licence in Singapore, taken after the Basic Theory Test and before the Practical Riding Test. The Traffic Police say it tests riding safety, proper riding techniques and your interaction with other road users, based on their Riding Theory Booklet. After passing it you must pass the Practical Riding Test within one year, or take the RTT again. The Traffic Police do not publish the question count or pass mark; Tigertest's mock tests use 50 questions with a target of 45, the format guides quote for the BTT and FTT.",
+    rows: [
+      { label: "Questions", value: "Not published (Tigertest mocks: 50)" },
+      { label: "Pass mark", value: "Not published (Tigertest target: 45 of 50)" },
+      { label: "Licence", value: "Class 2B (below 200 cc, or below 15 kW electric)" },
+      { label: "Before it", value: "Basic Theory Test" },
+      { label: "Next step", value: "Practical Riding Test, within one year" },
+      { label: "Study material", value: "Riding Theory Booklet (2 Jan 2026)" },
+      { label: "Practice sets", value: "English, Malay, Mandarin, Tamil (Traffic Police)" },
+      { label: "Run by", value: "Traffic Police; booked through your driving centre" },
+    ],
+    basedOn: "Traffic Police Riding Theory Booklet, Official Handbook (published online 2.1.2026), the Online Learning Portal and the Practise Driving and Riding Theory Test page, checked November 2026",
+    source: { name: "Singapore Police Force: Online Learning Portal", url: "https://www.police.gov.sg/Knowledge-Hub/Traffic/Traffic-Matters/Online-Learning-Portal" },
+  },
+  sgm5: {
+    answer:
+      "RES5, Rules, Ethics and Skills for Financial Advisory Services, is the CMFAS module set by the Singapore College of Insurance (SCI) that representatives of financial advisers in Singapore need under MAS Notice FAA-N26. It replaced CMFAS Module 5 (M5) when that notice took effect on 1 April 2024, and a valid M5 pass counts as a RES5 pass. The paper is 150 multiple-choice questions in 3 hours: 110 in Part I on rules and regulations, which needs 75%, and 40 in Part II on ethics and skills, which needs 80%. It is a closed-book computer screen examination in English at SCI, with no marks deducted for wrong answers.",
+    rows: [
+      { label: "Questions", value: "150 multiple choice (Part I 110, Part II 40)" },
+      { label: "Time", value: "3 hours" },
+      { label: "Pass mark", value: "75% in Part I and 80% in Part II" },
+      { label: "Marking", value: "1 mark each, no deduction for wrong answers" },
+      { label: "Format", value: "Closed-book computer screen exam at SCI, in English" },
+      { label: "Replaces", value: "CMFAS Module 5 (M5), from 1 April 2024" },
+      { label: "Run by", value: "Singapore College of Insurance, under MAS Notice FAA-N26" },
+    ],
+    basedOn: "SCI's RES5 exam page and MAS Notice FAA-N26, checked November 2026",
+    source: { name: "Singapore College of Insurance: RES5 exam details", url: "https://www.scicollege.org.sg/Exam/ExamDetails/RES5" },
+  },
+  sgvl: {
+    answer:
+      "In Singapore, anyone who drives a taxi or private hire car for hire needs a vocational licence from the Land Transport Authority (LTA): a Taxi Driver's Vocational Licence (TDVL), which covers taxis and private hire cars, or a Private Hire Car Driver's Vocational Licence (PDVL), which covers private hire cars only. Applicants must be Singapore Citizens aged at least 30 who have held a class 3 or 3A licence for more than a year. After LTA approves the application they attend the vocational licence course at an LTA-listed provider and sit an e-test at an LTA-appointed test centre: three papers on road safety and passenger engagement, rules and regulations, and routes. LTA does not publish the question count or pass mark. The licence is valid for three years.",
+    rows: [
+      { label: "Papers", value: "A: road safety and passengers; B: rules and regulations; C: routes" },
+      { label: "Questions", value: "Not published" },
+      { label: "Pass mark", value: "Not published; 80% is Tigertest's target" },
+      { label: "Format", value: "E-test at an LTA-appointed test centre" },
+      { label: "Before the test", value: "Vocational licence course (TDVL course 16 hours)" },
+      { label: "Licence", value: "Valid three years; refresher course every six years" },
+      { label: "Run by", value: "LTA (Land Transport Authority), Singapore" },
+    ],
+    basedOn: "LTA's OneMotoring vocational licence application and renewal pages and the course providers' published paper outlines, checked November 2026",
+    source: { name: "OneMotoring (LTA): Vocational Licence Application", url: "https://onemotoring.lta.gov.sg/content/onemotoring/home/driving/vocational_licence/vocational_licence_application.html" },
+  },
   jeemain: {
     answer:
       "JEE (Main) Paper 1 is the National Testing Agency's computer-based entrance test for B.E. and B.Tech. admission to NITs, IIITs and other centrally funded institutes, and the qualifying test for JEE (Advanced). It has 75 questions for 300 marks in 3 hours: 25 each in Mathematics, Physics and Chemistry, of which 20 are multiple choice (Section A) and 5 need a numerical value typed as an integer (Section B). Every answer earns 4 marks if correct and loses 1 if wrong, in both sections. For 2027 it is held in two sessions, January and April, and the better NTA score counts.",
@@ -3689,5 +4147,154 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "LIBF's FSRE qualification specification (version 7, July 2026) and CeMAP qualification specification (April 2026), checked November 2026",
     source: { name: "Walbrook (LIBF): Financial Services, Regulation and Ethics", url: "https://www.walbrook.ac.uk/libf/professional-qualifications/financial-and-mortgage-advice/financial-services-regulation-and-ethics-fsre/" },
+  },
+  sgftt: {
+    answer:
+      "The Final Theory Test (FTT) is the second theory test for a class 3 or 3A car licence in Singapore, taken after the Basic Theory Test and before the practical driving test. It is based on the Traffic Police handbook Final Theory of Driving: vehicle controls, driving techniques, defensive driving, other road users, expressways, emergencies and accidents. You book it at one of the three driving centres, and you need a valid final theory pass to sit the practical test. Guides say it is 50 multiple-choice questions in 50 minutes with 45 needed to pass; the Traffic Police do not publish the format.",
+    rows: [
+      { label: "Questions", value: "50 multiple-choice (as guides say)" },
+      { label: "Pass mark", value: "45 of 50 (as guides say)" },
+      { label: "Time", value: "50 minutes (as guides say)" },
+      { label: "Licence", value: "Class 3 and 3A (car)" },
+      { label: "Before it", value: "Basic Theory Test" },
+      { label: "Next step", value: "Practical driving test" },
+      { label: "Study material", value: "Final Theory of Driving (2 Jan 2026)" },
+      { label: "Run by", value: "Traffic Police, at the three driving centres" },
+    ],
+    basedOn: "Traffic Police Final Theory of Driving handbook (published online 2.1.2026) and the Traffic Police Online Learning Portal, checked November 2026",
+    source: { name: "Singapore Police Force: Online Learning Portal", url: "https://www.police.gov.sg/Knowledge-Hub/Traffic/Traffic-Matters/Online-Learning-Portal" },
+  },
+  sgres: {
+    answer:
+      "The Real Estate Salesperson (RES) Examination is the exam the Council for Estate Agencies (CEA) requires before registering someone as a real estate salesperson in Singapore, taken after an approved RES course of at least 65 hours. It has two papers sat separately: Paper 1 on the real estate market, basic land law and dealings with interests in land, and Paper 2 on regulation of the agency industry, ethics, anti-money laundering duties, marketing and property transactions. Each paper has 60 multiple-choice questions worth 1 mark and 20 case-study questions worth 2 marks, lasts 2.5 hours, and has a passing mark of 60 out of 100. A revised syllabus applies to exams from 1 January 2027.",
+    rows: [
+      { label: "Papers", value: "Paper 1 (Units 1 and 2); Paper 2 (Units 3 and 4)" },
+      { label: "Questions", value: "60 MCQs + 20 case-study MCQs per paper (100 marks)" },
+      { label: "Time", value: "2.5 hours per paper" },
+      { label: "Pass mark", value: "60 per paper, subject to CEA review" },
+      { label: "Before the exam", value: "Approved RES course of at least 65 hours" },
+      { label: "Run by", value: "Council for Estate Agencies (CEA)" },
+    ],
+    basedOn: "CEA's Prepare for the RES Examination page and RES Examination Syllabus 2027, checked November 2026",
+    source: { name: "CEA: Prepare for the real estate salesperson examination", url: "https://www.cea.gov.sg/real-estate-professionals/for-aspiring-real-estate-salespersons/real-estate-salesperson-examination/prepare-for-the-real-estate-salesperson-examination/" },
+  },
+  hkiiqe1: {
+    answer:
+      "IIQE Paper I, Principles and Practice of Insurance, is the compulsory paper of Hong Kong's Insurance Intermediaries Qualifying Examination, which anyone seeking an Insurance Authority licence as an insurance agent, technical representative (agent) or technical representative (broker) must pass, together with the paper for their line of business. The Vocational Training Council runs it for the Insurance Authority through its PEAK Exam Centre. Paper I has 75 multiple-choice questions in 2 hours, presented in both English and Chinese, and the pass mark is 70%. It can be taken on paper or on a computer screen, and remote invigilation is offered for Paper I. Results are given as pass or fail only.",
+    rows: [
+      { label: "Questions", value: "75 multiple choice" },
+      { label: "Time", value: "2 hours" },
+      { label: "Pass mark", value: "70%" },
+      { label: "Languages", value: "English and Chinese" },
+      { label: "Syllabus", value: "IA Study Notes, 2024 Edition, seven chapters" },
+      { label: "Run by", value: "VTC (PEAK Exam Centre) for the Insurance Authority" },
+    ],
+    basedOn: "PEAK Exam Centre IIQE handbook effective 1 September 2026 and the Paper I syllabus, checked November 2026",
+    source: { name: "PEAK Exam Centre: Insurance Intermediaries Qualifying Examination", url: "https://www.peak.edu.hk/exam/en/iiqe" },
+  },
+  hklesfi1: {
+    answer:
+      "LE Paper 1, Fundamentals of Securities and Futures Regulation, is the local regulatory framework paper of the Licensing Examination for Securities and Futures Intermediaries, run by the HKSI Institute to meet the competence requirements the SFC recognises for representatives and responsible officers. It is 60 multiple-choice questions in 90 minutes with a 70% pass mark, taken as a computer-based exam in English or Traditional Chinese. Syllabus Version 3.5, in force from 30 June 2026, has nine topics, from Hong Kong's regulators and the Securities and Futures Ordinance to business conduct, anti-money laundering, listing and market misconduct.",
+    rows: [
+      { label: "Questions", value: "60 multiple choice" },
+      { label: "Time", value: "90 minutes" },
+      { label: "Pass mark", value: "70%" },
+      { label: "Languages", value: "English or Traditional Chinese" },
+      { label: "Format", value: "Computer-based, in Hong Kong or at global centres" },
+      { label: "Syllabus", value: "Version 3.5, from 30 June 2026, nine topics" },
+      { label: "Run by", value: "HKSI Institute, for SFC licensing" },
+    ],
+    basedOn: "HKSI Institute LE overview page and the Paper 1 syllabus Version 3.5, checked November 2026",
+    source: { name: "HKSI Institute: Licensing Examination for Securities and Futures Intermediaries", url: "https://www.hksi.org/en/qualification/practising-qualifications/licensing-examination-for-securities-and-futures-intermediaries/overview/" },
+  },
+  nzfirearms: {
+    answer:
+      "Anyone applying for a New Zealand firearms licence for the first time, or whose licence expired more than a year ago, must pass the free Firearms Safety Course before the vetting interview. Its theory test is 30 multiple-choice questions in 30 minutes on the Firearms Safety Code, safe firearms practice and the law, offered in English, Simplified Chinese and te reo Māori, followed by a practical session handling a deactivated firearm. The regulator publishes no pass mark; candidates report needing about 27 of 30. A failed first attempt can be resat after the practical session.",
+    rows: [
+      { label: "Questions", value: "30 multiple choice" },
+      { label: "Time", value: "30 minutes" },
+      { label: "Pass mark", value: "Not published; candidates report 27 of 30 (Tigertest's target)" },
+      { label: "Languages", value: "English, Simplified Chinese, te reo Māori" },
+      { label: "Study from", value: "Firearms Safety Code (being updated for the Arms Act 2026)" },
+      { label: "Also on the course", value: "Practical safe handling session" },
+      { label: "Run by", value: "Firearms Safety and Education New Zealand" },
+    ],
+    basedOn: "Firearms Safety and Education New Zealand's firearms safety course pages, checked November 2026",
+    source: { name: "Firearms Safety and Education NZ: Firearms safety course options", url: "https://www.firearmssafety.govt.nz/individual-licence/courses-and-education/firearms-safety-course-options" },
+  },
+  nzlcq: {
+    answer:
+      "The Licence Controller Qualification (LCQ) is the New Zealand qualification for people who manage the sale of alcohol on licensed premises, and you need it to apply for or renew a manager's certificate. It is awarded on two NZQA Level 4 unit standards: 4646, knowledge of the Sale and Supply of Alcohol Act 2012 and its implications for licensed premises (2 credits), and 16705, knowledge of host responsibility requirements as a duty manager (3 credits). Each is graded Achieved or Not Achieved by the approved course provider, which sets its own assessment; no national question count or pass mark is published, so Tigertest's mock tests use an 80% readiness target.",
+    rows: [
+      { label: "Unit standards", value: "4646 (the Act, 2 credits) and 16705 (host responsibility, 3 credits)" },
+      { label: "Level", value: "NZQA Level 4" },
+      { label: "Grading", value: "Achieved or Not Achieved, per unit standard" },
+      { label: "Assessment", value: "Set by the provider; no national question count or pass mark" },
+      { label: "Needed for", value: "Applying for or renewing a manager's certificate" },
+      { label: "Offered by", value: "ServiceIQ (online) and other approved course providers" },
+    ],
+    basedOn: "NZQA unit standards 4646 v11 and 16705 v7 (March 2023), checked November 2026",
+    source: { name: "NZQA: unit standard 16705", url: "https://www.nzqa.govt.nz/nqfdocs/units/pdf/16705.pdf" },
+  },
+  aesira: {
+    answer:
+      "In Dubai, anyone who works as a security guard needs an individual licence from the Security Industry Regulatory Agency (SIRA), under Law No. (12) of 2016. The executive regulation issued in June 2026 requires the applicant to be at least 18, hold valid UAE residence if not a UAE national, know the basics of Arabic or English, be of good conduct, and pass the theoretical and practical tests SIRA approves, usually after a basic course at a SIRA-accredited training centre. SIRA does not publish the written test's length or pass mark; guides say about 60 multiple-choice questions in English or Arabic, with about 70% commonly reported as the pass mark. The licence lasts two years.",
+    rows: [
+      { label: "Questions", value: "Not published; about 60 multiple choice (guides say)" },
+      { label: "Pass mark", value: "Not published; about 70% (guides say); 70% is Tigertest's target" },
+      { label: "Languages", value: "English or Arabic (guides say)" },
+      { label: "Before the test", value: "Basic course at a SIRA-accredited training centre" },
+      { label: "Minimum age", value: "18" },
+      { label: "Licence", value: "Valid two years; renew at least 30 days before expiry" },
+      { label: "Run by", value: "SIRA, Dubai" },
+    ],
+    basedOn: "Dubai Law No. (12) of 2016 and its executive regulation, Resolution No. (1) of 2026 (Official Gazette, 4 July 2026), checked November 2026; test length and pass mark from guides",
+    source: { name: "Dubai Legislation Portal: Law No. (12) of 2016", url: "https://dlp.dubai.gov.ae/Legislation%20Reference/2016/Law%20No.%20(12)%20of%202016.html" },
+  },
+  mypce: {
+    answer:
+      "The Pre-Contract Examination for Insurance Agents (PCEIA) is the exam a person must pass in Malaysia before an insurer can contract them as an insurance agent. It is run by the Asian Institute of Insurance (Aii), formerly the Malaysian Insurance Institute. Part A, the basics of insurance, is compulsory; a life agent adds Part C (life insurance) and a general agent adds Part B (general insurance). Each part has 50 multiple-choice questions: Parts A and C, or A and B, take 2 hours for 100 questions, and Part B or C alone takes 1 hour 30 minutes. The passing mark is 50%, and the exam is a virtual computer-based exam in English, Bahasa Malaysia or Mandarin.",
+    rows: [
+      { label: "Parts", value: "A Basics (compulsory); B General insurance; C Life insurance" },
+      { label: "Questions", value: "100 for Parts A+C or A+B (50 per part); 50 for B or C alone" },
+      { label: "Time", value: "2 hours (two parts); 1 hour 30 minutes (one part)" },
+      { label: "Pass mark", value: "50%" },
+      { label: "Format", value: "Multiple choice, virtual computer-based exam" },
+      { label: "Languages", value: "English, Bahasa Malaysia, Mandarin" },
+      { label: "Run by", value: "Asian Institute of Insurance (Aii)" },
+    ],
+    basedOn: "Asian Institute of Insurance PCEIA programme page, checked November 2026",
+    source: { name: "Asian Institute of Insurance: PCEIA", url: "https://aiiasia.org/programmes/pre-contract-examination-for-insurance-agents-pceia/" },
+  },
+  kenck: {
+    answer:
+      "The Nursing Council of Kenya (NCK) licensure examination is the exam a nurse or midwife must pass before the Council registers and licenses them to practise in Kenya. It is taken online at designated regional centres in series in August, November and May. Under the Council's 2026 and 2027 schedule, registered nurse candidates (KRCHN, BScN, KRN/M and KRN/MH) sit two papers on one day, each lasting two hours, after a compulsory rehearsal and two mock exams. The Council does not publish the number of questions or a numeric pass mark: each paper must satisfy its Board of Examiners.",
+    rows: [
+      { label: "Run by", value: "Nursing Council of Kenya" },
+      { label: "Papers", value: "2 for KRCHN, BScN, KRN/M and KRN/MH; 1 for post-basic specialties" },
+      { label: "Time", value: "2 hours per paper" },
+      { label: "Delivery", value: "Online, at designated regional centres" },
+      { label: "Questions", value: "Not published; MCQ, short and long answer" },
+      { label: "Pass mark", value: "Not published; satisfy the Board of Examiners" },
+      { label: "Next series", value: "November 2026 (results 11 December 2026), then May 2027" },
+    ],
+    basedOn: "NCK Instructions and Schedules for 2026 and 2027 Licensure Examinations and the NCK examination page, checked November 2026",
+    source: { name: "Nursing Council of Kenya: Examination", url: "https://nckenya.com/examination/" },
+  },
+  iedttcv: {
+    answer:
+      "The truck and bus Driver Theory Test is the computer test you must pass in Ireland before you can get a learner permit for a truck (category C or C1) or a bus (category D or D1). The truck test and the bus test are each 100 multiple-choice questions in 120 minutes, and you need 74 correct to pass; the combined truck and bus test is 140 questions in 180 minutes with 104 to pass. You need a full car licence first, the certificate is valid for two years, and the full bus or truck test also counts as the first step of the Driver CPC.",
+    rows: [
+      { label: "Questions", value: "100 multiple choice (C or D); 140 for the combined CD test" },
+      { label: "Time", value: "120 minutes (C or D); 180 minutes (CD)" },
+      { label: "Pass mark", value: "74 of 100 (C or D); 104 of 140 (CD)" },
+      { label: "Languages", value: "English or Irish (C, D); English only (CD and module tests)" },
+      { label: "Module test", value: "40 questions, 45 minutes, 30 to pass, to add the other category" },
+      { label: "You need first", value: "A full category B (car) licence" },
+      { label: "Certificate valid", value: "2 years" },
+      { label: "Run by", value: "Road Safety Authority (RSA), booked at theorytest.ie" },
+    ],
+    basedOn: "theorytest.ie FAQs and booking pages, checked November 2026",
+    source: { name: "Official RSA Driver Theory Test", url: "https://www.theorytest.ie/general-information/faqs/" },
   },
 };

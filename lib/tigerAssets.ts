@@ -91,6 +91,20 @@ const BORROWED_SETS: Record<string, string> = {
   // teaching, insurance and mortgage families. Dietitian and HR exams have their own sets above.
   aswbclin: "aswb", cisa: "cissp", cssgb: "pmp", ccs: "cpc", praxis5001: "praxis",
   fladjuster: "pnc", llqp: "insurance", cemap: "nmls",
+  // International batch 1 reuses the car, CDL, real estate, insurance, Series 7, hunter, personal
+  // licence, security guard and NCLEX families.
+  sgftt: "driving", iedttcv: "cdl", sgres: "realestate", hkiiqe1: "insurance", hklesfi1: "series7",
+  nzfirearms: "hunter", nzlcq: "ukaplh", aesira: "security", mypce: "insurance", kenck: "nclex",
+  ppsc: "phcse", punjabpolice: "police", pakarmy: "asvab", pkpaf: "asvab", pknle: "nclex", pkpnmc: "nclex",
+  zak53moto: "moto", zare5: "insurance", zasaps: "police", zapsira: "security",
+  // International batch 4 reuses the construction, car, insurance, security, motorcycle, CDL, NCLEX
+  // and Series 7 families.
+  iesafepass: "cscs", iespsv: "driving", ieqfa: "insurance", iepsa: "security", nzmoto: "moto", nzheavy: "cdl",
+  nzsfe: "nclex", sgrtt: "moto", sgm5: "series7", sgvl: "driving",
+  // International batch 2 (Philippines) reuses the nursing, lab, pharmacy, psychology, police, military,
+  // insurance and real estate families.
+  phnle: "nclex", phmidwife: "nclex", phmedtech: "htl", phpharm: "ptcb", phpsychom: "appsych",
+  phnapolcom: "police", phcle: "police", afpsat: "asvab", phinsurance: "insurance", phrebroker: "realestate",
 };
 
 export function hasTigerSet(examId: string): boolean {

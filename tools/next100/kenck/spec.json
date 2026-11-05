@@ -1,0 +1,29 @@
+{
+  "id": "kenck",
+  "engine": "v1",
+  "stateCode": "KENCK",
+  "idBase": 18700,
+  "prefix": "KENCK-",
+  "slug": "/kenya-nursing-council",
+  "landingPath": "/nursing-council-of-kenya-exam-practice-test",
+  "dataFile": "data/kenya-nursing-council-questions.json",
+  "name": "Nursing Council of Kenya Exam Practice Test",
+  "shortName": "NCK Exam",
+  "examLabel": "NCK licensure exam",
+  "fullName": "Nursing Council of Kenya Licensure Examination (registered nurse)",
+  "icon": "stethoscope",
+  "passPct": 60,
+  "region": "KE",
+  "categories": [
+    {"key": "kenckFund", "label": "Fundamentals of Nursing", "perTest": 7, "segment": "FUN"},
+    {"key": "kenckPharm", "label": "Pharmacology & Dosage", "perTest": 4, "segment": "PHA"},
+    {"key": "kenckMedSurg", "label": "Medical-Surgical Nursing", "perTest": 9, "segment": "MSN"},
+    {"key": "kenckMidwifery", "label": "Midwifery & Newborn Care", "perTest": 8, "segment": "MID"},
+    {"key": "kenckRepro", "label": "Reproductive Health", "perTest": 3, "segment": "RHS"},
+    {"key": "kenckPaeds", "label": "Child Health & IMCI", "perTest": 6, "segment": "PAE"},
+    {"key": "kenckCommunity", "label": "Community Health & PHC", "perTest": 6, "segment": "CHN"},
+    {"key": "kenckMental", "label": "Mental Health Nursing", "perTest": 3, "segment": "MHN"},
+    {"key": "kenckLaw", "label": "Law, Ethics & Leadership", "perTest": 4, "segment": "LAW"}
+  ],
+  "trainingSets": "testSets(18700, 4)"
+}

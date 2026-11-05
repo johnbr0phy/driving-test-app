@@ -1,0 +1,36 @@
+{
+  "id": "nzfirearms",
+  "stateCode": "NZFIREARMS",
+  "idBase": 18300,
+  "prefix": "NZFA-",
+  "slug": "/nz-firearms-licence",
+  "landingPath": "/nz-firearms-licence-practice-test",
+  "dataFile": "data/nz-firearms-questions.json",
+  "region": "NZ",
+  "name": "NZ Firearms Licence Practice Test",
+  "shortName": "NZ firearms licence test",
+  "examLabel": "firearms theory test",
+  "fullName": "New Zealand firearms licence theory test (Firearms Safety Course)",
+  "icon": "target",
+  "testCount": 6,
+  "questionsPerTest": 30,
+  "passPct": 90,
+  "categories": [
+    {"key": "nzfaRules", "label": "Rules 1 to 3: Loaded, Muzzle & Chamber", "perTest": 5, "pool": 33, "segment": "RUL"},
+    {"key": "nzfaTarget", "label": "Rule 4: Identify Your Target", "perTest": 4, "pool": 27, "segment": "TGT"},
+    {"key": "nzfaZone", "label": "Rule 5: Check Your Firing Zone", "perTest": 4, "pool": 27, "segment": "ZON"},
+    {"key": "nzfaStates", "label": "States of Readiness", "perTest": 4, "pool": 27, "segment": "STA"},
+    {"key": "nzfaHandling", "label": "Safe Handling in the Field", "perTest": 4, "pool": 27, "segment": "HDL"},
+    {"key": "nzfaStorage", "label": "Rules 6 & 7: Storage, Transport & Alcohol", "perTest": 3, "pool": 20, "segment": "STO"},
+    {"key": "nzfaLaw", "label": "Licence Holder Obligations & the Law", "perTest": 3, "pool": 20, "segment": "LAW"},
+    {"key": "nzfaAmmo", "label": "Firearms, Ammunition & Malfunctions", "perTest": 3, "pool": 19, "segment": "AMM"}
+  ],
+  "notes": "Real theory test: 30 multiple-choice questions in 30 minutes (Firearms Safety and Education New Zealand, course options page, checked 5 Nov 2026). No official pass mark is published; candidates report 27 of 30, so passPct 90 (ceil(0.9*30) = 27) is Tigertest's target. Six real-length tests of 30 (180 items); pools are 6x each per-test count plus 20 training-only spares (the last items of each pool). Dashboard = 5 topic sets + 6 tests = 11 steps. No set exceeds 60.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 18301, "name": "The First Three Rules & Firearm States", "categories": ["nzfaRules", "nzfaStates"], "size": 60},
+    {"setNumber": 2, "id": 18302, "name": "Identify Your Target & Firing Zone", "categories": ["nzfaTarget", "nzfaZone"], "size": 54},
+    {"setNumber": 3, "id": 18303, "name": "Safe Handling in the Field", "categories": ["nzfaHandling"], "size": 27},
+    {"setNumber": 4, "id": 18304, "name": "Storage, Transport, Alcohol & the Law", "categories": ["nzfaStorage", "nzfaLaw"], "size": 40},
+    {"setNumber": 5, "id": 18305, "name": "Firearms, Ammunition & Malfunctions", "categories": ["nzfaAmmo"], "size": 19}
+  ]
+}

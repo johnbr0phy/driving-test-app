@@ -55,6 +55,13 @@ const TEACHER_LED = new Set([
   "cma", "nbdhe", "nptepta", "aatl2", "accafa",
   // Next-20 batch C (November 2026)
   "aswbclin", "phr", "ccs", "rdexam", "cemap",
+  // International batch 1 (November 2026)
+  "nzlcq", "aesira", "kenck",
+  "pknle", "pkpnmc", "zapsira", "punjabpolice",
+  // International batch 4 (November 2026)
+  "iesafepass", "iepsa", "nzsfe", "sgvl",
+  // International batch 2 (November 2026): the PRC board exams and the criminology board exam
+  "phnle", "phmedtech", "phpharm", "phmidwife", "phpsychom", "phcle", "phrebroker",
 ]);
 
 export function isTeacherLedExam(id: string): boolean {

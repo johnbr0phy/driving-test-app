@@ -300,7 +300,6 @@ function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
               data={communityData}
               loading={communityLoading}
               analyticsKey={`stats_community_${exam.copy.analyticsKey}`}
-              examId={exam.id}
               onUpgradeClick={() => {
                 trackPaywallHit("community_wrong_questions", "Community Wrong Questions", paywallLocation);
                 trackViewItem(paywallLocation);

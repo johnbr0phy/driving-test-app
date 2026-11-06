@@ -6,6 +6,7 @@ import { getExamTrainingSetQuestions } from '@/lib/examTestGenerator';
 import { getExamQuestions } from '@/lib/examData';
 import { migrateTestSets } from '@/lib/testSetMigration';
 import { splitLegacySets } from '@/lib/legacySetSplits';
+import { applyLegacyIdMoves, applyLegacySetMoves } from '@/lib/legacyIdMoves';
 import { SIGN_BY_QUESTION_ID } from '@/lib/signImages';
 import type { Language } from '@/i18n';
 import type { Question } from '@/types';
@@ -30,6 +31,7 @@ const EMPTY: SetState = { masteredIds: [], wrongQueue: [] };
 
 /** Same signals as useStartedTests; retain the exact jurisdiction instead of mixing family progress. */
 export function startedCatalogExams(data: CatalogUserData): ExamConfig[] {
+  data = applyLegacyIdMoves(data);
   const exams = new Map<string, ExamConfig>();
   const add = (exam?: ExamConfig) => { if (exam) exams.set(exam.id, exam); };
   for (const id of data.startedExams ?? []) add(getExamVariant(id, data.examStates?.[id]) ?? getExamById(id));
@@ -46,13 +48,15 @@ function stateFor(exam: ExamConfig, data: CatalogUserData) {
   // The browser first carries retired HTL staining mastery into its split
   // sets. Apply only this exam's additions: practicing CNA must not migrate
   // or otherwise write HTL state as an unrelated side effect.
-  const split = splitLegacySets(original);
+  // Also moves records left on another exam's old ids (ASWB Clinical shared
+  // K53 Code 3's block until Nov 2026), again only for this exam's own sets.
+  const split = splitLegacySets(applyLegacySetMoves(original));
   const ownedIds = new Set(exam.trainingSets.map((set) => String(set.id)));
-  for (const [id, value] of Object.entries(split)) {
-    if (ownedIds.has(id) && value !== original[id]) {
-      sets[id] = value;
-      migration[id] = value;
-    }
+  for (const id of ownedIds) {
+    const value = split[id];
+    if (value === original[id]) continue;
+    if (value) sets[id] = value; else delete sets[id];
+    migration[id] = value;
   }
   Object.assign(migration, migrateTestSets(exam, sets) ?? {});
   for (const [id, value] of Object.entries(migration)) {
@@ -62,6 +66,7 @@ function stateFor(exam: ExamConfig, data: CatalogUserData) {
 }
 
 export function catalogProgress(exam: ExamConfig, data: CatalogUserData) {
+  data = applyLegacyIdMoves(data);
   const { sets } = stateFor(exam, data);
   const language = examLanguage(exam, data.language ?? 'en');
   const history = data.trainingAnswerHistory ?? [];

@@ -10,6 +10,8 @@ import { getAdminAuth, getAdminDb } from "@/lib/firebase-admin";
 // classes they teach (with every member doc), their member docs in other
 // people's classes and quizzes, assistant play state, enrollments, signup
 // origin, connected-assistant refresh tokens, then the Firebase Auth user.
+// Question reports they sent are kept (they are about our questions) but lose
+// their uid and email.
 
 type Db = ReturnType<typeof getAdminDb>;
 
@@ -70,6 +72,8 @@ export async function POST(request: NextRequest) {
     await deleteWhere(db, "quizzes", "ownerUid", uid, true);
     await deleteWhere(db, "classes", "teacherUid", uid, true);
     await deleteWhere(db, "enrollments", "uid", uid);
+    const reports = await db.collection("questionReports").where("uid", "==", uid).get();
+    for (const d of reports.docs) await d.ref.update({ uid: null, email: null });
     await deleteWhere(db, "oauth_refresh_tokens", "userId", uid);
     await db.collection("signupOrigins").doc(uid).delete().catch(() => {});
     await db.recursiveDelete(userRef);

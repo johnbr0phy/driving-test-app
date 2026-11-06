@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 // consent and children's pages), app/api/account/delete (what deletion
 // removes), lib/classes.ts and lib/quizzes.ts (what teachers and quiz makers
 // see), lib/funnel.ts and the other anonymous counters.
-const UPDATED = "November 4, 2026";
+const UPDATED = "November 6, 2026";
 const CONTACT = "john@johnbrophy.net";
 
 const h2 = "text-2xl font-semibold mb-4 mt-2";
@@ -58,7 +58,9 @@ export default function PrivacyPage() {
               </li>
               <li>
                 <strong>Question reports:</strong> if you report a question, the reason you pick, anything you write, the
-                language and page, and which option you chose. Reports are not linked to your account.
+                language and page, and which option you chose. If you are signed in, the report is linked to your account and
+                its email so we can reply; if you are not, it carries an email only if you type one. We use that email only
+                to answer your report. Deleting your account removes it from your reports.
               </li>
               <li>
                 <strong>Searches and requests:</strong> what you type into the test search (stored without who typed it) and

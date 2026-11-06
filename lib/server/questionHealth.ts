@@ -17,6 +17,10 @@ export interface ReportRow {
   note: string;
   lang: string;
   picked: number | null;
+  /** Signed-in reporter's uid; null for a guest and for reports before Nov 6 2026. */
+  uid?: string | null;
+  /** The account email, or the email a guest typed; null when neither. */
+  email?: string | null;
   createdAt: string;
 }
 

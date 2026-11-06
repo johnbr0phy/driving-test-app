@@ -4,6 +4,8 @@
 //
 // Firestore:
 //   questionReports/{auto}   one report: examId, questionId, reason, note, lang,
+//                            page, picked, uid and email (signed-in reporter's
+//                            account, or a guest's optional email, else null),
 //                            status open | fixed | dismissed, createdAt
 //   questionPicks/{examId}   per question: n answers, c correct, w.{i} wrong
 //                            picks by bank option index, and the same for

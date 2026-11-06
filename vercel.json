@@ -41,6 +41,10 @@
       "schedule": "0 15 * * *"
     },
     {
+      "path": "/api/cron/exit-question",
+      "schedule": "0 18 * * *"
+    },
+    {
       "path": "/api/indexnow/ping",
       "schedule": "0 2 * * *"
     },

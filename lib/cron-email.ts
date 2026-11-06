@@ -110,6 +110,8 @@ export interface UserDoc {
   examId: string;
   /** Words, counts and links for that exam, for the templates. */
   voice: EmailVoice;
+  /** The whole users/{uid} doc, for campaigns that read fields not above. */
+  raw: FirebaseFirestore.DocumentData;
 }
 
 /**
@@ -205,6 +207,7 @@ export async function getEligibleUsers(
       lastActiveAt,
       examId,
       voice,
+      raw: d,
       uid: doc.id,
       email: authRecord.email,
       creationTime: authRecord.creationTime,

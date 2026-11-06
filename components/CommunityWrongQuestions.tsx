@@ -1,10 +1,16 @@
 "use client";
 
-import { Lock } from "lucide-react";
+import { useState } from "react";
+import dynamic from "next/dynamic";
+import { Lock, PlayCircle } from "lucide-react";
+import { mistakeExplainerFor, type MistakeExplainer } from "@/lib/mistakeExplainers";
 import { QuizRow } from "@/components/QuizRow";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { useCommunityStats, type CommunityStatsData } from "@/hooks/useCommunityStats";
 import { trackDailyQuizAnswer } from "@/lib/analytics";
+
+// The player (and its drawings) loads only when someone taps an explainer.
+const MistakeExplainerPlayer = dynamic(() => import("@/components/mistakes/MistakeExplainerPlayer").then((m) => m.MistakeExplainerPlayer), { ssr: false });
 
 const FREE_LIMIT = 5;
 const FREE_LIMIT_MOBILE = 2;
@@ -27,8 +33,10 @@ export function CommunityWrongQuestionsList({
   data,
   loading,
   analyticsKey = "stats_community",
-}: Props & { data: CommunityStatsData | null; loading: boolean; analyticsKey?: string }) {
+  examId = "dmv",
+}: Props & { data: CommunityStatsData | null; loading: boolean; analyticsKey?: string; examId?: string }) {
   const { t } = useTranslation();
+  const [explainer, setExplainer] = useState<MistakeExplainer | null>(null);
 
   if (loading) {
     return (
@@ -63,7 +71,9 @@ export function CommunityWrongQuestionsList({
       </p>
 
       <div className="space-y-2">
-        {visibleQuestions.map((q, idx) => (
+        {visibleQuestions.map((q, idx) => {
+          const ex = mistakeExplainerFor(examId, q.questionId);
+          return (
           <div key={q.questionId} className={!isPremium && idx >= FREE_LIMIT_MOBILE ? "hidden md:block" : undefined}>
             <QuizRow
               chipValue={`${q.errorRate}%`}
@@ -77,6 +87,14 @@ export function CommunityWrongQuestionsList({
                   <p className="text-xs text-gray-500 dark:text-gray-400">
                     {q.wrong} {t("stats.outOf")} {q.total} {t("stats.peopleGotWrong")}
                   </p>
+                  {ex && (
+                    <button
+                      onClick={() => setExplainer(ex)}
+                      className="mt-2 inline-flex items-center gap-1.5 rounded-full bg-brand-light px-3 py-1 text-xs font-semibold text-brand-dark hover:opacity-90"
+                    >
+                      <PlayCircle className="h-4 w-4" /> Watch the tiger explain it
+                    </button>
+                  )}
                   {answered && q.explanation && (
                     <p className="text-xs text-gray-500 dark:text-gray-400 mt-1.5 leading-relaxed animate-in fade-in duration-300">
                       {q.explanation}
@@ -86,8 +104,11 @@ export function CommunityWrongQuestionsList({
               )}
             />
           </div>
-        ))}
+          );
+        })}
       </div>
+
+      {explainer && <MistakeExplainerPlayer ex={explainer} onClose={() => setExplainer(null)} />}
 
       {/* Paywall for free users */}
       {!isPremium && lockedCount > 0 && (

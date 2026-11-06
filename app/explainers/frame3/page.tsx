@@ -6,11 +6,17 @@ import { useMistakeManifest } from "@/components/mistakes/MistakeExplainerPlayer
 import { Stage3, type SceneProps3, type SoundCue } from "@/components/mistakes/Stage3";
 import { W, H } from "@/components/mistakes/Stage2";
 import { DoubleArrowScene3, doubleArrowCues } from "@/components/mistakes/scenes/DoubleArrow3";
+import { CdiffScene3, cdiffCues } from "@/components/mistakes/scenes/Cdiff3";
+import { SaNodeScene3, saNodeCues } from "@/components/mistakes/scenes/SaNode3";
+import { GliptinScene3, gliptinCues } from "@/components/mistakes/scenes/Gliptin3";
 import type { ReactNode } from "react";
 
 /** The premium pass, one explainer so far. */
 const SCENES3: Record<string, { Scene: (p: SceneProps3) => ReactNode; cues: (m: MistakeManifest) => SoundCue[] }> = {
   "dmv-double-arrow": { Scene: DoubleArrowScene3, cues: doubleArrowCues },
+  "crcst-cdiff-spores": { Scene: CdiffScene3, cues: cdiffCues },
+  "ccma-sa-node": { Scene: SaNodeScene3, cues: saNodeCues },
+  "ptcb-gliptin": { Scene: GliptinScene3, cues: gliptinCues },
 };
 
 declare global {

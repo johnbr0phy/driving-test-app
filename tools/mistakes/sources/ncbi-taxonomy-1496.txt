@@ -1,0 +1,5 @@
+URL: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1496&retmode=xml
+TITLE: NCBI Taxonomy record 1496, Clostridioides difficile (names only).
+RETRIEVED: 2026-11-06
+
+<ScientificName>Clostridioides difficile</ScientificName> <Synonym>Clostridium difficile (Hall and O'Toole 1935) Prevot 1938 (Approved Lists 1980)</Synonym> <Synonym>Peptoclostridium difficile</Synonym> <Rank>species</Rank>

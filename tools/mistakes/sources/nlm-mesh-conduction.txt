@@ -1,0 +1,8 @@
+URL: https://id.nlm.nih.gov/mesh/D002036
+TITLE: National Library of Medicine, Medical Subject Headings (MeSH): Bundle of His (D002036), Purkinje Fibers (D011690), Sinoatrial Node (D012849), Atrioventricular Node (D001283). Scope notes via the MeSH SPARQL endpoint.
+RETRIEVED: 2026-11-06
+
+MeSH D002036 Bundle of His. Entry terms: Bundle of His; Atrioventricular Bundle; Left Bundle Branch of His; Right Bundle Branch of His. Scope note: Small band of specialized CARDIAC MUSCLE fibers that originates in the ATRIOVENTRICULAR NODE and extends into the membranous part of the interventricular septum. The bundle of His, consisting of the left and the right bundle branches, conducts the electrical impulses to the HEART VENTRICLES in generation of MYOCARDIAL CONTRACTION.
+MeSH D011690 Purkinje Fibers. Scope note: Modified cardiac muscle fibers composing the terminal portion of the heart conduction system.
+MeSH D012849 Sinoatrial Node. Entry terms: Sinoatrial Node; Sino-Atrial Node; Sinus Node.
+MeSH D001283 Atrioventricular Node. Entry terms: Atrioventricular Node; A-V Node; AV Node; Atrio-Ventricular Node.

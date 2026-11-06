@@ -1,0 +1,240 @@
+{
+  "id": "ccma-sa-node",
+  "examId": "ccma",
+  "questionId": "CCMA-ANP-005",
+  "bank": "data/ccma-questions.json",
+  "answer": {
+    "letter": "A",
+    "text": "Sinoatrial (SA) node"
+  },
+  "medical": true,
+  "sources": {
+    "nhlbi": "nhlbi-how-the-heart-beats.txt",
+    "nhlbicd": "nhlbi-conduction-disorders.txt",
+    "seer": "nci-seer-heart-physiology.txt",
+    "mesh": "nlm-mesh-conduction.txt"
+  },
+  "beats": [
+    {
+      "id": "hook",
+      "kind": "hook",
+      "say": "Here's a tricky one."
+    },
+    {
+      "id": "question",
+      "kind": "question",
+      "say": "Which structure normally acts as the heart's natural pacemaker?"
+    },
+    {
+      "id": "mixup",
+      "say": "It's easy to mix up the SA node and the AV node. The names sound alike, and both are groups of pacemaker cells.",
+      "claims": [
+        {
+          "source": "nhlbi",
+          "quote": "The signal begins in a group of cells, called pacemaker cells, located in the sinoatrial (SA) node in the right atrium."
+        },
+        {
+          "source": "nhlbi",
+          "quote": "The electrical signal then moves down to a group of pacemaker cells called the atrioventricular (AV) node, located between the atria and the ventricles."
+        }
+      ]
+    },
+    {
+      "id": "start",
+      "say": "But the signal starts in the SA node, in the right atrium, and the SA node controls the rate and rhythm of your heartbeat.",
+      "claims": [
+        {
+          "source": "nhlbicd",
+          "quote": "The signal starts with cells in the sinoatrial (SA) node that cause the heart to beat."
+        },
+        {
+          "source": "nhlbi",
+          "quote": "located in the sinoatrial (SA) node in the right atrium"
+        },
+        {
+          "source": "nhlbicd",
+          "quote": "The SA node controls the rate and rhythm of your heartbeat."
+        }
+      ]
+    },
+    {
+      "id": "travel",
+      "say": "The signal travels through the atria, then down to the AV node, where it slows down slightly, allowing the ventricles time to finish filling with blood.",
+      "claims": [
+        {
+          "source": "nhlbi",
+          "quote": "The electrical signal travels through the atria, causing them to pump blood into the ventricles."
+        },
+        {
+          "source": "nhlbi",
+          "quote": "The electrical signal then moves down to a group of pacemaker cells called the atrioventricular (AV) node"
+        },
+        {
+          "source": "nhlbi",
+          "quote": "Here the signal slows down slightly, allowing the ventricles time to finish filling with blood."
+        }
+      ]
+    },
+    {
+      "id": "down",
+      "say": "From the AV node, the bundle of His extends into the septum between the ventricles and conducts the impulses to them. Purkinje fibers make up the terminal portion of the conduction system.",
+      "claims": [
+        {
+          "source": "mesh",
+          "quote": "Small band of specialized CARDIAC MUSCLE fibers that originates in the ATRIOVENTRICULAR NODE and extends into the membranous part of the interventricular septum."
+        },
+        {
+          "source": "mesh",
+          "quote": "conducts the electrical impulses to the HEART VENTRICLES"
+        },
+        {
+          "source": "mesh",
+          "quote": "Modified cardiac muscle fibers composing the terminal portion of the heart conduction system."
+        }
+      ]
+    },
+    {
+      "id": "pump",
+      "say": "The ventricles contract and pump blood out of the heart, and the process starts all over again in the SA node.",
+      "claims": [
+        {
+          "source": "nhlbi",
+          "quote": "causing them to contract and pump blood out of your heart."
+        },
+        {
+          "source": "nhlbi",
+          "quote": "The ventricles relax, and the heartbeat process starts all over again in the SA node."
+        }
+      ]
+    },
+    {
+      "id": "trick",
+      "say": "The trick: S for start. The heartbeat starts in the SA node, the pacemaker of the heart.",
+      "claims": [
+        {
+          "source": "nhlbicd",
+          "quote": "The signal starts with cells in the sinoatrial (SA) node that cause the heart to beat."
+        },
+        {
+          "source": "nhlbi",
+          "quote": "the heartbeat process starts all over again in the SA node"
+        },
+        {
+          "source": "seer",
+          "quote": "Because it establishes the basic rhythm of the heartbeat, it is called the pacemaker of the heart"
+        }
+      ]
+    },
+    {
+      "id": "lock",
+      "say": "Normally, the heart's natural pacemaker is the sinoatrial node, the SA node.",
+      "claims": [
+        {
+          "source": "seer",
+          "quote": "it is called the pacemaker of the heart"
+        },
+        {
+          "source": "seer",
+          "quote": "The first part of the conduction system is the sinoatrial node."
+        },
+        {
+          "source": "nhlbicd",
+          "quote": "Normally, the electrical signal that makes your heart beat travels from the top of your heart to the bottom."
+        }
+      ]
+    }
+  ],
+  "visuals": [
+    {
+      "label": "SA node (upper right atrium)",
+      "source": "nhlbi",
+      "quote": "sinoatrial (SA) node in the right atrium"
+    },
+    {
+      "label": "Right atrium",
+      "source": "nhlbi",
+      "quote": "in the right atrium"
+    },
+    {
+      "label": "AV node (between the atria and the ventricles)",
+      "source": "nhlbi",
+      "quote": "atrioventricular (AV) node, located between the atria and the ventricles"
+    },
+    {
+      "label": "Atria",
+      "source": "nhlbi",
+      "quote": "travels through the atria"
+    },
+    {
+      "label": "Ventricles",
+      "source": "nhlbicd",
+      "quote": "causing your right and left ventricles to contract"
+    },
+    {
+      "label": "Slows down slightly",
+      "source": "nhlbi",
+      "quote": "Here the signal slows down slightly"
+    },
+    {
+      "label": "Bundle of His, down the septum",
+      "source": "mesh",
+      "quote": "originates in the ATRIOVENTRICULAR NODE and extends into the membranous part of the interventricular septum"
+    },
+    {
+      "label": "Bundle branches",
+      "source": "mesh",
+      "quote": "consisting of the left and the right bundle branches"
+    },
+    {
+      "label": "Purkinje fibers",
+      "source": "mesh",
+      "quote": "composing the terminal portion of the heart conduction system"
+    },
+    {
+      "label": "Signal path: top of the heart to the bottom",
+      "source": "nhlbicd",
+      "quote": "travels from the top of your heart to the bottom"
+    },
+    {
+      "label": "Pacemaker of the heart",
+      "source": "seer",
+      "quote": "it is called the pacemaker of the heart"
+    },
+    {
+      "label": "Left atrium",
+      "source": "nhlbicd",
+      "quote": "The signal causes your right and left atria to contract."
+    },
+    {
+      "label": "Right ventricle, Left ventricle",
+      "source": "nhlbicd",
+      "quote": "causing your right and left ventricles to contract"
+    }
+  ],
+  "notes": [
+    "The drawing is schematic: chambers in the conventional front view (the patient's right on the viewer's left), the SA node high in the right atrium, the AV node low between the atria at the centre, the bundle of His down the septum, then the walls of both ventricles. The order of spread through the ventricle walls (apex first) is drawn, not stated.",
+    "No heart rates are given; SEER says 70 to 80 per minute and other sources give other ranges."
+  ],
+  "review": {
+    "ai": [
+      {
+        "date": "2026-11-06",
+        "round": 1,
+        "verdict": "fix first",
+        "by": "adversarial reviewer (Claude)"
+      },
+      {
+        "date": "2026-11-06",
+        "round": 2,
+        "verdict": "fix first: bundle of His pronunciation only; fixed in the voice text",
+        "by": "adversarial reviewer (Claude)"
+      },
+      {
+        "date": "2026-11-06",
+        "verdict": "blind answer A, high confidence, matches key",
+        "by": "blind reviewer (Claude)"
+      }
+    ],
+    "human": null
+  }
+}

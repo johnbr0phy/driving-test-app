@@ -14,7 +14,12 @@ import { H, INK, ORANGE, PAPER, SCENE_Y, W } from "./Stage2";
  */
 
 /** Each test's brand colour (globals.css --brand). */
-const BRAND: Record<string, string> = { dmv: "#c25105" };
+const BRAND: Record<string, string> = {
+  dmv: "#c25105",
+  crcst: "hsl(195, 85%, 34.3%)",
+  ccma: "hsl(188, 70%, 32.8%)",
+  ptcb: "hsl(292, 60%, 42%)",
+};
 export const brandFor = (examId: string) => BRAND[examId] ?? ORANGE;
 
 /** Scene props plus the video length, for the last shot. */
@@ -121,6 +126,13 @@ export function Stage3({ ex, m, t, Scene, question }: { ex: MistakeExplainer; m:
       <g opacity={easeOut(t / 0.5)}>
         <rect x={40} y={46} width={8} height={30} rx={4} fill={brand} />
         <text x={58} y={70} fontSize={20} fontWeight={800} fill={brand} letterSpacing={1.8}>{"MOST MISSED · " + ex.testName.toUpperCase()}</text>
+        {/* a healthcare explainer stays marked as a draft until a qualified person reviews it */}
+        {ex.medical && (
+          <g>
+            <rect x={W - 40 - 214} y={47} width={214} height={30} rx={15} fill="none" stroke="#dc2626" strokeWidth={2} />
+            <text x={W - 40 - 107} y={68} fontSize={15} fontWeight={800} fill="#dc2626" textAnchor="middle" letterSpacing={1.2}>DRAFT · NOT REVIEWED</text>
+          </g>
+        )}
         {wrapText(question, 30).map((l, i) => (
           <text key={i} x={40} y={124 + i * 46} fontSize={38} fontWeight={800} fill={INK} letterSpacing={-0.4}>{l}</text>
         ))}

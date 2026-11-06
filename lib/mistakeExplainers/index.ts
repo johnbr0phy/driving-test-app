@@ -34,6 +34,13 @@ export interface MistakeExplainer {
   /** The question as the bank asks it, shown at the top. */
   question: string;
   beats: MistakeBeat[];
+  /**
+   * A healthcare explainer: every line is tied to a quote from an official
+   * source in tools/mistakes/claims/<id>.json (checked by
+   * scripts/check-mistake-claims.ts), and it stays a draft, never linked from
+   * the site, until a qualified person has reviewed it (review.human there).
+   */
+  medical?: boolean;
 }
 
 export const MISTAKE_EXPLAINERS: MistakeExplainer[] = [
@@ -105,6 +112,64 @@ export const MISTAKE_EXPLAINERS: MistakeExplainer[] = [
       { id: "alt", face: 4, say: "A stands for altimeter. Put a decimal point after the first two digits, and A three zero zero two becomes thirty point zero two inches of mercury." },
       { id: "trick", face: 3, say: "The trick: the air temperature always comes first, and the dew point can't be higher, so the bigger number leads. A means altimeter." },
       { id: "lock", face: 2, say: "So: nineteen degrees, dew point twelve, altimeter thirty point zero two. Done." },
+    ],
+  },
+  {
+    id: "crcst-cdiff-spores",
+    examId: "crcst",
+    questionId: "SPD-DEC-005",
+    title: "Spores and alcohol hand rub",
+    testName: "CRCST exam",
+    question: "Which healthcare pathogen forms spores that alcohol-based hand rubs do not reliably remove or kill?",
+    medical: true,
+    beats: [
+      { id: "hook", face: 8, say: "Here's a tricky one." },
+      { id: "question", face: 6, say: "Which pathogen forms spores that alcohol hand rubs don't reliably kill?" },
+      { id: "answer", face: 4, say: "It's Clostridioides difficile, also known as Clostridium difficile, or C. difficile." },
+      { id: "spores", face: 3, say: "The CDC's hand hygiene guideline names C. difficile in its section on spore-forming bacteria." },
+      { id: "why", face: 4, say: "It says none of the agents in antiseptic handwash or hand rub preparations, including alcohols, reliably kill Clostridium spores." },
+      { id: "soap", face: 3, say: "Washing hands with soap and water may help to physically remove spores." },
+      { id: "gloves", face: 4, say: "It also says to wear gloves when caring for patients with C. difficile diarrhea." },
+      { id: "after", face: 3, say: "After gloves are removed, it allows soap and water or an alcohol-based hand rub. During C. difficile outbreaks, it calls soap and water the prudent choice." },
+      { id: "lock", face: 2, say: "The answer: Clostridioides difficile." },
+    ],
+  },
+  {
+    id: "ccma-sa-node",
+    examId: "ccma",
+    questionId: "CCMA-ANP-005",
+    title: "The heart's natural pacemaker",
+    testName: "CCMA exam",
+    question: "A patient asks what makes the heart beat on its own. Which structure normally acts as the heart's natural pacemaker?",
+    medical: true,
+    beats: [
+      { id: "hook", face: 8, say: "Here's a tricky one." },
+      { id: "question", face: 6, say: "Which structure normally acts as the heart's natural pacemaker?" },
+      { id: "mixup", face: 7, say: "It's easy to mix up the SA node and the AV node. The names sound alike, and both are groups of pacemaker cells." },
+      { id: "start", face: 4, say: "But the signal starts in the SA node, in the right atrium, and the SA node controls the rate and rhythm of your heartbeat." },
+      { id: "travel", face: 3, say: "The signal travels through the atria, then down to the AV node, where it slows down slightly, allowing the ventricles time to finish filling with blood." },
+      { id: "down", face: 4, say: "From the AV node, the bundle of His extends into the septum between the ventricles and conducts the impulses to them. Purkinje fibers make up the terminal portion of the conduction system." },
+      { id: "pump", face: 3, say: "The ventricles contract and pump blood out of the heart, and the process starts all over again in the SA node." },
+      { id: "trick", face: 4, say: "The trick: S for start. The heartbeat starts in the SA node, the pacemaker of the heart." },
+      { id: "lock", face: 2, say: "Normally, the heart's natural pacemaker is the sinoatrial node, the SA node." },
+    ],
+  },
+  {
+    id: "ptcb-gliptin",
+    examId: "ptcb",
+    questionId: "PTCB-MED-010",
+    title: "Januvia: which drug class?",
+    testName: "PTCB exam",
+    question: "Januvia (sitagliptin), taken once daily for type 2 diabetes, belongs to which drug class?",
+    medical: true,
+    beats: [
+      { id: "hook", face: 8, say: "Here's a tricky one." },
+      { id: "question", face: 6, say: "Januvia, or sitagliptin: which drug class is it?" },
+      { id: "ending", face: 4, say: "Look at the ending of sitagliptin. The whole ending, gliptin, not just gli." },
+      { id: "stem", face: 3, say: "The World Health Organization's list of name stems puts sitagliptin under gliptin. A stem points to the related group a drug belongs to." },
+      { id: "label", face: 4, say: "And Januvia's FDA label says it plainly: Januvia is a dipeptidyl peptidase-4, or DPP-4, inhibitor." },
+      { id: "others", face: 3, say: "Two more endings help with the wrong answers. Gliflozin drugs are sodium glucose co-transporter inhibitors, and Jardiance, which contains empagliflozin, is an SGLT2 inhibitor. Glitazone drugs are thiazolidinedione derivatives." },
+      { id: "lock", face: 2, say: "So: Januvia, sitagliptin, is a DPP-4 inhibitor." },
     ],
   },
 ];

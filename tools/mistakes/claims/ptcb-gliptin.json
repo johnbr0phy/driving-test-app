@@ -1,0 +1,180 @@
+{
+  "id": "ptcb-gliptin",
+  "examId": "ptcb",
+  "questionId": "PTCB-MED-010",
+  "bank": "data/ptcb-questions.json",
+  "answer": {
+    "letter": "A",
+    "text": "DPP-4 inhibitor"
+  },
+  "medical": true,
+  "sources": {
+    "who": "who-inn-stems-2024.txt",
+    "label": "fda-label-januvia.txt",
+    "jardiance": "fda-label-jardiance.txt"
+  },
+  "beats": [
+    {
+      "id": "hook",
+      "kind": "hook",
+      "say": "Here's a tricky one."
+    },
+    {
+      "id": "question",
+      "kind": "question",
+      "say": "Januvia, or sitagliptin: which drug class is it?"
+    },
+    {
+      "id": "ending",
+      "say": "Look at the ending of sitagliptin. The whole ending, gliptin, not just gli.",
+      "claims": [
+        {
+          "source": "who",
+          "quote": "-gliptin (see gli) dipeptidyl aminopeptidase–IV inhibitors"
+        },
+        {
+          "source": "who",
+          "quote": "saxagliptin (92), sitagliptin (94), teneligliptin (99)"
+        }
+      ]
+    },
+    {
+      "id": "stem",
+      "say": "The World Health Organization's list of name stems puts sitagliptin under gliptin. A stem points to the related group a drug belongs to.",
+      "claims": [
+        {
+          "source": "who",
+          "quote": "saxagliptin (92), sitagliptin (94), teneligliptin (99)"
+        },
+        {
+          "source": "who",
+          "quote": "Stems define the pharmacologically related group to which the INN belongs."
+        },
+        {
+          "source": "who",
+          "quote": "The use of stems in the selection of International Nonproprietary Names (INN) for pharmaceutical substances"
+        }
+      ]
+    },
+    {
+      "id": "label",
+      "say": "And Januvia's FDA label says it plainly: Januvia is a dipeptidyl peptidase-4, or DPP-4, inhibitor.",
+      "claims": [
+        {
+          "source": "label",
+          "quote": "JANUVIA is a dipeptidyl peptidase-4 (DPP-4) inhibitor indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus."
+        }
+      ]
+    },
+    {
+      "id": "others",
+      "say": "Two more endings help with the wrong answers. Gliflozin drugs are sodium glucose co-transporter inhibitors, and Jardiance, which contains empagliflozin, is an SGLT2 inhibitor. Glitazone drugs are thiazolidinedione derivatives.",
+      "claims": [
+        {
+          "source": "who",
+          "quote": "-gliflozin (see gli) sodium glucose co-transporter inhibitors, phlorizin derivatives"
+        },
+        {
+          "source": "jardiance",
+          "quote": "JARDIANCE tablets for oral use contain empagliflozin, an inhibitor of the SGLT2"
+        },
+        {
+          "source": "jardiance",
+          "quote": "JARDIANCE is a sodium-glucose co-transporter 2 (SGLT2) inhibitor"
+        },
+        {
+          "source": "who",
+          "quote": "-glitazone (see gli) peroxisome proliferator activating receptor-γ (PPAR-γ) agonists, thiazolidinedione derivatives"
+        }
+      ]
+    },
+    {
+      "id": "lock",
+      "say": "So: Januvia, sitagliptin, is a DPP-4 inhibitor.",
+      "claims": [
+        {
+          "source": "label",
+          "quote": "JANUVIA is a dipeptidyl peptidase-4 (DPP-4) inhibitor"
+        },
+        {
+          "source": "label",
+          "quote": "JANUVIA (sitagliptin)"
+        }
+      ]
+    }
+  ],
+  "visuals": [
+    {
+      "label": "Januvia (sitagliptin)",
+      "source": "label",
+      "quote": "JANUVIA (sitagliptin)"
+    },
+    {
+      "label": "sita|gliptin, with -gliptin highlighted",
+      "source": "who",
+      "quote": "-gliptin"
+    },
+    {
+      "label": "WHO list entry: saxagliptin, sitagliptin, teneligliptin",
+      "source": "who",
+      "quote": "saxagliptin (92), sitagliptin (94), teneligliptin (99)"
+    },
+    {
+      "label": "DPP-4 inhibitor",
+      "source": "label",
+      "quote": "dipeptidyl peptidase-4 (DPP-4) inhibitor"
+    },
+    {
+      "label": "-gliflozin: sodium glucose co-transporter inhibitors",
+      "source": "who",
+      "quote": "sodium glucose co-transporter inhibitors"
+    },
+    {
+      "label": "Jardiance (empagliflozin): SGLT2 inhibitor",
+      "source": "jardiance",
+      "quote": "sodium-glucose co-transporter 2 (SGLT2) inhibitor"
+    },
+    {
+      "label": "-glitazone: thiazolidinedione derivatives",
+      "source": "who",
+      "quote": "thiazolidinedione derivatives"
+    },
+    {
+      "label": "WHO, INN stems (2024)",
+      "source": "who",
+      "quote": "The use of stems in the selection of International Nonproprietary Names (INN) for pharmaceutical substances"
+    },
+    {
+      "label": "FDA label",
+      "source": "label",
+      "quote": "JANUVIA"
+    }
+  ],
+  "notes": [
+    "Option C (biguanide) is not explained: no saved source names metformin's class.",
+    "Stems are a naming target ('Whenever possible'), not a guarantee, and apply to generic names, not brands; the script says 'points to', not 'proves'.",
+    "Look-alike names (ISMP: Januvia/Janumet, sitaGLIPtin/SUMAtriptan) are not covered."
+  ],
+  "review": {
+    "ai": [
+      {
+        "date": "2026-11-06",
+        "round": 1,
+        "verdict": "fix first",
+        "by": "adversarial reviewer (Claude)"
+      },
+      {
+        "date": "2026-11-06",
+        "round": 2,
+        "verdict": "pass",
+        "by": "adversarial reviewer (Claude)"
+      },
+      {
+        "date": "2026-11-06",
+        "verdict": "blind answer A, high confidence, matches key",
+        "by": "blind reviewer (Claude)"
+      }
+    ],
+    "human": null
+  }
+}

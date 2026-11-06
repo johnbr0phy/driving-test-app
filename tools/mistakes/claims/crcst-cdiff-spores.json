@@ -1,0 +1,186 @@
+{
+  "id": "crcst-cdiff-spores",
+  "examId": "crcst",
+  "questionId": "SPD-DEC-005",
+  "bank": "data/crcst-questions.json",
+  "answer": {
+    "letter": "A",
+    "text": "Clostridioides difficile"
+  },
+  "medical": true,
+  "sources": {
+    "cdc": "cdc-hand-hygiene-2002.txt",
+    "ncbi": "ncbi-taxonomy-1496.txt"
+  },
+  "beats": [
+    {
+      "id": "hook",
+      "kind": "hook",
+      "say": "Here's a tricky one."
+    },
+    {
+      "id": "question",
+      "kind": "question",
+      "say": "Which pathogen forms spores that alcohol hand rubs don't reliably kill?"
+    },
+    {
+      "id": "answer",
+      "say": "It's Clostridioides difficile, also known as Clostridium difficile, or C. difficile.",
+      "claims": [
+        {
+          "source": "ncbi",
+          "quote": "<ScientificName>Clostridioides difficile</ScientificName>"
+        },
+        {
+          "source": "ncbi",
+          "quote": "<Synonym>Clostridium difficile (Hall and O'Toole 1935) Prevot 1938 (Approved Lists 1980)</Synonym>"
+        },
+        {
+          "source": "cdc",
+          "quote": "During outbreaks of C. difficile-related infections"
+        }
+      ]
+    },
+    {
+      "id": "spores",
+      "say": "The CDC's hand hygiene guideline names C. difficile in its section on spore-forming bacteria.",
+      "claims": [
+        {
+          "source": "cdc",
+          "quote": "Activity of Antiseptic Agents Against Spore-Forming Bacteria The widespread prevalence of health-care–associated diarrhea caused by Clostridium difficile"
+        },
+        {
+          "source": "cdc",
+          "quote": "has raised concern regarding the activity of antiseptic agents against spore-forming bacteria"
+        },
+        {
+          "source": "cdc",
+          "quote": "Guideline for Hand Hygiene in Health-Care Settings"
+        }
+      ]
+    },
+    {
+      "id": "why",
+      "say": "It says none of the agents in antiseptic handwash or hand rub preparations, including alcohols, reliably kill Clostridium spores.",
+      "claims": [
+        {
+          "source": "cdc",
+          "quote": "None of the agents (including alcohols, chlorhexidine, hexachlorophene, iodophors, PCMX, and triclosan) used in antiseptic handwash or antiseptic hand-rub preparations are reliably sporicidal against Clostridium spp."
+        }
+      ]
+    },
+    {
+      "id": "soap",
+      "say": "Washing hands with soap and water may help to physically remove spores.",
+      "claims": [
+        {
+          "source": "cdc",
+          "quote": "Washing hands with non-antimicrobial or antimicrobial soap and water may help to physically remove spores from the surface of contaminated hands."
+        }
+      ]
+    },
+    {
+      "id": "gloves",
+      "say": "It also says to wear gloves when caring for patients with C. difficile diarrhea.",
+      "claims": [
+        {
+          "source": "cdc",
+          "quote": "HCWs should be encouraged to wear gloves when caring for patients with C. difficileassociated diarrhea"
+        }
+      ]
+    },
+    {
+      "id": "after",
+      "say": "After gloves are removed, it allows soap and water or an alcohol-based hand rub. During C. difficile outbreaks, it calls soap and water the prudent choice.",
+      "claims": [
+        {
+          "source": "cdc",
+          "quote": "After gloves are removed, hands should be washed with a non-antimicrobial or an antimicrobial soap and water or disinfected with an alcohol-based hand rub."
+        },
+        {
+          "source": "cdc",
+          "quote": "During outbreaks of C. difficile-related infections, washing hands with a non-antimicrobial or antimicrobial soap and water after removing gloves is prudent."
+        }
+      ]
+    },
+    {
+      "id": "lock",
+      "say": "The answer: Clostridioides difficile.",
+      "claims": [
+        {
+          "source": "ncbi",
+          "quote": "<ScientificName>Clostridioides difficile</ScientificName>"
+        }
+      ]
+    }
+  ],
+  "visuals": [
+    {
+      "label": "Clostridioides difficile",
+      "source": "ncbi",
+      "quote": "Clostridioides difficile"
+    },
+    {
+      "label": "Clostridium difficile (also listed as)",
+      "source": "ncbi",
+      "quote": "Clostridium difficile"
+    },
+    {
+      "label": "Quote: none of the agents ... are reliably sporicidal against Clostridium spp.",
+      "source": "cdc",
+      "quote": "used in antiseptic handwash or antiseptic hand-rub preparations are reliably sporicidal against Clostridium spp."
+    },
+    {
+      "label": "Quote: soap and water may help to physically remove spores",
+      "source": "cdc",
+      "quote": "may help to physically remove spores from the surface of contaminated hands"
+    },
+    {
+      "label": "Gloves",
+      "source": "cdc",
+      "quote": "wear gloves when caring for patients with C. difficileassociated diarrhea"
+    },
+    {
+      "label": "After gloves: soap and water, or alcohol-based hand rub",
+      "source": "cdc",
+      "quote": "soap and water or disinfected with an alcohol-based hand rub"
+    },
+    {
+      "label": "Outbreaks: soap and water",
+      "source": "cdc",
+      "quote": "During outbreaks of C. difficile-related infections, washing hands with a non-antimicrobial or antimicrobial soap and water after removing gloves is prudent."
+    },
+    {
+      "label": "CDC, Guideline for Hand Hygiene in Health-Care Settings (2002)",
+      "source": "cdc",
+      "quote": "Guideline for Hand Hygiene in Health-Care Settings"
+    }
+  ],
+  "notes": [
+    "Hands only: surface disinfection (EPA List K sporicidal products) is not covered; the CRCST item sits in cleaning/decontamination, so a reviewer may want a surfaces beat once an EPA source is saved.",
+    "The CDC hand hygiene guideline is from 2002; the reviewer believes current CDC and SHEA/IDSA 2017 guidance agrees (gloves and gown, soap and water preferred in outbreaks), but those were not saved as sources.",
+    "Bank item SPD-DEC-005: the stem's 'remove or kill' and the explanation's 'must be washed' go beyond the CDC wording; consider fixing the bank text."
+  ],
+  "review": {
+    "ai": [
+      {
+        "date": "2026-11-06",
+        "round": 1,
+        "verdict": "fix first",
+        "by": "adversarial reviewer (Claude)"
+      },
+      {
+        "date": "2026-11-06",
+        "round": 2,
+        "verdict": "pass",
+        "by": "adversarial reviewer (Claude)"
+      },
+      {
+        "date": "2026-11-06",
+        "verdict": "blind answer A, high confidence, matches key",
+        "by": "blind reviewer (Claude)"
+      }
+    ],
+    "human": null
+  }
+}

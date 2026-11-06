@@ -88,7 +88,7 @@ export function SiteHeader() {
 }
 
 function HeaderBar({ path, themePath, examId, v2Id }: { path: string; themePath: string; examId?: string; v2Id?: string }) {
-  const { user } = useAuth();
+  const { user, loading: authLoading } = useAuth();
   const { t: pageT } = useTranslation();
   const hydrated = useHydration();
   const guest = useStore((s) => s.isGuest);
@@ -156,8 +156,10 @@ function HeaderBar({ path, themePath, examId, v2Id }: { path: string; themePath:
 
   // A signed-out visitor's ask. Each dashboard's own save card (GuestSaveCard)
   // already offers Google, email and sign in, so the header leaves it to them.
+  // Not while Firebase is still restoring the session: a signed-in person
+  // would see Sign In (beside their own Premium crown and class) until it does.
   let signIn: ReactNode = null;
-  if (!user) {
+  if (!user && !authLoading) {
     const onboarding = path.startsWith("/onboarding");
     let href = "/login";
     let label = t("common.signIn");

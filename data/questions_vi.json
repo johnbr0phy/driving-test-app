@@ -396,14 +396,14 @@
   "state": "ALL",
   "questionId": "U-029",
   "category": "roadSigns",
-  "question": "Biển báo có hình chữ T cho biết điều gì?",
-  "optionA": "Có giao lộ hình chữ T phía trước",
-  "optionB": "Quay đầu lại",
-  "optionC": "Cấm xe đi xuyên qua",
-  "optionD": "Tuyến đường xe tải",
+  "question": "Biển báo hình thoi màu vàng có hình chữ T màu đen. Biển này có nghĩa là gì?",
+  "optionA": "Đường phía trước kết thúc, nên bạn phải rẽ trái hoặc rẽ phải",
+  "optionB": "Có đường nhánh nhập vào phía trước và đường bạn đang đi vẫn tiếp tục",
+  "optionC": "Làn đường của bạn kết thúc và nhập vào một làn khác",
+  "optionD": "Đường phía trước cấm xe đi xuyên qua",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "Biển hình chữ T cảnh báo con đường phía trước kết thúc tại một giao lộ vuông góc."
+  "explanation": "Biển cảnh báo hình chữ T nghĩa là đường bạn đang đi kết thúc tại một con đường cắt ngang phía trước. Bạn không thể đi thẳng, vì vậy hãy giảm tốc độ và chuẩn bị rẽ trái hoặc rẽ phải."
  },
  {
   "type": "Universal",

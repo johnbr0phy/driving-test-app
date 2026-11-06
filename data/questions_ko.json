@@ -396,14 +396,14 @@
   "state": "ALL",
   "questionId": "U-029",
   "category": "roadSigns",
-  "question": "T자가 그려진 표지판은 무엇을 나타냅니까?",
-  "optionA": "전방 T자 교차로",
-  "optionB": "되돌아가기",
-  "optionC": "통과 통행 금지",
-  "optionD": "트럭 통행로",
+  "question": "노란색 마름모 표지판에 검은색 T자가 그려져 있습니다. 무슨 뜻입니까?",
+  "optionA": "전방에서 도로가 끝나므로 좌회전 또는 우회전해야 합니다",
+  "optionB": "전방에서 옆길이 합류하며 현재 도로는 계속됩니다",
+  "optionC": "현재 차로가 끝나고 다른 차로로 합류합니다",
+  "optionD": "전방 도로는 통과 통행이 금지됩니다",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "T자 표지판은 전방에서 도로가 직각 교차로로 끝난다는 것을 경고합니다."
+  "explanation": "T자 경고 표지판은 현재 도로가 전방에서 가로지르는 도로와 만나 끝난다는 뜻입니다. 직진할 수 없으므로 속도를 줄이고 좌회전 또는 우회전할 준비를 하세요."
  },
  {
   "type": "Universal",

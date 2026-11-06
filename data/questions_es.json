@@ -396,14 +396,14 @@
     "state": "ALL",
     "questionId": "U-029",
     "category": "roadSigns",
-    "question": "¿Qué indica una señal que muestra una T?",
-    "optionA": "Intersección en T adelante",
-    "optionB": "Dar la vuelta",
-    "optionC": "No hay paso",
-    "optionD": "Ruta de camiones",
+    "question": "Una señal amarilla en forma de rombo muestra una T negra. ¿Qué significa?",
+    "optionA": "El camino termina adelante, así que debe girar a la izquierda o a la derecha",
+    "optionB": "Un camino lateral se une adelante y su camino continúa",
+    "optionC": "Su carril termina y se une a otro carril",
+    "optionD": "El camino adelante está cerrado al tránsito directo",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Una señal de T advierte que el camino termina adelante en una intersección perpendicular."
+    "explanation": "Una señal de advertencia en forma de T significa que su camino termina adelante en un camino transversal. No puede seguir de frente, así que reduzca la velocidad y prepárese para girar a la izquierda o a la derecha."
   },
   {
     "type": "Universal",

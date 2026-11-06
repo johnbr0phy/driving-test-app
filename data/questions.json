@@ -396,14 +396,14 @@
     "state": "ALL",
     "questionId": "U-029",
     "category": "roadSigns",
-    "question": "What does a sign showing a T indicate?",
-    "optionA": "T-intersection ahead",
-    "optionB": "Turn around",
-    "optionC": "No through traffic",
-    "optionD": "Truck route",
+    "question": "A yellow diamond sign shows a black T shape. What does it mean?",
+    "optionA": "The road ends ahead, so you must turn left or right",
+    "optionB": "A side road joins ahead, and your road continues",
+    "optionC": "Your lane ends and merges into another lane",
+    "optionD": "The road ahead is closed to through traffic",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "A T sign warns that the road ends ahead at a perpendicular intersection."
+    "explanation": "A T-shaped warning sign means your road ends at a crossing road ahead. You can't continue straight, so slow down and get ready to turn left or right."
   },
   {
     "type": "Universal",

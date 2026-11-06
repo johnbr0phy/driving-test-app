@@ -9,9 +9,8 @@ import { H, INK, ORANGE, PAPER, SCENE_Y, W } from "./Stage2";
 /**
  * Explainer frame, third design (the "premium" pass): Stage2's layout with
  * paper grain, soft card shadows, eased camera shots that push in while a
- * beat plays and hand over to the next, and karaoke captions whose
- * highlight pill slides from word to word in the test's own colour.
- * Sound cues for the film (pops, pencil, chime) come from each scene.
+ * beat plays and hand over to the next. No captions: the drawing and the
+ * voice carry the explanation (captions pulled the eye off the drawing).
  */
 
 /** Each test's brand colour (globals.css --brand). */
@@ -80,58 +79,14 @@ export function Card({ x, y, w, h, r = 24 }: { x: number; y: number; w: number; 
 }
 
 const FONT = "Inter, ui-sans-serif, system-ui, sans-serif";
-const CAP_SIZE = 34;
-let ctx: CanvasRenderingContext2D | null = null;
-const widths = new Map<string, number>();
-function measure(text: string) {
-  const hit = widths.get(text);
-  if (hit !== undefined) return hit;
-  if (!ctx && typeof document !== "undefined") {
-    ctx = document.createElement("canvas").getContext("2d");
-    if (ctx) ctx.font = `800 ${CAP_SIZE}px ${FONT}`;
-  }
-  const w = ctx ? ctx.measureText(text).width : text.length * CAP_SIZE * 0.58;
-  widths.set(text, w);
-  return w;
-}
 
 export function Stage3({ ex, m, t, Scene, question }: { ex: MistakeExplainer; m: MistakeManifest; t: number; Scene: (p: SceneProps3) => ReactNode; question: string }) {
   const at = (id: string) => m.beats.find((b) => b.id === id) ?? m.beats[0];
   const brand = brandFor(ex.examId);
   const { bi, wi, talking } = speaking(m, t);
   const beat = ex.beats[bi];
-  const words = m.beats[bi].words;
   let face: TigerExpression = beat.face;
   if (talking && (beat.face === 3 || beat.face === 4 || beat.face === 5)) face = wi % 2 === 0 ? 3 : 5;
-
-  // Caption layout: measured words, greedy lines of at most 372px, a new
-  // line after a full stop; show the pair of lines holding the spoken word.
-  const space = measure(" ");
-  const MAXW = 372;
-  const laid: { i: number; x: number; line: number; w: number }[] = [];
-  let line = 0, x = 0;
-  words.forEach((wd, i) => {
-    const w = measure(wd.w);
-    if (x > 0 && x + w > MAXW) { line++; x = 0; }
-    laid.push({ i, x, line, w });
-    x += w + space;
-    if (/[.!?:]$/.test(wd.w) && i < words.length - 1) { line++; x = 0; }
-  });
-  const spoken = wi >= 0 ? wi : words.filter((w) => t >= w.end).length - 1;
-  const curLine = spoken >= 0 ? laid[spoken].line : 0;
-  const first = Math.floor(curLine / 2) * 2;
-  const shown = laid.filter((l) => l.line === first || l.line === first + 1);
-  // the pill: slides from the previous word to the current one
-  let pill: { x: number; y: number; w: number; k: number } | null = null;
-  if (spoken >= 0) {
-    const cur = laid[spoken];
-    const prev = spoken > 0 ? laid[spoken - 1] : null;
-    const sl = easeOut((t - words[spoken].start) / 0.12);
-    const from = prev && prev.line === cur.line ? prev : cur;
-    const fade = wi >= 0 ? 1 : 1 - easeOut((t - words[spoken].end) / 0.25);
-    pill = { x: from.x + (cur.x - from.x) * sl, w: from.w + (cur.w - from.w) * sl, y: (cur.line - first), k: fade };
-  }
-  const CX = 296, CY = 1052;
 
   return (
     <svg viewBox={`0 0 ${W} ${H}`} className="block w-full h-full" style={{ fontFamily: FONT }} role="img" aria-label={`${ex.title}: ${ex.beats.map((b) => b.say).join(" ")}`}>
@@ -174,24 +129,8 @@ export function Stage3({ ex, m, t, Scene, question }: { ex: MistakeExplainer; m:
 
       <g transform={`translate(0,${SCENE_Y})`}>{Scene({ t, at, duration: m.duration })}</g>
 
-      {/* the tiger */}
-      <image href={getTigerAsset(ex.examId, face)} x={6} y={960} width={270} height={270} preserveAspectRatio="xMidYMax meet" />
-
-      {/* captions */}
-      <rect x={270} y={985} width={420} height={170} rx={26} fill="#fff" filter="url(#mx3-shadow)" />
-      <path d="M271,1078 l-20,13 l20,11 z" fill="#fff" />
-      {pill && pill.k > 0 && (
-        <rect x={CX + pill.x - 9} y={CY - 33 + pill.y * 50} width={pill.w + 18} height={46} rx={12} fill={brand} opacity={pill.k} />
-      )}
-      {shown.map((l) => {
-        const wd = words[l.i];
-        const lit = easeOut((t - wd.start) / 0.15);
-        const isCur = l.i === spoken && pill && pill.k > 0.5;
-        return (
-          <text key={`${first}-${l.i}`} x={CX + l.x} y={CY + (l.line - first) * 50} fontSize={CAP_SIZE} fontWeight={800}
-            fill={isCur ? "#fff" : INK} opacity={isCur ? 1 : 0.28 + 0.72 * lit}>{wd.w}</text>
-        );
-      })}
+      {/* the tiger, presenting (no captions: the drawing carries the words) */}
+      <image href={getTigerAsset(ex.examId, face)} x={(W - 290) / 2} y={928} width={290} height={276} preserveAspectRatio="xMidYMax meet" />
 
       <text x={W / 2} y={H - 40} fontSize={22} fontWeight={800} fill={INK} opacity={0.5} textAnchor="middle" letterSpacing={0.5}>tigertest.io</text>
       <rect x={40} y={H - 24} width={W - 80} height={6} rx={3} fill="#d9dee7" />

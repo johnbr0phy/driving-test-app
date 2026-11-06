@@ -3,7 +3,8 @@
  * from its voice track and a transcript with word timings.
  *
  * The voice is recorded with the ElevenLabs connector (voice "Benedict - Premium
- * British (RP) Male", 6q6UVsvekS0UjrUXFz79, eleven_multilingual_v2) from the
+ * British (RP) Male", 6q6UVsvekS0UjrUXFz79; eleven_v4 with audio tags such as
+ * [warmly] from Nov 2026, eleven_multilingual_v2 before) from the
  * storyboard's lines joined by blank lines, saved as <id>.mp3, then transcribed
  * with eleven_scribe_v1 on the same flow; its words.json is the input here.
  *

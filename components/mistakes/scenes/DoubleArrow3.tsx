@@ -1,7 +1,7 @@
 import { MistakeManifest } from "@/lib/mistakeExplainers";
 import { sceneHelpers } from "../Stage";
 import { CurveArrow, GREEN, INK, Note, ORANGE, RED, SOFT } from "../Stage2";
-import { Card, easeBack, easeOut, SceneProps3, Shot, Sign3, SoundCue, wordAt } from "../Stage3";
+import { Card, easeBack, easeOut, SceneProps3, Shot, Sign3, SoundCue } from "../Stage3";
 
 /**
  * DMV U-019, the double arrow sign (MUTCD W12-1), premium pass: the same
@@ -123,21 +123,7 @@ function wordAt0(props: SceneProps3, id: string, word: string) {
   return w ? w.start : b.start;
 }
 
-/** Sound cues for the film, in step with the drawing above. */
-export function doubleArrowCues(m: MistakeManifest): SoundCue[] {
-  const b = (id: string) => (m.beats.find((x) => x.id === id) ?? m.beats[0]).start;
-  return [
-    { t: b("hook") + 0.05, s: "pop" },
-    { t: b("hook") + 0.8, s: "pop", gain: 0.7 },
-    { t: wordAt(m, "trap", "merging"), s: "pop" },
-    { t: wordAt(m, "trap", "two-way"), s: "pop" },
-    { t: wordAt(m, "trap", "different"), s: "pencil" },
-    { t: wordAt(m, "trap", "different") + 0.5, s: "pop", gain: 0.7 },
-    { t: wordAt(m, "arrows", "left"), s: "pencil" },
-    { t: wordAt(m, "arrows", "right"), s: "pencil" },
-    { t: wordAt(m, "island", "island"), s: "pop" },
-    { t: wordAt(m, "island", "ways"), s: "pencil" },
-    { t: wordAt(m, "trick", "fork"), s: "pop", gain: 0.8 },
-    { t: b("lock"), s: "chime" },
-  ];
+/** Sound cues for the film: none for now (the pops and pencil read as noise). */
+export function doubleArrowCues(_m: MistakeManifest): SoundCue[] {
+  return [];
 }

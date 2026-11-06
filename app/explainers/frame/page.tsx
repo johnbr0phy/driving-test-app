@@ -1,10 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { mistakeExplainerById, type MistakeManifest } from "@/lib/mistakeExplainers";
+import { estimateTimings, mistakeExplainerById, type MistakeManifest } from "@/lib/mistakeExplainers";
 import { useMistakeManifest } from "@/components/mistakes/MistakeExplainerPlayer";
 import { Stage, W, H } from "@/components/mistakes/Stage";
-import { SCENES } from "@/components/mistakes/scenes";
+import { SCENES, SCENES2 } from "@/components/mistakes/scenes";
+import { Stage2 } from "@/components/mistakes/Stage2";
 
 declare global {
   interface Window {
@@ -22,7 +23,9 @@ export default function FramePage() {
 }
 
 function Frame({ ex, t, setT }: { ex: NonNullable<ReturnType<typeof mistakeExplainerById>>; t: number; setT: (t: number) => void }) {
-  const m = useMistakeManifest(ex);
+  const loaded = useMistakeManifest(ex);
+  // A storyboard whose voice is not recorded yet runs on estimated timings.
+  const m = loaded === null ? estimateTimings(ex) : loaded;
   useEffect(() => {
     if (!m) return;
     window.__mx = {
@@ -33,7 +36,7 @@ function Frame({ ex, t, setT }: { ex: NonNullable<ReturnType<typeof mistakeExpla
   if (!m) return null;
   return (
     <div id="mx-frame" style={{ width: W, height: H, position: "fixed", inset: 0, zIndex: 9999 }}>
-      <Stage ex={ex} m={m} t={t} Scene={SCENES[ex.id]} />
+      {SCENES2[ex.id] ? <Stage2 ex={ex} m={m} t={t} Scene={SCENES2[ex.id]} question={ex.question} /> : <Stage ex={ex} m={m} t={t} Scene={SCENES[ex.id]} />}
     </div>
   );
 }

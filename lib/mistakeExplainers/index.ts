@@ -31,6 +31,8 @@ export interface MistakeExplainer {
   title: string;
   /** Test name shown on the top bar. */
   testName: string;
+  /** The question as the bank asks it, shown at the top. */
+  question: string;
   beats: MistakeBeat[];
 }
 
@@ -41,14 +43,15 @@ export const MISTAKE_EXPLAINERS: MistakeExplainer[] = [
     questionId: "U-019",
     title: "The double arrow sign",
     testName: "DMV permit test",
+    question: "What does a double arrow sign mean?",
     beats: [
-      { id: "hook", face: 8, say: "More than half of drivers miss this sign. Let's make sure you never do." },
-      { id: "question", face: 6, say: "What does a yellow sign with a double arrow mean?" },
-      { id: "trap", face: 7, say: "Most people guess merging traffic, or cars coming from both sides. But look where the arrows point." },
-      { id: "arrows", face: 4, say: "Both arrows start in the middle and point down and out, one to the left and one to the right." },
-      { id: "island", face: 3, say: "Now picture a traffic island sitting in the middle of your road. The sign stands right on it, and the arrows are your two paths around it." },
-      { id: "trick", face: 4, say: "Here's the trick. The sign is two hands saying: you can go this way, or this way." },
-      { id: "lock", face: 2, say: "So a double arrow means traffic may pass on either side of an obstruction. Easy." },
+      { id: "hook", face: 8, say: "More than half of drivers miss this sign. Let's make sure you're not one of them." },
+      { id: "question", face: 6, say: "What does a yellow diamond with two arrows mean?" },
+      { id: "trap", face: 7, say: "Most people guess merging traffic, or two-way traffic. But those signs look different." },
+      { id: "arrows", face: 4, say: "Look closely. Two separate arrows, one pointing down to the left, and one pointing down to the right." },
+      { id: "island", face: 3, say: "You'll see this sign on the front of a traffic island, or a pillar, in the middle of the road. The arrows point to the two ways around it." },
+      { id: "trick", face: 4, say: "The trick: think of a fork in the road. Left or right, both are fine." },
+      { id: "lock", face: 2, say: "A double arrow means traffic may pass on either side of an obstruction." },
     ],
   },
   {
@@ -57,6 +60,7 @@ export const MISTAKE_EXPLAINERS: MistakeExplainer[] = [
     questionId: "U-012",
     title: "The pennant sign",
     testName: "DMV permit test",
+    question: "What does a pennant-shaped sign indicate?",
     beats: [
       { id: "hook", face: 8, say: "More than half of drivers get this one wrong." },
       { id: "question", face: 6, say: "What does a pennant shaped sign mean?" },
@@ -73,6 +77,7 @@ export const MISTAKE_EXPLAINERS: MistakeExplainer[] = [
     questionId: "P107-AIR-010",
     title: "Reading 70 over 40",
     testName: "FAA Part 107",
+    question: "A Class B segment is labeled 70 over 40. What do the numbers mean?",
     beats: [
       { id: "hook", face: 8, say: "Most drone pilots miss this chart question." },
       { id: "question", face: 6, say: "A Class B segment on a sectional is labeled seventy over forty. What does that mean?" },
@@ -90,6 +95,7 @@ export const MISTAKE_EXPLAINERS: MistakeExplainer[] = [
     questionId: "P107-WX-006",
     title: "19/12 A3002 in a METAR",
     testName: "FAA Part 107",
+    question: "What do 19/12 A3002 at the end of a METAR report?",
     beats: [
       { id: "hook", face: 8, say: "Six out of ten people miss this weather question." },
       { id: "question", face: 6, say: "What do nineteen slash twelve, and A three zero zero two, mean at the end of a METAR?" },

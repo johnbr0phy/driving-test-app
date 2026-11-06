@@ -204,6 +204,19 @@ export function QuestionsTab() {
                   <ActionButton busy={busy === r.id} onClick={() => act("report", [r.id], "dismissed")}>Dismiss</ActionButton>
                 </span>
               </div>
+              <p className="mt-1 text-xs text-gray-500 dark:text-gray-400">
+                {r.email ? (
+                  <>
+                    From{" "}
+                    <a href={`mailto:${r.email}?subject=${encodeURIComponent(`Your report on ${r.questionId}`)}`} className="underline">
+                      {r.email}
+                    </a>{" "}
+                    ({r.uid ? "account" : "typed by a guest"})
+                  </>
+                ) : (
+                  "Anonymous"
+                )}
+              </p>
               {r.note && <p className="mt-1 text-sm italic text-gray-700 dark:text-gray-200">&ldquo;{r.note}&rdquo;</p>}
               <QuestionText text={r.text} highlight={r.picked} />
             </li>

@@ -65,14 +65,14 @@ export function DoubleArrowScene3(props: SceneProps3) {
       </Shot>
 
       {/* 3. look closely: the camera pushes in on two separate arrows */}
-      <Shot t={t} at={at} from="arrows" until="island" zoom={[1, 1.14]} focus={[360, 390]}>
+      <Shot t={t} at={at} from="arrows" until="island" zoom={[1, 1.1]} focus={[360, 390]}>
         <Sign3 name="double-arrow" x={360} y={300} size={440} k={1} />
         <circle cx={360 - 220 + 0.32 * 440} cy={300 - 220 + 0.47 * 440} r={78} fill="none" stroke={ORANGE} strokeWidth={7} pathLength={1} strokeDasharray={`${left} 1`} strokeLinecap="round" />
         <circle cx={360 - 220 + 0.68 * 440} cy={300 - 220 + 0.47 * 440} r={78} fill="none" stroke={ORANGE} strokeWidth={7} pathLength={1} strokeDasharray={`${right} 1`} strokeLinecap="round" />
         <CurveArrow d="M215,400 Q170,480 115,540" k={left} color={ORANGE} w={9} head={[115, 540, 130]} />
         <CurveArrow d="M505,400 Q550,480 605,540" k={right} color={ORANGE} w={9} head={[605, 540, 50]} />
-        <Note x={110} y={610} k={left} size={30} color={ORANGE}>down-left</Note>
-        <Note x={610} y={610} k={right} size={30} color={ORANGE}>down-right</Note>
+        <Note x={175} y={605} k={left} size={30} color={ORANGE}>down-left</Note>
+        <Note x={545} y={605} k={right} size={30} color={ORANGE}>down-right</Note>
       </Shot>
 
       {/* 4. the driver's view: starts close on the island, pulls back */}

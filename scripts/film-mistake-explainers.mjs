@@ -41,7 +41,7 @@ for (const id of ids) {
   await page.goto(`${base}/explainers/${route}?v=${id}`, { waitUntil: "networkidle" });
   await page.waitForFunction((g) => !!window[g], G, { timeout: 60000 });
   // Hide the dev server's overlay badge when filming from next dev.
-  await page.addStyleTag({ content: "nextjs-portal{display:none!important}" });
+  await page.addStyleTag({ content: "nextjs-portal{display:none!important} html,body{overflow:hidden!important} ::-webkit-scrollbar{display:none}" });
   const frame = page.locator("#mx-frame");
   if (at !== null) {
     await page.evaluate(([g, t]) => window[g].setT(t), [G, Number(at)]);

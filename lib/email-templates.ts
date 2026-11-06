@@ -482,3 +482,75 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
     });
   },
 };
+
+// ── The question that got away ───────────────────────────────────────────────
+// Sent by /api/cron/exit-question to someone who stopped studying right after
+// a question and has not been back for a few days: the question, the answer,
+// the why, and a nudge back. Bank text goes into raw HTML, so it is escaped.
+
+const esc = (s: string) =>
+  s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+
+export interface ExitQuestionContent {
+  question: string;
+  options: string[];
+  answer: string;
+  explanation: string;
+  /** Whether they got it right before leaving. */
+  isCorrect: boolean;
+}
+
+export function exitQuestionSubject(c: ExitQuestionContent): string {
+  return c.isCorrect ? "You nailed this one. Then you vanished." : "It was this question, wasn't it?";
+}
+
+/** The question card: stem, then every option with the right one in green. */
+function questionCard(c: ExitQuestionContent): string {
+  const rows = c.options
+    .map((o, i) => {
+      const right = o === c.answer;
+      const letter = String.fromCharCode(65 + i);
+      return `                    <tr><td style="padding: 8px 12px; border-radius: 8px; font-size: 15px; line-height: 1.5; ${
+        right ? "background-color: #e8f7ee; color: #146c34; font-weight: 600;" : "color: #4a4a4a;"
+      }">${letter}. ${esc(o)}${right ? " &#10003;" : ""}</td></tr>`;
+    })
+    .join("\n");
+  const answerOnly = c.options.length === 0 && c.answer
+    ? `                    <tr><td style="padding: 8px 12px; border-radius: 8px; background-color: #e8f7ee; color: #146c34; font-weight: 600; font-size: 15px;">Answer: ${esc(c.answer)}</td></tr>`
+    : "";
+  return `              <table role="presentation" style="width: 100%; border-collapse: separate; border-spacing: 0 4px; margin: 0 0 20px; padding: 16px; background-color: #FFF9F5; border: 1px solid #f0e6dd; border-radius: 12px;">
+                    <tr><td style="padding: 0 12px 8px; color: #1a1a1a; font-size: 17px; font-weight: 600; line-height: 1.5;">${esc(c.question)}</td></tr>
+${rows || answerOnly}
+              </table>`;
+}
+
+export function exitQuestionEmail(v: EmailVoice, c: ExitQuestionContent): string {
+  const campaign = "exit_question";
+  const opener = c.isCorrect
+    ? [
+        p(`The last thing you did on Tigertest was get this question right. Then nothing. Not a peep. Honestly, a perfect mic drop.`),
+      ]
+    : [
+        p(`The last time you studied, this question showed up, you got it wrong, and then you disappeared. We get it. It's not you, it's the question.`),
+        p(`(It's a little bit you.)`),
+      ];
+  const why = c.explanation ? [p(`<strong style="font-weight: 600;">Why:</strong> ${esc(c.explanation)}`)] : [];
+  const closer = c.isCorrect
+    ? p(`Sadly, one right answer is not a passing score. Your ${esc(v.testName)} practice is right where you left it, so come and get a few more.`)
+    : p(`Now you know it, which puts you ahead of a lot of people. Lots of folks walk away right after a miss. The ones who pass are the ones who come back. The question promises to act like nothing happened.`);
+  return emailShell({
+    title: exitQuestionSubject(c),
+    heading: c.isCorrect ? "You nailed this one. Then you vanished." : "We need to talk about this question",
+    body: [
+      ...opener,
+      questionCard(c),
+      ...why,
+      closer,
+      cta(DASH(v, campaign), c.isCorrect ? "Keep the streak going" : "Get your revenge"),
+      signoff(c.isCorrect ? "Proud of you (mostly)," : "No hard feelings,"),
+      `              <p style="margin: 28px 0 0; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
+                P.S. If you already passed your test, congratulations! Hit reply and tell me. It genuinely makes my day.
+              </p>`,
+    ].join("\n"),
+  });
+}

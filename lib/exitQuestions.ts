@@ -292,3 +292,68 @@ export interface ExitQuestionsPayload {
   minExits: number;
   updatedAt: string | null;
 }
+
+/** One account's exit, for the "question that got away" email. */
+export interface AccountExit {
+  examId: string;
+  questionId: string;
+  /** Whether they got that last question right. */
+  isCorrect: boolean;
+  /** When they answered it (ms). */
+  at: number;
+  /** Answers on that exam in all. */
+  answers: number;
+}
+
+/**
+ * The question one account left on, by the same rules as the tally: the exam
+ * holding its last timestamped answer, at least EXIT_MIN_ANSWERS answers
+ * there, no practice test passed on it, and the last answer a training answer
+ * (finishing a test is not quitting on a question). Null otherwise. Quiet
+ * time is the caller's call.
+ */
+export function findAccountExit(
+  data: { trainingAnswerHistory?: unknown; completedTests?: unknown },
+  opts: {
+    examOf: (questionId: string) => string | undefined;
+    passPctOf: (testState: string | undefined, examId: string) => number;
+  },
+): AccountExit | null {
+  let last: { examId: string; questionId: string; isCorrect: boolean; t: number; test: boolean } | null = null;
+  const counts = new Map<string, number>();
+  const see = (questionId: unknown, isCorrect: unknown, iso: unknown, test: boolean) => {
+    if (typeof questionId !== "string" || typeof iso !== "string") return;
+    const t = Date.parse(iso);
+    if (Number.isNaN(t)) return;
+    const examId = opts.examOf(questionId);
+    if (!examId) return;
+    counts.set(examId, (counts.get(examId) ?? 0) + 1);
+    if (!last || t > last.t) last = { examId, questionId, isCorrect: !!isCorrect, t, test };
+  };
+
+  const history = Array.isArray(data.trainingAnswerHistory) ? data.trainingAnswerHistory : [];
+  for (const h of history) see(h?.questionId, h?.isCorrect, h?.answeredAt, false);
+
+  const passed = new Set<string>();
+  const tests = Array.isArray(data.completedTests) ? data.completedTests : [];
+  for (const test of tests as any[]) {
+    const answers = Array.isArray(test?.answers) ? test.answers : [];
+    let examId: string | undefined;
+    for (const a of answers) {
+      if (!a?.userAnswer) continue;
+      see(a.questionId, a.isCorrect, a.answeredAt, true);
+      examId ??= typeof a.questionId === "string" ? opts.examOf(a.questionId) : undefined;
+    }
+    const total = Number(test?.totalQuestions) || answers.length;
+    const score = Number(test?.score);
+    if (examId && total > 0 && Number.isFinite(score) && (score / total) * 100 >= opts.passPctOf(test?.state, examId)) {
+      passed.add(examId);
+    }
+  }
+
+  const l = last as { examId: string; questionId: string; isCorrect: boolean; t: number; test: boolean } | null;
+  if (!l || l.test) return null;
+  const answers = counts.get(l.examId) ?? 0;
+  if (answers < EXIT_MIN_ANSWERS || passed.has(l.examId)) return null;
+  return { examId: l.examId, questionId: l.questionId, isCorrect: l.isCorrect, at: l.t, answers };
+}

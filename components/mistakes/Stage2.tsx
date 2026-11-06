@@ -49,7 +49,6 @@ export function Stage2({ ex, m, t, Scene, question }: { ex: MistakeExplainer; m:
   const words = m.beats[bi].words;
   let face: TigerExpression = beat.face;
   if (talking && (beat.face === 3 || beat.face === 4 || beat.face === 5)) face = wi % 2 === 0 ? 3 : 5;
-  const bob = talking ? Math.sin(t * 10) * 3 : 0;
 
   // Captions: lines of ~24 characters; show the two that hold the spoken word.
   const lines: number[][] = [[]];
@@ -88,7 +87,7 @@ export function Stage2({ ex, m, t, Scene, question }: { ex: MistakeExplainer; m:
       <g transform={`translate(0,${SCENE_Y})`}>{Scene({ t, at })}</g>
 
       {/* the tiger, presenting */}
-      <image href={getTigerAsset(ex.examId, face)} x={6} y={960 + bob} width={270} height={270} preserveAspectRatio="xMidYMax meet" />
+      <image href={getTigerAsset(ex.examId, face)} x={6} y={960} width={270} height={270} preserveAspectRatio="xMidYMax meet" />
 
       {/* captions */}
       <rect x={270} y={985} width={420} height={170} rx={24} fill="#ffffff" stroke={INK} strokeOpacity={0.12} strokeWidth={2} />

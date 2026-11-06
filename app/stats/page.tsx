@@ -25,7 +25,7 @@ import { QuizRow } from "@/components/QuizRow";
 import { inClassFor, useClassMemberships } from "@/hooks/useClassMemberships";
 import { DMV_EXAM_ID } from "@/lib/classes";
 import { paywallVariantForCheckout } from "@/lib/paywallTest";
-import { usePremiumPrice } from "@/hooks/usePremiumPrice";
+import { useShownPremiumPrice } from "@/hooks/usePremiumPrice";
 
 type SortField = "timesAnswered" | "correct" | "wrong" | "accuracy";
 type SortDirection = "asc" | "desc";
@@ -49,7 +49,7 @@ function optionText(q: Question, letter: string): string {
 }
 
 function StatsContent() {
-  const price = usePremiumPrice();
+  const price = useShownPremiumPrice();
   const router = useRouter();
   const hydrated = useHydration();
   const { t } = useTranslation();
@@ -441,7 +441,7 @@ function StatsContent() {
                           onClick={() => { trackPaywallHit("stats_question_list", "Stats Question List", "stats_page"); trackViewItem("stats_page"); setPaywallOpen(true); }}
                           className="inline-flex items-center px-4 py-2 bg-brand text-white text-sm font-medium rounded-full hover:bg-brand-hover transition-colors shadow-lg"
                         >
-                          Unlock Premium — {price}
+                          Unlock Premium{price ? ` — ${price}` : ""}
                         </button>
                       </div>
                     </div>

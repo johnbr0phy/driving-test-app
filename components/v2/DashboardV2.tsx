@@ -5,6 +5,7 @@
 // that turn green, and the tiger calming down as steps complete. Built on the
 // same ProgressCard and tiger artwork as the v1 exam dashboards.
 
+import { StudyReminderCard } from "@/components/StudyReminderCard";
 import { Suspense, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -405,6 +406,7 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
           )}
 
           <div className="mt-6">
+            <StudyReminderCard className="mb-6" />
             <SuperAmazingCard dashboardKey={`v2:${exam.id}`} allComplete={totalSteps > 0 && doneSteps === totalSteps} totalSteps={totalSteps} />
           </div>
 

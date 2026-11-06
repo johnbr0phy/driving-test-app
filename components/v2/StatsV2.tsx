@@ -38,7 +38,7 @@ import { trackDailyQuizAnswer } from "@/lib/analytics";
 import { PaywallModal } from "@/components/PaywallModal";
 import { GatedStatsList, LockedPreview, STATS_FREE_ROWS, StatsPageShell, StatsTab, StatsTabs } from "@/components/stats/StatsParts";
 import { V2StatsRow, plainStem } from "./V2StatsRow";
-import { usePremiumPrice } from "@/hooks/usePremiumPrice";
+import { useShownPremiumPrice } from "@/hooks/usePremiumPrice";
 
 /** Whether v2 stats sell Premium. Off: the whole plan and notebook are free. */
 const V2_STATS_PAYWALL = false;
@@ -56,7 +56,7 @@ export function StatsV2({ exam }: { exam: ExamV2Config }) {
 }
 
 function StatsV2Content({ exam }: { exam: ExamV2Config }) {
-  const price = usePremiumPrice();
+  const price = useShownPremiumPrice();
   const routes = v2Routes(exam);
   const router = useRouter();
   const hydrated = useHydration();
@@ -237,7 +237,7 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
                       }))}
                       title={lockedGain > 0 ? `${lockedPlan.length} more topics worth an estimated ${pct ? `+${lockedGain}%` : `+${lockedGain}\u00a0pts`}` : `${lockedPlan.length} more topics in your plan`}
                       subtitle="See every topic ranked by the points it's worth, and the exact skills you miss"
-                      cta={`Unlock your full plan · ${price}`}
+                      cta={price ? `Unlock your full plan · ${price}` : "Unlock your full plan"}
                       onUnlock={() => openPaywall("stats_plan", "Study Plan")}
                     />
                   )}
@@ -312,7 +312,7 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
                     }))}
                     title={`${mistakes.length - FREE_MISTAKES} more mistakes saved`}
                     subtitle="Retry every question you've missed until it sticks"
-                    cta={`Unlock Premium for ${price}`}
+                    cta={price ? `Unlock Premium for ${price}` : "Unlock Premium"}
                     onUnlock={() => openPaywall("stats_mistakes", "Mistake Notebook")}
                   />
                 )}

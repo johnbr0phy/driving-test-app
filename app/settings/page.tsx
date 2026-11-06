@@ -1,5 +1,6 @@
 "use client";
 
+import { StudyReminderCard } from "@/components/StudyReminderCard";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -274,6 +275,8 @@ export default function SettingsPage() {
             <ThemeSegmentedControl />
           </CardContent>
         </Card>
+
+        <StudyReminderCard className="mb-6" />
 
         {/* Danger Zone */}
         <Card className="bg-gray-50 dark:bg-gray-950 border-red-200 dark:border-red-800">

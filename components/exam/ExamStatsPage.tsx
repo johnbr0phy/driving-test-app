@@ -39,7 +39,7 @@ import {
   StatsTabs,
   accuracyChipColor,
 } from "@/components/stats/StatsParts";
-import { usePremiumPrice } from "@/hooks/usePremiumPrice";
+import { useShownPremiumPrice } from "@/hooks/usePremiumPrice";
 
 type SortField = "timesAnswered" | "correct" | "wrong" | "accuracy";
 type SortDirection = "asc" | "desc";
@@ -66,7 +66,7 @@ export function ExamStatsPage({ exam }: { exam: ExamConfig }) {
 }
 
 function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
-  const price = usePremiumPrice();
+  const price = useShownPremiumPrice();
   const { exam, routes, ui, lang } = useLocalizedExam(source);
   const router = useRouter();
   const pathname = usePathname();
@@ -335,7 +335,7 @@ function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
             previewOf={(item) => ({ chip: chipFor(item), text: item.question.question })}
             lockTitle={`${sortedQuestions.length - STATS_FREE_ROWS} ${t("stats.moreQuestions")}`}
             lockSubtitle={t("stats.unlockPremiumStats")}
-            lockCta={`Unlock Premium for ${price}`}
+            lockCta={price ? `Unlock Premium for ${price}` : "Unlock Premium"}
             onUnlock={() => { trackPaywallHit("stats_question_list", "Stats Question List", paywallLocation); trackViewItem(paywallLocation); setPaywallOpen(true); }}
           />
           </>)}

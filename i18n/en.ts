@@ -2421,7 +2421,7 @@ export const en = {
     createFreeAccountPrompt: "Create a free account to unlock premium features",
     upgradeNow: "Upgrade Now",
     notAvailableInApp:
-      "Premium purchases aren't available in the app. You can upgrade on tigertest.io in your web browser — your account syncs automatically.",
+      "Premium isn't available in the app. If your account already has Premium, everything here is unlocked.",
     okGotIt: "Got it",
   },
 

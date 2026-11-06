@@ -65,10 +65,11 @@ export function PaywallModal({
   if (open && language === "en") shown.current = paywallVariant();
   const variant = shown.current;
   useEffect(() => {
-    if (open && language === "en" && variant) void recordPaywallTestView(variant);
-  }, [open, language, variant]);
+    if (open && language === "en" && variant && !isNative) void recordPaywallTestView(variant);
+  }, [open, language, variant, isNative]);
 
-  if (language === "en" && variant !== "classic") {
+  // The app never shows John's chip-in ask: there is nothing to buy there.
+  if (language === "en" && variant !== "classic" && !isNative) {
     return (
       <SupportPaywallModal
         open={open}
@@ -132,7 +133,7 @@ export function PaywallModal({
         </div>
 
         {/* Price section */}
-        {!(isNative && !isGuest) && (
+        {!isNative && (
           <div className="mb-5">
             <div className="flex items-baseline justify-between">
               <span className="text-4xl font-bold text-gray-900 dark:text-gray-50">{price}</span>
@@ -146,8 +147,9 @@ export function PaywallModal({
           </div>
         )}
 
-        {/* CTA section */}
-        {isNative && !isGuest ? (
+        {/* CTA section. In the app there is no purchase and no price, for guests
+            too (App Store 3.1.1): just say so. */}
+        {isNative ? (
           <div className="flex flex-col items-center gap-2">
             <p className="text-sm text-gray-600 dark:text-gray-300 text-center mb-1">
               {t("paywall.notAvailableInApp")}

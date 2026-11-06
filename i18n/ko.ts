@@ -2423,7 +2423,7 @@ export const ko: TranslationKeys = {
     createFreeAccountPrompt: "무료 계정을 만들고 프리미엄 기능을 잠금 해제하세요",
     upgradeNow: "지금 업그레이드",
     notAvailableInApp:
-      "앱에서는 프리미엄을 구매할 수 없습니다. 웹 브라우저에서 tigertest.io에 접속해 업그레이드하시면 계정이 자동으로 동기화됩니다.",
+      "앱에서는 프리미엄을 이용할 수 없습니다. 계정에 이미 프리미엄이 있다면 여기서도 모든 기능이 열려 있습니다.",
     okGotIt: "확인",
   },
 

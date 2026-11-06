@@ -2421,7 +2421,7 @@ export const vi: TranslationKeys = {
     createFreeAccountPrompt: "Tạo tài khoản miễn phí để mở khóa các tính năng premium",
     upgradeNow: "Nâng cấp ngay",
     notAvailableInApp:
-      "Không thể mua Premium trong ứng dụng. Bạn có thể nâng cấp tại tigertest.io trên trình duyệt web — tài khoản của bạn sẽ tự động đồng bộ.",
+      "Premium không có trong ứng dụng. Nếu tài khoản của bạn đã có Premium, mọi thứ ở đây đều đã được mở khóa.",
     okGotIt: "Đã hiểu",
   },
 

@@ -7489,6 +7489,15 @@ html.native-app body {
   padding-right: env(safe-area-inset-right);
 }
 
+/* v1 of the apps leaves out the public quiz library, quiz making and the
+   purchase page (App Store 1.2 user-generated content, 3.1.1 purchases);
+   NativeAppShell also sends those routes home. Shared quiz links still play. */
+html.native-app a[href="/create"],
+html.native-app a[href="/quizzes"],
+html.native-app a[href^="/upgrade"] {
+  display: none !important;
+}
+
 /* Keyboard focus is independent of each exam's brand colour. */
 :where(a, button, input, select, textarea, [tabindex]):focus-visible {
   outline: 3px solid #1d4ed8 !important;

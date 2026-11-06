@@ -474,7 +474,7 @@ export const nl: TranslationKeys = {
     createFreeAccountPrompt: "Maak een gratis account om Premium-functies te ontgrendelen",
     upgradeNow: "Nu upgraden",
     notAvailableInApp:
-      "Premium kun je niet in de app kopen. Upgraden kan op tigertest.io in je browser; je account synchroniseert vanzelf.",
+      "Premium is niet beschikbaar in de app. Heeft je account al Premium, dan is hier alles ontgrendeld.",
     okGotIt: "Begrepen",
   },
 

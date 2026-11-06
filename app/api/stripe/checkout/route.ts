@@ -4,8 +4,14 @@ import { getAdminDb, getAdminAuth } from '@/lib/firebase-admin';
 import { isPaywallVariant } from '@/lib/paywallTestIds';
 import { premiumPriceFor, stripeUnitAmount } from '@/lib/pricing';
 import { visitorCountry } from '@/lib/server/visitorCountry';
+import { NATIVE_APP_UA_TOKEN } from '@/lib/native-app';
 
 export async function POST(request: NextRequest) {
+  // The iOS and Android apps sell nothing (App Store 3.1.1, Play payments
+  // policy). The paywalls hide checkout there; this is the backstop.
+  if ((request.headers.get('user-agent') ?? '').includes(NATIVE_APP_UA_TOKEN)) {
+    return NextResponse.json({ error: 'Purchases are not available in the app.' }, { status: 403 });
+  }
   try {
     // Check if Stripe is configured
     if (!process.env.STRIPE_SECRET_KEY) {

@@ -80,7 +80,7 @@ export function SupportPaywallModal({
           ))}
         </ul>
 
-        {isNative && !isGuest ? (
+        {isNative ? (
           <div className="flex flex-col items-center gap-2">
             <p className="text-sm text-gray-600 dark:text-gray-300 text-center mb-1">
               {en.paywall.notAvailableInApp}

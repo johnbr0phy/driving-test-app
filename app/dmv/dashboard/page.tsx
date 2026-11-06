@@ -1,5 +1,6 @@
 "use client";
 
+import { StudyReminderCard } from "@/components/StudyReminderCard";
 import { getTigerAsset } from "@/lib/tigerAssets";
 
 import { useEffect, useState, Suspense } from "react";
@@ -682,6 +683,7 @@ function DashboardContent() {
           </div>
         </div>
 
+        <StudyReminderCard className="mb-6" />
         <SuperAmazingCard dashboardKey="dmv" allComplete={allComplete} totalSteps={totalSteps} />
 
       </div>

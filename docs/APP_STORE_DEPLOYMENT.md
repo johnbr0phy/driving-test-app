@@ -1,4 +1,4 @@
-# TigerTest — App Store & Play Store Deployment Guide
+# Tigertest: App Store & Play Store Deployment Guide
 
 The mobile apps live in `/mobile`: a Capacitor shell (`io.tigertest.app`) that
 loads https://www.tigertest.io in a native WebView. The site detects the shell
@@ -26,11 +26,24 @@ changes — icons, splash, Capacitor config/plugins — require a new build).
   works fully; existing Google-account users can use password reset to add a
   password, or a native-auth plugin can be added later
   (`@capacitor-firebase/authentication`).
-- **No Stripe purchase in the app.** In-app purchases of digital goods must use
-  Apple IAP / Google Play Billing (guidelines 3.1.1 / Play Payments policy).
-  The paywall in the app shows an informational notice instead of the $9.99
-  checkout. Premium purchased on the web syncs to the app automatically via
-  Firebase. Adding StoreKit/Play Billing (e.g. via RevenueCat) is a good
+- **No purchase and no price in the app.** In-app purchases of digital goods
+  must use Apple IAP / Google Play Billing (guidelines 3.1.1 / Play Payments
+  policy), and the app may not point people to buy elsewhere. Every paywall
+  in the app says only that Premium isn't available in the app (no price, no
+  link, guests included), lock cards drop the price (`useShownPremiumPrice`),
+  and `/api/stripe/checkout` refuses the app's user agent. Premium bought on
+  the web still unlocks the app through Firebase.
+- **No public quiz library or quiz making in v1** (guideline 1.2,
+  user-generated content): links to `/create`, `/quizzes` and `/upgrade` are
+  hidden in the app (`html.native-app` rules in `app/globals.css`) and
+  `NativeAppShell` sends those routes home. Shared quiz links still play and
+  carry Report.
+- **Native features** (guideline 4.2): daily study reminder
+  (`components/StudyReminderCard.tsx`, local notifications, on every dashboard
+  and in Settings) and haptics on every answer (`lib/nativeFeatures.ts`,
+  called from `recordClassAnswerById`). The plugins are in both
+  `package.json` files: the site imports their JS only inside the app, the
+  shell carries the native side. Adding StoreKit/Play Billing (e.g. via RevenueCat) is a good
   follow-up if in-app conversion matters.
 - **Guest mode works** without an account, so reviewers can exercise the core
   product immediately (helps with guideline 2.1 review).
@@ -75,7 +88,7 @@ Build** workflow — the signed AAB is uploaded as an artifact.
 
 ### 3. Play Console setup
 
-1. Create app → name **TigerTest — DMV Practice Test**, type App, Free.
+1. Create app → name **Tigertest: Practice Tests**, type App, Free.
 2. Upload `app-release.aab` to **Internal testing** first; promote to
    Production after a smoke test on a real device.
 3. Complete the required declarations:
@@ -96,73 +109,121 @@ Review typically takes 1–7 days for a new developer account.
 Increment `versionCode` (and `versionName`) in `mobile/android/app/build.gradle`
 for every upload — Play rejects duplicate version codes.
 
-## iOS — App Store
+## iOS — App Store (no Mac needed)
 
-Requires a Mac with Xcode 16+ (or Xcode Cloud). No CocoaPods needed —
-Capacitor 8 uses Swift Package Manager.
+The build, signing and upload run on GitHub's Mac runners
+(`.github/workflows/mobile-ios-testflight.yml`). Signing is Xcode's
+cloud-managed signing, authorised by an App Store Connect API key, so there are
+no certificates or profiles to manage by hand.
 
-### 1. Local setup
+### 1. Apple account (once)
 
-```bash
-cd mobile
-npm ci && npx cap sync ios
-npm run open:ios   # opens Xcode
-```
+1. Enroll at https://developer.apple.com/programs/enroll ($99/year). As an
+   individual the seller name on the listing is your own name; as an
+   organization it is the company's, which needs a D-U-N-S number and takes
+   longer. Approval can take 1 to 2 days.
+2. Note your **Team ID**: developer.apple.com > Account > Membership details.
 
-In Xcode, select the **App** target:
-- **Signing & Capabilities:** select your team; bundle id `io.tigertest.app`
-  (register it automatically via "Automatically manage signing").
-- Run on a simulator/device to smoke-test.
+### 2. App record (once)
 
-### 2. App Store Connect
+App Store Connect > Apps > **+** > New App: platform iOS, name
+**Tigertest: Practice Tests**, primary language English (U.S.), bundle id
+`io.tigertest.app` (register it first under Certificates, Identifiers &
+Profiles > Identifiers > **+** > App IDs if it is not in the list), SKU
+`tigertest-ios`, full access.
 
-1. https://appstoreconnect.apple.com → My Apps → **+** → New App: platform iOS,
-   bundle id `io.tigertest.app`, SKU `tigertest-ios`.
-2. Fill in the listing (copy below), upload screenshots for 6.7" and 6.5"
-   iPhones (and 12.9" iPad if you keep iPad support enabled; otherwise untick
-   iPad in the target's supported destinations).
-3. **App Privacy:** same disclosures as Play data safety (email, name,
-   usage data; linked to identity; no tracking).
-4. **App Review notes:** mention guest mode ("tap Try it free — no account
-   needed"), and provide a demo email/password account with Premium enabled so
-   reviewers can see gated content.
+### 3. API key and GitHub secrets (once)
 
-### 3. Archive & upload
+1. App Store Connect > Users and Access > Integrations > App Store Connect API
+   > Team Keys > **+**. Name it "GitHub", role **Admin** (cloud signing needs
+   it). Download the `.p8` file (it can be downloaded only once) and note the
+   **Key ID** and the **Issuer ID** at the top of the page.
+2. GitHub > the repo > Settings > Secrets and variables > Actions > New
+   repository secret, four times:
+   - `APPLE_TEAM_ID`: the Team ID
+   - `ASC_KEY_ID`: the Key ID
+   - `ASC_ISSUER_ID`: the Issuer ID
+   - `ASC_KEY_P8_BASE64`: the key file base64 encoded (`base64 -i AuthKey_XXXX.p8`
+     on a Mac, `base64 -w0 AuthKey_XXXX.p8` on Linux, or
+     `[Convert]::ToBase64String([IO.File]::ReadAllBytes("AuthKey_XXXX.p8"))` in
+     Windows PowerShell)
 
-Xcode → Product → Archive → Distribute App → App Store Connect. Then submit
-for review in App Store Connect (first review usually 1–3 days). TestFlight
-first is recommended.
+### 4. Build and upload
 
-### Version bumps
+GitHub > Actions > **iOS TestFlight** > Run workflow > version `1.0`. About 15
+minutes later the build is in App Store Connect; it shows in TestFlight once
+Apple has processed it. The build number is the workflow run number, so every
+run uploads a new build. Bump the version only for a new App Store release.
 
-Bump **Version** (CFBundleShortVersionString) and **Build** in the Xcode target
-(or `ios/App/App.xcodeproj`) for each upload.
+### 5. Test on your iPhone
 
-## Store listing copy (both stores)
+App Store Connect > the app > TestFlight > Internal Testing > add yourself.
+Install the **TestFlight** app on the iPhone and open the invite. Check:
+guest practice, sign up and sign in, a locked Premium step (it says Premium
+isn't available in the app, with no price), the daily study reminder on a
+dashboard (it asks for notification permission, then fires at the set time),
+haptics on answers, and Settings > Delete account.
 
-- **Name:** TigerTest: DMV Practice Test
-- **Subtitle / short description:** Pass your permit test first try. All 50
-  states + DC.
-- **Keywords (iOS):** dmv,permit test,practice test,driving test,drivers ed,
-  learners permit,dmv test 2026
+### 6. Listing and submission
+
+Fill in the App Store tab (copy below), then **Add for Review**.
+
+- **Screenshots:** iPhone 6.9" (1320 x 2868) is the one required size; take
+  them from TestFlight on a large iPhone, or ask Claude to render them from
+  the site. The app is iPhone only (no iPad screenshots needed).
+- **Age rating:** answer the questionnaire honestly (no objectionable
+  content); expect 4+. Do not opt into the Kids category: the site runs
+  analytics and the Kids category forbids it.
+- **App Privacy:** Contact Info (email, name), Identifiers (user ID), Usage
+  Data (product interaction), all *linked to the user*, used for *app
+  functionality* and *analytics*; *not used for tracking*. No purchases,
+  location or ads.
+- **Privacy policy URL:** https://www.tigertest.io/privacy
+- **Sign-in required:** no (guest mode). Still give a demo account (make one
+  on the site; give it Premium in Firestore so the reviewer can see it all).
+- **Review notes** (paste):
+
+  > Tigertest is a free practice-test app for driving permits and
+  > licensing exams in 30 countries. No account is needed: pick a test on
+  > the home screen and start answering. Native features: daily study
+  > reminders (local notifications, on any test dashboard and in Settings),
+  > haptic feedback on every answer, offline handling. Accounts sync
+  > progress across devices and can be deleted in Settings. There are no
+  > purchases in the app. Demo account: <email> / <password>.
+
+First review usually takes 1 to 3 days.
+
+## Store listing copy
+
+- **Name (30):** Tigertest: Practice Tests
+- **Subtitle (30):** Driving, licensing & job tests
+- **Keywords (100, no exam trademarks):**
+  `dmv,permit,driving,theory,learner,license,exam,quiz,study,cdl,nursing,citizenship,real estate,trade`
+- **Promotional text:** Free practice tests with clear explanations. Start
+  in seconds, no account needed.
 - **Description:**
 
-  > Pass your DMV written test the first time. TigerTest gives you real
-  > exam-style practice questions for all 50 states + DC — free.
+  > Pass your test the first time. Tigertest gives you free practice tests
+  > that match the real exam, with a clear explanation for every answer.
   >
-  > • 200 questions per state, matched to your state's handbook
-  > • 4 full practice tests that mirror the real exam
-  > • Training mode with spaced repetition on what you get wrong
-  > • Instant feedback with clear explanations
-  > • Progress tracking and per-question stats
-  > • English and Spanish
+  > • Driving permit and theory tests for all 50 US states and 29 more
+  >   countries
+  > • Licensing, trade, healthcare and job certification exams
+  > • Full practice tests that mirror the real format and pass mark
+  > • Training sets that bring back every question you miss until you know it
+  > • Daily study reminders and progress you can see
+  > • Free to start, no account needed; sign up to sync across devices
   >
-  > Start practicing in seconds — no account required. Create a free account
-  > to sync progress across devices.
+  > Tigertest is independent and not affiliated with any testing agency.
 
-- **Category:** Education
-- **Privacy policy URL:** https://www.tigertest.io/privacy
-- **Support URL:** https://www.tigertest.io
+- **Category:** Education (secondary: Reference)
+- **Support URL:** https://www.tigertest.io/about
+- **Copyright:** 2026 <your name or company>
+
+## Android — notes
+
+The Android listing name and copy above apply to Google Play too. Play's
+Data safety form takes the same answers as App Privacy.
 
 ## Follow-ups worth considering
 

@@ -475,7 +475,7 @@ export const de: TranslationKeys = {
     createFreeAccountPrompt: "Erstelle ein kostenloses Konto, um Premium-Funktionen freizuschalten",
     upgradeNow: "Jetzt upgraden",
     notAvailableInApp:
-      "In der App kann man Premium nicht kaufen. Du kannst auf tigertest.io im Browser upgraden. Dein Konto wird automatisch synchronisiert.",
+      "Premium ist in der App nicht verfügbar. Wenn dein Konto Premium hat, ist hier schon alles freigeschaltet.",
     okGotIt: "Verstanden",
   },
 

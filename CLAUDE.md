@@ -495,7 +495,17 @@ Opt-out is `users/{uid}.unsubscribed` (`lib/unsubscribe.ts`). It is checked in t
 the production site in a native WebView for iOS and Android. The site detects
 the shell via a `TigerTestApp` user-agent token (`lib/native-app.ts`,
 `hooks/useIsNativeApp.ts`) and hides Google Sign-In and Stripe checkout
-(store-policy compliance) and applies safe-area CSS. After changing
+(store-policy compliance) and applies safe-area CSS. In the app there is no
+purchase and no price anywhere (paywalls say Premium isn't available in the
+app, `useShownPremiumPrice()` is null, `/api/stripe/checkout` refuses the UA),
+and `/create`, `/quizzes` and `/upgrade` are hidden and redirected home
+(`NativeAppShell`, `html.native-app` rules in `globals.css`). Native features
+live in `lib/nativeFeatures.ts` (haptics on every answer from
+`recordClassAnswerById`, the daily study reminder in
+`components/StudyReminderCard.tsx` on every dashboard and Settings); their
+Capacitor plugins are in both the root and `mobile/` package.json. iOS builds
+and uploads to TestFlight with no Mac via the **iOS TestFlight** workflow
+(cloud signing with an App Store Connect API key). After changing
 `mobile/capacitor.config.ts`, run `npx cap sync` in `/mobile` and commit the
 result. Store submission guide: `docs/APP_STORE_DEPLOYMENT.md`.
 

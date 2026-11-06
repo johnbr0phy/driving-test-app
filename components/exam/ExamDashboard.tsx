@@ -6,6 +6,7 @@
 // Tests carry stamps and a per-test attempt drop-down with the score chart
 // and miss drill. All registry exams are free.
 
+import { StudyReminderCard } from "@/components/StudyReminderCard";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
@@ -461,6 +462,7 @@ export function ExamDashboard({ exam: source }: { exam: ExamConfig }) {
         )}
 
         <div className="mt-6">
+          <StudyReminderCard className="mb-6" />
           <SuperAmazingCard dashboardKey={exam.id} allComplete={completedSteps === totalSteps} totalSteps={totalSteps} />
         </div>
 

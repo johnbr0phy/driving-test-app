@@ -1,4 +1,5 @@
 import type { Question } from "@/types";
+import { answerHaptic } from "@/lib/nativeFeatures";
 import type { ClassAnswerEvent, ClassHistoryAnswer, ClassPublicInfo, ClassTestEvent } from "@/lib/classes";
 import { MEMBERSHIPS_CHANGED, changeAccountMemberships } from "@/lib/classMembershipSync";
 import { recordQuestionPick } from "@/lib/questionPicks";
@@ -192,6 +193,8 @@ export function recordClassAnswerById(examId: string, questionId: string, catego
   // Every answered exam question, class or not, also feeds the anonymous
   // option-pick counts behind the question quality flags (lib/questionPicks.ts).
   recordQuestionPick(examId, questionId, correct, pick);
+  // In the iOS and Android apps, a tap of feedback on every answer.
+  answerHaptic(correct);
   enqueue(examId, (q) =>
     q.answers.push({ q: questionId, c: category || "other", ok: correct, ...(!correct && pick !== undefined ? { p: pick } : {}) }),
   );

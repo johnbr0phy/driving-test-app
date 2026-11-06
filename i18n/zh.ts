@@ -2423,7 +2423,7 @@ export const zh: TranslationKeys = {
     createFreeAccountPrompt: "创建免费账户即可解锁高级功能",
     upgradeNow: "立即升级",
     notAvailableInApp:
-      "App 内无法购买 Premium 高级版。你可以在网页浏览器中打开 tigertest.io 升级，账户会自动同步。",
+      "App 内不提供 Premium 高级版。如果你的账户已有 Premium，这里的所有内容都已解锁。",
     okGotIt: "知道了",
   },
 

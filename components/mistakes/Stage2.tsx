@@ -24,6 +24,7 @@ export const BLUE = "#2563eb";
 export const ORANGE = "#ea580c";
 export const GREEN = "#15803d";
 export const RED = "#dc2626";
+export const MONO_FONT = "ui-monospace, SFMono-Regular, Menlo, Consolas, monospace";
 
 /** Scene opacity for a beat range: fades in at `from`, out when `until` starts. */
 export function window2(t: number, at: SceneProps["at"], from: string, until?: string) {

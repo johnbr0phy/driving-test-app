@@ -3,9 +3,8 @@
 import { useEffect, useState } from "react";
 import { estimateTimings, mistakeExplainerById, type MistakeManifest } from "@/lib/mistakeExplainers";
 import { useMistakeManifest } from "@/components/mistakes/MistakeExplainerPlayer";
-import { Stage, W, H } from "@/components/mistakes/Stage";
-import { SCENES, SCENES2 } from "@/components/mistakes/scenes";
-import { Stage2 } from "@/components/mistakes/Stage2";
+import { Stage2, W, H } from "@/components/mistakes/Stage2";
+import { SCENES2 } from "@/components/mistakes/scenes";
 
 declare global {
   interface Window {
@@ -36,7 +35,7 @@ function Frame({ ex, t, setT }: { ex: NonNullable<ReturnType<typeof mistakeExpla
   if (!m) return null;
   return (
     <div id="mx-frame" style={{ width: W, height: H, position: "fixed", inset: 0, zIndex: 9999 }}>
-      {SCENES2[ex.id] ? <Stage2 ex={ex} m={m} t={t} Scene={SCENES2[ex.id]} question={ex.question} /> : <Stage ex={ex} m={m} t={t} Scene={SCENES[ex.id]} />}
+      <Stage2 ex={ex} m={m} t={t} Scene={SCENES2[ex.id]} question={ex.question} />
     </div>
   );
 }

@@ -4,8 +4,8 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { Pause, Play, RotateCcw, X } from "lucide-react";
 import { AccessibleOverlay } from "@/components/AccessibleOverlay";
 import { estimateTimings, manifestMatches, mistakeAudioUrl, mistakeManifestUrl, type MistakeExplainer, type MistakeManifest } from "@/lib/mistakeExplainers";
-import { Stage } from "./Stage";
-import { SCENES } from "./scenes";
+import { Stage2 } from "./Stage2";
+import { SCENES2 } from "./scenes";
 
 /**
  * The full-screen player for one mistake explainer. It opens on a Play
@@ -35,7 +35,7 @@ export function MistakeExplainerPlayer({ ex, onClose }: { ex: MistakeExplainer; 
   const manifest = useMistakeManifest(ex);
   const estimated = useMemo(() => estimateTimings(ex), [ex]);
   const m = manifest ?? estimated;
-  const Scene = SCENES[ex.id];
+  const Scene = SCENES2[ex.id];
 
   const audio = useRef<HTMLAudioElement | null>(null);
   const silent = useRef({ base: 0, at: 0 });
@@ -109,11 +109,12 @@ export function MistakeExplainerPlayer({ ex, onClose }: { ex: MistakeExplainer; 
 
   return (
     <AccessibleOverlay onClose={onClose} aria-label={`Explainer: ${ex.title}`} className="fixed inset-0 z-[80] bg-black/85 flex items-center justify-center p-2 sm:p-6">
-      <div className="relative h-full max-h-[min(100dvh,1000px)] aspect-[9/16] max-w-full rounded-2xl overflow-hidden shadow-2xl bg-[#07152e]">
-        <Stage ex={ex} m={m} t={t} Scene={Scene} silent={status === "silent"} />
+      <div className="relative h-full max-h-[min(100dvh,1000px)] aspect-[9/16] max-w-full rounded-2xl overflow-hidden shadow-2xl bg-[#f7f4ec]">
+        <Stage2 ex={ex} m={m} t={t} Scene={Scene} question={ex.question} />
+        {status === "silent" && <span className="absolute bottom-10 right-4 text-xs text-gray-500">no sound</span>}
 
         {status === "ready" && (
-          <button onClick={() => start(0)} className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-[#07152e]/70 text-white">
+          <button onClick={() => start(0)} className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-black/40 text-white">
             <span className="w-20 h-20 rounded-full bg-[#ffcf3f] text-[#07152e] flex items-center justify-center shadow-lg">
               <Play className="w-9 h-9 ml-1" fill="currentColor" />
             </span>

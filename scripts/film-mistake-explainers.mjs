@@ -61,7 +61,8 @@ for (const id of ids) {
     "-framerate", String(fps), "-i", join(dir, "f%05d.png"),
     "-i", `public/mistake-explainers/${id}.mp3`,
     "-c:v", "libx264", "-pix_fmt", "yuv420p", "-crf", "20", "-preset", "medium",
-    "-c:a", "aac", "-b:a", "128k", "-af", "apad",
+    // Stereo 48 kHz at -16 LUFS: mono AAC plays silent in some phone and in-app players.
+    "-c:a", "aac", "-b:a", "160k", "-ac", "2", "-af", "apad,loudnorm=I=-16:TP=-1.5:LRA=11,aresample=48000",
     "-t", String(duration), "-movflags", "+faststart", mp4,
   ]);
   rmSync(dir, { recursive: true, force: true });

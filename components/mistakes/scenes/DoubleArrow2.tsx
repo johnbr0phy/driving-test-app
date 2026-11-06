@@ -4,8 +4,11 @@ import { CurveArrow, GREEN, INK, Note, ORANGE, RED, SOFT, Sign, window2 } from "
 
 /**
  * DMV U-019, the double arrow sign (MUTCD W12-1): two separate arrows,
- * down-left and down-right, mounted on the nose of an island. Sign art is the
- * official MUTCD drawing in public/signs/double-arrow.svg.
+ * down-left and down-right, mounted on the nose of an island. Sign art in
+ * public/signs/double-arrow.svg (Wikimedia's public-domain MUTCD W12-1 file),
+ * checked against the official FHWA drawing: Standard Highway Signs, Warning
+ * chapter, page 2-105 (https://mutcd.fhwa.dot.gov/SHSe/Warning.pdf).
+ * Every sign in an explainer is checked against its FHWA page before use.
  */
 
 // Driver's-eye road: vanishing point and the island in the middle.

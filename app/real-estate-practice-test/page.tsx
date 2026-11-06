@@ -88,6 +88,11 @@ const statePractice = [
     href: "/real-estate/tn/dashboard",
     body: "120 source-checked questions like the PSI affiliate broker exam: 80 national and 40 Tennessee questions on the Broker License Act and TREC rules.",
   },
+  {
+    name: "Louisiana",
+    href: "/real-estate/la/dashboard",
+    body: "135 source-checked questions like the Pearson VUE exam: 80 national and 55 Louisiana questions on license law, LREC rules, agency and the civil law of property and sales.",
+  },
   // end batch 2
 ];
 
@@ -157,7 +162,7 @@ const jsonLd = {
           name: "Does this cover my state's exam?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Fifteen states have their own practice with state law: Arizona, California, Florida, Georgia, Illinois, Michigan, New Jersey, New York, North Carolina, Ohio, Pennsylvania, Tennessee, Texas, Virginia and Washington. Each is one full-length exam shaped like that state's, and progress is saved separately per state. For other states, the 200-question bank covers the national portion, which is the same in every Pearson VUE or PSI state; your state law portion is separate and not covered yet.",
+            text: "Sixteen states have their own practice with state law: Arizona, California, Florida, Georgia, Illinois, Louisiana, Michigan, New Jersey, New York, North Carolina, Ohio, Pennsylvania, Tennessee, Texas, Virginia and Washington. Each is one full-length exam shaped like that state's, and progress is saved separately per state. For other states, the 200-question bank covers the national portion, which is the same in every Pearson VUE or PSI state; your state law portion is separate and not covered yet.",
           },
         },
         {
@@ -261,7 +266,7 @@ export default function RealestateLandingPage() {
       {/* State practice */}
       <div className="max-w-5xl mx-auto px-6 pb-16 md:pb-24">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-4">
-          State Practice: 15 States
+          State Practice: 16 States
         </h2>
         <p className="text-lg text-gray-600 dark:text-gray-300 text-center max-w-2xl mx-auto mb-10">
           Taking the exam in one of these states? Practice with questions checked against your state&apos;s law, including state-only rules. Progress is saved separately for each state.
@@ -385,7 +390,7 @@ export default function RealestateLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Does this cover my state&apos;s exam?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              Fifteen states have their own practice with state law: Arizona, California, Florida, Georgia, Illinois, Michigan, New Jersey, New York, North Carolina, Ohio, Pennsylvania, Tennessee, Texas, Virginia and Washington. Each is one full-length exam shaped like that state&apos;s, and progress is saved separately per state. For other states, the 200-question bank covers the national portion, which is the same in every Pearson VUE or PSI state; your state law portion is separate and not covered yet.
+              Sixteen states have their own practice with state law: Arizona, California, Florida, Georgia, Illinois, Louisiana, Michigan, New Jersey, New York, North Carolina, Ohio, Pennsylvania, Tennessee, Texas, Virginia and Washington. Each is one full-length exam shaped like that state&apos;s, and progress is saved separately per state. For other states, the 200-question bank covers the national portion, which is the same in every Pearson VUE or PSI state; your state law portion is separate and not covered yet.
             </p>
           </div>
           <div>

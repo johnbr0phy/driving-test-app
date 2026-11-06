@@ -1,0 +1,130 @@
+{
+ "total": 135,
+ "include": [
+  "RE-PROP-001",
+  "RE-PROP-006",
+  "RE-PROP-009",
+  "RE-PROP-010",
+  "RE-PROP-011",
+  "RE-PROP-014",
+  "RE-PROP-015",
+  "RE-PROP-017",
+  "RE-PROP-021",
+  "RE-PROP-022",
+  "RE-PROP-023",
+  "RE-OWN-004",
+  "RE-OWN-005",
+  "RE-OWN-006",
+  "RE-OWN-010",
+  "RE-OWN-013",
+  "RE-OWN-014",
+  "RE-OWN-022",
+  "RE-OWN-023",
+  "RE-OWN-024",
+  "RE-VAL-001",
+  "RE-VAL-002",
+  "RE-VAL-003",
+  "RE-VAL-005",
+  "RE-VAL-011",
+  "RE-VAL-014",
+  "RE-VAL-016",
+  "RE-VAL-018",
+  "RE-VAL-020",
+  "RE-VAL-022",
+  "RE-VAL-026",
+  "RE-CON-003",
+  "RE-CON-004",
+  "RE-CON-005",
+  "RE-CON-007",
+  "RE-CON-010",
+  "RE-CON-014",
+  "RE-CON-015",
+  "RE-CON-018",
+  "RE-CON-026",
+  "RE-CON-027",
+  "RE-CON-031",
+  "RE-CON-033",
+  "RE-CON-035",
+  "RE-CON-037",
+  "RE-CON-039",
+  "RE-CON-040",
+  "RE-PRAC-002",
+  "RE-PRAC-003",
+  "RE-PRAC-006",
+  "RE-PRAC-007",
+  "RE-PRAC-008",
+  "RE-PRAC-014",
+  "RE-PRAC-015",
+  "RE-PRAC-019",
+  "RE-PRAC-021",
+  "RE-PRAC-023",
+  "RE-DISC-001",
+  "RE-DISC-002",
+  "RE-DISC-003",
+  "RE-DISC-004",
+  "RE-DISC-007",
+  "RE-DISC-009",
+  "RE-DISC-011",
+  "RE-DISC-014",
+  "RE-DISC-018",
+  "RE-FIN-004",
+  "RE-FIN-005",
+  "RE-FIN-006",
+  "RE-FIN-008",
+  "RE-FIN-012",
+  "RE-FIN-013",
+  "RE-FIN-014",
+  "RE-MATH-001",
+  "RE-MATH-004",
+  "RE-MATH-010",
+  "RE-MATH-011",
+  "RE-MATH-012",
+  "RE-MATH-019",
+  "RE-MATH-020"
+ ],
+ "overrides": {
+  "RE-PROP-001": {
+   "optionA": "A component part that conveys",
+   "explanation": "Louisiana Civil Code article 466 makes things attached to a building that, according to prevailing usages, serve to complete a building of its general type, including its electrical systems, component parts of the building. Louisiana calls these component parts rather than fixtures. A wired-in light fixture is part of the electrical system, so it transfers with the immovable unless the contract excludes it. Trade fixtures belong to tenants, not owners."
+  },
+  "RE-OWN-004": {
+   "explanation": "Louisiana is a community property state, and Civil Code article 2341 makes property a spouse acquires by inheritance or donation to that spouse alone her separate property. Things acquired during the marriage by the effort of either spouse are generally community property under article 2338."
+  },
+  "RE-OWN-023": {
+   "explanation": "Under Louisiana's public records doctrine (Civil Code articles 1839 and 2442), an unrecorded sale binds the parties but not third persons, so Buyer 2, who recorded in the parish where the lot lies, generally prevails. Buyer 1's sale was valid only between Buyer 1 and the seller."
+  },
+  "RE-CON-005": {
+   "optionA": "Void because no deposit was paid",
+   "optionD": "Unenforceable, since it is not in writing",
+   "explanation": "In Louisiana a sale or promise of sale of an immovable must be made by authentic act or act under private signature (Civil Code articles 1839 and 2440), so an oral agreement cannot be enforced against a seller who refuses to recognize it. Louisiana has no common-law Statute of Frauds; its form rule is in the Civil Code. No deposit is needed for a valid agreement."
+  },
+  "RE-CON-007": {
+   "explanation": "A minor lacks contractual capacity, and in Louisiana the contract is relatively null (Civil Code articles 1918 and 1919): only the minor may have it annulled, while the adult remains bound. That is what other states call voidable."
+  },
+  "RE-CON-026": {
+   "explanation": "La. R.S. 9:3897 allows dual agency only with the informed written consent of all clients, given on the commission's dual agency disclosure form. Telling only the seller leaves the buyer unaware of the divided loyalty."
+  },
+  "RE-CON-027": {
+   "explanation": "In designated agency the broker assigns separate licensees to each client within the same firm. La. R.S. 9:3891 and 9:3892 make the designated agent the default in Louisiana, and only that licensee represents the client, not everyone in the brokerage."
+  },
+  "RE-CON-039": {
+   "explanation": "La. R.S. 9:3894 requires licensees to treat customers honestly and fairly, and LREC rules and 37:1455 require disclosure of known material defects. Loyalty and confidentiality are owed only to clients."
+  },
+  "RE-CON-040": {
+   "explanation": "LREC rules (LAC 46:LXVII, section 3703) require the agency disclosure pamphlet at the first substantive contact, such as a talk about finances or motives. Collecting his maximum price first would let him reveal information the seller's agent must share with her client."
+  },
+  "RE-DISC-018": {
+   "explanation": "A stigmatized, or psychologically impacted, property carries the effect of an event such as a crime or death, not a physical flaw. La. R.S. 37:1468 says a homicide, other felony or suicide on the property is not a material fact a licensee must disclose. A latent defect is a hidden physical problem."
+  },
+  "RE-PRAC-002": {
+   "explanation": "La. R.S. 37:1455(A)(17) requires a salesperson to put deposits in the sponsoring broker's custody as soon after receipt as practicable, for deposit in the broker's escrow account. Handing it to the seller or holding it personally breaches the duty to account for client funds."
+  },
+  "RE-FIN-013": {
+   "question": "A title company offers a Louisiana salesperson $200 for every buyer the salesperson refers to it. Under RESPA, accepting this payment is:"
+  },
+  "RE-CON-004": {
+   "optionC": "A lawful cause",
+   "explanation": "Recording gives notice to third persons (Civil Code article 2442) but has no effect on whether the contract binds the parties. Capacity, consent through offer and acceptance, and a lawful cause and object (articles 1918, 1927, 1966 and 1971) are essential. Louisiana requires cause rather than common-law consideration."
+  }
+ }
+}

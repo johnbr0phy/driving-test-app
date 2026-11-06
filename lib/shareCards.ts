@@ -76,6 +76,12 @@ const CARD_FOOTERS: Record<string, string> = {
   pl: "Darmowe ćwiczenia. Każda odpowiedź wyjaśniona.",
   nl: "Gratis oefenen. Elk antwoord uitgelegd.",
   pt: "Treino gratuito. Cada resposta explicada.",
+  sv: "Gratis övning. Varje svar förklaras.",
+  da: "Gratis øvelse. Hvert svar forklaret.",
+  fi: "Ilmaista harjoittelua. Jokainen vastaus selitetään.",
+  hu: "Ingyenes gyakorlás. Minden válasz elmagyarázva.",
+  ro: "Exersare gratuită. Fiecare răspuns explicat.",
+  el: "Δωρεάν εξάσκηση. Κάθε απάντηση εξηγείται.",
 };
 
 // Versioned card copy is separate from longer search descriptions and bank counts.

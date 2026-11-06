@@ -62,8 +62,14 @@ export function siteShareMetadata(title: string): Metadata {
  * JSON-LD inLanguage). The base language uses ExamConfig.locale, else the
  * exam's country ("en-GB" for a UK exam, "de-DE" for a German one) or en-US;
  * a translation uses its own `locale`, else "<lang>-US" (the US Spanish,
- * Vietnamese and Korean exam pages).
+ * Vietnamese and Korean exam pages). A language spoken in one country
+ * (Swedish, Danish, Finnish, Hungarian, Romanian, Greek) falls back to that
+ * country's tag rather than "-US".
  */
+const LANGUAGE_LOCALE: Partial<Record<Language, string>> = {
+  sv: "sv-SE", da: "da-DK", fi: "fi-FI", hu: "hu-HU", ro: "ro-RO", el: "el-GR",
+};
+
 export function examLandingLocale(examId: string, lang: Language): string {
   const exam = getExamById(examId)!;
   const region = regionOfTest(examId);
@@ -71,9 +77,10 @@ export function examLandingLocale(examId: string, lang: Language): string {
   if (lang === examBaseLanguage(exam)) {
     if (exam.locale) return exam.locale;
     if (lang === "en") return country ? regionInfo(country).locale : "en-US";
+    if (!country && LANGUAGE_LOCALE[lang]) return LANGUAGE_LOCALE[lang]!;
     return `${lang}-${country === "UK" ? "GB" : country ?? "US"}`;
   }
-  return exam.translations?.[lang]?.locale ?? `${lang}-US`;
+  return exam.translations?.[lang]?.locale ?? LANGUAGE_LOCALE[lang] ?? `${lang}-US`;
 }
 
 /**

@@ -9,10 +9,16 @@ import { it } from './it';
 import { pl } from './pl';
 import { nl } from './nl';
 import { pt } from './pt';
+import { sv } from './sv';
+import { da } from './da';
+import { fi } from './fi';
+import { hu } from './hu';
+import { ro } from './ro';
+import { el } from './el';
 
-export type Language = 'en' | 'es' | 'vi' | 'ko' | 'zh' | 'de' | 'fr' | 'it' | 'pl' | 'nl' | 'pt';
+export type Language = 'en' | 'es' | 'vi' | 'ko' | 'zh' | 'de' | 'fr' | 'it' | 'pl' | 'nl' | 'pt' | 'sv' | 'da' | 'fi' | 'hu' | 'ro' | 'el';
 
-const translations: Record<Language, TranslationKeys> = { en, es, vi, ko, zh, de, fr, it, pl, nl, pt };
+const translations: Record<Language, TranslationKeys> = { en, es, vi, ko, zh, de, fr, it, pl, nl, pt, sv, da, fi, hu, ro, el };
 
 /** Every supported language, in the order the switcher lists them. */
 export const LANGUAGES: { code: Language; flag: string; label: string; englishName: string }[] = [
@@ -27,6 +33,12 @@ export const LANGUAGES: { code: Language; flag: string; label: string; englishNa
   { code: 'pl', flag: '\u{1F1F5}\u{1F1F1}', label: 'Polski', englishName: 'Polish' },
   { code: 'nl', flag: '\u{1F1F3}\u{1F1F1}', label: 'Nederlands', englishName: 'Dutch' },
   { code: 'pt', flag: '\u{1F1F5}\u{1F1F9}', label: 'Português', englishName: 'Portuguese' },
+  { code: 'sv', flag: '\u{1F1F8}\u{1F1EA}', label: 'Svenska', englishName: 'Swedish' },
+  { code: 'da', flag: '\u{1F1E9}\u{1F1F0}', label: 'Dansk', englishName: 'Danish' },
+  { code: 'fi', flag: '\u{1F1EB}\u{1F1EE}', label: 'Suomi', englishName: 'Finnish' },
+  { code: 'hu', flag: '\u{1F1ED}\u{1F1FA}', label: 'Magyar', englishName: 'Hungarian' },
+  { code: 'ro', flag: '\u{1F1F7}\u{1F1F4}', label: 'Română', englishName: 'Romanian' },
+  { code: 'el', flag: '\u{1F1EC}\u{1F1F7}', label: 'Ελληνικά', englishName: 'Greek' },
 ];
 
 /**
@@ -63,5 +75,5 @@ export function createT(language: Language) {
   };
 }
 
-export { en, es, vi, ko, zh, de, fr, it, pl, nl, pt };
+export { en, es, vi, ko, zh, de, fr, it, pl, nl, pt, sv, da, fi, hu, ro, el };
 export type { TranslationKeys };

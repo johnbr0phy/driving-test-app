@@ -109,6 +109,42 @@ const SAMPLE_COPY: Partial<Record<Language, { title: (name: string) => string; s
     answer: "Resposta",
     quiz: (name) => `${name}: perguntas de exemplo`,
   },
+  sv: {
+    title: (name) => `${name}: exempelfrågor med svar`,
+    sub: (n, total) => `${n} av de ${total} övningsfrågorna, en från varje ämne, med förklarat svar.`,
+    answer: "Svar",
+    quiz: (name) => `${name}: exempelfrågor`,
+  },
+  da: {
+    title: (name) => `${name}: eksempler på spørgsmål med svar`,
+    sub: (n, total) => `${n} af de ${total} øvelsesspørgsmål, ét fra hvert emne, med svaret forklaret.`,
+    answer: "Svar",
+    quiz: (name) => `${name}: eksempler på spørgsmål`,
+  },
+  fi: {
+    title: (name) => `${name}: esimerkkikysymykset vastauksineen`,
+    sub: (n, total) => `${n}/${total} harjoituskysymyksestä, yksi kustakin aiheesta, vastaus selitettynä.`,
+    answer: "Vastaus",
+    quiz: (name) => `${name}: esimerkkikysymykset`,
+  },
+  hu: {
+    title: (name) => `${name}: mintakérdések válaszokkal`,
+    sub: (n, total) => `${n} a(z) ${total} gyakorlókérdésből, minden témából egy, elmagyarázott válasszal.`,
+    answer: "Válasz",
+    quiz: (name) => `${name}: mintakérdések`,
+  },
+  ro: {
+    title: (name) => `${name}: exemple de întrebări cu răspunsuri`,
+    sub: (n, total) => `${n} din cele ${total % 100 >= 20 || (total % 100 === 0 && total !== 0) ? `${total} de` : total} întrebări de exersare, câte una din fiecare temă, cu răspunsul explicat.`,
+    answer: "Răspuns",
+    quiz: (name) => `${name}: exemple de întrebări`,
+  },
+  el: {
+    title: (name) => `${name}: δείγμα ερωτήσεων με απαντήσεις`,
+    sub: (n, total) => `${n} από τις ${total} ερωτήσεις εξάσκησης, μία από κάθε θέμα, με εξήγηση της απάντησης.`,
+    answer: "Απάντηση",
+    quiz: (name) => `${name}: δείγμα ερωτήσεων`,
+  },
 };
 
 /**

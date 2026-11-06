@@ -184,6 +184,12 @@ const TEST_SET_NAMES: Record<Language, (n: number) => string> = {
   pl: (n) => `Zestaw treningowy ${n}`,
   nl: (n) => `Oefenset ${n}`,
   pt: (n) => `Conjunto de treino ${n}`,
+  sv: (n) => `Övningsset ${n}`,
+  da: (n) => `Træningssæt ${n}`,
+  fi: (n) => `Harjoitussarja ${n}`,
+  hu: (n) => `${n}. gyakorlósorozat`,
+  ro: (n) => `Setul de antrenament ${n}`,
+  el: (n) => `Σετ εξάσκησης ${n}`,
 };
 
 const cdl: ExamConfig = {
@@ -14617,6 +14623,12 @@ export function trainingPartName(p: TrainingPart, lang: Language = "en"): string
   if (lang === "pl") return `${p.set.name}, część ${p.part} z ${p.partCount}`;
   if (lang === "nl") return `${p.set.name}, deel ${p.part} van ${p.partCount}`;
   if (lang === "pt") return `${p.set.name}, parte ${p.part} de ${p.partCount}`;
+  if (lang === "sv") return `${p.set.name}, del ${p.part} av ${p.partCount}`;
+  if (lang === "da") return `${p.set.name}, del ${p.part} af ${p.partCount}`;
+  if (lang === "fi") return `${p.set.name}, osa ${p.part}/${p.partCount}`;
+  if (lang === "hu") return `${p.set.name}, ${p.part}/${p.partCount}. rész`;
+  if (lang === "ro") return `${p.set.name}, partea ${p.part} din ${p.partCount}`;
+  if (lang === "el") return `${p.set.name}, μέρος ${p.part} από ${p.partCount}`;
   return `${p.set.name}, part ${p.part} of ${p.partCount}`;
 }
 

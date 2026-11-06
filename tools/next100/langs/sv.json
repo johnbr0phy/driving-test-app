@@ -1,0 +1,102 @@
+{
+  "_comment": "Swedish (sv, sv-SE) entries for the per-language tables. Machine-translated, pending native review. Register: du. Paste-ready blocks for each shared file are in tools/next100/langs/sv.WIRING.md.",
+  "language": "sv",
+  "locale": "sv-SE",
+  "label": "Svenska",
+  "englishName": "Swedish",
+  "flag": "\\u{1F1F8}\\u{1F1EA}",
+  "TEST_SET_NAMES": "Övningsset {n}",
+  "trainingPartName": "{set}, del {part} av {partCount}",
+  "EXAM_UI": {
+    "heroTitle": {
+      "zero": "Klara alla {total} steg",
+      "all": "Du är redo",
+      "oneLeft": "Ett kvar",
+      "one": "Bra start. 1 av {total} klart",
+      "under45": "{done} av {total} klara",
+      "under55": "Halvvägs",
+      "under80": "Mer än halvvägs",
+      "else": "{done} av {total}, nästan klart"
+    },
+    "questionsCount": "{n} frågor",
+    "needToPass": "{pct} % krävs för godkänt",
+    "fullLengthExam": "🎯 Fullängdsprov",
+    "testN": "🎯 Prov {n}",
+    "examTestN": "{shortName}, prov {n}",
+    "pctToPass": "{pct} % för godkänt",
+    "yourStats": "Din statistik",
+    "yourStatsSub": "Varje fråga du har sett, sorterad efter vad du oftast svarar fel på",
+    "aboutThisTest": "Om det här övningsprovet",
+    "trainingBadge": "TRÄNING {shortName}",
+    "masteredMyTraining": "JAG HAR BEMÄSTRAT TRÄNINGEN {shortName}",
+    "mastered": "BEMÄSTRAT",
+    "nextPart": "Nästa: {name}",
+    "setN": "Set {n}",
+    "statsSeen": "Du har sett {seen} av {total} frågor för {shortName}. Tryck på en rad för att svara igen.",
+    "dateLocale": "sv-SE"
+  },
+  "COPY_ExamLandingHero": {
+    "start": "Börja öva",
+    "dashboard": "Till översikten",
+    "mobile": "Öva i mobilen",
+    "desktop": "Gör provet på datorn",
+    "mobileAlt": "Tigertest {name}: träningsläge i mobilen",
+    "desktopAlt": "Tigertest {name}: övningsprov på datorn"
+  },
+  "SAMPLE_COPY": {
+    "title": "{name}: exempelfrågor med svar",
+    "sub": "{n} av de {total} övningsfrågorna, en från varje ämne, med förklarat svar.",
+    "answer": "Svar",
+    "quiz": "{name}: exempelfrågor"
+  },
+  "RELATED_COPY": {
+    "title": "Fler övningsprov",
+    "sub": "Alla prov på Tigertest är gratis och du behöver inget konto för att börja.",
+    "country": "Gratis övningsprov: {name}",
+    "all": "Se alla {n} övningsprov"
+  },
+  "CARD_FOOTERS": "Gratis övning. Varje svar förklaras.",
+  "ReportExamQuestion": {
+    "open": "Rapportera den här frågan",
+    "what": "Vad är fel?",
+    "note": "Vad borde det stå? (valfritt)",
+    "send": "Skicka",
+    "sending": "Skickar...",
+    "cancel": "Avbryt",
+    "thanks": "Tack. Vi går igenom varje rapport och rättar frågan om den är fel.",
+    "error": "Det gick inte att skicka. Försök igen.",
+    "reasons": {
+      "wrong_answer": "Det markerade svaret är fel",
+      "two_answers": "Mer än ett svar är rätt",
+      "unclear": "Frågan är otydlig",
+      "outdated": "Regeln eller uppgiften är inaktuell",
+      "typo": "Det finns ett stavfel",
+      "other": "Något annat"
+    }
+  },
+  "ExamTrainingPage_celebrationCopy": {
+    "title": "Det här steget är nu grönt!",
+    "part": "Delen är klar",
+    "set": "Träningen är klar",
+    "progress": "Se dina framsteg",
+    "description": "Övningen lönade sig. Det här steget är nu grönt i din översikt.",
+    "remaining": "Du är klar med den här delen. Fortsätt för att klara resten av setet.",
+    "resetPart": "Då nollställs bara dina framsteg i den här delen. Är du säker?"
+  },
+  "ResultsHeroDebrief": {
+    "progressLabel": "Se dina framsteg",
+    "completedLabel": "Övningsprovet är klart"
+  },
+  "llmsTxt_LANGUAGE_NAMES": "Swedish",
+  "shuffleGuard": {
+    "connectors": ["och", "eller"],
+    "phrases": ["Alla ovanstående", "Inget av ovanstående", "Ingen av ovanstående", "Alla svaren", "Alla alternativen"],
+    "both": ["Båda", "Båda är rätt", "Båda svaren", "Båda alternativen"]
+  },
+  "validate_bank": {
+    "banned": "alla ovanstående|inget av ovanstående|ingen av ovanstående|alla svaren|alla alternativen",
+    "connectors": ["och", "eller"],
+    "both": ["båda"],
+    "lenScale": 1.05
+  }
+}

@@ -7,7 +7,9 @@
 // contexts/LanguageContext.tsx keeps it while the person browses: such a
 // page's content is in its URL's language even when the header and footer
 // follow the person's own (lib/pageLanguage.ts). /es and /pt themselves are English
-// country homepages, so only the pages under them count.
+// country homepages, so only the pages under them count. /sv, /da, /fi, /hu, /ro
+// and /el hold no pages yet; /fi, /hu and /ro are also country homepages (English
+// until their translated test ships), so, like /es, only the pages under them count.
 
 export const URL_LANGUAGE_PREFIXES: { prefix: string; lang: string; includeRoot: boolean }[] = [
   { prefix: "/es", lang: "es", includeRoot: false },
@@ -16,6 +18,12 @@ export const URL_LANGUAGE_PREFIXES: { prefix: string; lang: string; includeRoot:
   { prefix: "/ko", lang: "ko", includeRoot: false },
   { prefix: "/zh", lang: "zh-Hans", includeRoot: false },
   { prefix: "/de", lang: "de", includeRoot: true },
+  { prefix: "/sv", lang: "sv", includeRoot: false },
+  { prefix: "/da", lang: "da", includeRoot: false },
+  { prefix: "/fi", lang: "fi", includeRoot: false },
+  { prefix: "/hu", lang: "hu", includeRoot: false },
+  { prefix: "/ro", lang: "ro", includeRoot: false },
+  { prefix: "/el", lang: "el", includeRoot: false },
 ];
 
 /** The language `pathname` is written in, or null for an ordinary page. */

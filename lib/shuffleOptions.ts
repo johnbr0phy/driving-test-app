@@ -48,6 +48,12 @@ const LANGUAGE_PATTERNS: Record<string, { connectors: string[]; phrases: string[
   pl: { connectors: ["i", "lub", "oraz"], phrases: ["Wszystkie powyższe", "Żadna z powyższych", "Wszystkie odpowiedzi"], both: ["Obie", "Oba", "Obie odpowiedzi"] },
   nl: { connectors: ["en", "of"], phrases: ["Alle bovenstaande", "Geen van de bovenstaande", "Alle antwoorden"], both: ["Beide", "Beide antwoorden"] },
   pt: { connectors: ["e", "ou"], phrases: ["Todas as anteriores", "Nenhuma das anteriores", "Todas as respostas"], both: ["Ambas", "Ambos", "Ambas as anteriores", "Ambas estão corretas"] },
+  sv: { connectors: ["och", "eller"], phrases: ["Alla ovanstående", "Inget av ovanstående", "Ingen av ovanstående", "Alla svaren", "Alla alternativen"], both: ["Båda", "Båda är rätt", "Båda svaren", "Båda alternativen"] },
+  da: { connectors: ["og", "eller"], phrases: ["Alle ovenstående", "Ingen af ovenstående", "Alle svarene er rigtige", "Alle svar er rigtige", "Ingen af svarene"], both: ["Begge", "Begge dele", "Begge svar", "Begge svar er rigtige"] },
+  fi: { connectors: ["ja", "tai"], phrases: ["Kaikki edellä mainitut", "Kaikki yllä olevat", "Ei mikään edellä mainituista", "Ei mikään yllä olevista", "Kaikki vastaukset", "Kaikki vaihtoehdot"], both: ["Molemmat", "Molemmat ovat oikein", "Molemmat vastaukset", "Molemmat vaihtoehdot"] },
+  hu: { connectors: ["és", "vagy"], phrases: ["A fentiek mindegyike", "A fentiek közül egyik sem", "Egyik fenti sem", "Egyik válasz sem", "Mindegyik válasz helyes", "Minden válasz helyes"], both: ["Mindkettő", "Mindkettő helyes", "Mindkét válasz", "Mindkét válasz helyes"] },
+  ro: { connectors: ["și", "sau", "ori"], phrases: ["Toate cele de mai sus", "Niciuna dintre cele de mai sus", "Niciunul dintre cele de mai sus", "Toate variantele", "Toate variantele sunt corecte", "Toate răspunsurile sunt corecte", "Niciuna dintre variante", "Niciun răspuns nu este corect"], both: ["Ambele", "Amândouă", "Amândoi", "Ambii", "Ambele variante", "Ambele răspunsuri", "Ambele sunt corecte"] },
+  el: { connectors: ["και", "ή"], phrases: ["Όλα τα παραπάνω", "Όλες οι παραπάνω", "Όλοι οι παραπάνω", "Κανένα από τα παραπάνω", "Καμία από τις παραπάνω", "Κανένας από τους παραπάνω", "Όλες οι απαντήσεις"], both: ["Και τα δύο", "Και οι δύο", "Αμφότερα", "Και οι δύο απαντήσεις"] },
 };
 
 const escape = (t: string) => t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");

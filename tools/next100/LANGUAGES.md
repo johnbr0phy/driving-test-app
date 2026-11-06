@@ -133,6 +133,15 @@ leaving about 560 strings (about 3,400 words).
 5. `i18n/index.ts`: extend `Language` and `LANGUAGES` (Deutsch, Français, Italiano, Polski,
    Nederlands, Português) and export `DMV_LANGUAGES = ["en", "es", "vi", "ko", "zh"]`.
 
+Added Nov 2026, the same way: `i18n/{sv,da,fi,hu,ro,el}.ts` and `components/home/copy/<code>.ts`
+(Swedish, Danish, Finnish, Hungarian, Romanian, Greek; informal register,
+machine-translated, pending native review), with their entries in every per-language table above,
+the shuffle guard and both validators (paste-ready values in `tools/next100/langs/<code>.json` and
+`<code>.WIRING.md`), `/<code>` URL prefixes in `lib/urlLanguage.ts` (no pages yet; `/fi`, `/hu` and
+`/ro` stay English country homepages since only paths under a prefix count) and fallback locales in
+`examLandingLocale()`. No region's `lang` was switched: that happens when the country's translated
+test ships.
+
 Later: `tr`, `id`, and `pt-BR` as a separate dictionary (European and Brazilian Portuguese UI
 differ). `es` stays one dictionary; reword the few Latin American strings ("celular",
 "computadora") neutrally for Spain.

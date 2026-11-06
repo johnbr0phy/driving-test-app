@@ -1,0 +1,102 @@
+{
+  "_comment": "Romanian (ro, ro-RO) entries for the per-language tables. Machine-translated, pending native review. Register: informal tu. Romanian puts \"de\" between a number and its noun from 20 up (\"50 de întrebări\"); entries marked {n:noun} use the roDe() helper shown in ro.WIRING.md. Paste-ready blocks for each shared file are in tools/next100/langs/ro.WIRING.md.",
+  "language": "ro",
+  "locale": "ro-RO",
+  "label": "Română",
+  "englishName": "Romanian",
+  "flag": "\\u{1F1F7}\\u{1F1F4}",
+  "TEST_SET_NAMES": "Setul de antrenament {n}",
+  "trainingPartName": "{set}, partea {part} din {partCount}",
+  "EXAM_UI": {
+    "heroTitle": {
+      "zero": "Fă toți cei {total:pași}",
+      "all": "Ești pregătit",
+      "oneLeft": "Încă unul",
+      "one": "Început bun. 1 din {total} gata",
+      "under45": "{done} din {total} gata",
+      "under55": "La jumătatea drumului",
+      "under80": "Peste jumătate",
+      "else": "{done} din {total}, aproape gata"
+    },
+    "questionsCount": "{n:întrebări}",
+    "needToPass": "Ai nevoie de {pct}% ca să treci",
+    "fullLengthExam": "🎯 Examen complet",
+    "testN": "🎯 Testul {n}",
+    "examTestN": "{shortName}, testul {n}",
+    "pctToPass": "{pct}% pentru promovare",
+    "yourStats": "Statisticile tale",
+    "yourStatsSub": "Fiecare întrebare pe care ai văzut-o, ordonată după cele pe care le greșești cel mai des",
+    "aboutThisTest": "Despre acest test de exersare",
+    "trainingBadge": "ANTRENAMENT: {shortName}",
+    "masteredMyTraining": "AM STĂPÂNIT ANTRENAMENTUL {shortName}",
+    "mastered": "STĂPÂNIT",
+    "nextPart": "Urmează: {name}",
+    "setN": "Setul {n}",
+    "statsSeen": "{shortName}: ai văzut {seen} din {total:întrebări}. Atinge un rând ca să răspunzi din nou.",
+    "dateLocale": "ro-RO"
+  },
+  "COPY_ExamLandingHero": {
+    "start": "Începe să exersezi",
+    "dashboard": "Mergi la panou",
+    "mobile": "Exersează pe telefon",
+    "desktop": "Dă testul pe computer",
+    "mobileAlt": "Tigertest {name}: modul de exersare pe telefon",
+    "desktopAlt": "Tigertest {name}: test de exersare pe computer"
+  },
+  "SAMPLE_COPY": {
+    "title": "{name}: exemple de întrebări cu răspunsuri",
+    "sub": "{n} din cele {total:întrebări de exersare}, câte una din fiecare temă, cu răspunsul explicat.",
+    "answer": "Răspuns",
+    "quiz": "{name}: exemple de întrebări"
+  },
+  "RELATED_COPY": {
+    "title": "Alte teste de exersare",
+    "sub": "Pe Tigertest fiecare test e gratuit și nu ai nevoie de cont ca să începi.",
+    "country": "Teste de exersare gratuite: {name}",
+    "all": "Vezi toate testele de exersare ({n})"
+  },
+  "CARD_FOOTERS": "Exersare gratuită. Fiecare răspuns explicat.",
+  "ReportExamQuestion": {
+    "open": "Raportează întrebarea",
+    "what": "Ce e greșit?",
+    "note": "Care ar fi varianta corectă? (opțional)",
+    "send": "Trimite",
+    "sending": "Se trimite...",
+    "cancel": "Anulează",
+    "thanks": "Mulțumim. Verificăm fiecare raport și corectăm întrebarea dacă e greșită.",
+    "error": "Nu s-a putut trimite. Încearcă din nou.",
+    "reasons": {
+      "wrong_answer": "Răspunsul marcat e greșit",
+      "two_answers": "Mai multe răspunsuri sunt corecte",
+      "unclear": "Întrebarea nu e clară",
+      "outdated": "Regula sau datele sunt depășite",
+      "typo": "Are o greșeală de scriere",
+      "other": "Altceva"
+    }
+  },
+  "ExamTrainingPage_celebrationCopy": {
+    "title": "Pasul ăsta e verde acum!",
+    "part": "Partea e gata",
+    "set": "Antrenamentul e gata",
+    "progress": "Vezi progresul tău",
+    "description": "A meritat să exersezi. Pasul ăsta e acum verde în panoul tău.",
+    "remaining": "Ai terminat această parte. Continuă ca să termini restul setului.",
+    "resetPart": "Asta resetează doar progresul din această parte. Ești sigur?"
+  },
+  "ResultsHeroDebrief": {
+    "progressLabel": "Vezi progresul tău",
+    "completedLabel": "Test de exersare terminat"
+  },
+  "llmsTxt_LANGUAGE_NAMES": "Romanian",
+  "shuffleGuard": {
+    "connectors": ["și", "sau", "ori"],
+    "phrases": ["Toate cele de mai sus", "Niciuna dintre cele de mai sus", "Niciunul dintre cele de mai sus", "Toate variantele", "Toate variantele sunt corecte", "Toate răspunsurile sunt corecte", "Niciuna dintre variante", "Niciun răspuns nu este corect"],
+    "both": ["Ambele", "Amândouă", "Amândoi", "Ambii", "Ambele variante", "Ambele răspunsuri", "Ambele sunt corecte"]
+  },
+  "validate_bank": {
+    "banned": "toate cele de mai sus|niciuna (dintre|din) cele de mai sus|niciunul (dintre|din) cele de mai sus|toate variantele|toate răspunsurile|niciuna dintre variante|niciun răspuns nu",
+    "connectors": ["și", "sau", "ori"],
+    "both": ["ambele", "amândouă", "amândoi", "ambii"],
+    "lenScale": 1.2
+  }
+}

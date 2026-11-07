@@ -508,9 +508,9 @@
   "https://www.pearsonvue.com/us/en/fl/insurance.html"
  ],
  "fortigate": [
-  "https://training.fortinet.com/local/staticpage/view.php?page=library_fortigate-administrator",
-  "https://www.fortinet.com/training/cybersecurity-professionals",
-  "https://docs.fortinet.com/product/fortigate/7.6"
+  "https://training.fortinet.com/local/staticpage/view.php?page=fortios_administrator_exam",
+  "https://nseti-pdfs.s3.us-west-2.amazonaws.com/desc/FortiGate_7.6_Administrator_Exam_Description.pdf",
+  "https://training.fortinet.com/local/staticpage/view.php?page=library_fortigate-administrator"
  ],
  "fsmaths": [
   "https://www.gov.uk/government/publications/functional-skills-subject-content-mathematics/subject-content-functional-skills-maths",

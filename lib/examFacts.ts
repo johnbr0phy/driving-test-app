@@ -4764,18 +4764,18 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
   },
   fortigate: {
     answer:
-      "The FCP - FortiGate 7.6 Administrator exam (FCP_FGT_AD-7.6, formerly called NSE 4) is Fortinet's certification exam for people who configure and run FortiGate firewalls on FortiOS 7.6. It is the core exam toward the Fortinet Certified Professional (FCP) in Network Security. Study guides give 50 multiple-choice and multiple-select questions in 90 minutes, taken at a Pearson VUE test center or online, with a pass or fail result and no published passing score. The topics are deployment and system configuration, firewall policies and authentication, content inspection, routing including SD-WAN, and VPN.",
+      "The Fortinet NSE 4 - FortiOS 7.6 Administrator exam is Fortinet's certification exam for people who configure and run FortiGate firewalls on FortiOS 7.6. It replaced the FCP - FortiGate 7.6 Administrator exam (FCP_FGT_AD-7.6), the core exam toward the Fortinet Certified Professional in Network Security. Fortinet's exam page gives 50 to 55 questions in 100 minutes, pass or fail, in English or Japanese, taken through Pearson VUE. Its topics are deployment and system configuration (20 to 25%), firewall policies and authentication (20 to 25%), content inspection (25 to 30%), routing including SD-WAN (10 to 15%) and IPsec VPNs (10 to 15%).",
     rows: [
-      { label: "Questions", value: "About 50 (study guides)" },
-      { label: "Time", value: "90 minutes (study guides)" },
+      { label: "Questions", value: "50 to 55" },
+      { label: "Time", value: "100 minutes" },
       { label: "Passing score", value: "Pass or fail, cut score not published" },
-      { label: "Product version", value: "FortiOS 7.6" },
-      { label: "Topic areas", value: "Deployment, firewall and authentication, content inspection, routing and SD-WAN, VPN" },
-      { label: "Counts toward", value: "FCP in Network Security" },
-      { label: "Delivered by", value: "Pearson VUE, test center or online" },
+      { label: "Languages", value: "English and Japanese" },
+      { label: "Product version", value: "FortiOS 7.6.0" },
+      { label: "Largest area", value: "Content inspection, 25 to 30%" },
+      { label: "Delivered by", value: "Pearson VUE" },
     ],
-    basedOn: "Fortinet Training Institute FortiGate Administrator course page and study guides quoting the FCP_FGT_AD-7.6 exam description, checked November 2026",
-    source: { name: "Fortinet Training Institute: FortiGate Administrator", url: "https://training.fortinet.com/local/staticpage/view.php?page=library_fortigate-administrator" },
+    basedOn: "Fortinet Training Institute FortiOS Administrator Exam page and the FCP - FortiGate 7.6 Administrator exam description (June 2025), checked November 2026",
+    source: { name: "Fortinet Training Institute: FortiOS Administrator Exam", url: "https://training.fortinet.com/local/staticpage/view.php?page=fortios_administrator_exam" },
   },
   cssgb: {
     answer:

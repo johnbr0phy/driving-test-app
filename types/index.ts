@@ -945,6 +945,7 @@ export type QuestionCategory =
   // fortigate
   | "fgtSystem"
   | "fgtHaLog"
+  | "fgtCloud"
   | "fgtPolicy"
   | "fgtNat"
   | "fgtAuth"

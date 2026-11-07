@@ -1112,6 +1112,7 @@ export const vi: TranslationKeys = {
     // fortigate
     fgtSystem: "System Setup, Administration & VDOMs",
     fgtHaLog: "HA, Security Fabric, Logging & Diagnostics",
+    fgtCloud: "Public Cloud & FortiSASE",
     fgtPolicy: "Firewall Policies & Objects",
     fgtNat: "NAT, IP Pools & Virtual IPs",
     fgtAuth: "Authentication & FSSO",

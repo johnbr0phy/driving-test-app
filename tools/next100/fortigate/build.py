@@ -7,8 +7,8 @@ import importlib.util, json, os, sys
 sys.dont_write_bytecode = True
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, "..", "..", ".."))
-CATS = [("fgtSystem", "SYS", 24), ("fgtHaLog", "HAL", 24), ("fgtPolicy", "POL", 24), ("fgtNat", "NAT", 16),
-        ("fgtAuth", "AUT", 12), ("fgtSslInspect", "SSL", 16), ("fgtSecProfiles", "SEC", 36),
+CATS = [("fgtSystem", "SYS", 20), ("fgtHaLog", "HAL", 20), ("fgtCloud", "CLD", 8), ("fgtPolicy", "POL", 20), ("fgtNat", "NAT", 16),
+        ("fgtAuth", "AUT", 12), ("fgtSslInspect", "SSL", 16), ("fgtSecProfiles", "SEC", 40),
         ("fgtRouting", "RTE", 28), ("fgtVpn", "VPN", 20)]
 out = sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, "data", "fortigate-questions.json")
 rows = []

@@ -10,17 +10,17 @@ import { SITE_URL } from "@/lib/siteUrl";
 
 const siteUrl = SITE_URL;
 
-const title = "FortiGate Administrator Practice Test 2026 - Free FCP NSE 4 Questions";
+const title = "FortiGate Administrator Practice Test 2026 - Free NSE 4 FortiOS 7.6 Questions";
 const metaDescription =
-  "Free FCP - FortiGate 7.6 Administrator practice: 200 original questions on FortiOS 7.6, four 50-question tests and every answer explained. Policies, NAT, security profiles, SD-WAN, HA and IPsec.";
+  "Free practice for Fortinet's NSE 4 - FortiOS 7.6 Administrator exam (formerly FCP - FortiGate 7.6 Administrator): 200 original questions, four 50-question tests weighted like Fortinet's outline, every answer explained.";
 const description =
-  "Free practice for Fortinet's FCP - FortiGate 7.6 Administrator exam (FCP_FGT_AD-7.6, formerly NSE 4): 200 original questions on FortiOS 7.6 across nine topics, from system setup, VDOMs, HA and the Security Fabric to firewall policies, NAT, FSSO, SSL inspection, security profiles, static routing, SD-WAN and IPsec VPN. Four 50-question practice tests and four training sets, every answer explained.";
+  "Free practice for Fortinet's NSE 4 - FortiOS 7.6 Administrator exam, which replaced the FCP - FortiGate 7.6 Administrator exam (FCP_FGT_AD-7.6): 200 original questions on FortiOS 7.6 across ten topics, from system setup, HA, the Security Fabric, FortiGate in the cloud and FortiSASE to firewall policies, NAT, FSSO, SSL inspection, security profiles, static routing, SD-WAN and IPsec VPN. Four 50-question practice tests weighted like Fortinet's outline and four training sets, every answer explained.";
 
 export const metadata: Metadata = {
   title,
   description: metaDescription,
   keywords:
-    "fortigate administrator practice test, fcp fortigate 7.6 administrator, fcp_fgt_ad-7.6 practice questions, nse 4 practice test, fortinet certification practice exam, fortios 7.6 exam questions",
+    "fortigate administrator practice test, nse 4 fortios 7.6 administrator, nse4_fgt_ad-7.6 practice questions, fcp fortigate 7.6 administrator, fcp_fgt_ad-7.6, fortinet certification practice exam, fortios 7.6 exam questions",
   alternates: {
     canonical: `${siteUrl}/fortigate-administrator-practice-test`,
   },
@@ -42,24 +42,24 @@ export const metadata: Metadata = {
 
 const faqs = [
   {
-    q: "What is the FCP - FortiGate Administrator exam?",
-    a: "It is Fortinet's certification exam for people who set up and run FortiGate next-generation firewalls. The current version, FCP_FGT_AD-7.6, is written for FortiOS 7.6 and used to be called NSE 4. It is the core exam toward the Fortinet Certified Professional (FCP) in Network Security, and you take it at a Pearson VUE test center or online.",
+    q: "What is the FortiGate Administrator exam?",
+    a: "It is Fortinet's certification exam for people who set up and run FortiGate next-generation firewalls. The current version is called Fortinet NSE 4 - FortiOS 7.6 Administrator and is written for FortiOS 7.6.0. It replaced the FCP - FortiGate 7.6 Administrator exam (FCP_FGT_AD-7.6), the core exam toward the Fortinet Certified Professional in Network Security, and you take it through Pearson VUE.",
   },
   {
-    q: "How many questions are on the FortiGate 7.6 Administrator exam?",
-    a: "Study guides quoting Fortinet's exam description give about 50 multiple-choice and multiple-select questions in 90 minutes. The result is pass or fail and Fortinet does not publish a passing score, so the 70% line on each 50-question practice test here is Tigertest's readiness target, not Fortinet's cut score.",
+    q: "How many questions are on the NSE 4 FortiOS 7.6 Administrator exam?",
+    a: "Fortinet's exam page gives 50 to 55 questions in 100 minutes, in English or Japanese. The older FCP_FGT_AD-7.6 description gave 50 questions in 90 minutes. The result is pass or fail and Fortinet does not publish a passing score, so the 70% line on each 50-question practice test here is Tigertest's readiness target, not Fortinet's cut score.",
   },
   {
-    q: "What topics does the exam cover?",
-    a: "Five areas: deployment and system configuration (initial setup, administrators, VDOMs, HA, the Security Fabric, logging and diagnostics), firewall policies and authentication (policies, NAT, LDAP, RADIUS and FSSO), content inspection (SSL inspection, antivirus, IPS, web filtering, application control and DNS filtering), routing (static routes, policy routes and SD-WAN) and VPN (IPsec). Each practice test here mixes all nine Tigertest topics in the same balance.",
+    q: "What topics does the exam cover and how are they weighted?",
+    a: "Fortinet lists five areas: deployment and system configuration 20 to 25% (initial setup, logging, FGCP HA, troubleshooting, FortiGate in the public cloud and FortiSASE), firewall policies and authentication 20 to 25% (policies, SNAT and DNAT, LDAP, RADIUS and FSSO), content inspection 25 to 30% (SSL inspection, web filtering, application control, antivirus and IPS), routing 10 to 15% (static routes and SD-WAN) and VPNs 10 to 15% (IPsec). Each practice test here uses 12, 12, 14, 7 and 5 questions out of 50.",
   },
   {
     q: "Is SSL VPN on the FortiOS 7.6 exam?",
-    a: "Fortinet removed SSL VPN tunnel mode in FortiOS 7.6.3 and points remote users to IPsec VPN with FortiClient instead. This bank therefore covers remote access through dial-up IPsec, not SSL VPN. Check Fortinet's current exam description before you book, in case the topic list changes.",
+    a: "The older FCP - FortiGate 7.6 Administrator description listed SSL VPN, but the current NSE 4 - FortiOS 7.6 Administrator outline lists only IPsec VPN, and FortiOS 7.6.3 removed SSL VPN tunnel mode. This bank covers IPsec only. Fortinet has also announced an NSE 4 - FortiOS 8.0 Administrator exam as coming soon, so check the exam page before you book.",
   },
   {
     q: "Are these real Fortinet exam questions?",
-    a: "No. Every question is original, written by Tigertest from FortiOS 7.6 behavior and Fortinet's public course topics, never from exam dumps. It is free practice, not affiliated with or endorsed by Fortinet, and it does not replace the FortiGate Administrator course or hands-on lab time.",
+    a: "No. Every question is original, written by Tigertest from Fortinet's published exam topics and FortiOS 7.6 behavior, never from exam dumps. It is free practice, not affiliated with or endorsed by Fortinet, and it does not replace the FortiOS Administrator course or hands-on lab time.",
   },
 ];
 
@@ -95,15 +95,11 @@ const jsonLd = {
 };
 
 const contentAreas = [
-  { name: "System setup, administration and VDOMs", weight: "12%" },
-  { name: "HA, Security Fabric, logging and diagnostics", weight: "12%" },
-  { name: "Firewall policies and objects", weight: "12%" },
-  { name: "NAT, IP pools and virtual IPs", weight: "8%" },
-  { name: "Authentication and FSSO", weight: "6%" },
-  { name: "SSL inspection and inspection modes", weight: "8%" },
-  { name: "Security profiles", weight: "18%" },
-  { name: "Routing and SD-WAN", weight: "14%" },
-  { name: "IPsec VPN", weight: "10%" },
+  { name: "Deployment and system configuration", weight: "20-25%" },
+  { name: "Firewall policies and authentication", weight: "20-25%" },
+  { name: "Content inspection", weight: "25-30%" },
+  { name: "Routing", weight: "10-15%" },
+  { name: "VPNs", weight: "10-15%" },
 ];
 
 export default function FortigateLandingPage() {
@@ -124,7 +120,7 @@ export default function FortigateLandingPage() {
           <ExamLandingHero
             dashboardHref="/fortigate/dashboard"
             shortName="FortiGate"
-            subtitle="200 original questions for Fortinet's FCP - FortiGate 7.6 Administrator exam: firewall policies and NAT, security profiles, SSL inspection, SD-WAN, HA and IPsec VPN on FortiOS 7.6. Four 50-question tests, every answer explained. Tuned for mobile. No account needed."
+            subtitle="200 original questions for Fortinet's NSE 4 - FortiOS 7.6 Administrator exam, formerly FCP - FortiGate 7.6 Administrator: firewall policies and NAT, security profiles, SSL inspection, SD-WAN, HA, FortiSASE and IPsec VPN. Four 50-question tests weighted like the real exam. Tuned for mobile. No account needed."
             shots={{ mobile: "/landing/fortigate-mobile.png", desktop: "/landing/fortigate-desktop.png" }}
           />
         </div>
@@ -145,7 +141,7 @@ export default function FortigateLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train Set by Set</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four training sets, each holding exactly one practice test&apos;s 50 questions across all nine topics, from VDOMs and HA to SD-WAN rules and IPsec phase 2 selectors. Questions you miss come back until you have mastered them.
+                Four training sets, each holding exactly one practice test&apos;s 50 questions across all ten topics, from VDOMs and HA to SD-WAN rules and IPsec phase 2 selectors. Questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>
@@ -156,7 +152,7 @@ export default function FortigateLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Practice Tests at the Real Pace</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four tests of 50 questions, about the length of the real exam, which study guides put at 50 questions in 90 minutes. No question appears in more than one test, and every answer is explained. Aim for 70% or better.
+                Four tests of 50 questions in the real exam&apos;s topic weights. The real exam is 50 to 55 questions in 100 minutes, so give each test about 90 minutes. No question appears in more than one test, and every answer is explained. Aim for 70% or better.
               </p>
             </div>
           </div>
@@ -169,10 +165,10 @@ export default function FortigateLandingPage() {
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">
-                Built on the FortiGate 7.6 Exam Topics
+                Built on Fortinet&apos;s Exam Outline
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-                Fortinet lists five topic areas: deployment and system configuration, firewall policies and authentication, content inspection, routing and VPN. Fortinet publishes no weights, so Tigertest splits them into nine topics, each the same share of every 50-question test:
+                Fortinet weights the NSE 4 - FortiOS 7.6 Administrator exam across five areas. Each practice test here keeps that balance: 12 deployment, 12 firewall and authentication, 14 content inspection, 7 routing and 5 VPN questions in every 50.
               </p>
               <div className="space-y-3">
                 {contentAreas.map((area) => (

@@ -1,4 +1,4 @@
-POOL = 36
+POOL = 40
 ITEMS = [
     ('A proxy-based policy blocks an infected file during an HTTP download. What does the user see?',
      ['A replacement message page', 'A browser certificate error', 'A DNS lookup failure', 'A FortiClient pop-up'],
@@ -144,7 +144,23 @@ ITEMS = [
      ['It needs full SSL inspection', 'It reads the full URL and path', 'It works only in proxy-based mode', 'It blocks before any connection'],
      'D',
      'Blocking at the DNS lookup stops the client before it opens any connection, and it needs no SSL inspection. Web filtering works later, on the HTTP or TLS session.'),
-] 
+    ('Where does an administrator set which ports FortiGate treats as HTTP or FTP for inspection?',
+     ['The protocol options profile', 'The antivirus profile', 'The interface settings', 'The application sensor'],
+     'A',
+     'Protocol options, attached to the firewall policy, list the ports for HTTP, FTP, SMTP and other protocols that the security profiles inspect. The antivirus profile chooses what to scan, not which ports carry each protocol.'),
+    ('Where can an administrator see which applications users ran, ranked by bandwidth?',
+     ['The routing monitor', 'The FortiView Applications view', 'The HA status page', 'The interface list'],
+     'B',
+     'FortiView Applications ranks detected applications by sessions and bytes, built from application control data. The routing monitor and interface list show no per-application detail.'),
+    ('An antivirus profile blocks infected HTTP downloads, but infected files still arrive by FTP. What should be checked?',
+     ["The IPS sensor's FTP filters", 'The DNS filter profile', 'FTP scanning in the AV profile', 'The web filter FTP category'],
+     'C',
+     'An antivirus profile scans only the protocols enabled in it, so FTP must be turned on there. IPS and DNS filtering do not scan file contents for viruses.'),
+    ('An administrator wants to see what a new IPS sensor would catch before it blocks anything. Which action fits?',
+     ['Block', 'Reset', 'Quarantine', 'Monitor'],
+     'D',
+     'Monitor lets matching traffic pass and logs it, so the sensor can be checked for false positives before switching to Block. Reset and Quarantine would already disrupt traffic.'),
+]
 assert len(ITEMS) == POOL
 for i, it in enumerate(ITEMS):
     assert it[2] == "ABCD"[i % 4], (i, it[2])

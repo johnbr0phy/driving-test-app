@@ -4763,26 +4763,29 @@ const fortigate: ExamConfig = {
   name: "FortiGate Administrator Practice Test",
   shortName: "FortiGate Admin",
   examLabel: "FCP FortiGate Administrator exam",
-  fullName: "Fortinet FCP - FortiGate 7.6 Administrator (FCP_FGT_AD-7.6)",
+  fullName: "Fortinet NSE 4 - FortiOS 7.6 Administrator (formerly FCP - FortiGate 7.6 Administrator)",
   questionIdPrefix: "FGT-",
   icon: "shield",
   testCount: 4,
   questionsPerTest: 50,
   passPct: 70,
-  // Fortinet FCP - FortiGate 7.6 Administrator (FCP_FGT_AD-7.6, FortiOS 7.6), checked 2026-11-07.
-  // Fortinet's exam description PDF could not be read; study guides give 50 questions in 90
-  // minutes, pass/fail, and five topic areas: deployment and system configuration, firewall
-  // policies and authentication, content inspection, routing (static and SD-WAN) and VPN (IPsec).
-  // Per-test split is Tigertest's from guides' weights (about 24/26/26/14/10). SSL VPN is left
-  // out: FortiOS 7.6.3 removed tunnel mode. 70% is Tigertest's readiness line.
+  // Fortinet NSE 4 - FortiOS 7.6 Administrator (FortiOS 7.6.0), the renamed FCP - FortiGate 7.6
+  // Administrator, per the Training Institute's FortiOS Administrator Exam page (checked
+  // 2026-11-07): 50-55 questions, 100 minutes, pass/fail, English and Japanese. Weights:
+  // deployment and system configuration 20-25% (system 5, HA/Fabric/logs 5, cloud and FortiSASE 2
+  // = 24%), firewall policies and authentication 20-25% (policy 5, NAT 4, auth 3 = 24%), content
+  // inspection 25-30% (SSL 4, profiles 10 = 28%), routing 10-15% (7 = 14%), VPNs 10-15% (IPsec 5 =
+  // 10%). The old FCP_FGT_AD-7.6 description also listed SSL VPN; the NSE 4 outline lists IPsec only.
+  // NSE 4 - FortiOS 8.0 Administrator is "coming soon". 70% is Tigertest's readiness line.
   blueprint: {
-    fgtSystem: 6,
-    fgtHaLog: 6,
-    fgtPolicy: 6,
+    fgtSystem: 5,
+    fgtHaLog: 5,
+    fgtCloud: 2,
+    fgtPolicy: 5,
     fgtNat: 4,
     fgtAuth: 3,
     fgtSslInspect: 4,
-    fgtSecProfiles: 9,
+    fgtSecProfiles: 10,
     fgtRouting: 7,
     fgtVpn: 5,
   },
@@ -4790,6 +4793,7 @@ const fortigate: ExamConfig = {
   categoryLabels: {
     fgtSystem: "System Setup, Administration & VDOMs",
     fgtHaLog: "HA, Security Fabric, Logging & Diagnostics",
+    fgtCloud: "Public Cloud & FortiSASE",
     fgtPolicy: "Firewall Policies & Objects",
     fgtNat: "NAT, IP Pools & Virtual IPs",
     fgtAuth: "Authentication & FSSO",
@@ -4801,16 +4805,16 @@ const fortigate: ExamConfig = {
   copy: {
     guestPrompt: "to save your FortiGate progress and track every question you miss",
     trainingHeading: "Train for each test",
-    trainingSub: "Four sets, one per practice test, each holding exactly that test's 50 questions across all nine topics. Missed questions come back until you master them.",
+    trainingSub: "Four sets, one per practice test, each holding exactly that test's 50 questions across all ten topics. Missed questions come back until you master them.",
     testsHeading: "Practice tests · 50 questions like the real exam, 70% readiness line",
     heroSubs: [
-      "Nine topics, four tests. Policies, security profiles and system setup weigh most.",
+      "Ten topics, four tests. Security profiles, routing and system setup weigh most.",
       "Master each set, then take its test.",
       "Halfway there. Try a practice test.",
       "Fix the misses, then retake.",
       "All done. Book your FortiGate exam.",
     ],
-    sourceLine: "Based on the FCP - FortiGate 7.6 Administrator exam topics and FortiOS 7.6. Original questions; the topic split and the 70% line are Tigertest's. Not affiliated with Fortinet.",
+    sourceLine: "Based on Fortinet's NSE 4 - FortiOS 7.6 Administrator exam topics and weights. Original questions; the 70% line is Tigertest's. Not affiliated with Fortinet.",
     analyticsKey: "fortigate",
   },
 };

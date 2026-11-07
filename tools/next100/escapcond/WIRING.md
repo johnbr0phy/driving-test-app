@@ -158,7 +158,7 @@ dictionary needs them anyway, `i18n/es.ts` takes the Spanish labels above and `i
 ## lib/shuffleOptions.ts
 
 No position-dependent options ("Todas las anteriores", "A y B", "Ambas"); the build asserts it.
-34 all-number items are sorted ascending by the build (19 keyed in an end slot).
+32 all-number items are sorted ascending by the build (17 keyed in an end slot).
 
 ## app/globals.css
 
@@ -218,7 +218,7 @@ import escapcondEs from "@/lib/landings/escapcond.es.json";
 ```ts
   escapcond: {
     answer:
-      "Spain's Driver CPC initial qualification (certificado de aptitud profesional, CAP inicial) is required by Real Decreto 284/2021 for professional drivers of trucks (licence categories C1 and C) and buses (D1 and D). Candidates first complete a course at an approved centre, 280 hours in the ordinary route or 140 in the accelerated one, and must then pass the exam within a year. Each comunidad autónoma's transport department runs the exam, at least six times a year. It has 100 multiple-choice questions with four options and one correct answer, and lasts at least two hours. A right answer scores 1 point, a wrong one loses 0.5 and a blank scores nothing; the pass is half the possible points, 50. 25 of the 100 questions are on the candidate's speciality, goods or passengers; a holder adding the other speciality takes only that course part and that part of the exam. The common syllabus covers the driveline and fuel-efficient driving, brakes and safety systems, traffic hazards, drivers' hours (Regulation 561/2006), the tachograph, health, emergencies and crime prevention; goods add loading, transport documents, CMR and cabotage, passengers add passenger safety, school transport and passenger rights. The exam is in Spanish.",
+      "Spain's Driver CPC initial qualification (certificado de aptitud profesional, CAP inicial) is required by Real Decreto 284/2021 for professional drivers of trucks (licence categories C1 and C) and buses (D1 and D). Candidates first complete a course at an approved centre, 280 hours in the ordinary route or 140 in the accelerated one, and must then pass the exam within a year. Each comunidad autónoma's transport department runs the exam, at least six times a year. It has 100 multiple-choice questions with four options and one correct answer, and lasts at least two hours. A right answer scores 1 point, a wrong one loses 0.5 and a blank scores nothing; the pass is half the possible points, 50. 25 of the 100 questions are on the candidate's speciality, goods or passengers; a holder adding the other speciality takes only that course part and that part of the exam. The common syllabus covers the driveline and fuel-efficient driving, brakes and safety systems, traffic hazards, drivers' hours (Regulation 561/2006), the tachograph, health, emergencies and crime prevention; goods add loading, transport documents, CMR and cabotage, passengers add passenger safety, school transport and passenger rights. Tigertest's questions are in Spanish.",
     rows: [
       { label: "Run by", value: "Each comunidad autónoma's transport department" },
       { label: "Before the exam", value: "Course of 280 h (ordinary) or 140 h (accelerated)" },

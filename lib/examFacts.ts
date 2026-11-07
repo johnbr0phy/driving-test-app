@@ -2592,6 +2592,73 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Fahrerlaubnis-Verordnung Anlage 7, TÜV NORD and TÜV | DEKRA arge tp 21 guidance on the theory test, StVO, StVZO and StVG as in force, checked November 2026",
     source: { name: "TÜV | DEKRA arge tp 21: driving licence test", url: "https://fahrerlaubnis.tuev-dekra.de/en/" },
   },
+  escapcond: {
+    answer:
+      "Spain's Driver CPC initial qualification (certificado de aptitud profesional, CAP inicial) is required by Real Decreto 284/2021 for professional drivers of trucks (licence categories C1 and C) and buses (D1 and D). Candidates first complete a course at an approved centre, 280 hours in the ordinary route or 140 in the accelerated one, and must then pass the exam within a year. Each comunidad autónoma's transport department runs the exam, at least six times a year. It has 100 multiple-choice questions with four options and one correct answer, and lasts at least two hours. A right answer scores 1 point, a wrong one loses 0.5 and a blank scores nothing; the pass is half the possible points, 50. 25 of the 100 questions are on the candidate's speciality, goods or passengers; a holder adding the other speciality takes only that course part and that part of the exam. The common syllabus covers the driveline and fuel-efficient driving, brakes and safety systems, traffic hazards, drivers' hours (Regulation 561/2006), the tachograph, health, emergencies and crime prevention; goods add loading, transport documents, CMR and cabotage, passengers add passenger safety, school transport and passenger rights. Tigertest's questions are in Spanish.",
+    rows: [
+      { label: "Run by", value: "Each comunidad autónoma's transport department" },
+      { label: "Before the exam", value: "Course of 280 h (ordinary) or 140 h (accelerated)" },
+      { label: "Questions", value: "100, four options, one correct (25 on goods or passengers)" },
+      { label: "Marking", value: "+1 right, -0.5 wrong, blank 0" },
+      { label: "Pass mark", value: "50 points, half the possible" },
+      { label: "Time", value: "At least 2 hours" },
+      { label: "Sittings", value: "At least six a year in each region" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions in Spanish, 34 to pass" },
+    ],
+    basedOn: "Real Decreto 284/2021 (arts. 5, 6, 16, 17 and Annexes I and V) as amended by Real Decreto 487/2026, Regulation (EC) 561/2006 and Regulation (EU) 165/2014 as in force, checked November 2026",
+    source: { name: "BOE: Real Decreto 284/2021 (Driver CPC qualification), consolidated", url: "https://www.boe.es/buscar/act.php?id=BOE-A-2021-6624" },
+  },
+  espolicia: {
+    answer:
+      "The knowledge test (prueba de conocimientos) is the first stage of the competitive entrance exam (oposición) for the Escala Básica, rank of Policía, of Spain's National Police. Under the 2026 call (Resolución de 7 de julio de 2026, BOE of 10 July 2026) it is a written paper of 100 questions with three options, one correct, answered in 50 minutes, on an official syllabus of 45 topics in three blocks: legal sciences, social sciences and technical-scientific subjects. The score is [correct − wrong/(options − 1)] × 10 / questions, so each wrong answer cancels half a right one and blanks score nothing, on a 0 to 10 scale. Candidates need at least 3 points, and only the best go on, up to 1.75 per open place, so the real cut-off is higher. The test is eliminatory and taken in the same sitting as the psychometric aptitude tests; physical tests, a medical and an interview follow. The 2026 call offers 2,704 places (2,163 open, 541 reserved for professional soldiers and sailors). The exam is in Spanish; candidates must hold Spanish nationality, a Bachiller, a car licence and at least A2 in English or French.",
+    rows: [
+      { label: "Run by", value: "Dirección General de la Policía (Ministry of the Interior)" },
+      { label: "Questions", value: "100, three options each" },
+      { label: "Time", value: "50 minutes" },
+      { label: "Scoring", value: "Each wrong answer takes off half a correct one; 0 to 10" },
+      { label: "To go on", value: "At least 3, then ranked: best 1.75 per open place" },
+      { label: "Syllabus", value: "45 topics: legal, social, technical-scientific" },
+      { label: "Language", value: "Spanish" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions in Spanish, 35 to pass" },
+    ],
+    basedOn: "the 2026 call for the Escala Básica of the Policía Nacional (Resolución de 7 de julio de 2026, BOE-A-2026-15055) and the laws on its syllabus as in force, checked November 2026",
+    source: { name: "BOE: 2026 call for the Policía Nacional Escala Básica", url: "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-15055" },
+  },
+  esguardia: {
+    answer:
+      "The Guardia Civil entrance exam (oposiciones a la Escala de Cabos y Guardias) is called each year by the Dirección General de la Guardia Civil in Spain's official gazette, the BOE; the 2026 call offered 3,240 places and its first test was held on 11 July 2026 at 20 venues. The knowledge test lasts 140 minutes in all and has four parts: a spelling test and a grammar test of 20 sentences, both pass or fail (six or more errors fail); 100 multiple-choice questions on the official syllabus, each with four options and one correct answer, scored 0 to 100 with a minimum of 50; and 20 English questions, with a minimum of 8. Wrong answers are penalised (each cancels a third of a right one) and blank answers are not. The same day candidates take a psychotechnical test; physical tests, an interview, a medical and a merit assessment follow. The syllabus has 25 topics: human rights, equality, the Constitution, EU law, criminal and procedural law, administrative and data protection law, immigration, public and private security, the Guardia Civil's own laws and history, ethics, juvenile justice, gender violence, arms and explosives, customs, civil protection, ICT and topography, English and Spanish. The exam is in Spanish.",
+    rows: [
+      { label: "Run by", value: "Dirección General de la Guardia Civil (Ministry of the Interior), call in the BOE" },
+      { label: "Knowledge questions", value: "100, four options, one correct" },
+      { label: "Marking", value: "Wrong answers cost a third; blanks score nothing" },
+      { label: "Minimum", value: "50 of 100 points" },
+      { label: "Time", value: "140 minutes for the whole knowledge test" },
+      { label: "Other parts", value: "Spelling, grammar (pass/fail), English (8 of 20)" },
+      { label: "Places (2026)", value: "3,240" },
+      { label: "Language", value: "Spanish" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions in Spanish, 32 to pass" },
+    ],
+    basedOn: "Resolución 160/38243/2026 (BOE 8 May 2026), the Guardia Civil temario of 3 October 2022 as updated on 29 May 2023, and the laws it lists as in force, checked November 2026",
+    source: { name: "BOE: Guardia Civil Escala de Cabos y Guardias call, 2026", url: "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-9982" },
+  },
+  esvigilante: {
+    answer:
+      "To work as a private security guard (vigilante de seguridad) in Spain you need a licence (habilitación) and the professional ID card (TIP) issued through the Ministry of the Interior, which means passing the selection tests the Secretaría de Estado de Seguridad calls each year and the Policía Nacional runs. In 2026 there are three calls (01, 02 and 03/2026) under rules published in the BOE on 14 January 2026. Candidates first need the diploma of a pre-licence training course of at least 180 hours at an accredited centre. The knowledge test is 100 multiple-choice questions in 50 minutes on the official common programme, each with three options and one correct answer. Each wrong answer cancels half a right one and blank answers score nothing; the result is out of 10 and 5 is the pass mark. There are also eliminatory physical tests (pass or fail). The programme covers the Constitution, criminal law and procedure, the Private Security Act (Ley 5/2014), employment law, professional conduct and communication, security systems, access control and alarms, and fire, first aid, radio and firearms safety. The test is in Spanish.",
+    rows: [
+      { label: "Run by", value: "Ministry of the Interior (Secretaría de Estado de Seguridad), tests run by the Policía Nacional" },
+      { label: "Questions", value: "100, three options, one correct" },
+      { label: "Time", value: "50 minutes" },
+      { label: "Marking", value: "Each wrong answer cancels half a right one; blanks score nothing" },
+      { label: "Pass mark", value: "5 out of 10" },
+      { label: "Other tests", value: "Physical tests, pass or fail" },
+      { label: "Before the test", value: "Training course of at least 180 hours" },
+      { label: "Calls (2026)", value: "Three: 01, 02 and 03/2026" },
+      { label: "Language", value: "Spanish" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions in Spanish, 34 to pass" },
+    ],
+    basedOn: "Resolución de 9 de enero de 2026 of the Secretaría de Estado de Seguridad (BOE 14 January 2026), Ley 5/2014 de Seguridad Privada and the laws in the Anexo III programme as in force, checked November 2026",
+    source: { name: "BOE: rules for the 2026 security guard tests", url: "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-813" },
+  },
   sbipo: {
     answer:
       "The SBI PO Preliminary Examination is an online objective test of 100 marks in one hour, with separate timing for each section: English Language 40 questions in 20 minutes, Quantitative Aptitude 30 questions in 20 minutes and Reasoning Ability 30 questions in 20 minutes. This is the pattern in SBI's 2026 advertisement; earlier cycles had 30, 35 and 35 questions. A quarter of a question's marks is deducted for every wrong answer. There is no sectional cut-off in the Prelims: candidates are ranked by category on their total marks and about ten times the vacancies are called for the Main Examination. Prelims marks are not counted in the final merit list.",

@@ -179,7 +179,7 @@
     "optionD": "El Parlamento Europeo",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "El Consejo Europeo, formado por los jefes de Estado o de Gobierno, su presidente y la presidencia de la Comisión, da a la Unión el impulso político. El Consejo de Europa es otra organización, ajena a la UE."
+    "explanation": "El Consejo Europeo, formado por los jefes de Estado o de Gobierno, su presidente y el presidente de la Comisión, da a la Unión el impulso político. El Consejo de Europa es otra organización, ajena a la UE."
   },
   {
     "type": "ESVIGIL",
@@ -494,7 +494,7 @@
     "state": "ALL",
     "questionId": "ESVIG-PEN-020",
     "category": "esvigPenal",
-    "question": "¿Qué delito comete quien, en provecho propio, se apodera de papeles o mensajes de otro para descubrir sus secretos?",
+    "question": "¿Qué delito comete quien, sin su consentimiento, se apodera de los papeles o mensajes de otra persona para descubrir sus secretos?",
     "optionA": "Estafa informática agravada",
     "optionB": "Apropiación indebida",
     "optionC": "Usurpación de estado civil",
@@ -536,14 +536,14 @@
     "state": "ALL",
     "questionId": "ESVIG-PEN-023",
     "category": "esvigPenal",
-    "question": "¿Qué delito comete quien compra objetos sabiendo que proceden de un delito contra el patrimonio, con ánimo de lucro?",
-    "optionA": "Encubrimiento",
-    "optionB": "Blanqueo",
-    "optionC": "Receptación",
-    "optionD": "Hurto de uso",
+    "question": "Sin haber participado en un delito, una persona ayuda a sus autores a eludir la investigación de la policía. ¿Qué delito comete?",
+    "optionA": "Receptación",
+    "optionB": "Complicidad",
+    "optionC": "Encubrimiento",
+    "optionD": "Usurpación",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "El artículo 298 castiga a quien, con ánimo de lucro y sabiendo que se ha cometido un delito contra el patrimonio, ayuda a sus responsables a aprovecharse o recibe, adquiere u oculta esos efectos."
+    "explanation": "El artículo 451 castiga como encubrimiento a quien, sabiendo que se ha cometido un delito y sin haber intervenido en él como autor o cómplice, ayuda a los responsables a eludir la investigación o a sustraerse a su busca o captura, u oculta o inutiliza sus efectos o instrumentos. La complicidad exige participar en la ejecución."
   },
   {
     "type": "ESVIGIL",
@@ -719,12 +719,12 @@
     "questionId": "ESVIG-PRO-004",
     "category": "esvigProcesal",
     "question": "Según el artículo 496 de la Ley de Enjuiciamiento Criminal, ¿en qué plazo máximo debe un particular liberar al detenido o entregarlo al juez?",
-    "optionA": "6 horas",
-    "optionB": "24 horas",
-    "optionC": "48 horas",
-    "optionD": "72 horas",
-    "correctAnswer": "B",
-    "correctIndex": 1,
+    "optionA": "24 horas",
+    "optionB": "48 horas",
+    "optionC": "72 horas",
+    "optionD": "5 días",
+    "correctAnswer": "A",
+    "correctIndex": 0,
     "explanation": "El particular o agente que detiene debe ponerlo en libertad o entregarlo al juez más próximo dentro de las 24 horas siguientes. El vigilante, además, debe ponerlo de inmediato a disposición de la policía."
   },
   {
@@ -921,7 +921,7 @@
     "optionD": "El juzgado de lo social",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "En cada partido judicial un juzgado de instrucción presta servicio de guardia para recibir detenidos, denuncias y diligencias urgentes."
+    "explanation": "En cada partido judicial hay un servicio de guardia, a cargo de los órganos de instrucción (hoy secciones de instrucción de los tribunales de instancia), para recibir detenidos, denuncias y diligencias urgentes."
   },
   {
     "type": "ESVIGIL",
@@ -1168,9 +1168,9 @@
     "category": "esvigSegPrivada",
     "question": "¿Qué puede hacer un escolta privado si su protegido sufre una agresión manifiesta?",
     "optionA": "Interrogar al agresor en privado",
-    "optionB": "Retenerlo hasta el día siguiente",
-    "optionC": "Pedirle la documentación y dejarlo ir",
-    "optionD": "Detenerlo y entregarlo a la policía",
+    "optionB": "Retener al agresor hasta el día siguiente",
+    "optionC": "Pedir la documentación al agresor y dejarlo ir",
+    "optionD": "Detener al agresor y entregarlo a la policía",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "El artículo 33 prohíbe al escolta identificar o detener salvo ante agresión manifiesta, y en ese caso debe entregar de inmediato al detenido a las Fuerzas y Cuerpos de Seguridad, sin interrogarlo."
@@ -1335,12 +1335,12 @@
     "questionId": "ESVIG-SPR-028",
     "category": "esvigSegPrivada",
     "question": "Según el artículo 56 de la Ley 5/2014, ¿en qué plazo prescriben las infracciones leves?",
-    "optionA": "3 meses",
-    "optionB": "6 meses",
-    "optionC": "1 año",
-    "optionD": "2 años",
-    "correctAnswer": "B",
-    "correctIndex": 1,
+    "optionA": "6 meses",
+    "optionB": "1 año",
+    "optionC": "2 años",
+    "optionD": "3 años",
+    "correctAnswer": "A",
+    "correctIndex": 0,
     "explanation": "Las infracciones prescriben a los seis meses las leves, al año las graves y a los dos años las muy graves."
   },
   {
@@ -1390,27 +1390,27 @@
     "state": "ALL",
     "questionId": "ESVIG-SPR-032",
     "category": "esvigSegPrivada",
-    "question": "Al hacerse cargo del servicio, ¿qué debe comprobar el vigilante según el Reglamento de Seguridad Privada?",
+    "question": "Al hacerse cargo del servicio en un centro sin responsable de seguridad propio, ¿qué debe comprobar el vigilante según el Reglamento de Seguridad Privada?",
     "optionA": "Las cuentas del cliente",
     "optionB": "Los antecedentes del personal",
     "optionC": "El inventario de mercancías",
     "optionD": "Los sistemas de seguridad",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "El vigilante comprueba al inicio del servicio el estado y funcionamiento de los sistemas de seguridad y de comunicación y anota las anomalías que observe."
+    "explanation": "El artículo 72 del Reglamento dispone que, si la entidad no tiene responsable de seguridad, el vigilante comprueba al hacerse cargo del servicio el funcionamiento de los sistemas de seguridad y de comunicación, y transmite las anomalías a los responsables de la entidad y de su empresa, que se anotan en el libro-catálogo de medidas de seguridad."
   },
   {
     "type": "ESVIGIL",
     "state": "ALL",
     "questionId": "ESVIG-LAB-001",
     "category": "esvigLaboral",
-    "question": "Según el artículo 38 del Estatuto de los Trabajadores, ¿cuál es la duración mínima de las vacaciones anuales retribuidas?",
-    "optionA": "30 días naturales",
-    "optionB": "15 días naturales",
-    "optionC": "22 días naturales",
-    "optionD": "45 días naturales",
-    "correctAnswer": "A",
-    "correctIndex": 0,
+    "question": "Según el artículo 38 del Estatuto de los Trabajadores, ¿cuántos días naturales duran como mínimo las vacaciones anuales retribuidas?",
+    "optionA": "20 días",
+    "optionB": "22 días",
+    "optionC": "25 días",
+    "optionD": "30 días",
+    "correctAnswer": "D",
+    "correctIndex": 3,
     "explanation": "El periodo de vacaciones anuales retribuidas, no sustituible por compensación económica, será el pactado en convenio o contrato y nunca inferior a treinta días naturales."
   },
   {
@@ -1481,7 +1481,7 @@
     "optionD": "Autorización previa del juez",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "El artículo 8 recuerda que la huelga en la seguridad privada que afecte a servicios esenciales para la comunidad está sujeta a los servicios mínimos que fije la autoridad, según la legislación vigente."
+    "explanation": "El artículo 8.6 dispone que el personal que trabaja en entidades con servicios esenciales, o donde la seguridad es obligatoria, se atiene en la huelga a lo que la legislación vigente disponga para esas entidades. En la práctica, la autoridad fija servicios mínimos; la huelga no está prohibida."
   },
   {
     "type": "ESVIGIL",
@@ -1782,14 +1782,14 @@
     "state": "ALL",
     "questionId": "ESVIG-SOC-016",
     "category": "esvigSocioprof",
-    "question": "Dentro de la empresa de seguridad, ¿a quién da cuenta el vigilante del desarrollo de su servicio, según el Reglamento de Seguridad Privada?",
-    "optionA": "Al delegado del Gobierno",
-    "optionB": "Al alcalde del municipio",
-    "optionC": "Al comité de empresa",
-    "optionD": "Al jefe de seguridad",
+    "question": "Según el artículo 35 de la Ley 5/2014, ¿quién organiza, dirige e inspecciona al personal y los servicios de una empresa de seguridad?",
+    "optionA": "El cliente que contrata el servicio",
+    "optionB": "El vigilante más antiguo",
+    "optionC": "El delegado de prevención",
+    "optionD": "El jefe de seguridad",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "El Reglamento de Seguridad Privada encarga al vigilante dar cuenta del servicio a su jefe de seguridad, que organiza y dirige los servicios de la empresa."
+    "explanation": "El artículo 35 encomienda a los jefes de seguridad, dentro de su empresa, el análisis de riesgos, la planificación de los servicios y la organización, dirección e inspección del personal y los servicios de seguridad privada. El vigilante sigue sus instrucciones."
   },
   {
     "type": "ESVIGIL",
@@ -2065,7 +2065,7 @@
     "question": "¿Qué ventaja tiene un circuito cerrado de televisión en un centro vigilado?",
     "optionA": "Sustituir todos los medios físicos",
     "optionB": "Impedir por sí solo la entrada",
-    "optionC": "Identificar a todos sin cámaras",
+    "optionC": "Evitar que haya que hacer rondas",
     "optionD": "Ver varias zonas a la vez",
     "correctAnswer": "D",
     "correctIndex": 3,
@@ -2693,7 +2693,7 @@
     "questionId": "ESVIG-INS-025",
     "category": "esvigInstrumental",
     "question": "Una persona tiene ampollas por una quemadura en el antebrazo. ¿Qué se hace con ellas?",
-    "optionA": "No reventarlas y cubrirlas con un apósito limpio",
+    "optionA": "No reventarlas, solo cubrirlas",
     "optionB": "Pincharlas para que salga el líquido",
     "optionC": "Arrancar la piel levantada",
     "optionD": "Cubrirlas con algodón suelto",

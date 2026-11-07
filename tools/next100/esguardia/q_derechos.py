@@ -71,7 +71,7 @@ Q = [
 ("Según los Principios Básicos de la ONU de 1990, ¿qué deben hacer los agentes antes de usar armas de fuego, si no supone un riesgo?",
  "Identificarse y advertir claramente", ["Disparar primero al aire", "Pedir autorización judicial", "Esperar las órdenes de un mando"],
  "El principio 10 exige que los agentes se identifiquen y den una advertencia clara, con tiempo suficiente para que se tenga en cuenta, salvo que ello cree un riesgo indebido."),
-("¿Qué tipo de norma aprobó en 2022 el Código de Conducta del personal de la Guardia Civil?",
+("¿Mediante qué tipo de norma se aprobó en 2022 el Código de Conducta del personal de la Guardia Civil?",
  "Un real decreto", ["Una ley orgánica", "Una orden ministerial", "Una instrucción interna"],
  "El Código de Conducta del personal de la Guardia Civil se aprobó por el Real Decreto 176/2022, de 4 de marzo."),
 ]

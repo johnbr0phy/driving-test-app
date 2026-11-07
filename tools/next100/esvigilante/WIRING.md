@@ -272,7 +272,7 @@ Redopositor guide).
 
 ```json
 { "exam": "esvigilante", "date": "2027-01-15", "kind": "notice", "change": "Bases for the 2027 vigilante de seguridad calls expected in January 2027; check the number of questions, time, alternatives and the Anexo III programme.", "action": "Re-read the new BOE resolution and update the landing, examFacts and sources.md.", "source": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-813" },
-{ "exam": "esvigilante", "date": "2027-06-30", "kind": "law", "change": "A new Reglamento de Seguridad Privada to replace RD 2364/1994 has been pending since Ley 5/2014; check whether it has been approved.", "action": "If approved, re-check ESVIG-SPR items citing the Reglamento (armero, uniform, checks on taking over the post, loss of the weapon) and SOC-016.", "source": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-608" }
+{ "exam": "esvigilante", "date": "2027-06-30", "kind": "law", "change": "A new Reglamento de Seguridad Privada to replace RD 2364/1994 has been pending since Ley 5/2014; check whether it has been approved.", "action": "If approved, re-check ESVIG-SPR items citing the Reglamento (armero, uniform, checks on taking over the post, loss of the weapon).", "source": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-608" }
 ```
 (Adapt to the file's field names.)
 
@@ -301,5 +301,19 @@ then rename to the `-es` names, as for detheorie and esguardia.
 4. **Facts for a native reviewer to spot-check:** ESVIG-SPR-010 (the security company guarantees training and updating,
    Ley 5/2014 art. 21.1.d), ESVIG-SPR-029 (trato incorrecto = leve,
    art. 58), ESVIG-SPR-028 (prescription 6 months, art. 56), ESVIG-PRO-012 (art. 268 LECrim),
-   ESVIG-SOC-016 (vigilante reports to the jefe de seguridad, RD 2364/1994).
+   ESVIG-SOC-016 (the jefe de seguridad organises, directs and inspects staff and services, Ley 5/2014 art. 35.1.b).
 5. **Teacher-led** with no class FAQ on the Spanish landing (component limitation, as esguardia).
+
+## Review (2026-11-07)
+
+Reviewer pass per `tools/next100/REVIEW.md`. Format re-read from BOE-A-2026-813 (100 questions,
+three alternatives, 50 minutes, [A - E/(n-1)] x 10/P, minimum 5; course of at least 180 hours and
+six teaching weeks; three calls 01, 02, 03/2026): landing, FAQ, examFacts and sources.md agree.
+Ley 5/2014 (arts. 4, 8, 21, 26, 27, 30, 31, 32, 35, 40, 41, 42, 56, 58, 62) and RD 2364/1994
+(arts. 71, 72, 82, 83, 87) re-read on boe.es. Changes: PEN-023 (duplicate of espolicia's
+receptación item, now encubrimiento, art. 451 CP), SOC-016 (rebased on Ley 5/2014 art. 35),
+SPR-032 (art. 72 RSP applies only where the entity has no responsable de seguridad), LAB-006
+(explanation now quotes art. 8.6 as written), SPR-016 (key named the agresor), PEN-020 (stem),
+PRO-018 (explanation: secciones de instrucción after LO 1/2025), CON-013, INS-025, TEC-016, and
+number distractors on PRO-004, SPR-028, LAB-001 so the key is at an end slot in 4 of 6 sorted
+items. No shared-file changes beyond those already listed above.

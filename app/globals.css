@@ -2454,6 +2454,62 @@
     --brand-gradient-to: 45 90% 93%;
   }
 
+  /* Spain Driver CPC, examen CAP inicial theme */
+  [data-theme="escapcond"] {
+    --brand: 30 85% 20%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 30 60% 95%;
+    --brand-hover: 30 85% 16%;
+    --brand-dark: 30 85% 14%;
+    --brand-darker: 30 85% 10%;
+    --brand-muted: 30 30% 60%;
+    --brand-border: 30 35% 78%;
+    --brand-border-light: 30 40% 88%;
+    --brand-gradient-to: 30 70% 91%;
+  }
+
+  /* Spain National Police entrance exam (Policía Nacional, Escala Básica) theme */
+  [data-theme="espolicia"] {
+    --brand: 222 85% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 222 70% 96%;
+    --brand-hover: 222 85% 18%;
+    --brand-dark: 222 85% 15%;
+    --brand-darker: 222 85% 10%;
+    --brand-muted: 222 30% 62%;
+    --brand-border: 222 40% 78%;
+    --brand-border-light: 222 50% 88%;
+    --brand-gradient-to: 222 70% 92%;
+  }
+
+  /* Spain Guardia Civil entrance exam (oposiciones, Escala de Cabos y Guardias) theme */
+  [data-theme="esguardia"] {
+    --brand: 143 25% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 143 30% 95%;
+    --brand-hover: 143 25% 25%;
+    --brand-dark: 143 25% 21%;
+    --brand-darker: 143 25% 15%;
+    --brand-muted: 143 15% 62%;
+    --brand-border: 143 18% 78%;
+    --brand-border-light: 143 22% 88%;
+    --brand-gradient-to: 143 35% 91%;
+  }
+
+  /* Spain private security guard exam (vigilante de seguridad) theme */
+  [data-theme="esvigilante"] {
+    --brand: 266 60% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 266 45% 96%;
+    --brand-hover: 266 60% 25%;
+    --brand-dark: 266 60% 21%;
+    --brand-darker: 266 60% 15%;
+    --brand-muted: 266 25% 64%;
+    --brand-border: 266 30% 80%;
+    --brand-border-light: 266 35% 89%;
+    --brand-gradient-to: 266 50% 92%;
+  }
+
   /* SBI PO theme: bank blue (v2 exam; matches lib/v2/exams/sbipo.ts theme) */
   [data-theme="sbipo"] {
     --brand: 212 70% 46%;
@@ -6104,6 +6160,50 @@
     --brand-muted: 0 0% 45%;
     --brand-dark: 0 0% 65%;
     --brand-darker: 0 0% 78%;
+  }
+  .dark [data-theme="escapcond"] {
+    --brand: 30 85% 37.6%;
+    --brand-hover: 30 85% 29.6%;
+    --brand-light: 30 45% 13%;
+    --brand-gradient-to: 30 40% 11%;
+    --brand-border-light: 30 35% 24%;
+    --brand-border: 30 35% 34%;
+    --brand-muted: 30 30% 45%;
+    --brand-dark: 30 85% 65%;
+    --brand-darker: 30 85% 78%;
+  }
+  .dark [data-theme="espolicia"] {
+    --brand: 222 85% 50%;
+    --brand-hover: 222 85% 42%;
+    --brand-light: 222 45% 13%;
+    --brand-gradient-to: 222 40% 11%;
+    --brand-border-light: 222 35% 24%;
+    --brand-border: 222 40% 34%;
+    --brand-muted: 222 30% 45%;
+    --brand-dark: 222 85% 65%;
+    --brand-darker: 222 85% 78%;
+  }
+  .dark [data-theme="esguardia"] {
+    --brand: 143 25% 40.1%;
+    --brand-hover: 143 25% 32.1%;
+    --brand-light: 143 30% 13%;
+    --brand-gradient-to: 143 35% 11%;
+    --brand-border-light: 143 22% 24%;
+    --brand-border: 143 18% 34%;
+    --brand-muted: 143 15% 45%;
+    --brand-dark: 143 25% 65%;
+    --brand-darker: 143 25% 78%;
+  }
+  .dark [data-theme="esvigilante"] {
+    --brand: 266 60% 50%;
+    --brand-hover: 266 60% 42%;
+    --brand-light: 266 45% 13%;
+    --brand-gradient-to: 266 40% 11%;
+    --brand-border-light: 266 35% 24%;
+    --brand-border: 266 30% 34%;
+    --brand-muted: 266 25% 45%;
+    --brand-dark: 266 60% 65%;
+    --brand-darker: 266 60% 78%;
   }
 
   .dark [data-theme="sbipo"] {

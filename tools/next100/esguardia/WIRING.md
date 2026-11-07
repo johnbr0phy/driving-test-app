@@ -314,3 +314,19 @@ then rename to the `-es` names, as for detheorie.
    (empleos under Ley 29/2014), ESGC-TEC-004 (Consejo Nacional de Protección Civil), ESGC-PRO-009
    (art. 520 bis prórroga).
 6. **Teacher-led** with no class FAQ on the Spanish landing (component limitation, as de34a).
+
+## Review pass (2026-11-07)
+
+BOE-A-2026-9982 re-read: 3.240 plazas (1.296 / 240 / 1.704), 140 minutes, ortografía and gramática
+apto/no apto with six errors, 100 + 5 conocimientos questions (minimum 50), 20 + 1 English (minimum
+8), ages 18 to 40 in 2026. Landing, examFacts and sources.md agree. Items changed in the sources:
+ESGC-PEN-002 (duplicate of espolicia ESPN-PEN-002, now the art. 21.4.ª confession mitigation),
+ESGC-SEG-016 (was a third "which body, LO 2/1986 art. 12" item; now the European firearms pass),
+ESGC-PEN-032 (stem referred to "dañarla" with no antecedent; rewritten, distractors parallel),
+ESGC-CON-013 (the Senate ratifies by absolute majority on a second proposal, so the stem now asks
+about the Congress), ESGC-ADM-021 (official name Agencia Española de Protección de Datos),
+ESGC-PRO-015 (the Fiscalía Europea is not "incorporated into the LOPJ"; stem reworded),
+ESGC-TEC-010 (explanation notes the Directive 2023/1791 recast), wording fixes in ESGC-DDH-024,
+ESGC-CON-023, ESGC-PRO-023, ESGC-SEG-015, ESGC-TEC-013, and distractors in ESGC-PEN-029,
+ESGC-PRO-006, ESGC-ADM-008, ESGC-SEG-001, ESGC-CON-018 so the key sits in an end slot in 13 of 24
+sorted number items. Validator PASS (key longest 24 %).

@@ -153,6 +153,63 @@
       "what": "The 2025-2027 physics equation sheet period ends.",
       "action": "Check whether Ofqual extends the equation sheet; update the reference panel.",
       "source": "https://www.aqa.org.uk/news/gcse-maths-and-gcse-sciences-formulae-and-equation-sheets-for-2025-2027"
+    },
+    {
+      "exam": "espolicia",
+      "date": "2027-07-01",
+      "kind": "notice",
+      "what": "The 2027 Escala Básica call (convocatoria) for the Policía Nacional is expected in the BOE.",
+      "action": "Read the new call: question count, options, time, scoring formula and temario changes; update the landing, examFacts and any affected items.",
+      "source": "https://www.interior.gob.es/opencms/es/servicios-al-ciudadano/empleo-publico/procesos-selectivos/policia-nacional/escala-basica/"
+    },
+    {
+      "exam": "esguardia",
+      "date": "2027-05-01",
+      "kind": "notice",
+      "what": "Next Guardia Civil call (convocatoria) expected in spring 2027.",
+      "action": "Re-read the new BOE call (format, temario resolution, minimum marks) and update the landing, examFacts and sources.md.",
+      "source": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-9982"
+    },
+    {
+      "exam": "esguardia",
+      "date": "2026-12-31",
+      "kind": "law",
+      "what": "Ministry of the Interior project 15/2026 to modify the Reglamento de Armas (RD 137/1993).",
+      "action": "If approved, re-check ESGC-SEG items on licences and the guía de pertenencia.",
+      "source": "https://www.interior.gob.es/opencms/pdf/servicios-al-ciudadano/participacion-ciudadana/Participacion-publica-en-proyectos-normativos/Audiencia-e-informacion-publica/15_2026_Proyecto_Modificacion_Reglamento_Armas.pdf"
+    },
+    {
+      "exam": "esvigilante",
+      "date": "2027-01-15",
+      "kind": "notice",
+      "what": "Bases for the 2027 vigilante de seguridad calls expected in January 2027.",
+      "action": "Re-read the new BOE resolution (questions, time, alternatives, Anexo III programme) and update the landing, examFacts and sources.md.",
+      "source": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-813"
+    },
+    {
+      "exam": "esvigilante",
+      "date": "2027-06-30",
+      "kind": "law",
+      "what": "A new Reglamento de Seguridad Privada to replace RD 2364/1994 has been pending since Ley 5/2014.",
+      "action": "If approved, re-check ESVIG-SPR items citing the Reglamento (armero, uniform, taking over the post, loss of the weapon).",
+      "source": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-608"
+    },
+    {
+      "exam": "escapcond",
+      "date": "2026-11-06",
+      "kind": "law",
+      "what": "Real Decreto 487/2026 (in force 18 September 2026) renumbers Annex I of RD 284/2021 to Directive (EU) 2022/2561 and adds online course hours; Anexo V is unchanged.",
+      "action": "Check the consolidated Annex I wording against the bank's categories when the BOE consolidation is complete.",
+      "source": "https://www.boe.es/eli/es/rd/2026/06/17/487",
+      "done": "2026-11-06"
+    },
+    {
+      "exam": "escapcond",
+      "date": "2027-07-01",
+      "kind": "review",
+      "what": "Yearly check of Reg. 561/2006 and 165/2014 amendments and of the convocatorias' format.",
+      "action": "Re-read the regulations and two current convocatorias; update the bank and landing.",
+      "source": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-6624"
     }
   ]
 }

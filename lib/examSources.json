@@ -381,10 +381,32 @@
   "https://www.eqao.com/wp-content/uploads/2025/01/Framework-grade9-assessment-of-mathematics.pdf",
   "https://www.eqao.com/the-assessments/grade-9-math/"
  ],
+ "escapcond": [
+  "https://www.boe.es/buscar/act.php?id=BOE-A-2021-6624",
+  "https://boe.es/boe/dias/2021/04/24/pdfs/BOE-A-2021-6624.pdf",
+  "https://www.boe.es/eli/es/rd/2026/06/17/487"
+ ],
  "esdgt": [
   "https://www.dgt.es/nuestros-servicios/permisos-de-conducir/obtener-un-nuevo-permiso-de-conducir/requisitos-preparacion-y-presentacion-a-examen/",
   "https://sede.dgt.gob.es/export/sites/dgt/.galleries/modelos-solicitud/04/Mod.04-ES.pdf",
   "https://revista.dgt.es/Galerias/hemeroteca/revista/N-240-SUP-ESP-TEST-WOP.pdf"
+ ],
+ "esguardia": [
+  "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-9982",
+  "https://www.interior.gob.es/opencms/es/servicios-al-ciudadano/empleo-publico/oposiciones/cuerpo-de-la-guardia-civil/escala-de-cabos-y-guardias/pruebas-de-seleccion/",
+  "https://redopositor.com/blog/es-examen-guardia-civil-2026-estructura-prueba-conocimientos/",
+  "https://www.interior.gob.es/opencms/pdf/servicios-al-ciudadano/participacion-ciudadana/Participacion-publica-en-proyectos-normativos/Audiencia-e-informacion-publica/15_2026_Proyecto_Modificacion_Reglamento_Armas.pdf"
+ ],
+ "espolicia": [
+  "https://www.boe.es/boe/dias/2026/07/10/pdfs/BOE-A-2026-15055.pdf",
+  "https://www.boe.es/datosabiertos/api/boe/sumario/20260710",
+  "https://www.interior.gob.es/opencms/es/servicios-al-ciudadano/empleo-publico/procesos-selectivos/policia-nacional/escala-basica/"
+ ],
+ "esvigilante": [
+  "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-813",
+  "https://boe.es/boe/dias/2026/01/14/pdfs/BOE-A-2026-813.pdf",
+  "https://redopositor.com/blog/es-oposiciones-proves-seleccio-per-vigilant-seguretat-ministerio-del-interior-2026/",
+  "https://www.boe.es/buscar/act.php?id=BOE-A-1995-608"
  ],
  "fitheory": [
   "https://www.traficom.fi/sites/default/files/media/regulation/Kuljettajantutkinnon%20teoriakoem%C3%A4%C3%A4r%C3%A4ys.pdf",

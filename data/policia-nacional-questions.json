@@ -130,7 +130,7 @@
     "state": "ALL",
     "questionId": "ESPN-CON-010",
     "category": "espnConstitucion",
-    "question": "¿Cuál es el plazo máximo del estado de alarma declarado por el Gobierno sin autorización del Congreso para prorrogarlo?",
+    "question": "¿Por qué plazo máximo puede declarar el Gobierno el estado de alarma sin necesitar la autorización del Congreso?",
     "optionA": "7 días",
     "optionB": "15 días",
     "optionC": "30 días",
@@ -340,14 +340,14 @@
     "state": "ALL",
     "questionId": "ESPN-ADM-001",
     "category": "espnAdministracion",
-    "question": "Según la Ley 40/2015, ¿qué clase de órganos son los Secretarios de Estado en la organización central de la AGE?",
-    "optionA": "Órganos superiores",
-    "optionB": "Órganos directivos",
-    "optionC": "Órganos consultivos",
-    "optionD": "Órganos periféricos",
+    "question": "Según la Ley 40/2015, ¿cómo se nombra y se separa a los Directores generales de un ministerio?",
+    "optionA": "Por real decreto del Consejo de Ministros",
+    "optionB": "Por orden del Ministro del departamento",
+    "optionC": "Por resolución del Subsecretario",
+    "optionD": "Por acuerdo de la Mesa del Congreso",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "En la organización central son órganos superiores los Ministros y los Secretarios de Estado. Subsecretarios, secretarios generales, directores generales y subdirectores generales son órganos directivos."
+    "explanation": "La Ley 40/2015 dispone que los Directores generales son nombrados y separados por real decreto del Consejo de Ministros, a propuesta del titular del departamento, y atendiendo a criterios de competencia profesional y experiencia."
   },
   {
     "type": "ESPOLICIA",
@@ -1054,14 +1054,14 @@
     "state": "ALL",
     "questionId": "ESPN-PEN-004",
     "category": "espnPenal",
-    "question": "¿Qué ley regula la responsabilidad penal de los mayores de catorce años y menores de dieciocho?",
-    "optionA": "La Ley Orgánica 1/2004",
-    "optionB": "La Ley Orgánica 4/2000",
-    "optionC": "La Ley Orgánica 4/2015",
-    "optionD": "La Ley Orgánica 5/2000",
+    "question": "¿Qué efecto tiene, según el Código Penal, el error invencible sobre un hecho constitutivo de la infracción penal?",
+    "optionA": "Atenúa la pena en uno o dos grados",
+    "optionB": "Convierte el delito en tentativa",
+    "optionC": "No produce ningún efecto",
+    "optionD": "Excluye la responsabilidad criminal",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "La Ley Orgánica 5/2000 regula la responsabilidad penal de los menores. La 1/2004 trata la violencia de género, la 4/2000 la extranjería y la 4/2015 la seguridad ciudadana."
+    "explanation": "El artículo 14 del Código Penal dispone que el error invencible sobre un hecho constitutivo de la infracción excluye la responsabilidad criminal. Si el error es vencible, la infracción se castiga, en su caso, como imprudente."
   },
   {
     "type": "ESPOLICIA",
@@ -1110,14 +1110,14 @@
     "state": "ALL",
     "questionId": "ESPN-PEN-008",
     "category": "espnPenal",
-    "question": "¿Cuál de estos es un requisito de la legítima defensa?",
-    "optionA": "Una denuncia previa",
-    "optionB": "La superioridad del agresor",
-    "optionC": "La provocación por el defensor",
-    "optionD": "Una agresión ilegítima",
+    "question": "¿Qué delito comete quien, con ánimo de lucro y sabiendo que proceden de un delito contra el patrimonio en el que no ha intervenido, adquiere los efectos de ese delito?",
+    "optionA": "Encubrimiento",
+    "optionB": "Apropiación indebida",
+    "optionC": "Blanqueo de capitales",
+    "optionD": "Receptación",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "La legítima defensa exige una agresión ilegítima, la necesidad racional del medio empleado para impedirla o repelerla y la falta de provocación suficiente por parte del defensor."
+    "explanation": "El artículo 298 del Código Penal castiga como receptación a quien, con ánimo de lucro y conociendo la comisión de un delito contra el patrimonio o el orden socioeconómico en el que no ha intervenido, ayuda a sus responsables a aprovecharse de sus efectos o los recibe, adquiere u oculta."
   },
   {
     "type": "ESPOLICIA",
@@ -1180,14 +1180,14 @@
     "state": "ALL",
     "questionId": "ESPN-PEN-013",
     "category": "espnPenal",
-    "question": "Además de una primera asistencia facultativa, ¿qué exige objetivamente el delito básico de lesiones?",
-    "optionA": "Tratamiento médico o quirúrgico",
-    "optionB": "Ingreso hospitalario de un día",
-    "optionC": "Baja laboral de larga duración",
-    "optionD": "Denuncia del perjudicado",
+    "question": "Alguien golpea a otra persona sin causarle lesión alguna. ¿Cómo lo castiga el Código Penal?",
+    "optionA": "Como delito leve de maltrato de obra",
+    "optionB": "Como delito básico de lesiones",
+    "optionC": "Como infracción administrativa grave",
+    "optionD": "Como delito de coacciones",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "El tipo básico de lesiones requiere que la lesión necesite objetivamente para su sanidad, además de una primera asistencia facultativa, tratamiento médico o quirúrgico."
+    "explanation": "El artículo 147.3 del Código Penal castiga con multa a quien golpea o maltrata de obra a otro sin causarle lesión. Es un delito leve que solo se persigue mediante denuncia de la persona agraviada o de su representante legal."
   },
   {
     "type": "ESPOLICIA",
@@ -1397,7 +1397,7 @@
     "optionD": "Quien presencie su comisión",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Quien presencia la perpetración de un delito público está obligado a ponerlo inmediatamente en conocimiento del juez, del fiscal o de la policía. La ley exceptúa a los menores de edad y a quienes carecen de uso de razón."
+    "explanation": "El artículo 259 de la Ley de Enjuiciamiento Criminal obliga a quien presencia la perpetración de un delito público a ponerlo inmediatamente en conocimiento del juez o del fiscal más próximo; la denuncia también puede presentarse ante la policía. La ley exceptúa a los impúberes y a quienes no gozan del pleno uso de su razón."
   },
   {
     "type": "ESPOLICIA",
@@ -1474,14 +1474,14 @@
     "state": "ALL",
     "questionId": "ESPN-PRO-010",
     "category": "espnProcesal",
-    "question": "Según la Ley 4/2015 del Estatuto de la víctima, ¿quién es víctima indirecta en caso de muerte de la víctima?",
-    "optionA": "Su abogado defensor",
-    "optionB": "Su cónyuge o sus hijos",
-    "optionC": "El testigo de los hechos",
-    "optionD": "El agente que instruye el atestado",
+    "question": "Según la Ley 4/2015 del Estatuto de la víctima, ¿qué tiene derecho a obtener la víctima que presenta una denuncia?",
+    "optionA": "Una indemnización inmediata del Estado",
+    "optionB": "Una copia certificada de la denuncia",
+    "optionC": "El nombre del juez que juzgará el caso",
+    "optionD": "Un abogado de oficio en todo caso",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "La Ley 4/2015 considera víctimas indirectas, en caso de muerte o desaparición, al cónyuge o pareja, a los hijos y a otros familiares que enumera."
+    "explanation": "La Ley 4/2015 reconoce a la víctima que denuncia el derecho a que conste la fecha y hora de presentación y a obtener una copia de la denuncia debidamente certificada, además de asistencia lingüística si no entiende el idioma."
   },
   {
     "type": "ESPOLICIA",
@@ -2237,7 +2237,7 @@
     "optionD": "Infinitivo, gerundio y participio",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Las formas no personales no expresan persona ni número gramatical del verbo: infinitivo, gerundio y participio. Indicativo, subjuntivo e imperativo son modos."
+    "explanation": "Las formas no personales del verbo no expresan persona gramatical: infinitivo, gerundio y participio. Indicativo, subjuntivo e imperativo son modos."
   },
   {
     "type": "ESPOLICIA",

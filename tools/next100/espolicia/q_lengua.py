@@ -36,7 +36,7 @@ Q = [
  "El superlativo de antiguo es antiquísimo, formado sobre la raíz latina. Antigüísimo y antiguísimo no son formas correctas."),
 ("¿Cuáles son las formas no personales del verbo?",
  "Infinitivo, gerundio y participio", ["Indicativo, subjuntivo e imperativo", "Presente, pretérito y futuro", "Singular, plural y dual"],
- "Las formas no personales no expresan persona ni número gramatical del verbo: infinitivo, gerundio y participio. Indicativo, subjuntivo e imperativo son modos."),
+ "Las formas no personales del verbo no expresan persona gramatical: infinitivo, gerundio y participio. Indicativo, subjuntivo e imperativo son modos."),
 ("¿Qué tipo de oración coordinada introduce la conjunción «pero»?",
  "Adversativa", ["Copulativa", "Disyuntiva", "Explicativa"],
  "Pero, mas y sino introducen coordinadas adversativas, que expresan oposición. Y, e, ni son copulativas; o, u, disyuntivas; es decir, o sea, explicativas."),

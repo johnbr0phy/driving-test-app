@@ -76,7 +76,7 @@ Q = [
  "Presión directa sobre la herida", ["Aplicar un torniquete siempre", "Lavarla con agua oxigenada", "Dejarla sangrar para que se limpie"],
  "La compresión directa sobre la herida con un apósito o paño limpio es la primera medida. El torniquete se reserva para hemorragias que no se controlan así."),
 ("Una persona tiene ampollas por una quemadura en el antebrazo. ¿Qué se hace con ellas?",
- "No reventarlas y cubrirlas con un apósito limpio", ["Pincharlas para que salga el líquido", "Arrancar la piel levantada", "Cubrirlas con algodón suelto"],
+ "No reventarlas, solo cubrirlas", ["Pincharlas para que salga el líquido", "Arrancar la piel levantada", "Cubrirlas con algodón suelto"],
  "La ampolla protege la piel de debajo frente a la infección, por eso no se revienta ni se retira la piel. Se cubre con un apósito limpio que no se pegue y, si es extensa, se busca atención sanitaria."),
 ("Un adulto se atraganta, está consciente pero no puede toser ni hablar. ¿Qué se recomienda?",
  "Golpes en la espalda y compresiones abdominales", ["Darle agua para que pueda tragar", "Tumbarlo boca arriba en el suelo", "Meterle los dedos en la boca a ciegas"],

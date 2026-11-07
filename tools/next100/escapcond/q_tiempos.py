@@ -55,7 +55,7 @@ Q = [
 ("Si el descanso diario se toma en un transbordador o un tren, ¿cuántas veces puede interrumpirse?",
  "2 veces, sin pasar de 1 hora", ["1 vez, sin pasar de 2 horas", "3 veces, sin pasar de 1 hora", "Las necesarias para embarcar"],
  "El artículo 9 permite interrumpirlo dos veces como máximo, sin que las interrupciones sumen más de una hora, y el conductor debe tener acceso a una litera o cama."),
-("En circunstancias excepcionales, ¿cuánto puede superarse la conducción para llegar a casa a tomar el descanso semanal, sin otra pausa?",
+("En circunstancias excepcionales y sin hacer una pausa previa, ¿cuánto puede superarse la conducción para llegar a casa a tomar el descanso semanal?",
  "1 hora", ["30 minutos", "2 horas", "3 horas"],
  "El artículo 12 permite superar la conducción diaria y semanal hasta una hora para llegar a la base o al domicilio. Con una pausa previa de 30 minutos puede llegar a dos horas para un descanso semanal normal."),
 ("¿Cuándo debe comenzar como tarde el descanso semanal?",

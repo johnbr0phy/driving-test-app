@@ -58,7 +58,7 @@ an academy's test bank or a commercial app. Checked 2026-11-06 unless noted.
   explosivos needs prior vigilante habilitación), 27 (habilitación, TIP, Dirección General de la
   Policía; guardas rurales, Guardia Civil), 28 (requisitos generales), 29 (formación at
   accredited centres), 30 (principios de
-  actuación), 31 (protección jurídica), 32 (funciones de los vigilantes: controls without
+  actuación), 31 (protección jurídica), 35 (jefes de seguridad), 32 (funciones de los vigilantes: controls without
   retaining documents, refusal allows denying entry, detention and immediate handover, no
   interrogation but noting personal data, exclusive dedication), 33 (escoltas), 34 (guardas
   rurales), 40 (servicios con armas; arms only on duty), 41 (services outside buildings, with
@@ -68,7 +68,7 @@ an academy's test bank or a commercial app. Checked 2026-11-06 unless noted.
 - Real Decreto 2364/1994, Reglamento de Seguridad Privada (in force insofar as it does not
   contradict Ley 5/2014; a new regulation is still pending as of November 2026), read
   2026-11-06: https://www.boe.es/buscar/act.php?id=BOE-A-1995-608
-  Articles used: 71 to 72 (functions, checking systems on taking over the post), 76 (handing over
+  Articles used: 71 (functions), 72 (checking systems on taking over the post, where the entity has no responsable de seguridad), 76 (handing over
   suspects and evidence), 82 (no arms outside service; armero), 83 (loss or theft reported to the
   police at once), 87 (uniform not confusable with police or military). Weapon calibre, firing
   practice periodicity and psychotechnical test periodicity were left out (later Orders may have
@@ -79,7 +79,7 @@ an academy's test bank or a commercial app. Checked 2026-11-06 unless noted.
   (arts. 10.1, 14, 15, 16.2, 17.3, 18.3, 18.4, 19, 21, 22.5, 24.2, 104).
 - Código Penal, LO 10/1995: https://www.boe.es/buscar/act.php?id=BOE-A-1995-25444
   (arts. 5, 11, 12, 13, 20.4 to 20.6, 21.5, 26, 29, 139, 148, 163.4, 169, 195, 197, 202, 203,
-  205, 234, 253, 263, 298, 386, 402, 403, 450, 457, 512).
+  205, 234, 253, 263, 386, 402, 403, 450, 451, 457, 512).
 - Ley de Enjuiciamiento Criminal: https://www.boe.es/buscar/act.php?id=BOE-A-1882-6036
   (arts. 262, 265, 268, 490, 491, 496, 795; "investigado" since LO 13/2015).
 - Ley Orgánica 3/2018, de Protección de Datos Personales, art. 22 (videovigilancia: deletion

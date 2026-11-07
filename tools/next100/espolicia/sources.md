@@ -71,7 +71,7 @@ an academy's test bank or an app. Checked 2026-11-06 unless noted.
   infraestructura crítica only (a bill transposing Directive (EU) 2022/2557 was in the Congreso in
   2026, expediente 121/000088, so no item rests on Ley 8/2011's plans or catalogue rules:
   https://www.congreso.es/webpublica/documentacion/docs_trabajo/leg15/121_000088/121_000088_dosier.pdf).
-- Código Penal (LO 10/1995) as amended to 2026, including LO 10/2022 (consent) and LO 14/2022
+- Código Penal (LO 10/1995) as amended to 2026 (arts. 14 error, 147.3 maltrato de obra, 298 receptación among others), including LO 10/2022 (consent) and LO 14/2022
   (desórdenes); Ley Orgánica 5/2000 (menores).
 - Ley de Enjuiciamiento Criminal (denuncia, detención por particulares, derechos del detenido,
   abogado en tres horas, agente encubierto, entrega vigilada, intervención de comunicaciones tras
@@ -97,3 +97,14 @@ an academy's test bank or an app. Checked 2026-11-06 unless noted.
   asesinato, consent age). esvigilante and escapcond were checked once on disk (ESPN-PRO-008 rewritten to art. 520.2 to leave art. 490 to esvigilante). This bank keeps four
   seguridad privada items (escolta, detective, deber de colaborar, control by the Policía Nacional)
   and four vehicle-safety items; they should grep `ESPN-` before writing.
+
+## Review pass (2026-11-07)
+- Plazas (2.704; 541 reserved), BOE núm. 167 of 10 July 2026 and the application window re-confirmed
+  on the Interior ministry Escala Básica page (search 2026-11-07). The 100 questions / three options /
+  50 minutes figure rests on the builder's reading of the BOE PDF (base 6.1.1).
+- Rewritten for sharing a fact and answer with esguardia: ESPN-ADM-001 (Secretarios de Estado as
+  órganos superiores, now Directores generales named by real decreto, Ley 40/2015 art. 66),
+  ESPN-PEN-004 (LO 5/2000 ages, now error invencible, CP art. 14), ESPN-PEN-008 (legítima defensa,
+  now receptación, CP art. 298), ESPN-PEN-013 (lesiones tratamiento médico, now maltrato de obra,
+  CP art. 147.3), ESPN-PRO-010 (víctima indirecta, now copia certificada de la denuncia, Ley 4/2015
+  art. 6).

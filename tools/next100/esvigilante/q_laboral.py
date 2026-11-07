@@ -4,8 +4,8 @@ CAT = "esvigLaboral"; SEG = "LAB"
 # práctica jurídica (partes, informes y denuncias). Sin cifras de jornada semanal, que pueden
 # cambiar; sin salarios ni pluses del convenio.
 Q = [
-("Según el artículo 38 del Estatuto de los Trabajadores, ¿cuál es la duración mínima de las vacaciones anuales retribuidas?",
- "30 días naturales", ["15 días naturales", "22 días naturales", "45 días naturales"],
+("Según el artículo 38 del Estatuto de los Trabajadores, ¿cuántos días naturales duran como mínimo las vacaciones anuales retribuidas?",
+ "30 días", ["20 días", "22 días", "25 días"],
  "El periodo de vacaciones anuales retribuidas, no sustituible por compensación económica, será el pactado en convenio o contrato y nunca inferior a treinta días naturales."),
 ("Según el artículo 34.3 del Estatuto de los Trabajadores, ¿qué descanso mínimo debe haber entre el final de una jornada y el comienzo de la siguiente?",
  "12 horas", ["8 horas", "10 horas", "24 horas"],
@@ -21,7 +21,7 @@ Q = [
  "Las empresas de seguridad privada tienen un convenio colectivo de ámbito estatal negociado por patronal y sindicatos que regula retribuciones, jornada, categorías y régimen disciplinario."),
 ("Según la Ley 5/2014, ¿qué limitación puede tener el derecho de huelga del personal de seguridad privada?",
  "Servicios mínimos", ["Prohibición total de hacer huelga", "Huelga solo los fines de semana", "Autorización previa del juez"],
- "El artículo 8 recuerda que la huelga en la seguridad privada que afecte a servicios esenciales para la comunidad está sujeta a los servicios mínimos que fije la autoridad, según la legislación vigente."),
+ "El artículo 8.6 dispone que el personal que trabaja en entidades con servicios esenciales, o donde la seguridad es obligatoria, se atiene en la huelga a lo que la legislación vigente disponga para esas entidades. En la práctica, la autoridad fija servicios mínimos; la huelga no está prohibida."),
 ("Según el artículo 19 de la Ley 31/1995, ¿cuándo debe impartirse, siempre que sea posible, la formación en prevención?",
  "Dentro de la jornada de trabajo", ["Fuera del horario y sin pago", "Solo tras un accidente laboral", "Una vez cada diez años"],
  "El empresario debe dar a cada trabajador formación teórica y práctica en prevención al contratarlo y cuando cambian sus funciones o los equipos, dentro de la jornada o, si no es posible, descontando ese tiempo de ella, y sin coste para el trabajador."),

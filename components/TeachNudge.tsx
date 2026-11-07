@@ -17,6 +17,8 @@ import { trackTeachNudge } from "@/lib/teachTracking";
 
 // Families by id; state versions count as their family (variantOf).
 const TEACHER_LED = new Set([
+  // Spain: academias de oposiciones and accredited security training centres
+  "espolicia", "esguardia", "esvigilante",
   // Healthcare programs
   "cst", "crcst", "htl", "cna", "ptcb", "phleb", "ccma", "cet", "danb", "cpr", "nclex", "nclexpn", "emt", "paramedic", "teas", "hesi", "vtne",
   "ukfaw", "ukcare",

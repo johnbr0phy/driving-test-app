@@ -7,6 +7,9 @@ import Link from "next/link";
 // page's FAQPage graph; keep the two in step.
 
 const TEACHES: Record<string, string> = {
+  espolicia: "a Policía Nacional oposiciones class",
+  esguardia: "a Guardia Civil oposiciones class",
+  esvigilante: "a vigilante de seguridad training course",
   // The DMV landing (/dmv-practice-test)
   dmv: "driver's ed or run a driving school",
   // Healthcare programs

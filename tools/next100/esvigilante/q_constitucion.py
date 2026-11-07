@@ -41,7 +41,7 @@ Q = [
  "El artículo 104.1 les encomienda proteger el libre ejercicio de los derechos y libertades y garantizar la seguridad ciudadana. La defensa territorial es misión de las Fuerzas Armadas (art. 8)."),
 ("¿Qué institución de la Unión Europea reúne a los jefes de Estado o de Gobierno de los Estados miembros?",
  "El Consejo Europeo", ["El Consejo de Europa", "La Comisión Europea", "El Parlamento Europeo"],
- "El Consejo Europeo, formado por los jefes de Estado o de Gobierno, su presidente y la presidencia de la Comisión, da a la Unión el impulso político. El Consejo de Europa es otra organización, ajena a la UE."),
+ "El Consejo Europeo, formado por los jefes de Estado o de Gobierno, su presidente y el presidente de la Comisión, da a la Unión el impulso político. El Consejo de Europa es otra organización, ajena a la UE."),
 ("¿Qué institución de la Unión Europea controla las cuentas y la gestión de su presupuesto?",
  "El Tribunal de Cuentas Europeo", ["El Banco Central Europeo", "El Defensor del Pueblo Europeo", "El Tribunal de Justicia"],
  "El Tribunal de Cuentas Europeo, con sede en Luxemburgo, fiscaliza los ingresos y gastos de la Unión. El Tribunal de Justicia interpreta el Derecho de la Unión."),

@@ -66,6 +66,8 @@ const BORROWED_SETS: Record<string, string> = {
   pkdrive: "driving",
   // EU driving theory tests (Nov 2026) wear the car tiger.
   esdgt: "driving", ptimt: "driving", bedriving: "driving", dkteori: "driving", setrafik: "driving", fitheory: "driving", grdriving: "driving", rodrpciv: "driving", hukresz: "driving", mttheory: "driving", detheorie: "driving",
+  // Spain (Nov 2026): CAP the CDL tiger, police exams the police tiger, vigilante the security tiger.
+  escapcond: "cdl", espolicia: "police", esguardia: "police", esvigilante: "security",
   // Bank exams wear the IBPS PO tiger; state police exams the police tiger.
   sbipo: "ibpspo", sbiclerk: "ibpspo", ibpsrrb: "ibpspo",
   delhipolice: "police", biharpolice: "police", rajpolice: "police", mppolice: "police",

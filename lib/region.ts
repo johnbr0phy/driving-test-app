@@ -125,7 +125,7 @@ const TEST_REGIONS: Record<string, TestRegion> = {
   phnle: "PH", phmedtech: "PH", phpharm: "PH", phmidwife: "PH", phpsychom: "PH", phnapolcom: "PH", afpsat: "PH", phcle: "PH", phinsurance: "PH", phrebroker: "PH",
   sgftt: "SG", sgrtt: "SG", sgres: "SG", sgm5: "SG", sgvl: "SG", hkiiqe1: "HK", hklesfi1: "HK", aesira: "AE", mypce: "MY", kenck: "KE",
   detheorie: "DE",
-  esdgt: "ES", ptimt: "PT", rodrpciv: "RO", setrafik: "SE", grdriving: "GR", dkteori: "DK", hukresz: "HU", bedriving: "BE", fitheory: "FI", mttheory: "MT",
+  esdgt: "ES", escapcond: "ES", espolicia: "ES", esguardia: "ES", esvigilante: "ES", ptimt: "PT", rodrpciv: "RO", setrafik: "SE", grdriving: "GR", dkteori: "DK", hukresz: "HU", bedriving: "BE", fitheory: "FI", mttheory: "MT",
   jambeng: "NG", jambmath: "NG", jambbio: "NG", jambchem: "NG", jambphys: "NG",
   ngpolice: "NG", cdcfib: "NG", ngarmy: "NG", ngcustoms: "NG", trcnpqe: "NG",
   inrto: "IN", ssccgl: "IN", rrbntpc: "IN", ibpspo: "IN", ctet: "IN",
@@ -140,6 +140,7 @@ const TEST_REGIONS: Record<string, TestRegion> = {
 
 /** A country's tests that are not driving tests: shown beside the worldwide ones, not in the driving grid. */
 export const NON_DRIVING_TESTS = new Set([
+  "espolicia", "esguardia", "esvigilante",
   "timestables", "ks2", "gcsemaths", "uksia", "uk18ed",
   "gcsehigher", "gcsescience", "gcsecs", "elevenplus", "fsmaths", "cscs", "ukfood", "ukaplh", "ukfaw", "ukcare", "uklitu", "uknmc", "ukseru", "aatl2", "cemap",
   "osslt", "capal", "caelec",
@@ -303,8 +304,8 @@ export const REGION_HOME: Record<Exclude<Region, "US">, {
     description: "Practica gratis el examen teórico de la DGT (permiso B): 200 preguntas originales sobre las normas de tráfico en España, cada respuesta explicada. Sin necesidad de cuenta.",
     lead: "Prepara el examen teórico de la DGT para tu permiso de conducir de coche. Preguntas originales sobre señales, prioridad, límites de velocidad y las normas de 2026, cada respuesta explicada. Sin registro.",
     cta: { label: "Test de la DGT", href: "/es/test-dgt-permiso-b" },
-    testsTitle: "Examen teórico de la DGT (permiso B)",
-    testsSub: "200 preguntas sobre las normas de circulación en España, en km/h y con circulación por la derecha. Seis tests completos de 30 preguntas, se aprueba con 27.",
+    testsTitle: "Tests de práctica para España",
+    testsSub: "El examen teórico de la DGT (permiso B): 200 preguntas sobre las normas de circulación, seis tests de 30, se aprueba con 27. Además, el examen del CAP para conductores de camión y autobús, las oposiciones a Policía Nacional y Guardia Civil y el examen de vigilante de seguridad, todos en español.",
   },
 
   // In Portuguese (REGIONS[].lang), machine-translated, pending native review.

@@ -17,7 +17,7 @@ Q = [
 ("Según la norma europea de estiba, ¿qué fuerza hacia delante debe soportar la sujeción de la carga en una frenada?",
  "0,8 veces su peso", ["0,2 veces su peso", "0,5 veces su peso", "0,6 veces su peso"],
  "La norma UNE-EN 12195-1 calcula la sujeción para una fuerza de 0,8 veces el peso de la carga hacia delante, y de 0,5 hacia los lados y hacia atrás."),
-("¿Qué fuerza lateral debe soportar la sujeción de la carga según esa norma?",
+("Según la norma UNE-EN 12195-1, ¿qué fuerza lateral debe soportar la sujeción de la carga?",
  "0,5 veces su peso", ["0,2 veces su peso", "0,8 veces su peso", "1 vez su peso"],
  "En curvas y cambios de carril la carga tiende a desplazarse hacia los lados. La norma exige sujetarla frente a 0,5 veces su peso lateralmente."),
 ("¿Cómo actúa el amarre por fricción con correas por encima de la carga?",

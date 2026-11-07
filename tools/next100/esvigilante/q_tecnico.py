@@ -51,7 +51,7 @@ Q = [
  "Para evitar falsas alarmas", ["Para cobrar el servicio al cliente", "Para identificar al vigilante", "Para cumplir el horario"],
  "La mayoría de las alarmas son falsas o no deseadas. Verificarlas con imagen, audio o comprobación personal evita movilizar a la policía sin motivo."),
 ("¿Qué ventaja tiene un circuito cerrado de televisión en un centro vigilado?",
- "Ver varias zonas a la vez", ["Sustituir todos los medios físicos", "Impedir por sí solo la entrada", "Identificar a todos sin cámaras"],
+ "Ver varias zonas a la vez", ["Sustituir todos los medios físicos", "Impedir por sí solo la entrada", "Evitar que haya que hacer rondas"],
  "El CCTV permite ver a la vez muchas zonas, grabar lo ocurrido y dirigir a los vigilantes, pero no impide físicamente el acceso."),
 ("¿Qué norma básica obliga a ciertos centros a tener un plan de autoprotección?",
  "El Real Decreto 393/2007", ["El Real Decreto 137/1993", "La Ley 39/2015 de procedimiento", "La Ley 5/2014 de Seguridad Privada"],

@@ -33,11 +33,19 @@ export interface TranslatedLandingContent {
 import detheorieDe from "@/lib/landings/detheorie.de.json";
 import esdgtEs from "@/lib/landings/esdgt.es.json";
 import ptimtPt from "@/lib/landings/ptimt.pt.json";
+import escapcondEs from "@/lib/landings/escapcond.es.json";
+import espoliciaEs from "@/lib/landings/espolicia.es.json";
+import esguardiaEs from "@/lib/landings/esguardia.es.json";
+import esvigilanteEs from "@/lib/landings/esvigilante.es.json";
 
 const LANDINGS: Record<string, TranslatedLandingContent> = {
   "detheorie.de": detheorieDe as TranslatedLandingContent,
   "esdgt.es": esdgtEs as TranslatedLandingContent,
   "ptimt.pt": ptimtPt as TranslatedLandingContent,
+  "escapcond.es": escapcondEs as TranslatedLandingContent,
+  "espolicia.es": espoliciaEs as TranslatedLandingContent,
+  "esguardia.es": esguardiaEs as TranslatedLandingContent,
+  "esvigilante.es": esvigilanteEs as TranslatedLandingContent,
 };
 
 /** The landing content of `examId` in `lang`, if one is registered. */

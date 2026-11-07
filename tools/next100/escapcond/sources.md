@@ -92,3 +92,11 @@ six fact-and-answer repeats (PAS order, recovery position, direct pressure on a 
 an extinguisher, the human factor in crashes, 1,6 mm tread) were rewritten to other annex facts.
 The English heavy-vehicle banks (`iedttcv`, `uklgv`, `ukpcv`, `cdl`) share EU hours rules but no
 Spanish stems.
+
+Review pass (2026-11-07): Anexo V sección 1.ª, arts. 7.2, 16.1 and 17 re-read on the BOE
+consolidated text (format, marking, 25 speciality questions, at least 2 hours, one year to pass,
+at least six calls a year, 35 hours every five years). A second scan against the four Spanish
+banks found four more fact-and-answer repeats with `esdgt` (ice in shade and on bridges, the
+medicine pictogram, the reflective vest on an interurban road, not moving a trapped casualty);
+they were replaced by original items on retention spacing, cab noise, dangerous goods incidents
+(stand upwind) and a vehicle fire in a tunnel.

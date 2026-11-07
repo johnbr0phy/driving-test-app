@@ -29,7 +29,7 @@ import epa608Es from "./examTranslations/epa608.es.json";
 import esdgtEs from "./examTranslations/esdgt.es.json";
 import ptimtPt from "./examTranslations/ptimt.pt.json";
 
-export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "bedriving" | "dkteori" | "setrafik" | "fitheory" | "grdriving" | "rodrpciv" | "hukresz" | "mttheory" | "detheorie" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "detheorie" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl";
+export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "bedriving" | "dkteori" | "setrafik" | "fitheory" | "grdriving" | "rodrpciv" | "hukresz" | "mttheory" | "detheorie" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "detheorie" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -9348,6 +9348,323 @@ const detheorie: ExamConfig = {
   },
 };
 
+const escapcond: ExamConfig = {
+  id: "escapcond",
+  stateCode: "ESCAPCOND",
+  idBase: 22700,
+  slug: "/examen-cap",
+  landingPath: "/es/test-examen-cap",
+  name: "Test examen CAP inicial",
+  shortName: "Examen CAP",
+  examLabel: "Examen CAP inicial",
+  fullName: "Examen del certificado de aptitud profesional (CAP) de cualificación inicial de conductores, mercancías y viajeros",
+  questionIdPrefix: "ESCAP-",
+  icon: "truck",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 67,
+  language: "es",
+  locale: "es-ES",
+  english: {
+    name: "Spain Driver CPC (CAP) Initial Exam",
+    shortName: "Spain CAP exam",
+    fullName: "Spain Driver CPC initial qualification exam (examen CAP inicial), goods and passengers, in Spanish",
+  },
+  review: { es: "model" },
+  // Real exam (Real Decreto 284/2021, arts. 5, 6, 16, 17 and Anexo V; BOE-A-2021-6624, checked
+  // 2026-11-06; Anexo V unchanged by RD 487/2026, in force 18 Sept 2026): 100 test questions, 4
+  // options, one valid, at least 2 hours, +1 / -0,5 / blank 0, pass at half the points (50); 25
+  // of the 100 on the speciality (Anexo I A sección 2.ª mercancías or 3.ª viajeros). Categories
+  // follow the Anexo I A objectives (1.1 and 1.3; 1.2; 1.3 bis, now 1.4; 2.1 hours; 2.1
+  // tachograph, working time and periodic training; 3.1, 3.3, 3.4; 3.2, 3.5, 3.6; mercancías;
+  // viajeros). Per test 38 common + 6 + 6; the split inside the common part is Tigertest's.
+  // Four tests of 50, pools exactly 4x each count, all original, written in Spanish. No penalty
+  // applied, so passPct 67 (34 of 50) = 50 net points answering everything.
+  blueprint: {
+    escapcCadena: 6,
+    escapcFrenos: 6,
+    escapcRiesgos: 4,
+    escapcTiempos: 6,
+    escapcTacografo: 5,
+    escapcSalud: 6,
+    escapcEmergencias: 5,
+    escapcMercancias: 6,
+    escapcViajeros: 6,
+  },
+  // Five topic sets, not testSets(): 5 + 4 tests = 9 dashboard steps. Sets 4 and 5 are the two
+  // specialities, so a truck or bus candidate can train only their own.
+  trainingSets: [
+    { setNumber: 1, id: 22701, name: "Conducción racional y frenos", categories: ["escapcCadena", "escapcFrenos"], size: 48, weightLabel: "12 de 50 preguntas por test" },
+    { setNumber: 2, id: 22702, name: "Tiempos de conducción, tacógrafo y jornada", categories: ["escapcTiempos", "escapcTacografo"], size: 44, weightLabel: "11 de 50 preguntas por test" },
+    { setNumber: 3, id: 22703, name: "Riesgos, salud y emergencias", categories: ["escapcRiesgos", "escapcSalud", "escapcEmergencias"], size: 60, weightLabel: "15 de 50 preguntas por test" },
+    { setNumber: 4, id: 22704, name: "Mercancías", categories: ["escapcMercancias"], size: 24, weightLabel: "6 de 50 preguntas por test (25 de 100 en el examen de mercancías)" },
+    { setNumber: 5, id: 22705, name: "Viajeros", categories: ["escapcViajeros"], size: 24, weightLabel: "6 de 50 preguntas por test (25 de 100 en el examen de viajeros)" },
+  ],
+  categoryLabels: {
+    escapcCadena: "Cadena cinemática y conducción económica",
+    escapcFrenos: "Frenos y sistemas de seguridad",
+    escapcRiesgos: "Riesgos del tráfico",
+    escapcTiempos: "Tiempos de conducción y descanso",
+    escapcTacografo: "Tacógrafo, jornada y formación continua",
+    escapcSalud: "Salud, ergonomía y accidentes de trabajo",
+    escapcEmergencias: "Emergencias, delincuencia e imagen de empresa",
+    escapcMercancias: "Mercancías: carga, documentos y mercado",
+    escapcViajeros: "Viajeros: seguridad, normas y mercado",
+  },
+  copy: {
+    guestPrompt: "para guardar tu progreso en el CAP y no perder ninguna pregunta fallada",
+    trainingHeading: "Bloques de repaso",
+    trainingSub: "Cada bloque cubre varios objetivos del temario oficial del CAP. Ves la respuesta al momento y las preguntas que fallas vuelven hasta que las dominas. Mercancías y viajeros tienen su propio bloque.",
+    testsHeading: "Test · 50 preguntas, 34 para aprobar",
+    heroSubs: [
+      "Cinco bloques de repaso y cuatro test. Tiempos de conducción y tacógrafo son lo que más se pregunta.",
+      "Domina el bloque y después haz el test.",
+      "Vas por la mitad. Haz un test completo.",
+      "Repasa tus fallos y vuelve a hacer el test.",
+      "Todo en verde. A por el examen del CAP.",
+    ],
+    sourceLine: "Según el anexo I del Real Decreto 284/2021 y las normas vigentes en noviembre de 2026. Preguntas propias, no de exámenes oficiales; sin la penalización de medio punto por error.",
+    analyticsKey: "escapcond",
+  },
+};
+
+const espolicia: ExamConfig = {
+  id: "espolicia",
+  stateCode: "ESPOLICIA",
+  idBase: 22500,
+  slug: "/oposiciones-policia-nacional",
+  landingPath: "/es/test-oposiciones-policia-nacional",
+  name: "Test Oposiciones Policía Nacional",
+  shortName: "Policía Nacional",
+  examLabel: "Prueba de conocimientos, Escala Básica",
+  fullName: "Oposición a la Escala Básica de la Policía Nacional: prueba de conocimientos",
+  questionIdPrefix: "ESPN-",
+  icon: "badge",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  language: "es",
+  locale: "es-ES",
+  english: {
+    name: "Spain National Police Entrance Exam (Escala Básica)",
+    shortName: "Spain National Police exam",
+    fullName: "Spain National Police entrance exam, Escala Básica knowledge test (oposiciones Policía Nacional), in Spanish",
+  },
+  review: { es: "model" },
+  // Real exam (Resolución de 7 de julio de 2026 de la DGP, BOE núm. 167 de 10-07-2026,
+  // BOE-A-2026-15055, base 6.1.1 and anexo I; checked 2026-11-06): knowledge test of 100 questions
+  // with three options, 50 minutes, [A − E/(n−1)] × 10 / P, minimum 3 of 10 and the best 1,75 per
+  // open place go on; eliminatory; same sitting as the psicotécnicos. 2.704 places (2.163 open,
+  // 541 reserved). Temario of 45 temas: Ciencias Jurídicas 1-26, Ciencias Sociales 27-37,
+  // Técnico-Científicas 38-45. No official weights: 30/11/9 per test follows the temas per block;
+  // the split inside each block is Tigertest's. Four tests of 50, pools exactly 4x each count
+  // (200, all original, written in Spanish). Four options, equal weight, no penalty; passPct 70
+  // (35 of 50) is Tigertest's target, since the real cut-off is set by ranking.
+  blueprint: {
+    espnConstitucion: 6,
+    espnAdministracion: 5,
+    espnExtranjeria: 3,
+    espnSeguridad: 4,
+    espnPenal: 6,
+    espnProcesal: 3,
+    espnIgualdad: 3,
+    espnSociales: 7,
+    espnLengua: 4,
+    espnInformatica: 5,
+    espnArmasVial: 4,
+  },
+  // Six topic sets, not testSets(): 6 + 4 tests = 10 dashboard steps.
+  trainingSets: [
+    { setNumber: 1, id: 22501, name: "Constitución, Unión Europea y Administración", categories: ["espnConstitucion", "espnAdministracion"], size: 44, weightLabel: "11 de 50 preguntas por test" },
+    { setNumber: 2, id: 22502, name: "Extranjería y seguridad ciudadana", categories: ["espnExtranjeria", "espnSeguridad"], size: 28, weightLabel: "7 de 50 preguntas por test" },
+    { setNumber: 3, id: 22503, name: "Derecho Penal y Procesal", categories: ["espnPenal", "espnProcesal"], size: 36, weightLabel: "9 de 50 preguntas por test" },
+    { setNumber: 4, id: 22504, name: "Igualdad y Ciencias Sociales", categories: ["espnIgualdad", "espnSociales"], size: 40, weightLabel: "10 de 50 preguntas por test" },
+    { setNumber: 5, id: 22505, name: "Lengua española", categories: ["espnLengua"], size: 16, weightLabel: "4 de 50 preguntas por test" },
+    { setNumber: 6, id: 22506, name: "Materias técnico-científicas", categories: ["espnInformatica", "espnArmasVial"], size: 36, weightLabel: "9 de 50 preguntas por test" },
+  ],
+  categoryLabels: {
+    espnConstitucion: "Derecho, Constitución y Unión Europea",
+    espnAdministracion: "Administración y Policía Nacional",
+    espnExtranjeria: "Extranjería y protección internacional",
+    espnSeguridad: "Seguridad privada y seguridad ciudadana",
+    espnPenal: "Derecho Penal",
+    espnProcesal: "Derecho Procesal Penal y víctimas",
+    espnIgualdad: "Igualdad, prevención y protección de datos",
+    espnSociales: "Ciencias Sociales",
+    espnLengua: "Lengua española",
+    espnInformatica: "Informática, inteligencia y ciberdelincuencia",
+    espnArmasVial: "Armas, vehículos prioritarios y seguridad vial",
+  },
+  copy: {
+    guestPrompt: "para guardar tu progreso en la oposición y no perder de vista ninguna pregunta fallada",
+    trainingHeading: "Bloques de entrenamiento",
+    trainingSub: "Cada bloque cubre temas del temario de la Escala Básica. Tienes la respuesta al momento, y las preguntas que fallas vuelven hasta que las domines.",
+    testsHeading: "Tests · 50 preguntas, 35 para aprobar",
+    heroSubs: [
+      "Seis bloques, cuatro tests. Las Ciencias Jurídicas son más de la mitad del temario.",
+      "Domina primero el bloque, después haz el test.",
+      "Vas por la mitad. Haz un test completo.",
+      "Repasa los fallos y vuelve a hacer el test.",
+      "Todo en verde. Prepárate para la prueba de conocimientos.",
+    ],
+    sourceLine: "Según la convocatoria de 2026 (BOE de 10 de julio de 2026) y las leyes del temario vigentes en noviembre de 2026. Preguntas propias, no de exámenes oficiales; cuatro opciones y sin penalización por error.",
+    analyticsKey: "espolicia",
+  },
+};
+
+const esguardia: ExamConfig = {
+  id: "esguardia",
+  stateCode: "ESGUARDIA",
+  idBase: 22400,
+  slug: "/oposiciones-guardia-civil",
+  landingPath: "/es/test-oposiciones-guardia-civil",
+  name: "Test oposiciones Guardia Civil",
+  shortName: "Oposiciones Guardia Civil",
+  examLabel: "Prueba de conocimientos de la Guardia Civil",
+  fullName: "Oposiciones a la Escala de Cabos y Guardias de la Guardia Civil: prueba de conocimientos",
+  questionIdPrefix: "ESGC-",
+  icon: "shield",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 63,
+  language: "es",
+  locale: "es-ES",
+  english: {
+    name: "Guardia Civil Entrance Exam (Spain)",
+    shortName: "Guardia Civil exam",
+    fullName: "Spanish Guardia Civil entrance exam (Escala de Cabos y Guardias), knowledge test, in Spanish",
+  },
+  review: { es: "model" },
+  // Real exam (Resolución 160/38243/2026, BOE 8 May 2026, BOE-A-2026-9982; checked 2026-11-06):
+  // prueba de conocimientos of 140 minutes with ortografía, gramática (apto/no apto), 100
+  // conocimientos generales questions (4 options, one valid, Px = Y/T [A - E/(N-1)], blanks score
+  // nothing, 0 to 100, minimum 50) and 20 English questions (minimum 8). Temario: Resolución de 3
+  // de octubre de 2022, updated 29 May 2023, 25 temas; temas 24 (inglés) and 25 (lengua) are the
+  // separate parts. Categories group temas 1 to 23; the 6/6/4/8/6/6/6/4/4 split is Tigertest's (no
+  // official weights). Four tests of 50, pools exactly 4x each count, all original, written in
+  // Spanish. No penalty applied, so passPct 63 (32 of 50) = the 50-point minimum answering all.
+  blueprint: {
+    esgcDerechos: 6,
+    esgcConstitucion: 6,
+    esgcInternacional: 4,
+    esgcPenal: 8,
+    esgcProcesal: 6,
+    esgcAdministrativo: 6,
+    esgcSeguridad: 6,
+    esgcInstituto: 4,
+    esgcTecnico: 4,
+  },
+  // Five topic sets, not testSets(): 5 + 4 tests = 9 dashboard steps.
+  trainingSets: [
+    { setNumber: 1, id: 22401, name: "Derechos humanos, igualdad y Constitución", categories: ["esgcDerechos", "esgcConstitucion"], size: 48, weightLabel: "12 de 50 preguntas por test" },
+    { setNumber: 2, id: 22402, name: "Derecho penal, menores y violencia de género", categories: ["esgcPenal"], size: 32, weightLabel: "8 de 50 preguntas por test" },
+    { setNumber: 3, id: 22403, name: "Derecho procesal penal", categories: ["esgcProcesal"], size: 24, weightLabel: "6 de 50 preguntas por test" },
+    { setNumber: 4, id: 22404, name: "Derecho administrativo y seguridad", categories: ["esgcAdministrativo", "esgcSeguridad"], size: 48, weightLabel: "12 de 50 preguntas por test" },
+    { setNumber: 5, id: 22405, name: "Guardia Civil, instituciones y materias técnicas", categories: ["esgcInstituto", "esgcInternacional", "esgcTecnico"], size: 48, weightLabel: "12 de 50 preguntas por test" },
+  ],
+  categoryLabels: {
+    esgcDerechos: "Derechos humanos, igualdad y deontología",
+    esgcConstitucion: "Derecho constitucional",
+    esgcInternacional: "Unión Europea e instituciones internacionales",
+    esgcPenal: "Derecho penal, menores y violencia de género",
+    esgcProcesal: "Derecho procesal penal",
+    esgcAdministrativo: "Derecho civil, administrativo y protección de datos",
+    esgcSeguridad: "Seguridad, extranjería, armas y contrabando",
+    esgcInstituto: "Fuerzas y Cuerpos de Seguridad y Guardia Civil",
+    esgcTecnico: "Riesgos laborales, protección civil, TIC y topografía",
+  },
+  copy: {
+    guestPrompt: "para guardar tu progreso en la oposición y no perder ninguna pregunta fallada",
+    trainingHeading: "Bloques de repaso",
+    trainingSub: "Cada bloque cubre varios temas del temario oficial. Ves la respuesta al momento y las preguntas que fallas vuelven hasta que las dominas.",
+    testsHeading: "Test · 50 preguntas, 32 para el mínimo",
+    heroSubs: [
+      "Cinco bloques de repaso y cuatro test. Derecho penal es el bloque que más preguntas pone.",
+      "Domina el bloque y después haz el test.",
+      "Vas por la mitad. Haz un test completo.",
+      "Repasa tus fallos y vuelve a hacer el test.",
+      "Todo en verde. A por la prueba de conocimientos.",
+    ],
+    sourceLine: "Según el temario oficial de la Escala de Cabos y Guardias (2022, actualizado en 2023) y las leyes vigentes en noviembre de 2026. Preguntas propias, no de exámenes oficiales; sin la penalización de un tercio por error.",
+    analyticsKey: "esguardia",
+  },
+};
+
+const esvigilante: ExamConfig = {
+  id: "esvigilante",
+  stateCode: "ESVIGIL",
+  idBase: 22600,
+  slug: "/vigilante-de-seguridad",
+  landingPath: "/es/test-vigilante-de-seguridad",
+  name: "Test vigilante de seguridad",
+  shortName: "Vigilante de seguridad",
+  examLabel: "Prueba de conocimientos de vigilante de seguridad",
+  fullName: "Pruebas de selección para vigilante de seguridad privada: prueba de conocimientos",
+  questionIdPrefix: "ESVIG-",
+  icon: "shield",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 67,
+  language: "es",
+  locale: "es-ES",
+  english: {
+    name: "Spain Private Security Guard Exam (Vigilante de Seguridad)",
+    shortName: "Spain security guard exam",
+    fullName: "Spanish private security guard (vigilante de seguridad) licence exam, knowledge test, in Spanish",
+  },
+  review: { es: "model" },
+  // Real exam (Resolución de 9 de enero de 2026, Secretaría de Estado de Seguridad, BOE 14 Jan
+  // 2026, BOE-A-2026-813; checked 2026-11-06): calls 01, 02 and 03/2026; cuestionario of 100
+  // questions, 3 alternatives, one valid, 50 minutes, on the Anexo III common programme;
+  // [A - E/(n-1)] x 10/P with n = 3, 0 to 10, minimum 5; physical tests apto / no apto.
+  // Categories follow Anexo III's four areas (jurídica split in five); the 4/8/5/8/3/5/9/8 split
+  // is Tigertest's. Four tests of 50, pools exactly 4x each count, all original, written in
+  // Spanish. Four options and no penalty, so passPct 67 (34 of 50) = the 5 of 10 answering all.
+  blueprint: {
+    esvigConstitucion: 4,
+    esvigPenal: 8,
+    esvigProcesal: 5,
+    esvigSegPrivada: 8,
+    esvigLaboral: 3,
+    esvigSocioprof: 5,
+    esvigTecnico: 9,
+    esvigInstrumental: 8,
+  },
+  // Five area sets, not testSets(): 5 + 4 tests = 9 dashboard steps.
+  trainingSets: [
+    { setNumber: 1, id: 22601, name: "Constitución y Derecho penal", categories: ["esvigConstitucion", "esvigPenal"], size: 48, weightLabel: "12 de 50 preguntas por test" },
+    { setNumber: 2, id: 22602, name: "Derecho procesal y seguridad privada", categories: ["esvigProcesal", "esvigSegPrivada"], size: 52, weightLabel: "13 de 50 preguntas por test" },
+    { setNumber: 3, id: 22603, name: "Derecho laboral y área socio-profesional", categories: ["esvigLaboral", "esvigSocioprof"], size: 32, weightLabel: "8 de 50 preguntas por test" },
+    { setNumber: 4, id: 22604, name: "Área técnico-profesional", categories: ["esvigTecnico"], size: 36, weightLabel: "9 de 50 preguntas por test" },
+    { setNumber: 5, id: 22605, name: "Área instrumental", categories: ["esvigInstrumental"], size: 32, weightLabel: "8 de 50 preguntas por test" },
+  ],
+  categoryLabels: {
+    esvigConstitucion: "Derecho constitucional y Unión Europea",
+    esvigPenal: "Derecho penal",
+    esvigProcesal: "Derecho procesal penal",
+    esvigSegPrivada: "Seguridad privada y protección de datos",
+    esvigLaboral: "Derecho laboral, prevención y práctica jurídica",
+    esvigSocioprof: "Área socio-profesional",
+    esvigTecnico: "Área técnico-profesional",
+    esvigInstrumental: "Área instrumental",
+  },
+  copy: {
+    guestPrompt: "para guardar tu progreso hacia la TIP y no perder ninguna pregunta fallada",
+    trainingHeading: "Bloques de repaso",
+    trainingSub: "Cada bloque cubre un área del programa oficial. Ves la respuesta al momento y las preguntas que fallas vuelven hasta que las dominas.",
+    testsHeading: "Test · 50 preguntas, 34 para el 5",
+    heroSubs: [
+      "Cinco bloques de repaso y cuatro test. Seguridad privada y Derecho penal son lo que más pesa.",
+      "Domina el bloque y después haz el test.",
+      "Vas por la mitad. Haz un test completo.",
+      "Repasa tus fallos y vuelve a hacer el test.",
+      "Todo en verde. A por la prueba de conocimientos.",
+    ],
+    sourceLine: "Según el programa del anexo III de las bases de 2026 y la Ley 5/2014 de Seguridad Privada, vigentes en noviembre de 2026. Preguntas propias, no de exámenes oficiales; cuatro respuestas y sin la penalización de medio acierto por error.",
+    analyticsKey: "esvigilante",
+  },
+};
+
 const phlet: ExamConfig = {
   id: "phlet",
   stateCode: "PHLET",
@@ -14503,7 +14820,7 @@ const sgvl: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, nhie, cna, ptcb, phleb, ccma, cma, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, sfadmin, phr, cisa, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, bedriving, dkteori, setrafik, fitheory, grdriving, rodrpciv, hukresz, mttheory, detheorie, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, gulfrn, inrto, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, nhie, cna, ptcb, phleb, ccma, cma, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, sfadmin, phr, cisa, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, bedriving, dkteori, setrafik, fitheory, grdriving, rodrpciv, hukresz, mttheory, detheorie, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, gulfrn, inrto, htl, cst, crcst];
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
 export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA, realestatePA, realestateIL, realestateOH, realestateGA, realestateNC, realestateMI, realestateVA, realestateWA, realestateAZ, realestateTN, realestateLA, insuranceNY, insurancePA, insuranceIL, insuranceOH, insuranceGA, insuranceNC, insuranceMI, insuranceNJ, insuranceVA, insuranceWA, pncNY, pncPA, pncIL, pncOH, pncGA, pncNC, pncMI, pncNJ, pncVA, pncWA];

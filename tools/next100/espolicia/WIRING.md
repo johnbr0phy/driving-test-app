@@ -318,5 +318,5 @@ then rename to the `-es` names, as for detheorie.
    `data/es-vigilante-seguridad-questions.json` and `data/es-cap-conductores-questions.json`
    (both on disk by then) found one shared fact (a private person's arrest of an in fraganti
    offender, art. 490 LECrim, which belongs to esvigilante); ESPN-PRO-008 now asks how a detainee
-   must be informed of their rights (art. 520.2). No other shared fact-and-answer pairs.
+   must be informed of their rights (art. 520.2). No other shared fact-and-answer pairs. Review pass (2026-11-07) rewrote five more that still matched esguardia: ESPN-ADM-001, PEN-004, PEN-008, PEN-013, PRO-010 (see sources.md).
 5. **Hub group name** shared with esguardia and esvigilante: agree one title across the WIRING files.

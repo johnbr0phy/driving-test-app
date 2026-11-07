@@ -28,7 +28,7 @@ Q = [
 ("¿Quién declara el estado de alarma?",
  "El Gobierno, mediante decreto", ["El Congreso, por mayoría absoluta", "El Rey, a propuesta del Senado", "El Ministro del Interior, por orden"],
  "El artículo 116.2 de la Constitución atribuye al Gobierno la declaración del estado de alarma mediante decreto acordado en Consejo de Ministros, dando cuenta al Congreso."),
-("¿Cuál es el plazo máximo del estado de alarma declarado por el Gobierno sin autorización del Congreso para prorrogarlo?",
+("¿Por qué plazo máximo puede declarar el Gobierno el estado de alarma sin necesitar la autorización del Congreso?",
  "15 días", ["7 días", "30 días", "60 días"],
  "El estado de alarma se declara por un plazo máximo de quince días; para prorrogarlo hace falta la autorización expresa del Congreso. Treinta días es el plazo del estado de excepción."),
 ("¿Qué mayoría exige la aprobación de una ley orgánica?",

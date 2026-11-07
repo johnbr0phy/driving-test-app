@@ -1,9 +1,9 @@
 CAT = "espnAdministracion"; SEG = "ADM"
 # Temas 5 a 9: AGE y Gobierno, funcionarios, Ministerio del Interior, Dirección General de la Policía y LO 2/1986.
 Q = [
-("Según la Ley 40/2015, ¿qué clase de órganos son los Secretarios de Estado en la organización central de la AGE?",
- "Órganos superiores", ["Órganos directivos", "Órganos consultivos", "Órganos periféricos"],
- "En la organización central son órganos superiores los Ministros y los Secretarios de Estado. Subsecretarios, secretarios generales, directores generales y subdirectores generales son órganos directivos."),
+("Según la Ley 40/2015, ¿cómo se nombra y se separa a los Directores generales de un ministerio?",
+ "Por real decreto del Consejo de Ministros", ["Por orden del Ministro del departamento", "Por resolución del Subsecretario", "Por acuerdo de la Mesa del Congreso"],
+ "La Ley 40/2015 dispone que los Directores generales son nombrados y separados por real decreto del Consejo de Ministros, a propuesta del titular del departamento, y atendiendo a criterios de competencia profesional y experiencia."),
 ("¿Cuál de estos cargos es un órgano directivo de la Administración General del Estado?",
  "El Subsecretario", ["El Ministro", "El Secretario de Estado", "El Consejo de Ministros"],
  "La Ley 40/2015 incluye entre los órganos directivos a los Subsecretarios. Ministros y Secretarios de Estado son órganos superiores, y el Consejo de Ministros es un órgano colegiado del Gobierno."),

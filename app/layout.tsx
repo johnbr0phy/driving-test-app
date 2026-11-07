@@ -1,3 +1,4 @@
+import { SkipLink } from "@/components/SkipLink";
 import { ClassMembershipSync } from "@/components/ClassMembershipSync";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import type { Metadata, Viewport } from "next";
@@ -119,7 +120,7 @@ export default function RootLayout({
         <Providers>
           <SuperAmazingFireworks />
           <ClassMembershipSync />
-          <a href="#main-content" className="skip-link">Skip to main content</a>
+          <SkipLink />
           <SiteHeader />
           <main id="main-content" tabIndex={-1} className="flex-1 flex flex-col">{children}</main>
           <Footer />

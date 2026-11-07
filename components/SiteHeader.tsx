@@ -89,7 +89,7 @@ export function SiteHeader() {
 
 function HeaderBar({ path, themePath, examId, v2Id }: { path: string; themePath: string; examId?: string; v2Id?: string }) {
   const { user } = useAuth();
-  const { t: pageT } = useTranslation();
+  const { t: pageT, language: pageLanguage } = useTranslation();
   const hydrated = useHydration();
   const guest = useStore((s) => s.isGuest);
   const selectedState = useStore((s) => s.selectedState);
@@ -143,7 +143,10 @@ function HeaderBar({ path, themePath, examId, v2Id }: { path: string; themePath:
   const classesTab = teaches || !!studentClass;
   const teachHref = teaches ? (lastClass ? `/teach/classes/${lastClass}` : "/teach") : studentClass ? classExamHome(studentClass.examId) : "/teach";
   const stateName = states.find((s) => s.code === selectedState)?.name;
-  const chipLabel = chipTest ? (chipTest.id === "dmv" && stateName ? `DMV · ${stateName}` : chipTest.shortName) : "";
+  // A native exam (German, Swedish...) is named in its own language while its pages run in it.
+  const chipLang = exam ? (landingLang ?? testLang) : pageLanguage;
+  const chipShort = chipTest?.language && chipTest.nativeShortName && chipLang === chipTest.language ? chipTest.nativeShortName : chipTest?.shortName ?? "";
+  const chipLabel = chipTest ? (chipTest.id === "dmv" && stateName ? `DMV · ${stateName}` : chipShort) : "";
 
   // Your Stats for the test on screen.
   let statsPath: string | null = null;

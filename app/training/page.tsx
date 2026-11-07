@@ -48,7 +48,9 @@ function TrainingPageContent() {
   const hasPremiumAccess = useStore((state) => state.hasPremiumAccess);
   const { user } = useAuth();
   const [paywallOpen, setPaywallOpen] = useState(false);
-  const [ctaIndex] = useState(() => Math.floor(Math.random() * en.testCtas.length));
+  // Picked after mount so the server HTML and first client render match.
+  const [ctaIndex, setCtaIndex] = useState(0);
+  useEffect(() => setCtaIndex(Math.floor(Math.random() * en.testCtas.length)), []);
   const ctaText = (language === "es" ? es.testCtas : language === "vi" ? vi.testCtas : language === "ko" ? ko.testCtas : language === "zh" ? zh.testCtas : en.testCtas)[ctaIndex];
   const isPremium = hydrated ? hasPremiumAccess() : false;
   // Non-paying people on a roll get John's "tell a friend" ask in place of a question.

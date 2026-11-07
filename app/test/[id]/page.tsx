@@ -34,7 +34,9 @@ export default function TestPage() {
 
   // Pick a rotating CTA once per page load. Both en/es lists have the same
   // length and align by index, so we pick from the active language's array.
-  const [ctaIndex] = useState(() => Math.floor(Math.random() * en.testCtas.length));
+  // Picked after mount so the server HTML and first client render match.
+  const [ctaIndex, setCtaIndex] = useState(0);
+  useEffect(() => setCtaIndex(Math.floor(Math.random() * en.testCtas.length)), []);
   const ctaText = (language === "es" ? es.testCtas : language === "vi" ? vi.testCtas : language === "ko" ? ko.testCtas : language === "zh" ? zh.testCtas : en.testCtas)[ctaIndex];
 
   const isGuest = useStore((state) => state.isGuest);

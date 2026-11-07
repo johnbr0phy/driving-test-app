@@ -276,7 +276,7 @@ export const da: TranslationKeys = {
     debriefPassSubClean: "Flot gennemløb. Bliv ved med at øve, så det sidder på prøvedagen.",
     meterBuilding: "Under opbygning",
     meterClose: "Tæt på",
-    meterReady: "Klar · 70 %+",
+    meterReady: "Klar · {{pct}} %+",
     chipCorrect: "{{score}}/{{total}} rigtige",
     chipVsFirst: "+{{n}} i forhold til første forsøg",
     chipBest: "Bedste: {{pct}} %",

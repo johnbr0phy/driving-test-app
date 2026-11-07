@@ -76,7 +76,10 @@ function DashboardContent() {
     t("dashboard.trainingNudge3"), t("dashboard.trainingNudge4"),
   ];
 
-  const [heroVariantIndex] = useState(() => Math.floor(Math.random() * 5));
+  // Picked after mount: a random pick during render differs between the
+  // server HTML and the first client render, which breaks hydration.
+  const [heroVariantIndex, setHeroVariantIndex] = useState(0);
+  useEffect(() => setHeroVariantIndex(Math.floor(Math.random() * 5)), []);
 
   // Paywall state
   const [paywallOpen, setPaywallOpen] = useState(false);

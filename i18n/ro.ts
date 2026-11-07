@@ -276,7 +276,7 @@ export const ro: TranslationKeys = {
     debriefPassSubClean: "Parcurs curat. Exersează în continuare ca să rămână fixat până la examen.",
     meterBuilding: "În progres",
     meterClose: "Aproape",
-    meterReady: "Pregătit · 70%+",
+    meterReady: "Pregătit · {{pct}}%+",
     chipCorrect: "{{score}}/{{total}} corecte",
     chipVsFirst: "+{{n}} față de prima încercare",
     chipBest: "Cel mai bun: {{pct}}%",

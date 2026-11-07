@@ -276,7 +276,7 @@ export const el: TranslationKeys = {
     debriefPassSubClean: "Καθαρή προσπάθεια. Συνέχισε την εξάσκηση για να μείνει μέχρι την εξέταση.",
     meterBuilding: "Σε εξέλιξη",
     meterClose: "Κοντά",
-    meterReady: "Έτοιμος/η · 70 %+",
+    meterReady: "Έτοιμος/η · {{pct}} %+",
     chipCorrect: "{{score}}/{{total}} σωστές",
     chipVsFirst: "+{{n}} σε σχέση με την πρώτη προσπάθεια",
     chipBest: "Καλύτερο: {{pct}} %",

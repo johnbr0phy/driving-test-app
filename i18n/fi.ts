@@ -276,7 +276,7 @@ export const fi: TranslationKeys = {
     debriefPassSubClean: "Puhdas suoritus. Jatka harjoittelua, niin osaaminen pysyy kokeeseen asti.",
     meterBuilding: "Kehittymässä",
     meterClose: "Lähellä",
-    meterReady: "Valmis · 70 %+",
+    meterReady: "Valmis · {{pct}} %+",
     chipCorrect: "{{score}}/{{total}} oikein",
     chipVsFirst: "+{{n}} ensimmäiseen yritykseen verrattuna",
     chipBest: "Paras: {{pct}} %",

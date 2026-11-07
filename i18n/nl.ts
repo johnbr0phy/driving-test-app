@@ -275,7 +275,7 @@ export const nl: TranslationKeys = {
     debriefPassSubClean: "Foutloos. Blijf oefenen zodat het scherp blijft tot het examen.",
     meterBuilding: "In opbouw",
     meterClose: "Bijna",
-    meterReady: "Klaar · 70%+",
+    meterReady: "Klaar · {{pct}}%+",
     chipCorrect: "{{score}}/{{total}} goed",
     chipVsFirst: "+{{n}} t.o.v. eerste poging",
     chipBest: "Beste: {{pct}}%",

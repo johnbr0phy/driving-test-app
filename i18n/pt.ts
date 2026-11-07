@@ -277,7 +277,7 @@ export const pt: TranslationKeys = {
     debriefPassSubClean: "Sem falhas. Continue a praticar para chegar ao exame em forma.",
     meterBuilding: "A construir",
     meterClose: "Quase",
-    meterReady: "Pronto · 70%+",
+    meterReady: "Pronto · {{pct}}%+",
     chipCorrect: "{{score}}/{{total}} certas",
     chipVsFirst: "+{{n}} face à primeira tentativa",
     chipBest: "Melhor: {{pct}}%",

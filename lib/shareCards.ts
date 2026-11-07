@@ -914,6 +914,10 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
     "color": "hsl(240, 50%, 18%)",
     "tint": "hsl(240, 60%, 96%)"
   },
+  "grinsure": {
+    "color": "hsl(170, 25%, 22%)",
+    "tint": "hsl(170, 35%, 95%)"
+  },
   "rodrpciv": {
     "color": "hsl(234, 95%, 30%)",
     "tint": "hsl(234, 80%, 96%)"

@@ -2751,7 +2751,24 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "The General Secretariat for Citizenship's exam procedure guides for written and oral candidates (April 2026) and the Ministry of Education's call for examiners of 3 March 2026, checked November 2026",
     source: { name: "PEGP exam platform, General Secretariat for Citizenship (in Greek)", url: "https://exetaseis-ithageneia.ypes.gr/" },
-  },  grsecurity: {
+  },
+  grinsure: {
+    answer:
+      "Anyone who distributes insurance in Greece, as an insurance agent, coordinator of agents, broker or an insurer's distribution staff, needs a certificate of professional knowledge from the Bank of Greece. There are three certificates: insurance agent, insurance and reinsurance broker, and insurance-based investment products (IBIPs, such as unit-linked policies), the last needed on top of the first two to sell those products. The exams are written and multiple choice. Each exam has at least 60 questions drawn from a question bank that the Bank of Greece publishes with the correct answers, and you pass by answering 90% correctly. Only the list of successful candidates is published, not scores. The syllabus follows Annex XIII of Law 4583/2018, which transposed the EU Insurance Distribution Directive, with emphasis on distribution and conduct rules. Exams are held several times a year in Athens, Thessaloniki and other cities, in Greek.",
+    rows: [
+      { label: "Run by", value: "Bank of Greece (private insurance supervision)" },
+      { label: "Certificates", value: "Insurance agent, broker, insurance-based investment products" },
+      { label: "Questions", value: "At least 60, multiple choice" },
+      { label: "Pass mark", value: "90% correct" },
+      { label: "Question bank", value: "Published by the Bank of Greece with answers" },
+      { label: "Syllabus", value: "Annex XIII of Law 4583/2018 (IDD)" },
+      { label: "Language", value: "Greek" },
+      { label: "Tigertest mock tests", value: "3 x 60 questions in Greek, 54 to pass" },
+    ],
+    basedOn: "Bank of Greece Executive Committee Act 153/2/08.01.2019 on the certification of professional knowledge for insurance distribution, Law 4583/2018 and the Bank's 2026 exam schedule as reported by the insurance press, checked November 2026",
+    source: { name: "Bank of Greece Act 153/2/2019 (text on taxheaven, in Greek)", url: "https://www.taxheaven.gr/circulars/30155/153-2-2019" },
+  },
+  grsecurity: {
     answer:
       "To work in private security in Greece you need a work permit (άδεια εργασίας) from the Hellenic Police under Law 2518/1997, and for a Category A permit (guarding, close protection, cash transport, events and port or airport screening) a vocational training certificate from ΕΟΠΠΕΠ, Greece's national qualifications body. You first complete KEMEA's 105-hour Basic Training Programme for Private Security Personnel at a contracted training centre, then sit ΕΟΠΠΕΠ's certification exam, held in several periods a year, each with its own call. The exam has a theory part, a written test of 20 equivalent multiple-choice questions drawn electronically from the published list of topics, and a practical part, an oral test in groups of three before a three-member committee; both are compulsory. The final grade runs from 1 to 20 and 10 or more is a pass. The exam is in Greek. The work permit then lasts five years and is renewed at least one month before it expires.",
     rows: [

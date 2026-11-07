@@ -38,7 +38,7 @@ import grdrivingEl from "./examTranslations/grdriving.el.json";
 import bedrivingNl from "./examTranslations/bedriving.nl.json";
 import bedrivingFr from "./examTranslations/bedriving.fr.json";
 
-export type ExamId = "ccaf" | "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "bemoto" | "bevracht" | "betoelating" | "befsmavz" | "dkteori" | "dkmoto" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "grmoto" | "grcitizen" | "grsecurity" | "rodrpciv" | "rocpi" | "rotaxi" | "roadmed" | "rorezid" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "detheorie" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl";
+export type ExamId = "ccaf" | "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "bemoto" | "bevracht" | "betoelating" | "befsmavz" | "dkteori" | "dkmoto" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "grmoto" | "grcitizen" | "grinsure" | "grsecurity" | "rodrpciv" | "rocpi" | "rotaxi" | "roadmed" | "rorezid" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "detheorie" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -10719,6 +10719,83 @@ const grsecurity: ExamConfig = {
   },
 };
 
+const grinsure: ExamConfig = {
+  id: "grinsure",
+  stateCode: "GRINSURE",
+  idBase: 25400,
+  slug: "/pistopoiisi-asfalistikon-diamesolaviton",
+  landingPath: "/el/pistopoiisi-asfalistikon-diamesolaviton",
+  name: "Πιστοποίηση Ασφαλιστικών Διαμεσολαβητών ΤτΕ",
+  shortName: "Πιστοποίηση ΤτΕ",
+  examLabel: "Εξετάσεις πιστοποίησης ΤτΕ",
+  fullName: "Πιστοποίηση επαγγελματικών γνώσεων ασφαλιστικών διαμεσολαβητών της Τράπεζας της Ελλάδος",
+  questionIdPrefix: "GRINS-",
+  icon: "umbrella",
+  testCount: 3,
+  questionsPerTest: 60,
+  passPct: 90,
+  language: "el",
+  locale: "el-GR",
+  english: {
+    name: "Bank of Greece Insurance Intermediary Certification",
+    shortName: "Greek insurance agent exam",
+    fullName: "Bank of Greece professional knowledge certification for insurance agents, brokers and insurance-based investment products, in Greek",
+  },
+  review: { el: "model" },
+  // Real exam (ΤτΕ Act 153/2/08.01.2019, ΦΕΚ Β' 27/2019, arts. 3 and 5 to 7; checked 2026-11-07):
+  // certificates for insurance agents (also coordinators and insurers' distribution staff),
+  // brokers, and insurance-based investment products; written multiple choice, at least 60
+  // questions from a question bank the Bank publishes with answers; pass with 90% correct;
+  // syllabus Annex XIII of ν. 4583/2018 (IDD). Held several times a year (2026: Athens,
+  // Thessaloniki, Heraklion, Ioannina). Duration not published in the Act. No topic weights are
+  // published: the 7/8/8/8/8/7/7/7 split is Tigertest's. Three tests of 60 (180 of 200; 20
+  // training-only), all original, written in Greek. passPct 90 = 54 of 60, the real line.
+  blueprint: {
+    grinBasics: 7,
+    grinContract: 8,
+    grinDistrib: 8,
+    grinConduct: 8,
+    grinNonlife: 8,
+    grinLife: 7,
+    grinIbip: 7,
+    grinAml: 7,
+  },
+  // Six topic sets, not testSets(): 6 + 3 tests = 9 dashboard steps. IBIP has its own set.
+  trainingSets: [
+    { setNumber: 1, id: 25401, name: "Αρχές και σύμβαση ασφάλισης", categories: ["grinBasics", "grinContract"], size: 50, weightLabel: "15 από 60 ερωτήσεις ανά τεστ" },
+    { setNumber: 2, id: 25402, name: "Διανομή και κανόνες συμπεριφοράς", categories: ["grinDistrib", "grinConduct"], size: 54, weightLabel: "16 από 60 ερωτήσεις ανά τεστ" },
+    { setNumber: 3, id: 25403, name: "Ασφαλίσεις ζημιών", categories: ["grinNonlife"], size: 26, weightLabel: "8 από 60 ερωτήσεις ανά τεστ" },
+    { setNumber: 4, id: 25404, name: "Ασφαλίσεις ζωής και υγείας", categories: ["grinLife"], size: 24, weightLabel: "7 από 60 ερωτήσεις ανά τεστ" },
+    { setNumber: 5, id: 25405, name: "Επενδυτικά ασφαλιστικά προϊόντα (IBIP)", categories: ["grinIbip"], size: 24, weightLabel: "7 από 60 ερωτήσεις ανά τεστ" },
+    { setNumber: 6, id: 25406, name: "Ξέπλυμα χρήματος, δεδομένα και δεοντολογία", categories: ["grinAml"], size: 22, weightLabel: "7 από 60 ερωτήσεις ανά τεστ" },
+  ],
+  categoryLabels: {
+    grinBasics: "Βασικές αρχές ασφάλισης και αντασφάλισης",
+    grinContract: "Η σύμβαση ασφάλισης (ν. 2496/1997)",
+    grinDistrib: "Ασφαλιστική διανομή και εποπτεία",
+    grinConduct: "Κανόνες συμπεριφοράς και πληροφόρηση",
+    grinNonlife: "Ασφαλίσεις ζημιών",
+    grinLife: "Ασφαλίσεις ζωής και υγείας",
+    grinIbip: "Επενδυτικά προϊόντα βασιζόμενα σε ασφάλιση",
+    grinAml: "Ξέπλυμα χρήματος, δεδομένα και δεοντολογία",
+  },
+  copy: {
+    guestPrompt: "για να κρατήσεις την πρόοδό σου για την πιστοποίηση και να βλέπεις κάθε λάθος σου",
+    trainingHeading: "Σετ εξάσκησης",
+    trainingSub: "Κάθε σετ καλύπτει μια ενότητα της ύλης της πιστοποίησης. Βλέπεις αμέσως αν απάντησες σωστά, και όσες ερωτήσεις έχασες ξαναέρχονται μέχρι να τις μάθεις.",
+    testsHeading: "Τεστ · 60 ερωτήσεις, 54 για επιτυχία",
+    heroSubs: [
+      "Έξι σετ εξάσκησης, τρία τεστ των 60. Ξεκίνα από τη σύμβαση ασφάλισης.",
+      "Μάθε πρώτα το σετ, μετά κάνε το τεστ.",
+      "Στα μισά. Το πολύ 6 λάθη ανά τεστ.",
+      "Ξαναδούλεψε τα λάθη σου και ξανακάνε το τεστ.",
+      "Όλα πράσινα. Είσαι έτοιμος για τις εξετάσεις της ΤτΕ.",
+    ],
+    sourceLine: "Δικές μας ερωτήσεις με βάση τον ν. 4583/2018, τον ν. 2496/1997 και τους κανονισμούς της ΕΕ, Νοέμβριος 2026. Όχι από την επίσημη τράπεζα θεμάτων της ΤτΕ.",
+    analyticsKey: "grinsure",
+  },
+};
+
 const rodrpciv: ExamConfig = {
   id: "rodrpciv",
   stateCode: "RODRPCIV",
@@ -17683,7 +17760,7 @@ const sgvl: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, nhie, cna, ptcb, phleb, ccma, cma, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, ccaf, sfadmin, phr, cisa, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, bemoto, bevracht, dkteori, dkmoto, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, grmoto, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, betoelating, befsmavz, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, grcitizen, grsecurity, semedb, dkindfoed, dkmedborger, gulfrn, inrto, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, nhie, cna, ptcb, phleb, ccma, cma, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, ccaf, sfadmin, phr, cisa, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, bemoto, bevracht, dkteori, dkmoto, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, grmoto, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, betoelating, befsmavz, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, grcitizen, grinsure, grsecurity, semedb, dkindfoed, dkmedborger, gulfrn, inrto, htl, cst, crcst];
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
 export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA, realestatePA, realestateIL, realestateOH, realestateGA, realestateNC, realestateMI, realestateVA, realestateWA, realestateAZ, realestateTN, realestateLA, insuranceNY, insurancePA, insuranceIL, insuranceOH, insuranceGA, insuranceNC, insuranceMI, insuranceNJ, insuranceVA, insuranceWA, pncNY, pncPA, pncIL, pncOH, pncGA, pncNC, pncMI, pncNJ, pncVA, pncWA];

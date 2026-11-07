@@ -310,6 +310,22 @@
       "source": "https://www.eoppep.gr/"
     },
     {
+      "exam": "grinsure",
+      "date": "2027-01-15",
+      "kind": "notice",
+      "what": "The Bank of Greece publishes its certification exam schedule and any update to the published question bank for each half-year; Act 153/2/2019 (at least 60 questions, 90% to pass) may be amended.",
+      "action": "Check the first 2027 Bank of Greece announcement for a change to the question count, the pass mark or the syllabus, and rebuild the bank if the rules changed.",
+      "source": "https://www.taxheaven.gr/circulars/30155/153-2-2019"
+    },
+    {
+      "exam": "grinsure",
+      "date": "2027-06-30",
+      "kind": "law",
+      "what": "The EU Retail Investment Strategy amends the IDD's rules on insurance-based investment products (suitability, value for money, inducements); not adopted as of November 2026.",
+      "action": "Once adopted and transposed into Law 4583/2018, rewrite the IBIP and conduct questions that it changes.",
+      "source": "https://eur-lex.europa.eu/eli/dir/2016/97/oj"
+    },
+    {
       "exam": "betoelating",
       "date": "2026-12-01",
       "kind": "outline",

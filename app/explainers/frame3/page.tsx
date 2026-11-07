@@ -11,6 +11,17 @@ import { SaNodeScene3, saNodeCues } from "@/components/mistakes/scenes/SaNode3";
 import { GliptinScene3, gliptinCues } from "@/components/mistakes/scenes/Gliptin3";
 import { Stage4, END_HOLD } from "@/components/mistakes/Stage4";
 import { CdiffScene4 } from "@/components/mistakes/scenes/Cdiff4";
+import { CdiffKhan } from "@/components/mistakes/styles/CdiffKhan";
+import { CdiffOsmosis } from "@/components/mistakes/styles/CdiffOsmosis";
+import { CdiffCartoon } from "@/components/mistakes/styles/CdiffCartoon";
+import type { MistakeExplainer } from "@/lib/mistakeExplainers";
+
+/** Whole-frame style tries (?s=khan|osmosis|cartoon), each drawing its own frame. */
+const STYLES: Record<string, Record<string, (p: { ex: MistakeExplainer; m: MistakeManifest; t: number }) => ReactNode>> = {
+  khan: { "crcst-cdiff-spores": CdiffKhan },
+  osmosis: { "crcst-cdiff-spores": CdiffOsmosis },
+  cartoon: { "crcst-cdiff-spores": CdiffCartoon },
+};
 import type { ReactNode } from "react";
 
 /** The premium pass, one explainer so far. */
@@ -37,18 +48,24 @@ export default function Frame3Page() {
   const [id, setId] = useState<string | null>(null);
   const [t, setT] = useState(0);
   const [d4, setD4] = useState(false);
+  const [style, setStyle] = useState<string | null>(null);
   useEffect(() => {
     const q = new URLSearchParams(location.search);
     setId(q.get("v"));
     setD4(q.get("d") === "4");
+    setStyle(q.get("s"));
   }, []);
   const ex = id ? mistakeExplainerById(id) : undefined;
   if (!ex) return null;
+  if (style) {
+    const Style = STYLES[style]?.[ex.id];
+    return Style ? <Frame key={ex.id + style} ex={ex} t={t} setT={setT} d4 Style={Style} /> : null;
+  }
   if (d4) return SCENES4[ex.id] ? <Frame key={ex.id + "4"} ex={ex} t={t} setT={setT} d4 /> : null;
   return SCENES3[ex.id] ? <Frame key={ex.id} ex={ex} t={t} setT={setT} /> : null;
 }
 
-function Frame({ ex, t, setT, d4 = false }: { ex: NonNullable<ReturnType<typeof mistakeExplainerById>>; t: number; setT: (t: number) => void; d4?: boolean }) {
+function Frame({ ex, t, setT, d4 = false, Style }: { ex: NonNullable<ReturnType<typeof mistakeExplainerById>>; t: number; setT: (t: number) => void; d4?: boolean; Style?: (p: { ex: MistakeExplainer; m: MistakeManifest; t: number }) => ReactNode }) {
   const loaded = useMistakeManifest(ex);
   const base = loaded === null ? estimateTimings(ex) : loaded;
   // the dark design holds an end card after the last word
@@ -66,7 +83,7 @@ function Frame({ ex, t, setT, d4 = false }: { ex: NonNullable<ReturnType<typeof 
   if (!m) return null;
   return (
     <div id="mx-frame" style={{ width: W, height: H, position: "fixed", inset: 0, zIndex: 9999 }}>
-      {d4 && s4
+      {Style ? <Style ex={ex} m={m} t={t} /> : d4 && s4
         ? <Stage4 ex={ex} m={m} t={t} Scene={s4.Scene} testLabel={s4.label} practiceLine={s4.practice} />
         : <Stage3 ex={ex} m={m} t={t} Scene={s.Scene} question={ex.question} />}
     </div>

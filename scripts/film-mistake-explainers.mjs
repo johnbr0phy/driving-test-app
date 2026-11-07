@@ -6,7 +6,8 @@
  *   node scripts/film-mistake-explainers.mjs [--base http://localhost:3000] [--fps 30] [--out dir] [--at 12.5] [--design 3] [ids...]
  *
  * --at writes one PNG at that second instead of a video (for checking a frame).
- * --design 4 films the dark design (/explainers/frame3?d=4), mixed like 3.
+ * --design 4 films the dark design (/explainers/frame3?d=4), mixed like 3;
+ * --design khan|osmosis|cartoon films a whole-frame style try (?s=<name>).
  * --design 3 films the premium pass (/explainers/frame3) and mixes the music
  * bed (ducked under the voice) and the scene's sound cues from
  * public/mistake-explainers/sfx/.
@@ -30,9 +31,11 @@ const fps = Number(opt("--fps", "30"));
 const out = resolve(opt("--out", "out/mistake-explainers"));
 const at = opt("--at", null);
 const design = opt("--design", "2");
-const route = design === "3" || design === "4" ? "frame3" : "frame";
-const routeQuery = design === "4" ? "&d=4" : "";
-const G = design === "3" || design === "4" ? "__mx3" : "__mx";
+// any other design name is a whole-frame style try: /explainers/frame3?s=<name>
+const styleTry = !["2", "3", "4"].includes(design);
+const route = design === "2" ? "frame" : "frame3";
+const routeQuery = design === "4" ? "&d=4" : styleTry ? `&s=${design}` : "";
+const G = design === "2" ? "__mx" : "__mx3";
 const ids = args.length ? args : ["dmv-double-arrow", "dmv-pennant", "part107-class-b", "part107-metar"];
 mkdirSync(out, { recursive: true });
 
@@ -64,12 +67,12 @@ for (const id of ids) {
     await frame.screenshot({ path: join(dir, `f${String(i).padStart(5, "0")}.png`) });
     if (i % (fps * 5) === 0) process.stdout.write(`\r${id}: ${(i / fps).toFixed(0)}/${duration.toFixed(0)}s`);
   }
-  const mp4 = join(out, design === "3" ? `${id}-premium.mp4` : design === "4" ? `${id}-v4.mp4` : `${id}.mp4`);
+  const mp4 = join(out, design === "3" ? `${id}-premium.mp4` : design === "2" ? `${id}.mp4` : `${id}-${design === "4" ? "v4" : design}.mp4`);
   // Audio: the voice alone, or (premium) voice + ducked music bed + cues.
   const sfx = "public/mistake-explainers/sfx";
   const audioIn = ["-i", `public/mistake-explainers/${id}.mp3`];
   let audioArgs = ["-af", "apad,loudnorm=I=-16:TP=-1.5:LRA=11,aresample=48000"];
-  if (design === "3" || design === "4") {
+  if (design !== "2") {
     audioIn.push("-i", `${sfx}/bed.mp3`);
     for (const c of cues) audioIn.push("-i", `${sfx}/${c.s}.mp3`);
     const GAIN = { pop: 0.22, pencil: 0.26, chime: 0.4 };

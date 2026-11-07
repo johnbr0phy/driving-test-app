@@ -66,6 +66,17 @@ const SYNONYMS: Record<string, string> = {
   plumbers: "plumber", welders: "welder", carpenters: "carpenter", firefighters: "firefighter", guards: "guard", banks: "bank",
 };
 
+/**
+ * One key for every way of typing the same search, for grouping them in
+ * /admin: generic words dropped, spellings folded, words sorted. "CNA
+ * practice test", "cna exam" and "exam cna" are all "cna".
+ */
+export function searchIntentKey(query: string): string {
+  const all = words(normalizeQuery(query).replace(/'s\b/g, "")).map((t) => SYNONYMS[t] ?? t);
+  const specific = all.filter((t) => !GENERIC.has(t));
+  return [...new Set(specific.length > 0 ? specific : all)].sort().join(" ");
+}
+
 /** Other spellings a term also matches in a test's text ("license" matches "licence"). */
 const FORMS: Record<string, string[]> = { license: ["license", "licence"], defense: ["defense", "defence"] };
 

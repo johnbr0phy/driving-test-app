@@ -8,7 +8,10 @@ import { getAdminDb } from "@/lib/firebase-admin";
 export async function getTrendingSearches(limit = 6, region?: string): Promise<string[]> {
   try {
     const days = Array.from({ length: 7 }, (_, i) => new Date(Date.now() - i * 86_400_000).toISOString().slice(0, 10));
-    const snap = await getAdminDb().collection("searchQueries").orderBy("count", "desc").limit(200).get();
+    // Only queries typed this week: an all-time top list would miss a new
+    // search that is trending now once the collection is large.
+    const since = new Date(Date.now() - 7 * 86_400_000).toISOString();
+    const snap = await getAdminDb().collection("searchQueries").where("lastAt", ">=", since).get();
     return snap.docs
       .map((d) => {
         const v = d.data();

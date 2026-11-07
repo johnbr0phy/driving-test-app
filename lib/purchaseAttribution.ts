@@ -18,6 +18,38 @@ export function purchaseExam(location: string | null | undefined): string {
   return "dmv";
 }
 
+// DMV checkout locations: a purchase from these unlocks the DMV's locked sets
+// and tests, so the Stripe line item names them.
+const DMV_LOCATIONS = new Set(["training_set_4", "practice_test_4", "stats_page", "full_stats", "test_hub"]);
+
+/**
+ * The name and description on the Stripe Checkout line item, from the
+ * checkout location, so a buyer who came from one exam's stats sees that exam
+ * and not the DMV. Every line stays true for any buyer: Premium is the one
+ * purchase and unlocks every locked test, drill and stat on Tigertest.
+ * Locations shared by every exam ("results_page", "drill", "upgrade_page")
+ * get the generic line.
+ */
+export function checkoutLineItem(location: string | null | undefined): { name: string; description: string } {
+  const name = "Tigertest Premium";
+  const loc = location ?? "";
+  if (DMV_LOCATIONS.has(loc)) {
+    return { name, description: "One-time payment. Unlocks DMV Training Sets 3-4 and Practice Tests 3-4, plus full stats on every exam on Tigertest." };
+  }
+  const v2 = EXAMS_V2.find((e) => loc.startsWith(`${e.id}_`));
+  const v1 = v2 ? undefined : EXAMS.find((e) => loc.startsWith(`${e.id}_`));
+  const exam = v2 ?? v1;
+  if (exam) {
+    const short = exam.english?.shortName ?? exam.shortName;
+    const where = loc.slice(exam.id.length + 1);
+    if (v1 || where === "stats") {
+      return { name, description: `One-time payment. Unlocks your full ${short} stats, plus every other locked stat and test on Tigertest.` };
+    }
+    return { name, description: `One-time payment. Unlocks every ${short} practice test and drill, plus every other locked stat and test on Tigertest.` };
+  }
+  return { name, description: "One-time payment. Unlocks every locked test, drill and stat on Tigertest, on every exam." };
+}
+
 const FEATURE_LABELS: Record<string, string> = {
   // The checkout location names the fourth set and test, but the dashboard
   // sends it for the third too (both are locked).

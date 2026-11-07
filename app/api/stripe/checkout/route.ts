@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { getStripe, PREMIUM_PRICE_ID, PREMIUM_PRODUCT } from '@/lib/stripe';
+import { getStripe } from '@/lib/stripe';
+import { checkoutLineItem } from '@/lib/purchaseAttribution';
 import { getAdminDb, getAdminAuth } from '@/lib/firebase-admin';
 import { isPaywallVariant } from '@/lib/paywallTestIds';
 import { premiumPriceFor, stripeUnitAmount } from '@/lib/pricing';
@@ -79,9 +80,13 @@ export async function POST(request: NextRequest) {
     const baseUrl = returnUrl || process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000';
 
     // Charge in the buyer's currency, the price the paywall showed them
-    // (lib/pricing.ts, both from the IP country). Dollars keep the Stripe price.
+    // (lib/pricing.ts, both from the IP country). Every currency, dollars
+    // included, is priced inline so the line item can name the exam the buyer
+    // came from (checkoutLineItem); the Stripe product's own description is
+    // the same for everyone, so it is not used.
     const country = visitorCountry(request);
     const price = premiumPriceFor(country);
+    const lineItem = checkoutLineItem(typeof location === 'string' ? location : null);
 
     // Create Checkout Session
     const session = await stripe.checkout.sessions.create({
@@ -89,19 +94,14 @@ export async function POST(request: NextRequest) {
       mode: 'payment',
       payment_method_types: ['card'],
       line_items: [
-        PREMIUM_PRICE_ID && price.currency === 'usd'
-          ? { price: PREMIUM_PRICE_ID, quantity: 1 }
-          : {
-              price_data: {
-                currency: price.currency,
-                unit_amount: stripeUnitAmount(price),
-                product_data: {
-                  name: PREMIUM_PRODUCT.name,
-                  description: PREMIUM_PRODUCT.description,
-                },
-              },
-              quantity: 1,
-            },
+        {
+          price_data: {
+            currency: price.currency,
+            unit_amount: stripeUnitAmount(price),
+            product_data: lineItem,
+          },
+          quantity: 1,
+        },
       ],
       success_url: `${baseUrl}${returnPath}?session_id={CHECKOUT_SESSION_ID}&success=true`,
       cancel_url: `${baseUrl}${returnPath}?canceled=true`,

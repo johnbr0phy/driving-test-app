@@ -2495,6 +2495,62 @@
     --brand-gradient-to: 200 50% 95%;
   }
 
+  /* Finland motorcycle theory test theme */
+  [data-theme="fimoto"] {
+    --brand: 12 70% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 12 60% 95%;
+    --brand-hover: 12 70% 18%;
+    --brand-dark: 12 70% 16%;
+    --brand-darker: 12 65% 11%;
+    --brand-muted: 12 35% 70%;
+    --brand-border: 12 35% 80%;
+    --brand-border-light: 12 30% 89%;
+    --brand-gradient-to: 30 50% 95%;
+  }
+
+  /* Finland truck and bus theory test theme */
+  [data-theme="fitruck"] {
+    --brand: 35 40% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 35 45% 95%;
+    --brand-hover: 35 40% 14%;
+    --brand-dark: 35 40% 12%;
+    --brand-darker: 35 40% 8%;
+    --brand-muted: 35 25% 68%;
+    --brand-border: 35 25% 80%;
+    --brand-border-light: 35 25% 89%;
+    --brand-gradient-to: 45 50% 95%;
+  }
+
+  /* Finland Hygiene Passport test theme */
+  [data-theme="fihygiene"] {
+    --brand: 172 90% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 172 50% 95%;
+    --brand-hover: 172 90% 18%;
+    --brand-dark: 172 90% 15%;
+    --brand-darker: 172 85% 10%;
+    --brand-muted: 172 30% 68%;
+    --brand-border: 172 35% 80%;
+    --brand-border-light: 172 30% 89%;
+    --brand-gradient-to: 150 40% 95%;
+  }
+
+  /* Finland hunter's examination (metsästäjätutkinto) theme */
+  [data-theme="fihunt"] {
+    --brand: 75 60% 20%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 75 45% 95%;
+    --brand-hover: 75 60% 16%;
+    --brand-dark: 75 60% 13%;
+    --brand-darker: 75 60% 8%;
+    --brand-muted: 75 25% 60%;
+    --brand-border: 75 25% 76%;
+    --brand-border-light: 75 30% 88%;
+    --brand-gradient-to: 40 70% 92%;
+  }
+
   /* Greece driving theory theme */
   [data-theme="grdriving"] {
     --brand: 210 55% 46%;
@@ -6471,6 +6527,51 @@
     --brand-muted: 224 35% 45%;
     --brand-dark: 224 100% 65%;
     --brand-darker: 224 95% 78%;
+  }
+
+  .dark [data-theme="fimoto"] {
+    --brand: 12 70% 47.7%;
+    --brand-hover: 12 70% 39.7%;
+    --brand-light: 12 45% 13%;
+    --brand-gradient-to: 30 40% 11%;
+    --brand-border-light: 12 30% 24%;
+    --brand-border: 12 35% 34%;
+    --brand-muted: 12 35% 45%;
+    --brand-dark: 12 70% 65%;
+    --brand-darker: 12 65% 78%;
+  }
+  .dark [data-theme="fitruck"] {
+    --brand: 35 40% 40.8%;
+    --brand-hover: 35 40% 32.8%;
+    --brand-light: 35 45% 13%;
+    --brand-gradient-to: 45 40% 11%;
+    --brand-border-light: 35 25% 24%;
+    --brand-border: 35 25% 34%;
+    --brand-muted: 35 25% 45%;
+    --brand-dark: 35 40% 65%;
+    --brand-darker: 35 40% 78%;
+  }
+  .dark [data-theme="fihygiene"] {
+    --brand: 172 90% 27.2%;
+    --brand-hover: 172 90% 19.2%;
+    --brand-light: 172 45% 13%;
+    --brand-gradient-to: 150 40% 11%;
+    --brand-border-light: 172 30% 24%;
+    --brand-border: 172 35% 34%;
+    --brand-muted: 172 30% 45%;
+    --brand-dark: 172 90% 65%;
+    --brand-darker: 172 85% 78%;
+  }
+  .dark [data-theme="fihunt"] {
+    --brand: 75 60% 30.8%;
+    --brand-hover: 75 60% 22.8%;
+    --brand-light: 75 45% 13%;
+    --brand-gradient-to: 40 40% 11%;
+    --brand-border-light: 75 30% 24%;
+    --brand-border: 75 25% 34%;
+    --brand-muted: 75 25% 45%;
+    --brand-dark: 75 60% 65%;
+    --brand-darker: 75 60% 78%;
   }
 
   .dark [data-theme="grdriving"] {

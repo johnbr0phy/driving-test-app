@@ -52,6 +52,8 @@ import dkteoriDa from "@/lib/landings/dkteori.da.json";
 import dkindfoedDa from "@/lib/landings/dkindfoed.da.json";
 import dkmedborgerDa from "@/lib/landings/dkmedborger.da.json";
 import dkjagtDa from "@/lib/landings/dkjagt.da.json";
+import fitheoryFi from "@/lib/landings/fitheory.fi.json";
+import fihuntFi from "@/lib/landings/fihunt.fi.json";
 import sehpSv from "@/lib/landings/sehp.sv.json";
 
 const LANDINGS: Record<string, TranslatedLandingContent> = {
@@ -77,6 +79,8 @@ const LANDINGS: Record<string, TranslatedLandingContent> = {
   "dkindfoed.da": dkindfoedDa as TranslatedLandingContent,
   "dkmedborger.da": dkmedborgerDa as TranslatedLandingContent,
   "dkjagt.da": dkjagtDa as TranslatedLandingContent,
+  "fitheory.fi": fitheoryFi as TranslatedLandingContent,
+  "fihunt.fi": fihuntFi as TranslatedLandingContent,
   "sehp.sv": sehpSv as TranslatedLandingContent,
 };
 

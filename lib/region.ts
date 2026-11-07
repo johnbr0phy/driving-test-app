@@ -42,7 +42,7 @@ export const REGIONS: { code: Region; name: string; short: string; inName: strin
   { code: "DK", name: "Denmark", short: "DK", inName: "Denmark", lang: "da", locale: "da-DK" },
   { code: "HU", name: "Hungary", short: "HU", inName: "Hungary", lang: "en", locale: "en-HU" },
   { code: "BE", name: "Belgium", short: "BE", inName: "Belgium", lang: "nl", locale: "nl-BE" },
-  { code: "FI", name: "Finland", short: "FI", inName: "Finland", lang: "en", locale: "en-FI" },
+  { code: "FI", name: "Finland", short: "FI", inName: "Finland", lang: "fi", locale: "fi-FI" },
   { code: "MT", name: "Malta", short: "MT", inName: "Malta", lang: "en", locale: "en-MT" },
   { code: "DE", name: "Germany", short: "DE", inName: "Germany", lang: "de", locale: "de-DE" },
 ];
@@ -125,7 +125,7 @@ const TEST_REGIONS: Record<string, TestRegion> = {
   phnle: "PH", phmedtech: "PH", phpharm: "PH", phmidwife: "PH", phpsychom: "PH", phnapolcom: "PH", afpsat: "PH", phcle: "PH", phinsurance: "PH", phrebroker: "PH",
   sgftt: "SG", sgrtt: "SG", sgres: "SG", sgm5: "SG", sgvl: "SG", hkiiqe1: "HK", hklesfi1: "HK", aesira: "AE", mypce: "MY", kenck: "KE",
   detheorie: "DE", demotorrad: "DE", deaevo: "DE", de34a: "DE", deheilpr: "DE",
-  esdgt: "ES", escapcond: "ES", espolicia: "ES", esguardia: "ES", esvigilante: "ES", ptimt: "PT", ptmoto: "PT", ptcam: "PT", pttvde: "PT", ptvigil: "PT", rodrpciv: "RO", setrafik: "SE", semoto: "SE", sejakt: "SE", semedb: "SE", sehp: "SE", grdriving: "GR", dkteori: "DK", dkmoto: "DK", dkindfoed: "DK", dkmedborger: "DK", dkjagt: "DK", hukresz: "HU", bedriving: "BE", fitheory: "FI", mttheory: "MT", mtmoto: "MT", mtcpc: "MT", mttaxi: "MT", mtguard: "MT",
+  esdgt: "ES", escapcond: "ES", espolicia: "ES", esguardia: "ES", esvigilante: "ES", ptimt: "PT", ptmoto: "PT", ptcam: "PT", pttvde: "PT", ptvigil: "PT", rodrpciv: "RO", setrafik: "SE", semoto: "SE", sejakt: "SE", semedb: "SE", sehp: "SE", grdriving: "GR", dkteori: "DK", dkmoto: "DK", dkindfoed: "DK", dkmedborger: "DK", dkjagt: "DK", hukresz: "HU", bedriving: "BE", fitheory: "FI", fimoto: "FI", fitruck: "FI", fihygiene: "FI", fihunt: "FI", mttheory: "MT", mtmoto: "MT", mtcpc: "MT", mttaxi: "MT", mtguard: "MT",
   jambeng: "NG", jambmath: "NG", jambbio: "NG", jambchem: "NG", jambphys: "NG",
   ngpolice: "NG", cdcfib: "NG", ngarmy: "NG", ngcustoms: "NG", trcnpqe: "NG",
   inrto: "IN", ssccgl: "IN", rrbntpc: "IN", ibpspo: "IN", ctet: "IN",
@@ -145,6 +145,7 @@ export const NON_DRIVING_TESTS = new Set([
   "mttaxi", "mtguard",
   "deaevo", "de34a", "deheilpr",
   "sejakt", "semedb", "sehp",
+  "fihygiene", "fihunt",
   "dkindfoed", "dkmedborger", "dkjagt",
   "timestables", "ks2", "gcsemaths", "uksia", "uk18ed",
   "gcsehigher", "gcsescience", "gcsecs", "elevenplus", "fsmaths", "cscs", "ukfood", "ukaplh", "ukfaw", "ukcare", "uklitu", "uknmc", "ukseru", "aatl2", "cemap",
@@ -376,13 +377,14 @@ export const REGION_HOME: Record<Exclude<Region, "US">, {
     testsSub: "200 vragen in het Engels over de Belgische Wegcode, in km/u en voor rechtsverkeer. Vier volledige toetsen van 50 vragen, 41 om te slagen.",
   },
 
+  // In Finnish (REGIONS[].lang), machine-written, pending native review.
   FI: {
-    title: "Free Finland Driving Theory Test Practice in English | Tigertest",
-    description: "Free practice in English for the Finnish category B theory test (teoriakoe): 200 original questions on Finnish traffic rules and signs, every answer explained. No account needed.",
-    lead: "Practise in English for the Finnish theory test, the first step to a category B licence. Original questions on giving way, signs, parking and winter driving, every answer explained. No signup.",
-    cta: { label: "Finnish theory test", href: "/finland-driving-theory-test" },
-    testsTitle: "Category B theory test",
-    testsSub: "200 questions on the Finnish Road Traffic Act, in km/h for right-hand traffic. Four full 50-question tests, 43 to pass.",
+    title: "Ilmainen ajokortin teoriakoe ja harjoituskokeet suomeksi | Tigertest",
+    description: "Ilmaiset harjoituskokeet suomalaisiin kokeisiin: B-ajokortin teoriakoe, moottoripyörän sekä kuorma- ja linja-auton teoriakokeet, hygieniapassitesti ja metsästäjätutkinto. Omat kysymykset, jokainen vastaus selitetty. Ei tiliä.",
+    lead: "Harjoittele ilmaiseksi Traficomin ajokortin teoriakokeeseen ja metsästäjätutkintoon suomeksi sekä moottoripyörän, kuorma- ja linja-auton teoriakokeisiin ja hygieniapassitestiin englanniksi. Omat kysymykset, jokainen vastaus selitetty. Ei rekisteröitymistä.",
+    cta: { label: "Ajokortin teoriakoe", href: "/fi/ajokortin-teoriakoe" },
+    testsTitle: "Harjoituskokeet Suomeen",
+    testsSub: "B-ajokortin teoriakoe: 200 kysymystä Suomen tieliikennelaista, km/h ja oikeanpuoleinen liikenne, neljä 50 kysymyksen harjoituskoetta ja tavoitteena 43 oikein. Lisäksi moottoripyörän (A1, A2, A) sekä kuorma- ja linja-auton (C, CE, D, DE) teoriakokeet ja hygieniapassitesti englanniksi sekä metsästäjätutkinto suomeksi.",
   },
   // Written in German (REGIONS[].lang). The CTA shows once detheorie is in
   // the catalog (HomePage hides a CTA whose test is not listed yet).

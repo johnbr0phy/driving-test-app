@@ -866,6 +866,18 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
     "color": "hsl(224, 100%, 26%)",
     "tint": "hsl(224, 80%, 96%)"
   },
+  "fimoto": {
+    "color": "hsl(12, 70%, 22%)",
+    "tint": "hsl(12, 80%, 96%)"
+  },
+  "fitruck": {
+    "color": "hsl(35, 40%, 18%)",
+    "tint": "hsl(35, 80%, 96%)"
+  },
+  "fihygiene": {
+    "color": "hsl(172, 90%, 22%)",
+    "tint": "hsl(172, 80%, 96%)"
+  },
   "grdriving": {
     "color": "hsl(210, 55%, 46%)",
     "tint": "hsl(210, 55%, 96%)"

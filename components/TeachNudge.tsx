@@ -27,6 +27,8 @@ const TEACHER_LED = new Set([
   "sejakt", "semedb", "sehp",
   // Denmark: jagttegnskurser, and language school (sprogcenter) courses for the citizenship and residence tests
   "dkjagt", "dkindfoed", "dkmedborger",
+  // Finland: Hygiene Passport courses, metsästäjävalmennuskurssit
+  "fihygiene", "fihunt",
   // Malta: approved taxi training providers and private guard course providers
   "mttaxi", "mtguard",
   // Healthcare programs

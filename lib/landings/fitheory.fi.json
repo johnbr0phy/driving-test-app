@@ -1,0 +1,109 @@
+{
+  "metaTitle": "Ajokortin teoriakoe 2026 - Harjoittele B-teoriakoetta ilmaiseksi",
+  "metaDescription": "Harjoittele B-luokan ajokortin teoriakoetta ilmaiseksi: 200 omaa kysymystä suomeksi tieliikennelaista, väistämisestä, ohittamisesta, pysäköinnistä, liikennemerkeistä ja talvirenkaista, jokainen vastaus selitetty. Neljä 50 kysymyksen harjoituskoetta, ei rekisteröitymistä.",
+  "keywords": "teoriakoe, ajokortin teoriakoe, teoriakoe harjoittelu, teoriakoe kysymykset, b-teoriakoe, teoriakoe 2026, ajokorttikoe, kuljettajantutkinto, ajovarma teoriakoe, liikennemerkit harjoitus",
+  "breadcrumb": {
+    "home": "Etusivu",
+    "allTests": "Kaikki testit",
+    "current": "Ajokortin teoriakoe"
+  },
+  "h1": "Ajokortin teoriakoe 2026, harjoittele ilmaiseksi",
+  "subtitle": "200 omaa harjoituskysymystä suomeksi B-luokan teoriakokeen aiheista: oikeanpuoleisen sääntö ja väistäminen, ohittaminen, pysäköinti, Suomen keltapohjaiset varoitusmerkit, talvirenkaat ja paljon muuta. Neljä 50 kysymyksen harjoituskoetta, jokainen vastaus selitetty. Tehty puhelimelle, ei rekisteröitymistä.",
+  "facts": {
+    "h2": "B-luokan teoriakoe lyhyesti",
+    "answer": "B-luokan teoriakoe tehdään tabletilla Ajovarman palvelupisteessä, ja sen järjestää Traficomin puolesta A-Katsastus. Kokeessa on kolme osaa, joihin on aikaa yhteensä 30 minuuttia: 15 monivalintakysymystä, 50 liikennetilannekuvaa koskevaa kysymystä ja 5 riskientunnistamistehtävää. Jokaisesta osasta on saatava vähintään vaadittu määrä oikein (11, 43 ja 4). Kokeen voi tehdä suomeksi, ruotsiksi tai englanniksi, ja joissakin tapauksissa suullisena, jolloin aikaa on 60 minuuttia. Teoriakokeen voi suorittaa kuukautta ennen ajokortin ikärajan täyttymistä, tavallisesti 18 vuotta. Hyväksytty teoriakoe on voimassa vuoden, ja se suoritetaan ennen ajokoetta.",
+    "tigertest": "Tigertestissä on 200 omaa harjoituskysymystä suomeksi, kaikki ilmaiseksi ja ilman rekisteröitymistä. Kysymykset on kirjoitettu tieliikennelain ja Traficomin teoriakoetta koskevien sääntöjen pohjalta, eikä niitä ole kopioitu oikeasta kokeesta. Tigertest ei ole Traficomin, Ajovarman tai A-Katsastuksen palvelu.",
+    "rows": [
+      { "label": "Järjestäjä", "value": "Traficom, Ajovarman (A-Katsastus) palvelupisteet" },
+      { "label": "Osat", "value": "15 monivalintaa, 50 liikennetilannekuvaa, 5 riskientunnistamistehtävää" },
+      { "label": "Hyväksytty", "value": "11/15, 43/50 ja 4/5, jokainen osa erikseen" },
+      { "label": "Aika", "value": "30 minuuttia (suullisessa kokeessa 60)" },
+      { "label": "Kielet", "value": "Suomi, ruotsi, englanti" },
+      { "label": "Voimassa", "value": "Vuoden hyväksymisestä" },
+      { "label": "Tigertestin harjoituskokeet", "value": "4 x 50 kysymystä, tavoite 86 %" },
+      { "label": "Ikäraja (henkilöauto)", "value": "18 vuotta (17 ikärajapoikkeusluvalla)" }
+    ],
+    "footnote": "Perustuu Traficomin määräykseen kuljettajantutkinnon teoriakokeesta (TRAFICOM/523973/03.04.03.00/2019), Traficomin kuljettajantutkintoa ja ajokorttilain muutosta koskeviin sivuihin sekä tieliikennelakiin 729/2018 huhtikuun 2026 ajantasaisena versiona, tarkistettu marraskuussa 2026. Säännöt muuttuvat, joten tarkista ajantasaiset tiedot lähteestä",
+    "source": { "name": "Traficom: Kuljettajantutkinto", "url": "https://traficom.fi/en/drivers-and-vehicles/driving-licenses/driving-examination" }
+  },
+  "howItWorks": {
+    "h2": "Näin se toimii",
+    "cards": [
+      {
+        "h3": "Harjoittele aiheittain",
+        "p": "Viisi harjoitussarjaa: väistäminen ja risteykset, nopeus, kaistat ja ohittaminen, liikennemerkit ja tiemerkinnät, pysäköinti ja muut tienkäyttäjät sekä kuljettaja, auto ja talvi. Väärin menneet kysymykset palaavat, kunnes osaat ne."
+      },
+      {
+        "h3": "Täydet harjoituskokeet",
+        "p": "Neljä 50 kysymyksen harjoituskoetta, tavoitteena 43 oikein, sama osuus kuin oikean kokeen kuvaosassa. Mikään kysymys ei toistu kokeesta toiseen, ja jokainen vastaus selittää säännön ja tavallisimman virheen."
+      }
+    ]
+  },
+  "topics": {
+    "h2": "Perustuu tieliikennelakiin",
+    "p": "Jokainen kysymys on kirjoitettu tieliikennelain 729/2018 pohjalta sellaisena kuin se on voimassa marraskuussa 2026, mukaan lukien 29.5.2026 voimaan tullut ajokorttilain muutos. Liikennemerkit ja liikennetilanteet kuvataan sanoin, nopeudet km/h ja etäisyydet metreinä. Traficom ei julkaise aiheiden painotuksia, joten jakauma on Tigertestin oma, ja väistäminen ja liikennemerkit painavat eniten. Oikean kokeen kuva- ja riskientunnistamistehtävissä on valokuvia ja videoita; Tigertest harjoittaa niiden taustalla olevia sääntöjä.",
+    "items": [
+      "Liikennemerkit (16 %)",
+      "Väistäminen ja risteykset (14 %)",
+      "Ohittaminen ja kohtaaminen (12 %)",
+      "Nopeus, kaistat ja moottoritiet (10 %)",
+      "Pysähtyminen ja pysäköinti (10 %)",
+      "Jalankulkijat, pyöräilijät ja muut tienkäyttäjät (10 %)",
+      "Kuljettaja, alkoholi ja ajokorttisäännöt (10 %)",
+      "Ajoneuvo, talvi ja turvavarusteet (10 %)",
+      "Tiemerkinnät, liikennevalot ja poliisin merkit (8 %)"
+    ]
+  },
+  "howToPass": {
+    "h2": "Näin pääset teoriakokeesta läpi",
+    "steps": [
+      {
+        "h3": "1. Hallitse oikeanpuoleisen sääntö ja sen poikkeukset",
+        "p": "Merkitsemättömässä risteyksessä väistät oikealta tulevaa. Pysäköintialueelta, pihasta, huoltoasemalta, pihakadulta, pyörätieltä tai moottorikelkkailureitiltä tielle tuleva väistää aina kaikkia. Liikennemerkit menevät oikeanpuoleisen säännön edelle ja liikennevalot merkkien edelle, ja liikenteenohjaajan merkit menevät kaiken muun edelle."
+      },
+      {
+        "h3": "2. Opettele Suomen omat merkit ja värit",
+        "p": "Suomessa varoitusmerkeissä ja useimmissa kielto- ja rajoitusmerkeissä on keltainen pohja. Vastakkaiset ajosuunnat erottavat keltaiset viivat ja samaan suuntaan kulkevat kaistat valkoiset. Opettele myös hirvi- ja porovaroitukset, pihakatu, kävelykatu ja pyöräkatu."
+      },
+      {
+        "h3": "3. Muista numerot",
+        "p": "Yleisrajoitus on 50 km/h taajamassa ja 80 km/h sen ulkopuolella, pihakadulla enintään 20 km/h. Pysähtyminen on kielletty 5 metriä lähempänä suojatietä tai risteystä, pysäköinti 30 metriä lähempänä tasoristeystä. Rattijuopumus alkaa 0,5 promillesta, törkeä 1,2 promillesta. Talvirenkaat ovat pakolliset marraskuusta maaliskuuhun, kun keli niin vaatii, kuviosyvyys vähintään 3,0 mm."
+      },
+      {
+        "h3": "4. Tähtää vähintään 43 oikeaan",
+        "p": "Oikeassa kokeessa jokainen osa on läpäistävä erikseen. Tigertest seuraa osaamistasi aiheittain: kertaa väärin menneet kysymykset, harjoittele heikointa sarjaa uudelleen ja tee neljä harjoituskoetta, kunnes saat jokaisesta reilusti yli 43 oikein."
+      }
+    ]
+  },
+  "faqTitle": "Usein kysyttyä B-luokan teoriakokeesta",
+  "faqs": [
+    {
+      "q": "Mitä B-luokan teoriakokeessa on?",
+      "a": "Teoriakoe tehdään tabletilla Ajovarman palvelupisteessä, ja siinä on kolme osaa: 15 monivalintakysymystä, 50 liikennetilannekuvaa koskevaa kysymystä ja 5 riskientunnistamistehtävää. Aikaa on 30 minuuttia. Jokaisella osalla on oma hyväksymisrajansa: vähintään 11/15, 43/50 ja 4/5, kuten Traficom on määrännyt. Jos yksikin osa jää alle rajan, koe hylätään."
+    },
+    {
+      "q": "Millä kielillä teoriakokeen voi tehdä?",
+      "a": "Traficomin mukaan kokeen kielet ovat suomi, ruotsi ja englanti. Jos äidinkielesi ei ole mikään näistä etkä osaa niitä hyvin, voit saada suullisen kokeen, johon on aikaa 60 minuuttia, ja joissakin tapauksissa tulkin. Tigertestissä sama harjoitus on myös englanniksi, jos haluat harjoitella sillä kielellä."
+    },
+    {
+      "q": "Miten Tigertestin harjoitus vastaa oikeaa koetta?",
+      "a": "Tigertestin neljässä harjoituskokeessa on kussakin 50 monivalintakysymystä, ja 86 %:n tavoite (43/50) vastaa oikean kokeen kuvaosassa vaadittua osuutta. Oikean kokeen kuva- ja riskientunnistamistehtävissä on valokuvia ja videoita; Tigertest kuvaa samat liikennetilanteet sanoin, joten se harjoittaa sääntöjä mutta ei kuvien lukemista. Läpäise kaikki neljä harjoituskoetta reilusti ennen kuin varaat kokeen."
+    },
+    {
+      "q": "Mikä muuttui nuorille kuljettajille vuonna 2026?",
+      "a": "Muutettu ajokorttilaki tuli voimaan 29.5.2026. Ikärajapoikkeusluvalla ajokortin saanut 17-vuotias ei saa kuljettaa B-luokan ajoneuvoa kello 00.00 ja 05.00 välillä, ja 1.10.2026 alkaen 17-vuotiaan kuljettamassa henkilöautossa on oltava alaikäisen kuljettajan tunnus. Riskientunnistamisen koulutus kasvoi 1.10.2026 alkaen 8 tunnista 12 tuntiin. Tavallinen B-luokan ikäraja on 18 vuotta."
+    },
+    {
+      "q": "Ovatko nämä oikean kokeen kysymyksiä?",
+      "a": "Eivät. Jokainen kysymys on Tigertestin oma, kirjoitettu tieliikennelain ja Traficomin teoriakoetta koskevien sääntöjen pohjalta, joten se mittaa samaa osaamista kopioimatta yhtään virallista kysymystä. Liikennemerkit ja liikennetilanteet kuvataan sanoin, joten opettele myös merkkien kuvat. Harjoittelu on ilmaista, Tigertest ei ole Traficomin, Ajovarman tai A-Katsastuksen palvelu, eikä sillä voi varata koetta tai korvata sitä."
+    },
+    {
+      "q": "Onko Tigertestin harjoittelu ilmaista?",
+      "a": "On. Kaikki neljä harjoituskoetta ja viisi harjoitussarjaa ovat ilmaisia, eikä tiliä tarvita. Luo ilmainen tili, jos haluat tallentaa edistymisesi puhelimeen ja tietokoneelle."
+    }
+  ],
+  "finalCta": {
+    "h2": "Valmis teoriakokeeseen?",
+    "p": "Aloita ilmaiseksi. Ei rekisteröitymistä. 200 kysymystä Suomen liikennesäännöistä."
+  }
+}

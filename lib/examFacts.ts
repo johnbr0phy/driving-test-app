@@ -2641,6 +2641,71 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Traficom regulation on the driving theory test (TRAFICOM/523973/03.04.03.00/2019), Traficom's driving examination page and Driving Licence Act reform page, and the Road Traffic Act 729/2018 as consolidated to April 2026, checked November 2026",
     source: { name: "Traficom: Driving examination", url: "https://traficom.fi/en/drivers-and-vehicles/driving-licenses/driving-examination" },
   },
+  fimoto: {
+    answer:
+      "The Finnish motorcycle theory test (teoriakoe) for categories A1, A2 and A is taken on a tablet at an Ajovarma service point, run for Traficom by A-Katsastus. It has three parts in 30 minutes: 20 multiple choice questions, 50 picture questions about traffic situations and 5 risk recognition questions, and you must reach the minimum in each part (14, 43 and 4). The test is offered in Finnish, Swedish and English, with an oral test of 60 minutes in some cases. A passed theory test is valid for one year; a handling test and a driving test follow. A1 is open from 16, A2 from 18 and A from 24, or 20 after two years on A2.",
+    rows: [
+      { label: "Run by", value: "Traficom, at Ajovarma (A-Katsastus) service points" },
+      { label: "Format", value: "20 multiple choice, 50 traffic picture questions, 5 risk recognition" },
+      { label: "Pass marks", value: "14 of 20, 43 of 50 and 4 of 5, each part separately" },
+      { label: "Time", value: "30 minutes (60 for an oral test)" },
+      { label: "Languages", value: "Finnish, Swedish, English" },
+      { label: "Valid for", value: "One year after passing" },
+      { label: "Then", value: "Handling test and driving test" },
+      { label: "Minimum age", value: "A1 16, A2 18, A 24 (20 after two years on A2)" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions, 86% target" },
+    ],
+    basedOn: "Traficom regulation on the driving theory test (TRAFICOM/523973/03.04.03.00/2019), Traficom's driving examination, motorcycle licence and upgrade pages, and the Road Traffic Act 729/2018 as consolidated to April 2026, checked November 2026",
+    source: { name: "Traficom: Driving examination", url: "https://traficom.fi/en/drivers-and-vehicles/driving-licenses/driving-examination" },
+  },
+  fitruck: {
+    answer:
+      "The Finnish theory test for truck and bus categories C, CE, D and DE (teoriakoe) is taken on a tablet at an Ajovarma service point, run for Traficom by A-Katsastus. It has three parts in 30 minutes: 20 multiple choice questions, 30 picture questions about traffic situations and 5 risk recognition questions, and you must reach the minimum in each part (14, 26 and 4). Traficom's rules name Finnish, Swedish and English as the test languages; check the language for your category when you book. You need a valid category B licence, and you can take the test one month before the minimum age (21 for C and CE, or 18 with a basic professional qualification; 24 for D and DE). A passed theory test is valid for one year. Drivers in commercial transport also need professional competence (code 95).",
+    rows: [
+      { label: "Run by", value: "Traficom, at Ajovarma (A-Katsastus) service points" },
+      { label: "Format", value: "20 multiple choice, 30 traffic picture questions, 5 risk recognition" },
+      { label: "Pass marks", value: "14 of 20, 26 of 30 and 4 of 5, each part separately" },
+      { label: "Time", value: "30 minutes (60 for an oral test)" },
+      { label: "Languages", value: "Finnish, Swedish, English (check for your category)" },
+      { label: "Valid for", value: "One year after passing" },
+      { label: "Minimum age", value: "C and CE 21 (18 with a professional qualification), D and DE 24" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions, 80% target" },
+    ],
+    basedOn: "Traficom regulation on the driving theory test (TRAFICOM/523973/03.04.03.00/2019), Traficom's driving examination, lorry licence and bus licence pages, the Road Traffic Act 729/2018 and EU Regulation 561/2006 as amended, checked November 2026",
+    source: { name: "Traficom: Driving examination", url: "https://traficom.fi/en/drivers-and-vehicles/driving-licenses/driving-examination" },
+  },
+  fihygiene: {
+    answer:
+      "The Finnish Hygiene Passport test (hygieniapassitesti) proves basic food hygiene knowledge. Anyone who handles unpackaged, easily perishable food on food premises, in cafes, restaurants, shops or food factories, needs a Hygiene Passport once they have done such work for three months. The test has 40 statements, each marked true or false, in 45 minutes, and you need at least 34 correct answers to pass. It covers microbes and contamination, food poisoning and hygienic working methods, personal hygiene, cleaning, self-monitoring, and food law and authorities. The normal test is on paper in Finnish, Swedish or English; an oral test, an interpreter or another language can be arranged with the examiner in advance. Tests are held by examiners approved by Ruokavirasto (the Finnish Food Authority), who issue the passport as a certificate and a card. Hygiene certificates from other countries are not accepted in Finland.",
+    rows: [
+      { label: "Set by", value: "Ruokavirasto (Finnish Food Authority)" },
+      { label: "Held by", value: "Examiners approved by Ruokavirasto" },
+      { label: "Format", value: "40 true/false statements, on paper" },
+      { label: "Pass mark", value: "34 of 40 correct" },
+      { label: "Time", value: "45 minutes (no limit in a special situation test)" },
+      { label: "Languages", value: "Finnish, Swedish, English; others by arrangement" },
+      { label: "Who needs it", value: "Anyone handling unpackaged perishable food, within 3 months" },
+      { label: "Tigertest mock tests", value: "5 x 40 questions, 85% (34 of 40)" },
+    ],
+    basedOn: "Ruokavirasto regulation 7/2021 on hygiene proficiency, the Food Act 297/2021 (sections 19 and 20) and hygieniapassi.fi, checked November 2026",
+    source: { name: "Ruokavirasto: Hygiene Passport", url: "https://www.ruokavirasto.fi/en/foodstuffs/hygiene-passport/" },
+  },
+  fihunt: {
+    answer:
+      "The Finnish hunter's examination (metsästäjätutkinto) must be passed before you pay the game management fee (riistanhoitomaksu) and get a Finnish hunting card for the first time. It has 60 multiple-choice questions written by the Finnish Wildlife Agency (Suomen riistakeskus): first 15 species-identification questions from pictures, with 15 minutes for that part, then 45 theory questions, with at most an hour and a half in all. You pass with no more than 8 wrong answers, 52 points of 60, and unanswered questions count as wrong. The exam covers hunting law, species knowledge, game ecology and management, ethical and sustainable hunting, firearms and cartridges, hunting safety, hunting equipment and methods, and handling the game. Local game management associations (riistanhoitoyhdistykset) hold the exam, electronically on your own phone, tablet or computer or on paper, and advance registration is compulsory. From 1 January 2026 it can be taken in Finnish, Swedish, English or Sámi. Anyone who paid the fee in one of the five previous hunting years, and foreigners entitled to hunt in their own country, do not need it.",
+    rows: [
+      { label: "Questions written by", value: "Suomen riistakeskus (Finnish Wildlife Agency)" },
+      { label: "Held by", value: "Riistanhoitoyhdistykset (local game management associations)" },
+      { label: "Questions", value: "60: 15 species pictures, 45 theory" },
+      { label: "Pass mark", value: "At most 8 wrong, 52 of 60" },
+      { label: "Time", value: "At most 1.5 hours; species part 15 minutes" },
+      { label: "Languages", value: "Finnish, Swedish, English or Sámi (from 2026)" },
+      { label: "Needed for", value: "The first hunting card (riistanhoitomaksu)" },
+      { label: "Tigertest mock tests", value: "3 x 60 questions in Finnish, 52 to pass" },
+    ],
+    basedOn: "Suomen riistakeskus's instruction on the hunter's examination (1 January 2026), MMMa 1160/2014 on the hunter's examination, the Hunting Act 615/1993 and Hunting Decree 666/1993, checked November 2026",
+    source: { name: "Suomen riistakeskus: metsästäjätutkinto", url: "https://riista.fi/tietoa-metsastyksesta/haluatko-metsastajaksi/metsastajatutkinto/" },
+  },
   grdriving: {
     answer:
       "The Greek driving theory test is a computer-based multiple-choice test taken at a Transport Directorate exam centre before the practical driving test. Its questions are drawn at random from the Ministry of Infrastructure and Transport's question bank, and Greek law makes the questionnaires available in foreign languages, English among them, as well as in Greek with audio and in Greek Sign Language. Guides describe the category B test as 30 questions in 35 minutes with a pass at 29 correct. You train through a licensed driving school; a full licence is issued at 18, and since 2021 a 17-year-old who passes can drive accompanied on a provisional licence.",

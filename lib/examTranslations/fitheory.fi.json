@@ -1,0 +1,40 @@
+{
+  "landingPath": "/fi/ajokortin-teoriakoe",
+  "locale": "fi-FI",
+  "name": "Ajokortin teoriakoe B, harjoituskoe",
+  "shortName": "Teoriakoe B",
+  "examLabel": "B-luokan teoriakoe",
+  "fullName": "B-luokan ajokortin teoriakoe (kuljettajantutkinto)",
+  "trainingSets": {
+    "1": { "name": "Väistäminen ja risteykset", "weightLabel": "7 kokeen 50 kysymyksestä" },
+    "2": { "name": "Nopeus, kaistat ja ohittaminen", "weightLabel": "11 kokeen 50 kysymyksestä" },
+    "3": { "name": "Liikennemerkit, tiemerkinnät ja valot", "weightLabel": "12 kokeen 50 kysymyksestä" },
+    "4": { "name": "Pysäköinti ja muut tienkäyttäjät", "weightLabel": "10 kokeen 50 kysymyksestä" },
+    "5": { "name": "Kuljettaja, auto ja talvi", "weightLabel": "10 kokeen 50 kysymyksestä" }
+  },
+  "categoryLabels": {
+    "fiYield": "Väistäminen ja risteykset",
+    "fiPosition": "Nopeus, kaistat ja moottoritiet",
+    "fiOvertake": "Ohittaminen ja kohtaaminen",
+    "fiParking": "Pysähtyminen ja pysäköinti",
+    "fiSigns": "Liikennemerkit",
+    "fiMarkings": "Tiemerkinnät, liikennevalot ja poliisin merkit",
+    "fiUsers": "Jalankulkijat, pyöräilijät ja muut tienkäyttäjät",
+    "fiDriver": "Kuljettaja, alkoholi ja ajokorttisäännöt",
+    "fiVehicle": "Ajoneuvo, talvi ja turvavarusteet"
+  },
+  "copy": {
+    "guestPrompt": "tallentaaksesi teoriakokeen harjoittelusi ja nähdäksesi jokaisen väärin menneen kysymyksen",
+    "trainingHeading": "Harjoittele aiheittain",
+    "trainingSub": "Viisi harjoitussarjaa Suomen liikennesäännöistä: väistäminen, ohittaminen, pysäköinti, liikennemerkit ja talviajo. Näet heti oikean vastauksen, ja väärin menneet kysymykset palaavat, kunnes osaat ne.",
+    "testsHeading": "Harjoituskokeet · 50 kysymystä, tavoitteena vähintään 43",
+    "heroSubs": [
+      "Viisi aihetta ja neljä 50 kysymyksen harjoituskoetta. Väistäminen ja liikennemerkit painavat eniten.",
+      "Opettele jokainen sarja ja tee sitten koe.",
+      "Puolivälissä. Kokeile harjoituskoetta.",
+      "Kertaa virheet ja tee koe uudelleen.",
+      "Kaikki valmista. Varaa teoriakoe Ajovarmasta."
+    ],
+    "sourceLine": "Perustuu tieliikennelakiin ja Traficomin teoriakoetta koskeviin sääntöihin. Omat kysymykset suomeksi; 50 kysymystä koetta kohden, ja 86 % on Tigertestin tavoite."
+  }
+}

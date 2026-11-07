@@ -31,8 +31,9 @@ import ptimtPt from "./examTranslations/ptimt.pt.json";
 import detheorieEn from "./examTranslations/detheorie.en.json";
 import setrafikSv from "./examTranslations/setrafik.sv.json";
 import dkteoriDa from "./examTranslations/dkteori.da.json";
+import fitheoryFi from "./examTranslations/fitheory.fi.json";
 
-export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "dkteori" | "dkmoto" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "grdriving" | "rodrpciv" | "hukresz" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "detheorie" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl";
+export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "dkteori" | "dkmoto" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "rodrpciv" | "hukresz" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "detheorie" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -9833,6 +9834,299 @@ const fitheory: ExamConfig = {
     sourceLine: "Based on the Finnish Road Traffic Act and Traficom's theory test rules. Original questions in English; 50 per test, 86% is Tigertest's target.",
     analyticsKey: "fitheory",
   },
+  review: { fi: "machine" },
+  translations: {
+    fi: examTranslation(fitheoryFi),
+  },
+};
+
+const fimoto: ExamConfig = {
+  id: "fimoto",
+  stateCode: "FIMOTO",
+  idBase: 24100,
+  slug: "/finland-motorcycle-theory",
+  landingPath: "/finland-motorcycle-theory-test",
+  name: "Finland Motorcycle Theory Practice Test",
+  shortName: "Finland motorcycle test",
+  examLabel: "Finland motorcycle theory test",
+  fullName: "Finland motorcycle theory test, categories A1, A2 and A (teoriakoe)",
+  questionIdPrefix: "FIMOTO-",
+  icon: "bike",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 86,
+  // Source: Traficom regulation on the driving theory test (TRAFICOM/523973/03.04.03.00/2019, in
+  // force 15.6.2020) and Traficom's "Driving examination" page: categories A1, A2 and A are 20
+  // multiple choice (14 to pass), 50 traffic picture questions (43) and 5 risk recognition
+  // questions (4) in 30 minutes, each part passed separately. Topic areas from the regulation: the
+  // general traffic rules plus, for A1/A2/A, protective gear, rider visibility, road-condition
+  // hazards and motorcycle mechanics; pictures on driving straight, turning, giving way,
+  // overtaking, lane changes, stopping, parking. No official weights, so the split is Tigertest's
+  // own. Rules from the Road Traffic Act 729/2018 as consolidated to 17 April 2026; licence limits
+  // and upgrades from Traficom's motorcycle licence pages. 86% (43 of 50) mirrors the picture part.
+  // Checked 2026-11-06. Pools are exactly 4x each count. All items original.
+  blueprint: {
+    fimotoGear: 5,
+    fimotoBike: 5,
+    fimotoControl: 7,
+    fimotoPosition: 6,
+    fimotoYield: 7,
+    fimotoOvertake: 5,
+    fimotoSurface: 6,
+    fimotoLoad: 4,
+    fimotoRider: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 24101, name: "Gear, Checks & Your Motorcycle", categories: ["fimotoGear", "fimotoBike"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 2, id: 24102, name: "Control, Surfaces & Winter", categories: ["fimotoControl", "fimotoSurface"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 3, id: 24103, name: "Junctions, Overtaking & Large Vehicles", categories: ["fimotoYield", "fimotoOvertake"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 4, id: 24104, name: "Road Position, Passengers & Loads", categories: ["fimotoPosition", "fimotoLoad"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 5, id: 24105, name: "The Rider & Licence Categories", categories: ["fimotoRider"], size: 20, weightLabel: "5 of 50 test questions" },
+  ],
+  categoryLabels: {
+    fimotoGear: "Helmet, Protective Gear & Being Seen",
+    fimotoBike: "Motorcycle Checks & Mechanics",
+    fimotoControl: "Braking, Cornering & Control",
+    fimotoPosition: "Road Position, Speed & Parking",
+    fimotoYield: "Junctions & Giving Way",
+    fimotoOvertake: "Overtaking, Meeting & Large Vehicles",
+    fimotoSurface: "Road Surfaces, Weather & Winter",
+    fimotoLoad: "Passengers, Luggage & Trailers",
+    fimotoRider: "The Rider, Alcohol & Licence Categories",
+  },
+  copy: {
+    guestPrompt: "to save your motorcycle theory progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets on Finnish rules for riders, in English: gear and checks, braking and cornering, junctions and overtaking, road surfaces and winter, passengers and the A1, A2 and A licences. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, aim for 43 or more",
+    heroSubs: [
+      "Five topics, four 50-question tests. Control and giving way weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your theory test at Ajovarma.",
+    ],
+    sourceLine: "Based on the Finnish Road Traffic Act and Traficom's theory test and licence rules. Original questions in English; 50 per test, 86% is Tigertest's target.",
+    analyticsKey: "fimoto",
+  },
+};
+
+const fitruck: ExamConfig = {
+  id: "fitruck",
+  stateCode: "FITRUCK",
+  idBase: 24300,
+  slug: "/finland-truck-theory",
+  landingPath: "/finland-truck-theory-test",
+  name: "Finland Truck and Bus Theory Practice Test",
+  shortName: "Finland truck & bus theory",
+  examLabel: "Finland truck and bus theory test",
+  fullName: "Finland truck and bus theory test, categories C, CE, D and DE (teoriakoe)",
+  questionIdPrefix: "FITRK-",
+  icon: "truck",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // Source: Traficom regulation on the driving theory test (TRAFICOM/523973/03.04.03.00/2019, in
+  // force 15.6.2020) and Traficom's "Driving examination" page, checked 2026-11-06: categories C,
+  // CE, D and DE are 20 multiple choice (14 to pass), 30 traffic picture questions (26) and 5 risk
+  // recognition questions (4) in 30 minutes, each part passed separately. Topic areas from the
+  // regulation (driving and rest times, goods or passengers, documents, accidents, tyre changing,
+  // masses, dimensions and speed limiters, blind spots, route planning, load safety, passenger
+  // responsibility, vehicle construction, lubrication and antifreeze, tyres, brakes and speed
+  // governors, coupling, fault finding, maintenance; pictures on turning, giving way, overtaking,
+  // lane changes, stopping, parking). No official weights, so the split is Tigertest's own. Rules
+  // from the Road Traffic Act 729/2018 and its annexes, Act 730/2016 on alcohol interlocks and EU
+  // Regulations 561/2006 (as amended 2020/1054) and 165/2014. 80% = 44 of 55, the real minimums
+  // added up. Truck and bus in one bank. Pools are exactly 4x each count. All items original.
+  blueprint: {
+    fitrkHours: 7,
+    fitrkTacho: 5,
+    fitrkLoads: 6,
+    fitrkPassengers: 5,
+    fitrkVehicle: 5,
+    fitrkBrakes: 7,
+    fitrkRoad: 7,
+    fitrkSafety: 5,
+    fitrkRoute: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 24301, name: "Drivers' Hours & Tachographs", categories: ["fitrkHours", "fitrkTacho"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 2, id: 24302, name: "Loads & Passengers", categories: ["fitrkLoads", "fitrkPassengers"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 3, id: 24303, name: "Brakes, Tyres & the Vehicle", categories: ["fitrkBrakes", "fitrkVehicle"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 4, id: 24304, name: "Heavy Vehicles in Traffic", categories: ["fitrkRoad"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 5, id: 24305, name: "Blind Spots, Winter & Incidents", categories: ["fitrkSafety", "fitrkRoute"], size: 32, weightLabel: "8 of 50 test questions" },
+  ],
+  categoryLabels: {
+    fitrkHours: "Driving & Rest Times",
+    fitrkTacho: "Tachographs, Documents & Driver CPC",
+    fitrkLoads: "Loads, Masses & Dimensions",
+    fitrkPassengers: "Carrying Passengers",
+    fitrkVehicle: "Vehicle Systems, Maintenance & Faults",
+    fitrkBrakes: "Brakes, Tyres & Coupling",
+    fitrkRoad: "Heavy Vehicles in Traffic",
+    fitrkSafety: "Blind Spots, Risks & Fitness to Drive",
+    fitrkRoute: "Route Planning, Winter & Incidents",
+  },
+  copy: {
+    guestPrompt: "to save your truck and bus theory progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets on the Finnish and EU rules for truck and bus drivers, in English: driving and rest times, loads and passengers, brakes and tyres, heavy vehicles in traffic, and winter driving. Missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, aim for 40 or more",
+    heroSubs: [
+      "Five topics, four 50-question tests. Drivers' hours, brakes and traffic weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your theory test at Ajovarma.",
+    ],
+    sourceLine: "Based on the Finnish Road Traffic Act, the EU driving time and tachograph rules and Traficom's theory test topics. Original questions in English; 50 per test, 80% is Tigertest's target. Not affiliated with Traficom.",
+    analyticsKey: "fitruck",
+  },
+};
+
+const fihygiene: ExamConfig = {
+  id: "fihygiene",
+  stateCode: "FIHYGIENE",
+  idBase: 24000,
+  slug: "/finland-hygiene-passport",
+  landingPath: "/finland-hygiene-passport-practice-test",
+  name: "Finland Hygiene Passport Practice Test",
+  shortName: "Hygiene Passport",
+  examLabel: "Hygiene Passport test",
+  fullName: "Finland Hygiene Passport test (hygieniapassitesti)",
+  questionIdPrefix: "FIHYG-",
+  icon: "chef",
+  testCount: 5,
+  questionsPerTest: 40,
+  passPct: 85,
+  // Real test (Ruokavirasto regulation 7/2021 on hygiene proficiency, in force 21.4.2021, and
+  // hygieniapassi.fi, checked 2026-11-06): 40 true/false statements, 45 minutes, at least 34 correct;
+  // Finnish, Swedish or English, special situation tests by arrangement; held by examiners
+  // Ruokavirasto approves (Food Act 297/2021 ss. 19-20). Areas from Annex 1 of 7/2021 (six areas;
+  // area 2 split into food poisoning, temperatures and hygienic handling). No official weights, so
+  // the split is Tigertest's. Figures are Finland's own (decree 318/2021 s. 23 and Ruokavirasto's
+  // restaurant guidance): 6 °C, 4 °C minced meat, 0-3 °C cold-smoked fish, 12 °C for 4 h on display,
+  // hot at least 60 °C, cooling within 4 h, 70 °C cooking, 75 °C poultry. Four options per item,
+  // not true/false. Pools exactly 5x each count. All items original.
+  blueprint: {
+    fihygMicro: 6,
+    fihygPoison: 6,
+    fihygTemp: 7,
+    fihygHandling: 5,
+    fihygPersonal: 7,
+    fihygClean: 4,
+    fihygOwncheck: 3,
+    fihygLaw: 2,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 24001, name: "Microbes & Food Poisoning", categories: ["fihygMicro", "fihygPoison"], size: 60, weightLabel: "12 of 40 test questions" },
+    { setNumber: 2, id: 24002, name: "Temperatures", categories: ["fihygTemp"], size: 35, weightLabel: "7 of 40 test questions" },
+    { setNumber: 3, id: 24003, name: "Hygienic Handling & Cleaning", categories: ["fihygHandling", "fihygClean"], size: 45, weightLabel: "9 of 40 test questions" },
+    { setNumber: 4, id: 24004, name: "Personal Hygiene", categories: ["fihygPersonal"], size: 35, weightLabel: "7 of 40 test questions" },
+    { setNumber: 5, id: 24005, name: "Self-Monitoring & Food Law", categories: ["fihygOwncheck", "fihygLaw"], size: 25, weightLabel: "5 of 40 test questions" },
+  ],
+  categoryLabels: {
+    fihygMicro: "Microbes & Contamination",
+    fihygPoison: "Food Poisoning",
+    fihygTemp: "Storage, Cooking & Cooling Temperatures",
+    fihygHandling: "Hygienic Handling & Allergens",
+    fihygPersonal: "Personal Hygiene",
+    fihygClean: "Cleaning, Waste & Pests",
+    fihygOwncheck: "Self-Monitoring & Oiva",
+    fihygLaw: "Food Law & Authorities",
+  },
+  copy: {
+    guestPrompt: "to save your Hygiene Passport progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets on Ruokavirasto's areas, in English: microbes and food poisoning, Finnish temperatures, handling and cleaning, personal hygiene, self-monitoring and food law. Missed questions come back until you master them.",
+    testsHeading: "Mock tests · 40 questions, 34 to pass",
+    heroSubs: [
+      "Five topics, five 40-question tests. Start with temperatures.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. You are ready for the Hygiene Passport test.",
+    ],
+    sourceLine: "Based on Ruokavirasto's regulation 7/2021, the Food Act and decree 318/2021. Original questions in English; the real test is 40 true/false statements, 34 to pass.",
+    analyticsKey: "fihygiene",
+  },
+};
+
+const fihunt: ExamConfig = {
+  id: "fihunt",
+  stateCode: "FIHUNT",
+  idBase: 24200,
+  slug: "/metsastajatutkinto",
+  landingPath: "/fi/metsastajatutkinto-harjoituskoe",
+  name: "Metsästäjätutkinto harjoituskoe",
+  shortName: "Metsästäjätutkinto",
+  examLabel: "Metsästäjätutkinto",
+  fullName: "Metsästäjätutkinto (Suomen riistakeskus)",
+  questionIdPrefix: "FIHUNT-",
+  icon: "target",
+  testCount: 3,
+  questionsPerTest: 60,
+  passPct: 86,
+  language: "fi",
+  locale: "fi-FI",
+  english: {
+    name: "Finland Hunter's Examination (Metsästäjätutkinto)",
+    shortName: "Finnish hunter's exam",
+    fullName: "Finnish hunter's examination (metsästäjätutkinto), in Finnish",
+  },
+  review: { fi: "model" },
+  // Real exam (Suomen riistakeskus instruction 1.1.2026, asia 336/02.02.01.02/2025, and MMMa
+  // 1160/2014 2-3 §; checked 2026-11-06): 60 multiple-choice questions written by the
+  // riistakeskus, 15 species-identification pictures (15 minutes, first) and 45 theory questions,
+  // at most 1.5 hours; at most 8 wrong (52 of 60); held by riistanhoitoyhdistykset, electronic or
+  // paper; Finnish, Swedish, English or Sámi from 1.1.2026. Categories are the eight topic areas of
+  // MMMa 1160/2014 2 §; the 15/12/8/7/5/5/5/3 split is Tigertest's own (no published weights),
+  // with 15 species items standing in for the picture part, written in words. Three tests of 60
+  // plus 20 training-only spares (200, all original, written in Finnish). passPct 86 gives
+  // ceil(51.6) = 52 of 60, the real pass line.
+  blueprint: {
+    fihnLaji: 15,
+    fihnLaki: 12,
+    fihnTurva: 8,
+    fihnAseet: 7,
+    fihnEtiikka: 5,
+    fihnPyynti: 5,
+    fihnRiista: 5,
+    fihnSaalis: 3,
+  },
+  // Five topic sets, then the three tests: 8 dashboard steps.
+  trainingSets: [
+    { setNumber: 1, id: 24201, name: "Lajintuntemus", categories: ["fihnLaji"], size: 48, weightLabel: "15 / 60 kysymystä koetta kohden" },
+    { setNumber: 2, id: 24202, name: "Metsästyslainsäädäntö", categories: ["fihnLaki"], size: 40, weightLabel: "12 / 60 kysymystä koetta kohden" },
+    { setNumber: 3, id: 24203, name: "Turvallisuus, aseet ja patruunat", categories: ["fihnTurva", "fihnAseet"], size: 50, weightLabel: "15 / 60 kysymystä koetta kohden" },
+    { setNumber: 4, id: 24204, name: "Etiikka ja pyyntimenetelmät", categories: ["fihnEtiikka", "fihnPyynti"], size: 34, weightLabel: "10 / 60 kysymystä koetta kohden" },
+    { setNumber: 5, id: 24205, name: "Riistanhoito ja saaliin käsittely", categories: ["fihnRiista", "fihnSaalis"], size: 28, weightLabel: "8 / 60 kysymystä koetta kohden" },
+  ],
+  categoryLabels: {
+    fihnLaji: "Lajintuntemus",
+    fihnLaki: "Metsästyslainsäädäntö",
+    fihnTurva: "Metsästyksen turvallisuus",
+    fihnAseet: "Aseet ja patruunat metsästyksessä",
+    fihnEtiikka: "Eettinen ja kestävä metsästys",
+    fihnPyynti: "Pyyntivälineet ja pyyntimenetelmät",
+    fihnRiista: "Riistanhoito ja riistaekologia",
+    fihnSaalis: "Saaliin käsittely",
+  },
+  copy: {
+    guestPrompt: "jotta edistymisesi metsästäjätutkintoon tallentuu ja näet jokaisen väärän vastauksen",
+    trainingHeading: "Harjoitussarjat",
+    trainingSub: "Jokainen harjoitussarja käsittelee yhtä tai kahta tutkinnon aihealuetta. Saat palautteen heti, ja väärin menneet kysymykset tulevat uudelleen, kunnes osaat ne.",
+    testsHeading: "Harjoituskokeet · 60 kysymystä, enintään 8 virhettä",
+    heroSubs: [
+      "Viisi harjoitussarjaa, kolme harjoituskoetta. Lajintuntemusta ja metsästyslakia kysytään eniten.",
+      "Hallitse harjoitussarja ensin, sitten harjoituskoe.",
+      "Puolivälissä. Tee harjoituskoe.",
+      "Kertaa virheesi ja testaa uudelleen.",
+      "Kaikki vihreänä. Ilmoittaudu metsästäjätutkintoon.",
+    ],
+    sourceLine: "Metsästyslain, metsästysasetuksen ja ampuma-aselain mukaan, marraskuu 2026. Omat kysymykset, ei riistakeskuksen; lajit kuvataan sanoin, kuvaosiota ei ole.",
+    analyticsKey: "fihunt",
+  },
 };
 
 const grdriving: ExamConfig = {
@@ -16241,7 +16535,7 @@ const sgvl: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, nhie, cna, ptcb, phleb, ccma, cma, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, sfadmin, phr, cisa, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, dkteori, dkmoto, setrafik, semoto, fitheory, grdriving, rodrpciv, hukresz, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, semedb, dkindfoed, dkmedborger, gulfrn, inrto, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, nhie, cna, ptcb, phleb, ccma, cma, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, sfadmin, phr, cisa, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, dkteori, dkmoto, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, rodrpciv, hukresz, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, semedb, dkindfoed, dkmedborger, gulfrn, inrto, htl, cst, crcst];
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
 export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA, realestatePA, realestateIL, realestateOH, realestateGA, realestateNC, realestateMI, realestateVA, realestateWA, realestateAZ, realestateTN, realestateLA, insuranceNY, insurancePA, insuranceIL, insuranceOH, insuranceGA, insuranceNC, insuranceMI, insuranceNJ, insuranceVA, insuranceWA, pncNY, pncPA, pncIL, pncOH, pncGA, pncNC, pncMI, pncNJ, pncVA, pncWA];

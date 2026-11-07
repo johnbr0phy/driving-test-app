@@ -656,6 +656,10 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
     "color": "hsl(343, 35%, 32%)",
     "tint": "hsl(343, 35%, 96%)"
   },
+  "ccaf": {
+    "color": "hsl(12, 60%, 38%)",
+    "tint": "hsl(12, 50%, 96%)"
+  },
   "sfadmin": {
     "color": "hsl(238, 80%, 28%)",
     "tint": "hsl(238, 50%, 96%)"

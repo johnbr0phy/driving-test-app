@@ -146,6 +146,7 @@ import "./praxisplt";
 import "./cma";
 import "./nhie";
 import "./txadjuster";
+import "./ccaf";
 import "./sfadmin";
 import "./cfal1";
 import "./cpaaud";

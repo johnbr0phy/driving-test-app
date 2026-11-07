@@ -1001,6 +1001,12 @@ export const zh: TranslationKeys = {
     txadjLaw: "Texas Licensing & the Commissioner",
     txadjClaims: "Texas Claims Practices",
     txadjWorkComp: "Texas Workers' Compensation",
+    // ccaf
+    ccafAgentic: "Agentic Architecture & Orchestration",
+    ccafClaudeCode: "Claude Code Configuration & Workflows",
+    ccafPrompt: "Prompt Engineering & Structured Output",
+    ccafTools: "Tool Design & MCP Integration",
+    ccafContext: "Context Management & Reliability",
     // sfadmin
     sfadminConfig: "Configuration & Setup",
     sfadminObjects: "Object Manager & Lightning App Builder",

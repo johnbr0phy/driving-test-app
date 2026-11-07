@@ -875,10 +875,30 @@
  "psm": [
   "https://scrumguides.org/scrum-guide.html"
  ],
+ "ptcam": [
+  "https://www.imt-ip.pt/wp-content/uploads/Documents/DespachoIMTT_CAM_Exames.pdf",
+  "https://www.gov.pt/servicos/motorista-de-veiculo-pesado-de-passageiros-certificacao",
+  "https://www.imt-ip.pt/condutores/obtencao/perguntas-de-exame/"
+ ],
  "ptimt": [
   "https://www.madeira.gov.pt//Portals/27/Documentos/Legislacao/2012_07_05_DecLei_138_2012_AlteraoCodigodaEstradaeAprovaoRegulamentodaHabilitacaoLegalparaConduzir.pdf",
   "https://diariodarepublica.pt/dr/detalhe/decreto-lei/138-2012-178550",
   "https://www.imt-ip.pt/pt/condutores/carta-de-conducao"
+ ],
+ "ptmoto": [
+  "https://www.madeira.gov.pt//Portals/27/Documentos/Legislacao/2012_07_05_DecLei_138_2012_AlteraoCodigodaEstradaeAprovaoRegulamentodaHabilitacaoLegalparaConduzir.pdf",
+  "https://files.diariodarepublica.pt/1s/2026/06/10900/0001900030.pdf",
+  "https://www.imt-ip.pt/condutores/informacoes-gerais/quero-ser-condutor/cartas-de-conducao-de-motociclos/"
+ ],
+ "pttvde": [
+  "https://www.imt-ip.pt/condutores/obtencao/perguntas-de-exame/",
+  "https://files.diariodarepublica.pt/1s/2026/08/16400/0000300044.pdf",
+  "https://www.imt-ip.pt/?p=10228"
+ ],
+ "ptvigil": [
+  "https://dre.pt/application/conteudo/124780748",
+  "https://diariodarepublica.pt/dr/detalhe/despacho/8270-2019-124780748",
+  "https://www.rtp.pt/noticias/pais/seguranca-privado-so-com-exame-feito-pela-psp_n939220"
  ],
  "punjabpolice": [
   "https://punjabpolice.gov.pk/node/22506",

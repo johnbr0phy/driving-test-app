@@ -218,6 +218,22 @@
       "what": "Yearly check of Reg. 561/2006 and 165/2014 amendments and of the convocatorias' format.",
       "action": "Re-read the regulations and two current convocatorias; update the bank and landing.",
       "source": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-6624"
+    },
+    {
+      "exam": "pttvde",
+      "date": "2027-03-01",
+      "kind": "law",
+      "what": "Portarias under Lei 59/2026 (sticker model, Portuguese-language check, training and final assessment procedures) are still unpublished and may change the course or the exam.",
+      "action": "Re-read the new portarias and update the vehicle and regulation items, the landing and examFacts.",
+      "source": "https://files.diariodarepublica.pt/1s/2026/08/16400/0000300044.pdf"
+    },
+    {
+      "exam": "ptvigil",
+      "date": "2027-06-30",
+      "kind": "review",
+      "what": "The CNESP exam rules date from Despacho 8270/2019 and Lei 34/2013 was last amended in 2019; check for a new despacho, a Lei 34/2013 amendment or a training portaria replacing Portaria 148/2014.",
+      "action": "Re-read the Diário da República and psp.pt (Departamento de Segurança Privada) and update the landing, examFacts and sources.md.",
+      "source": "https://diariodarepublica.pt/dr/detalhe/despacho/8270-2019-124780748"
     }
   ]
 }

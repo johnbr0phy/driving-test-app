@@ -2655,6 +2655,73 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     source: { name: "Landratsamt München: guidance sheet on the Heilpraktiker knowledge test (PDF, German)", url: "https://www.landkreis-erding.de/media/23374/merkblatt-heilpraktiker-stand-juli-2023.pdf" },
   },
 
+  ptmoto: {
+    answer:
+      "Portugal's motorcycle theory exam is the IMT's computer theory test (exame de código) for categories A1, A2 and A, taken at an exam centre after enrolling at a driving school. A candidate with no licence answers 40 multiple-choice questions in 40 minutes: 30 on the rules common to all vehicles and 10 on the motorcycle programme (protective gear, being seen, handling, road surfaces and the machine), and passes with at least 36 correct. A holder of a car licence (B or B1) seeking A2 or A answers only the 10 motorcycle questions in 10 minutes and needs 9 right. The test is in Portuguese; a candidate without enough Portuguese can ask the IMT for a translated test. A pass is valid for one year. Minimum ages are 16 for A1 (with a parent's consent under 18), 18 for A2, and 24 for A, or 20 after two years with A2.",
+    rows: [
+      { label: "Set by", value: "IMT (Instituto da Mobilidade e dos Transportes)" },
+      { label: "Questions", value: "40 (30 common + 10 motorcycle)" },
+      { label: "Time", value: "40 minutes" },
+      { label: "Pass mark", value: "36 of 40 (90%)" },
+      { label: "Car licence holders (A2 or A)", value: "10 motorcycle questions, 10 minutes, 9 to pass" },
+      { label: "Language", value: "Portuguese; a translated test (including English) on request" },
+      { label: "Theory pass valid", value: "1 year" },
+      { label: "Minimum age", value: "A1 16, A2 18, A 24 (20 after 2 years of A2)" },
+      { label: "Tigertest mock tests", value: "5 x 40 questions, 36 to pass" },
+    ],
+    basedOn: "Regulamento da Habilitação Legal para Conduzir (Decreto-Lei 138/2012), arts. 20, 43, 44 (as amended by Decreto-Lei 114/2026), 46 and 47 and Annex VII, the IMT's motorcycle licence page and the Código da Estrada as amended to Lei 24/2025, checked November 2026",
+    source: { name: "IMT, cartas de condução de motociclos", url: "https://www.imt-ip.pt/condutores/informacoes-gerais/quero-ser-condutor/cartas-de-conducao-de-motociclos/" },
+  },
+  ptcam: {
+    answer:
+      "The CAM exam (exame do Certificado de Aptidão para Motorista) is the written test that Portugal's IMT sets at the end of the Driver CPC initial qualification course, common or accelerated, which professional truck (C, CE) and bus (D, DE) drivers must complete at a recognised training provider. It has 60 questions, four-option multiple choice, direct answer or a mix of the two, in 2 hours. Every question carries equal weight on a 0 to 100 scale and you pass with at least 60%. Only candidates who finished the course less than two years earlier are admitted, and the training provider registers them. The CAM is valid for five years, renewed with periodic training, and for drivers resident in Portugal the qualification is shown by code 95 on the driving licence. The test is in Portuguese.",
+    rows: [
+      { label: "Run by", value: "IMT (Instituto da Mobilidade e dos Transportes)" },
+      { label: "Questions", value: "60, multiple choice and/or direct answer" },
+      { label: "Time", value: "2 hours" },
+      { label: "Pass mark", value: "60% (36 of 60), equal weight per question" },
+      { label: "Admission", value: "Initial qualification course finished less than 2 years earlier" },
+      { label: "CAM valid", value: "5 years; code 95 on the licence" },
+      { label: "Language", value: "Portuguese" },
+      { label: "Tigertest mock tests", value: "3 x 60 questions in Portuguese, 36 to pass" },
+    ],
+    basedOn: "Despacho IMTT n.º 26482/2009 (CAM exam conditions), Decreto-Lei 126/2009 as republished by Decreto-Lei 102-C/2020, and gov.pt, checked November 2026",
+    source: { name: "IMT: Driver CPC training and certification", url: "https://www.imt-ip.pt/?p=5600" },
+  },
+  pttvde: {
+    answer:
+      "To drive for a TVDE operator in Portugal (ride-hailing booked through an electronic platform), you need the TVDE driver certificate (certificado de motorista de TVDE) issued by the IMT (Instituto da Mobilidade e dos Transportes). You first complete an initial course of at least 50 hours at a driving school or IMT-recognised training entity, attending at least 80% of each module, and then pass the final assessment at the IMT or an IMT-authorised exam centre: 30 multiple-choice questions, passed with at least 27 correct. Press reports give 60 minutes and one retake on request within 10 working days. The test is in Portuguese, and since Lei 59/2026 (in force 1 September 2026) the course also checks functional command of Portuguese. You need a category B licence held for more than three years with the group 2 endorsement and a clean record. The certificate is valid for five years and is renewed with an 8-hour continuing course. Holders of a valid taxi driver certificate need neither the course nor the exam. The IMT publishes the list of questions the final assessment draws on.",
+    rows: [
+      { label: "Run by", value: "IMT or an IMT-authorised exam centre" },
+      { label: "Before the exam", value: "Initial course, at least 50 hours" },
+      { label: "Questions", value: "30 multiple choice" },
+      { label: "Pass mark", value: "27 of 30 (90%)" },
+      { label: "Time", value: "60 minutes (press reports)" },
+      { label: "Language", value: "Portuguese" },
+      { label: "Certificate valid", value: "5 years, renewable" },
+      { label: "Tigertest mock tests", value: "5 x 30 questions in Portuguese, 27 to pass" },
+    ],
+    basedOn: "Lei 45/2018 as republished by Lei 59/2026 (arts. 10, 10-A, 11 to 15 and 19), Portaria 293/2018 as amended by Portaria 344/2024, and the IMT page on TVDE driver certification, checked November 2026",
+    source: { name: "IMT: TVDE driver certification", url: "https://www.imt-ip.pt/?p=10228" },
+  },
+  ptvigil: {
+    answer:
+      "To get the professional card of a private security guard (vigilante) in Portugal, candidates complete training at an authorised training provider (the base module common to every speciality, with first aid and fire prevention units, plus the vigilante module, under Portaria 148/2014) and then pass the PSP's theory exam at the Centro Nacional de Exames de Segurança Privada (CNESP). The training provider books the exam through the PSP's SIGESP system. It is taken on computer in an approved exam room: 20 questions in 40 minutes, either multiple choice with two to four options and one correct answer, or true/false, some with figures or images. You pass with at least 10 correct answers. A candidate without sufficient Portuguese is not admitted. After a fail a review can be requested within 48 hours, and a pass counts for six months toward the card application. The card is issued by the PSP and is valid for five years. The test is in Portuguese.",
+    rows: [
+      { label: "Run by", value: "PSP, Departamento de Segurança Privada (CNESP)" },
+      { label: "Questions", value: "20, multiple choice (2 to 4 options) or true/false" },
+      { label: "Time", value: "40 minutes" },
+      { label: "Pass mark", value: "At least 10 correct (50%)" },
+      { label: "Where", value: "On computer in a CNESP exam room" },
+      { label: "Booking", value: "By the training provider, through SIGESP" },
+      { label: "Pass counts for", value: "6 months toward the card application" },
+      { label: "Professional card", value: "Issued by the PSP, valid 5 years" },
+      { label: "Language", value: "Portuguese" },
+      { label: "Tigertest mock tests", value: "8 x 20 questions in Portuguese, 10 to pass" },
+    ],
+    basedOn: "Despacho n.º 8270/2019 of the PSP (regulation of the private security theory exam), Lei 34/2013 as amended by Lei 46/2019 and Portaria 148/2014 as amended by Portaria 114/2015, checked November 2026",
+    source: { name: "Diário da República: Despacho n.º 8270/2019", url: "https://diariodarepublica.pt/dr/detalhe/despacho/8270-2019-124780748" },
+  },
   escapcond: {
     answer:
       "Spain's Driver CPC initial qualification (certificado de aptitud profesional, CAP inicial) is required by Real Decreto 284/2021 for professional drivers of trucks (licence categories C1 and C) and buses (D1 and D). Candidates first complete a course at an approved centre, 280 hours in the ordinary route or 140 in the accelerated one, and must then pass the exam within a year. Each comunidad autónoma's transport department runs the exam, at least six times a year. It has 100 multiple-choice questions with four options and one correct answer, and lasts at least two hours. A right answer scores 1 point, a wrong one loses 0.5 and a blank scores nothing; the pass is half the possible points, 50. 25 of the 100 questions are on the candidate's speciality, goods or passengers; a holder adding the other speciality takes only that course part and that part of the exam. The common syllabus covers the driveline and fuel-efficient driving, brakes and safety systems, traffic hazards, drivers' hours (Regulation 561/2006), the tachograph, health, emergencies and crime prevention; goods add loading, transport documents, CMR and cabotage, passengers add passenger safety, school transport and passenger rights. Tigertest's questions are in Spanish.",

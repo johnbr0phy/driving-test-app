@@ -125,7 +125,7 @@ const TEST_REGIONS: Record<string, TestRegion> = {
   phnle: "PH", phmedtech: "PH", phpharm: "PH", phmidwife: "PH", phpsychom: "PH", phnapolcom: "PH", afpsat: "PH", phcle: "PH", phinsurance: "PH", phrebroker: "PH",
   sgftt: "SG", sgrtt: "SG", sgres: "SG", sgm5: "SG", sgvl: "SG", hkiiqe1: "HK", hklesfi1: "HK", aesira: "AE", mypce: "MY", kenck: "KE",
   detheorie: "DE", demotorrad: "DE", deaevo: "DE", de34a: "DE", deheilpr: "DE",
-  esdgt: "ES", escapcond: "ES", espolicia: "ES", esguardia: "ES", esvigilante: "ES", ptimt: "PT", rodrpciv: "RO", setrafik: "SE", grdriving: "GR", dkteori: "DK", hukresz: "HU", bedriving: "BE", fitheory: "FI", mttheory: "MT",
+  esdgt: "ES", escapcond: "ES", espolicia: "ES", esguardia: "ES", esvigilante: "ES", ptimt: "PT", ptmoto: "PT", ptcam: "PT", pttvde: "PT", ptvigil: "PT", rodrpciv: "RO", setrafik: "SE", grdriving: "GR", dkteori: "DK", hukresz: "HU", bedriving: "BE", fitheory: "FI", mttheory: "MT",
   jambeng: "NG", jambmath: "NG", jambbio: "NG", jambchem: "NG", jambphys: "NG",
   ngpolice: "NG", cdcfib: "NG", ngarmy: "NG", ngcustoms: "NG", trcnpqe: "NG",
   inrto: "IN", ssccgl: "IN", rrbntpc: "IN", ibpspo: "IN", ctet: "IN",
@@ -141,6 +141,7 @@ const TEST_REGIONS: Record<string, TestRegion> = {
 /** A country's tests that are not driving tests: shown beside the worldwide ones, not in the driving grid. */
 export const NON_DRIVING_TESTS = new Set([
   "espolicia", "esguardia", "esvigilante",
+  "ptvigil",
   "deaevo", "de34a", "deheilpr",
   "timestables", "ks2", "gcsemaths", "uksia", "uk18ed",
   "gcsehigher", "gcsescience", "gcsecs", "elevenplus", "fsmaths", "cscs", "ukfood", "ukaplh", "ukfaw", "ukcare", "uklitu", "uknmc", "ukseru", "aatl2", "cemap",
@@ -315,8 +316,8 @@ export const REGION_HOME: Record<Exclude<Region, "US">, {
     description: "Treino grátis para o exame teórico de condução do IMT (exame de código), categoria B: 200 perguntas originais sobre o Código da Estrada, cada resposta explicada. Não precisa de conta.",
     lead: "Treine para o exame de código, o exame teórico do IMT para a carta de condução de ligeiros. Perguntas originais sobre sinais, prioridade, rotundas, limites de velocidade e condução segura, cada resposta explicada. Sem registo.",
     cta: { label: "Exame de código IMT", href: "/pt/testes-codigo-imt" },
-    testsTitle: "Exame de código do IMT",
-    testsSub: "200 perguntas sobre o Código da Estrada, em km/h e com circulação pela direita. Seis testes completos de 30 perguntas, passa com 27.",
+    testsTitle: "Testes de prática para Portugal",
+    testsSub: "O exame de código do IMT (categoria B): 200 perguntas sobre o Código da Estrada, em km/h e com circulação pela direita, seis testes de 30, passa com 27. Também o exame de código para mota (em inglês), o exame CAM para motoristas de pesados, o exame TVDE para motoristas de plataformas e o exame de vigilante da PSP.",
   },
 
   RO: {

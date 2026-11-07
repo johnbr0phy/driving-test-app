@@ -245,6 +245,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   pkdrive: { title: "Pakistan Driving Licence Test", description: "Review warning and mandatory signs, roundabouts, overtaking and motorway rules for the sign test." },
   esdgt: { title: "Spain DGT Theory Test", description: "Practise Spanish signs, priority, roundabouts and the 2026 rules in English for the DGT permiso B exam." },
   ptimt: { title: "Portugal Driving Theory Test", description: "Practise signs, priority, roundabouts and speed limits in English for the IMT exame de código." },
+  ptmoto: { title: "Portugal Motorcycle Theory Test", description: "Practise the common rules and the motorcycle programme in English for the IMT A1, A2 and A exam." },
   bedriving: { title: "Belgium Driving Theory Test", description: "Practise priority to the right, Belgian signs, regional speed limits and parking rules in English, at the real 41/50 pass mark." },
   dkteori: { title: "Denmark Driving Theory Test", description: "Practise give way, roundabouts, cyclists and motorway rules for the teoriprøve, in English." },
   setrafik: { title: "Sweden Driving Theory Test", description: "Practise the right-hand rule, Swedish signs, speed limits and winter driving in English for the kunskapsprov." },

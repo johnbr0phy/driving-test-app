@@ -30,7 +30,7 @@ import esdgtEs from "./examTranslations/esdgt.es.json";
 import ptimtPt from "./examTranslations/ptimt.pt.json";
 import detheorieEn from "./examTranslations/detheorie.en.json";
 
-export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "bedriving" | "dkteori" | "setrafik" | "fitheory" | "grdriving" | "rodrpciv" | "hukresz" | "mttheory" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "detheorie" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl";
+export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "dkteori" | "setrafik" | "fitheory" | "grdriving" | "rodrpciv" | "hukresz" | "mttheory" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "detheorie" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -8723,6 +8723,304 @@ const ptimt: ExamConfig = {
   },
 };
 
+const ptmoto: ExamConfig = {
+  id: "ptmoto",
+  stateCode: "PTMOTO",
+  idBase: 23100,
+  slug: "/portugal-motorcycle-theory",
+  landingPath: "/portugal-motorcycle-theory-test",
+  name: "Portugal Motorcycle Theory Practice Test",
+  shortName: "Portugal motorcycle theory",
+  examLabel: "Portugal IMT motorcycle theory exam",
+  fullName: "Portugal IMT motorcycle theory exam (exame de código), categories A1, A2 and A",
+  questionIdPrefix: "PTMOTO-",
+  icon: "bike",
+  testCount: 5,
+  questionsPerTest: 40,
+  passPct: 90,
+  // Real test (Regulamento da Habilitação Legal para Conduzir, Decreto-Lei 138/2012, checked
+  // 2026-11-06): categories A1, A2 and A, 40 questions, 30 on the common programme (Annex VII
+  // part I section II) and 10 on the A-specific programme (section III point I) (art. 43(1)(b)),
+  // 40 minutes (art. 46(b)), pass with 36 correct (art. 47(1)); B or B1 holders seeking A2 or A
+  // take only the 10 specific questions in 10 minutes, 9 to pass (arts. 43(1)(c), 46(c), 47(1)).
+  // Translated test on request (art. 44(2) as amended by DL 114/2026). The IMT publishes no topic
+  // weights: the 30 common items split 6/6/6/4/4/4 like the programme, written from the rider's
+  // seat; the 10 specific items follow the eight points of section III point I (gear and
+  // visibility 3, handling 3, surfaces 2, machine 2). Five real-length tests, pools 5x each count,
+  // no spares. passPct 90 = 36 of 40. All items original.
+  blueprint: {
+    ptmoSigns: 6,
+    ptmoPriority: 6,
+    ptmoSpeed: 6,
+    ptmoParking: 4,
+    ptmoRider: 4,
+    ptmoLicence: 4,
+    ptmoGear: 3,
+    ptmoHandling: 3,
+    ptmoRoad: 2,
+    ptmoMachine: 2,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 23101, name: "Signs & Priority", categories: ["ptmoSigns", "ptmoPriority"], size: 60, weightLabel: "12 of 40 test questions" },
+    { setNumber: 2, id: 23102, name: "Speed, Overtaking & Parking", categories: ["ptmoSpeed", "ptmoParking"], size: 50, weightLabel: "10 of 40 test questions" },
+    { setNumber: 3, id: 23103, name: "The Rider, Licences & Accidents", categories: ["ptmoRider", "ptmoLicence"], size: 40, weightLabel: "8 of 40 test questions" },
+    { setNumber: 4, id: 23104, name: "Riding Skills & the Machine", categories: ["ptmoGear", "ptmoHandling", "ptmoRoad", "ptmoMachine"], size: 50, weightLabel: "10 of 40 test questions" },
+  ],
+  categoryLabels: {
+    ptmoSigns: "Road Signs & Markings",
+    ptmoPriority: "Priority & Junctions",
+    ptmoSpeed: "Speed, Lanes & Overtaking",
+    ptmoParking: "Stopping, Parking & Motorways",
+    ptmoRider: "Alcohol, Fatigue & Attitude",
+    ptmoLicence: "Licences, Documents & Accidents",
+    ptmoGear: "Protective Gear & Visibility",
+    ptmoHandling: "Braking, Cornering & Passengers",
+    ptmoRoad: "Road Surfaces & Weather",
+    ptmoMachine: "Controls, Checks & Faults",
+  },
+  copy: {
+    guestPrompt: "to save your motorcycle theory progress and track every question you miss",
+    trainingHeading: "Train by topic, from the rider's seat",
+    trainingSub: "Four sets on the Código da Estrada and the motorcycle programme the IMT exam asks about, in English. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 40 questions like the real exam, 36 to pass",
+    heroSubs: [
+      "Four topic sets, five real-length tests. 30 common and 10 motorcycle questions each.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your motorcycle theory exam.",
+    ],
+    sourceLine: "Based on Portugal's Código da Estrada and the IMT programme for categories A1, A2 and A. Original questions in English; 40 per test, 36 to pass like the real exam.",
+    analyticsKey: "ptmoto",
+  },
+};
+
+const ptcam: ExamConfig = {
+  id: "ptcam",
+  stateCode: "PTCAM",
+  idBase: 22900,
+  slug: "/exame-cam",
+  landingPath: "/pt/exame-cam-teste",
+  name: "Exame CAM (Certificado de Aptidão para Motorista)",
+  shortName: "Exame CAM",
+  examLabel: "Exame CAM",
+  fullName: "Exame do Certificado de Aptidão para Motorista (CAM), qualificação inicial de motoristas de pesados",
+  questionIdPrefix: "PTCAM-",
+  icon: "truck",
+  testCount: 3,
+  questionsPerTest: 60,
+  passPct: 60,
+  language: "pt",
+  locale: "pt-PT",
+  english: {
+    name: "Portugal Driver CPC (CAM) Exam",
+    shortName: "Portugal CAM exam",
+    fullName: "Portugal Driver CPC initial qualification exam (CAM) for truck and bus drivers, in Portuguese",
+  },
+  review: { pt: "model" },
+  // Real exam (Despacho IMTT n.º 26482/2009 under Decreto-Lei 126/2009, republished by Decreto-Lei
+  // 102-C/2020; checked 2026-11-06): written test of 60 questions, four-option and/or direct answer,
+  // 2 hours, 0 to 100 with equal weight, pass at 60%; IMT, after the initial qualification course
+  // (C/CE and D/DE). Content follows Directive 2003/59/EC Annex I as amended by 2018/645; the IMT
+  // publishes no topic weights, so 10/7/7/9/6/5/5/7/4 is Tigertest's. Three tests of 60 at 60%
+  // (36); pools 3x per test plus 20 training-only spares. One bank for trucks and buses.
+  blueprint: {
+    ptcamRacional: 10,
+    ptcamCarga: 7,
+    ptcamPassageiros: 7,
+    ptcamTempos: 9,
+    ptcamTacografo: 6,
+    ptcamRegulamentacao: 5,
+    ptcamSaude: 5,
+    ptcamEmergencias: 7,
+    ptcamEconomia: 4,
+  },
+  // Five topic sets, not testSets(): 5 + 3 tests = 8 dashboard steps; every item in one set.
+  trainingSets: [
+    { setNumber: 1, id: 22901, name: "Condução racional e veículo", categories: ["ptcamRacional"], size: 32, weightLabel: "10 de 60 perguntas por teste" },
+    { setNumber: 2, id: 22902, name: "Carga e passageiros", categories: ["ptcamCarga", "ptcamPassageiros"], size: 46, weightLabel: "14 de 60 perguntas por teste" },
+    { setNumber: 3, id: 22903, name: "Tempos de condução e tacógrafo", categories: ["ptcamTempos", "ptcamTacografo"], size: 49, weightLabel: "15 de 60 perguntas por teste" },
+    { setNumber: 4, id: 22904, name: "Regulamentação e economia", categories: ["ptcamRegulamentacao", "ptcamEconomia"], size: 33, weightLabel: "9 de 60 perguntas por teste" },
+    { setNumber: 5, id: 22905, name: "Saúde, segurança e emergências", categories: ["ptcamSaude", "ptcamEmergencias"], size: 40, weightLabel: "12 de 60 perguntas por teste" },
+  ],
+  categoryLabels: {
+    ptcamRacional: "Condução racional e tecnologia do veículo",
+    ptcamCarga: "Carga e acondicionamento",
+    ptcamPassageiros: "Segurança e conforto dos passageiros",
+    ptcamTempos: "Tempos de condução e repouso",
+    ptcamTacografo: "Tacógrafo",
+    ptcamRegulamentacao: "Regulamentação do transporte e da profissão",
+    ptcamSaude: "Saúde, fadiga e ergonomia",
+    ptcamEmergencias: "Riscos, acidentes e emergências",
+    ptcamEconomia: "Ambiente económico e imagem da empresa",
+  },
+  copy: {
+    guestPrompt: "para guardar o seu progresso no exame CAM e acompanhar cada pergunta em que erra",
+    trainingHeading: "Conjuntos de treino",
+    trainingSub: "Cada conjunto cobre um bloco de matérias da qualificação inicial. Tem a resposta logo a seguir, e as perguntas em que erra voltam até as dominar.",
+    testsHeading: "Testes · 60 perguntas, 36 para passar, como no exame",
+    heroSubs: [
+      "Cinco conjuntos de treino, três testes de 60. Tempos de condução e condução racional são os temas que mais saem.",
+      "Domine primeiro o conjunto, depois faça o teste.",
+      "Já vai a meio. Faça um teste de 60.",
+      "Reveja os erros e repita o teste.",
+      "Tudo verde. Está pronto para o exame CAM no IMT.",
+    ],
+    sourceLine: "Perguntas originais a partir do Regulamento (CE) 561/2006, do Regulamento (UE) 165/2014, do Decreto-Lei 126/2009 e do Código da Estrada, novembro de 2026. Não copiadas das listas do IMT. Sem ligação ao IMT.",
+    analyticsKey: "ptcam",
+  },
+};
+
+const pttvde: ExamConfig = {
+  id: "pttvde",
+  stateCode: "PTTVDE",
+  idBase: 22800,
+  slug: "/exame-tvde",
+  landingPath: "/pt/exame-tvde-teste",
+  name: "Exame TVDE",
+  shortName: "Exame TVDE",
+  examLabel: "Avaliação final TVDE",
+  fullName: "Exame de motorista TVDE (Certificado de Motorista TVDE)",
+  questionIdPrefix: "PTTVDE-",
+  icon: "car",
+  testCount: 5,
+  questionsPerTest: 30,
+  passPct: 90,
+  language: "pt",
+  locale: "pt-PT",
+  english: {
+    name: "Portugal TVDE Ride-Hailing Driver Exam",
+    shortName: "Portugal TVDE driver exam",
+    fullName: "Portugal TVDE ride-hailing driver certificate exam (Exame TVDE), in Portuguese",
+  },
+  review: { pt: "model" },
+  // Real exam (Lei 45/2018 art. 10(7)-(8) as republished by Lei 59/2026, in force 1 Sept 2026;
+  // IMT certification page; Portaria 293/2018 as amended by Portaria 344/2024; checked
+  // 2026-11-06): the final assessment of the 50-hour initial course, at the IMT or an
+  // IMT-authorised exam centre, 30 multiple-choice questions, pass with at least 27 correct;
+  // 60 minutes per the press. In Portuguese. Taxi driver certificate holders are exempt.
+  // Categories follow the initial course subjects (art. 10(6); Portaria 293/2018 Annex I), with
+  // the regulation module split in three; the IMT publishes no weights, so 6/4/5/5/3/4/3 is
+  // Tigertest's. Five tests of 30 (150 items); the last items of each pool (50) are
+  // training-only. Single best answer of four, equal weight, so passPct 90 = 27 of 30.
+  blueprint: {
+    pttvdeAtividade: 6,
+    pttvdeVeiculo: 4,
+    pttvdeServico: 5,
+    pttvdeComunicacao: 5,
+    pttvdeNormas: 3,
+    pttvdeTecnicas: 4,
+    pttvdeEmergencia: 3,
+  },
+  // Four topic sets, not testSets(): 4 + 5 tests = 9 dashboard steps.
+  trainingSets: [
+    { setNumber: 1, id: 22801, name: "Regulamentação da atividade TVDE", categories: ["pttvdeAtividade"], size: 42, weightLabel: "6 das 30 perguntas do teste" },
+    { setNumber: 2, id: 22802, name: "Veículo, preço e direitos do utilizador", categories: ["pttvdeVeiculo", "pttvdeServico"], size: 60, weightLabel: "9 das 30 perguntas do teste" },
+    { setNumber: 3, id: 22803, name: "Passageiros e emergências", categories: ["pttvdeComunicacao", "pttvdeEmergencia"], size: 56, weightLabel: "8 das 30 perguntas do teste" },
+    { setNumber: 4, id: 22804, name: "Normas e técnicas de condução", categories: ["pttvdeNormas", "pttvdeTecnicas"], size: 42, weightLabel: "7 das 30 perguntas do teste" },
+  ],
+  categoryLabels: {
+    pttvdeAtividade: "Regulamentação da atividade TVDE",
+    pttvdeVeiculo: "Veículo, dístico e registo",
+    pttvdeServico: "Serviço, preço e direitos do utilizador",
+    pttvdeComunicacao: "Comunicação e relações interpessoais",
+    pttvdeNormas: "Normas legais de condução",
+    pttvdeTecnicas: "Técnicas de condução defensiva e eficiente",
+    pttvdeEmergencia: "Emergências e primeiros socorros",
+  },
+  copy: {
+    guestPrompt: "para guardar o progresso no exame TVDE e ver todas as perguntas em que errou",
+    trainingHeading: "Treine por tema do curso TVDE",
+    trainingSub: "Quatro conjuntos sobre a lei TVDE, os passageiros e a condução. Correção imediata, e as perguntas erradas voltam até as dominar.",
+    testsHeading: "Testes de simulação · 30 perguntas como no exame real, 27 para passar",
+    heroSubs: [
+      "Quatro conjuntos de treino, cinco testes. A regulamentação da atividade é o tema com mais perguntas.",
+      "Domine primeiro o conjunto, depois faça o teste.",
+      "Já vai a meio. Faça um teste de 30 perguntas.",
+      "Reveja os erros e volte a testar.",
+      "Tudo verde. Está pronto para o exame TVDE.",
+    ],
+    sourceLine: "Segundo a Lei n.º 45/2018 na redação da Lei n.º 59/2026, o Código da Estrada e a Portaria n.º 293/2018, em novembro de 2026. Perguntas originais, não copiadas da lista do IMT.",
+    analyticsKey: "pttvde",
+  },
+};
+
+const ptvigil: ExamConfig = {
+  id: "ptvigil",
+  stateCode: "PTVIGIL",
+  idBase: 23000,
+  slug: "/exame-vigilante",
+  landingPath: "/pt/exame-vigilante-seguranca-privada",
+  name: "Exame de Vigilante de Segurança Privada",
+  shortName: "Exame de vigilante",
+  examLabel: "Exame teórico de vigilante (CNESP)",
+  fullName: "Exame teórico de acesso à profissão de segurança privado, especialidade de vigilante (PSP, CNESP)",
+  questionIdPrefix: "PTVIG-",
+  icon: "shield",
+  testCount: 8,
+  questionsPerTest: 20,
+  passPct: 50,
+  language: "pt",
+  locale: "pt-PT",
+  english: {
+    name: "Portugal Private Security Guard Exam (PSP)",
+    shortName: "Portugal security guard exam",
+    fullName: "Portugal private security guard (vigilante) theory exam set by the PSP at the CNESP, in Portuguese",
+  },
+  review: { pt: "model" },
+  // Real exam (Despacho n.º 8270/2019 of the PSP Director Nacional, DR 2.ª série n.º 179, 18 Sep
+  // 2019, Anexo arts. 1.º to 14.º; checked 2026-11-06): run by the PSP Departamento de Segurança
+  // Privada at the CNESP, on computer, 40 minutes, 20 questions (multiple choice with 2 to 4
+  // options and one correct, or true/false; figures allowed), pass with at least 10 correct;
+  // content of the base and specific modules of Portaria 148/2014 (as amended by Portaria
+  // 114/2015); booked by the training provider on SIGESP; pass valid 6 months for the card.
+  // Categories follow the units BAS01-BAS06, UFCD 4478/4798, VIG01-VIG07, ALM01-ALM02; the
+  // 4/2/3/3/2/2/1/3 split is Tigertest's (the PSP publishes no weights). Eight real-length
+  // tests of 20; 40 training-only spares. Four options always, so passPct 50 = the real 10 of 20.
+  blueprint: {
+    ptvigRegime: 4,
+    ptvigDireitos: 2,
+    ptvigPenal: 3,
+    ptvigAcessos: 3,
+    ptvigVigilancia: 2,
+    ptvigConflitos: 2,
+    ptvigRelatorios: 1,
+    ptvigEmergencia: 3,
+  },
+  // Four topic sets, not testSets(): 4 + 8 tests = 12 dashboard steps.
+  trainingSets: [
+    { setNumber: 1, id: 23001, name: "Regime jurídico e direitos fundamentais", categories: ["ptvigRegime", "ptvigDireitos"], size: 56, weightLabel: "6 de 20 perguntas por teste" },
+    { setNumber: 2, id: 23002, name: "Direito penal, detenção e conflitos", categories: ["ptvigPenal", "ptvigConflitos"], size: 48, weightLabel: "5 de 20 perguntas por teste" },
+    { setNumber: 3, id: 23003, name: "Acessos, vigilância e relatórios", categories: ["ptvigAcessos", "ptvigVigilancia", "ptvigRelatorios"], size: 60, weightLabel: "6 de 20 perguntas por teste" },
+    { setNumber: 4, id: 23004, name: "Incêndios, socorrismo e segurança no trabalho", categories: ["ptvigEmergencia"], size: 36, weightLabel: "3 de 20 perguntas por teste" },
+  ],
+  categoryLabels: {
+    ptvigRegime: "Regime jurídico da segurança privada",
+    ptvigDireitos: "Direitos fundamentais e deontologia",
+    ptvigPenal: "Direito penal, detenção e prova",
+    ptvigAcessos: "Segurança física e controlo de acessos",
+    ptvigVigilancia: "Vigilância eletrónica e alarmes",
+    ptvigConflitos: "Gestão de conflitos e defesa pessoal",
+    ptvigRelatorios: "Relatórios e comunicações",
+    ptvigEmergencia: "Incêndios, socorrismo e segurança no trabalho",
+  },
+  copy: {
+    guestPrompt: "para guardar o seu progresso para o exame de vigilante e não perder nenhuma pergunta errada",
+    trainingHeading: "Conjuntos de treino",
+    trainingSub: "Cada conjunto cobre um bloco das matérias do curso. Vê a resposta certa logo a seguir, e as perguntas que erra voltam até as dominar.",
+    testsHeading: "Testes · 20 perguntas, 10 certas para passar",
+    heroSubs: [
+      "Quatro conjuntos de treino e oito testes. O regime jurídico da segurança privada é o que mais pesa.",
+      "Domine o conjunto e depois faça o teste.",
+      "Já vai a meio. Faça um teste completo.",
+      "Reveja os erros e volte a fazer o teste.",
+      "Tudo a verde. Está pronto para o exame no CNESP.",
+    ],
+    sourceLine: "Segundo a Lei n.º 34/2013 (redação da Lei n.º 46/2019), o Código Penal, o Código de Processo Penal e as matérias da Portaria n.º 148/2014, em vigor em novembro de 2026. Perguntas originais, não copiadas das questões divulgadas pela PSP; sempre quatro respostas, sem verdadeiro ou falso.",
+    analyticsKey: "ptvigil",
+  },
+};
+
 const bedriving: ExamConfig = {
   id: "bedriving",
   stateCode: "BEDRIVE",
@@ -15141,7 +15439,7 @@ const sgvl: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, nhie, cna, ptcb, phleb, ccma, cma, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, sfadmin, phr, cisa, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, bedriving, dkteori, setrafik, fitheory, grdriving, rodrpciv, hukresz, mttheory, detheorie, demotorrad, deaevo, de34a, deheilpr, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, gulfrn, inrto, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, nhie, cna, ptcb, phleb, ccma, cma, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, sfadmin, phr, cisa, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, dkteori, setrafik, fitheory, grdriving, rodrpciv, hukresz, mttheory, detheorie, demotorrad, deaevo, de34a, deheilpr, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, gulfrn, inrto, htl, cst, crcst];
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
 export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA, realestatePA, realestateIL, realestateOH, realestateGA, realestateNC, realestateMI, realestateVA, realestateWA, realestateAZ, realestateTN, realestateLA, insuranceNY, insurancePA, insuranceIL, insuranceOH, insuranceGA, insuranceNC, insuranceMI, insuranceNJ, insuranceVA, insuranceWA, pncNY, pncPA, pncIL, pncOH, pncGA, pncNC, pncMI, pncNJ, pncVA, pncWA];

@@ -13,6 +13,8 @@ const TEACHES: Record<string, string> = {
   deaevo: "an AEVO trainer course (Ausbildung der Ausbilder)",
   de34a: "a Sachkunde 34a preparation course",
   deheilpr: "a Heilpraktiker exam preparation course",
+  pttvde: "the TVDE driver initial course",
+  ptvigil: "a private security (vigilante) training course",
   // The DMV landing (/dmv-practice-test)
   dmv: "driver's ed or run a driving school",
   // Healthcare programs

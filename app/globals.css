@@ -2566,6 +2566,62 @@
     --brand-gradient-to: 144 35% 92%;
   }
 
+  /* Portugal IMT motorcycle theory theme (14 75% 30% clashed with caweld, ctet, biharpolice) */
+  [data-theme="ptmoto"] {
+    --brand: 14 100% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 14 70% 96%;
+    --brand-hover: 14 100% 26%;
+    --brand-dark: 14 100% 22%;
+    --brand-darker: 14 100% 16%;
+    --brand-muted: 14 30% 64%;
+    --brand-border: 14 35% 80%;
+    --brand-border-light: 14 30% 90%;
+    --brand-gradient-to: 30 55% 95%;
+  }
+
+  /* Portugal CAM (Driver CPC) exam theme (28 90% 20% clashed with escapcond) */
+  [data-theme="ptcam"] {
+    --brand: 28 100% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 28 60% 96%;
+    --brand-hover: 28 100% 14%;
+    --brand-dark: 28 100% 10%;
+    --brand-darker: 28 100% 6%;
+    --brand-muted: 28 30% 64%;
+    --brand-border: 28 35% 80%;
+    --brand-border-light: 28 30% 90%;
+    --brand-gradient-to: 28 60% 94%;
+  }
+
+  /* Portugal TVDE ride-hailing driver exam theme (266 60% 34% clashed with esvigilante) */
+  [data-theme="pttvde"] {
+    --brand: 278 45% 34%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 278 50% 96%;
+    --brand-hover: 278 45% 30%;
+    --brand-dark: 278 45% 26%;
+    --brand-darker: 278 45% 20%;
+    --brand-muted: 278 30% 64%;
+    --brand-border: 278 35% 80%;
+    --brand-border-light: 278 30% 90%;
+    --brand-gradient-to: 278 50% 94%;
+  }
+
+  /* Portugal private security guard exam (vigilante, PSP) theme */
+  [data-theme="ptvigil"] {
+    --brand: 212 85% 20%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 212 60% 96%;
+    --brand-hover: 212 85% 16%;
+    --brand-dark: 212 85% 12%;
+    --brand-darker: 212 85% 6%;
+    --brand-muted: 212 30% 64%;
+    --brand-border: 212 35% 80%;
+    --brand-border-light: 212 30% 90%;
+    --brand-gradient-to: 212 55% 92%;
+  }
+
   /* SBI PO theme: bank blue (v2 exam; matches lib/v2/exams/sbipo.ts theme) */
   [data-theme="sbipo"] {
     --brand: 212 70% 46%;
@@ -6308,6 +6364,54 @@
     --brand-muted: 144 15% 45%;
     --brand-dark: 144 20% 65%;
     --brand-darker: 144 20% 78%;
+  }
+
+  .dark [data-theme="ptmoto"] {
+    --brand: 14 100% 43.3%;
+    --brand-hover: 14 100% 35.3%;
+    --brand-light: 14 45% 13%;
+    --brand-gradient-to: 30 40% 11%;
+    --brand-border-light: 14 30% 24%;
+    --brand-border: 14 35% 34%;
+    --brand-muted: 14 30% 45%;
+    --brand-dark: 14 100% 65%;
+    --brand-darker: 14 100% 78%;
+  }
+
+  .dark [data-theme="ptcam"] {
+    --brand: 28 100% 37%;
+    --brand-hover: 28 100% 29%;
+    --brand-light: 28 45% 13%;
+    --brand-gradient-to: 28 40% 11%;
+    --brand-border-light: 28 30% 24%;
+    --brand-border: 28 35% 34%;
+    --brand-muted: 28 30% 45%;
+    --brand-dark: 28 100% 65%;
+    --brand-darker: 28 100% 78%;
+  }
+
+  .dark [data-theme="pttvde"] {
+    --brand: 278 45% 50%;
+    --brand-hover: 278 45% 42%;
+    --brand-light: 278 45% 13%;
+    --brand-gradient-to: 278 40% 11%;
+    --brand-border-light: 278 30% 24%;
+    --brand-border: 278 35% 34%;
+    --brand-muted: 278 30% 45%;
+    --brand-dark: 278 45% 65%;
+    --brand-darker: 278 45% 78%;
+  }
+
+  .dark [data-theme="ptvigil"] {
+    --brand: 212 85% 47.7%;
+    --brand-hover: 212 85% 39.7%;
+    --brand-light: 212 45% 13%;
+    --brand-gradient-to: 212 40% 11%;
+    --brand-border-light: 212 30% 24%;
+    --brand-border: 212 35% 34%;
+    --brand-muted: 212 30% 45%;
+    --brand-dark: 212 85% 65%;
+    --brand-darker: 212 85% 78%;
   }
 
   .dark [data-theme="sbipo"] {

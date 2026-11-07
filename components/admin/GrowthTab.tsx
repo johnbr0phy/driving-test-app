@@ -12,6 +12,7 @@ import { CARD, ROW, STICKY_COL, TabError, TabHeader, TabLoading, TableScroll, fm
 import { BasicsProgress } from "@/components/admin/BasicsProgress";
 import { ExitQuestions } from "@/components/admin/ExitQuestions";
 import { LayoutUsage } from "@/components/admin/LayoutUsage";
+import { LayoutRetention } from "@/components/admin/LayoutRetention";
 import { WeeklyActiveLearners } from "@/components/admin/WeeklyActiveLearners";
 
 // ─── Palette (validated: dataviz reference palette, light mode) ─────────────
@@ -1145,6 +1146,9 @@ export function GrowthTab() {
 
         {/* Set N, Test N dashboards against sets first */}
         <LayoutUsage />
+
+        {/* Every browser: comes back by layout, and after an early test */}
+        <LayoutRetention />
 
         {/* Quiz creation, play and report counters. */}
         {metrics.quizzes && <QuizzesCard data={metrics.quizzes} />}

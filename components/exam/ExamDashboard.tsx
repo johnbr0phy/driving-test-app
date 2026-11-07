@@ -21,6 +21,7 @@ import { AttemptChart, sessionsToAttemptPoints } from "@/components/AttemptChart
 import { computeMissSummary } from "@/lib/missedQuestions";
 import { ExamConfig, TrainingPart, examFamilyId, examLandingPath, getExamById, examTrainingParts, getExamVariant, hasTestSets, trainingPartName, trainingPartOf } from "@/lib/exams";
 import { useTestSetMigration } from "@/hooks/useTestSetMigration";
+import { trackLayoutRetention } from "@/lib/layoutRetention";
 import { ExamStateLine, ExamStatePrompt } from "@/components/exam/ExamStatePicker";
 import { LanguageLabel, TestLanguageChoice, TestSettingsLine } from "@/components/TestLanguageChoice";
 import { ClassBanner } from "@/components/exam/ClassBanner";
@@ -186,6 +187,13 @@ export function ExamDashboard({ exam: source }: { exam: ExamConfig }) {
 
   // DMV-style exams alternate Set 1, Test 1, Set 2, Test 2...
   const interleaved = hasTestSets(exam) && parts.length === routes.testIds.length;
+
+  // Retention by layout (lib/layoutRetention): the first view of this
+  // dashboard puts the browser in the cohort of the layout it saw.
+  useEffect(() => {
+    if (!hydrated || forwardTo) return;
+    trackLayoutRetention(source.id, { layout: interleaved ? "I" : "S" });
+  }, [hydrated, forwardTo, source.id, interleaved]);
 
   // One card per training step and per practice test; the list below puts
   // them in order.

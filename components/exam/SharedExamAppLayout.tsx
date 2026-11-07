@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { V2Shell } from "@/components/v2/V2Shell";
 import { examAppMetadata, examV2AppMetadata } from "@/lib/examSeo";
 import { examForAppSlug } from "@/lib/examAppRoute";
+import { LayoutRetentionTracker } from "@/components/exam/LayoutRetentionTracker";
 
 // Layout of the shared app/[slug]/test and app/[slug]/practice routes: the
 // same wrapper and metadata each exam's own app/<slug>/layout.tsx gives its
@@ -18,5 +19,10 @@ export async function SharedExamAppLayout({ params, children }: { params: Promis
   const route = examForAppSlug((await params).slug);
   if (!route) notFound();
   if (route.kind === "v2") return <V2Shell theme={route.exam.theme}>{children}</V2Shell>;
-  return <div data-theme={route.exam.id} className="flex-1 flex flex-col">{children}</div>;
+  return (
+    <div data-theme={route.exam.id} className="flex-1 flex flex-col">
+      <LayoutRetentionTracker examId={route.exam.id} />
+      {children}
+    </div>
+  );
 }

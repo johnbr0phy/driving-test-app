@@ -3632,6 +3632,19 @@
   }
 
   /* Salesforce Platform Administrator theme */
+  [data-theme="ccaf"] {
+    --brand: 12 60% 38%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 12 60% 96%;
+    --brand-hover: 12 60% 32%;
+    --brand-dark: 12 60% 28%;
+    --brand-darker: 12 55% 20%;
+    --brand-muted: 12 35% 70%;
+    --brand-border: 12 35% 80%;
+    --brand-border-light: 12 33% 89%;
+    --brand-gradient-to: 30 60% 95%;
+  }
+
   [data-theme="sfadmin"] {
     --brand: 238 80% 28%;
     --brand-foreground: 0 0% 100%;
@@ -7102,6 +7115,18 @@
     --brand-muted: 343 20% 45%;
     --brand-dark: 343 35% 65%;
     --brand-darker: 343 30% 78%;
+  }
+
+  .dark [data-theme="ccaf"] {
+    --brand: 12 60% 50%;
+    --brand-hover: 12 60% 42%;
+    --brand-light: 12 45% 13%;
+    --brand-gradient-to: 30 40% 11%;
+    --brand-border-light: 12 33% 24%;
+    --brand-border: 12 35% 34%;
+    --brand-muted: 12 35% 45%;
+    --brand-dark: 12 60% 69%;
+    --brand-darker: 12 55% 78%;
   }
 
   .dark [data-theme="sfadmin"] {

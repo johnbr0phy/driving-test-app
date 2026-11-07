@@ -3891,6 +3891,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Pearson VUE Texas candidate handbook and content outline effective September 1, 2026, checked November 2026",
     source: { name: "Pearson VUE: Texas Insurance", url: "https://www.pearsonvue.com/us/en/tx/insurance.html" },
   },
+  ccaf: {
+    answer:
+      "Claude Certified Architect: Foundations is Anthropic's technical certification for solution architects who design and build agent systems with Claude. Anthropic says it covers Claude Code, the Claude Agent SDK, the Claude API and Model Context Protocol, and that every exam is proctored and identity-verified. Study guides report 60 scenario questions in 120 minutes with 720 out of 1,000 to pass, and five weighted domains. Tigertest could not read Anthropic's own exam guide, and guides disagree on the fee and on who can sit it, so confirm those with Anthropic.",
+    rows: [
+      { label: "Questions", value: "60 scenario questions (reported by guides)" },
+      { label: "Time", value: "120 minutes (reported by guides)" },
+      { label: "Passing score", value: "720 of 1,000, scaled (reported by guides)" },
+      { label: "Largest domain", value: "Agentic Architecture & Orchestration, 27% (reported by guides)" },
+      { label: "Fee and access", value: "Guides disagree; confirm with Anthropic" },
+      { label: "Run by", value: "Anthropic" },
+    ],
+    basedOn: "Anthropic's certification pages, plus study guides for the exam format, checked November 2026",
+    source: { name: "Anthropic Academy: Claude Certified Architect", url: "https://anthropic.skilljar.com/claude-certified-architect-foundations-access-request" },
+  },
   sfadmin: {
     answer:
       "The Salesforce Certified Platform Administrator exam, formerly Salesforce Certified Administrator, is Salesforce's core admin certification. Guides quoting the current exam guide give 60 scored multiple-choice and multiple-select questions plus up to 5 unscored ones in 105 minutes, with 68% needed to pass the English exam. Its eight sections were refreshed for 2026: Configuration and Setup 15%, Object Manager and Lightning App Builder 15%, Sales and Marketing Applications 10%, Service and Support Applications 10%, Productivity and Collaboration 10%, Data and Analytics Management 17%, Automation 15% and Agentforce 8%.",

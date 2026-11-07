@@ -466,14 +466,14 @@
   "state": "ALL",
   "questionId": "U-034",
   "category": "roadSigns",
-  "question": "Biển nào cho biết đường một chiều?",
+  "question": "Biển nào cho biết hướng xe phải đi trên đường một chiều?",
   "optionA": "Biển báo cấm vào (DO NOT ENTER)",
-  "optionB": "Mũi tên chỉ về một hướng",
-  "optionC": "Hình chữ nhật màu trắng có mũi tên",
-  "optionD": "Cả B và C",
-  "correctAnswer": "D",
-  "correctIndex": 3,
-  "explanation": "Đường một chiều được đánh dấu bằng mũi tên đen trên hình chữ nhật màu trắng thể hiện hướng giao thông."
+  "optionB": "Biển ONE WAY (một chiều) hình chữ nhật màu đen trắng có mũi tên",
+  "optionC": "Hình thoi màu vàng có mũi tên",
+  "optionD": "Hình chữ nhật màu xanh lá có mũi tên",
+  "correctAnswer": "B",
+  "correctIndex": 1,
+  "explanation": "Biển ONE WAY (một chiều) là hình chữ nhật màu đen trắng có mũi tên chỉ hướng giao thông. Mũi tên màu trắng trên nền đen ở biển nằm ngang và màu đen trên nền trắng ở biển thẳng đứng."
  },
  {
   "type": "Universal",

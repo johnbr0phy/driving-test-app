@@ -76,6 +76,8 @@ const BORROWED_SETS: Record<string, string> = {
   mtmoto: "moto", mtcpc: "cdl", mttaxi: "driving", mtguard: "security",
   // Sweden (Nov 2026): motorcycle the motorcycle tiger, jägarexamen the hunter tiger, citizenship the Life in the UK tiger, högskoleprovet the SAT tiger.
   semoto: "moto", sejakt: "hunter", semedb: "uklitu", sehp: "sat",
+  // Denmark (Nov 2026): motorcycle the motorcycle tiger, hunting the hunter tiger, citizenship and residence the civics tiger.
+  dkmoto: "moto", dkjagt: "hunter", dkindfoed: "civics", dkmedborger: "civics",
   // Bank exams wear the IBPS PO tiger; state police exams the police tiger.
   sbipo: "ibpspo", sbiclerk: "ibpspo", ibpsrrb: "ibpspo",
   delhipolice: "police", biharpolice: "police", rajpolice: "police", mppolice: "police",

@@ -2355,6 +2355,62 @@
     --brand-gradient-to: 10 60% 96%;
   }
 
+  /* Denmark motorcycle theory test theme */
+  [data-theme="dkmoto"] {
+    --brand: 12 85% 24%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 12 70% 96%;
+    --brand-hover: 12 85% 20%;
+    --brand-dark: 12 85% 18%;
+    --brand-darker: 12 80% 13%;
+    --brand-muted: 12 35% 70%;
+    --brand-border: 12 40% 82%;
+    --brand-border-light: 12 40% 90%;
+    --brand-gradient-to: 20 60% 96%;
+  }
+
+  /* Danish citizenship test (indfødsretsprøven) theme */
+  [data-theme="dkindfoed"] {
+    --brand: 350 90% 40%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 350 80% 96%;
+    --brand-hover: 350 90% 34%;
+    --brand-dark: 350 90% 28%;
+    --brand-darker: 350 85% 20%;
+    --brand-muted: 350 40% 70%;
+    --brand-border: 350 45% 80%;
+    --brand-border-light: 350 45% 90%;
+    --brand-gradient-to: 0 0% 98%;
+  }
+
+  /* Danish permanent residence test (medborgerskabsprøven) theme */
+  [data-theme="dkmedborger"] {
+    --brand: 202 100% 26%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 202 80% 96%;
+    --brand-hover: 202 100% 21%;
+    --brand-dark: 202 100% 17%;
+    --brand-darker: 202 100% 12%;
+    --brand-muted: 202 40% 68%;
+    --brand-border: 202 45% 80%;
+    --brand-border-light: 202 45% 90%;
+    --brand-gradient-to: 0 0% 98%;
+  }
+
+  /* Danish hunting licence test (jagtprøven) theme */
+  [data-theme="dkjagt"] {
+    --brand: 100 15% 32%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 100 20% 95%;
+    --brand-hover: 100 15% 27%;
+    --brand-dark: 100 16% 22%;
+    --brand-darker: 100 18% 15%;
+    --brand-muted: 100 12% 66%;
+    --brand-border: 100 15% 78%;
+    --brand-border-light: 100 15% 88%;
+    --brand-gradient-to: 45 60% 94%;
+  }
+
   /* Sweden driving theory theme */
   [data-theme="setrafik"] {
     --brand: 203 85% 25%;
@@ -6299,6 +6355,50 @@
     --brand-muted: 348 35% 45%;
     --brand-dark: 348 70% 65%;
     --brand-darker: 348 65% 78%;
+  }
+  .dark [data-theme="dkmoto"] {
+    --brand: 12 85% 46%;
+    --brand-hover: 12 85% 38%;
+    --brand-light: 12 45% 13%;
+    --brand-gradient-to: 20 40% 11%;
+    --brand-border-light: 12 35% 24%;
+    --brand-border: 12 40% 34%;
+    --brand-muted: 12 35% 45%;
+    --brand-dark: 12 85% 65%;
+    --brand-darker: 12 80% 78%;
+  }
+  .dark [data-theme="dkindfoed"] {
+    --brand: 350 90% 48.1%;
+    --brand-hover: 350 90% 40.1%;
+    --brand-light: 350 45% 13%;
+    --brand-gradient-to: 0 0% 11%;
+    --brand-border-light: 350 35% 24%;
+    --brand-border: 350 40% 34%;
+    --brand-muted: 350 40% 45%;
+    --brand-dark: 350 90% 65%;
+    --brand-darker: 350 85% 78%;
+  }
+  .dark [data-theme="dkmedborger"] {
+    --brand: 202 100% 37.8%;
+    --brand-hover: 202 100% 29.8%;
+    --brand-light: 202 45% 13%;
+    --brand-gradient-to: 0 0% 11%;
+    --brand-border-light: 202 35% 24%;
+    --brand-border: 202 40% 34%;
+    --brand-muted: 202 40% 45%;
+    --brand-dark: 202 100% 65%;
+    --brand-darker: 202 100% 78%;
+  }
+  .dark [data-theme="dkjagt"] {
+    --brand: 100 15% 42%;
+    --brand-hover: 100 15% 34%;
+    --brand-light: 100 20% 13%;
+    --brand-gradient-to: 45 40% 11%;
+    --brand-border-light: 100 15% 24%;
+    --brand-border: 100 15% 34%;
+    --brand-muted: 100 12% 45%;
+    --brand-dark: 100 16% 65%;
+    --brand-darker: 100 18% 78%;
   }
 
   .dark [data-theme="setrafik"] {

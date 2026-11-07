@@ -18,6 +18,9 @@ const TEACHES: Record<string, string> = {
   sejakt: "a jägarexamen course",
   semedb: "SFI, samhällsorientering or folkhögskola civics classes",
   sehp: "a högskoleprovet course",
+  dkjagt: "a jagttegnskursus (hunting licence course)",
+  dkindfoed: "a language school course for the indfødsretsprøve",
+  dkmedborger: "a language school course for the medborgerskabsprøve",
   mttaxi: "the 46-hour taxi driver course",
   mtguard: "an Award in Private Security Guard Services course",
   // The DMV landing (/dmv-practice-test)

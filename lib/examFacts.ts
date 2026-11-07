@@ -2544,6 +2544,68 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "UHR's citizenship test pages, the study material Sverige i fokus (corrected 10 August 2026), Ordinance (2026:451) on citizenship tests, Migrationsverket's notices of 6 May and 30 September 2026 and press reports of the 15 August 2026 sitting, checked November 2026",
     source: { name: "UHR: About the citizenship test (in Swedish)", url: "https://www.uhr.se/medborgarskapsprovet/om-medborgarskapsprovet/" },
   },
+  dkmoto: {
+    answer:
+      "The Danish theory test (teoriprøve) for a motorcycle licence, categories A1, A2 and A, is run by Færdselsstyrelsen, the Danish Road Traffic Authority, under the same rules as the car test. It lasts about half an hour and you may make at most five errors; an unanswered question counts as an error. On the digital test, held on a touch screen, each question shows a computer-generated picture of a traffic situation and you pick the correct answer or answers. Questions are drawn at random from the teaching plan for motorcycles. Digital theory tests in Danish and English run at all of Færdselsstyrelsen's digital test sites; German only in Aabenraa. You take it after lessons with an approved motorcycle instructor. A1 can be issued from 18, A2 from 20 and A from 24, or from 22 after two years with A2.",
+    rows: [
+      { label: "Run by", value: "Færdselsstyrelsen (Danish Road Traffic Authority)" },
+      { label: "Time", value: "About half an hour" },
+      { label: "Pass rule", value: "At most 5 errors (guides: 25 questions, so 20 right)" },
+      { label: "Format", value: "Picture-based, one or more correct answers" },
+      { label: "Languages", value: "Danish and English at every digital site; German in Aabenraa" },
+      { label: "Tigertest mock tests", value: "8 x 25 questions, 20 to pass" },
+      { label: "Licence ages", value: "A1 from 18, A2 from 20, A from 24 (22 after 2 years of A2)" },
+    ],
+    basedOn: "Færdselsstyrelsen's pages on digital theory tests and its published randomisation key for the digital category A test, and the teaching plan for categories AM, A1, A2 and A (undervisningsplan, version 1.0 2026, in use from 1 July 2026), checked November 2026",
+    source: { name: "Færdselsstyrelsen: Hvor kan jeg tage en teoriprøve?", url: "https://www.fstyr.dk/erhverv/koereskoler-og-koerelaerere/digitale-teoriproever" },
+  },
+  dkindfoed: {
+    answer:
+      "The Danish citizenship test (indfødsretsprøven) is a written test for people applying for Danish citizenship by statute. It has 45 multiple-choice questions in Danish and lasts 45 minutes. 35 questions come from the official free learning material on Danish society, culture and history (Læremateriale til indfødsretsprøven, in text and audio), 5 are about current affairs from the months before the test, and 5 are about Danish values. To pass you need at least 36 correct answers, including at least 4 of the 5 values questions. Most questions have three options and some are yes or no. The test is run by SIRI (the Danish Agency for International Recruitment and Integration) and held twice a year, in May or June and in November or December, at language centres across Denmark; SIRI publishes each test and its answers afterwards. In May 2025, 58.2% of candidates passed.",
+    rows: [
+      { label: "Run by", value: "SIRI, under the Ministry of Immigration and Integration" },
+      { label: "Questions", value: "45 (35 learning material, 5 current affairs, 5 values)" },
+      { label: "Time", value: "45 minutes" },
+      { label: "Pass mark", value: "36 of 45, with at least 4 of 5 values questions" },
+      { label: "Language", value: "Danish" },
+      { label: "When", value: "Twice a year, May/June and November/December" },
+      { label: "Tigertest mock tests", value: "8 x 40 questions in Danish, 36 to pass" },
+    ],
+    basedOn: "Lex (Den Store Danske) and Lovguiden on the indfødsretsprøve, and the topics of SIRI's learning material, checked November 2026",
+    source: { name: "Lex: Indfødsretsprøve (in Danish)", url: "https://lex.dk/indf%C3%B8dsretspr%C3%B8ve" },
+  },
+  dkmedborger: {
+    answer:
+      "The Danish active citizenship test (medborgerskabsprøven) is a written test on democracy and everyday life in Denmark. Passing it meets the citizenship requirement, one of four supplementary conditions for permanent residence (tidsubegrænset opholdstilladelse), of which applicants must meet two. It has 25 multiple-choice questions in Danish with two or three options each, answered on paper in 30 minutes with no aids. You pass with at least 20 correct answers, and all questions count equally. The questions are written within SIRI's official free learning material (Læremateriale til medborgerskabsprøven, 26 fact sheets on school, work, welfare, health, family life, democracy, rights and duties, geography, history and culture). The test is run by SIRI (the Danish Agency for International Recruitment and Integration) through approved language centres, twice a year in May or June and November or December; SIRI publishes each test afterwards.",
+    rows: [
+      { label: "Run by", value: "SIRI, through approved language centres" },
+      { label: "Questions", value: "25 multiple choice (2 or 3 options)" },
+      { label: "Time", value: "30 minutes, no aids" },
+      { label: "Pass mark", value: "20 of 25, all questions equal" },
+      { label: "Language", value: "Danish" },
+      { label: "When", value: "Twice a year, May/June and November/December" },
+      { label: "Used for", value: "1 of 4 supplementary conditions for permanent residence" },
+      { label: "Tigertest mock tests", value: "8 x 25 questions in Danish, 20 to pass" },
+    ],
+    basedOn: "Executive order no. 452 of 13 May 2024 on the medborgerskabsprøve, the May 2025 test booklet and SIRI's learning material (August 2024), checked November 2026",
+    source: { name: "Retsinformation: Bekendtgørelse om medborgerskabsprøven (in Danish)", url: "https://www.retsinformation.dk/eli/lta/2024/452" },
+  },
+  dkjagt: {
+    answer:
+      "The Danish hunting test (jagtprøven) is the test for a first Danish hunting licence (jagttegn). It has a written part and a practical part, and the written part must be passed first. The written test has 40 questions in 30 minutes; you pass with at least 36 correct, and unanswered questions count as errors. Questions are yes/no or multiple choice, some with a picture of a species or a hunting situation, and they can be read aloud. Topics come from the official guidelines: species identification and game biology, game management, hunting weapons and ammunition, hunting law, handling shot game, hunting ethics, hunting methods and leadership, and shooting. The practical test covers safe shotgun handling in the field, judging distances to six game figures and shooting at four clay targets. To sign up you must have finished the compulsory hunting course (at least four days) and turn 16 in the calendar year of the test; you may take up to three written and three practical tests within 18 months of finishing the course. The test is run by the Danish Agency for Green Land Conversion and Aquatic Environment and held by Naturstyrelsen, in Danish.",
+    rows: [
+      { label: "Run by", value: "Styrelsen for Grøn Arealomlægning og Vandmiljø, held by Naturstyrelsen" },
+      { label: "Written test", value: "40 questions in 30 minutes" },
+      { label: "Pass mark", value: "36 of 40; unanswered questions count as errors" },
+      { label: "Practical test", value: "Shotgun handling, distance judging, 4 clay targets" },
+      { label: "Before the test", value: "Compulsory hunting course; turn 16 in the calendar year" },
+      { label: "Attempts", value: "Up to 3 written and 3 practical within 18 months of the course" },
+      { label: "Language", value: "Danish" },
+      { label: "Tigertest mock tests", value: "5 x 40 questions in Danish, 36 to pass" },
+    ],
+    basedOn: "Instruks for jagtprøven 2026, the 2025 guidelines for questions in the written hunting test, the 2025 guide to hunting licence teaching and Executive Order no. 238 of 27 February 2025 on hunting licences, checked November 2026",
+    source: { name: "SGAV: Instruks for jagtprøven 2026 (PDF, in Danish)", url: "https://sgavmst.dk/media/ttndlsbs/instruks-for-jagtproeven-2026.pdf" },
+  },
   sehp: {
     answer:
       "Högskoleprovet (the Swedish Scholastic Aptitude Test, SweSAT) is Sweden's university admission test, set by the Swedish Council for Higher Education (UHR) and given by the universities each spring and autumn. It has five passes of 40 multiple-choice items, 55 minutes each: two verbal, two quantitative and one unscored try-out pass, so 160 items count. The verbal part has ORD (vocabulary), LÄS (Swedish reading), MEK (sentence completion) and ELF (English reading); the quantitative part has XYZ (problem solving), KVA (quantitative comparisons), NOG (data sufficiency) and DTK (diagrams, tables and maps). There are no penalties for wrong answers. Each part is normed separately to a 0.00 to 2.00 scale, and the result is their mean, given in steps of 0.05. Results are valid for eight years and the best valid result counts. The test is in Swedish, with ELF in English.",

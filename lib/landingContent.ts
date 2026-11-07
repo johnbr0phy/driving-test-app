@@ -48,6 +48,10 @@ import setrafikSv from "@/lib/landings/setrafik.sv.json";
 import semotoSv from "@/lib/landings/semoto.sv.json";
 import sejaktSv from "@/lib/landings/sejakt.sv.json";
 import semedbSv from "@/lib/landings/semedb.sv.json";
+import dkteoriDa from "@/lib/landings/dkteori.da.json";
+import dkindfoedDa from "@/lib/landings/dkindfoed.da.json";
+import dkmedborgerDa from "@/lib/landings/dkmedborger.da.json";
+import dkjagtDa from "@/lib/landings/dkjagt.da.json";
 import sehpSv from "@/lib/landings/sehp.sv.json";
 
 const LANDINGS: Record<string, TranslatedLandingContent> = {
@@ -69,6 +73,10 @@ const LANDINGS: Record<string, TranslatedLandingContent> = {
   "semoto.sv": semotoSv as TranslatedLandingContent,
   "sejakt.sv": sejaktSv as TranslatedLandingContent,
   "semedb.sv": semedbSv as TranslatedLandingContent,
+  "dkteori.da": dkteoriDa as TranslatedLandingContent,
+  "dkindfoed.da": dkindfoedDa as TranslatedLandingContent,
+  "dkmedborger.da": dkmedborgerDa as TranslatedLandingContent,
+  "dkjagt.da": dkjagtDa as TranslatedLandingContent,
   "sehp.sv": sehpSv as TranslatedLandingContent,
 };
 

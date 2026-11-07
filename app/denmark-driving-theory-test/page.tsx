@@ -9,6 +9,7 @@ import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
 import "@/lib/banks/dkteori";
 import { SITE_URL } from "@/lib/siteUrl";
+import { examLandingAlternates } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -25,6 +26,7 @@ export const metadata: Metadata = {
     "denmark driving theory test, danish theory test in english, teoriprøve english, teoriprøve practice, danish driving licence theory test, kørekort theory test english, færdselsstyrelsen theory test, category b theory test denmark, danish road rules quiz, teoriprøve 2026",
   alternates: {
     canonical: `${siteUrl}/denmark-driving-theory-test`,
+    languages: examLandingAlternates("dkteori"),
   },
   openGraph: {
     title,

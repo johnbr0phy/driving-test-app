@@ -167,6 +167,7 @@ KNOWN_BANKS = {
         why="the official NCVEC 2026-2030 pool; its wording is the FCC's and cannot be shortened"),
     "de-theorie-questions.json": dict(rows=210, why="seven 30-question tests"),
     "sweden-hunting-theory-questions.json": dict(rows=210, why="three real-length 70-question tests"),
+    "dk-indfoedsret-questions.json": dict(rows=320, why="eight 40-question tests"),
     "de-motorrad-questions.json": dict(rows=210, why="seven 30-question tests"),
     "cdl-questions.json": dict(rows=600, max_avg=43,
         why="six tests from a 600-question bank; long-form options average 43 chars after the Nov 2026 key-length fix"),

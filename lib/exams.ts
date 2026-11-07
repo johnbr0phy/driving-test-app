@@ -30,8 +30,9 @@ import esdgtEs from "./examTranslations/esdgt.es.json";
 import ptimtPt from "./examTranslations/ptimt.pt.json";
 import detheorieEn from "./examTranslations/detheorie.en.json";
 import setrafikSv from "./examTranslations/setrafik.sv.json";
+import dkteoriDa from "./examTranslations/dkteori.da.json";
 
-export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "dkteori" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "grdriving" | "rodrpciv" | "hukresz" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "detheorie" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl";
+export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "dkteori" | "dkmoto" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "grdriving" | "rodrpciv" | "hukresz" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "detheorie" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -9156,6 +9157,307 @@ const dkteori: ExamConfig = {
     sourceLine: "Based on Færdselsstyrelsen's category B teaching plan (undervisningsplan, 2026). Original questions in English; 25 per test, 20 to pass like the real test's five-error limit.",
     analyticsKey: "dkteori",
   },
+  review: { da: "machine" },
+  translations: {
+    da: examTranslation(dkteoriDa),
+  },
+};
+
+const dkmoto: ExamConfig = {
+  id: "dkmoto",
+  stateCode: "DKMOTO",
+  idBase: 23700,
+  slug: "/denmark-motorcycle-theory",
+  landingPath: "/denmark-motorcycle-theory-test",
+  name: "Denmark Motorcycle Theory Practice Test",
+  shortName: "Denmark motorcycle theory",
+  examLabel: "Danish motorcycle theory test",
+  fullName: "Danish motorcycle theory test (teoriprøve), categories A1, A2 and A",
+  questionIdPrefix: "DKMC-",
+  icon: "bike",
+  testCount: 8,
+  questionsPerTest: 25,
+  passPct: 80,
+  // Source: Færdselsstyrelsen (fstyr.dk, checked 2026-11-06): the digital theory test is offered
+  // for category A among others, in Danish and English at every digital test site (German only in
+  // Aabenraa), at most five errors; the category A teaching plan (undervisningsplan AM, A1, A2 og A,
+  // version 1.0 2026, in use from 1 July 2026) runs the theory test under the category B rules
+  // (about half an hour, random series, computer-generated pictures). 25 questions per guides.
+  // Weights from Færdselsstyrelsen's published randomisation key for the digital category A test:
+  // afsnit 1, 3, 4, 5, 6 and 8 8% each, afsnit 7 52%, so per 25: 2 each and 13 for afsnit 7
+  // (split 4/3/3/3 by sub-section, Tigertest's own). The real test is picture-based with one or
+  // more correct answers; ours are text, single answer, signs described in words. Eight
+  // real-length tests; pools are exactly 8x each count. All items original.
+  blueprint: {
+    dkmcBike: 2,
+    dkmcVehicles: 2,
+    dkmcRider: 2,
+    dkmcRoad: 2,
+    dkmcRules: 2,
+    dkmcPosition: 4,
+    dkmcPassing: 3,
+    dkmcJunctions: 3,
+    dkmcMotorway: 3,
+    dkmcRisk: 2,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 23701, name: "Your Motorcycle, Licence & Other Vehicles", categories: ["dkmcBike", "dkmcRules", "dkmcVehicles"], size: 48, weightLabel: "6 of 25 test questions" },
+    { setNumber: 2, id: 23702, name: "Rider, Road & Risk", categories: ["dkmcRider", "dkmcRoad", "dkmcRisk"], size: 48, weightLabel: "6 of 25 test questions" },
+    { setNumber: 3, id: 23703, name: "Position, Bends & Overtaking", categories: ["dkmcPosition", "dkmcPassing"], size: 56, weightLabel: "7 of 25 test questions" },
+    { setNumber: 4, id: 23704, name: "Junctions, Motorways & Darkness", categories: ["dkmcJunctions", "dkmcMotorway"], size: 48, weightLabel: "6 of 25 test questions" },
+  ],
+  categoryLabels: {
+    dkmcBike: "Motorcycle, Gear & Documents",
+    dkmcVehicles: "Other Vehicles & How They Handle",
+    dkmcRider: "Perception, Fitness & Other Road Users",
+    dkmcRoad: "Road Conditions & Grip",
+    dkmcRules: "Licences, Passengers & Basic Rules",
+    dkmcPosition: "Moving Off, Position, Bends & Lanes",
+    dkmcPassing: "Meeting, Following & Overtaking",
+    dkmcJunctions: "Junctions & Roundabouts",
+    dkmcMotorway: "Motorways, Parking & Darkness",
+    dkmcRisk: "Alcohol, Drugs & Speed",
+  },
+  copy: {
+    guestPrompt: "to save your Danish motorcycle theory progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets covering the whole motorcycle teaching plan, in English. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 25 questions like the real test, 20 to pass",
+    heroSubs: [
+      "Four topics, eight real-length tests. Riding on the road weighs most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your teoriprøve.",
+    ],
+    sourceLine: "Based on Færdselsstyrelsen's teaching plan for categories A1, A2 and A (undervisningsplan, 2026). Original questions in English; 25 per test, 20 to pass like the real test's five-error limit.",
+    analyticsKey: "dkmoto",
+  },
+};
+
+const dkindfoed: ExamConfig = {
+  id: "dkindfoed",
+  stateCode: "DKINDFOED",
+  idBase: 23600,
+  slug: "/indfoedsretsproeve",
+  landingPath: "/da/indfoedsretsproeven-oevelsesproeve",
+  name: "Indfødsretsprøven",
+  shortName: "Indfødsretsprøven",
+  examLabel: "Indfødsretsprøven",
+  fullName: "Indfødsretsprøven (danske samfundsforhold, dansk kultur og historie)",
+  questionIdPrefix: "DKIND-",
+  icon: "flag",
+  testCount: 8,
+  questionsPerTest: 40,
+  passPct: 90,
+  language: "da",
+  locale: "da-DK",
+  english: {
+    name: "Danish Citizenship Test (Indfødsretsprøven)",
+    shortName: "Danish citizenship test",
+    fullName: "Danish citizenship test (indfødsretsprøven), in Danish",
+  },
+  review: { da: "model" },
+  // Real test (Lex, last changed 2025-10-28; Lovguiden 2026-06-01; checked 2026-11-06): run by
+  // SIRI under Udlændinge- og Integrationsministeriet, twice a year (May/June, Nov/Dec) at
+  // language centres; 45 questions in 45 minutes, in Danish, mostly three options, some yes/no:
+  // 35 from "Læremateriale til indfødsretsprøven" (danske samfundsforhold, dansk kultur og
+  // historie), 5 current affairs, 5 values; pass 36 of 45 with at least 4 of the 5 values right.
+  // Current affairs not modelled, so 40 per test (35 + 5 values) and 36 to pass. SIRI publishes no
+  // topic weights: the 4/3/4/3/7/7/7 split of the 35 is Tigertest's. All items original.
+  blueprint: {
+    dkindHistOld: 4,
+    dkindHistEarly: 3,
+    dkindHistDemo: 4,
+    dkindHistNew: 3,
+    dkindDemokrati: 7,
+    dkindSamfund: 7,
+    dkindKultur: 7,
+    dkindVaerdier: 5,
+  },
+  // Six topic sets of at most 60, not testSets(): 6 + 8 tests = 14 dashboard steps.
+  trainingSets: [
+    { setNumber: 1, id: 23601, name: "Historie indtil 1849", categories: ["dkindHistOld", "dkindHistEarly"], size: 56, weightLabel: "7 af 40 spørgsmål pr. prøve" },
+    { setNumber: 2, id: 23602, name: "Historie fra 1849", categories: ["dkindHistDemo", "dkindHistNew"], size: 56, weightLabel: "7 af 40 spørgsmål pr. prøve" },
+    { setNumber: 3, id: 23603, name: "Grundloven og folkestyret", categories: ["dkindDemokrati"], size: 56, weightLabel: "7 af 40 spørgsmål pr. prøve" },
+    { setNumber: 4, id: 23604, name: "Samfund og økonomi", categories: ["dkindSamfund"], size: 56, weightLabel: "7 af 40 spørgsmål pr. prøve" },
+    { setNumber: 5, id: 23605, name: "Kultur og traditioner", categories: ["dkindKultur"], size: 56, weightLabel: "7 af 40 spørgsmål pr. prøve" },
+    { setNumber: 6, id: 23606, name: "Danske værdier", categories: ["dkindVaerdier"], size: 40, weightLabel: "5 af 40, mindst 4 skal være rigtige" },
+  ],
+  categoryLabels: {
+    dkindHistOld: "Oldtid, vikingetid og middelalder",
+    dkindHistEarly: "Fra Reformationen til Grundloven",
+    dkindHistDemo: "Fra Grundloven til befrielsen",
+    dkindHistNew: "Danmark efter 1945",
+    dkindDemokrati: "Grundloven og folkestyret",
+    dkindSamfund: "Samfund, velfærd og økonomi",
+    dkindKultur: "Kultur og traditioner",
+    dkindVaerdier: "Danske værdier",
+  },
+  copy: {
+    guestPrompt: "for at gemme dine fremskridt til indfødsretsprøven og holde styr på hvert forkert svar",
+    trainingHeading: "Træningssæt",
+    trainingSub: "Hvert træningssæt dækker et emne. Du får svar med det samme, og de spørgsmål, du svarer forkert på, kommer igen, til du kan dem. Danske værdier har sit eget sæt, fordi 4 af 5 værdispørgsmål skal være rigtige.",
+    testsHeading: "Prøver · 40 spørgsmål, 36 for at bestå, 4 af 5 værdier",
+    heroSubs: [
+      "Seks træningssæt, otte prøver med 40 spørgsmål. Begynd med danske værdier.",
+      "Bliv sikker i sættet, tag så prøven.",
+      "Halvvejs. Hold styr på værdispørgsmålene.",
+      "Øv dine fejl, og tag prøven igen.",
+      "Alt er grønt. Du er klar til indfødsretsprøven.",
+    ],
+    sourceLine: "Egne spørgsmål om emnerne i SIRI's læremateriale og danske værdier, november 2026. Aktuelle spørgsmål er ikke med; tjek selv, at du har mindst 4 af 5 værdispørgsmål rigtige.",
+    analyticsKey: "dkindfoed",
+  },
+};
+
+const dkmedborger: ExamConfig = {
+  id: "dkmedborger",
+  stateCode: "DKMEDB",
+  idBase: 23900,
+  slug: "/medborgerskabsproeve",
+  landingPath: "/da/medborgerskabsproeven-oevelsesproeve",
+  name: "Medborgerskabsprøven",
+  shortName: "Medborgerskabsprøven",
+  examLabel: "Medborgerskabsprøven",
+  fullName: "Medborgerskabsprøven (demokrati og hverdagsliv i Danmark)",
+  questionIdPrefix: "DKMED-",
+  icon: "flag",
+  testCount: 8,
+  questionsPerTest: 25,
+  passPct: 80,
+  language: "da",
+  locale: "da-DK",
+  english: {
+    name: "Danish Permanent Residence Test (Medborgerskabsprøven)",
+    shortName: "Danish permanent residence test",
+    fullName: "Danish active citizenship test for permanent residence (medborgerskabsprøven), in Danish",
+  },
+  review: { da: "model" },
+  // Real test (BEK nr. 452 af 13.05.2024 §§ 1, 9, 10, 35; May 2025 booklet; UC+ Dansk; checked
+  // 2026-11-06): run by SIRI through approved language centres, twice a year (May/June and
+  // Nov/Dec); 25 multiple-choice questions (2 or 3 options) on paper in 30 minutes, no aids,
+  // pass with 20 of 25, all equal; questions within SIRI's "Læremateriale til
+  // medborgerskabsprøven: demokrati og hverdagsliv i Danmark" (Aug 2024, 26 fakta-ark). A pass is
+  // one of the 2-of-4 supplementary conditions for permanent residence. SIRI publishes no topic
+  // weights: the 3/4/3/3/4/3/3/2 split is Tigertest's. All items original.
+  blueprint: {
+    dkmedSkole: 3,
+    dkmedArbejde: 4,
+    dkmedVelfaerd: 3,
+    dkmedFamilie: 3,
+    dkmedDemokrati: 4,
+    dkmedRettigheder: 3,
+    dkmedVerden: 3,
+    dkmedKultur: 2,
+  },
+  // Four topic sets, not testSets(): 4 + 8 tests = 12 dashboard steps.
+  trainingSets: [
+    { setNumber: 1, id: 23901, name: "Hverdagsliv: skole, familie og fritid", categories: ["dkmedSkole", "dkmedFamilie"], size: 48, weightLabel: "6 af 25 spørgsmål pr. prøve" },
+    { setNumber: 2, id: 23902, name: "Arbejde og velfærd", categories: ["dkmedArbejde", "dkmedVelfaerd"], size: 56, weightLabel: "7 af 25 spørgsmål pr. prøve" },
+    { setNumber: 3, id: 23903, name: "Demokrati, rettigheder og pligter", categories: ["dkmedDemokrati", "dkmedRettigheder"], size: 56, weightLabel: "7 af 25 spørgsmål pr. prøve" },
+    { setNumber: 4, id: 23904, name: "Danmark i verden, historie og kultur", categories: ["dkmedVerden", "dkmedKultur"], size: 40, weightLabel: "5 af 25 spørgsmål pr. prøve" },
+  ],
+  categoryLabels: {
+    dkmedSkole: "Skole, uddannelse og dagtilbud",
+    dkmedArbejde: "Arbejdsmarked og erhvervsliv",
+    dkmedVelfaerd: "Velfærd, sundhed og skat",
+    dkmedFamilie: "Familie, foreninger og ligestilling",
+    dkmedDemokrati: "Valg, Folketing og retssamfund",
+    dkmedRettigheder: "Kommune, rettigheder og tro",
+    dkmedVerden: "Danmark i verden, geografi og klima",
+    dkmedKultur: "Historie, kultur og mærkedage",
+  },
+  copy: {
+    guestPrompt: "for at gemme dine fremskridt til medborgerskabsprøven og holde styr på hvert forkert svar",
+    trainingHeading: "Træningssæt",
+    trainingSub: "Hvert træningssæt dækker en del af lærematerialet. Du får svar med det samme, og de spørgsmål, du svarer forkert på, kommer igen, til du kan dem.",
+    testsHeading: "Prøver · 25 spørgsmål, 20 for at bestå",
+    heroSubs: [
+      "Fire træningssæt, otte prøver med 25 spørgsmål som den rigtige.",
+      "Bliv sikker i sættet, tag så prøven.",
+      "Halvvejs. Tag en prøve på 30 minutter.",
+      "Øv dine fejl, og tag prøven igen.",
+      "Alt er grønt. Du er klar til medborgerskabsprøven.",
+    ],
+    sourceLine: "Egne spørgsmål om emnerne i SIRI's læremateriale til medborgerskabsprøven, november 2026. 25 spørgsmål og 20 for at bestå som den rigtige prøve; fire svarmuligheder i stedet for to eller tre.",
+    analyticsKey: "dkmedborger",
+  },
+};
+
+const dkjagt: ExamConfig = {
+  id: "dkjagt",
+  stateCode: "DKJAGT",
+  idBase: 23800,
+  slug: "/jagtproeve",
+  landingPath: "/da/jagtproeven-oevelsesproeve",
+  name: "Jagtprøven",
+  shortName: "Jagtprøven",
+  examLabel: "Jagtprøven, skriftlig del",
+  fullName: "Jagtprøven: den skriftlige prøve til jagttegn",
+  questionIdPrefix: "DKJAG-",
+  icon: "target",
+  testCount: 5,
+  questionsPerTest: 40,
+  passPct: 90,
+  language: "da",
+  locale: "da-DK",
+  english: {
+    name: "Danish Hunting Licence Test (Jagtprøven)",
+    shortName: "Danish hunting test",
+    fullName: "Danish hunting licence test (jagtprøven), written part, in Danish",
+  },
+  review: { da: "model" },
+  // Real test (Instruks for jagtprøven 2026 pkt. 3, jagttegnsbekendtgørelsen nr. 238/2025 §§ 8-10;
+  // checked 2026-11-06): run by Styrelsen for Grøn Arealomlægning og Vandmiljø, held by
+  // Naturstyrelsen; written part 40 questions in 30 minutes, pass with 36, unanswered count as
+  // errors, then a practical test. Topics: the eight areas of the 2025 Retningslinjer for
+  // spørgsmål til den skriftlige jagtprøve. No weights are published: the 7/5/6/6/7/3/3/3 split
+  // is Tigertest's. Five real-length tests, pools exactly 5x (200, all original, written in
+  // Danish). No season dates (the jagttider are revised for 2026/27).
+  blueprint: {
+    dkjgArter: 7,
+    dkjgForvaltning: 5,
+    dkjgVaaben: 6,
+    dkjgSikkerhed: 6,
+    dkjgLov: 7,
+    dkjgVildt: 3,
+    dkjgEtik: 3,
+    dkjgTeknik: 3,
+  },
+  // Five topic sets, not testSets(): 5 + 5 tests = 10 dashboard steps.
+  trainingSets: [
+    { setNumber: 1, id: 23801, name: "Vildtarter og vildtbiologi", categories: ["dkjgArter"], size: 35, weightLabel: "7 af 40 spørgsmål pr. prøve" },
+    { setNumber: 2, id: 23802, name: "Vildtforvaltning og jagtetik", categories: ["dkjgForvaltning", "dkjgEtik"], size: 40, weightLabel: "8 af 40 spørgsmål pr. prøve" },
+    { setNumber: 3, id: 23803, name: "Våben og sikkerhed", categories: ["dkjgVaaben", "dkjgSikkerhed"], size: 60, weightLabel: "12 af 40 spørgsmål pr. prøve" },
+    { setNumber: 4, id: 23804, name: "Jagtlovgivning", categories: ["dkjgLov"], size: 35, weightLabel: "7 af 40 spørgsmål pr. prøve" },
+    { setNumber: 5, id: 23805, name: "Jagtpraksis og vildthåndtering", categories: ["dkjgTeknik", "dkjgVildt"], size: 30, weightLabel: "6 af 40 spørgsmål pr. prøve" },
+  ],
+  categoryLabels: {
+    dkjgArter: "Artsbestemmelse og vildtbiologi",
+    dkjgForvaltning: "Vildtforvaltning og natur",
+    dkjgVaaben: "Jagtvåben og ammunition",
+    dkjgSikkerhed: "Sikkerhed og skudafgivelse",
+    dkjgLov: "Jagtlovgivning",
+    dkjgVildt: "Håndtering af nedlagt vildt",
+    dkjgEtik: "Jagtetik og etikette",
+    dkjgTeknik: "Jagtteknik og ledelse",
+  },
+  copy: {
+    guestPrompt: "for at gemme dine fremskridt til jagtprøven og holde styr på hvert forkert svar",
+    trainingHeading: "Træningssæt",
+    trainingSub: "Hvert træningssæt dækker et emne fra retningslinjerne for den skriftlige jagtprøve. Du får svar med det samme, og de spørgsmål, du svarer forkert på, kommer igen, til du kan dem.",
+    testsHeading: "Prøver · 40 spørgsmål, 36 for at bestå",
+    heroSubs: [
+      "Fem træningssæt, fem prøver med 40 spørgsmål. Begynd med våben og sikkerhed.",
+      "Bliv sikker i sættet, tag så prøven.",
+      "Halvvejs. Højst 4 fejl pr. prøve.",
+      "Øv dine fejl, og tag prøven igen.",
+      "Alt er grønt. Du er klar til den skriftlige jagtprøve.",
+    ],
+    sourceLine: "Egne spørgsmål efter jagtloven, våbenreglerne og retningslinjerne for den skriftlige jagtprøve, november 2026. Ingen jagttider; arter beskrevet i ord.",
+    analyticsKey: "dkjagt",
+  },
 };
 
 const setrafik: ExamConfig = {
@@ -15939,7 +16241,7 @@ const sgvl: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, nhie, cna, ptcb, phleb, ccma, cma, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, sfadmin, phr, cisa, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, dkteori, setrafik, semoto, fitheory, grdriving, rodrpciv, hukresz, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, sejakt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, semedb, gulfrn, inrto, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, nhie, cna, ptcb, phleb, ccma, cma, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, sfadmin, phr, cisa, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, dkteori, dkmoto, setrafik, semoto, fitheory, grdriving, rodrpciv, hukresz, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, semedb, dkindfoed, dkmedborger, gulfrn, inrto, htl, cst, crcst];
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
 export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA, realestatePA, realestateIL, realestateOH, realestateGA, realestateNC, realestateMI, realestateVA, realestateWA, realestateAZ, realestateTN, realestateLA, insuranceNY, insurancePA, insuranceIL, insuranceOH, insuranceGA, insuranceNC, insuranceMI, insuranceNJ, insuranceVA, insuranceWA, pncNY, pncPA, pncIL, pncOH, pncGA, pncNC, pncMI, pncNJ, pncVA, pncWA];

@@ -242,6 +242,30 @@
       "what": "UHR announces the length, time and pass mark of the April to May 2027 civics sitting (August 2026 was a trial: 60 questions, 40 scored, 28 of 40).",
       "action": "Update testCount, questionsPerTest and passPct, the landing JSON and EXAM_FACTS to the announced format.",
       "source": "https://www.uhr.se/medborgarskapsprovet/om-medborgarskapsprovet/"
+    },
+    {
+      "exam": "dkjagt",
+      "date": "2027-04-01",
+      "kind": "review",
+      "what": "The jagttider (open seasons) are revised with effect from the 2026/27 season, and the Retningslinjer for spørgsmål til den skriftlige jagtprøve are revised yearly (last 3 April 2025).",
+      "action": "Read the new retningslinjer and jagttidsbekendtgørelse; check the bank still asks no season dates, and update the landing FAQ, examFacts and sources.md.",
+      "source": "https://sgavmst.dk/media/ttndlsbs/instruks-for-jagtproeven-2026.pdf"
+    },
+    {
+      "exam": "dkmedborger",
+      "date": "2027-04-01",
+      "kind": "review",
+      "what": "SIRI may publish a new edition of Læremateriale til medborgerskabsprøven (current edition August 2024) or change the permanent residence conditions in udlændingeloven § 11.",
+      "action": "Check SIRI's learning material and the executive order before the May/June 2027 sitting; update the bank, landing and examFacts if topics or format change.",
+      "source": "https://www.retsinformation.dk/eli/lta/2024/452"
+    },
+    {
+      "exam": "dkindfoed",
+      "date": "2027-04-01",
+      "kind": "review",
+      "what": "The values questions follow integration policy and the learning material can be revised before a sitting.",
+      "action": "Check the latest published test and learning material before the May/June 2027 sitting and update the bank, landing and examFacts if the format or topics change.",
+      "source": "https://lex.dk/indf%C3%B8dsretspr%C3%B8ve"
     }
   ]
 }

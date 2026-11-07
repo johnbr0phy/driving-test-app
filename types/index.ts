@@ -1,5 +1,5 @@
 // Question types
-export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "EPA608" | "CNA" | "PTCB" | "PHLEB" | "CCMA" | "CET" | "DANB" | "EMT" | "FOODMGR" | "REALESTATE" | "LIFEHEALTH" | "NOTARY" | "TEAS" | "AWSCCP" | "APLUS" | "FOODHANDLER" | "BOATING" | "HUNTER" | "SECPLUS" | "HESI" | "ASVAB" | "CPR" | "OSHA" | "FORKLIFT" | "ALCOHOL" | "ACCUPLACER" | "SECGUARD" | "LIFEGUARD" | "COSMO" | "PNC" | "VTNE" | "CAQC" | "UKLGV" | "AUQLD" | "AUSA" | "AUVIC" | "UKADI" | "UKCAR" | "UKPCV" | "CABC" | "AUNSW" | "UKMOTO" | "CAAB" | "CAON" | "CAMB" | "AUWA" | "UKSIA" | "UK18ED" | "CSCS" | "UKFOOD" | "UKAPLH" | "UKFAW" | "UKCARE" | "CAPAL" | "CAELEC" | "CAPSW" | "CASFA" | "CAWHMIS" | "CAGUARD" | "CAAUTO" | "CAPLUMB" | "CACARP" | "CAWELD" | "AUWHITE" | "AURSA" | "AURCG" | "AUFSS" | "AUFIRSTAID" | "AUFORKLIFT" | "AUWAH" | "UKLITU" | "CACIT" | "AUCIT" | "GULFRN" | "INRTO" | "NASM" | "RBT" | "CPC" | "CCA" | "CPAFAR" | "CPAREG" | "NMLS" | "SERIES65" | "SERIES63" | "ASWB" | "ARRT" | "NCE" | "TEXESPPR" | "PRAXISPLT" | "CMA" | "NHIE" | "TXADJ" | "SFADMIN" | "CFAL1" | "CPAAUD" | "ACCAFA" | "AATL2" | "NBDHE" | "NPTEPTA" | "ASWBCLIN" | "PHR" | "CISA" | "CSSGB" | "CCS" | "RDEXAM" | "PX5001" | "FLADJ" | "LLQP" | "CEMAP" | "SGFTT" | "SGRES" | "HKIIQE1" | "HKLE1" | "NZFIREARMS" | "NZLCQ" | "AESIRA" | "MYPCE" | "KENCK" | "IEDTTCV" | "JELEC" | "BARBER" | "FFI" | "POLICE" | "SIE" | "SERIES7" | "PCOC" | "CASK" | "CANS" | "UKSERU" | "NZROAD" | "IEDTT" | "PHLTO" | "ZAK53" | "SGBTT" | "AERTA" | "NGFRSC" | "KENTSA" | "MYKPP" | "HKDRIVE" | "PKDRIVE" | "ESDGT" | "PTIMT" | "PTMOTO" | "PTCAM" | "PTTVDE" | "PTVIGIL" | "BEDRIVE" | "DKTEORI" | "SETRAFIK" | "SEMOTO" | "SEJAKT" | "SEMEDB" | "FITHEORY" | "GRDRIVE" | "RODRPCIV" | "HUKRESZ" | "MTTHEORY" | "MTMOTO" | "MTCPC" | "MTTAXI" | "MTGUARD" | "DETHEORIE" | "DEMOTORRAD" | "DEAEVO" | "DE34A" | "DEHEILPR" | "ESCAPCOND" | "ESPOLICIA" | "ESGUARDIA" | "ESVIGIL" | "PHLET" | "PHNLE" | "PHMEDTECH" | "PHPHARM" | "PHMIDWIFE" | "PHPSYCHOM" | "PHNAPOLCOM" | "AFPSAT" | "PHCLE" | "PHINS" | "PHREB" | "NGPOLICE" | "NGCDCFIB" | "NGARMY" | "NGCUSTOMS" | "TRCNPQE" | "HTL" | "CST" | "CRCST" | "ZAK53C3" | "PKPPSC" | "PKPUNJPOL" | "PKARMY" | "PKPAF" | "PKNLE" | "PKPNMC" | "ZAK53C1" | "ZARE5" | "ZASAPS" | "ZAPSIRA" | "IESAFEPASS" | "IESPSV" | "IEQFA" | "IEPSA" | "NZMOTO" | "NZHEAVY" | "NZSFE" | "SGRTT" | "SGM5" | "SGVL";
+export type QuestionType = "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "EPA608" | "CNA" | "PTCB" | "PHLEB" | "CCMA" | "CET" | "DANB" | "EMT" | "FOODMGR" | "REALESTATE" | "LIFEHEALTH" | "NOTARY" | "TEAS" | "AWSCCP" | "APLUS" | "FOODHANDLER" | "BOATING" | "HUNTER" | "SECPLUS" | "HESI" | "ASVAB" | "CPR" | "OSHA" | "FORKLIFT" | "ALCOHOL" | "ACCUPLACER" | "SECGUARD" | "LIFEGUARD" | "COSMO" | "PNC" | "VTNE" | "CAQC" | "UKLGV" | "AUQLD" | "AUSA" | "AUVIC" | "UKADI" | "UKCAR" | "UKPCV" | "CABC" | "AUNSW" | "UKMOTO" | "CAAB" | "CAON" | "CAMB" | "AUWA" | "UKSIA" | "UK18ED" | "CSCS" | "UKFOOD" | "UKAPLH" | "UKFAW" | "UKCARE" | "CAPAL" | "CAELEC" | "CAPSW" | "CASFA" | "CAWHMIS" | "CAGUARD" | "CAAUTO" | "CAPLUMB" | "CACARP" | "CAWELD" | "AUWHITE" | "AURSA" | "AURCG" | "AUFSS" | "AUFIRSTAID" | "AUFORKLIFT" | "AUWAH" | "UKLITU" | "CACIT" | "AUCIT" | "GULFRN" | "INRTO" | "NASM" | "RBT" | "CPC" | "CCA" | "CPAFAR" | "CPAREG" | "NMLS" | "SERIES65" | "SERIES63" | "ASWB" | "ARRT" | "NCE" | "TEXESPPR" | "PRAXISPLT" | "CMA" | "NHIE" | "TXADJ" | "SFADMIN" | "CFAL1" | "CPAAUD" | "ACCAFA" | "AATL2" | "NBDHE" | "NPTEPTA" | "ASWBCLIN" | "PHR" | "CISA" | "CSSGB" | "CCS" | "RDEXAM" | "PX5001" | "FLADJ" | "LLQP" | "CEMAP" | "SGFTT" | "SGRES" | "HKIIQE1" | "HKLE1" | "NZFIREARMS" | "NZLCQ" | "AESIRA" | "MYPCE" | "KENCK" | "IEDTTCV" | "JELEC" | "BARBER" | "FFI" | "POLICE" | "SIE" | "SERIES7" | "PCOC" | "CASK" | "CANS" | "UKSERU" | "NZROAD" | "IEDTT" | "PHLTO" | "ZAK53" | "SGBTT" | "AERTA" | "NGFRSC" | "KENTSA" | "MYKPP" | "HKDRIVE" | "PKDRIVE" | "ESDGT" | "PTIMT" | "PTMOTO" | "PTCAM" | "PTTVDE" | "PTVIGIL" | "BEDRIVE" | "DKTEORI" | "DKMOTO" | "DKINDFOED" | "DKMEDB" | "DKJAGT" | "SETRAFIK" | "SEMOTO" | "SEJAKT" | "SEMEDB" | "FITHEORY" | "GRDRIVE" | "RODRPCIV" | "HUKRESZ" | "MTTHEORY" | "MTMOTO" | "MTCPC" | "MTTAXI" | "MTGUARD" | "DETHEORIE" | "DEMOTORRAD" | "DEAEVO" | "DE34A" | "DEHEILPR" | "ESCAPCOND" | "ESPOLICIA" | "ESGUARDIA" | "ESVIGIL" | "PHLET" | "PHNLE" | "PHMEDTECH" | "PHPHARM" | "PHMIDWIFE" | "PHPSYCHOM" | "PHNAPOLCOM" | "AFPSAT" | "PHCLE" | "PHINS" | "PHREB" | "NGPOLICE" | "NGCDCFIB" | "NGARMY" | "NGCUSTOMS" | "TRCNPQE" | "HTL" | "CST" | "CRCST" | "ZAK53C3" | "PKPPSC" | "PKPUNJPOL" | "PKARMY" | "PKPAF" | "PKNLE" | "PKPNMC" | "ZAK53C1" | "ZARE5" | "ZASAPS" | "ZAPSIRA" | "IESAFEPASS" | "IESPSV" | "IEQFA" | "IEPSA" | "NZMOTO" | "NZHEAVY" | "NZSFE" | "SGRTT" | "SGM5" | "SGVL";
 
 // Test mode
 export type TestMode = "dmv" | "cdl" | "htl";
@@ -1430,6 +1430,44 @@ export type QuestionCategory =
   | "dkPassing"
   | "dkJunctions"
   | "dkMotorway"
+  // Denmark motorcycle theory test
+  | "dkmcBike"
+  | "dkmcVehicles"
+  | "dkmcRider"
+  | "dkmcRoad"
+  | "dkmcRules"
+  | "dkmcPosition"
+  | "dkmcPassing"
+  | "dkmcJunctions"
+  | "dkmcMotorway"
+  | "dkmcRisk"
+  // Danish citizenship test (indfødsretsprøven)
+  | "dkindHistOld"
+  | "dkindHistEarly"
+  | "dkindHistDemo"
+  | "dkindHistNew"
+  | "dkindDemokrati"
+  | "dkindSamfund"
+  | "dkindKultur"
+  | "dkindVaerdier"
+  // Danish permanent residence test (medborgerskabsprøven)
+  | "dkmedSkole"
+  | "dkmedArbejde"
+  | "dkmedVelfaerd"
+  | "dkmedFamilie"
+  | "dkmedDemokrati"
+  | "dkmedRettigheder"
+  | "dkmedVerden"
+  | "dkmedKultur"
+  // Danish hunting licence test (jagtprøven)
+  | "dkjgArter"
+  | "dkjgForvaltning"
+  | "dkjgVaaben"
+  | "dkjgSikkerhed"
+  | "dkjgLov"
+  | "dkjgVildt"
+  | "dkjgEtik"
+  | "dkjgTeknik"
   // Sweden driving theory (setrafik)
   | "setrJunctions"
   | "setrSigns"

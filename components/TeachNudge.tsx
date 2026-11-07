@@ -25,6 +25,8 @@ const TEACHER_LED = new Set([
   "pttvde", "ptvigil",
   // Sweden: jägarexamen courses, SFI and samhällsorientering classes, högskoleprovet courses
   "sejakt", "semedb", "sehp",
+  // Denmark: jagttegnskurser, and language school (sprogcenter) courses for the citizenship and residence tests
+  "dkjagt", "dkindfoed", "dkmedborger",
   // Malta: approved taxi training providers and private guard course providers
   "mttaxi", "mtguard",
   // Healthcare programs

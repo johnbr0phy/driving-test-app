@@ -32,9 +32,9 @@ test('product help and email no longer offer the assistant copy/paste round trip
     const text = readFileSync(file, 'utf8');
     assert.doesNotMatch(text, /quizAssistantPrompt|parseAssistantQuiz|paste the reply back|copied prompt|Copy our question-writing prompt/i, file);
   }
-  assert.match(create, /const MCP_URL = "https:\/\/www.tigertest.io\/api\/mcp"/);
-  assert.match(create, /help.openai.com\/en\/articles\/12584461/);
-  assert.match(create, /support.claude.com\/en\/articles\/11175166/);
+  assert.match(create, /const MCP_URL = "https:\/\/www\.tigertest\.io\/api\/mcp"/);
+  assert.match(create, /help\.openai\.com\/en\/articles\/12584461/);
+  assert.match(create, /support\.claude\.com\/en\/articles\/11175166/);
 });
 
 test('in-progress guidance and canonical setup survive the merge', () => {

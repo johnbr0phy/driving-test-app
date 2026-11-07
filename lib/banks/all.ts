@@ -134,6 +134,7 @@ import "./fihunt";
 import "./grdriving";
 import "./grmoto";
 import "./grcitizen";
+import "./grinsure";
 import "./grsecurity";
 import "./rodrpciv";
 import "./rocpi";

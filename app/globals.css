@@ -2663,6 +2663,20 @@
     --brand-gradient-to: 0 0% 98%;
   }
 
+  /* Bank of Greece insurance intermediary certification theme */
+  [data-theme="grinsure"] {
+    --brand: 170 25% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 170 35% 95%;
+    --brand-hover: 170 25% 18%;
+    --brand-dark: 170 28% 15%;
+    --brand-darker: 170 30% 10%;
+    --brand-muted: 170 18% 64%;
+    --brand-border: 170 22% 78%;
+    --brand-border-light: 170 22% 88%;
+    --brand-gradient-to: 0 0% 98%;
+  }
+
   /* Romania DRPCIV theory exam theme */
   [data-theme="rodrpciv"] {
     --brand: 234 95% 30%;
@@ -6891,6 +6905,18 @@
     --brand-muted: 240 25% 45%;
     --brand-dark: 240 50% 65%;
     --brand-darker: 240 50% 78%;
+  }
+
+  .dark [data-theme="grinsure"] {
+    --brand: 170 25% 39.6%;
+    --brand-hover: 170 25% 31.6%;
+    --brand-light: 170 35% 13%;
+    --brand-gradient-to: 0 0% 11%;
+    --brand-border-light: 170 22% 24%;
+    --brand-border: 170 22% 34%;
+    --brand-muted: 170 18% 45%;
+    --brand-dark: 170 28% 65%;
+    --brand-darker: 170 30% 78%;
   }
 
   .dark [data-theme="rodrpciv"] {

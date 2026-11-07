@@ -266,6 +266,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   grmoto: { title: "Greece Motorcycle Theory Test", description: "Practise filtering, gear, braking, cornering and the 2025 rider rules in English for the Greek A1, A2 and A theory test." },
   grcitizen: { title: "Εξετάσεις ΠΕΓΠ", description: "Γεωγραφία, πολιτισμός, ιστορία και θεσμοί του πολιτεύματος στα ελληνικά, σε τεστ των 20 ερωτήσεων για την πολιτογράφηση." },
   grsecurity: { title: "Πιστοποίηση Security ΕΟΠΠΕΠ", description: "Νομοθεσία, καθήκοντα φύλαξης, πρώτες βοήθειες και πυρασφάλεια στα ελληνικά, σε τεστ των 20 ερωτήσεων." },
+  grinsure: { title: "Πιστοποίηση Ασφαλιστικών Διαμεσολαβητών ΤτΕ", description: "Σύμβαση ασφάλισης, κανόνες διανομής, ασφαλίσεις ζωής και ζημιών και IBIP στα ελληνικά, σε τρία τεστ των 60 ερωτήσεων για τις εξετάσεις της ΤτΕ." },
   rodrpciv: { title: "Romania Driving Theory Test", description: "Review priority to the right, trams, level crossings, speed limits and signs for the category B exam." },
   hukresz: { title: "Hungary KRESZ Theory Test", description: "Practise Hungarian signs, the right-hand rule, trams, speed limits and level crossings in English, in full 55-question tests." },
   hukreszmoto: { title: "Hungary Motorcycle Theory Test", description: "Practise Hungarian rules for riders in English: AM, A1, A2 and A limits, filtering, bus lanes, mopeds, braking and cornering, in full 55-question tests." },

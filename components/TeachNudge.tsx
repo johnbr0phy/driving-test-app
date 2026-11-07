@@ -33,8 +33,8 @@ const TEACHER_LED = new Set([
   "huelsoseg", "hubizt",
   // Romania: meditații and UMF admission prep courses, rezidențiat prep courses
   "roadmed", "rorezid",
-  // Greece: KEMEA-contracted training centres for private security personnel
-  "grsecurity",
+  // Greece: KEMEA-contracted training centres for private security personnel, insurers' and training providers' preparation programmes for the Bank of Greece certification
+  "grsecurity", "grinsure",
   // Belgium: toelatingsexamen preparation courses, insurer and bank academies
   "betoelating", "befsmavz",
   // Malta: approved taxi training providers and private guard course providers

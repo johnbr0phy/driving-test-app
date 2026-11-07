@@ -7,6 +7,8 @@ import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover
 import { FLAGS, readRegionCookie, saveRegion } from "@/components/CountryPills";
 import { REGIONS, Region, regionHomePath, regionInfo } from "@/lib/region";
 import { useStore } from "@/store/useStore";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { COUNTRY_NAMES, homeCopy } from "@/components/home/homeCopy";
 
 /**
  * The footer's country control, like the "United States" link at the bottom
@@ -22,6 +24,13 @@ export function CountrySwitcher() {
   const pageRegion = REGIONS.find((r) => r.code !== "US" && regionHomePath(r.code) === pathname)?.code;
   const [region, setRegion] = useState<Region>(pageRegion ?? "US");
   const [open, setOpen] = useState(false);
+  // Names and labels in the page's language (English where none is written).
+  const { language } = useLanguage();
+  const names = COUNTRY_NAMES[language];
+  const nameOf = (r: Region) => names?.[r] ?? regionInfo(r).name;
+  const pills = homeCopy(language).pills;
+  // The second sentence of "Saved for next time. Your progress is the same in every country."
+  const sameEverywhere = pills.saved.split(/(?<=[.。])\s*/).slice(1).join(" ") || pills.saved;
   useEffect(() => setRegion(pageRegion ?? readRegionCookie() ?? storeRegion ?? "US"), [pageRegion, storeRegion]);
 
   const pick = (r: Region) => {
@@ -34,15 +43,15 @@ export function CountrySwitcher() {
   return (
     <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger
-        aria-label={`Change country, currently ${regionInfo(region).name}`}
+        aria-label={`Change country, currently ${nameOf(region)}`}
         className="flex items-center gap-1.5 whitespace-nowrap hover:text-brand"
       >
         <span aria-hidden="true" className="text-base leading-none">{FLAGS[region]}</span>
-        <span className="sm:hidden">{regionInfo(region).short}</span>
-        <span className="hidden sm:inline">{regionInfo(region).name}</span>
+        <span className="sm:hidden">{names ? nameOf(region) : regionInfo(region).short}</span>
+        <span className="hidden sm:inline">{nameOf(region)}</span>
       </PopoverTrigger>
       <PopoverContent align="end" side="top" className="w-52 p-1">
-        <p className="px-2 pb-1 pt-1.5 text-[11px] font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">Show tests for</p>
+        <p className="px-2 pb-1 pt-1.5 text-[11px] font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">{pills.showTestsFor}</p>
         <ul className="max-h-[min(24rem,60vh)] overflow-y-auto">
           {REGIONS.map((r) => {
             const on = r.code === region;
@@ -57,14 +66,14 @@ export function CountrySwitcher() {
                   }`}
                 >
                   <span aria-hidden="true" className="text-base leading-none">{FLAGS[r.code]}</span>
-                  <span className="flex-1">{r.name}</span>
+                  <span className="flex-1">{nameOf(r.code)}</span>
                   {on && <Check className="h-4 w-4 text-brand-dark" aria-hidden="true" />}
                 </button>
               </li>
             );
           })}
         </ul>
-        <p className="px-2 pb-1.5 pt-1 text-[11px] text-gray-500 dark:text-gray-400">Your progress is the same in every country.</p>
+        <p className="px-2 pb-1.5 pt-1 text-[11px] text-gray-500 dark:text-gray-400">{sameEverywhere}</p>
       </PopoverContent>
     </Popover>
   );

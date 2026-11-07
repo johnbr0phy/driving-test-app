@@ -28,6 +28,7 @@ const TEACHES: Record<string, string> = {
   roadmed: "a medical school admission prep course or biology and chemistry tutoring (meditații)",
   rorezid: "a rezidențiat preparation course",
   grsecurity: "the KEMEA Basic Training Programme for private security personnel",
+  grinsure: "an insurance agent preparation course",
   betoelating: "a toelatingsexamen preparation course or a final-year science class",
   befsmavz: "an insurer or bank academy, or an IDD course for new insurance staff",
   mttaxi: "the 46-hour taxi driver course",

@@ -66,6 +66,7 @@ import bevrachtNl from "@/lib/landings/bevracht.nl.json";
 import betoelatingNl from "@/lib/landings/betoelating.nl.json";
 import befsmavzNl from "@/lib/landings/befsmavz.nl.json";
 import grsecurityEl from "@/lib/landings/grsecurity.el.json";
+import grinsureEl from "@/lib/landings/grinsure.el.json";
 import roadmedRo from "@/lib/landings/roadmed.ro.json";
 import rorezidRo from "@/lib/landings/rorezid.ro.json";
 import sehpSv from "@/lib/landings/sehp.sv.json";
@@ -107,6 +108,7 @@ const LANDINGS: Record<string, TranslatedLandingContent> = {
   "betoelating.nl": betoelatingNl as TranslatedLandingContent,
   "befsmavz.nl": befsmavzNl as TranslatedLandingContent,
   "grsecurity.el": grsecurityEl as TranslatedLandingContent,
+  "grinsure.el": grinsureEl as TranslatedLandingContent,
   "roadmed.ro": roadmedRo as TranslatedLandingContent,
   "rorezid.ro": rorezidRo as TranslatedLandingContent,
   "sehp.sv": sehpSv as TranslatedLandingContent,

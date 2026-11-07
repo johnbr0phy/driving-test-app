@@ -15,6 +15,8 @@ const TEACHES: Record<string, string> = {
   deheilpr: "a Heilpraktiker exam preparation course",
   pttvde: "the TVDE driver initial course",
   ptvigil: "a private security (vigilante) training course",
+  mttaxi: "the 46-hour taxi driver course",
+  mtguard: "an Award in Private Security Guard Services course",
   // The DMV landing (/dmv-practice-test)
   dmv: "driver's ed or run a driving school",
   // Healthcare programs

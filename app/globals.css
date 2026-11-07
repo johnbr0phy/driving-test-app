@@ -2439,6 +2439,59 @@
     --brand-gradient-to: 15 70% 96%;
   }
 
+  /* Malta motorcycle theory theme */
+  [data-theme="mtmoto"] {
+    --brand: 5 50% 20%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 5 50% 96%;
+    --brand-hover: 5 50% 16%;
+    --brand-dark: 5 50% 15%;
+    --brand-darker: 5 50% 10%;
+    --brand-muted: 5 25% 70%;
+    --brand-border: 5 30% 80%;
+    --brand-border-light: 5 30% 90%;
+    --brand-gradient-to: 20 50% 96%;
+  }
+  /* Malta Driver CPC theory test theme */
+  [data-theme="mtcpc"] {
+    --brand: 200 45% 20%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 200 45% 95%;
+    --brand-hover: 200 45% 16%;
+    --brand-dark: 200 45% 14%;
+    --brand-darker: 200 40% 9%;
+    --brand-muted: 200 20% 66%;
+    --brand-border: 200 25% 78%;
+    --brand-border-light: 200 22% 88%;
+    --brand-gradient-to: 40 80% 95%;
+  }
+  /* Malta taxi driver theory test theme */
+  [data-theme="mttaxi"] {
+    --brand: 48 70% 20%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 48 60% 95%;
+    --brand-hover: 48 70% 16%;
+    --brand-dark: 48 70% 14%;
+    --brand-darker: 48 65% 9%;
+    --brand-muted: 48 30% 68%;
+    --brand-border: 48 35% 78%;
+    --brand-border-light: 48 35% 88%;
+    --brand-gradient-to: 0 0% 98%;
+  }
+  /* Malta private guard licence (Award in Private Security Guard Services) theme */
+  [data-theme="mtguard"] {
+    --brand: 244 60% 26%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 244 60% 96%;
+    --brand-hover: 244 60% 21%;
+    --brand-dark: 244 60% 20%;
+    --brand-darker: 244 55% 13%;
+    --brand-muted: 244 25% 70%;
+    --brand-border: 244 25% 80%;
+    --brand-border-light: 244 22% 89%;
+    --brand-gradient-to: 249 65% 96%;
+  }
+
   /* German car theory test (Führerschein Klasse B) theme: anthracite, the black of the German
      flag and of German road-sign lettering, with a gold tint on the gradient */
   [data-theme="detheorie"] {
@@ -6260,6 +6313,54 @@
     --brand-muted: 0 35% 45%;
     --brand-dark: 0 88% 65%;
     --brand-darker: 0 83% 78%;
+  }
+
+  .dark [data-theme="mtmoto"] {
+    --brand: 5 50% 50%;
+    --brand-hover: 5 50% 42%;
+    --brand-light: 5 45% 13%;
+    --brand-gradient-to: 20 40% 11%;
+    --brand-border-light: 5 30% 24%;
+    --brand-border: 5 30% 34%;
+    --brand-muted: 5 25% 45%;
+    --brand-dark: 5 50% 65%;
+    --brand-darker: 5 50% 78%;
+  }
+
+  .dark [data-theme="mtcpc"] {
+    --brand: 200 45% 42.3%;
+    --brand-hover: 200 45% 34.3%;
+    --brand-light: 200 45% 13%;
+    --brand-gradient-to: 40 40% 11%;
+    --brand-border-light: 200 22% 24%;
+    --brand-border: 200 25% 34%;
+    --brand-muted: 200 20% 45%;
+    --brand-dark: 200 45% 65%;
+    --brand-darker: 200 40% 78%;
+  }
+
+  .dark [data-theme="mttaxi"] {
+    --brand: 48 70% 31.8%;
+    --brand-hover: 48 70% 23.8%;
+    --brand-light: 48 45% 13%;
+    --brand-gradient-to: 0 0% 11%;
+    --brand-border-light: 48 35% 24%;
+    --brand-border: 48 35% 34%;
+    --brand-muted: 48 30% 45%;
+    --brand-dark: 48 70% 65%;
+    --brand-darker: 48 65% 78%;
+  }
+
+  .dark [data-theme="mtguard"] {
+    --brand: 244 60% 50%;
+    --brand-hover: 244 60% 42%;
+    --brand-light: 244 45% 13%;
+    --brand-gradient-to: 249 40% 11%;
+    --brand-border-light: 244 22% 24%;
+    --brand-border: 244 25% 34%;
+    --brand-muted: 244 25% 45%;
+    --brand-dark: 244 60% 66%;
+    --brand-darker: 244 55% 78%;
   }
 
   .dark [data-theme="detheorie"] {

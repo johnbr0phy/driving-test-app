@@ -30,7 +30,7 @@ import esdgtEs from "./examTranslations/esdgt.es.json";
 import ptimtPt from "./examTranslations/ptimt.pt.json";
 import detheorieEn from "./examTranslations/detheorie.en.json";
 
-export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "dkteori" | "setrafik" | "fitheory" | "grdriving" | "rodrpciv" | "hukresz" | "mttheory" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "detheorie" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl";
+export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "dkteori" | "setrafik" | "fitheory" | "grdriving" | "rodrpciv" | "hukresz" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "detheorie" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -9570,6 +9570,268 @@ const mttheory: ExamConfig = {
   },
 };
 
+const mtmoto: ExamConfig = {
+  id: "mtmoto",
+  stateCode: "MTMOTO",
+  idBase: 26200,
+  slug: "/malta-motorcycle-theory",
+  landingPath: "/malta-motorcycle-theory-test",
+  name: "Malta Motorcycle Theory Test Practice",
+  shortName: "Malta motorcycle theory",
+  examLabel: "Malta motorcycle theory test",
+  fullName: "Malta motorcycle theory test (categories AM, A1, A2 and A)",
+  questionIdPrefix: "MTMC-",
+  icon: "bike",
+  testCount: 5,
+  questionsPerTest: 35,
+  passPct: 85,
+  // Real test (Transport Malta, "Obtaining your driving licence", via search extracts 2026-11-07):
+  // 35 multiple-choice questions on a touch screen, 45 minutes, 30 correct to pass, English or
+  // Maltese. Content from S.L. 65.18 Fourth Schedule (common syllabus plus, for A1, A2 and A,
+  // protective outfit, rider visibility, slippery surfaces, emergency stop switch, oil and chain)
+  // and S.L. 65.11 (helmets, one passenger astride behind the rider, parking at 45 degrees, no
+  // earphones in both ears). Transport Malta publishes no per-topic counts, so these are
+  // Tigertest's. Five real-length tests; pools are 5x each count plus 25 training-only spares.
+  // passPct 85 = ceil(0.85 * 35) = 30. All items original; the official question bank was not used.
+  blueprint: {
+    mtmotoLicence: 3,
+    mtmotoGear: 4,
+    mtmotoChecks: 4,
+    mtmotoControl: 6,
+    mtmotoPosition: 5,
+    mtmotoVisibility: 4,
+    mtmotoSurfaces: 4,
+    mtmotoPassengers: 2,
+    mtmotoRider: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 26201, name: "Gear & Machine Checks", categories: ["mtmotoGear", "mtmotoChecks"], size: 44, weightLabel: "8 of 35 test questions" },
+    { setNumber: 2, id: 26202, name: "Control & Road Position", categories: ["mtmotoControl", "mtmotoPosition"], size: 60, weightLabel: "11 of 35 test questions" },
+    { setNumber: 3, id: 26203, name: "Being Seen, Surfaces & Weather", categories: ["mtmotoVisibility", "mtmotoSurfaces"], size: 44, weightLabel: "8 of 35 test questions" },
+    { setNumber: 4, id: 26204, name: "Licences, Passengers & Safe Riding", categories: ["mtmotoLicence", "mtmotoPassengers", "mtmotoRider"], size: 52, weightLabel: "8 of 35 test questions" },
+  ],
+  categoryLabels: {
+    mtmotoLicence: "Licence Categories & Rider Law",
+    mtmotoGear: "Helmets & Protective Clothing",
+    mtmotoChecks: "Machine Checks & Faults",
+    mtmotoControl: "Control, Braking & Cornering",
+    mtmotoPosition: "Road Position, Overtaking & Filtering",
+    mtmotoVisibility: "Being Seen & Other Road Users",
+    mtmotoSurfaces: "Road Surfaces, Weather & Night",
+    mtmotoPassengers: "Passengers, Loads & Parking",
+    mtmotoRider: "Alcohol, Fatigue, Distraction & Crashes",
+  },
+  copy: {
+    guestPrompt: "to save your motorcycle theory test progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets on what Malta's motorcycle theory test checks: gear, machine checks, control, road position, being seen and slippery surfaces. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 35 questions, 30 to pass",
+    heroSubs: [
+      "Four topics, five real-length tests. Rider-only topics first.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your theory test.",
+    ],
+    sourceLine: "Original practice questions written from Malta's driving licence and motor vehicle regulations. Not affiliated with Transport Malta. 35 per test, 30 to pass.",
+    analyticsKey: "mtmoto",
+  },
+};
+
+const mtcpc: ExamConfig = {
+  id: "mtcpc",
+  stateCode: "MTCPC",
+  idBase: 26300,
+  slug: "/malta-driver-cpc",
+  landingPath: "/malta-driver-cpc-theory-test",
+  name: "Malta Driver CPC Theory Test Practice",
+  shortName: "Driver CPC (Malta)",
+  examLabel: "Driver CPC theory test",
+  fullName: "Malta Driver CPC Initial Qualification Theory Test (bus and truck)",
+  questionIdPrefix: "MTCPC-",
+  icon: "truck",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 60,
+  // Driver CPC initial qualification, Motor Vehicles (Driving Licences) Regulations S.L. 65.18
+  // Part IV and Thirteenth Schedule (L.N. 193 of 2020, the EU Driver CPC Directive, now Directive
+  // (EU) 2022/2561), read 2026-11-07: theory of at least 4 hours, multiple choice plus case
+  // studies, held by Transport Malta or a designated body. Transport Malta's training-provider
+  // guidelines (search extract): multiple-choice module 80 questions in 100 minutes, case studies
+  // 6 in 100 minutes, 60% each. Modelled at 50 questions at the same pace and 60%:
+  // ceil(0.6 x 50) = 30. Transport Malta publishes no topic weights; these are Tigertest's, one
+  // category per group of Thirteenth Schedule subjects. One bank covers bus and truck. Case
+  // studies and practical tests are not modelled. All items original.
+  blueprint: {
+    mtcpcEco: 5,
+    mtcpcBrakes: 5,
+    mtcpcRisk: 5,
+    mtcpcLoads: 6,
+    mtcpcPassengers: 6,
+    mtcpcHours: 7,
+    mtcpcTacho: 5,
+    mtcpcRules: 4,
+    mtcpcHealth: 3,
+    mtcpcEmergency: 4,
+  },
+  trainingSets: testSets(26300, 4),
+  categoryLabels: {
+    mtcpcEco: "Rational Driving & Fuel Economy",
+    mtcpcBrakes: "Brakes, Retarders & Driver Assistance",
+    mtcpcRisk: "Risk, Weather & Vulnerable Road Users",
+    mtcpcLoads: "Loading, Stability & Load Securing",
+    mtcpcPassengers: "Passenger Comfort, Safety & Accessibility",
+    mtcpcHours: "Drivers' Hours, Rest & Working Time",
+    mtcpcTacho: "Tachographs & Records",
+    mtcpcRules: "CPC, Licences & Carriage Rules",
+    mtcpcHealth: "Health, Fitness, Alcohol & Drugs",
+    mtcpcEmergency: "Emergencies, Security & the Transport Business",
+  },
+  copy: {
+    guestPrompt: "to save your Driver CPC progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1, and so on. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions, 60% to pass",
+    heroSubs: [
+      "Four tests on drivers' hours, tachographs, brakes, loads and passengers. You need 60%.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Book your CPC theory test through your training provider.",
+    ],
+    sourceLine: "Original questions written from Maltese and EU rules for professional bus and truck drivers (2026). The real multiple-choice module is 80 questions with 60% to pass. Not affiliated with Transport Malta.",
+    analyticsKey: "mtcpc",
+  },
+};
+
+const mttaxi: ExamConfig = {
+  id: "mttaxi",
+  stateCode: "MTTAXI",
+  idBase: 26000,
+  slug: "/malta-taxi-driver",
+  landingPath: "/malta-taxi-driver-theory-test",
+  name: "Malta Taxi Driver Theory Test Practice",
+  shortName: "Malta taxi theory test",
+  examLabel: "Malta taxi driver theory test",
+  fullName: "Malta Taxi Driver Theory Test (Taxi Driver and Area Knowledge Certificate)",
+  questionIdPrefix: "MTTAXI-",
+  icon: "car",
+  testCount: 5,
+  questionsPerTest: 35,
+  passPct: 85,
+  // Taxi Services Regulations, S.L. 499.59 (Third Schedule Part 1 subjects, Part 2a theory
+  // examination of 45 minutes; read on legislation.mt 2026-11-07). Transport Malta's training
+  // provider guidelines give 35 multiple-choice questions with 30 to pass: five real-length tests
+  // at passPct 85, ceil(0.85 x 35) = 30. Transport Malta publishes no per-subject split, so these
+  // weights are Tigertest's, following the Third Schedule's subject list. Each pool is 5x its
+  // count plus 2 to 7 training-only spares (25 in all). All items original; places in words.
+  blueprint: {
+    mttaxiPermit: 5,
+    mttaxiVehicle: 4,
+    mttaxiHiring: 5,
+    mttaxiFares: 3,
+    mttaxiPassengers: 4,
+    mttaxiSafety: 5,
+    mttaxiDriving: 3,
+    mttaxiArea: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 26001, name: "Permits, Tags & the Taxi", categories: ["mttaxiPermit", "mttaxiVehicle"], size: 49, weightLabel: "9 of 35 test questions" },
+    { setNumber: 2, id: 26002, name: "Hiring Rules & Fares", categories: ["mttaxiHiring", "mttaxiFares"], size: 44, weightLabel: "8 of 35 test questions" },
+    { setNumber: 3, id: 26003, name: "Passengers & Safety", categories: ["mttaxiPassengers", "mttaxiSafety"], size: 49, weightLabel: "9 of 35 test questions" },
+    { setNumber: 4, id: 26004, name: "Driving & Area Knowledge", categories: ["mttaxiDriving", "mttaxiArea"], size: 58, weightLabel: "9 of 35 test questions" },
+  ],
+  categoryLabels: {
+    mttaxiPermit: "Taxi Driver Permit & Tag",
+    mttaxiVehicle: "The Taxi & Its Equipment",
+    mttaxiHiring: "Hiring, Stands & Plying for Hire",
+    mttaxiFares: "Fares, Taximeter & Receipts",
+    mttaxiPassengers: "Customer Care & Passengers with Disabilities",
+    mttaxiSafety: "Emergencies, First Aid & Difficult Passengers",
+    mttaxiDriving: "Professional Driving, Vehicle Care & Fuel",
+    mttaxiArea: "Routes & Places in Malta and Gozo",
+  },
+  copy: {
+    guestPrompt: "to save your Malta taxi theory test progress and track every question you miss",
+    trainingHeading: "Train by course subject",
+    trainingSub: "Four sets covering every subject of the taxi driver course in the Taxi Services Regulations. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 35 questions, 30 to pass, like the real test",
+    heroSubs: [
+      "Four topic sets, five real-length mock tests.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. You are ready for the taxi theory test.",
+    ],
+    sourceLine: "Original practice questions written from Malta's Taxi Services Regulations (S.L. 499.59) and the subjects of the taxi driver course. Not affiliated with Transport Malta. 35 per test, 30 to pass.",
+    analyticsKey: "mttaxi",
+  },
+};
+
+const mtguard: ExamConfig = {
+  id: "mtguard",
+  stateCode: "MTGUARD",
+  idBase: 26100,
+  slug: "/malta-private-guard",
+  landingPath: "/malta-private-guard-licence-practice-test",
+  name: "Malta Private Guard Practice Test",
+  shortName: "Malta private guard exam",
+  examLabel: "Award in Private Security Guard Services assessment",
+  fullName: "Malta Private Guard Licence Exam (Award in Private Security Guard Services)",
+  questionIdPrefix: "MTPG-",
+  icon: "badge",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Malta: Jobsplus Award in Private Security Guard Services (MQF Level 2, 4 ECTS, course sheet June
+  // 2025), the approved course behind a private guard licence from the Commissioner of Police
+  // (Cap. 389; S.L. 389.01). Two 20-hour modules, each a 1-hour paper (true or false, multiple
+  // choice, short answers) passing at 45%; providers write the papers, no official count or
+  // weights. Tigertest's blueprint: Module 1 law 6, powers 8, duties 6, people 6 (26); Module 2
+  // risk 6, surveillance 6, fire 6, incidents 6 (24). 70% is Tigertest's readiness line.
+  blueprint: {
+    mtguardLaw: 6,
+    mtguardPowers: 8,
+    mtguardDuties: 6,
+    mtguardPeople: 6,
+    mtguardRisk: 6,
+    mtguardSurveillance: 6,
+    mtguardFire: 6,
+    mtguardIncidents: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 26101, name: "Module 1: Licensing, Law & Powers", categories: ["mtguardLaw", "mtguardPowers"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 2, id: 26102, name: "Module 1: Duties & People Skills", categories: ["mtguardDuties", "mtguardPeople"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 3, id: 26103, name: "Module 2: Risk, Patrols & Surveillance", categories: ["mtguardRisk", "mtguardSurveillance"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 4, id: 26104, name: "Module 2: Fire, Floods, Threats & Reports", categories: ["mtguardFire", "mtguardIncidents"], size: 48, weightLabel: "12 of 50 test questions" },
+  ],
+  categoryLabels: {
+    mtguardLaw: "Private Guard Licensing & Cap. 389",
+    mtguardPowers: "Arrest, Force & Search Powers",
+    mtguardDuties: "Duties, Legal Terms & Compliance",
+    mtguardPeople: "Communication, Conflict & Customer Care",
+    mtguardRisk: "Security Risk & Patrols",
+    mtguardSurveillance: "CCTV, Alarms, Access & Searches",
+    mtguardFire: "Fire Classes, Fire & Flood Drills",
+    mtguardIncidents: "Bomb Threats, Investigations & Reports",
+  },
+  copy: {
+    guestPrompt: "to save your private guard course progress and track every question you miss",
+    trainingHeading: "Train module by module",
+    trainingSub: "Four sets, two for each module of the Award in Private Security Guard Services: licensing, law and powers, duties and people skills, risk, patrols and surveillance, and fire, floods, bomb threats and reports. Missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions across both modules, 70% target",
+    heroSubs: [
+      "Four module sets, four mock tests.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Ready for your assessments.",
+    ],
+    sourceLine: "Based on the Jobsplus Award in Private Security Guard Services outcomes, the Private Guards and Community Officers Act (Cap. 389), the Private Guards Regulations and the Criminal Code. Original questions; 50 per test, 70% is Tigertest's target (each real module passes at 45%). Not affiliated with the Malta Police Force, Jobsplus or any training provider.",
+    analyticsKey: "mtguard",
+  },
+};
+
 const detheorie: ExamConfig = {
   id: "detheorie",
   stateCode: "DETHEORIE",
@@ -15439,7 +15701,7 @@ const sgvl: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, nhie, cna, ptcb, phleb, ccma, cma, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, sfadmin, phr, cisa, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, dkteori, setrafik, fitheory, grdriving, rodrpciv, hukresz, mttheory, detheorie, demotorrad, deaevo, de34a, deheilpr, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, gulfrn, inrto, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, nhie, cna, ptcb, phleb, ccma, cma, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, sfadmin, phr, cisa, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, dkteori, setrafik, fitheory, grdriving, rodrpciv, hukresz, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, gulfrn, inrto, htl, cst, crcst];
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
 export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA, realestatePA, realestateIL, realestateOH, realestateGA, realestateNC, realestateMI, realestateVA, realestateWA, realestateAZ, realestateTN, realestateLA, insuranceNY, insurancePA, insuranceIL, insuranceOH, insuranceGA, insuranceNC, insuranceMI, insuranceNJ, insuranceVA, insuranceWA, pncNY, pncPA, pncIL, pncOH, pncGA, pncNC, pncMI, pncNJ, pncVA, pncWA];

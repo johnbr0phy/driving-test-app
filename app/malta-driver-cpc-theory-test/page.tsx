@@ -7,7 +7,6 @@ import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHe
 import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
-import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import "@/lib/banks/mtcpc";
 import { SITE_URL } from "@/lib/siteUrl";
 
@@ -94,7 +93,6 @@ const jsonLd = {
           name: f.q,
           acceptedAnswer: { "@type": "Answer", text: f.a },
         })),
-        classFaqJsonLd("mtcpc"),
       ],
     },
   ],
@@ -268,7 +266,6 @@ export default function MaltaDriverCpcLandingPage() {
               <p className="text-gray-600 dark:text-gray-300">{f.a}</p>
             </div>
           ))}
-          <ExamClassFaq examId="mtcpc" />
         </div>
       </div>
 

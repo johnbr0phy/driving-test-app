@@ -125,7 +125,7 @@ const TEST_REGIONS: Record<string, TestRegion> = {
   phnle: "PH", phmedtech: "PH", phpharm: "PH", phmidwife: "PH", phpsychom: "PH", phnapolcom: "PH", afpsat: "PH", phcle: "PH", phinsurance: "PH", phrebroker: "PH",
   sgftt: "SG", sgrtt: "SG", sgres: "SG", sgm5: "SG", sgvl: "SG", hkiiqe1: "HK", hklesfi1: "HK", aesira: "AE", mypce: "MY", kenck: "KE",
   detheorie: "DE", demotorrad: "DE", deaevo: "DE", de34a: "DE", deheilpr: "DE",
-  esdgt: "ES", escapcond: "ES", espolicia: "ES", esguardia: "ES", esvigilante: "ES", ptimt: "PT", ptmoto: "PT", ptcam: "PT", pttvde: "PT", ptvigil: "PT", rodrpciv: "RO", setrafik: "SE", grdriving: "GR", dkteori: "DK", hukresz: "HU", bedriving: "BE", fitheory: "FI", mttheory: "MT",
+  esdgt: "ES", escapcond: "ES", espolicia: "ES", esguardia: "ES", esvigilante: "ES", ptimt: "PT", ptmoto: "PT", ptcam: "PT", pttvde: "PT", ptvigil: "PT", rodrpciv: "RO", setrafik: "SE", grdriving: "GR", dkteori: "DK", hukresz: "HU", bedriving: "BE", fitheory: "FI", mttheory: "MT", mtmoto: "MT", mtcpc: "MT", mttaxi: "MT", mtguard: "MT",
   jambeng: "NG", jambmath: "NG", jambbio: "NG", jambchem: "NG", jambphys: "NG",
   ngpolice: "NG", cdcfib: "NG", ngarmy: "NG", ngcustoms: "NG", trcnpqe: "NG",
   inrto: "IN", ssccgl: "IN", rrbntpc: "IN", ibpspo: "IN", ctet: "IN",
@@ -142,6 +142,7 @@ const TEST_REGIONS: Record<string, TestRegion> = {
 export const NON_DRIVING_TESTS = new Set([
   "espolicia", "esguardia", "esvigilante",
   "ptvigil",
+  "mttaxi", "mtguard",
   "deaevo", "de34a", "deheilpr",
   "timestables", "ks2", "gcsemaths", "uksia", "uk18ed",
   "gcsehigher", "gcsescience", "gcsecs", "elevenplus", "fsmaths", "cscs", "ukfood", "ukaplh", "ukfaw", "ukcare", "uklitu", "uknmc", "ukseru", "aatl2", "cemap",
@@ -390,11 +391,11 @@ export const REGION_HOME: Record<Exclude<Region, "US">, {
   },
   MT: {
     title: "Free Malta Driving Theory Test Practice | Tigertest",
-    description: "Free driving theory test practice for Malta: 200 original questions on Maltese road rules and signs, every answer explained. No account needed.",
-    lead: "Practise for the Transport Malta theory test for your car licence. Original questions on signs, roundabouts, speed limits and safe driving, every answer explained. No signup.",
+    description: "Free practice for Malta: the Transport Malta car and motorcycle theory tests, the Driver CPC, the taxi driver theory test and the private guard course, every answer explained. No account needed.",
+    lead: "Practise for Transport Malta's theory tests: car, motorcycle, Driver CPC and the taxi driver test. Original questions on signs, roundabouts, riding, taxi rules and the places of Malta and Gozo, every answer explained. No signup.",
     cta: { label: "Theory test", href: "/malta-driving-theory-test" },
-    testsTitle: "Driving theory test",
-    testsSub: "200 questions on Malta's road rules, in km/h for left-hand traffic. Five full 35-question tests, 30 to pass.",
+    testsTitle: "Practice tests for Malta",
+    testsSub: "The car theory test: 200 questions on Malta's road rules, in km/h for left-hand traffic, five full 35-question tests, 30 to pass. Also the motorcycle theory test, the Driver CPC for bus and truck drivers, the taxi driver theory test and the private guard course.",
   },
 };
 

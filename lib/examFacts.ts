@@ -2576,6 +2576,69 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Transport Malta's licensing guidance and the Highway Code of Malta (updated 25 July 2025), checked November 2026",
     source: { name: "Transport Malta: Obtaining your driving licence", url: "https://www.transport.gov.mt/land/licence/obtaining-your-driving-licence-786" },
   },
+  mtmoto: {
+    answer:
+      "The Malta motorcycle theory test is Transport Malta's theory test for a moped or motorcycle licence in categories AM, A1, A2 and A, taken on a touch-screen computer at the Theory Test Centre. Transport Malta gives the theory test as 35 multiple-choice questions in 45 minutes, with 30 correct to pass, in English or Maltese. Malta's driving licence regulations add compulsory questions for motorcycle categories on protective clothing and helmets, how visible riders are, slippery surfaces such as drain covers and road markings, and the engine cut-out switch, oil and chain. For category AM the theory test is the whole test; for A1, A2 and A a practical test follows.",
+    rows: [
+      { label: "Run by", value: "Transport Malta" },
+      { label: "Categories", value: "AM, A1, A2 and A" },
+      { label: "Questions", value: "35 multiple choice, on a touch screen" },
+      { label: "Time", value: "45 minutes" },
+      { label: "Pass mark", value: "30 of 35" },
+      { label: "Languages", value: "English or Maltese" },
+      { label: "Theory test age", value: "18, or 16 for category AM (S.L. 65.18 reg. 18)" },
+      { label: "Tigertest mock tests", value: "5 x 35 questions, 30 to pass" },
+    ],
+    basedOn: "the Motor Vehicles (Driving Licences) Regulations (S.L. 65.18), the Motor Vehicles Regulations (S.L. 65.11) and Transport Malta's licensing guidance, checked November 2026",
+    source: { name: "Motor Vehicles (Driving Licences) Regulations, S.L. 65.18", url: "https://legislation.mt/eli/sl/65.18/eng" },
+  },
+  mtcpc: {
+    answer:
+      "The Driver CPC (Certificate of Professional Competence) theory test is part of the initial qualification every professional bus, coach and truck driver in Malta needs as well as the licence. Under the Motor Vehicles (Driving Licences) Regulations the theory test lasts at least four hours and has multiple-choice questions and case studies, followed by practical tests, run by Transport Malta or a body it designates. Transport Malta's guidelines for training providers describe the multiple-choice module as 80 questions in 100 minutes and the case study module as six case studies in 100 minutes, each with a 60% pass mark. The CPC lasts five years, then 35 hours of periodic training renews it.",
+    rows: [
+      { label: "Who needs it", value: "Drivers of buses, coaches and trucks (C1, C, D1, D) for work" },
+      { label: "Theory", value: "At least 4 hours: multiple choice plus case studies" },
+      { label: "Multiple-choice module", value: "80 questions in 100 minutes, 60% to pass (training-provider guidelines)" },
+      { label: "Case studies", value: "6 case studies in 100 minutes, 60% to pass (training-provider guidelines)" },
+      { label: "Practical", value: "Driving test of at least 90 minutes plus a 30-minute practical test" },
+      { label: "Valid", value: "5 years, renewed by 35 hours of periodic training" },
+      { label: "On your licence", value: "Code 95" },
+      { label: "Run by", value: "Transport Malta or a designated body; courses by approved training providers" },
+    ],
+    basedOn: "S.L. 65.18 (Motor Vehicles (Driving Licences) Regulations) and Transport Malta's guidelines for approved training providers, checked November 2026",
+    source: { name: "Motor Vehicles (Driving Licences) Regulations, S.L. 65.18", url: "https://legislation.mt/eli/sl/65.18/eng" },
+  },
+  mttaxi: {
+    answer:
+      "The Malta taxi driver theory test is the theory examination for the Taxi Driver and Area Knowledge Certificate, which you need with a practical test and 40 hours accompanying a working taxi driver to get a taxi driver permit and the driver's tag from Transport Malta. You first attend a taxi driver course of at least 46 hours with a training provider approved by Transport Malta. The Taxi Services Regulations set the theory examination at 45 minutes; Transport Malta's guidance gives 35 multiple-choice questions with 30 correct to pass, in Maltese or English.",
+    rows: [
+      { label: "Run by", value: "Transport Malta (Land Transport Directorate)" },
+      { label: "Questions", value: "35 multiple choice (Transport Malta guidance)" },
+      { label: "Time", value: "45 minutes" },
+      { label: "Pass mark", value: "30 of 35 (about 85%)" },
+      { label: "Course first", value: "At least 46 hours with an approved provider" },
+      { label: "Then", value: "Practical test and 40 accompanied hours, 10 at night" },
+      { label: "Permit age", value: "19 or over" },
+      { label: "Permit and tag", value: "Up to five years, refresher course every five years" },
+    ],
+    basedOn: "the Taxi Services Regulations (S.L. 499.59) and Transport Malta's taxi driver guidance, checked November 2026",
+    source: { name: "Taxi Services Regulations, S.L. 499.59", url: "https://legislation.mt/eli/sl/499.59/eng" },
+  },
+  mtguard: {
+    answer:
+      "In Malta no one may act as a private guard, and no agency may provide one, without a licence from the Commissioner of Police under the Private Guards and Community Officers Act (Cap. 389). Under the Private Guards Regulations an applicant shows a certificate from a training course the Commissioner has approved, such as the Award in Private Security Guard Services, unless he has served with the police, the armed forces or the prison services. Jobsplus describes that course as 40 hours in two 20-hour modules, each ending with a 1-hour written paper of true or false, multiple choice and short answer questions, with a 45% pass mark. Training providers write their own papers, so there is no fixed question count. 70% is Tigertest's readiness line for these mock tests.",
+    rows: [
+      { label: "Course", value: "Award in Private Security Guard Services (MQF Level 2, 4 ECTS)" },
+      { label: "Modules", value: "Two of 20 hours: legislation and occupational skills; security risk and practices" },
+      { label: "Assessment", value: "1-hour paper per module: true or false, multiple choice, short answers" },
+      { label: "Pass mark", value: "45% per module (70% is Tigertest's target)" },
+      { label: "Questions", value: "Set by the training provider; not published" },
+      { label: "Entry", value: "Age 18 to 65, MQF Level 2 maths and English, clean conduct certificate (Jobsplus)" },
+      { label: "Licence", value: "Private guard licence from the Commissioner of Police (Cap. 389)" },
+    ],
+    basedOn: "Jobsplus course sheet (June 2025), Cap. 389 and S.L. 389.01, checked November 2026",
+    source: { name: "Jobsplus: Award in Private Security Guard Services", url: "https://jobsplus.gov.mt/media/jysd0buh/award-in-private-security-guard-services.pdf" },
+  },
   detheorie: {
     answer:
       "The German theory test (theoretische Fahrerlaubnisprüfung) for a first class B car licence has 30 questions, answered on screen at a TÜV or DEKRA test centre: 20 from the basic material that applies to every licence class (Grundstoff) and 10 class B questions (Zusatzstoff). Each question carries 2 to 5 error points depending on its importance for road safety, 110 in all. You pass with no more than 10 error points, but two wrong 5-point questions always fail. There is no fixed time limit; the guide time is 45 minutes. The test is in German and can also be taken in several foreign languages (the FeV now lists 14), including English, Turkish, Russian and Arabic. Questions come from the official catalogue published by TÜV | DEKRA arge tp 21, revised each April and October; some have several correct answers, some ask for a number, and up to three are short videos. A reform with a smaller catalogue and equal weighting is planned for 2027.",

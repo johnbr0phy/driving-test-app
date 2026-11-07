@@ -199,6 +199,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   nptepta: { title: "NPTE-PTA Exam", description: "Review musculoskeletal, neuromuscular and cardiopulmonary care, modalities and PTA scope." },
   aswbclin: { title: "ASWB Clinical Exam (LCSW)", description: "Review clinical ethics, DSM-5-TR diagnosis, treatment planning and evidence-based therapies." },
   phr: { title: "HRCI PHR Exam", description: "Practice HR law, talent acquisition, total rewards, employee relations and HR metrics." },
+  fortigate: { title: "FortiGate Administrator", description: "Practice FortiGate setup, HA, firewall policies and NAT, security profiles, SSL inspection, SD-WAN and IPsec VPN." },
   cisa: { title: "ISACA CISA", description: "Practice the IS audit process, IT governance, development, operations and resilience, and protecting information assets." },
   cssgb: { title: "Six Sigma Green Belt (CSSGB)", description: "Practice DMAIC, lean tools, process capability, hypothesis tests, DOE and control charts." },
   ccs: { title: "AHIMA CCS Exam", description: "Review inpatient and outpatient coding, ICD-10-PCS, MS-DRGs, queries and compliance." },

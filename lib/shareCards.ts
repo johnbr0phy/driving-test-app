@@ -706,6 +706,10 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
     "color": "hsl(250, 20%, 32%)",
     "tint": "hsl(250, 20%, 96%)"
   },
+  "fortigate": {
+    "color": "hsl(355, 25%, 28%)",
+    "tint": "hsl(355, 25%, 96%)"
+  },
   "cssgb": {
     "color": "hsl(14, 50%, 26%)",
     "tint": "hsl(14, 50%, 96%)"

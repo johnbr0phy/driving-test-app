@@ -1109,6 +1109,16 @@ export const en = {
     cisaAcquisition: "IS Acquisition, Development & Implementation",
     cisaOperations: "IS Operations & Business Resilience",
     cisaProtection: "Protection of Information Assets",
+    // fortigate
+    fgtSystem: "System Setup, Administration & VDOMs",
+    fgtHaLog: "HA, Security Fabric, Logging & Diagnostics",
+    fgtPolicy: "Firewall Policies & Objects",
+    fgtNat: "NAT, IP Pools & Virtual IPs",
+    fgtAuth: "Authentication & FSSO",
+    fgtSslInspect: "SSL Inspection & Inspection Modes",
+    fgtSecProfiles: "Security Profiles",
+    fgtRouting: "Routing & SD-WAN",
+    fgtVpn: "IPsec VPN",
     // cssgb
     cssgbOverview: "Six Sigma & the Organization",
     cssgbDefine: "Define Phase",

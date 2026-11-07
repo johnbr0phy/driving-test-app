@@ -111,7 +111,7 @@ const BORROWED_SETS: Record<string, string> = {
   cpaaud: "cpafar", accafa: "cpafar", aatl2: "cpafar",
   // Next-20 batch C reuses the reviewed social-work, cybersecurity, project-management, coding,
   // teaching, insurance and mortgage families. Dietitian and HR exams have their own sets above.
-  aswbclin: "aswb", cisa: "cissp", cssgb: "pmp", ccs: "cpc", praxis5001: "praxis",
+  aswbclin: "aswb", cisa: "cissp", fortigate: "secplus", cssgb: "pmp", ccs: "cpc", praxis5001: "praxis",
   fladjuster: "pnc", llqp: "insurance", cemap: "nmls",
   // International batch 1 reuses the car, CDL, real estate, insurance, Series 7, hunter, personal
   // licence, security guard and NCLEX families.

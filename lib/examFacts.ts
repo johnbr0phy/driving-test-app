@@ -4762,6 +4762,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "ISACA CISA exam content outline and certification requirements, checked November 2026",
     source: { name: "ISACA: CISA Exam Content Outline", url: "https://www.isaca.org/credentialing/cisa/cisa-exam-content-outline" },
   },
+  fortigate: {
+    answer:
+      "The FCP - FortiGate 7.6 Administrator exam (FCP_FGT_AD-7.6, formerly called NSE 4) is Fortinet's certification exam for people who configure and run FortiGate firewalls on FortiOS 7.6. It is the core exam toward the Fortinet Certified Professional (FCP) in Network Security. Study guides give 50 multiple-choice and multiple-select questions in 90 minutes, taken at a Pearson VUE test center or online, with a pass or fail result and no published passing score. The topics are deployment and system configuration, firewall policies and authentication, content inspection, routing including SD-WAN, and VPN.",
+    rows: [
+      { label: "Questions", value: "About 50 (study guides)" },
+      { label: "Time", value: "90 minutes (study guides)" },
+      { label: "Passing score", value: "Pass or fail, cut score not published" },
+      { label: "Product version", value: "FortiOS 7.6" },
+      { label: "Topic areas", value: "Deployment, firewall and authentication, content inspection, routing and SD-WAN, VPN" },
+      { label: "Counts toward", value: "FCP in Network Security" },
+      { label: "Delivered by", value: "Pearson VUE, test center or online" },
+    ],
+    basedOn: "Fortinet Training Institute FortiGate Administrator course page and study guides quoting the FCP_FGT_AD-7.6 exam description, checked November 2026",
+    source: { name: "Fortinet Training Institute: FortiGate Administrator", url: "https://training.fortinet.com/local/staticpage/view.php?page=library_fortigate-administrator" },
+  },
   cssgb: {
     answer:
       "The ASQ Certified Six Sigma Green Belt (CSSGB) exam is ASQ's certification for people who work on process improvement projects, usually supporting a Black Belt. The computer-based exam has 110 multiple-choice questions, 100 of them scored, with 4 hours 18 minutes of exam time; it is open book and in English. Its 2022 Body of Knowledge sets the scored questions per section: Overview 11, Define 20, Measure 20, Analyze 18, Improve 16 and Control 15. ASQ reports a pass as a scaled score of 550, needs three years of relevant work experience and does not require recertification.",

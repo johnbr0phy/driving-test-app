@@ -1,0 +1,37 @@
+{
+  "id": "esguardia",
+  "stateCode": "ESGUARDIA",
+  "idBase": 22400,
+  "prefix": "ESGC-",
+  "slug": "/oposiciones-guardia-civil",
+  "landingPath": "/es/test-oposiciones-guardia-civil",
+  "dataFile": "data/es-guardia-civil-questions.json",
+  "language": "es",
+  "locale": "es-ES",
+  "name": "Test oposiciones Guardia Civil",
+  "shortName": "Oposiciones Guardia Civil",
+  "examLabel": "Prueba de conocimientos de la Guardia Civil",
+  "fullName": "Oposiciones a la Escala de Cabos y Guardias de la Guardia Civil: prueba de conocimientos",
+  "english": {
+    "name": "Guardia Civil Entrance Exam (Spain)",
+    "shortName": "Guardia Civil exam",
+    "fullName": "Spanish Guardia Civil entrance exam (Escala de Cabos y Guardias), knowledge test, in Spanish"
+  },
+  "icon": "shield",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 63,
+  "categories": [
+    {"key": "esgcDerechos", "label": "Derechos humanos, igualdad y deontología", "perTest": 6, "pool": 24, "segment": "DDH"},
+    {"key": "esgcConstitucion", "label": "Derecho constitucional", "perTest": 6, "pool": 24, "segment": "CON"},
+    {"key": "esgcInternacional", "label": "Unión Europea e instituciones internacionales", "perTest": 4, "pool": 16, "segment": "INT"},
+    {"key": "esgcPenal", "label": "Derecho penal, menores y violencia de género", "perTest": 8, "pool": 32, "segment": "PEN"},
+    {"key": "esgcProcesal", "label": "Derecho procesal penal", "perTest": 6, "pool": 24, "segment": "PRO"},
+    {"key": "esgcAdministrativo", "label": "Derecho civil, administrativo y protección de datos", "perTest": 6, "pool": 24, "segment": "ADM"},
+    {"key": "esgcSeguridad", "label": "Seguridad, extranjería, armas y contrabando", "perTest": 6, "pool": 24, "segment": "SEG"},
+    {"key": "esgcInstituto", "label": "Fuerzas y Cuerpos de Seguridad y Guardia Civil", "perTest": 4, "pool": 16, "segment": "INS"},
+    {"key": "esgcTecnico", "label": "Riesgos laborales, protección civil, TIC y topografía", "perTest": 4, "pool": 16, "segment": "TEC"}
+  ],
+  "notes": "4 tests x 50 = 200, every item in exactly one test (pools exactly 4x each count). Categories group temas 1 to 23 of the official temario (Resolución de 3 de octubre de 2022, updated 29 de mayo de 2023); temas 24 (inglés) and 25 (lengua española) are separate tests and not modelled. The 6/6/4/8/6/6/6/4/4 split is Tigertest's (no official weights). Five topic sets 22401-22405 + 4 tests = 9 dashboard steps. passPct 63 (32 of 50) = the real 50-point minimum when every question is answered under the A - E/3 penalty, which Tigertest does not apply.",
+  "trainingSets": "topic sets 22401-22405, see WIRING.md"
+}

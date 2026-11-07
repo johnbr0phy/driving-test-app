@@ -1,0 +1,36 @@
+{
+  "id": "fihunt",
+  "stateCode": "FIHUNT",
+  "idBase": 24200,
+  "prefix": "FIHUNT-",
+  "slug": "/metsastajatutkinto",
+  "landingPath": "/fi/metsastajatutkinto-harjoituskoe",
+  "dataFile": "data/finland-hunter-exam-questions.json",
+  "language": "fi",
+  "locale": "fi-FI",
+  "name": "Metsästäjätutkinto harjoituskoe",
+  "shortName": "Metsästäjätutkinto",
+  "examLabel": "Metsästäjätutkinto",
+  "fullName": "Metsästäjätutkinto (Suomen riistakeskus)",
+  "english": {
+    "name": "Finland Hunter's Examination (Metsästäjätutkinto)",
+    "shortName": "Finnish hunter's exam",
+    "fullName": "Finnish hunter's examination (metsästäjätutkinto), in Finnish"
+  },
+  "icon": "target",
+  "testCount": 3,
+  "questionsPerTest": 60,
+  "passPct": 86,
+  "categories": [
+    {"key": "fihnLaji", "label": "Lajintuntemus", "perTest": 15, "pool": 48, "segment": "LAJ"},
+    {"key": "fihnLaki", "label": "Metsästyslainsäädäntö", "perTest": 12, "pool": 40, "segment": "LAK"},
+    {"key": "fihnTurva", "label": "Metsästyksen turvallisuus", "perTest": 8, "pool": 26, "segment": "TUR"},
+    {"key": "fihnAseet", "label": "Aseet ja patruunat metsästyksessä", "perTest": 7, "pool": 24, "segment": "ASE"},
+    {"key": "fihnEtiikka", "label": "Eettinen ja kestävä metsästys", "perTest": 5, "pool": 17, "segment": "ETI"},
+    {"key": "fihnPyynti", "label": "Pyyntivälineet ja pyyntimenetelmät", "perTest": 5, "pool": 17, "segment": "PYY"},
+    {"key": "fihnRiista", "label": "Riistanhoito ja riistaekologia", "perTest": 5, "pool": 17, "segment": "RII"},
+    {"key": "fihnSaalis", "label": "Saaliin käsittely", "perTest": 3, "pool": 11, "segment": "SAA"}
+  ],
+  "notes": "Three real-length 60-question tests (180 items) plus 20 training-only spares = 200. passPct 86 = ceil(0.86 x 60) = 52 of 60, the real line (at most 8 wrong, asetus 1160/2014 3 §). The 15 lajintuntemus items per test stand in for the 15 picture questions, written in words. Categories are the eight topic areas of MMMa 1160/2014 2 §; the 15/12/8/7/5/5/5/3 split is Tigertest's own (no published weights). Five topic sets 24201-24205 (48, 40, 50, 34, 28) + 3 tests = 8 dashboard steps.",
+  "trainingSets": "topic sets 24201-24205, see WIRING.md"
+}

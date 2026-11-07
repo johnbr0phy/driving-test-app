@@ -1,0 +1,36 @@
+{
+  "id": "dkmedborger",
+  "stateCode": "DKMEDB",
+  "idBase": 23900,
+  "prefix": "DKMED-",
+  "slug": "/medborgerskabsproeve",
+  "landingPath": "/da/medborgerskabsproeven-oevelsesproeve",
+  "dataFile": "data/dk-medborgerskab-questions.json",
+  "language": "da",
+  "locale": "da-DK",
+  "name": "Medborgerskabsprøven",
+  "shortName": "Medborgerskabsprøven",
+  "examLabel": "Medborgerskabsprøven",
+  "fullName": "Medborgerskabsprøven (demokrati og hverdagsliv i Danmark)",
+  "english": {
+    "name": "Danish Permanent Residence Test (Medborgerskabsprøven)",
+    "shortName": "Danish permanent residence test",
+    "fullName": "Danish active citizenship test for permanent residence (medborgerskabsprøven), in Danish"
+  },
+  "icon": "flag",
+  "testCount": 8,
+  "questionsPerTest": 25,
+  "passPct": 80,
+  "categories": [
+    {"key": "dkmedSkole", "label": "Skole, uddannelse og dagtilbud", "perTest": 3, "pool": 24, "segment": "SKO"},
+    {"key": "dkmedArbejde", "label": "Arbejdsmarked og erhvervsliv", "perTest": 4, "pool": 32, "segment": "ARB"},
+    {"key": "dkmedVelfaerd", "label": "Velfærd, sundhed og skat", "perTest": 3, "pool": 24, "segment": "VEL"},
+    {"key": "dkmedFamilie", "label": "Familie, foreninger og ligestilling", "perTest": 3, "pool": 24, "segment": "FAM"},
+    {"key": "dkmedDemokrati", "label": "Valg, Folketing og retssamfund", "perTest": 4, "pool": 32, "segment": "DEM"},
+    {"key": "dkmedRettigheder", "label": "Kommune, rettigheder og tro", "perTest": 3, "pool": 24, "segment": "RET"},
+    {"key": "dkmedVerden", "label": "Danmark i verden, geografi og klima", "perTest": 3, "pool": 24, "segment": "VER"},
+    {"key": "dkmedKultur", "label": "Historie, kultur og mærkedage", "perTest": 2, "pool": 16, "segment": "KUL"}
+  ],
+  "notes": "8 tests x 25 = 200, every item in exactly one test (pools exactly 8x each count), the real test's 25 questions and 20 to pass (passPct 80). Training: four topic sets 23901-23904 (hverdagsliv 48, arbejde og velfærd 56, demokrati og rettigheder 56, verden og kultur 40), so the dashboard is 4 sets + 8 tests = 12 steps. Categories follow the 26 fakta-ark of SIRI's Læremateriale til medborgerskabsprøven (August 2024); the 3/4/3/3/4/3/3/2 split is Tigertest's.",
+  "trainingSets": "topic sets 23901-23904, see WIRING.md"
+}

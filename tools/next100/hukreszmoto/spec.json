@@ -1,0 +1,36 @@
+{
+  "id": "hukreszmoto",
+  "stateCode": "HUKRMOTO",
+  "idBase": 24400,
+  "prefix": "HUKRM-",
+  "slug": "/hungary-motorcycle-theory",
+  "landingPath": "/hungary-motorcycle-theory-test",
+  "dataFile": "data/hungary-motorcycle-theory-questions.json",
+  "name": "Hungary Motorcycle Theory Practice Test",
+  "shortName": "Hungary motorcycle test",
+  "examLabel": "Hungary motorcycle theory exam",
+  "fullName": "Hungary motorcycle theory exam (Közlekedési alapismeretek), categories AM, A1, A2 and A",
+  "icon": "bike",
+  "testCount": 3,
+  "questionsPerTest": 55,
+  "passPct": 87,
+  "categories": [
+    {"key": "hukmLicence", "label": "Categories, Licences & the Rider", "perTest": 6, "pool": 22, "segment": "LIC"},
+    {"key": "hukmGear", "label": "Helmets, Protective Gear & Being Seen", "perTest": 5, "pool": 18, "segment": "GEA"},
+    {"key": "hukmChecks", "label": "Motorcycle Checks & How It Works", "perTest": 6, "pool": 22, "segment": "CHK"},
+    {"key": "hukmControl", "label": "Braking, Cornering & Control", "perTest": 7, "pool": 26, "segment": "CTL"},
+    {"key": "hukmPosition", "label": "Road Position, Filtering & Overtaking", "perTest": 7, "pool": 26, "segment": "POS"},
+    {"key": "hukmSpeed", "label": "Speed, Signs & Motorways for Riders", "perTest": 6, "pool": 22, "segment": "SPD"},
+    {"key": "hukmPriority", "label": "Junctions, Trams & Being Seen", "perTest": 6, "pool": 22, "segment": "PRI"},
+    {"key": "hukmPassengers", "label": "Passengers, Loads, Parking & Mopeds", "perTest": 6, "pool": 22, "segment": "PAS"},
+    {"key": "hukmHazards", "label": "Hazards, Weather, Night & Breakdowns", "perTest": 6, "pool": 20, "segment": "HAZ"}
+  ],
+  "notes": "Real exam (A1, A2, A): 55 questions, 55 minutes, 75 points, 65 to pass; AM is 25 questions, 25 minutes, 35 points, 30 to pass. Three real-length A-family tests of 55 (165 items) plus 35 training-only spares (the last items of each pool). passPct 87 mirrors 65 of 75 (86.7%); AM's 30 of 35 is 85.7%. Dashboard = 5 sets + 3 tests = 8 steps.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 24401, "name": "Licences, Helmets & Gear", "categories": ["hukmLicence", "hukmGear"], "size": 40},
+    {"setNumber": 2, "id": 24402, "name": "Checks, Braking & Cornering", "categories": ["hukmChecks", "hukmControl"], "size": 48},
+    {"setNumber": 3, "id": 24403, "name": "Road Position & Junctions", "categories": ["hukmPosition", "hukmPriority"], "size": 48},
+    {"setNumber": 4, "id": 24404, "name": "Speed, Passengers & Mopeds", "categories": ["hukmSpeed", "hukmPassengers"], "size": 44},
+    {"setNumber": 5, "id": 24405, "name": "Hazards, Weather & Breakdowns", "categories": ["hukmHazards"], "size": 20}
+  ]
+}

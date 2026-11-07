@@ -1,0 +1,31 @@
+{
+  "id": "rocpi",
+  "stateCode": "ROCPI",
+  "idBase": 25000,
+  "prefix": "ROCPI-",
+  "slug": "/romania-driver-cpc",
+  "landingPath": "/romania-driver-cpc-practice-test",
+  "dataFile": "data/romania-cpi-questions.json",
+  "name": "Romania Driver CPC (CPI) Practice Test",
+  "shortName": "Romania CPI (Driver CPC)",
+  "examLabel": "ARR CPI theory exam",
+  "fullName": "Romania ARR Driver CPC initial qualification (CPI marfă / persoane), theory questionnaire",
+  "icon": "truck",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 70,
+  "region": "RO",
+  "categories": [
+    {"key": "rocpiEco", "label": "Rational Driving & Eco-Driving", "perTest": 5, "pool": 20, "segment": "ECO"},
+    {"key": "rocpiTech", "label": "Vehicle Technology, Brakes & Checks", "perTest": 6, "pool": 24, "segment": "BRK"},
+    {"key": "rocpiLoads", "label": "Loading, Weights & Load Securing", "perTest": 6, "pool": 24, "segment": "LOD"},
+    {"key": "rocpiPassengers", "label": "Passenger Transport & Accessibility", "perTest": 5, "pool": 20, "segment": "PSG"},
+    {"key": "rocpiHours", "label": "Drivers' Hours & Working Time", "perTest": 7, "pool": 28, "segment": "HRS"},
+    {"key": "rocpiTacho", "label": "Tachographs & Records", "perTest": 5, "pool": 20, "segment": "TAC"},
+    {"key": "rocpiRules", "label": "Transport Documents, Cabotage & Licences", "perTest": 5, "pool": 20, "segment": "DOC"},
+    {"key": "rocpiSafety", "label": "Road Risks, Health & Fitness to Drive", "perTest": 6, "pool": 24, "segment": "SAF"},
+    {"key": "rocpiEmergency", "label": "Emergencies, Crime & Professional Conduct", "perTest": 5, "pool": 20, "segment": "EMG"}
+  ],
+  "trainingSets": "testSets(25000, 4)",
+  "notes": "Real questionnaire: 100 questions, 4 options with one correct, 2 hours, 70% to pass, plus a separate 2-hour case-study paper (6 cases, 70%) and a practical exam (Order 1214/2015, Annex 2, art. 4). Modelled as four 50-question tests at the real pace and mark (35 of 50). Pools are 4x per-test counts, no spares. Dashboard = 4 sets + 4 tests = 8 steps."
+}

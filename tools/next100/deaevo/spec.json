@@ -1,0 +1,38 @@
+{
+  "id": "deaevo",
+  "stateCode": "DEAEVO",
+  "idBase": 22000,
+  "prefix": "DEAEVO-",
+  "slug": "/ausbildereignung",
+  "landingPath": "/de/aevo-pruefung-test",
+  "dataFile": "data/de-aevo-questions.json",
+  "language": "de",
+  "locale": "de-DE",
+  "name": "AEVO Prüfung Test",
+  "shortName": "AEVO Prüfung",
+  "examLabel": "Ausbildereignungsprüfung (AEVO)",
+  "fullName": "Ausbildereignungsprüfung nach der Ausbilder-Eignungsverordnung (AEVO), schriftlicher Teil",
+  "english": {
+    "name": "German Trainer Aptitude Exam (AEVO)",
+    "shortName": "German AEVO trainer exam",
+    "fullName": "German trainer aptitude exam (Ausbildereignungsprüfung, AEVO), written part, in German"
+  },
+  "icon": "graduation",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 70,
+  "categories": [
+    {"key": "aevoNutzen", "label": "Nutzen der Ausbildung und duales System", "hf": 1, "perTest": 4, "pool": 16, "segment": "NUT"},
+    {"key": "aevoRahmen", "label": "Rechtsrahmen, Eignung und zuständige Stellen", "hf": 1, "perTest": 4, "pool": 16, "segment": "RAH"},
+    {"key": "aevoPlan", "label": "Ausbildungsplan, Mitbestimmung und Kooperation", "hf": 2, "perTest": 3, "pool": 12, "segment": "PLA"},
+    {"key": "aevoVertrag", "label": "Auswahl und Ausbildungsvertrag", "hf": 2, "perTest": 4, "pool": 16, "segment": "VER"},
+    {"key": "aevoRechte", "label": "Rechte, Freistellung und Jugendarbeitsschutz", "hf": 2, "perTest": 3, "pool": 12, "segment": "REC"},
+    {"key": "aevoLernen", "label": "Lernen, Motivation und Lernziele", "hf": 3, "perTest": 7, "pool": 28, "segment": "LER"},
+    {"key": "aevoMethoden", "label": "Ausbildungsmethoden und Medien", "hf": 3, "perTest": 6, "pool": 24, "segment": "MET"},
+    {"key": "aevoBegleitung", "label": "Probezeit, Lernbegleitung und Konflikte", "hf": 3, "perTest": 6, "pool": 24, "segment": "BEG"},
+    {"key": "aevoBeurteilung", "label": "Leistungen beurteilen", "hf": 3, "perTest": 5, "pool": 20, "segment": "BEU"},
+    {"key": "aevoAbschluss", "label": "Prüfung, Zeugnis und Perspektiven", "hf": 4, "perTest": 8, "pool": 32, "segment": "ABS"}
+  ],
+  "notes": "4 tests x 50 = 200, every item in exactly one test (pools exactly 4x each count). Per test HF1 8, HF2 10, HF3 24, HF4 8 (16/20/48/16 %, the Rahmenplan 2023 split 15/20/50/15). Training: five topic sets 22001-22005 by Handlungsfeld (HF1 32, HF2 40, HF3 Lernen+Methoden 52, HF3 Begleitung+Beurteilung 44, HF4 32) + 4 tests = 9 dashboard steps. passPct 70 = Tigertest's target (35 of 50); the real written part passes at 50 of 100 points, but multi-answer tasks score all or nothing.",
+  "trainingSets": "topic sets 22001-22005, see WIRING.md"
+}

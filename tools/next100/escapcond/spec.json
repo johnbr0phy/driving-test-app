@@ -1,0 +1,37 @@
+{
+  "id": "escapcond",
+  "stateCode": "ESCAPCOND",
+  "idBase": 22700,
+  "prefix": "ESCAP-",
+  "slug": "/examen-cap",
+  "landingPath": "/es/test-examen-cap",
+  "dataFile": "data/es-cap-conductores-questions.json",
+  "language": "es",
+  "locale": "es-ES",
+  "name": "Test examen CAP inicial",
+  "shortName": "Examen CAP",
+  "examLabel": "Examen CAP inicial",
+  "fullName": "Examen del certificado de aptitud profesional (CAP) de cualificación inicial de conductores, mercancías y viajeros",
+  "english": {
+    "name": "Spain Driver CPC (CAP) Initial Exam",
+    "shortName": "Spain CAP exam",
+    "fullName": "Spain Driver CPC initial qualification exam (examen CAP inicial), goods and passengers, in Spanish"
+  },
+  "icon": "truck",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 67,
+  "categories": [
+    {"key": "escapcCadena", "label": "Cadena cinemática y conducción económica", "perTest": 6, "pool": 24, "segment": "CIN"},
+    {"key": "escapcFrenos", "label": "Frenos y sistemas de seguridad", "perTest": 6, "pool": 24, "segment": "FRE"},
+    {"key": "escapcRiesgos", "label": "Riesgos del tráfico", "perTest": 4, "pool": 16, "segment": "RIE"},
+    {"key": "escapcTiempos", "label": "Tiempos de conducción y descanso", "perTest": 6, "pool": 24, "segment": "TCD"},
+    {"key": "escapcTacografo", "label": "Tacógrafo, jornada y formación continua", "perTest": 5, "pool": 20, "segment": "TAC"},
+    {"key": "escapcSalud", "label": "Salud, ergonomía y accidentes de trabajo", "perTest": 6, "pool": 24, "segment": "SAL"},
+    {"key": "escapcEmergencias", "label": "Emergencias, delincuencia e imagen de empresa", "perTest": 5, "pool": 20, "segment": "EME"},
+    {"key": "escapcMercancias", "label": "Mercancías: carga, documentos y mercado", "perTest": 6, "pool": 24, "segment": "MER"},
+    {"key": "escapcViajeros", "label": "Viajeros: seguridad, normas y mercado", "perTest": 6, "pool": 24, "segment": "VIA"}
+  ],
+  "notes": "4 tests x 50 = 200, every item in exactly one test, no spares. Per test 38 common (76%, the real 75 of 100) + 6 mercancías + 6 viajeros (the real exam has 25 of the candidate's own speciality). Training: five topic sets 22701-22705 (conducción racional y frenos 48, tiempos y tacógrafo 44, riesgos, salud y emergencias 60, mercancías 24, viajeros 24): 5 + 4 = 9 dashboard steps. passPct 67 = ceil(0.67 x 50) = 34 of 50, the real 50 net points with +1/-0,5 when every question is answered (66,7 of 100 right).",
+  "trainingSets": "topic sets 22701-22705, see WIRING.md"
+}

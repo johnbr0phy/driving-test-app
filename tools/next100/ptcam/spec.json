@@ -1,0 +1,38 @@
+{
+  "id": "ptcam",
+  "stateCode": "PTCAM",
+  "idBase": 22900,
+  "prefix": "PTCAM-",
+  "slug": "/exame-cam",
+  "landingPath": "/pt/exame-cam-teste",
+  "dataFile": "data/portugal-cam-questions.json",
+  "language": "pt",
+  "locale": "pt-PT",
+  "region": "PT",
+  "name": "Exame CAM (Certificado de Aptidão para Motorista)",
+  "shortName": "Exame CAM",
+  "examLabel": "Exame CAM",
+  "fullName": "Exame do Certificado de Aptidão para Motorista (CAM), qualificação inicial de motoristas de pesados de mercadorias e de passageiros",
+  "english": {
+    "name": "Portugal Driver CPC (CAM) Exam",
+    "shortName": "Portugal CAM exam",
+    "fullName": "Portugal Driver CPC initial qualification exam (CAM) for truck and bus drivers, in Portuguese"
+  },
+  "icon": "truck",
+  "testCount": 3,
+  "questionsPerTest": 60,
+  "passPct": 60,
+  "categories": [
+    {"key": "ptcamRacional", "label": "Condução racional e tecnologia do veículo", "perTest": 10, "pool": 32, "segment": "RAC"},
+    {"key": "ptcamCarga", "label": "Carga e acondicionamento", "perTest": 7, "pool": 23, "segment": "CAR"},
+    {"key": "ptcamPassageiros", "label": "Segurança e conforto dos passageiros", "perTest": 7, "pool": 23, "segment": "PAS"},
+    {"key": "ptcamTempos", "label": "Tempos de condução e repouso", "perTest": 9, "pool": 29, "segment": "TEM"},
+    {"key": "ptcamTacografo", "label": "Tacógrafo", "perTest": 6, "pool": 20, "segment": "TAC"},
+    {"key": "ptcamRegulamentacao", "label": "Regulamentação do transporte e da profissão", "perTest": 5, "pool": 17, "segment": "REG"},
+    {"key": "ptcamSaude", "label": "Saúde, fadiga e ergonomia", "perTest": 5, "pool": 17, "segment": "SAU"},
+    {"key": "ptcamEmergencias", "label": "Riscos, acidentes e emergências", "perTest": 7, "pool": 23, "segment": "EMG"},
+    {"key": "ptcamEconomia", "label": "Ambiente económico e imagem da empresa", "perTest": 4, "pool": 16, "segment": "ECO"}
+  ],
+  "notes": "Three real-length tests of 60 (IDs 22901-22903) at the real 60%: ceil(0.6 x 60) = 36. Pools are 3x per-test count plus spares (2 each, 4 in economia), the last items of each pool, 20 in all, training-only. Five topic sets 22901-22905 (32, 46, 49, 33, 40; all 200 items) + 3 tests = 8 dashboard steps. Per-test weights are Tigertest's (IMT publishes none), following Annex I of Directive 2003/59/EC as amended by Directive (EU) 2018/645 (transposed by Decreto-Lei 126/2009 as republished by Decreto-Lei 102-C/2020).",
+  "trainingSets": "topic sets 22901-22905, see WIRING.md"
+}

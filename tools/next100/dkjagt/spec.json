@@ -1,0 +1,36 @@
+{
+  "id": "dkjagt",
+  "stateCode": "DKJAGT",
+  "idBase": 23800,
+  "prefix": "DKJAG-",
+  "slug": "/jagtproeve",
+  "landingPath": "/da/jagtproeven-oevelsesproeve",
+  "dataFile": "data/dk-jagtproeve-questions.json",
+  "language": "da",
+  "locale": "da-DK",
+  "name": "Jagtprøven",
+  "shortName": "Jagtprøven",
+  "examLabel": "Jagtprøven, skriftlig del",
+  "fullName": "Jagtprøven: den skriftlige prøve til jagttegn",
+  "english": {
+    "name": "Danish Hunting Licence Test (Jagtprøven)",
+    "shortName": "Danish hunting test",
+    "fullName": "Danish hunting licence test (jagtprøven), written part, in Danish"
+  },
+  "icon": "target",
+  "testCount": 5,
+  "questionsPerTest": 40,
+  "passPct": 90,
+  "categories": [
+    {"key": "dkjgArter", "label": "Artsbestemmelse og vildtbiologi", "perTest": 7, "pool": 35, "segment": "ART"},
+    {"key": "dkjgForvaltning", "label": "Vildtforvaltning og natur", "perTest": 5, "pool": 25, "segment": "FOR"},
+    {"key": "dkjgVaaben", "label": "Jagtvåben og ammunition", "perTest": 6, "pool": 30, "segment": "VAB"},
+    {"key": "dkjgSikkerhed", "label": "Sikkerhed og skudafgivelse", "perTest": 6, "pool": 30, "segment": "SIK"},
+    {"key": "dkjgLov", "label": "Jagtlovgivning", "perTest": 7, "pool": 35, "segment": "LOV"},
+    {"key": "dkjgVildt", "label": "Håndtering af nedlagt vildt", "perTest": 3, "pool": 15, "segment": "VIL"},
+    {"key": "dkjgEtik", "label": "Jagtetik og etikette", "perTest": 3, "pool": 15, "segment": "ETI"},
+    {"key": "dkjgTeknik", "label": "Jagtteknik og ledelse", "perTest": 3, "pool": 15, "segment": "TEK"}
+  ],
+  "notes": "5 tests x 40 = 200, every item in exactly one test (pools exactly 5x each count). passPct 90 = 36 of 40, the real line. Training: five topic sets 23801-23805 (Vildtarter og biologi 35, Forvaltning og jagtetik 40, Våben og sikkerhed 60, Jagtlovgivning 35, Jagtpraksis og vildthåndtering 30), so the dashboard is 5 sets + 5 tests = 10 steps.",
+  "trainingSets": "topic sets 23801-23805, see WIRING.md"
+}

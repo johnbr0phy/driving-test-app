@@ -1,0 +1,36 @@
+{
+  "id": "esvigilante",
+  "stateCode": "ESVIGIL",
+  "idBase": 22600,
+  "prefix": "ESVIG-",
+  "slug": "/vigilante-de-seguridad",
+  "landingPath": "/es/test-vigilante-de-seguridad",
+  "dataFile": "data/es-vigilante-seguridad-questions.json",
+  "language": "es",
+  "locale": "es-ES",
+  "name": "Test vigilante de seguridad",
+  "shortName": "Vigilante de seguridad",
+  "examLabel": "Prueba de conocimientos de vigilante de seguridad",
+  "fullName": "Pruebas de selección para vigilante de seguridad privada: prueba de conocimientos",
+  "english": {
+    "name": "Spain Private Security Guard Exam (Vigilante de Seguridad)",
+    "shortName": "Spain security guard exam",
+    "fullName": "Spanish private security guard (vigilante de seguridad) licence exam, knowledge test, in Spanish"
+  },
+  "icon": "shield",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 67,
+  "categories": [
+    {"key": "esvigConstitucion", "label": "Derecho constitucional y Unión Europea", "perTest": 4, "pool": 16, "segment": "CON"},
+    {"key": "esvigPenal", "label": "Derecho penal", "perTest": 8, "pool": 32, "segment": "PEN"},
+    {"key": "esvigProcesal", "label": "Derecho procesal penal", "perTest": 5, "pool": 20, "segment": "PRO"},
+    {"key": "esvigSegPrivada", "label": "Seguridad privada y protección de datos", "perTest": 8, "pool": 32, "segment": "SPR"},
+    {"key": "esvigLaboral", "label": "Derecho laboral, prevención y práctica jurídica", "perTest": 3, "pool": 12, "segment": "LAB"},
+    {"key": "esvigSocioprof", "label": "Área socio-profesional", "perTest": 5, "pool": 20, "segment": "SOC"},
+    {"key": "esvigTecnico", "label": "Área técnico-profesional", "perTest": 9, "pool": 36, "segment": "TEC"},
+    {"key": "esvigInstrumental", "label": "Área instrumental", "perTest": 8, "pool": 32, "segment": "INS"}
+  ],
+  "notes": "4 tests x 50 = 200, every item in exactly one test (pools exactly 4x each count). Categories follow the four areas of Anexo III (programa de formación previa común) of the 2026 bases (BOE-A-2026-813); the 4/8/5/8/3/5/9/8 split is Tigertest's, roughly in proportion to the annex's 24 legal, 5 socio-professional, 14 technical and 14 instrumental temas. Five topic sets 22601-22605 + 4 tests = 9 dashboard steps. passPct 67 (34 of 50): the real 5 of 10 minimum under [A - E/2] x 10/P, answering every question, needs 67 of 100 right; Tigertest does not apply the penalty and uses four options where the real test has three.",
+  "trainingSets": "topic sets 22601-22605, see WIRING.md"
+}

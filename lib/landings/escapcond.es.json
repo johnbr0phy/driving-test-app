@@ -1,0 +1,124 @@
+{
+  "metaTitle": "Test CAP 2026 - Examen CAP inicial gratis, mercancías y viajeros",
+  "metaDescription": "Test gratis para el examen del CAP inicial de conductores profesionales: 200 preguntas propias sobre el temario del Real Decreto 284/2021, mercancías y viajeros, cada respuesta explicada. Cuatro test de 50 preguntas, sin registro.",
+  "keywords": "test CAP, examen CAP, test CAP gratis, CAP inicial, CAP mercancías, CAP viajeros, examen CAP 2026, certificado de aptitud profesional conductores, preguntas CAP, test CAP camión, test CAP autobús, tiempos de conducción y descanso, tacógrafo",
+  "breadcrumb": {
+    "home": "Inicio",
+    "allTests": "Todos los test",
+    "current": "Test examen CAP"
+  },
+  "h1": "Test examen CAP inicial 2026",
+  "subtitle": "200 preguntas propias sobre el temario del CAP inicial, mercancías y viajeros, cada respuesta explicada. Cuatro test de 50 preguntas y cinco bloques de repaso. Pensado para el móvil, sin registro.",
+  "facts": {
+    "h2": "El examen del CAP inicial, de un vistazo",
+    "answer": "Después del curso de cualificación inicial, de 280 horas en la modalidad ordinaria o de 140 en la acelerada, tienes un año para aprobar el examen. Lo convoca la consejería de transportes de cada comunidad autónoma, al menos seis veces al año. Son 100 preguntas tipo test con cuatro respuestas y una sola válida, y dispones de al menos dos horas. Cada acierto suma 1 punto, cada error resta 0,5 y las preguntas en blanco no cuentan. Apruebas con 50 puntos, la mitad de los posibles. De las 100 preguntas, 25 son de tu especialidad: mercancías (permisos C1 y C) o viajeros (D1 y D). Si ya tienes el CAP de una especialidad y amplías a la otra, solo haces el curso y la parte del examen de la nueva.",
+    "tigertest": "Tigertest tiene 200 preguntas propias en español sobre el temario del anexo I del Real Decreto 284/2021, gratis y sin registro. No son preguntas de exámenes anteriores de ninguna comunidad ni de ninguna autoescuela o centro CAP.",
+    "rows": [
+      {
+        "label": "Preguntas",
+        "value": "100, cuatro respuestas, una válida"
+      },
+      {
+        "label": "De tu especialidad",
+        "value": "25 (mercancías o viajeros)"
+      },
+      {
+        "label": "Puntuación",
+        "value": "Acierto +1, error -0,5, en blanco 0"
+      },
+      {
+        "label": "Aprobado",
+        "value": "50 puntos, la mitad de los posibles"
+      },
+      {
+        "label": "Tiempo",
+        "value": "No menos de 2 horas"
+      },
+      {
+        "label": "Quién lo convoca",
+        "value": "Cada comunidad autónoma, al menos seis veces al año"
+      }
+    ],
+    "footnote": "Según el Real Decreto 284/2021, de 20 de abril (artículos 5, 6, 16 y 17 y anexos I y V), en su texto vigente en noviembre de 2026. Tigertest no está vinculado al Ministerio de Transportes, a la DGT ni a ninguna comunidad autónoma. Consulta la convocatoria de tu comunidad en",
+    "source": {
+      "name": "BOE: Real Decreto 284/2021, cualificación inicial y formación continua de los conductores",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-6624"
+    }
+  },
+  "howItWorks": {
+    "h2": "Cómo funciona",
+    "cards": [
+      {
+        "h3": "Primero repasa, luego haz los test",
+        "p": "Cinco bloques de repaso: conducción racional y frenos; tiempos de conducción, tacógrafo y jornada; riesgos, salud y emergencias; mercancías; y viajeros. Ves la respuesta al momento y las preguntas que fallas vuelven hasta que las dominas. Repasa el bloque de tu especialidad hasta tenerlo en verde."
+      },
+      {
+        "h3": "Test con todo el temario",
+        "p": "Cuatro test de 50 preguntas, la mitad del examen real: 38 de la parte común y 6 de cada especialidad, mercancías y viajeros. Aquí los errores no restan. Para quedar a la altura de los 50 puntos contestándolo todo, apunta a 34 de 50 o más."
+      }
+    ]
+  },
+  "topics": {
+    "h2": "El temario del CAP inicial",
+    "p": "El programa está en el anexo I del Real Decreto 284/2021. La parte común es igual para camión y autobús; cada especialidad añade sus propios objetivos. Cada test aquí incluye preguntas de todos los bloques.",
+    "items": [
+      "Cadena cinemática y conducción económica (6 de 50 preguntas)",
+      "Frenos, ralentizadores y sistemas de seguridad (6 de 50)",
+      "Riesgos del tráfico y anticipación (4 de 50)",
+      "Tiempos de conducción y descanso, Reglamento (CE) 561/2006 (6 de 50)",
+      "Tacógrafo, tiempo de trabajo y formación continua (5 de 50)",
+      "Salud, ergonomía y accidentes de trabajo (6 de 50)",
+      "Emergencias, delincuencia e imagen de la empresa (5 de 50)",
+      "Mercancías: carga, estiba, documentos y mercado (6 de 50)",
+      "Viajeros: seguridad, derechos de los pasajeros y mercado (6 de 50)"
+    ]
+  },
+  "howToPass": {
+    "h2": "Cómo aprobar el examen del CAP",
+    "steps": [
+      {
+        "h3": "1. Entiende la penalización",
+        "p": "Cada error resta medio punto. Si contestas las 100 preguntas, necesitas unas 67 bien para llegar a 50 puntos. Si dejas en blanco las que no sabes, te bastan menos aciertos, pero cada pregunta en blanco es un punto que no sumas. Responde lo que sabes y piensa bien las dudosas."
+      },
+      {
+        "h3": "2. Domina tiempos y tacógrafo",
+        "p": "9 horas de conducción diaria, 56 a la semana y 90 en dos semanas; pausa de 45 minutos tras 4 horas y media; descanso diario de 11 horas y semanal de 45. Son las cifras que más se preguntan y las que más se confunden."
+      },
+      {
+        "h3": "3. Repasa tu especialidad",
+        "p": "25 de las 100 preguntas del examen son de mercancías o de viajeros, según tu permiso. En mercancías pesan la carga útil, la estiba, el documento de control, el CMR y el cabotaje; en viajeros, la seguridad de los pasajeros, el transporte escolar y los derechos del viajero."
+      },
+      {
+        "h3": "4. Repite tus fallos",
+        "p": "Tigertest guarda las preguntas que fallas y te las vuelve a poner. Haz los test cuando tus bloques estén en verde y repítelos hasta superar con margen los 34 de 50."
+      }
+    ]
+  },
+  "faqTitle": "Preguntas frecuentes sobre el examen del CAP",
+  "faqs": [
+    {
+      "q": "¿Cuántas preguntas tiene el examen del CAP inicial y cómo se aprueba?",
+      "a": "Son 100 preguntas tipo test con cuatro respuestas y una sola válida. Cada acierto suma 1 punto, cada error resta 0,5 y las preguntas en blanco no cuentan. Apruebas con al menos 50 puntos, la mitad de los posibles. El tiempo no puede ser inferior a dos horas."
+    },
+    {
+      "q": "¿Es distinto el examen para camión y para autobús?",
+      "a": "La mayor parte es común. De las 100 preguntas, 25 son de la especialidad: mercancías para los permisos C1, C1+E, C y C+E, o viajeros para D1, D1+E, D y D+E. Si ya tienes el CAP de una especialidad, para ampliar a la otra solo haces el curso y la parte del examen de la nueva."
+    },
+    {
+      "q": "¿Son las preguntas de los exámenes oficiales?",
+      "a": "No. Todas las preguntas son propias y tratan los objetivos del anexo I del Real Decreto 284/2021: conducción racional, frenos, tiempos de conducción y descanso, tacógrafo, salud, emergencias, mercancías y viajeros. Cada comunidad autónoma redacta sus exámenes; revisa también el material de tu centro CAP."
+    },
+    {
+      "q": "¿Qué no reproduce Tigertest del examen real?",
+      "a": "Los test aquí son de 50 preguntas, la mitad del real, e incluyen preguntas de las dos especialidades, mientras que el examen real tiene 25 de la tuya. Aquí los errores no restan, así que el aprobado está en 34 de 50, que equivale a los 50 puntos reales contestándolo todo. El curso, las clases prácticas y la tarjeta de cualificación quedan fuera."
+    },
+    {
+      "q": "¿El test del CAP de Tigertest es gratis?",
+      "a": "Sí. Los cinco bloques de repaso y los cuatro test son gratis y sin registro. Con una cuenta gratuita guardas tu progreso en todos tus dispositivos."
+    }
+  ],
+  "finalCta": {
+    "h2": "¿Preparado para el examen del CAP?",
+    "p": "Empieza gratis, sin registro. 200 preguntas en español sobre todo el temario, mercancías y viajeros."
+  }
+}

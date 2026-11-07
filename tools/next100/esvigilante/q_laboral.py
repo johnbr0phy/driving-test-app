@@ -1,0 +1,43 @@
+CAT = "esvigLaboral"; SEG = "LAB"
+# Anexo III, área jurídica, módulos de Derecho laboral (Estatuto de los Trabajadores, RDL
+# 2/2015; convenio colectivo del sector; Ley 31/1995 de prevención de riesgos laborales) y de
+# práctica jurídica (partes, informes y denuncias). Sin cifras de jornada semanal, que pueden
+# cambiar; sin salarios ni pluses del convenio.
+Q = [
+("Según el artículo 38 del Estatuto de los Trabajadores, ¿cuál es la duración mínima de las vacaciones anuales retribuidas?",
+ "30 días naturales", ["15 días naturales", "22 días naturales", "45 días naturales"],
+ "El periodo de vacaciones anuales retribuidas, no sustituible por compensación económica, será el pactado en convenio o contrato y nunca inferior a treinta días naturales."),
+("Según el artículo 34.3 del Estatuto de los Trabajadores, ¿qué descanso mínimo debe haber entre el final de una jornada y el comienzo de la siguiente?",
+ "12 horas", ["8 horas", "10 horas", "24 horas"],
+ "Entre el final de una jornada y el comienzo de la siguiente median como mínimo doce horas. Es clave en los cuadrantes de turnos del sector."),
+("¿Qué descanso semanal mínimo reconoce el artículo 37 del Estatuto de los Trabajadores?",
+ "Día y medio ininterrumpido", ["Un día completo cada dos semanas", "Dos días seguidos siempre", "Medio día por semana"],
+ "Los trabajadores tienen derecho a un descanso mínimo semanal, acumulable por periodos de hasta catorce días, de día y medio ininterrumpido."),
+("¿Cómo debe pactarse el periodo de prueba según el artículo 14 del Estatuto de los Trabajadores?",
+ "Por escrito", ["De palabra ante testigos", "Ante el servicio público de empleo", "Con autorización policial"],
+ "El periodo de prueba puede concertarse por escrito, con sujeción a los límites de duración que fije el convenio colectivo o, en su defecto, la ley."),
+("¿Qué norma fija las condiciones de trabajo comunes de los vigilantes, como turnos, pluses y categorías?",
+ "El convenio colectivo del sector", ["El Reglamento de Armas", "La Ley de Enjuiciamiento Criminal", "La ordenanza municipal del lugar"],
+ "Las empresas de seguridad privada tienen un convenio colectivo de ámbito estatal negociado por patronal y sindicatos que regula retribuciones, jornada, categorías y régimen disciplinario."),
+("Según la Ley 5/2014, ¿qué limitación puede tener el derecho de huelga del personal de seguridad privada?",
+ "Servicios mínimos", ["Prohibición total de hacer huelga", "Huelga solo los fines de semana", "Autorización previa del juez"],
+ "El artículo 8 recuerda que la huelga en la seguridad privada que afecte a servicios esenciales para la comunidad está sujeta a los servicios mínimos que fije la autoridad, según la legislación vigente."),
+("Según el artículo 19 de la Ley 31/1995, ¿cuándo debe impartirse, siempre que sea posible, la formación en prevención?",
+ "Dentro de la jornada de trabajo", ["Fuera del horario y sin pago", "Solo tras un accidente laboral", "Una vez cada diez años"],
+ "El empresario debe dar a cada trabajador formación teórica y práctica en prevención al contratarlo y cuando cambian sus funciones o los equipos, dentro de la jornada o, si no es posible, descontando ese tiempo de ella, y sin coste para el trabajador."),
+("Según la Ley 31/1995, ¿a quién corresponde evaluar los riesgos de cada puesto de trabajo?",
+ "Al empresario", ["Al propio vigilante", "Al cliente del servicio", "A la policía local"],
+ "El artículo 16 obliga al empresario a planificar la prevención a partir de una evaluación inicial de los riesgos para la seguridad y la salud de los trabajadores."),
+("¿Qué son los delegados de prevención según la Ley 31/1995?",
+ "Representantes de la plantilla", ["Inspectores de la Policía Nacional", "Técnicos de la mutua de accidentes", "Jefes de seguridad de la empresa"],
+ "Los delegados de prevención son los representantes de los trabajadores con funciones específicas en materia de prevención de riesgos en el trabajo (art. 35)."),
+("¿Qué debe evitar el vigilante al redactar un parte de incidencias?",
+ "Opiniones y suposiciones", ["La hora exacta de los hechos", "Los datos de los testigos", "La descripción del lugar"],
+ "El parte recoge hechos objetivos: qué, cuándo, dónde, quiénes y cómo, con datos comprobables. Las opiniones, juicios de valor y suposiciones restan valor al documento."),
+("¿Qué orden de redacción conviene seguir en un informe de incidencias?",
+ "En orden cronológico", ["Alfabético por nombres", "Del dato menos al más grave", "Al azar, según se recuerde"],
+ "Un informe claro narra los hechos en orden cronológico, con frases breves, para que quien lo lea entienda la secuencia sin necesidad de preguntar."),
+("¿Qué datos debe recoger el vigilante para identificar a un testigo en su parte de servicio?",
+ "Nombre, documento y forma de contacto", ["Solo su edad aproximada y su ropa", "Su opinión sobre lo ocurrido", "Su profesión y su sueldo"],
+ "Para que la policía o el juzgado puedan citarlo, del testigo se anotan nombre y apellidos, documento de identidad y un teléfono o domicilio de contacto."),
+]

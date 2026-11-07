@@ -1,0 +1,37 @@
+{
+  "id": "ptvigil",
+  "stateCode": "PTVIGIL",
+  "idBase": 23000,
+  "prefix": "PTVIG-",
+  "slug": "/exame-vigilante",
+  "landingPath": "/pt/exame-vigilante-seguranca-privada",
+  "dataFile": "data/pt-vigilante-questions.json",
+  "language": "pt",
+  "locale": "pt-PT",
+  "region": "PT",
+  "name": "Exame de Vigilante de Segurança Privada",
+  "shortName": "Exame de vigilante",
+  "examLabel": "Exame teórico de vigilante (CNESP)",
+  "fullName": "Exame teórico de acesso à profissão de segurança privado, especialidade de vigilante (PSP, CNESP)",
+  "english": {
+    "name": "Portugal Private Security Guard Exam (PSP)",
+    "shortName": "Portugal security guard exam",
+    "fullName": "Portugal private security guard (vigilante) theory exam set by the PSP at the CNESP, in Portuguese"
+  },
+  "icon": "shield",
+  "testCount": 8,
+  "questionsPerTest": 20,
+  "passPct": 50,
+  "categories": [
+    {"key": "ptvigRegime", "label": "Regime jurídico da segurança privada", "perTest": 4, "pool": 36, "segment": "REG"},
+    {"key": "ptvigDireitos", "label": "Direitos fundamentais e deontologia", "perTest": 2, "pool": 20, "segment": "DIR"},
+    {"key": "ptvigPenal", "label": "Direito penal, detenção e prova", "perTest": 3, "pool": 28, "segment": "PEN"},
+    {"key": "ptvigAcessos", "label": "Segurança física e controlo de acessos", "perTest": 3, "pool": 28, "segment": "ACE"},
+    {"key": "ptvigVigilancia", "label": "Vigilância eletrónica e alarmes", "perTest": 2, "pool": 20, "segment": "VIG"},
+    {"key": "ptvigConflitos", "label": "Gestão de conflitos e defesa pessoal", "perTest": 2, "pool": 20, "segment": "CON"},
+    {"key": "ptvigRelatorios", "label": "Relatórios e comunicações", "perTest": 1, "pool": 12, "segment": "REL"},
+    {"key": "ptvigEmergencia", "label": "Incêndios, socorrismo e segurança no trabalho", "perTest": 3, "pool": 36, "segment": "EME"}
+  ],
+  "notes": "Eight real-length tests of 20 (test IDs 23001-23008, 4/2/3/3/2/2/1/3, Tigertest's split: the PSP publishes no topic weights). 160 items in tests, the last items of each pool (40 in all) training-only. passPct 50 = 10 of 20, the real rule (Despacho 8270/2019, Anexo, art. 8.º n.º 5). Categories follow the base module (BAS01-BAS06, UFCD 4478 and 4798) and the vigilante module (VIG01-VIG07, ALM01, ALM02) of Portaria 148/2014. Four topic sets 23001-23004 (56/48/60/36) + 8 tests = 12 dashboard steps.",
+  "trainingSets": "topic sets 23001-23004, see WIRING.md"
+}

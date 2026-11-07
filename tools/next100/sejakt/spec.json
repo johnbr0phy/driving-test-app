@@ -1,0 +1,36 @@
+{
+  "id": "sejakt",
+  "stateCode": "SEJAKT",
+  "idBase": 23400,
+  "prefix": "SEJAKT-",
+  "slug": "/jagarexamen",
+  "landingPath": "/sv/jagarexamen-teoriprov",
+  "dataFile": "data/sweden-hunting-theory-questions.json",
+  "language": "sv",
+  "locale": "sv-SE",
+  "name": "Jägarexamen teoriprov",
+  "shortName": "Jägarexamen",
+  "examLabel": "Teoriprov i jägarexamen",
+  "fullName": "Jägarexamen, teoretiskt prov (Naturvårdsverket)",
+  "english": {
+    "name": "Sweden Hunting Licence Theory Test (Jägarexamen)",
+    "shortName": "Swedish hunting licence test",
+    "fullName": "Swedish hunting licence theory test (jägarexamen, teoriprov), in Swedish"
+  },
+  "icon": "target",
+  "testCount": 3,
+  "questionsPerTest": 70,
+  "passPct": 85,
+  "categories": [
+    {"key": "sejkArter", "label": "Artkännedom och ekologi", "perTest": 12, "pool": 36, "segment": "ART"},
+    {"key": "sejkLag", "label": "Jakt- och vapenlagstiftning", "perTest": 12, "pool": 36, "segment": "LAG"},
+    {"key": "sejkSakerhet", "label": "Säkerhet vid vapenhantering", "perTest": 10, "pool": 30, "segment": "SAK"},
+    {"key": "sejkVapen", "label": "Vapen, ammunition och ballistik", "perTest": 10, "pool": 30, "segment": "VAP"},
+    {"key": "sejkEtik", "label": "Jaktetik, skadskjutning och eftersök", "perTest": 8, "pool": 24, "segment": "ETI"},
+    {"key": "sejkMetoder", "label": "Jaktmetoder och jakthundar", "perTest": 7, "pool": 21, "segment": "MET"},
+    {"key": "sejkVilt", "label": "Viltvård, viltförvaltning och fångst", "perTest": 6, "pool": 18, "segment": "VIL"},
+    {"key": "sejkKott", "label": "Omhändertagande av fällt vilt", "perTest": 5, "pool": 15, "segment": "KOT"}
+  ],
+  "notes": "Three real-length tests of 70 = 210 items, every item in exactly one test (pools exactly 3x each per-test count). passPct 85 = ceil(0.85 x 70) = 60 of 70, the real pass line (NFS 2015:10 13 a §). Categories group the 16 areas of Naturvårdsverket's kompetensbeskrivning (2020); the 12/12/10/10/8/7/6/5 split is Tigertest's own (no published weights). Five topic sets 23401-23405 (36, 36, 60, 45, 33) + 3 tests = 8 dashboard steps. Icon key: check which icon hunter uses and reuse it.",
+  "trainingSets": "topic sets 23401-23405, see WIRING.md"
+}

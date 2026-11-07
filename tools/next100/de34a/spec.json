@@ -1,0 +1,37 @@
+{
+  "id": "de34a",
+  "stateCode": "DE34A",
+  "idBase": 22100,
+  "prefix": "DE34A-",
+  "slug": "/sachkunde-34a",
+  "landingPath": "/de/sachkundepruefung-34a-test",
+  "dataFile": "data/de-34a-questions.json",
+  "language": "de",
+  "locale": "de-DE",
+  "name": "Sachkundeprüfung 34a Test",
+  "shortName": "Sachkunde 34a",
+  "examLabel": "Sachkundeprüfung § 34a GewO",
+  "fullName": "Sachkundeprüfung im Bewachungsgewerbe nach § 34a GewO (schriftlicher Teil)",
+  "english": {
+    "name": "German Security Guard Competence Exam (§ 34a GewO)",
+    "shortName": "German § 34a security exam",
+    "fullName": "German security guard competence exam (Sachkundeprüfung im Bewachungsgewerbe, § 34a GewO), written part, in German"
+  },
+  "icon": "shield",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 50,
+  "categories": [
+    {"key": "d34Oeffentlich", "label": "Recht der öffentlichen Sicherheit und Ordnung", "perTest": 6, "pool": 24, "segment": "OER"},
+    {"key": "d34Gewerbe", "label": "Gewerberecht", "perTest": 6, "pool": 24, "segment": "GEW"},
+    {"key": "d34Datenschutz", "label": "Datenschutzrecht", "perTest": 4, "pool": 16, "segment": "DSR"},
+    {"key": "d34Bgb", "label": "Bürgerliches Gesetzbuch", "perTest": 7, "pool": 28, "segment": "BGB"},
+    {"key": "d34Straf", "label": "Straf- und Strafverfahrensrecht", "perTest": 9, "pool": 36, "segment": "STR"},
+    {"key": "d34Waffen", "label": "Umgang mit Waffen", "perTest": 3, "pool": 12, "segment": "WAF"},
+    {"key": "d34Uvv", "label": "Unfallverhütungsvorschrift Wach- und Sicherungsdienste", "perTest": 4, "pool": 16, "segment": "UVV"},
+    {"key": "d34Menschen", "label": "Umgang mit Menschen", "perTest": 7, "pool": 28, "segment": "UMM"},
+    {"key": "d34Technik", "label": "Grundzüge der Sicherheitstechnik", "perTest": 4, "pool": 16, "segment": "SIT"}
+  ],
+  "notes": "4 tests x 50 = 200, every item in exactly one test (pools exactly 4x each count). Categories are the Sachgebiete of § 7 BewachV and Anlage 2 as split in the DIHK Rahmenplan (1a/1b, 4a/4b); the 6/6/4/7/9/3/4/7/4 split is Tigertest's (no official weights published). Five topic sets 22101-22105 (Öffentliches Recht und Gewerberecht 48, BGB und Datenschutz 44, Strafrecht und Waffen 48, Umgang mit Menschen 28, UVV und Sicherheitstechnik 32) + 4 tests = 9 dashboard steps. passPct 50 = the real written mark (50 percent of the points).",
+  "trainingSets": "topic sets 22101-22105, see WIRING.md"
+}

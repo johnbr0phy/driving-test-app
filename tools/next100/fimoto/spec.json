@@ -1,0 +1,36 @@
+{
+  "id": "fimoto",
+  "stateCode": "FIMOTO",
+  "idBase": 24100,
+  "prefix": "FIMOTO-",
+  "slug": "/finland-motorcycle-theory",
+  "landingPath": "/finland-motorcycle-theory-test",
+  "dataFile": "data/finland-motorcycle-theory-questions.json",
+  "name": "Finland Motorcycle Theory Practice Test",
+  "shortName": "Finland motorcycle test",
+  "examLabel": "Finland motorcycle theory test",
+  "fullName": "Finland motorcycle theory test, categories A1, A2 and A (teoriakoe)",
+  "icon": "bike",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 86,
+  "categories": [
+    {"key": "fimotoGear", "label": "Helmet, Protective Gear & Being Seen", "perTest": 5, "pool": 20, "segment": "GER"},
+    {"key": "fimotoBike", "label": "Motorcycle Checks & Mechanics", "perTest": 5, "pool": 20, "segment": "BIK"},
+    {"key": "fimotoControl", "label": "Braking, Cornering & Control", "perTest": 7, "pool": 28, "segment": "CTL"},
+    {"key": "fimotoPosition", "label": "Road Position, Speed & Parking", "perTest": 6, "pool": 24, "segment": "POS"},
+    {"key": "fimotoYield", "label": "Junctions & Giving Way", "perTest": 7, "pool": 28, "segment": "YLD"},
+    {"key": "fimotoOvertake", "label": "Overtaking, Meeting & Large Vehicles", "perTest": 5, "pool": 20, "segment": "OVT"},
+    {"key": "fimotoSurface", "label": "Road Surfaces, Weather & Winter", "perTest": 6, "pool": 24, "segment": "SRF"},
+    {"key": "fimotoLoad", "label": "Passengers, Luggage & Trailers", "perTest": 4, "pool": 16, "segment": "PAS"},
+    {"key": "fimotoRider", "label": "The Rider, Alcohol & Licence Categories", "perTest": 5, "pool": 20, "segment": "RDR"}
+  ],
+  "notes": "4 tests x 50 = 200, every item used once in tests, no spares. passPct 86 (43 of 50) is Tigertest's target, the share Traficom requires on the 50 picture questions; the real A1/A2/A test passes each part separately (14/20, 43/50, 4/5). Dashboard = 5 topic sets + 4 tests = 9 steps. Picture and risk recognition questions are not modelled as pictures; situations are described in words.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 24101, "name": "Gear, Checks & Your Motorcycle", "categories": ["fimotoGear", "fimotoBike"], "size": 40},
+    {"setNumber": 2, "id": 24102, "name": "Control, Surfaces & Winter", "categories": ["fimotoControl", "fimotoSurface"], "size": 52},
+    {"setNumber": 3, "id": 24103, "name": "Junctions, Overtaking & Large Vehicles", "categories": ["fimotoYield", "fimotoOvertake"], "size": 48},
+    {"setNumber": 4, "id": 24104, "name": "Road Position, Passengers & Loads", "categories": ["fimotoPosition", "fimotoLoad"], "size": 40},
+    {"setNumber": 5, "id": 24105, "name": "The Rider & Licence Categories", "categories": ["fimotoRider"], "size": 20}
+  ]
+}

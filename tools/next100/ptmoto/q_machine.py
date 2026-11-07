@@ -1,7 +1,7 @@
 CAT = "ptmoMachine"; SEG = "MEC"
 Q = [
-("What does the red switch on the right handlebar (the engine kill switch) do?",
- "Stops the engine", ["Turns off the lights", "Locks the steering", "Sounds the horn"],
+("After a slow fall, your motorcycle lies on its side with the engine running and the rear wheel turning. The quickest way to stop the engine is:",
+ "The kill switch", ["The choke", "The clutch lever", "The side stand"],
  "The kill switch cuts the ignition in an emergency, such as after a fall, without reaching for the key."),
 ("Your bike will not start, though the battery is fine. Which control should you check first?",
  "The kill switch", ["The rear brake pedal", "The mirror settings", "The tyre pressures"],
@@ -21,8 +21,8 @@ Q = [
 ("The front brake lever comes all the way back to the bar with little resistance. You should:",
  "Not ride until it is fixed", ["Ride slowly and use the rear", "Pump it and carry on", "Ride only in town"],
  "A spongy lever often means air in the system or worn parts. Get it checked before riding."),
-("Your motorcycle's steering feels heavy at low speed and pulls to one side. A likely cause is:",
- "Low tyre pressure", ["A full fuel tank", "A loose mirror", "A dirty number plate"],
+("Your motorcycle feels vague and wallows in corners, and the tyres bulge where they meet the road. Check first:",
+ "The tyre pressures", ["The chain's colour", "The fuel level", "The mirror angle"],
  "Under-inflated tyres make steering heavy and handling vague. Check pressures cold, as the manual gives them."),
 ("On the instrument panel, a green light with an N shows that:",
  "The bike is in neutral", ["The bike needs servicing", "The battery is charging", "Night mode is on"],

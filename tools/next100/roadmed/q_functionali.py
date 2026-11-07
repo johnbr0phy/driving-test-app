@@ -60,7 +60,7 @@ Q = [
  "CH₃-Cl + NaOH → CH₃-OH + NaCl. Atomul de halogen este înlocuit cu grupa hidroxil."),
 ("Ce denumire uzuală are triclorometanul?",
  "Cloroform", ["Freon", "Lindan", "Tetraclorură de carbon"],
- "CHCl₃ este cloroformul, folosit în trecut ca anestezic. Freonii sunt derivați fluorurați, iar teflonul este politetrafluoroetena."),
+ "CHCl₃ este cloroformul, folosit în trecut ca anestezic. Freonii sunt derivați clorofluorurați ai metanului și etanului, lindanul este un izomer al hexaclorociclohexanului, iar tetraclorura de carbon este CCl₄."),
 ("Din 5 moli de benzen introduși, 4 moli formează nitrobenzen și 0,5 moli dinitrobenzen. Care este conversia utilă a benzenului?",
  "80%", ["90%", "10%", "88,9%"],
  "Conversia utilă = moli transformați în produsul dorit / moli introduși = 4/5 = 80%. Conversia totală este 4,5/5 = 90%."),

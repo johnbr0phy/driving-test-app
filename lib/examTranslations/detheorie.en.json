@@ -1,0 +1,39 @@
+{
+  "landingPath": "/en/fuehrerschein-theorie-test",
+  "locale": "en-DE",
+  "name": "German Driving Theory Test (Class B)",
+  "shortName": "German driving theory test",
+  "examLabel": "Class B theory test",
+  "fullName": "German driving licence theory test, class B car (Führerschein Klasse B), in English",
+  "trainingSets": {
+    "1": { "name": "Hazard awareness", "weightLabel": "7 of 30 questions per test" },
+    "2": { "name": "Behaviour in traffic", "weightLabel": "6 of 30 questions per test" },
+    "3": { "name": "Right of way and priority", "weightLabel": "4 of 30 questions per test" },
+    "4": { "name": "Road signs", "weightLabel": "5 of 30 questions per test" },
+    "5": { "name": "Vehicle, environment and fitness to drive", "weightLabel": "8 of 30 questions per test" }
+  },
+  "categoryLabels": {
+    "dethGefahren": "Hazard awareness",
+    "dethVerhalten": "Behaviour in traffic",
+    "dethVorfahrt": "Right of way and priority",
+    "dethZeichen": "Road signs",
+    "dethUmwelt": "Environmental protection",
+    "dethBetrieb": "Rules on operating vehicles",
+    "dethTechnik": "Vehicle technology",
+    "dethEignung": "Fitness and ability to drive"
+  },
+  "copy": {
+    "guestPrompt": "to save your progress for the theory test and keep track of every question you get wrong",
+    "trainingHeading": "Practice sets",
+    "trainingSub": "Each practice set covers one subject area of the test. You get instant feedback, and questions you get wrong come back until you know them.",
+    "testsHeading": "Practice tests · 30 questions, 2 mistakes at most",
+    "heroSubs": [
+      "Five practice sets, seven practice tests. Hazard awareness and behaviour in traffic come up most often.",
+      "Master the set first, then take the test.",
+      "You're halfway there. Take a practice test.",
+      "Go over your mistakes, then test yourself again.",
+      "All green. Book your theory test."
+    ],
+    "sourceLine": "Based on the StVO, StVZO and Driving Licence Regulations (FeV) as of November 2026. Original questions, not from the official question catalogue; 30 per test, without error-point weighting."
+  }
+}

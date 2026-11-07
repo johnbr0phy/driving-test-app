@@ -45,6 +45,6 @@ Q = [
  "Igény a károkozóval szemben", ["Igény a szerződővel szemben díjra", "Igény a közvetítővel szemben", "Igény az államtól kártalanításra"],
  "A Ptk. szerint a kárbiztosítónak az általa megtérített kár mértékéig megtérítési igénye van a károkozóval szemben."),
 ("Kivel szemben nincs a kárbiztosítónak megtérítési igénye?",
- "Közös háztartású hozzátartozóval", ["A szomszéd lakásban lakó károkozóval", "A károkozó munkavállalóval", "Az ittas idegen gépjárművezetővel"],
+ "Közös háztartású hozzátartozóval", ["A szomszéd lakásban lakó károkozóval", "A kárt okozó építőipari céggel", "Az ittas idegen gépjárművezetővel"],
  "A Ptk. szerint nincs megtérítési igény, ha a károkozó a biztosítottal közös háztartásban élő hozzátartozó."),
 ]

@@ -6,6 +6,7 @@ import { Smartphone, Monitor } from "lucide-react";
 import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHero";
 import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
+import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
 import "@/lib/banks/fihygiene";
 import { SITE_URL } from "@/lib/siteUrl";
@@ -87,11 +88,14 @@ const jsonLd = {
     },
     {
       "@type": "FAQPage",
-      mainEntity: faqs.map((f) => ({
-        "@type": "Question",
-        name: f.q,
-        acceptedAnswer: { "@type": "Answer", text: f.a },
-      })),
+      mainEntity: [
+        ...faqs.map((f) => ({
+          "@type": "Question",
+          name: f.q,
+          acceptedAnswer: { "@type": "Answer", text: f.a },
+        })),
+        classFaqJsonLd("fihygiene"),
+      ],
     },
   ],
 };
@@ -262,6 +266,7 @@ export default function FinlandHygienePassportLandingPage() {
               <p className="text-gray-600 dark:text-gray-300">{f.a}</p>
             </div>
           ))}
+          <ExamClassFaq examId="fihygiene" />
         </div>
       </div>
 

@@ -22,8 +22,9 @@ export function registerExamBanks(
   Object.assign(TRANSLATED_BANKS, translations);
 }
 
-export function getExamQuestions(examId: ExamId, language: Language = "en"): Question[] {
-  const bank = TRANSLATED_BANKS[examId]?.[language] ?? BANKS[examId];
+export function getExamQuestions(examId: ExamId, language?: Language): Question[] {
+  // No language means the exam's own bank (a native exam's English translation is never a default).
+  const bank = (language ? TRANSLATED_BANKS[examId]?.[language] : undefined) ?? BANKS[examId];
   if (!bank) throw new Error(`No question bank registered for ${examId}: import "@/lib/banks/${examId}" in the page`);
   return bank;
 }

@@ -247,7 +247,7 @@ import sejaktSv from "@/lib/landings/sejakt.sv.json";
       { label: "Tigertest mock tests", value: "3 x 70 questions in Swedish, 60 to pass" },
     ],
     basedOn: "Naturvårdsverket's regulations on jägarexamen (NFS 2015:10 as amended by NFS 2019:8), its theory test page and the 2020 kompetensbeskrivning, checked November 2026",
-    source: { name: "Naturvårdsverket: theory test for jägarexamen", url: "https://www.naturvardsverket.se/amnesomraden/jakt-och-vilt/jakt/teoriprov-jagarexamen/" },
+    source: { name: "Naturvårdsverket: theory test for jägarexamen", url: "https://www.naturvardsverket.se/amnesomraden/jakt-och-vilt/for-jagare/teoriprov-jagarexamen/" },
   },
 ```
 
@@ -305,3 +305,15 @@ then rename to the `-sv` names (as for `detheorie`'s `-de`).
 4. **New law.** One item (SEJAKT-LAG-029) relies on jaktlagen 9 a §, in force 1 July 2026
    (SFS 2026:832); its explanation dates it.
 5. **Review.** `review: { sv: "model" }`; a native Swedish reviewer pass is still owed.
+
+## Review (2026-11-07)
+
+Reviewed per tools/next100/REVIEW.md. Bank rebuilt, validator PASS. Fixes in the sources (ids unchanged):
+SEJAKT-VAP-002 and -VAP-003 (ambiguous: "lägsta klass" could mean klass 1; now "svagaste klassen"),
+SEJAKT-VAP-017 (distractor Älg replaced: NFS 2023:8 allows some night equipment for hjortdjur where
+dygnet-runt-jakt is allowed), SEJAKT-LAG-014 (key wording, explanation cited 22 § for the
+länsstyrelse exception that is in 23 §), SEJAKT-LAG-022 (stem word order, explanation cites 9 §),
+SEJAKT-ETI-012 (distractors "i dagsljus" made the key stand out; unverified exception removed),
+SEJAKT-ETI-019 (explanation now quotes the four 44 § factors), SEJAKT-SAK-004 (key "kan svikta" ->
+"kan fallera"), SEJAKT-ART-020 (grammar). Naturvårdsverket's teoriprov page moved to
+/for-jagare/teoriprov-jagarexamen/; the examFacts block above, the landing JSON and sources.md use it.

@@ -30,7 +30,7 @@ Q = [
  "En skärgård är ett havsområde med många öar nära land. Skärgårdar finns både på östkusten och på västkusten."),
 ("Ungefär hur många öar finns det i Sverige?",
  "250 000", ["50 000", "100 000", "150 000"],
- "Sverige har cirka 250 000 öar, fler än något annat land i världen."),
+ "Sverige har ungefär 250 000 öar, de flesta små, både i havet och i sjöarna."),
 ("Vilka tre landsdelar brukar Sverige delas in i?",
  "Götaland, Svealand och Norrland", ["Skåne, Svealand och Lappland", "Götaland, Dalarna och Norrland", "Västsverige, Mälardalen och Norrland"],
  "Götaland ligger i söder, Svealand i mitten och Norrland i norr."),

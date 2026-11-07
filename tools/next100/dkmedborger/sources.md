@@ -82,3 +82,14 @@ dkindfoed's 200 items with a script (same key or a stem similarity over 0.7); no
 facts dkindfoed asks (179 seats, two Greenland seats, 98 municipalities, regions run hospitals,
 a-kasse, dagpenge, CPR, MitID, SU, moms as a word, flexicurity, Christiansborg, Grundtvig and
 most history and culture names) were avoided.
+
+## Review pass (2026-11-07)
+- Kontanthjælpsreformen (in force 1 July 2025) merged uddannelseshjælp and the other
+  ydelser into one kontanthjælp (Svendborg Kommune FAQ and Ældre Sagen, via search
+  2026-11-07), so ARB-027 now names only kontanthjælp.
+- Euro area grew to 21 members (Bulgaria, 1 January 2026); VER-002 no longer gives a count.
+- Thule Air Base (now Pituffik) was built near the old settlement, whose residents were moved
+  to Qaanaaq in 1953; VER-018 no longer says "ved Qaanaaq".
+- Lorries pay a distance-based road toll from 2025; VEL-022 now says "for personbiler".
+- Format and the 2-of-4 supplementary conditions re-checked against BEK nr. 452 af
+  13.05.2024 and UC+ Dansk (next sitting 25 November 2026).

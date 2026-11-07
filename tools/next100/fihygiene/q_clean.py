@@ -1,8 +1,8 @@
 CAT = "fihygClean"; SEG = "CLN"
 Q = [
 ("What does disinfecting do that cleaning alone does not?",
- "It reduces microbes", ["It removes grease and dirt", "It removes food residue", "It makes surfaces rust-proof"],
- "Cleaning with detergent removes dirt, grease and food residue. Disinfecting reduces microbes, and only works on a surface that has been cleaned first."),
+ "It kills most remaining microbes", ["It removes grease and dirt", "It removes food residue", "It makes surfaces rust-proof"],
+ "Cleaning with detergent removes dirt, grease and food residue. Cleaning also lowers microbe numbers, but disinfecting kills most of those left, and only works on a surface that has been cleaned first."),
 ("In which order is a work surface cleaned and disinfected?",
  "Clean, rinse, then disinfect", ["Disinfect, then wipe off dirt", "Disinfect only, no cleaning", "Rinse, disinfect, then clean"],
  "Dirt and grease shield microbes and use up disinfectant, so the surface is cleaned and rinsed first. Disinfecting comes last, where the cleaning plan requires it."),

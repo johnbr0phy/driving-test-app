@@ -1,8 +1,8 @@
 CAT = "hukmPriority"; SEG = "PRI"
 Q = [
-("Which junction crash is the most common for motorcyclists?",
- "A car pulling out or turning", ["A lorry reversing into them", "Hitting a parked bicycle", "A tram striking them from behind"],
- "Drivers emerging from side roads or turning across a rider's path often fail to see the motorcycle, or misjudge its speed."),
+("Why can a car's windscreen pillar be dangerous for a rider approaching a junction?",
+ "It can hide the whole motorcycle", ["It reflects the rider's headlight", "It makes the car turn wider", "It blocks the driver's mirror"],
+ "A pillar is wide enough to hide a narrow motorcycle from a waiting driver. Moving within your lane can bring you into the driver's view."),
 ("In Győr, an oncoming taxi waits in the junction to turn left across your lane. You have priority. You should:",
  "Slow and cover the brakes", ["Speed up to pass it first", "Sound the horn and keep speed", "Move to the centre line"],
  "You have the right of way, but the driver may not have seen you. Covering the brakes cuts your reaction time."),
@@ -21,9 +21,9 @@ Q = [
 ("Stopped at red lights, a lorry beside you indicates right. Where should you be?",
  "Not beside it on its right", ["Close beside its front wheel", "Level with its cab", "In front of its bumper"],
  "A turning lorry sweeps across the space on its inside and the driver may not see a rider there. Stay behind it."),
-("At a light-controlled junction, a yellow bicycle symbol marks a waiting area ahead of the stop line. On a motorcycle you:",
+("At a light-controlled junction, a bicycle symbol marks a waiting area ahead of the stop line. On a motorcycle you:",
  "Stop behind it", ["Wait inside it", "Wait across it", "Use it to turn left"],
- "That advanced waiting area is for bicycles turning left. Motorcycles and mopeds stop at the stop line before it."),
+ "KRESZ section 18: that advanced waiting area is for two-wheeled bicycles turning left, during the red light. Motorcycles and mopeds stop at the stop line before it."),
 ("A queue of cars leaves a gap at a side road on your right. You are filtering on the left of the queue. What should you expect?",
  "A car turning through the gap", ["The gap closing slowly", "A tram stopping in the gap", "No risk at all there"],
  "Drivers in a queue often leave a gap for a car to turn in or out. That car may cross your path without seeing you."),

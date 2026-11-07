@@ -326,8 +326,8 @@
     "state": "ALL",
     "questionId": "DKJAG-ART-024",
     "category": "dkjgArter",
-    "question": "Hvordan lever grågæs i par?",
-    "optionA": "Gasen har flere hunner",
+    "question": "Hvad gælder for grågæssenes pardannelse?",
+    "optionA": "Gasen har flere gæs på én gang",
     "optionB": "Parret skilles efter hver sæson",
     "optionC": "De parrer sig i store flokke",
     "optionD": "Parret holder sammen i mange år",
@@ -557,7 +557,7 @@
     "optionD": "Det lever kun i vildtreservater",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "En hind får højst én kalv om året og lever mange år. Haren får flere kuld om året, så den tåler at miste en større andel."
+    "explanation": "En hind får som regel kun én kalv om året og lever mange år. Haren får flere kuld om året, så den tåler at miste en større andel."
   },
   {
     "type": "DKJAGT",
@@ -1047,7 +1047,7 @@
     "optionD": "Ja, men kun kalve",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Haglgeværer må kun bruges på arterne i klasse 2 til 5, ikke på klasse 1 som kronvildt, dåvildt og vildsvin. Kun bemyndigede hundeførere må aflive nødstedt vildt med haglgevær."
+    "explanation": "Haglgeværer må kun bruges på arterne i klasse 2 til 5, ikke på klasse 1 som kronvildt, dåvildt og vildsvin. Bemyndigede hundeførere må dog bruge haglgevær, når de skal aflive nødstedt vildt."
   },
   {
     "type": "DKJAGT",
@@ -2111,7 +2111,7 @@
     "optionD": "Kun hvis politiet beder om det",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Indberetningen gælder, selvom udbyttet har været 0, og skal ske senest 31. marts efter jagtåret."
+    "explanation": "Indberetningen gælder, selvom udbyttet har været 0, og skal ske digitalt senest 31. marts."
   },
   {
     "type": "DKJAGT",

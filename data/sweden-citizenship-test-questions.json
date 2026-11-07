@@ -137,7 +137,7 @@
     "optionD": "250 000",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Sverige har cirka 250 000 öar, fler än något annat land i världen."
+    "explanation": "Sverige har ungefär 250 000 öar, de flesta små, både i havet och i sjöarna."
   },
   {
     "type": "SEMEDB",
@@ -459,7 +459,7 @@
     "optionD": "Får rösta först efter tio års bosättning",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "EU-medborgare röstar till EU-parlamentet i det land där de är folkbokförda. De får också rösta i kommun- och regionval, men inte i riksdagsvalet."
+    "explanation": "En EU-medborgare som är folkbokförd i Sverige kan välja att rösta till EU-parlamentet här i stället för i hemlandet. Hen får också rösta i kommun- och regionval, men inte i riksdagsvalet."
   },
   {
     "type": "SEMEDB",
@@ -473,7 +473,7 @@
     "optionD": "Det gäller i tio år",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Folkomröstningar är rådgivande. Politikerna måste inte följa resultatet."
+    "explanation": "Alla folkomröstningar i Sverige har hittills varit rådgivande. Då måste politikerna inte följa resultatet."
   },
   {
     "type": "SEMEDB",
@@ -594,7 +594,7 @@
     "category": "smdbDemokrati",
     "question": "Vilken rätt har en väljare i ett demokratiskt val?",
     "optionA": "Rätten att rösta flera gånger",
-    "optionB": "Rätten att se andras röster",
+    "optionB": "Rätten att rösta i någon annans namn",
     "optionC": "Rätten att låta bli att rösta",
     "optionD": "Rätten att se hur grannen röstat",
     "correctAnswer": "C",
@@ -666,7 +666,7 @@
     "optionA": "Statsministern",
     "optionB": "Riksdagens talman",
     "optionC": "Kungen",
-    "optionD": "Regeringsrätten",
+    "optionD": "Konstitutionsutskottet",
     "correctAnswer": "A",
     "correctIndex": 0,
     "explanation": "När riksdagen har valt statsminister väljer statsministern själv ministrarna."
@@ -753,7 +753,7 @@
     "optionD": "Folkbiblioteken",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Regionerna ser till att det finns bussar, spårvagnar och tunnelbana. De ansvarar också för länsmuseerna."
+    "explanation": "Regionerna ser till att det finns bussar, spårvagnar och tunnelbana. De arbetar också med regional utveckling och kultur."
   },
   {
     "type": "SEMEDB",
@@ -816,14 +816,14 @@
     "state": "ALL",
     "questionId": "SEMEDB-STY-016",
     "category": "smdbStyrning",
-    "question": "Vilken nämnd ansvarar för biblioteken i en kommun?",
-    "optionA": "Utbildningsnämnden",
-    "optionB": "Socialnämnden",
-    "optionC": "Byggnadsnämnden",
-    "optionD": "Kulturnämnden",
+    "question": "Vad är en nämnd i en kommun?",
+    "optionA": "En domstol för kommunens tvister",
+    "optionB": "En myndighet som lyder under regeringen",
+    "optionC": "Ett möte där alla invånare röstar",
+    "optionD": "Politiker som ansvarar för ett område",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Kommunens nämnder ansvarar för olika områden. Kulturnämnden har biblioteken och utbildningsnämnden skolorna."
+    "explanation": "Kommunen har nämnder för olika områden, till exempel skola, socialtjänst och kultur. Ledamöterna är politiker som kommunfullmäktige väljer."
   },
   {
     "type": "SEMEDB",
@@ -935,7 +935,7 @@
     "optionD": "Tryckfrihetsförordningen",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Tryckfrihetsförordningen skyddar det fria ordet i tryckt form. Diskrimineringslagen är en vanlig lag, ingen grundlag."
+    "explanation": "Tryckfrihetsförordningen skyddar det fria ordet i tryckt form. Yttrandefrihetsgrundlagen skyddar radio, tv, film och vissa webbplatser."
   },
   {
     "type": "SEMEDB",
@@ -1124,14 +1124,14 @@
     "state": "ALL",
     "questionId": "SEMEDB-LAG-018",
     "category": "smdbLag",
-    "question": "Hur länge kan en anhållen person som längst hållas inlåst innan domstolen måste besluta?",
-    "optionA": "12 timmar",
-    "optionB": "24 timmar",
-    "optionC": "48 timmar",
-    "optionD": "72 timmar",
-    "correctAnswer": "D",
-    "correctIndex": 3,
-    "explanation": "En åklagare kan anhålla en misstänkt, som då kan hållas inlåst i upp till 72 timmar. För längre tid krävs häktning, som en domstol beslutar om."
+    "question": "Vem beslutar normalt att en misstänkt person ska anhållas?",
+    "optionA": "Tingsrätten",
+    "optionB": "Åklagaren",
+    "optionC": "Kriminalvården",
+    "optionD": "Brottsoffermyndigheten",
+    "correctAnswer": "B",
+    "correctIndex": 1,
+    "explanation": "Det är åklagaren som beslutar om anhållande. Ska den misstänkte hållas inlåst längre måste åklagaren begära häktning, och då beslutar domstolen."
   },
   {
     "type": "SEMEDB",
@@ -1182,12 +1182,12 @@
     "category": "smdbLag",
     "question": "Vad är ett belastningsregister?",
     "optionA": "Ett register över alla skulder",
-    "optionB": "Ett register över vissa brottsdomar",
+    "optionB": "Ett register över personer som dömts för brott",
     "optionC": "Ett register över alla röstberättigade",
     "optionD": "Ett register över alla folkbokförda",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Den som döms för vissa allvarliga brott registreras i belastningsregistret. Det kan göra det svårare att få jobb, körkort eller medborgarskap."
+    "explanation": "Den som döms för brott, även till böter, förs in i belastningsregistret. Det kan göra det svårare att få jobb, körkort eller medborgarskap."
   },
   {
     "type": "SEMEDB",
@@ -1257,7 +1257,7 @@
     "optionD": "Att få vara anonym",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Den som lämnar uppgifter till tidningar, radio och tv har rätt att vara anonym och får inte straffas för det."
+    "explanation": "Den som lämnar uppgifter till tidningar, radio och tv har rätt att vara anonym. Det kallas meddelarskydd, och myndigheter får inte efterforska vem som lämnat uppgifterna."
   },
   {
     "type": "SEMEDB",
@@ -1573,13 +1573,13 @@
     "questionId": "SEMEDB-RAT-013",
     "category": "smdbRattigheter",
     "question": "Två föräldrar ska skiljas och är oense om var deras barn ska bo. Vad ska domstolen göra?",
-    "optionA": "Fråga barnet vad det vill",
-    "optionB": "Låta barnet bo hos pappan",
-    "optionC": "Låta barnet bo hos mamman",
+    "optionA": "Ta hänsyn till barnets åsikt",
+    "optionB": "Alltid låta barnet bo hos pappan",
+    "optionC": "Alltid låta barnet bo hos mamman",
     "optionD": "Placera barnet i fosterhem",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Enligt barnkonventionen ska barn få säga vad de tycker i frågor som rör dem. Domstolen ska därför fråga även barnet."
+    "explanation": "Enligt barnkonventionen ska barn få säga vad de tycker i frågor som rör dem. Barnets åsikt vägs in utifrån ålder och mognad, ofta genom att socialtjänsten pratar med barnet."
   },
   {
     "type": "SEMEDB",
@@ -1635,7 +1635,7 @@
     "optionD": "Isländska",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Minoritetsspråken är jiddisch, romani chib, samiska, finska och meänkieli. De får användas i kontakter med myndigheter, i förskola och i äldreomsorg."
+    "explanation": "Minoritetsspråken är jiddisch, romani chib, samiska, finska och meänkieli. I vissa kommuner har man rätt att använda finska, meänkieli eller samiska hos myndigheter, i förskolan och i äldreomsorgen."
   },
   {
     "type": "SEMEDB",
@@ -1831,7 +1831,7 @@
     "optionD": "En försäkring vid arbetslöshet",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Arbetslöshetskassan är en ekonomisk förening som betalar ut pengar till arbetslösa medlemmar. Den finansieras av staten och av medlemsavgifter."
+    "explanation": "Arbetslöshetskassan är en förening som betalar ut pengar till arbetslösa medlemmar. Den finansieras av staten och av medlemsavgifter."
   },
   {
     "type": "SEMEDB",
@@ -1992,14 +1992,14 @@
     "state": "ALL",
     "questionId": "SEMEDB-ARB-020",
     "category": "smdbArbete",
-    "question": "För vilka åldrar finns grundskolan?",
+    "question": "Ungefär mellan vilka åldrar har barn skolplikt i Sverige?",
     "optionA": "5 till 15 år",
-    "optionB": "7 till 15 år",
+    "optionB": "7 till 13 år",
     "optionC": "7 till 18 år",
     "optionD": "6 till 16 år",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "I alla kommuner finns grundskolor för barn mellan 6 och 16 år, och dessutom gymnasieskola och vuxenutbildning."
+    "explanation": "Skolplikten börjar höstterminen det år barnet fyller 6 år och gäller till och med årskurs 9, ungefär till 16 års ålder. Kommunen ansvarar för skolan, gymnasieskolan och vuxenutbildningen."
   },
   {
     "type": "SEMEDB",
@@ -2150,7 +2150,7 @@
     "optionA": "Väpnade uppror mot kungen",
     "optionB": "Sabotage mot fabriker",
     "optionC": "Bojkott av alla val",
-    "optionD": "Lagliga metoder",
+    "optionD": "Demonstrationer och studiecirklar",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "Folkrörelserna demonstrerade, höll protestmöten, gav ut böcker och skrev i tidningar. De startade också bibliotek och studiecirklar."
@@ -2359,7 +2359,7 @@
     "question": "Vad hände i svensk politik år 1976?",
     "optionA": "Sverige gick med i EU",
     "optionB": "Den första kvinnliga statsministern valdes",
-    "optionC": "Regeringen blev icke-socialdemokratisk",
+    "optionC": "Socialdemokraterna förlorade regeringsmakten",
     "optionD": "Kvinnor fick rösträtt",
     "correctAnswer": "C",
     "correctIndex": 2,
@@ -2559,7 +2559,7 @@
     "optionD": "Bara frivilliga soldater över 20",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Värnplikten omfattar alla kvinnor och män som fyllt 18. Bara en del av dem väljs ut till grundläggande militär utbildning."
+    "explanation": "Värnplikten omfattar alla svenska medborgare, kvinnor och män, från det år de fyller 18. Bara en del av dem väljs ut till grundläggande militär utbildning."
   },
   {
     "type": "SEMEDB",
@@ -2671,7 +2671,7 @@
     "optionD": "På 1970-talet",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Sveriges första moskéer byggdes under 1970-talet. Stockholms moské invigdes år 2000."
+    "explanation": "Sveriges första moské byggdes i Göteborg 1976. I dag finns moskéer i många städer."
   },
   {
     "type": "SEMEDB",

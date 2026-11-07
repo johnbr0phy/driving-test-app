@@ -16,6 +16,10 @@ and were not used.
   - Questions are randomised and drawn from the whole teaching plan. At most five errors to pass,
     for both digital and analogue tests.
   - The page gives no question count. This confirms English for category A on an official page.
+  - Re-checked 2026-11-07 (review): "Du kan tage den digitale teoriprøve på engelsk og tysk i
+    kategorier A, AM, B, ..."; German only in Aabenraa, Danish and English at every digital site;
+    "Besvarer du ikke et spørgsmål tæller det som en fejl" (an unanswered question counts as an
+    error); "man må have fem fejl for at bestå"; 25 minutes is stated for a B test only.
 - Færdselsstyrelsen, "Frigivelse og afholdelse af prøver":
   https://www.fstyr.dk/erhverv/koereskoler-og-koerelaerere/frigivelse-og-afholdelse-af-proever
   Randomisation key for the digital category A test (approx. % by afsnit of the teaching plan):
@@ -107,3 +111,26 @@ lamp, triangle 50 m, flashing headlights after dark, three-lane roads, hill cres
 roundabout signalling, slip road shark's teeth, one lane at a time, built-up and rural limits,
 crawler lane, solid line U-turn, C 11,2, e-scooter speed, red triangle medicine, phones, children
 and elderly, slippery road sign, hazard lights on queues, daytime running lights).
+
+## Review pass (2026-11-07)
+
+Licence ages re-read in the A plan, 6.1 (A1 from 18; A2 from 20; A from 24, or from 22 after at
+least two years on A2 and a practical test) and 6.3 (helmets from 5, rider responsible for 5 to
+14; children under 135 cm only from 5 with a child seat; under 5 in a sidecar only with a belt):
+all as in the bank, landing and examFacts. Rules used in the rewrites: 6.1.1 (2) motorcycles on
+the motor vehicle part of the road only; 6.2.3 (3) light signal instead of horn in the lighting-up
+time unless danger is imminent; 7.1.2 and 7.1.5 (impatience moving off; braking distance depends
+on how hard you brake); 7.2.4 (7) ideal line; 7.3 (no continuous braking on long descents);
+7.4.2 (lane changes surprise others; vibrating mirrors); 7.9.1 to 7.9.3 (overtaken vehicle is the
+main other party; doubt costs time; columns with short gaps); 7.14.2 and 7.14.3 (green taken as a
+free path; rushing the turn from the exposed waiting place; small vehicles beside large ones);
+7.16.6 (crossing traffic at expressway junctions); 7.19 (dip as the overtaker pulls back in).
+Afsnit 9 figures (braking distances at 30 km/h, wet-road speeds) are not used: afsnit 9 is not in
+the theory test key.
+
+Rewritten to avoid repeats of dkteori: hatched area kept (different fact); dropped from dkmoto
+the motorway signalling rule, STOP line, lane-change arrows, merging rule, No overtaking sign,
+bus lane passing, expressway oncoming traffic, red flashing level crossing light, last-exit
+roundabout signal. Rewritten to avoid near-copies in other driving banks: braking distance x4,
+blind spot check, lower gear downhill, pillion astride, narrow road cyclist, one-way left turn,
+overtake on the left.

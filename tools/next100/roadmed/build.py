@@ -15,7 +15,7 @@ ORDER = [("nervos", 28), ("analiz", 24), ("miscare", 16), ("digestie", 20), ("ci
          ("excrrep", 8), ("hidro", 24), ("functionali", 28), ("biocompusi", 28)]
 out = sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, "data", "romania-medicine-admission-questions.json")
 NUM = re.compile(r"^([-+]?\d+(?:,\d+)?)\s*(\S*)$")
-BAD = ["—", "– ", '"', "Toate cele de mai sus", "Niciuna dintre"]  # "A și B" as a whole option is caught by validate_bank.py
+BAD = ["\u2014", "\u2013 ", '"', "Toate cele de mai sus", "Niciuna dintre"]  # "A și B" as a whole option is caught by validate_bank.py
 
 def numeric(opts):
     parts = [NUM.match(o) for o in opts]

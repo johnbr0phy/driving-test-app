@@ -42,5 +42,5 @@ Q = [
  "Alla som bor i Sverige och är mellan 16 och 70 år kan bli tvungna att hjälpa till att försvara landet om det behövs."),
 ("Vilka omfattas av den allmänna värnplikten?",
  "Kvinnor och män som fyllt 18", ["Bara män som fyllt 18", "Kvinnor och män över 25", "Bara frivilliga soldater över 20"],
- "Värnplikten omfattar alla kvinnor och män som fyllt 18. Bara en del av dem väljs ut till grundläggande militär utbildning."),
+ "Värnplikten omfattar alla svenska medborgare, kvinnor och män, från det år de fyller 18. Bara en del av dem väljs ut till grundläggande militär utbildning."),
 ]

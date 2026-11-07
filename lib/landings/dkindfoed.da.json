@@ -1,6 +1,6 @@
 {
   "metaTitle": "Indfødsretsprøven 2026: gratis øvelsesprøve på dansk",
-  "metaDescription": "Øv dig gratis til indfødsretsprøven: 200 egne spørgsmål på dansk om Danmarks historie, Grundloven, folkestyret, samfund, kultur og danske værdier, alle med forklaring. Fem prøver med 40 spørgsmål, uden login.",
+  "metaDescription": "Øv dig gratis til indfødsretsprøven: 320 egne spørgsmål på dansk om Danmarks historie, Grundloven, folkestyret, samfund, kultur og danske værdier, alle med forklaring. Otte prøver med 40 spørgsmål, uden login.",
   "keywords": "indfødsretsprøven, indfødsretsprøve, øvelsesprøve indfødsret, statsborgerskabsprøve, indfødsretsprøven spørgsmål, læremateriale indfødsretsprøven, dansk statsborgerskab prøve, indfødsretsprøven 2026, værdispørgsmål",
   "breadcrumb": {
     "home": "Forside",
@@ -8,11 +8,11 @@
     "current": "Indfødsretsprøven"
   },
   "h1": "Indfødsretsprøven 2026: øvelsesprøver på dansk",
-  "subtitle": "200 egne øvelsesspørgsmål på dansk om historie, Grundloven, samfund, kultur og danske værdier, alle med forklaring. Fem prøver med 40 spørgsmål, også med værdispørgsmål. Lavet til mobilen, uden login.",
+  "subtitle": "320 egne øvelsesspørgsmål på dansk om historie, Grundloven, samfund, kultur og danske værdier, alle med forklaring. Otte prøver med 40 spørgsmål, også med værdispørgsmål. Lavet til mobilen, uden login.",
   "facts": {
     "h2": "Indfødsretsprøven kort fortalt",
     "answer": "Indfødsretsprøven er en skriftlig prøve for dig, der søger dansk indfødsret. Den har 45 spørgsmål, og du har 45 minutter. 35 spørgsmål bygger på det officielle læremateriale om danske samfundsforhold, dansk kultur og historie, 5 handler om aktuelle begivenheder fra de seneste måneder, og 5 handler om danske værdier. Du består med mindst 36 rigtige svar, og mindst 4 af de 5 værdispørgsmål skal være rigtige. De fleste spørgsmål har tre svarmuligheder, nogle besvares med ja eller nej. Prøven holdes to gange om året, i maj eller juni og i november eller december, på sprogcentre i hele landet.",
-    "tigertest": "Tigertest har 200 egne øvelsesspørgsmål på dansk om de emner, lærematerialet dækker, og om danske værdier, alle gratis og uden login. Spørgsmålene er skrevet fra bunden og ikke kopieret fra lærematerialet eller fra tidligere prøver.",
+    "tigertest": "Tigertest har 320 egne øvelsesspørgsmål på dansk om de emner, lærematerialet dækker, og om danske værdier, alle gratis og uden login. Spørgsmålene er skrevet fra bunden og ikke kopieret fra lærematerialet eller fra tidligere prøver.",
     "rows": [
       {
         "label": "Spørgsmål",
@@ -50,11 +50,11 @@
     "cards": [
       {
         "h3": "Først træning, så prøver",
-        "p": "Fem træningssæt efter emne: historie til 1849, historie fra 1849, Grundloven og folkestyret, samfund og kultur samt danske værdier. Du får svar med det samme, og de spørgsmål, du svarer forkert på, kommer igen, til du kan dem."
+        "p": "Seks træningssæt efter emne: historie til 1849, historie fra 1849, Grundloven og folkestyret, samfund og økonomi, kultur og traditioner samt danske værdier. Du får svar med det samme, og de spørgsmål, du svarer forkert på, kommer igen, til du kan dem."
       },
       {
         "h3": "Prøver med 40 spørgsmål",
-        "p": "Fem prøver med hver 35 spørgsmål om lærematerialets emner og 5 værdispørgsmål. For at bestå her skal du have 36 af 40 rigtige. Tjek også, at du har mindst 4 af de 5 værdispørgsmål rigtige."
+        "p": "Otte prøver med hver 35 spørgsmål om lærematerialets emner og 5 værdispørgsmål, uden gentagelser mellem prøverne. For at bestå her skal du have 36 af 40 rigtige. Tjek også, at du har mindst 4 af de 5 værdispørgsmål rigtige."
       }
     ]
   },
@@ -63,12 +63,12 @@
     "p": "SIRI offentliggør ikke, hvordan de 35 spørgsmål fordeles på emner. Fordelingen her er Tigertests egen, og hver prøve har spørgsmål fra alle emner.",
     "items": [
       "Oldtid, vikingetid og middelalder (4 af 40)",
-      "Fra Reformationen til Grundloven (4 af 40)",
-      "Fra Grundloven til befrielsen (5 af 40)",
-      "Danmark efter 1945 (4 af 40)",
+      "Fra Reformationen til Grundloven (3 af 40)",
+      "Fra Grundloven til befrielsen (4 af 40)",
+      "Danmark efter 1945 (3 af 40)",
       "Grundloven, folkestyret og rigsfællesskabet (7 af 40)",
-      "Velfærd, arbejdsmarked, økonomi og geografi (6 af 40)",
-      "Kultur, traditioner og højtider (5 af 40)",
+      "Velfærd, arbejdsmarked, økonomi og geografi (7 af 40)",
+      "Kultur, traditioner og højtider (7 af 40)",
       "Danske værdier (5 af 40)"
     ]
   },
@@ -113,11 +113,11 @@
     },
     {
       "q": "Er øvelsesprøverne gratis?",
-      "a": "Ja. Alle fem træningssæt og fem prøver er gratis og kan bruges uden login. Med en gratis konto gemmer du dine fremskridt på alle dine enheder."
+      "a": "Ja. Alle seks træningssæt og otte prøver er gratis og kan bruges uden login. Med en gratis konto gemmer du dine fremskridt på alle dine enheder."
     }
   ],
   "finalCta": {
     "h2": "Klar til indfødsretsprøven?",
-    "p": "Start gratis, uden login. 200 spørgsmål på dansk om historie, samfund, kultur og danske værdier."
+    "p": "Start gratis, uden login. 320 spørgsmål på dansk om historie, samfund, kultur og danske værdier."
   }
 }

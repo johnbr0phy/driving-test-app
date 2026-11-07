@@ -2578,20 +2578,83 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
   },
   detheorie: {
     answer:
-      "The German theory test (theoretische Fahrerlaubnisprüfung) for a first class B car licence has 30 questions, answered on screen at a TÜV or DEKRA test centre: 20 from the basic material that applies to every licence class (Grundstoff) and 10 class B questions (Zusatzstoff). Each question carries 2 to 5 error points depending on its importance for road safety, 110 in all. You pass with no more than 10 error points, but two wrong 5-point questions always fail. There is no fixed time limit; the guide time is 45 minutes. The test is in German and can also be taken in 12 foreign languages, including English, Turkish, Russian and Arabic. Questions come from the official catalogue published by TÜV | DEKRA arge tp 21, revised each April and October; some have several correct answers, some ask for a number, and up to three are short videos. A reform with a smaller catalogue and equal weighting is planned for 2027.",
+      "The German theory test (theoretische Fahrerlaubnisprüfung) for a first class B car licence has 30 questions, answered on screen at a TÜV or DEKRA test centre: 20 from the basic material that applies to every licence class (Grundstoff) and 10 class B questions (Zusatzstoff). Each question carries 2 to 5 error points depending on its importance for road safety, 110 in all. You pass with no more than 10 error points, but two wrong 5-point questions always fail. There is no fixed time limit; the guide time is 45 minutes. The test is in German and can also be taken in several foreign languages (the FeV now lists 14), including English, Turkish, Russian and Arabic. Questions come from the official catalogue published by TÜV | DEKRA arge tp 21, revised each April and October; some have several correct answers, some ask for a number, and up to three are short videos. A reform with a smaller catalogue and equal weighting is planned for 2027.",
     rows: [
       { label: "Run by", value: "TÜV and DEKRA test centres (official test bodies)" },
       { label: "Questions", value: "30 (20 basic, 10 class B)" },
       { label: "Scoring", value: "2 to 5 error points per question, 110 in all" },
       { label: "Pass mark", value: "At most 10 error points, not two 5-point errors" },
       { label: "Time", value: "No fixed limit, guide time 45 minutes" },
-      { label: "Languages", value: "German and 12 foreign languages incl. English" },
+      { label: "Languages", value: "German and several foreign languages incl. English" },
       { label: "Catalogue updates", value: "Each 1 April and 1 October" },
       { label: "Tigertest mock tests", value: "7 x 30 questions in German, 28 to pass" },
     ],
     basedOn: "Fahrerlaubnis-Verordnung Anlage 7, TÜV NORD and TÜV | DEKRA arge tp 21 guidance on the theory test, StVO, StVZO and StVG as in force, checked November 2026",
     source: { name: "TÜV | DEKRA arge tp 21: driving licence test", url: "https://fahrerlaubnis.tuev-dekra.de/en/" },
   },
+  demotorrad: {
+    answer:
+      "The German motorcycle theory test (theoretische Fahrerlaubnisprüfung for classes A, A1 and A2) is taken on screen at a TÜV or DEKRA test centre. For a first licence it has 30 questions, 20 from the basic material shared by every class (Grundstoff) and 10 motorcycle questions (Zusatzstoff), each worth 2 to 5 error points, 110 in all; you pass with no more than 10 error points, but two wrong 5-point questions always fail. If you already hold another licence, such as class B, the extension test has 20 questions, 72 points and at most 6 error points. There is no fixed time limit. Moving up from A1 to A2 or from A2 to A after two years needs only a practical test, and the B196 entitlement for light motorcycles needs a training course, not a test. The test is in German and can also be taken in several foreign languages, including English.",
+    rows: [
+      { label: "Run by", value: "TÜV and DEKRA test centres (official test bodies)" },
+      { label: "Questions, first licence", value: "30 (20 basic, 10 motorcycle)" },
+      { label: "Questions, extension (e.g. from B)", value: "20, at most 6 error points" },
+      { label: "Scoring", value: "2 to 5 error points per question" },
+      { label: "Pass mark, first licence", value: "At most 10 of 110 error points, not two 5-point errors" },
+      { label: "Time", value: "No fixed limit" },
+      { label: "Languages", value: "German and several foreign languages incl. English" },
+      { label: "Tigertest mock tests", value: "7 x 30 questions in German, half motorcycle topics, 28 to pass" },
+    ],
+    basedOn: "Fahrerlaubnis-Verordnung Anlage 7, §§ 6, 6b and 15 FeV, TÜV NORD and TÜV | DEKRA arge tp 21 guidance on the theory test, StVO and StVZO as in force, checked November 2026",
+    source: { name: "TÜV | DEKRA arge tp 21: driving licence test", url: "https://fahrerlaubnis.tuev-dekra.de/en/" },
+  },
+  deaevo: {
+    answer:
+      "The German trainer aptitude exam (Ausbildereignungsprüfung) under the Ausbilder-Eignungsverordnung (AEVO) proves that someone may train apprentices in Germany's dual system. It has a written and a practical part, and each must be graded at least 'ausreichend' (sufficient). The written part covers case-based tasks from all four fields of action (check requirements and plan training, prepare training and hire apprentices, carry out training, complete training) and is meant to last three hours. At the chambers of commerce (IHKs) it is about 80 programmed multiple-choice tasks built around several case situations; each task states how many answers are correct and scores only if all of them are marked, and 50 of 100 points pass. Many IHKs now run it on a tablet or notebook. In the practical part the candidate presents a training situation (at most 15 minutes) or carries it out, followed by a technical discussion, at most 30 minutes in all. A failed exam can be repeated twice. The exam is in German and is taken at the competent chamber, usually the IHK or the Handwerkskammer; a master craftsman's exam already includes it.",
+    rows: [
+      { label: "Run by", value: "Competent chamber, usually IHK or Handwerkskammer" },
+      { label: "Parts", value: "Written and practical, each at least 'ausreichend'" },
+      { label: "Written part", value: "Case-based tasks from all four fields of action, 3 hours" },
+      { label: "Tasks at the IHKs", value: "About 80, multiple answers possible, all or nothing" },
+      { label: "Pass mark (written)", value: "50 of 100 points" },
+      { label: "Practical part", value: "Presentation or demonstration (up to 15 min) plus discussion, up to 30 min" },
+      { label: "Retakes", value: "Two" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions in German, 35 to pass" },
+    ],
+    basedOn: "Ausbilder-Eignungsverordnung § 4, the BIBB Rahmenplan of July 2023 and the exam guidance of several IHKs (Darmstadt, Bonn/Rhein-Sieg, Gießen-Friedberg), checked November 2026",
+    source: { name: "Ausbilder-Eignungsverordnung (AEVO), gesetze-im-internet.de", url: "https://www.gesetze-im-internet.de/ausbeignv_2009/" },
+  },
+  de34a: {
+    answer:
+      "The Sachkundeprüfung under § 34a of the German Trade Regulation Act (GewO) is the competence exam for security work, taken before a chamber of commerce (IHK). It is compulsory for security business owners and managers and for guards on patrols in public spaces or publicly accessible private areas, store detectives, door staff at discotheques, and those in charge at refugee accommodation and access-controlled major events. The written part lasts 120 minutes and is digital multiple choice; since 1 July 2025 it has 82 tasks for 120 points (older guides give 72 questions), and a task can have up to two correct answers. You pass the written part with at least 50 percent of the points and then take an oral exam of about 15 minutes, with up to five candidates, also passed at 50 percent. The exam is in German, no aids are allowed, and you may retake it as often as you need. Subjects follow § 7 of the Bewachungsverordnung: public security law and trade law, data protection, the civil code, criminal law and procedure with weapons, the accident prevention rules for guarding services, dealing with people, and security technology.",
+    rows: [
+      { label: "Run by", value: "IHK (German chambers of commerce)" },
+      { label: "Written part", value: "120 minutes, digital multiple choice" },
+      { label: "Tasks", value: "82 tasks, 120 points (since 1 July 2025; 72 before)" },
+      { label: "Pass mark", value: "50 percent of the points in each part" },
+      { label: "Oral part", value: "About 15 minutes, up to 5 candidates" },
+      { label: "Language", value: "German" },
+      { label: "Retakes", value: "Unlimited" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions in German, 25 to pass" },
+    ],
+    basedOn: "§ 34a GewO, the Bewachungsverordnung (BewachV) of 2019, the DIHK Rahmenplan for the Sachkundeprüfung and the exam pages of IHK Hannover and IHK Emden, checked November 2026",
+    source: { name: "IHK Hannover: Sachkundeprüfung Bewachungsgewerbe", url: "https://www.ihk.de/hannover/hauptnavigation/ausbildung-und-weiterbildung/pruefungen-und-unterrichtungen/sach-und-fachkundepruefungen-unterrichtungen/sachkundepruefung-bewachungsgewerbe-5137130" },
+  },
+  deheilpr: {
+    answer:
+      "In Germany anyone who wants to practise medicine without a doctor's licence (Approbation) needs a permit under the Heilpraktikergesetz. Before it is granted, the local health office checks in a knowledge test (Heilpraktikerüberprüfung) whether the candidate would be a danger to public health or to patients. The written part has 60 multiple-choice questions in 120 minutes; at least 45 correct answers (75 percent) admit the candidate to the oral and practical part, chaired by a public health doctor (Amtsarzt) with assessors, which decides the result. The content follows the federal health ministry's guidelines of 7 December 2017: law (Heilpraktikergesetz, Infection Protection Act, patients' rights, advertising law), hygiene, emergencies, medical terminology, anatomy, physiology and pathology, and recognising physical and mental illness in all age groups. Dates and deadlines are set by the states and authorities; in Bavaria the written part is held on fixed days in March and October. A licence limited to psychotherapy has its own shorter written test.",
+    rows: [
+      { label: "Run by", value: "Local health office (Gesundheitsamt) or district authority" },
+      { label: "Written part", value: "60 multiple-choice questions, 120 minutes" },
+      { label: "Pass mark", value: "At least 45 correct (75 percent)" },
+      { label: "Then", value: "Oral and practical part chaired by an Amtsarzt" },
+      { label: "Content", value: "Federal guidelines of 7 December 2017" },
+      { label: "Tigertest mock tests", value: "3 x 60 questions in German, 45 to pass" },
+    ],
+    basedOn: "Heilpraktikergesetz and its implementing regulation, the BMG guidelines of 7 December 2017 and the guidance sheets of the Landratsamt München (July 2025) and Fürstenfeldbruck (September 2025), checked November 2026",
+    source: { name: "Landratsamt München: guidance sheet on the Heilpraktiker knowledge test (PDF, German)", url: "https://www.landkreis-erding.de/media/23374/merkblatt-heilpraktiker-stand-juli-2023.pdf" },
+  },
+
   escapcond: {
     answer:
       "Spain's Driver CPC initial qualification (certificado de aptitud profesional, CAP inicial) is required by Real Decreto 284/2021 for professional drivers of trucks (licence categories C1 and C) and buses (D1 and D). Candidates first complete a course at an approved centre, 280 hours in the ordinary route or 140 in the accelerated one, and must then pass the exam within a year. Each comunidad autónoma's transport department runs the exam, at least six times a year. It has 100 multiple-choice questions with four options and one correct answer, and lasts at least two hours. A right answer scores 1 point, a wrong one loses 0.5 and a blank scores nothing; the pass is half the possible points, 50. 25 of the 100 questions are on the candidate's speciality, goods or passengers; a holder adding the other speciality takes only that course part and that part of the exam. The common syllabus covers the driveline and fuel-efficient driving, brakes and safety systems, traffic hazards, drivers' hours (Regulation 561/2006), the tachograph, health, emergencies and crime prevention; goods add loading, transport documents, CMR and cabotage, passengers add passenger safety, school transport and passenger rights. Tigertest's questions are in Spanish.",

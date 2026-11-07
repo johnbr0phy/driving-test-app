@@ -23,7 +23,7 @@ Q = [
  "Myrkytetty syötti", ["Puinen sorsankuva", "Suulla puhallettava pilli", "Elävänä pyytävä loukku"],
  "Metsästyslain 33 §: myrkyt sekä myrkytetyt ja tainnuttavat syötit ovat kiellettyjä. Rotille ja hiirille on omat säännöksensä."),
 ("Mikä ääniväline on kielletty houkuttimena?",
- "Kaiuttimesta soiva nauhoite", ["Suulla puhallettava pilli", "Käsin soitettava kanalintupilli", "Sorsan ääntä matkiva suu"],
+ "Kaiuttimesta soiva nauhoite", ["Suulla puhallettava pilli", "Käsin soitettava kanalintupilli", "Suulla matkittu sorsan ääni"],
  "Metsästyslain 33 § kieltää ääntä synnyttävät koneelliset laitteet. Suulla puhallettavat houkutuspillit ovat sallittuja."),
 ("Mitä vesilintujen metsästyksessä saa käyttää houkuttimena?",
  "Sorsankuvia", ["Eläviä kesysorsia", "Linnunliimaa rannalla", "Valonheitintä hämärissä"],

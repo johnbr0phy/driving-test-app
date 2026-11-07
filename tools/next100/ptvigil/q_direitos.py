@@ -32,7 +32,7 @@ Q = [
  "O Decreto-Lei n.º 74/2007 garante às pessoas com deficiência acompanhadas de cão de assistência o acesso a locais e transportes abertos ao público."),
 ("Que entidade recebe queixas de discriminação racial, segundo a Lei n.º 93/2017?",
  "A CICDR", ["A CNPD", "A ASAE", "A IGAI"],
- "A Comissão para a Igualdade e Contra a Discriminação Racial aplica o regime da Lei n.º 93/2017. A CNPD trata da proteção de dados e a ACT das condições de trabalho."),
+ "A Comissão para a Igualdade e Contra a Discriminação Racial recebe as queixas e aplica o regime da Lei n.º 93/2017, na redação atual. A CNPD trata da proteção de dados e a ACT das condições de trabalho."),
 ("Um cliente quer apresentar reclamação contra o serviço de segurança. O que faz o vigilante?",
  "Indica o livro de reclamações", ["Recusa, por ser do cliente", "Pede que volte noutro dia", "Fica com a reclamação para si"],
  "As entidades com alvará asseguram o livro de reclamações nas instalações com atendimento ao público (artigo 37.º da Lei n.º 34/2013). O vigilante não o pode negar."),

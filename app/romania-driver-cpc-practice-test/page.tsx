@@ -232,7 +232,7 @@ export default function RomaniaDriverCpcLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">2. Know the tachograph in UTC</h3>
               <p>
-                Digital tachographs keep UTC, two hours behind Romania in winter and three in summer. Know the activity modes, the card types, the ferry and out of scope entries, and what to do when the card or the tachograph fails.
+                Digital tachographs keep UTC, two hours behind Romania in winter and three in summer. Know the activity modes, the card types, the download and inspection deadlines, and what to do when a seal, chart or the tachograph fails.
               </p>
             </div>
             <div>

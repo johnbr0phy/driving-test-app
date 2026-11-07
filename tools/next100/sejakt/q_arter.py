@@ -60,7 +60,7 @@ Q = [
  "Björnen sover vintersömn i ett ide från senhösten till våren. Honan föder sina ungar i idet."),
 ("Vilket kännetecken skiljer hermelinen från vesslan?",
  "Svart svansspets", ["Kortare kropp", "Vita fötter året runt", "Brun ryggrand"],
- "Hermelinen har svart svansspets året runt, även i vit vinterpäls. Vesslan är mindre, har kort svans utan svart spets."),
+ "Hermelinen har svart svansspets året runt, även i vit vinterpäls. Vesslan är mindre och har kort svans utan svart spets."),
 ("Vilket kännetecken har skogsmården?",
  "En gul strupfläck", ["Svart ansiktsmask", "Vita öronkanter", "Randig svans"],
  "Skogsmården har en gulaktig fläck på strupen. Svart ansiktsmask och randig svans har tvättbjörnen."),

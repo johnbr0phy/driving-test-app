@@ -24,7 +24,7 @@ Q = [
  "Antalet muslimer ökade genom invandring efter andra världskriget, och i dag är islam den näst största religionen."),
 ("När byggdes de första moskéerna i Sverige?",
  "På 1970-talet", ["På 1870-talet", "På 1920-talet", "På 1990-talet"],
- "Sveriges första moskéer byggdes under 1970-talet. Stockholms moské invigdes år 2000."),
+ "Sveriges första moské byggdes i Göteborg 1976. I dag finns moskéer i många städer."),
 ("Vilket år fick judar fullständiga medborgerliga rättigheter i Sverige?",
  "1870", ["1780", "1809", "1951"],
  "Judar fick bo och utöva sin religion i Sverige från 1700-talet, men fullständiga medborgerliga rättigheter först 1870."),

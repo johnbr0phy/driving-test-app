@@ -41,7 +41,7 @@ Q = [
  'Hanyatt, megemelt lábakkal', ['Félig ülő helyzetben', 'Állva, lassan sétáltatva', 'Hason fekve, fejét oldalra'],
  'A lábak felemelése átmenetileg több vért juttat a szív és az agy felé. Ez a sokkfektetés.'),
 ('Mit tesz a sokkos sérült kihűlése ellen?',
- 'Betakarja, alá is tesz', ['Hideg borogatást tesz rá', 'Levetkőzteti a szélben', 'Alkohollal dörzsöli'],
+ 'Betakarja, alá is terít', ['Hideg borogatást tesz rá', 'Levetkőzteti a szélben', 'Alkohollal dörzsöli'],
  'A sokkos sérült gyorsan kihűl, ami rontja az állapotát. Takarja be, és ha lehet, tegyen alá is szigetelő réteget.'),
 ('Hasi ütés után a sérült sápad, szaporán ver a pulzusa és nagyon szomjas. Mire gondol?',
  'Belső vérzésre', ['Egyszerű éhségre', 'Pánikrohamra', 'Gyomorrontásra'],

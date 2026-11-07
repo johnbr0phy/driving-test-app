@@ -62,3 +62,19 @@ Q = [
  "2012", ["1989", "1999", "2005"],
  "En lov fra 2012 gjorde det muligt for to af samme køn at indgå ægteskab, også i folkekirken. Den enkelte præst kan dog sige nej."),
 ]
+
+# Tilføjet til otte prøver (pulje 24).
+Q += [
+("I hvilket år åbnede den faste forbindelse over Storebælt for biltrafik?",
+ "1998", ["1985", "2000", "2010"],
+ "Togene kunne køre gennem tunnelen fra 1997, og broen åbnede for biler i 1998. Færgerne mellem Sjælland og Fyn blev derefter nedlagt."),
+("Hvad var ungdomsoprøret omkring 1968?",
+ "Unge gjorde oprør mod autoriteter", ["En krig mod Sverige", "En strejke blandt landmænd", "En stor reform af kongehusets økonomi"],
+ "Studerende og andre unge krævede indflydelse på universiteter og i samfundet og satte spørgsmål ved autoriteter og traditionelle kønsroller."),
+("I hvilket år førte oliekrisen til bilfrie søndage i Danmark?",
+ "1973", ["1956", "1989", "2008"],
+ "Da olien blev knap og dyr i 1973, indførte regeringen bilfrie søndage. Krisen satte gang i arbejdet med at spare på energien."),
+("I hvilket år fik Grønland hjemmestyre?",
+ "1979", ["1953", "1966", "2009"],
+ "Grønland fik hjemmestyre i 1979 og overtog dermed mange opgaver. I 2009 blev hjemmestyret afløst af selvstyre."),
+]

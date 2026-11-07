@@ -240,7 +240,7 @@ export default function DenmarkMotorcycleTheoryLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">3. Know the motorcycle-only rules</h3>
               <p>
-                Helmets for everyone aged 5 or over, children under 135 cm only from 5 in a child seat, one extra child under 10 in a sidecar, no towing and no being towed, always signalling before a lane change on a motorway, and the A1, A2 and A limits of 125 cm³ and 11 kW, 35 kW and none.
+                Helmets for everyone aged 5 or over, children under 135 cm only from 5 in a child seat, one extra child under 10 in a sidecar, no towing and no being towed, always signalling before a lane change on a motorway, a flash of the headlight instead of the horn after dark, and the A1, A2 and A limits of 125 cm³ and 11 kW, 35 kW and none.
               </p>
             </div>
             <div>

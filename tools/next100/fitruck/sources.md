@@ -50,6 +50,9 @@ recognition items are written as situations in words (no images). Checked 2026-1
     one month before turning 21; the driving test after passing the theory test and turning 21.
     The theory test is organised by Ajovarma.
   - All lorry drivers in commercial transport must have valid professional competence.
+  - Re-read 2026-11-07 (review): the theory test also needs photo ID, the certificate of instruction
+    and examination from the driving school, institution or instructor, and a valid driving licence
+    permit; an approval document if under 21 without professional competence. Matches the landing.
   - A lorry licence is valid 5 years at a time; from 68, 2 years at a time.
 - Traficom, "Getting a driving licence for a bus", fetched 2026-11-06:
   https://traficom.fi/en/drivers-and-vehicles/driving-licenses/getting-driving-licence-bus
@@ -170,3 +173,20 @@ recognition items are written as situations in words (no images). Checked 2026-1
   already asked by `fitheory` (the 30 m level crossing rule, parking lights, the right-hand rule,
   tram stop passengers, stopped school buses, morning-after alcohol, crash-scene duty, warning
   triangle, tunnel stops, slow vehicles' gaps, crossovers).
+
+## Review pass (2026-11-07)
+- Re-checked against the Finlex consolidated Act 729/2018 (fetched 2026-11-07): 61 § two right lanes,
+  95 § child restraints (under 15, bus driver excepted), 105 § 5.0 / 3.0 mm, 108 § nose load at most
+  10 % or 1,000 kg (the smaller), 141 § 30 % overload, 142 § bus seats only in school transport,
+  143 § sign, 148 § load-area passengers (two years' truck experience for festive runs), 150-151 §
+  coupling and ABS over 22 m. Annex 5.1 speeds (truck 80; bus 80 or 100) confirmed by search.
+- Reg. 561/2006 as amended: exceeding to reach home or base is up to 1 hour, or up to 2 hours after
+  a 30-minute break for a regular weekly rest (Art. 12); ferry rest interrupted at most twice, 1 hour
+  in total (Art. 9). Reg. 165/2014 Art. 37(2): while the tachograph is faulty the driver marks
+  activities on the printout or a temporary sheet.
+- Items rewritten to avoid repeating facts and answers in fimoto, romania-cpi, hungary-gki,
+  malta-driver-cpc, nz-heavy, k53 code 3, uk-lgv, portugal-imt and spain-dgt: HRS-005, -013, -018,
+  TAC-001, -009, VEH-006, -013, BRK-001, -006, -007, -008, -021, ROD-016, -017, -018, -019, SAF-016,
+  RTE-010. HRS-017 distractor fixed (1 hour without a break is also lawful). New facts: AdBlue
+  freezes at about -11 C and its tank and lines are heated; multi-circuit protection valve; a
+  retarder brakes only the drive axle (risk on ice); low W-grade oil for cold starts.

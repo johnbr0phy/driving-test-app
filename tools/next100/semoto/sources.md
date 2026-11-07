@@ -29,6 +29,12 @@ unless noted.
 - A passed knowledge test for A is valid one year (landing only, never in the bank).
 - Hazard and photo questions on the real test are not modelled; the landing says so.
 
+Re-checked by the reviewer 2026-11-07: Trafikverket's page (70 questions, 5 testfrågor, max 65,
+52 to pass, 50 minutes, Swedish audio, interpreter or oral test on application, risk training
+before the test, a passed A test valid one year), trafikförordningen 3:69-71, 3:76, 4:6 b and
+4:15 a, and Transportstyrelsen's A page (practice ages 23, 19 år och 6 månader with 1,5 years of
+A2, 17 år och 6 månader only at a driving school; licence at 24, or 20 after two years of A2).
+
 ## Licence rules (Transportstyrelsen, read 2026-11-06)
 - Overview: https://www.transportstyrelsen.se/sv/vagtrafik/korkort/ta-korkort/motorcykel/
   A1: högst 125 cm³, högst 11 kW, högst 0,1 kW/kg. A2: högst 35 kW, högst 0,2 kW/kg, not derived

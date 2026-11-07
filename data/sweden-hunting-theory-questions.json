@@ -277,7 +277,7 @@
     "optionD": "Svart svansspets",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Hermelinen har svart svansspets året runt, även i vit vinterpäls. Vesslan är mindre, har kort svans utan svart spets."
+    "explanation": "Hermelinen har svart svansspets året runt, även i vit vinterpäls. Vesslan är mindre och har kort svans utan svart spets."
   },
   {
     "type": "SEJAKT",
@@ -692,12 +692,12 @@
     "category": "sejkLag",
     "question": "Får du ta med ett skjutvapen när du kör snöskoter i terrängen?",
     "optionA": "Ja, om det är oladdat",
-    "optionB": "Nej, inte utan undantag",
+    "optionB": "Nej, bara med särskilt undantag",
     "optionC": "Ja, om det ligger i fodral",
     "optionD": "Ja, under jakttid",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Skjutvapen får inte medföras vid färd med motordrivet fordon i terräng enligt 22 § jaktförordningen. Länsstyrelsen kan medge undantag."
+    "explanation": "Enligt 22 § jaktförordningen får skjutvapen inte medföras vid färd med motordrivet fordon i terräng, oavsett om vapnet är oladdat eller ligger i fodral. Vissa yrkesgrupper är undantagna, och länsstyrelsen kan medge undantag enligt 23 §."
   },
   {
     "type": "SEJAKT",
@@ -802,14 +802,14 @@
     "state": "ALL",
     "questionId": "SEJAKT-LAG-022",
     "category": "sejkLag",
-    "question": "Under timmen efter solnedgången, hur får rådjur jagas?",
+    "question": "Hur får rådjur jagas under timmen efter solens nedgång?",
     "optionA": "Bara med drivande hund",
     "optionB": "Bara smyg- eller vaktjakt",
     "optionC": "Bara med hagelgevär och hund",
     "optionD": "Inte alls efter solnedgång",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Rådjur, älg, hjort, lo, varg och järv får jagas till en timme efter solnedgången, men den sista timmen bara som smyg- eller vaktjakt."
+    "explanation": "Enligt 9 § jaktförordningen får rådjur, älg, hjort, lo, varg och järv jagas till och med en timme efter solens nedgång, men under den timmen bara som smyg- eller vaktjakt."
   },
   {
     "type": "SEJAKT",
@@ -1058,7 +1058,7 @@
     "optionA": "En garanti mot vådaskott",
     "optionB": "Ett skydd mot fel ammunition",
     "optionC": "En spärr som låser pipan",
-    "optionD": "En spärr som kan svikta",
+    "optionD": "En spärr som kan fallera",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "Säkringen blockerar avfyringen mekaniskt, men den kan gå sönder eller slås av. Den ersätter aldrig säker vapenhantering."
@@ -1446,7 +1446,7 @@
     "state": "ALL",
     "questionId": "SEJAKT-VAP-002",
     "category": "sejkVapen",
-    "question": "Vilken är den lägsta klass av kulpatron du får använda på rådjur?",
+    "question": "Vilken är den svagaste klassen av kulpatron som du får använda på rådjur?",
     "optionA": "Klass 1",
     "optionB": "Klass 2",
     "optionC": "Klass 3",
@@ -1460,7 +1460,7 @@
     "state": "ALL",
     "questionId": "SEJAKT-VAP-003",
     "category": "sejkVapen",
-    "question": "Vilken är den lägsta klass av kulpatron du får använda på rödräv ovan jord?",
+    "question": "Vilken är den svagaste klassen av kulpatron som du får använda på rödräv ovan jord?",
     "optionA": "Klass 1",
     "optionB": "Klass 2",
     "optionC": "Klass 3",
@@ -1658,12 +1658,12 @@
     "category": "sejkVapen",
     "question": "Vid jakt på vilken art får du använda värmekamera i nära anslutning till vapnet?",
     "optionA": "Vildsvin",
-    "optionB": "Älg",
+    "optionB": "Skogshare",
     "optionC": "Rödräv",
     "optionD": "Gräsand",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Elektronisk bildförstärkare, värmekamera och rörlig belysning får användas vid jakt på vildsvin. Termiska sikten bara i öppen terräng eller vid åtel."
+    "explanation": "Enligt NFS 2023:8 får elektronisk bildförstärkare, värmekamera och rörlig belysning användas i nära anslutning till vapnet vid jakt på vildsvin. Termiskt sikte får då bara användas i öppen terräng eller vid åtel."
   },
   {
     "type": "SEJAKT",
@@ -2007,13 +2007,13 @@
     "questionId": "SEJAKT-ETI-012",
     "category": "sejkEtik",
     "question": "Vid jakt på vilken fågel måste du ha med dig en hund som apporterar eller markerar?",
-    "optionA": "Ripa i dagsljus",
-    "optionB": "Orre i dagsljus",
-    "optionC": "Kråka i dagsljus",
+    "optionA": "Ripa",
+    "optionB": "Orre",
+    "optionC": "Kråka",
     "optionD": "Änder",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Vid jakt på ringduva, gäss och änder ska en apporterande eller markerande hund medföras, med vissa undantag som jakt med vettar vid havskust."
+    "explanation": "Enligt 17 § jaktförordningen ska en hund som kan apportera eller markera nedskjuten fågel medföras vid jakt efter ringduva, gäss eller änder."
   },
   {
     "type": "SEJAKT",
@@ -2111,7 +2111,7 @@
     "optionD": "Att jägaren saknade hund",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Vid bedömningen beaktas bland annat om brottet avsåg hotat eller sällsynt vilt, skedde i stor omfattning eller med motorfordon."
+    "explanation": "Enligt 44 § jaktlagen beaktas särskilt om brottet avsåg hotat, sällsynt eller annars särskilt skyddsvärt vilt, skedde vanemässigt eller i större omfattning, med otillåten hjälp av motorfordon eller med en särskilt plågsam metod."
   },
   {
     "type": "SEJAKT",

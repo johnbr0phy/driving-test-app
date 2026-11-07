@@ -1597,7 +1597,7 @@
         4
       ],
       "lockedOrder": true,
-      "explanation": "Även tillsammans kan $a$ och $b$ vara till exempel 1 och 9 (då är 9 störst) eller 3 och 7 (då är 7 störst). Det går inte att avgöra."
+      "explanation": "Tillsammans vet vi att $a$ eller $b$ är störst: talen är olika, så ett av dem är minst 7 och alltså större än $c = 6$. Men $a = 9$, $b = 1$ och $a = 1$, $b = 9$ uppfyller båda påståendena, så det går inte att avgöra vilket."
     },
     {
       "id": "SEHP-T1-K-28",
@@ -3012,18 +3012,18 @@
       "skill": "Matematisk problemlösning",
       "difficulty": 3,
       "format": "single",
-      "stem": "En cyklist cyklar en sträcka med medelhastigheten 60 km/h och samma sträcka tillbaka med 40 km/h. Vilken är medelhastigheten för hela resan?",
+      "stem": "En bil kör en sträcka med medelhastigheten 90 km/h och samma sträcka tillbaka med 60 km/h. Vilken är medelhastigheten för hela resan?",
       "options": [
-        "45 km/h",
-        "48 km/h",
-        "50 km/h",
-        "52 km/h"
+        "72 km/h",
+        "75 km/h",
+        "78 km/h",
+        "84 km/h"
       ],
       "correct": [
-        1
+        0
       ],
       "lockedOrder": true,
-      "explanation": "Säg att sträckan är 120 km. Dit tar 2 h och hem 3 h, alltså 240 km på 5 h, 48 km/h. Medelvärdet 50 km/h blir fel eftersom mer tid går åt till den långsamma delen."
+      "explanation": "Säg att sträckan är 180 km. Dit tar 2 h och hem 3 h, alltså 360 km på 5 h, 72 km/h. Medelvärdet 75 km/h blir fel eftersom mer tid går åt till den långsamma delen."
     },
     {
       "id": "SEHP-T2-K-13",
@@ -3608,7 +3608,7 @@
       "correct": [
         0
       ],
-      "explanation": "Alby ökade med $\\frac{3\\,000}{12\\,000} = 25$ %, Cedertorp med 20 % och Dalvik med 10 %. Bergsjö minskade. Dalvik ökade mest i antal men inte i procent."
+      "explanation": "Alby ökade med $\\frac{3\\,000}{12\\,000} = 25$ %, Cedertorp med 20 % och Dalvik med 10 %. Bergsjö minskade. Alby ökade också mest i antal, 3 000 mot Dalviks 2 500."
     },
     {
       "id": "SEHP-T2-K-39",
@@ -3654,7 +3654,7 @@
         2
       ],
       "lockedOrder": true,
-      "explanation": "2015: $12\\,000 + 40\\,000 + 8\\,000 + 25\\,000 = 85\\,000$. 2025: $15\\,000 + 38\\,000 + 9\\,600 + 27\\,500 = 90\\,100$. Skillnaden är 5 100. 7 100 får den som glömmer att Bergsjö minskade."
+      "explanation": "2015: $12\\,000 + 40\\,000 + 8\\,000 + 25\\,000 = 85\\,000$. 2025: $15\\,000 + 38\\,000 + 9\\,600 + 27\\,500 = 90\\,100$. Skillnaden är 5 100. 7 100 får den som bara räknar med de tre kommuner som växte och hoppar över Bergsjö."
     },
     {
       "id": "SEHP-D-V-01",
@@ -4164,17 +4164,17 @@
       "skill": "Meningskomplettering",
       "difficulty": 2,
       "format": "single",
-      "stem": "Kommunen valde att ___ beslutet tills fler remissvar hade kommit in, för att inte ___ frågan.\n\nVilka ord passar bäst i luckorna?",
+      "stem": "Kommunen valde att ___ beslutet tills fler remissvar hade kommit in, för att inte riskera ett ___ avgörande.\n\nVilka ord passar bäst i luckorna?",
       "options": [
-        "tidigarelägga ... försena",
-        "skjuta upp ... förhasta",
-        "skjuta upp ... utreda",
-        "upphäva ... avgöra"
+        "skjuta upp ... genomtänkt",
+        "påskynda ... välgrundat",
+        "tidigarelägga ... försenat",
+        "skjuta upp ... förhastat"
       ],
       "correct": [
-        1
+        3
       ],
-      "explanation": "Den som väntar på fler svar skjuter upp beslutet för att inte förhasta sig. Att inte utreda frågan går emot skälet att vänta."
+      "explanation": "Den som väntar på fler svar skjuter upp beslutet för att inte fatta det förhastat. Ett genomtänkt avgörande är just det man vill nå genom att vänta, inte något man riskerar."
     },
     {
       "id": "SEHP-D-V-25",
@@ -4782,7 +4782,7 @@
       "skill": "Kvantitativa resonemang",
       "difficulty": 2,
       "format": "single",
-      "stem": "Hur stor är medelinkomsten i en grupp?\n\n(1) Gruppens sammanlagda månadsinkomst är 384 000 kr, och gruppen har 12 personer.\n\n(2) Medianinkomsten i gruppen är 30 000 kr i månaden.\n\nTillräcklig information för lösningen erhålls:",
+      "stem": "Hur stor är medelinkomsten per månad i en grupp?\n\n(1) Gruppens sammanlagda månadsinkomst är 384 000 kr, och gruppen har 12 personer.\n\n(2) Medianinkomsten i gruppen är 30 000 kr i månaden.\n\nTillräcklig information för lösningen erhålls:",
       "options": [
         "i (1) men ej i (2)",
         "i (2) men ej i (1)",

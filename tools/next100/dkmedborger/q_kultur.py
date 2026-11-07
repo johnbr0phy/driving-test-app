@@ -8,7 +8,7 @@ Q = [
  "Møder om demokrati", ["Fakkeloptog for kongen", "Store julefrokoster", "Fyrværkeri ved midnat"],
  "Grundlovsdag er ikke en officiel fridag, men mange offentlige kontorer har lukket, og der holdes grundlovsmøder."),
 ("Hvad er 1. maj kendt som?",
- "Arbejdernes festdag", ["Kongens fødselsdag", "Befrielsesdagen", "Flagets fødselsdag"],
+ "Arbejdernes kampdag", ["Kongens fødselsdag", "Befrielsesdagen", "Flagets fødselsdag"],
  "1. maj har siden 1889 været arbejdernes internationale demonstrations- og festdag og arrangeres af fagforeninger og politiske organisationer."),
 ("Hvad markerer kristne i påsken?",
  "Jesu død og opstandelse", ["Jesu fødsel i Betlehem", "Helligåndens komme", "Jesu dåb i Jordan"],

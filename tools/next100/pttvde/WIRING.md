@@ -303,3 +303,13 @@ the platform decided for `detheorie`):
 6. **Teacher-led.** Proposed, since the exam closes a compulsory course; drop if unwanted.
 7. **Register.** Questions and landing in the formal third person ("Deve parar"), like `ptimt`'s
    Portuguese pages.
+
+## Reviewer pass (2026-11-07)
+
+Every item re-read against the republished Lei 45/2018 (Lei 59/2026 PDF, Diário da República) and
+the PGDL consolidated Código da Estrada. 18 items changed in the sources, ids and count unchanged,
+validator PASS (`--lang pt`, pools 42/26/34/34/16/26/22). No shared-file block above changes.
+Landing: "até 10 anos" corrected to "menos de 10 anos (até 12 se forem elétricos)", and the claim
+that every explanation cites an article softened. The IMT question list for the TVDE final
+assessment is confirmed on the IMT "perguntas de exame" page. 60 minutes and the 10-working-day
+retake remain press-only and stay labelled so.

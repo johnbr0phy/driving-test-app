@@ -31,7 +31,7 @@ Q = [
 ("Hvad hedder dagen, hvor unge indkaldes til test og helbredsundersøgelse i forbindelse med værnepligten?",
  "Forsvarets Dag", ["Grundlovsdag", "Valgdagen", "Arbejdernes kampdag"],
  "På Forsvarets Dag vurderes det, om de unge er egnede til militærtjeneste."),
-("Hvad kan en værnepligtig gøre, hvis han af samvittighedsgrunde ikke vil gøre militærtjeneste?",
+("Hvad kan en værnepligtig gøre, hvis han eller hun af samvittighedsgrunde ikke vil gøre militærtjeneste?",
  "Blive militærnægter", ["Betale sig fri", "Flytte til Grønland", "Melde sig ind i et parti"],
  "Militærnægtere aftjener i stedet deres pligt ved fx at arbejde i offentlige institutioner eller nødhjælpsorganisationer."),
 ("Hvordan bliver man medlem af folkekirken?",

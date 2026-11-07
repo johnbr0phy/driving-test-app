@@ -2510,6 +2510,62 @@
     --brand-gradient-to: 266 50% 92%;
   }
 
+  /* German motorcycle theory test (Klassen A, A1, A2) theme */
+  [data-theme="demotorrad"] {
+    --brand: 300 55% 32%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 300 50% 96%;
+    --brand-hover: 300 55% 27%;
+    --brand-dark: 300 55% 24%;
+    --brand-darker: 300 55% 18%;
+    --brand-muted: 300 30% 65%;
+    --brand-border: 300 35% 80%;
+    --brand-border-light: 300 40% 90%;
+    --brand-gradient-to: 300 60% 93%;
+  }
+
+  /* German trainer aptitude exam (AEVO) theme */
+  [data-theme="deaevo"] {
+    --brand: 28 20% 28%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 28 30% 96%;
+    --brand-hover: 28 20% 23%;
+    --brand-dark: 28 20% 20%;
+    --brand-darker: 28 20% 14%;
+    --brand-muted: 28 15% 62%;
+    --brand-border: 28 18% 78%;
+    --brand-border-light: 28 18% 88%;
+    --brand-gradient-to: 28 45% 93%;
+  }
+
+  /* German security guard competence exam (Sachkundeprüfung § 34a GewO) theme */
+  [data-theme="de34a"] {
+    --brand: 258 35% 28%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 258 40% 96%;
+    --brand-hover: 258 35% 23%;
+    --brand-dark: 258 35% 20%;
+    --brand-darker: 258 35% 14%;
+    --brand-muted: 258 20% 62%;
+    --brand-border: 258 25% 78%;
+    --brand-border-light: 258 30% 88%;
+    --brand-gradient-to: 258 45% 92%;
+  }
+
+  /* German Heilpraktiker exam theme (142 25% 30% clashed with esguardia) */
+  [data-theme="deheilpr"] {
+    --brand: 144 20% 38%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 144 30% 96%;
+    --brand-hover: 144 20% 33%;
+    --brand-dark: 144 20% 30%;
+    --brand-darker: 144 20% 22%;
+    --brand-muted: 144 15% 65%;
+    --brand-border: 144 18% 80%;
+    --brand-border-light: 144 20% 90%;
+    --brand-gradient-to: 144 35% 92%;
+  }
+
   /* SBI PO theme: bank blue (v2 exam; matches lib/v2/exams/sbipo.ts theme) */
   [data-theme="sbipo"] {
     --brand: 212 70% 46%;
@@ -6204,6 +6260,54 @@
     --brand-muted: 266 25% 45%;
     --brand-dark: 266 60% 65%;
     --brand-darker: 266 60% 78%;
+  }
+
+  .dark [data-theme="demotorrad"] {
+    --brand: 300 55% 48.5%;
+    --brand-hover: 300 55% 40.5%;
+    --brand-light: 300 45% 13%;
+    --brand-gradient-to: 300 40% 11%;
+    --brand-border-light: 300 35% 24%;
+    --brand-border: 300 35% 34%;
+    --brand-muted: 300 30% 45%;
+    --brand-dark: 300 55% 65%;
+    --brand-darker: 300 55% 78%;
+  }
+
+  .dark [data-theme="deaevo"] {
+    --brand: 28 20% 44.7%;
+    --brand-hover: 28 20% 36.7%;
+    --brand-light: 28 30% 13%;
+    --brand-gradient-to: 28 40% 11%;
+    --brand-border-light: 28 18% 24%;
+    --brand-border: 28 18% 34%;
+    --brand-muted: 28 15% 45%;
+    --brand-dark: 28 20% 65%;
+    --brand-darker: 28 20% 78%;
+  }
+
+  .dark [data-theme="de34a"] {
+    --brand: 258 35% 50%;
+    --brand-hover: 258 35% 42%;
+    --brand-light: 258 40% 13%;
+    --brand-gradient-to: 258 40% 11%;
+    --brand-border-light: 258 30% 24%;
+    --brand-border: 258 25% 34%;
+    --brand-muted: 258 20% 45%;
+    --brand-dark: 258 35% 65%;
+    --brand-darker: 258 35% 78%;
+  }
+
+  .dark [data-theme="deheilpr"] {
+    --brand: 144 20% 41.2%;
+    --brand-hover: 144 20% 33.2%;
+    --brand-light: 144 30% 13%;
+    --brand-gradient-to: 144 35% 11%;
+    --brand-border-light: 144 20% 24%;
+    --brand-border: 144 18% 34%;
+    --brand-muted: 144 15% 45%;
+    --brand-dark: 144 20% 65%;
+    --brand-darker: 144 20% 78%;
   }
 
   .dark [data-theme="sbipo"] {

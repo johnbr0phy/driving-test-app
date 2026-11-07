@@ -1,0 +1,35 @@
+{
+  "id": "mtguard",
+  "stateCode": "MTGUARD",
+  "idBase": 26100,
+  "prefix": "MTPG-",
+  "slug": "/malta-private-guard",
+  "landingPath": "/malta-private-guard-licence-practice-test",
+  "dataFile": "data/malta-private-guard-questions.json",
+  "name": "Malta Private Guard Practice Test",
+  "shortName": "Malta private guard exam",
+  "examLabel": "Award in Private Security Guard Services assessment",
+  "fullName": "Malta Private Guard Licence Exam (Award in Private Security Guard Services)",
+  "icon": "badge",
+  "region": "MT",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 70,
+  "categories": [
+    {"key": "mtguardLaw", "label": "Private Guard Licensing & Cap. 389", "perTest": 6, "pool": 24, "segment": "LAW", "module": 1},
+    {"key": "mtguardPowers", "label": "Arrest, Force & Search Powers", "perTest": 8, "pool": 32, "segment": "POW", "module": 1},
+    {"key": "mtguardDuties", "label": "Duties, Legal Terms & Compliance", "perTest": 6, "pool": 24, "segment": "DUT", "module": 1},
+    {"key": "mtguardPeople", "label": "Communication, Conflict & Customer Care", "perTest": 6, "pool": 24, "segment": "PPL", "module": 1},
+    {"key": "mtguardRisk", "label": "Security Risk & Patrols", "perTest": 6, "pool": 24, "segment": "RSK", "module": 2},
+    {"key": "mtguardSurveillance", "label": "CCTV, Alarms, Access & Searches", "perTest": 6, "pool": 24, "segment": "SRV", "module": 2},
+    {"key": "mtguardFire", "label": "Fire Classes, Fire & Flood Drills", "perTest": 6, "pool": 24, "segment": "FIR", "module": 2},
+    {"key": "mtguardIncidents", "label": "Bomb Threats, Investigations & Reports", "perTest": 6, "pool": 24, "segment": "INC", "module": 2}
+  ],
+  "notes": "Jobsplus's Award in Private Security Guard Services (MFHEA MQF Level 2, 4 ECTS, June 2025 course sheet): 40 hours in two modules of 20 hours, each ending with a 1-hour written assessment (Section A true or false, Section B multiple choice, Section C short answers), pass mark 45% per module. Providers approved by the Commissioner of Police (Cap. 389 art. 23) write their own papers, so no fixed count exists. Tigertest models the objective part as four 50-question mock tests, 26 Module 1 + 24 Module 2 per test, with 70% as Tigertest's readiness line. True or false items are written as four-option items; short answers are not modelled. Two content sets per module, sets first, then tests: 8 dashboard steps.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 26101, "name": "Module 1: Licensing, Law & Powers", "categories": ["mtguardLaw", "mtguardPowers"], "size": 56},
+    {"setNumber": 2, "id": 26102, "name": "Module 1: Duties & People Skills", "categories": ["mtguardDuties", "mtguardPeople"], "size": 48},
+    {"setNumber": 3, "id": 26103, "name": "Module 2: Risk, Patrols & Surveillance", "categories": ["mtguardRisk", "mtguardSurveillance"], "size": 48},
+    {"setNumber": 4, "id": 26104, "name": "Module 2: Fire, Floods, Threats & Reports", "categories": ["mtguardFire", "mtguardIncidents"], "size": 48}
+  ]
+}

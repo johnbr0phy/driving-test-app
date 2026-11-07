@@ -3,7 +3,9 @@
 All 200 questions are original, written directly in Finnish from the laws below and the
 published topic list. Suomen riistakeskus keeps its exam questions and picture booklet
 confidential and forbids using them as training material; none were seen or copied, and no
-commercial quiz app's items were used. Species are described in words. Checked 2026-11-06.
+commercial quiz app's items were used. Species are described in words. Checked 2026-11-06; format re-read from the 2026 instruction PDF
+and law facts (14 vrk, 39 cm, puoli tuntia, 1 000 ha, 7 vrk, 37 § as amended from 1.9.2026, 48 §,
+metsästysasetus 5 a, 7, 9, 11, 16, 16 a, 17, 20, 22 §) re-checked against Finlex on 2026-11-07.
 
 ## Exam format (confirmed)
 - Suomen riistakeskus, "Ohje: metsästäjätutkinto" to the riistanhoitoyhdistykset, dated

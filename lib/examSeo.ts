@@ -106,7 +106,9 @@ export function examLandingAlternates(examId: string): Record<string, string> {
     if (!tr || lang === base) continue;
     const url = `${siteUrl}${tr.landingPath}`;
     translated[tr.locale ?? lang] = url;
-    if (countryTag && tr.locale?.endsWith(countryTag)) xDefault = url;
+    // Only an English-base exam hands x-default to its own country's translation (Spain's es-ES);
+    // a native exam keeps it on its base landing (detheorie's en-DE is not x-default).
+    if (countryTag && base === "en" && tr.locale?.endsWith(countryTag)) xDefault = url;
   }
   return { [baseKey]: baseUrl, ...translated, "x-default": xDefault };
 }

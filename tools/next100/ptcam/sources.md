@@ -80,3 +80,14 @@ are not modelled.
   (tyre pressure, 112, first thing to say on 112, recovery position) were replaced.
 - Original Portuguese items; no stem copied from `uklgv`, `ukpcv`, `iedttcv` or `cdl` (those are
   English; facts such as the drivers' hours limits are shared EU law, written fresh here).
+
+## Review pass (2026-11-07)
+
+- Format re-confirmed against the IMT PDF of the despacho of 21 October 2009
+  (https://www.imt-ip.pt/wp-content/uploads/Documents/DespachoIMTT_CAM_Exames.pdf): 60 questions,
+  four-option and/or direct answer, 2 hours, 0 to 100 equal weight, 60% to pass, admission within
+  two years of the course. Landing, FAQ and WIRING examFacts agree.
+- Rewritten as near-repeats of `ptimt`: EMG-001 (first thing at an accident), EMG-002 (triangle
+  30 m), EMG-003 (vest), EMG-023 (wet road distance), SAU-007 (alcohol leaves only with time),
+  SAU-008 (read the medicine leaflet). REG-011 (CAM validity, too close to a question about the
+  qualification itself) replaced with licence category D vs D1.

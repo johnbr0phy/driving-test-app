@@ -550,14 +550,14 @@
     "state": "ALL",
     "questionId": "FIHUNT-LAJ-040",
     "category": "fihnLaji",
-    "question": "Pienehkön hylkeen turkissa on vaaleita renkaita, ja se poikii lumipesään jäällä. Mikä laji?",
+    "question": "Itämeren pienehkön hylkeen turkissa on vaaleita renkaita, ja se poikii lumipesään jäällä. Mikä laji?",
     "optionA": "Halli",
     "optionB": "Kirjohylje",
     "optionC": "Saimaannorppa",
     "optionD": "Itämeren norppa",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Norpan tunnistaa rengaskuviosta. Kuuttipesä kaivetaan jään päälle kinostuneeseen lumeen."
+    "explanation": "Norpan tunnistaa rengaskuviosta. Kuuttipesä kaivetaan jään päälle kinostuneeseen lumeen. Saimaannorppa elää vain Saimaalla."
   },
   {
     "type": "FIHUNT",
@@ -567,7 +567,7 @@
     "question": "Lumessa on loikkajälki, jossa kaksi isoa takajalan jälkeä on peräkkäisten etujalan jälkien edessä. Kenen jälki?",
     "optionA": "Jäniksen",
     "optionB": "Oravan",
-    "optionC": "Rusakon",
+    "optionC": "Supikoiran",
     "optionD": "Näädän",
     "correctAnswer": "A",
     "correctIndex": 0,
@@ -1418,11 +1418,11 @@
     "state": "ALL",
     "questionId": "FIHUNT-TUR-014",
     "category": "fihnTurva",
-    "question": "Miten alkoholi kuuluu metsästykseen?",
-    "optionA": "Pieni määrä lämmittää",
-    "optionB": "Ei lainkaan jahdin aikana",
-    "optionC": "Vasta ajon puolivälissä",
-    "optionD": "Kodalla tauolla kohtuudella",
+    "question": "Miten alkoholiin suhtaudutaan metsästyksessä?",
+    "optionA": "Pieni määrä on sallittu",
+    "optionB": "Sitä ei käytetä jahdin aikana",
+    "optionC": "Vain tauolla kodalla",
+    "optionD": "Vasta saaliin kaaduttua",
     "correctAnswer": "B",
     "correctIndex": 1,
     "explanation": "Alkoholi heikentää arvostelukykyä ja reaktioita. Aseenkäsittely ja alkoholi eivät kuulu yhteen."
@@ -1873,7 +1873,7 @@
     "optionD": "35 mm",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Metsästysasetuksen 20 §: hirvieläimiin, villisikaan ja majavaan käytetään leikkaavaa kärkeä, jonka halkaisija on vähintään 22 millimetriä."
+    "explanation": "Metsästysasetuksen 20 §: metsäkauriiseen, peuroihin, mufloniin, villisikaan ja majavaan käytetään leikkaavaa kärkeä, jonka halkaisija on vähintään 22 millimetriä."
   },
   {
     "type": "FIHUNT",
@@ -2275,7 +2275,7 @@
     "question": "Mikä ääniväline on kielletty houkuttimena?",
     "optionA": "Suulla puhallettava pilli",
     "optionB": "Käsin soitettava kanalintupilli",
-    "optionC": "Sorsan ääntä matkiva suu",
+    "optionC": "Suulla matkittu sorsan ääni",
     "optionD": "Kaiuttimesta soiva nauhoite",
     "correctAnswer": "D",
     "correctIndex": 3,

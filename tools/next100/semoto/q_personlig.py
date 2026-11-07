@@ -35,7 +35,7 @@ Q = [
  "Balansen försämras", ["Motorcykeln drar mer bränsle", "Hjälmen skyddar då sämre", "Du hör motorn sämre"],
  "Att köra motorcykel kräver god balans, koordination och omdöme. Redan små mängder alkohol försämrar alla tre."),
 ("Du drack mycket alkohol kvällen innan. Hur är det på morgonen?",
- "Du kan vara påverkad än", ["Sömnen har gjort dig nykter", "Kaffe gör dig körbar", "En dusch räcker för att köra"],
+ "Du kan fortfarande vara påverkad", ["Sömnen har gjort dig nykter", "Kaffe gör dig körbar", "En dusch räcker för att köra"],
  "Kroppen bryter ned alkohol långsamt. Efter en blöt kväll kan du ha alkohol i blodet långt in på nästa dag."),
 ("Du börjar frysa och känna dig trött på en lång tur. Vad gör du?",
  "Stannar, värmer dig och vilar", ["Kör fortare för att komma fram", "Öppnar visiret för frisk luft", "Fortsätter tills du är framme"],

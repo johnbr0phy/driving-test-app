@@ -4,7 +4,7 @@ Q = [
 ("Como pode um passageiro contratar um serviço de TVDE?",
  "Só com reserva prévia na plataforma", ["Fazendo sinal ao carro na rua", "Ligando para o telemóvel do motorista", "Dirigindo-se a uma praça de táxi"],
  "O serviço de TVDE só pode ser contratado mediante subscrição e reserva prévias através de plataforma eletrónica (artigo 5.º, n.º 1)."),
-("Está parado num semáforo e uma pessoa pede-lhe boleia paga até à estação. Deve:",
+("Está parado num semáforo e uma pessoa pede-lhe, à janela, que a leve à estação. Deve:",
  "Recusar e indicar a aplicação", ["Levá-la e cobrar em dinheiro", "Levá-la se tiver a app aberta", "Levá-la se o destino for perto"],
  "Os veículos de TVDE não podem recolher passageiros na via pública mediante solicitação no local (artigo 5.º, n.º 6). O serviço tem de ser reservado na plataforma."),
 ("À espera do próximo pedido, pode estacionar numa praça de táxi do aeroporto?",

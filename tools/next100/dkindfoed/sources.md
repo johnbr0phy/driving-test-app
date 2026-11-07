@@ -1,12 +1,18 @@
 # Sources for `dkindfoed` (Indfødsretsprøven, Danish citizenship test, written in Danish)
 
-All 200 questions are original, written directly in Danish on the topics of SIRI's official
+All 320 questions are original, written directly in Danish on the topics of SIRI's official
 learning material (danske samfundsforhold, dansk kultur og historie) and on Danish law. Nothing
 was copied from the learning material's own wording, from a past test (SIRI publishes every
 past test with its answers), or from a commercial practice site or app. Checked 2026-11-06
 unless noted.
 
 ## Exam format (confirmed)
+- Re-checked 2026-11-07: Lex (https://lex.dk/indf%C3%B8dsretspr%C3%B8ve) still gives 45 questions
+  in 45 minutes, three options or yes/no, 35 learning material + 5 current affairs (six months) +
+  5 values, at least 36 right with at least 4 of 5 values, SIRI under the Ministry, twice a year
+  (May/June, November/December) at selected language centres, 27 May 2025: 3,470 of 5,959 passed.
+  UC+ Dansk (https://ucplusdansk.dk/en/dansk-og-vidensproever/indfoedsretsproeven/) still gives
+  45 multiple-choice questions, 36 to pass, next test 25 November 2026.
 - Lex (Den Store Danske), "Indfødsretsprøve", last changed 2025-10-28, read 2026-11-06:
   https://lex.dk/indf%C3%B8dsretspr%C3%B8ve
   - written test for applicants for Danish citizenship by law (indfødsret ved lov)
@@ -56,8 +62,10 @@ landing does not say.
 - Real questions have 3 options (some yes/no); Tigertest's have 4.
 - The split of the 35 across history, democracy, society and culture is Tigertest's: SIRI
   publishes no topic weights.
-- Five tests of 40 (200 items, every item in exactly one test), not eight: eight 40-question
-  tests would need 320 items.
+- Eight tests of 40 (320 items, every item in exactly one test), set up like uklitu, cacit and
+  aucit's eight real-length tests. The per-test split is 4/3/4/3/7/7/7/5 (history 14, Grundloven
+  and folkestyret 7, samfund 7, kultur 7, values 5). Training is six topic sets of at most 60,
+  so the dashboard has 6 + 8 = 14 steps.
 
 ## Content sources (law and reference, for facts in the bank)
 - Danmarks Riges Grundlov (5 June 1953): https://www.retsinformation.dk/eli/lta/1953/169
@@ -79,3 +87,30 @@ landing does not say.
   https://www.ft.dk
 - Folkeafstemningen om forsvarsforbeholdet 1 June 2022 (Folketinget):
   https://www.ft.dk/da/aktuelt/nyheder/2022/06/folkeafstemning
+
+## Facts added for the eight-test bank (2026-11-07)
+- Grundloven § 13 (kongen ansvarsfri), § 20 (fem sjettedele eller folkeafstemning), § 30
+  (valgbarhed), § 36 (folketingsåret første tirsdag i oktober), § 57 (immunitet), § 59-60
+  (Rigsretten), § 61 (ingen særdomstole), § 64 (dommere retter sig alene efter loven), § 70,
+  § 71, § 73, § 75 stk. 2: https://www.retsinformation.dk/eli/lta/1953/169
+- Folketingsvalgloven: 10 storkredse, 3 landsdele, 40 tillægsmandater: https://www.ft.dk/da/folkestyret/valg-og-afstemninger
+- Selvstyreloven § 20 (grønlandsk officielt sprog), Inatsisartut and Naalakkersuisut, Lagtinget:
+  https://www.retsinformation.dk/eli/lta/2009/473
+- CPR-loven (moving reported within five days): https://www.retsinformation.dk
+- Lex.dk articles on Guldhornene, Egtvedpigen, Skuldelevskibene, Valdemar Atterdag, Den sorte død,
+  Roskilde Domkirke, Kronborg, Saxo, Hedeby, Tycho Brahe, Ole Rømer, Kongeloven, Trankebar,
+  Thorvald Stauning, Påskekrisen, Genforeningen 1920, Storebæltsforbindelsen, Oliekrisen 1973,
+  Hjemmestyret 1979, Johannes V. Jensen, Pontoppidan, Nexø, Hammershøi, Eckersberg, Utzon,
+  Bournonville, Wegner, Babettes gæstebud, Gasolin', Ertholmene, Arresø, Gudenåen: https://lex.dk
+- Arveloven (children inherit equally): https://www.retsinformation.dk
+- Forskelsbehandlingsloven (sexual orientation, religion, age at work): https://www.retsinformation.dk
+
+## Review pass (2026-11-07)
+- Format re-checked by search: 45 questions, 45 minutes, 35 learning material + 5 current
+  affairs + 5 values, 36 to pass with at least 4 of 5 values (Lex; Kolding Sprogskole's
+  candidate information page, https://sprogskolen.kolding.dk/prover/indfodsretsprove-hvis-du-soger-dansk-pas/information-til-provedeltagere-om-indfodsretsproven).
+  Landing, FAQ and WIRING examFacts agree with this.
+- Nævninger: since the 2008 reform, nævningesager start in byretten and go to landsretten on
+  appeal (retsplejeloven); explanation of DKIND-GRL-055 corrected.
+- Equal inheritance: the year (1845 forordning or its 1857 amendment) could not be pinned down,
+  so DKIND-VAE-039 no longer names a year.

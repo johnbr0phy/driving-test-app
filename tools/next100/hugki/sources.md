@@ -166,3 +166,18 @@ GKI app, past paper or provider material was opened or copied. Checked 2026-11-0
   twelve near-repeats (trailer breakaway, retarder use, low-air warning, anti-slip mats, the 0.8
   forward factor, curtains, axle overload, tanker surge, sleep apnoea, tunnel fire, violent
   passenger, triangle) were rewritten to other facts.
+- Second dedupe pass 2026-11-07 against hukresz, hukreszmoto, huelsoseg (now on disk), hubizt
+  (hu-biztositaskozvetito), iedttcv, uklgv, ukpcv and cdl: two more near-repeats rewritten
+  (HUGKI-EMG-002 burst front tyre, same fact as UKLGV-VEH-030, now a bus door warning lamp item;
+  HUGKI-HRS-009 reworded so it asks what compensation attaches to, not when it is due).
+- Review pass 2026-11-07 (reviewer): KRESZ 26. § (1) re-read on net.jogtar.hu: buses meeting the
+  separate requirements 100/70/50, "egyéb gépjármű" (trucks over 3,500 kg and other buses)
+  80/70/50, confirmed; 27. § (2) gap rule confirmed. Seven items rewritten: HUGKI-ECO-014 (cold
+  tyre check, same fact as HUKRM-CHK-002; now wide-base tyres), HUGKI-HLT-019 (cannabis the day
+  after, same fact as HUKRM-LIC-015; now rotating shifts), HUGKI-EMG-003 (hazard lights with the
+  triangle, the reverse of HUKRZ-SAF-016; now engine overheating), HUGKI-HLT-013 (smoking
+  "lowers alertness" was arguable; now asks the gas, carbon monoxide), HUGKI-BRK-003 (exhaust
+  brake, same fact as IEDTTCV-BRK-015; now retarder force and speed), HUGKI-BRK-006 (brake fade,
+  same fact as NZHV-BRK-009 and close to BRK-005; now worn linings), HUGKI-HRS-024 (loading as
+  working time, same as NZHV-WRK-007; now waiting known in advance as availability, Directive
+  2002/15/EC art. 3(b)).

@@ -28,8 +28,9 @@ import cnaEs from "./examTranslations/cna.es.json";
 import epa608Es from "./examTranslations/epa608.es.json";
 import esdgtEs from "./examTranslations/esdgt.es.json";
 import ptimtPt from "./examTranslations/ptimt.pt.json";
+import detheorieEn from "./examTranslations/detheorie.en.json";
 
-export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "bedriving" | "dkteori" | "setrafik" | "fitheory" | "grdriving" | "rodrpciv" | "hukresz" | "mttheory" | "detheorie" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "detheorie" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl";
+export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "bedriving" | "dkteori" | "setrafik" | "fitheory" | "grdriving" | "rodrpciv" | "hukresz" | "mttheory" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "detheorie" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -9293,7 +9294,10 @@ const detheorie: ExamConfig = {
     shortName: "German driving theory test",
     fullName: "German driving licence theory test, class B car (Führerschein Klasse B), in German",
   },
-  review: { de: "model" },
+  translations: {
+    en: examTranslation(detheorieEn),
+  },
+  review: { de: "model", en: "machine" },
   // Real test (FeV Anlage 7 Nr. 1.2, TÜV NORD, TÜV | DEKRA arge tp 21; checked 2026-11-01): class
   // B first licence, 30 questions (20 Grundstoff, 10 Zusatzstoff), 2 to 5 error points each (110),
   // pass with at most 10, two wrong 5-point questions fail; no fixed time, guide time 45 minutes;
@@ -9345,6 +9349,323 @@ const detheorie: ExamConfig = {
     ],
     sourceLine: "Nach StVO, StVZO und Fahrerlaubnis-Verordnung, Stand November 2026. Eigene Fragen, nicht aus dem amtlichen Fragenkatalog; 30 pro Testbogen, ohne Fehlerpunkte-Gewichtung.",
     analyticsKey: "detheorie",
+  },
+};
+
+const demotorrad: ExamConfig = {
+  id: "demotorrad",
+  stateCode: "DEMOTORRAD",
+  idBase: 22200,
+  slug: "/motorrad-theorie",
+  landingPath: "/de/motorrad-fuehrerschein-theorie-test",
+  name: "Motorrad Führerschein Theorie Test Klasse A, A1, A2",
+  shortName: "Motorrad Theorie",
+  examLabel: "Theorieprüfung Klasse A",
+  fullName: "Theoretische Fahrerlaubnisprüfung Klassen A, A1 und A2 (Motorrad)",
+  questionIdPrefix: "DEMOT-",
+  icon: "bike",
+  testCount: 7,
+  questionsPerTest: 30,
+  passPct: 93,
+  language: "de",
+  locale: "de-DE",
+  english: {
+    name: "Germany Motorcycle Theory Test (Class A, A1, A2)",
+    shortName: "German motorcycle theory test",
+    fullName: "German motorcycle licence theory test, classes A, A1 and A2 (Motorradführerschein), in German",
+  },
+  review: { de: "model" },
+  // Real test (FeV Anlage 7 Nr. 1.2, TÜV NORD; checked 2026-11-06): first licence A, A1, A2:
+  // 30 questions (20 Grundstoff, 10 Zusatzstoff), 2 to 5 error points each (110), pass with at
+  // most 10, two wrong 5-point questions fail; extension 20 questions, 72 points, 6 error points;
+  // no fixed time; German plus foreign languages (FeV now lists 14, TÜV | DEKRA still says 12);
+  // video, multi-answer and image-selection tasks. Tigertest: seven tests of 30, 15 Grundstoff
+  // (motorcycle perspective, 4/4/3/2/2) + 15 Zusatzstoff (5/3/3/2/2), pools exactly 7x, written
+  // in German, kept clear of detheorie's stems. Equal weight, so passPct 93 (28 of 30) is
+  // Tigertest's target. The split is Tigertest's own.
+  blueprint: {
+    demotGefahren: 4,
+    demotVerhalten: 4,
+    demotVorfahrt: 3,
+    demotZeichen: 2,
+    demotUmwelt: 2,
+    demotFahrtechnik: 5,
+    demotSchutz: 3,
+    demotSozius: 3,
+    demotKlassen: 2,
+    demotTechnik: 2,
+  },
+  // Five topic sets, not testSets(): 5 + 7 tests = 12 dashboard steps.
+  trainingSets: [
+    { setNumber: 1, id: 22201, name: "Fahrtechnik: Bremsen und Kurven", categories: ["demotFahrtechnik"], size: 35, weightLabel: "5 von 30 Fragen je Testbogen" },
+    { setNumber: 2, id: 22202, name: "Schutzkleidung und Technik", categories: ["demotSchutz", "demotTechnik"], size: 35, weightLabel: "5 von 30 Fragen je Testbogen" },
+    { setNumber: 3, id: 22203, name: "Beifahrer, Gruppe und Fahrerlaubnis", categories: ["demotSozius", "demotKlassen"], size: 35, weightLabel: "5 von 30 Fragen je Testbogen" },
+    { setNumber: 4, id: 22204, name: "Gefahrenlehre und Verhalten", categories: ["demotGefahren", "demotVerhalten"], size: 56, weightLabel: "8 von 30 Fragen je Testbogen" },
+    { setNumber: 5, id: 22205, name: "Vorfahrt, Zeichen, Umwelt und Eignung", categories: ["demotVorfahrt", "demotZeichen", "demotUmwelt"], size: 49, weightLabel: "7 von 30 Fragen je Testbogen" },
+  ],
+  categoryLabels: {
+    demotGefahren: "Gefahrenlehre",
+    demotVerhalten: "Verhalten im Verkehr",
+    demotVorfahrt: "Vorfahrt und Vorrang",
+    demotZeichen: "Verkehrszeichen",
+    demotUmwelt: "Umweltschutz und Eignung",
+    demotFahrtechnik: "Fahrtechnik: Bremsen und Kurven",
+    demotSchutz: "Schutzkleidung und Sichtbarkeit",
+    demotSozius: "Beifahrer, Gepäck und Gruppe",
+    demotKlassen: "Klassen A1, A2, A und B196",
+    demotTechnik: "Motorradtechnik und Wartung",
+  },
+  copy: {
+    guestPrompt: "um deinen Fortschritt für die Motorrad-Theorie zu speichern und jede falsche Antwort im Blick zu behalten",
+    trainingHeading: "Übungssets",
+    trainingSub: "Jedes Übungsset deckt ein Thema der Prüfung ab. Du bekommst sofort Rückmeldung, und falsch beantwortete Fragen kommen wieder, bis du sie sicher kannst.",
+    testsHeading: "Testbögen · 30 Fragen, höchstens 2 Fehler",
+    heroSubs: [
+      "Fünf Übungssets, sieben Testbögen. Fahrtechnik kommt am häufigsten dran.",
+      "Erst das Set meistern, dann den Testbogen.",
+      "Die Hälfte ist geschafft. Mach einen Testbogen.",
+      "Fehler wiederholen, dann noch einmal testen.",
+      "Alles grün. Melde dich zur Theorieprüfung an.",
+    ],
+    sourceLine: "Nach StVO, StVZO und Fahrerlaubnis-Verordnung, Stand November 2026. Eigene Fragen, nicht aus dem amtlichen Fragenkatalog; 30 pro Testbogen, halb Motorrad-Zusatzstoff, ohne Fehlerpunkte-Gewichtung.",
+    analyticsKey: "demotorrad",
+  },
+};
+
+const deaevo: ExamConfig = {
+  id: "deaevo",
+  stateCode: "DEAEVO",
+  idBase: 22000,
+  slug: "/ausbildereignung",
+  landingPath: "/de/aevo-pruefung-test",
+  name: "AEVO Prüfung Test",
+  shortName: "AEVO Prüfung",
+  examLabel: "Ausbildereignungsprüfung (AEVO)",
+  fullName: "Ausbildereignungsprüfung nach der Ausbilder-Eignungsverordnung (AEVO), schriftlicher Teil",
+  questionIdPrefix: "DEAEVO-",
+  icon: "graduation",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  language: "de",
+  locale: "de-DE",
+  english: {
+    name: "German Trainer Aptitude Exam (AEVO)",
+    shortName: "German AEVO trainer exam",
+    fullName: "German trainer aptitude exam (Ausbildereignungsprüfung, AEVO), written part, in German",
+  },
+  review: { de: "model" },
+  // Real exam (AEVO § 4, checked 2026-11-06; IHK Darmstadt 12/2024, IHK Bonn 11/2025, IHK
+  // Gießen-Friedberg, IHK tablet Handreichung 09/2025): written part of case-based tasks from all
+  // four Handlungsfelder, 3 hours; at the IHKs about 80 programmed tasks, number of correct
+  // answers stated, all-or-nothing, 100 points, 50 = ausreichend; practical part (presentation
+  // or demonstration up to 15 minutes plus Fachgespräch, together up to 30) not modelled.
+  // Categories follow AEVO § 3 and the BIBB Rahmenplan 2023 (HA 135, BAnz AT 14.07.2023 S2),
+  // whose course-time split 15/20/50/15 % sets the per-test weights 8/10/24/8. The split inside
+  // each Handlungsfeld is Tigertest's own. Four tests of 50, pools exactly 4x (200, all original,
+  // written in German). Single best answer of four, so passPct 70 (35 of 50) is Tigertest's target.
+  blueprint: {
+    aevoNutzen: 4,
+    aevoRahmen: 4,
+    aevoPlan: 3,
+    aevoVertrag: 4,
+    aevoRechte: 3,
+    aevoLernen: 7,
+    aevoMethoden: 6,
+    aevoBegleitung: 6,
+    aevoBeurteilung: 5,
+    aevoAbschluss: 8,
+  },
+  // Five sets by Handlungsfeld (HF 3 split in two to stay at most 60), not testSets():
+  // 5 + 4 tests = 9 dashboard steps.
+  trainingSets: [
+    { setNumber: 1, id: 22001, name: "Handlungsfeld 1: Voraussetzungen prüfen, Ausbildung planen", categories: ["aevoNutzen", "aevoRahmen"], size: 32, weightLabel: "8 von 50 Fragen je Testbogen" },
+    { setNumber: 2, id: 22002, name: "Handlungsfeld 2: Ausbildung vorbereiten, Azubis einstellen", categories: ["aevoPlan", "aevoVertrag", "aevoRechte"], size: 40, weightLabel: "10 von 50 Fragen je Testbogen" },
+    { setNumber: 3, id: 22003, name: "Handlungsfeld 3: Lernen und Methoden", categories: ["aevoLernen", "aevoMethoden"], size: 52, weightLabel: "13 von 50 Fragen je Testbogen" },
+    { setNumber: 4, id: 22004, name: "Handlungsfeld 3: Begleiten und Beurteilen", categories: ["aevoBegleitung", "aevoBeurteilung"], size: 44, weightLabel: "11 von 50 Fragen je Testbogen" },
+    { setNumber: 5, id: 22005, name: "Handlungsfeld 4: Ausbildung abschließen", categories: ["aevoAbschluss"], size: 32, weightLabel: "8 von 50 Fragen je Testbogen" },
+  ],
+  categoryLabels: {
+    aevoNutzen: "Nutzen der Ausbildung und duales System",
+    aevoRahmen: "Rechtsrahmen, Eignung und zuständige Stellen",
+    aevoPlan: "Ausbildungsplan, Mitbestimmung und Kooperation",
+    aevoVertrag: "Auswahl und Ausbildungsvertrag",
+    aevoRechte: "Rechte, Freistellung und Jugendarbeitsschutz",
+    aevoLernen: "Lernen, Motivation und Lernziele",
+    aevoMethoden: "Ausbildungsmethoden und Medien",
+    aevoBegleitung: "Probezeit, Lernbegleitung und Konflikte",
+    aevoBeurteilung: "Leistungen beurteilen",
+    aevoAbschluss: "Prüfung, Zeugnis und Perspektiven",
+  },
+  copy: {
+    guestPrompt: "um deinen Fortschritt für die AEVO-Prüfung zu speichern und jede falsche Antwort im Blick zu behalten",
+    trainingHeading: "Übungssets",
+    trainingSub: "Jedes Übungsset deckt ein Handlungsfeld der AEVO ab. Du bekommst sofort Rückmeldung, und falsch beantwortete Fragen kommen wieder, bis du sie sicher kannst.",
+    testsHeading: "Testbögen · 50 Fragen, 35 zum Bestehen",
+    heroSubs: [
+      "Fünf Übungssets, vier Testbögen. Handlungsfeld 3, Ausbildung durchführen, ist die Hälfte der Prüfung.",
+      "Erst das Set meistern, dann den Testbogen.",
+      "Die Hälfte ist geschafft. Mach einen Testbogen.",
+      "Fehler wiederholen, dann noch einmal testen.",
+      "Alles grün. Melde dich bei deiner Kammer zur Prüfung an.",
+    ],
+    sourceLine: "Nach AEVO, Rahmenplan 2023, BBiG, JArbSchG und BetrVG, Stand November 2026. Eigene Fragen mit je einer richtigen Antwort; der praktische Teil wird nicht nachgebildet.",
+    analyticsKey: "deaevo",
+  },
+};
+
+const de34a: ExamConfig = {
+  id: "de34a",
+  stateCode: "DE34A",
+  idBase: 22100,
+  slug: "/sachkunde-34a",
+  landingPath: "/de/sachkundepruefung-34a-test",
+  name: "Sachkundeprüfung 34a Test",
+  shortName: "Sachkunde 34a",
+  examLabel: "Sachkundeprüfung § 34a GewO",
+  fullName: "Sachkundeprüfung im Bewachungsgewerbe nach § 34a GewO (schriftlicher Teil)",
+  questionIdPrefix: "DE34A-",
+  icon: "shield",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 50,
+  language: "de",
+  locale: "de-DE",
+  english: {
+    name: "German Security Guard Competence Exam (§ 34a GewO)",
+    shortName: "German § 34a security exam",
+    fullName: "German security guard competence exam (Sachkundeprüfung im Bewachungsgewerbe, § 34a GewO), written part, in German",
+  },
+  review: { de: "model" },
+  // Real exam (§ 34a GewO, BewachV 2019, DIHK Rahmenplan from 1 June 2019, IHK Hannover page of
+  // 23.06.2026 and IHK Emden; checked 2026-11-06): written part 120 minutes, digital multiple
+  // choice, 82 tasks for 120 points (since 1 July 2025; 72 before), up to two correct answers per task,
+  // pass with 50 percent; oral part about 15 minutes, up to 5 candidates, pass with 50 percent.
+  // Categories are the Sachgebiete of § 7 BewachV with Anlage 2, split as in the DIHK
+  // Rahmenplan (1a/1b, 4a/4b). No official weights: the 6/6/4/7/9/3/4/7/4 split is Tigertest's.
+  // Four tests of 50, pools exactly 4x each count (200, all original, written in German).
+  // Single best answer of four, equal weight; passPct 50 is the real written mark.
+  blueprint: {
+    d34Oeffentlich: 6,
+    d34Gewerbe: 6,
+    d34Datenschutz: 4,
+    d34Bgb: 7,
+    d34Straf: 9,
+    d34Waffen: 3,
+    d34Uvv: 4,
+    d34Menschen: 7,
+    d34Technik: 4,
+  },
+  // Five topic sets, not testSets(): 5 + 4 tests = 9 dashboard steps.
+  trainingSets: [
+    { setNumber: 1, id: 22101, name: "Öffentliches Recht und Gewerberecht", categories: ["d34Oeffentlich", "d34Gewerbe"], size: 48, weightLabel: "12 von 50 Fragen je Testbogen" },
+    { setNumber: 2, id: 22102, name: "BGB und Datenschutz", categories: ["d34Bgb", "d34Datenschutz"], size: 44, weightLabel: "11 von 50 Fragen je Testbogen" },
+    { setNumber: 3, id: 22103, name: "Strafrecht, Strafverfahren und Waffen", categories: ["d34Straf", "d34Waffen"], size: 48, weightLabel: "12 von 50 Fragen je Testbogen" },
+    { setNumber: 4, id: 22104, name: "Umgang mit Menschen", categories: ["d34Menschen"], size: 28, weightLabel: "7 von 50 Fragen je Testbogen" },
+    { setNumber: 5, id: 22105, name: "Unfallverhütung und Sicherheitstechnik", categories: ["d34Uvv", "d34Technik"], size: 32, weightLabel: "8 von 50 Fragen je Testbogen" },
+  ],
+  categoryLabels: {
+    d34Oeffentlich: "Recht der öffentlichen Sicherheit und Ordnung",
+    d34Gewerbe: "Gewerberecht",
+    d34Datenschutz: "Datenschutzrecht",
+    d34Bgb: "Bürgerliches Gesetzbuch",
+    d34Straf: "Straf- und Strafverfahrensrecht",
+    d34Waffen: "Umgang mit Waffen",
+    d34Uvv: "Unfallverhütungsvorschrift Wach- und Sicherungsdienste",
+    d34Menschen: "Umgang mit Menschen",
+    d34Technik: "Grundzüge der Sicherheitstechnik",
+  },
+  copy: {
+    guestPrompt: "um deinen Fortschritt für die Sachkundeprüfung zu speichern und jede falsche Antwort im Blick zu behalten",
+    trainingHeading: "Übungssets",
+    trainingSub: "Jedes Übungsset deckt Sachgebiete der Prüfung ab. Du bekommst sofort Rückmeldung, und falsch beantwortete Fragen kommen wieder, bis du sie sicher kannst.",
+    testsHeading: "Testbögen · 50 Fragen, Bestehen ab 50 Prozent",
+    heroSubs: [
+      "Fünf Übungssets, vier Testbögen. Strafrecht, BGB und Umgang mit Menschen kommen am häufigsten dran.",
+      "Erst das Set meistern, dann den Testbogen.",
+      "Die Hälfte ist geschafft. Mach einen Testbogen.",
+      "Fehler wiederholen, dann noch einmal testen.",
+      "Alles grün. Melde dich bei deiner IHK zur Sachkundeprüfung an.",
+    ],
+    sourceLine: "Nach § 34a GewO, BewachV, BGB, StGB, StPO, WaffG, DSGVO und DGUV Vorschrift 23, Stand November 2026. Eigene Fragen nach dem DIHK-Rahmenplan, nicht aus einem amtlichen Aufgabensatz; ohne mündliche Prüfung.",
+    analyticsKey: "de34a",
+  },
+};
+
+const deheilpr: ExamConfig = {
+  id: "deheilpr",
+  stateCode: "DEHEILPR",
+  idBase: 22300,
+  slug: "/heilpraktiker-pruefung",
+  landingPath: "/de/heilpraktiker-pruefung-test",
+  name: "Heilpraktikerprüfung Test",
+  shortName: "Heilpraktikerprüfung",
+  examLabel: "Heilpraktikerüberprüfung, schriftlicher Teil",
+  fullName: "Heilpraktikerüberprüfung nach dem Heilpraktikergesetz, schriftlicher Teil (allgemeine Erlaubnis)",
+  questionIdPrefix: "DEHP-",
+  icon: "stethoscope",
+  testCount: 3,
+  questionsPerTest: 60,
+  passPct: 75,
+  language: "de",
+  locale: "de-DE",
+  english: {
+    name: "German Heilpraktiker Licensing Exam (written part)",
+    shortName: "German Heilpraktiker exam",
+    fullName: "German Heilpraktiker licensing exam (Heilpraktikerüberprüfung), written part for the general licence, in German",
+  },
+  review: { de: "model" },
+  // Real exam (Merkblätter LRA München 07/2025 and LRA Fürstenfeldbruck 09/2025, checked
+  // 2026-11-06): 60 multiple-choice questions in 120 minutes, at least 45 correct (75 %) to reach
+  // the oral and practical part under an Amtsarzt; content per the BMG Leitlinien of 7 Dec 2017.
+  // No official weights: the 7/7/5/7/5/7/6/6/4/6 split is Tigertest's, along the Leitlinien.
+  // Three real-length tests of 60 (pools 200, the last items of each pool training-only).
+  blueprint: {
+    dehpRecht: 7,
+    dehpInfekt: 7,
+    dehpHygiene: 5,
+    dehpHerz: 7,
+    dehpAtmung: 5,
+    dehpStoffwechsel: 7,
+    dehpBlut: 6,
+    dehpNerven: 6,
+    dehpBewegung: 4,
+    dehpNotfall: 6,
+  },
+  // Five topic sets, sets first then tests (like detheorie): 5 + 3 = 8 dashboard steps.
+  trainingSets: [
+    { setNumber: 1, id: 22301, name: "Recht und Infektionsschutz", categories: ["dehpRecht", "dehpInfekt"], size: 48, weightLabel: "14 von 60 Fragen je Probeprüfung" },
+    { setNumber: 2, id: 22302, name: "Hygiene, Untersuchung und Notfälle", categories: ["dehpHygiene", "dehpNotfall"], size: 36, weightLabel: "11 von 60 Fragen je Probeprüfung" },
+    { setNumber: 3, id: 22303, name: "Herz, Kreislauf und Atmung", categories: ["dehpHerz", "dehpAtmung"], size: 38, weightLabel: "12 von 60 Fragen je Probeprüfung" },
+    { setNumber: 4, id: 22304, name: "Stoffwechsel, Blut und Niere", categories: ["dehpStoffwechsel", "dehpBlut"], size: 42, weightLabel: "13 von 60 Fragen je Probeprüfung" },
+    { setNumber: 5, id: 22305, name: "Nerven, Psyche, Haut und Bewegung", categories: ["dehpNerven", "dehpBewegung"], size: 36, weightLabel: "10 von 60 Fragen je Probeprüfung" },
+  ],
+  categoryLabels: {
+    dehpRecht: "Berufs- und Gesetzeskunde",
+    dehpInfekt: "Infektionskrankheiten und Infektionsschutz",
+    dehpHygiene: "Hygiene, Untersuchung und Injektion",
+    dehpHerz: "Herz, Kreislauf und Gefäße",
+    dehpAtmung: "Atmung, Hals, Nase und Ohren",
+    dehpStoffwechsel: "Verdauung, Stoffwechsel und Hormone",
+    dehpBlut: "Blut, Immunsystem, Niere und Labor",
+    dehpNerven: "Nervensystem, Psyche und Sinnesorgane",
+    dehpBewegung: "Bewegungsapparat, Haut, Frauen- und Kinderheilkunde",
+    dehpNotfall: "Notfälle und Erste Hilfe",
+  },
+  copy: {
+    guestPrompt: "um deinen Fortschritt für die Heilpraktikerprüfung zu speichern und jede falsche Antwort im Blick zu behalten",
+    trainingHeading: "Übungssets",
+    trainingSub: "Jedes Übungsset deckt Themen der Leitlinien ab. Du bekommst sofort Rückmeldung, und falsch beantwortete Fragen kommen wieder, bis du sie sicher kannst.",
+    testsHeading: "Probeprüfungen · 60 Fragen, 45 zum Bestehen",
+    heroSubs: [
+      "Fünf Übungssets, drei Probeprüfungen. Recht und Infektionsschutz kommen in jeder Prüfung dran.",
+      "Erst die Sets meistern, dann die Probeprüfung.",
+      "Die Hälfte ist geschafft. Mach eine Probeprüfung mit 60 Fragen.",
+      "Fehler wiederholen, dann noch einmal testen.",
+      "Alles grün. Du bist bereit für den schriftlichen Teil.",
+    ],
+    sourceLine: "Nach Heilpraktikergesetz, Infektionsschutzgesetz und den BMG-Leitlinien von 2017, Stand November 2026. Eigene Fragen, nicht aus früheren Prüfungen; 60 pro Probeprüfung wie beim Gesundheitsamt.",
+    analyticsKey: "deheilpr",
   },
 };
 
@@ -14820,7 +15141,7 @@ const sgvl: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, nhie, cna, ptcb, phleb, ccma, cma, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, sfadmin, phr, cisa, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, bedriving, dkteori, setrafik, fitheory, grdriving, rodrpciv, hukresz, mttheory, detheorie, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, gulfrn, inrto, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, nhie, cna, ptcb, phleb, ccma, cma, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, sfadmin, phr, cisa, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, bedriving, dkteori, setrafik, fitheory, grdriving, rodrpciv, hukresz, mttheory, detheorie, demotorrad, deaevo, de34a, deheilpr, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, gulfrn, inrto, htl, cst, crcst];
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
 export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA, realestatePA, realestateIL, realestateOH, realestateGA, realestateNC, realestateMI, realestateVA, realestateWA, realestateAZ, realestateTN, realestateLA, insuranceNY, insurancePA, insuranceIL, insuranceOH, insuranceGA, insuranceNC, insuranceMI, insuranceNJ, insuranceVA, insuranceWA, pncNY, pncPA, pncIL, pncOH, pncGA, pncNC, pncMI, pncNJ, pncVA, pncWA];

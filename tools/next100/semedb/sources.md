@@ -61,3 +61,10 @@ partly from press reports; those are labelled.
   Riksdag (dated by the September 2026 election) are not asked.
 - The proposal to lower the age of criminal responsibility (2026) is not asked; neither is the
   age itself, since it may change.
+
+## Review (2026-11-07)
+Format re-checked by web search (hurbra.se 22 Oct 2026: 60 questions, 40 scored, 28 of 40 to pass;
+TV4): unchanged. Items rewritten to avoid unverified detail: the anhållan time limit (the 72-hour
+figure did not match the 48-hour request and 96-hour hearing rules; now asks who decides on
+anhållan), the belastningsregister (all convictions, not only serious ones), the island-count claim,
+the minority-language rights (only in förvaltningsområden), the first mosque (Göteborg 1976).

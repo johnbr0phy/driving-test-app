@@ -1,0 +1,36 @@
+{
+  "id": "grmoto",
+  "stateCode": "GRMOTO",
+  "idBase": 25300,
+  "prefix": "GRMOTO-",
+  "slug": "/greece-motorcycle-theory",
+  "landingPath": "/greece-motorcycle-theory-test",
+  "dataFile": "data/greece-motorcycle-questions.json",
+  "name": "Greece Motorcycle Theory Test Practice",
+  "shortName": "Greece motorcycle theory",
+  "examLabel": "Greek motorcycle theory test",
+  "fullName": "Greece motorcycle theory test (categories A1, A2 and A)",
+  "region": "GR",
+  "icon": "bike",
+  "testCount": 6,
+  "questionsPerTest": 30,
+  "passPct": 96,
+  "categories": [
+    {"key": "grmoLicence", "label": "Licences, Documents & Rider Conduct", "perTest": 3, "pool": 20, "segment": "LIC"},
+    {"key": "grmoGear", "label": "Helmets & Protective Gear", "perTest": 4, "pool": 26, "segment": "GEA"},
+    {"key": "grmoBike", "label": "Motorcycle Checks & Controls", "perTest": 3, "pool": 20, "segment": "BIK"},
+    {"key": "grmoControl", "label": "Braking, Cornering & Control", "perTest": 5, "pool": 32, "segment": "CTL"},
+    {"key": "grmoPosition", "label": "Road Position, Filtering & Overtaking", "perTest": 5, "pool": 32, "segment": "POS"},
+    {"key": "grmoJunctions", "label": "Junctions, Priority & Being Seen", "perTest": 4, "pool": 26, "segment": "JUN"},
+    {"key": "grmoPassenger", "label": "Passengers & Loads", "perTest": 2, "pool": 14, "segment": "PAS"},
+    {"key": "grmoHazards", "label": "Road Surfaces, Weather & Hazards", "perTest": 3, "pool": 20, "segment": "HAZ"},
+    {"key": "grmoRules", "label": "Highway Code Rules for Riders", "perTest": 1, "pool": 10, "segment": "RUL"}
+  ],
+  "notes": "Six real-length tests of 30 (6 x 30 = 180) like grdriving; pools are 6x each per-test count plus spares, 20 training-only items in all (the last items of each pool by ID). passPct 96 = ceil(0.96 * 30) = 29, the 29 of 30 pass guides report. Dashboard = 4 topic sets + 6 tests = 10 steps. No set exceeds 60. Lane: motorcycle-specific content; no general road sign items (those are grdriving's).",
+  "trainingSets": [
+    {"setNumber": 1, "id": 25301, "name": "Gear & the Machine", "categories": ["grmoGear", "grmoBike"], "size": 46},
+    {"setNumber": 2, "id": 25302, "name": "Control & Road Hazards", "categories": ["grmoControl", "grmoHazards"], "size": 52},
+    {"setNumber": 3, "id": 25303, "name": "Road Position & Junctions", "categories": ["grmoPosition", "grmoJunctions"], "size": 58},
+    {"setNumber": 4, "id": 25304, "name": "Licences, Passengers & the Code", "categories": ["grmoLicence", "grmoPassenger", "grmoRules"], "size": 44}
+  ]
+}

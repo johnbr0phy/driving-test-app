@@ -16,7 +16,7 @@ Q = [
  "Agerhønen lever kort og får store kuld, så bestanden fornyes hurtigt. Kronvildt, gæs og ederfugle lever længe og får få unger."),
 ("Hvorfor tåler en kronvildtbestand kun en lille afskydning i forhold til en harebestand?",
  "Det lever længe og får få unger", ["Det trækker ud af landet om vinteren", "Det yngler kun hvert femte år", "Det lever kun i vildtreservater"],
- "En hind får højst én kalv om året og lever mange år. Haren får flere kuld om året, så den tåler at miste en større andel."),
+ "En hind får som regel kun én kalv om året og lever mange år. Haren får flere kuld om året, så den tåler at miste en større andel."),
 ("Hvorfor kan regulering af ræv gavne en bestand af agerhøns?",
  "Ræven tager æg og rugende høner", ["Ræven æder agerhønsenes insektføde", "Ræven ødelægger læhegnene", "Ræven jager insekterne væk"],
  "Rugende høner og reder på jorden er sårbare over for ræv og andre rovdyr. Færre rovdyr i yngletiden kan give flere kyllinger."),

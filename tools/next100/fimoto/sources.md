@@ -146,3 +146,27 @@ stems: this bank keeps to rider-specific rules and avoids repeating its fact-and
   lane filtering between queues on multi-lane roads (no section addresses it, so only the 31 §
   single-lane rule is asked); B licence entitlements to tricycles; helmet standard numbers;
   the 2026 night ban (it is for 17-year-olds driving category B vehicles, so it is not asked here).
+
+## Dedupe pass (2026-11-07)
+Checked against `fitheory`, `fitruck`, `fihunt`, `fihygiene`, `moto`, `ukmoto` and `nzmoto` by stem
+similarity and key. Four items that repeated another bank's fact and answer (helmet dropped, lower
+gear downhill, front brake share, riding level with a car) were rewritten; the downhill item became
+a linked-brakes item because `fitruck` asks brake fade on descents.
+
+## Review pass (2026-11-07)
+- Re-read Traficom "Driving examination" (fetched 2026-11-07): A1, A2, A 20 (14) / 50 (43) / 5 (4),
+  30 minutes, oral test 60 minutes read in Finnish, Swedish or English, a passed theory test valid
+  one year. Landing, FAQ and the WIRING examFacts block match.
+- Re-read Road Traffic Act 729/2018 (Finlex open data, consolidated 2026-04-17): 10 § (convoys led
+  by a police or Border Guard vehicle with signals get a clear way; no road user may break into a
+  convoy, supervised group of children or procession), 11 § (trams get unobstructed passage),
+  21 §, 26 §, 36 §, 38 § 3 kohta (exception only for two-wheeled bicycles and mopeds), 56 §, 92 §,
+  104 § (1.0 mm), 105 § 4 kohta (motorcycles need winter tyres when conditions require),
+  106 § (studs on motorcycles November to March), 144 §, 153 §. All keys confirmed.
+- Following distance: Finnish guidance quoted from Liikenneturva in the press (moottori.fi,
+  mtvuutiset.fi) is 3 to 4 seconds on the open road, so the gap item now keys "At least three
+  seconds" (it keyed two).
+- Dedupe against fitheory, fitruck and the motorcycle banks of this wave (grmoto, mtmoto, ptmoto,
+  bemoto, hukreszmoto, dkmoto, nzmoto, ukmoto) and the EU car banks: 22 items that repeated another
+  bank's scenario and answer were rewritten (see the reviewer report); licence-category items keep
+  the EU-wide figures but with Finland-specific stems.

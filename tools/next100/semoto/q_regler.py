@@ -11,7 +11,7 @@ Q = [
  "Ja, om skyddet är lämpligt", ["Nej, aldrig", "Ja, men bara i tätort", "Ja, om föraren kör under 50 km/h"],
  "Trafikförordningen gör undantag för passagerare som inte fyllt sju år och använder annat lämpligt huvudskydd."),
 ("Var får du köra motorcykeln utan hjälm?",
- "Inom en bensinstation", ["På en gata med 30 km/h", "På en grusväg på landet", "På en gårdsgata"],
+ "Inne på en bensinstation", ["På en gata med 30 km/h", "På en grusväg på landet", "På en gårdsgata"],
  "Hjälmen behövs inte när fordonet står still eller vid färd inom parkeringsplats, parkeringshus, bensinstations- eller verkstadsområde."),
 ("Vilket ljus får du använda i dagsljus i stället för halvljus?",
  "Varselljus eller liknande", ["Inget ljus alls", "Bara helljuset", "Bara varningsblinkersen"],

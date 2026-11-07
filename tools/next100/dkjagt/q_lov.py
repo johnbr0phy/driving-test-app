@@ -96,7 +96,7 @@ Q = [
  "Jagttegnet skal medbringes sammen med fotolegitimation og vises til politiet, hvis de beder om det (lovens § 39)."),
 ("Du har ikke skudt noget vildt i hele jagtåret. Skal du alligevel indberette vildtudbytte?",
  "Ja, også et udbytte på 0", ["Nej, kun hvis du har skudt noget", "Nej, kun for hjortevildt", "Kun hvis politiet beder om det"],
- "Indberetningen gælder, selvom udbyttet har været 0, og skal ske senest 31. marts efter jagtåret."),
+ "Indberetningen gælder, selvom udbyttet har været 0, og skal ske digitalt senest 31. marts."),
 ("Hvilken periode dækker et jagtår?",
  "1. april til 31. marts", ["1. januar til 31. december", "1. september til 31. august", "1. juli til 30. juni"],
  "Jagttegnet gælder for et jagtår, der løber fra 1. april til 31. marts."),

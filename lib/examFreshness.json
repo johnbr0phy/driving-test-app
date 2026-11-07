@@ -75,6 +75,14 @@
       "source": "https://bmdv.bund.de/"
     },
     {
+      "exam": "demotorrad",
+      "date": "2027-01-01",
+      "kind": "law",
+      "what": "German driving licence reform (2027) changes the theory test, motorcycle classes included.",
+      "action": "Read the final rules and update questions, sets and the landing.",
+      "source": "https://bmdv.bund.de/"
+    },
+    {
       "exam": "itil",
       "date": "2027-12-31",
       "kind": "sunset",

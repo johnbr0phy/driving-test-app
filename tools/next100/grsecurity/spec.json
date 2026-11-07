@@ -1,0 +1,33 @@
+{
+  "id": "grsecurity",
+  "stateCode": "GRSECURITY",
+  "idBase": 25500,
+  "prefix": "GRSEC-",
+  "slug": "/pistopoiisi-idiotikis-asfaleias",
+  "landingPath": "/el/pistopoiisi-prosopikou-idiotikis-asfaleias",
+  "language": "el",
+  "locale": "el-GR",
+  "testCount": 8,
+  "questionsPerTest": 20,
+  "passPct": 70,
+  "bank": "data/gr-security-questions.json",
+  "categories": [
+    {"key": "grsecSector", "seg": "KLA", "pool": 20, "perTest": 2, "label": "Ο κλάδος, επικοινωνία και δεοντολογία"},
+    {"key": "grsecLaw", "seg": "NOM", "pool": 32, "perTest": 3, "label": "Νομοθεσία"},
+    {"key": "grsecOhs", "seg": "YAE", "pool": 20, "perTest": 2, "label": "Υγιεινή και ασφάλεια στην εργασία"},
+    {"key": "grsecFirstAid", "seg": "PRV", "pool": 24, "perTest": 2, "label": "Πρώτες βοήθειες"},
+    {"key": "grsecCrime", "seg": "EGK", "pool": 20, "perTest": 2, "label": "Έννοιες ασφαλείας και εγκληματικότητα"},
+    {"key": "grsecEquip", "seg": "EXO", "pool": 20, "perTest": 2, "label": "Αυτοπροστασία, εξοπλισμός και μέσα"},
+    {"key": "grsecDuties", "seg": "KTH", "pool": 28, "perTest": 3, "label": "Καθήκοντα στην πρόληψη του εγκλήματος"},
+    {"key": "grsecIncidents", "seg": "PER", "pool": 20, "perTest": 2, "label": "Διαχείριση περιστατικών και κρίσεων"},
+    {"key": "grsecFire", "seg": "PYR", "pool": 16, "perTest": 2, "label": "Πυροπροστασία και πυρασφάλεια"}
+  ],
+  "trainingSets": [
+    {"id": 25501, "categories": ["grsecSector", "grsecLaw"], "size": 52},
+    {"id": 25502, "categories": ["grsecOhs", "grsecFirstAid"], "size": 44},
+    {"id": 25503, "categories": ["grsecCrime", "grsecDuties"], "size": 48},
+    {"id": 25504, "categories": ["grsecEquip", "grsecIncidents", "grsecFire"], "size": 56}
+  ],
+  "theme": "240 50% 22%",
+  "borrowedTiger": "security"
+}

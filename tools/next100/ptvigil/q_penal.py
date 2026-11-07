@@ -32,7 +32,7 @@ Q = [
  "A legítima defesa é o facto praticado como meio necessário para repelir a agressão. Se houver excesso dos meios, o facto é ilícito (artigos 32.º e 33.º)."),
 ("Que diz o Código Penal sobre quem se excede na legítima defesa por medo não censurável?",
  "Não é punido", ["É punido como um homicida", "Perde o cartão profissional", "Responde só civilmente"],
- "O artigo 33.º torna ilícito o excesso de legítima defesa, com pena especialmente atenuada, mas o agente não é punido se o excesso resultar de perturbação, medo ou susto não censuráveis."),
+ "O artigo 33.º torna ilícito o excesso de legítima defesa, podendo a pena ser especialmente atenuada, mas o agente não é punido se o excesso resultar de perturbação, medo ou susto não censuráveis."),
 ("O chefe manda o vigilante fechar um cliente num armário. Que regra se aplica?",
  "Não se obedece a ordem de crime", ["Ordens do chefe cumprem-se sempre", "Cumpre e queixa-se depois", "Só pode recusar por escrito"],
  "O artigo 36.º, n.º 2, do Código Penal faz cessar o dever de obediência hierárquica quando conduzir à prática de um crime."),

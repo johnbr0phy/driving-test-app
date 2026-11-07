@@ -60,7 +60,7 @@ Q = [
  "Em caso de cancelamento ou atraso superior a 120 minutos, o Regulamento (UE) 181/2011 dá a escolha entre continuar a viagem e o reembolso."),
 ("Ao transportar um grupo à noite, que luz interior deve manter em marcha?",
  "Luz suave que não encandeie", ["Todas as luzes no máximo", "Nenhuma luz em todo o veículo", "Só as luzes do porão"],
- "A iluminação reduzida deixa os passageiros circular com segurança sem refletir no para-brisas e encandear o motorista."),
+ "A iluminação reduzida deixa os passageiros circularem com segurança sem refletir no para-brisas e encandear o motorista."),
 ("O que deve fazer com um passageiro que fuma a bordo?",
  "Pedir-lhe com cortesia que apague", ["Ignorar se a janela estiver aberta", "Expulsá-lo em plena via", "Parar logo na faixa de rodagem"],
  "Fumar nos transportes coletivos é proibido. Uma abordagem calma resolve a maioria das situações sem conflito."),

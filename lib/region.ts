@@ -124,7 +124,7 @@ const TEST_REGIONS: Record<string, TestRegion> = {
   zak53moto: "ZA", zare5: "ZA", zasaps: "ZA", zapsira: "ZA",
   phnle: "PH", phmedtech: "PH", phpharm: "PH", phmidwife: "PH", phpsychom: "PH", phnapolcom: "PH", afpsat: "PH", phcle: "PH", phinsurance: "PH", phrebroker: "PH",
   sgftt: "SG", sgrtt: "SG", sgres: "SG", sgm5: "SG", sgvl: "SG", hkiiqe1: "HK", hklesfi1: "HK", aesira: "AE", mypce: "MY", kenck: "KE",
-  detheorie: "DE",
+  detheorie: "DE", demotorrad: "DE", deaevo: "DE", de34a: "DE", deheilpr: "DE",
   esdgt: "ES", escapcond: "ES", espolicia: "ES", esguardia: "ES", esvigilante: "ES", ptimt: "PT", rodrpciv: "RO", setrafik: "SE", grdriving: "GR", dkteori: "DK", hukresz: "HU", bedriving: "BE", fitheory: "FI", mttheory: "MT",
   jambeng: "NG", jambmath: "NG", jambbio: "NG", jambchem: "NG", jambphys: "NG",
   ngpolice: "NG", cdcfib: "NG", ngarmy: "NG", ngcustoms: "NG", trcnpqe: "NG",
@@ -141,6 +141,7 @@ const TEST_REGIONS: Record<string, TestRegion> = {
 /** A country's tests that are not driving tests: shown beside the worldwide ones, not in the driving grid. */
 export const NON_DRIVING_TESTS = new Set([
   "espolicia", "esguardia", "esvigilante",
+  "deaevo", "de34a", "deheilpr",
   "timestables", "ks2", "gcsemaths", "uksia", "uk18ed",
   "gcsehigher", "gcsescience", "gcsecs", "elevenplus", "fsmaths", "cscs", "ukfood", "ukaplh", "ukfaw", "ukcare", "uklitu", "uknmc", "ukseru", "aatl2", "cemap",
   "osslt", "capal", "caelec",
@@ -383,8 +384,8 @@ export const REGION_HOME: Record<Exclude<Region, "US">, {
     description: "Kostenlose Übungstests für die Theorieprüfung Klasse B: eigene Fragen zu StVO, Vorfahrt und Verkehrszeichen, jede Antwort erklärt. Ohne Anmeldung.",
     lead: "Übe für die theoretische Führerscheinprüfung Klasse B. Eigene Fragen zu Vorfahrt, Verkehrszeichen, Geschwindigkeit und Gefahrenlehre nach der StVO, jede Antwort erklärt. Ohne Anmeldung.",
     cta: { label: "Führerschein-Theorie", href: "/de/fuehrerschein-theorie-test" },
-    testsTitle: "Theorieprüfung Klasse B",
-    testsSub: "Fragen nach StVO und Fahrerlaubnis-Verordnung, in km/h für den Rechtsverkehr. Videofragen und Fehlerpunkte werden nicht nachgebildet.",
+    testsTitle: "Übungstests für Deutschland",
+    testsSub: "Die Theorieprüfung Klasse B und für das Motorrad (Klassen A, A1, A2): Fragen nach StVO und Fahrerlaubnis-Verordnung, in km/h für den Rechtsverkehr. Dazu die AEVO-Prüfung für Ausbilder, die Sachkundeprüfung nach § 34a GewO und der schriftliche Teil der Heilpraktikerprüfung.",
   },
   MT: {
     title: "Free Malta Driving Theory Test Practice | Tigertest",

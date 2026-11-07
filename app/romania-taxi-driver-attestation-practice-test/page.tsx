@@ -157,7 +157,7 @@ export default function RomaniaTaxiAttestationLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Real-Length Mock Tests</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Eight tests of 20 questions, the length of the real ARR test, with 14 correct to pass. No question repeats across tests, and every answer explains the rule and the common wrong pick.
+                Eight tests of 20 questions, the length of the real ARR test, with 14 correct to pass. No question repeats across tests, and every answer explains the rule behind it.
               </p>
             </div>
           </div>

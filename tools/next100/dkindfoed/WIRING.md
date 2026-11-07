@@ -7,7 +7,7 @@ The `da` UI dictionary (`i18n/da.ts`), `EXAM_UI.da`, `COPY.da`, `SAMPLE_COPY.da`
 is left beyond the items below.
 
 Files already written by the builder:
-- `data/dk-indfoedsret-questions.json` (200, validator PASS with `--lang da`)
+- `data/dk-indfoedsret-questions.json` (320, validator PASS with `--lang da --rows 320`)
 - `lib/banks/dkindfoed.ts`
 - `app/indfoedsretsproeve/*` (5 wrappers copied from `app/fuehrerschein-theorie/`; drill and stats
   import the bank)
@@ -17,17 +17,19 @@ Files already written by the builder:
 - `tools/next100/dkindfoed/*` (spec, sources, glossary, `q_*.py`, `build.py`)
 
 Rebuild with `python3 -I tools/next100/dkindfoed/build.py`. Validate with:
-`python3 -I .claude/skills/exam-bank/scripts/validate_bank.py data/dk-indfoedsret-questions.json --lang da --pool dkindHistOld=20 --pool dkindHistEarly=20 --pool dkindHistDemo=25 --pool dkindHistNew=20 --pool dkindDemokrati=35 --pool dkindSamfund=30 --pool dkindKultur=25 --pool dkindVaerdier=25`
--> `letters {'A': 48, 'B': 45, 'C': 52, 'D': 55}  avg option 16 chars  key-longest 22%  key>1.2x 18%  PASS`
+`python3 -I .claude/skills/exam-bank/scripts/validate_bank.py data/dk-indfoedsret-questions.json --lang da --rows 320 --pool dkindHistOld=32 --pool dkindHistEarly=24 --pool dkindHistDemo=32 --pool dkindHistNew=24 --pool dkindDemokrati=56 --pool dkindSamfund=56 --pool dkindKultur=56 --pool dkindVaerdier=40`
+-> `letters {'A': 74, 'B': 76, 'C': 84, 'D': 86}  avg option 17 chars  key-longest 19%  key>1.2x 24%  PASS`
 
-## Shape (why 5 x 40, not 8)
+## Shape (eight tests of 40, like uklitu, cacit and aucit)
 
 The real test is 45 questions: 35 from the learning material, 5 current affairs, 5 values. The
 current-affairs questions follow the news and cannot be modelled, so each Tigertest test has the
 other 40 (35 + 5 values) and passes at 36 of 40 (`passPct: 90`, the real 36-line). Eight tests of
-40 would need 320 items; the brief's 200-item bank gives five, each item in exactly one test.
-Training: five topic sets 23601-23605 (all at most 60, so no parts), 5 sets + 5 tests = 10 steps.
-Set ids share numbers with test ids 23601-23605 like other topic-set exams.
+40 = 320 items, each in exactly one test (pools exactly 8x: 32/24/32/24/56/56/56/40, per test
+4/3/4/3/7/7/7/5). Training: six topic sets 23601-23606 of at most 60 (no parts), so the dashboard
+has 6 + 8 = 14 steps, two over the usual 12: with 320 items and sets capped at 60, six sets is the
+fewest (four sets of 80 would split into eight parts). Set ids share numbers with test ids like
+other topic-set exams (`setIdBase` not needed).
 
 **Values rule not enforced.** The real test also needs 4 of the 5 values questions right. The
 engine scores only the total; the copy (testsHeading, sourceLine, landing) says to check it, as
@@ -51,7 +53,7 @@ const dkindfoed: ExamConfig = {
   fullName: "Indfødsretsprøven (danske samfundsforhold, dansk kultur og historie)",
   questionIdPrefix: "DKIND-",
   icon: "flag",
-  testCount: 5,
+  testCount: 8,
   questionsPerTest: 40,
   passPct: 90,
   language: "da",
@@ -68,24 +70,25 @@ const dkindfoed: ExamConfig = {
   // 35 from "Læremateriale til indfødsretsprøven" (danske samfundsforhold, dansk kultur og
   // historie), 5 current affairs, 5 values; pass 36 of 45 with at least 4 of the 5 values right.
   // Current affairs not modelled, so 40 per test (35 + 5 values) and 36 to pass. SIRI publishes no
-  // topic weights: the 4/4/5/4/7/6/5 split of the 35 is Tigertest's. All items original.
+  // topic weights: the 4/3/4/3/7/7/7 split of the 35 is Tigertest's. All items original.
   blueprint: {
     dkindHistOld: 4,
-    dkindHistEarly: 4,
-    dkindHistDemo: 5,
-    dkindHistNew: 4,
+    dkindHistEarly: 3,
+    dkindHistDemo: 4,
+    dkindHistNew: 3,
     dkindDemokrati: 7,
-    dkindSamfund: 6,
-    dkindKultur: 5,
+    dkindSamfund: 7,
+    dkindKultur: 7,
     dkindVaerdier: 5,
   },
-  // Five topic sets, not testSets(): 5 + 5 tests = 10 dashboard steps.
+  // Six topic sets of at most 60, not testSets(): 6 + 8 tests = 14 dashboard steps.
   trainingSets: [
-    { setNumber: 1, id: 23601, name: "Historie indtil 1849", categories: ["dkindHistOld", "dkindHistEarly"], size: 40, weightLabel: "8 af 40 spørgsmål pr. prøve" },
-    { setNumber: 2, id: 23602, name: "Historie fra 1849", categories: ["dkindHistDemo", "dkindHistNew"], size: 45, weightLabel: "9 af 40 spørgsmål pr. prøve" },
-    { setNumber: 3, id: 23603, name: "Grundloven og folkestyret", categories: ["dkindDemokrati"], size: 35, weightLabel: "7 af 40 spørgsmål pr. prøve" },
-    { setNumber: 4, id: 23604, name: "Samfund og kultur", categories: ["dkindSamfund", "dkindKultur"], size: 55, weightLabel: "11 af 40 spørgsmål pr. prøve" },
-    { setNumber: 5, id: 23605, name: "Danske værdier", categories: ["dkindVaerdier"], size: 25, weightLabel: "5 af 40, mindst 4 skal være rigtige" },
+    { setNumber: 1, id: 23601, name: "Historie indtil 1849", categories: ["dkindHistOld", "dkindHistEarly"], size: 56, weightLabel: "7 af 40 spørgsmål pr. prøve" },
+    { setNumber: 2, id: 23602, name: "Historie fra 1849", categories: ["dkindHistDemo", "dkindHistNew"], size: 56, weightLabel: "7 af 40 spørgsmål pr. prøve" },
+    { setNumber: 3, id: 23603, name: "Grundloven og folkestyret", categories: ["dkindDemokrati"], size: 56, weightLabel: "7 af 40 spørgsmål pr. prøve" },
+    { setNumber: 4, id: 23604, name: "Samfund og økonomi", categories: ["dkindSamfund"], size: 56, weightLabel: "7 af 40 spørgsmål pr. prøve" },
+    { setNumber: 5, id: 23605, name: "Kultur og traditioner", categories: ["dkindKultur"], size: 56, weightLabel: "7 af 40 spørgsmål pr. prøve" },
+    { setNumber: 6, id: 23606, name: "Danske værdier", categories: ["dkindVaerdier"], size: 40, weightLabel: "5 af 40, mindst 4 skal være rigtige" },
   ],
   categoryLabels: {
     dkindHistOld: "Oldtid, vikingetid og middelalder",
@@ -103,7 +106,7 @@ const dkindfoed: ExamConfig = {
     trainingSub: "Hvert træningssæt dækker et emne. Du får svar med det samme, og de spørgsmål, du svarer forkert på, kommer igen, til du kan dem. Danske værdier har sit eget sæt, fordi 4 af 5 værdispørgsmål skal være rigtige.",
     testsHeading: "Prøver · 40 spørgsmål, 36 for at bestå, 4 af 5 værdier",
     heroSubs: [
-      "Fem træningssæt, fem prøver med 40 spørgsmål. Begynd med danske værdier.",
+      "Seks træningssæt, otte prøver med 40 spørgsmål. Begynd med danske værdier.",
       "Bliv sikker i sættet, tag så prøven.",
       "Halvvejs. Hold styr på værdispørgsmålene.",
       "Øv dine fejl, og tag prøven igen.",
@@ -116,7 +119,7 @@ const dkindfoed: ExamConfig = {
 ```
 
 Append `dkindfoed` to the `EXAMS` array after `aucit` (with the citizenship tests). ID header
-comment if wanted: ` *   DKINDFOED 23600s (tests 23601-23605, sets 23601-23605)`.
+comment if wanted: ` *   DKINDFOED 23600s (tests 23601-23608, sets 23601-23606)`.
 `heroSubs[0]` names the values set: check it fits the hero on a phone.
 
 ## lib/banks/all.ts
@@ -189,7 +192,7 @@ wine `341 55% 26%` (clear, about 11.6:1). Then run `tools/gen_dark_brand_css.py`
 ## lib/testCatalog.ts
 
 - `EXAM_BLURBS` (English surfaces):
-  `dkindfoed: "Five 40-question mock tests in Danish for the Danish citizenship test (indfødsretsprøven): history, the Constitution, democracy, society, culture and five values questions per test, written on the topics of SIRI's learning material.",`
+  `dkindfoed: "Eight 40-question mock tests in Danish for the Danish citizenship test (indfødsretsprøven): history, the Constitution, democracy, society, culture and five values questions per test, written on the topics of SIRI's learning material.",`
 - `EXAM_ORG`: `dkindfoed: "SIRI (Denmark) · indfødsretsprøven, in Danish",`
 - Hub group: add to the citizenship group, which the research notes ask for:
   `{ title: "Citizenship tests", ids: ["civics", "uklitu", "cacit", "aucit", "dkindfoed"] },`
@@ -240,7 +243,7 @@ base `landingPath` when `lang === exam.language`; currency DKK is already in its
       { label: "Pass mark", value: "36 of 45, with at least 4 of 5 values questions" },
       { label: "Language", value: "Danish" },
       { label: "When", value: "Twice a year, May/June and November/December" },
-      { label: "Tigertest mock tests", value: "5 x 40 questions in Danish, 36 to pass" },
+      { label: "Tigertest mock tests", value: "8 x 40 questions in Danish, 36 to pass" },
     ],
     basedOn: "Lex (Den Store Danske) and Lovguiden on the indfødsretsprøve, and the topics of SIRI's learning material, checked November 2026",
     source: { name: "Lex: Indfødsretsprøve (in Danish)", url: "https://lex.dk/indf%C3%B8dsretspr%C3%B8ve" },
@@ -273,7 +276,7 @@ to itself). Class questions import `lib/banks/all`. No redirects.
 
 ## scripts/build-training-parts.ts
 
-Run `npx tsx scripts/build-training-parts.ts` after wiring. Sets are 25 to 55, so no parts.
+Run `npx tsx scripts/build-training-parts.ts` after wiring. Sets are 40 to 56, so no parts.
 
 ## Question quality hooks
 
@@ -291,14 +294,15 @@ then rename the two files to the `-da` names.
 ## CLAUDE.md (after the Australian citizenship bullet, or under native-language exams)
 
 ```md
-- **Indfødsretsprøven** (`dkindfoed`, the Danish citizenship test, Tigertest's first Danish-language bank, base language Danish, `language: "da"`, `locale: "da-DK"`, `review: { da: "model" }`, `/indfoedsretsproeve/*`, landing `/da/indfoedsretsproeven-oevelsesproeve` from `lib/landings/dkindfoed.da.json`): `data/dk-indfoedsret-questions.json` (200 original questions written directly in Danish on the topics of SIRI's Læremateriale til indfødsretsprøven and on Danish values: prehistory, Vikings and Middle Ages 20, Reformation to the Constitution 20, Constitution to liberation 25, after 1945 20, Grundloven and folkestyret 35, society, welfare and economy 30, culture and traditions 25, values 25), five 40-question tests (IDs 23601-23605, 4/4/5/4/7/6/5/5 per test, no spares) and five Danish-named topic sets 23601-23605 (history to 1849 40, from 1849 45, Grundloven 35, samfund og kultur 55, værdier 25), 10 dashboard steps, state `DKINDFOED`, prefix `DKIND-`, 90% pass (36 of 40). The real test (SIRI, twice a year at language centres) is 45 questions in 45 minutes: 35 from the learning material, 5 current affairs, 5 values, pass at 36 with at least 4 of 5 values right; current affairs are not modelled and the values rule is not enforced (the copy says to check it). Real items mostly have three options or yes/no; ours four. No current officeholders, no past-test items. English names in `english`. Built by `tools/next100/dkindfoed/build.py`; sources in `tools/next100/dkindfoed/sources.md`, terms in `glossary.md`. Region DK, hub group "Citizenship tests", `[data-theme="dkindfoed"]` Dannebrog red, borrows the civics tiger.
+- **Indfødsretsprøven** (`dkindfoed`, the Danish citizenship test, Tigertest's first Danish-language bank, base language Danish, `language: "da"`, `locale: "da-DK"`, `review: { da: "model" }`, `/indfoedsretsproeve/*`, landing `/da/indfoedsretsproeven-oevelsesproeve` from `lib/landings/dkindfoed.da.json`): `data/dk-indfoedsret-questions.json` (320 original questions written directly in Danish on the topics of SIRI's Læremateriale til indfødsretsprøven and on Danish values: prehistory, Vikings and Middle Ages 32, Reformation to the Constitution 24, Constitution to liberation 32, after 1945 24, Grundloven and folkestyret 56, society, welfare and economy 56, culture and traditions 56, values 40), eight 40-question tests like `uklitu`, `cacit` and `aucit` (IDs 23601-23608, 4/3/4/3/7/7/7/5 per test, no spares) and six Danish-named topic sets 23601-23606 (history to 1849, from 1849, Grundloven, samfund, kultur 56 each, værdier 40), 14 dashboard steps, state `DKINDFOED`, prefix `DKIND-`, 90% pass (36 of 40). The real test (SIRI, twice a year at language centres) is 45 questions in 45 minutes: 35 from the learning material, 5 current affairs, 5 values, pass at 36 with at least 4 of 5 values right; current affairs are not modelled and the values rule is not enforced (the copy says to check it). Real items mostly have three options or yes/no; ours four. No current officeholders, no past-test items. English names in `english`. Built by `tools/next100/dkindfoed/build.py`; sources in `tools/next100/dkindfoed/sources.md`, terms in `glossary.md`. Region DK, hub group "Citizenship tests", `[data-theme="dkindfoed"]` Dannebrog red, borrows the civics tiger.
 ```
 
 ## Decisions for the integrator
 
-1. **Five tests, not eight.** The task asked for eight real-length tests; at 40 per test that is
-   320 items. Built to the brief's 200-item rule as 5 x 40 (each item in one test). Eight would
-   need 120 more items written to the same plan (pools 32/32/40/32/56/48/40/40).
+1. **Eight tests of 40, 14 dashboard steps.** 320 items (each in one test, no spares). Sets are
+   capped at 60, so six sets are the fewest: 6 + 8 = 14 steps, two over the usual 12. If 12 is
+   firm, the integrator can merge sets 4 and 5 (112, split into two parts by
+   `build-training-parts.ts`, which gives the same count) or accept 14.
 2. **Pass mark** 90 (36 of 40), the real 36-line on the modelled 40; the 4-of-5 values rule is in
    the copy only.
 3. **Hue** `350 90% 40%` instead of the suggested `352 60% 32%` (clashes with dkteori, rrbalp,
@@ -306,6 +310,6 @@ then rename the two files to the `-da` names.
 4. **Format facts** come from Lex and Lovguiden; siri.dk returned 404 for its test page on
    2026-11-06. Not confirmed: whether any aids are allowed (not stated, so not on the landing).
 5. **Register**: questions neutral ("man", "en vælger"), landing and dashboard copy "du".
-6. **Siblings**: no `dkmedborger` or `dkjagt` bank was on disk while writing, so overlap with them
-   could not be checked; the medborgerskabsprøve covers similar society facts, so a cross-check is
-   worth running once it lands.
+6. **Siblings**: the 120 items added on 2026-11-07 were written against `data/dk-medborgerskab-questions.json`
+   (schools, work, welfare, family, elections, EU, climate, holidays) and `dk-jagtproeve`: no shared
+   fact-and-answer pair (same answer strings like "Odense" or "Statsministeren" ask different facts).

@@ -370,7 +370,7 @@
     "category": "hubiztKozvetito",
     "question": "Ki a többes ügynök?",
     "optionA": "Csak egyetlen biztosítónak dolgozik",
-    "optionB": "Több biztosító versengő termékeit",
+    "optionB": "Versengő termékeket közvetít",
     "optionC": "Az ügyfél megbízásából jár el",
     "optionD": "Kizárólag viszontbiztosítást közvetít",
     "correctAnswer": "B",
@@ -431,7 +431,7 @@
     "optionD": "A kedvezményezettnek",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Az alkusz maga felel az ügyfélnek okozott kárért, ezért a Bit. szerint felelősségbiztosítással vagy vagyoni biztosítékkal kell rendelkeznie. Az ügynök kárért a biztosító felel."
+    "explanation": "Az alkusz maga felel az ügyfélnek okozott kárért, ezért a Bit. szerint felelősségbiztosítással vagy vagyoni biztosítékkal kell rendelkeznie (ugyanígy a többes ügynöknek). Az ügynök okozta kárért a biztosító felel."
   },
   {
     "type": "HUBIZT",
@@ -536,7 +536,7 @@
     "state": "ALL",
     "questionId": "HUBIZT-KOZ-014",
     "category": "hubiztKozvetito",
-    "question": "Mit kell átadni nem-életbiztosítási termék megkötése előtt az ügyfélnek?",
+    "question": "Mit kell átadni az ügyfélnek nem-életbiztosítási szerződés megkötése előtt?",
     "optionA": "Kárbejelentő nyomtatványt",
     "optionB": "Biztosítási termékismertetőt",
     "optionC": "Díjbekérő levelet és befizetési csekket",
@@ -606,11 +606,11 @@
     "state": "ALL",
     "questionId": "HUBIZT-KOZ-019",
     "category": "hubiztKozvetito",
-    "question": "Milyen szervezet a Kártalanítási Alap?",
-    "optionA": "A közvetítők elmaradt jutalékát fizeti",
-    "optionB": "A biztosítók adóját gyűjti be",
-    "optionC": "Felszámolt KGFB-biztosító kárait",
-    "optionD": "A tőzsdei károkat fedezi",
+    "question": "Mikor fizet kártérítést a Kártalanítási Alap?",
+    "optionA": "Ha a közvetítő jutaléka elmarad a biztosítótól",
+    "optionB": "Ha a biztosító adóját nem fizeti meg időben",
+    "optionC": "Ha a KGFB-biztosító felszámolás alatt áll",
+    "optionD": "Ha egy tőzsdei befektetés veszteséges lesz",
     "correctAnswer": "C",
     "correctIndex": 2,
     "explanation": "A Kártalanítási Alapot a hazai biztosítók hozzák létre és finanszírozzák; akkor fizet, amikor a károkozó KGFB-biztosítója ellen felszámolás indult."
@@ -1663,7 +1663,7 @@
     "optionD": "Bonus",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "A Gfbt. szerint az üzemben tartó kármentes időszak után díjkedvezményre (bonus) jogosult, okozott kárai után díjtöbbletet (malus) fizet."
+    "explanation": "A KGFB bonus-malus rendszerében az üzemben tartó kármentes időszak után díjkedvezményre (bonus) jogosult, okozott kárai után díjtöbbletet (malus) fizet."
   },
   {
     "type": "HUBIZT",
@@ -1761,21 +1761,21 @@
     "optionD": "Mert az MNB bírságot szabott ki",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Ha az éves díjat például júliusban fizetik, annak egy része a következő naptári évben esedékes kockázatviselésre jár, ezt a részt tartalékolni kell."
+    "explanation": "Ha az éves díjat például júliusban fizetik, annak egy része a következő naptári évre eső kockázatviselés díja, ezt a részt tartalékolni kell."
   },
   {
     "type": "HUBIZT",
     "state": "ALL",
     "questionId": "HUBIZT-DIJ-012",
     "category": "hubiztDij",
-    "question": "Mi az ügyfél első teendője biztosítási esemény bekövetkezésekor?",
-    "optionA": "A szerződés felmondása",
-    "optionB": "A díj visszakövetelése",
-    "optionC": "A kárhely azonnali kitakarítása",
-    "optionD": "A kár bejelentése",
+    "question": "Mit kell tennie a szerződőnek vagy a biztosítottnak a szerződésben megállapított határidőn belül a biztosítási esemény után?",
+    "optionA": "Felmondani a szerződést",
+    "optionB": "Visszakövetelni a díjat",
+    "optionC": "Kitakarítani a kárhelyet",
+    "optionD": "Bejelenteni a biztosítónak",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "A Ptk. szerint a biztosítási eseményt a szerződésben megállapított határidőn belül be kell jelenteni. A kárhelyen csak a kárenyhítéshez szükséges változtatás megengedett."
+    "explanation": "A Ptk. szerint a biztosítási eseményt a szerződésben megállapított határidőn belül be kell jelenteni, különben a biztosító kötelezettsége nem áll be, ha emiatt lényeges körülmény kideríthetetlenné válik. A kárhelyen csak a kárenyhítéshez szükséges változtatás megengedett."
   },
   {
     "type": "HUBIZT",
@@ -2304,7 +2304,7 @@
     "optionA": "A kötvény tartalmával",
     "optionB": "Az ajánlat tartalmával",
     "optionC": "Az ÁSZF tartalmával",
-    "optionD": "Semmilyennel, semmis",
+    "optionD": "Egyik szerint sem jön létre",
     "correctAnswer": "A",
     "correctIndex": 0,
     "explanation": "A Ptk. szerint ilyenkor a szerződés a kötvény szerinti tartalommal jön létre; lényeges eltérésnél csak akkor, ha a biztosító erre írásban felhívta a figyelmet."
@@ -2512,7 +2512,7 @@
     "category": "hubiztMegszunes",
     "question": "Kivel szemben nincs a kárbiztosítónak megtérítési igénye?",
     "optionA": "A szomszéd lakásban lakó károkozóval",
-    "optionB": "A károkozó munkavállalóval",
+    "optionB": "A kárt okozó építőipari céggel",
     "optionC": "Közös háztartású hozzátartozóval",
     "optionD": "Az ittas idegen gépjárművezetővel",
     "correctAnswer": "C",

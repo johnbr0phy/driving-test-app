@@ -93,7 +93,9 @@ Checked 2026-11-06 unless noted.
   copies, the second accompanies the goods; reservations) and its e-CMR protocol, Interbus.
 - Regulation (EC) 1072/2009 as amended by 2020/1055: Community licence and certified copy in the
   vehicle, driver attestation for third-country drivers, cabotage 3 operations in 7 days, 4-day
-  cooling-off, vehicles back at an operating centre every 8 weeks. Directive (EU) 2020/1057:
+  cooling-off; Community licence issued for renewable periods of up to 10 years (art. 4); driver
+  attestation issued by the member state of establishment (art. 5). Vehicles back at an operating
+  centre within 8 weeks of leaving it: Regulation (EC) 1071/2009 art. 5 as amended by 2020/1055. Directive (EU) 2020/1057:
   posting declarations through IMI, bilateral operations exempt.
 - Regulation (EC) 1073/2009: journey form for occasional coach services; regular services under
   an authorisation.
@@ -102,10 +104,27 @@ Checked 2026-11-06 unless noted.
   over 3 hours delayed over 90 minutes, 36 hours' notice for assistance, refusal only for safety
   or vehicle design reasons.
 - Directive (EU) 2022/2561: Union code 95, periodic training in each 5-year period.
+- Reviewer additions (2026-11-07): Regulation 561/2006 art. 6(5) (driving a commercial vehicle out of
+  scope is recorded as other work), art. 9(3) (travelling to or from a vehicle not at home or base
+  counts as other work), art. 8(6) (two consecutive reduced weekly rests: the next weekly rest is
+  preceded by the compensation), art. 12 as amended (up to 1 hour to reach home or base for a weekly
+  rest; up to 2 hours after a 30-minute break only for a regular weekly rest); Directive 2002/15/EC
+  art. 3(a) (cleaning and technical maintenance are working time); Regulation 165/2014 art. 33(2)
+  (operators keep data at least one year and give drivers copies on request) and art. 34(1) (no
+  dirty or damaged charts or cards; no withdrawal before the end of the daily working period unless
+  authorised), Annex IC (detailed speed for the last 24 hours the vehicle moved); CMR art. 1(4)
+  (postal, funeral and furniture removal excluded) and art. 17 (liability from taking over to
+  delivery); ADR 8.1.5 (crew equipment: warning vest, portable lighting, protective gloves, eye
+  protection); Regulation (EU) 2020/740 (tyre label fuel efficiency classes A to E); Incoterms 2020.
+- TollRO (checked 2026-11-07): Romania is replacing the rovinietă for goods vehicles over 3.5 t with
+  a distance-based charge, TollRO, collected by CNAIR, scheduled for 1 October 2026 after several
+  delays; buses and light vehicles stay on the rovinietă:
+  https://trans.info/ro/tollro-romania-trece-la-taxarea-camioanelor-pe-kilometru-501778
+  The rovinietă item (ROCPI-DOC-016) therefore asks about a coach, not a truck.
 - Romania: OG 27/2011 on road transport (route licence, "licență de traseu", for regular
   passenger services); ISCTR (Inspectoratul de Stat pentru Controlul în Transportul Rutier)
   carries out road transport checks; rovinietă, the electronic road user charge for national
-  roads (no amounts); special transport authorisation for over-dimension or overweight loads;
+  roads (no amounts; trucks over 3.5 t moving to TollRO, see above); special transport authorisation for over-dimension or overweight loads;
   RO e-Transport (OUG 41/2022 as extended by OUG 115/2023): international road transport of goods
   is declared and receives a UIT code (secondary sources checked 2026-11-06, e.g.
   https://www.fiscalitatea.ro/tot-ce-trebuie-sa-stii-despre-sistemul-ro-e-transport-21813/ ).
@@ -124,4 +143,7 @@ Written against `data/ireland-truck-bus-theory-questions.json`, `data/uk-lgv-the
 `data/romania-drpciv-questions.json` and the sibling `data/romania-taxi-attestation-questions.json`.
 Core rules that every heavy-vehicle bank asks (4.5 h then 45 min, 9 h days, 56/90 h, 11 h rest,
 red/yellow air lines, wheel nut indicators) are asked here as worked scenarios with other numbers,
-or left to the other banks. Ten near-repeats found by a similarity scan were rewritten.
+or left to the other banks. Ten near-repeats found by a similarity scan were rewritten. Review (2026-11-07): 50 more items
+rewritten that repeated the fact and answer of `malta-driver-cpc`, `hungary-gki`, `finland-truck-theory`,
+`uk-lgv-theory` or `ireland-truck-bus-theory` items (several identical stems), mostly as worked
+scenarios with other numbers or as other facts from the same regulations.

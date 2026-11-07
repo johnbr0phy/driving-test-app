@@ -3,9 +3,9 @@ CAT = "ptvigVigilancia"; SEG = "VIG"
 # procedimentos de alarme (ALM01), videovigilância e centrais de alarme (ALM02), Portaria n.º
 # 148/2014; Lei n.º 34/2013 (artigos 2.º, 11.º, 18.º, 31.º); Lei n.º 58/2019 (artigo 19.º).
 Q = [
-("O que deteta um sensor volumétrico de infravermelhos passivos?",
- "Calor de um corpo em movimento", ["A abertura de uma janela", "O som de vidro a partir", "O fumo de um incêndio"],
- "O detetor de infravermelhos passivos reage à variação de radiação térmica causada por uma pessoa a mover-se no seu campo de deteção."),
+("Para que serve a função antimascaramento de um detetor de movimento?",
+ "Avisar que alguém tapou o detetor", ["Aumentar o alcance do detetor", "Ignorar animais pequenos", "Desligar o detetor de dia"],
+ "Um intruso pode cobrir ou pintar a lente do detetor durante o horário de abertura para o cegar. A função antimascaramento deteta essa obstrução e envia um aviso à central antes de o sistema ser armado."),
 ("Que sensor se coloca numa porta para detetar a sua abertura?",
  "Um contacto magnético", ["Um detetor de fumo", "Um sensor de inundação", "Uma câmara térmica"],
  "O contacto magnético tem um íman na folha e um interruptor no aro: quando a porta abre, o circuito muda e dispara o alarme."),

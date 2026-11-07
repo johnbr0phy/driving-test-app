@@ -1,0 +1,36 @@
+{
+  "id": "grinsure",
+  "stateCode": "GRINSURE",
+  "idBase": 25400,
+  "prefix": "GRINS-",
+  "slug": "/pistopoiisi-asfalistikon-diamesolaviton",
+  "landingPath": "/el/pistopoiisi-asfalistikon-diamesolaviton",
+  "dataFile": "data/gr-insurance-intermediary-questions.json",
+  "language": "el",
+  "locale": "el-GR",
+  "name": "Πιστοποίηση Ασφαλιστικών Διαμεσολαβητών ΤτΕ",
+  "shortName": "Πιστοποίηση ΤτΕ",
+  "examLabel": "Εξετάσεις πιστοποίησης ΤτΕ",
+  "fullName": "Πιστοποίηση επαγγελματικών γνώσεων ασφαλιστικών διαμεσολαβητών της Τράπεζας της Ελλάδος",
+  "english": {
+    "name": "Bank of Greece Insurance Intermediary Certification",
+    "shortName": "Greek insurance agent exam",
+    "fullName": "Bank of Greece professional knowledge certification for insurance agents, brokers and insurance-based investment products, in Greek"
+  },
+  "icon": "umbrella",
+  "testCount": 3,
+  "questionsPerTest": 60,
+  "passPct": 90,
+  "categories": [
+    {"key": "grinBasics", "label": "Βασικές αρχές ασφάλισης και αντασφάλισης", "perTest": 7, "pool": 23, "segment": "BAS"},
+    {"key": "grinContract", "label": "Η σύμβαση ασφάλισης (ν. 2496/1997)", "perTest": 8, "pool": 27, "segment": "CON"},
+    {"key": "grinDistrib", "label": "Ασφαλιστική διανομή και εποπτεία", "perTest": 8, "pool": 27, "segment": "DIS"},
+    {"key": "grinConduct", "label": "Κανόνες συμπεριφοράς και πληροφόρηση", "perTest": 8, "pool": 27, "segment": "CND"},
+    {"key": "grinNonlife", "label": "Ασφαλίσεις ζημιών", "perTest": 8, "pool": 26, "segment": "NLF"},
+    {"key": "grinLife", "label": "Ασφαλίσεις ζωής και υγείας", "perTest": 7, "pool": 24, "segment": "LIF"},
+    {"key": "grinIbip", "label": "Επενδυτικά προϊόντα βασιζόμενα σε ασφάλιση", "perTest": 7, "pool": 24, "segment": "IBP"},
+    {"key": "grinAml", "label": "Ξέπλυμα χρήματος, δεδομένα και δεοντολογία", "perTest": 7, "pool": 22, "segment": "AML"}
+  ],
+  "notes": "3 tests x 60 = 180 (the real exam draws at least 60 questions, Act 153/2/2019 art. 6); the last 2/3/3/3/2/3/3/1 items of each pool (20) are training-only. passPct 90 = 54 of 60, the real line (art. 7(5): 90% correct). Training: six topic sets 25401-25406 (Αρχές και σύμβαση 50, Διανομή και συμπεριφορά 54, Ασφαλίσεις ζημιών 26, Ζωή και υγεία 24, IBIP 24, Ξέπλυμα χρήματος και δεδομένα 22), so 6 sets + 3 tests = 9 dashboard steps. Per-test weights are Tigertest's: the Bank of Greece publishes no topic counts.",
+  "trainingSets": "topic sets 25401-25406, see WIRING.md"
+}

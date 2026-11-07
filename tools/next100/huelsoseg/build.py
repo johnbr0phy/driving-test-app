@@ -13,7 +13,7 @@ ORDER = [("helyszin", 32), ("vizsgalat", 28), ("ujraeleszt", 32), ("gyermek", 20
          ("verzes", 28), ("serules", 24), ("kornyezet", 16), ("belgyogy", 20)]
 out = sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, "data", "hungary-first-aid-questions.json")
 NUM = re.compile(r"^(\d+(?:,\d+)?)\s*(\S*)$")
-BAD = ["—", "– ", '"', "fentiek", "Mindkettő", "Mindegyik", "A és B", "A vagy B", "Vöröskereszt"]
+BAD = ["\u2014", "– ", '"', "fentiek", "Mindkettő", "Mindegyik", "A és B", "A vagy B", "Vöröskereszt"]
 
 def numeric(opts):
     parts = [NUM.match(o) for o in opts]

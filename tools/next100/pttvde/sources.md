@@ -2,7 +2,8 @@
 
 All 200 questions are original, written directly in European Portuguese from the laws below. The
 IMT publishes its own list of questions for the TVDE final assessment
-(https://www.imt-ip.pt/condutores/obtencao/perguntas-de-exame/); that list was not opened for
+(https://www.imt-ip.pt/condutores/obtencao/perguntas-de-exame/, confirmed 2026-11-07: under
+"Profissionais", "TVDE - grupo de questões", one PDF of the final assessment questions); that list was not opened for
 copying and no item is taken from it, from a past paper or from a commercial app. Checked
 2026-11-06 unless noted.
 
@@ -96,7 +97,10 @@ copying and no item is taken from it, from a past paper or from a commercial app
   5 of Annex II, full attendance); a driver who passed the final exam does not repeat it at
   renewal; one certified without it sits it at the first renewal; taxi certificate holders need
   only a unique TVDE registration number; certificate valid five years; a lapsed certificate
-  cannot be renewed. Fee figures on the page are not used.
+  cannot be renewed. Fee figures on the page are not used. Re-read 2026-11-07: still 30
+  questions, at least 27 correct, IMT or authorised exam centre, 50 h initial and 8 h continuing
+  course, certificate 5 years, CMT holders exempt from the course; the page gives no time or
+  language.
 - Portaria n.º 293/2018, de 31 de outubro, Annexes I and II (text read on informador.pt,
   https://informador.pt/legislacao/diploma/portaria-n-o-293-2018/, 2026-11-06): initial course
   module hours 10 communication and interpersonal relations, 10 legal driving rules, 10 driving
@@ -122,13 +126,18 @@ copying and no item is taken from it, from a past paper or from a commercial app
   restraint as long as not in the front seats), 76-77 (reserved lanes; strictly necessary use to
   reach garages and car parks or to turn at the next junction when signs allow), 82(1) and (7)
   (driver and every passenger wear belts; the person who does not is the one sanctioned), 84
-  (no continued handling of devices; headphones banned; radar detectors banned). Alcohol (art. 81,
+  (no continued handling of devices; a single earpiece or loudspeaker system allowed when it needs no
+  continued handling; headphones banned; radar detectors banned), 25(1)(j) (moderate speed on
+  wet or poorly kept stretches), 85(2)(c) (carry the periodic inspection record when inspection is
+  compulsory). Re-read on PGDL 2026-11-07 for the reviewer pass. Alcohol (art. 81,
   0,2 g/l for TVDE drivers) is left to `ptimt`, which already asks it.
 - First aid: INEM, "Manual de Suporte Básico de Vida" and INEM public guidance (112; protect the scene, alert, then help; posição lateral de
   segurança), with the European Resuscitation
   Council Guidelines (2021, confirmed in 2025): adult compressions 100 to 120 a minute, 5 to 6 cm
   deep, 30 compressions to 2 breaths, AED switched on and followed; choking: encourage coughing,
-  then up to five back blows and five abdominal thrusts; stroke signs (face, arm, speech) call
+  then up to five back blows and five abdominal thrusts; anaphylaxis: call 112 and help the person use
+  their own adrenaline auto-injector; chemicals in the eye: rinse with plenty of clean running water
+  (ERC First Aid 2021; INEM Centro de Informação Antivenenos); stroke signs (face, arm, speech) call
   112 at once (Via Verde AVC). https://www.inem.pt/ and https://www.cprguidelines.eu/
 - Defensive and eco-driving: ADENE / Portuguese energy agency eco-driving advice and the IMT
   training objectives above (no figures beyond general rules of thumb).

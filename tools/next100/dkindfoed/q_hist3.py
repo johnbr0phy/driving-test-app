@@ -77,3 +77,28 @@ Q = [
  "Modstandsbevægelsen", ["Landstinget", "Samarbejdsregeringen", "Det danske kongehus"],
  "Modstandsbevægelsen udførte sabotage mod fabrikker og jernbaner og udgav illegale blade. Den voksede især fra 1943."),
 ]
+
+# Tilføjet til otte prøver (pulje 32).
+Q += [
+("Hvilken socialdemokratisk statsminister ledede landet i det meste af tiden fra 1924 til 1942?",
+ "Thorvald Stauning", ["J.C. Christensen", "Erik Scavenius", "Hans Christian Hansen"],
+ "Thorvald Stauning var Danmarks første socialdemokratiske statsminister. Hans regeringer stod blandt andet bag Kanslergadeforliget og socialreformen."),
+("Hvad skete der under påskekrisen i 1920?",
+ "Kongen afskedigede regeringen", ["Kongen abdicerede", "Grundloven blev ophævet", "Folketinget blev nedlagt for altid"],
+ "Christian 10. afskedigede regeringen, som havde flertal bag sig. Krisen endte med et kompromis, og siden har ingen konge afskediget en regering mod Folketingets vilje."),
+("Hvilken rolle spillede de illegale blade under besættelsen?",
+ "De bragte nyheder uden censur", ["De trykte tyske ordrer", "De hvervede til tysk tjeneste", "De var regeringens aviser"],
+ "De illegale blade blev trykt og delt ud i hemmelighed. De fortalte om modstand og krig og gik uden om den tyske censur."),
+("Hvad var Danmarks stilling under 1. verdenskrig fra 1914 til 1918?",
+ "Danmark var neutralt", ["Danmark var besat", "Danmark kæmpede med England", "Danmark kæmpede med Tyskland"],
+ "Danmark holdt sig neutralt under 1. verdenskrig. Mange sønderjyder måtte dog kæmpe i den tyske hær, fordi Sønderjylland dengang var tysk."),
+("Hvilken gruppe fik ud over kvinderne valgret med grundlovsændringen i 1915?",
+ "Tjenestefolk", ["Udlændinge med bopæl", "Unge fra 15 år", "Kun mænd med jord"],
+ "I 1915 fik kvinder og tjenestefolk (tyende) valgret. Tidligere havde kravet om egen husstand udelukket dem."),
+("Hvordan blev den nye grænse mellem Danmark og Tyskland fastlagt i 1920?",
+ "Ved folkeafstemninger", ["Ved en ny krig", "Ved et køb", "Ved en aftale mellem to konger"],
+ "Efter 1. verdenskrig stemte befolkningen i to zoner i Slesvig. Den nordlige zone stemte sig til Danmark og den sydlige til Tyskland."),
+("Hvad blev kong Christian 10. kendt for under besættelsen?",
+ "Sine daglige ridture i byen", ["At flygte til London", "At lede sabotagen", "At opløse Folketinget i protest"],
+ "Kongen red næsten hver dag gennem København uden livvagt. Ridturene blev et symbol på dansk sammenhold under besættelsen."),
+]

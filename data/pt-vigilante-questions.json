@@ -641,7 +641,7 @@
     "optionD": "A IGAI",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "A Comissão para a Igualdade e Contra a Discriminação Racial aplica o regime da Lei n.º 93/2017. A CNPD trata da proteção de dados e a ACT das condições de trabalho."
+    "explanation": "A Comissão para a Igualdade e Contra a Discriminação Racial recebe as queixas e aplica o regime da Lei n.º 93/2017, na redação atual. A CNPD trata da proteção de dados e a ACT das condições de trabalho."
   },
   {
     "type": "PTVIGIL",
@@ -921,7 +921,7 @@
     "optionD": "Responde só civilmente",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "O artigo 33.º torna ilícito o excesso de legítima defesa, com pena especialmente atenuada, mas o agente não é punido se o excesso resultar de perturbação, medo ou susto não censuráveis."
+    "explanation": "O artigo 33.º torna ilícito o excesso de legítima defesa, podendo a pena ser especialmente atenuada, mas o agente não é punido se o excesso resultar de perturbação, medo ou susto não censuráveis."
   },
   {
     "type": "PTVIGIL",
@@ -1236,14 +1236,14 @@
     "state": "ALL",
     "questionId": "PTVIG-ACE-005",
     "category": "ptvigAcessos",
-    "question": "Um funcionário passa o cartão e deixa entrar logo atrás uma pessoa desconhecida. Como se chama esta falha?",
-    "optionA": "Entrada à boleia",
-    "optionB": "Controlo duplo",
-    "optionC": "Acesso por eclusa",
-    "optionD": "Ronda cruzada",
+    "question": "Um funcionário passa o cartão e deixa entrar logo atrás uma pessoa desconhecida. O que faz o vigilante?",
+    "optionA": "Aborda-a e pede a credencial",
+    "optionB": "Nada, o cartão foi passado",
+    "optionC": "Regista só no fim do turno",
+    "optionD": "Bloqueia o cartão do funcionário",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Entrar colado a quem tem credencial, sem se identificar, é uma das falhas mais comuns no controlo de acessos. O vigilante deve abordar e pedir a credencial."
+    "explanation": "Entrar colado a quem tem credencial, sem se identificar, é uma das falhas mais comuns no controlo de acessos. Cada pessoa tem de se identificar, por isso o vigilante aborda com cortesia e pede a credencial."
   },
   {
     "type": "PTVIGIL",
@@ -1257,7 +1257,7 @@
     "optionD": "Separar zonas de fumadores",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Na eclusa a segunda porta só abre quando a primeira fecha, o que impede entradas à boleia e permite verificar quem passa."
+    "explanation": "Na eclusa a segunda porta só abre quando a primeira fecha, o que impede que alguém entre colado a outra pessoa e permite verificar quem passa."
   },
   {
     "type": "PTVIGIL",
@@ -1530,14 +1530,14 @@
     "state": "ALL",
     "questionId": "PTVIG-ACE-026",
     "category": "ptvigAcessos",
-    "question": "Num local com revistas autorizadas, quem não aceita a revista:",
-    "optionA": "É sempre detido",
-    "optionB": "Pode não poder entrar",
-    "optionC": "Paga uma multa ao vigilante",
-    "optionD": "Entra sem o saco",
+    "question": "Além dos avisos, de que depende o controlo de segurança à saída dos trabalhadores de uma fábrica?",
+    "optionA": "De ordem verbal do encarregado",
+    "optionB": "Do consentimento dos trabalhadores",
+    "optionC": "Da presença de um agente da PSP",
+    "optionD": "De um sorteio diário de nomes",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "A recusa de revista feita nos termos da lei pode determinar a impossibilidade de entrada. O vigilante não detém por isso (artigo 19.º, n.º 8, da Lei n.º 34/2013)."
+    "explanation": "O artigo 19.º-A, n.º 2, da Lei n.º 34/2013 exige que o controlo à saída dos locais de trabalho respeite as regras de informação e consentimento da convenção coletiva ou, se não houver, o consentimento individual do trabalhador."
   },
   {
     "type": "PTVIGIL",
@@ -1572,14 +1572,14 @@
     "state": "ALL",
     "questionId": "PTVIG-VIG-001",
     "category": "ptvigVigilancia",
-    "question": "O que deteta um sensor volumétrico de infravermelhos passivos?",
-    "optionA": "Calor de um corpo em movimento",
-    "optionB": "A abertura de uma janela",
-    "optionC": "O som de vidro a partir",
-    "optionD": "O fumo de um incêndio",
+    "question": "Para que serve a função antimascaramento de um detetor de movimento?",
+    "optionA": "Avisar que alguém tapou o detetor",
+    "optionB": "Aumentar o alcance do detetor",
+    "optionC": "Ignorar animais pequenos",
+    "optionD": "Desligar o detetor de dia",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "O detetor de infravermelhos passivos reage à variação de radiação térmica causada por uma pessoa a mover-se no seu campo de deteção."
+    "explanation": "Um intruso pode cobrir ou pintar a lente do detetor durante o horário de abertura para o cegar. A função antimascaramento deteta essa obstrução e envia um aviso à central antes de o sistema ser armado."
   },
   {
     "type": "PTVIGIL",
@@ -1950,14 +1950,14 @@
     "state": "ALL",
     "questionId": "PTVIG-CON-008",
     "category": "ptvigConflitos",
-    "question": "Que uso da força pode o vigilante fazer para se defender de uma agressão?",
-    "optionA": "Toda a que achar útil",
-    "optionB": "Nenhuma, em caso algum",
-    "optionC": "A que o cliente mandar",
-    "optionD": "O mínimo necessário",
+    "question": "Numa agressão, que zonas do corpo deve o vigilante proteger primeiro?",
+    "optionA": "As mãos e os pés",
+    "optionB": "As costas e as pernas",
+    "optionC": "Os ombros e os joelhos",
+    "optionD": "A cabeça e o pescoço",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "A legítima defesa admite só o meio necessário para repelir uma agressão atual e ilícita (artigo 32.º do Código Penal). O excesso pode ser punido."
+    "explanation": "Em defesa pessoal, os braços sobem para proteger a cabeça e o pescoço, onde um golpe pode fazer perder os sentidos ou causar lesões graves."
   },
   {
     "type": "PTVIGIL",
@@ -2202,14 +2202,14 @@
     "state": "ALL",
     "questionId": "PTVIG-REL-006",
     "category": "ptvigRelatorios",
-    "question": "No alfabeto fonético internacional, a letra B diz-se:",
-    "optionA": "Beta",
-    "optionB": "Bravo",
-    "optionC": "Bola",
-    "optionD": "Bruno",
+    "question": "Na rádio, que palavra fecha a mensagem e indica que se espera resposta?",
+    "optionA": "Terminado",
+    "optionB": "Escuto",
+    "optionC": "Repita",
+    "optionD": "Afirmativo",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "O alfabeto fonético internacional usa Alfa, Bravo, Charlie, Delta e seguintes, para soletrar sem erros pela rádio."
+    "explanation": "«Escuto» passa a palavra ao outro posto, que pode responder. «Terminado» encerra a comunicação, «repita» pede que a mensagem seja dita de novo e «afirmativo» quer dizer sim."
   },
   {
     "type": "PTVIGIL",
@@ -2342,14 +2342,14 @@
     "state": "ALL",
     "questionId": "PTVIG-EME-004",
     "category": "ptvigEmergencia",
-    "question": "Que agente se deve usar num fogo num quadro elétrico em tensão?",
-    "optionA": "Água em jato direto",
-    "optionB": "Espuma física",
-    "optionC": "Areia molhada",
-    "optionD": "Dióxido de carbono",
+    "question": "Ao combater um pequeno fogo ao ar livre com um extintor, como se coloca o operador?",
+    "optionA": "Com o vento de frente",
+    "optionB": "Do lado onde vai o fumo",
+    "optionC": "De costas para o fogo",
+    "optionD": "Com o vento pelas costas",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "O dióxido de carbono não conduz a eletricidade nem deixa resíduos. Água e espuma conduzem corrente e põem em risco quem as usa."
+    "explanation": "Com o vento pelas costas, o agente extintor é levado para o fogo e o calor e o fumo afastam-se de quem combate."
   },
   {
     "type": "PTVIGIL",
@@ -2469,7 +2469,7 @@
     "questionId": "PTVIG-EME-013",
     "category": "ptvigEmergencia",
     "question": "Que regime define as medidas de autoproteção contra incêndios nos edifícios?",
-    "optionA": "O regime de segurança contra incêndios",
+    "optionA": "O regime de segurança contra incêndio em edifícios",
     "optionB": "O Código da Estrada em vigor",
     "optionC": "O Código do Trabalho geral",
     "optionD": "O regulamento municipal de obras",

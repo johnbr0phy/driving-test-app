@@ -942,7 +942,7 @@
     "state": "ALL",
     "questionId": "FIHYG-TMP-008",
     "category": "fihygTemp",
-    "question": "Which temperature range does Ruokavirasto call the danger zone, where microbes multiply fastest?",
+    "question": "Which temperature range does Ruokavirasto call the danger zone, where microbes multiply quickly?",
     "optionA": "0 to 6 °C",
     "optionB": "60 to 90 °C",
     "optionC": "-18 to 0 °C",
@@ -1348,10 +1348,10 @@
     "state": "ALL",
     "questionId": "FIHYG-HND-002",
     "category": "fihygHandling",
-    "question": "Where should raw poultry be stored in a cold room?",
-    "optionA": "Above the salads",
-    "optionB": "Apart from ready-to-eat food",
-    "optionC": "Next to the cooked ham",
+    "question": "Which way of storing raw poultry does Ruokavirasto's guide suggest?",
+    "optionA": "Open on the salad shelf",
+    "optionB": "In its own cabinet or container",
+    "optionC": "In the same box as cooked ham",
     "optionD": "Unwrapped on the top shelf",
     "correctAnswer": "B",
     "correctIndex": 1,
@@ -1502,14 +1502,14 @@
     "state": "ALL",
     "questionId": "FIHYG-HND-013",
     "category": "fihygHandling",
-    "question": "How must allergen information on unpackaged food in a restaurant be given?",
-    "optionA": "In writing, or orally on request",
-    "optionB": "Only with a doctor's note",
-    "optionC": "Only on the receipt",
-    "optionD": "Not at all, it is optional",
+    "question": "A cafe gives allergen information orally when customers ask. What must staff have at hand?",
+    "optionA": "Written allergen details",
+    "optionB": "The suppliers' price lists",
+    "optionC": "A doctor's contact number",
+    "optionD": "Last month's sales figures",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "It may be written, for example on a menu or board, or given orally if a clear notice says the information is available on request. The written details must then be at hand for staff."
+    "explanation": "Allergen information on unpackaged food may be given orally if a notice says it is available on request, but the written details must be easy for staff to check, so the answer is always accurate."
   },
   {
     "type": "FIHYGIENE",
@@ -2125,7 +2125,7 @@
     "optionD": "Damp cloth grows bacteria",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Ruokavirasto allows a cloth towel only if each person has their own and it is changed daily, and sooner if dirty, because damp fabric soon holds bacteria."
+    "explanation": "Damp fabric soon holds bacteria, so a cloth towel that stays in use is changed at least daily, and sooner if dirty. Disposable towels avoid the problem altogether."
   },
   {
     "type": "FIHYGIENE",
@@ -2148,7 +2148,7 @@
     "category": "fihygPersonal",
     "question": "Which statement about wedding rings in food work is true?",
     "optionA": "They are always allowed bare",
-    "optionB": "They carry the same risk",
+    "optionB": "They trap dirt like other rings",
     "optionC": "They protect against bacteria",
     "optionD": "They never trap any dirt",
     "correctAnswer": "B",
@@ -2160,14 +2160,14 @@
     "state": "ALL",
     "questionId": "FIHYG-PER-035",
     "category": "fihygPersonal",
-    "question": "Before putting on disposable gloves, what must a worker do?",
-    "optionA": "Blow into the gloves",
-    "optionB": "Put on a ring",
-    "optionC": "Wash their hands",
-    "optionD": "Rinse the gloves in soap",
+    "question": "Why are hands washed before disposable gloves are pulled on?",
+    "optionA": "Wet gloves fit more tightly",
+    "optionB": "Soap makes gloves last longer",
+    "optionC": "Dirty hands soil the glove surface",
+    "optionD": "Gloves tear on dry skin",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Ruokavirasto's guide says hands are washed before gloves are put on. Dirty hands contaminate the outside of the gloves while pulling them on."
+    "explanation": "Pulling gloves on with dirty hands transfers microbes to the outside of the gloves, which then touch food. Ruokavirasto's guide says hands are washed before gloves go on."
   },
   {
     "type": "FIHYGIENE",
@@ -2175,13 +2175,13 @@
     "questionId": "FIHYG-CLN-001",
     "category": "fihygClean",
     "question": "What does disinfecting do that cleaning alone does not?",
-    "optionA": "It reduces microbes",
+    "optionA": "It kills most remaining microbes",
     "optionB": "It removes grease and dirt",
     "optionC": "It removes food residue",
     "optionD": "It makes surfaces rust-proof",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Cleaning with detergent removes dirt, grease and food residue. Disinfecting reduces microbes, and only works on a surface that has been cleaned first."
+    "explanation": "Cleaning with detergent removes dirt, grease and food residue. Cleaning also lowers microbe numbers, but disinfecting kills most of those left, and only works on a surface that has been cleaned first."
   },
   {
     "type": "FIHYGIENE",
@@ -2489,7 +2489,7 @@
     "optionD": "To set the staff's wages",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Self-monitoring helps the business describe its work, identify where food could become unsafe, prevent it and correct mistakes. It also reduces paid official inspections."
+    "explanation": "Self-monitoring helps the business describe its work, identify where food could become unsafe, prevent it and correct mistakes."
   },
   {
     "type": "FIHYGIENE",
@@ -2638,12 +2638,12 @@
     "category": "fihygOwncheck",
     "question": "Which statement about self-monitoring is true?",
     "optionA": "Only the inspector does it",
-    "optionB": "Every worker does it daily",
+    "optionB": "Staff follow it in daily work",
     "optionC": "Small kitchens may skip it",
     "optionD": "It covers only cleaning",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Every worker follows the self-monitoring plan: measuring temperatures, cleaning to plan, recording deviations. Small businesses may keep parts of it simpler, but it is never optional."
+    "explanation": "The operator is responsible for it, but every worker follows the plan in daily work: measuring temperatures, cleaning to plan, recording deviations. Small businesses may keep parts of it simpler, but it is never optional."
   },
   {
     "type": "FIHYGIENE",

@@ -37,6 +37,10 @@ import escapcondEs from "@/lib/landings/escapcond.es.json";
 import espoliciaEs from "@/lib/landings/espolicia.es.json";
 import esguardiaEs from "@/lib/landings/esguardia.es.json";
 import esvigilanteEs from "@/lib/landings/esvigilante.es.json";
+import demotorradDe from "@/lib/landings/demotorrad.de.json";
+import deaevoDe from "@/lib/landings/deaevo.de.json";
+import de34aDe from "@/lib/landings/de34a.de.json";
+import deheilprDe from "@/lib/landings/deheilpr.de.json";
 
 const LANDINGS: Record<string, TranslatedLandingContent> = {
   "detheorie.de": detheorieDe as TranslatedLandingContent,
@@ -46,6 +50,10 @@ const LANDINGS: Record<string, TranslatedLandingContent> = {
   "espolicia.es": espoliciaEs as TranslatedLandingContent,
   "esguardia.es": esguardiaEs as TranslatedLandingContent,
   "esvigilante.es": esvigilanteEs as TranslatedLandingContent,
+  "demotorrad.de": demotorradDe as TranslatedLandingContent,
+  "deaevo.de": deaevoDe as TranslatedLandingContent,
+  "de34a.de": de34aDe as TranslatedLandingContent,
+  "deheilpr.de": deheilprDe as TranslatedLandingContent,
 };
 
 /** The landing content of `examId` in `lang`, if one is registered. */

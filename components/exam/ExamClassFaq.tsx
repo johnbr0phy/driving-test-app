@@ -10,6 +10,9 @@ const TEACHES: Record<string, string> = {
   espolicia: "a Policía Nacional oposiciones class",
   esguardia: "a Guardia Civil oposiciones class",
   esvigilante: "a vigilante de seguridad training course",
+  deaevo: "an AEVO trainer course (Ausbildung der Ausbilder)",
+  de34a: "a Sachkunde 34a preparation course",
+  deheilpr: "a Heilpraktiker exam preparation course",
   // The DMV landing (/dmv-practice-test)
   dmv: "driver's ed or run a driving school",
   // Healthcare programs

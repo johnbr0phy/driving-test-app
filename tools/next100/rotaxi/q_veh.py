@@ -1,7 +1,7 @@
 CAT = "rotxVehicle"; SEG = "VEH"
 Q = [
 ("Under Law 38/2003, a passenger taxi is a car with at most how many seats, the driver's included?",
- "5", ["4", "7", "9"],
+ "5", ["6", "7", "9"],
  "The law defines a passenger taxi as a car with up to 5 seats including the driver's, so it carries at most 4 people besides the driver."),
 ("Under Law 38/2003, a taxi's outside signs and markings must give clients and inspectors information on:",
  "The tariffs it charges", ["The driver's earnings", "The car's service history", "The fuel it uses"],
@@ -13,7 +13,7 @@ Q = [
  "Beside each client seat", ["Only on the driver's side", "Only at the back of the car", "On the roof, for luggage"],
  "Art. 30(2) requires access and exit doors beside each bench or seat for clients, plus space for hand luggage."),
 ("The roof light of a taxi must be visible from at least:",
- "100 metres", ["25 metres", "50 metres", "300 metres"],
+ "100 metres", ["150 metres", "200 metres", "300 metres"],
  "The taxi roof light (lampa taxi), with the word TAXI and its free and busy lamps, must be visible from at least 100 metres."),
 ("What colour is the taxi roof light box?",
  "Yellow", ["White", "Blue", "Light green"],
@@ -40,7 +40,7 @@ Q = [
  "On the rear doors", ["On the bonnet", "On the roof light", "On the number plates"],
  "Art. 31(4) places one badge on each rear door (on the cab doors for goods taxis), for the authorisation's full validity."),
 ("The day and night distance tariffs written on a taxi's front doors must be readable from at least:",
- "5 metres", ["1 metre", "15 metres", "50 metres"],
+ "5 metres", ["10 metres", "15 metres", "20 metres"],
  "Art. 35(1) requires the lei/km tariffs for day and night on the front doors, sized so they can be read from at least 5 metres."),
 ("What must be displayed inside a taxi where clients can see it?",
  "The tariff list and a photo badge", ["The carrier's profit figures", "The driver's home address", "The car's purchase price"],

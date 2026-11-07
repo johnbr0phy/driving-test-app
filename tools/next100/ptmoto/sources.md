@@ -128,3 +128,19 @@ and crash-details items were replaced while writing), and checked by stem simila
 ## Not modelled
 The real questions carry photos or drawings; Tigertest describes them in words. The practical
 tests (closed circuit and road) are not modelled. Fines, fees and penalty points are not asked.
+
+## Review notes (2026-11-07)
+- Art. 27(1) table re-read from a Código da Estrada copy with the table as text
+  (https://www.invicta.pt/pdf/legislacao/CodigoEstrada.pdf, read 2026-11-07): motorcycles over
+  50 cm3 without sidecar 50/120/100/90; with sidecar or trailer 50/100/80/70; tricycles
+  50/100/90/80. Confirms PTMOTO-SPD-001 to 004.
+- Art. 49(1)(c) (same copy): no stopping or parking less than 5 m after and 25 m before a public
+  transport stop sign, or less than 6 m before it when the vehicles run on rails. PTMOTO-PRK-014
+  explanation corrected to match.
+- Art. 7(2) (pgdlisboa consolidated text, read 2026-11-07): variable message signs rank second,
+  after temporary signs, ahead of lights, vertical signs and markings. Confirms PTMOTO-SIN-018/019.
+- Art. 31(1)(a): a driver leaving a car park, fuel area or any property or private track must
+  always give way. Used for PTMOTO-PRI-026 (rewritten so it no longer repeats ptimt's via
+  reservada slip road item).
+- Format (40 questions, 40 minutes, 36 to pass; 10 in 10 for B/B1 holders, 9 to pass) also
+  matches open-exam-prep.com and Portaria 536/2005 art. 2 (older text, same figures).

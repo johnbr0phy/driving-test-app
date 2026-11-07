@@ -8,9 +8,9 @@ key's letter is found after sorting.
 import importlib.util, json, re, sys, os
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, "..", "..", ".."))
-# (module, pool). Five 40-question tests: 4/4/5/4/7/6/5/5 per test, pools exactly 5x.
-ORDER = [("hist1", 20), ("hist2", 20), ("hist3", 25), ("hist4", 20),
-         ("demokrati", 35), ("samfund", 30), ("kultur", 25), ("vaerdier", 25)]
+# (module, pool). Eight 40-question tests: 4/3/4/3/7/7/7/5 per test, pools exactly 8x.
+ORDER = [("hist1", 32), ("hist2", 24), ("hist3", 32), ("hist4", 24),
+         ("demokrati", 56), ("samfund", 56), ("kultur", 56), ("vaerdier", 40)]
 out = sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, "data", "dk-indfoedsret-questions.json")
 NUM = re.compile(r"^(\d+(?:,\d+)?)\s*(\S*)$")
 BAD = ["\u2014", "\u2013 ", '"', "Alle svar", "Ingen af svarene", "A og B", "A eller B"]

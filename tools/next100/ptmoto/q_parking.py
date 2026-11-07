@@ -41,7 +41,7 @@ Q = [
  "In gear with the engine off, the rear wheel cannot turn easily, so the bike will not roll off its stand."),
 ("A tram stop sign is on your side of the street. How far before it is stopping or parking banned?",
  "6 m", ["25 m", "3 m", "10 m"],
- "Stopping and parking are prohibited less than 5 m after and 6 m before a stop sign for vehicles running on rails."),
+ "Where the public transport runs on rails, stopping and parking are prohibited less than 6 m before its stop sign. The 25 m figure is for bus stops."),
 ("You want to leave your motorcycle in front of a garage door that nobody seems to use. This is:",
  "Not allowed", ["Allowed for a short time", "Allowed if you leave a note", "Allowed for motorcycles"],
  "Parking is prohibited where it blocks access for people or vehicles to properties, car parks or parking places."),

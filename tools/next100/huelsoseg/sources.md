@@ -155,5 +155,10 @@ commercial practice site. Checked 2026-11-06 unless noted.
 - hukresz, hukreszmoto, hugki banks (English) grepped for accident, first aid, helmet and 112
   items: no shared fact-and-answer pair (the GKI "112" item is not repeated; HEL-002 asks the
   direct ambulance number 104). hubizt (insurance) has no first aid content.
+- Review 2026-11-07: HEL-018 asked when to remove a motorcyclist's helmet ("only if the airway
+  needs it"), the same fact and answer as hukreszmoto HUKRM-HAZ-012; rewritten to the chin
+  strap step before removal. KRESZ 58. § re-read 2026-11-07 on net.jogtar.hu: (2) orange plate
+  numbers given when notifying the police for a dangerous goods vehicle; (5) first aid kit and
+  fire extinguisher, as cited.
 - Kept clear of `cpr`, `ukfaw`, `casfa`, `aufirstaid` stems (all English; scenarios and wording
   here are Hungarian and Hungary-specific: KRESZ 58. §, Btk., 104, Rautek grip, 250 mg aspirin).

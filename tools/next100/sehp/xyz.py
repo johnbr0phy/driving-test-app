@@ -74,9 +74,9 @@ ITEMS = {
         XYZ(3, "Om $3^x = 81^2$, vad är $x$?",
             ["8", "2", "4", "6"],
             "$81 = 3^4$, så $81^2 = 3^{4 \\cdot 2} = 3^8$. Alltså är $x = 8$. Den som adderar exponenterna får 6."),
-        XYZ(3, "En cyklist cyklar en sträcka med medelhastigheten 60 km/h och samma sträcka tillbaka med 40 km/h. Vilken är medelhastigheten för hela resan?",
-            ["48 km/h", "50 km/h", "45 km/h", "52 km/h"],
-            "Säg att sträckan är 120 km. Dit tar 2 h och hem 3 h, alltså 240 km på 5 h, 48 km/h. Medelvärdet 50 km/h blir fel eftersom mer tid går åt till den långsamma delen."),
+        XYZ(3, "En bil kör en sträcka med medelhastigheten 90 km/h och samma sträcka tillbaka med 60 km/h. Vilken är medelhastigheten för hela resan?",
+            ["72 km/h", "75 km/h", "78 km/h", "84 km/h"],
+            "Säg att sträckan är 180 km. Dit tar 2 h och hem 3 h, alltså 360 km på 5 h, 72 km/h. Medelvärdet 75 km/h blir fel eftersom mer tid går åt till den långsamma delen."),
     ],
     0: [
         XYZ(1, "Vad är $\\frac{0{,}6}{0{,}03}$?",

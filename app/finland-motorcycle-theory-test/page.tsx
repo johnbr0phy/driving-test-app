@@ -226,7 +226,7 @@ export default function FinlandMotorcycleTheoryLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">1. Master the right-hand rule from the saddle</h3>
               <p>
-                Most picture questions are about who goes first. At an unsigned junction, a T-junction included, you give way to traffic from the right, but you always give way when you come from a car park, a yard, a fuel station or a pihakatu, and when you turn across people crossing. Then add the rider&apos;s view: a driver who must give way to you may still not see you.
+                Many picture questions are about who goes first. At an unsigned junction, a T-junction included, you give way to traffic from the right, but you always give way when you come from a car park, a yard, a fuel station or a pihakatu, and when you turn across people crossing. Then add the rider&apos;s view: a driver who must give way to you may still not see you.
               </p>
             </div>
             <div>

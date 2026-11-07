@@ -12,7 +12,7 @@ template (and shaped like `sejakt`). Files already written by the builder:
 
 Rebuild with `python3 -I tools/next100/fihunt/build.py`. Validate with
 `python3 -I .claude/skills/exam-bank/scripts/validate_bank.py data/finland-hunter-exam-questions.json --lang fi --pool fihnLaji=48 --pool fihnLaki=40 --pool fihnTurva=26 --pool fihnAseet=24 --pool fihnEtiikka=17 --pool fihnPyynti=17 --pool fihnRiista=17 --pool fihnSaalis=11`
--> `letters {'A': 52, 'B': 52, 'C': 48, 'D': 48}  avg option 18 chars  key-longest 20%  key>1.2x 11%  PASS`.
+-> `letters {'A': 52, 'B': 52, 'C': 48, 'D': 48}  avg option 18 chars  key-longest 20%  key>1.2x 11%  PASS` (rebuilt 2026-11-07 after review fixes to FIHUNT-LAJ-040 and -041, then to FIHUNT-TUR-014, -PYY-008 and -ASE-020 in a second review against Finlex 615/1993 and 666/1993 and the riistakeskus 2026 instruction PDF).
 `python3 -I tools/check_banks.py` PASS with the bank on disk (2026-11-06).
 Everything below goes in shared files.
 

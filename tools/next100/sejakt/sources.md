@@ -2,8 +2,10 @@
 
 All checked 2026-11-06. Official sources first (the source watch reads the first three URLs).
 
-1. https://www.naturvardsverket.se/amnesomraden/jakt-och-vilt/jakt/teoriprov-jagarexamen/
-   Naturvårdsverket, "Teoriprov för jägarexamen" (page marked "Granskad 26 oktober 2026").
+1. https://www.naturvardsverket.se/amnesomraden/jakt-och-vilt/for-jagare/teoriprov-jagarexamen/
+   Naturvårdsverket, "Teoriprov för jägarexamen" (page marked "Granskad 26 oktober 2026"). Re-checked
+   2026-11-07 by the reviewer: the old /jakt/teoriprov-jagarexamen/ URL now 301-redirects here; 70 frågor
+   på 60 minuter, fyra alternativ, ett rätt, engelska, tolk, preliminärt resultat all confirmed.
    Format: 70 frågor på 60 minuter; varje fråga har fyra svarsalternativ, ett rätt, ibland en bild;
    bokmärken; varning för obesvarade frågor; preliminärt resultat efter inlämning, som provledaren
    måste godkänna. Provet görs i appen "Teoriprov för jägarexamen" (App Store, Google Play) på egen

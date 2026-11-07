@@ -47,7 +47,7 @@ Q = [
  "Jagt på råbuk med haglgevær er forbudt fra 16. maj til 15. juli, hvor kun riffel og bue må bruges."),
 ("Må man skyde kronvildt med haglgevær?",
  "Nej, ikke ved jagt", ["Ja, med 4 mm hagl", "Ja, på under 20 m", "Ja, men kun kalve"],
- "Haglgeværer må kun bruges på arterne i klasse 2 til 5, ikke på klasse 1 som kronvildt, dåvildt og vildsvin. Kun bemyndigede hundeførere må aflive nødstedt vildt med haglgevær."),
+ "Haglgeværer må kun bruges på arterne i klasse 2 til 5, ikke på klasse 1 som kronvildt, dåvildt og vildsvin. Bemyndigede hundeførere må dog bruge haglgevær, når de skal aflive nødstedt vildt."),
 ("Et haglgevær i kaliber 28 er mindre end kaliber 20. Hvilken af disse arter må det bruges til?",
  "Ringdue", ["Fasan", "Agerhøne", "Gråand"],
  "Haglgeværer under kaliber 20 må kun bruges til klasse 5: duer, kragefugle, vadefugle og stære."),

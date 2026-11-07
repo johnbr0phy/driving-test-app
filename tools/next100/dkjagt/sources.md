@@ -7,7 +7,7 @@ in words (the real test shows pictures). Checked 2026-11-06 unless noted.
 
 ## Exam format (confirmed)
 - Styrelsen for Grøn Arealomlægning og Vandmiljø, »Instruks for jagtprøven« 2026 (PDF read
-  2026-11-06): https://sgavmst.dk/media/ttndlsbs/instruks-for-jagtproeven-2026.pdf
+  2026-11-06, pkt. 3.3 and 3.6 rechecked 2026-11-07): https://sgavmst.dk/media/ttndlsbs/instruks-for-jagtproeven-2026.pdf
   - 3.3: »den skriftlige prøve består af 40 spørgsmål, hvoraf mindst 36 skal besvares rigtigt«;
     one cross per question; »ubesvarede spørgsmål tæller som fejl«; »man har 30 min«; questions
     can be read aloud and explained; no electronic media or aids.
@@ -83,3 +83,13 @@ in words (the real test shows pictures). Checked 2026-11-06 unless noted.
 - The exact 2026/27 jagttider (revision timetable only).
 - Any fee (jagtprøvegebyr, jagttegnsafgift) or insurance premium: deliberately left out.
 - siri.dk-style official English pages: none exist for the jagtprøve.
+
+## Review 2026-11-07
+- Re-read all 200 items against the texts above (jagtloven §§ 4, 15-20, 22-25, 39; bek. 1652/2017
+  §§ 1, 7-9, 11, 14; bek. 1479/2023 § 1-3 and bilag 1; våbenbek. §§ 49, 52; jagttidsbek. § 3-4;
+  bek. 827/2016 § 1 and § 4 (hundeførere may use a shotgun to put down any species); jagttegnsbek.
+  § 51; instruks 2026 pkt. 3.3, 3.6 and 7.3; retningslinjer bilag 2, where »esser« is the official
+  term). A web search on 2026-11-07 found the same 40/36 format in the 2026 and 2024 instruks.
+- Changed: FOR-005 (a hind usually has one calf, not "at most"), VAB-015 (wording of the
+  hundefører exception), LOV-031 (deadline phrased as in § 51: senest 31. marts, digitally),
+  ART-024 (stem and one distractor reworded).

@@ -220,8 +220,15 @@ As for fitheory: add `"fihygiene"` to `SHARE_COPY_IDS` and:
 
 ## components/TeachNudge.tsx, components/exam/ExamClassFaq.tsx
 
-Add `"fihygiene"` to `TEACHER_LED`: vocational schools, adult education centres and the examiners'
-own courses teach the Hygiene Passport as a class before the test (as for `ukfood` and `aufss`).
+Add `"fihygiene"` to `TEACHER_LED` in `components/TeachNudge.tsx`: vocational schools, adult
+education centres and the examiners' own courses teach the Hygiene Passport as a class before the
+test (as for `ukfood` and `aufss`). In `components/exam/ExamClassFaq.tsx` `TEACHES`:
+
+```ts
+  fihygiene: "Hygiene Passport courses",
+```
+
+The landing already renders `<ExamClassFaq examId="fihygiene" />` and `classFaqJsonLd("fihygiene")`.
 
 ## lib/sitemaps.ts, lib/server/classQuestions.ts, next.config.ts, components/TestIcon.tsx
 
@@ -246,3 +253,17 @@ health statement provision of the Communicable Diseases Act (not asked in the ba
 ```md
 - **Finland Hygiene Passport** (`fihygiene`, the Finnish Hygiene Passport test (hygieniapassitesti, hygieniaosaamistesti) for anyone handling unpackaged perishable food, set by Ruokavirasto and held by approved examiners, `/finland-hygiene-passport/*`, landing `/finland-hygiene-passport-practice-test`): `data/finland-hygiene-passport-questions.json` (200 original questions on the six areas of Ruokavirasto regulation 7/2021 Annex 1, area 2 split three ways: microbes and contamination 30, food poisoning 30, storage, cooking and cooling temperatures 35, hygienic handling and allergens 25, personal hygiene 35, cleaning, waste and pests 20, self-monitoring and Oiva 15, food law and authorities 10), five 40-question tests (IDs 24001-24005, 6/6/7/5/7/4/3/2 per test, no spares) and five topic sets 24001-24005, 10 dashboard steps, state `FIHYGIENE`, prefix `FIHYG-`, 85% pass (34 of 40, like the real test). The real test is 40 true/false statements in 45 minutes on paper, in Finnish, Swedish or English; ours have four options, about 15 asking which statement is true. Finnish figures from decree 318/2021 s. 23 and Ruokavirasto's restaurant guidance (6 °C, 4 °C minced meat, 0 to 3 °C cold-smoked fish, 8 °C yoghurt, 12 °C for 4 hours on display, hot at least 60 °C and once only, cooling within 4 hours, 70 °C cooking, 75 °C poultry, danger zone 6 to 60 °C); no UK FSA figures, no fees, no salmonella health statement (pending change). Kept clear of `ukfood`, `foodhandler`, `aufss` and `foodmgr` stems. Built by `tools/next100/fihygiene/build.py`; sources in `tools/next100/fihygiene/sources.md`. Region FI, hub group "Finland licences and workplace certificates", `[data-theme="fihygiene"]` deep teal (172 90% 22%), borrows the UK food hygiene tiger, teacher-led.
 ```
+
+## Review (2026-11-07)
+
+Reviewer pass per `tools/next100/REVIEW.md`: all 200 items read. Changed 7 items, ids unchanged:
+PER-035 (duplicate of a `ukfood` glove item, rewritten as why hands are washed first), HND-002
+(near-duplicate raw meat storage stem, now Ruokavirasto's own cabinet or container advice), HND-013
+(same fact and answer as `ukfood`, now what staff must have at hand for oral allergen info),
+OWN-003 (unsupported claim that self-monitoring cuts paid inspections removed), PER-032 (explanation
+no longer attributes an own-towel rule to Ruokavirasto), PER-034 (vague key "same risk" clarified),
+TMP-008 (danger zone is where microbes multiply quickly, not fastest). Facts re-checked: test format
+on hygieniapassi.fi (40 true/false, 34, 45 min, fi/sv/en) and Ruokavirasto's operator guide
+(11.9.2026: three months including earlier similar work, foreign passports not accepted, valid
+until further notice), recorded in `sources.md`. No shared-file changes beyond the blocks above.
+Validator: `key-longest 22%  key>1.2x 14%  PASS`.

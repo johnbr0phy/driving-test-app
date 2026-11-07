@@ -166,8 +166,8 @@ Results and stats read `exam.categoryLabels` first (Swedish above). Add English 
 ## lib/shuffleOptions.ts
 
 The `sv` patterns are in place. The bank has no position-dependent options ("A och B", "Båda",
-"Alla svaren", "ovanstående"); `build.py` asserts it. 32 all-number items (years, counts,
-"2,5 miljoner", "250 000") are sorted ascending by the build, the key at an end slot in 17 of 32.
+"Alla svaren", "ovanstående"); `build.py` asserts it. 30 all-number items (years, counts,
+"2,5 miljoner", "250 000") are sorted ascending by the build, the key at an end slot in 15 of 30.
 
 ## app/globals.css
 

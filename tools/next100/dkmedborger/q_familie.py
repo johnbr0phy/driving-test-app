@@ -27,7 +27,7 @@ Q = [
  "Man har pligt til at underrette kommunen, hvis man kender til vold eller overgreb mod børn og unge under 18 år."),
 ("Hvor gammel er man, når man er myndig i Danmark?",
  "18 år", ["15 år", "16 år", "21 år"],
- "Som myndig kan man fx tage kørekort, låne penge i banken og har selv ansvaret for sit liv."),
+ "Som myndig kan man fx selv indgå aftaler, låne penge i banken og bestemme over sine egne penge."),
 ("Hvad må børn under 13 år normalt ikke?",
  "Have lønnet arbejde", ["Gå til fodbold", "Gå i fritidsklub", "Låne bøger"],
  "Børn under 13 år må normalt ikke have lønnet arbejde uden for hjemmet."),

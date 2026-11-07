@@ -75,7 +75,7 @@ Rider rules used:
 - s36(8) be): two-wheeled motorcycles and mopeds may use a bus lane without disturbing buses and
   trolleybuses; s36(12): two-wheeled motorcycles and mopeds may move forward beside or between
   stopped vehicles at junctions, narrowings, level crossings or other traffic stops, if there is
-  room and they do not hinder vehicles signalling a change of direction; the yellow advanced cycle waiting area (153/a) is for bicycles.
+  room and they do not hinder vehicles signalling a change of direction; the advanced cycle waiting area (s18(1) h/1, "előretolt kerékpáros felálló hely") is for two-wheeled bicycles turning left, entered only on red (re-read 2026-11-07).
 - s37(1)-(3): motorways and expressways only for vehicles able to do 60 km/h on the level; no
   joining from roadside property, no U-turn or reversing.
 - s40(8)-(9): two-wheeled motorcycles and mopeds may stop on the pavement without a sign if they
@@ -113,5 +113,13 @@ Rules shared with car drivers (zero alcohol, foreign licence, car speed limits, 
 the next junction, residential zone, inner lanes, following distance, emergency corridor, crashes)
 are left to `hukresz`. Stems were compared with every `data/*-questions.json` bank (hukresz and the
 moto, ukmoto, nzmoto, zak53moto, sgrtt, dkmoto, fimoto, ptmoto, semoto and demotorrad banks) and
-reworded where they matched. Siblings `hugki`, `huelsoseg` and `hubizt` had no banks on disk when
-this was written; none of them covers motorcycle rules.
+reworded where they matched. Siblings `hugki` (data/hungary-gki-questions.json), `huelsoseg`
+(data/hungary-first-aid-questions.json) and `hubizt` (data/hu-biztositaskozvetito-questions.json)
+were checked on disk on 2026-11-07: no stem overlaps and no shared fact-and-answer pairs (the first
+aid bank has no helmet item, so this bank keeps its one helmet-removal question).
+
+## Review 2026-11-07
+Reviewer re-read KRESZ s18(1) h/1, s26, s36(8) and (12), s40(8)-(9), s54(8), s56(6) and s57(3) on
+net.jogtar.hu: the bank's rider rules match. Reworded items that repeated a scenario and answer in
+another EU motorcycle or driving bank (greece, malta, belgium, finland, portugal motorcycle and car
+banks) and within this bank (40 km/h and expressway repeats).

@@ -111,3 +111,23 @@ Checked 2026-11-06 unless noted.
   emergency number, already in ptimt) was replaced. No stem above 0.7 similarity remains.
 - Kept clear of `iepsa`, `uksia`, `aesira`, `zapsira`, `security`, `caguard` and `esvigilante` by
   writing only Portuguese law (Lei 34/2013, CPP, CP) and Portuguese training units.
+- Re-checked 2026-11-07 against `data/portugal-motorcycle-questions.json` (ptmoto, now on disk) and
+  `data/es-vigilante-seguridad-questions.json`: one shared fact (a passive infrared detector reacts
+  to body heat in motion, also ESVIG-TEC-010) was replaced by an anti-masking item (PTVIG-VIG-001).
+  No other stem above 0.6 similarity or shared key of more than 12 characters remains.
+
+## Review (2026-11-07)
+- Lei 34/2013 re-read on pgdlisboa (arts. 5.º, 6.º-A, 11.º, 17.º to 19.º-A, 22.º to 24.º, 27.º,
+  29.º to 31.º, 34.º to 37.º, 57.º): every key that cites it confirmed; Lei 46/2019 is still the
+  latest amendment (web search 2026-11-07 found no later one).
+- Despacho n.º 8270/2019, Anexo, arts. 5.º, 8.º, 9.º, 10.º and 12.º re-read: 20 questions, 40
+  minutes, 2 to 4 options or true/false, 10 correct to pass, review within 48 hours, pass valid six
+  months, Portuguese required. Landing, examFacts and WIRING match.
+- CICDR: made an independent body by law in January 2024 and still receives complaints under Lei
+  93/2017 (ECRI 2025 report and press, 2026); PTVIG-DIR-010 explanation updated.
+- Rewritten: PTVIG-ACE-005 ("entrada à boleia" is not an established term; now asks what to do),
+  PTVIG-ACE-026 (repeated PTVIG-REG-011; now the art. 19.º-A, n.º 2 consent rule),
+  PTVIG-CON-008 (repeated PTVIG-PEN-009; now guarding head and neck), PTVIG-REL-006 (same fact
+  and key as ESVIG-INS-003; now «escuto»), PTVIG-EME-004 (same fact as ESVIG-INS-013; now wind at
+  the back with an extinguisher). Re-checked against ptimt, ptcam, pttvde and ptmoto: no stem
+  above 0.65 similarity with the same fact.

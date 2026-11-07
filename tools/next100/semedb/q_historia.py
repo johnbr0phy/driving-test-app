@@ -23,7 +23,7 @@ Q = [
  "Att minska alkoholdrickandet", ["Kortare arbetsdag i fabrikerna", "Rösträtt för kvinnor", "Fri religion för alla"],
  "Nykterhetsrörelsen var en tidig folkrörelse som ville att människor skulle sluta dricka alkohol. Spritmissbruket var utbrett på 1800-talet."),
 ("Vilka metoder använde folkrörelserna för att föra fram sina krav?",
- "Lagliga metoder", ["Väpnade uppror mot kungen", "Sabotage mot fabriker", "Bojkott av alla val"],
+ "Demonstrationer och studiecirklar", ["Väpnade uppror mot kungen", "Sabotage mot fabriker", "Bojkott av alla val"],
  "Folkrörelserna demonstrerade, höll protestmöten, gav ut böcker och skrev i tidningar. De startade också bibliotek och studiecirklar."),
 ("Vilket år fick nästan alla män rösträtt till riksdagen?",
  "1909", ["1866", "1918", "1921"],
@@ -68,6 +68,6 @@ Q = [
  "Folk började säga du till varandra", ["Titlar blev obligatoriska igen", "Ni blev det enda tilltalet", "Barn fick rösta i skolvalen"],
  "Människor slutade använda titlar och ni och sa i stället du. Det speglade ett mer jämlikt samhälle."),
 ("Vad hände i svensk politik år 1976?",
- "Regeringen blev icke-socialdemokratisk", ["Sverige gick med i EU", "Den första kvinnliga statsministern valdes", "Kvinnor fick rösträtt"],
+ "Socialdemokraterna förlorade regeringsmakten", ["Sverige gick med i EU", "Den första kvinnliga statsministern valdes", "Kvinnor fick rösträtt"],
  "Efter lång tid med socialdemokratiska regeringar fick Sverige 1976 en borgerlig regering. Sedan dess har regeringarna växlat."),
 ]

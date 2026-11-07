@@ -21,7 +21,7 @@ Q = [
 ("At what temperature must cut vegetables and sprouts be stored?",
  "6 °C or below", ["Room temperature", "8 °C or below", "12 °C or below"],
  "Once vegetables are cut, bacteria can grow on the damp cut surfaces, so cut vegetables and sprouts are easily perishable and kept at 6 °C or below."),
-("Which temperature range does Ruokavirasto call the danger zone, where microbes multiply fastest?",
+("Which temperature range does Ruokavirasto call the danger zone, where microbes multiply quickly?",
  "6 to 60 °C", ["0 to 6 °C", "60 to 90 °C", "-18 to 0 °C"],
  "Between 6 and 60 °C bacteria multiply quickly. Easily perishable food should pass through this range as fast as possible and not be kept in it."),
 ("What core temperature should food reach during cooking?",

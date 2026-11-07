@@ -88,8 +88,8 @@ ITEMS = {
         MEK(3, "Förändringen skedde så ___ att ingen märkte den förrän man jämförde med bilder från tjugo år tidigare.",
             ["gradvis", "plötsligt", "tydligt", "ofta"],
             "Något som syns först vid en jämförelse över tjugo år har skett långsamt och gradvis. En plötslig förändring hade märkts direkt."),
-        MEK(2, "Kommunen valde att ___ beslutet tills fler remissvar hade kommit in, för att inte ___ frågan.",
-            ["skjuta upp ... förhasta", "tidigarelägga ... försena", "skjuta upp ... utreda", "upphäva ... avgöra"],
-            "Den som väntar på fler svar skjuter upp beslutet för att inte förhasta sig. Att inte utreda frågan går emot skälet att vänta."),
+        MEK(2, "Kommunen valde att ___ beslutet tills fler remissvar hade kommit in, för att inte riskera ett ___ avgörande.",
+            ["skjuta upp ... förhastat", "tidigarelägga ... försenat", "skjuta upp ... genomtänkt", "påskynda ... välgrundat"],
+            "Den som väntar på fler svar skjuter upp beslutet för att inte fatta det förhastat. Ett genomtänkt avgörande är just det man vill nå genom att vänta, inte något man riskerar."),
     ],
 }

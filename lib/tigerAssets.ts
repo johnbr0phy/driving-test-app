@@ -68,6 +68,8 @@ const BORROWED_SETS: Record<string, string> = {
   esdgt: "driving", ptimt: "driving", bedriving: "driving", dkteori: "driving", setrafik: "driving", fitheory: "driving", grdriving: "driving", rodrpciv: "driving", hukresz: "driving", mttheory: "driving", detheorie: "driving",
   // Spain (Nov 2026): CAP the CDL tiger, police exams the police tiger, vigilante the security tiger.
   escapcond: "cdl", espolicia: "police", esguardia: "police", esvigilante: "security",
+  // Germany (Nov 2026): motorcycle the motorcycle tiger, AEVO the teaching tiger, 34a the security tiger, Heilpraktiker the clinical tiger.
+  demotorrad: "moto", deaevo: "praxisplt", de34a: "security", deheilpr: "nclex",
   // Bank exams wear the IBPS PO tiger; state police exams the police tiger.
   sbipo: "ibpspo", sbiclerk: "ibpspo", ibpsrrb: "ibpspo",
   delhipolice: "police", biharpolice: "police", rajpolice: "police", mppolice: "police",

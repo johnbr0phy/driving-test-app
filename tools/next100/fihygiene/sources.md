@@ -1,6 +1,7 @@
 # Sources: Finland Hygiene Passport test (fihygiene)
 
-All checked 2026-11-06. Items are original: Ruokavirasto's model test questions were not opened for
+All checked 2026-11-06; the format on https://hygieniapassi.fi/en/hygieniapassitesti/English re-confirmed
+2026-11-07 (40 true/false statements, 34/40 to pass, 45 minutes, Finnish, Swedish or English, translated tests on demand). Items are original: Ruokavirasto's model test questions were not opened for
 writing and nothing was copied from them, from examiners' courses or from mock-test sites.
 
 ## Format (landing, FAQ, examFacts only; never in the bank)
@@ -11,7 +12,7 @@ writing and nothing was copied from them, from examiners' courses or from mock-t
   (interpreter, spoken test, other languages, dictionary) have no time limit and are arranged with
   the examiner in advance; may leave 20 minutes after the start; bring valid official photo ID;
   needed within three months of starting such work; passports issued abroad are not valid in
-  Finland; passport posted 2 to 5 weeks after the test; reduced-cost renewal test after a fail
+  Finland; passport posted by Ruokavirasto about 4 to 6 weeks after the test (page as read 2026-11-07; earlier read said 2 to 5 weeks; not used on the landing); reduced-cost renewal test after a fail
   (no fee figures used).
 - Ruokavirasto regulation 7/2021 on hygiene proficiency (Livsmedelsverkets föreskrift om
   hygienkompetens, 19.4.2021, in force 21.4.2021, replaced 5/2020):
@@ -37,6 +38,14 @@ writing and nothing was copied from them, from examiners' courses or from mock-t
   work methods, personal hygiene, sanitation, own-checks, legislation; "approximately 10 000 test
   sessions" and "an average of approximately 65 000 Hygiene Passports" a year. Not quoted on the
   page as a cohort, only as Ruokavirasto's own figure in examFacts.)
+
+- Ruokavirasto, The Hygiene Passport: information for food business operators and control
+  authorities (dated 11.9.2026), read 2026-11-07 by the reviewer:
+  https://www.ruokavirasto.fi/globalassets/elintarvikkeet/hygieniapassi/the-hygiene-passport-information-for-food-business-operators-and-control-authorities.pdf
+  Passport required once the employee has worked three months; the period includes similar work
+  done earlier (Food Act s. 19); foreign hygiene passports, photocopies and food sector
+  qualification certificates do not prove proficiency; valid until further notice; operator keeps
+  records and presents them to the control authority. Confirms the landing FAQ, LAW-004 and LAW-006.
 
 ## Law and figures used in the bank
 

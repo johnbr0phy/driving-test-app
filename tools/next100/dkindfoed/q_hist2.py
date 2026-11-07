@@ -62,3 +62,19 @@ Q = [
  "Konfirmation", ["Militærtjeneste", "Kirkebryllup", "Svendeprøve"],
  "Konfirmationen blev indført i 1736 under pietismen. Den unge skulle kunne sin kristendom, før vedkommende fik adgang til nadveren."),
 ]
+
+# Tilføjet til otte prøver (pulje 24).
+Q += [
+("Hvilken astronom byggede observatoriet Uranienborg på øen Hven?",
+ "Tycho Brahe", ["Ole Rømer", "H.C. Ørsted", "Niels Bohr"],
+ "Tycho Brahe fik Hven af Frederik 2. og målte stjernernes positioner meget præcist i slutningen af 1500-tallet."),
+("Hvad påviste Ole Rømer i 1676?",
+ "At lyset har en hastighed", ["At Jorden er rund", "Den præcise afstand til Månen", "At luft har vægt"],
+ "Ved at studere Jupiters måner viste Ole Rømer, at lyset bruger tid på at bevæge sig. Han var også politimester i København."),
+("Hvad hed loven fra 1665, der fastslog kongens enevælde?",
+ "Kongeloven", ["Danske Lov", "Jyske Lov", "Grundloven"],
+ "Kongeloven gav kongen al magt og fastsatte arvefølgen. Den var hemmelig i mange år og gjaldt, indtil Grundloven kom i 1849."),
+("Hvilken by i Indien var en dansk handelskoloni fra 1620 til 1845?",
+ "Trankebar", ["Goa", "Mumbai", "Pondicherry"],
+ "Trankebar blev grundlagt af Det Ostindiske Kompagni. Den blev solgt til Storbritannien i 1845."),
+]

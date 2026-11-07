@@ -75,6 +75,6 @@ Q = [
  "A szerződő fél", ["A biztosító", "A közvetítő", "A Magyar Nemzeti Bank"],
  "A Ptk. szerint a szerződő fél köteles a biztosítottat a hozzá intézett nyilatkozatokról és a szerződés változásairól tájékoztatni."),
 ("Ha a fedezetet igazoló kötvény eltér az ajánlattól, és a szerződő késedelem nélkül nem kifogásolja, milyen tartalommal jön létre a szerződés?",
- "A kötvény tartalmával", ["Az ajánlat tartalmával", "Az ÁSZF tartalmával", "Semmilyennel, semmis"],
+ "A kötvény tartalmával", ["Az ajánlat tartalmával", "Az ÁSZF tartalmával", "Egyik szerint sem jön létre"],
  "A Ptk. szerint ilyenkor a szerződés a kötvény szerinti tartalommal jön létre; lényeges eltérésnél csak akkor, ha a biztosító erre írásban felhívta a figyelmet."),
 ]

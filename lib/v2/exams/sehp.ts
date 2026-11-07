@@ -10,8 +10,8 @@ import { curve } from "../scales";
 // 160 scored items; every item multiple choice, no minus points. Verbal pass:
 // ORD 10 (3 min recommended), LÄS 10 (22), MEK 10 (8), ELF 10 (22). Kvantitativ
 // pass: XYZ 12 (12), KVA 10 (10), NOG 6 (10), DTK 12 (23). Each part's raw
-// score (0 to 80) is normed separately to 0,00 to 2,00 in steps of 0,05 and
-// the result is the mean of the two; results are valid for eight years.
+// score (0 to 80) is normed separately to 0,00 to 2,00 and the result, the
+// mean of the two, is given in steps of 0,05; results are valid for eight years.
 // Modelled: one verbal and one quantitative pass per practice test (80 items,
 // 110 minutes), half the real length at the real pace; ORD has five
 // alternatives, NOG five fixed and KVA four fixed (lockedOrder). Each part is

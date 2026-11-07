@@ -12,7 +12,7 @@ Q = [
  "Allmänna handlingar är offentliga utom när de är hemliga, det vill säga under sekretess. Journalister kan till exempel begära ut e-post."),
 ("Vilken rätt har den som lämnar uppgifter till en tidning?",
  "Att få vara anonym", ["Att bestämma rubriken", "Att få betalt av staten", "Att godkänna texten först"],
- "Den som lämnar uppgifter till tidningar, radio och tv har rätt att vara anonym och får inte straffas för det."),
+ "Den som lämnar uppgifter till tidningar, radio och tv har rätt att vara anonym. Det kallas meddelarskydd, och myndigheter får inte efterforska vem som lämnat uppgifterna."),
 ("Vilka tre företag bedriver public service i Sverige?",
  "SR, SVT och UR", ["TV4, SVT och SR", "SR, SVT och TT", "UR, TV4 och SR"],
  "Sveriges Radio, Sveriges Television och Utbildningsradion har ett särskilt public service-uppdrag."),

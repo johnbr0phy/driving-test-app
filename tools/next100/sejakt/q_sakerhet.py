@@ -11,7 +11,7 @@ Q = [
  "Bär det med öppen mekanism", ["Bär det med säkringen på", "Håller pipan mot marken", "Säger att det är oladdat"],
  "Ett brutet hagelgevär eller ett öppet slutstycke syns på avstånd. Säkringen syns inte och kan felfungera."),
 ("Vad är säkringen på ett jaktvapen?",
- "En spärr som kan svikta", ["En garanti mot vådaskott", "Ett skydd mot fel ammunition", "En spärr som låser pipan"],
+ "En spärr som kan fallera", ["En garanti mot vådaskott", "Ett skydd mot fel ammunition", "En spärr som låser pipan"],
  "Säkringen blockerar avfyringen mekaniskt, men den kan gå sönder eller slås av. Den ersätter aldrig säker vapenhantering."),
 ("Du ska kliva över ett stängsel under jakten. Vad gör du med geväret?",
  "Gör patron ur och lägger över det", ["Säkrar och bär det i handen", "Håller det högt över huvudet", "Lutar det mot en stolpe laddat"],

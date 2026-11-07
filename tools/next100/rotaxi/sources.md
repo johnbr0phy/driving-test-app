@@ -114,3 +114,14 @@ English) was not opened or copied, nor any school "chestionare" site or practice
   assistance dog (stated as practice; article number not cited).
 - Not used: fares, fees, fines, vehicle age limits for authorisations, and anything a local council
   sets (tariff levels, colours, schedules), which "vary by municipality".
+
+## Review pass (2026-11-07)
+- Re-read Law 38/2003 (euroavocatura.ro consolidated text): art. 11(7) badge text TAXI / RENT CAR,
+  art. 25(10) rental badges lower left of both windscreens, art. 31(5) red left Ocupat / green
+  right Liber, art. 35(1) door tariffs visible from at least 5 m, art. 22 one client per ride,
+  art. 26(1) age 21 and B licence 2 years, art. 49 night tariff up to 50% above day, ratio 10,
+  starting tariff = distance tariff, art. 52(3)(j), (k), (q), (t), (x), art. 52(4), art. 52(5)(c),
+  art. 53, and the footnote to art. 19-20 (Bucharest-Ilfov transport counts as local). All match.
+- ARR communique confirms English theory exams for taxi and rental certificates and their
+  endorsements from the 1-2 March 2025 session, in the language of the course:
+  https://www.arr.ro/noutati_doc_1229_comunicat-privind-sustinerea-unor-examene-in-limba-engleza-information-about-exams-held-in-english_pg_0.htm

@@ -327,4 +327,4 @@ then rename the files to the `-hu` names (and their `-dark` twins).
    position items use non-trauma casualties).
 6. **Register**: questions in the polite "Ön" form; landing and dashboard copy in "te".
 7. **Siblings**: grepped hukresz, hukreszmoto and hugki (English; accident, helmet and 112
-   items) and hubizt (insurance): no shared fact-and-answer pairs.
+   items) and hubizt (insurance): no shared fact-and-answer pairs (review 2026-11-07 rewrote HEL-018, which repeated hukreszmoto HUKRM-HAZ-012's helmet fact).

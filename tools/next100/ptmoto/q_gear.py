@@ -1,10 +1,10 @@
 CAT = "ptmoGear"; SEG = "GEA"
 Q = [
-("Who on a motorcycle must wear an approved helmet?",
- "Rider and passenger", ["Only the rider", "Only on motorways", "Only riders under 18"],
+("Your adult passenger says only the rider needs a helmet. Under the Código da Estrada:",
+ "Both of you need one", ["Only you need one", "Only on motorways", "Only outside towns"],
  "Riders and passengers of motorcycles, with or without a sidecar, must wear a helmet of an officially approved model."),
-("Your helmet is approved, but you leave the chin strap undone on a short trip. This is:",
- "Not allowed", ["Allowed under 50 km/h", "Allowed in town only", "Allowed if it fits snugly"],
+("On a hot day you ride with your approved helmet on but unbuckled, for air. Under the law:",
+ "It must be fastened", ["Fine below 50 km/h", "Fine inside towns", "Fine if it fits snugly"],
  "The law requires the helmet to be properly fitted and fastened. An unfastened helmet can come off in a fall."),
 ("Your helmet took a hard knock when the bike fell over in the garage. You should:",
  "Have it replaced", ["Keep using it if it looks fine", "Tape it", "Use it only for short trips"],

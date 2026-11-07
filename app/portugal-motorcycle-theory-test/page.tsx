@@ -51,7 +51,7 @@ const faqs = [
   },
   {
     q: "Can I take the Portuguese motorcycle theory test in English?",
-    a: "The test is set in Portuguese, but the licensing rules let a candidate who does not speak enough Portuguese ask the IMT for a translated theory test. Since Decree-Law 114/2026 (in force July 2026) this is open to every licence category, and the request is normally made through your driving school when it registers you, so ask at enrolment.",
+    a: "The test is set in Portuguese, but the licensing rules let a candidate who does not speak enough Portuguese ask the IMT for a translated theory test. Since Decree-Law 114/2026 (in force July 2026) this is open to every licence category. Ask your driving school about it when you enrol, as the school registers you for the exam.",
   },
   {
     q: "Which motorcycle category should I go for?",
@@ -241,7 +241,7 @@ export default function PortugalMotorcycleTheoryLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">3. Ask for English when you enrol</h3>
               <p>
-                The exam is set in Portuguese. If you need it in English, ask your driving school to request a translated test when it registers you, since the request goes through the school.
+                The exam is set in Portuguese. If you need it in English, the rules let you request a translated test, so raise it with your driving school when you enrol.
               </p>
             </div>
             <div>

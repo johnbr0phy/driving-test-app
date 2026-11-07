@@ -60,7 +60,7 @@ Q = [
  "Metsästysasetuksen 20 §: jousen jännittämiseen tarvittavan voiman on oltava vähintään 180 newtonia."),
 ("Kuinka leveä leikkaavan nuolenkärjen on vähintään oltava, kun jousella ammutaan metsäkaurista?",
  "22 mm", ["12 mm", "16 mm", "35 mm"],
- "Metsästysasetuksen 20 §: hirvieläimiin, villisikaan ja majavaan käytetään leikkaavaa kärkeä, jonka halkaisija on vähintään 22 millimetriä."),
+ "Metsästysasetuksen 20 §: metsäkauriiseen, peuroihin, mufloniin, villisikaan ja majavaan käytetään leikkaavaa kärkeä, jonka halkaisija on vähintään 22 millimetriä."),
 ("Missä ilma-asetta saa käyttää eläimen tappamiseen?",
  "Vain rakennuksen sisällä", ["Vain pihapiirissä", "Pelloilla ja pihoilla", "Kaikkialla pienriistaan"],
  "Metsästysasetuksen 20 a §: ilma-asetta saa käyttää vain rakennuksen sisällä esimerkiksi variksen, harakan ja rauhoittamattomien nisäkkäiden tappamiseen."),

@@ -63,7 +63,7 @@ Q = [
  "Usar a plataforma para o devolver", ["Ficar com ele se ninguém ligar", "Deixá-lo no banco até ao fim", "Dá-lo ao passageiro seguinte"],
  "Os objetos esquecidos devem ser devolvidos através dos meios da plataforma ou entregues às autoridades. Ficar com eles pode ser crime."),
 ("Qual é a forma mais profissional de cumprimentar o passageiro?",
- "Bom dia, com um tom cordial", ["Só um aceno sem falar", "Com uma alcunha familiar", "Sem cumprimentar, para poupar tempo"],
+ "Com um cumprimento cordial", ["Só um aceno sem falar", "Com uma alcunha familiar", "Sem cumprimentar, para poupar tempo"],
  "Um cumprimento cordial cria logo um bom ambiente e mostra respeito. O tratamento deve ser cortês, sem excesso de familiaridade."),
 ("O passageiro pergunta pelo caminho que o motorista vai seguir. O mais adequado é:",
  "Explicar o percurso", ["Dizer que isso não lhe diz respeito", "Responder só no fim da viagem", "Mudar de percurso sem avisar"],

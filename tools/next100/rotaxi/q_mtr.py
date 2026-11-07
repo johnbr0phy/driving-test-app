@@ -28,7 +28,7 @@ Q = [
  "06:00 and 22:00", ["07:00 and 19:00", "08:00 and 20:00", "05:00 and 23:00"],
  "Art. 41(e): the meter must handle two tariffs, a day tariff from 06:00 to 22:00 and a night tariff from 22:00 to 06:00."),
 ("The night distance tariff of a taxi may be higher than the day tariff by at most:",
- "50%", ["25%", "100%", "200%"],
+ "50%", ["20%", "25%", "30%"],
  "Art. 49(1)(b): the night tariff may be no more than 50% above the day tariff."),
 ("Below what speed does the taxi meter switch from charging distance to charging time?",
  "10 km/h", ["5 km/h", "20 km/h", "30 km/h"],

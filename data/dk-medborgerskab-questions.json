@@ -466,7 +466,7 @@
     "state": "ALL",
     "questionId": "DKMED-ARB-010",
     "category": "dkmedArbejde",
-    "question": "Hvilken fagforening organiserer bl.a. murere, chauffører og ansatte i industrien?",
+    "question": "Hvilken fagforening organiserer bl.a. bygningsarbejdere, chauffører og ansatte i industrien?",
     "optionA": "HK",
     "optionB": "3F",
     "optionC": "FOA",
@@ -498,7 +498,7 @@
     "optionA": "At forhandle de ansattes løn",
     "optionB": "At ansætte nye kolleger",
     "optionC": "At føre virksomhedens regnskab",
-    "optionD": "At passe på sikkerheden",
+    "optionD": "At passe på arbejdsmiljøet",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "Arbejdsmiljørepræsentanten holder øje med det fysiske og psykiske arbejdsmiljø, fx sikkerhedsudstyr, støj og mobning."
@@ -711,7 +711,7 @@
     "optionD": "Hos Folketinget",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Kommunen kan give fx kontanthjælp eller uddannelseshjælp, men det afhænger af egen og ægtefællens indkomst og formue."
+    "explanation": "Kommunen kan give kontanthjælp, men det afhænger af egen og ægtefællens indkomst og formue."
   },
   {
     "type": "DKMEDB",
@@ -845,7 +845,7 @@
     "questionId": "DKMED-VEL-005",
     "category": "dkmedVelfaerd",
     "question": "Hvad betyder frit sygehusvalg?",
-    "optionA": "Man kan vælge offentligt sygehus",
+    "optionA": "Man kan selv vælge sygehus",
     "optionB": "Man vælger ny læge hver uge",
     "optionC": "Sygehuset vælger patienterne",
     "optionD": "Man skal altid på privathospital",
@@ -1089,7 +1089,7 @@
     "optionD": "Over broerne i København",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Det er gratis at køre på veje og broer, undtagen over Storebæltsbroen og Øresundsbroen."
+    "explanation": "For personbiler er det gratis at køre på veje og broer, undtagen over Storebæltsbroen og Øresundsbroen."
   },
   {
     "type": "DKMEDB",
@@ -1243,7 +1243,7 @@
     "optionD": "21 år",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Som myndig kan man fx tage kørekort, låne penge i banken og har selv ansvaret for sit liv."
+    "explanation": "Som myndig kan man fx selv indgå aftaler, låne penge i banken og bestemme over sine egne penge."
   },
   {
     "type": "DKMEDB",
@@ -1530,14 +1530,14 @@
     "state": "ALL",
     "questionId": "DKMED-DEM-006",
     "category": "dkmedDemokrati",
-    "question": "Hvem bestemmer, hvornår der udskrives folketingsvalg?",
+    "question": "Hvem bestemmer i praksis, hvornår der udskrives folketingsvalg?",
     "optionA": "Monarken",
     "optionB": "Statsministeren",
     "optionC": "Folketingets formand",
     "optionD": "Højesteret",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Statsministeren udskriver valget, men der skal være valg mindst hvert fjerde år."
+    "explanation": "Formelt udskriver monarken valget, men i praksis er det statsministeren, der beslutter tidspunktet. Der skal være valg mindst hvert fjerde år."
   },
   {
     "type": "DKMEDB",
@@ -2048,7 +2048,7 @@
     "state": "ALL",
     "questionId": "DKMED-RET-011",
     "category": "dkmedRettigheder",
-    "question": "Hvad kan en værnepligtig gøre, hvis han af samvittighedsgrunde ikke vil gøre militærtjeneste?",
+    "question": "Hvad kan en værnepligtig gøre, hvis han eller hun af samvittighedsgrunde ikke vil gøre militærtjeneste?",
     "optionA": "Betale sig fri",
     "optionB": "Flytte til Grønland",
     "optionC": "Blive militærnægter",
@@ -2265,7 +2265,7 @@
     "optionD": "30",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "EU har 27 medlemslande. 19 af dem har den fælles valuta euro, mens Danmark har beholdt kronen."
+    "explanation": "EU har 27 medlemslande. De fleste af dem har den fælles valuta euro, mens Danmark har beholdt kronen."
   },
   {
     "type": "DKMEDB",
@@ -2440,14 +2440,14 @@
     "state": "ALL",
     "questionId": "DKMED-VER-015",
     "category": "dkmedVerden",
-    "question": "Hvor i Danmark findes der klipper?",
-    "optionA": "På Lolland",
-    "optionB": "På Fanø",
-    "optionC": "På Bornholm",
-    "optionD": "På Samsø",
+    "question": "Hvilken dansk ø er kendt for sin klippegrund af granit?",
+    "optionA": "Lolland",
+    "optionB": "Fanø",
+    "optionC": "Bornholm",
+    "optionD": "Samsø",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Danmark er et fladt land uden bjerge. Bornholm er et af de få steder med klipper."
+    "explanation": "Danmark er et fladt land uden bjerge. Bornholm er det eneste sted i landet, hvor grundfjeldet af granit kommer op til overfladen."
   },
   {
     "type": "DKMEDB",
@@ -2489,7 +2489,7 @@
     "optionD": "Kangerlussuaq",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "USA byggede basen ved Qaanaaq (Thule) i 1951. I dag hedder den Pituffik Space Base og er vigtig for luftforsvaret."
+    "explanation": "USA byggede Thule-basen i begyndelsen af 1950'erne. I dag hedder den Pituffik Space Base og er vigtig for luftforsvaret."
   },
   {
     "type": "DKMEDB",
@@ -2517,7 +2517,7 @@
     "optionD": "Gasser holder på varmen",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Drivhusgasser som CO2 lukker solens stråler ind, men begrænser varmen i at slippe ud igen. Det giver global opvarmning."
+    "explanation": "Drivhusgasser som CO2 lukker solens stråler ind, men holder på en del af varmen, så den ikke slipper ud igen. Det giver global opvarmning."
   },
   {
     "type": "DKMEDB",
@@ -2559,7 +2559,7 @@
     "optionD": "Nordisk Ministerråd",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Klimarådet blev oprettet i 2014 og vurderer regeringens klimapolitik og kommer med anbefalinger."
+    "explanation": "Klimarådet er et uafhængigt ekspertråd, som vurderer regeringens klimapolitik og kommer med anbefalinger."
   },
   {
     "type": "DKMEDB",
@@ -2611,7 +2611,7 @@
     "question": "Hvad er 1. maj kendt som?",
     "optionA": "Kongens fødselsdag",
     "optionB": "Befrielsesdagen",
-    "optionC": "Arbejdernes festdag",
+    "optionC": "Arbejdernes kampdag",
     "optionD": "Flagets fødselsdag",
     "correctAnswer": "C",
     "correctIndex": 2,

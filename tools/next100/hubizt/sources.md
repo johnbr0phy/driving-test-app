@@ -54,7 +54,7 @@ All checked 2026-11-06. Official sources first (the source watch reads the first
 
 5. 2013. évi V. törvény (Ptk.), Hatodik Könyv XXII. Cím, 6:439 to 6:490 (biztosítási szerződések):
    https://net.jogtar.hu/jogszabaly?docid=a1300005.tv
-   - Key figures used: ajánlati kötöttség 15 days, 60 with health risk assessment (6:443);
+   - Key figures used: együttbiztosítás, vezető biztosító (6:441); ajánlati kötöttség 15 days, 60 with health risk assessment (6:443 (3)); kötvény differing from the offer (6:443 (2));
      fogyasztó, biztosító silent 15/60 days, contract made back to handover of the offer (6:444);
      előzetes fedezetvállalás up to 90 days (6:445); kockázatnövekedés 15 days to propose,
      30 days notice (6:446); first premium at conclusion, ongoing premium on the first day of its
@@ -81,9 +81,9 @@ All checked 2026-11-06. Official sources first (the source watch reads the first
      (137 to 138. §). Complaints: oral or written, recorded calls kept 5 years, complaint and answer
      kept 5 years, free of charge (159. §). Jutalék rules, no jutalékelőleg (375/B. §). Premium paid
      to an authorised ügynök counts as received by the 4th day; no advance of money due to the
-     client (384. §, 387/A. §); the insurer is liable for damage caused by the ügynök and többes
-     ügynök (385. §, 387. §); többes ügynök and alkusz need professional liability cover
-     (387. §, 403. §); alkusz acts for the client (398. §).
+     client (384. §, 387/A. §); the insurer is liable for damage caused by the ügynök (385. §) and, product by
+     product, the többes ügynök (391. § (2) to (3)); többes ügynök and alkusz need professional
+     liability cover (391. § (6), 403. §); alkusz acts for the client (398. §).
 7. 2009. évi LXII. törvény a kötelező gépjármű-felelősségbiztosításról (Gfbt.):
    https://net.jogtar.hu/jogszabaly?docid=a0900062.tv
    - Fedezetlenségi díj to the manager of the Kártalanítási Számla; Kártalanítási Alap pays when
@@ -93,6 +93,13 @@ All checked 2026-11-06. Official sources first (the source watch reads the first
    - Ügyfél-átvilágítás; valós tulajdonos at 25 percent; records kept eight years from the end of
      the business relationship (56 to 57. §); reports to the pénzügyi információs egység;
      suspension of a transaction (34. §).
+
+## Reviewer re-check (2026-11-07)
+
+- Vizsgaszabályzat PDF re-downloaded: "Hatályos: 2025. június 12."; 40/60/20 questions, 40/60/20
+  minutes, pass at 30/45/15 points; answered questions cannot be revisited. Confirmed.
+- Ptk. 6:439 to 6:490 and Bit. 122, 134/A, 159, 384 to 391, 403, 375/B re-read on net.jogtar.hu
+  against every key; section numbers above corrected where they were off.
 
 ## Not used / left out
 

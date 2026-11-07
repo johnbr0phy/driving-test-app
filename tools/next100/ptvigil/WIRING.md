@@ -315,5 +315,5 @@ then rename to the `-pt` names, as for detheorie, esvigilante and ptcam.
    in any copy.
 6. **Facts for a native reviewer to spot-check:** PTVIG-EME-030 (employer provides and pays for
    PPE, Lei 102/2009 and DL 348/93), PTVIG-DIR-010 (CICDR receives racial discrimination
-   complaints under Lei 93/2017), PTVIG-ACE-005 ("entrada à boleia" as the term for tailgating),
+   complaints under Lei 93/2017; the CICDR has been an independent body since January 2024),
    PTVIG-VIG-008 (Lei 58/2019 art. 19.º camera exclusions, read through secondary summaries).

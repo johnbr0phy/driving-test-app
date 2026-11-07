@@ -1,0 +1,37 @@
+{
+  "id": "grcitizen",
+  "stateCode": "GRCITIZEN",
+  "idBase": 25200,
+  "prefix": "GRCIT-",
+  "slug": "/eksetaseis-pegp",
+  "landingPath": "/el/eksetaseis-pegp-politografisi",
+  "dataFile": "data/gr-citizenship-questions.json",
+  "language": "el",
+  "locale": "el-GR",
+  "name": "Εξετάσεις ΠΕΓΠ για την πολιτογράφηση",
+  "shortName": "Εξετάσεις ΠΕΓΠ",
+  "examLabel": "Εξετάσεις ΠΕΓΠ",
+  "fullName": "Πιστοποιητικό Επάρκειας Γνώσεων για Πολιτογράφηση (Θεματικές Ενότητες)",
+  "english": {
+    "name": "Greek Citizenship Test (PEGP)",
+    "shortName": "Greek citizenship test",
+    "fullName": "Greek naturalisation knowledge test (Πιστοποιητικό Επάρκειας Γνώσεων για Πολιτογράφηση, PEGP), thematic units, in Greek"
+  },
+  "icon": "flag",
+  "testCount": 8,
+  "questionsPerTest": 20,
+  "passPct": 70,
+  "categories": [
+    {"key": "grcitGeo", "label": "Γεωγραφία", "perTest": 4, "pool": 48, "segment": "GEO"},
+    {"key": "grcitCulture", "label": "Πολιτισμός", "perTest": 4, "pool": 40, "segment": "POL"},
+    {"key": "grcitHistory", "label": "Ιστορία", "perTest": 6, "pool": 56, "segment": "IST"},
+    {"key": "grcitInst", "label": "Θεσμοί του Πολιτεύματος", "perTest": 6, "pool": 56, "segment": "THE"}
+  ],
+  "trainingSets": [
+    {"setNumber": 1, "id": 25201, "name": "Γεωγραφία", "categories": ["grcitGeo"], "size": 48},
+    {"setNumber": 2, "id": 25202, "name": "Πολιτισμός", "categories": ["grcitCulture"], "size": 40},
+    {"setNumber": 3, "id": 25203, "name": "Ιστορία", "categories": ["grcitHistory"], "size": 56},
+    {"setNumber": 4, "id": 25204, "name": "Θεσμοί του Πολιτεύματος", "categories": ["grcitInst"], "size": 56}
+  ],
+  "notes": "8 tests x 20 (4/4/6/6, the official split of the thematic units) use 32/32/48/48 items; the last 16/8/8/8 of each pool (40) are training-only. Dashboard: 4 topic sets + 8 tests = 12 steps. passPct 70 (14 of 20) is Tigertest's target: the real thematic minimum is 20/40 (10 of 20 correct) inside a 70/100 overall pass that includes the Greek-language part, which is not modelled."
+}

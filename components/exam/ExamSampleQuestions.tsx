@@ -135,7 +135,7 @@ const SAMPLE_COPY: Partial<Record<Language, { title: (name: string) => string; s
   },
   ro: {
     title: (name) => `${name}: exemple de întrebări cu răspunsuri`,
-    sub: (n, total) => `${n} din cele ${total % 100 >= 20 || (total % 100 === 0 && total !== 0) ? `${total} de` : total} întrebări de exersare, câte una din fiecare temă, cu răspunsul explicat.`,
+    sub: (n, total) => `${n} din cele ${Number(total.replace(/\D/g, "")) % 100 >= 20 || (Number(total.replace(/\D/g, "")) % 100 === 0 && total !== "0") ? `${total} de` : total} întrebări de exersare, câte una din fiecare temă, cu răspunsul explicat.`,
     answer: "Răspuns",
     quiz: (name) => `${name}: exemple de întrebări`,
   },

@@ -2753,7 +2753,70 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "KRESZ (1/1975. (II. 5.) KPM-BM decree) as in force in November 2026 and the KAV's category B exam requirements as quoted by driving schools, checked November 2026",
     source: { name: "KAV Közlekedési Alkalmassági és Vizsgaközpont", url: "https://www.vizsgakozpont.hu/" },
+  },  hukreszmoto: {
+    answer:
+      "Motorcycle and moped learners in Hungary sit the computer-based theory exam Közlekedési alapismeretek at a centre of the KAV, the national transport exam centre, with questions for their category. For categories A1, A2 and A it has 55 multiple-choice questions in 55 minutes, worth 75 points, and you need at least 65. For the AM moped category it has 25 questions in 25 minutes, worth 35 points, and you need 30. Guides say the motorcycle and car exams can be taken in Hungarian, English, German and Romanian. AM is open from 14, A1 from 16, A2 from 18, and A from 20 after two years on A2 or from 24 without it.",
+    rows: [
+      { label: "Run by", value: "KAV Közlekedési Alkalmassági és Vizsgaközpont" },
+      { label: "A1, A2, A", value: "55 questions, 55 minutes, 65 of 75 points to pass" },
+      { label: "AM (moped)", value: "25 questions, 25 minutes, 30 of 35 points to pass" },
+      { label: "Languages", value: "Hungarian, English, German, Romanian (guides)" },
+      { label: "Minimum age", value: "AM 14, A1 16, A2 18, A 20 (after two years on A2) or 24" },
+      { label: "Then", value: "Handling and road riding tests" },
+      { label: "Tigertest tests", value: "3 x 55 questions, 87% target" },
+    ],
+    basedOn: "KAV curriculum and exam requirements for categories A2 (2020), A after A1/A2 (2023) and AM (2023), Government Decree 326/2011 Annex 7 and the KRESZ (1/1975. (II. 5.) KPM-BM decree) as in force in November 2026, checked November 2026",
+    source: { name: "KAV Közlekedési Alkalmassági és Vizsgaközpont", url: "https://www.vizsgakozpont.hu/" },
   },
+  hugki: {
+    answer:
+      "The GKI (gépjárművezetői képesítési igazolvány) is Hungary's EU Driver CPC, which truck and bus drivers need to drive for work. After a compulsory course of at least 44 hours (66 for truck and bus together), you sit three computer-based theory exams at a KAV centre: safe and rational driving, applying the regulations, and health, safety, service and logistics. Each has 40 multiple-choice questions in 40 minutes, and you need 30 of 40 points in each. A 120-minute written case study (60 of 100 points to pass) and practical exams follow, and everything must be passed within a year of starting the course. According to the trade press, since September 2022 the theory exams can be taken in English or Russian without an interpreter. The GKI card carries the EU code 95, is valid for five years and is renewed by periodic training of at least 35 hours.",
+    rows: [
+      { label: "Run by", value: "KAV Közlekedési Alkalmassági és Vizsgaközpont" },
+      { label: "Theory exams", value: "3 subjects, 40 multiple-choice questions each" },
+      { label: "Time", value: "40 minutes per subject" },
+      { label: "Pass mark", value: "30 of 40 points in each subject" },
+      { label: "Case study", value: "120 minutes, 60 of 100 points (not modelled)" },
+      { label: "Languages", value: "Hungarian, English, Russian, Serbian, Ukrainian (trade press)" },
+      { label: "Card valid for", value: "5 years, code 95 on the licence" },
+      { label: "Tigertest tests", value: "4 x 40 questions, 75% target" },
+    ],
+    basedOn: "the KAV-published GKI curriculum and exam requirements (in force 17 March 2025), Decree 24/2005 GKM and EU Regulations 561/2006 and 165/2014, checked November 2026",
+    source: { name: "KAV Közlekedési Alkalmassági és Vizsgaközpont", url: "https://vizsgakozpont.hu/" },
+  },
+  huelsoseg: {
+    answer:
+      "Every first driving licence in Hungary needs proof of road first aid knowledge (közúti elsősegélynyújtási ismeretek), examined only by the county and Budapest organisations of the Hungarian Red Cross (Magyar Vöröskereszt). The exam is mainly practical: you perform one-rescuer CPR, examine a casualty and put an unconscious casualty in the recovery position, then solve an \"A\" and a \"B\" task from a drawn card, such as controlling bleeding, splinting or treating a burn. The theory is asked orally, or in writing at some county organisations. There is no question count or pass mark: the examiner grades you pass or fail, and a fail-level error (for example wrong CPR depth or rate, a pressure bandage on the neck, or removing a helmet without holding the neck) or anything that would worsen the casualty fails. A course is optional; the exam is based on the book Elsősegélynyújtás mindenkinek by István Hornyák. Health professionals are exempt with their diploma, and secondary-school students with the certificate of the online first aid exam. The exam is in Hungarian.",
+    rows: [
+      { label: "Run by", value: "Hungarian Red Cross county and Budapest organisations" },
+      { label: "Practical part", value: "CPR, casualty examination, recovery position" },
+      { label: "Drawn task", value: "One \"A\" and one \"B\" task (bleeding, splints, burns...)" },
+      { label: "Theory", value: "Oral, or written at some counties" },
+      { label: "Result", value: "Pass or fail, no points" },
+      { label: "Course", value: "Optional" },
+      { label: "Language", value: "Hungarian" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions in Hungarian, 40 to pass" },
+    ],
+    basedOn: "Decree 31/1992 (XII. 19.) NM, the Hungarian Red Cross first aid exam rules (MVK-SZ-036, examinee extract 2022) and the ERC 2025 first aid and BLS guidelines as summarised for Hungary (Orvosi Hetilap 2026), checked November 2026",
+    source: { name: "Decree 31/1992 (XII. 19.) NM on net.jogtar.hu (in Hungarian)", url: "https://net.jogtar.hu/jogszabaly?docid=99200031.nm" },
+  },
+  hubizt: {
+    answer:
+      "To sell insurance in Hungary as a tied agent (ügynök or többes ügynök) you need, among the routes the Insurance Act (Bit.) allows, the official exam of the Magyar Nemzeti Bank (MNB), taken after the compulsory course at a training body registered with the MNB. The exam is a Hungarian-language multiple-choice computer test, sat in the training body's exam room or online from your own computer with video and sound recording. The dependent intermediary exam has 40 questions in 40 minutes and you pass with 30 points. The independent (broker) exam has 60 questions in 60 minutes with 45 points to pass, and the differential exam that takes a tied agent to broker level has 20 questions in 20 minutes with 15 points to pass. Each test sheet is drawn from the MNB's question bank, revised most recently from 2 June 2026. The dependent exam covers three subjects set by decree 40/2015 NGM: financial and insurance market players and authorities, basic insurance concepts, and insurance contract law. Once you move on from a question you cannot change its answer.",
+    rows: [
+      { label: "Run by", value: "Magyar Nemzeti Bank, through registered training bodies" },
+      { label: "Dependent exam", value: "40 questions, 40 minutes, pass at 30" },
+      { label: "Independent exam", value: "60 questions, 60 minutes, pass at 45" },
+      { label: "Differential exam", value: "20 questions, 20 minutes, pass at 15" },
+      { label: "Format", value: "Multiple-choice computer test, exam room or online" },
+      { label: "Language", value: "Hungarian" },
+      { label: "Question bank", value: "MNB bank, revised from 2 June 2026" },
+      { label: "Tigertest mock tests", value: "5 x 40 questions in Hungarian, 30 to pass" },
+    ],
+    basedOn: "the MNB exam rules (Vizsgaszabályzat, in force 12 June 2025), annexes 2 and 3 of decree 40/2015 (XII. 30.) NGM, and the MNB notice on the question bank of 14 May 2026, checked November 2026",
+    source: { name: "MNB exam rules (Vizsgaszabályzat, in Hungarian)", url: "https://www.mnb.hu/letoltes/vizsgaszabalyzat.pdf" },
+  },
+
   mttheory: {
     answer:
       "The Malta driving theory test is run by Transport Malta at its Theory Test Centre. It is a multiple-choice test on a touch-screen computer: 35 questions in 45 minutes, and you need at least 30 correct to pass. You must be at least 18 and hold a learner's permit for the licence category, and you show your ID card before the test. It is offered in English or Maltese. After passing, you take the practical driving test. Malta drives on the left, and the questions follow Malta's own road rules and Highway Code.",

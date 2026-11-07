@@ -1,0 +1,40 @@
+{
+  "landingPath": "/hu/kresz-teszt",
+  "locale": "hu-HU",
+  "name": "KRESZ teszt B kategória",
+  "shortName": "KRESZ teszt",
+  "examLabel": "KRESZ vizsga (Közlekedési alapismeretek)",
+  "fullName": "KRESZ elméleti vizsga (Közlekedési alapismeretek), B kategória",
+  "trainingSets": {
+    "1": { "name": "Veszélyt jelző táblák, útburkolati jelek és lámpák", "weightLabel": "55 tesztkérdésből 12" },
+    "2": { "name": "Elsőbbségi, tilalmi és utasítást adó táblák", "weightLabel": "55 tesztkérdésből 9" },
+    "3": { "name": "Elsőbbség és villamos", "weightLabel": "55 tesztkérdésből 8" },
+    "4": { "name": "Sebesség, előzés és autópálya", "weightLabel": "55 tesztkérdésből 11" },
+    "5": { "name": "Jogosítvány, várakozás és biztonság", "weightLabel": "55 tesztkérdésből 15" }
+  },
+  "categoryLabels": {
+    "huLicence": "Jogosítvány, alkohol és a vezető",
+    "huWarning": "Veszélyt jelző táblák",
+    "huRegulatory": "Elsőbbségi, tilalmi és utasítást adó táblák",
+    "huMarkings": "Útburkolati jelek, jelzőlámpák és rendőri jelzések",
+    "huPriority": "Elsőbbség, kereszteződések és villamos",
+    "huSpeed": "Sebesség, forgalmi sávok és előzés",
+    "huMotorway": "Autópálya és vasúti átjáró",
+    "huParking": "Megállás, várakozás, világítás és vontatás",
+    "huSafety": "Biztonsági öv, gyermekek, meghibásodás és baleset"
+  },
+  "copy": {
+    "guestPrompt": "hogy elmentsd a KRESZ vizsga haladásodat, és lásd az összes elrontott kérdést",
+    "trainingHeading": "Gyakorolj témánként",
+    "trainingSub": "Öt témakör a KRESZ szabályaiból, magyarul. Azonnali visszajelzés, és az elrontott kérdések addig visszajönnek, amíg meg nem tanulod őket.",
+    "testsHeading": "Teljes tesztek · 55 kérdés, célozz 48 vagy több helyes válaszra",
+    "heroSubs": [
+      "Öt témakör, három 55 kérdéses teszt. A táblák és az elsőbbség a legfontosabb.",
+      "Sajátíts el minden témakört, aztán jöhet a teszt.",
+      "Félúton vagy. Próbálj ki egy teljes tesztet.",
+      "Nézd át a hibákat, és írd meg újra a tesztet.",
+      "Kész vagy. Jelentkezz a KRESZ vizsgára."
+    ],
+    "sourceLine": "A KRESZ 2026 novemberében hatályos szövege alapján. Saját kérdések magyarul; tesztenként 55 kérdés, a 87% közel áll a valódi vizsga 75 pontból elvárt 65 pontjához."
+  }
+}

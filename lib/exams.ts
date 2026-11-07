@@ -32,8 +32,9 @@ import detheorieEn from "./examTranslations/detheorie.en.json";
 import setrafikSv from "./examTranslations/setrafik.sv.json";
 import dkteoriDa from "./examTranslations/dkteori.da.json";
 import fitheoryFi from "./examTranslations/fitheory.fi.json";
+import hukreszHu from "./examTranslations/hukresz.hu.json";
 
-export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "dkteori" | "dkmoto" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "rodrpciv" | "hukresz" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "detheorie" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl";
+export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "dkteori" | "dkmoto" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "rodrpciv" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "detheorie" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -10334,6 +10335,303 @@ const hukresz: ExamConfig = {
     sourceLine: "Based on the Hungarian Highway Code (KRESZ). Original questions in English; 55 per test, 87% is close to the real 65 of 75 points.",
     analyticsKey: "hukresz",
   },
+  review: { hu: "machine" },
+  translations: {
+    hu: examTranslation(hukreszHu),
+  },
+};
+
+const hukreszmoto: ExamConfig = {
+  id: "hukreszmoto",
+  stateCode: "HUKRMOTO",
+  idBase: 24400,
+  slug: "/hungary-motorcycle-theory",
+  landingPath: "/hungary-motorcycle-theory-test",
+  name: "Hungary Motorcycle Theory Practice Test",
+  shortName: "Hungary motorcycle test",
+  examLabel: "Hungary motorcycle theory exam",
+  fullName: "Hungary motorcycle theory exam (Közlekedési alapismeretek), categories AM, A1, A2 and A",
+  questionIdPrefix: "HUKRM-",
+  icon: "bike",
+  testCount: 3,
+  questionsPerTest: 55,
+  passPct: 87,
+  // Real exam: KAV computer-based "Közlekedési alapismeretek" theory exam with motorcycle
+  // questions. A1, A2 and A: 55 multiple-choice questions, 55 minutes, 75 points, 65 to pass (KAV
+  // tantervi és vizsgakövetelmények, A2 2020 and A after A1/A2/A korl. 2023). AM: 25 questions,
+  // 25 minutes, 35 points, 30 to pass (KAV AM document 2023). Guides say questions carry unequal
+  // points; Tigertest scores every question equally, so passPct 87 = 48 of 55, close to 65/75.
+  // Exam content per the A curriculum: traffic rules for riders, riding theory, and motorcycle
+  // structure and operation. No official topic weights; this split is Tigertest's own. Rules from
+  // the KRESZ (1/1975. (II. 5.) KPM-BM) and Decree 326/2011 as in force 2026-11-06; rules a car
+  // driver shares are left to hukresz. Three A-length tests; pools are 3x each count plus 35
+  // training-only spares. All items original.
+  blueprint: {
+    hukmLicence: 6,
+    hukmGear: 5,
+    hukmChecks: 6,
+    hukmControl: 7,
+    hukmPosition: 7,
+    hukmSpeed: 6,
+    hukmPriority: 6,
+    hukmPassengers: 6,
+    hukmHazards: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 24401, name: "Licences, Helmets & Gear", categories: ["hukmLicence", "hukmGear"], size: 40, weightLabel: "11 of 55 test questions" },
+    { setNumber: 2, id: 24402, name: "Checks, Braking & Cornering", categories: ["hukmChecks", "hukmControl"], size: 48, weightLabel: "13 of 55 test questions" },
+    { setNumber: 3, id: 24403, name: "Road Position & Junctions", categories: ["hukmPosition", "hukmPriority"], size: 48, weightLabel: "13 of 55 test questions" },
+    { setNumber: 4, id: 24404, name: "Speed, Passengers & Mopeds", categories: ["hukmSpeed", "hukmPassengers"], size: 44, weightLabel: "12 of 55 test questions" },
+    { setNumber: 5, id: 24405, name: "Hazards, Weather & Breakdowns", categories: ["hukmHazards"], size: 20, weightLabel: "6 of 55 test questions" },
+  ],
+  categoryLabels: {
+    hukmLicence: "Categories, Licences & the Rider",
+    hukmGear: "Helmets, Protective Gear & Being Seen",
+    hukmChecks: "Motorcycle Checks & How It Works",
+    hukmControl: "Braking, Cornering & Control",
+    hukmPosition: "Road Position, Filtering & Overtaking",
+    hukmSpeed: "Speed, Signs & Motorways for Riders",
+    hukmPriority: "Junctions, Trams & Being Seen",
+    hukmPassengers: "Passengers, Loads, Parking & Mopeds",
+    hukmHazards: "Hazards, Weather, Night & Breakdowns",
+  },
+  copy: {
+    guestPrompt: "to save your motorcycle theory progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets on Hungarian rules and riding for AM, A1, A2 and A, in English. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Full tests · 55 questions, aim for 48 or more",
+    heroSubs: [
+      "Five topics, three 55-question tests. Control and road position weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a full test.",
+      "Fix the misses, then retake.",
+      "All done. Book your motorcycle theory exam.",
+    ],
+    sourceLine: "Based on the Hungarian Highway Code (KRESZ) and the KAV motorcycle curriculum. Original questions in English; 55 per test, 87% is close to the real 65 of 75 points.",
+    analyticsKey: "hukreszmoto",
+  },
+};
+
+const hugki: ExamConfig = {
+  id: "hugki",
+  stateCode: "HUGKI",
+  idBase: 24500,
+  slug: "/hungary-gki",
+  landingPath: "/hungary-driver-cpc-gki-test",
+  name: "Hungary GKI (Driver CPC) Theory Practice Test",
+  shortName: "Hungary GKI test",
+  examLabel: "Hungary GKI theory exam",
+  fullName: "Hungary GKI (Driver CPC) theory exams, truck and bus (Gépjárművezetői Képesítési Igazolvány)",
+  questionIdPrefix: "HUGKI-",
+  icon: "truck",
+  testCount: 4,
+  questionsPerTest: 40,
+  passPct: 75,
+  // Real exam: GKI basic qualification (EU Driver CPC), KAV computer-based theory exams per the
+  // "Tantervi és vizsgakövetelmények" for bus and truck driver courses (signed 2025-03-11, in
+  // force 2025-03-17): three subjects, BSZAVSZ (safe, rational driving), EASZ (applying the
+  // regulations) and EKKKBSZLSZ (health, road and environmental safety, service, logistics), each
+  // 40 multiple-choice questions in 40 minutes, 40 points, 30 to pass. Case study (120 min,
+  // 60/100) and practical exams not modelled. Tigertest's tests mix the three subjects 14/13/13;
+  // the split inside each subject is Tigertest's (the curriculum gives no weights). passPct 75 =
+  // 30 of 40, the real line. Test sheets in English and Russian since September 2022, Serbian and
+  // Ukrainian since 2020 (trade press). Pools are 4x each count plus 4 training-only spares.
+  // All items original; the KAV bank is not public.
+  blueprint: {
+    hugkiEco: 4,
+    hugkiBrakes: 4,
+    hugkiLoads: 3,
+    hugkiPassengers: 3,
+    hugkiHours: 5,
+    hugkiTacho: 3,
+    hugkiLaw: 5,
+    hugkiHealth: 5,
+    hugkiEmergency: 4,
+    hugkiBusiness: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 24501, name: "Eco-Driving & Brakes", categories: ["hugkiEco", "hugkiBrakes"], size: 40, weightLabel: "8 of 40 test questions" },
+    { setNumber: 2, id: 24502, name: "Loads & Passengers", categories: ["hugkiLoads", "hugkiPassengers"], size: 32, weightLabel: "6 of 40 test questions" },
+    { setNumber: 3, id: 24503, name: "Driving Times & Tachographs", categories: ["hugkiHours", "hugkiTacho"], size: 40, weightLabel: "8 of 40 test questions" },
+    { setNumber: 4, id: 24504, name: "Rules, Permits & the Business", categories: ["hugkiLaw", "hugkiBusiness"], size: 44, weightLabel: "9 of 40 test questions" },
+    { setNumber: 5, id: 24505, name: "Health, Safety & Emergencies", categories: ["hugkiHealth", "hugkiEmergency"], size: 44, weightLabel: "9 of 40 test questions" },
+  ],
+  categoryLabels: {
+    hugkiEco: "Eco-Driving, Engine & Fuel",
+    hugkiBrakes: "Brakes & Safety Systems",
+    hugkiLoads: "Loads, Stability & Securing",
+    hugkiPassengers: "Buses & Passengers",
+    hugkiHours: "Driving Times, Rest & Working Time",
+    hugkiTacho: "Tachographs",
+    hugkiLaw: "Hungarian Rules, Permits & Documents",
+    hugkiHealth: "Health, Fitness & Fatigue",
+    hugkiEmergency: "Emergencies, Crime & Security",
+    hugkiBusiness: "Transport Business, Service & Logistics",
+  },
+  copy: {
+    guestPrompt: "to save your GKI exam progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets for truck and bus drivers, in English. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Full tests · 40 questions, 30 to pass like each real subject",
+    heroSubs: [
+      "Five topics, four 40-question tests. Driving times and the rules weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a full test.",
+      "Fix the misses, then retake.",
+      "All done. Book your GKI exams through your course provider.",
+    ],
+    sourceLine: "Original questions in English on the GKI curriculum, EU driving time and tachograph rules and Hungarian law (2026). Each real subject is 40 questions, 30 to pass. Not affiliated with the KAV.",
+    analyticsKey: "hugki",
+  },
+};
+
+const huelsoseg: ExamConfig = {
+  id: "huelsoseg",
+  stateCode: "HUELSOSEG",
+  idBase: 24600,
+  slug: "/elsosegely-vizsga",
+  landingPath: "/hu/elsosegely-vizsga-teszt",
+  name: "Elsősegély vizsga teszt a jogosítványhoz",
+  shortName: "Elsősegély vizsga",
+  examLabel: "Közúti elsősegélynyújtási vizsga",
+  fullName: "Közúti elsősegélynyújtási vizsga a vezetői engedélyhez",
+  questionIdPrefix: "HUELS-",
+  icon: "bandage",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  language: "hu",
+  locale: "hu-HU",
+  english: {
+    name: "Hungary First Aid Exam for the Driving Licence",
+    shortName: "Hungarian first aid exam",
+    fullName: "Hungarian road first aid exam for the driving licence (közúti elsősegélynyújtási vizsga), in Hungarian",
+  },
+  review: { hu: "model" },
+  // Real exam (31/1992. (XII. 19.) NM rendelet; Magyar Vöröskereszt MVK-SZ-036 exam rules,
+  // checked 2026-11-06): examined by the Red Cross county organisations; mainly practical
+  // (one-rescuer CPR, casualty examination, recovery position, then an "A" and a "B" task from a
+  // drawn card) with oral or written theory; megfelelt / nem felelt meg, no question count or
+  // pass mark. passPct 80 (40 of 50) is Tigertest's readiness line. Categories follow the Red
+  // Cross list of fail-level errors and the ERC 2025 first aid and BLS guidelines (Hungarian
+  // summary, Orv Hetil 2026;167(33)); the 8/7/8/5/7/6/4/5 split is Tigertest's own. Four tests
+  // of 50, pools exactly 4x each count (200, all original, written in Hungarian).
+  blueprint: {
+    huelHelyszin: 8,
+    huelVizsgalat: 7,
+    huelUjraeleszt: 8,
+    huelGyermek: 5,
+    huelVerzes: 7,
+    huelSerules: 6,
+    huelKornyezet: 4,
+    huelBelgyogy: 5,
+  },
+  // Four topic sets, not testSets(): 4 + 4 tests = 8 dashboard steps.
+  trainingSets: [
+    { setNumber: 1, id: 24601, name: "Helyszín és betegvizsgálat", categories: ["huelHelyszin", "huelVizsgalat"], size: 60, weightLabel: "15 kérdés az 50-ből tesztenként" },
+    { setNumber: 2, id: 24602, name: "Újraélesztés és félrenyelés", categories: ["huelUjraeleszt", "huelGyermek"], size: 52, weightLabel: "13 kérdés az 50-ből tesztenként" },
+    { setNumber: 3, id: 24603, name: "Vérzések és sérülések", categories: ["huelVerzes", "huelSerules"], size: 52, weightLabel: "13 kérdés az 50-ből tesztenként" },
+    { setNumber: 4, id: 24604, name: "Égés, mérgezés és belgyógyászat", categories: ["huelKornyezet", "huelBelgyogy"], size: 36, weightLabel: "9 kérdés az 50-ből tesztenként" },
+  ],
+  categoryLabels: {
+    huelHelyszin: "Baleseti helyszín, segélyhívás és mentés",
+    huelVizsgalat: "Betegvizsgálat, eszméletlenség és fektetés",
+    huelUjraeleszt: "Felnőtt újraélesztés és AED",
+    huelGyermek: "Félrenyelés, gyermek és csecsemő",
+    huelVerzes: "Vérzések, sebek és sokk",
+    huelSerules: "Törések, fej-, gerinc- és mellkassérülések",
+    huelKornyezet: "Égés, áramütés, mérgezés, hő és hideg",
+    huelBelgyogy: "Belgyógyászati vészhelyzetek",
+  },
+  copy: {
+    guestPrompt: "hogy elmentsd a haladásodat az elsősegély vizsgához, és minden rossz válaszodat számon tartsd",
+    trainingHeading: "Gyakorlókészletek",
+    trainingSub: "Minden gyakorlókészlet a vizsga két témakörét fedi le. Azonnal látod, jól válaszoltál-e, és a rossz válaszaid visszajönnek, amíg biztosan nem tudod őket.",
+    testsHeading: "Tesztek · 50 kérdés, 40 a cél",
+    heroSubs: [
+      "Négy gyakorlókészlet, négy teszt. Kezdd a helyszínnel és az újraélesztéssel.",
+      "Előbb tanuld meg a készletet, aztán írd meg a tesztet.",
+      "Félúton jársz. Írj meg egy tesztet.",
+      "Gyakorold a hibáidat, aztán teszteld magad újra.",
+      "Minden zöld. Jelentkezz az elsősegély vizsgára.",
+    ],
+    sourceLine: "Saját kérdések az ERC 2025-ös irányelvei, a KRESZ és a Btk. alapján, 2026. novemberi állapot. A gyakorlati részt (újraélesztés bábun, kötözés) kézzel kell begyakorolni.",
+    analyticsKey: "huelsoseg",
+  },
+};
+
+const hubizt: ExamConfig = {
+  id: "hubizt",
+  stateCode: "HUBIZT",
+  idBase: 24700,
+  slug: "/biztositaskozvetitoi-vizsga",
+  landingPath: "/hu/biztositaskozvetitoi-vizsga-teszt",
+  name: "Biztosításközvetítői vizsga teszt",
+  shortName: "Biztosításközvetítői vizsga",
+  examLabel: "Függő biztosításközvetítői hatósági vizsga",
+  fullName: "Függő biztosításközvetítői hatósági vizsga (Magyar Nemzeti Bank)",
+  questionIdPrefix: "HUBIZT-",
+  icon: "umbrella",
+  testCount: 5,
+  questionsPerTest: 40,
+  passPct: 75,
+  language: "hu",
+  locale: "hu-HU",
+  english: {
+    name: "Hungary Insurance Intermediary Exam (MNB)",
+    shortName: "Hungarian insurance intermediary exam",
+    fullName: "Hungarian insurance intermediary licensing exam (biztosításközvetítői hatósági vizsga, Magyar Nemzeti Bank), dependent intermediary level, in Hungarian",
+  },
+  review: { hu: "model" },
+  // Real exam (MNB Vizsgaszabályzat in force 12 June 2025; 40/2015. (XII. 30.) NGM rendelet
+  // annexes 2 and 3; MNB notice of 14 May 2026; checked 2026-11-06): Hungarian multiple-choice
+  // computer test from the MNB question bank, classroom or online. Dependent intermediary 40
+  // questions, 40 minutes, pass at 30 points; independent 60/60/45; differential 20/20/15.
+  // Categories follow annex 2's three subjects (1 A-C, 2, 3 A-B); the 5/6/6/6/5/5/3/4 split is
+  // Tigertest's (17/11/12 by subject). Five tests of 40, pools exactly 5x each count (200, all
+  // original, written in Hungarian). passPct 75 (30 of 40) is the real dependent pass line.
+  blueprint: {
+    hubiztPenzpiac: 5,
+    hubiztKozvetito: 6,
+    hubiztHatosag: 6,
+    hubiztKockazat: 6,
+    hubiztDij: 5,
+    hubiztSzerzodes: 5,
+    hubiztMegszunes: 3,
+    hubiztTipusok: 4,
+  },
+  // Four topic sets, not testSets(): 4 + 5 tests = 9 dashboard steps.
+  trainingSets: [
+    { setNumber: 1, id: 24701, name: "Pénzügyi és biztosítási piac", categories: ["hubiztPenzpiac", "hubiztKozvetito"], size: 55, weightLabel: "11 kérdés a 40-ből tesztenként" },
+    { setNumber: 2, id: 24702, name: "Hatóságok és fogyasztóvédelem", categories: ["hubiztHatosag"], size: 30, weightLabel: "6 kérdés a 40-ből tesztenként" },
+    { setNumber: 3, id: 24703, name: "Biztosításszakmai alapfogalmak", categories: ["hubiztKockazat", "hubiztDij"], size: 55, weightLabel: "11 kérdés a 40-ből tesztenként" },
+    { setNumber: 4, id: 24704, name: "Biztosítási szerződésjog", categories: ["hubiztSzerzodes", "hubiztMegszunes", "hubiztTipusok"], size: 60, weightLabel: "12 kérdés a 40-ből tesztenként" },
+  ],
+  categoryLabels: {
+    hubiztPenzpiac: "Pénzügyi piacok szereplői",
+    hubiztKozvetito: "Biztosítók és biztosításközvetítők",
+    hubiztHatosag: "Hatóságok, titokvédelem és pénzmosás",
+    hubiztKockazat: "Kockázat, kár és kockázatmegosztás",
+    hubiztDij: "Díj, tartalékok és pénzügyi számítások",
+    hubiztSzerzodes: "A biztosítási szerződés általános szabályai",
+    hubiztMegszunes: "A szerződés megszűnése",
+    hubiztTipusok: "Vagyon-, felelősség-, élet- és balesetbiztosítás",
+  },
+  copy: {
+    guestPrompt: "hogy elmentsd a haladásodat a biztosításközvetítői vizsgához, és minden rossz válaszodat számon tartsd",
+    trainingHeading: "Gyakorlósorok",
+    trainingSub: "Minden gyakorlósor a vizsga egy-egy témakörét fedi le. Azonnal látod, jól válaszoltál-e, és a rossz válaszaid visszajönnek, amíg biztosan nem tudod őket.",
+    testsHeading: "Tesztek · 40 kérdés, 30 jó választól sikeres",
+    heroSubs: [
+      "Négy gyakorlósor, öt teszt. A piac szereplői és a szerződésjog adja a kérdések nagy részét.",
+      "Előbb tanuld meg a gyakorlósort, aztán írd meg a tesztet.",
+      "Félúton jársz. Írj meg egy tesztet.",
+      "Gyakorold a hibáidat, aztán teszteld magad újra.",
+      "Minden zöld. Jelentkezz a hatósági vizsgára a képző szervednél.",
+    ],
+    sourceLine: "Saját kérdések a 40/2015. (XII. 30.) NGM rendelet követelményei, a Bit., a Ptk., a Gfbt. és a Pmt. alapján, 2026. novemberi állapot. Nem az MNB kérdésbankjából valók.",
+    analyticsKey: "hubizt",
+  },
 };
 
 const mttheory: ExamConfig = {
@@ -16535,7 +16833,7 @@ const sgvl: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, nhie, cna, ptcb, phleb, ccma, cma, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, sfadmin, phr, cisa, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, dkteori, dkmoto, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, rodrpciv, hukresz, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, semedb, dkindfoed, dkmedborger, gulfrn, inrto, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, nhie, cna, ptcb, phleb, ccma, cma, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, sfadmin, phr, cisa, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, dkteori, dkmoto, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, rodrpciv, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, semedb, dkindfoed, dkmedborger, gulfrn, inrto, htl, cst, crcst];
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
 export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA, realestatePA, realestateIL, realestateOH, realestateGA, realestateNC, realestateMI, realestateVA, realestateWA, realestateAZ, realestateTN, realestateLA, insuranceNY, insurancePA, insuranceIL, insuranceOH, insuranceGA, insuranceNC, insuranceMI, insuranceNJ, insuranceVA, insuranceWA, pncNY, pncPA, pncIL, pncOH, pncGA, pncNC, pncMI, pncNJ, pncVA, pncWA];

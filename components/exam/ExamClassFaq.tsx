@@ -23,6 +23,8 @@ const TEACHES: Record<string, string> = {
   dkmedborger: "a language school course for the medborgerskabsprøve",
   fihygiene: "Hygiene Passport courses",
   fihunt: "a metsästäjätutkinto preparation course",
+  huelsoseg: "a first aid course for learner drivers",
+  hubizt: "a hatósági képzés course for insurance intermediaries",
   mttaxi: "the 46-hour taxi driver course",
   mtguard: "an Award in Private Security Guard Services course",
   // The DMV landing (/dmv-practice-test)

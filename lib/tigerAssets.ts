@@ -80,6 +80,8 @@ const BORROWED_SETS: Record<string, string> = {
   dkmoto: "moto", dkjagt: "hunter", dkindfoed: "civics", dkmedborger: "civics",
   // Finland (Nov 2026): motorcycle the motorcycle tiger, truck and bus the CDL tiger, hygiene passport the UK food hygiene tiger, hunting the hunter tiger.
   fimoto: "moto", fitruck: "cdl", fihygiene: "ukfood", fihunt: "hunter",
+  // Hungary (Nov 2026): motorcycle the motorcycle tiger, GKI the CDL tiger, first aid the CPR tiger, insurance the life and health insurance tiger.
+  hukreszmoto: "moto", hugki: "cdl", huelsoseg: "cpr", hubizt: "insurance",
   // Bank exams wear the IBPS PO tiger; state police exams the police tiger.
   sbipo: "ibpspo", sbiclerk: "ibpspo", ibpsrrb: "ibpspo",
   delhipolice: "police", biharpolice: "police", rajpolice: "police", mppolice: "police",

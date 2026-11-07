@@ -890,6 +890,22 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
     "color": "hsl(125, 20%, 42%)",
     "tint": "hsl(125, 20%, 96%)"
   },
+  "hukreszmoto": {
+    "color": "hsl(160, 25%, 22%)",
+    "tint": "hsl(160, 25%, 96%)"
+  },
+  "hugki": {
+    "color": "hsl(40, 25%, 22%)",
+    "tint": "hsl(40, 25%, 96%)"
+  },
+  "huelsoseg": {
+    "color": "hsl(345, 20%, 34%)",
+    "tint": "hsl(345, 30%, 96%)"
+  },
+  "hubizt": {
+    "color": "hsl(232, 15%, 32%)",
+    "tint": "hsl(232, 25%, 96%)"
+  },
   "mttheory": {
     "color": "hsl(0, 88%, 40%)",
     "tint": "hsl(0, 80%, 96%)"

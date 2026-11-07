@@ -29,6 +29,8 @@ const TEACHER_LED = new Set([
   "dkjagt", "dkindfoed", "dkmedborger",
   // Finland: Hygiene Passport courses, metsästäjävalmennuskurssit
   "fihygiene", "fihunt",
+  // Hungary: Red Cross and driving school first aid courses, hatósági képzés courses for insurance intermediaries
+  "huelsoseg", "hubizt",
   // Malta: approved taxi training providers and private guard course providers
   "mttaxi", "mtguard",
   // Healthcare programs

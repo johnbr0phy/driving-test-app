@@ -8,8 +8,8 @@
 // page's content is in its URL's language even when the header and footer
 // follow the person's own (lib/pageLanguage.ts). /es and /pt themselves are English
 // country homepages, so only the pages under them count. /fi, /hu and /ro are
-// also country homepages (/fi in Finnish by default, /hu and /ro English until their translated
-// test ships), so, like /es, only the pages under them count.
+// also country homepages (/fi and /hu in their own language by default, /ro English until its
+// translated test ships), so, like /es, only the pages under them count.
 
 export const URL_LANGUAGE_PREFIXES: { prefix: string; lang: string; includeRoot: boolean }[] = [
   { prefix: "/es", lang: "es", includeRoot: false },

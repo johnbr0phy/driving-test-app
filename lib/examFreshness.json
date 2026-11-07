@@ -266,6 +266,15 @@
       "what": "The values questions follow integration policy and the learning material can be revised before a sitting.",
       "action": "Check the latest published test and learning material before the May/June 2027 sitting and update the bank, landing and examFacts if the format or topics change.",
       "source": "https://lex.dk/indf%C3%B8dsretspr%C3%B8ve"
+    },
+    {
+      "exam": "hubizt",
+      "date": "2026-06-02",
+      "kind": "notice",
+      "what": "MNB revised the insurance intermediary question bank (13 questions changed, 10 deleted).",
+      "action": "None needed: Tigertest items are original and follow the decree's topics.",
+      "source": "https://www.mnb.hu/letoltes/tajekoztato-a-biztositaskozvetitoi-hatosagi-vizsga-kerdesbankjanak-valtozasarol-2026-05.pdf",
+      "done": "2026-11-06"
     }
   ]
 }

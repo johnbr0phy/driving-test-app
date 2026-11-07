@@ -10,68 +10,74 @@
   "medical": true,
   "sources": {
     "cdc": "cdc-hand-hygiene-2002.txt",
-    "ncbi": "ncbi-taxonomy-1496.txt"
+    "ncbi": "ncbi-taxonomy-1496.txt",
+    "mesh": "nlm-mesh-germs.txt"
   },
   "beats": [
     {
       "id": "hook",
-      "kind": "hook",
-      "say": "Here's a tricky one."
-    },
-    {
-      "id": "question",
-      "kind": "question",
-      "say": "Which pathogen forms spores that alcohol hand rubs don't reliably kill?"
-    },
-    {
-      "id": "answer",
-      "say": "It's Clostridioides difficile, also known as Clostridium difficile, or C. difficile.",
+      "paraphrase": true,
+      "say": "Alcohol hand rub kills a lot of germs well. MRSA. Pseudomonas. It even kills hepatitis B.",
       "claims": [
         {
-          "source": "ncbi",
-          "quote": "<ScientificName>Clostridioides difficile</ScientificName>"
+          "source": "cdc",
+          "quote": "Alcohols have excellent in vitro germicidal activity against gram-positive and gram-negative vegetative bacteria, including multidrug-resistant pathogens (e.g., MRSA and VRE)"
         },
         {
-          "source": "ncbi",
-          "quote": "<Synonym>Clostridium difficile (Hall and O'Toole 1935) Prevot 1938 (Approved Lists 1980)</Synonym>"
+          "source": "mesh",
+          "quote": "Pseudomonas aeruginosa (D011550): A species of gram-negative, aerobic, rod-shaped bacteria"
         },
         {
           "source": "cdc",
-          "quote": "During outbreaks of C. difficile-related infections"
+          "quote": "Hepatitis B virus is an enveloped virus that is somewhat less susceptible but is killed by 60%–70% alcohol"
         }
       ]
     },
     {
-      "id": "spores",
-      "say": "The CDC's hand hygiene guideline names C. difficile in its section on spore-forming bacteria.",
-      "claims": [
-        {
-          "source": "cdc",
-          "quote": "Activity of Antiseptic Agents Against Spore-Forming Bacteria The widespread prevalence of health-care–associated diarrhea caused by Clostridium difficile"
-        },
-        {
-          "source": "cdc",
-          "quote": "has raised concern regarding the activity of antiseptic agents against spore-forming bacteria"
-        },
-        {
-          "source": "cdc",
-          "quote": "Guideline for Hand Hygiene in Health-Care Settings"
-        }
-      ]
-    },
-    {
-      "id": "why",
-      "say": "It says none of the agents in antiseptic handwash or hand rub preparations, including alcohols, reliably kill Clostridium spores.",
+      "id": "turn",
+      "paraphrase": true,
+      "say": "But there's one it can't count on. C. diff.",
       "claims": [
         {
           "source": "cdc",
           "quote": "None of the agents (including alcohols, chlorhexidine, hexachlorophene, iodophors, PCMX, and triclosan) used in antiseptic handwash or antiseptic hand-rub preparations are reliably sporicidal against Clostridium spp."
+        },
+        {
+          "source": "mesh",
+          "quote": "The type species Clostridioides difficile is formerly known as Clostridium difficile."
+        }
+      ]
+    },
+    {
+      "id": "spore",
+      "paraphrase": true,
+      "say": "C. diff is a rod that can form a spore inside itself: an inactive form that resists heat.",
+      "claims": [
+        {
+          "source": "mesh",
+          "quote": "A genus of an obligate anaerobic, gram-positive, spore-forming rod bacteria"
+        },
+        {
+          "source": "mesh",
+          "quote": "Heat and stain resistant, metabolically inactive bodies formed within the vegetative cells of bacteria of the genera Bacillus and Clostridium."
+        }
+      ]
+    },
+    {
+      "id": "alcohol",
+      "paraphrase": true,
+      "say": "And alcohol does very little against spores.",
+      "claims": [
+        {
+          "source": "cdc",
+          "quote": "alcohols have very poor activity against bacterial spores"
         }
       ]
     },
     {
       "id": "soap",
-      "say": "Washing hands with soap and water may help to physically remove spores.",
+      "paraphrase": true,
+      "say": "Soap and water is different. Scrubbing and rinsing can help wash spores off your hands.",
       "claims": [
         {
           "source": "cdc",
@@ -80,18 +86,9 @@
       ]
     },
     {
-      "id": "gloves",
-      "say": "It also says to wear gloves when caring for patients with C. difficile diarrhea.",
-      "claims": [
-        {
-          "source": "cdc",
-          "quote": "HCWs should be encouraged to wear gloves when caring for patients with C. difficileassociated diarrhea"
-        }
-      ]
-    },
-    {
-      "id": "after",
-      "say": "After gloves are removed, it allows soap and water or an alcohol-based hand rub. During C. difficile outbreaks, it calls soap and water the prudent choice.",
+      "id": "outbreak",
+      "paraphrase": true,
+      "say": "In everyday care, the 2002 CDC guideline allows soap and water or alcohol rub after gloves. But in a C. diff outbreak, it calls soap and water the prudent choice.",
       "claims": [
         {
           "source": "cdc",
@@ -100,13 +97,22 @@
         {
           "source": "cdc",
           "quote": "During outbreaks of C. difficile-related infections, washing hands with a non-antimicrobial or antimicrobial soap and water after removing gloves is prudent."
+        },
+        {
+          "source": "cdc",
+          "quote": "Morbidity and Mortality Weekly Report Recommendations and Reports October 25, 2002"
         }
       ]
     },
     {
       "id": "lock",
-      "say": "The answer: Clostridioides difficile.",
+      "paraphrase": true,
+      "say": "Alcohol can't reliably kill spores. The answer: C. diff, Clostridioides difficile.",
       "claims": [
+        {
+          "source": "cdc",
+          "quote": "None of the agents (including alcohols, chlorhexidine, hexachlorophene, iodophors, PCMX, and triclosan) used in antiseptic handwash or antiseptic hand-rub preparations are reliably sporicidal against Clostridium spp."
+        },
         {
           "source": "ncbi",
           "quote": "<ScientificName>Clostridioides difficile</ScientificName>"
@@ -116,71 +122,104 @@
   ],
   "visuals": [
     {
-      "label": "Clostridioides difficile",
-      "source": "ncbi",
-      "quote": "Clostridioides difficile"
+      "label": "MRSA drawn as round cocci in an irregular cluster",
+      "source": "mesh",
+      "quote": "coccoid bacteria. Its organisms occur singly, in pairs, and in tetrads and characteristically divide in more than one plane to form irregular clusters"
     },
     {
-      "label": "Clostridium difficile (also listed as)",
-      "source": "ncbi",
-      "quote": "Clostridium difficile"
+      "label": "Pseudomonas drawn as a rod",
+      "source": "mesh",
+      "quote": "A species of gram-negative, aerobic, rod-shaped bacteria"
     },
     {
-      "label": "Quote: none of the agents ... are reliably sporicidal against Clostridium spp.",
+      "label": "Hepatitis B drawn as a virion with an envelope (the round shape is the reviewer's knowledge, not stated in the sources)",
+      "source": "mesh",
+      "quote": "The Dane particle is an intact hepatitis virion"
+    },
+    {
+      "label": "Hepatitis B: enveloped",
       "source": "cdc",
-      "quote": "used in antiseptic handwash or antiseptic hand-rub preparations are reliably sporicidal against Clostridium spp."
+      "quote": "Hepatitis B virus is an enveloped virus"
     },
     {
-      "label": "Quote: soap and water may help to physically remove spores",
+      "label": "MRSA, Pseudomonas: alcohol works (✓)",
+      "source": "cdc",
+      "quote": "Alcohols have excellent in vitro germicidal activity against gram-positive and gram-negative vegetative bacteria, including multidrug-resistant pathogens (e.g., MRSA and VRE)"
+    },
+    {
+      "label": "C. diff drawn as a rod with a spore forming inside",
+      "source": "mesh",
+      "quote": "spore-forming rod bacteria"
+    },
+    {
+      "label": "Spore: heat-resistant, inactive",
+      "source": "mesh",
+      "quote": "Heat and stain resistant, metabolically inactive bodies formed within the vegetative cells"
+    },
+    {
+      "label": "Alcohol flows over the spore; the spore stays intact, labelled 'very poor activity'",
+      "source": "cdc",
+      "quote": "alcohols have very poor activity against bacterial spores"
+    },
+    {
+      "label": "Soap and water washing spores off hands",
       "source": "cdc",
       "quote": "may help to physically remove spores from the surface of contaminated hands"
     },
     {
-      "label": "Gloves",
+      "label": "Everyday care: soap and water or alcohol rub after gloves. Outbreak: soap and water (prudent)",
       "source": "cdc",
-      "quote": "wear gloves when caring for patients with C. difficileassociated diarrhea"
+      "quote": "After gloves are removed, hands should be washed with a non-antimicrobial or an antimicrobial soap and water or disinfected with an alcohol-based hand rub."
     },
     {
-      "label": "After gloves: soap and water, or alcohol-based hand rub",
-      "source": "cdc",
-      "quote": "soap and water or disinfected with an alcohol-based hand rub"
+      "label": "Clostridioides difficile (formerly Clostridium difficile)",
+      "source": "mesh",
+      "quote": "The type species Clostridioides difficile is formerly known as Clostridium difficile."
     },
     {
-      "label": "Outbreaks: soap and water",
-      "source": "cdc",
-      "quote": "During outbreaks of C. difficile-related infections, washing hands with a non-antimicrobial or antimicrobial soap and water after removing gloves is prudent."
-    },
-    {
-      "label": "CDC, Guideline for Hand Hygiene in Health-Care Settings (2002)",
+      "label": "Source line: CDC Hand Hygiene Guideline 2002; NLM MeSH",
       "source": "cdc",
       "quote": "Guideline for Hand Hygiene in Health-Care Settings"
+    },
+    {
+      "label": "End card: 4 CRCST practice tests on Tigertest",
+      "source": "cdc",
+      "quote": "Guideline for Hand Hygiene"
+    },
+    {
+      "label": "Hepatitis B: alcohol works (✓)",
+      "source": "cdc",
+      "quote": "is killed by 60%–70% alcohol"
+    },
+    {
+      "label": "Outbreak row: soap and water (prudent)",
+      "source": "cdc",
+      "quote": "after removing gloves is prudent"
     }
   ],
   "notes": [
-    "Hands only: surface disinfection (EPA List K sporicidal products) is not covered; the CRCST item sits in cleaning/decontamination, so a reviewer may want a surfaces beat once an EPA source is saved.",
-    "The CDC hand hygiene guideline is from 2002; the reviewer believes current CDC and SHEA/IDSA 2017 guidance agrees (gloves and gown, soap and water preferred in outbreaks), but those were not saved as sources.",
-    "Bank item SPD-DEC-005: the stem's 'remove or kill' and the explanation's 'must be washed' go beyond the CDC wording; consider fixing the bank text."
+    "Version 2 (Nov 7): rewritten in plain words after the first draft read like the guideline. Lines are paraphrases ('paraphrase': true): the checker still requires a verbatim quote, numbers and absolute words, and the adversarial reviewer judges that each paraphrase keeps the quote's meaning.",
+    "Hands only: surface disinfection (EPA List K sporicidal products) is not covered.",
+    "The CDC hand hygiene guideline is from 2002; current CDC and SHEA/IDSA guidance is believed to agree (gloves and gown, soap and water preferred in outbreaks) but is not saved as a source.",
+    "The end card's claim (4 CRCST practice tests) is about Tigertest itself, from lib/exams.ts, not a medical claim.",
+    "Bank item SPD-DEC-005's explanation says hands 'must be washed with soap and water'; the CDC says 'prudent' during outbreaks and allows alcohol rub otherwise. Consider rewording the bank explanation."
   ],
   "review": {
     "ai": [
       {
-        "date": "2026-11-06",
+        "date": "2026-11-07",
         "round": 1,
-        "verdict": "fix first",
+        "verdict": "fix first (hook overstated HBV, outbreak omission, 'spores beat alcohol' absolute, bounce drawing, HBV quote); all fixed",
         "by": "adversarial reviewer (Claude)"
       },
       {
-        "date": "2026-11-06",
+        "date": "2026-11-07",
         "round": 2,
         "verdict": "pass",
         "by": "adversarial reviewer (Claude)"
-      },
-      {
-        "date": "2026-11-06",
-        "verdict": "blind answer A, high confidence, matches key",
-        "by": "blind reviewer (Claude)"
       }
     ],
     "human": null
-  }
+  },
+  "voiceText": "eleven_v4, voice Benedict (6q6UVsvekS0UjrUXFz79). Same words as 'say', except: 'C. diff' is written 'see diff', MRSA as 'M R S A', Pseudomonas as IPA /ˌsuːdoʊˈmoʊnəs/, Clostridioides difficile as IPA /klɒˌstrɪdiˈɔɪdiːz ˌdɪfɪˈsiːl/, plus mood tags. A person must listen: the transcript only aligns this text."
 }

@@ -9,9 +9,11 @@
  *  - the ledger's lines differ from the storyboard's (lib/mistakeExplainers),
  *  - the ledger's answer is not the bank's answer key,
  *  - a quote is not in its source, word for word,
- *  - a factual line has no quote, or uses a number, an absolute word
- *    (always, never, only...) or a content word that is in none of its
- *    quotes, the bank question or the generic word list,
+ *  - a factual line has no quote, or uses a number or an absolute word
+ *    (always, never, only...) that is in none of its quotes, or (unless the
+ *    beat is marked "paraphrase") a content word that is in none of its
+ *    quotes, the bank question or the generic word list. A paraphrase beat
+ *    still needs its quotes; the adversarial review judges its meaning,
  *  - a hook is not one of the approved hooks, or a question line uses words
  *    the bank question does not,
  *  - a drawn label has no quote.
@@ -38,7 +40,7 @@ again because said tell tells start starts started wrong puts under whole points
 const ABSOLUTE = ["always", "never", "only", "every", "none", "all", "guarantee", "guaranteed", "cure", "cures", "completely", "100"];
 
 interface Claim { source: string; quote: string }
-interface Beat { id: string; kind?: "hook" | "question"; say: string; claims?: Claim[] }
+interface Beat { id: string; kind?: "hook" | "question"; say: string; claims?: Claim[]; paraphrase?: boolean }
 interface Ledger {
   id: string; examId: string; questionId: string; bank: string;
   answer: { letter: string; text: string }; medical: boolean;
@@ -120,7 +122,7 @@ for (const f of files) {
     for (const w of words(b.say)) {
       if (/^\d/.test(w) && !quoteText.includes(w)) errs.push(`${where}: the number "${w}" is in none of its quotes`);
       if (ABSOLUTE.includes(w) && !has(quoteWords, w)) errs.push(`${where}: absolute word "${w}" is in none of its quotes`);
-      if (w.length >= 4 && !/^\d/.test(w) && !has(quoteWords, w) && !quoteText.includes(w) && !has(bankWords, w) && !has(titles, w) && !has(GENERIC, w)) {
+      if (!b.paraphrase && w.length >= 4 && !/^\d/.test(w) && !has(quoteWords, w) && !quoteText.includes(w) && !has(bankWords, w) && !has(titles, w) && !has(GENERIC, w)) {
         errs.push(`${where}: "${w}" is in none of its quotes`);
       }
     }

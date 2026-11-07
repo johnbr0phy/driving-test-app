@@ -9,6 +9,8 @@ import { DoubleArrowScene3, doubleArrowCues } from "@/components/mistakes/scenes
 import { CdiffScene3, cdiffCues } from "@/components/mistakes/scenes/Cdiff3";
 import { SaNodeScene3, saNodeCues } from "@/components/mistakes/scenes/SaNode3";
 import { GliptinScene3, gliptinCues } from "@/components/mistakes/scenes/Gliptin3";
+import { Stage4, END_HOLD } from "@/components/mistakes/Stage4";
+import { CdiffScene4 } from "@/components/mistakes/scenes/Cdiff4";
 import type { ReactNode } from "react";
 
 /** The premium pass, one explainer so far. */
@@ -17,6 +19,11 @@ const SCENES3: Record<string, { Scene: (p: SceneProps3) => ReactNode; cues: (m: 
   "crcst-cdiff-spores": { Scene: CdiffScene3, cues: cdiffCues },
   "ccma-sa-node": { Scene: SaNodeScene3, cues: saNodeCues },
   "ptcb-gliptin": { Scene: GliptinScene3, cues: gliptinCues },
+};
+
+/** The dark design (Stage4, ?d=4): scene, test label and the end card's line. */
+const SCENES4: Record<string, { Scene: (p: SceneProps3) => ReactNode; label: string; practice: string }> = {
+  "crcst-cdiff-spores": { Scene: CdiffScene4, label: "CRCST", practice: "4 full CRCST practice tests, plus practice sets" },
 };
 
 declare global {
@@ -29,15 +36,25 @@ declare global {
 export default function Frame3Page() {
   const [id, setId] = useState<string | null>(null);
   const [t, setT] = useState(0);
-  useEffect(() => setId(new URLSearchParams(location.search).get("v")), []);
+  const [d4, setD4] = useState(false);
+  useEffect(() => {
+    const q = new URLSearchParams(location.search);
+    setId(q.get("v"));
+    setD4(q.get("d") === "4");
+  }, []);
   const ex = id ? mistakeExplainerById(id) : undefined;
-  return ex && SCENES3[ex.id] ? <Frame key={ex.id} ex={ex} t={t} setT={setT} /> : null;
+  if (!ex) return null;
+  if (d4) return SCENES4[ex.id] ? <Frame key={ex.id + "4"} ex={ex} t={t} setT={setT} d4 /> : null;
+  return SCENES3[ex.id] ? <Frame key={ex.id} ex={ex} t={t} setT={setT} /> : null;
 }
 
-function Frame({ ex, t, setT }: { ex: NonNullable<ReturnType<typeof mistakeExplainerById>>; t: number; setT: (t: number) => void }) {
+function Frame({ ex, t, setT, d4 = false }: { ex: NonNullable<ReturnType<typeof mistakeExplainerById>>; t: number; setT: (t: number) => void; d4?: boolean }) {
   const loaded = useMistakeManifest(ex);
-  const m = loaded === null ? estimateTimings(ex) : loaded;
-  const s = SCENES3[ex.id];
+  const base = loaded === null ? estimateTimings(ex) : loaded;
+  // the dark design holds an end card after the last word
+  const m = base && d4 ? { ...base, duration: base.duration + END_HOLD } : base;
+  const s = SCENES3[ex.id] ?? { Scene: () => null, cues: () => [] };
+  const s4 = SCENES4[ex.id];
   useEffect(() => {
     if (!m) return;
     window.__mx3 = {
@@ -49,7 +66,9 @@ function Frame({ ex, t, setT }: { ex: NonNullable<ReturnType<typeof mistakeExpla
   if (!m) return null;
   return (
     <div id="mx-frame" style={{ width: W, height: H, position: "fixed", inset: 0, zIndex: 9999 }}>
-      <Stage3 ex={ex} m={m} t={t} Scene={s.Scene} question={ex.question} />
+      {d4 && s4
+        ? <Stage4 ex={ex} m={m} t={t} Scene={s4.Scene} testLabel={s4.label} practiceLine={s4.practice} />
+        : <Stage3 ex={ex} m={m} t={t} Scene={s.Scene} question={ex.question} />}
     </div>
   );
 }

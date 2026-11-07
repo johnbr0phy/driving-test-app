@@ -882,6 +882,18 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
     "color": "hsl(210, 55%, 46%)",
     "tint": "hsl(210, 55%, 96%)"
   },
+  "grmoto": {
+    "color": "hsl(16, 35%, 22%)",
+    "tint": "hsl(16, 40%, 96%)"
+  },
+  "grcitizen": {
+    "color": "hsl(222, 100%, 18%)",
+    "tint": "hsl(222, 80%, 96%)"
+  },
+  "grsecurity": {
+    "color": "hsl(240, 50%, 18%)",
+    "tint": "hsl(240, 60%, 96%)"
+  },
   "rodrpciv": {
     "color": "hsl(234, 95%, 30%)",
     "tint": "hsl(234, 80%, 96%)"

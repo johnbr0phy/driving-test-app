@@ -2721,6 +2721,51 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "The Ministry of Infrastructure and Transport's computer theory test page, Law 4850/2021 article 6, the 2025 Highway Code (Law 5209/2025) and Greek motoring press on the test format, checked November 2026",
     source: { name: "Ministry of Infrastructure and Transport: computer theory test (ΜΣΘΕΥΟ)", url: "https://www.yme.gov.gr/metafores/adeies-odigisis/theoritiki-exetasi-ypopsifion-odigon-meso-i-y-mstheyo" },
+  },  grmoto: {
+    answer:
+      "The Greek motorcycle theory test is the computer-based multiple-choice test for categories A1, A2 and A, taken at a Transport Directorate exam centre before the practical riding test. The Ministry of Infrastructure and Transport runs its computer theory test in four licence groups, car, motorcycle, lorry and bus, and draws each candidate's questionnaire at random from its question bank. Greek law makes the questionnaires available in foreign languages as well as in Greek, in Greek with audio and in Greek Sign Language. Guides describe the motorcycle test like the car test, 30 questions with a pass at 29 correct; check the time and the current rule with your driving school or Transport Directorate. A1 covers motorcycles up to 125 cc and 11 kW, A2 up to 35 kW, and A any motorcycle.",
+    rows: [
+      { label: "Run by", value: "Ministry of Infrastructure and Transport (Transport Directorates)" },
+      { label: "Format", value: "Multiple choice on a computer, random draw from the question bank, motorcycle licence group" },
+      { label: "Questions", value: "30 (as guides report)" },
+      { label: "Pass mark", value: "29 of 30 (as guides report)" },
+      { label: "Languages", value: "Greek and foreign languages; Greek with audio; Greek Sign Language" },
+      { label: "Categories", value: "A1 (125 cc, 11 kW), A2 (35 kW), A (no limit)" },
+      { label: "Rules tested", value: "Greek Highway Code (Law 5209/2025) and safe riding" },
+      { label: "Tigertest mock tests", value: "6 x 30 questions, 29 to pass" },
+    ],
+    basedOn: "The Ministry of Infrastructure and Transport's computer theory test page, Law 4850/2021 article 6, the 2025 Highway Code (Law 5209/2025) articles 21, 33, 37, 38 and 44, EU Directive 2006/126/EC category limits and guides on the test format, checked November 2026",
+    source: { name: "Ministry of Infrastructure and Transport: computer theory test (ΜΣΘΕΥΟ)", url: "https://www.yme.gov.gr/metafores/adeies-odigisis/theoritiki-exetasi-ypopsifion-odigon-meso-i-y-mstheyo" },
+  },  grcitizen: {
+    answer:
+      "The Certificate of Adequate Knowledge for Naturalisation (Πιστοποιητικό Επάρκειας Γνώσεων για Πολιτογράφηση, PEGP) is required before you can apply for Greek citizenship by naturalisation. The General Secretariat for Citizenship of the Ministry of the Interior runs the exam, usually twice a year, in Greek only. It has three parts. Part A, up to 150 minutes on paper, holds the thematic units, 20 questions (4 on geography, 4 on culture, 6 on history and 6 on the institutions of the polity) worth 2 points each, and the written Greek section (18 questions and a short text of 80 to 100 words). Parts B and C test listening (10 questions) and speaking (up to 15 minutes). You pass with at least 70 of 100 points, provided you score at least 20 of 40 in the thematic units and 40 of 60 in Greek. Questions are drawn on the day from the official question bank, which is published on the exam platform. Candidates over 62 or with a learning difficulty answer the same questions orally.",
+    rows: [
+      { label: "Run by", value: "General Secretariat for Citizenship, Ministry of the Interior" },
+      { label: "Thematic units", value: "20 questions: 4 geography, 4 culture, 6 history, 6 institutions" },
+      { label: "Scoring", value: "2 points per correct thematic answer, 40 in all" },
+      { label: "Greek language", value: "Written, listening and speaking, 60 points" },
+      { label: "Pass mark", value: "70/100 overall, with at least 20/40 and 40/60" },
+      { label: "Time", value: "Part A up to 150 minutes" },
+      { label: "Language", value: "Greek only" },
+      { label: "Tigertest mock tests", value: "8 x 20 thematic questions in Greek, 14 as a target" },
+    ],
+    basedOn: "The General Secretariat for Citizenship's exam procedure guides for written and oral candidates (April 2026) and the Ministry of Education's call for examiners of 3 March 2026, checked November 2026",
+    source: { name: "PEGP exam platform, General Secretariat for Citizenship (in Greek)", url: "https://exetaseis-ithageneia.ypes.gr/" },
+  },  grsecurity: {
+    answer:
+      "To work in private security in Greece you need a work permit (άδεια εργασίας) from the Hellenic Police under Law 2518/1997, and for a Category A permit (guarding, close protection, cash transport, events and port or airport screening) a vocational training certificate from ΕΟΠΠΕΠ, Greece's national qualifications body. You first complete KEMEA's 105-hour Basic Training Programme for Private Security Personnel at a contracted training centre, then sit ΕΟΠΠΕΠ's certification exam, held in several periods a year, each with its own call. The exam has a theory part, a written test of 20 equivalent multiple-choice questions drawn electronically from the published list of topics, and a practical part, an oral test in groups of three before a three-member committee; both are compulsory. The final grade runs from 1 to 20 and 10 or more is a pass. The exam is in Greek. The work permit then lasts five years and is renewed at least one month before it expires.",
+    rows: [
+      { label: "Certified by", value: "ΕΟΠΠΕΠ (Greece)" },
+      { label: "Before the exam", value: "KEMEA Basic Training Programme, 105 hours" },
+      { label: "Theory part", value: "20 multiple-choice questions, drawn from the published list" },
+      { label: "Practical part", value: "Oral test in groups of three before a committee" },
+      { label: "Pass mark", value: "Final grade 10 of 20 or more" },
+      { label: "Language", value: "Greek" },
+      { label: "Work permit", value: "Hellenic Police, valid five years" },
+      { label: "Tigertest mock tests", value: "8 x 20 theory questions in Greek, 14 as a target" },
+    ],
+    basedOn: "ΕΟΠΠΕΠ certification exam notices and results for private security personnel (2022 to 2026, as published by alfavita.gr), the KEMEA programme description (ΕΟΠΠΕΠ decision ΔΠ/11556/2022) and Law 2518/1997 as amended, checked November 2026",
+    source: { name: "ΕΟΠΠΕΠ (in Greek)", url: "https://www.eoppep.gr/" },
   },
   rodrpciv: {
     answer:

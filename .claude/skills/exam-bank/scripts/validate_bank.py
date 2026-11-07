@@ -242,7 +242,7 @@ def main() -> int:
             if isinstance(r[k], str) and not r[k].strip():
                 errs.append(f"{qid}: empty {k}")
         q = r["question"].strip()
-        if not (q.endswith("?") or q.endswith(":")):
+        if not (q.endswith("?") or q.endswith(":") or (args.lang == "el" and q.endswith(";"))):
             errs.append(f"{qid}: stem does not end with ? or :")
         if variant_state:
             # Ids come from the national bank (or the state's form), so they skip numbers

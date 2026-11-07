@@ -34,8 +34,9 @@ import dkteoriDa from "./examTranslations/dkteori.da.json";
 import fitheoryFi from "./examTranslations/fitheory.fi.json";
 import hukreszHu from "./examTranslations/hukresz.hu.json";
 import rodrpcivRo from "./examTranslations/rodrpciv.ro.json";
+import grdrivingEl from "./examTranslations/grdriving.el.json";
 
-export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "dkteori" | "dkmoto" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "rodrpciv" | "rocpi" | "rotaxi" | "roadmed" | "rorezid" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "detheorie" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl";
+export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "dkteori" | "dkmoto" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "grmoto" | "grcitizen" | "grsecurity" | "rodrpciv" | "rocpi" | "rotaxi" | "roadmed" | "rorezid" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "detheorie" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -10198,6 +10199,220 @@ const grdriving: ExamConfig = {
     sourceLine: "Based on the Greek Highway Code (2025) and Greek road signs. Original questions in English; 30 per test, 29 to pass as guides report.",
     analyticsKey: "grdriving",
   },
+  review: { el: "machine" },
+  translations: {
+    el: examTranslation(grdrivingEl),
+  },
+};
+
+const grmoto: ExamConfig = {
+  id: "grmoto",
+  stateCode: "GRMOTO",
+  idBase: 25300,
+  slug: "/greece-motorcycle-theory",
+  landingPath: "/greece-motorcycle-theory-test",
+  name: "Greece Motorcycle Theory Test Practice",
+  shortName: "Greece motorcycle theory",
+  examLabel: "Greek motorcycle theory test",
+  fullName: "Greece motorcycle theory test (categories A1, A2 and A)",
+  questionIdPrefix: "GRMOTO-",
+  icon: "bike",
+  testCount: 6,
+  questionsPerTest: 30,
+  passPct: 96,
+  // Greek motorcycle theory test (licence group "δίκυκλο" of the Ministry of Infrastructure and
+  // Transport's computer theory test, ΜΣΘΕΥΟ): random multiple-choice questionnaire per
+  // candidate, offered in foreign languages (Law 4850/2021 art. 6). 30 questions, 29 to pass per
+  // guides (autoviatest, Nov 2026); not confirmed on a ministry page, and no time is published.
+  // No topic weights are published; these are Tigertest's, riding control and road position
+  // heaviest. Rider rules from the 2025 Highway Code (Law 5209/2025 arts. 21, 33, 37, 38, 44) as in
+  // force 2026-11-07. Six real-length tests; pools are 6x each count plus 20 training-only spares.
+  // passPct 96 = ceil(0.96 * 30) = 29. All items original; no road-sign items (grdriving's lane).
+  blueprint: {
+    grmoLicence: 3,
+    grmoGear: 4,
+    grmoBike: 3,
+    grmoControl: 5,
+    grmoPosition: 5,
+    grmoJunctions: 4,
+    grmoPassenger: 2,
+    grmoHazards: 3,
+    grmoRules: 1,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 25301, name: "Gear & the Machine", categories: ["grmoGear", "grmoBike"], size: 46, weightLabel: "7 of 30 test questions" },
+    { setNumber: 2, id: 25302, name: "Control & Road Hazards", categories: ["grmoControl", "grmoHazards"], size: 52, weightLabel: "8 of 30 test questions" },
+    { setNumber: 3, id: 25303, name: "Road Position & Junctions", categories: ["grmoPosition", "grmoJunctions"], size: 58, weightLabel: "9 of 30 test questions" },
+    { setNumber: 4, id: 25304, name: "Licences, Passengers & the Code", categories: ["grmoLicence", "grmoPassenger", "grmoRules"], size: 44, weightLabel: "6 of 30 test questions" },
+  ],
+  categoryLabels: {
+    grmoLicence: "Licences, Documents & Rider Conduct",
+    grmoGear: "Helmets & Protective Gear",
+    grmoBike: "Motorcycle Checks & Controls",
+    grmoControl: "Braking, Cornering & Control",
+    grmoPosition: "Road Position, Filtering & Overtaking",
+    grmoJunctions: "Junctions, Priority & Being Seen",
+    grmoPassenger: "Passengers & Loads",
+    grmoHazards: "Road Surfaces, Weather & Hazards",
+    grmoRules: "Highway Code Rules for Riders",
+  },
+  copy: {
+    guestPrompt: "to save your Greek motorcycle theory progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets on riding skills and the 2025 Greek Highway Code's rules for riders, in English. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 30 questions, 29 to pass",
+    heroSubs: [
+      "Four topics, six real-length tests. One mistake is all you can afford.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Ask your driving school to book your motorcycle theory test.",
+    ],
+    sourceLine: "Based on the Greek Highway Code (2025) and motorcycle safety practice. Original questions in English; 30 per test, 29 to pass as guides report.",
+    analyticsKey: "grmoto",
+  },
+};
+
+const grcitizen: ExamConfig = {
+  id: "grcitizen",
+  stateCode: "GRCITIZEN",
+  idBase: 25200,
+  slug: "/eksetaseis-pegp",
+  landingPath: "/el/eksetaseis-pegp-politografisi",
+  name: "Εξετάσεις ΠΕΓΠ για την πολιτογράφηση",
+  shortName: "Εξετάσεις ΠΕΓΠ",
+  examLabel: "Εξετάσεις ΠΕΓΠ",
+  fullName: "Πιστοποιητικό Επάρκειας Γνώσεων για Πολιτογράφηση (Θεματικές Ενότητες)",
+  questionIdPrefix: "GRCIT-",
+  icon: "flag",
+  testCount: 8,
+  questionsPerTest: 20,
+  passPct: 70,
+  language: "el",
+  locale: "el-GR",
+  english: {
+    name: "Greek Citizenship Test (PEGP)",
+    shortName: "Greek citizenship test",
+    fullName: "Greek naturalisation knowledge test (Πιστοποιητικό Επάρκειας Γνώσεων για Πολιτογράφηση, PEGP), thematic units, in Greek",
+  },
+  review: { el: "model" },
+  // Real exam (General Secretariat for Citizenship, Οδηγός εξεταστικής διαδικασίας, April 2026;
+  // checked 2026-11-07): Part A written, 150 min: thematic units 20 questions (4 geography,
+  // 4 culture, 6 history, 6 institutions), 2 points each, max 40; written Greek 18 questions and
+  // an 80-100 word text. Part B listening (10), Part C speaking (up to 15 min). Pass 70/100 with
+  // at least 20/40 thematic and 40/60 Greek. Topics drawn on the day from the public question
+  // bank. Only the thematic units are modelled, at the real 4/4/6/6 split; all items original.
+  // passPct 70 (14 of 20) is Tigertest's target.
+  blueprint: {
+    grcitGeo: 4,
+    grcitCulture: 4,
+    grcitHistory: 6,
+    grcitInst: 6,
+  },
+  // Four topic sets, not testSets(): 4 + 8 tests = 12 dashboard steps.
+  trainingSets: [
+    { setNumber: 1, id: 25201, name: "Γεωγραφία", categories: ["grcitGeo"], size: 48, weightLabel: "4 από τις 20 ερωτήσεις κάθε τεστ" },
+    { setNumber: 2, id: 25202, name: "Πολιτισμός", categories: ["grcitCulture"], size: 40, weightLabel: "4 από τις 20 ερωτήσεις κάθε τεστ" },
+    { setNumber: 3, id: 25203, name: "Ιστορία", categories: ["grcitHistory"], size: 56, weightLabel: "6 από τις 20 ερωτήσεις κάθε τεστ" },
+    { setNumber: 4, id: 25204, name: "Θεσμοί του Πολιτεύματος", categories: ["grcitInst"], size: 56, weightLabel: "6 από τις 20 ερωτήσεις κάθε τεστ" },
+  ],
+  categoryLabels: {
+    grcitGeo: "Γεωγραφία",
+    grcitCulture: "Πολιτισμός",
+    grcitHistory: "Ιστορία",
+    grcitInst: "Θεσμοί του Πολιτεύματος",
+  },
+  copy: {
+    guestPrompt: "για να κρατήσεις την πρόοδό σου για τις εξετάσεις ΠΕΓΠ και κάθε λάθος απάντηση",
+    trainingHeading: "Σετ εξάσκησης",
+    trainingSub: "Κάθε σετ καλύπτει μία Θεματική Ενότητα. Βλέπεις αμέσως τη σωστή απάντηση και την εξήγηση, και όσες ερωτήσεις έχασες ξανάρχονται ώσπου να τις μάθεις.",
+    testsHeading: "Τεστ · 20 ερωτήσεις, στόχος 14",
+    heroSubs: [
+      "Τέσσερα σετ, οκτώ τεστ των 20 ερωτήσεων με την κατανομή της εξέτασης.",
+      "Μάθε πρώτα το σετ, μετά κάνε το τεστ.",
+      "Είσαι στα μισά. Κάνε ένα τεστ.",
+      "Επανάλαβε τα λάθη σου και ξανακάνε το τεστ.",
+      "Όλα πράσινα. Ώρα για τις εξετάσεις ΠΕΓΠ.",
+    ],
+    sourceLine: "Δικές μας ερωτήσεις στις τέσσερις Θεματικές Ενότητες, με βάση το Σύνταγμα και τον Οδηγό εξεταστικής διαδικασίας του Απριλίου 2026. Δεν είναι η επίσημη Τράπεζα Θεμάτων, και η γλώσσα και το προφορικό δεν προσομοιώνονται.",
+    analyticsKey: "grcitizen",
+  },
+};
+
+const grsecurity: ExamConfig = {
+  id: "grsecurity",
+  stateCode: "GRSECURITY",
+  idBase: 25500,
+  slug: "/pistopoiisi-idiotikis-asfaleias",
+  landingPath: "/el/pistopoiisi-prosopikou-idiotikis-asfaleias",
+  name: "Πιστοποίηση Προσωπικού Ιδιωτικής Ασφάλειας",
+  shortName: "Πιστοποίηση Security",
+  examLabel: "Εξετάσεις πιστοποίησης ΕΟΠΠΕΠ",
+  fullName: "Πιστοποίηση Επαγγελματικής Κατάρτισης Προσωπικού Ιδιωτικής Ασφάλειας (θεωρητικό μέρος)",
+  questionIdPrefix: "GRSEC-",
+  icon: "badge",
+  testCount: 8,
+  questionsPerTest: 20,
+  passPct: 70,
+  language: "el",
+  locale: "el-GR",
+  english: {
+    name: "Greece Private Security Personnel Certification",
+    shortName: "Greek security guard certification",
+    fullName: "Greece private security personnel certification (ΕΟΠΠΕΠ exam after the KEMEA 105-hour programme), theory part, in Greek",
+  },
+  review: { el: "model" },
+  // Real exam (ΕΟΠΠΕΠ notices 2022 to 2026, checked 2026-11-07): after the KEMEA 105-hour Basic
+  // Training Programme (ΕΟΠΠΕΠ decision ΔΠ/11556, ΦΕΚ Β' 4491/2022, as amended 2024), a theory
+  // part of 20 equivalent multiple-choice questions drawn electronically from the published list
+  // of topics, then an oral practical part in groups of three; both compulsory; final grade 1 to
+  // 20, pass from 10. Categories are the nine lessons of the KEMEA programme; the
+  // 2/3/2/2/2/2/3/2/2 split is Tigertest's. All items original, never the official bank. Only
+  // the theory part is modelled; passPct 70 (14 of 20) is Tigertest's target.
+  blueprint: {
+    grsecSector: 2,
+    grsecLaw: 3,
+    grsecOhs: 2,
+    grsecFirstAid: 2,
+    grsecCrime: 2,
+    grsecEquip: 2,
+    grsecDuties: 3,
+    grsecIncidents: 2,
+    grsecFire: 2,
+  },
+  // Four topic sets, not testSets(): 4 + 8 tests = 12 dashboard steps.
+  trainingSets: [
+    { setNumber: 1, id: 25501, name: "Ο κλάδος και η νομοθεσία", categories: ["grsecSector", "grsecLaw"], size: 52, weightLabel: "5 από τις 20 ερωτήσεις κάθε τεστ" },
+    { setNumber: 2, id: 25502, name: "Υγεία, ασφάλεια και πρώτες βοήθειες", categories: ["grsecOhs", "grsecFirstAid"], size: 44, weightLabel: "4 από τις 20 ερωτήσεις κάθε τεστ" },
+    { setNumber: 3, id: 25503, name: "Πρόληψη του εγκλήματος και καθήκοντα", categories: ["grsecCrime", "grsecDuties"], size: 48, weightLabel: "5 από τις 20 ερωτήσεις κάθε τεστ" },
+    { setNumber: 4, id: 25504, name: "Εξοπλισμός, περιστατικά και πυρασφάλεια", categories: ["grsecEquip", "grsecIncidents", "grsecFire"], size: 56, weightLabel: "6 από τις 20 ερωτήσεις κάθε τεστ" },
+  ],
+  categoryLabels: {
+    grsecSector: "Ο κλάδος, επικοινωνία και δεοντολογία",
+    grsecLaw: "Νομοθεσία",
+    grsecOhs: "Υγιεινή και ασφάλεια στην εργασία",
+    grsecFirstAid: "Πρώτες βοήθειες",
+    grsecCrime: "Έννοιες ασφαλείας και εγκληματικότητα",
+    grsecEquip: "Αυτοπροστασία, εξοπλισμός και μέσα",
+    grsecDuties: "Καθήκοντα στην πρόληψη του εγκλήματος",
+    grsecIncidents: "Διαχείριση περιστατικών και κρίσεων",
+    grsecFire: "Πυροπροστασία και πυρασφάλεια",
+  },
+  copy: {
+    guestPrompt: "για να κρατήσεις την πρόοδό σου για την πιστοποίηση security και κάθε λάθος απάντηση",
+    trainingHeading: "Σετ εξάσκησης",
+    trainingSub: "Κάθε σετ καλύπτει μαθήματα του Βασικού Προγράμματος Κατάρτισης. Βλέπεις αμέσως τη σωστή απάντηση και την εξήγηση, και όσες ερωτήσεις έχασες ξανάρχονται ώσπου να τις μάθεις.",
+    testsHeading: "Τεστ · 20 ερωτήσεις, στόχος 14",
+    heroSubs: [
+      "Τέσσερα σετ, οκτώ τεστ των 20 ερωτήσεων πολλαπλής επιλογής, όσες έχει η γραπτή δοκιμασία.",
+      "Μάθε πρώτα το σετ, μετά κάνε το τεστ.",
+      "Είσαι στα μισά. Κάνε ένα τεστ.",
+      "Επανάλαβε τα λάθη σου και ξανακάνε το τεστ.",
+      "Όλα πράσινα. Ώρα για τις εξετάσεις του ΕΟΠΠΕΠ.",
+    ],
+    sourceLine: "Δικές μας ερωτήσεις στα μαθήματα του προγράμματος του ΚΕΜΕΑ, με βάση τον ν. 2518/1997, τον Ποινικό Κώδικα και τον ΚΠΔ, όπως ισχύουν τον Νοέμβριο του 2026. Δεν είναι η επίσημη τράπεζα θεμάτων, και το πρακτικό μέρος δεν προσομοιώνεται.",
+    analyticsKey: "grsecurity",
+  },
 };
 
 const rodrpciv: ExamConfig = {
@@ -17112,7 +17327,7 @@ const sgvl: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, nhie, cna, ptcb, phleb, ccma, cma, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, sfadmin, phr, cisa, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, dkteori, dkmoto, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, semedb, dkindfoed, dkmedborger, gulfrn, inrto, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, nhie, cna, ptcb, phleb, ccma, cma, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, sfadmin, phr, cisa, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, dkteori, dkmoto, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, grmoto, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, grcitizen, grsecurity, semedb, dkindfoed, dkmedborger, gulfrn, inrto, htl, cst, crcst];
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
 export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA, realestatePA, realestateIL, realestateOH, realestateGA, realestateNC, realestateMI, realestateVA, realestateWA, realestateAZ, realestateTN, realestateLA, insuranceNY, insurancePA, insuranceIL, insuranceOH, insuranceGA, insuranceNC, insuranceMI, insuranceNJ, insuranceVA, insuranceWA, pncNY, pncPA, pncIL, pncOH, pncGA, pncNC, pncMI, pncNJ, pncVA, pncWA];

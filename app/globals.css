@@ -2565,6 +2565,48 @@
     --brand-gradient-to: 215 60% 96%;
   }
 
+  /* Greece motorcycle theory theme */
+  [data-theme="grmoto"] {
+    --brand: 16 35% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 16 40% 96%;
+    --brand-hover: 16 35% 18%;
+    --brand-dark: 16 35% 16%;
+    --brand-darker: 16 35% 13%;
+    --brand-muted: 16 20% 68%;
+    --brand-border: 16 25% 80%;
+    --brand-border-light: 16 25% 90%;
+    --brand-gradient-to: 30 45% 95%;
+  }
+
+  /* Greek naturalisation knowledge test (Εξετάσεις ΠΕΓΠ) theme */
+  [data-theme="grcitizen"] {
+    --brand: 222 100% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 222 80% 96%;
+    --brand-hover: 222 100% 14%;
+    --brand-dark: 222 100% 12%;
+    --brand-darker: 222 100% 9%;
+    --brand-muted: 222 40% 68%;
+    --brand-border: 222 45% 80%;
+    --brand-border-light: 222 45% 90%;
+    --brand-gradient-to: 0 0% 98%;
+  }
+
+  /* Greece private security personnel certification (ΕΟΠΠΕΠ) theme */
+  [data-theme="grsecurity"] {
+    --brand: 240 50% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 240 60% 96%;
+    --brand-hover: 240 50% 14%;
+    --brand-dark: 240 50% 12%;
+    --brand-darker: 240 50% 9%;
+    --brand-muted: 240 25% 68%;
+    --brand-border: 240 35% 80%;
+    --brand-border-light: 240 35% 90%;
+    --brand-gradient-to: 0 0% 98%;
+  }
+
   /* Romania DRPCIV theory exam theme */
   [data-theme="rodrpciv"] {
     --brand: 234 95% 30%;
@@ -6696,6 +6738,42 @@
     --brand-muted: 210 35% 45%;
     --brand-dark: 210 55% 65%;
     --brand-darker: 210 50% 78%;
+  }
+
+  .dark [data-theme="grmoto"] {
+    --brand: 16 35% 47.5%;
+    --brand-hover: 16 35% 39.5%;
+    --brand-light: 16 40% 13%;
+    --brand-gradient-to: 30 40% 11%;
+    --brand-border-light: 16 25% 24%;
+    --brand-border: 16 25% 34%;
+    --brand-muted: 16 20% 45%;
+    --brand-dark: 16 35% 65%;
+    --brand-darker: 16 35% 78%;
+  }
+
+  .dark [data-theme="grcitizen"] {
+    --brand: 222 100% 50%;
+    --brand-hover: 222 100% 42%;
+    --brand-light: 222 45% 13%;
+    --brand-gradient-to: 0 0% 11%;
+    --brand-border-light: 222 35% 24%;
+    --brand-border: 222 40% 34%;
+    --brand-muted: 222 40% 45%;
+    --brand-dark: 222 100% 65%;
+    --brand-darker: 222 100% 78%;
+  }
+
+  .dark [data-theme="grsecurity"] {
+    --brand: 240 50% 50%;
+    --brand-hover: 240 50% 42%;
+    --brand-light: 240 45% 13%;
+    --brand-gradient-to: 0 0% 11%;
+    --brand-border-light: 240 35% 24%;
+    --brand-border: 240 35% 34%;
+    --brand-muted: 240 25% 45%;
+    --brand-dark: 240 50% 65%;
+    --brand-darker: 240 50% 78%;
   }
 
   .dark [data-theme="rodrpciv"] {

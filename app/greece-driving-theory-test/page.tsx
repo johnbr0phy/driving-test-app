@@ -9,6 +9,7 @@ import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
 import "@/lib/banks/grdriving";
 import { SITE_URL } from "@/lib/siteUrl";
+import { examLandingAlternates } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -25,6 +26,7 @@ export const metadata: Metadata = {
     "greece driving theory test, greek driving theory test in english, greek driving licence test, category b theory test greece, greek highway code test, kok theory test, driving licence greece english, greek road signs test, driving test athens, driving test thessaloniki, theory test practice 2026",
   alternates: {
     canonical: `${siteUrl}/greece-driving-theory-test`,
+    languages: examLandingAlternates("grdriving"),
   },
   openGraph: {
     title,

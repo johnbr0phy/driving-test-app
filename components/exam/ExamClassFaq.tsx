@@ -27,6 +27,7 @@ const TEACHES: Record<string, string> = {
   hubizt: "a hatósági képzés course for insurance intermediaries",
   roadmed: "a medical school admission prep course or biology and chemistry tutoring (meditații)",
   rorezid: "a rezidențiat preparation course",
+  grsecurity: "the KEMEA Basic Training Programme for private security personnel",
   mttaxi: "the 46-hour taxi driver course",
   mtguard: "an Award in Private Security Guard Services course",
   // The DMV landing (/dmv-practice-test)

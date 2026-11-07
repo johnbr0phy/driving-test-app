@@ -292,6 +292,22 @@
       "action": "None needed: the rovinietă item asks about a coach; check when TollRO goes live and whether any item mentions trucks and the rovinietă.",
       "source": "https://www.cnair.ro/",
       "done": "2026-11-07"
+    },
+    {
+      "exam": "grcitizen",
+      "date": "2027-03-01",
+      "kind": "notice",
+      "what": "The General Secretariat for Citizenship reissues the PEGP exam procedure guide and the Τράπεζα Θεμάτων for each sitting (next sitting 15 November 2026).",
+      "action": "Check the spring 2027 guide for any change to the 4/4/6/6 split of the thematic units or the 70/100 pass rule.",
+      "source": "https://exetaseis-ithageneia.ypes.gr/"
+    },
+    {
+      "exam": "grsecurity",
+      "date": "2027-01-15",
+      "kind": "notice",
+      "what": "Each ΕΟΠΠΕΠ exam period for private security personnel has its own call; the theory time limit and how theory and practical marks combine were not confirmed for the 2026 calls.",
+      "action": "Check the first 2027 ΕΟΠΠΕΠ call for any change to the 20-question theory part or the 1 to 20 grading.",
+      "source": "https://www.eoppep.gr/"
     }
   ]
 }

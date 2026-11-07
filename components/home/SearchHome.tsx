@@ -182,7 +182,8 @@ export function SearchHome({
             {answeredThisWeek !== null && answeredThisWeek > 0 ? (
               <p className="pt-2 pb-7 text-center text-sm text-gray-500 dark:text-gray-400 sm:pb-9">
                 <span aria-hidden className="mr-2 inline-block h-1.5 w-1.5 rounded-full bg-green-500 align-middle ring-[3px] ring-green-500/25" />
-                <CountUp value={answeredThisWeek} className="font-semibold text-gray-900 dark:text-gray-50 tabular-nums" /> questions answered this week
+                <CountUp value={answeredThisWeek} className="font-semibold text-gray-900 dark:text-gray-50 tabular-nums" />
+                <span className="ml-1">questions answered this week</span>
               </p>
             ) : (
               <div className="pb-8 sm:pb-10" />

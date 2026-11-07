@@ -1,0 +1,112 @@
+{
+  "metaTitle": "Teoriprov körkort B 2026 - Öva gratis på svenska",
+  "metaDescription": "Öva gratis inför kunskapsprovet för B-körkort: 200 egna frågor på svenska om högerregeln, vägmärken, hastighet, vilt, vinterväglag och alkohol, varje svar förklarat. Fyra övningsprov med 50 frågor, utan inloggning.",
+  "keywords": "teoriprov körkort, teoriprov b, kunskapsprov b, körkortsteori, körkortsfrågor, övningsprov körkort, teoriprov gratis, trafikverket teoriprov, körkortsprov 2026, högerregeln, vägmärken test",
+  "breadcrumb": {
+    "home": "Start",
+    "allTests": "Alla prov",
+    "current": "Teoriprov för B-körkort"
+  },
+  "h1": "Teoriprov för B-körkort 2026",
+  "subtitle": "200 egna övningsfrågor på svenska inför Trafikverkets kunskapsprov för behörighet B: högerregeln och huvudled, vägmärken, vägmarkeringar, hastighet, parkering och motorväg, vilt och vinterväglag, fordonet, miljön, alkohol och körkortet. Fyra övningsprov med 50 frågor och samma gräns som på riktigt: 80 procent rätt. Gjort för mobilen, utan inloggning.",
+  "facts": {
+    "h2": "Kunskapsprovet för B-körkort i korthet",
+    "answer": "Kunskapsprovet för behörighet B görs hos Trafikverket på en provort, på en dator med pekskärm. Provet har 70 frågor med svarsalternativ där ett alternativ är rätt, och provtiden är 50 minuter. Fem av frågorna är testfrågor som inte räknas, så du kan få högst 65 poäng och behöver 52 poäng för att bli godkänd, alltså 80 procent. Provet mäter trafikregler, trafiksäkerhet, fordonskännedom och manövrering, miljö och personliga förutsättningar. Det finns på svenska, med uppläsning i hörlurar, och på 15 andra språk, bland annat brittisk engelska. För att boka provet behöver du ett körkortstillstånd, och båda delarna av riskutbildningen ska vara gjorda och giltiga. Ett godkänt kunskapsprov från och med 19 augusti 2026 gäller i ett år, och inom den tiden ska du klara körprovet.",
+    "tigertest": "Tigertest har 200 egna övningsfrågor på svenska om allt som provet mäter, gratis och utan inloggning. Frågorna är skrivna från trafikförordningen och Transportstyrelsens regler, inte kopierade från Trafikverkets prov. Tigertest har ingen koppling till Trafikverket eller Transportstyrelsen.",
+    "rows": [
+      { "label": "Anordnas av", "value": "Trafikverket" },
+      { "label": "Frågor", "value": "70, varav 5 testfrågor som inte räknas" },
+      { "label": "Provtid", "value": "50 minuter (75 med beviljad förlängd provtid)" },
+      { "label": "Godkänt", "value": "52 av 65 poäng (80 procent)" },
+      { "label": "Språk", "value": "Svenska med uppläsning, och 15 andra språk" },
+      { "label": "Före provet", "value": "Körkortstillstånd och riskutbildning del 1 och 2" },
+      { "label": "Godkänt prov gäller", "value": "Ett år (prov från 19 augusti 2026)" },
+      { "label": "Tigertests övningsprov", "value": "4 x 50 frågor, 80 procent för godkänt" }
+    ],
+    "footnote": "Enligt Trafikverkets sidor om kunskapsprov B och teoriprovet på annat språk, trafikförordningen och Transportstyrelsens vägledning, november 2026. Reglerna kan ändras, så kontrollera alltid aktuella uppgifter hos",
+    "source": {
+      "name": "Trafikverket: Kunskapsprov B",
+      "url": "https://www.trafikverket.se/korkort/korkortsprov/personbil-och-latt-lastbil/kunskapsprov-b/"
+    }
+  },
+  "howItWorks": {
+    "h2": "Så fungerar det",
+    "cards": [
+      {
+        "h3": "Öva per område",
+        "p": "Fem övningsset: vägmärken, korsningar med vägmarkeringar och signaler, hastighet med körfält, parkering och motorväg, trafiksäkerhet med vilt och vinter, och fordonet, miljön och personliga förutsättningar. Frågor du svarar fel på kommer tillbaka tills du kan dem."
+      },
+      {
+        "h3": "Fullständiga övningsprov",
+        "p": "Fyra prov med 50 frågor som tillsammans täcker alla 200 frågor, med samma gräns på 80 procent som 52 av 65 på det riktiga provet. Ingen fråga upprepas mellan proven, och varje svar förklarar regeln och det vanligaste felsvaret."
+      }
+    ]
+  },
+  "topics": {
+    "h2": "Byggt på svenska trafikregler",
+    "p": "Trafikverket prövar fem områden men publicerar inte hur många frågor varje område får, så Tigertest låter trafikreglerna väga ungefär hälften och trafiksäkerheten ungefär en fjärdedel, som guiderna anger. Reglerna är Sveriges egna enligt november 2026: högertrafik, högerregeln i korsningar utan skyltar, 50 km/h inom tättbebyggt område och annars 70 km/h om inget annat är skyltat, vinterdäck från 1 december till 31 mars vid vinterväglag och 0,2 promille som gräns för alla förare. Vägmärken beskrivs i ord, och det riktiga provets bildfrågor finns inte här.",
+    "items": [
+      "Trafiksäkerhet, vilt och vinter (9 av 50)",
+      "Vägmärken (8 av 50)",
+      "Företräde och korsningar (7 av 50)",
+      "Hastighet, omkörning och körfält (6 av 50)",
+      "Vägmarkeringar och trafiksignaler (5 av 50)",
+      "Stannande, parkering och motorväg (4 av 50)",
+      "Fordonskännedom och manövrering (4 av 50)",
+      "Personliga förutsättningar och körkortet (4 av 50)",
+      "Miljö och sparsam körning (3 av 50)"
+    ]
+  },
+  "howToPass": {
+    "h2": "Så klarar du kunskapsprovet",
+    "steps": [
+      {
+        "h3": "1. Kunna reglerna om företräde",
+        "p": "Här tappar många poäng. Finns inga skyltar lämnar du företräde åt trafik från höger. På en huvudled har andra väjningsplikt mot dig. Kör du ut från en parkeringsplats eller en enskild väg har du väjningsplikt mot alla, och du låter alltid gående gå över vid ett obevakat övergångsställe och cyklister cykla över vid en cykelöverfart."
+      },
+      {
+        "h3": "2. Lär dig märkena och siffrorna",
+        "p": "Svenska varnings- och förbudsmärken har gul botten, och streckade eller heldragna gula linjer vid trottoarkanten förbjuder parkering eller stannande. Kunna bashastigheterna, 80 km/h med släpvagn, datumen för vinterdäck och dubbdäck och vad du ska göra efter en kollision med älg eller rådjur."
+      },
+      {
+        "h3": "3. Tänk i bilder",
+        "p": "Det riktiga provet visar foton av trafiksituationer. När du pluggar, se varje fråga framför dig som en situation: var de andra trafikanterna är, vad de kan göra härnäst och vad som är det säkraste valet. Titta också på Transportstyrelsens bilder av vägmärkena, eftersom Tigertest beskriver dem i ord."
+      },
+      {
+        "h3": "4. Sikta högre än gränsen",
+        "p": "Du behöver 52 av 65 på provdagen, alltså får du bara ha 13 fel. Sikta på 45 eller fler på varje övningsprov hos Tigertest, öva på frågorna du missade, gör om ditt svagaste övningsset och gör sedan alla fyra proven i följd före provdagen."
+      }
+    ]
+  },
+  "faqTitle": "Vanliga frågor om kunskapsprovet för B-körkort",
+  "faqs": [
+    {
+      "q": "Vad tar kunskapsprovet för B-körkort upp?",
+      "a": "Provet mäter fem områden: trafikregler, trafiksäkerhet, fordonskännedom och manövrering, miljö och personliga förutsättningar, till exempel alkohol, trötthet och grupptryck. Trafikreglerna är den största delen, bland annat högerregeln, huvudled, vägmärken och vägmarkeringar. Många frågor på det riktiga provet visar ett foto eller en teckning av en trafiksituation."
+    },
+    {
+      "q": "Hur många frågor har provet och hur många rätt behövs?",
+      "a": "Provet har 70 frågor där ett svarsalternativ är rätt, och du har 50 minuter på dig. Fem av frågorna är testfrågor som inte räknas, så du kan få högst 65 poäng och behöver minst 52 poäng för godkänt. Du ser resultatet på skärmen direkt efteråt, uppdelat per område, men inte vilka frågor du svarade fel på. Tigertests övningsprov har 50 frågor och samma gräns på 80 procent, alltså 40 av 50."
+    },
+    {
+      "q": "Vad behöver jag innan jag kan göra provet?",
+      "a": "Du behöver ett godkänt körkortstillstånd för att boka provet, och båda delarna av riskutbildningen ska vara gjorda och giltiga på provdagen: Riskettan om alkohol, droger, trötthet och riskfyllt beteende, och Risktvåan på halkbana. Ta med giltig legitimation och kom 30 minuter innan. Ett kunskapsprov som är godkänt från och med 19 augusti 2026 gäller i ett år, så du måste klara körprovet inom den tiden. Prov som godkändes före det datumet gällde i fyra månader."
+    },
+    {
+      "q": "Kan jag göra provet på ett annat språk?",
+      "a": "Ja. Trafikverket har kunskapsprovet för B på svenska med uppläsning i hörlurar och på 15 andra språk, bland annat brittisk engelska, arabiska, finska, persiska, somaliska och tigrinska. Du kan också ansöka om tolk, muntligt prov eller förlängd provtid. Tigertest har samma övningsfrågor på engelska om du hellre vill öva på det."
+    },
+    {
+      "q": "Är det här Trafikverkets riktiga frågor?",
+      "a": "Nej. Alla frågor är egna, skrivna av Tigertest utifrån svenska trafikregler och Trafikverkets och Transportstyrelsens information, så de prövar samma kunskaper utan att kopiera någon provfråga. Det riktiga provets foto- och bildfrågor finns inte här; vägmärken och situationer beskrivs i ord, så titta också på bilder av svenska vägmärken. Tigertest är gratis övning, har ingen koppling till Trafikverket eller Transportstyrelsen och kan inte boka eller ersätta ditt prov."
+    },
+    {
+      "q": "Är Tigertests teoriprov gratis?",
+      "a": "Ja. Alla fem övningsset och fyra övningsprov är gratis och utan inloggning. Med ett gratis konto sparas dina framsteg på mobilen och datorn."
+    }
+  ],
+  "finalCta": {
+    "h2": "Redo för ditt kunskapsprov?",
+    "p": "Börja gratis, utan inloggning. 200 frågor på svenska om svenska trafikregler."
+  }
+}

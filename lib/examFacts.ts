@@ -2496,6 +2496,73 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Trafikverket's Kunskapsprov B and Teoriprovet på annat språk pages, Swedish traffic rules (Trafikförordningen) and Transportstyrelsen guidance, checked November 2026",
     source: { name: "Trafikverket: Kunskapsprov B", url: "https://www.trafikverket.se/korkort/korkortsprov/personbil-och-latt-lastbil/kunskapsprov-b/" },
   },
+  semoto: {
+    answer:
+      "The knowledge test (kunskapsprov) for a Swedish motorcycle licence, categories A1, A2 and A, is run by Trafikverket at its test centres on a computer. It has 70 multiple-choice questions with one correct answer each and lasts 50 minutes. Five questions are unscored trial questions, so the maximum is 65 points, and you need 52 points to pass (80%). It covers vehicle knowledge and handling, the environment, traffic safety, traffic rules and personal prerequisites. The questions can be heard in Swedish through headphones; Trafikverket's motorcycle page names no English version, but extended time, an oral test or a test with an interpreter can be applied for. Both parts of the motorcycle risk training must be completed and valid on the day. Age limits are 16 for A1, 18 for A2 and 24 for A, or 20 after two years with A2.",
+    rows: [
+      { label: "Run by", value: "Trafikverket (Swedish Transport Administration)" },
+      { label: "Questions", value: "70 (65 scored, 5 unscored trial questions)" },
+      { label: "Time", value: "50 minutes" },
+      { label: "Pass mark", value: "52 of 65 points (80%)" },
+      { label: "Language", value: "Swedish, with audio; interpreter on application" },
+      { label: "Categories", value: "A1 (from 16), A2 (from 18), A (from 24, or 20 after 2 years of A2)" },
+      { label: "Before the test", value: "Both parts of the motorcycle risk training" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions in Swedish, 80% target" },
+    ],
+    basedOn: "Trafikverket's Motorcykel test page, Transportstyrelsen's A1, A2 and A licence pages, the Traffic Ordinance (trafikförordningen 1998:1276) and the course plan TSFS 2011:19, checked November 2026",
+    source: { name: "Trafikverket: driving tests for motorcycle", url: "https://www.trafikverket.se/korkort/korkortsprov/motorcykel/" },
+  },
+  sejakt: {
+    answer:
+      "The theory test of the Swedish hunting licence (jägarexamen) has 70 multiple-choice questions to be answered in at most 60 minutes, and you need at least 60 correct to pass. Each question has four options with one correct answer, sometimes with a picture. Naturvårdsverket, the Swedish Environmental Protection Agency, is responsible for the test, which you take in an app on your own phone or tablet in front of an approved test supervisor (provledare), often through a hunting organisation. You first see a preliminary result, which the supervisor then approves. The test is in Swedish and can be switched to English in the app, and the questions can be read aloud. Naturvårdsverket may add up to three unscored test questions and does not publish the questions. You must pass the theory test before the practical shooting tests for shotgun and rifle, and jägarexamen is required before you can get a licence for a hunting weapon.",
+    rows: [
+      { label: "Run by", value: "Naturvårdsverket (Swedish Environmental Protection Agency), through approved test supervisors" },
+      { label: "Questions", value: "70, four options each, plus up to 3 unscored" },
+      { label: "Time", value: "At most 60 minutes" },
+      { label: "Pass mark", value: "At least 60 of 70 correct" },
+      { label: "Format", value: "App on your own phone or tablet, before a provledare" },
+      { label: "Languages", value: "Swedish or English, with audio" },
+      { label: "Afterwards", value: "Practical shooting tests (shotgun, rifle, big game)" },
+      { label: "Tigertest mock tests", value: "3 x 70 questions in Swedish, 60 to pass" },
+    ],
+    basedOn: "Naturvårdsverket's regulations on jägarexamen (NFS 2015:10 as amended by NFS 2019:8), its theory test page and the 2020 kompetensbeskrivning, checked November 2026",
+    source: { name: "Naturvårdsverket: theory test for jägarexamen", url: "https://www.naturvardsverket.se/amnesomraden/jakt-och-vilt/for-jagare/teoriprov-jagarexamen/" },
+  },
+  semedb: {
+    answer:
+      "Since 6 June 2026, applicants for Swedish citizenship aged 16 to 66 must show knowledge of Swedish society. Those who cannot show it with grades from Swedish schooling can take the citizenship test in civics (medborgarskapsprovet i samhällskunskap), run by the Swedish Council for Higher Education (UHR) under Ordinance (2026:451); only people sent a letter by the Swedish Migration Agency can register. The test is in Swedish, on paper, with four options per question and one right answer. At the first sitting on 15 August 2026 there were, per press reports, 60 questions in 90 minutes, of which 40 were scored, and 28 of 40 (70%) was needed to pass; about eight in ten passed. UHR has not yet announced the length or time of the next sitting, planned for April to May 2027. The test is based on UHR's free study material Sverige i fokus, written with the Swedish National Agency for Education. A separate Swedish-language test is to follow later.",
+    rows: [
+      { label: "Run by", value: "UHR (Swedish Council for Higher Education)" },
+      { label: "Who takes it", value: "Citizenship applicants aged 16 to 66, on a letter from Migrationsverket" },
+      { label: "Questions", value: "60 multiple choice, 40 scored (August 2026, per press reports)" },
+      { label: "Pass mark", value: "28 of 40 scored questions, 70% (August 2026)" },
+      { label: "Time", value: "90 minutes (August 2026)" },
+      { label: "Format and language", value: "On paper, in Swedish, four options, one right" },
+      { label: "Study material", value: "Sverige i fokus (UHR and Skolverket)" },
+      { label: "Tigertest mock tests", value: "3 x 60 questions in Swedish, 70% target" },
+    ],
+    basedOn: "UHR's citizenship test pages, the study material Sverige i fokus (corrected 10 August 2026), Ordinance (2026:451) on citizenship tests, Migrationsverket's notices of 6 May and 30 September 2026 and press reports of the 15 August 2026 sitting, checked November 2026",
+    source: { name: "UHR: About the citizenship test (in Swedish)", url: "https://www.uhr.se/medborgarskapsprovet/om-medborgarskapsprovet/" },
+  },
+  sehp: {
+    answer:
+      "Högskoleprovet (the Swedish Scholastic Aptitude Test, SweSAT) is Sweden's university admission test, set by the Swedish Council for Higher Education (UHR) and given by the universities each spring and autumn. It has five passes of 40 multiple-choice items, 55 minutes each: two verbal, two quantitative and one unscored try-out pass, so 160 items count. The verbal part has ORD (vocabulary), LÄS (Swedish reading), MEK (sentence completion) and ELF (English reading); the quantitative part has XYZ (problem solving), KVA (quantitative comparisons), NOG (data sufficiency) and DTK (diagrams, tables and maps). There are no penalties for wrong answers. Each part is normed separately to a 0.00 to 2.00 scale, and the result is their mean, given in steps of 0.05. Results are valid for eight years and the best valid result counts. The test is in Swedish, with ELF in English.",
+    rows: [
+      { label: "Set by", value: "UHR; sittings run by the universities" },
+      { label: "Passes", value: "5 x 40 items, 55 minutes each; 4 count" },
+      { label: "Scored items", value: "160 (80 verbal, 80 quantitative)" },
+      { label: "Verbal pass", value: "ORD 10, LÄS 10, MEK 10, ELF 10" },
+      { label: "Quantitative pass", value: "XYZ 12, KVA 10, NOG 6, DTK 12" },
+      { label: "Scoring", value: "1 point per correct answer, no penalty" },
+      { label: "Result", value: "0.00 to 2.00 in steps of 0.05, mean of the two normed parts" },
+      { label: "Valid", value: "8 years; the best result counts" },
+      { label: "Tigertest mock tests", value: "2 x 80 items in Swedish, one verbal and one quantitative pass" },
+    ],
+    basedOn: "studera.nu (UHR): the test's description, how the result is calculated, and the 18 October 2026 test booklets' instructions, checked November 2026",
+    source: { name: "studera.nu: Vad är högskoleprovet?", url: "https://www.studera.nu/hogskoleprov/om/intro/" },
+    tigertest:
+      "Tigertest has 218 original practice items in Swedish (ELF in English), two practice tests and eight drills, one per subtest, all free with no account required. The result shown is an estimate, not a UHR norm table.",
+  },
   fitheory: {
     answer:
       "The Finnish category B theory test (teoriakoe) is taken on a tablet at an Ajovarma service point, run for Traficom by A-Katsastus. It has three parts in 30 minutes: 15 multiple choice questions, 50 picture questions about traffic situations and 5 risk recognition questions, and you must reach the minimum in each part (11, 43 and 4). The test is offered in Finnish, Swedish and English, with an oral test of 60 minutes in some cases. You can take it one month before reaching the licence age, normally 18. A passed theory test is valid for one year, and you take it before the driving test.",

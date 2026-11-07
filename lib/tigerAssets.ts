@@ -74,6 +74,8 @@ const BORROWED_SETS: Record<string, string> = {
   ptmoto: "moto", ptcam: "cdl", pttvde: "driving", ptvigil: "security",
   // Malta (Nov 2026): motorcycle the motorcycle tiger, CPC the CDL tiger, taxi the car tiger, guard the security tiger.
   mtmoto: "moto", mtcpc: "cdl", mttaxi: "driving", mtguard: "security",
+  // Sweden (Nov 2026): motorcycle the motorcycle tiger, jägarexamen the hunter tiger, citizenship the Life in the UK tiger, högskoleprovet the SAT tiger.
+  semoto: "moto", sejakt: "hunter", semedb: "uklitu", sehp: "sat",
   // Bank exams wear the IBPS PO tiger; state police exams the police tiger.
   sbipo: "ibpspo", sbiclerk: "ibpspo", ibpsrrb: "ibpspo",
   delhipolice: "police", biharpolice: "police", rajpolice: "police", mppolice: "police",

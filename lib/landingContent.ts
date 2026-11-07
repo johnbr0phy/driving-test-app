@@ -44,6 +44,11 @@ import deheilprDe from "@/lib/landings/deheilpr.de.json";
 import ptcamPt from "@/lib/landings/ptcam.pt.json";
 import pttvdePt from "@/lib/landings/pttvde.pt.json";
 import ptvigilPt from "@/lib/landings/ptvigil.pt.json";
+import setrafikSv from "@/lib/landings/setrafik.sv.json";
+import semotoSv from "@/lib/landings/semoto.sv.json";
+import sejaktSv from "@/lib/landings/sejakt.sv.json";
+import semedbSv from "@/lib/landings/semedb.sv.json";
+import sehpSv from "@/lib/landings/sehp.sv.json";
 
 const LANDINGS: Record<string, TranslatedLandingContent> = {
   "detheorie.de": detheorieDe as TranslatedLandingContent,
@@ -60,6 +65,11 @@ const LANDINGS: Record<string, TranslatedLandingContent> = {
   "ptcam.pt": ptcamPt as TranslatedLandingContent,
   "pttvde.pt": pttvdePt as TranslatedLandingContent,
   "ptvigil.pt": ptvigilPt as TranslatedLandingContent,
+  "setrafik.sv": setrafikSv as TranslatedLandingContent,
+  "semoto.sv": semotoSv as TranslatedLandingContent,
+  "sejakt.sv": sejaktSv as TranslatedLandingContent,
+  "semedb.sv": semedbSv as TranslatedLandingContent,
+  "sehp.sv": sehpSv as TranslatedLandingContent,
 };
 
 /** The landing content of `examId` in `lang`, if one is registered. */

@@ -23,6 +23,8 @@ const TEACHER_LED = new Set([
   "deaevo", "de34a", "deheilpr",
   // Portugal: TVDE driver initial courses and private security training providers
   "pttvde", "ptvigil",
+  // Sweden: jägarexamen courses, SFI and samhällsorientering classes, högskoleprovet courses
+  "sejakt", "semedb", "sehp",
   // Malta: approved taxi training providers and private guard course providers
   "mttaxi", "mtguard",
   // Healthcare programs

@@ -1,3 +1,4 @@
+import type { Language } from "@/i18n";
 /**
  * Tigertest v2: question model and exam configuration for sectioned, timed,
  * navigable exams (SAT, ACT, AP, ASVAB, GED). Lives beside the v1 flow and
@@ -173,6 +174,12 @@ export interface ExamV2Config {
   tagline: string;
   /** Header and catalog icon key (see TestIcon). */
   icon: string;
+  /** The exam's own language when it is not English (base bank and copy), as on ExamConfig. */
+  language?: Language;
+  locale?: string;
+  /** English names for English surfaces (catalog, /tests, llms.txt, admin) when `language` is set. */
+  english?: { name: string; shortName: string; fullName: string };
+  review?: Partial<Record<Language, "machine" | "model" | "native">>;
   /** Theme brand colour tokens (HSL triplets like the v1 themes). */
   theme: { brand: string; brandDark: string; brandLight: string };
   sections: SectionDef[];

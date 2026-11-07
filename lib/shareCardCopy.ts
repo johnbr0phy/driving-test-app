@@ -157,6 +157,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   psat: { title: "Digital PSAT Practice Test", description: "A full adaptive PSAT/NMSQT with a 320 to 1520 score estimate, plus reading, writing and math drills for your phone." },
   praxis: { title: "Praxis Core for future teachers", description: "Practice Reading, Writing and Math for the Praxis Core Academic Skills for Educators tests, timed at the real pace." },
   gre: { title: "GRE General Test Practice", description: "Practice adaptive Verbal and Quant sections in the shorter GRE format, with a 130 to 170 score estimate." },
+  sehp: { title: "Högskoleprovet övningsprov", description: "Öva ORD, LÄS, MEK, ELF, XYZ, KVA, NOG och DTK med två övningsprov och ett uppskattat resultat från 0,0 till 2,0." },
   gmat: { title: "GMAT Focus Edition Practice Tests", description: "Timed Quant, Verbal and Data Insights sections with a 205 to 805 score estimate and drills by question type." },
   cissp: { title: "ISC2 CISSP", description: "Practice manager-level questions across all eight CISSP domains, from risk management to secure software." },
   itil: { title: "ITIL 4 Foundation", description: "Practice the 40-question ITIL 4 Foundation exam: guiding principles, the value chain and the ITIL practices." },

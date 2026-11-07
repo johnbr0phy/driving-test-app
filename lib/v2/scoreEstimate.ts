@@ -167,7 +167,8 @@ export function estimateScore(exam: ExamV2Config, bank: QuestionV2[], perf: Map<
       const raised = simulate((section, domain, acc) =>
         ready(section) && drill.domains.includes(domain) ? Math.max(acc, TARGET_ACCURACY) : acc,
       );
-      gain = Math.max(0, raised.composite - base.composite);
+      // Rounded so a decimal scale (Högskoleprovet's 0 to 2) never prints 0.15000000000000002.
+      gain = Math.max(0, Math.round((raised.composite - base.composite) * 1000) / 1000);
     }
     const bySkill = new Map<string, SkillLine>();
     for (const q of inTopic) {

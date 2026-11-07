@@ -29,8 +29,9 @@ import epa608Es from "./examTranslations/epa608.es.json";
 import esdgtEs from "./examTranslations/esdgt.es.json";
 import ptimtPt from "./examTranslations/ptimt.pt.json";
 import detheorieEn from "./examTranslations/detheorie.en.json";
+import setrafikSv from "./examTranslations/setrafik.sv.json";
 
-export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "dkteori" | "setrafik" | "fitheory" | "grdriving" | "rodrpciv" | "hukresz" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "detheorie" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl";
+export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "dkteori" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "grdriving" | "rodrpciv" | "hukresz" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "detheorie" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -9223,6 +9224,243 @@ const setrafik: ExamConfig = {
     sourceLine: "Based on Swedish traffic rules and Trafikverket's theory test areas. Original questions; 50 per test, 80% to pass like the real 52 of 65.",
     analyticsKey: "setrafik",
   },
+  review: { sv: "machine" },
+  translations: {
+    sv: examTranslation(setrafikSv),
+  },
+};
+
+const semoto: ExamConfig = {
+  id: "semoto",
+  stateCode: "SEMOTO",
+  idBase: 23200,
+  slug: "/motorcykel-teori",
+  landingPath: "/sv/motorcykel-teoriprov",
+  name: "Teoriprov motorcykel A, A1, A2",
+  shortName: "MC-teori",
+  examLabel: "Kunskapsprov för motorcykel",
+  fullName: "Kunskapsprov för körkortsbehörighet A1, A2 och A (motorcykel)",
+  questionIdPrefix: "SEMOTO-",
+  icon: "bike",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  language: "sv",
+  locale: "sv-SE",
+  english: {
+    name: "Sweden Motorcycle Theory Test (A, A1, A2)",
+    shortName: "Swedish motorcycle theory test",
+    fullName: "Swedish motorcycle licence knowledge test (kunskapsprov) for categories A1, A2 and A, in Swedish",
+  },
+  review: { sv: "model" },
+  // Real test (Trafikverket, Motorcykel, checked 2026-11-06): 70 questions, one right answer each,
+  // 5 unscored trial questions, max 65 points, 52 to pass (80%), 50 minutes, read aloud in Swedish.
+  // Five knowledge areas (fordonskännedom och manövrering, miljö, trafiksäkerhet, trafikregler,
+  // personliga förutsättningar), no published weights: the nine categories and the
+  // 5/8/7/6/4/4/7/6/3 split are Tigertest's own, written from trafikförordningen (1998:1276),
+  // Transportstyrelsen's A1/A2/A pages and the course plan TSFS 2011:19. Four tests of 50, pools
+  // exactly 4x each count (200, all original, written in Swedish).
+  blueprint: {
+    semoFordon: 5,
+    semoManover: 8,
+    semoPlacering: 7,
+    semoRegler: 6,
+    semoPassagerare: 4,
+    semoBehorighet: 4,
+    semoVaglag: 7,
+    semoPersonlig: 6,
+    semoMiljo: 3,
+  },
+  // Five topic sets, then the four tests: 9 dashboard steps.
+  trainingSets: [
+    { setNumber: 1, id: 23201, name: "Motorcykeln och körtekniken", categories: ["semoFordon", "semoManover"], size: 52, weightLabel: "13 av 50 frågor per prov" },
+    { setNumber: 2, id: 23202, name: "Placering och trafikregler", categories: ["semoPlacering", "semoRegler"], size: 52, weightLabel: "13 av 50 frågor per prov" },
+    { setNumber: 3, id: 23203, name: "Passagerare och behörigheter", categories: ["semoPassagerare", "semoBehorighet"], size: 32, weightLabel: "8 av 50 frågor per prov" },
+    { setNumber: 4, id: 23204, name: "Väglag, väder och vilt", categories: ["semoVaglag"], size: 28, weightLabel: "7 av 50 frågor per prov" },
+    { setNumber: 5, id: 23205, name: "Du som förare och miljön", categories: ["semoPersonlig", "semoMiljo"], size: 36, weightLabel: "9 av 50 frågor per prov" },
+  ],
+  categoryLabels: {
+    semoFordon: "Motorcykelns teknik och kontroller",
+    semoManover: "Bromsning, kurvtagning och balans",
+    semoPlacering: "Placering, synbarhet och samspel",
+    semoRegler: "Trafikregler för motorcykel",
+    semoPassagerare: "Passagerare, packning och släp",
+    semoBehorighet: "Behörigheter och övningskörning",
+    semoVaglag: "Väglag, väder, mörker och vilt",
+    semoPersonlig: "Personliga förutsättningar och skydd",
+    semoMiljo: "Miljö",
+  },
+  copy: {
+    guestPrompt: "för att spara dina framsteg inför MC-teorin och hålla koll på varje fel svar",
+    trainingHeading: "Övningsset",
+    trainingSub: "Varje övningsset tar upp ett eller två ämnen från provet. Du får svar direkt, och frågor du svarar fel på kommer tillbaka tills du kan dem.",
+    testsHeading: "Övningsprov · 50 frågor, 80 procent för godkänt",
+    heroSubs: [
+      "Fem övningsset, fyra övningsprov. Bromsning, kurvor och placering kommer oftast.",
+      "Klara övningssetet först, sedan övningsprovet.",
+      "Halvvägs. Gör ett övningsprov.",
+      "Repetera dina fel och testa igen.",
+      "Allt grönt. Boka ditt kunskapsprov.",
+    ],
+    sourceLine: "Enligt trafikförordningen och Transportstyrelsens regler för A1, A2 och A, november 2026. Egna frågor, inte Trafikverkets; 50 per övningsprov, utan bildfrågor.",
+    analyticsKey: "semoto",
+  },
+};
+
+const sejakt: ExamConfig = {
+  id: "sejakt",
+  stateCode: "SEJAKT",
+  idBase: 23400,
+  slug: "/jagarexamen",
+  landingPath: "/sv/jagarexamen-teoriprov",
+  name: "Jägarexamen teoriprov",
+  shortName: "Jägarexamen",
+  examLabel: "Teoriprov i jägarexamen",
+  fullName: "Jägarexamen, teoretiskt prov (Naturvårdsverket)",
+  questionIdPrefix: "SEJAKT-",
+  icon: "target",
+  testCount: 3,
+  questionsPerTest: 70,
+  passPct: 85,
+  language: "sv",
+  locale: "sv-SE",
+  english: {
+    name: "Sweden Hunting Licence Theory Test (Jägarexamen)",
+    shortName: "Swedish hunting licence test",
+    fullName: "Swedish hunting licence theory test (jägarexamen, teoriprov), in Swedish",
+  },
+  review: { sv: "model" },
+  // Real test (NFS 2015:10 13 a-13 b §§ as amended by NFS 2019:8; Naturvårdsverket's teoriprov
+  // page, checked 2026-11-06): 70 questions, at most 60 minutes, at least 60 correct, up to three
+  // unscored test questions; four options, one correct; app on own device before a provledare;
+  // Swedish or English. Categories group the 16 areas of Naturvårdsverket's kompetensbeskrivning
+  // (2020); no weights are published, so the 12/12/10/10/8/7/6/5 split is Tigertest's own.
+  // Three tests of 70, pools exactly 3x (210, all original, written in Swedish). passPct 85 gives
+  // ceil(59.5) = 60 of 70, the real pass line.
+  blueprint: {
+    sejkArter: 12,
+    sejkLag: 12,
+    sejkSakerhet: 10,
+    sejkVapen: 10,
+    sejkEtik: 8,
+    sejkMetoder: 7,
+    sejkVilt: 6,
+    sejkKott: 5,
+  },
+  // Five topic sets, then the three tests: 8 dashboard steps.
+  trainingSets: [
+    { setNumber: 1, id: 23401, name: "Viltarter och ekologi", categories: ["sejkArter"], size: 36, weightLabel: "12 av 70 frågor per prov" },
+    { setNumber: 2, id: 23402, name: "Jakt- och vapenlagar", categories: ["sejkLag"], size: 36, weightLabel: "12 av 70 frågor per prov" },
+    { setNumber: 3, id: 23403, name: "Säkerhet, vapen och ammunition", categories: ["sejkSakerhet", "sejkVapen"], size: 60, weightLabel: "20 av 70 frågor per prov" },
+    { setNumber: 4, id: 23404, name: "Etik, eftersök och jaktmetoder", categories: ["sejkEtik", "sejkMetoder"], size: 45, weightLabel: "15 av 70 frågor per prov" },
+    { setNumber: 5, id: 23405, name: "Viltvård och viltkött", categories: ["sejkVilt", "sejkKott"], size: 33, weightLabel: "11 av 70 frågor per prov" },
+  ],
+  categoryLabels: {
+    sejkArter: "Artkännedom och ekologi",
+    sejkLag: "Jakt- och vapenlagstiftning",
+    sejkSakerhet: "Säkerhet vid vapenhantering",
+    sejkVapen: "Vapen, ammunition och ballistik",
+    sejkEtik: "Jaktetik, skadskjutning och eftersök",
+    sejkMetoder: "Jaktmetoder och jakthundar",
+    sejkVilt: "Viltvård, viltförvaltning och fångst",
+    sejkKott: "Omhändertagande av fällt vilt",
+  },
+  copy: {
+    guestPrompt: "för att spara dina framsteg inför jägarexamen och hålla koll på varje fel svar",
+    trainingHeading: "Övningsset",
+    trainingSub: "Varje övningsset tar upp ett eller två ämnen från teoriprovet. Du får svar direkt, och frågor du svarar fel på kommer tillbaka tills du kan dem.",
+    testsHeading: "Övningsprov · 70 frågor, 60 rätt för godkänt",
+    heroSubs: [
+      "Fem övningsset, tre övningsprov. Viltarter och jaktlagar kommer oftast.",
+      "Klara övningssetet först, sedan övningsprovet.",
+      "Halvvägs. Gör ett övningsprov.",
+      "Repetera dina fel och testa igen.",
+      "Allt grönt. Boka ditt teoriprov.",
+    ],
+    sourceLine: "Enligt jaktlagen, jaktförordningen, vapenlagen och Naturvårdsverkets föreskrifter, november 2026. Egna frågor, inte Naturvårdsverkets; 70 per övningsprov, utan bildfrågor.",
+    analyticsKey: "sejakt",
+  },
+};
+
+const semedb: ExamConfig = {
+  id: "semedb",
+  stateCode: "SEMEDB",
+  idBase: 23500,
+  slug: "/medborgarskapsprovet",
+  landingPath: "/sv/medborgarskapsprov-ovning",
+  name: "Medborgarskapsprovet, övningsprov",
+  shortName: "Medborgarskapsprovet",
+  examLabel: "Medborgarskapsprov i samhällskunskap",
+  fullName: "Medborgarskapsprov i samhällskunskap (UHR)",
+  questionIdPrefix: "SEMEDB-",
+  icon: "flag",
+  testCount: 3,
+  questionsPerTest: 60,
+  passPct: 70,
+  language: "sv",
+  locale: "sv-SE",
+  english: {
+    name: "Swedish Citizenship Test (Civics)",
+    shortName: "Swedish citizenship test",
+    fullName: "Swedish citizenship test in civics (medborgarskapsprovet i samhällskunskap, UHR), in Swedish",
+  },
+  review: { sv: "model" },
+  // Real test (UHR, Om medborgarskapsprovet, updated 22 Oct 2026; Förordning (2026:451); press
+  // reports of the 15 Aug 2026 sitting; checked 2026-11-06): Swedish, on paper, four options and
+  // one right answer; 60 questions in 90 minutes, of which 40 scored, 28 of 40 (70%) to pass.
+  // Length and time of the April to May 2027 sitting not yet announced. Content: UHR's study
+  // material "Sverige i fokus" (1st ed., corrected 2026-08-10), whose chapters are the ten
+  // categories below (val och partier joined with demokrati, arbete with välfärd, religion with
+  // traditioner); UHR publishes no weights, so the 6/7/6/7/4/7/7/7/4/5 split is Tigertest's.
+  // Three 60-question tests; each pool is 3x its count plus 2 training-only spares (200, all
+  // original, written in Swedish).
+  blueprint: {
+    smdbLandet: 6,
+    smdbDemokrati: 7,
+    smdbStyrning: 6,
+    smdbLag: 7,
+    smdbMedier: 4,
+    smdbRattigheter: 7,
+    smdbArbete: 7,
+    smdbHistoria: 7,
+    smdbOmvarlden: 4,
+    smdbReligion: 5,
+  },
+  // Five topic sets, then the three tests: 8 dashboard steps.
+  trainingSets: [
+    { setNumber: 1, id: 23501, name: "Landet, demokratin och valen", categories: ["smdbLandet", "smdbDemokrati"], size: 43, weightLabel: "13 av 60 frågor per prov" },
+    { setNumber: 2, id: 23502, name: "Styrning, lag och rätt", categories: ["smdbStyrning", "smdbLag"], size: 43, weightLabel: "13 av 60 frågor per prov" },
+    { setNumber: 3, id: 23503, name: "Medier och mänskliga rättigheter", categories: ["smdbMedier", "smdbRattigheter"], size: 37, weightLabel: "11 av 60 frågor per prov" },
+    { setNumber: 4, id: 23504, name: "Arbete, välfärd och historia", categories: ["smdbArbete", "smdbHistoria"], size: 46, weightLabel: "14 av 60 frågor per prov" },
+    { setNumber: 5, id: 23505, name: "Omvärlden, religion och traditioner", categories: ["smdbOmvarlden", "smdbReligion"], size: 31, weightLabel: "9 av 60 frågor per prov" },
+  ],
+  categoryLabels: {
+    smdbLandet: "Landet Sverige",
+    smdbDemokrati: "Demokrati, val och partier",
+    smdbStyrning: "Så styrs Sverige",
+    smdbLag: "Lag och rätt",
+    smdbMedier: "Mediernas roll",
+    smdbRattigheter: "Mänskliga rättigheter",
+    smdbArbete: "Arbete, privatekonomi och välfärd",
+    smdbHistoria: "Sveriges moderna historia",
+    smdbOmvarlden: "Sverige och omvärlden",
+    smdbReligion: "Religion, traditioner och högtider",
+  },
+  copy: {
+    guestPrompt: "för att spara dina framsteg inför medborgarskapsprovet och hålla koll på varje fel svar",
+    trainingHeading: "Övningsset",
+    trainingSub: "Varje övningsset tar upp två kapitel ur Sverige i fokus. Du får svar direkt, och frågor du svarar fel på kommer tillbaka tills du kan dem.",
+    testsHeading: "Övningsprov · 60 frågor, 70 procent för godkänt",
+    heroSubs: [
+      "Fem övningsset, tre övningsprov. Demokrati, lag, rättigheter, välfärd och historia kommer oftast.",
+      "Klara övningssetet först, sedan övningsprovet.",
+      "Halvvägs. Gör ett övningsprov.",
+      "Repetera dina fel och testa igen.",
+      "Allt grönt. Du är redo för medborgarskapsprovet.",
+    ],
+    sourceLine: "Utifrån UHR:s utbildningsmaterial Sverige i fokus och svensk lag, november 2026. Egna frågor, inte UHR:s; 60 per övningsprov och 70 procent för godkänt.",
+    analyticsKey: "semedb",
+  },
 };
 
 const fitheory: ExamConfig = {
@@ -15701,7 +15939,7 @@ const sgvl: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, nhie, cna, ptcb, phleb, ccma, cma, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, sfadmin, phr, cisa, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, dkteori, setrafik, fitheory, grdriving, rodrpciv, hukresz, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, gulfrn, inrto, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, nhie, cna, ptcb, phleb, ccma, cma, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, sfadmin, phr, cisa, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, dkteori, setrafik, semoto, fitheory, grdriving, rodrpciv, hukresz, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, sejakt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, semedb, gulfrn, inrto, htl, cst, crcst];
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
 export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA, realestatePA, realestateIL, realestateOH, realestateGA, realestateNC, realestateMI, realestateVA, realestateWA, realestateAZ, realestateTN, realestateLA, insuranceNY, insurancePA, insuranceIL, insuranceOH, insuranceGA, insuranceNC, insuranceMI, insuranceNJ, insuranceVA, insuranceWA, pncNY, pncPA, pncIL, pncOH, pncGA, pncNC, pncMI, pncNJ, pncVA, pncWA];

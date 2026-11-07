@@ -92,7 +92,7 @@ const AUTHORITY: Record<Exclude<Region, "US">, string> = {
   ES: "the DGT (Dirección General de Tráfico)",
   PT: "the IMT",
   RO: "the DGPCI (formerly DRPCIV) or any county driving licence service",
-  SE: "Trafikverket or Transportstyrelsen",
+  SE: "Trafikverket, Transportstyrelsen, Naturvårdsverket or UHR",
   GR: "the Ministry of Infrastructure and Transport or any Transport Directorate",
   DK: "Færdselsstyrelsen",
   HU: "the KAV or any Hungarian authority",
@@ -103,11 +103,13 @@ const AUTHORITY: Record<Exclude<Region, "US">, string> = {
 };
 
 // AUTHORITY is written for an English sentence ("the IMT"); other languages
-// get the bare names, and Belgium's list in Dutch on its own page.
+// get the bare names, and Belgium's list in Dutch and Sweden's in Swedish on their own pages.
 const AUTHORITY_NL_BE = "GOCA, de examencentra of de gewestelijke overheden";
+const AUTHORITY_SV_SE = "Trafikverket, Transportstyrelsen, Naturvårdsverket eller UHR";
 function authorityIn(region: Exclude<Region, "US">, lang: Language): string {
   if (lang === "en") return AUTHORITY[region];
   if (region === "BE" && lang === "nl") return AUTHORITY_NL_BE;
+  if (region === "SE" && lang === "sv") return AUTHORITY_SV_SE;
   return AUTHORITY[region].replace(/^the /, "");
 }
 

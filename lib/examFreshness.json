@@ -234,6 +234,14 @@
       "what": "The CNESP exam rules date from Despacho 8270/2019 and Lei 34/2013 was last amended in 2019; check for a new despacho, a Lei 34/2013 amendment or a training portaria replacing Portaria 148/2014.",
       "action": "Re-read the Diário da República and psp.pt (Departamento de Segurança Privada) and update the landing, examFacts and sources.md.",
       "source": "https://diariodarepublica.pt/dr/detalhe/despacho/8270-2019-124780748"
+    },
+    {
+      "exam": "semedb",
+      "date": "2027-03-01",
+      "kind": "format",
+      "what": "UHR announces the length, time and pass mark of the April to May 2027 civics sitting (August 2026 was a trial: 60 questions, 40 scored, 28 of 40).",
+      "action": "Update testCount, questionsPerTest and passPct, the landing JSON and EXAM_FACTS to the announced format.",
+      "source": "https://www.uhr.se/medborgarskapsprovet/om-medborgarskapsprovet/"
     }
   ]
 }

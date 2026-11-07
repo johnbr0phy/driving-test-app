@@ -2369,6 +2369,62 @@
     --brand-gradient-to: 50 80% 94%;
   }
 
+  /* Sweden motorcycle knowledge test (A1, A2, A) theme: dark olive */
+  [data-theme="semoto"] {
+    --brand: 57 35% 24%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 57 45% 95%;
+    --brand-hover: 57 35% 19%;
+    --brand-dark: 57 35% 16%;
+    --brand-darker: 57 35% 11%;
+    --brand-muted: 57 30% 62%;
+    --brand-border: 57 35% 76%;
+    --brand-border-light: 57 40% 88%;
+    --brand-gradient-to: 57 50% 92%;
+  }
+
+  /* Sweden hunting licence theory test (jägarexamen) theme: dark moss green */
+  [data-theme="sejakt"] {
+    --brand: 95 45% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 95 40% 95%;
+    --brand-hover: 95 45% 17%;
+    --brand-dark: 95 45% 14%;
+    --brand-darker: 95 45% 9%;
+    --brand-muted: 95 30% 62%;
+    --brand-border: 95 35% 76%;
+    --brand-border-light: 95 40% 88%;
+    --brand-gradient-to: 95 45% 92%;
+  }
+
+  /* Swedish citizenship test (medborgarskapsprovet) theme: deep Swedish-flag blue */
+  [data-theme="semedb"] {
+    --brand: 212 100% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 212 70% 95%;
+    --brand-hover: 212 100% 17%;
+    --brand-dark: 212 100% 14%;
+    --brand-darker: 212 100% 9%;
+    --brand-muted: 212 30% 62%;
+    --brand-border: 212 35% 76%;
+    --brand-border-light: 212 40% 88%;
+    --brand-gradient-to: 48 90% 92%;
+  }
+
+  /* Högskoleprovet theme: deep violet (v2 exam; matches lib/v2/exams/sehp.ts theme) */
+  [data-theme="sehp"] {
+    --brand: 265 85% 28%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 265 55% 95%;
+    --brand-hover: 265 85% 23%;
+    --brand-dark: 265 85% 20%;
+    --brand-darker: 265 85% 15%;
+    --brand-muted: 265 30% 62%;
+    --brand-border: 265 35% 76%;
+    --brand-border-light: 265 40% 88%;
+    --brand-gradient-to: 48 90% 93%;
+  }
+
   /* Finland driving theory test theme */
   [data-theme="fitheory"] {
     --brand: 224 100% 26%;
@@ -6255,6 +6311,54 @@
     --brand-muted: 203 35% 45%;
     --brand-dark: 203 85% 65%;
     --brand-darker: 203 80% 78%;
+  }
+
+  .dark [data-theme="semoto"] {
+    --brand: 57 35% 35.6%;
+    --brand-hover: 57 35% 27.6%;
+    --brand-light: 57 45% 13%;
+    --brand-gradient-to: 57 40% 11%;
+    --brand-border-light: 57 35% 24%;
+    --brand-border: 57 35% 34%;
+    --brand-muted: 57 30% 45%;
+    --brand-dark: 57 35% 65%;
+    --brand-darker: 57 35% 78%;
+  }
+
+  .dark [data-theme="sejakt"] {
+    --brand: 95 45% 34.9%;
+    --brand-hover: 95 45% 26.9%;
+    --brand-light: 95 40% 13%;
+    --brand-gradient-to: 95 40% 11%;
+    --brand-border-light: 95 35% 24%;
+    --brand-border: 95 35% 34%;
+    --brand-muted: 95 30% 45%;
+    --brand-dark: 95 45% 65%;
+    --brand-darker: 95 45% 78%;
+  }
+
+  .dark [data-theme="semedb"] {
+    --brand: 212 100% 46.9%;
+    --brand-hover: 212 100% 38.9%;
+    --brand-light: 212 45% 13%;
+    --brand-gradient-to: 48 40% 11%;
+    --brand-border-light: 212 35% 24%;
+    --brand-border: 212 35% 34%;
+    --brand-muted: 212 30% 45%;
+    --brand-dark: 212 100% 65%;
+    --brand-darker: 212 100% 78%;
+  }
+
+  .dark [data-theme="sehp"] {
+    --brand: 265 85% 50%;
+    --brand-hover: 265 85% 42%;
+    --brand-light: 265 45% 13%;
+    --brand-gradient-to: 48 40% 11%;
+    --brand-border-light: 265 35% 24%;
+    --brand-border: 265 35% 34%;
+    --brand-muted: 265 30% 45%;
+    --brand-dark: 265 85% 67%;
+    --brand-darker: 265 85% 78%;
   }
 
   .dark [data-theme="fitheory"] {

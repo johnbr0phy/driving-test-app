@@ -886,6 +886,22 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
     "color": "hsl(16, 35%, 22%)",
     "tint": "hsl(16, 40%, 96%)"
   },
+  "bemoto": {
+    "color": "hsl(21, 65%, 22%)",
+    "tint": "hsl(21, 60%, 95%)"
+  },
+  "bevracht": {
+    "color": "hsl(214, 25%, 18%)",
+    "tint": "hsl(214, 30%, 96%)"
+  },
+  "betoelating": {
+    "color": "hsl(202, 100%, 18%)",
+    "tint": "hsl(202, 80%, 96%)"
+  },
+  "befsmavz": {
+    "color": "hsl(345, 90%, 20%)",
+    "tint": "hsl(345, 70%, 96%)"
+  },
   "grcitizen": {
     "color": "hsl(222, 100%, 18%)",
     "tint": "hsl(222, 80%, 96%)"

@@ -35,8 +35,10 @@ import fitheoryFi from "./examTranslations/fitheory.fi.json";
 import hukreszHu from "./examTranslations/hukresz.hu.json";
 import rodrpcivRo from "./examTranslations/rodrpciv.ro.json";
 import grdrivingEl from "./examTranslations/grdriving.el.json";
+import bedrivingNl from "./examTranslations/bedriving.nl.json";
+import bedrivingFr from "./examTranslations/bedriving.fr.json";
 
-export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "dkteori" | "dkmoto" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "grmoto" | "grcitizen" | "grsecurity" | "rodrpciv" | "rocpi" | "rotaxi" | "roadmed" | "rorezid" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "detheorie" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl";
+export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "bemoto" | "bevracht" | "betoelating" | "befsmavz" | "dkteori" | "dkmoto" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "grmoto" | "grcitizen" | "grsecurity" | "rodrpciv" | "rocpi" | "rotaxi" | "roadmed" | "rorezid" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "detheorie" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -9095,6 +9097,308 @@ const bedriving: ExamConfig = {
     sourceLine: "Based on the Belgian Highway Code. Original questions in English; 50 per test, 41 to pass like the real exam.",
     analyticsKey: "bedriving",
   },
+  review: { nl: "machine", fr: "machine" },
+  translations: {
+    nl: examTranslation(bedrivingNl),
+    fr: examTranslation(bedrivingFr),
+  },
+};
+
+const bemoto: ExamConfig = {
+  id: "bemoto",
+  stateCode: "BEMOTO",
+  idBase: 25700,
+  slug: "/belgium-motorcycle-theory",
+  landingPath: "/belgium-motorcycle-theory-test",
+  name: "Belgium Motorcycle Theory Practice Test",
+  shortName: "Belgium motorcycle theory",
+  examLabel: "Belgian motorcycle theory exam",
+  fullName: "Belgium motorcycle theory exam, categories A1, A2 and A",
+  questionIdPrefix: "BEMOTO-",
+  icon: "bike",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 82,
+  // Source: the Belgian Highway Code (Royal Decree of 1 December 1975, consolidated text on
+  // codedelaroute.be: art. 9.3.2 lane position, 16.2bis filtering, 30bis lights, 35.1.1 children,
+  // 36 helmet and clothing, 43ter groups, 44 passengers, 46 loads) and the licence categories
+  // (be.brussels A1/A2/A page, vlaanderen.be, Autosécurité category A guide 02/2026; checked
+  // 2026-11-07). The motorcycle theory exam is 50 questions, 41/50 to pass, in all three regions;
+  // passPct 82 = 41/50. No region publishes topic weights, so the blueprint is Tigertest's own,
+  // rider-specific topics first. Pools are exactly 4x each count (no spares). Original, British English.
+  blueprint: {
+    bmLicence: 4,
+    bmGear: 5,
+    bmControl: 6,
+    bmPosition: 6,
+    bmPassenger: 4,
+    bmPriority: 6,
+    bmSigns: 6,
+    bmSpeed: 5,
+    bmRoad: 5,
+    bmParking: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 25701, name: "Licence, Gear & Passengers", categories: ["bmLicence", "bmGear", "bmPassenger"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 2, id: 25702, name: "Braking, Cornering & Road Hazards", categories: ["bmControl", "bmRoad"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 3, id: 25703, name: "Road Position, Speed & Overtaking", categories: ["bmPosition", "bmSpeed"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 4, id: 25704, name: "Priority, Lights & Parking", categories: ["bmPriority", "bmParking"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 5, id: 25705, name: "Road Signs for Riders", categories: ["bmSigns"], size: 24, weightLabel: "6 of 50 test questions" },
+  ],
+  categoryLabels: {
+    bmLicence: "Licence Categories, Learners & Fitness",
+    bmGear: "Protective Gear & Motorcycle Checks",
+    bmControl: "Braking, Cornering & Control",
+    bmPosition: "Road Position, Filtering & Group Riding",
+    bmPassenger: "Passengers, Children & Loads",
+    bmPriority: "Priority & Junctions",
+    bmSigns: "Road Signs for Riders",
+    bmSpeed: "Speed Limits, Overtaking & Motorways",
+    bmRoad: "Road Surface, Weather & Hazards",
+    bmParking: "Lights, Parking & Breakdowns",
+  },
+  copy: {
+    guestPrompt: "to save your motorcycle theory progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets on the Belgian Highway Code for motorcyclists, tested in Flanders, Wallonia and Brussels alike. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, pass at 41",
+    heroSubs: [
+      "Five topics, four 50-question tests. Rider rules weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your motorcycle theory exam.",
+    ],
+    sourceLine: "Based on the Belgian Highway Code for motorcyclists. Original questions in English; 50 per test, 41 to pass like the real exam.",
+    analyticsKey: "bemoto",
+  },
+};
+
+const bevracht: ExamConfig = {
+  id: "bevracht",
+  stateCode: "BEVRACHT",
+  idBase: 25800,
+  slug: "/theorie-vrachtwagen-c",
+  landingPath: "/nl/theorie-examen-vrachtwagen-c-oefenen",
+  name: "Theorie-examen vrachtwagen C en vakbekwaamheid",
+  shortName: "Theorie vrachtwagen C",
+  examLabel: "Theorie-examen rijbewijs C",
+  fullName: "Theorie-examen rijbewijs C/CE en vakbekwaamheid (code 95)",
+  questionIdPrefix: "BEVRC-",
+  icon: "truck",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  language: "nl",
+  locale: "nl-BE",
+  english: {
+    name: "Belgium Truck Licence Theory Test (C/CE and CPC)",
+    shortName: "Belgian truck theory test",
+    fullName: "Belgium truck licence C/CE theory exam and driver CPC (vakbekwaamheid, code 95), in Dutch",
+  },
+  review: { nl: "model" },
+  // Real exam (GOCA Doc C-C1.NL.TH-PR and C-C1.CAP.NL.TH-PR, 16.11.2022; vlaanderen.be, checked
+  // 2026-11-07): C/C1 alone 50 MCQ in max. 50 min, 41/50, from 17 y 9 m. With vakbekwaamheid:
+  // proef A 100 MCQ (50 licence + 50 CPC) in max. 100 min, 80/100, 40/50 on one half exempts it
+  // for 3 years; proef B 8 case studies x 5 (32/40); proef C oral 10 questions (80/100). 2 or 3
+  // options per question; Dutch, French or German, others with a sworn interpreter.
+  // Four tests of 50 like one half of proef A: licence 8/4/6/6 + vakbekwaamheid 7/5/6/5/3
+  // (Tigertest's split, no published weights). Pools exactly 4x each count (200, all original,
+  // written in Dutch). passPct 80 = 40 of 50.
+  blueprint: {
+    bevrVerkeer: 8,
+    bevrRijbewijs: 4,
+    bevrTechniek: 6,
+    bevrRemmen: 6,
+    bevrRijtijden: 7,
+    bevrTachograaf: 5,
+    bevrLading: 6,
+    bevrVeiligheid: 5,
+    bevrMilieu: 3,
+  },
+  // Five topic sets, not testSets(): 5 + 4 tests = 9 dashboard steps.
+  trainingSets: [
+    { setNumber: 1, id: 25801, name: "Verkeersregels en rijbewijs", categories: ["bevrVerkeer", "bevrRijbewijs"], size: 48, weightLabel: "12 van 50 vragen per test" },
+    { setNumber: 2, id: 25802, name: "Voertuigtechniek en remmen", categories: ["bevrTechniek", "bevrRemmen"], size: 48, weightLabel: "12 van 50 vragen per test" },
+    { setNumber: 3, id: 25803, name: "Rij- en rusttijden en tachograaf", categories: ["bevrRijtijden", "bevrTachograaf"], size: 48, weightLabel: "12 van 50 vragen per test" },
+    { setNumber: 4, id: 25804, name: "Lading, gewichten en afmetingen", categories: ["bevrLading"], size: 24, weightLabel: "6 van 50 vragen per test" },
+    { setNumber: 5, id: 25805, name: "Veiligheid, milieu en documenten", categories: ["bevrVeiligheid", "bevrMilieu"], size: 32, weightLabel: "8 van 50 vragen per test" },
+  ],
+  categoryLabels: {
+    bevrVerkeer: "Verkeersregels voor vrachtwagens",
+    bevrRijbewijs: "Rijbewijs, documenten en alcohol",
+    bevrTechniek: "Voertuigtechniek en koppelen",
+    bevrRemmen: "Remmen en vertragers",
+    bevrRijtijden: "Rij- en rusttijden",
+    bevrTachograaf: "Tachograaf",
+    bevrLading: "Lading, gewichten en afmetingen",
+    bevrVeiligheid: "Veiligheid, gezondheid en noodsituaties",
+    bevrMilieu: "Zuinig rijden, documenten en transportmarkt",
+  },
+  copy: {
+    guestPrompt: "om je voortgang voor het theorie-examen vrachtwagen te bewaren en elke foute vraag bij te houden",
+    trainingHeading: "Oefensets",
+    trainingSub: "Elke oefenset behandelt een deel van de leerstof voor rijbewijs C en vakbekwaamheid. Je krijgt meteen feedback, en foute vragen komen terug tot je ze kent.",
+    testsHeading: "Testen · 50 vragen, 40 juist om te slagen",
+    heroSubs: [
+      "Vijf oefensets, vier testen. Rij- en rusttijden en verkeersregels komen het vaakst terug.",
+      "Eerst een oefenset beheersen, dan een test.",
+      "Halverwege. Doe een test.",
+      "Fouten herhalen, dan opnieuw testen.",
+      "Alles groen. Plan je theorie-examen.",
+    ],
+    sourceLine: "Volgens de Wegcode en de Europese regels voor rij- en rusttijden en de tachograaf, stand november 2026. Eigen vragen, niet uit de officiële vragenbank; 4 antwoorden per vraag, zonder case study's of mondeling.",
+    analyticsKey: "bevracht",
+  },
+};
+
+const betoelating: ExamConfig = {
+  id: "betoelating",
+  stateCode: "BETOEL",
+  idBase: 25600,
+  slug: "/toelatingsexamen-arts",
+  landingPath: "/nl/toelatingsexamen-arts-oefenen",
+  name: "Toelatingsexamen arts en tandarts",
+  shortName: "Toelatingsexamen arts",
+  examLabel: "Toelatingsexamen arts en tandarts",
+  fullName: "Toelatingsexamen arts en tandarts (Vlaanderen): Kennis en Inzicht in de Wetenschappen en Generieke Competenties",
+  questionIdPrefix: "BETOEL-",
+  icon: "stethoscope",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  language: "nl",
+  locale: "nl-BE",
+  english: {
+    name: "Flemish Medical and Dental Admission Exam",
+    shortName: "Flemish medical admission exam",
+    fullName: "Flemish medical and dental admission exam (toelatingsexamen arts en tandarts), in Dutch",
+  },
+  review: { nl: "model" },
+  // Real exam (vlaanderen.be toelatingsexamens pages and UAntwerpen, checked 2026-11-07): KIW 40
+  // four-option questions, 10 each in biology, physics, chemistry and mathematics (3.5 h); GC 15
+  // EMCO + 25 VAARDIG (1.5 h); +3 right, -1 wrong, 0 blank; at least 60/120 on each part, then a
+  // quota ranking. Content: Leerstofoverzicht KIW 2026 (a 2027 overview is due autumn 2026).
+  // Four tests of 50: the real KIW 10/10/10/10 plus a shortened GC block of 4 EMCO and 6 VAARDIG.
+  // Equal weight and no guessing correction, so passPct 70 (35 of 50) is Tigertest's target.
+  blueprint: {
+    betoelBio: 10,
+    betoelFys: 10,
+    betoelChem: 10,
+    betoelWisk: 10,
+    betoelEmco: 4,
+    betoelVaardig: 6,
+  },
+  // Five subject sets, sets first then tests (like detheorie): 5 + 4 = 9 dashboard steps.
+  trainingSets: [
+    { setNumber: 1, id: 25601, name: "Biologie", categories: ["betoelBio"], size: 40, weightLabel: "10 van 50 vragen per proefexamen" },
+    { setNumber: 2, id: 25602, name: "Fysica", categories: ["betoelFys"], size: 40, weightLabel: "10 van 50 vragen per proefexamen" },
+    { setNumber: 3, id: 25603, name: "Chemie", categories: ["betoelChem"], size: 40, weightLabel: "10 van 50 vragen per proefexamen" },
+    { setNumber: 4, id: 25604, name: "Wiskunde", categories: ["betoelWisk"], size: 40, weightLabel: "10 van 50 vragen per proefexamen" },
+    { setNumber: 5, id: 25605, name: "Generieke competenties", categories: ["betoelEmco", "betoelVaardig"], size: 40, weightLabel: "10 van 50 vragen per proefexamen" },
+  ],
+  categoryLabels: {
+    betoelBio: "Biologie",
+    betoelFys: "Fysica",
+    betoelChem: "Chemie",
+    betoelWisk: "Wiskunde",
+    betoelEmco: "Empathie en communicatie (EMCO)",
+    betoelVaardig: "Wetenschappelijke teksten (VAARDIG)",
+  },
+  copy: {
+    guestPrompt: "om je vooruitgang voor het toelatingsexamen te bewaren en elke fout bij te houden",
+    trainingHeading: "Oefensets",
+    trainingSub: "Elke oefenset behandelt één vak van het toelatingsexamen. Je krijgt meteen feedback, en vragen die je fout had, komen terug tot je ze beheerst.",
+    testsHeading: "Proefexamens · 50 vragen, 35 als doel",
+    heroSubs: [
+      "Vijf oefensets, vier proefexamens. Begin met het vak waar je het minst zeker van bent.",
+      "Eerst de oefenset beheersen, dan het proefexamen.",
+      "De helft is gedaan. Maak een proefexamen van 50 vragen.",
+      "Herhaal je fouten en test jezelf opnieuw.",
+      "Alles groen. Je bent klaar voor het toelatingsexamen.",
+    ],
+    sourceLine: "Volgens het leerstofoverzicht KIW 2026 van de Vlaamse overheid, stand november 2026. Eigen vragen, niet uit vroegere examens; 50 per proefexamen, zonder giscorrectie.",
+    analyticsKey: "betoelating",
+  },
+};
+
+const befsmavz: ExamConfig = {
+  id: "befsmavz",
+  stateCode: "BEFSMA",
+  idBase: 25900,
+  slug: "/fsma-examen-verzekeringen",
+  landingPath: "/nl/fsma-examen-verzekeringen-oefenen",
+  name: "FSMA-examen verzekeringsdistributie",
+  shortName: "FSMA-examen verzekeringen",
+  examLabel: "Examen verzekeringsdistributie",
+  fullName: "FSMA-erkend examen verzekeringsdistributie (modules 1 tot 4: basiskennis, niet-leven, leven, leven met beleggingscomponent)",
+  questionIdPrefix: "BEFSMA-",
+  icon: "umbrella",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 60,
+  language: "nl",
+  locale: "nl-BE",
+  english: {
+    name: "Belgium FSMA Insurance Distribution Exam",
+    shortName: "Belgian insurance distribution exam",
+    fullName: "Belgium FSMA-recognised insurance distribution exam (verzekeringsdistributie, modules 1 to 4), in Dutch",
+  },
+  review: { nl: "model" },
+  // Real exam (Febelfin Academy FAQ and course pages, FSMA_2019_14; checked 2026-11-07): KB of
+  // 18 June 2019, four modules since 1 January 2021: 1 basiskennis (1.1 markt en overeenkomst,
+  // 1.2 diverse wetgeving), 2 niet-leven (2.1 BA en rechtsbijstand, 2.2 motorrijtuigen en
+  // bijstand, 2.3 zaak, 2.4 persoon), 3 leven (3.1 recht, 3.2 antiwitwas, markt, pensioenen,
+  // gedragsregels), 4 leven met beleggingscomponent. Each submodule: 20 MCQ, no guessing
+  // correction, about 30 minutes, 60% to pass. Four mixed mock tests of 50 here; the
+  // 6/8/8/4/4/4/4/5/4/3 split is Tigertest's (no weights published). passPct 60 = the real mark.
+  blueprint: {
+    bfsMarkt: 6,
+    bfsContract: 8,
+    bfsDistributie: 8,
+    bfsAansprak: 4,
+    bfsAuto: 4,
+    bfsZaak: 4,
+    bfsPersoon: 4,
+    bfsLeven: 5,
+    bfsWitwas: 4,
+    bfsBeleg: 3,
+  },
+  // Five module sets, sets first then tests (like detheorie): 5 + 4 = 9 dashboard steps.
+  trainingSets: [
+    { setNumber: 1, id: 25901, name: "Module 1.1: markt en verzekeringsovereenkomst", categories: ["bfsMarkt", "bfsContract"], size: 56, weightLabel: "14 van 50 vragen per proefexamen" },
+    { setNumber: 2, id: 25902, name: "Module 1.2: distributie en gedragsregels", categories: ["bfsDistributie"], size: 32, weightLabel: "8 van 50 vragen per proefexamen" },
+    { setNumber: 3, id: 25903, name: "Niet-leven: aansprakelijkheid en motorrijtuigen", categories: ["bfsAansprak", "bfsAuto"], size: 32, weightLabel: "8 van 50 vragen per proefexamen" },
+    { setNumber: 4, id: 25904, name: "Niet-leven: zaak- en persoonsverzekeringen", categories: ["bfsZaak", "bfsPersoon"], size: 32, weightLabel: "8 van 50 vragen per proefexamen" },
+    { setNumber: 5, id: 25905, name: "Leven, beleggingsverzekeringen en antiwitwas", categories: ["bfsLeven", "bfsWitwas", "bfsBeleg"], size: 48, weightLabel: "12 van 50 vragen per proefexamen" },
+  ],
+  categoryLabels: {
+    bfsMarkt: "Verzekeringsmarkt en toezicht",
+    bfsContract: "De verzekeringsovereenkomst",
+    bfsDistributie: "Distributie, gedragsregels en privacy",
+    bfsAansprak: "Aansprakelijkheid en rechtsbijstand",
+    bfsAuto: "Motorrijtuigen en bijstand",
+    bfsZaak: "Zaakverzekeringen",
+    bfsPersoon: "Persoonsverzekeringen niet-leven",
+    bfsLeven: "Levensverzekering",
+    bfsWitwas: "Antiwitwas en pensioenpijlers",
+    bfsBeleg: "Leven met beleggingscomponent",
+  },
+  copy: {
+    guestPrompt: "om je vooruitgang voor het examen verzekeringsdistributie te bewaren en elke fout bij te houden",
+    trainingHeading: "Oefensets",
+    trainingSub: "Elke oefenset behandelt de stof van een module van het examen. Je krijgt meteen feedback, en vragen die je fout had, komen terug tot je ze beheerst.",
+    testsHeading: "Proefexamens · 50 vragen, 60 % om te slagen",
+    heroSubs: [
+      "Vijf oefensets, vier proefexamens. Begin met module 1: die is voor iedereen verplicht.",
+      "Eerst de oefenset beheersen, dan het proefexamen.",
+      "De helft is gedaan. Maak een proefexamen van 50 vragen.",
+      "Herhaal je fouten en test jezelf opnieuw.",
+      "Alles groen. Je bent klaar voor het examen verzekeringsdistributie.",
+    ],
+    sourceLine: "Volgens de wet van 4 april 2014 betreffende de verzekeringen en de antiwitwaswet, stand november 2026. Eigen vragen, niet uit een erkend examen; proefexamens van 50 vragen over alle modules.",
+    analyticsKey: "befsmavz",
+  },
 };
 
 const dkteori: ExamConfig = {
@@ -17327,7 +17631,7 @@ const sgvl: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, nhie, cna, ptcb, phleb, ccma, cma, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, sfadmin, phr, cisa, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, dkteori, dkmoto, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, grmoto, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, grcitizen, grsecurity, semedb, dkindfoed, dkmedborger, gulfrn, inrto, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, nhie, cna, ptcb, phleb, ccma, cma, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, sfadmin, phr, cisa, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, bemoto, bevracht, dkteori, dkmoto, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, grmoto, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, betoelating, befsmavz, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, grcitizen, grsecurity, semedb, dkindfoed, dkmedborger, gulfrn, inrto, htl, cst, crcst];
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
 export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA, realestatePA, realestateIL, realestateOH, realestateGA, realestateNC, realestateMI, realestateVA, realestateWA, realestateAZ, realestateTN, realestateLA, insuranceNY, insurancePA, insuranceIL, insuranceOH, insuranceGA, insuranceNC, insuranceMI, insuranceNJ, insuranceVA, insuranceWA, pncNY, pncPA, pncIL, pncOH, pncGA, pncNC, pncMI, pncNJ, pncVA, pncWA];

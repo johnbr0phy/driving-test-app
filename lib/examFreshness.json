@@ -308,6 +308,30 @@
       "what": "Each ΕΟΠΠΕΠ exam period for private security personnel has its own call; the theory time limit and how theory and practical marks combine were not confirmed for the 2026 calls.",
       "action": "Check the first 2027 ΕΟΠΠΕΠ call for any change to the 20-question theory part or the 1 to 20 grading.",
       "source": "https://www.eoppep.gr/"
+    },
+    {
+      "exam": "betoelating",
+      "date": "2026-12-01",
+      "kind": "outline",
+      "what": "The Flemish government publishes the leerstofoverzicht KIW for the 2027 admission exams (arts 2 July, tandarts 3 July 2027) in autumn 2026.",
+      "action": "Read the 2027 leerstofoverzicht and rebuild the bank against it.",
+      "source": "https://www.vlaanderen.be/toelatingsexamens"
+    },
+    {
+      "exam": "bevracht",
+      "date": "2027-06-01",
+      "kind": "law",
+      "what": "The Wegcode (Royal Decree of 1 December 1975) ceases on 1 June 2027 (art. 87), replaced by federal and regional codes.",
+      "action": "Re-check the speed, distance, parking and sign items against the new codes.",
+      "source": "https://www.wegcode.be/"
+    },
+    {
+      "exam": "bemoto",
+      "date": "2027-06-01",
+      "kind": "law",
+      "what": "The Wegcode (Royal Decree of 1 December 1975) ceases on 1 June 2027 (art. 87), replaced by federal and regional codes.",
+      "action": "Re-check the lane position, filtering, speed and sign items against the new codes.",
+      "source": "https://www.wegcode.be/"
     }
   ]
 }

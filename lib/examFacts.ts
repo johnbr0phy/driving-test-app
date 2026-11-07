@@ -2767,6 +2767,70 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "ΕΟΠΠΕΠ certification exam notices and results for private security personnel (2022 to 2026, as published by alfavita.gr), the KEMEA programme description (ΕΟΠΠΕΠ decision ΔΠ/11556/2022) and Law 2518/1997 as amended, checked November 2026",
     source: { name: "ΕΟΠΠΕΠ (in Greek)", url: "https://www.eoppep.gr/" },
   },
+  bemoto: {
+    answer:
+      "The Belgian motorcycle theory exam covers categories A1, A2 and A and is separate from the car exam. It is taken at an approved exam centre in Flanders, Wallonia or Brussels and has 50 multiple-choice questions on a computer, on the Highway Code and safe motorcycle riding; you need at least 41 of 50 to pass. A pass is valid for three years. Brussels lets you sit it from 17 years and 9 months; Flanders sets the age by category (17 years 9 months for A1, 19 years 9 months for A2, 23 years 9 months for A). Holding A2 for at least two years exempts you from the category A theory exam. In Brussels the exam is in Dutch or French, with English or German only in booked sessions with an interpreter; ask your centre about English elsewhere. Licences: A1 from 18, A2 from 20, A from 24, or from 22 after two years on A2.",
+    rows: [
+      { label: "Run by", value: "Approved exam centres in Flanders, Wallonia and Brussels" },
+      { label: "Questions", value: "50 multiple choice" },
+      { label: "Pass mark", value: "41 of 50" },
+      { label: "In English", value: "Brussels: booked sessions with an interpreter; elsewhere ask your centre" },
+      { label: "Pass valid for", value: "3 years" },
+      { label: "Exempt", value: "With A2 held for 2 years (for category A)" },
+      { label: "Licence ages", value: "A1 from 18, A2 from 20, A from 24 (22 after 2 years of A2)" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions, 41 to pass" },
+    ],
+    basedOn: "The Brussels A1/A2/A licence page (be.brussels), Vlaanderen.be's step-by-step page for licences A1, A2 and A, Autosécurité's category A guide (February 2026) and the Belgian Highway Code (Royal Decree of 1 December 1975), checked November 2026",
+    source: { name: "be.brussels: training and exams for licence A1/A2/A", url: "https://be.brussels/nl/transport-mobiliteit/rijbewijs-en-kentekenbewijs/rijbewijs-behalen/rijopleiding-en-rijexamen-voor-rijbewijs-a1a2a" },
+  },
+  bevracht: {
+    answer:
+      "In Belgium the theory exam for a truck licence is taken on a computer at an approved exam centre (GOCA members such as Autoveiligheid and Autosécurité). For category C or C1 alone it is 50 multiple-choice questions in at most 50 minutes, and you pass with at least 41 correct; you can sit it from 17 years and 9 months. A professional driver also needs the certificate of professional competence (vakbekwaamheid, code 95): the combined theory exam is 100 questions in at most 100 minutes, 50 on the licence and 50 on professional competence, with at least 80 of 100 to pass, and 40 of 50 on one half exempts that half for three years. It is followed by a case-study test (8 case studies of 5 questions, 32 of 40) and an oral test of 10 questions (80 of 100). Each question has 2 or 3 options. The exam is in Dutch, French or German; for another language a sworn interpreter appointed by the centre can be booked at the candidate's cost.",
+    rows: [
+      { label: "Run by", value: "Approved exam centres (GOCA) in Flanders, Wallonia and Brussels" },
+      { label: "C or C1 alone", value: "50 questions, max. 50 minutes, 41 to pass" },
+      { label: "With professional competence (code 95)", value: "100 questions (50 + 50), max. 100 minutes, 80 to pass" },
+      { label: "Case studies", value: "8 x 5 questions, max. 80 minutes, 32 of 40" },
+      { label: "Oral test", value: "10 questions, max. 60 minutes, 80 of 100" },
+      { label: "Answer options", value: "2 or 3 per question" },
+      { label: "Languages", value: "Dutch, French, German (interpreter for others)" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions in Dutch, 40 to pass" },
+    ],
+    basedOn: "GOCA brochures for categories C/C1 and C/C1 with professional competence (16.11.2022), Vlaanderen.be's C and D licence page, the Belgian Highway Code and EU Regulations 561/2006 and 165/2014, checked November 2026",
+    source: { name: "Vlaanderen.be: truck and bus licence step by step (in Dutch)", url: "https://www.vlaanderen.be/rijbewijs-c-en-d-stap-voor-stap" },
+  },
+  betoelating: {
+    answer:
+      "Anyone who wants to study medicine or dentistry at a Flemish university must first pass the admission exam (toelatingsexamen arts or tandarts) run by the Flemish government. It has two parts. In the morning, Knowledge and Insight in the Sciences (KIW) has 40 multiple-choice questions, 10 each in biology, physics, chemistry and mathematics, in 3.5 hours, with a formula sheet and a simple calculator supplied. In the afternoon, Generic Competences (GC) has 15 questions on empathy and communication (EMCO) and 25 on short scientific texts about health (VAARDIG), in 1.5 hours. Every question has four options; a right answer earns 3 points, a wrong one costs 1 and a blank scores 0, so each part is out of 120. Candidates need at least 60 out of 120 on each part and are then ranked against a fixed quota for all of Flanders: in 2026, 1,881 of 6,123 medicine candidates got a place. The exam is in Dutch only, on paper, once a year; in 2027 the medicine exam is on 2 July and the dentistry exam on 3 July.",
+    rows: [
+      { label: "Run by", value: "Flemish government (Department of Education)" },
+      { label: "Science part (KIW)", value: "40 questions, 10 per subject, 3.5 hours" },
+      { label: "Generic competences (GC)", value: "15 EMCO and 25 VAARDIG, 1.5 hours" },
+      { label: "Marking", value: "+3 right, -1 wrong, 0 blank" },
+      { label: "Pass mark", value: "At least 60/120 on each part, then a quota ranking" },
+      { label: "Language", value: "Dutch only, on paper" },
+      { label: "2027 dates", value: "Medicine 2 July, dentistry 3 July" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions in Dutch, 35 as the target" },
+    ],
+    basedOn: "Flemish government pages on the admission exams (exam parts, answer sheet, schedule, 2026 FAQ), the KIW 2026 syllabus and the University of Antwerp's guidance, checked November 2026",
+    source: { name: "Vlaamse overheid: Toelatingsexamens arts, tandarts en dierenarts (Dutch)", url: "https://www.vlaanderen.be/toelatingsexamens" },
+  },
+  befsmavz: {
+    answer:
+      "Anyone who distributes insurance in Belgium, whether as a broker, agent, sub-agent, bank employee or other person in contact with the public, must prove their professional knowledge with an exam recognised by the FSMA. Since 1 January 2021 it is split into four modules: module 1 basic knowledge (the insurance market and the insurance contract, and other legislation), module 2 non-life (liability and legal expenses, motor and assistance, property, and personal insurance other than life), module 3 life, and module 4 life insurance with an investment component. Each submodule is a separate exam of 20 multiple-choice questions with no guessing correction, taking about 30 minutes, and you pass with at least 60% per submodule. A person in contact with the public takes module 1; the person responsible for distribution also takes the modules for the products the firm sells, and module 4 counts only with module 3. Febelfin Academy, one recognised organiser, runs the exams in Dutch, French and English, in person or online with remote supervision.",
+    rows: [
+      { label: "Recognised by", value: "FSMA (Febelfin Academy and other recognised organisers)" },
+      { label: "Modules", value: "1 basic knowledge, 2 non-life, 3 life, 4 life with investment component" },
+      { label: "Per submodule", value: "20 multiple-choice questions, about 30 minutes" },
+      { label: "Pass mark", value: "At least 60% per submodule" },
+      { label: "Guessing correction", value: "None" },
+      { label: "Who takes what", value: "Module 1 for everyone; modules 2 to 4 by product" },
+      { label: "Languages", value: "Dutch, French and English (Febelfin Academy)" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions in Dutch across all modules, 30 to pass" },
+    ],
+    basedOn: "Royal Decree of 18 June 2019 on professional knowledge in insurance distribution, FSMA communication FSMA_2019_14, Febelfin Academy's IDD exam pages and the Insurance Act of 4 April 2014, checked November 2026",
+    source: { name: "Febelfin Academy: knowledge requirements under the IDD", url: "https://www.febelfin-academy.be/en/faq/insurances/what-are-knowledge-requirements-context-european-insurance-distribution-directive" },
+  },
   rodrpciv: {
     answer:
       "The Romanian driving licence theory exam for category B is a computer test of 26 questions in 30 minutes, and you need at least 22 correct answers to pass. It is set nationally by the Ministry of Internal Affairs' driving licence directorate (DGPCI, formerly DRPCIV) and taken at your county's driving licence service. Three warm-up questions come first and do not count. Each question has three answers, and one, two or all three can be correct. The test is in Romanian; foreigners and citizens of other EU and EEA countries and Switzerland may ask for English, French or German, and Romanian citizens of the Hungarian and German minorities may use their mother tongue. You must be 18 and have trained at an authorised driving school.",

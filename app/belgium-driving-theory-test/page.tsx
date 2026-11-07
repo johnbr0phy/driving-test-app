@@ -9,6 +9,7 @@ import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
 import "@/lib/banks/bedriving";
 import { SITE_URL } from "@/lib/siteUrl";
+import { examLandingAlternates } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -25,6 +26,7 @@ export const metadata: Metadata = {
     "belgium driving theory test, belgian theory exam english, rijbewijs b theorie examen english, permis theorique belgique anglais, belgian driving licence theory test, goca theory exam, belgium driving test questions, theory exam flanders english, brussels driving theory test, wallonia permis theorique, belgian highway code questions 2026",
   alternates: {
     canonical: `${siteUrl}/belgium-driving-theory-test`,
+    languages: examLandingAlternates("bedriving"),
   },
   openGraph: {
     title,

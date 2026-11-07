@@ -1,0 +1,164 @@
+"""French (fr-BE) app copy and landing content for bedriving, written with plain spaces.
+
+build_copy.py applies French typography (non-breaking space before ? ! : ; and in 1 500)
+and writes lib/examTranslations/bedriving.fr.json and lib/landings/bedriving.fr.json.
+"""
+
+LANDING_PATH = "/fr/examen-theorique-permis-b"
+
+TRANSLATION = {
+    "landingPath": LANDING_PATH,
+    "locale": "fr-BE",
+    "name": "Examen théorique du permis B",
+    "shortName": "Examen théorique B",
+    "examLabel": "L'examen théorique du permis B",
+    "fullName": "Examen théorique belge du permis de conduire B (voiture)",
+    "trainingSets": {
+        "1": {"name": "Signaux de danger et autres signaux", "weightLabel": "11 questions de test sur 50"},
+        "2": {"name": "Priorité, marquages et feux", "weightLabel": "11 questions de test sur 50"},
+        "3": {"name": "Vitesse, dépassement et autoroutes", "weightLabel": "12 questions de test sur 50"},
+        "4": {"name": "Usagers vulnérables et stationnement", "weightLabel": "8 questions de test sur 50"},
+        "5": {"name": "Permis, éclairage et sécurité", "weightLabel": "8 questions de test sur 50"},
+    },
+    "categoryLabels": {
+        "beLicence": "L'examen, le permis et l'aptitude à conduire",
+        "beDanger": "Signaux de danger",
+        "bePriority": "Règles et signaux de priorité",
+        "beSigns": "Signaux d'interdiction, d'obligation et d'indication",
+        "beMarkings": "Marquages routiers et feux de signalisation",
+        "beSpeed": "Limitations de vitesse et zones",
+        "beManoeuvre": "Dépassement, changement de direction et autoroutes",
+        "beParking": "Arrêt et stationnement",
+        "beVulnerable": "Piétons, cyclistes et transports en commun",
+        "beSafety": "Éclairage, ceintures et pannes",
+    },
+    "copy": {
+        "guestPrompt": "pour enregistrer votre progression à l'examen théorique et retrouver chaque question manquée",
+        "trainingHeading": "Entraînez-vous par thème",
+        "trainingSub": "Cinq séries sur le Code de la route belge, que les examens de Wallonie, de Bruxelles et de Flandre évaluent tous. Vous voyez tout de suite si votre réponse est juste, et les questions manquées reviennent jusqu'à ce que vous les maîtrisiez.",
+        "testsHeading": "Examens blancs · 50 questions, 41 pour réussir",
+        "heroSubs": [
+            "Cinq thèmes, quatre examens blancs de 50 questions. La priorité et les signaux pèsent le plus.",
+            "Maîtrisez chaque série, puis passez un examen blanc.",
+            "Vous êtes à mi-chemin. Essayez un examen blanc.",
+            "Revoyez vos erreurs, puis recommencez.",
+            "Tout est fait. Réservez votre examen théorique.",
+        ],
+        "sourceLine": "Basé sur le Code de la route belge. Questions originales ; 50 par examen blanc, 41 pour réussir, comme le vrai examen.",
+    },
+}
+
+LANDING = {
+    "metaTitle": "Examen Théorique Permis B 2026 - Tests Gratuits en Belgique",
+    "metaDescription": "Entraînement gratuit à l'examen théorique belge du permis B : 200 questions originales sur le Code de la route, toutes expliquées, quatre examens blancs de 50 questions avec la vraie norme de 41 sur 50 et cinq séries d'entraînement. Sans compte.",
+    "keywords": "examen théorique permis b, examen théorique belgique, test permis théorique gratuit, permis b théorique, examen blanc permis, questions code de la route belge, examen théorique 2026, permis provisoire théorique, examen théorique wallonie, examen théorique bruxelles, questions examen permis b",
+    "breadcrumb": {
+        "home": "Accueil",
+        "allTests": "Tous les tests",
+        "current": "Examen théorique du permis B",
+    },
+    "h1": "Examen Théorique du Permis B : Entraînement Gratuit 2026",
+    "subtitle": "200 questions originales sur le Code de la route belge : priorité de droite, signaux, marquages, limites de vitesse par région, dépassement, autoroutes et stationnement. Quatre examens blancs de 50 questions avec la vraie norme de 41 sur 50. Conçu pour votre GSM. Sans compte.",
+    "facts": {
+        "h2": "L'examen théorique du permis B en bref",
+        "answer": "L'examen théorique belge du permis B (voiture) se passe dans un centre d'examen agréé en Wallonie, à Bruxelles ou en Flandre. Vous répondez à 50 questions à choix multiple sur un écran. Vous partez de 50 points et il vous en faut au moins 41 pour réussir : une réponse fausse ou une question sans réponse coûte 1 point, et une erreur sur une question de faute grave (une infraction du troisième ou du quatrième degré, ou une limite de vitesse) coûte 5 points. Vous devez avoir au moins 17 ans, et une réussite reste valable trois ans. En Wallonie, l'examen est en français, en allemand à Eupen, et en néerlandais ou en anglais sur rendez-vous dans deux centres ; à Bruxelles, il est en français ou en néerlandais ; en Flandre, il est en néerlandais, avec une traduction audio en français, en allemand ou en anglais si vous le souhaitez. Après deux échecs consécutifs, vous suivez 12 heures de cours théoriques dans une école de conduite agréée.",
+        "tigertest": "Tigertest propose 200 questions d'entraînement originales, expliquées en français, toutes gratuites et sans compte. Le même examen existe aussi en néerlandais et en anglais. Tigertest n'est lié ni au GOCA, ni à un centre d'examen, ni aux autorités wallonnes, bruxelloises ou flamandes.",
+        "rows": [
+            {"label": "Organisation", "value": "Centres d'examen agréés en Wallonie, à Bruxelles et en Flandre"},
+            {"label": "Questions", "value": "50 questions à choix multiple"},
+            {"label": "Pour réussir", "value": "41 points sur 50"},
+            {"label": "Faute grave", "value": "Coûte 5 points (infractions du troisième ou du quatrième degré et limites de vitesse)"},
+            {"label": "Temps", "value": "Jusqu'à 15 secondes par question (Flandre, Bruxelles)"},
+            {"label": "Langues", "value": "Français, néerlandais, allemand ; anglais sur rendez-vous (Wallonie), avec un interprète (Bruxelles) ou en traduction audio (Flandre)"},
+            {"label": "Âge minimum", "value": "17 ans"},
+            {"label": "Validité", "value": "3 ans"},
+            {"label": "Examens blancs Tigertest", "value": "4 x 50 questions, 41 pour réussir"},
+        ],
+        "footnote": "Basé sur les pages de Wallonie.be et de Vlaanderen.be consacrées à l'examen théorique, les informations de Bruxelles Mobilité et le Code de la route belge (arrêté royal du 1er décembre 1975), vérifiés en novembre 2026. Les règles changent : vérifiez les détails actuels sur",
+        "source": {
+            "name": "Wallonie.be : passer le permis de conduire théorique catégorie B",
+            "url": "https://www.wallonie.be/fr/demarches/passer-le-permis-de-conduire-theorique-categorie-b",
+        },
+    },
+    "howItWorks": {
+        "h2": "Comment ça marche",
+        "cards": [
+            {
+                "h3": "Entraînez-vous par thème",
+                "p": "Cinq séries d'entraînement sur les signaux, la priorité et les marquages, la vitesse et le dépassement, les usagers vulnérables et le stationnement, et le permis, l'éclairage et la sécurité. Les questions manquées reviennent jusqu'à ce que vous les maîtrisiez.",
+            },
+            {
+                "h3": "Examens blancs complets",
+                "p": "Quatre examens blancs de 50 questions qui couvrent ensemble les 200 questions, avec 41 sur 50 pour réussir, comme le vrai examen. Tigertest compte chaque erreur pour un point ; le vrai examen en retire cinq pour une faute grave, alors visez plus haut.",
+            },
+        ],
+    },
+    "topics": {
+        "h2": "Basé sur le Code de la route belge",
+        "p": "Chaque question vient du Code de la route fédéral que les examens de Wallonie, de Bruxelles et de Flandre évaluent tous : priorité de droite, trams d'abord, circulation en tirette, couloir de secours, zones 30 et 20 et allure du pas, et distances de stationnement. Là où les régions diffèrent, comme pour les limites de vitesse, la question nomme la région. Aucune région ne publie le poids de chaque thème : cette répartition est donc celle de Tigertest, avec la priorité et les signaux en tête. Les signaux sont décrits en mots, et les vidéos de perception des risques ne sont pas reprises.",
+        "items": [
+            "Règles et signaux de priorité (14 %)",
+            "Signaux d'interdiction, d'obligation et d'indication (12 %)",
+            "Limitations de vitesse et zones (12 %)",
+            "Dépassement, changement de direction et autoroutes (12 %)",
+            "L'examen, le permis et l'aptitude à conduire (10 %)",
+            "Signaux de danger (10 %)",
+            "Marquages routiers et feux de signalisation (8 %)",
+            "Arrêt et stationnement (8 %)",
+            "Piétons, cyclistes et transports en commun (8 %)",
+            "Éclairage, ceintures et pannes (6 %)",
+        ],
+    },
+    "howToPass": {
+        "h2": "Comment réussir l'examen théorique",
+        "steps": [
+            {
+                "h3": "1. Maîtrisez la priorité de droite",
+                "p": "En Belgique, à tout carrefour sans signalisation, vous cédez le passage à qui vient de droite. Apprenez aussi les exceptions : les trams passent toujours en premier, un losange jaune vous donne la priorité, un triangle pointe en bas ou un STOP vous l'enlève, et un conducteur déjà sur un rond-point ou qui sort d'une rue en sens interdit n'a pas la priorité de droite.",
+            },
+            {
+                "h3": "2. Connaissez les limites de votre région",
+                "p": "Les questions de vitesse sont des fautes graves à cinq points. Connaissez les limites par défaut (30 en agglomération à Bruxelles, 50 en agglomération en Wallonie et en Flandre, 90 hors agglomération en Wallonie, 70 en Flandre et à Bruxelles, 120 sur autoroute) et les zones : zone 30, 20 en zone résidentielle, allure du pas en zone piétonne et en rue scolaire.",
+            },
+            {
+                "h3": "3. Apprenez les distances comme une liste",
+                "p": "Beaucoup d'erreurs portent sur des chiffres : pas d'arrêt à moins de 5 m avant un passage pour piétons ou le bord d'une chaussée transversale, 20 m avant des feux, 15 m de part et d'autre d'un arrêt de bus, 1 m entre voitures en stationnement, 3 m de chaussée libre, et au moins 1 m (1,5 m hors agglomération) quand vous dépassez un cycliste.",
+            },
+            {
+                "h3": "4. Visez 46 ou plus",
+                "p": "Deux fautes graves vous font échouer même si tout le reste est juste : visez donc 46 ou plus à chaque examen blanc. Tigertest suit votre score par thème : refaites les questions manquées, reprenez la série la plus faible et passez les quatre examens blancs à la suite avant le jour de l'examen.",
+            },
+        ],
+    },
+    "faqTitle": "Questions fréquentes sur l'examen théorique du permis B",
+    "faqs": [
+        {
+            "q": "Comment se déroule l'examen théorique du permis B ?",
+            "a": "Vous répondez à 50 questions à choix multiple sur un écran, dans un centre d'examen agréé en Wallonie, à Bruxelles ou en Flandre. Vous partez de 50 points et il vous en faut au moins 41. Une réponse fausse ou une question sans réponse coûte 1 point, mais une erreur sur une question de faute grave (une infraction du troisième ou du quatrième degré, ou une limite de vitesse) coûte 5 points : deux fautes graves suffisent donc pour échouer. En Flandre, vous avez 15 secondes par question après sa lecture. Vous devez avoir au moins 17 ans, et une réussite reste valable trois ans.",
+        },
+        {
+            "q": "Dans quelle langue puis-je passer l'examen ?",
+            "a": "En Wallonie, l'examen est en français, en allemand à Eupen, et en néerlandais ou en anglais sur rendez-vous dans les centres de Couillet et de Wandre. À Bruxelles, il est en français ou en néerlandais, et le centre peut désigner un interprète pour l'anglais ou l'allemand. En Flandre, il est en néerlandais, et depuis le 1er janvier 2023 vous pouvez y ajouter une traduction audio en français, en allemand ou en anglais : vous entendez chaque question d'abord en néerlandais, puis dans la langue choisie. Tigertest propose cet examen en français, en néerlandais et en anglais.",
+        },
+        {
+            "q": "Les règles sont-elles les mêmes en Wallonie, à Bruxelles et en Flandre ?",
+            "a": "Pour l'essentiel. Le Code de la route est fédéral : la priorité de droite, les signaux, les marquages, le dépassement et le stationnement sont partout les mêmes. Les limites de vitesse diffèrent : en agglomération, la règle est de 30 km/h à Bruxelles et de 50 km/h en Wallonie et en Flandre ; hors agglomération, de 90 km/h en Wallonie et de 70 km/h en Flandre et à Bruxelles. Sur autoroute, c'est 120 km/h partout. À partir du 1er juin 2027, le Code unique serait remplacé par un code fédéral et trois codes régionaux : vérifiez après cette date si quelque chose change. Les questions de vitesse sont des fautes graves, apprenez donc les limites de la région où vous roulez et passez l'examen.",
+        },
+        {
+            "q": "Que se passe-t-il si j'échoue à l'examen théorique ?",
+            "a": "Vous pouvez réessayer, mais pas le même jour. Après deux échecs consécutifs, vous devez d'abord suivre des cours théoriques dans une école de conduite agréée : 12 heures en Flandre et à Bruxelles, et selon les guides 12 heures aussi en Wallonie. La Flandre veut en outre exiger, à partir du 1er janvier 2027, que les candidats à l'examen pratique flamand aient réussi l'examen théorique dans un centre flamand. Le test de perception des risques, avec de courtes vidéos de circulation, est une étape à part : un test séparé en Wallonie, et une partie de l'examen pratique en Flandre et à Bruxelles. Il ne fait pas partie de l'examen théorique et Tigertest ne l'entraîne pas.",
+        },
+        {
+            "q": "S'agit-il des vraies questions d'examen ?",
+            "a": "Non. Chaque question est originale, écrite par Tigertest à partir du Code de la route belge (l'arrêté royal du 1er décembre 1975) et des règles d'alcool de la loi relative à la police de la circulation routière : elle évalue les mêmes connaissances sans reprendre une question officielle. Les signaux sont décrits en mots : regardez donc aussi les images des signaux. Tigertest est un outil d'entraînement gratuit, lié ni au GOCA, ni à un centre d'examen, ni aux autorités wallonnes, bruxelloises ou flamandes, et il ne réserve ni ne remplace votre examen.",
+        },
+        {
+            "q": "Tigertest est-il gratuit ?",
+            "a": "Oui. Les quatre examens blancs et les cinq séries d'entraînement sont gratuits, et vous n'avez pas besoin de compte. Créez un compte gratuit si vous voulez enregistrer votre progression sur votre GSM et votre ordinateur.",
+        },
+    ],
+    "finalCta": {
+        "h2": "Prêt pour votre examen théorique du permis B ?",
+        "p": "Commencez gratuitement, sans compte. 200 questions en français sur le Code de la route belge.",
+    },
+}

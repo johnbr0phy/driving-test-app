@@ -125,7 +125,7 @@ const TEST_REGIONS: Record<string, TestRegion> = {
   phnle: "PH", phmedtech: "PH", phpharm: "PH", phmidwife: "PH", phpsychom: "PH", phnapolcom: "PH", afpsat: "PH", phcle: "PH", phinsurance: "PH", phrebroker: "PH",
   sgftt: "SG", sgrtt: "SG", sgres: "SG", sgm5: "SG", sgvl: "SG", hkiiqe1: "HK", hklesfi1: "HK", aesira: "AE", mypce: "MY", kenck: "KE",
   detheorie: "DE", demotorrad: "DE", deaevo: "DE", de34a: "DE", deheilpr: "DE",
-  esdgt: "ES", escapcond: "ES", espolicia: "ES", esguardia: "ES", esvigilante: "ES", ptimt: "PT", ptmoto: "PT", ptcam: "PT", pttvde: "PT", ptvigil: "PT", rodrpciv: "RO", rocpi: "RO", rotaxi: "RO", roadmed: "RO", rorezid: "RO", setrafik: "SE", semoto: "SE", sejakt: "SE", semedb: "SE", sehp: "SE", grdriving: "GR", grmoto: "GR", grcitizen: "GR", grsecurity: "GR", dkteori: "DK", dkmoto: "DK", dkindfoed: "DK", dkmedborger: "DK", dkjagt: "DK", hukresz: "HU", hukreszmoto: "HU", hugki: "HU", huelsoseg: "HU", hubizt: "HU", bedriving: "BE", fitheory: "FI", fimoto: "FI", fitruck: "FI", fihygiene: "FI", fihunt: "FI", mttheory: "MT", mtmoto: "MT", mtcpc: "MT", mttaxi: "MT", mtguard: "MT",
+  esdgt: "ES", escapcond: "ES", espolicia: "ES", esguardia: "ES", esvigilante: "ES", ptimt: "PT", ptmoto: "PT", ptcam: "PT", pttvde: "PT", ptvigil: "PT", rodrpciv: "RO", rocpi: "RO", rotaxi: "RO", roadmed: "RO", rorezid: "RO", setrafik: "SE", semoto: "SE", sejakt: "SE", semedb: "SE", sehp: "SE", grdriving: "GR", grmoto: "GR", grcitizen: "GR", grsecurity: "GR", dkteori: "DK", dkmoto: "DK", dkindfoed: "DK", dkmedborger: "DK", dkjagt: "DK", hukresz: "HU", hukreszmoto: "HU", hugki: "HU", huelsoseg: "HU", hubizt: "HU", bedriving: "BE", bemoto: "BE", bevracht: "BE", betoelating: "BE", befsmavz: "BE", fitheory: "FI", fimoto: "FI", fitruck: "FI", fihygiene: "FI", fihunt: "FI", mttheory: "MT", mtmoto: "MT", mtcpc: "MT", mttaxi: "MT", mtguard: "MT",
   jambeng: "NG", jambmath: "NG", jambbio: "NG", jambchem: "NG", jambphys: "NG",
   ngpolice: "NG", cdcfib: "NG", ngarmy: "NG", ngcustoms: "NG", trcnpqe: "NG",
   inrto: "IN", ssccgl: "IN", rrbntpc: "IN", ibpspo: "IN", ctet: "IN",
@@ -149,6 +149,7 @@ export const NON_DRIVING_TESTS = new Set([
   "huelsoseg", "hubizt",
   "rotaxi", "roadmed", "rorezid",
   "grcitizen", "grsecurity",
+  "betoelating", "befsmavz",
   "dkindfoed", "dkmedborger", "dkjagt",
   "timestables", "ks2", "gcsemaths", "uksia", "uk18ed",
   "gcsehigher", "gcsescience", "gcsecs", "elevenplus", "fsmaths", "cscs", "ukfood", "ukaplh", "ukfaw", "ukcare", "uklitu", "uknmc", "ukseru", "aatl2", "cemap",
@@ -374,15 +375,16 @@ export const REGION_HOME: Record<Exclude<Region, "US">, {
     testsSub: "KRESZ teszt a B kategóriához: 200 kérdés a magyar KRESZ alapján, km/h-ban, jobb oldali közlekedésre, három 55 kérdéses teszt; az igazi vizsgán a 75 pontból 65 kell. Ezenkívül a motoros (AM, A1, A2, A) és a GKI elméleti vizsga angolul, az elsősegély vizsga és a biztosításközvetítői vizsga magyarul.",
   },
 
-  // In Dutch (REGIONS[].lang; the test itself is in English), machine-translated, pending native review.
+  // In Dutch (REGIONS[].lang), machine-translated, pending native review.
   BE: {
     title: "Gratis oefenen voor het Belgische theorie-examen | Tigertest",
-    description: "Gratis oefenen voor het Belgische theorie-examen, in het Engels: 200 eigen vragen over de Wegcode met de echte slaaggrens van 41/50, elk antwoord uitgelegd. Geen account nodig.",
-    lead: "Oefen in het Engels voor het theorie-examen rijbewijs B in Vlaanderen, Wallonië en Brussel. Eigen vragen over voorrang van rechts, verkeersborden, snelheidsbeperkingen en parkeren, elk antwoord uitgelegd. Zonder account.",
-    cta: { label: "Theorie-examen", href: "/belgium-driving-theory-test" },
-    testsTitle: "Theorie-examen rijbewijs B",
-    testsSub: "200 vragen in het Engels over de Belgische Wegcode, in km/u en voor rechtsverkeer. Vier volledige toetsen van 50 vragen, 41 om te slagen.",
+    description: "Gratis oefenen voor Belgische examens: het theorie-examen rijbewijs B in het Nederlands, het Frans of het Engels, het motorexamen, theorie vrachtwagen C en vakbekwaamheid, het toelatingsexamen arts en tandarts en het FSMA-examen verzekeringen. Eigen vragen, elk antwoord uitgelegd. Geen account nodig.",
+    lead: "Oefen voor het theorie-examen rijbewijs B in Vlaanderen, Wallonië en Brussel, in het Nederlands, het Frans of het Engels, en voor het motorexamen, het theorie-examen vrachtwagen C, het toelatingsexamen arts en tandarts en het FSMA-examen verzekeringsdistributie. Eigen vragen, elk antwoord uitgelegd. Zonder account.",
+    cta: { label: "Theorie-examen", href: "/nl/theorie-examen-rijbewijs-b-oefenen" },
+    testsTitle: "Oefenexamens voor België",
+    testsSub: "Theorie-examen rijbewijs B: 200 vragen over de Belgische Wegcode, in het Nederlands, het Frans en het Engels, in km/u en voor rechtsverkeer, vier proefexamens van 50 vragen, 41 om te slagen. Daarnaast het motorexamen (A1, A2, A) in het Engels en theorie vrachtwagen C, het toelatingsexamen arts en tandarts en het FSMA-examen verzekeringen in het Nederlands.",
   },
+
 
   // In Finnish (REGIONS[].lang), machine-written, pending native review.
   FI: {

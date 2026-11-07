@@ -1,0 +1,56 @@
+{
+  "landingPath": "/fr/examen-theorique-permis-b",
+  "locale": "fr-BE",
+  "name": "Examen théorique du permis B",
+  "shortName": "Examen théorique B",
+  "examLabel": "L'examen théorique du permis B",
+  "fullName": "Examen théorique belge du permis de conduire B (voiture)",
+  "trainingSets": {
+    "1": {
+      "name": "Signaux de danger et autres signaux",
+      "weightLabel": "11 questions de test sur 50"
+    },
+    "2": {
+      "name": "Priorité, marquages et feux",
+      "weightLabel": "11 questions de test sur 50"
+    },
+    "3": {
+      "name": "Vitesse, dépassement et autoroutes",
+      "weightLabel": "12 questions de test sur 50"
+    },
+    "4": {
+      "name": "Usagers vulnérables et stationnement",
+      "weightLabel": "8 questions de test sur 50"
+    },
+    "5": {
+      "name": "Permis, éclairage et sécurité",
+      "weightLabel": "8 questions de test sur 50"
+    }
+  },
+  "categoryLabels": {
+    "beLicence": "L'examen, le permis et l'aptitude à conduire",
+    "beDanger": "Signaux de danger",
+    "bePriority": "Règles et signaux de priorité",
+    "beSigns": "Signaux d'interdiction, d'obligation et d'indication",
+    "beMarkings": "Marquages routiers et feux de signalisation",
+    "beSpeed": "Limitations de vitesse et zones",
+    "beManoeuvre": "Dépassement, changement de direction et autoroutes",
+    "beParking": "Arrêt et stationnement",
+    "beVulnerable": "Piétons, cyclistes et transports en commun",
+    "beSafety": "Éclairage, ceintures et pannes"
+  },
+  "copy": {
+    "guestPrompt": "pour enregistrer votre progression à l'examen théorique et retrouver chaque question manquée",
+    "trainingHeading": "Entraînez-vous par thème",
+    "trainingSub": "Cinq séries sur le Code de la route belge, que les examens de Wallonie, de Bruxelles et de Flandre évaluent tous. Vous voyez tout de suite si votre réponse est juste, et les questions manquées reviennent jusqu'à ce que vous les maîtrisiez.",
+    "testsHeading": "Examens blancs · 50 questions, 41 pour réussir",
+    "heroSubs": [
+      "Cinq thèmes, quatre examens blancs de 50 questions. La priorité et les signaux pèsent le plus.",
+      "Maîtrisez chaque série, puis passez un examen blanc.",
+      "Vous êtes à mi-chemin. Essayez un examen blanc.",
+      "Revoyez vos erreurs, puis recommencez.",
+      "Tout est fait. Réservez votre examen théorique."
+    ],
+    "sourceLine": "Basé sur le Code de la route belge. Questions originales ; 50 par examen blanc, 41 pour réussir, comme le vrai examen."
+  }
+}

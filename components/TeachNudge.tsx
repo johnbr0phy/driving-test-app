@@ -35,6 +35,8 @@ const TEACHER_LED = new Set([
   "roadmed", "rorezid",
   // Greece: KEMEA-contracted training centres for private security personnel
   "grsecurity",
+  // Belgium: toelatingsexamen preparation courses, insurer and bank academies
+  "betoelating", "befsmavz",
   // Malta: approved taxi training providers and private guard course providers
   "mttaxi", "mtguard",
   // Healthcare programs

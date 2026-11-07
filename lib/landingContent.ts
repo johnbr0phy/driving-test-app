@@ -60,6 +60,11 @@ import hubiztHu from "@/lib/landings/hubizt.hu.json";
 import rodrpcivRo from "@/lib/landings/rodrpciv.ro.json";
 import grdrivingEl from "@/lib/landings/grdriving.el.json";
 import grcitizenEl from "@/lib/landings/grcitizen.el.json";
+import bedrivingNl from "@/lib/landings/bedriving.nl.json";
+import bedrivingFr from "@/lib/landings/bedriving.fr.json";
+import bevrachtNl from "@/lib/landings/bevracht.nl.json";
+import betoelatingNl from "@/lib/landings/betoelating.nl.json";
+import befsmavzNl from "@/lib/landings/befsmavz.nl.json";
 import grsecurityEl from "@/lib/landings/grsecurity.el.json";
 import roadmedRo from "@/lib/landings/roadmed.ro.json";
 import rorezidRo from "@/lib/landings/rorezid.ro.json";
@@ -96,6 +101,11 @@ const LANDINGS: Record<string, TranslatedLandingContent> = {
   "rodrpciv.ro": rodrpcivRo as TranslatedLandingContent,
   "grdriving.el": grdrivingEl as TranslatedLandingContent,
   "grcitizen.el": grcitizenEl as TranslatedLandingContent,
+  "bedriving.nl": bedrivingNl as TranslatedLandingContent,
+  "bedriving.fr": bedrivingFr as TranslatedLandingContent,
+  "bevracht.nl": bevrachtNl as TranslatedLandingContent,
+  "betoelating.nl": betoelatingNl as TranslatedLandingContent,
+  "befsmavz.nl": befsmavzNl as TranslatedLandingContent,
   "grsecurity.el": grsecurityEl as TranslatedLandingContent,
   "roadmed.ro": roadmedRo as TranslatedLandingContent,
   "rorezid.ro": rorezidRo as TranslatedLandingContent,

@@ -200,6 +200,7 @@ import "./nptepta";
 import "./aswbclin";
 import "./phr";
 import "./cisa";
+import "./fortigate";
 import "./cssgb";
 import "./ccs";
 import "./rdexam";

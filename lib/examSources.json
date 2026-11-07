@@ -507,6 +507,11 @@
   "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/121000.pdf",
   "https://www.pearsonvue.com/us/en/fl/insurance.html"
  ],
+ "fortigate": [
+  "https://training.fortinet.com/local/staticpage/view.php?page=fortios_administrator_exam",
+  "https://nseti-pdfs.s3.us-west-2.amazonaws.com/desc/FortiGate_7.6_Administrator_Exam_Description.pdf",
+  "https://training.fortinet.com/local/staticpage/view.php?page=library_fortigate-administrator"
+ ],
  "fsmaths": [
   "https://www.gov.uk/government/publications/functional-skills-subject-content-mathematics/subject-content-functional-skills-maths",
   "https://www.gov.uk/government/publications/a-review-of-the-assessment-of-reformed-functional-skills-qualifications-in-english-and-maths",

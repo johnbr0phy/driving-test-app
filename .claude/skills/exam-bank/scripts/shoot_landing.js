@@ -37,6 +37,8 @@ const HIDE_DEV = "nextjs-portal{display:none!important}";
 
 async function open(browser, theme, opts) {
   const ctx = await browser.newContext({ ...opts, colorScheme: theme });
+  // A local server knows no visitor country, so the cookie banner would cover the shot: preset one.
+  await ctx.addCookies([{ name: "tt-cc", value: "US", url: base }, { name: "tt-consent", value: "denied", url: base }]);
   await ctx.addInitScript(([t, l]) => {
     try {
       localStorage.setItem("tigertest-theme", t);

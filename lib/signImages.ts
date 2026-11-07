@@ -14,7 +14,7 @@ export const SIGN_BY_QUESTION_ID: Record<string, string> = {
   //   U-024 "What does a divided highway sign look like?"
   //   U-026 "What indicates a no U-turn zone?" (answers describe visuals)
   //   U-027 "What does a crosswalk sign look like?"
-  //   U-034 "What indicates a one-way street?" (answers describe visuals)
+  //   U-034 "Which sign shows the direction traffic must travel on a one-way street?" (answers describe visuals)
   //   U-042 "What does a stop ahead sign look like?"
   "U-002": "warning-diamond",
   "U-004": "railroad-crossing-circle",

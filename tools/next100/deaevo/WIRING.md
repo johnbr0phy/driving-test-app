@@ -23,19 +23,19 @@ part: four 50-question tests (half the real 80 at a similar pace) weighted like 
 2023 (HF 1 15 %, HF 2 20 %, HF 3 50 %, HF 4 15 %): per test 8/10/24/8. Single best answer of four,
 equal weight. `passPct: 70` (35 of 50) is Tigertest's target, because the real 50 points are
 earned only on fully correct multi-answer tasks; the landing says so. Training is by
-Handlungsfeld: 5 Übungssets (22001-22005, each at most 60) + 4 Testbögen = 9 dashboard steps.
+Handlungsfeld: 5 Übungssets (26401-26405, each at most 60) + 4 Testbögen = 9 dashboard steps.
 
 ## lib/exams.ts
 
-Add `"deaevo"` to the `ExamId` union. Icon `graduation` already exists. 22001-22005 are free
-(highest existing idBase is 21900, aswbclin). Set ids 22001-22004 share numbers with test ids
+Add `"deaevo"` to the `ExamId` union. Icon `graduation` already exists. 26401-26405 are free
+(highest existing idBase is 21900, aswbclin). Set ids 26401-26404 share numbers with test ids
 like `detheorie` and other topic-set exams.
 
 ```ts
 const deaevo: ExamConfig = {
   id: "deaevo",
   stateCode: "DEAEVO",
-  idBase: 22000,
+  idBase: 26400,
   slug: "/ausbildereignung",
   landingPath: "/de/aevo-pruefung-test",
   name: "AEVO Prüfung Test",
@@ -79,11 +79,11 @@ const deaevo: ExamConfig = {
   // Five sets by Handlungsfeld (HF 3 split in two to stay at most 60), not testSets():
   // 5 + 4 tests = 9 dashboard steps.
   trainingSets: [
-    { setNumber: 1, id: 22001, name: "Handlungsfeld 1: Voraussetzungen prüfen, Ausbildung planen", categories: ["aevoNutzen", "aevoRahmen"], size: 32, weightLabel: "8 von 50 Fragen je Testbogen" },
-    { setNumber: 2, id: 22002, name: "Handlungsfeld 2: Ausbildung vorbereiten, Azubis einstellen", categories: ["aevoPlan", "aevoVertrag", "aevoRechte"], size: 40, weightLabel: "10 von 50 Fragen je Testbogen" },
-    { setNumber: 3, id: 22003, name: "Handlungsfeld 3: Lernen und Methoden", categories: ["aevoLernen", "aevoMethoden"], size: 52, weightLabel: "13 von 50 Fragen je Testbogen" },
-    { setNumber: 4, id: 22004, name: "Handlungsfeld 3: Begleiten und Beurteilen", categories: ["aevoBegleitung", "aevoBeurteilung"], size: 44, weightLabel: "11 von 50 Fragen je Testbogen" },
-    { setNumber: 5, id: 22005, name: "Handlungsfeld 4: Ausbildung abschließen", categories: ["aevoAbschluss"], size: 32, weightLabel: "8 von 50 Fragen je Testbogen" },
+    { setNumber: 1, id: 26401, name: "Handlungsfeld 1: Voraussetzungen prüfen, Ausbildung planen", categories: ["aevoNutzen", "aevoRahmen"], size: 32, weightLabel: "8 von 50 Fragen je Testbogen" },
+    { setNumber: 2, id: 26402, name: "Handlungsfeld 2: Ausbildung vorbereiten, Azubis einstellen", categories: ["aevoPlan", "aevoVertrag", "aevoRechte"], size: 40, weightLabel: "10 von 50 Fragen je Testbogen" },
+    { setNumber: 3, id: 26403, name: "Handlungsfeld 3: Lernen und Methoden", categories: ["aevoLernen", "aevoMethoden"], size: 52, weightLabel: "13 von 50 Fragen je Testbogen" },
+    { setNumber: 4, id: 26404, name: "Handlungsfeld 3: Begleiten und Beurteilen", categories: ["aevoBegleitung", "aevoBeurteilung"], size: 44, weightLabel: "11 von 50 Fragen je Testbogen" },
+    { setNumber: 5, id: 26405, name: "Handlungsfeld 4: Ausbildung abschließen", categories: ["aevoAbschluss"], size: 32, weightLabel: "8 von 50 Fragen je Testbogen" },
   ],
   categoryLabels: {
     aevoNutzen: "Nutzen der Ausbildung und duales System",
@@ -284,13 +284,13 @@ since July 2024; watch the DIHK for a new Aufgabenpool and the BBiG for amendmen
 ## Screenshots
 
 `TranslatedExamLanding` reads `/landing/deaevo-{mobile,desktop}-de.png` (plus `-dark` twins):
-`node .claude/skills/exam-bank/scripts/shoot_landing.js http://localhost:3123 public/landing deaevo:ausbildereignung:22001`
+`node .claude/skills/exam-bank/scripts/shoot_landing.js http://localhost:3123 public/landing deaevo:ausbildereignung:26401`
 then rename to the `-de` names, as for `detheorie`.
 
 ## CLAUDE.md (after the `detheorie` bullet)
 
 ```md
-- **AEVO Prüfung** (`deaevo`, German trainer aptitude exam, Ausbildereignungsprüfung under the Ausbilder-Eignungsverordnung, written part only, Germany's first workplace exam, base language German, `language: "de"`, `locale: "de-DE"`, `review: { de: "model" }`, `/ausbildereignung/*`, landing `/de/aevo-pruefung-test` from `lib/landings/deaevo.de.json`): `data/de-aevo-questions.json` (200 original questions written in German, in "Sie", on the four Handlungsfelder of AEVO § 3 and the BIBB Rahmenplan 2023 (HA 135, course time 15/20/50/15 %): HF 1 Nutzen und duales System 16, Rechtsrahmen und Eignung 16; HF 2 Ausbildungsplan und Kooperation 12, Auswahl und Vertrag 16, Rechte und Jugendarbeitsschutz 12; HF 3 Lernen und Lernziele 28, Methoden und Medien 24, Probezeit, Lernbegleitung und Konflikte 24, Leistungen beurteilen 20; HF 4 Prüfung, Zeugnis und Perspektiven 32), four 50-question tests (IDs 22001-22004, 4/4/3/4/3/7/6/6/5/8 per test, HF 8/10/24/8, no spares) and five German-named sets by Handlungsfeld 22001-22005 (HF 3 in two), 9 dashboard steps, state `DEAEVO`, prefix `DEAEVO-`, 70% pass (35 of 50, Tigertest's target: the real written part, case-based tasks in 3 hours, about 80 programmed tasks at the IHKs with all-or-nothing scoring, passes at 50 of 100 points; AEVO § 4 and IHK guidance). The practical part (presentation or demonstration up to 15 minutes plus Fachgespräch, up to 30) and multi-answer, matching, ordering and number tasks are not modelled. Law as in force November 2026: BBiG Neufassung of 16 April 2025 (Textform contract, digital mobile training, § 15 release also for adults), JArbSchG, BetrVG (JAV, § 78a, § 98), BUrlG, AGG; no Mindestvergütung amounts, fees or chamber dates. Kept clear of `de34a`'s communication items (Schulz von Thun, Ich-Botschaft, aktives Zuhören). Built by `tools/next100/deaevo/build.py`; sources in `tools/next100/deaevo/sources.md`, terms in `glossary.md`. Region DE, hub group "Germany professional and licensing exams", `[data-theme="deaevo"]` warm dark umber (28 20% 28%), borrows the Praxis PLT tiger, teacher-led (AdA courses).
+- **AEVO Prüfung** (`deaevo`, German trainer aptitude exam, Ausbildereignungsprüfung under the Ausbilder-Eignungsverordnung, written part only, Germany's first workplace exam, base language German, `language: "de"`, `locale: "de-DE"`, `review: { de: "model" }`, `/ausbildereignung/*`, landing `/de/aevo-pruefung-test` from `lib/landings/deaevo.de.json`): `data/de-aevo-questions.json` (200 original questions written in German, in "Sie", on the four Handlungsfelder of AEVO § 3 and the BIBB Rahmenplan 2023 (HA 135, course time 15/20/50/15 %): HF 1 Nutzen und duales System 16, Rechtsrahmen und Eignung 16; HF 2 Ausbildungsplan und Kooperation 12, Auswahl und Vertrag 16, Rechte und Jugendarbeitsschutz 12; HF 3 Lernen und Lernziele 28, Methoden und Medien 24, Probezeit, Lernbegleitung und Konflikte 24, Leistungen beurteilen 20; HF 4 Prüfung, Zeugnis und Perspektiven 32), four 50-question tests (IDs 26401-26404, 4/4/3/4/3/7/6/6/5/8 per test, HF 8/10/24/8, no spares) and five German-named sets by Handlungsfeld 26401-26405 (HF 3 in two), 9 dashboard steps, state `DEAEVO`, prefix `DEAEVO-`, 70% pass (35 of 50, Tigertest's target: the real written part, case-based tasks in 3 hours, about 80 programmed tasks at the IHKs with all-or-nothing scoring, passes at 50 of 100 points; AEVO § 4 and IHK guidance). The practical part (presentation or demonstration up to 15 minutes plus Fachgespräch, up to 30) and multi-answer, matching, ordering and number tasks are not modelled. Law as in force November 2026: BBiG Neufassung of 16 April 2025 (Textform contract, digital mobile training, § 15 release also for adults), JArbSchG, BetrVG (JAV, § 78a, § 98), BUrlG, AGG; no Mindestvergütung amounts, fees or chamber dates. Kept clear of `de34a`'s communication items (Schulz von Thun, Ich-Botschaft, aktives Zuhören). Built by `tools/next100/deaevo/build.py`; sources in `tools/next100/deaevo/sources.md`, terms in `glossary.md`. Region DE, hub group "Germany professional and licensing exams", `[data-theme="deaevo"]` warm dark umber (28 20% 28%), borrows the Praxis PLT tiger, teacher-led (AdA courses).
 ```
 
 ## Decisions for the integrator

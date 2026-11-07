@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { FieldValue } from "firebase-admin/firestore";
-import { getAdminDb } from "@/lib/firebase-admin";
+import { getAdminAuth, getAdminDb } from "@/lib/firebase-admin";
 import { ALL_EXAMS } from "@/lib/exams";
 import { EXAMS_V2 } from "@/lib/v2/registry";
 import { isBotRequest } from "@/lib/botUserAgent";
@@ -11,9 +11,27 @@ import { QUESTION_ID_RE, REPORT_REASON_VALUES } from "@/lib/questionQuality";
 // quizzes have their own at /api/quizzes/[code]/report-question). Each report
 // is a doc in questionReports, open until it is fixed or dismissed on the
 // /admin Questions tab; analytics/questionReports keeps the running totals.
+// A signed-in reporter is identified by their ID token (uid and account email);
+// a guest may leave an email of their own. Either lets us reply. Neither is ever
+// sent to the audit (scripts/question-audit.ts reads only reason and note).
 
 const KNOWN = new Set<string>(["dmv", ...ALL_EXAMS.map((e) => e.id), ...EXAMS_V2.map((e) => e.id)]);
 const LANG_RE = /^[a-z]{2}$/;
+const EMAIL_RE = /^[^\s@<>]+@[^\s@<>]+\.[^\s@<>]+$/;
+
+async function reporter(request: NextRequest, typed: unknown): Promise<{ uid: string | null; email: string | null }> {
+  const header = request.headers.get("authorization");
+  if (header?.startsWith("Bearer ")) {
+    try {
+      const token = await getAdminAuth().verifyIdToken(header.slice(7));
+      return { uid: token.uid, email: token.email ?? null };
+    } catch {
+      // Expired or bad token: keep the report, just unattributed.
+    }
+  }
+  const email = typeof typed === "string" ? typed.trim().toLowerCase().slice(0, 200) : "";
+  return { uid: null, email: EMAIL_RE.test(email) ? email : null };
+}
 
 export async function POST(request: NextRequest) {
   if (isBotRequest(request)) return NextResponse.json({ ok: true });
@@ -35,8 +53,11 @@ export async function POST(request: NextRequest) {
   const allowed = await grantAnswers(db, `report:${requestIp(request)}`, 100);
   if (allowed < 100) return NextResponse.json({ ok: true });
 
+  const { uid, email } = await reporter(request, body.email);
   const now = new Date().toISOString();
-  await db.collection("questionReports").add({ examId, questionId, reason, note, lang, page, picked, status: "open", createdAt: now });
+  await db
+    .collection("questionReports")
+    .add({ examId, questionId, reason, note, lang, page, picked, uid, email, status: "open", createdAt: now });
   const inc = FieldValue.increment(1);
   await db.doc("analytics/questionReports").set(
     { total: inc, byReason: { [reason]: inc }, byExam: { [examId]: inc }, daily: { [now.slice(0, 10)]: inc } },

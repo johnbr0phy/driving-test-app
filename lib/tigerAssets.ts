@@ -107,7 +107,7 @@ const BORROWED_SETS: Record<string, string> = {
   cca: "cpc",
   // Next-20 batch B reuses reviewed medical-assisting, dental, insurance, cloud and finance families.
   // Accounting exams share the ledger-and-calculator CPA FAR tiger, not the medical-coding CPC tiger.
-  cma: "ccma", nbdhe: "danb", txadjuster: "pnc", sfadmin: "aws", cfal1: "series7",
+  cma: "ccma", nbdhe: "danb", txadjuster: "pnc", ccaf: "aws", sfadmin: "aws", cfal1: "series7",
   cpaaud: "cpafar", accafa: "cpafar", aatl2: "cpafar",
   // Next-20 batch C reuses the reviewed social-work, cybersecurity, project-management, coding,
   // teaching, insurance and mortgage families. Dietitian and HR exams have their own sets above.

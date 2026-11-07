@@ -396,14 +396,14 @@
   "state": "ALL",
   "questionId": "U-029",
   "category": "roadSigns",
-  "question": "显示T字形的标志表示什么？",
-  "optionA": "前方丁字路口",
-  "optionB": "掉头",
-  "optionC": "禁止直行通过",
-  "optionD": "卡车路线",
+  "question": "黄色菱形标志上有一个黑色T字形。它是什么意思？",
+  "optionA": "前方道路终止，您必须左转或右转",
+  "optionB": "前方有支路汇入，您所在的道路继续延伸",
+  "optionC": "您的车道结束，需并入另一条车道",
+  "optionD": "前方道路禁止车辆直行通过",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "T字形标志警告道路在前方的垂直路口处结束。"
+  "explanation": "T字形警告标志表示您所在的道路在前方与一条横向道路相交后终止。您无法继续直行，因此应减速并准备左转或右转。"
  },
  {
   "type": "Universal",
@@ -466,14 +466,14 @@
   "state": "ALL",
   "questionId": "U-034",
   "category": "roadSigns",
-  "question": "什么表示单行道？",
+  "question": "哪种标志指示单行道上车辆必须行驶的方向？",
   "optionA": "禁止驶入标志",
-  "optionB": "指向一个方向的箭头",
-  "optionC": "带箭头的白色长方形",
-  "optionD": "B和C都对",
-  "correctAnswer": "D",
-  "correctIndex": 3,
-  "explanation": "单行道以白色长方形上的黑色箭头标示行驶方向。"
+  "optionB": "带箭头的黑白长方形 ONE WAY（单行道）标志",
+  "optionC": "带箭头的黄色菱形",
+  "optionD": "带箭头的绿色长方形",
+  "correctAnswer": "B",
+  "correctIndex": 1,
+  "explanation": "ONE WAY（单行道）标志是带箭头的黑白长方形，箭头指示行车方向。横向标志为黑底白箭头，竖向标志为白底黑箭头。"
  },
  {
   "type": "Universal",

@@ -134,7 +134,7 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', '${GA_ID}');
+            if (!window['ga-disable-${GA_ID}']) gtag('config', '${GA_ID}');
           `}
         </Script>
       </body>

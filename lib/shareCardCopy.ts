@@ -189,6 +189,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   cma: { title: "CMA (AAMA) Exam", description: "Review patient intake, infection control, procedures, pharmacology, law and ethics, and billing." },
   nhie: { title: "National Home Inspector Exam", description: "Review roofing, structure, electrical, HVAC, plumbing, fireplaces, reporting and ethics." },
   txadjuster: { title: "Texas All-Lines Adjuster", description: "Review property, auto, liability and workers' comp claims, loss settlement and Texas law." },
+  ccaf: { title: "Claude Certified Architect", description: "Practice agent design, Claude Code configuration, prompts, tools and MCP, and context management." },
   sfadmin: { title: "Salesforce Platform Administrator", description: "Practice users and security, objects, reports, Flow automation, sales and service, and Agentforce." },
   cfal1: { title: "CFA Level I", description: "Practice ethics, quant, financial statement analysis, equity, fixed income and derivatives." },
   cpaaud: { title: "CPA AUD Exam", description: "Review independence, risk assessment, internal control, evidence, sampling and audit reports." },

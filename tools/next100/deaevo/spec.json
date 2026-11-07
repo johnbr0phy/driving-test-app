@@ -1,7 +1,7 @@
 {
   "id": "deaevo",
   "stateCode": "DEAEVO",
-  "idBase": 22000,
+  "idBase": 26400,
   "prefix": "DEAEVO-",
   "slug": "/ausbildereignung",
   "landingPath": "/de/aevo-pruefung-test",
@@ -33,6 +33,6 @@
     {"key": "aevoBeurteilung", "label": "Leistungen beurteilen", "hf": 3, "perTest": 5, "pool": 20, "segment": "BEU"},
     {"key": "aevoAbschluss", "label": "Prüfung, Zeugnis und Perspektiven", "hf": 4, "perTest": 8, "pool": 32, "segment": "ABS"}
   ],
-  "notes": "4 tests x 50 = 200, every item in exactly one test (pools exactly 4x each count). Per test HF1 8, HF2 10, HF3 24, HF4 8 (16/20/48/16 %, the Rahmenplan 2023 split 15/20/50/15). Training: five topic sets 22001-22005 by Handlungsfeld (HF1 32, HF2 40, HF3 Lernen+Methoden 52, HF3 Begleitung+Beurteilung 44, HF4 32) + 4 tests = 9 dashboard steps. passPct 70 = Tigertest's target (35 of 50); the real written part passes at 50 of 100 points, but multi-answer tasks score all or nothing.",
-  "trainingSets": "topic sets 22001-22005, see WIRING.md"
+  "notes": "4 tests x 50 = 200, every item in exactly one test (pools exactly 4x each count). Per test HF1 8, HF2 10, HF3 24, HF4 8 (16/20/48/16 %, the Rahmenplan 2023 split 15/20/50/15). Training: five topic sets 26401-26405 by Handlungsfeld (HF1 32, HF2 40, HF3 Lernen+Methoden 52, HF3 Begleitung+Beurteilung 44, HF4 32) + 4 tests = 9 dashboard steps. passPct 70 = Tigertest's target (35 of 50); the real written part passes at 50 of 100 points, but multi-answer tasks score all or nothing.",
+  "trainingSets": "topic sets 26401-26405, see WIRING.md"
 }

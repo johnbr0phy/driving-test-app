@@ -396,14 +396,14 @@
   "state": "ALL",
   "questionId": "U-029",
   "category": "roadSigns",
-  "question": "T자가 그려진 표지판은 무엇을 나타냅니까?",
-  "optionA": "전방 T자 교차로",
-  "optionB": "되돌아가기",
-  "optionC": "통과 통행 금지",
-  "optionD": "트럭 통행로",
+  "question": "노란색 마름모 표지판에 검은색 T자가 그려져 있습니다. 무슨 뜻입니까?",
+  "optionA": "전방에서 도로가 끝나므로 좌회전 또는 우회전해야 합니다",
+  "optionB": "전방에서 옆길이 합류하며 현재 도로는 계속됩니다",
+  "optionC": "현재 차로가 끝나고 다른 차로로 합류합니다",
+  "optionD": "전방 도로는 통과 통행이 금지됩니다",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "T자 표지판은 전방에서 도로가 직각 교차로로 끝난다는 것을 경고합니다."
+  "explanation": "T자 경고 표지판은 현재 도로가 전방에서 가로지르는 도로와 만나 끝난다는 뜻입니다. 직진할 수 없으므로 속도를 줄이고 좌회전 또는 우회전할 준비를 하세요."
  },
  {
   "type": "Universal",
@@ -466,14 +466,14 @@
   "state": "ALL",
   "questionId": "U-034",
   "category": "roadSigns",
-  "question": "일방통행로를 나타내는 것은 무엇입니까?",
+  "question": "일방통행로에서 차량이 통행해야 하는 방향을 알려 주는 표지판은 무엇입니까?",
   "optionA": "진입 금지 표지판",
-  "optionB": "한 방향을 가리키는 화살표",
-  "optionC": "화살표가 있는 흰색 직사각형",
-  "optionD": "B와 C 둘 다",
-  "correctAnswer": "D",
-  "correctIndex": 3,
-  "explanation": "일방통행로는 통행 방향을 나타내는 흰색 직사각형 위의 검은 화살표로 표시됩니다."
+  "optionB": "화살표가 있는 흑백 직사각형 ONE WAY(일방통행) 표지판",
+  "optionC": "화살표가 있는 노란색 마름모",
+  "optionD": "화살표가 있는 녹색 직사각형",
+  "correctAnswer": "B",
+  "correctIndex": 1,
+  "explanation": "ONE WAY(일방통행) 표지판은 통행 방향을 나타내는 화살표가 있는 흑백 직사각형입니다. 가로형 표지판은 검은 바탕에 흰색 화살표이고, 세로형 표지판은 흰 바탕에 검은색 화살표입니다."
  },
  {
   "type": "Universal",

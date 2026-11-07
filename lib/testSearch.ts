@@ -1,4 +1,5 @@
 import { TEST_CATALOG, TestCatalogEntry, haystack, searchAliases } from "./testCatalog";
+import { EXAM_VARIANTS } from "./exams";
 import { regionOfTest, Region, TestRegion } from "./region";
 import { states } from "@/data/states";
 
@@ -204,17 +205,93 @@ function stateHits(rawTerms: string[]): StateHit[] {
   return hits.slice(0, 4);
 }
 
+// Words a state's driving search needs, for catching one-letter slips ("dmc", "teat").
+const DRIVING_TYPO_TARGETS = ["dmv", "test", "exam", "permit", "license", "licence", "driving", "driver", "practice"];
+
+/**
+ * Fix a one-letter slip in a driving word when the query also names a state:
+ * "california dmc", "ca dmv teat". Words any test uses, and words of a state's
+ * name ("west"), are left alone, so a real word is never rewritten. Returns the
+ * corrected query, or null when there is nothing to correct.
+ */
+function correctDrivingTypos(terms: string[]): string | null {
+  const known = new Set(candidates().flatMap((c) => c.textWords));
+  const stateWords = new Set(states.flatMap((s) => s.name.toLowerCase().split(" ")));
+  const fixed = terms.map((t) => {
+    if (t.length < 3 || known.has(t) || stateWords.has(t) || DRIVING.test(t) || GENERIC.has(t)) return t;
+    return DRIVING_TYPO_TARGETS.find((w) => editDistance(t, w, 1) <= 1) ?? t;
+  });
+  if (fixed.every((t, i) => t === terms[i]) || stateHits(fixed).length === 0) return null;
+  return fixed.join(" ");
+}
+
+// Families sold by state. Each test's state versions live outside the catalog
+// (EXAM_VARIANTS), so a search has to name them to reach them.
+const STATE_FAMILIES: { id: string; pattern: RegExp }[] = [
+  { id: "realestate", pattern: /\breal ?est\w*|\brealtor\b/ },
+  { id: "insurance", pattern: /\binsurance\b|\blife (and |& )?health\b/ },
+  { id: "pnc", pattern: /\bproperty\b.*\bcasualty\b|\bp ?& ?c\b|\bcasualty\b|\binsurance\b/ },
+];
+
+/** Which state-sold families the query is about, however long the sentence around it. */
+function familiesIn(q: string): TestCatalogEntry[] {
+  // "insurance" alone means both lines; "life" or "home" picks one.
+  const line = /\b(life|health)\b/.test(q) ? "insurance" : /\b(property|casualty|p ?& ?c|auto|home)\b/.test(q) ? "pnc" : null;
+  return STATE_FAMILIES.filter((f) => f.pattern.test(q) && (!line || f.id === line || f.id === "realestate"))
+    .map((f) => TEST_CATALOG.find((t) => t.id === f.id))
+    .filter((t): t is TestCatalogEntry => Boolean(t));
+}
+
+/**
+ * The state a family search names. Full names match anywhere, longest first
+ * ("west virginia" before "virginia"). A two-letter code only counts when it is
+ * all that is left of the query, since "in", "or" and "me" are ordinary words.
+ */
+function familyState(q: string, family: RegExp): { code: string; name: string } | null {
+  const named = [...states]
+    .sort((a, b) => b.name.length - a.name.length)
+    .find((s) => new RegExp(`\\b${s.name.toLowerCase()}\\b`).test(q));
+  if (named) return { code: named.code, name: named.name };
+  const rest = words(q.replace(family, " ")).filter((t) => !GENERIC.has(t) && !/^(life|health|insurance|property|casualty|and|p|c)$/.test(t));
+  // "real estate in" is someone still typing, not Indiana.
+  if (rest.length !== 1 || rest[0].length !== 2 || rest[0] === "in") return null;
+  const coded = states.find((s) => s.code.toLowerCase() === rest[0]);
+  return coded ? { code: coded.code, name: coded.name } : null;
+}
+
+/** "louisiana real estate" opens that state's version; a state we lack still reaches the national test. */
+function familySearch(q: string, families: TestCatalogEntry[]): SearchResult | null {
+  const pattern = new RegExp(STATE_FAMILIES.filter((f) => families.some((t) => t.id === f.id)).map((f) => f.pattern.source).join("|"), "g");
+  const state = familyState(q, pattern);
+  if (!state) return null;
+  const hits: SearchHit[] = families.flatMap((test) => {
+    const version = EXAM_VARIANTS.find((v) => v.variantOf === test.id && v.jurisdiction?.code === state.code);
+    return version
+      ? [{ key: version.id, test, title: version.name, subtitle: test.org, href: `${version.slug}/dashboard`, region: regionOfTest(test.id) }]
+      : [];
+  });
+  if (hits.length > 0) return { hits, fuzzy: false };
+  return { hits: families.map(testHit), fuzzy: true, partial: true };
+}
+
 /**
  * Search every test in every country. Ranking: how well the terms match the
  * test's name, then the visitor's own country, then worldwide tests, then
  * this week's popularity (`popularity`, test id to answers).
  */
 export function searchAllTests(query: string, region: Region, popularity: Record<string, number> = {}): SearchResult {
-  const q = normalizeQuery(query);
+  // "realestate" is how people type it; every test writes "real estate".
+  const q = normalizeQuery(query).replace(/\brealestate\b/g, "real estate");
   const allTerms = words(q.replace(/'s\b/g, "")).map((t) => SYNONYMS[t] ?? t);
   if (allTerms.length === 0) return { hits: [], fuzzy: false };
   const specific = allTerms.filter((t) => !GENERIC.has(t));
   const terms = specific.length > 0 ? specific : allTerms;
+
+  const families = familiesIn(q);
+  if (families.length > 0) {
+    const found = familySearch(q, families);
+    if (found) return found;
+  }
 
   const regionRank = (r: TestRegion) => (r === region ? 0 : r === "GLOBAL" ? 1 : 2);
 
@@ -266,6 +343,10 @@ export function searchAllTests(query: string, region: Region, popularity: Record
     return { hits: [...lead, ...stateMatches.map((m) => m.hit), ...tests].slice(0, MAX_HITS), fuzzy: false };
   }
 
+  // "california dmc": a slip in a driving word next to a state.
+  const corrected = correctDrivingTypos(allTerms);
+  if (corrected) return { ...searchAllTests(corrected, region, popularity), fuzzy: true };
+
   // Nothing exact: allow a typo or two per word ("cdl permitt", "nclx").
   const fuzzy = candidates()
     .map((c) => {
@@ -280,6 +361,9 @@ export function searchAllTests(query: string, region: Region, popularity: Record
     })
     .filter((x): x is { c: Candidate; score: number } => x !== null);
   if (fuzzy.length > 0 || terms.length < 2) return { hits: rank(fuzzy).slice(0, MAX_HITS), fuzzy: fuzzy.length > 0 };
+
+  // A whole sentence about a state-sold test ("i am taking my real estate exam, how do i..."): that test.
+  if (families.length > 0) return { hits: families.map(testHit), fuzzy: true };
 
   // Several words and no test has them all ("cdl permit"): the tests with the most of them.
   const best = candidates()

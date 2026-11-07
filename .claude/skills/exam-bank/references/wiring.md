@@ -94,6 +94,9 @@ Launched, four study tips, five FAQs whose JSX text matches the JSON-LD text exa
 Alongside the landing:
 - `lib/examFacts.ts`: an entry for `<id>` (plain answer, facts table, official source, dated).
 - `lib/seoDates.ts`: bump `EXAM_LANDINGS_UPDATED_AT` with a comment naming the new exam.
+- `tools/<batch>/<id>/sources.md`: official URLs, the pages to watch first. Then run
+  `python3 -I tools/build_exam_sources.py`, which generates `lib/examSources.json`. Never edit that
+  file by hand: the "Question banks" check fails if it is stale.
 - Teacher-led exams (taught in a program or class: healthcare, school, military): add `<id>` to
   `TEACHER_LED` in `components/TeachNudge.tsx` and a line to `TEACHES` in
   `components/exam/ExamClassFaq.tsx`.

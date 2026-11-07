@@ -21,10 +21,13 @@ export const COUNTRY_COOKIE = "tt-cc";
 export const CONSENT_COOKIE = "tt-consent";
 export const CONSENT_COOKIE_MAX_AGE = 60 * 60 * 24 * 365;
 
-/** EU and EEA members, the UK and Switzerland. */
+/**
+ * EU and EEA members, the UK and Switzerland, plus "ZZ" (country unknown,
+ * from /api/geo), which could be any of them, so it gets the same opt-in.
+ */
 export const COOKIE_CONSENT_COUNTRIES = [
   "AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU",
-  "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH",
+  "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH", "ZZ",
 ];
 
 /** Where marketing email needs an unticked, explicit opt-in. */

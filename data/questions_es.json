@@ -396,14 +396,14 @@
     "state": "ALL",
     "questionId": "U-029",
     "category": "roadSigns",
-    "question": "¿Qué indica una señal que muestra una T?",
-    "optionA": "Intersección en T adelante",
-    "optionB": "Dar la vuelta",
-    "optionC": "No hay paso",
-    "optionD": "Ruta de camiones",
+    "question": "Una señal amarilla en forma de rombo muestra una T negra. ¿Qué significa?",
+    "optionA": "El camino termina adelante, así que debe girar a la izquierda o a la derecha",
+    "optionB": "Un camino lateral se une adelante y su camino continúa",
+    "optionC": "Su carril termina y se une a otro carril",
+    "optionD": "El camino adelante está cerrado al tránsito directo",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Una señal de T advierte que el camino termina adelante en una intersección perpendicular."
+    "explanation": "Una señal de advertencia en forma de T significa que su camino termina adelante en un camino transversal. No puede seguir de frente, así que reduzca la velocidad y prepárese para girar a la izquierda o a la derecha."
   },
   {
     "type": "Universal",
@@ -466,14 +466,14 @@
     "state": "ALL",
     "questionId": "U-034",
     "category": "roadSigns",
-    "question": "¿Qué indica una calle de un solo sentido?",
+    "question": "¿Qué señal muestra la dirección en la que debe circular el tráfico en una calle de un solo sentido?",
     "optionA": "Señal de no entrar",
-    "optionB": "Flecha apuntando en una dirección",
-    "optionC": "Rectángulo blanco con flecha",
-    "optionD": "B y C",
-    "correctAnswer": "D",
-    "correctIndex": 3,
-    "explanation": "Las calles de un solo sentido se marcan con flechas negras en rectángulos blancos que muestran la dirección del tráfico."
+    "optionB": "Señal rectangular en blanco y negro de ONE WAY (un solo sentido) con una flecha",
+    "optionC": "Rombo amarillo con una flecha",
+    "optionD": "Rectángulo verde con una flecha",
+    "correctAnswer": "B",
+    "correctIndex": 1,
+    "explanation": "Las señales de ONE WAY (un solo sentido) son rectángulos en blanco y negro con una flecha que indica la dirección del tráfico. La flecha es blanca sobre negro en la señal horizontal y negra sobre blanco en la vertical."
   },
   {
     "type": "Universal",

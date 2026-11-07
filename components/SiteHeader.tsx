@@ -111,7 +111,10 @@ function HeaderBar({ path, themePath, examId, v2Id }: { path: string; themePath:
     ? (Object.entries(exam.translations ?? {}).find(([, tr]) => tr?.landingPath === path)?.[0] as Language | undefined)
     : undefined;
   const { lang: testLang } = useTestLanguage(exam?.id ?? "", exam ? examLanguages(exam) : ["en"], exam ? examBaseLanguage(exam) : "en");
-  const t = exam ? createT(landingLang ?? testLang) : pageT;
+  // Only on the exam's own pages: a neutral page (/settings) wears the
+  // current test's header but keeps the page's language.
+  const onExamPage = !!exam && getExamByPath(path)?.id === exam.id;
+  const t = onExamPage ? createT(landingLang ?? testLang) : pageT;
   const searchHome = SEARCH_HOMES.has(path);
   const onTeach = path === "/teach" || path.startsWith("/teach/");
 

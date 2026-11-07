@@ -276,7 +276,7 @@ export const sv: TranslationKeys = {
     debriefPassSubClean: "Rent genomförande. Fortsätt öva så att det sitter till provdagen.",
     meterBuilding: "På gång",
     meterClose: "Nära",
-    meterReady: "Redo · 70 %+",
+    meterReady: "Redo · {{pct}} %+",
     chipCorrect: "{{score}}/{{total}} rätt",
     chipVsFirst: "+{{n}} jämfört med första försöket",
     chipBest: "Bästa: {{pct}} %",

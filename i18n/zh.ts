@@ -2496,7 +2496,7 @@ export const zh: TranslationKeys = {
     debriefPassSubClean: "表现很稳。继续练习，保持手感直到正式考试。",
     meterBuilding: "积累中",
     meterClose: "接近",
-    meterReady: "准备就绪 · 70%+",
+    meterReady: "准备就绪 · {{pct}}%+",
     chipCorrect: "答对 {{score}}/{{total}}",
     chipVsFirst: "比第一次 +{{n}}",
     chipBest: "最佳：{{pct}}%",

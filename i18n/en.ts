@@ -2594,7 +2594,7 @@ export const en = {
     debriefPassSubClean: "Clean run. Keep the reps up so it stays sharp for the real thing.",
     meterBuilding: "Building",
     meterClose: "Close",
-    meterReady: "Ready · 70%+",
+    meterReady: "Ready · {{pct}}%+",
     chipCorrect: "{{score}}/{{total}} correct",
     chipVsFirst: "+{{n}} vs first try",
     chipBest: "Best: {{pct}}%",

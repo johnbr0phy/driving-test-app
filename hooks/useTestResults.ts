@@ -71,7 +71,11 @@ export function useTestResults(testId: number, routes: ExamRoutes = DMV_ROUTES) 
 
   const totalQuestions = questions.length;
   const percentage = totalQuestions > 0 ? Math.round((score / totalQuestions) * 100) : 0;
-  const passed = percentage >= 70;
+  // The exam's own pass mark, the same rule its dashboard uses to turn a
+  // test green (DMV 40 of 50, a registry exam's passPct).
+  const passPct = routes.chartPassPct;
+  const passScore = Math.ceil((totalQuestions * passPct) / 100);
+  const passed = score >= passScore;
   const stateName =
     routes.examLabel ?? (states.find((s) => s.code === testSession.state)?.name || testSession.state);
 
@@ -109,6 +113,8 @@ export function useTestResults(testId: number, routes: ExamRoutes = DMV_ROUTES) 
     totalQuestions,
     percentage,
     passed,
+    passPct,
+    passScore,
     stateName,
     attemptStats,
     firstScore,

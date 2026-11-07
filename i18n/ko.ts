@@ -2496,7 +2496,7 @@ export const ko: TranslationKeys = {
     debriefPassSubClean: "깔끔한 결과예요. 실전까지 감각이 유지되도록 꾸준히 연습하세요.",
     meterBuilding: "쌓는 중",
     meterClose: "거의 도달",
-    meterReady: "준비 완료 · 70% 이상",
+    meterReady: "준비 완료 · {{pct}}% 이상",
     chipCorrect: "{{score}}/{{total}} 정답",
     chipVsFirst: "첫 응시 대비 +{{n}}",
     chipBest: "최고: {{pct}}%",

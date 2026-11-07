@@ -2494,7 +2494,7 @@ export const vi: TranslationKeys = {
     debriefPassSubClean: "Một lượt hoàn hảo. Cứ luyện đều để giữ phong độ cho kỳ thi thật.",
     meterBuilding: "Đang xây dựng",
     meterClose: "Sắp tới",
-    meterReady: "Sẵn sàng · 70%+",
+    meterReady: "Sẵn sàng · {{pct}}%+",
     chipCorrect: "{{score}}/{{total}} câu đúng",
     chipVsFirst: "+{{n}} so với lần đầu",
     chipBest: "Cao nhất: {{pct}}%",

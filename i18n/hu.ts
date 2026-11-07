@@ -276,7 +276,7 @@ export const hu: TranslationKeys = {
     debriefPassSubClean: "Tiszta kör. Gyakorolj tovább, hogy a vizsgáig megmaradjon.",
     meterBuilding: "Alakul",
     meterClose: "Közel vagy",
-    meterReady: "Kész · 70%+",
+    meterReady: "Kész · {{pct}}%+",
     chipCorrect: "{{score}}/{{total}} helyes",
     chipVsFirst: "+{{n}} az első próbálkozáshoz képest",
     chipBest: "Legjobb: {{pct}}%",

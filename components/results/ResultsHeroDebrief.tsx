@@ -40,6 +40,8 @@ export function ResultsHeroDebrief({
     totalQuestions,
     percentage,
     passed,
+    passPct,
+    passScore,
     testSession,
     attemptNumber,
     improvement,
@@ -66,9 +68,10 @@ export function ResultsHeroDebrief({
   const progressLabel = { en: "See your progress", es: "Ver tu progreso", vi: "Xem tiến độ của bạn", ko: "내 진행 상황 보기", zh: "查看你的进步", de: "Fortschritt ansehen", fr: "Voir votre progression", it: "Vedi i tuoi progressi", pl: "Zobacz postępy", nl: "Bekijk je voortgang", pt: "Ver o progresso", sv: "Se dina framsteg", da: "Se dit fremskridt", fi: "Katso edistymisesi", hu: "Haladásod megtekintése", ro: "Vezi progresul tău", el: "Δες την πρόοδό σου" }[language];
   const completedLabel = { en: "Practice test complete", es: "Prueba de práctica completada", vi: "Hoàn thành bài thi thử", ko: "모의시험 완료", zh: "模拟考试完成", de: "Übungstest geschafft", fr: "Test d'entraînement terminé", it: "Test di esercitazione completato", pl: "Test próbny ukończony", nl: "Oefentoets klaar", pt: "Teste de treino concluído", sv: "Övningsprovet är klart", da: "Øvelsesprøve klaret", fi: "Harjoituskoe tehty", hu: "Gyakorló teszt kész", ro: "Test de exersare terminat", el: "Το τεστ εξάσκησης ολοκληρώθηκε" }[language];
 
-  const passThreshold = Math.ceil(totalQuestions * 0.7);
-  const answersFromPass = Math.max(passThreshold - score, 1);
+  const answersFromPass = Math.max(passScore - score, 1);
   const missCount = totalQuestions - score;
+  // The amber band: the last 15 points before the pass mark.
+  const closeAt = Math.max(passPct - 15, 0);
   const isBaseline = !passed && attemptNumber === 1;
 
   // Coach line + supporting sentence, picked from what the data supports.
@@ -187,11 +190,11 @@ export function ResultsHeroDebrief({
           <div className="mt-10">
             <div className="relative">
               <div className="flex h-2.5 rounded-full overflow-hidden">
-                <div className="w-[55%] bg-red-100 dark:bg-red-900" />
-                <div className="w-[15%] bg-amber-100 dark:bg-amber-900" />
-                <div className="w-[30%] bg-green-100 dark:bg-green-900" />
+                <div className="bg-red-100 dark:bg-red-900" style={{ width: `${closeAt}%` }} />
+                <div className="bg-amber-100 dark:bg-amber-900" style={{ width: `${passPct - closeAt}%` }} />
+                <div className="bg-green-100 dark:bg-green-900" style={{ width: `${100 - passPct}%` }} />
               </div>
-              <div className="absolute left-[70%] top-2.5 w-px h-2.5 bg-gray-300 dark:bg-gray-600" />
+              <div className="absolute top-2.5 w-px h-2.5 bg-gray-300 dark:bg-gray-600" style={{ left: `${passPct}%` }} />
               <div
                 className="absolute -top-7 flex flex-col items-center -translate-x-1/2"
                 style={{ left: `${Math.min(Math.max(percentage, 4), 96)}%` }}
@@ -205,7 +208,7 @@ export function ResultsHeroDebrief({
             <div className="flex justify-between text-[9px] uppercase tracking-wider text-gray-500 dark:text-gray-400 mt-1.5">
               <span>{t("results.meterBuilding")}</span>
               <span className="pl-8">{t("results.meterClose")}</span>
-              <span>{t("results.meterReady")}</span>
+              <span>{t("results.meterReady").replace("{{pct}}", String(passPct))}</span>
             </div>
           </div>
         </div>

@@ -276,7 +276,7 @@ export const fr: TranslationKeys = {
     debriefPassSubClean: "Sans accroc. Continuez à pratiquer pour rester au point le jour J.",
     meterBuilding: "En progrès",
     meterClose: "Presque",
-    meterReady: "Prêt · 70 %+",
+    meterReady: "Prêt · {{pct}} %+",
     chipCorrect: "{{score}}/{{total}} justes",
     chipVsFirst: "+{{n}} par rapport au premier essai",
     chipBest: "Meilleur : {{pct}} %",

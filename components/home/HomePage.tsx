@@ -296,7 +296,8 @@ export async function HomePage({ region, lang: pickedLang }: { region: Region; l
           </div>
           {totalAnswered !== null && totalAnswered > 0 && (
             <p className="mt-6 text-sm text-gray-500 dark:text-gray-400">
-              <CountUp value={totalAnswered} className="font-semibold text-gray-900 dark:text-gray-50" /> {c.answeredThisWeek}
+              <CountUp value={totalAnswered} className="font-semibold text-gray-900 dark:text-gray-50" />
+              <span className="ml-1">{c.answeredThisWeek}</span>
             </p>
           )}
         </div>

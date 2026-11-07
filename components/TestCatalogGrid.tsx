@@ -75,7 +75,8 @@ export function TestCard({ test, answered, headingLevel = 3, lang = "en" }: { te
 
           {answered ? (
             <p className="mt-4 border-t border-gray-200 dark:border-gray-800 pt-3 text-center text-xs text-gray-500 dark:text-gray-400">
-              <CountUp value={answered} className="text-sm font-semibold text-gray-900 dark:text-gray-50" /> {c.answeredThisWeek}
+              <CountUp value={answered} className="text-sm font-semibold text-gray-900 dark:text-gray-50" />
+              <span className="ml-1">{c.answeredThisWeek}</span>
             </p>
           ) : null}
         </div>

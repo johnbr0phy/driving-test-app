@@ -466,14 +466,14 @@
     "state": "ALL",
     "questionId": "U-034",
     "category": "roadSigns",
-    "question": "¿Qué indica una calle de un solo sentido?",
+    "question": "¿Qué señal muestra la dirección en la que debe circular el tráfico en una calle de un solo sentido?",
     "optionA": "Señal de no entrar",
-    "optionB": "Flecha apuntando en una dirección",
-    "optionC": "Rectángulo blanco con flecha",
-    "optionD": "B y C",
-    "correctAnswer": "D",
-    "correctIndex": 3,
-    "explanation": "Las calles de un solo sentido se marcan con flechas negras en rectángulos blancos que muestran la dirección del tráfico."
+    "optionB": "Señal rectangular en blanco y negro de ONE WAY (un solo sentido) con una flecha",
+    "optionC": "Rombo amarillo con una flecha",
+    "optionD": "Rectángulo verde con una flecha",
+    "correctAnswer": "B",
+    "correctIndex": 1,
+    "explanation": "Las señales de ONE WAY (un solo sentido) son rectángulos en blanco y negro con una flecha que indica la dirección del tráfico. La flecha es blanca sobre negro en la señal horizontal y negra sobre blanco en la vertical."
   },
   {
     "type": "Universal",

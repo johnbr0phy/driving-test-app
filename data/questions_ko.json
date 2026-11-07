@@ -466,14 +466,14 @@
   "state": "ALL",
   "questionId": "U-034",
   "category": "roadSigns",
-  "question": "일방통행로를 나타내는 것은 무엇입니까?",
+  "question": "일방통행로에서 차량이 통행해야 하는 방향을 알려 주는 표지판은 무엇입니까?",
   "optionA": "진입 금지 표지판",
-  "optionB": "한 방향을 가리키는 화살표",
-  "optionC": "화살표가 있는 흰색 직사각형",
-  "optionD": "B와 C 둘 다",
-  "correctAnswer": "D",
-  "correctIndex": 3,
-  "explanation": "일방통행로는 통행 방향을 나타내는 흰색 직사각형 위의 검은 화살표로 표시됩니다."
+  "optionB": "화살표가 있는 흑백 직사각형 ONE WAY(일방통행) 표지판",
+  "optionC": "화살표가 있는 노란색 마름모",
+  "optionD": "화살표가 있는 녹색 직사각형",
+  "correctAnswer": "B",
+  "correctIndex": 1,
+  "explanation": "ONE WAY(일방통행) 표지판은 통행 방향을 나타내는 화살표가 있는 흑백 직사각형입니다. 가로형 표지판은 검은 바탕에 흰색 화살표이고, 세로형 표지판은 흰 바탕에 검은색 화살표입니다."
  },
  {
   "type": "Universal",

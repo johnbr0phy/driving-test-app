@@ -1,0 +1,41 @@
+{
+  "landingPath": "/nl/theorie-examen-rijbewijs-b-oefenen",
+  "locale": "nl-BE",
+  "name": "Theorie-examen rijbewijs B",
+  "shortName": "Theorie-examen B",
+  "examLabel": "Het theorie-examen rijbewijs B",
+  "fullName": "Belgisch theorie-examen voor het rijbewijs B (personenwagen)",
+  "trainingSets": {
+    "1": { "name": "Gevaarsborden en andere verkeersborden", "weightLabel": "11 van 50 testvragen" },
+    "2": { "name": "Voorrang, markeringen en verkeerslichten", "weightLabel": "11 van 50 testvragen" },
+    "3": { "name": "Snelheid, inhalen en autosnelwegen", "weightLabel": "12 van 50 testvragen" },
+    "4": { "name": "Zwakke weggebruikers en parkeren", "weightLabel": "8 van 50 testvragen" },
+    "5": { "name": "Rijbewijs, verlichting en veiligheid", "weightLabel": "8 van 50 testvragen" }
+  },
+  "categoryLabels": {
+    "beLicence": "Het examen, het rijbewijs en rijgeschiktheid",
+    "beDanger": "Gevaarsborden",
+    "bePriority": "Voorrangsregels en voorrangsborden",
+    "beSigns": "Verbods-, gebods- en aanwijzingsborden",
+    "beMarkings": "Wegmarkeringen en verkeerslichten",
+    "beSpeed": "Snelheidsbeperkingen en zones",
+    "beManoeuvre": "Inhalen, afslaan en autosnelwegen",
+    "beParking": "Stilstaan en parkeren",
+    "beVulnerable": "Voetgangers, fietsers en openbaar vervoer",
+    "beSafety": "Verlichting, gordels en pech"
+  },
+  "copy": {
+    "guestPrompt": "om je vooruitgang voor het theorie-examen te bewaren en elke fout beantwoorde vraag te zien",
+    "trainingHeading": "Oefen per thema",
+    "trainingSub": "Vijf reeksen over de Belgische Wegcode die de examens in Vlaanderen, Wallonië en Brussel allemaal toetsen. Je ziet meteen of je antwoord juist is, en vragen die je fout hebt, komen terug tot je ze beheerst.",
+    "testsHeading": "Proefexamens · 50 vragen, 41 om te slagen",
+    "heroSubs": [
+      "Vijf thema's, vier proefexamens van 50 vragen. Voorrang en borden wegen het zwaarst.",
+      "Beheers elke reeks en doe dan een proefexamen.",
+      "Je bent halfweg. Probeer een proefexamen.",
+      "Werk je fouten weg en doe het opnieuw.",
+      "Helemaal klaar. Boek je theorie-examen."
+    ],
+    "sourceLine": "Gebaseerd op de Belgische Wegcode. Eigen vragen; 50 per proefexamen, 41 om te slagen, zoals het echte examen."
+  }
+}

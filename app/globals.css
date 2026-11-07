@@ -2341,6 +2341,62 @@
     --brand-gradient-to: 45 85% 95%;
   }
 
+  /* Belgium motorcycle theory theme */
+  [data-theme="bemoto"] {
+    --brand: 21 65% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 21 60% 95%;
+    --brand-hover: 21 65% 18%;
+    --brand-dark: 21 65% 16%;
+    --brand-darker: 21 60% 11%;
+    --brand-muted: 21 30% 66%;
+    --brand-border: 21 35% 78%;
+    --brand-border-light: 21 35% 88%;
+    --brand-gradient-to: 28 60% 95%;
+  }
+
+  /* Belgium truck licence C/CE theory and vakbekwaamheid theme */
+  [data-theme="bevracht"] {
+    --brand: 214 25% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 214 30% 96%;
+    --brand-hover: 214 25% 14%;
+    --brand-dark: 214 25% 12%;
+    --brand-darker: 214 25% 8%;
+    --brand-muted: 214 20% 62%;
+    --brand-border: 214 25% 78%;
+    --brand-border-light: 214 30% 88%;
+    --brand-gradient-to: 214 30% 93%;
+  }
+
+  /* Flemish medical and dental admission exam theme */
+  [data-theme="betoelating"] {
+    --brand: 202 100% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 202 80% 96%;
+    --brand-hover: 202 100% 14%;
+    --brand-dark: 202 100% 12%;
+    --brand-darker: 202 100% 8%;
+    --brand-muted: 202 40% 62%;
+    --brand-border: 202 50% 78%;
+    --brand-border-light: 202 60% 88%;
+    --brand-gradient-to: 202 85% 92%;
+  }
+
+  /* Belgium FSMA insurance distribution exam theme */
+  [data-theme="befsmavz"] {
+    --brand: 345 90% 20%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 345 70% 96%;
+    --brand-hover: 345 90% 16%;
+    --brand-dark: 345 90% 14%;
+    --brand-darker: 345 90% 10%;
+    --brand-muted: 345 35% 60%;
+    --brand-border: 345 45% 80%;
+    --brand-border-light: 345 55% 90%;
+    --brand-gradient-to: 345 80% 93%;
+  }
+
   /* Denmark driving theory test theme */
   [data-theme="dkteori"] {
     --brand: 348 70% 30%;
@@ -2353,6 +2409,62 @@
     --brand-border: 348 40% 82%;
     --brand-border-light: 348 40% 90%;
     --brand-gradient-to: 10 60% 96%;
+  }
+
+  /* Denmark motorcycle theory test theme */
+  [data-theme="dkmoto"] {
+    --brand: 12 85% 24%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 12 70% 96%;
+    --brand-hover: 12 85% 20%;
+    --brand-dark: 12 85% 18%;
+    --brand-darker: 12 80% 13%;
+    --brand-muted: 12 35% 70%;
+    --brand-border: 12 40% 82%;
+    --brand-border-light: 12 40% 90%;
+    --brand-gradient-to: 20 60% 96%;
+  }
+
+  /* Danish citizenship test (indfødsretsprøven) theme */
+  [data-theme="dkindfoed"] {
+    --brand: 350 90% 40%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 350 80% 96%;
+    --brand-hover: 350 90% 34%;
+    --brand-dark: 350 90% 28%;
+    --brand-darker: 350 85% 20%;
+    --brand-muted: 350 40% 70%;
+    --brand-border: 350 45% 80%;
+    --brand-border-light: 350 45% 90%;
+    --brand-gradient-to: 0 0% 98%;
+  }
+
+  /* Danish permanent residence test (medborgerskabsprøven) theme */
+  [data-theme="dkmedborger"] {
+    --brand: 202 100% 26%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 202 80% 96%;
+    --brand-hover: 202 100% 21%;
+    --brand-dark: 202 100% 17%;
+    --brand-darker: 202 100% 12%;
+    --brand-muted: 202 40% 68%;
+    --brand-border: 202 45% 80%;
+    --brand-border-light: 202 45% 90%;
+    --brand-gradient-to: 0 0% 98%;
+  }
+
+  /* Danish hunting licence test (jagtprøven) theme */
+  [data-theme="dkjagt"] {
+    --brand: 100 15% 32%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 100 20% 95%;
+    --brand-hover: 100 15% 27%;
+    --brand-dark: 100 16% 22%;
+    --brand-darker: 100 18% 15%;
+    --brand-muted: 100 12% 66%;
+    --brand-border: 100 15% 78%;
+    --brand-border-light: 100 15% 88%;
+    --brand-gradient-to: 45 60% 94%;
   }
 
   /* Sweden driving theory theme */
@@ -2369,6 +2481,62 @@
     --brand-gradient-to: 50 80% 94%;
   }
 
+  /* Sweden motorcycle knowledge test (A1, A2, A) theme: dark olive */
+  [data-theme="semoto"] {
+    --brand: 57 35% 24%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 57 45% 95%;
+    --brand-hover: 57 35% 19%;
+    --brand-dark: 57 35% 16%;
+    --brand-darker: 57 35% 11%;
+    --brand-muted: 57 30% 62%;
+    --brand-border: 57 35% 76%;
+    --brand-border-light: 57 40% 88%;
+    --brand-gradient-to: 57 50% 92%;
+  }
+
+  /* Sweden hunting licence theory test (jägarexamen) theme: dark moss green */
+  [data-theme="sejakt"] {
+    --brand: 95 45% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 95 40% 95%;
+    --brand-hover: 95 45% 17%;
+    --brand-dark: 95 45% 14%;
+    --brand-darker: 95 45% 9%;
+    --brand-muted: 95 30% 62%;
+    --brand-border: 95 35% 76%;
+    --brand-border-light: 95 40% 88%;
+    --brand-gradient-to: 95 45% 92%;
+  }
+
+  /* Swedish citizenship test (medborgarskapsprovet) theme: deep Swedish-flag blue */
+  [data-theme="semedb"] {
+    --brand: 212 100% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 212 70% 95%;
+    --brand-hover: 212 100% 17%;
+    --brand-dark: 212 100% 14%;
+    --brand-darker: 212 100% 9%;
+    --brand-muted: 212 30% 62%;
+    --brand-border: 212 35% 76%;
+    --brand-border-light: 212 40% 88%;
+    --brand-gradient-to: 48 90% 92%;
+  }
+
+  /* Högskoleprovet theme: deep violet (v2 exam; matches lib/v2/exams/sehp.ts theme) */
+  [data-theme="sehp"] {
+    --brand: 265 85% 28%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 265 55% 95%;
+    --brand-hover: 265 85% 23%;
+    --brand-dark: 265 85% 20%;
+    --brand-darker: 265 85% 15%;
+    --brand-muted: 265 30% 62%;
+    --brand-border: 265 35% 76%;
+    --brand-border-light: 265 40% 88%;
+    --brand-gradient-to: 48 90% 93%;
+  }
+
   /* Finland driving theory test theme */
   [data-theme="fitheory"] {
     --brand: 224 100% 26%;
@@ -2383,6 +2551,62 @@
     --brand-gradient-to: 200 50% 95%;
   }
 
+  /* Finland motorcycle theory test theme */
+  [data-theme="fimoto"] {
+    --brand: 12 70% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 12 60% 95%;
+    --brand-hover: 12 70% 18%;
+    --brand-dark: 12 70% 16%;
+    --brand-darker: 12 65% 11%;
+    --brand-muted: 12 35% 70%;
+    --brand-border: 12 35% 80%;
+    --brand-border-light: 12 30% 89%;
+    --brand-gradient-to: 30 50% 95%;
+  }
+
+  /* Finland truck and bus theory test theme */
+  [data-theme="fitruck"] {
+    --brand: 35 40% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 35 45% 95%;
+    --brand-hover: 35 40% 14%;
+    --brand-dark: 35 40% 12%;
+    --brand-darker: 35 40% 8%;
+    --brand-muted: 35 25% 68%;
+    --brand-border: 35 25% 80%;
+    --brand-border-light: 35 25% 89%;
+    --brand-gradient-to: 45 50% 95%;
+  }
+
+  /* Finland Hygiene Passport test theme */
+  [data-theme="fihygiene"] {
+    --brand: 172 90% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 172 50% 95%;
+    --brand-hover: 172 90% 18%;
+    --brand-dark: 172 90% 15%;
+    --brand-darker: 172 85% 10%;
+    --brand-muted: 172 30% 68%;
+    --brand-border: 172 35% 80%;
+    --brand-border-light: 172 30% 89%;
+    --brand-gradient-to: 150 40% 95%;
+  }
+
+  /* Finland hunter's examination (metsästäjätutkinto) theme */
+  [data-theme="fihunt"] {
+    --brand: 75 60% 20%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 75 45% 95%;
+    --brand-hover: 75 60% 16%;
+    --brand-dark: 75 60% 13%;
+    --brand-darker: 75 60% 8%;
+    --brand-muted: 75 25% 60%;
+    --brand-border: 75 25% 76%;
+    --brand-border-light: 75 30% 88%;
+    --brand-gradient-to: 40 70% 92%;
+  }
+
   /* Greece driving theory theme */
   [data-theme="grdriving"] {
     --brand: 210 55% 46%;
@@ -2395,6 +2619,48 @@
     --brand-border: 210 40% 80%;
     --brand-border-light: 210 35% 90%;
     --brand-gradient-to: 215 60% 96%;
+  }
+
+  /* Greece motorcycle theory theme */
+  [data-theme="grmoto"] {
+    --brand: 16 35% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 16 40% 96%;
+    --brand-hover: 16 35% 18%;
+    --brand-dark: 16 35% 16%;
+    --brand-darker: 16 35% 13%;
+    --brand-muted: 16 20% 68%;
+    --brand-border: 16 25% 80%;
+    --brand-border-light: 16 25% 90%;
+    --brand-gradient-to: 30 45% 95%;
+  }
+
+  /* Greek naturalisation knowledge test (Εξετάσεις ΠΕΓΠ) theme */
+  [data-theme="grcitizen"] {
+    --brand: 222 100% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 222 80% 96%;
+    --brand-hover: 222 100% 14%;
+    --brand-dark: 222 100% 12%;
+    --brand-darker: 222 100% 9%;
+    --brand-muted: 222 40% 68%;
+    --brand-border: 222 45% 80%;
+    --brand-border-light: 222 45% 90%;
+    --brand-gradient-to: 0 0% 98%;
+  }
+
+  /* Greece private security personnel certification (ΕΟΠΠΕΠ) theme */
+  [data-theme="grsecurity"] {
+    --brand: 240 50% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 240 60% 96%;
+    --brand-hover: 240 50% 14%;
+    --brand-dark: 240 50% 12%;
+    --brand-darker: 240 50% 9%;
+    --brand-muted: 240 25% 68%;
+    --brand-border: 240 35% 80%;
+    --brand-border-light: 240 35% 90%;
+    --brand-gradient-to: 0 0% 98%;
   }
 
   /* Romania DRPCIV theory exam theme */
@@ -2425,6 +2691,118 @@
     --brand-gradient-to: 110 25% 95%;
   }
 
+  /* Hungary motorcycle theory exam theme */
+  [data-theme="hukreszmoto"] {
+    --brand: 160 25% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 160 25% 95%;
+    --brand-hover: 160 25% 18%;
+    --brand-dark: 160 27% 16%;
+    --brand-darker: 160 28% 11%;
+    --brand-muted: 160 15% 68%;
+    --brand-border: 160 15% 78%;
+    --brand-border-light: 160 14% 88%;
+    --brand-gradient-to: 145 25% 95%;
+  }
+
+  /* Hungary GKI (Driver CPC) theory exams theme */
+  [data-theme="hugki"] {
+    --brand: 40 25% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 40 25% 95%;
+    --brand-hover: 40 25% 18%;
+    --brand-dark: 40 27% 15%;
+    --brand-darker: 40 30% 10%;
+    --brand-muted: 40 15% 64%;
+    --brand-border: 40 15% 76%;
+    --brand-border-light: 40 14% 88%;
+    --brand-gradient-to: 30 25% 95%;
+  }
+
+  /* Hungarian road first aid exam (elsősegély vizsga) theme */
+  [data-theme="huelsoseg"] {
+    --brand: 345 20% 34%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 345 30% 96%;
+    --brand-hover: 345 20% 28%;
+    --brand-dark: 345 22% 22%;
+    --brand-darker: 345 25% 15%;
+    --brand-muted: 345 12% 66%;
+    --brand-border: 345 15% 80%;
+    --brand-border-light: 345 15% 90%;
+    --brand-gradient-to: 0 60% 95%;
+  }
+
+  /* Hungarian insurance intermediary exam (biztosításközvetítői hatósági vizsga) theme */
+  [data-theme="hubizt"] {
+    --brand: 232 15% 32%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 232 25% 96%;
+    --brand-hover: 232 16% 26%;
+    --brand-dark: 232 18% 20%;
+    --brand-darker: 232 20% 14%;
+    --brand-muted: 232 10% 64%;
+    --brand-border: 232 12% 80%;
+    --brand-border-light: 232 14% 90%;
+    --brand-gradient-to: 215 40% 94%;
+  }
+
+  /* Romania ARR Driver CPC (CPI) theme */
+  [data-theme="rocpi"] {
+    --brand: 210 55% 20%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 210 50% 96%;
+    --brand-hover: 210 55% 16%;
+    --brand-dark: 210 55% 14%;
+    --brand-darker: 210 55% 10%;
+    --brand-muted: 210 25% 66%;
+    --brand-border: 210 30% 80%;
+    --brand-border-light: 210 30% 90%;
+    --brand-gradient-to: 48 90% 95%;
+  }
+
+  /* Romania ARR taxi driver attestation theme */
+  [data-theme="rotaxi"] {
+    --brand: 60 85% 26%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 60 70% 95%;
+    --brand-hover: 60 85% 21%;
+    --brand-dark: 60 85% 18%;
+    --brand-darker: 60 80% 12%;
+    --brand-muted: 60 30% 68%;
+    --brand-border: 60 35% 78%;
+    --brand-border-light: 60 35% 88%;
+    --brand-gradient-to: 45 80% 95%;
+  }
+
+  /* Romania medicine admission exam (Admitere Medicină) theme */
+  [data-theme="roadmed"] {
+    --brand: 340 45% 24%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 340 40% 96%;
+    --brand-hover: 340 45% 20%;
+    --brand-dark: 340 45% 18%;
+    --brand-darker: 340 45% 12%;
+    --brand-muted: 340 25% 62%;
+    --brand-border: 340 30% 80%;
+    --brand-border-light: 340 30% 90%;
+    --brand-gradient-to: 340 50% 94%;
+  }
+
+  /* Romania Rezidențiat Medicină theme */
+  [data-theme="rorezid"] {
+    --brand: 194 75% 24%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 194 60% 96%;
+    --brand-hover: 194 75% 20%;
+    --brand-dark: 194 75% 17%;
+    --brand-darker: 194 75% 12%;
+    --brand-muted: 194 30% 62%;
+    --brand-border: 194 40% 78%;
+    --brand-border-light: 194 40% 88%;
+    --brand-gradient-to: 194 70% 92%;
+  }
+
   /* Malta driving theory theme */
   [data-theme="mttheory"] {
     --brand: 0 88% 40%;
@@ -2437,6 +2815,59 @@
     --brand-border: 0 40% 80%;
     --brand-border-light: 0 40% 90%;
     --brand-gradient-to: 15 70% 96%;
+  }
+
+  /* Malta motorcycle theory theme */
+  [data-theme="mtmoto"] {
+    --brand: 5 50% 20%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 5 50% 96%;
+    --brand-hover: 5 50% 16%;
+    --brand-dark: 5 50% 15%;
+    --brand-darker: 5 50% 10%;
+    --brand-muted: 5 25% 70%;
+    --brand-border: 5 30% 80%;
+    --brand-border-light: 5 30% 90%;
+    --brand-gradient-to: 20 50% 96%;
+  }
+  /* Malta Driver CPC theory test theme */
+  [data-theme="mtcpc"] {
+    --brand: 200 45% 20%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 200 45% 95%;
+    --brand-hover: 200 45% 16%;
+    --brand-dark: 200 45% 14%;
+    --brand-darker: 200 40% 9%;
+    --brand-muted: 200 20% 66%;
+    --brand-border: 200 25% 78%;
+    --brand-border-light: 200 22% 88%;
+    --brand-gradient-to: 40 80% 95%;
+  }
+  /* Malta taxi driver theory test theme */
+  [data-theme="mttaxi"] {
+    --brand: 48 70% 20%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 48 60% 95%;
+    --brand-hover: 48 70% 16%;
+    --brand-dark: 48 70% 14%;
+    --brand-darker: 48 65% 9%;
+    --brand-muted: 48 30% 68%;
+    --brand-border: 48 35% 78%;
+    --brand-border-light: 48 35% 88%;
+    --brand-gradient-to: 0 0% 98%;
+  }
+  /* Malta private guard licence (Award in Private Security Guard Services) theme */
+  [data-theme="mtguard"] {
+    --brand: 244 60% 26%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 244 60% 96%;
+    --brand-hover: 244 60% 21%;
+    --brand-dark: 244 60% 20%;
+    --brand-darker: 244 55% 13%;
+    --brand-muted: 244 25% 70%;
+    --brand-border: 244 25% 80%;
+    --brand-border-light: 244 22% 89%;
+    --brand-gradient-to: 249 65% 96%;
   }
 
   /* German car theory test (Führerschein Klasse B) theme: anthracite, the black of the German
@@ -2452,6 +2883,174 @@
     --brand-border: 0 0% 78%;
     --brand-border-light: 0 0% 88%;
     --brand-gradient-to: 45 90% 93%;
+  }
+
+  /* Spain Driver CPC, examen CAP inicial theme */
+  [data-theme="escapcond"] {
+    --brand: 30 85% 20%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 30 60% 95%;
+    --brand-hover: 30 85% 16%;
+    --brand-dark: 30 85% 14%;
+    --brand-darker: 30 85% 10%;
+    --brand-muted: 30 30% 60%;
+    --brand-border: 30 35% 78%;
+    --brand-border-light: 30 40% 88%;
+    --brand-gradient-to: 30 70% 91%;
+  }
+
+  /* Spain National Police entrance exam (Policía Nacional, Escala Básica) theme */
+  [data-theme="espolicia"] {
+    --brand: 222 85% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 222 70% 96%;
+    --brand-hover: 222 85% 18%;
+    --brand-dark: 222 85% 15%;
+    --brand-darker: 222 85% 10%;
+    --brand-muted: 222 30% 62%;
+    --brand-border: 222 40% 78%;
+    --brand-border-light: 222 50% 88%;
+    --brand-gradient-to: 222 70% 92%;
+  }
+
+  /* Spain Guardia Civil entrance exam (oposiciones, Escala de Cabos y Guardias) theme */
+  [data-theme="esguardia"] {
+    --brand: 143 25% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 143 30% 95%;
+    --brand-hover: 143 25% 25%;
+    --brand-dark: 143 25% 21%;
+    --brand-darker: 143 25% 15%;
+    --brand-muted: 143 15% 62%;
+    --brand-border: 143 18% 78%;
+    --brand-border-light: 143 22% 88%;
+    --brand-gradient-to: 143 35% 91%;
+  }
+
+  /* Spain private security guard exam (vigilante de seguridad) theme */
+  [data-theme="esvigilante"] {
+    --brand: 266 60% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 266 45% 96%;
+    --brand-hover: 266 60% 25%;
+    --brand-dark: 266 60% 21%;
+    --brand-darker: 266 60% 15%;
+    --brand-muted: 266 25% 64%;
+    --brand-border: 266 30% 80%;
+    --brand-border-light: 266 35% 89%;
+    --brand-gradient-to: 266 50% 92%;
+  }
+
+  /* German motorcycle theory test (Klassen A, A1, A2) theme */
+  [data-theme="demotorrad"] {
+    --brand: 300 55% 32%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 300 50% 96%;
+    --brand-hover: 300 55% 27%;
+    --brand-dark: 300 55% 24%;
+    --brand-darker: 300 55% 18%;
+    --brand-muted: 300 30% 65%;
+    --brand-border: 300 35% 80%;
+    --brand-border-light: 300 40% 90%;
+    --brand-gradient-to: 300 60% 93%;
+  }
+
+  /* German trainer aptitude exam (AEVO) theme */
+  [data-theme="deaevo"] {
+    --brand: 28 20% 28%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 28 30% 96%;
+    --brand-hover: 28 20% 23%;
+    --brand-dark: 28 20% 20%;
+    --brand-darker: 28 20% 14%;
+    --brand-muted: 28 15% 62%;
+    --brand-border: 28 18% 78%;
+    --brand-border-light: 28 18% 88%;
+    --brand-gradient-to: 28 45% 93%;
+  }
+
+  /* German security guard competence exam (Sachkundeprüfung § 34a GewO) theme */
+  [data-theme="de34a"] {
+    --brand: 258 35% 28%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 258 40% 96%;
+    --brand-hover: 258 35% 23%;
+    --brand-dark: 258 35% 20%;
+    --brand-darker: 258 35% 14%;
+    --brand-muted: 258 20% 62%;
+    --brand-border: 258 25% 78%;
+    --brand-border-light: 258 30% 88%;
+    --brand-gradient-to: 258 45% 92%;
+  }
+
+  /* German Heilpraktiker exam theme (142 25% 30% clashed with esguardia) */
+  [data-theme="deheilpr"] {
+    --brand: 144 20% 38%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 144 30% 96%;
+    --brand-hover: 144 20% 33%;
+    --brand-dark: 144 20% 30%;
+    --brand-darker: 144 20% 22%;
+    --brand-muted: 144 15% 65%;
+    --brand-border: 144 18% 80%;
+    --brand-border-light: 144 20% 90%;
+    --brand-gradient-to: 144 35% 92%;
+  }
+
+  /* Portugal IMT motorcycle theory theme (14 75% 30% clashed with caweld, ctet, biharpolice) */
+  [data-theme="ptmoto"] {
+    --brand: 14 100% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 14 70% 96%;
+    --brand-hover: 14 100% 26%;
+    --brand-dark: 14 100% 22%;
+    --brand-darker: 14 100% 16%;
+    --brand-muted: 14 30% 64%;
+    --brand-border: 14 35% 80%;
+    --brand-border-light: 14 30% 90%;
+    --brand-gradient-to: 30 55% 95%;
+  }
+
+  /* Portugal CAM (Driver CPC) exam theme (28 90% 20% clashed with escapcond) */
+  [data-theme="ptcam"] {
+    --brand: 28 100% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 28 60% 96%;
+    --brand-hover: 28 100% 14%;
+    --brand-dark: 28 100% 10%;
+    --brand-darker: 28 100% 6%;
+    --brand-muted: 28 30% 64%;
+    --brand-border: 28 35% 80%;
+    --brand-border-light: 28 30% 90%;
+    --brand-gradient-to: 28 60% 94%;
+  }
+
+  /* Portugal TVDE ride-hailing driver exam theme (266 60% 34% clashed with esvigilante) */
+  [data-theme="pttvde"] {
+    --brand: 278 45% 34%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 278 50% 96%;
+    --brand-hover: 278 45% 30%;
+    --brand-dark: 278 45% 26%;
+    --brand-darker: 278 45% 20%;
+    --brand-muted: 278 30% 64%;
+    --brand-border: 278 35% 80%;
+    --brand-border-light: 278 30% 90%;
+    --brand-gradient-to: 278 50% 94%;
+  }
+
+  /* Portugal private security guard exam (vigilante, PSP) theme */
+  [data-theme="ptvigil"] {
+    --brand: 212 85% 20%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 212 60% 96%;
+    --brand-hover: 212 85% 16%;
+    --brand-dark: 212 85% 12%;
+    --brand-darker: 212 85% 6%;
+    --brand-muted: 212 30% 64%;
+    --brand-border: 212 35% 80%;
+    --brand-border-light: 212 30% 90%;
+    --brand-gradient-to: 212 55% 92%;
   }
 
   /* SBI PO theme: bank blue (v2 exam; matches lib/v2/exams/sbipo.ts theme) */
@@ -6025,6 +6624,54 @@
     --brand-darker: 52 95% 78%;
   }
 
+  .dark [data-theme="bemoto"] {
+    --brand: 21 65% 43.9%;
+    --brand-hover: 21 65% 35.9%;
+    --brand-light: 21 45% 13%;
+    --brand-gradient-to: 28 40% 11%;
+    --brand-border-light: 21 35% 24%;
+    --brand-border: 21 35% 34%;
+    --brand-muted: 21 30% 45%;
+    --brand-dark: 21 65% 65%;
+    --brand-darker: 21 60% 78%;
+  }
+
+  .dark [data-theme="bevracht"] {
+    --brand: 214 25% 48.2%;
+    --brand-hover: 214 25% 40.2%;
+    --brand-light: 214 30% 13%;
+    --brand-gradient-to: 214 30% 11%;
+    --brand-border-light: 214 30% 24%;
+    --brand-border: 214 25% 34%;
+    --brand-muted: 214 20% 45%;
+    --brand-dark: 214 25% 65%;
+    --brand-darker: 214 25% 78%;
+  }
+
+  .dark [data-theme="betoelating"] {
+    --brand: 202 100% 37.8%;
+    --brand-hover: 202 100% 29.8%;
+    --brand-light: 202 45% 13%;
+    --brand-gradient-to: 202 40% 11%;
+    --brand-border-light: 202 35% 24%;
+    --brand-border: 202 40% 34%;
+    --brand-muted: 202 40% 45%;
+    --brand-dark: 202 100% 65%;
+    --brand-darker: 202 100% 78%;
+  }
+
+  .dark [data-theme="befsmavz"] {
+    --brand: 345 90% 47.8%;
+    --brand-hover: 345 90% 39.8%;
+    --brand-light: 345 45% 13%;
+    --brand-gradient-to: 345 40% 11%;
+    --brand-border-light: 345 35% 24%;
+    --brand-border: 345 40% 34%;
+    --brand-muted: 345 35% 45%;
+    --brand-dark: 345 90% 65%;
+    --brand-darker: 345 90% 78%;
+  }
+
   .dark [data-theme="dkteori"] {
     --brand: 348 70% 50%;
     --brand-hover: 348 70% 42%;
@@ -6035,6 +6682,50 @@
     --brand-muted: 348 35% 45%;
     --brand-dark: 348 70% 65%;
     --brand-darker: 348 65% 78%;
+  }
+  .dark [data-theme="dkmoto"] {
+    --brand: 12 85% 46%;
+    --brand-hover: 12 85% 38%;
+    --brand-light: 12 45% 13%;
+    --brand-gradient-to: 20 40% 11%;
+    --brand-border-light: 12 35% 24%;
+    --brand-border: 12 40% 34%;
+    --brand-muted: 12 35% 45%;
+    --brand-dark: 12 85% 65%;
+    --brand-darker: 12 80% 78%;
+  }
+  .dark [data-theme="dkindfoed"] {
+    --brand: 350 90% 48.1%;
+    --brand-hover: 350 90% 40.1%;
+    --brand-light: 350 45% 13%;
+    --brand-gradient-to: 0 0% 11%;
+    --brand-border-light: 350 35% 24%;
+    --brand-border: 350 40% 34%;
+    --brand-muted: 350 40% 45%;
+    --brand-dark: 350 90% 65%;
+    --brand-darker: 350 85% 78%;
+  }
+  .dark [data-theme="dkmedborger"] {
+    --brand: 202 100% 37.8%;
+    --brand-hover: 202 100% 29.8%;
+    --brand-light: 202 45% 13%;
+    --brand-gradient-to: 0 0% 11%;
+    --brand-border-light: 202 35% 24%;
+    --brand-border: 202 40% 34%;
+    --brand-muted: 202 40% 45%;
+    --brand-dark: 202 100% 65%;
+    --brand-darker: 202 100% 78%;
+  }
+  .dark [data-theme="dkjagt"] {
+    --brand: 100 15% 42%;
+    --brand-hover: 100 15% 34%;
+    --brand-light: 100 20% 13%;
+    --brand-gradient-to: 45 40% 11%;
+    --brand-border-light: 100 15% 24%;
+    --brand-border: 100 15% 34%;
+    --brand-muted: 100 12% 45%;
+    --brand-dark: 100 16% 65%;
+    --brand-darker: 100 18% 78%;
   }
 
   .dark [data-theme="setrafik"] {
@@ -6049,6 +6740,54 @@
     --brand-darker: 203 80% 78%;
   }
 
+  .dark [data-theme="semoto"] {
+    --brand: 57 35% 35.6%;
+    --brand-hover: 57 35% 27.6%;
+    --brand-light: 57 45% 13%;
+    --brand-gradient-to: 57 40% 11%;
+    --brand-border-light: 57 35% 24%;
+    --brand-border: 57 35% 34%;
+    --brand-muted: 57 30% 45%;
+    --brand-dark: 57 35% 65%;
+    --brand-darker: 57 35% 78%;
+  }
+
+  .dark [data-theme="sejakt"] {
+    --brand: 95 45% 34.9%;
+    --brand-hover: 95 45% 26.9%;
+    --brand-light: 95 40% 13%;
+    --brand-gradient-to: 95 40% 11%;
+    --brand-border-light: 95 35% 24%;
+    --brand-border: 95 35% 34%;
+    --brand-muted: 95 30% 45%;
+    --brand-dark: 95 45% 65%;
+    --brand-darker: 95 45% 78%;
+  }
+
+  .dark [data-theme="semedb"] {
+    --brand: 212 100% 46.9%;
+    --brand-hover: 212 100% 38.9%;
+    --brand-light: 212 45% 13%;
+    --brand-gradient-to: 48 40% 11%;
+    --brand-border-light: 212 35% 24%;
+    --brand-border: 212 35% 34%;
+    --brand-muted: 212 30% 45%;
+    --brand-dark: 212 100% 65%;
+    --brand-darker: 212 100% 78%;
+  }
+
+  .dark [data-theme="sehp"] {
+    --brand: 265 85% 50%;
+    --brand-hover: 265 85% 42%;
+    --brand-light: 265 45% 13%;
+    --brand-gradient-to: 48 40% 11%;
+    --brand-border-light: 265 35% 24%;
+    --brand-border: 265 35% 34%;
+    --brand-muted: 265 30% 45%;
+    --brand-dark: 265 85% 67%;
+    --brand-darker: 265 85% 78%;
+  }
+
   .dark [data-theme="fitheory"] {
     --brand: 224 100% 50%;
     --brand-hover: 224 100% 42%;
@@ -6061,6 +6800,51 @@
     --brand-darker: 224 95% 78%;
   }
 
+  .dark [data-theme="fimoto"] {
+    --brand: 12 70% 47.7%;
+    --brand-hover: 12 70% 39.7%;
+    --brand-light: 12 45% 13%;
+    --brand-gradient-to: 30 40% 11%;
+    --brand-border-light: 12 30% 24%;
+    --brand-border: 12 35% 34%;
+    --brand-muted: 12 35% 45%;
+    --brand-dark: 12 70% 65%;
+    --brand-darker: 12 65% 78%;
+  }
+  .dark [data-theme="fitruck"] {
+    --brand: 35 40% 40.8%;
+    --brand-hover: 35 40% 32.8%;
+    --brand-light: 35 45% 13%;
+    --brand-gradient-to: 45 40% 11%;
+    --brand-border-light: 35 25% 24%;
+    --brand-border: 35 25% 34%;
+    --brand-muted: 35 25% 45%;
+    --brand-dark: 35 40% 65%;
+    --brand-darker: 35 40% 78%;
+  }
+  .dark [data-theme="fihygiene"] {
+    --brand: 172 90% 27.2%;
+    --brand-hover: 172 90% 19.2%;
+    --brand-light: 172 45% 13%;
+    --brand-gradient-to: 150 40% 11%;
+    --brand-border-light: 172 30% 24%;
+    --brand-border: 172 35% 34%;
+    --brand-muted: 172 30% 45%;
+    --brand-dark: 172 90% 65%;
+    --brand-darker: 172 85% 78%;
+  }
+  .dark [data-theme="fihunt"] {
+    --brand: 75 60% 30.8%;
+    --brand-hover: 75 60% 22.8%;
+    --brand-light: 75 45% 13%;
+    --brand-gradient-to: 40 40% 11%;
+    --brand-border-light: 75 30% 24%;
+    --brand-border: 75 25% 34%;
+    --brand-muted: 75 25% 45%;
+    --brand-dark: 75 60% 65%;
+    --brand-darker: 75 60% 78%;
+  }
+
   .dark [data-theme="grdriving"] {
     --brand: 210 55% 47.1%;
     --brand-hover: 210 55% 41%;
@@ -6071,6 +6855,42 @@
     --brand-muted: 210 35% 45%;
     --brand-dark: 210 55% 65%;
     --brand-darker: 210 50% 78%;
+  }
+
+  .dark [data-theme="grmoto"] {
+    --brand: 16 35% 47.5%;
+    --brand-hover: 16 35% 39.5%;
+    --brand-light: 16 40% 13%;
+    --brand-gradient-to: 30 40% 11%;
+    --brand-border-light: 16 25% 24%;
+    --brand-border: 16 25% 34%;
+    --brand-muted: 16 20% 45%;
+    --brand-dark: 16 35% 65%;
+    --brand-darker: 16 35% 78%;
+  }
+
+  .dark [data-theme="grcitizen"] {
+    --brand: 222 100% 50%;
+    --brand-hover: 222 100% 42%;
+    --brand-light: 222 45% 13%;
+    --brand-gradient-to: 0 0% 11%;
+    --brand-border-light: 222 35% 24%;
+    --brand-border: 222 40% 34%;
+    --brand-muted: 222 40% 45%;
+    --brand-dark: 222 100% 65%;
+    --brand-darker: 222 100% 78%;
+  }
+
+  .dark [data-theme="grsecurity"] {
+    --brand: 240 50% 50%;
+    --brand-hover: 240 50% 42%;
+    --brand-light: 240 45% 13%;
+    --brand-gradient-to: 0 0% 11%;
+    --brand-border-light: 240 35% 24%;
+    --brand-border: 240 35% 34%;
+    --brand-muted: 240 25% 45%;
+    --brand-dark: 240 50% 65%;
+    --brand-darker: 240 50% 78%;
   }
 
   .dark [data-theme="rodrpciv"] {
@@ -6095,6 +6915,100 @@
     --brand-darker: 125 15% 78%;
   }
 
+  .dark [data-theme="hukreszmoto"] {
+    --brand: 160 25% 39.8%;
+    --brand-hover: 160 25% 31.8%;
+    --brand-light: 160 25% 13%;
+    --brand-gradient-to: 145 25% 11%;
+    --brand-border-light: 160 14% 24%;
+    --brand-border: 160 15% 34%;
+    --brand-muted: 160 15% 45%;
+    --brand-dark: 160 27% 65%;
+    --brand-darker: 160 28% 78%;
+  }
+
+  .dark [data-theme="hugki"] {
+    --brand: 40 25% 41.6%;
+    --brand-hover: 40 25% 33.6%;
+    --brand-light: 40 25% 13%;
+    --brand-gradient-to: 30 25% 11%;
+    --brand-border-light: 40 14% 24%;
+    --brand-border: 40 15% 34%;
+    --brand-muted: 40 15% 45%;
+    --brand-dark: 40 27% 65%;
+    --brand-darker: 40 30% 78%;
+  }
+
+  .dark [data-theme="huelsoseg"] {
+    --brand: 345 20% 50%;
+    --brand-hover: 345 20% 42%;
+    --brand-light: 345 30% 13%;
+    --brand-gradient-to: 0 40% 11%;
+    --brand-border-light: 345 15% 24%;
+    --brand-border: 345 15% 34%;
+    --brand-muted: 345 12% 45%;
+    --brand-dark: 345 22% 65%;
+    --brand-darker: 345 25% 78%;
+  }
+
+  .dark [data-theme="hubizt"] {
+    --brand: 232 15% 50%;
+    --brand-hover: 232 16% 42%;
+    --brand-light: 232 25% 13%;
+    --brand-gradient-to: 215 40% 11%;
+    --brand-border-light: 232 14% 24%;
+    --brand-border: 232 12% 34%;
+    --brand-muted: 232 10% 45%;
+    --brand-dark: 232 18% 65%;
+    --brand-darker: 232 20% 78%;
+  }
+
+  .dark [data-theme="rocpi"] {
+    --brand: 210 55% 47.1%;
+    --brand-hover: 210 55% 39.1%;
+    --brand-light: 210 45% 13%;
+    --brand-gradient-to: 48 40% 11%;
+    --brand-border-light: 210 30% 24%;
+    --brand-border: 210 30% 34%;
+    --brand-muted: 210 25% 45%;
+    --brand-dark: 210 55% 65%;
+    --brand-darker: 210 55% 78%;
+  }
+
+  .dark [data-theme="rotaxi"] {
+    --brand-light: 60 45% 13%;
+    --brand-gradient-to: 45 40% 11%;
+    --brand-border-light: 60 35% 24%;
+    --brand-border: 60 35% 34%;
+    --brand-muted: 60 30% 45%;
+    --brand-dark: 60 85% 65%;
+    --brand-darker: 60 80% 78%;
+  }
+
+  .dark [data-theme="roadmed"] {
+    --brand: 340 45% 50%;
+    --brand-hover: 340 45% 42%;
+    --brand-light: 340 40% 13%;
+    --brand-gradient-to: 340 40% 11%;
+    --brand-border-light: 340 30% 24%;
+    --brand-border: 340 30% 34%;
+    --brand-muted: 340 25% 45%;
+    --brand-dark: 340 45% 65%;
+    --brand-darker: 340 45% 78%;
+  }
+
+  .dark [data-theme="rorezid"] {
+    --brand: 194 75% 35.5%;
+    --brand-hover: 194 75% 27.5%;
+    --brand-light: 194 45% 13%;
+    --brand-gradient-to: 194 40% 11%;
+    --brand-border-light: 194 35% 24%;
+    --brand-border: 194 40% 34%;
+    --brand-muted: 194 30% 45%;
+    --brand-dark: 194 75% 65%;
+    --brand-darker: 194 75% 78%;
+  }
+
   .dark [data-theme="mttheory"] {
     --brand: 0 88% 48.7%;
     --brand-hover: 0 88% 40.7%;
@@ -6107,6 +7021,54 @@
     --brand-darker: 0 83% 78%;
   }
 
+  .dark [data-theme="mtmoto"] {
+    --brand: 5 50% 50%;
+    --brand-hover: 5 50% 42%;
+    --brand-light: 5 45% 13%;
+    --brand-gradient-to: 20 40% 11%;
+    --brand-border-light: 5 30% 24%;
+    --brand-border: 5 30% 34%;
+    --brand-muted: 5 25% 45%;
+    --brand-dark: 5 50% 65%;
+    --brand-darker: 5 50% 78%;
+  }
+
+  .dark [data-theme="mtcpc"] {
+    --brand: 200 45% 42.3%;
+    --brand-hover: 200 45% 34.3%;
+    --brand-light: 200 45% 13%;
+    --brand-gradient-to: 40 40% 11%;
+    --brand-border-light: 200 22% 24%;
+    --brand-border: 200 25% 34%;
+    --brand-muted: 200 20% 45%;
+    --brand-dark: 200 45% 65%;
+    --brand-darker: 200 40% 78%;
+  }
+
+  .dark [data-theme="mttaxi"] {
+    --brand: 48 70% 31.8%;
+    --brand-hover: 48 70% 23.8%;
+    --brand-light: 48 45% 13%;
+    --brand-gradient-to: 0 0% 11%;
+    --brand-border-light: 48 35% 24%;
+    --brand-border: 48 35% 34%;
+    --brand-muted: 48 30% 45%;
+    --brand-dark: 48 70% 65%;
+    --brand-darker: 48 65% 78%;
+  }
+
+  .dark [data-theme="mtguard"] {
+    --brand: 244 60% 50%;
+    --brand-hover: 244 60% 42%;
+    --brand-light: 244 45% 13%;
+    --brand-gradient-to: 249 40% 11%;
+    --brand-border-light: 244 22% 24%;
+    --brand-border: 244 25% 34%;
+    --brand-muted: 244 25% 45%;
+    --brand-dark: 244 60% 66%;
+    --brand-darker: 244 55% 78%;
+  }
+
   .dark [data-theme="detheorie"] {
     --brand: 0 0% 45.9%;
     --brand-hover: 0 0% 37.9%;
@@ -6117,6 +7079,146 @@
     --brand-muted: 0 0% 45%;
     --brand-dark: 0 0% 65%;
     --brand-darker: 0 0% 78%;
+  }
+  .dark [data-theme="escapcond"] {
+    --brand: 30 85% 37.6%;
+    --brand-hover: 30 85% 29.6%;
+    --brand-light: 30 45% 13%;
+    --brand-gradient-to: 30 40% 11%;
+    --brand-border-light: 30 35% 24%;
+    --brand-border: 30 35% 34%;
+    --brand-muted: 30 30% 45%;
+    --brand-dark: 30 85% 65%;
+    --brand-darker: 30 85% 78%;
+  }
+  .dark [data-theme="espolicia"] {
+    --brand: 222 85% 50%;
+    --brand-hover: 222 85% 42%;
+    --brand-light: 222 45% 13%;
+    --brand-gradient-to: 222 40% 11%;
+    --brand-border-light: 222 35% 24%;
+    --brand-border: 222 40% 34%;
+    --brand-muted: 222 30% 45%;
+    --brand-dark: 222 85% 65%;
+    --brand-darker: 222 85% 78%;
+  }
+  .dark [data-theme="esguardia"] {
+    --brand: 143 25% 40.1%;
+    --brand-hover: 143 25% 32.1%;
+    --brand-light: 143 30% 13%;
+    --brand-gradient-to: 143 35% 11%;
+    --brand-border-light: 143 22% 24%;
+    --brand-border: 143 18% 34%;
+    --brand-muted: 143 15% 45%;
+    --brand-dark: 143 25% 65%;
+    --brand-darker: 143 25% 78%;
+  }
+  .dark [data-theme="esvigilante"] {
+    --brand: 266 60% 50%;
+    --brand-hover: 266 60% 42%;
+    --brand-light: 266 45% 13%;
+    --brand-gradient-to: 266 40% 11%;
+    --brand-border-light: 266 35% 24%;
+    --brand-border: 266 30% 34%;
+    --brand-muted: 266 25% 45%;
+    --brand-dark: 266 60% 65%;
+    --brand-darker: 266 60% 78%;
+  }
+
+  .dark [data-theme="demotorrad"] {
+    --brand: 300 55% 48.5%;
+    --brand-hover: 300 55% 40.5%;
+    --brand-light: 300 45% 13%;
+    --brand-gradient-to: 300 40% 11%;
+    --brand-border-light: 300 35% 24%;
+    --brand-border: 300 35% 34%;
+    --brand-muted: 300 30% 45%;
+    --brand-dark: 300 55% 65%;
+    --brand-darker: 300 55% 78%;
+  }
+
+  .dark [data-theme="deaevo"] {
+    --brand: 28 20% 44.7%;
+    --brand-hover: 28 20% 36.7%;
+    --brand-light: 28 30% 13%;
+    --brand-gradient-to: 28 40% 11%;
+    --brand-border-light: 28 18% 24%;
+    --brand-border: 28 18% 34%;
+    --brand-muted: 28 15% 45%;
+    --brand-dark: 28 20% 65%;
+    --brand-darker: 28 20% 78%;
+  }
+
+  .dark [data-theme="de34a"] {
+    --brand: 258 35% 50%;
+    --brand-hover: 258 35% 42%;
+    --brand-light: 258 40% 13%;
+    --brand-gradient-to: 258 40% 11%;
+    --brand-border-light: 258 30% 24%;
+    --brand-border: 258 25% 34%;
+    --brand-muted: 258 20% 45%;
+    --brand-dark: 258 35% 65%;
+    --brand-darker: 258 35% 78%;
+  }
+
+  .dark [data-theme="deheilpr"] {
+    --brand: 144 20% 41.2%;
+    --brand-hover: 144 20% 33.2%;
+    --brand-light: 144 30% 13%;
+    --brand-gradient-to: 144 35% 11%;
+    --brand-border-light: 144 20% 24%;
+    --brand-border: 144 18% 34%;
+    --brand-muted: 144 15% 45%;
+    --brand-dark: 144 20% 65%;
+    --brand-darker: 144 20% 78%;
+  }
+
+  .dark [data-theme="ptmoto"] {
+    --brand: 14 100% 43.3%;
+    --brand-hover: 14 100% 35.3%;
+    --brand-light: 14 45% 13%;
+    --brand-gradient-to: 30 40% 11%;
+    --brand-border-light: 14 30% 24%;
+    --brand-border: 14 35% 34%;
+    --brand-muted: 14 30% 45%;
+    --brand-dark: 14 100% 65%;
+    --brand-darker: 14 100% 78%;
+  }
+
+  .dark [data-theme="ptcam"] {
+    --brand: 28 100% 37%;
+    --brand-hover: 28 100% 29%;
+    --brand-light: 28 45% 13%;
+    --brand-gradient-to: 28 40% 11%;
+    --brand-border-light: 28 30% 24%;
+    --brand-border: 28 35% 34%;
+    --brand-muted: 28 30% 45%;
+    --brand-dark: 28 100% 65%;
+    --brand-darker: 28 100% 78%;
+  }
+
+  .dark [data-theme="pttvde"] {
+    --brand: 278 45% 50%;
+    --brand-hover: 278 45% 42%;
+    --brand-light: 278 45% 13%;
+    --brand-gradient-to: 278 40% 11%;
+    --brand-border-light: 278 30% 24%;
+    --brand-border: 278 35% 34%;
+    --brand-muted: 278 30% 45%;
+    --brand-dark: 278 45% 65%;
+    --brand-darker: 278 45% 78%;
+  }
+
+  .dark [data-theme="ptvigil"] {
+    --brand: 212 85% 47.7%;
+    --brand-hover: 212 85% 39.7%;
+    --brand-light: 212 45% 13%;
+    --brand-gradient-to: 212 40% 11%;
+    --brand-border-light: 212 30% 24%;
+    --brand-border: 212 35% 34%;
+    --brand-muted: 212 30% 45%;
+    --brand-dark: 212 85% 65%;
+    --brand-darker: 212 85% 78%;
   }
 
   .dark [data-theme="sbipo"] {

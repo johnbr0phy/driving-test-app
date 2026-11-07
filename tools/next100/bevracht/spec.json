@@ -1,0 +1,37 @@
+{
+  "id": "bevracht",
+  "stateCode": "BEVRACHT",
+  "idBase": 25800,
+  "prefix": "BEVRC-",
+  "slug": "/theorie-vrachtwagen-c",
+  "landingPath": "/nl/theorie-examen-vrachtwagen-c-oefenen",
+  "dataFile": "data/be-vrachtwagen-c-questions.json",
+  "language": "nl",
+  "locale": "nl-BE",
+  "name": "Theorie-examen vrachtwagen C en vakbekwaamheid",
+  "shortName": "Theorie vrachtwagen C",
+  "examLabel": "Theorie-examen rijbewijs C",
+  "fullName": "Theorie-examen rijbewijs C/CE en vakbekwaamheid (code 95)",
+  "english": {
+    "name": "Belgium Truck Licence Theory Test (C/CE and CPC)",
+    "shortName": "Belgian truck theory test",
+    "fullName": "Belgium truck licence C/CE theory exam and driver CPC (vakbekwaamheid, code 95), in Dutch"
+  },
+  "icon": "truck",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 80,
+  "categories": [
+    {"key": "bevrVerkeer", "label": "Verkeersregels voor vrachtwagens", "perTest": 8, "pool": 32, "segment": "VRK"},
+    {"key": "bevrRijbewijs", "label": "Rijbewijs, documenten en alcohol", "perTest": 4, "pool": 16, "segment": "RBW"},
+    {"key": "bevrTechniek", "label": "Voertuigtechniek en koppelen", "perTest": 6, "pool": 24, "segment": "TEC"},
+    {"key": "bevrRemmen", "label": "Remmen en vertragers", "perTest": 6, "pool": 24, "segment": "REM"},
+    {"key": "bevrRijtijden", "label": "Rij- en rusttijden", "perTest": 7, "pool": 28, "segment": "RYT"},
+    {"key": "bevrTachograaf", "label": "Tachograaf", "perTest": 5, "pool": 20, "segment": "TAC"},
+    {"key": "bevrLading", "label": "Lading, gewichten en afmetingen", "perTest": 6, "pool": 24, "segment": "LAD"},
+    {"key": "bevrVeiligheid", "label": "Veiligheid, gezondheid en noodsituaties", "perTest": 5, "pool": 20, "segment": "VEI"},
+    {"key": "bevrMilieu", "label": "Zuinig rijden, documenten en transportmarkt", "perTest": 3, "pool": 12, "segment": "MIL"}
+  ],
+  "notes": "4 tests x 50 = 200, every item in exactly one test (pools exactly 4x each count). A test is one 50-question half of the real combined proef A: about half licence theory (verkeer 8, rijbewijs 4, techniek 6, remmen 6 = 24) and half vakbekwaamheid (rijtijden 7, tachograaf 5, lading 6, veiligheid 5, milieu 3 = 26); the split is Tigertest's, GOCA publishes no weights. passPct 80 = 40 of 50, the real per-half exemption line and the 80/100 pass rate of the combined proef (C alone is 41 of 50). Five topic sets 25801-25805 (48/48/48/24/32) + 4 tests = 9 dashboard steps.",
+  "trainingSets": "topic sets 25801-25805, see WIRING.md"
+}

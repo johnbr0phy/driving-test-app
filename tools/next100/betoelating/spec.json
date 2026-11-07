@@ -1,0 +1,34 @@
+{
+  "id": "betoelating",
+  "stateCode": "BETOEL",
+  "idBase": 25600,
+  "prefix": "BETOEL-",
+  "slug": "/toelatingsexamen-arts",
+  "landingPath": "/nl/toelatingsexamen-arts-oefenen",
+  "dataFile": "data/be-toelatingsexamen-arts-questions.json",
+  "language": "nl",
+  "locale": "nl-BE",
+  "name": "Toelatingsexamen arts en tandarts",
+  "shortName": "Toelatingsexamen arts",
+  "examLabel": "Toelatingsexamen arts en tandarts",
+  "fullName": "Toelatingsexamen arts en tandarts (Vlaanderen): Kennis en Inzicht in de Wetenschappen en Generieke Competenties",
+  "english": {
+    "name": "Flemish Medical and Dental Admission Exam",
+    "shortName": "Flemish medical admission exam",
+    "fullName": "Flemish medical and dental admission exam (toelatingsexamen arts en tandarts), in Dutch"
+  },
+  "icon": "stethoscope",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 70,
+  "categories": [
+    {"key": "betoelBio", "label": "Biologie", "perTest": 10, "pool": 40, "segment": "BIO"},
+    {"key": "betoelFys", "label": "Fysica", "perTest": 10, "pool": 40, "segment": "FYS"},
+    {"key": "betoelChem", "label": "Chemie", "perTest": 10, "pool": 40, "segment": "CHE"},
+    {"key": "betoelWisk", "label": "Wiskunde", "perTest": 10, "pool": 40, "segment": "WIS"},
+    {"key": "betoelEmco", "label": "Empathie en communicatie (EMCO)", "perTest": 4, "pool": 16, "segment": "EMC"},
+    {"key": "betoelVaardig", "label": "Wetenschappelijke teksten (VAARDIG)", "perTest": 6, "pool": 24, "segment": "VAA"}
+  ],
+  "notes": "4 tests x 50 = 200, every item in exactly one test (pools 4x). Each test = the real KIW (10 per science) + a GC block of 4 EMCO and 6 VAARDIG. Training: five subject sets 25601-25605 (Biologie, Fysica, Chemie, Wiskunde, Generieke competenties 40 each), so 5 + 4 = 9 dashboard steps. passPct 70 (35 of 50) is Tigertest's readiness target; the real exam needs half the points per part under +3/-1 marking and then a quota rank.",
+  "trainingSets": "subject sets 25601-25605, see WIRING.md"
+}

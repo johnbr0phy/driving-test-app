@@ -1,0 +1,35 @@
+{
+  "id": "mttaxi",
+  "stateCode": "MTTAXI",
+  "idBase": 26000,
+  "prefix": "MTTAXI-",
+  "slug": "/malta-taxi-driver",
+  "landingPath": "/malta-taxi-driver-theory-test",
+  "dataFile": "data/malta-taxi-driver-questions.json",
+  "name": "Malta Taxi Driver Theory Test Practice",
+  "shortName": "Malta taxi theory test",
+  "examLabel": "Malta taxi driver theory test",
+  "fullName": "Malta Taxi Driver Theory Test (Taxi Driver and Area Knowledge Certificate)",
+  "icon": "car",
+  "region": "MT",
+  "testCount": 5,
+  "questionsPerTest": 35,
+  "passPct": 85,
+  "categories": [
+    {"key": "mttaxiPermit", "label": "Taxi Driver Permit & Tag", "perTest": 5, "pool": 27, "segment": "PRM", "schedule": "Reg 9-18; Third Sched Part 1 para 2b"},
+    {"key": "mttaxiVehicle", "label": "The Taxi & Its Equipment", "perTest": 4, "pool": 22, "segment": "VEH", "schedule": "Reg 20-58; para 1, 3c"},
+    {"key": "mttaxiHiring", "label": "Hiring, Stands & Plying for Hire", "perTest": 5, "pool": 27, "segment": "HIR", "schedule": "Reg 21, 47-62, 65-66; para 2b"},
+    {"key": "mttaxiFares", "label": "Fares, Taximeter & Receipts", "perTest": 3, "pool": 17, "segment": "FAR", "schedule": "Reg 42, 63-66; para 3c"},
+    {"key": "mttaxiPassengers", "label": "Customer Care & Passengers with Disabilities", "perTest": 4, "pool": 22, "segment": "PAS", "schedule": "para 2a, 4, 6"},
+    {"key": "mttaxiSafety", "label": "Emergencies, First Aid & Difficult Passengers", "perTest": 5, "pool": 27, "segment": "SAF", "schedule": "para 2c, 2d, 2f, 2g"},
+    {"key": "mttaxiDriving", "label": "Professional Driving, Vehicle Care & Fuel", "perTest": 3, "pool": 22, "segment": "DRV", "schedule": "para 1a-c, 2e"},
+    {"key": "mttaxiArea", "label": "Routes & Places in Malta and Gozo", "perTest": 6, "pool": 36, "segment": "ARE", "schedule": "para 3a, 3b"}
+  ],
+  "notes": "5 real-length tests x 35 = 175 items in tests; pools are 5x per-test plus training-only spares (2/2/2/2/2/2/7/6 = 25, the last items of each pool). passPct 85 gives ceil(0.85 x 35) = 30, the 30 of 35 Transport Malta's guidelines give. Weights are Tigertest's, following the Third Schedule's subject list (Transport Malta publishes no split). Dashboard = 4 sets + 5 tests = 9 steps.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 26001, "name": "Permits, Tags & the Taxi", "categories": ["mttaxiPermit", "mttaxiVehicle"], "size": 49},
+    {"setNumber": 2, "id": 26002, "name": "Hiring Rules & Fares", "categories": ["mttaxiHiring", "mttaxiFares"], "size": 44},
+    {"setNumber": 3, "id": 26003, "name": "Passengers & Safety", "categories": ["mttaxiPassengers", "mttaxiSafety"], "size": 49},
+    {"setNumber": 4, "id": 26004, "name": "Driving & Area Knowledge", "categories": ["mttaxiDriving", "mttaxiArea"], "size": 58}
+  ]
+}

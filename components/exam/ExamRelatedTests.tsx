@@ -54,6 +54,42 @@ const RELATED_COPY: Partial<Record<Language, { title: string; sub: string; count
     country: (name) => `Testes de treino gratuitos: ${name}`,
     all: (n) => `Ver os ${n} testes de treino`,
   },
+  sv: {
+    title: "Fler övningsprov",
+    sub: "Alla prov på Tigertest är gratis och du behöver inget konto för att börja.",
+    country: (name) => `Gratis övningsprov: ${name}`,
+    all: (n) => `Se alla ${n} övningsprov`,
+  },
+  da: {
+    title: "Andre øvelsesprøver",
+    sub: "Alle prøver på Tigertest er gratis, og du skal ikke have en konto for at begynde.",
+    country: (name) => `Gratis øvelsesprøver: ${name}`,
+    all: (n) => `Se alle ${n} øvelsesprøver`,
+  },
+  fi: {
+    title: "Lisää harjoituskokeita",
+    sub: "Kaikki Tigertestin kokeet ovat ilmaisia, eikä aloittamiseen tarvita tiliä.",
+    country: (name) => `Ilmaiset harjoituskokeet: ${name}`,
+    all: (n) => `Katso kaikki ${n} harjoituskoetta`,
+  },
+  hu: {
+    title: "További gyakorló tesztek",
+    sub: "A Tigertesten minden teszt ingyenes, és a kezdéshez nem kell fiók.",
+    country: (name) => `Ingyenes gyakorló tesztek: ${name}`,
+    all: (n) => `Mind a(z) ${n} gyakorló teszt megtekintése`,
+  },
+  ro: {
+    title: "Alte teste de exersare",
+    sub: "Pe Tigertest fiecare test e gratuit și nu ai nevoie de cont ca să începi.",
+    country: (name) => `Teste de exersare gratuite: ${name}`,
+    all: (n) => `Vezi toate testele de exersare (${n})`,
+  },
+  el: {
+    title: "Περισσότερα τεστ εξάσκησης",
+    sub: "Όλα τα τεστ του Tigertest είναι δωρεάν και δεν χρειάζεσαι λογαριασμό για να ξεκινήσεις.",
+    country: (name) => `Δωρεάν τεστ εξάσκησης: ${name}`,
+    all: (n) => `Δες και τα ${n} τεστ εξάσκησης`,
+  },
 };
 
 // "Related practice tests" block for an exam landing: the rest of the exam's

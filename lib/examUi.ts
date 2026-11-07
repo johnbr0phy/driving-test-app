@@ -1,7 +1,7 @@
 // Registry-exam page copy that is not in i18n/*.ts: the lines the shared
 // exam components (components/exam/*) build around an ExamConfig. Every
 // language an exam can run in (a translation or a native base language) needs
-// an entry; any other reads English. The de, fr, it, pl, nl, pt and zh entries
+// an entry; any other reads English. The de, fr, it, pl, nl, pt, sv, da, fi, hu, ro, el and zh entries
 // are machine-translated, pending native review.
 
 import type { Language } from "@/i18n";
@@ -361,7 +361,193 @@ const pt: ExamUi = {
   dateLocale: "pt-PT",
 };
 
-const EXAM_UI: Partial<Record<Language, ExamUi>> = { en, es, vi, ko, zh, de, fr, it, pl, nl, pt };
+const sv: ExamUi = {
+  heroTitle: (done, total) => {
+    if (done === 0) return `Klara alla ${total} steg`;
+    if (done === total) return "Du är redo";
+    if (done === total - 1) return "Ett kvar";
+    if (done === 1) return `Bra start. 1 av ${total} klart`;
+    const frac = done / total;
+    if (frac < 0.45) return `${done} av ${total} klara`;
+    if (frac < 0.55) return "Halvvägs";
+    if (frac < 0.8) return "Mer än halvvägs";
+    return `${done} av ${total}, nästan klart`;
+  },
+  questionsCount: (n) => `${n} frågor`,
+  needToPass: (pct) => `${pct} % krävs för godkänt`,
+  fullLengthExam: "🎯 Fullängdsprov",
+  testN: (n) => `🎯 Prov ${n}`,
+  examTestN: (shortName, n) => `${shortName}, prov ${n}`,
+  pctToPass: (pct) => `${pct} % för godkänt`,
+  yourStats: "Din statistik",
+  yourStatsSub: "Varje fråga du har sett, sorterad efter vad du oftast svarar fel på",
+  aboutThisTest: "Om det här övningsprovet",
+  trainingBadge: (shortName) => `TRÄNING ${shortName}`,
+  masteredMyTraining: (shortName) => `JAG HAR BEMÄSTRAT TRÄNINGEN ${shortName}`,
+  mastered: "BEMÄSTRAT",
+  nextPart: (name) => `Nästa: ${name}`,
+  setN: (n) => `Set ${n}`,
+  statsSeen: (seen, total, shortName) => `Du har sett ${seen} av ${total} frågor för ${shortName}. Tryck på en rad för att svara igen.`,
+  dateLocale: "sv-SE",
+};
+
+const da: ExamUi = {
+  heroTitle: (done, total) => {
+    if (done === 0) return `Gør alle ${total} trin færdige`;
+    if (done === total) return "Du er klar";
+    if (done === total - 1) return "Ét tilbage";
+    if (done === 1) return `Godt begyndt. 1 af ${total} færdig`;
+    const frac = done / total;
+    if (frac < 0.45) return `${done} af ${total} færdige`;
+    if (frac < 0.55) return "Halvvejs";
+    if (frac < 0.8) return "Mere end halvdelen";
+    return `${done} af ${total}, næsten klar`;
+  },
+  questionsCount: (n) => `${n} spørgsmål`,
+  needToPass: (pct) => `Du skal have ${pct}% for at bestå`,
+  fullLengthExam: "🎯 Hel prøve",
+  testN: (n) => `🎯 Prøve ${n}`,
+  examTestN: (shortName, n) => `${shortName} prøve ${n}`,
+  pctToPass: (pct) => `${pct}% for at bestå`,
+  yourStats: "Din statistik",
+  yourStatsSub: "Hvert spørgsmål, du har set, sorteret efter det, du oftest svarer forkert på",
+  aboutThisTest: "Om denne øvelsesprøve",
+  trainingBadge: (shortName) => `${shortName} TRÆNING`,
+  masteredMyTraining: (shortName) => `${shortName} TRÆNING MESTRET`,
+  mastered: "MESTRET",
+  nextPart: (name) => `Næste: ${name}`,
+  setN: (n) => `Sæt ${n}`,
+  statsSeen: (seen, total, shortName) => `${seen} af ${total} ${shortName}-spørgsmål set. Tryk på en række for at svare igen.`,
+  dateLocale: "da-DK",
+};
+
+const fi: ExamUi = {
+  heroTitle: (done, total) => {
+    if (done === 0) return `Tee kaikki ${total} vaihetta`;
+    if (done === total) return "Olet valmis";
+    if (done === total - 1) return "Yksi jäljellä";
+    if (done === 1) return `Hyvä alku. 1/${total} tehty`;
+    const frac = done / total;
+    if (frac < 0.45) return `${done}/${total} tehty`;
+    if (frac < 0.55) return "Puolivälissä";
+    if (frac < 0.8) return "Yli puolivälin";
+    return `${done}/${total}, melkein valmis`;
+  },
+  questionsCount: (n) => `${n} kysymystä`,
+  needToPass: (pct) => `Läpäisyyn tarvitaan ${pct} %`,
+  fullLengthExam: "🎯 Täysimittainen koe",
+  testN: (n) => `🎯 Koe ${n}`,
+  examTestN: (shortName, n) => `${shortName}, koe ${n}`,
+  pctToPass: (pct) => `${pct} % läpäisyyn`,
+  yourStats: "Omat tilastosi",
+  yourStatsSub: "Jokainen näkemäsi kysymys, järjestettynä sen mukaan, mihin vastaat useimmin väärin",
+  aboutThisTest: "Tietoa tästä harjoituskokeesta",
+  trainingBadge: (shortName) => `HARJOITTELU ${shortName}`,
+  masteredMyTraining: (shortName) => `${shortName}: HARJOITTELU HALLUSSA`,
+  mastered: "HALLUSSA",
+  nextPart: (name) => `Seuraavaksi: ${name}`,
+  setN: (n) => `Sarja ${n}`,
+  statsSeen: (seen, total, shortName) => `Olet nähnyt ${seen}/${total} kokeen ${shortName} kysymyksistä. Napauta riviä vastataksesi uudelleen.`,
+  dateLocale: "fi-FI",
+};
+
+const hu: ExamUi = {
+  heroTitle: (done, total) => {
+    if (done === 0) return `Teljesítsd mind a(z) ${total} lépést`;
+    if (done === total) return "Készen állsz";
+    if (done === total - 1) return "Már csak egy";
+    if (done === 1) return `Jó kezdés. ${total} lépésből 1 kész`;
+    const frac = done / total;
+    if (frac < 0.45) return `${total} lépésből ${done} kész`;
+    if (frac < 0.55) return "Félúton vagy";
+    if (frac < 0.8) return "Túl vagy a felén";
+    return `${total} lépésből ${done} kész, majdnem megvan`;
+  },
+  questionsCount: (n) => `${n} kérdés`,
+  needToPass: (pct) => `A sikerhez ${pct}% kell`,
+  fullLengthExam: "🎯 Teljes hosszúságú vizsga",
+  testN: (n) => `🎯 ${n}. teszt`,
+  examTestN: (shortName, n) => `${shortName}, ${n}. teszt`,
+  pctToPass: (pct) => `${pct}% a sikerhez`,
+  yourStats: "Statisztikáid",
+  yourStatsSub: "Minden kérdés, amit láttál, aszerint rendezve, amit a legtöbbször elrontasz",
+  aboutThisTest: "Erről a gyakorló tesztről",
+  trainingBadge: (shortName) => `GYAKORLÁS: ${shortName}`,
+  masteredMyTraining: (shortName) => `ELSAJÁTÍTOTTAM: ${shortName} GYAKORLÁS`,
+  mastered: "ELSAJÁTÍTVA",
+  nextPart: (name) => `Következik: ${name}`,
+  setN: (n) => `${n}. sorozat`,
+  statsSeen: (seen, total, shortName) => `${shortName}: eddig ${seen} / ${total} kérdést láttál. Koppints egy sorra, hogy újra válaszolj.`,
+  dateLocale: "hu-HU",
+};
+
+/** Romanian: "de" between a number and its noun from 20 up ("8 pași", "20 de pași"). */
+const roDe = (n: number, noun: string) => {
+  const r = n % 100;
+  return (r === 0 && n !== 0) || r >= 20 ? `${n} de ${noun}` : `${n} ${noun}`;
+};
+
+const ro: ExamUi = {
+  heroTitle: (done, total) => {
+    if (done === 0) return `Fă toți cei ${roDe(total, "pași")}`;
+    if (done === total) return "Ești pregătit";
+    if (done === total - 1) return "Încă unul";
+    if (done === 1) return `Început bun. 1 din ${total} gata`;
+    const frac = done / total;
+    if (frac < 0.45) return `${done} din ${total} gata`;
+    if (frac < 0.55) return "La jumătatea drumului";
+    if (frac < 0.8) return "Peste jumătate";
+    return `${done} din ${total}, aproape gata`;
+  },
+  questionsCount: (n) => roDe(n, "întrebări"),
+  needToPass: (pct) => `Ai nevoie de ${pct}% ca să treci`,
+  fullLengthExam: "🎯 Examen complet",
+  testN: (n) => `🎯 Testul ${n}`,
+  examTestN: (shortName, n) => `${shortName}, testul ${n}`,
+  pctToPass: (pct) => `${pct}% pentru promovare`,
+  yourStats: "Statisticile tale",
+  yourStatsSub: "Fiecare întrebare pe care ai văzut-o, ordonată după cele pe care le greșești cel mai des",
+  aboutThisTest: "Despre acest test de exersare",
+  trainingBadge: (shortName) => `ANTRENAMENT: ${shortName}`,
+  masteredMyTraining: (shortName) => `AM STĂPÂNIT ANTRENAMENTUL ${shortName}`,
+  mastered: "STĂPÂNIT",
+  nextPart: (name) => `Urmează: ${name}`,
+  setN: (n) => `Setul ${n}`,
+  statsSeen: (seen, total, shortName) => `${shortName}: ai văzut ${seen} din ${roDe(total, "întrebări")}. Atinge un rând ca să răspunzi din nou.`,
+  dateLocale: "ro-RO",
+};
+
+const el: ExamUi = {
+  heroTitle: (done, total) => {
+    if (done === 0) return `Ολοκλήρωσε και τα ${total} βήματα`;
+    if (done === total) return "Τα κατάφερες";
+    if (done === total - 1) return "Μένει ένα";
+    if (done === 1) return `Καλή αρχή. 1/${total} έτοιμο`;
+    const frac = done / total;
+    if (frac < 0.45) return `${done}/${total} έτοιμα`;
+    if (frac < 0.55) return "Στα μισά του δρόμου";
+    if (frac < 0.8) return "Πέρα από τη μέση";
+    return `${done}/${total}, σχεδόν έτοιμο`;
+  },
+  questionsCount: (n) => `${n} ερωτήσεις`,
+  needToPass: (pct) => `Χρειάζεσαι ${pct} % για να περάσεις`,
+  fullLengthExam: "🎯 Πλήρης εξέταση",
+  testN: (n) => `🎯 Τεστ ${n}`,
+  examTestN: (shortName, n) => `${shortName}, τεστ ${n}`,
+  pctToPass: (pct) => `${pct} % για επιτυχία`,
+  yourStats: "Τα στατιστικά σου",
+  yourStatsSub: "Κάθε ερώτηση που έχεις δει, ταξινομημένη με βάση αυτές που απαντάς πιο συχνά λάθος",
+  aboutThisTest: "Σχετικά με αυτό το τεστ εξάσκησης",
+  trainingBadge: (shortName) => `ΕΞΑΣΚΗΣΗ ${shortName}`,
+  masteredMyTraining: (shortName) => `${shortName}: Η ΕΞΑΣΚΗΣΗ ΚΑΤΑΚΤΗΘΗΚΕ`,
+  mastered: "ΚΑΤΑΚΤΗΘΗΚΕ",
+  nextPart: (name) => `Επόμενο: ${name}`,
+  setN: (n) => `Σετ ${n}`,
+  statsSeen: (seen, total, shortName) => `Έχεις δει ${seen} από τις ${total} ερωτήσεις του ${shortName}. Πάτα μια γραμμή για να απαντήσεις ξανά.`,
+  dateLocale: "el-GR",
+};
+
+const EXAM_UI: Partial<Record<Language, ExamUi>> = { en, es, vi, ko, zh, de, fr, it, pl, nl, pt, sv, da, fi, hu, ro, el };
 
 export function examUi(lang: Language): ExamUi {
   return EXAM_UI[lang] ?? en;

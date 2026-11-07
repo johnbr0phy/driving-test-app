@@ -10,7 +10,8 @@ language's "all/none of the above" phrases and option-reference connectors are
 banned too (the English ones stay banned). --len-scale multiplies the 12..42
 average-option range and the 110-character limit, since the same idea takes
 more characters in German than in English; it defaults per language (de 1.3,
-nl 1.25, fr 1.2, pl 1.2, it 1.15, pt 1.15, es 1.15, tr 1.1, else 1.0).
+nl 1.25, fr 1.2, pl 1.2, it 1.15, pt 1.15, es 1.15, tr 1.1, fi 1.2, ro 1.2, el 1.2,
+hu 1.15, da 1.15, sv 1.05, else 1.0).
 
 With --pool flags the category counts are checked exactly; without them the
 counts are only reported. Exit code 0 on PASS, 1 on FAIL.
@@ -59,10 +60,16 @@ LANG_RULES = {
     "pl": (r"wszystkie powyższe|żadna z powyższych|wszystkie odpowiedzi", ["i", "lub", "oraz"], ["obie", "oba"]),
     "nl": (r"alle bovenstaande|geen van de bovenstaande|alle antwoorden", ["en", "of"], ["beide"]),
     "pt": (r"todas as anteriores|nenhuma das anteriores|todas as respostas", ["e", "ou"], ["ambas", "ambos"]),
+    "sv": (r"alla ovanstående|inget av ovanstående|ingen av ovanstående|alla svaren|alla alternativen", ["och", "eller"], ["båda"]),
+    "da": (r"alle ovenstående|ingen af ovenstående|alle svar(ene)? er rigtige|ingen af svarene", ["og", "eller"], ["begge"]),
+    "fi": (r"kaikki edellä mainitut|kaikki yllä olevat|ei mikään edellä mainituista|ei mikään yllä olevista|kaikki vastaukset|kaikki vaihtoehdot", ["ja", "tai"], ["molemmat"]),
+    "hu": (r"a fentiek mindegyike|a fentiek közül egyik sem|egyik fenti sem|egyik válasz sem|mindegyik válasz helyes|minden válasz helyes", ["és", "vagy"], ["mindkettő", "mindkét"]),
+    "ro": (r"toate cele de mai sus|niciuna (dintre|din) cele de mai sus|niciunul (dintre|din) cele de mai sus|toate variantele|toate răspunsurile|niciuna dintre variante|niciun răspuns nu", ["și", "sau", "ori"], ["ambele", "amândouă", "amândoi", "ambii"]),
+    "el": (r"όλα τα παραπάνω|όλες οι παραπάνω|όλοι οι παραπάνω|κανένα από τα παραπάνω|καμία από τις παραπάνω|κανένας από τους παραπάνω|όλες οι απαντήσεις", ["και", "ή"], ["και", "αμφότερα"]),
     "tr": (r"^hepsi$|^hiçbiri$|yukarıdakilerin hepsi", ["ve", "veya"], ["ikisi de"]),
     "id": (r"semua benar|semua jawaban benar|tidak ada yang benar", ["dan", "atau"], ["keduanya"]),
 }
-LEN_SCALE = {"de": 1.3, "nl": 1.25, "fr": 1.2, "pl": 1.2, "it": 1.15, "pt": 1.15, "es": 1.15, "tr": 1.1}
+LEN_SCALE = {"de": 1.3, "nl": 1.25, "fr": 1.2, "pl": 1.2, "it": 1.15, "pt": 1.15, "es": 1.15, "tr": 1.1, "sv": 1.05, "da": 1.15, "fi": 1.2, "hu": 1.15, "ro": 1.2, "el": 1.2}
 
 
 def banned_re(lang: str) -> re.Pattern:
@@ -159,6 +166,9 @@ KNOWN_BANKS = {
     "ham-questions.json": dict(rows=397, max_over=17,
         why="the official NCVEC 2026-2030 pool; its wording is the FCC's and cannot be shortened"),
     "de-theorie-questions.json": dict(rows=210, why="seven 30-question tests"),
+    "sweden-hunting-theory-questions.json": dict(rows=210, why="three real-length 70-question tests"),
+    "dk-indfoedsret-questions.json": dict(rows=320, why="eight 40-question tests"),
+    "de-motorrad-questions.json": dict(rows=210, why="seven 30-question tests"),
     "cdl-questions.json": dict(rows=600, max_avg=43,
         why="six tests from a 600-question bank; long-form options average 43 chars after the Nov 2026 key-length fix"),
 }
@@ -232,7 +242,7 @@ def main() -> int:
             if isinstance(r[k], str) and not r[k].strip():
                 errs.append(f"{qid}: empty {k}")
         q = r["question"].strip()
-        if not (q.endswith("?") or q.endswith(":")):
+        if not (q.endswith("?") or q.endswith(":") or (args.lang == "el" and q.endswith(";"))):
             errs.append(f"{qid}: stem does not end with ? or :")
         if variant_state:
             # Ids come from the national bank (or the state's form), so they skip numbers

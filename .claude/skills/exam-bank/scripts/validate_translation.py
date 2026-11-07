@@ -57,6 +57,12 @@ LANGUAGE_PATTERNS = {
     "pl": (["i", "lub", "oraz"], ["Wszystkie powyższe", "Żadna z powyższych", "Wszystkie odpowiedzi"], ["Obie", "Oba", "Obie odpowiedzi"]),
     "nl": (["en", "of"], ["Alle bovenstaande", "Geen van de bovenstaande", "Alle antwoorden"], ["Beide", "Beide antwoorden"]),
     "pt": (["e", "ou"], ["Todas as anteriores", "Nenhuma das anteriores", "Todas as respostas"], ["Ambas", "Ambos", "Ambas as anteriores", "Ambas estão corretas"]),
+    "sv": (["och", "eller"], ["Alla ovanstående", "Inget av ovanstående", "Ingen av ovanstående", "Alla svaren", "Alla alternativen"], ["Båda", "Båda är rätt", "Båda svaren", "Båda alternativen"]),
+    "da": (["og", "eller"], ["Alle ovenstående", "Ingen af ovenstående", "Alle svarene er rigtige", "Alle svar er rigtige", "Ingen af svarene"], ["Begge", "Begge dele", "Begge svar", "Begge svar er rigtige"]),
+    "fi": (["ja", "tai"], ["Kaikki edellä mainitut", "Kaikki yllä olevat", "Ei mikään edellä mainituista", "Ei mikään yllä olevista", "Kaikki vastaukset", "Kaikki vaihtoehdot"], ["Molemmat", "Molemmat ovat oikein", "Molemmat vastaukset", "Molemmat vaihtoehdot"]),
+    "hu": (["és", "vagy"], ["A fentiek mindegyike", "A fentiek közül egyik sem", "Egyik fenti sem", "Egyik válasz sem", "Mindegyik válasz helyes", "Minden válasz helyes"], ["Mindkettő", "Mindkettő helyes", "Mindkét válasz", "Mindkét válasz helyes"]),
+    "ro": (["și", "sau", "ori"], ["Toate cele de mai sus", "Niciuna dintre cele de mai sus", "Niciunul dintre cele de mai sus", "Toate variantele", "Toate variantele sunt corecte", "Toate răspunsurile sunt corecte", "Niciuna dintre variante", "Niciun răspuns nu este corect"], ["Ambele", "Amândouă", "Amândoi", "Ambii", "Ambele variante", "Ambele răspunsuri", "Ambele sunt corecte"]),
+    "el": (["και", "ή"], ["Όλα τα παραπάνω", "Όλες οι παραπάνω", "Όλοι οι παραπάνω", "Κανένα από τα παραπάνω", "Καμία από τις παραπάνω", "Κανένας από τους παραπάνω", "Όλες οι απαντήσεις"], ["Και τα δύο", "Και οι δύο", "Αμφότερα", "Και οι δύο απαντήσεις"]),
 }
 OTHER_PATTERNS = []
 for joins, phrases, both in LANGUAGE_PATTERNS.values():

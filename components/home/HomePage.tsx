@@ -91,23 +91,35 @@ const AUTHORITY: Record<Exclude<Region, "US">, string> = {
   PK: "any provincial or ICT licensing authority, the PPSC, Punjab Police, the Pakistan Army, the PAF, PMDC or PNMC",
   ES: "the DGT (Dirección General de Tráfico)",
   PT: "the IMT",
-  RO: "the DGPCI (formerly DRPCIV) or any county driving licence service",
-  SE: "Trafikverket or Transportstyrelsen",
-  GR: "the Ministry of Infrastructure and Transport or any Transport Directorate",
-  DK: "Færdselsstyrelsen",
-  HU: "the KAV or any Hungarian authority",
+  RO: "the DGPCI (formerly DRPCIV), the ARR, the Ministry of Health or the universities of medicine",
+  SE: "Trafikverket, Transportstyrelsen, Naturvårdsverket or UHR",
+  GR: "the Ministry of Infrastructure and Transport, any Transport Directorate, the General Secretariat for Citizenship or ΕΟΠΠΕΠ",
+  DK: "Færdselsstyrelsen, SIRI or Naturstyrelsen",
+  HU: "the KAV, the Hungarian Red Cross, the MNB or any Hungarian authority",
   BE: "GOCA, any exam centre or the regional authorities",
-  FI: "Traficom, Ajovarma or A-Katsastus",
+  FI: "Traficom, Ajovarma, Ruokavirasto or Suomen riistakeskus",
   MT: "Transport Malta",
   DE: "TÜV/DEKRA",
 };
 
 // AUTHORITY is written for an English sentence ("the IMT"); other languages
-// get the bare names, and Belgium's list in Dutch on its own page.
+// get the bare names, and Belgium's list in Dutch, Sweden's in Swedish, Denmark's in Danish, Finland's in Finnish, Hungary's in Hungarian, Romania's in Romanian and Greece's in Greek on their own pages.
 const AUTHORITY_NL_BE = "GOCA, de examencentra of de gewestelijke overheden";
+const AUTHORITY_SV_SE = "Trafikverket, Transportstyrelsen, Naturvårdsverket eller UHR";
+const AUTHORITY_DA_DK = "Færdselsstyrelsen, SIRI eller Naturstyrelsen";
+const AUTHORITY_FI_FI = "Traficom, Ajovarma, Ruokavirasto tai Suomen riistakeskus";
+const AUTHORITY_HU_HU = "KAV, Magyar Vöröskereszt, MNB vagy más magyar hatóság";
+const AUTHORITY_EL_GR = "Υπουργείο Υποδομών και Μεταφορών, Διευθύνσεις Μεταφορών, Γενική Γραμματεία Ιθαγένειας ή ΕΟΠΠΕΠ";
+const AUTHORITY_RO_RO = "DGPCI (fostul DRPCIV), ARR, Ministerul Sănătății, universitățile de medicină";
 function authorityIn(region: Exclude<Region, "US">, lang: Language): string {
   if (lang === "en") return AUTHORITY[region];
   if (region === "BE" && lang === "nl") return AUTHORITY_NL_BE;
+  if (region === "SE" && lang === "sv") return AUTHORITY_SV_SE;
+  if (region === "DK" && lang === "da") return AUTHORITY_DA_DK;
+  if (region === "FI" && lang === "fi") return AUTHORITY_FI_FI;
+  if (region === "HU" && lang === "hu") return AUTHORITY_HU_HU;
+  if (region === "RO" && lang === "ro") return AUTHORITY_RO_RO;
+  if (region === "GR" && lang === "el") return AUTHORITY_EL_GR;
   return AUTHORITY[region].replace(/^the /, "");
 }
 

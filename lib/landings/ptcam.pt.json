@@ -1,0 +1,108 @@
+{
+  "metaTitle": "Exame CAM 2026 - Testes Grátis para Motoristas de Pesados",
+  "metaDescription": "Prepare o exame CAM do IMT: 200 perguntas originais sobre tempos de condução, tacógrafo, carga, passageiros e condução racional, com explicações, e três testes de 60 perguntas. Grátis, sem conta.",
+  "keywords": "exame CAM, testes CAM, exame CAM IMT, certificado de aptidão para motorista, perguntas exame CAM, CAM motorista pesados, qualificação inicial motoristas, código 95, exame motorista profissional, tempos de condução e repouso, tacógrafo perguntas, teste CAM online grátis 2026",
+  "breadcrumb": {
+    "home": "Início",
+    "allTests": "Todos os testes",
+    "current": "Exame CAM"
+  },
+  "h1": "Exame CAM 2026: Testes para Motoristas de Pesados",
+  "subtitle": "200 perguntas originais para o exame do Certificado de Aptidão para Motorista, de camiões e de autocarros: tempos de condução, tacógrafo, carga, passageiros, condução racional e emergências. Três testes de 60 perguntas, 36 certas para passar, como no exame real. Pensado para o telemóvel. Sem conta.",
+  "facts": {
+    "h2": "O exame CAM em resumo",
+    "answer": "O exame do CAM (Certificado de Aptidão para Motorista) é feito pelo IMT no fim do curso de qualificação inicial, comum ou acelerada, que os motoristas profissionais de pesados de mercadorias (categorias C e CE) e de passageiros (D e DE) têm de concluir numa entidade formadora reconhecida. É uma prova escrita de 60 perguntas, de escolha entre quatro respostas, de resposta direta ou de ambos os tipos, com duas horas de duração. Todas as perguntas valem o mesmo, numa escala de 0 a 100, e fica aprovado com pelo menos 60%. Só são admitidos candidatos que concluíram a formação há menos de dois anos, e a inscrição é feita pela entidade formadora. O CAM é válido por cinco anos e, para os motoristas residentes em Portugal, a qualificação fica averbada na carta de condução com o código 95.",
+    "tigertest": "O Tigertest tem 200 perguntas originais sobre as matérias da qualificação inicial, com explicações, e três testes de 60 perguntas, tudo grátis e sem conta. As perguntas não são copiadas das listas do IMT.",
+    "rows": [
+      { "label": "Entidade", "value": "IMT (Instituto da Mobilidade e dos Transportes)" },
+      { "label": "Perguntas", "value": "60, escolha múltipla e/ou resposta direta" },
+      { "label": "Tempo", "value": "2 horas" },
+      { "label": "Para passar", "value": "Pelo menos 60% (36 em 60)" },
+      { "label": "Admissão", "value": "Formação concluída há menos de dois anos" },
+      { "label": "Validade do CAM", "value": "5 anos" },
+      { "label": "Na carta de condução", "value": "Código 95" },
+      { "label": "Testes no Tigertest", "value": "3 x 60 perguntas, 36 para passar" }
+    ],
+    "footnote": "Com base no Despacho n.º 26482/2009 do IMTT (condições de realização dos exames), no Decreto-Lei n.º 126/2009 republicado pelo Decreto-Lei n.º 102-C/2020 e na informação do gov.pt, verificados em novembro de 2026. O Tigertest não tem qualquer ligação ao IMT. As regras mudam, por isso confirme os detalhes atuais em",
+    "source": {
+      "name": "IMT: formação e certificação dos motoristas de pesados",
+      "url": "https://www.imt-ip.pt/?p=5600"
+    }
+  },
+  "howItWorks": {
+    "h2": "Como funciona",
+    "cards": [
+      {
+        "h3": "Treine por tema",
+        "p": "Cinco conjuntos de treino: condução racional e tecnologia do veículo; carga e passageiros; tempos de condução e tacógrafo; regulamentação e ambiente económico; saúde, segurança e emergências. As perguntas em que erra voltam até as dominar."
+      },
+      {
+        "h3": "Testes do tamanho do exame",
+        "p": "Três testes de 60 perguntas, o tamanho do exame real, e em cada um passa com 36 certas, como no exame. Nenhuma pergunta se repete entre testes e todas as respostas explicam a regra."
+      }
+    ]
+  },
+  "topics": {
+    "h2": "Feito a partir das matérias da qualificação inicial",
+    "p": "Os temas seguem o Anexo I da Diretiva 2003/59/CE, na redação da Diretiva (UE) 2018/645, que o Decreto-Lei n.º 126/2009 transpõe: condução racional, carga, passageiros, regulamentação social e do transporte, saúde, segurança rodoviária e ambiente económico. As regras são as do Regulamento (CE) 561/2006 com o Pacote da Mobilidade, do Regulamento (UE) 165/2014 e do Código da Estrada, em vigor em novembro de 2026. Uma só base de perguntas serve camiões e autocarros. O exame real pode ter perguntas de resposta direta; aqui todas são de escolha entre quatro respostas, e não há perguntas sobre coimas.",
+    "items": [
+      "Condução racional e tecnologia do veículo (10 em 60)",
+      "Tempos de condução e repouso (9 em 60)",
+      "Carga e acondicionamento (7 em 60)",
+      "Segurança e conforto dos passageiros (7 em 60)",
+      "Riscos, acidentes e emergências (7 em 60)",
+      "Tacógrafo (6 em 60)",
+      "Regulamentação do transporte e da profissão (5 em 60)",
+      "Saúde, fadiga e ergonomia (5 em 60)",
+      "Ambiente económico e imagem da empresa (4 em 60)"
+    ]
+  },
+  "howToPass": {
+    "h2": "Como passar no exame CAM",
+    "steps": [
+      {
+        "h3": "1. Domine os números dos tempos de condução",
+        "p": "9 horas por dia (10 duas vezes por semana), 56 por semana e 90 em duas semanas; pausa de 45 minutos depois de 4 h 30 de condução, ou 15 e depois 30; repouso diário de 11 horas e semanal de 45. São as perguntas que mais se repetem e as mais fáceis de errar por um número."
+      },
+      {
+        "h3": "2. Conheça o tacógrafo pelos símbolos",
+        "p": "Volante para condução, martelos cruzados para outro trabalho, quadrado com diagonal para disponibilidade, cama para pausa e repouso. Saiba também os prazos do cartão de condutor: cinco anos de validade, sete dias para pedir a substituição e os 56 dias de registos para mostrar num controlo."
+      },
+      {
+        "h3": "3. Pense como motorista profissional",
+        "p": "Nas perguntas de condução racional, carga e passageiros a resposta certa é quase sempre a que antecipa, poupa travões e combustível e protege a carga e as pessoas: zona verde do conta-rotações, retardador nas descidas, carga baixa e amarrada, arranques suaves."
+      },
+      {
+        "h3": "4. Repita os erros antes do exame",
+        "p": "O Tigertest guarda as perguntas em que errou e volta a mostrá-las. Faça os testes de 60 quando os conjuntos estiverem verdes, e repita-os até passar com folga dos 36."
+      }
+    ]
+  },
+  "faqTitle": "Perguntas frequentes sobre o exame CAM",
+  "faqs": [
+    {
+      "q": "Como é o exame CAM?",
+      "a": "É uma prova escrita do IMT com 60 perguntas, de escolha entre quatro respostas, de resposta direta ou uma combinação das duas, com duas horas de duração. Cada pergunta vale o mesmo, numa escala de 0 a 100, e é preciso pelo menos 60% para ficar aprovado."
+    },
+    {
+      "q": "Quem pode fazer o exame CAM?",
+      "a": "Os candidatos que concluíram o curso de qualificação inicial, comum ou acelerada, numa entidade formadora reconhecida há menos de dois anos. A inscrição para o exame é feita pela entidade formadora; depois de uma reprovação, o candidato pode inscrever-se sozinho num novo exame."
+    },
+    {
+      "q": "As perguntas do Tigertest são as do IMT?",
+      "a": "Não. O IMT publica listas de perguntas do CAM, mas todas as perguntas do Tigertest são originais, escritas a partir da diretiva europeia, dos regulamentos dos tempos de condução e do tacógrafo e do Código da Estrada. Servem para aprender as matérias, não para decorar respostas."
+    },
+    {
+      "q": "O que o Tigertest não reproduz?",
+      "a": "O exame real pode incluir perguntas de resposta direta; aqui todas têm quatro opções e uma única resposta certa. As imagens são descritas por palavras e não há perguntas sobre coimas. A mesma base serve camiões e autocarros, por isso inclui perguntas de carga e de passageiros."
+    },
+    {
+      "q": "O exame CAM no Tigertest é grátis?",
+      "a": "Sim. Os cinco conjuntos de treino e os três testes de 60 perguntas são grátis e funcionam sem conta. Com uma conta grátis, o progresso fica guardado em todos os dispositivos."
+    }
+  ],
+  "finalCta": {
+    "h2": "Pronto para o exame CAM?",
+    "p": "Comece já, grátis e sem conta. 200 perguntas sobre todas as matérias da qualificação inicial."
+  }
+}

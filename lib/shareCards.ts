@@ -76,6 +76,12 @@ const CARD_FOOTERS: Record<string, string> = {
   pl: "Darmowe ćwiczenia. Każda odpowiedź wyjaśniona.",
   nl: "Gratis oefenen. Elk antwoord uitgelegd.",
   pt: "Treino gratuito. Cada resposta explicada.",
+  sv: "Gratis övning. Varje svar förklaras.",
+  da: "Gratis øvelse. Hvert svar forklaret.",
+  fi: "Ilmaista harjoittelua. Jokainen vastaus selitetään.",
+  hu: "Ingyenes gyakorlás. Minden válasz elmagyarázva.",
+  ro: "Exersare gratuită. Fiecare răspuns explicat.",
+  el: "Δωρεάν εξάσκηση. Κάθε απάντηση εξηγείται.",
 };
 
 // Versioned card copy is separate from longer search descriptions and bank counts.
@@ -840,6 +846,10 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
     "color": "hsl(133, 85%, 28%)",
     "tint": "hsl(133, 80%, 96%)"
   },
+  "ptmoto": {
+    "color": "hsl(14, 100%, 30%)",
+    "tint": "hsl(14, 80%, 96%)"
+  },
   "bedriving": {
     "color": "hsl(52, 100%, 26%)",
     "tint": "hsl(52, 80%, 96%)"
@@ -847,6 +857,10 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
   "dkteori": {
     "color": "hsl(348, 70%, 30%)",
     "tint": "hsl(348, 70%, 96%)"
+  },
+  "dkmoto": {
+    "color": "hsl(12, 85%, 24%)",
+    "tint": "hsl(12, 85%, 96%)"
   },
   "setrafik": {
     "color": "hsl(203, 85%, 25%)",
@@ -856,9 +870,49 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
     "color": "hsl(224, 100%, 26%)",
     "tint": "hsl(224, 80%, 96%)"
   },
+  "fimoto": {
+    "color": "hsl(12, 70%, 22%)",
+    "tint": "hsl(12, 80%, 96%)"
+  },
+  "fitruck": {
+    "color": "hsl(35, 40%, 18%)",
+    "tint": "hsl(35, 80%, 96%)"
+  },
+  "fihygiene": {
+    "color": "hsl(172, 90%, 22%)",
+    "tint": "hsl(172, 80%, 96%)"
+  },
   "grdriving": {
     "color": "hsl(210, 55%, 46%)",
     "tint": "hsl(210, 55%, 96%)"
+  },
+  "grmoto": {
+    "color": "hsl(16, 35%, 22%)",
+    "tint": "hsl(16, 40%, 96%)"
+  },
+  "bemoto": {
+    "color": "hsl(21, 65%, 22%)",
+    "tint": "hsl(21, 60%, 95%)"
+  },
+  "bevracht": {
+    "color": "hsl(214, 25%, 18%)",
+    "tint": "hsl(214, 30%, 96%)"
+  },
+  "betoelating": {
+    "color": "hsl(202, 100%, 18%)",
+    "tint": "hsl(202, 80%, 96%)"
+  },
+  "befsmavz": {
+    "color": "hsl(345, 90%, 20%)",
+    "tint": "hsl(345, 70%, 96%)"
+  },
+  "grcitizen": {
+    "color": "hsl(222, 100%, 18%)",
+    "tint": "hsl(222, 80%, 96%)"
+  },
+  "grsecurity": {
+    "color": "hsl(240, 50%, 18%)",
+    "tint": "hsl(240, 60%, 96%)"
   },
   "rodrpciv": {
     "color": "hsl(234, 95%, 30%)",
@@ -868,9 +922,45 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
     "color": "hsl(125, 20%, 42%)",
     "tint": "hsl(125, 20%, 96%)"
   },
+  "hukreszmoto": {
+    "color": "hsl(160, 25%, 22%)",
+    "tint": "hsl(160, 25%, 96%)"
+  },
+  "hugki": {
+    "color": "hsl(40, 25%, 22%)",
+    "tint": "hsl(40, 25%, 96%)"
+  },
+  "huelsoseg": {
+    "color": "hsl(345, 20%, 34%)",
+    "tint": "hsl(345, 30%, 96%)"
+  },
+  "hubizt": {
+    "color": "hsl(232, 15%, 32%)",
+    "tint": "hsl(232, 25%, 96%)"
+  },
+  "rocpi": {
+    "color": "hsl(210, 55%, 20%)",
+    "tint": "hsl(210, 50%, 96%)"
+  },
+  "rotaxi": {
+    "color": "hsl(60, 85%, 26%)",
+    "tint": "hsl(60, 70%, 95%)"
+  },
+  "roadmed": {
+    "color": "hsl(340, 45%, 24%)",
+    "tint": "hsl(340, 40%, 96%)"
+  },
+  "rorezid": {
+    "color": "hsl(194, 75%, 24%)",
+    "tint": "hsl(194, 60%, 96%)"
+  },
   "mttheory": {
     "color": "hsl(0, 88%, 40%)",
     "tint": "hsl(0, 80%, 96%)"
+  },
+  "mtmoto": {
+    "color": "hsl(5, 50%, 20%)",
+    "tint": "hsl(5, 80%, 96%)"
   },
   "detheorie": {
     "color": "hsl(0, 0%, 24%)",

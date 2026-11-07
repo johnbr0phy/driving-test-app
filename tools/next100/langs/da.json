@@ -1,0 +1,155 @@
+{
+  "lang": "da",
+  "locale": "da-DK",
+  "englishName": "Danish",
+  "label": "Dansk",
+  "flag": "\\u{1F1E9}\\u{1F1F0}",
+  "review": "machine",
+  "note": "Machine-translated, pending native review. Register: du. Paste-ready TS lines are in tools/next100/langs/da.WIRING.md.",
+  "TEST_SET_NAMES": {
+    "file": "lib/exams.ts",
+    "pattern": "Træningssæt {n}",
+    "ts": "da: (n) => `Træningssæt ${n}`,"
+  },
+  "trainingPartName": {
+    "file": "lib/exams.ts",
+    "pattern": "{set}, del {part} af {partCount}",
+    "ts": "if (lang === \"da\") return `${p.set.name}, del ${p.part} af ${p.partCount}`;"
+  },
+  "EXAM_UI": {
+    "file": "lib/examUi.ts",
+    "dateLocale": "da-DK",
+    "heroTitle": {
+      "zero": "Gør alle {total} trin færdige",
+      "all": "Du er klar",
+      "oneLeft": "Ét tilbage",
+      "one": "Godt begyndt. 1 af {total} færdig",
+      "few": "{done} af {total} færdige",
+      "half": "Halvvejs",
+      "overHalf": "Mere end halvdelen",
+      "almost": "{done} af {total}, næsten klar"
+    },
+    "questionsCount": "{n} spørgsmål",
+    "needToPass": "Du skal have {pct}% for at bestå",
+    "fullLengthExam": "🎯 Hel prøve",
+    "testN": "🎯 Prøve {n}",
+    "examTestN": "{shortName} prøve {n}",
+    "pctToPass": "{pct}% for at bestå",
+    "yourStats": "Din statistik",
+    "yourStatsSub": "Hvert spørgsmål, du har set, sorteret efter det, du oftest svarer forkert på",
+    "aboutThisTest": "Om denne øvelsesprøve",
+    "trainingBadge": "{shortName} TRÆNING",
+    "masteredMyTraining": "{shortName} TRÆNING MESTRET",
+    "mastered": "MESTRET",
+    "nextPart": "Næste: {name}",
+    "setN": "Sæt {n}",
+    "statsSeen": "{seen} af {total} {shortName}-spørgsmål set. Tryk på en række for at svare igen."
+  },
+  "COPY": {
+    "file": "components/exam/ExamLandingHero.tsx",
+    "start": "Begynd at øve",
+    "dashboard": "Til din oversigt",
+    "mobile": "Øv på din telefon",
+    "desktop": "Tag prøven på computeren",
+    "mobileAlt": "Tigertest {name}: træning på telefonen",
+    "desktopAlt": "Tigertest {name}: øvelsesprøve på computeren"
+  },
+  "SAMPLE_COPY": {
+    "file": "components/exam/ExamSampleQuestions.tsx",
+    "title": "{name}: eksempler på spørgsmål med svar",
+    "sub": "{n} af de {total} øvelsesspørgsmål, ét fra hvert emne, med svaret forklaret.",
+    "answer": "Svar",
+    "quiz": "{name}: eksempler på spørgsmål"
+  },
+  "RELATED_COPY": {
+    "file": "components/exam/ExamRelatedTests.tsx",
+    "title": "Andre øvelsesprøver",
+    "sub": "Alle prøver på Tigertest er gratis, og du skal ikke have en konto for at begynde.",
+    "country": "Gratis øvelsesprøver: {name}",
+    "all": "Se alle {n} øvelsesprøver"
+  },
+  "CARD_FOOTERS": {
+    "file": "lib/shareCards.ts",
+    "value": "Gratis øvelse. Hvert svar forklaret."
+  },
+  "shuffleGuard": {
+    "file": "lib/shuffleOptions.ts (LANGUAGE_PATTERNS) and .claude/skills/exam-bank/scripts/validate_translation.py (LANGUAGE_PATTERNS)",
+    "connectors": [
+      "og",
+      "eller"
+    ],
+    "phrases": [
+      "Alle ovenstående",
+      "Ingen af ovenstående",
+      "Alle svarene er rigtige",
+      "Alle svar er rigtige",
+      "Ingen af svarene"
+    ],
+    "both": [
+      "Begge",
+      "Begge dele",
+      "Begge svar",
+      "Begge svar er rigtige"
+    ]
+  },
+  "validate_bank": {
+    "file": ".claude/skills/exam-bank/scripts/validate_bank.py",
+    "banned": "alle ovenstående|ingen af ovenstående|alle svar(ene)? er rigtige|ingen af svarene",
+    "connectors": [
+      "og",
+      "eller"
+    ],
+    "both": [
+      "begge"
+    ],
+    "len_scale": 1.15
+  },
+  "extra_tables": {
+    "ReportExamQuestion": {
+      "file": "components/ReportExamQuestion.tsx",
+      "open": "Rapportér dette spørgsmål",
+      "what": "Hvad er der galt?",
+      "note": "Hvad burde der stå? (valgfrit)",
+      "send": "Send",
+      "sending": "Sender...",
+      "cancel": "Annuller",
+      "thanks": "Tak. Vi ser på hver rapport og retter spørgsmålet, hvis det er forkert.",
+      "error": "Kunne ikke sende. Prøv igen.",
+      "reasons": {
+        "wrong_answer": "Det markerede svar er forkert",
+        "two_answers": "Mere end ét svar er rigtigt",
+        "unclear": "Spørgsmålet er uklart",
+        "outdated": "Reglen eller faktaen er forældet",
+        "typo": "Der er en tastefejl",
+        "other": "Noget andet"
+      }
+    },
+    "ExamTrainingPage": {
+      "file": "components/exam/ExamTrainingPage.tsx",
+      "title": "Dette trin er nu grønt!",
+      "part": "Del færdig",
+      "set": "Træning færdig",
+      "progress": "Se dit fremskridt",
+      "description": "Din øvelse har betalt sig. Dette trin er nu grønt i din oversigt.",
+      "remaining": "Du har gjort denne del færdig. Fortsæt for at gøre resten af sættet færdigt.",
+      "resetPart": "Det nulstiller kun dit fremskridt i denne del. Er du sikker?"
+    },
+    "ResultsHeroDebrief": {
+      "file": "components/results/ResultsHeroDebrief.tsx",
+      "progressLabel": "Se dit fremskridt",
+      "completedLabel": "Øvelsesprøve klaret"
+    },
+    "FocusBar": {
+      "file": "components/FocusBar.tsx",
+      "note": "Partial table with no pl entry; da falls back like pl. Optional."
+    },
+    "llmsTxt": {
+      "file": "lib/llmsTxt.ts",
+      "LANGUAGE_NAMES": "Danish"
+    },
+    "homeLanguages": {
+      "file": "lib/homeLanguages.ts",
+      "HOME_LANGUAGES": "add \"da\""
+    }
+  }
+}

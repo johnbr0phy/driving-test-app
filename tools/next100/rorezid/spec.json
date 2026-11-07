@@ -1,0 +1,36 @@
+{
+  "id": "rorezid",
+  "stateCode": "ROREZID",
+  "idBase": 24900,
+  "prefix": "ROREZ-",
+  "slug": "/rezidentiat",
+  "landingPath": "/ro/rezidentiat-medicina-grile",
+  "dataFile": "data/romania-rezidentiat-questions.json",
+  "region": "RO",
+  "language": "ro",
+  "locale": "ro-RO",
+  "name": "Grile Rezidențiat Medicină",
+  "shortName": "Rezidențiat Medicină",
+  "examLabel": "Concursul de Rezidențiat, domeniul Medicină",
+  "fullName": "Concursul național de admitere în Rezidențiat, domeniul Medicină",
+  "english": {
+    "name": "Romania Medical Residency Exam (Rezidențiat, Medicine)",
+    "shortName": "Romania residency exam",
+    "fullName": "Romania national medical residency entrance exam (Rezidențiat), Medicine, in Romanian"
+  },
+  "icon": "stethoscope",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 60,
+  "categories": [
+    {"key": "roreCardio", "label": "Cardiologie, HTA și boala tromboembolică", "perTest": 7, "pool": 28, "segment": "CARD"},
+    {"key": "rorePneuNeuro", "label": "Pneumologie și neurologie", "perTest": 6, "pool": 24, "segment": "PNE"},
+    {"key": "roreGastroRenal", "label": "Gastroenterologie, hepatologie și nefrologie", "perTest": 6, "pool": 24, "segment": "GIR"},
+    {"key": "roreEndoHem", "label": "Diabet, endocrinologie, hematologie, reumatologie și infecții", "perTest": 6, "pool": 24, "segment": "END"},
+    {"key": "roreChirGen", "label": "Chirurgie generală, traumă și tub digestiv superior", "perTest": 8, "pool": 32, "segment": "CHG"},
+    {"key": "roreChirDig", "label": "Colon, căi biliare, pancreas, ficat și vase", "perTest": 6, "pool": 24, "segment": "CHD"},
+    {"key": "roreChirSpec", "label": "ORL, ortopedie și urologie", "perTest": 6, "pool": 24, "segment": "CHS"},
+    {"key": "roreSinopsis", "label": "Pediatrie, obstetrică-ginecologie, dermatologie, psihiatrie", "perTest": 5, "pool": 20, "segment": "SIN"}
+  ],
+  "notes": "4 tests x 50 = 200, pools exactly 4x each per-test count, no spares. DMV-style sets testSets(24900, 4): 4 sets + 4 tests = 8 dashboard steps. Book shares 100 Kumar (50%) / 80 Lawrence (40%) / 20 Sinopsis (10%), close to the 2025 paper's 92/84/24 (grile-rezidentiat.ro analysis). passPct 60 approximates the real rule (60% of the national maximum achieved, which was 944 of 950 at Medicine in 2025). Single best answer of four, equal weight: the 5-option complement multiplu items and 4/5-point scoring are not modelled."
+}

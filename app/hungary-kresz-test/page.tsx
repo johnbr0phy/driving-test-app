@@ -9,6 +9,7 @@ import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
 import "@/lib/banks/hukresz";
 import { SITE_URL } from "@/lib/siteUrl";
+import { examLandingAlternates } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -25,6 +26,7 @@ export const metadata: Metadata = {
     "kresz test english, hungary driving theory test, hungarian driving test in english, kresz vizsga angolul, kresz teszt, közlekedési alapismeretek, hungary driving licence theory exam, budapest driving test english, hungarian highway code questions, kresz practice test 2026",
   alternates: {
     canonical: `${siteUrl}/hungary-kresz-test`,
+    languages: examLandingAlternates("hukresz"),
   },
   openGraph: {
     title,

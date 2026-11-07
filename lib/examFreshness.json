@@ -75,6 +75,14 @@
       "source": "https://bmdv.bund.de/"
     },
     {
+      "exam": "demotorrad",
+      "date": "2027-01-01",
+      "kind": "law",
+      "what": "German driving licence reform (2027) changes the theory test, motorcycle classes included.",
+      "action": "Read the final rules and update questions, sets and the landing.",
+      "source": "https://bmdv.bund.de/"
+    },
+    {
       "exam": "itil",
       "date": "2027-12-31",
       "kind": "sunset",
@@ -153,6 +161,177 @@
       "what": "The 2025-2027 physics equation sheet period ends.",
       "action": "Check whether Ofqual extends the equation sheet; update the reference panel.",
       "source": "https://www.aqa.org.uk/news/gcse-maths-and-gcse-sciences-formulae-and-equation-sheets-for-2025-2027"
+    },
+    {
+      "exam": "espolicia",
+      "date": "2027-07-01",
+      "kind": "notice",
+      "what": "The 2027 Escala Básica call (convocatoria) for the Policía Nacional is expected in the BOE.",
+      "action": "Read the new call: question count, options, time, scoring formula and temario changes; update the landing, examFacts and any affected items.",
+      "source": "https://www.interior.gob.es/opencms/es/servicios-al-ciudadano/empleo-publico/procesos-selectivos/policia-nacional/escala-basica/"
+    },
+    {
+      "exam": "esguardia",
+      "date": "2027-05-01",
+      "kind": "notice",
+      "what": "Next Guardia Civil call (convocatoria) expected in spring 2027.",
+      "action": "Re-read the new BOE call (format, temario resolution, minimum marks) and update the landing, examFacts and sources.md.",
+      "source": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-9982"
+    },
+    {
+      "exam": "esguardia",
+      "date": "2026-12-31",
+      "kind": "law",
+      "what": "Ministry of the Interior project 15/2026 to modify the Reglamento de Armas (RD 137/1993).",
+      "action": "If approved, re-check ESGC-SEG items on licences and the guía de pertenencia.",
+      "source": "https://www.interior.gob.es/opencms/pdf/servicios-al-ciudadano/participacion-ciudadana/Participacion-publica-en-proyectos-normativos/Audiencia-e-informacion-publica/15_2026_Proyecto_Modificacion_Reglamento_Armas.pdf"
+    },
+    {
+      "exam": "esvigilante",
+      "date": "2027-01-15",
+      "kind": "notice",
+      "what": "Bases for the 2027 vigilante de seguridad calls expected in January 2027.",
+      "action": "Re-read the new BOE resolution (questions, time, alternatives, Anexo III programme) and update the landing, examFacts and sources.md.",
+      "source": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-813"
+    },
+    {
+      "exam": "esvigilante",
+      "date": "2027-06-30",
+      "kind": "law",
+      "what": "A new Reglamento de Seguridad Privada to replace RD 2364/1994 has been pending since Ley 5/2014.",
+      "action": "If approved, re-check ESVIG-SPR items citing the Reglamento (armero, uniform, taking over the post, loss of the weapon).",
+      "source": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-608"
+    },
+    {
+      "exam": "escapcond",
+      "date": "2026-11-06",
+      "kind": "law",
+      "what": "Real Decreto 487/2026 (in force 18 September 2026) renumbers Annex I of RD 284/2021 to Directive (EU) 2022/2561 and adds online course hours; Anexo V is unchanged.",
+      "action": "Check the consolidated Annex I wording against the bank's categories when the BOE consolidation is complete.",
+      "source": "https://www.boe.es/eli/es/rd/2026/06/17/487",
+      "done": "2026-11-06"
+    },
+    {
+      "exam": "escapcond",
+      "date": "2027-07-01",
+      "kind": "review",
+      "what": "Yearly check of Reg. 561/2006 and 165/2014 amendments and of the convocatorias' format.",
+      "action": "Re-read the regulations and two current convocatorias; update the bank and landing.",
+      "source": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-6624"
+    },
+    {
+      "exam": "pttvde",
+      "date": "2027-03-01",
+      "kind": "law",
+      "what": "Portarias under Lei 59/2026 (sticker model, Portuguese-language check, training and final assessment procedures) are still unpublished and may change the course or the exam.",
+      "action": "Re-read the new portarias and update the vehicle and regulation items, the landing and examFacts.",
+      "source": "https://files.diariodarepublica.pt/1s/2026/08/16400/0000300044.pdf"
+    },
+    {
+      "exam": "ptvigil",
+      "date": "2027-06-30",
+      "kind": "review",
+      "what": "The CNESP exam rules date from Despacho 8270/2019 and Lei 34/2013 was last amended in 2019; check for a new despacho, a Lei 34/2013 amendment or a training portaria replacing Portaria 148/2014.",
+      "action": "Re-read the Diário da República and psp.pt (Departamento de Segurança Privada) and update the landing, examFacts and sources.md.",
+      "source": "https://diariodarepublica.pt/dr/detalhe/despacho/8270-2019-124780748"
+    },
+    {
+      "exam": "semedb",
+      "date": "2027-03-01",
+      "kind": "format",
+      "what": "UHR announces the length, time and pass mark of the April to May 2027 civics sitting (August 2026 was a trial: 60 questions, 40 scored, 28 of 40).",
+      "action": "Update testCount, questionsPerTest and passPct, the landing JSON and EXAM_FACTS to the announced format.",
+      "source": "https://www.uhr.se/medborgarskapsprovet/om-medborgarskapsprovet/"
+    },
+    {
+      "exam": "dkjagt",
+      "date": "2027-04-01",
+      "kind": "review",
+      "what": "The jagttider (open seasons) are revised with effect from the 2026/27 season, and the Retningslinjer for spørgsmål til den skriftlige jagtprøve are revised yearly (last 3 April 2025).",
+      "action": "Read the new retningslinjer and jagttidsbekendtgørelse; check the bank still asks no season dates, and update the landing FAQ, examFacts and sources.md.",
+      "source": "https://sgavmst.dk/media/ttndlsbs/instruks-for-jagtproeven-2026.pdf"
+    },
+    {
+      "exam": "dkmedborger",
+      "date": "2027-04-01",
+      "kind": "review",
+      "what": "SIRI may publish a new edition of Læremateriale til medborgerskabsprøven (current edition August 2024) or change the permanent residence conditions in udlændingeloven § 11.",
+      "action": "Check SIRI's learning material and the executive order before the May/June 2027 sitting; update the bank, landing and examFacts if topics or format change.",
+      "source": "https://www.retsinformation.dk/eli/lta/2024/452"
+    },
+    {
+      "exam": "dkindfoed",
+      "date": "2027-04-01",
+      "kind": "review",
+      "what": "The values questions follow integration policy and the learning material can be revised before a sitting.",
+      "action": "Check the latest published test and learning material before the May/June 2027 sitting and update the bank, landing and examFacts if the format or topics change.",
+      "source": "https://lex.dk/indf%C3%B8dsretspr%C3%B8ve"
+    },
+    {
+      "exam": "hubizt",
+      "date": "2026-06-02",
+      "kind": "notice",
+      "what": "MNB revised the insurance intermediary question bank (13 questions changed, 10 deleted).",
+      "action": "None needed: Tigertest items are original and follow the decree's topics.",
+      "source": "https://www.mnb.hu/letoltes/tajekoztato-a-biztositaskozvetitoi-hatosagi-vizsga-kerdesbankjanak-valtozasarol-2026-05.pdf",
+      "done": "2026-11-06"
+    },
+    {
+      "exam": "rorezid",
+      "date": "2026-11-15",
+      "kind": "review",
+      "what": "Rezidențiat 2026 session (same model and bibliography as 2025, per the Ministry); the 2026 Medicine tematica PDF could not be read when the bank was built (rezidentiat.ms.ro returned 503).",
+      "action": "Read the 2026 tematica on rezidentiat.ms.ro and check the chapter list and the bank against it.",
+      "source": "https://rezidentiat.ms.ro/"
+    },
+    {
+      "exam": "rocpi",
+      "date": "2026-10-01",
+      "kind": "law",
+      "what": "Romania's distance-based TollRO toll for goods vehicles over 3.5 t was scheduled to replace the rovinietă for them from 1 October 2026.",
+      "action": "None needed: the rovinietă item asks about a coach; check when TollRO goes live and whether any item mentions trucks and the rovinietă.",
+      "source": "https://www.cnair.ro/",
+      "done": "2026-11-07"
+    },
+    {
+      "exam": "grcitizen",
+      "date": "2027-03-01",
+      "kind": "notice",
+      "what": "The General Secretariat for Citizenship reissues the PEGP exam procedure guide and the Τράπεζα Θεμάτων for each sitting (next sitting 15 November 2026).",
+      "action": "Check the spring 2027 guide for any change to the 4/4/6/6 split of the thematic units or the 70/100 pass rule.",
+      "source": "https://exetaseis-ithageneia.ypes.gr/"
+    },
+    {
+      "exam": "grsecurity",
+      "date": "2027-01-15",
+      "kind": "notice",
+      "what": "Each ΕΟΠΠΕΠ exam period for private security personnel has its own call; the theory time limit and how theory and practical marks combine were not confirmed for the 2026 calls.",
+      "action": "Check the first 2027 ΕΟΠΠΕΠ call for any change to the 20-question theory part or the 1 to 20 grading.",
+      "source": "https://www.eoppep.gr/"
+    },
+    {
+      "exam": "betoelating",
+      "date": "2026-12-01",
+      "kind": "outline",
+      "what": "The Flemish government publishes the leerstofoverzicht KIW for the 2027 admission exams (arts 2 July, tandarts 3 July 2027) in autumn 2026.",
+      "action": "Read the 2027 leerstofoverzicht and rebuild the bank against it.",
+      "source": "https://www.vlaanderen.be/toelatingsexamens"
+    },
+    {
+      "exam": "bevracht",
+      "date": "2027-06-01",
+      "kind": "law",
+      "what": "The Wegcode (Royal Decree of 1 December 1975) ceases on 1 June 2027 (art. 87), replaced by federal and regional codes.",
+      "action": "Re-check the speed, distance, parking and sign items against the new codes.",
+      "source": "https://www.wegcode.be/"
+    },
+    {
+      "exam": "bemoto",
+      "date": "2027-06-01",
+      "kind": "law",
+      "what": "The Wegcode (Royal Decree of 1 December 1975) ceases on 1 June 2027 (art. 87), replaced by federal and regional codes.",
+      "action": "Re-check the lane position, filtering, speed and sign items against the new codes.",
+      "source": "https://www.wegcode.be/"
     }
   ]
 }

@@ -67,6 +67,36 @@ const COPY: Record<string, Copy> = {
     thanks: "Dziękujemy. Sprawdzamy każde zgłoszenie i poprawiamy pytanie, jeśli jest błędne.", error: "Nie udało się wysłać. Spróbuj ponownie.",
     reasons: { wrong_answer: "Zaznaczona odpowiedź jest błędna", two_answers: "Więcej niż jedna odpowiedź jest poprawna", unclear: "Pytanie jest niejasne", outdated: "Przepis lub fakt jest nieaktualny", typo: "Jest literówka", other: "Coś innego" },
   },
+  sv: {
+    open: "Rapportera den här frågan", what: "Vad är fel?", note: "Vad borde det stå? (valfritt)", email: "Din e-post, om du vill ha svar (valfritt)", send: "Skicka", sending: "Skickar...", cancel: "Avbryt",
+    thanks: "Tack. Vi går igenom varje rapport och rättar frågan om den är fel.", error: "Det gick inte att skicka. Försök igen.",
+    reasons: { wrong_answer: "Det markerade svaret är fel", two_answers: "Mer än ett svar är rätt", unclear: "Frågan är otydlig", outdated: "Regeln eller uppgiften är inaktuell", typo: "Det finns ett stavfel", other: "Något annat" },
+  },
+  da: {
+    open: "Rapportér dette spørgsmål", what: "Hvad er der galt?", note: "Hvad burde der stå? (valgfrit)", email: "Din e-mail, hvis du vil have svar (valgfrit)", send: "Send", sending: "Sender...", cancel: "Annuller",
+    thanks: "Tak. Vi ser på hver rapport og retter spørgsmålet, hvis det er forkert.", error: "Kunne ikke sende. Prøv igen.",
+    reasons: { wrong_answer: "Det markerede svar er forkert", two_answers: "Mere end ét svar er rigtigt", unclear: "Spørgsmålet er uklart", outdated: "Reglen eller faktaen er forældet", typo: "Der er en tastefejl", other: "Noget andet" },
+  },
+  fi: {
+    open: "Ilmoita tästä kysymyksestä", what: "Mikä on vialla?", note: "Mitä siinä pitäisi lukea? (valinnainen)", email: "Sähköpostisi, jos haluat vastauksen (valinnainen)", send: "Lähetä", sending: "Lähetetään...", cancel: "Peruuta",
+    thanks: "Kiitos. Käymme jokaisen ilmoituksen läpi ja korjaamme kysymyksen, jos se on väärin.", error: "Lähetys epäonnistui. Yritä uudelleen.",
+    reasons: { wrong_answer: "Merkitty vastaus on väärin", two_answers: "Useampi kuin yksi vastaus on oikein", unclear: "Kysymys on epäselvä", outdated: "Sääntö tai tieto on vanhentunut", typo: "Siinä on kirjoitusvirhe", other: "Jokin muu" },
+  },
+  hu: {
+    open: "Kérdés jelentése", what: "Mi a hiba?", note: "Mi lenne a helyes? (nem kötelező)", email: "Az e-mail-címed, ha választ szeretnél (nem kötelező)", send: "Küldés", sending: "Küldés...", cancel: "Mégse",
+    thanks: "Köszönjük. Minden jelentést átnézünk, és kijavítjuk a kérdést, ha hibás.", error: "Nem sikerült elküldeni. Próbáld újra.",
+    reasons: { wrong_answer: "A megjelölt válasz hibás", two_answers: "Több válasz is helyes", unclear: "A kérdés nem egyértelmű", outdated: "A szabály vagy az adat elavult", typo: "Elírás van benne", other: "Valami más" },
+  },
+  ro: {
+    open: "Raportează întrebarea", what: "Ce e greșit?", note: "Care ar fi varianta corectă? (opțional)", email: "Emailul tău, dacă vrei un răspuns (opțional)", send: "Trimite", sending: "Se trimite...", cancel: "Anulează",
+    thanks: "Mulțumim. Verificăm fiecare raport și corectăm întrebarea dacă e greșită.", error: "Nu s-a putut trimite. Încearcă din nou.",
+    reasons: { wrong_answer: "Răspunsul marcat e greșit", two_answers: "Mai multe răspunsuri sunt corecte", unclear: "Întrebarea nu e clară", outdated: "Regula sau datele sunt depășite", typo: "Are o greșeală de scriere", other: "Altceva" },
+  },
+  el: {
+    open: "Ανάφερε αυτή την ερώτηση", what: "Τι δεν πάει καλά;", note: "Τι θα έπρεπε να γράφει; (προαιρετικό)", email: "Το email σου, αν θέλεις απάντηση (προαιρετικό)", send: "Αποστολή", sending: "Αποστολή...", cancel: "Ακύρωση",
+    thanks: "Ευχαριστούμε. Ελέγχουμε κάθε αναφορά και διορθώνουμε την ερώτηση αν είναι λάθος.", error: "Η αποστολή απέτυχε. Δοκίμασε ξανά.",
+    reasons: { wrong_answer: "Η σημειωμένη απάντηση είναι λάθος", two_answers: "Περισσότερες από μία απαντήσεις είναι σωστές", unclear: "Η ερώτηση δεν είναι σαφής", outdated: "Ο κανόνας ή η πληροφορία είναι παλιά", typo: "Έχει ορθογραφικό λάθος", other: "Κάτι άλλο" },
+  },
   vi: {
     open: "Báo lỗi câu hỏi này", what: "Có gì sai?", note: "Nên ghi thế nào? (không bắt buộc)", email: "Email của bạn, nếu muốn được trả lời (không bắt buộc)", send: "Gửi", sending: "Đang gửi...", cancel: "Hủy",
     thanks: "Cảm ơn bạn. Chúng tôi xem từng báo cáo và sửa câu hỏi nếu sai.", error: "Không gửi được. Vui lòng thử lại.",

@@ -9,6 +9,7 @@ import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
 import "@/lib/banks/rodrpciv";
 import { SITE_URL } from "@/lib/siteUrl";
+import { examLandingAlternates } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -25,6 +26,7 @@ export const metadata: Metadata = {
     "romania driving theory test, drpciv test english, chestionare drpciv in english, romanian driving licence theory exam, category b theory test romania, permis auto romania english, dgpci theory exam, codul rutier english, romania driving test questions 2026, foreigner driving licence romania",
   alternates: {
     canonical: `${siteUrl}/romania-driving-theory-test`,
+    languages: examLandingAlternates("rodrpciv"),
   },
   openGraph: {
     title,

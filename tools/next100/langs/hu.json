@@ -1,0 +1,102 @@
+{
+  "_comment": "Hungarian (hu, hu-HU) entries for the per-language tables. Machine-translated, pending native review. Register: informal te. Paste-ready blocks for each shared file are in tools/next100/langs/hu.WIRING.md.",
+  "language": "hu",
+  "locale": "hu-HU",
+  "label": "Magyar",
+  "englishName": "Hungarian",
+  "flag": "\\u{1F1ED}\\u{1F1FA}",
+  "TEST_SET_NAMES": "{n}. gyakorlósorozat",
+  "trainingPartName": "{set}, {part}/{partCount}. rész",
+  "EXAM_UI": {
+    "heroTitle": {
+      "zero": "Teljesítsd mind a(z) {total} lépést",
+      "all": "Készen állsz",
+      "oneLeft": "Már csak egy",
+      "one": "Jó kezdés. {total} lépésből 1 kész",
+      "under45": "{total} lépésből {done} kész",
+      "under55": "Félúton vagy",
+      "under80": "Túl vagy a felén",
+      "else": "{total} lépésből {done} kész, majdnem megvan"
+    },
+    "questionsCount": "{n} kérdés",
+    "needToPass": "A sikerhez {pct}% kell",
+    "fullLengthExam": "🎯 Teljes hosszúságú vizsga",
+    "testN": "🎯 {n}. teszt",
+    "examTestN": "{shortName}, {n}. teszt",
+    "pctToPass": "{pct}% a sikerhez",
+    "yourStats": "Statisztikáid",
+    "yourStatsSub": "Minden kérdés, amit láttál, aszerint rendezve, amit a legtöbbször elrontasz",
+    "aboutThisTest": "Erről a gyakorló tesztről",
+    "trainingBadge": "GYAKORLÁS: {shortName}",
+    "masteredMyTraining": "ELSAJÁTÍTOTTAM: {shortName} GYAKORLÁS",
+    "mastered": "ELSAJÁTÍTVA",
+    "nextPart": "Következik: {name}",
+    "setN": "{n}. sorozat",
+    "statsSeen": "{shortName}: eddig {seen} / {total} kérdést láttál. Koppints egy sorra, hogy újra válaszolj.",
+    "dateLocale": "hu-HU"
+  },
+  "COPY_ExamLandingHero": {
+    "start": "Gyakorlás indítása",
+    "dashboard": "Az áttekintéshez",
+    "mobile": "Gyakorolj a telefonodon",
+    "desktop": "Írd meg a tesztet számítógépen",
+    "mobileAlt": "Tigertest {name}: gyakorló mód telefonon",
+    "desktopAlt": "Tigertest {name}: gyakorló teszt számítógépen"
+  },
+  "SAMPLE_COPY": {
+    "title": "{name}: mintakérdések válaszokkal",
+    "sub": "{n} a(z) {total} gyakorlókérdésből, minden témából egy, elmagyarázott válasszal.",
+    "answer": "Válasz",
+    "quiz": "{name}: mintakérdések"
+  },
+  "RELATED_COPY": {
+    "title": "További gyakorló tesztek",
+    "sub": "A Tigertesten minden teszt ingyenes, és a kezdéshez nem kell fiók.",
+    "country": "Ingyenes gyakorló tesztek: {name}",
+    "all": "Mind a(z) {n} gyakorló teszt megtekintése"
+  },
+  "CARD_FOOTERS": "Ingyenes gyakorlás. Minden válasz elmagyarázva.",
+  "ReportExamQuestion": {
+    "open": "Kérdés jelentése",
+    "what": "Mi a hiba?",
+    "note": "Mi lenne a helyes? (nem kötelező)",
+    "send": "Küldés",
+    "sending": "Küldés...",
+    "cancel": "Mégse",
+    "thanks": "Köszönjük. Minden jelentést átnézünk, és kijavítjuk a kérdést, ha hibás.",
+    "error": "Nem sikerült elküldeni. Próbáld újra.",
+    "reasons": {
+      "wrong_answer": "A megjelölt válasz hibás",
+      "two_answers": "Több válasz is helyes",
+      "unclear": "A kérdés nem egyértelmű",
+      "outdated": "A szabály vagy az adat elavult",
+      "typo": "Elírás van benne",
+      "other": "Valami más"
+    }
+  },
+  "ExamTrainingPage_celebrationCopy": {
+    "title": "Ez a lépés most zöld!",
+    "part": "A rész kész",
+    "set": "A gyakorlás kész",
+    "progress": "Haladásod megtekintése",
+    "description": "Megérte gyakorolni. Ez a lépés most zöld az áttekintésedben.",
+    "remaining": "Ezzel a résszel végeztél. Folytasd, hogy a sorozat többi részét is teljesítsd.",
+    "resetPart": "Ez csak ennek a résznek a haladását nullázza le. Biztos vagy benne?"
+  },
+  "ResultsHeroDebrief": {
+    "progressLabel": "Haladásod megtekintése",
+    "completedLabel": "Gyakorló teszt kész"
+  },
+  "llmsTxt_LANGUAGE_NAMES": "Hungarian",
+  "shuffleGuard": {
+    "connectors": ["és", "vagy"],
+    "phrases": ["A fentiek mindegyike", "A fentiek közül egyik sem", "Egyik fenti sem", "Egyik válasz sem", "Mindegyik válasz helyes", "Minden válasz helyes"],
+    "both": ["Mindkettő", "Mindkettő helyes", "Mindkét válasz", "Mindkét válasz helyes"]
+  },
+  "validate_bank": {
+    "banned": "a fentiek mindegyike|a fentiek közül egyik sem|egyik fenti sem|egyik válasz sem|mindegyik válasz helyes|minden válasz helyes",
+    "connectors": ["és", "vagy"],
+    "both": ["mindkettő", "mindkét"],
+    "lenScale": 1.15
+  }
+}

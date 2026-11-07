@@ -1,0 +1,35 @@
+{
+  "id": "rotaxi",
+  "stateCode": "ROTAXI",
+  "idBase": 25100,
+  "prefix": "ROTAXI-",
+  "slug": "/romania-taxi-attestation",
+  "landingPath": "/romania-taxi-driver-attestation-practice-test",
+  "dataFile": "data/romania-taxi-attestation-questions.json",
+  "name": "Romania Taxi Attestation Practice Test",
+  "shortName": "Romania taxi attestation",
+  "examLabel": "ARR taxi and rental driver test",
+  "fullName": "ARR professional attestation test for taxi and rental (ride-hailing) drivers, Romania",
+  "icon": "car",
+  "region": "RO",
+  "testCount": 8,
+  "questionsPerTest": 20,
+  "passPct": 70,
+  "categories": [
+    {"key": "rotxLaw", "label": "Law 38/2003, Authorisation & Documents", "perTest": 3, "pool": 28, "segment": "LAW", "tematica": "A. Legislation (5 h)"},
+    {"key": "rotxDriver", "label": "Driver Attestation & Duties", "perTest": 3, "pool": 28, "segment": "DRV", "tematica": "A. Legislation (5 h)"},
+    {"key": "rotxVehicle", "label": "Taxi Vehicle, Roof Light & Markings", "perTest": 2, "pool": 20, "segment": "VEH", "tematica": "A, C. Practice (10 h)"},
+    {"key": "rotxMeter", "label": "Taximeter, Tariffs & Receipts", "perTest": 3, "pool": 28, "segment": "MTR", "tematica": "A, C. Practice (10 h)"},
+    {"key": "rotxRental", "label": "Rental & Ride-Hailing Transport", "perTest": 2, "pool": 20, "segment": "REN", "tematica": "II.A (rental), OUG 49/2019"},
+    {"key": "rotxCustomer", "label": "Customer Service & Accessibility", "perTest": 3, "pool": 28, "segment": "CUS", "tematica": "B. Customer service (3 h)"},
+    {"key": "rotxRoad", "label": "Taxi Driving, Stands & Road Safety", "perTest": 2, "pool": 24, "segment": "ROD", "tematica": "D. Driving and road safety (7 h)"},
+    {"key": "rotxSecurity", "label": "Driver & Passenger Security", "perTest": 2, "pool": 24, "segment": "SEC", "tematica": "E. Security (5 h)"}
+  ],
+  "notes": "Eight real-length tests of 20 (like the real ARR test), 160 test items + 40 training-only spares (the last 4 of each pool, 8 of road and security). passPct 70 = 14 of 20, the legal 70%. Dashboard = 4 sets + 8 tests = 12 steps. ARR publishes no topic split; weights are Tigertest's, from the hours of the course tematica (Annex 7^1 to OMT 1214/2015).",
+  "trainingSets": [
+    {"setNumber": 1, "id": 25101, "name": "Law, Authorisation & Attestation", "categories": ["rotxLaw", "rotxDriver"], "size": 56},
+    {"setNumber": 2, "id": 25102, "name": "Taxi Vehicle, Taximeter & Tariffs", "categories": ["rotxVehicle", "rotxMeter"], "size": 48},
+    {"setNumber": 3, "id": 25103, "name": "Rental Transport & Customers", "categories": ["rotxRental", "rotxCustomer"], "size": 48},
+    {"setNumber": 4, "id": 25104, "name": "Road Safety & Security", "categories": ["rotxRoad", "rotxSecurity"], "size": 48}
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "deheilpr",
+  "stateCode": "DEHEILPR",
+  "idBase": 22300,
+  "prefix": "DEHP-",
+  "slug": "/heilpraktiker-pruefung",
+  "landingPath": "/de/heilpraktiker-pruefung-test",
+  "dataFile": "data/de-heilpraktiker-questions.json",
+  "language": "de",
+  "locale": "de-DE",
+  "name": "Heilpraktikerprüfung Test",
+  "shortName": "Heilpraktikerprüfung",
+  "examLabel": "Heilpraktikerüberprüfung, schriftlicher Teil",
+  "fullName": "Heilpraktikerüberprüfung nach dem Heilpraktikergesetz, schriftlicher Teil (allgemeine Erlaubnis)",
+  "english": {
+    "name": "German Heilpraktiker Licensing Exam (written part)",
+    "shortName": "German Heilpraktiker exam",
+    "fullName": "German Heilpraktiker licensing exam (Heilpraktikerüberprüfung), written part for the general licence, in German"
+  },
+  "icon": "stethoscope",
+  "testCount": 3,
+  "questionsPerTest": 60,
+  "passPct": 75,
+  "categories": [
+    {"key": "dehpRecht", "label": "Berufs- und Gesetzeskunde", "perTest": 7, "pool": 24, "segment": "REC"},
+    {"key": "dehpInfekt", "label": "Infektionskrankheiten und Infektionsschutz", "perTest": 7, "pool": 24, "segment": "INF"},
+    {"key": "dehpHygiene", "label": "Hygiene, Untersuchung und Injektion", "perTest": 5, "pool": 16, "segment": "HYG"},
+    {"key": "dehpHerz", "label": "Herz, Kreislauf und Gefäße", "perTest": 7, "pool": 22, "segment": "HKG"},
+    {"key": "dehpAtmung", "label": "Atmung, Hals, Nase und Ohren", "perTest": 5, "pool": 16, "segment": "ATM"},
+    {"key": "dehpStoffwechsel", "label": "Verdauung, Stoffwechsel und Hormone", "perTest": 7, "pool": 22, "segment": "STW"},
+    {"key": "dehpBlut", "label": "Blut, Immunsystem, Niere und Labor", "perTest": 6, "pool": 20, "segment": "BLU"},
+    {"key": "dehpNerven", "label": "Nervensystem, Psyche und Sinnesorgane", "perTest": 6, "pool": 20, "segment": "NER"},
+    {"key": "dehpBewegung", "label": "Bewegungsapparat, Haut, Frauen- und Kinderheilkunde", "perTest": 4, "pool": 16, "segment": "BEW"},
+    {"key": "dehpNotfall", "label": "Notfälle und Erste Hilfe", "perTest": 6, "pool": 20, "segment": "NOT"}
+  ],
+  "notes": "3 tests x 60 = 180 (the real length: 60 questions in 120 minutes, 45 correct = 75 %), pools 200, the last items of each pool (20 in all) are training-only. Per test 7/7/5/7/5/7/6/6/4/6 (Tigertest's split along the BMG Leitlinien of 7 Dec 2017; no official weights). Training: five topic sets 22301-22305 (Recht+Infektionsschutz 48, Hygiene+Notfälle 36, Herz+Atmung 38, Stoffwechsel+Blut/Niere 42, Nerven/Psyche+Bewegung/Haut/Gyn/Päd 36) + 3 tests = 8 dashboard steps. Aussagenkombination items are single best answer; their options are self-contained ('Nur 1, 2 und 4'), so shuffling is safe.",
+  "trainingSets": "topic sets 22301-22305, see WIRING.md"
+}

@@ -1,0 +1,28 @@
+CAT = "roadmExcrRep"; SEG = "ERP"
+# Excreția și reproducerea (Biologie, clasa a XI-a).
+Q = [
+("Care este unitatea morfofuncțională a rinichiului?",
+ "Nefronul", ["Glomerulul", "Tubul colector", "Bazinetul"],
+ "Nefronul este format din corpusculul renal (glomerul și capsula Bowman) și tubul urinifer. Glomerulul este doar o parte a lui."),
+("Ce volum aproximativ de urină primară se formează zilnic prin filtrare glomerulară?",
+ "180 L/zi", ["1,5 L/zi", "18 L/zi", "120 L/zi"],
+ "Filtrarea glomerulară produce aproximativ 180 L de urină primară pe zi; peste 99% din apă se reabsoarbe, iar urina finală are aproximativ 1,5 L."),
+("În ce segment al nefronului se reabsoarbe glucoza?",
+ "În tubul contort proximal", ["În ansa Henle descendentă", "În tubul colector cortical", "În bazinetul renal"],
+ "Glucoza se reabsoarbe complet, prin transport activ, în tubul contort proximal, dacă glicemia nu depășește pragul renal."),
+("Care dintre următoarele substanțe nu se găsește în mod normal în urina finală?",
+ "Glucoza", ["Ureea", "Creatinina", "Ionii de sodiu"],
+ "La un om sănătos glucoza este reabsorbită complet, deci lipsește din urina finală. Ureea și creatinina se elimină în mod normal."),
+("Unde se formează spermatozoizii?",
+ "În tubii seminiferi", ["În canalul epididimar", "În glanda prostată", "În veziculele seminale"],
+ "Spermatogeneza are loc în tubii seminiferi contorți. În epididim spermatozoizii se maturizează și se depozitează."),
+("Ce celule secretă testosteronul?",
+ "Celulele interstițiale Leydig", ["Celulele Sertoli din tubi", "Celulele glandei prostate", "Celulele epiteliului epididimar"],
+ "Testosteronul este secretat de celulele interstițiale Leydig, dintre tubii seminiferi, sub acțiunea LH. Celulele Sertoli susțin spermatogeneza."),
+("Ce declanșează ovulația?",
+ "Vârful de secreție a LH", ["Creșterea progesteronului", "Scăderea estrogenilor", "Secreția de prolactină"],
+ "Ovulația are loc la mijlocul ciclului, sub acțiunea vârfului de secreție a hormonului luteinizant (LH)."),
+("Unde are loc în mod normal fecundația?",
+ "În treimea externă a trompei", ["În cavitatea corpului uterin", "În colul uterin", "În foliculul ovarian matur"],
+ "Ovulul eliberat este captat de trompă, iar fecundația are loc de obicei în treimea ei externă; oul migrează apoi spre uter."),
+]

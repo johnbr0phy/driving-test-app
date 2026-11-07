@@ -9,6 +9,7 @@ import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
 import "@/lib/banks/fitheory";
 import { SITE_URL } from "@/lib/siteUrl";
+import { examLandingAlternates } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -25,6 +26,7 @@ export const metadata: Metadata = {
     "finland driving theory test, finnish theory test in english, teoriakoe, teoriakoe english, ajokortti theory test, category b theory test finland, finnish driving licence test, ajovarma theory test, traficom theory test, finland driving test questions 2026",
   alternates: {
     canonical: `${siteUrl}/finland-driving-theory-test`,
+    languages: examLandingAlternates("fitheory"),
   },
   openGraph: {
     title,

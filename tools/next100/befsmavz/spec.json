@@ -1,0 +1,38 @@
+{
+  "id": "befsmavz",
+  "stateCode": "BEFSMA",
+  "idBase": 25900,
+  "prefix": "BEFSMA-",
+  "slug": "/fsma-examen-verzekeringen",
+  "landingPath": "/nl/fsma-examen-verzekeringen-oefenen",
+  "dataFile": "data/be-fsma-verzekeringen-questions.json",
+  "language": "nl",
+  "locale": "nl-BE",
+  "name": "FSMA-examen verzekeringsdistributie",
+  "shortName": "FSMA-examen verzekeringen",
+  "examLabel": "Examen verzekeringsdistributie",
+  "fullName": "FSMA-erkend examen verzekeringsdistributie (modules 1 tot 4: basiskennis, niet-leven, leven, leven met beleggingscomponent)",
+  "english": {
+    "name": "Belgium FSMA Insurance Distribution Exam",
+    "shortName": "Belgian insurance distribution exam",
+    "fullName": "Belgium FSMA-recognised insurance distribution exam (verzekeringsdistributie, modules 1 to 4), in Dutch"
+  },
+  "icon": "umbrella",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 60,
+  "categories": [
+    {"key": "bfsMarkt", "label": "Verzekeringsmarkt en toezicht", "perTest": 6, "pool": 24, "segment": "MRK", "module": "1.1"},
+    {"key": "bfsContract", "label": "De verzekeringsovereenkomst", "perTest": 8, "pool": 32, "segment": "CON", "module": "1.1"},
+    {"key": "bfsDistributie", "label": "Distributie, gedragsregels en privacy", "perTest": 8, "pool": 32, "segment": "DIS", "module": "1.2"},
+    {"key": "bfsAansprak", "label": "Aansprakelijkheid en rechtsbijstand", "perTest": 4, "pool": 16, "segment": "BA", "module": "2.1"},
+    {"key": "bfsAuto", "label": "Motorrijtuigen en bijstand", "perTest": 4, "pool": 16, "segment": "AUT", "module": "2.2"},
+    {"key": "bfsZaak", "label": "Zaakverzekeringen", "perTest": 4, "pool": 16, "segment": "ZAK", "module": "2.3"},
+    {"key": "bfsPersoon", "label": "Persoonsverzekeringen niet-leven", "perTest": 4, "pool": 16, "segment": "PER", "module": "2.4"},
+    {"key": "bfsLeven", "label": "Levensverzekering", "perTest": 5, "pool": 20, "segment": "LEV", "module": "3.1"},
+    {"key": "bfsWitwas", "label": "Antiwitwas en pensioenpijlers", "perTest": 4, "pool": 16, "segment": "AML", "module": "3.2"},
+    {"key": "bfsBeleg", "label": "Leven met beleggingscomponent", "perTest": 3, "pool": 12, "segment": "BEL", "module": "4"}
+  ],
+  "notes": "4 tests x 50 = 200, pools exactly 4x each count, every item in one test. Training: five module sets 25901-25905 (markt+overeenkomst 56, distributie 32, aansprakelijkheid+auto 32, zaak+persoon 32, leven+witwas+beleggingen 48), so 5 sets + 4 tests = 9 dashboard steps. passPct 60 = the real 60% per submodule (30 of 50). Real exams are per submodule, 20 questions each (Febelfin Academy); the per-test split is Tigertest's (no official weights).",
+  "trainingSets": "module sets 25901-25905, see WIRING.md"
+}

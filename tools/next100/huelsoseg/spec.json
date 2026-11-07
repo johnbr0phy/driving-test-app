@@ -1,0 +1,36 @@
+{
+  "id": "huelsoseg",
+  "stateCode": "HUELSOSEG",
+  "idBase": 24600,
+  "prefix": "HUELS-",
+  "slug": "/elsosegely-vizsga",
+  "landingPath": "/hu/elsosegely-vizsga-teszt",
+  "dataFile": "data/hungary-first-aid-questions.json",
+  "language": "hu",
+  "locale": "hu-HU",
+  "name": "Elsősegély vizsga teszt a jogosítványhoz",
+  "shortName": "Elsősegély vizsga",
+  "examLabel": "Közúti elsősegélynyújtási vizsga",
+  "fullName": "Közúti elsősegélynyújtási vizsga a vezetői engedélyhez",
+  "english": {
+    "name": "Hungary First Aid Exam for the Driving Licence",
+    "shortName": "Hungarian first aid exam",
+    "fullName": "Hungarian road first aid exam for the driving licence (közúti elsősegélynyújtási vizsga), in Hungarian"
+  },
+  "icon": "bandage",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 80,
+  "categories": [
+    {"key": "huelHelyszin", "label": "Baleseti helyszín, segélyhívás és mentés", "perTest": 8, "pool": 32, "segment": "HEL"},
+    {"key": "huelVizsgalat", "label": "Betegvizsgálat, eszméletlenség és fektetés", "perTest": 7, "pool": 28, "segment": "VIZ"},
+    {"key": "huelUjraeleszt", "label": "Felnőtt újraélesztés és AED", "perTest": 8, "pool": 32, "segment": "UJR"},
+    {"key": "huelGyermek", "label": "Félrenyelés, gyermek és csecsemő", "perTest": 5, "pool": 20, "segment": "GYE"},
+    {"key": "huelVerzes", "label": "Vérzések, sebek és sokk", "perTest": 7, "pool": 28, "segment": "VER"},
+    {"key": "huelSerules", "label": "Törések, fej-, gerinc- és mellkassérülések", "perTest": 6, "pool": 24, "segment": "SER"},
+    {"key": "huelKornyezet", "label": "Égés, áramütés, mérgezés, hő és hideg", "perTest": 4, "pool": 16, "segment": "KOR"},
+    {"key": "huelBelgyogy", "label": "Belgyógyászati vészhelyzetek", "perTest": 5, "pool": 20, "segment": "BEL"}
+  ],
+  "notes": "4 tests x 50 = 200, every item used once in tests (pools exactly 4x each count). Training: four topic sets 24601-24604 (Helyszín és betegvizsgálat 60, Újraélesztés és félrenyelés 52, Vérzések és sérülések 52, Égés, mérgezés és belgyógyászat 36), so the dashboard is 4 sets + 4 tests = 8 steps. passPct 80 (40 of 50) is Tigertest's readiness line: the real exam is practical with an oral theory part, graded megfelelt / nem felelt meg by the examiner, with no question count or pass mark. Per-test weights are Tigertest's own, led by the fail list of the Red Cross exam rules.",
+  "trainingSets": "topic sets 24601-24604, see WIRING.md"
+}

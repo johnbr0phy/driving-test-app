@@ -2496,6 +2496,135 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Trafikverket's Kunskapsprov B and Teoriprovet på annat språk pages, Swedish traffic rules (Trafikförordningen) and Transportstyrelsen guidance, checked November 2026",
     source: { name: "Trafikverket: Kunskapsprov B", url: "https://www.trafikverket.se/korkort/korkortsprov/personbil-och-latt-lastbil/kunskapsprov-b/" },
   },
+  semoto: {
+    answer:
+      "The knowledge test (kunskapsprov) for a Swedish motorcycle licence, categories A1, A2 and A, is run by Trafikverket at its test centres on a computer. It has 70 multiple-choice questions with one correct answer each and lasts 50 minutes. Five questions are unscored trial questions, so the maximum is 65 points, and you need 52 points to pass (80%). It covers vehicle knowledge and handling, the environment, traffic safety, traffic rules and personal prerequisites. The questions can be heard in Swedish through headphones; Trafikverket's motorcycle page names no English version, but extended time, an oral test or a test with an interpreter can be applied for. Both parts of the motorcycle risk training must be completed and valid on the day. Age limits are 16 for A1, 18 for A2 and 24 for A, or 20 after two years with A2.",
+    rows: [
+      { label: "Run by", value: "Trafikverket (Swedish Transport Administration)" },
+      { label: "Questions", value: "70 (65 scored, 5 unscored trial questions)" },
+      { label: "Time", value: "50 minutes" },
+      { label: "Pass mark", value: "52 of 65 points (80%)" },
+      { label: "Language", value: "Swedish, with audio; interpreter on application" },
+      { label: "Categories", value: "A1 (from 16), A2 (from 18), A (from 24, or 20 after 2 years of A2)" },
+      { label: "Before the test", value: "Both parts of the motorcycle risk training" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions in Swedish, 80% target" },
+    ],
+    basedOn: "Trafikverket's Motorcykel test page, Transportstyrelsen's A1, A2 and A licence pages, the Traffic Ordinance (trafikförordningen 1998:1276) and the course plan TSFS 2011:19, checked November 2026",
+    source: { name: "Trafikverket: driving tests for motorcycle", url: "https://www.trafikverket.se/korkort/korkortsprov/motorcykel/" },
+  },
+  sejakt: {
+    answer:
+      "The theory test of the Swedish hunting licence (jägarexamen) has 70 multiple-choice questions to be answered in at most 60 minutes, and you need at least 60 correct to pass. Each question has four options with one correct answer, sometimes with a picture. Naturvårdsverket, the Swedish Environmental Protection Agency, is responsible for the test, which you take in an app on your own phone or tablet in front of an approved test supervisor (provledare), often through a hunting organisation. You first see a preliminary result, which the supervisor then approves. The test is in Swedish and can be switched to English in the app, and the questions can be read aloud. Naturvårdsverket may add up to three unscored test questions and does not publish the questions. You must pass the theory test before the practical shooting tests for shotgun and rifle, and jägarexamen is required before you can get a licence for a hunting weapon.",
+    rows: [
+      { label: "Run by", value: "Naturvårdsverket (Swedish Environmental Protection Agency), through approved test supervisors" },
+      { label: "Questions", value: "70, four options each, plus up to 3 unscored" },
+      { label: "Time", value: "At most 60 minutes" },
+      { label: "Pass mark", value: "At least 60 of 70 correct" },
+      { label: "Format", value: "App on your own phone or tablet, before a provledare" },
+      { label: "Languages", value: "Swedish or English, with audio" },
+      { label: "Afterwards", value: "Practical shooting tests (shotgun, rifle, big game)" },
+      { label: "Tigertest mock tests", value: "3 x 70 questions in Swedish, 60 to pass" },
+    ],
+    basedOn: "Naturvårdsverket's regulations on jägarexamen (NFS 2015:10 as amended by NFS 2019:8), its theory test page and the 2020 kompetensbeskrivning, checked November 2026",
+    source: { name: "Naturvårdsverket: theory test for jägarexamen", url: "https://www.naturvardsverket.se/amnesomraden/jakt-och-vilt/for-jagare/teoriprov-jagarexamen/" },
+  },
+  semedb: {
+    answer:
+      "Since 6 June 2026, applicants for Swedish citizenship aged 16 to 66 must show knowledge of Swedish society. Those who cannot show it with grades from Swedish schooling can take the citizenship test in civics (medborgarskapsprovet i samhällskunskap), run by the Swedish Council for Higher Education (UHR) under Ordinance (2026:451); only people sent a letter by the Swedish Migration Agency can register. The test is in Swedish, on paper, with four options per question and one right answer. At the first sitting on 15 August 2026 there were, per press reports, 60 questions in 90 minutes, of which 40 were scored, and 28 of 40 (70%) was needed to pass; about eight in ten passed. UHR has not yet announced the length or time of the next sitting, planned for April to May 2027. The test is based on UHR's free study material Sverige i fokus, written with the Swedish National Agency for Education. A separate Swedish-language test is to follow later.",
+    rows: [
+      { label: "Run by", value: "UHR (Swedish Council for Higher Education)" },
+      { label: "Who takes it", value: "Citizenship applicants aged 16 to 66, on a letter from Migrationsverket" },
+      { label: "Questions", value: "60 multiple choice, 40 scored (August 2026, per press reports)" },
+      { label: "Pass mark", value: "28 of 40 scored questions, 70% (August 2026)" },
+      { label: "Time", value: "90 minutes (August 2026)" },
+      { label: "Format and language", value: "On paper, in Swedish, four options, one right" },
+      { label: "Study material", value: "Sverige i fokus (UHR and Skolverket)" },
+      { label: "Tigertest mock tests", value: "3 x 60 questions in Swedish, 70% target" },
+    ],
+    basedOn: "UHR's citizenship test pages, the study material Sverige i fokus (corrected 10 August 2026), Ordinance (2026:451) on citizenship tests, Migrationsverket's notices of 6 May and 30 September 2026 and press reports of the 15 August 2026 sitting, checked November 2026",
+    source: { name: "UHR: About the citizenship test (in Swedish)", url: "https://www.uhr.se/medborgarskapsprovet/om-medborgarskapsprovet/" },
+  },
+  dkmoto: {
+    answer:
+      "The Danish theory test (teoriprøve) for a motorcycle licence, categories A1, A2 and A, is run by Færdselsstyrelsen, the Danish Road Traffic Authority, under the same rules as the car test. It lasts about half an hour and you may make at most five errors; an unanswered question counts as an error. On the digital test, held on a touch screen, each question shows a computer-generated picture of a traffic situation and you pick the correct answer or answers. Questions are drawn at random from the teaching plan for motorcycles. Digital theory tests in Danish and English run at all of Færdselsstyrelsen's digital test sites; German only in Aabenraa. You take it after lessons with an approved motorcycle instructor. A1 can be issued from 18, A2 from 20 and A from 24, or from 22 after two years with A2.",
+    rows: [
+      { label: "Run by", value: "Færdselsstyrelsen (Danish Road Traffic Authority)" },
+      { label: "Time", value: "About half an hour" },
+      { label: "Pass rule", value: "At most 5 errors (guides: 25 questions, so 20 right)" },
+      { label: "Format", value: "Picture-based, one or more correct answers" },
+      { label: "Languages", value: "Danish and English at every digital site; German in Aabenraa" },
+      { label: "Tigertest mock tests", value: "8 x 25 questions, 20 to pass" },
+      { label: "Licence ages", value: "A1 from 18, A2 from 20, A from 24 (22 after 2 years of A2)" },
+    ],
+    basedOn: "Færdselsstyrelsen's pages on digital theory tests and its published randomisation key for the digital category A test, and the teaching plan for categories AM, A1, A2 and A (undervisningsplan, version 1.0 2026, in use from 1 July 2026), checked November 2026",
+    source: { name: "Færdselsstyrelsen: Hvor kan jeg tage en teoriprøve?", url: "https://www.fstyr.dk/erhverv/koereskoler-og-koerelaerere/digitale-teoriproever" },
+  },
+  dkindfoed: {
+    answer:
+      "The Danish citizenship test (indfødsretsprøven) is a written test for people applying for Danish citizenship by statute. It has 45 multiple-choice questions in Danish and lasts 45 minutes. 35 questions come from the official free learning material on Danish society, culture and history (Læremateriale til indfødsretsprøven, in text and audio), 5 are about current affairs from the months before the test, and 5 are about Danish values. To pass you need at least 36 correct answers, including at least 4 of the 5 values questions. Most questions have three options and some are yes or no. The test is run by SIRI (the Danish Agency for International Recruitment and Integration) and held twice a year, in May or June and in November or December, at language centres across Denmark; SIRI publishes each test and its answers afterwards. In May 2025, 58.2% of candidates passed.",
+    rows: [
+      { label: "Run by", value: "SIRI, under the Ministry of Immigration and Integration" },
+      { label: "Questions", value: "45 (35 learning material, 5 current affairs, 5 values)" },
+      { label: "Time", value: "45 minutes" },
+      { label: "Pass mark", value: "36 of 45, with at least 4 of 5 values questions" },
+      { label: "Language", value: "Danish" },
+      { label: "When", value: "Twice a year, May/June and November/December" },
+      { label: "Tigertest mock tests", value: "8 x 40 questions in Danish, 36 to pass" },
+    ],
+    basedOn: "Lex (Den Store Danske) and Lovguiden on the indfødsretsprøve, and the topics of SIRI's learning material, checked November 2026",
+    source: { name: "Lex: Indfødsretsprøve (in Danish)", url: "https://lex.dk/indf%C3%B8dsretspr%C3%B8ve" },
+  },
+  dkmedborger: {
+    answer:
+      "The Danish active citizenship test (medborgerskabsprøven) is a written test on democracy and everyday life in Denmark. Passing it meets the citizenship requirement, one of four supplementary conditions for permanent residence (tidsubegrænset opholdstilladelse), of which applicants must meet two. It has 25 multiple-choice questions in Danish with two or three options each, answered on paper in 30 minutes with no aids. You pass with at least 20 correct answers, and all questions count equally. The questions are written within SIRI's official free learning material (Læremateriale til medborgerskabsprøven, 26 fact sheets on school, work, welfare, health, family life, democracy, rights and duties, geography, history and culture). The test is run by SIRI (the Danish Agency for International Recruitment and Integration) through approved language centres, twice a year in May or June and November or December; SIRI publishes each test afterwards.",
+    rows: [
+      { label: "Run by", value: "SIRI, through approved language centres" },
+      { label: "Questions", value: "25 multiple choice (2 or 3 options)" },
+      { label: "Time", value: "30 minutes, no aids" },
+      { label: "Pass mark", value: "20 of 25, all questions equal" },
+      { label: "Language", value: "Danish" },
+      { label: "When", value: "Twice a year, May/June and November/December" },
+      { label: "Used for", value: "1 of 4 supplementary conditions for permanent residence" },
+      { label: "Tigertest mock tests", value: "8 x 25 questions in Danish, 20 to pass" },
+    ],
+    basedOn: "Executive order no. 452 of 13 May 2024 on the medborgerskabsprøve, the May 2025 test booklet and SIRI's learning material (August 2024), checked November 2026",
+    source: { name: "Retsinformation: Bekendtgørelse om medborgerskabsprøven (in Danish)", url: "https://www.retsinformation.dk/eli/lta/2024/452" },
+  },
+  dkjagt: {
+    answer:
+      "The Danish hunting test (jagtprøven) is the test for a first Danish hunting licence (jagttegn). It has a written part and a practical part, and the written part must be passed first. The written test has 40 questions in 30 minutes; you pass with at least 36 correct, and unanswered questions count as errors. Questions are yes/no or multiple choice, some with a picture of a species or a hunting situation, and they can be read aloud. Topics come from the official guidelines: species identification and game biology, game management, hunting weapons and ammunition, hunting law, handling shot game, hunting ethics, hunting methods and leadership, and shooting. The practical test covers safe shotgun handling in the field, judging distances to six game figures and shooting at four clay targets. To sign up you must have finished the compulsory hunting course (at least four days) and turn 16 in the calendar year of the test; you may take up to three written and three practical tests within 18 months of finishing the course. The test is run by the Danish Agency for Green Land Conversion and Aquatic Environment and held by Naturstyrelsen, in Danish.",
+    rows: [
+      { label: "Run by", value: "Styrelsen for Grøn Arealomlægning og Vandmiljø, held by Naturstyrelsen" },
+      { label: "Written test", value: "40 questions in 30 minutes" },
+      { label: "Pass mark", value: "36 of 40; unanswered questions count as errors" },
+      { label: "Practical test", value: "Shotgun handling, distance judging, 4 clay targets" },
+      { label: "Before the test", value: "Compulsory hunting course; turn 16 in the calendar year" },
+      { label: "Attempts", value: "Up to 3 written and 3 practical within 18 months of the course" },
+      { label: "Language", value: "Danish" },
+      { label: "Tigertest mock tests", value: "5 x 40 questions in Danish, 36 to pass" },
+    ],
+    basedOn: "Instruks for jagtprøven 2026, the 2025 guidelines for questions in the written hunting test, the 2025 guide to hunting licence teaching and Executive Order no. 238 of 27 February 2025 on hunting licences, checked November 2026",
+    source: { name: "SGAV: Instruks for jagtprøven 2026 (PDF, in Danish)", url: "https://sgavmst.dk/media/ttndlsbs/instruks-for-jagtproeven-2026.pdf" },
+  },
+  sehp: {
+    answer:
+      "Högskoleprovet (the Swedish Scholastic Aptitude Test, SweSAT) is Sweden's university admission test, set by the Swedish Council for Higher Education (UHR) and given by the universities each spring and autumn. It has five passes of 40 multiple-choice items, 55 minutes each: two verbal, two quantitative and one unscored try-out pass, so 160 items count. The verbal part has ORD (vocabulary), LÄS (Swedish reading), MEK (sentence completion) and ELF (English reading); the quantitative part has XYZ (problem solving), KVA (quantitative comparisons), NOG (data sufficiency) and DTK (diagrams, tables and maps). There are no penalties for wrong answers. Each part is normed separately to a 0.00 to 2.00 scale, and the result is their mean, given in steps of 0.05. Results are valid for eight years and the best valid result counts. The test is in Swedish, with ELF in English.",
+    rows: [
+      { label: "Set by", value: "UHR; sittings run by the universities" },
+      { label: "Passes", value: "5 x 40 items, 55 minutes each; 4 count" },
+      { label: "Scored items", value: "160 (80 verbal, 80 quantitative)" },
+      { label: "Verbal pass", value: "ORD 10, LÄS 10, MEK 10, ELF 10" },
+      { label: "Quantitative pass", value: "XYZ 12, KVA 10, NOG 6, DTK 12" },
+      { label: "Scoring", value: "1 point per correct answer, no penalty" },
+      { label: "Result", value: "0.00 to 2.00 in steps of 0.05, mean of the two normed parts" },
+      { label: "Valid", value: "8 years; the best result counts" },
+      { label: "Tigertest mock tests", value: "2 x 80 items in Swedish, one verbal and one quantitative pass" },
+    ],
+    basedOn: "studera.nu (UHR): the test's description, how the result is calculated, and the 18 October 2026 test booklets' instructions, checked November 2026",
+    source: { name: "studera.nu: Vad är högskoleprovet?", url: "https://www.studera.nu/hogskoleprov/om/intro/" },
+    tigertest:
+      "Tigertest has 218 original practice items in Swedish (ELF in English), two practice tests and eight drills, one per subtest, all free with no account required. The result shown is an estimate, not a UHR norm table.",
+  },
   fitheory: {
     answer:
       "The Finnish category B theory test (teoriakoe) is taken on a tablet at an Ajovarma service point, run for Traficom by A-Katsastus. It has three parts in 30 minutes: 15 multiple choice questions, 50 picture questions about traffic situations and 5 risk recognition questions, and you must reach the minimum in each part (11, 43 and 4). The test is offered in Finnish, Swedish and English, with an oral test of 60 minutes in some cases. You can take it one month before reaching the licence age, normally 18. A passed theory test is valid for one year, and you take it before the driving test.",
@@ -2512,6 +2641,71 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Traficom regulation on the driving theory test (TRAFICOM/523973/03.04.03.00/2019), Traficom's driving examination page and Driving Licence Act reform page, and the Road Traffic Act 729/2018 as consolidated to April 2026, checked November 2026",
     source: { name: "Traficom: Driving examination", url: "https://traficom.fi/en/drivers-and-vehicles/driving-licenses/driving-examination" },
   },
+  fimoto: {
+    answer:
+      "The Finnish motorcycle theory test (teoriakoe) for categories A1, A2 and A is taken on a tablet at an Ajovarma service point, run for Traficom by A-Katsastus. It has three parts in 30 minutes: 20 multiple choice questions, 50 picture questions about traffic situations and 5 risk recognition questions, and you must reach the minimum in each part (14, 43 and 4). The test is offered in Finnish, Swedish and English, with an oral test of 60 minutes in some cases. A passed theory test is valid for one year; a handling test and a driving test follow. A1 is open from 16, A2 from 18 and A from 24, or 20 after two years on A2.",
+    rows: [
+      { label: "Run by", value: "Traficom, at Ajovarma (A-Katsastus) service points" },
+      { label: "Format", value: "20 multiple choice, 50 traffic picture questions, 5 risk recognition" },
+      { label: "Pass marks", value: "14 of 20, 43 of 50 and 4 of 5, each part separately" },
+      { label: "Time", value: "30 minutes (60 for an oral test)" },
+      { label: "Languages", value: "Finnish, Swedish, English" },
+      { label: "Valid for", value: "One year after passing" },
+      { label: "Then", value: "Handling test and driving test" },
+      { label: "Minimum age", value: "A1 16, A2 18, A 24 (20 after two years on A2)" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions, 86% target" },
+    ],
+    basedOn: "Traficom regulation on the driving theory test (TRAFICOM/523973/03.04.03.00/2019), Traficom's driving examination, motorcycle licence and upgrade pages, and the Road Traffic Act 729/2018 as consolidated to April 2026, checked November 2026",
+    source: { name: "Traficom: Driving examination", url: "https://traficom.fi/en/drivers-and-vehicles/driving-licenses/driving-examination" },
+  },
+  fitruck: {
+    answer:
+      "The Finnish theory test for truck and bus categories C, CE, D and DE (teoriakoe) is taken on a tablet at an Ajovarma service point, run for Traficom by A-Katsastus. It has three parts in 30 minutes: 20 multiple choice questions, 30 picture questions about traffic situations and 5 risk recognition questions, and you must reach the minimum in each part (14, 26 and 4). Traficom's rules name Finnish, Swedish and English as the test languages; check the language for your category when you book. You need a valid category B licence, and you can take the test one month before the minimum age (21 for C and CE, or 18 with a basic professional qualification; 24 for D and DE). A passed theory test is valid for one year. Drivers in commercial transport also need professional competence (code 95).",
+    rows: [
+      { label: "Run by", value: "Traficom, at Ajovarma (A-Katsastus) service points" },
+      { label: "Format", value: "20 multiple choice, 30 traffic picture questions, 5 risk recognition" },
+      { label: "Pass marks", value: "14 of 20, 26 of 30 and 4 of 5, each part separately" },
+      { label: "Time", value: "30 minutes (60 for an oral test)" },
+      { label: "Languages", value: "Finnish, Swedish, English (check for your category)" },
+      { label: "Valid for", value: "One year after passing" },
+      { label: "Minimum age", value: "C and CE 21 (18 with a professional qualification), D and DE 24" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions, 80% target" },
+    ],
+    basedOn: "Traficom regulation on the driving theory test (TRAFICOM/523973/03.04.03.00/2019), Traficom's driving examination, lorry licence and bus licence pages, the Road Traffic Act 729/2018 and EU Regulation 561/2006 as amended, checked November 2026",
+    source: { name: "Traficom: Driving examination", url: "https://traficom.fi/en/drivers-and-vehicles/driving-licenses/driving-examination" },
+  },
+  fihygiene: {
+    answer:
+      "The Finnish Hygiene Passport test (hygieniapassitesti) proves basic food hygiene knowledge. Anyone who handles unpackaged, easily perishable food on food premises, in cafes, restaurants, shops or food factories, needs a Hygiene Passport once they have done such work for three months. The test has 40 statements, each marked true or false, in 45 minutes, and you need at least 34 correct answers to pass. It covers microbes and contamination, food poisoning and hygienic working methods, personal hygiene, cleaning, self-monitoring, and food law and authorities. The normal test is on paper in Finnish, Swedish or English; an oral test, an interpreter or another language can be arranged with the examiner in advance. Tests are held by examiners approved by Ruokavirasto (the Finnish Food Authority), who issue the passport as a certificate and a card. Hygiene certificates from other countries are not accepted in Finland.",
+    rows: [
+      { label: "Set by", value: "Ruokavirasto (Finnish Food Authority)" },
+      { label: "Held by", value: "Examiners approved by Ruokavirasto" },
+      { label: "Format", value: "40 true/false statements, on paper" },
+      { label: "Pass mark", value: "34 of 40 correct" },
+      { label: "Time", value: "45 minutes (no limit in a special situation test)" },
+      { label: "Languages", value: "Finnish, Swedish, English; others by arrangement" },
+      { label: "Who needs it", value: "Anyone handling unpackaged perishable food, within 3 months" },
+      { label: "Tigertest mock tests", value: "5 x 40 questions, 85% (34 of 40)" },
+    ],
+    basedOn: "Ruokavirasto regulation 7/2021 on hygiene proficiency, the Food Act 297/2021 (sections 19 and 20) and hygieniapassi.fi, checked November 2026",
+    source: { name: "Ruokavirasto: Hygiene Passport", url: "https://www.ruokavirasto.fi/en/foodstuffs/hygiene-passport/" },
+  },
+  fihunt: {
+    answer:
+      "The Finnish hunter's examination (metsästäjätutkinto) must be passed before you pay the game management fee (riistanhoitomaksu) and get a Finnish hunting card for the first time. It has 60 multiple-choice questions written by the Finnish Wildlife Agency (Suomen riistakeskus): first 15 species-identification questions from pictures, with 15 minutes for that part, then 45 theory questions, with at most an hour and a half in all. You pass with no more than 8 wrong answers, 52 points of 60, and unanswered questions count as wrong. The exam covers hunting law, species knowledge, game ecology and management, ethical and sustainable hunting, firearms and cartridges, hunting safety, hunting equipment and methods, and handling the game. Local game management associations (riistanhoitoyhdistykset) hold the exam, electronically on your own phone, tablet or computer or on paper, and advance registration is compulsory. From 1 January 2026 it can be taken in Finnish, Swedish, English or Sámi. Anyone who paid the fee in one of the five previous hunting years, and foreigners entitled to hunt in their own country, do not need it.",
+    rows: [
+      { label: "Questions written by", value: "Suomen riistakeskus (Finnish Wildlife Agency)" },
+      { label: "Held by", value: "Riistanhoitoyhdistykset (local game management associations)" },
+      { label: "Questions", value: "60: 15 species pictures, 45 theory" },
+      { label: "Pass mark", value: "At most 8 wrong, 52 of 60" },
+      { label: "Time", value: "At most 1.5 hours; species part 15 minutes" },
+      { label: "Languages", value: "Finnish, Swedish, English or Sámi (from 2026)" },
+      { label: "Needed for", value: "The first hunting card (riistanhoitomaksu)" },
+      { label: "Tigertest mock tests", value: "3 x 60 questions in Finnish, 52 to pass" },
+    ],
+    basedOn: "Suomen riistakeskus's instruction on the hunter's examination (1 January 2026), MMMa 1160/2014 on the hunter's examination, the Hunting Act 615/1993 and Hunting Decree 666/1993, checked November 2026",
+    source: { name: "Suomen riistakeskus: metsästäjätutkinto", url: "https://riista.fi/tietoa-metsastyksesta/haluatko-metsastajaksi/metsastajatutkinto/" },
+  },
   grdriving: {
     answer:
       "The Greek driving theory test is a computer-based multiple-choice test taken at a Transport Directorate exam centre before the practical driving test. Its questions are drawn at random from the Ministry of Infrastructure and Transport's question bank, and Greek law makes the questionnaires available in foreign languages, English among them, as well as in Greek with audio and in Greek Sign Language. Guides describe the category B test as 30 questions in 35 minutes with a pass at 29 correct. You train through a licensed driving school; a full licence is issued at 18, and since 2021 a 17-year-old who passes can drive accompanied on a provisional licence.",
@@ -2527,6 +2721,115 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "The Ministry of Infrastructure and Transport's computer theory test page, Law 4850/2021 article 6, the 2025 Highway Code (Law 5209/2025) and Greek motoring press on the test format, checked November 2026",
     source: { name: "Ministry of Infrastructure and Transport: computer theory test (ΜΣΘΕΥΟ)", url: "https://www.yme.gov.gr/metafores/adeies-odigisis/theoritiki-exetasi-ypopsifion-odigon-meso-i-y-mstheyo" },
+  },  grmoto: {
+    answer:
+      "The Greek motorcycle theory test is the computer-based multiple-choice test for categories A1, A2 and A, taken at a Transport Directorate exam centre before the practical riding test. The Ministry of Infrastructure and Transport runs its computer theory test in four licence groups, car, motorcycle, lorry and bus, and draws each candidate's questionnaire at random from its question bank. Greek law makes the questionnaires available in foreign languages as well as in Greek, in Greek with audio and in Greek Sign Language. Guides describe the motorcycle test like the car test, 30 questions with a pass at 29 correct; check the time and the current rule with your driving school or Transport Directorate. A1 covers motorcycles up to 125 cc and 11 kW, A2 up to 35 kW, and A any motorcycle.",
+    rows: [
+      { label: "Run by", value: "Ministry of Infrastructure and Transport (Transport Directorates)" },
+      { label: "Format", value: "Multiple choice on a computer, random draw from the question bank, motorcycle licence group" },
+      { label: "Questions", value: "30 (as guides report)" },
+      { label: "Pass mark", value: "29 of 30 (as guides report)" },
+      { label: "Languages", value: "Greek and foreign languages; Greek with audio; Greek Sign Language" },
+      { label: "Categories", value: "A1 (125 cc, 11 kW), A2 (35 kW), A (no limit)" },
+      { label: "Rules tested", value: "Greek Highway Code (Law 5209/2025) and safe riding" },
+      { label: "Tigertest mock tests", value: "6 x 30 questions, 29 to pass" },
+    ],
+    basedOn: "The Ministry of Infrastructure and Transport's computer theory test page, Law 4850/2021 article 6, the 2025 Highway Code (Law 5209/2025) articles 21, 33, 37, 38 and 44, EU Directive 2006/126/EC category limits and guides on the test format, checked November 2026",
+    source: { name: "Ministry of Infrastructure and Transport: computer theory test (ΜΣΘΕΥΟ)", url: "https://www.yme.gov.gr/metafores/adeies-odigisis/theoritiki-exetasi-ypopsifion-odigon-meso-i-y-mstheyo" },
+  },  grcitizen: {
+    answer:
+      "The Certificate of Adequate Knowledge for Naturalisation (Πιστοποιητικό Επάρκειας Γνώσεων για Πολιτογράφηση, PEGP) is required before you can apply for Greek citizenship by naturalisation. The General Secretariat for Citizenship of the Ministry of the Interior runs the exam, usually twice a year, in Greek only. It has three parts. Part A, up to 150 minutes on paper, holds the thematic units, 20 questions (4 on geography, 4 on culture, 6 on history and 6 on the institutions of the polity) worth 2 points each, and the written Greek section (18 questions and a short text of 80 to 100 words). Parts B and C test listening (10 questions) and speaking (up to 15 minutes). You pass with at least 70 of 100 points, provided you score at least 20 of 40 in the thematic units and 40 of 60 in Greek. Questions are drawn on the day from the official question bank, which is published on the exam platform. Candidates over 62 or with a learning difficulty answer the same questions orally.",
+    rows: [
+      { label: "Run by", value: "General Secretariat for Citizenship, Ministry of the Interior" },
+      { label: "Thematic units", value: "20 questions: 4 geography, 4 culture, 6 history, 6 institutions" },
+      { label: "Scoring", value: "2 points per correct thematic answer, 40 in all" },
+      { label: "Greek language", value: "Written, listening and speaking, 60 points" },
+      { label: "Pass mark", value: "70/100 overall, with at least 20/40 and 40/60" },
+      { label: "Time", value: "Part A up to 150 minutes" },
+      { label: "Language", value: "Greek only" },
+      { label: "Tigertest mock tests", value: "8 x 20 thematic questions in Greek, 14 as a target" },
+    ],
+    basedOn: "The General Secretariat for Citizenship's exam procedure guides for written and oral candidates (April 2026) and the Ministry of Education's call for examiners of 3 March 2026, checked November 2026",
+    source: { name: "PEGP exam platform, General Secretariat for Citizenship (in Greek)", url: "https://exetaseis-ithageneia.ypes.gr/" },
+  },  grsecurity: {
+    answer:
+      "To work in private security in Greece you need a work permit (άδεια εργασίας) from the Hellenic Police under Law 2518/1997, and for a Category A permit (guarding, close protection, cash transport, events and port or airport screening) a vocational training certificate from ΕΟΠΠΕΠ, Greece's national qualifications body. You first complete KEMEA's 105-hour Basic Training Programme for Private Security Personnel at a contracted training centre, then sit ΕΟΠΠΕΠ's certification exam, held in several periods a year, each with its own call. The exam has a theory part, a written test of 20 equivalent multiple-choice questions drawn electronically from the published list of topics, and a practical part, an oral test in groups of three before a three-member committee; both are compulsory. The final grade runs from 1 to 20 and 10 or more is a pass. The exam is in Greek. The work permit then lasts five years and is renewed at least one month before it expires.",
+    rows: [
+      { label: "Certified by", value: "ΕΟΠΠΕΠ (Greece)" },
+      { label: "Before the exam", value: "KEMEA Basic Training Programme, 105 hours" },
+      { label: "Theory part", value: "20 multiple-choice questions, drawn from the published list" },
+      { label: "Practical part", value: "Oral test in groups of three before a committee" },
+      { label: "Pass mark", value: "Final grade 10 of 20 or more" },
+      { label: "Language", value: "Greek" },
+      { label: "Work permit", value: "Hellenic Police, valid five years" },
+      { label: "Tigertest mock tests", value: "8 x 20 theory questions in Greek, 14 as a target" },
+    ],
+    basedOn: "ΕΟΠΠΕΠ certification exam notices and results for private security personnel (2022 to 2026, as published by alfavita.gr), the KEMEA programme description (ΕΟΠΠΕΠ decision ΔΠ/11556/2022) and Law 2518/1997 as amended, checked November 2026",
+    source: { name: "ΕΟΠΠΕΠ (in Greek)", url: "https://www.eoppep.gr/" },
+  },
+  bemoto: {
+    answer:
+      "The Belgian motorcycle theory exam covers categories A1, A2 and A and is separate from the car exam. It is taken at an approved exam centre in Flanders, Wallonia or Brussels and has 50 multiple-choice questions on a computer, on the Highway Code and safe motorcycle riding; you need at least 41 of 50 to pass. A pass is valid for three years. Brussels lets you sit it from 17 years and 9 months; Flanders sets the age by category (17 years 9 months for A1, 19 years 9 months for A2, 23 years 9 months for A). Holding A2 for at least two years exempts you from the category A theory exam. In Brussels the exam is in Dutch or French, with English or German only in booked sessions with an interpreter; ask your centre about English elsewhere. Licences: A1 from 18, A2 from 20, A from 24, or from 22 after two years on A2.",
+    rows: [
+      { label: "Run by", value: "Approved exam centres in Flanders, Wallonia and Brussels" },
+      { label: "Questions", value: "50 multiple choice" },
+      { label: "Pass mark", value: "41 of 50" },
+      { label: "In English", value: "Brussels: booked sessions with an interpreter; elsewhere ask your centre" },
+      { label: "Pass valid for", value: "3 years" },
+      { label: "Exempt", value: "With A2 held for 2 years (for category A)" },
+      { label: "Licence ages", value: "A1 from 18, A2 from 20, A from 24 (22 after 2 years of A2)" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions, 41 to pass" },
+    ],
+    basedOn: "The Brussels A1/A2/A licence page (be.brussels), Vlaanderen.be's step-by-step page for licences A1, A2 and A, Autosécurité's category A guide (February 2026) and the Belgian Highway Code (Royal Decree of 1 December 1975), checked November 2026",
+    source: { name: "be.brussels: training and exams for licence A1/A2/A", url: "https://be.brussels/nl/transport-mobiliteit/rijbewijs-en-kentekenbewijs/rijbewijs-behalen/rijopleiding-en-rijexamen-voor-rijbewijs-a1a2a" },
+  },
+  bevracht: {
+    answer:
+      "In Belgium the theory exam for a truck licence is taken on a computer at an approved exam centre (GOCA members such as Autoveiligheid and Autosécurité). For category C or C1 alone it is 50 multiple-choice questions in at most 50 minutes, and you pass with at least 41 correct; you can sit it from 17 years and 9 months. A professional driver also needs the certificate of professional competence (vakbekwaamheid, code 95): the combined theory exam is 100 questions in at most 100 minutes, 50 on the licence and 50 on professional competence, with at least 80 of 100 to pass, and 40 of 50 on one half exempts that half for three years. It is followed by a case-study test (8 case studies of 5 questions, 32 of 40) and an oral test of 10 questions (80 of 100). Each question has 2 or 3 options. The exam is in Dutch, French or German; for another language a sworn interpreter appointed by the centre can be booked at the candidate's cost.",
+    rows: [
+      { label: "Run by", value: "Approved exam centres (GOCA) in Flanders, Wallonia and Brussels" },
+      { label: "C or C1 alone", value: "50 questions, max. 50 minutes, 41 to pass" },
+      { label: "With professional competence (code 95)", value: "100 questions (50 + 50), max. 100 minutes, 80 to pass" },
+      { label: "Case studies", value: "8 x 5 questions, max. 80 minutes, 32 of 40" },
+      { label: "Oral test", value: "10 questions, max. 60 minutes, 80 of 100" },
+      { label: "Answer options", value: "2 or 3 per question" },
+      { label: "Languages", value: "Dutch, French, German (interpreter for others)" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions in Dutch, 40 to pass" },
+    ],
+    basedOn: "GOCA brochures for categories C/C1 and C/C1 with professional competence (16.11.2022), Vlaanderen.be's C and D licence page, the Belgian Highway Code and EU Regulations 561/2006 and 165/2014, checked November 2026",
+    source: { name: "Vlaanderen.be: truck and bus licence step by step (in Dutch)", url: "https://www.vlaanderen.be/rijbewijs-c-en-d-stap-voor-stap" },
+  },
+  betoelating: {
+    answer:
+      "Anyone who wants to study medicine or dentistry at a Flemish university must first pass the admission exam (toelatingsexamen arts or tandarts) run by the Flemish government. It has two parts. In the morning, Knowledge and Insight in the Sciences (KIW) has 40 multiple-choice questions, 10 each in biology, physics, chemistry and mathematics, in 3.5 hours, with a formula sheet and a simple calculator supplied. In the afternoon, Generic Competences (GC) has 15 questions on empathy and communication (EMCO) and 25 on short scientific texts about health (VAARDIG), in 1.5 hours. Every question has four options; a right answer earns 3 points, a wrong one costs 1 and a blank scores 0, so each part is out of 120. Candidates need at least 60 out of 120 on each part and are then ranked against a fixed quota for all of Flanders: in 2026, 1,881 of 6,123 medicine candidates got a place. The exam is in Dutch only, on paper, once a year; in 2027 the medicine exam is on 2 July and the dentistry exam on 3 July.",
+    rows: [
+      { label: "Run by", value: "Flemish government (Department of Education)" },
+      { label: "Science part (KIW)", value: "40 questions, 10 per subject, 3.5 hours" },
+      { label: "Generic competences (GC)", value: "15 EMCO and 25 VAARDIG, 1.5 hours" },
+      { label: "Marking", value: "+3 right, -1 wrong, 0 blank" },
+      { label: "Pass mark", value: "At least 60/120 on each part, then a quota ranking" },
+      { label: "Language", value: "Dutch only, on paper" },
+      { label: "2027 dates", value: "Medicine 2 July, dentistry 3 July" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions in Dutch, 35 as the target" },
+    ],
+    basedOn: "Flemish government pages on the admission exams (exam parts, answer sheet, schedule, 2026 FAQ), the KIW 2026 syllabus and the University of Antwerp's guidance, checked November 2026",
+    source: { name: "Vlaamse overheid: Toelatingsexamens arts, tandarts en dierenarts (Dutch)", url: "https://www.vlaanderen.be/toelatingsexamens" },
+  },
+  befsmavz: {
+    answer:
+      "Anyone who distributes insurance in Belgium, whether as a broker, agent, sub-agent, bank employee or other person in contact with the public, must prove their professional knowledge with an exam recognised by the FSMA. Since 1 January 2021 it is split into four modules: module 1 basic knowledge (the insurance market and the insurance contract, and other legislation), module 2 non-life (liability and legal expenses, motor and assistance, property, and personal insurance other than life), module 3 life, and module 4 life insurance with an investment component. Each submodule is a separate exam of 20 multiple-choice questions with no guessing correction, taking about 30 minutes, and you pass with at least 60% per submodule. A person in contact with the public takes module 1; the person responsible for distribution also takes the modules for the products the firm sells, and module 4 counts only with module 3. Febelfin Academy, one recognised organiser, runs the exams in Dutch, French and English, in person or online with remote supervision.",
+    rows: [
+      { label: "Recognised by", value: "FSMA (Febelfin Academy and other recognised organisers)" },
+      { label: "Modules", value: "1 basic knowledge, 2 non-life, 3 life, 4 life with investment component" },
+      { label: "Per submodule", value: "20 multiple-choice questions, about 30 minutes" },
+      { label: "Pass mark", value: "At least 60% per submodule" },
+      { label: "Guessing correction", value: "None" },
+      { label: "Who takes what", value: "Module 1 for everyone; modules 2 to 4 by product" },
+      { label: "Languages", value: "Dutch, French and English (Febelfin Academy)" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions in Dutch across all modules, 30 to pass" },
+    ],
+    basedOn: "Royal Decree of 18 June 2019 on professional knowledge in insurance distribution, FSMA communication FSMA_2019_14, Febelfin Academy's IDD exam pages and the Insurance Act of 4 April 2014, checked November 2026",
+    source: { name: "Febelfin Academy: knowledge requirements under the IDD", url: "https://www.febelfin-academy.be/en/faq/insurances/what-are-knowledge-requirements-context-european-insurance-distribution-directive" },
   },
   rodrpciv: {
     answer:
@@ -2544,6 +2847,69 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Order MAI 268/2010 on the driving licence examination procedure (art. 5, 10 and 11, as amended to 2014), OUG 195/2002 (Codul rutier) and its implementing regulation, checked November 2026",
     source: { name: "DGPCI (Direcția Generală Permise de Conducere și Înmatriculări)", url: "https://dgpci.mai.gov.ro/" },
   },
+  rocpi: {
+    answer:
+      "The CPI (certificat de pregătire profesională inițială) is Romania's Driver CPC initial qualification, needed to drive trucks (CPI marfă) or buses and coaches (CPI persoane) professionally. The exam is run by the Romanian Road Authority (ARR) through its county agencies after a course at an authorised training centre. The theory exam has a 2-hour paper of 100 multiple-choice questions, each with four options and one correct answer, and a 2-hour paper of six case studies; you need 70% on each before you may sit the practical exam. Since 2025 ARR also runs the CPI theory exam in English, in Bucharest only, and publishes its English question base on testare.arr.ro. A driver who already holds one CPI can add the other kind of transport with a 20-question short CPI questionnaire and the full practical exam.",
+    rows: [
+      { label: "Run by", value: "ARR (Autoritatea Rutieră Română) and its county agencies" },
+      { label: "Theory questionnaire", value: "100 questions, 4 options, one correct, 2 hours" },
+      { label: "Case studies", value: "6 cases in 2 hours, two per chapter" },
+      { label: "Pass mark", value: "70% of the questions and 70% of the case-study marks" },
+      { label: "Then", value: "Practical exam (a driving part and a second part)" },
+      { label: "Short CPI", value: "20 questions plus the full practical, to add goods or passengers" },
+      { label: "Languages", value: "Romanian; English in Bucharest on ARR's dates" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions at the real pace, 70% to pass" },
+    ],
+    basedOn: "Norms approved by Order of the Minister of Transport 1214/2015 (Annex 2, art. 4) and ARR's communiqué on exams in English (December 2024), checked November 2026",
+    source: { name: "Autoritatea Rutieră Română (ARR)", url: "https://www.arr.ro/" },
+  },
+  rotaxi: {
+    answer:
+      "Every taxi driver in Romania, and every driver in rental mode (închiriere), which includes Uber and Bolt-style ride-hailing drivers under OUG 49/2019, needs a certificate of professional attestation from the Romanian Road Authority (ARR). It is issued after a 30-hour course at an authorised driving school and a written multiple-choice test (test-grilă) of 20 questions at the ARR county agency, with at least 70 percent, 14 correct answers, needed to pass. The test can be taken in Romanian or English. You must be at least 21, have held a category B licence for at least two years, be medically and psychologically fit and have a clean criminal record for the offences Law 38/2003 lists. The certificate has no end date but must be endorsed every five years.",
+    rows: [
+      { label: "Run by", value: "ARR (Autoritatea Rutieră Română), county agencies" },
+      { label: "Questions", value: "20 multiple choice (test-grilă)" },
+      { label: "Pass mark", value: "70% (14 correct)" },
+      { label: "Languages", value: "Romanian or English" },
+      { label: "Before the test", value: "30-hour course at an authorised driving school" },
+      { label: "Minimum age", value: "21, with a B licence held 2 years" },
+      { label: "Certificate", value: "No end date; endorsed every 5 years" },
+      { label: "Tigertest mock tests", value: "8 x 20 questions, 14 to pass" },
+    ],
+    basedOn: "Law 38/2003 on taxi and rental transport (art. 26-28), the ARR training and attestation norms (Annex 7^1 to OMT 1214/2015, as amended), the ARR's 2025 notice on exams in English and OUG 49/2019 on alternative transport, checked November 2026",
+    source: { name: "Autoritatea Rutieră Română (ARR)", url: "https://www.arr.ro/" },
+  },
+  roadmed: {
+    answer:
+      "There is no single national medical school entrance exam in Romania: each state university of medicine and pharmacy (UMF Carol Davila Bucharest, Iuliu Hațieganu Cluj-Napoca, Grigore T. Popa Iași, Victor Babeș Timișoara and the others) sets its own written multiple-choice test (grile) on a syllabus and textbook list it publishes each year. At UMF Carol Davila in 2026 the Medicine test had 100 questions in 2 hours 30 minutes: 60 on biology (human anatomy and physiology, compulsory) and 40 on chemistry or physics by the candidate's choice, each with one correct answer and worth one point; places go to the highest scores, with a minimum grade of 5. UMF Cluj's 2026 test covered biology and chemistry in 2 hours with multiple-answer questions. The tests are in Romanian and are usually held in July.",
+    rows: [
+      { label: "Run by", value: "Each university of medicine and pharmacy (UMF)" },
+      { label: "Example: UMF Carol Davila 2026", value: "100 questions, 2 h 30 min" },
+      { label: "Subjects (Carol Davila)", value: "Biology 60 + Chemistry or Physics 40" },
+      { label: "Example: UMF Cluj 2026", value: "Biology and Chemistry, 2 hours, multiple answers" },
+      { label: "Ranking", value: "By score; minimum grade 5 at Carol Davila" },
+      { label: "Language", value: "Romanian" },
+      { label: "Tigertest mock tests", value: "4 x 50 in Romanian (30 biology, 20 chemistry), 40 to pass" },
+    ],
+    basedOn: "UMF Carol Davila admission regulation 2026 (Senate, 22 January 2026) and UMF Iuliu Hațieganu Cluj admission guide 2026, checked November 2026",
+    source: { name: "UMF Carol Davila: admission regulation 2026", url: "https://umfcd.ro/wp-content/uploads/2026/ADMITERE_2026/REGULAMENTUL_DE_ADMITERE/UMFCD_Regulament%20admitere%20licenta%202026_SENAT%2022.01.2026.pdf" },
+  },
+  rorezid: {
+    answer:
+      "Romania's national residency entrance exam (concursul de Rezidențiat) is run by the Ministry of Health through the Central Residency Commission at six university centres: Bucharest, Cluj-Napoca, Craiova, Iasi, Targu Mures and Timisoara. The 2026 session is on Sunday 15 November 2026, with the same model and reading list as 2025. Each domain (Medicine, Dentistry, Pharmacy) sits one national multiple-choice test of 200 questions in 4 hours, in Romanian: a quarter are single-answer questions (one correct of five, 4 points) and three quarters are multiple-answer questions (two to four correct of five, 5 points), for a maximum of 950 points. Candidates learn their score on the spot. You pass with at least 60% of the highest score achieved nationally in your domain, and residency places are chosen in score order. For Medicine the syllabus covers set chapters of Kumar and Clark's Clinical Medicine, Lawrence's General Surgery and Surgical Specialties and Sinopsis de medicina.",
+    rows: [
+      { label: "Run by", value: "Ministry of Health, Central Residency Commission" },
+      { label: "2026 session", value: "Sunday 15 November 2026" },
+      { label: "Questions", value: "200 in 4 hours, one national test per domain" },
+      { label: "Question types", value: "50 single-answer, 150 multiple-answer, 5 options each" },
+      { label: "Maximum score", value: "950 points (4 per single, 5 per multiple)" },
+      { label: "Pass mark", value: "60% of the national top score in the domain" },
+      { label: "Language", value: "Romanian" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions in Romanian, single answer, 60% to pass" },
+    ],
+    basedOn: "Ministry of Health announcements for the 2025 and 2026 sessions, the Central Residency Commission's 2025 instructions for candidates and the 2025 Medicine syllabus (kept for 2026), checked November 2026",
+    source: { name: "Ministerul Sănătății: Rezidențiat", url: "https://rezidentiat.ms.ro/" },
+  },
   hukresz: {
     answer:
       "Hungary's category B theory exam, officially Közlekedési alapismeretek and widely called the KRESZ exam, is taken on a computer at a centre of the KAV, the national transport exam centre. It has 55 multiple-choice questions and lasts 55 minutes, one minute per question. The questions are worth 75 points in total and you need at least 65 to pass; guides say 10 questions are worth 3 points and 45 are worth 1. Guides and driving schools say the exam is offered in Hungarian, English, German and Romanian. You may sit it from 16 years and 9 months after a driving school course, and a pass stays valid for two years while you complete the driving test, which you may take from 17.",
@@ -2559,7 +2925,70 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "KRESZ (1/1975. (II. 5.) KPM-BM decree) as in force in November 2026 and the KAV's category B exam requirements as quoted by driving schools, checked November 2026",
     source: { name: "KAV Közlekedési Alkalmassági és Vizsgaközpont", url: "https://www.vizsgakozpont.hu/" },
+  },  hukreszmoto: {
+    answer:
+      "Motorcycle and moped learners in Hungary sit the computer-based theory exam Közlekedési alapismeretek at a centre of the KAV, the national transport exam centre, with questions for their category. For categories A1, A2 and A it has 55 multiple-choice questions in 55 minutes, worth 75 points, and you need at least 65. For the AM moped category it has 25 questions in 25 minutes, worth 35 points, and you need 30. Guides say the motorcycle and car exams can be taken in Hungarian, English, German and Romanian. AM is open from 14, A1 from 16, A2 from 18, and A from 20 after two years on A2 or from 24 without it.",
+    rows: [
+      { label: "Run by", value: "KAV Közlekedési Alkalmassági és Vizsgaközpont" },
+      { label: "A1, A2, A", value: "55 questions, 55 minutes, 65 of 75 points to pass" },
+      { label: "AM (moped)", value: "25 questions, 25 minutes, 30 of 35 points to pass" },
+      { label: "Languages", value: "Hungarian, English, German, Romanian (guides)" },
+      { label: "Minimum age", value: "AM 14, A1 16, A2 18, A 20 (after two years on A2) or 24" },
+      { label: "Then", value: "Handling and road riding tests" },
+      { label: "Tigertest tests", value: "3 x 55 questions, 87% target" },
+    ],
+    basedOn: "KAV curriculum and exam requirements for categories A2 (2020), A after A1/A2 (2023) and AM (2023), Government Decree 326/2011 Annex 7 and the KRESZ (1/1975. (II. 5.) KPM-BM decree) as in force in November 2026, checked November 2026",
+    source: { name: "KAV Közlekedési Alkalmassági és Vizsgaközpont", url: "https://www.vizsgakozpont.hu/" },
   },
+  hugki: {
+    answer:
+      "The GKI (gépjárművezetői képesítési igazolvány) is Hungary's EU Driver CPC, which truck and bus drivers need to drive for work. After a compulsory course of at least 44 hours (66 for truck and bus together), you sit three computer-based theory exams at a KAV centre: safe and rational driving, applying the regulations, and health, safety, service and logistics. Each has 40 multiple-choice questions in 40 minutes, and you need 30 of 40 points in each. A 120-minute written case study (60 of 100 points to pass) and practical exams follow, and everything must be passed within a year of starting the course. According to the trade press, since September 2022 the theory exams can be taken in English or Russian without an interpreter. The GKI card carries the EU code 95, is valid for five years and is renewed by periodic training of at least 35 hours.",
+    rows: [
+      { label: "Run by", value: "KAV Közlekedési Alkalmassági és Vizsgaközpont" },
+      { label: "Theory exams", value: "3 subjects, 40 multiple-choice questions each" },
+      { label: "Time", value: "40 minutes per subject" },
+      { label: "Pass mark", value: "30 of 40 points in each subject" },
+      { label: "Case study", value: "120 minutes, 60 of 100 points (not modelled)" },
+      { label: "Languages", value: "Hungarian, English, Russian, Serbian, Ukrainian (trade press)" },
+      { label: "Card valid for", value: "5 years, code 95 on the licence" },
+      { label: "Tigertest tests", value: "4 x 40 questions, 75% target" },
+    ],
+    basedOn: "the KAV-published GKI curriculum and exam requirements (in force 17 March 2025), Decree 24/2005 GKM and EU Regulations 561/2006 and 165/2014, checked November 2026",
+    source: { name: "KAV Közlekedési Alkalmassági és Vizsgaközpont", url: "https://vizsgakozpont.hu/" },
+  },
+  huelsoseg: {
+    answer:
+      "Every first driving licence in Hungary needs proof of road first aid knowledge (közúti elsősegélynyújtási ismeretek), examined only by the county and Budapest organisations of the Hungarian Red Cross (Magyar Vöröskereszt). The exam is mainly practical: you perform one-rescuer CPR, examine a casualty and put an unconscious casualty in the recovery position, then solve an \"A\" and a \"B\" task from a drawn card, such as controlling bleeding, splinting or treating a burn. The theory is asked orally, or in writing at some county organisations. There is no question count or pass mark: the examiner grades you pass or fail, and a fail-level error (for example wrong CPR depth or rate, a pressure bandage on the neck, or removing a helmet without holding the neck) or anything that would worsen the casualty fails. A course is optional; the exam is based on the book Elsősegélynyújtás mindenkinek by István Hornyák. Health professionals are exempt with their diploma, and secondary-school students with the certificate of the online first aid exam. The exam is in Hungarian.",
+    rows: [
+      { label: "Run by", value: "Hungarian Red Cross county and Budapest organisations" },
+      { label: "Practical part", value: "CPR, casualty examination, recovery position" },
+      { label: "Drawn task", value: "One \"A\" and one \"B\" task (bleeding, splints, burns...)" },
+      { label: "Theory", value: "Oral, or written at some counties" },
+      { label: "Result", value: "Pass or fail, no points" },
+      { label: "Course", value: "Optional" },
+      { label: "Language", value: "Hungarian" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions in Hungarian, 40 to pass" },
+    ],
+    basedOn: "Decree 31/1992 (XII. 19.) NM, the Hungarian Red Cross first aid exam rules (MVK-SZ-036, examinee extract 2022) and the ERC 2025 first aid and BLS guidelines as summarised for Hungary (Orvosi Hetilap 2026), checked November 2026",
+    source: { name: "Decree 31/1992 (XII. 19.) NM on net.jogtar.hu (in Hungarian)", url: "https://net.jogtar.hu/jogszabaly?docid=99200031.nm" },
+  },
+  hubizt: {
+    answer:
+      "To sell insurance in Hungary as a tied agent (ügynök or többes ügynök) you need, among the routes the Insurance Act (Bit.) allows, the official exam of the Magyar Nemzeti Bank (MNB), taken after the compulsory course at a training body registered with the MNB. The exam is a Hungarian-language multiple-choice computer test, sat in the training body's exam room or online from your own computer with video and sound recording. The dependent intermediary exam has 40 questions in 40 minutes and you pass with 30 points. The independent (broker) exam has 60 questions in 60 minutes with 45 points to pass, and the differential exam that takes a tied agent to broker level has 20 questions in 20 minutes with 15 points to pass. Each test sheet is drawn from the MNB's question bank, revised most recently from 2 June 2026. The dependent exam covers three subjects set by decree 40/2015 NGM: financial and insurance market players and authorities, basic insurance concepts, and insurance contract law. Once you move on from a question you cannot change its answer.",
+    rows: [
+      { label: "Run by", value: "Magyar Nemzeti Bank, through registered training bodies" },
+      { label: "Dependent exam", value: "40 questions, 40 minutes, pass at 30" },
+      { label: "Independent exam", value: "60 questions, 60 minutes, pass at 45" },
+      { label: "Differential exam", value: "20 questions, 20 minutes, pass at 15" },
+      { label: "Format", value: "Multiple-choice computer test, exam room or online" },
+      { label: "Language", value: "Hungarian" },
+      { label: "Question bank", value: "MNB bank, revised from 2 June 2026" },
+      { label: "Tigertest mock tests", value: "5 x 40 questions in Hungarian, 30 to pass" },
+    ],
+    basedOn: "the MNB exam rules (Vizsgaszabályzat, in force 12 June 2025), annexes 2 and 3 of decree 40/2015 (XII. 30.) NGM, and the MNB notice on the question bank of 14 May 2026, checked November 2026",
+    source: { name: "MNB exam rules (Vizsgaszabályzat, in Hungarian)", url: "https://www.mnb.hu/letoltes/vizsgaszabalyzat.pdf" },
+  },
+
   mttheory: {
     answer:
       "The Malta driving theory test is run by Transport Malta at its Theory Test Centre. It is a multiple-choice test on a touch-screen computer: 35 questions in 45 minutes, and you need at least 30 correct to pass. You must be at least 18 and hold a learner's permit for the licence category, and you show your ID card before the test. It is offered in English or Maltese. After passing, you take the practical driving test. Malta drives on the left, and the questions follow Malta's own road rules and Highway Code.",
@@ -2576,21 +3005,281 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Transport Malta's licensing guidance and the Highway Code of Malta (updated 25 July 2025), checked November 2026",
     source: { name: "Transport Malta: Obtaining your driving licence", url: "https://www.transport.gov.mt/land/licence/obtaining-your-driving-licence-786" },
   },
+  mtmoto: {
+    answer:
+      "The Malta motorcycle theory test is Transport Malta's theory test for a moped or motorcycle licence in categories AM, A1, A2 and A, taken on a touch-screen computer at the Theory Test Centre. Transport Malta gives the theory test as 35 multiple-choice questions in 45 minutes, with 30 correct to pass, in English or Maltese. Malta's driving licence regulations add compulsory questions for motorcycle categories on protective clothing and helmets, how visible riders are, slippery surfaces such as drain covers and road markings, and the engine cut-out switch, oil and chain. For category AM the theory test is the whole test; for A1, A2 and A a practical test follows.",
+    rows: [
+      { label: "Run by", value: "Transport Malta" },
+      { label: "Categories", value: "AM, A1, A2 and A" },
+      { label: "Questions", value: "35 multiple choice, on a touch screen" },
+      { label: "Time", value: "45 minutes" },
+      { label: "Pass mark", value: "30 of 35" },
+      { label: "Languages", value: "English or Maltese" },
+      { label: "Theory test age", value: "18, or 16 for category AM (S.L. 65.18 reg. 18)" },
+      { label: "Tigertest mock tests", value: "5 x 35 questions, 30 to pass" },
+    ],
+    basedOn: "the Motor Vehicles (Driving Licences) Regulations (S.L. 65.18), the Motor Vehicles Regulations (S.L. 65.11) and Transport Malta's licensing guidance, checked November 2026",
+    source: { name: "Motor Vehicles (Driving Licences) Regulations, S.L. 65.18", url: "https://legislation.mt/eli/sl/65.18/eng" },
+  },
+  mtcpc: {
+    answer:
+      "The Driver CPC (Certificate of Professional Competence) theory test is part of the initial qualification every professional bus, coach and truck driver in Malta needs as well as the licence. Under the Motor Vehicles (Driving Licences) Regulations the theory test lasts at least four hours and has multiple-choice questions and case studies, followed by practical tests, run by Transport Malta or a body it designates. Transport Malta's guidelines for training providers describe the multiple-choice module as 80 questions in 100 minutes and the case study module as six case studies in 100 minutes, each with a 60% pass mark. The CPC lasts five years, then 35 hours of periodic training renews it.",
+    rows: [
+      { label: "Who needs it", value: "Drivers of buses, coaches and trucks (C1, C, D1, D) for work" },
+      { label: "Theory", value: "At least 4 hours: multiple choice plus case studies" },
+      { label: "Multiple-choice module", value: "80 questions in 100 minutes, 60% to pass (training-provider guidelines)" },
+      { label: "Case studies", value: "6 case studies in 100 minutes, 60% to pass (training-provider guidelines)" },
+      { label: "Practical", value: "Driving test of at least 90 minutes plus a 30-minute practical test" },
+      { label: "Valid", value: "5 years, renewed by 35 hours of periodic training" },
+      { label: "On your licence", value: "Code 95" },
+      { label: "Run by", value: "Transport Malta or a designated body; courses by approved training providers" },
+    ],
+    basedOn: "S.L. 65.18 (Motor Vehicles (Driving Licences) Regulations) and Transport Malta's guidelines for approved training providers, checked November 2026",
+    source: { name: "Motor Vehicles (Driving Licences) Regulations, S.L. 65.18", url: "https://legislation.mt/eli/sl/65.18/eng" },
+  },
+  mttaxi: {
+    answer:
+      "The Malta taxi driver theory test is the theory examination for the Taxi Driver and Area Knowledge Certificate, which you need with a practical test and 40 hours accompanying a working taxi driver to get a taxi driver permit and the driver's tag from Transport Malta. You first attend a taxi driver course of at least 46 hours with a training provider approved by Transport Malta. The Taxi Services Regulations set the theory examination at 45 minutes; Transport Malta's guidance gives 35 multiple-choice questions with 30 correct to pass, in Maltese or English.",
+    rows: [
+      { label: "Run by", value: "Transport Malta (Land Transport Directorate)" },
+      { label: "Questions", value: "35 multiple choice (Transport Malta guidance)" },
+      { label: "Time", value: "45 minutes" },
+      { label: "Pass mark", value: "30 of 35 (about 85%)" },
+      { label: "Course first", value: "At least 46 hours with an approved provider" },
+      { label: "Then", value: "Practical test and 40 accompanied hours, 10 at night" },
+      { label: "Permit age", value: "19 or over" },
+      { label: "Permit and tag", value: "Up to five years, refresher course every five years" },
+    ],
+    basedOn: "the Taxi Services Regulations (S.L. 499.59) and Transport Malta's taxi driver guidance, checked November 2026",
+    source: { name: "Taxi Services Regulations, S.L. 499.59", url: "https://legislation.mt/eli/sl/499.59/eng" },
+  },
+  mtguard: {
+    answer:
+      "In Malta no one may act as a private guard, and no agency may provide one, without a licence from the Commissioner of Police under the Private Guards and Community Officers Act (Cap. 389). Under the Private Guards Regulations an applicant shows a certificate from a training course the Commissioner has approved, such as the Award in Private Security Guard Services, unless he has served with the police, the armed forces or the prison services. Jobsplus describes that course as 40 hours in two 20-hour modules, each ending with a 1-hour written paper of true or false, multiple choice and short answer questions, with a 45% pass mark. Training providers write their own papers, so there is no fixed question count. 70% is Tigertest's readiness line for these mock tests.",
+    rows: [
+      { label: "Course", value: "Award in Private Security Guard Services (MQF Level 2, 4 ECTS)" },
+      { label: "Modules", value: "Two of 20 hours: legislation and occupational skills; security risk and practices" },
+      { label: "Assessment", value: "1-hour paper per module: true or false, multiple choice, short answers" },
+      { label: "Pass mark", value: "45% per module (70% is Tigertest's target)" },
+      { label: "Questions", value: "Set by the training provider; not published" },
+      { label: "Entry", value: "Age 18 to 65, MQF Level 2 maths and English, clean conduct certificate (Jobsplus)" },
+      { label: "Licence", value: "Private guard licence from the Commissioner of Police (Cap. 389)" },
+    ],
+    basedOn: "Jobsplus course sheet (June 2025), Cap. 389 and S.L. 389.01, checked November 2026",
+    source: { name: "Jobsplus: Award in Private Security Guard Services", url: "https://jobsplus.gov.mt/media/jysd0buh/award-in-private-security-guard-services.pdf" },
+  },
   detheorie: {
     answer:
-      "The German theory test (theoretische Fahrerlaubnisprüfung) for a first class B car licence has 30 questions, answered on screen at a TÜV or DEKRA test centre: 20 from the basic material that applies to every licence class (Grundstoff) and 10 class B questions (Zusatzstoff). Each question carries 2 to 5 error points depending on its importance for road safety, 110 in all. You pass with no more than 10 error points, but two wrong 5-point questions always fail. There is no fixed time limit; the guide time is 45 minutes. The test is in German and can also be taken in 12 foreign languages, including English, Turkish, Russian and Arabic. Questions come from the official catalogue published by TÜV | DEKRA arge tp 21, revised each April and October; some have several correct answers, some ask for a number, and up to three are short videos. A reform with a smaller catalogue and equal weighting is planned for 2027.",
+      "The German theory test (theoretische Fahrerlaubnisprüfung) for a first class B car licence has 30 questions, answered on screen at a TÜV or DEKRA test centre: 20 from the basic material that applies to every licence class (Grundstoff) and 10 class B questions (Zusatzstoff). Each question carries 2 to 5 error points depending on its importance for road safety, 110 in all. You pass with no more than 10 error points, but two wrong 5-point questions always fail. There is no fixed time limit; the guide time is 45 minutes. The test is in German and can also be taken in several foreign languages (the FeV now lists 14), including English, Turkish, Russian and Arabic. Questions come from the official catalogue published by TÜV | DEKRA arge tp 21, revised each April and October; some have several correct answers, some ask for a number, and up to three are short videos. A reform with a smaller catalogue and equal weighting is planned for 2027.",
     rows: [
       { label: "Run by", value: "TÜV and DEKRA test centres (official test bodies)" },
       { label: "Questions", value: "30 (20 basic, 10 class B)" },
       { label: "Scoring", value: "2 to 5 error points per question, 110 in all" },
       { label: "Pass mark", value: "At most 10 error points, not two 5-point errors" },
       { label: "Time", value: "No fixed limit, guide time 45 minutes" },
-      { label: "Languages", value: "German and 12 foreign languages incl. English" },
+      { label: "Languages", value: "German and several foreign languages incl. English" },
       { label: "Catalogue updates", value: "Each 1 April and 1 October" },
       { label: "Tigertest mock tests", value: "7 x 30 questions in German, 28 to pass" },
     ],
     basedOn: "Fahrerlaubnis-Verordnung Anlage 7, TÜV NORD and TÜV | DEKRA arge tp 21 guidance on the theory test, StVO, StVZO and StVG as in force, checked November 2026",
     source: { name: "TÜV | DEKRA arge tp 21: driving licence test", url: "https://fahrerlaubnis.tuev-dekra.de/en/" },
+  },
+  demotorrad: {
+    answer:
+      "The German motorcycle theory test (theoretische Fahrerlaubnisprüfung for classes A, A1 and A2) is taken on screen at a TÜV or DEKRA test centre. For a first licence it has 30 questions, 20 from the basic material shared by every class (Grundstoff) and 10 motorcycle questions (Zusatzstoff), each worth 2 to 5 error points, 110 in all; you pass with no more than 10 error points, but two wrong 5-point questions always fail. If you already hold another licence, such as class B, the extension test has 20 questions, 72 points and at most 6 error points. There is no fixed time limit. Moving up from A1 to A2 or from A2 to A after two years needs only a practical test, and the B196 entitlement for light motorcycles needs a training course, not a test. The test is in German and can also be taken in several foreign languages, including English.",
+    rows: [
+      { label: "Run by", value: "TÜV and DEKRA test centres (official test bodies)" },
+      { label: "Questions, first licence", value: "30 (20 basic, 10 motorcycle)" },
+      { label: "Questions, extension (e.g. from B)", value: "20, at most 6 error points" },
+      { label: "Scoring", value: "2 to 5 error points per question" },
+      { label: "Pass mark, first licence", value: "At most 10 of 110 error points, not two 5-point errors" },
+      { label: "Time", value: "No fixed limit" },
+      { label: "Languages", value: "German and several foreign languages incl. English" },
+      { label: "Tigertest mock tests", value: "7 x 30 questions in German, half motorcycle topics, 28 to pass" },
+    ],
+    basedOn: "Fahrerlaubnis-Verordnung Anlage 7, §§ 6, 6b and 15 FeV, TÜV NORD and TÜV | DEKRA arge tp 21 guidance on the theory test, StVO and StVZO as in force, checked November 2026",
+    source: { name: "TÜV | DEKRA arge tp 21: driving licence test", url: "https://fahrerlaubnis.tuev-dekra.de/en/" },
+  },
+  deaevo: {
+    answer:
+      "The German trainer aptitude exam (Ausbildereignungsprüfung) under the Ausbilder-Eignungsverordnung (AEVO) proves that someone may train apprentices in Germany's dual system. It has a written and a practical part, and each must be graded at least 'ausreichend' (sufficient). The written part covers case-based tasks from all four fields of action (check requirements and plan training, prepare training and hire apprentices, carry out training, complete training) and is meant to last three hours. At the chambers of commerce (IHKs) it is about 80 programmed multiple-choice tasks built around several case situations; each task states how many answers are correct and scores only if all of them are marked, and 50 of 100 points pass. Many IHKs now run it on a tablet or notebook. In the practical part the candidate presents a training situation (at most 15 minutes) or carries it out, followed by a technical discussion, at most 30 minutes in all. A failed exam can be repeated twice. The exam is in German and is taken at the competent chamber, usually the IHK or the Handwerkskammer; a master craftsman's exam already includes it.",
+    rows: [
+      { label: "Run by", value: "Competent chamber, usually IHK or Handwerkskammer" },
+      { label: "Parts", value: "Written and practical, each at least 'ausreichend'" },
+      { label: "Written part", value: "Case-based tasks from all four fields of action, 3 hours" },
+      { label: "Tasks at the IHKs", value: "About 80, multiple answers possible, all or nothing" },
+      { label: "Pass mark (written)", value: "50 of 100 points" },
+      { label: "Practical part", value: "Presentation or demonstration (up to 15 min) plus discussion, up to 30 min" },
+      { label: "Retakes", value: "Two" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions in German, 35 to pass" },
+    ],
+    basedOn: "Ausbilder-Eignungsverordnung § 4, the BIBB Rahmenplan of July 2023 and the exam guidance of several IHKs (Darmstadt, Bonn/Rhein-Sieg, Gießen-Friedberg), checked November 2026",
+    source: { name: "Ausbilder-Eignungsverordnung (AEVO), gesetze-im-internet.de", url: "https://www.gesetze-im-internet.de/ausbeignv_2009/" },
+  },
+  de34a: {
+    answer:
+      "The Sachkundeprüfung under § 34a of the German Trade Regulation Act (GewO) is the competence exam for security work, taken before a chamber of commerce (IHK). It is compulsory for security business owners and managers and for guards on patrols in public spaces or publicly accessible private areas, store detectives, door staff at discotheques, and those in charge at refugee accommodation and access-controlled major events. The written part lasts 120 minutes and is digital multiple choice; since 1 July 2025 it has 82 tasks for 120 points (older guides give 72 questions), and a task can have up to two correct answers. You pass the written part with at least 50 percent of the points and then take an oral exam of about 15 minutes, with up to five candidates, also passed at 50 percent. The exam is in German, no aids are allowed, and you may retake it as often as you need. Subjects follow § 7 of the Bewachungsverordnung: public security law and trade law, data protection, the civil code, criminal law and procedure with weapons, the accident prevention rules for guarding services, dealing with people, and security technology.",
+    rows: [
+      { label: "Run by", value: "IHK (German chambers of commerce)" },
+      { label: "Written part", value: "120 minutes, digital multiple choice" },
+      { label: "Tasks", value: "82 tasks, 120 points (since 1 July 2025; 72 before)" },
+      { label: "Pass mark", value: "50 percent of the points in each part" },
+      { label: "Oral part", value: "About 15 minutes, up to 5 candidates" },
+      { label: "Language", value: "German" },
+      { label: "Retakes", value: "Unlimited" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions in German, 25 to pass" },
+    ],
+    basedOn: "§ 34a GewO, the Bewachungsverordnung (BewachV) of 2019, the DIHK Rahmenplan for the Sachkundeprüfung and the exam pages of IHK Hannover and IHK Emden, checked November 2026",
+    source: { name: "IHK Hannover: Sachkundeprüfung Bewachungsgewerbe", url: "https://www.ihk.de/hannover/hauptnavigation/ausbildung-und-weiterbildung/pruefungen-und-unterrichtungen/sach-und-fachkundepruefungen-unterrichtungen/sachkundepruefung-bewachungsgewerbe-5137130" },
+  },
+  deheilpr: {
+    answer:
+      "In Germany anyone who wants to practise medicine without a doctor's licence (Approbation) needs a permit under the Heilpraktikergesetz. Before it is granted, the local health office checks in a knowledge test (Heilpraktikerüberprüfung) whether the candidate would be a danger to public health or to patients. The written part has 60 multiple-choice questions in 120 minutes; at least 45 correct answers (75 percent) admit the candidate to the oral and practical part, chaired by a public health doctor (Amtsarzt) with assessors, which decides the result. The content follows the federal health ministry's guidelines of 7 December 2017: law (Heilpraktikergesetz, Infection Protection Act, patients' rights, advertising law), hygiene, emergencies, medical terminology, anatomy, physiology and pathology, and recognising physical and mental illness in all age groups. Dates and deadlines are set by the states and authorities; in Bavaria the written part is held on fixed days in March and October. A licence limited to psychotherapy has its own shorter written test.",
+    rows: [
+      { label: "Run by", value: "Local health office (Gesundheitsamt) or district authority" },
+      { label: "Written part", value: "60 multiple-choice questions, 120 minutes" },
+      { label: "Pass mark", value: "At least 45 correct (75 percent)" },
+      { label: "Then", value: "Oral and practical part chaired by an Amtsarzt" },
+      { label: "Content", value: "Federal guidelines of 7 December 2017" },
+      { label: "Tigertest mock tests", value: "3 x 60 questions in German, 45 to pass" },
+    ],
+    basedOn: "Heilpraktikergesetz and its implementing regulation, the BMG guidelines of 7 December 2017 and the guidance sheets of the Landratsamt München (July 2025) and Fürstenfeldbruck (September 2025), checked November 2026",
+    source: { name: "Landratsamt München: guidance sheet on the Heilpraktiker knowledge test (PDF, German)", url: "https://www.landkreis-erding.de/media/23374/merkblatt-heilpraktiker-stand-juli-2023.pdf" },
+  },
+
+  ptmoto: {
+    answer:
+      "Portugal's motorcycle theory exam is the IMT's computer theory test (exame de código) for categories A1, A2 and A, taken at an exam centre after enrolling at a driving school. A candidate with no licence answers 40 multiple-choice questions in 40 minutes: 30 on the rules common to all vehicles and 10 on the motorcycle programme (protective gear, being seen, handling, road surfaces and the machine), and passes with at least 36 correct. A holder of a car licence (B or B1) seeking A2 or A answers only the 10 motorcycle questions in 10 minutes and needs 9 right. The test is in Portuguese; a candidate without enough Portuguese can ask the IMT for a translated test. A pass is valid for one year. Minimum ages are 16 for A1 (with a parent's consent under 18), 18 for A2, and 24 for A, or 20 after two years with A2.",
+    rows: [
+      { label: "Set by", value: "IMT (Instituto da Mobilidade e dos Transportes)" },
+      { label: "Questions", value: "40 (30 common + 10 motorcycle)" },
+      { label: "Time", value: "40 minutes" },
+      { label: "Pass mark", value: "36 of 40 (90%)" },
+      { label: "Car licence holders (A2 or A)", value: "10 motorcycle questions, 10 minutes, 9 to pass" },
+      { label: "Language", value: "Portuguese; a translated test (including English) on request" },
+      { label: "Theory pass valid", value: "1 year" },
+      { label: "Minimum age", value: "A1 16, A2 18, A 24 (20 after 2 years of A2)" },
+      { label: "Tigertest mock tests", value: "5 x 40 questions, 36 to pass" },
+    ],
+    basedOn: "Regulamento da Habilitação Legal para Conduzir (Decreto-Lei 138/2012), arts. 20, 43, 44 (as amended by Decreto-Lei 114/2026), 46 and 47 and Annex VII, the IMT's motorcycle licence page and the Código da Estrada as amended to Lei 24/2025, checked November 2026",
+    source: { name: "IMT, cartas de condução de motociclos", url: "https://www.imt-ip.pt/condutores/informacoes-gerais/quero-ser-condutor/cartas-de-conducao-de-motociclos/" },
+  },
+  ptcam: {
+    answer:
+      "The CAM exam (exame do Certificado de Aptidão para Motorista) is the written test that Portugal's IMT sets at the end of the Driver CPC initial qualification course, common or accelerated, which professional truck (C, CE) and bus (D, DE) drivers must complete at a recognised training provider. It has 60 questions, four-option multiple choice, direct answer or a mix of the two, in 2 hours. Every question carries equal weight on a 0 to 100 scale and you pass with at least 60%. Only candidates who finished the course less than two years earlier are admitted, and the training provider registers them. The CAM is valid for five years, renewed with periodic training, and for drivers resident in Portugal the qualification is shown by code 95 on the driving licence. The test is in Portuguese.",
+    rows: [
+      { label: "Run by", value: "IMT (Instituto da Mobilidade e dos Transportes)" },
+      { label: "Questions", value: "60, multiple choice and/or direct answer" },
+      { label: "Time", value: "2 hours" },
+      { label: "Pass mark", value: "60% (36 of 60), equal weight per question" },
+      { label: "Admission", value: "Initial qualification course finished less than 2 years earlier" },
+      { label: "CAM valid", value: "5 years; code 95 on the licence" },
+      { label: "Language", value: "Portuguese" },
+      { label: "Tigertest mock tests", value: "3 x 60 questions in Portuguese, 36 to pass" },
+    ],
+    basedOn: "Despacho IMTT n.º 26482/2009 (CAM exam conditions), Decreto-Lei 126/2009 as republished by Decreto-Lei 102-C/2020, and gov.pt, checked November 2026",
+    source: { name: "IMT: Driver CPC training and certification", url: "https://www.imt-ip.pt/?p=5600" },
+  },
+  pttvde: {
+    answer:
+      "To drive for a TVDE operator in Portugal (ride-hailing booked through an electronic platform), you need the TVDE driver certificate (certificado de motorista de TVDE) issued by the IMT (Instituto da Mobilidade e dos Transportes). You first complete an initial course of at least 50 hours at a driving school or IMT-recognised training entity, attending at least 80% of each module, and then pass the final assessment at the IMT or an IMT-authorised exam centre: 30 multiple-choice questions, passed with at least 27 correct. Press reports give 60 minutes and one retake on request within 10 working days. The test is in Portuguese, and since Lei 59/2026 (in force 1 September 2026) the course also checks functional command of Portuguese. You need a category B licence held for more than three years with the group 2 endorsement and a clean record. The certificate is valid for five years and is renewed with an 8-hour continuing course. Holders of a valid taxi driver certificate need neither the course nor the exam. The IMT publishes the list of questions the final assessment draws on.",
+    rows: [
+      { label: "Run by", value: "IMT or an IMT-authorised exam centre" },
+      { label: "Before the exam", value: "Initial course, at least 50 hours" },
+      { label: "Questions", value: "30 multiple choice" },
+      { label: "Pass mark", value: "27 of 30 (90%)" },
+      { label: "Time", value: "60 minutes (press reports)" },
+      { label: "Language", value: "Portuguese" },
+      { label: "Certificate valid", value: "5 years, renewable" },
+      { label: "Tigertest mock tests", value: "5 x 30 questions in Portuguese, 27 to pass" },
+    ],
+    basedOn: "Lei 45/2018 as republished by Lei 59/2026 (arts. 10, 10-A, 11 to 15 and 19), Portaria 293/2018 as amended by Portaria 344/2024, and the IMT page on TVDE driver certification, checked November 2026",
+    source: { name: "IMT: TVDE driver certification", url: "https://www.imt-ip.pt/?p=10228" },
+  },
+  ptvigil: {
+    answer:
+      "To get the professional card of a private security guard (vigilante) in Portugal, candidates complete training at an authorised training provider (the base module common to every speciality, with first aid and fire prevention units, plus the vigilante module, under Portaria 148/2014) and then pass the PSP's theory exam at the Centro Nacional de Exames de Segurança Privada (CNESP). The training provider books the exam through the PSP's SIGESP system. It is taken on computer in an approved exam room: 20 questions in 40 minutes, either multiple choice with two to four options and one correct answer, or true/false, some with figures or images. You pass with at least 10 correct answers. A candidate without sufficient Portuguese is not admitted. After a fail a review can be requested within 48 hours, and a pass counts for six months toward the card application. The card is issued by the PSP and is valid for five years. The test is in Portuguese.",
+    rows: [
+      { label: "Run by", value: "PSP, Departamento de Segurança Privada (CNESP)" },
+      { label: "Questions", value: "20, multiple choice (2 to 4 options) or true/false" },
+      { label: "Time", value: "40 minutes" },
+      { label: "Pass mark", value: "At least 10 correct (50%)" },
+      { label: "Where", value: "On computer in a CNESP exam room" },
+      { label: "Booking", value: "By the training provider, through SIGESP" },
+      { label: "Pass counts for", value: "6 months toward the card application" },
+      { label: "Professional card", value: "Issued by the PSP, valid 5 years" },
+      { label: "Language", value: "Portuguese" },
+      { label: "Tigertest mock tests", value: "8 x 20 questions in Portuguese, 10 to pass" },
+    ],
+    basedOn: "Despacho n.º 8270/2019 of the PSP (regulation of the private security theory exam), Lei 34/2013 as amended by Lei 46/2019 and Portaria 148/2014 as amended by Portaria 114/2015, checked November 2026",
+    source: { name: "Diário da República: Despacho n.º 8270/2019", url: "https://diariodarepublica.pt/dr/detalhe/despacho/8270-2019-124780748" },
+  },
+  escapcond: {
+    answer:
+      "Spain's Driver CPC initial qualification (certificado de aptitud profesional, CAP inicial) is required by Real Decreto 284/2021 for professional drivers of trucks (licence categories C1 and C) and buses (D1 and D). Candidates first complete a course at an approved centre, 280 hours in the ordinary route or 140 in the accelerated one, and must then pass the exam within a year. Each comunidad autónoma's transport department runs the exam, at least six times a year. It has 100 multiple-choice questions with four options and one correct answer, and lasts at least two hours. A right answer scores 1 point, a wrong one loses 0.5 and a blank scores nothing; the pass is half the possible points, 50. 25 of the 100 questions are on the candidate's speciality, goods or passengers; a holder adding the other speciality takes only that course part and that part of the exam. The common syllabus covers the driveline and fuel-efficient driving, brakes and safety systems, traffic hazards, drivers' hours (Regulation 561/2006), the tachograph, health, emergencies and crime prevention; goods add loading, transport documents, CMR and cabotage, passengers add passenger safety, school transport and passenger rights. Tigertest's questions are in Spanish.",
+    rows: [
+      { label: "Run by", value: "Each comunidad autónoma's transport department" },
+      { label: "Before the exam", value: "Course of 280 h (ordinary) or 140 h (accelerated)" },
+      { label: "Questions", value: "100, four options, one correct (25 on goods or passengers)" },
+      { label: "Marking", value: "+1 right, -0.5 wrong, blank 0" },
+      { label: "Pass mark", value: "50 points, half the possible" },
+      { label: "Time", value: "At least 2 hours" },
+      { label: "Sittings", value: "At least six a year in each region" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions in Spanish, 34 to pass" },
+    ],
+    basedOn: "Real Decreto 284/2021 (arts. 5, 6, 16, 17 and Annexes I and V) as amended by Real Decreto 487/2026, Regulation (EC) 561/2006 and Regulation (EU) 165/2014 as in force, checked November 2026",
+    source: { name: "BOE: Real Decreto 284/2021 (Driver CPC qualification), consolidated", url: "https://www.boe.es/buscar/act.php?id=BOE-A-2021-6624" },
+  },
+  espolicia: {
+    answer:
+      "The knowledge test (prueba de conocimientos) is the first stage of the competitive entrance exam (oposición) for the Escala Básica, rank of Policía, of Spain's National Police. Under the 2026 call (Resolución de 7 de julio de 2026, BOE of 10 July 2026) it is a written paper of 100 questions with three options, one correct, answered in 50 minutes, on an official syllabus of 45 topics in three blocks: legal sciences, social sciences and technical-scientific subjects. The score is [correct − wrong/(options − 1)] × 10 / questions, so each wrong answer cancels half a right one and blanks score nothing, on a 0 to 10 scale. Candidates need at least 3 points, and only the best go on, up to 1.75 per open place, so the real cut-off is higher. The test is eliminatory and taken in the same sitting as the psychometric aptitude tests; physical tests, a medical and an interview follow. The 2026 call offers 2,704 places (2,163 open, 541 reserved for professional soldiers and sailors). The exam is in Spanish; candidates must hold Spanish nationality, a Bachiller, a car licence and at least A2 in English or French.",
+    rows: [
+      { label: "Run by", value: "Dirección General de la Policía (Ministry of the Interior)" },
+      { label: "Questions", value: "100, three options each" },
+      { label: "Time", value: "50 minutes" },
+      { label: "Scoring", value: "Each wrong answer takes off half a correct one; 0 to 10" },
+      { label: "To go on", value: "At least 3, then ranked: best 1.75 per open place" },
+      { label: "Syllabus", value: "45 topics: legal, social, technical-scientific" },
+      { label: "Language", value: "Spanish" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions in Spanish, 35 to pass" },
+    ],
+    basedOn: "the 2026 call for the Escala Básica of the Policía Nacional (Resolución de 7 de julio de 2026, BOE-A-2026-15055) and the laws on its syllabus as in force, checked November 2026",
+    source: { name: "BOE: 2026 call for the Policía Nacional Escala Básica", url: "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-15055" },
+  },
+  esguardia: {
+    answer:
+      "The Guardia Civil entrance exam (oposiciones a la Escala de Cabos y Guardias) is called each year by the Dirección General de la Guardia Civil in Spain's official gazette, the BOE; the 2026 call offered 3,240 places and its first test was held on 11 July 2026 at 20 venues. The knowledge test lasts 140 minutes in all and has four parts: a spelling test and a grammar test of 20 sentences, both pass or fail (six or more errors fail); 100 multiple-choice questions on the official syllabus, each with four options and one correct answer, scored 0 to 100 with a minimum of 50; and 20 English questions, with a minimum of 8. Wrong answers are penalised (each cancels a third of a right one) and blank answers are not. The same day candidates take a psychotechnical test; physical tests, an interview, a medical and a merit assessment follow. The syllabus has 25 topics: human rights, equality, the Constitution, EU law, criminal and procedural law, administrative and data protection law, immigration, public and private security, the Guardia Civil's own laws and history, ethics, juvenile justice, gender violence, arms and explosives, customs, civil protection, ICT and topography, English and Spanish. The exam is in Spanish.",
+    rows: [
+      { label: "Run by", value: "Dirección General de la Guardia Civil (Ministry of the Interior), call in the BOE" },
+      { label: "Knowledge questions", value: "100, four options, one correct" },
+      { label: "Marking", value: "Wrong answers cost a third; blanks score nothing" },
+      { label: "Minimum", value: "50 of 100 points" },
+      { label: "Time", value: "140 minutes for the whole knowledge test" },
+      { label: "Other parts", value: "Spelling, grammar (pass/fail), English (8 of 20)" },
+      { label: "Places (2026)", value: "3,240" },
+      { label: "Language", value: "Spanish" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions in Spanish, 32 to pass" },
+    ],
+    basedOn: "Resolución 160/38243/2026 (BOE 8 May 2026), the Guardia Civil temario of 3 October 2022 as updated on 29 May 2023, and the laws it lists as in force, checked November 2026",
+    source: { name: "BOE: Guardia Civil Escala de Cabos y Guardias call, 2026", url: "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-9982" },
+  },
+  esvigilante: {
+    answer:
+      "To work as a private security guard (vigilante de seguridad) in Spain you need a licence (habilitación) and the professional ID card (TIP) issued through the Ministry of the Interior, which means passing the selection tests the Secretaría de Estado de Seguridad calls each year and the Policía Nacional runs. In 2026 there are three calls (01, 02 and 03/2026) under rules published in the BOE on 14 January 2026. Candidates first need the diploma of a pre-licence training course of at least 180 hours at an accredited centre. The knowledge test is 100 multiple-choice questions in 50 minutes on the official common programme, each with three options and one correct answer. Each wrong answer cancels half a right one and blank answers score nothing; the result is out of 10 and 5 is the pass mark. There are also eliminatory physical tests (pass or fail). The programme covers the Constitution, criminal law and procedure, the Private Security Act (Ley 5/2014), employment law, professional conduct and communication, security systems, access control and alarms, and fire, first aid, radio and firearms safety. The test is in Spanish.",
+    rows: [
+      { label: "Run by", value: "Ministry of the Interior (Secretaría de Estado de Seguridad), tests run by the Policía Nacional" },
+      { label: "Questions", value: "100, three options, one correct" },
+      { label: "Time", value: "50 minutes" },
+      { label: "Marking", value: "Each wrong answer cancels half a right one; blanks score nothing" },
+      { label: "Pass mark", value: "5 out of 10" },
+      { label: "Other tests", value: "Physical tests, pass or fail" },
+      { label: "Before the test", value: "Training course of at least 180 hours" },
+      { label: "Calls (2026)", value: "Three: 01, 02 and 03/2026" },
+      { label: "Language", value: "Spanish" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions in Spanish, 34 to pass" },
+    ],
+    basedOn: "Resolución de 9 de enero de 2026 of the Secretaría de Estado de Seguridad (BOE 14 January 2026), Ley 5/2014 de Seguridad Privada and the laws in the Anexo III programme as in force, checked November 2026",
+    source: { name: "BOE: rules for the 2026 security guard tests", url: "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-813" },
   },
   sbipo: {
     answer:

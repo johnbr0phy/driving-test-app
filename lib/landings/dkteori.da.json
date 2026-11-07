@@ -1,0 +1,110 @@
+{
+  "metaTitle": "Teoriprøve til bil 2026: gratis øveprøver til kørekort B",
+  "metaDescription": "Øv dig gratis til teoriprøven til kørekort B: 200 egne spørgsmål på dansk om vigepligt, rundkørsler, overhaling, cyklister i kryds, motorvej, parkering og tunneler, alle med forklaring. Otte prøver med 25 spørgsmål, uden login.",
+  "keywords": "teoriprøve, teoriprøven, teoriprøve bil, teoriprøve kørekort, øveprøve teori, teoriprøve gratis, teoriprøve 2026, kørekort teori spørgsmål, teoriprøve kategori b, øv teoriprøve",
+  "breadcrumb": {
+    "home": "Forside",
+    "allTests": "Alle prøver",
+    "current": "Teoriprøve til bil"
+  },
+  "h1": "Teoriprøve til bil 2026: gratis øveprøver",
+  "subtitle": "200 egne spørgsmål på dansk om færdselsreglerne til teoriprøven: højre vigepligt, rundkørsler, overhaling, cyklister i kryds, motorvej, parkering og tunneler. Otte prøver med 25 spørgsmål og 20 for at bestå, som til den rigtige prøve. Lavet til mobilen, uden login.",
+  "facts": {
+    "h2": "Teoriprøven kort fortalt",
+    "answer": "Teoriprøven er den første af de to prøver til kørekort til almindelig bil (kategori B). Den holdes af Færdselsstyrelsen på dens egne prøvesteder, varer 25 minutter, og du må højst have fem fejl. Du kan vælge en digital prøve på en touchskærm, hvor du kan gå tilbage til tidligere spørgsmål og få dem læst op, eller en analog prøve med svarark, hvor spørgsmålene vises på en skærm, og du ikke kan gå tilbage. Hvert spørgsmål viser et billede af en trafiksituation, og du vælger det eller de rigtige svar; et ubesvaret spørgsmål tæller som en fejl. Spørgsmålene trækkes tilfældigt fra hele undervisningsplanen for kategori B. Du kan gå til teoriprøven, fra du er 16 år og 11 måneder, og en bestået teoriprøve gælder i 18 måneder.",
+    "tigertest": "Tigertest har 200 egne øvelsesspørgsmål på dansk om emnerne i Færdselsstyrelsens undervisningsplan, alle med forklaring, gratis og uden login. Spørgsmålene er skrevet fra bunden; intet er kopieret fra prøven eller fra undervisningsmateriale. Tigertest er ikke tilknyttet Færdselsstyrelsen.",
+    "rows": [
+      { "label": "Afholdes af", "value": "Færdselsstyrelsen, på egne prøvesteder" },
+      { "label": "Tid", "value": "25 minutter" },
+      { "label": "Bestået", "value": "Højst 5 fejl, ubesvarede tæller som fejl" },
+      { "label": "Form", "value": "Digital på touchskærm eller analog med svarark" },
+      { "label": "Sprog", "value": "Dansk, engelsk, tysk, færøsk og grønlandsk" },
+      { "label": "Tidligst", "value": "Fra 16 år og 11 måneder" },
+      { "label": "Gyldighed", "value": "En bestået teoriprøve gælder i 18 måneder" },
+      { "label": "Tigertests prøver", "value": "8 x 25 spørgsmål, 20 for at bestå" }
+    ],
+    "footnote": "Ifølge Færdselsstyrelsens undervisningsplan for kategori B (version 1.1, maj 2026) og Færdselsstyrelsens side om teoriprøven, november 2026. Reglerne kan ændre sig, så tjek de aktuelle regler hos",
+    "source": {
+      "name": "Færdselsstyrelsen: Tag kørekort til bil",
+      "url": "https://www.fstyr.dk/privat/koerekort/dit-foerste-koerekort/tag-koerekort-saadan-goer-du"
+    }
+  },
+  "howItWorks": {
+    "h2": "Sådan fungerer det",
+    "cards": [
+      {
+        "h3": "Træn efter emne",
+        "p": "Fire træningssæt: bilen, trafikanterne og grundreglerne; vognbaner, møde og overhaling; kryds, vigepligt og rundkørsler; og motorvej, parkering og kørsel i mørke. Du får svar med forklaring med det samme, og de spørgsmål, du svarer forkert på, kommer igen, til du kan dem."
+      },
+      {
+        "h3": "Prøver i fuld længde",
+        "p": "Otte prøver med 25 spørgsmål, der tilsammen dækker alle 200 spørgsmål. Du skal have 20 rigtige, det samme som højst fem fejl til den rigtige prøve. Intet spørgsmål går igen mellem prøverne, og hvert svar forklarer reglen."
+      }
+    ]
+  },
+  "topics": {
+    "h2": "Vægtet som den digitale teoriprøve",
+    "p": "Færdselsstyrelsen trækker spørgsmålene tilfældigt fra undervisningsplanen for kategori B og offentliggør, hvordan den digitale prøve er vægtet: cirka 72 procent om manøvrer på vejen, 8 procent om bilen og dens udstyr og resten om trafikanternes adfærd, vejforhold, grundregler og særlige risici. Tigertests prøver følger samme fordeling, i km/h og meter og for højrekørsel. Den rigtige prøve viser et billede ved hvert spørgsmål, og nogle har mere end ét rigtigt svar; her er hvert spørgsmål tekst med ét svar, og tavler er beskrevet med ord.",
+    "items": [
+      "Motorvej, parkering, mørke og tunneler (24 %)",
+      "Kryds, vigepligt og rundkørsler (20 %)",
+      "Passage, møde, afstand og overhaling (16 %)",
+      "Igangsætning, hastighed og vognbaneskift (12 %)",
+      "Veje, grundregler og særlige risici (12 %)",
+      "Bilen, udstyr og papirer (8 %)",
+      "Køretøjer, trafikanter og førerens tilstand (8 %)"
+    ]
+  },
+  "howToPass": {
+    "h2": "Sådan består du teoriprøven",
+    "steps": [
+      {
+        "h3": "1. Lær vigepligten udenad",
+        "p": "Det meste af prøven handler om manøvrer på vejen, og vigepligten afgør mange af dem. Lær, hvornår du har ubetinget vigepligt (hajtænder, vigepligtstavlen, stoptavlen, når du kører ud fra en parkeringsplads eller hen over et hævet fortov), og at du alle andre steder holder tilbage for trafik fra højre."
+      },
+      {
+        "h3": "2. Se efter cyklisterne",
+        "p": "De fleste byveje har cykelsti. Når du svinger til højre, skal du holde tilbage for cyklister og knallertkørere, der kører ligeud, også dem, der kommer op på din højre side, så kig over din højre skulder før hvert højresving, og når du forlader en rundkørsel."
+      },
+      {
+        "h3": "3. Kend tallene",
+        "p": "Hastighedsgrænserne (50, 80 og 130 km/h), afstanden på 2 sekunder, promillegrænserne på 0,5 og 0,2 for nye bilister, mønsterdybden på 1,6 mm og afstandene ved standsning og parkering: 5 m før en fodgængerovergang, 10 m fra et kryds, 12 m på begge sider af et busstoppested og 30 m fra en jernbaneoverkørsel. De kommer igen og igen."
+      },
+      {
+        "h3": "4. Læs hver svarmulighed for sig",
+        "p": "Til den rigtige prøve kan et spørgsmål have mere end ét rigtigt svar, og et ubesvaret spørgsmål tæller som en fejl, så vurdér hver svarmulighed for sig ud fra billedet. Sigt efter 23 eller flere rigtige i hver af Tigertests prøver, før du booker."
+      }
+    ]
+  },
+  "faqTitle": "Ofte stillede spørgsmål om teoriprøven",
+  "faqs": [
+    {
+      "q": "Hvordan foregår teoriprøven?",
+      "a": "Teoriprøven holdes af Færdselsstyrelsen på dens egne prøvesteder. Den varer 25 minutter, og du må højst have fem fejl. Du vælger mellem en digital prøve på en touchskærm, hvor du kan gå tilbage og få spørgsmålene læst op, og en analog prøve med svarark, hvor spørgsmålene vises på en skærm, og du ikke kan gå tilbage. Hvert spørgsmål har et billede af en trafiksituation, og du vælger det eller de rigtige svar. Et ubesvaret spørgsmål tæller som en fejl. Færdselsstyrelsens egen øvetest på nettet har 25 spørgsmål, og du skal have 20 rigtige."
+    },
+    {
+      "q": "Hvilke sprog kan jeg tage teoriprøven på?",
+      "a": "Ud over dansk tilbydes prøven på engelsk, tysk, færøsk og grønlandsk, og du vælger sprog i din ansøgning om kørekort. På engelsk kan du tage den digitale eller den analoge prøve på alle prøvesteder i Danmark uden tolk. Tysk tilbydes kun i Sønderjylland, og færøsk og grønlandsk med tolk. Tolkning til andre sprog ophørte 1. januar 2025. Tigertest har den samme prøve på engelsk, hvis du foretrækker det."
+    },
+    {
+      "q": "Hvad handler teoriprøven om?",
+      "a": "Spørgsmålene trækkes tilfældigt fra hele undervisningsplanen for kategori B. Færdselsstyrelsens offentliggjorte fordeling giver cirka 72 procent af den digitale prøve til manøvrer på vejen, som kryds, vigepligt, rundkørsler, overhaling, motorvej, parkering og kørsel i mørke, cirka 8 procent til bilen, dens udstyr og papirer, og cirka 4 procent hver til køretøjets egenskaber, trafikanternes adfærd, vejforhold, grundlæggende færdselsregler og særlige risici som alkohol og fart. Tigertests prøver følger den fordeling."
+    },
+    {
+      "q": "Hvornår kan jeg tage teoriprøven og køreprøven?",
+      "a": "Du skal først gennemføre teoriundervisningen og manøvrebaneundervisningen på en køreskole og aflevere ansøgning, lægeerklæring og førstehjælpsbevis i Borgerservice. Du kan gå til teoriprøven, fra du er 16 år og 11 måneder, og få kørekort som 17-årig; indtil du fylder 18 år, skal du have en ledsager med i bilen mellem kl. 20.00 og 05.00. En bestået teoriprøve gælder i 18 måneder, så du skal bestå køreprøven inden for den tid. Fra 1. oktober 2026 booker nye elever deres prøver på minkøreprøve.dk."
+    },
+    {
+      "q": "Er det de rigtige prøvespørgsmål?",
+      "a": "Nej. Alle spørgsmål er egne, skrevet af Tigertest ud fra Færdselsstyrelsens undervisningsplan for kategori B, så de tester de samme regler uden at kopiere noget officielt spørgsmål. Den rigtige prøve viser et billede ved hvert spørgsmål og kan have mere end ét rigtigt svar; Tigertest bruger tekstspørgsmål med ét svar og beskriver tavlerne med ord, så se også på de rigtige tavler. Det er gratis øvelse, ikke tilknyttet Færdselsstyrelsen, og det hverken booker eller erstatter din prøve."
+    },
+    {
+      "q": "Er Tigertests teoriprøve gratis?",
+      "a": "Ja. Alle otte prøver og fire træningssæt er gratis, og du behøver ikke en konto. Opret en gratis konto, hvis du vil gemme dine fremskridt på både mobil og computer."
+    }
+  ],
+  "finalCta": {
+    "h2": "Klar til teoriprøven?",
+    "p": "Start gratis. Uden login. 200 spørgsmål om de danske færdselsregler."
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "fihygiene",
+  "stateCode": "FIHYGIENE",
+  "idBase": 24000,
+  "prefix": "FIHYG-",
+  "slug": "/finland-hygiene-passport",
+  "landingPath": "/finland-hygiene-passport-practice-test",
+  "dataFile": "data/finland-hygiene-passport-questions.json",
+  "name": "Finland Hygiene Passport Practice Test",
+  "shortName": "Hygiene Passport",
+  "examLabel": "Hygiene Passport test",
+  "fullName": "Finland Hygiene Passport test (hygieniaosaamistesti, hygieniapassitesti)",
+  "icon": "chef",
+  "testCount": 5,
+  "questionsPerTest": 40,
+  "passPct": 85,
+  "categories": [
+    {"key": "fihygMicro", "label": "Microbes & Contamination", "perTest": 6, "pool": 30, "segment": "MIC"},
+    {"key": "fihygPoison", "label": "Food Poisoning", "perTest": 6, "pool": 30, "segment": "POI"},
+    {"key": "fihygTemp", "label": "Storage, Cooking & Cooling Temperatures", "perTest": 7, "pool": 35, "segment": "TMP"},
+    {"key": "fihygHandling", "label": "Hygienic Handling & Allergens", "perTest": 5, "pool": 25, "segment": "HND"},
+    {"key": "fihygPersonal", "label": "Personal Hygiene", "perTest": 7, "pool": 35, "segment": "PER"},
+    {"key": "fihygClean", "label": "Cleaning, Waste & Pests", "perTest": 4, "pool": 20, "segment": "CLN"},
+    {"key": "fihygOwncheck", "label": "Self-Monitoring & Oiva", "perTest": 3, "pool": 15, "segment": "OWN"},
+    {"key": "fihygLaw", "label": "Food Law & Authorities", "perTest": 2, "pool": 10, "segment": "LAW"}
+  ],
+  "notes": "5 tests x 40 = 200, every item used once in tests, no spares. The real test is 40 true/false statements in 45 minutes, 34 correct to pass (85%), per Ruokavirasto regulation 7/2021; Tigertest writes 4-option single-answer items (about 15 'Which statement about ... is true?' items keep the true/false reasoning) and keeps the 40-item length and 85% line. Areas follow Annex 1 of regulation 7/2021 (six areas; area 2 split into food poisoning, temperatures and hygienic handling). Dashboard = 5 topic sets + 5 tests = 10 steps.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 24001, "name": "Microbes & Food Poisoning", "categories": ["fihygMicro", "fihygPoison"], "size": 60},
+    {"setNumber": 2, "id": 24002, "name": "Temperatures", "categories": ["fihygTemp"], "size": 35},
+    {"setNumber": 3, "id": 24003, "name": "Hygienic Handling & Cleaning", "categories": ["fihygHandling", "fihygClean"], "size": 45},
+    {"setNumber": 4, "id": 24004, "name": "Personal Hygiene", "categories": ["fihygPersonal"], "size": 35},
+    {"setNumber": 5, "id": 24005, "name": "Self-Monitoring & Food Law", "categories": ["fihygOwncheck", "fihygLaw"], "size": 25}
+  ]
+}

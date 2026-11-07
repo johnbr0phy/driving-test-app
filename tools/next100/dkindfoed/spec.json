@@ -1,0 +1,84 @@
+{
+  "id": "dkindfoed",
+  "stateCode": "DKINDFOED",
+  "idBase": 23600,
+  "prefix": "DKIND-",
+  "slug": "/indfoedsretsproeve",
+  "landingPath": "/da/indfoedsretsproeven-oevelsesproeve",
+  "dataFile": "data/dk-indfoedsret-questions.json",
+  "language": "da",
+  "locale": "da-DK",
+  "name": "Indfødsretsprøven",
+  "shortName": "Indfødsretsprøven",
+  "examLabel": "Indfødsretsprøven",
+  "fullName": "Indfødsretsprøven (prøve i danske samfundsforhold, dansk kultur og historie)",
+  "english": {
+    "name": "Danish Citizenship Test (Indfødsretsprøven)",
+    "shortName": "Danish citizenship test",
+    "fullName": "Danish citizenship test (indfødsretsprøven), in Danish"
+  },
+  "icon": "flag",
+  "testCount": 8,
+  "questionsPerTest": 40,
+  "passPct": 90,
+  "categories": [
+    {
+      "key": "dkindHistOld",
+      "label": "Oldtid, vikingetid og middelalder",
+      "perTest": 4,
+      "pool": 32,
+      "segment": "OLD"
+    },
+    {
+      "key": "dkindHistEarly",
+      "label": "Fra Reformationen til Grundloven",
+      "perTest": 3,
+      "pool": 24,
+      "segment": "ENE"
+    },
+    {
+      "key": "dkindHistDemo",
+      "label": "Fra Grundloven til befrielsen",
+      "perTest": 4,
+      "pool": 32,
+      "segment": "DEM"
+    },
+    {
+      "key": "dkindHistNew",
+      "label": "Danmark efter 1945",
+      "perTest": 3,
+      "pool": 24,
+      "segment": "NYT"
+    },
+    {
+      "key": "dkindDemokrati",
+      "label": "Grundloven og folkestyret",
+      "perTest": 7,
+      "pool": 56,
+      "segment": "GRL"
+    },
+    {
+      "key": "dkindSamfund",
+      "label": "Samfund, velfærd og økonomi",
+      "perTest": 7,
+      "pool": 56,
+      "segment": "SAM"
+    },
+    {
+      "key": "dkindKultur",
+      "label": "Kultur og traditioner",
+      "perTest": 7,
+      "pool": 56,
+      "segment": "KUL"
+    },
+    {
+      "key": "dkindVaerdier",
+      "label": "Danske værdier",
+      "perTest": 5,
+      "pool": 40,
+      "segment": "VAE"
+    }
+  ],
+  "notes": "8 tests x 40 = 320, every item in exactly one test (pools exactly 8x each count), like uklitu/cacit/aucit's eight real-length tests. 35 learning-material questions + 5 values questions per test; the 5 current-affairs questions of the real 45 are not modelled. passPct 90 = 36 of 40. Training: six topic sets 23601-23606 of at most 60 (history to 1849 56, history from 1849 56, Grundloven 56, samfund 56, kultur 56, værdier 40), so the dashboard is 6 sets + 8 tests = 14 steps.",
+  "trainingSets": "topic sets 23601-23606, see WIRING.md"
+}

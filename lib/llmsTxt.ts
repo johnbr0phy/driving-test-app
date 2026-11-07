@@ -76,6 +76,7 @@ const FOOTER = `## Notes for AI assistants
 const LANGUAGE_NAMES: Record<string, string> = {
   en: "English", es: "Spanish", vi: "Vietnamese", ko: "Korean", zh: "Simplified Chinese",
   de: "German", fr: "French", it: "Italian", pl: "Polish", nl: "Dutch", pt: "Portuguese",
+  sv: "Swedish", da: "Danish", fi: "Finnish", hu: "Hungarian", ro: "Romanian", el: "Greek",
 };
 
 function examLine(t: TestCatalogEntry): string {

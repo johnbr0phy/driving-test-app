@@ -93,3 +93,7 @@ noted.
   driving schools; computed in the stems.
 
 Bußgelder, Punkte, fees and the reform's new rules are not asked.
+
+## Integrator note (2026-11-07)
+
+FeV Anlage 7 Nr. 1.3 (read 2026-11-06 for demotorrad) lists 14 foreign languages, while the TÜV | DEKRA page still says 12. The landing (German and English) and examFacts now say "several foreign languages" without a count.

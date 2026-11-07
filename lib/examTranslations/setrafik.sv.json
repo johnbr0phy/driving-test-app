@@ -1,0 +1,40 @@
+{
+  "landingPath": "/sv/teoriprov-korkort-b",
+  "locale": "sv-SE",
+  "name": "Teoriprov för B-körkort",
+  "shortName": "Teoriprov B",
+  "examLabel": "Kunskapsprov B hos Trafikverket",
+  "fullName": "Trafikverkets kunskapsprov för behörighet B",
+  "trainingSets": {
+    "1": { "name": "Vägmärken", "weightLabel": "8 av 50 provfrågor" },
+    "2": { "name": "Korsningar, vägmarkeringar och signaler", "weightLabel": "12 av 50 provfrågor" },
+    "3": { "name": "Hastighet, körfält, parkering och motorväg", "weightLabel": "10 av 50 provfrågor" },
+    "4": { "name": "Trafiksäkerhet, vilt och vinter", "weightLabel": "9 av 50 provfrågor" },
+    "5": { "name": "Fordonet, miljön och du", "weightLabel": "11 av 50 provfrågor" }
+  },
+  "categoryLabels": {
+    "setrJunctions": "Företräde och korsningar",
+    "setrSigns": "Vägmärken",
+    "setrMarkings": "Vägmarkeringar och trafiksignaler",
+    "setrSpeed": "Hastighet, omkörning och körfält",
+    "setrParking": "Stannande, parkering och motorväg",
+    "setrSafety": "Trafiksäkerhet, vilt och vinter",
+    "setrVehicle": "Fordonskännedom och manövrering",
+    "setrEnvironment": "Miljö och sparsam körning",
+    "setrPersonal": "Personliga förutsättningar och körkortet"
+  },
+  "copy": {
+    "guestPrompt": "för att spara dina framsteg inför teoriprovet och se varje fråga du svarar fel på",
+    "trainingHeading": "Öva per område",
+    "trainingSub": "Fem övningsset om de svenska trafikregler, vägmärken och säkerhetsfrågor som Trafikverkets kunskapsprov tar upp. Du får svar direkt, och frågor du missar kommer tillbaka tills du kan dem.",
+    "testsHeading": "Övningsprov · 50 frågor, sikta på 40 eller fler",
+    "heroSubs": [
+      "Fem områden och fyra övningsprov med 50 frågor. Företräde väger tyngst.",
+      "Klara varje övningsset och gör sedan ett prov.",
+      "Halvvägs där. Testa ett övningsprov.",
+      "Öva på dina fel och gör om provet.",
+      "Allt klart. Boka ditt kunskapsprov hos Trafikverket."
+    ],
+    "sourceLine": "Bygger på svenska trafikregler och de områden Trafikverkets kunskapsprov tar upp. Egna frågor; 50 per prov och 80 procent för godkänt, som 52 av 65 på det riktiga provet."
+  }
+}

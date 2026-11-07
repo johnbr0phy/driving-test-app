@@ -1,0 +1,112 @@
+{
+  "metaTitle": "KRESZ teszt 2026 B kategória - Ingyenes vizsgagyakorlás",
+  "metaDescription": "Ingyenes KRESZ teszt a B kategóriás elméleti vizsgához: 200 saját kérdés magyarul, minden válasz elmagyarázva, három 55 kérdéses teszt, mint a valódi vizsga, és öt témakör. Regisztráció nélkül.",
+  "keywords": "kresz teszt, kresz teszt 2026, kresz vizsga, kresz vizsga kérdések, közlekedési alapismeretek, kresz teszt b kategória, kresz gyakorló teszt, ingyenes kresz teszt, elméleti vizsga jogosítvány, kresz tesztek online",
+  "breadcrumb": {
+    "home": "Kezdőlap",
+    "allTests": "Összes teszt",
+    "current": "KRESZ teszt"
+  },
+  "h1": "KRESZ teszt 2026, B kategória, ingyen",
+  "subtitle": "200 saját gyakorlókérdés magyarul a B kategóriás KRESZ elméleti vizsgához, minden válasz elmagyarázva: táblák, jobbkéz-szabály, villamos, sebességhatárok, előzés, autópálya, vasúti átjáró, várakozás, gyermekbiztonsági rendszer és baleset. Három 55 kérdéses teszt, mint a vizsgán. Mobilra készült, regisztráció nélkül.",
+  "facts": {
+    "h2": "A KRESZ vizsga röviden",
+    "answer": "A B kategóriás elméleti vizsga hivatalos neve Közlekedési alapismeretek, de mindenki KRESZ vizsgának hívja. A KAV (Közlekedési Alkalmassági és Vizsgaközpont) vizsgahelyén, számítógépen teszed le. 55 feleletválasztós kérdés van, a vizsga 55 percig tart, kérdésenként egy perc. A kérdések összesen 75 pontot érnek, és legalább 65 pont kell a sikeres vizsgához; a felkészítő anyagok szerint 10 kérdés 3 pontot, 45 kérdés 1 pontot ér. A vizsgát a felkészítők szerint magyarul, angolul, németül és románul lehet letenni. Autósiskolai tanfolyam után 16 év 9 hónaposan vizsgázhatsz, a sikeres elméleti vizsga két évig érvényes, a forgalmi vizsgát pedig 17 évesen teheted le.",
+    "tigertest": "A Tigertestnél 200 saját gyakorlókérdés van magyarul, ingyen és regisztráció nélkül. A kérdések a KRESZ alapján íródtak, nem a KAV hivatalos kérdéseiből valók. A Tigertest nem áll kapcsolatban a KAV-val.",
+    "rows": [
+      { "label": "Szervező", "value": "KAV Közlekedési Alkalmassági és Vizsgaközpont" },
+      { "label": "Kérdések", "value": "55 feleletválasztós" },
+      { "label": "Időtartam", "value": "55 perc" },
+      { "label": "Sikeres vizsga", "value": "75 pontból legalább 65" },
+      { "label": "Nyelvek", "value": "Magyar, angol, német, román (felkészítők szerint)" },
+      { "label": "Korhatár", "value": "16 év 9 hónap (elmélet), 17 év (forgalmi vizsga)" },
+      { "label": "Érvényesség", "value": "2 év" },
+      { "label": "Tigertest tesztek", "value": "3 x 55 kérdés, 87% a cél" }
+    ],
+    "footnote": "A KRESZ (1/1975. (II. 5.) KPM-BM együttes rendelet) 2026 novemberében hatályos szövege és a KAV B kategóriás vizsgakövetelményei alapján, ahogy az autósiskolák idézik, 2026 novemberében ellenőrizve. A szabályok változhatnak, ezért a pontos részleteket mindig ellenőrizd itt:",
+    "source": {
+      "name": "KAV Közlekedési Alkalmassági és Vizsgaközpont",
+      "url": "https://www.vizsgakozpont.hu/"
+    }
+  },
+  "howItWorks": {
+    "h2": "Hogyan működik",
+    "cards": [
+      {
+        "h3": "Gyakorolj témánként",
+        "p": "Öt témakör: veszélyt jelző táblák és útburkolati jelek, elsőbbségi és tilalmi táblák, elsőbbség és villamos, sebesség, előzés és autópálya, valamint jogosítvány, várakozás és biztonság. Az elrontott kérdések addig visszajönnek, amíg meg nem tanulod őket."
+      },
+      {
+        "h3": "Teljes vizsgatesztek",
+        "p": "Három 55 kérdéses teszt, mint a valódi vizsga, 48 helyes válasz a cél. Egyik kérdés sem ismétlődik a tesztek között, és minden válasz elmagyarázza a szabályt és a leggyakoribb hibát."
+      }
+    ]
+  },
+  "topics": {
+    "h2": "A KRESZ alapján",
+    "p": "Minden kérdés a KRESZ 2026 novemberében hatályos szövege alapján készült; a 2026 januárjában közzétett új KRESZ tervezete még nem hatályos, ezért nem szerepel. A táblákat szavakkal írjuk le, km/h-ban és méterben. A KAV nem közli, mennyit ér az egyes témakör, ezért a felosztás a sajátunk, a táblák és az elsőbbség a legfontosabbak. A valódi vizsgán egyes kérdések 3 pontot érnek; a Tigertest minden kérdést egyformán számol, és a vizsga képeit sem mutatja.",
+    "items": [
+      "Elsőbbségi, tilalmi és utasítást adó táblák (16%)",
+      "Elsőbbség, kereszteződések és villamos (15%)",
+      "Sebesség, forgalmi sávok és előzés (13%)",
+      "Veszélyt jelző táblák (11%)",
+      "Útburkolati jelek, jelzőlámpák és rendőri jelzések (11%)",
+      "Jogosítvány, alkohol és a vezető (9%)",
+      "Megállás, várakozás, világítás és vontatás (9%)",
+      "Biztonsági öv, gyermekek, meghibásodás és baleset (9%)",
+      "Autópálya és vasúti átjáró (7%)"
+    ]
+  },
+  "howToPass": {
+    "h2": "Hogyan tedd le a KRESZ vizsgát",
+    "steps": [
+      {
+        "h3": "1. Tanuld meg a sebességhatárokat táblázatként",
+        "p": "Személygépkocsival lakott területen 50 km/h, lakott területen kívül 90, autóúton 110, autópályán 130 km/h. Pótkocsival 50, 70 és 80 km/h, hólánccal 50, vontatáskor 40, lakó-pihenő övezetben 20 km/h. A tábla nélküli sebességkorlátozás a következő kereszteződésig tart, a helységnévtáblával együtt álló pedig az egész lakott területre."
+      },
+      {
+        "h3": "2. Tudd biztosan, ki mehet előbb",
+        "p": "Tábla nélkül a jobbkéz-szabály dönt, de a balról érkező villamosnak is elsőbbséget adsz, a burkolatlan útról érkező pedig a burkolt úton haladónak. Kanyarodáskor a bekanyarodási irányban átkelő gyalogos és kerékpáros megy előbb, balra kanyarodáskor a szembejövő egyenesen haladók és jobbra kanyarodók is. A rendőr jelzése mindent felülír."
+      },
+      {
+        "h3": "3. Figyelj a magyar sajátosságokra",
+        "p": "Zéró alkohol minden vezetőnek, nappali menetjelző vagy tompított fényszóró lakott területen kívül, a vasúti átjárónál a villogó fehér fény jelenti, hogy nem jön vonat, és lakott területen kívül kötelező az elakadásjelző háromszög és éjszaka a fényvisszaverő mellény. Hároméves kor alatti gyermek csak gyerekülésben utazhat."
+      },
+      {
+        "h3": "4. Célozz 50 helyes válasz fölé",
+        "p": "A valódi vizsgán 10 hibapontot veszíthetsz, és a 3 pontos kérdések gyorsan elviszik a tartalékot, ezért hagyj magadnak helyet. A Tigertest témakörönként méri a pontosságodat: nézd át az elrontott kérdéseket, gyakorold újra a leggyengébb témakört, és írd meg mindhárom tesztet, amíg 50 vagy több helyes választ nem érsz el."
+      }
+    ]
+  },
+  "faqTitle": "Gyakori kérdések a KRESZ vizsgáról",
+  "faqs": [
+    {
+      "q": "Hány kérdés van a KRESZ vizsgán, és hány pont kell?",
+      "a": "A B kategóriás Közlekedési alapismeretek vizsgán 55 feleletválasztós kérdés van, 55 perc alatt. A kérdések összesen 75 pontot érnek, és legalább 65 pont kell a sikerhez, vagyis legfeljebb 10 hibapontod lehet. A felkészítők szerint 10 kérdés 3 pontot, 45 kérdés 1 pontot ér. A Tigertest minden kérdést egyformán számol, és 48 helyes választ (87%) tűz ki célul, ami közel áll a 65 ponthoz."
+    },
+    {
+      "q": "Milyen nyelveken lehet letenni a vizsgát?",
+      "a": "A felkészítők és autósiskolák szerint a KRESZ vizsga magyarul, angolul, németül és románul is letehető; a pontos lehetőségeket a KAV-nál vagy az autósiskoládnál ellenőrizd. A Tigertestnél ez a teszt angolul is megvan, ha úgy kényelmesebb."
+    },
+    {
+      "q": "Mikor vizsgázhatok, és meddig érvényes a sikeres vizsga?",
+      "a": "Autósiskolai tanfolyam után 16 év 9 hónaposan teheted le az elméleti vizsgát, a forgalmi vizsgát pedig 17 évesen. A sikeres elméleti vizsga két évig érvényes, ezalatt kell letenned a forgalmi vizsgát. Az első jogosítványhoz elsősegély-nyújtási ismereteket is igazolnod kell."
+    },
+    {
+      "q": "Milyen témakörökből kérdeznek?",
+      "a": "A vizsga a KRESZ szabályaira épül: jelzőtáblák, útburkolati jelek, jelzőlámpák és rendőri jelzések, elsőbbség és villamos, sebesség és előzés, autópálya és vasúti átjáró, megállás és várakozás, világítás és vontatás, biztonsági öv és gyermekszállítás, meghibásodás és baleset, valamint a vezető állapota és a jogosítvány szabályai."
+    },
+    {
+      "q": "Ezek a KAV hivatalos vizsgakérdései?",
+      "a": "Nem. Minden kérdés saját, a Tigertest írta a KRESZ alapján, így ugyanazt a tudást kéri számon, de egyetlen hivatalos kérdést sem másol. A táblákat szavakkal írjuk le, ezért a magyar táblák képeit is tanuld meg. Ez ingyenes gyakorlás, nem áll kapcsolatban a KAV-val, nem lehet vele vizsgára jelentkezni, és nem helyettesíti a vizsgát."
+    },
+    {
+      "q": "Ingyenes a Tigertest KRESZ tesztje?",
+      "a": "Igen. A három teszt és az öt témakör ingyenes, fiók sem kell hozzá. Ha szeretnéd mobilon és számítógépen is menteni a haladásodat, hozz létre ingyenes fiókot."
+    }
+  ],
+  "finalCta": {
+    "h2": "Készen állsz a KRESZ vizsgára?",
+    "p": "Kezdd el ingyen, regisztráció nélkül. 200 kérdés a magyar KRESZ szabályaiból."
+  }
+}

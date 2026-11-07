@@ -9,6 +9,7 @@ import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
 import "@/lib/banks/setrafik";
 import { SITE_URL } from "@/lib/siteUrl";
+import { examLandingAlternates } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -25,6 +26,7 @@ export const metadata: Metadata = {
     "sweden driving theory test, swedish driving theory test in english, kunskapsprov b, trafikverket theory test, teoriprov körkort, swedish driving licence test english, körkortsprov practice, sweden theory test questions 2026, högerregeln, swedish road signs test",
   alternates: {
     canonical: `${siteUrl}/sweden-driving-theory-test`,
+    languages: examLandingAlternates("setrafik"),
   },
   openGraph: {
     title,

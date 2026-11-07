@@ -14,7 +14,7 @@ function shuffle<T>(array: T[]): T[] {
 }
 
 /** Questions for one category, sorted by questionId for determinism. */
-function getCategoryQuestions(exam: ExamConfig, category: string, language: Language): Question[] {
+function getCategoryQuestions(exam: ExamConfig, category: string, language?: Language): Question[] {
   return getExamQuestions(exam.id, language)
     .filter((q) => q.category === category)
     .sort((a, b) => a.questionId.localeCompare(b.questionId));
@@ -25,12 +25,12 @@ function getCategoryQuestions(exam: ExamConfig, category: string, language: Lang
  * content area (test N takes slice N of each category), so all tests mirror
  * the real exam's distribution. Question order is shuffled per attempt.
  */
-export function generateExamTest(exam: ExamConfig, testNumber: number, language: Language = "en"): Question[] {
+export function generateExamTest(exam: ExamConfig, testNumber: number, language?: Language): Question[] {
   return shuffle(examTestQuestions(exam, testNumber, language));
 }
 
 /** Practice test N's fixed questions, unshuffled (blueprint order). */
-export function examTestQuestions(exam: ExamConfig, testNumber: number, language: Language = "en"): Question[] {
+export function examTestQuestions(exam: ExamConfig, testNumber: number, language?: Language): Question[] {
   if (testNumber < 1 || testNumber > exam.testCount) {
     throw new Error(`Test number must be between 1 and ${exam.testCount}`);
   }
@@ -52,7 +52,7 @@ export function getExamTrainingSetQuestions(
   exam: ExamConfig,
   setNumber: number,
   part?: number,
-  language: Language = "en"
+  language?: Language
 ): Question[] {
   const def = exam.trainingSets.find((s) => s.setNumber === setNumber);
   if (!def) throw new Error(`Set number must be between 1 and ${exam.trainingSets.length}`);
@@ -73,7 +73,7 @@ export function getNextExamTrainingSetQuestion(
   wrongQueue: string[] = [],
   currentQuestionId: string | null = null,
   part?: number,
-  language: Language = "en"
+  language?: Language
 ): Question | null {
   const questions = getExamTrainingSetQuestions(exam, setNumber, part, language);
   let unmastered = questions.filter((q) => !masteredIds.includes(q.questionId));

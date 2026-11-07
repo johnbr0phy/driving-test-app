@@ -1,0 +1,26 @@
+{
+  "id": "mtcpc",
+  "stateCode": "MTCPC",
+  "idBase": 26300,
+  "prefix": "MTCPC-",
+  "slug": "/malta-driver-cpc",
+  "landingPath": "/malta-driver-cpc-theory-test",
+  "dataFile": "data/malta-driver-cpc-questions.json",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 60,
+  "region": "MT",
+  "categories": [
+    {"key": "mtcpcEco", "label": "Rational Driving & Fuel Economy", "perTest": 5, "segment": "ECO"},
+    {"key": "mtcpcBrakes", "label": "Brakes, Retarders & Driver Assistance", "perTest": 5, "segment": "BRK"},
+    {"key": "mtcpcRisk", "label": "Risk, Weather & Vulnerable Road Users", "perTest": 5, "segment": "RSK"},
+    {"key": "mtcpcLoads", "label": "Loading, Stability & Load Securing", "perTest": 6, "segment": "LOD"},
+    {"key": "mtcpcPassengers", "label": "Passenger Comfort, Safety & Accessibility", "perTest": 6, "segment": "PSG"},
+    {"key": "mtcpcHours", "label": "Drivers' Hours, Rest & Working Time", "perTest": 7, "segment": "HRS"},
+    {"key": "mtcpcTacho", "label": "Tachographs & Records", "perTest": 5, "segment": "TAC"},
+    {"key": "mtcpcRules", "label": "CPC, Licences & Carriage Rules", "perTest": 4, "segment": "DOC"},
+    {"key": "mtcpcHealth", "label": "Health, Fitness, Alcohol & Drugs", "perTest": 3, "segment": "HLT"},
+    {"key": "mtcpcEmergency", "label": "Emergencies, Security & the Transport Business", "perTest": 4, "segment": "EMG"}
+  ],
+  "notes": "4 tests x 50 = 200, pools exactly 4x per-test. passPct 60 = Transport Malta's 60% on the CPC multiple-choice and case-study modules: ceil(0.6 x 50) = 30. testSets(26300, 4), 8 dashboard steps. Categories follow the Thirteenth Schedule of S.L. 65.18 (Directive 2022/2561 Annex I): 1.1-1.3 ECO, 1.2 BRK, 1.3a RSK, 1.4/1.6 LOD, 1.5/2.3 PSG, 2.1 HRS/TAC, 2.2 + Part IV DOC, 3.1/3.3/3.4 HLT, 3.2/3.5-3.8 EMG."
+}

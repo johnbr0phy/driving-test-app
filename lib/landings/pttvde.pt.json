@@ -1,0 +1,103 @@
+{
+  "metaTitle": "Exame TVDE 2026 - Testes Grátis para o Certificado de Motorista TVDE",
+  "metaDescription": "Testes grátis para o exame TVDE do IMT: 200 perguntas originais sobre a lei TVDE, o veículo, os passageiros, a condução e os primeiros socorros, com explicações, e cinco testes de 30 perguntas. Sem conta.",
+  "keywords": "exame TVDE, teste TVDE, perguntas exame TVDE, exame motorista TVDE, certificado de motorista TVDE, CMTVDE, avaliação final TVDE, exame TVDE IMT, curso TVDE, motorista Uber, motorista Bolt, Lei 45/2018, Lei 59/2026, simulador exame TVDE 2026",
+  "breadcrumb": {
+    "home": "Início",
+    "allTests": "Todos os testes",
+    "current": "Exame TVDE"
+  },
+  "h1": "Exame TVDE 2026: testes para o certificado de motorista",
+  "subtitle": "200 perguntas originais sobre a lei TVDE, o veículo e o dístico, os direitos dos passageiros, a comunicação, a condução defensiva e os primeiros socorros. Cinco testes de 30 perguntas com a regra do exame real: 27 certas para passar. Pensado para o telemóvel. Sem conta.",
+  "facts": {
+    "h2": "O exame TVDE em resumo",
+    "answer": "Para conduzir um carro de TVDE (o transporte de passageiros reservado por plataformas eletrónicas) é preciso o certificado de motorista de TVDE, emitido pelo IMT (Instituto da Mobilidade e dos Transportes). Para o obter, faz o curso de formação inicial de pelo menos 50 horas numa escola de condução ou entidade formadora reconhecida pelo IMT, com frequência mínima de 80% de cada módulo, e passa na avaliação final: um teste de 30 perguntas de escolha múltipla, feito no IMT ou num centro de exames autorizado, em que fica aprovado com pelo menos 27 respostas certas. Segundo a imprensa, o teste dura 60 minutos. Desde a Lei n.º 59/2026, em vigor a 1 de setembro de 2026, o curso verifica também o domínio funcional da língua portuguesa. Precisa de carta da categoria B há mais de três anos, com averbamento no grupo 2, e de idoneidade. O certificado vale cinco anos e renova-se com um curso de formação contínua de 8 horas. Quem tem certificado de motorista de táxi válido não precisa do curso nem do exame.",
+    "tigertest": "O Tigertest tem 200 perguntas originais para o exame TVDE com explicações e cinco testes de 30 perguntas, tudo grátis e sem conta.",
+    "rows": [
+      { "label": "Entidade", "value": "IMT, ou centro de exames autorizado pelo IMT" },
+      { "label": "Antes do exame", "value": "Curso inicial de 50 horas, no mínimo" },
+      { "label": "Perguntas", "value": "30 de escolha múltipla" },
+      { "label": "Para passar", "value": "27 em 30 (90%)" },
+      { "label": "Tempo", "value": "60 minutos, segundo a imprensa" },
+      { "label": "Língua", "value": "Português" },
+      { "label": "Validade do certificado", "value": "5 anos, renovável" },
+      { "label": "Testes no Tigertest", "value": "5 x 30 perguntas, 27 para passar" }
+    ],
+    "footnote": "Com base na Lei n.º 45/2018 republicada pela Lei n.º 59/2026 (artigos 10.º a 15.º e 19.º), na Portaria n.º 293/2018 e na informação do IMT sobre a certificação de motoristas TVDE, verificados em novembro de 2026. A Lei n.º 59/2026 deixa para portarias ainda por publicar o dístico e a verificação do português. As regras mudam, por isso confirme os detalhes atuais em",
+    "source": { "name": "IMT: certificação de motoristas TVDE", "url": "https://www.imt-ip.pt/?p=10228" }
+  },
+  "howItWorks": {
+    "h2": "Como funciona",
+    "cards": [
+      {
+        "h3": "Treine por tema",
+        "p": "Quatro conjuntos de treino: a regulamentação da atividade TVDE; o veículo, o preço e os direitos do utilizador; passageiros e emergências; e as normas e técnicas de condução. As perguntas em que erra voltam até as dominar."
+      },
+      {
+        "h3": "Testes completos",
+        "p": "Cinco testes de 30 perguntas, o tamanho do exame real, e em cada um passa com 27 certas, como no exame. Nenhuma pergunta se repete entre testes e todas as respostas explicam a regra, com o artigo da lei quando se aplica."
+      }
+    ]
+  },
+  "topics": {
+    "h2": "Feito a partir da lei TVDE e do programa do curso",
+    "p": "Os temas seguem as matérias do curso de formação inicial (comunicação e relações interpessoais, normas legais de condução, técnicas de condução, regulamentação da atividade e emergências e primeiros socorros) e a lei TVDE na redação da Lei n.º 59/2026: requisitos do motorista e do certificado, limite de 10 horas de condução em 24 horas, idade e registo do veículo, o novo dístico inamovível, a proibição de recolher passageiros na rua e nas praças de táxi, o preço e a fatura, os passageiros com mobilidade reduzida e a gravação de vídeo. Não há perguntas sobre coimas, taxas nem tarifas. O IMT publica a lista de perguntas do exame no seu site; estas perguntas são originais, por isso reveja também essa lista antes do exame.",
+    "items": [
+      "Regulamentação da atividade TVDE (20%)",
+      "Veículo, dístico e registo (13%)",
+      "Serviço, preço e direitos do utilizador (17%)",
+      "Comunicação e relações interpessoais (17%)",
+      "Normas legais de condução (10%)",
+      "Técnicas de condução defensiva e eficiente (13%)",
+      "Emergências e primeiros socorros (10%)"
+    ]
+  },
+  "howToPass": {
+    "h2": "Como passar no exame TVDE",
+    "steps": [
+      {
+        "h3": "1. Saiba de cor os números da lei",
+        "p": "Carta B há mais de três anos com averbamento no grupo 2, curso inicial de 50 horas, certificado válido por cinco anos, formação contínua de 8 horas, no máximo 10 horas de condução em 24, veículo com menos de 10 anos (12 se for elétrico) e até nove lugares, espera por um veículo adaptado inferior a 15 minutos. São perguntas fáceis de ganhar."
+      },
+      {
+        "h3": "2. Conheça as novidades da Lei n.º 59/2026",
+        "p": "Desde 1 de setembro de 2026, o dístico passa a ser inamovível, com elementos antifraude e código QR, os carros têm de ter menos de 10 anos (até 12 se forem elétricos), as tarifas dinâmicas são permitidas se a fórmula for comunicada antes, a plataforma deve deixar escolher um motorista que saiba português e pode oferecer gravação de vídeo, só com imagem e só se ambos aceitarem."
+      },
+      {
+        "h3": "3. Treine as situações com passageiros",
+        "p": "Muitas perguntas descrevem um passageiro concreto: com cão-guia, em cadeira de rodas, com um animal, embriagado ou agressivo. Lembre-se de que só pode recusar um serviço em casos muito limitados e de que a não discriminação é uma obrigação legal."
+      },
+      {
+        "h3": "4. Conte com 27 como o mínimo",
+        "p": "O exame só permite três erros, por isso procure fazer 29 ou 30 em cada teste. O Tigertest mostra a sua percentagem de acertos por tema: reveja as perguntas em que errou, volte a treinar o conjunto mais fraco, leia a lista de perguntas publicada pelo IMT e faça os cinco testes antes do dia do exame."
+      }
+    ]
+  },
+  "faqTitle": "Perguntas frequentes sobre o exame TVDE",
+  "faqs": [
+    {
+      "q": "Como é o exame TVDE?",
+      "a": "É a avaliação final do curso de formação inicial de motorista de TVDE. Faz-se no IMT ou num centro de exames autorizado pelo IMT, depois do curso de pelo menos 50 horas, e é um teste de 30 perguntas de escolha múltipla sobre as matérias do curso. Fica aprovado com pelo menos 27 respostas certas, ou seja, no máximo três erros. Segundo a imprensa, o teste dura 60 minutos e, quem chumbar, pode pedir para o repetir uma vez nos 10 dias úteis seguintes."
+    },
+    {
+      "q": "Quem precisa de fazer o exame TVDE?",
+      "a": "Quem quer obter o certificado de motorista de TVDE pela primeira vez, depois do curso de formação inicial. Os motoristas que obtiveram o certificado antes de o exame ser obrigatório fazem-no na primeira renovação, depois do curso de formação contínua. Quem tem um certificado de motorista de táxi válido não precisa do curso inicial nem do certificado de TVDE, mas tem de pedir ao IMT o número único de registo e estar inscrito numa plataforma."
+    },
+    {
+      "q": "Em que língua é o exame TVDE?",
+      "a": "Em português. Desde a Lei n.º 59/2026, em vigor a 1 de setembro de 2026, o curso de formação inicial verifica também o domínio funcional da língua portuguesa adequado à atividade, e o curso só é concluído com aproveitamento se esse requisito estiver cumprido. Por isso o Tigertest tem estas perguntas em português simples, com explicações curtas."
+    },
+    {
+      "q": "Como estão organizados os testes do Tigertest?",
+      "a": "São 200 perguntas originais em sete temas, da regulamentação da atividade aos primeiros socorros. Quatro conjuntos de treino ensinam as regras com correção imediata, e as perguntas em que erra voltam até acertar. Cinco testes de 30 perguntas têm o tamanho do exame real e a mesma regra de 27 certas em 30 (90%), e nenhuma pergunta se repete entre testes. As outras 50 perguntas aparecem só nos conjuntos de treino."
+    },
+    {
+      "q": "Estas são as perguntas oficiais do IMT?",
+      "a": "Não. O IMT publica a lista de perguntas da avaliação final no seu site, e o Tigertest não a copia: todas as perguntas são originais, escritas a partir da Lei n.º 45/2018 na redação da Lei n.º 59/2026, do Código da Estrada, da Portaria n.º 293/2018 e das recomendações de suporte básico de vida. Testam os mesmos conhecimentos, por isso reveja também a lista do IMT antes do exame. O Tigertest é treino gratuito, sem qualquer ligação ao IMT (Instituto da Mobilidade e dos Transportes), a escolas de condução, entidades formadoras ou plataformas de TVDE, e não marca nem substitui o seu exame."
+    }
+  ],
+  "finalCta": {
+    "h2": "Pronto para o seu exame TVDE?",
+    "p": "Comece grátis. Sem conta. 200 perguntas sobre a lei TVDE, os passageiros e a condução."
+  }
+}

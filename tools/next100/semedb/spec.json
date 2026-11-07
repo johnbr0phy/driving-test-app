@@ -1,0 +1,38 @@
+{
+  "id": "semedb",
+  "stateCode": "SEMEDB",
+  "idBase": 23500,
+  "prefix": "SEMEDB-",
+  "slug": "/medborgarskapsprovet",
+  "landingPath": "/sv/medborgarskapsprov-ovning",
+  "dataFile": "data/sweden-citizenship-test-questions.json",
+  "language": "sv",
+  "locale": "sv-SE",
+  "name": "Medborgarskapsprovet, övningsprov",
+  "shortName": "Medborgarskapsprovet",
+  "examLabel": "Medborgarskapsprov i samhällskunskap",
+  "fullName": "Medborgarskapsprov i samhällskunskap (UHR)",
+  "english": {
+    "name": "Swedish Citizenship Test (Civics)",
+    "shortName": "Swedish citizenship test",
+    "fullName": "Swedish citizenship test in civics (medborgarskapsprovet i samhällskunskap, UHR), in Swedish"
+  },
+  "icon": "flag",
+  "testCount": 3,
+  "questionsPerTest": 60,
+  "passPct": 70,
+  "categories": [
+    {"key": "smdbLandet", "label": "Landet Sverige", "perTest": 6, "pool": 20, "segment": "LAN"},
+    {"key": "smdbDemokrati", "label": "Demokrati, val och partier", "perTest": 7, "pool": 23, "segment": "DEM"},
+    {"key": "smdbStyrning", "label": "Så styrs Sverige", "perTest": 6, "pool": 20, "segment": "STY"},
+    {"key": "smdbLag", "label": "Lag och rätt", "perTest": 7, "pool": 23, "segment": "LAG"},
+    {"key": "smdbMedier", "label": "Mediernas roll", "perTest": 4, "pool": 14, "segment": "MED"},
+    {"key": "smdbRattigheter", "label": "Mänskliga rättigheter", "perTest": 7, "pool": 23, "segment": "RAT"},
+    {"key": "smdbArbete", "label": "Arbete, privatekonomi och välfärd", "perTest": 7, "pool": 23, "segment": "ARB"},
+    {"key": "smdbHistoria", "label": "Sveriges moderna historia", "perTest": 7, "pool": 23, "segment": "HIS"},
+    {"key": "smdbOmvarlden", "label": "Sverige och omvärlden", "perTest": 4, "pool": 14, "segment": "OMV"},
+    {"key": "smdbReligion", "label": "Religion, traditioner och högtider", "perTest": 5, "pool": 17, "segment": "REL"}
+  ],
+  "notes": "Three real-length tests of 60 (180 items) plus 2 training-only spares per pool (20). passPct 70 = ceil(0.70 x 60) = 42 of 60; the real August 2026 test scored 40 of its 60 and passed at 28 of 40 (70%). Training: five topic sets 23501-23505 (43/43/37/46/31), so 5 sets + 3 tests = 8 dashboard steps. Categories follow the chapters of UHR's Sverige i fokus; per-test weights are Tigertest's own.",
+  "trainingSets": "topic sets 23501-23505, see WIRING.md"
+}

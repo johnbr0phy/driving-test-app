@@ -1,0 +1,36 @@
+{
+  "id": "dkmoto",
+  "stateCode": "DKMOTO",
+  "idBase": 23700,
+  "prefix": "DKMC-",
+  "slug": "/denmark-motorcycle-theory",
+  "landingPath": "/denmark-motorcycle-theory-test",
+  "dataFile": "data/denmark-motorcycle-theory-questions.json",
+  "name": "Denmark Motorcycle Theory Practice Test",
+  "shortName": "Denmark motorcycle theory",
+  "examLabel": "Danish motorcycle theory test",
+  "fullName": "Danish motorcycle theory test (teoriprøve), categories A1, A2 and A",
+  "icon": "bike",
+  "testCount": 8,
+  "questionsPerTest": 25,
+  "passPct": 80,
+  "categories": [
+    {"key": "dkmcBike", "label": "Motorcycle, Gear & Documents", "perTest": 2, "pool": 16, "segment": "BIK", "plan": "afsnit 1 (8%)"},
+    {"key": "dkmcVehicles", "label": "Other Vehicles & How They Handle", "perTest": 2, "pool": 16, "segment": "VEH", "plan": "afsnit 3 (8%)"},
+    {"key": "dkmcRider", "label": "Perception, Fitness & Other Road Users", "perTest": 2, "pool": 16, "segment": "RID", "plan": "afsnit 4 (8%)"},
+    {"key": "dkmcRoad", "label": "Road Conditions & Grip", "perTest": 2, "pool": 16, "segment": "ROA", "plan": "afsnit 5 (8%)"},
+    {"key": "dkmcRules", "label": "Licences, Passengers & Basic Rules", "perTest": 2, "pool": 16, "segment": "RUL", "plan": "afsnit 6 (8%)"},
+    {"key": "dkmcPosition", "label": "Moving Off, Position, Bends & Lanes", "perTest": 4, "pool": 32, "segment": "POS", "plan": "afsnit 7.1 to 7.5"},
+    {"key": "dkmcPassing", "label": "Meeting, Following & Overtaking", "perTest": 3, "pool": 24, "segment": "PAS", "plan": "afsnit 7.6 to 7.9"},
+    {"key": "dkmcJunctions", "label": "Junctions & Roundabouts", "perTest": 3, "pool": 24, "segment": "JNC", "plan": "afsnit 7.10 to 7.15"},
+    {"key": "dkmcMotorway", "label": "Motorways, Parking & Darkness", "perTest": 3, "pool": 24, "segment": "MWY", "plan": "afsnit 7.16 to 7.21"},
+    {"key": "dkmcRisk", "label": "Alcohol, Drugs & Speed", "perTest": 2, "pool": 16, "segment": "RSK", "plan": "afsnit 8 (8%)"}
+  ],
+  "notes": "8 real-length tests x 25 = 200, every item used once in tests. Weights follow Færdselsstyrelsen's published randomisation key for the digital category A test (afsnit 1, 3, 4, 5, 6 and 8 8% each, afsnit 7 52%): 2 x 6 + 13 per 25, afsnit 7 split 4/3/3/3 (Tigertest's own). passPct 80 = 20 of 25, at most 5 errors like the real test. Dashboard = 4 topic sets + 8 tests = 12 steps.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 23701, "name": "Your Motorcycle, Licence & Other Vehicles", "categories": ["dkmcBike", "dkmcRules", "dkmcVehicles"], "size": 48},
+    {"setNumber": 2, "id": 23702, "name": "Rider, Road & Risk", "categories": ["dkmcRider", "dkmcRoad", "dkmcRisk"], "size": 48},
+    {"setNumber": 3, "id": 23703, "name": "Position, Bends & Overtaking", "categories": ["dkmcPosition", "dkmcPassing"], "size": 56},
+    {"setNumber": 4, "id": 23704, "name": "Junctions, Motorways & Darkness", "categories": ["dkmcJunctions", "dkmcMotorway"], "size": 48}
+  ]
+}

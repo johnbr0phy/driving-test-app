@@ -1,0 +1,38 @@
+{
+  "id": "espolicia",
+  "stateCode": "ESPOLICIA",
+  "idBase": 22500,
+  "prefix": "ESPN-",
+  "slug": "/oposiciones-policia-nacional",
+  "landingPath": "/es/test-oposiciones-policia-nacional",
+  "dataFile": "data/policia-nacional-questions.json",
+  "language": "es",
+  "locale": "es-ES",
+  "name": "Test Oposiciones Policía Nacional",
+  "shortName": "Policía Nacional",
+  "examLabel": "Prueba de conocimientos, Escala Básica",
+  "fullName": "Oposición a la Escala Básica de la Policía Nacional: prueba de conocimientos",
+  "english": {
+    "name": "Spain National Police Entrance Exam (Escala Básica)",
+    "shortName": "Spain National Police exam",
+    "fullName": "Spain National Police entrance exam, Escala Básica knowledge test (oposiciones Policía Nacional), in Spanish"
+  },
+  "icon": "badge",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 70,
+  "categories": [
+    {"key": "espnConstitucion", "label": "Derecho, Constitución y Unión Europea", "temas": "1-4", "perTest": 6, "pool": 24, "segment": "CON"},
+    {"key": "espnAdministracion", "label": "Administración, Ministerio del Interior y Policía Nacional", "temas": "5-9", "perTest": 5, "pool": 20, "segment": "ADM"},
+    {"key": "espnExtranjeria", "label": "Extranjería y protección internacional", "temas": "10-12", "perTest": 3, "pool": 12, "segment": "EXT"},
+    {"key": "espnSeguridad", "label": "Seguridad privada, seguridad ciudadana y ciberseguridad", "temas": "13-15", "perTest": 4, "pool": 16, "segment": "SEG"},
+    {"key": "espnPenal", "label": "Derecho Penal", "temas": "16-20", "perTest": 6, "pool": 24, "segment": "PEN"},
+    {"key": "espnProcesal", "label": "Derecho Procesal Penal y víctimas", "temas": "21-22", "perTest": 3, "pool": 12, "segment": "PRO"},
+    {"key": "espnIgualdad", "label": "Igualdad, prevención de riesgos y protección de datos", "temas": "23-26", "perTest": 3, "pool": 12, "segment": "IGU"},
+    {"key": "espnSociales", "label": "Ciencias Sociales", "temas": "27-35", "perTest": 7, "pool": 28, "segment": "SOC"},
+    {"key": "espnLengua", "label": "Lengua española", "temas": "36-37", "perTest": 4, "pool": 16, "segment": "LEN"},
+    {"key": "espnInformatica", "label": "Informática, inteligencia y ciberdelincuencia", "temas": "38-41", "perTest": 5, "pool": 20, "segment": "INF"},
+    {"key": "espnArmasVial", "label": "Armas, vehículos prioritarios y seguridad vial", "temas": "42-45", "perTest": 4, "pool": 16, "segment": "ARV"}
+  ],
+  "notes": "4 tests x 50 = 200, every item used once (pools exactly 4x each count). Blocks: Ciencias Jurídicas 30, Ciencias Sociales 11, Técnico-Científicas 9 per test, roughly the share of the 45 temas (26/11/8). The real test is 100 questions with three options in 50 minutes, scored [A - E/(n-1)] x 10 / P; Tigertest models half its length with four options and no penalty, so passPct 70 is Tigertest's target. Training: six topic sets 22501-22506 (44/28/36/40/16/36) + 4 tests = 10 dashboard steps."
+}

@@ -1,0 +1,123 @@
+{
+  "metaTitle": "Metsästäjätutkinto harjoituskoe 2026 - Harjoittele ilmaiseksi",
+  "metaDescription": "Harjoittele metsästäjätutkintoa ilmaiseksi: 200 omaa kysymystä suomeksi metsästyslaista, lajintuntemuksesta, turvallisuudesta, aseista ja saaliin käsittelystä, jokainen vastaus selitetty. Kolme 60 kysymyksen harjoituskoetta, ei rekisteröitymistä.",
+  "keywords": "metsästäjätutkinto, metsästäjätutkinto harjoituskoe, metsästäjätutkinto kysymykset, metsästäjätutkinto harjoittelu, metsästyskortti, metsästäjän opas, lajintuntemus, metsästyslaki, metsästäjätutkinto 2026",
+  "breadcrumb": {
+    "home": "Etusivu",
+    "allTests": "Kaikki testit",
+    "current": "Metsästäjätutkinto harjoituskoe"
+  },
+  "h1": "Metsästäjätutkinto harjoituskoe 2026",
+  "subtitle": "200 omaa harjoituskysymystä suomeksi kaikista tutkinnon aihealueista, jokainen vastaus selitetty. Kolme 60 kysymyksen harjoituskoetta, joissa saa olla enintään 8 virhettä kuten oikeassa tutkinnossa. Tehty puhelimelle, ei rekisteröitymistä.",
+  "facts": {
+    "h2": "Metsästäjätutkinto lyhyesti",
+    "answer": "Metsästäjätutkinto on suoritettava ennen kuin maksat riistanhoitomaksun ja saat metsästyskortin ensimmäisen kerran. Tutkinnossa on 60 Suomen riistakeskuksen laatimaa monivalintakysymystä: ensin 15 lajintunnistuskysymystä kuvista, joihin on aikaa 15 minuuttia, ja sitten 45 teoriakysymystä. Koko kokeeseen on aikaa enintään puolitoista tuntia. Hyväksytyssä suorituksessa saa olla enintään 8 väärää vastausta, eli vähintään 52 pistettä 60:stä. Tutkinnon järjestävät riistanhoitoyhdistykset paperilla tai sähköisesti omalla puhelimella, tabletilla tai tietokoneella, ja ennakkoilmoittautuminen on pakollinen. Vuoden 2026 alusta kokeen voi tehdä suomeksi, ruotsiksi, englanniksi tai saameksi.",
+    "tigertest": "Tigertestissä on 200 omaa harjoituskysymystä suomeksi tutkinnon kahdeksasta aihealueesta, kaikki ilmaiseksi ja ilman rekisteröitymistä. Kysymykset on kirjoitettu itse metsästyslain, metsästysasetuksen ja ampuma-aselain pohjalta, eikä niitä ole kopioitu riistakeskuksen tutkinnosta.",
+    "rows": [
+      {
+        "label": "Kysymyksiä",
+        "value": "60 (15 lajintunnistusta, 45 teoriaa)"
+      },
+      {
+        "label": "Hyväksytty",
+        "value": "Enintään 8 väärää, vähintään 52 pistettä"
+      },
+      {
+        "label": "Aika",
+        "value": "Enintään 1,5 tuntia, lajintunnistus 15 minuuttia"
+      },
+      {
+        "label": "Kielet",
+        "value": "Suomi, ruotsi, englanti tai saame"
+      },
+      {
+        "label": "Järjestäjä",
+        "value": "Riistanhoitoyhdistys"
+      },
+      {
+        "label": "Kysymykset laatii",
+        "value": "Suomen riistakeskus"
+      }
+    ],
+    "footnote": "Suomen riistakeskuksen metsästäjätutkintoa koskevan ohjeen (1.1.2026) ja maa- ja metsätalousministeriön asetuksen 1160/2014 mukaan, marraskuu 2026. Tigertest ei ole Suomen riistakeskuksen, riistanhoitoyhdistysten tai Metsästäjäliiton palvelu. Tarkista ajantasaiset tiedot osoitteesta",
+    "source": {
+      "name": "Suomen riistakeskus: metsästäjätutkinto",
+      "url": "https://riista.fi/tietoa-metsastyksesta/haluatko-metsastajaksi/metsastajatutkinto/"
+    }
+  },
+  "howItWorks": {
+    "h2": "Näin se toimii",
+    "cards": [
+      {
+        "h3": "Harjoittele ensin, testaa sitten",
+        "p": "Viisi harjoitussarjaa aiheittain: lajintuntemus, metsästyslainsäädäntö, turvallisuus ja aseet, metsästystavat ja etiikka sekä riistanhoito ja saaliin käsittely. Saat palautteen heti, ja väärin menneet kysymykset tulevat uudelleen, kunnes osaat ne. Sen jälkeen testaat itsesi harjoituskokeilla."
+      },
+      {
+        "h3": "Harjoituskokeet kuin tutkinnossa",
+        "p": "Kolme harjoituskoetta, joissa kussakin on 60 kysymystä kaikista kahdeksasta aihealueesta. Lajintuntemusta on 15 kysymystä kuten oikeassa tutkinnossa, mutta lajit kuvataan sanoin. Läpäisyyn tarvitset 52 oikeaa 60:stä."
+      }
+    ]
+  },
+  "topics": {
+    "h2": "Kaikki tutkinnon aihealueet",
+    "p": "Tutkinnon aihealueet on säädetty maa- ja metsätalousministeriön asetuksessa metsästäjätutkinnosta. Jokaisessa harjoituskokeessa on kysymyksiä kaikista kahdeksasta.",
+    "items": [
+      "Lajintuntemus (15 / 60 kysymyksestä)",
+      "Metsästyslainsäädäntö (12 / 60)",
+      "Metsästyksen turvallisuus (8 / 60)",
+      "Aseet ja patruunat metsästyksessä (7 / 60)",
+      "Eettinen ja kestävä metsästys (5 / 60)",
+      "Pyyntivälineet ja pyyntimenetelmät (5 / 60)",
+      "Riistanhoito ja riistaekologia (5 / 60)",
+      "Saaliin käsittely (3 / 60)"
+    ]
+  },
+  "howToPass": {
+    "h2": "Näin läpäiset metsästäjätutkinnon",
+    "steps": [
+      {
+        "h3": "1. Tunne läpäisyn raja",
+        "p": "Saat vastata väärin enintään kahdeksaan kysymykseen 60:stä. Vastaamatta jätetty kysymys lasketaan vääräksi, joten vastaa jokaiseen. Lajintunnistukseen on vain 15 minuuttia, mutta siihen voi palata ilman kuvia teoriaosan aikana."
+      },
+      {
+        "h3": "2. Opettele lajit tuntomerkeistä",
+        "p": "Sorsat, hanhet, kanalinnut, hirvieläimet ja pienpedot tunnistetaan höyhenpuvusta, nokasta, sarvista ja jäljistä. Opettele erityisesti aina rauhoitetut lajit ja riistalajien kaltaiset rauhoitetut linnut."
+      },
+      {
+        "h3": "3. Opettele turvallisuuden perussäännöt",
+        "p": "Käsittele asetta aina kuin se olisi ladattu, tunnista kohde ja tarkista tausta, ja muista 150 metriä asutusta rakennuksesta sekä 100 metriä pysäytetystä ajoneuvosta. Nämä tulevat vastaan myös jahdissa."
+      },
+      {
+        "h3": "4. Kertaa virheesi",
+        "p": "Tigertest muistaa, mihin vastasit väärin, ja kysyy ne uudelleen. Tee harjoituskokeet, kun harjoitussarjasi ovat vihreitä, ja toista niitä, kunnes virheitä on varmasti alle kahdeksan."
+      }
+    ]
+  },
+  "faqTitle": "Usein kysyttyä metsästäjätutkinnosta",
+  "faqs": [
+    {
+      "q": "Montako kysymystä metsästäjätutkinnossa on?",
+      "a": "Tutkinnossa on 60 monivalintakysymystä: 15 lajintunnistuskysymystä kuvista ja 45 teoriakysymystä. Hyväksytyssä suorituksessa saa olla enintään 8 väärää vastausta, eli vähintään 52 pistettä. Aikaa on enintään puolitoista tuntia."
+    },
+    {
+      "q": "Kuka tarvitsee metsästäjätutkinnon?",
+      "a": "Jokainen, joka haluaa maksaa riistanhoitomaksun ja saada metsästyskortin ensimmäistä kertaa. Tutkintoa ei tarvita, jos olet maksanut riistanhoitomaksun jonakin viitenä edellisenä metsästysvuotena. Myöskään ulkomaalainen, jolla on kotimaassaan oikeus metsästää, ei tarvitse tutkintoa."
+    },
+    {
+      "q": "Ovatko nämä riistakeskuksen tutkintokysymyksiä?",
+      "a": "Eivät. Suomen riistakeskus ei julkaise tutkintokysymyksiään. Kaikki kysymykset on kirjoitettu itse tutkinnon aihealueista metsästyslain, metsästysasetuksen ja ampuma-aselain pohjalta. Tutkintoon valmistautuessa kannattaa lukea myös riistakeskuksen Metsästäjän opas."
+    },
+    {
+      "q": "Mitä Tigertest ei jäljittele?",
+      "a": "Oikeassa tutkinnossa lajintunnistus tehdään kuvista 15 minuutin aikarajalla. Tässä lajit kuvataan sanoin, esimerkiksi höyhenpuvun, sarvien tai jälkien perusteella, eikä kuvaosiota ole erikseen. Metsästysajat ja kiintiöt muuttuvat, joten niitä ei kysytä: tarkista ne aina voimassa olevasta asetuksesta."
+    },
+    {
+      "q": "Onko metsästäjätutkinnon harjoittelu Tigertestissä ilmaista?",
+      "a": "On. Kaikki viisi harjoitussarjaa ja kolme harjoituskoetta ovat ilmaisia ja käytettävissä ilman rekisteröitymistä. Ilmaisella tilillä tallennat edistymisesi kaikille laitteillesi."
+    }
+  ],
+  "finalCta": {
+    "h2": "Valmiina metsästäjätutkintoon?",
+    "p": "Aloita ilmaiseksi, ilman rekisteröitymistä. 200 kysymystä suomeksi kaikista kahdeksasta aihealueesta."
+  }
+}

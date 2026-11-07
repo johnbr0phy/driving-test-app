@@ -63,8 +63,8 @@ export function ResultsHeroDebrief({
     setShowFireworks(passed && newlyCompleted);
   }, [passed, testSession.id]);
 
-  const progressLabel = { en: "See your progress", es: "Ver tu progreso", vi: "Xem tiến độ của bạn", ko: "내 진행 상황 보기", zh: "查看你的进步", de: "Fortschritt ansehen", fr: "Voir votre progression", it: "Vedi i tuoi progressi", pl: "Zobacz postępy", nl: "Bekijk je voortgang", pt: "Ver o progresso" }[language];
-  const completedLabel = { en: "Practice test complete", es: "Prueba de práctica completada", vi: "Hoàn thành bài thi thử", ko: "모의시험 완료", zh: "模拟考试完成", de: "Übungstest geschafft", fr: "Test d'entraînement terminé", it: "Test di esercitazione completato", pl: "Test próbny ukończony", nl: "Oefentoets klaar", pt: "Teste de treino concluído" }[language];
+  const progressLabel = { en: "See your progress", es: "Ver tu progreso", vi: "Xem tiến độ của bạn", ko: "내 진행 상황 보기", zh: "查看你的进步", de: "Fortschritt ansehen", fr: "Voir votre progression", it: "Vedi i tuoi progressi", pl: "Zobacz postępy", nl: "Bekijk je voortgang", pt: "Ver o progresso", sv: "Se dina framsteg", da: "Se dit fremskridt", fi: "Katso edistymisesi", hu: "Haladásod megtekintése", ro: "Vezi progresul tău", el: "Δες την πρόοδό σου" }[language];
+  const completedLabel = { en: "Practice test complete", es: "Prueba de práctica completada", vi: "Hoàn thành bài thi thử", ko: "모의시험 완료", zh: "模拟考试完成", de: "Übungstest geschafft", fr: "Test d'entraînement terminé", it: "Test di esercitazione completato", pl: "Test próbny ukończony", nl: "Oefentoets klaar", pt: "Teste de treino concluído", sv: "Övningsprovet är klart", da: "Øvelsesprøve klaret", fi: "Harjoituskoe tehty", hu: "Gyakorló teszt kész", ro: "Test de exersare terminat", el: "Το τεστ εξάσκησης ολοκληρώθηκε" }[language];
 
   const passThreshold = Math.ceil(totalQuestions * 0.7);
   const answersFromPass = Math.max(passThreshold - score, 1);

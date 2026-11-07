@@ -66,6 +66,28 @@ const BORROWED_SETS: Record<string, string> = {
   pkdrive: "driving",
   // EU driving theory tests (Nov 2026) wear the car tiger.
   esdgt: "driving", ptimt: "driving", bedriving: "driving", dkteori: "driving", setrafik: "driving", fitheory: "driving", grdriving: "driving", rodrpciv: "driving", hukresz: "driving", mttheory: "driving", detheorie: "driving",
+  // Spain (Nov 2026): CAP the CDL tiger, police exams the police tiger, vigilante the security tiger.
+  escapcond: "cdl", espolicia: "police", esguardia: "police", esvigilante: "security",
+  // Germany (Nov 2026): motorcycle the motorcycle tiger, AEVO the teaching tiger, 34a the security tiger, Heilpraktiker the clinical tiger.
+  demotorrad: "moto", deaevo: "praxisplt", de34a: "security", deheilpr: "nclex",
+  // Portugal (Nov 2026): motorcycle the motorcycle tiger, CAM the CDL tiger, TVDE the car tiger, vigilante the security tiger.
+  ptmoto: "moto", ptcam: "cdl", pttvde: "driving", ptvigil: "security",
+  // Malta (Nov 2026): motorcycle the motorcycle tiger, CPC the CDL tiger, taxi the car tiger, guard the security tiger.
+  mtmoto: "moto", mtcpc: "cdl", mttaxi: "driving", mtguard: "security",
+  // Sweden (Nov 2026): motorcycle the motorcycle tiger, jägarexamen the hunter tiger, citizenship the Life in the UK tiger, högskoleprovet the SAT tiger.
+  semoto: "moto", sejakt: "hunter", semedb: "uklitu", sehp: "sat",
+  // Denmark (Nov 2026): motorcycle the motorcycle tiger, hunting the hunter tiger, citizenship and residence the civics tiger.
+  dkmoto: "moto", dkjagt: "hunter", dkindfoed: "civics", dkmedborger: "civics",
+  // Finland (Nov 2026): motorcycle the motorcycle tiger, truck and bus the CDL tiger, hygiene passport the UK food hygiene tiger, hunting the hunter tiger.
+  fimoto: "moto", fitruck: "cdl", fihygiene: "ukfood", fihunt: "hunter",
+  // Hungary (Nov 2026): motorcycle the motorcycle tiger, GKI the CDL tiger, first aid the CPR tiger, insurance the life and health insurance tiger.
+  hukreszmoto: "moto", hugki: "cdl", huelsoseg: "cpr", hubizt: "insurance",
+  // Romania (Nov 2026): Driver CPC the CDL tiger, taxi the car tiger, medicine admission the SAT tiger, Rezidențiat the NCLEX tiger.
+  rocpi: "cdl", rotaxi: "driving", roadmed: "sat", rorezid: "nclex",
+  // Greece (Nov 2026): motorcycle the motorcycle tiger, citizenship the US civics tiger, security the security guard tiger.
+  grmoto: "moto", grcitizen: "civics", grsecurity: "security",
+  // Belgium (Nov 2026): motorcycle the motorcycle tiger, truck the CDL tiger, medicine admission the SAT tiger, insurance the life and health insurance tiger.
+  bemoto: "moto", bevracht: "cdl", betoelating: "sat", befsmavz: "insurance",
   // Bank exams wear the IBPS PO tiger; state police exams the police tiger.
   sbipo: "ibpspo", sbiclerk: "ibpspo", ibpsrrb: "ibpspo",
   delhipolice: "police", biharpolice: "police", rajpolice: "police", mppolice: "police",

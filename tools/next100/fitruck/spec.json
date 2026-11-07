@@ -1,0 +1,37 @@
+{
+  "id": "fitruck",
+  "stateCode": "FITRUCK",
+  "idBase": 24300,
+  "prefix": "FITRK-",
+  "slug": "/finland-truck-theory",
+  "landingPath": "/finland-truck-theory-test",
+  "dataFile": "data/finland-truck-theory-questions.json",
+  "name": "Finland Truck and Bus Theory Practice Test",
+  "shortName": "Finland truck & bus theory",
+  "examLabel": "Finland truck and bus theory test",
+  "fullName": "Finland truck and bus theory test, categories C, CE, D and DE (teoriakoe)",
+  "icon": "truck",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 80,
+  "region": "FI",
+  "categories": [
+    {"key": "fitrkHours", "label": "Driving & Rest Times", "perTest": 7, "pool": 28, "segment": "HRS"},
+    {"key": "fitrkTacho", "label": "Tachographs, Documents & Driver CPC", "perTest": 5, "pool": 20, "segment": "TAC"},
+    {"key": "fitrkLoads", "label": "Loads, Masses & Dimensions", "perTest": 6, "pool": 24, "segment": "LOD"},
+    {"key": "fitrkPassengers", "label": "Carrying Passengers", "perTest": 5, "pool": 20, "segment": "PSG"},
+    {"key": "fitrkVehicle", "label": "Vehicle Systems, Maintenance & Faults", "perTest": 5, "pool": 20, "segment": "VEH"},
+    {"key": "fitrkBrakes", "label": "Brakes, Tyres & Coupling", "perTest": 7, "pool": 28, "segment": "BRK"},
+    {"key": "fitrkRoad", "label": "Heavy Vehicles in Traffic", "perTest": 7, "pool": 28, "segment": "ROD"},
+    {"key": "fitrkSafety", "label": "Blind Spots, Risks & Fitness to Drive", "perTest": 5, "pool": 20, "segment": "SAF"},
+    {"key": "fitrkRoute", "label": "Route Planning, Winter & Incidents", "perTest": 3, "pool": 12, "segment": "RTE"}
+  ],
+  "notes": "4 tests x 50 = 200, every item used once in tests, no spares. passPct 80 is Tigertest's target: the real C, CE, D and DE test needs 14 of 20, 26 of 30 and 4 of 5 (44 of 55, 80%), each part passed separately (Traficom regulation TRAFICOM/523973/03.04.03.00/2019). Topic sets: 5 sets + 4 tests = 9 dashboard steps, no set over 60. Picture and risk recognition questions are not modelled as pictures; traffic situations are described in words. Truck and bus in one bank.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 24301, "name": "Drivers' Hours & Tachographs", "categories": ["fitrkHours", "fitrkTacho"], "size": 48},
+    {"setNumber": 2, "id": 24302, "name": "Loads & Passengers", "categories": ["fitrkLoads", "fitrkPassengers"], "size": 44},
+    {"setNumber": 3, "id": 24303, "name": "Brakes, Tyres & the Vehicle", "categories": ["fitrkBrakes", "fitrkVehicle"], "size": 48},
+    {"setNumber": 4, "id": 24304, "name": "Heavy Vehicles in Traffic", "categories": ["fitrkRoad"], "size": 28},
+    {"setNumber": 5, "id": 24305, "name": "Blind Spots, Winter & Incidents", "categories": ["fitrkSafety", "fitrkRoute"], "size": 32}
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "landingPath": "/da/teoriproeve-bil",
+  "locale": "da-DK",
+  "name": "Teoriprøve til bil",
+  "shortName": "Teoriprøve B",
+  "examLabel": "Teoriprøven hos Færdselsstyrelsen",
+  "fullName": "Færdselsstyrelsens teoriprøve til kørekort kategori B (almindelig bil)",
+  "trainingSets": {
+    "1": { "name": "Bilen, trafikanterne og grundreglerne", "weightLabel": "7 af 25 prøvespørgsmål" },
+    "2": { "name": "Vognbaner, møde og overhaling", "weightLabel": "7 af 25 prøvespørgsmål" },
+    "3": { "name": "Kryds, vigepligt og rundkørsler", "weightLabel": "5 af 25 prøvespørgsmål" },
+    "4": { "name": "Motorvej, parkering og mørke", "weightLabel": "6 af 25 prøvespørgsmål" }
+  },
+  "categoryLabels": {
+    "dkVehicle": "Bilen, udstyr og papirer",
+    "dkBehaviour": "Køretøjer, trafikanter og førerens tilstand",
+    "dkBasics": "Veje, grundregler og særlige risici",
+    "dkLanes": "Igangsætning, hastighed og vognbaneskift",
+    "dkPassing": "Passage, møde, afstand og overhaling",
+    "dkJunctions": "Kryds, vigepligt og rundkørsler",
+    "dkMotorway": "Motorvej, parkering, mørke og tunneler"
+  },
+  "copy": {
+    "guestPrompt": "for at gemme dine fremskridt til teoriprøven og se hvert spørgsmål, du svarer forkert på",
+    "trainingHeading": "Træn efter emne",
+    "trainingSub": "Fire træningssæt, der dækker hele undervisningsplanen for kategori B. Du får svar med det samme, og spørgsmål, du svarer forkert på, kommer igen, til du kan dem.",
+    "testsHeading": "Øveprøver · 25 spørgsmål som den rigtige prøve, 20 for at bestå",
+    "heroSubs": [
+      "Fire emner og otte prøver i fuld længde. Kryds og vigepligt vejer tungt.",
+      "Bliv færdig med hvert sæt, og tag så en prøve.",
+      "Du er halvvejs. Prøv en øveprøve.",
+      "Ret dine fejl, og tag prøven igen.",
+      "Alt er klaret. Book din teoriprøve."
+    ],
+    "sourceLine": "Bygger på Færdselsstyrelsens undervisningsplan for kategori B (2026). Egne spørgsmål; 25 pr. prøve og 20 for at bestå, som den rigtige prøves grænse på fem fejl."
+  }
+}

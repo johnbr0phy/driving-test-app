@@ -1,0 +1,36 @@
+{
+  "id": "semoto",
+  "stateCode": "SEMOTO",
+  "idBase": 23200,
+  "prefix": "SEMOTO-",
+  "slug": "/motorcykel-teori",
+  "landingPath": "/sv/motorcykel-teoriprov",
+  "dataFile": "data/sweden-motorcycle-theory-questions.json",
+  "language": "sv",
+  "locale": "sv-SE",
+  "name": "Teoriprov motorcykel A, A1, A2",
+  "shortName": "MC-teori",
+  "examLabel": "Kunskapsprov för motorcykel",
+  "fullName": "Kunskapsprov för körkortsbehörighet A1, A2 och A (motorcykel)",
+  "english": {
+    "name": "Sweden Motorcycle Theory Test (A, A1, A2)",
+    "shortName": "Swedish motorcycle theory test",
+    "fullName": "Swedish motorcycle licence knowledge test (kunskapsprov) for categories A1, A2 and A, in Swedish"
+  },
+  "icon": "bike",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 80,
+  "categories": [
+    {"key": "semoFordon", "label": "Motorcykelns teknik och kontroller", "perTest": 5, "pool": 20, "segment": "FOR"},
+    {"key": "semoManover", "label": "Bromsning, kurvtagning och balans", "perTest": 8, "pool": 32, "segment": "MAN"},
+    {"key": "semoPlacering", "label": "Placering, synbarhet och samspel", "perTest": 7, "pool": 28, "segment": "PLA"},
+    {"key": "semoRegler", "label": "Trafikregler för motorcykel", "perTest": 6, "pool": 24, "segment": "REG"},
+    {"key": "semoPassagerare", "label": "Passagerare, packning och släp", "perTest": 4, "pool": 16, "segment": "PAS"},
+    {"key": "semoBehorighet", "label": "Behörigheter och övningskörning", "perTest": 4, "pool": 16, "segment": "BEH"},
+    {"key": "semoVaglag", "label": "Väglag, väder, mörker och vilt", "perTest": 7, "pool": 28, "segment": "VAG"},
+    {"key": "semoPersonlig", "label": "Personliga förutsättningar och skydd", "perTest": 6, "pool": 24, "segment": "PER"},
+    {"key": "semoMiljo", "label": "Miljö", "perTest": 3, "pool": 12, "segment": "MIL"}
+  ],
+  "notes": "4 tests x 50 = 200, every item in exactly one test (pools exactly 4x each count), no spares. Real test (Trafikverket, checked 2026-11-06): 70 questions with one right answer, 5 trial questions not scored, max 65 points, 52 to pass (80%), 50 minutes, read aloud in Swedish; Trafikverket names five knowledge areas (fordonskännedom och manövrering, miljö, trafiksäkerhet, trafikregler, personliga förutsättningar) but publishes no weights, so the 9-category split is Tigertest's own. Tigertest's mock tests are 50 questions at 80% (40 of 50), same pace. Training: five topic sets 23201-23205 (Fordon+Manöver 52, Placering+Regler 52, Passagerare+Behörighet 32, Väglag 28, Personlig+Miljö 36) = 5 sets + 4 tests = 9 steps."
+}

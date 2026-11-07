@@ -1,0 +1,37 @@
+{
+  "id": "demotorrad",
+  "stateCode": "DEMOTORRAD",
+  "idBase": 22200,
+  "prefix": "DEMOT-",
+  "slug": "/motorrad-theorie",
+  "landingPath": "/de/motorrad-fuehrerschein-theorie-test",
+  "dataFile": "data/de-motorrad-questions.json",
+  "language": "de",
+  "locale": "de-DE",
+  "name": "Motorrad Führerschein Theorie Test Klasse A, A1, A2",
+  "shortName": "Motorrad Theorie",
+  "examLabel": "Theorieprüfung Klasse A",
+  "fullName": "Theoretische Fahrerlaubnisprüfung Klassen A, A1 und A2 (Motorrad)",
+  "english": {
+    "name": "Germany Motorcycle Theory Test (Class A, A1, A2)",
+    "shortName": "German motorcycle theory test",
+    "fullName": "German motorcycle licence theory test, classes A, A1 and A2 (Motorradführerschein), in German"
+  },
+  "icon": "bike",
+  "testCount": 7,
+  "questionsPerTest": 30,
+  "passPct": 93,
+  "categories": [
+    {"key": "demotGefahren", "label": "Gefahrenlehre", "perTest": 4, "pool": 28, "segment": "GEF", "part": "Grundstoff"},
+    {"key": "demotVerhalten", "label": "Verhalten im Verkehr", "perTest": 4, "pool": 28, "segment": "VER", "part": "Grundstoff"},
+    {"key": "demotVorfahrt", "label": "Vorfahrt und Vorrang", "perTest": 3, "pool": 21, "segment": "VOR", "part": "Grundstoff"},
+    {"key": "demotZeichen", "label": "Verkehrszeichen", "perTest": 2, "pool": 14, "segment": "VZ", "part": "Grundstoff"},
+    {"key": "demotUmwelt", "label": "Umweltschutz und Eignung", "perTest": 2, "pool": 14, "segment": "UE", "part": "Grundstoff"},
+    {"key": "demotFahrtechnik", "label": "Fahrtechnik: Bremsen und Kurven", "perTest": 5, "pool": 35, "segment": "FT", "part": "Zusatzstoff"},
+    {"key": "demotSchutz", "label": "Schutzkleidung und Sichtbarkeit", "perTest": 3, "pool": 21, "segment": "SCH", "part": "Zusatzstoff"},
+    {"key": "demotSozius", "label": "Beifahrer, Gepäck und Gruppe", "perTest": 3, "pool": 21, "segment": "SOZ", "part": "Zusatzstoff"},
+    {"key": "demotKlassen", "label": "Klassen A1, A2, A und B196", "perTest": 2, "pool": 14, "segment": "KL", "part": "Zusatzstoff"},
+    {"key": "demotTechnik", "label": "Motorradtechnik und Wartung", "perTest": 2, "pool": 14, "segment": "TEC", "part": "Zusatzstoff"}
+  ],
+  "notes": "7 tests x 30 = 210, every item used once in tests (pools exactly 7x each count). Each test is 15 Grundstoff (motorcycle-perspective) + 15 Zusatzstoff: the real first-licence test is 20 + 10 (TÜV NORD), the motorcycle part is weighted up on purpose (research note). Training: five topic sets 22201-22205 (Fahrtechnik 35; Schutz+Technik 35; Sozius+Klassen 35; Gefahren+Verhalten 56; Vorfahrt+Zeichen+Umwelt/Eignung 49) = 5 sets + 7 tests = 12 steps. passPct 93 = 28 of 30, as detheorie (point weighting not modelled)."
+}

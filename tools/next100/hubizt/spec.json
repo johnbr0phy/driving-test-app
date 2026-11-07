@@ -1,0 +1,35 @@
+{
+  "id": "hubizt",
+  "stateCode": "HUBIZT",
+  "idBase": 24700,
+  "prefix": "HUBIZT-",
+  "slug": "/biztositaskozvetitoi-vizsga",
+  "landingPath": "/hu/biztositaskozvetitoi-vizsga-teszt",
+  "dataFile": "data/hu-biztositaskozvetito-questions.json",
+  "language": "hu",
+  "locale": "hu-HU",
+  "name": "Biztosításközvetítői vizsga teszt",
+  "shortName": "Biztosításközvetítői vizsga",
+  "examLabel": "Függő biztosításközvetítői hatósági vizsga",
+  "fullName": "Függő biztosításközvetítői hatósági vizsga (Magyar Nemzeti Bank)",
+  "english": {
+    "name": "Hungary Insurance Intermediary Exam (MNB)",
+    "shortName": "Hungarian insurance intermediary exam",
+    "fullName": "Hungarian insurance intermediary licensing exam (biztosításközvetítői hatósági vizsga, Magyar Nemzeti Bank), dependent intermediary level, in Hungarian"
+  },
+  "icon": "umbrella",
+  "testCount": 5,
+  "questionsPerTest": 40,
+  "passPct": 75,
+  "categories": [
+    {"key": "hubiztPenzpiac", "label": "Pénzügyi piacok szereplői", "perTest": 5, "pool": 25, "segment": "PP"},
+    {"key": "hubiztKozvetito", "label": "Biztosítási piac szereplői és a közvetítők", "perTest": 6, "pool": 30, "segment": "KOZ"},
+    {"key": "hubiztHatosag", "label": "Hatóságok, adatvédelem, pénzmosás és fogyasztóvédelem", "perTest": 6, "pool": 30, "segment": "HAT"},
+    {"key": "hubiztKockazat", "label": "Kockázat, kár és kockázatmegosztás", "perTest": 6, "pool": 30, "segment": "KOC"},
+    {"key": "hubiztDij", "label": "Díj, tartalékok, kárrendezés és pénzügyi számítások", "perTest": 5, "pool": 25, "segment": "DIJ"},
+    {"key": "hubiztSzerzodes", "label": "A biztosítási szerződés általános szabályai", "perTest": 5, "pool": 25, "segment": "SZE"},
+    {"key": "hubiztMegszunes", "label": "A szerződés megszűnése", "perTest": 3, "pool": 15, "segment": "MEG"},
+    {"key": "hubiztTipusok", "label": "Vagyon-, felelősség-, élet- és balesetbiztosítás", "perTest": 4, "pool": 20, "segment": "TIP"}
+  ],
+  "notes": "Models the dependent intermediary exam (függő biztosításközvetítői hatósági vizsga, annex 2 of 40/2015 NGM decree): 5 tests x 40 = 200, every item in exactly one test (pools exactly 5x each count). Subject 1 (piac szereplői) 17, subject 2 (alapfogalmak) 11, subject 3 (szerződésjog) 12 per test; split is Tigertest's (MNB publishes none). passPct 75 = 30 of 40, the real dependent pass line. Four topic sets 24701-24704 + 5 tests = 9 dashboard steps. Subject 4 (független biztosításközvetítői alapismeretek, alkusz and differential exams) is not modelled."
+}

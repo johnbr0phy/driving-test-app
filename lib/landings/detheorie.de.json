@@ -11,7 +11,7 @@
   "subtitle": "210 eigene Übungsfragen auf Deutsch zu allen Themen der Theorieprüfung, jede Antwort erklärt. Sieben Testbögen mit 30 Fragen wie in der echten Prüfung. Fürs Handy gemacht, ohne Anmeldung.",
   "facts": {
     "h2": "Die Theorieprüfung Klasse B auf einen Blick",
-    "answer": "Bei der Ersterteilung der Klasse B beantwortest du in einer TÜV- oder DEKRA-Prüfstelle 30 Fragen am Bildschirm: 20 aus dem Grundstoff, der für alle Klassen gilt, und 10 aus dem Zusatzstoff für Klasse B. Jede Frage hat je nach Bedeutung für die Verkehrssicherheit 2 bis 5 Fehlerpunkte, zusammen 110 Punkte. Du bestehst mit höchstens 10 Fehlerpunkten, aber nicht, wenn du zwei Fragen mit 5 Punkten falsch beantwortest. Eine feste Zeitbegrenzung gibt es nicht, als Richtwert gelten 45 Minuten. Die Prüfung gibt es auf Deutsch und in 12 Fremdsprachen, darunter Englisch, Türkisch und Arabisch.",
+    "answer": "Bei der Ersterteilung der Klasse B beantwortest du in einer TÜV- oder DEKRA-Prüfstelle 30 Fragen am Bildschirm: 20 aus dem Grundstoff, der für alle Klassen gilt, und 10 aus dem Zusatzstoff für Klasse B. Jede Frage hat je nach Bedeutung für die Verkehrssicherheit 2 bis 5 Fehlerpunkte, zusammen 110 Punkte. Du bestehst mit höchstens 10 Fehlerpunkten, aber nicht, wenn du zwei Fragen mit 5 Punkten falsch beantwortest. Eine feste Zeitbegrenzung gibt es nicht, als Richtwert gelten 45 Minuten. Die Prüfung gibt es auf Deutsch und in mehreren Fremdsprachen, darunter Englisch, Türkisch und Arabisch.",
     "tigertest": "Tigertest hat 210 eigene Übungsfragen auf Deutsch zu den Themen des amtlichen Fragenkatalogs, alle kostenlos und ohne Anmeldung. Die Fragen sind selbst geschrieben, nicht aus dem amtlichen Katalog kopiert.",
     "rows": [
       {
@@ -32,7 +32,7 @@
       },
       {
         "label": "Sprachen",
-        "value": "Deutsch und 12 Fremdsprachen"
+        "value": "Deutsch und mehrere Fremdsprachen"
       },
       {
         "label": "Prüfstelle",

@@ -1,0 +1,38 @@
+{
+  "id": "hugki",
+  "stateCode": "HUGKI",
+  "idBase": 24500,
+  "prefix": "HUGKI-",
+  "slug": "/hungary-gki",
+  "landingPath": "/hungary-driver-cpc-gki-test",
+  "dataFile": "data/hungary-gki-questions.json",
+  "name": "Hungary GKI (Driver CPC) Theory Practice Test",
+  "shortName": "Hungary GKI test",
+  "examLabel": "Hungary GKI theory exam",
+  "fullName": "Hungary GKI (Driver CPC) theory exams, truck and bus (Gépjárművezetői Képesítési Igazolvány)",
+  "icon": "truck",
+  "region": "HU",
+  "testCount": 4,
+  "questionsPerTest": 40,
+  "passPct": 75,
+  "categories": [
+    {"key": "hugkiEco", "label": "Eco-Driving, Engine & Fuel", "perTest": 4, "pool": 20, "segment": "ECO", "subject": "BSZAV"},
+    {"key": "hugkiBrakes", "label": "Brakes & Safety Systems", "perTest": 4, "pool": 20, "segment": "BRK", "subject": "BSZAV"},
+    {"key": "hugkiLoads", "label": "Loads, Stability & Securing", "perTest": 3, "pool": 16, "segment": "LOD", "subject": "BSZAV"},
+    {"key": "hugkiPassengers", "label": "Buses & Passengers", "perTest": 3, "pool": 16, "segment": "PAS", "subject": "BSZAV"},
+    {"key": "hugkiHours", "label": "Driving Times, Rest & Working Time", "perTest": 5, "pool": 24, "segment": "HRS", "subject": "EA"},
+    {"key": "hugkiTacho", "label": "Tachographs", "perTest": 3, "pool": 16, "segment": "TAC", "subject": "EA"},
+    {"key": "hugkiLaw", "label": "Hungarian Rules, Permits & Documents", "perTest": 5, "pool": 24, "segment": "LAW", "subject": "EA"},
+    {"key": "hugkiHealth", "label": "Health, Fitness & Fatigue", "perTest": 5, "pool": 24, "segment": "HLT", "subject": "EKKKBSZL"},
+    {"key": "hugkiEmergency", "label": "Emergencies, Crime & Security", "perTest": 4, "pool": 20, "segment": "EMG", "subject": "EKKKBSZL"},
+    {"key": "hugkiBusiness", "label": "Transport Business, Service & Logistics", "perTest": 4, "pool": 20, "segment": "BUS", "subject": "EKKKBSZL"}
+  ],
+  "notes": "Real exam: three computer-based theory subjects (BSZAVSZ, EASZ, EKKKBSZLSZ), each 40 questions in 40 minutes, 30 of 40 points to pass, plus a written case study (ET) and practical exams (not modelled). Tigertest: four mixed 40-question tests (14 + 13 + 13 by subject, Tigertest's split) with passPct 75 = 30 of 40. Pools are 4x each count plus 4 training-only spares (40 in all). Dashboard = 5 sets + 4 tests = 9 steps.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 24501, "name": "Eco-Driving & Brakes", "categories": ["hugkiEco", "hugkiBrakes"], "size": 40},
+    {"setNumber": 2, "id": 24502, "name": "Loads & Passengers", "categories": ["hugkiLoads", "hugkiPassengers"], "size": 32},
+    {"setNumber": 3, "id": 24503, "name": "Driving Times & Tachographs", "categories": ["hugkiHours", "hugkiTacho"], "size": 40},
+    {"setNumber": 4, "id": 24504, "name": "Rules, Permits & the Business", "categories": ["hugkiLaw", "hugkiBusiness"], "size": 44},
+    {"setNumber": 5, "id": 24505, "name": "Health, Safety & Emergencies", "categories": ["hugkiHealth", "hugkiEmergency"], "size": 44}
+  ]
+}

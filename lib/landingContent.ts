@@ -33,11 +33,83 @@ export interface TranslatedLandingContent {
 import detheorieDe from "@/lib/landings/detheorie.de.json";
 import esdgtEs from "@/lib/landings/esdgt.es.json";
 import ptimtPt from "@/lib/landings/ptimt.pt.json";
+import escapcondEs from "@/lib/landings/escapcond.es.json";
+import espoliciaEs from "@/lib/landings/espolicia.es.json";
+import esguardiaEs from "@/lib/landings/esguardia.es.json";
+import esvigilanteEs from "@/lib/landings/esvigilante.es.json";
+import demotorradDe from "@/lib/landings/demotorrad.de.json";
+import deaevoDe from "@/lib/landings/deaevo.de.json";
+import de34aDe from "@/lib/landings/de34a.de.json";
+import deheilprDe from "@/lib/landings/deheilpr.de.json";
+import ptcamPt from "@/lib/landings/ptcam.pt.json";
+import pttvdePt from "@/lib/landings/pttvde.pt.json";
+import ptvigilPt from "@/lib/landings/ptvigil.pt.json";
+import setrafikSv from "@/lib/landings/setrafik.sv.json";
+import semotoSv from "@/lib/landings/semoto.sv.json";
+import sejaktSv from "@/lib/landings/sejakt.sv.json";
+import semedbSv from "@/lib/landings/semedb.sv.json";
+import dkteoriDa from "@/lib/landings/dkteori.da.json";
+import dkindfoedDa from "@/lib/landings/dkindfoed.da.json";
+import dkmedborgerDa from "@/lib/landings/dkmedborger.da.json";
+import dkjagtDa from "@/lib/landings/dkjagt.da.json";
+import fitheoryFi from "@/lib/landings/fitheory.fi.json";
+import fihuntFi from "@/lib/landings/fihunt.fi.json";
+import hukreszHu from "@/lib/landings/hukresz.hu.json";
+import huelsosegHu from "@/lib/landings/huelsoseg.hu.json";
+import hubiztHu from "@/lib/landings/hubizt.hu.json";
+import rodrpcivRo from "@/lib/landings/rodrpciv.ro.json";
+import grdrivingEl from "@/lib/landings/grdriving.el.json";
+import grcitizenEl from "@/lib/landings/grcitizen.el.json";
+import bedrivingNl from "@/lib/landings/bedriving.nl.json";
+import bedrivingFr from "@/lib/landings/bedriving.fr.json";
+import bevrachtNl from "@/lib/landings/bevracht.nl.json";
+import betoelatingNl from "@/lib/landings/betoelating.nl.json";
+import befsmavzNl from "@/lib/landings/befsmavz.nl.json";
+import grsecurityEl from "@/lib/landings/grsecurity.el.json";
+import roadmedRo from "@/lib/landings/roadmed.ro.json";
+import rorezidRo from "@/lib/landings/rorezid.ro.json";
+import sehpSv from "@/lib/landings/sehp.sv.json";
 
 const LANDINGS: Record<string, TranslatedLandingContent> = {
   "detheorie.de": detheorieDe as TranslatedLandingContent,
   "esdgt.es": esdgtEs as TranslatedLandingContent,
   "ptimt.pt": ptimtPt as TranslatedLandingContent,
+  "escapcond.es": escapcondEs as TranslatedLandingContent,
+  "espolicia.es": espoliciaEs as TranslatedLandingContent,
+  "esguardia.es": esguardiaEs as TranslatedLandingContent,
+  "esvigilante.es": esvigilanteEs as TranslatedLandingContent,
+  "demotorrad.de": demotorradDe as TranslatedLandingContent,
+  "deaevo.de": deaevoDe as TranslatedLandingContent,
+  "de34a.de": de34aDe as TranslatedLandingContent,
+  "deheilpr.de": deheilprDe as TranslatedLandingContent,
+  "ptcam.pt": ptcamPt as TranslatedLandingContent,
+  "pttvde.pt": pttvdePt as TranslatedLandingContent,
+  "ptvigil.pt": ptvigilPt as TranslatedLandingContent,
+  "setrafik.sv": setrafikSv as TranslatedLandingContent,
+  "semoto.sv": semotoSv as TranslatedLandingContent,
+  "sejakt.sv": sejaktSv as TranslatedLandingContent,
+  "semedb.sv": semedbSv as TranslatedLandingContent,
+  "dkteori.da": dkteoriDa as TranslatedLandingContent,
+  "dkindfoed.da": dkindfoedDa as TranslatedLandingContent,
+  "dkmedborger.da": dkmedborgerDa as TranslatedLandingContent,
+  "dkjagt.da": dkjagtDa as TranslatedLandingContent,
+  "fitheory.fi": fitheoryFi as TranslatedLandingContent,
+  "fihunt.fi": fihuntFi as TranslatedLandingContent,
+  "hukresz.hu": hukreszHu as TranslatedLandingContent,
+  "huelsoseg.hu": huelsosegHu as TranslatedLandingContent,
+  "hubizt.hu": hubiztHu as TranslatedLandingContent,
+  "rodrpciv.ro": rodrpcivRo as TranslatedLandingContent,
+  "grdriving.el": grdrivingEl as TranslatedLandingContent,
+  "grcitizen.el": grcitizenEl as TranslatedLandingContent,
+  "bedriving.nl": bedrivingNl as TranslatedLandingContent,
+  "bedriving.fr": bedrivingFr as TranslatedLandingContent,
+  "bevracht.nl": bevrachtNl as TranslatedLandingContent,
+  "betoelating.nl": betoelatingNl as TranslatedLandingContent,
+  "befsmavz.nl": befsmavzNl as TranslatedLandingContent,
+  "grsecurity.el": grsecurityEl as TranslatedLandingContent,
+  "roadmed.ro": roadmedRo as TranslatedLandingContent,
+  "rorezid.ro": rorezidRo as TranslatedLandingContent,
+  "sehp.sv": sehpSv as TranslatedLandingContent,
 };
 
 /** The landing content of `examId` in `lang`, if one is registered. */

@@ -1,0 +1,64 @@
+{
+  "metaTitle": "Högskoleprovet övningsprov 2026 - Gratis med facit",
+  "metaDescription": "Gratis övningsprov för högskoleprovet: 218 egna uppgifter i ORD, LÄS, MEK, ELF, XYZ, KVA, NOG och DTK med förklaringar och ett uppskattat resultat från 0,0 till 2,0. Ingen inloggning.",
+  "keywords": "högskoleprovet, högskoleprovet övningsprov, öva högskoleprovet, högskoleprov gratis, ORD övning, KVA, NOG, DTK, XYZ, MEK, LÄS, ELF, normerad poäng, högskoleprovet 2027",
+  "breadcrumb": { "home": "Start", "allTests": "Alla prov", "current": "Högskoleprovet" },
+  "h1": "Högskoleprovet övningsprov 2026",
+  "subtitle": "218 egna uppgifter i alla åtta delprov, med en förklaring till varje svar och ett uppskattat resultat från 0,0 till 2,0. Gjort för mobilen, ingen inloggning.",
+  "facts": {
+    "h2": "Högskoleprovet i korthet",
+    "answer": "Högskoleprovet består av fem provpass med 40 uppgifter vardera, och varje provpass tar 55 minuter. Två provpass är verbala, två är kvantitativa och ett är ett utprövningspass som inte räknas, så 160 uppgifter ger poäng. Den verbala delen har delproven ORD, LÄS, MEK och ELF, där ELF är på engelska. Den kvantitativa delen har XYZ, KVA, NOG och DTK. Alla uppgifter är flervalsuppgifter och fel svar ger inga minuspoäng. De två delarna normeras var för sig till en skala från 0,00 till 2,00, och ditt resultat är medelvärdet av dem, angivet i steg om 0,05. Resultatet gäller i åtta år och det bästa giltiga resultatet används i urvalet. Provet ges på våren och hösten.",
+    "tigertest": "Tigertest har 218 egna övningsuppgifter på svenska (ELF på engelska) skrivna efter beskrivningen av provet, gratis och utan inloggning. Uppgifterna är inte kopierade från tidigare högskoleprov.",
+    "rows": [
+      { "label": "Provpass", "value": "5 à 55 minuter, varav 4 räknas" },
+      { "label": "Uppgifter som räknas", "value": "160 (80 verbala, 80 kvantitativa)" },
+      { "label": "Verbal del", "value": "ORD, LÄS, MEK, ELF (10 uppgifter vardera per provpass)" },
+      { "label": "Kvantitativ del", "value": "XYZ 12, KVA 10, NOG 6, DTK 12 per provpass" },
+      { "label": "Poäng", "value": "Rätt svar 1 poäng, inga minuspoäng" },
+      { "label": "Resultat", "value": "Normerat 0,00 till 2,00, medelvärdet av delarna" },
+      { "label": "Giltighet", "value": "8 år, det bästa resultatet används" },
+      { "label": "Tigertest", "value": "2 övningsprov à 80 uppgifter, 1 tim 50 min" }
+    ],
+    "footnote": "Enligt studera.nu (UHR) och provhäftena från provet den 18 oktober 2026, kontrollerat i november 2026. Tigertest är inte knutet till UHR eller universiteten som ger provet. Kontrollera datum och anmälan på studera.nu:",
+    "source": { "name": "studera.nu: Vad är högskoleprovet?", "url": "https://www.studera.nu/hogskoleprov/om/intro/" }
+  },
+  "howItWorks": {
+    "h2": "Så fungerar det",
+    "cards": [
+      { "h3": "Öva ett delprov i taget", "p": "Åtta övningar, en för varje delprov: ORD, LÄS, MEK och ELF i den verbala delen, XYZ, KVA, NOG och DTK i den kvantitativa. Uppgifter du svarar fel på kommer tillbaka tills du kan dem." },
+      { "h3": "Hela övningsprov", "p": "Två övningsprov med ett verbalt och ett kvantitativt provpass, 40 uppgifter på 55 minuter vardera, i samma ordning som på provet. Övningsprov 2 är aldrig med i övningarna, så det mäter hur redo du är." }
+    ]
+  },
+  "topics": {
+    "h2": "Alla åtta delprov",
+    "p": "Varje övningsprov har samma uppgifter per delprov som ett riktigt provpass. Diagram och kartor i DTK visas som tabeller med en mening om vad figuren visar. Resultatet uppskattas för varje del och som medelvärde, på samma skala som det riktiga provet.",
+    "items": [
+      "ORD: ordförståelse, 10 uppgifter",
+      "LÄS: svensk läsförståelse, 10 uppgifter",
+      "MEK: meningskomplettering, 10 uppgifter",
+      "ELF: engelsk läsförståelse, 10 uppgifter",
+      "XYZ: matematisk problemlösning, 12 uppgifter",
+      "KVA: kvantitativa jämförelser, 10 uppgifter",
+      "NOG: kvantitativa resonemang, 6 uppgifter",
+      "DTK: diagram, tabeller och kartor, 12 uppgifter"
+    ]
+  },
+  "howToPass": {
+    "h2": "Så höjer du ditt resultat",
+    "steps": [
+      { "h3": "1. Planera tiden per delprov", "p": "Provpasset har en rekommenderad tid för varje delprov. ORD går snabbt, så spara minuter till LÄS och ELF. I den kvantitativa delen tar DTK längst tid. Svara på alla uppgifter, eftersom fel svar inte ger minuspoäng." },
+      { "h3": "2. Lär dig KVA och NOG utantill", "p": "Svarsalternativen i KVA och NOG är alltid desamma. När du kan dem behöver du inte läsa dem på provet. I KVA, pröva negativa tal, bråk och noll innan du väljer. I NOG behöver du inte räkna ut svaret, bara avgöra om informationen räcker." },
+      { "h3": "3. Läs efter signalorden", "p": "I MEK och LÄS visar ord som men, trots att, eftersom och därför hur meningarna hänger ihop. Förutsäg ordet i luckan innan du tittar på alternativen, och leta i texten efter stöd för ditt svar." },
+      { "h3": "4. Bygg ordförrådet varje dag", "p": "ORD och ELF belönar den som läser mycket. Läs svensk och engelsk sakprosa, slå upp ord du inte kan och öva ORD regelbundet. Tigertest visar hur det går i varje delprov, så du vet vad du ska öva på inför nästa övningsprov." }
+    ]
+  },
+  "faqTitle": "Vanliga frågor om högskoleprovet",
+  "faqs": [
+    { "q": "Hur är högskoleprovet upplagt?", "a": "Provet har fem provpass med 40 uppgifter vardera, 55 minuter per provpass. Två provpass är verbala med ORD, LÄS, MEK och ELF, två är kvantitativa med XYZ, KVA, NOG och DTK, och ett är ett utprövningspass som inte räknas. Du vet inte vilket pass som är utprövningspasset, så gör ditt bästa på alla." },
+    { "q": "Hur räknas resultatet på högskoleprovet?", "a": "Varje rätt svar ger en råpoäng och fel svar ger inga minuspoäng. Den verbala och den kvantitativa delen normeras var för sig till en skala från 0,00 till 2,00, och ditt resultat är medelvärdet av de två, angivet i steg om 0,05. Hur många råpoäng som krävs för ett visst resultat beror på hur svårt provet var, så normeringen görs om vid varje provtillfälle." },
+    { "q": "Hur länge gäller resultatet?", "a": "Ett resultat gäller i åtta år. Om du har flera giltiga resultat används det bästa, så du kan skriva provet igen för att försöka höja det." },
+    { "q": "Hur exakt är Tigertests uppskattade resultat?", "a": "Det är en uppskattning. Varje övningsprov har ett verbalt och ett kvantitativt provpass, hälften av provets 160 uppgifter, och resultatet räknas fram från andelen rätt med en typisk omräkning. Det är ingen normeringstabell från UHR, och UHR påpekar att äldre normeringstabeller inte kan förutsäga ett resultat." },
+    { "q": "Är övningsproven gratis?", "a": "Ja. Båda övningsproven och alla åtta övningar är gratis, utan inloggning. Uppgifterna är egna och skrivna efter beskrivningen av provet, inte kopierade från tidigare högskoleprov. Skapa ett gratis konto om du vill spara dina framsteg mellan mobil och dator." }
+  ],
+  "finalCta": { "h2": "Redo för högskoleprovet?", "p": "Gratis att börja. Ingen inloggning. 218 uppgifter i alla åtta delprov." }
+}

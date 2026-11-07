@@ -17,6 +17,28 @@ import { trackTeachNudge } from "@/lib/teachTracking";
 
 // Families by id; state versions count as their family (variantOf).
 const TEACHER_LED = new Set([
+  // Spain: academias de oposiciones and accredited security training centres
+  "espolicia", "esguardia", "esvigilante",
+  // Germany: AdA courses, 34a preparation courses and Heilpraktikerschulen
+  "deaevo", "de34a", "deheilpr",
+  // Portugal: TVDE driver initial courses and private security training providers
+  "pttvde", "ptvigil",
+  // Sweden: jägarexamen courses, SFI and samhällsorientering classes, högskoleprovet courses
+  "sejakt", "semedb", "sehp",
+  // Denmark: jagttegnskurser, and language school (sprogcenter) courses for the citizenship and residence tests
+  "dkjagt", "dkindfoed", "dkmedborger",
+  // Finland: Hygiene Passport courses, metsästäjävalmennuskurssit
+  "fihygiene", "fihunt",
+  // Hungary: Red Cross and driving school first aid courses, hatósági képzés courses for insurance intermediaries
+  "huelsoseg", "hubizt",
+  // Romania: meditații and UMF admission prep courses, rezidențiat prep courses
+  "roadmed", "rorezid",
+  // Greece: KEMEA-contracted training centres for private security personnel
+  "grsecurity",
+  // Belgium: toelatingsexamen preparation courses, insurer and bank academies
+  "betoelating", "befsmavz",
+  // Malta: approved taxi training providers and private guard course providers
+  "mttaxi", "mtguard",
   // Healthcare programs
   "cst", "crcst", "htl", "cna", "ptcb", "phleb", "ccma", "cet", "danb", "cpr", "nclex", "nclexpn", "emt", "paramedic", "teas", "hesi", "vtne",
   "ukfaw", "ukcare",

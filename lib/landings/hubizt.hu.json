@@ -1,0 +1,123 @@
+{
+  "metaTitle": "Biztosításközvetítői vizsga teszt 2026 - Ingyenes gyakorlás",
+  "metaDescription": "Ingyenes gyakorlás az MNB függő biztosításközvetítői hatósági vizsgájára: 200 saját kérdés magyarul a pénzügyi és biztosítási piacról, a biztosítási alapfogalmakról és a Ptk. biztosítási szerződésjogáról, minden válasz elmagyarázva. Öt 40 kérdéses teszt, regisztráció nélkül.",
+  "keywords": "biztosításközvetítői vizsga, biztosításközvetítői hatósági vizsga, MNB hatósági vizsga, függő biztosításközvetítő vizsga, biztosítási ügynök vizsga, biztosításközvetítői vizsga kérdések, hatósági vizsga teszt, biztosítási szerződésjog Ptk., ügynök vizsga gyakorlás 2026",
+  "breadcrumb": {
+    "home": "Kezdőlap",
+    "allTests": "Összes teszt",
+    "current": "Biztosításközvetítői vizsga teszt"
+  },
+  "h1": "Biztosításközvetítői vizsga teszt 2026",
+  "subtitle": "200 saját gyakorlókérdés magyarul az MNB függő biztosításközvetítői hatósági vizsgájához, minden válasz elmagyarázva. Pénzügyi és biztosítási piac, biztosításszakmai alapfogalmak és biztosítási szerződésjog. Mobilra készült, regisztráció nélkül.",
+  "facts": {
+    "h2": "A biztosításközvetítői hatósági vizsga röviden",
+    "answer": "Biztosítást Magyarországon csak az közvetíthet, aki teljesíti a Bit. szakmai követelményeit, ennek egyik útja a Magyar Nemzeti Bank hatósági vizsgája, amelyet egy hatósági képzést nyújtó képző szervnél végzett felkészítés után teszel le. A vizsga magyar nyelvű, feleletválasztós számítógépes teszt, amelyet a képző szerv vizsgatermében vagy online, a saját számítógépeden írhatsz meg. A függő biztosításközvetítői (ügynöki és többes ügynöki) vizsga 40 kérdés 40 perc alatt, és 30 ponttól sikeres. A független biztosításközvetítői (alkuszi) vizsga 60 kérdés 60 perc alatt, 45 ponttól sikeres, a független különbözeti vizsga 20 kérdés 20 perc alatt, 15 ponttól. A tesztsort az MNB a saját kérdésbankjából állítja össze; a kérdésbankot legutóbb 2026 júniusától módosította.",
+    "tigertest": "A Tigertestnél 200 saját gyakorlókérdés van magyarul a függő biztosításközvetítői vizsga három vizsgatárgyához, a 40/2015. (XII. 30.) NGM rendelet követelményei, a Bit. és a Ptk. alapján, ingyen és regisztráció nélkül. A kérdések saját írásúak, nem az MNB kérdésbankjából valók, ezért a hivatalos kérdésbankot is érdemes átnézned.",
+    "rows": [
+      {
+        "label": "Hatóság",
+        "value": "Magyar Nemzeti Bank (MNB)"
+      },
+      {
+        "label": "Függő közvetítő",
+        "value": "40 kérdés, 40 perc, 30 ponttól sikeres"
+      },
+      {
+        "label": "Független közvetítő",
+        "value": "60 kérdés, 60 perc, 45 ponttól sikeres"
+      },
+      {
+        "label": "Különbözeti vizsga",
+        "value": "20 kérdés, 20 perc, 15 ponttól sikeres"
+      },
+      {
+        "label": "Forma",
+        "value": "Feleletválasztós számítógépes teszt, vizsgateremben vagy online"
+      },
+      {
+        "label": "Nyelv",
+        "value": "Magyar"
+      }
+    ],
+    "footnote": "Az MNB Vizsgaszabályzata (hatályos 2025. június 12-től), a 40/2015. (XII. 30.) NGM rendelet 2. és 3. melléklete és az MNB 2026. májusi tájékoztatója alapján, 2026. novemberi állapot. A Tigertest nem áll kapcsolatban az MNB-vel, képző szervvel vagy biztosítóval. A pontos szabályokat ellenőrizd itt:",
+    "source": {
+      "name": "MNB: Vizsgaszabályzat a hatósági vizsgákhoz",
+      "url": "https://www.mnb.hu/letoltes/vizsgaszabalyzat.pdf"
+    }
+  },
+  "howItWorks": {
+    "h2": "Így működik",
+    "cards": [
+      {
+        "h3": "Előbb gyakorolj, aztán tesztelj",
+        "p": "Négy témakörös gyakorlósor: pénzügyi piac és közvetítők, hatóságok és fogyasztóvédelem, biztosítási alapfogalmak, valamint biztosítási szerződésjog. Azonnal látod, jó-e a válaszod, és a rossz válaszaid visszatérnek, amíg biztosan nem tudod őket."
+      },
+      {
+        "h3": "Öt 40 kérdéses teszt",
+        "p": "Öt teszt, mindegyik 40 kérdéssel, mint a függő biztosításközvetítői vizsga, és mindhárom vizsgatárgyból vegyesen. A teszt itt is 30 jó választól, vagyis 75 százaléktól sikeres."
+      }
+    ]
+  },
+  "topics": {
+    "h2": "A vizsga minden témaköre",
+    "p": "A vizsgatárgyakat a 40/2015. (XII. 30.) NGM rendelet 2. melléklete határozza meg. Minden teszt mindhárom vizsgatárgyból tartalmaz kérdéseket; a témakörönkénti arány a Tigertest saját becslése.",
+    "items": [
+      "Pénzügyi piacok szereplői: bankrendszer, értékpapírok, pénztárak (5 a 40-ből)",
+      "Biztosítási piac szereplői: biztosítók, ügynök, többes ügynök, alkusz, MABISZ (6 a 40-ből)",
+      "Hatóságok: MNB, GVH, NAIH, biztosítási titok, pénzmosás, békéltető testület (6 a 40-ből)",
+      "Kockázat, kár, kockázatkezelés, biztosíthatóság, viszontbiztosítás (6 a 40-ből)",
+      "Díj, engedmények, tartalékok, kárrendezés, kamatszámítás (5 a 40-ből)",
+      "Biztosítási szerződés: alapelvek, szereplők, megkötés, közlési kötelezettség (5 a 40-ből)",
+      "A szerződés megszűnése: díjnemfizetés, felmondás, érdekmúlás, regressz (3 a 40-ből)",
+      "Vagyon-, felelősség-, élet- és balesetbiztosítás, KGFB (4 a 40-ből)"
+    ]
+  },
+  "howToPass": {
+    "h2": "Így teheted le a hatósági vizsgát",
+    "steps": [
+      {
+        "h3": "1. Tanuld meg a szereplőket",
+        "p": "Az ügynök egy biztosító vagy több biztosító nem versengő termékeit közvetíti, a többes ügynök versengő termékeket, az alkusz pedig az ügyfél megbízásából jár el. Ebből következik, ki felel a kárért és kinek kell felelősségbiztosítás."
+      },
+      {
+        "h3": "2. Jegyezd meg a Ptk. határidőit",
+        "p": "15 és 60 nap az ajánlati kötöttség, 90 nap az előzetes fedezetvállalás, 30 nap a póthatáridő, 120 nap a helyreállítás, és életbiztosításnál öt év után a közlési kötelezettség megsértése már nem mentesíti a biztosítót. Ezek a számok gyakran visszatérnek."
+      },
+      {
+        "h3": "3. Olvasd el figyelmesen a kérdést",
+        "p": "A vizsgán egy kérdésre adott válasz továbblépés után már nem módosítható, ezért csak akkor jelölj, ha biztos vagy benne. Figyelj az olyan szavakra, mint csak, mindig és kizárólag."
+      },
+      {
+        "h3": "4. Ismételd a hibáidat",
+        "p": "A Tigertest megjegyzi, melyik kérdést rontottad el, és újra eléd teszi. Ha a gyakorlósorok zöldek, írd meg a teszteket, majd nézd át az MNB nyilvános kérdésbankját is."
+      }
+    ]
+  },
+  "faqTitle": "Gyakori kérdések a biztosításközvetítői vizsgáról",
+  "faqs": [
+    {
+      "q": "Hány kérdésből áll a függő biztosításközvetítői hatósági vizsga?",
+      "a": "Az MNB Vizsgaszabályzata szerint a függő biztosításközvetítői vizsga 40 kérdésből áll, a megoldására 40 perc jut, és 30 ponttól sikeres. A független biztosításközvetítői vizsga 60 kérdés 60 perc alatt, 45 ponttól sikeres."
+    },
+    {
+      "q": "Hol és hogyan lehet letenni a vizsgát?",
+      "a": "A hatósági vizsgát egy MNB által nyilvántartott képző szerv szervezi a hatósági képzés után. Megírhatod a képző szerv vizsgatermében vagy online, a saját számítógépeden kamerával és hangfelvétellel. A vizsga magyar nyelvű, feleletválasztós számítógépes teszt."
+    },
+    {
+      "q": "Milyen témakörökből kérdeznek?",
+      "a": "A függő biztosításközvetítői vizsga három vizsgatárgya a pénzügyi és biztosítási piac szereplői, a biztosításszakmai alapfogalmak és a biztosítási szerződésjog. A független vizsgán ehhez jön a független biztosításközvetítői alapismeretek vizsgatárgy."
+    },
+    {
+      "q": "Mit nem tartalmaz a Tigertest gyakorlása?",
+      "a": "A kérdések nem az MNB kérdésbankjából valók, hanem saját írásúak, a rendelet követelményei és a hatályos jogszabályok alapján. A független biztosításközvetítői alapismeretek vizsgatárgyat sem dolgozzák fel. Minden kérdésnek négy válaszlehetősége és egy helyes válasza van."
+    },
+    {
+      "q": "Ingyenes a Tigertest biztosításközvetítői vizsga tesztje?",
+      "a": "Igen. Mind a négy gyakorlósor és az öt teszt ingyenes, regisztráció nélkül használható. Ingyenes fiókkal a haladásodat minden eszközödön elmented."
+    }
+  ],
+  "finalCta": {
+    "h2": "Készen állsz a hatósági vizsgára?",
+    "p": "Kezdd el ingyen, regisztráció nélkül. 200 kérdés magyarul a függő biztosításközvetítői vizsga mindhárom vizsgatárgyából."
+  }
+}

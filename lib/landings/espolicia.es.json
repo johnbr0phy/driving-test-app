@@ -1,0 +1,107 @@
+{
+  "metaTitle": "Test Oposiciones Policía Nacional 2026 - Escala Básica Gratis",
+  "metaDescription": "Test gratis para la prueba de conocimientos de la Policía Nacional, Escala Básica: 200 preguntas originales sobre los 45 temas del temario, con explicación. Cuatro tests de 50 preguntas y seis bloques por materias. Sin registro.",
+  "keywords": "test policía nacional, oposiciones policía nacional, test escala básica policía nacional, test oposiciones policía nacional 2026, temario policía nacional test, preguntas oposición policía nacional, prueba de conocimientos policía nacional, test policía nacional gratis, examen policía nacional",
+  "breadcrumb": {
+    "home": "Inicio",
+    "allTests": "Todos los tests",
+    "current": "Test Policía Nacional, Escala Básica"
+  },
+  "h1": "Test Oposiciones Policía Nacional 2026 Gratis",
+  "subtitle": "200 preguntas originales sobre los 45 temas de la prueba de conocimientos de la Escala Básica: Constitución, Derecho Penal y Procesal, extranjería, seguridad ciudadana, ciencias sociales, ortografía, informática, armas y vehículos prioritarios. Cuatro tests de 50 preguntas con explicación. Pensado para el móvil. Sin registro.",
+  "facts": {
+    "h2": "La prueba de conocimientos de la Policía Nacional en resumen",
+    "answer": "La prueba de conocimientos es la primera de la oposición a la Escala Básica, categoría de Policía, de la Policía Nacional. Según la convocatoria de 2026 (BOE de 10 de julio de 2026), consiste en responder por escrito en 50 minutos a un cuestionario de 100 preguntas con tres respuestas posibles, de las que solo una es correcta, sobre el temario de 45 temas. Cada error resta medio acierto y las preguntas en blanco no puntúan; la nota va de 0 a 10. Hace falta al menos un 3, y pasan a la siguiente prueba los aspirantes con mejor nota hasta 1,75 por cada plaza libre, así que la nota de corte real es más alta. Es eliminatoria y se hace en el mismo acto que los test psicotécnicos. Después vienen las pruebas físicas, el reconocimiento médico y la entrevista personal. La convocatoria de 2026 ofrece 2.704 plazas, 541 de ellas reservadas a militares profesionales de tropa y marinería.",
+    "tigertest": "Tigertest tiene 200 preguntas de práctica originales con explicación, en castellano, todas gratis y sin registro. No está afiliado a la Dirección General de la Policía ni al Ministerio del Interior.",
+    "rows": [
+      { "label": "Convoca", "value": "Dirección General de la Policía (Ministerio del Interior), en el BOE" },
+      { "label": "Preguntas", "value": "100, con tres respuestas posibles" },
+      { "label": "Tiempo", "value": "50 minutos" },
+      { "label": "Corrección", "value": "Cada error resta medio acierto; nota de 0 a 10" },
+      { "label": "Para seguir", "value": "Mínimo 3 puntos y estar entre los mejores (1,75 por plaza libre)" },
+      { "label": "Temario", "value": "45 temas: jurídicas, sociales y técnico-científicas" },
+      { "label": "Plazas 2026", "value": "2.704 (2.163 libres y 541 para militares)" },
+      { "label": "Tests de Tigertest", "value": "4 x 50 preguntas, 35 para aprobar" }
+    ],
+    "footnote": "Basado en la Resolución de 7 de julio de 2026 de la Dirección General de la Policía (BOE núm. 167, de 10 de julio de 2026) y en las leyes del temario vigentes en noviembre de 2026. Cada convocatoria fija sus fechas, plazas y normas, así que confirma los detalles actuales en",
+    "source": { "name": "BOE: convocatoria de la Escala Básica de la Policía Nacional (2026)", "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-15055" }
+  },
+  "howItWorks": {
+    "h2": "Cómo funciona",
+    "cards": [
+      {
+        "h3": "Practica por bloques del temario",
+        "p": "Seis bloques de entrenamiento: Constitución y Administración, extranjería y seguridad ciudadana, Derecho Penal y Procesal, igualdad y ciencias sociales, lengua española y materias técnico-científicas. Las preguntas que fallas vuelven hasta que las domines."
+      },
+      {
+        "h3": "Cuatro tests de 50 preguntas",
+        "p": "Cada test mezcla los tres bloques del temario en la proporción de sus temas y no repite preguntas de los otros. Cada respuesta explica la norma y por qué fallan las demás opciones."
+      }
+    ]
+  },
+  "topics": {
+    "h2": "Basado en el temario oficial de la Escala Básica",
+    "p": "Cada pregunta se ha escrito a partir de las leyes que cita el temario del anexo I de la convocatoria de 2026, vigentes en noviembre de 2026. La convocatoria no fija cuánto pesa cada tema, así que cada test sigue el número de temas de cada bloque: 30 preguntas de Ciencias Jurídicas, 11 de Ciencias Sociales y 9 de Materias Técnico-Científicas. El examen real tiene tres opciones por pregunta y penaliza los errores; nuestras preguntas tienen cuatro opciones y no restan. Los test psicotécnicos, las pruebas físicas, el reconocimiento médico y la entrevista no se modelan.",
+    "items": [
+      "Ciencias Sociales: derechos humanos, actitudes, criminología, drogas (14 %)",
+      "Derecho, Constitución y Unión Europea (12 %)",
+      "Derecho Penal (12 %)",
+      "Administración, Ministerio del Interior y Policía Nacional (10 %)",
+      "Informática, inteligencia y ciberdelincuencia (10 %)",
+      "Seguridad privada, seguridad ciudadana y ciberseguridad (8 %)",
+      "Lengua española: gramática y ortografía (8 %)",
+      "Armas, vehículos prioritarios y seguridad vial (8 %)",
+      "Extranjería y protección internacional (6 %)",
+      "Derecho Procesal Penal y víctimas (6 %)",
+      "Igualdad, prevención de riesgos y protección de datos (6 %)"
+    ]
+  },
+  "howToPass": {
+    "h2": "Cómo preparar la prueba de conocimientos",
+    "steps": [
+      {
+        "h3": "1. Estudia por bloques, no por libros",
+        "p": "Más de la mitad de los temas son jurídicos: la Constitución, la Ley Orgánica 2/1986, la extranjería, la Ley Orgánica 4/2015, el Código Penal y la Ley de Enjuiciamiento Criminal. Domina primero ese bloque y después repasa ciencias sociales, ortografía e informática, que también puntúan."
+      },
+      {
+        "h3": "2. Aprende los plazos y las cifras como una tabla",
+        "p": "Muchas preguntas giran en torno a un número: las 72 horas de detención preventiva, los 60 días de internamiento de un extranjero, las seis horas para identificar a una persona, los 14 años del DNI o los 15 días del estado de alarma. Repásalos juntos hasta que no los confundas."
+      },
+      {
+        "h3": "3. Calcula cuándo te conviene arriesgar",
+        "p": "Con tres opciones, cada error resta medio acierto. Si puedes descartar una opción con seguridad, responder suele compensar; si dudas entre las tres, dejarla en blanco no te quita nada. Practica decidir rápido: son 100 preguntas en 50 minutos, medio minuto por pregunta."
+      },
+      {
+        "h3": "4. Apunta a un 70 % o más",
+        "p": "Pasar no basta: entran los mejores hasta 1,75 aspirantes por plaza, así que la nota de corte es mucho más alta que el mínimo de 3. Tigertest mide tu acierto por bloques: vuelve a entrenar el más flojo y repite los cuatro tests hasta superar cada uno con 35 o más."
+      }
+    ]
+  },
+  "faqTitle": "Preguntas frecuentes sobre la prueba de conocimientos de la Policía Nacional",
+  "faqs": [
+    {
+      "q": "¿Cómo es la prueba de conocimientos de la Policía Nacional?",
+      "a": "Según la convocatoria de 2026, es un cuestionario de 100 preguntas con tres respuestas posibles, de las que solo una es correcta, que se responde por escrito en 50 minutos. Las preguntas se refieren a los 45 temas del temario del anexo I. Es la primera prueba de la oposición, es eliminatoria y se hace en el mismo acto que los test psicotécnicos."
+    },
+    {
+      "q": "¿Restan los errores y qué nota hace falta?",
+      "a": "Sí. La nota se calcula con la fórmula [A − E/(n − 1)] × 10 / P, de modo que, con tres opciones, cada error resta medio acierto y las preguntas en blanco no cuentan. Hace falta un mínimo de 3 puntos sobre 10, pero solo continúan los mejores, hasta 1,75 aspirantes por cada plaza libre, por lo que la nota de corte real suele ser bastante más alta."
+    },
+    {
+      "q": "¿Qué temas entran en el examen?",
+      "a": "El temario tiene 45 temas en tres bloques. Ciencias Jurídicas (temas 1 a 26): Derecho y Constitución, Unión Europea, Administración, Ministerio del Interior y Policía Nacional, Ley Orgánica 2/1986, extranjería, seguridad privada y ciudadana, Derecho Penal y Procesal, víctimas, igualdad, prevención de riesgos y protección de datos. Ciencias Sociales (27 a 37): derechos humanos, sociología, criminología, drogas, desarrollo sostenible, gramática y ortografía. Materias Técnico-Científicas (38 a 45): sistemas operativos, redes, inteligencia, ciberdelincuencia, armas y vehículos prioritarios."
+    },
+    {
+      "q": "¿Son preguntas reales de exámenes de la Policía Nacional?",
+      "a": "No. Todas las preguntas son originales, escritas por Tigertest a partir de las leyes del temario, así que evalúan los mismos conocimientos sin copiar ningún examen oficial ni de academia. Nuestras preguntas tienen cuatro opciones, una más que el examen real, y en nuestros tests los errores no restan. Es práctica gratuita, no está afiliada a la Dirección General de la Policía y no sustituye a la convocatoria del BOE."
+    },
+    {
+      "q": "¿El test de Tigertest es gratis?",
+      "a": "Sí. Los cuatro tests y los seis bloques de entrenamiento son gratis y no necesitas cuenta. Crea una cuenta gratuita si quieres guardar tu progreso en el móvil y en el ordenador. Si preparas la oposición en una academia, tu profesor puede crear una clase en Tigertest y ver tus resultados."
+    }
+  ],
+  "finalCta": {
+    "h2": "¿Listo para la prueba de conocimientos?",
+    "p": "Empieza gratis. Sin registro. 200 preguntas sobre el temario de la Escala Básica de la Policía Nacional."
+  }
+}

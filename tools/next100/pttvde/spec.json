@@ -1,0 +1,34 @@
+{
+  "id": "pttvde",
+  "stateCode": "PTTVDE",
+  "idBase": 22800,
+  "prefix": "PTTVDE-",
+  "slug": "/exame-tvde",
+  "landingPath": "/pt/exame-tvde-teste",
+  "dataFile": "data/pt-tvde-questions.json",
+  "language": "pt",
+  "locale": "pt-PT",
+  "name": "Exame TVDE",
+  "shortName": "Exame TVDE",
+  "examLabel": "Avaliação final TVDE",
+  "fullName": "Exame de motorista TVDE (Certificado de Motorista TVDE)",
+  "english": {
+    "name": "Portugal TVDE Ride-Hailing Driver Exam",
+    "shortName": "Portugal TVDE driver exam",
+    "fullName": "Portugal TVDE ride-hailing driver certificate exam (Exame TVDE), in Portuguese"
+  },
+  "icon": "car",
+  "testCount": 5,
+  "questionsPerTest": 30,
+  "passPct": 90,
+  "categories": [
+    {"key": "pttvdeAtividade", "label": "Regulamentação da atividade TVDE", "perTest": 6, "pool": 42, "segment": "ATV"},
+    {"key": "pttvdeVeiculo", "label": "Veículo, dístico e registo", "perTest": 4, "pool": 26, "segment": "VEI"},
+    {"key": "pttvdeServico", "label": "Serviço, preço e direitos do utilizador", "perTest": 5, "pool": 34, "segment": "SRV"},
+    {"key": "pttvdeComunicacao", "label": "Comunicação e relações interpessoais", "perTest": 5, "pool": 34, "segment": "COM"},
+    {"key": "pttvdeNormas", "label": "Normas legais de condução", "perTest": 3, "pool": 16, "segment": "NRM"},
+    {"key": "pttvdeTecnicas", "label": "Técnicas de condução defensiva e eficiente", "perTest": 4, "pool": 26, "segment": "TEC"},
+    {"key": "pttvdeEmergencia", "label": "Emergências e primeiros socorros", "perTest": 3, "pool": 22, "segment": "EMG"}
+  ],
+  "notes": "5 tests x 30 = 150 test items; 50 training-only spares (the last items of each pool: 12/6/9/9/1/6/7). Training: four topic sets 22801-22804 (Regulamentação 42; Veículo e serviço 60; Passageiros e emergências 56; Condução 42), so the dashboard is 4 sets + 5 tests = 9 steps. passPct 90 = 27 of 30, the real rule (Lei 45/2018 art. 10(8) as republished by Lei 59/2026). Categories follow the six subjects of the initial course (art. 10(6); Portaria 293/2018 Annex I), with 'Regulamentação da atividade' split in three; weights are Tigertest's own (the IMT publishes none)."
+}

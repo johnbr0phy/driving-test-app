@@ -1,0 +1,133 @@
+{
+  "metaTitle": "Medborgarskapsprovet 2026: öva gratis på samhällskunskap",
+  "metaDescription": "Öva gratis inför medborgarskapsprovet i samhällskunskap: 200 egna frågor på svenska om demokrati, lag och rätt, rättigheter, arbete, välfärd, historia och traditioner, varje svar förklarat. Tre övningsprov med 60 frågor, utan inloggning.",
+  "keywords": "medborgarskapsprovet, medborgarskapsprov, medborgarskapsprov övning, medborgarskapsprovet frågor, medborgarskapsprov samhällskunskap, Sverige i fokus, svenskt medborgarskap prov, övningsprov medborgarskap, UHR medborgarskapsprov",
+  "breadcrumb": {
+    "home": "Start",
+    "allTests": "Alla prov",
+    "current": "Medborgarskapsprovet"
+  },
+  "h1": "Medborgarskapsprovet 2026: öva på samhällskunskap",
+  "subtitle": "200 egna övningsfrågor på svenska om det svenska samhället, varje svar förklarat. Tre övningsprov med 60 frågor och samma gräns som på provet: 70 procent rätt. Gjort för mobilen, utan inloggning.",
+  "facts": {
+    "h2": "Medborgarskapsprovet i korthet",
+    "answer": "Sedan den 6 juni 2026 måste den som söker svenskt medborgarskap och är mellan 16 och 66 år visa grundläggande kunskaper om det svenska samhället. Den som inte kan visa det med betyg kan göra medborgarskapsprovet i samhällskunskap. Provet görs av Universitets- och högskolerådet (UHR), och du kan bara anmäla dig om du har fått ett brev från Migrationsverket. Provet görs på papper och på svenska, och varje fråga har fyra svarsalternativ där ett är rätt. Enligt nyhetsrapporter om det första provet den 15 augusti 2026 var det 60 frågor på 90 minuter. 40 av frågorna räknades, och det krävdes 28 rätt av 40, alltså 70 procent. UHR har ännu inte meddelat antal frågor och provtid för nästa prov, som planeras till april eller maj 2027. Provet bygger på UHR:s utbildningsmaterial Sverige i fokus. Ett prov i svenska språket kommer senare.",
+    "tigertest": "Tigertest har 200 egna övningsfrågor på svenska om allt som Sverige i fokus tar upp, gratis och utan inloggning. Frågorna är skrivna utifrån utbildningsmaterialet och lagarna, inte kopierade från UHR:s provfrågor.",
+    "rows": [
+      {
+        "label": "Anordnas av",
+        "value": "Universitets- och högskolerådet (UHR)"
+      },
+      {
+        "label": "Frågor",
+        "value": "60 flervalsfrågor, varav 40 räknades (augusti 2026)"
+      },
+      {
+        "label": "Godkänt",
+        "value": "28 av 40 rätt, 70 procent (augusti 2026)"
+      },
+      {
+        "label": "Provtid",
+        "value": "90 minuter (augusti 2026)"
+      },
+      {
+        "label": "Format",
+        "value": "På papper, fyra alternativ, ett rätt"
+      },
+      {
+        "label": "Språk",
+        "value": "Svenska"
+      },
+      {
+        "label": "Studiematerial",
+        "value": "Sverige i fokus (UHR och Skolverket)"
+      },
+      {
+        "label": "Nästa prov",
+        "value": "Planeras till april eller maj 2027"
+      }
+    ],
+    "footnote": "Enligt UHR, Migrationsverket, förordningen (2026:451) om medborgarskapsprov och nyhetsrapporter om provet, november 2026. Tigertest har ingen koppling till UHR eller Migrationsverket. Kontrollera alltid aktuell information hos",
+    "source": {
+      "name": "UHR: Om medborgarskapsprovet",
+      "url": "https://www.uhr.se/medborgarskapsprovet/om-medborgarskapsprovet/"
+    }
+  },
+  "howItWorks": {
+    "h2": "Så fungerar det",
+    "cards": [
+      {
+        "h3": "Öva först, testa sedan",
+        "p": "Fem övningsset efter ämne: landet och demokratin, styrning och lag, medier och rättigheter, arbete, välfärd och historia samt omvärlden, religion och traditioner. Du får svar direkt, och frågor du svarar fel på kommer tillbaka tills du kan dem."
+      },
+      {
+        "h3": "Övningsprov lika långa som provet",
+        "p": "Tre övningsprov med 60 frågor var, blandade från alla kapitel i Sverige i fokus. För godkänt behöver du 42 av 60, samma 70 procent som krävdes på det första provet. Kom ihåg att på det riktiga provet räknades bara 40 av frågorna."
+      }
+    ]
+  },
+  "topics": {
+    "h2": "Det här tar provet upp",
+    "p": "Förordningen om medborgarskapsprov räknar upp vad provet kan ta upp, och UHR:s material Sverige i fokus har ett kapitel för varje område. UHR publicerar ingen fördelning, så Tigertest delar in frågorna i tio ämnen och lägger frågor från alla tio i varje övningsprov.",
+    "items": [
+      "Sveriges demokrati, val och partier (7 av 60 frågor)",
+      "Lag och rätt, grundlagarna och allemansrätten (7 av 60)",
+      "Mänskliga rättigheter, jämställdhet och minoriteter (7 av 60)",
+      "Arbetsmarknad, privatekonomi och välfärd (7 av 60)",
+      "Sveriges moderna historia (7 av 60)",
+      "Landet Sverige, natur och klimat (6 av 60)",
+      "Så styrs Sverige: stat, regioner och kommuner (6 av 60)",
+      "Religion, traditioner och högtider (5 av 60)",
+      "Mediernas roll (4 av 60)",
+      "Sverige och omvärlden (4 av 60)"
+    ]
+  },
+  "howToPass": {
+    "h2": "Så klarar du medborgarskapsprovet",
+    "steps": [
+      {
+        "h3": "1. Läs Sverige i fokus",
+        "p": "UHR säger att provet bygger på utbildningsmaterialet Sverige i fokus. Det finns gratis som pdf och som ljudfiler, ett kapitel i taget, på uhr.se. Läs ett kapitel och gör sedan övningssetet om samma ämne."
+      },
+      {
+        "h3": "2. Lär dig hur Sverige styrs",
+        "p": "Riksdag, regering, myndigheter, regioner och kommuner har olika ansvar. Vet vem som gör vad: regionerna sköter vården, kommunerna skolan och äldreomsorgen och staten pensioner och föräldraförsäkring."
+      },
+      {
+        "h3": "3. Kunna de viktiga årtalen",
+        "p": "1809, 1921, 1948, 1979, 1995 och 2024 är exempel på år som visar hur Sverige har förändrats. Lär dig vad som hände, inte bara siffran, så klarar du frågor som är formulerade på ett annat sätt."
+      },
+      {
+        "h3": "4. Repetera dina fel",
+        "p": "Tigertest kommer ihåg vilka frågor du svarar fel på och ger dig dem igen. Gör övningsproven när dina övningsset är gröna och upprepa dem tills du säkert klarar 70 procent."
+      }
+    ]
+  },
+  "faqTitle": "Vanliga frågor om medborgarskapsprovet",
+  "faqs": [
+    {
+      "q": "Hur många frågor har medborgarskapsprovet?",
+      "a": "På det första provet den 15 augusti 2026 var det enligt nyhetsrapporter 60 flervalsfrågor på 90 minuter. 40 av frågorna räknades, och 28 rätt, 70 procent, krävdes för godkänt. UHR har inte meddelat antal frågor och provtid för nästa prov."
+    },
+    {
+      "q": "Vad ska jag läsa inför medborgarskapsprovet?",
+      "a": "UHR:s utbildningsmaterial Sverige i fokus, som UHR har tagit fram tillsammans med Skolverket. Provet bygger på det materialet. Det tar upp landet Sverige, demokratin, lag och rätt, medier, mänskliga rättigheter, arbete och välfärd, modern historia, omvärlden, religion och traditioner."
+    },
+    {
+      "q": "Vem måste göra medborgarskapsprovet?",
+      "a": "Den som söker svenskt medborgarskap och är mellan 16 och 66 år ska visa kunskaper om det svenska samhället. Den som kan visa det på annat sätt, till exempel med betyg från svensk skola, behöver inte göra provet. Du kan bara anmäla dig om du har fått ett brev från Migrationsverket."
+    },
+    {
+      "q": "Kan jag göra provet på engelska?",
+      "a": "Nej. Provet i samhällskunskap ges på svenska, och UHR:s material Sverige i fokus finns på svenska. Därför är alla frågor här på svenska. Den som har en funktionsnedsättning kan ansöka om anpassning av provet hos UHR."
+    },
+    {
+      "q": "Är det här UHR:s riktiga frågor?",
+      "a": "Nej. Alla frågor här är egna och skrivna utifrån Sverige i fokus och svensk lag. Tigertest har ingen koppling till UHR eller Migrationsverket. Övningen är gratis och fungerar utan inloggning, och med ett gratis konto sparas dina framsteg."
+    }
+  ],
+  "finalCta": {
+    "h2": "Redo för medborgarskapsprovet?",
+    "p": "Börja gratis, utan inloggning. 200 frågor på svenska om allt provet tar upp."
+  }
+}

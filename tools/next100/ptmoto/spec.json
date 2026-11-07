@@ -1,0 +1,36 @@
+{
+  "id": "ptmoto",
+  "stateCode": "PTMOTO",
+  "idBase": 23100,
+  "prefix": "PTMOTO-",
+  "slug": "/portugal-motorcycle-theory",
+  "landingPath": "/portugal-motorcycle-theory-test",
+  "dataFile": "data/portugal-motorcycle-questions.json",
+  "name": "Portugal Motorcycle Theory Practice Test",
+  "shortName": "Portugal motorcycle theory",
+  "examLabel": "Portugal IMT motorcycle theory exam",
+  "fullName": "Portugal IMT motorcycle theory exam (exame de código), categories A1, A2 and A",
+  "icon": "bike",
+  "testCount": 5,
+  "questionsPerTest": 40,
+  "passPct": 90,
+  "categories": [
+    {"key": "ptmoSigns", "label": "Road Signs & Markings", "perTest": 6, "pool": 30, "segment": "SIN"},
+    {"key": "ptmoPriority", "label": "Priority & Junctions", "perTest": 6, "pool": 30, "segment": "PRI"},
+    {"key": "ptmoSpeed", "label": "Speed, Lanes & Overtaking", "perTest": 6, "pool": 30, "segment": "SPD"},
+    {"key": "ptmoParking", "label": "Stopping, Parking & Motorways", "perTest": 4, "pool": 20, "segment": "PRK"},
+    {"key": "ptmoRider", "label": "Alcohol, Fatigue & Attitude", "perTest": 4, "pool": 20, "segment": "RDR"},
+    {"key": "ptmoLicence", "label": "Licences, Documents & Accidents", "perTest": 4, "pool": 20, "segment": "LIC"},
+    {"key": "ptmoGear", "label": "Protective Gear & Visibility", "perTest": 3, "pool": 15, "segment": "GEA"},
+    {"key": "ptmoHandling", "label": "Braking, Cornering & Passengers", "perTest": 3, "pool": 15, "segment": "HND"},
+    {"key": "ptmoRoad", "label": "Road Surfaces & Weather", "perTest": 2, "pool": 10, "segment": "SUR"},
+    {"key": "ptmoMachine", "label": "Controls, Checks & Faults", "perTest": 2, "pool": 10, "segment": "MEC"}
+  ],
+  "notes": "RHLC (DL 138/2012) art. 43(1)(b): categories A1, A2 and A, 40 questions, 30 on the common provisions (Annex VII part I section II) and 10 on the A-specific programme (section III point I); art. 46(b) 40 minutes; art. 47(1) 36 of 40 to pass (90%). Art. 43(1)(c): B or B1 holders seeking A2 or A take only the 10 specific questions in 10 minutes, 9 to pass. Tigertest: five 40-question tests, 30 common (written from the rider's seat) + 10 specific per test, pools exactly 5x each count (no spares). Dashboard = 4 sets + 5 tests = 9 steps.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 23101, "name": "Signs & Priority", "categories": ["ptmoSigns", "ptmoPriority"], "size": 60},
+    {"setNumber": 2, "id": 23102, "name": "Speed, Overtaking & Parking", "categories": ["ptmoSpeed", "ptmoParking"], "size": 50},
+    {"setNumber": 3, "id": 23103, "name": "The Rider, Licences & Accidents", "categories": ["ptmoRider", "ptmoLicence"], "size": 40},
+    {"setNumber": 4, "id": 23104, "name": "Riding Skills & the Machine", "categories": ["ptmoGear", "ptmoHandling", "ptmoRoad", "ptmoMachine"], "size": 50}
+  ]
+}

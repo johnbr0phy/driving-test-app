@@ -28,8 +28,17 @@ import cnaEs from "./examTranslations/cna.es.json";
 import epa608Es from "./examTranslations/epa608.es.json";
 import esdgtEs from "./examTranslations/esdgt.es.json";
 import ptimtPt from "./examTranslations/ptimt.pt.json";
+import detheorieEn from "./examTranslations/detheorie.en.json";
+import setrafikSv from "./examTranslations/setrafik.sv.json";
+import dkteoriDa from "./examTranslations/dkteori.da.json";
+import fitheoryFi from "./examTranslations/fitheory.fi.json";
+import hukreszHu from "./examTranslations/hukresz.hu.json";
+import rodrpcivRo from "./examTranslations/rodrpciv.ro.json";
+import grdrivingEl from "./examTranslations/grdriving.el.json";
+import bedrivingNl from "./examTranslations/bedriving.nl.json";
+import bedrivingFr from "./examTranslations/bedriving.fr.json";
 
-export type ExamId = "ccaf" | "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "bedriving" | "dkteori" | "setrafik" | "fitheory" | "grdriving" | "rodrpciv" | "hukresz" | "mttheory" | "detheorie" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "detheorie" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl";
+export type ExamId = "ccaf" | "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "bemoto" | "bevracht" | "betoelating" | "befsmavz" | "dkteori" | "dkmoto" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "grmoto" | "grcitizen" | "grsecurity" | "rodrpciv" | "rocpi" | "rotaxi" | "roadmed" | "rorezid" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "detheorie" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -184,6 +193,12 @@ const TEST_SET_NAMES: Record<Language, (n: number) => string> = {
   pl: (n) => `Zestaw treningowy ${n}`,
   nl: (n) => `Oefenset ${n}`,
   pt: (n) => `Conjunto de treino ${n}`,
+  sv: (n) => `Övningsset ${n}`,
+  da: (n) => `Træningssæt ${n}`,
+  fi: (n) => `Harjoitussarja ${n}`,
+  hu: (n) => `${n}. gyakorlósorozat`,
+  ro: (n) => `Setul de antrenament ${n}`,
+  el: (n) => `Σετ εξάσκησης ${n}`,
 };
 
 const cdl: ExamConfig = {
@@ -8716,6 +8731,304 @@ const ptimt: ExamConfig = {
   },
 };
 
+const ptmoto: ExamConfig = {
+  id: "ptmoto",
+  stateCode: "PTMOTO",
+  idBase: 23100,
+  slug: "/portugal-motorcycle-theory",
+  landingPath: "/portugal-motorcycle-theory-test",
+  name: "Portugal Motorcycle Theory Practice Test",
+  shortName: "Portugal motorcycle theory",
+  examLabel: "Portugal IMT motorcycle theory exam",
+  fullName: "Portugal IMT motorcycle theory exam (exame de código), categories A1, A2 and A",
+  questionIdPrefix: "PTMOTO-",
+  icon: "bike",
+  testCount: 5,
+  questionsPerTest: 40,
+  passPct: 90,
+  // Real test (Regulamento da Habilitação Legal para Conduzir, Decreto-Lei 138/2012, checked
+  // 2026-11-06): categories A1, A2 and A, 40 questions, 30 on the common programme (Annex VII
+  // part I section II) and 10 on the A-specific programme (section III point I) (art. 43(1)(b)),
+  // 40 minutes (art. 46(b)), pass with 36 correct (art. 47(1)); B or B1 holders seeking A2 or A
+  // take only the 10 specific questions in 10 minutes, 9 to pass (arts. 43(1)(c), 46(c), 47(1)).
+  // Translated test on request (art. 44(2) as amended by DL 114/2026). The IMT publishes no topic
+  // weights: the 30 common items split 6/6/6/4/4/4 like the programme, written from the rider's
+  // seat; the 10 specific items follow the eight points of section III point I (gear and
+  // visibility 3, handling 3, surfaces 2, machine 2). Five real-length tests, pools 5x each count,
+  // no spares. passPct 90 = 36 of 40. All items original.
+  blueprint: {
+    ptmoSigns: 6,
+    ptmoPriority: 6,
+    ptmoSpeed: 6,
+    ptmoParking: 4,
+    ptmoRider: 4,
+    ptmoLicence: 4,
+    ptmoGear: 3,
+    ptmoHandling: 3,
+    ptmoRoad: 2,
+    ptmoMachine: 2,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 23101, name: "Signs & Priority", categories: ["ptmoSigns", "ptmoPriority"], size: 60, weightLabel: "12 of 40 test questions" },
+    { setNumber: 2, id: 23102, name: "Speed, Overtaking & Parking", categories: ["ptmoSpeed", "ptmoParking"], size: 50, weightLabel: "10 of 40 test questions" },
+    { setNumber: 3, id: 23103, name: "The Rider, Licences & Accidents", categories: ["ptmoRider", "ptmoLicence"], size: 40, weightLabel: "8 of 40 test questions" },
+    { setNumber: 4, id: 23104, name: "Riding Skills & the Machine", categories: ["ptmoGear", "ptmoHandling", "ptmoRoad", "ptmoMachine"], size: 50, weightLabel: "10 of 40 test questions" },
+  ],
+  categoryLabels: {
+    ptmoSigns: "Road Signs & Markings",
+    ptmoPriority: "Priority & Junctions",
+    ptmoSpeed: "Speed, Lanes & Overtaking",
+    ptmoParking: "Stopping, Parking & Motorways",
+    ptmoRider: "Alcohol, Fatigue & Attitude",
+    ptmoLicence: "Licences, Documents & Accidents",
+    ptmoGear: "Protective Gear & Visibility",
+    ptmoHandling: "Braking, Cornering & Passengers",
+    ptmoRoad: "Road Surfaces & Weather",
+    ptmoMachine: "Controls, Checks & Faults",
+  },
+  copy: {
+    guestPrompt: "to save your motorcycle theory progress and track every question you miss",
+    trainingHeading: "Train by topic, from the rider's seat",
+    trainingSub: "Four sets on the Código da Estrada and the motorcycle programme the IMT exam asks about, in English. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 40 questions like the real exam, 36 to pass",
+    heroSubs: [
+      "Four topic sets, five real-length tests. 30 common and 10 motorcycle questions each.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your motorcycle theory exam.",
+    ],
+    sourceLine: "Based on Portugal's Código da Estrada and the IMT programme for categories A1, A2 and A. Original questions in English; 40 per test, 36 to pass like the real exam.",
+    analyticsKey: "ptmoto",
+  },
+};
+
+const ptcam: ExamConfig = {
+  id: "ptcam",
+  stateCode: "PTCAM",
+  idBase: 22900,
+  slug: "/exame-cam",
+  landingPath: "/pt/exame-cam-teste",
+  name: "Exame CAM (Certificado de Aptidão para Motorista)",
+  shortName: "Exame CAM",
+  examLabel: "Exame CAM",
+  fullName: "Exame do Certificado de Aptidão para Motorista (CAM), qualificação inicial de motoristas de pesados",
+  questionIdPrefix: "PTCAM-",
+  icon: "truck",
+  testCount: 3,
+  questionsPerTest: 60,
+  passPct: 60,
+  language: "pt",
+  locale: "pt-PT",
+  english: {
+    name: "Portugal Driver CPC (CAM) Exam",
+    shortName: "Portugal CAM exam",
+    fullName: "Portugal Driver CPC initial qualification exam (CAM) for truck and bus drivers, in Portuguese",
+  },
+  review: { pt: "model" },
+  // Real exam (Despacho IMTT n.º 26482/2009 under Decreto-Lei 126/2009, republished by Decreto-Lei
+  // 102-C/2020; checked 2026-11-06): written test of 60 questions, four-option and/or direct answer,
+  // 2 hours, 0 to 100 with equal weight, pass at 60%; IMT, after the initial qualification course
+  // (C/CE and D/DE). Content follows Directive 2003/59/EC Annex I as amended by 2018/645; the IMT
+  // publishes no topic weights, so 10/7/7/9/6/5/5/7/4 is Tigertest's. Three tests of 60 at 60%
+  // (36); pools 3x per test plus 20 training-only spares. One bank for trucks and buses.
+  blueprint: {
+    ptcamRacional: 10,
+    ptcamCarga: 7,
+    ptcamPassageiros: 7,
+    ptcamTempos: 9,
+    ptcamTacografo: 6,
+    ptcamRegulamentacao: 5,
+    ptcamSaude: 5,
+    ptcamEmergencias: 7,
+    ptcamEconomia: 4,
+  },
+  // Five topic sets, not testSets(): 5 + 3 tests = 8 dashboard steps; every item in one set.
+  trainingSets: [
+    { setNumber: 1, id: 22901, name: "Condução racional e veículo", categories: ["ptcamRacional"], size: 32, weightLabel: "10 de 60 perguntas por teste" },
+    { setNumber: 2, id: 22902, name: "Carga e passageiros", categories: ["ptcamCarga", "ptcamPassageiros"], size: 46, weightLabel: "14 de 60 perguntas por teste" },
+    { setNumber: 3, id: 22903, name: "Tempos de condução e tacógrafo", categories: ["ptcamTempos", "ptcamTacografo"], size: 49, weightLabel: "15 de 60 perguntas por teste" },
+    { setNumber: 4, id: 22904, name: "Regulamentação e economia", categories: ["ptcamRegulamentacao", "ptcamEconomia"], size: 33, weightLabel: "9 de 60 perguntas por teste" },
+    { setNumber: 5, id: 22905, name: "Saúde, segurança e emergências", categories: ["ptcamSaude", "ptcamEmergencias"], size: 40, weightLabel: "12 de 60 perguntas por teste" },
+  ],
+  categoryLabels: {
+    ptcamRacional: "Condução racional e tecnologia do veículo",
+    ptcamCarga: "Carga e acondicionamento",
+    ptcamPassageiros: "Segurança e conforto dos passageiros",
+    ptcamTempos: "Tempos de condução e repouso",
+    ptcamTacografo: "Tacógrafo",
+    ptcamRegulamentacao: "Regulamentação do transporte e da profissão",
+    ptcamSaude: "Saúde, fadiga e ergonomia",
+    ptcamEmergencias: "Riscos, acidentes e emergências",
+    ptcamEconomia: "Ambiente económico e imagem da empresa",
+  },
+  copy: {
+    guestPrompt: "para guardar o seu progresso no exame CAM e acompanhar cada pergunta em que erra",
+    trainingHeading: "Conjuntos de treino",
+    trainingSub: "Cada conjunto cobre um bloco de matérias da qualificação inicial. Tem a resposta logo a seguir, e as perguntas em que erra voltam até as dominar.",
+    testsHeading: "Testes · 60 perguntas, 36 para passar, como no exame",
+    heroSubs: [
+      "Cinco conjuntos de treino, três testes de 60. Tempos de condução e condução racional são os temas que mais saem.",
+      "Domine primeiro o conjunto, depois faça o teste.",
+      "Já vai a meio. Faça um teste de 60.",
+      "Reveja os erros e repita o teste.",
+      "Tudo verde. Está pronto para o exame CAM no IMT.",
+    ],
+    sourceLine: "Perguntas originais a partir do Regulamento (CE) 561/2006, do Regulamento (UE) 165/2014, do Decreto-Lei 126/2009 e do Código da Estrada, novembro de 2026. Não copiadas das listas do IMT. Sem ligação ao IMT.",
+    analyticsKey: "ptcam",
+  },
+};
+
+const pttvde: ExamConfig = {
+  id: "pttvde",
+  stateCode: "PTTVDE",
+  idBase: 22800,
+  slug: "/exame-tvde",
+  landingPath: "/pt/exame-tvde-teste",
+  name: "Exame TVDE",
+  shortName: "Exame TVDE",
+  examLabel: "Avaliação final TVDE",
+  fullName: "Exame de motorista TVDE (Certificado de Motorista TVDE)",
+  questionIdPrefix: "PTTVDE-",
+  icon: "car",
+  testCount: 5,
+  questionsPerTest: 30,
+  passPct: 90,
+  language: "pt",
+  locale: "pt-PT",
+  english: {
+    name: "Portugal TVDE Ride-Hailing Driver Exam",
+    shortName: "Portugal TVDE driver exam",
+    fullName: "Portugal TVDE ride-hailing driver certificate exam (Exame TVDE), in Portuguese",
+  },
+  review: { pt: "model" },
+  // Real exam (Lei 45/2018 art. 10(7)-(8) as republished by Lei 59/2026, in force 1 Sept 2026;
+  // IMT certification page; Portaria 293/2018 as amended by Portaria 344/2024; checked
+  // 2026-11-06): the final assessment of the 50-hour initial course, at the IMT or an
+  // IMT-authorised exam centre, 30 multiple-choice questions, pass with at least 27 correct;
+  // 60 minutes per the press. In Portuguese. Taxi driver certificate holders are exempt.
+  // Categories follow the initial course subjects (art. 10(6); Portaria 293/2018 Annex I), with
+  // the regulation module split in three; the IMT publishes no weights, so 6/4/5/5/3/4/3 is
+  // Tigertest's. Five tests of 30 (150 items); the last items of each pool (50) are
+  // training-only. Single best answer of four, equal weight, so passPct 90 = 27 of 30.
+  blueprint: {
+    pttvdeAtividade: 6,
+    pttvdeVeiculo: 4,
+    pttvdeServico: 5,
+    pttvdeComunicacao: 5,
+    pttvdeNormas: 3,
+    pttvdeTecnicas: 4,
+    pttvdeEmergencia: 3,
+  },
+  // Four topic sets, not testSets(): 4 + 5 tests = 9 dashboard steps.
+  trainingSets: [
+    { setNumber: 1, id: 22801, name: "Regulamentação da atividade TVDE", categories: ["pttvdeAtividade"], size: 42, weightLabel: "6 das 30 perguntas do teste" },
+    { setNumber: 2, id: 22802, name: "Veículo, preço e direitos do utilizador", categories: ["pttvdeVeiculo", "pttvdeServico"], size: 60, weightLabel: "9 das 30 perguntas do teste" },
+    { setNumber: 3, id: 22803, name: "Passageiros e emergências", categories: ["pttvdeComunicacao", "pttvdeEmergencia"], size: 56, weightLabel: "8 das 30 perguntas do teste" },
+    { setNumber: 4, id: 22804, name: "Normas e técnicas de condução", categories: ["pttvdeNormas", "pttvdeTecnicas"], size: 42, weightLabel: "7 das 30 perguntas do teste" },
+  ],
+  categoryLabels: {
+    pttvdeAtividade: "Regulamentação da atividade TVDE",
+    pttvdeVeiculo: "Veículo, dístico e registo",
+    pttvdeServico: "Serviço, preço e direitos do utilizador",
+    pttvdeComunicacao: "Comunicação e relações interpessoais",
+    pttvdeNormas: "Normas legais de condução",
+    pttvdeTecnicas: "Técnicas de condução defensiva e eficiente",
+    pttvdeEmergencia: "Emergências e primeiros socorros",
+  },
+  copy: {
+    guestPrompt: "para guardar o progresso no exame TVDE e ver todas as perguntas em que errou",
+    trainingHeading: "Treine por tema do curso TVDE",
+    trainingSub: "Quatro conjuntos sobre a lei TVDE, os passageiros e a condução. Correção imediata, e as perguntas erradas voltam até as dominar.",
+    testsHeading: "Testes de simulação · 30 perguntas como no exame real, 27 para passar",
+    heroSubs: [
+      "Quatro conjuntos de treino, cinco testes. A regulamentação da atividade é o tema com mais perguntas.",
+      "Domine primeiro o conjunto, depois faça o teste.",
+      "Já vai a meio. Faça um teste de 30 perguntas.",
+      "Reveja os erros e volte a testar.",
+      "Tudo verde. Está pronto para o exame TVDE.",
+    ],
+    sourceLine: "Segundo a Lei n.º 45/2018 na redação da Lei n.º 59/2026, o Código da Estrada e a Portaria n.º 293/2018, em novembro de 2026. Perguntas originais, não copiadas da lista do IMT.",
+    analyticsKey: "pttvde",
+  },
+};
+
+const ptvigil: ExamConfig = {
+  id: "ptvigil",
+  stateCode: "PTVIGIL",
+  idBase: 23000,
+  slug: "/exame-vigilante",
+  landingPath: "/pt/exame-vigilante-seguranca-privada",
+  name: "Exame de Vigilante de Segurança Privada",
+  shortName: "Exame de vigilante",
+  examLabel: "Exame teórico de vigilante (CNESP)",
+  fullName: "Exame teórico de acesso à profissão de segurança privado, especialidade de vigilante (PSP, CNESP)",
+  questionIdPrefix: "PTVIG-",
+  icon: "shield",
+  testCount: 8,
+  questionsPerTest: 20,
+  passPct: 50,
+  language: "pt",
+  locale: "pt-PT",
+  english: {
+    name: "Portugal Private Security Guard Exam (PSP)",
+    shortName: "Portugal security guard exam",
+    fullName: "Portugal private security guard (vigilante) theory exam set by the PSP at the CNESP, in Portuguese",
+  },
+  review: { pt: "model" },
+  // Real exam (Despacho n.º 8270/2019 of the PSP Director Nacional, DR 2.ª série n.º 179, 18 Sep
+  // 2019, Anexo arts. 1.º to 14.º; checked 2026-11-06): run by the PSP Departamento de Segurança
+  // Privada at the CNESP, on computer, 40 minutes, 20 questions (multiple choice with 2 to 4
+  // options and one correct, or true/false; figures allowed), pass with at least 10 correct;
+  // content of the base and specific modules of Portaria 148/2014 (as amended by Portaria
+  // 114/2015); booked by the training provider on SIGESP; pass valid 6 months for the card.
+  // Categories follow the units BAS01-BAS06, UFCD 4478/4798, VIG01-VIG07, ALM01-ALM02; the
+  // 4/2/3/3/2/2/1/3 split is Tigertest's (the PSP publishes no weights). Eight real-length
+  // tests of 20; 40 training-only spares. Four options always, so passPct 50 = the real 10 of 20.
+  blueprint: {
+    ptvigRegime: 4,
+    ptvigDireitos: 2,
+    ptvigPenal: 3,
+    ptvigAcessos: 3,
+    ptvigVigilancia: 2,
+    ptvigConflitos: 2,
+    ptvigRelatorios: 1,
+    ptvigEmergencia: 3,
+  },
+  // Four topic sets, not testSets(): 4 + 8 tests = 12 dashboard steps.
+  trainingSets: [
+    { setNumber: 1, id: 23001, name: "Regime jurídico e direitos fundamentais", categories: ["ptvigRegime", "ptvigDireitos"], size: 56, weightLabel: "6 de 20 perguntas por teste" },
+    { setNumber: 2, id: 23002, name: "Direito penal, detenção e conflitos", categories: ["ptvigPenal", "ptvigConflitos"], size: 48, weightLabel: "5 de 20 perguntas por teste" },
+    { setNumber: 3, id: 23003, name: "Acessos, vigilância e relatórios", categories: ["ptvigAcessos", "ptvigVigilancia", "ptvigRelatorios"], size: 60, weightLabel: "6 de 20 perguntas por teste" },
+    { setNumber: 4, id: 23004, name: "Incêndios, socorrismo e segurança no trabalho", categories: ["ptvigEmergencia"], size: 36, weightLabel: "3 de 20 perguntas por teste" },
+  ],
+  categoryLabels: {
+    ptvigRegime: "Regime jurídico da segurança privada",
+    ptvigDireitos: "Direitos fundamentais e deontologia",
+    ptvigPenal: "Direito penal, detenção e prova",
+    ptvigAcessos: "Segurança física e controlo de acessos",
+    ptvigVigilancia: "Vigilância eletrónica e alarmes",
+    ptvigConflitos: "Gestão de conflitos e defesa pessoal",
+    ptvigRelatorios: "Relatórios e comunicações",
+    ptvigEmergencia: "Incêndios, socorrismo e segurança no trabalho",
+  },
+  copy: {
+    guestPrompt: "para guardar o seu progresso para o exame de vigilante e não perder nenhuma pergunta errada",
+    trainingHeading: "Conjuntos de treino",
+    trainingSub: "Cada conjunto cobre um bloco das matérias do curso. Vê a resposta certa logo a seguir, e as perguntas que erra voltam até as dominar.",
+    testsHeading: "Testes · 20 perguntas, 10 certas para passar",
+    heroSubs: [
+      "Quatro conjuntos de treino e oito testes. O regime jurídico da segurança privada é o que mais pesa.",
+      "Domine o conjunto e depois faça o teste.",
+      "Já vai a meio. Faça um teste completo.",
+      "Reveja os erros e volte a fazer o teste.",
+      "Tudo a verde. Está pronto para o exame no CNESP.",
+    ],
+    sourceLine: "Segundo a Lei n.º 34/2013 (redação da Lei n.º 46/2019), o Código Penal, o Código de Processo Penal e as matérias da Portaria n.º 148/2014, em vigor em novembro de 2026. Perguntas originais, não copiadas das questões divulgadas pela PSP; sempre quatro respostas, sem verdadeiro ou falso.",
+    analyticsKey: "ptvigil",
+  },
+};
+
 const bedriving: ExamConfig = {
   id: "bedriving",
   stateCode: "BEDRIVE",
@@ -8784,6 +9097,308 @@ const bedriving: ExamConfig = {
     sourceLine: "Based on the Belgian Highway Code. Original questions in English; 50 per test, 41 to pass like the real exam.",
     analyticsKey: "bedriving",
   },
+  review: { nl: "machine", fr: "machine" },
+  translations: {
+    nl: examTranslation(bedrivingNl),
+    fr: examTranslation(bedrivingFr),
+  },
+};
+
+const bemoto: ExamConfig = {
+  id: "bemoto",
+  stateCode: "BEMOTO",
+  idBase: 25700,
+  slug: "/belgium-motorcycle-theory",
+  landingPath: "/belgium-motorcycle-theory-test",
+  name: "Belgium Motorcycle Theory Practice Test",
+  shortName: "Belgium motorcycle theory",
+  examLabel: "Belgian motorcycle theory exam",
+  fullName: "Belgium motorcycle theory exam, categories A1, A2 and A",
+  questionIdPrefix: "BEMOTO-",
+  icon: "bike",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 82,
+  // Source: the Belgian Highway Code (Royal Decree of 1 December 1975, consolidated text on
+  // codedelaroute.be: art. 9.3.2 lane position, 16.2bis filtering, 30bis lights, 35.1.1 children,
+  // 36 helmet and clothing, 43ter groups, 44 passengers, 46 loads) and the licence categories
+  // (be.brussels A1/A2/A page, vlaanderen.be, Autosécurité category A guide 02/2026; checked
+  // 2026-11-07). The motorcycle theory exam is 50 questions, 41/50 to pass, in all three regions;
+  // passPct 82 = 41/50. No region publishes topic weights, so the blueprint is Tigertest's own,
+  // rider-specific topics first. Pools are exactly 4x each count (no spares). Original, British English.
+  blueprint: {
+    bmLicence: 4,
+    bmGear: 5,
+    bmControl: 6,
+    bmPosition: 6,
+    bmPassenger: 4,
+    bmPriority: 6,
+    bmSigns: 6,
+    bmSpeed: 5,
+    bmRoad: 5,
+    bmParking: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 25701, name: "Licence, Gear & Passengers", categories: ["bmLicence", "bmGear", "bmPassenger"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 2, id: 25702, name: "Braking, Cornering & Road Hazards", categories: ["bmControl", "bmRoad"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 3, id: 25703, name: "Road Position, Speed & Overtaking", categories: ["bmPosition", "bmSpeed"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 4, id: 25704, name: "Priority, Lights & Parking", categories: ["bmPriority", "bmParking"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 5, id: 25705, name: "Road Signs for Riders", categories: ["bmSigns"], size: 24, weightLabel: "6 of 50 test questions" },
+  ],
+  categoryLabels: {
+    bmLicence: "Licence Categories, Learners & Fitness",
+    bmGear: "Protective Gear & Motorcycle Checks",
+    bmControl: "Braking, Cornering & Control",
+    bmPosition: "Road Position, Filtering & Group Riding",
+    bmPassenger: "Passengers, Children & Loads",
+    bmPriority: "Priority & Junctions",
+    bmSigns: "Road Signs for Riders",
+    bmSpeed: "Speed Limits, Overtaking & Motorways",
+    bmRoad: "Road Surface, Weather & Hazards",
+    bmParking: "Lights, Parking & Breakdowns",
+  },
+  copy: {
+    guestPrompt: "to save your motorcycle theory progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets on the Belgian Highway Code for motorcyclists, tested in Flanders, Wallonia and Brussels alike. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, pass at 41",
+    heroSubs: [
+      "Five topics, four 50-question tests. Rider rules weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your motorcycle theory exam.",
+    ],
+    sourceLine: "Based on the Belgian Highway Code for motorcyclists. Original questions in English; 50 per test, 41 to pass like the real exam.",
+    analyticsKey: "bemoto",
+  },
+};
+
+const bevracht: ExamConfig = {
+  id: "bevracht",
+  stateCode: "BEVRACHT",
+  idBase: 25800,
+  slug: "/theorie-vrachtwagen-c",
+  landingPath: "/nl/theorie-examen-vrachtwagen-c-oefenen",
+  name: "Theorie-examen vrachtwagen C en vakbekwaamheid",
+  shortName: "Theorie vrachtwagen C",
+  examLabel: "Theorie-examen rijbewijs C",
+  fullName: "Theorie-examen rijbewijs C/CE en vakbekwaamheid (code 95)",
+  questionIdPrefix: "BEVRC-",
+  icon: "truck",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  language: "nl",
+  locale: "nl-BE",
+  english: {
+    name: "Belgium Truck Licence Theory Test (C/CE and CPC)",
+    shortName: "Belgian truck theory test",
+    fullName: "Belgium truck licence C/CE theory exam and driver CPC (vakbekwaamheid, code 95), in Dutch",
+  },
+  review: { nl: "model" },
+  // Real exam (GOCA Doc C-C1.NL.TH-PR and C-C1.CAP.NL.TH-PR, 16.11.2022; vlaanderen.be, checked
+  // 2026-11-07): C/C1 alone 50 MCQ in max. 50 min, 41/50, from 17 y 9 m. With vakbekwaamheid:
+  // proef A 100 MCQ (50 licence + 50 CPC) in max. 100 min, 80/100, 40/50 on one half exempts it
+  // for 3 years; proef B 8 case studies x 5 (32/40); proef C oral 10 questions (80/100). 2 or 3
+  // options per question; Dutch, French or German, others with a sworn interpreter.
+  // Four tests of 50 like one half of proef A: licence 8/4/6/6 + vakbekwaamheid 7/5/6/5/3
+  // (Tigertest's split, no published weights). Pools exactly 4x each count (200, all original,
+  // written in Dutch). passPct 80 = 40 of 50.
+  blueprint: {
+    bevrVerkeer: 8,
+    bevrRijbewijs: 4,
+    bevrTechniek: 6,
+    bevrRemmen: 6,
+    bevrRijtijden: 7,
+    bevrTachograaf: 5,
+    bevrLading: 6,
+    bevrVeiligheid: 5,
+    bevrMilieu: 3,
+  },
+  // Five topic sets, not testSets(): 5 + 4 tests = 9 dashboard steps.
+  trainingSets: [
+    { setNumber: 1, id: 25801, name: "Verkeersregels en rijbewijs", categories: ["bevrVerkeer", "bevrRijbewijs"], size: 48, weightLabel: "12 van 50 vragen per test" },
+    { setNumber: 2, id: 25802, name: "Voertuigtechniek en remmen", categories: ["bevrTechniek", "bevrRemmen"], size: 48, weightLabel: "12 van 50 vragen per test" },
+    { setNumber: 3, id: 25803, name: "Rij- en rusttijden en tachograaf", categories: ["bevrRijtijden", "bevrTachograaf"], size: 48, weightLabel: "12 van 50 vragen per test" },
+    { setNumber: 4, id: 25804, name: "Lading, gewichten en afmetingen", categories: ["bevrLading"], size: 24, weightLabel: "6 van 50 vragen per test" },
+    { setNumber: 5, id: 25805, name: "Veiligheid, milieu en documenten", categories: ["bevrVeiligheid", "bevrMilieu"], size: 32, weightLabel: "8 van 50 vragen per test" },
+  ],
+  categoryLabels: {
+    bevrVerkeer: "Verkeersregels voor vrachtwagens",
+    bevrRijbewijs: "Rijbewijs, documenten en alcohol",
+    bevrTechniek: "Voertuigtechniek en koppelen",
+    bevrRemmen: "Remmen en vertragers",
+    bevrRijtijden: "Rij- en rusttijden",
+    bevrTachograaf: "Tachograaf",
+    bevrLading: "Lading, gewichten en afmetingen",
+    bevrVeiligheid: "Veiligheid, gezondheid en noodsituaties",
+    bevrMilieu: "Zuinig rijden, documenten en transportmarkt",
+  },
+  copy: {
+    guestPrompt: "om je voortgang voor het theorie-examen vrachtwagen te bewaren en elke foute vraag bij te houden",
+    trainingHeading: "Oefensets",
+    trainingSub: "Elke oefenset behandelt een deel van de leerstof voor rijbewijs C en vakbekwaamheid. Je krijgt meteen feedback, en foute vragen komen terug tot je ze kent.",
+    testsHeading: "Testen · 50 vragen, 40 juist om te slagen",
+    heroSubs: [
+      "Vijf oefensets, vier testen. Rij- en rusttijden en verkeersregels komen het vaakst terug.",
+      "Eerst een oefenset beheersen, dan een test.",
+      "Halverwege. Doe een test.",
+      "Fouten herhalen, dan opnieuw testen.",
+      "Alles groen. Plan je theorie-examen.",
+    ],
+    sourceLine: "Volgens de Wegcode en de Europese regels voor rij- en rusttijden en de tachograaf, stand november 2026. Eigen vragen, niet uit de officiële vragenbank; 4 antwoorden per vraag, zonder case study's of mondeling.",
+    analyticsKey: "bevracht",
+  },
+};
+
+const betoelating: ExamConfig = {
+  id: "betoelating",
+  stateCode: "BETOEL",
+  idBase: 25600,
+  slug: "/toelatingsexamen-arts",
+  landingPath: "/nl/toelatingsexamen-arts-oefenen",
+  name: "Toelatingsexamen arts en tandarts",
+  shortName: "Toelatingsexamen arts",
+  examLabel: "Toelatingsexamen arts en tandarts",
+  fullName: "Toelatingsexamen arts en tandarts (Vlaanderen): Kennis en Inzicht in de Wetenschappen en Generieke Competenties",
+  questionIdPrefix: "BETOEL-",
+  icon: "stethoscope",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  language: "nl",
+  locale: "nl-BE",
+  english: {
+    name: "Flemish Medical and Dental Admission Exam",
+    shortName: "Flemish medical admission exam",
+    fullName: "Flemish medical and dental admission exam (toelatingsexamen arts en tandarts), in Dutch",
+  },
+  review: { nl: "model" },
+  // Real exam (vlaanderen.be toelatingsexamens pages and UAntwerpen, checked 2026-11-07): KIW 40
+  // four-option questions, 10 each in biology, physics, chemistry and mathematics (3.5 h); GC 15
+  // EMCO + 25 VAARDIG (1.5 h); +3 right, -1 wrong, 0 blank; at least 60/120 on each part, then a
+  // quota ranking. Content: Leerstofoverzicht KIW 2026 (a 2027 overview is due autumn 2026).
+  // Four tests of 50: the real KIW 10/10/10/10 plus a shortened GC block of 4 EMCO and 6 VAARDIG.
+  // Equal weight and no guessing correction, so passPct 70 (35 of 50) is Tigertest's target.
+  blueprint: {
+    betoelBio: 10,
+    betoelFys: 10,
+    betoelChem: 10,
+    betoelWisk: 10,
+    betoelEmco: 4,
+    betoelVaardig: 6,
+  },
+  // Five subject sets, sets first then tests (like detheorie): 5 + 4 = 9 dashboard steps.
+  trainingSets: [
+    { setNumber: 1, id: 25601, name: "Biologie", categories: ["betoelBio"], size: 40, weightLabel: "10 van 50 vragen per proefexamen" },
+    { setNumber: 2, id: 25602, name: "Fysica", categories: ["betoelFys"], size: 40, weightLabel: "10 van 50 vragen per proefexamen" },
+    { setNumber: 3, id: 25603, name: "Chemie", categories: ["betoelChem"], size: 40, weightLabel: "10 van 50 vragen per proefexamen" },
+    { setNumber: 4, id: 25604, name: "Wiskunde", categories: ["betoelWisk"], size: 40, weightLabel: "10 van 50 vragen per proefexamen" },
+    { setNumber: 5, id: 25605, name: "Generieke competenties", categories: ["betoelEmco", "betoelVaardig"], size: 40, weightLabel: "10 van 50 vragen per proefexamen" },
+  ],
+  categoryLabels: {
+    betoelBio: "Biologie",
+    betoelFys: "Fysica",
+    betoelChem: "Chemie",
+    betoelWisk: "Wiskunde",
+    betoelEmco: "Empathie en communicatie (EMCO)",
+    betoelVaardig: "Wetenschappelijke teksten (VAARDIG)",
+  },
+  copy: {
+    guestPrompt: "om je vooruitgang voor het toelatingsexamen te bewaren en elke fout bij te houden",
+    trainingHeading: "Oefensets",
+    trainingSub: "Elke oefenset behandelt één vak van het toelatingsexamen. Je krijgt meteen feedback, en vragen die je fout had, komen terug tot je ze beheerst.",
+    testsHeading: "Proefexamens · 50 vragen, 35 als doel",
+    heroSubs: [
+      "Vijf oefensets, vier proefexamens. Begin met het vak waar je het minst zeker van bent.",
+      "Eerst de oefenset beheersen, dan het proefexamen.",
+      "De helft is gedaan. Maak een proefexamen van 50 vragen.",
+      "Herhaal je fouten en test jezelf opnieuw.",
+      "Alles groen. Je bent klaar voor het toelatingsexamen.",
+    ],
+    sourceLine: "Volgens het leerstofoverzicht KIW 2026 van de Vlaamse overheid, stand november 2026. Eigen vragen, niet uit vroegere examens; 50 per proefexamen, zonder giscorrectie.",
+    analyticsKey: "betoelating",
+  },
+};
+
+const befsmavz: ExamConfig = {
+  id: "befsmavz",
+  stateCode: "BEFSMA",
+  idBase: 25900,
+  slug: "/fsma-examen-verzekeringen",
+  landingPath: "/nl/fsma-examen-verzekeringen-oefenen",
+  name: "FSMA-examen verzekeringsdistributie",
+  shortName: "FSMA-examen verzekeringen",
+  examLabel: "Examen verzekeringsdistributie",
+  fullName: "FSMA-erkend examen verzekeringsdistributie (modules 1 tot 4: basiskennis, niet-leven, leven, leven met beleggingscomponent)",
+  questionIdPrefix: "BEFSMA-",
+  icon: "umbrella",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 60,
+  language: "nl",
+  locale: "nl-BE",
+  english: {
+    name: "Belgium FSMA Insurance Distribution Exam",
+    shortName: "Belgian insurance distribution exam",
+    fullName: "Belgium FSMA-recognised insurance distribution exam (verzekeringsdistributie, modules 1 to 4), in Dutch",
+  },
+  review: { nl: "model" },
+  // Real exam (Febelfin Academy FAQ and course pages, FSMA_2019_14; checked 2026-11-07): KB of
+  // 18 June 2019, four modules since 1 January 2021: 1 basiskennis (1.1 markt en overeenkomst,
+  // 1.2 diverse wetgeving), 2 niet-leven (2.1 BA en rechtsbijstand, 2.2 motorrijtuigen en
+  // bijstand, 2.3 zaak, 2.4 persoon), 3 leven (3.1 recht, 3.2 antiwitwas, markt, pensioenen,
+  // gedragsregels), 4 leven met beleggingscomponent. Each submodule: 20 MCQ, no guessing
+  // correction, about 30 minutes, 60% to pass. Four mixed mock tests of 50 here; the
+  // 6/8/8/4/4/4/4/5/4/3 split is Tigertest's (no weights published). passPct 60 = the real mark.
+  blueprint: {
+    bfsMarkt: 6,
+    bfsContract: 8,
+    bfsDistributie: 8,
+    bfsAansprak: 4,
+    bfsAuto: 4,
+    bfsZaak: 4,
+    bfsPersoon: 4,
+    bfsLeven: 5,
+    bfsWitwas: 4,
+    bfsBeleg: 3,
+  },
+  // Five module sets, sets first then tests (like detheorie): 5 + 4 = 9 dashboard steps.
+  trainingSets: [
+    { setNumber: 1, id: 25901, name: "Module 1.1: markt en verzekeringsovereenkomst", categories: ["bfsMarkt", "bfsContract"], size: 56, weightLabel: "14 van 50 vragen per proefexamen" },
+    { setNumber: 2, id: 25902, name: "Module 1.2: distributie en gedragsregels", categories: ["bfsDistributie"], size: 32, weightLabel: "8 van 50 vragen per proefexamen" },
+    { setNumber: 3, id: 25903, name: "Niet-leven: aansprakelijkheid en motorrijtuigen", categories: ["bfsAansprak", "bfsAuto"], size: 32, weightLabel: "8 van 50 vragen per proefexamen" },
+    { setNumber: 4, id: 25904, name: "Niet-leven: zaak- en persoonsverzekeringen", categories: ["bfsZaak", "bfsPersoon"], size: 32, weightLabel: "8 van 50 vragen per proefexamen" },
+    { setNumber: 5, id: 25905, name: "Leven, beleggingsverzekeringen en antiwitwas", categories: ["bfsLeven", "bfsWitwas", "bfsBeleg"], size: 48, weightLabel: "12 van 50 vragen per proefexamen" },
+  ],
+  categoryLabels: {
+    bfsMarkt: "Verzekeringsmarkt en toezicht",
+    bfsContract: "De verzekeringsovereenkomst",
+    bfsDistributie: "Distributie, gedragsregels en privacy",
+    bfsAansprak: "Aansprakelijkheid en rechtsbijstand",
+    bfsAuto: "Motorrijtuigen en bijstand",
+    bfsZaak: "Zaakverzekeringen",
+    bfsPersoon: "Persoonsverzekeringen niet-leven",
+    bfsLeven: "Levensverzekering",
+    bfsWitwas: "Antiwitwas en pensioenpijlers",
+    bfsBeleg: "Leven met beleggingscomponent",
+  },
+  copy: {
+    guestPrompt: "om je vooruitgang voor het examen verzekeringsdistributie te bewaren en elke fout bij te houden",
+    trainingHeading: "Oefensets",
+    trainingSub: "Elke oefenset behandelt de stof van een module van het examen. Je krijgt meteen feedback, en vragen die je fout had, komen terug tot je ze beheerst.",
+    testsHeading: "Proefexamens · 50 vragen, 60 % om te slagen",
+    heroSubs: [
+      "Vijf oefensets, vier proefexamens. Begin met module 1: die is voor iedereen verplicht.",
+      "Eerst de oefenset beheersen, dan het proefexamen.",
+      "De helft is gedaan. Maak een proefexamen van 50 vragen.",
+      "Herhaal je fouten en test jezelf opnieuw.",
+      "Alles groen. Je bent klaar voor het examen verzekeringsdistributie.",
+    ],
+    sourceLine: "Volgens de wet van 4 april 2014 betreffende de verzekeringen en de antiwitwaswet, stand november 2026. Eigen vragen, niet uit een erkend examen; proefexamens van 50 vragen over alle modules.",
+    analyticsKey: "befsmavz",
+  },
 };
 
 const dkteori: ExamConfig = {
@@ -8849,6 +9464,307 @@ const dkteori: ExamConfig = {
     ],
     sourceLine: "Based on Færdselsstyrelsen's category B teaching plan (undervisningsplan, 2026). Original questions in English; 25 per test, 20 to pass like the real test's five-error limit.",
     analyticsKey: "dkteori",
+  },
+  review: { da: "machine" },
+  translations: {
+    da: examTranslation(dkteoriDa),
+  },
+};
+
+const dkmoto: ExamConfig = {
+  id: "dkmoto",
+  stateCode: "DKMOTO",
+  idBase: 23700,
+  slug: "/denmark-motorcycle-theory",
+  landingPath: "/denmark-motorcycle-theory-test",
+  name: "Denmark Motorcycle Theory Practice Test",
+  shortName: "Denmark motorcycle theory",
+  examLabel: "Danish motorcycle theory test",
+  fullName: "Danish motorcycle theory test (teoriprøve), categories A1, A2 and A",
+  questionIdPrefix: "DKMC-",
+  icon: "bike",
+  testCount: 8,
+  questionsPerTest: 25,
+  passPct: 80,
+  // Source: Færdselsstyrelsen (fstyr.dk, checked 2026-11-06): the digital theory test is offered
+  // for category A among others, in Danish and English at every digital test site (German only in
+  // Aabenraa), at most five errors; the category A teaching plan (undervisningsplan AM, A1, A2 og A,
+  // version 1.0 2026, in use from 1 July 2026) runs the theory test under the category B rules
+  // (about half an hour, random series, computer-generated pictures). 25 questions per guides.
+  // Weights from Færdselsstyrelsen's published randomisation key for the digital category A test:
+  // afsnit 1, 3, 4, 5, 6 and 8 8% each, afsnit 7 52%, so per 25: 2 each and 13 for afsnit 7
+  // (split 4/3/3/3 by sub-section, Tigertest's own). The real test is picture-based with one or
+  // more correct answers; ours are text, single answer, signs described in words. Eight
+  // real-length tests; pools are exactly 8x each count. All items original.
+  blueprint: {
+    dkmcBike: 2,
+    dkmcVehicles: 2,
+    dkmcRider: 2,
+    dkmcRoad: 2,
+    dkmcRules: 2,
+    dkmcPosition: 4,
+    dkmcPassing: 3,
+    dkmcJunctions: 3,
+    dkmcMotorway: 3,
+    dkmcRisk: 2,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 23701, name: "Your Motorcycle, Licence & Other Vehicles", categories: ["dkmcBike", "dkmcRules", "dkmcVehicles"], size: 48, weightLabel: "6 of 25 test questions" },
+    { setNumber: 2, id: 23702, name: "Rider, Road & Risk", categories: ["dkmcRider", "dkmcRoad", "dkmcRisk"], size: 48, weightLabel: "6 of 25 test questions" },
+    { setNumber: 3, id: 23703, name: "Position, Bends & Overtaking", categories: ["dkmcPosition", "dkmcPassing"], size: 56, weightLabel: "7 of 25 test questions" },
+    { setNumber: 4, id: 23704, name: "Junctions, Motorways & Darkness", categories: ["dkmcJunctions", "dkmcMotorway"], size: 48, weightLabel: "6 of 25 test questions" },
+  ],
+  categoryLabels: {
+    dkmcBike: "Motorcycle, Gear & Documents",
+    dkmcVehicles: "Other Vehicles & How They Handle",
+    dkmcRider: "Perception, Fitness & Other Road Users",
+    dkmcRoad: "Road Conditions & Grip",
+    dkmcRules: "Licences, Passengers & Basic Rules",
+    dkmcPosition: "Moving Off, Position, Bends & Lanes",
+    dkmcPassing: "Meeting, Following & Overtaking",
+    dkmcJunctions: "Junctions & Roundabouts",
+    dkmcMotorway: "Motorways, Parking & Darkness",
+    dkmcRisk: "Alcohol, Drugs & Speed",
+  },
+  copy: {
+    guestPrompt: "to save your Danish motorcycle theory progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets covering the whole motorcycle teaching plan, in English. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 25 questions like the real test, 20 to pass",
+    heroSubs: [
+      "Four topics, eight real-length tests. Riding on the road weighs most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your teoriprøve.",
+    ],
+    sourceLine: "Based on Færdselsstyrelsen's teaching plan for categories A1, A2 and A (undervisningsplan, 2026). Original questions in English; 25 per test, 20 to pass like the real test's five-error limit.",
+    analyticsKey: "dkmoto",
+  },
+};
+
+const dkindfoed: ExamConfig = {
+  id: "dkindfoed",
+  stateCode: "DKINDFOED",
+  idBase: 23600,
+  slug: "/indfoedsretsproeve",
+  landingPath: "/da/indfoedsretsproeven-oevelsesproeve",
+  name: "Indfødsretsprøven",
+  shortName: "Indfødsretsprøven",
+  examLabel: "Indfødsretsprøven",
+  fullName: "Indfødsretsprøven (danske samfundsforhold, dansk kultur og historie)",
+  questionIdPrefix: "DKIND-",
+  icon: "flag",
+  testCount: 8,
+  questionsPerTest: 40,
+  passPct: 90,
+  language: "da",
+  locale: "da-DK",
+  english: {
+    name: "Danish Citizenship Test (Indfødsretsprøven)",
+    shortName: "Danish citizenship test",
+    fullName: "Danish citizenship test (indfødsretsprøven), in Danish",
+  },
+  review: { da: "model" },
+  // Real test (Lex, last changed 2025-10-28; Lovguiden 2026-06-01; checked 2026-11-06): run by
+  // SIRI under Udlændinge- og Integrationsministeriet, twice a year (May/June, Nov/Dec) at
+  // language centres; 45 questions in 45 minutes, in Danish, mostly three options, some yes/no:
+  // 35 from "Læremateriale til indfødsretsprøven" (danske samfundsforhold, dansk kultur og
+  // historie), 5 current affairs, 5 values; pass 36 of 45 with at least 4 of the 5 values right.
+  // Current affairs not modelled, so 40 per test (35 + 5 values) and 36 to pass. SIRI publishes no
+  // topic weights: the 4/3/4/3/7/7/7 split of the 35 is Tigertest's. All items original.
+  blueprint: {
+    dkindHistOld: 4,
+    dkindHistEarly: 3,
+    dkindHistDemo: 4,
+    dkindHistNew: 3,
+    dkindDemokrati: 7,
+    dkindSamfund: 7,
+    dkindKultur: 7,
+    dkindVaerdier: 5,
+  },
+  // Six topic sets of at most 60, not testSets(): 6 + 8 tests = 14 dashboard steps.
+  trainingSets: [
+    { setNumber: 1, id: 23601, name: "Historie indtil 1849", categories: ["dkindHistOld", "dkindHistEarly"], size: 56, weightLabel: "7 af 40 spørgsmål pr. prøve" },
+    { setNumber: 2, id: 23602, name: "Historie fra 1849", categories: ["dkindHistDemo", "dkindHistNew"], size: 56, weightLabel: "7 af 40 spørgsmål pr. prøve" },
+    { setNumber: 3, id: 23603, name: "Grundloven og folkestyret", categories: ["dkindDemokrati"], size: 56, weightLabel: "7 af 40 spørgsmål pr. prøve" },
+    { setNumber: 4, id: 23604, name: "Samfund og økonomi", categories: ["dkindSamfund"], size: 56, weightLabel: "7 af 40 spørgsmål pr. prøve" },
+    { setNumber: 5, id: 23605, name: "Kultur og traditioner", categories: ["dkindKultur"], size: 56, weightLabel: "7 af 40 spørgsmål pr. prøve" },
+    { setNumber: 6, id: 23606, name: "Danske værdier", categories: ["dkindVaerdier"], size: 40, weightLabel: "5 af 40, mindst 4 skal være rigtige" },
+  ],
+  categoryLabels: {
+    dkindHistOld: "Oldtid, vikingetid og middelalder",
+    dkindHistEarly: "Fra Reformationen til Grundloven",
+    dkindHistDemo: "Fra Grundloven til befrielsen",
+    dkindHistNew: "Danmark efter 1945",
+    dkindDemokrati: "Grundloven og folkestyret",
+    dkindSamfund: "Samfund, velfærd og økonomi",
+    dkindKultur: "Kultur og traditioner",
+    dkindVaerdier: "Danske værdier",
+  },
+  copy: {
+    guestPrompt: "for at gemme dine fremskridt til indfødsretsprøven og holde styr på hvert forkert svar",
+    trainingHeading: "Træningssæt",
+    trainingSub: "Hvert træningssæt dækker et emne. Du får svar med det samme, og de spørgsmål, du svarer forkert på, kommer igen, til du kan dem. Danske værdier har sit eget sæt, fordi 4 af 5 værdispørgsmål skal være rigtige.",
+    testsHeading: "Prøver · 40 spørgsmål, 36 for at bestå, 4 af 5 værdier",
+    heroSubs: [
+      "Seks træningssæt, otte prøver med 40 spørgsmål. Begynd med danske værdier.",
+      "Bliv sikker i sættet, tag så prøven.",
+      "Halvvejs. Hold styr på værdispørgsmålene.",
+      "Øv dine fejl, og tag prøven igen.",
+      "Alt er grønt. Du er klar til indfødsretsprøven.",
+    ],
+    sourceLine: "Egne spørgsmål om emnerne i SIRI's læremateriale og danske værdier, november 2026. Aktuelle spørgsmål er ikke med; tjek selv, at du har mindst 4 af 5 værdispørgsmål rigtige.",
+    analyticsKey: "dkindfoed",
+  },
+};
+
+const dkmedborger: ExamConfig = {
+  id: "dkmedborger",
+  stateCode: "DKMEDB",
+  idBase: 23900,
+  slug: "/medborgerskabsproeve",
+  landingPath: "/da/medborgerskabsproeven-oevelsesproeve",
+  name: "Medborgerskabsprøven",
+  shortName: "Medborgerskabsprøven",
+  examLabel: "Medborgerskabsprøven",
+  fullName: "Medborgerskabsprøven (demokrati og hverdagsliv i Danmark)",
+  questionIdPrefix: "DKMED-",
+  icon: "flag",
+  testCount: 8,
+  questionsPerTest: 25,
+  passPct: 80,
+  language: "da",
+  locale: "da-DK",
+  english: {
+    name: "Danish Permanent Residence Test (Medborgerskabsprøven)",
+    shortName: "Danish permanent residence test",
+    fullName: "Danish active citizenship test for permanent residence (medborgerskabsprøven), in Danish",
+  },
+  review: { da: "model" },
+  // Real test (BEK nr. 452 af 13.05.2024 §§ 1, 9, 10, 35; May 2025 booklet; UC+ Dansk; checked
+  // 2026-11-06): run by SIRI through approved language centres, twice a year (May/June and
+  // Nov/Dec); 25 multiple-choice questions (2 or 3 options) on paper in 30 minutes, no aids,
+  // pass with 20 of 25, all equal; questions within SIRI's "Læremateriale til
+  // medborgerskabsprøven: demokrati og hverdagsliv i Danmark" (Aug 2024, 26 fakta-ark). A pass is
+  // one of the 2-of-4 supplementary conditions for permanent residence. SIRI publishes no topic
+  // weights: the 3/4/3/3/4/3/3/2 split is Tigertest's. All items original.
+  blueprint: {
+    dkmedSkole: 3,
+    dkmedArbejde: 4,
+    dkmedVelfaerd: 3,
+    dkmedFamilie: 3,
+    dkmedDemokrati: 4,
+    dkmedRettigheder: 3,
+    dkmedVerden: 3,
+    dkmedKultur: 2,
+  },
+  // Four topic sets, not testSets(): 4 + 8 tests = 12 dashboard steps.
+  trainingSets: [
+    { setNumber: 1, id: 23901, name: "Hverdagsliv: skole, familie og fritid", categories: ["dkmedSkole", "dkmedFamilie"], size: 48, weightLabel: "6 af 25 spørgsmål pr. prøve" },
+    { setNumber: 2, id: 23902, name: "Arbejde og velfærd", categories: ["dkmedArbejde", "dkmedVelfaerd"], size: 56, weightLabel: "7 af 25 spørgsmål pr. prøve" },
+    { setNumber: 3, id: 23903, name: "Demokrati, rettigheder og pligter", categories: ["dkmedDemokrati", "dkmedRettigheder"], size: 56, weightLabel: "7 af 25 spørgsmål pr. prøve" },
+    { setNumber: 4, id: 23904, name: "Danmark i verden, historie og kultur", categories: ["dkmedVerden", "dkmedKultur"], size: 40, weightLabel: "5 af 25 spørgsmål pr. prøve" },
+  ],
+  categoryLabels: {
+    dkmedSkole: "Skole, uddannelse og dagtilbud",
+    dkmedArbejde: "Arbejdsmarked og erhvervsliv",
+    dkmedVelfaerd: "Velfærd, sundhed og skat",
+    dkmedFamilie: "Familie, foreninger og ligestilling",
+    dkmedDemokrati: "Valg, Folketing og retssamfund",
+    dkmedRettigheder: "Kommune, rettigheder og tro",
+    dkmedVerden: "Danmark i verden, geografi og klima",
+    dkmedKultur: "Historie, kultur og mærkedage",
+  },
+  copy: {
+    guestPrompt: "for at gemme dine fremskridt til medborgerskabsprøven og holde styr på hvert forkert svar",
+    trainingHeading: "Træningssæt",
+    trainingSub: "Hvert træningssæt dækker en del af lærematerialet. Du får svar med det samme, og de spørgsmål, du svarer forkert på, kommer igen, til du kan dem.",
+    testsHeading: "Prøver · 25 spørgsmål, 20 for at bestå",
+    heroSubs: [
+      "Fire træningssæt, otte prøver med 25 spørgsmål som den rigtige.",
+      "Bliv sikker i sættet, tag så prøven.",
+      "Halvvejs. Tag en prøve på 30 minutter.",
+      "Øv dine fejl, og tag prøven igen.",
+      "Alt er grønt. Du er klar til medborgerskabsprøven.",
+    ],
+    sourceLine: "Egne spørgsmål om emnerne i SIRI's læremateriale til medborgerskabsprøven, november 2026. 25 spørgsmål og 20 for at bestå som den rigtige prøve; fire svarmuligheder i stedet for to eller tre.",
+    analyticsKey: "dkmedborger",
+  },
+};
+
+const dkjagt: ExamConfig = {
+  id: "dkjagt",
+  stateCode: "DKJAGT",
+  idBase: 23800,
+  slug: "/jagtproeve",
+  landingPath: "/da/jagtproeven-oevelsesproeve",
+  name: "Jagtprøven",
+  shortName: "Jagtprøven",
+  examLabel: "Jagtprøven, skriftlig del",
+  fullName: "Jagtprøven: den skriftlige prøve til jagttegn",
+  questionIdPrefix: "DKJAG-",
+  icon: "target",
+  testCount: 5,
+  questionsPerTest: 40,
+  passPct: 90,
+  language: "da",
+  locale: "da-DK",
+  english: {
+    name: "Danish Hunting Licence Test (Jagtprøven)",
+    shortName: "Danish hunting test",
+    fullName: "Danish hunting licence test (jagtprøven), written part, in Danish",
+  },
+  review: { da: "model" },
+  // Real test (Instruks for jagtprøven 2026 pkt. 3, jagttegnsbekendtgørelsen nr. 238/2025 §§ 8-10;
+  // checked 2026-11-06): run by Styrelsen for Grøn Arealomlægning og Vandmiljø, held by
+  // Naturstyrelsen; written part 40 questions in 30 minutes, pass with 36, unanswered count as
+  // errors, then a practical test. Topics: the eight areas of the 2025 Retningslinjer for
+  // spørgsmål til den skriftlige jagtprøve. No weights are published: the 7/5/6/6/7/3/3/3 split
+  // is Tigertest's. Five real-length tests, pools exactly 5x (200, all original, written in
+  // Danish). No season dates (the jagttider are revised for 2026/27).
+  blueprint: {
+    dkjgArter: 7,
+    dkjgForvaltning: 5,
+    dkjgVaaben: 6,
+    dkjgSikkerhed: 6,
+    dkjgLov: 7,
+    dkjgVildt: 3,
+    dkjgEtik: 3,
+    dkjgTeknik: 3,
+  },
+  // Five topic sets, not testSets(): 5 + 5 tests = 10 dashboard steps.
+  trainingSets: [
+    { setNumber: 1, id: 23801, name: "Vildtarter og vildtbiologi", categories: ["dkjgArter"], size: 35, weightLabel: "7 af 40 spørgsmål pr. prøve" },
+    { setNumber: 2, id: 23802, name: "Vildtforvaltning og jagtetik", categories: ["dkjgForvaltning", "dkjgEtik"], size: 40, weightLabel: "8 af 40 spørgsmål pr. prøve" },
+    { setNumber: 3, id: 23803, name: "Våben og sikkerhed", categories: ["dkjgVaaben", "dkjgSikkerhed"], size: 60, weightLabel: "12 af 40 spørgsmål pr. prøve" },
+    { setNumber: 4, id: 23804, name: "Jagtlovgivning", categories: ["dkjgLov"], size: 35, weightLabel: "7 af 40 spørgsmål pr. prøve" },
+    { setNumber: 5, id: 23805, name: "Jagtpraksis og vildthåndtering", categories: ["dkjgTeknik", "dkjgVildt"], size: 30, weightLabel: "6 af 40 spørgsmål pr. prøve" },
+  ],
+  categoryLabels: {
+    dkjgArter: "Artsbestemmelse og vildtbiologi",
+    dkjgForvaltning: "Vildtforvaltning og natur",
+    dkjgVaaben: "Jagtvåben og ammunition",
+    dkjgSikkerhed: "Sikkerhed og skudafgivelse",
+    dkjgLov: "Jagtlovgivning",
+    dkjgVildt: "Håndtering af nedlagt vildt",
+    dkjgEtik: "Jagtetik og etikette",
+    dkjgTeknik: "Jagtteknik og ledelse",
+  },
+  copy: {
+    guestPrompt: "for at gemme dine fremskridt til jagtprøven og holde styr på hvert forkert svar",
+    trainingHeading: "Træningssæt",
+    trainingSub: "Hvert træningssæt dækker et emne fra retningslinjerne for den skriftlige jagtprøve. Du får svar med det samme, og de spørgsmål, du svarer forkert på, kommer igen, til du kan dem.",
+    testsHeading: "Prøver · 40 spørgsmål, 36 for at bestå",
+    heroSubs: [
+      "Fem træningssæt, fem prøver med 40 spørgsmål. Begynd med våben og sikkerhed.",
+      "Bliv sikker i sættet, tag så prøven.",
+      "Halvvejs. Højst 4 fejl pr. prøve.",
+      "Øv dine fejl, og tag prøven igen.",
+      "Alt er grønt. Du er klar til den skriftlige jagtprøve.",
+    ],
+    sourceLine: "Egne spørgsmål efter jagtloven, våbenreglerne og retningslinjerne for den skriftlige jagtprøve, november 2026. Ingen jagttider; arter beskrevet i ord.",
+    analyticsKey: "dkjagt",
   },
 };
 
@@ -8917,6 +9833,243 @@ const setrafik: ExamConfig = {
     ],
     sourceLine: "Based on Swedish traffic rules and Trafikverket's theory test areas. Original questions; 50 per test, 80% to pass like the real 52 of 65.",
     analyticsKey: "setrafik",
+  },
+  review: { sv: "machine" },
+  translations: {
+    sv: examTranslation(setrafikSv),
+  },
+};
+
+const semoto: ExamConfig = {
+  id: "semoto",
+  stateCode: "SEMOTO",
+  idBase: 23200,
+  slug: "/motorcykel-teori",
+  landingPath: "/sv/motorcykel-teoriprov",
+  name: "Teoriprov motorcykel A, A1, A2",
+  shortName: "MC-teori",
+  examLabel: "Kunskapsprov för motorcykel",
+  fullName: "Kunskapsprov för körkortsbehörighet A1, A2 och A (motorcykel)",
+  questionIdPrefix: "SEMOTO-",
+  icon: "bike",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  language: "sv",
+  locale: "sv-SE",
+  english: {
+    name: "Sweden Motorcycle Theory Test (A, A1, A2)",
+    shortName: "Swedish motorcycle theory test",
+    fullName: "Swedish motorcycle licence knowledge test (kunskapsprov) for categories A1, A2 and A, in Swedish",
+  },
+  review: { sv: "model" },
+  // Real test (Trafikverket, Motorcykel, checked 2026-11-06): 70 questions, one right answer each,
+  // 5 unscored trial questions, max 65 points, 52 to pass (80%), 50 minutes, read aloud in Swedish.
+  // Five knowledge areas (fordonskännedom och manövrering, miljö, trafiksäkerhet, trafikregler,
+  // personliga förutsättningar), no published weights: the nine categories and the
+  // 5/8/7/6/4/4/7/6/3 split are Tigertest's own, written from trafikförordningen (1998:1276),
+  // Transportstyrelsen's A1/A2/A pages and the course plan TSFS 2011:19. Four tests of 50, pools
+  // exactly 4x each count (200, all original, written in Swedish).
+  blueprint: {
+    semoFordon: 5,
+    semoManover: 8,
+    semoPlacering: 7,
+    semoRegler: 6,
+    semoPassagerare: 4,
+    semoBehorighet: 4,
+    semoVaglag: 7,
+    semoPersonlig: 6,
+    semoMiljo: 3,
+  },
+  // Five topic sets, then the four tests: 9 dashboard steps.
+  trainingSets: [
+    { setNumber: 1, id: 23201, name: "Motorcykeln och körtekniken", categories: ["semoFordon", "semoManover"], size: 52, weightLabel: "13 av 50 frågor per prov" },
+    { setNumber: 2, id: 23202, name: "Placering och trafikregler", categories: ["semoPlacering", "semoRegler"], size: 52, weightLabel: "13 av 50 frågor per prov" },
+    { setNumber: 3, id: 23203, name: "Passagerare och behörigheter", categories: ["semoPassagerare", "semoBehorighet"], size: 32, weightLabel: "8 av 50 frågor per prov" },
+    { setNumber: 4, id: 23204, name: "Väglag, väder och vilt", categories: ["semoVaglag"], size: 28, weightLabel: "7 av 50 frågor per prov" },
+    { setNumber: 5, id: 23205, name: "Du som förare och miljön", categories: ["semoPersonlig", "semoMiljo"], size: 36, weightLabel: "9 av 50 frågor per prov" },
+  ],
+  categoryLabels: {
+    semoFordon: "Motorcykelns teknik och kontroller",
+    semoManover: "Bromsning, kurvtagning och balans",
+    semoPlacering: "Placering, synbarhet och samspel",
+    semoRegler: "Trafikregler för motorcykel",
+    semoPassagerare: "Passagerare, packning och släp",
+    semoBehorighet: "Behörigheter och övningskörning",
+    semoVaglag: "Väglag, väder, mörker och vilt",
+    semoPersonlig: "Personliga förutsättningar och skydd",
+    semoMiljo: "Miljö",
+  },
+  copy: {
+    guestPrompt: "för att spara dina framsteg inför MC-teorin och hålla koll på varje fel svar",
+    trainingHeading: "Övningsset",
+    trainingSub: "Varje övningsset tar upp ett eller två ämnen från provet. Du får svar direkt, och frågor du svarar fel på kommer tillbaka tills du kan dem.",
+    testsHeading: "Övningsprov · 50 frågor, 80 procent för godkänt",
+    heroSubs: [
+      "Fem övningsset, fyra övningsprov. Bromsning, kurvor och placering kommer oftast.",
+      "Klara övningssetet först, sedan övningsprovet.",
+      "Halvvägs. Gör ett övningsprov.",
+      "Repetera dina fel och testa igen.",
+      "Allt grönt. Boka ditt kunskapsprov.",
+    ],
+    sourceLine: "Enligt trafikförordningen och Transportstyrelsens regler för A1, A2 och A, november 2026. Egna frågor, inte Trafikverkets; 50 per övningsprov, utan bildfrågor.",
+    analyticsKey: "semoto",
+  },
+};
+
+const sejakt: ExamConfig = {
+  id: "sejakt",
+  stateCode: "SEJAKT",
+  idBase: 23400,
+  slug: "/jagarexamen",
+  landingPath: "/sv/jagarexamen-teoriprov",
+  name: "Jägarexamen teoriprov",
+  shortName: "Jägarexamen",
+  examLabel: "Teoriprov i jägarexamen",
+  fullName: "Jägarexamen, teoretiskt prov (Naturvårdsverket)",
+  questionIdPrefix: "SEJAKT-",
+  icon: "target",
+  testCount: 3,
+  questionsPerTest: 70,
+  passPct: 85,
+  language: "sv",
+  locale: "sv-SE",
+  english: {
+    name: "Sweden Hunting Licence Theory Test (Jägarexamen)",
+    shortName: "Swedish hunting licence test",
+    fullName: "Swedish hunting licence theory test (jägarexamen, teoriprov), in Swedish",
+  },
+  review: { sv: "model" },
+  // Real test (NFS 2015:10 13 a-13 b §§ as amended by NFS 2019:8; Naturvårdsverket's teoriprov
+  // page, checked 2026-11-06): 70 questions, at most 60 minutes, at least 60 correct, up to three
+  // unscored test questions; four options, one correct; app on own device before a provledare;
+  // Swedish or English. Categories group the 16 areas of Naturvårdsverket's kompetensbeskrivning
+  // (2020); no weights are published, so the 12/12/10/10/8/7/6/5 split is Tigertest's own.
+  // Three tests of 70, pools exactly 3x (210, all original, written in Swedish). passPct 85 gives
+  // ceil(59.5) = 60 of 70, the real pass line.
+  blueprint: {
+    sejkArter: 12,
+    sejkLag: 12,
+    sejkSakerhet: 10,
+    sejkVapen: 10,
+    sejkEtik: 8,
+    sejkMetoder: 7,
+    sejkVilt: 6,
+    sejkKott: 5,
+  },
+  // Five topic sets, then the three tests: 8 dashboard steps.
+  trainingSets: [
+    { setNumber: 1, id: 23401, name: "Viltarter och ekologi", categories: ["sejkArter"], size: 36, weightLabel: "12 av 70 frågor per prov" },
+    { setNumber: 2, id: 23402, name: "Jakt- och vapenlagar", categories: ["sejkLag"], size: 36, weightLabel: "12 av 70 frågor per prov" },
+    { setNumber: 3, id: 23403, name: "Säkerhet, vapen och ammunition", categories: ["sejkSakerhet", "sejkVapen"], size: 60, weightLabel: "20 av 70 frågor per prov" },
+    { setNumber: 4, id: 23404, name: "Etik, eftersök och jaktmetoder", categories: ["sejkEtik", "sejkMetoder"], size: 45, weightLabel: "15 av 70 frågor per prov" },
+    { setNumber: 5, id: 23405, name: "Viltvård och viltkött", categories: ["sejkVilt", "sejkKott"], size: 33, weightLabel: "11 av 70 frågor per prov" },
+  ],
+  categoryLabels: {
+    sejkArter: "Artkännedom och ekologi",
+    sejkLag: "Jakt- och vapenlagstiftning",
+    sejkSakerhet: "Säkerhet vid vapenhantering",
+    sejkVapen: "Vapen, ammunition och ballistik",
+    sejkEtik: "Jaktetik, skadskjutning och eftersök",
+    sejkMetoder: "Jaktmetoder och jakthundar",
+    sejkVilt: "Viltvård, viltförvaltning och fångst",
+    sejkKott: "Omhändertagande av fällt vilt",
+  },
+  copy: {
+    guestPrompt: "för att spara dina framsteg inför jägarexamen och hålla koll på varje fel svar",
+    trainingHeading: "Övningsset",
+    trainingSub: "Varje övningsset tar upp ett eller två ämnen från teoriprovet. Du får svar direkt, och frågor du svarar fel på kommer tillbaka tills du kan dem.",
+    testsHeading: "Övningsprov · 70 frågor, 60 rätt för godkänt",
+    heroSubs: [
+      "Fem övningsset, tre övningsprov. Viltarter och jaktlagar kommer oftast.",
+      "Klara övningssetet först, sedan övningsprovet.",
+      "Halvvägs. Gör ett övningsprov.",
+      "Repetera dina fel och testa igen.",
+      "Allt grönt. Boka ditt teoriprov.",
+    ],
+    sourceLine: "Enligt jaktlagen, jaktförordningen, vapenlagen och Naturvårdsverkets föreskrifter, november 2026. Egna frågor, inte Naturvårdsverkets; 70 per övningsprov, utan bildfrågor.",
+    analyticsKey: "sejakt",
+  },
+};
+
+const semedb: ExamConfig = {
+  id: "semedb",
+  stateCode: "SEMEDB",
+  idBase: 23500,
+  slug: "/medborgarskapsprovet",
+  landingPath: "/sv/medborgarskapsprov-ovning",
+  name: "Medborgarskapsprovet, övningsprov",
+  shortName: "Medborgarskapsprovet",
+  examLabel: "Medborgarskapsprov i samhällskunskap",
+  fullName: "Medborgarskapsprov i samhällskunskap (UHR)",
+  questionIdPrefix: "SEMEDB-",
+  icon: "flag",
+  testCount: 3,
+  questionsPerTest: 60,
+  passPct: 70,
+  language: "sv",
+  locale: "sv-SE",
+  english: {
+    name: "Swedish Citizenship Test (Civics)",
+    shortName: "Swedish citizenship test",
+    fullName: "Swedish citizenship test in civics (medborgarskapsprovet i samhällskunskap, UHR), in Swedish",
+  },
+  review: { sv: "model" },
+  // Real test (UHR, Om medborgarskapsprovet, updated 22 Oct 2026; Förordning (2026:451); press
+  // reports of the 15 Aug 2026 sitting; checked 2026-11-06): Swedish, on paper, four options and
+  // one right answer; 60 questions in 90 minutes, of which 40 scored, 28 of 40 (70%) to pass.
+  // Length and time of the April to May 2027 sitting not yet announced. Content: UHR's study
+  // material "Sverige i fokus" (1st ed., corrected 2026-08-10), whose chapters are the ten
+  // categories below (val och partier joined with demokrati, arbete with välfärd, religion with
+  // traditioner); UHR publishes no weights, so the 6/7/6/7/4/7/7/7/4/5 split is Tigertest's.
+  // Three 60-question tests; each pool is 3x its count plus 2 training-only spares (200, all
+  // original, written in Swedish).
+  blueprint: {
+    smdbLandet: 6,
+    smdbDemokrati: 7,
+    smdbStyrning: 6,
+    smdbLag: 7,
+    smdbMedier: 4,
+    smdbRattigheter: 7,
+    smdbArbete: 7,
+    smdbHistoria: 7,
+    smdbOmvarlden: 4,
+    smdbReligion: 5,
+  },
+  // Five topic sets, then the three tests: 8 dashboard steps.
+  trainingSets: [
+    { setNumber: 1, id: 23501, name: "Landet, demokratin och valen", categories: ["smdbLandet", "smdbDemokrati"], size: 43, weightLabel: "13 av 60 frågor per prov" },
+    { setNumber: 2, id: 23502, name: "Styrning, lag och rätt", categories: ["smdbStyrning", "smdbLag"], size: 43, weightLabel: "13 av 60 frågor per prov" },
+    { setNumber: 3, id: 23503, name: "Medier och mänskliga rättigheter", categories: ["smdbMedier", "smdbRattigheter"], size: 37, weightLabel: "11 av 60 frågor per prov" },
+    { setNumber: 4, id: 23504, name: "Arbete, välfärd och historia", categories: ["smdbArbete", "smdbHistoria"], size: 46, weightLabel: "14 av 60 frågor per prov" },
+    { setNumber: 5, id: 23505, name: "Omvärlden, religion och traditioner", categories: ["smdbOmvarlden", "smdbReligion"], size: 31, weightLabel: "9 av 60 frågor per prov" },
+  ],
+  categoryLabels: {
+    smdbLandet: "Landet Sverige",
+    smdbDemokrati: "Demokrati, val och partier",
+    smdbStyrning: "Så styrs Sverige",
+    smdbLag: "Lag och rätt",
+    smdbMedier: "Mediernas roll",
+    smdbRattigheter: "Mänskliga rättigheter",
+    smdbArbete: "Arbete, privatekonomi och välfärd",
+    smdbHistoria: "Sveriges moderna historia",
+    smdbOmvarlden: "Sverige och omvärlden",
+    smdbReligion: "Religion, traditioner och högtider",
+  },
+  copy: {
+    guestPrompt: "för att spara dina framsteg inför medborgarskapsprovet och hålla koll på varje fel svar",
+    trainingHeading: "Övningsset",
+    trainingSub: "Varje övningsset tar upp två kapitel ur Sverige i fokus. Du får svar direkt, och frågor du svarar fel på kommer tillbaka tills du kan dem.",
+    testsHeading: "Övningsprov · 60 frågor, 70 procent för godkänt",
+    heroSubs: [
+      "Fem övningsset, tre övningsprov. Demokrati, lag, rättigheter, välfärd och historia kommer oftast.",
+      "Klara övningssetet först, sedan övningsprovet.",
+      "Halvvägs. Gör ett övningsprov.",
+      "Repetera dina fel och testa igen.",
+      "Allt grönt. Du är redo för medborgarskapsprovet.",
+    ],
+    sourceLine: "Utifrån UHR:s utbildningsmaterial Sverige i fokus och svensk lag, november 2026. Egna frågor, inte UHR:s; 60 per övningsprov och 70 procent för godkänt.",
+    analyticsKey: "semedb",
   },
 };
 
@@ -8988,6 +10141,299 @@ const fitheory: ExamConfig = {
     sourceLine: "Based on the Finnish Road Traffic Act and Traficom's theory test rules. Original questions in English; 50 per test, 86% is Tigertest's target.",
     analyticsKey: "fitheory",
   },
+  review: { fi: "machine" },
+  translations: {
+    fi: examTranslation(fitheoryFi),
+  },
+};
+
+const fimoto: ExamConfig = {
+  id: "fimoto",
+  stateCode: "FIMOTO",
+  idBase: 24100,
+  slug: "/finland-motorcycle-theory",
+  landingPath: "/finland-motorcycle-theory-test",
+  name: "Finland Motorcycle Theory Practice Test",
+  shortName: "Finland motorcycle test",
+  examLabel: "Finland motorcycle theory test",
+  fullName: "Finland motorcycle theory test, categories A1, A2 and A (teoriakoe)",
+  questionIdPrefix: "FIMOTO-",
+  icon: "bike",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 86,
+  // Source: Traficom regulation on the driving theory test (TRAFICOM/523973/03.04.03.00/2019, in
+  // force 15.6.2020) and Traficom's "Driving examination" page: categories A1, A2 and A are 20
+  // multiple choice (14 to pass), 50 traffic picture questions (43) and 5 risk recognition
+  // questions (4) in 30 minutes, each part passed separately. Topic areas from the regulation: the
+  // general traffic rules plus, for A1/A2/A, protective gear, rider visibility, road-condition
+  // hazards and motorcycle mechanics; pictures on driving straight, turning, giving way,
+  // overtaking, lane changes, stopping, parking. No official weights, so the split is Tigertest's
+  // own. Rules from the Road Traffic Act 729/2018 as consolidated to 17 April 2026; licence limits
+  // and upgrades from Traficom's motorcycle licence pages. 86% (43 of 50) mirrors the picture part.
+  // Checked 2026-11-06. Pools are exactly 4x each count. All items original.
+  blueprint: {
+    fimotoGear: 5,
+    fimotoBike: 5,
+    fimotoControl: 7,
+    fimotoPosition: 6,
+    fimotoYield: 7,
+    fimotoOvertake: 5,
+    fimotoSurface: 6,
+    fimotoLoad: 4,
+    fimotoRider: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 24101, name: "Gear, Checks & Your Motorcycle", categories: ["fimotoGear", "fimotoBike"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 2, id: 24102, name: "Control, Surfaces & Winter", categories: ["fimotoControl", "fimotoSurface"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 3, id: 24103, name: "Junctions, Overtaking & Large Vehicles", categories: ["fimotoYield", "fimotoOvertake"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 4, id: 24104, name: "Road Position, Passengers & Loads", categories: ["fimotoPosition", "fimotoLoad"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 5, id: 24105, name: "The Rider & Licence Categories", categories: ["fimotoRider"], size: 20, weightLabel: "5 of 50 test questions" },
+  ],
+  categoryLabels: {
+    fimotoGear: "Helmet, Protective Gear & Being Seen",
+    fimotoBike: "Motorcycle Checks & Mechanics",
+    fimotoControl: "Braking, Cornering & Control",
+    fimotoPosition: "Road Position, Speed & Parking",
+    fimotoYield: "Junctions & Giving Way",
+    fimotoOvertake: "Overtaking, Meeting & Large Vehicles",
+    fimotoSurface: "Road Surfaces, Weather & Winter",
+    fimotoLoad: "Passengers, Luggage & Trailers",
+    fimotoRider: "The Rider, Alcohol & Licence Categories",
+  },
+  copy: {
+    guestPrompt: "to save your motorcycle theory progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets on Finnish rules for riders, in English: gear and checks, braking and cornering, junctions and overtaking, road surfaces and winter, passengers and the A1, A2 and A licences. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, aim for 43 or more",
+    heroSubs: [
+      "Five topics, four 50-question tests. Control and giving way weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your theory test at Ajovarma.",
+    ],
+    sourceLine: "Based on the Finnish Road Traffic Act and Traficom's theory test and licence rules. Original questions in English; 50 per test, 86% is Tigertest's target.",
+    analyticsKey: "fimoto",
+  },
+};
+
+const fitruck: ExamConfig = {
+  id: "fitruck",
+  stateCode: "FITRUCK",
+  idBase: 24300,
+  slug: "/finland-truck-theory",
+  landingPath: "/finland-truck-theory-test",
+  name: "Finland Truck and Bus Theory Practice Test",
+  shortName: "Finland truck & bus theory",
+  examLabel: "Finland truck and bus theory test",
+  fullName: "Finland truck and bus theory test, categories C, CE, D and DE (teoriakoe)",
+  questionIdPrefix: "FITRK-",
+  icon: "truck",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // Source: Traficom regulation on the driving theory test (TRAFICOM/523973/03.04.03.00/2019, in
+  // force 15.6.2020) and Traficom's "Driving examination" page, checked 2026-11-06: categories C,
+  // CE, D and DE are 20 multiple choice (14 to pass), 30 traffic picture questions (26) and 5 risk
+  // recognition questions (4) in 30 minutes, each part passed separately. Topic areas from the
+  // regulation (driving and rest times, goods or passengers, documents, accidents, tyre changing,
+  // masses, dimensions and speed limiters, blind spots, route planning, load safety, passenger
+  // responsibility, vehicle construction, lubrication and antifreeze, tyres, brakes and speed
+  // governors, coupling, fault finding, maintenance; pictures on turning, giving way, overtaking,
+  // lane changes, stopping, parking). No official weights, so the split is Tigertest's own. Rules
+  // from the Road Traffic Act 729/2018 and its annexes, Act 730/2016 on alcohol interlocks and EU
+  // Regulations 561/2006 (as amended 2020/1054) and 165/2014. 80% = 44 of 55, the real minimums
+  // added up. Truck and bus in one bank. Pools are exactly 4x each count. All items original.
+  blueprint: {
+    fitrkHours: 7,
+    fitrkTacho: 5,
+    fitrkLoads: 6,
+    fitrkPassengers: 5,
+    fitrkVehicle: 5,
+    fitrkBrakes: 7,
+    fitrkRoad: 7,
+    fitrkSafety: 5,
+    fitrkRoute: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 24301, name: "Drivers' Hours & Tachographs", categories: ["fitrkHours", "fitrkTacho"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 2, id: 24302, name: "Loads & Passengers", categories: ["fitrkLoads", "fitrkPassengers"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 3, id: 24303, name: "Brakes, Tyres & the Vehicle", categories: ["fitrkBrakes", "fitrkVehicle"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 4, id: 24304, name: "Heavy Vehicles in Traffic", categories: ["fitrkRoad"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 5, id: 24305, name: "Blind Spots, Winter & Incidents", categories: ["fitrkSafety", "fitrkRoute"], size: 32, weightLabel: "8 of 50 test questions" },
+  ],
+  categoryLabels: {
+    fitrkHours: "Driving & Rest Times",
+    fitrkTacho: "Tachographs, Documents & Driver CPC",
+    fitrkLoads: "Loads, Masses & Dimensions",
+    fitrkPassengers: "Carrying Passengers",
+    fitrkVehicle: "Vehicle Systems, Maintenance & Faults",
+    fitrkBrakes: "Brakes, Tyres & Coupling",
+    fitrkRoad: "Heavy Vehicles in Traffic",
+    fitrkSafety: "Blind Spots, Risks & Fitness to Drive",
+    fitrkRoute: "Route Planning, Winter & Incidents",
+  },
+  copy: {
+    guestPrompt: "to save your truck and bus theory progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets on the Finnish and EU rules for truck and bus drivers, in English: driving and rest times, loads and passengers, brakes and tyres, heavy vehicles in traffic, and winter driving. Missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, aim for 40 or more",
+    heroSubs: [
+      "Five topics, four 50-question tests. Drivers' hours, brakes and traffic weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your theory test at Ajovarma.",
+    ],
+    sourceLine: "Based on the Finnish Road Traffic Act, the EU driving time and tachograph rules and Traficom's theory test topics. Original questions in English; 50 per test, 80% is Tigertest's target. Not affiliated with Traficom.",
+    analyticsKey: "fitruck",
+  },
+};
+
+const fihygiene: ExamConfig = {
+  id: "fihygiene",
+  stateCode: "FIHYGIENE",
+  idBase: 24000,
+  slug: "/finland-hygiene-passport",
+  landingPath: "/finland-hygiene-passport-practice-test",
+  name: "Finland Hygiene Passport Practice Test",
+  shortName: "Hygiene Passport",
+  examLabel: "Hygiene Passport test",
+  fullName: "Finland Hygiene Passport test (hygieniapassitesti)",
+  questionIdPrefix: "FIHYG-",
+  icon: "chef",
+  testCount: 5,
+  questionsPerTest: 40,
+  passPct: 85,
+  // Real test (Ruokavirasto regulation 7/2021 on hygiene proficiency, in force 21.4.2021, and
+  // hygieniapassi.fi, checked 2026-11-06): 40 true/false statements, 45 minutes, at least 34 correct;
+  // Finnish, Swedish or English, special situation tests by arrangement; held by examiners
+  // Ruokavirasto approves (Food Act 297/2021 ss. 19-20). Areas from Annex 1 of 7/2021 (six areas;
+  // area 2 split into food poisoning, temperatures and hygienic handling). No official weights, so
+  // the split is Tigertest's. Figures are Finland's own (decree 318/2021 s. 23 and Ruokavirasto's
+  // restaurant guidance): 6 °C, 4 °C minced meat, 0-3 °C cold-smoked fish, 12 °C for 4 h on display,
+  // hot at least 60 °C, cooling within 4 h, 70 °C cooking, 75 °C poultry. Four options per item,
+  // not true/false. Pools exactly 5x each count. All items original.
+  blueprint: {
+    fihygMicro: 6,
+    fihygPoison: 6,
+    fihygTemp: 7,
+    fihygHandling: 5,
+    fihygPersonal: 7,
+    fihygClean: 4,
+    fihygOwncheck: 3,
+    fihygLaw: 2,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 24001, name: "Microbes & Food Poisoning", categories: ["fihygMicro", "fihygPoison"], size: 60, weightLabel: "12 of 40 test questions" },
+    { setNumber: 2, id: 24002, name: "Temperatures", categories: ["fihygTemp"], size: 35, weightLabel: "7 of 40 test questions" },
+    { setNumber: 3, id: 24003, name: "Hygienic Handling & Cleaning", categories: ["fihygHandling", "fihygClean"], size: 45, weightLabel: "9 of 40 test questions" },
+    { setNumber: 4, id: 24004, name: "Personal Hygiene", categories: ["fihygPersonal"], size: 35, weightLabel: "7 of 40 test questions" },
+    { setNumber: 5, id: 24005, name: "Self-Monitoring & Food Law", categories: ["fihygOwncheck", "fihygLaw"], size: 25, weightLabel: "5 of 40 test questions" },
+  ],
+  categoryLabels: {
+    fihygMicro: "Microbes & Contamination",
+    fihygPoison: "Food Poisoning",
+    fihygTemp: "Storage, Cooking & Cooling Temperatures",
+    fihygHandling: "Hygienic Handling & Allergens",
+    fihygPersonal: "Personal Hygiene",
+    fihygClean: "Cleaning, Waste & Pests",
+    fihygOwncheck: "Self-Monitoring & Oiva",
+    fihygLaw: "Food Law & Authorities",
+  },
+  copy: {
+    guestPrompt: "to save your Hygiene Passport progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets on Ruokavirasto's areas, in English: microbes and food poisoning, Finnish temperatures, handling and cleaning, personal hygiene, self-monitoring and food law. Missed questions come back until you master them.",
+    testsHeading: "Mock tests · 40 questions, 34 to pass",
+    heroSubs: [
+      "Five topics, five 40-question tests. Start with temperatures.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. You are ready for the Hygiene Passport test.",
+    ],
+    sourceLine: "Based on Ruokavirasto's regulation 7/2021, the Food Act and decree 318/2021. Original questions in English; the real test is 40 true/false statements, 34 to pass.",
+    analyticsKey: "fihygiene",
+  },
+};
+
+const fihunt: ExamConfig = {
+  id: "fihunt",
+  stateCode: "FIHUNT",
+  idBase: 24200,
+  slug: "/metsastajatutkinto",
+  landingPath: "/fi/metsastajatutkinto-harjoituskoe",
+  name: "Metsästäjätutkinto harjoituskoe",
+  shortName: "Metsästäjätutkinto",
+  examLabel: "Metsästäjätutkinto",
+  fullName: "Metsästäjätutkinto (Suomen riistakeskus)",
+  questionIdPrefix: "FIHUNT-",
+  icon: "target",
+  testCount: 3,
+  questionsPerTest: 60,
+  passPct: 86,
+  language: "fi",
+  locale: "fi-FI",
+  english: {
+    name: "Finland Hunter's Examination (Metsästäjätutkinto)",
+    shortName: "Finnish hunter's exam",
+    fullName: "Finnish hunter's examination (metsästäjätutkinto), in Finnish",
+  },
+  review: { fi: "model" },
+  // Real exam (Suomen riistakeskus instruction 1.1.2026, asia 336/02.02.01.02/2025, and MMMa
+  // 1160/2014 2-3 §; checked 2026-11-06): 60 multiple-choice questions written by the
+  // riistakeskus, 15 species-identification pictures (15 minutes, first) and 45 theory questions,
+  // at most 1.5 hours; at most 8 wrong (52 of 60); held by riistanhoitoyhdistykset, electronic or
+  // paper; Finnish, Swedish, English or Sámi from 1.1.2026. Categories are the eight topic areas of
+  // MMMa 1160/2014 2 §; the 15/12/8/7/5/5/5/3 split is Tigertest's own (no published weights),
+  // with 15 species items standing in for the picture part, written in words. Three tests of 60
+  // plus 20 training-only spares (200, all original, written in Finnish). passPct 86 gives
+  // ceil(51.6) = 52 of 60, the real pass line.
+  blueprint: {
+    fihnLaji: 15,
+    fihnLaki: 12,
+    fihnTurva: 8,
+    fihnAseet: 7,
+    fihnEtiikka: 5,
+    fihnPyynti: 5,
+    fihnRiista: 5,
+    fihnSaalis: 3,
+  },
+  // Five topic sets, then the three tests: 8 dashboard steps.
+  trainingSets: [
+    { setNumber: 1, id: 24201, name: "Lajintuntemus", categories: ["fihnLaji"], size: 48, weightLabel: "15 / 60 kysymystä koetta kohden" },
+    { setNumber: 2, id: 24202, name: "Metsästyslainsäädäntö", categories: ["fihnLaki"], size: 40, weightLabel: "12 / 60 kysymystä koetta kohden" },
+    { setNumber: 3, id: 24203, name: "Turvallisuus, aseet ja patruunat", categories: ["fihnTurva", "fihnAseet"], size: 50, weightLabel: "15 / 60 kysymystä koetta kohden" },
+    { setNumber: 4, id: 24204, name: "Etiikka ja pyyntimenetelmät", categories: ["fihnEtiikka", "fihnPyynti"], size: 34, weightLabel: "10 / 60 kysymystä koetta kohden" },
+    { setNumber: 5, id: 24205, name: "Riistanhoito ja saaliin käsittely", categories: ["fihnRiista", "fihnSaalis"], size: 28, weightLabel: "8 / 60 kysymystä koetta kohden" },
+  ],
+  categoryLabels: {
+    fihnLaji: "Lajintuntemus",
+    fihnLaki: "Metsästyslainsäädäntö",
+    fihnTurva: "Metsästyksen turvallisuus",
+    fihnAseet: "Aseet ja patruunat metsästyksessä",
+    fihnEtiikka: "Eettinen ja kestävä metsästys",
+    fihnPyynti: "Pyyntivälineet ja pyyntimenetelmät",
+    fihnRiista: "Riistanhoito ja riistaekologia",
+    fihnSaalis: "Saaliin käsittely",
+  },
+  copy: {
+    guestPrompt: "jotta edistymisesi metsästäjätutkintoon tallentuu ja näet jokaisen väärän vastauksen",
+    trainingHeading: "Harjoitussarjat",
+    trainingSub: "Jokainen harjoitussarja käsittelee yhtä tai kahta tutkinnon aihealuetta. Saat palautteen heti, ja väärin menneet kysymykset tulevat uudelleen, kunnes osaat ne.",
+    testsHeading: "Harjoituskokeet · 60 kysymystä, enintään 8 virhettä",
+    heroSubs: [
+      "Viisi harjoitussarjaa, kolme harjoituskoetta. Lajintuntemusta ja metsästyslakia kysytään eniten.",
+      "Hallitse harjoitussarja ensin, sitten harjoituskoe.",
+      "Puolivälissä. Tee harjoituskoe.",
+      "Kertaa virheesi ja testaa uudelleen.",
+      "Kaikki vihreänä. Ilmoittaudu metsästäjätutkintoon.",
+    ],
+    sourceLine: "Metsästyslain, metsästysasetuksen ja ampuma-aselain mukaan, marraskuu 2026. Omat kysymykset, ei riistakeskuksen; lajit kuvataan sanoin, kuvaosiota ei ole.",
+    analyticsKey: "fihunt",
+  },
 };
 
 const grdriving: ExamConfig = {
@@ -9057,6 +10503,220 @@ const grdriving: ExamConfig = {
     sourceLine: "Based on the Greek Highway Code (2025) and Greek road signs. Original questions in English; 30 per test, 29 to pass as guides report.",
     analyticsKey: "grdriving",
   },
+  review: { el: "machine" },
+  translations: {
+    el: examTranslation(grdrivingEl),
+  },
+};
+
+const grmoto: ExamConfig = {
+  id: "grmoto",
+  stateCode: "GRMOTO",
+  idBase: 25300,
+  slug: "/greece-motorcycle-theory",
+  landingPath: "/greece-motorcycle-theory-test",
+  name: "Greece Motorcycle Theory Test Practice",
+  shortName: "Greece motorcycle theory",
+  examLabel: "Greek motorcycle theory test",
+  fullName: "Greece motorcycle theory test (categories A1, A2 and A)",
+  questionIdPrefix: "GRMOTO-",
+  icon: "bike",
+  testCount: 6,
+  questionsPerTest: 30,
+  passPct: 96,
+  // Greek motorcycle theory test (licence group "δίκυκλο" of the Ministry of Infrastructure and
+  // Transport's computer theory test, ΜΣΘΕΥΟ): random multiple-choice questionnaire per
+  // candidate, offered in foreign languages (Law 4850/2021 art. 6). 30 questions, 29 to pass per
+  // guides (autoviatest, Nov 2026); not confirmed on a ministry page, and no time is published.
+  // No topic weights are published; these are Tigertest's, riding control and road position
+  // heaviest. Rider rules from the 2025 Highway Code (Law 5209/2025 arts. 21, 33, 37, 38, 44) as in
+  // force 2026-11-07. Six real-length tests; pools are 6x each count plus 20 training-only spares.
+  // passPct 96 = ceil(0.96 * 30) = 29. All items original; no road-sign items (grdriving's lane).
+  blueprint: {
+    grmoLicence: 3,
+    grmoGear: 4,
+    grmoBike: 3,
+    grmoControl: 5,
+    grmoPosition: 5,
+    grmoJunctions: 4,
+    grmoPassenger: 2,
+    grmoHazards: 3,
+    grmoRules: 1,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 25301, name: "Gear & the Machine", categories: ["grmoGear", "grmoBike"], size: 46, weightLabel: "7 of 30 test questions" },
+    { setNumber: 2, id: 25302, name: "Control & Road Hazards", categories: ["grmoControl", "grmoHazards"], size: 52, weightLabel: "8 of 30 test questions" },
+    { setNumber: 3, id: 25303, name: "Road Position & Junctions", categories: ["grmoPosition", "grmoJunctions"], size: 58, weightLabel: "9 of 30 test questions" },
+    { setNumber: 4, id: 25304, name: "Licences, Passengers & the Code", categories: ["grmoLicence", "grmoPassenger", "grmoRules"], size: 44, weightLabel: "6 of 30 test questions" },
+  ],
+  categoryLabels: {
+    grmoLicence: "Licences, Documents & Rider Conduct",
+    grmoGear: "Helmets & Protective Gear",
+    grmoBike: "Motorcycle Checks & Controls",
+    grmoControl: "Braking, Cornering & Control",
+    grmoPosition: "Road Position, Filtering & Overtaking",
+    grmoJunctions: "Junctions, Priority & Being Seen",
+    grmoPassenger: "Passengers & Loads",
+    grmoHazards: "Road Surfaces, Weather & Hazards",
+    grmoRules: "Highway Code Rules for Riders",
+  },
+  copy: {
+    guestPrompt: "to save your Greek motorcycle theory progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets on riding skills and the 2025 Greek Highway Code's rules for riders, in English. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 30 questions, 29 to pass",
+    heroSubs: [
+      "Four topics, six real-length tests. One mistake is all you can afford.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Ask your driving school to book your motorcycle theory test.",
+    ],
+    sourceLine: "Based on the Greek Highway Code (2025) and motorcycle safety practice. Original questions in English; 30 per test, 29 to pass as guides report.",
+    analyticsKey: "grmoto",
+  },
+};
+
+const grcitizen: ExamConfig = {
+  id: "grcitizen",
+  stateCode: "GRCITIZEN",
+  idBase: 25200,
+  slug: "/eksetaseis-pegp",
+  landingPath: "/el/eksetaseis-pegp-politografisi",
+  name: "Εξετάσεις ΠΕΓΠ για την πολιτογράφηση",
+  shortName: "Εξετάσεις ΠΕΓΠ",
+  examLabel: "Εξετάσεις ΠΕΓΠ",
+  fullName: "Πιστοποιητικό Επάρκειας Γνώσεων για Πολιτογράφηση (Θεματικές Ενότητες)",
+  questionIdPrefix: "GRCIT-",
+  icon: "flag",
+  testCount: 8,
+  questionsPerTest: 20,
+  passPct: 70,
+  language: "el",
+  locale: "el-GR",
+  english: {
+    name: "Greek Citizenship Test (PEGP)",
+    shortName: "Greek citizenship test",
+    fullName: "Greek naturalisation knowledge test (Πιστοποιητικό Επάρκειας Γνώσεων για Πολιτογράφηση, PEGP), thematic units, in Greek",
+  },
+  review: { el: "model" },
+  // Real exam (General Secretariat for Citizenship, Οδηγός εξεταστικής διαδικασίας, April 2026;
+  // checked 2026-11-07): Part A written, 150 min: thematic units 20 questions (4 geography,
+  // 4 culture, 6 history, 6 institutions), 2 points each, max 40; written Greek 18 questions and
+  // an 80-100 word text. Part B listening (10), Part C speaking (up to 15 min). Pass 70/100 with
+  // at least 20/40 thematic and 40/60 Greek. Topics drawn on the day from the public question
+  // bank. Only the thematic units are modelled, at the real 4/4/6/6 split; all items original.
+  // passPct 70 (14 of 20) is Tigertest's target.
+  blueprint: {
+    grcitGeo: 4,
+    grcitCulture: 4,
+    grcitHistory: 6,
+    grcitInst: 6,
+  },
+  // Four topic sets, not testSets(): 4 + 8 tests = 12 dashboard steps.
+  trainingSets: [
+    { setNumber: 1, id: 25201, name: "Γεωγραφία", categories: ["grcitGeo"], size: 48, weightLabel: "4 από τις 20 ερωτήσεις κάθε τεστ" },
+    { setNumber: 2, id: 25202, name: "Πολιτισμός", categories: ["grcitCulture"], size: 40, weightLabel: "4 από τις 20 ερωτήσεις κάθε τεστ" },
+    { setNumber: 3, id: 25203, name: "Ιστορία", categories: ["grcitHistory"], size: 56, weightLabel: "6 από τις 20 ερωτήσεις κάθε τεστ" },
+    { setNumber: 4, id: 25204, name: "Θεσμοί του Πολιτεύματος", categories: ["grcitInst"], size: 56, weightLabel: "6 από τις 20 ερωτήσεις κάθε τεστ" },
+  ],
+  categoryLabels: {
+    grcitGeo: "Γεωγραφία",
+    grcitCulture: "Πολιτισμός",
+    grcitHistory: "Ιστορία",
+    grcitInst: "Θεσμοί του Πολιτεύματος",
+  },
+  copy: {
+    guestPrompt: "για να κρατήσεις την πρόοδό σου για τις εξετάσεις ΠΕΓΠ και κάθε λάθος απάντηση",
+    trainingHeading: "Σετ εξάσκησης",
+    trainingSub: "Κάθε σετ καλύπτει μία Θεματική Ενότητα. Βλέπεις αμέσως τη σωστή απάντηση και την εξήγηση, και όσες ερωτήσεις έχασες ξανάρχονται ώσπου να τις μάθεις.",
+    testsHeading: "Τεστ · 20 ερωτήσεις, στόχος 14",
+    heroSubs: [
+      "Τέσσερα σετ, οκτώ τεστ των 20 ερωτήσεων με την κατανομή της εξέτασης.",
+      "Μάθε πρώτα το σετ, μετά κάνε το τεστ.",
+      "Είσαι στα μισά. Κάνε ένα τεστ.",
+      "Επανάλαβε τα λάθη σου και ξανακάνε το τεστ.",
+      "Όλα πράσινα. Ώρα για τις εξετάσεις ΠΕΓΠ.",
+    ],
+    sourceLine: "Δικές μας ερωτήσεις στις τέσσερις Θεματικές Ενότητες, με βάση το Σύνταγμα και τον Οδηγό εξεταστικής διαδικασίας του Απριλίου 2026. Δεν είναι η επίσημη Τράπεζα Θεμάτων, και η γλώσσα και το προφορικό δεν προσομοιώνονται.",
+    analyticsKey: "grcitizen",
+  },
+};
+
+const grsecurity: ExamConfig = {
+  id: "grsecurity",
+  stateCode: "GRSECURITY",
+  idBase: 25500,
+  slug: "/pistopoiisi-idiotikis-asfaleias",
+  landingPath: "/el/pistopoiisi-prosopikou-idiotikis-asfaleias",
+  name: "Πιστοποίηση Προσωπικού Ιδιωτικής Ασφάλειας",
+  shortName: "Πιστοποίηση Security",
+  examLabel: "Εξετάσεις πιστοποίησης ΕΟΠΠΕΠ",
+  fullName: "Πιστοποίηση Επαγγελματικής Κατάρτισης Προσωπικού Ιδιωτικής Ασφάλειας (θεωρητικό μέρος)",
+  questionIdPrefix: "GRSEC-",
+  icon: "badge",
+  testCount: 8,
+  questionsPerTest: 20,
+  passPct: 70,
+  language: "el",
+  locale: "el-GR",
+  english: {
+    name: "Greece Private Security Personnel Certification",
+    shortName: "Greek security guard certification",
+    fullName: "Greece private security personnel certification (ΕΟΠΠΕΠ exam after the KEMEA 105-hour programme), theory part, in Greek",
+  },
+  review: { el: "model" },
+  // Real exam (ΕΟΠΠΕΠ notices 2022 to 2026, checked 2026-11-07): after the KEMEA 105-hour Basic
+  // Training Programme (ΕΟΠΠΕΠ decision ΔΠ/11556, ΦΕΚ Β' 4491/2022, as amended 2024), a theory
+  // part of 20 equivalent multiple-choice questions drawn electronically from the published list
+  // of topics, then an oral practical part in groups of three; both compulsory; final grade 1 to
+  // 20, pass from 10. Categories are the nine lessons of the KEMEA programme; the
+  // 2/3/2/2/2/2/3/2/2 split is Tigertest's. All items original, never the official bank. Only
+  // the theory part is modelled; passPct 70 (14 of 20) is Tigertest's target.
+  blueprint: {
+    grsecSector: 2,
+    grsecLaw: 3,
+    grsecOhs: 2,
+    grsecFirstAid: 2,
+    grsecCrime: 2,
+    grsecEquip: 2,
+    grsecDuties: 3,
+    grsecIncidents: 2,
+    grsecFire: 2,
+  },
+  // Four topic sets, not testSets(): 4 + 8 tests = 12 dashboard steps.
+  trainingSets: [
+    { setNumber: 1, id: 25501, name: "Ο κλάδος και η νομοθεσία", categories: ["grsecSector", "grsecLaw"], size: 52, weightLabel: "5 από τις 20 ερωτήσεις κάθε τεστ" },
+    { setNumber: 2, id: 25502, name: "Υγεία, ασφάλεια και πρώτες βοήθειες", categories: ["grsecOhs", "grsecFirstAid"], size: 44, weightLabel: "4 από τις 20 ερωτήσεις κάθε τεστ" },
+    { setNumber: 3, id: 25503, name: "Πρόληψη του εγκλήματος και καθήκοντα", categories: ["grsecCrime", "grsecDuties"], size: 48, weightLabel: "5 από τις 20 ερωτήσεις κάθε τεστ" },
+    { setNumber: 4, id: 25504, name: "Εξοπλισμός, περιστατικά και πυρασφάλεια", categories: ["grsecEquip", "grsecIncidents", "grsecFire"], size: 56, weightLabel: "6 από τις 20 ερωτήσεις κάθε τεστ" },
+  ],
+  categoryLabels: {
+    grsecSector: "Ο κλάδος, επικοινωνία και δεοντολογία",
+    grsecLaw: "Νομοθεσία",
+    grsecOhs: "Υγιεινή και ασφάλεια στην εργασία",
+    grsecFirstAid: "Πρώτες βοήθειες",
+    grsecCrime: "Έννοιες ασφαλείας και εγκληματικότητα",
+    grsecEquip: "Αυτοπροστασία, εξοπλισμός και μέσα",
+    grsecDuties: "Καθήκοντα στην πρόληψη του εγκλήματος",
+    grsecIncidents: "Διαχείριση περιστατικών και κρίσεων",
+    grsecFire: "Πυροπροστασία και πυρασφάλεια",
+  },
+  copy: {
+    guestPrompt: "για να κρατήσεις την πρόοδό σου για την πιστοποίηση security και κάθε λάθος απάντηση",
+    trainingHeading: "Σετ εξάσκησης",
+    trainingSub: "Κάθε σετ καλύπτει μαθήματα του Βασικού Προγράμματος Κατάρτισης. Βλέπεις αμέσως τη σωστή απάντηση και την εξήγηση, και όσες ερωτήσεις έχασες ξανάρχονται ώσπου να τις μάθεις.",
+    testsHeading: "Τεστ · 20 ερωτήσεις, στόχος 14",
+    heroSubs: [
+      "Τέσσερα σετ, οκτώ τεστ των 20 ερωτήσεων πολλαπλής επιλογής, όσες έχει η γραπτή δοκιμασία.",
+      "Μάθε πρώτα το σετ, μετά κάνε το τεστ.",
+      "Είσαι στα μισά. Κάνε ένα τεστ.",
+      "Επανάλαβε τα λάθη σου και ξανακάνε το τεστ.",
+      "Όλα πράσινα. Ώρα για τις εξετάσεις του ΕΟΠΠΕΠ.",
+    ],
+    sourceLine: "Δικές μας ερωτήσεις στα μαθήματα του προγράμματος του ΚΕΜΕΑ, με βάση τον ν. 2518/1997, τον Ποινικό Κώδικα και τον ΚΠΔ, όπως ισχύουν τον Νοέμβριο του 2026. Δεν είναι η επίσημη τράπεζα θεμάτων, και το πρακτικό μέρος δεν προσομοιώνεται.",
+    analyticsKey: "grsecurity",
+  },
 };
 
 const rodrpciv: ExamConfig = {
@@ -9124,6 +10784,284 @@ const rodrpciv: ExamConfig = {
     ],
     sourceLine: "Based on the Romanian traffic code (OUG 195/2002) and Order MAI 268/2010. Original questions; 26 per test, 22 to pass like the real exam (where a question can have up to 3 correct answers).",
     analyticsKey: "rodrpciv",
+  },
+  review: { ro: "machine" },
+  translations: {
+    ro: examTranslation(rodrpcivRo),
+  },
+};
+
+const rocpi: ExamConfig = {
+  id: "rocpi",
+  stateCode: "ROCPI",
+  idBase: 25000,
+  slug: "/romania-driver-cpc",
+  landingPath: "/romania-driver-cpc-practice-test",
+  name: "Romania Driver CPC (CPI) Practice Test",
+  shortName: "Romania CPI (Driver CPC)",
+  examLabel: "ARR CPI theory exam",
+  fullName: "Romania ARR Driver CPC initial qualification (CPI marfă / persoane), theory questionnaire",
+  questionIdPrefix: "ROCPI-",
+  icon: "truck",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Norms on the training and attestation of certain categories of drivers, Annex 2 to Order of
+  // the Minister of Transport 1214/2015, art. 4 (consolidated text, checked 2026-11-06): CPI theory
+  // exam = a 2-hour paper of 100 questions with 4 options, one correct, plus a 2-hour paper of
+  // 6 case studies (two per chapter); pass with 70% of the questions and 70% of the case-study
+  // marks; then a practical exam. Short CPI (holder adding goods or passengers): 20 questions plus
+  // the whole practical. ARR runs CPI and short CPI in English in Bucharest since 2025 and
+  // publishes its English question base on testare.arr.ro. Modelled: the questionnaire only, at
+  // 50 questions and the real pace and 70% (35 of 50). ARR publishes no topic split; weights are
+  // Tigertest's over Directive (EU) 2022/2561 Annex I. Items are original, not ARR's.
+  blueprint: {
+    rocpiEco: 5,
+    rocpiTech: 6,
+    rocpiLoads: 6,
+    rocpiPassengers: 5,
+    rocpiHours: 7,
+    rocpiTacho: 5,
+    rocpiRules: 5,
+    rocpiSafety: 6,
+    rocpiEmergency: 5,
+  },
+  trainingSets: testSets(25000, 4),
+  categoryLabels: {
+    rocpiEco: "Rational Driving & Eco-Driving",
+    rocpiTech: "Vehicle Technology, Brakes & Checks",
+    rocpiLoads: "Loading, Weights & Load Securing",
+    rocpiPassengers: "Passenger Transport & Accessibility",
+    rocpiHours: "Drivers' Hours & Working Time",
+    rocpiTacho: "Tachographs & Records",
+    rocpiRules: "Transport Documents, Cabotage & Licences",
+    rocpiSafety: "Road Risks, Health & Fitness to Drive",
+    rocpiEmergency: "Emergencies, Crime & Professional Conduct",
+  },
+  copy: {
+    guestPrompt: "to save your CPI progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per mock test: Set 1 holds exactly the 50 questions of Test 1, and so on, across every chapter of the Driver CPC course. Missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions at the real pace, 70% to pass",
+    heroSubs: [
+      "Four tests on drivers' hours, tachographs, loads and passengers. You need 70%.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Revise ARR's own questions too, then sit your CPI exam.",
+    ],
+    sourceLine: "Original questions written from EU and Romanian rules for truck and bus drivers (2026). The real CPI questionnaire is 100 questions in 2 hours and you need 70%. Not affiliated with ARR.",
+    analyticsKey: "rocpi",
+  },
+};
+
+const rotaxi: ExamConfig = {
+  id: "rotaxi",
+  stateCode: "ROTAXI",
+  idBase: 25100,
+  slug: "/romania-taxi-attestation",
+  landingPath: "/romania-taxi-driver-attestation-practice-test",
+  name: "Romania Taxi Attestation Practice Test",
+  shortName: "Romania taxi attestation",
+  examLabel: "ARR taxi and rental driver test",
+  fullName: "ARR professional attestation test for taxi and rental (ride-hailing) drivers, Romania",
+  questionIdPrefix: "ROTAXI-",
+  icon: "car",
+  testCount: 8,
+  questionsPerTest: 20,
+  passPct: 70,
+  // Real test (Law 38/2003 art. 26-28 and Annex 7^1 to OMT 1214/2015 as amended, art. 6, checked
+  // 2026-11-06): a written test-grila of 20 questions, at least 70% correct (14 of 20), in
+  // Romanian or English, set by the Romanian Road Authority (ARR) after a 30-hour course; the same
+  // shape for taxi drivers and drivers in rental mode, whose attestation ride-hailing drivers need
+  // under OUG 49/2019. ARR publishes no topic split; weights are Tigertest's, from the course
+  // tematica hours (law 5, customer service 3, taxi practice 10, driving and road safety 7,
+  // security 5). Eight real-length tests; pools are 8x each count plus 40 training-only spares.
+  blueprint: {
+    rotxLaw: 3,
+    rotxDriver: 3,
+    rotxVehicle: 2,
+    rotxMeter: 3,
+    rotxRental: 2,
+    rotxCustomer: 3,
+    rotxRoad: 2,
+    rotxSecurity: 2,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 25101, name: "Law, Authorisation & Attestation", categories: ["rotxLaw", "rotxDriver"], size: 56, weightLabel: "6 of 20 test questions" },
+    { setNumber: 2, id: 25102, name: "Taxi Vehicle, Taximeter & Tariffs", categories: ["rotxVehicle", "rotxMeter"], size: 48, weightLabel: "5 of 20 test questions" },
+    { setNumber: 3, id: 25103, name: "Rental Transport & Customers", categories: ["rotxRental", "rotxCustomer"], size: 48, weightLabel: "5 of 20 test questions" },
+    { setNumber: 4, id: 25104, name: "Road Safety & Security", categories: ["rotxRoad", "rotxSecurity"], size: 48, weightLabel: "4 of 20 test questions" },
+  ],
+  categoryLabels: {
+    rotxLaw: "Law 38/2003, Authorisation & Documents",
+    rotxDriver: "Driver Attestation & Duties",
+    rotxVehicle: "Taxi Vehicle, Roof Light & Markings",
+    rotxMeter: "Taximeter, Tariffs & Receipts",
+    rotxRental: "Rental & Ride-Hailing Transport",
+    rotxCustomer: "Customer Service & Accessibility",
+    rotxRoad: "Taxi Driving, Stands & Road Safety",
+    rotxSecurity: "Driver & Passenger Security",
+  },
+  copy: {
+    guestPrompt: "to save your taxi attestation progress and track every question you miss",
+    trainingHeading: "Train by course topic",
+    trainingSub: "Four sets on Law 38/2003, the taxi and its taximeter, rental and ride-hailing transport, customers, road safety and security, in English. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 20 questions like the real ARR test, 14 to pass",
+    heroSubs: [
+      "Four topics, eight real-length tests. The meter and the law weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your ARR test.",
+    ],
+    sourceLine: "Based on Law 38/2003, the ARR training norms (OMT 1214/2015, Annex 7^1) and OUG 49/2019. Original questions, not the ARR question base; not affiliated with the ARR. 20 per test, 14 to pass.",
+    analyticsKey: "rotaxi",
+  },
+};
+
+const roadmed: ExamConfig = {
+  id: "roadmed",
+  stateCode: "ROADMED",
+  idBase: 24800,
+  slug: "/admitere-medicina",
+  landingPath: "/ro/admitere-medicina-grile",
+  name: "Admitere Medicină: Biologie și Chimie",
+  shortName: "Admitere Medicină",
+  examLabel: "Admitere Medicină (grile)",
+  fullName: "Concursul de admitere la Medicină: Biologie (anatomie și fiziologie umană) și Chimie organică",
+  questionIdPrefix: "ROADM-",
+  icon: "stethoscope",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  language: "ro",
+  locale: "ro-RO",
+  english: {
+    name: "Romania Medicine Admission Exam (Biology and Chemistry)",
+    shortName: "Romania medicine admission",
+    fullName: "Romanian medical school admission exam (admitere medicină), biology and chemistry, in Romanian",
+  },
+  review: { ro: "model" },
+  // Real test (checked 2026-11-07): each UMF sets its own written grile test on its own syllabus
+  // extracts. UMF Carol Davila 2026 regulation: 100 questions in 2 h 30 min, Biology 60 + Chemistry
+  // or Physics 40, one correct answer each (complement simplu / grupat), 1 point each, minimum
+  // grade 5, ranked by score. UMF Cluj 2026 guide: Biology and Chemistry, 2 hours, multiple-answer
+  // grile. Tigertest: 4 x 50, 30 biology (grade XI anatomy and physiology) + 20 organic chemistry
+  // (grades X and XI), single answer of four; Physics, genetics and multiple answers not modelled.
+  // The split inside each subject is Tigertest's own. passPct 80 is Tigertest's target.
+  blueprint: {
+    roadmNervos: 7,
+    roadmAnaliz: 6,
+    roadmMiscare: 4,
+    roadmDigestie: 5,
+    roadmCirc: 6,
+    roadmExcrRep: 2,
+    roadmHidro: 6,
+    roadmFunctionali: 7,
+    roadmBiocompusi: 7,
+  },
+  // Five topic sets, not testSets(): 5 + 4 tests = 9 dashboard steps, each set a textbook block.
+  trainingSets: [
+    { setNumber: 1, id: 24801, name: "Sistemul nervos și analizatorii", categories: ["roadmNervos", "roadmAnaliz"], size: 52, weightLabel: "13 din 50 de întrebări pe test" },
+    { setNumber: 2, id: 24802, name: "Mișcarea și digestia", categories: ["roadmMiscare", "roadmDigestie"], size: 36, weightLabel: "9 din 50 de întrebări pe test" },
+    { setNumber: 3, id: 24803, name: "Circulația, respirația, excreția și reproducerea", categories: ["roadmCirc", "roadmExcrRep"], size: 32, weightLabel: "8 din 50 de întrebări pe test" },
+    { setNumber: 4, id: 24804, name: "Hidrocarburi și grupe funcționale", categories: ["roadmHidro", "roadmFunctionali"], size: 52, weightLabel: "13 din 50 de întrebări pe test" },
+    { setNumber: 5, id: 24805, name: "Compuși cu importanță biologică", categories: ["roadmBiocompusi"], size: 28, weightLabel: "7 din 50 de întrebări pe test" },
+  ],
+  categoryLabels: {
+    roadmNervos: "Sistemul nervos",
+    roadmAnaliz: "Analizatorii și glandele endocrine",
+    roadmMiscare: "Organizarea corpului, oasele și mușchii",
+    roadmDigestie: "Digestia, absorbția și metabolismul",
+    roadmCirc: "Sângele, circulația și respirația",
+    roadmExcrRep: "Excreția și reproducerea",
+    roadmHidro: "Chimie organică: introducere și hidrocarburi",
+    roadmFunctionali: "Compuși cu grupe funcționale",
+    roadmBiocompusi: "Compuși cu importanță biologică, izomerie, acizi și baze",
+  },
+  copy: {
+    guestPrompt: "ca să-ți salvezi progresul pentru admitere și să vezi fiecare grilă greșită",
+    trainingHeading: "Seturi de exerciții",
+    trainingSub: "Fiecare set acoperă un bloc din manualele de biologie și chimie. Afli imediat dacă ai răspuns corect, iar grilele greșite revin până le știi sigur.",
+    testsHeading: "Teste · 50 de grile, 30 de biologie și 20 de chimie",
+    heroSubs: [
+      "Cinci seturi pe capitole, patru teste. Biologia are cea mai mare pondere.",
+      "Stăpânește setul, apoi dă testul.",
+      "Ai trecut de jumătate. Încearcă un test.",
+      "Repetă greșelile, apoi refă testul.",
+      "Totul e verde. Verifică regulamentul UMF-ului tău și mult succes.",
+    ],
+    sourceLine: "După manualele de biologie (clasa a XI-a) și chimie organică (clasele a X-a și a XI-a) și tematicile UMF pentru 2026. Grile originale, nu din caietele de concurs; nu suntem afiliați niciunei universități.",
+    analyticsKey: "roadmed",
+  },
+};
+
+const rorezid: ExamConfig = {
+  id: "rorezid",
+  stateCode: "ROREZID",
+  idBase: 24900,
+  slug: "/rezidentiat",
+  landingPath: "/ro/rezidentiat-medicina-grile",
+  name: "Grile Rezidențiat Medicină",
+  shortName: "Rezidențiat Medicină",
+  examLabel: "Concursul de Rezidențiat, domeniul Medicină",
+  fullName: "Concursul național de admitere în Rezidențiat, domeniul Medicină",
+  questionIdPrefix: "ROREZ-",
+  icon: "stethoscope",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 60,
+  language: "ro",
+  locale: "ro-RO",
+  english: {
+    name: "Romania Medical Residency Exam (Rezidențiat, Medicine)",
+    shortName: "Romania residency exam",
+    fullName: "Romania national medical residency entrance exam (Rezidențiat), Medicine, in Romanian",
+  },
+  review: { ro: "model" },
+  // Real exam (Ministry of Health, Comisia Centrală de Rezidențiat; 2025 instructions, same model
+  // in 2026; checked 2026-11-07): 200 questions in 4 hours, one national test per domain, booklets
+  // A to D; 50 complement simplu (1 of 5, 4 points) and 150 complement multiplu (2 to 4 of 5,
+  // 5 points), maximum 950; results on the spot; pass at 60% of the national maximum achieved.
+  // Bibliography (Medicină, 2025 and 2026): Kumar și Clark ed. 10, Lawrence ed. 6, Sinopsis de
+  // medicină ed. 5, tematica chapters only. Modelled: 4 x 50, single answer of four, equal weight;
+  // the 8-category split (Kumar 50%, Lawrence 40%, Sinopsis 10%) is Tigertest's.
+  blueprint: {
+    roreCardio: 7,
+    rorePneuNeuro: 6,
+    roreGastroRenal: 6,
+    roreEndoHem: 6,
+    roreChirGen: 8,
+    roreChirDig: 6,
+    roreChirSpec: 6,
+    roreSinopsis: 5,
+  },
+  trainingSets: testSets(24900, 4),
+  categoryLabels: {
+    roreCardio: "Cardiologie, HTA și boala tromboembolică",
+    rorePneuNeuro: "Pneumologie și neurologie",
+    roreGastroRenal: "Gastroenterologie, hepatologie și nefrologie",
+    roreEndoHem: "Diabet, endocrinologie, hematologie, reumatologie și infecții",
+    roreChirGen: "Chirurgie generală, traumă și tub digestiv superior",
+    roreChirDig: "Colon, căi biliare, pancreas, ficat și vase",
+    roreChirSpec: "ORL, ortopedie și urologie",
+    roreSinopsis: "Pediatrie, obstetrică-ginecologie, dermatologie, psihiatrie",
+  },
+  copy: {
+    guestPrompt: "ca să-ți salvezi progresul pentru Rezidențiat și să ții evidența fiecărei grile greșite",
+    trainingHeading: "Seturi de antrenament",
+    trainingSub: "Fiecare set are întrebările testului cu același număr. Primești imediat răspunsul și explicația, iar grilele greșite revin până le știi sigur.",
+    testsHeading: "Teste · 50 de întrebări, 60% pentru promovare",
+    heroSubs: [
+      "Patru seturi, patru teste. Medicina internă și chirurgia aduc cele mai multe grile.",
+      "Întâi stăpânește setul, apoi dă testul.",
+      "Ai trecut de jumătate. Dă un test.",
+      "Repetă greșelile, apoi testează-te din nou.",
+      "Totul e verde. Mult succes la Rezidențiat.",
+    ],
+    sourceLine: "Grile originale pe tematica domeniului Medicină (Kumar și Clark, Lawrence, Sinopsis de medicină), noiembrie 2026. Un singur răspuns corect din 4; complementul multiplu și punctajul de 950 nu sunt reproduse. Nu suntem afiliați Ministerului Sănătății.",
+    analyticsKey: "rorezid",
   },
 };
 
@@ -9195,6 +11133,303 @@ const hukresz: ExamConfig = {
     sourceLine: "Based on the Hungarian Highway Code (KRESZ). Original questions in English; 55 per test, 87% is close to the real 65 of 75 points.",
     analyticsKey: "hukresz",
   },
+  review: { hu: "machine" },
+  translations: {
+    hu: examTranslation(hukreszHu),
+  },
+};
+
+const hukreszmoto: ExamConfig = {
+  id: "hukreszmoto",
+  stateCode: "HUKRMOTO",
+  idBase: 24400,
+  slug: "/hungary-motorcycle-theory",
+  landingPath: "/hungary-motorcycle-theory-test",
+  name: "Hungary Motorcycle Theory Practice Test",
+  shortName: "Hungary motorcycle test",
+  examLabel: "Hungary motorcycle theory exam",
+  fullName: "Hungary motorcycle theory exam (Közlekedési alapismeretek), categories AM, A1, A2 and A",
+  questionIdPrefix: "HUKRM-",
+  icon: "bike",
+  testCount: 3,
+  questionsPerTest: 55,
+  passPct: 87,
+  // Real exam: KAV computer-based "Közlekedési alapismeretek" theory exam with motorcycle
+  // questions. A1, A2 and A: 55 multiple-choice questions, 55 minutes, 75 points, 65 to pass (KAV
+  // tantervi és vizsgakövetelmények, A2 2020 and A after A1/A2/A korl. 2023). AM: 25 questions,
+  // 25 minutes, 35 points, 30 to pass (KAV AM document 2023). Guides say questions carry unequal
+  // points; Tigertest scores every question equally, so passPct 87 = 48 of 55, close to 65/75.
+  // Exam content per the A curriculum: traffic rules for riders, riding theory, and motorcycle
+  // structure and operation. No official topic weights; this split is Tigertest's own. Rules from
+  // the KRESZ (1/1975. (II. 5.) KPM-BM) and Decree 326/2011 as in force 2026-11-06; rules a car
+  // driver shares are left to hukresz. Three A-length tests; pools are 3x each count plus 35
+  // training-only spares. All items original.
+  blueprint: {
+    hukmLicence: 6,
+    hukmGear: 5,
+    hukmChecks: 6,
+    hukmControl: 7,
+    hukmPosition: 7,
+    hukmSpeed: 6,
+    hukmPriority: 6,
+    hukmPassengers: 6,
+    hukmHazards: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 24401, name: "Licences, Helmets & Gear", categories: ["hukmLicence", "hukmGear"], size: 40, weightLabel: "11 of 55 test questions" },
+    { setNumber: 2, id: 24402, name: "Checks, Braking & Cornering", categories: ["hukmChecks", "hukmControl"], size: 48, weightLabel: "13 of 55 test questions" },
+    { setNumber: 3, id: 24403, name: "Road Position & Junctions", categories: ["hukmPosition", "hukmPriority"], size: 48, weightLabel: "13 of 55 test questions" },
+    { setNumber: 4, id: 24404, name: "Speed, Passengers & Mopeds", categories: ["hukmSpeed", "hukmPassengers"], size: 44, weightLabel: "12 of 55 test questions" },
+    { setNumber: 5, id: 24405, name: "Hazards, Weather & Breakdowns", categories: ["hukmHazards"], size: 20, weightLabel: "6 of 55 test questions" },
+  ],
+  categoryLabels: {
+    hukmLicence: "Categories, Licences & the Rider",
+    hukmGear: "Helmets, Protective Gear & Being Seen",
+    hukmChecks: "Motorcycle Checks & How It Works",
+    hukmControl: "Braking, Cornering & Control",
+    hukmPosition: "Road Position, Filtering & Overtaking",
+    hukmSpeed: "Speed, Signs & Motorways for Riders",
+    hukmPriority: "Junctions, Trams & Being Seen",
+    hukmPassengers: "Passengers, Loads, Parking & Mopeds",
+    hukmHazards: "Hazards, Weather, Night & Breakdowns",
+  },
+  copy: {
+    guestPrompt: "to save your motorcycle theory progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets on Hungarian rules and riding for AM, A1, A2 and A, in English. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Full tests · 55 questions, aim for 48 or more",
+    heroSubs: [
+      "Five topics, three 55-question tests. Control and road position weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a full test.",
+      "Fix the misses, then retake.",
+      "All done. Book your motorcycle theory exam.",
+    ],
+    sourceLine: "Based on the Hungarian Highway Code (KRESZ) and the KAV motorcycle curriculum. Original questions in English; 55 per test, 87% is close to the real 65 of 75 points.",
+    analyticsKey: "hukreszmoto",
+  },
+};
+
+const hugki: ExamConfig = {
+  id: "hugki",
+  stateCode: "HUGKI",
+  idBase: 24500,
+  slug: "/hungary-gki",
+  landingPath: "/hungary-driver-cpc-gki-test",
+  name: "Hungary GKI (Driver CPC) Theory Practice Test",
+  shortName: "Hungary GKI test",
+  examLabel: "Hungary GKI theory exam",
+  fullName: "Hungary GKI (Driver CPC) theory exams, truck and bus (Gépjárművezetői Képesítési Igazolvány)",
+  questionIdPrefix: "HUGKI-",
+  icon: "truck",
+  testCount: 4,
+  questionsPerTest: 40,
+  passPct: 75,
+  // Real exam: GKI basic qualification (EU Driver CPC), KAV computer-based theory exams per the
+  // "Tantervi és vizsgakövetelmények" for bus and truck driver courses (signed 2025-03-11, in
+  // force 2025-03-17): three subjects, BSZAVSZ (safe, rational driving), EASZ (applying the
+  // regulations) and EKKKBSZLSZ (health, road and environmental safety, service, logistics), each
+  // 40 multiple-choice questions in 40 minutes, 40 points, 30 to pass. Case study (120 min,
+  // 60/100) and practical exams not modelled. Tigertest's tests mix the three subjects 14/13/13;
+  // the split inside each subject is Tigertest's (the curriculum gives no weights). passPct 75 =
+  // 30 of 40, the real line. Test sheets in English and Russian since September 2022, Serbian and
+  // Ukrainian since 2020 (trade press). Pools are 4x each count plus 4 training-only spares.
+  // All items original; the KAV bank is not public.
+  blueprint: {
+    hugkiEco: 4,
+    hugkiBrakes: 4,
+    hugkiLoads: 3,
+    hugkiPassengers: 3,
+    hugkiHours: 5,
+    hugkiTacho: 3,
+    hugkiLaw: 5,
+    hugkiHealth: 5,
+    hugkiEmergency: 4,
+    hugkiBusiness: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 24501, name: "Eco-Driving & Brakes", categories: ["hugkiEco", "hugkiBrakes"], size: 40, weightLabel: "8 of 40 test questions" },
+    { setNumber: 2, id: 24502, name: "Loads & Passengers", categories: ["hugkiLoads", "hugkiPassengers"], size: 32, weightLabel: "6 of 40 test questions" },
+    { setNumber: 3, id: 24503, name: "Driving Times & Tachographs", categories: ["hugkiHours", "hugkiTacho"], size: 40, weightLabel: "8 of 40 test questions" },
+    { setNumber: 4, id: 24504, name: "Rules, Permits & the Business", categories: ["hugkiLaw", "hugkiBusiness"], size: 44, weightLabel: "9 of 40 test questions" },
+    { setNumber: 5, id: 24505, name: "Health, Safety & Emergencies", categories: ["hugkiHealth", "hugkiEmergency"], size: 44, weightLabel: "9 of 40 test questions" },
+  ],
+  categoryLabels: {
+    hugkiEco: "Eco-Driving, Engine & Fuel",
+    hugkiBrakes: "Brakes & Safety Systems",
+    hugkiLoads: "Loads, Stability & Securing",
+    hugkiPassengers: "Buses & Passengers",
+    hugkiHours: "Driving Times, Rest & Working Time",
+    hugkiTacho: "Tachographs",
+    hugkiLaw: "Hungarian Rules, Permits & Documents",
+    hugkiHealth: "Health, Fitness & Fatigue",
+    hugkiEmergency: "Emergencies, Crime & Security",
+    hugkiBusiness: "Transport Business, Service & Logistics",
+  },
+  copy: {
+    guestPrompt: "to save your GKI exam progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets for truck and bus drivers, in English. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Full tests · 40 questions, 30 to pass like each real subject",
+    heroSubs: [
+      "Five topics, four 40-question tests. Driving times and the rules weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a full test.",
+      "Fix the misses, then retake.",
+      "All done. Book your GKI exams through your course provider.",
+    ],
+    sourceLine: "Original questions in English on the GKI curriculum, EU driving time and tachograph rules and Hungarian law (2026). Each real subject is 40 questions, 30 to pass. Not affiliated with the KAV.",
+    analyticsKey: "hugki",
+  },
+};
+
+const huelsoseg: ExamConfig = {
+  id: "huelsoseg",
+  stateCode: "HUELSOSEG",
+  idBase: 24600,
+  slug: "/elsosegely-vizsga",
+  landingPath: "/hu/elsosegely-vizsga-teszt",
+  name: "Elsősegély vizsga teszt a jogosítványhoz",
+  shortName: "Elsősegély vizsga",
+  examLabel: "Közúti elsősegélynyújtási vizsga",
+  fullName: "Közúti elsősegélynyújtási vizsga a vezetői engedélyhez",
+  questionIdPrefix: "HUELS-",
+  icon: "bandage",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  language: "hu",
+  locale: "hu-HU",
+  english: {
+    name: "Hungary First Aid Exam for the Driving Licence",
+    shortName: "Hungarian first aid exam",
+    fullName: "Hungarian road first aid exam for the driving licence (közúti elsősegélynyújtási vizsga), in Hungarian",
+  },
+  review: { hu: "model" },
+  // Real exam (31/1992. (XII. 19.) NM rendelet; Magyar Vöröskereszt MVK-SZ-036 exam rules,
+  // checked 2026-11-06): examined by the Red Cross county organisations; mainly practical
+  // (one-rescuer CPR, casualty examination, recovery position, then an "A" and a "B" task from a
+  // drawn card) with oral or written theory; megfelelt / nem felelt meg, no question count or
+  // pass mark. passPct 80 (40 of 50) is Tigertest's readiness line. Categories follow the Red
+  // Cross list of fail-level errors and the ERC 2025 first aid and BLS guidelines (Hungarian
+  // summary, Orv Hetil 2026;167(33)); the 8/7/8/5/7/6/4/5 split is Tigertest's own. Four tests
+  // of 50, pools exactly 4x each count (200, all original, written in Hungarian).
+  blueprint: {
+    huelHelyszin: 8,
+    huelVizsgalat: 7,
+    huelUjraeleszt: 8,
+    huelGyermek: 5,
+    huelVerzes: 7,
+    huelSerules: 6,
+    huelKornyezet: 4,
+    huelBelgyogy: 5,
+  },
+  // Four topic sets, not testSets(): 4 + 4 tests = 8 dashboard steps.
+  trainingSets: [
+    { setNumber: 1, id: 24601, name: "Helyszín és betegvizsgálat", categories: ["huelHelyszin", "huelVizsgalat"], size: 60, weightLabel: "15 kérdés az 50-ből tesztenként" },
+    { setNumber: 2, id: 24602, name: "Újraélesztés és félrenyelés", categories: ["huelUjraeleszt", "huelGyermek"], size: 52, weightLabel: "13 kérdés az 50-ből tesztenként" },
+    { setNumber: 3, id: 24603, name: "Vérzések és sérülések", categories: ["huelVerzes", "huelSerules"], size: 52, weightLabel: "13 kérdés az 50-ből tesztenként" },
+    { setNumber: 4, id: 24604, name: "Égés, mérgezés és belgyógyászat", categories: ["huelKornyezet", "huelBelgyogy"], size: 36, weightLabel: "9 kérdés az 50-ből tesztenként" },
+  ],
+  categoryLabels: {
+    huelHelyszin: "Baleseti helyszín, segélyhívás és mentés",
+    huelVizsgalat: "Betegvizsgálat, eszméletlenség és fektetés",
+    huelUjraeleszt: "Felnőtt újraélesztés és AED",
+    huelGyermek: "Félrenyelés, gyermek és csecsemő",
+    huelVerzes: "Vérzések, sebek és sokk",
+    huelSerules: "Törések, fej-, gerinc- és mellkassérülések",
+    huelKornyezet: "Égés, áramütés, mérgezés, hő és hideg",
+    huelBelgyogy: "Belgyógyászati vészhelyzetek",
+  },
+  copy: {
+    guestPrompt: "hogy elmentsd a haladásodat az elsősegély vizsgához, és minden rossz válaszodat számon tartsd",
+    trainingHeading: "Gyakorlókészletek",
+    trainingSub: "Minden gyakorlókészlet a vizsga két témakörét fedi le. Azonnal látod, jól válaszoltál-e, és a rossz válaszaid visszajönnek, amíg biztosan nem tudod őket.",
+    testsHeading: "Tesztek · 50 kérdés, 40 a cél",
+    heroSubs: [
+      "Négy gyakorlókészlet, négy teszt. Kezdd a helyszínnel és az újraélesztéssel.",
+      "Előbb tanuld meg a készletet, aztán írd meg a tesztet.",
+      "Félúton jársz. Írj meg egy tesztet.",
+      "Gyakorold a hibáidat, aztán teszteld magad újra.",
+      "Minden zöld. Jelentkezz az elsősegély vizsgára.",
+    ],
+    sourceLine: "Saját kérdések az ERC 2025-ös irányelvei, a KRESZ és a Btk. alapján, 2026. novemberi állapot. A gyakorlati részt (újraélesztés bábun, kötözés) kézzel kell begyakorolni.",
+    analyticsKey: "huelsoseg",
+  },
+};
+
+const hubizt: ExamConfig = {
+  id: "hubizt",
+  stateCode: "HUBIZT",
+  idBase: 24700,
+  slug: "/biztositaskozvetitoi-vizsga",
+  landingPath: "/hu/biztositaskozvetitoi-vizsga-teszt",
+  name: "Biztosításközvetítői vizsga teszt",
+  shortName: "Biztosításközvetítői vizsga",
+  examLabel: "Függő biztosításközvetítői hatósági vizsga",
+  fullName: "Függő biztosításközvetítői hatósági vizsga (Magyar Nemzeti Bank)",
+  questionIdPrefix: "HUBIZT-",
+  icon: "umbrella",
+  testCount: 5,
+  questionsPerTest: 40,
+  passPct: 75,
+  language: "hu",
+  locale: "hu-HU",
+  english: {
+    name: "Hungary Insurance Intermediary Exam (MNB)",
+    shortName: "Hungarian insurance intermediary exam",
+    fullName: "Hungarian insurance intermediary licensing exam (biztosításközvetítői hatósági vizsga, Magyar Nemzeti Bank), dependent intermediary level, in Hungarian",
+  },
+  review: { hu: "model" },
+  // Real exam (MNB Vizsgaszabályzat in force 12 June 2025; 40/2015. (XII. 30.) NGM rendelet
+  // annexes 2 and 3; MNB notice of 14 May 2026; checked 2026-11-06): Hungarian multiple-choice
+  // computer test from the MNB question bank, classroom or online. Dependent intermediary 40
+  // questions, 40 minutes, pass at 30 points; independent 60/60/45; differential 20/20/15.
+  // Categories follow annex 2's three subjects (1 A-C, 2, 3 A-B); the 5/6/6/6/5/5/3/4 split is
+  // Tigertest's (17/11/12 by subject). Five tests of 40, pools exactly 5x each count (200, all
+  // original, written in Hungarian). passPct 75 (30 of 40) is the real dependent pass line.
+  blueprint: {
+    hubiztPenzpiac: 5,
+    hubiztKozvetito: 6,
+    hubiztHatosag: 6,
+    hubiztKockazat: 6,
+    hubiztDij: 5,
+    hubiztSzerzodes: 5,
+    hubiztMegszunes: 3,
+    hubiztTipusok: 4,
+  },
+  // Four topic sets, not testSets(): 4 + 5 tests = 9 dashboard steps.
+  trainingSets: [
+    { setNumber: 1, id: 24701, name: "Pénzügyi és biztosítási piac", categories: ["hubiztPenzpiac", "hubiztKozvetito"], size: 55, weightLabel: "11 kérdés a 40-ből tesztenként" },
+    { setNumber: 2, id: 24702, name: "Hatóságok és fogyasztóvédelem", categories: ["hubiztHatosag"], size: 30, weightLabel: "6 kérdés a 40-ből tesztenként" },
+    { setNumber: 3, id: 24703, name: "Biztosításszakmai alapfogalmak", categories: ["hubiztKockazat", "hubiztDij"], size: 55, weightLabel: "11 kérdés a 40-ből tesztenként" },
+    { setNumber: 4, id: 24704, name: "Biztosítási szerződésjog", categories: ["hubiztSzerzodes", "hubiztMegszunes", "hubiztTipusok"], size: 60, weightLabel: "12 kérdés a 40-ből tesztenként" },
+  ],
+  categoryLabels: {
+    hubiztPenzpiac: "Pénzügyi piacok szereplői",
+    hubiztKozvetito: "Biztosítók és biztosításközvetítők",
+    hubiztHatosag: "Hatóságok, titokvédelem és pénzmosás",
+    hubiztKockazat: "Kockázat, kár és kockázatmegosztás",
+    hubiztDij: "Díj, tartalékok és pénzügyi számítások",
+    hubiztSzerzodes: "A biztosítási szerződés általános szabályai",
+    hubiztMegszunes: "A szerződés megszűnése",
+    hubiztTipusok: "Vagyon-, felelősség-, élet- és balesetbiztosítás",
+  },
+  copy: {
+    guestPrompt: "hogy elmentsd a haladásodat a biztosításközvetítői vizsgához, és minden rossz válaszodat számon tartsd",
+    trainingHeading: "Gyakorlósorok",
+    trainingSub: "Minden gyakorlósor a vizsga egy-egy témakörét fedi le. Azonnal látod, jól válaszoltál-e, és a rossz válaszaid visszajönnek, amíg biztosan nem tudod őket.",
+    testsHeading: "Tesztek · 40 kérdés, 30 jó választól sikeres",
+    heroSubs: [
+      "Négy gyakorlósor, öt teszt. A piac szereplői és a szerződésjog adja a kérdések nagy részét.",
+      "Előbb tanuld meg a gyakorlósort, aztán írd meg a tesztet.",
+      "Félúton jársz. Írj meg egy tesztet.",
+      "Gyakorold a hibáidat, aztán teszteld magad újra.",
+      "Minden zöld. Jelentkezz a hatósági vizsgára a képző szervednél.",
+    ],
+    sourceLine: "Saját kérdések a 40/2015. (XII. 30.) NGM rendelet követelményei, a Bit., a Ptk., a Gfbt. és a Pmt. alapján, 2026. novemberi állapot. Nem az MNB kérdésbankjából valók.",
+    analyticsKey: "hubizt",
+  },
 };
 
 const mttheory: ExamConfig = {
@@ -9265,6 +11500,268 @@ const mttheory: ExamConfig = {
   },
 };
 
+const mtmoto: ExamConfig = {
+  id: "mtmoto",
+  stateCode: "MTMOTO",
+  idBase: 26200,
+  slug: "/malta-motorcycle-theory",
+  landingPath: "/malta-motorcycle-theory-test",
+  name: "Malta Motorcycle Theory Test Practice",
+  shortName: "Malta motorcycle theory",
+  examLabel: "Malta motorcycle theory test",
+  fullName: "Malta motorcycle theory test (categories AM, A1, A2 and A)",
+  questionIdPrefix: "MTMC-",
+  icon: "bike",
+  testCount: 5,
+  questionsPerTest: 35,
+  passPct: 85,
+  // Real test (Transport Malta, "Obtaining your driving licence", via search extracts 2026-11-07):
+  // 35 multiple-choice questions on a touch screen, 45 minutes, 30 correct to pass, English or
+  // Maltese. Content from S.L. 65.18 Fourth Schedule (common syllabus plus, for A1, A2 and A,
+  // protective outfit, rider visibility, slippery surfaces, emergency stop switch, oil and chain)
+  // and S.L. 65.11 (helmets, one passenger astride behind the rider, parking at 45 degrees, no
+  // earphones in both ears). Transport Malta publishes no per-topic counts, so these are
+  // Tigertest's. Five real-length tests; pools are 5x each count plus 25 training-only spares.
+  // passPct 85 = ceil(0.85 * 35) = 30. All items original; the official question bank was not used.
+  blueprint: {
+    mtmotoLicence: 3,
+    mtmotoGear: 4,
+    mtmotoChecks: 4,
+    mtmotoControl: 6,
+    mtmotoPosition: 5,
+    mtmotoVisibility: 4,
+    mtmotoSurfaces: 4,
+    mtmotoPassengers: 2,
+    mtmotoRider: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 26201, name: "Gear & Machine Checks", categories: ["mtmotoGear", "mtmotoChecks"], size: 44, weightLabel: "8 of 35 test questions" },
+    { setNumber: 2, id: 26202, name: "Control & Road Position", categories: ["mtmotoControl", "mtmotoPosition"], size: 60, weightLabel: "11 of 35 test questions" },
+    { setNumber: 3, id: 26203, name: "Being Seen, Surfaces & Weather", categories: ["mtmotoVisibility", "mtmotoSurfaces"], size: 44, weightLabel: "8 of 35 test questions" },
+    { setNumber: 4, id: 26204, name: "Licences, Passengers & Safe Riding", categories: ["mtmotoLicence", "mtmotoPassengers", "mtmotoRider"], size: 52, weightLabel: "8 of 35 test questions" },
+  ],
+  categoryLabels: {
+    mtmotoLicence: "Licence Categories & Rider Law",
+    mtmotoGear: "Helmets & Protective Clothing",
+    mtmotoChecks: "Machine Checks & Faults",
+    mtmotoControl: "Control, Braking & Cornering",
+    mtmotoPosition: "Road Position, Overtaking & Filtering",
+    mtmotoVisibility: "Being Seen & Other Road Users",
+    mtmotoSurfaces: "Road Surfaces, Weather & Night",
+    mtmotoPassengers: "Passengers, Loads & Parking",
+    mtmotoRider: "Alcohol, Fatigue, Distraction & Crashes",
+  },
+  copy: {
+    guestPrompt: "to save your motorcycle theory test progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets on what Malta's motorcycle theory test checks: gear, machine checks, control, road position, being seen and slippery surfaces. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 35 questions, 30 to pass",
+    heroSubs: [
+      "Four topics, five real-length tests. Rider-only topics first.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your theory test.",
+    ],
+    sourceLine: "Original practice questions written from Malta's driving licence and motor vehicle regulations. Not affiliated with Transport Malta. 35 per test, 30 to pass.",
+    analyticsKey: "mtmoto",
+  },
+};
+
+const mtcpc: ExamConfig = {
+  id: "mtcpc",
+  stateCode: "MTCPC",
+  idBase: 26300,
+  slug: "/malta-driver-cpc",
+  landingPath: "/malta-driver-cpc-theory-test",
+  name: "Malta Driver CPC Theory Test Practice",
+  shortName: "Driver CPC (Malta)",
+  examLabel: "Driver CPC theory test",
+  fullName: "Malta Driver CPC Initial Qualification Theory Test (bus and truck)",
+  questionIdPrefix: "MTCPC-",
+  icon: "truck",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 60,
+  // Driver CPC initial qualification, Motor Vehicles (Driving Licences) Regulations S.L. 65.18
+  // Part IV and Thirteenth Schedule (L.N. 193 of 2020, the EU Driver CPC Directive, now Directive
+  // (EU) 2022/2561), read 2026-11-07: theory of at least 4 hours, multiple choice plus case
+  // studies, held by Transport Malta or a designated body. Transport Malta's training-provider
+  // guidelines (search extract): multiple-choice module 80 questions in 100 minutes, case studies
+  // 6 in 100 minutes, 60% each. Modelled at 50 questions at the same pace and 60%:
+  // ceil(0.6 x 50) = 30. Transport Malta publishes no topic weights; these are Tigertest's, one
+  // category per group of Thirteenth Schedule subjects. One bank covers bus and truck. Case
+  // studies and practical tests are not modelled. All items original.
+  blueprint: {
+    mtcpcEco: 5,
+    mtcpcBrakes: 5,
+    mtcpcRisk: 5,
+    mtcpcLoads: 6,
+    mtcpcPassengers: 6,
+    mtcpcHours: 7,
+    mtcpcTacho: 5,
+    mtcpcRules: 4,
+    mtcpcHealth: 3,
+    mtcpcEmergency: 4,
+  },
+  trainingSets: testSets(26300, 4),
+  categoryLabels: {
+    mtcpcEco: "Rational Driving & Fuel Economy",
+    mtcpcBrakes: "Brakes, Retarders & Driver Assistance",
+    mtcpcRisk: "Risk, Weather & Vulnerable Road Users",
+    mtcpcLoads: "Loading, Stability & Load Securing",
+    mtcpcPassengers: "Passenger Comfort, Safety & Accessibility",
+    mtcpcHours: "Drivers' Hours, Rest & Working Time",
+    mtcpcTacho: "Tachographs & Records",
+    mtcpcRules: "CPC, Licences & Carriage Rules",
+    mtcpcHealth: "Health, Fitness, Alcohol & Drugs",
+    mtcpcEmergency: "Emergencies, Security & the Transport Business",
+  },
+  copy: {
+    guestPrompt: "to save your Driver CPC progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1, and so on. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions, 60% to pass",
+    heroSubs: [
+      "Four tests on drivers' hours, tachographs, brakes, loads and passengers. You need 60%.",
+      "Master each set, then test.",
+      "Halfway there. Try a practice test.",
+      "Fix the misses, then retake.",
+      "All done. Book your CPC theory test through your training provider.",
+    ],
+    sourceLine: "Original questions written from Maltese and EU rules for professional bus and truck drivers (2026). The real multiple-choice module is 80 questions with 60% to pass. Not affiliated with Transport Malta.",
+    analyticsKey: "mtcpc",
+  },
+};
+
+const mttaxi: ExamConfig = {
+  id: "mttaxi",
+  stateCode: "MTTAXI",
+  idBase: 26000,
+  slug: "/malta-taxi-driver",
+  landingPath: "/malta-taxi-driver-theory-test",
+  name: "Malta Taxi Driver Theory Test Practice",
+  shortName: "Malta taxi theory test",
+  examLabel: "Malta taxi driver theory test",
+  fullName: "Malta Taxi Driver Theory Test (Taxi Driver and Area Knowledge Certificate)",
+  questionIdPrefix: "MTTAXI-",
+  icon: "car",
+  testCount: 5,
+  questionsPerTest: 35,
+  passPct: 85,
+  // Taxi Services Regulations, S.L. 499.59 (Third Schedule Part 1 subjects, Part 2a theory
+  // examination of 45 minutes; read on legislation.mt 2026-11-07). Transport Malta's training
+  // provider guidelines give 35 multiple-choice questions with 30 to pass: five real-length tests
+  // at passPct 85, ceil(0.85 x 35) = 30. Transport Malta publishes no per-subject split, so these
+  // weights are Tigertest's, following the Third Schedule's subject list. Each pool is 5x its
+  // count plus 2 to 7 training-only spares (25 in all). All items original; places in words.
+  blueprint: {
+    mttaxiPermit: 5,
+    mttaxiVehicle: 4,
+    mttaxiHiring: 5,
+    mttaxiFares: 3,
+    mttaxiPassengers: 4,
+    mttaxiSafety: 5,
+    mttaxiDriving: 3,
+    mttaxiArea: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 26001, name: "Permits, Tags & the Taxi", categories: ["mttaxiPermit", "mttaxiVehicle"], size: 49, weightLabel: "9 of 35 test questions" },
+    { setNumber: 2, id: 26002, name: "Hiring Rules & Fares", categories: ["mttaxiHiring", "mttaxiFares"], size: 44, weightLabel: "8 of 35 test questions" },
+    { setNumber: 3, id: 26003, name: "Passengers & Safety", categories: ["mttaxiPassengers", "mttaxiSafety"], size: 49, weightLabel: "9 of 35 test questions" },
+    { setNumber: 4, id: 26004, name: "Driving & Area Knowledge", categories: ["mttaxiDriving", "mttaxiArea"], size: 58, weightLabel: "9 of 35 test questions" },
+  ],
+  categoryLabels: {
+    mttaxiPermit: "Taxi Driver Permit & Tag",
+    mttaxiVehicle: "The Taxi & Its Equipment",
+    mttaxiHiring: "Hiring, Stands & Plying for Hire",
+    mttaxiFares: "Fares, Taximeter & Receipts",
+    mttaxiPassengers: "Customer Care & Passengers with Disabilities",
+    mttaxiSafety: "Emergencies, First Aid & Difficult Passengers",
+    mttaxiDriving: "Professional Driving, Vehicle Care & Fuel",
+    mttaxiArea: "Routes & Places in Malta and Gozo",
+  },
+  copy: {
+    guestPrompt: "to save your Malta taxi theory test progress and track every question you miss",
+    trainingHeading: "Train by course subject",
+    trainingSub: "Four sets covering every subject of the taxi driver course in the Taxi Services Regulations. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 35 questions, 30 to pass, like the real test",
+    heroSubs: [
+      "Four topic sets, five real-length mock tests.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. You are ready for the taxi theory test.",
+    ],
+    sourceLine: "Original practice questions written from Malta's Taxi Services Regulations (S.L. 499.59) and the subjects of the taxi driver course. Not affiliated with Transport Malta. 35 per test, 30 to pass.",
+    analyticsKey: "mttaxi",
+  },
+};
+
+const mtguard: ExamConfig = {
+  id: "mtguard",
+  stateCode: "MTGUARD",
+  idBase: 26100,
+  slug: "/malta-private-guard",
+  landingPath: "/malta-private-guard-licence-practice-test",
+  name: "Malta Private Guard Practice Test",
+  shortName: "Malta private guard exam",
+  examLabel: "Award in Private Security Guard Services assessment",
+  fullName: "Malta Private Guard Licence Exam (Award in Private Security Guard Services)",
+  questionIdPrefix: "MTPG-",
+  icon: "badge",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Malta: Jobsplus Award in Private Security Guard Services (MQF Level 2, 4 ECTS, course sheet June
+  // 2025), the approved course behind a private guard licence from the Commissioner of Police
+  // (Cap. 389; S.L. 389.01). Two 20-hour modules, each a 1-hour paper (true or false, multiple
+  // choice, short answers) passing at 45%; providers write the papers, no official count or
+  // weights. Tigertest's blueprint: Module 1 law 6, powers 8, duties 6, people 6 (26); Module 2
+  // risk 6, surveillance 6, fire 6, incidents 6 (24). 70% is Tigertest's readiness line.
+  blueprint: {
+    mtguardLaw: 6,
+    mtguardPowers: 8,
+    mtguardDuties: 6,
+    mtguardPeople: 6,
+    mtguardRisk: 6,
+    mtguardSurveillance: 6,
+    mtguardFire: 6,
+    mtguardIncidents: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 26101, name: "Module 1: Licensing, Law & Powers", categories: ["mtguardLaw", "mtguardPowers"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 2, id: 26102, name: "Module 1: Duties & People Skills", categories: ["mtguardDuties", "mtguardPeople"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 3, id: 26103, name: "Module 2: Risk, Patrols & Surveillance", categories: ["mtguardRisk", "mtguardSurveillance"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 4, id: 26104, name: "Module 2: Fire, Floods, Threats & Reports", categories: ["mtguardFire", "mtguardIncidents"], size: 48, weightLabel: "12 of 50 test questions" },
+  ],
+  categoryLabels: {
+    mtguardLaw: "Private Guard Licensing & Cap. 389",
+    mtguardPowers: "Arrest, Force & Search Powers",
+    mtguardDuties: "Duties, Legal Terms & Compliance",
+    mtguardPeople: "Communication, Conflict & Customer Care",
+    mtguardRisk: "Security Risk & Patrols",
+    mtguardSurveillance: "CCTV, Alarms, Access & Searches",
+    mtguardFire: "Fire Classes, Fire & Flood Drills",
+    mtguardIncidents: "Bomb Threats, Investigations & Reports",
+  },
+  copy: {
+    guestPrompt: "to save your private guard course progress and track every question you miss",
+    trainingHeading: "Train module by module",
+    trainingSub: "Four sets, two for each module of the Award in Private Security Guard Services: licensing, law and powers, duties and people skills, risk, patrols and surveillance, and fire, floods, bomb threats and reports. Missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions across both modules, 70% target",
+    heroSubs: [
+      "Four module sets, four mock tests.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Ready for your assessments.",
+    ],
+    sourceLine: "Based on the Jobsplus Award in Private Security Guard Services outcomes, the Private Guards and Community Officers Act (Cap. 389), the Private Guards Regulations and the Criminal Code. Original questions; 50 per test, 70% is Tigertest's target (each real module passes at 45%). Not affiliated with the Malta Police Force, Jobsplus or any training provider.",
+    analyticsKey: "mtguard",
+  },
+};
+
 const detheorie: ExamConfig = {
   id: "detheorie",
   stateCode: "DETHEORIE",
@@ -9287,7 +11784,10 @@ const detheorie: ExamConfig = {
     shortName: "German driving theory test",
     fullName: "German driving licence theory test, class B car (Führerschein Klasse B), in German",
   },
-  review: { de: "model" },
+  translations: {
+    en: examTranslation(detheorieEn),
+  },
+  review: { de: "model", en: "machine" },
   // Real test (FeV Anlage 7 Nr. 1.2, TÜV NORD, TÜV | DEKRA arge tp 21; checked 2026-11-01): class
   // B first licence, 30 questions (20 Grundstoff, 10 Zusatzstoff), 2 to 5 error points each (110),
   // pass with at most 10, two wrong 5-point questions fail; no fixed time, guide time 45 minutes;
@@ -9339,6 +11839,640 @@ const detheorie: ExamConfig = {
     ],
     sourceLine: "Nach StVO, StVZO und Fahrerlaubnis-Verordnung, Stand November 2026. Eigene Fragen, nicht aus dem amtlichen Fragenkatalog; 30 pro Testbogen, ohne Fehlerpunkte-Gewichtung.",
     analyticsKey: "detheorie",
+  },
+};
+
+const demotorrad: ExamConfig = {
+  id: "demotorrad",
+  stateCode: "DEMOTORRAD",
+  idBase: 22200,
+  slug: "/motorrad-theorie",
+  landingPath: "/de/motorrad-fuehrerschein-theorie-test",
+  name: "Motorrad Führerschein Theorie Test Klasse A, A1, A2",
+  shortName: "Motorrad Theorie",
+  examLabel: "Theorieprüfung Klasse A",
+  fullName: "Theoretische Fahrerlaubnisprüfung Klassen A, A1 und A2 (Motorrad)",
+  questionIdPrefix: "DEMOT-",
+  icon: "bike",
+  testCount: 7,
+  questionsPerTest: 30,
+  passPct: 93,
+  language: "de",
+  locale: "de-DE",
+  english: {
+    name: "Germany Motorcycle Theory Test (Class A, A1, A2)",
+    shortName: "German motorcycle theory test",
+    fullName: "German motorcycle licence theory test, classes A, A1 and A2 (Motorradführerschein), in German",
+  },
+  review: { de: "model" },
+  // Real test (FeV Anlage 7 Nr. 1.2, TÜV NORD; checked 2026-11-06): first licence A, A1, A2:
+  // 30 questions (20 Grundstoff, 10 Zusatzstoff), 2 to 5 error points each (110), pass with at
+  // most 10, two wrong 5-point questions fail; extension 20 questions, 72 points, 6 error points;
+  // no fixed time; German plus foreign languages (FeV now lists 14, TÜV | DEKRA still says 12);
+  // video, multi-answer and image-selection tasks. Tigertest: seven tests of 30, 15 Grundstoff
+  // (motorcycle perspective, 4/4/3/2/2) + 15 Zusatzstoff (5/3/3/2/2), pools exactly 7x, written
+  // in German, kept clear of detheorie's stems. Equal weight, so passPct 93 (28 of 30) is
+  // Tigertest's target. The split is Tigertest's own.
+  blueprint: {
+    demotGefahren: 4,
+    demotVerhalten: 4,
+    demotVorfahrt: 3,
+    demotZeichen: 2,
+    demotUmwelt: 2,
+    demotFahrtechnik: 5,
+    demotSchutz: 3,
+    demotSozius: 3,
+    demotKlassen: 2,
+    demotTechnik: 2,
+  },
+  // Five topic sets, not testSets(): 5 + 7 tests = 12 dashboard steps.
+  trainingSets: [
+    { setNumber: 1, id: 22201, name: "Fahrtechnik: Bremsen und Kurven", categories: ["demotFahrtechnik"], size: 35, weightLabel: "5 von 30 Fragen je Testbogen" },
+    { setNumber: 2, id: 22202, name: "Schutzkleidung und Technik", categories: ["demotSchutz", "demotTechnik"], size: 35, weightLabel: "5 von 30 Fragen je Testbogen" },
+    { setNumber: 3, id: 22203, name: "Beifahrer, Gruppe und Fahrerlaubnis", categories: ["demotSozius", "demotKlassen"], size: 35, weightLabel: "5 von 30 Fragen je Testbogen" },
+    { setNumber: 4, id: 22204, name: "Gefahrenlehre und Verhalten", categories: ["demotGefahren", "demotVerhalten"], size: 56, weightLabel: "8 von 30 Fragen je Testbogen" },
+    { setNumber: 5, id: 22205, name: "Vorfahrt, Zeichen, Umwelt und Eignung", categories: ["demotVorfahrt", "demotZeichen", "demotUmwelt"], size: 49, weightLabel: "7 von 30 Fragen je Testbogen" },
+  ],
+  categoryLabels: {
+    demotGefahren: "Gefahrenlehre",
+    demotVerhalten: "Verhalten im Verkehr",
+    demotVorfahrt: "Vorfahrt und Vorrang",
+    demotZeichen: "Verkehrszeichen",
+    demotUmwelt: "Umweltschutz und Eignung",
+    demotFahrtechnik: "Fahrtechnik: Bremsen und Kurven",
+    demotSchutz: "Schutzkleidung und Sichtbarkeit",
+    demotSozius: "Beifahrer, Gepäck und Gruppe",
+    demotKlassen: "Klassen A1, A2, A und B196",
+    demotTechnik: "Motorradtechnik und Wartung",
+  },
+  copy: {
+    guestPrompt: "um deinen Fortschritt für die Motorrad-Theorie zu speichern und jede falsche Antwort im Blick zu behalten",
+    trainingHeading: "Übungssets",
+    trainingSub: "Jedes Übungsset deckt ein Thema der Prüfung ab. Du bekommst sofort Rückmeldung, und falsch beantwortete Fragen kommen wieder, bis du sie sicher kannst.",
+    testsHeading: "Testbögen · 30 Fragen, höchstens 2 Fehler",
+    heroSubs: [
+      "Fünf Übungssets, sieben Testbögen. Fahrtechnik kommt am häufigsten dran.",
+      "Erst das Set meistern, dann den Testbogen.",
+      "Die Hälfte ist geschafft. Mach einen Testbogen.",
+      "Fehler wiederholen, dann noch einmal testen.",
+      "Alles grün. Melde dich zur Theorieprüfung an.",
+    ],
+    sourceLine: "Nach StVO, StVZO und Fahrerlaubnis-Verordnung, Stand November 2026. Eigene Fragen, nicht aus dem amtlichen Fragenkatalog; 30 pro Testbogen, halb Motorrad-Zusatzstoff, ohne Fehlerpunkte-Gewichtung.",
+    analyticsKey: "demotorrad",
+  },
+};
+
+const deaevo: ExamConfig = {
+  id: "deaevo",
+  stateCode: "DEAEVO",
+  idBase: 26400,
+  slug: "/ausbildereignung",
+  landingPath: "/de/aevo-pruefung-test",
+  name: "AEVO Prüfung Test",
+  shortName: "AEVO Prüfung",
+  examLabel: "Ausbildereignungsprüfung (AEVO)",
+  fullName: "Ausbildereignungsprüfung nach der Ausbilder-Eignungsverordnung (AEVO), schriftlicher Teil",
+  questionIdPrefix: "DEAEVO-",
+  icon: "graduation",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  language: "de",
+  locale: "de-DE",
+  english: {
+    name: "German Trainer Aptitude Exam (AEVO)",
+    shortName: "German AEVO trainer exam",
+    fullName: "German trainer aptitude exam (Ausbildereignungsprüfung, AEVO), written part, in German",
+  },
+  review: { de: "model" },
+  // Real exam (AEVO § 4, checked 2026-11-06; IHK Darmstadt 12/2024, IHK Bonn 11/2025, IHK
+  // Gießen-Friedberg, IHK tablet Handreichung 09/2025): written part of case-based tasks from all
+  // four Handlungsfelder, 3 hours; at the IHKs about 80 programmed tasks, number of correct
+  // answers stated, all-or-nothing, 100 points, 50 = ausreichend; practical part (presentation
+  // or demonstration up to 15 minutes plus Fachgespräch, together up to 30) not modelled.
+  // Categories follow AEVO § 3 and the BIBB Rahmenplan 2023 (HA 135, BAnz AT 14.07.2023 S2),
+  // whose course-time split 15/20/50/15 % sets the per-test weights 8/10/24/8. The split inside
+  // each Handlungsfeld is Tigertest's own. Four tests of 50, pools exactly 4x (200, all original,
+  // written in German). Single best answer of four, so passPct 70 (35 of 50) is Tigertest's target.
+  blueprint: {
+    aevoNutzen: 4,
+    aevoRahmen: 4,
+    aevoPlan: 3,
+    aevoVertrag: 4,
+    aevoRechte: 3,
+    aevoLernen: 7,
+    aevoMethoden: 6,
+    aevoBegleitung: 6,
+    aevoBeurteilung: 5,
+    aevoAbschluss: 8,
+  },
+  // Five sets by Handlungsfeld (HF 3 split in two to stay at most 60), not testSets():
+  // 5 + 4 tests = 9 dashboard steps.
+  trainingSets: [
+    { setNumber: 1, id: 26401, name: "Handlungsfeld 1: Voraussetzungen prüfen, Ausbildung planen", categories: ["aevoNutzen", "aevoRahmen"], size: 32, weightLabel: "8 von 50 Fragen je Testbogen" },
+    { setNumber: 2, id: 26402, name: "Handlungsfeld 2: Ausbildung vorbereiten, Azubis einstellen", categories: ["aevoPlan", "aevoVertrag", "aevoRechte"], size: 40, weightLabel: "10 von 50 Fragen je Testbogen" },
+    { setNumber: 3, id: 26403, name: "Handlungsfeld 3: Lernen und Methoden", categories: ["aevoLernen", "aevoMethoden"], size: 52, weightLabel: "13 von 50 Fragen je Testbogen" },
+    { setNumber: 4, id: 26404, name: "Handlungsfeld 3: Begleiten und Beurteilen", categories: ["aevoBegleitung", "aevoBeurteilung"], size: 44, weightLabel: "11 von 50 Fragen je Testbogen" },
+    { setNumber: 5, id: 26405, name: "Handlungsfeld 4: Ausbildung abschließen", categories: ["aevoAbschluss"], size: 32, weightLabel: "8 von 50 Fragen je Testbogen" },
+  ],
+  categoryLabels: {
+    aevoNutzen: "Nutzen der Ausbildung und duales System",
+    aevoRahmen: "Rechtsrahmen, Eignung und zuständige Stellen",
+    aevoPlan: "Ausbildungsplan, Mitbestimmung und Kooperation",
+    aevoVertrag: "Auswahl und Ausbildungsvertrag",
+    aevoRechte: "Rechte, Freistellung und Jugendarbeitsschutz",
+    aevoLernen: "Lernen, Motivation und Lernziele",
+    aevoMethoden: "Ausbildungsmethoden und Medien",
+    aevoBegleitung: "Probezeit, Lernbegleitung und Konflikte",
+    aevoBeurteilung: "Leistungen beurteilen",
+    aevoAbschluss: "Prüfung, Zeugnis und Perspektiven",
+  },
+  copy: {
+    guestPrompt: "um deinen Fortschritt für die AEVO-Prüfung zu speichern und jede falsche Antwort im Blick zu behalten",
+    trainingHeading: "Übungssets",
+    trainingSub: "Jedes Übungsset deckt ein Handlungsfeld der AEVO ab. Du bekommst sofort Rückmeldung, und falsch beantwortete Fragen kommen wieder, bis du sie sicher kannst.",
+    testsHeading: "Testbögen · 50 Fragen, 35 zum Bestehen",
+    heroSubs: [
+      "Fünf Übungssets, vier Testbögen. Handlungsfeld 3, Ausbildung durchführen, ist die Hälfte der Prüfung.",
+      "Erst das Set meistern, dann den Testbogen.",
+      "Die Hälfte ist geschafft. Mach einen Testbogen.",
+      "Fehler wiederholen, dann noch einmal testen.",
+      "Alles grün. Melde dich bei deiner Kammer zur Prüfung an.",
+    ],
+    sourceLine: "Nach AEVO, Rahmenplan 2023, BBiG, JArbSchG und BetrVG, Stand November 2026. Eigene Fragen mit je einer richtigen Antwort; der praktische Teil wird nicht nachgebildet.",
+    analyticsKey: "deaevo",
+  },
+};
+
+const de34a: ExamConfig = {
+  id: "de34a",
+  stateCode: "DE34A",
+  idBase: 22100,
+  slug: "/sachkunde-34a",
+  landingPath: "/de/sachkundepruefung-34a-test",
+  name: "Sachkundeprüfung 34a Test",
+  shortName: "Sachkunde 34a",
+  examLabel: "Sachkundeprüfung § 34a GewO",
+  fullName: "Sachkundeprüfung im Bewachungsgewerbe nach § 34a GewO (schriftlicher Teil)",
+  questionIdPrefix: "DE34A-",
+  icon: "shield",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 50,
+  language: "de",
+  locale: "de-DE",
+  english: {
+    name: "German Security Guard Competence Exam (§ 34a GewO)",
+    shortName: "German § 34a security exam",
+    fullName: "German security guard competence exam (Sachkundeprüfung im Bewachungsgewerbe, § 34a GewO), written part, in German",
+  },
+  review: { de: "model" },
+  // Real exam (§ 34a GewO, BewachV 2019, DIHK Rahmenplan from 1 June 2019, IHK Hannover page of
+  // 23.06.2026 and IHK Emden; checked 2026-11-06): written part 120 minutes, digital multiple
+  // choice, 82 tasks for 120 points (since 1 July 2025; 72 before), up to two correct answers per task,
+  // pass with 50 percent; oral part about 15 minutes, up to 5 candidates, pass with 50 percent.
+  // Categories are the Sachgebiete of § 7 BewachV with Anlage 2, split as in the DIHK
+  // Rahmenplan (1a/1b, 4a/4b). No official weights: the 6/6/4/7/9/3/4/7/4 split is Tigertest's.
+  // Four tests of 50, pools exactly 4x each count (200, all original, written in German).
+  // Single best answer of four, equal weight; passPct 50 is the real written mark.
+  blueprint: {
+    d34Oeffentlich: 6,
+    d34Gewerbe: 6,
+    d34Datenschutz: 4,
+    d34Bgb: 7,
+    d34Straf: 9,
+    d34Waffen: 3,
+    d34Uvv: 4,
+    d34Menschen: 7,
+    d34Technik: 4,
+  },
+  // Five topic sets, not testSets(): 5 + 4 tests = 9 dashboard steps.
+  trainingSets: [
+    { setNumber: 1, id: 22101, name: "Öffentliches Recht und Gewerberecht", categories: ["d34Oeffentlich", "d34Gewerbe"], size: 48, weightLabel: "12 von 50 Fragen je Testbogen" },
+    { setNumber: 2, id: 22102, name: "BGB und Datenschutz", categories: ["d34Bgb", "d34Datenschutz"], size: 44, weightLabel: "11 von 50 Fragen je Testbogen" },
+    { setNumber: 3, id: 22103, name: "Strafrecht, Strafverfahren und Waffen", categories: ["d34Straf", "d34Waffen"], size: 48, weightLabel: "12 von 50 Fragen je Testbogen" },
+    { setNumber: 4, id: 22104, name: "Umgang mit Menschen", categories: ["d34Menschen"], size: 28, weightLabel: "7 von 50 Fragen je Testbogen" },
+    { setNumber: 5, id: 22105, name: "Unfallverhütung und Sicherheitstechnik", categories: ["d34Uvv", "d34Technik"], size: 32, weightLabel: "8 von 50 Fragen je Testbogen" },
+  ],
+  categoryLabels: {
+    d34Oeffentlich: "Recht der öffentlichen Sicherheit und Ordnung",
+    d34Gewerbe: "Gewerberecht",
+    d34Datenschutz: "Datenschutzrecht",
+    d34Bgb: "Bürgerliches Gesetzbuch",
+    d34Straf: "Straf- und Strafverfahrensrecht",
+    d34Waffen: "Umgang mit Waffen",
+    d34Uvv: "Unfallverhütungsvorschrift Wach- und Sicherungsdienste",
+    d34Menschen: "Umgang mit Menschen",
+    d34Technik: "Grundzüge der Sicherheitstechnik",
+  },
+  copy: {
+    guestPrompt: "um deinen Fortschritt für die Sachkundeprüfung zu speichern und jede falsche Antwort im Blick zu behalten",
+    trainingHeading: "Übungssets",
+    trainingSub: "Jedes Übungsset deckt Sachgebiete der Prüfung ab. Du bekommst sofort Rückmeldung, und falsch beantwortete Fragen kommen wieder, bis du sie sicher kannst.",
+    testsHeading: "Testbögen · 50 Fragen, Bestehen ab 50 Prozent",
+    heroSubs: [
+      "Fünf Übungssets, vier Testbögen. Strafrecht, BGB und Umgang mit Menschen kommen am häufigsten dran.",
+      "Erst das Set meistern, dann den Testbogen.",
+      "Die Hälfte ist geschafft. Mach einen Testbogen.",
+      "Fehler wiederholen, dann noch einmal testen.",
+      "Alles grün. Melde dich bei deiner IHK zur Sachkundeprüfung an.",
+    ],
+    sourceLine: "Nach § 34a GewO, BewachV, BGB, StGB, StPO, WaffG, DSGVO und DGUV Vorschrift 23, Stand November 2026. Eigene Fragen nach dem DIHK-Rahmenplan, nicht aus einem amtlichen Aufgabensatz; ohne mündliche Prüfung.",
+    analyticsKey: "de34a",
+  },
+};
+
+const deheilpr: ExamConfig = {
+  id: "deheilpr",
+  stateCode: "DEHEILPR",
+  idBase: 22300,
+  slug: "/heilpraktiker-pruefung",
+  landingPath: "/de/heilpraktiker-pruefung-test",
+  name: "Heilpraktikerprüfung Test",
+  shortName: "Heilpraktikerprüfung",
+  examLabel: "Heilpraktikerüberprüfung, schriftlicher Teil",
+  fullName: "Heilpraktikerüberprüfung nach dem Heilpraktikergesetz, schriftlicher Teil (allgemeine Erlaubnis)",
+  questionIdPrefix: "DEHP-",
+  icon: "stethoscope",
+  testCount: 3,
+  questionsPerTest: 60,
+  passPct: 75,
+  language: "de",
+  locale: "de-DE",
+  english: {
+    name: "German Heilpraktiker Licensing Exam (written part)",
+    shortName: "German Heilpraktiker exam",
+    fullName: "German Heilpraktiker licensing exam (Heilpraktikerüberprüfung), written part for the general licence, in German",
+  },
+  review: { de: "model" },
+  // Real exam (Merkblätter LRA München 07/2025 and LRA Fürstenfeldbruck 09/2025, checked
+  // 2026-11-06): 60 multiple-choice questions in 120 minutes, at least 45 correct (75 %) to reach
+  // the oral and practical part under an Amtsarzt; content per the BMG Leitlinien of 7 Dec 2017.
+  // No official weights: the 7/7/5/7/5/7/6/6/4/6 split is Tigertest's, along the Leitlinien.
+  // Three real-length tests of 60 (pools 200, the last items of each pool training-only).
+  blueprint: {
+    dehpRecht: 7,
+    dehpInfekt: 7,
+    dehpHygiene: 5,
+    dehpHerz: 7,
+    dehpAtmung: 5,
+    dehpStoffwechsel: 7,
+    dehpBlut: 6,
+    dehpNerven: 6,
+    dehpBewegung: 4,
+    dehpNotfall: 6,
+  },
+  // Five topic sets, sets first then tests (like detheorie): 5 + 3 = 8 dashboard steps.
+  trainingSets: [
+    { setNumber: 1, id: 22301, name: "Recht und Infektionsschutz", categories: ["dehpRecht", "dehpInfekt"], size: 48, weightLabel: "14 von 60 Fragen je Probeprüfung" },
+    { setNumber: 2, id: 22302, name: "Hygiene, Untersuchung und Notfälle", categories: ["dehpHygiene", "dehpNotfall"], size: 36, weightLabel: "11 von 60 Fragen je Probeprüfung" },
+    { setNumber: 3, id: 22303, name: "Herz, Kreislauf und Atmung", categories: ["dehpHerz", "dehpAtmung"], size: 38, weightLabel: "12 von 60 Fragen je Probeprüfung" },
+    { setNumber: 4, id: 22304, name: "Stoffwechsel, Blut und Niere", categories: ["dehpStoffwechsel", "dehpBlut"], size: 42, weightLabel: "13 von 60 Fragen je Probeprüfung" },
+    { setNumber: 5, id: 22305, name: "Nerven, Psyche, Haut und Bewegung", categories: ["dehpNerven", "dehpBewegung"], size: 36, weightLabel: "10 von 60 Fragen je Probeprüfung" },
+  ],
+  categoryLabels: {
+    dehpRecht: "Berufs- und Gesetzeskunde",
+    dehpInfekt: "Infektionskrankheiten und Infektionsschutz",
+    dehpHygiene: "Hygiene, Untersuchung und Injektion",
+    dehpHerz: "Herz, Kreislauf und Gefäße",
+    dehpAtmung: "Atmung, Hals, Nase und Ohren",
+    dehpStoffwechsel: "Verdauung, Stoffwechsel und Hormone",
+    dehpBlut: "Blut, Immunsystem, Niere und Labor",
+    dehpNerven: "Nervensystem, Psyche und Sinnesorgane",
+    dehpBewegung: "Bewegungsapparat, Haut, Frauen- und Kinderheilkunde",
+    dehpNotfall: "Notfälle und Erste Hilfe",
+  },
+  copy: {
+    guestPrompt: "um deinen Fortschritt für die Heilpraktikerprüfung zu speichern und jede falsche Antwort im Blick zu behalten",
+    trainingHeading: "Übungssets",
+    trainingSub: "Jedes Übungsset deckt Themen der Leitlinien ab. Du bekommst sofort Rückmeldung, und falsch beantwortete Fragen kommen wieder, bis du sie sicher kannst.",
+    testsHeading: "Probeprüfungen · 60 Fragen, 45 zum Bestehen",
+    heroSubs: [
+      "Fünf Übungssets, drei Probeprüfungen. Recht und Infektionsschutz kommen in jeder Prüfung dran.",
+      "Erst die Sets meistern, dann die Probeprüfung.",
+      "Die Hälfte ist geschafft. Mach eine Probeprüfung mit 60 Fragen.",
+      "Fehler wiederholen, dann noch einmal testen.",
+      "Alles grün. Du bist bereit für den schriftlichen Teil.",
+    ],
+    sourceLine: "Nach Heilpraktikergesetz, Infektionsschutzgesetz und den BMG-Leitlinien von 2017, Stand November 2026. Eigene Fragen, nicht aus früheren Prüfungen; 60 pro Probeprüfung wie beim Gesundheitsamt.",
+    analyticsKey: "deheilpr",
+  },
+};
+
+const escapcond: ExamConfig = {
+  id: "escapcond",
+  stateCode: "ESCAPCOND",
+  idBase: 22700,
+  slug: "/examen-cap",
+  landingPath: "/es/test-examen-cap",
+  name: "Test examen CAP inicial",
+  shortName: "Examen CAP",
+  examLabel: "Examen CAP inicial",
+  fullName: "Examen del certificado de aptitud profesional (CAP) de cualificación inicial de conductores, mercancías y viajeros",
+  questionIdPrefix: "ESCAP-",
+  icon: "truck",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 67,
+  language: "es",
+  locale: "es-ES",
+  english: {
+    name: "Spain Driver CPC (CAP) Initial Exam",
+    shortName: "Spain CAP exam",
+    fullName: "Spain Driver CPC initial qualification exam (examen CAP inicial), goods and passengers, in Spanish",
+  },
+  review: { es: "model" },
+  // Real exam (Real Decreto 284/2021, arts. 5, 6, 16, 17 and Anexo V; BOE-A-2021-6624, checked
+  // 2026-11-06; Anexo V unchanged by RD 487/2026, in force 18 Sept 2026): 100 test questions, 4
+  // options, one valid, at least 2 hours, +1 / -0,5 / blank 0, pass at half the points (50); 25
+  // of the 100 on the speciality (Anexo I A sección 2.ª mercancías or 3.ª viajeros). Categories
+  // follow the Anexo I A objectives (1.1 and 1.3; 1.2; 1.3 bis, now 1.4; 2.1 hours; 2.1
+  // tachograph, working time and periodic training; 3.1, 3.3, 3.4; 3.2, 3.5, 3.6; mercancías;
+  // viajeros). Per test 38 common + 6 + 6; the split inside the common part is Tigertest's.
+  // Four tests of 50, pools exactly 4x each count, all original, written in Spanish. No penalty
+  // applied, so passPct 67 (34 of 50) = 50 net points answering everything.
+  blueprint: {
+    escapcCadena: 6,
+    escapcFrenos: 6,
+    escapcRiesgos: 4,
+    escapcTiempos: 6,
+    escapcTacografo: 5,
+    escapcSalud: 6,
+    escapcEmergencias: 5,
+    escapcMercancias: 6,
+    escapcViajeros: 6,
+  },
+  // Five topic sets, not testSets(): 5 + 4 tests = 9 dashboard steps. Sets 4 and 5 are the two
+  // specialities, so a truck or bus candidate can train only their own.
+  trainingSets: [
+    { setNumber: 1, id: 22701, name: "Conducción racional y frenos", categories: ["escapcCadena", "escapcFrenos"], size: 48, weightLabel: "12 de 50 preguntas por test" },
+    { setNumber: 2, id: 22702, name: "Tiempos de conducción, tacógrafo y jornada", categories: ["escapcTiempos", "escapcTacografo"], size: 44, weightLabel: "11 de 50 preguntas por test" },
+    { setNumber: 3, id: 22703, name: "Riesgos, salud y emergencias", categories: ["escapcRiesgos", "escapcSalud", "escapcEmergencias"], size: 60, weightLabel: "15 de 50 preguntas por test" },
+    { setNumber: 4, id: 22704, name: "Mercancías", categories: ["escapcMercancias"], size: 24, weightLabel: "6 de 50 preguntas por test (25 de 100 en el examen de mercancías)" },
+    { setNumber: 5, id: 22705, name: "Viajeros", categories: ["escapcViajeros"], size: 24, weightLabel: "6 de 50 preguntas por test (25 de 100 en el examen de viajeros)" },
+  ],
+  categoryLabels: {
+    escapcCadena: "Cadena cinemática y conducción económica",
+    escapcFrenos: "Frenos y sistemas de seguridad",
+    escapcRiesgos: "Riesgos del tráfico",
+    escapcTiempos: "Tiempos de conducción y descanso",
+    escapcTacografo: "Tacógrafo, jornada y formación continua",
+    escapcSalud: "Salud, ergonomía y accidentes de trabajo",
+    escapcEmergencias: "Emergencias, delincuencia e imagen de empresa",
+    escapcMercancias: "Mercancías: carga, documentos y mercado",
+    escapcViajeros: "Viajeros: seguridad, normas y mercado",
+  },
+  copy: {
+    guestPrompt: "para guardar tu progreso en el CAP y no perder ninguna pregunta fallada",
+    trainingHeading: "Bloques de repaso",
+    trainingSub: "Cada bloque cubre varios objetivos del temario oficial del CAP. Ves la respuesta al momento y las preguntas que fallas vuelven hasta que las dominas. Mercancías y viajeros tienen su propio bloque.",
+    testsHeading: "Test · 50 preguntas, 34 para aprobar",
+    heroSubs: [
+      "Cinco bloques de repaso y cuatro test. Tiempos de conducción y tacógrafo son lo que más se pregunta.",
+      "Domina el bloque y después haz el test.",
+      "Vas por la mitad. Haz un test completo.",
+      "Repasa tus fallos y vuelve a hacer el test.",
+      "Todo en verde. A por el examen del CAP.",
+    ],
+    sourceLine: "Según el anexo I del Real Decreto 284/2021 y las normas vigentes en noviembre de 2026. Preguntas propias, no de exámenes oficiales; sin la penalización de medio punto por error.",
+    analyticsKey: "escapcond",
+  },
+};
+
+const espolicia: ExamConfig = {
+  id: "espolicia",
+  stateCode: "ESPOLICIA",
+  idBase: 22500,
+  slug: "/oposiciones-policia-nacional",
+  landingPath: "/es/test-oposiciones-policia-nacional",
+  name: "Test Oposiciones Policía Nacional",
+  shortName: "Policía Nacional",
+  examLabel: "Prueba de conocimientos, Escala Básica",
+  fullName: "Oposición a la Escala Básica de la Policía Nacional: prueba de conocimientos",
+  questionIdPrefix: "ESPN-",
+  icon: "badge",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  language: "es",
+  locale: "es-ES",
+  english: {
+    name: "Spain National Police Entrance Exam (Escala Básica)",
+    shortName: "Spain National Police exam",
+    fullName: "Spain National Police entrance exam, Escala Básica knowledge test (oposiciones Policía Nacional), in Spanish",
+  },
+  review: { es: "model" },
+  // Real exam (Resolución de 7 de julio de 2026 de la DGP, BOE núm. 167 de 10-07-2026,
+  // BOE-A-2026-15055, base 6.1.1 and anexo I; checked 2026-11-06): knowledge test of 100 questions
+  // with three options, 50 minutes, [A − E/(n−1)] × 10 / P, minimum 3 of 10 and the best 1,75 per
+  // open place go on; eliminatory; same sitting as the psicotécnicos. 2.704 places (2.163 open,
+  // 541 reserved). Temario of 45 temas: Ciencias Jurídicas 1-26, Ciencias Sociales 27-37,
+  // Técnico-Científicas 38-45. No official weights: 30/11/9 per test follows the temas per block;
+  // the split inside each block is Tigertest's. Four tests of 50, pools exactly 4x each count
+  // (200, all original, written in Spanish). Four options, equal weight, no penalty; passPct 70
+  // (35 of 50) is Tigertest's target, since the real cut-off is set by ranking.
+  blueprint: {
+    espnConstitucion: 6,
+    espnAdministracion: 5,
+    espnExtranjeria: 3,
+    espnSeguridad: 4,
+    espnPenal: 6,
+    espnProcesal: 3,
+    espnIgualdad: 3,
+    espnSociales: 7,
+    espnLengua: 4,
+    espnInformatica: 5,
+    espnArmasVial: 4,
+  },
+  // Six topic sets, not testSets(): 6 + 4 tests = 10 dashboard steps.
+  trainingSets: [
+    { setNumber: 1, id: 22501, name: "Constitución, Unión Europea y Administración", categories: ["espnConstitucion", "espnAdministracion"], size: 44, weightLabel: "11 de 50 preguntas por test" },
+    { setNumber: 2, id: 22502, name: "Extranjería y seguridad ciudadana", categories: ["espnExtranjeria", "espnSeguridad"], size: 28, weightLabel: "7 de 50 preguntas por test" },
+    { setNumber: 3, id: 22503, name: "Derecho Penal y Procesal", categories: ["espnPenal", "espnProcesal"], size: 36, weightLabel: "9 de 50 preguntas por test" },
+    { setNumber: 4, id: 22504, name: "Igualdad y Ciencias Sociales", categories: ["espnIgualdad", "espnSociales"], size: 40, weightLabel: "10 de 50 preguntas por test" },
+    { setNumber: 5, id: 22505, name: "Lengua española", categories: ["espnLengua"], size: 16, weightLabel: "4 de 50 preguntas por test" },
+    { setNumber: 6, id: 22506, name: "Materias técnico-científicas", categories: ["espnInformatica", "espnArmasVial"], size: 36, weightLabel: "9 de 50 preguntas por test" },
+  ],
+  categoryLabels: {
+    espnConstitucion: "Derecho, Constitución y Unión Europea",
+    espnAdministracion: "Administración y Policía Nacional",
+    espnExtranjeria: "Extranjería y protección internacional",
+    espnSeguridad: "Seguridad privada y seguridad ciudadana",
+    espnPenal: "Derecho Penal",
+    espnProcesal: "Derecho Procesal Penal y víctimas",
+    espnIgualdad: "Igualdad, prevención y protección de datos",
+    espnSociales: "Ciencias Sociales",
+    espnLengua: "Lengua española",
+    espnInformatica: "Informática, inteligencia y ciberdelincuencia",
+    espnArmasVial: "Armas, vehículos prioritarios y seguridad vial",
+  },
+  copy: {
+    guestPrompt: "para guardar tu progreso en la oposición y no perder de vista ninguna pregunta fallada",
+    trainingHeading: "Bloques de entrenamiento",
+    trainingSub: "Cada bloque cubre temas del temario de la Escala Básica. Tienes la respuesta al momento, y las preguntas que fallas vuelven hasta que las domines.",
+    testsHeading: "Tests · 50 preguntas, 35 para aprobar",
+    heroSubs: [
+      "Seis bloques, cuatro tests. Las Ciencias Jurídicas son más de la mitad del temario.",
+      "Domina primero el bloque, después haz el test.",
+      "Vas por la mitad. Haz un test completo.",
+      "Repasa los fallos y vuelve a hacer el test.",
+      "Todo en verde. Prepárate para la prueba de conocimientos.",
+    ],
+    sourceLine: "Según la convocatoria de 2026 (BOE de 10 de julio de 2026) y las leyes del temario vigentes en noviembre de 2026. Preguntas propias, no de exámenes oficiales; cuatro opciones y sin penalización por error.",
+    analyticsKey: "espolicia",
+  },
+};
+
+const esguardia: ExamConfig = {
+  id: "esguardia",
+  stateCode: "ESGUARDIA",
+  idBase: 22400,
+  slug: "/oposiciones-guardia-civil",
+  landingPath: "/es/test-oposiciones-guardia-civil",
+  name: "Test oposiciones Guardia Civil",
+  shortName: "Oposiciones Guardia Civil",
+  examLabel: "Prueba de conocimientos de la Guardia Civil",
+  fullName: "Oposiciones a la Escala de Cabos y Guardias de la Guardia Civil: prueba de conocimientos",
+  questionIdPrefix: "ESGC-",
+  icon: "shield",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 63,
+  language: "es",
+  locale: "es-ES",
+  english: {
+    name: "Guardia Civil Entrance Exam (Spain)",
+    shortName: "Guardia Civil exam",
+    fullName: "Spanish Guardia Civil entrance exam (Escala de Cabos y Guardias), knowledge test, in Spanish",
+  },
+  review: { es: "model" },
+  // Real exam (Resolución 160/38243/2026, BOE 8 May 2026, BOE-A-2026-9982; checked 2026-11-06):
+  // prueba de conocimientos of 140 minutes with ortografía, gramática (apto/no apto), 100
+  // conocimientos generales questions (4 options, one valid, Px = Y/T [A - E/(N-1)], blanks score
+  // nothing, 0 to 100, minimum 50) and 20 English questions (minimum 8). Temario: Resolución de 3
+  // de octubre de 2022, updated 29 May 2023, 25 temas; temas 24 (inglés) and 25 (lengua) are the
+  // separate parts. Categories group temas 1 to 23; the 6/6/4/8/6/6/6/4/4 split is Tigertest's (no
+  // official weights). Four tests of 50, pools exactly 4x each count, all original, written in
+  // Spanish. No penalty applied, so passPct 63 (32 of 50) = the 50-point minimum answering all.
+  blueprint: {
+    esgcDerechos: 6,
+    esgcConstitucion: 6,
+    esgcInternacional: 4,
+    esgcPenal: 8,
+    esgcProcesal: 6,
+    esgcAdministrativo: 6,
+    esgcSeguridad: 6,
+    esgcInstituto: 4,
+    esgcTecnico: 4,
+  },
+  // Five topic sets, not testSets(): 5 + 4 tests = 9 dashboard steps.
+  trainingSets: [
+    { setNumber: 1, id: 22401, name: "Derechos humanos, igualdad y Constitución", categories: ["esgcDerechos", "esgcConstitucion"], size: 48, weightLabel: "12 de 50 preguntas por test" },
+    { setNumber: 2, id: 22402, name: "Derecho penal, menores y violencia de género", categories: ["esgcPenal"], size: 32, weightLabel: "8 de 50 preguntas por test" },
+    { setNumber: 3, id: 22403, name: "Derecho procesal penal", categories: ["esgcProcesal"], size: 24, weightLabel: "6 de 50 preguntas por test" },
+    { setNumber: 4, id: 22404, name: "Derecho administrativo y seguridad", categories: ["esgcAdministrativo", "esgcSeguridad"], size: 48, weightLabel: "12 de 50 preguntas por test" },
+    { setNumber: 5, id: 22405, name: "Guardia Civil, instituciones y materias técnicas", categories: ["esgcInstituto", "esgcInternacional", "esgcTecnico"], size: 48, weightLabel: "12 de 50 preguntas por test" },
+  ],
+  categoryLabels: {
+    esgcDerechos: "Derechos humanos, igualdad y deontología",
+    esgcConstitucion: "Derecho constitucional",
+    esgcInternacional: "Unión Europea e instituciones internacionales",
+    esgcPenal: "Derecho penal, menores y violencia de género",
+    esgcProcesal: "Derecho procesal penal",
+    esgcAdministrativo: "Derecho civil, administrativo y protección de datos",
+    esgcSeguridad: "Seguridad, extranjería, armas y contrabando",
+    esgcInstituto: "Fuerzas y Cuerpos de Seguridad y Guardia Civil",
+    esgcTecnico: "Riesgos laborales, protección civil, TIC y topografía",
+  },
+  copy: {
+    guestPrompt: "para guardar tu progreso en la oposición y no perder ninguna pregunta fallada",
+    trainingHeading: "Bloques de repaso",
+    trainingSub: "Cada bloque cubre varios temas del temario oficial. Ves la respuesta al momento y las preguntas que fallas vuelven hasta que las dominas.",
+    testsHeading: "Test · 50 preguntas, 32 para el mínimo",
+    heroSubs: [
+      "Cinco bloques de repaso y cuatro test. Derecho penal es el bloque que más preguntas pone.",
+      "Domina el bloque y después haz el test.",
+      "Vas por la mitad. Haz un test completo.",
+      "Repasa tus fallos y vuelve a hacer el test.",
+      "Todo en verde. A por la prueba de conocimientos.",
+    ],
+    sourceLine: "Según el temario oficial de la Escala de Cabos y Guardias (2022, actualizado en 2023) y las leyes vigentes en noviembre de 2026. Preguntas propias, no de exámenes oficiales; sin la penalización de un tercio por error.",
+    analyticsKey: "esguardia",
+  },
+};
+
+const esvigilante: ExamConfig = {
+  id: "esvigilante",
+  stateCode: "ESVIGIL",
+  idBase: 22600,
+  slug: "/vigilante-de-seguridad",
+  landingPath: "/es/test-vigilante-de-seguridad",
+  name: "Test vigilante de seguridad",
+  shortName: "Vigilante de seguridad",
+  examLabel: "Prueba de conocimientos de vigilante de seguridad",
+  fullName: "Pruebas de selección para vigilante de seguridad privada: prueba de conocimientos",
+  questionIdPrefix: "ESVIG-",
+  icon: "shield",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 67,
+  language: "es",
+  locale: "es-ES",
+  english: {
+    name: "Spain Private Security Guard Exam (Vigilante de Seguridad)",
+    shortName: "Spain security guard exam",
+    fullName: "Spanish private security guard (vigilante de seguridad) licence exam, knowledge test, in Spanish",
+  },
+  review: { es: "model" },
+  // Real exam (Resolución de 9 de enero de 2026, Secretaría de Estado de Seguridad, BOE 14 Jan
+  // 2026, BOE-A-2026-813; checked 2026-11-06): calls 01, 02 and 03/2026; cuestionario of 100
+  // questions, 3 alternatives, one valid, 50 minutes, on the Anexo III common programme;
+  // [A - E/(n-1)] x 10/P with n = 3, 0 to 10, minimum 5; physical tests apto / no apto.
+  // Categories follow Anexo III's four areas (jurídica split in five); the 4/8/5/8/3/5/9/8 split
+  // is Tigertest's. Four tests of 50, pools exactly 4x each count, all original, written in
+  // Spanish. Four options and no penalty, so passPct 67 (34 of 50) = the 5 of 10 answering all.
+  blueprint: {
+    esvigConstitucion: 4,
+    esvigPenal: 8,
+    esvigProcesal: 5,
+    esvigSegPrivada: 8,
+    esvigLaboral: 3,
+    esvigSocioprof: 5,
+    esvigTecnico: 9,
+    esvigInstrumental: 8,
+  },
+  // Five area sets, not testSets(): 5 + 4 tests = 9 dashboard steps.
+  trainingSets: [
+    { setNumber: 1, id: 22601, name: "Constitución y Derecho penal", categories: ["esvigConstitucion", "esvigPenal"], size: 48, weightLabel: "12 de 50 preguntas por test" },
+    { setNumber: 2, id: 22602, name: "Derecho procesal y seguridad privada", categories: ["esvigProcesal", "esvigSegPrivada"], size: 52, weightLabel: "13 de 50 preguntas por test" },
+    { setNumber: 3, id: 22603, name: "Derecho laboral y área socio-profesional", categories: ["esvigLaboral", "esvigSocioprof"], size: 32, weightLabel: "8 de 50 preguntas por test" },
+    { setNumber: 4, id: 22604, name: "Área técnico-profesional", categories: ["esvigTecnico"], size: 36, weightLabel: "9 de 50 preguntas por test" },
+    { setNumber: 5, id: 22605, name: "Área instrumental", categories: ["esvigInstrumental"], size: 32, weightLabel: "8 de 50 preguntas por test" },
+  ],
+  categoryLabels: {
+    esvigConstitucion: "Derecho constitucional y Unión Europea",
+    esvigPenal: "Derecho penal",
+    esvigProcesal: "Derecho procesal penal",
+    esvigSegPrivada: "Seguridad privada y protección de datos",
+    esvigLaboral: "Derecho laboral, prevención y práctica jurídica",
+    esvigSocioprof: "Área socio-profesional",
+    esvigTecnico: "Área técnico-profesional",
+    esvigInstrumental: "Área instrumental",
+  },
+  copy: {
+    guestPrompt: "para guardar tu progreso hacia la TIP y no perder ninguna pregunta fallada",
+    trainingHeading: "Bloques de repaso",
+    trainingSub: "Cada bloque cubre un área del programa oficial. Ves la respuesta al momento y las preguntas que fallas vuelven hasta que las dominas.",
+    testsHeading: "Test · 50 preguntas, 34 para el 5",
+    heroSubs: [
+      "Cinco bloques de repaso y cuatro test. Seguridad privada y Derecho penal son lo que más pesa.",
+      "Domina el bloque y después haz el test.",
+      "Vas por la mitad. Haz un test completo.",
+      "Repasa tus fallos y vuelve a hacer el test.",
+      "Todo en verde. A por la prueba de conocimientos.",
+    ],
+    sourceLine: "Según el programa del anexo III de las bases de 2026 y la Ley 5/2014 de Seguridad Privada, vigentes en noviembre de 2026. Preguntas propias, no de exámenes oficiales; cuatro respuestas y sin la penalización de medio acierto por error.",
+    analyticsKey: "esvigilante",
   },
 };
 
@@ -14549,7 +17683,7 @@ const sgvl: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, nhie, cna, ptcb, phleb, ccma, cma, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, ccaf, sfadmin, phr, cisa, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, bedriving, dkteori, setrafik, fitheory, grdriving, rodrpciv, hukresz, mttheory, detheorie, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, gulfrn, inrto, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, nhie, cna, ptcb, phleb, ccma, cma, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, ccaf, sfadmin, phr, cisa, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, bemoto, bevracht, dkteori, dkmoto, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, grmoto, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, betoelating, befsmavz, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, grcitizen, grsecurity, semedb, dkindfoed, dkmedborger, gulfrn, inrto, htl, cst, crcst];
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
 export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA, realestatePA, realestateIL, realestateOH, realestateGA, realestateNC, realestateMI, realestateVA, realestateWA, realestateAZ, realestateTN, realestateLA, insuranceNY, insurancePA, insuranceIL, insuranceOH, insuranceGA, insuranceNC, insuranceMI, insuranceNJ, insuranceVA, insuranceWA, pncNY, pncPA, pncIL, pncOH, pncGA, pncNC, pncMI, pncNJ, pncVA, pncWA];
@@ -14669,6 +17803,12 @@ export function trainingPartName(p: TrainingPart, lang: Language = "en"): string
   if (lang === "pl") return `${p.set.name}, część ${p.part} z ${p.partCount}`;
   if (lang === "nl") return `${p.set.name}, deel ${p.part} van ${p.partCount}`;
   if (lang === "pt") return `${p.set.name}, parte ${p.part} de ${p.partCount}`;
+  if (lang === "sv") return `${p.set.name}, del ${p.part} av ${p.partCount}`;
+  if (lang === "da") return `${p.set.name}, del ${p.part} af ${p.partCount}`;
+  if (lang === "fi") return `${p.set.name}, osa ${p.part}/${p.partCount}`;
+  if (lang === "hu") return `${p.set.name}, ${p.part}/${p.partCount}. rész`;
+  if (lang === "ro") return `${p.set.name}, partea ${p.part} din ${p.partCount}`;
+  if (lang === "el") return `${p.set.name}, μέρος ${p.part} από ${p.partCount}`;
   return `${p.set.name}, part ${p.part} of ${p.partCount}`;
 }
 

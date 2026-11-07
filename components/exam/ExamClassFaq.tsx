@@ -7,6 +7,31 @@ import Link from "next/link";
 // page's FAQPage graph; keep the two in step.
 
 const TEACHES: Record<string, string> = {
+  espolicia: "a Policía Nacional oposiciones class",
+  esguardia: "a Guardia Civil oposiciones class",
+  esvigilante: "a vigilante de seguridad training course",
+  deaevo: "an AEVO trainer course (Ausbildung der Ausbilder)",
+  de34a: "a Sachkunde 34a preparation course",
+  deheilpr: "a Heilpraktiker exam preparation course",
+  pttvde: "the TVDE driver initial course",
+  ptvigil: "a private security (vigilante) training course",
+  sejakt: "a jägarexamen course",
+  semedb: "SFI, samhällsorientering or folkhögskola civics classes",
+  sehp: "a högskoleprovet course",
+  dkjagt: "a jagttegnskursus (hunting licence course)",
+  dkindfoed: "a language school course for the indfødsretsprøve",
+  dkmedborger: "a language school course for the medborgerskabsprøve",
+  fihygiene: "Hygiene Passport courses",
+  fihunt: "a metsästäjätutkinto preparation course",
+  huelsoseg: "a first aid course for learner drivers",
+  hubizt: "a hatósági képzés course for insurance intermediaries",
+  roadmed: "a medical school admission prep course or biology and chemistry tutoring (meditații)",
+  rorezid: "a rezidențiat preparation course",
+  grsecurity: "the KEMEA Basic Training Programme for private security personnel",
+  betoelating: "a toelatingsexamen preparation course or a final-year science class",
+  befsmavz: "an insurer or bank academy, or an IDD course for new insurance staff",
+  mttaxi: "the 46-hour taxi driver course",
+  mtguard: "an Award in Private Security Guard Services course",
   // The DMV landing (/dmv-practice-test)
   dmv: "driver's ed or run a driving school",
   // Healthcare programs

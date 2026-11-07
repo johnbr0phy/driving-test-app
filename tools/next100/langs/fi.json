@@ -1,0 +1,102 @@
+{
+  "_comment": "Finnish (fi, fi-FI) entries for the per-language tables. Machine-translated, pending native review. Register: sinä. Paste-ready blocks for each shared file are in tools/next100/langs/fi.WIRING.md.",
+  "language": "fi",
+  "locale": "fi-FI",
+  "label": "Suomi",
+  "englishName": "Finnish",
+  "flag": "\\u{1F1EB}\\u{1F1EE}",
+  "TEST_SET_NAMES": "Harjoitussarja {n}",
+  "trainingPartName": "{set}, osa {part}/{partCount}",
+  "EXAM_UI": {
+    "heroTitle": {
+      "zero": "Tee kaikki {total} vaihetta",
+      "all": "Olet valmis",
+      "oneLeft": "Yksi jäljellä",
+      "one": "Hyvä alku. 1/{total} tehty",
+      "under45": "{done}/{total} tehty",
+      "under55": "Puolivälissä",
+      "under80": "Yli puolivälin",
+      "else": "{done}/{total}, melkein valmis"
+    },
+    "questionsCount": "{n} kysymystä",
+    "needToPass": "Läpäisyyn tarvitaan {pct} %",
+    "fullLengthExam": "🎯 Täysimittainen koe",
+    "testN": "🎯 Koe {n}",
+    "examTestN": "{shortName}, koe {n}",
+    "pctToPass": "{pct} % läpäisyyn",
+    "yourStats": "Omat tilastosi",
+    "yourStatsSub": "Jokainen näkemäsi kysymys, järjestettynä sen mukaan, mihin vastaat useimmin väärin",
+    "aboutThisTest": "Tietoa tästä harjoituskokeesta",
+    "trainingBadge": "HARJOITTELU {shortName}",
+    "masteredMyTraining": "{shortName}: HARJOITTELU HALLUSSA",
+    "mastered": "HALLUSSA",
+    "nextPart": "Seuraavaksi: {name}",
+    "setN": "Sarja {n}",
+    "statsSeen": "Olet nähnyt {seen}/{total} kokeen {shortName} kysymyksistä. Napauta riviä vastataksesi uudelleen.",
+    "dateLocale": "fi-FI"
+  },
+  "COPY_ExamLandingHero": {
+    "start": "Aloita harjoittelu",
+    "dashboard": "Yleisnäkymään",
+    "mobile": "Harjoittele puhelimella",
+    "desktop": "Tee koe tietokoneella",
+    "mobileAlt": "Tigertest {name}: harjoittelutila puhelimessa",
+    "desktopAlt": "Tigertest {name}: harjoituskoe tietokoneella"
+  },
+  "SAMPLE_COPY": {
+    "title": "{name}: esimerkkikysymykset vastauksineen",
+    "sub": "{n}/{total} harjoituskysymyksestä, yksi kustakin aiheesta, vastaus selitettynä.",
+    "answer": "Vastaus",
+    "quiz": "{name}: esimerkkikysymykset"
+  },
+  "RELATED_COPY": {
+    "title": "Lisää harjoituskokeita",
+    "sub": "Kaikki Tigertestin kokeet ovat ilmaisia, eikä aloittamiseen tarvita tiliä.",
+    "country": "Ilmaiset harjoituskokeet: {name}",
+    "all": "Katso kaikki {n} harjoituskoetta"
+  },
+  "CARD_FOOTERS": "Ilmaista harjoittelua. Jokainen vastaus selitetään.",
+  "ReportExamQuestion": {
+    "open": "Ilmoita tästä kysymyksestä",
+    "what": "Mikä on vialla?",
+    "note": "Mitä siinä pitäisi lukea? (valinnainen)",
+    "send": "Lähetä",
+    "sending": "Lähetetään...",
+    "cancel": "Peruuta",
+    "thanks": "Kiitos. Käymme jokaisen ilmoituksen läpi ja korjaamme kysymyksen, jos se on väärin.",
+    "error": "Lähetys epäonnistui. Yritä uudelleen.",
+    "reasons": {
+      "wrong_answer": "Merkitty vastaus on väärin",
+      "two_answers": "Useampi kuin yksi vastaus on oikein",
+      "unclear": "Kysymys on epäselvä",
+      "outdated": "Sääntö tai tieto on vanhentunut",
+      "typo": "Siinä on kirjoitusvirhe",
+      "other": "Jokin muu"
+    }
+  },
+  "ExamTrainingPage_celebrationCopy": {
+    "title": "Tämä vaihe on nyt vihreä!",
+    "part": "Osa valmis",
+    "set": "Harjoittelu valmis",
+    "progress": "Katso edistymisesi",
+    "description": "Harjoittelu kannatti. Tämä vaihe on nyt vihreä yleisnäkymässäsi.",
+    "remaining": "Tämä osa on valmis. Jatka, niin saat sarjan loppuun.",
+    "resetPart": "Tämä nollaa edistymisesi vain tässä osassa. Oletko varma?"
+  },
+  "ResultsHeroDebrief": {
+    "progressLabel": "Katso edistymisesi",
+    "completedLabel": "Harjoituskoe tehty"
+  },
+  "llmsTxt_LANGUAGE_NAMES": "Finnish",
+  "shuffleGuard": {
+    "connectors": ["ja", "tai"],
+    "phrases": ["Kaikki edellä mainitut", "Kaikki yllä olevat", "Ei mikään edellä mainituista", "Ei mikään yllä olevista", "Kaikki vastaukset", "Kaikki vaihtoehdot"],
+    "both": ["Molemmat", "Molemmat ovat oikein", "Molemmat vastaukset", "Molemmat vaihtoehdot"]
+  },
+  "validate_bank": {
+    "banned": "kaikki edellä mainitut|kaikki yllä olevat|ei mikään edellä mainituista|ei mikään yllä olevista|kaikki vastaukset|kaikki vaihtoehdot",
+    "connectors": ["ja", "tai"],
+    "both": ["molemmat"],
+    "lenScale": 1.2
+  }
+}

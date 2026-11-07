@@ -5,7 +5,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { useAuth } from "@/contexts/AuthContext";
 import { ArrowUpRight, ArrowDownRight } from "lucide-react";
 import {
-  AreaChart, Area, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip,
+  AreaChart, Area, BarChart, Bar, LineChart, Line, Legend, XAxis, YAxis, CartesianGrid, Tooltip,
   ResponsiveContainer, LabelList, Cell,
 } from "recharts";
 import { CARD, ROW, STICKY_COL, TabError, TabHeader, TabLoading, TableScroll, fmtUpdated, useAdminFetch } from "@/components/admin/AdminTabParts";
@@ -514,7 +514,89 @@ const SOURCE_LABELS: [string, string][] = [
 ];
 const AI_SOURCE_KEYS = ["chatgpt", "perplexity", "gemini", "copilot", "claude", "ai_other"];
 
-function VisitSources({ sum }: { sum: (step: string) => number }) {
+// GEO over time: new visitors a day from AI answer engines against search
+// engines, since source tracking began, as a count or a share of that day's
+// tracked new visitors. All time, whatever range the funnel is set to.
+type GeoMode = "count" | "share";
+
+function GeoTrend({ daily }: { daily: Record<string, Record<string, number>> }) {
+  const [mode, setMode] = useState<GeoMode>("count");
+  const points = useMemo(() => {
+    const keys = SOURCE_LABELS.map(([k]) => `visit_${k}`);
+    const days = keys.flatMap((k) => Object.keys(daily[k] || {})).sort();
+    if (!days.length) return [];
+    const out: { key: string; label: string; ai: number; search: number; total: number }[] = [];
+    const today = new Date().toISOString().split("T")[0];
+    for (let d = new Date(days[0] + "T00:00:00Z"); ; d.setUTCDate(d.getUTCDate() + 1)) {
+      const key = d.toISOString().split("T")[0];
+      if (key > today) break;
+      const get = (k: string) => daily[`visit_${k}`]?.[key] || 0;
+      out.push({
+        key,
+        label: fmtDayLabel(key),
+        ai: AI_SOURCE_KEYS.reduce((n, k) => n + get(k), 0),
+        search: get("search"),
+        total: SOURCE_LABELS.reduce((n, [k]) => n + get(k), 0),
+      });
+    }
+    return out;
+  }, [daily]);
+  if (points.length < 2) return null;
+  const data = points.map((p) =>
+    mode === "count"
+      ? { label: p.label, ai: p.ai, search: p.search }
+      : {
+          label: p.label,
+          ai: p.total ? Math.round((p.ai / p.total) * 1000) / 10 : 0,
+          search: p.total ? Math.round((p.search / p.total) * 1000) / 10 : 0,
+        },
+  );
+  const fmt = (n: number) => (mode === "count" ? fmtInt(n) : `${n}%`);
+  return (
+    <div className="mt-4 border-t border-gray-200 dark:border-gray-800 pt-3">
+      <div className="flex flex-wrap items-baseline justify-between gap-2">
+        <p className="text-[11px] uppercase tracking-wide text-gray-500 dark:text-gray-400">AI answer engines vs search, by day</p>
+        <div className="flex gap-1 text-xs">
+          {(["count", "share"] as GeoMode[]).map((m) => (
+            <button
+              key={m}
+              onClick={() => setMode(m)}
+              className={`rounded-md px-2 py-0.5 ${
+                mode === m ? "bg-gray-900 dark:bg-white text-white dark:text-gray-900" : "text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-50"
+              }`}
+            >
+              {m === "count" ? "Visitors" : "Share"}
+            </button>
+          ))}
+        </div>
+      </div>
+      <div className="mt-2 h-56">
+        <ResponsiveContainer width="100%" height="100%">
+          <LineChart data={data} margin={{ top: 8, right: 12, left: 0, bottom: 0 }}>
+            <CartesianGrid vertical={false} stroke={COLORS.grid} />
+            <XAxis dataKey="label" tick={axisTickStyle} tickLine={false} axisLine={{ stroke: COLORS.axis }}
+              interval="preserveStartEnd" minTickGap={24} tickMargin={8} />
+            <YAxis tick={axisTickStyle} tickLine={false} axisLine={false} width={44}
+              allowDecimals={mode === "share"} tickFormatter={(v: number) => (mode === "count" ? fmtCompact(v) : `${v}%`)} />
+            <Tooltip
+              formatter={(v, name) => [fmt(Number(v) || 0), String(name)]}
+              contentStyle={{ fontSize: 12, borderRadius: 8 }}
+            />
+            <Legend iconType="plainline" wrapperStyle={{ fontSize: 12 }} />
+            <Line type="monotone" dataKey="ai" name="AI answer engines" stroke={COLORS.engagement} strokeWidth={2} dot={false} isAnimationActive={false} />
+            <Line type="monotone" dataKey="search" name="Search engines" stroke={COLORS.users} strokeWidth={2} dot={false} isAnimationActive={false} />
+          </LineChart>
+        </ResponsiveContainer>
+      </div>
+      <p className="mt-1 text-[11px] text-gray-500 dark:text-gray-400">
+        UTC days since source tracking began; today is still in progress. Share is of that day&apos;s new visitors with a tracked source.
+        AI apps that send no referrer show up as Direct, so the AI line is a floor.
+      </p>
+    </div>
+  );
+}
+
+function VisitSources({ sum, daily }: { sum: (step: string) => number; daily: Record<string, Record<string, number>> }) {
   const counts = SOURCE_LABELS.map(([key, label]) => ({ key, label, n: sum(`visit_${key}`) }));
   const total = counts.reduce((n, c) => n + c.n, 0);
   if (total === 0) return null;
@@ -545,6 +627,7 @@ function VisitSources({ sum }: { sum: (step: string) => number }) {
           mostly links from AI apps that hide where they came from (Claude, Gemini), chats and bookmarks. Counted since Oct 18, 2026.
         </p>
       )}
+      <GeoTrend daily={daily} />
     </div>
   );
 }
@@ -656,7 +739,7 @@ function VisitorFunnel({ data }: { data: NonNullable<Metrics["visitorFunnel"]> }
               </p>
             </div>
           </div>
-          <VisitSources sum={sum} />
+          <VisitSources sum={sum} daily={data.daily} />
           <TableScroll className="mt-5">
             <table className="w-full text-sm">
               <thead>

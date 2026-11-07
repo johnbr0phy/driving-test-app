@@ -57,6 +57,9 @@ import fihuntFi from "@/lib/landings/fihunt.fi.json";
 import hukreszHu from "@/lib/landings/hukresz.hu.json";
 import huelsosegHu from "@/lib/landings/huelsoseg.hu.json";
 import hubiztHu from "@/lib/landings/hubizt.hu.json";
+import rodrpcivRo from "@/lib/landings/rodrpciv.ro.json";
+import roadmedRo from "@/lib/landings/roadmed.ro.json";
+import rorezidRo from "@/lib/landings/rorezid.ro.json";
 import sehpSv from "@/lib/landings/sehp.sv.json";
 
 const LANDINGS: Record<string, TranslatedLandingContent> = {
@@ -87,6 +90,9 @@ const LANDINGS: Record<string, TranslatedLandingContent> = {
   "hukresz.hu": hukreszHu as TranslatedLandingContent,
   "huelsoseg.hu": huelsosegHu as TranslatedLandingContent,
   "hubizt.hu": hubiztHu as TranslatedLandingContent,
+  "rodrpciv.ro": rodrpcivRo as TranslatedLandingContent,
+  "roadmed.ro": roadmedRo as TranslatedLandingContent,
+  "rorezid.ro": rorezidRo as TranslatedLandingContent,
   "sehp.sv": sehpSv as TranslatedLandingContent,
 };
 

@@ -82,6 +82,8 @@ const BORROWED_SETS: Record<string, string> = {
   fimoto: "moto", fitruck: "cdl", fihygiene: "ukfood", fihunt: "hunter",
   // Hungary (Nov 2026): motorcycle the motorcycle tiger, GKI the CDL tiger, first aid the CPR tiger, insurance the life and health insurance tiger.
   hukreszmoto: "moto", hugki: "cdl", huelsoseg: "cpr", hubizt: "insurance",
+  // Romania (Nov 2026): Driver CPC the CDL tiger, taxi the car tiger, medicine admission the SAT tiger, Rezidențiat the NCLEX tiger.
+  rocpi: "cdl", rotaxi: "driving", roadmed: "sat", rorezid: "nclex",
   // Bank exams wear the IBPS PO tiger; state police exams the police tiger.
   sbipo: "ibpspo", sbiclerk: "ibpspo", ibpsrrb: "ibpspo",
   delhipolice: "police", biharpolice: "police", rajpolice: "police", mppolice: "police",

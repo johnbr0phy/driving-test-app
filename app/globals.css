@@ -2649,6 +2649,62 @@
     --brand-gradient-to: 215 40% 94%;
   }
 
+  /* Romania ARR Driver CPC (CPI) theme */
+  [data-theme="rocpi"] {
+    --brand: 210 55% 20%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 210 50% 96%;
+    --brand-hover: 210 55% 16%;
+    --brand-dark: 210 55% 14%;
+    --brand-darker: 210 55% 10%;
+    --brand-muted: 210 25% 66%;
+    --brand-border: 210 30% 80%;
+    --brand-border-light: 210 30% 90%;
+    --brand-gradient-to: 48 90% 95%;
+  }
+
+  /* Romania ARR taxi driver attestation theme */
+  [data-theme="rotaxi"] {
+    --brand: 60 85% 26%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 60 70% 95%;
+    --brand-hover: 60 85% 21%;
+    --brand-dark: 60 85% 18%;
+    --brand-darker: 60 80% 12%;
+    --brand-muted: 60 30% 68%;
+    --brand-border: 60 35% 78%;
+    --brand-border-light: 60 35% 88%;
+    --brand-gradient-to: 45 80% 95%;
+  }
+
+  /* Romania medicine admission exam (Admitere Medicină) theme */
+  [data-theme="roadmed"] {
+    --brand: 340 45% 24%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 340 40% 96%;
+    --brand-hover: 340 45% 20%;
+    --brand-dark: 340 45% 18%;
+    --brand-darker: 340 45% 12%;
+    --brand-muted: 340 25% 62%;
+    --brand-border: 340 30% 80%;
+    --brand-border-light: 340 30% 90%;
+    --brand-gradient-to: 340 50% 94%;
+  }
+
+  /* Romania Rezidențiat Medicină theme */
+  [data-theme="rorezid"] {
+    --brand: 194 75% 24%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 194 60% 96%;
+    --brand-hover: 194 75% 20%;
+    --brand-dark: 194 75% 17%;
+    --brand-darker: 194 75% 12%;
+    --brand-muted: 194 30% 62%;
+    --brand-border: 194 40% 78%;
+    --brand-border-light: 194 40% 88%;
+    --brand-gradient-to: 194 70% 92%;
+  }
+
   /* Malta driving theory theme */
   [data-theme="mttheory"] {
     --brand: 0 88% 40%;
@@ -6710,6 +6766,52 @@
     --brand-muted: 232 10% 45%;
     --brand-dark: 232 18% 65%;
     --brand-darker: 232 20% 78%;
+  }
+
+  .dark [data-theme="rocpi"] {
+    --brand: 210 55% 47.1%;
+    --brand-hover: 210 55% 39.1%;
+    --brand-light: 210 45% 13%;
+    --brand-gradient-to: 48 40% 11%;
+    --brand-border-light: 210 30% 24%;
+    --brand-border: 210 30% 34%;
+    --brand-muted: 210 25% 45%;
+    --brand-dark: 210 55% 65%;
+    --brand-darker: 210 55% 78%;
+  }
+
+  .dark [data-theme="rotaxi"] {
+    --brand-light: 60 45% 13%;
+    --brand-gradient-to: 45 40% 11%;
+    --brand-border-light: 60 35% 24%;
+    --brand-border: 60 35% 34%;
+    --brand-muted: 60 30% 45%;
+    --brand-dark: 60 85% 65%;
+    --brand-darker: 60 80% 78%;
+  }
+
+  .dark [data-theme="roadmed"] {
+    --brand: 340 45% 50%;
+    --brand-hover: 340 45% 42%;
+    --brand-light: 340 40% 13%;
+    --brand-gradient-to: 340 40% 11%;
+    --brand-border-light: 340 30% 24%;
+    --brand-border: 340 30% 34%;
+    --brand-muted: 340 25% 45%;
+    --brand-dark: 340 45% 65%;
+    --brand-darker: 340 45% 78%;
+  }
+
+  .dark [data-theme="rorezid"] {
+    --brand: 194 75% 35.5%;
+    --brand-hover: 194 75% 27.5%;
+    --brand-light: 194 45% 13%;
+    --brand-gradient-to: 194 40% 11%;
+    --brand-border-light: 194 35% 24%;
+    --brand-border: 194 40% 34%;
+    --brand-muted: 194 30% 45%;
+    --brand-dark: 194 75% 65%;
+    --brand-darker: 194 75% 78%;
   }
 
   .dark [data-theme="mttheory"] {

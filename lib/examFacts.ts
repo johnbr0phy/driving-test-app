@@ -2738,6 +2738,69 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Order MAI 268/2010 on the driving licence examination procedure (art. 5, 10 and 11, as amended to 2014), OUG 195/2002 (Codul rutier) and its implementing regulation, checked November 2026",
     source: { name: "DGPCI (Direcția Generală Permise de Conducere și Înmatriculări)", url: "https://dgpci.mai.gov.ro/" },
   },
+  rocpi: {
+    answer:
+      "The CPI (certificat de pregătire profesională inițială) is Romania's Driver CPC initial qualification, needed to drive trucks (CPI marfă) or buses and coaches (CPI persoane) professionally. The exam is run by the Romanian Road Authority (ARR) through its county agencies after a course at an authorised training centre. The theory exam has a 2-hour paper of 100 multiple-choice questions, each with four options and one correct answer, and a 2-hour paper of six case studies; you need 70% on each before you may sit the practical exam. Since 2025 ARR also runs the CPI theory exam in English, in Bucharest only, and publishes its English question base on testare.arr.ro. A driver who already holds one CPI can add the other kind of transport with a 20-question short CPI questionnaire and the full practical exam.",
+    rows: [
+      { label: "Run by", value: "ARR (Autoritatea Rutieră Română) and its county agencies" },
+      { label: "Theory questionnaire", value: "100 questions, 4 options, one correct, 2 hours" },
+      { label: "Case studies", value: "6 cases in 2 hours, two per chapter" },
+      { label: "Pass mark", value: "70% of the questions and 70% of the case-study marks" },
+      { label: "Then", value: "Practical exam (a driving part and a second part)" },
+      { label: "Short CPI", value: "20 questions plus the full practical, to add goods or passengers" },
+      { label: "Languages", value: "Romanian; English in Bucharest on ARR's dates" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions at the real pace, 70% to pass" },
+    ],
+    basedOn: "Norms approved by Order of the Minister of Transport 1214/2015 (Annex 2, art. 4) and ARR's communiqué on exams in English (December 2024), checked November 2026",
+    source: { name: "Autoritatea Rutieră Română (ARR)", url: "https://www.arr.ro/" },
+  },
+  rotaxi: {
+    answer:
+      "Every taxi driver in Romania, and every driver in rental mode (închiriere), which includes Uber and Bolt-style ride-hailing drivers under OUG 49/2019, needs a certificate of professional attestation from the Romanian Road Authority (ARR). It is issued after a 30-hour course at an authorised driving school and a written multiple-choice test (test-grilă) of 20 questions at the ARR county agency, with at least 70 percent, 14 correct answers, needed to pass. The test can be taken in Romanian or English. You must be at least 21, have held a category B licence for at least two years, be medically and psychologically fit and have a clean criminal record for the offences Law 38/2003 lists. The certificate has no end date but must be endorsed every five years.",
+    rows: [
+      { label: "Run by", value: "ARR (Autoritatea Rutieră Română), county agencies" },
+      { label: "Questions", value: "20 multiple choice (test-grilă)" },
+      { label: "Pass mark", value: "70% (14 correct)" },
+      { label: "Languages", value: "Romanian or English" },
+      { label: "Before the test", value: "30-hour course at an authorised driving school" },
+      { label: "Minimum age", value: "21, with a B licence held 2 years" },
+      { label: "Certificate", value: "No end date; endorsed every 5 years" },
+      { label: "Tigertest mock tests", value: "8 x 20 questions, 14 to pass" },
+    ],
+    basedOn: "Law 38/2003 on taxi and rental transport (art. 26-28), the ARR training and attestation norms (Annex 7^1 to OMT 1214/2015, as amended), the ARR's 2025 notice on exams in English and OUG 49/2019 on alternative transport, checked November 2026",
+    source: { name: "Autoritatea Rutieră Română (ARR)", url: "https://www.arr.ro/" },
+  },
+  roadmed: {
+    answer:
+      "There is no single national medical school entrance exam in Romania: each state university of medicine and pharmacy (UMF Carol Davila Bucharest, Iuliu Hațieganu Cluj-Napoca, Grigore T. Popa Iași, Victor Babeș Timișoara and the others) sets its own written multiple-choice test (grile) on a syllabus and textbook list it publishes each year. At UMF Carol Davila in 2026 the Medicine test had 100 questions in 2 hours 30 minutes: 60 on biology (human anatomy and physiology, compulsory) and 40 on chemistry or physics by the candidate's choice, each with one correct answer and worth one point; places go to the highest scores, with a minimum grade of 5. UMF Cluj's 2026 test covered biology and chemistry in 2 hours with multiple-answer questions. The tests are in Romanian and are usually held in July.",
+    rows: [
+      { label: "Run by", value: "Each university of medicine and pharmacy (UMF)" },
+      { label: "Example: UMF Carol Davila 2026", value: "100 questions, 2 h 30 min" },
+      { label: "Subjects (Carol Davila)", value: "Biology 60 + Chemistry or Physics 40" },
+      { label: "Example: UMF Cluj 2026", value: "Biology and Chemistry, 2 hours, multiple answers" },
+      { label: "Ranking", value: "By score; minimum grade 5 at Carol Davila" },
+      { label: "Language", value: "Romanian" },
+      { label: "Tigertest mock tests", value: "4 x 50 in Romanian (30 biology, 20 chemistry), 40 to pass" },
+    ],
+    basedOn: "UMF Carol Davila admission regulation 2026 (Senate, 22 January 2026) and UMF Iuliu Hațieganu Cluj admission guide 2026, checked November 2026",
+    source: { name: "UMF Carol Davila: admission regulation 2026", url: "https://umfcd.ro/wp-content/uploads/2026/ADMITERE_2026/REGULAMENTUL_DE_ADMITERE/UMFCD_Regulament%20admitere%20licenta%202026_SENAT%2022.01.2026.pdf" },
+  },
+  rorezid: {
+    answer:
+      "Romania's national residency entrance exam (concursul de Rezidențiat) is run by the Ministry of Health through the Central Residency Commission at six university centres: Bucharest, Cluj-Napoca, Craiova, Iasi, Targu Mures and Timisoara. The 2026 session is on Sunday 15 November 2026, with the same model and reading list as 2025. Each domain (Medicine, Dentistry, Pharmacy) sits one national multiple-choice test of 200 questions in 4 hours, in Romanian: a quarter are single-answer questions (one correct of five, 4 points) and three quarters are multiple-answer questions (two to four correct of five, 5 points), for a maximum of 950 points. Candidates learn their score on the spot. You pass with at least 60% of the highest score achieved nationally in your domain, and residency places are chosen in score order. For Medicine the syllabus covers set chapters of Kumar and Clark's Clinical Medicine, Lawrence's General Surgery and Surgical Specialties and Sinopsis de medicina.",
+    rows: [
+      { label: "Run by", value: "Ministry of Health, Central Residency Commission" },
+      { label: "2026 session", value: "Sunday 15 November 2026" },
+      { label: "Questions", value: "200 in 4 hours, one national test per domain" },
+      { label: "Question types", value: "50 single-answer, 150 multiple-answer, 5 options each" },
+      { label: "Maximum score", value: "950 points (4 per single, 5 per multiple)" },
+      { label: "Pass mark", value: "60% of the national top score in the domain" },
+      { label: "Language", value: "Romanian" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions in Romanian, single answer, 60% to pass" },
+    ],
+    basedOn: "Ministry of Health announcements for the 2025 and 2026 sessions, the Central Residency Commission's 2025 instructions for candidates and the 2025 Medicine syllabus (kept for 2026), checked November 2026",
+    source: { name: "Ministerul Sănătății: Rezidențiat", url: "https://rezidentiat.ms.ro/" },
+  },
   hukresz: {
     answer:
       "Hungary's category B theory exam, officially Közlekedési alapismeretek and widely called the KRESZ exam, is taken on a computer at a centre of the KAV, the national transport exam centre. It has 55 multiple-choice questions and lasts 55 minutes, one minute per question. The questions are worth 75 points in total and you need at least 65 to pass; guides say 10 questions are worth 3 points and 45 are worth 1. Guides and driving schools say the exam is offered in Hungarian, English, German and Romanian. You may sit it from 16 years and 9 months after a driving school course, and a pass stays valid for two years while you complete the driving test, which you may take from 17.",

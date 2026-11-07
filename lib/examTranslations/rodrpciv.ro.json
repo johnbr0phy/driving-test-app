@@ -1,0 +1,39 @@
+{
+  "landingPath": "/ro/chestionare-drpciv-categoria-b",
+  "locale": "ro-RO",
+  "name": "Chestionare DRPCIV categoria B",
+  "shortName": "Chestionare DRPCIV",
+  "examLabel": "Examenul teoretic DRPCIV",
+  "fullName": "examenul teoretic pentru permisul de conducere categoria B (DGPCI, fost DRPCIV)",
+  "trainingSets": {
+    "1": { "name": "Indicatoare rutiere", "weightLabel": "7 din cele 26 de întrebări ale testului" },
+    "2": { "name": "Marcaje, semnale și prioritate", "weightLabel": "7 din cele 26 de întrebări ale testului" },
+    "3": { "name": "Viteză, depășire și staționare", "weightLabel": "5 din cele 26 de întrebări ale testului" },
+    "4": { "name": "Permis, siguranță și urgențe", "weightLabel": "7 din cele 26 de întrebări ale testului" }
+  },
+  "categoryLabels": {
+    "rodrLicence": "Permis, examen și documente",
+    "rodrWarning": "Indicatoare de avertizare",
+    "rodrRegulatory": "Indicatoare de prioritate, interzicere și obligare",
+    "rodrMarkings": "Marcaje, semafoare și semnalele polițistului",
+    "rodrPriority": "Prioritate, intersecții, tramvaie și treceri la nivel",
+    "rodrSpeed": "Limite de viteză, depășire și benzi",
+    "rodrParking": "Oprire, staționare și autostrăzi",
+    "rodrSafety": "Alcool, centuri, lumini și comportament",
+    "rodrEmergency": "Defecțiuni, accidente și prim ajutor"
+  },
+  "copy": {
+    "guestPrompt": "ca să îți salvezi progresul la chestionare și să vezi fiecare întrebare greșită",
+    "trainingHeading": "Exersează pe capitole din Codul rutier",
+    "trainingSub": "Patru seturi despre regulile și indicatoarele pe care le cere examenul teoretic pentru categoria B. Afli imediat răspunsul corect, iar întrebările greșite revin până le știi sigur.",
+    "testsHeading": "Chestionare de examen · 26 de întrebări ca la examenul real, 22 pentru admis",
+    "heroSubs": [
+      "Patru capitole și șapte chestionare de lungimea examenului. Regulile de prioritate contează cel mai mult.",
+      "Stăpânește fiecare set, apoi dă un chestionar.",
+      "Ești la jumătate. Încearcă un chestionar de examen.",
+      "Repetă greșelile, apoi refă chestionarul.",
+      "Gata. Programează-te la examenul teoretic."
+    ],
+    "sourceLine": "După Codul rutier (OUG 195/2002) și Ordinul MAI 268/2010. Întrebări originale; 26 pe chestionar și 22 pentru admis, ca la examenul real (unde o întrebare poate avea până la 3 răspunsuri corecte)."
+  }
+}

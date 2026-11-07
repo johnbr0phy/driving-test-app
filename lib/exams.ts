@@ -33,8 +33,9 @@ import setrafikSv from "./examTranslations/setrafik.sv.json";
 import dkteoriDa from "./examTranslations/dkteori.da.json";
 import fitheoryFi from "./examTranslations/fitheory.fi.json";
 import hukreszHu from "./examTranslations/hukresz.hu.json";
+import rodrpcivRo from "./examTranslations/rodrpciv.ro.json";
 
-export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "dkteori" | "dkmoto" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "rodrpciv" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "detheorie" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl";
+export type ExamId = "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "dkteori" | "dkmoto" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "rodrpciv" | "rocpi" | "rotaxi" | "roadmed" | "rorezid" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "detheorie" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -10265,6 +10266,284 @@ const rodrpciv: ExamConfig = {
     sourceLine: "Based on the Romanian traffic code (OUG 195/2002) and Order MAI 268/2010. Original questions; 26 per test, 22 to pass like the real exam (where a question can have up to 3 correct answers).",
     analyticsKey: "rodrpciv",
   },
+  review: { ro: "machine" },
+  translations: {
+    ro: examTranslation(rodrpcivRo),
+  },
+};
+
+const rocpi: ExamConfig = {
+  id: "rocpi",
+  stateCode: "ROCPI",
+  idBase: 25000,
+  slug: "/romania-driver-cpc",
+  landingPath: "/romania-driver-cpc-practice-test",
+  name: "Romania Driver CPC (CPI) Practice Test",
+  shortName: "Romania CPI (Driver CPC)",
+  examLabel: "ARR CPI theory exam",
+  fullName: "Romania ARR Driver CPC initial qualification (CPI marfă / persoane), theory questionnaire",
+  questionIdPrefix: "ROCPI-",
+  icon: "truck",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Norms on the training and attestation of certain categories of drivers, Annex 2 to Order of
+  // the Minister of Transport 1214/2015, art. 4 (consolidated text, checked 2026-11-06): CPI theory
+  // exam = a 2-hour paper of 100 questions with 4 options, one correct, plus a 2-hour paper of
+  // 6 case studies (two per chapter); pass with 70% of the questions and 70% of the case-study
+  // marks; then a practical exam. Short CPI (holder adding goods or passengers): 20 questions plus
+  // the whole practical. ARR runs CPI and short CPI in English in Bucharest since 2025 and
+  // publishes its English question base on testare.arr.ro. Modelled: the questionnaire only, at
+  // 50 questions and the real pace and 70% (35 of 50). ARR publishes no topic split; weights are
+  // Tigertest's over Directive (EU) 2022/2561 Annex I. Items are original, not ARR's.
+  blueprint: {
+    rocpiEco: 5,
+    rocpiTech: 6,
+    rocpiLoads: 6,
+    rocpiPassengers: 5,
+    rocpiHours: 7,
+    rocpiTacho: 5,
+    rocpiRules: 5,
+    rocpiSafety: 6,
+    rocpiEmergency: 5,
+  },
+  trainingSets: testSets(25000, 4),
+  categoryLabels: {
+    rocpiEco: "Rational Driving & Eco-Driving",
+    rocpiTech: "Vehicle Technology, Brakes & Checks",
+    rocpiLoads: "Loading, Weights & Load Securing",
+    rocpiPassengers: "Passenger Transport & Accessibility",
+    rocpiHours: "Drivers' Hours & Working Time",
+    rocpiTacho: "Tachographs & Records",
+    rocpiRules: "Transport Documents, Cabotage & Licences",
+    rocpiSafety: "Road Risks, Health & Fitness to Drive",
+    rocpiEmergency: "Emergencies, Crime & Professional Conduct",
+  },
+  copy: {
+    guestPrompt: "to save your CPI progress and track every question you miss",
+    trainingHeading: "Train for each test",
+    trainingSub: "Four sets, one per mock test: Set 1 holds exactly the 50 questions of Test 1, and so on, across every chapter of the Driver CPC course. Missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions at the real pace, 70% to pass",
+    heroSubs: [
+      "Four tests on drivers' hours, tachographs, loads and passengers. You need 70%.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Revise ARR's own questions too, then sit your CPI exam.",
+    ],
+    sourceLine: "Original questions written from EU and Romanian rules for truck and bus drivers (2026). The real CPI questionnaire is 100 questions in 2 hours and you need 70%. Not affiliated with ARR.",
+    analyticsKey: "rocpi",
+  },
+};
+
+const rotaxi: ExamConfig = {
+  id: "rotaxi",
+  stateCode: "ROTAXI",
+  idBase: 25100,
+  slug: "/romania-taxi-attestation",
+  landingPath: "/romania-taxi-driver-attestation-practice-test",
+  name: "Romania Taxi Attestation Practice Test",
+  shortName: "Romania taxi attestation",
+  examLabel: "ARR taxi and rental driver test",
+  fullName: "ARR professional attestation test for taxi and rental (ride-hailing) drivers, Romania",
+  questionIdPrefix: "ROTAXI-",
+  icon: "car",
+  testCount: 8,
+  questionsPerTest: 20,
+  passPct: 70,
+  // Real test (Law 38/2003 art. 26-28 and Annex 7^1 to OMT 1214/2015 as amended, art. 6, checked
+  // 2026-11-06): a written test-grila of 20 questions, at least 70% correct (14 of 20), in
+  // Romanian or English, set by the Romanian Road Authority (ARR) after a 30-hour course; the same
+  // shape for taxi drivers and drivers in rental mode, whose attestation ride-hailing drivers need
+  // under OUG 49/2019. ARR publishes no topic split; weights are Tigertest's, from the course
+  // tematica hours (law 5, customer service 3, taxi practice 10, driving and road safety 7,
+  // security 5). Eight real-length tests; pools are 8x each count plus 40 training-only spares.
+  blueprint: {
+    rotxLaw: 3,
+    rotxDriver: 3,
+    rotxVehicle: 2,
+    rotxMeter: 3,
+    rotxRental: 2,
+    rotxCustomer: 3,
+    rotxRoad: 2,
+    rotxSecurity: 2,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 25101, name: "Law, Authorisation & Attestation", categories: ["rotxLaw", "rotxDriver"], size: 56, weightLabel: "6 of 20 test questions" },
+    { setNumber: 2, id: 25102, name: "Taxi Vehicle, Taximeter & Tariffs", categories: ["rotxVehicle", "rotxMeter"], size: 48, weightLabel: "5 of 20 test questions" },
+    { setNumber: 3, id: 25103, name: "Rental Transport & Customers", categories: ["rotxRental", "rotxCustomer"], size: 48, weightLabel: "5 of 20 test questions" },
+    { setNumber: 4, id: 25104, name: "Road Safety & Security", categories: ["rotxRoad", "rotxSecurity"], size: 48, weightLabel: "4 of 20 test questions" },
+  ],
+  categoryLabels: {
+    rotxLaw: "Law 38/2003, Authorisation & Documents",
+    rotxDriver: "Driver Attestation & Duties",
+    rotxVehicle: "Taxi Vehicle, Roof Light & Markings",
+    rotxMeter: "Taximeter, Tariffs & Receipts",
+    rotxRental: "Rental & Ride-Hailing Transport",
+    rotxCustomer: "Customer Service & Accessibility",
+    rotxRoad: "Taxi Driving, Stands & Road Safety",
+    rotxSecurity: "Driver & Passenger Security",
+  },
+  copy: {
+    guestPrompt: "to save your taxi attestation progress and track every question you miss",
+    trainingHeading: "Train by course topic",
+    trainingSub: "Four sets on Law 38/2003, the taxi and its taximeter, rental and ride-hailing transport, customers, road safety and security, in English. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 20 questions like the real ARR test, 14 to pass",
+    heroSubs: [
+      "Four topics, eight real-length tests. The meter and the law weigh most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your ARR test.",
+    ],
+    sourceLine: "Based on Law 38/2003, the ARR training norms (OMT 1214/2015, Annex 7^1) and OUG 49/2019. Original questions, not the ARR question base; not affiliated with the ARR. 20 per test, 14 to pass.",
+    analyticsKey: "rotaxi",
+  },
+};
+
+const roadmed: ExamConfig = {
+  id: "roadmed",
+  stateCode: "ROADMED",
+  idBase: 24800,
+  slug: "/admitere-medicina",
+  landingPath: "/ro/admitere-medicina-grile",
+  name: "Admitere Medicină: Biologie și Chimie",
+  shortName: "Admitere Medicină",
+  examLabel: "Admitere Medicină (grile)",
+  fullName: "Concursul de admitere la Medicină: Biologie (anatomie și fiziologie umană) și Chimie organică",
+  questionIdPrefix: "ROADM-",
+  icon: "stethoscope",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  language: "ro",
+  locale: "ro-RO",
+  english: {
+    name: "Romania Medicine Admission Exam (Biology and Chemistry)",
+    shortName: "Romania medicine admission",
+    fullName: "Romanian medical school admission exam (admitere medicină), biology and chemistry, in Romanian",
+  },
+  review: { ro: "model" },
+  // Real test (checked 2026-11-07): each UMF sets its own written grile test on its own syllabus
+  // extracts. UMF Carol Davila 2026 regulation: 100 questions in 2 h 30 min, Biology 60 + Chemistry
+  // or Physics 40, one correct answer each (complement simplu / grupat), 1 point each, minimum
+  // grade 5, ranked by score. UMF Cluj 2026 guide: Biology and Chemistry, 2 hours, multiple-answer
+  // grile. Tigertest: 4 x 50, 30 biology (grade XI anatomy and physiology) + 20 organic chemistry
+  // (grades X and XI), single answer of four; Physics, genetics and multiple answers not modelled.
+  // The split inside each subject is Tigertest's own. passPct 80 is Tigertest's target.
+  blueprint: {
+    roadmNervos: 7,
+    roadmAnaliz: 6,
+    roadmMiscare: 4,
+    roadmDigestie: 5,
+    roadmCirc: 6,
+    roadmExcrRep: 2,
+    roadmHidro: 6,
+    roadmFunctionali: 7,
+    roadmBiocompusi: 7,
+  },
+  // Five topic sets, not testSets(): 5 + 4 tests = 9 dashboard steps, each set a textbook block.
+  trainingSets: [
+    { setNumber: 1, id: 24801, name: "Sistemul nervos și analizatorii", categories: ["roadmNervos", "roadmAnaliz"], size: 52, weightLabel: "13 din 50 de întrebări pe test" },
+    { setNumber: 2, id: 24802, name: "Mișcarea și digestia", categories: ["roadmMiscare", "roadmDigestie"], size: 36, weightLabel: "9 din 50 de întrebări pe test" },
+    { setNumber: 3, id: 24803, name: "Circulația, respirația, excreția și reproducerea", categories: ["roadmCirc", "roadmExcrRep"], size: 32, weightLabel: "8 din 50 de întrebări pe test" },
+    { setNumber: 4, id: 24804, name: "Hidrocarburi și grupe funcționale", categories: ["roadmHidro", "roadmFunctionali"], size: 52, weightLabel: "13 din 50 de întrebări pe test" },
+    { setNumber: 5, id: 24805, name: "Compuși cu importanță biologică", categories: ["roadmBiocompusi"], size: 28, weightLabel: "7 din 50 de întrebări pe test" },
+  ],
+  categoryLabels: {
+    roadmNervos: "Sistemul nervos",
+    roadmAnaliz: "Analizatorii și glandele endocrine",
+    roadmMiscare: "Organizarea corpului, oasele și mușchii",
+    roadmDigestie: "Digestia, absorbția și metabolismul",
+    roadmCirc: "Sângele, circulația și respirația",
+    roadmExcrRep: "Excreția și reproducerea",
+    roadmHidro: "Chimie organică: introducere și hidrocarburi",
+    roadmFunctionali: "Compuși cu grupe funcționale",
+    roadmBiocompusi: "Compuși cu importanță biologică, izomerie, acizi și baze",
+  },
+  copy: {
+    guestPrompt: "ca să-ți salvezi progresul pentru admitere și să vezi fiecare grilă greșită",
+    trainingHeading: "Seturi de exerciții",
+    trainingSub: "Fiecare set acoperă un bloc din manualele de biologie și chimie. Afli imediat dacă ai răspuns corect, iar grilele greșite revin până le știi sigur.",
+    testsHeading: "Teste · 50 de grile, 30 de biologie și 20 de chimie",
+    heroSubs: [
+      "Cinci seturi pe capitole, patru teste. Biologia are cea mai mare pondere.",
+      "Stăpânește setul, apoi dă testul.",
+      "Ai trecut de jumătate. Încearcă un test.",
+      "Repetă greșelile, apoi refă testul.",
+      "Totul e verde. Verifică regulamentul UMF-ului tău și mult succes.",
+    ],
+    sourceLine: "După manualele de biologie (clasa a XI-a) și chimie organică (clasele a X-a și a XI-a) și tematicile UMF pentru 2026. Grile originale, nu din caietele de concurs; nu suntem afiliați niciunei universități.",
+    analyticsKey: "roadmed",
+  },
+};
+
+const rorezid: ExamConfig = {
+  id: "rorezid",
+  stateCode: "ROREZID",
+  idBase: 24900,
+  slug: "/rezidentiat",
+  landingPath: "/ro/rezidentiat-medicina-grile",
+  name: "Grile Rezidențiat Medicină",
+  shortName: "Rezidențiat Medicină",
+  examLabel: "Concursul de Rezidențiat, domeniul Medicină",
+  fullName: "Concursul național de admitere în Rezidențiat, domeniul Medicină",
+  questionIdPrefix: "ROREZ-",
+  icon: "stethoscope",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 60,
+  language: "ro",
+  locale: "ro-RO",
+  english: {
+    name: "Romania Medical Residency Exam (Rezidențiat, Medicine)",
+    shortName: "Romania residency exam",
+    fullName: "Romania national medical residency entrance exam (Rezidențiat), Medicine, in Romanian",
+  },
+  review: { ro: "model" },
+  // Real exam (Ministry of Health, Comisia Centrală de Rezidențiat; 2025 instructions, same model
+  // in 2026; checked 2026-11-07): 200 questions in 4 hours, one national test per domain, booklets
+  // A to D; 50 complement simplu (1 of 5, 4 points) and 150 complement multiplu (2 to 4 of 5,
+  // 5 points), maximum 950; results on the spot; pass at 60% of the national maximum achieved.
+  // Bibliography (Medicină, 2025 and 2026): Kumar și Clark ed. 10, Lawrence ed. 6, Sinopsis de
+  // medicină ed. 5, tematica chapters only. Modelled: 4 x 50, single answer of four, equal weight;
+  // the 8-category split (Kumar 50%, Lawrence 40%, Sinopsis 10%) is Tigertest's.
+  blueprint: {
+    roreCardio: 7,
+    rorePneuNeuro: 6,
+    roreGastroRenal: 6,
+    roreEndoHem: 6,
+    roreChirGen: 8,
+    roreChirDig: 6,
+    roreChirSpec: 6,
+    roreSinopsis: 5,
+  },
+  trainingSets: testSets(24900, 4),
+  categoryLabels: {
+    roreCardio: "Cardiologie, HTA și boala tromboembolică",
+    rorePneuNeuro: "Pneumologie și neurologie",
+    roreGastroRenal: "Gastroenterologie, hepatologie și nefrologie",
+    roreEndoHem: "Diabet, endocrinologie, hematologie, reumatologie și infecții",
+    roreChirGen: "Chirurgie generală, traumă și tub digestiv superior",
+    roreChirDig: "Colon, căi biliare, pancreas, ficat și vase",
+    roreChirSpec: "ORL, ortopedie și urologie",
+    roreSinopsis: "Pediatrie, obstetrică-ginecologie, dermatologie, psihiatrie",
+  },
+  copy: {
+    guestPrompt: "ca să-ți salvezi progresul pentru Rezidențiat și să ții evidența fiecărei grile greșite",
+    trainingHeading: "Seturi de antrenament",
+    trainingSub: "Fiecare set are întrebările testului cu același număr. Primești imediat răspunsul și explicația, iar grilele greșite revin până le știi sigur.",
+    testsHeading: "Teste · 50 de întrebări, 60% pentru promovare",
+    heroSubs: [
+      "Patru seturi, patru teste. Medicina internă și chirurgia aduc cele mai multe grile.",
+      "Întâi stăpânește setul, apoi dă testul.",
+      "Ai trecut de jumătate. Dă un test.",
+      "Repetă greșelile, apoi testează-te din nou.",
+      "Totul e verde. Mult succes la Rezidențiat.",
+    ],
+    sourceLine: "Grile originale pe tematica domeniului Medicină (Kumar și Clark, Lawrence, Sinopsis de medicină), noiembrie 2026. Un singur răspuns corect din 4; complementul multiplu și punctajul de 950 nu sunt reproduse. Nu suntem afiliați Ministerului Sănătății.",
+    analyticsKey: "rorezid",
+  },
 };
 
 const hukresz: ExamConfig = {
@@ -16833,7 +17112,7 @@ const sgvl: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, nhie, cna, ptcb, phleb, ccma, cma, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, sfadmin, phr, cisa, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, dkteori, dkmoto, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, rodrpciv, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, semedb, dkindfoed, dkmedborger, gulfrn, inrto, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, nhie, cna, ptcb, phleb, ccma, cma, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, sfadmin, phr, cisa, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, dkteori, dkmoto, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, semedb, dkindfoed, dkmedborger, gulfrn, inrto, htl, cst, crcst];
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
 export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA, realestatePA, realestateIL, realestateOH, realestateGA, realestateNC, realestateMI, realestateVA, realestateWA, realestateAZ, realestateTN, realestateLA, insuranceNY, insurancePA, insuranceIL, insuranceOH, insuranceGA, insuranceNC, insuranceMI, insuranceNJ, insuranceVA, insuranceWA, pncNY, pncPA, pncIL, pncOH, pncGA, pncNC, pncMI, pncNJ, pncVA, pncWA];

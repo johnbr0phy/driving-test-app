@@ -91,7 +91,7 @@ const AUTHORITY: Record<Exclude<Region, "US">, string> = {
   PK: "any provincial or ICT licensing authority, the PPSC, Punjab Police, the Pakistan Army, the PAF, PMDC or PNMC",
   ES: "the DGT (Dirección General de Tráfico)",
   PT: "the IMT",
-  RO: "the DGPCI (formerly DRPCIV) or any county driving licence service",
+  RO: "the DGPCI (formerly DRPCIV), the ARR, the Ministry of Health or the universities of medicine",
   SE: "Trafikverket, Transportstyrelsen, Naturvårdsverket or UHR",
   GR: "the Ministry of Infrastructure and Transport or any Transport Directorate",
   DK: "Færdselsstyrelsen, SIRI or Naturstyrelsen",
@@ -103,12 +103,13 @@ const AUTHORITY: Record<Exclude<Region, "US">, string> = {
 };
 
 // AUTHORITY is written for an English sentence ("the IMT"); other languages
-// get the bare names, and Belgium's list in Dutch, Sweden's in Swedish, Denmark's in Danish, Finland's in Finnish and Hungary's in Hungarian on their own pages.
+// get the bare names, and Belgium's list in Dutch, Sweden's in Swedish, Denmark's in Danish, Finland's in Finnish, Hungary's in Hungarian and Romania's in Romanian on their own pages.
 const AUTHORITY_NL_BE = "GOCA, de examencentra of de gewestelijke overheden";
 const AUTHORITY_SV_SE = "Trafikverket, Transportstyrelsen, Naturvårdsverket eller UHR";
 const AUTHORITY_DA_DK = "Færdselsstyrelsen, SIRI eller Naturstyrelsen";
 const AUTHORITY_FI_FI = "Traficom, Ajovarma, Ruokavirasto tai Suomen riistakeskus";
 const AUTHORITY_HU_HU = "KAV, Magyar Vöröskereszt, MNB vagy más magyar hatóság";
+const AUTHORITY_RO_RO = "DGPCI (fostul DRPCIV), ARR, Ministerul Sănătății, universitățile de medicină";
 function authorityIn(region: Exclude<Region, "US">, lang: Language): string {
   if (lang === "en") return AUTHORITY[region];
   if (region === "BE" && lang === "nl") return AUTHORITY_NL_BE;
@@ -116,6 +117,7 @@ function authorityIn(region: Exclude<Region, "US">, lang: Language): string {
   if (region === "DK" && lang === "da") return AUTHORITY_DA_DK;
   if (region === "FI" && lang === "fi") return AUTHORITY_FI_FI;
   if (region === "HU" && lang === "hu") return AUTHORITY_HU_HU;
+  if (region === "RO" && lang === "ro") return AUTHORITY_RO_RO;
   return AUTHORITY[region].replace(/^the /, "");
 }
 

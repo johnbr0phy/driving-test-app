@@ -275,6 +275,23 @@
       "action": "None needed: Tigertest items are original and follow the decree's topics.",
       "source": "https://www.mnb.hu/letoltes/tajekoztato-a-biztositaskozvetitoi-hatosagi-vizsga-kerdesbankjanak-valtozasarol-2026-05.pdf",
       "done": "2026-11-06"
+    },
+    {
+      "exam": "rorezid",
+      "date": "2026-11-15",
+      "kind": "review",
+      "what": "Rezidențiat 2026 session (same model and bibliography as 2025, per the Ministry); the 2026 Medicine tematica PDF could not be read when the bank was built (rezidentiat.ms.ro returned 503).",
+      "action": "Read the 2026 tematica on rezidentiat.ms.ro and check the chapter list and the bank against it.",
+      "source": "https://rezidentiat.ms.ro/"
+    },
+    {
+      "exam": "rocpi",
+      "date": "2026-10-01",
+      "kind": "law",
+      "what": "Romania's distance-based TollRO toll for goods vehicles over 3.5 t was scheduled to replace the rovinietă for them from 1 October 2026.",
+      "action": "None needed: the rovinietă item asks about a coach; check when TollRO goes live and whether any item mentions trucks and the rovinietă.",
+      "source": "https://www.cnair.ro/",
+      "done": "2026-11-07"
     }
   ]
 }

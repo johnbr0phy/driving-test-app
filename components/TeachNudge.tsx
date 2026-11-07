@@ -31,6 +31,8 @@ const TEACHER_LED = new Set([
   "fihygiene", "fihunt",
   // Hungary: Red Cross and driving school first aid courses, hatósági képzés courses for insurance intermediaries
   "huelsoseg", "hubizt",
+  // Romania: meditații and UMF admission prep courses, rezidențiat prep courses
+  "roadmed", "rorezid",
   // Malta: approved taxi training providers and private guard course providers
   "mttaxi", "mtguard",
   // Healthcare programs

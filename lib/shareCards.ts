@@ -906,6 +906,22 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
     "color": "hsl(232, 15%, 32%)",
     "tint": "hsl(232, 25%, 96%)"
   },
+  "rocpi": {
+    "color": "hsl(210, 55%, 20%)",
+    "tint": "hsl(210, 50%, 96%)"
+  },
+  "rotaxi": {
+    "color": "hsl(60, 85%, 26%)",
+    "tint": "hsl(60, 70%, 95%)"
+  },
+  "roadmed": {
+    "color": "hsl(340, 45%, 24%)",
+    "tint": "hsl(340, 40%, 96%)"
+  },
+  "rorezid": {
+    "color": "hsl(194, 75%, 24%)",
+    "tint": "hsl(194, 60%, 96%)"
+  },
   "mttheory": {
     "color": "hsl(0, 88%, 40%)",
     "tint": "hsl(0, 80%, 96%)"

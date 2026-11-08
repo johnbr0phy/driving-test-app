@@ -13,6 +13,7 @@
 // Real strings: the class, the students (three rows), the missed questions'
 // stems and counts, the banner, the question and options on the phone.
 
+import { useTranslation } from "@/contexts/LanguageContext";
 import { X } from "lucide-react";
 import { Bar, Check, Count, Phone, Stage, Window, type Act } from "@/components/stageshow/kit";
 import "./teach-class-demo.css";
@@ -49,10 +50,11 @@ const STUDENTS = [
 ];
 
 function ClassPage({ s }: { s: S }) {
+  const { englishLocale } = useTranslation();
   return (
     <div className="tc-page">
       <div className="tc-head">
-        <div className="tc-title">Surgical Tech, Fall</div>
+        <div className="tc-title">{englishLocale === "en-GB" ? "Surgical Technology, Autumn" : "Surgical Tech, Fall"}</div>
         <div className="tc-sub">CST · 18 students</div>
       </div>
 
@@ -111,10 +113,11 @@ function ClassPage({ s }: { s: S }) {
 // The phone column's design: the student's phone leads, and the class page
 // is a small card straddling its edge with only the two rows that change
 function ClassMini({ s }: { s: S }) {
+  const { englishLocale } = useTranslation();
   return (
     <Window url="tigertest.io/teach" chrome="hairline" className="tc-mini">
       <div className="tc-mini__body">
-        <div className="tc-mini__title">Surgical Tech, Fall</div>
+        <div className="tc-mini__title">{englishLocale === "en-GB" ? "Surgical Technology, Autumn" : "Surgical Tech, Fall"}</div>
         <div className="tc-mini__row" data-flash={s.synced || undefined}>
           <span className="tc-name">Phoebe B.</span>
           <span className="tc-when__swap" data-on={s.synced || undefined}>
@@ -143,6 +146,8 @@ function ClassMini({ s }: { s: S }) {
 }
 
 function StudentScreen({ pick }: { pick: number | null }) {
+  const { englishLocale } = useTranslation();
+  const options = englishLocale === "en-GB" ? ["Vitamin K", "Protamine sulphate", "Naloxone", "Flumazenil"] : OPTIONS;
   const answered = pick !== null;
   return (
     <div className="tc-phone-screen">
@@ -160,7 +165,7 @@ function StudentScreen({ pick }: { pick: number | null }) {
         </span>
         <div className="tc-quiz__question">Which drug reverses the anticoagulant effect of heparin?</div>
         <div className="tc-quiz__options">
-          {OPTIONS.map((o, i) => (
+          {options.map((o, i) => (
             <div
               key={o}
               className="tc-option"

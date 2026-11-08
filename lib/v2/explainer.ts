@@ -111,7 +111,7 @@ const VOICED = new Set<string>(voiced as string[]);
 
 /** Only a skill with a template and a recorded voice shows the "Watch" buttons. */
 export function hasExplainer(skill: BasicsSkill): boolean {
-  return canExplain(skill) && VOICED.has(skill.id);
+  return !skill.audioDisabled && canExplain(skill) && VOICED.has(skill.id);
 }
 
 /**

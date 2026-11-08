@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useTranslation } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
 import { LandingIntro } from "@/components/exam/LandingIntro";
 import { QuizStates, useQuiz } from "@/components/quiz/QuizLoader";
@@ -15,13 +16,15 @@ export function QuizLanding({ code, initial }: { code: string; initial: QuizPubl
 
 /** Pure content keeps the shared landing template testable without auth or a database. */
 export function QuizLandingContent({ quiz }: { quiz: QuizPublic }) {
+  const { englishLocale } = useTranslation();
+  const british = englishLocale === "en-GB";
   const total = quiz.questions.length;
   const topics = quizTopics(quiz.questions);
   const dashboard = quizDashboardPath(quiz.code);
   const preview = quiz.questions[0];
   const start = (
     <Button asChild className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 px-8 py-6 text-lg rounded-full">
-      <Link href={dashboard}>Start practicing</Link>
+      <Link href={dashboard}>{british ? "Start practising" : "Start practicing"}</Link>
     </Button>
   );
   return (
@@ -31,7 +34,7 @@ export function QuizLandingContent({ quiz }: { quiz: QuizPublic }) {
         <div className="relative max-w-4xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 text-center">
           <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">A Tigertest quiz by {quiz.ownerName}</p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-50 mb-6 tracking-tight break-words">{quiz.title}</h1>
-          <LandingIntro subtitle={quiz.description || `Practice ${total} ${total === 1 ? "question" : "questions"} in three ways: Practice, Test and Flashcards.`} action={start}>
+          <LandingIntro subtitle={quiz.description || `${british ? "Practise" : "Practice"} ${total} ${total === 1 ? "question" : "questions"} in three ways: Practice, Test and Flashcards.`} action={start}>
             <p className="mt-4 text-sm text-gray-600 dark:text-gray-300">
               {total} {total === 1 ? "question" : "questions"} · {quiz.visibility === "private" ? "Private to the creator" : quiz.visibility === "class" ? `For ${quiz.className || "a class"}, no account needed` : "Free to play, no account needed"}
             </p>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { regionOfTest } from "@/lib/region";
 
 // The "Can my students use Tigertest?" FAQ on the landings of exams people
 // usually study for with an instructor (the TEACHER_LED set in
@@ -236,13 +237,19 @@ function question(examId: string): string {
 const ANSWER_REST =
   ", post one link, and students join with just their name. You see who practiced, their test scores and the topics your class misses most.";
 
+function answerRest(examId: string): string {
+  return regionOfTest(examId) === "UK"
+    ? ", post one link, and students join with just their name. You see who practised, their test scores and the topics your class misses most."
+    : ANSWER_REST;
+}
+
 export function classFaqJsonLd(examId: string) {
   return {
     "@type": "Question",
     name: question(examId),
     acceptedAnswer: {
       "@type": "Answer",
-      text: `Yes, for free. Make a class at tigertest.io/teach${ANSWER_REST}`,
+      text: `Yes, for free. Make a class at tigertest.io/teach${answerRest(examId)}`,
     },
   };
 }
@@ -256,7 +263,7 @@ export function ExamClassFaq({ examId }: { examId: string }) {
         <Link href="/teach" className="text-brand-dark hover:text-brand-darker underline">
           Make a class at tigertest.io/teach
         </Link>
-        {ANSWER_REST}
+        {answerRest(examId)}
       </p>
     </div>
   );

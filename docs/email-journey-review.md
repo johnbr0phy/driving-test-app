@@ -45,3 +45,13 @@ Independent implementation review found no remaining release-blocking source def
 Production build did not complete in this executor: the default Node heap exhausted; retry with a six-GiB heap was killed by the environment (exit 137) during optimized compilation, without a source diagnostic. A successful preview build and remote CI on the final commit remain required.
 
 Visual browser QA inspected CCMA mobile welcome, SAT celebration and correct/incorrect question cards. Gmail, Outlook and actual delivered-message tests were not performed. All automated mail tests use mocks; no real email was sent.
+
+
+## Pre-merge recheck, 8 November 2026
+
+- Integrated main `cdcc121f` without conflicts in an isolated desktop worktree. The user's existing checkout and uncommitted work were not changed.
+- Added offline regression coverage for provider suppression (no success marker and no daily quota latch), revoked consent after an uncertain attempt (no replay and reconciliation lock retained), and delayed Stripe payment success with pending receipt outcomes (503 until sent/already-sent, without granting the purchase twice).
+- Retained the conservative reconciliation behavior. Uncertain attempts cannot be replayed after the 23-hour safety window, and a changed candidate is quarantined instead of being substituted. Provider suppression is respected as rejection; this is not a claim that account bounce/suppression monitoring is configured. Daily campaign schedules still require an operational retry/reconciliation plan before activation.
+- The desktop ran out of disk space during `npm ci`. Only this task's incomplete dependency output was removed. Verification uses links to installed packages at lockfile-matching versions and isolated missing packages fetched from npm and checked against lockfile integrity. A clean-install CI run remains required. A local optimized build was not attempted with less than 250 MiB free; preview build verification remains outstanding.
+
+- Recheck results: 404 offline tests passed; typecheck, lint (existing warnings), training-parts/bank-size generation, email palette generation, and ES/VI/KO question-bank validation passed. Candidate Firestore rule assertions are static contracts only, not an emulator or deployment check. Final remote CI and preview must be checked on the pushed commit. Task-local dependencies and generated build metadata were removed after checks to recover disk space.

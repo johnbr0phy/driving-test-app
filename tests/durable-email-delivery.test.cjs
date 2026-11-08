@@ -143,3 +143,26 @@ test('uncertain A cannot use B eligibility to resend A or send B', async () => {
   assert.equal(eligibilityCalls, 0);
   assert.equal(db.rows.get('users/u').marketingEmailLease.uncertain, true);
 });
+
+
+test('revoked consent after an uncertain send preserves the reconciliation lock', async () => {
+  db = database({ emailConsent: true });
+  let sends = 0;
+  provider = async () => { sends++; return { ok: false, uncertain: true, error: 'timeout' }; };
+  await assert.rejects(sendDurableEmail(options()));
+  db.rows.get('users/u').unsubscribed = true;
+  assert.equal(await sendDurableEmail(options()), 'ineligible');
+  assert.equal(sends, 1);
+  assert.equal(db.rows.get('users/u').marketingEmailLease.uncertain, true);
+  assert.equal(db.rows.get('users/u').emailsSent, undefined);
+});
+
+test('known suppression does not record sent or retain the account campaign lock', async () => {
+  db = database({ emailConsent: true });
+  provider = async () => ({ ok: false, uncertain: false, error: 'Recipient is suppressed' });
+  await assert.rejects(sendDurableEmail(options()), /suppressed/);
+  assert.equal(db.rows.get('users/u').emailsSent, undefined);
+  assert.equal(db.rows.get('users/u').marketingEmailLease, undefined);
+  const delivery = [...db.rows].find(([key]) => key.startsWith('emailDeliveries/'))[1];
+  assert.equal(delivery.status, 'failed_known');
+});

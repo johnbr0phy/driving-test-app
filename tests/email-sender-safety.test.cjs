@@ -108,3 +108,17 @@ test('idempotency conflicts may refer to an accepted original and stay uncertain
   }
   assert.equal(released,before);
 });
+
+
+test('provider suppression is a rejection, never a successful send or daily quota latch', async () => {
+  const beforeReleased = released;
+  const beforeExhausted = exhausted;
+  response = { data: null, error: { name: 'validation_error', message: 'Recipient is suppressed', statusCode: 422 } };
+  const result = await sendEmail(payload);
+  assert.equal(result.ok, false);
+  assert.equal(result.uncertain, false);
+  assert.equal(result.quotaExhausted, false);
+  assert.match(result.error, /suppressed/);
+  assert.equal(released, beforeReleased + 1);
+  assert.equal(exhausted, beforeExhausted);
+});

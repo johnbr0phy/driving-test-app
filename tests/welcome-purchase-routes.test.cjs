@@ -2,7 +2,7 @@ require('tsx/cjs');
 const assert = require('node:assert/strict');
 const { test } = require('node:test');
 const Module = require('node:module');
-let event, sends = [], welcomes = 0;
+let event, sends = [], welcomes = 0, receiptOutcome = 'sent';
 const rows = new Map();
 const ref = key => ({ get: async () => ({ exists: rows.has(key), data: () => rows.get(key) }), key,
   set: async (data, opts) => rows.set(key, opts?.merge ? { ...rows.get(key), ...data } : data),
@@ -18,7 +18,7 @@ try {
     if (request === '@/lib/firebase-admin') return { getAdminDb: () => db, getAdminAuth: () => auth };
     if (request === '@/lib/server/welcomeEmail') return { WELCOME_MAX_AGE_MS: 86400000, sendWelcomeEmail: async () => { welcomes++; return { ok: true }; } };
     if (request === '@/lib/stripe') return { getStripe: () => ({ webhooks: { constructEvent: () => event } }) };
-    if (request === '@/lib/server/durableEmail') return { sendDurableEmail: async options => { sends.push(options); return 'sent'; } };
+    if (request === '@/lib/server/durableEmail') return { sendDurableEmail: async options => { sends.push(options); if (receiptOutcome instanceof Error) throw receiptOutcome; return receiptOutcome; } };
     if (request === '@/lib/email-templates') return { EMAIL_TEMPLATES: { purchaseWelcome: voice => `Receipt ${voice.id}` } };
     return oldLoad.call(this, request, parent, main);
   };
@@ -115,4 +115,24 @@ test('legacy entitlement payment ID alone protects partial historical fulfillmen
   assert.deepEqual(rows.get('users/u'), user);
   assert.equal(sends.length, 0);
   assert.equal(rows.get('fulfilledCheckouts/cs_legacy').legacyProcessed, true);
+});
+
+
+test('delayed successful checkout grants once and requests receipt retry until confirmed', async () => {
+  rows.clear(); sends = [];
+  event = legacyPaidEvent();
+  event.type = 'checkout.session.async_payment_succeeded';
+  for (const outcome of ['in_flight', 'quarantined', 'ineligible', new Error('provider unavailable')]) {
+    receiptOutcome = outcome;
+    assert.equal((await webhook(stripeReq())).status, 503);
+    assert.equal(rows.get('users/u').subscription.isPremium, true);
+  }
+  const purchasedAt = rows.get('users/u').subscription.purchasedAt;
+  for (const outcome of ['sent', 'already_sent']) {
+    receiptOutcome = outcome;
+    assert.equal((await webhook(stripeReq())).status, 200);
+    assert.equal(rows.get('users/u').subscription.purchasedAt, purchasedAt);
+  }
+  assert.equal(new Set(sends.map(send => send.dedupeKey)).size, 1);
+  receiptOutcome = 'sent';
 });

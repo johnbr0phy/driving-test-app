@@ -10,6 +10,7 @@ import Link from "next/link";
 import { QRCodeSVG } from "qrcode.react";
 import { Check, ChevronRight, Copy, Loader2, Pencil, QrCode, RefreshCw } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
+import { useLanguage } from "@/contexts/LanguageContext";
 import { classLink, classUrl, teachFetch } from "@/lib/teachClient";
 import { MAX_NAME_LENGTH, normalizeClassCode, type ClassReport, type ClassStudentRow } from "@/lib/classes";
 import { ClassQuestions } from "@/components/teach/ClassQuestions";
@@ -35,6 +36,7 @@ export default function ClassPage() {
   const router = useRouter();
   const code = normalizeClassCode(String(params.code ?? ""));
   const { user, loading } = useAuth();
+  const { englishLocale } = useLanguage();
   const [report, setReport] = useState<ClassReport | null>(null);
   const [error, setError] = useState("");
   const [copied, setCopied] = useState(false);
@@ -181,7 +183,7 @@ export default function ClassPage() {
           <div className={card}>
             <p className="font-semibold text-gray-900 dark:text-gray-50 mb-1">No students yet</p>
             <p className="text-sm text-gray-600 dark:text-gray-300">
-              Post the class link where your students will see it. They type their name and start practicing; nothing to install, no account. Each one shows up here as soon as they join.
+              Post the class link where your students will see it. They type their name and start {englishLocale === "en-GB" ? "practising" : "practicing"}; nothing to install, no account. Each one shows up here as soon as they join.
             </p>
           </div>
         ) : (

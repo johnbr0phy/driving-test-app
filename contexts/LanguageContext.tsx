@@ -2,15 +2,17 @@
 
 import { createContext, useContext, useEffect, useMemo, useCallback, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
-import { Language, createT } from "@/i18n";
+import { Language, createT, type EnglishLocale } from "@/i18n";
 import { useStore } from "@/store/useStore";
-import { pageLanguage, testPageLanguage } from "@/lib/pageLanguage";
+import { pageLanguage, testPageLanguage, pageEnglishLocale } from "@/lib/pageLanguage";
 import { countryLanguage, languageIsChosen, readLanguageCookie, writeLanguageCookie } from "@/lib/language";
+import { REGION_COOKIE, isRegion, type Region } from "@/lib/region";
 import { urlLanguage } from "@/lib/urlLanguage";
 
 interface LanguageContextType {
   /** The language this page shows its chrome in (lib/pageLanguage.ts). */
   language: Language;
+  englishLocale: EnglishLocale;
   /** The person's own choice, stored and synced; pages may override it. */
   preferredLanguage: Language;
   setLanguage: (lang: Language) => void;
@@ -19,6 +21,7 @@ interface LanguageContextType {
 
 const LanguageContext = createContext<LanguageContextType>({
   language: "en",
+  englishLocale: "en-US",
   preferredLanguage: "en",
   setLanguage: () => {},
   t: (key: string) => key,
@@ -29,8 +32,8 @@ export function useLanguage() {
 }
 
 export function useTranslation() {
-  const { t, language, preferredLanguage, setLanguage } = useLanguage();
-  return { t, language, preferredLanguage, setLanguage };
+  const { t, language, englishLocale, preferredLanguage, setLanguage } = useLanguage();
+  return { t, language, englishLocale, preferredLanguage, setLanguage };
 }
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
@@ -59,6 +62,14 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     testPageLanguage(pathname, preferredLanguage, testLanguages ?? {}, dmvState) ??
     pageLanguage(pathname, preferredLanguage, chosen);
 
+  // Cookie-only visitors (including geo-selected UK) may not have an account
+  // or a persisted store pick. Read after mount to preserve hydration parity.
+  const [cookieRegion, setCookieRegion] = useState<Region | null>(null);
+  useEffect(() => {
+    const value = document.cookie.split("; ").find((part) => part.startsWith(`${REGION_COOKIE}=`))?.split("=")[1];
+    setCookieRegion(isRegion(value) ? value : null);
+  }, [pathname]);
+  const englishLocale = pageEnglishLocale(pathname, region ?? cookieRegion ?? "US");
   const router = useRouter();
   const setLanguage = useCallback(
     (lang: Language) => {
@@ -74,14 +85,15 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   // written in another language (/es/..., /de/...) keeps its URL's language:
   // its content is in it even when the header and footer follow the person's.
   useEffect(() => {
-    document.documentElement.lang = urlLanguage(pathname) ?? language;
-  }, [language, pathname]);
+    const pageLang = urlLanguage(pathname) ?? language;
+    document.documentElement.lang = pageLang === "en" ? englishLocale : pageLang;
+  }, [language, pathname, englishLocale]);
 
-  const t = useMemo(() => createT(language), [language]);
+  const t = useMemo(() => createT(language, englishLocale), [language, englishLocale]);
 
   const value = useMemo(
-    () => ({ language, preferredLanguage, setLanguage, t }),
-    [language, preferredLanguage, setLanguage, t]
+    () => ({ language, englishLocale, preferredLanguage, setLanguage, t }),
+    [language, englishLocale, preferredLanguage, setLanguage, t]
   );
 
   return (

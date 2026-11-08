@@ -4,7 +4,7 @@ import { SITE_URL } from "@/lib/siteUrl";
 
 const title = "Free Practice Tests for Your Class";
 const description =
-  "Make a free Tigertest class for any test on the site. Post one link, students join with a name, and you see who practiced and what the class keeps missing.";
+  "Make a free Tigertest class for any test on the site. Post one link, students join with a name, and you see their progress and what the class keeps missing.";
 
 const siteUrl = SITE_URL;
 

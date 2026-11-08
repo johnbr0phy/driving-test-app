@@ -2,6 +2,7 @@
 
 import { ExamConfig, examBaseLanguage, examLanguages, localizeExam } from "@/lib/exams";
 import { getExamRoutes } from "@/lib/examRoutes";
+import { regionOfTest } from "@/lib/region";
 import { examUi } from "@/lib/examUi";
 import { useTestLanguage } from "@/hooks/useTestLanguage";
 
@@ -17,7 +18,7 @@ export function useLocalizedExam(source: ExamConfig) {
   return {
     exam: localizeExam(source, lang),
     routes: getExamRoutes(source.id, lang),
-    ui: examUi(lang),
+    ui: examUi(lang, regionOfTest(source.id) === "UK" ? "en-GB" : "en-US"),
     lang,
     testLanguages: offered,
     testLanguagePicked: picked,

@@ -159,6 +159,8 @@ export interface DrillDef {
    * Free on every drill, Premium or not.
    */
   basics?: string[];
+  /** Localise shared introductory lessons without changing their IDs or US copy. */
+  basicsLocale?: "en-GB";
   /** Exam-level questions this drill runs; overrides the exam's `drillSize`. */
   size?: number;
 }

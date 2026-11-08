@@ -3,6 +3,7 @@
  * Sends only GET requests, with UK country cookies. */
 const fs = require("node:fs");
 const { manifest } = require("./uk-pages-manifest.cjs");
+const { htmlAuditText, htmlAuditTitle } = require("./uk-pages-text.cjs");
 const base = process.argv[2] || "http://127.0.0.1:3100";
 const output = process.argv[3] || "/tmp/uk-pages-http.json";
 const american =
@@ -20,17 +21,13 @@ async function worker() {
         signal: AbortSignal.timeout(90000),
       });
       const html = await res.text();
-      const text = html
-        .replace(/<(script|style)\b[^>]*>[\s\S]*?<\/\1>/gi, "")
-        .replace(/<[^>]+>/g, " ")
-        .replace(/\s+/g, " ")
-        .trim();
+      const text = htmlAuditText(html);
       rows.push({
         ...r,
         status: res.status,
         url: res.url,
         bytes: html.length,
-        title: html.match(/<title>([\s\S]*?)<\/title>/)?.[1],
+        title: htmlAuditTitle(html),
         american: [...new Set(text.match(american) || [])],
         error:
           res.status >= 400 ||

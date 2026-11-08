@@ -46,8 +46,15 @@ export function readVoiceTicket(token: string, now = Date.now()): VoiceTicket {
   if (!/^[a-f0-9-]{36}$/.test(ticket.participantId) || !/^[a-f0-9-]{36}$/.test(ticket.sessionId) || !/^[a-f0-9]{64}$/.test(ticket.ipKey) || !Number.isSafeInteger(ticket.expiresAt) || ticket.expiresAt <= now || ticket.expiresAt > now + 60000) throw new VoiceTutorError('Voice link expired.', 403, 'ticket');
   return ticket;
 }
-export function relayUrl(): string {
-  const value = process.env.VOICE_TUTOR_RELAY_URL;
+export function relayUrl(requestUrl?: string): string {
+  let value = process.env.VOICE_TUTOR_RELAY_URL;
+  // Vercel supports inbound WebSockets as of October 2026. Prefer the same
+  // preview origin; an explicit URL remains available for the standalone relay.
+  if (!value && requestUrl) {
+    const sameOrigin = new URL('/api/voice-tutor/connect', requestUrl);
+    sameOrigin.protocol = sameOrigin.protocol === 'https:' ? 'wss:' : 'ws:';
+    value = sameOrigin.toString();
+  }
   if (!value) throw new VoiceTutorError('Voice relay is not configured.', 503, 'unavailable');
   const url = new URL(value);
   if (url.username || url.password || url.search || url.hash || (url.protocol !== 'wss:' && !(process.env.NODE_ENV === 'development' && url.protocol === 'ws:' && ['localhost', '127.0.0.1'].includes(url.hostname)))) throw new VoiceTutorError('Voice relay must use secure WebSockets.', 503, 'unavailable');

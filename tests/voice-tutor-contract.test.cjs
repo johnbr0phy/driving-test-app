@@ -52,3 +52,17 @@ test('canonical question grounding remaps shown letters, rejects tampering and d
   assert.throws(()=>voiceQuestionKey({examId:'dmv',questionId:'U-001',optionOrder:'AAAA'}));
   assert.throws(()=>loadVoiceQuestion({...key,questionId:'U-002'}));
 });
+test('same-origin Vercel relay URL is secure and needs no separate host configuration', () => {
+  const { relayUrl } = require('../lib/server/voiceTutorSecurity.ts');
+  const previous=process.env.VOICE_TUTOR_RELAY_URL;
+  delete process.env.VOICE_TUTOR_RELAY_URL;
+  assert.equal(relayUrl('https://preview.example.test/voice-pilot'), 'wss://preview.example.test/api/voice-tutor/connect');
+  process.env.VOICE_TUTOR_RELAY_URL='https://wrong-protocol.example.test/voice';assert.throws(()=>relayUrl('https://preview.example.test'));
+  if(previous===undefined)delete process.env.VOICE_TUTOR_RELAY_URL;else process.env.VOICE_TUTOR_RELAY_URL=previous;
+});
+test('Vercel adapter awaits settlement and allows bounded full-duplex sessions', () => {
+  const source=require('node:fs').readFileSync(require('node:path').join(__dirname,'../app/api/voice-tutor/connect/route.ts'),'utf8');
+  assert.match(source,/maxDuration = 180/);assert.match(source,/upgradeWebSocket\(async socket/);
+  assert.match(source,/onFinished: resolve/);assert.match(source,/maxPayload: 16384/);
+  assert.match(source,/requireSameOrigin\(request\)/);assert.match(source,/readVoiceTicket/);
+});

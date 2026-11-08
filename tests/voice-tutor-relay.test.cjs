@@ -85,3 +85,12 @@ test('provider close during persistence waits and settles complete received usag
   assert.equal(f.settled[0].status, 'completed');
   assert.equal(f.ended.length, 1);
 });
+test('Vercel completion signal waits for durable settlement after browser disconnect', async () => {
+  const gate = deferred(); let finished = 0;
+  const f = fixture({ settleVoiceTurn: () => gate.promise, onFinished: () => { finished++; } });
+  await f.started; f.client.close(); await tick();
+  assert.equal(finished, 0);
+  gate.resolve({ status: 'completed' }); await tick();
+  assert.equal(finished, 1);
+  f.client.emit('close'); await tick(); assert.equal(finished, 1);
+});

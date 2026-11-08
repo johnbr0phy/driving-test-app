@@ -13,7 +13,7 @@ export async function POST(request: NextRequest) {
     const body = await smallJson(request); const key = voiceQuestionKey(body);
     loadVoiceQuestion(key, body.questionText);
     const identity = participant(request); const ipKey = voiceIpKey(request); const sessionId = randomUUID();
-    const url = relayUrl();
+    const url = relayUrl(request.url);
     const session = await createVoiceSession({ participantId: identity.id, ipKey, sessionId, questionKey: JSON.stringify(key) });
     const status = await readVoiceTutorStatus({ participantId: identity.id });
     const ticket = makeVoiceTicket({ participantId: identity.id, ipKey, sessionId, expiresAt: Date.now() + 30000 });

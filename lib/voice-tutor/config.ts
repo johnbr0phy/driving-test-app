@@ -26,7 +26,7 @@ export const VOICE_COOKIE = 'tt-voice-pilot';
 export function voicePilotEnabled(env: NodeJS.ProcessEnv = process.env): boolean {
   return env.VOICE_TUTOR_PILOT === 'true' && !!env.OPENAI_API_KEY &&
     (env.VOICE_TUTOR_COOKIE_SECRET?.length ?? 0) >= 32 &&
-    env.VOICE_TUTOR_LEDGER_RULES_VERIFIED === 'true' && !!env.VOICE_TUTOR_RELAY_URL;
+    env.VOICE_TUTOR_LEDGER_RULES_VERIFIED === 'true';
 }
 export class VoiceTutorError extends Error {
   constructor(message: string, public status = 400, public code = 'invalid_request') { super(message); }

@@ -1,4 +1,4 @@
-/** Persistent server-owned Realtime relay. Do NOT mount in a Vercel route.
+/** Optional standalone relay. Vercel uses app/api/voice-tutor/connect directly.
  * Deploy only after docs/voice-tutor-pilot.md's launch checklist is complete.
  */
 import { createServer } from 'node:http';

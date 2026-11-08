@@ -8,12 +8,12 @@ import { claimVoiceSession, readVoiceSession, endVoiceSession, reserveVoiceTurn,
 import { realtimeCost } from './voiceTutorUsage';
 import { realtimeSession, validRealtimeSession, AudioRateGuard } from './voiceTutorRealtime';
 
-const defaults = { readVoiceSession, claimVoiceSession, loadVoiceQuestion, reserveVoiceTurn, settleVoiceTurn, endVoiceSession, recordVoiceResponse,
+const defaults = { onFinished: () => {}, readVoiceSession, claimVoiceSession, loadVoiceQuestion, reserveVoiceTurn, settleVoiceTurn, endVoiceSession, recordVoiceResponse,
   createProvider: (identity: ReturnType<typeof readVoiceTicket>) => new WebSocket(`wss://api.openai.com/v1/realtime?model=${VOICE_RATE_CARD.model}`, { headers: { Authorization: `Bearer ${process.env.OPENAI_API_KEY}`, 'OpenAI-Safety-Identifier': identity.participantId }, maxPayload: 2 * 1024 * 1024, perMessageDeflate: false }),
 };
 
 export async function serveVoiceRelay(client: WebSocket, identity: ReturnType<typeof readVoiceTicket>, overrides: Partial<typeof defaults> = {}, sessions = new Set<() => void>()) {
-  const { readVoiceSession, claimVoiceSession, loadVoiceQuestion, reserveVoiceTurn, settleVoiceTurn, endVoiceSession, recordVoiceResponse, createProvider } = { ...defaults, ...overrides };
+  const { onFinished, readVoiceSession, claimVoiceSession, loadVoiceQuestion, reserveVoiceTurn, settleVoiceTurn, endVoiceSession, recordVoiceResponse, createProvider } = { ...defaults, ...overrides };
   const base = { participantId: identity.participantId, ipKey: identity.ipKey, sessionId: identity.sessionId };
   const hold = { ...base, turnId: 'realtime' as const };
   let upstream: WebSocket | null = null; let reserved = false; let configured = false;
@@ -40,6 +40,7 @@ export async function serveVoiceRelay(client: WebSocket, identity: ReturnType<ty
       if (claimed) await endVoiceSession(base);
     } catch { /* Unsettled money remains reserved. Never release after an error. */ }
     send({ type: 'ended', reason, costUsd: cost / 1000000 }); client.close(1000);
+    onFinished();
   }
   function requestFinish() {
     if (finalizationQueued || finished) return;

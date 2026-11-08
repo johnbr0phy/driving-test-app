@@ -1,3 +1,4 @@
+import { britishBasicsSkill } from "./basicsBritish";
 import grammar from "@/data/v2/basics/skills.json";
 import reading from "@/data/v2/basics/reading.json";
 import math from "@/data/v2/basics/math.json";
@@ -84,6 +85,8 @@ export interface BasicsWalkthrough {
 }
 
 export interface BasicsSkill {
+  /** This copy differs from the recorded narration; never play the original audio. */
+  audioDisabled?: boolean;
   id: string;
   name: string;
   sub: string;
@@ -118,7 +121,8 @@ export function isPunctuationQuestion(q: BasicsQuestion): boolean {
 
 /** The Basics skills a drill opens with, in order. Empty when it has none yet. */
 export function basicsFor(drill: DrillDef): BasicsSkill[] {
-  return (drill.basics ?? []).map((id) => LIBRARY[id]).filter((s): s is BasicsSkill => !!s);
+  return (drill.basics ?? []).map((id) => LIBRARY[id]).filter((s): s is BasicsSkill => !!s)
+    .map((skill) => drill.basicsLocale === "en-GB" ? britishBasicsSkill(skill) : skill);
 }
 
 export function basicsKey(examId: string, skillId: string) {

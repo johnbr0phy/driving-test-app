@@ -7,7 +7,7 @@ import Image from "next/image";
 import { BookOpen, Pause, Play, RotateCcw, X } from "lucide-react";
 import { ExamV2Config } from "@/lib/v2/types";
 import { BasicsSkill } from "@/lib/v2/basics";
-import { ExplainerBeat, ExplainerBeatTiming, ExplainerManifest, beatOffsets, buildExplainer, estimateTimings, explainerAudioUrl, explainerManifestUrl, explainerTemplate, words } from "@/lib/v2/explainer";
+import { ExplainerBeat, ExplainerBeatTiming, ExplainerManifest, beatOffsets, buildExplainer, estimateTimings, explainerAudioUrl, explainerManifestUrl, explainerTemplate, hasExplainer, words } from "@/lib/v2/explainer";
 import { getTigerAsset, TigerExpression } from "@/lib/tigerAssets";
 
 /**
@@ -48,6 +48,7 @@ export function BasicsExplainer({ exam, skill, doneLabel, onDone, onClose, onRea
   /** "Read it instead" on the Play screen, when the text card is the alternative. */
   onRead?: () => void;
 }) {
+  const audioEnabled = hasExplainer(skill);
   const beats = useMemo(() => buildExplainer(skill), [skill]);
   const template = explainerTemplate(skill) ?? "sentence";
   const estimated = useMemo(() => estimateTimings(beats), [beats]);
@@ -66,6 +67,10 @@ export function BasicsExplainer({ exam, skill, doneLabel, onDone, onClose, onRea
 
   // The manifest, checked against the storyboard so stale audio never drives the wrong words.
   useEffect(() => {
+    if (!audioEnabled) {
+      setManifest(null);
+      return;
+    }
     let live = true;
     fetch(explainerManifestUrl(skill.id))
       .then((r) => (r.ok ? (r.json() as Promise<ExplainerManifest>) : null))
@@ -78,11 +83,12 @@ export function BasicsExplainer({ exam, skill, doneLabel, onDone, onClose, onRea
     return () => {
       live = false;
     };
-  }, [skill.id, beats]);
+  }, [skill.id, beats, audioEnabled]);
 
   // The audio element, created up front so the Play tap only has to call play().
   useEffect(() => {
-    if (typeof Audio === "undefined") {
+    audioFailed.current = false;
+    if (!audioEnabled || typeof Audio === "undefined") {
       audioFailed.current = true;
       return;
     }
@@ -98,7 +104,7 @@ export function BasicsExplainer({ exam, skill, doneLabel, onDone, onClose, onRea
       a.removeEventListener("error", onError);
       audioRef.current = null;
     };
-  }, [skill.id]);
+  }, [skill.id, audioEnabled]);
 
   const goSilent = (from = 0) => {
     audioRef.current?.pause();

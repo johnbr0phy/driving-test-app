@@ -31,6 +31,7 @@ import { useV2Paywall, V2Paywall } from "./V2Paywall";
 import { SuperAmazingCard } from "@/components/SuperAmazingCard";
 import { ClassBanner } from "@/components/exam/ClassBanner";
 import { TeachNudge } from "@/components/TeachNudge";
+import { regionOfTest } from "@/lib/region";
 
 function heroTitle(done: number, total: number, completedTitle = "You're ready"): string {
   if (done === 0) return `Complete all ${total} steps`;
@@ -61,8 +62,8 @@ function tigerFace(done: number, total: number, examId: string): string {
   return getTigerAsset(examId, expr);
 }
 
-function shortDate(iso: string) {
-  return new Date(iso).toLocaleDateString("en-US", { month: "short", day: "numeric" });
+function shortDate(iso: string, examId: string) {
+  return new Date(iso).toLocaleDateString(regionOfTest(examId) === "UK" ? "en-GB" : "en-US", { month: "short", day: "numeric" });
 }
 
 export function DashboardV2({ exam }: { exam: ExamV2Config }) {
@@ -494,7 +495,7 @@ function AttemptsPanel({
         {attempts.map((a, i) => (
           <div key={a.completedAt} className="flex items-center justify-between py-2 text-sm">
             <span className="text-gray-500 dark:text-gray-400">
-              {i === attempts.length - 1 ? "First" : `#${attempts.length - i}`} · {shortDate(a.completedAt)}
+              {i === attempts.length - 1 ? "First" : `#${attempts.length - i}`} · {shortDate(a.completedAt, exam.id)}
             </span>
             <span className="flex items-center gap-3 tabular-nums">
               <span className="text-xs text-gray-500 dark:text-gray-400">{a.sections.map((s) => `${getSectionV2(exam, s.section).shortName} ${s.scaled}`).join(" · ")}</span>

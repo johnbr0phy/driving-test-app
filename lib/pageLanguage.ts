@@ -6,10 +6,11 @@
 // have their own language (hooks/useTestLanguage.ts).
 // contexts/LanguageContext.tsx applies this.
 
+import { getExamV2ByPath } from "@/lib/v2/registry";
 import { DMV_LANGUAGES, type Language } from "@/i18n";
 import { examBaseLanguage, examLandingPath, examLanguages, getExamByPath } from "@/lib/exams";
 import { dmvLanguagesFor, testLanguageFor } from "@/lib/testLanguage";
-import { REGIONS, regionHomePath } from "@/lib/region";
+import { REGIONS, regionHomePath, regionOfTest, type Region } from "@/lib/region";
 
 // State landing suffixes in every DMV language (app/[slug], app/<lang>/[slug]).
 const DMV_SUFFIXES = ["-dmv-practice-test", "-examen-practica-dmv", "-thi-thu-dmv", "-dmv-pilgi-siheom", "-dmv-bishi-lianxi"];
@@ -86,4 +87,17 @@ export function testPageLanguage(
     return testLanguageFor(testLanguages.dmv, dmvLanguagesFor(dmvState), preferred, "en");
   }
   return null;
+}
+
+/** Route identity wins over a saved country. Shared pages use the chosen country.
+ * English spelling is independent of the question-language selection. */
+export function pageEnglishLocale(pathname: string | null | undefined, selectedRegion: Region = "US"): "en-GB" | "en-US" {
+  const exam = pathname ? getExamByPath(pathname) ?? getExamV2ByPath(pathname) : undefined;
+  if (exam) {
+    const region = regionOfTest(exam.id);
+    if (region !== "GLOBAL") return region === "UK" ? "en-GB" : "en-US";
+  }
+  if (isDmvPath(pathname)) return "en-US";
+  const home = REGIONS.find((r) => regionHomePath(r.code) === pathname);
+  return (home?.code ?? selectedRegion) === "UK" ? "en-GB" : "en-US";
 }

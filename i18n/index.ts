@@ -1,4 +1,7 @@
 import { en, TranslationKeys } from './en';
+import { enGB } from './enGB';
+
+export type EnglishLocale = 'en-US' | 'en-GB';
 import { es } from './es';
 import { vi } from './vi';
 import { ko } from './ko';
@@ -67,10 +70,11 @@ function getNestedValue(obj: Record<string, unknown>, path: string): string | un
  * dictionary lacks (the newer dictionaries carry no DMV category names) reads
  * English, and a key no dictionary has reads as its key path.
  */
-export function createT(language: Language) {
+export function createT(language: Language, englishLocale: EnglishLocale = 'en-US') {
   const dict = translations[language] as unknown as Record<string, unknown>;
   const fallback = en as unknown as Record<string, unknown>;
   return function t(key: string): string {
+    if (language === 'en' && englishLocale === 'en-GB' && enGB[key]) return enGB[key];
     return getNestedValue(dict, key) ?? (language === 'en' ? undefined : getNestedValue(fallback, key)) ?? key;
   };
 }

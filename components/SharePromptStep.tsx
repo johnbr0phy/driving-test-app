@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { Check, Link2, Share2 } from "lucide-react";
+import { useTranslation } from "@/contexts/LanguageContext";
 import { JohnFace } from "@/components/JohnFace";
 import { isInternalBrowser } from "@/lib/internal";
 
@@ -17,6 +18,10 @@ export function SharePromptStep({
   onShared: (how: "share" | "copy") => void;
   onSkip: () => void;
 }) {
+  const { englishLocale } = useTranslation();
+  const british = englishLocale === "en-GB";
+  const message = british ? "I've been practising on Tigertest. Free practice tests, worth a look:" : MESSAGE;
+  const keepPractising = british ? "Keep practising" : "Keep practicing";
   const [canShare, setCanShare] = useState(false);
   const [done, setDone] = useState<null | "share" | "copy">(null);
   // Keep practicing unlocks after SKIP_WAIT seconds, so the ask gets read
@@ -54,7 +59,7 @@ export function SharePromptStep({
 
   const share = async () => {
     try {
-      await navigator.share({ title: "Tigertest", text: MESSAGE, url });
+      await navigator.share({ title: "Tigertest", text: message, url });
       count("share");
     } catch {
       // closed the sheet: leave the buttons as they are
@@ -63,7 +68,7 @@ export function SharePromptStep({
 
   const copy = async () => {
     try {
-      await navigator.clipboard.writeText(`${MESSAGE} ${url}`);
+      await navigator.clipboard.writeText(`${message} ${url}`);
       count("copy");
     } catch {
       // clipboard blocked
@@ -115,7 +120,7 @@ export function SharePromptStep({
         )}
         <span className="relative inline-flex items-center gap-2">
           {done && <Check className="h-4 w-4" aria-hidden="true" />}
-          {done ? "Back to the questions" : locked ? `Keep practicing in ${wait}` : "Keep practicing"}
+          {done ? "Back to the questions" : locked ? `${keepPractising} in ${wait}` : keepPractising}
         </span>
       </button>
     </div>

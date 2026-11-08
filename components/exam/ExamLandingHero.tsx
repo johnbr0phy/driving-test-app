@@ -9,6 +9,7 @@ import { useStore } from "@/store/useStore";
 import { useExamStarted } from "@/hooks/useExamStarted";
 import { getExamByPath } from "@/lib/exams";
 import { useTranslation } from "@/contexts/LanguageContext";
+import { pageEnglishLocale } from "@/lib/pageLanguage";
 import type { Language } from "@/i18n";
 
 // The homepage hero (components/HomeHero.tsx) for a non-DMV test: short
@@ -174,7 +175,9 @@ function useStartCta(dashboardHref: string, lang?: Language) {
     if (lang) setLanguage(lang);
     if (!loading && !user && !isGuest) startGuestSession();
   };
-  const copy = COPY[(lang ?? "en") as CopyLang] ?? COPY.en;
+  const baseCopy = COPY[(lang ?? "en") as CopyLang] ?? COPY.en;
+  const copy = (!lang || lang === "en") && pageEnglishLocale(dashboardHref) === "en-GB"
+    ? { ...baseCopy, start: "Start practising" } : baseCopy;
   return { hasSession, onStart, copy };
 }
 

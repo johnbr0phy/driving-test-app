@@ -2713,14 +2713,14 @@
     "optionD": "Black, grey, brown",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "The harmonized colours are brown, black and grey for L1, L2 and L3, with blue for neutral. Red, yellow and blue are the old colours."
+    "explanation": "The harmonised colours are brown, black and grey for L1, L2 and L3, with blue for neutral. Red, yellow and blue are the old colours."
   },
   {
     "type": "UK18ED",
     "state": "ALL",
     "questionId": "UK18ED-APX-019",
     "category": "uk18edAppendices",
-    "question": "In the harmonized colours, what colour identifies a neutral conductor?",
+    "question": "In the harmonised colours, what colour identifies a neutral conductor?",
     "optionA": "Black",
     "optionB": "Grey",
     "optionC": "Blue",
@@ -2734,7 +2734,7 @@
     "state": "ALL",
     "questionId": "UK18ED-APX-020",
     "category": "uk18edAppendices",
-    "question": "An installation contains both old and harmonized wiring colours. What is required?",
+    "question": "An installation contains both old and harmonised wiring colours. What is required?",
     "optionA": "A full rewire of old circuits",
     "optionB": "Removal of the old cables",
     "optionC": "A new consumer unit",

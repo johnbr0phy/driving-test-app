@@ -1,5 +1,6 @@
 "use client";
 
+import { regionOfTest } from "@/lib/region";
 import { Users } from "lucide-react";
 import { leaveClass } from "@/lib/classProgress";
 import { useClassMemberships } from "@/hooks/useClassMemberships";
@@ -19,7 +20,7 @@ export function ClassBanner({ examId, className = "" }: { examId: string; classN
         >
           <Users className="w-4 h-4 mt-0.5 flex-shrink-0 text-blue-700 dark:text-blue-300" aria-hidden="true" />
           <p className="flex-1 text-blue-900 dark:text-blue-100">
-            Practicing as <strong>{m.name}</strong> in {m.className}. {m.teacherName} sees your scores on this exam.
+            {regionOfTest(examId) === "UK" ? "Practising" : "Practicing"} as <strong>{m.name}</strong> in {m.className}. {m.teacherName} sees your scores on this exam.
           </p>
           <button
             type="button"

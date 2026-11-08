@@ -3,6 +3,7 @@
 // every test on the site, FAQ, final call to action.
 
 import Link from "next/link";
+import { useTranslation } from "@/contexts/LanguageContext";
 import { BarChart3, FileText, Gift, Link2, Lock, MonitorSmartphone, Plus, Smartphone } from "lucide-react";
 import { TEST_CATALOG, TEST_GROUPS } from "@/lib/testCatalog";
 import TeachClassDemo from "@/components/stageshow/demos/TeachClassDemo";
@@ -84,6 +85,25 @@ const ctaClass =
   "inline-flex items-center justify-center bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 px-8 py-4 text-lg font-medium rounded-full";
 
 export function TeachLanding({ signedIn }: { signedIn: boolean }) {
+  const { englishLocale } = useTranslation();
+  const british = englishLocale === "en-GB";
+  const faq = british ? FAQ.map((f, i) => ({ ...f, a: i === 1
+    ? "No. They open your link, type the name you know them by, and start practising. If they already have a Tigertest account they can stay signed in."
+    : i === 2 ? "Who joined and when they last practised, how many questions each student answered and their accuracy, their best practice test score, the topics your class misses most, and every question the class answered with how often it was missed." : f.a })) : FAQ;
+  const steps = british ? STEPS.map((step, i) => i === 2
+    ? { ...step, title: "Students practise", body: "They join with just a name and practise on any phone or laptop. No app, no account." }
+    : i === 3 ? { ...step, body: "Who practised, their scores, and the topics and questions your class keeps missing." } : step) : STEPS;
+  const questions = british ? SAMPLE_QUESTIONS.map((q, i) => i === 0 ? { ...q,
+    options: ["Vitamin K", "Protamine sulphate", "Naloxone", "Flumazenil"], answer: "Protamine sulphate",
+    explanation: "Protamine sulphate binds heparin and neutralises it. Vitamin K reverses warfarin; naloxone and flumazenil reverse opioids and benzodiazepines.",
+  } : i === 2 ? { ...q, question: "A wrapped instrument tray comes out of the steriliser wet. What should the surgical technologist do?", topic: "Equipment Sterilisation" } : q) : SAMPLE_QUESTIONS;
+  const groupTitles: Record<string, string> = british ? {
+    "Philippines insurance and real estate licenses": "Philippines insurance and real estate licences",
+    "Outdoor & recreation licenses": "Outdoor & recreation licences",
+    "Aviation, radio & trade licenses": "Aviation, radio & trade licences",
+    "Real estate, insurance, securities & notary licenses": "Real estate, insurance, securities & notary licences",
+    "Social work and counseling exams": "Social work and counselling exams",
+  } : {};
   const newClass = (exam?: string) => {
     const target = `/teach/new${exam ? `?exam=${exam}` : ""}`;
     return signedIn ? target : `/signup?redirect=${encodeURIComponent(target)}`;
@@ -92,7 +112,7 @@ export function TeachLanding({ signedIn }: { signedIn: boolean }) {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: FAQ.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+    mainEntity: faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
   };
 
   return (
@@ -108,7 +128,7 @@ export function TeachLanding({ signedIn }: { signedIn: boolean }) {
             Free practice tests for your whole class
           </h1>
           <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-10 max-w-2xl mx-auto text-pretty">
-            Post one link. Students practice on their phones with just a name. You see who practiced, their scores, and exactly what your class keeps getting wrong.
+            {british ? "Post one link. Students practise on their phones with just a name. You see who practised, their scores, and exactly what your class keeps getting wrong." : "Post one link. Students practice on their phones with just a name. You see who practiced, their scores, and exactly what your class keeps getting wrong."}
           </p>
           <div className="flex flex-col items-center gap-3">
             <Link href={newClass()} className={ctaClass}>Create a free class</Link>
@@ -127,7 +147,7 @@ export function TeachLanding({ signedIn }: { signedIn: boolean }) {
             <TeachClassDemo />
           </div>
           <p className="text-sm text-gray-500 dark:text-gray-400 mt-6">
-            Students practice on their phone. Every answer shows up on your class page.
+            {british ? "Students practise on their phone. Every answer shows up on your class page." : "Students practice on their phone. Every answer shows up on your class page."}
           </p>
         </div>
       </div>
@@ -138,7 +158,7 @@ export function TeachLanding({ signedIn }: { signedIn: boolean }) {
           {[
             [`${testCount}`, "tests, from DMV to NCLEX"],
             ["1", "link for your whole class"],
-            ["$0", "for you and your students"],
+            [british ? "£0" : "$0", "for you and your students"],
           ].map(([n, l]) => (
             <div key={l}>
               <p className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50">{n}</p>
@@ -152,7 +172,7 @@ export function TeachLanding({ signedIn }: { signedIn: boolean }) {
       <div className="max-w-5xl mx-auto px-6 py-16 md:py-24">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-14">How it works</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {STEPS.map(({ icon: Icon, title, body }, i) => (
+          {steps.map(({ icon: Icon, title, body }, i) => (
             <div key={title} className="relative pt-8">
               <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-white dark:bg-gray-900 border-2 border-brand-border-light rounded-full flex items-center justify-center shadow-sm">
                 <Icon className="w-7 h-7 text-brand-dark" aria-hidden="true" />
@@ -193,7 +213,7 @@ export function TeachLanding({ signedIn }: { signedIn: boolean }) {
             </ul>
           </div>
           <div className="rounded-2xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 p-4 md:p-5 shadow-xl">
-            <ClassQuestions questions={SAMPLE_QUESTIONS} headingLevel={3} />
+            <ClassQuestions questions={questions} headingLevel={3} />
             <p className="text-xs text-gray-500 dark:text-gray-400 mt-3">Sample class. Tap a question.</p>
           </div>
         </div>
@@ -222,12 +242,12 @@ export function TeachLanding({ signedIn }: { signedIn: boolean }) {
         <div className="max-w-5xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-4">Works with every test on Tigertest</h2>
           <p className="text-gray-600 dark:text-gray-300 text-center mb-12 max-w-2xl mx-auto">
-            Driver&apos;s ed, nursing and allied health programs, trade schools, test prep. Pick a test to start a class for it.
+            {british ? "Driving lessons, nursing and allied health programmes, trade schools, test preparation. Pick a test to start a class for it." : "Driver's ed, nursing and allied health programs, trade schools, test prep. Pick a test to start a class for it."}
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {TEST_GROUPS.map((g) => (
               <div key={g.title} className="rounded-2xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 p-5">
-                <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-50 mb-3">{g.title}</h3>
+                <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-50 mb-3">{groupTitles[g.title] ?? g.title}</h3>
                 <div className="flex flex-wrap gap-2">
                   {g.tests.map((t) => (
                     <Link
@@ -266,7 +286,7 @@ export function TeachLanding({ signedIn }: { signedIn: boolean }) {
       <div className="max-w-3xl mx-auto px-6 py-16 md:py-24">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-10">Questions teachers ask</h2>
         <div className="space-y-8">
-          {FAQ.map((f) => (
+          {faq.map((f) => (
             <div key={f.q}>
               <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">{f.q}</h3>
               <p className="text-gray-600 dark:text-gray-300">{f.a}</p>
@@ -279,7 +299,7 @@ export function TeachLanding({ signedIn }: { signedIn: boolean }) {
       <div className="bg-brand-light py-16">
         <div className="max-w-2xl mx-auto px-6 text-center">
           <Gift className="w-8 h-8 mx-auto mb-4 text-brand-dark" aria-hidden="true" />
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 mb-4">Your class could be practicing tonight</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 mb-4">{british ? "Your class could be practising tonight" : "Your class could be practicing tonight"}</h2>
           <p className="text-gray-600 dark:text-gray-300 mb-8">Make a class, post the link, and watch the first students show up.</p>
           <Link href={newClass()} className={ctaClass}>Create a free class</Link>
           <p className="text-sm text-gray-600 dark:text-gray-300 mt-6">

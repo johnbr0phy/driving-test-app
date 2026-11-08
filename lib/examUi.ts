@@ -549,6 +549,7 @@ const el: ExamUi = {
 
 const EXAM_UI: Partial<Record<Language, ExamUi>> = { en, es, vi, ko, zh, de, fr, it, pl, nl, pt, sv, da, fi, hu, ro, el };
 
-export function examUi(lang: Language): ExamUi {
+export function examUi(lang: Language, englishLocale: "en-US" | "en-GB" = "en-US"): ExamUi {
+  if (lang === "en" && englishLocale === "en-GB") return { ...en, dateLocale: "en-GB" };
   return EXAM_UI[lang] ?? en;
 }

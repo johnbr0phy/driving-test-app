@@ -39,6 +39,7 @@ import { PaywallModal } from "@/components/PaywallModal";
 import { GatedStatsList, LockedPreview, STATS_FREE_ROWS, StatsPageShell, StatsTab, StatsTabs } from "@/components/stats/StatsParts";
 import { V2StatsRow, plainStem } from "./V2StatsRow";
 import { usePremiumPrice } from "@/hooks/usePremiumPrice";
+import { regionOfTest } from "@/lib/region";
 
 /** Whether v2 stats sell Premium. Off: the whole plan and notebook are free. */
 const V2_STATS_PAYWALL = false;
@@ -265,7 +266,7 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
                       {exam.tests.find((t) => t.number === r.testNumber)?.name ?? `Practice Test ${r.testNumber}`}
                     </div>
                     <div className="text-[11px] text-gray-500 dark:text-gray-400">
-                      {new Date(r.completedAt).toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" })}
+                      {new Date(r.completedAt).toLocaleDateString(regionOfTest(exam.id) === "UK" ? "en-GB" : undefined, { month: "short", day: "numeric", year: "numeric" })}
                       {exam.sections.length > 1 && ` · ${r.sections.map((s) => `${getSectionV2(exam, s.section).shortName} ${s.scaled}`).join(" · ")}`}
                     </div>
                   </div>

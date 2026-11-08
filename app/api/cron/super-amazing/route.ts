@@ -13,6 +13,7 @@
  */
 
 import { NextRequest, NextResponse } from "next/server";
+import { makeSnapshotRetryPolicy } from "@/lib/server/emailRetryPolicy";
 import {
   buildAuthMap,
   getEligibleUsers,
@@ -61,6 +62,7 @@ export async function GET(req: NextRequest) {
       subject: (u) => EMAIL_INBOX.superAmazingUnlocked(u.voice).subject,
       template: (u) => EMAIL_TEMPLATES.superAmazingUnlocked(u.voice),
       users: eligible,
+      retryPolicy: (u) => makeSnapshotRetryPolicy(u.raw, { expiresAt: Math.min(u.lastActiveAt.getTime() + maxInactiveMs(u.voice), (recentSuperAmazingUnlock(u.raw, Date.now())?.unlockedAt.getTime() ?? 0) + 7 * 24 * 60 * 60_000) }),
       gapMs: GAP_MS,
       eligible: (data, user) => {
         const unlock = recentSuperAmazingUnlock(data, Date.now());

@@ -96,7 +96,7 @@ function containsUnresolvedTemplate(html: string): boolean {
  * Send one email, charged against the account-wide daily budget, and report the
  * true outcome. Never throws — inspect the returned SendResult.
  */
-export async function sendEmail(payload: SendEmailPayload): Promise<SendResult> {
+export async function sendEmail(payload: SendEmailPayload, options: { previousUncertain?: boolean; notAfter?: number } = {}): Promise<SendResult> {
   if (!process.env.RESEND_API_KEY) {
     return { ok: false, quotaExhausted: false, error: "RESEND_API_KEY is not configured", uncertain: false };
   }
@@ -107,7 +107,8 @@ export async function sendEmail(payload: SendEmailPayload): Promise<SendResult> 
   if (payload.kind === "campaign" && !process.env.EMAIL_POSTAL_ADDRESS?.trim()) {
     return { ok: false, quotaExhausted: false, error: "EMAIL_POSTAL_ADDRESS is required for campaign mail", uncertain: false };
   }
-  if (!(await reserveSend(payload.kind))) {
+  let reservation = await reserveSend(payload.kind, payload.idempotencyKey, options.previousUncertain === true);
+  if (!reservation) {
     return {
       ok: false,
       quotaExhausted: true,
@@ -115,6 +116,19 @@ export async function sendEmail(payload: SendEmailPayload): Promise<SendResult> 
     };
   }
 
+  // A quota transaction may span midnight. Never call the provider against
+  // yesterday's budget. Reacquire at most twice, then fail closed.
+  for (let rollover = 0; reservation && reservation.day !== new Date().toISOString().slice(0, 10) && rollover < 2; rollover++) {
+    await releaseSend(reservation);
+    reservation = await reserveSend(payload.kind, payload.idempotencyKey, options.previousUncertain === true);
+  }
+  if (!reservation || reservation.day !== new Date().toISOString().slice(0, 10)) {
+    return { ok: false, quotaExhausted: true, uncertain: options.previousUncertain === true, error: 'Current-day email budget unavailable' };
+  }
+  if (options.notAfter !== undefined && Date.now() >= options.notAfter) {
+    if (!options.previousUncertain) await releaseSend(reservation);
+    return { ok: false, quotaExhausted: false, uncertain: options.previousUncertain === true, error: 'Retry deadline elapsed before provider call' };
+  }
   try {
     const { data, error } = await getResend().emails.send({
       from: payload.from ?? DEFAULT_FROM,
@@ -133,8 +147,8 @@ export async function sendEmail(payload: SendEmailPayload): Promise<SendResult> 
       const uncertain = (typeof status === "number" && status >= 500) ||
         error.name === "application_error" || error.name === "internal_server_error" ||
         error.name === "concurrent_idempotent_requests" || error.name === "invalid_idempotent_request";
-      if (quotaExhausted) await markQuotaExhausted();
-      else if (!uncertain) await releaseSend();
+      if (quotaExhausted) await markQuotaExhausted(reservation);
+      else if (!uncertain && !options.previousUncertain) await releaseSend(reservation);
       return {
         ok: false,
         quotaExhausted,
@@ -153,7 +167,7 @@ export async function sendEmail(payload: SendEmailPayload): Promise<SendResult> 
     const quotaExhausted = looksLikeQuotaError(err?.name, message);
     // A timeout can happen after acceptance. Keep the budget reservation and
     // let the durable sender retry the SAME immutable request and key only.
-    if (quotaExhausted) await markQuotaExhausted();
+    if (quotaExhausted) await markQuotaExhausted(reservation);
     return { ok: false, quotaExhausted, error: message, uncertain: !quotaExhausted };
   }
 }

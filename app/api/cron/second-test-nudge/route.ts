@@ -14,6 +14,7 @@
  */
 
 import { NextRequest, NextResponse } from "next/server";
+import { makeSnapshotRetryPolicy } from "@/lib/server/emailRetryPolicy";
 import {
   buildAuthMap,
   getEligibleUsers,
@@ -68,6 +69,7 @@ export async function GET(req: NextRequest) {
       subject: (u) => EMAIL_INBOX.secondTestNudge(u.voice).subject,
       template: (u) => EMAIL_TEMPLATES.secondTestNudge(u.voice),
       users: eligible,
+      retryPolicy: (u) => makeSnapshotRetryPolicy(u.raw, { expiresAt: Math.min(u.lastActiveAt.getTime() + maxInactiveMs(u.voice), new Date(u.completedTests[0].completedAt).getTime() + 48 * 60 * 60_000) }),
       eligible: (fresh, user) => {
         const scoped = withStudyContext({ ...user, raw: fresh, subscription: fresh.subscription ?? {}, emailsSent: Array.isArray(fresh.emailsSent) ? fresh.emailsSent : [],
           lastActiveAt: new Date(Math.max(user.lastActiveAt.getTime(), Date.parse(fresh.lastUpdated) || 0)),

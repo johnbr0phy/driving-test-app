@@ -2,13 +2,14 @@ require('tsx/cjs');
 const assert = require('node:assert/strict');
 const { test } = require('node:test');
 const Module = require('node:module');
-let db, provider;
+let db, provider, account = { email: 'u@example.com', disabled: false }, onAuthRead = () => {};
+const { makeWelcomeRetryPolicy, makeSnapshotRetryPolicy } = require('../lib/server/emailRetryPolicy.ts');
 const original = Module._load;
-let sendDurableEmail;
+let sendDurableEmail, recoverDelivery, recoveryDisposition;
 try {
   Module._load = function (request, parent, main) {
-    if (request === '@/lib/firebase-admin') return { getAdminDb: () => db };
-    if (request === '@/lib/resend') return { sendEmail: payload => provider(payload) };
+    if (request === '@/lib/firebase-admin') return { getAdminDb: () => db, getAdminAuth: () => ({ getUser: async () => { onAuthRead(); return account; } }) };
+    if (request === '@/lib/resend') return { DEFAULT_FROM: 'Tigertest <noreply@tigertest.io>', sendEmail: (payload, options) => provider(payload, options) };
     if (request === 'firebase-admin/firestore') return { FieldValue: {
       arrayUnion: value => ({ union: value }), delete: () => ({ delete: true }), serverTimestamp: () => new Date().toISOString(),
     } };
@@ -16,6 +17,7 @@ try {
     return original.call(this, request, parent, main);
   };
   ({ sendDurableEmail } = require('../lib/server/durableEmail.ts'));
+  ({ recoverDelivery, recoveryDisposition } = require('../lib/server/emailRecovery.ts'));
 } finally { Module._load = original; }
 function database(data = {}) {
   const rows = new Map([['users/u', { ...data }]]);
@@ -44,7 +46,7 @@ function database(data = {}) {
     },
   };
 }
-const options = (extra = {}) => ({ uid: 'u', dedupeKey: 'welcome', emailKey: 'welcome', payload: { to: 'u@example.com', subject: 'Hello', html: 'One', kind: 'campaign' }, ...extra });
+const options = (extra = {}) => ({ uid: 'u', dedupeKey: 'welcome', emailKey: 'welcome', retryPolicy: makeWelcomeRetryPolicy({}, false, Date.now() + 86400000), payload: { to: 'u@example.com', subject: 'Hello', html: 'One', kind: 'campaign' }, ...extra });
 test('missing consent and opted-out welcome never call provider', async () => {
   provider = async () => { throw new Error('must not send'); };
   for (const data of [{}, { emailConsent: false }, { emailConsent: true, unsubscribed: true }]) {
@@ -68,8 +70,7 @@ test('accepted provider + marker failure retries immutable payload/key, not new 
   await assert.rejects(sendDurableEmail(options()), /marker unavailable/);
   for (const [key, value] of db.rows) if (key.startsWith('emailDeliveries/')) value.leaseUntil = 0;
   await sendDurableEmail(options());
-  assert.equal(seen.length, 2);
-  assert.deepEqual(seen[0], seen[1]);
+  assert.equal(seen.length, 1); // persisted acceptance finalizes without replay
   assert.ok(seen[0].idempotencyKey);
   assert.equal(await sendDurableEmail(options()), 'already_sent');
 });
@@ -165,4 +166,143 @@ test('known suppression does not record sent or retain the account campaign lock
   assert.equal(db.rows.get('users/u').marketingEmailLease, undefined);
   const delivery = [...db.rows].find(([key]) => key.startsWith('emailDeliveries/'))[1];
   assert.equal(delivery.status, 'failed_known');
+});
+
+
+function pending() { return [...db.rows].find(([key]) => key.startsWith('emailDeliveries/')); }
+function due() { const [key, state] = pending(); state.leaseUntil = 0; state.nextAttemptAt = 0; return key.split('/')[1]; }
+test('recovery replays stored transport and key without campaign audience enrollment', async () => {
+  db = database({ emailConsent: true }); account = { email: 'u@example.com' };
+  const seen = [];
+  provider = async (payload, options) => { seen.push({ payload, options }); return { ok: false, uncertain: true, error: 'timeout' }; };
+  await assert.rejects(sendDurableEmail(options()));
+  const id = due();
+  provider = async (payload, options) => { seen.push({ payload, options }); return { ok: true, id: 'accepted' }; };
+  assert.equal(await recoverDelivery(id, true), 'sent');
+  assert.deepEqual(seen[0].payload, seen[1].payload);
+  assert.equal(seen[1].payload.from, 'Tigertest <noreply@tigertest.io>');
+  assert.equal(seen[1].options.previousUncertain, true);
+  assert.equal(await recoverDelivery('f'.repeat(64), true), 'missing');
+});
+test('ordinary rerun cannot replace stored snapshot or extend original deadline', async () => {
+  db = database({ emailConsent: true, event: 'A' });
+  provider = async () => ({ ok: false, uncertain: true, error: 'timeout' });
+  const policy = makeSnapshotRetryPolicy(db.rows.get('users/u'), { expiresAt: Date.now() + 10000 });
+  await assert.rejects(sendDurableEmail(options({ retryPolicy: policy })));
+  due(); db.rows.get('users/u').event = 'B';
+  provider = async () => { throw new Error('must not send a changed event'); };
+  const newPolicy = makeSnapshotRetryPolicy(db.rows.get('users/u'), { expiresAt: Date.now() + 86400000 });
+  assert.equal(await sendDurableEmail(options({ retryPolicy: newPolicy })), 'ineligible');
+  assert.deepEqual(pending()[1].retryPolicy, policy);
+});
+test('recovery checks current auth address and disabled status without retargeting payload', async () => {
+  for (const current of [{ email: 'changed@example.com' }, { email: 'u@example.com', disabled: true }]) {
+    db = database({ emailConsent: true });
+    provider = async () => ({ ok: false, uncertain: true, error: 'timeout' });
+    await assert.rejects(sendDurableEmail(options())); const id = due(); account = current;
+    provider = async () => { throw new Error('must not send'); };
+    assert.equal(await recoverDelivery(id, true), 'ineligible');
+  }
+  account = { email: 'u@example.com' };
+});
+test('acceptance proof settles after retention without sending, preserving a newer lock/time', async () => {
+  db = database({ emailConsent: true }); db.failSentCommit = true;
+  provider = async () => ({ ok: true, id: 'accepted' });
+  await assert.rejects(sendDurableEmail(options({ record: { emailVariants: { launch: { variant: 'v1' } } }, successTimestampPaths: ['emailVariants.launch.sentAt'] })), /marker unavailable/);
+  const id = due(); const state = pending()[1];
+  state.firstAttemptAt -= 86400000;
+  const newer = Date.now() + 1000;
+  Object.assign(db.rows.get('users/u'), { unsubscribed: true, lastEmailSent: new Date(newer), marketingEmailLease: { deliveryId: 'other', uncertain: true } });
+  provider = async () => { throw new Error('reconciliation must never send'); };
+  assert.equal(await recoverDelivery(id, false), 'reconciled');
+  assert.equal(db.rows.get('users/u').marketingEmailLease.deliveryId, 'other');
+  assert.equal(db.rows.get('users/u').lastEmailSent.getTime(), newer);
+  assert.equal(db.rows.get('users/u').emailVariants.launch.sentAt, new Date(state.providerAcceptance.acceptedAt).toISOString());
+  assert.equal(await recoverDelivery(id, false), 'not_pending');
+});
+test('invalid acceptance proof cannot bypass quarantine or cause sends', async () => {
+  for (const change of [p => p.generation++, p => p.idempotencyKey = 'wrong', p => p.fingerprint = 'wrong', p => p.id = '']) {
+    db = database({ emailConsent: true }); db.failSentCommit = true;
+    provider = async () => ({ ok: true, id: 'accepted' });
+    await assert.rejects(sendDurableEmail(options())); const id = due(); const state = pending()[1];
+    state.firstAttemptAt -= 86400000; change(state.providerAcceptance);
+    provider = async () => { throw new Error('must not send'); };
+    assert.equal(await recoverDelivery(id, true), 'expired_or_invalid_attempt');
+    assert.equal(state.status, 'sending'); // map transactions replace rows
+    assert.equal(pending()[1].status, 'quarantined');
+  }
+});
+test('legacy missing-policy attempt is held rather than assigned a fresh guard', async () => {
+  db = database({ emailConsent: true });
+  provider = async () => ({ ok: false, uncertain: true, error: 'timeout' });
+  await assert.rejects(sendDurableEmail(options({ retryPolicy: undefined })));
+  const id = due();
+  assert.equal(await sendDurableEmail(options()), 'ineligible');
+  assert.equal(await recoverDelivery(id, true), 'missing_or_invalid_retry_contract');
+});
+
+
+test('fresh invalidation never clears another delivery lease', async () => {
+  db = database({ emailConsent: true });
+  const transaction = db.runTransaction.bind(db); let first = true;
+  db.runTransaction = async fn => {
+    const result = await transaction(fn);
+    if (first) { first = false; Object.assign(db.rows.get('users/u'), { unsubscribed: true, marketingEmailLease: { deliveryId: 'newer', uncertain: true } }); }
+    return result;
+  };
+  provider = async () => { throw new Error('must not send'); };
+  assert.equal(await sendDurableEmail(options()), 'ineligible');
+  assert.equal(db.rows.get('users/u').marketingEmailLease.deliveryId, 'newer');
+});
+test('attempt cap and backoff block further provider calls while retaining uncertain claim', async () => {
+  db = database({ emailConsent: true });
+  provider = async () => ({ ok: false, uncertain: true, error: 'timeout' });
+  await assert.rejects(sendDurableEmail(options()));
+  provider = async () => { throw new Error('must not call during backoff or after cap'); };
+  assert.equal(await sendDurableEmail(options()), 'in_flight');
+  const id = due(); pending()[1].attemptCount = 8;
+  assert.equal(await recoverDelivery(id, true), 'attempt_limit');
+  assert.equal(db.rows.get('users/u').marketingEmailLease.uncertain, true);
+});
+test('normal uncertain retry rechecks auth rather than using its caller stale email', async () => {
+  db = database({ emailConsent: true }); account = { email: 'u@example.com' };
+  provider = async () => ({ ok: false, uncertain: true, error: 'timeout' });
+  await assert.rejects(sendDurableEmail(options())); due();
+  account = { email: 'changed@example.com' };
+  provider = async () => { throw new Error('must not send'); };
+  assert.equal(await sendDurableEmail(options()), 'ineligible');
+  account = { email: 'u@example.com' };
+});
+test('unchanged launch record remains fingerprint-stable across failed attempts', async () => {
+  db = database({ emailConsent: true });
+  const opts = options({ record: { emailVariants: { newTests2026: { variant: 'v1' } } }, successTimestampPaths: ['emailVariants.newTests2026.sentAt'] });
+  provider = async () => ({ ok: false, uncertain: true, error: 'timeout' });
+  await assert.rejects(sendDurableEmail(opts)); due(); const fingerprint = pending()[1].fingerprint;
+  provider = async () => ({ ok: true, id: 'launch' });
+  assert.equal(await sendDurableEmail(opts), 'sent');
+  assert.equal(pending()[1].fingerprint, fingerprint);
+  assert.equal(db.rows.get('users/u').emailVariants.newTests2026.sentAt, new Date(pending()[1].sentAt).toISOString());
+});
+
+
+test('retry deadline crossing during Auth lookup stops before provider call', async () => {
+  db = database({ emailConsent: true }); account = { email: 'u@example.com' };
+  provider = async () => ({ ok: false, uncertain: true, error: 'timeout' });
+  await assert.rejects(sendDurableEmail(options())); due();
+  const originalNow = Date.now;
+  onAuthRead = () => { Date.now = () => originalNow() + 23 * 3600000; };
+  provider = async () => { throw new Error('must not send past safe replay deadline'); };
+  try { assert.equal(await sendDurableEmail(options()), 'quarantined'); }
+  finally { Date.now = originalNow; onAuthRead = () => {}; }
+});
+
+
+test('transport receives earlier original event expiry, not a refreshed retry deadline', async () => {
+  db = database({ emailConsent: true });
+  const policy = makeWelcomeRetryPolicy({}, false, Date.now() + 3600000);
+  const deadlines = [];
+  provider = async (_payload, opts) => { deadlines.push(opts.notAfter); return { ok: false, uncertain: true, error: 'timeout' }; };
+  await assert.rejects(sendDurableEmail(options({ retryPolicy: policy }))); due();
+  await assert.rejects(sendDurableEmail(options({ retryPolicy: makeWelcomeRetryPolicy({}, false, Date.now() + 86400000) })));
+  assert.deepEqual(deadlines, [policy.expiresAt, policy.expiresAt]);
 });

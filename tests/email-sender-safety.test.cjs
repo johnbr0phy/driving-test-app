@@ -5,7 +5,7 @@ const { execFileSync } = require('node:child_process');
 const quotaPath = require.resolve('../lib/email-quota.ts');
 let reserved = 0, released = 0, exhausted = 0, allowed = true;
 require.cache[quotaPath] = { id: quotaPath, filename: quotaPath, loaded: true, exports: {
-  reserveSend: async () => { reserved++; return allowed; },
+  reserveSend: async () => { reserved++; return allowed ? { day: new Date().toISOString().slice(0, 10), id: 'test', owner: 'test' } : false; },
   releaseSend: async () => { released++; }, markQuotaExhausted: async () => { exhausted++; },
 } };
 const resendPath = require.resolve('resend');
@@ -121,4 +121,18 @@ test('provider suppression is a rejection, never a successful send or daily quot
   assert.match(result.error, /suppressed/);
   assert.equal(released, beforeReleased + 1);
   assert.equal(exhausted, beforeExhausted);
+});
+
+
+test('retry deadline is checked after quota reservation before any provider call', async () => {
+  const priorCall = call; const before = released;
+  const result = await sendEmail(payload, { previousUncertain: true, notAfter: Date.now() - 1 });
+  assert.equal(result.ok, false); assert.equal(result.uncertain, true);
+  assert.equal(call, priorCall); assert.equal(released, before);
+});
+test('known response on an uncertain replay does not release its reserved charge', async () => {
+  response = { data: null, error: { name: 'validation_error', message: 'rejected', statusCode: 422 } };
+  const before = released;
+  assert.equal((await sendEmail(payload, { previousUncertain: true })).ok, false);
+  assert.equal(released, before);
 });

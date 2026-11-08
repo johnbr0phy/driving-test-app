@@ -10,6 +10,7 @@
  */
 
 import { getAdminDb, getAdminAuth } from "@/lib/firebase-admin";
+import type { EmailRetryPolicy } from '@/lib/server/emailRetryPolicy';
 import { sendDurableEmail, type DurableOutcome } from "@/lib/server/durableEmail";
 import { EmailVoice, resolveUserExamId, voiceFor } from "@/lib/email-voice";
 import {
@@ -319,7 +320,7 @@ export async function sendCronEmail(
   record: Record<string, unknown> = {},
   /** Overrides the default noreply@ sender and Reply-To. */
   sender?: Sender,
-  safeguards: { gapMs?: number; eligible?: (data: Record<string, any>) => boolean } = {}
+  safeguards: { successTimestampPaths?: string[]; retryPolicy?: EmailRetryPolicy; gapMs?: number; eligible?: (data: Record<string, any>) => boolean } = {}
 ): Promise<CronSendOutcome> {
   try {
     return await sendDurableEmail({
@@ -328,6 +329,8 @@ export async function sendCronEmail(
       emailKey,
       record,
       gapMs: safeguards.gapMs,
+      retryPolicy: safeguards.retryPolicy,
+      successTimestampPaths: safeguards.successTimestampPaths,
       eligible: safeguards.eligible,
       payload: {
         to: email, subject, html, kind: "campaign",
@@ -366,6 +369,8 @@ export interface BatchOptions {
   eligible?: (data: Record<string, any>, user: UserDoc) => boolean;
   /** Existing time-critical campaigns explicitly retain their four-hour exception. */
   gapMs?: number;
+  successTimestampPaths?: (user: UserDoc) => string[];
+  retryPolicy?: (user: UserDoc) => EmailRetryPolicy;
 }
 
 export interface BatchResult {
@@ -398,7 +403,7 @@ export async function processBatch(opts: BatchOptions): Promise<BatchResult> {
       const html = buildHtml(template, user.uid, opts.extras?.(user) ?? {});
       const subject =
         typeof opts.subject === "function" ? opts.subject(user) : opts.subject;
-      const outcome = await sendCronEmail(user.uid, user.email, subject, html, opts.emailKey, opts.record?.(user) ?? {}, opts.sender, { gapMs: opts.gapMs, eligible: opts.eligible ? (data) => opts.eligible!(data, user) : undefined });
+      const outcome = await sendCronEmail(user.uid, user.email, subject, html, opts.emailKey, opts.record?.(user) ?? {}, opts.sender, { gapMs: opts.gapMs, successTimestampPaths: opts.successTimestampPaths?.(user), retryPolicy: opts.retryPolicy?.(user), eligible: opts.eligible ? (data) => opts.eligible!(data, user) : undefined });
       if (outcome === "sent") sent++;
       else skipped++;
     } catch (err) {

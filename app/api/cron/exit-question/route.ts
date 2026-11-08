@@ -19,6 +19,7 @@
  */
 
 import { NextRequest, NextResponse } from "next/server";
+import { makeSnapshotRetryPolicy } from "@/lib/server/emailRetryPolicy";
 import {
   buildAuthMap,
   DAY_MS,
@@ -125,6 +126,7 @@ export async function GET(req: NextRequest) {
         return exitQuestionEmail(voiceFor(exit.examId), content);
       },
       users: eligible,
+      retryPolicy: (u) => makeSnapshotRetryPolicy(u.raw, { expiresAt: exits.get(u.uid)!.exit.at + EXIT_EMAIL_MAX_DAYS * DAY_MS, campaignGate: "EXIT_QUESTION_CAMPAIGN" }),
       eligible: (fresh, user) => {
         const expected = exits.get(user.uid)?.exit;
         if (!expected || (typeof fresh.language === "string" && fresh.language !== "en")) return false;

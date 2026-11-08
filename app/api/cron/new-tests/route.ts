@@ -28,6 +28,7 @@
  */
 
 import { NextRequest, NextResponse } from "next/server";
+import { makeSnapshotRetryPolicy } from "@/lib/server/emailRetryPolicy";
 import {
   buildAuthMap,
   getEligibleUsers,
@@ -88,9 +89,11 @@ export async function GET(req: NextRequest) {
         u.voice.id === "dmv" ? pickLaunchVariant(u.uid).html() : EMAIL_TEMPLATES.newTests(u.voice),
       record: (u) =>
         u.voice.id === "dmv"
-          ? { emailVariants: { [LAUNCH_EXPERIMENT]: { variant: pickLaunchVariant(u.uid).id, sentAt: new Date().toISOString() } } }
+          ? { emailVariants: { [LAUNCH_EXPERIMENT]: { variant: pickLaunchVariant(u.uid).id } } }
           : {},
+      successTimestampPaths: (u) => u.voice.id === "dmv" ? [`emailVariants.${LAUNCH_EXPERIMENT}.sentAt`] : [],
       users: eligible,
+      retryPolicy: (u) => makeSnapshotRetryPolicy(u.raw, { expiresAt: u.lastActiveAt.getTime() + MAX_STALE_MS, campaignGate: "NEW_TESTS_CAMPAIGN" }),
       sender: JOHN_SENDER,
     });
 

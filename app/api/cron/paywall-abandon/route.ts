@@ -18,6 +18,7 @@
  */
 
 import { NextRequest, NextResponse } from "next/server";
+import { makeSnapshotRetryPolicy } from "@/lib/server/emailRetryPolicy";
 import {
   buildAuthMap,
   getEligibleUsers,
@@ -109,6 +110,7 @@ export async function GET(req: NextRequest) {
       subject: (u) => EMAIL_INBOX.paywallAbandon(u.voice, paywallName(u.lastPaywallHit!.itemId, u.lastPaywallHit!.label)).subject,
       template: (u) => EMAIL_TEMPLATES.paywallAbandon(u.voice),
       users: eligible,
+      retryPolicy: (u) => makeSnapshotRetryPolicy(u.raw, { expiresAt: Math.min(u.lastActiveAt.getTime() + maxInactiveMs(u.voice), u.lastPaywallHit!.at.getTime() + MAX_AGE_MS) }),
       gapMs: GAP_MS,
       eligible: (fresh, user) => {
         const latest = latestPaywallHit(fresh.paywallHits);

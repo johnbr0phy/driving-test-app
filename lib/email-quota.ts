@@ -16,6 +16,7 @@
  *   RESEND_TRANSACTIONAL_RESERVE  sends/day kept for transactional mail (default 40)
  */
 
+import { createHash, randomUUID } from 'crypto';
 import { getAdminDb } from "@/lib/firebase-admin";
 
 function nonNegativeInteger(value: string | undefined, fallback: number, invalid = 0): number {
@@ -65,67 +66,58 @@ function ceilingFor(kind: SendKind): number {
  * Returns false when the budget for this kind of mail is spent — the caller
  * must NOT send in that case.
  */
-export async function reserveSend(kind: SendKind): Promise<boolean> {
+export interface SendReservation { day: string; id: string; owner: string }
+export async function reserveSend(kind: SendKind, idempotencyKey?: string, previousUncertain = false): Promise<SendReservation | false> {
   const db = getAdminDb();
   const ref = db.doc(QUOTA_DOC);
   const day = utcDay();
-  const ceiling = ceilingFor(kind);
-
+  const id = createHash('sha256').update(`${day}:${idempotencyKey ?? randomUUID()}`).digest('hex');
+  const reservation = db.doc(`emailQuotaReservations/${id}`);
+  const owner = randomUUID();
   try {
-    return await db.runTransaction(async (tx) => {
-      const snap = await tx.get(ref);
-      const data = snap.data();
-      const sameDay = data?.date === day;
-      const used: number = sameDay && typeof data?.count === "number" ? data.count : 0;
-      const exhausted: boolean = sameDay ? data?.exhausted === true : false;
-
-      if (exhausted || used >= ceiling) return false;
-
+    return await db.runTransaction(async tx => {
+      const [budget, prior] = await Promise.all([tx.get(ref), tx.get(reservation)]);
+      const data = budget.data();
+      const old = prior.data();
+      if (data?.date > day) return false; // never roll a newer day backwards
+      if (old?.status === 'reserved') {
+        tx.set(reservation, { uses: (old.uses ?? 1) + 1, uncertain: old.uncertain === true || previousUncertain }, { merge: true });
+        return { day, id, owner }; // same key/day already charged, even at ceiling
+      }
+      const used = data?.date === day && typeof data.count === 'number' ? data.count : 0;
+      if ((data?.date === day && data.exhausted === true) || used >= ceilingFor(kind)) return false;
       tx.set(ref, { date: day, count: used + 1, exhausted: false }, { merge: true });
-      return true;
+      tx.set(reservation, { day, status: 'reserved', owner, uses: 1, uncertain: previousUncertain });
+      return { day, id, owner };
     });
-  } catch (err) {
-    // Fail closed. A database outage must not let marketing spend the reserve
-    // needed for receipts and account security. Durable sends remain retryable.
-    console.error("[email-quota] reserveSend failed, send deferred:", err);
-    return false;
-  }
+  } catch { return false; } // database failure must never bypass the budget
 }
 
-/** Give a reserved slot back after a send failed for a non-quota reason. */
-export async function releaseSend(): Promise<void> {
+/** Release only the original, unambiguous, unshared reservation's actual day. */
+export async function releaseSend(claim: SendReservation): Promise<void> {
   const db = getAdminDb();
   const ref = db.doc(QUOTA_DOC);
-  const day = utcDay();
-
+  const reservation = db.doc(`emailQuotaReservations/${claim.id}`);
   try {
-    await db.runTransaction(async (tx) => {
-      const snap = await tx.get(ref);
-      const data = snap.data();
-      if (data?.date !== day) return;
-      const used: number = typeof data?.count === "number" ? data.count : 0;
-      tx.set(ref, { count: Math.max(0, used - 1) }, { merge: true });
+    await db.runTransaction(async tx => {
+      const [budget, prior] = await Promise.all([tx.get(ref), tx.get(reservation)]);
+      const data = budget.data(); const old = prior.data();
+      if (old?.status !== 'reserved' || old.owner !== claim.owner || old.uses !== 1 || old.uncertain === true) return;
+      tx.set(reservation, { status: 'released' }, { merge: true });
+      if (data?.date === claim.day) tx.set(ref, { count: Math.max(0, (data.count ?? 0) - 1) }, { merge: true });
     });
-  } catch (err) {
-    console.error("[email-quota] releaseSend failed:", err);
-  }
+  } catch { /* Conservatively retain the charge. */ }
 }
 
-/**
- * Resend told us the account is out of quota. Latch it for the rest of the UTC
- * day so the remaining crons skip their sends instead of hammering a
- * guaranteed-failing API.
- */
-export async function markQuotaExhausted(): Promise<void> {
-  const db = getAdminDb();
+export async function markQuotaExhausted(claim: SendReservation): Promise<void> {
+  const db = getAdminDb(); const ref = db.doc(QUOTA_DOC);
   try {
-    await db.doc(QUOTA_DOC).set(
-      { date: utcDay(), count: DAILY_SEND_LIMIT, exhausted: true },
-      { merge: true }
-    );
-  } catch (err) {
-    console.error("[email-quota] markQuotaExhausted failed:", err);
-  }
+    await db.runTransaction(async tx => {
+      const data = (await tx.get(ref)).data();
+      if (data?.date !== claim.day) return; // late response cannot latch a new day
+      tx.set(ref, { count: DAILY_SEND_LIMIT, exhausted: true }, { merge: true });
+    });
+  } catch { /* Do not risk modifying another day's budget. */ }
 }
 
 /** Current usage, for logging and the admin view. */

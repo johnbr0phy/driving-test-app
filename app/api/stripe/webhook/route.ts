@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getStripe } from '@/lib/stripe';
 import { getAdminDb, getAdminAuth } from '@/lib/firebase-admin';
 import { sendDurableEmail } from '@/lib/server/durableEmail';
+import { makePurchaseRetryPolicy } from '@/lib/server/emailRetryPolicy';
 import { EMAIL_INBOX } from '@/lib/email-inbox';
 import { EMAIL_TEMPLATES } from '@/lib/email-templates';
 import { voiceFor, isKnownExamId } from '@/lib/email-voice';
@@ -156,6 +157,7 @@ export async function POST(request: NextRequest) {
           payload: { to: buyer.email, subject: EMAIL_INBOX.purchaseWelcome(voiceFor(fulfillment?.examId)).subject,
             replyTo: process.env.EMAIL_REPLY_TO ?? 'john@johnbrophy.net',
             html: EMAIL_TEMPLATES.purchaseWelcome(voiceFor(fulfillment?.examId)), kind: 'transactional' },
+          retryPolicy: makePurchaseRetryPolicy((await userRef.get()).data()?.subscription),
           eligible: data => data.subscription?.isPremium === true,
         });
         if (!['sent', 'already_sent'].includes(outcome)) {

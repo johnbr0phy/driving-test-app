@@ -24,6 +24,7 @@
  */
 
 import { NextRequest, NextResponse } from "next/server";
+import { makeSnapshotRetryPolicy } from "@/lib/server/emailRetryPolicy";
 import {
   buildAuthMap,
   getEligibleUsers,
@@ -76,6 +77,7 @@ export async function GET(req: NextRequest) {
       subject: SUBJECT,
       template: (u) => EMAIL_TEMPLATES.quizzesLaunch(u.voice),
       users: eligible,
+      retryPolicy: (u) => makeSnapshotRetryPolicy(u.raw, { expiresAt: u.lastActiveAt.getTime() + MAX_STALE_MS, campaignGate: "QUIZZES_CAMPAIGN" }),
       sender: JOHN_SENDER,
     });
 

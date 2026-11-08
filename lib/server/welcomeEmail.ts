@@ -1,4 +1,5 @@
 import { getAdminAuth, getAdminDb } from '@/lib/firebase-admin';
+import { makeWelcomeRetryPolicy } from '@/lib/server/emailRetryPolicy';
 import { EMAIL_TEMPLATES } from '@/lib/email-templates';
 import { EMAIL_INBOX } from '@/lib/email-inbox';
 import { voiceFor } from '@/lib/email-voice';
@@ -29,6 +30,7 @@ export async function sendWelcomeEmail(uid: string): Promise<WelcomeResult> {
         replyTo: process.env.EMAIL_REPLY_TO ?? 'john@johnbrophy.net',
         kind: teacher ? 'transactional' : 'campaign', ...(teacher ? {} : { headers: listUnsubscribeHeaders(uid) }) },
       gapMs: 24 * 60 * 60_000,
+      retryPolicy: makeWelcomeRetryPolicy(data, teacher, new Date(record.metadata.creationTime).getTime() + WELCOME_MAX_AGE_MS),
       eligible: current => teacher ? current.signupOrigin?.teacher === true : current.firstSignupExamId === examId,
     });
     if (outcome === 'sent') return { ok: true };

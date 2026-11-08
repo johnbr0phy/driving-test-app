@@ -1,0 +1,47 @@
+name: IndexNow after deploy
+
+# Tells Bing (and so ChatGPT search) about recently changed pages as soon as
+# a production deploy is live, instead of waiting for the nightly cron. Vercel
+# posts a deployment status to GitHub when a deploy finishes. No secrets: the
+# script reads the public sitemap and the public IndexNow key.
+on:
+  deployment_status:
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "Send pages whose sitemap lastmod is within this many days"
+        default: "2"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: indexnow
+  cancel-in-progress: false
+
+jobs:
+  ping:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.deployment_status.state == 'success' &&
+       github.event.deployment.environment == 'Production')
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: scripts/indexnow-recent.mjs
+          sparse-checkout-cone-mode: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # Give the production alias and edge cache a moment to serve the new build.
+      - if: github.event_name == 'deployment_status'
+        run: sleep 45
+
+      - name: Send recent pages to IndexNow
+        env:
+          INDEXNOW_DAYS: ${{ github.event.inputs.days || '2' }}
+        run: node scripts/indexnow-recent.mjs

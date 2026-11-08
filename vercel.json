@@ -45,7 +45,7 @@
       "schedule": "0 18 * * *"
     },
     {
-      "path": "/api/indexnow/ping",
+      "path": "/api/indexnow/ping?days=2",
       "schedule": "0 2 * * *"
     },
     {

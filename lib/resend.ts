@@ -76,6 +76,22 @@ export interface SendEmailPayload {
 
 export const DEFAULT_FROM = "Tigertest <noreply@tigertest.io>";
 
+/** Match nonempty {{...}} placeholders without retrying a scan at every '{'. */
+function containsUnresolvedTemplate(html: string): boolean {
+  let cursor = 0;
+  while (cursor < html.length) {
+    const start = html.indexOf("{{", cursor);
+    if (start === -1) return false;
+    const end = html.indexOf("}", start + 2);
+    if (end === -1) return false;
+    if (end > start + 2 && html[end + 1] === "}") return true;
+    // No start before this closing brace can match. Resume after it so each
+    // character is scanned at most twice, including long runs of open braces.
+    cursor = end + 1;
+  }
+  return false;
+}
+
 /**
  * Send one email, charged against the account-wide daily budget, and report the
  * true outcome. Never throws — inspect the returned SendResult.
@@ -85,7 +101,7 @@ export async function sendEmail(payload: SendEmailPayload): Promise<SendResult> 
     return { ok: false, quotaExhausted: false, error: "RESEND_API_KEY is not configured", uncertain: false };
   }
   // Refuse design fixtures and incomplete substitutions before charging quota.
-  if (/\{\{[^}]+\}\}|example\.invalid|(?:src|href)=["']asset:|\[Verified postal address/i.test(payload.html)) {
+  if (containsUnresolvedTemplate(payload.html) || /example\.invalid|(?:src|href)=["']asset:|\[Verified postal address/i.test(payload.html)) {
     return { ok: false, quotaExhausted: false, error: "Email contains unresolved template or preview content", uncertain: false };
   }
   if (payload.kind === "campaign" && !process.env.EMAIL_POSTAL_ADDRESS?.trim()) {

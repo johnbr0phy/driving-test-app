@@ -52,7 +52,7 @@ test('every contextual template uses event branding; milestone uses celebration,
     for (const [name, render] of Object.entries(EMAIL_TEMPLATES)) {
       const html = render(v);
       if (name === 'welcomeTeacher') {
-        assert.match(html, /https:\/\/www.tigertest.io\/tiger_face_03.png/);
+        assert.ok(html.includes('https://www.tigertest.io/tiger_face_03.png'));
         assert.doesNotMatch(html, /unsubscribe\?token/);
         continue;
       }

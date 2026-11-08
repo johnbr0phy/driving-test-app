@@ -6,11 +6,14 @@ import { EXAMS_V2 } from "@/lib/v2/registry";
 import { isBotRequest } from "@/lib/botUserAgent";
 import { grantAnswers, requestIp } from "@/lib/server/answerRateLimit";
 import { QUESTION_ID_RE } from "@/lib/questionQuality";
+import { pickUpdateChunks, sumPicks } from "@/lib/server/questionPickWrites";
 
 // Anonymous option picks (lib/questionPicks.ts) summed per question into
 // questionPicks/{examId}: n answers, c correct, w.{bankIndex} wrong picks,
 // and s, sc, sw.{bankIndex} for strong browsers. Nothing about the sender is stored. Shares the per-IP
 // answer budget of /api/analytics/questions, so a script cannot skew a key.
+// Writes are split by lib/server/questionPickWrites.ts to stay under
+// Firestore's 500-transforms-per-document limit.
 
 const MAX_ITEMS = 200;
 const KNOWN = new Set<string>(["dmv", ...ALL_EXAMS.map((e) => e.id), ...EXAMS_V2.map((e) => e.id)]);
@@ -33,35 +36,12 @@ export async function POST(request: NextRequest) {
   const allowed = await grantAnswers(db, `picks:${requestIp(request)}`, items.length);
   if (allowed <= 0) return NextResponse.json({ ok: true, dropped: items.length });
 
-  // Sum first, so one write covers the whole batch.
-  const sums: Record<string, { n: number; c: number; w: Record<string, number>; s: number; sc: number; sw: Record<string, number> }> = {};
-  for (const it of items.slice(0, allowed)) {
-    const q = (sums[it.q] ??= { n: 0, c: 0, w: {}, s: 0, sc: 0, sw: {} });
-    const p = String(it.p);
-    q.n++;
-    if (it.ok) q.c++;
-    const wrongPick = !it.ok && it.p >= 0;
-    if (wrongPick) q.w[p] = (q.w[p] || 0) + 1;
-    if (it.s === true) {
-      q.s++;
-      if (it.ok) q.sc++;
-      if (wrongPick) q.sw[p] = (q.sw[p] || 0) + 1;
-    }
+  // Sum first, then write in chunks: Firestore takes at most 500 increments
+  // on one document per write, and a full batch can need more.
+  const ref = db.collection("questionPicks").doc(exam);
+  const chunks = pickUpdateChunks(sumPicks(items.slice(0, allowed)), (x: number) => FieldValue.increment(x));
+  for (const update of chunks) {
+    await ref.set({ ...update, _updatedAt: new Date().toISOString() }, { merge: true });
   }
-  const inc = (x: number) => FieldValue.increment(x);
-  const update: Record<string, unknown> = {};
-  for (const [qid, q] of Object.entries(sums)) {
-    update[qid] = {
-      n: inc(q.n),
-      ...(q.c && { c: inc(q.c) }),
-      ...(Object.keys(q.w).length && { w: Object.fromEntries(Object.entries(q.w).map(([k, v]) => [k, inc(v)])) }),
-      ...(q.s && {
-        s: inc(q.s),
-        ...(q.sc && { sc: inc(q.sc) }),
-        ...(Object.keys(q.sw).length && { sw: Object.fromEntries(Object.entries(q.sw).map(([k, v]) => [k, inc(v)])) }),
-      }),
-    };
-  }
-  await db.collection("questionPicks").doc(exam).set({ ...update, _updatedAt: new Date().toISOString() }, { merge: true });
   return NextResponse.json({ ok: true });
 }

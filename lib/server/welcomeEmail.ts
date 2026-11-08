@@ -1,6 +1,7 @@
 import { getAdminAuth, getAdminDb } from '@/lib/firebase-admin';
 import { EMAIL_TEMPLATES } from '@/lib/email-templates';
-import { isKnownExamId, voiceFor } from '@/lib/email-voice';
+import { EMAIL_INBOX } from '@/lib/email-inbox';
+import { voiceFor } from '@/lib/email-voice';
 import { unsubscribeToken, listUnsubscribeHeaders } from '@/lib/unsubscribe';
 import { marketingAllowed, sendDurableEmail } from '@/lib/server/durableEmail';
 
@@ -24,7 +25,7 @@ export async function sendWelcomeEmail(uid: string): Promise<WelcomeResult> {
     .replace(/{{unsubscribeToken}}/g, teacher ? '' : unsubscribeToken(uid));
   try {
     const outcome = await sendDurableEmail({ uid, dedupeKey: WELCOME_KEY, emailKey: WELCOME_KEY,
-      payload: { to: record.email, subject: teacher || !isKnownExamId(examId) ? 'Welcome to Tigertest' : `Start your ${voiceFor(examId).shortName} practice`, html,
+      payload: { to: record.email, subject: teacher ? EMAIL_INBOX.welcomeTeacher().subject : EMAIL_INBOX.welcome(voiceFor(examId)).subject, html,
         replyTo: process.env.EMAIL_REPLY_TO ?? 'john@johnbrophy.net',
         kind: teacher ? 'transactional' : 'campaign', ...(teacher ? {} : { headers: listUnsubscribeHeaders(uid) }) },
       gapMs: 24 * 60 * 60_000,

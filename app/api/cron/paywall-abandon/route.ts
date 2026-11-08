@@ -28,6 +28,7 @@ import {
   maxInactiveMs,
 } from "@/lib/cron-email";
 import { voiceFor } from "@/lib/email-voice";
+import { EMAIL_INBOX } from "@/lib/email-inbox";
 import { EMAIL_TEMPLATES } from "@/lib/email-templates";
 import { V2_PAYWALL_PREFIX } from "@/lib/v2/premium";
 import { studyContexts, hasClassStatsAccess } from "@/lib/email-lifecycle";
@@ -105,7 +106,7 @@ export async function GET(req: NextRequest) {
     const result = await processBatch({
       label: "paywall-abandon",
       emailKey: EMAIL_KEY,
-      subject: (u) => `${paywallName(u.lastPaywallHit!.itemId, u.lastPaywallHit!.label)} is still waiting`,
+      subject: (u) => EMAIL_INBOX.paywallAbandon(u.voice, paywallName(u.lastPaywallHit!.itemId, u.lastPaywallHit!.label)).subject,
       template: (u) => EMAIL_TEMPLATES.paywallAbandon(u.voice),
       users: eligible,
       gapMs: GAP_MS,

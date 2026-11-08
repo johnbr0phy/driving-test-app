@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getStripe } from '@/lib/stripe';
 import { getAdminDb, getAdminAuth } from '@/lib/firebase-admin';
 import { sendDurableEmail } from '@/lib/server/durableEmail';
+import { EMAIL_INBOX } from '@/lib/email-inbox';
 import { EMAIL_TEMPLATES } from '@/lib/email-templates';
 import { voiceFor, isKnownExamId } from '@/lib/email-voice';
 import Stripe from 'stripe';
@@ -152,7 +153,7 @@ export async function POST(request: NextRequest) {
         const fulfillment = (await checkoutRef.get()).data();
         const outcome = await sendDurableEmail({
           uid: userId, dedupeKey: `purchase/${session.id}`, emailKey: `purchaseWelcome:${session.id}`,
-          payload: { to: buyer.email, subject: "You're in - here's what just unlocked",
+          payload: { to: buyer.email, subject: EMAIL_INBOX.purchaseWelcome(voiceFor(fulfillment?.examId)).subject,
             replyTo: process.env.EMAIL_REPLY_TO ?? 'john@johnbrophy.net',
             html: EMAIL_TEMPLATES.purchaseWelcome(voiceFor(fulfillment?.examId)), kind: 'transactional' },
           eligible: data => data.subscription?.isPremium === true,

@@ -63,10 +63,11 @@ test('cron authorization, once-account marker, frequency cap and shared sender r
   assert.equal(audienceCalls, 1);
   assert.equal(batch.emailKey, 'superAmazingUnlocked');
   assert.equal(batch.label, 'super-amazing');
-  assert.equal(batch.subject, 'You unlocked Super Amazing Mode 🎉');
+  assert.equal(typeof batch.subject, 'function');
   assert.deepEqual(batch.users.map((user) => user.uid), ['dmv', 'ccma', 'sat', 'variant', 'four-hours', 'older-ccma']);
   const ccma = batch.users.find((user) => user.uid === 'ccma');
   assert.equal(ccma.examId, 'ccma');
+  assert.equal(batch.subject(ccma), 'CCMA: Super Amazing Mode unlocked');
   assert.match(batch.template(ccma), /\/ccma\/dashboard\?/);
   assert.doesNotMatch(batch.template(ccma), /DMV|questionCount/);
 });

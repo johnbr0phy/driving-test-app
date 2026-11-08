@@ -33,10 +33,11 @@ import {
   DAY_MS,
   JOHN_SENDER,
 } from "@/lib/cron-email";
+import { EMAIL_INBOX } from "@/lib/email-inbox";
 import { EMAIL_TEMPLATES } from "@/lib/email-templates";
 
 const EMAIL_KEY = "quizzesLaunch2026";
-const SUBJECT = "Turn anything into a practice test";
+const SUBJECT = EMAIL_INBOX.quizzesLaunch().subject;
 const INCLUDE_LEGACY = process.env.INCLUDE_LEGACY_CONSENT === "true";
 const MIN_ACCOUNT_AGE_MS = 7 * DAY_MS;
 const MAX_STALE_MS = 365 * DAY_MS;

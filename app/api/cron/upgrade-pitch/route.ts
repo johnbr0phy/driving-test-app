@@ -28,6 +28,7 @@ import {
   maxInactiveMs,
 } from "@/lib/cron-email";
 import { withStudyContext } from "@/lib/email-lifecycle";
+import { EMAIL_INBOX } from "@/lib/email-inbox";
 import { EMAIL_TEMPLATES } from "@/lib/email-templates";
 
 const EMAIL_KEY = "upgradePitch";
@@ -65,7 +66,7 @@ export async function GET(req: NextRequest) {
     const result = await processBatch({
       label: "upgrade-pitch",
       emailKey: EMAIL_KEY,
-      subject: "You're doing the work 💪",
+      subject: EMAIL_INBOX.upgradePitch().subject,
       template: (u) => EMAIL_TEMPLATES.upgradePitch(u.voice),
       users: eligible,
       eligible: (fresh, user) => {

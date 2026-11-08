@@ -24,6 +24,7 @@ import {
 } from "@/lib/cron-email";
 import { withStudyContext } from "@/lib/email-lifecycle";
 import { EXAMS_V2 } from "@/lib/v2/registry";
+import { EMAIL_INBOX } from "@/lib/email-inbox";
 import { EMAIL_TEMPLATES } from "@/lib/email-templates";
 
 const EMAIL_KEY = "secondTestNudge";
@@ -64,7 +65,7 @@ export async function GET(req: NextRequest) {
     const result = await processBatch({
       label: "second-test-nudge",
       emailKey: EMAIL_KEY,
-      subject: "Nice work on your practice test",
+      subject: (u) => EMAIL_INBOX.secondTestNudge(u.voice).subject,
       template: (u) => EMAIL_TEMPLATES.secondTestNudge(u.voice),
       users: eligible,
       eligible: (fresh, user) => {

@@ -21,6 +21,7 @@ import {
   emailedRecently,
   maxInactiveMs,
 } from "@/lib/cron-email";
+import { EMAIL_INBOX } from "@/lib/email-inbox";
 import { EMAIL_TEMPLATES } from "@/lib/email-templates";
 import { voiceFor } from "@/lib/email-voice";
 import { recentSuperAmazingUnlock } from "@/lib/super-amazing-email";
@@ -57,7 +58,7 @@ export async function GET(req: NextRequest) {
     const result = await processBatch({
       label: "super-amazing",
       emailKey: EMAIL_KEY,
-      subject: "You unlocked Super Amazing Mode 🎉",
+      subject: (u) => EMAIL_INBOX.superAmazingUnlocked(u.voice).subject,
       template: (u) => EMAIL_TEMPLATES.superAmazingUnlocked(u.voice),
       users: eligible,
       gapMs: GAP_MS,

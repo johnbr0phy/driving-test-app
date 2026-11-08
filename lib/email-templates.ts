@@ -4,6 +4,7 @@
 // tiger and light theme, a 560px white card, and a neutral unknown-exam fallback.
 // Tables and inline styles keep the layout usable in email clients.
 
+import { EMAIL_INBOX, exitQuestionInbox, emailPreheader } from "@/lib/email-inbox";
 import { postalFooterLine } from "@/lib/emailPostal";
 import { EmailVoice, dashboardUrl, statsUrl } from "@/lib/email-voice";
 import { TEST_REQUEST_PICKS } from "@/lib/test-requests";
@@ -14,6 +15,8 @@ import { EXAMS_V2 } from "@/lib/v2/registry";
 interface ShellOptions {
   /** <title>, used by some clients as the preview label. */
   title: string;
+  /** Text shown beside the subject in supporting inboxes. */
+  preheader: string;
   voice?: EmailVoice;
   expression?: TigerExpression;
   eyebrow?: string;
@@ -62,7 +65,7 @@ export function signoff(lead = "Good luck,"): string {
 }
 
 function emailShell({
-  title, heading, body, voice, expression = 3,
+  title, preheader, heading, body, voice, expression = 3,
   eyebrow = "YOUR NEXT STUDY STEP", unsubscribe = true,
 }: ShellOptions): string {
   const brand = emailBrand(voice?.id, expression);
@@ -80,6 +83,7 @@ function emailShell({
 <style>@media only screen and (max-width: 480px) { .email-body { padding: 22px 20px 26px !important; } .email-heading { font-size: 27px !important; } }</style>
 </head>
 <body style="margin: 0; padding: 0; background-color: ${brand.light}; font-family: Arial, Helvetica, sans-serif;">
+${emailPreheader(preheader)}
 <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background-color: ${brand.light};"><tr><td align="center" style="padding: 30px 12px;">
 <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="width: 100%; max-width: 560px; background-color: #ffffff; border: 1px solid ${brand.border}; border-radius: 18px; overflow: hidden;">
 <tr><td align="center" style="padding: 28px 28px 12px;">
@@ -128,9 +132,6 @@ ${rows.join("\n")}
 const DASH = (v: EmailVoice, campaign: string) => dashboardUrl(v, campaign);
 const STATS = (v: EmailVoice, campaign: string) => statsUrl(v, campaign);
 
-/** "your DMV test" in the DMV voice, "your citizenship test" elsewhere. */
-const your = (v: EmailVoice) => `your ${v.testName}`;
-
 export type EmailTemplate = (voice: EmailVoice) => string;
 
 export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
@@ -139,7 +140,8 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
     emailShell({
       eyebrow: "WELCOME TO TIGERTEST",
       voice: v,
-      title: "Welcome to Tigertest",
+      title: EMAIL_INBOX.welcome(v).subject,
+      preheader: EMAIL_INBOX.welcome(v).preheader,
       heading: v.id === "unknown" ? "Choose your next practice test." : `Start with one ${v.shortName} practice test.`,
       body: [
         p("{{greeting}}"),
@@ -158,7 +160,8 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
   welcomeTeacher: () =>
     emailShell({
       eyebrow: "YOUR TEACHER ACCOUNT",
-      title: "Welcome to Tigertest",
+      title: EMAIL_INBOX.welcomeTeacher().subject,
+      preheader: EMAIL_INBOX.welcomeTeacher().preheader,
       heading: "Welcome to Tigertest",
       unsubscribe: false,
       body: [
@@ -181,7 +184,8 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
   firstTestReminder: (v) =>
     emailShell({
       voice: v,
-      title: "Try a full practice test",
+      title: EMAIL_INBOX.firstTestReminder(v).subject,
+      preheader: EMAIL_INBOX.firstTestReminder(v).preheader,
       heading: "Choose your next study step.",
       body: [
         p("You have started practising. A full test can help you choose what to study next."),
@@ -196,7 +200,8 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
   secondTestNudge: (v) =>
     emailShell({
       voice: v,
-      title: "Choose your next study step",
+      title: EMAIL_INBOX.secondTestNudge(v).subject,
+      preheader: EMAIL_INBOX.secondTestNudge(v).preheader,
       heading: "Choose your next study step.",
       body: [
         p("Your practice result is a starting point, not an official score."),
@@ -212,7 +217,8 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
   paywallAbandon: (v) =>
     emailShell({
       voice: v,
-      title: "{{paywallName}} is still waiting",
+      title: EMAIL_INBOX.paywallAbandon(v).subject,
+      preheader: EMAIL_INBOX.paywallAbandon(v).preheader,
       heading: "Take another look at {{paywallName}}",
       body: [
         p(
@@ -227,7 +233,7 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
           "Every question you miss, on repeat",
           "Full stats on exams where these require Premium",
         ]),
-        cta(DASH(v, "paywall_abandon"), "Pick Up Where You Left Off"),
+        cta(DASH(v, "paywall_abandon"), "Open DMV Practice"),
         p("Check the current price and payment details at checkout."),
         signoff(),
       ].join("\n"),
@@ -237,7 +243,8 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
   upgradePitch: (v) =>
     emailShell({
       voice: v,
-      title: "You're serious about this - here's what unlocks next",
+      title: EMAIL_INBOX.upgradePitch().subject,
+      preheader: EMAIL_INBOX.upgradePitch().preheader,
       heading: "You're doing the work 💪",
       body: [
         p(
@@ -252,7 +259,7 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
           "Your stats page, showing what you always get wrong",
           "Full stats on other exams where Premium is required",
         ]),
-        cta(DASH(v, "upgrade_pitch"), "See Premium Options"),
+        cta(DASH(v, "upgrade_pitch"), "Open DMV Practice"),
         p("Check the current price and payment details at checkout."),
         signoff(),
       ].join("\n"),
@@ -269,7 +276,8 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
       eyebrow: "PURCHASE CONFIRMATION",
       expression: 1,
       voice: v,
-      title: "Your Premium access is ready",
+      title: EMAIL_INBOX.purchaseWelcome(v).subject,
+      preheader: EMAIL_INBOX.purchaseWelcome(v).preheader,
       heading: "Your Premium access is ready.",
       unsubscribe: false,
       body: [
@@ -288,13 +296,14 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
   reengagement: (v) =>
     emailShell({
       voice: v,
-      title: "Test coming up soon?",
-      heading: "Test coming up soon?",
+      title: EMAIL_INBOX.reengagement(v).subject,
+      preheader: EMAIL_INBOX.reengagement(v).preheader,
+      heading: EMAIL_INBOX.reengagement(v).subject + ".",
       body: [
         p(
           `Ready for another session? Your ${v.testName} practice is here when you need it.`,
         ),
-        p("Take one more test and see if you're still sharp."),
+        p("Choose a practice test or a shorter training session when you are ready."),
         cta(DASH(v, "reengagement"), "Continue Practicing"),
         signoff(),
       ].join("\n"),
@@ -309,7 +318,8 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
       eyebrow: "YOU EARNED THIS",
       expression: 2,
       voice: v,
-      title: "You unlocked Super Amazing Mode",
+      title: EMAIL_INBOX.superAmazingUnlocked(v).subject,
+      preheader: EMAIL_INBOX.superAmazingUnlocked(v).preheader,
       heading: "You unlocked Super Amazing Mode",
       body: [
         p(
@@ -330,20 +340,21 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
   inactiveShareRequest: (v) =>
     emailShell({
       voice: v,
-      title: "Did you pass?",
-      heading: "Did you pass?",
+      title: EMAIL_INBOX.inactiveShareRequest(v).subject,
+      preheader: EMAIL_INBOX.inactiveShareRequest(v).preheader,
+      heading: EMAIL_INBOX.inactiveShareRequest(v).subject,
       body: [
         p(
-          `How is preparation for ${your(v)} going? If you have already taken it, I would love to hear how it went.`,
+          `What helped in your ${v.testName} practice, and what could work better? Reply to let me know.`,
         ),
         p(
           `If Tigertest helped, <strong style="font-weight: 600;">please share it with a friend</strong>. It helps other learners find practice for their next test.`,
         ),
         cta(
           "https://tigertest.io/?utm_source=tigertest&utm_medium=email&utm_campaign=inactive_share",
-          "Share Tigertest.io",
+          "Visit Tigertest",
         ),
-        p("And if you haven't taken your test yet, no rush. We're still here."),
+        p("If you are still studying, your practice is here when you need it."),
         signoff("Thanks for using Tigertest,"),
       ].join("\n"),
     }),
@@ -369,7 +380,8 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
     if (v.id === "dmv") {
       return emailShell({
     voice: v,
-        title: "SAT and ACT, the Tigertest way",
+        title: EMAIL_INBOX.newTests().subject,
+      preheader: EMAIL_INBOX.newTests().preheader,
         heading: "SAT and ACT, the Tigertest way",
         body: [
           p(
@@ -395,7 +407,8 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
     const studyingSatOrAct = v.id === "sat" || v.id === "act";
     return emailShell({
     voice: v,
-      title: "What should we build next?",
+      title: EMAIL_INBOX.newTests().subject,
+      preheader: EMAIL_INBOX.newTests().preheader,
       heading: "What should we build next?",
       body: [
         p(
@@ -420,8 +433,9 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
       `<a href="${href}" style="color: #1a1a1a; font-weight: 600; text-decoration: underline;">${label}</a>`;
     return emailShell({
     voice: v,
-      title: "Turn anything into a practice test",
-      heading: "Turn anything into a practice test",
+      title: EMAIL_INBOX.quizzesLaunch().subject,
+      preheader: EMAIL_INBOX.quizzesLaunch().preheader,
+      heading: "Turn your notes into a practice quiz",
       body: [
         p(
           `Connect Tigertest to your own ChatGPT or Claude account. Add your notes, a chapter or a syllabus to a chat with Tigertest enabled, say "make this a Tigertest quiz", and you get a link to a real practice test:`,
@@ -461,7 +475,8 @@ export interface ExitQuestionContent {
   isCorrect: boolean;
 }
 
-export function exitQuestionSubject(c: ExitQuestionContent): string {
+export function exitQuestionSubject(c: ExitQuestionContent, v?: EmailVoice): string {
+  if (v) return exitQuestionInbox(v, c.isCorrect).subject;
   return c.isCorrect ? "Keep your practice going" : "A question worth another look";
 }
 
@@ -502,7 +517,8 @@ export function exitQuestionEmail(v: EmailVoice, c: ExitQuestionContent): string
   return emailShell({
     voice: v,
     eyebrow: "PICK UP YOUR PRACTICE",
-    title: exitQuestionSubject(c),
+    title: exitQuestionSubject(c, v),
+    preheader: exitQuestionInbox(v, c.isCorrect).preheader,
     heading: c.isCorrect ? `Keep your ${name}practice going.` : `A ${name}question worth another look.`,
     body: [
       p(c.isCorrect

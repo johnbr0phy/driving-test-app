@@ -1,3 +1,4 @@
+import { SERVICE_INBOX, emailPreheader } from "@/lib/email-inbox";
 import { NextRequest, NextResponse } from "next/server";
 import { getAdminDb } from "@/lib/firebase-admin";
 import { sendEmail } from "@/lib/resend";
@@ -37,7 +38,7 @@ export async function POST(request: NextRequest) {
     const confirmation = await sendEmail({
       kind: "transactional",
       to: email,
-      subject: "Thanks for your interest in Tigertest",
+      subject: SERVICE_INBOX.schoolEnquiry.subject,
       html: `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,6 +46,7 @@ export async function POST(request: NextRequest) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body style="margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; background-color: #FFF9F5;">
+  ${emailPreheader(SERVICE_INBOX.schoolEnquiry.preheader)}
   <table role="presentation" style="width: 100%; border-collapse: collapse;">
     <tr>
       <td align="center" style="padding: 40px 20px;">
@@ -61,7 +63,7 @@ export async function POST(request: NextRequest) {
                 Hey ${h(contactName)},
               </p>
               <p style="margin: 0 0 20px; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
-                Thanks for your interest in bringing Tigertest to ${h(schoolName)}. We&rsquo;ll put together a custom quote and send it your way within one business day.
+                Thanks for your interest in bringing Tigertest to ${h(schoolName)}. We received your enquiry and saved the details you sent.
               </p>
               <p style="margin: 0 0 20px; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
                 In the meantime, feel free to try Tigertest yourself. It&rsquo;s the same experience your students will get.

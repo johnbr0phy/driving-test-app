@@ -117,7 +117,7 @@ export async function GET(req: NextRequest) {
     const result = await processBatch({
       label: "exit-question",
       emailKey: EMAIL_KEY,
-      subject: (u) => exitQuestionSubject(exits.get(u.uid)!.content),
+      subject: (u) => exitQuestionSubject(exits.get(u.uid)!.content, voiceFor(exits.get(u.uid)!.exit.examId)),
       // The emails are about the exam the question came from, which can differ
       // from the person's current test.
       template: (u) => {

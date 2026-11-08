@@ -93,8 +93,8 @@ function CountriesCard({ data, selected, onSelect }: {
   onSelect: (id: CountryId | "all") => void;
 }) {
   const rows = data.countries;
-  const maxAnswers = Math.max(...rows.map((c) => c.answers30d), 1);
-  const totalAnswers = rows.reduce((n, c) => n + c.answers30d, 0);
+  const maxAnswers = Math.max(...rows.map((c) => c.answers7d), 1);
+  const totalAnswers = rows.reduce((n, c) => n + c.answers7d, 0);
   const tracked = data.countriesSince !== null;
   return (
     <Card
@@ -106,14 +106,14 @@ function CountriesCard({ data, selected, onSelect }: {
           <thead className="text-xs text-gray-500 dark:text-gray-400">
             <tr className={ROW}>
               <Th sticky>Country</Th>
-              <Th right title="Exams with any practice in 30 days, of the exams listed">Exams in use</Th>
-              <Th right>Answers, 30d</Th>
-              <Th right title="Answers in the 30 days before that">vs prior 30d</Th>
-              <Th right title="Share of all answers in 30 days">Share</Th>
+              <Th right title="Exams with any practice in 7 days, of the exams listed">Exams in use</Th>
+              <Th right>Answers, 7d</Th>
+              <Th right title="Answers in the 7 days before that">vs prior 7d</Th>
+              <Th right title="Share of all answers in 7 days">Share</Th>
               <Th right title="Distinct people per exam, summed: someone on two exams counts twice">Learners</Th>
-              <Th right title="First visits from the country, by IP, 30 days">Visitors, 30d</Th>
+              <Th right title="First visits from the country, by IP, 7 days">Visitors, 7d</Th>
               <Th right title="Accounts created from the country, by IP">Signups</Th>
-              <Th right>Revenue, 30d</Th>
+              <Th right>Revenue, 7d</Th>
             </tr>
           </thead>
           <tbody>
@@ -129,23 +129,23 @@ function CountriesCard({ data, selected, onSelect }: {
                   <td className={`py-2 px-2 ${STICKY_COL}`}>
                     <p className="font-medium text-gray-900 dark:text-gray-50 whitespace-nowrap">{c.label}</p>
                     <p className="text-[11px] text-gray-500 dark:text-gray-400 truncate max-w-[9rem] sm:max-w-[16rem]">
-                      {c.topExams.length > 0 ? c.topExams.join(", ") : "No practice in 30 days"}
+                      {(c.topExams7d ?? []).length > 0 ? c.topExams7d.join(", ") : "No practice in 7 days"}
                     </p>
                   </td>
                   <td className="py-2 px-2 text-right tabular-nums whitespace-nowrap">
-                    {fmtInt(c.activeExams)} <span className="text-gray-400">of {fmtInt(c.exams)}</span>
+                    {fmtInt(c.activeExams7d ?? 0)} <span className="text-gray-400">of {fmtInt(c.exams)}</span>
                   </td>
                   <td className="py-2 px-2 text-right">
-                    <Bar value={c.answers30d} max={maxAnswers} color={COLORS.users} label={fmtInt(c.answers30d)} />
+                    <Bar value={c.answers7d} max={maxAnswers} color={COLORS.users} label={fmtInt(c.answers7d)} />
                   </td>
                   <td className="py-2 px-2 text-right text-xs whitespace-nowrap">
-                    {c.answersPrev30d > 0 ? <Delta now={c.answers30d} prev={c.answersPrev30d} /> : <span className="text-gray-400">new</span>}
+                    {c.answersPrev7d > 0 ? <Delta now={c.answers7d} prev={c.answersPrev7d} /> : <span className="text-gray-400">new</span>}
                   </td>
-                  <td className="py-2 px-2 text-right tabular-nums">{totalAnswers > 0 ? fmtPct(c.answers30d / totalAnswers) : "n/a"}</td>
+                  <td className="py-2 px-2 text-right tabular-nums">{totalAnswers > 0 ? fmtPct(c.answers7d / totalAnswers) : "n/a"}</td>
                   <td className="py-2 px-2 text-right tabular-nums">{fmtInt(c.learners)}</td>
-                  <td className="py-2 px-2 text-right tabular-nums">{c.visitors30d === null ? <span className="text-gray-400">·</span> : fmtInt(c.visitors30d)}</td>
+                  <td className="py-2 px-2 text-right tabular-nums">{c.visitors7d == null ? <span className="text-gray-400">·</span> : fmtInt(c.visitors7d)}</td>
                   <td className="py-2 px-2 text-right tabular-nums">{c.signups === null ? <span className="text-gray-400">·</span> : fmtInt(c.signups)}</td>
-                  <td className="py-2 px-2 text-right tabular-nums">{c.revenue30dCents > 0 ? fmtDollars(c.revenue30dCents) : <span className="text-gray-400">·</span>}</td>
+                  <td className="py-2 px-2 text-right tabular-nums">{c.revenue7dCents > 0 ? fmtDollars(c.revenue7dCents) : <span className="text-gray-400">·</span>}</td>
                 </tr>
               );
             })}
@@ -155,7 +155,7 @@ function CountriesCard({ data, selected, onSelect }: {
       <p className="mt-3 text-[11px] text-gray-500 dark:text-gray-400">
         Tap a country to filter the exam table. Answers and learners are filed by the exam&apos;s country (a Canadian on the DMV test counts under the US);
         visitors and signups by the visitor&apos;s.
-        {data.otherCountryVisitors30d !== null && ` ${fmtInt(data.otherCountryVisitors30d)} first visits in 30 days came from countries with no tests of their own.`}
+        {data.otherCountryVisitors7d != null && ` ${fmtInt(data.otherCountryVisitors7d)} first visits in 7 days came from countries with no tests of their own.`}
         {!tracked && " Visitors and signups by country fill in from this release on."} Every exam sells (stats paywall), priced in the visitor&apos;s currency; revenue is in US dollars.
       </p>
     </Card>
@@ -286,16 +286,18 @@ export function OpportunitiesView({ data, onRefresh, refreshing, updating = fals
   const EXAMS_SHOWN = 12;
   const filteredExams = useMemo(() => {
     const q = query.trim().toLowerCase();
-    return data.exams.filter(
-      (e) =>
-        (country === "all" || (e.region ?? "US") === country) &&
-        (!q || e.label.toLowerCase().includes(q) || e.id.includes(q) || e.group.toLowerCase().includes(q)),
-    );
+    return data.exams
+      .filter(
+        (e) =>
+          (country === "all" || (e.region ?? "US") === country) &&
+          (!q || e.label.toLowerCase().includes(q) || e.id.includes(q) || e.group.toLowerCase().includes(q)),
+      )
+      .sort((a, b) => b.answers7d - a.answers7d || b.answers30d - a.answers30d || b.enrolled - a.enrolled);
   }, [data.exams, country, query]);
   const narrowed = country !== "all" || query.trim() !== "";
   const shownExams = showAllExams || narrowed ? filteredExams : filteredExams.slice(0, EXAMS_SHOWN);
-  const idleCount = filteredExams.filter((e) => e.answers30d === 0 && e.purchasesAll === 0).length;
-  const maxAnswers = Math.max(...data.exams.map((e) => e.answers30d), 1);
+  const idleCount = filteredExams.filter((e) => e.answers7d === 0 && e.purchasesAll === 0).length;
+  const maxAnswers = Math.max(...data.exams.map((e) => e.answers7d), 1);
   const maxRevenue = Math.max(...data.exams.map((e) => e.revenueAllCents), 1);
   const countryLabel = (id: string) => COUNTRY_SHORT[id] ?? id;
   const visits7Total = data.sources.reduce((n, x) => n + x.visits7d, 0);
@@ -375,10 +377,10 @@ export function OpportunitiesView({ data, onRefresh, refreshing, updating = fals
           subtitle={
             !narrowed && filteredExams.length > EXAMS_SHOWN ? (
               <button onClick={() => setShowAllExams((v) => !v)} className="underline underline-offset-2 hover:text-gray-800 dark:hover:text-gray-100">
-                {showAllExams ? `Show the top ${EXAMS_SHOWN}` : `Show all ${filteredExams.length} exams (${idleCount} with no practice in 30 days)`}
+                {showAllExams ? `Show the top ${EXAMS_SHOWN}` : `Show all ${filteredExams.length} exams (${idleCount} with no practice in 7 days)`}
               </button>
             ) : (
-              narrowed && `${filteredExams.length} exams, ${idleCount} with no practice in 30 days`
+              narrowed && `${filteredExams.length} exams, ${idleCount} with no practice in 7 days`
             )
           }
         >
@@ -415,10 +417,10 @@ export function OpportunitiesView({ data, onRefresh, refreshing, updating = fals
                   <Th sticky>Exam</Th>
                   <Th>Sells</Th>
                   <Th right title="Distinct people (accounts and guest browsers) with at least one answer, all time">People</Th>
-                  <Th right>Answers, 30d</Th>
-                  <Th right title="Answers in the 30 days before that">vs prior 30d</Th>
+                  <Th right>Answers, 7d</Th>
+                  <Th right title="Answers in the 7 days before that">vs prior 7d</Th>
                   <Th right title="Every answer filed under the exam since the per-exam split, history seeded from accounts">All time</Th>
-                  <Th right>Paywall views, 30d</Th>
+                  <Th right>Paywall views, 7d</Th>
                   <Th right>Purchases</Th>
                   <Th right>Revenue</Th>
                 </tr>
@@ -442,16 +444,16 @@ export function OpportunitiesView({ data, onRefresh, refreshing, updating = fals
                     </td>
                     <td className="py-2 px-2 text-right tabular-nums">{fmtInt(e.enrolled)}</td>
                     <td className="py-2 px-2 text-right">
-                      <Bar value={e.answers30d} max={maxAnswers} color={COLORS.users} label={fmtInt(e.answers30d)} />
+                      <Bar value={e.answers7d} max={maxAnswers} color={COLORS.users} label={fmtInt(e.answers7d)} />
                     </td>
                     <td className="py-2 px-2 text-right text-xs whitespace-nowrap">
-                      {e.answersPrev30d > 0 ? <Delta now={e.answers30d} prev={e.answersPrev30d} /> : <span className="text-gray-400">new</span>}
+                      {e.answersPrev7d > 0 ? <Delta now={e.answers7d} prev={e.answersPrev7d} /> : <span className="text-gray-400">new</span>}
                     </td>
                     <td className="py-2 px-2 text-right tabular-nums">{e.answersAll === undefined ? "·" : fmtInt(e.answersAll)}</td>
-                    <td className="py-2 px-2 text-right tabular-nums">{e.monetized ? fmtInt(e.paywallHits30d) : <span className="text-gray-400">·</span>}</td>
+                    <td className="py-2 px-2 text-right tabular-nums">{e.monetized ? fmtInt(e.paywallHits7d ?? 0) : <span className="text-gray-400">·</span>}</td>
                     <td className="py-2 px-2 text-right tabular-nums">
                       {fmtInt(e.purchasesAll)}
-                      {e.purchases30d > 0 && <p className="text-[11px] text-gray-500 dark:text-gray-400 whitespace-nowrap">{e.purchases30d} in 30 days</p>}
+                      {e.purchases7d > 0 && <p className="text-[11px] text-gray-500 dark:text-gray-400 whitespace-nowrap">{e.purchases7d} in 7 days</p>}
                     </td>
                     <td className="py-2 px-2 text-right">
                       {e.revenueAllCents > 0 ? (
@@ -472,7 +474,7 @@ export function OpportunitiesView({ data, onRefresh, refreshing, updating = fals
           </TableScroll>
           <p className="mt-3 text-[11px] text-gray-500 dark:text-gray-400">
             Revenue is net of refunds and lifetime. Older payments are placed by the paywall saved on their Stripe checkout. Answers per exam were split out
-            in October 2026, so most exams have no prior 30 days.
+            in October 2026, so the oldest week-on-week comparisons start then.
           </p>
         </Card>
 

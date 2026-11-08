@@ -59,20 +59,26 @@ export interface OpportunitiesPayload {
     label: string;
     exams: number;
     activeExams: number;
+    activeExams7d: number;
     answers7d: number;
+    answersPrev7d: number;
     answers30d: number;
     answersPrev30d: number;
     /** Sum of each exam's distinct people, so someone on two exams counts twice. */
     learners: number;
     /** First visits from the country (by IP), null before visit_region_* was recorded and for worldwide exams. */
     visitors30d: number | null;
+    visitors7d: number | null;
     signups: number | null;
     revenue30dCents: number;
+    revenue7dCents: number;
     revenueAllCents: number;
     topExams: string[];
+    topExams7d: string[];
   }[];
   /** First visits from countries with no tests of their own, and the day country counting began. */
   otherCountryVisitors30d: number | null;
+  otherCountryVisitors7d: number | null;
   countriesSince: string | null;
   exams: {
     id: string;
@@ -81,15 +87,19 @@ export interface OpportunitiesPayload {
     region: TestRegion;
     monetized: boolean;
     answers7d: number;
+    answersPrev7d: number;
     answers30d: number;
     answersPrev30d: number;
     answersAll: number;
     enrolled: number;
     paywallHits30d: number;
+    paywallHits7d: number;
     purchases30d: number;
+    purchases7d: number;
     purchasesAll: number;
     revenueAllCents: number;
     revenue30dCents: number;
+    revenue7dCents: number;
     potential30dCents: number | null;
   }[];
   paywalls: {
@@ -372,9 +382,11 @@ export async function buildOpportunities(
   );
   const enrolled = new Map(enrolledEntries);
   const hitsByExam = new Map<string, number>();
+  const hits7ByExam = new Map<string, number>();
   for (const [key, rec] of Object.entries(byPaywall)) {
     const exam = purchaseExam(key.split(':')[0]);
     hitsByExam.set(exam, (hitsByExam.get(exam) || 0) + w.sum(rec?.daily, 29, 0));
+    hits7ByExam.set(exam, (hits7ByExam.get(exam) || 0) + w.sum(rec?.daily, 6, 0));
   }
   const dmvAnswers30 = w.sum(byExam.dmv?.daily, 29, 0);
   const dmvRevenue30 = payments.filter((p) => p.exam === 'dmv' && inLast(p.day, 30)).reduce((n, p) => n + p.net, 0);
@@ -395,15 +407,19 @@ export async function buildOpportunities(
         region,
         monetized,
         answers7d: w.sum(daily, 6, 0),
+        answersPrev7d: w.sum(daily, 13, 7),
         answers30d,
         answersPrev30d: w.sum(daily, 59, 30),
         answersAll: Object.values(daily || {}).reduce((n, c) => n + (typeof c === 'number' ? c : 0), 0),
         enrolled: enrolled.get(id) || 0,
         paywallHits30d: hitsByExam.get(id) || 0,
+        paywallHits7d: hits7ByExam.get(id) || 0,
         purchases30d: mine.filter((p) => inLast(p.day, 30)).length,
+        purchases7d: mine.filter((p) => inLast(p.day, 7)).length,
         purchasesAll: mine.length,
         revenueAllCents: mine.reduce((n, p) => n + p.net, 0),
         revenue30dCents: mine.filter((p) => inLast(p.day, 30)).reduce((n, p) => n + p.net, 0),
+        revenue7dCents: mine.filter((p) => inLast(p.day, 7)).reduce((n, p) => n + p.net, 0),
         // What a free exam's last 30 days of practice would have earned at
         // the DMV's revenue per answer. A ceiling on demand, not a forecast.
         // US exams only: checkout is in US dollars, so other countries' exams
@@ -503,7 +519,7 @@ export async function buildOpportunities(
     .map((k) => Object.keys(steps[k]?.daily || {}).sort()[0])
     .filter(Boolean)
     .sort()[0] ?? null;
-  const countryVisits = (r: string) => (countrySince ? w.sum(steps[`visit_region_${r}`]?.daily, 29, 0) : null);
+  const countryVisits = (r: string, days = 30) => (countrySince ? w.sum(steps[`visit_region_${r}`]?.daily, days - 1, 0) : null);
   const catalogIds = new Set(TEST_CATALOG.map((t) => t.id));
   const countries = COUNTRY_ROWS.map((id) => {
     const mine = exams.filter((e) => e.region === id);
@@ -513,15 +529,20 @@ export async function buildOpportunities(
       label: COUNTRY_LABELS[id],
       exams: listed.length,
       activeExams: listed.filter((e) => e.answers30d > 0).length,
+      activeExams7d: listed.filter((e) => e.answers7d > 0).length,
       answers7d: mine.reduce((n, e) => n + e.answers7d, 0),
+      answersPrev7d: mine.reduce((n, e) => n + e.answersPrev7d, 0),
       answers30d: mine.reduce((n, e) => n + e.answers30d, 0),
       answersPrev30d: mine.reduce((n, e) => n + e.answersPrev30d, 0),
       learners: mine.reduce((n, e) => n + e.enrolled, 0),
       visitors30d: id === 'GLOBAL' ? null : countryVisits(id),
+      visitors7d: id === 'GLOBAL' ? null : countryVisits(id, 7),
       signups: id === 'GLOBAL' || countrySignupsTracked === 0 ? null : countrySignups.get(id) || 0,
       revenue30dCents: mine.reduce((n, e) => n + e.revenue30dCents, 0),
+      revenue7dCents: mine.reduce((n, e) => n + e.revenue7dCents, 0),
       revenueAllCents: mine.reduce((n, e) => n + e.revenueAllCents, 0),
       topExams: mine.filter((e) => e.answers30d > 0).slice(0, 3).map((e) => e.label),
+      topExams7d: [...mine].filter((e) => e.answers7d > 0).sort((a, b) => b.answers7d - a.answers7d).slice(0, 3).map((e) => e.label),
     };
   });
 
@@ -781,6 +802,7 @@ export async function buildOpportunities(
     },
     countries,
     otherCountryVisitors30d: countryVisits('OTHER'),
+    otherCountryVisitors7d: countryVisits('OTHER', 7),
     countriesSince: countrySince,
     exams,
     paywalls,

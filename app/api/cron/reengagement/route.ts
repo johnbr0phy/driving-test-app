@@ -18,6 +18,8 @@ import {
   verifyCronSecret,
   emailedRecently,
 } from "@/lib/cron-email";
+import { withStudyContext } from "@/lib/email-lifecycle";
+import { EXAMS_V2 } from "@/lib/v2/registry";
 import { EMAIL_TEMPLATES } from "@/lib/email-templates";
 
 const EMAIL_KEY = "reengagement";
@@ -36,7 +38,13 @@ export async function GET(req: NextRequest) {
     // Win-back: exempt from the three-day rule, bounded at 30 days instead.
     const users = await getEligibleUsers(authMap, INCLUDE_LEGACY, true);
 
-    const eligible = users.filter((u) => {
+    const contextualUsers = users.flatMap((user) => {
+      const scoped = withStudyContext(user);
+      return scoped ? [scoped] : [];
+    });
+    const matches = (u: (typeof users)[number]) => {
+      // Rebinding context must not activate an unapproved V2 campaign audience.
+      if (EXAMS_V2.some(exam => exam.id === u.examId)) return false;
       if (emailedRecently(u)) return false;      // frequency cap
       if (u.creationTime > sevenDaysAgo) return false;       // too new
       if (u.completedTests.length === 0) return false;       // never tested
@@ -53,14 +61,15 @@ export async function GET(req: NextRequest) {
       );
 
       // Must not have tested in the last 5 days
-      if (!lastTestDate || lastTestDate > fiveDaysAgo) return false;
+      if (!lastTestDate || lastTestDate > fiveDaysAgo || u.lastActiveAt > fiveDaysAgo) return false;
 
       // ...but must not be long gone either. Past a month, "your test is coming
       // up" is talking to someone who already sat it.
       if (u.lastActiveAt.getTime() < Date.now() - MAX_STALE_MS) return false;
 
       return true;
-    });
+    };
+    const eligible = contextualUsers.filter(matches);
 
     const result = await processBatch({
       label: "reengagement",
@@ -68,6 +77,13 @@ export async function GET(req: NextRequest) {
       subject: "Test coming up soon?",
       template: (u) => EMAIL_TEMPLATES.reengagement(u.voice),
       users: eligible,
+      eligible: (fresh, user) => {
+        const scoped = withStudyContext({ ...user, raw: fresh, subscription: fresh.subscription ?? {}, emailsSent: Array.isArray(fresh.emailsSent) ? fresh.emailsSent : [],
+          lastActiveAt: new Date(Math.max(user.lastActiveAt.getTime(), Date.parse(fresh.lastUpdated) || 0)),
+        });
+        return !!scoped && scoped.examId === user.examId &&
+          scoped.lastUpdated?.getTime() === user.lastUpdated?.getTime() && matches(scoped);
+      },
     });
 
     return NextResponse.json(result);

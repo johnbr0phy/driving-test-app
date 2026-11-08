@@ -24,9 +24,13 @@ import {
   processBatch,
   verifyCronSecret,
   emailedRecently,
+  latestPaywallHit,
+  maxInactiveMs,
 } from "@/lib/cron-email";
+import { voiceFor } from "@/lib/email-voice";
 import { EMAIL_TEMPLATES } from "@/lib/email-templates";
 import { V2_PAYWALL_PREFIX } from "@/lib/v2/premium";
+import { studyContexts, hasClassStatsAccess } from "@/lib/email-lifecycle";
 
 const EMAIL_KEY = "paywallAbandon";
 const INCLUDE_LEGACY = process.env.INCLUDE_LEGACY_CONSENT === "true";
@@ -73,7 +77,10 @@ export async function GET(req: NextRequest) {
     const authMap = await buildAuthMap();
     const users = await getEligibleUsers(authMap, INCLUDE_LEGACY);
 
-    const eligible = users.filter((u) => {
+    const eligible = users.map(u => ({ ...u, examId: "dmv", voice: voiceFor("dmv"),
+      questionsAnswered: studyContexts(u.raw, now).find(context => context.examId === "dmv")?.answersObserved ?? 0,
+    })).filter((u) => {
+      if (now - u.lastActiveAt.getTime() > maxInactiveMs(u.voice)) return false;
       if (!u.voice.hasPremium) return false;                 // only the DMV has paywalls
       if (u.subscription?.isPremium) return false;
       if (u.emailsSent.includes(EMAIL_KEY)) return false;
@@ -82,6 +89,11 @@ export async function GET(req: NextRequest) {
 
       const hit = u.lastPaywallHit;
       if (!hit) return false;
+      // Event identity is location + feature, not the account's mutable exam.
+      const dashboardItem = /^(set_[34]|test_[34]|drill_test_[1-4])$/.test(hit.itemId);
+      const statsItem = ["full_stats", "stats_question_list", "community_wrong_questions"].includes(hit.itemId);
+      if (statsItem && hasClassStatsAccess(u.raw, "dmv")) return false;
+      if (!((hit.location === "dashboard" && dashboardItem) || (hit.location === "stats_page" && statsItem))) return false;
       // This email is about the DMV paywalls. An SAT or ACT paywall would be
       // quoted back with DMV copy and a DMV link, so skip those.
       if (hit.itemId.startsWith(V2_PAYWALL_PREFIX)) return false;
@@ -96,6 +108,17 @@ export async function GET(req: NextRequest) {
       subject: (u) => `${paywallName(u.lastPaywallHit!.itemId, u.lastPaywallHit!.label)} is still waiting`,
       template: (u) => EMAIL_TEMPLATES.paywallAbandon(u.voice),
       users: eligible,
+      gapMs: GAP_MS,
+      eligible: (fresh, user) => {
+        const latest = latestPaywallHit(fresh.paywallHits);
+        if (latest?.location === "stats_page" && hasClassStatsAccess(fresh, "dmv")) return false;
+        const now = Date.now();
+        if (!latest || now - latest.at.getTime() < MIN_AGE_MS || now - latest.at.getTime() > MAX_AGE_MS) return false;
+        if ((studyContexts(fresh, now).find(context => context.examId === "dmv")?.answersObserved ?? 0) < MIN_QUESTIONS) return false;
+        return fresh.subscription?.isPremium !== true && !!latest &&
+          latest.key === user.lastPaywallHit?.key && latest.at.getTime() === user.lastPaywallHit.at.getTime() &&
+          latest.location === user.lastPaywallHit.location && latest.itemId === user.lastPaywallHit.itemId;
+      },
       extras: (u) => ({
         paywallName: escapeHtml(paywallName(u.lastPaywallHit!.itemId, u.lastPaywallHit!.label)),
         questionCount: u.questionsAnswered.toString(),

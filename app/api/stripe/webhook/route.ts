@@ -1,9 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getStripe } from '@/lib/stripe';
-import { getAdminDb } from '@/lib/firebase-admin';
-import { sendCronEmail, buildHtml } from '@/lib/cron-email';
+import { getAdminDb, getAdminAuth } from '@/lib/firebase-admin';
+import { sendDurableEmail } from '@/lib/server/durableEmail';
 import { EMAIL_TEMPLATES } from '@/lib/email-templates';
-import { voiceFor } from '@/lib/email-voice';
+import { voiceFor, isKnownExamId } from '@/lib/email-voice';
 import Stripe from 'stripe';
 import { purchaseExam } from '@/lib/purchaseAttribution';
 
@@ -37,8 +37,11 @@ export async function POST(request: NextRequest) {
 
   // Handle the event
   switch (event.type) {
-    case 'checkout.session.completed': {
+    case 'checkout.session.completed':
+    case 'checkout.session.async_payment_succeeded': {
       const session = event.data.object as Stripe.Checkout.Session;
+
+      if (session.payment_status !== 'paid') return NextResponse.json({ received: true, skipped: 'unpaid' });
 
       // Get user ID from metadata
       const userId = session.metadata?.userId;
@@ -53,19 +56,49 @@ export async function POST(request: NextRequest) {
       // Update user's premium status in Firestore
       const adminDb = getAdminDb();
       const userRef = adminDb.collection('users').doc(userId);
-      const userDoc = await userRef.get();
-      const existingData = userDoc.exists ? userDoc.data() || {} : {};
-
-      await userRef.set({
-        ...existingData,
-        subscription: {
-          isPremium: true,
-          purchasedAt: new Date().toISOString(),
-          stripeCustomerId: session.customer as string,
-          stripePaymentId: session.payment_intent as string,
-        },
-        lastUpdated: new Date().toISOString(),
+      const checkoutRef = adminDb.collection('fulfilledCheckouts').doc(session.id);
+      const paymentIntentId = typeof session.payment_intent === 'string' ? session.payment_intent : session.payment_intent?.id;
+      const paymentRef = adminDb.collection('payments').doc(paymentIntentId ?? session.id);
+      const location = session.metadata?.location;
+      // purchaseExam historically defaults unknown locations to DMV. Accept DMV
+      // only for explicit legacy DMV paywalls; never guess from a missing field.
+      const attributed = purchaseExam(location);
+      const knownDmv = !!location && ['training_set_4', 'practice_test_4', 'stats_page', 'full_stats', 'results_page', 'test_hub', 'drill'].includes(location);
+      const checkoutExam = attributed !== 'dmv' || knownDmv ? attributed : null;
+      const fulfillmentStatus = await adminDb.runTransaction(async tx => {
+        const [fulfilled, user, payment] = await Promise.all([tx.get(checkoutRef), tx.get(userRef), tx.get(paymentRef)]);
+        if (fulfilled.exists) {
+          if (fulfilled.data()?.userId !== userId) throw new Error('Checkout ownership mismatch');
+          return fulfilled.data()?.legacyProcessed === true ? 'legacy' : 'current';
+        }
+        const data = user.data() ?? {};
+        const paymentData = payment.data();
+        if (payment.exists && paymentData?.userId !== userId) throw new Error('Payment ownership mismatch');
+        const priorPayment = payment.exists && ['succeeded', 'refunded', 'partially_refunded'].includes(paymentData?.status);
+        const priorEntitlement = !!paymentIntentId && data.subscription?.stripePaymentId === paymentIntentId;
+        if (priorPayment || priorEntitlement) {
+          // Migration fence: the old webhook already handled this payment.
+          // Do not regrant revoked Premium, rewrite purchasedAt, or backfill a
+          // receipt whose old provider outcome cannot be established safely.
+          tx.set(checkoutRef, { userId, eventId: event.id, legacyProcessed: true,
+            stripePaymentIntentId: paymentIntentId ?? null,
+            receiptDisposition: data.emailsSent?.includes('purchaseWelcome') ? 'legacy_receipt_marked' : 'legacy_outcome_unknown_no_backfill',
+            reconciledAt: new Date().toISOString() });
+          return 'legacy';
+        }
+        const receiptExam = checkoutExam ?? (isKnownExamId(data.firstSignupExamId) ? data.firstSignupExamId : null);
+        tx.set(userRef, {
+          subscription: { isPremium: true, purchasedAt: new Date().toISOString(),
+            stripeCustomerId: typeof session.customer === 'string' ? session.customer : null,
+            stripePaymentId: typeof session.payment_intent === 'string' ? session.payment_intent : null },
+          lastUpdated: new Date().toISOString(),
+        }, { merge: true });
+        tx.set(checkoutRef, { userId, eventId: event.id, examId: receiptExam, checkoutExamId: checkoutExam,
+          examSource: checkoutExam ? 'stripe_checkout_location' : receiptExam ? 'first_signup' : 'unknown',
+          fulfilledAt: new Date().toISOString() });
+        return 'current';
       });
+      if (fulfillmentStatus === 'legacy') return NextResponse.json({ received: true, skipped: 'legacy_processed' });
 
       // What Stripe settled in dollars, for /admin revenue when the buyer paid
       // in another currency (lib/pricing.ts). Best-effort: a failed lookup
@@ -85,8 +118,9 @@ export async function POST(request: NextRequest) {
       }
 
       // Create payment record for audit trail
-      const paymentRef = adminDb.collection('payments').doc(session.payment_intent as string);
-      await paymentRef.set({
+      await adminDb.runTransaction(async tx => {
+        if ((await tx.get(paymentRef)).exists) return;
+        tx.set(paymentRef, {
         userId,
         stripeCustomerId: session.customer,
         stripeSessionId: session.id,
@@ -99,32 +133,36 @@ export async function POST(request: NextRequest) {
         email: session.metadata?.email || session.customer_email,
         // What the buyer paid from, for revenue by exam and paywall on the /admin Today tab.
         location: session.metadata?.location || null,
-        exam: purchaseExam(session.metadata?.location),
+        exam: checkoutExam,
         // The English paywall test's variant (lib/paywallTest.ts), when the buyer saw it.
         paywallVariant: session.metadata?.paywallVariant || null,
         createdAt: new Date().toISOString(),
+        });
       });
 
       console.log(
         `Premium activated for user ${userId} (location ${session.metadata?.location || 'none'}, paywall ${session.metadata?.paywallVariant || 'none'})`
       );
 
-      // Tell the buyer what they just unlocked. Best-effort: a mail failure must
-      // never fail the webhook, or Stripe will retry a purchase we already
-      // granted.
+      // This receipt is service mail: consent, campaign spacing and campaign
+      // budget do not apply. Retries keep the session's immutable payload.
       try {
-        const buyerEmail = session.metadata?.email || session.customer_email;
-        if (buyerEmail) {
-          await sendCronEmail(
-            userId,
-            buyerEmail,
-            "You're in - here's what just unlocked",
-            buildHtml(EMAIL_TEMPLATES.purchaseWelcome(voiceFor(purchaseExam(session.metadata?.location))), userId),
-            "purchaseWelcome"
-          );
+        const buyer = await getAdminAuth().getUser(userId);
+        if (!buyer.email) throw new Error('Buyer account has no email');
+        const fulfillment = (await checkoutRef.get()).data();
+        const outcome = await sendDurableEmail({
+          uid: userId, dedupeKey: `purchase/${session.id}`, emailKey: `purchaseWelcome:${session.id}`,
+          payload: { to: buyer.email, subject: "You're in - here's what just unlocked",
+            replyTo: process.env.EMAIL_REPLY_TO ?? 'john@johnbrophy.net',
+            html: EMAIL_TEMPLATES.purchaseWelcome(voiceFor(fulfillment?.examId)), kind: 'transactional' },
+          eligible: data => data.subscription?.isPremium === true,
+        });
+        if (!['sent', 'already_sent'].includes(outcome)) {
+          throw new Error(`Receipt pending reconciliation: ${outcome}`);
         }
       } catch (mailErr) {
-        console.error(`[webhook] purchase-welcome email failed for ${userId}:`, mailErr);
+        console.error(`[webhook] receipt pending for ${session.id}:`, mailErr);
+        return NextResponse.json({ error: 'Receipt pending; retry required' }, { status: 503 });
       }
       break;
     }

@@ -18,10 +18,15 @@
 
 import { getAdminDb } from "@/lib/firebase-admin";
 
-export const DAILY_SEND_LIMIT = Number(process.env.RESEND_DAILY_LIMIT ?? 100);
-export const TRANSACTIONAL_RESERVE = Number(
-  process.env.RESEND_TRANSACTIONAL_RESERVE ?? 40
-);
+function nonNegativeInteger(value: string | undefined, fallback: number, invalid = 0): number {
+  if (value === undefined) return fallback;
+  const n = Number(value);
+  return Number.isSafeInteger(n) && n >= 0 ? n : invalid;
+}
+export const DAILY_SEND_LIMIT = nonNegativeInteger(process.env.RESEND_DAILY_LIMIT, 100);
+export const TRANSACTIONAL_RESERVE = process.env.RESEND_TRANSACTIONAL_RESERVE === undefined
+  ? 40
+  : nonNegativeInteger(process.env.RESEND_TRANSACTIONAL_RESERVE, DAILY_SEND_LIMIT, DAILY_SEND_LIMIT);
 
 /** What campaign crons are collectively allowed to spend per day. */
 export const CAMPAIGN_BUDGET = Math.max(0, DAILY_SEND_LIMIT - TRANSACTIONAL_RESERVE);
@@ -80,10 +85,10 @@ export async function reserveSend(kind: SendKind): Promise<boolean> {
       return true;
     });
   } catch (err) {
-    // A Firestore hiccup must not silently disable email. Log and allow the
-    // send — Resend's own limit is still the backstop.
-    console.error("[email-quota] reserveSend failed, allowing send:", err);
-    return true;
+    // Fail closed. A database outage must not let marketing spend the reserve
+    // needed for receipts and account security. Durable sends remain retryable.
+    console.error("[email-quota] reserveSend failed, send deferred:", err);
+    return false;
   }
 }
 

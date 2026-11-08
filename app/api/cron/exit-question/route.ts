@@ -36,6 +36,7 @@ import { states as STATES } from "@/data/states";
 import { COMMUNITY_DMV_KEY } from "@/lib/communityStats";
 import { classQuestionLookup } from "@/lib/server/classQuestions";
 import { isInternalEmail } from "@/lib/internal";
+import { eventTime } from "@/lib/email-lifecycle";
 
 export const maxDuration = 300;
 
@@ -88,6 +89,10 @@ export async function GET(req: NextRequest) {
 
       const exit = findAccountExit(u.raw, { examOf, passPctOf });
       if (!exit) return false;
+      // V2 has no per-answer timestamps, so it cannot provide this question.
+      // A newer V2 save still proves the account moved on. Do not reuse an
+      // older v1 question as though it were the latest study activity.
+      if ((eventTime(u.raw.v2?.updatedAt) ?? 0) > exit.at) return false;
       const quiet = now - exit.at;
       if (quiet < EXIT_EMAIL_MIN_DAYS * DAY_MS || quiet > EXIT_EMAIL_MAX_DAYS * DAY_MS) return false;
 
@@ -120,6 +125,17 @@ export async function GET(req: NextRequest) {
         return exitQuestionEmail(voiceFor(exit.examId), content);
       },
       users: eligible,
+      eligible: (fresh, user) => {
+        const expected = exits.get(user.uid)?.exit;
+        if (!expected || (typeof fresh.language === "string" && fresh.language !== "en")) return false;
+        const current = findAccountExit(fresh, { examOf, passPctOf });
+        if (!current || current.examId !== expected.examId || current.questionId !== expected.questionId ||
+          current.at !== expected.at || current.isCorrect !== expected.isCorrect) return false;
+        const latestSave = Math.max(eventTime(fresh.lastUpdated) ?? 0, eventTime(fresh.v2?.updatedAt) ?? 0);
+        if (latestSave > user.lastActiveAt.getTime() || (eventTime(fresh.v2?.updatedAt) ?? 0) > current.at) return false;
+        const quiet = Date.now() - current.at;
+        return quiet >= EXIT_EMAIL_MIN_DAYS * DAY_MS && quiet <= EXIT_EMAIL_MAX_DAYS * DAY_MS;
+      },
       record: (u) => {
         const { exit } = exits.get(u.uid)!;
         return { exitQuestionEmail: { examId: exit.examId, questionId: exit.questionId, isCorrect: exit.isCorrect } };

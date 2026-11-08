@@ -17,6 +17,8 @@ import {
   verifyCronSecret,
   emailedRecently,
 } from "@/lib/cron-email";
+import { withStudyContext } from "@/lib/email-lifecycle";
+import { EXAMS_V2 } from "@/lib/v2/registry";
 import { EMAIL_TEMPLATES } from "@/lib/email-templates";
 
 const EMAIL_KEY = "inactiveShareRequest";
@@ -34,7 +36,13 @@ export async function GET(req: NextRequest) {
     // Win-back: exempt from the three-day rule, bounded at 45 days instead.
     const users = await getEligibleUsers(authMap, INCLUDE_LEGACY, true);
 
-    const eligible = users.filter((u) => {
+    const contextualUsers = users.flatMap((user) => {
+      const scoped = withStudyContext(user);
+      return scoped ? [scoped] : [];
+    });
+    const matches = (u: (typeof users)[number]) => {
+      // Rebinding context must not activate an unapproved V2 campaign audience.
+      if (EXAMS_V2.some(exam => exam.id === u.examId)) return false;
       if (emailedRecently(u)) return false;      // frequency cap
       if (u.completedTests.length === 0) return false;         // never tested
       if (u.emailsSent.includes(EMAIL_KEY)) return false;      // already sent
@@ -49,7 +57,7 @@ export async function GET(req: NextRequest) {
         null
       );
 
-      const lastActivity = [lastTestDate, u.lastUpdated]
+      const lastActivity = [lastTestDate, u.lastUpdated, u.lastActiveAt]
         .filter((d): d is Date => d instanceof Date)
         .reduce((a, b) => (a > b ? a : b), new Date(0));
 
@@ -60,7 +68,8 @@ export async function GET(req: NextRequest) {
       if (lastActivity.getTime() < Date.now() - MAX_STALE_MS) return false;
 
       return true;
-    });
+    };
+    const eligible = contextualUsers.filter(matches);
 
     const result = await processBatch({
       label: "inactive-share-request",
@@ -68,6 +77,13 @@ export async function GET(req: NextRequest) {
       subject: "Did you pass?",
       template: (u) => EMAIL_TEMPLATES.inactiveShareRequest(u.voice),
       users: eligible,
+      eligible: (fresh, user) => {
+        const scoped = withStudyContext({ ...user, raw: fresh, subscription: fresh.subscription ?? {}, emailsSent: Array.isArray(fresh.emailsSent) ? fresh.emailsSent : [],
+          lastActiveAt: new Date(Math.max(user.lastActiveAt.getTime(), Date.parse(fresh.lastUpdated) || 0)),
+        });
+        return !!scoped && scoped.examId === user.examId &&
+          scoped.lastUpdated?.getTime() === user.lastUpdated?.getTime() && matches(scoped);
+      },
     });
 
     return NextResponse.json(result);

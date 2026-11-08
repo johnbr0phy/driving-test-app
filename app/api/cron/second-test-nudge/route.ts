@@ -20,7 +20,10 @@ import {
   processBatch,
   verifyCronSecret,
   emailedRecently,
+  maxInactiveMs,
 } from "@/lib/cron-email";
+import { withStudyContext } from "@/lib/email-lifecycle";
+import { EXAMS_V2 } from "@/lib/v2/registry";
 import { EMAIL_TEMPLATES } from "@/lib/email-templates";
 
 const EMAIL_KEY = "secondTestNudge";
@@ -36,7 +39,14 @@ export async function GET(req: NextRequest) {
     const authMap = await buildAuthMap();
     const users = await getEligibleUsers(authMap, INCLUDE_LEGACY);
 
-    const eligible = users.filter((u) => {
+    const contextualUsers = users.flatMap((user) => {
+      const scoped = withStudyContext(user);
+      return scoped ? [scoped] : [];
+    });
+    const matches = (u: (typeof users)[number]) => {
+      if (Date.now() - u.lastActiveAt.getTime() > maxInactiveMs(u.voice)) return false;
+      // V2 retains only 40 results: absence/one result cannot establish a first.
+      if (EXAMS_V2.some(e => e.id === u.examId)) return false;
       if (emailedRecently(u)) return false;      // frequency cap
       if (u.completedTests.length !== 1) return false;       // needs exactly 1 test done
       if (u.emailsSent.includes(EMAIL_KEY)) return false;    // already sent
@@ -45,17 +55,25 @@ export async function GET(req: NextRequest) {
       // (wide window to avoid missing anyone due to cron timing drift)
       const test = u.completedTests[0];
       const completedAt = test?.completedAt ? new Date(test.completedAt) : null;
-      if (!completedAt || completedAt < twoDaysAgo) return false;
+      if (!completedAt || completedAt < twoDaysAgo || completedAt.getTime() > Date.now() - 24 * 60 * 60 * 1000) return false;
 
       return true;
-    });
+    };
+    const eligible = contextualUsers.filter(matches);
 
     const result = await processBatch({
       label: "second-test-nudge",
       emailKey: EMAIL_KEY,
-      subject: "Nice work on test #1!",
+      subject: "Nice work on your practice test",
       template: (u) => EMAIL_TEMPLATES.secondTestNudge(u.voice),
       users: eligible,
+      eligible: (fresh, user) => {
+        const scoped = withStudyContext({ ...user, raw: fresh, subscription: fresh.subscription ?? {}, emailsSent: Array.isArray(fresh.emailsSent) ? fresh.emailsSent : [],
+          lastActiveAt: new Date(Math.max(user.lastActiveAt.getTime(), Date.parse(fresh.lastUpdated) || 0)),
+        });
+        return !!scoped && scoped.examId === user.examId &&
+          scoped.lastUpdated?.getTime() === user.lastUpdated?.getTime() && matches(scoped);
+      },
     });
 
     return NextResponse.json(result);

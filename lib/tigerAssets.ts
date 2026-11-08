@@ -40,6 +40,8 @@ export const TIGER_EXAM_IDS = [
   "nhie", "nptepta",
   // Reviewed next-20 batch C dietitian and human resources role mascots.
   "rdexam", "phr",
+  // Reviewed EU citizenship and practitioner mascots: five complete sets for six exams.
+  "semedb", "dkindfoed", "grcitizen", "rorezid", "deheilpr",
 ] as const;
 
 export type TigerExpression = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
@@ -68,24 +70,29 @@ const BORROWED_SETS: Record<string, string> = {
   esdgt: "driving", ptimt: "driving", bedriving: "driving", dkteori: "driving", setrafik: "driving", fitheory: "driving", grdriving: "driving", rodrpciv: "driving", hukresz: "driving", mttheory: "driving", detheorie: "driving",
   // Spain (Nov 2026): CAP the CDL tiger, police exams the police tiger, vigilante the security tiger.
   escapcond: "cdl", espolicia: "police", esguardia: "police", esvigilante: "security",
-  // Germany (Nov 2026): motorcycle the motorcycle tiger, AEVO the teaching tiger, 34a the security tiger, Heilpraktiker the clinical tiger.
-  demotorrad: "moto", deaevo: "praxisplt", de34a: "security", deheilpr: "nclex",
+  // Germany (Nov 2026): motorcycle the motorcycle tiger, AEVO the teaching tiger, 34a the security tiger.
+  // Heilpraktiker has its own non-physician practitioner set above.
+  demotorrad: "moto", deaevo: "praxisplt", de34a: "security",
   // Portugal (Nov 2026): motorcycle the motorcycle tiger, CAM the CDL tiger, TVDE the car tiger, vigilante the security tiger.
   ptmoto: "moto", ptcam: "cdl", pttvde: "driving", ptvigil: "security",
   // Malta (Nov 2026): motorcycle the motorcycle tiger, CPC the CDL tiger, taxi the car tiger, guard the security tiger.
   mtmoto: "moto", mtcpc: "cdl", mttaxi: "driving", mtguard: "security",
-  // Sweden (Nov 2026): motorcycle the motorcycle tiger, jägarexamen the hunter tiger, citizenship the Life in the UK tiger, högskoleprovet the SAT tiger.
-  semoto: "moto", sejakt: "hunter", semedb: "uklitu", sehp: "sat",
-  // Denmark (Nov 2026): motorcycle the motorcycle tiger, hunting the hunter tiger, citizenship and residence the civics tiger.
-  dkmoto: "moto", dkjagt: "hunter", dkindfoed: "civics", dkmedborger: "civics",
+  // Sweden (Nov 2026): motorcycle the motorcycle tiger, jägarexamen the hunter tiger, högskoleprovet the SAT tiger.
+  // Swedish citizenship has its own flag and civic-study set above.
+  semoto: "moto", sejakt: "hunter", sehp: "sat",
+  // Denmark (Nov 2026): motorcycle the motorcycle tiger, hunting the hunter tiger.
+  // Citizenship and residence share the reviewed Danish flag and civic-study set.
+  dkmoto: "moto", dkjagt: "hunter", dkmedborger: "dkindfoed",
   // Finland (Nov 2026): motorcycle the motorcycle tiger, truck and bus the CDL tiger, hygiene passport the UK food hygiene tiger, hunting the hunter tiger.
   fimoto: "moto", fitruck: "cdl", fihygiene: "ukfood", fihunt: "hunter",
   // Hungary (Nov 2026): motorcycle the motorcycle tiger, GKI the CDL tiger, first aid the CPR tiger, insurance the life and health insurance tiger.
   hukreszmoto: "moto", hugki: "cdl", huelsoseg: "cpr", hubizt: "insurance",
-  // Romania (Nov 2026): Driver CPC the CDL tiger, taxi the car tiger, medicine admission the SAT tiger, Rezidențiat the NCLEX tiger.
-  rocpi: "cdl", rotaxi: "driving", roadmed: "sat", rorezid: "nclex",
-  // Greece (Nov 2026): motorcycle the motorcycle tiger, citizenship the US civics tiger, security the security guard tiger.
-  grmoto: "moto", grcitizen: "civics", grsecurity: "security", grinsure: "insurance",
+  // Romania (Nov 2026): Driver CPC the CDL tiger, taxi the car tiger, medicine admission the SAT tiger.
+  // Rezidențiat has its own medical-resident set above, without nursing insignia.
+  rocpi: "cdl", rotaxi: "driving", roadmed: "sat",
+  // Greece (Nov 2026): motorcycle the motorcycle tiger, security the security guard tiger.
+  // Greek citizenship has its own flag and civic-study set above.
+  grmoto: "moto", grsecurity: "security", grinsure: "insurance",
   // Belgium (Nov 2026): motorcycle the motorcycle tiger, truck the CDL tiger, medicine admission the SAT tiger, insurance the life and health insurance tiger.
   bemoto: "moto", bevracht: "cdl", betoelating: "sat", befsmavz: "insurance",
   // Bank exams wear the IBPS PO tiger; state police exams the police tiger.
@@ -148,3 +155,4 @@ export function getTigerAsset(examId = "dmv", expression?: TigerExpression): str
   }
   return getSiteTigerAsset(expression);
 }
+

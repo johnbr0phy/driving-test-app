@@ -13,7 +13,7 @@ Q = [
  "The left lane has slow traffic", ["The right lane is empty", "You are driving at the speed limit", "You will exit in 5 km"],
  "You may use the centre lane when slower vehicles occupy the left-hand lane."),
 ("On a three-lane carriageway, the outer right-hand lane is for:",
- "Overtaking and emergencies", ["Heavy vehicles only", "Cars going at the limit", "Vehicles about to exit"],
+ "Overtaking, emergency vehicles", ["Heavy vehicles only", "Cars going at the limit", "Vehicles about to exit"],
  "The outer lane is for overtaking and for emergency vehicles only."),
 ("On which side do you normally overtake?",
  "The right", ["The left", "Either side", "The side with more room"],

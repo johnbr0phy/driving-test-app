@@ -39,7 +39,7 @@ Q = [
 ("After a fall, which finding should make you suspect internal bleeding?",
  "Shock, no wound seen", ["A small graze on a knee", "An itchy red rash", "Normal colour and pulse"],
  "Signs of shock with no visible blood loss suggest bleeding inside the body. Call 000, lie the person down and keep them warm."),
-("Part of the bowel is showing through an abdominal wound. What should you do?",
+("Loops of bowel are showing through an abdominal wound. What should you do?",
  "Cover, don't push back", ["Push them back inside", "Wash them in tap water", "Leave them uncovered"],
  "Cover the wound with a large moist or non-stick dressing, do not push organs back in, and call 000."),
 ("You prick your finger on a used needle. What should you do first?",

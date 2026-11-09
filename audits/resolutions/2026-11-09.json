@@ -1,0 +1,147 @@
+[
+ {
+  "id": "aufirstaid__AUFIRSTAID-BLD-014",
+  "status": "fixed",
+  "note": "Stem now says \"Loops of bowel\" so the options' \"them\" has something to refer to."
+ },
+ {
+  "id": "casfa__CASFA-ROL-005",
+  "status": "fixed",
+  "note": "Key option now reads \"When equal or higher training takes over\"."
+ },
+ {
+  "id": "cdcfib__NGCDCFIB-GEO-018",
+  "status": "fixed",
+  "note": "Stem and explanation now name Nigeria."
+ },
+ {
+  "id": "dmv__CT-016",
+  "status": "fixed",
+  "note": "Option A (parking lots, which the statute allows) replaced with \"While stopped in heavy traffic\"; es, vi, ko updated."
+ },
+ {
+  "id": "dmv__GA-014",
+  "status": "fixed",
+  "note": "\"Only\" removed from B, C replaced with a navigation app distractor, explanation names the emergency exception; es, vi, ko updated."
+ },
+ {
+  "id": "dmv__MT-031",
+  "status": "fixed",
+  "note": "Option and explanation now say move over if safe, otherwise slow 20 mph (the interstate figure MDT publishes); es, vi, ko updated. The finding's claim that there is no 20 mph figure was wrong."
+ },
+ {
+  "id": "dmv__ND-024",
+  "status": "fixed",
+  "note": "Stem now asks for the highest limit that may be posted (65 applies only where posted); es, vi, ko updated."
+ },
+ {
+  "id": "dmv__NM-040",
+  "status": "fixed",
+  "note": "Stem no longer calls the points a suspension; es, vi updated (ko was already right)."
+ },
+ {
+  "id": "dmv__UT-036",
+  "status": "fixed",
+  "note": "Stem and options now all answer \"when\"; es, vi, ko updated."
+ },
+ {
+  "id": "jambbio__JAMBBIO-D-121",
+  "status": "fixed",
+  "note": "Stem no longer says the appendix has no use; explanation notes its minor roles."
+ },
+ {
+  "id": "nce__NCE-PLN-013",
+  "status": "fixed",
+  "note": "Stem says \"uses once\" instead of \"relapses once\"; explanation separates lapse from relapse."
+ },
+ {
+  "id": "phr__PHR-BUS-001",
+  "status": "fixed",
+  "note": "Headcount changed to 210 and 190 so 30 separations is possible; distractors recomputed."
+ },
+ {
+  "id": "pnc-va__PCVA-LIA-021",
+  "status": "fixed",
+  "note": "Option reworded to a verb phrase in the national P&C bank and the 11 state banks that carry it."
+ },
+ {
+  "id": "sgbtt__SGBTT-LAN-005",
+  "status": "fixed",
+  "note": "Option now says \"emergency vehicles\", matching the handbook wording; the rule itself was right."
+ },
+ {
+  "id": "sgm5__SGM5-SKL-009",
+  "status": "fixed",
+  "note": "Option now says \"the client's goals\"."
+ },
+ {
+  "id": "camb__CAMB-ROW-017",
+  "status": "dismissed",
+  "note": "The bank is right: the MPI Driver's Handbook lane-changing page allows one shoulder check and signal across several lanes when it can be done safely."
+ },
+ {
+  "id": "ukadi__UKADI-TST-023",
+  "status": "dismissed",
+  "note": "The bank is right: GOV.UK gives 27 metres (27.5 old-style) for ADI part 2. The 26.5 m figure is on outdated third-party sites."
+ },
+ {
+  "id": "phnapolcom__PHNAP-PNP-020",
+  "status": "dismissed",
+  "note": "The bank is right: Section 28 of R.A. 8551 is Attrition by Non-promotion."
+ },
+ {
+  "id": "ibpsrrb__IBPSRRB-T2-062",
+  "status": "dismissed",
+  "note": "The auditor was not shown the passage, table, puzzle or picture this question is displayed with (fixed in tools/check_banks.py and scripts/question-audit.ts). With it, the key is right."
+ },
+ {
+  "id": "inrto__INRTO-CAU-022",
+  "status": "dismissed",
+  "note": "The auditor was not shown the passage, table, puzzle or picture this question is displayed with (fixed in tools/check_banks.py and scripts/question-audit.ts). With it, the key is right."
+ },
+ {
+  "id": "sat__SAT-MA-063",
+  "status": "dismissed",
+  "note": "The auditor was not shown the passage, table, puzzle or picture this question is displayed with (fixed in tools/check_banks.py and scripts/question-audit.ts). With it, the key is right."
+ },
+ {
+  "id": "sat__SAT-MA-089",
+  "status": "dismissed",
+  "note": "The auditor was not shown the passage, table, puzzle or picture this question is displayed with (fixed in tools/check_banks.py and scripts/question-audit.ts). With it, the key is right."
+ },
+ {
+  "id": "sbiclerk__SBICLK-T1-084",
+  "status": "dismissed",
+  "note": "The auditor was not shown the passage, table, puzzle or picture this question is displayed with (fixed in tools/check_banks.py and scripts/question-audit.ts). With it, the key is right."
+ },
+ {
+  "id": "sbiclerk__SBICLK-T2-011",
+  "status": "dismissed",
+  "note": "The auditor was not shown the passage, table, puzzle or picture this question is displayed with (fixed in tools/check_banks.py and scripts/question-audit.ts). With it, the key is right."
+ },
+ {
+  "id": "sbipo__SBIPO-T1-054",
+  "status": "dismissed",
+  "note": "The auditor was not shown the passage, table, puzzle or picture this question is displayed with (fixed in tools/check_banks.py and scripts/question-audit.ts). With it, the key is right."
+ },
+ {
+  "id": "ssccpo__SSCCPO-T1-096",
+  "status": "dismissed",
+  "note": "The auditor was not shown the passage, table, puzzle or picture this question is displayed with (fixed in tools/check_banks.py and scripts/question-audit.ts). With it, the key is right."
+ },
+ {
+  "id": "sscmts__SSCMTS-T1-085",
+  "status": "dismissed",
+  "note": "The auditor was not shown the passage, table, puzzle or picture this question is displayed with (fixed in tools/check_banks.py and scripts/question-audit.ts). With it, the key is right."
+ },
+ {
+  "id": "sscmts__SSCMTS-T2-085",
+  "status": "dismissed",
+  "note": "The auditor was not shown the passage, table, puzzle or picture this question is displayed with (fixed in tools/check_banks.py and scripts/question-audit.ts). With it, the key is right."
+ },
+ {
+  "id": "ugcnet__UGCNET-D-076",
+  "status": "dismissed",
+  "note": "The auditor was not shown the passage, table, puzzle or picture this question is displayed with (fixed in tools/check_banks.py and scripts/question-audit.ts). With it, the key is right."
+ }
+]

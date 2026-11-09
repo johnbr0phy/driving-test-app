@@ -1,9 +1,9 @@
 CAT = "phrBusiness"; SEG = "BUS"
 # Functional Area 01, Business Management (14%): environment, stakeholders, risk, metrics, culture.
 Q = [
-("A plant started the year with 220 employees and ended with 180. There were 30 separations during the year. What is the annual turnover rate?",
- "15%", ["14%", "17%", "13.6%"],
- "Turnover is separations divided by average headcount: 30 / ((220 + 180) / 2) = 30 / 200 = 15%. Dividing by the starting headcount gives 13.6%, and by the ending headcount 17%."),
+("A plant started the year with 210 employees and ended with 190. There were 30 separations during the year. What is the annual turnover rate?",
+ "15%", ["14.3%", "15.8%", "10%"],
+ "Turnover is separations divided by average headcount: 30 / ((210 + 190) / 2) = 30 / 200 = 15%. Dividing by the starting headcount gives 14.3%, and by the ending headcount 15.8%. 10% is the net fall in headcount (20 / 200), not separations."),
 ("An HR manager wants to see how long it takes from approving a requisition to a candidate accepting the offer. Which metric should she track?",
  "Time-to-fill", ["Time-to-start", "Cost-per-hire", "Offer acceptance rate"],
  "Time-to-fill runs from requisition approval (or posting) to offer acceptance. Time-to-start runs to the first day of work, and cost-per-hire measures spending, not time."),

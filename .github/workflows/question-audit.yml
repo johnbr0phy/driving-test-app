@@ -16,6 +16,10 @@ on:
       sweep:
         description: "Random questions to sweep"
         default: "1000"
+      export_open:
+        description: "Only write the findings still open on /admin to the log and an artifact (no audit, no PR)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -47,7 +51,14 @@ jobs:
       - name: Index every question
         run: python3 -I tools/check_banks.py --export "$RUNNER_TEMP/questions.json"
 
+      - name: Export open findings
+        if: inputs.export_open
+        env:
+          FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
+        run: npx tsx scripts/question-audit.ts --index "$RUNNER_TEMP/questions.json" --export-open --out audits
+
       - name: Audit
+        if: ${{ !inputs.export_open }}
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
@@ -57,8 +68,18 @@ jobs:
           case "$sweep" in ''|*[!0-9]*) echo "sweep must be a whole number"; exit 1 ;; esac
           npx tsx scripts/question-audit.ts --index "$RUNNER_TEMP/questions.json" --sweep "$sweep" --out audits
 
+      # Kept even when a later step fails, so a run's findings are never only in Firestore.
+      - name: Keep the report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: question-audit-${{ github.run_id }}
+          path: audits/
+          if-no-files-found: ignore
+
       - name: Count findings
         id: findings
+        if: ${{ !inputs.export_open }}
         run: |
           f="audits/$(date -u +%F).json"
           n=$(python3 -c 'import json,sys; print(len(json.load(open(sys.argv[1]))["findings"]))' "$f")
@@ -66,8 +87,10 @@ jobs:
           echo "file=$f" >> "$GITHUB_OUTPUT"
           echo "report=${f%.json}.md" >> "$GITHUB_OUTPUT"
 
+      # If Claude Code cannot run, the PR still opens with the report, unfixed.
       - name: Fix findings with Claude Code
-        if: steps.findings.outputs.count != '0'
+        if: ${{ !inputs.export_open && steps.findings.outputs.count != '0' }}
+        continue-on-error: true
         uses: anthropics/claude-code-action@v1
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
@@ -94,7 +117,7 @@ jobs:
             (one line on why). Do not commit; the next step opens the PR.
 
       - name: Open PR
-        if: steps.findings.outputs.count != '0'
+        if: ${{ !inputs.export_open && steps.findings.outputs.count != '0' }}
         uses: peter-evans/create-pull-request@v7
         with:
           branch: question-audit/${{ github.run_id }}

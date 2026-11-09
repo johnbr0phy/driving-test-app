@@ -48,6 +48,8 @@ const MAX_FLAGS = parseInt(arg("flags", "150")!, 10);
 const MAX_FRESH = parseInt(arg("fresh", "60")!, 10);
 const OUT = arg("out", "audits")!;
 const DRY = args.includes("--dry-run");
+// Writes the findings still open in Firestore to the report files and the log, without calling Claude.
+const EXPORT_OPEN = args.includes("--export-open");
 
 // ── The question index (tools/check_banks.py --export) ──────────────────────
 interface IndexQuestion {
@@ -131,6 +133,41 @@ function enqueue(q: (IndexQuestion & { examId: string }) | undefined, trigger: s
 }
 
 const today = new Date().toISOString().slice(0, 10);
+
+if (EXPORT_OPEN) {
+  if (!db) throw new Error("--export-open needs FIREBASE_SERVICE_ACCOUNT_KEY");
+  const snap = await db.collection("questionAuditFindings").where("status", "==", "open").get();
+  const open = snap.docs.map((d) => {
+    const f = d.data();
+    const q = find(f.examId, f.questionId);
+    return { ...f, file: q?.file ?? "", question: q ? render(q, true) : "(not in the index)" };
+  });
+  const text = [
+    `# Open question audit findings ${today}`,
+    "",
+    `${open.length} open.`,
+    "",
+    ...open.flatMap((f: Record<string, unknown>) => [
+      `## ${String(f.verdict).replace("_", " ")}: ${f.examId} ${f.questionId} (${f.confidence})`,
+      "",
+      `- File: \`${f.file}\``,
+      `- Run: ${f.runId}; why it was checked: ${(f.trigger as string[] | undefined)?.join(", ") ?? ""}; blind answer: ${f.modelAnswer || "n/a"}`,
+      `- Finding: ${f.reason}`,
+      `- Fix: ${f.fix || "(none given)"}`,
+      "",
+      "```",
+      String(f.question),
+      "```",
+      "",
+    ]),
+  ].join("\n");
+  mkdirSync(OUT, { recursive: true });
+  writeFileSync(`${OUT}/${today}-open.json`, JSON.stringify(open, null, 1) + "\n");
+  writeFileSync(`${OUT}/${today}-open.md`, text + "\n");
+  console.log(text);
+  return;
+}
+
 const recentCutoff = new Date(Date.now() - RECENT_DAYS * 86_400_000).toISOString();
 const auditedAt = new Map<string, string>();
 const openFindings = new Map<string, { status: string; verdict: string }>();

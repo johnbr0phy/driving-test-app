@@ -85,7 +85,15 @@ const nextConfig: NextConfig = {
     ];
   },
   async redirects() {
+    // The production alias Vercel gives every project served the whole site,
+    // indexable, beside www (Search Console: "Alternate page with proper
+    // canonical" and duplicate-canonical reports, Nov 2026). Its pages go to
+    // the same path on www; /api stays so nothing posting to it breaks.
+    // Preview deployments have other hosts and are untouched.
+    const mirrorHost = [{ type: "host" as const, value: "driving-test-app-beryl.vercel.app" }];
     return [
+      { source: "/", has: mirrorHost, destination: "https://www.tigertest.io/", permanent: true },
+      { source: "/:path((?!api/).*)", has: mirrorHost, destination: "https://www.tigertest.io/:path", permanent: true },
       {
         source: "/states/:slug",
         destination: "/:slug-dmv-practice-test",

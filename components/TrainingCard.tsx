@@ -7,6 +7,8 @@ import { useTranslation } from "@/contexts/LanguageContext";
 import { ReportExamQuestion } from "@/components/ReportExamQuestion";
 import { QuestionImage } from "@/components/QuestionImage";
 
+import { VoiceTutor } from "@/components/voice-tutor/VoiceTutor";
+
 const READY_MS = 300;
 
 interface TrainingCardProps {
@@ -25,7 +27,7 @@ export function TrainingCard({
   onNext,
   reportExamId,
 }: TrainingCardProps) {
-  const { t } = useTranslation();
+  const { t, language } = useTranslation();
   const headingId = useId();
   const heading = useRef<HTMLHeadingElement>(null);
   useEffect(() => { heading.current?.focus({ preventScroll: true }); }, [question.questionId]);
@@ -138,6 +140,16 @@ export function TrainingCard({
               </div>
               <p className="text-gray-700 dark:text-gray-200 text-sm md:text-base">{question.explanation}</p>
             </div>
+            {process.env.NEXT_PUBLIC_VOICE_TUTOR_PILOT === "true" && (
+              <VoiceTutor
+                key={`${reportExamId ?? "dmv"}:${question.questionId}:${question.optionOrder ?? "ABCD"}:${language}`}
+                examId={reportExamId ?? "dmv"}
+                questionId={question.questionId}
+                optionOrder={question.optionOrder ?? "ABCD"}
+                questionText={question.question}
+                language={language}
+              />
+            )}
             {reportExamId && (
               <ReportExamQuestion
                 key={question.questionId}

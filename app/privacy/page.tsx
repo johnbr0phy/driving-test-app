@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 // consent and children's pages), app/api/account/delete (what deletion
 // removes), lib/classes.ts and lib/quizzes.ts (what teachers and quiz makers
 // see), lib/funnel.ts and the other anonymous counters.
-const UPDATED = "November 6, 2026";
+const UPDATED = "November 8, 2026";
 const CONTACT = "john@johnbrophy.net";
 
 const h2 = "text-2xl font-semibold mb-4 mt-2";
@@ -84,6 +84,23 @@ export default function PrivacyPage() {
                 <strong>Email:</strong> which of our emails we sent you and whether you clicked them.
               </li>
             </ul>
+          </section>
+
+          <section>
+            <h2 className={h2}>Optional AI voice tutor pilot</h2>
+            <p className={p}>
+              When you press Start microphone, we stream your microphone audio to OpenAI through our voice server
+              to discuss the question on screen. The voice is AI-generated. We do not save audio or conversation
+              transcripts in our database. The tutor transcript stays in the current page until you leave or restart.
+              OpenAI processes audio and question context under its API data policies, which may include temporary
+              abuse-monitoring retention. Do not share personal or sensitive information during the pilot.
+              We keep a signed browser cookie for seven days, a daily keyed hash of your IP address, session times,
+              question identifiers, model usage and costs to enforce the free pilot budget and prevent abuse.
+              These records are not linked to your Tigertest account. Browser counts are not verified people.
+              We retain pilot accounting records for reconciliation and delete them within 90 days after the pilot ends,
+              unless a billing dispute requires longer retention. Contact us to request deletion of your pilot records.
+              These essential controls are used only to provide the voice session you request, not for advertising.
+            </p>
           </section>
 
           <section>

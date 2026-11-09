@@ -970,14 +970,14 @@
     "state": "ALL",
     "questionId": "NGCDCFIB-GEO-018",
     "category": "cdcfibGeography",
-    "question": "How does yearly rainfall change as you travel from the coast to the far north?",
+    "question": "In Nigeria, how does yearly rainfall change as you travel from the coast to the far north?",
     "optionA": "It increases",
     "optionB": "It decreases",
     "optionC": "It stays the same",
     "optionD": "It rises, then falls",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Moist air comes from the Atlantic, so the coast gets the most rain and the longest wet season, and rainfall falls steadily towards the Sahel."
+    "explanation": "Moist air comes from the Atlantic, so Nigeria's coast gets the most rain and the longest wet season, and rainfall falls steadily towards the Sahel."
   },
   {
     "type": "NGCDCFIB",

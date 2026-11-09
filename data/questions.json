@@ -5255,7 +5255,7 @@
     "questionId": "CT-016",
     "category": "cellPhone",
     "question": "Where can Connecticut drivers legally use handheld phones while in their vehicle?",
-    "optionA": "In parking lots or garages",
+    "optionA": "While stopped in heavy traffic",
     "optionB": "At red traffic lights",
     "optionC": "In private driveways only",
     "optionD": "Parked safely on shoulder",
@@ -6908,12 +6908,12 @@
     "category": "cellPhone",
     "question": "Under Georgia's Hands-Free Law, when is a driver permitted to hold their phone?",
     "optionA": "At stop signs and traffic lights",
-    "optionB": "Only when legally parked",
-    "optionC": "During emergency situations only",
+    "optionB": "When lawfully parked",
+    "optionC": "When using a navigation app",
     "optionD": "When traveling below 25 mph",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Drivers are permitted to hold their phone only when legally parked."
+    "explanation": "Drivers may not hold a phone while driving, including when stopped at a stop sign or traffic light. They may hold it when lawfully parked. A separate narrow exception covers reporting an emergency such as a crash, fire or crime."
   },
   {
     "type": "State-Specific",
@@ -16107,11 +16107,11 @@
     "question": "What must drivers do when approaching emergency vehicles with flashing lights on an interstate in Montana?",
     "optionA": "Maintain current speed",
     "optionB": "Stop completely now",
-    "optionC": "Slow 20 mph, move over",
+    "optionC": "Move over, or slow 20 mph",
     "optionD": "Flash headlights signal",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "When approaching emergency vehicles with flashing lights on an interstate, drivers must slow down 20 mph below the speed limit and move over a lane."
+    "explanation": "When approaching a stopped emergency vehicle with flashing lights on an interstate, drivers must move over a lane if it is safe. If they cannot move over, they must slow to 20 mph below the speed limit."
   },
   {
     "type": "State-Specific",
@@ -17126,7 +17126,7 @@
     "state": "ND",
     "questionId": "ND-024",
     "category": "stateUnique",
-    "question": "What is the default speed limit on paved two-lane highways in North Dakota if posted?",
+    "question": "What is the highest speed limit that may be posted on a paved two-lane highway in North Dakota?",
     "optionA": "55 mph",
     "optionB": "65 mph",
     "optionC": "70 mph",
@@ -19590,7 +19590,7 @@
     "state": "NM",
     "questionId": "NM-040",
     "category": "stateUnique",
-    "question": "What can result from a license suspension of 7 to 10 points in one year in New Mexico?",
+    "question": "What can happen if you accumulate 7 to 10 points in one year in New Mexico?",
     "optionA": "Up to 3-month suspension if court recommends",
     "optionB": "Automatic 6-month suspension",
     "optionC": "Mandatory driving school only",
@@ -26254,14 +26254,14 @@
     "state": "UT",
     "questionId": "UT-036",
     "category": "stateUnique",
-    "question": "When must you stop at a crosswalk not located at an intersection?",
-    "optionA": "When flashing only",
-    "optionB": "When convenient",
-    "optionC": "If police present",
-    "optionD": "Before entering it",
+    "question": "When must you stop at a crosswalk that is not at an intersection?",
+    "optionA": "Only if lights are flashing",
+    "optionB": "Only when convenient",
+    "optionC": "Only if police are present",
+    "optionD": "When a pedestrian is crossing",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Drivers must stop before entering a crosswalk not located at an intersection when pedestrians are present."
+    "explanation": "Drivers must stop before entering a crosswalk, including one not at an intersection, when a pedestrian is crossing."
   },
   {
     "type": "State-Specific",

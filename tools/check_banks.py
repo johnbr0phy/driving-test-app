@@ -180,12 +180,18 @@ def check_v2(index: list[dict]) -> list[str]:
                 errors.append(f"{where}: stimulus {sid} not found")
             if not (q.get("stem") or q.get("passage") or sid):
                 errors.append(f"{where}: no stem or passage")
-            passage = q.get("passage") or (stimuli.get(sid, {}).get("passage") if sid else None) or ""
+            # What the candidate sees beside the stem: the shared stimulus (title + text), then
+            # the item's own passage. The audit reads this, so leaving the stimulus out makes
+            # every passage, table and puzzle question look unanswerable.
+            stim = stimuli.get(sid, {}) if sid else {}
+            passage = "\n\n".join(p for p in (stim.get("title"), stim.get("text") or stim.get("passage"), q.get("passage")) if p)
+            fig = q.get("figure") or stim.get("figure") or {}
             index.append({
                 "id": qid, "engine": "v2", "exam": exam, "file": path, "category": q.get("domain"),
                 "format": fmt, "stem": q.get("stem", ""), "passage": passage, "options": opts,
                 "key": cor if fmt != "numeric" else (q.get("numeric") or {}).get("answers"),
                 "explanation": q.get("explanation", ""),
+                **({"figure": fig.get("alt") or fig.get("src", "")} if fig else {}),
             })
     return errors
 

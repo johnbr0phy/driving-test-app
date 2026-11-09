@@ -9,6 +9,10 @@ name: Question audit
 # (without the Firebase key it runs the sweep and freshness checks only).
 
 on:
+  # A reviewed audits/resolutions/<date>.json reaching main closes those findings on /admin.
+  push:
+    branches: [main]
+    paths: ["audits/resolutions/**"]
   schedule:
     - cron: "17 6 * * 1" # Mondays 06:17 UTC
   workflow_dispatch:
@@ -31,7 +35,29 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  resolve:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - name: Close reviewed findings
+        env:
+          FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
+        run: |
+          for f in $(git diff --name-only --diff-filter=AM HEAD~1 HEAD -- audits/resolutions/); do
+            npx tsx scripts/question-audit.ts --resolve "$f"
+          done
+
   audit:
+    if: github.event_name != 'push'
     runs-on: ubuntu-latest
     timeout-minutes: 120
     steps:

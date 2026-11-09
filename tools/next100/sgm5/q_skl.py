@@ -25,7 +25,7 @@ Q = [
  '20%', ['9%', '15%', '45%'],
  'Savings ratio = savings / income = 900 / 4,500 = 20%.'),
 ('When open questions are used in a fact-find, they help the representative to:',
- 'Learn his goals and concerns', ['Get yes or no answers fast', 'Close the sale quickly', 'Avoid discussing risks'],
+ 'Learn the client\'s goals', ['Get yes or no answers fast', 'Close the sale quickly', 'Avoid discussing risks'],
  'Open questions invite the client to explain his situation and priorities, which closed questions cannot draw out.'),
 ('Active listening during a client meeting includes:',
  'Summarising what he said', ['Planning the pitch while he talks', 'Interrupting to save time', 'Looking at your phone'],

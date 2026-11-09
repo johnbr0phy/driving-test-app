@@ -30,6 +30,7 @@ import { createHash } from "node:crypto";
 import Anthropic from "@anthropic-ai/sdk";
 import { ALL_EXAMS } from "@/lib/exams";
 import FRESHNESS from "@/lib/examFreshness.json";
+import { SIGN_BY_QUESTION_ID, SIGN_DESCRIPTIONS } from "@/lib/signImages";
 
 const MODEL = "claude-opus-5-5";
 const CONCURRENCY = 6;
@@ -50,6 +51,7 @@ const OUT = arg("out", "audits")!;
 const DRY = args.includes("--dry-run");
 // Writes the findings still open in Firestore to the report files and the log, without calling Claude.
 const EXPORT_OPEN = args.includes("--export-open");
+const RESOLVE = arg("resolve");
 
 // ── The question index (tools/check_banks.py --export) ──────────────────────
 interface IndexQuestion {
@@ -61,12 +63,14 @@ interface IndexQuestion {
   format?: string;
   stem: string;
   passage?: string;
+  /** v2: the alt text of the figure shown with the question. */
+  figure?: string;
   options: string[];
   key: number[] | string[] | null;
   explanation: string;
 }
 
-const index: IndexQuestion[] = JSON.parse(readFileSync(INDEX, "utf-8"));
+const index: IndexQuestion[] = RESOLVE ? [] : JSON.parse(readFileSync(INDEX, "utf-8"));
 const prefixes = ALL_EXAMS.filter((e) => e.questionIdPrefix)
   .map((e) => ({ id: e.id, prefix: e.questionIdPrefix }))
   .sort((a, b) => b.prefix.length - a.prefix.length);
@@ -133,6 +137,27 @@ function enqueue(q: (IndexQuestion & { examId: string }) | undefined, trigger: s
 }
 
 const today = new Date().toISOString().slice(0, 10);
+
+// Closes findings from a reviewed file ([{ id, status: "fixed" | "dismissed", note }]), the same
+// write as the Fixed and Not a problem buttons on /admin. Run when the fixes reach main.
+if (RESOLVE) {
+  if (!db) throw new Error("--resolve needs FIREBASE_SERVICE_ACCOUNT_KEY");
+  const rows = JSON.parse(readFileSync(RESOLVE, "utf-8")) as { id: string; status: string; note?: string }[];
+  const closedAt = new Date().toISOString();
+  let n = 0;
+  for (const r of rows) {
+    if (r.status !== "fixed" && r.status !== "dismissed") throw new Error(`${r.id}: status must be fixed or dismissed`);
+    const ref = db.collection("questionAuditFindings").doc(r.id);
+    if (!(await ref.get()).exists) {
+      console.log(`[audit] ${r.id}: no such finding, skipped`);
+      continue;
+    }
+    await ref.update({ status: r.status, closedAt, closedNote: r.note ?? "" });
+    n++;
+  }
+  console.log(`[audit] closed ${n} of ${rows.length} findings from ${RESOLVE}`);
+  return;
+}
 
 if (EXPORT_OPEN) {
   if (!db) throw new Error("--export-open needs FIREBASE_SERVICE_ACCOUNT_KEY");
@@ -262,6 +287,10 @@ A student report or a disagreement is evidence to weigh, not proof: students oft
 function render(q: IndexQuestion, withKey: boolean): string {
   const lines = [];
   if (q.passage) lines.push(`Passage:\n${q.passage}\n`);
+  // The candidate sees a picture the model cannot: say what it shows.
+  if (q.figure) lines.push(`Figure shown with the question (described): ${q.figure}\n`);
+  const sign = q.engine === "v1" ? SIGN_BY_QUESTION_ID[q.id] : undefined;
+  if (sign) lines.push(`The question shows a picture of a road sign: ${SIGN_DESCRIPTIONS[sign] ?? sign.split("/").pop()!.replace(/-/g, " ")}\n`);
   lines.push(`Question: ${q.stem}`);
   q.options.forEach((o, i) => lines.push(`${LETTERS[i]}) ${o}`));
   if (q.format === "multi") lines.push("(Select all that apply.)");

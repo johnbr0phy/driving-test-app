@@ -99,6 +99,13 @@ interface ExamTally {
   questions: Map<string, QuestionTally>;
 }
 
+/**
+ * A tally's running sums as plain JSON, so a scan split across several calls
+ * (the stats cron reads each uid range in its own function) can be summed
+ * back into one tally with `merge` before `build`.
+ */
+export type ExitTallyState = Record<string, Omit<ExamTally, "questions"> & { questions: Record<string, QuestionTally> }>;
+
 const median = (xs: number[]) => {
   if (xs.length === 0) return 0;
   const s = [...xs].sort((a, b) => a - b);
@@ -233,6 +240,36 @@ export function createExitTally(opts: {
     }
   }
 
+  /** The running sums as plain JSON. */
+  function state(): ExitTallyState {
+    const out: ExitTallyState = {};
+    for (const [examId, e] of exams) out[examId] = { ...e, kinds: { ...e.kinds }, questions: Object.fromEntries(e.questions) };
+    return out;
+  }
+
+  /** Adds another tally's sums (accounts it saw must not be added here too). */
+  function merge(other: ExitTallyState) {
+    for (const [examId, o] of Object.entries(other)) {
+      const e = examTally(examId);
+      e.users += o.users;
+      e.quiet += o.quiet;
+      for (const k of Object.keys(e.kinds) as ExitKind[]) e.kinds[k] += o.kinds?.[k] ?? 0;
+      e.questionExitsWrong += o.questionExitsWrong;
+      e.correct += o.correct;
+      e.wrong += o.wrong;
+      for (const [questionId, oq] of Object.entries(o.questions ?? {})) {
+        const q = questionTally(e, questionId);
+        q.exits += oq.exits;
+        q.exitsWrong += oq.exitsWrong;
+        q.seenBy += oq.seenBy;
+        q.correct += oq.correct;
+        q.wrong += oq.wrong;
+        for (const n of oq.sessions ?? []) q.sessions.push(n);
+        q.streaks += oq.streaks;
+      }
+    }
+  }
+
   function build(): ExitQuestionsDoc {
     const out: Record<string, ExitExamStats> = {};
     for (const [examId, e] of exams) {
@@ -270,7 +307,7 @@ export function createExitTally(opts: {
     return { exams: out, quietDays: EXIT_QUIET_DAYS, minExits: EXIT_MIN_EXITS, updatedAt: new Date(opts.now).toISOString() };
   }
 
-  return { add, build };
+  return { add, build, state, merge };
 }
 
 /** What /api/admin/exit-questions sends: the doc with names and question text. */

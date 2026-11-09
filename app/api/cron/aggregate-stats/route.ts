@@ -2,7 +2,7 @@
  * Cron: Aggregate Community Stats
  * Schedule: daily at 03:00 UTC (vercel.json)
  *
- * Reads all real users' trainingAnswerHistory and writes two docs to Firestore:
+ * Reads all real users' answers (in parallel parts, see below) and writes these docs:
  * - globalStats/wrongQuestions — top 50 most-missed universal questions (stats page)
  * - globalStats/questionDifficulty — per-question attempt count + error rate for
  *   every question (universal and state-specific) with enough attempts (FastPass)
@@ -21,13 +21,8 @@
  */
 
 import { NextRequest, NextResponse } from "next/server";
-import { getAdminDb, getAdminAuth } from "@/lib/firebase-admin";
-import { FieldPath } from "firebase-admin/firestore";
-import { getQuestionsData } from "@/lib/testGenerator";
-import { ALL_EXAMS, getExamByStateCode } from "@/lib/exams";
-import { EXAMS_V2 } from "@/lib/v2/registry";
-import { heldOutTests } from "@/lib/v2/training";
-import { v2QuestionPerformance } from "@/lib/v2/questionStats";
+import { getAdminDb } from "@/lib/firebase-admin";
+import { SITE_URL } from "@/lib/siteUrl";
 import {
   COMMUNITY_DMV_KEY,
   COMMUNITY_MIN_ANSWERS,
@@ -36,13 +31,31 @@ import {
   type ExamCommunityQuestion,
   type ExamCommunityStats,
 } from "@/lib/communityStats";
-import { createExitTally } from "@/lib/exitQuestions";
-import { states as STATES } from "@/data/states";
+import {
+  UID_RANGES,
+  buildExitDoc,
+  listRealUids,
+  mergePartials,
+  questionLookups,
+  scanUidRanges,
+  type StatsPartial,
+  type UidRange,
+} from "@/lib/server/aggregateStats";
 
-// Paging every account one after another passed 60s at ~5,000 accounts
-// (timed out nightly from Oct 19 2026, so the docs kept the old 2,000-account
-// numbers). Reads now run in parallel uid ranges, with room to grow.
+// One function reading every account took 250 to 280 seconds by Nov 2026
+// (5,300 accounts) and timed out at 300 on some nights (Nov 5 and Nov 9), so
+// the docs kept the day before's numbers. The cron (GET) now lists accounts
+// once, sends each slice of the uid space to its own call of this route
+// (POST, lib/server/aggregateStats.ts), adds the slices up and writes the docs.
+// Each slice is about an eighth of the reading, so the run takes well under a
+// minute and has room to grow.
 export const maxDuration = 300;
+
+/** Slices of the uid space, each scanned by its own POST call. */
+const PARTS = 8;
+const PART_TIMEOUT_MS = 280_000;
+/** Past this, a failed part leaves too little time to scan in one call. */
+const FALLBACK_WITHIN_MS = 30_000;
 
 function verifyCronSecret(req: NextRequest): boolean {
   const secret = process.env.CRON_SECRET;
@@ -50,15 +63,56 @@ function verifyCronSecret(req: NextRequest): boolean {
   return req.headers.get("authorization") === `Bearer ${secret}`;
 }
 
-const TEST_EMAILS = ["@johnbrophy.net", "@stensul.com"];
-function isTest(email: string | undefined): boolean {
-  if (!email) return false;
-  const e = email.toLowerCase();
-  return (
-    TEST_EMAILS.some((t) => e.includes(t)) ||
-    /\+\d+@/.test(e) ||
-    /test.*@|@.*test/.test(e)
+const secs = (since: number) => ((Date.now() - since) / 1000).toFixed(1);
+
+/** Splits the uid ranges into `n` slices of neighbouring ranges. */
+function slices(ranges: UidRange[], n: number): UidRange[][] {
+  const per = Math.ceil(ranges.length / n);
+  const out: UidRange[][] = [];
+  for (let i = 0; i < ranges.length; i += per) out.push(ranges.slice(i, i + per));
+  return out;
+}
+
+/**
+ * Scans every slice in its own call of this route, at the production origin
+ * (deployment URLs sit behind Vercel's protection). Throws if any slice fails,
+ * so the docs are never written from part of the accounts.
+ */
+async function scanInParts(uids: string[], now: number, secret: string): Promise<StatsPartial[]> {
+  return Promise.all(
+    slices(UID_RANGES, PARTS).map(async (ranges) => {
+      const res = await fetch(`${SITE_URL}/api/cron/aggregate-stats`, {
+        method: "POST",
+        headers: { authorization: `Bearer ${secret}`, "content-type": "application/json" },
+        body: JSON.stringify({ ranges, uids, now }),
+        cache: "no-store",
+        signal: AbortSignal.timeout(PART_TIMEOUT_MS),
+      });
+      if (!res.ok) throw new Error(`part ${ranges[0][0] || "start"}: HTTP ${res.status}`);
+      return (await res.json()) as StatsPartial;
+    }),
   );
+}
+
+/** One slice of the scan, called by the cron below. Needs CRON_SECRET. */
+export async function POST(req: NextRequest) {
+  const secret = process.env.CRON_SECRET;
+  if (!secret || req.headers.get("authorization") !== `Bearer ${secret}`) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
+  const started = Date.now();
+  try {
+    const { ranges, uids, now } = (await req.json()) as { ranges: UidRange[]; uids: string[]; now: number };
+    if (!Array.isArray(ranges) || !Array.isArray(uids) || typeof now !== "number") {
+      return NextResponse.json({ error: "Bad request" }, { status: 400 });
+    }
+    const part = await scanUidRanges(ranges, new Set(uids), now);
+    console.log(`[aggregate-stats] part ${ranges[0]?.[0] || "start"}: ${part.sampledUsers} docs in ${secs(started)}s`);
+    return NextResponse.json(part);
+  } catch (err: any) {
+    console.error("[aggregate-stats] part error:", err);
+    return NextResponse.json({ error: err.message }, { status: 500 });
+  }
 }
 
 export async function GET(req: NextRequest) {
@@ -67,144 +121,35 @@ export async function GET(req: NextRequest) {
   }
 
   try {
-    const auth = getAdminAuth();
+    const started = Date.now();
+    const now = Date.now();
     const db = getAdminDb();
+    const uids = await listRealUids();
+    const realUids = new Set(uids);
+    console.log(`[aggregate-stats] ${uids.length} accounts listed in ${secs(started)}s`);
 
-    // Build real UID set (one Auth batch call)
-    const realUids = new Set<string>();
-    let pageToken: string | undefined;
-    do {
-      const result = await auth.listUsers(1000, pageToken);
-      for (const u of result.users) {
-        if (!isTest(u.email)) realUids.add(u.uid);
+    // In parts when there is a secret to call them with; otherwise (local
+    // dev) in this one call, as before. If the parts fail fast (cannot be
+    // reached), fall back to one call too, which still finishes on most nights.
+    const secret = process.env.CRON_SECRET;
+    let partials: StatsPartial[];
+    if (secret) {
+      try {
+        partials = await scanInParts(uids, now, secret);
+      } catch (err) {
+        if (Date.now() - started > FALLBACK_WITHIN_MS) throw err;
+        console.error("[aggregate-stats] parts failed, scanning in this call:", err);
+        partials = [await scanUidRanges(UID_RANGES, realUids, now)];
       }
-      pageToken = result.pageToken;
-    } while (pageToken);
-
-    // Aggregate answer history across all real users. Paged by document id,
-    // only the two answer fields read: a single limit(2000) read used to stop
-    // at the first 2,000 accounts (4,892 by Oct 2026) and skip everyone after.
-    const counts: Record<string, { correct: number; wrong: number }> = {};
-
-    // When people study: every timestamped answer (training and practice
-    // tests) from the last 90 days, bucketed by Eastern weekday and hour.
-    const studyGrid: number[][] = Array.from({ length: 7 }, () => new Array(24).fill(0));
-    const studyFrom = Date.now() - 90 * 24 * 60 * 60 * 1000;
-    let studyAnswers = 0;
-    let sampledUsers = 0;
-    const studyUsers = new Set<string>();
-    const tally = (uid: string, iso: unknown) => {
-      if (typeof iso !== "string") return;
-      const t = Date.parse(iso);
-      if (Number.isNaN(t) || t < studyFrom) return;
-      const slot = easternSlot(t);
-      if (!slot) return;
-      studyGrid[slot.weekday][slot.hour]++;
-      studyAnswers++;
-      studyUsers.add(uid);
-    };
-
-    // Build question lookup map from static data (DMV ids are never an exam's)
-    const allQuestions = getQuestionsData("en");
-    const qMap: Record<string, any> = {};
-    allQuestions.forEach((q) => {
-      if (q.questionId) qMap[q.questionId] = q;
-    });
-
-    const dmvIds = new Set(Object.keys(qMap));
-
-    // Firebase uids are alphanumeric, so split the id space into ranges at
-    // these boundaries and page each range at the same time.
-    const PAGE_SIZE = 500;
-    const BOUNDS = ["", "4", "8", "C", "G", "K", "O", "S", "W", "a", "e", "i", "m", "q", "u", "y", null];
-    const readRange = async (from: string, to: string | null) => {
-      let cursor: string | null = null;
-      for (;;) {
-        let query = db
-          .collection("users")
-          .select("trainingAnswerHistory", "completedTests", "v2.results", "v2.drills", "v2.questionStats")
-          .orderBy(FieldPath.documentId())
-          .limit(PAGE_SIZE);
-        if (cursor) query = query.startAfter(cursor);
-        else if (from) query = query.startAt(from);
-        if (to) query = query.endBefore(to);
-        const page = await query.get();
-        sampledUsers += page.size;
-        page.forEach(addUser);
-        if (page.size < PAGE_SIZE) return;
-        cursor = page.docs[page.docs.length - 1].id;
-      }
-    };
-    // Registry exam answers, by exam: training answers and answered
-    // questions in finished practice tests, matched to an exam by question id
-    // prefix (longest first, so CDLE- never lands in CDL-).
-    const examCounts: Record<string, Record<string, { correct: number; wrong: number }>> = {};
-    const examUsers: Record<string, Set<string>> = {};
-    const prefixes = ALL_EXAMS.map((e) => ({ id: e.id, prefix: e.questionIdPrefix }))
-      .filter((e) => !!e.prefix)
-      .sort((a, b) => b.prefix.length - a.prefix.length);
-    const examOf = (questionId: string) => prefixes.find((e) => questionId.startsWith(e.prefix))?.id;
-    const countExamAnswer = (uid: string, questionId: unknown, isCorrect: unknown) => {
-      if (typeof questionId !== "string" || dmvIds.has(questionId)) return;
-      const examId = examOf(questionId);
-      if (!examId) return;
-      const byQuestion = (examCounts[examId] ??= {});
-      const c = (byQuestion[questionId] ??= { correct: 0, wrong: 0 });
-      if (isCorrect) c.correct++;
-      else c.wrong++;
-      (examUsers[examId] ??= new Set()).add(uid);
-    };
-
-    // v2 exams (ids never collide with registry ids): test and drill answers,
-    // never a held-out test's, so Common Mistakes cannot leak it.
-    const v2Exams = EXAMS_V2.map((e) => ({ id: e.id, skipTests: heldOutTests(e) }));
-    const countV2 = (uid: string, v2: any) => {
-      if (!v2 || typeof v2 !== "object") return;
-      for (const exam of v2Exams) {
-        const perf = v2QuestionPerformance(v2, exam.id, { skipTests: exam.skipTests });
-        if (perf.size === 0) continue;
-        const byQuestion = (examCounts[exam.id] ??= {});
-        for (const [questionId, p] of perf) {
-          const c = (byQuestion[questionId] ??= { correct: 0, wrong: 0 });
-          c.correct += p.correct;
-          c.wrong += p.wrong;
-        }
-        (examUsers[exam.id] ??= new Set()).add(uid);
-      }
-    };
-
-    // Exit questions: the DMV by its own ids, exams by prefix.
-    const dmvPassPct = new Map(STATES.map((st) => [st.code, st.passingScore]));
-    const exits = createExitTally({
-      now: Date.now(),
-      examOf: (id) => (dmvIds.has(id) ? COMMUNITY_DMV_KEY : examOf(id)),
-      passPctOf: (state, examId) =>
-        examId === COMMUNITY_DMV_KEY ? dmvPassPct.get(state ?? "") ?? 80 : getExamByStateCode(state)?.passPct ?? 80,
-    });
-
-    const addUser = (doc: FirebaseFirestore.QueryDocumentSnapshot) => {
-      if (!realUids.has(doc.id)) return;
-      const data = doc.data();
-      exits.add(data);
-      const history: any[] = Array.isArray(data.trainingAnswerHistory) ? data.trainingAnswerHistory : [];
-      for (const entry of history) {
-        tally(doc.id, entry?.answeredAt);
-        const id: string = entry?.questionId;
-        if (!id) continue;
-        countExamAnswer(doc.id, id, entry.isCorrect);
-        if (!counts[id]) counts[id] = { correct: 0, wrong: 0 };
-        if (entry.isCorrect) counts[id].correct++;
-        else counts[id].wrong++;
-      }
-      for (const test of Array.isArray(data.completedTests) ? data.completedTests : []) {
-        for (const a of Array.isArray(test?.answers) ? test.answers : []) {
-          tally(doc.id, a?.answeredAt);
-          if (a?.userAnswer) countExamAnswer(doc.id, a.questionId, a.isCorrect);
-        }
-      }
-      countV2(doc.id, data.v2);
-    };
-    await Promise.all(BOUNDS.slice(0, -1).map((from, i) => readRange(from as string, BOUNDS[i + 1])));
+    } else {
+      partials = [await scanUidRanges(UID_RANGES, realUids, now)];
+    }
+    const merged = mergePartials(partials, now);
+    console.log(
+      `[aggregate-stats] ${merged.sampledUsers} docs scanned in ${partials.length} part(s), ${secs(started)}s so far`
+    );
+    const { counts, examCounts } = merged;
+    const { qMap } = questionLookups();
 
     // Rank by wrong count, with enough answers per question to be meaningful
     const MIN_ATTEMPTS = COMMUNITY_MIN_ANSWERS;
@@ -272,7 +217,7 @@ export async function GET(req: NextRequest) {
           .map((q) => ({ ...q, errorRate: Math.round((q.wrong / q.total) * 100) }))
           .sort((a, b) => b.wrong - a.wrong)
           .slice(0, COMMUNITY_TOP_N),
-        users: examUsers[examId]?.size ?? 0,
+        users: merged.examUsers[examId] ?? 0,
       };
     }
     const available = [
@@ -283,16 +228,16 @@ export async function GET(req: NextRequest) {
     // Write to Firestore — one doc per consumer
     await db.collection("globalStats").doc("studyTimes").set({
       // grid[weekday][hour], weekday 0 = Sunday, Eastern time
-      grid: Object.fromEntries(studyGrid.map((row, i) => [String(i), row])),
-      answers: studyAnswers,
-      users: studyUsers.size,
-      sampledUsers,
+      grid: Object.fromEntries(merged.studyGrid.map((row, i) => [String(i), row])),
+      answers: merged.studyAnswers,
+      users: merged.studyUsers,
+      sampledUsers: merged.sampledUsers,
       days: 90,
       timeZone: "America/New_York",
       updatedAt: new Date().toISOString(),
     });
 
-    await db.collection("globalStats").doc("exitQuestions").set(exits.build());
+    await db.collection("globalStats").doc("exitQuestions").set(buildExitDoc(merged.exits, now));
 
     await db
       .collection("globalStats")
@@ -328,7 +273,7 @@ export async function GET(req: NextRequest) {
       `[aggregate-stats] Common Mistakes on: ${available.join(", ") || "none"}`
     );
     console.log(
-      `[aggregate-stats] computed ${ranked.length} wrong questions, ${Object.keys(difficulty).length} difficulty entries from ${realUids.size} users`
+      `[aggregate-stats] computed ${ranked.length} wrong questions, ${Object.keys(difficulty).length} difficulty entries from ${realUids.size} users in ${secs(started)}s`
     );
     return NextResponse.json({
       computed: ranked.length,
@@ -340,20 +285,4 @@ export async function GET(req: NextRequest) {
     console.error("[aggregate-stats] Error:", err);
     return NextResponse.json({ error: err.message }, { status: 500 });
   }
-}
-
-const ET_PARTS = new Intl.DateTimeFormat("en-US", {
-  timeZone: "America/New_York",
-  weekday: "short",
-  hour: "2-digit",
-  hour12: false,
-});
-const WEEKDAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-
-/** Weekday (0 = Sunday) and hour (0-23) in Eastern time. */
-function easternSlot(ms: number): { weekday: number; hour: number } | null {
-  const parts = ET_PARTS.formatToParts(new Date(ms));
-  const weekday = WEEKDAYS.indexOf(parts.find((p) => p.type === "weekday")?.value ?? "");
-  const hour = parseInt(parts.find((p) => p.type === "hour")?.value ?? "", 10) % 24;
-  return weekday < 0 || Number.isNaN(hour) ? null : { weekday, hour };
 }

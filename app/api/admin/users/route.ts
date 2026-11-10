@@ -4,7 +4,7 @@ import { requireAdmin } from '@/lib/server/adminAuth';
 import { cachedAdminPayload, cachedJson, wantsRefresh } from '@/lib/server/adminCache';
 import { getInternalUids } from '@/lib/server/internalUsers';
 import { states } from '@/data/states';
-import { resolveUserExamId } from '@/lib/email-voice';
+import { resolveCurrentExamId } from '@/lib/email-voice';
 import { getCatalogEntry, getCatalogEntryByPath } from '@/lib/testCatalog';
 import { isAnswered } from '@/lib/v2/grading';
 import type { AnswerValue } from '@/lib/v2/types';
@@ -59,7 +59,7 @@ function signupTest(data: Record<string, unknown>, landing: string | null) {
   const fromLanding = landing ? getCatalogEntryByPath(landing) : null;
   const entry = fromLanding && fromLanding.id !== 'dmv'
     ? fromLanding
-    : getCatalogEntry(resolveUserExamId(data));
+    : getCatalogEntry(resolveCurrentExamId(data));
   return {
     id: entry?.id ?? 'dmv',
     name: entry?.shortName ?? 'DMV',

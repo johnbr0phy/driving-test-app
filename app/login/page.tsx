@@ -7,7 +7,9 @@ import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { useAuth } from "@/contexts/AuthContext";
 import { useTranslation } from "@/contexts/LanguageContext";
-import { useStore } from "@/store/useStore";
+import { useAccountNavigation } from "@/hooks/useAccountNavigation";
+import { safeAuthDestination } from "@/lib/authDestination";
+import { AccountLoadRetry } from "@/components/AccountLoadRetry";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -39,11 +41,11 @@ function LoginPageContent() {
   const { login, loginWithGoogle, resetPassword, user, loading: authLoading } = useAuth();
   const router = useRouter();
   const searchParams = useSearchParams();
-  const firestoreLoaded = useStore((state) => state.firestoreLoaded);
+  const { ready: accountReady, loadFailed } = useAccountNavigation();
   const { t } = useTranslation();
   const isNative = useIsNativeApp();
 
-  const redirectTo = searchParams.get("redirect");
+  const redirectTo = safeAuthDestination(searchParams.get("redirect"), "") || null;
   // Exam pages are English-only, so their copy is not in i18n
   const redirectExamName = examNameForPath(redirectTo);
 
@@ -53,14 +55,9 @@ function LoginPageContent() {
   // Wait for Firestore to load: the dashboard shows its state picker while
   // no state is known, which would flash for users who already have one.
   useEffect(() => {
-    if (authLoading || !user) return;
-    if (redirectTo) {
-      router.push(redirectTo);
-      return;
-    }
-    if (!firestoreLoaded) return;
-    router.push("/dmv/dashboard");
-  }, [authLoading, user, redirectTo, firestoreLoaded, router]);
+    if (!accountReady || !user) return;
+    router.replace(redirectTo ?? "/dmv/dashboard");
+  }, [accountReady, user, redirectTo, router]);
 
   // If sign-in ends without a user (e.g. cancelling the guest-conflict
   // dialog signs the user back out), release the button loading state —
@@ -119,6 +116,8 @@ function LoginPageContent() {
       setLoading(false);
     }
   };
+
+  if (loadFailed && user) return <AccountLoadRetry uid={user.uid} />;
 
   return (
     <div className="bg-white dark:bg-gray-900 relative flex flex-1 items-center justify-center py-12 px-4">

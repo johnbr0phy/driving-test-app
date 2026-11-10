@@ -1,27 +1,26 @@
 // All Tigertest transactional and lifecycle emails.
 //
-// Every email is built from one shared shell (`emailShell`) so the house style
-// lives in exactly one place: cream page, 600px white card, 48px tiger, 24px
-// heading, 15px/1.7 body, black pill CTA, "John @ Tigertest.io" sign-off.
-//
-// The canonical layout was previously duplicated inline in
-// /api/send-welcome-email, which is why the cron emails had drifted: wrong
-// outer padding, wrong footer border, and a "The Tigertest Team" sign-off that
-// no live email actually used. That route now renders EMAIL_TEMPLATES.welcome.
-//
-// Every template is a function of an EmailVoice (lib/email-voice), so the
-// exam name, question counts and links match the exam the reader is studying.
-// Pass voiceFor("dmv") for the original DMV copy.
+// The shared shell follows the approved email journey: the event exam's real
+// tiger and light theme, a 560px white card, and a neutral unknown-exam fallback.
+// Tables and inline styles keep the layout usable in email clients.
 
+import { EMAIL_INBOX, exitQuestionInbox, emailPreheader } from "@/lib/email-inbox";
 import { postalFooterLine } from "@/lib/emailPostal";
 import { EmailVoice, dashboardUrl, statsUrl } from "@/lib/email-voice";
 import { TEST_REQUEST_PICKS } from "@/lib/test-requests";
+import { emailBrand } from "@/lib/email-brand";
+import type { TigerExpression } from "@/lib/tigerAssets";
 import { EXAMS_V2 } from "@/lib/v2/registry";
 
 interface ShellOptions {
   /** <title>, used by some clients as the preview label. */
   title: string;
-  /** The 24px heading inside the card. */
+  /** Text shown beside the subject in supporting inboxes. */
+  preheader: string;
+  voice?: EmailVoice;
+  expression?: TigerExpression;
+  eyebrow?: string;
+  /** The main heading inside the card. */
   heading: string;
   /** Inner HTML for the body cell: paragraphs, lists and the CTA. */
   body: string;
@@ -34,7 +33,7 @@ interface ShellOptions {
 
 /** Body paragraph in house style. */
 export function p(html: string): string {
-  return `              <p style="margin: 0 0 20px; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
+  return `              <p style="margin: 0 0 17px; color: #3d5155; font-size: 16px; line-height: 1.65;">
                 ${html}
               </p>`;
 }
@@ -46,12 +45,12 @@ ${items.map((i) => `                <li>${i}</li>`).join("\n")}
               </ul>`;
 }
 
-/** The black pill button. */
+/** The shell replaces the neutral button colour with the exam accent. */
 export function cta(href: string, label: string): string {
-  return `              <table role="presentation" style="margin: 32px 0; border-collapse: collapse;">
+  return `              <table role="presentation" style="margin: 27px 0 19px; border-collapse: collapse;">
                 <tr>
                   <td align="center">
-                    <a href="${href}" style="display: inline-block; padding: 14px 28px; background-color: #1a1a1a; color: #ffffff; text-decoration: none; border-radius: 50px; font-weight: 500; font-size: 15px;">${label}</a>
+                    <a href="${href}" style="display: inline-block; padding: 15px 23px; background-color: #1a1a1a; color: #ffffff; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 16px;">${label}</a>
                   </td>
                 </tr>
               </table>`;
@@ -66,53 +65,41 @@ export function signoff(lead = "Good luck,"): string {
 }
 
 function emailShell({
-  title,
-  heading,
-  body,
-  unsubscribe = true,
+  title, preheader, heading, body, voice, expression = 3,
+  eyebrow = "YOUR NEXT STUDY STEP", unsubscribe = true,
 }: ShellOptions): string {
+  const brand = emailBrand(voice?.id, expression);
+  const label = brand.known && voice ? `TIGERTEST · ${esc(voice.shortName.toUpperCase())} PRACTICE` : "TIGERTEST";
   const footerLinks = unsubscribe
-    ? `<a href="https://www.tigertest.io/unsubscribe?token={{unsubscribeToken}}" style="color: #FF6B35; text-decoration: none;">Unsubscribe</a>
-                &nbsp;•&nbsp;
-                <a href="https://www.tigertest.io/privacy" style="color: #FF6B35; text-decoration: none;">Privacy Policy</a>`
-    : `<a href="https://www.tigertest.io/privacy" style="color: #FF6B35; text-decoration: none;">Privacy Policy</a>`;
-
+    ? `<a href="https://www.tigertest.io/unsubscribe?token={{unsubscribeToken}}" style="color: #64777b;">Unsubscribe</a> · <a href="https://www.tigertest.io/privacy" style="color: #64777b;">Privacy Policy</a>`
+    : `<a href="https://www.tigertest.io/privacy" style="color: #64777b;">Privacy Policy</a>`;
+  const themedBody = body
+    .replaceAll("background-color: #1a1a1a", `background-color: ${brand.accent}`)
+    .replaceAll("#FF6B35", brand.accent);
   return `<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>${title}</title>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>${esc(title)}</title>
+<style>@media only screen and (max-width: 480px) { .email-body { padding: 22px 20px 26px !important; } .email-heading { font-size: 27px !important; } }</style>
 </head>
-<body style="margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; background-color: #FFF9F5;">
-  <table role="presentation" style="width: 100%; border-collapse: collapse;">
-    <tr>
-      <td align="center" style="padding: 40px 20px;">
-        <table role="presentation" width="100%" style="width: 100%; max-width: 600px; border-collapse: collapse; background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
-          <tr>
-            <td style="padding: 40px 40px 24px; text-align: center;">
-              <img src="https://www.tigertest.io/tiger.png" alt="Tigertest" style="width: 48px; height: auto; margin-bottom: 16px;" />
-              <h1 style="margin: 0; color: #1a1a1a; font-size: 24px; font-weight: 600;">${heading}</h1>
-            </td>
-          </tr>
-          <tr>
-            <td style="padding: 24px 40px 40px;">
-${body}
-            </td>
-          </tr>
-          <tr>
-            <td style="padding: 24px 40px; background-color: #FFF9F5; border-top: 1px solid #f0f0f0;">
-              <p style="margin: 0; color: #999999; font-size: 12px; line-height: 1.6; text-align: center;">
-                ${footerLinks}${unsubscribe ? postalFooterLine() : ""}
-              </p>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
-</body>
-</html>`;
+<body style="margin: 0; padding: 0; background-color: ${brand.light}; font-family: Arial, Helvetica, sans-serif;">
+${emailPreheader(preheader)}
+<table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background-color: ${brand.light};"><tr><td align="center" style="padding: 30px 12px;">
+<table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="width: 100%; max-width: 560px; background-color: #ffffff; border: 1px solid ${brand.border}; border-radius: 18px; overflow: hidden;">
+<tr><td align="center" style="padding: 28px 28px 12px;">
+<img src="${brand.tiger}" width="100" height="100" alt="${brand.known && voice ? esc(voice.shortName) + ' practice tiger' : 'Tigertest tiger'}" style="width: 100px; height: 100px; display: block; border: 0;">
+<p style="font-size: 12px; letter-spacing: 2px; font-weight: 700; color: ${brand.accent}; margin: 13px 0 0;">${label}</p>
+</td></tr>
+<tr><td class="email-body" style="padding: 25px 32px 30px;">
+<p style="font-size: 10px; letter-spacing: 1.7px; font-weight: 700; color: ${brand.accent}; margin: 0 0 11px;">${esc(eyebrow)}</p>
+<h1 class="email-heading" style="font-size: 29px; line-height: 1.2; letter-spacing: -0.7px; color: ${brand.ink}; margin: 0 0 23px;">${esc(heading)}</h1>
+${themedBody}
+</td></tr></table>
+<table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="max-width: 540px;"><tr><td style="text-align: center; padding: 22px 14px 10px; font-size: 11px; line-height: 1.75; color: #64777b;">
+${unsubscribe ? "You receive study emails because you chose to hear from Tigertest." : "This is an account or service message."}<br>
+${footerLinks}${postalFooterLine()}
+</td></tr></table>
+</td></tr></table></body></html>`;
 }
 
 const SITE = "https://www.tigertest.io";
@@ -145,35 +132,24 @@ ${rows.join("\n")}
 const DASH = (v: EmailVoice, campaign: string) => dashboardUrl(v, campaign);
 const STATS = (v: EmailVoice, campaign: string) => statsUrl(v, campaign);
 
-/** "your DMV test" in the DMV voice, "your citizenship test" elsewhere. */
-const your = (v: EmailVoice) => `your ${v.testName}`;
-
 export type EmailTemplate = (voice: EmailVoice) => string;
 
 export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
   // Sent immediately at signup by /api/send-welcome-email.
   welcome: (v) =>
     emailShell({
-      title: "Welcome to Tigertest",
-      heading: "Welcome to Tigertest",
+      eyebrow: "WELCOME TO TIGERTEST",
+      voice: v,
+      title: EMAIL_INBOX.welcome(v).subject,
+      preheader: EMAIL_INBOX.welcome(v).preheader,
+      heading: v.id === "unknown" ? "Choose your next practice test." : `Start with one ${v.shortName} practice test.`,
       body: [
-        // Same opening for every exam; each swaps in its test length and one
-        // line on what the bank is built from.
         p("{{greeting}}"),
-        p(
-          `Fear not. Thousands of people have used Tigertest to pass their exams, and the ones who pass on their first try all have one thing in common: they actually tested themselves.`,
-        ),
-        ...(v.sourceLine ? [p(v.sourceLine)] : []),
-        p(
-          `<strong style="font-weight: 600;">The best way to prep is to spend 30 minutes doing practice tests.</strong> Answer questions one after the other, without instant feedback. That's exactly what the real test feels like.`,
-        ),
-        p(
-          `After ${v.questionsPerTest} questions, you'll have a really accurate picture of how ready you are.`,
-        ),
-        cta(DASH(v, "welcome"), "Take Your First Practice Test"),
-        p(
-          "You can use our training mode later to drill down on the stuff you got wrong. But start with a full test first - it's the fastest way to see where you actually stand.",
-        ),
+        p(v.id === "unknown" ? "Choose the exam you are preparing for, then start a practice session." : `You can practise for your ${v.testName} with Tigertest.`),
+        p("Start with one test, review your answers, then choose what to work on next."),
+        cta(DASH(v, "welcome"), v.id === "unknown" ? "Find Your Test" : `Open ${v.shortName} Practice`),
+        p("Prefer a shorter session? Choose a training set or skill drill from your dashboard."),
+        p("Practice results are a guide to your study, not an official exam score or a guarantee of passing."),
         signoff(),
       ].join("\n"),
     }),
@@ -183,12 +159,15 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
   // has no exam yet, and picks one when they make a class.
   welcomeTeacher: () =>
     emailShell({
-      title: "Welcome to Tigertest",
+      eyebrow: "YOUR TEACHER ACCOUNT",
+      title: EMAIL_INBOX.welcomeTeacher().subject,
+      preheader: EMAIL_INBOX.welcomeTeacher().preheader,
       heading: "Welcome to Tigertest",
+      unsubscribe: false,
       body: [
         p("{{greeting}}"),
         p(
-          `Thanks for signing up to teach with Tigertest. Classes are free, for any test on the site.`,
+          `Your Tigertest teacher account is ready. Here is how to set up the class you signed up to create.`,
         ),
         ul([
           "Make a class and pick the test your students are preparing for.",
@@ -204,37 +183,31 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
   // Stalled study. 25+ questions answered, no test completed, idle 6h.
   firstTestReminder: (v) =>
     emailShell({
-      title: "Take 5 minutes to try a test",
-      heading: "You were on a roll",
+      voice: v,
+      title: EMAIL_INBOX.firstTestReminder(v).subject,
+      preheader: EMAIL_INBOX.firstTestReminder(v).preheader,
+      heading: "Choose your next study step.",
       body: [
-        p(
-          "You've answered {{questionCount}} questions in training. You haven't taken a full test yet, and that's the part that tells you whether you're ready.",
-        ),
-        p(
-          `<strong style="font-weight: 600;">30 minutes, ${v.questionsPerTest} questions.</strong> Even if you bomb it, you'll know exactly what to study.`,
-        ),
-        cta(DASH(v, "first_test_reminder"), "Start Practice Test"),
+        p("You have started practising. A full test can help you choose what to study next."),
+        p(v.id === "sat" ? "Allow 2 hr 14 min of test time, plus the 10-minute break. For a shorter session, choose a skill drill instead." : "Open your dashboard, choose an available practice test, then review your answers."),
+        cta(DASH(v, "first_test_reminder"), "Open Practice"),
+        p("Practice results do not guarantee a pass on your official test."),
         signoff(),
       ].join("\n"),
     }),
 
-  // Completed exactly one test in the last 48 hours.
+  // Keep the default safe for readers whose entitlement is not supplied.
   secondTestNudge: (v) =>
     emailShell({
-      title: "One test down - here's what to do next",
-      heading: "Nice work on test #1! 🎉",
+      voice: v,
+      title: EMAIL_INBOX.secondTestNudge(v).subject,
+      preheader: EMAIL_INBOX.secondTestNudge(v).preheader,
+      heading: "Choose your next study step.",
       body: [
-        p(
-          `One test down. <a href="${STATS(
-            v,
-            "second_test_nudge",
-          )}" style="color: #FF6B35; text-decoration: none; font-weight: 500;">Your stats</a> show which question types tripped you up.`,
-        ),
-        p(
-          `<strong style="font-weight: 600;">Now take another one.</strong> The first test showed what you don't know. The second shows whether you're actually improving.`,
-        ),
-        cta(DASH(v, "second_test_nudge"), "Take Another Practice Test"),
-        p("If you bombed the first one, don't sweat it. Most people do."),
+        p("Your practice result is a starting point, not an official score."),
+        p("Review the answers you missed, practise one topic, then try another test when you are ready."),
+        cta(DASH(v, "second_test_nudge"), "Continue Practicing"),
+        p(`<a href="${STATS(v, "second_test_nudge")}" style="color: #FF6B35;">${EXAMS_V2.some(e => e.id === v.id) ? "Open your free study plan and mistake notebook" : "See your stats options"}</a>.${EXAMS_V2.some(e => e.id === v.id) ? "" : " Full stats may require paid access."}`),
         signoff(),
       ].join("\n"),
     }),
@@ -243,23 +216,25 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
   // is. DMV only: no other exam has a paywall.
   paywallAbandon: (v) =>
     emailShell({
-      title: "{{paywallName}} is still waiting",
-      heading: "You stopped at {{paywallName}}",
+      voice: v,
+      title: EMAIL_INBOX.paywallAbandon(v).subject,
+      preheader: EMAIL_INBOX.paywallAbandon(v).preheader,
+      heading: "Take another look at {{paywallName}}",
       body: [
         p(
-          "You've answered {{questionCount}} questions, then hit {{paywallName}} and stopped.",
+          "You recently opened {{paywallName}}. You can return to your practice when you are ready.",
         ),
         p(
-          `<strong style="font-weight: 600;">$9.99 opens it for good:</strong>`,
+          `<strong style="font-weight: 600;">Premium unlocks more practice:</strong>`,
         ),
         ul([
           "Safety &amp; Emergencies and State Laws, 100 questions",
           "Practice tests C and D",
           "Every question you miss, on repeat",
-          "Full stats on every exam you take next",
+          "Full stats on exams where these require Premium",
         ]),
-        cta(DASH(v, "paywall_abandon"), "Pick Up Where You Left Off"),
-        p("One payment, no subscription. A retest costs more."),
+        cta(DASH(v, "paywall_abandon"), "Open DMV Practice"),
+        p("Check the current price and payment details at checkout."),
         signoff(),
       ].join("\n"),
     }),
@@ -267,63 +242,52 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
   // 24h+ old, 50+ questions or 1+ test, active in the last 14 days. DMV only.
   upgradePitch: (v) =>
     emailShell({
-      title: "You're serious about this - here's what unlocks next",
+      voice: v,
+      title: EMAIL_INBOX.upgradePitch().subject,
+      preheader: EMAIL_INBOX.upgradePitch().preheader,
       heading: "You're doing the work 💪",
       body: [
         p(
-          "{{questionCount}} questions answered. That's more than most people manage.",
+          "You have been working on your practice questions.",
         ),
         p(
-          `The free tier is 2 training sets and 2 practice tests, so you've probably hit the limit. <strong style="font-weight: 600;">$9.99, once, unlocks the rest:</strong>`,
+          `The free tier is 2 training sets and 2 practice tests, with more available through Premium. <strong style="font-weight: 600;">Premium unlocks the rest:</strong>`,
         ),
         ul([
           "Safety &amp; Emergencies and State Laws, 100 more questions",
           "Practice tests C and D",
           "Your stats page, showing what you always get wrong",
-          "Full stats on every exam, not just this one",
+          "Full stats on other exams where Premium is required",
         ]),
-        cta(DASH(v, "upgrade_pitch"), "Upgrade to Premium - $9.99"),
+        cta(DASH(v, "upgrade_pitch"), "Open DMV Practice"),
+        p("Check the current price and payment details at checkout."),
         signoff(),
       ].join("\n"),
     }),
 
-  // Sent by the Stripe webhook the moment a purchase lands. Transactional, so
-  // no unsubscribe link. Premium is the DMV's extra sets and tests plus the
-  // full stats page of every exam in every country (the SAT and ACT went free Oct 31, 2026,
-  // so no v2 exam is sold any more). A buyer who paid from an exam's stats
-  // page (v.id is that exam) is led back to those stats; everyone else gets
-  // the DMV unlock first.
+  // Sent after confirmed payment. Context identifies the purchase page, not
+  // the current exam. Unknown purchase context stays account-wide; v2 study
+  // plans are free and must never be presented as a paid unlock.
   purchaseWelcome: (v) => {
     const campaign = "purchase_welcome";
-    const link = (path: string, label: string) =>
-      `<a href="${SITE}${path}?${utm(campaign)}" style="color: #1a1a1a; font-weight: 600; text-decoration: underline;">${label}</a>`;
-    const fromExam = v.id !== "dmv";
     const isV2 = EXAMS_V2.some((e) => e.id === v.id);
-
-    const examLine = fromExam
-      ? isV2
-        ? `${link(v.statsPath, `${v.shortName} stats`)}: your full study plan, every topic ranked by the points it's worth, and your mistake notebook`
-        : `${link(v.statsPath, `${v.shortName} stats`)}: every question you've answered, sorted by what you keep missing`
-      : null;
-    const dmvLine = `${link("/dmv/dashboard", "DMV permit test")}: Safety &amp; Emergencies and State Laws, practice tests C and D, and your stats page`;
-    const everyLine = "Full stats on every other exam on Tigertest, in every country, from the CDL to nursing and real estate";
-    const lines = examLine ? [examLine, everyLine, dmvLine] : [dmvLine, everyLine];
-
+    const knownPaidStats = v.id !== "unknown" && !isV2;
     return emailShell({
-      title: "You're in - here's what just unlocked",
-      heading: "You're in 🎉",
+      eyebrow: "PURCHASE CONFIRMATION",
+      expression: 1,
+      voice: v,
+      title: EMAIL_INBOX.purchaseWelcome(v).subject,
+      preheader: EMAIL_INBOX.purchaseWelcome(v).preheader,
+      heading: "Your Premium access is ready.",
       unsubscribe: false,
       body: [
-        p("Thanks for buying Premium. It's live on your account now, on every device you sign in on. Here's what it opened:"),
-        ul(lines),
-        fromExam
-          ? p(`Start with your ${v.shortName} stats. ${isV2 ? "They show where your next points are" : "They show what you keep missing"}, so your study time goes where it counts.`)
-          : p("Open your stats after the next test. It tells you where to spend your study time."),
-        fromExam
-          ? cta(STATS(v, campaign), `Open Your ${v.shortName} Stats`)
-          : cta(DASH(v, campaign), "Start With Safety & Emergencies"),
-        p("One-time payment, nothing to cancel. Reply if anything looks wrong and a human will read it."),
-        signoff(fromExam ? "Good luck on test day," : "Good luck at the DMV,"),
+        p("Your purchase is confirmed. Premium is active on your Tigertest account, on every device you sign in on."),
+        p("Premium includes the DMV's extra training sets and practice tests, and full stats on exams where those require paid access."),
+        ...(knownPaidStats ? [p(`Start with your full ${v.shortName} stats.`)] : []),
+        ...(isV2 ? [p(`Your ${v.shortName} tests, drills, study plan and mistake notebook were already free. This purchase adds the account-wide Premium features above.`)] : []),
+        cta(knownPaidStats ? STATS(v, campaign) : DASH(v, campaign), knownPaidStats ? `Open My ${v.shortName} Stats` : "Open Tigertest"),
+        p("Reply if anything looks wrong and a human will read it."),
+        signoff("Thanks,"),
       ].join("\n"),
     });
   },
@@ -331,40 +295,43 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
   // 5+ days idle with at least one test completed.
   reengagement: (v) =>
     emailShell({
-      title: "Test coming up soon?",
-      heading: "Test coming up soon?",
+      voice: v,
+      title: EMAIL_INBOX.reengagement(v).subject,
+      preheader: EMAIL_INBOX.reengagement(v).preheader,
+      heading: EMAIL_INBOX.reengagement(v).subject + ".",
       body: [
         p(
-          `Haven't seen you in a while. If ${your(v)} is close, a week away from practice questions is enough to forget the details.`,
+          `Ready for another session? Your ${v.testName} practice is here when you need it.`,
         ),
-        p("Take one more test and see if you're still sharp."),
+        p("Choose a practice test or a shorter training session when you are ready."),
         cta(DASH(v, "reengagement"), "Continue Practicing"),
         signoff(),
       ].join("\n"),
     }),
 
-  // Fired once, the first time someone completes all 8 steps. Pure
-  // celebration: nothing to buy, nothing to do. The unlock is latched in the
-  // store, so retaking a test can never re-trigger this. DMV only: the latch
-  // only exists on the DMV dashboard.
+  // Once per account, for the first earned dashboard: DMV, v1 or v2. The
+  // campaign supplies that dashboard's voice, not the account's current exam.
+  // Avoid fixed counts: v2 dashboards can include extra Basics steps, and
+  // the account-wide question count does not describe a single exam.
   superAmazingUnlocked: (v) =>
     emailShell({
-      title: "You unlocked Super Amazing Mode",
-      heading: "SUPER AMAZING MODE 🎉",
+      eyebrow: "YOU EARNED THIS",
+      expression: 2,
+      voice: v,
+      title: EMAIL_INBOX.superAmazingUnlocked(v).subject,
+      preheader: EMAIL_INBOX.superAmazingUnlocked(v).preheader,
+      heading: "You unlocked Super Amazing Mode",
       body: [
         p(
-          `You just finished all ${v.stepCount} steps. Every training set, every practice test, {{questionCount}} questions answered. That is the whole thing, done.`,
+          `You completed every step on your ${v.shortName} dashboard and unlocked Super Amazing Mode. <strong style="font-weight: 600;">You did the work.</strong>`,
         ),
         p(
-          `Almost nobody gets here. Most people take one test, decide they're probably fine, and wing it at the DMV. <strong style="font-weight: 600;">You did the work.</strong>`,
+          "So we turned on the fireworks. You earned them, and retaking a test or practising again will not take them away.",
         ),
         p(
-          `So we turned on the fireworks. Actual fireworks, on every page, forever. They're yours now and they are not going anywhere, even if you retake a test for fun.`,
+          "You can switch them on or off from the Super Amazing Mode card on your completed dashboard.",
         ),
         cta(DASH(v, "super_amazing"), "Go See The Fireworks"),
-        p(
-          "Go pass that test. You're more ready than almost anyone walking into the DMV today.",
-        ),
         signoff("Genuinely well done,"),
       ].join("\n"),
     }),
@@ -372,20 +339,22 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
   // 20+ days idle with at least one test completed.
   inactiveShareRequest: (v) =>
     emailShell({
-      title: "Did you pass?",
-      heading: "Did you pass?",
+      voice: v,
+      title: EMAIL_INBOX.inactiveShareRequest(v).subject,
+      preheader: EMAIL_INBOX.inactiveShareRequest(v).preheader,
+      heading: EMAIL_INBOX.inactiveShareRequest(v).subject,
       body: [
         p(
-          `We haven't seen you in a while, so we're guessing you went out and passed ${your(v)}. Congrats!`,
+          `What helped in your ${v.testName} practice, and what could work better? Reply to let me know.`,
         ),
         p(
-          `If Tigertest helped, <strong style="font-weight: 600;">please share it with a friend</strong>. Word of mouth is the #1 way people find us.`,
+          `If Tigertest helped, <strong style="font-weight: 600;">please share it with a friend</strong>. It helps other learners find practice for their next test.`,
         ),
         cta(
           "https://www.tigertest.io/?utm_source=tigertest&utm_medium=email&utm_campaign=inactive_share",
-          "Share Tigertest.io",
+          "Visit Tigertest",
         ),
-        p("And if you haven't taken your test yet, no rush. We're still here."),
+        p("If you are still studying, your practice is here when you need it."),
         signoff("Thanks for using Tigertest,"),
       ].join("\n"),
     }),
@@ -410,7 +379,9 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
 
     if (v.id === "dmv") {
       return emailShell({
-        title: "SAT and ACT, the Tigertest way",
+    voice: v,
+        title: EMAIL_INBOX.newTests().subject,
+      preheader: EMAIL_INBOX.newTests().preheader,
         heading: "SAT and ACT, the Tigertest way",
         body: [
           p(
@@ -435,7 +406,9 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
 
     const studyingSatOrAct = v.id === "sat" || v.id === "act";
     return emailShell({
-      title: "What should we build next?",
+    voice: v,
+      title: EMAIL_INBOX.newTests().subject,
+      preheader: EMAIL_INBOX.newTests().preheader,
       heading: "What should we build next?",
       body: [
         p(
@@ -459,8 +432,10 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
     const link = (href: string, label: string) =>
       `<a href="${href}" style="color: #1a1a1a; font-weight: 600; text-decoration: underline;">${label}</a>`;
     return emailShell({
-      title: "Turn anything into a practice test",
-      heading: "Turn anything into a practice test",
+    voice: v,
+      title: EMAIL_INBOX.quizzesLaunch().subject,
+      preheader: EMAIL_INBOX.quizzesLaunch().preheader,
+      heading: "Turn your notes into a practice quiz",
       body: [
         p(
           `Connect Tigertest to your own ChatGPT or Claude account. Add your notes, a chapter or a syllabus to a chat with Tigertest enabled, say "make this a Tigertest quiz", and you get a link to a real practice test:`,
@@ -469,7 +444,7 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
           "Timed tests",
           "A training set that keeps bringing back what you miss",
           "Flashcards",
-          "A score that says if you are ready",
+          "A practice score to help you choose what to review",
         ]),
         p("Share the link with your study group or class and see who got what."),
         cta(create, "Make a quiz"),
@@ -500,57 +475,61 @@ export interface ExitQuestionContent {
   isCorrect: boolean;
 }
 
-export function exitQuestionSubject(c: ExitQuestionContent): string {
-  return c.isCorrect ? "You nailed this one. Then you vanished." : "It was this question, wasn't it?";
+export function exitQuestionSubject(c: ExitQuestionContent, v?: EmailVoice): string {
+  if (v) return exitQuestionInbox(v, c.isCorrect).subject;
+  return c.isCorrect ? "Keep your practice going" : "A question worth another look";
 }
 
-/** The question card: stem, then every option with the right one in green. */
-function questionCard(c: ExitQuestionContent): string {
-  const rows = c.options
-    .map((o, i) => {
-      const right = o === c.answer;
-      const letter = String.fromCharCode(65 + i);
-      return `                    <tr><td style="padding: 8px 12px; border-radius: 8px; font-size: 15px; line-height: 1.5; ${
-        right ? "background-color: #e8f7ee; color: #146c34; font-weight: 600;" : "color: #4a4a4a;"
-      }">${letter}. ${esc(o)}${right ? " &#10003;" : ""}</td></tr>`;
-    })
-    .join("\n");
-  const answerOnly = c.options.length === 0 && c.answer
-    ? `                    <tr><td style="padding: 8px 12px; border-radius: 8px; background-color: #e8f7ee; color: #146c34; font-weight: 600; font-size: 15px;">Answer: ${esc(c.answer)}</td></tr>`
-    : "";
-  return `              <table role="presentation" style="width: 100%; border-collapse: separate; border-spacing: 0 4px; margin: 0 0 20px; padding: 16px; background-color: #FFF9F5; border: 1px solid #f0e6dd; border-radius: 12px;">
-                    <tr><td style="padding: 0 12px 8px; color: #1a1a1a; font-size: 17px; font-weight: 600; line-height: 1.5;">${esc(c.question)}</td></tr>
-${rows || answerOnly}
-              </table>`;
+/** Match the app's answer review without inventing an unavailable selected choice. */
+function questionCard(v: EmailVoice, c: ExitQuestionContent): string {
+  const brand = emailBrand(v.id);
+  const badge = c.isCorrect ? "Correct last time" : "Incorrect last time";
+  const badgeBg = c.isCorrect ? "#f0fdf4" : "#fef2f2";
+  const badgeInk = c.isCorrect ? "#166534" : "#991b1b";
+  const options = c.options.length ? c.options : c.answer ? [c.answer] : [];
+  const rows = options.map((option, index) => {
+    const correct = option === c.answer;
+    const border = correct ? "#22c55e" : "#d1d5db";
+    const fill = correct ? "#f0fdf4" : "#ffffff";
+    const color = correct ? "#14532d" : "#6b7280";
+    const label = c.options.length ? `${String.fromCharCode(65 + index)})` : "";
+    return `<tr><td style="padding: 0 0 12px;">
+<table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="border: 2px solid ${border}; border-radius: 8px; background-color: ${fill};"><tr>
+<td width="26" valign="top" style="padding: 16px 0 16px 16px; font-size: 18px; font-weight: 700; color: ${color};">${label}</td>
+<td style="padding: 16px; font-size: 15px; line-height: 1.5; color: ${color};">${esc(option)}${correct ? '<span style="display: block; font-size: 11px; font-weight: 700; margin-top: 5px; color: #15803d;">Correct answer</span>' : ""}</td>
+</tr></table></td></tr>`;
+  }).join("\n");
+  const explanation = c.explanation ? `<table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="margin-top: 12px; border: 1px solid ${brand.border}; border-radius: 8px; background-color: ${brand.light};"><tr><td style="padding: 16px;">
+<p style="margin: 0 0 8px; color: ${brand.ink}; font-size: 15px; font-weight: 700;">Explanation</p>
+<p style="margin: 0; color: ${brand.ink}; font-size: 15px; line-height: 1.6;">${esc(c.explanation)}</p>
+</td></tr></table>` : "";
+  return `<table data-question-review="true" role="presentation" width="100%" cellspacing="0" cellpadding="0" style="margin: 24px 0; border: 1px solid #e5e7eb; border-radius: 12px; background-color: #ffffff;"><tr><td style="padding: 20px;">
+<span style="display: inline-block; border-radius: 6px; padding: 6px 9px; background-color: ${badgeBg}; color: ${badgeInk}; font-size: 12px; font-weight: 700;">${badge}</span>
+<h2 style="font-size: 20px; line-height: 1.4; margin: 17px 0 20px; color: #111827; font-weight: 700;">${esc(c.question)}</h2>
+<table role="presentation" width="100%" cellspacing="0" cellpadding="0">${rows}</table>
+${explanation}
+</td></tr></table>`;
 }
 
 export function exitQuestionEmail(v: EmailVoice, c: ExitQuestionContent): string {
   const campaign = "exit_question";
-  const opener = c.isCorrect
-    ? [
-        p(`The last thing you did on Tigertest was get this question right. Then nothing. Not a peep. Honestly, a perfect mic drop.`),
-      ]
-    : [
-        p(`The last time you studied, this question showed up, you got it wrong, and then you disappeared. We get it. It's not you, it's the question.`),
-        p(`(It's a little bit you.)`),
-      ];
-  const why = c.explanation ? [p(`<strong style="font-weight: 600;">Why:</strong> ${esc(c.explanation)}`)] : [];
-  const closer = c.isCorrect
-    ? p(`Sadly, one right answer is not a passing score. Your ${esc(v.testName)} practice is right where you left it, so come and get a few more.`)
-    : p(`Now you know it, which puts you ahead of a lot of people. Lots of folks walk away right after a miss. The ones who pass are the ones who come back. The question promises to act like nothing happened.`);
+  const name = v.id === "unknown" ? "" : `${v.shortName} `;
   return emailShell({
-    title: exitQuestionSubject(c),
-    heading: c.isCorrect ? "You nailed this one. Then you vanished." : "We need to talk about this question",
+    voice: v,
+    eyebrow: "PICK UP YOUR PRACTICE",
+    title: exitQuestionSubject(c, v),
+    preheader: exitQuestionInbox(v, c.isCorrect).preheader,
+    heading: c.isCorrect ? `Keep your ${name}practice going.` : `A ${name}question worth another look.`,
     body: [
-      ...opener,
-      questionCard(c),
-      ...why,
-      closer,
-      cta(DASH(v, campaign), c.isCorrect ? "Keep the streak going" : "Get your revenge"),
-      signoff(c.isCorrect ? "Proud of you (mostly)," : "No hard feelings,"),
-      `              <p style="margin: 28px 0 0; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
-                P.S. If you already passed your test, congratulations! Hit reply and tell me. It genuinely makes my day.
-              </p>`,
+      p(c.isCorrect
+        ? `You got your last ${name}question right. Here is a quick refresher before your next session.`
+        : `This was the last ${name}question you answered. You did not get it right that time. Here is a quick review.`),
+      questionCard(v, c),
+      p(c.isCorrect
+        ? "Continue when you are ready. Your next study step can be a small one."
+        : "When you are ready, you can continue with another practice session."),
+      cta(DASH(v, campaign), `Continue ${name}Practice`),
+      signoff(),
     ].join("\n"),
   });
 }

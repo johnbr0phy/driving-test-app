@@ -22,12 +22,12 @@ import { Label } from '@/components/ui/label';
 // The welcome email for an account made on this page. keepalive lets it
 // finish while the page redirects back to the assistant; anything still
 // missed is sent by /api/cron/welcome-backstop.
-function sendWelcome(userId: string) {
+async function sendWelcome(userId: string) {
   fetch('/api/send-welcome-email', {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
+    headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${await getAuth(firebaseApp).currentUser?.getIdToken()}` },
     keepalive: true,
-    body: JSON.stringify({ userId, emailConsent: true, examId: null }),
+    body: JSON.stringify({ userId, signupUrl: window.location.href }),
   }).catch(() => {});
 }
 

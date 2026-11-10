@@ -18,7 +18,6 @@ import {
 } from "firebase/auth";
 import { auth } from "@/lib/firebase";
 import { flushPendingSaves, useStore } from "@/store/useStore";
-import { examIdFromSignupUrl, isTeacherSignupUrl } from "@/lib/email-voice";
 import { AccountConflictDialog } from "@/components/AccountConflictDialog";
 import { isInternalEmail, markInternalBrowser } from "@/lib/internal";
 import { claimEnrollments } from "@/lib/enrollment";
@@ -62,21 +61,19 @@ function shouldUseRedirectSignIn(): boolean {
   return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 }
 
-async function sendWelcomeEmail(userId: string, email: string, displayName: string | null, emailConsent: boolean) {
+async function sendWelcomeEmail(userId: string) {
   try {
     // The page URL says which exam the welcome email should be about: the
     // ?redirect= target on /signup, or the exam page itself for one-tap
-    // Google on GuestSaveCard. Else this device's current test. A signup
+    // Google on GuestSaveCard. No current-test or DMV default. A signup
     // from /teach is a teacher: they get the teacher welcome instead.
     const href = typeof window !== "undefined" ? window.location.href : null;
-    const teacher = isTeacherSignupUrl(href);
-    const examId = teacher ? undefined : examIdFromSignupUrl(href, useStore.getState().primaryExam);
     await fetch("/api/send-welcome-email", {
       method: "POST",
       // Finish the request even if the page navigates away right after signup.
       keepalive: true,
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ userId, email, displayName, emailConsent, examId, teacher }),
+      headers: { "Content-Type": "application/json", Authorization: `Bearer ${await auth.currentUser?.getIdToken()}` },
+      body: JSON.stringify({ userId, signupUrl: href }),
     });
   } catch (err) {
     console.error("Failed to send welcome email:", err);
@@ -210,7 +207,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
           const additionalInfo = getAdditionalUserInfo(result);
           if (additionalInfo?.isNewUser) {
             trackFunnelSignup();
-            sendWelcomeEmail(result.user.uid, result.user.email!, result.user.displayName, true);
+            sendWelcomeEmail(result.user.uid);
           }
         }
       })
@@ -227,7 +224,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       // Send verification email
       sendEmailVerification(userCredential.user).catch(err => console.error('Failed to send verification email:', err));
       // Send welcome email via Resend
-      sendWelcomeEmail(userCredential.user.uid, email, userCredential.user.displayName, true);
+      sendWelcomeEmail(userCredential.user.uid);
     }
   };
 
@@ -249,7 +246,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     const additionalInfo = getAdditionalUserInfo(result);
     if (result.user && additionalInfo?.isNewUser) {
       trackFunnelSignup();
-      sendWelcomeEmail(result.user.uid, result.user.email!, result.user.displayName, true);
+      sendWelcomeEmail(result.user.uid);
     }
   };
 

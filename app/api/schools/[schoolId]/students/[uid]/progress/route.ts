@@ -1,3 +1,4 @@
+import { SERVICE_INBOX, emailPreheader, emailText } from "@/lib/email-inbox";
 import { NextRequest, NextResponse } from "next/server";
 import { getAdminDb } from "@/lib/firebase-admin";
 
@@ -13,9 +14,10 @@ function buildPassEmail(studentName: string, studentEmail: string, schoolName: s
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Student passed all 8 sections</title>
+  <title>Student completed all 8 practice sections</title>
 </head>
 <body style="margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; background-color: #FFF9F5;">
+  ${emailPreheader(SERVICE_INBOX.schoolProgress(studentName).preheader)}
   <table role="presentation" style="width: 100%; border-collapse: collapse;">
     <tr>
       <td align="center" style="padding: 40px 20px;">
@@ -24,13 +26,13 @@ function buildPassEmail(studentName: string, studentEmail: string, schoolName: s
             <td style="padding: 40px 40px 24px; text-align: center;">
               <img src="https://www.tigertest.io/tiger.png" alt="Tigertest" style="width: 48px; height: auto; margin-bottom: 16px;" />
               <div style="font-size: 48px; margin-bottom: 12px;">🎉</div>
-              <h1 style="margin: 0; color: #1a1a1a; font-size: 24px; font-weight: 600;">A student just passed all 8 sections!</h1>
+              <h1 style="margin: 0; color: #1a1a1a; font-size: 24px; font-weight: 600;">A student completed all 8 practice sections!</h1>
             </td>
           </tr>
           <tr>
             <td style="padding: 0 40px 40px;">
               <p style="margin: 0 0 20px; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
-                Great news from <strong style="font-weight: 600;">${schoolName}</strong>:
+                Great news from <strong style="font-weight: 600;">${emailText(schoolName)}</strong>:
               </p>
               <table role="presentation" style="width: 100%; background: #FFF9F5; border-radius: 8px; padding: 20px; border-collapse: collapse; margin-bottom: 24px;">
                 <tr>
@@ -40,7 +42,7 @@ function buildPassEmail(studentName: string, studentEmail: string, schoolName: s
                 </tr>
                 <tr>
                   <td style="padding: 4px 0;">
-                    <span style="color: #1a1a1a; font-size: 17px; font-weight: 600;">${studentName}</span>
+                    <span style="color: #1a1a1a; font-size: 17px; font-weight: 600;">${emailText(studentName)}</span>
                   </td>
                 </tr>
                 <tr>
@@ -50,7 +52,7 @@ function buildPassEmail(studentName: string, studentEmail: string, schoolName: s
                 </tr>
                 <tr>
                   <td style="padding: 4px 0;">
-                    <span style="color: #4a4a4a; font-size: 15px;">${studentEmail}</span>
+                    <span style="color: #4a4a4a; font-size: 15px;">${emailText(studentEmail)}</span>
                   </td>
                 </tr>
                 <tr>
@@ -65,12 +67,12 @@ function buildPassEmail(studentName: string, studentEmail: string, schoolName: s
                 </tr>
               </table>
               <p style="margin: 0 0 20px; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
-                They've completed every practice section on Tigertest — they should be ready for the real DMV exam.
+                They completed all eight practice sections on Tigertest. Practice progress does not guarantee a pass on the official DMV exam.
               </p>
               <table role="presentation" style="margin: 24px 0; border-collapse: collapse;">
                 <tr>
                   <td align="center">
-                    <a href="https://www.tigertest.io/schools/dashboard" style="display: inline-block; padding: 14px 28px; background-color: #1a1a1a; color: #ffffff; text-decoration: none; border-radius: 50px; font-weight: 500; font-size: 15px;">View Dashboard</a>
+                    <a href="https://www.tigertest.io/schools/dashboard" style="display: inline-block; padding: 14px 28px; background-color: #1a1a1a; color: #ffffff; text-decoration: none; border-radius: 50px; font-weight: 500; font-size: 15px;">Open teaching tools</a>
                   </td>
                 </tr>
               </table>
@@ -83,7 +85,7 @@ function buildPassEmail(studentName: string, studentEmail: string, schoolName: s
           <tr>
             <td style="padding: 24px 40px; background-color: #FFF9F5; border-top: 1px solid #f0f0f0;">
               <p style="margin: 0; color: #999999; font-size: 12px; line-height: 1.6; text-align: center;">
-                You're receiving this because you're the admin of ${schoolName} on Tigertest.
+                You're receiving this because you're the admin of ${emailText(schoolName)} on Tigertest.
                 &nbsp;|&nbsp;
                 <a href="https://www.tigertest.io/privacy" style="color: #FF6B35; text-decoration: none;">Privacy Policy</a>
               </p>
@@ -187,7 +189,7 @@ export async function POST(
         const result = await sendEmail({
           kind: "transactional",
           to: adminEmail,
-          subject: `🎉 ${resolvedStudentName} passed all 8 sections on Tigertest!`,
+          subject: SERVICE_INBOX.schoolProgress(resolvedStudentName).subject,
           html: buildPassEmail(resolvedStudentName, resolvedStudentEmail, schoolName),
         });
         if (result.ok) {

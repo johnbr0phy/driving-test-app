@@ -12,7 +12,10 @@ import {
   trackPaywallHit,
   trackViewItem,
 } from "@/lib/analytics";
-import { useAuth } from "@/contexts/AuthContext";
+import { useAccountNavigation } from "@/hooks/useAccountNavigation";
+import { signupForDestination } from "@/lib/authDestination";
+import { AccountLoadRetry } from "@/components/AccountLoadRetry";
+import { DmvStatePrompt } from "@/components/dashboard/DmvStatePicker";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { useDmvTestLanguage } from "@/hooks/useTestLanguage";
 import { auth } from "@/lib/firebase";
@@ -60,7 +63,7 @@ function StatsContent() {
   const getQuestionPerformance = useStore((state) => state.getQuestionPerformance);
   const hasPremiumAccess = useStore((state) => state.hasPremiumAccess);
 
-  const { user } = useAuth();
+  const { user, ready: accountReady, loadFailed } = useAccountNavigation();
   // Students in a teacher's DMV class see every stat without Premium.
   const inClass = inClassFor(useClassMemberships(), DMV_EXAM_ID);
   const isPremium = hydrated ? hasPremiumAccess() || inClass : false;
@@ -68,6 +71,7 @@ function StatsContent() {
   const FREE_QUESTION_LIMIT_MOBILE = 2;
 
   const searchParams = useSearchParams();
+  const signupDestination = signupForDestination("/stats", searchParams.toString());
   const [activeTab, setActiveTab] = useState<"yours" | "community">(
     searchParams.get("tab") === "community" ? "community" : "yours"
   );
@@ -76,12 +80,12 @@ function StatsContent() {
   // them to the community tab instead (unless a tab was explicitly requested).
   const autoTabbed = useRef(false);
   useEffect(() => {
-    if (!hydrated || autoTabbed.current) return;
+    if (!hydrated || !accountReady || !user || autoTabbed.current) return;
     autoTabbed.current = true;
     if (searchParams.get("tab")) return;
     const totalAnswered = getQuestionPerformance().reduce((sum, p) => sum + p.timesAnswered, 0);
     if (totalAnswered === 0) setActiveTab("community");
-  }, [hydrated, searchParams, getQuestionPerformance]);
+  }, [hydrated, accountReady, user, searchParams, getQuestionPerformance]);
 
   const [sortField, setSortField] = useState<SortField>("wrong");
   const [sortDirection, setSortDirection] = useState<SortDirection>("desc");
@@ -89,7 +93,7 @@ function StatsContent() {
 
   const handleUpgrade = async () => {
     if (!user?.email || !user?.uid) {
-      router.push("/signup");
+      router.push(signupDestination);
       return;
     }
 
@@ -135,19 +139,12 @@ function StatsContent() {
     }
   };
 
-  // Redirect guests to signup
+  // Auth and the current account's cloud read must settle before either gate.
+  // A fresh browser can have isGuest=false while no user is signed in.
   useEffect(() => {
-    if (hydrated && isGuest) {
-      router.push("/signup");
-    }
-  }, [hydrated, isGuest, router]);
-
-  // Redirect to onboarding if no state selected
-  useEffect(() => {
-    if (hydrated && !selectedState) {
-      router.push("/dmv/dashboard");
-    }
-  }, [hydrated, selectedState, router]);
+    if (!accountReady) return;
+    if (!user || isGuest) { router.replace(signupDestination); return; }
+  }, [accountReady, user, isGuest, signupDestination, router]);
 
   // Get all questions for the current state
   const stateQuestions = useMemo(() => {
@@ -286,9 +283,17 @@ function StatsContent() {
     );
   };
 
-  if (!hydrated || !selectedState || isGuest) {
+  if (loadFailed && user) return <AccountLoadRetry uid={user.uid} />;
+  if (!hydrated || !accountReady || !user || isGuest) {
     return null;
   }
+
+  // Keep the requested stats URL (including its email tracking query) while
+  // collecting the prerequisite. A state choice reveals these stats in place.
+  if (!selectedState) return <div className="container mx-auto max-w-3xl px-4 py-6">
+    <h1 className="mb-4 text-xl font-semibold">Choose your state to view your DMV stats</h1>
+    <DmvStatePrompt />
+  </div>;
 
   return (
     <div className="flex-1 bg-gray-50 dark:bg-gray-950">
@@ -306,7 +311,7 @@ function StatsContent() {
           feature="full_stats"
           onUpgrade={handleUpgrade}
           isGuest={isGuest}
-          onSignUp={() => router.push("/signup")}
+          onSignUp={() => router.push(signupDestination)}
         />
 
         {/* Tab Navigation */}

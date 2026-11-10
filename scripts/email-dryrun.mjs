@@ -3,6 +3,12 @@
 // after deploy, and how long each backlog takes to drain. Sends nothing.
 import { readFileSync } from 'fs';
 import admin from 'firebase-admin';
+import { require as tsxRequire } from 'tsx/cjs/api';
+
+// Share the achievement resolver with the live campaign; never infer its
+// exam from a mutable current selection or an unscoped legacy timestamp.
+const { recentSuperAmazingUnlock } = tsxRequire('../lib/super-amazing-email.ts', import.meta.url);
+const { resolveUserExamId, voiceFor } = tsxRequire('../lib/email-voice.ts', import.meta.url);
 
 const env = {};
 for (const line of readFileSync('.env.local', 'utf8').split('\n')) {
@@ -74,6 +80,8 @@ snap.forEach((doc) => {
     a.creationTime.getTime()
   ));
   users.push({
+    raw: d,
+    inactiveDays: voiceFor(resolveUserExamId(d)).inactiveDays,
     lastActiveAt,
     creationTime: a.creationTime,
     completedTests: completed,
@@ -136,9 +144,8 @@ const CAMPAIGNS = [
     return lastActivity <= now - 20 * DAY;
   }],
   ['superAmazingUnlocked', 4 * 3600000, (u) => {
-    if (!active3d(u)) return false;
-    if (!u.superAmazingUnlockedAt) return false;
-    return now - u.superAmazingUnlockedAt.getTime() <= 7 * DAY;
+    if (now - u.lastActiveAt.getTime() > u.inactiveDays * DAY) return false;
+    return recentSuperAmazingUnlock(u.raw, now) !== null;
   }],
   // One-off whole-base announcement. Bypasses the quiet-days rule; 365d ceiling.
   ['newTests2026', DAY, (u) => {

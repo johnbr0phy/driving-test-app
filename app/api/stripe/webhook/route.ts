@@ -53,19 +53,27 @@ export async function POST(request: NextRequest) {
       // Update user's premium status in Firestore
       const adminDb = getAdminDb();
       const userRef = adminDb.collection('users').doc(userId);
-      const userDoc = await userRef.get();
-      const existingData = userDoc.exists ? userDoc.data() || {} : {};
+      // A redelivered event (Stripe retries) finds the payment already recorded:
+      // keep the first purchase date and do not send the welcome again.
+      const alreadyRecorded =
+        typeof session.payment_intent === 'string' &&
+        (await adminDb.collection('payments').doc(session.payment_intent).get()).exists;
 
-      await userRef.set({
-        ...existingData,
-        subscription: {
-          isPremium: true,
-          purchasedAt: new Date().toISOString(),
-          stripeCustomerId: session.customer as string,
-          stripePaymentId: session.payment_intent as string,
+      // Merge, never a read-then-overwrite: the buyer is back in the app while
+      // this runs, and a whole-doc write from a stale read erased whatever they
+      // saved in between.
+      await userRef.set(
+        {
+          subscription: {
+            isPremium: true,
+            ...(alreadyRecorded ? {} : { purchasedAt: new Date().toISOString() }),
+            stripeCustomerId: session.customer as string,
+            stripePaymentId: session.payment_intent as string,
+          },
+          lastUpdated: new Date().toISOString(),
         },
-        lastUpdated: new Date().toISOString(),
-      });
+        { merge: true }
+      );
 
       // What Stripe settled in dollars, for /admin revenue when the buyer paid
       // in another currency (lib/pricing.ts). Best-effort: a failed lookup
@@ -86,7 +94,8 @@ export async function POST(request: NextRequest) {
 
       // Create payment record for audit trail
       const paymentRef = adminDb.collection('payments').doc(session.payment_intent as string);
-      await paymentRef.set({
+      // Written once: a redelivery must not reset createdAt or a refunded status.
+      if (!alreadyRecorded) await paymentRef.set({
         userId,
         stripeCustomerId: session.customer,
         stripeSessionId: session.id,
@@ -114,7 +123,7 @@ export async function POST(request: NextRequest) {
       // granted.
       try {
         const buyerEmail = session.metadata?.email || session.customer_email;
-        if (buyerEmail) {
+        if (buyerEmail && !alreadyRecorded) {
           await sendCronEmail(
             userId,
             buyerEmail,

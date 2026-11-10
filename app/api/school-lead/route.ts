@@ -69,7 +69,7 @@ export async function POST(request: NextRequest) {
               <table role="presentation" style="margin: 32px 0; border-collapse: collapse;">
                 <tr>
                   <td align="center">
-                    <a href="https://tigertest.io/?utm_source=tigertest&utm_medium=email&utm_campaign=school_lead" style="display: inline-block; padding: 14px 28px; background-color: #1a1a1a; color: #ffffff; text-decoration: none; border-radius: 50px; font-weight: 500; font-size: 15px;">Try Tigertest</a>
+                    <a href="https://www.tigertest.io/?utm_source=tigertest&utm_medium=email&utm_campaign=school_lead" style="display: inline-block; padding: 14px 28px; background-color: #1a1a1a; color: #ffffff; text-decoration: none; border-radius: 50px; font-weight: 500; font-size: 15px;">Try Tigertest</a>
                   </td>
                 </tr>
               </table>

@@ -72,10 +72,10 @@ function emailShell({
   unsubscribe = true,
 }: ShellOptions): string {
   const footerLinks = unsubscribe
-    ? `<a href="https://tigertest.io/unsubscribe?token={{unsubscribeToken}}" style="color: #FF6B35; text-decoration: none;">Unsubscribe</a>
+    ? `<a href="https://www.tigertest.io/unsubscribe?token={{unsubscribeToken}}" style="color: #FF6B35; text-decoration: none;">Unsubscribe</a>
                 &nbsp;•&nbsp;
-                <a href="https://tigertest.io/privacy" style="color: #FF6B35; text-decoration: none;">Privacy Policy</a>`
-    : `<a href="https://tigertest.io/privacy" style="color: #FF6B35; text-decoration: none;">Privacy Policy</a>`;
+                <a href="https://www.tigertest.io/privacy" style="color: #FF6B35; text-decoration: none;">Privacy Policy</a>`
+    : `<a href="https://www.tigertest.io/privacy" style="color: #FF6B35; text-decoration: none;">Privacy Policy</a>`;
 
   return `<!DOCTYPE html>
 <html lang="en">
@@ -115,7 +115,7 @@ ${body}
 </html>`;
 }
 
-const SITE = "https://tigertest.io";
+const SITE = "https://www.tigertest.io";
 const utm = (campaign: string) =>
   `utm_source=tigertest&utm_medium=email&utm_campaign=${campaign}`;
 
@@ -382,7 +382,7 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
           `If Tigertest helped, <strong style="font-weight: 600;">please share it with a friend</strong>. Word of mouth is the #1 way people find us.`,
         ),
         cta(
-          "https://tigertest.io/?utm_source=tigertest&utm_medium=email&utm_campaign=inactive_share",
+          "https://www.tigertest.io/?utm_source=tigertest&utm_medium=email&utm_campaign=inactive_share",
           "Share Tigertest.io",
         ),
         p("And if you haven't taken your test yet, no rush. We're still here."),
@@ -474,7 +474,7 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
         p("Share the link with your study group or class and see who got what."),
         cta(create, "Make a quiz"),
         p(
-          `The steps to connect ChatGPT or Claude, and the quizzes you have made, are at ${link(create, "tigertest.io/create")}.`,
+          `The steps to connect ChatGPT or Claude, and the quizzes you have made, are at ${link(create, "https://www.tigertest.io/create")}.`,
         ),
         p(`Your ${v.testName} practice is still here, unchanged: ${link(DASH(v, campaign), "open your dashboard")}.`),
         signoff("Thanks,"),

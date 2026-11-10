@@ -2,12 +2,13 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getAdminAuth, getAdminDb } from '@/lib/firebase-admin';
 import { consumePendingAuth, saveAuthCode, getClient, PendingAuth } from '@/lib/server/oauth-store';
 import { randomUUID } from 'crypto';
+import { isAllowedRedirectUri, redirectTarget } from '@/lib/oauthRedirect';
 
 // GET: fetch display info for the consent screen without consuming the pending auth.
 export async function GET(request: NextRequest): Promise<NextResponse> {
   const { searchParams } = new URL(request.url);
   const pendingId = searchParams.get('pendingId');
-  if (!pendingId) {
+  if (!pendingId || pendingId.includes('/')) {
     return NextResponse.json({ error: 'pendingId is required' }, { status: 400 });
   }
 
@@ -25,7 +26,10 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
   const client = await getClient(pending.clientId);
   const clientName = client?.clientName ?? 'Unknown Client';
 
-  return NextResponse.json({ clientName, scope: pending.scope }, { status: 200 });
+  return NextResponse.json(
+    { clientName, scope: pending.scope, redirectTo: redirectTarget(pending.redirectUri) },
+    { status: 200 },
+  );
 }
 
 // POST: verify Firebase ID token and mint the OAuth authorization code.
@@ -56,7 +60,7 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
   }
 
   const { pendingId } = body;
-  if (typeof pendingId !== 'string' || !pendingId) {
+  if (typeof pendingId !== 'string' || !pendingId || pendingId.includes('/')) {
     return NextResponse.json({ error: 'pendingId is required' }, { status: 400 });
   }
 
@@ -65,6 +69,12 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
   const pending = await consumePendingAuth(pendingId);
   if (!pending) {
     return NextResponse.json({ error: 'Invalid or expired authorization request' }, { status: 400 });
+  }
+
+  // Clients registered before redirect URIs were checked may hold a script or
+  // plain-http URI; never send a code there.
+  if (!isAllowedRedirectUri(pending.redirectUri)) {
+    return NextResponse.json({ error: 'This client has an unsafe redirect address' }, { status: 400 });
   }
 
   const code = randomUUID();

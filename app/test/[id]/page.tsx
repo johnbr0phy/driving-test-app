@@ -20,6 +20,7 @@ import { auth } from "@/lib/firebase";
 import { trackBeginCheckout, trackStatsEntry } from "@/lib/analytics";
 import { DMV_EXAM_ID } from "@/lib/classes";
 import { recordClassAnswer, recordClassTest } from "@/lib/classProgress";
+import { DMV_ROUTES } from "@/lib/examRoutes";
 import { paywallVariantForCheckout } from "@/lib/paywallTest";
 
 export default function TestPage() {
@@ -105,6 +106,13 @@ export default function TestPage() {
   useEffect(() => {
     if (!hydrated || initialized.current) {
       return; // Wait for hydration or already initialized
+    }
+
+    // /test/7 or /test/abc is no test: back to the dashboard before anything
+    // is started or saved under that id.
+    if (!DMV_ROUTES.testIds.includes(testId)) {
+      router.replace("/dmv/dashboard");
+      return;
     }
 
     // Check if test is unlocked

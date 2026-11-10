@@ -62,10 +62,10 @@ export async function POST(
 
   const successUrl =
     body.successUrl ??
-    `${process.env.NEXT_PUBLIC_BASE_URL ?? "https://tigertest.io"}/schools/dashboard?billing=success`;
+    `${process.env.NEXT_PUBLIC_BASE_URL ?? "https://www.tigertest.io"}/schools/dashboard?billing=success`;
   const cancelUrl =
     body.cancelUrl ??
-    `${process.env.NEXT_PUBLIC_BASE_URL ?? "https://tigertest.io"}/schools/dashboard`;
+    `${process.env.NEXT_PUBLIC_BASE_URL ?? "https://www.tigertest.io"}/schools/dashboard`;
 
   // Look up school so we can pass admin email to Stripe
   let adminEmail: string | undefined;

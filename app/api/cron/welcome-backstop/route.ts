@@ -61,6 +61,9 @@ export async function GET(req: NextRequest) {
       const data = doc.data();
       if (data?.emailsSent?.includes(WELCOME_KEY)) continue;
       if (data?.unsubscribed === true) continue;
+      // Someone who left the email box unticked at signup (the browser call
+      // returned no_consent on purpose) is not mailed an hour later either.
+      if (data?.emailConsent === false) continue;
       missing.push({ uid: doc.id, examId: isKnownExamId(data?.primaryExam) ? data?.primaryExam : undefined });
     }
 

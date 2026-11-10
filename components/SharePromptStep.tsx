@@ -49,7 +49,7 @@ export function SharePromptStep({
     return () => cancelAnimationFrame(f);
   }, []);
 
-  const url = `${typeof window !== "undefined" ? window.location.origin : "https://tigertest.io"}/?utm_source=friend`;
+  const url = `${typeof window !== "undefined" ? window.location.origin : "https://www.tigertest.io"}/?utm_source=friend`;
 
   const count = (how: "share" | "copy") => {
     setDone(how);

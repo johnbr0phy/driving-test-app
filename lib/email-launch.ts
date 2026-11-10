@@ -15,7 +15,7 @@ import { postalFooterLine } from "@/lib/emailPostal";
 
 export const LAUNCH_EXPERIMENT = "newTests2026";
 
-const SITE = "https://tigertest.io";
+const SITE = "https://www.tigertest.io";
 /** Images skip the apex-to-www redirect, which many mail clients won't follow for images. */
 const IMG = "https://www.tigertest.io";
 const SAT = "#1450d2";

@@ -81,7 +81,7 @@ function buildInviteEmail(schoolName: string): string {
               <table role="presentation" style="margin: 32px 0; border-collapse: collapse;">
                 <tr>
                   <td align="center">
-                    <a href="https://tigertest.io/signup?utm_source=school-invite&utm_medium=email&utm_campaign=school-invite" style="display: inline-block; padding: 14px 28px; background-color: #1a1a1a; color: #ffffff; text-decoration: none; border-radius: 50px; font-weight: 500; font-size: 15px;">Start Practising</a>
+                    <a href="https://www.tigertest.io/signup?utm_source=school-invite&utm_medium=email&utm_campaign=school-invite" style="display: inline-block; padding: 14px 28px; background-color: #1a1a1a; color: #ffffff; text-decoration: none; border-radius: 50px; font-weight: 500; font-size: 15px;">Start Practising</a>
                   </td>
                 </tr>
               </table>
@@ -94,7 +94,7 @@ function buildInviteEmail(schoolName: string): string {
           <tr>
             <td style="padding: 24px 40px; background-color: #FFF9F5; border-top: 1px solid #f0f0f0;">
               <p style="margin: 0; color: #999999; font-size: 12px; line-height: 1.6; text-align: center;">
-                <a href="https://tigertest.io/privacy" style="color: #FF6B35; text-decoration: none;">Privacy Policy</a>
+                <a href="https://www.tigertest.io/privacy" style="color: #FF6B35; text-decoration: none;">Privacy Policy</a>
               </p>
             </td>
           </tr>

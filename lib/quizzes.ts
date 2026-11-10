@@ -376,7 +376,7 @@ export function quizDashboardPath(code: string): string {
 }
 
 export function quizUrl(code: string): string {
-  const origin = typeof window === "undefined" ? "https://tigertest.io" : window.location.origin;
+  const origin = typeof window === "undefined" ? "https://www.tigertest.io" : window.location.origin;
   return `${origin}${quizPath(code)}`;
 }
 

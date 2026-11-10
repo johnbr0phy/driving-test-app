@@ -205,7 +205,7 @@ async function dmvAnswer(uid: string, questionId: string, letter: string) {
 
 /** The public site, for links an AI client shows the person. */
 function siteUrl(): string {
-  return (process.env.MCP_OAUTH_ISSUER_URL || 'https://tigertest.io').replace(/\/$/, '');
+  return (process.env.MCP_OAUTH_ISSUER_URL || 'https://www.tigertest.io').replace(/\/$/, '');
 }
 
 /** Every link for one quiz: the play page, its three modes and the creator's report. */

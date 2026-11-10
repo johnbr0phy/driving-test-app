@@ -2,7 +2,8 @@ import { getAdminDb } from "@/lib/firebase-admin";
 import { classQuestionLookup, type ClassQuestionDisplay } from "@/lib/server/classQuestions";
 import FRESHNESS from "@/lib/examFreshness.json";
 import LANDING_DATES from "@/lib/landingDates.json";
-import type { QuestionFlag } from "@/lib/questionQuality";
+import { applyFlagReviews, type FlagReview, type QuestionFlag, type ReviewedFlag } from "@/lib/questionQuality";
+import { loadFlagReviews } from "@/lib/server/questionFlagReviews";
 
 // The /admin Questions tab (components/admin/QuestionsTab.tsx): the nightly
 // flags (globalStats/questionFlags), open user reports, findings from the
@@ -22,6 +23,8 @@ export interface ReportRow {
   /** The account email, or the email a guest typed; null when neither. */
   email?: string | null;
   createdAt: string;
+  /** The audit's decision on this question, when it was made after the report. */
+  review?: FlagReview;
 }
 
 export interface FindingRow {
@@ -62,9 +65,11 @@ export interface FreshnessRow {
 }
 
 export interface QuestionHealthPayload {
-  flags: (QuestionFlag & { text?: ClassQuestionDisplay })[];
+  /** Flags that still need someone first, then the ones the audit cleared. */
+  flags: (ReviewedFlag & { text?: ClassQuestionDisplay })[];
   flagsUpdatedAt: string | null;
   totalFlags: number;
+  clearedFlags: number;
   byKind: Record<string, number>;
   answeredByExam: Record<string, { questions: number; answers: number }>;
   reports: (ReportRow & { text?: ClassQuestionDisplay })[];
@@ -82,13 +87,14 @@ const DAY = 86_400_000;
 
 export async function buildQuestionHealth(): Promise<QuestionHealthPayload> {
   const db = getAdminDb();
-  const [flagsDoc, reportsSnap, totalsDoc, findingsSnap, auditSnap, sourcesSnap] = await Promise.all([
+  const [flagsDoc, reportsSnap, totalsDoc, findingsSnap, auditSnap, sourcesSnap, reviews] = await Promise.all([
     db.doc("globalStats/questionFlags").get(),
     db.collection("questionReports").where("status", "==", "open").limit(500).get(),
     db.doc("analytics/questionReports").get(),
     db.collection("questionAuditFindings").where("status", "==", "open").limit(300).get(),
     db.collection("questionAudits").orderBy("at", "desc").limit(1).get(),
     db.collection("sourceWatch").select("url", "exams", "changed", "changedAt", "ratio", "failures", "error", "checkedAt").get(),
+    loadFlagReviews(db),
   ]);
 
   const lookups = new Map<string, (id: string) => ClassQuestionDisplay | undefined>();
@@ -98,12 +104,17 @@ export async function buildQuestionHealth(): Promise<QuestionHealthPayload> {
   };
 
   const flagsData = flagsDoc.data() ?? {};
-  const flags = ((flagsData.flags as QuestionFlag[]) ?? []).slice(0, 200).map((f) => ({ ...f, text: textFor(f.examId, f.questionId) }));
+  // Joined here as well as in the nightly cron, so a review from this morning's audit shows at once.
+  const reviewed = applyFlagReviews((flagsData.flags as QuestionFlag[]) ?? [], reviews);
+  const flags = reviewed.flags.slice(0, 200).map((f) => ({ ...f, text: textFor(f.examId, f.questionId) }));
 
   const reports = reportsSnap.docs
     .map((d) => ({ id: d.id, ...(d.data() as Omit<ReportRow, "id">) }))
     .sort((a, b) => (b.createdAt || "").localeCompare(a.createdAt || ""))
-    .map((r) => ({ ...r, text: textFor(r.examId, r.questionId) }));
+    .map((r) => {
+      const review = reviews[r.examId]?.[r.questionId];
+      return { ...r, ...(review && review.at > (r.createdAt || "") ? { review } : {}), text: textFor(r.examId, r.questionId) };
+    });
 
   const findings = findingsSnap.docs
     .map((d) => ({ id: d.id, ...(d.data() as Omit<FindingRow, "id">) }))
@@ -145,8 +156,9 @@ export async function buildQuestionHealth(): Promise<QuestionHealthPayload> {
   return {
     flags,
     flagsUpdatedAt: flagsData.updatedAt ?? null,
-    totalFlags: flagsData.totalFlags ?? 0,
-    byKind: flagsData.byKind ?? {},
+    totalFlags: reviewed.open,
+    clearedFlags: reviewed.cleared,
+    byKind: reviewed.byKind,
     answeredByExam: flagsData.answeredByExam ?? {},
     reports,
     reportTotals: { total: totals.total ?? 0, byReason: totals.byReason ?? {} },

@@ -6,6 +6,8 @@ import { getInternalUids } from '@/lib/server/internalUsers';
 import { TEST_CATALOG } from '@/lib/testCatalog';
 import { REGIONS } from '@/lib/region';
 import FRESHNESS from '@/lib/examFreshness.json';
+import { applyFlagReviews } from '@/lib/questionQuality';
+import { loadFlagReviews } from '@/lib/server/questionFlagReviews';
 import { mergeMentions, searchMentions, type WebMention } from '@/lib/server/webMentions';
 
 // The daily update at the top of the /admin Today tab: Claude reads the
@@ -47,20 +49,24 @@ type BriefNumbers = ReturnType<typeof briefNumbers> & {
  * and dated exam changes now due. A wrong answer key is worth a bullet.
  */
 async function questionQualityNumbers(db: Firestore) {
-  const [flags, findings, audit, sources] = await Promise.all([
+  const [flags, findings, audit, sources, reviews] = await Promise.all([
     db.doc('globalStats/questionFlags').get(),
     db.collection('questionAuditFindings').where('status', '==', 'open').select('verdict', 'examId').get(),
     db.collection('questionAudits').orderBy('at', 'desc').limit(1).get(),
     db.collection('sourceWatch').where('changed', '==', true).select('exams').get(),
+    loadFlagReviews(db),
   ]);
   const f = flags.data() ?? {};
+  // Flags the audit already checked and found right are not news.
+  const reviewed = applyFlagReviews(f.flags ?? [], reviews);
   const today = new Date().toISOString().slice(0, 10);
   const verdicts: Record<string, number> = {};
   for (const d of findings.docs) verdicts[d.data().verdict] = (verdicts[d.data().verdict] || 0) + 1;
   return {
     openStudentReports: f.openReports ?? 0,
-    questionsFlaggedByStats: f.totalFlags ?? 0,
-    likelyWrongKeysByStats: f.byKind?.keySuspect ?? 0,
+    questionsFlaggedByStats: reviewed.open,
+    likelyWrongKeysByStats: reviewed.byKind.keySuspect ?? 0,
+    flagsCheckedAndClearedByAudit: reviewed.cleared,
     openAuditFindings: verdicts,
     lastAudit: audit.docs[0]?.data() ? { at: audit.docs[0].data().at, checked: audit.docs[0].data().checked, findings: audit.docs[0].data().findings } : null,
     officialPagesChanged: sources.docs.map((d) => (d.data().exams as string[]).join('/')),
@@ -220,7 +226,7 @@ John does not like reading much text. Write:
 - then 3 to 5 lines starting with "- ", each at most 25 words
 - then, when homepageSearches has anything worth acting on, one last line starting with "- Searches:" (at most 35 words)
 
-What to cover, most important first. A milestone beats everything: a first ever (the first class a teacher made, the first school linking to us, a first sale on a new paywall) is the headline, named specifically (which school, which exam). teachersAndSchools.newClassesSincePreviousUpdate and newSchoolsLinkingSincePreviousUpdate list what is new since the previous update; any entry there is news, and when allTime.classes or allTime.schoolsLinkingToUs equals the number new, it is the first ever. Teachers and schools matter more than their small numbers suggest: one class brings a room of students and the next class. After that: money (revenue and purchases, and which paywall sold), what changed since the previous update, a country that is growing or still empty (byCountry; name it, and the exam driving it), anything unusual (a spike, a drop, an exam suddenly busy), and one concrete thing worth doing. A likely wrong answer key (questionQuality: likelyWrongKeysByStats, openAuditFindings.wrong_key) or an exam change now due is worth a bullet: students lose points on the real test when we teach them a wrong answer. Skip anything that has not changed and is not actionable.
+What to cover, most important first. A milestone beats everything: a first ever (the first class a teacher made, the first school linking to us, a first sale on a new paywall) is the headline, named specifically (which school, which exam). teachersAndSchools.newClassesSincePreviousUpdate and newSchoolsLinkingSincePreviousUpdate list what is new since the previous update; any entry there is news, and when allTime.classes or allTime.schoolsLinkingToUs equals the number new, it is the first ever. Teachers and schools matter more than their small numbers suggest: one class brings a room of students and the next class. After that: money (revenue and purchases, and which paywall sold), what changed since the previous update, a country that is growing or still empty (byCountry; name it, and the exam driving it), anything unusual (a spike, a drop, an exam suddenly busy), and one concrete thing worth doing. A wrong answer key the audit confirmed (questionQuality.openAuditFindings.wrong_key; a fix PR is opened automatically and waits for review) or an exam change now due is worth a bullet; likelyWrongKeysByStats are only suspicions the audit has not checked yet (it checks them the next morning), worth a mention only when there are several: students lose points on the real test when we teach them a wrong answer. Skip anything that has not changed and is not actionable.
 
 The "Searches:" line is about tests to build next. homepageSearches lists what people typed on the homepage search since the previous update that found no test (foundNothing) or found tests but opened none. For each, work out the real exam the person meant (expand acronyms, fix typos, use their country) and check it against the list of tests we already have. If we have it, it is a search fix: say "add <query> as a name for <test>". If we do not, and it is a real exam many people take with a written multiple-choice part, suggest building it, best first, with how many times it was typed. Ignore gibberish, names and stray letters. Say when a query is ambiguous rather than guessing. Leave the line out when there is nothing worth acting on.
 

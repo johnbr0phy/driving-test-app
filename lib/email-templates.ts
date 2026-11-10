@@ -148,13 +148,10 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
         p("Fear not. Thousands of people have used Tigertest to pass their exams, and the ones who pass on their first try all have one thing in common: they actually tested themselves."),
         p(
           v.id === "unknown"
-            ? "So here is the whole plan. Pick the exam you are preparing for and take one practice test today."
-            : `So here is the whole plan. Take one ${v.shortName} practice test today.`,
+            ? "So pick your exam and take one practice test today. The questions you miss are your study list."
+            : `So take one ${v.shortName} practice test today. The questions you miss are your study list.`,
         ),
-        p("Your score on the first one does not matter. The questions you miss do: each comes with the right answer and the reason for it, and that list is what to study next."),
         cta(DASH(v, "welcome"), v.id === "unknown" ? "Find Your Test" : `Take a ${v.shortName} Practice Test`),
-        p("Short on time? Do a training set instead. It brings back the questions you miss until you get them right, and you can stop whenever you like."),
-        p("I can't promise you a pass, and a practice score is not an official one. What I can tell you is that testing yourself beats rereading your notes, and it is far better to find the gaps here than in the exam room."),
         signoff(),
       ].join("\n"),
     }),

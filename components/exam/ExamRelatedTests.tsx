@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { practiceLabel } from "@/lib/practiceLabel";
 import { TEST_CATALOG, relatedTests } from "@/lib/testCatalog";
 import { CommunityUpsell } from "@/components/CommunityUpsell";
 import { regionHomePath, regionInfo, regionOfTest } from "@/lib/region";
@@ -104,7 +105,7 @@ function ExamTopicLinks({ examId, lang }: { examId: string; lang: Language }) {
   return (
     <section aria-labelledby="topic-questions" className="max-w-5xl mx-auto px-6 pt-12 md:pt-16">
       <h2 id="topic-questions" className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 text-center mb-2">
-        {exam.shortName} practice questions by topic
+        {practiceLabel(exam.shortName)} practice questions by topic
       </h2>
       <p className="text-gray-600 dark:text-gray-300 text-center mb-6">Ten questions on each area of the exam, with the answers explained.</p>
       <ul className="flex flex-wrap justify-center gap-x-5 gap-y-2">

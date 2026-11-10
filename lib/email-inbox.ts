@@ -1,4 +1,5 @@
 import type { EmailVoice } from "@/lib/email-voice";
+import { practiceLabel } from "@/lib/practiceLabel";
 import { EXAMS_V2 } from "@/lib/v2/registry";
 
 export interface InboxCopy { subject: string; preheader: string }
@@ -12,11 +13,13 @@ export function inboxLabel(value: unknown, fallback: string, limit = 60): string
 }
 
 const exam = (v: EmailVoice) => v.id === "unknown" ? "" : `${inboxLabel(v.shortName, "")} `;
+/** Before "practice": "Try a Nigerian Army recruitment practice test", never "... test practice test". */
+const practice = (v: EmailVoice) => v.id === "unknown" ? "" : `${inboxLabel(practiceLabel(v.shortName), "")} `;
 
 /** One source for delivery subjects and rendered inbox previews. No send policy lives here. */
 export const EMAIL_INBOX = {
   welcome: (v: EmailVoice): InboxCopy => ({
-    subject: v.id === "unknown" ? "Welcome to Tigertest" : `Start your ${exam(v)}practice`,
+    subject: v.id === "unknown" ? "Welcome to Tigertest" : `Start your ${practice(v)}practice`,
     preheader: "Take one practice test today. The questions you miss are your study list.",
   }),
   welcomeTeacher: (): InboxCopy => ({
@@ -24,7 +27,7 @@ export const EMAIL_INBOX = {
     preheader: "Choose a test, share your class link, and follow your students' practice.",
   }),
   firstTestReminder: (v: EmailVoice): InboxCopy => ({
-    subject: `Try a ${exam(v)}practice test`,
+    subject: `Try a ${practice(v)}practice test`,
     preheader: "Use a practice result to choose your next study topic.",
   }),
   secondTestNudge: (v: EmailVoice): InboxCopy => ({
@@ -46,7 +49,7 @@ export const EMAIL_INBOX = {
       : "Your account-wide Premium access is active. See what your purchase includes.",
   }),
   reengagement: (v: EmailVoice): InboxCopy => ({
-    subject: `Continue your ${exam(v)}practice`,
+    subject: `Continue your ${practice(v)}practice`,
     preheader: "Choose one small study step when you are ready.",
   }),
   superAmazingUnlocked: (v: EmailVoice): InboxCopy => ({
@@ -54,7 +57,7 @@ export const EMAIL_INBOX = {
     preheader: "Open your completed dashboard to see the fireworks.",
   }),
   inactiveShareRequest: (v: EmailVoice): InboxCopy => ({
-    subject: `How was your ${exam(v)}practice?`,
+    subject: `How was your ${practice(v)}practice?`,
     preheader: "Reply with your feedback, or share Tigertest with a friend.",
   }),
   newTests: (): InboxCopy => ({
@@ -69,7 +72,7 @@ export const EMAIL_INBOX = {
 
 export function exitQuestionInbox(v: EmailVoice, isCorrect: boolean): InboxCopy {
   return isCorrect ? {
-    subject: `Keep your ${exam(v)}practice going`,
+    subject: `Keep your ${practice(v)}practice going`,
     preheader: "Revisit your last question and its answer before your next session.",
   } : {
     subject: `A ${exam(v)}question worth another look`,

@@ -5,6 +5,7 @@ const fs = require('node:fs');
 const { EMAIL_INBOX, SERVICE_INBOX, exitQuestionInbox, emailPreheader, inboxLabel, emailText } = require('../lib/email-inbox.ts');
 const { EMAIL_TEMPLATES, exitQuestionEmail, exitQuestionSubject } = require('../lib/email-templates.ts');
 const { voiceFor } = require('../lib/email-voice.ts');
+const { practiceLabel } = require('../lib/practiceLabel.ts');
 const { ALL_EXAMS } = require('../lib/exams.ts');
 const { EXAMS_V2 } = require('../lib/v2/registry.ts');
 const { LAUNCH_VARIANTS, SENDING_VARIANTS, PROPOSED_LAUNCH_VARIANTS, pickLaunchVariant } = require('../lib/email-launch.ts');
@@ -31,7 +32,9 @@ test('study subjects use the supplied event exam; unknown stays neutral', () => 
   for (const id of allIds.filter(id => id !== 'unknown')) {
     const v = voiceFor(id);
     for (const key of ['welcome', 'firstTestReminder', 'secondTestNudge', 'reengagement', 'superAmazingUnlocked', 'inactiveShareRequest']) {
-      assert.ok(EMAIL_INBOX[key](v).subject.includes(v.shortName), `${id}/${key}`);
+      // Before "practice" a descriptive trailing "test" or "exam" is dropped (lib/practiceLabel.ts).
+      assert.ok(EMAIL_INBOX[key](v).subject.includes(practiceLabel(v.shortName)), `${id}/${key}`);
+      assert.doesNotMatch(EMAIL_INBOX[key](v).subject, /\b(test|exam) practice\b/, `${id}/${key}`);
     }
   }
   const v = voiceFor(undefined);
@@ -142,4 +145,11 @@ test('legacy service templates escape hostile names and emails without adding li
     for (const match of html.matchAll(/href="([^\"]+)"/g)) assert.equal(new URL(match[1]).hostname, 'www.tigertest.io');
     assert.doesNotMatch(html, /tracked automatically|View Dashboard|ready for the real DMV exam|cover everything/);
   }
+});
+
+test("a short name ending in a descriptive test or exam never doubles before practice", () => {
+  assert.equal(practiceLabel("Nigerian Army recruitment test"), "Nigerian Army recruitment");
+  assert.equal(practiceLabel("LTO exam"), "LTO");
+  assert.equal(practiceLabel("Police Exam"), "Police Exam");
+  assert.equal(practiceLabel("DMV"), "DMV");
 });

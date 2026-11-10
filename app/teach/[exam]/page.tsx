@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { practiceLabel } from "@/lib/practiceLabel";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { TEACHES } from "@/components/exam/ExamClassFaq";
@@ -21,7 +22,7 @@ function copy(slug: string) {
   if (!test) return null;
   const course = TEACHES[test.id];
   const title = `${test.shortName} Practice for Your Class`;
-  const description = `Teach ${course}? Make a free Tigertest class for the ${test.shortName} practice test: post one link, students join with a name, and you see scores and the topics the class misses.`;
+  const description = `Teach ${course}? Make a free Tigertest class for the ${practiceLabel(test.shortName)} practice test: post one link, students join with a name, and you see scores and the topics the class misses.`;
   const faqs = [
     { q: `Is the ${test.shortName} class free?`, a: `Yes. Classes are free for teachers. A student in your class also gets that test's full stats and every step of it at no charge.` },
     { q: "Do my students need accounts?", a: "No. A student opens your class link, types the name you know them by and starts practicing. An account is optional and keeps their progress across devices." },
@@ -75,14 +76,14 @@ export default async function TeachExamPage({ params }: Params) {
           <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-brand-dark">For instructors</p>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-gray-50 mb-6 tracking-tight">Free {title}</h1>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
-            {test.questions.toLocaleString("en-US")} {test.shortName} practice questions with explanations, set as class practice in a minute. You see every
+            {test.questions.toLocaleString("en-US")} {practiceLabel(test.shortName)} practice questions with explanations, set as class practice in a minute. You see every
             student&apos;s progress and what the class keeps missing.
           </p>
           <Link href={`/teach/new?exam=${test.id}`} className="inline-block rounded-full bg-gray-900 dark:bg-white px-8 py-4 text-lg font-semibold text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200">
             Create a free {test.shortName} class
           </Link>
           <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">
-            Or <Link href={test.href} className="underline underline-offset-2">see the {test.shortName} practice test</Link> first.
+            Or <Link href={test.href} className="underline underline-offset-2">see the {practiceLabel(test.shortName)} practice test</Link> first.
           </p>
         </div>
       </div>

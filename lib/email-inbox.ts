@@ -17,7 +17,7 @@ const exam = (v: EmailVoice) => v.id === "unknown" ? "" : `${inboxLabel(v.shortN
 export const EMAIL_INBOX = {
   welcome: (v: EmailVoice): InboxCopy => ({
     subject: v.id === "unknown" ? "Welcome to Tigertest" : `Start your ${exam(v)}practice`,
-    preheader: "Take a practice test, review your answers, and choose what to study next.",
+    preheader: "Take one practice test today. The questions you miss are your study list.",
   }),
   welcomeTeacher: (): InboxCopy => ({
     subject: "Set up your first Tigertest class",

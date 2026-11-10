@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 // consent and children's pages), app/api/account/delete (what deletion
 // removes), lib/classes.ts and lib/quizzes.ts (what teachers and quiz makers
 // see), lib/funnel.ts and the other anonymous counters.
-const UPDATED = "November 6, 2026";
+const UPDATED = "November 10, 2026";
 const CONTACT = "john@johnbrophy.net";
 
 const h2 = "text-2xl font-semibold mb-4 mt-2";
@@ -73,8 +73,10 @@ export default function PrivacyPage() {
                 you came from a school learning system.
               </li>
               <li>
-                <strong>Payments:</strong> if you buy Premium, Stripe handles the card. We receive the amount, currency,
-                country, date and the page you bought from, never your card number.
+                <strong>Payments:</strong> if you buy Premium, Stripe handles the card or other payment method. We receive
+                the amount, currency, country, date, the page you bought from and how you first found Tigertest (the
+                first page you opened and whether you came from a search engine, an AI assistant, a friend&apos;s link
+                or directly), never your card number.
               </li>
               <li>
                 <strong>AI assistants:</strong> if you connect Claude, ChatGPT or another assistant, the sign-in link

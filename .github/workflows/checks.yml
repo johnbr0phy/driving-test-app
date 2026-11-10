@@ -42,5 +42,8 @@ jobs:
       - name: Training parts and bank sizes are current
         run: npx tsx scripts/build-training-parts.ts --check
 
+      - name: State exam facts are current
+        run: python3 -I tools/build_state_exam_facts.py --check
+
       - name: DMV translated banks match English
         run: python3 -I scripts/review-question-banks.py

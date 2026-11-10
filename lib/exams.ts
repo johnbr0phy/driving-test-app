@@ -17885,6 +17885,8 @@ export function getExamByPath(pathname: string | null | undefined): ExamConfig |
       pathname === e.slug ||
       pathname.startsWith(`${e.slug}/`) ||
       pathname === e.landingPath ||
+      // State landings sit under the family landing (lib/stateLandings.ts).
+      (!!e.landingPath && pathname.startsWith(`${e.landingPath}/`)) ||
       Object.values(e.translations ?? {}).some((tr) => tr.landingPath === pathname)
   );
 }

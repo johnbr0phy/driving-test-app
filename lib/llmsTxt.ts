@@ -5,6 +5,7 @@ import { EXAMS } from "./exams";
 import { TEST_CATALOG, TEST_GROUPS, getCatalogEntry, type TestCatalogEntry } from "./testCatalog";
 import { NON_DRIVING_TESTS, REGIONS, regionHomePath, regionOfTest } from "./region";
 import { SITE_URL } from "@/lib/siteUrl";
+import { FAMILY_TERMS, STATE_FAMILIES, stateLandingPath, stateVariants } from "./stateLandings";
 
 // /llms.txt and /llms-full.txt (https://llmstxt.org), built from the test
 // catalog, the exam facts and the state data, so a new exam or a changed
@@ -110,6 +111,17 @@ const QUIZ_SECTION = `## Quizzes: a practice test from your own material
 - Public quizzes that enough people have played are listed at ${siteUrl}/quizzes.
 - Free accounts keep 3 quizzes of up to 50 questions; Premium ($9.99 one time) allows 100 quizzes of up to 200 questions.`;
 
+/** State versions of the real estate and insurance exams, one landing each. */
+function stateExamSection(): string {
+  const blocks = STATE_FAMILIES.map((family) => {
+    const lines = stateVariants(family).map(
+      (v) => `- [${v.jurisdiction!.name} ${FAMILY_TERMS[family].title}](${siteUrl}${stateLandingPath(v)}): ${v.questionsPerTest} questions checked against ${v.jurisdiction!.name} law, one full-length practice exam at ${v.passPct}% to pass.`
+    );
+    return `### ${FAMILY_TERMS[family].title} by state\n\n${lines.join("\n")}`;
+  });
+  return `## State exams: real estate and insurance\n\nEach state version has its own questions on that state's law, free to start; the final training set is part of Premium.\n\n${blocks.join("\n\n")}`;
+}
+
 export function renderLlmsTxt(): string {
   const groups = nonDmvGroups()
     .map((g) => `### ${g.title}\n\n${g.tests.map(examLine).join("\n")}`)
@@ -119,6 +131,7 @@ export function renderLlmsTxt(): string {
     DMV_SECTION,
     countrySection(),
     `## Other practice tests\n\nAll tests: ${siteUrl}/tests\n\n${groups}`,
+    stateExamSection(),
     translatedSection(),
     TEACH_SECTION,
     QUIZ_SECTION,
@@ -167,6 +180,7 @@ export function renderLlmsFullTxt(): string {
     DMV_SECTION,
     `### DMV written test by state\n\nFormat of each state's written knowledge (permit) test. "Online test" is whether the state lets you take it online. Confirm with your state's agency before test day.\n\n${stateTable()}`,
     exams,
+    stateExamSection(),
     translatedSection(),
     TEACH_SECTION,
     QUIZ_SECTION,

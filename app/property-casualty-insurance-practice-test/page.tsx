@@ -14,68 +14,68 @@ const siteUrl = SITE_URL;
 const statePractice = [
   {
     name: "Texas",
-    href: "/property-casualty-insurance/tx/dashboard",
+    href: "/property-casualty-insurance-practice-test/texas",
     body: "130 source-checked questions on the Pearson VUE Texas outline: 100 general and 30 Texas questions, including TWIA, the FAIR Plan and PIP.",
   },
   {
     name: "Florida",
-    href: "/property-casualty-insurance/fl/dashboard",
+    href: "/property-casualty-insurance-practice-test/florida",
     body: "150 questions weighted to the 2-20 general lines outline: general knowledge plus Florida law, PIP, hurricane rules and Citizens.",
   },
   {
     name: "California",
-    href: "/property-casualty-insurance/ca/dashboard",
+    href: "/property-casualty-insurance-practice-test/california",
     body: "150 questions like CDI's combined property and casualty exam, with Prop 103, the earthquake offer, wildfire rules and the FAIR Plan.",
   },
   // state variants batch 2 (generated)
   {
     name: "New York",
-    href: "/property-casualty-insurance/ny/dashboard",
+    href: "/property-casualty-insurance-practice-test/new-york",
     body: "150 questions like PSI's Series 17-56 exam, with New York no-fault, UM/SUM, Regulation 79, 3425/3426 cancellation rules, workers' comp, DBL and excess lines.",
   },
   {
     name: "Pennsylvania",
-    href: "/property-casualty-insurance/pa/dashboard",
+    href: "/property-casualty-insurance-practice-test/pennsylvania",
     body: "150 questions like PSI's Series 16-06 exam, with Pennsylvania tort election, first-party benefits, UM/UIM stacking, cancellation rules, workers' comp and the FAIR Plan.",
   },
   {
     name: "Illinois",
-    href: "/property-casualty-insurance/il/dashboard",
+    href: "/property-casualty-insurance-practice-test/illinois",
     body: "Both Illinois lines, Property and Casualty, in one 150-question test: 90 general and 60 Illinois questions on cancellation and nonrenewal, the FAIR Plan, UM/UIM and licensing.",
   },
   {
     name: "Ohio",
-    href: "/property-casualty-insurance/oh/dashboard",
+    href: "/property-casualty-insurance-practice-test/ohio",
     body: "150 questions like PSI's combined property and casualty exam (Series 11-36), including Ohio's valued policy law, mine subsidence, UM/UIM, auto cancellation and the state workers' comp fund.",
   },
   {
     name: "Georgia",
-    href: "/property-casualty-insurance/ga/dashboard",
+    href: "/property-casualty-insurance-practice-test/georgia",
     body: "125 questions like Pearson VUE's Georgia property and casualty combo exam: 100 general and 25 Georgia questions, including UM options and the 2025 DUI rule.",
   },
   {
     name: "North Carolina",
-    href: "/property-casualty-insurance/nc/dashboard",
+    href: "/property-casualty-insurance-practice-test/north-carolina",
     body: "Both North Carolina exams in one 110-question test: Property Agent and Casualty Agent, with 28 North Carolina questions on the Rate Bureau, coastal and FAIR plans, required UM/UIM and workers' comp.",
   },
   {
     name: "Michigan",
-    href: "/property-casualty-insurance/mi/dashboard",
+    href: "/property-casualty-insurance-practice-test/michigan",
     body: "150 questions like PSI's combined property and casualty exam (16-81), including the 2019 no-fault reform (PIP choices, $3,000 mini-tort), the Essential Insurance Act and workers' comp.",
   },
   {
     name: "New Jersey",
-    href: "/property-casualty-insurance/nj/dashboard",
+    href: "/property-casualty-insurance-practice-test/new-jersey",
     body: "Both New Jersey producer exams, Property and Casualty, in one 150-question test: 88 general and 62 New Jersey questions, from tort options, PIP and SAIP to the FAIR Plan and workers' comp.",
   },
   {
     name: "Virginia",
-    href: "/property-casualty-insurance/va/dashboard",
+    href: "/property-casualty-insurance-practice-test/virginia",
     body: "135 questions like Prometric's Series 11-03 exam: general topics with Virginia licensing, homeowners, auto UM and cancellation, and workers' comp law.",
   },
   {
     name: "Washington",
-    href: "/property-casualty-insurance/wa/dashboard",
+    href: "/property-casualty-insurance-practice-test/washington",
     body: "150 questions like PSI's property and casualty combo exam: 105 general and 45 Washington questions, including UIM and the 60-day cancellation notice.",
   },
   // end batch 2
@@ -264,7 +264,7 @@ export default function PncLandingPage() {
             >
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-2">{s.name}</h3>
               <p className="text-gray-600 dark:text-gray-300 mb-3">{s.body}</p>
-              <span className="text-brand-dark font-semibold">Start {s.name} practice &rarr;</span>
+              <span className="text-brand-dark font-semibold">{s.name} practice exam &rarr;</span>
             </a>
           ))}
         </div>

@@ -34,6 +34,8 @@ export interface SitemapEntry {
 export { SITE_URL } from "@/lib/siteUrl";
 import { SITE_URL } from "@/lib/siteUrl";
 import { landingUpdatedAt, latestLandingUpdate } from "@/lib/landingDates";
+import { allStateLandings } from "./stateLandings";
+import { STATE_EXAM_LANDINGS_UPDATED_AT } from "./seoDates";
 
 export function isSitemapSegment(value: string): value is SitemapSegment {
   return (SITEMAP_SEGMENTS as readonly string[]).includes(value);
@@ -128,6 +130,13 @@ export async function buildSegment(segment: SitemapSegment): Promise<SitemapEntr
           lastModified: landingUpdatedAt(exam.id),
           changeFrequency: "monthly" as const,
           priority: 0.8,
+        })),
+        // State versions of real estate and insurance (/real-estate-practice-test/california).
+        ...allStateLandings().map(({ path }) => ({
+          url: `${SITE_URL}${path}`,
+          lastModified: STATE_EXAM_LANDINGS_UPDATED_AT,
+          changeFrequency: "monthly" as const,
+          priority: 0.7,
         })),
         // Translated landings (/es/examen-practica-cdl).
         ...EXAMS.flatMap((exam) =>

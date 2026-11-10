@@ -14,68 +14,68 @@ const siteUrl = SITE_URL;
 const statePractice = [
   {
     name: "Texas",
-    href: "/life-health-insurance/tx/dashboard",
+    href: "/life-health-insurance-practice-test/texas",
     body: "130 source-checked questions on the Pearson VUE Texas outline: 100 general and 30 Texas questions, including HMO rules.",
   },
   {
     name: "Florida",
-    href: "/life-health-insurance/fl/dashboard",
+    href: "/life-health-insurance-practice-test/florida",
     body: "150 questions like the real 2-15 exam: general knowledge plus Florida law for life, annuities (including variable) and health.",
   },
   {
     name: "California",
-    href: "/life-health-insurance/ca/dashboard",
+    href: "/life-health-insurance-practice-test/california",
     body: "150 questions like CDI's combined life and accident and health exam, with California law, senior protections and Cal-COBRA.",
   },
   // state variants batch 2 (generated)
   {
     name: "New York",
-    href: "/life-health-insurance/ny/dashboard",
+    href: "/life-health-insurance-practice-test/new-york",
     body: "150 questions like PSI's combined Series 17-55 exam, with New York Insurance Law, Regulations 60, 187 and 194, DBL and Paid Family Leave woven in.",
   },
   {
     name: "Pennsylvania",
-    href: "/life-health-insurance/pa/dashboard",
+    href: "/life-health-insurance-practice-test/pennsylvania",
     body: "150 questions like PSI's Series 16-03 exam, with Pennsylvania free look, grace, reinstatement, Medigap, long-term care and the 2024 rebating and CE rules.",
   },
   {
     name: "Illinois",
-    href: "/life-health-insurance/il/dashboard",
+    href: "/life-health-insurance-practice-test/illinois",
     body: "Both Illinois lines, Life and Accident & Health, in one 150-question test: 88 general and 62 Illinois questions on licensing, replacement, Medicare supplement and long-term care.",
   },
   {
     name: "Ohio",
-    href: "/life-health-insurance/oh/dashboard",
+    href: "/life-health-insurance-practice-test/ohio",
     body: "150 questions like PSI's combined life, accident and health exam (Series 11-35), with Ohio rules on licensing, replacement, health insuring corporations, dependents and long-term care.",
   },
   {
     name: "Georgia",
-    href: "/life-health-insurance/ga/dashboard",
+    href: "/life-health-insurance-practice-test/georgia",
     body: "125 questions like Pearson VUE's Georgia life, accident and sickness combo exam: 100 general and 25 Georgia law questions.",
   },
   {
     name: "North Carolina",
-    href: "/life-health-insurance/nc/dashboard",
+    href: "/life-health-insurance-practice-test/north-carolina",
     body: "Both North Carolina exams in one 110-question test: the Life Agent and Accident and Health Agent exams, with 28 North Carolina law questions.",
   },
   {
     name: "Michigan",
-    href: "/life-health-insurance/mi/dashboard",
+    href: "/life-health-insurance-practice-test/michigan",
     body: "150 questions like PSI's combined life, accident and health exam (16-80), with Michigan Insurance Code rules on licensing, life policy provisions, dependents and long-term care.",
   },
   {
     name: "New Jersey",
-    href: "/life-health-insurance/nj/dashboard",
+    href: "/life-health-insurance-practice-test/new-jersey",
     body: "Both New Jersey producer exams, Life and Accident & Health, in one 150-question test: 88 general and 62 New Jersey questions, including replacement, prompt pay and temporary disability.",
   },
   {
     name: "Virginia",
-    href: "/life-health-insurance/va/dashboard",
+    href: "/life-health-insurance-practice-test/virginia",
     body: "140 questions like Prometric's combined Series 11-01 exam: general topics with Virginia licensing, policy, Medicare supplement and long-term care law.",
   },
   {
     name: "Washington",
-    href: "/life-health-insurance/wa/dashboard",
+    href: "/life-health-insurance-practice-test/washington",
     body: "150 questions like PSI's life and disability combo exam: 105 general and 45 Washington insurance law questions.",
   },
   // end batch 2
@@ -266,7 +266,7 @@ export default function InsuranceLandingPage() {
             >
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-2">{s.name}</h3>
               <p className="text-gray-600 dark:text-gray-300 mb-3">{s.body}</p>
-              <span className="text-brand-dark font-semibold">Start {s.name} practice &rarr;</span>
+              <span className="text-brand-dark font-semibold">{s.name} practice exam &rarr;</span>
             </a>
           ))}
         </div>

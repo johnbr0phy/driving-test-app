@@ -152,9 +152,23 @@ const SAMPLE_COPY: Partial<Record<Language, { title: (name: string) => string; s
  * bank) and the headings; it defaults to the exam's base language, so a
  * native exam's landing shows its own questions with no prop.
  */
-export function ExamSampleQuestions({ examId, count = 6, lang }: { examId: ExamId; count?: number; lang?: Language }) {
+export function ExamSampleQuestions({
+  examId,
+  count = 6,
+  lang,
+  page,
+}: {
+  examId: ExamId;
+  count?: number;
+  lang?: Language;
+  /** A page that is not the exam's catalog landing (a state version): its own name, question total and URL path. */
+  page?: { shortName: string; name: string; questions: number; path: string };
+}) {
   const exam = getExamById(examId);
-  const test = getCatalogEntry(examId);
+  const entry = getCatalogEntry(examId);
+  const test = page
+    ? { shortName: page.shortName, name: page.name, questions: page.questions, href: page.path }
+    : entry;
   if (!exam || !test) return null;
   const language = lang ?? examBaseLanguage(exam);
   const sample = pickSampleQuestions(getExamQuestions(examId, language), count);
@@ -164,7 +178,7 @@ export function ExamSampleQuestions({ examId, count = 6, lang }: { examId: ExamI
   const shortName = language === "en" ? test.shortName : localizeExam(exam, language).shortName;
   const locale = examLandingLocale(examId, language);
   const total = test.questions.toLocaleString(locale);
-  const landing = language === examBaseLanguage(exam) ? exam.landingPath ?? test.href : exam.translations?.[language]?.landingPath ?? test.href;
+  const landing = page ? page.path : language === examBaseLanguage(exam) ? exam.landingPath ?? test.href : exam.translations?.[language]?.landingPath ?? test.href;
 
   const options = (q: Question) => [q.optionA, q.optionB, q.optionC, q.optionD];
   const key = (q: Question) => Math.max(0, LETTERS.indexOf(q.correctAnswer as (typeof LETTERS)[number]));

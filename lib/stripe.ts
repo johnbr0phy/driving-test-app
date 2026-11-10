@@ -17,8 +17,11 @@ export function getStripe(): Stripe {
 // inline from lib/pricing.ts.
 export const PREMIUM_PRICE_ID = process.env.STRIPE_SINGLE_PRICE_ID;
 
-// Premium product metadata (used as fallback if no STRIPE_PRICE_ID configured)
+// Premium product metadata: what the Stripe checkout page shows for every
+// non-dollar price (inline price_data). Dollar checkouts show the product
+// behind STRIPE_SINGLE_PRICE_ID, whose description is edited in the Stripe
+// dashboard: keep the two in step.
 export const PREMIUM_PRODUCT = {
   name: 'Tigertest Premium',
-  description: 'One-time unlock: DMV Training Sets 3-4 and Practice Tests 3-4, plus full stats on every exam',
+  description: 'One-time unlock, no subscription: the final training set and practice test on every exam (DMV sets and tests 3-4), plus full stats on every exam',
 };

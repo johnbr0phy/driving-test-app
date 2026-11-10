@@ -76,11 +76,11 @@ export const ELEVENPLUS: ExamV2Config = {
   // steps with the two tests). Each drill is 20 exam-level items.
   drillSize: 20,
   drills: [
-    { key: "reading", name: "Comprehension", section: "english", domains: ["elevenplusReading"], blurb: "Stories, a poem and information texts: find the answer, read between the lines and work out what words mean.", basics: ["elevenplusFindIt", "elevenplusReadBetween", "elevenplusWordMeaning"] },
+    { key: "reading", name: "Comprehension", section: "english", domains: ["elevenplusReading"], blurb: "Stories, a poem and information texts: find the answer, read between the lines and work out what words mean.", basicsLocale: "en-GB", basics: ["elevenplusFindIt", "elevenplusReadBetween", "elevenplusWordMeaning", "mainIdea"] },
     { key: "spag", name: "Spelling, Punctuation and Grammar", section: "english", domains: ["elevenplusSpag"], blurb: "Spot the mistake or choose No mistake, then pick the right word: tricky spellings, apostrophes, speech marks, word classes." },
-    { key: "number", name: "Number and Calculation", section: "maths", domains: ["elevenplusNumber"], blurb: "Written methods, place value, fractions, decimals, percentages, ratio, primes and negative numbers.", basics: ["elevenplusFractionOf", "elevenplusPercentOf", "elevenplusBidmas"] },
+    { key: "number", name: "Number and Calculation", section: "maths", domains: ["elevenplusNumber"], blurb: "Written methods, place value, fractions, decimals, percentages, ratio, primes and negative numbers.", basics: ["elevenplusFractionOf", "elevenplusPercentOf", "elevenplusBidmas", "ks2AddFractions"] },
     { key: "problem", name: "Problem Solving", section: "maths", domains: ["elevenplusProblem"], blurb: "Money, time, measures, area and perimeter, angles, coordinates, tables, pie charts and simple algebra." },
-    { key: "vrWords", name: "Verbal Reasoning: Words", section: "vr", domains: ["elevenplusVrWords"], blurb: "Synonyms, opposites, hidden words, move a letter, compound words, missing letters, odd ones out and analogies.", basics: ["elevenplusHiddenWords", "elevenplusMoveLetter", "elevenplusMissingLetters"] },
+    { key: "vrWords", name: "Verbal Reasoning: Words", section: "vr", domains: ["elevenplusVrWords"], blurb: "Synonyms, opposites, hidden words, move a letter, compound words, missing letters, odd ones out and analogies.", basicsLocale: "en-GB", basics: ["synonyms", "elevenplusHiddenWords", "elevenplusMoveLetter", "elevenplusMissingLetters"] },
     { key: "vrCodes", name: "Verbal Reasoning: Codes", section: "vr", domains: ["elevenplusVrCodes"], blurb: "Letter series, letter and number codes, number series, letter sums, related numbers and logic puzzles.", basics: ["elevenplusAlphabetSteps", "elevenplusLetterCodes", "elevenplusNumberSeries", "elevenplusLetterSums"] },
   ],
   composite: { name: "Overall score", min: 0, max: 100, combine: overallPercent },

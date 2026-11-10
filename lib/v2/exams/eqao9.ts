@@ -104,9 +104,9 @@ export const EQAO9: ExamV2Config = {
   drills: [
     { key: "number", name: "Number", section: "a", domains: ["eqao9Number"], blurb: "Number sets, powers and exponent laws, scientific notation, fractions and integers, rates, percents and proportions. 20% of the assessment.", basics: ["exponentRules", "scientificNotation", "fractionOps", "negativeNumbers", "ratios"] },
     { key: "algebra", name: "Algebra", section: "a", domains: ["eqao9Algebra"], blurb: "Expressions and equations, reading and changing code, linear and non-linear relations, slope, intersections and inequalities. 36% of the assessment.", basics: ["distributing", "solveX", "substitution", "slope", "inequalities"] },
-    { key: "data", name: "Data", section: "a", domains: ["eqao9Data"], blurb: "Quartiles and box plots, scatter plots and correlation, lines of best fit, choosing a model and the modelling process.", basics: ["meanMedian", "readingTable", "trends"] },
-    { key: "geometry", name: "Geometry and Measurement", section: "a", domains: ["eqao9Geometry"], blurb: "Pythagorean relationship, circle and triangle properties, unit conversions, surface area and volume, and changing dimensions.", basics: ["pythagorean", "circleBasics", "triangleAngles"] },
-    { key: "financial", name: "Financial Literacy", section: "a", domains: ["eqao9Financial"], blurb: "Simple and compound interest, appreciation and depreciation, the cost of borrowing, down payments and budgets.", basics: ["percents", "percentChange", "exponentialGrowth"] },
+    { key: "data", name: "Data", section: "a", domains: ["eqao9Data"], blurb: "Quartiles and box plots, scatter plots and correlation, lines of best fit, choosing a model and the modelling process.", basics: ["meanMedian", "readingTable", "trends", "fsmScatter"] },
+    { key: "geometry", name: "Geometry and Measurement", section: "a", domains: ["eqao9Geometry"], blurb: "Pythagorean relationship, circle and triangle properties, unit conversions, surface area and volume, and changing dimensions.", basics: ["areaPerimeter", "pythagorean", "circleBasics", "triangleAngles"] },
+    { key: "financial", name: "Financial Literacy", section: "a", domains: ["eqao9Financial"], blurb: "Simple and compound interest, appreciation and depreciation, the cost of borrowing, down payments and budgets.", basics: ["percents", "percentChange", "ratios", "exponentialGrowth"] },
   ],
   composite: { name: "Overall score", min: 0, max: 100, combine: overallPercent },
   defaultGoal: 70,

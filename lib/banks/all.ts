@@ -168,6 +168,7 @@ import "./phmidwife";
 import "./phpsychom";
 import "./phnapolcom";
 import "./afpsat";
+import "./phnat";
 import "./phcle";
 import "./phinsurance";
 import "./phrebroker";

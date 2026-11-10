@@ -1002,6 +1002,10 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
     "color": "hsl(225, 70%, 20%)",
     "tint": "hsl(225, 70%, 96%)"
   },
+  "phnat": {
+    "color": "hsl(310, 55%, 32%)",
+    "tint": "hsl(310, 55%, 96%)"
+  },
   "afpsat": {
     "color": "hsl(85, 70%, 20%)",
     "tint": "hsl(85, 70%, 96%)"

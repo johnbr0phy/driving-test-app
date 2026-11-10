@@ -5,6 +5,7 @@ import { QuizRow } from "@/components/QuizRow";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { useCommunityStats, type CommunityStatsData } from "@/hooks/useCommunityStats";
 import { trackDailyQuizAnswer } from "@/lib/analytics";
+import { showsTestTakerCount } from "@/lib/communityStats";
 
 const FREE_LIMIT = 5;
 const FREE_LIMIT_MOBILE = 2;
@@ -55,12 +56,14 @@ export function CommunityWrongQuestionsList({
 
   return (
     <div className="space-y-4">
-      <p className="text-sm text-gray-500 dark:text-gray-400">
-        {t("stats.basedOnAnswers")}{" "}
-        <span className="font-medium text-gray-700 dark:text-gray-200">
-          {data.totalUsers.toLocaleString()} {t("stats.realTestTakers")}
-        </span>
-      </p>
+      {showsTestTakerCount(data.totalUsers) && (
+        <p className="text-sm text-gray-500 dark:text-gray-400">
+          {t("stats.basedOnAnswers")}{" "}
+          <span className="font-medium text-gray-700 dark:text-gray-200">
+            {data.totalUsers.toLocaleString()} {t("stats.realTestTakers")}
+          </span>
+        </p>
+      )}
 
       <div className="space-y-2">
         {visibleQuestions.map((q, idx) => (

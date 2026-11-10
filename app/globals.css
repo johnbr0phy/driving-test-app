@@ -3431,6 +3431,20 @@
     --brand-gradient-to: 215 45% 95%;
   }
 
+  /* Nursing Aptitude Test (Philippines) theme */
+  [data-theme="phnat"] {
+    --brand: 310 55% 32%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 310 45% 95%;
+    --brand-hover: 310 55% 27%;
+    --brand-dark: 310 55% 24%;
+    --brand-darker: 310 50% 17%;
+    --brand-muted: 310 25% 68%;
+    --brand-border: 310 25% 80%;
+    --brand-border-light: 310 22% 89%;
+    --brand-gradient-to: 330 45% 96%;
+  }
+
   /* AFPSAT (AFP Service Aptitude Test) theme */
   [data-theme="afpsat"] {
     --brand: 85 70% 20%;
@@ -7567,6 +7581,17 @@
     --brand-darker: 225 65% 78%;
   }
 
+  .dark [data-theme="phnat"] {
+    --brand: 310 55% 49.7%;
+    --brand-hover: 310 55% 41.7%;
+    --brand-light: 310 45% 13%;
+    --brand-gradient-to: 330 40% 11%;
+    --brand-border-light: 310 22% 24%;
+    --brand-border: 310 25% 34%;
+    --brand-muted: 310 25% 45%;
+    --brand-dark: 310 55% 65%;
+    --brand-darker: 310 50% 78%;
+  }
   .dark [data-theme="afpsat"] {
     --brand: 85 70% 29.8%;
     --brand-hover: 85 70% 21.8%;

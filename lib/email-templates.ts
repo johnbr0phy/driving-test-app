@@ -142,14 +142,16 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
       voice: v,
       title: EMAIL_INBOX.welcome(v).subject,
       preheader: EMAIL_INBOX.welcome(v).preheader,
-      heading: v.id === "unknown" ? "Choose your next practice test." : `Start with one ${v.shortName} practice test.`,
+      heading: v.id === "unknown" ? "Pick your test, then test yourself." : `Your first ${v.shortName} practice test is waiting.`,
       body: [
         p("{{greeting}}"),
-        p(v.id === "unknown" ? "Choose the exam you are preparing for, then start a practice session." : `You can practise for your ${v.testName} with Tigertest.`),
-        p("Start with one test, review your answers, then choose what to work on next."),
-        cta(DASH(v, "welcome"), v.id === "unknown" ? "Find Your Test" : `Open ${v.shortName} Practice`),
-        p("Prefer a shorter session? Choose a training set or skill drill from your dashboard."),
-        p("Practice results are a guide to your study, not an official exam score or a guarantee of passing."),
+        p("Fear not. Thousands of people have used Tigertest to pass their exams, and the ones who pass on their first try all have one thing in common: they actually tested themselves."),
+        p(
+          v.id === "unknown"
+            ? "So pick your exam and take one practice test today. The questions you miss are your study list."
+            : `So take one ${v.shortName} practice test today. The questions you miss are your study list.`,
+        ),
+        cta(DASH(v, "welcome"), v.id === "unknown" ? "Find Your Test" : `Take a ${v.shortName} Practice Test`),
         signoff(),
       ].join("\n"),
     }),
@@ -191,7 +193,6 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
         p("You have started practising. A full test can help you choose what to study next."),
         p(v.id === "sat" ? "Allow 2 hr 14 min of test time, plus the 10-minute break. For a shorter session, choose a skill drill instead." : "Open your dashboard, choose an available practice test, then review your answers."),
         cta(DASH(v, "first_test_reminder"), "Open Practice"),
-        p("Practice results do not guarantee a pass on your official test."),
         signoff(),
       ].join("\n"),
     }),

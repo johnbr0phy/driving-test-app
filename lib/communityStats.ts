@@ -11,6 +11,13 @@ export const COMMUNITY_MIN_ANSWERS = 10;
 export const COMMUNITY_MIN_QUESTIONS = 20;
 /** Most-missed questions kept per test. */
 export const COMMUNITY_TOP_N = 50;
+/** The "based on answers from N real test takers" line is only shown once
+ *  more than this many people have answered; a small number undersells it. */
+export const COMMUNITY_SHOW_TAKERS_OVER = 50;
+
+export function showsTestTakerCount(totalUsers: number): boolean {
+  return totalUsers > COMMUNITY_SHOW_TAKERS_OVER;
+}
 
 /** Key for the DMV in the list of tests that have Common Mistakes. */
 export const COMMUNITY_DMV_KEY = "dmv";

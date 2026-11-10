@@ -5,6 +5,7 @@
 // Tables and inline styles keep the layout usable in email clients.
 
 import { EMAIL_INBOX, exitQuestionInbox, emailPreheader } from "@/lib/email-inbox";
+import { practiceLabel } from "@/lib/practiceLabel";
 import { postalFooterLine } from "@/lib/emailPostal";
 import { EmailVoice, dashboardUrl, statsUrl } from "@/lib/email-voice";
 import { TEST_REQUEST_PICKS } from "@/lib/test-requests";
@@ -142,14 +143,14 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
       voice: v,
       title: EMAIL_INBOX.welcome(v).subject,
       preheader: EMAIL_INBOX.welcome(v).preheader,
-      heading: v.id === "unknown" ? "Pick your test, then test yourself." : `Your first ${v.shortName} practice test is waiting.`,
+      heading: v.id === "unknown" ? "Pick your test, then test yourself." : `Your first ${practiceLabel(v.shortName)} practice test is waiting.`,
       body: [
         p("{{greeting}}"),
         p("Fear not. Thousands of people have used Tigertest to pass their exams, and the ones who pass on their first try all have one thing in common: they actually tested themselves."),
         p(
           v.id === "unknown"
             ? "So pick your exam and take one practice test today. The questions you miss are your study list."
-            : `So take one ${v.shortName} practice test today. The questions you miss are your study list.`,
+            : `So take one ${practiceLabel(v.shortName)} practice test today. The questions you miss are your study list.`,
         ),
         cta(DASH(v, "welcome"), v.id === "unknown" ? "Find Your Test" : `Take a ${v.shortName} Practice Test`),
         signoff(),

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { practiceLabel } from "@/lib/practiceLabel";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ExamLandingCTA } from "@/components/exam/ExamLandingHero";
@@ -43,13 +44,13 @@ async function bank(exam: ExamConfig): Promise<Question[]> {
 
 function topicCopy(exam: ExamConfig, topic: ExamTopic) {
   const title = `${exam.shortName} ${topic.label} Practice Questions`;
-  const description = `${TOPIC_PAGE_SIZE} free ${exam.shortName} practice questions on ${topic.label.toLowerCase()}, each with the answer explained. ${topic.perTest} of every ${exam.questionsPerTest} questions on a practice test come from this area.`;
+  const description = `${TOPIC_PAGE_SIZE} free ${practiceLabel(exam.shortName)} practice questions on ${topic.label.toLowerCase()}, each with the answer explained. ${topic.perTest} of every ${exam.questionsPerTest} questions on a practice test come from this area.`;
   return { title, description };
 }
 
 function mostMissedCopy(exam: ExamConfig) {
   const title = `Most Missed ${exam.shortName} Questions`;
-  const description = `The ${exam.shortName} practice questions people get wrong most on Tigertest, with the share who missed each one, the right answer and why.`;
+  const description = `The ${practiceLabel(exam.shortName)} practice questions people get wrong most on Tigertest, with the share who missed each one, the right answer and why.`;
   return { title, description };
 }
 
@@ -97,7 +98,7 @@ export default async function TopicQuestionsPage({ params }: Params) {
     sample = spreadSampleKeys(pool.slice(0, TOPIC_PAGE_SIZE));
     title = topicCopy(exam, topic).title;
     path = topicPath(exam, topic);
-    lead = `${topic.label} makes up ${topic.perTest} of every ${exam.questionsPerTest} questions on a Tigertest ${exam.shortName} practice test. Here are ${sample.length} of the ${pool.length} questions on it, each with the answer and the reason.`;
+    lead = `${topic.label} makes up ${topic.perTest} of every ${exam.questionsPerTest} questions on a Tigertest ${practiceLabel(exam.shortName)} practice test. Here are ${sample.length} of the ${pool.length} questions on it, each with the answer and the reason.`;
     more = `Practice all ${pool.length} ${topic.label.toLowerCase()} questions, and the rest of the ${all.length}-question bank, in the free ${exam.shortName} training sets. Questions you miss come back until you have mastered them.`;
   } else {
     const stats = await examMostMissed(exam.id);
@@ -114,7 +115,7 @@ export default async function TopicQuestionsPage({ params }: Params) {
     title = mostMissedCopy(exam).title;
     path = mostMissedPath(exam);
     if (stats.updatedAt) updated = stats.updatedAt;
-    lead = `These are the ${exam.shortName} practice questions that people on Tigertest get wrong most often, from the answers of ${stats.users.toLocaleString("en-US")} people. Each one shows the share who missed it, the right answer and why.`;
+    lead = `These are the ${practiceLabel(exam.shortName)} practice questions that people on Tigertest get wrong most often, from the answers of ${stats.users.toLocaleString("en-US")} people. Each one shows the share who missed it, the right answer and why.`;
     more = `Tigertest tracks the ${ranked.length} most-missed ${exam.shortName} questions. These are the top ${shown.length}; the full list is the Common Mistakes tab of your stats page.`;
   }
 

@@ -1,4 +1,5 @@
 import { ExternalLink } from "lucide-react";
+import { practiceLabel } from "@/lib/practiceLabel";
 import { EXAM_COSTS_CHECKED, EXAM_FACTS, examCostRows } from "@/lib/examFacts";
 import { landingUpdatedAt } from "@/lib/landingDates";
 import { getCatalogEntry } from "@/lib/testCatalog";
@@ -38,7 +39,7 @@ export function ExamFacts({ examId }: { examId: string }) {
   const locale = factsLocale(examId);
   const tigertest =
     facts.tigertest ??
-    `Tigertest has ${test.questions.toLocaleString("en-US")} ${test.shortName} practice questions with explanations${
+    `Tigertest has ${test.questions.toLocaleString("en-US")} ${practiceLabel(test.shortName)} practice questions with explanations${
       test.pricing ? ", free to start with no account required" : ", all free with no account required"
     }.`;
 

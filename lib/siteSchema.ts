@@ -21,7 +21,7 @@ export const SITE_JSON_LD = {
       url: siteUrl,
       logo: `${siteUrl}/tiger.png`,
       // Built from the catalog and REGIONS so it never falls behind a new batch.
-      description: `Free practice tests for ${TEST_CATALOG.length} exams in ${REGIONS.length} countries: the DMV permit test in all 50 states and DC, driving theory tests from the UK to Malaysia, and licensing, certification, school and admissions exams such as the CDL, NCLEX, SAT and CompTIA.`,
+      description: `Practice tests, free to start, for ${TEST_CATALOG.length} exams in ${REGIONS.length} countries: the DMV permit test in all 50 states and DC, driving theory tests from the UK to Malaysia, and licensing, certification, school and admissions exams such as the CDL, NCLEX, SAT and CompTIA. Premium is an optional one-time purchase with no subscription.`,
       areaServed: REGIONS.map((r) => ({ "@type": "Country", name: r.name })),
       founder: { "@type": "Person", name: "John Brophy", sameAs: ["https://x.com/JohnBr0"] },
       email: "john@johnbrophy.net",

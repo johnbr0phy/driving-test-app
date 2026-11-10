@@ -2,7 +2,7 @@ import type Stripe from 'stripe';
 import type { Firestore } from 'firebase-admin/firestore';
 import { TEST_CATALOG, TEST_GROUPS } from '@/lib/testCatalog';
 import { EXAMS_V2 } from '@/lib/v2/registry';
-import { examAnalyticsLabel } from '@/lib/exams';
+import { examAnalyticsLabel, getExamById } from '@/lib/exams';
 import { isInternalEmail } from '@/lib/internal';
 import { shareDailyCounts } from '@/lib/shareCounts';
 import { paywallHitFeature, purchaseExam, purchaseLocationLabel } from '@/lib/purchaseAttribution';
@@ -391,7 +391,11 @@ export async function buildOpportunities(
   const dmvAnswers30 = w.sum(byExam.dmv?.daily, 29, 0);
   const dmvRevenue30 = payments.filter((p) => p.exam === 'dmv' && inLast(p.day, 30)).reduce((n, p) => n + p.net, 0);
   const dmvCentsPerAnswer = dmvAnswers30 > 0 ? dmvRevenue30 / dmvAnswers30 : 0;
-  const isMonetized = (id: string) => id === 'dmv' || !!EXAMS_V2.find((e) => e.id === id)?.premium;
+  // Who sells Premium: the DMV, every v1 registry exam (its stats page, and
+  // since Nov 10 2026 its last training step and test; a state version too)
+  // and a v2 exam whose config sets `premium`. Paywall views only show for these.
+  const isV2 = (id: string) => EXAMS_V2.some((e) => e.id === id);
+  const isMonetized = (id: string) => id === 'dmv' || (isV2(id) ? !!EXAMS_V2.find((e) => e.id === id)?.premium : !!getExamById(id));
 
   const exams = examIds
     .map((id) => {
@@ -717,7 +721,7 @@ export async function buildOpportunities(
       } A lock on the next step of something people are already doing is what sells.`,
     });
   }
-  const v2Monetized = exams.filter((e) => e.monetized && e.id !== 'dmv');
+  const v2Monetized = exams.filter((e) => e.monetized && isV2(e.id));
   const v2Sales = v2Monetized.reduce((n, e) => n + e.purchasesAll, 0);
   const v2Hits = v2Monetized.reduce((n, e) => n + e.paywallHits30d, 0);
   if (v2Monetized.length > 0 && v2Sales === 0 && v2Hits > 0) {

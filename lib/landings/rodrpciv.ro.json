@@ -12,7 +12,7 @@
   "facts": {
     "h2": "Examenul teoretic DRPCIV pe scurt",
     "answer": "Examenul teoretic pentru permisul de conducere categoria B este un test pe calculator cu 26 de întrebări în 30 de minute, iar pentru admis ai nevoie de cel puțin 22 de răspunsuri corecte. Testul este stabilit la nivel național de direcția pentru permise de conducere a Ministerului Afacerilor Interne (DGPCI, fostă DRPCIV) și se susține la serviciul pentru permise de conducere din județul tău. Înainte de test primești trei întrebări de încercare, care nu se punctează. Fiecare întrebare are trei variante de răspuns, iar una, două sau toate trei pot fi corecte. Examenul se dă în limba română; cetățenii români aparținând minorităților maghiară și germană îl pot da în limba maternă, iar străinii și cetățenii altor state din UE, SEE și Elveția pot cere engleză, franceză sau germană. Trebuie să ai 18 ani și să fi făcut pregătirea la o școală de conducători auto autorizată.",
-    "tigertest": "Tigertest are 200 de întrebări originale de exersare, cu explicație la fiecare răspuns, în limba română și în engleză, toate gratuite și fără cont. Tigertest nu este afiliat DGPCI, DRPCIV sau Ministerului Afacerilor Interne.",
+    "tigertest": "Tigertest are 200 de întrebări originale de exersare, cu explicație la fiecare răspuns, în limba română și în engleză, cu început gratuit și fără cont. Tigertest nu este afiliat DGPCI, DRPCIV sau Ministerului Afacerilor Interne.",
     "rows": [
       { "label": "Organizator", "value": "DGPCI (fostă DRPCIV), Ministerul Afacerilor Interne" },
       { "label": "Întrebări", "value": "26, după 3 întrebări de încercare nepunctate" },
@@ -99,7 +99,7 @@
     },
     {
       "q": "Chestionarele Tigertest sunt gratuite?",
-      "a": "Da. Cele șapte chestionare și cele patru seturi de exerciții sunt gratuite și nu ai nevoie de cont. Fă-ți un cont gratuit dacă vrei să îți salvezi progresul pe telefon și pe calculator."
+      "a": "Da. Începi gratuit și fără cont: toate seturile de exerciții și chestionarele sunt gratuite, în afară de ultimul set și ultimul chestionar, care fac parte din Tigertest Premium (plată unică, fără abonament). Fă-ți un cont gratuit dacă vrei să îți salvezi progresul pe telefon și pe calculator."
     }
   ],
   "finalCta": {

@@ -12,7 +12,7 @@
   "facts": {
     "h2": "O exame TVDE em resumo",
     "answer": "Para conduzir um carro de TVDE (o transporte de passageiros reservado por plataformas eletrónicas) é preciso o certificado de motorista de TVDE, emitido pelo IMT (Instituto da Mobilidade e dos Transportes). Para o obter, faz o curso de formação inicial de pelo menos 50 horas numa escola de condução ou entidade formadora reconhecida pelo IMT, com frequência mínima de 80% de cada módulo, e passa na avaliação final: um teste de 30 perguntas de escolha múltipla, feito no IMT ou num centro de exames autorizado, em que fica aprovado com pelo menos 27 respostas certas. Segundo a imprensa, o teste dura 60 minutos. Desde a Lei n.º 59/2026, em vigor a 1 de setembro de 2026, o curso verifica também o domínio funcional da língua portuguesa. Precisa de carta da categoria B há mais de três anos, com averbamento no grupo 2, e de idoneidade. O certificado vale cinco anos e renova-se com um curso de formação contínua de 8 horas. Quem tem certificado de motorista de táxi válido não precisa do curso nem do exame.",
-    "tigertest": "O Tigertest tem 200 perguntas originais para o exame TVDE com explicações e cinco testes de 30 perguntas, tudo grátis e sem conta.",
+    "tigertest": "O Tigertest tem 200 perguntas originais para o exame TVDE com explicações e cinco testes de 30 perguntas, grátis para começar e sem conta.",
     "rows": [
       { "label": "Entidade", "value": "IMT, ou centro de exames autorizado pelo IMT" },
       { "label": "Antes do exame", "value": "Curso inicial de 50 horas, no mínimo" },

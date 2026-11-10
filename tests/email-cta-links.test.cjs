@@ -37,7 +37,7 @@ test('every exam email dashboard and stats URL has a real destination with intac
       assert.equal(parsed.searchParams.get('utm_medium'), 'email');
       assert.equal(parsed.searchParams.get('utm_campaign'), 'cta_audit');
       assert.equal(parsed.protocol, 'https:');
-      assert.equal(parsed.hostname, 'tigertest.io');
+      assert.equal(parsed.hostname, 'www.tigertest.io');
     }
   }
   assert.equal(voiceFor('realestate-ca').statsPath, '/real-estate/ca/stats');

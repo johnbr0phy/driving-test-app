@@ -80,8 +80,8 @@ test('celebration copy and links match every supported exam without false fixed 
     const voice = voiceFor(id);
     const html = EMAIL_TEMPLATES.superAmazingUnlocked(voice);
     assert.ok(html.includes(`your ${voice.shortName} dashboard`), id);
-    assert.ok(html.includes(`https://tigertest.io${voice.dashboardPath}?utm_source=tigertest&amp;`) ||
-      html.includes(`https://tigertest.io${voice.dashboardPath}?utm_source=tigertest&`), id);
+    assert.ok(html.includes(`https://www.tigertest.io${voice.dashboardPath}?utm_source=tigertest&amp;`) ||
+      html.includes(`https://www.tigertest.io${voice.dashboardPath}?utm_source=tigertest&`), id);
     assert.match(html, /utm_campaign=super_amazing/);
     assert.doesNotMatch(html, /8 steps|questionCount|Almost nobody|wing it at the DMV|more ready than|every page, forever/);
     if (id !== 'dmv') assert.doesNotMatch(html, /DMV/);

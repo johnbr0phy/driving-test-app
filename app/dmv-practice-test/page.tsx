@@ -101,7 +101,7 @@ const jsonLd = {
         "Practice tests simulating the real DMV exam",
         "Detailed analytics and progress tracking",
         "Tracks your weakest questions",
-        "Free to start — no credit card required",
+        "Start for free, no credit card required",
         "One-time premium upgrade, no subscription",
         "Works on mobile and desktop",
         "Spanish language support",
@@ -467,7 +467,7 @@ export default function DmvLandingPage() {
             <T k="landing.readyToPass">Ready to Pass Your Permit Test?</T>
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">
-            <T k="landing.freeToStartLong">Free to start. No account required. 200 questions for your state.</T>
+            <T k="landing.freeToStartLong">Start for free. No account required. 200 questions for your state.</T>
           </p>
           <HomeCTA />
         </div>

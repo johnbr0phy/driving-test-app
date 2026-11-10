@@ -57,7 +57,7 @@ const faqs = [
   },
   {
     q: "Is the Tigertest Technician practice exam free?",
-    a: "Yes. All four practice exams and all six training sets are free, with no account required. Create a free account if you want your progress saved across devices.",
+    a: "Yes. Start for free with no account required: every training set and practice test is free except the final one of each, which is part of Tigertest Premium (one payment, no subscription). Create a free account if you want your progress saved across devices.",
   },
 ];
 
@@ -284,7 +284,7 @@ export default function HamLandingPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">Ready to Get Your Call Sign?</h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Free to start. No account required. The whole official pool.</p>
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Start for free. No account required. The whole official pool.</p>
           <ExamLandingCTA dashboardHref="/ham-radio/dashboard" />
         </div>
       </div>

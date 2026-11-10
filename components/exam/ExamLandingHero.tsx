@@ -15,7 +15,7 @@ import type { Language } from "@/i18n";
 // The homepage hero (components/HomeHero.tsx) for a non-DMV test: short
 // subtitle, black pill CTA that turns into "Go to Dashboard" once there is a
 // session, then the two product screenshots.
-// Everything here is free and needs no account, so the CTA always goes
+// Everything here is free to start and needs no account, so the CTA always goes
 // straight to the dashboard.
 // Fresh visitors become guests on their way in, exactly like the homepage's
 // "Try it first": that is what shows the "Sign up to save" prompts and

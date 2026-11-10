@@ -1628,14 +1628,14 @@
     "state": "ALL",
     "questionId": "NCE-PLN-013",
     "category": "ncePlan",
-    "question": "A client with a substance use disorder relapses once after months of sobriety. In relapse prevention, this lapse is best treated as:",
+    "question": "A client with a substance use disorder uses once after months of sobriety. In relapse prevention, this lapse is best treated as:",
     "optionA": "A learning opportunity",
     "optionB": "Proof that treatment failed",
     "optionC": "A reason to end counseling",
     "optionD": "A sign to change counselors",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Relapse prevention treats a lapse as a chance to learn triggers and strengthen coping, which reduces the abstinence violation effect of shame and giving up."
+    "explanation": "Relapse prevention treats a lapse as a chance to learn triggers and strengthen coping, which reduces the abstinence violation effect of shame and giving up. A lapse is a single slip; a relapse is a return to the old pattern of use."
   },
   {
     "type": "NCE",

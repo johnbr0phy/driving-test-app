@@ -1,7 +1,7 @@
 "use client";
 
-// Shared practice-test page for registry exams: the DMV test page without
-// the premium gate, driven by an ExamConfig.
+// Shared practice-test page for registry exams, driven by an ExamConfig.
+// The final test is Premium (lib/examLocks.ts) and shows ExamLockScreen.
 
 import { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
@@ -19,6 +19,8 @@ import { useHydration } from "@/hooks/useHydration";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { useLocalizedExam } from "@/hooks/useLocalizedExam";
 import { recordClassAnswer, recordClassTest } from "@/lib/classProgress";
+import { useExamLocks } from "@/hooks/useExamLocks";
+import { ExamLockScreen } from "@/components/exam/ExamLockScreen";
 
 export function ExamTestPage({ exam: source }: { exam: ExamConfig }) {
   const { exam, routes, ui, lang } = useLocalizedExam(source);
@@ -40,6 +42,11 @@ export function ExamTestPage({ exam: source }: { exam: ExamConfig }) {
   const [answers, setAnswers] = useState<{ [key: number]: string }>({});
   const [loading, setLoading] = useState(true);
 
+  // Premium gate: decided once the account has loaded, and before a session
+  // is started (a started or finished test is never locked).
+  const locks = useExamLocks(source);
+  const locked = locks.testLocked(testId);
+
   // Reset when test changes
   useEffect(() => {
     initialized.current = false;
@@ -49,7 +56,7 @@ export function ExamTestPage({ exam: source }: { exam: ExamConfig }) {
 
   // Load questions on mount (wait for hydration)
   useEffect(() => {
-    if (!hydrated || initialized.current) return;
+    if (!hydrated || !locks.settled || locked || initialized.current) return;
 
     if (!routes.testIds.includes(testId)) {
       router.push(routes.dashboard);
@@ -80,7 +87,7 @@ export function ExamTestPage({ exam: source }: { exam: ExamConfig }) {
       console.error(`Error loading ${exam.shortName} questions:`, error);
       setLoading(false);
     }
-  }, [hydrated, testId, testNumber, exam, lang, routes, getCurrentTest, startTest, router]);
+  }, [hydrated, locks.settled, locked, testId, testNumber, exam, lang, routes, getCurrentTest, startTest, router]);
 
   const currentQuestion = questions[currentQuestionIndex];
   const totalQuestions = questions.length;
@@ -109,6 +116,19 @@ export function ExamTestPage({ exam: source }: { exam: ExamConfig }) {
       }
     }, 300);
   };
+
+  if (locked) {
+    return (
+      <ExamLockScreen
+        exam={source}
+        routes={routes}
+        ui={ui}
+        title={ui.examTestN(exam.shortName, testNumber)}
+        where="test"
+        itemKey={`test_${testNumber}`}
+      />
+    );
+  }
 
   if (loading) {
     return (

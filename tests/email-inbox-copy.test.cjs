@@ -139,7 +139,7 @@ test('legacy service templates escape hostile names and emails without adding li
     const html = render(...Array(count).fill(hostile));
     assert.ok(html.includes('&lt;a href=&quot;https://bad.example/'), name);
     assert.doesNotMatch(html, /<a href="https:\/\/bad\.example|<img src=x/);
-    for (const match of html.matchAll(/href="([^\"]+)"/g)) assert.equal(new URL(match[1]).hostname, 'tigertest.io');
+    for (const match of html.matchAll(/href="([^\"]+)"/g)) assert.equal(new URL(match[1]).hostname, 'www.tigertest.io');
     assert.doesNotMatch(html, /tracked automatically|View Dashboard|ready for the real DMV exam|cover everything/);
   }
 });

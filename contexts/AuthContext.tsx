@@ -87,7 +87,6 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const loadUserData = useStore((state) => state.loadUserData);
   const setUserId = useStore((state) => state.setUserId);
   const setPhotoURL = useStore((state) => state.setPhotoURL);
-  const photoURL = useStore((state) => state.photoURL);
   const convertGuestToUser = useStore((state) => state.convertGuestToUser);
   const checkUserHasData = useStore((state) => state.checkUserHasData);
   const clearAllDataOnLogout = useStore((state) => state.clearAllDataOnLogout);
@@ -161,8 +160,11 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
             // No existing data - safe to convert guest to user
             await convertGuestToUser(user.uid);
 
-            // If user has a Google photo and no custom photo is set, use Google photo
-            if (user.photoURL && !photoURL) {
+            // If user has a Google photo and no custom photo is set, use Google photo.
+            // Read from the store, not a render-time copy: the copy was still empty
+            // right after the account loaded (so a custom photo was replaced), and
+            // having it in the deps re-ran this listener and the account load.
+            if (user.photoURL && !useStore.getState().photoURL) {
               setPhotoURL(user.photoURL);
             }
           } else {
@@ -170,7 +172,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
             await loadUserData(user.uid);
 
             // If user has a Google photo and no custom photo is set, use Google photo
-            if (user.photoURL && !photoURL) {
+            if (user.photoURL && !useStore.getState().photoURL) {
               setPhotoURL(user.photoURL);
             }
           }
@@ -193,7 +195,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     });
 
     return unsubscribe;
-  }, [loadUserData, setUserId, setPhotoURL, photoURL, convertGuestToUser, checkUserHasData]);
+  }, [loadUserData, setUserId, setPhotoURL, convertGuestToUser, checkUserHasData]);
 
   useEffect(() => {
     // Completes the mobile signInWithRedirect flow. Resolves null on

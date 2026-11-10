@@ -12,7 +12,7 @@
   "facts": {
     "h2": "Los exámenes de endosos de la CDL en resumen",
     "answer": "Cada endoso de la CDL tiene su propio examen de conocimientos, y en cada uno necesitas 80% para aprobar. El examen de materiales peligrosos (H) tiene 30 preguntas en la mayoría de los estados y además requiere una evaluación de amenaza de seguridad de la TSA; el examen de frenos de aire tiene 25 preguntas y quita la restricción L. El de vehículos combinados se requiere para la licencia clase A.",
-    "tigertest": "Tigertest tiene 200 preguntas de práctica de los endosos de la CDL en español con explicaciones, todas gratis y sin cuenta.",
+    "tigertest": "Tigertest tiene 200 preguntas de práctica de los endosos de la CDL en español con explicaciones, gratis para empezar y sin cuenta.",
     "rows": [
       {
         "label": "Exámenes",
@@ -102,11 +102,11 @@
     },
     {
       "q": "¿La práctica de endosos de Tigertest es gratis?",
-      "a": "Sí. Los cinco grupos de práctica y los cuatro exámenes de práctica mixtos son gratis y no necesitas cuenta. Crea una cuenta gratis si quieres guardar tu progreso en todos tus dispositivos."
+      "a": "Sí. Empiezas gratis y sin cuenta: todos los grupos de práctica y los exámenes de práctica son gratis menos el último de cada uno, que forma parte de Tigertest Premium (un solo pago, sin suscripción). Crea una cuenta gratis si quieres guardar tu progreso en todos tus dispositivos."
     }
   ],
   "finalCta": {
     "h2": "¿Listo para agregar tus endosos?",
-    "p": "Gratis y sin cuenta. 200 preguntas en español de los cinco endosos."
+    "p": "Empieza gratis, sin cuenta. 200 preguntas en español de los cinco endosos."
   }
 }

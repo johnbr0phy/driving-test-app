@@ -669,7 +669,7 @@ export default async function StateDMVPracticeTestPage({
             </Link>
           </Button>
           <p className="text-sm text-gray-500 dark:text-gray-400 mt-3">
-            No account required. Free to start.
+            No account required. Start for free.
           </p>
         </div>
       </div>

@@ -12,7 +12,7 @@
   "facts": {
     "h2": "El examen teórico de la DGT en resumen",
     "answer": "El examen teórico de la DGT es la primera prueba para obtener el permiso B. Tiene 30 preguntas tipo test con tres opciones cada una, dispones de 30 minutos y apruebas con un máximo de tres fallos, es decir, con 27 respuestas correctas. Para el permiso B se ofrece en castellano, en las lenguas cooficiales (catalán, euskera, gallego y valenciano), en inglés, francés y alemán, y en una versión de lectura fácil. Puedes presentarte desde tres meses antes de cumplir 18 años, la edad mínima para el permiso, y el aprobado se conserva durante dos años mientras haces el examen práctico. Las preguntas se basan en el Reglamento General de Circulación: señales, prioridad, límites de velocidad, adelantamientos, estacionamiento, alumbrado, alcohol, elementos de seguridad y qué hacer tras un accidente.",
-    "tigertest": "Tigertest tiene 200 preguntas de práctica originales con explicación, en castellano, todas gratis y sin registro. No está afiliado a la Dirección General de Tráfico (DGT).",
+    "tigertest": "Tigertest tiene 200 preguntas de práctica originales con explicación, en castellano, gratis para empezar y sin registro. No está afiliado a la Dirección General de Tráfico (DGT).",
     "rows": [
       { "label": "Organiza", "value": "DGT (Dirección General de Tráfico), jefaturas provinciales" },
       { "label": "Preguntas", "value": "30 tipo test, tres opciones cada una" },
@@ -98,7 +98,7 @@
     },
     {
       "q": "¿El test de Tigertest es gratis?",
-      "a": "Sí. Los seis tests y los cinco bloques de entrenamiento son gratis y no necesitas cuenta. Crea una cuenta gratuita si quieres guardar tu progreso en el móvil y en el ordenador."
+      "a": "Sí. Empiezas gratis y sin registro: todos los bloques de entrenamiento y los tests son gratis menos el último de cada uno, que forma parte de Tigertest Premium (un solo pago, sin suscripción). Crea una cuenta gratuita si quieres guardar tu progreso en el móvil y en el ordenador."
     }
   ],
   "finalCta": {

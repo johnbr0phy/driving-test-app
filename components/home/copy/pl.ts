@@ -65,7 +65,7 @@ export const pl: HomeCopy = {
     },
     {
       q: "Czy Tigertest jest darmowy?",
-      a: "Tak. Prawie każdy test jest całkowicie darmowy. Dla DMV są darmowe testy próbne i trening oraz opcjonalny jednorazowy zakup Premium za 9,99 $ (to nie subskrypcja), który odblokowuje dwa kolejne testy i zestawy treningowe oraz pełne statystyki dla każdego amerykańskiego egzaminu.",
+      a: "Każdy test można zacząć za darmo, bez konta, a większość każdego testu pozostaje darmowa. Opcjonalny jednorazowy zakup Premium za 9,99 $ (to nie subskrypcja) odblokowuje ostatni zestaw treningowy i ostatni test próbny w większości egzaminów (w DMV po dwa ostatnie) oraz pełne statystyki każdego egzaminu.",
     },
     {
       q: "Czy potrzebuję konta?",
@@ -97,7 +97,7 @@ export const pl: HomeCopy = {
           ? `Tigertest to darmowa strona z testami próbnymi. Dla tego kraju (${inName}) ma certyfikaty, które wszędzie są takie same, na przykład CompTIA i AWS. Przy każdym pytaniu wyjaśniamy poprawną odpowiedź.`
           : `Tigertest to darmowa strona z testami próbnymi. Dla tego kraju (${inName}) ma ${local === 1 ? "test na prawo jazdy napisany" : `${local} ${plural(local, "test", "testy", "testów")} na prawo jazdy napisane`} na podstawie oficjalnych ${local === 1 ? "przepisów" : "podręczników"}, a także certyfikaty, które wszędzie są takie same, na przykład CompTIA i AWS. Przy każdym pytaniu wyjaśniamy poprawną odpowiedź.`,
     },
-    { q: "Czy Tigertest jest darmowy?", a: `Tak. Każdy test dla tego kraju (${inName}) jest darmowy, bez subskrypcji.` },
+    { q: "Czy Tigertest jest darmowy?", a: `Każdy test dla tego kraju (${inName}) można zacząć za darmo, bez konta i bez subskrypcji. Opcjonalny jednorazowy zakup Premium odblokowuje ostatni zestaw treningowy i ostatni test próbny w większości egzaminów oraz pełne statystyki.` },
     {
       q: "Czy potrzebuję konta?",
       a: "Nie. Możesz zacząć dowolny test bez rejestracji. Załóż darmowe konto, jeśli chcesz zapisywać postępy na wszystkich urządzeniach.",

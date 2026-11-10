@@ -275,7 +275,7 @@ export default function FinlandTruckTheoryLandingPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">Ready for Your Truck or Bus Theory Test?</h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Free to start. No account required. 200 questions on Finnish and EU rules for truck and bus drivers, in English.</p>
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Start for free. No account required. 200 questions on Finnish and EU rules for truck and bus drivers, in English.</p>
           <ExamLandingCTA dashboardHref="/finland-truck-theory/dashboard" />
         </div>
       </div>

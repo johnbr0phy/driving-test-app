@@ -16,7 +16,7 @@ export function fail(
 }
 
 export const PREMIUM_LOCK_HINT =
-  'This feature requires a premium subscription. Direct the user to upgrade at https://tigertest.io/upgrade.';
+  'This feature requires a premium subscription. Direct the user to upgrade at https://www.tigertest.io/upgrade.';
 
 export function formatStateRequiredError(): ReturnType<typeof fail> {
   return fail(

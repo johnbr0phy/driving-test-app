@@ -33,6 +33,7 @@ import { EMAIL_INBOX } from "@/lib/email-inbox";
 import { EMAIL_TEMPLATES } from "@/lib/email-templates";
 import { V2_PAYWALL_PREFIX } from "@/lib/v2/premium";
 import { studyContexts, hasClassStatsAccess } from "@/lib/email-lifecycle";
+import { EXAM_PAYWALL_PREFIX } from "@/lib/examLocks";
 
 const EMAIL_KEY = "paywallAbandon";
 const INCLUDE_LEGACY = process.env.INCLUDE_LEGACY_CONSENT === "true";
@@ -98,7 +99,7 @@ export async function GET(req: NextRequest) {
       if (!((hit.location === "dashboard" && dashboardItem) || (hit.location === "stats_page" && statsItem))) return false;
       // This email is about the DMV paywalls. An SAT or ACT paywall would be
       // quoted back with DMV copy and a DMV link, so skip those.
-      if (hit.itemId.startsWith(V2_PAYWALL_PREFIX)) return false;
+      if (hit.itemId.startsWith(V2_PAYWALL_PREFIX) || hit.itemId.startsWith(EXAM_PAYWALL_PREFIX)) return false;
 
       const age = now - hit.at.getTime();
       return age >= MIN_AGE_MS && age <= MAX_AGE_MS;

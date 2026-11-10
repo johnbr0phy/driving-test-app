@@ -13,7 +13,7 @@ Q = [
  "Respect it; call EMS if needed", ["Give care anyway, gently", "Leave the scene at once", "Wait until they faint, then treat"],
  "You cannot treat a competent adult who refuses, but you can stay nearby, call EMS and keep trying to persuade them. Note who witnessed the refusal."),
 ("Once you have started first aid, when may you stop?",
- "When someone as trained takes over", ["When you feel the person looks fine", "When a bystander tells you to", "After 10 minutes of first aid"],
+ "When equal or higher training takes over", ["When you feel the person looks fine", "When a bystander tells you to", "After 10 minutes of first aid"],
  "Stopping without handing over to someone with equal or higher training can be abandonment. You may also stop if the scene becomes unsafe or you are too exhausted to go on."),
 ("What do Good Samaritan laws in most of Canada generally protect?",
  "A rescuer acting in good faith", ["Any act done at the scene", "Paid rescuers on duty only", "Rescuers who refuse to help"],

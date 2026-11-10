@@ -12,7 +12,7 @@
   "facts": {
     "h2": "La prueba de conocimientos de la Guardia Civil, de un vistazo",
     "answer": "En la convocatoria de 2026 (Resolución 160/38243/2026, BOE de 8 de mayo) la prueba de conocimientos dura 140 minutos e incluye cuatro partes: ortografía, gramática, un cuestionario de 100 preguntas tipo test sobre el temario y 20 preguntas de inglés. Cada pregunta de conocimientos tiene cuatro respuestas y una sola válida; los errores penalizan y las preguntas en blanco no. El cuestionario se puntúa de 0 a 100 y hay que sacar al menos 50 puntos. Ortografía y gramática son de apto o no apto, y seis o más errores en cualquiera de ellas eliminan; en inglés se necesitan 8 puntos de 20. El mismo día se hace la prueba psicotécnica. La primera prueba de 2026 fue el 11 de julio en 20 sedes, para 3.240 plazas.",
-    "tigertest": "Tigertest tiene 200 preguntas propias en español sobre los temas 1 a 23 del temario oficial, gratis y sin registro. No son preguntas de exámenes anteriores ni de ninguna academia.",
+    "tigertest": "Tigertest tiene 200 preguntas propias en español sobre los temas 1 a 23 del temario oficial, gratis para empezar y sin registro. No son preguntas de exámenes anteriores ni de ninguna academia.",
     "rows": [
       {
         "label": "Conocimientos",
@@ -114,7 +114,7 @@
     },
     {
       "q": "¿El test de la Guardia Civil en Tigertest es gratis?",
-      "a": "Sí. Los cinco bloques de repaso y los cuatro test son gratis y sin registro. Con una cuenta gratuita guardas tu progreso en todos tus dispositivos."
+      "a": "Sí. Empiezas gratis y sin registro: todos los bloques de repaso y los test son gratis menos el último de cada uno, que forma parte de Tigertest Premium (un solo pago, sin suscripción). Con una cuenta gratuita guardas tu progreso en todos tus dispositivos."
     }
   ],
   "finalCta": {

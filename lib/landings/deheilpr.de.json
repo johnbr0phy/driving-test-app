@@ -12,7 +12,7 @@
   "facts": {
     "h2": "Der schriftliche Teil der Heilpraktikerüberprüfung auf einen Blick",
     "answer": "Wer ohne ärztliche Approbation die Heilkunde ausüben will, braucht nach dem Heilpraktikergesetz eine Erlaubnis. Vorher prüft das Gesundheitsamt in einer Kenntnisüberprüfung, ob von dir eine Gefahr für die Gesundheit der Bevölkerung oder deiner Patientinnen und Patienten ausgehen würde. Im schriftlichen Teil beantwortest du 60 Multiple-Choice-Fragen in 120 Minuten. Mit mindestens 45 richtigen Antworten (75 Prozent) wirst du zum mündlich-praktischen Teil zugelassen, den ein Amtsarzt oder eine Amtsärztin leitet. Inhalt sind die Leitlinien des Bundesgesundheitsministeriums vom 7. Dezember 2017: Recht, Hygiene, Notfälle, medizinische Grundlagen und Krankheitslehre. In Bayern finden die schriftlichen Termine einheitlich im März und Oktober statt.",
-    "tigertest": "Tigertest hat 200 eigene Übungsfragen auf Deutsch zu den Themen der Leitlinien, alle kostenlos und ohne Anmeldung. Die Fragen sind selbst geschrieben, nicht aus früheren Prüfungen kopiert. Sie prüfen medizinisches Grundwissen, Rechtsgrenzen und das Erkennen von Notfällen, also das, was das Gesundheitsamt sicherstellen will; einzelne Therapieverfahren bewertet Tigertest nicht.",
+    "tigertest": "Tigertest hat 200 eigene Übungsfragen auf Deutsch zu den Themen der Leitlinien, der Einstieg ist kostenlos und ohne Anmeldung. Die Fragen sind selbst geschrieben, nicht aus früheren Prüfungen kopiert. Sie prüfen medizinisches Grundwissen, Rechtsgrenzen und das Erkennen von Notfällen, also das, was das Gesundheitsamt sicherstellen will; einzelne Therapieverfahren bewertet Tigertest nicht.",
     "rows": [
       {
         "label": "Fragen",
@@ -115,7 +115,7 @@
     },
     {
       "q": "Ist die Heilpraktiker-Vorbereitung bei Tigertest kostenlos?",
-      "a": "Ja. Alle fünf Übungssets und drei Probeprüfungen sind kostenlos und ohne Anmeldung nutzbar. Mit einem kostenlosen Konto speicherst du deinen Fortschritt auf allen Geräten."
+      "a": "Ja. Du startest kostenlos und ohne Anmeldung: Alle Übungssets und Tests sind kostenlos, bis auf das jeweils letzte, das zu Tigertest Premium gehört (einmalige Zahlung, kein Abo). Mit einem kostenlosen Konto speicherst du deinen Fortschritt auf allen Geräten."
     }
   ],
   "finalCta": {

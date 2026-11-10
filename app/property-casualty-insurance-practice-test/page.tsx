@@ -171,7 +171,7 @@ const jsonLd = {
           name: "Is this the same as the life and health insurance exam?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "No. Property and casualty and life and health are separate license lines with separate exams, though both share the same insurance basics and agency law. Tigertest has a separate Life & Health practice test. All four P&C practice tests and all four training sets here are free, with no account required.",
+            text: "No. Property and casualty and life and health are separate license lines with separate exams, though both share the same insurance basics and agency law. Tigertest has a separate Life & Health practice test. Start for free with no account required: every training set and practice test is free except the final one of each, which is part of Tigertest Premium (one payment, no subscription).",
           },
         },
         classFaqJsonLd("pnc"),
@@ -392,7 +392,7 @@ export default function PncLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is this the same as the life and health insurance exam?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              No. Property and casualty and life and health are separate license lines with separate exams, though both share the same insurance basics and agency law. Tigertest has a separate Life &amp; Health practice test. All four P&amp;C practice tests and all four training sets here are free, with no account required.
+              No. Property and casualty and life and health are separate license lines with separate exams, though both share the same insurance basics and agency law. Tigertest has a separate Life &amp; Health practice test. Start for free with no account required: every training set and practice test is free except the final one of each, which is part of Tigertest Premium (one payment, no subscription).
             </p>
           </div>
           <ExamClassFaq examId="pnc" />
@@ -406,7 +406,7 @@ export default function PncLandingPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">Ready to Pass the P&amp;C Exam?</h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Free to start. No account required. 200 questions across the whole general portion.</p>
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Start for free. No account required. 200 questions across the whole general portion.</p>
           <ExamLandingCTA dashboardHref="/property-casualty-insurance/dashboard" />
         </div>
       </div>

@@ -71,8 +71,8 @@ function emailShell({
   const brand = emailBrand(voice?.id, expression);
   const label = brand.known && voice ? `TIGERTEST · ${esc(voice.shortName.toUpperCase())} PRACTICE` : "TIGERTEST";
   const footerLinks = unsubscribe
-    ? `<a href="https://tigertest.io/unsubscribe?token={{unsubscribeToken}}" style="color: #64777b;">Unsubscribe</a> · <a href="https://tigertest.io/privacy" style="color: #64777b;">Privacy Policy</a>`
-    : `<a href="https://tigertest.io/privacy" style="color: #64777b;">Privacy Policy</a>`;
+    ? `<a href="https://www.tigertest.io/unsubscribe?token={{unsubscribeToken}}" style="color: #64777b;">Unsubscribe</a> · <a href="https://www.tigertest.io/privacy" style="color: #64777b;">Privacy Policy</a>`
+    : `<a href="https://www.tigertest.io/privacy" style="color: #64777b;">Privacy Policy</a>`;
   const themedBody = body
     .replaceAll("background-color: #1a1a1a", `background-color: ${brand.accent}`)
     .replaceAll("#FF6B35", brand.accent);
@@ -102,7 +102,7 @@ ${footerLinks}${postalFooterLine()}
 </td></tr></table></body></html>`;
 }
 
-const SITE = "https://tigertest.io";
+const SITE = "https://www.tigertest.io";
 const utm = (campaign: string) =>
   `utm_source=tigertest&utm_medium=email&utm_campaign=${campaign}`;
 
@@ -351,7 +351,7 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
           `If Tigertest helped, <strong style="font-weight: 600;">please share it with a friend</strong>. It helps other learners find practice for their next test.`,
         ),
         cta(
-          "https://tigertest.io/?utm_source=tigertest&utm_medium=email&utm_campaign=inactive_share",
+          "https://www.tigertest.io/?utm_source=tigertest&utm_medium=email&utm_campaign=inactive_share",
           "Visit Tigertest",
         ),
         p("If you are still studying, your practice is here when you need it."),
@@ -449,7 +449,7 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
         p("Share the link with your study group or class and see who got what."),
         cta(create, "Make a quiz"),
         p(
-          `The steps to connect ChatGPT or Claude, and the quizzes you have made, are at ${link(create, "tigertest.io/create")}.`,
+          `The steps to connect ChatGPT or Claude, and the quizzes you have made, are at ${link(create, "https://www.tigertest.io/create")}.`,
         ),
         p(`Your ${v.testName} practice is still here, unchanged: ${link(DASH(v, campaign), "open your dashboard")}.`),
         signoff("Thanks,"),

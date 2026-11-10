@@ -53,7 +53,7 @@ export const vi: HomeCopy = {
     },
     {
       q: "Tigertest có miễn phí không?",
-      a: "Có. Gần như mọi bài thi đều hoàn toàn miễn phí. Phần DMV có bài thi thử và luyện tập miễn phí, cùng gói Premium tùy chọn $9.99 trả một lần (không phải gói thuê bao) để mở khóa thêm hai bài thi, hai bộ luyện tập và thống kê đầy đủ cho mọi kỳ thi của Mỹ.",
+      a: "Mọi bài thi đều bắt đầu miễn phí, không cần tài khoản, và phần lớn mỗi bài thi vẫn miễn phí. Gói Premium tùy chọn $9.99 trả một lần (không phải gói thuê bao) mở khóa bộ luyện tập cuối và bài thi thử cuối ở hầu hết các kỳ thi (hai bộ và hai bài cuối với DMV) cùng thống kê đầy đủ cho mọi kỳ thi.",
     },
     {
       q: "Tôi có cần tài khoản không?",
@@ -85,7 +85,7 @@ export const vi: HomeCopy = {
           ? `Tigertest là trang web thi thử miễn phí. Cho ${inName}, chúng tôi có các chứng chỉ giống nhau ở mọi nơi, như CompTIA và AWS. Mỗi câu hỏi đều giải thích đáp án đúng.`
           : `Tigertest là trang web thi thử miễn phí. Cho ${inName}, chúng tôi có ${local === 1 ? "một bài thi lái xe" : `${local} bài thi lái xe`} soạn theo ${local === 1 ? "luật chính thức" : "các sổ tay chính thức"}, cùng các chứng chỉ giống nhau ở mọi nơi, như CompTIA và AWS. Mỗi câu hỏi đều giải thích đáp án đúng.`,
     },
-    { q: "Tigertest có miễn phí không?", a: `Có. Mọi bài thi cho ${inName} đều miễn phí, không có gói thuê bao.` },
+    { q: "Tigertest có miễn phí không?", a: `Mọi bài thi cho ${inName} đều bắt đầu miễn phí, không cần tài khoản và không có gói thuê bao. Gói Premium tùy chọn, trả một lần, mở khóa bộ luyện tập cuối và bài thi thử cuối ở hầu hết các kỳ thi, cùng thống kê đầy đủ.` },
     {
       q: "Tôi có cần tài khoản không?",
       a: "Không. Bạn có thể bắt đầu bất kỳ bài thi nào mà không cần đăng ký. Hãy tạo tài khoản miễn phí nếu bạn muốn lưu tiến độ trên mọi thiết bị.",

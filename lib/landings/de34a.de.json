@@ -12,7 +12,7 @@
   "facts": {
     "h2": "Die Sachkundeprüfung nach § 34a GewO auf einen Blick",
     "answer": "Die Sachkundeprüfung im Bewachungsgewerbe legst du bei einer Industrie- und Handelskammer ab. Sie besteht aus einem schriftlichen und einem mündlichen Teil. Der schriftliche Teil dauert 120 Minuten und wird meist digital am Tablet oder Laptop der IHK geschrieben: nach Angaben der IHK Hannover und der IHK Emden 82 Multiple-Choice-Aufgaben mit zusammen 120 Punkten, wobei eine Aufgabe bis zu zwei richtige Antworten haben kann. Bestanden ist der schriftliche Teil mit mindestens 50 Prozent der Punkte. Danach folgt die mündliche Prüfung, etwa 15 Minuten pro Person mit bis zu fünf Teilnehmern, ebenfalls ab 50 Prozent bestanden. Hilfsmittel sind nicht erlaubt, die Prüfungssprache ist Deutsch, und du kannst die Prüfung beliebig oft wiederholen.",
-    "tigertest": "Tigertest hat 200 eigene Übungsfragen auf Deutsch zu allen Sachgebieten des § 7 BewachV und des DIHK-Rahmenplans, alle kostenlos und ohne Anmeldung. Die Fragen sind selbst geschrieben, nicht aus einem amtlichen Aufgabensatz kopiert.",
+    "tigertest": "Tigertest hat 200 eigene Übungsfragen auf Deutsch zu allen Sachgebieten des § 7 BewachV und des DIHK-Rahmenplans, der Einstieg ist kostenlos und ohne Anmeldung. Die Fragen sind selbst geschrieben, nicht aus einem amtlichen Aufgabensatz kopiert.",
     "rows": [
       {
         "label": "Schriftlich",
@@ -114,7 +114,7 @@
     },
     {
       "q": "Ist der Sachkundeprüfung 34a Test bei Tigertest kostenlos?",
-      "a": "Ja. Alle fünf Übungssets und vier Testbögen sind kostenlos und ohne Anmeldung nutzbar. Mit einem kostenlosen Konto speicherst du deinen Fortschritt auf allen Geräten."
+      "a": "Ja. Du startest kostenlos und ohne Anmeldung: Alle Übungssets und Tests sind kostenlos, bis auf das jeweils letzte, das zu Tigertest Premium gehört (einmalige Zahlung, kein Abo). Mit einem kostenlosen Konto speicherst du deinen Fortschritt auf allen Geräten."
     }
   ],
   "finalCta": {

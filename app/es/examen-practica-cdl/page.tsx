@@ -67,7 +67,7 @@ const faqs = [
   },
   {
     q: "¿El examen de práctica CDL de Tigertest es gratis?",
-    a: "Sí. Los seis exámenes de práctica y todos los grupos de práctica por tema son gratis. No hay costos ocultos ni necesitas crear una cuenta.",
+    a: "Sí. Empiezas gratis y sin cuenta: todos los grupos de entrenamiento y los exámenes de práctica son gratis menos el último de cada uno, que forma parte de Tigertest Premium (un solo pago, sin suscripción). No hay costos ocultos ni necesitas crear una cuenta.",
   },
   {
     q: "¿Qué temas cubre el examen de práctica?",
@@ -167,7 +167,7 @@ export default function CDLLandingPageEs() {
             segura, frenos, carga y emergencias.
           </p>
           <p className="text-gray-600 dark:text-gray-300 mb-6">
-            Tigertest tiene 600 preguntas de práctica de la CDL en español con explicaciones, todas gratis y sin cuenta.
+            Tigertest tiene 600 preguntas de práctica de la CDL en español con explicaciones, gratis para empezar y sin cuenta.
           </p>
           <dl className="grid sm:grid-cols-2 gap-x-8 border-t border-gray-200 dark:border-gray-800">
             {facts.map((row) => (
@@ -319,7 +319,7 @@ export default function CDLLandingPageEs() {
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">¿Listo para sacar tu CDL?</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">
-            Gratis y sin cuenta. 600 preguntas en español sobre todos los temas de la CDL.
+            Empieza gratis, sin cuenta. 600 preguntas en español sobre todos los temas de la CDL.
           </p>
           <ExamLandingCTA dashboardHref="/cdl/dashboard" lang="es" />
         </div>

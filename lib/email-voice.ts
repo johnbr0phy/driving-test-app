@@ -40,7 +40,7 @@ export interface EmailVoice {
   /** App paths, without the host. */
   dashboardPath: string;
   statsPath: string;
-  /** Only the DMV flow sells Premium; every registry exam is free. */
+  /** The DMV flow's own Premium copy (sets and tests 3 and 4). Registry exams lock their final set and test (lib/examLocks.ts) but have no paywall emails. */
   hasPremium: boolean;
   /**
    * Days of silence after which lifecycle emails stop. Someone who stopped
@@ -52,7 +52,7 @@ export interface EmailVoice {
   sourceLine: string | null;
 }
 
-const SITE = "https://tigertest.io";
+const SITE = "https://www.tigertest.io";
 
 const DMV_VOICE: EmailVoice = {
   id: "dmv",

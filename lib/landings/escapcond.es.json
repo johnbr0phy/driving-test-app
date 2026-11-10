@@ -12,7 +12,7 @@
   "facts": {
     "h2": "El examen del CAP inicial, de un vistazo",
     "answer": "Después del curso de cualificación inicial, de 280 horas en la modalidad ordinaria o de 140 en la acelerada, tienes un año para aprobar el examen. Lo convoca la consejería de transportes de cada comunidad autónoma, al menos seis veces al año. Son 100 preguntas tipo test con cuatro respuestas y una sola válida, y dispones de al menos dos horas. Cada acierto suma 1 punto, cada error resta 0,5 y las preguntas en blanco no cuentan. Apruebas con 50 puntos, la mitad de los posibles. De las 100 preguntas, 25 son de tu especialidad: mercancías (permisos C1 y C) o viajeros (D1 y D). Si ya tienes el CAP de una especialidad y amplías a la otra, solo haces el curso y la parte del examen de la nueva.",
-    "tigertest": "Tigertest tiene 200 preguntas propias en español sobre el temario del anexo I del Real Decreto 284/2021, gratis y sin registro. No son preguntas de exámenes anteriores de ninguna comunidad ni de ninguna autoescuela o centro CAP.",
+    "tigertest": "Tigertest tiene 200 preguntas propias en español sobre el temario del anexo I del Real Decreto 284/2021, gratis para empezar y sin registro. No son preguntas de exámenes anteriores de ninguna comunidad ni de ninguna autoescuela o centro CAP.",
     "rows": [
       {
         "label": "Preguntas",
@@ -114,7 +114,7 @@
     },
     {
       "q": "¿El test del CAP de Tigertest es gratis?",
-      "a": "Sí. Los cinco bloques de repaso y los cuatro test son gratis y sin registro. Con una cuenta gratuita guardas tu progreso en todos tus dispositivos."
+      "a": "Sí. Empiezas gratis y sin registro: todos los bloques de repaso y los test son gratis menos el último de cada uno, que forma parte de Tigertest Premium (un solo pago, sin suscripción). Con una cuenta gratuita guardas tu progreso en todos tus dispositivos."
     }
   ],
   "finalCta": {

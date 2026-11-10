@@ -12,7 +12,7 @@
   "facts": {
     "h2": "O exame de código em resumo",
     "answer": "O exame teórico de condução, o chamado exame de código, é da responsabilidade do IMT (Instituto da Mobilidade e dos Transportes) e faz-se num computador, num centro de exames, depois da inscrição numa escola de condução. Para a carta da categoria B tem 30 perguntas de escolha múltipla sobre as matérias comuns a todas as categorias, com 30 minutos para responder, e fica aprovado com pelo menos 27 respostas certas. Muitas perguntas mostram uma fotografia ou um desenho de uma situação de trânsito. A prova é em português; um candidato que não domine o português pode pedir ao IMT uma prova traduzida (possível em todas as categorias desde o Decreto-Lei n.º 114/2026, de junho de 2026), um pedido feito normalmente através da escola de condução. A aprovação é válida por um ano, prazo em que tem de passar na prova prática. A idade mínima para a categoria B é de 18 anos.",
-    "tigertest": "O Tigertest tem 200 perguntas originais de exame de código com explicações e seis testes de 30 perguntas, tudo grátis e sem conta.",
+    "tigertest": "O Tigertest tem 200 perguntas originais de exame de código com explicações e seis testes de 30 perguntas, grátis para começar e sem conta.",
     "rows": [
       { "label": "Entidade", "value": "IMT (Instituto da Mobilidade e dos Transportes)" },
       { "label": "Perguntas", "value": "30 de escolha múltipla (categoria B)" },

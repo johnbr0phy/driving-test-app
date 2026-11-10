@@ -12,7 +12,7 @@
   "facts": {
     "h2": "Az elsősegély vizsga röviden",
     "answer": "A jogosítványhoz közúti elsősegélynyújtási ismereteket kell igazolni, amit a Magyar Vöröskereszt megyei és fővárosi szervezetei vizsgáztatnak. A vizsga elsősorban gyakorlati: újraélesztést végzel egy segélynyújtóként, megvizsgálod a beteget, és stabil oldalfekvésbe fekteted az eszméletlen sérültet. Ezután egy húzott tétel „A” és „B” feladatát oldod meg, például vérzéscsillapítást, rögzítést vagy égés ellátását, az elméleti tudást pedig szóban vagy írásban kérdezik. Az eredmény megfelelt vagy nem felelt meg: aki bukást jelentő hibát vét, vagy olyat tesz, ami rontaná a sérült állapotát, nem megy át. Kérdésszám és ponthatár nincs. Tanfolyam nem kötelező, a vizsga alapja Hornyák István „Elsősegélynyújtás mindenkinek” című könyve.",
-    "tigertest": "A Tigertestnél 200 saját gyakorlókérdés van magyarul a vizsga elméleti tudásához, az ERC 2025-ös irányelvei és a magyar szabályok alapján, ingyen és regisztráció nélkül. A kérdések saját írásúak, nem a vizsga tételeiből valók. A gyakorlati részt kézzel kell begyakorolnod, például tanfolyamon.",
+    "tigertest": "A Tigertestnél 200 saját gyakorlókérdés van magyarul a vizsga elméleti tudásához, az ERC 2025-ös irányelvei és a magyar szabályok alapján, ingyen elkezdhető, regisztráció nélkül. A kérdések saját írásúak, nem a vizsga tételeiből valók. A gyakorlati részt kézzel kell begyakorolnod, például tanfolyamon.",
     "rows": [
       {
         "label": "Szervező",
@@ -113,7 +113,7 @@
     },
     {
       "q": "Ingyenes a Tigertest elsősegély tesztje?",
-      "a": "Igen. Mind a négy gyakorlókészlet és a négy teszt ingyenes, regisztráció nélkül használható. Ingyenes fiókkal a haladásodat minden eszközödön elmented."
+      "a": "Igen. Ingyen és regisztráció nélkül kezdhetsz: minden gyakorlósor és teszt ingyenes, kivéve az utolsó gyakorlósort és az utolsó tesztet, amelyek a Tigertest Premium részei (egyszeri fizetés, nincs előfizetés). Ingyenes fiókkal a haladásodat minden eszközödön elmented."
     }
   ],
   "finalCta": {

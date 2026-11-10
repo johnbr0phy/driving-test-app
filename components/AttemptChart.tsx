@@ -39,7 +39,9 @@ export function sessionsToAttemptPoints(
       score,
       total,
       pct,
-      passed: pct >= passPct,
+      // The same line as the results page: a rounded percent passed 112/150
+      // on a 75% test whose pass mark is 113.
+      passed: score >= Math.ceil((total * passPct) / 100),
     };
   });
 }

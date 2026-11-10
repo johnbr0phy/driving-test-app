@@ -4,13 +4,14 @@
 // by an ExamConfig. Exams with DMV-style test sets alternate Set 1, Test 1,
 // Set 2, Test 2...; the rest list content-area sets, then practice tests.
 // Tests carry stamps and a per-test attempt drop-down with the score chart
-// and miss drill. All registry exams are free.
+// and miss drill. The final training step and final test are Premium
+// (lib/examLocks.ts); everything before them is free.
 
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import { BarChart3, ChevronRight, Users } from "lucide-react";
+import { BarChart3, CheckCircle, ChevronRight, Users } from "lucide-react";
 import { useStore } from "@/store/useStore";
 import { GuestSaveCard, v1GuestCounts } from "@/components/GuestSaveCard";
 import { useAuth } from "@/contexts/AuthContext";
@@ -30,6 +31,9 @@ import { getTigerAsset } from "@/lib/tigerAssets";
 import { SuperAmazingCard } from "@/components/SuperAmazingCard";
 import { useLocalizedExam } from "@/hooks/useLocalizedExam";
 import { useCommunityAvailable } from "@/hooks/useCommunityStats";
+import { useExamLocks } from "@/hooks/useExamLocks";
+import { usePurchaseReturn } from "@/hooks/usePurchaseReturn";
+import { useExamPaywall } from "@/components/exam/ExamLockScreen";
 
 function heroSub(exam: ExamConfig, done: number, total: number): string {
   const frac = total > 0 ? done / total : 0;
@@ -50,8 +54,21 @@ function getTigerFace(complete: number, total: number, examId: string): string {
   return getTigerAsset(examId, 8);
 }
 
-export function ExamDashboard({ exam: source }: { exam: ExamConfig }) {
+export function ExamDashboard({ exam }: { exam: ExamConfig }) {
+  // usePurchaseReturn reads the URL's search params.
+  return (
+    <Suspense fallback={<div className="flex-1 bg-gray-50 dark:bg-gray-950" />}>
+      <ExamDashboardContent exam={exam} />
+    </Suspense>
+  );
+}
+
+function ExamDashboardContent({ exam: source }: { exam: ExamConfig }) {
   const { exam, routes, ui, lang, testLanguages, testLanguagePicked, setTestLanguage } = useLocalizedExam(source);
+  // Premium: the final training step and final test (lib/examLocks.ts).
+  const locks = useExamLocks(source);
+  const paywall = useExamPaywall(source, routes, "dashboard");
+  const purchase = usePurchaseReturn();
   // Common Mistakes card, once this exam has enough answers (lib/communityStats.ts).
   const communityOn = useCommunityAvailable(source.id);
   const router = useRouter();
@@ -194,10 +211,14 @@ export function ExamDashboard({ exam: source }: { exam: ExamConfig }) {
     const progress = partProgress(p);
     const isStartHere = stepNumber === 1 && !anyProgress;
     const rowId = `training-${def.setNumber}-${p.part}`;
+    const locked = locks.partLocked(p);
+    const partTitle = trainingPartName(p, lang);
     return (
       <div id={rowId} className={`scroll-mt-24 rounded-lg ${highlightedStep === rowId ? "ring-2 ring-green-500 ring-offset-4 ring-offset-white dark:ring-offset-gray-950" : ""}`}>
         <ProgressCard
-          title={trainingPartName(p, lang)}
+          title={partTitle}
+          isPremiumLocked={locked}
+          onClick={locked ? () => paywall.open(`set_${def.setNumber}`, partTitle) : undefined}
           subtitle={def.weightLabel ? `${progress.correct}/${progress.total} · ${def.weightLabel}` : `${progress.correct}/${progress.total}`}
           completed={progress.complete}
           stepNumber={stepNumber}
@@ -210,7 +231,7 @@ export function ExamDashboard({ exam: source }: { exam: ExamConfig }) {
                   ? { label: t("dashboard.stampContinue"), color: "amber" as const }
                   : undefined
           }
-          href={routes.training(def.setNumber, p.partCount > 1 ? p.part : undefined)}
+          href={locked ? undefined : routes.training(def.setNumber, p.partCount > 1 ? p.part : undefined)}
         />
       </div>
     );
@@ -234,6 +255,8 @@ export function ExamDashboard({ exam: source }: { exam: ExamConfig }) {
     const attemptPoints = sessionsToAttemptPoints(testSessions, ui.dateLocale, exam.passPct);
     const isExpanded = expandedTest === testId;
     const stillMissed = testMisses?.stillMissed ?? 0;
+    // Never true once the test has an attempt or is in progress.
+    const locked = locks.testLocked(testId);
 
     // The translated string only covers 50-question tests (ham has 35, CA real estate 150).
     let subtitle = exam.questionsPerTest === 50 ? t("testCard.fiftyQuestions") : ui.questionsCount(exam.questionsPerTest);
@@ -262,8 +285,15 @@ export function ExamDashboard({ exam: source }: { exam: ExamConfig }) {
           completed={completed}
           stepNumber={stepNumber}
           stamp={stamp}
-          href={hasAttempts ? undefined : routes.test(testId)}
-          onClick={hasAttempts ? () => setExpandedTest(isExpanded ? null : testId) : undefined}
+          isPremiumLocked={locked}
+          href={locked || hasAttempts ? undefined : routes.test(testId)}
+          onClick={
+            locked
+              ? () => paywall.open(`test_${n}`, `Practice Test ${n}`)
+              : hasAttempts
+                ? () => setExpandedTest(isExpanded ? null : testId)
+                : undefined
+          }
           attachedBottom={isExpanded && hasAttempts}
           expanded={hasAttempts ? isExpanded : undefined}
         >
@@ -353,6 +383,18 @@ export function ExamDashboard({ exam: source }: { exam: ExamConfig }) {
             signupHref={routes.signup}
             {...v1GuestCounts(exam.stateCode, completedTests, trainingAnswerHistory)}
           />
+        )}
+
+        {paywall.modal}
+
+        {purchase.justPurchased && (
+          <div className="mb-4 rounded-xl border border-green-200 dark:border-green-800 bg-green-50 dark:bg-green-950 p-4 flex items-center gap-3">
+            <CheckCircle className="h-7 w-7 flex-shrink-0 text-green-500 dark:text-green-400" aria-hidden="true" />
+            <div className="flex-1 min-w-0">
+              <p className="text-sm font-bold text-green-900 dark:text-green-200">{t("dashboard.welcomePremium")}</p>
+            </div>
+            <button onClick={purchase.dismiss} aria-label="Close" className="text-green-700 dark:text-green-300 text-lg leading-none px-1">×</button>
+          </div>
         )}
 
         <ClassBanner examId={exam.id} className="mb-4" />

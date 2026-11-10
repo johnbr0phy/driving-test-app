@@ -100,7 +100,7 @@ const jsonLd = {
           name: "Does passing the Tigertest practice test give me a certificate?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "No. Tigertest is free practice to prepare you for any state or provider's responsible beverage service course and exam. To get a certificate or permit you must complete a course approved in your state and pass its exam. All four practice tests and all four training sets here are free, with no account required.",
+            text: "No. Tigertest is free practice to prepare you for any state or provider's responsible beverage service course and exam. To get a certificate or permit you must complete a course approved in your state and pass its exam. Start for free with no account required: every training set and practice test is free except the final one of each, which is part of Tigertest Premium (one payment, no subscription).",
           },
         },
       ],
@@ -292,7 +292,7 @@ export default function AlcoholServerLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Does passing the Tigertest practice test give me a certificate?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              No. Tigertest is free practice to prepare you for any state or provider&apos;s responsible beverage service course and exam. To get a certificate or permit you must complete a course approved in your state and pass its exam. All four practice tests and all four training sets here are free, with no account required.
+              No. Tigertest is free practice to prepare you for any state or provider&apos;s responsible beverage service course and exam. To get a certificate or permit you must complete a course approved in your state and pass its exam. Start for free with no account required: every training set and practice test is free except the final one of each, which is part of Tigertest Premium (one payment, no subscription).
             </p>
           </div>
         </div>
@@ -305,7 +305,7 @@ export default function AlcoholServerLandingPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">Ready to Pass Your Alcohol Server Exam?</h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Free to start. No account required. 200 questions across all five topic areas.</p>
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Start for free. No account required. 200 questions across all five topic areas.</p>
           <ExamLandingCTA dashboardHref="/alcohol-server/dashboard" />
         </div>
       </div>

@@ -5255,7 +5255,7 @@
   "questionId": "CT-016",
   "category": "cellPhone",
   "question": "코네티컷 운전자는 차량 안에서 손에 든 휴대폰을 어디서 합법적으로 사용할 수 있습니까?",
-  "optionA": "주차장이나 차고에서",
+  "optionA": "교통 정체로 정지했을 때",
   "optionB": "적색 신호등에서",
   "optionC": "사설 진입로에서만",
   "optionD": "갓길에 안전하게 주차했을 때",
@@ -6908,12 +6908,12 @@
   "category": "cellPhone",
   "question": "조지아의 핸즈프리 법에 따라 운전자가 휴대폰을 들어도 되는 때는 언제입니까?",
   "optionA": "정지 표지판과 신호등에서",
-  "optionB": "합법적으로 주차한 경우에만",
-  "optionC": "응급 상황에 한해",
+  "optionB": "합법적으로 주차했을 때",
+  "optionC": "내비게이션 앱을 사용할 때",
   "optionD": "25mph 미만으로 주행할 때",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "운전자는 합법적으로 주차한 경우에만 휴대폰을 들 수 있습니다."
+  "explanation": "운전자는 운전 중에 휴대폰을 들 수 없으며, 정지 표지판이나 신호등에서 정지한 경우에도 마찬가지입니다. 합법적으로 주차했을 때는 들 수 있습니다. 사고, 화재, 범죄 등 응급 상황을 신고하는 경우에는 별도의 제한된 예외가 적용됩니다."
  },
  {
   "type": "State-Specific",
@@ -16107,11 +16107,11 @@
   "question": "몬태나에서 주간고속도로에서 경광등을 켠 긴급 차량에 접근할 때 운전자는 무엇을 해야 합니까?",
   "optionA": "현재 속도를 유지합니다",
   "optionB": "즉시 완전히 정지합니다",
-  "optionC": "20mph 감속, 차로 이동",
+  "optionC": "차로 이동 또는 20mph 감속",
   "optionD": "전조등 깜박임 신호",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "주간고속도로에서 경광등을 켠 긴급 차량에 접근할 때 운전자는 제한속도보다 20mph 낮게 감속하고 차로를 옮겨야 합니다."
+  "explanation": "주간고속도로에서 경광등을 켜고 정차한 긴급 차량에 접근할 때 운전자는 안전하면 차로를 옮겨야 합니다. 차로를 옮길 수 없으면 제한속도보다 20mph 낮게 감속해야 합니다."
  },
  {
   "type": "State-Specific",
@@ -17126,7 +17126,7 @@
   "state": "ND",
   "questionId": "ND-024",
   "category": "stateUnique",
-  "question": "노스다코타에서 포장된 2차로 고속도로에 게시된 기본 제한속도는 얼마입니까?",
+  "question": "노스다코타에서 포장된 2차로 고속도로에 게시할 수 있는 가장 높은 제한속도는 얼마입니까?",
   "optionA": "55mph",
   "optionB": "65mph",
   "optionC": "70mph",
@@ -19590,7 +19590,7 @@
   "state": "NM",
   "questionId": "NM-040",
   "category": "stateUnique",
-  "question": "뉴멕시코에서 1년 이내에 벌점 7~10점이 쌓이면 어떤 면허 정지가 있을 수 있습니까?",
+  "question": "뉴멕시코에서 1년 이내에 벌점 7~10점이 쌓이면 어떤 일이 있을 수 있습니까?",
   "optionA": "법원 권고 시 최대 3개월 정지",
   "optionB": "자동 6개월 정지",
   "optionC": "의무 운전 학교만",
@@ -26255,13 +26255,13 @@
   "questionId": "UT-036",
   "category": "stateUnique",
   "question": "교차로가 아닌 곳의 횡단보도에서는 언제 정지해야 합니까?",
-  "optionA": "점멸할 때만",
-  "optionB": "편리할 때",
-  "optionC": "경찰이 있을 때",
-  "optionD": "진입하기 전에",
+  "optionA": "경고등이 점멸할 때만",
+  "optionB": "편리할 때만",
+  "optionC": "경찰이 있을 때만",
+  "optionD": "보행자가 건너고 있을 때",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "운전자는 보행자가 있을 때 교차로가 아닌 곳의 횡단보도에 진입하기 전에 정지해야 합니다."
+  "explanation": "운전자는 보행자가 건너고 있을 때 교차로가 아닌 곳을 포함한 모든 횡단보도에 진입하기 전에 정지해야 합니다."
  },
  {
   "type": "State-Specific",

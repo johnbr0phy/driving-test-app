@@ -12,7 +12,7 @@
   "facts": {
     "h2": "A biztosításközvetítői hatósági vizsga röviden",
     "answer": "Biztosítást Magyarországon csak az közvetíthet, aki teljesíti a Bit. szakmai követelményeit, ennek egyik útja a Magyar Nemzeti Bank hatósági vizsgája, amelyet egy hatósági képzést nyújtó képző szervnél végzett felkészítés után teszel le. A vizsga magyar nyelvű, feleletválasztós számítógépes teszt, amelyet a képző szerv vizsgatermében vagy online, a saját számítógépeden írhatsz meg. A függő biztosításközvetítői (ügynöki és többes ügynöki) vizsga 40 kérdés 40 perc alatt, és 30 ponttól sikeres. A független biztosításközvetítői (alkuszi) vizsga 60 kérdés 60 perc alatt, 45 ponttól sikeres, a független különbözeti vizsga 20 kérdés 20 perc alatt, 15 ponttól. A tesztsort az MNB a saját kérdésbankjából állítja össze; a kérdésbankot legutóbb 2026 júniusától módosította.",
-    "tigertest": "A Tigertestnél 200 saját gyakorlókérdés van magyarul a függő biztosításközvetítői vizsga három vizsgatárgyához, a 40/2015. (XII. 30.) NGM rendelet követelményei, a Bit. és a Ptk. alapján, ingyen és regisztráció nélkül. A kérdések saját írásúak, nem az MNB kérdésbankjából valók, ezért a hivatalos kérdésbankot is érdemes átnézned.",
+    "tigertest": "A Tigertestnél 200 saját gyakorlókérdés van magyarul a függő biztosításközvetítői vizsga három vizsgatárgyához, a 40/2015. (XII. 30.) NGM rendelet követelményei, a Bit. és a Ptk. alapján, ingyen elkezdhető, regisztráció nélkül. A kérdések saját írásúak, nem az MNB kérdésbankjából valók, ezért a hivatalos kérdésbankot is érdemes átnézned.",
     "rows": [
       {
         "label": "Hatóság",
@@ -113,7 +113,7 @@
     },
     {
       "q": "Ingyenes a Tigertest biztosításközvetítői vizsga tesztje?",
-      "a": "Igen. Mind a négy gyakorlósor és az öt teszt ingyenes, regisztráció nélkül használható. Ingyenes fiókkal a haladásodat minden eszközödön elmented."
+      "a": "Igen. Ingyen és regisztráció nélkül kezdhetsz: minden gyakorlósor és teszt ingyenes, kivéve az utolsó gyakorlósort és az utolsó tesztet, amelyek a Tigertest Premium részei (egyszeri fizetés, nincs előfizetés). Ingyenes fiókkal a haladásodat minden eszközödön elmented."
     }
   ],
   "finalCta": {

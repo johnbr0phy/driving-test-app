@@ -12,7 +12,7 @@
   "facts": {
     "h2": "Het theorie-examen voor vrachtwagenchauffeurs in één oogopslag",
     "answer": "Voor rijbewijs C of C1 alleen beantwoord je in een examencentrum 50 meerkeuzevragen op een computer, in maximaal 50 minuten, en je slaagt met minstens 41 juiste antwoorden. Rij je beroepsmatig, dan leg je het gecombineerde examen met vakbekwaamheid af: 100 meerkeuzevragen in maximaal 100 minuten, 50 over het rijbewijs en 50 over vakbekwaamheid, en je hebt minstens 80 op 100 nodig. Haal je op één van de twee helften minstens 40 op 50, dan ben je daar drie jaar voor vrijgesteld. Daarna volgen nog 8 case study's van 5 vragen (32 op 40) en een mondelinge proef van 10 vragen (80 op 100). Elke vraag heeft 2 of 3 antwoordmogelijkheden. Het examen is in het Nederlands, Frans of Duits; voor een andere taal kun je een beëdigde tolk krijgen.",
-    "tigertest": "Tigertest heeft 200 eigen oefenvragen in het Nederlands over de leerstof van het rijbewijs C en de vakbekwaamheid, allemaal gratis en zonder account. De vragen zijn zelf geschreven, niet overgenomen uit de officiële vragenbank, die niet openbaar is.",
+    "tigertest": "Tigertest heeft 200 eigen oefenvragen in het Nederlands over de leerstof van het rijbewijs C en de vakbekwaamheid, gratis om te beginnen en zonder account. De vragen zijn zelf geschreven, niet overgenomen uit de officiële vragenbank, die niet openbaar is.",
     "rows": [
       {
         "label": "Rijbewijs C alleen",
@@ -114,7 +114,7 @@
     },
     {
       "q": "Is het oefenen bij Tigertest gratis?",
-      "a": "Ja. Alle vijf oefensets en vier testen zijn gratis en zonder account te gebruiken. Met een gratis account bewaar je je voortgang op al je toestellen."
+      "a": "Ja. Je begint gratis en zonder account: alle oefensets en proefexamens zijn gratis, behalve de laatste van elk, die bij Tigertest Premium horen (eenmalige betaling, geen abonnement). Met een gratis account bewaar je je voortgang op al je toestellen."
     }
   ],
   "finalCta": {

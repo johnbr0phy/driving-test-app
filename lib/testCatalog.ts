@@ -408,6 +408,8 @@ const examEntry = (exam: ExamConfig): TestCatalogEntry => ({
   icon: exam.icon,
   theme: exam.id,
   languages: examLanguages(exam),
+  // The final training step and final test are Premium (lib/examLocks.ts).
+  pricing: `${exam.testCount - 1} free, 1 premium`,
   ...(examBaseLanguage(exam) !== "en"
     ? { language: examBaseLanguage(exam), nativeName: exam.name, nativeShortName: exam.shortName }
     : {}),

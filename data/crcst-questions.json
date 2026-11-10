@@ -2671,7 +2671,7 @@
     "optionD": "45-50 C (113-122 F)",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Bacillus atrophaeus, the EO test organism, is a mesophile incubated at 35 to 39 C. Using the steam incubator temperature would suppress growth and could produce a false negative."
+    "explanation": "Bacillus atrophaeus, the EO and dry heat test organism, is a mesophile that grows best around 37 C, so it is incubated at 35 to 39 C. The 55 to 60 C range is for Geobacillus stearothermophilus, the steam and hydrogen peroxide organism. Putting an EO BI in the steam incubator would suppress growth of surviving spores and could produce a false negative, so always follow the BI manufacturer's IFU for incubation temperature and time."
   },
   {
     "type": "CRCST",

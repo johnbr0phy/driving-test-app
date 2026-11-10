@@ -1,4 +1,6 @@
 import { getAdminDb } from "@/lib/firebase-admin";
+import { isRegion } from "@/lib/region";
+import { searchAllTests } from "@/lib/testSearch";
 
 // "Trending searches" on the homepage search (SearchHome): the queries typed
 // most over the last 7 days that found a test (from searchQueries, written by
@@ -17,11 +19,18 @@ export async function getTrendingSearches(limit = 6, region?: string): Promise<s
         const v = d.data();
         const week = days.reduce((sum, day) => sum + ((v.daily?.[day] as number) ?? 0), 0);
         const local = region ? ((v.byRegion?.[region] as number) ?? 0) : Infinity;
-        return { q: String(v.q ?? ""), week, found: (v.lastResults ?? 0) > 0, local };
+        return { q: String(v.q ?? ""), week, local };
       })
       // Two searches at least, so one person's typing never trends.
-      .filter((x) => x.found && x.week >= 2 && x.local >= 2 && x.q.length >= 2)
+      .filter((x) => x.week >= 2 && x.local >= 2 && x.q.length >= 2)
       .sort((a, b) => b.week - a.week)
+      // Shown on every homepage, so "found a test" is checked here, against
+      // today's catalog with every word matching exactly, never taken from
+      // the result count the browser reported with the search.
+      .filter((x) => {
+        const res = searchAllTests(x.q, region && isRegion(region) ? region : "US");
+        return res.hits.length > 0 && !res.partial && !res.fuzzy;
+      })
       .slice(0, limit)
       .map((x) => x.q);
   } catch (error) {

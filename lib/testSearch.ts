@@ -213,6 +213,17 @@ function stateHits(rawTerms: string[]): StateHit[] {
       });
     }
   }
+  // A bare state name ("washington", "texas practice test"): that state's own
+  // versions of the state-sold tests come right after its DMV test.
+  const named = hits.filter((h) => !h.bareCode);
+  if (named.length === 1 && !drivingWord) {
+    const code = named[0].hit.key.slice("dmv:".length);
+    const versions: StateHit[] = EXAM_VARIANTS.filter((v) => v.jurisdiction?.code === code).flatMap((v) => {
+      const test = TEST_CATALOG.find((t) => t.id === v.variantOf);
+      return test ? [{ hit: { key: v.id, test, title: v.name, subtitle: test.org, href: `${v.slug}/dashboard`, region: regionOfTest(test.id) }, bareCode: false }] : [];
+    });
+    return [...hits.slice(0, 4), ...versions];
+  }
   return hits.slice(0, 4);
 }
 

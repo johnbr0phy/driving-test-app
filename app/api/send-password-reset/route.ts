@@ -44,7 +44,7 @@ export async function POST(request: NextRequest) {
 
     try {
       resetLink = await auth.generatePasswordResetLink(email, {
-        url: 'https://tigertest.io/login',
+        url: 'https://www.tigertest.io/login',
       });
     } catch (error: any) {
       console.error('Firebase auth error:', error.code, error.message);
@@ -105,7 +105,7 @@ export async function POST(request: NextRequest) {
             <hr style="border: none; border-top: 1px solid #e5e7eb; margin: 30px 0;">
 
             <p style="font-size: 12px; color: #9ca3af; text-align: center;">
-              <a href="https://tigertest.io" style="color: #f97316; text-decoration: none;">Tigertest</a>
+              <a href="https://www.tigertest.io" style="color: #f97316; text-decoration: none;">Tigertest</a>
             </p>
           </div>
         </body>

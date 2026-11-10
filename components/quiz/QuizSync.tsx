@@ -52,7 +52,11 @@ export function QuizSync() {
           if (ready.current !== uid) return;
           if (next.progress === prev.progress && next.recent === prev.recent) return;
           clearTimeout(timer);
-          timer = setTimeout(() => saveQuizData(uid, pick(useQuizStore.getState())).catch((e) => console.error("quiz sync failed", e)), 1500);
+          timer = setTimeout(() => {
+            // Cleared so a later tab-hide or unmount does not save again with nothing changed.
+            timer = undefined;
+            saveQuizData(uid, pick(useQuizStore.getState())).catch((e) => console.error("quiz sync failed", e));
+          }, 1500);
         });
       } catch (e) {
         console.error("quiz sync load failed", e);

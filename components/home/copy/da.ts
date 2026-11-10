@@ -87,7 +87,7 @@ export const da: HomeCopy = {
           ? `Tigertest er en gratis side med øvelsesprøver. For dette land (${inName}) er der certificeringer, der er ens overalt, som CompTIA og AWS. Ved hvert spørgsmål bliver det rigtige svar forklaret.`
           : `Tigertest er en gratis side med øvelsesprøver. For dette land (${inName}) er der ${local === 1 ? "en køreprøve" : `${local} køreprøver`} skrevet ud fra de officielle ${local === 1 ? "regler" : "håndbøger"} plus certificeringer, der er ens overalt, som CompTIA og AWS. Ved hvert spørgsmål bliver det rigtige svar forklaret.`,
     },
-    { q: "Er Tigertest gratis?", a: `Ja. Alle prøver for dette land (${inName}) er gratis, uden abonnement.` },
+    { q: "Er Tigertest gratis?", a: `Alle prøver for dette land (${inName}) er gratis at begynde på, uden konto og uden abonnement. Et valgfrit engangskøb af Premium låser op for det sidste træningssæt og den sidste øvelsesprøve i de fleste prøver samt fuld statistik.` },
     {
       q: "Skal jeg have en konto?",
       a: "Nej. Du kan starte enhver prøve uden at logge ind. Opret en gratis konto, hvis du vil gemme dit fremskridt på alle dine enheder.",

@@ -4217,17 +4217,17 @@
     "difficulty": 1,
     "format": "single",
     "skill": "Evidence of evolution",
-    "stem": "The human appendix, which has no clear use today, is described as:",
+    "stem": "The human appendix, a reduced remnant of a larger digestive organ in our ancestors, is described as:",
     "options": [
-      "Analogous",
+      "Acquired",
       "Dominant",
       "Vestigial",
-      "Acquired"
+      "Analogous"
     ],
     "correct": [
       2
     ],
-    "explanation": "Vestigial organs are reduced remains of structures that were useful in ancestors."
+    "explanation": "Vestigial organs are reduced remains of structures that did more in ancestors. The appendix may still have minor roles, but it no longer does its ancestral digestive job."
   },
   {
     "id": "JAMBBIO-D-122",

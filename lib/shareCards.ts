@@ -25,7 +25,7 @@ export interface ShareCard {
 
 const general = { footer: "Free practice. Every answer explained.", color: "#B84B05", tint: "#FFF0DF" };
 const hubs: Record<string, ShareCard> = {
-  home: { title: "Free practice tests. Find your next step.", description: "Driving, school, healthcare and work. Learn with every answer.", footer: "tigertest.io", color: "#C34D07", tint: "#FFF0DE", mascots: [], kind: "search", tagline: "Free prep, any test, anywhere." },
+  home: { title: "Free practice tests. Find your next step.", description: "Driving, school, healthcare and work. Learn with every answer.", footer: "tigertest.io", color: "#C34D07", tint: "#FFF0DE", mascots: [], kind: "search", tagline: "Any test, anywhere. Start free." },
   tests: { title: `${TEST_CATALOG.length} free practice tests`, lines: [`${TEST_CATALOG.length} free`, "practice tests"], description: `Driving, school, healthcare, IT and trades, in ${REGIONS.length} countries. Every answer explained.`, footer: "See them all at tigertest.io/tests", color: "#C34D07", tint: "#FFF0DE", mascots: ["sat", "nclex", "dmv"] },
   teach: { title: "Free practice tests for your whole class", lines: ["Free practice tests", "for your whole class"], description: "Post one link. See who practiced and what your class keeps getting wrong.", footer: "Make a class at tigertest.io/teach", color: "#C34D07", tint: "#FFF0DE", mascots: [], kind: "teach" },
   uk: { title: "Free UK practice tests", lines: ["Free UK", "practice tests"], description: "Driving theory, GCSEs, school entrance and workplace certificates.", footer: "Find your test at tigertest.io/uk", color: "#1E4F91", tint: "#EAF1FC", mascots: ["ks2", "uksia", "gcsemaths"] },

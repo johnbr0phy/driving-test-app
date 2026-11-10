@@ -12,7 +12,7 @@
   "facts": {
     "h2": "Metsästäjätutkinto lyhyesti",
     "answer": "Metsästäjätutkinto on suoritettava ennen kuin maksat riistanhoitomaksun ja saat metsästyskortin ensimmäisen kerran. Tutkinnossa on 60 Suomen riistakeskuksen laatimaa monivalintakysymystä: ensin 15 lajintunnistuskysymystä kuvista, joihin on aikaa 15 minuuttia, ja sitten 45 teoriakysymystä. Koko kokeeseen on aikaa enintään puolitoista tuntia. Hyväksytyssä suorituksessa saa olla enintään 8 väärää vastausta, eli vähintään 52 pistettä 60:stä. Tutkinnon järjestävät riistanhoitoyhdistykset paperilla tai sähköisesti omalla puhelimella, tabletilla tai tietokoneella, ja ennakkoilmoittautuminen on pakollinen. Vuoden 2026 alusta kokeen voi tehdä suomeksi, ruotsiksi, englanniksi tai saameksi.",
-    "tigertest": "Tigertestissä on 200 omaa harjoituskysymystä suomeksi tutkinnon kahdeksasta aihealueesta, kaikki ilmaiseksi ja ilman rekisteröitymistä. Kysymykset on kirjoitettu itse metsästyslain, metsästysasetuksen ja ampuma-aselain pohjalta, eikä niitä ole kopioitu riistakeskuksen tutkinnosta.",
+    "tigertest": "Tigertestissä on 200 omaa harjoituskysymystä suomeksi tutkinnon kahdeksasta aihealueesta, aloitus on ilmainen eikä vaadi rekisteröitymistä. Kysymykset on kirjoitettu itse metsästyslain, metsästysasetuksen ja ampuma-aselain pohjalta, eikä niitä ole kopioitu riistakeskuksen tutkinnosta.",
     "rows": [
       {
         "label": "Kysymyksiä",
@@ -113,7 +113,7 @@
     },
     {
       "q": "Onko metsästäjätutkinnon harjoittelu Tigertestissä ilmaista?",
-      "a": "On. Kaikki viisi harjoitussarjaa ja kolme harjoituskoetta ovat ilmaisia ja käytettävissä ilman rekisteröitymistä. Ilmaisella tilillä tallennat edistymisesi kaikille laitteillesi."
+      "a": "On. Aloitat ilmaiseksi ja ilman rekisteröitymistä: kaikki harjoitussarjat ja harjoituskokeet ovat ilmaisia viimeistä sarjaa ja viimeistä koetta lukuun ottamatta, jotka kuuluvat Tigertest Premiumiin (kertamaksu, ei tilausta). Ilmaisella tilillä tallennat edistymisesi kaikille laitteillesi."
     }
   ],
   "finalCta": {

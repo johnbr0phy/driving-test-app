@@ -178,7 +178,7 @@ export function SearchHome({
 
         {!showResults && (
           <>
-            <p className="text-center text-base text-gray-600 dark:text-gray-300 sm:text-lg">Free prep, any test, anywhere.</p>
+            <p className="text-center text-base text-gray-600 dark:text-gray-300 sm:text-lg">Any test, anywhere. Start free.</p>
             {answeredThisWeek !== null && answeredThisWeek > 0 ? (
               <p className="pt-2 pb-7 text-center text-sm text-gray-500 dark:text-gray-400 sm:pb-9">
                 <span aria-hidden className="mr-2 inline-block h-1.5 w-1.5 rounded-full bg-green-500 align-middle ring-[3px] ring-green-500/25" />

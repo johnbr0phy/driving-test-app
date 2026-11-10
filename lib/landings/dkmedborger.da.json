@@ -12,7 +12,7 @@
   "facts": {
     "h2": "Medborgerskabsprøven kort fortalt",
     "answer": "Medborgerskabsprøven er en skriftlig prøve om demokrati og hverdagsliv i Danmark. En bestået prøve opfylder kravet om medborgerskab, som er en af de fire supplerende betingelser for tidsubegrænset opholdstilladelse (permanent ophold), hvor man skal opfylde to. Prøven har 25 multiple choice-spørgsmål med to eller tre svarmuligheder, du har 30 minutter og ingen hjælpemidler, og du består med mindst 20 rigtige svar. Alle spørgsmål vægter lige. Spørgsmålene bygger på det officielle læremateriale, som består af 26 fakta-ark om fx skole, arbejdsmarked, velfærd, sundhed, demokrati, rettigheder og pligter, Danmarks geografi, historie og kultur. Prøven holdes to gange om året, i maj eller juni og i november eller december, af udvalgte sprogcentre.",
-    "tigertest": "Tigertest har 200 egne øvelsesspørgsmål på dansk om de emner, lærematerialet dækker, alle gratis og uden login. Spørgsmålene er skrevet fra bunden og ikke kopieret fra lærematerialet eller fra tidligere prøver.",
+    "tigertest": "Tigertest har 200 egne øvelsesspørgsmål på dansk om de emner, lærematerialet dækker, gratis at starte på og uden login. Spørgsmålene er skrevet fra bunden og ikke kopieret fra lærematerialet eller fra tidligere prøver.",
     "rows": [
       {
         "label": "Spørgsmål",
@@ -117,7 +117,7 @@
     },
     {
       "q": "Er øvelsesprøverne gratis?",
-      "a": "Ja. Alle fire træningssæt og otte prøver er gratis og kan bruges uden login. Med en gratis konto gemmer du dine fremskridt på alle dine enheder."
+      "a": "Ja. Du starter gratis og uden login: Alle træningssæt og prøver er gratis undtagen det sidste af hver, som hører til Tigertest Premium (engangsbetaling, intet abonnement). Med en gratis konto gemmer du dine fremskridt på alle dine enheder."
     }
   ],
   "finalCta": {

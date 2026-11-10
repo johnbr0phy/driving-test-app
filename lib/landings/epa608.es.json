@@ -12,7 +12,7 @@
   "facts": {
     "h2": "El examen EPA 608 en resumen",
     "answer": "El examen EPA Sección 608 tiene cuatro secciones (Core, Tipo I, Tipo II y Tipo III) de 25 preguntas de opción múltiple cada una, y necesitas 18 correctas (72%) en cada sección. Core más un tipo te certifica en ese tipo; Core más los tres tipos es la certificación Universal, 100 preguntas en total. Los Tipos II y III siempre son supervisados y a libro cerrado.",
-    "tigertest": "Tigertest tiene 200 preguntas de práctica EPA 608 en español con explicaciones, todas gratis y sin cuenta.",
+    "tigertest": "Tigertest tiene 200 preguntas de práctica EPA 608 en español con explicaciones, gratis para empezar y sin cuenta.",
     "rows": [
       { "label": "Preguntas", "value": "25 por sección, 100 para Universal" },
       { "label": "Para aprobar", "value": "18 de 25 (72%) por sección" },
@@ -90,7 +90,7 @@
     },
     {
       "q": "¿El examen de práctica EPA 608 de Tigertest es gratis?",
-      "a": "Sí. Los cuatro grupos de práctica y los cuatro exámenes mixtos son gratis y no necesitas crear una cuenta. Crea una cuenta gratis si quieres guardar tu progreso en todos tus dispositivos."
+      "a": "Sí. Empiezas gratis y sin cuenta: todos los grupos de práctica y los exámenes de práctica son gratis menos el último de cada uno, que forma parte de Tigertest Premium (un solo pago, sin suscripción). Crea una cuenta gratis si quieres guardar tu progreso en todos tus dispositivos."
     }
   ],
   "finalCta": {

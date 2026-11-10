@@ -12,7 +12,7 @@
   "facts": {
     "h2": "Het theorie-examen rijbewijs B in één oogopslag",
     "answer": "Het Belgische theorie-examen voor het rijbewijs B (personenwagen) leg je af in een erkend examencentrum in Vlaanderen, Wallonië of Brussel. Je beantwoordt 50 meerkeuzevragen op een scherm. Je begint met 50 punten en hebt er minstens 41 nodig om te slagen: een fout antwoord of een onbeantwoorde vraag kost 1 punt, en een fout op een vraag over een zware fout (een overtreding van de derde of vierde graad of een snelheidslimiet) kost 5 punten. Je moet minstens 17 jaar zijn, en een geslaagd examen blijft drie jaar geldig. In Vlaanderen is het examen in het Nederlands, met een audiovertaling naar het Frans, Duits of Engels als je dat wilt; in Wallonië is het in het Frans, met Nederlands of Engels op afspraak in twee centra; in Brussel in het Frans of Nederlands. Na twee keer na elkaar zakken volg je 12 uur theorieles in een erkende rijschool.",
-    "tigertest": "Tigertest heeft 200 eigen oefenvragen met uitleg in het Nederlands, allemaal gratis en zonder account. Hetzelfde examen staat er ook in het Engels. Tigertest is niet verbonden met GOCA, een examencentrum of de Vlaamse, Waalse of Brusselse overheid.",
+    "tigertest": "Tigertest heeft 200 eigen oefenvragen met uitleg in het Nederlands, gratis om te beginnen en zonder account. Hetzelfde examen staat er ook in het Engels. Tigertest is niet verbonden met GOCA, een examencentrum of de Vlaamse, Waalse of Brusselse overheid.",
     "rows": [
       { "label": "Organisatie", "value": "Erkende examencentra in Vlaanderen, Wallonië en Brussel" },
       { "label": "Vragen", "value": "50 meerkeuzevragen" },
@@ -104,7 +104,7 @@
     },
     {
       "q": "Is Tigertest gratis?",
-      "a": "Ja. De vier proefexamens en de vijf oefenreeksen zijn gratis, en je hebt geen account nodig. Maak een gratis account als je je vooruitgang op je gsm en je computer wilt bewaren."
+      "a": "Ja. Je begint gratis en zonder account: alle oefensets en proefexamens zijn gratis, behalve de laatste van elk, die bij Tigertest Premium horen (eenmalige betaling, geen abonnement). Maak een gratis account als je je vooruitgang op je gsm en je computer wilt bewaren."
     }
   ],
   "finalCta": {

@@ -160,7 +160,7 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the official NCVEC 2026-2030 Technician pool",
     source: { name: "NCVEC", url: "https://www.ncvec.org" },
     tigertest:
-      "Tigertest has 397 of the 409 official pool questions with explanations (the 12 that need a schematic figure are left out), all free with no account required.",
+      "Tigertest has 397 of the 409 official pool questions with explanations (the 12 that need a schematic figure are left out), free to start with no account required.",
   },
   epa608: {
     answer:

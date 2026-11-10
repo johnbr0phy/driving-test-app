@@ -8,7 +8,7 @@ import { COUNTRY_NAMES } from "@/components/home/homeCopy";
 const RELATED_COPY: Partial<Record<Language, { title: string; sub: string; country: (name: string) => string; all: (n: number) => string }>> = {
   en: {
     title: "Related practice tests",
-    sub: "Every test on Tigertest is free and needs no account to start.",
+    sub: "Every test on Tigertest is free to start, with no account needed.",
     country: (name) => `Free practice tests for ${name}`,
     all: (n) => `See all ${n} practice tests`,
   },

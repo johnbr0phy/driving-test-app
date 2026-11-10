@@ -53,7 +53,7 @@ export const fr: HomeCopy = {
     },
     {
       q: "Tigertest est-il gratuit ?",
-      a: "Oui. Presque tous les tests sont entièrement gratuits. Le DMV propose des tests d'entraînement et un entraînement gratuits, plus un achat Premium facultatif et unique de 9,99 $ (pas un abonnement) qui débloque deux tests de plus, d'autres séries d'entraînement et des statistiques complètes sur chaque examen américain.",
+      a: "Tous les tests se commencent gratuitement, sans compte, et l'essentiel de chaque test reste gratuit. Un achat Premium facultatif et unique de 9,99 $ (pas un abonnement) débloque la dernière série d'entraînement et le dernier test d'entraînement de la plupart des examens (les deux derniers de chaque pour le DMV) et les statistiques complètes de chaque examen.",
     },
     {
       q: "Faut-il un compte ?",
@@ -85,7 +85,7 @@ export const fr: HomeCopy = {
           ? `Tigertest est un site gratuit de tests d'entraînement. Pour ${inName}, il propose des certifications identiques partout, comme CompTIA et AWS. Chaque question explique la bonne réponse.`
           : `Tigertest est un site gratuit de tests d'entraînement. Pour ${inName}, il propose ${local === 1 ? "un test de code de la route rédigé à partir des règles officielles" : `${local} tests de code de la route rédigés à partir des manuels officiels`}, plus des certifications identiques partout, comme CompTIA et AWS. Chaque question explique la bonne réponse.`,
     },
-    { q: "Tigertest est-il gratuit ?", a: `Oui. Tous les tests pour ${inName} sont gratuits, sans abonnement.` },
+    { q: "Tigertest est-il gratuit ?", a: `Tous les tests pour ${inName} se commencent gratuitement, sans compte et sans abonnement. Un achat Premium facultatif et unique débloque la dernière série d'entraînement et le dernier test d'entraînement de la plupart des examens, ainsi que les statistiques complètes.` },
     {
       q: "Faut-il un compte ?",
       a: "Non. Vous pouvez commencer n'importe quel test sans vous inscrire. Créez un compte gratuit si vous voulez retrouver votre progression sur tous vos appareils.",

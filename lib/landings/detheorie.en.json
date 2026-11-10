@@ -12,7 +12,7 @@
   "facts": {
     "h2": "The class B theory test at a glance",
     "answer": "For a first class B licence you answer 30 questions on screen at a TÜV or DEKRA test centre: 20 from the basic material that applies to every licence class and 10 from the extra material for class B. Each question carries 2 to 5 error points depending on how much it matters for road safety, 110 points in all. You pass with no more than 10 error points, but not if you get two 5-point questions wrong. There is no fixed time limit; 45 minutes is the guide time. The test is offered in German and several foreign languages, including English, Turkish and Arabic.",
-    "tigertest": "Tigertest has 210 original practice questions on the topics of the official question catalogue, written in German and translated into English, all free and with no sign-up. The questions are our own, not copied from the official catalogue.",
+    "tigertest": "Tigertest has 210 original practice questions on the topics of the official question catalogue, written in German and translated into English, free to start with no sign-up. The questions are our own, not copied from the official catalogue.",
     "rows": [
       {
         "label": "Questions",
@@ -117,7 +117,7 @@
     },
     {
       "q": "Is the German driving theory test practice on Tigertest free?",
-      "a": "Yes. All five practice sets and seven practice tests are free to use with no sign-up. With a free account you can save your progress across all your devices. The same questions are also available in German."
+      "a": "Yes. Start for free with no sign-up: every practice set and practice test is free except the final one of each, which is part of Tigertest Premium (one payment, no subscription). With a free account you can save your progress across all your devices. The same questions are also available in German."
     }
   ],
   "finalCta": {

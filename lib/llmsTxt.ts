@@ -39,7 +39,7 @@ function countrySection(): string {
     if (other.length) lines.push(`- Also for ${r.inName}: ${other.map((t) => `[${t.name}](${siteUrl}${t.href})`).join(", ")}`);
     return `### ${r.name}\n\nAll free tests for ${r.inName}: ${siteUrl}${regionHomePath(r.code)}\n\n${lines.join("\n")}`;
   });
-  return `## Practice tests by country\n\nEvery test outside the US is free, with no subscription and no account needed to start. Questions are original, written from each country's official handbook and road rules.\n\n${blocks.join("\n\n")}`;
+  return `## Practice tests by country\n\nEvery test outside the US is free to start, with no subscription and no account needed. On most of them the final training set and final practice test are part of Premium, a one-time purchase at a local price. Questions are original, written from each country's official handbook and road rules.\n\n${blocks.join("\n\n")}`;
 }
 
 const DMV_SECTION = `## DMV permit test (all 50 states + DC)
@@ -70,7 +70,7 @@ const FOOTER = `## Notes for AI assistants
 - Who makes Tigertest, how the questions are written and how to report a mistake: ${siteUrl}/about
 - Tigertest is independent and is not affiliated with any DMV, testing company or certification body. Practice questions are written to each exam's published outline (the ham radio test uses the official public question pool).
 - Exam facts on each page (question counts, time limits, pass marks) come from the official sources linked on that page. Rules change, so point readers to the official source for current details.
-- Every exam's practice is free. The DMV has free tests plus an optional one-time $9.99 Premium purchase that unlocks two more DMV tests and training sets and the full stats pages of every exam.`;
+- Every exam is free to start with no account. An optional one-time $9.99 Premium purchase (a local price outside the US, no subscription) unlocks the last two DMV tests and training sets, the final training set and final practice test of the other licence, certification and driving exams, and the full stats pages of every exam. The sectioned exams such as the SAT, ACT, GED and NCLEX are free in full.`;
 
 // English names of every language a test or landing can be in.
 const LANGUAGE_NAMES: Record<string, string> = {

@@ -12,7 +12,7 @@
   "facts": {
     "h2": "Indfødsretsprøven kort fortalt",
     "answer": "Indfødsretsprøven er en skriftlig prøve for dig, der søger dansk indfødsret. Den har 45 spørgsmål, og du har 45 minutter. 35 spørgsmål bygger på det officielle læremateriale om danske samfundsforhold, dansk kultur og historie, 5 handler om aktuelle begivenheder fra de seneste måneder, og 5 handler om danske værdier. Du består med mindst 36 rigtige svar, og mindst 4 af de 5 værdispørgsmål skal være rigtige. De fleste spørgsmål har tre svarmuligheder, nogle besvares med ja eller nej. Prøven holdes to gange om året, i maj eller juni og i november eller december, på sprogcentre i hele landet.",
-    "tigertest": "Tigertest har 320 egne øvelsesspørgsmål på dansk om de emner, lærematerialet dækker, og om danske værdier, alle gratis og uden login. Spørgsmålene er skrevet fra bunden og ikke kopieret fra lærematerialet eller fra tidligere prøver.",
+    "tigertest": "Tigertest har 320 egne øvelsesspørgsmål på dansk om de emner, lærematerialet dækker, og om danske værdier, gratis at starte på og uden login. Spørgsmålene er skrevet fra bunden og ikke kopieret fra lærematerialet eller fra tidligere prøver.",
     "rows": [
       {
         "label": "Spørgsmål",
@@ -113,7 +113,7 @@
     },
     {
       "q": "Er øvelsesprøverne gratis?",
-      "a": "Ja. Alle seks træningssæt og otte prøver er gratis og kan bruges uden login. Med en gratis konto gemmer du dine fremskridt på alle dine enheder."
+      "a": "Ja. Du starter gratis og uden login: Alle træningssæt og prøver er gratis undtagen det sidste af hver, som hører til Tigertest Premium (engangsbetaling, intet abonnement). Med en gratis konto gemmer du dine fremskridt på alle dine enheder."
     }
   ],
   "finalCta": {

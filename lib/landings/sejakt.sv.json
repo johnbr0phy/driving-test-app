@@ -12,7 +12,7 @@
   "facts": {
     "h2": "Jägarexamens teoriprov i korthet",
     "answer": "Teoriprovet i jägarexamen har 70 frågor som ska besvaras på högst 60 minuter, och du behöver minst 60 rätt för att bli godkänd. Varje fråga har fyra svarsalternativ där ett är rätt, ibland med en bild. Naturvårdsverket ansvarar för provet, som görs digitalt i en app på din egen mobil eller surfplatta inför en provledare. När du lämnar in får du ett preliminärt resultat som provledaren sedan godkänner. Provet finns på svenska och engelska, och frågorna kan läsas upp. Naturvårdsverket får lägga till högst tre testfrågor som inte räknas. Du måste ha godkänt teoriprov innan du får göra de praktiska skjutproven för hagelgevär och kulgevär.",
-    "tigertest": "Tigertest har 210 egna övningsfrågor på svenska om alla områden i Naturvårdsverkets kompetensbeskrivning, gratis och utan inloggning. Naturvårdsverket lämnar inte ut provfrågorna, så alla frågor här är skrivna från jaktlagen, jaktförordningen, vapenlagen och Naturvårdsverkets föreskrifter.",
+    "tigertest": "Tigertest har 210 egna övningsfrågor på svenska om alla områden i Naturvårdsverkets kompetensbeskrivning, gratis att börja med och utan inloggning. Naturvårdsverket lämnar inte ut provfrågorna, så alla frågor här är skrivna från jaktlagen, jaktförordningen, vapenlagen och Naturvårdsverkets föreskrifter.",
     "rows": [
       {
         "label": "Frågor",
@@ -113,7 +113,7 @@
     },
     {
       "q": "Kostar jägarexamen teoriprov hos Tigertest något?",
-      "a": "Nej. Alla fem övningsset och tre övningsprov är gratis och utan inloggning. Med ett gratis konto sparas dina framsteg på alla enheter."
+      "a": "Nej. Du börjar gratis och utan inloggning: alla övningsset och övningsprov är gratis utom det sista av varje, som ingår i Tigertest Premium (engångsbetalning, ingen prenumeration). Med ett gratis konto sparas dina framsteg på alla enheter."
     }
   ],
   "finalCta": {

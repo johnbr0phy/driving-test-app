@@ -88,7 +88,7 @@ export const fi: HomeCopy = {
           ? `Tigertest on ilmainen harjoituskoesivusto. Tälle maalle (${inName}) on sertifikaatteja, jotka ovat samat kaikkialla, kuten CompTIA ja AWS. Jokaisessa kysymyksessä oikea vastaus selitetään.`
           : `Tigertest on ilmainen harjoituskoesivusto. Tälle maalle (${inName}) on ${local === 1 ? "ajokortin teoriakoe, joka on kirjoitettu virallisten sääntöjen" : `${local} ajokortin teoriakoetta, jotka on kirjoitettu virallisten käsikirjojen`} pohjalta, sekä sertifikaatteja, jotka ovat samat kaikkialla, kuten CompTIA ja AWS. Jokaisessa kysymyksessä oikea vastaus selitetään.`,
     },
-    { q: "Onko Tigertest ilmainen?", a: `Kyllä. Jokainen koe tälle maalle (${inName}) on ilmainen, eikä tilausta tarvita.` },
+    { q: "Onko Tigertest ilmainen?", a: `Jokaisen kokeen tälle maalle (${inName}) voi aloittaa ilmaiseksi, ilman tiliä ja ilman tilausta. Valinnainen kertaostona maksettava Premium avaa useimmissa kokeissa viimeisen harjoitussarjan ja viimeisen harjoituskokeen sekä täydet tilastot.` },
     {
       q: "Tarvitsenko tilin?",
       a: "Et. Voit aloittaa minkä tahansa kokeen kirjautumatta. Luo ilmainen tili, jos haluat tallentaa edistymisesi kaikille laitteillesi.",

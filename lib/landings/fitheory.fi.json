@@ -12,7 +12,7 @@
   "facts": {
     "h2": "B-luokan teoriakoe lyhyesti",
     "answer": "B-luokan teoriakoe tehdään tabletilla Ajovarman palvelupisteessä, ja sen järjestää Traficomin puolesta A-Katsastus. Kokeessa on kolme osaa, joihin on aikaa yhteensä 30 minuuttia: 15 monivalintakysymystä, 50 liikennetilannekuvaa koskevaa kysymystä ja 5 riskientunnistamistehtävää. Jokaisesta osasta on saatava vähintään vaadittu määrä oikein (11, 43 ja 4). Kokeen voi tehdä suomeksi, ruotsiksi tai englanniksi, ja joissakin tapauksissa suullisena, jolloin aikaa on 60 minuuttia. Teoriakokeen voi suorittaa kuukautta ennen ajokortin ikärajan täyttymistä, tavallisesti 18 vuotta. Hyväksytty teoriakoe on voimassa vuoden, ja se suoritetaan ennen ajokoetta.",
-    "tigertest": "Tigertestissä on 200 omaa harjoituskysymystä suomeksi, kaikki ilmaiseksi ja ilman rekisteröitymistä. Kysymykset on kirjoitettu tieliikennelain ja Traficomin teoriakoetta koskevien sääntöjen pohjalta, eikä niitä ole kopioitu oikeasta kokeesta. Tigertest ei ole Traficomin, Ajovarman tai A-Katsastuksen palvelu.",
+    "tigertest": "Tigertestissä on 200 omaa harjoituskysymystä suomeksi, aloitus on ilmainen eikä vaadi rekisteröitymistä. Kysymykset on kirjoitettu tieliikennelain ja Traficomin teoriakoetta koskevien sääntöjen pohjalta, eikä niitä ole kopioitu oikeasta kokeesta. Tigertest ei ole Traficomin, Ajovarman tai A-Katsastuksen palvelu.",
     "rows": [
       { "label": "Järjestäjä", "value": "Traficom, Ajovarman (A-Katsastus) palvelupisteet" },
       { "label": "Osat", "value": "15 monivalintaa, 50 liikennetilannekuvaa, 5 riskientunnistamistehtävää" },
@@ -99,7 +99,7 @@
     },
     {
       "q": "Onko Tigertestin harjoittelu ilmaista?",
-      "a": "On. Kaikki neljä harjoituskoetta ja viisi harjoitussarjaa ovat ilmaisia, eikä tiliä tarvita. Luo ilmainen tili, jos haluat tallentaa edistymisesi puhelimeen ja tietokoneelle."
+      "a": "On. Aloitat ilmaiseksi ja ilman rekisteröitymistä: kaikki harjoitussarjat ja harjoituskokeet ovat ilmaisia viimeistä sarjaa ja viimeistä koetta lukuun ottamatta, jotka kuuluvat Tigertest Premiumiin (kertamaksu, ei tilausta). Luo ilmainen tili, jos haluat tallentaa edistymisesi puhelimeen ja tietokoneelle."
     }
   ],
   "finalCta": {

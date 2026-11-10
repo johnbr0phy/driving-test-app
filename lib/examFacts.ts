@@ -5,6 +5,8 @@
 // landing page's FAQ, which is where these numbers were sourced and checked.
 // DMV state pages carry their own facts and are deliberately not listed here.
 
+import costs from "./examCosts.json";
+
 export interface ExamFactRow {
   label: string;
   value: string;
@@ -21,6 +23,24 @@ export interface ExamFacts {
   source?: { name: string; url: string };
   /** Replaces the generated Tigertest sentence when the catalog count or pricing misleads. */
   tigertest?: string;
+}
+
+/**
+ * What the real exam costs and how soon a failed attempt can be retaken
+ * (lib/examCosts.json): each value was read on the official body's own page,
+ * whose URL is kept with it, on the file's `checked` date. People searching
+ * these are about to book or have just failed, so the facts block shows them.
+ * Re-check the file when a fee changes; never add a figure from a prep site.
+ */
+export const EXAM_COSTS_CHECKED: string = costs.checked;
+
+export function examCostRows(examId: string): (ExamFactRow & { url: string })[] {
+  const c = (costs.exams as Record<string, { fee?: { value: string; url: string }; retake?: { value: string; url: string } }>)[examId];
+  const have = (EXAM_FACTS[examId]?.rows ?? []).map((r) => r.label.toLowerCase());
+  const rows: (ExamFactRow & { url: string })[] = [];
+  if (c?.fee && !have.some((l) => /fee|price|cost/.test(l))) rows.push({ label: "Exam fee", ...c.fee });
+  if (c?.retake && !have.some((l) => /retake|attempt/.test(l))) rows.push({ label: "Retakes", ...c.retake });
+  return rows;
 }
 
 export const EXAM_FACTS: Record<string, ExamFacts> = {

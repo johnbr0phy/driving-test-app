@@ -1,5 +1,5 @@
 import { ExternalLink } from "lucide-react";
-import { EXAM_FACTS } from "@/lib/examFacts";
+import { EXAM_COSTS_CHECKED, EXAM_FACTS, examCostRows } from "@/lib/examFacts";
 import { landingUpdatedAt } from "@/lib/landingDates";
 import { getCatalogEntry } from "@/lib/testCatalog";
 import { ORGANIZATION_ID } from "@/lib/siteSchema";
@@ -33,6 +33,7 @@ export function ExamFacts({ examId }: { examId: string }) {
   const test = getCatalogEntry(examId);
   if (!facts || !test) return null;
 
+  const costRows = examCostRows(examId);
   const url = `${siteUrl}${test.href}`;
   const locale = factsLocale(examId);
   const tigertest =
@@ -73,6 +74,22 @@ export function ExamFacts({ examId }: { examId: string }) {
             </div>
           ))}
         </dl>
+        {costRows.length > 0 && (
+          <dl className="border-b border-gray-200 dark:border-gray-800">
+            {costRows.map((row) => (
+              <div key={row.label} className="flex flex-col sm:flex-row sm:justify-between gap-1 sm:gap-6 py-3 border-t border-gray-200 dark:border-gray-800 first:border-t-0">
+                <dt className="shrink-0 text-gray-500 dark:text-gray-400">{row.label}</dt>
+                <dd className="min-w-0 sm:text-right font-medium text-gray-900 dark:text-gray-50">
+                  {row.value}{" "}
+                  <a href={row.url} target="_blank" rel="noopener noreferrer" className="whitespace-nowrap text-sm font-normal text-brand-dark underline underline-offset-2">
+                    official source
+                  </a>
+                </dd>
+              </div>
+            ))}
+          </dl>
+        )}
+        {costRows.length > 0 && <p className="pt-2 text-xs text-gray-500 dark:text-gray-400">Fee and retake rules checked on {EXAM_COSTS_CHECKED}.</p>}
         <p className="mt-5 text-sm text-gray-500 dark:text-gray-400">
           Updated <time dateTime={landingUpdatedAt(examId)}>{monthYear(landingUpdatedAt(examId), locale)}</time> by the
           Tigertest team. Practice questions follow {facts.basedOn}. Exam rules change, so confirm current details

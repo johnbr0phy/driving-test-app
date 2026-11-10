@@ -1,6 +1,6 @@
 import { states } from "@/data/states";
 import { getStateLandingInfo } from "@/data/stateLandingData";
-import { EXAM_FACTS } from "./examFacts";
+import { EXAM_COSTS_CHECKED, EXAM_FACTS, examCostRows } from "./examFacts";
 import { EXAMS } from "./exams";
 import { TEST_CATALOG, TEST_GROUPS, getCatalogEntry, type TestCatalogEntry } from "./testCatalog";
 import { NON_DRIVING_TESTS, REGIONS, regionHomePath, regionOfTest } from "./region";
@@ -172,7 +172,7 @@ function examFactsBlock(t: TestCatalogEntry): string {
   return [
     `### ${t.name}`,
     f.answer,
-    f.rows.map((r) => `- ${r.label}: ${r.value}`).join("\n"),
+    [...f.rows, ...examCostRows(t.id).map((r) => ({ label: r.label, value: `${r.value} (${r.url}, checked ${EXAM_COSTS_CHECKED})` }))].map((r) => `- ${r.label}: ${r.value}`).join("\n"),
     [
       `- Tigertest practice: ${siteUrl}${t.href} (follows ${f.basedOn})`,
       f.source ? `- Official source: ${f.source.url}` : null,

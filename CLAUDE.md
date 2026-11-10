@@ -566,7 +566,7 @@ NEXT_PUBLIC_SITE_URL            # Site URL for metadata
 ANTHROPIC_API_KEY               # Claude API, for the daily update on the /admin Today tab (cron skips when unset)
 CRON_SECRET                     # Bearer token for /api/cron/* and /api/indexnow/ping
 INDEXNOW_KEY                    # 8–128 char hex key for IndexNow (Bing) submissions
-EMAIL_REPLY_TO                  # Reply-To on campaign mail and test-request notifications (default john@johnbrophy.net)
+EMAIL_REPLY_TO                  # Reply-To on campaign mail and test-request notifications (default john@tigertest.io)
 CRON_MAX_BATCH                  # Per-run campaign cap (default: daily campaign budget / cron count)
 NEW_TESTS_CAMPAIGN              # "send" turns on the SAT/ACT launch email; anything else (or unset) = paused, logs a daily dry-run count
 EXIT_QUESTION_CAMPAIGN          # "send" turns on the question-that-got-away email (/api/cron/exit-question); anything else (or unset) = paused, returns the eligible count

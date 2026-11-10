@@ -73,7 +73,11 @@ async function sendWelcomeEmail(userId: string) {
       // Finish the request even if the page navigates away right after signup.
       keepalive: true,
       headers: { "Content-Type": "application/json", Authorization: `Bearer ${await auth.currentUser?.getIdToken()}` },
-      body: JSON.stringify({ userId, signupUrl: href }),
+      // The email choice made at signup. The browser saves it to the account
+      // a moment later; sending it here lets the welcome go out at once
+      // instead of waiting for that save (the route only uses it while the
+      // account has no stored choice).
+      body: JSON.stringify({ userId, signupUrl: href, emailConsent: useStore.getState().emailConsent === true }),
     });
   } catch (err) {
     console.error("Failed to send welcome email:", err);

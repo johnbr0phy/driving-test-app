@@ -4,7 +4,9 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { ThemedScreenshot } from "@/components/ThemedScreenshot";
 import { TEST_CATALOG } from "@/lib/testCatalog";
-import { TestCard, TestCatalogGrid } from "@/components/TestCatalogGrid";
+import { TestCatalogGrid } from "@/components/TestCatalogGrid";
+import { TestCard } from "@/components/TestCard";
+import { TestCatalogStatic } from "@/components/TestCatalogStatic";
 import { CountUp } from "@/components/CountUp";
 import { getPopularTests } from "@/lib/server/popularTests";
 import { getTrendingSearches } from "@/lib/server/trendingSearches";
@@ -257,7 +259,7 @@ export async function HomePage({ region, lang: pickedLang }: { region: Region; l
           {us ? c.everyTest : c.testsFor(inName)}
         </h2>
         {headline && <p className="mx-auto mb-6 max-w-2xl text-center text-gray-600 dark:text-gray-300">{headline.lead}</p>}
-        <TestCatalogGrid showPopular={false} nested region={region} regionPicker localOnly={!us} lang={lang} searchBox={false} />
+        <TestCatalogStatic region={region} localOnly={!us} lang={lang} />
         {!us && (
           <p className="mt-10 text-sm text-gray-600 dark:text-gray-300">
             {c.usExamPrompt}{" "}

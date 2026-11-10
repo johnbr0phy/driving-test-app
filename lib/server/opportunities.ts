@@ -144,9 +144,10 @@ export interface OpportunitiesPayload {
     visits30d: number;
     signups: number;
     buyers: number;
+    revenueCents: number;
   }[];
   sourceSignupsTracked: number;
-  landings: { path: string; signups: number; buyers: number }[];
+  landings: { path: string; signups: number; buyers: number; revenueCents: number }[];
   cohorts: {
     start: string;
     end: string;
@@ -292,6 +293,8 @@ export async function buildOpportunities(
     exam: string;
     userId: string | null;
     paywallVariant?: string;
+    source?: string;
+    landing?: string;
   };
   const payments: P[] = [];
   let paymentsMissingLocation = 0;
@@ -323,6 +326,8 @@ export async function buildOpportunities(
       exam: typeof p.exam === 'string' ? p.exam : purchaseExam(location),
       userId,
       ...(typeof p.paywallVariant === 'string' && { paywallVariant: p.paywallVariant }),
+      ...(typeof p.source === 'string' && { source: p.source }),
+      ...(typeof p.landing === 'string' && { landing: p.landing }),
     });
   }
   // Premium accounts with no payment record (granted before payments
@@ -503,6 +508,18 @@ export async function buildOpportunities(
       landingSignups.set(landing, row);
     }
   }
+  // Revenue by the buyer's first visit: the payment's own stamp (checkouts
+  // since Nov 2026), else the origin saved with the account at signup.
+  const originById = new Map(originsSnap.docs.map((d) => [d.id, d.data()]));
+  const sourceRevenue = new Map<string, number>();
+  const landingRevenue = new Map<string, number>();
+  for (const p of payments) {
+    const o = p.userId ? originById.get(p.userId) : undefined;
+    const source = p.source ?? (typeof o?.source === 'string' ? o.source : null);
+    const landing = p.landing ?? (typeof o?.landing === 'string' ? o.landing : null);
+    if (source) sourceRevenue.set(source, (sourceRevenue.get(source) || 0) + p.net);
+    if (landing) landingRevenue.set(landing, (landingRevenue.get(landing) || 0) + p.net);
+  }
   const sources = VISIT_SOURCES.map((id) => ({
     id,
     label: SOURCE_LABELS[id],
@@ -512,6 +529,7 @@ export async function buildOpportunities(
     visits30d: w.sum(steps[`visit_${id}`]?.daily, 29, 0),
     signups: sourceSignups.get(id)?.signups || 0,
     buyers: sourceSignups.get(id)?.buyers || 0,
+    revenueCents: sourceRevenue.get(id) || 0,
   })).sort((a, b) => b.visits30d - a.visits30d);
   // ── Countries: exams rolled up by regionOfTest, visitors by IP country ─
   const countrySince = Object.keys(steps)
@@ -546,10 +564,10 @@ export async function buildOpportunities(
     };
   });
 
-  const landings = [...landingSignups.entries()]
-    .map(([path, r]) => ({ path, ...r }))
-    .sort((a, b) => b.signups - a.signups)
-    .slice(0, 15);
+  const landings = [...new Set([...landingSignups.keys(), ...landingRevenue.keys()])]
+    .map((path) => ({ path, signups: landingSignups.get(path)?.signups || 0, buyers: landingSignups.get(path)?.buyers || 0, revenueCents: landingRevenue.get(path) || 0 }))
+    .sort((a, b) => b.revenueCents - a.revenueCents || b.signups - a.signups)
+    .slice(0, 25);
 
   // ── Retention: weekly signup cohorts ───────────────────────────────────
   // A cohort is seven signup days. "Came back" is any active day after the

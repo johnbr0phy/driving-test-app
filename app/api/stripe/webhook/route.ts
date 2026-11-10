@@ -138,6 +138,9 @@ export async function POST(request: NextRequest) {
         exam: checkoutExam,
         // The English paywall test's variant (lib/paywallTest.ts), when the buyer saw it.
         paywallVariant: session.metadata?.paywallVariant || null,
+        // The buyer's first visit (lib/funnel.ts): channel and landing page.
+        source: session.metadata?.source || null,
+        landing: session.metadata?.landing || null,
         createdAt: new Date().toISOString(),
         });
       });

@@ -42,6 +42,7 @@ import {
   accuracyChipColor,
 } from "@/components/stats/StatsParts";
 import { usePremiumPrice } from "@/hooks/usePremiumPrice";
+import { checkoutAttribution } from "@/lib/funnel";
 
 type SortField = "timesAnswered" | "correct" | "wrong" | "accuracy";
 type SortDirection = "asc" | "desc";
@@ -115,6 +116,7 @@ function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
         body: JSON.stringify({
           email: user.email,
           returnUrl: window.location.origin,
+          ...checkoutAttribution(),
           returnPath: pathname,
           paywallVariant: paywallVariantForCheckout(),
           location: paywallLocation,

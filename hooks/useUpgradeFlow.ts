@@ -11,6 +11,7 @@ import {
   trackViewItem,
 } from "@/lib/analytics";
 import { paywallVariantForCheckout } from "@/lib/paywallTest";
+import { checkoutAttribution } from "@/lib/funnel";
 
 export type PaywallFeature = string;
 
@@ -55,6 +56,7 @@ export function useUpgradeFlow(location: string, returnPath = "/dmv/dashboard") 
         body: JSON.stringify({
           email: user.email,
           returnUrl: window.location.origin,
+          ...checkoutAttribution(),
           returnPath,
           location,
           paywallVariant: paywallVariantForCheckout(),

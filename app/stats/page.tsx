@@ -29,6 +29,7 @@ import { inClassFor, useClassMemberships } from "@/hooks/useClassMemberships";
 import { DMV_EXAM_ID } from "@/lib/classes";
 import { paywallVariantForCheckout } from "@/lib/paywallTest";
 import { usePremiumPrice } from "@/hooks/usePremiumPrice";
+import { checkoutAttribution } from "@/lib/funnel";
 
 type SortField = "timesAnswered" | "correct" | "wrong" | "accuracy";
 type SortDirection = "asc" | "desc";
@@ -113,6 +114,7 @@ function StatsContent() {
         body: JSON.stringify({
           email: user.email,
           returnUrl: window.location.origin,
+          ...checkoutAttribution(),
           paywallVariant: paywallVariantForCheckout(),
           location: "stats_page",
         }),

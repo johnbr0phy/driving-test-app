@@ -146,6 +146,47 @@ SKILLS = [
     {"stem": "How many rows does a truth table for 5 inputs need?", "options": ["32", "10", "25"], "answer": 0, "why": "Each input doubles the combinations: 2 × 2 × 2 × 2 × 2 = 32."},
   ],
 },
+{
+  "id": "csModDiv", "name": "MOD and DIV", "sub": "Whole-number division and the remainder",
+  "rule": "DIV is whole-number division: it gives how many whole times one number goes into another and throws the remainder away. MOD gives the remainder that is left over. 14 DIV 4 = 3 and 14 MOD 4 = 2, because 3 × 4 = 12 and 2 are left.",
+  "trick": "n MOD 2 = 0 means n is even. The answer to MOD is always smaller than the number you divide by.",
+  "examples": [
+    {"kind": "eg", "text": "14 DIV 4", "note": "4 goes into 14 three whole times: 3"},
+    {"kind": "eg", "text": "14 MOD 4", "note": "3 × 4 = 12, and 14 − 12 = 2 left over: 2"},
+  ],
+  "another": {"text": "Share 14 sweets between 4 friends. Each friend gets 3 (that is DIV) and 2 sweets are left in the bag (that is MOD).", "example": "14 sweets, 4 friends\n3 each: DIV\n2 left over: MOD"},
+  "walkthrough": {"board": "mins ← 135. hours ← mins DIV 60. left ← mins MOD 60. OUTPUT hours, left", "kind": "text", "steps": [
+    say("DIV keeps the whole part of a division. MOD keeps what is left over."),
+    ask("How many whole times does 60 go into 135?", ["2", "3", "75"], "hours = 135 DIV 60 = 2", then="2 × 60 = 120, and 3 × 60 = 180 is too big.", hint="60, 120, 180: which is the last one that fits inside 135?"),
+    ask("2 lots of 60 is 120. How much of 135 is left over?", ["15", "2", "60"], "left = 135 MOD 60 = 15", hint="135 − 120."),
+    ask("What is output?", ["2 and 15", "15 and 2", "2.25"], "OUTPUT 2, 15", then="135 minutes is 2 hours and 15 minutes."),
+    ask("Which test tells you a number n is even?", ["n MOD 2 = 0", "n DIV 2 = 0"], "even: n MOD 2 = 0", then="An even number leaves no remainder when it is divided by 2."),
+  ]},
+  "questions": [
+    {"stem": "What is 19 MOD 4?", "options": ["3", "4", "15"], "answer": 0, "why": "4 × 4 = 16, and 19 − 16 = 3 left over. 4 would be 19 DIV 4."},
+    {"stem": "What is 26 DIV 6?", "options": ["4", "2", "5"], "answer": 0, "why": "6 goes into 26 four whole times (24). The 2 left over would be 26 MOD 6."},
+  ],
+},
+{
+  "id": "csTranslators", "name": "Translators", "sub": "Compiler, interpreter or assembler",
+  "rule": "A CPU can only run machine code. A high-level language such as Python is written for people, so it must be translated first. A compiler translates the whole program at once into a file that can be run. An interpreter translates and runs one line at a time and stops at the first error. An assembler turns assembly language, a low-level language written in mnemonics, into machine code.",
+  "trick": "Compiler: the whole book is translated before anyone reads it. Interpreter: it is translated out loud, one sentence at a time.",
+  "examples": [
+    {"kind": "eg", "text": "A game sold as a file that is ready to run", "note": "Compiled: it runs fast and the source code stays hidden"},
+    {"kind": "eg", "text": "Testing a program you are still writing", "note": "Interpreted: it stops at the line with the error"},
+  ],
+  "another": {"text": "Imagine your friend only reads French. You could translate your whole letter first and post the French copy (a compiler), or sit beside them and translate each sentence as they go (an interpreter).", "example": "Whole letter first: compiler\nSentence by sentence: interpreter"},
+  "walkthrough": {"board": "A student writes a program in Python, tests it, then wants to give friends a file they can run.", "kind": "text", "steps": [
+    ask("Can the CPU run the Python code as it is written?", ["No, it must be translated into machine code", "Yes, the CPU reads Python"], "High-level code → machine code", hint="A CPU only understands binary machine code."),
+    ask("While testing, the student wants the program to stop at the line with the error. Which translator does that?", ["An interpreter", "A compiler", "An assembler"], "Testing: interpreter", then="It translates and runs one line at a time, so earlier lines have already run."),
+    ask("The friends should get one file that runs with no translator installed. Which translator makes that?", ["A compiler", "An interpreter"], "Sharing: compiler", then="A compiler translates everything up front into an executable file."),
+    ask("Another program is written in mnemonics such as LDA and ADD. What translates it?", ["An assembler", "A compiler"], "Assembly language: assembler", hint="Mnemonics are assembly language."),
+  ]},
+  "questions": [
+    {"stem": "Which translator turns the whole program into machine code before it is run?", "options": ["A compiler", "An interpreter", "An assembler"], "answer": 0, "why": "A compiler translates everything at once. An interpreter goes line by line, and an assembler is for assembly language."},
+    {"stem": "Which of these is a low-level language?", "options": ["Assembly language", "Python", "Java"], "answer": 0, "why": "Assembly language is close to machine code and is written for one type of processor. Python and Java are high-level languages."},
+  ],
+},
 ]
 
 with open("data/v2/basics/gcsecs.json", "w") as f:

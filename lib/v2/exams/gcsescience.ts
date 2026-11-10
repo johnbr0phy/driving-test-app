@@ -131,7 +131,7 @@ export const GCSESCIENCE: ExamV2Config = {
     { key: "chem1", name: "Atoms, Bonding and Reactions", section: "chemistry", domains: ["gcsescienceChem1"], blurb: "Atoms and the periodic table, ionic, covalent and metallic bonding, relative formula mass, acids and salts, electrolysis and energy changes.", basics: ["gcsesciRelativeMass", "gcsesciBalancing"] },
     { key: "chem2", name: "Rates, Organic and the Earth", section: "chemistry", domains: ["gcsescienceChem2"], blurb: "Rates and equilibrium, crude oil and cracking, chromatography and gas tests, the atmosphere and climate, and drinking water." },
     { key: "phys1", name: "Energy, Electricity and Particles", section: "physics", domains: ["gcsesciencePhys1"], blurb: "Energy stores and efficiency, circuits and mains electricity, density and changes of state, and nuclear radiation.", basics: ["gcsesciSubstitute", "gcsesciPrefixes"] },
-    { key: "phys2", name: "Forces, Waves and Magnetism", section: "physics", domains: ["gcsesciencePhys2"], blurb: "Forces and Newton's laws, speed and acceleration, stopping distances, waves and the electromagnetic spectrum, and magnets.", basics: ["gcsesciRearrange"] },
+    { key: "phys2", name: "Forces, Waves and Magnetism", section: "physics", domains: ["gcsesciencePhys2"], blurb: "Forces and Newton's laws, speed and acceleration, stopping distances, waves and the electromagnetic spectrum, and magnets.", basics: ["gcsesciResultant", "gcsesciRearrange"] },
   ],
   composite: { name: "Overall score", min: 0, max: 100, combine: overallPercent },
   defaultGoal: 60,

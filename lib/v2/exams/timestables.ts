@@ -60,7 +60,7 @@ export const TIMESTABLES: ExamV2Config = {
     { key: "sixSevenNine", name: "6s, 7s and 9s", section: "tt", domains: ["ttSixSevenNine"], blurb: "The trickiest Year 4 tables, each with its own trick.", basics: ["ttSixes", "ttSplitIt", "ttNines"] },
     { key: "elevenTwelve", name: "11s and 12s", section: "tt", domains: ["ttElevenTwelve"], blurb: "The last two tables: say it twice, and 10 lots and 2 lots.", basics: ["ttElevens", "ttTwelves"] },
     { key: "divide", name: "Dividing", section: "tt", domains: ["ttDivide"], blurb: "Use the times tables backwards to share and group.", basics: ["ttFactFamilies", "ttSharing"] },
-    { key: "stories", name: "Times table stories", section: "tt", domains: ["ttStories"], blurb: "Word problems about wheels, eggs, biscuits and pocket money.", basics: ["ttStoryWords"] },
+    { key: "stories", name: "Times table stories", section: "tt", domains: ["ttStories"], blurb: "Word problems about wheels, eggs, biscuits and pocket money.", basics: ["ttStoryWords", "ttStoryGroups"] },
   ],
   composite: { name: "Score", min: 0, max: 100, combine: overallPercent },
   fixedGoal: 100,

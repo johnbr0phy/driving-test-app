@@ -259,6 +259,22 @@ SKILLS = [
           ]},
           [q("4 children each have 3 pencils. How many pencils is that?", ["12", "7", "1"], "\"Each\" means times: 4 × 3 = 12 pencils."),
            q("18 cakes are shared equally onto 2 plates. Which number sentence finds how many go on each plate?", ["18 ÷ 2", "18 × 2", "18 − 2"], "\"Shared equally\" means divide: 18 ÷ 2 = 9.")]),
+
+    skill("ttStoryGroups", "How many groups?", "Count up in the table",
+          "When a story tells you the total and how many are in each group, count up in that times table until you reach the total. The number of counts is the answer.",
+          "Use your fingers: one finger for each count. 5, 10, 15, 20 is four fingers, so 20 ÷ 5 = 4.",
+          [("15 wheels, 3 on each tricycle", "Count in 3s: 3, 6, 9, 12, 15. That is 5 tricycles."), ("12 socks put into pairs", "Count in 2s up to 12: 2, 4, 6, 8, 10, 12. That is 6 pairs.")],
+          ("Packing eggs into boxes of 6 is the same thing. Keep filling boxes until the eggs run out, then count the boxes.",
+           "18 eggs: 6, 12, 18\n3 boxes"),
+          {"board": "A tricycle has 3 wheels. Ben counts 12 wheels. How many tricycles are there?", "kind": "text", "steps": [
+              ask("What does the story tell us?", ["The total (12) and how many in each group (3)", "How many tricycles there are"], hint="We know all the wheels, and the wheels on one tricycle.", line="12 wheels, 3 on each"),
+              say("Count up in 3s until you reach 12. Put up one finger each time."),
+              ask("3, 6, 9 ... what comes next?", ["12", "10"], hint="Add 3 more to 9.", line="3, 6, 9, 12"),
+              ask("How many numbers did you say?", ["4", "3"], hint="3, 6, 9, 12. Count them on your fingers.", line="4 counts"),
+              ask("So how many tricycles are there?", ["4", "12"], then="12 ÷ 3 = 4. Check: 4 × 3 = 12.", hint="12 is the number of wheels. Count the tricycles.", line="12 ÷ 3 = 4 ✓"),
+          ]},
+          [q("Eggs go in boxes of 10. How many boxes do 40 eggs fill?", ["4", "30", "50"], "Count in 10s: 10, 20, 30, 40. That is 4 boxes."),
+           q("A table has 4 legs. There are 20 legs. How many tables are there?", ["5", "16", "24"], "Count in 4s: 4, 8, 12, 16, 20. That is 5 tables, because 5 × 4 = 20.")]),
 ]
 
 out = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "data", "v2", "basics", "timestables.json")

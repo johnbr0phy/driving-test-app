@@ -1,9 +1,17 @@
 name: Question audit
 
+# Daily (not Mondays): only the questions flagged by answer statistics or
+# reported by students since the last run (--signals), so a suspected wrong key
+# is checked the morning after the nightly flags (03:40 UTC) raise it. A key
+# the judge finds right is cleared on /admin; a confirmed problem gets the same
+# fix PR as below.
+#
 # Weekly: Claude re-answers about 1,000 questions blind plus everything reported,
 # flagged or due for a dated change (scripts/question-audit.ts), then Claude
 # Code fixes the confirmed findings in the bank sources and opens a PR. Nothing
-# merges without review: the PR is the approval step.
+# merges without review: the PR is the approval step. The PR carries
+# audits/resolutions/<date>.json, so merging it closes the findings on /admin
+# and restarts the fixed questions' answer statistics (the resolve job).
 #
 # Needs repository secrets ANTHROPIC_API_KEY and FIREBASE_SERVICE_ACCOUNT_KEY
 # (without the Firebase key it runs the sweep and freshness checks only).
@@ -14,12 +22,17 @@ on:
     branches: [main]
     paths: ["audits/resolutions/**"]
   schedule:
-    - cron: "17 6 * * 1" # Mondays 06:17 UTC
+    - cron: "17 6 * * 1" # Mondays 06:17 UTC: everything
+    - cron: "47 4 * * 0,2-6" # other days 04:47 UTC: new flags and reports only
   workflow_dispatch:
     inputs:
       sweep:
         description: "Random questions to sweep"
         default: "1000"
+      signals:
+        description: "Only flagged and reported questions (what the daily run does)"
+        type: boolean
+        default: false
       export_open:
         description: "Only write the findings still open on /admin to the log and an artifact (no audit, no PR)"
         type: boolean
@@ -89,10 +102,13 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
           SWEEP_INPUT: ${{ github.event.inputs.sweep }}
+          SIGNALS: ${{ inputs.signals || github.event.schedule == '47 4 * * 0,2-6' }}
         run: |
           sweep="${SWEEP_INPUT:-1000}"
           case "$sweep" in ''|*[!0-9]*) echo "sweep must be a whole number"; exit 1 ;; esac
-          npx tsx scripts/question-audit.ts --index "$RUNNER_TEMP/questions.json" --sweep "$sweep" --out audits
+          mode=""
+          if [ "$SIGNALS" = "true" ]; then mode="--signals"; fi
+          npx tsx scripts/question-audit.ts --index "$RUNNER_TEMP/questions.json" --sweep "$sweep" --out audits $mode
 
       # Kept even when a later step fails, so a run's findings are never only in Firestore.
       - name: Keep the report
@@ -108,10 +124,13 @@ jobs:
         if: ${{ !inputs.export_open }}
         run: |
           f="audits/$(date -u +%F).json"
+          # A daily run with nothing new to check writes no report.
+          if [ ! -f "$f" ]; then echo "count=0" >> "$GITHUB_OUTPUT"; exit 0; fi
           n=$(python3 -c 'import json,sys; print(len(json.load(open(sys.argv[1]))["findings"]))' "$f")
           echo "count=$n" >> "$GITHUB_OUTPUT"
           echo "file=$f" >> "$GITHUB_OUTPUT"
           echo "report=${f%.json}.md" >> "$GITHUB_OUTPUT"
+          echo "resolutions=audits/resolutions/$(date -u +%F)-${{ github.run_id }}.json" >> "$GITHUB_OUTPUT"
 
       # If Claude Code cannot run, the PR still opens with the report, unfixed.
       - name: Fix findings with Claude Code
@@ -140,7 +159,16 @@ jobs:
 
             Finally append to ${{ steps.findings.outputs.report }} a section "## What was
             changed" listing each finding as Fixed (one line on the change) or Not changed
-            (one line on why). Do not commit; the next step opens the PR.
+            (one line on why).
+
+            Then write ${{ steps.findings.outputs.resolutions }}: a JSON array with one
+            entry per finding you decided, { "id": "<examId>__<questionId>" (the two ids
+            from the finding's heading), "status": "fixed" or "dismissed", "note": the
+            same one line }. Use "dismissed" only when you checked the official rule and
+            the finding is wrong; leave out any finding you could not settle, so it stays
+            open. When the PR merges, this file closes those findings.
+
+            Do not commit; the next step opens the PR.
 
       - name: Open PR
         if: ${{ !inputs.export_open && steps.findings.outputs.count != '0' }}

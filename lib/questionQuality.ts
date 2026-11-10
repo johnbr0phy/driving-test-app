@@ -13,6 +13,10 @@
 //                            STRONG_MIN_ANSWERS answers on that exam at
 //                            STRONG_ACCURACY or better
 //   globalStats/questionFlags  the nightly flag list for /admin and the audit
+//   questionFlagReviews/{examId}  per question: what the audit decided the last
+//                            time a flag or report sent it there (FlagReview).
+//                            A flag whose review says the key is right is
+//                            "cleared" until its answers double or 180 days pass.
 
 export const REPORT_REASONS = [
   { value: "wrong_answer", label: "The marked answer is wrong" },
@@ -47,7 +51,67 @@ export interface QuestionPickCounts {
   sw?: Record<string, number>;
 }
 
-export type FlagKind = "keySuspect" | "splitAnswer" | "tooHard" | "tooEasy" | "reported";
+// Hard and easy questions are not problems, so they are not flags (Nov 2026):
+// only the signs of a wrong or second answer are.
+export type FlagKind = "keySuspect" | "splitAnswer" | "reported";
+const FLAG_KINDS: readonly string[] = ["keySuspect", "splitAnswer", "reported"];
+
+/** The audit's decision on a flagged or reported question (questionFlagReviews/{examId}). */
+export interface FlagReview {
+  at: string;
+  /** ok | wrong_key | ambiguous | outdated | unclear | typo */
+  verdict: string;
+  confidence: string;
+  reason: string;
+  /** Answers the question had when it was reviewed. */
+  n: number;
+  runId?: string;
+}
+
+/** A cleared review stops counting once the question has this many times the answers it had then... */
+export const REVIEW_STALE_GROWTH = 2;
+/** ...or after this many days. */
+export const REVIEW_STALE_DAYS = 180;
+
+/** True while a review still describes these statistics, whatever it decided: the audit does not judge the flag again. */
+export function reviewFresh(review: FlagReview | undefined, n: number, now = Date.now()): boolean {
+  if (!review) return false;
+  if (n >= Math.max(review.n, FLAG_MIN_ANSWERS / 2) * REVIEW_STALE_GROWTH) return false;
+  return now - Date.parse(review.at) < REVIEW_STALE_DAYS * 86_400_000;
+}
+
+/** True while a review that found nothing wrong still stands for these statistics. */
+export function reviewClears(review: FlagReview | undefined, n: number, now = Date.now()): boolean {
+  return review?.verdict === "ok" && reviewFresh(review, n, now);
+}
+
+export type ReviewedFlag = QuestionFlag & { review?: FlagReview; cleared?: boolean };
+
+/**
+ * Joins the stored flags with the audit's reviews: drops kinds that are no
+ * longer flags, marks statistically flagged questions the audit cleared, and
+ * counts only what still needs someone (open) per kind. Cleared flags sort last.
+ */
+export function applyFlagReviews(
+  flags: QuestionFlag[],
+  reviews: Record<string, Record<string, FlagReview>>,
+): { flags: ReviewedFlag[]; open: number; cleared: number; byKind: Partial<Record<FlagKind, number>> } {
+  const out: ReviewedFlag[] = [];
+  const byKind: Partial<Record<FlagKind, number>> = {};
+  let cleared = 0;
+  for (const f of flags) {
+    const kinds = f.kinds.filter((k) => FLAG_KINDS.includes(k));
+    if (!kinds.length) continue;
+    const review = reviews[f.examId]?.[f.questionId];
+    // An open report is a person waiting: it stays open until someone closes it.
+    const isCleared = !kinds.includes("reported") && reviewClears(review, f.n);
+    out.push({ ...f, kinds, ...(review ? { review } : {}), ...(isCleared ? { cleared: true } : {}) });
+    if (isCleared) cleared++;
+    else for (const k of kinds) byKind[k] = (byKind[k] || 0) + 1;
+  }
+  out.sort((a, b) => Number(!!a.cleared) - Number(!!b.cleared) || b.score - a.score);
+  return { flags: out, open: out.length - cleared, cleared, byKind };
+}
 
 export interface QuestionFlag {
   examId: string;
@@ -90,8 +154,6 @@ export function flagQuestion(examId: string, questionId: string, q: QuestionPick
   const topWrongPct = n ? Math.round((100 * topWrongN) / n) : 0;
 
   if (n >= FLAG_MIN_ANSWERS) {
-    if (correctPct < 25) kinds.push("tooHard");
-    if (correctPct >= 98) kinds.push("tooEasy");
     // One wrong option drawing nearly as many people as the key: two
     // defensible answers, or a key on the wrong option.
     if (topWrongPct >= 30 && topWrongN >= (q.c || 0) * 0.8) kinds.push("splitAnswer");
@@ -106,8 +168,6 @@ export function flagQuestion(examId: string, questionId: string, q: QuestionPick
     (kinds.includes("keySuspect") ? 100 : 0) +
     Math.min(reports, 10) * 15 +
     (kinds.includes("splitAnswer") ? 40 : 0) +
-    (kinds.includes("tooHard") ? 25 : 0) +
-    (kinds.includes("tooEasy") ? 5 : 0) +
     Math.min(n, 500) / 50;
   return { examId, questionId, kinds, n, correctPct, strongN, strongCorrectPct, topWrong, topWrongPct, reports, score: Math.round(score) };
 }

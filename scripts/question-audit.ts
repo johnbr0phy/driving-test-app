@@ -15,6 +15,15 @@
  *      (the Action passes 1,000 a week: each of the ~54,000 choice
  *      questions about once a year)
  * Without FIREBASE_SERVICE_ACCOUNT_KEY only steps 3 (registry part) and 4 run.
+ * --signals runs steps 1 and 2 only: the daily run, so a new flag or report is
+ * checked the morning after it appears instead of the next Monday.
+ *
+ * Every flagged or reported question the judge rules on gets a review in
+ * questionFlagReviews/{examId} (verdict, reason, answers at the time). A flag
+ * reviewed "ok" is cleared on /admin and not sent again until its answers
+ * double or 180 days pass (reviewFresh in lib/questionQuality.ts); a report
+ * is judged once. A verdict too unsure to be a finding stays on /admin for a
+ * person, who can clear it there. A question with an open finding is not judged again.
  *
  * Writes audits/<date>.json and audits/<date>.md (the PR body the GitHub
  * Action uses), and in Firestore questionAudits/{runId}, one
@@ -31,6 +40,7 @@ import Anthropic from "@anthropic-ai/sdk";
 import { ALL_EXAMS } from "@/lib/exams";
 import FRESHNESS from "@/lib/examFreshness.json";
 import { SIGN_BY_QUESTION_ID, SIGN_DESCRIPTIONS } from "@/lib/signImages";
+import { reviewFresh, type FlagReview } from "@/lib/questionQuality";
 
 const MODEL = "claude-opus-5-5";
 const CONCURRENCY = 6;
@@ -49,6 +59,8 @@ const MAX_FLAGS = parseInt(arg("flags", "150")!, 10);
 const MAX_FRESH = parseInt(arg("fresh", "60")!, 10);
 const OUT = arg("out", "audits")!;
 const DRY = args.includes("--dry-run");
+// Reports and statistical flags only: no freshness checks, no sweep.
+const SIGNALS = args.includes("--signals");
 // Writes the findings still open in Firestore to the report files and the log, without calling Claude.
 const EXPORT_OPEN = args.includes("--export-open");
 const RESOLVE = arg("resolve");
@@ -125,14 +137,22 @@ interface QueueItem {
   q: IndexQuestion & { examId: string };
   trigger: Set<string>;
   notes: string[];
+  /** The exam id the flag or report was filed under (where its pick counts and review live). */
+  signalExamId?: string;
+  /** Answers the question had when a statistical flag sent it here. */
+  n?: number;
 }
 const queue = new Map<string, QueueItem>();
-function enqueue(q: (IndexQuestion & { examId: string }) | undefined, trigger: string, note?: string) {
+function enqueue(q: (IndexQuestion & { examId: string }) | undefined, trigger: string, note?: string, signal?: { examId: string; n?: number }) {
   if (!q) return;
   const key = `${q.examId}|${q.id}`;
-  const item = queue.get(key) ?? { q, trigger: new Set<string>(), notes: [] };
+  const item: QueueItem = queue.get(key) ?? { q, trigger: new Set<string>(), notes: [] };
   item.trigger.add(trigger);
   if (note) item.notes.push(note);
+  if (signal) {
+    item.signalExamId ??= signal.examId;
+    item.n = Math.max(item.n ?? 0, signal.n ?? 0);
+  }
   queue.set(key, item);
 }
 
@@ -148,11 +168,24 @@ if (RESOLVE) {
   for (const r of rows) {
     if (r.status !== "fixed" && r.status !== "dismissed") throw new Error(`${r.id}: status must be fixed or dismissed`);
     const ref = db.collection("questionAuditFindings").doc(r.id);
-    if (!(await ref.get()).exists) {
+    const snap = await ref.get();
+    if (!snap.exists) {
       console.log(`[audit] ${r.id}: no such finding, skipped`);
       continue;
     }
     await ref.update({ status: r.status, closedAt, closedNote: r.note ?? "" });
+    if (r.status === "fixed") {
+      // The pick counts describe the old key or wording: start them again, and close the reports it answers.
+      const f = snap.data()!;
+      const { resetQuestionSignals } = await import("@/lib/server/questionFlagReviews");
+      await resetQuestionSignals(db, f.signalExamId || f.examId, f.questionId);
+      const reports = await db.collection("questionReports").where("questionId", "==", f.questionId).get();
+      for (const d of reports.docs) if (d.data().status === "open") await d.ref.update({ status: "fixed", closedAt });
+    } else {
+      const f = snap.data()!;
+      const { clearQuestionReview } = await import("@/lib/server/questionFlagReviews");
+      await clearQuestionReview(db, f.signalExamId || f.examId, f.questionId, r.note || "Checked in review: not a problem.");
+    }
     n++;
   }
   console.log(`[audit] closed ${n} of ${rows.length} findings from ${RESOLVE}`);
@@ -196,37 +229,48 @@ if (EXPORT_OPEN) {
 const recentCutoff = new Date(Date.now() - RECENT_DAYS * 86_400_000).toISOString();
 const auditedAt = new Map<string, string>();
 const openFindings = new Map<string, { status: string; verdict: string }>();
+const reviews = new Map<string, FlagReview>();
 
 if (db) {
-  const [reports, flagsDoc, log, findings, sources] = await Promise.all([
+  const [reports, flagsDoc, log, findings, sources, reviewDocs] = await Promise.all([
     db.collection("questionReports").where("status", "==", "open").limit(500).get(),
     db.doc("globalStats/questionFlags").get(),
     db.collection("questionAuditLog").get(),
     db.collection("questionAuditFindings").get(),
     db.collection("sourceWatch").where("changed", "==", true).select("exams").get(),
+    db.collection("questionFlagReviews").get(),
   ]);
+  for (const d of reviewDocs.docs) for (const [id, r] of Object.entries(d.data())) reviews.set(`${d.id}|${id}`, r as FlagReview);
+  // A question whose finding is still open is waiting for its fix, not for another opinion.
+  const awaitingFix = (q: { examId: string; id: string } | undefined) => !!q && openFindings.get(`${q.examId}__${q.id}`)?.status === "open";
   for (const d of log.docs) for (const [id, at] of Object.entries(d.data())) auditedAt.set(`${d.id}|${id}`, at as string);
   for (const d of findings.docs) openFindings.set(d.id, { status: d.data().status, verdict: d.data().verdict });
   for (const d of reports.docs) {
     const r = d.data();
-    enqueue(find(r.examId, r.questionId), "report", `A student reported: ${r.reason}${r.note ? `: "${r.note}"` : ""}`);
+    const q = find(r.examId, r.questionId);
+    // Each report is judged once; it then waits on /admin with the verdict beside it.
+    if (awaitingFix(q) || (reviews.get(`${r.examId}|${r.questionId}`)?.at ?? "") > (r.createdAt ?? "")) continue;
+    enqueue(q, "report", `A student reported: ${r.reason}${r.note ? `: "${r.note}"` : ""}`, { examId: r.examId });
   }
   for (const f of (flagsDoc.data()?.flags ?? []).slice(0, MAX_FLAGS)) {
-    if (!f.kinds.some((k: string) => k !== "tooEasy")) continue;
+    if (!f.kinds.some((k: string) => k === "keySuspect" || k === "splitAnswer")) continue;
+    const q = find(f.examId, f.questionId);
+    if (awaitingFix(q) || reviewFresh(reviews.get(`${f.examId}|${f.questionId}`), f.n)) continue;
     enqueue(
-      find(f.examId, f.questionId),
+      q,
       "stats",
-      `Answer statistics: ${f.n} answers, ${f.correctPct}% correct${f.strongCorrectPct !== null ? `, ${f.strongCorrectPct}% among strong students` : ""}${f.topWrong !== null ? `; option ${LETTERS[f.topWrong]} (bank order) is the most picked wrong answer at ${f.topWrongPct}%` : ""}. Flags: ${f.kinds.join(", ")}.`,
+      `Answer statistics: ${f.n} answers, ${f.correctPct}% correct${f.strongCorrectPct !== null ? `, ${f.strongCorrectPct}% among strong students` : ""}${f.topWrong !== null ? `; option ${LETTERS[f.topWrong]} (bank order) is the most picked wrong answer at ${f.topWrongPct}%` : ""}. Flags: ${f.kinds.join(", ")}. A hard question also looks like this, so the statistics alone do not show the key is wrong.`,
+      { examId: f.examId, n: f.n },
     );
   }
-  const changedExams = new Set(sources.docs.flatMap((d) => (d.data().exams as string[]) ?? []));
+  const changedExams = new Set(SIGNALS ? [] : sources.docs.flatMap((d) => (d.data().exams as string[]) ?? []));
   for (const exam of changedExams) addFresh(exam, "source", "An official source page for this exam changed recently; check the question is still correct.");
 }
 
 // Dated changes due within 60 days, or already past and not marked done.
 const soon = new Date(Date.now() + 60 * 86_400_000).toISOString().slice(0, 10);
 for (const e of FRESHNESS.events as { exam: string; date: string; done?: string; what: string }[]) {
-  if (!e.done && e.date <= soon) addFresh(e.exam, "freshness", `Upcoming or past change to the real exam (${e.date}): ${e.what}`);
+  if (!SIGNALS && !e.done && e.date <= soon) addFresh(e.exam, "freshness", `Upcoming or past change to the real exam (${e.date}): ${e.what}`);
 }
 function addFresh(examId: string, trigger: string, note: string) {
   const items = [...byKey.values()].filter((q) => q.examId === examId && VOLATILE.test(`${q.stem} ${q.options.join(" ")} ${q.explanation}`));
@@ -237,9 +281,13 @@ function addFresh(examId: string, trigger: string, note: string) {
 const pool = [...byKey.values()].filter((q) => choiceFormat(q) && !queue.has(`${q.examId}|${q.id}`) && (auditedAt.get(`${q.examId}|${q.id}`) ?? "") < recentCutoff);
 const seeded = (s: string) => createHash("sha1").update(`${today}:${s}`).digest("hex");
 pool.sort((a, b) => seeded(a.id).localeCompare(seeded(b.id)));
-for (const q of pool.slice(0, SWEEP)) enqueue(q, "sweep");
+for (const q of pool.slice(0, SIGNALS ? 0 : SWEEP)) enqueue(q, "sweep");
 
 console.log(`[audit] ${index.length} questions indexed, ${queue.size} queued (${[...queue.values()].filter((i) => !i.trigger.has("sweep")).length} from reports, stats and freshness)`);
+if (!queue.size && !DRY) {
+  console.log("[audit] nothing new to check");
+  return;
+}
 if (DRY) {
   for (const i of [...queue.values()].slice(0, 20)) console.log(`  ${i.q.examId} ${i.q.id} [${[...i.trigger].join(",")}]`);
   return;
@@ -340,6 +388,8 @@ interface Result {
   blind: Blind | null;
   disagreed: boolean;
   verdict: Verdict | null;
+  signalExamId?: string;
+  n?: number;
 }
 
 async function audit(item: QueueItem): Promise<Result> {
@@ -372,7 +422,7 @@ async function audit(item: QueueItem): Promise<Result> {
     ].join("\n");
     verdict = await structured<Verdict>(JUDGE_SYSTEM, user, VERDICT_SCHEMA, "high");
   }
-  return { examId: q.examId, questionId: q.id, file: q.file, trigger: [...item.trigger], notes: item.notes, key, blind, disagreed, verdict };
+  return { examId: q.examId, questionId: q.id, file: q.file, trigger: [...item.trigger], notes: item.notes, key, blind, disagreed, verdict, signalExamId: item.signalExamId, n: item.n };
 }
 
 const items = [...queue.values()];
@@ -404,13 +454,15 @@ const summary = {
   disagreements: results.filter((r) => r.disagreed).length,
   adjudicated: results.filter((r) => r.verdict).length,
   findings: confirmed.length,
+  // Flagged or reported questions the judge looked at and found nothing wrong with.
+  signalsCleared: results.filter((r) => r.signalExamId && r.verdict?.verdict === "ok").length,
 };
 writeFileSync(`${OUT}/${today}.json`, JSON.stringify({ ...summary, findings: confirmed }, null, 1) + "\n");
 
 const md = [
   `# Question audit ${today}`,
   "",
-  `${summary.checked} questions checked (${summary.blindChecked} answered blind, ${summary.disagreements} disagreed with the key or raised a problem, ${summary.adjudicated} reviewed against the key and sources). ${summary.findings} confirmed problems.`,
+  `${summary.checked} questions checked (${summary.blindChecked} answered blind, ${summary.disagreements} disagreed with the key or raised a problem, ${summary.adjudicated} reviewed against the key and sources). ${summary.findings} confirmed problems.${summary.signalsCleared ? ` ${summary.signalsCleared} flagged or reported questions were checked and found right.` : ""}`,
   "",
   ...confirmed.flatMap((r) => [
     `## ${r.verdict!.verdict.replace("_", " ")}: ${r.examId} ${r.questionId} (${r.verdict!.confidence})`,
@@ -443,6 +495,7 @@ if (db) {
       fix: r.verdict!.fix,
       modelAnswer: r.blind?.answer.join(", ") ?? "",
       trigger: r.trigger,
+      ...(r.signalExamId ? { signalExamId: r.signalExamId } : {}),
       runId,
       status: "open",
       createdAt: summary.at,
@@ -451,6 +504,13 @@ if (db) {
   const log: Record<string, Record<string, string>> = {};
   for (const r of results) (log[r.examId] ??= {})[r.questionId] = summary.at;
   for (const [examId, entries] of Object.entries(log)) batch.set(db.collection("questionAuditLog").doc(examId), entries, { merge: true });
+  // What the judge decided on each flagged or reported question: /admin shows it, and an "ok" clears the flag.
+  const reviewed: Record<string, Record<string, FlagReview>> = {};
+  for (const r of results) {
+    if (!r.signalExamId || !r.verdict) continue;
+    (reviewed[r.signalExamId] ??= {})[r.questionId] = { at: summary.at, verdict: r.verdict.verdict, confidence: r.verdict.confidence, reason: r.verdict.reason, n: r.n ?? 0, runId };
+  }
+  for (const [examId, entries] of Object.entries(reviewed)) batch.set(db.collection("questionFlagReviews").doc(examId), entries, { merge: true });
   await batch.commit();
   console.log(`[audit] saved run ${runId} to Firestore`);
 }

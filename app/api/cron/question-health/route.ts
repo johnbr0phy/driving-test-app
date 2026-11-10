@@ -6,12 +6,15 @@
  * lib/questionPicks.ts) and every open questionReports doc, runs
  * flagQuestion() on each question and writes globalStats/questionFlags: the
  * worst MAX_FLAGS questions by score, counts per exam and per kind, and the
- * open report total. The /admin Questions tab and the weekly audit
+ * open report total. Flags the audit already reviewed and found right
+ * (questionFlagReviews) are kept but marked cleared and left out of the
+ * counts, so the counts are only what still needs someone. The /admin Questions tab and the weekly audit
  * (scripts/question-audit.ts) both read that one doc.
  */
 import { NextRequest, NextResponse } from "next/server";
 import { getAdminDb } from "@/lib/firebase-admin";
-import { flagQuestion, type FlagKind, type QuestionFlag, type QuestionPickCounts } from "@/lib/questionQuality";
+import { applyFlagReviews, flagQuestion, type QuestionFlag, type QuestionPickCounts } from "@/lib/questionQuality";
+import { loadFlagReviews } from "@/lib/server/questionFlagReviews";
 
 export const maxDuration = 120;
 const MAX_FLAGS = 600;
@@ -62,16 +65,14 @@ export async function GET(req: NextRequest) {
     if (flag) flags.push(flag);
   }
 
-  flags.sort((a, b) => b.score - a.score);
-  const byKind: Partial<Record<FlagKind, number>> = {};
+  const reviewed = applyFlagReviews(flags, await loadFlagReviews(db));
+  const byKind = reviewed.byKind;
   const byExam: Record<string, number> = {};
-  for (const f of flags) {
-    byExam[f.examId] = (byExam[f.examId] || 0) + 1;
-    for (const k of f.kinds) byKind[k] = (byKind[k] || 0) + 1;
-  }
+  for (const f of reviewed.flags) if (!f.cleared) byExam[f.examId] = (byExam[f.examId] || 0) + 1;
   const doc = {
-    flags: flags.slice(0, MAX_FLAGS),
-    totalFlags: flags.length,
+    flags: reviewed.flags.slice(0, MAX_FLAGS),
+    totalFlags: reviewed.open,
+    clearedFlags: reviewed.cleared,
     byKind,
     byExam,
     answeredByExam,
@@ -79,6 +80,6 @@ export async function GET(req: NextRequest) {
     updatedAt: new Date().toISOString(),
   };
   await db.doc("globalStats/questionFlags").set(doc);
-  console.log(`[question-health] ${flags.length} flagged questions, ${reports.size} open reports, ${picks.size} exams with picks`);
-  return NextResponse.json({ flags: flags.length, openReports: reports.size, exams: picks.size, byKind });
+  console.log(`[question-health] ${reviewed.open} flagged questions (${reviewed.cleared} more cleared by the audit), ${reports.size} open reports, ${picks.size} exams with picks`);
+  return NextResponse.json({ flags: reviewed.open, cleared: reviewed.cleared, openReports: reports.size, exams: picks.size, byKind });
 }

@@ -89,8 +89,8 @@ export const GCSECS: ExamV2Config = {
   drillSize: 20,
   drills: [
     { key: "algorithms", name: "Algorithms", section: "p1", domains: ["gcsecsAlgorithms"], blurb: "Decomposition and abstraction, linear and binary search, bubble, merge and insertion sort, and flowcharts." },
-    { key: "programming", name: "Programming", section: "p1", domains: ["gcsecsProgramming"], blurb: "Trace pseudocode: data types, selection, loops, arrays, subroutines, strings, validation and testing.", basics: ["csTraceTables", "csModDiv"] },
-    { key: "logic", name: "Boolean logic and languages", section: "p1", domains: ["gcsecsLogic"], blurb: "AND, OR and NOT, truth tables, high- and low-level languages, translators and IDEs.", basics: ["csTruthTables", "csTranslators"] },
+    { key: "programming", name: "Programming", section: "p1", domains: ["gcsecsProgramming"], blurb: "Trace pseudocode: data types, selection, loops, arrays, subroutines, strings, validation and testing.", basics: ["fsmOrderOps", "csModDiv", "csTruthTables", "csTraceTables"] },
+    { key: "logic", name: "Boolean logic and languages", section: "p1", domains: ["gcsecsLogic"], blurb: "AND, OR and NOT, truth tables, high- and low-level languages, translators and IDEs.", basics: ["csBinary", "csTruthTables", "csTraceTables", "csTranslators"] },
     { key: "data", name: "Data representation", section: "p2", domains: ["gcsecsData"], blurb: "Binary, hexadecimal, binary addition and shifts, characters, images, sound, file sizes and compression.", basics: ["csBinary", "csHex", "csBinaryAdd", "csDataUnits"] },
     { key: "systems", name: "Computer systems", section: "p2", domains: ["gcsecsSystems"], blurb: "The CPU and fetch-execute cycle, RAM, ROM, cache and virtual memory, storage, embedded systems and the OS." },
     { key: "networks", name: "Networks and cyber security", section: "p2", domains: ["gcsecsNetworks"], blurb: "LANs and WANs, topologies, hardware, protocols and layers, threats like phishing and malware, and defences." },

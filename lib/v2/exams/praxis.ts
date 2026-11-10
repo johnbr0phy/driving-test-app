@@ -90,7 +90,7 @@ export const PRAXIS: ExamV2Config = {
   // shared library, so the dashboard is 7 drills + 3 Basics steps + 2 tests
   // = 12 steps.
   drills: [
-    { key: "ideas", name: "Key Ideas and Details", section: "reading", domains: ["praxisIdeas"], blurb: "Main idea, supporting details, inferences and restating what a passage says.", basics: ["mainIdea", "findingDetail", "inference"] },
+    { key: "ideas", name: "Key Ideas and Details", section: "reading", domains: ["praxisIdeas"], blurb: "Main idea, supporting details, inferences and restating what a passage says.", basics: ["mainIdea", "findingDetail", "inference", "causeEffect"] },
     { key: "craft", name: "Craft, Structure and Integration", section: "reading", domains: ["praxisCraft", "praxisIntegration"], blurb: "Tone, word meaning, organization, paired passages, arguments, evidence and data tables." },
     { key: "language", name: "Usage and Sentence Correction", section: "writing", domains: ["praxisLanguage"], blurb: "Agreement, pronouns, verb tense, modifiers, commonly confused words, plus research and citation skills.", basics: ["subjectVerb", "pronounCase", "verbTense", "commaSplices", "apostrophes", "commonlyConfused", "danglingModifiers"] },
     { key: "revision", name: "Revision in Context", section: "writing", domains: ["praxisRevision"], blurb: "Improve short drafts: combining sentences, word choice, focus, tone and conclusions." },

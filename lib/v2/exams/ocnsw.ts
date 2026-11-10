@@ -90,7 +90,7 @@ export const OCNSW: ExamV2Config = {
     { key: "reading", name: "Reading", section: "reading", domains: ["ocComprehension", "ocCohesion", "ocCompare"], blurb: "Stories, poems and articles, sentences taken out of a text, and short texts to match and compare.", basics: ["mainIdea", "findingDetail", "inference", "wordsInContext", "toneWords", "authorPurpose", "logicalCompletion", "crossText"] },
     { key: "number", name: "Number and Patterns", section: "maths", domains: ["ocNumber"], blurb: "Place value, the four operations, fractions, money, patterns and number puzzles, without a calculator.", basics: ["orderOfOperations", "fractionConvert", "fractionOps", "decimals", "wordProblems"] },
     { key: "measure", name: "Measurement, Space and Data", section: "maths", domains: ["ocMeasure", "ocData"], blurb: "Length, area, time, mass, angles and shapes, then tables, graphs and chance.", basics: ["unitConversion", "areaPerimeter", "volume", "readingTable", "probabilityTable"] },
-    { key: "critical", name: "Critical Thinking", section: "thinking", domains: ["ocCritical"], blurb: "Make arguments stronger or weaker, spot the mistake, and decide what must be true.", basics: ["claimSupport", "inference"] },
+    { key: "critical", name: "Critical Thinking", section: "thinking", domains: ["ocCritical"], blurb: "Make arguments stronger or weaker, spot the mistake, and decide what must be true.", basics: ["claimSupport", "inference", "factOpinion", "logicalCompletion"] },
     { key: "problem", name: "Problem Solving", section: "thinking", domains: ["ocProblem"], blurb: "Ordering clues, truth and lies, codes, timetables, counting and number puzzles." },
   ],
   composite: { name: "Overall score", min: 0, max: 100, combine: averageOfSections },

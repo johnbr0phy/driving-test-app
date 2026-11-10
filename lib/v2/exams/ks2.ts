@@ -90,7 +90,7 @@ export const KS2: ExamV2Config = {
   // 12 dashboard steps. 20 questions a drill.
   drillSize: 20,
   drills: [
-    { key: "reading", name: "Reading", section: "reading", domains: ["ks2Words", "ks2Retrieve", "ks2Infer"], blurb: "Stories, information texts, poems and instructions: find it, work it out, and explain word choices.", basicsLocale: "en-GB", basics: ["ks2Retrieval", "ks2Inference", "ks2WordMeaning"] },
+    { key: "reading", name: "Reading", section: "reading", domains: ["ks2Words", "ks2Retrieve", "ks2Infer"], blurb: "Stories, information texts, poems and instructions: find it, work it out, and explain word choices.", basicsLocale: "en-GB", basics: ["ks2Retrieval", "ks2Inference", "ks2WordMeaning", "mainIdea"] },
     { key: "grammar", name: "Grammar and vocabulary", section: "gps", domains: ["ks2Grammar", "ks2Vocabulary"], blurb: "Word classes, clauses, tenses, active and passive, the subjunctive, prefixes and suffixes.", basicsLocale: "en-GB", basics: ["ks2WordClasses", "ks2RelativeClauses", "ks2ActivePassive", "ks2Subjunctive"] },
     { key: "punctuation", name: "Punctuation", section: "gps", domains: ["ks2Punctuation"], blurb: "Commas, apostrophes, inverted commas, brackets, colons, semi-colons and hyphens.", basicsLocale: "en-GB", basics: ["ks2FrontedAdverbials", "apostrophes", "ks2InvertedCommas", "ks2Parenthesis"] },
     { key: "arithmetic", name: "Arithmetic", section: "maths", domains: ["ks2Arithmetic"], blurb: "Column methods, long multiplication, short and long division, fractions, decimals and percentages.", basicsLocale: "en-GB", basics: ["ks2OrderOps", "ks2LongMultiplication", "ks2ShortDivision", "ks2AddFractions", "ks2PercentOf"] },

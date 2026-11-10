@@ -44,7 +44,7 @@ export const ASVAB: ExamV2Config = {
   },
   drills: [
     { key: "ar", name: "Arithmetic Reasoning", section: "ar", domains: ["asvabArithmetic"], blurb: "Word problems by hand, every step shown.", basics: ["wordProblems", "fractionOps", "decimals", "percents", "percentChange", "ratios", "rateProblems", "meanMedian", "areaPerimeter"] },
-    { key: "wk", name: "Word Knowledge", section: "wk", domains: ["asvabWordKnowledge"], blurb: "Closest-meaning vocabulary at ASVAB pace.", basics: ["synonyms", "wordParts", "wordsInContext"] },
+    { key: "wk", name: "Word Knowledge", section: "wk", domains: ["asvabWordKnowledge"], blurb: "Closest-meaning vocabulary at ASVAB pace.", basics: ["synonyms", "wordParts", "wordsInContext", "commonlyConfused"] },
     { key: "pc", name: "Paragraph Comprehension", section: "pc", domains: ["asvabParagraph"], blurb: "Short passages with main idea, detail and inference questions.", basics: ["mainIdea", "findingDetail", "inference", "wordsInContext", "authorPurpose", "toneWords", "causeEffect"] },
     { key: "mk", name: "Mathematics Knowledge", section: "mk", domains: ["asvabMathKnowledge"], blurb: "Algebra and geometry without a calculator.", basics: ["solveX", "inequalities", "distributing", "exponentRules", "squareRoots", "factoring", "areaPerimeter", "circleBasics", "triangleAngles", "pythagorean"] },
     { key: "gs", name: "General Science", section: "gs", domains: ["asvabGeneralScience"], blurb: "Life, earth and physical science basics." },

@@ -635,6 +635,15 @@ export default async function StateDMVPracticeTestPage({
           </div>
         </div>
 
+        {/* The same state's page in other languages: plain links, since the switcher is a menu. */}
+        <p className="mb-12 text-sm text-gray-600 dark:text-gray-300">
+          {state.name} practice test in other languages:{" "}
+          <Link href={`/es/${state.slug}-examen-practica-dmv`} hrefLang="es" className="text-brand-dark underline underline-offset-2">Español</Link>
+          {isViState(state.code) && <> · <Link href={`/vi/${state.slug}-thi-thu-dmv`} hrefLang="vi" className="text-brand-dark underline underline-offset-2">Tiếng Việt</Link></>}
+          {isKoState(state.code) && <> · <Link href={`/ko/${state.slug}-dmv-pilgi-siheom`} hrefLang="ko" className="text-brand-dark underline underline-offset-2">한국어</Link></>}
+          {isZhState(state.code) && <> · <Link href={`/zh/${state.slug}-dmv-bishi-lianxi`} hrefLang="zh-Hans" className="text-brand-dark underline underline-offset-2">中文</Link></>}
+        </p>
+
         {/* Related State Pages */}
         {neighboringStates.length > 0 && (
           <div className="mb-12">

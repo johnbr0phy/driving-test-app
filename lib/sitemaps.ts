@@ -35,6 +35,7 @@ export { SITE_URL } from "@/lib/siteUrl";
 import { SITE_URL } from "@/lib/siteUrl";
 import { landingUpdatedAt, latestLandingUpdate } from "@/lib/landingDates";
 import { allStateLandings } from "./stateLandings";
+import { teachPagePath, teachPageTests } from "./teachPages";
 import { STATE_EXAM_LANDINGS_UPDATED_AT, TOPIC_PAGES_UPDATED_AT } from "./seoDates";
 import { examTopics, mostMissedPath, topicExams, topicPath } from "./topicPages";
 
@@ -139,6 +140,8 @@ export async function buildSegment(segment: SitemapSegment): Promise<SitemapEntr
           changeFrequency: "monthly" as const,
           priority: 0.7,
         })),
+        // Per-exam pages for teachers (/teach/cna).
+        ...teachPageTests().map((t) => ({ url: `${SITE_URL}${teachPagePath(t)}`, lastModified: HUB_PAGES_UPDATED_AT, changeFrequency: "monthly" as const, priority: 0.5 })),
         // Topic question pages (/questions/cna/basic-nursing-skills) and, where
         // the exam has Common Mistakes, its most-missed page.
         ...topicExams().flatMap((exam) =>

@@ -27,7 +27,7 @@ export async function sendWelcomeEmail(uid: string): Promise<WelcomeResult> {
   try {
     const outcome = await sendDurableEmail({ uid, dedupeKey: WELCOME_KEY, emailKey: WELCOME_KEY,
       payload: { to: record.email, subject: teacher ? EMAIL_INBOX.welcomeTeacher().subject : EMAIL_INBOX.welcome(voiceFor(examId)).subject, html,
-        replyTo: process.env.EMAIL_REPLY_TO ?? 'john@johnbrophy.net',
+        replyTo: process.env.EMAIL_REPLY_TO ?? 'john@tigertest.io',
         kind: teacher ? 'transactional' : 'campaign', ...(teacher ? {} : { headers: listUnsubscribeHeaders(uid) }) },
       gapMs: 24 * 60 * 60_000,
       retryPolicy: makeWelcomeRetryPolicy(data, teacher, new Date(record.metadata.creationTime).getTime() + WELCOME_MAX_AGE_MS),

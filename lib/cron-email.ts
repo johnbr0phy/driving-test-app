@@ -25,7 +25,7 @@ import { listUnsubscribeHeaders, unsubscribeToken } from "@/lib/unsubscribe";
  * out from noreply@ with this as the Reply-To; a campaign can pass
  * JOHN_SENDER to come from john@tigertest.io itself.
  */
-export const CAMPAIGN_REPLY_TO = process.env.EMAIL_REPLY_TO ?? "john@johnbrophy.net";
+export const CAMPAIGN_REPLY_TO = process.env.EMAIL_REPLY_TO ?? "john@tigertest.io";
 
 /** Sent as John himself, so a reply lands in his tigertest.io inbox. */
 export interface Sender {

@@ -74,7 +74,7 @@ test('paid replay preserves opt-out, entitlement timestamp and refunded payment;
   assert.equal(rows.get('users/u').subscription.purchasedAt, purchaseTime);
   assert.equal(rows.get('payments/pi_1').status, 'refunded');
   assert.equal(sends[0].payload.kind, 'transactional');
-  assert.equal(sends[0].payload.replyTo, process.env.EMAIL_REPLY_TO ?? 'john@johnbrophy.net');
+  assert.equal(sends[0].payload.replyTo, process.env.EMAIL_REPLY_TO ?? 'john@tigertest.io');
   assert.equal(sends[0].payload.to, 'account@example.com');
   assert.equal(sends[0].dedupeKey, sends[1].dedupeKey);
   assert.equal(rows.get('fulfilledCheckouts/cs_1').examId, 'ccma');

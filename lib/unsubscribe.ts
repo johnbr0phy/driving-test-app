@@ -12,7 +12,7 @@
 
 import { getAdminDb } from "@/lib/firebase-admin";
 
-const SITE = "https://tigertest.io";
+const SITE = "https://www.tigertest.io";
 
 export function unsubscribeToken(uid: string): string {
   return Buffer.from(uid).toString("base64");

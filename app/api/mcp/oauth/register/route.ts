@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { registerClient } from '@/lib/server/oauth-store';
+import { isAllowedRedirectUri } from '@/lib/oauthRedirect';
 
 const CORS_HEADERS = {
   'Access-Control-Allow-Origin': '*',
@@ -9,15 +10,6 @@ const CORS_HEADERS = {
 
 export async function OPTIONS(): Promise<NextResponse> {
   return new NextResponse(null, { status: 204, headers: CORS_HEADERS });
-}
-
-function isValidUrl(s: string): boolean {
-  try {
-    new URL(s);
-    return true;
-  } catch {
-    return false;
-  }
 }
 
 export async function POST(request: NextRequest): Promise<NextResponse> {
@@ -40,7 +32,7 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
 
   const { client_name, redirect_uris } = body as Record<string, unknown>;
 
-  if (typeof client_name !== 'string' || client_name.trim().length === 0) {
+  if (typeof client_name !== 'string' || client_name.trim().length === 0 || client_name.length > 200) {
     return NextResponse.json(
       { error: 'invalid_request', error_description: 'client_name is required.' },
       { status: 400, headers: CORS_HEADERS }
@@ -50,10 +42,11 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
   if (
     !Array.isArray(redirect_uris) ||
     redirect_uris.length === 0 ||
-    !redirect_uris.every((u) => typeof u === 'string' && isValidUrl(u))
+    redirect_uris.length > 20 ||
+    !redirect_uris.every(isAllowedRedirectUri)
   ) {
     return NextResponse.json(
-      { error: 'invalid_redirect_uri', error_description: 'redirect_uris must be a non-empty array of valid URLs.' },
+      { error: 'invalid_redirect_uri', error_description: 'redirect_uris must be a non-empty array of https URLs (http is allowed for localhost only).' },
       { status: 400, headers: CORS_HEADERS }
     );
   }

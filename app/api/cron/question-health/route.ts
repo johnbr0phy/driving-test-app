@@ -18,7 +18,9 @@ const MAX_FLAGS = 600;
 
 function authorized(req: NextRequest): boolean {
   const secret = process.env.CRON_SECRET;
-  if (!secret) return true;
+  // No secret means no auth locally only: in production an unset CRON_SECRET
+  // must not open the route to everyone.
+  if (!secret) return process.env.NODE_ENV !== "production";
   return req.headers.get("authorization") === `Bearer ${secret}`;
 }
 

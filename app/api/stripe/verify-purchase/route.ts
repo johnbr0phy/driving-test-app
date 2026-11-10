@@ -28,6 +28,12 @@ export async function POST(request: NextRequest) {
     // Retrieve the checkout session from Stripe
     const session = await stripe.checkout.sessions.retrieve(sessionId);
 
+    // The session must be this account's own purchase: a paid session id is
+    // not a voucher anyone can redeem.
+    if (session.metadata?.userId !== userId) {
+      return NextResponse.json({ isPremium: false, message: 'This purchase belongs to another account' });
+    }
+
     // Verify payment was successful
     if (session.payment_status !== 'paid') {
       return NextResponse.json({

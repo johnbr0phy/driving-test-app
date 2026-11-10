@@ -70,7 +70,7 @@ function buildPassEmail(studentName: string, studentEmail: string, schoolName: s
               <table role="presentation" style="margin: 24px 0; border-collapse: collapse;">
                 <tr>
                   <td align="center">
-                    <a href="https://tigertest.io/schools/dashboard" style="display: inline-block; padding: 14px 28px; background-color: #1a1a1a; color: #ffffff; text-decoration: none; border-radius: 50px; font-weight: 500; font-size: 15px;">View Dashboard</a>
+                    <a href="https://www.tigertest.io/schools/dashboard" style="display: inline-block; padding: 14px 28px; background-color: #1a1a1a; color: #ffffff; text-decoration: none; border-radius: 50px; font-weight: 500; font-size: 15px;">View Dashboard</a>
                   </td>
                 </tr>
               </table>
@@ -85,7 +85,7 @@ function buildPassEmail(studentName: string, studentEmail: string, schoolName: s
               <p style="margin: 0; color: #999999; font-size: 12px; line-height: 1.6; text-align: center;">
                 You're receiving this because you're the admin of ${schoolName} on Tigertest.
                 &nbsp;|&nbsp;
-                <a href="https://tigertest.io/privacy" style="color: #FF6B35; text-decoration: none;">Privacy Policy</a>
+                <a href="https://www.tigertest.io/privacy" style="color: #FF6B35; text-decoration: none;">Privacy Policy</a>
               </p>
             </td>
           </tr>

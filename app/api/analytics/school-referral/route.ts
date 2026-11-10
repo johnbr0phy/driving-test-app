@@ -103,11 +103,11 @@ async function alertJohn(a: { host: string; kind: keyof typeof SCHOOL_KIND_LABEL
     html: `<p><strong>${what}.</strong> Someone there posted a Tigertest link, probably a teacher.</p>
 <p>School: ${esc(a.host)} (${lms})<br>
 ${a.course ? `Course id: ${esc(a.course)}${courseUrl ? ` (<a href="${courseUrl}">${esc(courseUrl)}</a>, needs a login there)` : ''}<br>` : ''}
-Landed on: <a href="https://tigertest.io${esc(a.landing)}">${esc(a.landing)}</a> (${esc(exam.name)})</p>
+Landed on: <a href="https://www.tigertest.io${esc(a.landing)}">${esc(a.landing)}</a> (${esc(exam.name)})</p>
 ${
   cls
     ? `<p>It is a class join link.<br>
-Class: <a href="https://tigertest.io/teach/classes/${esc(cls.code)}">${esc(cls.name || cls.code)}</a> (${esc(cls.code)})<br>
+Class: <a href="https://www.tigertest.io/teach/classes/${esc(cls.code)}">${esc(cls.name || cls.code)}</a> (${esc(cls.code)})<br>
 Teacher: ${esc(cls.teacherName || 'not given')}<br>
 School: ${esc(cls.school || 'not given')}</p>
 `

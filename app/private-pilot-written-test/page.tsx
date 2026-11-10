@@ -1,3 +1,4 @@
+import "@/lib/v2/banks/faapvt";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -8,6 +9,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { SampleQuestionsV2 } from "@/components/v2/SampleQuestionsV2";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -74,7 +77,7 @@ const jsonLd = {
       url: `${siteUrl}/private-pilot-written-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      offers: examOffers("faapvt"),
       featureList: [
         "202 original private pilot practice questions with explanations",
         "2 full 60-question practice tests in 2 hours, three choices per question",
@@ -268,6 +271,8 @@ export default function PrivatePilotLandingPage() {
           <ExamClassFaq examId="faapvt" />
         </div>
       </div>
+
+      <SampleQuestionsV2 examId="faapvt" />
 
       <ExamRelatedTests examId="faapvt" />
 

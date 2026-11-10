@@ -1,3 +1,4 @@
+import "@/lib/v2/banks/act";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -8,6 +9,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { SampleQuestionsV2 } from "@/components/v2/SampleQuestionsV2";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -82,7 +85,7 @@ const jsonLd = {
       url: `${siteUrl}/act-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      offers: examOffers("act"),
       featureList: [
         "Two full-length ACT practice tests in the enhanced 2025 format, 171 questions each",
         "Real section timing with a break after Math",
@@ -259,6 +262,8 @@ export default function ActLandingPage() {
           <ExamClassFaq examId="act" />
         </div>
       </div>
+
+      <SampleQuestionsV2 examId="act" />
 
       <ExamRelatedTests examId="act" />
 

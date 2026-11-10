@@ -1,6 +1,5 @@
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
-import { examLandingAlternates } from "@/lib/examSeo";
 import Image from "next/image";
 import { getTigerAsset } from "@/lib/tigerAssets";
 import { Smartphone, Monitor } from "lucide-react";
@@ -10,6 +9,7 @@ import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
 import "@/lib/banks/ptmoto";
 import { SITE_URL } from "@/lib/siteUrl";
+import { examLandingAlternates, examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -77,7 +77,7 @@ const jsonLd = {
       url: `${siteUrl}/portugal-motorcycle-theory-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" },
+      offers: examOffers("ptmoto", "EUR"),
       featureList: [
         "200 questions on the Código da Estrada and the motorcycle programme",
         "5 mock tests of 40 questions, 36 to pass",

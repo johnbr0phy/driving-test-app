@@ -1,3 +1,4 @@
+import "@/lib/v2/banks/uptet";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -8,6 +9,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { SampleQuestionsV2 } from "@/components/v2/SampleQuestionsV2";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -74,7 +77,7 @@ const jsonLd = {
       url: `${siteUrl}/uptet-paper-1-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "INR" },
+      offers: examOffers("uptet", "INR"),
       featureList: [
         "200 original UPTET Paper 1 practice questions with explanations",
         "2 timed mock tests of 60 questions in 60 minutes",
@@ -268,6 +271,8 @@ export default function UptetLandingPage() {
           Tigertest is not affiliated with or endorsed by UPESSC or the Government of Uttar Pradesh.
         </p>
       </div>
+
+      <SampleQuestionsV2 examId="uptet" />
 
       <ExamRelatedTests examId="uptet" />
 

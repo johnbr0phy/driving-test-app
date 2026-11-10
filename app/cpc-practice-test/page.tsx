@@ -1,3 +1,4 @@
+import "@/lib/banks/cpc";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -9,6 +10,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -75,7 +78,7 @@ const jsonLd = {
       url: `${siteUrl}/cpc-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      offers: examOffers("cpc"),
       featureList: [
         "200 CPC practice questions",
         "4 mock tests of 50 questions with a 70% pass line",
@@ -268,6 +271,8 @@ export default function CpcLandingPage() {
           <ExamClassFaq examId="cpc" />
         </div>
       </div>
+
+      <ExamSampleQuestions examId="cpc" />
 
       <ExamRelatedTests examId="cpc" />
 

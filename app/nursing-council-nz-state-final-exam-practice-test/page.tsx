@@ -1,3 +1,4 @@
+import "@/lib/banks/nzsfe";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -9,6 +10,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 const path = "/nursing-council-nz-state-final-exam-practice-test";
@@ -76,7 +79,7 @@ const jsonLd = {
       url: `${siteUrl}${path}`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "NZD" },
+      offers: examOffers("nzsfe", "NZD"),
       featureList: [
         "200 registered nurse practice questions for New Zealand",
         "4 mock tests of 50 questions with a 70% readiness line",
@@ -313,6 +316,8 @@ export default function NzsfeLandingPage() {
           <ExamClassFaq examId="nzsfe" />
         </div>
       </div>
+
+      <ExamSampleQuestions examId="nzsfe" />
 
       <ExamRelatedTests examId="nzsfe" />
 

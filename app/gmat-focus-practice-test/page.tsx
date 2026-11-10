@@ -1,3 +1,4 @@
+import "@/lib/v2/banks/gmat";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -8,6 +9,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { SampleQuestionsV2 } from "@/components/v2/SampleQuestionsV2";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -74,7 +77,7 @@ const jsonLd = {
       url: `${siteUrl}/gmat-focus-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      offers: examOffers("gmat"),
       featureList: [
         "169 original GMAT Focus practice questions with explanations",
         "2 full practice tests: Quant 21, Verbal 23 and Data Insights 20 in 45 minutes each",
@@ -263,6 +266,8 @@ export default function GmatLandingPage() {
           <ExamClassFaq examId="gmat" />
         </div>
       </div>
+
+      <SampleQuestionsV2 examId="gmat" />
 
       <ExamRelatedTests examId="gmat" />
 

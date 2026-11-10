@@ -1,3 +1,4 @@
+import "@/lib/banks/sgm5";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -7,6 +8,8 @@ import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHe
 import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { SITE_URL } from "@/lib/siteUrl";
+import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -73,7 +76,7 @@ const jsonLd = {
       url: `${siteUrl}/cmfas-m5-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "SGD" },
+      offers: examOffers("sgm5", "SGD"),
       featureList: [
         "200 RES5 (formerly M5) practice questions",
         "4 mock tests of 50 questions at the real pace",
@@ -260,6 +263,8 @@ export default function CmfasM5LandingPage() {
           ))}
         </div>
       </div>
+
+      <ExamSampleQuestions examId="sgm5" />
 
       <ExamRelatedTests examId="sgm5" />
 

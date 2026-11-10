@@ -1,3 +1,4 @@
+import "@/lib/v2/banks/mhtcet";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -8,6 +9,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { SampleQuestionsV2 } from "@/components/v2/SampleQuestionsV2";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -74,7 +77,7 @@ const jsonLd = {
       url: `${siteUrl}/mht-cet-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "INR" },
+      offers: examOffers("mhtcet", "INR"),
       featureList: [
         "214 original MHT-CET PCM practice questions with explanations",
         "2 timed mock tests at the real pace: Physics and Chemistry 50 in 45 minutes, Mathematics 25 in 45 minutes",
@@ -263,6 +266,8 @@ export default function MhtCetLandingPage() {
           <ExamClassFaq examId="mhtcet" />
         </div>
       </div>
+
+      <SampleQuestionsV2 examId="mhtcet" />
 
       <ExamRelatedTests examId="mhtcet" />
 

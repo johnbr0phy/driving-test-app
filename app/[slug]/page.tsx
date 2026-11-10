@@ -21,6 +21,10 @@ import { isViState } from "@/data/viStates";
 import { isZhState } from "@/data/zhStates";
 import { isKoState } from "@/data/koStates";
 import { SITE_URL } from "@/lib/siteUrl";
+import { examOffers } from "@/lib/examSeo";
+import { DmvSampleQuestions } from "@/components/exam/ExamSampleQuestions";
+import dmvQuestions from "@/data/questions.json";
+import type { Question } from "@/types";
 
 const siteUrl = SITE_URL;
 
@@ -196,11 +200,7 @@ export default async function StateDMVPracticeTestPage({
       url: siteUrl,
       logo: `${siteUrl}/tiger.png`,
     },
-    offers: {
-      "@type": "Offer",
-      price: "0",
-      priceCurrency: "USD",
-    },
+    offers: examOffers("dmv"),
   };
 
   // JSON-LD: HowTo schema — targets "how to pass the [state] DMV test" queries.
@@ -611,6 +611,12 @@ export default async function StateDMVPracticeTestPage({
             ))}
           </div>
         </div>
+
+        <DmvSampleQuestions
+          questions={(dmvQuestions as Question[]).filter((q) => q.state === state.code)}
+          stateName={state.name}
+          path={`/${state.slug}-dmv-practice-test`}
+        />
 
         {/* FAQ Section */}
         <div className="mb-12">

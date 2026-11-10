@@ -1,3 +1,4 @@
+import "@/lib/v2/banks/nswsel";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -9,6 +10,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { SampleQuestionsV2 } from "@/components/v2/SampleQuestionsV2";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -83,7 +86,7 @@ const jsonLd = {
       url: `${siteUrl}/nsw-selective-test-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "AUD" },
+      offers: examOffers("nswsel", "AUD"),
       featureList: [
         "Two full practice tests: Reading, Mathematical Reasoning and Thinking Skills, 113 questions each",
         "Timed sections like the real computer-based test",
@@ -262,6 +265,8 @@ export default function NswSelectiveLandingPage() {
           <ExamClassFaq examId="nswsel" />
         </div>
       </div>
+
+      <SampleQuestionsV2 examId="nswsel" />
 
       <ExamRelatedTests examId="nswsel" />
 

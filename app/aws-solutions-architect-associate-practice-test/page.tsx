@@ -1,3 +1,4 @@
+import "@/lib/v2/banks/awssaa";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -8,6 +9,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { SampleQuestionsV2 } from "@/components/v2/SampleQuestionsV2";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -74,7 +77,7 @@ const jsonLd = {
       url: `${siteUrl}/aws-solutions-architect-associate-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      offers: examOffers("awssaa"),
       featureList: [
         "200 original SAA-C03 practice questions",
         "2 full 65-question practice tests in 130 minutes",
@@ -264,6 +267,8 @@ export default function AwsSaaLandingPage() {
           <ExamClassFaq examId="awssaa" />
         </div>
       </div>
+
+      <SampleQuestionsV2 examId="awssaa" />
 
       <ExamRelatedTests examId="awssaa" />
 

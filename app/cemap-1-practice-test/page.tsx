@@ -1,3 +1,4 @@
+import "@/lib/banks/cemap";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -8,6 +9,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -74,7 +77,7 @@ const jsonLd = {
       url: `${siteUrl}/cemap-1-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "GBP" },
+      offers: examOffers("cemap", "GBP"),
       featureList: [
         "200 CeMAP 1 (FSRE) practice questions",
         "5 mock tests of 40 questions, half FRE1 and half FRE2",
@@ -265,6 +268,8 @@ export default function Cemap1LandingPage() {
           <ExamClassFaq examId="cemap" />
         </div>
       </div>
+
+      <ExamSampleQuestions examId="cemap" />
 
       <ExamRelatedTests examId="cemap" />
 

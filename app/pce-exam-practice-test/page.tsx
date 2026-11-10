@@ -1,3 +1,4 @@
+import "@/lib/banks/mypce";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -7,6 +8,8 @@ import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHe
 import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { SITE_URL } from "@/lib/siteUrl";
+import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -73,7 +76,7 @@ const jsonLd = {
       url: `${siteUrl}/pce-exam-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "MYR" },
+      offers: examOffers("mypce", "MYR"),
       featureList: [
         "200 PCEIA practice questions",
         "4 mock tests of 50 questions across Parts A, B and C",
@@ -257,6 +260,8 @@ export default function MypceLandingPage() {
           ))}
         </div>
       </div>
+
+      <ExamSampleQuestions examId="mypce" />
 
       <ExamRelatedTests examId="mypce" />
 

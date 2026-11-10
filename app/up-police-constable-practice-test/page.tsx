@@ -1,3 +1,4 @@
+import "@/lib/v2/banks/uppolice";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -8,6 +9,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { SampleQuestionsV2 } from "@/components/v2/SampleQuestionsV2";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -74,7 +77,7 @@ const jsonLd = {
       url: `${siteUrl}/up-police-constable-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "INR" },
+      offers: examOffers("uppolice", "INR"),
       featureList: [
         "232 original UP Police Constable practice questions with explanations",
         "2 mock tests of 100 questions in 80 minutes, the real exam's pace, 25 per subject",
@@ -264,6 +267,8 @@ export default function UpPoliceLandingPage() {
           <ExamClassFaq examId="uppolice" />
         </div>
       </div>
+
+      <SampleQuestionsV2 examId="uppolice" />
 
       <ExamRelatedTests examId="uppolice" />
 

@@ -1,3 +1,4 @@
+import "@/lib/v2/banks/delhipolice";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -8,6 +9,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { SampleQuestionsV2 } from "@/components/v2/SampleQuestionsV2";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -74,7 +77,7 @@ const jsonLd = {
       url: `${siteUrl}/delhi-police-constable-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "INR" },
+      offers: examOffers("delhipolice", "INR"),
       featureList: [
         "234 original Delhi Police Constable practice questions with explanations",
         "2 full mock tests of 100 questions in 90 minutes, in the CBE order",
@@ -264,6 +267,8 @@ export default function DelhiPoliceLandingPage() {
           <ExamClassFaq examId="delhipolice" />
         </div>
       </div>
+
+      <SampleQuestionsV2 examId="delhipolice" />
 
       <ExamRelatedTests examId="delhipolice" />
 

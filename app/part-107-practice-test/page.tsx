@@ -1,3 +1,4 @@
+import "@/lib/banks/part107";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -7,6 +8,8 @@ import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHe
 import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { SITE_URL } from "@/lib/siteUrl";
+import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -70,7 +73,7 @@ const jsonLd = {
       url: `${siteUrl}/part-107-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      offers: examOffers("part107"),
       featureList: [
         "200 Part 107 practice questions",
         "4 practice tests weighted to the FAA ACS",
@@ -267,6 +270,8 @@ export default function Part107LandingPage() {
           ))}
         </div>
       </div>
+
+      <ExamSampleQuestions examId="part107" />
 
       <ExamRelatedTests examId="part107" />
 

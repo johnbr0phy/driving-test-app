@@ -1,3 +1,4 @@
+import "@/lib/banks/aurcg";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -9,6 +10,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -52,7 +55,7 @@ const jsonLd = {
       url: `${siteUrl}/rcg-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "AUD" },
+      offers: examOffers("aurcg", "AUD"),
       featureList: [
         "200 RCG and RSG practice questions",
         "4 mock tests of 50 questions with an 80 percent readiness line",
@@ -301,6 +304,8 @@ export default function RcgPracticeTestLandingPage() {
           <ExamClassFaq examId="aurcg" />
         </div>
       </div>
+
+      <ExamSampleQuestions examId="aurcg" />
 
       <ExamRelatedTests examId="aurcg" />
 

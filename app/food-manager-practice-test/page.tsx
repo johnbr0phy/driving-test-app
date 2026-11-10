@@ -1,3 +1,4 @@
+import "@/lib/banks/foodmgr";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -8,6 +9,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -51,7 +54,7 @@ const jsonLd = {
       url: `${siteUrl}/food-manager-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      offers: examOffers("foodmgr"),
       featureList: [
         "200 food manager practice questions",
         "4 practice tests weighted like the accredited manager exams",
@@ -302,6 +305,8 @@ export default function FoodmgrLandingPage() {
           <ExamClassFaq examId="foodmgr" />
         </div>
       </div>
+
+      <ExamSampleQuestions examId="foodmgr" />
 
       <ExamRelatedTests examId="foodmgr" />
 

@@ -1,3 +1,4 @@
+import "@/lib/banks/cacit";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -9,6 +10,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -52,7 +55,7 @@ const jsonLd = {
       url: `${siteUrl}/canadian-citizenship-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "CAD" },
+      offers: examOffers("cacit", "CAD"),
       featureList: [
         "200 Canadian citizenship practice questions from Discover Canada",
         "8 practice tests of 20 questions, 15 correct to pass",
@@ -308,6 +311,8 @@ export default function CanadianCitizenshipLandingPage() {
           <ExamClassFaq examId="cacit" />
         </div>
       </div>
+
+      <ExamSampleQuestions examId="cacit" />
 
       <ExamRelatedTests examId="cacit" />
 

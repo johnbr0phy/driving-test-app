@@ -1,3 +1,4 @@
+import "@/lib/v2/banks/elevenplus";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -9,6 +10,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { SampleQuestionsV2 } from "@/components/v2/SampleQuestionsV2";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -83,7 +86,7 @@ const jsonLd = {
       url: `${siteUrl}/11-plus-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "GBP" },
+      offers: examOffers("elevenplus", "GBP"),
       featureList: [
         "Two timed 11+ practice tests: English, Maths and Verbal Reasoning, 90 questions each",
         "GL-style multiple-choice question formats",
@@ -261,6 +264,8 @@ export default function ElevenPlusLandingPage() {
           <ExamClassFaq examId="elevenplus" />
         </div>
       </div>
+
+      <SampleQuestionsV2 examId="elevenplus" />
 
       <ExamRelatedTests examId="elevenplus" />
 

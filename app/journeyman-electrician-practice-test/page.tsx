@@ -1,3 +1,4 @@
+import "@/lib/banks/jelec";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -9,6 +10,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -52,7 +55,7 @@ const jsonLd = {
       url: `${siteUrl}/journeyman-electrician-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      offers: examOffers("jelec"),
       featureList: [
         "200 journeyman electrician practice questions on the 2023 NEC",
         "4 mock tests of 50 questions with a 70 percent pass line",
@@ -307,6 +310,8 @@ export default function JourneymanElectricianLandingPage() {
           <ExamClassFaq examId="jelec" />
         </div>
       </div>
+
+      <ExamSampleQuestions examId="jelec" />
 
       <ExamRelatedTests examId="jelec" />
 

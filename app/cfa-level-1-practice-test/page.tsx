@@ -1,3 +1,4 @@
+import "@/lib/banks/cfal1";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -7,6 +8,8 @@ import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHe
 import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { SITE_URL } from "@/lib/siteUrl";
+import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -73,7 +76,7 @@ const jsonLd = {
       url: `${siteUrl}/cfa-level-1-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      offers: examOffers("cfal1"),
       featureList: [
         "200 CFA Level I practice questions",
         "4 tests of 50 questions weighted by the Level I topic outline",
@@ -264,6 +267,8 @@ export default function CfaLevel1LandingPage() {
           ))}
         </div>
       </div>
+
+      <ExamSampleQuestions examId="cfal1" />
 
       <ExamRelatedTests examId="cfal1" />
 

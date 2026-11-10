@@ -1,3 +1,4 @@
+import "@/lib/banks/realestate";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -8,6 +9,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -136,7 +139,7 @@ const jsonLd = {
       url: `${siteUrl}/real-estate-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      offers: examOffers("realestate"),
       featureList: [
         "200 real estate practice questions",
         "4 practice tests weighted to the national salesperson outline",
@@ -414,6 +417,8 @@ export default function RealestateLandingPage() {
           <ExamClassFaq examId="realestate" />
         </div>
       </div>
+
+      <ExamSampleQuestions examId="realestate" />
 
       <ExamRelatedTests examId="realestate" />
 

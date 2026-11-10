@@ -1,3 +1,4 @@
+import "@/lib/v2/banks/ibpsrrb";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -8,6 +9,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { SampleQuestionsV2 } from "@/components/v2/SampleQuestionsV2";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -74,7 +77,7 @@ const jsonLd = {
       url: `${siteUrl}/ibps-rrb-office-assistant-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "INR" },
+      offers: examOffers("ibpsrrb", "INR"),
       featureList: [
         "200 original IBPS RRB Office Assistant Prelims practice questions with explanations",
         "2 full 80-question mock tests in 45 minutes with sectional timing (25 and 20 minutes)",
@@ -262,6 +265,8 @@ export default function IbpsRrbLandingPage() {
           <ExamClassFaq examId="ibpsrrb" />
         </div>
       </div>
+
+      <SampleQuestionsV2 examId="ibpsrrb" />
 
       <ExamRelatedTests examId="ibpsrrb" />
 

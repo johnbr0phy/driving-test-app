@@ -1,3 +1,4 @@
+import "@/lib/v2/banks/neet";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -8,6 +9,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { SampleQuestionsV2 } from "@/components/v2/SampleQuestionsV2";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -74,7 +77,7 @@ const jsonLd = {
       url: `${siteUrl}/neet-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "INR" },
+      offers: examOffers("neet", "INR"),
       featureList: [
         "234 original NEET (UG) practice questions with explanations",
         "2 timed mock tests of 100 questions: Physics 25, Chemistry 25, Biology 50",
@@ -263,6 +266,8 @@ export default function NeetLandingPage() {
           <ExamClassFaq examId="neet" />
         </div>
       </div>
+
+      <SampleQuestionsV2 examId="neet" />
 
       <ExamRelatedTests examId="neet" />
 

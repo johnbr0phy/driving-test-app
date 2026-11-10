@@ -10,6 +10,7 @@ import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import "@/lib/banks/punjabpolice";
 import { SITE_URL } from "@/lib/siteUrl";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -76,7 +77,7 @@ const jsonLd = {
       url: `${siteUrl}/punjab-police-constable-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "PKR" },
+      offers: examOffers("punjabpolice", "PKR"),
       featureList: [
         "200 English, maths, reasoning, Punjab, police law and computer questions",
         "4 mock tests of 50 questions",

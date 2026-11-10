@@ -1,3 +1,4 @@
+import "@/lib/v2/banks/asvab";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -8,6 +9,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { SampleQuestionsV2 } from "@/components/v2/SampleQuestionsV2";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -51,7 +54,7 @@ const jsonLd = {
       url: `${siteUrl}/asvab-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      offers: examOffers("asvab"),
       featureList: [
         "200 ASVAB practice questions",
         "A full CAT-ASVAB simulation: eight timed subtests in test order, no going back",
@@ -304,6 +307,8 @@ export default function AsvabLandingPage() {
           <ExamClassFaq examId="asvab" />
         </div>
       </div>
+
+      <SampleQuestionsV2 examId="asvab" />
 
       <ExamRelatedTests examId="asvab" />
 

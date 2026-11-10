@@ -1,3 +1,4 @@
+import "@/lib/v2/banks/emt";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -8,6 +9,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { SampleQuestionsV2 } from "@/components/v2/SampleQuestionsV2";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -51,7 +54,7 @@ const jsonLd = {
       url: `${siteUrl}/emt-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      offers: examOffers("emt"),
       featureList: [
         "200 EMT practice questions",
         "2 full 70-question practice tests in 2 hours, answered in order like the NREMT",
@@ -301,6 +304,8 @@ export default function EmtLandingPage() {
           <ExamClassFaq examId="emt" />
         </div>
       </div>
+
+      <SampleQuestionsV2 examId="emt" />
 
       <ExamRelatedTests examId="emt" />
 

@@ -1,3 +1,4 @@
+import "@/lib/v2/banks/nclex";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -8,6 +9,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { SampleQuestionsV2 } from "@/components/v2/SampleQuestionsV2";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -74,7 +77,7 @@ const jsonLd = {
       url: `${siteUrl}/nclex-rn-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      offers: examOffers("nclex"),
       featureList: [
         "200 original NCLEX-RN practice questions with rationales",
         "Two 85-question practice tests answered in order, no going back",
@@ -268,6 +271,8 @@ export default function NclexLandingPage() {
           <ExamClassFaq examId="nclex" />
         </div>
       </div>
+
+      <SampleQuestionsV2 examId="nclex" />
 
       <ExamRelatedTests examId="nclex" />
 

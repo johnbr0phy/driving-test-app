@@ -1,3 +1,4 @@
+import "@/lib/banks/aucit";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -9,6 +10,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -75,7 +78,7 @@ const jsonLd = {
       url: `${siteUrl}/australian-citizenship-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "AUD" },
+      offers: examOffers("aucit", "AUD"),
       featureList: [
         "200 Australian citizenship test practice questions",
         "8 mock tests of 20 questions with a 75% pass line",
@@ -266,6 +269,8 @@ export default function AustralianCitizenshipLandingPage() {
           <ExamClassFaq examId="aucit" />
         </div>
       </div>
+
+      <ExamSampleQuestions examId="aucit" />
 
       <ExamRelatedTests examId="aucit" />
 

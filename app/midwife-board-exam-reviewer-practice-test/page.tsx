@@ -1,3 +1,4 @@
+import "@/lib/banks/phmidwife";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -9,6 +10,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -52,7 +55,7 @@ const jsonLd = {
       url: `${siteUrl}/midwife-board-exam-reviewer-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "PHP" },
+      offers: examOffers("phmidwife", "PHP"),
       featureList: [
         "200 midwife board exam practice questions",
         "4 mock exams of 50 questions, 10 from each of the five subjects",
@@ -303,6 +306,8 @@ export default function MidwifeBoardExamLandingPage() {
           <ExamClassFaq examId="phmidwife" />
         </div>
       </div>
+
+      <ExamSampleQuestions examId="phmidwife" />
 
       <ExamRelatedTests examId="phmidwife" />
 

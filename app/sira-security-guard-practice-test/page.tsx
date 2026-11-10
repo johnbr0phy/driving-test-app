@@ -1,3 +1,4 @@
+import "@/lib/banks/aesira";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -7,6 +8,8 @@ import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHe
 import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { SITE_URL } from "@/lib/siteUrl";
+import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -73,7 +76,7 @@ const jsonLd = {
       url: `${siteUrl}/sira-security-guard-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "AED" },
+      offers: examOffers("aesira", "AED"),
       featureList: [
         "200 SIRA security guard practice questions",
         "4 mock tests of 50 questions",
@@ -262,6 +265,8 @@ export default function SiraSecurityLandingPage() {
           ))}
         </div>
       </div>
+
+      <ExamSampleQuestions examId="aesira" />
 
       <ExamRelatedTests examId="aesira" />
 

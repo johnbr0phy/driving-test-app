@@ -1,6 +1,5 @@
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
-import { examLandingAlternates } from "@/lib/examSeo";
 import Image from "next/image";
 import { getTigerAsset } from "@/lib/tigerAssets";
 import { Smartphone, Monitor } from "lucide-react";
@@ -10,6 +9,7 @@ import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
 import "@/lib/banks/esdgt";
 import { SITE_URL } from "@/lib/siteUrl";
+import { examLandingAlternates, examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -77,7 +77,7 @@ const jsonLd = {
       url: `${siteUrl}/spain-driving-theory-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" },
+      offers: examOffers("esdgt", "EUR"),
       featureList: [
         "200 Spanish traffic rule questions in English",
         "6 tests of 30 questions, 27 to pass",

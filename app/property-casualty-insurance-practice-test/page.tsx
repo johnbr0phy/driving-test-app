@@ -1,3 +1,4 @@
+import "@/lib/banks/pnc";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -8,6 +9,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -121,7 +124,7 @@ const jsonLd = {
       url: `${siteUrl}/property-casualty-insurance-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      offers: examOffers("pnc"),
       featureList: [
         "200 property and casualty practice questions",
         "4 practice tests weighted to the general portion of the P&C exam",
@@ -398,6 +401,8 @@ export default function PncLandingPage() {
           <ExamClassFaq examId="pnc" />
         </div>
       </div>
+
+      <ExamSampleQuestions examId="pnc" />
 
       <ExamRelatedTests examId="pnc" />
 

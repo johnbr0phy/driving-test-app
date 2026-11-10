@@ -1,3 +1,4 @@
+import "@/lib/banks/ptcb";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -8,6 +9,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -71,7 +74,7 @@ const jsonLd = {
       url: `${siteUrl}/ptcb-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      offers: examOffers("ptcb"),
       featureList: [
         "200 PTCE practice questions",
         "4 practice tests weighted to the 2026 PTCE outline",
@@ -274,6 +277,8 @@ export default function PtcbLandingPage() {
           <ExamClassFaq examId="ptcb" />
         </div>
       </div>
+
+      <ExamSampleQuestions examId="ptcb" />
 
       <ExamRelatedTests examId="ptcb" />
 

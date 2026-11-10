@@ -1,3 +1,4 @@
+import "@/lib/v2/banks/sat";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -8,6 +9,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { SampleQuestionsV2 } from "@/components/v2/SampleQuestionsV2";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -82,7 +85,7 @@ const jsonLd = {
       url: `${siteUrl}/sat-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      offers: examOffers("sat"),
       featureList: [
         "Two full-length adaptive digital SAT practice tests, 98 questions each",
         "Four timed modules with adaptive second modules",
@@ -263,6 +266,8 @@ export default function SatLandingPage() {
           <ExamClassFaq examId="sat" />
         </div>
       </div>
+
+      <SampleQuestionsV2 examId="sat" />
 
       <ExamRelatedTests examId="sat" />
 

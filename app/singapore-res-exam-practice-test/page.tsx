@@ -1,3 +1,4 @@
+import "@/lib/banks/sgres";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -7,6 +8,8 @@ import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHe
 import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { SITE_URL } from "@/lib/siteUrl";
+import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -73,7 +76,7 @@ const jsonLd = {
       url: `${siteUrl}/singapore-res-exam-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "SGD" },
+      offers: examOffers("sgres", "SGD"),
       featureList: [
         "200 RES exam practice questions",
         "4 mock tests of 50 questions across Paper 1 and Paper 2",
@@ -258,6 +261,8 @@ export default function SgresLandingPage() {
           ))}
         </div>
       </div>
+
+      <ExamSampleQuestions examId="sgres" />
 
       <ExamRelatedTests examId="sgres" />
 

@@ -1,3 +1,4 @@
+import "@/lib/v2/banks/biharpolice";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -8,6 +9,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { SampleQuestionsV2 } from "@/components/v2/SampleQuestionsV2";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -74,7 +77,7 @@ const jsonLd = {
       url: `${siteUrl}/bihar-police-constable-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "INR" },
+      offers: examOffers("biharpolice", "INR"),
       featureList: [
         "232 original Bihar Police Constable practice questions with explanations",
         "2 mock tests of 100 questions in 2 hours, the real paper's length and time",
@@ -266,6 +269,8 @@ export default function BiharPoliceLandingPage() {
           <ExamClassFaq examId="biharpolice" />
         </div>
       </div>
+
+      <SampleQuestionsV2 examId="biharpolice" />
 
       <ExamRelatedTests examId="biharpolice" />
 

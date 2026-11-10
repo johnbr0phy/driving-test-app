@@ -1,3 +1,4 @@
+import "@/lib/v2/banks/accuplacer";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -7,6 +8,8 @@ import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHe
 import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { SITE_URL } from "@/lib/siteUrl";
+import { SampleQuestionsV2 } from "@/components/v2/SampleQuestionsV2";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -50,7 +53,7 @@ const jsonLd = {
       url: `${siteUrl}/accuplacer-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      offers: examOffers("accuplacer"),
       featureList: [
         "200 ACCUPLACER practice questions",
         "Two untimed practice tests across all five placement sections",
@@ -298,6 +301,8 @@ export default function AccuplacerLandingPage() {
           </div>
         </div>
       </div>
+
+      <SampleQuestionsV2 examId="accuplacer" />
 
       <ExamRelatedTests examId="accuplacer" />
 

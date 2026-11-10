@@ -1,3 +1,4 @@
+import "@/lib/v2/banks/fsmaths";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Link from "next/link";
@@ -7,6 +8,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { SampleQuestionsV2 } from "@/components/v2/SampleQuestionsV2";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -81,7 +84,7 @@ const jsonLd = {
       url: `${siteUrl}/functional-skills-maths-level-2-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "GBP" },
+      offers: examOffers("fsmaths", "GBP"),
       featureList: [
         "Two full practice papers with a non-calculator and a calculator section",
         "Four topic drills on the DfE Level 2 subject content",
@@ -246,6 +249,8 @@ export default function FunctionalSkillsMathsLandingPage() {
           <ExamClassFaq examId="fsmaths" />
         </div>
       </div>
+
+      <SampleQuestionsV2 examId="fsmaths" />
 
       <ExamRelatedTests examId="fsmaths" />
 

@@ -1,3 +1,4 @@
+import "@/lib/v2/banks/jnvst";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -8,6 +9,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { SampleQuestionsV2 } from "@/components/v2/SampleQuestionsV2";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -74,7 +77,7 @@ const jsonLd = {
       url: `${siteUrl}/jnvst-class-6-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "INR" },
+      offers: examOffers("jnvst", "INR"),
       featureList: [
         "205 original JNVST Class 6 practice questions with explanations",
         "2 full 80-question mock tests in 2 hours, in the real section order",
@@ -264,6 +267,8 @@ export default function JnvstLandingPage() {
           <ExamClassFaq examId="jnvst" />
         </div>
       </div>
+
+      <SampleQuestionsV2 examId="jnvst" />
 
       <ExamRelatedTests examId="jnvst" />
 

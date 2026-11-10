@@ -1,3 +1,4 @@
+import "@/lib/banks/uk18ed";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -9,6 +10,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -52,7 +55,7 @@ const jsonLd = {
       url: `${siteUrl}/18th-edition-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "GBP" },
+      offers: examOffers("uk18ed", "GBP"),
       featureList: [
         "200 BS 7671 practice questions on Amendment 4:2026",
         "4 mock exams of 50 questions weighted like the C&G 2382-26 test specification",
@@ -314,6 +317,8 @@ export default function EighteenthEditionLandingPage() {
           <ExamClassFaq examId="uk18ed" />
         </div>
       </div>
+
+      <ExamSampleQuestions examId="uk18ed" />
 
       <ExamRelatedTests examId="uk18ed" />
 

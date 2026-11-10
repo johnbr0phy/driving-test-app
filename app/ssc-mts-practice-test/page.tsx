@@ -1,3 +1,4 @@
+import "@/lib/v2/banks/sscmts";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -8,6 +9,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { SampleQuestionsV2 } from "@/components/v2/SampleQuestionsV2";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -74,7 +77,7 @@ const jsonLd = {
       url: `${siteUrl}/ssc-mts-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "INR" },
+      offers: examOffers("sscmts", "INR"),
       featureList: [
         "212 original SSC MTS and Havaldar practice questions with explanations",
         "2 full mock tests of 90 questions in two 45-minute sessions, in the real order",
@@ -264,6 +267,8 @@ export default function SscMtsLandingPage() {
           <ExamClassFaq examId="sscmts" />
         </div>
       </div>
+
+      <SampleQuestionsV2 examId="sscmts" />
 
       <ExamRelatedTests examId="sscmts" />
 

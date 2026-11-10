@@ -22,6 +22,7 @@ import { VI_STATE_CODES } from "@/data/viStates";
 import { isZhState } from "@/data/zhStates";
 import { isKoState } from "@/data/koStates";
 import { SITE_URL } from "@/lib/siteUrl";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -227,11 +228,7 @@ export default async function VietnameseStateDMVPage({ params }: PageProps) {
       url: siteUrl,
       logo: `${siteUrl}/tiger.png`,
     },
-    offers: {
-      "@type": "Offer",
-      price: "0",
-      priceCurrency: "USD",
-    },
+    offers: examOffers("dmv"),
   };
 
   // JSON-LD: HowTo — targets "cách đậu bài thi DMV [tiểu bang]" queries.

@@ -1,3 +1,4 @@
+import "@/lib/banks/auwhite";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -9,6 +10,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -71,7 +74,7 @@ const jsonLd = {
       url: `${siteUrl}/white-card-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "AUD" },
+      offers: examOffers("auwhite", "AUD"),
       featureList: [
         "200 White Card (CPCWHS1001) practice questions",
         "4 practice tests of 50 questions across all eight topic areas",
@@ -274,6 +277,8 @@ export default function WhiteCardLandingPage() {
           <ExamClassFaq examId="auwhite" />
         </div>
       </div>
+
+      <ExamSampleQuestions examId="auwhite" />
 
       <ExamRelatedTests examId="auwhite" />
 

@@ -1,3 +1,4 @@
+import "@/lib/v2/banks/gre";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -8,6 +9,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { SampleQuestionsV2 } from "@/components/v2/SampleQuestionsV2";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -74,7 +77,7 @@ const jsonLd = {
       url: `${siteUrl}/gre-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      offers: examOffers("gre"),
       featureList: [
         "194 original GRE practice questions with explanations",
         "2 full practice tests in the shorter GRE format, timed like the real sections",
@@ -263,6 +266,8 @@ export default function GreLandingPage() {
           <ExamClassFaq examId="gre" />
         </div>
       </div>
+
+      <SampleQuestionsV2 examId="gre" />
 
       <ExamRelatedTests examId="gre" />
 

@@ -8,6 +8,7 @@ import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHe
 import { landingUpdatedAt } from "@/lib/landingDates";
 import { ORGANIZATION_ID } from "@/lib/siteSchema";
 import { SITE_URL } from "@/lib/siteUrl";
+import { examOffers } from "@/lib/examSeo";
 
 // Spanish landing for the CDL general knowledge test. The app pages are the
 // same /cdl/* routes in Spanish (ExamConfig.translations.es); the CTA here
@@ -116,7 +117,7 @@ const jsonLd = {
       inLanguage: "es-US",
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      offers: examOffers("cdl"),
       publisher: { "@id": ORGANIZATION_ID },
     },
     {

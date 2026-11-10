@@ -1,3 +1,4 @@
+import "@/lib/banks/phinsurance";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -7,6 +8,8 @@ import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHe
 import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { SITE_URL } from "@/lib/siteUrl";
+import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -73,7 +76,7 @@ const jsonLd = {
       url: `${siteUrl}/insurance-commission-exam-reviewer-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "PHP" },
+      offers: examOffers("phinsurance", "PHP"),
       featureList: [
         "200 traditional life practice questions",
         "4 mock tests of 50 questions",
@@ -262,6 +265,8 @@ export default function PhinsuranceLandingPage() {
           ))}
         </div>
       </div>
+
+      <ExamSampleQuestions examId="phinsurance" />
 
       <ExamRelatedTests examId="phinsurance" />
 

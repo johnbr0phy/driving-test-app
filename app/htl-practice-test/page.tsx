@@ -1,3 +1,4 @@
+import "@/lib/banks/htl";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -8,6 +9,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -71,7 +74,7 @@ const jsonLd = {
       url: `${siteUrl}/htl-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      offers: examOffers("htl"),
       featureList: [
         "214 HTL practice questions",
         "4 blueprint-weighted practice tests",
@@ -268,6 +271,8 @@ export default function HTLLandingPage() {
           <ExamClassFaq examId="htl" />
         </div>
       </div>
+
+      <ExamSampleQuestions examId="htl" />
 
       <ExamRelatedTests examId="htl" />
 

@@ -60,7 +60,7 @@ function rotateKeyTo(q: Question, target: number): Question {
 }
 
 // Headings in each language a landing is written in; English otherwise.
-const SAMPLE_COPY: Partial<Record<Language, { title: (name: string) => string; sub: (n: number, total: string) => string; answer: string; quiz: (name: string) => string }>> = {
+export const SAMPLE_COPY: Partial<Record<Language, { title: (name: string) => string; sub: (n: number, total: string) => string; answer: string; quiz: (name: string) => string }>> = {
   en: {
     title: (name) => `${name} sample questions and answers`,
     sub: (n, total) => `${n} of the ${total} practice questions, one from each topic, with the answer explained.`,
@@ -239,6 +239,78 @@ export function ExamSampleQuestions({
             <p className="text-gray-700 dark:text-gray-200">
               <strong className="text-gray-900 dark:text-gray-50">{copy.answer}: {LETTERS[key(q)]}.</strong>{" "}
               {q.explanation}
+            </p>
+          </li>
+        ))}
+      </ol>
+    </section>
+  );
+}
+
+/**
+ * The same block for a DMV state page: six of that state's own questions
+ * (state law, one per topic) from data/questions.json. English only; the
+ * page passes the state's rows so this file never imports the DMV bank.
+ */
+export function DmvSampleQuestions({ questions, stateName, path }: { questions: Question[]; stateName: string; path: string }) {
+  const sample = pickSampleQuestions(questions, 6);
+  if (sample.length === 0) return null;
+  const options = (q: Question) => [q.optionA, q.optionB, q.optionC, q.optionD];
+  const key = (q: Question) => Math.max(0, LETTERS.indexOf(q.correctAnswer as (typeof LETTERS)[number]));
+  const url = `${siteUrl}${path}`;
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Quiz",
+    "@id": `${url}#sample-questions`,
+    name: `${stateName} DMV permit test sample questions`,
+    about: `${stateName} DMV written knowledge test`,
+    inLanguage: "en-US",
+    educationalLevel: "beginner",
+    isAccessibleForFree: true,
+    hasPart: sample.map((q) => {
+      const opts = options(q);
+      return {
+        "@type": "Question",
+        eduQuestionType: "Multiple choice",
+        text: q.question,
+        acceptedAnswer: { "@type": "Answer", text: opts[key(q)] },
+        suggestedAnswer: opts.filter((_, i) => i !== key(q)).map((text) => ({ "@type": "Answer", text })),
+        comment: { "@type": "Comment", text: q.explanation },
+      };
+    }),
+  };
+  return (
+    <section aria-labelledby="sample-questions" className="mb-16">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <h2 id="sample-questions" className="text-3xl font-bold text-gray-900 dark:text-gray-50 text-center mb-3">
+        {stateName} permit test questions and answers
+      </h2>
+      <p className="text-gray-600 dark:text-gray-300 text-center mb-8">
+        {sample.length} of the questions on {stateName}&apos;s own laws, with the answer explained.
+      </p>
+      <ol className="space-y-5">
+        {sample.map((q, n) => (
+          <li key={q.questionId} className="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6">
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-4">
+              {n + 1}. {q.question}
+            </h3>
+            <ul className="space-y-2 mb-4">
+              {options(q).map((opt, i) => (
+                <li
+                  key={i}
+                  className={
+                    i === key(q)
+                      ? "rounded-lg border border-green-300 dark:border-green-800 bg-green-50 dark:bg-green-950 px-3 py-2 text-green-900 dark:text-green-100"
+                      : "rounded-lg border border-gray-200 dark:border-gray-800 px-3 py-2 text-gray-700 dark:text-gray-200"
+                  }
+                >
+                  <span className="font-semibold mr-2">{LETTERS[i]}.</span>
+                  {opt}
+                </li>
+              ))}
+            </ul>
+            <p className="text-gray-700 dark:text-gray-200">
+              <strong className="text-gray-900 dark:text-gray-50">Answer: {LETTERS[key(q)]}.</strong> {q.explanation}
             </p>
           </li>
         ))}

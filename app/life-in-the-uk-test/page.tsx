@@ -1,3 +1,4 @@
+import "@/lib/banks/uklitu";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -9,6 +10,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -52,7 +55,7 @@ const jsonLd = {
       url: `${siteUrl}/life-in-the-uk-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "GBP" },
+      offers: examOffers("uklitu", "GBP"),
       featureList: [
         "200 Life in the UK practice questions",
         "8 mock tests of 24 questions with the real 18 of 24 pass mark",
@@ -304,6 +307,8 @@ export default function LifeInTheUkLandingPage() {
           <ExamClassFaq examId="uklitu" />
         </div>
       </div>
+
+      <ExamSampleQuestions examId="uklitu" />
 
       <ExamRelatedTests examId="uklitu" />
 

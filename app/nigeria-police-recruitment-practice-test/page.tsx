@@ -10,6 +10,7 @@ import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import "@/lib/banks/ngpolice";
 import { SITE_URL } from "@/lib/siteUrl";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -76,7 +77,7 @@ const jsonLd = {
       url: `${siteUrl}/nigeria-police-recruitment-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "NGN" },
+      offers: examOffers("ngpolice", "NGN"),
       featureList: [
         "200 English, mathematics, reasoning and civics questions",
         "4 mock tests of 50 questions",

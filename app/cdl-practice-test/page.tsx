@@ -1,3 +1,4 @@
+import "@/lib/banks/cdl";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -8,6 +9,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -81,11 +84,7 @@ const jsonLd = {
       url: `${siteUrl}/cdl-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: {
-        "@type": "Offer",
-        price: "0",
-        priceCurrency: "USD",
-      },
+      offers: examOffers("cdl"),
       featureList: [
         "600 CDL practice questions",
         "6 practice tests weighted like the real exam",
@@ -331,6 +330,8 @@ export default function CDLLandingPage() {
           <ExamClassFaq examId="cdl" />
         </div>
       </div>
+
+      <ExamSampleQuestions examId="cdl" />
 
       <ExamRelatedTests examId="cdl" />
 

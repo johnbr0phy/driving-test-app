@@ -1,3 +1,4 @@
+import "@/lib/banks/crcst";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -8,6 +9,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -71,7 +74,7 @@ const jsonLd = {
       url: `${siteUrl}/crcst-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      offers: examOffers("crcst"),
       featureList: [
         "200 CRCST practice questions",
         "4 blueprint-weighted practice tests",
@@ -272,6 +275,8 @@ export default function CRCSTLandingPage() {
           <ExamClassFaq examId="crcst" />
         </div>
       </div>
+
+      <ExamSampleQuestions examId="crcst" />
 
       <ExamRelatedTests examId="crcst" />
 

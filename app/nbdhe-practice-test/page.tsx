@@ -1,3 +1,4 @@
+import "@/lib/banks/nbdhe";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -9,6 +10,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -75,7 +78,7 @@ const jsonLd = {
       url: `${siteUrl}/nbdhe-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      offers: examOffers("nbdhe"),
       featureList: [
         "200 NBDHE practice questions, including patient case scenarios",
         "4 mock exams of 50 questions weighted on the JCNDE test specifications",
@@ -266,6 +269,8 @@ export default function NbdheLandingPage() {
           <ExamClassFaq examId="nbdhe" />
         </div>
       </div>
+
+      <ExamSampleQuestions examId="nbdhe" />
 
       <ExamRelatedTests examId="nbdhe" />
 

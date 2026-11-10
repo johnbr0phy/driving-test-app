@@ -1,3 +1,4 @@
+import "@/lib/banks/aatl2";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -8,6 +9,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -74,7 +77,7 @@ const jsonLd = {
       url: `${siteUrl}/aat-level-2-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "GBP" },
+      offers: examOffers("aatl2", "GBP"),
       featureList: [
         "200 AAT Level 2 practice questions",
         "4 mock tests of 50 questions weighted by unit",
@@ -263,6 +266,8 @@ export default function AatLevel2LandingPage() {
           <ExamClassFaq examId="aatl2" />
         </div>
       </div>
+
+      <ExamSampleQuestions examId="aatl2" />
 
       <ExamRelatedTests examId="aatl2" />
 

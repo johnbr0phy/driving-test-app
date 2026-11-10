@@ -15,6 +15,7 @@ import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
 import { landingUpdatedAt } from "@/lib/landingDates";
 import { ORGANIZATION_ID, WEBSITE_ID } from "@/lib/siteSchema";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -89,11 +90,7 @@ const jsonLd = {
       url: pageUrl,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: {
-        "@type": "Offer",
-        price: "0",
-        priceCurrency: "USD",
-      },
+      offers: examOffers("dmv"),
       featureList: [
         "200 state-specific questions per state",
         "All 50 US states covered",

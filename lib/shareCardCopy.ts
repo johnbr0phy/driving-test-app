@@ -307,6 +307,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   phmidwife: { title: "Midwife Board Exam Reviewer", description: "Review obstetrics, health care, infant care and feeding, primary health care and R.A. 7392." },
   phpsychom: { title: "Psychometrician Board Exam Reviewer", description: "Practice developmental, abnormal and I/O psychology and psychological assessment for the PmLE." },
   phnapolcom: { title: "NAPOLCOM Exam Reviewer", description: "Practice verbal, quantitative and logical reasoning, the Constitution and PNP laws for the PNP Entrance Exam." },
+  phnat: { title: "Nursing Aptitude Test Reviewer", description: "Practice verbal ability, numerical facility, science and health information and mental ability for the Nursing Aptitude Test." },
   afpsat: { title: "AFPSAT Reviewer", description: "Practice vocabulary, grammar, numerical ability, logic, abstract reasoning and general information for the AFPSAT." },
   phcle: { title: "Criminology Board Exam Reviewer", description: "Review criminal law, law enforcement, crime detection, forensic science, criminology and corrections." },
   phinsurance: { title: "Insurance Commission Exam Reviewer", description: "Practice the Insurance Code, life policy provisions, products, underwriting and agent conduct for traditional life agents." },

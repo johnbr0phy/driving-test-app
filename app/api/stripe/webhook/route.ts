@@ -155,7 +155,7 @@ export async function POST(request: NextRequest) {
         const outcome = await sendDurableEmail({
           uid: userId, dedupeKey: `purchase/${session.id}`, emailKey: `purchaseWelcome:${session.id}`,
           payload: { to: buyer.email, subject: EMAIL_INBOX.purchaseWelcome(voiceFor(fulfillment?.examId)).subject,
-            replyTo: process.env.EMAIL_REPLY_TO ?? 'john@johnbrophy.net',
+            replyTo: process.env.EMAIL_REPLY_TO ?? 'john@tigertest.io',
             html: EMAIL_TEMPLATES.purchaseWelcome(voiceFor(fulfillment?.examId)), kind: 'transactional' },
           retryPolicy: makePurchaseRetryPolicy((await userRef.get()).data()?.subscription),
           eligible: data => data.subscription?.isPremium === true,

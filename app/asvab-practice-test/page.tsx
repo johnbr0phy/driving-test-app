@@ -102,7 +102,7 @@ const jsonLd = {
           name: "Is the Tigertest ASVAB practice test free?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. The full CAT-ASVAB simulation and all eight drills are free, with no account required. Create a free account to keep your progress in step between your phone and your computer.",
+            text: "It is free to start, with no account required. The full practice test and every drill but the last are free; the final drill is part of Tigertest Premium, one payment with no subscription. Create a free account to keep your progress in step between your phone and your computer.",
           },
         },
         classFaqJsonLd("asvab"),
@@ -298,7 +298,7 @@ export default function AsvabLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is the Tigertest ASVAB practice test free?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              Yes. The full CAT-ASVAB simulation and all eight drills are free, with no account required. Create a free account to keep your progress in step between your phone and your computer.
+              It is free to start, with no account required. The full practice test and every drill but the last are free; the final drill is part of Tigertest Premium, one payment with no subscription. Create a free account to keep your progress in step between your phone and your computer.
             </p>
           </div>
           <ExamClassFaq examId="asvab" />

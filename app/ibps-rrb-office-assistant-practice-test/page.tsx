@@ -36,7 +36,7 @@ const faqs = [
   },
   {
     q: "Are these the real IBPS RRB questions?",
-    a: "No. These are original practice questions written to the IBPS RRB Office Assistant Prelims pattern, not questions from IBPS or past papers. They follow the real paper's question types: puzzles, seating arrangements, inequalities, syllogisms, coding-decoding, blood relations, directions and ranking in Reasoning; simplification, approximation, number series, data interpretation and arithmetic in Numerical Ability. The questions are in English only, though the real exam can also be taken in Hindi and the state's language. Both mock tests and all seven drills are free, with no account required.",
+    a: "No. These are original practice questions written to the IBPS RRB Office Assistant Prelims pattern, not questions from IBPS or past papers. They follow the real paper's question types: puzzles, seating arrangements, inequalities, syllogisms, coding-decoding, blood relations, directions and ranking in Reasoning; simplification, approximation, number series, data interpretation and arithmetic in Numerical Ability. The questions are in English only, though the real exam can also be taken in Hindi and the state's language. It is free to start, with no account required. Practice Test 1 and every drill but the last are free; the final drill and the final practice test are part of Tigertest Premium, one payment with no subscription.",
   },
 ];
 

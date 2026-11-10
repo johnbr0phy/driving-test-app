@@ -433,7 +433,11 @@ const v2Entry = (exam: ExamV2Config): TestCatalogEntry => ({
     : {}),
   // Exams with a Premium tier say so on their hub card; the rest read "Free".
   ...(exam.premium
-    ? { pricing: `${exam.tests.length - exam.premium.lockedTests.length} free, ${exam.premium.lockedTests.length} premium` }
+    ? {
+        pricing: exam.premium.lockedTests.length
+          ? `${exam.tests.length - exam.premium.lockedTests.length} free, ${exam.premium.lockedTests.length} premium`
+          : `${exam.drills.length - exam.premium.lockedDrills.length} drills free, ${exam.premium.lockedDrills.length} premium`,
+      }
     : {}),
 });
 

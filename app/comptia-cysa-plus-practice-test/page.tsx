@@ -40,7 +40,7 @@ const faqs = [
   },
   {
     q: "Is the Tigertest CySA+ practice test free?",
-    a: "Yes. Both practice tests and all eight drills are free, with no account required. Create a free account if you want your progress saved across devices.",
+    a: "It is free to start, with no account required. Practice Test 1 and every drill but the last are free; the final drill and the final practice test are part of Tigertest Premium, one payment with no subscription. Create a free account if you want your progress saved across devices.",
   },
 ];
 

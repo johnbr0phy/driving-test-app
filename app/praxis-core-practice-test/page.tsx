@@ -36,7 +36,7 @@ const faqs = [
   },
   {
     q: "Is the Tigertest Praxis Core practice test free?",
-    a: "Yes. Both practice tests, all seven drills, the basics lessons and every explanation are free, with no account required. A free account saves your progress across your phone and computer.",
+    a: "It is free to start, with no account required. Practice Test 1 and every drill but the last are free; the final drill and the final practice test are part of Tigertest Premium, one payment with no subscription. A free account saves your progress across your phone and computer.",
   },
 ];
 

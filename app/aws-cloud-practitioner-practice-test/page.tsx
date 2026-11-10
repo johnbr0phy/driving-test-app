@@ -102,7 +102,7 @@ const jsonLd = {
           name: "Is the Tigertest AWS practice test free?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. Both practice tests and all four drills are free, with no account required. Create a free account if you want your progress saved across devices.",
+            text: "It is free to start, with no account required. Practice Test 1 and every drill but the last are free; the final drill and the final practice test are part of Tigertest Premium, one payment with no subscription. Create a free account if you want your progress saved across devices.",
           },
         },
         classFaqJsonLd("aws"),
@@ -294,7 +294,7 @@ export default function AwsLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is the Tigertest AWS practice test free?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              Yes. Both practice tests and all four drills are free, with no account required. Create a free account if you want your progress saved across devices.
+              It is free to start, with no account required. Practice Test 1 and every drill but the last are free; the final drill and the final practice test are part of Tigertest Premium, one payment with no subscription. Create a free account if you want your progress saved across devices.
             </p>
           </div>
           <ExamClassFaq examId="aws" />

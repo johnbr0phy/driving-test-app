@@ -9,7 +9,7 @@ import { sessionKey } from "@/lib/v2/session";
 import { isTestLocked, otherPremiumExams } from "@/lib/v2/premium";
 import { useV2Store, resultsForExam } from "@/store/useV2Store";
 import { useHydration } from "@/hooks/useHydration";
-import { useIsPremium } from "@/hooks/useIsPremium";
+import { useV2Premium } from "@/hooks/useV2Premium";
 import { useIsNativeApp } from "@/hooks/useIsNativeApp";
 import { getTigerAsset } from "@/lib/tigerAssets";
 import { useV2Paywall, V2Paywall } from "./V2Paywall";
@@ -31,7 +31,7 @@ export function V2TestGate({
 }) {
   const price = usePremiumPrice();
   const hydrated = useHydration();
-  const { isPremium, ready } = useIsPremium();
+  const { isPremium, ready } = useV2Premium(exam.id);
   const session = useV2Store((s) => s.sessions[sessionKey(exam.id, testNumber)]);
   const sat = useV2Store((s) => resultsForExam(s.results, exam.id).some((r) => r.testNumber === testNumber));
   const paywall = useV2Paywall(exam, "test");
@@ -53,8 +53,9 @@ export function V2TestGate({
           <Lock className="h-5 w-5 text-gray-500 dark:text-gray-400" /> {exam.shortName} {test?.name ?? `Practice Test ${testNumber}`}
         </h1>
         <p className="mt-2 text-gray-600 dark:text-gray-300">
-          This test never appears in the drills, so it shows how ready you really are. It&apos;s part of Tigertest
-          Premium, along with every drill question and {otherPremiumExams(exam)}.
+          {test?.heldOut ? "This test never appears in the drills, so it shows how ready you really are. " : ""}
+          It&apos;s part of Tigertest Premium, one payment with no subscription, along with the final drill and{" "}
+          {otherPremiumExams(exam)}.
         </p>
         <button
           type="button"

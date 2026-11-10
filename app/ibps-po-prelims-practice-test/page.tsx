@@ -36,7 +36,7 @@ const faqs = [
   },
   {
     q: "Are these the real IBPS PO questions?",
-    a: "No. These are original practice questions written to the IBPS PO Prelims pattern and syllabus, not questions from IBPS or past papers. They follow the real paper's question types: reading comprehension, cloze tests and error spotting; simplification, number series, quadratic equations, data interpretation and arithmetic; and inequalities, syllogisms, puzzles, seating arrangements, coding, blood relations and directions. Both mock tests and all nine drills are free, with no account required.",
+    a: "No. These are original practice questions written to the IBPS PO Prelims pattern and syllabus, not questions from IBPS or past papers. They follow the real paper's question types: reading comprehension, cloze tests and error spotting; simplification, number series, quadratic equations, data interpretation and arithmetic; and inequalities, syllogisms, puzzles, seating arrangements, coding, blood relations and directions. It is free to start, with no account required. Practice Test 1 and every drill but the last are free; the final drill and the final practice test are part of Tigertest Premium, one payment with no subscription.",
   },
 ];
 

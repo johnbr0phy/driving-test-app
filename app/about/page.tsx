@@ -97,8 +97,8 @@ export default function AboutPage() {
             <ul className={`${p} mt-4 list-disc pl-6 space-y-2`}>
               <li>
                 <strong>Free:</strong> the first two DMV tests and training sets, every training set and practice test
-                but the last on the other licence, certification and driving exams, and all of the SAT, ACT, GED, NCLEX
-                and the other sectioned, timed exams.
+                but the last on the other licence, certification and driving exams, and all of the SAT, ACT, AP, GED, GCSE
+                and every other school, college-entrance and children&apos;s test.
               </li>
               <li>
                 <strong>Premium:</strong> the last two DMV tests and training sets, the final training set and final

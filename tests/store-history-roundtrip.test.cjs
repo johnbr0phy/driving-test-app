@@ -163,3 +163,21 @@ test('answers given while saves fail are not lost: the next save carries them al
   assert.deepEqual(Object.keys(docs.get(PATH).currentTests['1'].answers).length, 10);
   assert.equal(useStore.getState().syncFailures, 0, 'cleared by the save that worked');
 });
+
+test('an older save that lands late never replaces a newer one', async () => {
+  docs.clear();
+  docs.set(PATH, { selectedState: 'CA', completedTests: [] });
+  const { useStore } = await signIn();
+  const questions = universal.slice(0, 50).map(shuffleQuestionOptions);
+  useStore.getState().startTest(1, questions);
+  await new Promise((r) => setTimeout(r, 30));
+  // Two snapshots, written out of order as a stalled or page-hide save can be.
+  useStore.getState().setAnswer(1, 0, 'A');
+  const older = useStore.getState();
+  useStore.getState().setAnswer(1, 1, 'B');
+  const newer = useStore.getState();
+  await new Promise((r) => setTimeout(r, 30)); // the queue's own saves finish
+  await useStore.getState().writeSnapshot(newer, 1_000_002);
+  await useStore.getState().writeSnapshot(older, 1_000_001);
+  assert.deepEqual(docs.get(PATH).currentTests['1'].answers, { 0: 'A', 1: 'B' });
+});

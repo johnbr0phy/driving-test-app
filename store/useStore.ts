@@ -230,7 +230,7 @@ interface AppState {
   checkUserHasData: (userId: string) => Promise<boolean>;
   saveToFirestore: () => Promise<void>;
   /** The write behind saveToFirestore. Call saveToFirestore, which queues it. */
-  writeSnapshot: (snapshot: AppState) => Promise<void>;
+  writeSnapshot: (snapshot: AppState, seq: number) => Promise<void>;
   resetAllData: () => void;
   /** Delete one test's progress: "dmv" (state choice included) or a registry exam family id. */
   resetExamData: (examId: string) => void;
@@ -320,8 +320,15 @@ function storedCompletedTests(completedTests: TestSession[]): unknown[] {
 
 // The save queue (see saveToFirestore and lib/saveQueue.ts).
 // The writer is attached below the store, which it belongs to.
-let writeAccount: (snapshot: AppState) => Promise<void> = async () => {};
-const saveQueue = createSaveQueue<AppState>((snapshot) => writeAccount(snapshot));
+// Snapshots are numbered in the order they were taken. Two saves can still be
+// in flight together (a stalled one, or one started as the page is hidden), and
+// a transaction that loses a race is re-run by Firestore: before it writes, it
+// checks that no newer snapshot from this page has already been saved.
+interface NumberedSnapshot { state: AppState; seq: number }
+let snapshotSeq = 0;
+let savedSeq = 0;
+let writeAccount: (snapshot: AppState, seq: number) => Promise<void> = async () => {};
+const saveQueue = createSaveQueue<NumberedSnapshot>(({ state, seq }) => writeAccount(state, seq));
 
 /** Resolves once every save asked for so far has finished (or `ms` passed):
  *  sign-out waits on it so the last answers reach the account first. */
@@ -1156,10 +1163,10 @@ export const useStore = create<AppState>()(
         // Never write an account this store has not loaded: it would replace
         // the saved progress with whatever this browser holds.
         if (snapshot.loadedUid !== snapshot.userId) return Promise.resolve();
-        return saveQueue.push(snapshot);
+        return saveQueue.push({ state: snapshot, seq: ++snapshotSeq });
       },
 
-      writeSnapshot: async (snapshot: AppState) => {
+      writeSnapshot: async (snapshot: AppState, seq: number) => {
         const { userId, selectedState, currentTests, completedTests, testAttempts, training, trainingSets, trainingAnswerHistory, activeDates, photoURL, language, languageChosen, testLanguages, emailConsent, superAmazing, superAmazingUnlockedAt, superAmazingUnlocks, primaryExam, primaryExamAt, region, regionAt, examStates, startedExams } = snapshot;
         if (!userId) return;
 
@@ -1273,9 +1280,13 @@ export const useStore = create<AppState>()(
           await runTransaction(db, async (transaction) => {
             const remote = await transaction.get(userRef);
             assertMcpProgressRevision(userId, 'catalog', remote.data());
+            // A newer snapshot from this page is already on the account: this
+            // one is older and must not replace it.
+            if (seq < savedSeq) return;
             if (remote.exists()) transaction.update(userRef, payload);
             else transaction.set(userRef, { ...payload, createdAt: new Date().toISOString() }, { merge: true });
           });
+          savedSeq = Math.max(savedSeq, seq);
           if (get().userId === userId && get().syncFailures !== 0) set({ syncFailures: 0 });
         } catch (error) {
           console.error('Error saving to Firestore:', error);
@@ -1515,4 +1526,4 @@ export const useStore = create<AppState>()(
   )
 );
 
-writeAccount = (snapshot) => useStore.getState().writeSnapshot(snapshot);
+writeAccount = (snapshot, seq) => useStore.getState().writeSnapshot(snapshot, seq);

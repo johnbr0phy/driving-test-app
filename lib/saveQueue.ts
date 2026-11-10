@@ -18,7 +18,9 @@ export interface SaveQueue<T> {
 
 // A write that has not settled after this long no longer holds the queue. It
 // may still finish; the next save simply stops waiting for it, which is what
-// every save did before there was a queue.
+// every save did before there was a queue. Then, and after kick(), two writes
+// can be in flight at once: the writer itself must refuse to land an older
+// snapshot over a newer one (the store numbers its snapshots for this).
 export const SAVE_STALL_MS = 20_000;
 
 export function createSaveQueue<T>(write: (snapshot: T) => Promise<void>, stallMs: number = SAVE_STALL_MS): SaveQueue<T> {
@@ -26,14 +28,19 @@ export function createSaveQueue<T>(write: (snapshot: T) => Promise<void>, stallM
   let queued = false;
   let pending: { snapshot: T } | null = null;
 
-  // Never rejects, and never waits longer than stallMs.
+  // Starts the write now (not a tick later: the page may be closing). Never
+  // rejects, and never waits longer than stallMs.
   const run = (snapshot: T): Promise<void> => {
-    const done = Promise.resolve()
-      .then(() => write(snapshot))
-      .catch((error) => {
-        // A failed save must not stop the ones after it.
-        console.error("Save failed:", error);
-      });
+    let started: Promise<void>;
+    try {
+      started = Promise.resolve(write(snapshot));
+    } catch (error) {
+      started = Promise.reject(error);
+    }
+    const done = started.catch((error) => {
+      // A failed save must not stop the ones after it.
+      console.error("Save failed:", error);
+    });
     let timer: ReturnType<typeof setTimeout> | undefined;
     const stalled = new Promise<void>((resolve) => {
       timer = setTimeout(resolve, stallMs);
@@ -59,7 +66,10 @@ export function createSaveQueue<T>(write: (snapshot: T) => Promise<void>, stallM
     kick() {
       const next = pending;
       pending = null;
-      if (next) void run(next.snapshot);
+      if (!next) return;
+      const kicked = run(next.snapshot);
+      // Anyone waiting on the queue waits for this write too.
+      chain = Promise.all([chain, kicked]).then(() => undefined);
     },
   };
 }

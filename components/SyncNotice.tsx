@@ -11,7 +11,9 @@ const SHOW_AFTER = 3;
  * Tells a signed-in person when their progress is not reaching their account
  * (mounted once in the root layout). Saves used to fail without a word, so
  * someone could practise for days on one device and find none of it on
- * another. Their progress is still on this device; "Try again" saves it now.
+ * another. It asks them to keep the page open: what this page holds is the only
+ * copy, and the next load of the account replaces it. "Try again" saves it now.
+ * At the top, clear of the answer and Next bars at the bottom of a test.
  */
 export function SyncNotice() {
   const { t } = useTranslation();
@@ -24,7 +26,7 @@ export function SyncNotice() {
   return (
     <div
       role="status"
-      className="fixed bottom-4 left-4 right-4 z-50 mx-auto flex max-w-md items-center gap-3 rounded-xl border border-amber-300 bg-amber-50 px-4 py-3 text-sm text-amber-900 shadow-lg dark:border-amber-700 dark:bg-amber-950 dark:text-amber-100"
+      className="fixed top-4 left-4 right-4 z-50 mx-auto flex max-w-md items-center gap-3 rounded-xl border border-amber-300 bg-amber-50 px-4 py-3 text-sm text-amber-900 shadow-lg dark:border-amber-700 dark:bg-amber-950 dark:text-amber-100"
     >
       <p className="flex-1">{t("common.syncFailed")}</p>
       <button

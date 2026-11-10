@@ -210,7 +210,7 @@ test('shared notice is persistent, account-filtered and warns about unsynced wor
 test('catalog snapshot writes use an atomic revision check and load the account language', () => {
   const source = readFileSync('store/useStore.ts', 'utf8');
   // saveToFirestore queues; writeSnapshot is the write itself.
-  const save = source.slice(source.indexOf('writeSnapshot: async (snapshot: AppState) =>'), source.indexOf('resetAllData: () =>', source.indexOf('writeSnapshot: async (snapshot: AppState) =>')));
+  const save = source.slice(source.indexOf('writeSnapshot: async (snapshot: AppState, seq: number) =>'), source.indexOf('resetAllData: () =>', source.indexOf('writeSnapshot: async (snapshot: AppState, seq: number) =>')));
   assert.match(save, /completedTests: storedCompletedTests\(completedTests\)/);
   assert.match(source, /function storedCompletedTests[\s\S]{0,900}compactCompletedTests\(/);
   assert.match(save, /runTransaction\(db, async \(transaction\)/);

@@ -102,8 +102,23 @@ function permutationOf(q: QuestionLike, ref: QuestionLike): string | null {
   return p;
 }
 
+/** Only values that survive storage unchanged: no NaN, Date or class instance. */
+function isPlain(value: unknown): boolean {
+  if (value === null || typeof value === "string" || typeof value === "boolean") return true;
+  if (typeof value === "number") return Number.isFinite(value);
+  if (Array.isArray(value)) return value.every(isPlain);
+  if (typeof value === "object") {
+    const proto = Object.getPrototypeOf(value);
+    if (proto !== Object.prototype && proto !== null) return false;
+    return Object.values(value as object).every((v) => v === undefined || isPlain(v));
+  }
+  return value === undefined;
+}
+
 function slimOf(q: QuestionLike, ref: QuestionLike): SlimQuestion | null {
   if (typeof q.questionId !== "string" || q.questionId !== ref.questionId) return null;
+  // Equality below is judged on the JSON form, so only JSON-exact values qualify.
+  if (!isPlain(q) || !isPlain(ref)) return null;
   const p = permutationOf(q, ref);
   if (!p) return null;
   const base = permute(ref, p);
@@ -128,10 +143,29 @@ const questionsOf = (s: SessionLike): QuestionLike[] => (Array.isArray(s.questio
 const groupKey = (s: SessionLike) => `${String(s.state)}|${String(s.testNumber)}`;
 const hasSlim = (s: SessionLike) => questionsOf(s).some(isSlimQuestion);
 
+/** At least this share of an attempt's questions must become pointers for it
+ *  to point at another attempt; otherwise it stays whole and others may point at it. */
+const MIN_SHARE = 0.5;
+
+function slimAgainst(s: SessionLike, ref: SessionLike): { questions: unknown[]; slimmed: number } {
+  const refById = new Map(questionsOf(ref).map((q) => [q.questionId, q]));
+  let slimmed = 0;
+  const questions = questionsOf(s).map((q) => {
+    const target = q && typeof q.questionId === "string" ? refById.get(q.questionId) : undefined;
+    const slim = target ? slimOf(q, target) : null;
+    if (slim) slimmed++;
+    return slim ?? q;
+  });
+  return { questions, slimmed };
+}
+
 /**
- * The copy of completedTests to store: older attempts of a test point at its
- * latest attempt. The input is not changed. Array order (oldest first) and
- * every other field of every session are kept as they are.
+ * The copy of completedTests to store. Within each test, working back from the
+ * newest attempt: an attempt whose questions can be rebuilt from a newer whole
+ * attempt points at it; one that cannot (first of its test, another language,
+ * the bank changed since) stays whole and becomes something older attempts can
+ * point at. The input is not changed. Array order (oldest first) and every
+ * other field of every session are kept as they are.
  */
 export function compactCompletedTests<T>(tests: T[]): T[] {
   if (!Array.isArray(tests) || tests.length < 2) return tests;
@@ -142,34 +176,41 @@ export function compactCompletedTests<T>(tests: T[]): T[] {
   for (const s of sessions) {
     if (typeof s?.id === "string") idCount.set(s.id, (idCount.get(s.id) ?? 0) + 1);
   }
+  const canBePointedAt = (s: SessionLike) =>
+    typeof s.id === "string" && idCount.get(s.id) === 1 && questionsOf(s).length > 0 && !hasSlim(s);
 
-  // The latest attempt of each test that holds every question in full.
-  const reference = new Map<string, SessionLike>();
-  for (const s of sessions) {
-    if (!s || typeof s.id !== "string" || idCount.get(s.id) !== 1) continue;
-    if (questionsOf(s).length === 0 || hasSlim(s)) continue;
-    reference.set(groupKey(s), s);
-  }
-  // A session other attempts already point at must stay in full.
+  // A session something already points at must stay whole.
   const pointedAt = new Set<string>();
   for (const s of sessions) {
     if (s && hasSlim(s) && typeof s.qref === "string") pointedAt.add(s.qref);
   }
 
-  return sessions.map((s) => {
-    if (!s || hasSlim(s)) return s;
-    const ref = reference.get(groupKey(s));
-    if (!ref || ref === s || (typeof s.id === "string" && pointedAt.has(s.id))) return s;
-    const refById = new Map(questionsOf(ref).map((q) => [q.questionId, q]));
-    let slimmed = 0;
-    const questions = questionsOf(s).map((q) => {
-      const target = q && typeof q.questionId === "string" ? refById.get(q.questionId) : undefined;
-      const slim = target ? slimOf(q, target) : null;
-      if (slim) slimmed++;
-      return slim ?? q;
-    });
-    return slimmed > 0 ? { ...s, questions, qref: ref.id } : s;
-  }) as unknown as T[];
+  const out = sessions.slice();
+  const anchors = new Map<string, SessionLike[]>(); // per test, newest first
+  for (let i = sessions.length - 1; i >= 0; i--) {
+    const s = sessions[i];
+    // Left exactly as they are: already holding pointers, or carrying a qref of their own.
+    if (!s || typeof s !== "object" || hasSlim(s) || "qref" in s) continue;
+    const key = groupKey(s);
+    const list = anchors.get(key) ?? [];
+    const total = questionsOf(s).length;
+    let pointed = false;
+    if (total > 0 && !(typeof s.id === "string" && pointedAt.has(s.id))) {
+      for (const ref of list) {
+        const { questions, slimmed } = slimAgainst(s, ref);
+        if (slimmed >= total * MIN_SHARE) {
+          out[i] = { ...s, questions, qref: ref.id };
+          pointed = true;
+          break;
+        }
+      }
+    }
+    if (!pointed && canBePointedAt(s)) {
+      list.push(s);
+      anchors.set(key, list);
+    }
+  }
+  return out as unknown as T[];
 }
 
 /**

@@ -288,6 +288,36 @@ interface AppState {
   markAccountLoaded: (userId: string) => void;
 }
 
+// completedTests as it is written to the account: dates as ISO strings, and
+// older attempts of a test pointing at its latest one instead of repeating its
+// 50 questions (lib/testHistoryCompact.ts; nothing is dropped). The array only
+// changes when a test is finished, and every answer saves, so the result is
+// kept per array.
+let storedTestsCache: { source: TestSession[]; sessions: TestSession[]; stored: unknown[] } | null = null;
+function storedCompletedTests(completedTests: TestSession[]): unknown[] {
+  // Reused only for the very same array holding the very same sessions.
+  const hit = storedTestsCache;
+  if (
+    hit &&
+    hit.source === completedTests &&
+    hit.sessions.length === completedTests.length &&
+    hit.sessions.every((session, i) => session === completedTests[i])
+  ) {
+    return hit.stored;
+  }
+  const stored = compactCompletedTests(completedTests.map(test => ({
+    ...test,
+    startedAt: test.startedAt instanceof Date ? test.startedAt.toISOString() : test.startedAt,
+    completedAt: test.completedAt instanceof Date ? test.completedAt.toISOString() : test.completedAt,
+    answers: test.answers.map(a => ({
+      ...a,
+      answeredAt: a.answeredAt instanceof Date ? a.answeredAt.toISOString() : a.answeredAt,
+    })),
+  })));
+  storedTestsCache = { source: completedTests, sessions: [...completedTests], stored };
+  return stored;
+}
+
 // The save queue (see saveToFirestore and lib/saveQueue.ts).
 // The writer is attached below the store, which it belongs to.
 let writeAccount: (snapshot: AppState) => Promise<void> = async () => {};
@@ -295,6 +325,15 @@ const saveQueue = createSaveQueue<AppState>((snapshot) => writeAccount(snapshot)
 
 /** Resolves once every save asked for so far has finished (or `ms` passed):
  *  sign-out waits on it so the last answers reach the account first. */
+// A save waiting behind one in flight would be lost with the page: when the
+// page is hidden or left, start it at once (what every save did before the queue).
+if (typeof window !== 'undefined') {
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'hidden') saveQueue.kick();
+  });
+  window.addEventListener('pagehide', () => saveQueue.kick());
+}
+
 export function flushPendingSaves(ms = 4000): Promise<void> {
   return Promise.race([saveQueue.idle(), new Promise<void>((resolve) => setTimeout(resolve, ms))]);
 }
@@ -994,7 +1033,11 @@ export const useStore = create<AppState>()(
           captureMcpProgressRevision(userId, 'catalog', userDoc.data());
           if (userDoc.exists()) {
             // Old ids of exams that moved (ASWB Clinical shared K53 Code 3's block).
-            const raw = userDoc.data();
+            const stored = userDoc.data();
+            // Older attempts are stored as pointers to the latest one
+            // (lib/testHistoryCompact.ts). Rebuild them first, so everything
+            // after this line, the id moves included, sees whole sessions.
+            const raw = { ...stored, completedTests: expandCompletedTests(stored.completedTests || []) } as typeof stored;
             const data = applyLegacyIdMoves(raw);
             movedLegacyIds = data !== raw;
             set({
@@ -1006,8 +1049,7 @@ export const useStore = create<AppState>()(
                 : {}),
               testLanguages: { ...get().testLanguages, ...(data.testLanguages && typeof data.testLanguages === 'object' ? data.testLanguages : {}) },
               currentTests: data.currentTests || {},
-              // Older attempts are stored as pointers to the latest one (lib/testHistoryCompact.ts).
-              completedTests: expandCompletedTests(data.completedTests || []),
+              completedTests: data.completedTests || [],
               testAttempts: data.testAttempts || [],
               training: {
                 questionsAnswered: data.training?.questionsAnswered || [],
@@ -1204,15 +1246,7 @@ export const useStore = create<AppState>()(
             // Older attempts of a test point at its latest one instead of
             // repeating its 50 questions (lib/testHistoryCompact.ts): nothing
             // is dropped, and the document stays far from Firestore's 1 MiB limit.
-            completedTests: compactCompletedTests(completedTests.map(test => ({
-              ...test,
-              startedAt: test.startedAt instanceof Date ? test.startedAt.toISOString() : test.startedAt,
-              completedAt: test.completedAt instanceof Date ? test.completedAt.toISOString() : test.completedAt,
-              answers: test.answers.map(a => ({
-                ...a,
-                answeredAt: a.answeredAt instanceof Date ? a.answeredAt.toISOString() : a.answeredAt,
-              })),
-            }))),
+            completedTests: storedCompletedTests(completedTests),
             testAttempts: testAttempts.map(attempt => ({
               ...attempt,
               lastAttemptDate: attempt.lastAttemptDate instanceof Date ? attempt.lastAttemptDate.toISOString() : attempt.lastAttemptDate,

@@ -51,3 +51,44 @@ test('a failed save does not stop the next one', async () => {
   await queue.idle();
   assert.deepEqual(written, ['good']);
 });
+
+test('a save that never settles stops holding the queue', async () => {
+  const written = [];
+  const queue = createSaveQueue(async (n) => {
+    if (n === 'stuck') return new Promise(() => {});
+    written.push(n);
+  }, 30);
+  queue.push('stuck');
+  await tick(1);
+  await queue.push('after');
+  assert.deepEqual(written, ['after']);
+});
+
+test('kick starts the waiting save at once, and it is not written twice', async () => {
+  const started = [];
+  let release;
+  const queue = createSaveQueue(async (n) => {
+    started.push(n);
+    if (n === 1) await new Promise((r) => (release = r));
+  });
+  queue.push(1);
+  await tick(1);
+  queue.push(2); // waits behind 1
+  assert.deepEqual(started, [1]);
+  queue.kick(); // the page is going away
+  await tick(1);
+  assert.deepEqual(started, [1, 2]);
+  release();
+  await queue.idle();
+  assert.deepEqual(started, [1, 2]);
+  queue.kick(); // nothing waiting: nothing happens
+  assert.deepEqual(started, [1, 2]);
+});
+
+test('a snapshot that is null or undefined is still saved', async () => {
+  const written = [];
+  const queue = createSaveQueue(async (n) => written.push(n));
+  await queue.push(0);
+  await queue.push('');
+  assert.deepEqual(written, [0, '']);
+});

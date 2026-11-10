@@ -77,9 +77,14 @@ function permute(ref: QuestionLike, p: string): QuestionLike {
 }
 
 function rebuild(slim: SlimQuestion, ref: QuestionLike): QuestionLike {
-  const out = permute(ref, slim.p);
+  const out = { ...permute(ref, slim.p), ...(slim.d ?? {}) };
   for (const key of slim.x ?? []) delete out[key];
-  return { ...out, ...(slim.d ?? {}) };
+  // Firestore refuses a field set to undefined, and this object may be written
+  // in full again one day: an absent field must stay absent.
+  for (const key of Object.keys(out)) {
+    if (out[key] === undefined) delete out[key];
+  }
+  return out;
 }
 
 /** Where each of `q`'s options sits in `ref`, or null when they are not the same four. */

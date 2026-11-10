@@ -211,7 +211,8 @@ test('catalog snapshot writes use an atomic revision check and load the account 
   const source = readFileSync('store/useStore.ts', 'utf8');
   // saveToFirestore queues; writeSnapshot is the write itself.
   const save = source.slice(source.indexOf('writeSnapshot: async (snapshot: AppState) =>'), source.indexOf('resetAllData: () =>', source.indexOf('writeSnapshot: async (snapshot: AppState) =>')));
-  assert.match(save, /completedTests: compactCompletedTests\(/);
+  assert.match(save, /completedTests: storedCompletedTests\(completedTests\)/);
+  assert.match(source, /function storedCompletedTests[\s\S]{0,900}compactCompletedTests\(/);
   assert.match(save, /runTransaction\(db, async \(transaction\)/);
   assert.ok(save.indexOf("assertMcpProgressRevision(userId, 'catalog', remote.data())") < save.indexOf('transaction.update(userRef, payload)'));
   assert.doesNotMatch(save, /await updateDoc\(userRef, payload\)|await setDoc/);

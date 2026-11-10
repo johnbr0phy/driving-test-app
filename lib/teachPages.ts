@@ -7,7 +7,7 @@
 import { TEACHES } from "@/components/exam/ExamClassFaq";
 import { TEST_CATALOG, TestCatalogEntry } from "./testCatalog";
 
-const slugOf = (t: TestCatalogEntry) => t.dashboardHref.replace(/\/dashboard$/, "").replace(/^\//, "").replace(/^dmv$/, "dmv");
+const slugOf = (t: TestCatalogEntry) => t.dashboardHref.replace(/\/dashboard$/, "").replace(/^\//, "");
 
 export function teachPageTests(): TestCatalogEntry[] {
   return TEST_CATALOG.filter((t) => t.id !== "dmv" && TEACHES[t.id] && (t.language ?? "en") === "en");

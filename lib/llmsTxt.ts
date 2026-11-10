@@ -6,6 +6,7 @@ import { TEST_CATALOG, TEST_GROUPS, getCatalogEntry, type TestCatalogEntry } fro
 import { NON_DRIVING_TESTS, REGIONS, regionHomePath, regionOfTest } from "./region";
 import { SITE_URL } from "@/lib/siteUrl";
 import { FAMILY_TERMS, STATE_FAMILIES, stateLandingPath, stateVariants } from "./stateLandings";
+import { examTopics, topicExams, topicPath } from "./topicPages";
 
 // /llms.txt and /llms-full.txt (https://llmstxt.org), built from the test
 // catalog, the exam facts and the state data, so a new exam or a changed
@@ -122,6 +123,15 @@ function stateExamSection(): string {
   return `## State exams: real estate and insurance\n\nEach state version has its own questions on that state's law, free to start; the final training set is part of Premium.\n\n${blocks.join("\n\n")}`;
 }
 
+/** Topic question pages (lib/topicPages.ts): ten questions with answers per content area. */
+function topicSection(): string {
+  const lines = topicExams().map((exam) => {
+    const topics = examTopics(exam);
+    return `- ${exam.shortName}: ${topics.map((t) => `[${t.label}](${siteUrl}${topicPath(exam, t)})`).join(", ")}`;
+  });
+  return `## Practice questions by topic\n\nEach page shows ten original questions on one content area of an exam, with the answer and explanation in plain text.\n\n${lines.join("\n")}`;
+}
+
 export function renderLlmsTxt(): string {
   const groups = nonDmvGroups()
     .map((g) => `### ${g.title}\n\n${g.tests.map(examLine).join("\n")}`)
@@ -132,6 +142,7 @@ export function renderLlmsTxt(): string {
     countrySection(),
     `## Other practice tests\n\nAll tests: ${siteUrl}/tests\n\n${groups}`,
     stateExamSection(),
+    topicSection(),
     translatedSection(),
     TEACH_SECTION,
     QUIZ_SECTION,
@@ -181,6 +192,7 @@ export function renderLlmsFullTxt(): string {
     `### DMV written test by state\n\nFormat of each state's written knowledge (permit) test. "Online test" is whether the state lets you take it online. Confirm with your state's agency before test day.\n\n${stateTable()}`,
     exams,
     stateExamSection(),
+    topicSection(),
     translatedSection(),
     TEACH_SECTION,
     QUIZ_SECTION,

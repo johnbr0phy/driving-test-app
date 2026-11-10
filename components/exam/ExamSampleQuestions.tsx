@@ -318,3 +318,66 @@ export function DmvSampleQuestions({ questions, stateName, path }: { questions: 
     </section>
   );
 }
+
+/** Keys spread over A to D (options turned, order kept), for any list shown in full. */
+export function spreadSampleKeys(list: Question[]): Question[] {
+  return list.map((q, n) => (hasPositionDependentAnswers(q) ? q : rotateKeyTo(q, KEY_SPREAD[n % KEY_SPREAD.length])));
+}
+
+/** Question cards with the answer marked and explained; `note` adds a line per question (a miss rate). */
+export function SampleQuestionCards({ sample, note }: { sample: Question[]; note?: (q: Question) => string | undefined }) {
+  const options = (q: Question) => [q.optionA, q.optionB, q.optionC, q.optionD];
+  const key = (q: Question) => Math.max(0, LETTERS.indexOf(q.correctAnswer as (typeof LETTERS)[number]));
+  return (
+    <ol className="space-y-6">
+      {sample.map((q, n) => (
+        <li key={q.questionId} className="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6">
+          {note?.(q) && <p className="mb-2 text-sm font-semibold text-brand-dark">{note(q)}</p>}
+          <h2 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-4">
+            {n + 1}. {q.question}
+          </h2>
+          <ul className="space-y-2 mb-4">
+            {options(q).map((opt, i) => (
+              <li
+                key={i}
+                className={
+                  i === key(q)
+                    ? "rounded-lg border border-green-300 dark:border-green-800 bg-green-50 dark:bg-green-950 px-3 py-2 text-green-900 dark:text-green-100"
+                    : "rounded-lg border border-gray-200 dark:border-gray-800 px-3 py-2 text-gray-700 dark:text-gray-200"
+                }
+              >
+                <span className="font-semibold mr-2">{LETTERS[i]}.</span>
+                {opt}
+              </li>
+            ))}
+          </ul>
+          <p className="text-gray-700 dark:text-gray-200">
+            <strong className="text-gray-900 dark:text-gray-50">Answer: {LETTERS[key(q)]}.</strong> {q.explanation}
+          </p>
+        </li>
+      ))}
+    </ol>
+  );
+}
+
+/** A Quiz node for any list of questions shown with answers. */
+export function quizJsonLd(url: string, name: string, about: string, sample: Question[]) {
+  const options = (q: Question) => [q.optionA, q.optionB, q.optionC, q.optionD];
+  const key = (q: Question) => Math.max(0, LETTERS.indexOf(q.correctAnswer as (typeof LETTERS)[number]));
+  return {
+    "@type": "Quiz",
+    "@id": `${url}#questions`,
+    name,
+    about,
+    inLanguage: "en-US",
+    isAccessibleForFree: true,
+    hasPart: sample.map((q) => ({
+      "@type": "Question",
+      eduQuestionType: "Multiple choice",
+      text: q.question,
+      acceptedAnswer: { "@type": "Answer", text: options(q)[key(q)] },
+      suggestedAnswer: options(q).filter((_, i) => i !== key(q)).map((text) => ({ "@type": "Answer", text })),
+      comment: { "@type": "Comment", text: q.explanation },
+    })),
+  };
+}

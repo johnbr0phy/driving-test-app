@@ -46,6 +46,8 @@ The store in `/store/useStore.ts` is the single source of truth. Key sections:
 - `training` / `trainingSets` — training mode progress with mastery tracking
 - Firebase sync: `loadUserData()`, `saveToFirestore()`, `convertGuestToUser()`
 - Data versioning (`DATA_VERSION = 2`) with migration logic on load
+- **Finished tests are stored compactly** (`lib/testHistoryCompact.ts`): in memory every `completedTests` session holds its full questions, but in `users/{uid}` only the latest attempt of each test does; an older attempt stores each question as a pointer (`{questionId, p}` plus `qref`, the id of that latest attempt) and is rebuilt on load by `expandCompletedTests()`. A question is only stored as a pointer when rebuilding it gives back exactly the same object, so nothing is lost; it keeps the doc away from Firestore's 1 MiB limit, past which every save fails (full, a finished test is about 27 KB; an older attempt is now about 7 KB). Server code that reads questions from anything but a test's latest attempt must call `expandCompletedTests()` first (`getRecentTestSession` does); `answers` are never changed. `scripts/user-doc-sizes.ts` lists the accounts closest to the limit. Still growing without bound: `trainingAnswerHistory` (about 85 bytes an answer).
+- **Saves are queued** (`lib/saveQueue.ts`): `saveToFirestore()` takes a snapshot and runs one whole-doc transaction at a time, folding calls made meanwhile into one save of the newest state, so an older copy can never land after a newer one. `flushPendingSaves()` is awaited on sign-out. Three failed saves in a row show `components/SyncNotice.tsx` (root layout).
 
 ### Routing
 

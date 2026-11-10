@@ -51,7 +51,8 @@ export function examTopics(exam: ExamConfig): ExamTopic[] {
   return Object.entries(exam.blueprint).flatMap(([key, perTest]) => {
     const label = exam.categoryLabels[key];
     const slug = label ? slugify(label) : "";
-    if (!slug || slug === MOST_MISSED_SLUG || seen.has(slug)) return [];
+    // A topic needs enough questions to be worth a page: the tests alone draw perTest x testCount.
+    if (!slug || slug === MOST_MISSED_SLUG || seen.has(slug) || perTest * exam.testCount < 5) return [];
     seen.add(slug);
     return [{ key, label, slug, perTest }];
   });

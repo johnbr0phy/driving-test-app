@@ -96,12 +96,35 @@ jobs:
             If that is empty${{ github.event.inputs.aliases_only == 'true' && ', skip Part 2 (aliases only today)' || '' }}, take the most-searched "buildable" gap that is a real
             exam people prepare for, with a published official outline, not already covered
             by a test on the site (check lib/testCatalog.ts); if none qualifies, build nothing.
-            Build it end to end with the exam-bank skill: follow
+            Research comes first and decides whether you build. Follow step 0 of
+            .claude/skills/exam-bank/SKILL.md in full before writing any spec or question:
+              - Identify the body that owns the exam. With WebSearch, then WebFetch on the
+                pages themselves (never a search snippet), read its current content outline or
+                syllabus with revision date and weights, its candidate handbook or bulletin for
+                the format, its news page for any newer version or dated change, and the
+                primary law, standard or official manual the outline points to.
+              - Write every fact in a question from those primary texts. Prep sites may only
+                support format facts the owner does not publish, labelled "guides say", and
+                only when two agree. No sample, past or commercial questions, even reworded.
+              - Leave out fees, fines, indexed limits, office-holders, current affairs and
+                anything in a pending reform.
+              - Write tools/next100/<examId>/sources.md as the skill describes and run
+                python3 -I tools/check_sources.py <examId>; fix it until it passes.
+            Stop rule: if you cannot fetch an official outline, syllabus, handbook or primary
+            law, do not build it. Try the next "buildable" gap once; if that also fails, build
+            nothing and say in the report what you searched and why it was not enough.
+
+            Then build it end to end with the exam-bank skill: follow the rest of
             .claude/skills/exam-bank/SKILL.md and .claude/skills/exam-bank/references/wiring.md
             exactly (spec from the official outline, the 200-question bank in house style,
             the validator, the full wiring, catalog entry, landing, examFacts, search aliases
-            for the words people typed). Write the gap's key (or the forced name) on one line
-            to ${{ runner.temp }}/built.txt.
+            for the words people typed).
+
+            Before you finish, check your own work against the sources: pick 25 questions
+            spread across every category, and for each one re-open the source passage that
+            supports its key and confirm the key, the explanation and that no other option is
+            defensible. Fix or drop any that fail and say how many you changed. Write the gap's
+            key (or the forced name) on one line to ${{ runner.temp }}/built.txt.
 
             Then run and fix everything reported by:
               npm run typecheck
@@ -109,11 +132,14 @@ jobs:
               npm test
               python3 -I tools/check_banks.py
               npx tsx scripts/build-training-parts.ts
-            and the exam's validator if you built one.
+            and, if you built one, the exam's validator and
+              python3 -I tools/check_sources.py <examId>
 
             Finally append to ${{ env.REPORT }}.md a section "## What was changed": each alias
             added (search, test), each gap skipped and why in a few words, and the test built
-            (name, question count, official outline used) or why none was. Do not commit;
+            (name, question count, official outline and revision used, every source URL from
+            sources.md with what it gave you, what could not be confirmed, and the result of
+            the 25-question source check) or why none was. Do not commit;
             the next step opens the PR.
 
       - name: Mark the built test Planned on /admin

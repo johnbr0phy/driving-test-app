@@ -14,6 +14,37 @@ that never happens again: the writing rules, the validator and the wiring checkl
 
 Work in this order. Do not skip the validator between steps.
 
+## 0. Research the exam before the spec
+
+A bank is only as good as what it was written from. Do this before step 1, and stop if it fails.
+
+1. **Find the exam owner's own documents.** The body that sets or runs the exam (the certifying
+   body, regulator, board, ministry or test vendor named on its site). Fetch them, do not rely on
+   search snippets: the current content outline, blueprint, syllabus or test plan with its
+   revision date and weights; the candidate handbook or bulletin for format (questions, time, pass
+   mark, languages, delivery); and the primary law, standard, code or manual the outline points to
+   (statute text, official handbook, published standard). Check the owner's news or announcements
+   page for a newer outline or a dated change, and use the version in force on the build date.
+2. **Write facts from primary text.** Every rule, number and definition in a question must be
+   traceable to an official or primary source you read. Prep sites, forums, Quizlet, YouTube and
+   AI answers may point you to a source; they never confirm a fact. Two independent prep sources
+   may support format facts only, and only when the owner publishes none, labelled "guides say".
+3. **Never use question material.** No official sample or past questions, question pools, review
+   manual items, commercial practice tests or leaked material, not even reworded. Write originals
+   from the rules.
+4. **Keep it current.** Skip facts that change often or are disputed (fees, fines, indexed dollar
+   limits, office-holders, current affairs, rules in a pending reform). When two sources disagree,
+   use the official one, or leave the fact out and say so in sources.md.
+5. **Record it in `tools/<dir>/<examId>/sources.md`.** Like `tools/next100/cisa/sources.md`: a
+   line that every question is original, then one section each for the outline, format and law or
+   standards, each source as title, full https URL and "fetched YYYY-MM-DD" with what it gave you;
+   what could not be loaded or confirmed and how the copy words it; and what was deliberately
+   left out. `tools/check_sources.py <examId>` checks the file.
+
+**Stop rule.** If you cannot fetch an official outline, syllabus, handbook or primary law for the
+exam, do not build it. Say what you tried and why it was not enough. A thin bank written from
+guides is worse than no bank.
+
 ## 1. Spec the exam before writing a single question
 
 Write a short spec (a scratchpad file is fine) with: exam id, state code, idBase (next free block of

@@ -145,7 +145,7 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
       heading: v.id === "unknown" ? "Choose your next practice test." : `Start with one ${v.shortName} practice test.`,
       body: [
         p("{{greeting}}"),
-        p(v.id === "unknown" ? "Choose the exam you are preparing for, then start a practice session." : `You can practise for your ${v.testName} with Tigertest.`),
+        p(v.id === "unknown" ? "Choose the exam you are preparing for, then start a practice session." : "Fear not. Thousands of people have used Tigertest to pass their exams, and the ones who pass on their first try all have one thing in common: they actually tested themselves."),
         p("Start with one test, review your answers, then choose what to work on next."),
         cta(DASH(v, "welcome"), v.id === "unknown" ? "Find Your Test" : `Open ${v.shortName} Practice`),
         p("Prefer a shorter session? Choose a training set or skill drill from your dashboard."),

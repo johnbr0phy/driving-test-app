@@ -15,7 +15,7 @@ const EXAM_COUNT = TEST_CATALOG.length;
 const COUNTRY_COUNT = REGIONS.length;
 
 const title = "About Tigertest";
-const description = `Tigertest is a free practice-test site run by John Brophy: ${EXAM_COUNT} exams in ${COUNTRY_COUNT} countries, original questions written to each exam's official outline, independent of every test maker.`;
+const description = `Tigertest is a practice-test site run by John Brophy, free to start with an optional one-time Premium: ${EXAM_COUNT} exams in ${COUNTRY_COUNT} countries, original questions written to each exam's official outline, independent of every test maker.`;
 
 export const metadata: Metadata = {
   title: { absolute: title },
@@ -61,7 +61,7 @@ export default function AboutPage() {
         <div className="space-y-8">
           <section>
             <p className={p}>
-              Tigertest is a free practice-test site for {EXAM_COUNT} exams in {COUNTRY_COUNT} countries: the DMV permit test
+              Tigertest is a practice-test site, free to start, for {EXAM_COUNT} exams in {COUNTRY_COUNT} countries: the DMV permit test
               in every US state, driving theory tests from the UK to Malaysia, and licensing, certification, school and
               admissions exams such as the CDL, NCLEX, SAT, CompTIA Security+ and the UK citizenship test. It is run by John
               Brophy.
@@ -91,8 +91,24 @@ export default function AboutPage() {
           <section>
             <h2 className={h2}>What it costs</h2>
             <p className={p}>
-              Practice is free on every exam. The DMV test has an optional one-time $9.99 Premium purchase that unlocks two
-              more DMV tests and training sets and the full stats pages of every US exam. There is no subscription.
+              Every exam is free to start, with no account and no card. Premium is an optional one-time purchase, $9.99
+              in the US and a local price elsewhere, and it covers the whole site. There is no subscription.
+            </p>
+            <ul className={`${p} mt-4 list-disc pl-6 space-y-2`}>
+              <li>
+                <strong>Free:</strong> the first two DMV tests and training sets, every training set and practice test
+                but the last on the other licence, certification and driving exams, and all of the SAT, ACT, GED, NCLEX
+                and the other sectioned, timed exams.
+              </li>
+              <li>
+                <strong>Premium:</strong> the last two DMV tests and training sets, the final training set and final
+                practice test on the other licence, certification and driving exams, the full stats pages of every
+                exam, and room for more of your own quizzes.
+              </li>
+            </ul>
+            <p className={`${p} mt-4`}>
+              Classes are free for teachers. A student in a teacher&apos;s class gets that test&apos;s full stats
+              without paying, and on every exam but the DMV its final training set and practice test too.
             </p>
           </section>
 

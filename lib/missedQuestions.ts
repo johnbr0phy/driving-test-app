@@ -1,3 +1,4 @@
+import { isSlimQuestion } from "@/lib/testHistoryCompact";
 import { Question, TestSession } from "@/types";
 
 // Aggregated view of a single question the user has gotten wrong at least
@@ -63,7 +64,8 @@ export function computeMissSummary(
 
     for (const answer of session.answers) {
       const question = session.questions.find((q) => q.questionId === answer.questionId);
-      if (!question) continue;
+      // A stored pointer that could not be rebuilt has no text to drill on.
+      if (!question || isSlimQuestion(question)) continue;
       const entry = byQuestion.get(answer.questionId) ?? {
         question,
         testNumber: session.testNumber,

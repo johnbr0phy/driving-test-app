@@ -17,7 +17,7 @@ import {
   sendEmailVerification,
 } from "firebase/auth";
 import { auth } from "@/lib/firebase";
-import { useStore } from "@/store/useStore";
+import { flushPendingSaves, useStore } from "@/store/useStore";
 import { AccountConflictDialog } from "@/components/AccountConflictDialog";
 import { isInternalEmail, markInternalBrowser } from "@/lib/internal";
 import { claimEnrollments } from "@/lib/enrollment";
@@ -251,6 +251,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   };
 
   const logout = async () => {
+    // Let saves still on their way reach the account before it is signed out.
+    await flushPendingSaves();
     // Clear all store data (in-memory state)
     useStore.getState().clearAllDataOnLogout();
     // Clear localStorage to remove persisted data

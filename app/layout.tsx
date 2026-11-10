@@ -1,5 +1,6 @@
 import { SkipLink } from "@/components/SkipLink";
 import { ClassMembershipSync } from "@/components/ClassMembershipSync";
+import { SyncNotice } from "@/components/SyncNotice";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
@@ -120,6 +121,7 @@ export default function RootLayout({
         <Providers>
           <SuperAmazingFireworks />
           <ClassMembershipSync />
+          <SyncNotice />
           <SkipLink />
           <SiteHeader />
           <main id="main-content" tabIndex={-1} className="flex-1 flex flex-col">{children}</main>

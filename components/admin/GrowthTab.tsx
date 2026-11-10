@@ -54,6 +54,8 @@ interface Metrics {
     purchases: Record<string, number>;
     active: Record<string, number>;
     questions: Record<string, number>;
+    // Optional: absent from payloads cached before the paywall chart.
+    paywallHits?: Record<string, number>;
   };
   activeWeekly: { date: string; count: number }[];
   activeMonthly: { date: string; count: number }[];
@@ -346,9 +348,10 @@ function makeEndDot(color: string) {
   };
 }
 
-// New signups per day / week / month, the old bar chart: the last bar is the
-// current period so far, drawn lighter, with the previous full one beside it.
-function NewSignupsCard({ data, unit, onUnit }: {
+// A count per day / week / month (new signups, paywall hits): the last bar is
+// the current period so far, drawn lighter, with the previous full one beside it.
+function PeriodBarsCard({ title, noun: countNoun, color, note, data, unit, onUnit }: {
+  title: string; noun: string; color: string; note?: string;
   data: Pt[]; unit: SignupUnit; onUnit: (u: SignupUnit) => void;
 }) {
   const cur = data[data.length - 1]?.value ?? 0;
@@ -359,7 +362,7 @@ function NewSignupsCard({ data, unit, onUnit }: {
     <div className={`${CARD} mb-3 sm:mb-4`}>
       <div className="mb-4 flex flex-wrap items-start justify-between gap-3">
         <div>
-          <h2 className="text-sm font-semibold text-gray-900 dark:text-gray-50">New signups</h2>
+          <h2 className="text-sm font-semibold text-gray-900 dark:text-gray-50">{title}</h2>
           <p className="mt-1 text-2xl font-semibold text-gray-900 dark:text-gray-50 tracking-tight">
             {fmtInt(cur)}
             <span className="ml-2 text-sm font-normal text-gray-500 dark:text-gray-400">
@@ -390,9 +393,9 @@ function NewSignupsCard({ data, unit, onUnit }: {
             <YAxis tick={axisTickStyle} tickLine={false} axisLine={false}
               allowDecimals={false} width={44} tickFormatter={fmtCompact} />
             <Tooltip cursor={{ fill: "rgba(0,0,0,0.03)" }}
-              content={<ChartTooltip format={(n) => `${fmtInt(n)} signups`}
+              content={<ChartTooltip format={(n) => `${fmtInt(n)} ${countNoun}`}
                 labelPrefix={unit === "week" ? "Week of " : ""} />} />
-            <Bar dataKey="value" fill={COLORS.users} maxBarSize={36} radius={[4, 4, 0, 0]}
+            <Bar dataKey="value" fill={color} maxBarSize={36} radius={[4, 4, 0, 0]}
               isAnimationActive={false}>
               {data.map((p, i) => (
                 <Cell key={p.key} fillOpacity={i === data.length - 1 ? 0.45 : 1} />
@@ -408,6 +411,7 @@ function NewSignupsCard({ data, unit, onUnit }: {
       </div>
       <p className="mt-3 text-[11px] text-gray-500 dark:text-gray-400">
         Weeks start Monday (UTC). The lighter bar is the current {unit}, still in progress.
+        {note ? ` ${note}` : ""}
       </p>
     </div>
   );
@@ -952,6 +956,7 @@ export function GrowthTab() {
   const [range, setRange] = useState<Range>("90d");
   const [engageMetric, setEngageMetric] = useState<"active" | "questions">("active");
   const [signupUnit, setSignupUnit] = useState<SignupUnit>("week");
+  const [paywallUnit, setPaywallUnit] = useState<SignupUnit>("day");
 
   // One-time history seed for the per-exam split of the questions aggregate:
   // live counts only started when the split shipped, so until the backfill
@@ -999,6 +1004,11 @@ export function GrowthTab() {
   const signups = useMemo(
     () => (metrics ? signupBars(metrics.daily.signups, signupUnit) : []),
     [metrics, signupUnit],
+  );
+
+  const paywallHits = useMemo(
+    () => (metrics?.daily.paywallHits ? signupBars(metrics.daily.paywallHits, paywallUnit) : null),
+    [metrics, paywallUnit],
   );
 
   const sparks = useMemo(() => {
@@ -1077,7 +1087,13 @@ export function GrowthTab() {
 
         <WeeklyActiveLearners />
 
-        <NewSignupsCard data={signups} unit={signupUnit} onUnit={setSignupUnit} />
+        <PeriodBarsCard title="New signups" noun="signups" color={COLORS.users}
+          data={signups} unit={signupUnit} onUnit={setSignupUnit} />
+        {paywallHits && (
+          <PeriodBarsCard title="Paywall hits" noun="paywall hits" color={COLORS.engagement}
+            note="Every time a paywall opened, guests included; internal accounts and bots are not counted."
+            data={paywallHits} unit={paywallUnit} onUnit={setPaywallUnit} />
+        )}
 
         {/* Range filter — scopes every chart below */}
         <div className="flex items-center gap-1 mb-3 sm:mb-4 bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800/80 rounded-lg p-1 w-full sm:w-fit shadow-sm">

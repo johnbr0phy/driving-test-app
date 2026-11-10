@@ -74,7 +74,7 @@ export async function GET(request: NextRequest) {
 
 async function buildMetrics() {
   const db = getAdminDb();
-  const [usersSnapRaw, paymentsSnap, questionsDoc, testRequestsSnap, studyTimesDoc, funnelDoc, originsSnap, internalUids, quizzesDoc] = await Promise.all([
+  const [usersSnapRaw, paymentsSnap, questionsDoc, testRequestsSnap, studyTimesDoc, funnelDoc, originsSnap, internalUids, quizzesDoc, paywallsDoc] = await Promise.all([
     db.collection('users')
       .select('selectedState', 'lastUpdated', 'activeDates', 'subscription', 'createdAt', 'paywallHits', '_stats')
       .get(),
@@ -86,7 +86,13 @@ async function buildMetrics() {
     db.collection('signupOrigins').get(),
     getInternalUids(),
     db.doc('analytics/quizzes').get(),
+    db.doc('analytics/paywalls').get(),
   ]);
+  // Every paywall open per UTC day, guests included (/api/analytics/paywall).
+  const paywallHitsByDay: Record<string, number> = {};
+  for (const [day, n] of Object.entries((paywallsDoc.data()?.daily as Record<string, unknown>) || {})) {
+    if (typeof n === 'number') paywallHitsByDay[day] = n;
+  }
   // ── Quizzes (lib/quizzes.ts) ────────────────────────────────────────────
   // Site-wide counters bumped by lib/server/quizzes.ts: quizzes made on
   // /create, by Quizlet import and from Claude/ChatGPT through the MCP
@@ -360,6 +366,7 @@ async function buildMetrics() {
       purchases: purchasesByDay,
       active: activeByDay,
       questions: questionsByDay,
+      paywallHits: paywallHitsByDay,
     },
     activeWeekly,
     activeMonthly,

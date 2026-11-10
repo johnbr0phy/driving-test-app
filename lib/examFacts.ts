@@ -3714,6 +3714,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "NAPOLCOM's PNP Entrance and Promotional Examinations Announcement (June 30, 2024 exam) and NAPOLCOM's April 2026 results release, checked November 2026",
     source: { name: "National Police Commission", url: "https://www.napolcom.gov.ph/" },
   },
+  phnat: {
+    answer:
+      "The Nursing Aptitude Test (NAT) is an admission test that Philippine colleges of nursing give to applicants for the Bachelor of Science in Nursing. Each school runs its own: Central Philippine University schedules it after its college aptitude test, West Visayas State University counts it toward its admission rating, and Filamer Christian University requires it of BS Nursing applicants. There is no national syllabus, date or passing score, and each school sets its own schedule, fee and cut-off. Examinees describe four subtests: verbal ability, numerical facility, science and health information, and a mental ability test. It is not the Nurse Licensure Examination, which graduates take after the degree.",
+    rows: [
+      { label: "Run by", value: "Each college of nursing (school-run, not national)" },
+      { label: "For", value: "Applicants to the BS Nursing program" },
+      { label: "Subtests (examinee reports)", value: "Verbal ability, numerical facility, science and health information, mental ability" },
+      { label: "Items and time", value: "Set by each school; not published" },
+      { label: "Passing score", value: "Set by each school, often as a rank or rating; not published" },
+      { label: "Schedule and fee", value: "Announced by each school each admission season" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions, 70% target" },
+    ],
+    basedOn: "Admission advisories of Central Philippine University (SY 2026-2027), West Visayas State University and Filamer Christian University, and an examinee report of the test's four subtests, checked November 2026",
+    source: { name: "Central Philippine University College of Nursing", url: "https://cpu.edu.ph/news/cpu-college-of-nursing-announces-application-deadline-for-incoming-bsn-students-sy-2026-2027/" },
+  },
   afpsat: {
     answer:
       "The AFP Service Aptitude Test (AFPSAT) is the written aptitude test the Armed Forces of the Philippines uses as the first filter for applicants to the Philippine Army, the Philippine Navy (including the Marines) and the Philippine Air Force, for officer and enlisted programs. It is set out in AFP circulars and given in batches by the services' testing and recruitment offices around the country; applicants bring original documents such as a diploma or certificate, transcript of records or Form 137, PSA birth certificate and a government ID. The AFP does not publish the number of items, the time limit or a passing score, and guides say each service sets its own cut-off. Reviewers describe verbal, numerical, logical and abstract, spatial and mechanical reasoning and general information. Passing is followed by each service's own physical, medical and background screening.",

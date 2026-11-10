@@ -1,0 +1,147 @@
+name: Search gaps
+
+# Daily: list the searches on tigertest.io that still find no test
+# (scripts/search-gaps.ts, the same groups as the Searches tab on /admin), then
+# Claude Code wires search aliases for the ones that name a test we have, builds
+# at most one new test for the most-searched one we don't, and opens a PR.
+# Nothing merges without review: the PR is the approval step.
+#
+# Needs repository secrets ANTHROPIC_API_KEY and FIREBASE_SERVICE_ACCOUNT_KEY.
+# Run it by hand with "build" set to force a named test (no Firestore needed).
+
+on:
+  schedule:
+    - cron: "41 7 * * *" # 07:41 UTC, about 2:41am New York, PR ready by morning
+  workflow_dispatch:
+    inputs:
+      build:
+        description: "Build this test regardless of search counts (e.g. Google Cloud Professional Cloud Architect). Empty: pick from searches."
+        default: ""
+      min:
+        description: "Searches in 30 days before a missing test is built"
+        default: "2"
+      aliases_only:
+        description: "Only wire aliases, build no new test"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pull-requests: write
+  id-token: write
+
+concurrency:
+  group: search-gaps
+  cancel-in-progress: false
+
+jobs:
+  gaps:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci --no-audit --no-fund
+
+      - name: List search gaps
+        env:
+          FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
+          MIN_INPUT: ${{ github.event.inputs.min }}
+        run: |
+          min="${MIN_INPUT:-2}"
+          case "$min" in ''|*[!0-9]*) echo "min must be a whole number"; exit 1 ;; esac
+          npx tsx scripts/search-gaps.ts --out "$RUNNER_TEMP/gaps" --min "$min"
+          echo "REPORT=$RUNNER_TEMP/gaps/$(date -u +%F)" >> "$GITHUB_ENV"
+
+      - name: Keep the report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: search-gaps-${{ github.run_id }}
+          path: ${{ runner.temp }}/gaps/
+          if-no-files-found: ignore
+
+      # If Claude Code cannot finish, whatever it changed still goes to review.
+      - name: Wire aliases and build with Claude Code
+        continue-on-error: true
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          claude_args: --max-turns 500 --allowedTools "Read,Edit,Write,Glob,Grep,WebSearch,WebFetch,Bash(npm:*),Bash(npx:*),Bash(node:*),Bash(python3:*),Bash(git diff:*),Bash(git status:*),Bash(ls:*)"
+          prompt: |
+            Read CLAUDE.md. Today's search gaps are in ${{ env.REPORT }}.md, with details
+            in ${{ env.REPORT }}.json: searches on the site that find no test, most-searched
+            first, and "buildable", the keys searched ${{ github.event.inputs.min || '2' }}+ times in 30 days.
+
+            Part 1, aliases. For each gap whose searcher clearly wants a test we already
+            have (another language, an abbreviation, a nickname, a part of the exam like
+            "hazard perception", a misspelling), add the words to that test's line in
+            SEARCH_ALIASES in lib/testCatalog.ts, and add a case to CASES in
+            tests/test-search-aliases.test.cjs: [query, the region most of its searches came
+            from, the test id that must come first]. Check each with searchAllTests that it
+            now comes first and is not partial, and that you did not push another test's
+            searches off first place (run npm test). Skip junk, half-typed and ambiguous
+            searches (say which in the report): a wrong alias is worse than none.
+
+            Part 2, at most one new test. Build: "${{ github.event.inputs.build }}".
+            If that is empty${{ github.event.inputs.aliases_only == 'true' && ', skip Part 2 (aliases only today)' || '' }}, take the most-searched "buildable" gap that is a real
+            exam people prepare for, with a published official outline, not already covered
+            by a test on the site (check lib/testCatalog.ts); if none qualifies, build nothing.
+            Build it end to end with the exam-bank skill: follow
+            .claude/skills/exam-bank/SKILL.md and .claude/skills/exam-bank/references/wiring.md
+            exactly (spec from the official outline, the 200-question bank in house style,
+            the validator, the full wiring, catalog entry, landing, examFacts, search aliases
+            for the words people typed). Write the gap's key (or the forced name) on one line
+            to ${{ runner.temp }}/built.txt.
+
+            Then run and fix everything reported by:
+              npm run typecheck
+              npm run lint
+              npm test
+              python3 -I tools/check_banks.py
+              npx tsx scripts/build-training-parts.ts
+            and the exam's validator if you built one.
+
+            Finally append to ${{ env.REPORT }}.md a section "## What was changed": each alias
+            added (search, test), each gap skipped and why in a few words, and the test built
+            (name, question count, official outline used) or why none was. Do not commit;
+            the next step opens the PR.
+
+      - name: Mark the built test Planned on /admin
+        env:
+          FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
+        run: |
+          f="$RUNNER_TEMP/built.txt"
+          [ -s "$f" ] || exit 0
+          key="$(head -n1 "$f")"
+          echo "BUILT=$key" >> "$GITHUB_ENV"
+          npx tsx scripts/search-gaps.ts --mark-planned "$key" || echo "Could not mark Planned"
+
+      # No changes, no PR.
+      - name: Open PR
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: search-gaps/${{ github.run_id }}
+          title: "Search gaps ${{ github.run_id }}: aliases${{ env.BUILT && format(' + new test: {0}', env.BUILT) || '' }}"
+          commit-message: "Search gaps: aliases and new test"
+          body-path: ${{ env.REPORT }}.md
+          add-paths: |
+            app/**
+            components/**
+            data/**
+            lib/**
+            public/**
+            tests/**
+            tools/**
+            types/**
+            i18n/**
+            .claude/skills/**

@@ -33,6 +33,6 @@ test('shared class progress preserves prior misses on an all-correct batch',asyn
 });
 test('merged admin changes retain auth, shared cache, new signups chart and quiz metrics',()=>{
  const route=readFileSync('app/api/admin/metrics/route.ts','utf8');assert.match(route,/await requireAdmin\(request\)/);assert.match(route,/cachedAdminPayload\(/);assert.match(route,/analytics\/quizzes/);
- const ui=readFileSync('components/admin/GrowthTab.tsx','utf8');assert.match(ui,/function NewSignupsCard/);assert.match(ui,/function QuizzesCard/);
+ const ui=readFileSync('components/admin/GrowthTab.tsx','utf8');assert.match(ui,/function PeriodBarsCard/);assert.match(ui,/function QuizzesCard/);
  const cron=readFileSync('app/api/cron/quizzes-launch/route.ts','utf8');assert.match(cron,/process.env.QUIZZES_CAMPAIGN === "send"/);
 });

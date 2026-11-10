@@ -317,6 +317,10 @@ export default function CreatePage() {
                 </details>
               ))}
             </div>
+            <p className="mt-5 text-sm text-gray-600 dark:text-gray-300">
+              Building your own agent or app? The endpoint, sign-in and tool list are on the{" "}
+              <Link href="/developers" className="font-medium text-brand-dark underline underline-offset-2">developers page</Link>.
+            </p>
           </section>
         </div>
 

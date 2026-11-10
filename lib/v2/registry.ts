@@ -98,6 +98,41 @@ import { APHUG } from "./exams/aphug";
 
 export const EXAMS_V2: ExamV2Config[] = [GED, PRAXIS, SAT, PSAT, ACT, APPSYCH, APUSH, APGOV, APWORLD, APHUG, APLANG, APBIO, APCALCAB, GRE, GMAT, SEHP, TEAS, HESI, ASVAB, ACCUPLACER, NCLEX, NCLEXPN, REXPN, UKNMC, EMT, PARAMEDIC, FAAPVT, SECPLUS, CYSA, CISSP, NETPLUS, APLUS, AWS, AWSSAA, AZ900, GCDL, CCNA, PMP, CAPM, PSM, ITIL, UPSCSE, SSCCGL, SSCCHSL, SSCCPO, SSCGD, SSCMTS, RRBNTPC, RRBGROUPD, RRBALP, RPFCONST, UPPOLICE, DELHIPOLICE, BIHARPOLICE, RAJPOLICE, MPPOLICE, IBPSPO, SBIPO, IBPSCLERK, SBICLERK, IBPSRRB, NDA, AGNIVEER, AGNIVEERVAYU, JEEMAIN, NEET, MHTCET, CUET, CTET, REET, UPTET, UGCNET, JNVST, AISSEE, JAMBENG, JAMBMATH, JAMBBIO, JAMBCHEM, JAMBPHYS, PHCSE, TIMESTABLES, KS2, ELEVENPLUS, GCSEMATHS, GCSEHIGHER, GCSESCIENCE, GCSECS, FSMATHS, OSSLT, EQAO9, NAPLAN7, NAPLAN, OCNSW, NSWSEL, VICSEL, HSCMATHS];
 
+/**
+ * The light Premium tier on v2 exams (Nov 2026), the v1 rule carried over:
+ * the final drill and the final practice test need the one-time purchase,
+ * everything before them is free. Only career, licensing, government-job and
+ * graduate-admission exams are listed. School, college-entrance and
+ * children's tests (SAT, ACT, AP, GED, GCSE, KS2, 11+, NAPLAN, JAMB, JEE,
+ * NEET and the rest) are never sold: leave a new one off this list.
+ */
+export const PREMIUM_V2_IDS: string[] = [
+  "praxis", "gre", "gmat", "teas", "hesi", "asvab",
+  "nclex", "nclexpn", "rexpn", "uknmc", "emt", "paramedic", "faapvt",
+  "secplus", "cysa", "cissp", "netplus", "aplus", "aws", "awssaa", "az900", "gcdl", "ccna",
+  "pmp", "capm", "psm", "itil",
+  "upscse", "ssccgl", "sscchsl", "ssccpo", "sscgd", "sscmts", "rrbntpc", "rrbgroupd", "rrbalp", "rpfconst",
+  "uppolice", "delhipolice", "biharpolice", "rajpolice", "mppolice",
+  "ibpspo", "sbipo", "ibpsclerk", "sbiclerk", "ibpsrrb", "agniveer", "agniveervayu",
+  "ctet", "reet", "uptet", "ugcnet", "phcse",
+];
+
+for (const exam of EXAMS_V2) {
+  if (exam.premium || !PREMIUM_V2_IDS.includes(exam.id)) continue;
+  const lastTest = exam.tests.length > 1 ? exam.tests[exam.tests.length - 1] : undefined;
+  const lastDrill = exam.drills.length > 1 ? exam.drills[exam.drills.length - 1] : undefined;
+  exam.premium = {
+    lockedTests: lastTest ? [lastTest.number] : [],
+    lockedDrills: lastDrill ? [lastDrill.key] : [],
+    benefits: [
+      ...(lastTest ? [`${exam.shortName} ${lastTest.name}${lastTest.heldOut ? ", the one that never appears in the drills" : ""}`] : []),
+      ...(lastDrill ? [`The ${lastDrill.name} drill`] : []),
+      "The final set and test of every other exam on Tigertest",
+      "One payment, no subscription",
+    ],
+  };
+}
+
 export function getExamV2(id: string): ExamV2Config {
   const exam = EXAMS_V2.find((e) => e.id === id);
   if (!exam) throw new Error(`Unknown v2 exam: ${id}`);

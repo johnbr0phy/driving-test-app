@@ -11,7 +11,7 @@ import { basicsFor, basicsKey } from "@/lib/v2/basics";
 import { drillQuestions, drillStateFor } from "@/lib/v2/training";
 import { useV2Store } from "@/store/useV2Store";
 import { useHydration } from "@/hooks/useHydration";
-import { useIsPremium } from "@/hooks/useIsPremium";
+import { useV2Premium } from "@/hooks/useV2Premium";
 import { hasDrillProgress, isDrillLocked } from "@/lib/v2/premium";
 import { DrillLockScreen } from "./DrillLockScreen";
 
@@ -30,7 +30,7 @@ export function DrillOverview({ exam, drillKeyParam }: { exam: ExamV2Config; dri
   const skills = drill ? basicsFor(drill) : [];
   const basicsMap = useV2Store((s) => s.basics);
   const drillsMap = useV2Store((s) => s.drills);
-  const { isPremium, ready: premiumReady } = useIsPremium();
+  const { isPremium, ready: premiumReady } = useV2Premium(exam.id);
 
   useEffect(() => {
     if (hydrated && !drill) router.replace(routes.dashboard);

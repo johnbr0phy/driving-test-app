@@ -9,6 +9,7 @@ import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
 import "@/lib/banks/mtcpc";
 import { SITE_URL } from "@/lib/siteUrl";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -75,7 +76,7 @@ const jsonLd = {
       url: `${siteUrl}/malta-driver-cpc-theory-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" },
+      offers: examOffers("mtcpc", "EUR"),
       featureList: [
         "200 original Driver CPC theory practice questions for bus and truck drivers",
         "4 practice tests of 50 questions, 60% to pass",

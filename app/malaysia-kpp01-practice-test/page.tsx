@@ -9,6 +9,7 @@ import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
 import "@/lib/banks/mykpp";
 import { SITE_URL } from "@/lib/siteUrl";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -75,7 +76,7 @@ const jsonLd = {
       url: `${siteUrl}/malaysia-kpp01-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "MYR" },
+      offers: examOffers("mykpp", "MYR"),
       featureList: [
         "200 KPP01 practice questions",
         "4 mock tests of 50 questions with the 42 of 50 pass mark",

@@ -10,6 +10,7 @@ import { SEHP } from "@/lib/v2/exams/sehp";
 import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHero";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { SITE_URL } from "@/lib/siteUrl";
+import { examOffers } from "@/lib/examSeo";
 
 // Högskoleprovet's own landing, in Swedish (its base language). The same
 // sections as components/exam/TranslatedExamLanding, read from
@@ -59,7 +60,7 @@ const jsonLd = {
       inLanguage: "sv-SE",
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "SEK" },
+      offers: examOffers("sehp", "SEK"),
       publisher: { "@id": ORGANIZATION_ID },
     },
     {

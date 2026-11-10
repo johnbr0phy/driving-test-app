@@ -9,6 +9,7 @@ import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
 import "@/lib/banks/sgrtt";
 import { SITE_URL } from "@/lib/siteUrl";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -75,7 +76,7 @@ const jsonLd = {
       url: `${siteUrl}/singapore-rtt-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "SGD" },
+      offers: examOffers("sgrtt", "SGD"),
       featureList: [
         "200 Riding Theory Test practice questions",
         "4 mock tests of 50 questions with a 45 of 50 target",

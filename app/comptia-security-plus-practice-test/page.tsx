@@ -1,3 +1,4 @@
+import "@/lib/v2/banks/secplus";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -8,6 +9,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { SampleQuestionsV2 } from "@/components/v2/SampleQuestionsV2";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -51,7 +54,7 @@ const jsonLd = {
       url: `${siteUrl}/comptia-security-plus-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      offers: examOffers("secplus"),
       featureList: [
         "200 Security+ practice questions",
         "2 full 90-question practice tests in 90 minutes with flagging and review",
@@ -102,7 +105,7 @@ const jsonLd = {
           name: "Is the Tigertest Security+ practice test free?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. Both practice tests and all five drills are free, with no account required. Create a free account if you want your progress saved across devices.",
+            text: "It is free to start, with no account required. Practice Test 1 and every drill but the last are free; the final drill and the final practice test are part of Tigertest Premium, one payment with no subscription. Create a free account if you want your progress saved across devices.",
           },
         },
         classFaqJsonLd("secplus"),
@@ -295,12 +298,14 @@ export default function SecplusLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is the Tigertest Security+ practice test free?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              Yes. Both practice tests and all five drills are free, with no account required. Create a free account if you want your progress saved across devices.
+              It is free to start, with no account required. Practice Test 1 and every drill but the last are free; the final drill and the final practice test are part of Tigertest Premium, one payment with no subscription. Create a free account if you want your progress saved across devices.
             </p>
           </div>
           <ExamClassFaq examId="secplus" />
         </div>
       </div>
+
+      <SampleQuestionsV2 examId="secplus" />
 
       <ExamRelatedTests examId="secplus" />
 

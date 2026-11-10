@@ -1,3 +1,4 @@
+import "@/lib/banks/cawhmis";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -9,6 +10,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -52,7 +55,7 @@ const jsonLd = {
       url: `${siteUrl}/whmis-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "CAD" },
+      offers: examOffers("cawhmis", "CAD"),
       featureList: [
         "200 WHMIS practice questions",
         "4 practice tests across all six topic groups",
@@ -312,6 +315,8 @@ export default function WhmisLandingPage() {
           <ExamClassFaq examId="cawhmis" />
         </div>
       </div>
+
+      <ExamSampleQuestions examId="cawhmis" />
 
       <ExamRelatedTests examId="cawhmis" />
 

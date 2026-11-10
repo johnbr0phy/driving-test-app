@@ -2,7 +2,9 @@ import Link from "next/link";
 import { TEST_CATALOG, relatedTests } from "@/lib/testCatalog";
 import { CommunityUpsell } from "@/components/CommunityUpsell";
 import { regionHomePath, regionInfo, regionOfTest } from "@/lib/region";
-import type { Language } from "@/i18n";
+import { LANGUAGES, type Language } from "@/i18n";
+import { examBaseLanguage, getExamById } from "@/lib/exams";
+import { examTopics, hasTopicPages, topicPath } from "@/lib/topicPages";
 import { COUNTRY_NAMES } from "@/components/home/homeCopy";
 
 const RELATED_COPY: Partial<Record<Language, { title: string; sub: string; country: (name: string) => string; all: (n: number) => string }>> = {
@@ -92,6 +94,63 @@ const RELATED_COPY: Partial<Record<Language, { title: string; sub: string; count
   },
 };
 
+/**
+ * "Questions by topic" links on the landing of an exam that has topic pages
+ * (lib/topicPages.ts): the crawlable path from the landing to each of them.
+ */
+function ExamTopicLinks({ examId, lang }: { examId: string; lang: Language }) {
+  const exam = lang === "en" && hasTopicPages(examId) ? getExamById(examId) : undefined;
+  if (!exam) return null;
+  return (
+    <section aria-labelledby="topic-questions" className="max-w-5xl mx-auto px-6 pt-12 md:pt-16">
+      <h2 id="topic-questions" className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 text-center mb-2">
+        {exam.shortName} practice questions by topic
+      </h2>
+      <p className="text-gray-600 dark:text-gray-300 text-center mb-6">Ten questions on each area of the exam, with the answers explained.</p>
+      <ul className="flex flex-wrap justify-center gap-x-5 gap-y-2">
+        {examTopics(exam).map((t) => (
+          <li key={t.slug}>
+            <Link href={topicPath(exam, t)} className="text-brand-dark underline underline-offset-2">
+              {t.label}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+}
+
+/**
+ * Plain links from a landing to the same test's landings in other languages
+ * (the header switcher is a menu crawlers do not open), so each translated
+ * landing has a link from its English twin and back.
+ */
+function ExamLanguageLinks({ examId, lang }: { examId: string; lang: Language }) {
+  const exam = getExamById(examId);
+  if (!exam) return null;
+  const base = examBaseLanguage(exam);
+  const pages = [
+    ...(exam.landingPath ? [{ code: base, path: exam.landingPath }] : []),
+    ...Object.entries(exam.translations ?? {}).map(([code, tr]) => ({ code: code as Language, path: tr.landingPath })),
+  ].filter((p) => p.code !== lang && p.path);
+  if (pages.length === 0) return null;
+  return (
+    <p className="max-w-5xl mx-auto px-6 pt-8 text-center text-sm text-gray-600 dark:text-gray-300">
+      {pages.map((p, i) => {
+        const l = LANGUAGES.find((x) => x.code === p.code);
+        return (
+          <span key={p.code}>
+            {i > 0 && " · "}
+            <Link href={p.path} hrefLang={p.code} className="text-brand-dark underline underline-offset-2">
+              {l ? `${l.flag} ${l.label}` : p.code}
+            </Link>
+          </span>
+        );
+      })}
+    </p>
+  );
+}
+
 // "Related practice tests" block for an exam landing: the rest of the exam's
 // hub group (nursing, IT, driving...) plus a link to the hub. This is the
 // cross-linking that lets new landings share authority with their neighbours.
@@ -104,10 +163,12 @@ export function ExamRelatedTests({ examId, lang = "en" }: { examId: string; lang
   // hub that collects its tests, so the country page earns links from them.
   const region = regionOfTest(examId);
   const country = region === "US" || region === "GLOBAL" ? null : regionInfo(region);
-  if (tests.length === 0) return <CommunityUpsell examId={examId} />;
+  if (tests.length === 0) return <><ExamTopicLinks examId={examId} lang={lang} /><CommunityUpsell examId={examId} /></>;
 
   return (
     <>
+    <ExamTopicLinks examId={examId} lang={lang} />
+    <ExamLanguageLinks examId={examId} lang={lang} />
     <CommunityUpsell examId={examId} />
     <section aria-labelledby="related-tests" className="max-w-5xl mx-auto px-6 py-12 md:py-16">
       <h2 id="related-tests" className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 text-center mb-2">

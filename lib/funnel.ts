@@ -100,6 +100,16 @@ function saveFirstVisit(visit: FirstVisit) {
   }
 }
 
+/**
+ * This browser's first visit (source and landing path), sent with a checkout
+ * so the payment can be credited to the page and channel that found the buyer.
+ */
+export function checkoutAttribution(): { source?: VisitSource; landing?: string } {
+  if (typeof window === "undefined") return {};
+  const first = readFirstVisit();
+  return first ? { source: first.source, landing: first.landing } : {};
+}
+
 function readFirstVisit(): FirstVisit | null {
   try {
     const raw = localStorage.getItem(FIRST_VISIT_KEY);

@@ -1,3 +1,4 @@
+import "@/lib/v2/banks/nda";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -8,6 +9,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { SampleQuestionsV2 } from "@/components/v2/SampleQuestionsV2";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -74,7 +77,7 @@ const jsonLd = {
       url: `${siteUrl}/nda-exam-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "INR" },
+      offers: examOffers("nda", "INR"),
       featureList: [
         "236 original NDA and NA practice questions with explanations",
         "2 timed mock tests at the real pace: Mathematics 48 in 60 minutes, General Ability Test 60 in 60 minutes",
@@ -263,6 +266,8 @@ export default function NdaLandingPage() {
           <ExamClassFaq examId="nda" />
         </div>
       </div>
+
+      <SampleQuestionsV2 examId="nda" />
 
       <ExamRelatedTests examId="nda" />
 

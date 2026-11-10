@@ -34,6 +34,10 @@ export interface SitemapEntry {
 export { SITE_URL } from "@/lib/siteUrl";
 import { SITE_URL } from "@/lib/siteUrl";
 import { landingUpdatedAt, latestLandingUpdate } from "@/lib/landingDates";
+import { allStateLandings } from "./stateLandings";
+import { teachPagePath, teachPageTests } from "./teachPages";
+import { STATE_EXAM_LANDINGS_UPDATED_AT, TOPIC_PAGES_UPDATED_AT } from "./seoDates";
+import { examTopics, mostMissedPath, topicExams, topicPath } from "./topicPages";
 
 export function isSitemapSegment(value: string): value is SitemapSegment {
   return (SITEMAP_SEGMENTS as readonly string[]).includes(value);
@@ -129,6 +133,26 @@ export async function buildSegment(segment: SitemapSegment): Promise<SitemapEntr
           changeFrequency: "monthly" as const,
           priority: 0.8,
         })),
+        // State versions of real estate and insurance (/real-estate-practice-test/california).
+        ...allStateLandings().map(({ path }) => ({
+          url: `${SITE_URL}${path}`,
+          lastModified: STATE_EXAM_LANDINGS_UPDATED_AT,
+          changeFrequency: "monthly" as const,
+          priority: 0.7,
+        })),
+        // Per-exam pages for teachers (/teach/cna).
+        ...teachPageTests().map((t) => ({ url: `${SITE_URL}${teachPagePath(t)}`, lastModified: HUB_PAGES_UPDATED_AT, changeFrequency: "monthly" as const, priority: 0.5 })),
+        // Topic question pages (/questions/cna/basic-nursing-skills) and, where
+        // the exam has Common Mistakes, its most-missed page.
+        ...topicExams().flatMap((exam) =>
+          examTopics(exam).map((t) => ({
+            url: `${SITE_URL}${topicPath(exam, t)}`,
+            lastModified: TOPIC_PAGES_UPDATED_AT,
+            changeFrequency: "monthly" as const,
+            priority: 0.6,
+          }))
+        ),
+        ...(await mostMissedEntries()),
         // Translated landings (/es/examen-practica-cdl).
         ...EXAMS.flatMap((exam) =>
           Object.values(exam.translations ?? {}).map((tr) => ({
@@ -147,6 +171,19 @@ export async function buildSegment(segment: SitemapSegment): Promise<SitemapEntr
         { url: `${SITE_URL}/terms`, lastModified: QUIZZES_PAGES_UPDATED_AT, changeFrequency: "yearly", priority: 0.2 },
         ...(await publicQuizEntries()),
       ];
+  }
+}
+
+/** Most-missed pages of the topic exams that have the data; none without a Firestore credential. */
+async function mostMissedEntries(): Promise<SitemapEntry[]> {
+  try {
+    const { examsWithMostMissed } = await import("@/lib/server/mostMissed");
+    const available = new Set(await examsWithMostMissed());
+    return topicExams()
+      .filter((exam) => available.has(exam.id))
+      .map((exam) => ({ url: `${SITE_URL}${mostMissedPath(exam)}`, lastModified: TOPIC_PAGES_UPDATED_AT, changeFrequency: "weekly" as const, priority: 0.6 }));
+  } catch {
+    return [];
   }
 }
 

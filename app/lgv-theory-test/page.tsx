@@ -9,6 +9,7 @@ import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
 import "@/lib/banks/uklgv";
 import { SITE_URL } from "@/lib/siteUrl";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -52,7 +53,7 @@ const jsonLd = {
       url: `${siteUrl}/lgv-theory-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "GBP" },
+      offers: examOffers("uklgv", "GBP"),
       featureList: [
         "200 LGV theory practice questions",
         "4 practice tests across all seven topic groups",

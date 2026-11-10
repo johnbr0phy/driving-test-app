@@ -7,7 +7,7 @@ import { DrillDef, ExamV2Config } from "@/lib/v2/types";
 import { v2Routes } from "@/lib/v2/registry";
 import { getTigerAsset } from "@/lib/tigerAssets";
 import { useIsNativeApp } from "@/hooks/useIsNativeApp";
-import { otherPremiumExams } from "@/lib/v2/premium";
+import { otherPremiumExams, premiumTestName } from "@/lib/v2/premium";
 import { useV2Paywall, V2Paywall } from "./V2Paywall";
 import { usePremiumPrice } from "@/hooks/usePremiumPrice";
 
@@ -35,7 +35,7 @@ export function DrillLockScreen({ exam, drill, detail, backHref }: { exam: ExamV
             <Lock className="h-5 w-5 text-gray-500 dark:text-gray-400" /> {drill.name}
           </h1>
           <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">
-            {drill.blurb} {detail}, part of Tigertest Premium along with Practice Test 2 and {otherPremiumExams(exam)}.
+            {drill.blurb} {detail}, part of Tigertest Premium along with {premiumTestName(exam) ?? "full stats"} and {otherPremiumExams(exam)}.
           </p>
           <button
             type="button"

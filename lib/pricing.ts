@@ -87,6 +87,12 @@ export function premiumPriceFor(country: string | null | undefined): PremiumPric
   return currency && amount !== undefined ? { currency, amount } : USD_PRICE;
 }
 
+/** The Premium price in a currency ("GBP"), dollars when we have none for it. For structured data. */
+export function premiumPriceInCurrency(currency: string): PremiumPrice {
+  const amount = PRICES[currency.toLowerCase()];
+  return amount !== undefined ? { currency: currency.toLowerCase(), amount } : USD_PRICE;
+}
+
 /** The amount in Stripe's smallest unit (cents, or whole yen). */
 export function stripeUnitAmount(price: PremiumPrice): number {
   return ZERO_DECIMAL.has(price.currency) ? Math.round(price.amount) : Math.round(price.amount * 100);

@@ -1,3 +1,4 @@
+import "@/lib/banks/ukcare";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -9,6 +10,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -75,7 +78,7 @@ const jsonLd = {
       url: `${siteUrl}/care-certificate-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "GBP" },
+      offers: examOffers("ukcare", "GBP"),
       featureList: [
         "200 Care Certificate practice questions",
         "All 16 standards, including the 2025 learning disability and autism standard",
@@ -270,6 +273,8 @@ export default function CareCertificateLandingPage() {
           <ExamClassFaq examId="ukcare" />
         </div>
       </div>
+
+      <ExamSampleQuestions examId="ukcare" />
 
       <ExamRelatedTests examId="ukcare" />
 

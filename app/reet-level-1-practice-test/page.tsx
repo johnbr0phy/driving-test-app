@@ -1,3 +1,4 @@
+import "@/lib/v2/banks/reet";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -8,6 +9,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { SampleQuestionsV2 } from "@/components/v2/SampleQuestionsV2";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -36,7 +39,7 @@ const faqs = [
   },
   {
     q: "Is the Tigertest REET practice test free?",
-    a: "Yes. Both mock tests and all nine drills are free, with no account required. Create a free account if you want your progress saved across your phone and computer.",
+    a: "It is free to start, with no account required. Practice Test 1 and every drill but the last are free; the final drill and the final practice test are part of Tigertest Premium, one payment with no subscription. Create a free account if you want your progress saved across your phone and computer.",
   },
 ];
 
@@ -74,7 +77,7 @@ const jsonLd = {
       url: `${siteUrl}/reet-level-1-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "INR" },
+      offers: examOffers("reet", "INR"),
       featureList: [
         "201 original REET Level 1 practice questions with explanations",
         "2 timed mock tests of 75 questions in 75 minutes",
@@ -265,6 +268,8 @@ export default function ReetLandingPage() {
           <ExamClassFaq examId="reet" />
         </div>
       </div>
+
+      <SampleQuestionsV2 examId="reet" />
 
       <ExamRelatedTests examId="reet" />
 

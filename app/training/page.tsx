@@ -33,6 +33,7 @@ import { useSharePrompt } from "@/hooks/useSharePrompt";
 import { SharePromptStep } from "@/components/SharePromptStep";
 import { useIsPremium } from "@/hooks/useIsPremium";
 import { v1GuestCounts } from "@/components/GuestSaveCard";
+import { checkoutAttribution } from "@/lib/funnel";
 
 function TrainingPageContent() {
   const router = useRouter();
@@ -80,6 +81,7 @@ function TrainingPageContent() {
         body: JSON.stringify({
           email: user.email,
           returnUrl: window.location.origin,
+          ...checkoutAttribution(),
           paywallVariant: paywallVariantForCheckout(),
           location: "training_set_4",
         }),

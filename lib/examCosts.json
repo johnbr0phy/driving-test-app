@@ -1,0 +1,243 @@
+{
+ "checked": "2026-11-10",
+ "exams": {
+  "sie": {
+   "fee": {
+    "value": "$100",
+    "url": "https://www.finra.org/registration-exams-ce/qualification-exams/securities-industry-essentials-exam"
+   },
+   "retake": {
+    "value": "30 days after a first or second failure, 180 after a third; 15 and 60 days from January 19, 2027",
+    "url": "https://www.finra.org/registration-exams-ce/qualification-exams/securities-industry-essentials-exam"
+   }
+  },
+  "series7": {
+   "fee": {
+    "value": "$395",
+    "url": "https://www.finra.org/registration-exams-ce/qualification-exams/series7"
+   },
+   "retake": {
+    "value": "30 days after a first or second failure, 180 after a third; 15 and 60 days from January 19, 2027",
+    "url": "https://www.finra.org/registration-exams-ce/qualification-exams/series7"
+   }
+  },
+  "series63": {
+   "fee": {
+    "value": "$147",
+    "url": "https://www.nasaa.org/exams/exam-faqs/"
+   },
+   "retake": {
+    "value": "30 days after a first or second failure, 180 after a third (60 for windows opened from January 4, 2027)",
+    "url": "https://www.nasaa.org/exams/exam-faqs/"
+   }
+  },
+  "series65": {
+   "fee": {
+    "value": "$187",
+    "url": "https://www.nasaa.org/exams/exam-faqs/"
+   },
+   "retake": {
+    "value": "30 days after a first or second failure, 180 after a third (60 for windows opened from January 4, 2027)",
+    "url": "https://www.nasaa.org/exams/exam-faqs/"
+   }
+  },
+  "nmls": {
+   "fee": {
+    "value": "$110",
+    "url": "https://mortgage.nationwidelicensingsystem.org/knowledge/products/nmls/pubs/testingHbk/education/mlo_testing/mlo_test_guide/mlo_testing_hbk_intro-1.html"
+   },
+   "retake": {
+    "value": "30 days after each failed test, 180 days after every third failure",
+    "url": "https://mortgage.nationwidelicensingsystem.org/knowledge/products/nmls/pubs/testingHbk/education/mlo_testing/mlo_test_guide/mlo_testing_hbk_retake.html"
+   }
+  },
+  "cpafar": {
+   "retake": {
+    "value": "No set wait: retake once you have your score and a new NTS; credit window is set by each state board",
+    "url": "https://nasba.org/exams/cpaexam/examfaq/"
+   }
+  },
+  "cpareg": {
+   "retake": {
+    "value": "No set wait: retake once you have your score and a new NTS; credit window is set by each state board",
+    "url": "https://nasba.org/exams/cpaexam/examfaq/"
+   }
+  },
+  "cpaaud": {
+   "retake": {
+    "value": "No set wait: retake once you have your score and a new NTS; credit window is set by each state board",
+    "url": "https://nasba.org/exams/cpaexam/examfaq/"
+   }
+  },
+  "phr": {
+   "fee": {
+    "value": "$395 exam fee plus $100 application fee",
+    "url": "https://www.hrci.org/certifications/individual-certifications/phr"
+   },
+   "retake": {
+    "value": "90 days after a failed exam; without Second Chance Insurance you re-apply and pay the fees again",
+    "url": "https://www.hrci.org/docs/default-source/pdf-documents/cert-handbook.pdf?sfvrsn=98ed0c3e_9"
+   }
+  },
+  "nhie": {
+   "fee": {
+    "value": "$225 per test in most states and in Canada",
+    "url": "https://nationalhomeinspectorexam.org/frequently-asked-questions-2/"
+   },
+   "retake": {
+    "value": "30 days between attempts",
+    "url": "https://nationalhomeinspectorexam.org/frequently-asked-questions-2/"
+   }
+  },
+  "ptcb": {
+   "fee": {
+    "value": "$129",
+    "url": "https://www.ptcb.org/credentials/certified-pharmacy-technician"
+   }
+  },
+  "phleb": {
+   "retake": {
+    "value": "30 days between attempts; after a third failure, wait 1 year before each further try",
+    "url": "https://www.nhanow.com/docs/default-source/test-plans/candidate_handbook.pdf"
+   }
+  },
+  "ccma": {
+   "retake": {
+    "value": "30 days between attempts; after a third failure, wait 1 year before each further try",
+    "url": "https://www.nhanow.com/docs/default-source/test-plans/candidate_handbook.pdf"
+   }
+  },
+  "cma": {
+   "fee": {
+    "value": "$125 for AAMA members and recent graduates, $250 for nonmembers",
+    "url": "https://aama-ntl.org/certification/eligibility"
+   }
+  },
+  "cpc": {
+   "fee": {
+    "value": "$425 for one attempt, or $499 for two attempts",
+    "url": "https://www.aapc.com/certifications/cpc/taking-the-cpc-exam"
+   }
+  },
+  "cca": {
+   "fee": {
+    "value": "$199 for AHIMA members, $299 for non-members",
+    "url": "https://www.ahima.org/certification-careers/certifications-overview/cca/"
+   },
+   "retake": {
+    "value": "At least 30 days after a failed attempt",
+    "url": "https://www.ahima.org/certification-careers/certifications-overview/cca/"
+   }
+  },
+  "nclex": {
+   "fee": {
+    "value": "$200 registration fee for US licensure, rising to $350 on Feb. 1, 2027",
+    "url": "https://www.nclex.com/fees-payment.page"
+   },
+   "retake": {
+    "value": "45 days between attempts, up to 8 times a year; your nursing board may allow fewer",
+    "url": "https://www.nclex.com/files/2026_NCLEX_Candidate_Bulletin_English.pdf"
+   }
+  },
+  "emt": {
+   "fee": {
+    "value": "$104 application fee, charged for each attempt",
+    "url": "https://www.nremt.org/Handbooks/EMT/Certification-Process"
+   },
+   "retake": {
+    "value": "15 days after each attempt; 6 attempts in all, with remedial education after 3 failures",
+    "url": "https://www.nremt.org/Handbooks/EMT/Cognitive-Exam"
+   }
+  },
+  "teas": {
+   "fee": {
+    "value": "$120 plus sales tax for TEAS at ATI or at PSI; schools set their own price",
+    "url": "https://help.atitesting.com/what-is-the-cost-of-the-teas-exam/"
+   },
+   "retake": {
+    "value": "ATI sets no waiting period; your school sets any wait and any limit on attempts",
+    "url": "https://help.atitesting.com/how-soon-can-i-retake-the-ati-teas-exam/"
+   }
+  },
+  "rbt": {
+   "fee": {
+    "value": "$65 application fee to the BACB plus $45 per exam appointment to Pearson VUE",
+    "url": "https://www.bacb.com/rbt-handbook"
+   },
+   "retake": {
+    "value": "7 days after each attempt; up to 8 attempts in the 12 months after application approval",
+    "url": "https://www.bacb.com/rbt-handbook"
+   }
+  },
+  "aswb": {
+   "fee": {
+    "value": "$230",
+    "url": "https://www.aswb.org/exam/"
+   },
+   "retake": {
+    "value": "90 days between attempts; your board may limit retakes",
+    "url": "https://www.aswb.org/exam/exam-scoring/if-you-fail-the-exam/"
+   }
+  },
+  "nce": {
+   "retake": {
+    "value": "30 days after a failed attempt; your state board sets the number of attempts",
+    "url": "https://nbcc.org/assets/exam/handbooks/nce.pdf"
+   }
+  },
+  "secplus": {
+   "retake": {
+    "value": "No wait before a 2nd attempt, 14 days before a 3rd or later one, full price each time, no attempt limit",
+    "url": "https://www.comptia.org/en-us/resources/test-policies/comptia-certification-retake-policy/"
+   }
+  },
+  "aplus": {
+   "retake": {
+    "value": "No wait before a 2nd attempt, 14 days before a 3rd or later one, full price each time, no attempt limit",
+    "url": "https://www.comptia.org/en-us/resources/test-policies/comptia-certification-retake-policy/"
+   }
+  },
+  "netplus": {
+   "retake": {
+    "value": "No wait before a 2nd attempt, 14 days before a 3rd or later one, full price each time, no attempt limit",
+    "url": "https://www.comptia.org/en-us/resources/test-policies/comptia-certification-retake-policy/"
+   }
+  },
+  "aws": {
+   "fee": {
+    "value": "$100",
+    "url": "https://aws.amazon.com/certification/certified-cloud-practitioner/"
+   },
+   "retake": {
+    "value": "14 calendar days after a failed attempt, no limit on attempts, full fee each time",
+    "url": "https://aws.amazon.com/certification/faqs/"
+   }
+  },
+  "ccna": {
+   "fee": {
+    "value": "$300",
+    "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccna.html"
+   },
+   "retake": {
+    "value": "5 calendar days after a failed attempt",
+    "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/policies.html"
+   }
+  },
+  "cissp": {
+   "fee": {
+    "value": "$749 in the US",
+    "url": "https://www.isc2.org/register-for-exam/isc2-exam-pricing"
+   },
+   "retake": {
+    "value": "Wait 30 days after the 1st fail, 60 after the 2nd, 90 after the 3rd, up to 4 attempts in 12 months",
+    "url": "https://www.isc2.org/exams/after-your-exam"
+   }
+  },
+  "gre": {
+   "retake": {
+    "value": "Once every 21 days, up to 5 times in any rolling 12 months",
+    "url": "https://www.in.ets.org/content/dam/ets-org/pdfs/gre/gre-info-bulletin.pdf"
+   }
+  }
+ }
+}

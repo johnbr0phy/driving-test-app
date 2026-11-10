@@ -1,3 +1,4 @@
+import "@/lib/banks/ukfood";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -9,6 +10,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -52,7 +55,7 @@ const jsonLd = {
       url: `${siteUrl}/level-2-food-hygiene-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "GBP" },
+      offers: examOffers("ukfood", "GBP"),
       featureList: [
         "200 Level 2 food safety and hygiene practice questions",
         "4 mock tests of 50 questions with a 70% pass line",
@@ -305,6 +308,8 @@ export default function Level2FoodHygieneLandingPage() {
           <ExamClassFaq examId="ukfood" />
         </div>
       </div>
+
+      <ExamSampleQuestions examId="ukfood" />
 
       <ExamRelatedTests examId="ukfood" />
 

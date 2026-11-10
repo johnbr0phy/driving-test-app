@@ -1,3 +1,4 @@
+import "@/lib/v2/banks/naplan7";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -9,6 +10,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { SampleQuestionsV2 } from "@/components/v2/SampleQuestionsV2";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -81,7 +84,7 @@ const jsonLd = {
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
       inLanguage: "en-AU",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "AUD" },
+      offers: examOffers("naplan7", "AUD"),
       featureList: [
         "Two NAPLAN Year 7 practice tests: Reading, Conventions of Language and Numeracy",
         "Tailored testlets: the second part of each domain is harder or easier depending on the first",
@@ -259,6 +262,8 @@ export default function NaplanYear7LandingPage() {
           <ExamClassFaq examId="naplan7" />
         </div>
       </div>
+
+      <SampleQuestionsV2 examId="naplan7" />
 
       <ExamRelatedTests examId="naplan7" />
 

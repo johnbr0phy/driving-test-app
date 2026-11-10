@@ -1,3 +1,4 @@
+import "@/lib/banks/sfadmin";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -7,6 +8,8 @@ import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHe
 import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { SITE_URL } from "@/lib/siteUrl";
+import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -73,7 +76,7 @@ const jsonLd = {
       url: `${siteUrl}/salesforce-administrator-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      offers: examOffers("sfadmin"),
       featureList: [
         "200 Salesforce Platform Administrator practice questions",
         "3 practice tests of 60 questions weighted like the real exam, 68% to pass",
@@ -262,6 +265,8 @@ export default function SalesforceAdminLandingPage() {
           ))}
         </div>
       </div>
+
+      <ExamSampleQuestions examId="sfadmin" />
 
       <ExamRelatedTests examId="sfadmin" />
 

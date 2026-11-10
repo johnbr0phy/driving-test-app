@@ -1,3 +1,4 @@
+import "@/lib/v2/banks/uknmc";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -7,6 +8,8 @@ import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHe
 import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { SITE_URL } from "@/lib/siteUrl";
+import { SampleQuestionsV2 } from "@/components/v2/SampleQuestionsV2";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -35,7 +38,7 @@ const faqs = [
   },
   {
     q: "Is the Tigertest NMC CBT practice test free?",
-    a: "Yes. Both practice tests and all eight drills are free, with no account needed. The questions are original practice questions written from the NMC test specification and blueprint, not real exam questions. Create a free account to keep your progress in step between your phone and your computer.",
+    a: "It is free to start, with no account needed. Practice Test 1 and every drill but the last are free; the final drill and the final practice test are part of Tigertest Premium, one payment with no subscription. The questions are original practice questions written from the NMC test specification and blueprint, not real exam questions. Create a free account to keep your progress in step between your phone and your computer.",
   },
 ];
 
@@ -74,7 +77,7 @@ const jsonLd = {
       url: `${siteUrl}/nmc-cbt-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "GBP" },
+      offers: examOffers("uknmc", "GBP"),
       featureList: [
         "272 original NMC CBT practice questions with rationales, written for UK nursing practice",
         "Two full mock tests: 15 numeracy questions in 30 minutes and 100 clinical questions in 2 hours 30 minutes",
@@ -247,6 +250,8 @@ export default function NmcCbtLandingPage() {
           </div>
         </div>
       </div>
+
+      <SampleQuestionsV2 examId="uknmc" />
 
       <ExamRelatedTests examId="uknmc" />
 

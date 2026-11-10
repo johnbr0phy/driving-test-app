@@ -1,3 +1,4 @@
+import "@/lib/v2/banks/rrbalp";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -8,6 +9,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { SampleQuestionsV2 } from "@/components/v2/SampleQuestionsV2";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -36,7 +39,7 @@ const faqs = [
   },
   {
     q: "Is the Tigertest RRB ALP mock test free?",
-    a: "Yes. Both full mock tests and all seven subject drills are free, with no account required. Create a free account if you want your progress saved across your phone and computer.",
+    a: "It is free to start, with no account required. Practice Test 1 and every drill but the last are free; the final drill and the final practice test are part of Tigertest Premium, one payment with no subscription. Create a free account if you want your progress saved across your phone and computer.",
   },
 ];
 
@@ -74,7 +77,7 @@ const jsonLd = {
       url: `${siteUrl}/rrb-alp-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "INR" },
+      offers: examOffers("rrbalp", "INR"),
       featureList: [
         "200 original RRB ALP CBT 1 practice questions with explanations",
         "2 full 75-question mock tests in 60 minutes, the real CBT 1 length",
@@ -263,6 +266,8 @@ export default function RrbAlpLandingPage() {
           <ExamClassFaq examId="rrbalp" />
         </div>
       </div>
+
+      <SampleQuestionsV2 examId="rrbalp" />
 
       <ExamRelatedTests examId="rrbalp" />
 

@@ -9,6 +9,7 @@ import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
 import "@/lib/banks/caqc";
 import { SITE_URL } from "@/lib/siteUrl";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -52,7 +53,7 @@ const jsonLd = {
       url: `${siteUrl}/saaq-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "CAD" },
+      offers: examOffers("caqc", "CAD"),
       featureList: [
         "200 SAAQ practice questions",
         "4 practice tests covering all three parts of the knowledge test",

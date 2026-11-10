@@ -652,6 +652,7 @@ export function OpportunitiesView({ data, onRefresh, refreshing, updating = fals
                   <Th right>Visitors, 30d</Th>
                   <Th right title="Accounts whose first visit came from this source (from this release on)">Signups</Th>
                   <Th right>Buyers</Th>
+                  <Th right>Revenue</Th>
                 </tr>
               </thead>
               <tbody>
@@ -671,6 +672,7 @@ export function OpportunitiesView({ data, onRefresh, refreshing, updating = fals
                     <td className="py-2 px-2 text-right tabular-nums">{fmtInt(x.visits30d)}</td>
                     <td className="py-2 px-2 text-right tabular-nums">{data.sourceSignupsTracked > 0 ? fmtInt(x.signups) : <span className="text-gray-400">·</span>}</td>
                     <td className="py-2 px-2 text-right tabular-nums">{data.sourceSignupsTracked > 0 ? fmtInt(x.buyers) : <span className="text-gray-400">·</span>}</td>
+                    <td className="py-2 px-2 text-right tabular-nums">{x.revenueCents > 0 ? `$${(x.revenueCents / 100).toFixed(0)}` : <span className="text-gray-400">·</span>}</td>
                   </tr>
                 ))}
               </tbody>
@@ -678,13 +680,13 @@ export function OpportunitiesView({ data, onRefresh, refreshing, updating = fals
           </TableScroll>
           {data.landings.length > 0 ? (
             <div className="mt-5">
-              <h3 className="text-xs font-semibold text-gray-700 dark:text-gray-200 mb-2">Landing pages that make accounts</h3>
+              <h3 className="text-xs font-semibold text-gray-700 dark:text-gray-200 mb-2">Landing pages that make accounts and revenue</h3>
               <ul className="text-sm divide-y divide-gray-100 dark:divide-gray-800">
                 {data.landings.map((l) => (
                   <li key={l.path} className="flex justify-between py-1.5">
                     <span className="font-mono text-xs text-gray-700 dark:text-gray-200 truncate">{l.path}</span>
                     <span className="tabular-nums text-xs text-gray-600 dark:text-gray-300 shrink-0 ml-3">
-                      {fmtInt(l.signups)} signups · {fmtInt(l.buyers)} buyers
+                      {fmtInt(l.signups)} signups · {fmtInt(l.buyers)} buyers · ${(l.revenueCents / 100).toFixed(0)}
                     </span>
                   </li>
                 ))}

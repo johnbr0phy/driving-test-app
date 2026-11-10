@@ -1,3 +1,4 @@
+import "@/lib/banks/caweld";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -9,6 +10,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 const path = "/red-seal-welder-practice-test";
@@ -53,7 +56,7 @@ const jsonLd = {
       url: `${siteUrl}${path}`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "CAD" },
+      offers: examOffers("caweld", "CAD"),
       featureList: [
         "200 Red Seal Welder practice questions",
         "4 practice tests of 50 questions with the 70% pass mark",
@@ -306,6 +309,8 @@ export default function RedSealWelderLandingPage() {
           <ExamClassFaq examId="caweld" />
         </div>
       </div>
+
+      <ExamSampleQuestions examId="caweld" />
 
       <ExamRelatedTests examId="caweld" />
 

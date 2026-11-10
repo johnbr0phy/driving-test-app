@@ -9,6 +9,7 @@ import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
 import "@/lib/banks/pkdrive";
 import { SITE_URL } from "@/lib/siteUrl";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -75,7 +76,7 @@ const jsonLd = {
       url: `${siteUrl}/pakistan-driving-licence-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "PKR" },
+      offers: examOffers("pkdrive", "PKR"),
       featureList: [
         "200 Pakistan road sign and traffic rule questions",
         "4 mock tests of 50 questions",

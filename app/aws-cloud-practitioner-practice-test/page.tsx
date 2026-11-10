@@ -1,3 +1,4 @@
+import "@/lib/v2/banks/aws";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -8,6 +9,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { SampleQuestionsV2 } from "@/components/v2/SampleQuestionsV2";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -51,7 +54,7 @@ const jsonLd = {
       url: `${siteUrl}/aws-cloud-practitioner-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      offers: examOffers("aws"),
       featureList: [
         "200 AWS practice questions",
         "2 full 65-question practice tests in 90 minutes",
@@ -102,7 +105,7 @@ const jsonLd = {
           name: "Is the Tigertest AWS practice test free?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. Both practice tests and all four drills are free, with no account required. Create a free account if you want your progress saved across devices.",
+            text: "It is free to start, with no account required. Practice Test 1 and every drill but the last are free; the final drill and the final practice test are part of Tigertest Premium, one payment with no subscription. Create a free account if you want your progress saved across devices.",
           },
         },
         classFaqJsonLd("aws"),
@@ -294,12 +297,14 @@ export default function AwsLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is the Tigertest AWS practice test free?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              Yes. Both practice tests and all four drills are free, with no account required. Create a free account if you want your progress saved across devices.
+              It is free to start, with no account required. Practice Test 1 and every drill but the last are free; the final drill and the final practice test are part of Tigertest Premium, one payment with no subscription. Create a free account if you want your progress saved across devices.
             </p>
           </div>
           <ExamClassFaq examId="aws" />
         </div>
       </div>
+
+      <SampleQuestionsV2 examId="aws" />
 
       <ExamRelatedTests examId="aws" />
 

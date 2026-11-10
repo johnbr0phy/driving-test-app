@@ -22,6 +22,7 @@ import { DMV_EXAM_ID } from "@/lib/classes";
 import { recordClassAnswer, recordClassTest } from "@/lib/classProgress";
 import { DMV_ROUTES } from "@/lib/examRoutes";
 import { paywallVariantForCheckout } from "@/lib/paywallTest";
+import { checkoutAttribution } from "@/lib/funnel";
 
 export default function TestPage() {
   const params = useParams();
@@ -65,6 +66,7 @@ export default function TestPage() {
         body: JSON.stringify({
           email: user.email,
           returnUrl: window.location.origin,
+          ...checkoutAttribution(),
           paywallVariant: paywallVariantForCheckout(),
           location: "practice_test_4",
         }),

@@ -1,3 +1,4 @@
+import "@/lib/banks/hklesfi1";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -7,6 +8,8 @@ import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHe
 import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { SITE_URL } from "@/lib/siteUrl";
+import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -73,7 +76,7 @@ const jsonLd = {
       url: `${siteUrl}/le-paper-1-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "HKD" },
+      offers: examOffers("hklesfi1", "HKD"),
       featureList: [
         "200 LE Paper 1 practice questions",
         "3 real-length mock tests of 60 questions",
@@ -261,6 +264,8 @@ export default function LePaper1LandingPage() {
           ))}
         </div>
       </div>
+
+      <ExamSampleQuestions examId="hklesfi1" />
 
       <ExamRelatedTests examId="hklesfi1" />
 

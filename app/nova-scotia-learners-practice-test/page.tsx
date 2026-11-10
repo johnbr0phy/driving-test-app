@@ -9,6 +9,7 @@ import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
 import "@/lib/banks/cans";
 import { SITE_URL } from "@/lib/siteUrl";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -52,7 +53,7 @@ const jsonLd = {
       url: `${siteUrl}/nova-scotia-learners-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "CAD" },
+      offers: examOffers("cans", "CAD"),
       featureList: [
         "200 original Nova Scotia learner's practice questions",
         "5 practice tests of 40 questions: 20 signs, 20 rules of the road",

@@ -1,3 +1,4 @@
+import "@/lib/v2/banks/vicsel";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -9,6 +10,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { SampleQuestionsV2 } from "@/components/v2/SampleQuestionsV2";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -83,7 +86,7 @@ const jsonLd = {
       url: `${siteUrl}/victorian-selective-entry-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "AUD" },
+      offers: examOffers("vicsel", "AUD"),
       featureList: [
         "Two full practice tests: Mathematics and Quantitative Reasoning, Reading and Verbal Reasoning, 80 questions each",
         "Timed sections at the real exam's 60 and 55 minutes, no calculator",
@@ -258,6 +261,8 @@ export default function VicSelectiveLandingPage() {
           <ExamClassFaq examId="vicsel" />
         </div>
       </div>
+
+      <SampleQuestionsV2 examId="vicsel" />
 
       <ExamRelatedTests examId="vicsel" />
 

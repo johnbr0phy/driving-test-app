@@ -1,3 +1,4 @@
+import "@/lib/v2/banks/agniveervayu";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -8,6 +9,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { SampleQuestionsV2 } from "@/components/v2/SampleQuestionsV2";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -36,7 +39,7 @@ const faqs = [
   },
   {
     q: "Are these the same questions as the real Agniveer Vayu exam?",
-    a: "No. These are original practice questions written to the 10+2 CBSE English, Physics and Mathematics syllabus that the notification names, not questions copied from past papers or the real exam. Tigertest is not affiliated with the Indian Air Force or CASB. Both mock tests and all eight drills are free, with no account required.",
+    a: "No. These are original practice questions written to the 10+2 CBSE English, Physics and Mathematics syllabus that the notification names, not questions copied from past papers or the real exam. Tigertest is not affiliated with the Indian Air Force or CASB. It is free to start, with no account required. Practice Test 1 and every drill but the last are free; the final drill and the final practice test are part of Tigertest Premium, one payment with no subscription.",
   },
 ];
 
@@ -74,7 +77,7 @@ const jsonLd = {
       url: `${siteUrl}/agniveer-vayu-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "INR" },
+      offers: examOffers("agniveervayu", "INR"),
       featureList: [
         "204 original Agniveer Vayu Science practice questions with explanations",
         "2 full mock tests of 70 questions in 60 minutes: English, Physics and Mathematics",
@@ -263,6 +266,8 @@ export default function AgniveerVayuLandingPage() {
           <ExamClassFaq examId="agniveervayu" />
         </div>
       </div>
+
+      <SampleQuestionsV2 examId="agniveervayu" />
 
       <ExamRelatedTests examId="agniveervayu" />
 

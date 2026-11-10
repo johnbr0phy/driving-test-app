@@ -19,7 +19,7 @@ import { useV2Store } from "@/store/useV2Store";
 import { useHydration } from "@/hooks/useHydration";
 import { useSound } from "@/hooks/useSound";
 import { getTigerAsset } from "@/lib/tigerAssets";
-import { useIsPremium } from "@/hooks/useIsPremium";
+import { useV2Premium } from "@/hooks/useV2Premium";
 import { hasDrillProgress, isDrillLocked } from "@/lib/v2/premium";
 import { DrillLockScreen } from "./DrillLockScreen";
 import { Fireworks } from "@/components/Fireworks";
@@ -43,7 +43,7 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
   const completeBasics = useV2Store((s) => s.completeBasics);
   const basicsMap = useV2Store((s) => s.basics);
   const drillsMap = useV2Store((s) => s.drills);
-  const { isPremium, ready: premiumReady } = useIsPremium();
+  const { isPremium, ready: premiumReady } = useV2Premium(exam.id);
 
   const drill = exam.drills.find((d) => d.key === drillKeyParam);
   const skills = drill ? basicsFor(drill) : [];

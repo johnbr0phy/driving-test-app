@@ -60,7 +60,7 @@ function rotateKeyTo(q: Question, target: number): Question {
 }
 
 // Headings in each language a landing is written in; English otherwise.
-const SAMPLE_COPY: Partial<Record<Language, { title: (name: string) => string; sub: (n: number, total: string) => string; answer: string; quiz: (name: string) => string }>> = {
+export const SAMPLE_COPY: Partial<Record<Language, { title: (name: string) => string; sub: (n: number, total: string) => string; answer: string; quiz: (name: string) => string }>> = {
   en: {
     title: (name) => `${name} sample questions and answers`,
     sub: (n, total) => `${n} of the ${total} practice questions, one from each topic, with the answer explained.`,
@@ -152,9 +152,23 @@ const SAMPLE_COPY: Partial<Record<Language, { title: (name: string) => string; s
  * bank) and the headings; it defaults to the exam's base language, so a
  * native exam's landing shows its own questions with no prop.
  */
-export function ExamSampleQuestions({ examId, count = 6, lang }: { examId: ExamId; count?: number; lang?: Language }) {
+export function ExamSampleQuestions({
+  examId,
+  count = 6,
+  lang,
+  page,
+}: {
+  examId: ExamId;
+  count?: number;
+  lang?: Language;
+  /** A page that is not the exam's catalog landing (a state version): its own name, question total and URL path. */
+  page?: { shortName: string; name: string; questions: number; path: string };
+}) {
   const exam = getExamById(examId);
-  const test = getCatalogEntry(examId);
+  const entry = getCatalogEntry(examId);
+  const test = page
+    ? { shortName: page.shortName, name: page.name, questions: page.questions, href: page.path }
+    : entry;
   if (!exam || !test) return null;
   const language = lang ?? examBaseLanguage(exam);
   const sample = pickSampleQuestions(getExamQuestions(examId, language), count);
@@ -164,7 +178,7 @@ export function ExamSampleQuestions({ examId, count = 6, lang }: { examId: ExamI
   const shortName = language === "en" ? test.shortName : localizeExam(exam, language).shortName;
   const locale = examLandingLocale(examId, language);
   const total = test.questions.toLocaleString(locale);
-  const landing = language === examBaseLanguage(exam) ? exam.landingPath ?? test.href : exam.translations?.[language]?.landingPath ?? test.href;
+  const landing = page ? page.path : language === examBaseLanguage(exam) ? exam.landingPath ?? test.href : exam.translations?.[language]?.landingPath ?? test.href;
 
   const options = (q: Question) => [q.optionA, q.optionB, q.optionC, q.optionD];
   const key = (q: Question) => Math.max(0, LETTERS.indexOf(q.correctAnswer as (typeof LETTERS)[number]));
@@ -231,4 +245,139 @@ export function ExamSampleQuestions({ examId, count = 6, lang }: { examId: ExamI
       </ol>
     </section>
   );
+}
+
+/**
+ * The same block for a DMV state page: six of that state's own questions
+ * (state law, one per topic) from data/questions.json. English only; the
+ * page passes the state's rows so this file never imports the DMV bank.
+ */
+export function DmvSampleQuestions({ questions, stateName, path }: { questions: Question[]; stateName: string; path: string }) {
+  const sample = pickSampleQuestions(questions, 6);
+  if (sample.length === 0) return null;
+  const options = (q: Question) => [q.optionA, q.optionB, q.optionC, q.optionD];
+  const key = (q: Question) => Math.max(0, LETTERS.indexOf(q.correctAnswer as (typeof LETTERS)[number]));
+  const url = `${siteUrl}${path}`;
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Quiz",
+    "@id": `${url}#sample-questions`,
+    name: `${stateName} DMV permit test sample questions`,
+    about: `${stateName} DMV written knowledge test`,
+    inLanguage: "en-US",
+    educationalLevel: "beginner",
+    isAccessibleForFree: true,
+    hasPart: sample.map((q) => {
+      const opts = options(q);
+      return {
+        "@type": "Question",
+        eduQuestionType: "Multiple choice",
+        text: q.question,
+        acceptedAnswer: { "@type": "Answer", text: opts[key(q)] },
+        suggestedAnswer: opts.filter((_, i) => i !== key(q)).map((text) => ({ "@type": "Answer", text })),
+        comment: { "@type": "Comment", text: q.explanation },
+      };
+    }),
+  };
+  return (
+    <section aria-labelledby="sample-questions" className="mb-16">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <h2 id="sample-questions" className="text-3xl font-bold text-gray-900 dark:text-gray-50 text-center mb-3">
+        {stateName} permit test questions and answers
+      </h2>
+      <p className="text-gray-600 dark:text-gray-300 text-center mb-8">
+        {sample.length} of the questions on {stateName}&apos;s own laws, with the answer explained.
+      </p>
+      <ol className="space-y-5">
+        {sample.map((q, n) => (
+          <li key={q.questionId} className="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6">
+            <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-4">
+              {n + 1}. {q.question}
+            </h3>
+            <ul className="space-y-2 mb-4">
+              {options(q).map((opt, i) => (
+                <li
+                  key={i}
+                  className={
+                    i === key(q)
+                      ? "rounded-lg border border-green-300 dark:border-green-800 bg-green-50 dark:bg-green-950 px-3 py-2 text-green-900 dark:text-green-100"
+                      : "rounded-lg border border-gray-200 dark:border-gray-800 px-3 py-2 text-gray-700 dark:text-gray-200"
+                  }
+                >
+                  <span className="font-semibold mr-2">{LETTERS[i]}.</span>
+                  {opt}
+                </li>
+              ))}
+            </ul>
+            <p className="text-gray-700 dark:text-gray-200">
+              <strong className="text-gray-900 dark:text-gray-50">Answer: {LETTERS[key(q)]}.</strong> {q.explanation}
+            </p>
+          </li>
+        ))}
+      </ol>
+    </section>
+  );
+}
+
+/** Keys spread over A to D (options turned, order kept), for any list shown in full. */
+export function spreadSampleKeys(list: Question[]): Question[] {
+  return list.map((q, n) => (hasPositionDependentAnswers(q) ? q : rotateKeyTo(q, KEY_SPREAD[n % KEY_SPREAD.length])));
+}
+
+/** Question cards with the answer marked and explained; `note` adds a line per question (a miss rate). */
+export function SampleQuestionCards({ sample, note }: { sample: Question[]; note?: (q: Question) => string | undefined }) {
+  const options = (q: Question) => [q.optionA, q.optionB, q.optionC, q.optionD];
+  const key = (q: Question) => Math.max(0, LETTERS.indexOf(q.correctAnswer as (typeof LETTERS)[number]));
+  return (
+    <ol className="space-y-6">
+      {sample.map((q, n) => (
+        <li key={q.questionId} className="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6">
+          {note?.(q) && <p className="mb-2 text-sm font-semibold text-brand-dark">{note(q)}</p>}
+          <h2 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-4">
+            {n + 1}. {q.question}
+          </h2>
+          <ul className="space-y-2 mb-4">
+            {options(q).map((opt, i) => (
+              <li
+                key={i}
+                className={
+                  i === key(q)
+                    ? "rounded-lg border border-green-300 dark:border-green-800 bg-green-50 dark:bg-green-950 px-3 py-2 text-green-900 dark:text-green-100"
+                    : "rounded-lg border border-gray-200 dark:border-gray-800 px-3 py-2 text-gray-700 dark:text-gray-200"
+                }
+              >
+                <span className="font-semibold mr-2">{LETTERS[i]}.</span>
+                {opt}
+              </li>
+            ))}
+          </ul>
+          <p className="text-gray-700 dark:text-gray-200">
+            <strong className="text-gray-900 dark:text-gray-50">Answer: {LETTERS[key(q)]}.</strong> {q.explanation}
+          </p>
+        </li>
+      ))}
+    </ol>
+  );
+}
+
+/** A Quiz node for any list of questions shown with answers. */
+export function quizJsonLd(url: string, name: string, about: string, sample: Question[]) {
+  const options = (q: Question) => [q.optionA, q.optionB, q.optionC, q.optionD];
+  const key = (q: Question) => Math.max(0, LETTERS.indexOf(q.correctAnswer as (typeof LETTERS)[number]));
+  return {
+    "@type": "Quiz",
+    "@id": `${url}#questions`,
+    name,
+    about,
+    inLanguage: "en-US",
+    isAccessibleForFree: true,
+    hasPart: sample.map((q) => ({
+      "@type": "Question",
+      eduQuestionType: "Multiple choice",
+      text: q.question,
+      acceptedAnswer: { "@type": "Answer", text: options(q)[key(q)] },
+      suggestedAnswer: options(q).filter((_, i) => i !== key(q)).map((text) => ({ "@type": "Answer", text })),
+      comment: { "@type": "Comment", text: q.explanation },
+    })),
+  };
 }

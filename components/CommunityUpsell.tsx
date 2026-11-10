@@ -4,6 +4,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import { useCommunityAvailable } from "@/hooks/useCommunityStats";
 import { getExamById } from "@/lib/exams";
+import { hasTopicPages, mostMissedPath } from "@/lib/topicPages";
 
 /** Renders its children only once this test has Common Mistakes
  *  (lib/communityStats.ts), e.g. the DMV landing's "Short on time?" block. */
@@ -33,6 +34,13 @@ export function CommunityUpsell({ examId }: { examId: string }) {
         >
           See the hardest questions →
         </Link>
+        {hasTopicPages(examId) && (
+          <p className="mt-4">
+            <Link href={mostMissedPath(exam)} className="text-brand-dark font-medium underline underline-offset-2">
+              Preview the five most-missed {exam.shortName} questions
+            </Link>
+          </p>
+        )}
       </div>
     </section>
   );

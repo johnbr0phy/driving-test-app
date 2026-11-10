@@ -1,3 +1,4 @@
+import "@/lib/v2/banks/ibpspo";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -8,6 +9,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { SampleQuestionsV2 } from "@/components/v2/SampleQuestionsV2";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -36,7 +39,7 @@ const faqs = [
   },
   {
     q: "Are these the real IBPS PO questions?",
-    a: "No. These are original practice questions written to the IBPS PO Prelims pattern and syllabus, not questions from IBPS or past papers. They follow the real paper's question types: reading comprehension, cloze tests and error spotting; simplification, number series, quadratic equations, data interpretation and arithmetic; and inequalities, syllogisms, puzzles, seating arrangements, coding, blood relations and directions. Both mock tests and all nine drills are free, with no account required.",
+    a: "No. These are original practice questions written to the IBPS PO Prelims pattern and syllabus, not questions from IBPS or past papers. They follow the real paper's question types: reading comprehension, cloze tests and error spotting; simplification, number series, quadratic equations, data interpretation and arithmetic; and inequalities, syllogisms, puzzles, seating arrangements, coding, blood relations and directions. It is free to start, with no account required. Practice Test 1 and every drill but the last are free; the final drill and the final practice test are part of Tigertest Premium, one payment with no subscription.",
   },
 ];
 
@@ -74,7 +77,7 @@ const jsonLd = {
       url: `${siteUrl}/ibps-po-prelims-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "INR" },
+      offers: examOffers("ibpspo", "INR"),
       featureList: [
         "225 original IBPS PO Prelims practice questions with explanations",
         "2 full 100-question mock tests in 60 minutes with 20-minute sectional timing",
@@ -263,6 +266,8 @@ export default function IbpsPoLandingPage() {
           <ExamClassFaq examId="ibpspo" />
         </div>
       </div>
+
+      <SampleQuestionsV2 examId="ibpspo" />
 
       <ExamRelatedTests examId="ibpspo" />
 

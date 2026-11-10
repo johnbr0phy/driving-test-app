@@ -1,3 +1,4 @@
+import "@/lib/v2/banks/ibpsrrb";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -8,6 +9,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { SampleQuestionsV2 } from "@/components/v2/SampleQuestionsV2";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -36,7 +39,7 @@ const faqs = [
   },
   {
     q: "Are these the real IBPS RRB questions?",
-    a: "No. These are original practice questions written to the IBPS RRB Office Assistant Prelims pattern, not questions from IBPS or past papers. They follow the real paper's question types: puzzles, seating arrangements, inequalities, syllogisms, coding-decoding, blood relations, directions and ranking in Reasoning; simplification, approximation, number series, data interpretation and arithmetic in Numerical Ability. The questions are in English only, though the real exam can also be taken in Hindi and the state's language. Both mock tests and all seven drills are free, with no account required.",
+    a: "No. These are original practice questions written to the IBPS RRB Office Assistant Prelims pattern, not questions from IBPS or past papers. They follow the real paper's question types: puzzles, seating arrangements, inequalities, syllogisms, coding-decoding, blood relations, directions and ranking in Reasoning; simplification, approximation, number series, data interpretation and arithmetic in Numerical Ability. The questions are in English only, though the real exam can also be taken in Hindi and the state's language. It is free to start, with no account required. Practice Test 1 and every drill but the last are free; the final drill and the final practice test are part of Tigertest Premium, one payment with no subscription.",
   },
 ];
 
@@ -74,7 +77,7 @@ const jsonLd = {
       url: `${siteUrl}/ibps-rrb-office-assistant-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "INR" },
+      offers: examOffers("ibpsrrb", "INR"),
       featureList: [
         "200 original IBPS RRB Office Assistant Prelims practice questions with explanations",
         "2 full 80-question mock tests in 45 minutes with sectional timing (25 and 20 minutes)",
@@ -262,6 +265,8 @@ export default function IbpsRrbLandingPage() {
           <ExamClassFaq examId="ibpsrrb" />
         </div>
       </div>
+
+      <SampleQuestionsV2 examId="ibpsrrb" />
 
       <ExamRelatedTests examId="ibpsrrb" />
 

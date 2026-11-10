@@ -1,3 +1,4 @@
+import "@/lib/v2/banks/ged";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -9,6 +10,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { SampleQuestionsV2 } from "@/components/v2/SampleQuestionsV2";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -83,7 +86,7 @@ const jsonLd = {
       url: `${siteUrl}/ged-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      offers: examOffers("ged"),
       featureList: [
         "Two full-length GED practice tests, all four subjects, 90 questions each",
         "Timed sections with a break between subjects, like the real test",
@@ -261,6 +264,8 @@ export default function GedLandingPage() {
           <ExamClassFaq examId="ged" />
         </div>
       </div>
+
+      <SampleQuestionsV2 examId="ged" />
 
       <ExamRelatedTests examId="ged" />
 

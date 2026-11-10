@@ -1,3 +1,4 @@
+import "@/lib/banks/realestate";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -8,89 +9,91 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
 const statePractice = [
   {
     name: "California",
-    href: "/real-estate/ca/dashboard",
+    href: "/real-estate-practice-test/california",
     body: "150 source-checked questions weighted to the DRE salesperson outline, national topics checked against California law plus California-only rules.",
   },
   {
     name: "New Jersey",
-    href: "/real-estate/nj/dashboard",
+    href: "/real-estate-practice-test/new-jersey",
     body: "110 source-checked questions on the PSI New Jersey outline: 80 general and 30 New Jersey questions.",
   },
   {
     name: "Texas",
-    href: "/real-estate/tx/dashboard",
+    href: "/real-estate-practice-test/texas",
     body: "120 source-checked questions on the Pearson VUE Texas outlines: 80 national and 40 Texas questions, including the 2026 buyer agreement rules.",
   },
   {
     name: "Florida",
-    href: "/real-estate/fl/dashboard",
+    href: "/real-estate-practice-test/florida",
     body: "100 source-checked questions weighted to the DBPR sales associate outline: principles plus Chapter 475, FREC rules, brokerage relationships and Florida math.",
   },
   {
     name: "New York",
-    href: "/real-estate/ny/dashboard",
+    href: "/real-estate-practice-test/new-york",
     body: "75 source-checked questions weighted to the 77-hour course: national topics plus license law, agency disclosure, the Human Rights Law and the PCDA.",
   },
   // state variants batch 2 (generated)
   {
     name: "Pennsylvania",
-    href: "/real-estate/pa/dashboard",
+    href: "/real-estate-practice-test/pennsylvania",
     body: "120 source-checked questions on the Pearson VUE outlines: 80 national and 40 Pennsylvania questions on licensing, agency and the Consumer Notice, escrow and seller disclosure.",
   },
   {
     name: "Illinois",
-    href: "/real-estate/il/dashboard",
+    href: "/real-estate-practice-test/illinois",
     body: "140 source-checked questions like the PSI broker exam: 100 national and 40 Illinois questions on the License Act, IDFPR rules and Illinois disclosure laws.",
   },
   {
     name: "Ohio",
-    href: "/real-estate/oh/dashboard",
+    href: "/real-estate-practice-test/ohio",
     body: "120 source-checked questions like the PSI exam: 80 national and 40 Ohio questions on license law, commission rules and Ohio agency law, including the 2025 written agency agreement rule.",
   },
   {
     name: "Georgia",
-    href: "/real-estate/ga/dashboard",
+    href: "/real-estate-practice-test/georgia",
     body: "150 source-checked questions shaped like the PSI exam: 99 national and 51 Georgia questions on license law, the brokerage relationships act, security deeds and Georgia closings.",
   },
   {
     name: "North Carolina",
-    href: "/real-estate/nc/dashboard",
+    href: "/real-estate-practice-test/north-carolina",
     body: "140 source-checked questions like the real broker exam: 80 national and 60 North Carolina questions on License Law and Commission rules, agency, trust accounts and disclosure.",
   },
   {
     name: "Michigan",
-    href: "/real-estate/mi/dashboard",
+    href: "/real-estate-practice-test/michigan",
     body: "115 source-checked questions like the PSI exam: 80 national and 35 Michigan questions on license law, agency, trust accounts, seller disclosure and Elliott-Larsen.",
   },
   {
     name: "Virginia",
-    href: "/real-estate/va/dashboard",
+    href: "/real-estate-practice-test/virginia",
     body: "120 source-checked questions like the PSI exam: 80 national and 40 Virginia questions on license law, Board regulations (rewritten April 2026), disclosures, agency and fair housing.",
   },
   {
     name: "Washington",
-    href: "/real-estate/wa/dashboard",
+    href: "/real-estate-practice-test/washington",
     body: "130 source-checked questions like the PSI broker exam: 100 national and 30 Washington questions on RCW 18.85, the brokerage relationships act and DOL rules.",
   },
   {
     name: "Arizona",
-    href: "/real-estate/az/dashboard",
+    href: "/real-estate-practice-test/arizona",
     body: "140 source-checked questions on the Pearson VUE outlines: 80 national and 60 Arizona questions, from the Commissioner's Rules and agency to community property and trustee's sales.",
   },
   {
     name: "Tennessee",
-    href: "/real-estate/tn/dashboard",
+    href: "/real-estate-practice-test/tennessee",
     body: "120 source-checked questions like the PSI affiliate broker exam: 80 national and 40 Tennessee questions on the Broker License Act and TREC rules.",
   },
   {
     name: "Louisiana",
-    href: "/real-estate/la/dashboard",
+    href: "/real-estate-practice-test/louisiana",
     body: "135 source-checked questions like the Pearson VUE exam: 80 national and 55 Louisiana questions on license law, LREC rules, agency and the civil law of property and sales.",
   },
   // end batch 2
@@ -136,7 +139,7 @@ const jsonLd = {
       url: `${siteUrl}/real-estate-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      offers: examOffers("realestate"),
       featureList: [
         "200 real estate practice questions",
         "4 practice tests weighted to the national salesperson outline",
@@ -280,7 +283,7 @@ export default function RealestateLandingPage() {
             >
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-2">{s.name}</h3>
               <p className="text-gray-600 dark:text-gray-300 mb-3">{s.body}</p>
-              <span className="text-brand-dark font-semibold">Start {s.name} practice &rarr;</span>
+              <span className="text-brand-dark font-semibold">{s.name} practice exam &rarr;</span>
             </a>
           ))}
         </div>
@@ -414,6 +417,8 @@ export default function RealestateLandingPage() {
           <ExamClassFaq examId="realestate" />
         </div>
       </div>
+
+      <ExamSampleQuestions examId="realestate" />
 
       <ExamRelatedTests examId="realestate" />
 

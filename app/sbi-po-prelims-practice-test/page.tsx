@@ -1,3 +1,4 @@
+import "@/lib/v2/banks/sbipo";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -8,6 +9,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { SampleQuestionsV2 } from "@/components/v2/SampleQuestionsV2";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -36,7 +39,7 @@ const faqs = [
   },
   {
     q: "Are these the real SBI PO questions?",
-    a: "No. These are original practice questions written to the SBI PO Prelims pattern, not questions from the State Bank of India or past papers, and Tigertest is not affiliated with SBI. They cover the usual question types: reading comprehension, para jumbles, cloze tests, fillers and error spotting; simplification, number series, quadratic equations, data interpretation and arithmetic; and inequalities, syllogisms, puzzles, seating arrangements, coding, blood relations and directions. Both mock tests and all nine drills are free, with no account required.",
+    a: "No. These are original practice questions written to the SBI PO Prelims pattern, not questions from the State Bank of India or past papers, and Tigertest is not affiliated with SBI. They cover the usual question types: reading comprehension, para jumbles, cloze tests, fillers and error spotting; simplification, number series, quadratic equations, data interpretation and arithmetic; and inequalities, syllogisms, puzzles, seating arrangements, coding, blood relations and directions. It is free to start, with no account required. Practice Test 1 and every drill but the last are free; the final drill and the final practice test are part of Tigertest Premium, one payment with no subscription.",
   },
 ];
 
@@ -74,7 +77,7 @@ const jsonLd = {
       url: `${siteUrl}/sbi-po-prelims-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "INR" },
+      offers: examOffers("sbipo", "INR"),
       featureList: [
         "231 original SBI PO Prelims practice questions with explanations",
         "2 full 100-question mock tests on the 2026 pattern (English 40, Quant 30, Reasoning 30) with 20-minute sectional timing",
@@ -263,6 +266,8 @@ export default function SbiPoLandingPage() {
           <ExamClassFaq examId="sbipo" />
         </div>
       </div>
+
+      <SampleQuestionsV2 examId="sbipo" />
 
       <ExamRelatedTests examId="sbipo" />
 

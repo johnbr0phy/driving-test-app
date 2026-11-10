@@ -21,6 +21,10 @@ import { isViState } from "@/data/viStates";
 import { isZhState } from "@/data/zhStates";
 import { isKoState } from "@/data/koStates";
 import { SITE_URL } from "@/lib/siteUrl";
+import { examOffers } from "@/lib/examSeo";
+import { DmvSampleQuestions } from "@/components/exam/ExamSampleQuestions";
+import dmvQuestions from "@/data/questions.json";
+import type { Question } from "@/types";
 
 const siteUrl = SITE_URL;
 
@@ -196,11 +200,7 @@ export default async function StateDMVPracticeTestPage({
       url: siteUrl,
       logo: `${siteUrl}/tiger.png`,
     },
-    offers: {
-      "@type": "Offer",
-      price: "0",
-      priceCurrency: "USD",
-    },
+    offers: examOffers("dmv"),
   };
 
   // JSON-LD: HowTo schema — targets "how to pass the [state] DMV test" queries.
@@ -612,6 +612,12 @@ export default async function StateDMVPracticeTestPage({
           </div>
         </div>
 
+        <DmvSampleQuestions
+          questions={(dmvQuestions as Question[]).filter((q) => q.state === state.code)}
+          stateName={state.name}
+          path={`/${state.slug}-dmv-practice-test`}
+        />
+
         {/* FAQ Section */}
         <div className="mb-12">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-50 mb-6">
@@ -628,6 +634,15 @@ export default async function StateDMVPracticeTestPage({
             ))}
           </div>
         </div>
+
+        {/* The same state's page in other languages: plain links, since the switcher is a menu. */}
+        <p className="mb-12 text-sm text-gray-600 dark:text-gray-300">
+          {state.name} practice test in other languages:{" "}
+          <Link href={`/es/${state.slug}-examen-practica-dmv`} hrefLang="es" className="text-brand-dark underline underline-offset-2">Español</Link>
+          {isViState(state.code) && <> · <Link href={`/vi/${state.slug}-thi-thu-dmv`} hrefLang="vi" className="text-brand-dark underline underline-offset-2">Tiếng Việt</Link></>}
+          {isKoState(state.code) && <> · <Link href={`/ko/${state.slug}-dmv-pilgi-siheom`} hrefLang="ko" className="text-brand-dark underline underline-offset-2">한국어</Link></>}
+          {isZhState(state.code) && <> · <Link href={`/zh/${state.slug}-dmv-bishi-lianxi`} hrefLang="zh-Hans" className="text-brand-dark underline underline-offset-2">中文</Link></>}
+        </p>
 
         {/* Related State Pages */}
         {neighboringStates.length > 0 && (

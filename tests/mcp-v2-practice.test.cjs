@@ -314,8 +314,16 @@ test('each real complex format completes a canonical shared drill transaction, n
   }
 });
 
-test('SAT and ACT are fully free: no v2 exam sells Premium and their old paid drills open', async () => {
-  assert.deepEqual(EXAMS_V2.filter((e) => e.premium).map((e) => e.id), []);
+test('SAT, ACT and every school or children\'s test stay free; paid v2 exams lock only their last drill and test', async () => {
+  const paid = EXAMS_V2.filter((e) => e.premium);
+  const kids = /^(sat|psat|act|ged|ap(?:psych|ush|gov|world|hug|lang|bio|calcab)|gcse|ks2|elevenplus|timestables|fsmaths|osslt|eqao9|naplan|ocnsw|nswsel|vicsel|hscmaths|jnvst|aissee|jamb|jeemain|neet|mhtcet|cuet|sehp|accuplacer|nda)/;
+  assert.ok(paid.length > 0);
+  for (const e of paid) {
+    assert.ok(!kids.test(e.id), e.id);
+    assert.ok(e.premium.lockedTests.length <= 1 && e.premium.lockedDrills.length <= 1, e.id);
+    if (e.premium.lockedDrills.length) assert.equal(e.premium.lockedDrills[0], e.drills[e.drills.length - 1].key, e.id);
+    if (e.premium.lockedTests.length) assert.equal(e.premium.lockedTests[0], e.tests[e.tests.length - 1].number, e.id);
+  }
   for (const [id, { lockedDrills }] of Object.entries(OLD_LOCKS)) {
     for (const key of lockedDrills) assert.equal((await start(new FakeDb(), id, key)).ok, true, `${id}:${key}`);
   }

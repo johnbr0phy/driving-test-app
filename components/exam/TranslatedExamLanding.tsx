@@ -9,7 +9,7 @@ import { EXAM_FACTS } from "@/lib/examFacts";
 import { landingUpdatedAt } from "@/lib/landingDates";
 import { ORGANIZATION_ID } from "@/lib/siteSchema";
 import { examBaseLanguage, getExamById, localizeExam, type ExamId } from "@/lib/exams";
-import { examLandingAlternates, examLandingLocale } from "@/lib/examSeo";
+import { examLandingAlternates, examLandingLocale, examOffers } from "@/lib/examSeo";
 import { regionOfTest } from "@/lib/region";
 import type { TranslatedLandingContent } from "@/lib/landingContent";
 import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHero";
@@ -120,7 +120,7 @@ export function TranslatedExamLanding({
         inLanguage,
         applicationCategory: "EducationalApplication",
         operatingSystem: "Any",
-        offers: { "@type": "Offer", price: "0", priceCurrency: currency },
+        offers: examOffers(examId, currency),
         publisher: { "@id": ORGANIZATION_ID },
       },
       {

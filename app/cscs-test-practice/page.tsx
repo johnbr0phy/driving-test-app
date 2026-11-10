@@ -1,3 +1,4 @@
+import "@/lib/banks/cscs";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -9,6 +10,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -75,7 +78,7 @@ const jsonLd = {
       url: `${siteUrl}/cscs-test-practice`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "GBP" },
+      offers: examOffers("cscs", "GBP"),
       featureList: [
         "200 HS&E test practice questions",
         "4 mock tests of 50 questions with the 45 of 50 pass mark",
@@ -269,6 +272,8 @@ export default function CscsTestPracticeLandingPage() {
           <ExamClassFaq examId="cscs" />
         </div>
       </div>
+
+      <ExamSampleQuestions examId="cscs" />
 
       <ExamRelatedTests examId="cscs" />
 

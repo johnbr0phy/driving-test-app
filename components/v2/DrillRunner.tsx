@@ -18,6 +18,7 @@ import { useV2Store } from "@/store/useV2Store";
 import { useHydration } from "@/hooks/useHydration";
 import { useSound } from "@/hooks/useSound";
 import { useIsPremium } from "@/hooks/useIsPremium";
+import { useV2Premium } from "@/hooks/useV2Premium";
 import { useIsNativeApp } from "@/hooks/useIsNativeApp";
 import { hasDrillProgress, isDrillLocked } from "@/lib/v2/premium";
 import { matchBasicsSkill } from "@/lib/v2/skillMatch";
@@ -60,7 +61,8 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
   const questions = allQuestions;
   // A Premium drill stays open for anyone already working in it (their own
   // saved progress, not progress carried over from a retired drill).
-  const { isPremium, ready: premiumReady } = useIsPremium();
+  const { isPremium, ready: premiumReady } = useV2Premium(exam.id);
+  const { isPremium: paidAccount } = useIsPremium();
   const basicsMap = useV2Store((s) => s.basics);
   const locked = !!drill && premiumReady && isDrillLocked(exam, drill.key, isPremium) && !hasDrillProgress(drillsMap, basicsMap, exam, drill);
   // Free drills never wait on auth: only a Premium drill needs to know who's signed in.
@@ -75,7 +77,7 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
   const guestPrompt = useGuestPrompt(!authLoading && !user, "drill");
   // Non-paying people on a roll get John's "tell a friend" ask the same way (v2 drills are English).
   const examAnswered = v2GuestAnswered(drillsMap, results, exam.id);
-  const sharePrompt = useSharePrompt(premiumReady && !isPremium, examAnswered, "drill");
+  const sharePrompt = useSharePrompt(premiumReady && !paidAccount, examAnswered, "drill");
 
   // Close goes back to the dashboard, where the exam level was opened from.
   const backHref = routes.dashboard;

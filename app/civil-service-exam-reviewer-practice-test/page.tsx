@@ -1,3 +1,4 @@
+import "@/lib/v2/banks/phcse";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -8,6 +9,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { SampleQuestionsV2 } from "@/components/v2/SampleQuestionsV2";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -36,7 +39,7 @@ const faqs = [
   },
   {
     q: "Is the Tigertest Civil Service Exam reviewer free?",
-    a: "Yes. Both mock exams and all nine drills are free, with no account required. Create a free account if you want your progress saved across your phone and computer.",
+    a: "It is free to start, with no account required. Practice Test 1 and every drill but the last are free; the final drill and the final practice test are part of Tigertest Premium, one payment with no subscription. Create a free account if you want your progress saved across your phone and computer.",
   },
 ];
 
@@ -74,7 +77,7 @@ const jsonLd = {
       url: `${siteUrl}/civil-service-exam-reviewer-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "PHP" },
+      offers: examOffers("phcse", "PHP"),
       featureList: [
         "245 original Civil Service Exam practice questions with explanations",
         "A Professional level mock and a Subprofessional level mock, 100 items in 2 hours each",
@@ -264,6 +267,8 @@ export default function CivilServiceExamLandingPage() {
           <ExamClassFaq examId="phcse" />
         </div>
       </div>
+
+      <SampleQuestionsV2 examId="phcse" />
 
       <ExamRelatedTests examId="phcse" />
 

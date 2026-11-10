@@ -1,3 +1,4 @@
+import "@/lib/v2/banks/hesi";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -8,6 +9,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { SampleQuestionsV2 } from "@/components/v2/SampleQuestionsV2";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -51,7 +54,7 @@ const jsonLd = {
       url: `${siteUrl}/hesi-a2-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      offers: examOffers("hesi"),
       featureList: [
         "200 HESI practice questions",
         "A full timed HESI A2 battery: seven sections, each with its own clock and score",
@@ -102,7 +105,7 @@ const jsonLd = {
           name: "Is the Tigertest HESI practice test free?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. The full battery and all seven drills are free, with no account required. Create a free account to keep your progress in step between your phone and your computer.",
+            text: "It is free to start, with no account required. The full practice test and every drill but the last are free; the final drill is part of Tigertest Premium, one payment with no subscription. Create a free account to keep your progress in step between your phone and your computer.",
           },
         },
         classFaqJsonLd("hesi"),
@@ -297,12 +300,14 @@ export default function HesiLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is the Tigertest HESI practice test free?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              Yes. The full battery and all seven drills are free, with no account required. Create a free account to keep your progress in step between your phone and your computer.
+              It is free to start, with no account required. The full practice test and every drill but the last are free; the final drill is part of Tigertest Premium, one payment with no subscription. Create a free account to keep your progress in step between your phone and your computer.
             </p>
           </div>
           <ExamClassFaq examId="hesi" />
         </div>
       </div>
+
+      <SampleQuestionsV2 examId="hesi" />
 
       <ExamRelatedTests examId="hesi" />
 

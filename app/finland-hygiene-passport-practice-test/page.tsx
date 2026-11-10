@@ -10,6 +10,7 @@ import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
 import "@/lib/banks/fihygiene";
 import { SITE_URL } from "@/lib/siteUrl";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -76,7 +77,7 @@ const jsonLd = {
       url: `${siteUrl}/finland-hygiene-passport-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" },
+      offers: examOffers("fihygiene", "EUR"),
       featureList: [
         "200 Finnish food hygiene questions in English",
         "5 mock tests of 40 questions",

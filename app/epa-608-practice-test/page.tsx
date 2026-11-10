@@ -1,6 +1,6 @@
+import "@/lib/banks/epa608";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
-import { examLandingAlternates } from "@/lib/examSeo";
 import Image from "next/image";
 import { getTigerAsset } from "@/lib/tigerAssets";
 import { Smartphone, Monitor } from "lucide-react";
@@ -9,6 +9,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
+import { examLandingAlternates, examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -73,7 +75,7 @@ const jsonLd = {
       url: `${siteUrl}/epa-608-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      offers: examOffers("epa608"),
       featureList: [
         "200 EPA 608 practice questions",
         "Training sets for Core, Type I, Type II and Type III",
@@ -275,6 +277,8 @@ export default function Epa608LandingPage() {
           <ExamClassFaq examId="epa608" />
         </div>
       </div>
+
+      <ExamSampleQuestions examId="epa608" />
 
       <ExamRelatedTests examId="epa608" />
 

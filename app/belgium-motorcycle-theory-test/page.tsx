@@ -9,6 +9,7 @@ import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
 import "@/lib/banks/bemoto";
 import { SITE_URL } from "@/lib/siteUrl";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -75,7 +76,7 @@ const jsonLd = {
       url: `${siteUrl}/belgium-motorcycle-theory-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" },
+      offers: examOffers("bemoto", "EUR"),
       featureList: [
         "200 Belgian motorcycle theory questions in English",
         "4 mock tests of 50 questions at the 41/50 pass mark",

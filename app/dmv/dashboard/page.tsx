@@ -26,6 +26,7 @@ import { trackBeginCheckout, trackPaywallDismissed, trackPaywallHit, trackPurcha
 import { ClassBanner } from "@/components/exam/ClassBanner";
 import { ClassMissRecovery } from "@/components/exam/ClassMissRecovery";
 import { paywallVariantForCheckout } from "@/lib/paywallTest";
+import { checkoutAttribution } from "@/lib/funnel";
 
 function DashboardContent() {
   const router = useRouter();
@@ -220,6 +221,7 @@ function DashboardContent() {
         body: JSON.stringify({
           email: user.email,
           returnUrl: window.location.origin,
+          ...checkoutAttribution(),
           paywallVariant: paywallVariantForCheckout(),
           location: paywallFeature,
         }),

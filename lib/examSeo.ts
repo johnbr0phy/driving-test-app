@@ -5,6 +5,8 @@ import type { Language } from "@/i18n";
 import { isRegion, regionInfo, regionOfTest } from "./region";
 import type { ExamV2Config } from "./v2/types";
 import { SITE_URL } from "@/lib/siteUrl";
+import { getCatalogEntry } from "./testCatalog";
+import { premiumPriceInCurrency } from "./pricing";
 
 const siteUrl = SITE_URL;
 
@@ -111,4 +113,27 @@ export function examLandingAlternates(examId: string): Record<string, string> {
     if (countryTag && base === "en" && xDefault === baseUrl && tr.locale?.endsWith(countryTag)) xDefault = url;
   }
   return { [baseKey]: baseUrl, ...translated, "x-default": xDefault };
+}
+
+/**
+ * schema.org offers for a landing's WebApplication node: practice is free to
+ * start, and exams with Premium steps also list the one-time purchase. Saying
+ * only "price 0" on a freemium exam misleads the answer engines that quote it.
+ */
+export function examOffers(examId: string, currency = "USD") {
+  const free = { "@type": "Offer", name: "Free practice", price: "0", priceCurrency: currency };
+  const variant = getExamById(examId);
+  const paid = examId === "dmv" || !!getCatalogEntry(variant?.variantOf ?? examId)?.pricing || !!variant?.variantOf;
+  if (!paid) return free;
+  const premium = premiumPriceInCurrency(currency);
+  return [
+    free,
+    {
+      "@type": "Offer",
+      name: "Tigertest Premium",
+      description: "One-time purchase, no subscription. Unlocks the final training set and practice test and full stats on every exam.",
+      price: String(premium.amount),
+      priceCurrency: premium.currency.toUpperCase(),
+    },
+  ];
 }

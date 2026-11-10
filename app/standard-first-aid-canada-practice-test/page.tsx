@@ -1,3 +1,4 @@
+import "@/lib/banks/casfa";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -9,6 +10,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -75,7 +78,7 @@ const jsonLd = {
       url: `${siteUrl}/standard-first-aid-canada-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "CAD" },
+      offers: examOffers("casfa", "CAD"),
       featureList: [
         "200 Standard First Aid and CPR Level C practice questions",
         "4 practice tests of 50 questions with a 75% pass line",
@@ -269,6 +272,8 @@ export default function StandardFirstAidLandingPage() {
           <ExamClassFaq examId="casfa" />
         </div>
       </div>
+
+      <ExamSampleQuestions examId="casfa" />
 
       <ExamRelatedTests examId="casfa" />
 

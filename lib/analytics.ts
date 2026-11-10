@@ -5,6 +5,7 @@ import { trackFunnelStep } from "@/lib/funnel";
 import { isInternalBrowser } from "@/lib/internal";
 import { knownPremiumPrice } from "@/lib/localPrice";
 import { USD_PRICE } from "@/lib/pricing";
+import { checkoutAttribution } from "@/lib/funnel";
 
 declare global {
   interface Window {
@@ -179,8 +180,11 @@ export function trackPaywallDismissed(location = "dashboard") {
 }
 
 export function trackPurchase(transactionId: string) {
+  const first = checkoutAttribution();
   window.gtag?.("event", "purchase", {
     transaction_id: transactionId,
+    ...(first.source && { first_source: first.source }),
+    ...(first.landing && { first_landing: first.landing }),
     ...premiumValue(),
   });
 }

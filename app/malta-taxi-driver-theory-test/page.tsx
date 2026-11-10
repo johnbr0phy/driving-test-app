@@ -10,6 +10,7 @@ import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import "@/lib/banks/mttaxi";
 import { SITE_URL } from "@/lib/siteUrl";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -76,7 +77,7 @@ const jsonLd = {
       url: `${siteUrl}/malta-taxi-driver-theory-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" },
+      offers: examOffers("mttaxi", "EUR"),
       featureList: [
         "200 original Malta taxi driver theory practice questions",
         "5 mock tests of 35 questions with 30 to pass",

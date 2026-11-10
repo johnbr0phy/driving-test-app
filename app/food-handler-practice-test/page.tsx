@@ -1,6 +1,6 @@
+import "@/lib/banks/foodhandler";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
-import { examLandingAlternates } from "@/lib/examSeo";
 import Image from "next/image";
 import { getTigerAsset } from "@/lib/tigerAssets";
 import { Smartphone, Monitor } from "lucide-react";
@@ -8,6 +8,8 @@ import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHe
 import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { SITE_URL } from "@/lib/siteUrl";
+import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
+import { examLandingAlternates, examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -52,7 +54,7 @@ const jsonLd = {
       url: `${siteUrl}/food-handler-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      offers: examOffers("foodhandler"),
       featureList: [
         "200 food handler practice questions",
         "4 practice tests in the real test's topic proportions",
@@ -299,6 +301,8 @@ export default function FoodhandlerLandingPage() {
           </div>
         </div>
       </div>
+
+      <ExamSampleQuestions examId="foodhandler" />
 
       <ExamRelatedTests examId="foodhandler" />
 

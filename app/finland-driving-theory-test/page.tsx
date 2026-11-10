@@ -9,7 +9,7 @@ import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
 import "@/lib/banks/fitheory";
 import { SITE_URL } from "@/lib/siteUrl";
-import { examLandingAlternates } from "@/lib/examSeo";
+import { examLandingAlternates, examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -77,7 +77,7 @@ const jsonLd = {
       url: `${siteUrl}/finland-driving-theory-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" },
+      offers: examOffers("fitheory", "EUR"),
       featureList: [
         "200 Finnish traffic rule and sign questions in English",
         "4 mock tests of 50 questions",

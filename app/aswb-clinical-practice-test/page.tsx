@@ -1,3 +1,4 @@
+import "@/lib/banks/aswbclin";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -9,6 +10,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -75,7 +78,7 @@ const jsonLd = {
       url: `${siteUrl}/aswb-clinical-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      offers: examOffers("aswbclin"),
       featureList: [
         "200 ASWB Clinical practice questions",
         "4 mock exams of 50 questions weighted like the 2026 Clinical content outline",
@@ -265,6 +268,8 @@ export default function AswbClinicalLandingPage() {
           <ExamClassFaq examId="aswbclin" />
         </div>
       </div>
+
+      <ExamSampleQuestions examId="aswbclin" />
 
       <ExamRelatedTests examId="aswbclin" />
 

@@ -1,3 +1,4 @@
+import "@/lib/v2/banks/jeemain";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -8,6 +9,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { SampleQuestionsV2 } from "@/components/v2/SampleQuestionsV2";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -74,7 +77,7 @@ const jsonLd = {
       url: `${siteUrl}/jee-main-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "INR" },
+      offers: examOffers("jeemain", "INR"),
       featureList: [
         "204 original JEE Main Paper 1 practice questions with explanations",
         "2 full mock tests: 75 questions in 3 hours, 25 per subject",
@@ -263,6 +266,8 @@ export default function JeeMainLandingPage() {
           <ExamClassFaq examId="jeemain" />
         </div>
       </div>
+
+      <SampleQuestionsV2 examId="jeemain" />
 
       <ExamRelatedTests examId="jeemain" />
 

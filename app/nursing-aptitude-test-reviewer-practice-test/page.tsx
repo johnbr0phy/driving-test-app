@@ -8,6 +8,7 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
 import "@/lib/banks/phnat";
+import { examOffers } from "@/lib/examSeo";
 import { SITE_URL } from "@/lib/siteUrl";
 
 const siteUrl = SITE_URL;
@@ -75,7 +76,7 @@ const jsonLd = {
       url: `${siteUrl}/nursing-aptitude-test-reviewer-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "PHP" },
+      offers: examOffers("phnat", "PHP"),
       featureList: [
         "200 verbal, numerical, science, health and mental ability questions",
         "4 mock tests of 50 questions",

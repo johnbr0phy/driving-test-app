@@ -1,3 +1,4 @@
+import "@/lib/v2/banks/aplus";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -8,6 +9,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { SampleQuestionsV2 } from "@/components/v2/SampleQuestionsV2";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -51,7 +54,7 @@ const jsonLd = {
       url: `${siteUrl}/comptia-a-plus-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      offers: examOffers("aplus"),
       featureList: [
         "200 A+ practice questions",
         "Full practice exam: Core 1 and Core 2, 90 questions each in 90 minutes",
@@ -102,7 +105,7 @@ const jsonLd = {
           name: "Is the Tigertest A+ practice test free?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. The full Core 1 and Core 2 practice exam and all four drills are free, with no account required. Create a free account if you want your progress saved across devices.",
+            text: "It is free to start, with no account required. The full practice test and every drill but the last are free; the final drill is part of Tigertest Premium, one payment with no subscription. Create a free account if you want your progress saved across devices.",
           },
         },
         classFaqJsonLd("aplus"),
@@ -299,12 +302,14 @@ export default function AplusLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is the Tigertest A+ practice test free?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              Yes. The full Core 1 and Core 2 practice exam and all four drills are free, with no account required. Create a free account if you want your progress saved across devices.
+              It is free to start, with no account required. The full practice test and every drill but the last are free; the final drill is part of Tigertest Premium, one payment with no subscription. Create a free account if you want your progress saved across devices.
             </p>
           </div>
           <ExamClassFaq examId="aplus" />
         </div>
       </div>
+
+      <SampleQuestionsV2 examId="aplus" />
 
       <ExamRelatedTests examId="aplus" />
 

@@ -23,7 +23,7 @@ import { useAuth } from "@/contexts/AuthContext";
 import { GuestSaveCard, v2GuestAnswered } from "@/components/GuestSaveCard";
 import { ProgressCard, Collapse } from "@/components/dashboard/ProgressCard";
 import { getTigerAsset, TigerExpression } from "@/lib/tigerAssets";
-import { useIsPremium } from "@/hooks/useIsPremium";
+import { useV2Premium } from "@/hooks/useV2Premium";
 import { usePurchaseReturn } from "@/hooks/usePurchaseReturn";
 import { useCommunityAvailable } from "@/hooks/useCommunityStats";
 import { hasDrillProgress, isDrillLocked, isTestLocked, otherPremiumExams } from "@/lib/v2/premium";
@@ -86,7 +86,7 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
   const history = useMemo(() => resultsForExam(results, exam.id), [results, exam.id]);
   const [editingGoal, setEditingGoal] = useState(false);
   const [expandedTest, setExpandedTest] = useState<number | null>(null);
-  const { isPremium, ready: premiumReady } = useIsPremium();
+  const { isPremium, ready: premiumReady } = useV2Premium(exam.id);
   const paywall = useV2Paywall(exam, "dashboard");
   // Common Mistakes card, once this exam has enough answers (lib/communityStats.ts).
   const communityOn = useCommunityAvailable(exam.id);
@@ -322,7 +322,7 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
               // One-section exams name their length in questions, not "1 sections".
               const shape = exam.sections.length === 1 ? `${exam.sections[0].modules.reduce((n, m) => n + m.questionCount, 0)} questions` : `${exam.sections.length} sections`;
               let subtitle = `${shape} · ${exam.testLength}${adaptive ? " · adaptive" : ""}${s.def.heldOut ? " · never in drills" : ""}`;
-              if (s.locked) subtitle = `Premium · ${shape} · ${exam.testLength} · never in drills`;
+              if (s.locked) subtitle = `Premium · ${shape} · ${exam.testLength}${s.def.heldOut ? " · never in drills" : ""}`;
               else if (s.session && def) subtitle = `In progress · ${def.section.name}, module ${def.module.module}`;
               else if (s.complete && s.best !== null) subtitle = `Best ${s.best} · goal ${goal} hit`;
               else if (s.best !== null) subtitle = `Best ${s.best} · ${goal - s.best} to your goal of ${goal}`;
@@ -427,7 +427,7 @@ function PurchaseBanner({ exam }: { exam: ExamV2Config }) {
       <div className="flex-1">
         <p className="text-base font-bold text-green-900 dark:text-green-200">Welcome to Premium!</p>
         <p className="mt-0.5 text-xs text-green-700 dark:text-green-300">
-          {exam.shortName} Practice Test 2 and every drill are unlocked, and so are {otherPremiumExams(exam)}.
+          Every {exam.shortName} drill and practice test is unlocked, and so is {otherPremiumExams(exam)}.
         </p>
       </div>
       <button type="button" onClick={dismiss} className="text-green-600 dark:text-green-400 hover:text-green-800 dark:hover:text-green-300" aria-label="Dismiss">

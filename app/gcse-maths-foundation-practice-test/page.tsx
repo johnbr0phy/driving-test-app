@@ -1,3 +1,4 @@
+import "@/lib/v2/banks/gcsemaths";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -9,6 +10,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { SampleQuestionsV2 } from "@/components/v2/SampleQuestionsV2";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -79,7 +82,7 @@ const jsonLd = {
       url: `${siteUrl}/gcse-maths-foundation-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "GBP" },
+      offers: examOffers("gcsemaths", "GBP"),
       featureList: [
         "Two practice tests, each three papers: non-calculator, calculator, calculator",
         "Weighted like the Foundation tier across all five topic areas",
@@ -255,6 +258,8 @@ export default function GcseMathsLandingPage() {
           <ExamClassFaq examId="gcsemaths" />
         </div>
       </div>
+
+      <SampleQuestionsV2 examId="gcsemaths" />
 
       <ExamRelatedTests examId="gcsemaths" />
 

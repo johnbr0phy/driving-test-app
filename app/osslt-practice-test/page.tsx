@@ -1,3 +1,4 @@
+import "@/lib/v2/banks/osslt";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -9,6 +10,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { SampleQuestionsV2 } from "@/components/v2/SampleQuestionsV2";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -83,7 +86,7 @@ const jsonLd = {
       url: `${siteUrl}/osslt-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "CAD" },
+      offers: examOffers("osslt", "CAD"),
       featureList: [
         "Two practice tests of 35 questions following the EQAO OSSLT blueprint",
         "Information paragraphs, news reports, dialogues and real-life narratives",
@@ -259,6 +262,8 @@ export default function OssltLandingPage() {
           <ExamClassFaq examId="osslt" />
         </div>
       </div>
+
+      <SampleQuestionsV2 examId="osslt" />
 
       <ExamRelatedTests examId="osslt" />
 

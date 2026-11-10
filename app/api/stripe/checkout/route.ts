@@ -25,7 +25,7 @@ export async function POST(request: NextRequest) {
     const decodedToken = await getAdminAuth().verifyIdToken(token);
 
     const body = await request.json();
-    const { email: bodyEmail, returnUrl, returnPath: rawReturnPath, location, paywallVariant } = body;
+    const { email: bodyEmail, returnUrl, returnPath: rawReturnPath, location, paywallVariant, source: bodySource, landing: bodyLanding } = body;
     // The account's own address when it has one: an address from the body
     // would attach this checkout to someone else's Stripe customer.
     const email = decodedToken.email || bodyEmail;
@@ -55,6 +55,22 @@ export async function POST(request: NextRequest) {
           { error: 'User already has premium access' },
           { status: 400 }
         );
+      }
+    }
+
+    // Where this buyer first came from (lib/funnel.ts): the browser's own
+    // first visit, else the one saved with the account at signup. Stored on
+    // the payment so revenue can be read by landing page and channel.
+    let source: string | null = typeof bodySource === 'string' && /^[a-z_]{2,20}$/.test(bodySource) ? bodySource : null;
+    let landing: string | null = typeof bodyLanding === 'string' && /^\/[A-Za-z0-9/_.-]{0,120}$/.test(bodyLanding) ? bodyLanding : null;
+    if (!source || !landing) {
+      try {
+        const origin = await adminDb.collection('signupOrigins').doc(userId).get();
+        const o = origin.data();
+        if (!source && typeof o?.source === 'string') source = o.source;
+        if (!landing && typeof o?.landing === 'string') landing = o.landing.slice(0, 120);
+      } catch {
+        // Attribution is best-effort: never block a checkout on it.
       }
     }
 
@@ -100,7 +116,6 @@ export async function POST(request: NextRequest) {
     const session = await stripe.checkout.sessions.create({
       customer: customerId,
       mode: 'payment',
-      payment_method_types: ['card'],
       line_items: [
         PREMIUM_PRICE_ID && price.currency === 'usd'
           ? { price: PREMIUM_PRICE_ID, quantity: 1 }
@@ -123,6 +138,8 @@ export async function POST(request: NextRequest) {
         email,
         ...(location && { location }),
         ...(country && { country }),
+        ...(source && { source }),
+        ...(landing && { landing }),
         // Which side of the English paywall test (lib/paywallTest.ts) the buyer saw.
         ...(isPaywallVariant(paywallVariant) && { paywallVariant }),
       },

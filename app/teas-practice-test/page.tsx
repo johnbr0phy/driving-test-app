@@ -1,3 +1,4 @@
+import "@/lib/v2/banks/teas";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -8,6 +9,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { SampleQuestionsV2 } from "@/components/v2/SampleQuestionsV2";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -51,7 +54,7 @@ const jsonLd = {
       url: `${siteUrl}/teas-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      offers: examOffers("teas"),
       featureList: [
         "200 TEAS practice questions",
         "A full-length timed TEAS: four sections, 170 questions, 209 minutes",
@@ -103,7 +106,7 @@ const jsonLd = {
           name: "Is the Tigertest TEAS practice test free?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. The full-length test and all six drills are free, with no account required. Create a free account to keep your progress in step between your phone and your computer.",
+            text: "It is free to start, with no account required. The full practice test and every drill but the last are free; the final drill is part of Tigertest Premium, one payment with no subscription. Create a free account to keep your progress in step between your phone and your computer.",
           },
         },
         classFaqJsonLd("teas"),
@@ -295,12 +298,14 @@ export default function TeasLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is the Tigertest TEAS practice test free?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              Yes. The full-length test and all six drills are free, with no account required. Create a free account to keep your progress in step between your phone and your computer.
+              It is free to start, with no account required. The full practice test and every drill but the last are free; the final drill is part of Tigertest Premium, one payment with no subscription. Create a free account to keep your progress in step between your phone and your computer.
             </p>
           </div>
           <ExamClassFaq examId="teas" />
         </div>
       </div>
+
+      <SampleQuestionsV2 examId="teas" />
 
       <ExamRelatedTests examId="teas" />
 

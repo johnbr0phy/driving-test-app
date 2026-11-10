@@ -1,3 +1,4 @@
+import "@/lib/banks/cssgb";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -7,6 +8,8 @@ import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHe
 import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { SITE_URL } from "@/lib/siteUrl";
+import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -73,7 +76,7 @@ const jsonLd = {
       url: `${siteUrl}/six-sigma-green-belt-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      offers: examOffers("cssgb"),
       featureList: [
         "200 ASQ Six Sigma Green Belt practice questions",
         "4 practice tests of 50 questions weighted like the 2022 Body of Knowledge",
@@ -260,6 +263,8 @@ export default function SixSigmaGreenBeltLandingPage() {
           ))}
         </div>
       </div>
+
+      <ExamSampleQuestions examId="cssgb" />
 
       <ExamRelatedTests examId="cssgb" />
 

@@ -21,6 +21,7 @@ import { KO_STATE_CODES } from "@/data/koStates";
 import { isZhState } from "@/data/zhStates";
 import { isViState } from "@/data/viStates";
 import { SITE_URL } from "@/lib/siteUrl";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -219,11 +220,7 @@ export default async function KoreanStateDMVPage({ params }: PageProps) {
       url: siteUrl,
       logo: `${siteUrl}/tiger.png`,
     },
-    offers: {
-      "@type": "Offer",
-      price: "0",
-      priceCurrency: "USD",
-    },
+    offers: examOffers("dmv"),
   };
 
   // JSON-LD: HowTo — targets "[주] DMV 필기시험 합격 방법" queries.

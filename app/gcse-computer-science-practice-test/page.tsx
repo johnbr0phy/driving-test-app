@@ -1,3 +1,4 @@
+import "@/lib/v2/banks/gcsecs";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -9,6 +10,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { SampleQuestionsV2 } from "@/components/v2/SampleQuestionsV2";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -79,7 +82,7 @@ const jsonLd = {
       url: `${siteUrl}/gcse-computer-science-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "GBP" },
+      offers: examOffers("gcsecs", "GBP"),
       featureList: [
         "Two timed practice tests, one per paper",
         "Seven topic drills on the DfE subject content",
@@ -256,6 +259,8 @@ export default function GcseComputerScienceLandingPage() {
           <ExamClassFaq examId="gcsecs" />
         </div>
       </div>
+
+      <SampleQuestionsV2 examId="gcsecs" />
 
       <ExamRelatedTests examId="gcsecs" />
 

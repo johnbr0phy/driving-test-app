@@ -1,3 +1,4 @@
+import "@/lib/v2/banks/hscmaths";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -9,6 +10,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { SampleQuestionsV2 } from "@/components/v2/SampleQuestionsV2";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -79,7 +82,7 @@ const jsonLd = {
       url: `${siteUrl}/hsc-maths-standard-2-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "AUD" },
+      offers: examOffers("hscmaths", "AUD"),
       featureList: [
         "Two full practice papers: Section I multiple choice and Section II short answer",
         "Calculator and reference sheet on every question",
@@ -256,6 +259,8 @@ export default function HscMathsLandingPage() {
           <ExamClassFaq examId="hscmaths" />
         </div>
       </div>
+
+      <SampleQuestionsV2 examId="hscmaths" />
 
       <ExamRelatedTests examId="hscmaths" />
 

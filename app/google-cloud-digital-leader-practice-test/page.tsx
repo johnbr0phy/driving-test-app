@@ -1,3 +1,4 @@
+import "@/lib/v2/banks/gcdl";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -8,6 +9,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { SampleQuestionsV2 } from "@/components/v2/SampleQuestionsV2";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -60,7 +63,7 @@ const faqs = [
   },
   {
     q: "Is the Tigertest Cloud Digital Leader practice test free?",
-    a: "Yes. Both practice tests and all six drills are free, with no account required. Create a free account if you want your progress saved across devices.",
+    a: "It is free to start, with no account required. Practice Test 1 and every drill but the last are free; the final drill and the final practice test are part of Tigertest Premium, one payment with no subscription. Create a free account if you want your progress saved across devices.",
   },
 ];
 
@@ -74,7 +77,7 @@ const jsonLd = {
       url: `${siteUrl}/google-cloud-digital-leader-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      offers: examOffers("gcdl"),
       featureList: [
         "200 original Cloud Digital Leader practice questions",
         "2 full 60-question practice tests in 90 minutes",
@@ -266,6 +269,8 @@ export default function GcdlLandingPage() {
           <ExamClassFaq examId="gcdl" />
         </div>
       </div>
+
+      <SampleQuestionsV2 examId="gcdl" />
 
       <ExamRelatedTests examId="gcdl" />
 

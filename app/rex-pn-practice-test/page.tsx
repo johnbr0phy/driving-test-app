@@ -1,3 +1,4 @@
+import "@/lib/v2/banks/rexpn";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -9,6 +10,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { SampleQuestionsV2 } from "@/components/v2/SampleQuestionsV2";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -41,7 +44,7 @@ const faqs = [
   },
   {
     q: "Is the Tigertest REx-PN practice test free?",
-    a: "Yes. Both practice tests and all eight drills are free, with no account required. Create a free account to keep your progress in step between your phone and your computer.",
+    a: "It is free to start, with no account required. Practice Test 1 and every drill but the last are free; the final drill and the final practice test are part of Tigertest Premium, one payment with no subscription. Create a free account to keep your progress in step between your phone and your computer.",
   },
 ];
 
@@ -80,7 +83,7 @@ const jsonLd = {
       url: `${siteUrl}/rex-pn-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "CAD" },
+      offers: examOffers("rexpn", "CAD"),
       featureList: [
         "210 original REx-PN practice questions with rationales, written for Canadian practical nurses",
         "Two 90-question practice tests answered in order, no going back",
@@ -284,6 +287,8 @@ export default function RexPnLandingPage() {
           <ExamClassFaq examId="rexpn" />
         </div>
       </div>
+
+      <SampleQuestionsV2 examId="rexpn" />
 
       <ExamRelatedTests examId="rexpn" />
 

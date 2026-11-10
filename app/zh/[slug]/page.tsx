@@ -21,6 +21,7 @@ import { ZH_STATE_CODES } from "@/data/zhStates";
 import { isViState } from "@/data/viStates";
 import { isKoState } from "@/data/koStates";
 import { SITE_URL } from "@/lib/siteUrl";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -219,11 +220,7 @@ export default async function ChineseStateDMVPage({ params }: PageProps) {
       url: siteUrl,
       logo: `${siteUrl}/tiger.png`,
     },
-    offers: {
-      "@type": "Offer",
-      price: "0",
-      priceCurrency: "USD",
-    },
+    offers: examOffers("dmv"),
   };
 
   // JSON-LD: HowTo. Targets "[州] DMV 笔试怎么通过" queries.

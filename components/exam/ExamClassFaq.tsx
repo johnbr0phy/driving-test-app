@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { regionOfTest } from "@/lib/region";
+import { teachPathFor } from "@/lib/teachPages";
 
 // The "Can my students use Tigertest?" FAQ on the landings of exams people
 // usually study for with an instructor (the TEACHER_LED set in
@@ -7,7 +8,7 @@ import { regionOfTest } from "@/lib/region";
 // last FAQ points them at /teach. classFaqJsonLd() is the same item for the
 // page's FAQPage graph; keep the two in step.
 
-const TEACHES: Record<string, string> = {
+export const TEACHES: Record<string, string> = {
   espolicia: "a Policía Nacional oposiciones class",
   esguardia: "a Guardia Civil oposiciones class",
   esvigilante: "a vigilante de seguridad training course",
@@ -260,7 +261,7 @@ export function ExamClassFaq({ examId }: { examId: string }) {
       <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">{question(examId)}</h3>
       <p className="text-gray-600 dark:text-gray-300">
         Yes, for free.{" "}
-        <Link href="/teach" className="text-brand-dark hover:text-brand-darker underline">
+        <Link href={teachPathFor(examId) ?? "/teach"} className="text-brand-dark hover:text-brand-darker underline">
           Make a class at tigertest.io/teach
         </Link>
         {answerRest(examId)}

@@ -9,7 +9,7 @@ import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
 import "@/lib/banks/hukresz";
 import { SITE_URL } from "@/lib/siteUrl";
-import { examLandingAlternates } from "@/lib/examSeo";
+import { examLandingAlternates, examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -77,7 +77,7 @@ const jsonLd = {
       url: `${siteUrl}/hungary-kresz-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" },
+      offers: examOffers("hukresz", "EUR"),
       featureList: [
         "200 Hungarian Highway Code questions in English",
         "3 full tests of 55 questions",

@@ -1,0 +1,1660 @@
+{
+ "realestate-az": {
+  "accessed": "2026-10-18",
+  "rows": [
+   {
+    "label": "Regulator",
+    "value": "Arizona Department of Real Estate (ADRE)",
+    "url": "https://azre.gov"
+   },
+   {
+    "label": "Vendor",
+    "value": "Pearson VUE (Pearson Professional Assessments)",
+    "url": "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/090300.pdf"
+   },
+   {
+    "label": "General (national) portion",
+    "value": "\"Arizona Real Estate Sales - General\": 80 scored + 5 pretest = 85 items, 150 minutes"
+   },
+   {
+    "label": "State portion",
+    "value": "\"Arizona Real Estate Sales - State\": 60 scored + 5 pretest = 65 items, 90 minutes"
+   },
+   {
+    "label": "Pass mark",
+    "value": "75% of questions correct (percent score, 0-100%)"
+   },
+   {
+    "label": "Prelicensing",
+    "value": "90 hours before the exam; 6-hour contract writing course before licensure; apply within one year of passing"
+   }
+  ]
+ },
+ "realestate-fl": {
+  "accessed": "2026-10-17",
+  "rows": [
+   {
+    "label": "Vendor",
+    "value": "Pearson VUE schedules, administers, scores and reports for DBPR.",
+    "url": "https://www2.myfloridalicense.com/servop/testing/documents/RE%5Fsales%5Fcibs.pdf"
+   },
+   {
+    "label": "Format",
+    "value": "100 multiple-choice questions (A to D), 3.5 hours, closed book, calculator allowed.",
+    "url": "https://www2.myfloridalicense.com/servop/testing/documents/RE%5Fsales%5Fcibs.pdf"
+   },
+   {
+    "label": "Pass",
+    "value": "graded on 100 points; 75 or higher passes. Possible unidentified pilot items are unscored and get extra time, so the scored form is the 100 items.",
+    "url": "https://www2.myfloridalicense.com/servop/testing/documents/RE%5Fsales%5Fcibs.pdf"
+   },
+   {
+    "label": "One exam",
+    "value": "Chapter 475 Part I F.S. and 61J2 F.A.C. principles, practices, law and math. No separate national portion.",
+    "url": "https://www2.myfloridalicense.com/servop/testing/documents/RE%5Fsales%5Fcibs.pdf"
+   }
+  ]
+ },
+ "realestate-ga": {
+  "accessed": "2026-10-18",
+  "rows": [
+   {
+    "label": "Regulator",
+    "value": "Georgia Real Estate Commission (GREC)",
+    "url": "https://grec.state.ga.us/obtaining-a-license/real-estate/"
+   },
+   {
+    "label": "Vendor",
+    "value": "PSI Services LLC administers and scores the exam and issues licenses at its four Georgia test centers",
+    "url": "https://test-takers.psiexams.com/api/content/bulletin/4672"
+   },
+   {
+    "label": "Exam fee",
+    "value": "$175 (salesperson, broker and CAM)"
+   },
+   {
+    "label": "Georgia state portion",
+    "value": "52 scored items: I State Laws and Rules 16, II Real Estate Practice in Georgia 21, III Finance and Closing 15"
+   },
+   {
+    "label": "National portion",
+    "value": "PSI national salesperson outline by percent (no item count printed)"
+   },
+   {
+    "label": "National item count, time, pass mark",
+    "value": "100 scored national items, 150 minutes; 52 state items, 90 minutes; 75% on each portion",
+    "url": "https://www.colibrirealestate.com/real-estate/georgia/exam/"
+   },
+   {
+    "label": "Experimental items",
+    "value": "1 to 10 unscored items, about 10% of the form"
+   },
+   {
+    "label": "Prelicense",
+    "value": "75 hours (salesperson)"
+   },
+   {
+    "label": "After passing",
+    "value": "Apply within 3 months or pay double; after 12 months retake the exam"
+   }
+  ]
+ },
+ "realestate-il": {
+  "accessed": "2026-10-18",
+  "rows": [
+   {
+    "label": "Regulator",
+    "value": "Illinois Department of Financial and Professional Regulation (IDFPR), Division of Real Estate"
+   },
+   {
+    "label": "Vendor",
+    "value": "PSI Services LLC",
+    "url": "https://test-takers.psiexams.com/api/content/bulletin/4655"
+   },
+   {
+    "label": "National portion",
+    "value": "100 scored items (100 points), 150 minutes, 70% to pass"
+   },
+   {
+    "label": "State portion",
+    "value": "40 scored items (40 points), 90 minutes, 75% to pass (30 of 40)"
+   },
+   {
+    "label": "Pretest items",
+    "value": "5 to 10 unscored experimental items may be added"
+   },
+   {
+    "label": "Scoring",
+    "value": "Portions scored separately; a failed portion is retaken alone"
+   },
+   {
+    "label": "Retakes",
+    "value": "4 consecutive failures require repeating pre-license education"
+   },
+   {
+    "label": "Score validity",
+    "value": "Apply for licensure within one year of passing"
+   },
+   {
+    "label": "Eligibility",
+    "value": "Age 18, high school, 75 hours pre-license (60 topics + 15 applied, interactive)"
+   }
+  ]
+ },
+ "realestate-la": {
+  "accessed": "2026-11-05",
+  "rows": [
+   {
+    "label": "Vendor and handbook",
+    "value": "Pearson VUE, \"Louisiana Real Estate Commission and Louisiana Appraisers Board Candidate Handbook\", July 2024 (#091900)",
+    "url": "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/091900.pdf"
+   },
+   {
+    "label": "Outline",
+    "value": "\"Louisiana Real Estate Content Outlines\" #091901 (04/2025): national salesperson outline effective April 1, 2025; state outline effective Sept 1, 2021",
+    "url": "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/091901.pdf"
+   },
+   {
+    "label": "Format",
+    "value": "Combination exam 135 scored (80 national + 55 state) plus 10-15 pretest, 240 minutes; national only 80 + 5 pretest, 150 min; state only 55 + 5-10 pretest, 90 min"
+   },
+   {
+    "label": "Pass",
+    "value": "Scaled 70 on each part for salespersons (75 for brokers and instructors); parts scored separately"
+   },
+   {
+    "label": "Retakes",
+    "value": "Authorization valid one year, unlimited attempts; a passed part is kept one year and only the failed part is retaken"
+   },
+   {
+    "label": "Education",
+    "value": "90 prelicensing hours; 45 post-licensing within 180 days; 12 CE hours a year"
+   }
+  ]
+ },
+ "realestate-mi": {
+  "accessed": "2026-10-18",
+  "rows": [
+   {
+    "label": "Regulator",
+    "value": "Department of Licensing and Regulatory Affairs (LARA) and the Board of Real Estate Brokers and Salespersons"
+   },
+   {
+    "label": "Vendor",
+    "value": "PSI Services LLC, test centers in Michigan",
+    "url": "https://test-takers.psiexams.com/api/content/bulletin/837"
+   },
+   {
+    "label": "Salesperson exam",
+    "value": "115 scored questions (115 points), 180 minutes, plus 1 to 10 unscored experimental items that count against the time"
+   },
+   {
+    "label": "Split",
+    "value": "National (Real Estate Principles and Practices) outline in percentages; Michigan State Laws and Rules portion 35 items (3 + 5 + 10 + 5 + 12). 115 - 35 = 80 national items."
+   },
+   {
+    "label": "Pass mark",
+    "value": "70%, passing raw score 80 of 115"
+   },
+   {
+    "label": "Scored separately?",
+    "value": "No. One examination, one pass mark; passers see only PASS, failers get a score per major outline section."
+   },
+   {
+    "label": "Score validity",
+    "value": "1 year from the exam date"
+   },
+   {
+    "label": "Eligibility",
+    "value": "40 clock hours of approved prelicensure courses (4 on civil rights and fair housing) within 36 months; apply through MiPLUS before scheduling with PSI"
+   },
+   {
+    "label": "Exam fee",
+    "value": "$79"
+   }
+  ]
+ },
+ "realestate-nc": {
+  "accessed": "2026-10-18",
+  "rows": [
+   {
+    "label": "Regulator",
+    "value": "North Carolina Real Estate Commission (NCREC)"
+   },
+   {
+    "label": "Vendor",
+    "value": "Pearson VUE (\"The Real Estate Commission contracts with the professional testing service Pearson\")",
+    "url": "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/093400.pdf"
+   },
+   {
+    "label": "Sections",
+    "value": "National (developed by Pearson) and State (developed by NCREC), separately timed and scored, reported separately"
+   },
+   {
+    "label": "National section",
+    "value": "80 scored + 5 pretest, 2.5 hours"
+   },
+   {
+    "label": "State section",
+    "value": "60 scored + 5 pretest, 2.0 hours"
+   },
+   {
+    "label": "Pass mark",
+    "value": "75 on each section, computed separately; both sections must be passed in the same 180-day Exam Eligibility Period"
+   },
+   {
+    "label": "Retakes",
+    "value": "Retake only the failed section after refiling the application (single-section exam fee)"
+   },
+   {
+    "label": "Prelicensing",
+    "value": "75-hour NC Broker Prelicensing Course within 3 years before application"
+   },
+   {
+    "label": "Postlicensing",
+    "value": "90 hours (Post 301, 302, 303) within 18 months of initial licensure"
+   },
+   {
+    "label": "CE",
+    "value": "8 hours a year (4-hour Update plus 4 hours elective) from the second renewal"
+   }
+  ]
+ },
+ "realestate-ny": {
+  "accessed": "2026-10-17",
+  "rows": [
+   {
+    "label": "Who gives the exam",
+    "value": "NY Department of State, Division of Licensing Services, at DOS exam sites, scheduled through eAccessNY. No outside vendor.",
+    "url": "https://dos.ny.gov/real-estate-agent"
+   },
+   {
+    "label": "Format",
+    "value": "Multiple choice, \"based on the 77-hour pre-licensing curriculum\"",
+    "url": "https://dos.ny.gov/real-estate-agent"
+   },
+   {
+    "label": "Time",
+    "value": "1 1/2 hours (90 minutes), starting after the instructions"
+   },
+   {
+    "label": "Scoring",
+    "value": "Reported only as passed or failed, with no numerical score. A pass is valid for two years."
+   },
+   {
+    "label": "National vs state split",
+    "value": "None. One exam on the DOS 77-hour syllabus, which mixes general and NY-specific topics."
+   },
+   {
+    "label": "Number of questions",
+    "value": "75 (not published by DOS; every course provider and prep source reports 75)"
+   },
+   {
+    "label": "Pass mark",
+    "value": "70% (about 53 of 75). DOS does not publish it because it reports pass/fail only."
+   },
+   {
+    "label": "Eligibility",
+    "value": "Age 18; 77-hour approved course plus the school's own proctored final; sponsoring broker; pass the state exam",
+    "url": "https://dos.ny.gov/real-estate-agent"
+   },
+   {
+    "label": "Continuing education",
+    "value": "22.5 hours each 2-year term: 3 fair housing, 2.5 ethics, 2 implicit bias, 2 cultural competency, 1 recent legal matters, 1 agency (2 in a salesperson's first term)"
+   }
+  ]
+ },
+ "realestate-oh": {
+  "accessed": "2026-10-18",
+  "rows": [
+   {
+    "label": "Regulator",
+    "value": "Ohio Department of Commerce, Division of Real Estate and Professional Licensing; Ohio Real Estate Commission",
+    "url": "https://com.ohio.gov/divisions-and-programs/real-estate-and-professional-licensing"
+   },
+   {
+    "label": "Vendor",
+    "value": "PSI Services LLC",
+    "url": "https://test-takers.psiexams.com/api/content/bulletin/1002"
+   },
+   {
+    "label": "National portion",
+    "value": "80 scored items (80 points), 120 minutes, 70% to pass"
+   },
+   {
+    "label": "State portion",
+    "value": "40 scored items (40 points), 60 minutes, 70% to pass"
+   },
+   {
+    "label": "Both portions",
+    "value": "120 items, 180 minutes"
+   },
+   {
+    "label": "Pretest items",
+    "value": "5 to 10 unscored \"experimental\" questions may be added"
+   },
+   {
+    "label": "Scoring",
+    "value": "Each portion passed separately; a failed portion is retaken alone. Both portions must be passed within 12 months of the bulletin label date and taken in the same session unless one was already passed."
+   },
+   {
+    "label": "Retakes",
+    "value": "No limit on attempts"
+   },
+   {
+    "label": "Pre-license education",
+    "value": "40 h real estate principles and practices, 40 h Ohio real estate law (civil rights, housing discrimination), 10 h appraisal, 10 h finance"
+   }
+  ]
+ },
+ "realestate-pa": {
+  "accessed": "2026-10-18",
+  "rows": [
+   {
+    "label": "Regulator",
+    "value": "Pennsylvania State Real Estate Commission (Department of State, Bureau of Professional and Occupational Affairs)",
+    "url": "https://www.pa.gov/agencies/dos/department-and-offices/bpoa/boards-commissions/real-estate-commission"
+   },
+   {
+    "label": "Vendor",
+    "value": "Pearson VUE since April 1, 2023 (PSI before that); eligibility and scheduling through Clarus (pare.useclarus.com)",
+    "url": "https://www.pearsonvue.com/us/en/pa/realestate.html"
+   },
+   {
+    "label": "Candidate handbook",
+    "value": "Pennsylvania Real Estate Commission Candidate Handbook #093900, October 2026",
+    "url": "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/093900.pdf"
+   },
+   {
+    "label": "Content outlines",
+    "value": "#093901, 03/2026: national/general salesperson outline effective April 1, 2025; Pennsylvania salesperson state outline effective March 16, 2026",
+    "url": "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/093901.pdf"
+   },
+   {
+    "label": "National portion",
+    "value": "80 scored items + 5 to 10 pretest, 150 minutes"
+   },
+   {
+    "label": "State portion",
+    "value": "40 scored items + 10 pretest (the handbook table says 5 to 10), 60 minutes"
+   },
+   {
+    "label": "Pass mark",
+    "value": "75% minimum passing score on each portion (scaled 0 to 100; numeric score shown only to failing candidates)"
+   },
+   {
+    "label": "Parts scored separately",
+    "value": "Yes. A candidate who passes one part and fails the other retakes only the failed part within the authorization period"
+   },
+   {
+    "label": "Score validity",
+    "value": "Exam results are good for 3 years; the license application must reach the Commission within 3 years of passing"
+   }
+  ]
+ },
+ "realestate-tn": {
+  "accessed": "2026-10-18",
+  "rows": [
+   {
+    "label": "Vendor",
+    "value": "PSI Services LLC",
+    "url": "https://www.tn.gov/commerce/regboards/trec/license/psi.html"
+   },
+   {
+    "label": "Bulletin",
+    "value": "Tennessee Real Estate Candidate Information Bulletin, \"Updated 7/1/2025\" (the edition TREC links, bulletin 511; bulletin 509 on PSI's portal is the same text)",
+    "url": "https://test-takers.psiexams.com/api/content/bulletin/511"
+   },
+   {
+    "label": "National portion",
+    "value": "80 scored items (80 points), 160 minutes"
+   },
+   {
+    "label": "State portion",
+    "value": "40 scored items (40 points), 80 minutes"
+   },
+   {
+    "label": "Pretest",
+    "value": "5 to 10 unscored \"experimental\" items may be added; they count against time"
+   },
+   {
+    "label": "Pass score",
+    "value": "56 of 80 (70%) national and 28 of 40 (70%) state, scored separately"
+   },
+   {
+    "label": "Retakes",
+    "value": "Retake only the failed section; a passed section is valid for two retakes of the failed one or one year, whichever comes first; after the second attempt, 30 days between failed attempts"
+   },
+   {
+    "label": "Apply after passing",
+    "value": "Within one year of passing, or retake (was six months before July 1, 2025)"
+   }
+  ]
+ },
+ "realestate-tx": {
+  "accessed": "2026-10-17",
+  "rows": [
+   {
+    "label": "Vendor",
+    "value": "Pearson VUE",
+    "url": "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/094400.pdf"
+   },
+   {
+    "label": "National portion",
+    "value": "80 scored + 5 pretest = 85 items, 150 minutes"
+   },
+   {
+    "label": "Texas state portion",
+    "value": "40 scored + 10 pretest = 50 items, 90 minutes",
+    "url": "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/094401.pdf"
+   },
+   {
+    "label": "Total appointment",
+    "value": "125 items, 240 minutes for both portions"
+   },
+   {
+    "label": "Pass score",
+    "value": "70% on each portion: 56 of 80 national, 28 of 40 state"
+   },
+   {
+    "label": "Retakes",
+    "value": "Retake only the failed portion; three failures require 30 more hours per failed part (60 if both)"
+   },
+   {
+    "label": "Score validity",
+    "value": "Each passed part valid one year"
+   }
+  ]
+ },
+ "realestate-va": {
+  "accessed": "2026-10-18",
+  "rows": [
+   {
+    "label": "Regulator",
+    "value": "Virginia Real Estate Board, Department of Professional and Occupational Regulation (DPOR)",
+    "url": "https://www.dpor.virginia.gov/Boards/Real-Estate"
+   },
+   {
+    "label": "Vendor",
+    "value": "PSI",
+    "url": "https://test-takers.psiexams.com/api/content/bulletin/466"
+   },
+   {
+    "label": "National portion",
+    "value": "80 questions (80 points), 105 minutes"
+   },
+   {
+    "label": "Virginia state portion",
+    "value": "40 questions (40 points), 45 minutes"
+   },
+   {
+    "label": "Both portions",
+    "value": "120 questions, 150 minutes"
+   },
+   {
+    "label": "Pretest items",
+    "value": "One to ten unscored experimental items (about 10%), counted against time"
+   },
+   {
+    "label": "Pass score",
+    "value": "56 of 80 on the national portion (70%) and 30 of 40 on the state portion (75%), each portion passed separately"
+   },
+   {
+    "label": "Retakes",
+    "value": "Retake only the failed portion; application due within one year of the original exam date"
+   },
+   {
+    "label": "Reciprocity",
+    "value": "Licensees of other states take only the state portion"
+   },
+   {
+    "label": "Eligibility",
+    "value": "Age 18, high school diploma, 60-hour principles course, fingerprinting"
+   }
+  ]
+ },
+ "realestate-wa": {
+  "accessed": "2026-10-18",
+  "rows": [
+   {
+    "label": "Regulator",
+    "value": "Washington State Department of Licensing, Real Estate program; the Real Estate Commission (director as chair plus six governor-appointed members) advises",
+    "url": "https://dol.wa.gov/professional-licenses/real-estate-brokers/exam-real-estate-brokers"
+   },
+   {
+    "label": "Vendor",
+    "value": "PSI Services LLC",
+    "url": "https://test-takers.psiexams.com/api/content/bulletin/5054"
+   },
+   {
+    "label": "National portion",
+    "value": "100 scored items (100 points), 150 minutes"
+   },
+   {
+    "label": "State portion",
+    "value": "30 scored items (30 points), 90 minutes"
+   },
+   {
+    "label": "Pretest items",
+    "value": "5 to 10 unscored \"experimental\" items may be added"
+   },
+   {
+    "label": "Pass score",
+    "value": "Scaled score of 70 on each portion, scored separately"
+   },
+   {
+    "label": "Passing one portion",
+    "value": "Valid six months; the other portion must be passed within six months or both are retaken"
+   },
+   {
+    "label": "After passing",
+    "value": "Apply for the license within one year"
+   },
+   {
+    "label": "Eligibility",
+    "value": "18, high school diploma or equivalent, 90 hours (60-hour Real Estate Fundamentals with 3 hours fair housing, 30-hour Real Estate Practices) within two years before the exam"
+   },
+   {
+    "label": "Fee",
+    "value": "$210 per attempt"
+   }
+  ]
+ },
+ "insurance-ca": {
+  "accessed": "2026-10-17",
+  "rows": [
+   {
+    "label": "Regulator",
+    "value": "California Department of Insurance (CDI)"
+   },
+   {
+    "label": "Vendor",
+    "value": "PSI Services LLC (PSI test centers, CDI site in Los Angeles, or PSI online remote proctoring)"
+   },
+   {
+    "label": "Licenses",
+    "value": "Life agent (Ins. Code 1626(a)(1)) and Accident and Health or Sickness agent (Ins. Code 1626(a)(2)) are separate license types"
+   },
+   {
+    "label": "Exams",
+    "value": "Life: 75 questions. Accident and Health or Sickness: 75 questions. Combined \"Life, Accident and Health or Sickness\": 150 questions"
+   },
+   {
+    "label": "Time",
+    "value": "CDI page: Life 1.5 h, A&H 1.5 h, combined 3 h. CIB March 2026 table: Life 105 min, A&H 105 min, combined 195 min (the bulletin adds time for up to about 10% unscored experimental items)"
+   },
+   {
+    "label": "Combined exam rule",
+    "value": "An applicant for both life and A&H passes one examination covering both (Ins. Code 1676(b))"
+   },
+   {
+    "label": "Pass score",
+    "value": "60 percent on every producer exam (70 only for Life and Disability Analyst, adjuster, bail)"
+   },
+   {
+    "label": "State vs general split",
+    "value": "None. California exams are integrated: every outline section mixes general concepts and California Insurance Code objectives"
+   },
+   {
+    "label": "Prelicensing",
+    "value": "12 hours of study on ethics and the Insurance Code (incl. 1 hour fraud); the 20-hour course now applies to bail and public adjusters"
+   },
+   {
+    "label": "Exam validity",
+    "value": "License must issue within 12 months of passing"
+   }
+  ]
+ },
+ "insurance-fl": {
+  "accessed": "2026-10-17",
+  "rows": [
+   {
+    "label": "Regulator",
+    "value": "Florida Department of Financial Services (DFS), headed by the CFO, licenses agents (Division of Insurance Agent and Agency Services)"
+   },
+   {
+    "label": "Vendor",
+    "value": "Pearson VUE",
+    "url": "https://www.pearsonvue.com/us/en/fl/insurance.html"
+   },
+   {
+    "label": "Exam",
+    "value": "\"FLA Health and Life and Annuity (incl. Var. Contracts) Agent (0215)\", Pearson VUE code InsFL-LHA05 (Spanish InsFL-LHA05S)"
+   },
+   {
+    "label": "Length",
+    "value": "150 scored + 15 pretest = 165 items, 2 hours 45 minutes",
+    "url": "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/121003.pdf"
+   },
+   {
+    "label": "Pass score",
+    "value": "70% of scored items (105 of 150)"
+   },
+   {
+    "label": "Retakes",
+    "value": "5 attempts per exam type in 12 months"
+   },
+   {
+    "label": "Score validity",
+    "value": "1 year"
+   },
+   {
+    "label": "Prelicensing",
+    "value": "60 hours in multiple areas incl. life, annuities, variable contracts and health, 3 of them ethics, within 4 years (or 30 hours life / 40 hours health for single lines)"
+   },
+   {
+    "label": "Separate lines",
+    "value": "2-14 Life and Annuity incl. Variable Contracts (0214, 2 hours) and 2-40 Health (0240, 2 hours) are separate licenses; the 2-15 is the single combined exam, so no combining of forms was needed"
+   }
+  ]
+ },
+ "insurance-ga": {
+  "accessed": "2026-10-18",
+  "rows": [
+   {
+    "label": "Regulator",
+    "value": "Georgia Office of Commissioner of Insurance and Safety Fire (OCI; the handbook calls it the Georgia Insurance Department), Commissioner John F. King",
+    "url": "https://oci.georgia.gov/"
+   },
+   {
+    "label": "Vendor",
+    "value": "Pearson VUE (test centers; scheduling at least one day ahead)",
+    "url": "https://www.pearsonvue.com/us/en/ga/insurance.html"
+   },
+   {
+    "label": "Licenses",
+    "value": "Life (exam 01) and Accident & Sickness (exam 02) are separate lines; exam 05 \"Life/Accident/Sickness Agent COMBO\" covers both",
+    "url": "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/121100.pdf"
+   },
+   {
+    "label": "Exam and time",
+    "value": "12-GA-05 Life/Accident/Sickness Agent COMBO, 2.5 hours (single lines 2 hours each)"
+   },
+   {
+    "label": "Scored items",
+    "value": "125 scored + 10 pretest (single Life or A&S exam: 80 scored + 10 pretest each)",
+    "url": "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/121102.pdf"
+   },
+   {
+    "label": "Scoring",
+    "value": "One percent score for the whole exam (percentage of questions answered correctly); pass = 70%; general and Georgia portions are not scored separately"
+   },
+   {
+    "label": "Retakes",
+    "value": "Wait 14 days after attempts one and two, 60 days after the third and later; no attempt limit"
+   },
+   {
+    "label": "Score validity",
+    "value": "Apply within 12 months of passing or retake the exam"
+   },
+   {
+    "label": "Prelicensing",
+    "value": "Handbook table: 8-hour Life course and 8-hour Accident and Sickness course within the last 12 months; CLU, FLMI, BBA or PhD in insurance exemptions (BBA exempts education only)"
+   }
+  ]
+ },
+ "insurance-il": {
+  "accessed": "2026-10-18",
+  "rows": [
+   {
+    "label": "Regulator",
+    "value": "Illinois Department of Insurance (IDOI), Director Ann Gillespie; producer licensing under Article XXXI of the Illinois Insurance Code (215 ILCS 5/500-5 et seq.)",
+    "url": "https://idoi.illinois.gov/producers.html"
+   },
+   {
+    "label": "Vendor",
+    "value": "Pearson VUE (test centers and OnVUE online proctoring)",
+    "url": "https://www.pearsonvue.com/us/en/il/insurance.html"
+   },
+   {
+    "label": "Candidate handbook",
+    "value": "Illinois Insurance Candidate Handbook #121400, August 2026",
+    "url": "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/121400.pdf"
+   },
+   {
+    "label": "Content outlines",
+    "value": "Illinois Insurance Content Outlines #121402 (10/2026), two sets: effective January 1, 2026 (exams before Jan 1, 2027) and effective January 1, 2027",
+    "url": "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/121402.pdf"
+   },
+   {
+    "label": "Exams and times",
+    "value": "GEN-Life01 75 min / STATE-Life01 50 min; GEN-Health02 75 / STATE-Health02 55; GEN-Prop03 75 / STATE-Prop03 50; GEN-Cas04 75 / STATE-Cas04 55; GEN-Pers55 (personal lines) 90 / STATE-Pers55 45"
+   },
+   {
+    "label": "Scored items",
+    "value": "Life general 50 (+5 pretest), Life state 31 (+5); Health general 50 (+5), A&H state 39 (+5); Property general 50 (+5), Property state 30 (+5); Casualty general 50 (+5), Casualty state 37 (+5)"
+   },
+   {
+    "label": "Pass mark",
+    "value": "Scaled 70 on every exam (0 to 100 scale, not a percent)"
+   },
+   {
+    "label": "Scoring",
+    "value": "Each exam is scored and reported pass/fail on its own; the line is licensed only when both its general and state exams are passed"
+   },
+   {
+    "label": "Prelicensing",
+    "value": "20 hours per line (7.5 in a classroom or webinar); Motor Vehicle 12.5 (5 live); completion must be used within 12 months"
+   },
+   {
+    "label": "Fee",
+    "value": "$92 per exam (includes the $50 state fee); pairing general and state for one line on one order gets a $92 discount"
+   }
+  ]
+ },
+ "insurance-mi": {
+  "accessed": "2026-10-18",
+  "rows": [
+   {
+    "label": "Regulator",
+    "value": "Michigan Department of Insurance and Financial Services (DIFS); licensing under the Insurance Code of 1956, 1956 PA 218, chapter 12 (MCL 500.1201a to 500.1247)",
+    "url": "https://test-takers.psiexams.com/api/content/bulletin/3560"
+   },
+   {
+    "label": "Vendor",
+    "value": "PSI Services LLC, at PSI test centers only (DIFS ended remote proctoring with the 6/10/2025 bulletin)"
+   },
+   {
+    "label": "Exam",
+    "value": "\"Life, Accident and Health Producer\", series 16-80 (combined line; separate Life 16-65 and Accident & Health 16-66 exams also exist)"
+   },
+   {
+    "label": "Items and time",
+    "value": "150 scored items, 2.5 hours; plus up to about 10% unscored experimental items that count against time"
+   },
+   {
+    "label": "Pass mark",
+    "value": "75% (113 correct of 150)"
+   },
+   {
+    "label": "Scoring",
+    "value": "One integrated exam: Michigan law is woven into the sections (no separate state portion, no separate scores)"
+   },
+   {
+    "label": "Prelicensing",
+    "value": "Registered program of study required before the exam; certificate valid 12 months; passing result valid 12 months"
+   },
+   {
+    "label": "Retake",
+    "value": "Can retest as soon as two days later, space permitting; no stated attempt limit"
+   }
+  ]
+ },
+ "insurance-nc": {
+  "accessed": "2026-10-18",
+  "rows": [
+   {
+    "label": "Regulator",
+    "value": "North Carolina Department of Insurance (NCDOI), Agent Services Division; Commissioner elected (G.S. 58-2-5)"
+   },
+   {
+    "label": "Vendor",
+    "value": "Pearson VUE",
+    "url": "https://www.pearsonvue.com/us/en/nc/insurance.html"
+   },
+   {
+    "label": "Handbook",
+    "value": "North Carolina Insurance Licensing Candidate Handbook, October 2025 (#123400, rev. 03/2026)",
+    "url": "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/123400.pdf"
+   },
+   {
+    "label": "Content outlines",
+    "value": "North Carolina Insurance Content Outlines, effective March 2, 2026 (#123415, 03/2026)",
+    "url": "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/123415.pdf"
+   },
+   {
+    "label": "Split",
+    "value": "Life: 41 general + 14 NC statutes and regulations. A&H: 41 general + 14 NC statutes and regulations"
+   },
+   {
+    "label": "Scoring",
+    "value": "The two parts are scored together, not individually; one overall passing score. Scaled 0 to 100, pass 70"
+   },
+   {
+    "label": "Retake",
+    "value": "Wait 24 hours before scheduling a retake; must pass before the NIPR application's end date (6-month eligibility)"
+   },
+   {
+    "label": "Prelicensing education",
+    "value": "No longer required for applications filed on or after October 1, 2025 (the old rule was 20 hours per line)",
+    "url": "https://www.ncleg.gov/EnactedLegislation/SessionLaws/HTML/2025-2026/SL2025-45.html"
+   }
+  ]
+ },
+ "insurance-nj": {
+  "accessed": "2026-10-18",
+  "rows": [
+   {
+    "label": "Regulator",
+    "value": "New Jersey Department of Banking and Insurance (DOBI), Commissioner of Banking and Insurance (N.J.S.A. 17:1-2)"
+   },
+   {
+    "label": "Vendor",
+    "value": "PSI Services LLC, at PSI test centers in New Jersey or by remote proctoring",
+    "url": "https://test-takers.psiexams.com/api/content/bulletin/1640"
+   },
+   {
+    "label": "Licenses",
+    "value": "Life and Accident and Health or Sickness are separate lines of authority (N.J.S.A. 17:22A-33(a)(1), (2)), each with its own exam. There is no combined life and health exam"
+   },
+   {
+    "label": "Life Producer exam",
+    "value": "83 scored items, 3.5 hours, pass 70% correct",
+    "url": "https://proctor2.psionline.com/programs/NJINS/LifeProducerInstructornov.pdf"
+   },
+   {
+    "label": "Accident & Health Producer exam",
+    "value": "88 scored items, 3.5 hours, pass 70% correct",
+    "url": "https://proctor2.psionline.com/programs/NJINS/AHProduceInstructorJuly2011.pdf"
+   },
+   {
+    "label": "Pretest items",
+    "value": "5 to 19 unscored experimental items may be added to each exam"
+   },
+   {
+    "label": "Scoring",
+    "value": "One percent-correct score per exam; the general and New Jersey sections are not scored separately (the failing report gives diagnostics by area)"
+   },
+   {
+    "label": "Score validity",
+    "value": "Score reports valid one year"
+   },
+   {
+    "label": "Prelicensing",
+    "value": "20 hours per authority (life; accident and health) at a DOBI-approved provider; certificate (or waiver) must be shown at the test center"
+   },
+   {
+    "label": "Designations",
+    "value": "CLU, ChFC and others waive the life course; RHU, REBC, HIA, CEBS waive the health course; designation holders are no longer exempt from the exam"
+   }
+  ]
+ },
+ "insurance-ny": {
+  "accessed": "2026-10-18",
+  "rows": [
+   {
+    "label": "Regulator",
+    "value": "New York State Department of Financial Services (DFS), headed by the superintendent of financial services (Financial Services Law 202)",
+    "url": "https://www.dfs.ny.gov/apps_and_licensing/agents_and_brokers"
+   },
+   {
+    "label": "Vendor",
+    "value": "PSI Services LLC (PSI test centers in New York; DFS: \"PSI Services provides all examination services\")",
+    "url": "https://test-takers.psiexams.com/nyins"
+   },
+   {
+    "label": "Scored items",
+    "value": "150 scored on 17-55, plus 5 to 10 unscored experimental items"
+   },
+   {
+    "label": "State vs general split",
+    "value": "None. New York exams are integrated: every outline section cites New York Insurance Law and regulations alongside general concepts, and there is one score"
+   },
+   {
+    "label": "Pass mark",
+    "value": "\"You must get 70% correct to pass the examination\" (raw percent, not scaled)"
+   },
+   {
+    "label": "Prelicensing",
+    "value": "40 hours for Life/Accident and Health (Insurance Law 2103)"
+   },
+   {
+    "label": "Retakes",
+    "value": "No same-day retest; may retest as soon as the second day after a failure"
+   },
+   {
+    "label": "Apply within",
+    "value": "Two years of passing"
+   }
+  ]
+ },
+ "insurance-oh": {
+  "accessed": "2026-10-18",
+  "rows": [
+   {
+    "label": "Regulator",
+    "value": "Ohio Department of Insurance (ODI), superintendent of insurance; life and accident and health are separate lines of authority (ORC 3905.06(B)(1), (2))",
+    "url": "https://codes.ohio.gov/ohio-revised-code/section-3905.06"
+   },
+   {
+    "label": "Vendor",
+    "value": "PSI Services LLC, in-person at PSI test centers (remote proctored exams ended 3/13/2026)",
+    "url": "https://dam.assets.ohio.gov/image/upload/insurance.ohio.gov/Agent/Documents/Candidate_Handbook_updated_3.20.2025.pdf"
+   },
+   {
+    "label": "Exams",
+    "value": "Combined \"Ohio Life, Accident and Health Insurance Agent\", Series 11-35; separate Life (Series 11-44) and Accident and Health (Series 11-45) exams are also offered"
+   },
+   {
+    "label": "Items and time",
+    "value": "150 questions, 2.5 hours"
+   },
+   {
+    "label": "Unscored items",
+    "value": "Up to about 10% experimental items (one to ten) may be added on top of the stated count; they count against time"
+   },
+   {
+    "label": "Pass mark",
+    "value": "Minimum passing score 70%"
+   },
+   {
+    "label": "State vs general",
+    "value": "Not separate parts. Ohio statutes and rules are cited inside every outline section (one integrated 150-item exam, one score)"
+   },
+   {
+    "label": "Prelicensing",
+    "value": "20 hours per line; the combined exam needs both completion certificates; certificates valid 180 days"
+   },
+   {
+    "label": "Retakes",
+    "value": "No limit on attempts"
+   }
+  ]
+ },
+ "insurance-pa": {
+  "accessed": "2026-10-18",
+  "rows": [
+   {
+    "label": "Regulator",
+    "value": "Pennsylvania Insurance Department, Bureau of Licensing and Enforcement (Insurance Commissioner)"
+   },
+   {
+    "label": "Vendor",
+    "value": "PSI Services LLC, at PSI test centers or by remote proctoring",
+    "url": "https://test-takers.psiexams.com/api/content/bulletin/7282"
+   },
+   {
+    "label": "Length",
+    "value": "150 scored items in 170 minutes, plus a small number (5 to 10) of unscored experimental items",
+    "url": "https://proctor2.psionline.com/media/programs/PAINS/16-03xx.pdf"
+   },
+   {
+    "label": "Pass mark",
+    "value": "70% (\"you must achieve a minimum score of 70%\")"
+   },
+   {
+    "label": "Retakes",
+    "value": "No limit on attempts; no new appointment on the same day"
+   },
+   {
+    "label": "Prelicensing education",
+    "value": "None. Act 142 of 2024 (signed Oct. 31, 2024, effective in 180 days) deleted the preexamination education requirement from section 604-A of the Insurance Department Act"
+   },
+   {
+    "label": "Continuing education",
+    "value": "24 hours per two-year license period, at least 3 on ethics (Act 142 of 2024)"
+   }
+  ]
+ },
+ "insurance-tx": {
+  "accessed": "2026-10-17",
+  "rows": [
+   {
+    "label": "Regulator and license",
+    "value": "Texas Department of Insurance (TDI), General Lines: Life, Accident, Health and HMO agent license (TIC 4054.051)",
+    "url": "https://tdi.texas.gov/agent/general-life-apply.html"
+   },
+   {
+    "label": "Vendor",
+    "value": "Pearson VUE, at physical test centers",
+    "url": "https://www.pearsonvue.com/us/en/tx/insurance.html"
+   },
+   {
+    "label": "Exam name and series",
+    "value": "InsTX-LAH05 \"General Lines - Life, Accident & Health\" (English); InsTX-LAH25 (Spanish)",
+    "url": "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/124400.pdf"
+   },
+   {
+    "label": "Time",
+    "value": "150 minutes"
+   },
+   {
+    "label": "Scored items",
+    "value": "130 scored: 100 general (\"Life and Health - General Knowledge\", plus 10 pretest) + 30 Texas state-specific (\"Life and Health Agent State Specific\", plus 5 pretest); 145 items delivered",
+    "url": "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/124401.pdf"
+   },
+   {
+    "label": "Scoring",
+    "value": "One combined score for the whole exam (not per part); scaled 0 to 100, pass = 70"
+   },
+   {
+    "label": "Retakes",
+    "value": "May reschedule after one day; no attempt limit"
+   },
+   {
+    "label": "Exam exemptions",
+    "value": "CLU designation; license expired less than one year (TDI page says more than 90 days but less than one year needs a new application, no exam)"
+   }
+  ]
+ },
+ "insurance-va": {
+  "accessed": "2026-10-18",
+  "rows": [
+   {
+    "label": "Regulator",
+    "value": "State Corporation Commission, Bureau of Insurance (Va. Code § 38.2-200)",
+    "url": "https://www.scc.virginia.gov/regulated-industries/bureau-of-insurance/licensed-agent/applying-for-a-individual-va-insurance-license/"
+   },
+   {
+    "label": "Vendor",
+    "value": "Prometric (test center or ProProctor remote)"
+   },
+   {
+    "label": "Exam",
+    "value": "Series 11-01 \"VA Life, Annuities & Health Exam\", 150 minutes. Life and health are also offered separately (11-05 Life & Annuities, 11-06 Health, 120 minutes each)",
+    "url": "https://www.scc.virginia.gov/media/sccvirginiagov-home/regulated-industries/insurance/licensing--registration/apply-for-an-individual-virginia-insurance-license/insva-cib-final.pdf"
+   },
+   {
+    "label": "Scored items",
+    "value": "140 scored + 10 pretest, 2.5 hours",
+    "url": "https://www.prometric.com/files/virginia/1101-Life-and-Health-Insurance.pdf"
+   },
+   {
+    "label": "Pass mark",
+    "value": "70 percent correct (raw cut 98 of 140)",
+    "url": "https://www.scc.virginia.gov/media/sccvirginiagov-home/regulated-industries/insurance/licensing--registration/licensing-exam-pass-rates/vains-demograph-06.2025_05.2026.pdf"
+   },
+   {
+    "label": "Scoring",
+    "value": "One combined score: \"The general-knowledge portion and the state-specific portion are scored together as a single examination\""
+   },
+   {
+    "label": "Retakes",
+    "value": "Wait 24 hours to rebook; after a third failure, 30 calendar days (Va. Code § 38.2-1817(B))"
+   },
+   {
+    "label": "2025 change",
+    "value": "New exams went live March 20, 2025",
+    "url": "https://agentsync.io/compliance-library/regulatory-updates/virginia-pre-licensing-examination-changes"
+   }
+  ]
+ },
+ "insurance-wa": {
+  "accessed": "2026-10-18",
+  "rows": [
+   {
+    "label": "Regulator",
+    "value": "Washington Office of the Insurance Commissioner (OIC), an elected commissioner (RCW 48.02.010)",
+    "url": "https://www.insurance.wa.gov/"
+   },
+   {
+    "label": "Vendor",
+    "value": "PSI Services LLC, at 10 Washington test centers or by remote proctoring",
+    "url": "https://www.insurance.wa.gov/producers-adjusters/education/first-time-license/how-schedule-insurance-license-exam"
+   },
+   {
+    "label": "Candidate handbook",
+    "value": "\"Washington Office of the Insurance Commissioner Insurance License Examination Candidate Information Bulletin\", PSI, last revised 8/3/2026",
+    "url": "https://test-takers.psiexams.com/api/content/bulletin/6616"
+   },
+   {
+    "label": "Exam",
+    "value": "Life and Disability Producer Combo: 150 questions, 195 minutes (Life alone 100 in 150 min; Disability alone 100 in 150 min)"
+   },
+   {
+    "label": "Content outline",
+    "value": "\"Washington Life and Disability Producer, 150 Items - 195 Minutes\", effective 4/1/2026",
+    "url": "https://www.psionline.com/PROGRAMS/WAINS/lifedas26.pdf"
+   },
+   {
+    "label": "State portion",
+    "value": "45 items \"Washington Laws, Rules, and Regulations\" (RCW Title 48 and WAC Title 284) plus 3 items Federal Laws (18 USC 1033/1034, Do Not Call, ACA)"
+   },
+   {
+    "label": "Scoring",
+    "value": "One exam, one score; \"You must get 70% correct to pass\""
+   },
+   {
+    "label": "Pretest items",
+    "value": "One to ten unscored experimental items, about 10 percent, may be added and count against time"
+   },
+   {
+    "label": "Retakes",
+    "value": "No same-day rebooking; a candidate may retest as soon as two days later, space permitting"
+   },
+   {
+    "label": "Licensing window",
+    "value": "Application, fees and fingerprints must be submitted within 180 days of passing or the exam must be retaken"
+   }
+  ]
+ },
+ "pnc-ca": {
+  "accessed": "2026-10-17",
+  "rows": [
+   {
+    "label": "Regulator",
+    "value": "California Department of Insurance (CDI)"
+   },
+   {
+    "label": "Vendor",
+    "value": "PSI (scheduling at test-takers.psiexams.com/cadi)",
+    "url": "https://test-takers.psiexams.com/api/content/bulletin/2530"
+   },
+   {
+    "label": "Licenses",
+    "value": "Property Broker-Agent and Casualty Broker-Agent (separate licenses, Ins. Code 1625)"
+   },
+   {
+    "label": "Exams offered",
+    "value": "Property 75 questions / 98 min; Casualty 75 / 98 min; combined Property and Casualty 150 questions / 195 min"
+   },
+   {
+    "label": "Pass score",
+    "value": "60 percent for all exams except Life and Disability Analyst, Adjuster and Bail (70 percent)"
+   },
+   {
+    "label": "Pretest items",
+    "value": "One to ten unscored experimental items (about 10 percent) may be added; they count against time"
+   },
+   {
+    "label": "Score validity",
+    "value": "Passed exam valid one year (Ins. Code 1676(a))"
+   },
+   {
+    "label": "Prelicensing",
+    "value": "12 hours of study on ethics and the Insurance Code, including 1 hour on fraud (one course covers several license types); must be done before the license is issued"
+   },
+   {
+    "label": "Objectives doc (property)",
+    "value": "\"The ... property license examination contains 75 multiple choice questions ... ninety (90) minutes\" (the CIB's 98 minutes is the current figure)",
+    "url": "https://www.insurance.ca.gov/0200-industry/0030-seek-pre-lic/upload/2025-Property-License-Examination-Objectives.docx"
+   },
+   {
+    "label": "Objectives doc (casualty)",
+    "value": "Same, 75 questions",
+    "url": "https://www.insurance.ca.gov/0200-industry/0030-seek-pre-lic/upload/2025-Casualty-License-Examination-Objectives.docx"
+   }
+  ]
+ },
+ "pnc-fl": {
+  "accessed": "2026-10-17",
+  "rows": [
+   {
+    "label": "Vendor",
+    "value": "Pearson VUE",
+    "url": "https://www.pearsonvue.com/us/en/fl/insurance.html"
+   },
+   {
+    "label": "Exam",
+    "value": "Florida Agent's General Lines Insurance, series 2-20 (Pearson code InsFL-PC06, license type 0220; Spanish InsFL-PC06S)",
+    "url": "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/121000.pdf"
+   },
+   {
+    "label": "Scored questions",
+    "value": "160 scored + 15 pretest",
+    "url": "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/121003.pdf"
+   },
+   {
+    "label": "Time",
+    "value": "3 hours"
+   },
+   {
+    "label": "Pass score",
+    "value": "70% for all Florida insurance exams (correct answers / scored questions)"
+   },
+   {
+    "label": "Score validity / attempts",
+    "value": "Passing score valid 1 year; limit of 5 attempts for the same exam type"
+   },
+   {
+    "label": "Study manual",
+    "value": "Florida General Lines and Customer Representative Study Manual, 24th edition (FAIA)"
+   }
+  ]
+ },
+ "pnc-ga": {
+  "accessed": "2026-10-18",
+  "rows": [
+   {
+    "label": "Regulator",
+    "value": "Georgia Office of Commissioner of Insurance and Safety Fire (OCI; the handbook calls it the Georgia Insurance Department), Commissioner John F. King",
+    "url": "https://oci.georgia.gov/"
+   },
+   {
+    "label": "Vendor",
+    "value": "Pearson VUE",
+    "url": "https://www.pearsonvue.com/us/en/ga/insurance.html"
+   },
+   {
+    "label": "Licenses",
+    "value": "Property (exam 03) and Casualty (exam 04) are separate lines; exam 06 \"Property & Casualty Agent COMBO\" covers both; Personal Lines (55) is a separate license",
+    "url": "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/121100.pdf"
+   },
+   {
+    "label": "Exam and time",
+    "value": "12-GA-06 Property & Casualty Agent COMBO, 2.5 hours (single lines 2 hours each)"
+   },
+   {
+    "label": "Scored items",
+    "value": "125 scored + 10 pretest (single Property or Casualty exam: 80 scored + 10 pretest each)",
+    "url": "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/121102.pdf"
+   },
+   {
+    "label": "Scoring",
+    "value": "One percent score for the whole exam; pass = 70%; general and Georgia portions not scored separately"
+   },
+   {
+    "label": "Retakes",
+    "value": "Wait 14 days after attempts one and two, 60 days after the third and later; no attempt limit"
+   },
+   {
+    "label": "Prelicensing",
+    "value": "Handbook table: 8-hour Property, 8-hour Casualty and 8-hour Personal Lines courses within the last 12 months; CPCU, CIC, CISR, CRM, BBA or PhD in insurance exemptions (BBA exempts education only)"
+   }
+  ]
+ },
+ "pnc-il": {
+  "accessed": "2026-10-18",
+  "rows": [
+   {
+    "label": "Regulator",
+    "value": "Illinois Department of Insurance (IDOI), Director Ann Gillespie; producer licensing under Article XXXI of the Illinois Insurance Code (215 ILCS 5/500-5 et seq.)",
+    "url": "https://idoi.illinois.gov/producers.html"
+   },
+   {
+    "label": "Vendor",
+    "value": "Pearson VUE (test centers and OnVUE online proctoring)",
+    "url": "https://www.pearsonvue.com/us/en/il/insurance.html"
+   },
+   {
+    "label": "Candidate handbook",
+    "value": "Illinois Insurance Candidate Handbook #121400, August 2026",
+    "url": "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/121400.pdf"
+   },
+   {
+    "label": "Content outlines",
+    "value": "Illinois Insurance Content Outlines #121402 (10/2026), two sets: effective January 1, 2026 (exams before Jan 1, 2027) and effective January 1, 2027",
+    "url": "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/121402.pdf"
+   },
+   {
+    "label": "Exams and times",
+    "value": "GEN-Life01 75 min / STATE-Life01 50 min; GEN-Health02 75 / STATE-Health02 55; GEN-Prop03 75 / STATE-Prop03 50; GEN-Cas04 75 / STATE-Cas04 55; GEN-Pers55 (personal lines) 90 / STATE-Pers55 45"
+   },
+   {
+    "label": "Scored items",
+    "value": "Life general 50 (+5 pretest), Life state 31 (+5); Health general 50 (+5), A&H state 39 (+5); Property general 50 (+5), Property state 30 (+5); Casualty general 50 (+5), Casualty state 37 (+5)"
+   },
+   {
+    "label": "Pass mark",
+    "value": "Scaled 70 on every exam (0 to 100 scale, not a percent)"
+   },
+   {
+    "label": "Scoring",
+    "value": "Each exam is scored and reported pass/fail on its own; the line is licensed only when both its general and state exams are passed"
+   },
+   {
+    "label": "Prelicensing",
+    "value": "20 hours per line (7.5 in a classroom or webinar); Motor Vehicle 12.5 (5 live); completion must be used within 12 months"
+   },
+   {
+    "label": "Fee",
+    "value": "$92 per exam (includes the $50 state fee); pairing general and state for one line on one order gets a $92 discount"
+   }
+  ]
+ },
+ "pnc-mi": {
+  "accessed": "2026-10-18",
+  "rows": [
+   {
+    "label": "Regulator",
+    "value": "Michigan Department of Insurance and Financial Services (DIFS); Insurance Code of 1956, 1956 PA 218",
+    "url": "https://test-takers.psiexams.com/api/content/bulletin/3560"
+   },
+   {
+    "label": "Vendor",
+    "value": "PSI Services LLC, at PSI test centers only (remote proctoring discontinued)"
+   },
+   {
+    "label": "Exam",
+    "value": "\"Property and Casualty Producer/Solicitor\", series 16-81 (combined line; separate Property 16-67, Casualty 16-68 and Personal Lines 16-69 exams also exist)"
+   },
+   {
+    "label": "Items and time",
+    "value": "150 scored items, 2.5 hours, plus up to about 10% unscored experimental items"
+   },
+   {
+    "label": "Pass mark",
+    "value": "74% (111 correct of 150)"
+   },
+   {
+    "label": "Scoring",
+    "value": "One integrated exam, Michigan law inside each section; no separate state score"
+   },
+   {
+    "label": "Prelicensing",
+    "value": "Required before the exam (16-81 is on the bulletin's prelicensing list); certificate and passing result each valid 12 months"
+   }
+  ]
+ },
+ "pnc-nc": {
+  "accessed": "2026-10-18",
+  "rows": [
+   {
+    "label": "Regulator",
+    "value": "North Carolina Department of Insurance (NCDOI), Agent Services Division"
+   },
+   {
+    "label": "Vendor",
+    "value": "Pearson VUE",
+    "url": "https://www.pearsonvue.com/us/en/nc/insurance.html"
+   },
+   {
+    "label": "Handbook",
+    "value": "North Carolina Insurance Licensing Candidate Handbook, October 2025 (#123400, rev. 03/2026)",
+    "url": "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/123400.pdf"
+   },
+   {
+    "label": "Content outlines",
+    "value": "North Carolina Insurance Content Outlines, effective March 2, 2026 (#123415)",
+    "url": "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/123415.pdf"
+   },
+   {
+    "label": "Licenses",
+    "value": "Property and Casualty are separate lines of authority (G.S. 58-33-26(c1)(2), (7)); Personal Lines is a third, narrower line"
+   },
+   {
+    "label": "Split",
+    "value": "Property: 42 general + 13 NC. Casualty: 40 general + 15 NC"
+   },
+   {
+    "label": "Scoring",
+    "value": "Parts scored together; one overall pass; scaled 0 to 100, pass 70"
+   },
+   {
+    "label": "Retake",
+    "value": "Wait 24 hours before scheduling a retake"
+   },
+   {
+    "label": "Prelicensing education",
+    "value": "Not required for applications filed on or after October 1, 2025",
+    "url": "https://www.ncdoi.gov/north-carolina-ple-repeal-announcement/open"
+   }
+  ]
+ },
+ "pnc-nj": {
+  "accessed": "2026-10-18",
+  "rows": [
+   {
+    "label": "Regulator",
+    "value": "New Jersey Department of Banking and Insurance (DOBI), Commissioner of Banking and Insurance (N.J.S.A. 17:1-2)"
+   },
+   {
+    "label": "Vendor",
+    "value": "PSI Services LLC, at PSI test centers in New Jersey or by remote proctoring",
+    "url": "https://test-takers.psiexams.com/api/content/bulletin/1640"
+   },
+   {
+    "label": "Licenses",
+    "value": "Property and Casualty are separate lines of authority (N.J.S.A. 17:22A-33(a)(3), (4)), each with its own exam; Personal Lines is a third, separate exam. There is no combined P&C exam"
+   },
+   {
+    "label": "Property Producer exam",
+    "value": "79 scored items, 3.5 hours, pass 70% correct",
+    "url": "https://proctor2.psionline.com/programs/NJINS/PropertyProducer%20July%202011.pdf"
+   },
+   {
+    "label": "Casualty Producer exam",
+    "value": "91 scored items, 3.5 hours, pass 70% correct",
+    "url": "https://proctor2.psionline.com/programs/NJINS/CasualtyProducer%20July%202011.pdf"
+   },
+   {
+    "label": "Pretest items",
+    "value": "5 to 19 unscored experimental items may be added to each exam"
+   },
+   {
+    "label": "Scoring",
+    "value": "One percent-correct score per exam; the general and New Jersey sections are not scored separately"
+   },
+   {
+    "label": "Score validity",
+    "value": "Score reports valid one year"
+   },
+   {
+    "label": "Prelicensing",
+    "value": "20 hours per authority (property; casualty) at a DOBI-approved provider; certificate or waiver required at the test center"
+   },
+   {
+    "label": "Designations",
+    "value": "AAI, ARM, CIC, CPCU waive the property, casualty or personal lines course; designation holders are no longer exempt from the exam"
+   }
+  ]
+ },
+ "pnc-ny": {
+  "accessed": "2026-10-18",
+  "rows": [
+   {
+    "label": "Regulator",
+    "value": "New York State Department of Financial Services (DFS), superintendent of financial services (Financial Services Law 202)",
+    "url": "https://www.dfs.ny.gov/apps_and_licensing/agents_and_brokers"
+   },
+   {
+    "label": "Vendor",
+    "value": "PSI Services LLC",
+    "url": "https://test-takers.psiexams.com/nyins"
+   },
+   {
+    "label": "Exam",
+    "value": "\"New York Property and Casualty Insurance Agent/Broker\", Series 17-56, 150 questions, 2.5-hour limit (Personal Lines is the separate 17-54, 100 questions)",
+    "url": "https://test-takers.psiexams.com/api/content/bulletin/7228"
+   },
+   {
+    "label": "Scored items",
+    "value": "150, plus 5 to 10 unscored experimental items"
+   },
+   {
+    "label": "State vs general split",
+    "value": "None: one integrated exam whose outline cites New York law throughout, one score"
+   },
+   {
+    "label": "Pass mark",
+    "value": "70% correct (raw)"
+   },
+   {
+    "label": "Prelicensing",
+    "value": "90 hours for P&C (Ins. Law 2103)"
+   },
+   {
+    "label": "CE",
+    "value": "15 credits per biennial period incl. 1 hour each of insurance law, ethics, diversity/inclusion/elimination of bias, and flood insurance for P&C licensees",
+    "url": "https://www.dfs.ny.gov/apps_and_licensing/agents_and_brokers/continuing_education"
+   }
+  ]
+ },
+ "pnc-oh": {
+  "accessed": "2026-10-18",
+  "rows": [
+   {
+    "label": "Regulator",
+    "value": "Ohio Department of Insurance (ODI), superintendent of insurance; property and casualty are separate lines of authority (ORC 3905.06(B)(3), (4))",
+    "url": "https://codes.ohio.gov/ohio-revised-code/section-3905.06"
+   },
+   {
+    "label": "Vendor",
+    "value": "PSI Services LLC, in-person at PSI test centers (remote proctored exams ended 3/13/2026)",
+    "url": "https://dam.assets.ohio.gov/image/upload/insurance.ohio.gov/Agent/Documents/Candidate_Handbook_updated_3.20.2025.pdf"
+   },
+   {
+    "label": "Exams",
+    "value": "Combined \"Ohio Property and Casualty Insurance Agent\", Series 11-36; Ohio also offers separate Property (Series 11-46), Casualty (Series 11-47) and Personal Lines (Series 11-43) exams"
+   },
+   {
+    "label": "Items and time",
+    "value": "150 questions, 2.5 hours"
+   },
+   {
+    "label": "Unscored items",
+    "value": "Up to about 10% experimental items may be added; they count against time"
+   },
+   {
+    "label": "Pass mark",
+    "value": "Minimum passing score 70%"
+   },
+   {
+    "label": "Prelicensing",
+    "value": "20 hours per line; the combined exam needs both property and casualty certificates; certificates valid 180 days"
+   }
+  ]
+ },
+ "pnc-pa": {
+  "accessed": "2026-10-18",
+  "rows": [
+   {
+    "label": "Regulator",
+    "value": "Pennsylvania Insurance Department, Bureau of Licensing and Enforcement (Insurance Commissioner)"
+   },
+   {
+    "label": "Vendor",
+    "value": "PSI Services LLC, at PSI test centers or by remote proctoring",
+    "url": "https://test-takers.psiexams.com/api/content/bulletin/7282"
+   },
+   {
+    "label": "Length",
+    "value": "150 scored items in 170 minutes, plus a small number (5 to 10) of unscored experimental items",
+    "url": "https://proctor2.psionline.com/media/programs/PAINS/16-06xx.pdf"
+   },
+   {
+    "label": "Pass mark",
+    "value": "70%"
+   },
+   {
+    "label": "Scoring",
+    "value": "One overall score; the combination exam combines the single-line content and must be passed overall. Pennsylvania law is integrated into the outline areas, not a separate section"
+   },
+   {
+    "label": "Retakes",
+    "value": "No limit on attempts"
+   },
+   {
+    "label": "Prelicensing education",
+    "value": "None since Act 142 of 2024 (preexamination education deleted from Insurance Department Act section 604-A)"
+   },
+   {
+    "label": "Continuing education",
+    "value": "24 hours per two-year period, at least 3 on ethics and, for a property and casualty line, at least 2 on flood insurance (Act 142 of 2024)"
+   }
+  ]
+ },
+ "pnc-tx": {
+  "accessed": "2026-10-17",
+  "rows": [
+   {
+    "label": "Regulator / license",
+    "value": "TDI, General Lines Property and Casualty agent license (TIC 4051.051)",
+    "url": "https://tcss.legis.texas.gov/resources/IN/htm/IN.4051.htm"
+   },
+   {
+    "label": "Vendor",
+    "value": "Pearson VUE",
+    "url": "https://www.pearsonvue.com/us/en/tx/insurance.html"
+   },
+   {
+    "label": "Exam",
+    "value": "\"General Lines - Property & Casualty\" (series code InsTC-PC06 English, InsTC-PC26 Spanish), 150 minutes",
+    "url": "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/124400.pdf"
+   },
+   {
+    "label": "General portion",
+    "value": "100 scored + 10 pretest",
+    "url": "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/124401.pdf"
+   },
+   {
+    "label": "Texas state portion",
+    "value": "30 scored + 5 pretest"
+   },
+   {
+    "label": "Total",
+    "value": "130 scored + 15 pretest = 145 items in 150 minutes"
+   },
+   {
+    "label": "Scoring",
+    "value": "One combined score for the whole exam, not each part separately; scaled 0-100, pass 70"
+   },
+   {
+    "label": "Retakes",
+    "value": "Can reschedule after a failure within one day; no attempt limit"
+   }
+  ]
+ },
+ "pnc-va": {
+  "accessed": "2026-10-18",
+  "rows": [
+   {
+    "label": "Regulator",
+    "value": "State Corporation Commission, Bureau of Insurance (Va. Code § 38.2-200)",
+    "url": "https://www.scc.virginia.gov/regulated-industries/bureau-of-insurance/licensed-agent/applying-for-a-individual-va-insurance-license/"
+   },
+   {
+    "label": "Vendor",
+    "value": "Prometric"
+   },
+   {
+    "label": "Exam",
+    "value": "Series 11-03 \"VA Property & Casualty Exam\", 150 minutes (11-07 Personal Lines is a separate, narrower license)",
+    "url": "https://www.scc.virginia.gov/media/sccvirginiagov-home/regulated-industries/insurance/licensing--registration/apply-for-an-individual-virginia-insurance-license/insva-cib-final.pdf"
+   },
+   {
+    "label": "Scored items",
+    "value": "135 scored + 10 pretest, 2.5 hours",
+    "url": "https://www.prometric.com/files/virginia/1103-Property-and-Casualty-Insurance.pdf"
+   },
+   {
+    "label": "Pass mark",
+    "value": "70 percent correct (raw cut 95 of 135)",
+    "url": "https://www.scc.virginia.gov/media/sccvirginiagov-home/regulated-industries/insurance/licensing--registration/licensing-exam-pass-rates/vains-demograph-06.2025_05.2026.pdf"
+   },
+   {
+    "label": "Scoring",
+    "value": "General and state-specific portions scored together as one exam"
+   },
+   {
+    "label": "Retakes",
+    "value": "24 hours to rebook; 30 calendar days after a third failure (Va. Code § 38.2-1817(B))"
+   }
+  ]
+ },
+ "pnc-wa": {
+  "accessed": "2026-10-18",
+  "rows": [
+   {
+    "label": "Regulator",
+    "value": "Washington Office of the Insurance Commissioner (OIC), an elected commissioner (RCW 48.02.010)",
+    "url": "https://www.insurance.wa.gov/"
+   },
+   {
+    "label": "Vendor",
+    "value": "PSI Services LLC, at 10 Washington test centers or by remote proctoring",
+    "url": "https://www.insurance.wa.gov/producers-adjusters/education/first-time-license/how-schedule-insurance-license-exam"
+   },
+   {
+    "label": "Candidate handbook",
+    "value": "\"Washington Office of the Insurance Commissioner Insurance License Examination Candidate Information Bulletin\", PSI, last revised 8/3/2026",
+    "url": "https://test-takers.psiexams.com/api/content/bulletin/6616"
+   },
+   {
+    "label": "Exam",
+    "value": "Property and Casualty Producer Combo: 150 questions, 195 minutes (Property alone 100 in 150 min; Casualty alone 100 in 150 min; Personal Lines 100 in 135 min)"
+   },
+   {
+    "label": "Content outline",
+    "value": "\"Washington Property and Casualty Producer, 150 Items - 195 Minutes\", effective 4/1/2026",
+    "url": "https://www.psionline.com/PROGRAMS/WAINS/propc26.pdf"
+   },
+   {
+    "label": "State portion",
+    "value": "45 items \"Washington Laws, Rules, and Regulations\" plus 2 items Federal Laws (18 USC 1033/1034, NFIP flood education)"
+   },
+   {
+    "label": "Scoring",
+    "value": "One exam, one score; \"You must get 70% correct to pass\""
+   },
+   {
+    "label": "Pretest items",
+    "value": "One to ten unscored experimental items, about 10 percent"
+   },
+   {
+    "label": "Retakes",
+    "value": "No same-day rebooking; retest as soon as two days later, space permitting"
+   }
+  ]
+ }
+}

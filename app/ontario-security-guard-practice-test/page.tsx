@@ -1,3 +1,4 @@
+import "@/lib/banks/caguard";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -9,6 +10,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -76,7 +79,7 @@ const jsonLd = {
       url: `${siteUrl}/ontario-security-guard-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "CAD" },
+      offers: examOffers("caguard", "CAD"),
       featureList: [
         "200 Ontario security guard practice questions",
         "4 practice tests weighted by the ministry training syllabus",
@@ -271,6 +274,8 @@ export default function OntarioSecurityGuardLandingPage() {
           <ExamClassFaq examId="caguard" />
         </div>
       </div>
+
+      <ExamSampleQuestions examId="caguard" />
 
       <ExamRelatedTests examId="caguard" />
 

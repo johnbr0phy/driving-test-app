@@ -1,10 +1,12 @@
 import { states } from "@/data/states";
 import { getStateLandingInfo } from "@/data/stateLandingData";
-import { EXAM_FACTS } from "./examFacts";
+import { EXAM_COSTS_CHECKED, EXAM_FACTS, examCostRows } from "./examFacts";
 import { EXAMS } from "./exams";
 import { TEST_CATALOG, TEST_GROUPS, getCatalogEntry, type TestCatalogEntry } from "./testCatalog";
 import { NON_DRIVING_TESTS, REGIONS, regionHomePath, regionOfTest } from "./region";
 import { SITE_URL } from "@/lib/siteUrl";
+import { FAMILY_TERMS, STATE_FAMILIES, stateLandingPath, stateVariants } from "./stateLandings";
+import { examTopics, topicExams, topicPath } from "./topicPages";
 
 // /llms.txt and /llms-full.txt (https://llmstxt.org), built from the test
 // catalog, the exam facts and the state data, so a new exam or a changed
@@ -70,7 +72,7 @@ const FOOTER = `## Notes for AI assistants
 - Who makes Tigertest, how the questions are written and how to report a mistake: ${siteUrl}/about
 - Tigertest is independent and is not affiliated with any DMV, testing company or certification body. Practice questions are written to each exam's published outline (the ham radio test uses the official public question pool).
 - Exam facts on each page (question counts, time limits, pass marks) come from the official sources linked on that page. Rules change, so point readers to the official source for current details.
-- Every exam is free to start with no account. An optional one-time $9.99 Premium purchase (a local price outside the US, no subscription) unlocks the last two DMV tests and training sets, the final training set and final practice test of the other licence, certification and driving exams, and the full stats pages of every exam. The sectioned exams such as the SAT, ACT, GED and NCLEX are free in full.`;
+- Every exam is free to start with no account. An optional one-time $9.99 Premium purchase (a local price outside the US, no subscription) unlocks the last two DMV tests and training sets, the final training set and final practice test of the other licence, certification and driving exams, and the full stats pages of every exam. School, college-entrance and children's tests such as the SAT, ACT, AP, GED, GCSE, KS2 and 11+ are free in full.`;
 
 // English names of every language a test or landing can be in.
 const LANGUAGE_NAMES: Record<string, string> = {
@@ -110,6 +112,26 @@ const QUIZ_SECTION = `## Quizzes: a practice test from your own material
 - Public quizzes that enough people have played are listed at ${siteUrl}/quizzes.
 - Free accounts keep 3 quizzes of up to 50 questions; Premium ($9.99 one time) allows 100 quizzes of up to 200 questions.`;
 
+/** State versions of the real estate and insurance exams, one landing each. */
+function stateExamSection(): string {
+  const blocks = STATE_FAMILIES.map((family) => {
+    const lines = stateVariants(family).map(
+      (v) => `- [${v.jurisdiction!.name} ${FAMILY_TERMS[family].title}](${siteUrl}${stateLandingPath(v)}): ${v.questionsPerTest} questions checked against ${v.jurisdiction!.name} law, one full-length practice exam at ${v.passPct}% to pass.`
+    );
+    return `### ${FAMILY_TERMS[family].title} by state\n\n${lines.join("\n")}`;
+  });
+  return `## State exams: real estate and insurance\n\nEach state version has its own questions on that state's law, free to start; the final training set is part of Premium.\n\n${blocks.join("\n\n")}`;
+}
+
+/** Topic question pages (lib/topicPages.ts): ten questions with answers per content area. */
+function topicSection(): string {
+  const lines = topicExams().map((exam) => {
+    const topics = examTopics(exam);
+    return `- ${exam.shortName}: ${topics.map((t) => `[${t.label}](${siteUrl}${topicPath(exam, t)})`).join(", ")}`;
+  });
+  return `## Practice questions by topic\n\nEach page shows ten original questions on one content area of an exam, with the answer and explanation in plain text.\n\n${lines.join("\n")}`;
+}
+
 export function renderLlmsTxt(): string {
   const groups = nonDmvGroups()
     .map((g) => `### ${g.title}\n\n${g.tests.map(examLine).join("\n")}`)
@@ -119,6 +141,8 @@ export function renderLlmsTxt(): string {
     DMV_SECTION,
     countrySection(),
     `## Other practice tests\n\nAll tests: ${siteUrl}/tests\n\n${groups}`,
+    stateExamSection(),
+    topicSection(),
     translatedSection(),
     TEACH_SECTION,
     QUIZ_SECTION,
@@ -148,7 +172,7 @@ function examFactsBlock(t: TestCatalogEntry): string {
   return [
     `### ${t.name}`,
     f.answer,
-    f.rows.map((r) => `- ${r.label}: ${r.value}`).join("\n"),
+    [...f.rows, ...examCostRows(t.id).map((r) => ({ label: r.label, value: `${r.value} (${r.url}, checked ${EXAM_COSTS_CHECKED})` }))].map((r) => `- ${r.label}: ${r.value}`).join("\n"),
     [
       `- Tigertest practice: ${siteUrl}${t.href} (follows ${f.basedOn})`,
       f.source ? `- Official source: ${f.source.url}` : null,
@@ -167,6 +191,8 @@ export function renderLlmsFullTxt(): string {
     DMV_SECTION,
     `### DMV written test by state\n\nFormat of each state's written knowledge (permit) test. "Online test" is whether the state lets you take it online. Confirm with your state's agency before test day.\n\n${stateTable()}`,
     exams,
+    stateExamSection(),
+    topicSection(),
     translatedSection(),
     TEACH_SECTION,
     QUIZ_SECTION,

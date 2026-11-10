@@ -1,3 +1,4 @@
+import "@/lib/banks/cma";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -9,6 +10,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -75,7 +78,7 @@ const jsonLd = {
       url: `${siteUrl}/cma-aama-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      offers: examOffers("cma"),
       featureList: [
         "200 CMA (AAMA) practice questions",
         "4 mock exams of 50 questions weighted like the AAMA content outline",
@@ -265,6 +268,8 @@ export default function CmaLandingPage() {
           <ExamClassFaq examId="cma" />
         </div>
       </div>
+
+      <ExamSampleQuestions examId="cma" />
 
       <ExamRelatedTests examId="cma" />
 

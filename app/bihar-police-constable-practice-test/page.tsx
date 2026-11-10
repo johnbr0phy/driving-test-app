@@ -1,3 +1,4 @@
+import "@/lib/v2/banks/biharpolice";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -8,6 +9,8 @@ import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
+import { SampleQuestionsV2 } from "@/components/v2/SampleQuestionsV2";
+import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
@@ -36,7 +39,7 @@ const faqs = [
   },
   {
     q: "Are these Bihar Police previous year questions?",
-    a: "No. Every question is original, written to the Class 10 syllabus the advertisement names, and none is copied from previous papers. Hindi questions are in Hindi, as on the real paper. General Knowledge covers static facts about Bihar, India and the world, not current affairs, so read the news of the past year separately. Both mock tests and all eight drills are free, with no account needed.",
+    a: "No. Every question is original, written to the Class 10 syllabus the advertisement names, and none is copied from previous papers. Hindi questions are in Hindi, as on the real paper. General Knowledge covers static facts about Bihar, India and the world, not current affairs, so read the news of the past year separately. It is free to start, with no account needed. Practice Test 1 and every drill but the last are free; the final drill and the final practice test are part of Tigertest Premium, one payment with no subscription.",
   },
 ];
 
@@ -74,7 +77,7 @@ const jsonLd = {
       url: `${siteUrl}/bihar-police-constable-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "INR" },
+      offers: examOffers("biharpolice", "INR"),
       featureList: [
         "232 original Bihar Police Constable practice questions with explanations",
         "2 mock tests of 100 questions in 2 hours, the real paper's length and time",
@@ -266,6 +269,8 @@ export default function BiharPoliceLandingPage() {
           <ExamClassFaq examId="biharpolice" />
         </div>
       </div>
+
+      <SampleQuestionsV2 examId="biharpolice" />
 
       <ExamRelatedTests examId="biharpolice" />
 

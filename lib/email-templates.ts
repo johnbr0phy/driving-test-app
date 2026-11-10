@@ -193,7 +193,6 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
         p("You have started practising. A full test can help you choose what to study next."),
         p(v.id === "sat" ? "Allow 2 hr 14 min of test time, plus the 10-minute break. For a shorter session, choose a skill drill instead." : "Open your dashboard, choose an available practice test, then review your answers."),
         cta(DASH(v, "first_test_reminder"), "Open Practice"),
-        p("Practice results do not guarantee a pass on your official test."),
         signoff(),
       ].join("\n"),
     }),

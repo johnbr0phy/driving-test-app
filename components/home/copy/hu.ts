@@ -88,7 +88,7 @@ export const hu: HomeCopy = {
           ? `A Tigertest egy ingyenes gyakorlótesztoldal. Ehhez az országhoz (${inName}) mindenhol egyforma minősítések érhetők el, például a CompTIA és az AWS. Minden kérdésnél elmagyarázzuk a helyes választ.`
           : `A Tigertest egy ingyenes gyakorlótesztoldal. Ehhez az országhoz (${inName}) ${local === 1 ? "egy jogosítványteszt" : `${local} jogosítványteszt`} érhető el, a hivatalos ${local === 1 ? "szabályok" : "kézikönyvek"} alapján írva, valamint mindenhol egyforma minősítések, például a CompTIA és az AWS. Minden kérdésnél elmagyarázzuk a helyes választ.`,
     },
-    { q: "Ingyenes a Tigertest?", a: `Igen. Ehhez az országhoz (${inName}) minden teszt ingyenes, előfizetés nélkül.` },
+    { q: "Ingyenes a Tigertest?", a: `Ehhez az országhoz (${inName}) minden teszt ingyen elkezdhető, fiók és előfizetés nélkül. Az opcionális, egyszeri Premium vásárlás a legtöbb vizsgánál megnyitja az utolsó gyakorlósorozatot és az utolsó próbatesztet, valamint a teljes statisztikát.` },
     {
       q: "Kell fiók?",
       a: "Nem. Bármelyik tesztet elkezdheted bejelentkezés nélkül. Ha szeretnéd, hogy a haladásod minden eszközödön meglegyen, hozz létre ingyenes fiókot.",

@@ -12,7 +12,7 @@
   "facts": {
     "h2": "Jagtprøven kort fortalt",
     "answer": "Jagtprøven er prøven til dit første jagttegn i Danmark. Den har en skriftlig og en praktisk del, og den skriftlige skal være bestået, før du må gå til den praktiske. Den skriftlige prøve har 40 spørgsmål, du har 30 minutter, og du består med mindst 36 rigtige svar. Ubesvarede spørgsmål tæller som fejl. Du sætter ét kryds ved hvert spørgsmål; nogle er ja/nej-spørgsmål, andre har flere svarmuligheder, og nogle viser et billede af en art eller en jagtsituation. Du kan få spørgsmålene læst op. Før prøven skal du have gennemført det obligatoriske jagttegnskursus, og du skal fylde mindst 16 år i det kalenderår, hvor du går til prøven.",
-    "tigertest": "Tigertest har 200 egne øvelsesspørgsmål på dansk om emnerne i de officielle retningslinjer for den skriftlige jagtprøve, alle gratis og uden login. Spørgsmålene er skrevet fra bunden ud fra jagtloven og bekendtgørelserne. De rigtige spørgsmål er ikke offentlige, og intet er kopieret fra prøven eller fra undervisningsmateriale.",
+    "tigertest": "Tigertest har 200 egne øvelsesspørgsmål på dansk om emnerne i de officielle retningslinjer for den skriftlige jagtprøve, gratis at starte på og uden login. Spørgsmålene er skrevet fra bunden ud fra jagtloven og bekendtgørelserne. De rigtige spørgsmål er ikke offentlige, og intet er kopieret fra prøven eller fra undervisningsmateriale.",
     "rows": [
       {
         "label": "Spørgsmål",
@@ -117,7 +117,7 @@
     },
     {
       "q": "Er øvelsesprøverne gratis?",
-      "a": "Ja. Alle fem træningssæt og fem prøver er gratis og kan bruges uden login. Med en gratis konto gemmer du dine fremskridt på alle dine enheder."
+      "a": "Ja. Du starter gratis og uden login: Alle træningssæt og prøver er gratis undtagen det sidste af hver, som hører til Tigertest Premium (engangsbetaling, intet abonnement). Med en gratis konto gemmer du dine fremskridt på alle dine enheder."
     }
   ],
   "finalCta": {

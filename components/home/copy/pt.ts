@@ -54,7 +54,7 @@ export const pt: HomeCopy = {
     },
     {
       q: "O Tigertest é grátis?",
-      a: "Sim. Quase todos os testes são totalmente grátis. O DMV tem testes de treino e treino gratuitos, mais uma compra Premium opcional, de pagamento único de 9,99 $ (não é uma subscrição), que desbloqueia mais dois testes, mais conjuntos de treino e estatísticas completas em todos os exames dos EUA.",
+      a: "Todos os testes podem ser começados grátis, sem conta, e a maior parte de cada teste continua grátis. Uma compra Premium opcional, de pagamento único de 9,99 $ (não é uma subscrição), desbloqueia o último conjunto de treino e o último teste de treino na maioria dos exames (os dois últimos de cada no DMV) e as estatísticas completas de todos os exames.",
     },
     {
       q: "Preciso de uma conta?",
@@ -86,7 +86,7 @@ export const pt: HomeCopy = {
           ? `O Tigertest é um site gratuito de testes de treino. Para ${inName} tem certificações que são iguais em todo o lado, como CompTIA e AWS. Cada pergunta explica a resposta certa.`
           : `O Tigertest é um site gratuito de testes de treino. Para ${inName} tem ${local === 1 ? "um teste de condução escrito a partir das regras oficiais" : `${local} testes de condução escritos a partir dos manuais oficiais`}, mais certificações que são iguais em todo o lado, como CompTIA e AWS. Cada pergunta explica a resposta certa.`,
     },
-    { q: "O Tigertest é grátis?", a: `Sim. Todos os testes para ${inName} são grátis, sem subscrição.` },
+    { q: "O Tigertest é grátis?", a: `Todos os testes para ${inName} podem ser começados grátis, sem conta e sem subscrição. Uma compra Premium opcional, de pagamento único, desbloqueia o último conjunto de treino e o último teste de treino na maioria dos exames, além das estatísticas completas.` },
     {
       q: "Preciso de uma conta?",
       a: "Não. Pode começar qualquer teste sem se registar. Crie uma conta gratuita se quiser guardar o progresso em todos os seus dispositivos.",

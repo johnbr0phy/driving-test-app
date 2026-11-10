@@ -38,7 +38,7 @@ export function ExamFacts({ examId }: { examId: string }) {
   const tigertest =
     facts.tigertest ??
     `Tigertest has ${test.questions.toLocaleString("en-US")} ${test.shortName} practice questions with explanations${
-      test.pricing ? "" : ", all free with no account required"
+      test.pricing ? ", free to start with no account required" : ", all free with no account required"
     }.`;
 
   const jsonLd = {

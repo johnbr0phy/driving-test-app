@@ -12,7 +12,7 @@
   "facts": {
     "h2": "Kunskapsprovet för B-körkort i korthet",
     "answer": "Kunskapsprovet för behörighet B görs hos Trafikverket på en provort, på en dator med pekskärm. Provet har 70 frågor med svarsalternativ där ett alternativ är rätt, och provtiden är 50 minuter. Fem av frågorna är testfrågor som inte räknas, så du kan få högst 65 poäng och behöver 52 poäng för att bli godkänd, alltså 80 procent. Provet mäter trafikregler, trafiksäkerhet, fordonskännedom och manövrering, miljö och personliga förutsättningar. Det finns på svenska, med uppläsning i hörlurar, och på 15 andra språk, bland annat brittisk engelska. För att boka provet behöver du ett körkortstillstånd, och båda delarna av riskutbildningen ska vara gjorda och giltiga. Ett godkänt kunskapsprov från och med 19 augusti 2026 gäller i ett år, och inom den tiden ska du klara körprovet.",
-    "tigertest": "Tigertest har 200 egna övningsfrågor på svenska om allt som provet mäter, gratis och utan inloggning. Frågorna är skrivna från trafikförordningen och Transportstyrelsens regler, inte kopierade från Trafikverkets prov. Tigertest har ingen koppling till Trafikverket eller Transportstyrelsen.",
+    "tigertest": "Tigertest har 200 egna övningsfrågor på svenska om allt som provet mäter, gratis att börja med och utan inloggning. Frågorna är skrivna från trafikförordningen och Transportstyrelsens regler, inte kopierade från Trafikverkets prov. Tigertest har ingen koppling till Trafikverket eller Transportstyrelsen.",
     "rows": [
       { "label": "Anordnas av", "value": "Trafikverket" },
       { "label": "Frågor", "value": "70, varav 5 testfrågor som inte räknas" },
@@ -98,11 +98,11 @@
     },
     {
       "q": "Är det här Trafikverkets riktiga frågor?",
-      "a": "Nej. Alla frågor är egna, skrivna av Tigertest utifrån svenska trafikregler och Trafikverkets och Transportstyrelsens information, så de prövar samma kunskaper utan att kopiera någon provfråga. Det riktiga provets foto- och bildfrågor finns inte här; vägmärken och situationer beskrivs i ord, så titta också på bilder av svenska vägmärken. Tigertest är gratis övning, har ingen koppling till Trafikverket eller Transportstyrelsen och kan inte boka eller ersätta ditt prov."
+      "a": "Nej. Alla frågor är egna, skrivna av Tigertest utifrån svenska trafikregler och Trafikverkets och Transportstyrelsens information, så de prövar samma kunskaper utan att kopiera någon provfråga. Det riktiga provets foto- och bildfrågor finns inte här; vägmärken och situationer beskrivs i ord, så titta också på bilder av svenska vägmärken. Du börjar gratis och utan inloggning: alla övningsset och övningsprov är gratis utom det sista av varje, som ingår i Tigertest Premium (engångsbetalning, ingen prenumeration)."
     },
     {
       "q": "Är Tigertests teoriprov gratis?",
-      "a": "Ja. Alla fem övningsset och fyra övningsprov är gratis och utan inloggning. Med ett gratis konto sparas dina framsteg på mobilen och datorn."
+      "a": "Ja. Du börjar gratis och utan inloggning: alla övningsset och övningsprov är gratis utom det sista av varje, som ingår i Tigertest Premium (engångsbetalning, ingen prenumeration). Med ett gratis konto sparas dina framsteg på mobilen och datorn."
     }
   ],
   "finalCta": {

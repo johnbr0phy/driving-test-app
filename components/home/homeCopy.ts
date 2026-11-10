@@ -131,7 +131,7 @@ const en: HomeCopy = {
     },
     {
       q: "Is Tigertest free?",
-      a: "Yes. Almost every test is completely free. The DMV has free practice tests and training plus an optional one-time $9.99 Premium purchase (not a subscription) that unlocks two more tests and training sets and full stats on every exam.",
+      a: "Every test is free to start, with no account, and most of each test stays free. An optional one-time $9.99 Premium purchase (not a subscription) unlocks the final training set and final practice test on most exams (the last two of each on the DMV) and full stats on every exam.",
     },
     {
       q: "Do I need an account?",
@@ -165,7 +165,7 @@ const en: HomeCopy = {
             ? `Tigertest is a free practice test site. For ${inName} it has ${local === 1 ? "a driving test" : `${local} driving tests`} written from the official ${local === 1 ? "rules" : "handbooks"}, plus certifications that are the same everywhere, such as CompTIA and AWS. Every question explains the right answer.`
             : `Tigertest is a free practice test site. For ${inName} it has ${local + others} practice tests${local > 0 ? `, ${local === 1 ? "one of them a driving test" : `${local} of them driving tests`},` : ""} written from the official handbooks and syllabuses, plus certifications that are the same everywhere, such as CompTIA and AWS. Every question explains the right answer.`,
     },
-    { q: "Is Tigertest free?", a: `Yes. Every test for ${inName} is free, with no subscription.` },
+    { q: "Is Tigertest free?", a: `Every test for ${inName} is free to start, with no account and no subscription. An optional one-time Premium purchase unlocks the final training set and final practice test on most exams, and full stats.` },
     {
       q: "Do I need an account?",
       a: "No. You can start any test without signing up. Make a free account if you want your progress saved across devices.",
@@ -287,7 +287,7 @@ const de: HomeCopy = {
           ? `Tigertest ist eine kostenlose Seite mit Übungstests. Für ${inName} gibt es bisher Zertifizierungen, die überall gleich sind, etwa CompTIA und AWS. Zu jeder Frage wird die richtige Antwort erklärt.`
           : `Tigertest ist eine kostenlose Seite mit Übungstests. Für ${inName} gibt es ${local === 1 ? "einen Test zur Führerscheinprüfung" : `${local} Tests zur Führerscheinprüfung`}, geschrieben nach den amtlichen Regeln, dazu Zertifizierungen, die überall gleich sind, etwa CompTIA und AWS. Zu jeder Frage wird die richtige Antwort erklärt.`,
     },
-    { q: "Ist Tigertest kostenlos?", a: `Ja. Jeder Test für ${inName} ist kostenlos, ohne Abo.` },
+    { q: "Ist Tigertest kostenlos?", a: `Jeder Test für ${inName} lässt sich kostenlos starten, ohne Konto und ohne Abo. Ein optionaler einmaliger Premium-Kauf schaltet bei den meisten Prüfungen das letzte Übungsset und den letzten Übungstest frei, dazu die vollständige Statistik.` },
     {
       q: "Brauche ich ein Konto?",
       a: "Nein. Du kannst jeden Test ohne Anmeldung starten. Mit einem kostenlosen Konto wird dein Fortschritt auf all deinen Geräten gespeichert.",

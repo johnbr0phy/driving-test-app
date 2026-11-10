@@ -97,7 +97,7 @@ export const ro: HomeCopy = {
             ? `Tigertest este un site gratuit cu teste de exersare. Pentru ${inName} are ${local === 1 ? "un test auto scris după regulile oficiale" : `${cuDe(local, "teste auto")} scrise după manualele oficiale`}, plus certificări care sunt la fel peste tot, cum ar fi CompTIA și AWS. Fiecare întrebare explică răspunsul corect.`
             : `Tigertest este un site gratuit cu teste de exersare. Pentru ${inName} are ${cuDe(local + others, "teste de exersare")}${local > 0 ? ` (${local === 1 ? "unul dintre ele, test auto" : `${local} dintre ele, teste auto`})` : ""}, scrise după manualele și programele oficiale, plus certificări care sunt la fel peste tot, cum ar fi CompTIA și AWS. Fiecare întrebare explică răspunsul corect.`,
     },
-    { q: "Tigertest e gratuit?", a: `Da. Fiecare test pentru ${inName} e gratuit, fără abonament.` },
+    { q: "Tigertest e gratuit?", a: `Fiecare test pentru ${inName} se poate începe gratuit, fără cont și fără abonament. O achiziție Premium opțională, cu plată unică, deblochează ultimul set de antrenament și ultimul test de exersare la majoritatea examenelor, plus statisticile complete.` },
     {
       q: "Am nevoie de cont?",
       a: "Nu. Poți începe orice test fără să te înregistrezi. Fă-ți un cont gratuit dacă vrei să-ți păstrezi progresul pe toate dispozitivele.",

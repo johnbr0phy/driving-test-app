@@ -12,7 +12,7 @@
   "facts": {
     "h2": "Het examen verzekeringsdistributie in het kort",
     "answer": "Wie in België verzekeringen verdeelt, als makelaar, agent, subagent, bankbediende of andere persoon in contact met het publiek, moet zijn beroepskennis aantonen met een door de FSMA erkend examen. Sinds 1 januari 2021 bestaat dat uit vier modules: module 1 basiskennis (de verzekeringsmarkt en de verzekeringsovereenkomst, en diverse wetgeving), module 2 niet-leven (aansprakelijkheid en rechtsbijstand, motorrijtuigen en bijstand, zaakverzekeringen, persoonsverzekeringen), module 3 leven en module 4 leven met beleggingscomponent. Elke submodule is een apart examen van 20 meerkeuzevragen, zonder giscorrectie, in ongeveer 30 minuten. Je slaagt met minstens 60 % per submodule. Een persoon in contact met het publiek legt module 1 af; de andere modules hangen af van de producten die je verdeelt, en module 4 telt pas met module 3.",
-    "tigertest": "Tigertest heeft 200 eigen oefenvragen in het Nederlands over de stof van alle vier de modules, gratis en zonder account. De vragen zijn zelf geschreven op basis van de wet, niet overgenomen uit een officieel examen of een cursus.",
+    "tigertest": "Tigertest heeft 200 eigen oefenvragen in het Nederlands over de stof van alle vier de modules, gratis om te beginnen en zonder account. De vragen zijn zelf geschreven op basis van de wet, niet overgenomen uit een officieel examen of een cursus.",
     "rows": [
       {
         "label": "Modules",
@@ -115,7 +115,7 @@
     },
     {
       "q": "Is oefenen bij Tigertest gratis?",
-      "a": "Ja. Alle vijf de oefensets en vier proefexamens zijn gratis en zonder account te gebruiken. Met een gratis account bewaar je je vooruitgang op al je toestellen."
+      "a": "Ja. Je begint gratis en zonder account: alle oefensets en proefexamens zijn gratis, behalve de laatste van elk, die bij Tigertest Premium horen (eenmalige betaling, geen abonnement). Met een gratis account bewaar je je vooruitgang op al je toestellen."
     }
   ],
   "finalCta": {

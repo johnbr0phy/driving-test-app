@@ -12,7 +12,7 @@
   "facts": {
     "h2": "La prueba de conocimientos de la Policía Nacional en resumen",
     "answer": "La prueba de conocimientos es la primera de la oposición a la Escala Básica, categoría de Policía, de la Policía Nacional. Según la convocatoria de 2026 (BOE de 10 de julio de 2026), consiste en responder por escrito en 50 minutos a un cuestionario de 100 preguntas con tres respuestas posibles, de las que solo una es correcta, sobre el temario de 45 temas. Cada error resta medio acierto y las preguntas en blanco no puntúan; la nota va de 0 a 10. Hace falta al menos un 3, y pasan a la siguiente prueba los aspirantes con mejor nota hasta 1,75 por cada plaza libre, así que la nota de corte real es más alta. Es eliminatoria y se hace en el mismo acto que los test psicotécnicos. Después vienen las pruebas físicas, el reconocimiento médico y la entrevista personal. La convocatoria de 2026 ofrece 2.704 plazas, 541 de ellas reservadas a militares profesionales de tropa y marinería.",
-    "tigertest": "Tigertest tiene 200 preguntas de práctica originales con explicación, en castellano, todas gratis y sin registro. No está afiliado a la Dirección General de la Policía ni al Ministerio del Interior.",
+    "tigertest": "Tigertest tiene 200 preguntas de práctica originales con explicación, en castellano, gratis para empezar y sin registro. No está afiliado a la Dirección General de la Policía ni al Ministerio del Interior.",
     "rows": [
       { "label": "Convoca", "value": "Dirección General de la Policía (Ministerio del Interior), en el BOE" },
       { "label": "Preguntas", "value": "100, con tres respuestas posibles" },
@@ -97,7 +97,7 @@
     },
     {
       "q": "¿El test de Tigertest es gratis?",
-      "a": "Sí. Los cuatro tests y los seis bloques de entrenamiento son gratis y no necesitas cuenta. Crea una cuenta gratuita si quieres guardar tu progreso en el móvil y en el ordenador. Si preparas la oposición en una academia, tu profesor puede crear una clase en Tigertest y ver tus resultados."
+      "a": "Sí. Empiezas gratis y sin registro: todos los bloques de entrenamiento y los tests son gratis menos el último de cada uno, que forma parte de Tigertest Premium (un solo pago, sin suscripción). Crea una cuenta gratuita si quieres guardar tu progreso en el móvil y en el ordenador. Si preparas la oposición en una academia, tu profesor puede crear una clase en Tigertest y ver tus resultados."
     }
   ],
   "finalCta": {

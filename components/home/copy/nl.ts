@@ -54,7 +54,7 @@ export const nl: HomeCopy = {
     },
     {
       q: "Is Tigertest gratis?",
-      a: "Ja. Bijna elke toets is helemaal gratis. Voor de DMV zijn er gratis oefentoetsen en training, plus een optionele eenmalige Premium-aankoop van $ 9,99 (geen abonnement) die nog twee toetsen en oefensets ontgrendelt, en volledige statistieken voor elk Amerikaans examen.",
+      a: "Elke toets kun je gratis beginnen, zonder account, en het grootste deel van elke toets blijft gratis. Een optionele eenmalige Premium-aankoop van $ 9,99 (geen abonnement) ontgrendelt bij de meeste examens de laatste oefenset en de laatste oefentoets (bij de DMV de laatste twee van elk) en volledige statistieken voor elk examen.",
     },
     {
       q: "Heb ik een account nodig?",
@@ -86,7 +86,7 @@ export const nl: HomeCopy = {
           ? `Tigertest is een gratis site met oefentoetsen. Voor dit land (${inName}) zijn er certificaten die overal hetzelfde zijn, zoals CompTIA en AWS. Bij elke vraag wordt het juiste antwoord uitgelegd.`
           : `Tigertest is een gratis site met oefentoetsen. Voor dit land (${inName}) zijn er ${local === 1 ? "een rijbewijstoets" : `${local} rijbewijstoetsen`} geschreven op basis van de officiële ${local === 1 ? "regels" : "handboeken"}, plus certificaten die overal hetzelfde zijn, zoals CompTIA en AWS. Bij elke vraag wordt het juiste antwoord uitgelegd.`,
     },
-    { q: "Is Tigertest gratis?", a: `Ja. Elke toets voor dit land (${inName}) is gratis, zonder abonnement.` },
+    { q: "Is Tigertest gratis?", a: `Elke toets voor dit land (${inName}) kun je gratis beginnen, zonder account en zonder abonnement. Een optionele eenmalige Premium-aankoop ontgrendelt bij de meeste examens de laatste oefenset en de laatste oefentoets, plus volledige statistieken.` },
     {
       q: "Heb ik een account nodig?",
       a: "Nee. Je kunt elke toets starten zonder je aan te melden. Maak een gratis account als je je voortgang op al je apparaten wilt bewaren.",

@@ -12,7 +12,7 @@
   "facts": {
     "h2": "El examen de manipulador de alimentos en resumen",
     "answer": "La mayoría de los exámenes de los cursos acreditados de manipulador de alimentos tienen 40 preguntas de opción múltiple, se aprueban con 75% y no tienen límite de tiempo. Cubren higiene personal, contaminación y alérgenos, tiempo y temperatura, y limpieza. Si necesitas la tarjeta depende de tu estado y condado; las tarjetas suelen durar de dos a tres años.",
-    "tigertest": "Tigertest tiene 200 preguntas de práctica de manipulador de alimentos en español con explicaciones, todas gratis y sin cuenta.",
+    "tigertest": "Tigertest tiene 200 preguntas de práctica de manipulador de alimentos en español con explicaciones, gratis para empezar y sin cuenta.",
     "rows": [
       {
         "label": "Preguntas",
@@ -102,7 +102,7 @@
     },
     {
       "q": "¿El examen de práctica de manipulador de alimentos de Tigertest es gratis?",
-      "a": "Sí. Los cuatro exámenes de práctica y los cuatro grupos de entrenamiento son gratis, sin necesidad de cuenta. Crea una cuenta gratis si quieres guardar tu progreso en todos tus dispositivos."
+      "a": "Sí. Empiezas gratis y sin cuenta: todos los grupos de práctica y los exámenes de práctica son gratis menos el último de cada uno, que forma parte de Tigertest Premium (un solo pago, sin suscripción). Crea una cuenta gratis si quieres guardar tu progreso en todos tus dispositivos."
     }
   ],
   "finalCta": {

@@ -101,7 +101,7 @@ const jsonLd = {
           name: "Who can take the security guard exam, and is the Tigertest practice test free?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "The minimum age is typically 18 for unarmed guards, with a clean criminal background check; some states set 21 for armed work. The Tigertest practice test is free: all four practice tests and all four training sets, with no account required. Create a free account if you want progress saved across devices.",
+            text: "The minimum age is typically 18 for unarmed guards, with a clean criminal background check; some states set 21 for armed work. The Tigertest practice test is free to start, with no account required: every training set and practice test is free except the final one of each, which is part of Tigertest Premium (one payment, no subscription). Create a free account if you want progress saved across devices.",
           },
         },
         classFaqJsonLd("security"),
@@ -295,7 +295,7 @@ export default function SecurityGuardLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Who can take the security guard exam, and is the Tigertest practice test free?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              The minimum age is typically 18 for unarmed guards, with a clean criminal background check; some states set 21 for armed work. The Tigertest practice test is free: all four practice tests and all four training sets, with no account required. Create a free account if you want progress saved across devices.
+              The minimum age is typically 18 for unarmed guards, with a clean criminal background check; some states set 21 for armed work. The Tigertest practice test is free to start, with no account required: every training set and practice test is free except the final one of each, which is part of Tigertest Premium (one payment, no subscription). Create a free account if you want progress saved across devices.
             </p>
           </div>
           <ExamClassFaq examId="security" />
@@ -309,7 +309,7 @@ export default function SecurityGuardLandingPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">Ready to Pass the Security Guard Exam?</h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Free to start. No account required. 200 questions across all six content areas.</p>
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Start for free. No account required. 200 questions across all six content areas.</p>
           <ExamLandingCTA dashboardHref="/security-guard/dashboard" />
         </div>
       </div>

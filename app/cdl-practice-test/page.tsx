@@ -50,7 +50,7 @@ const faqs = [
   },
   {
     q: "Is Tigertest CDL practice test free?",
-    a: "Yes! You can take all six CDL practice tests and every training set completely free. No hidden costs, premium requirements, or account registration needed.",
+    a: "Yes! You can start for free: every training set and practice test is free except the final one of each, which is part of Tigertest Premium (one payment, no subscription). No hidden costs, premium requirements, or account registration needed.",
   },
   {
     q: "What topics are covered in the CDL practice test?",
@@ -339,7 +339,7 @@ export default function CDLLandingPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">Ready to Get Your CDL?</h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Free to start. No account required. 600 questions covering all CDL topics.</p>
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Start for free. No account required. 600 questions covering all CDL topics.</p>
           <ExamLandingCTA dashboardHref="/cdl/dashboard" />
         </div>
       </div>

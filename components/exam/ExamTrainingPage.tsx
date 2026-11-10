@@ -30,10 +30,13 @@ import { useIsPremium } from "@/hooks/useIsPremium";
 import { v1GuestCounts } from "@/components/GuestSaveCard";
 import { useLocalizedExam } from "@/hooks/useLocalizedExam";
 import { useTestSetMigration } from "@/hooks/useTestSetMigration";
+import { useExamLocks } from "@/hooks/useExamLocks";
+import { ExamLockScreen } from "@/components/exam/ExamLockScreen";
 
 // Shared training page for registry exams: the DMV training page (set mode
 // with mastery + wrong-answer queue, set-complete share card) on the exam's
-// content-area sets. Set mode only, no state selection, no premium gate.
+// content-area sets. Set mode only, no state selection. The final training
+// step is Premium (lib/examLocks.ts) and shows ExamLockScreen.
 function ExamTrainingContent({ exam: source }: { exam: ExamConfig }) {
   const { exam, routes, ui, lang } = useLocalizedExam(source);
   const router = useRouter();
@@ -123,8 +126,10 @@ function ExamTrainingContent({ exam: source }: { exam: ExamConfig }) {
     return open.find((p) => p.part > after) ?? open.find((p) => p.part !== after);
   };
 
-  // Nothing on registry exams is locked.
-  const accessLocked = false;
+  // Premium: the exam's final training step, unless this person already has
+  // work in it. Decided once the account has loaded (locks.settled).
+  const locks = useExamLocks(source);
+  const accessLocked = !!setDef && (!isSplit || !!part) && locks.partLocked({ set: setDef, part: part ?? 1 });
 
   // Registry exams only have set mode. The DMV free-practice mode (no set) writes to the
   // shared onboarding counters that DMV Set 1 falls back on, so a visit
@@ -160,10 +165,10 @@ function ExamTrainingContent({ exam: source }: { exam: ExamConfig }) {
 
   // Load first question on mount
   useEffect(() => {
-    if (hydrated && isSetMode && !needsPart && !currentQuestion && !accessLocked) {
+    if (hydrated && locks.settled && isSetMode && !needsPart && !currentQuestion && !accessLocked) {
       loadNextQuestion();
     }
-  }, [hydrated, isSetMode, needsPart, currentQuestion, accessLocked]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [hydrated, locks.settled, isSetMode, needsPart, currentQuestion, accessLocked]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const loadNextQuestion = () => {
     let question: Question | null = null;
@@ -279,11 +284,15 @@ function ExamTrainingContent({ exam: source }: { exam: ExamConfig }) {
     }
   };
 
-  if (!hydrated || !isSetMode || needsPart) {
+  if (!hydrated || !isSetMode || needsPart || !locks.settled) {
     return null;
   }
 
   const setLabel = partInfo ? trainingPartName(partInfo, lang) : setDef?.name ?? ui.setN(setNumber ?? 0);
+
+  if (accessLocked) {
+    return <ExamLockScreen exam={source} routes={routes} ui={ui} title={setLabel} where="set" itemKey={`set_${setNumber}`} />;
+  }
   const followingPart = part ? unfinishedPart(part) : undefined;
   const dashboardHref = `${routes.dashboard}?completed=training:${setNumber}${part ? `&part=${part}` : ""}`;
   const celebrationCopy = {

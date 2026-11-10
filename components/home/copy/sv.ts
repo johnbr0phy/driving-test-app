@@ -87,7 +87,7 @@ export const sv: HomeCopy = {
           ? `Tigertest är en gratis sajt med övningsprov. I ${inName} finns certifieringar som är likadana överallt, som CompTIA och AWS. Vid varje fråga förklaras det rätta svaret.`
           : `Tigertest är en gratis sajt med övningsprov. I ${inName} finns ${local === 1 ? "ett körkortsprov" : `${local} körkortsprov`} skrivna utifrån ${local === 1 ? "de officiella reglerna" : "de officiella handböckerna"}, plus certifieringar som är likadana överallt, som CompTIA och AWS. Vid varje fråga förklaras det rätta svaret.`,
     },
-    { q: "Är Tigertest gratis?", a: `Ja. Alla prov i ${inName} är gratis, utan prenumeration.` },
+    { q: "Är Tigertest gratis?", a: `Alla prov i ${inName} är gratis att börja med, utan konto och utan prenumeration. Ett valfritt engångsköp av Premium låser upp det sista övningssetet och det sista övningsprovet i de flesta prov, samt fullständig statistik.` },
     {
       q: "Behöver jag ett konto?",
       a: "Nej. Du kan starta vilket prov som helst utan att logga in. Skapa ett gratis konto om du vill spara dina framsteg på alla dina enheter.",

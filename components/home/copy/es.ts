@@ -53,7 +53,7 @@ export const es: HomeCopy = {
     },
     {
       q: "¿Tigertest es gratis?",
-      a: "Sí. Casi todos los tests son totalmente gratis. El DMV tiene tests de práctica y entrenamiento gratis, más una compra Premium opcional de un solo pago de 9,99 $ (no es una suscripción) que desbloquea dos tests más, más bloques de entrenamiento y estadísticas completas en todos los exámenes de EE. UU.",
+      a: "Todos los tests se pueden empezar gratis, sin cuenta, y la mayor parte de cada test sigue siendo gratis. Una compra Premium opcional de un solo pago de 9,99 $ (no es una suscripción) desbloquea el último bloque de entrenamiento y el último test de práctica en la mayoría de los exámenes (los dos últimos de cada uno en el DMV) y las estadísticas completas de todos los exámenes.",
     },
     {
       q: "¿Necesito una cuenta?",
@@ -85,7 +85,7 @@ export const es: HomeCopy = {
           ? `Tigertest es una web gratuita de tests de práctica. Para ${inName} tiene certificaciones que son iguales en todas partes, como CompTIA y AWS. Cada pregunta explica la respuesta correcta.`
           : `Tigertest es una web gratuita de tests de práctica. Para ${inName} tiene ${local === 1 ? "un test de conducir basado en las normas oficiales" : `${local} tests de conducir basados en los manuales oficiales`}, además de certificaciones que son iguales en todas partes, como CompTIA y AWS. Cada pregunta explica la respuesta correcta.`,
     },
-    { q: "¿Tigertest es gratis?", a: `Sí. Todos los tests para ${inName} son gratis, sin suscripción.` },
+    { q: "¿Tigertest es gratis?", a: `Todos los tests para ${inName} se pueden empezar gratis, sin cuenta y sin suscripción. Una compra Premium opcional, de un solo pago, desbloquea el último bloque de entrenamiento y el último test de práctica en la mayoría de los exámenes, además de las estadísticas completas.` },
     {
       q: "¿Necesito una cuenta?",
       a: "No. Puedes empezar cualquier test sin registrarte. Crea una cuenta gratis si quieres guardar tu progreso en todos tus dispositivos.",

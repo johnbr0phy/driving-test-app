@@ -8,6 +8,8 @@ export const en = {
   // Common
   common: {
     dmvHeaderTitle: "DMV Practice Test",
+    syncFailed: "Your latest progress has not been saved to your account yet. Keep this page open and try again.",
+    syncRetry: "Try again",
     logOut: "Log Out",
     signIn: "Sign In",
     signUp: "Sign up",

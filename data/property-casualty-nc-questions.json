@@ -1461,7 +1461,7 @@
     "category": "pcLiability",
     "question": "A commercial umbrella liability policy:",
     "optionA": "Replaces the CGL entirely",
-    "optionB": "Excess limits plus some drop-down coverage",
+    "optionB": "Adds excess limits and some drop-down cover",
     "optionC": "Always follows the underlying form with no broader coverage",
     "optionD": "Covers only auto liability",
     "correctAnswer": "B",

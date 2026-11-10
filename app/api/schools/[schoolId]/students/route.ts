@@ -1,3 +1,4 @@
+import { SERVICE_INBOX, emailPreheader, emailText } from "@/lib/email-inbox";
 import { NextRequest, NextResponse } from "next/server";
 import { getAdminDb } from "@/lib/firebase-admin";
 import type { SchoolStudent } from "@/lib/school-types";
@@ -57,6 +58,7 @@ function buildInviteEmail(schoolName: string): string {
   <title>You've been invited to Tigertest</title>
 </head>
 <body style="margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; background-color: #FFF9F5;">
+  ${emailPreheader(SERVICE_INBOX.schoolInvite(schoolName).preheader)}
   <table role="presentation" style="width: 100%; border-collapse: collapse;">
     <tr>
       <td align="center" style="padding: 40px 20px;">
@@ -70,18 +72,18 @@ function buildInviteEmail(schoolName: string): string {
           <tr>
             <td style="padding: 0 40px 40px;">
               <p style="margin: 0 0 20px; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
-                <strong style="font-weight: 600;">${schoolName}</strong> has set you up on Tigertest to help you prepare for your DMV written test.
+                <strong style="font-weight: 600;">${emailText(schoolName)}</strong> invited you to try Tigertest for your DMV written test practice.
               </p>
               <p style="margin: 0 0 20px; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
-                Tigertest gives you 8 practice sections that cover everything on the real exam. Work through them at your own pace. The goal is simple: pass all 8.
+                Tigertest gives you 8 DMV practice sections. Work through them at your own pace. Practice results do not guarantee a pass on the official test.
               </p>
               <p style="margin: 0 0 20px; color: #4a4a4a; font-size: 15px; line-height: 1.7;">
-                <strong style="font-weight: 600;">Sign up with this email address</strong> and your progress will be tracked automatically.
+                <strong style="font-weight: 600;">Sign up with this email address</strong> to create your Tigertest account. Ask your instructor how to join the correct class.
               </p>
               <table role="presentation" style="margin: 32px 0; border-collapse: collapse;">
                 <tr>
                   <td align="center">
-                    <a href="https://tigertest.io/signup?utm_source=school-invite&utm_medium=email&utm_campaign=school-invite" style="display: inline-block; padding: 14px 28px; background-color: #1a1a1a; color: #ffffff; text-decoration: none; border-radius: 50px; font-weight: 500; font-size: 15px;">Start Practising</a>
+                    <a href="https://www.tigertest.io/signup?utm_source=school-invite&utm_medium=email&utm_campaign=school-invite" style="display: inline-block; padding: 14px 28px; background-color: #1a1a1a; color: #ffffff; text-decoration: none; border-radius: 50px; font-weight: 500; font-size: 15px;">Open Tigertest signup</a>
                   </td>
                 </tr>
               </table>
@@ -94,7 +96,7 @@ function buildInviteEmail(schoolName: string): string {
           <tr>
             <td style="padding: 24px 40px; background-color: #FFF9F5; border-top: 1px solid #f0f0f0;">
               <p style="margin: 0; color: #999999; font-size: 12px; line-height: 1.6; text-align: center;">
-                <a href="https://tigertest.io/privacy" style="color: #FF6B35; text-decoration: none;">Privacy Policy</a>
+                <a href="https://www.tigertest.io/privacy" style="color: #FF6B35; text-decoration: none;">Privacy Policy</a>
               </p>
             </td>
           </tr>
@@ -190,7 +192,7 @@ export async function POST(
         sendEmail({
           kind: "transactional",
           to: email,
-          subject: `${schoolName} invited you to Tigertest`,
+          subject: SERVICE_INBOX.schoolInvite(schoolName).subject,
           html: htmlBody,
         })
       )

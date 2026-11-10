@@ -103,7 +103,7 @@ const jsonLd = {
           name: "Is the Tigertest OSHA 10 practice test an official OSHA course?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "No. Tigertest is a free study tool, not an OSHA-authorized Outreach course, and it does not issue a card. Use it to learn the material and check your readiness, then take the real course from an OSHA-authorized trainer. All four practice tests and all training sets are free, with no account required.",
+            text: "No. Tigertest is a free study tool, not an OSHA-authorized Outreach course, and it does not issue a card. Use it to learn the material and check your readiness, then take the real course from an OSHA-authorized trainer. Start for free with no account required: every training set and practice test is free except the final one of each, which is part of Tigertest Premium (one payment, no subscription).",
           },
         },
         classFaqJsonLd("osha"),
@@ -297,7 +297,7 @@ export default function OshaLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is the Tigertest OSHA 10 practice test an official OSHA course?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              No. Tigertest is a free study tool, not an OSHA-authorized Outreach course, and it does not issue a card. Use it to learn the material and check your readiness, then take the real course from an OSHA-authorized trainer. All four practice tests and all training sets are free, with no account required.
+              No. Tigertest is a free study tool, not an OSHA-authorized Outreach course, and it does not issue a card. Use it to learn the material and check your readiness, then take the real course from an OSHA-authorized trainer. Start for free with no account required: every training set and practice test is free except the final one of each, which is part of Tigertest Premium (one payment, no subscription).
             </p>
           </div>
           <ExamClassFaq examId="osha" />
@@ -311,7 +311,7 @@ export default function OshaLandingPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">Ready to Pass the OSHA 10?</h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Free to start. No account required. 200 questions across every Outreach course topic.</p>
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Start for free. No account required. 200 questions across every Outreach course topic.</p>
           <ExamLandingCTA dashboardHref="/osha-10/dashboard" />
         </div>
       </div>

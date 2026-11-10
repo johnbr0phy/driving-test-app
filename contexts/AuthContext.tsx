@@ -17,8 +17,7 @@ import {
   sendEmailVerification,
 } from "firebase/auth";
 import { auth } from "@/lib/firebase";
-import { useStore } from "@/store/useStore";
-import { examIdFromSignupUrl, isTeacherSignupUrl } from "@/lib/email-voice";
+import { flushPendingSaves, useStore } from "@/store/useStore";
 import { AccountConflictDialog } from "@/components/AccountConflictDialog";
 import { isInternalEmail, markInternalBrowser } from "@/lib/internal";
 import { claimEnrollments } from "@/lib/enrollment";
@@ -62,21 +61,23 @@ function shouldUseRedirectSignIn(): boolean {
   return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 }
 
-async function sendWelcomeEmail(userId: string, email: string, displayName: string | null, emailConsent: boolean) {
+async function sendWelcomeEmail(userId: string) {
   try {
     // The page URL says which exam the welcome email should be about: the
     // ?redirect= target on /signup, or the exam page itself for one-tap
-    // Google on GuestSaveCard. Else this device's current test. A signup
+    // Google on GuestSaveCard. No current-test or DMV default. A signup
     // from /teach is a teacher: they get the teacher welcome instead.
     const href = typeof window !== "undefined" ? window.location.href : null;
-    const teacher = isTeacherSignupUrl(href);
-    const examId = teacher ? undefined : examIdFromSignupUrl(href, useStore.getState().primaryExam);
     await fetch("/api/send-welcome-email", {
       method: "POST",
       // Finish the request even if the page navigates away right after signup.
       keepalive: true,
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ userId, email, displayName, emailConsent, examId, teacher }),
+      headers: { "Content-Type": "application/json", Authorization: `Bearer ${await auth.currentUser?.getIdToken()}` },
+      // The email choice made at signup. The browser saves it to the account
+      // a moment later; sending it here lets the welcome go out at once
+      // instead of waiting for that save (the route only uses it while the
+      // account has no stored choice).
+      body: JSON.stringify({ userId, signupUrl: href, emailConsent: useStore.getState().emailConsent === true }),
     });
   } catch (err) {
     console.error("Failed to send welcome email:", err);
@@ -90,7 +91,6 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const loadUserData = useStore((state) => state.loadUserData);
   const setUserId = useStore((state) => state.setUserId);
   const setPhotoURL = useStore((state) => state.setPhotoURL);
-  const photoURL = useStore((state) => state.photoURL);
   const convertGuestToUser = useStore((state) => state.convertGuestToUser);
   const checkUserHasData = useStore((state) => state.checkUserHasData);
   const clearAllDataOnLogout = useStore((state) => state.clearAllDataOnLogout);
@@ -164,8 +164,11 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
             // No existing data - safe to convert guest to user
             await convertGuestToUser(user.uid);
 
-            // If user has a Google photo and no custom photo is set, use Google photo
-            if (user.photoURL && !photoURL) {
+            // If user has a Google photo and no custom photo is set, use Google photo.
+            // Read from the store, not a render-time copy: the copy was still empty
+            // right after the account loaded (so a custom photo was replaced), and
+            // having it in the deps re-ran this listener and the account load.
+            if (user.photoURL && !useStore.getState().photoURL) {
               setPhotoURL(user.photoURL);
             }
           } else {
@@ -173,7 +176,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
             await loadUserData(user.uid);
 
             // If user has a Google photo and no custom photo is set, use Google photo
-            if (user.photoURL && !photoURL) {
+            if (user.photoURL && !useStore.getState().photoURL) {
               setPhotoURL(user.photoURL);
             }
           }
@@ -196,7 +199,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     });
 
     return unsubscribe;
-  }, [loadUserData, setUserId, setPhotoURL, photoURL, convertGuestToUser, checkUserHasData]);
+  }, [loadUserData, setUserId, setPhotoURL, convertGuestToUser, checkUserHasData]);
 
   useEffect(() => {
     // Completes the mobile signInWithRedirect flow. Resolves null on
@@ -208,7 +211,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
           const additionalInfo = getAdditionalUserInfo(result);
           if (additionalInfo?.isNewUser) {
             trackFunnelSignup();
-            sendWelcomeEmail(result.user.uid, result.user.email!, result.user.displayName, true);
+            sendWelcomeEmail(result.user.uid);
           }
         }
       })
@@ -225,7 +228,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       // Send verification email
       sendEmailVerification(userCredential.user).catch(err => console.error('Failed to send verification email:', err));
       // Send welcome email via Resend
-      sendWelcomeEmail(userCredential.user.uid, email, userCredential.user.displayName, true);
+      sendWelcomeEmail(userCredential.user.uid);
     }
   };
 
@@ -247,11 +250,13 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     const additionalInfo = getAdditionalUserInfo(result);
     if (result.user && additionalInfo?.isNewUser) {
       trackFunnelSignup();
-      sendWelcomeEmail(result.user.uid, result.user.email!, result.user.displayName, true);
+      sendWelcomeEmail(result.user.uid);
     }
   };
 
   const logout = async () => {
+    // Let saves still on their way reach the account before it is signed out.
+    await flushPendingSaves();
     // Clear all store data (in-memory state)
     useStore.getState().clearAllDataOnLogout();
     // Clear localStorage to remove persisted data

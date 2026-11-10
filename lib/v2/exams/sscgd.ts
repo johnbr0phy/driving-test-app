@@ -38,7 +38,7 @@ export const SSCGD: ExamV2Config = {
       shortName: "CBE",
       modules: [{ module: 1, questionCount: 80, timeLimit: minutes(60) }],
       directions: "80 questions in 60 minutes, in the CBE order: 20 General Intelligence and Reasoning, 20 General Knowledge and General Awareness, 20 Elementary Mathematics and 20 English. There is no sectional timing, so move freely and flag questions to come back to. The real exam takes 0.25 marks off for each wrong answer; this practice test scores percent correct.",
-      scale: percentScale(100),
+      scale: percentScale(80),
       domains: ["sscgdVerbal", "sscgdLogical", "sscgdHistory", "sscgdScience", "sscgdNumber", "sscgdArith", "sscgdGrammar", "sscgdVocab"],
     },
   ],

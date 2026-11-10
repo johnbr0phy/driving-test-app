@@ -16,6 +16,9 @@ import { trackFunnelStep } from "@/lib/funnel";
 import { WebViewGoogleWarning } from "@/components/WebViewGoogleWarning";
 import { useIsNativeApp } from "@/hooks/useIsNativeApp";
 import { examNameForPath } from "@/hooks/useThemePath";
+import { useAccountNavigation } from "@/hooks/useAccountNavigation";
+import { safeAuthDestination } from "@/lib/authDestination";
+import { AccountLoadRetry } from "@/components/AccountLoadRetry";
 import { auth, db } from "@/lib/firebase";
 import { doc, getDoc, setDoc, serverTimestamp } from "firebase/firestore";
 
@@ -57,6 +60,8 @@ function SignupPageContent() {
 
   const { signup, loginWithGoogle, user, loading: authLoading } = useAuth();
   const router = useRouter();
+  const { ready: accountReady, loadFailed } = useAccountNavigation();
+  const [pendingDestination, setPendingDestination] = useState<string | null>(null);
   const searchParams = useSearchParams();
   const { t } = useTranslation();
   const isNative = useIsNativeApp();
@@ -73,7 +78,7 @@ function SignupPageContent() {
   const schoolSlug = searchParams.get("school") ?? null;
 
   // Check for redirect param (e.g. /signup?redirect=/schools/create)
-  const redirectTo = searchParams.get("redirect");
+  const redirectTo = safeAuthDestination(searchParams.get("redirect"), "") || null;
   // Exam pages are English-only, so their copy is not in i18n
   const redirectExamName = examNameForPath(redirectTo);
 
@@ -86,13 +91,19 @@ function SignupPageContent() {
   const handlePostSignup = async (uid: string, userEmail: string) => {
     if (schoolSlug) {
       await enrollInSchool(schoolSlug, uid, userEmail);
-      router.push(`/dmv/dashboard?school_joined=${encodeURIComponent(schoolSlug)}`);
+      setPendingDestination(`/dmv/dashboard?school_joined=${encodeURIComponent(schoolSlug)}`);
     } else if (redirectTo) {
-      router.push(redirectTo);
+      setPendingDestination(redirectTo);
     } else {
-      router.push("/dmv/dashboard");
+      setPendingDestination("/dmv/dashboard");
     }
   };
+
+  // Signup handlers may finish before AuthContext has resolved the current
+  // account or its guest-progress conflict. Keep the destination until ready.
+  useEffect(() => {
+    if (pendingDestination && accountReady && user) router.replace(pendingDestination);
+  }, [pendingDestination, accountReady, user, router]);
 
   /**
    * "Continue with Google" also signs in people who already have an account.
@@ -254,6 +265,8 @@ function SignupPageContent() {
       🏫 You&apos;re joining a school on Tigertest. Create a free account to get started.
     </div>
   ) : null;
+
+  if (loadFailed && user) return <AccountLoadRetry uid={user.uid} />;
 
   return (
     <div className="bg-white dark:bg-gray-900 relative flex items-center justify-center py-12 px-4 min-h-[calc(100vh-200px)]">

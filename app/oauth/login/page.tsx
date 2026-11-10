@@ -10,22 +10,25 @@ import {
   GoogleAuthProvider,
   getAuth,
   onAuthStateChanged,
+  signOut,
+  type User,
 } from 'firebase/auth';
 import firebaseApp from '@/lib/firebase';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
+import { defaultEmailConsent } from '@/lib/privacyRegion';
 
 // The welcome email for an account made on this page. keepalive lets it
 // finish while the page redirects back to the assistant; anything still
 // missed is sent by /api/cron/welcome-backstop.
-function sendWelcome(userId: string) {
+async function sendWelcome(userId: string) {
   fetch('/api/send-welcome-email', {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
+    headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${await getAuth(firebaseApp).currentUser?.getIdToken()}` },
     keepalive: true,
-    body: JSON.stringify({ userId, emailConsent: true, examId: null }),
+    body: JSON.stringify({ userId, signupUrl: window.location.href, emailConsent: defaultEmailConsent() }),
   }).catch(() => {});
 }
 
@@ -46,6 +49,7 @@ export default function OAuthLoginPage() {
 interface PendingInfo {
   clientName: string;
   scope: string;
+  redirectTo?: string;
 }
 
 function OAuthLoginContent() {
@@ -56,6 +60,9 @@ function OAuthLoginContent() {
   const [pendingError, setPendingError] = useState<string | null>(null);
   const [authLoading, setAuthLoading] = useState(true);
   const [alreadyAuthorized, setAlreadyAuthorized] = useState(false);
+  // Someone who arrives already signed in is asked before anything is granted:
+  // a link alone must never hand an assistant access to the account.
+  const [signedInUser, setSignedInUser] = useState<User | null>(null);
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -90,20 +97,11 @@ function OAuthLoginContent() {
       .finally(() => setAuthLoading(false));
   }, [pendingId]);
 
-  // If user is already signed in, complete the authorization immediately.
+  // Notice an existing sign-in; the Allow button below completes it.
   useEffect(() => {
-    if (!pendingId || pendingError) return;
-
     const auth = getAuth(firebaseApp);
-    const unsub = onAuthStateChanged(auth, (user) => {
-      if (user && !alreadyAuthorized) {
-        setAlreadyAuthorized(true);
-        completeAuthorization(user.getIdToken());
-      }
-    });
-    return unsub;
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [pendingId, pendingError]);
+    return onAuthStateChanged(auth, (user) => setSignedInUser(user));
+  }, []);
 
   async function completeAuthorization(idTokenPromise: Promise<string>) {
     setSubmitting(true);
@@ -226,6 +224,65 @@ function OAuthLoginContent() {
               Completing authorization for {clientName}.
             </CardDescription>
           </CardHeader>
+        </Card>
+      </div>
+    );
+  }
+
+  if (signedInUser) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-white dark:bg-gray-900 px-4">
+        <Card className="w-full max-w-md">
+          <CardHeader className="space-y-1">
+            <CardTitle className="text-2xl font-bold text-center">Connect Tigertest</CardTitle>
+            <CardDescription className="text-center">
+              Allow <span className="font-semibold">{clientName}</span> to read and update your Tigertest
+              practice progress and quizzes?
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div className="space-y-4">
+              {formError && (
+                <div role="alert" className="bg-red-50 dark:bg-red-950 border border-red-200 dark:border-red-800 text-red-700 dark:text-red-300 px-4 py-3 rounded text-sm">
+                  {formError}
+                </div>
+              )}
+              <dl className="text-sm text-gray-600 dark:text-gray-300 space-y-1">
+                {signedInUser.email && (
+                  <div className="flex justify-between gap-4">
+                    <dt>Your account</dt>
+                    <dd className="font-medium text-gray-900 dark:text-gray-50 truncate">{signedInUser.email}</dd>
+                  </div>
+                )}
+                {pendingInfo?.redirectTo && (
+                  <div className="flex justify-between gap-4">
+                    <dt>You will be sent to</dt>
+                    <dd className="font-medium text-gray-900 dark:text-gray-50 truncate">{pendingInfo.redirectTo}</dd>
+                  </div>
+                )}
+              </dl>
+              <Button
+                type="button"
+                className="w-full bg-black dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200"
+                onClick={() => {
+                  setAlreadyAuthorized(true);
+                  completeAuthorization(signedInUser.getIdToken());
+                }}
+              >
+                Allow
+              </Button>
+              <p className="text-center text-sm text-gray-600 dark:text-gray-300">
+                Only allow this if you just asked to connect Tigertest.{' '}
+                <button
+                  type="button"
+                  className="underline font-medium text-gray-900 dark:text-gray-50"
+                  onClick={() => signOut(getAuth(firebaseApp))}
+                >
+                  Use a different account
+                </button>
+              </p>
+            </div>
+          </CardContent>
         </Card>
       </div>
     );

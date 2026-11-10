@@ -2,25 +2,40 @@
  * Unsubscribe tokens, the one place the opt-out flag is written, and the
  * one-click headers every marketing send carries.
  *
- * The token is base64(uid), the format every email already sitting in
- * people's inboxes uses, so old links keep working. A token only lets
- * someone opt a user OUT of email, never back in, which is why it is not
- * signed.
+ * New links use HMAC-signed tokens. Legacy base64(uid) links already in
+ * inboxes remain valid for opting out only; neither format can opt back in.
  *
  * Server only (imports firebase-admin).
  */
 
+import { createHmac, timingSafeEqual } from "crypto";
 import { getAdminDb } from "@/lib/firebase-admin";
 
-const SITE = "https://tigertest.io";
+const SITE = "https://www.tigertest.io";
 
 export function unsubscribeToken(uid: string): string {
-  return Buffer.from(uid).toString("base64");
+  const secret = process.env.EMAIL_UNSUBSCRIBE_SECRET;
+  if (!secret) throw new Error("EMAIL_UNSUBSCRIBE_SECRET is required for signed unsubscribe links");
+  const encoded = Buffer.from(uid).toString("base64url");
+  const signature = createHmac("sha256", secret).update(`v1.${encoded}`).digest("base64url");
+  return `v1.${encoded}.${signature}`;
 }
 
 /** Decode a token to a uid. Null for anything that cannot be one. */
 export function uidFromToken(token: unknown): string | null {
   if (typeof token !== "string" || !token) return null;
+  if (token.startsWith("v1.")) {
+    const secret = process.env.EMAIL_UNSUBSCRIBE_SECRET;
+    if (!secret) return null;
+    const parts = token.split(".");
+    if (parts.length !== 3) return null;
+    const expected = createHmac("sha256", secret).update(`v1.${parts[1]}`).digest("base64url");
+    const actual = Buffer.from(parts[2]);
+    if (actual.length !== expected.length || !timingSafeEqual(actual, Buffer.from(expected))) return null;
+    const uid = Buffer.from(parts[1], "base64url").toString("utf8");
+    return /^[A-Za-z0-9_-]{1,128}$/.test(uid) ? uid : null;
+  }
+  // Existing inbox links remain valid for opt-out only.
   let uid: string;
   try {
     uid = Buffer.from(token, "base64").toString("utf-8");

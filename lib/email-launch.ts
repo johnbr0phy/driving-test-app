@@ -15,7 +15,7 @@ import { postalFooterLine } from "@/lib/emailPostal";
 
 export const LAUNCH_EXPERIMENT = "newTests2026";
 
-const SITE = "https://tigertest.io";
+const SITE = "https://www.tigertest.io";
 /** Images skip the apex-to-www redirect, which many mail clients won't follow for images. */
 const IMG = "https://www.tigertest.io";
 const SAT = "#1450d2";
@@ -224,3 +224,29 @@ export function pickLaunchVariant(uid: string, winner = process.env.NEW_TESTS_WI
   }
   return SENDING_VARIANTS[h % SENDING_VARIANTS.length];
 }
+
+/**
+ * HELD COPY PROPOSALS, not enrolled or sendable by pickLaunchVariant.
+ * Existing v4/v5 are historical experiments; changing their words in place
+ * would mix unlike exposures under one result. A later, approved experiment
+ * must choose a new experiment key and explicit audience before using these.
+ * Both drafts deliberately share body/preheader so a future test can isolate
+ * the subject. Their ids do not restart or alter any existing cohort.
+ */
+function proposedLaunchVariant(id: string, subject: string): LaunchVariant {
+  const preheader = "Full-length SAT practice, short drills, and an ACT option.";
+  return {
+    id, name: "Held subject proposal", subject, preheader,
+    html: () => shell({ subject, preheader }, hero(3, 3), "Choose your next practice test", [
+      p("Try a free SAT practice test, then review your answers to choose what to study next."),
+      p("Full-length, timed SAT practice and short skill drills are available on Tigertest. Practice results are not official exam scores or a guarantee of future results."),
+      button(`${SITE}${SAT_PAGE}`, "Open SAT practice"),
+      p(`Preparing for the ACT? ${link(`${SITE}${ACT_PAGE}`, "Open ACT practice", ACT)}.`, true),
+    ].join("")),
+  };
+}
+
+export const PROPOSED_LAUNCH_VARIANTS: LaunchVariant[] = [
+  proposedLaunchVariant("v6", "Try a free SAT practice test"),
+  proposedLaunchVariant("v7", "Your next SAT study step starts here"),
+];

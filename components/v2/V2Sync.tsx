@@ -61,7 +61,11 @@ export function V2Sync() {
           if (ready.current !== uid) return;
           if (next.sessions === prev.sessions && next.results === prev.results && next.drills === prev.drills && next.basics === prev.basics && next.goals === prev.goals && next.questionStats === prev.questionStats) return;
           clearTimeout(timer);
-          timer = setTimeout(() => saveV2(uid, pick(useV2Store.getState())).catch((e) => console.error("v2 sync failed", e)), 1500);
+          timer = setTimeout(() => {
+            // Cleared so a later tab-hide or unmount does not save again with nothing changed.
+            timer = undefined;
+            saveV2(uid, pick(useV2Store.getState())).catch((e) => console.error("v2 sync failed", e));
+          }, 1500);
         });
       } catch (e) {
         console.error("v2 sync load failed", e);

@@ -12,7 +12,7 @@
   "facts": {
     "h2": "A KRESZ vizsga röviden",
     "answer": "A B kategóriás elméleti vizsga hivatalos neve Közlekedési alapismeretek, de mindenki KRESZ vizsgának hívja. A KAV (Közlekedési Alkalmassági és Vizsgaközpont) vizsgahelyén, számítógépen teszed le. 55 feleletválasztós kérdés van, a vizsga 55 percig tart, kérdésenként egy perc. A kérdések összesen 75 pontot érnek, és legalább 65 pont kell a sikeres vizsgához; a felkészítő anyagok szerint 10 kérdés 3 pontot, 45 kérdés 1 pontot ér. A vizsgát a felkészítők szerint magyarul, angolul, németül és románul lehet letenni. Autósiskolai tanfolyam után 16 év 9 hónaposan vizsgázhatsz, a sikeres elméleti vizsga két évig érvényes, a forgalmi vizsgát pedig 17 évesen teheted le.",
-    "tigertest": "A Tigertestnél 200 saját gyakorlókérdés van magyarul, ingyen és regisztráció nélkül. A kérdések a KRESZ alapján íródtak, nem a KAV hivatalos kérdéseiből valók. A Tigertest nem áll kapcsolatban a KAV-val.",
+    "tigertest": "A Tigertestnél 200 saját gyakorlókérdés van magyarul, ingyen elkezdhető, regisztráció nélkül. A kérdések a KRESZ alapján íródtak, nem a KAV hivatalos kérdéseiből valók. A Tigertest nem áll kapcsolatban a KAV-val.",
     "rows": [
       { "label": "Szervező", "value": "KAV Közlekedési Alkalmassági és Vizsgaközpont" },
       { "label": "Kérdések", "value": "55 feleletválasztós" },
@@ -102,7 +102,7 @@
     },
     {
       "q": "Ingyenes a Tigertest KRESZ tesztje?",
-      "a": "Igen. A három teszt és az öt témakör ingyenes, fiók sem kell hozzá. Ha szeretnéd mobilon és számítógépen is menteni a haladásodat, hozz létre ingyenes fiókot."
+      "a": "Igen. Ingyen és regisztráció nélkül kezdhetsz: minden gyakorlósor és teszt ingyenes, kivéve az utolsó gyakorlósort és az utolsó tesztet, amelyek a Tigertest Premium részei (egyszeri fizetés, nincs előfizetés). Ha szeretnéd mobilon és számítógépen is menteni a haladásodat, hozz létre ingyenes fiókot."
     }
   ],
   "finalCta": {

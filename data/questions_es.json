@@ -5815,7 +5815,7 @@
     "questionId": "CT-016",
     "category": "cellPhone",
     "question": "¿Dónde pueden los conductores de Connecticut usar legalmente teléfonos de mano mientras están en su vehículo?",
-    "optionA": "En estacionamientos o garajes",
+    "optionA": "Detenidos en tráfico denso",
     "optionB": "En semáforos en rojo",
     "optionC": "Solo en entradas privadas",
     "optionD": "Estacionados de forma segura en el arcén",
@@ -7468,12 +7468,12 @@
     "category": "cellPhone",
     "question": "Según la Ley de Manos Libres de Georgia, ¿cuándo se le permite a un conductor sostener su teléfono?",
     "optionA": "En señales de alto y semáforos",
-    "optionB": "Solo cuando está legalmente estacionado",
-    "optionC": "Solo durante situaciones de emergencia",
+    "optionB": "Cuando está legalmente estacionado",
+    "optionC": "Cuando usa una aplicación de navegación",
     "optionD": "Cuando viaja a menos de 25 mph",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "A los conductores se les permite sostener su teléfono solo cuando están legalmente estacionados."
+    "explanation": "Los conductores no pueden sostener un teléfono mientras conducen, ni siquiera detenidos en una señal de alto o un semáforo. Pueden sostenerlo cuando están legalmente estacionados. Una excepción aparte y limitada permite reportar una emergencia, como un choque, un incendio o un delito."
   },
   {
     "type": "State-Specific",
@@ -16667,11 +16667,11 @@
     "question": "¿Qué deben hacer los conductores al acercarse a vehículos de emergencia con luces intermitentes en una interestatal en Montana?",
     "optionA": "Mantener la velocidad actual",
     "optionB": "Detenerse completamente ahora",
-    "optionC": "Reducir 20 mph, cambiarse de carril",
+    "optionC": "Cambiar de carril o reducir 20 mph",
     "optionD": "Hacer destellar las luces delanteras",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Al acercarse a vehículos de emergencia con luces intermitentes en una interestatal, los conductores deben reducir 20 mph por debajo del límite de velocidad y cambiarse de carril."
+    "explanation": "Al acercarse a un vehículo de emergencia detenido con luces intermitentes en una interestatal, los conductores deben cambiarse de carril si es seguro. Si no pueden cambiarse, deben reducir la velocidad a 20 mph por debajo del límite."
   },
   {
     "type": "State-Specific",
@@ -17686,7 +17686,7 @@
     "state": "ND",
     "questionId": "ND-024",
     "category": "stateUnique",
-    "question": "¿Cuál es el límite de velocidad predeterminado en las carreteras pavimentadas de dos carriles en Dakota del Norte, si está publicado?",
+    "question": "¿Cuál es el límite de velocidad más alto que puede señalizarse en una carretera pavimentada de dos carriles en Dakota del Norte?",
     "optionA": "55 mph",
     "optionB": "65 mph",
     "optionC": "70 mph",
@@ -20150,7 +20150,7 @@
     "state": "NM",
     "questionId": "NM-040",
     "category": "stateUnique",
-    "question": "¿Qué puede resultar de una suspensión de licencia de 7 a 10 puntos en un año en Nuevo México?",
+    "question": "¿Qué puede ocurrir si acumula de 7 a 10 puntos en un año en Nuevo México?",
     "optionA": "Suspensión de hasta 3 meses si el tribunal lo recomienda",
     "optionB": "Suspensión automática por 6 meses",
     "optionC": "Solo escuela de conducción obligatoria",
@@ -26814,14 +26814,14 @@
     "state": "UT",
     "questionId": "UT-036",
     "category": "stateUnique",
-    "question": "¿Cuándo debe detenerse en un cruce peatonal que no está ubicado en una intersección?",
-    "optionA": "Cuando esté intermitente únicamente",
-    "optionB": "Cuando sea conveniente",
-    "optionC": "Si hay policía presente",
-    "optionD": "Antes de ingresar a él",
+    "question": "¿Cuándo debe detenerse en un cruce peatonal que no está en una intersección?",
+    "optionA": "Solo si hay luces intermitentes",
+    "optionB": "Solo cuando sea conveniente",
+    "optionC": "Solo si hay policía presente",
+    "optionD": "Cuando un peatón está cruzando",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Los conductores deben detenerse antes de ingresar a un cruce peatonal que no está en una intersección cuando hay peatones presentes."
+    "explanation": "Los conductores deben detenerse antes de ingresar a un cruce peatonal, incluso uno que no está en una intersección, cuando un peatón está cruzando."
   },
   {
     "type": "State-Specific",

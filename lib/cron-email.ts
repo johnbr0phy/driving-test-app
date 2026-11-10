@@ -10,22 +10,22 @@
  */
 
 import { getAdminDb, getAdminAuth } from "@/lib/firebase-admin";
-import { FieldValue } from "firebase-admin/firestore";
-import { sendEmail } from "@/lib/resend";
+import type { EmailRetryPolicy } from '@/lib/server/emailRetryPolicy';
+import { sendDurableEmail, type DurableOutcome } from "@/lib/server/durableEmail";
 import { EmailVoice, resolveUserExamId, voiceFor } from "@/lib/email-voice";
 import {
   QuotaExhaustedError,
   CAMPAIGN_BUDGET,
   CAMPAIGN_CRON_COUNT,
 } from "@/lib/email-quota";
-import { isUnsubscribed, listUnsubscribeHeaders, unsubscribeToken } from "@/lib/unsubscribe";
+import { listUnsubscribeHeaders, unsubscribeToken } from "@/lib/unsubscribe";
 
 /**
  * Every campaign email is from John, and replies should reach him. Most go
  * out from noreply@ with this as the Reply-To; a campaign can pass
  * JOHN_SENDER to come from john@tigertest.io itself.
  */
-export const CAMPAIGN_REPLY_TO = process.env.EMAIL_REPLY_TO ?? "john@johnbrophy.net";
+export const CAMPAIGN_REPLY_TO = process.env.EMAIL_REPLY_TO ?? "john@tigertest.io";
 
 /** Sent as John himself, so a reply lands in his tigertest.io inbox. */
 export interface Sender {
@@ -42,10 +42,11 @@ export const JOHN_SENDER: Sender = {
  * so the 09:00 job can't spend the whole day's allowance before the 15:00 one
  * runs. The global counter in lib/email-quota is the real ceiling.
  */
-export const MAX_BATCH = Number(
+const configuredBatch = Number(
   process.env.CRON_MAX_BATCH ??
     Math.max(1, Math.floor(CAMPAIGN_BUDGET / CAMPAIGN_CRON_COUNT))
 );
+export const MAX_BATCH = Number.isSafeInteger(configuredBatch) && configuredBatch >= 0 ? configuredBatch : 0;
 
 // ── Auth helpers ──────────────────────────────────────────────────────────────
 
@@ -66,7 +67,7 @@ export async function buildAuthMap(): Promise<Map<string, AuthRecord>> {
   do {
     const result = await auth.listUsers(1000, pageToken);
     for (const u of result.users) {
-      if (u.email) {
+      if (u.email && !u.disabled) {
         map.set(u.uid, {
           email: u.email,
           creationTime: new Date(u.metadata.creationTime),
@@ -114,14 +115,10 @@ export interface UserDoc {
   raw: FirebaseFirestore.DocumentData;
 }
 
-/**
- * Nobody hears from us after a stretch of quiet days. Someone who stopped
- * using Tigertest for the DMV has almost always taken the test and moved on,
- * so a later email reaches a person who no longer has the problem. The
- * stretch is per exam (EmailVoice.inactiveDays: 3 for the DMV, longer for
- * certification and entrance exams with multi-week study cycles) and is
- * enforced centrally in getEligibleUsers() so no campaign can opt itself out
- * by accident.
+/** Per-event active-study windows: three days for DMV, fourteen for other exams.
+ * getEligibleUsers applies only a broad candidate ceiling; active routes apply
+ * this stricter rule after binding the actual triggering exam. Win-back routes
+ * retain their separately bounded inactivity windows.
  */
 export const DAY_MS = 24 * 60 * 60 * 1000;
 export function maxInactiveMs(voice: EmailVoice): number {
@@ -133,16 +130,15 @@ export function maxInactiveMs(voice: EmailVoice): number {
  * Cross-references with authMap to get email + creationTime.
  * Returns only users present in both (consented + have an email).
  *
- * includeMissingConsent: false (default) = strict, emailConsent === true only
- *                        true = include users where field is missing (opt-in legacy users)
+ * The historical includeMissingConsent flag changes only the query shape.
+ * Missing or false consent never authorizes a marketing send.
  */
 export async function getEligibleUsers(
   authMap: Map<string, AuthRecord>,
   includeMissingConsent = false,
   /**
-   * Skip the three-day activity rule. Only the two win-back campaigns set this,
-   * because reaching someone who has drifted away is the entire point of them.
-   * They impose their own staleness ceilings instead.
+   * Skip the broad candidate activity window. Win-back and announcement
+   * campaigns impose their own explicit staleness ceilings.
    */
   includeInactive = false
 ): Promise<UserDoc[]> {
@@ -169,7 +165,7 @@ export async function getEligibleUsers(
 
     // Skip explicit opt-outs even in permissive mode
     if (d.unsubscribed === true) continue;
-    if (!includeMissingConsent && d.emailConsent !== true) continue;
+    if (d.emailConsent !== true) continue; // Missing consent never authorizes marketing.
 
     // Skip internal/test accounts
     const emailLower = authRecord.email.toLowerCase();
@@ -191,6 +187,8 @@ export async function getEligibleUsers(
     const lastActiveAt = new Date(
       Math.max(
         toDate(d.lastUpdated)?.getTime() ?? 0,
+        // A v2 sync is conservative account activity, never proof of an exam event.
+        toDate(d.v2?.updatedAt)?.getTime() ?? 0,
         lastTest?.getTime() ?? 0,
         authRecord.creationTime.getTime()
       )
@@ -200,8 +198,10 @@ export async function getEligibleUsers(
     const examId = resolveUserExamId(d);
     const voice = voiceFor(examId);
 
-    // The quiet-days rule. Everyone past it has almost certainly sat their test.
-    if (!includeInactive && Date.now() - lastActiveAt.getTime() > maxInactiveMs(voice)) continue;
+    // This is only a broad candidate window. Signup identity is not the
+    // triggering exam: a DMV signup can later study CCMA. Each active route
+    // must apply maxInactiveMs AFTER binding its actual study/unlock event.
+    if (!includeInactive && Date.now() - lastActiveAt.getTime() > 14 * DAY_MS) continue;
 
     users.push({
       lastActiveAt,
@@ -238,8 +238,7 @@ export async function getEligibleUsers(
  */
 function toDate(v: any): Date | null {
   if (!v) return null;
-  if (typeof v.toDate === "function") return v.toDate();
-  const d = new Date(v);
+  const d = typeof v.toDate === "function" ? v.toDate() : new Date(v);
   return isNaN(d.getTime()) ? null : d;
 }
 
@@ -292,7 +291,7 @@ export function emailedRecently(
 
 // ── Email sender ──────────────────────────────────────────────────────────────
 
-export type CronSendOutcome = "sent" | "unsubscribed";
+export type CronSendOutcome = DurableOutcome;
 
 /**
  * Send one campaign email and record it.
@@ -320,43 +319,32 @@ export async function sendCronEmail(
   /** Extra fields merged into the user doc with the sent marker (e.g. a split-test variant). */
   record: Record<string, unknown> = {},
   /** Overrides the default noreply@ sender and Reply-To. */
-  sender?: Sender
+  sender?: Sender,
+  safeguards: { successTimestampPaths?: string[]; retryPolicy?: EmailRetryPolicy; gapMs?: number; eligible?: (data: Record<string, any>) => boolean } = {}
 ): Promise<CronSendOutcome> {
-  const db = getAdminDb();
-
-  if (await isUnsubscribed(uid)) {
-    console.log(`[cron-email] ${emailKey}: ${uid} is unsubscribed, skipping`);
-    return "unsubscribed";
-  }
-
-  const result = await sendEmail({
-    to: email,
-    subject,
-    html,
-    kind: "campaign",
-    ...(sender ? { from: sender.from } : {}),
-    replyTo: sender?.replyTo ?? CAMPAIGN_REPLY_TO,
-    headers: listUnsubscribeHeaders(uid),
-  });
-
-  if (!result.ok) {
-    if (result.quotaExhausted) throw new QuotaExhaustedError(result.error);
-    throw new Error(result.error ?? "Resend rejected the message");
-  }
-
-  await db
-    .collection("users")
-    .doc(uid)
-    .set(
-      {
-        ...record,
-        lastEmailSent: FieldValue.serverTimestamp(),
-        emailsSent: FieldValue.arrayUnion(emailKey),
+  try {
+    return await sendDurableEmail({
+      uid,
+      dedupeKey: `campaign:${emailKey}`,
+      emailKey,
+      record,
+      gapMs: safeguards.gapMs,
+      retryPolicy: safeguards.retryPolicy,
+      successTimestampPaths: safeguards.successTimestampPaths,
+      eligible: safeguards.eligible,
+      payload: {
+        to: email, subject, html, kind: "campaign",
+        ...(sender ? { from: sender.from } : {}),
+        replyTo: sender?.replyTo ?? CAMPAIGN_REPLY_TO,
+        headers: listUnsubscribeHeaders(uid),
       },
-      { merge: true }
-    );
-
-  return "sent";
+    });
+  } catch (error) {
+    if ((error as { quotaExhausted?: boolean })?.quotaExhausted) {
+      throw new QuotaExhaustedError((error as Error).message);
+    }
+    throw error;
+  }
 }
 
 // ── Batch runner ──────────────────────────────────────────────────────────────
@@ -377,6 +365,12 @@ export interface BatchOptions {
   record?: (user: UserDoc) => Record<string, unknown>;
   /** Send as someone other than noreply@, e.g. JOHN_SENDER. */
   sender?: Sender;
+  /** Rechecked atomically at claim and again immediately before the provider call. */
+  eligible?: (data: Record<string, any>, user: UserDoc) => boolean;
+  /** Existing time-critical campaigns explicitly retain their four-hour exception. */
+  gapMs?: number;
+  successTimestampPaths?: (user: UserDoc) => string[];
+  retryPolicy?: (user: UserDoc) => EmailRetryPolicy;
 }
 
 export interface BatchResult {
@@ -409,7 +403,7 @@ export async function processBatch(opts: BatchOptions): Promise<BatchResult> {
       const html = buildHtml(template, user.uid, opts.extras?.(user) ?? {});
       const subject =
         typeof opts.subject === "function" ? opts.subject(user) : opts.subject;
-      const outcome = await sendCronEmail(user.uid, user.email, subject, html, opts.emailKey, opts.record?.(user) ?? {}, opts.sender);
+      const outcome = await sendCronEmail(user.uid, user.email, subject, html, opts.emailKey, opts.record?.(user) ?? {}, opts.sender, { gapMs: opts.gapMs, successTimestampPaths: opts.successTimestampPaths?.(user), retryPolicy: opts.retryPolicy?.(user), eligible: opts.eligible ? (data) => opts.eligible!(data, user) : undefined });
       if (outcome === "sent") sent++;
       else skipped++;
     } catch (err) {
@@ -452,10 +446,10 @@ export function verifyCronSecret(req: Request): boolean {
 // ── Template helper ───────────────────────────────────────────────────────────
 
 export function buildHtml(template: string, uid: string, extras: Record<string, string> = {}): string {
-  const token = unsubscribeToken(uid);
+  const token = encodeURIComponent(unsubscribeToken(uid));
   let html = template.replace(/\{\{unsubscribeToken\}\}/g, token);
   for (const [key, val] of Object.entries(extras)) {
-    html = html.replace(new RegExp(`\\{\\{${key}\\}\\}`, "g"), val);
+    html = html.split(`{{${key}}}`).join(val);
   }
   return html;
 }

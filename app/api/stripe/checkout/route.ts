@@ -4,6 +4,7 @@ import { getAdminDb, getAdminAuth } from '@/lib/firebase-admin';
 import { isPaywallVariant } from '@/lib/paywallTestIds';
 import { premiumPriceFor, stripeUnitAmount } from '@/lib/pricing';
 import { visitorCountry } from '@/lib/server/visitorCountry';
+import { SITE_URL } from '@/lib/siteUrl';
 
 export async function POST(request: NextRequest) {
   try {
@@ -24,7 +25,10 @@ export async function POST(request: NextRequest) {
     const decodedToken = await getAdminAuth().verifyIdToken(token);
 
     const body = await request.json();
-    const { email, returnUrl, returnPath: rawReturnPath, location, paywallVariant } = body;
+    const { email: bodyEmail, returnUrl, returnPath: rawReturnPath, location, paywallVariant } = body;
+    // The account's own address when it has one: an address from the body
+    // would attach this checkout to someone else's Stripe customer.
+    const email = decodedToken.email || bodyEmail;
     // Where the buyer lands afterwards (and where the purchase is verified).
     // Same-site paths only: "/sat", never "//evil.com" or a full URL.
     const returnPath =
@@ -76,7 +80,16 @@ export async function POST(request: NextRequest) {
     }
 
     // Determine the base URL for redirects
-    const baseUrl = returnUrl || process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000';
+    // Stripe sends the buyer back to the site they came from: this host or the
+    // public one, never an address taken from the request body as it stands.
+    const ownOrigin = request.nextUrl.origin;
+    let returnOrigin = '';
+    try {
+      returnOrigin = typeof returnUrl === 'string' ? new URL(returnUrl).origin : '';
+    } catch {
+      returnOrigin = '';
+    }
+    const baseUrl = returnOrigin === ownOrigin || returnOrigin === new URL(SITE_URL).origin ? returnOrigin : ownOrigin;
 
     // Charge in the buyer's currency, the price the paywall showed them
     // (lib/pricing.ts, both from the IP country). Dollars keep the Stripe price.

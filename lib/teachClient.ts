@@ -13,11 +13,11 @@ export async function teachFetch<T>(user: User, path: string, init: RequestInit 
 }
 
 export function classLink(code: string): string {
-  const origin = typeof window === "undefined" ? "https://tigertest.io" : window.location.origin;
+  const origin = typeof window === "undefined" ? "https://www.tigertest.io" : window.location.origin;
   return `${origin.replace(/^https?:\/\/(www\.)?/, "")}/c/${code}`;
 }
 
 export function classUrl(code: string): string {
-  const origin = typeof window === "undefined" ? "https://tigertest.io" : window.location.origin;
+  const origin = typeof window === "undefined" ? "https://www.tigertest.io" : window.location.origin;
   return `${origin}/c/${code}`;
 }

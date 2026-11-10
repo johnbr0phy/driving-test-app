@@ -32,11 +32,17 @@ export async function joinClassMember(db: Firestore, code: string, memberId: str
 export const MAX_PROGRESS_ANSWERS = 200;
 export const MAX_PROGRESS_TESTS = 5;
 
+// Question ids and topics become object and Firestore map keys, so the names
+// every object inherits are refused: counts["__proto__"] is Object.prototype.
+const RESERVED_KEYS = new Set(["__proto__", "constructor", "prototype"]);
+
 export function validMemberAnswer(a: unknown): a is ClassAnswerEvent {
   const x = a as ClassAnswerEvent;
   return (
     !!x &&
     typeof x.ok === "boolean" &&
+    !RESERVED_KEYS.has(String(x.q)) &&
+    !RESERVED_KEYS.has(String(x.c)) &&
     /^[A-Za-z0-9_-]{1,64}$/.test(String(x.q)) &&
     /^[A-Za-z0-9_ .&/'-]{1,40}$/.test(String(x.c)) &&
     (x.p === undefined || (Number.isInteger(x.p) && x.p >= 0 && x.p <= 5))
@@ -79,12 +85,12 @@ export async function applyMemberProgress(
 
     if (answers.length) {
       const correct = answers.filter((a) => a.ok).length;
-      const byCategory: Record<string, { a: FieldValue; c: FieldValue }> = {};
-      const counts: Record<string, { a: number; c: number }> = {};
-      const missed: Record<string, number> = {};
-      const seen: Record<string, number> = {};
+      const byCategory: Record<string, { a: FieldValue; c: FieldValue }> = Object.create(null);
+      const counts: Record<string, { a: number; c: number }> = Object.create(null);
+      const missed: Record<string, number> = Object.create(null);
+      const seen: Record<string, number> = Object.create(null);
       // Wrong picks per question, by the option's index in the bank.
-      const picks: Record<string, Record<string, number>> = {};
+      const picks: Record<string, Record<string, number>> = Object.create(null);
       for (const a of answers) {
         const cat = a.c.replace(/\./g, "_");
         seen[a.q] = (seen[a.q] ?? 0) + 1;
@@ -94,7 +100,7 @@ export async function applyMemberProgress(
         else {
           missed[a.q] = (missed[a.q] ?? 0) + 1;
           if (a.p !== undefined) {
-            picks[a.q] = picks[a.q] ?? {};
+            picks[a.q] = picks[a.q] ?? Object.create(null);
             picks[a.q][a.p] = (picks[a.q][a.p] ?? 0) + 1;
           }
         }

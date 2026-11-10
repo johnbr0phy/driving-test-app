@@ -12,7 +12,7 @@
   "facts": {
     "h2": "Teoriprøven kort fortalt",
     "answer": "Teoriprøven er den første af de to prøver til kørekort til almindelig bil (kategori B). Den holdes af Færdselsstyrelsen på dens egne prøvesteder, varer 25 minutter, og du må højst have fem fejl. Du kan vælge en digital prøve på en touchskærm, hvor du kan gå tilbage til tidligere spørgsmål og få dem læst op, eller en analog prøve med svarark, hvor spørgsmålene vises på en skærm, og du ikke kan gå tilbage. Hvert spørgsmål viser et billede af en trafiksituation, og du vælger det eller de rigtige svar; et ubesvaret spørgsmål tæller som en fejl. Spørgsmålene trækkes tilfældigt fra hele undervisningsplanen for kategori B. Du kan gå til teoriprøven, fra du er 16 år og 11 måneder, og en bestået teoriprøve gælder i 18 måneder.",
-    "tigertest": "Tigertest har 200 egne øvelsesspørgsmål på dansk om emnerne i Færdselsstyrelsens undervisningsplan, alle med forklaring, gratis og uden login. Spørgsmålene er skrevet fra bunden; intet er kopieret fra prøven eller fra undervisningsmateriale. Tigertest er ikke tilknyttet Færdselsstyrelsen.",
+    "tigertest": "Tigertest har 200 egne øvelsesspørgsmål på dansk om emnerne i Færdselsstyrelsens undervisningsplan, alle med forklaring, gratis at starte på og uden login. Spørgsmålene er skrevet fra bunden; intet er kopieret fra prøven eller fra undervisningsmateriale. Tigertest er ikke tilknyttet Færdselsstyrelsen.",
     "rows": [
       { "label": "Afholdes af", "value": "Færdselsstyrelsen, på egne prøvesteder" },
       { "label": "Tid", "value": "25 minutter" },
@@ -100,7 +100,7 @@
     },
     {
       "q": "Er Tigertests teoriprøve gratis?",
-      "a": "Ja. Alle otte prøver og fire træningssæt er gratis, og du behøver ikke en konto. Opret en gratis konto, hvis du vil gemme dine fremskridt på både mobil og computer."
+      "a": "Ja. Du starter gratis og uden login: Alle træningssæt og prøver er gratis undtagen det sidste af hver, som hører til Tigertest Premium (engangsbetaling, intet abonnement). Opret en gratis konto, hvis du vil gemme dine fremskridt på både mobil og computer."
     }
   ],
   "finalCta": {

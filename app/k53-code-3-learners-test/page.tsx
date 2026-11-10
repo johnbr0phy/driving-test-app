@@ -121,7 +121,7 @@ export default function K53Code3LandingPage() {
             dashboardHref="/k53-code-3/dashboard"
             shortName="K53 Code 3 learner's"
             subtitle="200 original questions for the South African Code 3 learner's test, the heavy vehicle learner's before a C1 or C truck licence: rules of the road, road signs and markings, and truck controls. Four 50-question mock tests. Tuned for mobile. No account needed."
-            shots={{ mobile: "/landing/zak53-mobile.png", desktop: "/landing/zak53-desktop.png" }}
+            shots={{ mobile: "/landing/zak53c3-mobile.png", desktop: "/landing/zak53c3-desktop.png" }}
           />
         </div>
       </div>
@@ -269,7 +269,7 @@ export default function K53Code3LandingPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">Ready to Get Your Code 3 Learner&apos;s Licence?</h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Free to start. No account required. 200 questions across every section of the K53 Code 3 learner&apos;s test.</p>
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Start for free. No account required. 200 questions across every section of the K53 Code 3 learner&apos;s test.</p>
           <ExamLandingCTA dashboardHref="/k53-code-3/dashboard" />
         </div>
       </div>

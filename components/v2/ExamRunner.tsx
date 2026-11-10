@@ -4,7 +4,7 @@ import { FocusMode } from "./FocusMode";
 
 import { AccessibleOverlay } from "@/components/AccessibleOverlay";
 
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { Flag, ChevronLeft, ChevronRight, Calculator as CalcIcon, BookOpen, X, Strikethrough } from "lucide-react";
 import { ExamV2Config, StageState, TestSessionV2, AnswerValue } from "@/lib/v2/types";
@@ -44,6 +44,8 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
   const [eliminator, setEliminator] = useState(false);
   const [confirm, setConfirm] = useState<"submit" | "exit" | null>(null);
 
+  const finished = useRef(false);
+
   // Create the session on first visit.
   useEffect(() => {
     if (!hydrated) return;
@@ -51,7 +53,10 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
       router.replace(routes.dashboard);
       return;
     }
-    if (!session) putSession(createSession(exam, bank, testNumber));
+    // Not after finish(): removing the finished session re-runs this effect
+    // before the results page replaces this one, and a fresh empty session
+    // made the dashboard offer to resume a test that was just handed in.
+    if (!session && !finished.current) putSession(createSession(exam, bank, testNumber));
   }, [hydrated, session, exam, bank, testNumber, putSession, router, routes.dashboard]);
 
   const update = useCallback(
@@ -81,6 +86,7 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
       // A finished test reports every item to the student's class, if any.
       for (const item of result.items) recordClassAnswerById(exam.id, item.id, item.domain, item.correct, v2Pick(byId.get(item.id)?.format, item.answer));
       recordClassTest(exam.id, result.testNumber, result.items.filter((i) => i.correct).length, result.items.length);
+      finished.current = true;
       removeSession(s.key);
       router.replace(routes.results(testNumber));
     },

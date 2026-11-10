@@ -12,7 +12,7 @@
   "facts": {
     "h2": "O exame teórico de vigilante em resumo",
     "answer": "Para obter o cartão profissional de vigilante é preciso concluir a formação numa entidade formadora autorizada (módulo base, comum a todas as especialidades, e módulo específico de vigilante) e depois passar no exame teórico da PSP, feito no Centro Nacional de Exames de Segurança Privada (CNESP). O exame é feito em computador, numa sala de exame aprovada, e é marcado pela entidade formadora através do SIGESP. Tem 20 questões em 40 minutos, de escolha múltipla com duas a quatro respostas e só uma certa, ou de verdadeiro ou falso, e pode ter figuras ou imagens. Fica aprovado quem responder corretamente a pelo menos 10 questões. As questões incidem sobre os conteúdos dos módulos base e específico definidos na Portaria n.º 148/2014. É preciso conhecer suficientemente a língua portuguesa para ser admitido. Em caso de reprovação, pode pedir-se a revisão do exame no prazo de 48 horas, e a aprovação vale seis meses para pedir o cartão.",
-    "tigertest": "O Tigertest tem 200 perguntas originais sobre as matérias da formação de vigilante, com explicações, e oito testes de 20 perguntas, tudo grátis e sem conta. As perguntas não são copiadas das questões divulgadas pela PSP nem de outros simuladores.",
+    "tigertest": "O Tigertest tem 200 perguntas originais sobre as matérias da formação de vigilante, com explicações, e oito testes de 20 perguntas, grátis para começar e sem conta. As perguntas não são copiadas das questões divulgadas pela PSP nem de outros simuladores.",
     "rows": [
       { "label": "Entidade", "value": "PSP, Departamento de Segurança Privada (CNESP)" },
       { "label": "Perguntas", "value": "20, escolha múltipla ou verdadeiro/falso" },
@@ -97,7 +97,7 @@
     },
     {
       "q": "Os testes do Tigertest são grátis?",
-      "a": "Sim. Os quatro conjuntos de treino e os oito testes são grátis e sem conta. Com uma conta gratuita guarda o seu progresso em todos os dispositivos."
+      "a": "Sim. Começa grátis e sem conta: todos os conjuntos de treino e testes são grátis, exceto o último de cada, que faz parte do Tigertest Premium (pagamento único, sem subscrição). Com uma conta gratuita guarda o seu progresso em todos os dispositivos."
     }
   ],
   "finalCta": {

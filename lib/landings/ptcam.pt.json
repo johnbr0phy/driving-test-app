@@ -12,7 +12,7 @@
   "facts": {
     "h2": "O exame CAM em resumo",
     "answer": "O exame do CAM (Certificado de Aptidão para Motorista) é feito pelo IMT no fim do curso de qualificação inicial, comum ou acelerada, que os motoristas profissionais de pesados de mercadorias (categorias C e CE) e de passageiros (D e DE) têm de concluir numa entidade formadora reconhecida. É uma prova escrita de 60 perguntas, de escolha entre quatro respostas, de resposta direta ou de ambos os tipos, com duas horas de duração. Todas as perguntas valem o mesmo, numa escala de 0 a 100, e fica aprovado com pelo menos 60%. Só são admitidos candidatos que concluíram a formação há menos de dois anos, e a inscrição é feita pela entidade formadora. O CAM é válido por cinco anos e, para os motoristas residentes em Portugal, a qualificação fica averbada na carta de condução com o código 95.",
-    "tigertest": "O Tigertest tem 200 perguntas originais sobre as matérias da qualificação inicial, com explicações, e três testes de 60 perguntas, tudo grátis e sem conta. As perguntas não são copiadas das listas do IMT.",
+    "tigertest": "O Tigertest tem 200 perguntas originais sobre as matérias da qualificação inicial, com explicações, e três testes de 60 perguntas, grátis para começar e sem conta. As perguntas não são copiadas das listas do IMT.",
     "rows": [
       { "label": "Entidade", "value": "IMT (Instituto da Mobilidade e dos Transportes)" },
       { "label": "Perguntas", "value": "60, escolha múltipla e/ou resposta direta" },
@@ -98,7 +98,7 @@
     },
     {
       "q": "O exame CAM no Tigertest é grátis?",
-      "a": "Sim. Os cinco conjuntos de treino e os três testes de 60 perguntas são grátis e funcionam sem conta. Com uma conta grátis, o progresso fica guardado em todos os dispositivos."
+      "a": "Sim. Começa grátis e sem conta: todos os conjuntos de treino e testes são grátis, exceto o último de cada, que faz parte do Tigertest Premium (pagamento único, sem subscrição). Com uma conta grátis, o progresso fica guardado em todos os dispositivos."
     }
   ],
   "finalCta": {

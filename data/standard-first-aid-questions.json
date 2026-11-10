@@ -61,7 +61,7 @@
     "questionId": "CASFA-ROL-005",
     "category": "casfaRole",
     "question": "Once you have started first aid, when may you stop?",
-    "optionA": "When someone as trained takes over",
+    "optionA": "When equal or higher training takes over",
     "optionB": "When you feel the person looks fine",
     "optionC": "When a bystander tells you to",
     "optionD": "After 10 minutes of first aid",

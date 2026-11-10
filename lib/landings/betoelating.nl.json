@@ -12,7 +12,7 @@
   "facts": {
     "h2": "Het toelatingsexamen in een oogopslag",
     "answer": "Wie in Vlaanderen arts of tandarts wil studeren, legt eerst het toelatingsexamen af. Het bestaat uit twee delen. In de voormiddag beantwoord je in 3,5 uur 40 meerkeuzevragen Kennis en Inzicht in de Wetenschappen (KIW): 10 over biologie, 10 over fysica, 10 over chemie en 10 over wiskunde. In de namiddag volgen in 1,5 uur de Generieke Competenties (GC): 15 vragen EMCO over empathie en communicatie en 25 vragen VAARDIG over korte wetenschappelijke teksten. Er is giscorrectie: +3 voor een juist antwoord, −1 voor een fout antwoord, 0 als je niets invult. Je moet op elk deel minstens 60 op 120 halen, en daarna beslist je rangschikking binnen het startquotum. Het examen is alleen in het Nederlands en wordt op papier afgenomen.",
-    "tigertest": "Tigertest heeft 200 eigen oefenvragen in het Nederlands op het officiële leerstofoverzicht, gratis en zonder account. De vragen zijn zelf geschreven, niet overgenomen uit vroegere examens of voorbeeldvragen.",
+    "tigertest": "Tigertest heeft 200 eigen oefenvragen in het Nederlands op het officiële leerstofoverzicht, gratis om te beginnen en zonder account. De vragen zijn zelf geschreven, niet overgenomen uit vroegere examens of voorbeeldvragen.",
     "rows": [
       {
         "label": "KIW",
@@ -115,7 +115,7 @@
     },
     {
       "q": "Wat bootst Tigertest niet na?",
-      "a": "De echte VAARDIG-vragen horen bij langere teksten met figuren; hier heeft elke vraag een eigen korte tekst, zonder figuren. Het echte GC-deel telt 40 vragen, een proefexamen hier 10. Er is geen giscorrectie en geen tijdslimiet per deel. Alle oefensets en proefexamens zijn gratis."
+      "a": "De echte VAARDIG-vragen horen bij langere teksten met figuren; hier heeft elke vraag een eigen korte tekst, zonder figuren. Het echte GC-deel telt 40 vragen, een proefexamen hier 10. Er is geen giscorrectie en geen tijdslimiet per deel. Je begint gratis en zonder account: alle oefensets en proefexamens zijn gratis, behalve de laatste van elk, die bij Tigertest Premium horen (eenmalige betaling, geen abonnement)."
     }
   ],
   "finalCta": {

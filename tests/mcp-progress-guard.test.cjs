@@ -209,7 +209,10 @@ test('shared notice is persistent, account-filtered and warns about unsynced wor
 });
 test('catalog snapshot writes use an atomic revision check and load the account language', () => {
   const source = readFileSync('store/useStore.ts', 'utf8');
-  const save = source.slice(source.indexOf('saveToFirestore: async () =>'), source.indexOf('resetAllData: () =>', source.indexOf('saveToFirestore: async () =>')));
+  // saveToFirestore queues; writeSnapshot is the write itself.
+  const save = source.slice(source.indexOf('writeSnapshot: async (snapshot: AppState, seq: number) =>'), source.indexOf('resetAllData: () =>', source.indexOf('writeSnapshot: async (snapshot: AppState, seq: number) =>')));
+  assert.match(save, /completedTests: storedCompletedTests\(completedTests\)/);
+  assert.match(source, /function storedCompletedTests[\s\S]{0,900}compactCompletedTests\(/);
   assert.match(save, /runTransaction\(db, async \(transaction\)/);
   assert.ok(save.indexOf("assertMcpProgressRevision(userId, 'catalog', remote.data())") < save.indexOf('transaction.update(userRef, payload)'));
   assert.doesNotMatch(save, /await updateDoc\(userRef, payload\)|await setDoc/);
@@ -217,6 +220,6 @@ test('catalog snapshot writes use an atomic revision check and load the account 
   assert.match(load, /captureMcpProgressRevision\(userId, 'catalog', userDoc.data\(\)\)/);
   // Any supported language loads, but only one the account actually picked.
   assert.match(load, /isLanguage\(data\.language\) && languageIsChosen\(\{ language: data\.language/);
-  const checkOnly = source.slice(source.indexOf('checkUserHasData: async'), source.indexOf('saveToFirestore: async'));
+  const checkOnly = source.slice(source.indexOf('checkUserHasData: async'), source.indexOf('saveToFirestore: () =>'));
   assert.doesNotMatch(checkOnly, /captureMcpProgressRevision/);
 });

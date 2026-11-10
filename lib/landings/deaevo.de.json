@@ -12,7 +12,7 @@
   "facts": {
     "h2": "Die AEVO-Prüfung auf einen Blick",
     "answer": "Die Ausbildereignungsprüfung nach der Ausbilder-Eignungsverordnung (AEVO) hat einen schriftlichen und einen praktischen Teil. Schriftlich bearbeitest du fallbezogene Aufgaben aus allen vier Handlungsfeldern; die Prüfung soll drei Stunden dauern. Bei den IHKs sind das etwa 80 programmierte Aufgaben zu mehreren Ausgangssituationen, oft mit mehr als einer richtigen Antwort. Eine Aufgabe zählt nur, wenn alle richtigen Antworten markiert sind, und du brauchst mindestens 50 von 100 Punkten. Viele IHKs prüfen den schriftlichen Teil inzwischen am Tablet oder Notebook. Im praktischen Teil präsentierst du eine Ausbildungssituation von höchstens 15 Minuten oder führst sie praktisch durch, danach folgt ein Fachgespräch, zusammen höchstens 30 Minuten. Bestanden hast du, wenn beide Teile mindestens ausreichend sind.",
-    "tigertest": "Tigertest hat 200 eigene Übungsfragen auf Deutsch für den schriftlichen Teil, alle kostenlos und ohne Anmeldung. Die Fragen sind selbst geschrieben, nicht aus Prüfungen oder Prüfungsbüchern kopiert.",
+    "tigertest": "Tigertest hat 200 eigene Übungsfragen auf Deutsch für den schriftlichen Teil, der Einstieg ist kostenlos und ohne Anmeldung. Die Fragen sind selbst geschrieben, nicht aus Prüfungen oder Prüfungsbüchern kopiert.",
     "rows": [
       {
         "label": "Prüfungsteile",
@@ -115,7 +115,7 @@
     },
     {
       "q": "Ist der AEVO Test bei Tigertest kostenlos?",
-      "a": "Ja. Alle fünf Übungssets und vier Testbögen sind kostenlos und ohne Anmeldung nutzbar. Mit einem kostenlosen Konto speicherst du deinen Fortschritt auf allen Geräten."
+      "a": "Ja. Du startest kostenlos und ohne Anmeldung: Alle Übungssets und Tests sind kostenlos, bis auf das jeweils letzte, das zu Tigertest Premium gehört (einmalige Zahlung, kein Abo). Mit einem kostenlosen Konto speicherst du deinen Fortschritt auf allen Geräten."
     }
   ],
   "finalCta": {

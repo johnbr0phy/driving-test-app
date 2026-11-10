@@ -55,7 +55,7 @@ const faqs = [
   },
   {
     q: "Who can take it and what does it cost?",
-    a: "Guides disagree. Some describe access through the Claude Partner Network and quote different fees, so Anthropic Academy is the place to confirm eligibility, price and how to book. These practice questions are free and open to anyone, whether or not you can sit the exam yet.",
+    a: "Guides disagree. Some describe access through the Claude Partner Network and quote different fees, so Anthropic Academy is the place to confirm eligibility, price and how to book. These practice questions are free to start and open to anyone, whether or not you can sit the exam yet.",
   },
   {
     q: "Are these real exam questions?",
@@ -267,7 +267,7 @@ export default function ClaudeArchitectLandingPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">Ready to Practice for the Claude Architect Exam?</h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Free to start. No account required. 200 questions across all five reported domains.</p>
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Start for free. No account required. 200 questions across all five reported domains.</p>
           <ExamLandingCTA dashboardHref="/claude-certified-architect/dashboard" />
         </div>
       </div>

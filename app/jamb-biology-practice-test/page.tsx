@@ -127,7 +127,7 @@ export default function JambBiologyLandingPage() {
             dashboardHref="/jamb-biology/dashboard"
             shortName="JAMB Biology"
             subtitle="203 original questions on the whole JAMB Biology syllabus, with full 40-question timed tests. Tuned for mobile. No account needed."
-            shots={{ mobile: "/landing/jambeng-mobile.png", desktop: "/landing/jambeng-desktop.png" }}
+            shots={{ mobile: "/landing/jambbio-mobile.png", desktop: "/landing/jambbio-desktop.png" }}
           />
         </div>
       </div>
@@ -274,7 +274,7 @@ export default function JambBiologyLandingPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">Ready for JAMB Biology?</h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Free to start. No account required. 203 questions across the whole syllabus.</p>
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Start for free. No account required. 203 questions across the whole syllabus.</p>
           <ExamLandingCTA dashboardHref="/jamb-biology/dashboard" />
         </div>
       </div>

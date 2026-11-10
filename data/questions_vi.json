@@ -5255,7 +5255,7 @@
   "questionId": "CT-016",
   "category": "cellPhone",
   "question": "Tài xế Connecticut có thể dùng điện thoại cầm tay hợp pháp ở đâu khi đang trong xe?",
-  "optionA": "Trong bãi đậu xe hoặc nhà để xe",
+  "optionA": "Khi dừng trong dòng xe đông",
   "optionB": "Khi dừng đèn đỏ",
   "optionC": "Chỉ trên đường lái xe tư nhân",
   "optionD": "Đã đỗ an toàn trên vai đường",
@@ -6908,12 +6908,12 @@
   "category": "cellPhone",
   "question": "Theo Luật Rảnh Tay của Georgia, khi nào người lái được phép cầm điện thoại?",
   "optionA": "Tại biển báo STOP và đèn giao thông",
-  "optionB": "Chỉ khi đã đậu xe hợp pháp",
-  "optionC": "Chỉ trong các tình huống khẩn cấp",
+  "optionB": "Khi đã đậu xe hợp pháp",
+  "optionC": "Khi dùng ứng dụng dẫn đường",
   "optionD": "Khi di chuyển dưới 25 mph",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "Người lái chỉ được phép cầm điện thoại khi đã đậu xe hợp pháp."
+  "explanation": "Người lái không được cầm điện thoại khi đang lái xe, kể cả khi dừng ở biển báo STOP hoặc đèn giao thông. Người lái được cầm điện thoại khi đã đậu xe hợp pháp. Một ngoại lệ hẹp khác cho phép báo tin khẩn cấp như tai nạn, hỏa hoạn hoặc tội phạm."
  },
  {
   "type": "State-Specific",
@@ -16107,11 +16107,11 @@
   "question": "Tài xế phải làm gì khi đến gần xe khẩn cấp có đèn nhấp nháy trên Interstate ở Montana?",
   "optionA": "Giữ nguyên tốc độ hiện tại",
   "optionB": "Dừng hẳn ngay",
-  "optionC": "Giảm 20 mph, chuyển làn",
+  "optionC": "Chuyển làn, hoặc giảm 20 mph",
   "optionD": "Nháy đèn pha ra hiệu",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Khi đến gần xe khẩn cấp có đèn nhấp nháy trên Interstate, tài xế phải giảm tốc 20 mph dưới giới hạn và chuyển sang làn khác."
+  "explanation": "Khi đến gần xe khẩn cấp đang dừng có đèn nhấp nháy trên Interstate, tài xế phải chuyển sang làn khác nếu an toàn. Nếu không thể chuyển làn, tài xế phải giảm tốc xuống thấp hơn giới hạn 20 mph."
  },
  {
   "type": "State-Specific",
@@ -17126,7 +17126,7 @@
   "state": "ND",
   "questionId": "ND-024",
   "category": "stateUnique",
-  "question": "Giới hạn tốc độ mặc định trên đường cao tốc hai làn đã trải nhựa ở North Dakota nếu được đăng là bao nhiêu?",
+  "question": "Giới hạn tốc độ cao nhất có thể được đặt biển trên đường cao tốc hai làn đã trải nhựa ở North Dakota là bao nhiêu?",
   "optionA": "55 mph",
   "optionB": "65 mph",
   "optionC": "70 mph",
@@ -19590,7 +19590,7 @@
   "state": "NM",
   "questionId": "NM-040",
   "category": "stateUnique",
-  "question": "Điều gì có thể xảy ra từ việc đình chỉ bằng lái vì 7 đến 10 điểm trong một năm ở New Mexico?",
+  "question": "Điều gì có thể xảy ra nếu bạn tích lũy 7 đến 10 điểm trong một năm ở New Mexico?",
   "optionA": "Đình chỉ tối đa 3 tháng nếu tòa đề nghị",
   "optionB": "Tự động đình chỉ 6 tháng",
   "optionC": "Chỉ bắt buộc trường dạy lái",
@@ -26256,12 +26256,12 @@
   "category": "stateUnique",
   "question": "Khi nào bạn phải dừng tại vạch sang đường không nằm ở giao lộ?",
   "optionA": "Chỉ khi đèn nhấp nháy",
-  "optionB": "Khi tiện",
-  "optionC": "Nếu có cảnh sát",
-  "optionD": "Trước khi đi vào vạch",
+  "optionB": "Chỉ khi tiện",
+  "optionC": "Chỉ khi có cảnh sát",
+  "optionD": "Khi có người đi bộ đang sang đường",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "Tài xế phải dừng trước khi đi vào vạch sang đường không nằm ở giao lộ khi có người đi bộ."
+  "explanation": "Tài xế phải dừng trước khi đi vào vạch sang đường, kể cả vạch không nằm ở giao lộ, khi có người đi bộ đang sang đường."
  },
  {
   "type": "State-Specific",

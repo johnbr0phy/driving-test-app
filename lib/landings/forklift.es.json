@@ -12,7 +12,7 @@
   "facts": {
     "h2": "La certificación de montacargas en resumen",
     "answer": "En Estados Unidos no existe una licencia de montacargas del gobierno. Según OSHA 1910.178, tu empleador te certifica después de instrucción formal, capacitación práctica y una evaluación de tu desempeño en el montacargas que vas a manejar, y debe volver a evaluarte por lo menos cada tres años. Los operadores deben tener al menos 18 años en trabajos no agrícolas.",
-    "tigertest": "Tigertest tiene 200 preguntas de práctica de montacargas en español con explicaciones, todas gratis y sin cuenta.",
+    "tigertest": "Tigertest tiene 200 preguntas de práctica de montacargas en español con explicaciones, gratis para empezar y sin cuenta.",
     "rows": [
       {
         "label": "Quién certifica",
@@ -106,7 +106,7 @@
     },
     {
       "q": "¿El examen de práctica de montacargas de Tigertest es gratis?",
-      "a": "Sí. Los cuatro exámenes de práctica y los cuatro grupos de entrenamiento son gratis y no necesitas crear una cuenta. Crea una cuenta gratis si quieres guardar tu progreso en todos tus dispositivos."
+      "a": "Sí. Empiezas gratis y sin cuenta: todos los grupos de práctica y los exámenes de práctica son gratis menos el último de cada uno, que forma parte de Tigertest Premium (un solo pago, sin suscripción). Crea una cuenta gratis si quieres guardar tu progreso en todos tus dispositivos."
     }
   ],
   "finalCta": {

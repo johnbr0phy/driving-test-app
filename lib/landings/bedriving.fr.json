@@ -12,7 +12,7 @@
   "facts": {
     "h2": "L'examen théorique du permis B en bref",
     "answer": "L'examen théorique belge du permis B (voiture) se passe dans un centre d'examen agréé en Wallonie, à Bruxelles ou en Flandre. Vous répondez à 50 questions à choix multiple sur un écran. Vous partez de 50 points et il vous en faut au moins 41 pour réussir : une réponse fausse ou une question sans réponse coûte 1 point, et une erreur sur une question de faute grave (une infraction du troisième ou du quatrième degré, ou une limite de vitesse) coûte 5 points. Vous devez avoir au moins 17 ans, et une réussite reste valable trois ans. En Wallonie, l'examen est en français, en allemand à Eupen, et en néerlandais ou en anglais sur rendez-vous dans deux centres ; à Bruxelles, il est en français ou en néerlandais ; en Flandre, il est en néerlandais, avec une traduction audio en français, en allemand ou en anglais si vous le souhaitez. Après deux échecs consécutifs, vous suivez 12 heures de cours théoriques dans une école de conduite agréée.",
-    "tigertest": "Tigertest propose 200 questions d'entraînement originales, expliquées en français, toutes gratuites et sans compte. Le même examen existe aussi en néerlandais et en anglais. Tigertest n'est lié ni au GOCA, ni à un centre d'examen, ni aux autorités wallonnes, bruxelloises ou flamandes.",
+    "tigertest": "Tigertest propose 200 questions d'entraînement originales, expliquées en français, gratuites pour commencer et sans compte. Le même examen existe aussi en néerlandais et en anglais. Tigertest n'est lié ni au GOCA, ni à un centre d'examen, ni aux autorités wallonnes, bruxelloises ou flamandes.",
     "rows": [
       {
         "label": "Organisation",
@@ -131,7 +131,7 @@
     },
     {
       "q": "Tigertest est-il gratuit ?",
-      "a": "Oui. Les quatre examens blancs et les cinq séries d'entraînement sont gratuits, et vous n'avez pas besoin de compte. Créez un compte gratuit si vous voulez enregistrer votre progression sur votre GSM et votre ordinateur."
+      "a": "Oui. Vous commencez gratuitement et sans compte : toutes les séries d'entraînement et tous les examens blancs sont gratuits, sauf le dernier de chaque, qui fait partie de Tigertest Premium (un seul paiement, pas d'abonnement). Créez un compte gratuit si vous voulez enregistrer votre progression sur votre GSM et votre ordinateur."
     }
   ],
   "finalCta": {

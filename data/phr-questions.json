@@ -4,14 +4,14 @@
     "state": "ALL",
     "questionId": "PHR-BUS-001",
     "category": "phrBusiness",
-    "question": "A plant started the year with 220 employees and ended with 180. There were 30 separations during the year. What is the annual turnover rate?",
+    "question": "A plant started the year with 210 employees and ended with 190. There were 30 separations during the year. What is the annual turnover rate?",
     "optionA": "15%",
-    "optionB": "14%",
-    "optionC": "17%",
-    "optionD": "13.6%",
+    "optionB": "14.3%",
+    "optionC": "15.8%",
+    "optionD": "10%",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Turnover is separations divided by average headcount: 30 / ((220 + 180) / 2) = 30 / 200 = 15%. Dividing by the starting headcount gives 13.6%, and by the ending headcount 17%."
+    "explanation": "Turnover is separations divided by average headcount: 30 / ((210 + 190) / 2) = 30 / 200 = 15%. Dividing by the starting headcount gives 14.3%, and by the ending headcount 15.8%. 10% is the net fall in headcount (20 / 200), not separations."
   },
   {
     "type": "PHR",

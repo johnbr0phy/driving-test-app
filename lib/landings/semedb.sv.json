@@ -12,7 +12,7 @@
   "facts": {
     "h2": "Medborgarskapsprovet i korthet",
     "answer": "Sedan den 6 juni 2026 måste den som söker svenskt medborgarskap och är mellan 16 och 66 år visa grundläggande kunskaper om det svenska samhället. Den som inte kan visa det med betyg kan göra medborgarskapsprovet i samhällskunskap. Provet görs av Universitets- och högskolerådet (UHR), och du kan bara anmäla dig om du har fått ett brev från Migrationsverket. Provet görs på papper och på svenska, och varje fråga har fyra svarsalternativ där ett är rätt. Enligt nyhetsrapporter om det första provet den 15 augusti 2026 var det 60 frågor på 90 minuter. 40 av frågorna räknades, och det krävdes 28 rätt av 40, alltså 70 procent. UHR har ännu inte meddelat antal frågor och provtid för nästa prov, som planeras till april eller maj 2027. Provet bygger på UHR:s utbildningsmaterial Sverige i fokus. Ett prov i svenska språket kommer senare.",
-    "tigertest": "Tigertest har 200 egna övningsfrågor på svenska om allt som Sverige i fokus tar upp, gratis och utan inloggning. Frågorna är skrivna utifrån utbildningsmaterialet och lagarna, inte kopierade från UHR:s provfrågor.",
+    "tigertest": "Tigertest har 200 egna övningsfrågor på svenska om allt som Sverige i fokus tar upp, gratis att börja med och utan inloggning. Frågorna är skrivna utifrån utbildningsmaterialet och lagarna, inte kopierade från UHR:s provfrågor.",
     "rows": [
       {
         "label": "Anordnas av",

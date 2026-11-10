@@ -3,6 +3,9 @@ import { create } from 'zustand';
 import { persist, createJSONStorage } from 'zustand/middleware';
 import { Question, TestSession, UserAnswer, TestAttemptStats, QuestionPerformance, Subscription } from '@/types';
 import { doc, getDoc, updateDoc, runTransaction } from 'firebase/firestore';
+import { compactCompletedTests, expandCompletedTests } from '@/lib/testHistoryCompact';
+import { isMcpProgressConflict } from '@/lib/mcpProgressGuard';
+import { createSaveQueue } from '@/lib/saveQueue';
 import { Region, isRegion } from "@/lib/region";
 import { db } from '@/lib/firebase';
 import { trackQuestionsAnswered } from '@/lib/analytics';
@@ -226,6 +229,8 @@ interface AppState {
   loadUserData: (userId: string) => Promise<void>;
   checkUserHasData: (userId: string) => Promise<boolean>;
   saveToFirestore: () => Promise<void>;
+  /** The write behind saveToFirestore. Call saveToFirestore, which queues it. */
+  writeSnapshot: (snapshot: AppState, seq: number) => Promise<void>;
   resetAllData: () => void;
   /** Delete one test's progress: "dmv" (state choice included) or a registry exam family id. */
   resetExamData: (examId: string) => void;
@@ -277,7 +282,67 @@ interface AppState {
   // that has not loaded the account yet (empty, a guest's, another user's)
   // can never overwrite it. Not persisted: every load re-reads the account.
   loadedUid: string | null;
+  // Saves to the account that failed in a row (0 after one that worked). Never
+  // stored: components/SyncNotice.tsx tells the person once it reaches 3.
+  syncFailures: number;
   markAccountLoaded: (userId: string) => void;
+}
+
+// completedTests as it is written to the account: dates as ISO strings, and
+// older attempts of a test pointing at its latest one instead of repeating its
+// 50 questions (lib/testHistoryCompact.ts; nothing is dropped). The array only
+// changes when a test is finished, and every answer saves, so the result is
+// kept per array.
+let storedTestsCache: { source: TestSession[]; sessions: TestSession[]; stored: unknown[] } | null = null;
+function storedCompletedTests(completedTests: TestSession[]): unknown[] {
+  // Reused only for the very same array holding the very same sessions.
+  const hit = storedTestsCache;
+  if (
+    hit &&
+    hit.source === completedTests &&
+    hit.sessions.length === completedTests.length &&
+    hit.sessions.every((session, i) => session === completedTests[i])
+  ) {
+    return hit.stored;
+  }
+  const stored = compactCompletedTests(completedTests.map(test => ({
+    ...test,
+    startedAt: test.startedAt instanceof Date ? test.startedAt.toISOString() : test.startedAt,
+    completedAt: test.completedAt instanceof Date ? test.completedAt.toISOString() : test.completedAt,
+    answers: test.answers.map(a => ({
+      ...a,
+      answeredAt: a.answeredAt instanceof Date ? a.answeredAt.toISOString() : a.answeredAt,
+    })),
+  })));
+  storedTestsCache = { source: completedTests, sessions: [...completedTests], stored };
+  return stored;
+}
+
+// The save queue (see saveToFirestore and lib/saveQueue.ts).
+// The writer is attached below the store, which it belongs to.
+// Snapshots are numbered in the order they were taken. Two saves can still be
+// in flight together (a stalled one, or one started as the page is hidden), and
+// a transaction that loses a race is re-run by Firestore: before it writes, it
+// checks that no newer snapshot from this page has already been saved.
+interface NumberedSnapshot { state: AppState; seq: number }
+let snapshotSeq = 0;
+let savedSeq = 0;
+let writeAccount: (snapshot: AppState, seq: number) => Promise<void> = async () => {};
+const saveQueue = createSaveQueue<NumberedSnapshot>(({ state, seq }) => writeAccount(state, seq));
+
+/** Resolves once every save asked for so far has finished (or `ms` passed):
+ *  sign-out waits on it so the last answers reach the account first. */
+// A save waiting behind one in flight would be lost with the page: when the
+// page is hidden or left, start it at once (what every save did before the queue).
+if (typeof window !== 'undefined') {
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'hidden') saveQueue.kick();
+  });
+  window.addEventListener('pagehide', () => saveQueue.kick());
+}
+
+export function flushPendingSaves(ms = 4000): Promise<void> {
+  return Promise.race([saveQueue.idle(), new Promise<void>((resolve) => setTimeout(resolve, ms))]);
 }
 
 export const useStore = create<AppState>()(
@@ -329,6 +394,7 @@ export const useStore = create<AppState>()(
       },
       firestoreLoaded: false,
       loadedUid: null,
+      syncFailures: 0,
 
       // Actions
       setLanguage: (lang: Language) => {
@@ -974,7 +1040,11 @@ export const useStore = create<AppState>()(
           captureMcpProgressRevision(userId, 'catalog', userDoc.data());
           if (userDoc.exists()) {
             // Old ids of exams that moved (ASWB Clinical shared K53 Code 3's block).
-            const raw = userDoc.data();
+            const stored = userDoc.data();
+            // Older attempts are stored as pointers to the latest one
+            // (lib/testHistoryCompact.ts). Rebuild them first, so everything
+            // after this line, the id moves included, sees whole sessions.
+            const raw = { ...stored, completedTests: expandCompletedTests(stored.completedTests || []) } as typeof stored;
             const data = applyLegacyIdMoves(raw);
             movedLegacyIds = data !== raw;
             set({
@@ -1082,12 +1152,23 @@ export const useStore = create<AppState>()(
         }
       },
 
-      saveToFirestore: async () => {
-        const { userId, isGuest, selectedState, currentTests, completedTests, testAttempts, training, trainingSets, trainingAnswerHistory, activeDates, photoURL, language, languageChosen, testLanguages, emailConsent, superAmazing, superAmazingUnlockedAt, superAmazingUnlocks, primaryExam, primaryExamAt, region, regionAt, examStates, startedExams } = get();
-        if (!userId || isGuest) return; // Don't save if no user is logged in or guest mode
+      // One save at a time, in order. Every answer calls this, and each save is
+      // a transaction carrying the whole document: fired side by side they
+      // could commit out of order and leave the older copy on the account. A
+      // call made while a save is running is folded into one save that starts
+      // when it ends, with the state as it was at the latest call.
+      saveToFirestore: () => {
+        const snapshot = get();
+        if (!snapshot.userId || snapshot.isGuest) return Promise.resolve(); // no account to save to
         // Never write an account this store has not loaded: it would replace
         // the saved progress with whatever this browser holds.
-        if (get().loadedUid !== userId) return;
+        if (snapshot.loadedUid !== snapshot.userId) return Promise.resolve();
+        return saveQueue.push({ state: snapshot, seq: ++snapshotSeq });
+      },
+
+      writeSnapshot: async (snapshot: AppState, seq: number) => {
+        const { userId, selectedState, currentTests, completedTests, testAttempts, training, trainingSets, trainingAnswerHistory, activeDates, photoURL, language, languageChosen, testLanguages, emailConsent, superAmazing, superAmazingUnlockedAt, superAmazingUnlocks, primaryExam, primaryExamAt, region, regionAt, examStates, startedExams } = snapshot;
+        if (!userId) return;
 
         try {
           throwIfMcpProgressConflict(userId, 'catalog');
@@ -1106,7 +1187,9 @@ export const useStore = create<AppState>()(
           const updatedActiveDates = activeDates.includes(today) ? activeDates : [...activeDates, today];
 
           // Update local state with new active date
-          if (!activeDates.includes(today)) {
+          // (only while this account is still the one on screen: a queued save
+          // can run just after sign-out)
+          if (!activeDates.includes(today) && get().userId === userId) {
             set({ activeDates: updatedActiveDates });
           }
 
@@ -1167,15 +1250,10 @@ export const useStore = create<AppState>()(
             examStates,
             startedExams,
             currentTests: currentTestsForFirestore,
-            completedTests: completedTests.map(test => ({
-              ...test,
-              startedAt: test.startedAt instanceof Date ? test.startedAt.toISOString() : test.startedAt,
-              completedAt: test.completedAt instanceof Date ? test.completedAt.toISOString() : test.completedAt,
-              answers: test.answers.map(a => ({
-                ...a,
-                answeredAt: a.answeredAt instanceof Date ? a.answeredAt.toISOString() : a.answeredAt,
-              })),
-            })),
+            // Older attempts of a test point at its latest one instead of
+            // repeating its 50 questions (lib/testHistoryCompact.ts): nothing
+            // is dropped, and the document stays far from Firestore's 1 MiB limit.
+            completedTests: storedCompletedTests(completedTests),
             testAttempts: testAttempts.map(attempt => ({
               ...attempt,
               lastAttemptDate: attempt.lastAttemptDate instanceof Date ? attempt.lastAttemptDate.toISOString() : attempt.lastAttemptDate,
@@ -1202,11 +1280,20 @@ export const useStore = create<AppState>()(
           await runTransaction(db, async (transaction) => {
             const remote = await transaction.get(userRef);
             assertMcpProgressRevision(userId, 'catalog', remote.data());
+            // A newer snapshot from this page is already on the account: this
+            // one is older and must not replace it.
+            if (seq < savedSeq) return;
             if (remote.exists()) transaction.update(userRef, payload);
             else transaction.set(userRef, { ...payload, createdAt: new Date().toISOString() }, { merge: true });
           });
+          savedSeq = Math.max(savedSeq, seq);
+          if (get().userId === userId && get().syncFailures !== 0) set({ syncFailures: 0 });
         } catch (error) {
           console.error('Error saving to Firestore:', error);
+          // A save that fails is progress that exists on this device only.
+          // Count it so the person is told (an assistant-reset conflict has
+          // its own handling and is not a failure to report).
+          if (!isMcpProgressConflict(error) && get().userId === userId) set({ syncFailures: get().syncFailures + 1 });
         }
       },
 
@@ -1308,6 +1395,7 @@ export const useStore = create<AppState>()(
           activeDates: [],
           userId: null,
           loadedUid: null,
+          syncFailures: 0,
           photoURL: null,
           superAmazing: {
             enabled: false,
@@ -1374,7 +1462,7 @@ export const useStore = create<AppState>()(
       name: 'driving-test-storage',
       version: DATA_VERSION,
       // loadedUid must come from this page load's own read of the account.
-      partialize: ({ loadedUid: _loadedUid, ...rest }) => rest,
+      partialize: ({ loadedUid: _loadedUid, syncFailures: _syncFailures, ...rest }) => rest,
       storage: createJSONStorage(() => {
         // Only use localStorage on the client side
         if (typeof window !== 'undefined') {
@@ -1390,7 +1478,7 @@ export const useStore = create<AppState>()(
       skipHydration: false,
       merge: (persisted, current) => {
         const p = (persisted ?? {}) as Partial<AppState>;
-        return applyLegacyIdMoves({ ...current, ...p, trainingSets: splitLegacySets(p.trainingSets ?? current.trainingSets) });
+        return applyLegacyIdMoves({ ...current, ...p, completedTests: expandCompletedTests(p.completedTests ?? current.completedTests), trainingSets: splitLegacySets(p.trainingSets ?? current.trainingSets) });
       },
       migrate: (persistedState: unknown, version: number) => {
         // If upgrading from an older version, reset all data
@@ -1437,3 +1525,5 @@ export const useStore = create<AppState>()(
     }
   )
 );
+
+writeAccount = (snapshot, seq) => useStore.getState().writeSnapshot(snapshot, seq);

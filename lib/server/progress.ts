@@ -1,4 +1,5 @@
 import { FieldValue as ProgressFieldValue } from 'firebase-admin/firestore';
+import { expandCompletedTests } from '@/lib/testHistoryCompact';
 /*
  * Firestore user document shape — users/{uid}
  * Source of truth: store/useStore.ts → saveToFirestore() + loadUserData()
@@ -910,7 +911,9 @@ export async function getRecentTestSession(
 ): Promise<CompletedTestSession | null> {
   const data = await fetchUserDoc(userId);
   if (!data) return null;
-  const sessions = (data.completedTests ?? []).filter((s) => s.testNumber === testId);
+  // Older attempts are stored as pointers to the latest one; rebuild them
+  // before anything reads their questions (lib/testHistoryCompact.ts).
+  const sessions = expandCompletedTests(data.completedTests ?? []).filter((s) => s.testNumber === testId);
   if (sessions.length === 0) return null;
   return sessions[sessions.length - 1] as CompletedTestSession;
 }

@@ -9,4 +9,4 @@ export const HUB_PAGES_UPDATED_AT = "2026-11-07"; // FortiGate Administrator in 
 export const QUIZZES_PAGES_UPDATED_AT = "2026-10-22"; // /quizzes library and /create
 
 // /about.
-export const ABOUT_PAGE_UPDATED_AT = "2026-11-01";
+export const ABOUT_PAGE_UPDATED_AT = "2026-11-10";

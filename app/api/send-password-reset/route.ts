@@ -1,3 +1,4 @@
+import { SERVICE_INBOX, emailPreheader } from "@/lib/email-inbox";
 import { NextRequest, NextResponse } from 'next/server';
 import { getAuth } from 'firebase-admin/auth';
 import { getAdminDb } from '@/lib/firebase-admin';
@@ -62,7 +63,7 @@ export async function POST(request: NextRequest) {
     const result = await sendEmail({
       kind: 'transactional',
       to: email,
-      subject: 'Reset Your Tigertest Password',
+      subject: SERVICE_INBOX.reset.subject,
       html: `
         <!DOCTYPE html>
         <html>
@@ -71,6 +72,7 @@ export async function POST(request: NextRequest) {
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
         </head>
         <body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f9fafb;">
+  ${emailPreheader(SERVICE_INBOX.reset.preheader)}
           <div style="background-color: white; border-radius: 12px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
             <div style="text-align: center; margin-bottom: 30px;">
               <img src="https://www.tigertest.io/tiger.png" alt="Tigertest" style="width: 64px; height: 64px;">
@@ -88,7 +90,7 @@ export async function POST(request: NextRequest) {
             </div>
 
             <p style="font-size: 14px; color: #6b7280;">
-              This link will expire in 1 hour. If you didn't request a password reset, you can safely ignore this email - your password will remain unchanged.
+              If you didn't request a password reset, you can safely ignore this email - your password will remain unchanged.
             </p>
 
             <hr style="border: none; border-top: 1px solid #e5e7eb; margin: 30px 0;">
@@ -103,7 +105,7 @@ export async function POST(request: NextRequest) {
             <hr style="border: none; border-top: 1px solid #e5e7eb; margin: 30px 0;">
 
             <p style="font-size: 12px; color: #9ca3af; text-align: center;">
-              <a href="https://www.tigertest.io" style="color: #f97316; text-decoration: none;">Tigertest</a> - free practice tests for the DMV, SAT, nursing and 100+ more exams
+              <a href="https://www.tigertest.io" style="color: #f97316; text-decoration: none;">Tigertest</a>
             </p>
           </div>
         </body>

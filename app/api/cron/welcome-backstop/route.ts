@@ -10,8 +10,8 @@
  *
  * The 15-minute floor leaves the browser's own call time to land first; the
  * shared sender claims the key in a transaction, so both can never send.
- * The copy follows the account's primaryExam (else the DMV); a teacher with a
- * class gets the teacher welcome. Opted-out accounts are skipped.
+ * Copy uses only the immutable authenticated signup exam. Teacher setup
+ * follows its explicit signup branch; learner consent is always rechecked.
  */
 
 import { NextRequest, NextResponse } from "next/server";
@@ -60,16 +60,12 @@ export async function GET(req: NextRequest) {
     for (const doc of docs) {
       const data = doc.data();
       if (data?.emailsSent?.includes(WELCOME_KEY)) continue;
-      if (data?.unsubscribed === true) continue;
-      // Someone who left the email box unticked at signup (the browser call
-      // returned no_consent on purpose) is not mailed an hour later either.
-      if (data?.emailConsent === false) continue;
-      missing.push({ uid: doc.id, examId: isKnownExamId(data?.primaryExam) ? data?.primaryExam : undefined });
+      if (data?.signupOrigin?.teacher !== true && (data?.unsubscribed === true || data?.emailConsent !== true)) continue;
+      missing.push({ uid: doc.id, examId: isKnownExamId(data?.firstSignupExamId) ? data?.firstSignupExamId : undefined });
     }
 
-    for (const { uid, examId } of missing.slice(0, MAX_PER_RUN)) {
-      const taught = await db.collection("classes").where("teacherUid", "==", uid).limit(1).get();
-      const result = await sendWelcomeEmail(uid, { examId, teacher: !examId && !taught.empty });
+    for (const { uid } of missing.slice(0, MAX_PER_RUN)) {
+      const result = await sendWelcomeEmail(uid);
       if (result.ok) {
         sent++;
       } else if (result.reason === "send_failed") {

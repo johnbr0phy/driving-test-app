@@ -21,7 +21,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getAdminDb } from "@/lib/firebase-admin";
 import { uidFromToken } from "@/lib/unsubscribe";
-import { resolveUserExamId } from "@/lib/email-voice";
+import { resolveCurrentExamId } from "@/lib/email-voice";
 import { sendEmail } from "@/lib/resend";
 import { CAMPAIGN_REPLY_TO } from "@/lib/cron-email";
 import {
@@ -47,7 +47,7 @@ async function recordRequest({ uid, pick, source, details, email }: RecordArgs):
   let examId: string | null = null;
   if (uid) {
     const user = await db.collection("users").doc(uid).get();
-    if (user.exists) examId = resolveUserExamId(user.data() ?? {});
+    if (user.exists) examId = resolveCurrentExamId(user.data() ?? {});
   }
 
   const ref = uid

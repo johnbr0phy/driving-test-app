@@ -14,7 +14,9 @@ import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
 import { useTranslation } from "@/contexts/LanguageContext";
-import { useAuth } from "@/contexts/AuthContext";
+import { useAccountNavigation } from "@/hooks/useAccountNavigation";
+import { signupForDestination } from "@/lib/authDestination";
+import { AccountLoadRetry } from "@/components/AccountLoadRetry";
 import { auth } from "@/lib/firebase";
 import { trackBeginCheckout, trackDailyQuizAnswer, trackPaywallDismissed, trackPaywallHit, trackViewItem } from "@/lib/analytics";
 import { paywallVariantForCheckout } from "@/lib/paywallTest";
@@ -72,7 +74,7 @@ function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
   const pathname = usePathname();
   const hydrated = useHydration();
   const { t } = useTranslation();
-  const { user } = useAuth();
+  const { user, ready: accountReady, loadFailed } = useAccountNavigation();
   usePurchaseReturn();
 
   const isGuest = useStore((state) => state.isGuest);
@@ -83,6 +85,7 @@ function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
   const [sortDirection, setSortDirection] = useState<SortDirection>("desc");
   const [paywallOpen, setPaywallOpen] = useState(false);
   const searchParams = useSearchParams();
+  const signupDestination = signupForDestination(pathname ?? routes.stats, searchParams.toString());
   const communityOn = useCommunityAvailable(source.id);
   const [activeTab, setActiveTab] = useState<"yours" | "community">(
     searchParams.get("tab") === "community" ? "community" : "yours"
@@ -97,7 +100,7 @@ function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
 
   const handleUpgrade = async () => {
     if (!user?.email || !user?.uid) {
-      router.push(routes.signup);
+      router.push(signupDestination);
       return;
     }
     try {
@@ -139,8 +142,8 @@ function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
   // Redirect guests to signup (Common Mistakes is open to them)
   const wantsCommunity = activeTab === "community";
   useEffect(() => {
-    if (hydrated && isGuest && !wantsCommunity) router.push(routes.signup);
-  }, [hydrated, isGuest, wantsCommunity, router]);
+    if (accountReady && (!user || isGuest) && !wantsCommunity) router.replace(signupDestination);
+  }, [accountReady, user, isGuest, wantsCommunity, signupDestination, router]);
 
   const examQuestions = useMemo(() => getExamQuestions(exam.id, lang), [exam.id, lang]);
 
@@ -259,7 +262,8 @@ function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
     );
   };
 
-  if (!hydrated || (isGuest && !wantsCommunity)) return null;
+  if (loadFailed && user && !wantsCommunity) return <AccountLoadRetry uid={user.uid} />;
+  if (!hydrated || (!wantsCommunity && (!accountReady || !user || isGuest))) return null;
 
   const answeredCount = questionsWithPerformance.filter((q) => q.timesAnswered > 0).length;
 
@@ -281,7 +285,7 @@ function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
               "One payment, yours forever",
             ]}
             isGuest={isGuest}
-            onSignUp={() => router.push(routes.signup)}
+            onSignUp={() => router.push(signupDestination)}
             hideSocialProof
           />
 

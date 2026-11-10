@@ -322,13 +322,13 @@ export function findAccountExit(
   let last: { examId: string; questionId: string; isCorrect: boolean; t: number; test: boolean } | null = null;
   const counts = new Map<string, number>();
   const see = (questionId: unknown, isCorrect: unknown, iso: unknown, test: boolean) => {
-    if (typeof questionId !== "string" || typeof iso !== "string") return;
+    if (typeof questionId !== "string" || typeof iso !== "string" || typeof isCorrect !== "boolean") return;
     const t = Date.parse(iso);
     if (Number.isNaN(t)) return;
     const examId = opts.examOf(questionId);
     if (!examId) return;
     counts.set(examId, (counts.get(examId) ?? 0) + 1);
-    if (!last || t > last.t) last = { examId, questionId, isCorrect: !!isCorrect, t, test };
+    if (!last || t > last.t) last = { examId, questionId, isCorrect, t, test };
   };
 
   const history = Array.isArray(data.trainingAnswerHistory) ? data.trainingAnswerHistory : [];

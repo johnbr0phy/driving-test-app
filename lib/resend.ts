@@ -41,6 +41,8 @@ export interface SendResult {
   /** Resend rejected the send because the account is out of daily quota (or rate limited). */
   quotaExhausted: boolean;
   error?: string;
+  /** The provider may have accepted the message. Retry only with the same key. */
+  uncertain?: boolean;
 }
 
 /** Error names/messages Resend uses when the account is over its send allowance. */
@@ -48,9 +50,8 @@ function looksLikeQuotaError(name?: string, message?: string): boolean {
   const haystack = `${name ?? ""} ${message ?? ""}`.toLowerCase();
   return (
     haystack.includes("daily_quota_exceeded") ||
-    haystack.includes("rate_limit_exceeded") ||
-    haystack.includes("quota") ||
-    haystack.includes("too many requests")
+    haystack.includes("monthly_quota_exceeded") ||
+    (haystack.includes("quota") && !haystack.includes("rate"))
   );
 }
 
@@ -63,6 +64,8 @@ export interface SendEmailPayload {
   replyTo?: string;
   /** Extra SMTP headers, e.g. List-Unsubscribe for one-click opt-out. */
   headers?: Record<string, string>;
+  /** Stable, event-scoped key. Resend retains keys for 24 hours. */
+  idempotencyKey?: string;
   /**
    * Which budget this send is charged to. "campaign" stops early so the
    * transactional reserve survives; "transactional" may use the full plan
@@ -73,12 +76,39 @@ export interface SendEmailPayload {
 
 export const DEFAULT_FROM = "Tigertest <noreply@tigertest.io>";
 
+/** Match nonempty {{...}} placeholders without retrying a scan at every '{'. */
+function containsUnresolvedTemplate(html: string): boolean {
+  let cursor = 0;
+  while (cursor < html.length) {
+    const start = html.indexOf("{{", cursor);
+    if (start === -1) return false;
+    const end = html.indexOf("}", start + 2);
+    if (end === -1) return false;
+    if (end > start + 2 && html[end + 1] === "}") return true;
+    // No start before this closing brace can match. Resume after it so each
+    // character is scanned at most twice, including long runs of open braces.
+    cursor = end + 1;
+  }
+  return false;
+}
+
 /**
  * Send one email, charged against the account-wide daily budget, and report the
  * true outcome. Never throws — inspect the returned SendResult.
  */
-export async function sendEmail(payload: SendEmailPayload): Promise<SendResult> {
-  if (!(await reserveSend(payload.kind))) {
+export async function sendEmail(payload: SendEmailPayload, options: { previousUncertain?: boolean; notAfter?: number } = {}): Promise<SendResult> {
+  if (!process.env.RESEND_API_KEY) {
+    return { ok: false, quotaExhausted: false, error: "RESEND_API_KEY is not configured", uncertain: false };
+  }
+  // Refuse design fixtures and incomplete substitutions before charging quota.
+  if (containsUnresolvedTemplate(payload.html) || /example\.invalid|(?:src|href)=["']asset:|\[Verified postal address/i.test(payload.html)) {
+    return { ok: false, quotaExhausted: false, error: "Email contains unresolved template or preview content", uncertain: false };
+  }
+  if (payload.kind === "campaign" && !process.env.EMAIL_POSTAL_ADDRESS?.trim()) {
+    return { ok: false, quotaExhausted: false, error: "EMAIL_POSTAL_ADDRESS is required for campaign mail", uncertain: false };
+  }
+  let reservation = await reserveSend(payload.kind, payload.idempotencyKey, options.previousUncertain === true);
+  if (!reservation) {
     return {
       ok: false,
       quotaExhausted: true,
@@ -86,6 +116,19 @@ export async function sendEmail(payload: SendEmailPayload): Promise<SendResult> 
     };
   }
 
+  // A quota transaction may span midnight. Never call the provider against
+  // yesterday's budget. Reacquire at most twice, then fail closed.
+  for (let rollover = 0; reservation && reservation.day !== new Date().toISOString().slice(0, 10) && rollover < 2; rollover++) {
+    await releaseSend(reservation);
+    reservation = await reserveSend(payload.kind, payload.idempotencyKey, options.previousUncertain === true);
+  }
+  if (!reservation || reservation.day !== new Date().toISOString().slice(0, 10)) {
+    return { ok: false, quotaExhausted: true, uncertain: options.previousUncertain === true, error: 'Current-day email budget unavailable' };
+  }
+  if (options.notAfter !== undefined && Date.now() >= options.notAfter) {
+    if (!options.previousUncertain) await releaseSend(reservation);
+    return { ok: false, quotaExhausted: false, uncertain: options.previousUncertain === true, error: 'Retry deadline elapsed before provider call' };
+  }
   try {
     const { data, error } = await getResend().emails.send({
       from: payload.from ?? DEFAULT_FROM,
@@ -94,26 +137,37 @@ export async function sendEmail(payload: SendEmailPayload): Promise<SendResult> 
       html: payload.html,
       ...(payload.replyTo ? { replyTo: payload.replyTo } : {}),
       ...(payload.headers ? { headers: payload.headers } : {}),
-    });
+    }, payload.idempotencyKey ? { idempotencyKey: payload.idempotencyKey } : undefined);
 
     if (error) {
       const quotaExhausted = looksLikeQuotaError(error.name, error.message);
       // Latch the budget when Resend says we're done for the day; otherwise
       // hand the reserved slot back so it isn't lost to a one-off failure.
-      await (quotaExhausted ? markQuotaExhausted() : releaseSend());
+      const status = (error as { statusCode?: number }).statusCode;
+      const uncertain = (typeof status === "number" && status >= 500) ||
+        error.name === "application_error" || error.name === "internal_server_error" ||
+        error.name === "concurrent_idempotent_requests" || error.name === "invalid_idempotent_request";
+      if (quotaExhausted) await markQuotaExhausted(reservation);
+      else if (!uncertain && !options.previousUncertain) await releaseSend(reservation);
       return {
         ok: false,
         quotaExhausted,
         error: `${error.name ?? "error"}: ${error.message ?? "unknown"}`,
+        uncertain,
       };
     }
 
-    return { ok: true, id: data?.id, quotaExhausted: false };
+    if (!data?.id) {
+      return { ok: false, quotaExhausted: false, uncertain: true, error: "Provider returned no message id; delivery outcome is unknown" };
+    }
+    return { ok: true, id: data.id, quotaExhausted: false };
   } catch (err: any) {
     // Network/config failures (and a missing API key) land here.
     const message = err?.message ?? String(err);
     const quotaExhausted = looksLikeQuotaError(err?.name, message);
-    await (quotaExhausted ? markQuotaExhausted() : releaseSend());
-    return { ok: false, quotaExhausted, error: message };
+    // A timeout can happen after acceptance. Keep the budget reservation and
+    // let the durable sender retry the SAME immutable request and key only.
+    if (quotaExhausted) await markQuotaExhausted(reservation);
+    return { ok: false, quotaExhausted, error: message, uncertain: !quotaExhausted };
   }
 }

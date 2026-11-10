@@ -1,0 +1,66 @@
+// Candidate only: not deployed or selected by firebase.json.
+// Baseline read from production on 2026-11-08 (published 2026-04-01).
+// Preserve existing access and validation, adding only server-owned email and
+// purchase field protections. See docs/email-release-operations.md before use.
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    function isAdmin() {
+      return isSignedIn() && request.auth.token.email == 'john@johnbrophy.net';
+    }
+
+    function isValidUserData() {
+      let data = request.resource.data;
+      return data.keys().hasAll(['selectedState', 'lastUpdated']) &&
+        (data.selectedState == null || data.selectedState is string) &&
+        (!('photoURL' in data) || data.photoURL == null || data.photoURL is string) &&
+        (!('currentTests' in data) || data.currentTests is map) &&
+        (!('completedTests' in data) || data.completedTests is list) &&
+        (!('testAttempts' in data) || data.testAttempts is list) &&
+        (!('training' in data) || data.training is map) &&
+        data.lastUpdated is string;
+    }
+
+    function serverOwnedFields() {
+      return [
+        'signupOrigin', 'firstSignupExamId', 'marketingEmailLease',
+        'emailsSent', 'lastEmailSent', 'emailVariants', 'exitQuestionEmail',
+        'unsubscribed', 'unsubscribedAt', 'subscription'
+      ];
+    }
+
+    match /users/{userId} {
+      allow read: if isOwner(userId) || isAdmin();
+      allow create: if isOwner(userId) && isValidUserData() &&
+        !request.resource.data.keys().hasAny(serverOwnedFields());
+      allow update: if isOwner(userId) && isValidUserData() &&
+        !request.resource.data.diff(resource.data).affectedKeys().hasAny(serverOwnedFields());
+      allow delete: if isAdmin();
+    }
+
+    match /school_accounts/{schoolId} {
+      allow read: if true;
+      allow create: if isSignedIn();
+      allow update, delete: if isSignedIn() && request.auth.uid == resource.data.adminUid;
+    }
+
+    match /school_accounts/{schoolId}/students/{studentId} {
+      allow read: if isSignedIn();
+      allow write: if isSignedIn();
+    }
+
+    // emailDeliveries, fulfilledCheckouts, and every other unmatched collection
+    // remain inaccessible to clients. Admin SDK access is not governed by rules.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

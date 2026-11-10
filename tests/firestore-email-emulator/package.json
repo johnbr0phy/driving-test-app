@@ -1,0 +1,19 @@
+{
+  "name": "email-rules-validation",
+  "version": "1.0.0",
+  "description": "Demo-only emulator acceptance tests for PR 729 candidate rules",
+  "main": "index.js",
+  "scripts": {
+    "test": "bash run.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@firebase/rules-unit-testing": "5.0.0",
+    "firebase": "12.5.0",
+    "firebase-tools": "14.22.0"
+  },
+  "private": true
+}

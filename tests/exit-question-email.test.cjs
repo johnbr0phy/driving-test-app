@@ -39,7 +39,15 @@ test('the email escapes bank text and marks the answer', () => {
   assert.match(html, /Is 5 &lt; 6\?/);
   assert.match(html, /No &lt;b&gt;/);
   assert.match(html, /Because &amp; so\./);
-  assert.match(html, /A\. Yes &#10003;/);
+  assert.match(html, /A\)<\/td>/);
+  assert.match(html, /Yes<span[^>]*>Correct answer<\/span>/);
+  assert.match(html, /Incorrect last time/);
+  assert.doesNotMatch(html, /Your wrong answer|You selected/);
   assert.match(html, /utm_campaign=exit_question/);
   assert.notEqual(exitQuestionSubject(c), exitQuestionSubject({ ...c, isCorrect: true }));
+});
+
+test('malformed answer correctness is not invented as a wrong answer', () => {
+  const malformed = [1, 2, 3].map(n => ({ questionId: `U-${n}`, answeredAt: `2026-10-0${n}T12:00:00Z` }));
+  assert.equal(findAccountExit({ trainingAnswerHistory: malformed }, opts), null);
 });

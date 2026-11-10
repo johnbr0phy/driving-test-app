@@ -19,13 +19,17 @@
  */
 
 import { NextRequest, NextResponse } from "next/server";
+import { makeSnapshotRetryPolicy } from "@/lib/server/emailRetryPolicy";
 import {
   buildAuthMap,
   getEligibleUsers,
   processBatch,
   verifyCronSecret,
   emailedRecently,
+  maxInactiveMs,
 } from "@/lib/cron-email";
+import { withStudyContext } from "@/lib/email-lifecycle";
+import { EMAIL_INBOX } from "@/lib/email-inbox";
 import { EMAIL_TEMPLATES } from "@/lib/email-templates";
 
 const EMAIL_KEY = "upgradePitch";
@@ -43,7 +47,12 @@ export async function GET(req: NextRequest) {
     const authMap = await buildAuthMap();
     const users = await getEligibleUsers(authMap, INCLUDE_LEGACY);
 
-    const eligible = users.filter((u) => {
+    const contextualUsers = users.flatMap((user) => {
+      const scoped = withStudyContext(user);
+      return scoped ? [scoped] : [];
+    });
+    const matches = (u: (typeof users)[number]) => {
+      if (Date.now() - u.lastActiveAt.getTime() > maxInactiveMs(u.voice)) return false;
       if (!u.voice.hasPremium) return false;                 // only the DMV sells Premium
       if (u.creationTime > oneDayAgo) return false;          // too new
       if (u.subscription?.isPremium) return false;           // already premium
@@ -52,14 +61,23 @@ export async function GET(req: NextRequest) {
       // Staleness is handled centrally by the three-day rule in
       // getEligibleUsers, so there is no idle check here.
       return u.questionsAnswered >= MIN_QUESTIONS || u.completedTests.length >= 1;
-    });
+    };
+    const eligible = contextualUsers.filter(matches);
 
     const result = await processBatch({
       label: "upgrade-pitch",
       emailKey: EMAIL_KEY,
-      subject: "You're doing the work 💪",
+      subject: EMAIL_INBOX.upgradePitch().subject,
       template: (u) => EMAIL_TEMPLATES.upgradePitch(u.voice),
       users: eligible,
+      retryPolicy: (u) => makeSnapshotRetryPolicy(u.raw, { expiresAt: u.lastActiveAt.getTime() + maxInactiveMs(u.voice) }),
+      eligible: (fresh, user) => {
+        const scoped = withStudyContext({ ...user, raw: fresh, subscription: fresh.subscription ?? {}, emailsSent: Array.isArray(fresh.emailsSent) ? fresh.emailsSent : [],
+          lastActiveAt: new Date(Math.max(user.lastActiveAt.getTime(), Date.parse(fresh.lastUpdated) || 0)),
+        });
+        return !!scoped && scoped.examId === user.examId &&
+          scoped.lastUpdated?.getTime() === user.lastUpdated?.getTime() && matches(scoped);
+      },
       extras: (u) => ({ questionCount: u.questionsAnswered.toString() }),
     });
 

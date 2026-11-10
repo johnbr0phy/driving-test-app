@@ -1277,5 +1277,100 @@
         "why": "\"Shared equally\" means divide: 18 ÷ 2 = 9."
       }
     ]
+  },
+  {
+    "id": "ttStoryGroups",
+    "name": "How many groups?",
+    "sub": "Count up in the table",
+    "rule": "When a story tells you the total and how many are in each group, count up in that times table until you reach the total. The number of counts is the answer.",
+    "trick": "Use your fingers: one finger for each count. 5, 10, 15, 20 is four fingers, so 20 ÷ 5 = 4.",
+    "examples": [
+      {
+        "kind": "eg",
+        "text": "15 wheels, 3 on each tricycle",
+        "note": "Count in 3s: 3, 6, 9, 12, 15. That is 5 tricycles."
+      },
+      {
+        "kind": "eg",
+        "text": "12 socks put into pairs",
+        "note": "Count in 2s up to 12: 2, 4, 6, 8, 10, 12. That is 6 pairs."
+      }
+    ],
+    "another": {
+      "text": "Packing eggs into boxes of 6 is the same thing. Keep filling boxes until the eggs run out, then count the boxes.",
+      "example": "18 eggs: 6, 12, 18\n3 boxes"
+    },
+    "walkthrough": {
+      "board": "A tricycle has 3 wheels. Ben counts 12 wheels. How many tricycles are there?",
+      "kind": "text",
+      "steps": [
+        {
+          "ask": "What does the story tell us?",
+          "options": [
+            "The total (12) and how many in each group (3)",
+            "How many tricycles there are"
+          ],
+          "answer": 0,
+          "hint": "We know all the wheels, and the wheels on one tricycle.",
+          "line": "12 wheels, 3 on each"
+        },
+        {
+          "say": "Count up in 3s until you reach 12. Put up one finger each time."
+        },
+        {
+          "ask": "3, 6, 9 ... what comes next?",
+          "options": [
+            "12",
+            "10"
+          ],
+          "answer": 0,
+          "hint": "Add 3 more to 9.",
+          "line": "3, 6, 9, 12"
+        },
+        {
+          "ask": "How many numbers did you say?",
+          "options": [
+            "4",
+            "3"
+          ],
+          "answer": 0,
+          "hint": "3, 6, 9, 12. Count them on your fingers.",
+          "line": "4 counts"
+        },
+        {
+          "ask": "So how many tricycles are there?",
+          "options": [
+            "4",
+            "12"
+          ],
+          "answer": 0,
+          "then": "12 ÷ 3 = 4. Check: 4 × 3 = 12.",
+          "hint": "12 is the number of wheels. Count the tricycles.",
+          "line": "12 ÷ 3 = 4 ✓"
+        }
+      ]
+    },
+    "questions": [
+      {
+        "stem": "Eggs go in boxes of 10. How many boxes do 40 eggs fill?",
+        "options": [
+          "4",
+          "30",
+          "50"
+        ],
+        "answer": 0,
+        "why": "Count in 10s: 10, 20, 30, 40. That is 4 boxes."
+      },
+      {
+        "stem": "A table has 4 legs. There are 20 legs. How many tables are there?",
+        "options": [
+          "5",
+          "16",
+          "24"
+        ],
+        "answer": 0,
+        "why": "Count in 4s: 4, 8, 12, 16, 20. That is 5 tables, because 5 × 4 = 20."
+      }
+    ]
   }
 ]

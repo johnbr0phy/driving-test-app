@@ -159,6 +159,27 @@ SKILLS = [
       {"stem": "V = I × R. Which gives R?", "options": ["R = V × I", "R = I ÷ V", "R = V ÷ I"], "answer": 2, "why": "Divide both sides by I: R = V ÷ I."},
     ],
   },
+  {
+    "id": "gcsesciResultant", "name": "Resultant force", "sub": "Add or subtract forces in a line",
+    "rule": "The resultant force is the single force that has the same effect as all the forces together. Forces in the same direction add. Forces in opposite directions subtract: bigger minus smaller, acting in the direction of the bigger one. If they are equal, the resultant is zero and the forces are balanced.",
+    "trick": "A zero resultant does not mean stopped. It means no change: something still stays still, and something moving keeps a steady speed.",
+    "examples": [
+      {"kind": "eg", "text": "20 N right and 5 N right", "note": "Same direction, so add: 25 N to the right"},
+      {"kind": "eg", "text": "20 N right and 5 N left", "note": "Opposite, so subtract: 15 N to the right"},
+    ],
+    "another": {"text": "In a tug of war, if one team pulls harder the rope moves their way, and only the extra pull counts. If both teams pull equally hard, the rope does not move at all.", "example": "Team A: 500 N left\nTeam B: 450 N right\n50 N to the left"},
+    "walkthrough": {"board": "Driving force 900 N forwards. Air resistance 400 N and friction 200 N backwards.", "kind": "text", "steps": [
+      ws(ask="Two forces act backwards. What do they add up to?", options=["600 N", "200 N", "800 N"], answer=0, then="Forces in the same direction add.", hint="400 + 200.", line="Backwards: 400 + 200 = 600 N"),
+      ws(ask="Forwards and backwards are opposite directions. What do you do?", options=["Subtract", "Add"], answer=0, then="Bigger minus smaller.", hint="Opposite forces work against each other.", line="900 − 600"),
+      ws(ask="900 − 600 = ?", options=["300 N", "1,500 N"], answer=0, line="Resultant = 300 N"),
+      ws(ask="Which way does the resultant force act?", options=["Forwards", "Backwards"], answer=0, then="It acts the way of the bigger force, so the car speeds up.", hint="Which is bigger: the 900 N forwards or the 600 N backwards?", line="300 N forwards: the car speeds up"),
+      ws(ask="Later the backwards forces reach 900 N. What happens to the car?", options=["It keeps a steady speed", "It stops at once"], answer=0, then="900 − 900 = 0. With a zero resultant force the motion does not change.", line="900 − 900 = 0: steady speed"),
+    ]},
+    "questions": [
+      {"stem": "Two people push a trolley the same way with forces of 30 N and 20 N. What is the resultant force?", "options": ["10 N", "50 N", "600 N"], "answer": 1, "why": "Forces in the same direction add: 30 + 20 = 50 N."},
+      {"stem": "A skydiver's weight is 700 N down and the air resistance is 700 N up. What happens to her speed?", "options": ["It increases", "She stops falling", "It stays the same"], "answer": 2, "why": "700 − 700 = 0. A zero resultant force means no change, so she keeps falling at a steady speed."},
+    ],
+  },
 ]
 
 with open("data/v2/basics/gcsescience.json", "w") as f:

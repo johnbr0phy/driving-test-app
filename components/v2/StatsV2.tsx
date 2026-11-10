@@ -35,6 +35,7 @@ import { usePurchaseReturn } from "@/hooks/usePurchaseReturn";
 import { useCommunityAvailable, useExamCommunityStats } from "@/hooks/useCommunityStats";
 import { inClassFor, useClassMemberships } from "@/hooks/useClassMemberships";
 import { trackDailyQuizAnswer } from "@/lib/analytics";
+import { showsTestTakerCount } from "@/lib/communityStats";
 import { PaywallModal } from "@/components/PaywallModal";
 import { GatedStatsList, LockedPreview, STATS_FREE_ROWS, StatsPageShell, StatsTab, StatsTabs } from "@/components/stats/StatsParts";
 import { V2StatsRow, plainStem } from "./V2StatsRow";
@@ -435,8 +436,13 @@ function CommunityList({ exam, loading, rows, totalUsers, unlocked, subtitle, on
   return (
     <div className="space-y-4">
       <p className="text-sm text-gray-500 dark:text-gray-400">
-        The {exam.shortName} questions students miss most, based on answers from{" "}
-        <span className="font-medium text-gray-700 dark:text-gray-200">{totalUsers.toLocaleString()} real test takers</span>
+        The {exam.shortName} questions students miss most
+        {showsTestTakerCount(totalUsers) && (
+          <>
+            , based on answers from{" "}
+            <span className="font-medium text-gray-700 dark:text-gray-200">{totalUsers.toLocaleString()} real test takers</span>
+          </>
+        )}
       </p>
       <GatedStatsList
         items={rows}

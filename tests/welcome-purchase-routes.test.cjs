@@ -34,13 +34,27 @@ test('welcome rejects unauthenticated, bad-token and mismatched UID', async () =
   }
   assert.equal(welcomes, 0);
 });
-test('authenticated signup freezes original exam, ignores current exam and request consent', async () => {
+test('authenticated signup freezes original exam and ignores a later exam', async () => {
   rows.clear();
   await welcome(req({ userId: 'u', signupUrl: 'https://tigertest.io/signup?redirect=/ccma/dashboard', emailConsent: true }, 'valid'));
   assert.equal(rows.get('users/u').firstSignupExamId, 'ccma');
-  assert.equal(rows.get('users/u').emailConsent, undefined);
   await welcome(req({ userId: 'u', signupUrl: 'https://tigertest.io/sat/dashboard' }, 'valid'));
   assert.equal(rows.get('users/u').firstSignupExamId, 'ccma');
+});
+test('signup email choice is recorded at once so the welcome is not delayed, never over a stored choice', async () => {
+  rows.clear();
+  await welcome(req({ userId: 'u', signupUrl: 'https://tigertest.io/signup', emailConsent: true }, 'valid'));
+  assert.equal(rows.get('users/u').emailConsent, true);
+  rows.clear();
+  await welcome(req({ userId: 'u', signupUrl: 'https://tigertest.io/signup', emailConsent: false }, 'valid'));
+  assert.equal(rows.get('users/u').emailConsent, false);
+  rows.clear();
+  rows.set('users/u', { emailConsent: false, signupOrigin: { source: 'authenticated_signup', teacher: false } });
+  await welcome(req({ userId: 'u', signupUrl: 'https://tigertest.io/signup', emailConsent: true }, 'valid'));
+  assert.equal(rows.get('users/u').emailConsent, false);
+  rows.clear();
+  await welcome(req({ userId: 'u', signupUrl: 'https://tigertest.io/signup', emailConsent: 'yes' }, 'valid'));
+  assert.equal(rows.get('users/u').emailConsent, undefined);
 });
 test('unpaid checkout does not grant entitlement or send mail', async () => {
   rows.clear(); sends = [];

@@ -18,6 +18,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
+import { defaultEmailConsent } from '@/lib/privacyRegion';
 
 // The welcome email for an account made on this page. keepalive lets it
 // finish while the page redirects back to the assistant; anything still
@@ -27,7 +28,7 @@ async function sendWelcome(userId: string) {
     method: 'POST',
     headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${await getAuth(firebaseApp).currentUser?.getIdToken()}` },
     keepalive: true,
-    body: JSON.stringify({ userId, signupUrl: window.location.href }),
+    body: JSON.stringify({ userId, signupUrl: window.location.href, emailConsent: defaultEmailConsent() }),
   }).catch(() => {});
 }
 

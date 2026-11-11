@@ -58,7 +58,7 @@ Q = [
 ("Een klant reageert boos omdat u te laat bent door een file. Wat doet u?",
  "Rustig uitleggen wat er gebeurde", ["Even terug boos worden", "Zonder iets te zeggen vertrekken", "De lading weer meenemen naar het depot"],
  "Een conflict escaleren helpt niemand. Luister, leg kalm uit wat er gebeurd is en verwittig tijdig uw planning bij vertraging."),
-("Uw combinatie rijdt in de file. Waarom laat u voor u een ruime afstand?",
- "Om niet op uw voorligger te schuiven", ["Om sneller te kunnen optrekken", "Om andere vrachtwagens te laten invoegen", "Omdat de motor anders oververhit"],
+("Uw combinatie staat stil in de file. Waarom laat u voor u een ruime afstand?",
+ "Om niet op uw voorligger te schuiven", ["Om sneller te kunnen optrekken", "Om minder perslucht te verbruiken", "Omdat de motor anders oververhit"],
  "Als er achteraan iemand op u inrijdt, voorkomt een ruimte voor u dat u op uw voorligger geduwd wordt. Ze geeft ook ruimte om uit te wijken."),
 ]

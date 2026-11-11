@@ -51,7 +51,7 @@ Q = [
  "Een wekelijkse rust begint uiterlijk aan het einde van zes perioden van 24 uur na het einde van de vorige wekelijkse rust."),
 ("Waar mag u uw normale wekelijkse rust van 45 uur niet doorbrengen?",
  "In uw vrachtwagencabine", ["Thuis in uw eigen bed", "In een hotel of motel", "In een gepaste accommodatie"],
- "Sinds het Mobiliteitspakket mag de normale wekelijkse rust en een rust van meer dan 45 uur niet in het voertuig. De werkgever betaalt gepaste accommodatie."),
+ "Sinds het Mobiliteitspakket mogen de normale wekelijkse rust en elke rust van meer dan 45 uur niet in het voertuig worden genomen. De werkgever betaalt gepaste accommodatie."),
 ("Wie betaalt de accommodatie als u uw normale wekelijkse rust ver van huis neemt?",
  "De werkgever", ["De bestuurder zelf", "De klant van de lading", "Het parkeerterrein"],
  "Verordening 561/2006 legt de kosten van gepaste accommodatie met slaapfaciliteiten bij de werkgever."),

@@ -1579,7 +1579,7 @@
     "optionD": "In een gepaste accommodatie",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Sinds het Mobiliteitspakket mag de normale wekelijkse rust en een rust van meer dan 45 uur niet in het voertuig. De werkgever betaalt gepaste accommodatie."
+    "explanation": "Sinds het Mobiliteitspakket mogen de normale wekelijkse rust en elke rust van meer dan 45 uur niet in het voertuig worden genomen. De werkgever betaalt gepaste accommodatie."
   },
   {
     "type": "BEVRACHT",
@@ -2050,7 +2050,7 @@
     "category": "bevrLading",
     "question": "Hoe hoog mag een beladen vrachtwagen in België ten hoogste zijn?",
     "optionA": "3,80 m",
-    "optionB": "4 m",
+    "optionB": "4,00 m",
     "optionC": "4,20 m",
     "optionD": "4,50 m",
     "correctAnswer": "B",
@@ -2622,9 +2622,9 @@
     "state": "ALL",
     "questionId": "BEVRC-VEI-020",
     "category": "bevrVeiligheid",
-    "question": "Uw combinatie rijdt in de file. Waarom laat u voor u een ruime afstand?",
+    "question": "Uw combinatie staat stil in de file. Waarom laat u voor u een ruime afstand?",
     "optionA": "Om sneller te kunnen optrekken",
-    "optionB": "Om andere vrachtwagens te laten invoegen",
+    "optionB": "Om minder perslucht te verbruiken",
     "optionC": "Omdat de motor anders oververhit",
     "optionD": "Om niet op uw voorligger te schuiven",
     "correctAnswer": "D",

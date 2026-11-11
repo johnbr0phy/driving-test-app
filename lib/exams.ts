@@ -4565,7 +4565,7 @@ const cacit: ExamConfig = {
     testsHeading: "Practice tests · 20 questions, 15 to pass, like the real test",
     heroSubs: [
       "Four chapters to train, eight real-length tests.",
-      "Master each set, then take the tests.",
+      "Train a chapter, then try a test.",
       "Halfway there. Try a practice test.",
       "Fix the misses, then retake.",
       "All done. You are ready for your citizenship test.",

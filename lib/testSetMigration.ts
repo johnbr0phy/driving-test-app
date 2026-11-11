@@ -18,10 +18,21 @@ const OLD_MAX_SETS = 6;
 
 /**
  * Exams that went the other way: from test sets back to content-area sets
- * under the same set IDs (Phlebotomy, Nov 2026). Their progress is regrouped
- * the same way, each question to the set that holds it now.
+ * under the same set IDs, so every set carries a topic name (Phlebotomy
+ * first, then the other 83 in Nov 2026). Their progress is regrouped the same
+ * way, each question to the set that holds it now.
  */
-const BACK_TO_TOPIC_SETS: ExamId[] = ["phleb"];
+export const BACK_TO_TOPIC_SETS: ExamId[] = [
+  "phleb", "moto", "civics", "part107", "cna", "ptcb", "ccma", "cet", "danb", "foodmgr",
+  "realestate", "insurance", "notary", "foodhandler", "boating", "hunter", "cpr", "ffi", "osha",
+  "forklift", "alcohol", "security", "lifeguard", "pnc", "cosmetology", "barber", "vtne", "nasm",
+  "cca", "ccs", "ccaf", "fortigate", "ukcar", "ukmoto", "uklgv", "ukpcv", "ukadi", "iedtt",
+  "iedttcv", "caon", "caqc", "cabc", "caab", "camb", "cask", "cans", "aunsw", "auvic", "auqld",
+  "auwa", "ausa", "uksia", "uk18ed", "ukfood", "ukaplh", "ukfaw", "ukcare", "capal", "caelec",
+  "capsw", "casfa", "cawhmis", "caguard", "caauto", "caplumb", "caweld", "auwhite", "aursa",
+  "aurcg", "aufss", "aufirstaid", "auforklift", "auwah", "nzsfe", "kenck", "pknle", "pkpnmc",
+  "rocpi", "rorezid", "mtcpc", "gulfrn", "inrto", "cst", "crcst",
+];
 
 /** Set IDs whose progress belongs to this exam, old and new. */
 export function testSetIdsToCheck(exam: ExamConfig): number[] {

@@ -29,13 +29,19 @@ shared one (and check the other exams) or add a field to `ExamConfig`. The share
   slug, landingPath, name, shortName, examLabel, fullName, questionIdPrefix, icon, testCount 4,
   questionsPerTest 50, passPct, a comment naming the outline the blueprint follows, `blueprint`
   (per-test counts summing to 50), `trainingSets` (setNumber, id = idBase + setNumber, name,
-  categories, size = sum of pools, weightLabel "N% of the tests"), `categoryLabels`, and `copy`
+  categories, size = sum of pools, weightLabel "13 of 50 test questions"), `categoryLabels`, and `copy`
   (guestPrompt, trainingHeading, trainingSub, testsHeading, five heroSubs, sourceLine,
   analyticsKey = id).
+  Training sets are named by topic, never "Training Set 1": group the categories into sets of 35 to
+  60 questions (usually four sets, so the dashboard is 8 steps), in the official outline's order with
+  a small set last (the last training step is Premium), each named in the outline's own words in
+  about 35 characters or fewer ("Safety & Compliance", "Special Collections & Processing"). Every
+  category belongs to exactly one set. A single topic over 60 questions splits into parts and needs
+  hand-written `partNames`. Do not use `testSets()`.
   The five heroSubs are the line under the dashboard hero title, by progress: 0 nothing done, 1 under
   40%, 2 from 40 to 70%, 3 from 70% up, 4 all done. Write them for someone who has never seen the
   outline: name only what is on the dashboard (line 0: "Four training sets, four practice tests. Start
-  with Training Set 1."), never count topics the dashboard does not show, say "has the most questions"
+  with Safety & Compliance.", naming the first set), never count topics the dashboard does not show, say "has the most questions"
   not "weighs most", and never say "halfway" in line 2 (the title above already says it). Copy lines
   1 to 3 from a recent exam with the same layout.
   Each visit shows either that line or one of four shared encouraging lines for the stage
@@ -138,8 +144,7 @@ A native exam is a normal v1 exam whose base bank and base copy are in its own l
   (the English names every English surface uses: catalog, `/tests`, All tests menu, llms.txt,
   admin), `review: { de: "model" }` (`"machine"` for a machine translation, `"native"` once a paid
   native reviewer is done). `name`, `shortName`, `examLabel`, `fullName`, `categoryLabels`, `copy`
-  and set names are in the base language. DMV-style sets: `testSets(idBase, n, size)`, whose names
-  come from `TEST_SET_NAMES[language]`.
+  and set names are in the base language (topic names, like every exam's sets).
 - Its pages run in its language whatever the person chose (`lib/pageLanguage.ts`); an English
   version later is `translations.en` with its own landing, never a second exam id.
 - Landing: `landingPath` under the country path (`/de/fuehrerschein-theorie-test`), the

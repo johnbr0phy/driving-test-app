@@ -78,7 +78,7 @@ const jsonLd = {
       featureList: [
         "200 motorcycle permit practice questions",
         "4 practice tests weighted like the real exam",
-        "4 training sets, one per practice test",
+        "4 training sets by topic",
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
@@ -147,8 +147,7 @@ export default function MotorcycleLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train, Then Test</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four training sets, one for each practice test: Set 1 holds exactly the 50 questions of Test
-                1, and so on. Master the set, then take its test. Questions you miss come back until you
+                Four training sets, one per topic area, from Preparing to Ride, Alcohol &amp; Drugs to Intersections, Passing &amp; Hazards. Master a topic, then take a test. Questions you miss come back until you
                 have mastered them.
               </p>
             </div>
@@ -256,7 +255,7 @@ export default function MotorcycleLandingPage() {
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Drill your weak areas</h3>
               <p>
                 Tigertest tracks your accuracy by chapter. After each practice test, drill the questions you
-                missed from the results, retrain that test&apos;s set, and retake until you clear 80 percent.
+                missed from the results, retrain your weakest topic, and retake until you clear 80 percent.
               </p>
             </div>
           </div>

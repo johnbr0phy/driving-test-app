@@ -59,7 +59,7 @@ const jsonLd = {
       featureList: [
         "200 cosmetology theory practice questions",
         "4 practice tests weighted like the NIC national theory exam",
-        "4 training sets, one per practice test",
+        "5 training sets by topic",
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
@@ -173,7 +173,7 @@ export default function CosmetologyLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train, Then Test</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four training sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1, and so on. Master Set 1, then take Test 1 and aim for 75 percent. Questions you miss come back until you have mastered them.
+                Five training sets, one per topic area, from Infection Control &amp; Safety to Skin &amp; Nail Care. Master a topic, then take a test and aim for 75 percent. Questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>
@@ -274,7 +274,7 @@ export default function CosmetologyLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Fix your misses, then retest to 90 percent</h3>
               <p>
-                Tigertest tracks your accuracy by topic. Most boards pass at a scaled 75, so after each practice test drill the questions you missed, retrain that test&apos;s set, and retake until you clear 90 percent with room to spare, then take all four practice tests back to back. Two of them together are about the length of the real exam.
+                Tigertest tracks your accuracy by topic. Most boards pass at a scaled 75, so after each practice test drill the questions you missed, retrain your weakest topic, and retake until you clear 90 percent with room to spare, then take all four practice tests back to back. Two of them together are about the length of the real exam.
               </p>
             </div>
           </div>

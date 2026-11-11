@@ -83,7 +83,7 @@ const jsonLd = {
       featureList: [
         "200 Step 1 practice MCQs for foreign medical graduates",
         "4 mock tests of 50 questions with the 60% pass line",
-        "4 training sets, one per mock test",
+        "4 training sets by topic",
         "30% basic and 70% clinical sciences, as in the PM&DC syllabus",
         "Instant feedback with explanations",
       ],
@@ -167,7 +167,7 @@ export default function PknleLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train, Then Test</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four training sets, one per mock test: Set 1 holds exactly the 50 questions of Test 1, and so on. Master Set 1, take Test 1, then move on. Questions you miss come back until you have mastered them.
+                Four training sets, one per topic area, from Basic Sciences &amp; Community Medicine to Obstetrics, Gynaecology &amp; Paediatrics. Master a topic, then take a test. Questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>
@@ -297,7 +297,7 @@ export default function PknleLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Fix your misses, then retest</h3>
               <p>
-                Tigertest tracks your accuracy by topic. Aim for at least 35 out of 50 on all four mock tests, comfortably above the 30 that the 60 percent line needs. After each test, drill the questions you missed and retrain that test&apos;s set.
+                Tigertest tracks your accuracy by topic. Aim for at least 35 out of 50 on all four mock tests, comfortably above the 30 that the 60 percent line needs. After each test, drill the questions you missed and retrain your weakest topic.
               </p>
             </div>
           </div>

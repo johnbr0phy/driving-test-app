@@ -3,6 +3,28 @@
   "name": "Examen de práctica OSHA 10",
   "examLabel": "OSHA 10 horas",
   "fullName": "examen final del curso Outreach de 10 horas de OSHA",
+  "trainingSets": {
+    "1": {
+      "name": "Introducción a OSHA y derechos del trabajador",
+      "weightLabel": "8 de 50 preguntas del examen"
+    },
+    "2": {
+      "name": "Protección contra caídas",
+      "weightLabel": "9 de 50 preguntas del examen"
+    },
+    "3": {
+      "name": "Electricidad, golpes y atrapamientos",
+      "weightLabel": "14 de 50 preguntas del examen"
+    },
+    "4": {
+      "name": "Comunicación de peligros y EPP",
+      "weightLabel": "10 de 50 preguntas del examen"
+    },
+    "5": {
+      "name": "Peligros a la salud, herramientas e incendios",
+      "weightLabel": "9 de 50 preguntas del examen"
+    }
+  },
   "categoryLabels": {
     "oshaIntro": "Introducción a OSHA y derechos del trabajador",
     "oshaFalls": "Protección contra caídas",
@@ -17,9 +39,9 @@
     "trainingSub": "Cinco grupos que cubren los módulos de OSHA 10: derechos del trabajador, protección contra caídas, el resto de los Focus Four, comunicación de peligros y EPP, y peligros a la salud, herramientas e incendios. Las preguntas que fallas vuelven hasta que las domines.",
     "testsHeading": "Exámenes de práctica · 50 preguntas en las proporciones del examen del curso",
     "heroSubs": [
-      "Cuatro entrenamientos, cuatro exámenes. Empieza por el Entrenamiento 1.",
-      "Domina cada entrenamiento y luego haz su examen.",
-      "Sigue así. Cada entrenamiento te prepara para el examen que le sigue.",
+      "Cinco entrenamientos por tema, cuatro exámenes. Empieza por Introducción a OSHA.",
+      "Domina cada tema y luego ponte a prueba.",
+      "Sigue así. Cada tema que dominas aparece en los exámenes.",
       "Corrige las fallas y vuelve a intentarlo.",
       "Todo listo. Termina tu curso y recibe tu tarjeta."
     ],

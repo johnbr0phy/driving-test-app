@@ -17,7 +17,7 @@ const title = "Romania Driver CPC (CPI) Practice Test 2026 in English - Free ARR
 const metaDescription =
   "Free English practice for the ARR CPI theory exam for truck and bus drivers in Romania: 200 original questions on drivers' hours, tachographs, loads and passengers, four 50-question mock tests, 70% to pass.";
 const description =
-  "Free practice in English for the theory questionnaire of Romania's Driver CPC initial qualification (CPI marfă / persoane), run by the Romanian Road Authority (ARR): 200 original questions on EU drivers' hours and the Mobility Package, smart tachographs, eco-driving and vehicle technology, load securing, weights and dimensions, passenger safety and rights, CMR and cabotage, health and road safety, and emergencies. Four mock tests of 50 questions at the real pace with 70% to pass, and four training sets.";
+  "Free practice in English for the theory questionnaire of Romania's Driver CPC initial qualification (CPI marfă / persoane), run by the Romanian Road Authority (ARR): 200 original questions on EU drivers' hours and the Mobility Package, smart tachographs, eco-driving and vehicle technology, load securing, weights and dimensions, passenger safety and rights, CMR and cabotage, health and road safety, and emergencies. Four mock tests of 50 questions at the real pace with 70% to pass, and five training sets by topic.";
 
 export const metadata: Metadata = {
   title,
@@ -80,7 +80,7 @@ const jsonLd = {
       featureList: [
         "200 original Driver CPC questions in English",
         "4 mock tests of 50 questions, 70% to pass",
-        "4 training sets",
+        "5 training sets by topic",
         "Instant feedback with explanations",
         "Auto-save progress",
       ],

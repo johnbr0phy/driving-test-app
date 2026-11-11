@@ -3,6 +3,28 @@
   "name": "Examen de práctica de montacargas",
   "examLabel": "Operador de montacargas",
   "fullName": "examen de certificación de operador de montacargas",
+  "trainingSets": {
+    "1": {
+      "name": "Conceptos básicos y reglas de OSHA",
+      "weightLabel": "10 de 50 preguntas del examen"
+    },
+    "2": {
+      "name": "Estabilidad y capacidad de carga",
+      "weightLabel": "12 de 50 preguntas del examen"
+    },
+    "3": {
+      "name": "Inspección, combustible y carga de baterías",
+      "weightLabel": "8 de 50 preguntas del examen"
+    },
+    "4": {
+      "name": "Operación segura y peatones",
+      "weightLabel": "12 de 50 preguntas del examen"
+    },
+    "5": {
+      "name": "Manejo de cargas, muelles y rampas",
+      "weightLabel": "8 de 50 preguntas del examen"
+    }
+  },
   "categoryLabels": {
     "forkBasics": "Conceptos básicos y reglas de OSHA",
     "forkStability": "Estabilidad y capacidad de carga",
@@ -16,9 +38,9 @@
     "trainingSub": "Cuatro grupos que cubren el examen escrito de operador de montacargas: conceptos básicos, reglas e inspección, estabilidad y capacidad de carga, operación segura y manejo de cargas. Las preguntas que fallas vuelven hasta que las domines.",
     "testsHeading": "Exámenes de práctica · 50 preguntas en las proporciones del examen de operador",
     "heroSubs": [
-      "Cuatro entrenamientos, cuatro exámenes. Empieza por el Entrenamiento 1.",
-      "Domina cada entrenamiento y luego haz su examen.",
-      "Sigue así. Cada entrenamiento te prepara para el examen que le sigue.",
+      "Cinco entrenamientos por tema, cuatro exámenes. Empieza por Conceptos básicos y reglas de OSHA.",
+      "Domina cada tema y luego ponte a prueba.",
+      "Sigue así. Cada tema que dominas aparece en los exámenes.",
       "Corrige las fallas y vuelve a intentarlo.",
       "Todo listo. Haz la evaluación de tu empleador."
     ],

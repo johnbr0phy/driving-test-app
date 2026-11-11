@@ -57,7 +57,7 @@ const jsonLd = {
       featureList: [
         "200 LGV theory practice questions",
         "4 practice tests across all seven topic groups",
-        "4 training sets, one per practice test",
+        "5 training sets by topic",
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
@@ -160,7 +160,7 @@ export default function LgvTheoryLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train, Then Test</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four training sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1, and so on. Master Set 1, take Test 1, then move on. Questions you miss come back until you have mastered them.
+                Five training sets, one per topic area, from Drivers&apos; Hours &amp; the Driver to Documents, Incidents &amp; Emergencies. Master a topic, then take a test. Questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>
@@ -257,7 +257,7 @@ export default function LgvTheoryLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Fix your misses, then retest</h3>
               <p>
-                Tigertest tracks your accuracy by topic. The real test needs 85 out of 100, which leaves little room for weak areas, so after each practice test drill the questions you missed and retrain that test&apos;s set. Practise hazard perception separately with the official DVSA materials, as it is a different part of the test.
+                Tigertest tracks your accuracy by topic. The real test needs 85 out of 100, which leaves little room for weak areas, so after each practice test drill the questions you missed and retrain your weakest topic. Practise hazard perception separately with the official DVSA materials, as it is a different part of the test.
               </p>
             </div>
           </div>

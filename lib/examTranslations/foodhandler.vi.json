@@ -3,6 +3,28 @@
   "name": "Thi thử thẻ Food Handler",
   "examLabel": "Thẻ Food Handler",
   "fullName": "bài thi chứng chỉ an toàn thực phẩm cho nhân viên (food handler)",
+  "trainingSets": {
+    "1": {
+      "name": "Kiến thức cơ bản về an toàn thực phẩm",
+      "weightLabel": "10 trong 50 câu của bài thi"
+    },
+    "2": {
+      "name": "Vệ sinh cá nhân",
+      "weightLabel": "10 trong 50 câu của bài thi"
+    },
+    "3": {
+      "name": "Nhiễm bẩn & Chất gây dị ứng",
+      "weightLabel": "10 trong 50 câu của bài thi"
+    },
+    "4": {
+      "name": "Thời gian & Nhiệt độ",
+      "weightLabel": "12 trong 50 câu của bài thi"
+    },
+    "5": {
+      "name": "Làm sạch & Khử trùng",
+      "weightLabel": "8 trong 50 câu của bài thi"
+    }
+  },
   "categoryLabels": {
     "fhBasics": "Kiến thức cơ bản về an toàn thực phẩm",
     "fhHygiene": "Vệ sinh cá nhân",
@@ -16,9 +38,9 @@
     "trainingSub": "Bốn bộ luyện tập về an toàn thực phẩm, vệ sinh, nhiễm bẩn, nhiệt độ và làm sạch. Hãy dùng tài liệu của đơn vị đào tạo được chấp nhận cho khóa học và bài thi chính thức.",
     "testsHeading": "Bài thi thử · 50 câu hỏi bổ trợ",
     "heroSubs": [
-      "Bốn bộ luyện tập, bốn bài thi. Bắt đầu với Bộ luyện tập 1.",
-      "Nắm vững từng bộ, rồi làm bài thi của bộ đó.",
-      "Cứ tiếp tục nhé. Mỗi bộ luyện tập chuẩn bị cho bài thi ngay sau nó.",
+      "Năm bộ luyện tập theo chủ đề, bốn bài thi. Bắt đầu với Kiến thức cơ bản về an toàn thực phẩm.",
+      "Nắm vững từng chủ đề, rồi tự kiểm tra.",
+      "Cứ tiếp tục nhé. Mỗi chủ đề bạn nắm vững đều có trong bài thi.",
       "Ôn lại các câu sai, rồi thi lại.",
       "Đã xong hết. Hãy lấy thẻ food handler tại địa phương của bạn."
     ],

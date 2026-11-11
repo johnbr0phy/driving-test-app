@@ -82,7 +82,7 @@ const jsonLd = {
       featureList: [
         "200 SIA door supervisor practice questions",
         "4 mock exams of 50 questions weighted like the four unit exams",
-        "4 training sets, one per mock exam",
+        "4 training sets by topic",
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
@@ -152,7 +152,7 @@ export default function UksiaLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train, Then Test</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four training sets, one per mock exam: Set 1 holds exactly the 50 questions of Mock Exam 1, and so on. Master Set 1, then sit Mock Exam 1. Questions you miss come back until you have mastered them.
+                Four training sets, one per topic area, from Security Industry, Law &amp; Safety to Conflict &amp; Physical Intervention. Master a topic, then sit a mock exam. Questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>

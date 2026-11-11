@@ -59,7 +59,7 @@ const jsonLd = {
       featureList: [
         "200 Firefighter I practice questions",
         "4 mock tests of 50 questions with a 70% pass line",
-        "4 training sets, one per mock test",
+        "4 training sets by topic",
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
@@ -162,9 +162,9 @@ export default function FirefighterLandingPage() {
               <Smartphone className="w-7 h-7 text-brand-dark" />
             </div>
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train for Each Test</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train Topic by Topic</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four training sets, each holding exactly one mock test&apos;s 50 questions across all eight topic areas. Questions you miss come back until you have mastered them.
+                Four training sets by topic, from Safety, Command &amp; Fire Behavior to Water Supply, Hose &amp; Fire Control. Questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>

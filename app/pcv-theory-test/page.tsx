@@ -57,7 +57,7 @@ const jsonLd = {
       featureList: [
         "200 bus and coach theory practice questions",
         "4 practice tests across all seven topic areas",
-        "4 training sets, one per practice test",
+        "5 training sets by topic",
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
@@ -160,7 +160,7 @@ export default function PcvTheoryLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train, Then Test</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four training sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1, and so on. Master Set 1, take Test 1, then move on. Questions you miss come back until you have mastered them.
+                Five training sets, one per topic area, from Drivers&apos; Hours, Tachographs &amp; Documents to Signs, Incidents &amp; Emergencies. Master a topic, then take a test. Questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>
@@ -257,7 +257,7 @@ export default function PcvTheoryLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Fix your misses, then retest</h3>
               <p>
-                Tigertest tracks your accuracy by topic. The pass mark is high at 85 out of 100, so aim for 90 percent on all four practice tests. After each test, drill the questions you missed and retrain that test&apos;s set, then practise hazard perception separately before you book.
+                Tigertest tracks your accuracy by topic. The pass mark is high at 85 out of 100, so aim for 90 percent on all four practice tests. After each test, drill the questions you missed and retrain your weakest topic, then practise hazard perception separately before you book.
               </p>
             </div>
           </div>

@@ -82,7 +82,7 @@ const jsonLd = {
       featureList: [
         "200 working at heights practice questions",
         "4 practice tests of 50 questions with an 80% readiness line",
-        "4 training sets, one per practice test",
+        "4 training sets by topic",
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
@@ -152,7 +152,7 @@ export default function WorkingAtHeightsLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train, Then Test</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four training sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1, and so on. Master Set 1, take Test 1, then move on. Questions you miss come back until you have mastered them.
+                Four training sets, one per topic area, from WHS Laws, Hazards &amp; Risk to Roof Work, Rescue &amp; Emergencies. Master a topic, then take a test. Questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>
@@ -251,7 +251,7 @@ export default function WorkingAtHeightsLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Fix your misses, then retest</h3>
               <p>
-                Tigertest tracks your accuracy by topic. Aim for 40 or more out of 50 on all four practice tests before your course. After each test, drill the questions you missed and retrain that test&apos;s set. Then practise fitting a harness and setting up a ladder with your trainer.
+                Tigertest tracks your accuracy by topic. Aim for 40 or more out of 50 on all four practice tests before your course. After each test, drill the questions you missed and retrain your weakest topic. Then practise fitting a harness and setting up a ladder with your trainer.
               </p>
             </div>
           </div>

@@ -57,7 +57,7 @@ const jsonLd = {
       featureList: [
         "200 car theory test practice questions",
         "4 mock tests of 50 questions with the 43 of 50 pass mark",
-        "4 training sets, one per mock test",
+        "4 training sets by topic",
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
@@ -161,7 +161,7 @@ export default function UkDrivingTheoryTestLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train, Then Test</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four training sets, one per mock test: Set 1 holds exactly the 50 questions of Test 1, and so on. Master Set 1, take Test 1, then move on. Questions you miss come back until you have mastered them.
+                Four training sets, one per topic area, from Alertness, Attitude &amp; Your Vehicle to Signs, Documents &amp; Emergencies. Master a topic, then take a test. Questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>
@@ -258,7 +258,7 @@ export default function UkDrivingTheoryTestLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Fix your misses, then retest</h3>
               <p>
-                Tigertest tracks your accuracy by topic. Aim to score 45 or more out of 50 on all four mock tests before you book, so you have room above the 43 pass mark. After each test, drill the questions you missed and retrain that test&apos;s set, and practise hazard perception clips alongside.
+                Tigertest tracks your accuracy by topic. Aim to score 45 or more out of 50 on all four mock tests before you book, so you have room above the 43 pass mark. After each test, drill the questions you missed and retrain your weakest topic, and practise hazard perception clips alongside.
               </p>
             </div>
           </div>

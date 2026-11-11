@@ -3,6 +3,28 @@
   "name": "Examen de práctica CNA",
   "examLabel": "Examen escrito CNA",
   "fullName": "examen escrito (de conocimientos) de asistente de enfermería",
+  "trainingSets": {
+    "1": {
+      "name": "Vida diaria y habilidades restaurativas",
+      "weightLabel": "12 de 50 preguntas del examen"
+    },
+    "2": {
+      "name": "Habilidades básicas de enfermería",
+      "weightLabel": "19 de 50 preguntas del examen",
+      "partNames": [
+        "Control de infecciones, seguridad y emergencias",
+        "Signos vitales, observación y procedimientos"
+      ]
+    },
+    "3": {
+      "name": "Cuidado psicosocial y comunicación",
+      "weightLabel": "10 de 50 preguntas del examen"
+    },
+    "4": {
+      "name": "Derechos, ética y trabajo en equipo",
+      "weightLabel": "9 de 50 preguntas del examen"
+    }
+  },
   "categoryLabels": {
     "activitiesDailyLiving": "Actividades de la vida diaria",
     "basicNursingSkills": "Habilidades básicas de enfermería",
@@ -20,9 +42,9 @@
     "trainingSub": "Cuatro grupos que siguen el temario del examen escrito NNAAP. Respuesta al instante, y las preguntas que fallas vuelven hasta que las domines.",
     "testsHeading": "Exámenes de práctica · 50 preguntas repartidas como el examen real",
     "heroSubs": [
-      "Cuatro entrenamientos, cuatro exámenes. Empieza por el Entrenamiento 1.",
-      "Domina cada entrenamiento y luego haz su examen.",
-      "Sigue así. Cada entrenamiento te prepara para el examen que le sigue.",
+      "Cuatro entrenamientos por tema, cuatro exámenes. Empieza por Vida diaria y habilidades restaurativas.",
+      "Domina cada tema y luego ponte a prueba.",
+      "Sigue así. Cada tema que dominas aparece en los exámenes.",
       "Corrige las fallas y vuelve a intentarlo.",
       "Todo listo. Programa el examen CNA de tu estado."
     ],

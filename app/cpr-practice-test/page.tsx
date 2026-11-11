@@ -58,7 +58,7 @@ const jsonLd = {
       featureList: [
         "200 CPR, AED and first aid practice questions",
         "4 practice tests weighted like the written exam",
-        "4 training sets, one per practice test",
+        "5 training sets by topic",
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
@@ -160,7 +160,7 @@ export default function CprLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train, Then Test</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four training sets, one per practice test: each holds exactly the 50 questions of its test. Master Set 1, then take Test 1, and so on. Questions you miss come back until you have mastered them.
+                Five training sets, one per topic area, from Basics &amp; Chain of Survival to Choking &amp; Breathing Emergencies. Master a topic, then take a test. Questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>
@@ -257,7 +257,7 @@ export default function CprLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Drill the first aid recognition items</h3>
               <p>
-                FAST for stroke, chewed aspirin for a heart attack with no allergy or bleeding, epinephrine in the outer thigh for anaphylaxis, direct pressure then a tourniquet for severe bleeding, cool water not ice for burns, and nothing by mouth for anyone who is not fully alert. Tigertest tracks your accuracy by topic, so drill the questions you missed, retrain that test&apos;s set and retake until you clear 90 percent.
+                FAST for stroke, chewed aspirin for a heart attack with no allergy or bleeding, epinephrine in the outer thigh for anaphylaxis, direct pressure then a tourniquet for severe bleeding, cool water not ice for burns, and nothing by mouth for anyone who is not fully alert. Tigertest tracks your accuracy by topic, so drill the questions you missed, retrain your weakest topic and retake until you clear 90 percent.
               </p>
             </div>
           </div>

@@ -17,7 +17,7 @@ const title = "Claude Certified Architect Practice Test 2026 - Free CCA-F Questi
 const metaDescription =
   "Free Claude Certified Architect: Foundations practice: 200 original scenario questions on agents, Claude Code, prompts, tools and MCP, and context, four 50-question tests, every answer explained.";
 const description =
-  "Free practice for the Claude Certified Architect: Foundations exam: 200 original scenario questions written from Anthropic's public documentation across the five domains study guides report. Four 50-question practice tests, four training sets and an explanation for every answer. Not affiliated with or endorsed by Anthropic.";
+  "Free practice for the Claude Certified Architect: Foundations exam: 200 original scenario questions written from Anthropic's public documentation across the five domains study guides report. Four 50-question practice tests, five training sets and an explanation for every answer. Not affiliated with or endorsed by Anthropic.";
 
 export const metadata: Metadata = {
   title,
@@ -80,7 +80,7 @@ const jsonLd = {
       featureList: [
         "200 Claude Certified Architect practice questions",
         "4 practice tests of 50 questions across all five domains",
-        "4 training sets, one for each test",
+        "5 training sets, one per exam domain",
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
@@ -142,9 +142,9 @@ export default function ClaudeArchitectLandingPage() {
               <Smartphone className="w-7 h-7 text-brand-dark" />
             </div>
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train Set by Set</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train Domain by Domain</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four training sets, one for each practice test, so you learn the questions before you are scored on them. Questions you miss come back until you have mastered them.
+                Five training sets, one per exam domain, from Agentic Architecture &amp; Orchestration to Context Management &amp; Reliability. Questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>

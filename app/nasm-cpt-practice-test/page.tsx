@@ -17,7 +17,7 @@ const title = "NASM CPT Practice Test 2026 - Free NASM Exam Questions";
 const metaDescription =
   "Free NASM CPT practice test: 200 original questions on the CPT7 exam blueprint, four 50-question mock tests with a 70% pass line, and every answer explained.";
 const description =
-  "Free practice for the NASM Certified Personal Trainer (NASM-CPT) exam: 200 original questions written to NASM's CPT7 exam blueprint, covering basic and applied sciences and nutrition, client relations and behavioral coaching, assessment, program design with the OPT model, exercise technique and training instruction, and professional responsibility. Four mock tests of 50 questions with a 70 percent pass line, and four training sets that hold each test's questions.";
+  "Free practice for the NASM Certified Personal Trainer (NASM-CPT) exam: 200 original questions written to NASM's CPT7 exam blueprint, covering basic and applied sciences and nutrition, client relations and behavioral coaching, assessment, program design with the OPT model, exercise technique and training instruction, and professional responsibility. Four mock tests of 50 questions with a 70 percent pass line, and five training sets by topic.";
 
 export const metadata: Metadata = {
   title,
@@ -57,7 +57,7 @@ const jsonLd = {
       featureList: [
         "200 NASM CPT practice questions",
         "4 mock tests of 50 questions with a 70% pass line",
-        "4 training sets, one per mock test",
+        "5 training sets by topic",
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
@@ -95,7 +95,7 @@ const jsonLd = {
           name: "How should I use these practice tests?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Work through the four training sets first. Each one holds exactly the 50 questions of one mock test, and missed questions come back until you master them. Then take the matching mock test to check what stuck. Aim for 40 or more out of 50 on every test before you book the real exam.",
+            text: "Work through the five training sets first. Each one covers one part of the blueprint, and together they hold every question on the four mock tests. Missed questions come back until you master them. Then take a mock test to check what stuck. Aim for 40 or more out of 50 on every test before you book the real exam.",
           },
         },
         {
@@ -157,9 +157,9 @@ export default function NasmCptLandingPage() {
               <Smartphone className="w-7 h-7 text-brand-dark" />
             </div>
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train Each Test&apos;s Questions</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train Topic by Topic</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four training sets, one per mock test, each mixing all six exam domains in blueprint proportion. Instant feedback, and questions you miss come back until you have mastered them.
+                Five training sets by topic, from Sciences &amp; Nutrition to Exercise Technique &amp; Instruction. Instant feedback, and questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>
@@ -290,7 +290,7 @@ export default function NasmCptLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">How should I use these practice tests?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              Work through the four training sets first. Each one holds exactly the 50 questions of one mock test, and missed questions come back until you master them. Then take the matching mock test to check what stuck. Aim for 40 or more out of 50 on every test before you book the real exam.
+              Work through the five training sets first. Each one covers one part of the blueprint, and together they hold every question on the four mock tests. Missed questions come back until you master them. Then take a mock test to check what stuck. Aim for 40 or more out of 50 on every test before you book the real exam.
             </p>
           </div>
           <div>

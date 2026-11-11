@@ -2,6 +2,7 @@ import { randomUUID } from "crypto";
 import { FieldPath } from "firebase-admin/firestore";
 import { getAdminDb } from "@/lib/firebase-admin";
 import { ALL_EXAMS, getExamByStateCode, getExamForTestId, type ExamConfig } from "@/lib/exams";
+import { BACK_TO_TOPIC_SETS } from "@/lib/testSetMigration";
 import { getInternalUids } from "@/lib/server/internalUsers";
 import type { LayoutAgg, LayoutGroup, LayoutUsagePayload } from "@/lib/layoutUsage";
 
@@ -18,7 +19,10 @@ const FOLLOW_DAYS = 7;
 const DAY = 86_400_000;
 const BEFORE_START = Date.parse("2026-10-08T00:00:00Z");
 
-const groupOf = (e: ExamConfig): LayoutGroup => (e.trainingSets.some((s) => s.test != null) ? "interleaved" : "setsFirst");
+// The interleaved exams went back to topic sets in Nov 2026 (so every set has a
+// topic name); they stay in their group here so the Oct 22 comparison holds.
+const groupOf = (e: ExamConfig): LayoutGroup =>
+  e.trainingSets.some((s) => s.test != null) || BACK_TO_TOPIC_SETS.includes(e.id) ? "interleaved" : "setsFirst";
 const familyOf = (e: ExamConfig) => e.variantOf ?? e.id;
 
 // Longest prefix first so "CDLE-" never lands in "CDL-".

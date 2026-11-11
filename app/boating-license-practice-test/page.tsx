@@ -57,7 +57,7 @@ const jsonLd = {
       featureList: [
         "200 boating practice questions",
         "4 practice tests weighted like the state exams",
-        "4 training sets, one per practice test",
+        "5 training sets by topic",
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
@@ -158,7 +158,7 @@ export default function BoatingLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train, Then Test</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four training sets, one per practice test: each holds exactly the 50 questions of its test. Master Set 1, then take Test 1, and so on. Questions you miss come back until you have mastered them.
+                Five training sets, one per topic area, from Boat Basics to Emergencies. Master a topic, then take a test. Questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>
@@ -255,7 +255,7 @@ export default function BoatingLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Drill your weak topic</h3>
               <p>
-                Tigertest tracks your accuracy by topic. Most state exams require 80 percent, so drill the questions you missed, retrain that test&apos;s set and retake until you clear 90 percent with room to spare.
+                Tigertest tracks your accuracy by topic. Most state exams require 80 percent, so drill the questions you missed, retrain your weakest topic and retake until you clear 90 percent with room to spare.
               </p>
             </div>
           </div>

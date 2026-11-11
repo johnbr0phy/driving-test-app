@@ -83,7 +83,7 @@ const jsonLd = {
         "200 Care Certificate practice questions",
         "All 16 standards, including the 2025 learning disability and autism standard",
         "4 practice tests of 50 questions",
-        "4 training sets, one per practice test",
+        "4 training sets by topic",
         "Instant feedback with explanations",
       ],
       publisher: { "@id": `${siteUrl}/#organization` },
@@ -152,7 +152,7 @@ export default function CareCertificateLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train, Then Test</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four training sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1, and so on. Each set covers all 16 standards. Questions you miss come back until you have mastered them, so short sessions between shifts add up.
+                Four training sets, one per topic area, from Your Role, Duty of Care &amp; Equality to Safeguarding, Safety &amp; Infection Control. Each set covers all 16 standards. Questions you miss come back until you have mastered them, so short sessions between shifts add up.
               </p>
             </div>
           </div>

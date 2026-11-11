@@ -99,7 +99,7 @@ export const JAMBMATH: ExamV2Config = {
     heroSubs: [
       "Drill each part of the syllabus, then sit a full practice test.",
       "Master each drill first.",
-      "Halfway there. Try Practice Test 1.",
+      "Take Practice Test 1 to see your score.",
       "Hit your goal on both practice tests.",
       "Goal hit. You are ready for UTME Mathematics.",
     ],

@@ -101,7 +101,7 @@ export const PSAT: ExamV2Config = {
     heroSubs: [
       "Learn the basics, then drill each skill.",
       "Master each drill first.",
-      "Halfway there. Keep drilling.",
+      "Keep going, one drill at a time.",
       "Hit your goal on the full test.",
       "Goal hit. You're ready for the PSAT.",
     ],

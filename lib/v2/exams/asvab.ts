@@ -76,7 +76,7 @@ export const ASVAB: ExamV2Config = {
     heroSubs: [
       "Learn the basics, then drill each subtest.",
       "Master each drill first.",
-      "Halfway there. Try the full test.",
+      "Take the full test to see your score.",
       "Hit your AFQT goal on the full test.",
       "Goal hit. Talk to a recruiter.",
     ],

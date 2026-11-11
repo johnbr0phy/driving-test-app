@@ -100,7 +100,7 @@ export const ELEVENPLUS: ExamV2Config = {
     heroSubs: [
       "Start with a lesson, then a drill.",
       "One drill at a time. Keep going!",
-      "Halfway there. Try a practice test.",
+      "Take a practice test to see your score.",
       "Nearly there. Hit your goal on a full test.",
       "Goal hit. You're ready for the 11+!",
     ],

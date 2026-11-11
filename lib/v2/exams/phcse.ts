@@ -84,7 +84,7 @@ export const PHCSE: ExamV2Config = {
     heroSubs: [
       "Drill each part, then take a full mock exam.",
       "Master each drill first.",
-      "Halfway there. Try the practice test for your level.",
+      "Take the practice test for your level to see your score.",
       "Hit 80% on both practice tests.",
       "Goal hit. You are ready for the Civil Service Exam.",
     ],

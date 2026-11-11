@@ -76,7 +76,7 @@ export const APLUS: ExamV2Config = {
     heroSubs: [
       "Drill both cores, then take the full test.",
       "Master each drill first.",
-      "Halfway there. Try the full test.",
+      "Take the full test to see your score.",
       "Hit your goal on both cores.",
       "Goal hit. Book your A+ exams.",
     ],

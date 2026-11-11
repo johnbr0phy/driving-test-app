@@ -30,10 +30,10 @@ const anonKey = (code: string) => `tigertest-quiz-anon-${code}`;
 
 function heroSub(done: number, total: number): string {
   const frac = total > 0 ? done / total : 0;
-  if (done === 0) return "Start with step 1. Misses come back until you get them right.";
+  if (done === 0) return "Start with step 1. Questions you miss come back until you get them right.";
   if (frac >= 1) return "Every step done. You know this quiz.";
   if (frac < 0.4) return "Good start. Keep working down the list.";
-  if (frac < 0.7) return "Halfway there. Keep it going.";
+  if (frac < 0.7) return "Keep going. You are getting there.";
   return "Nearly there. Pass the practice test to finish.";
 }
 

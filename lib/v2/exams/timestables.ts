@@ -79,7 +79,7 @@ export const TIMESTABLES: ExamV2Config = {
     heroSubs: [
       "Start with the 2s, 5s and 10s.",
       "One table at a time. You're doing great!",
-      "Halfway there. Try a check!",
+      "Keep going. Try a check!",
       "Nearly there. Keep practising the checks.",
       "Times tables superstar!",
     ],

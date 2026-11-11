@@ -84,7 +84,7 @@ export const UPSCSE: ExamV2Config = {
     heroSubs: [
       "Drill each subject, then sit a full GS paper.",
       "Master each drill first.",
-      "Halfway there. Try Practice Test 1.",
+      "Take Practice Test 1 to see your score.",
       "Hit your goal on both practice tests.",
       "Goal hit. You are ready for GS Paper I.",
     ],

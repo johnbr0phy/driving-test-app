@@ -108,7 +108,7 @@ export const FSMATHS: ExamV2Config = {
     heroSubs: [
       "Start with a short lesson, then drill each topic.",
       "Master each drill first.",
-      "Halfway there. Try a practice paper.",
+      "Take a practice paper to see your score.",
       "Hit your goal on a full paper.",
       "Goal hit. You're ready to book your exam.",
     ],

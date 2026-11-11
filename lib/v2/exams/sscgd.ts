@@ -81,7 +81,7 @@ export const SSCGD: ExamV2Config = {
     heroSubs: [
       "Drill each topic, then take a full mock test.",
       "Master each drill first.",
-      "Halfway there. Try Mock Test 1.",
+      "Take Mock Test 1 to see your score.",
       "Hit your goal on both mock tests.",
       "Goal hit. You are ready for the CBE.",
     ],

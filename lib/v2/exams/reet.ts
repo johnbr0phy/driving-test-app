@@ -129,7 +129,7 @@ export const REET: ExamV2Config = {
     heroSubs: [
       "Drill each section, then take a full mock.",
       "Master each drill first.",
-      "Halfway there. Try Practice Test 1.",
+      "Take Practice Test 1 to see your score.",
       "Hit your goal on both practice tests.",
       "Goal hit. You are ready for REET Level 1.",
     ],

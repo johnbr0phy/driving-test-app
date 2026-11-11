@@ -85,7 +85,7 @@ export const JNVST: ExamV2Config = {
     heroSubs: [
       "Drill each part, then take a full JNVST.",
       "Master each drill first.",
-      "Halfway there. Try Practice Test 1.",
+      "Take Practice Test 1 to see your score.",
       "Hit your goal on both practice tests.",
       "Goal hit. You are ready for the JNVST.",
     ],

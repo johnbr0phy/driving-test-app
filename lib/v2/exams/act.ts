@@ -121,7 +121,7 @@ export const ACT: ExamV2Config = {
     heroSubs: [
       "Learn the basics, then drill each skill.",
       "Master each drill first.",
-      "Halfway there. Try the full test.",
+      "Take the full test to see your score.",
       "Hit your composite goal on a full test.",
       "Goal hit. Go register for the ACT.",
     ],

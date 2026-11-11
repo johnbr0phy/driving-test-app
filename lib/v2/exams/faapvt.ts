@@ -76,7 +76,7 @@ export const FAAPVT: ExamV2Config = {
     heroSubs: [
       "Drill each knowledge area, then take a full test.",
       "Master each drill first.",
-      "Halfway there. Try Practice Test 1.",
+      "Take Practice Test 1 to see your score.",
       "Hit your goal on both practice tests.",
       "Goal hit. Get your endorsement and book the test.",
     ],

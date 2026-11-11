@@ -114,7 +114,7 @@ export const PRAXIS: ExamV2Config = {
     heroSubs: [
       "Learn the basics, then drill each skill.",
       "Master each drill first.",
-      "Halfway there. Try Practice Test 1.",
+      "Take Practice Test 1 to see your score.",
       "Hit your goal on both practice tests.",
       "Goal hit. Go book your Praxis Core.",
     ],

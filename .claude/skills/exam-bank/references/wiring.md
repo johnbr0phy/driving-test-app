@@ -32,6 +32,12 @@ shared one (and check the other exams) or add a field to `ExamConfig`. The share
   categories, size = sum of pools, weightLabel "N% of the tests"), `categoryLabels`, and `copy`
   (guestPrompt, trainingHeading, trainingSub, testsHeading, five heroSubs, sourceLine,
   analyticsKey = id).
+  The five heroSubs are the line under the dashboard hero title, by progress: 0 nothing done, 1 under
+  40%, 2 from 40 to 70%, 3 from 70% up, 4 all done. Write them for someone who has never seen the
+  outline: name only what is on the dashboard (line 0: "Four training sets, four practice tests. Start
+  with Training Set 1."), never count topics the dashboard does not show, say "has the most questions"
+  not "weighs most", and never say "halfway" in line 2 (the title above already says it). Copy lines
+  1 to 3 from a recent exam with the same layout.
 - Append `<id>` to the `EXAMS` array before `htl`.
 
 ## 2. Bank module `lib/banks/<id>.ts`

@@ -115,7 +115,7 @@ export const KS2: ExamV2Config = {
     heroSubs: [
       "Start with a short lesson, then a drill.",
       "One drill at a time. You're doing brilliantly!",
-      "Halfway there. Try a practice test.",
+      "Take a practice test to see your score.",
       "Nearly there. Keep practising.",
       "SATs ready. Well done!",
     ],

@@ -112,7 +112,7 @@ export const SEHP: ExamV2Config = {
     heroSubs: [
       "Öva varje delprov, gör sedan ett helt övningsprov.",
       "Bemästra delproven först.",
-      "Halvvägs. Gör övningsprov 1.",
+      "Gör övningsprov 1 och se ditt resultat.",
       "Nå ditt mål på båda övningsproven.",
       "Målet nått. Anmäl dig till högskoleprovet.",
     ],

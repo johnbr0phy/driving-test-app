@@ -803,7 +803,7 @@ const phleb: ExamConfig = {
     trainingSub: "Four sets following the NHA CPT test plan. Instant feedback, and missed questions come back until you master them.",
     testsHeading: "Practice tests · 50 questions weighted like the real exam",
     heroSubs: [
-      "Five domains, four tests. Collections weigh most.",
+      "Four training sets, four practice tests. Start with Training Set 1.",
       "Master each set, then test.",
       "Halfway there. Try a practice test.",
       "Fix the misses, then retake.",

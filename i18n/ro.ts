@@ -286,6 +286,7 @@ export const ro: TranslationKeys = {
     baselineSubTraining: "Aceasta este linia ta de start, nu nota ta. Încă nu ai exersat cea mai mare parte, iar fiecare întrebare greșită este explicată în seturile de antrenament care urmează.",
     debriefLowCoach: "Bun efort. Ești abia la începutul materiei.",
     debriefFailSubTraining: "Fiecare întrebare greșită este explicată în seturile de antrenament care urmează. Exersează o temă, apoi revino și vezi cum crește scorul.",
+    trainCta: "Începe antrenamentul",
     baselineCta: "Depășește-ți {{pct}}%",
     baselineGhost: "Vezi ce să corectezi mai întâi",
     drillCta: "Exersează cele {{n}} greșeli",

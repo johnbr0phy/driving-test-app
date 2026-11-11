@@ -2527,6 +2527,7 @@ export const ko: TranslationKeys = {
     baselineSubTraining: "이건 출발선이지 성적이 아니에요. 아직 대부분을 연습하지 않았고, 틀린 문제는 모두 앞으로 나올 연습 세트에서 설명해 드려요.",
     debriefLowCoach: "잘했어요. 아직 학습 초반이에요.",
     debriefFailSubTraining: "틀린 문제는 모두 앞으로 나올 연습 세트에서 설명해 드려요. 주제 하나를 연습한 뒤 다시 와서 점수가 오르는 걸 확인하세요.",
+    trainCta: "연습 시작하기",
     baselineCta: "{{pct}}% 넘어서기",
     baselineGhost: "먼저 고칠 것 확인하기",
     drillCta: "틀린 {{n}}문제 집중 연습",

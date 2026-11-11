@@ -2525,6 +2525,7 @@ export const vi: TranslationKeys = {
     baselineSubTraining: "Đây là vạch xuất phát, không phải điểm số của bạn. Bạn chưa luyện phần lớn nội dung này, và mọi câu bạn trả lời sai đều được giải thích trong các bộ luyện tập sắp tới.",
     debriefLowCoach: "Cố gắng tốt lắm. Bạn mới chỉ bắt đầu với phần kiến thức này.",
     debriefFailSubTraining: "Mọi câu bạn trả lời sai đều được giải thích trong các bộ luyện tập sắp tới. Hãy luyện một chủ đề rồi quay lại để thấy điểm tăng lên.",
+    trainCta: "Bắt đầu luyện tập",
     baselineCta: "Vượt qua {{pct}}%",
     baselineGhost: "Xem nên sửa gì trước",
     drillCta: "Ôn lại {{n}} câu bạn làm sai",

@@ -2527,6 +2527,7 @@ export const zh: TranslationKeys = {
     baselineSubTraining: "这是你的起点，不是你的成绩。大部分内容你还没练过，你答错的每一道题，后面的练习组都会讲解。",
     debriefLowCoach: "做得不错。你才刚开始学习这些内容。",
     debriefFailSubTraining: "你答错的每一道题，后面的练习组都会讲解。先练一个主题，再回来看分数上涨。",
+    trainCta: "开始练习",
     baselineCta: "超过 {{pct}}%",
     baselineGhost: "看看先改什么",
     drillCta: "专练你的 {{n}} 道错题",

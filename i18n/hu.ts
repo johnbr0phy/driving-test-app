@@ -286,6 +286,7 @@ export const hu: TranslationKeys = {
     baselineSubTraining: "Ez a rajtvonalad, nem az osztályzatod. Az anyag nagy részét még nem gyakoroltad, és minden elrontott kérdést elmagyaráznak a következő gyakorlósorozatok.",
     debriefLowCoach: "Szép munka. Még az anyag elején jársz.",
     debriefFailSubTraining: "Minden elrontott kérdést elmagyaráznak a következő gyakorlósorozatok. Gyakorolj be egy témát, aztán gyere vissza, és nézd, ahogy nő az eredményed.",
+    trainCta: "Gyakorlás indítása",
     baselineCta: "Szárnyald túl a(z) {{pct}}%-ot",
     baselineGhost: "Nézd meg, mit javíts először",
     drillCta: "A(z) {{n}} hibád gyakorlása",

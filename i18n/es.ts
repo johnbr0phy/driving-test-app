@@ -2525,6 +2525,7 @@ export const es: TranslationKeys = {
     baselineSubTraining: "Es tu línea de salida, no tu calificación. Aún no has entrenado la mayor parte de esto, y cada pregunta que fallaste se explica en los entrenamientos que vienen.",
     debriefLowCoach: "Buen esfuerzo. Todavía estás empezando con el material.",
     debriefFailSubTraining: "Cada pregunta que fallaste se explica en los entrenamientos que vienen. Entrena un tema y vuelve para ver cómo sube tu puntaje.",
+    trainCta: "Empezar a entrenar",
     baselineCta: "Supera tu {{pct}}%",
     baselineGhost: "Ver qué corregir primero",
     drillCta: "Corrige tus {{n}} fallos",

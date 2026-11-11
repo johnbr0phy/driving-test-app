@@ -286,6 +286,7 @@ export const fi: TranslationKeys = {
     baselineSubTraining: "Tämä on lähtöviivasi, ei arvosanasi. Et ole vielä harjoitellut suurinta osaa tästä, ja jokainen väärin mennyt kysymys selitetään tulevissa harjoitussarjoissa.",
     debriefLowCoach: "Hyvä yritys. Olet vasta alussa.",
     debriefFailSubTraining: "Jokainen väärin mennyt kysymys selitetään tulevissa harjoitussarjoissa. Harjoittele yksi aihe ja palaa sitten katsomaan, miten tulos nousee.",
+    trainCta: "Aloita harjoittelu",
     baselineCta: "Päihitä {{pct}} %",
     baselineGhost: "Katso, mitä kannattaa korjata ensin",
     drillCta: "Harjoittele {{n}} virhettäsi",

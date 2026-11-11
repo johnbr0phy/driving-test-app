@@ -285,6 +285,7 @@ export const nl: TranslationKeys = {
     baselineSubTraining: "Dit is je startlijn, niet je cijfer. Het meeste heb je nog niet geoefend, en elke vraag die je fout had, wordt uitgelegd in de oefensets die nog komen.",
     debriefLowCoach: "Goed gedaan. Je staat nog aan het begin van de stof.",
     debriefFailSubTraining: "Elke vraag die je fout had, wordt uitgelegd in de oefensets die nog komen. Oefen een onderwerp en kom dan terug: je score gaat omhoog.",
+    trainCta: "Begin met oefenen",
     baselineCta: "Verbeter je {{pct}}%",
     baselineGhost: "Zie wat je eerst moet verbeteren",
     drillCta: "Oefen je {{n}} fouten",

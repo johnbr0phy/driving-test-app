@@ -83,12 +83,17 @@ export function ResultsHeroDebrief({
   // True while any training set of this test is unfinished. Every test
   // question lives in a training set, so the misses get explained there.
   const trainingSets = useStore((s) => s.trainingSets);
-  const trainingAhead = useMemo(() => {
+  // The first unfinished set in dashboard order is where "Start training"
+  // goes: for someone new that is a free set, never the Premium last one.
+  const nextTrainingSet = useMemo(() => {
     const exam = routes.id === "dmv" ? undefined : getExamById(routes.id);
-    if (routes.id !== "dmv" && !exam) return false;
-    const sets = exam ? exam.trainingSets.map((s) => ({ id: s.id, size: s.size })) : [1, 2, 3, 4].map((id) => ({ id, size: 50 }));
-    return sets.some((s) => (trainingSets[s.id]?.masteredIds.length ?? 0) < s.size);
+    if (routes.id !== "dmv" && !exam) return null;
+    const sets = exam
+      ? exam.trainingSets.map((s) => ({ id: s.id, setNumber: s.setNumber, size: s.size }))
+      : [1, 2, 3, 4].map((id) => ({ id, setNumber: id, size: 50 }));
+    return sets.find((s) => (trainingSets[s.id]?.masteredIds.length ?? 0) < s.size)?.setNumber ?? null;
   }, [routes.id, trainingSets]);
+  const trainingAhead = nextTrainingSet !== null;
 
   // Coach line + supporting sentence, picked from what the data supports.
   const byWrong = [...weakCategories].sort((a, b) => b.wrong - a.wrong);
@@ -258,7 +263,24 @@ export function ResultsHeroDebrief({
           )}
         </div>
 
-        {passed ? null : isBaseline ? (
+        {passed ? null : isLow && nextTrainingSet !== null ? (
+          // Well short of the pass line with training left: lead with training.
+          <div className="flex flex-col sm:flex-row gap-2">
+            <Button
+              onClick={() => router.push(routes.training(nextTrainingSet))}
+              className="w-full sm:flex-1 h-12 bg-brand text-white hover:bg-brand-hover font-bold text-base"
+            >
+              {t("results.trainCta")}
+            </Button>
+            <Button
+              variant="outline"
+              onClick={onDrill}
+              className="w-full sm:flex-1 h-12 bg-white dark:bg-gray-900 font-semibold text-gray-700 dark:text-gray-200"
+            >
+              {isBaseline ? t("results.baselineGhost") : drillLabel}
+            </Button>
+          </div>
+        ) : isBaseline ? (
           <div className="flex flex-col sm:flex-row gap-2">
             <Button
               onClick={() => router.push(routes.test(testId))}

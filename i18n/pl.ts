@@ -285,6 +285,7 @@ export const pl: TranslationKeys = {
     baselineSubTraining: "To twoja linia startu, a nie ocena. Większości materiału jeszcze nie ćwiczyłeś, a każde błędne pytanie jest wyjaśnione w kolejnych zestawach treningowych.",
     debriefLowCoach: "Dobra robota. To dopiero początek materiału.",
     debriefFailSubTraining: "Każde pytanie, na które odpowiedziałeś błędnie, jest wyjaśnione w kolejnych zestawach treningowych. Przećwicz jeden temat, a potem wróć i zobacz, jak rośnie wynik.",
+    trainCta: "Zacznij trening",
     baselineCta: "Pobij {{pct}}%",
     baselineGhost: "Zobacz, co poprawić najpierw",
     drillCta: "Przećwicz swoje błędy ({{n}})",

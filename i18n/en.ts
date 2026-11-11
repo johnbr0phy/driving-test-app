@@ -2627,6 +2627,7 @@ export const en = {
     baselineSubTraining: "That's your starting line, not your grade. You haven't trained most of this yet, and every question you missed is explained in the training sets ahead.",
     debriefLowCoach: "Good effort. You're still early in the material.",
     debriefFailSubTraining: "Every question you missed is explained in the training sets ahead. Train a topic, then come back and watch this score climb.",
+    trainCta: "Start training",
     baselineCta: "Beat {{pct}}%",
     baselineGhost: "See what to fix first",
     drillCta: "Drill your {{n}} misses",

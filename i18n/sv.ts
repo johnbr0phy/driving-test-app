@@ -286,6 +286,7 @@ export const sv: TranslationKeys = {
     baselineSubTraining: "Det här är din startlinje, inte ditt betyg. Du har inte övat på det mesta än, och varje fråga du missade förklaras i övningsseten som kommer.",
     debriefLowCoach: "Bra jobbat. Du är fortfarande i början av materialet.",
     debriefFailSubTraining: "Varje fråga du missade förklaras i övningsseten som kommer. Öva på ett ämne och kom sedan tillbaka och se resultatet stiga.",
+    trainCta: "Börja öva",
     baselineCta: "Slå dina {{pct}} %",
     baselineGhost: "Se vad du ska rätta först",
     drillCta: "Öva på dina {{n}} fel",

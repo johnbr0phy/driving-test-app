@@ -286,6 +286,7 @@ export const da: TranslationKeys = {
     baselineSubTraining: "Det er din startlinje, ikke din karakter. Du har ikke trænet det meste endnu, og hvert spørgsmål, du svarede forkert på, bliver forklaret i de kommende træningssæt.",
     debriefLowCoach: "Godt arbejde. Du er stadig tidligt i stoffet.",
     debriefFailSubTraining: "Hvert spørgsmål, du svarede forkert på, bliver forklaret i de kommende træningssæt. Træn et emne, og kom så tilbage og se resultatet stige.",
+    trainCta: "Start træningen",
     baselineCta: "Slå dine {{pct}} %",
     baselineGhost: "Se, hvad du skal rette først",
     drillCta: "Øv dine {{n}} fejl",

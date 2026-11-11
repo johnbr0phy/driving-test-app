@@ -1153,7 +1153,7 @@
     "difficulty": 2,
     "format": "single",
     "stem": "R1 has Gi0/0 172.16.20.1/26 and Gi0/1 172.16.20.65/26. Which command enables OSPF area 0 on Gi0/0 only?",
-    "explanation": "A 0.0.0.0 wildcard matches exactly one interface address. The 0.0.0.255 and 0.0.0.127 wildcards both cover 172.16.20.65 as well, and the last option uses area 1.",
+    "explanation": "A 0.0.0.0 wildcard matches exactly one interface address. The 0.0.0.255 and 0.0.0.127 wildcards both cover 172.16.20.65 as well, and the 0.0.0.63 command uses area 1.",
     "options": [
       "$\\texttt{network 172.16.20.0 0.0.0.63 area 1}$",
       "$\\texttt{network 172.16.20.1 0.0.0.0 area 0}$",

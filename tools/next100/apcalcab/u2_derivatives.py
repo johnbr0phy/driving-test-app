@@ -21,7 +21,7 @@ ITEMS = [
     Q(1, 2, "Connecting differentiability and continuity",
       r"Let $f(x) = x^2 + 1$ for $x \leq 2$ and $f(x) = 3x - 1$ for $x > 2$. Which statement is true about $f$ at $x = 2$?",
       [r"$f$ is continuous but not differentiable", r"$f$ is differentiable but not continuous", r"$f$ is both continuous and differentiable", r"$f$ is neither continuous nor differentiable"],
-      r"Both pieces give 5 at $x = 2$, so $f$ is continuous there. The slopes differ: $2x = 4$ on the left and 3 on the right, so the graph has a corner and $f'(2)$ does not exist. A function that is differentiable is always continuous, so the second choice is impossible."),
+      r"Both pieces give 5 at $x = 2$, so $f$ is continuous there. The slopes differ: $2x = 4$ on the left and 3 on the right, so the graph has a corner and $f'(2)$ does not exist. A function that is differentiable is always continuous, so differentiable but not continuous is impossible."),
 
     # ---------------- Practice Test 1, Part B (calculator) ----------------
     Q(1, 3, "The quotient rule",

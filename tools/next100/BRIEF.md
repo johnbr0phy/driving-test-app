@@ -79,6 +79,11 @@ the integrator should check (a hue clash, a fact you could not confirm, a region
 short.
 
 ## Lessons from batch 1 (apply them)
+- Never point at an option by position in an explanation or stem ("the second choice", "the last
+  option", "the last two"): build.py moves the key and the app shuffles the rest, so the ordinal
+  lands on a different option, sometimes the key. Name what the option says. "Choice B" is only
+  safe in a v2 explanation (the app rewrites the letter) or on a `lockedOrder` item.
+  `python3 -I tools/check_option_refs.py --list` must print 0; CI blocks on it.
 - Positional options must not shuffle: the app shuffles v2 options unless `lockedOrder: true`.
   Error spotting (parts in sentence order, then "No error"), sentence improvement ("No improvement"
   last), Only I / Only II / Both / Neither / Either, inequality and syllogism conclusion sets, and

@@ -937,7 +937,7 @@
     "correct": [
       1
     ],
-    "explanation": "Apples cost more than pears and pears cost more than oranges, so apples cost more than oranges. The last option can never be true, and the prices and popularity are not given.",
+    "explanation": "Apples cost more than pears and pears cost more than oranges, so apples cost more than oranges. Some bags of oranges costing more than some bags of apples can never be true, and the prices and popularity are not given.",
     "basics": "inference"
   },
   {

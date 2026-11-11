@@ -773,7 +773,7 @@
       "correct": [
         1
       ],
-      "explanation": "Turning sentence 9 into the adverb \"reasonably\" keeps both ideas in one clear sentence. The second choice is a comma splice, \"which\" in the third has no clear antecedent, and the fourth is awkwardly inverted."
+      "explanation": "Turning sentence 9 into the adverb \"reasonably\" keeps both ideas in one clear sentence. Tacking on \"it is reasonable\" after a comma makes a comma splice, \"which is reasonable\" has no clear antecedent, and \"Reasonable is the worry\" is awkwardly inverted."
     },
     {
       "id": "APLANG-T1-031",
@@ -818,7 +818,7 @@
       "correct": [
         0
       ],
-      "explanation": "Only the first choice addresses the council and asks for a specific action. The others state background facts or raise a doubt, which weakens the ending."
+      "explanation": "Only \"The council should fund the program\" addresses the council and asks for a specific action. The others state background facts or raise a doubt, which weakens the ending."
     },
     {
       "id": "APLANG-T1-033",
@@ -840,7 +840,7 @@
       "correct": [
         2
       ],
-      "explanation": "The essay's problem is that most of the collection cannot be seen. The first choice states that problem and its cost to the town; the others add details that do not matter to the argument."
+      "explanation": "The essay's problem is that most of the collection cannot be seen. \"Most of the town's history is hidden from the town\" states that problem and its cost; the others add details that do not matter to the argument."
     },
     {
       "id": "APLANG-T1-034",
@@ -885,7 +885,7 @@
       "correct": [
         2
       ],
-      "explanation": "Sentence 7 claims that online images could let researchers make discoveries. The diary example shows exactly that happening. The third choice works against the claim, and the others are beside the point."
+      "explanation": "Sentence 7 claims that online images could let researchers make discoveries. The diary example shows exactly that happening. The sentence about researchers preferring the original objects works against the claim, and the others are beside the point."
     },
     {
       "id": "APLANG-T1-036",
@@ -997,7 +997,7 @@
       "correct": [
         2
       ],
-      "explanation": "A board will worry first about cost, and sentence 10 has just named grants and volunteers. The first choice draws the conclusion the board needs. The others do not speak to its concern."
+      "explanation": "A board will worry first about cost, and sentence 10 has just named grants and volunteers. \"The project need not strain the museum's budget\" draws the conclusion the board needs. The others do not speak to its concern."
     },
     {
       "id": "APLANG-T1-041",
@@ -1263,7 +1263,7 @@
       "correct": [
         2
       ],
-      "explanation": "\"Ignorance can be cured with study,\" while certainty \"closes the eyes.\" The speaker calls certainty the greater danger, the reverse of the third choice."
+      "explanation": "\"Ignorance can be cured with study,\" while certainty \"closes the eyes.\" The speaker calls certainty, not ignorance, the greater danger."
     },
     {
       "id": "APLANG-T2-008",
@@ -2019,7 +2019,7 @@
       "correct": [
         3
       ],
-      "explanation": "\"Until\" shows that the creek ran in the open up to the time it was buried. The second choice is a comma splice, \"and so\" invents a cause, and the last makes the parking lot the thing that was sealed in a pipe."
+      "explanation": "\"Until\" shows that the creek ran in the open up to the time it was buried. Joining the sentences with only a comma is a comma splice, \"and so\" invents a cause, and the version that opens \"Sealed inside a concrete pipe\" makes the parking lot the thing that was sealed in a pipe."
     },
     {
       "id": "APLANG-T2-042",
@@ -2504,7 +2504,7 @@
       "correct": [
         3
       ],
-      "explanation": "\"I will not pretend the practice is without danger ... a disease may kill\" admits the risk. The writer says smallpox reaches \"nearly every family,\" the opposite of the second choice."
+      "explanation": "\"I will not pretend the practice is without danger ... a disease may kill\" admits the risk. The writer says smallpox reaches \"nearly every family,\" the opposite of \"only a few families.\""
     },
     {
       "id": "APLANG-D-019",
@@ -3298,7 +3298,7 @@
       "correct": [
         0
       ],
-      "explanation": "\"Because\" makes clear that the quick help led to survival. The second choice is a comma splice, \"but\" signals a false contrast, and the last says the man began the compressions."
+      "explanation": "\"Because\" makes clear that the quick help led to survival. Joining the sentences with only a comma is a comma splice, \"but\" signals a false contrast, and the version that opens \"Beginning compressions\" says the man began the compressions."
     },
     {
       "id": "APLANG-D-055",
@@ -3455,7 +3455,7 @@
       "correct": [
         2
       ],
-      "explanation": "\"Since\" shows that the salt damage and the need for specialists explain the cost. The second choice is a comma splice, and the last two are awkward and lose the logic."
+      "explanation": "\"Since\" shows that the salt damage and the need for specialists explain the cost. Stringing the clauses together with only commas is a comma splice, and the versions that begin \"Restoring a lighthouse, which\" and \"Not cheap is\" are awkward and lose the logic."
     },
     {
       "id": "APLANG-D-062",
@@ -3835,7 +3835,7 @@
       "correct": [
         0
       ],
-      "explanation": "\"While\" joins the two approaches as alternatives. The second choice is a comma splice, \"so\" invents a cause, and the last attaches the photographing to the wrong towns."
+      "explanation": "\"While\" joins the two approaches as alternatives. Joining the sentences with only a comma is a comma splice, \"so\" invents a cause, and the version that opens \"Photographing and recording\" attaches the photographing to the wrong towns."
     },
     {
       "id": "APLANG-D-079",
@@ -4061,7 +4061,7 @@
       "correct": [
         1
       ],
-      "explanation": "Returning to the mother's story reassures readers that the hard start ends. The second choice discourages them, and the others add no encouragement."
+      "explanation": "Returning to the mother's story reassures readers that the hard start ends. Saying that many people end up quitting discourages them, and the others add no encouragement."
     },
     {
       "id": "APLANG-D-089",
@@ -4577,7 +4577,7 @@
       "correct": [
         0
       ],
-      "explanation": "A semicolon joins the two related clauses and keeps the contrast clear. The second choice is a comma splice, the third changes the meaning, and the fourth is a fragment."
+      "explanation": "A semicolon joins the two related clauses and keeps the contrast clear. Joining the clauses with only a comma is a comma splice, setting off \"not only fewer cars\" with commas changes the meaning, and the version that begins \"But fewer cars, which\" is a fragment."
     },
     {
       "id": "APLANG-D-112",

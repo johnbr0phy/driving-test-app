@@ -167,7 +167,7 @@ ITEMS = [
     Q(0, 2, CER, QUAL,
       "In the third paragraph, the writer concedes that",
       ["inoculation itself can sometimes kill", "smallpox reaches only a few families", "Providence forbids every medical risk", "the critics in the coffee houses are right"],
-      "\"I will not pretend the practice is without danger ... a disease may kill\" admits the risk. The writer says smallpox reaches \"nearly every family,\" the opposite of the second choice.",
+      "\"I will not pretend the practice is without danger ... a disease may kill\" admits the risk. The writer says smallpox reaches \"nearly every family,\" the opposite of \"only a few families.\"",
       "APLANG-D-R2"),
     Q(0, 3, ROR, LINE,
       "The argument of the third paragraph turns on",

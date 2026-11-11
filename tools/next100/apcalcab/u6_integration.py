@@ -50,7 +50,7 @@ ITEMS = [
     Q(2, 1, "Finding antiderivatives and indefinite integrals: basic rules",
       r"What is $\int \left(6x^2 + \frac{4}{x}\right)dx$?",
       [r"$2x^3 + 4\ln|x| + C$", r"$12x - \frac{4}{x^2} + C$", r"$2x^3 - \frac{4}{x^2} + C$", r"$6x^3 + 4\ln|x| + C$"],
-      r"$\int 6x^2\,dx = 2x^3$ and $\int \frac{4}{x}\,dx = 4\ln|x|$. The second choice is the derivative, and the power rule does not apply to $x^{-1}$.",
+      r"$\int 6x^2\,dx = 2x^3$ and $\int \frac{4}{x}\,dx = 4\ln|x|$. $12x - \frac{4}{x^2} + C$ is the derivative, and the power rule does not apply to $x^{-1}$.",
       chk=lambda x: I(lambda u: 6 * u * u + 4 / u, 1, x)),
     Q(2, 2, "The Fundamental Theorem of Calculus and accumulation functions",
       r"What is $\frac{d}{dx}\int_1^{x^2} \ln t\,dt$ for $x > 0$?",

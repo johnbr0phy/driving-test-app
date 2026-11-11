@@ -30,7 +30,7 @@ ITEMS = [
     # ---------- Comprehension ----------
     S(0, 2, "Comprehension", "Which of the following is the most logical inference from the passage?",
       ["Discarded goods waste the energy and materials that made them", "Repair shops have disappeared because people no longer buy machines", "Glued parts make modern goods last longer than older ones", "Repair manuals are freely available for most goods today"],
-      "The passage says every discarded machine carries the energy and materials used to make it and much of it ends up as waste. It says parts are glued to discourage repair and manuals are kept from the public, so the last two options contradict it.",
+      "The passage says every discarded machine carries the energy and materials used to make it and much of it ends up as waste. It says parts are glued to discourage repair and manuals are kept from the public, so the options about freely available manuals and longer-lasting glued parts contradict it.",
       passage=P_REPAIR),
     S(0, 2, "Comprehension", "According to the passage, a right to repair would require manufacturers to:",
       ["Sell spare parts and share repair manuals for a set period", "Repair every faulty product free of charge", "Stop making fans, phones and mixers", "Buy back old machines from their owners"],

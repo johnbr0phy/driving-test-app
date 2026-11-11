@@ -19,7 +19,7 @@ Q = [
  "Twee verschillende reële oplossingen vragen een positieve discriminant: 36 − 4m > 0, dus m < 9. Bij m = 9 is er één dubbele oplossing."),
 ("Wat is de oplossingsverzameling van |2x − 3| < 5?",
  "−1 < x < 4", ["x < 4", "−4 < x < 1", "x < −1 of x > 4"],
- "|2x − 3| < 5 betekent −5 < 2x − 3 < 5, dus −2 < 2x < 8 en −1 < x < 4. De laatste optie is de oplossing van |2x − 3| > 5."),
+ "|2x − 3| < 5 betekent −5 < 2x − 3 < 5, dus −2 < 2x < 8 en −1 < x < 4. De verzameling x < −1 of x > 4 is de oplossing van |2x − 3| > 5."),
 ("Wat is de rest bij de deling van x³ − 2x² + 5 door x + 2?",
  "−11", ["−3", "5", "21"],
  "Volgens de reststelling is de rest f(−2) = −8 − 8 + 5 = −11. 5 is f(2), de rest bij deling door x − 2."),

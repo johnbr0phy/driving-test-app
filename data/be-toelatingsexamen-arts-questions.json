@@ -1761,7 +1761,7 @@
     "optionD": "x < −1 of x > 4",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "|2x − 3| < 5 betekent −5 < 2x − 3 < 5, dus −2 < 2x < 8 en −1 < x < 4. De laatste optie is de oplossing van |2x − 3| > 5."
+    "explanation": "|2x − 3| < 5 betekent −5 < 2x − 3 < 5, dus −2 < 2x < 8 en −1 < x < 4. De verzameling x < −1 of x > 4 is de oplossing van |2x − 3| > 5."
   },
   {
     "type": "BETOEL",

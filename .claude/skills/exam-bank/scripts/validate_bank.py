@@ -47,6 +47,10 @@ import statistics
 import sys
 from collections import Counter, defaultdict
 
+# Positional references to options ("the second option", "Choice B"): shared with CI.
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "..", "..", "tools"))
+import check_option_refs  # noqa: E402
+
 KEYS = ["type", "state", "questionId", "category", "question", "optionA", "optionB",
         "optionC", "optionD", "correctAnswer", "correctIndex", "explanation"]
 # Per language: "all/none of the above" phrases, the words that join two option
@@ -280,6 +284,13 @@ def main() -> int:
             errs.append(f"{qid}: duplicate options")
         if any(OPTION_REF.match(v.strip()) for v in opts.values()):
             errs.append(f"{qid}: option refers to other options")
+        # Options are shuffled on screen, so "the second option" or "Choice B" in the
+        # stem or explanation names a different option for every student.
+        if not any(check_option_refs.V1_KEEPS_ORDER.search(v) for v in opts.values()):
+            for field, text in (("stem", q), ("explanation", r["explanation"])):
+                for pattern in (check_option_refs.ORDINAL_RE, check_option_refs.LETTER_RE):
+                    for hit in check_option_refs._hits(text, pattern, qid):
+                        errs.append(f'{qid}: {field} points at an option by position ("{hit}"); name what the option says')
         stem_key = re.sub(r"\W+", " ", q.lower()).strip()
         if stem_key in seen_stems and qid not in with_sign:
             errs.append(f"{qid}: duplicate stem of {seen_stems[stem_key]}")

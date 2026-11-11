@@ -169,7 +169,7 @@
     "correct": [
       1
     ],
-    "explanation": "Both pieces give 5 at $x = 2$, so $f$ is continuous there. The slopes differ: $2x = 4$ on the left and 3 on the right, so the graph has a corner and $f'(2)$ does not exist. A function that is differentiable is always continuous, so the second choice is impossible."
+    "explanation": "Both pieces give 5 at $x = 2$, so $f$ is continuous there. The slopes differ: $2x = 4$ on the left and 3 on the right, so the graph has a corner and $f'(2)$ does not exist. A function that is differentiable is always continuous, so differentiable but not continuous is impossible."
   },
   {
     "id": "APCALCAB-T1-009",
@@ -1338,7 +1338,7 @@
     "correct": [
       0
     ],
-    "explanation": "$\\int 6x^2\\,dx = 2x^3$ and $\\int \\frac{4}{x}\\,dx = 4\\ln|x|$. The second choice is the derivative, and the power rule does not apply to $x^{-1}$."
+    "explanation": "$\\int 6x^2\\,dx = 2x^3$ and $\\int \\frac{4}{x}\\,dx = 4\\ln|x|$. $12x - \\frac{4}{x^2} + C$ is the derivative, and the power rule does not apply to $x^{-1}$."
   },
   {
     "id": "APCALCAB-T2-021",
@@ -2766,7 +2766,7 @@
     "correct": [
       1
     ],
-    "explanation": "$\\frac{1}{2}(1 + e^x)^{-1/2} \\cdot e^x = \\frac{e^x}{2\\sqrt{1 + e^x}}$. Leaving out the inner derivative $e^x$ gives the second choice."
+    "explanation": "$\\frac{1}{2}(1 + e^x)^{-1/2} \\cdot e^x = \\frac{e^x}{2\\sqrt{1 + e^x}}$. Leaving out the inner derivative $e^x$ gives $\\frac{1}{2\\sqrt{1 + e^x}}$."
   },
   {
     "id": "APCALCAB-D-045",

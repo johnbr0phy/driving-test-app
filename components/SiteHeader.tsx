@@ -10,7 +10,7 @@ import { AdminLink } from "@/components/AdminLink";
 import { BrandLockup } from "@/components/BrandLockup";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { TestSearchSheet } from "@/components/TestSearchSheet";
-import { currentClassCode, rememberCurrentClass, useStudentClass, useTeacherClasses, useTeaches } from "@/components/TeachLink";
+import { currentClassCode, forgetCurrentClass, rememberCurrentClass, useStudentClass, useTeacherClasses, useTeaches } from "@/components/TeachLink";
 import { useAuth } from "@/contexts/AuthContext";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { TestThemeProvider, themes } from "@/contexts/TestThemeContext";
@@ -98,10 +98,10 @@ function HeaderBar({ path, themePath, examId, v2Id }: { path: string; themePath:
   const studentClass = useStudentClass();
   const classCode = path.match(/^\/teach\/classes\/([^/]+)/)?.[1]?.toUpperCase();
   const [lastClass, setLastClass] = useState<string | null>(null);
+  // Read on every page change: ClassPill decides what is remembered.
   useEffect(() => {
-    if (classCode) rememberCurrentClass(classCode);
     setLastClass(currentClassCode());
-  }, [classCode]);
+  }, [path]);
 
   const exam = examId ? getExamByPath(themePath) : undefined;
   const examV2 = v2Id ? getExamV2ByPath(themePath) : undefined;
@@ -267,6 +267,13 @@ function ClassPill({ code }: { code: string }) {
   const [open, setOpen] = useState(false);
   const classes = useTeacherClasses(true);
   const name = classes?.find((c) => c.code === code)?.name ?? code;
+  // Only the teacher's own class becomes "the class I last opened". A site
+  // admin looking at someone else's class must not have CLASSES lead back to it.
+  useEffect(() => {
+    if (!classes) return;
+    if (classes.some((c) => c.code === code)) rememberCurrentClass(code);
+    else forgetCurrentClass(code);
+  }, [classes, code]);
   const item = "flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-left text-sm text-gray-800 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800";
 
   return (

@@ -9,6 +9,8 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { heroLine } from "@/lib/heroCopy";
+import { useHeroVariant } from "@/hooks/useHeroVariant";
 import Image from "next/image";
 import { BarChart3, Check, ChevronRight, Copy, Layers, Pencil, Share2, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -28,14 +30,14 @@ type Stamp = { label: string; color: "green" | "amber" | "red" };
 const card = "rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800";
 const anonKey = (code: string) => `tigertest-quiz-anon-${code}`;
 
-function heroSub(done: number, total: number): string {
-  const frac = total > 0 ? done / total : 0;
-  if (done === 0) return "Start with step 1. Questions you miss come back until you get them right.";
-  if (frac >= 1) return "Every step done. You know this quiz.";
-  if (frac < 0.4) return "Good start. Keep working down the list.";
-  if (frac < 0.7) return "Keep going. You are getting there.";
-  return "Nearly there. Pass the practice test to finish.";
-}
+/** The quiz's own hero lines by stage (lib/heroCopy.ts adds the shared ones). */
+const QUIZ_HERO_SUBS = [
+  "Start with step 1. Questions you miss come back until you get them right.",
+  "Good start. Keep working down the list.",
+  "Keep going. You are getting there.",
+  "Nearly there. Pass the practice test to finish.",
+  "Every step done. You know this quiz.",
+];
 
 function getTigerFace(complete: number, total: number): string {
   const pct = Math.round((complete / total) * 100);
@@ -47,6 +49,7 @@ function getTigerFace(complete: number, total: number): string {
 }
 
 export function QuizHome({ code, initial }: { code: string; initial: QuizPublic | null }) {
+  const heroVariant = useHeroVariant();
   const state = useQuiz(code, initial);
   const hydrated = useHydration();
   const quiz = state.quiz;
@@ -242,7 +245,7 @@ export function QuizHome({ code, initial }: { code: string; initial: QuizPublic 
             />
             <div className="flex-1 min-w-0">
               <h1 className="text-lg font-bold text-gray-900 dark:text-gray-50">{quiz.title}</h1>
-              <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">{heroSub(completedSteps, totalSteps)}</p>
+              <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">{heroLine(QUIZ_HERO_SUBS, completedSteps, totalSteps, heroVariant)}</p>
             </div>
             <div className="flex-shrink-0 text-right">
               <div className="text-2xl font-bold tabular-nums text-gray-900 dark:text-gray-50">{completedSteps}/{totalSteps}</div>

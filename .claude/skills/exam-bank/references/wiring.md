@@ -38,6 +38,9 @@ shared one (and check the other exams) or add a field to `ExamConfig`. The share
   with Training Set 1."), never count topics the dashboard does not show, say "has the most questions"
   not "weighs most", and never say "halfway" in line 2 (the title above already says it). Copy lines
   1 to 3 from a recent exam with the same layout.
+  Each visit shows either that line or one of four shared encouraging lines for the stage
+  (`lib/heroCopy.ts`, every interface language, picked by `hooks/useHeroVariant.ts`), so the exam's
+  own lines carry the facts (where to start, the pass mark, what to book) and need no cheerleading.
 - Append `<id>` to the `EXAMS` array before `htl`.
 
 ## 2. Bank module `lib/banks/<id>.ts`

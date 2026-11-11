@@ -68,7 +68,22 @@ From the final harness run (software WebGL, 390 x 844, device scale 1), 23 branc
 | fps, average across branches | 55 | target 60 |
 | fps, lowest one-second window | 32 | floor 30 |
 
-The fps numbers are a CPU rasteriser on a cloud machine, not a phone. Draw calls and triangles are exact and small enough that a mid-range phone GPU should hold 60, but that has not been measured. Bundle sizes are in the PR description.
+The fps numbers are a CPU rasteriser on a cloud machine, not a phone. Draw calls and triangles are exact and small enough that a mid-range phone GPU should hold 60, but that has not been measured. 
+
+Bundle, from a production compile (`next build`, gzip -9 of each chunk):
+
+| Chunk | Gzipped | Loaded |
+|---|---|---|
+| `/drive/[rule]` page (player, panel, rule list) | 5.1 KB | on the scene page |
+| Drive runtime (machine, world kit, stage, signs, audio) | 8.2 KB | lazily, on the scene page |
+| One builder | 3.1 to 3.5 KB | lazily, the scene being played |
+| **Drive code for one scene** | **about 17 KB** | budget 300 KB |
+| three.js | 170 KB | lazily, drive pages only |
+| `/drive` index page | 0.3 KB | |
+
+Existing question pages gain only the link component and its 17-entry map, under 1 KB.
+
+The production build compiled and type-checked. Its static page generation (2,525 pages for the whole site) was cut off at page 2,043 by this session's 10-minute command limit, not by an error, so `next start` was not exercised here; the Vercel preview build is the real check. Two hydration warnings appeared in the dev server during harness runs right after code edits and did not reproduce on six clean page loads.
 
 ## Tests and lint
 

@@ -376,7 +376,7 @@
     "format": "single",
     "skill": "2D arrays",
     "stem": "scores is a two-dimensional array accessed as scores[row][column], starting at 0. What is output?\n\n| Line | Code |\n|---|---|\n| 1 | scores ← [[4, 7, 2], [9, 1, 5]] |\n| 2 | OUTPUT scores[1][2] |",
-    "explanation": "Row 1 is the second row, [9, 1, 5], and column 2 is its third value, 5. 7 is scores[0][1], a mix-up of row and column.",
+    "explanation": "Row 1 is the second row, [9, 1, 5], and column 2 is its third value, 5. 7 is scores[0][1], which is what you get by counting rows and columns from 1 instead of 0.",
     "options": [
       "7",
       "5",
@@ -728,7 +728,7 @@
       "It uses wireless connections",
       "It joins more than 10 computers in one building",
       "It uses a switch",
-      "It covers a large area using others' links"
+      "It covers a wide area, often over leased links"
     ],
     "correct": [
       3
@@ -2231,7 +2231,7 @@
     "format": "single",
     "skill": "Network models",
     "stem": "Why would a school choose a client-server network rather than a peer-to-peer network?",
-    "explanation": "A server lets the network manager control user accounts, access rights and backups from one place. Its weakness is the reverse of the last option: if the server fails, clients lose access to its services.",
+    "explanation": "A server lets the network manager control user accounts, access rights and backups from one place. Its weakness is that if the server fails, clients lose access to its services, so it does not keep working normally.",
     "options": [
       "Security and backups are managed centrally",
       "It needs no server",
@@ -2786,7 +2786,7 @@
     "format": "single",
     "skill": "SQL",
     "stem": "Using the Pupils table (fields PupilID, Name, Form, Age), which query lists the names of all pupils aged 15 in alphabetical order?",
-    "explanation": "SELECT names the field, FROM names the table, WHERE filters the rows and ORDER BY ... ASC sorts A to Z. The second option swaps the field and table names.",
+    "explanation": "SELECT names the field, FROM names the table, WHERE filters the rows and ORDER BY ... ASC sorts A to Z. SELECT Pupils FROM Name swaps the field and table names.",
     "options": [
       "SELECT Pupils FROM Name WHERE Age = 15 ORDER BY Name ASC",
       "SELECT Name FROM Pupils WHERE Age = 15 ORDER BY Name ASC",

@@ -1,8 +1,9 @@
 "use client";
 
 // Shared dashboard for registry exams: the DMV dashboard's step list, driven
-// by an ExamConfig. Exams with DMV-style test sets alternate Set 1, Test 1,
-// Set 2, Test 2...; the rest list content-area sets, then practice tests.
+// by an ExamConfig. Every exam alternates training and tests (Set 1, Test 1,
+// Set 2, Test 2...), so people test themselves early; when the counts differ
+// the tests are spread evenly through the training and a test comes last.
 // Tests carry stamps and a per-test attempt drop-down with the score chart
 // and miss drill. The final training step and final test are Premium
 // (lib/examLocks.ts); everything before them is free.
@@ -20,7 +21,7 @@ import { useTranslation } from "@/contexts/LanguageContext";
 import { ProgressCard, Collapse } from "@/components/dashboard/ProgressCard";
 import { AttemptChart, sessionsToAttemptPoints } from "@/components/AttemptChart";
 import { computeMissSummary } from "@/lib/missedQuestions";
-import { ExamConfig, TrainingPart, examFamilyId, examLandingPath, getExamById, examTrainingParts, getExamVariant, hasTestSets, trainingPartName, trainingPartOf } from "@/lib/exams";
+import { ExamConfig, TrainingPart, examFamilyId, examLandingPath, getExamById, examTrainingParts, getExamVariant, trainingPartName, trainingPartOf } from "@/lib/exams";
 import { useTestSetMigration } from "@/hooks/useTestSetMigration";
 import { ExamStateLine, ExamStatePrompt } from "@/components/exam/ExamStatePicker";
 import { LanguageLabel, TestLanguageChoice, TestSettingsLine } from "@/components/TestLanguageChoice";
@@ -194,8 +195,27 @@ function ExamDashboardContent({ exam: source }: { exam: ExamConfig }) {
     completedSteps > 0 ||
     exam.trainingSets.some((s) => hydrated && getTrainingSetProgress(s.id).correct > 0);
 
-  // DMV-style exams alternate Set 1, Test 1, Set 2, Test 2...
-  const interleaved = hasTestSets(exam) && parts.length === routes.testIds.length;
+  // Train, test, train, test. Test i follows training step ceil((i+1)*P/T),
+  // so equal counts pair up one to one (the DMV layout), more training than
+  // tests puts a test after every few steps, and more tests than training
+  // puts several tests after each set. The last step is always a test. Only
+  // the order on screen changes: progress is stored by set and test ID.
+  const stepGroups: { parts: TrainingPart[]; testIds: number[] }[] = [];
+  if (parts.length === 0) {
+    stepGroups.push({ parts: [], testIds: [...routes.testIds] });
+  } else {
+    parts.forEach((p) => {
+      const last = stepGroups[stepGroups.length - 1];
+      if (last && last.testIds.length === 0) last.parts.push(p);
+      else stepGroups.push({ parts: [p], testIds: [] });
+      const after = stepGroups[stepGroups.length - 1];
+      const partsSoFar = stepGroups.reduce((n, g) => n + g.parts.length, 0);
+      routes.testIds.forEach((testId, i) => {
+        const slot = Math.ceil(((i + 1) * parts.length) / routes.testIds.length);
+        if (slot === partsSoFar) after.testIds.push(testId);
+      });
+    });
+  }
 
   // One card per training step and per practice test; the list below puts
   // them in order.
@@ -432,37 +452,17 @@ function ExamDashboardContent({ exam: source }: { exam: ExamConfig }) {
           <TeachNudge dashboardKey={exam.id} examId={exam.variantOf ?? exam.id} done={completedSteps} />
         </div>
 
-        {interleaved ? (
-          // DMV-style: each set holds its test's questions, so train, then test.
-          <div className="mb-6 space-y-2">
-            {routes.testIds.map((testId, i) => (
-              <div key={testId}>
-                {renderPart(parts[i], i * 2 + 1)}
-                <div className="mt-1.5">{renderTest(testId, i * 2 + 2)}</div>
+        <div className="mb-6 space-y-2">
+          {(() => {
+            let step = 0;
+            return stepGroups.map((g, gi) => (
+              <div key={gi} className="space-y-1.5">
+                {g.parts.map((p) => <div key={`${p.set.id}-${p.part}`}>{renderPart(p, ++step)}</div>)}
+                {g.testIds.map((testId) => <div key={testId}>{renderTest(testId, ++step)}</div>)}
               </div>
-            ))}
-          </div>
-        ) : (
-          <>
-            {/* Training sets, one per content area */}
-            <p className="text-[11px] font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400 mb-2">
-              {exam.copy.trainingHeading}
-            </p>
-            <div className="mb-6 space-y-1.5">
-              {parts.map((p, index) => <div key={`${p.set.id}-${p.part}`}>{renderPart(p, index + 1)}</div>)}
-            </div>
-
-            {/* Practice tests */}
-            <p className="text-[11px] font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400 mb-2">
-              {exam.copy.testsHeading}
-            </p>
-            <div className="mb-6 space-y-1.5">
-              {routes.testIds.map((testId, index) => (
-                <div key={testId}>{renderTest(testId, parts.length + index + 1)}</div>
-              ))}
-            </div>
-          </>
-        )}
+            ));
+          })()}
+        </div>
 
         {/* Stats entry */}
         {!isGuest && (

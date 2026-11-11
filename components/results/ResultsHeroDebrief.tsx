@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { AchievementCelebration } from "@/components/AchievementCelebration";
@@ -11,12 +11,17 @@ import { Fireworks } from "@/components/Fireworks";
 import { ShareButton } from "@/components/ShareButton";
 import { getTigerFace } from "@/lib/resultsCopy";
 import type { ReadyTestResults } from "@/hooks/useTestResults";
+import { useStore } from "@/store/useStore";
+import { getExamById } from "@/lib/exams";
 
 // Results hero — "The Debrief": no PASSED/FAILED stamp anywhere. The tiger
 // speaks as a coach, the score is a needle on a readiness meter (Building →
 // Close → Ready), and the fail headline is always distance-to-pass in
 // answers, not a percentage. A first attempt that doesn't pass gets the
 // "Baseline set" frame instead — a baseline can't be failed.
+// A score well short of the pass line (the red "Building" band) drops the
+// distance-to-pass headline, and while the person still has training left the
+// copy says where the missed questions get explained: the training sets.
 export function ResultsHeroDebrief({
   results,
   onDrill,
@@ -73,6 +78,17 @@ export function ResultsHeroDebrief({
   // The amber band: the last 15 points before the pass mark.
   const closeAt = Math.max(passPct - 15, 0);
   const isBaseline = !passed && attemptNumber === 1;
+  const isLow = !passed && percentage < closeAt;
+
+  // True while any training set of this test is unfinished. Every test
+  // question lives in a training set, so the misses get explained there.
+  const trainingSets = useStore((s) => s.trainingSets);
+  const trainingAhead = useMemo(() => {
+    const exam = routes.id === "dmv" ? undefined : getExamById(routes.id);
+    if (routes.id !== "dmv" && !exam) return false;
+    const sets = exam ? exam.trainingSets.map((s) => ({ id: s.id, size: s.size })) : [1, 2, 3, 4].map((id) => ({ id, size: 50 }));
+    return sets.some((s) => (trainingSets[s.id]?.masteredIds.length ?? 0) < s.size);
+  }, [routes.id, trainingSets]);
 
   // Coach line + supporting sentence, picked from what the data supports.
   const byWrong = [...weakCategories].sort((a, b) => b.wrong - a.wrong);
@@ -89,11 +105,15 @@ export function ResultsHeroDebrief({
         ? t("results.debriefPassSubWeak").replace("{{cat}}", categoryLabels?.[weakCategories[0].category] ?? t(`categories.${weakCategories[0].category}`))
         : t("results.debriefPassSubClean");
   } else {
-    coachLine =
-      answersFromPass === 1
+    coachLine = isLow
+      ? t("results.debriefLowCoach")
+      : answersFromPass === 1
         ? t("results.debriefFailCoachOne")
         : t("results.debriefFailCoach").replace("{{n}}", String(answersFromPass));
-    coachSub = concentrated
+    const improved = attemptNumber > 1 && improvement > 0;
+    coachSub = trainingAhead && (isLow || (!concentrated && !improved))
+      ? t("results.debriefFailSubTraining")
+      : concentrated
       ? t("results.debriefFailSubConcentrated")
           .replace("{{m}}", String(topTwoWrong))
           .replace("{{k}}", String(missCount))
@@ -157,7 +177,7 @@ export function ResultsHeroDebrief({
                     {percentage}
                     <span className="text-2xl font-bold text-gray-500 dark:text-gray-400">%</span>
                   </div>
-                  <p className="text-sm text-gray-500 dark:text-gray-400 mt-2 leading-snug">{t("results.baselineSub")}</p>
+                  <p className="text-sm text-gray-500 dark:text-gray-400 mt-2 leading-snug">{t(trainingAhead ? "results.baselineSubTraining" : "results.baselineSub")}</p>
                 </div>
                 <Image
                   src={getTigerFace(percentage, routes.id)}

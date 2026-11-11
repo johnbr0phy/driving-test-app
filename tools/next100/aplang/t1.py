@@ -228,7 +228,7 @@ ITEMS = [
     Q(1, 2, STW, SYNTAX,
       "Which choice most effectively combines sentences 8 and 9 (reproduced below)?\n\nSome residents worry that tree roots will crack sidewalks. This concern is reasonable.",
       ["Some residents reasonably worry that tree roots will crack sidewalks.", "Some residents worry that tree roots will crack sidewalks, it is reasonable.", "Some residents, which is reasonable, worry about roots cracking sidewalks.", "Reasonable is the worry of residents about roots that crack sidewalks."],
-      "Turning sentence 9 into the adverb \"reasonably\" keeps both ideas in one clear sentence. The second choice is a comma splice, \"which\" in the third has no clear antecedent, and the fourth is awkwardly inverted.",
+      "Turning sentence 9 into the adverb \"reasonably\" keeps both ideas in one clear sentence. Tacking on \"it is reasonable\" after a comma makes a comma splice, \"which is reasonable\" has no clear antecedent, and \"Reasonable is the worry\" is awkwardly inverted.",
       "APLANG-T1-W3"),
     Q(1, 1, STW, DICTION,
       "In sentence 12 (reproduced below), the writer wants to state the benefit of the program precisely.\n\nA citywide planting program would __help out with things for__ the people who need it most.\n\nWhich version of the underlined text best accomplishes this goal?",
@@ -238,14 +238,14 @@ ITEMS = [
     Q(1, 2, RSW, AUDIENCE,
       "The writer wants to replace sentence 13 with a sentence that urges the city council to act. Which choice best accomplishes this goal?",
       ["The council should fund the program in next year's budget.", "Many cities around the world have planted street trees.", "Trees have lined city streets for hundreds of years.", "Some residents may not want new trees near their homes."],
-      "Only the first choice addresses the council and asks for a specific action. The others state background facts or raise a doubt, which weakens the ending.",
+      "Only \"The council should fund the program\" addresses the council and asks for a specific action. The others state background facts or raise a doubt, which weakens the ending.",
       "APLANG-T1-W3"),
 
     # ---------- Set 4: small museums draft (8) ----------
     Q(1, 2, RSW, PURPOSE,
       "The writer wants to add a sentence after sentence 3 that makes the problem clear to readers. Which choice best accomplishes this goal?",
       ["In effect, most of the town's history is hidden from the town.", "The storeroom is kept at a steady, cool temperature.", "The museum also has a small gift shop by the entrance that sells postcards.", "Some of the quilts were made more than a century ago."],
-      "The essay's problem is that most of the collection cannot be seen. The first choice states that problem and its cost to the town; the others add details that do not matter to the argument.",
+      "The essay's problem is that most of the collection cannot be seen. \"Most of the town\'s history is hidden from the town\" states that problem and its cost; the others add details that do not matter to the argument.",
       "APLANG-T1-W4"),
     Q(1, 2, CEW, EVID,
       "The writer is considering adding the following sentence after sentence 6.\n\nQuilting was a common pastime in rural communities.\n\nShould the writer add this sentence?",
@@ -255,7 +255,7 @@ ITEMS = [
     Q(1, 3, CEW, EVID,
       "Which choice, if added after sentence 7, would best support the claim it makes?",
       ["A diary in one county's online collection led a historian to correct the date of a battle.", "Most universities have large libraries and archives of their own, with many trained staff.", "Many researchers say they prefer to handle the original objects rather than photographs of them.", "Some small museums ask visiting researchers to make an appointment several weeks in advance."],
-      "Sentence 7 claims that online images could let researchers make discoveries. The diary example shows exactly that happening. The third choice works against the claim, and the others are beside the point.",
+      "Sentence 7 claims that online images could let researchers make discoveries. The diary example shows exactly that happening. The sentence about researchers preferring the original objects works against the claim, and the others are beside the point.",
       "APLANG-T1-W4"),
     Q(1, 2, ROW, STRUCT,
       "The writer wants to begin the third paragraph with a sentence that connects it to the second. Which choice best accomplishes this goal?",
@@ -280,7 +280,7 @@ ITEMS = [
     Q(1, 3, RSW, AUDIENCE,
       "The writer plans to send the draft to the museum's board of directors. Which sentence, if added after sentence 10, would best address the board's likely concern?",
       ["With such help, the project need not strain the museum's budget.", "Volunteers also enjoy learning about the history of the area.", "Many large museums finished this kind of work years ago.", "Photographs can be taken in color or in black and white."],
-      "A board will worry first about cost, and sentence 10 has just named grants and volunteers. The first choice draws the conclusion the board needs. The others do not speak to its concern.",
+      "A board will worry first about cost, and sentence 10 has just named grants and volunteers. \"The project need not strain the museum\'s budget\" draws the conclusion the board needs. The others do not speak to its concern.",
       "APLANG-T1-W4"),
 
     # ---------- Set 5: apprenticeships draft (5) ----------

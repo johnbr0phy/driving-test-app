@@ -126,6 +126,20 @@ is wrong. Plain apostrophes, no em-dashes. Cite the standard by name ("OSHA 1910
 Personal Auto Policy"), not by paragraph number, unless you have checked that paragraph in the
 current text. Wrong paragraph citations were the single most common factual error in review.
 
+**Never point at an option by its position.** The app shuffles the options for every student
+(and most build scripts move the key after you write the item), so "the second option", "the last
+choice", "the first two" or "Choice B" names a different option on every screen, and sometimes
+the right answer. Name the option by what it says: "SELECT Pupils FROM Name swaps the field and
+table", "0.0.0.255 also covers the second interface", "joining the clauses with only a comma is a
+comma splice". The same goes for stems ("Choice A repeats the original" needs `lockedOrder`) and
+for Basics `why`, `hint` and `then` lines. Two exceptions: an item whose options keep their order
+(v2 `lockedOrder`, or "A and B" / "All of the above" options), and "Choice B" in a v2
+explanation, which the app rewrites to the letter on screen (it does not rewrite ordinals, stems
+or Basics). Bare ordinals with no noun ("the third changes the meaning", "the last is a fragment")
+are the same mistake and no script can catch them, so read for them. This was found in Nov 2026
+in 25 explanations across 9 banks, several of which called the correct answer wrong.
+`tools/check_option_refs.py` finds the checkable forms; it runs inside both validators and in CI.
+
 **Universal content only.** Anything a state sets (hours, ages, fees, training hours, arrest
 powers, card renewal) is "varies by state" in both stem and key. Never assert one state's rule.
 Never name a training provider in a stem (no Red Cross, TIPS, ServSafe, AHA); the bank serves every
@@ -192,6 +206,9 @@ Then `npx tsc --noEmit`, `npm run lint`, `npm run build`, and curl the landing, 
 ## Reviewing an existing bank
 
 Run the validator with no `--pool` flags to get the style report, then a full read for facts.
+Run `python3 -I tools/check_option_refs.py --list` as well, and while reading check every
+explanation that says "the first", "the second", "the last" or "the other two" against the
+options as built, not as written in the source.
 When fixing a bank with the length problem, shorten keys rather than padding distractors; padding
 makes every option a sentence and the bank reads worse. Keys and questionIds never change during
 a fix pass, so saved progress stays valid.

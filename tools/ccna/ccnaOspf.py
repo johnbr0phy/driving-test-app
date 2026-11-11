@@ -47,7 +47,7 @@ ITEMS = [
             cmd("network 172.16.20.0 0.0.0.255 area 0"),
             cmd("network 172.16.20.0 0.0.0.127 area 0"),
             cmd("network 172.16.20.0 0.0.0.63 area 1")],
-           "A 0.0.0.0 wildcard matches exactly one interface address. The 0.0.0.255 and 0.0.0.127 wildcards both cover 172.16.20.65 as well, and the last option uses area 1."),
+           "A 0.0.0.0 wildcard matches exactly one interface address. The 0.0.0.255 and 0.0.0.127 wildcards both cover 172.16.20.65 as well, and the 0.0.0.63 command uses area 1."),
     single(1, "Passive interfaces", 1,
            "R1's Gi0/1 connects only to user PCs. The subnet must still be advertised in OSPF, but R1 should not send hellos out that interface. Which command does this?",
            [cmd("passive-interface GigabitEthernet0/1"),

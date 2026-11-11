@@ -163,7 +163,7 @@ S(IDEAS, 0, "Stating an opinion", 1, "Which sentence would make the best main op
   basics="topicSentences")
 S(IDEAS, 0, "Supporting detail", 1, "A student's paragraph says that walking to school is good for students. Which sentence would be the best addition?",
   ["A twenty-minute walk gives students exercise before class.", "Some students live too far away to walk to school.", "My little brother takes the bus to his school.", "School buses are yellow so drivers can see them."],
-  "Exercise is a benefit of walking, which supports the paragraph. Living too far away is a point against it, and the last two are off topic.",
+  "Exercise is a benefit of walking, which supports the paragraph. Living too far away is a point against it, and the two sentences about buses are off topic.",
   basics="addingSentence")
 S(IDEAS, 0, "Sentence that does not belong", 1, "Read the paragraph. Which sentence should be removed?",
   NUM, "The paragraph explains why swimming is an important safety skill. A favourite pool's water slide is off topic.",

@@ -8,7 +8,7 @@ Q = [
  "Een koel- of vriesopbouw", ["Een kipper voor zand", "Een open laadbak met huif", "Een containerchassis"],
  "Voertuigen met een geïsoleerde, geconditioneerde opbouw krijgen 5 cm extra breedte voor de dikkere wanden."),
 ("Hoe hoog mag een beladen vrachtwagen in België ten hoogste zijn?",
- "4 m", ["3,80 m", "4,20 m", "4,50 m"],
+ "4,00 m", ["3,80 m", "4,20 m", "4,50 m"],
  "Art. 46.3 Wegcode beperkt de hoogte met lading tot 4 m. Alleen voor geperste vlasbalen laten Vlaanderen en Wallonië 4,30 m toe."),
 ("Hoe lang mag een trekker met oplegger volgens de Europese normen ten hoogste zijn?",
  "16,50 m", ["12 m", "13,60 m", "15,50 m"],

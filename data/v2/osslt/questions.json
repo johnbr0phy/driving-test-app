@@ -4164,7 +4164,7 @@
       "format": "single",
       "skill": "Supporting detail",
       "stem": "A student's paragraph says that walking to school is good for students. Which sentence would be the best addition?",
-      "explanation": "Exercise is a benefit of walking, which supports the paragraph. Living too far away is a point against it, and the last two are off topic.",
+      "explanation": "Exercise is a benefit of walking, which supports the paragraph. Living too far away is a point against it, and the two sentences about buses are off topic.",
       "basics": "addingSentence",
       "options": [
         "Some students live too far away to walk to school.",

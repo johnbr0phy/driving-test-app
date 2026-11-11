@@ -25,7 +25,7 @@ delimiter.
   "options": ["...", "...", "...", "..."],   // 2 to 5, single/multi only
   "correct": [1],              // option indices, single/multi only
   "numeric": { "answers": ["3/4", "0.75", ".75"], "tolerance": 0 }, // numeric only
-  "lockedOrder": false,        // true when options must not be shuffled
+  "lockedOrder": false,        // true when options must not be shuffled. Without it, never write "the second option" in the stem or explanation (tools/check_option_refs.py)
   "figure": { "src": "/figures/sat/ma-101.svg", "alt": "..." },  // optional
   "calculator": true,          // math sections: calculator allowed
   "explanation": "..."

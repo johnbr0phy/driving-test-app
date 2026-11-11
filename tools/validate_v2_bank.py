@@ -95,6 +95,12 @@ for test, sections in plan.items():
             module, _, variant = key.partition(":")
             got = sum(1 for q in questions if q["test"] == int(test) and q["section"] == section and q["module"] == int(module) and (q.get("variant") or "") == variant)
             if got != want: errors.append(f"test {test} {section} module {key}: {got} items, want {want}")
+# Options are shuffled on screen unless lockedOrder: "the second choice" in an
+# explanation, or "Choice B" in a stem, names a different option for every student.
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import check_option_refs
+errors += [f'{qid}: {field} points at an option by position ("{hit}"); name what the option says, or set lockedOrder'
+           for rel, qid, field, hit, _ in check_option_refs.scan_v2() if rel.startswith(f"v2/{exam}/")]
 print(f"{exam}: {len(questions)} questions, {len(stimuli)} stimuli, {len(errors)} problems")
 # keep the catalog's question count in step with the bank
 sizes_path = "lib/v2/bankSizes.ts"

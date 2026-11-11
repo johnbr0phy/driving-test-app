@@ -38,6 +38,9 @@ import re
 import sys
 from collections import Counter, defaultdict
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import check_option_refs  # noqa: E402
+
 V1_KEYS = ["type", "state", "questionId", "category", "question", "optionA", "optionB",
            "optionC", "optionD", "correctAnswer", "correctIndex", "explanation"]
 LETTERS = "ABCD"
@@ -204,6 +207,8 @@ def main() -> int:
     banks, errors = load_v1()
     errors += check_v1(banks, index)
     errors += check_v2(index)
+    # "The second option", "Choice B" in a v1 bank: options are shuffled on screen.
+    errors += check_option_refs.errors()
     by_engine = Counter(q["engine"] for q in index)
     print(f"checked {len(banks)} v1 bank files and {len(glob.glob('data/v2/*/')) - 1} v2 exams: "
           f"{by_engine['v1']} v1 and {by_engine['v2']} v2 questions")

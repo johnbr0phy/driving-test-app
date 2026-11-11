@@ -94,7 +94,7 @@ ITEMS = [
     Q(0, 2, "The chain rule",
       r"What is $\frac{d}{dx}\sqrt{1 + e^x}$?",
       [r"$\frac{e^x}{2\sqrt{1 + e^x}}$", r"$\frac{1}{2\sqrt{1 + e^x}}$", r"$\frac{e^x}{\sqrt{1 + e^x}}$", r"$2e^x\sqrt{1 + e^x}$"],
-      r"$\frac{1}{2}(1 + e^x)^{-1/2} \cdot e^x = \frac{e^x}{2\sqrt{1 + e^x}}$. Leaving out the inner derivative $e^x$ gives the second choice.",
+      r"$\frac{1}{2}(1 + e^x)^{-1/2} \cdot e^x = \frac{e^x}{2\sqrt{1 + e^x}}$. Leaving out the inner derivative $e^x$ gives $\frac{1}{2\sqrt{1 + e^x}}$.",
       chk=lambda x: D(lambda u: sqrt(1 + exp(u)), x)),
     Q(0, 2, "Selecting procedures for calculating derivatives",
       r"For $0 < x < \frac{\pi}{2}$, what is $\frac{d}{dx}\ln(\cos x)$?",

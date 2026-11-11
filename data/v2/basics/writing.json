@@ -138,7 +138,7 @@
       ]
     },
     "questions": [
-      { "passage": "Body: ___ Farmers lost most of the corn crop. Rivers dropped so low that barges could not move grain. In some towns, drinking water had to be trucked in.", "stem": "Which topic sentence fits best?", "options": ["Corn is an important crop.", "The drought hurt the region in several ways.", "Weather is unpredictable."], "answer": 1, "why": "Crops, rivers, and drinking water are three kinds of drought damage. The first option is too narrow, the third too wide." },
+      { "passage": "Body: ___ Farmers lost most of the corn crop. Rivers dropped so low that barges could not move grain. In some towns, drinking water had to be trucked in.", "stem": "Which topic sentence fits best?", "options": ["Corn is an important crop.", "The drought hurt the region in several ways.", "Weather is unpredictable."], "answer": 1, "why": "Crops, rivers, and drinking water are three kinds of drought damage. \"Corn is an important crop\" is too narrow, and \"Weather is unpredictable\" is too wide." },
       { "passage": "Body: ___ The old gym floor was replaced. The library got new shelves. Every classroom now has a projector.", "stem": "Which topic sentence fits best?", "options": ["The school replaced its gym floor.", "Schools need money.", "The school made several upgrades over the summer."], "answer": 2, "why": "Gym, library, classrooms. \"Several upgrades\" covers all three." }
     ]
   },

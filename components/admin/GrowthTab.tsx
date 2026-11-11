@@ -13,6 +13,7 @@ import { BasicsProgress } from "@/components/admin/BasicsProgress";
 import { ExitQuestions } from "@/components/admin/ExitQuestions";
 import { LayoutUsage } from "@/components/admin/LayoutUsage";
 import { WeeklyActiveLearners } from "@/components/admin/WeeklyActiveLearners";
+import { PeriodBarsCard, signupBars, type SignupUnit } from "@/components/admin/PeriodBars";
 
 // ─── Palette (validated: dataviz reference palette, light mode) ─────────────
 const COLORS = {
@@ -54,8 +55,6 @@ interface Metrics {
     purchases: Record<string, number>;
     active: Record<string, number>;
     questions: Record<string, number>;
-    // Optional: absent from payloads cached before the paywall chart.
-    paywallHits?: Record<string, number>;
   };
   activeWeekly: { date: string; count: number }[];
   activeMonthly: { date: string; count: number }[];
@@ -198,36 +197,6 @@ function hourly(values: number[]): Pt[] {
   }));
 }
 
-// New signups by calendar day (last 30), Monday-start week (last 12) or month
-// (last 12), independent of the range filter. The last bucket is the current,
-// unfinished one. Day keys are UTC, like the server's.
-type SignupUnit = "day" | "week" | "month";
-function signupBars(map: Record<string, number>, unit: SignupUnit): Pt[] {
-  const sumRange = (from: string, to: string) =>
-    Object.entries(map).reduce((n, [d, c]) => (d >= from && d <= to ? n + c : n), 0);
-  const today = new Date();
-  today.setUTCHours(12, 0, 0, 0);
-  const iso = (d: Date) => d.toISOString().split("T")[0];
-  if (unit === "day") return bucketize(map, "30d");
-  if (unit === "week") {
-    const monday = new Date(today);
-    monday.setUTCDate(monday.getUTCDate() - ((monday.getUTCDay() + 6) % 7));
-    return Array.from({ length: 12 }, (_, i) => {
-      const start = new Date(monday);
-      start.setUTCDate(start.getUTCDate() - (11 - i) * 7);
-      const end = new Date(start);
-      end.setUTCDate(end.getUTCDate() + 6);
-      const key = iso(start);
-      return { key, label: fmtDayLabel(key), value: sumRange(key, iso(end)) };
-    });
-  }
-  return Array.from({ length: 12 }, (_, i) => {
-    const m = new Date(Date.UTC(today.getUTCFullYear(), today.getUTCMonth() - (11 - i), 15));
-    const prefix = m.toISOString().slice(0, 7);
-    return { key: prefix, label: fmtMonthLabel(prefix), value: sumRange(prefix + "-01", prefix + "-31") };
-  });
-}
-
 // Last-12-buckets sparkline data from a daily map (weekly or monthly)
 function sparkSeries(map: Record<string, number>, unit: "week" | "month"): number[] {
   if (unit === "week") {
@@ -346,75 +315,6 @@ function makeEndDot(color: string) {
       <circle key={index} cx={cx} cy={cy} r={4.5} fill={color} stroke="#ffffff" strokeWidth={2} />
     );
   };
-}
-
-// A count per day / week / month (new signups, paywall hits): the last bar is
-// the current period so far, drawn lighter, with the previous full one beside it.
-function PeriodBarsCard({ title, noun: countNoun, color, note, data, unit, onUnit }: {
-  title: string; noun: string; color: string; note?: string;
-  data: Pt[]; unit: SignupUnit; onUnit: (u: SignupUnit) => void;
-}) {
-  const cur = data[data.length - 1]?.value ?? 0;
-  const prev = data[data.length - 2]?.value ?? 0;
-  const noun = unit === "day" ? "Today" : `This ${unit}`;
-  const prevNoun = unit === "day" ? "yesterday" : `last ${unit}`;
-  return (
-    <div className={`${CARD} mb-3 sm:mb-4`}>
-      <div className="mb-4 flex flex-wrap items-start justify-between gap-3">
-        <div>
-          <h2 className="text-sm font-semibold text-gray-900 dark:text-gray-50">{title}</h2>
-          <p className="mt-1 text-2xl font-semibold text-gray-900 dark:text-gray-50 tracking-tight">
-            {fmtInt(cur)}
-            <span className="ml-2 text-sm font-normal text-gray-500 dark:text-gray-400">
-              {noun.toLowerCase()} so far vs {fmtInt(prev)} {prevNoun}
-            </span>
-          </p>
-        </div>
-        <div className="flex gap-1">
-          {(["day", "week", "month"] as const).map((u) => (
-            <button
-              key={u}
-              onClick={() => onUnit(u)}
-              className={`text-xs font-medium rounded-md px-3 py-1.5 transition-colors capitalize ${
-                unit === u ? "bg-gray-900 dark:bg-white text-white dark:text-gray-900" : "text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-50"
-              }`}
-            >
-              {u}
-            </button>
-          ))}
-        </div>
-      </div>
-      <div className="h-56 sm:h-64">
-        <ResponsiveContainer width="100%" height="100%">
-          <BarChart data={data} margin={{ top: 18, right: 16, left: 0, bottom: 0 }}>
-            <CartesianGrid vertical={false} stroke={COLORS.grid} />
-            <XAxis dataKey="label" tick={axisTickStyle} tickLine={false}
-              axisLine={{ stroke: COLORS.axis }} interval={unit === "day" ? "preserveStartEnd" : 0} tickMargin={8} />
-            <YAxis tick={axisTickStyle} tickLine={false} axisLine={false}
-              allowDecimals={false} width={44} tickFormatter={fmtCompact} />
-            <Tooltip cursor={{ fill: "rgba(0,0,0,0.03)" }}
-              content={<ChartTooltip format={(n) => `${fmtInt(n)} ${countNoun}`}
-                labelPrefix={unit === "week" ? "Week of " : ""} />} />
-            <Bar dataKey="value" fill={color} maxBarSize={36} radius={[4, 4, 0, 0]}
-              isAnimationActive={false}>
-              {data.map((p, i) => (
-                <Cell key={p.key} fillOpacity={i === data.length - 1 ? 0.45 : 1} />
-              ))}
-              {unit !== "day" && (
-                <LabelList dataKey="value" position="top"
-                  formatter={(v: React.ReactNode) => (Number(v) > 0 ? fmtInt(Number(v)) : "")}
-                  style={{ fontSize: 10, fill: "#52514e" }} />
-              )}
-            </Bar>
-          </BarChart>
-        </ResponsiveContainer>
-      </div>
-      <p className="mt-3 text-[11px] text-gray-500 dark:text-gray-400">
-        Weeks start Monday (UTC). The lighter bar is the current {unit}, still in progress.
-        {note ? ` ${note}` : ""}
-      </p>
-    </div>
-  );
 }
 
 // ─── Quizzes (lib/quizzes.ts): the site-wide counters in analytics/quizzes ──
@@ -956,7 +856,6 @@ export function GrowthTab() {
   const [range, setRange] = useState<Range>("90d");
   const [engageMetric, setEngageMetric] = useState<"active" | "questions">("active");
   const [signupUnit, setSignupUnit] = useState<SignupUnit>("week");
-  const [paywallUnit, setPaywallUnit] = useState<SignupUnit>("day");
 
   // One-time history seed for the per-exam split of the questions aggregate:
   // live counts only started when the split shipped, so until the backfill
@@ -1004,11 +903,6 @@ export function GrowthTab() {
   const signups = useMemo(
     () => (metrics ? signupBars(metrics.daily.signups, signupUnit) : []),
     [metrics, signupUnit],
-  );
-
-  const paywallHits = useMemo(
-    () => (metrics?.daily.paywallHits ? signupBars(metrics.daily.paywallHits, paywallUnit) : null),
-    [metrics, paywallUnit],
   );
 
   const sparks = useMemo(() => {
@@ -1089,11 +983,6 @@ export function GrowthTab() {
 
         <PeriodBarsCard title="New signups" noun="signups" color={COLORS.users}
           data={signups} unit={signupUnit} onUnit={setSignupUnit} />
-        {paywallHits && (
-          <PeriodBarsCard title="Paywall hits" noun="paywall hits" color={COLORS.engagement}
-            note="Every time a paywall opened, guests included; internal accounts and bots are not counted."
-            data={paywallHits} unit={paywallUnit} onUnit={setPaywallUnit} />
-        )}
 
         {/* Range filter — scopes every chart below */}
         <div className="flex items-center gap-1 mb-3 sm:mb-4 bg-white dark:bg-gray-900 border border-gray-200/80 dark:border-gray-800/80 rounded-lg p-1 w-full sm:w-fit shadow-sm">

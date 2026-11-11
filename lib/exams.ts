@@ -789,7 +789,15 @@ const phleb: ExamConfig = {
     specimenProcessing: 7,
     specialCollections: 6,
   },
-  trainingSets: testSets(1300, 4),
+  // By content area, in the NHA test plan's order (Nov 2026; they were
+  // DMV-style test sets before, and lib/testSetMigration.ts moves that
+  // progress back by question).
+  trainingSets: [
+    { setNumber: 1, id: 1301, name: "Safety & Compliance", categories: ["safetyCompliance"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 2, id: 1302, name: "Patient Preparation", categories: ["patientPreparation"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 3, id: 1303, name: "Routine Blood Collections", categories: ["routineCollections"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 4, id: 1304, name: "Special Collections & Processing", categories: ["specialCollections", "specimenProcessing"], size: 52, weightLabel: "13 of 50 test questions" },
+  ],
   categoryLabels: {
     routineCollections: "Routine Blood Collections",
     safetyCompliance: "Safety & Compliance",
@@ -803,9 +811,9 @@ const phleb: ExamConfig = {
     trainingSub: "Four sets following the NHA CPT test plan. Instant feedback, and missed questions come back until you master them.",
     testsHeading: "Practice tests · 50 questions weighted like the real exam",
     heroSubs: [
-      "Four training sets, four practice tests. Start with Training Set 1.",
-      "Master each set, then take its test.",
-      "Keep going. Each set gets you ready for the test after it.",
+      "Four training sets, four practice tests. Start with Safety & Compliance.",
+      "Master each topic, then test yourself.",
+      "Keep going. Every topic you master shows up on the tests.",
       "Review your mistakes, then retake any test you haven't passed.",
       "All done. Schedule your phlebotomy exam.",
     ],

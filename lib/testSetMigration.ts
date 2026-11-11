@@ -8,17 +8,24 @@
  *
  * Needs the exam's bank registered (it reads the test slices).
  */
-import { ExamConfig, examSetBase, hasTestSets } from "./exams";
-import { examTestQuestions } from "./examTestGenerator";
+import { ExamConfig, ExamId, examSetBase, hasTestSets } from "./exams";
+import { getExamTrainingSetQuestions } from "./examTestGenerator";
 
 type SetProgress = { masteredIds: string[]; wrongQueue: string[] };
 
 /** Highest set number any of these exams had before (CRCST had 6). */
 const OLD_MAX_SETS = 6;
 
+/**
+ * Exams that went the other way: from test sets back to content-area sets
+ * under the same set IDs (Phlebotomy, Nov 2026). Their progress is regrouped
+ * the same way, each question to the set that holds it now.
+ */
+const BACK_TO_TOPIC_SETS: ExamId[] = ["phleb"];
+
 /** Set IDs whose progress belongs to this exam, old and new. */
 export function testSetIdsToCheck(exam: ExamConfig): number[] {
-  if (!hasTestSets(exam)) return [];
+  if (!hasTestSets(exam) && !BACK_TO_TOPIC_SETS.includes(exam.id)) return [];
   const base = examSetBase(exam);
   const count = Math.max(OLD_MAX_SETS, exam.trainingSets.length);
   return Array.from({ length: count }, (_, i) => base + i + 1);
@@ -48,8 +55,7 @@ export function migrateTestSets(
 
   const setOf = new Map<string, number>();
   for (const def of exam.trainingSets) {
-    if (def.test === undefined) continue;
-    for (const q of examTestQuestions(exam, def.test)) setOf.set(q.questionId, def.id);
+    for (const q of getExamTrainingSetQuestions(exam, def.setNumber)) setOf.set(q.questionId, def.id);
   }
 
   const next: Record<number, SetProgress> = {};

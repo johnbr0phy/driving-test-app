@@ -1,0 +1,45 @@
+{
+  "rule": "parking-clearance",
+  "questionId": "TX-037",
+  "state": "TX",
+  "prompt": "How far from a crosswalk must you park in Texas?",
+  "bankAnswer": "20 feet",
+  "alsoCovers": [],
+  "params": {
+    "feature": "crosswalk",
+    "unit": "feet"
+  },
+  "decisions": [
+    {
+      "id": "park",
+      "prompt": "You are parking at the curb before the crosswalk. How far back should your front bumper stop?",
+      "correctAction": {
+        "id": "d20",
+        "label": "20 feet back",
+        "distanceFt": 20
+      },
+      "wrongActions": [
+        {
+          "id": "d5",
+          "label": "5 feet back",
+          "distanceFt": 5,
+          "consequence": "Your car hid the crosswalk. A person stepped out from behind it and the next driver saw them only at the last moment."
+        },
+        {
+          "id": "d10",
+          "label": "10 feet back",
+          "distanceFt": 10,
+          "consequence": "Your car hid the crosswalk. A person stepped out from behind it and the next driver saw them only at the last moment."
+        }
+      ]
+    }
+  ],
+  "successText": "You left the crosswalk in plain view. The person crossing and the next driver could see each other in good time.",
+  "ruleText": "Do not park within 20 feet of a crosswalk at an intersection: a parked car that close hides people who are about to cross.",
+  "citation": {
+    "source": "Texas Driver Handbook (DL-7); Texas Transportation Code",
+    "section": "Handbook parking rules; Transportation Code Section 545.302(b)",
+    "url": "https://www.dps.texas.gov/internetforms/Forms/DL-7.pdf"
+  },
+  "verified": "Read Nov 2026 in the official handbook PDF: \"Within 20 feet of a crosswalk at an intersection\"."
+}

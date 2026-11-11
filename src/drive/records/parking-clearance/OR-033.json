@@ -1,0 +1,45 @@
+{
+  "rule": "parking-clearance",
+  "questionId": "OR-033",
+  "state": "OR",
+  "prompt": "How close to a fire hydrant can you legally park in Oregon?",
+  "bankAnswer": "10 feet",
+  "alsoCovers": [],
+  "params": {
+    "feature": "hydrant",
+    "unit": "feet"
+  },
+  "decisions": [
+    {
+      "id": "park",
+      "prompt": "You are parking at the curb before the fire hydrant. How far back should your front bumper stop?",
+      "correctAction": {
+        "id": "d10",
+        "label": "10 feet back",
+        "distanceFt": 10
+      },
+      "wrongActions": [
+        {
+          "id": "d3",
+          "label": "3 feet back",
+          "distanceFt": 3,
+          "consequence": "A fire engine could not reach the hydrant. Parking that close also earns a ticket, and the car can be towed."
+        },
+        {
+          "id": "d5",
+          "label": "5 feet back",
+          "distanceFt": 5,
+          "consequence": "A fire engine could not reach the hydrant. Parking that close also earns a ticket, and the car can be towed."
+        }
+      ]
+    }
+  ],
+  "successText": "You left the hydrant clear. The fire engine connected its hose with room to spare.",
+  "ruleText": "Do not park within 10 feet of a fire hydrant: firefighters need clear access to it.",
+  "citation": {
+    "source": "Oregon Revised Statutes",
+    "section": "ORS 811.550(16)",
+    "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors811.html"
+  },
+  "verified": "Read Nov 2026 on the Oregon Legislature site: \"Within 10 feet of a fire hydrant.\""
+}

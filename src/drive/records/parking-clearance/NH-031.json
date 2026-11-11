@@ -1,0 +1,45 @@
+{
+  "rule": "parking-clearance",
+  "questionId": "NH-031",
+  "state": "NH",
+  "prompt": "How far from a fire hydrant must you park in New Hampshire?",
+  "bankAnswer": "At least 15 feet",
+  "alsoCovers": [],
+  "params": {
+    "feature": "hydrant",
+    "unit": "feet"
+  },
+  "decisions": [
+    {
+      "id": "park",
+      "prompt": "You are parking at the curb before the fire hydrant. How far back should your front bumper stop?",
+      "correctAction": {
+        "id": "d15",
+        "label": "15 feet back",
+        "distanceFt": 15
+      },
+      "wrongActions": [
+        {
+          "id": "d5",
+          "label": "5 feet back",
+          "distanceFt": 5,
+          "consequence": "A fire engine could not reach the hydrant. Parking that close also earns a ticket, and the car can be towed."
+        },
+        {
+          "id": "d10",
+          "label": "10 feet back",
+          "distanceFt": 10,
+          "consequence": "A fire engine could not reach the hydrant. Parking that close also earns a ticket, and the car can be towed."
+        }
+      ]
+    }
+  ],
+  "successText": "You left the hydrant clear. The fire engine connected its hose with room to spare.",
+  "ruleText": "Do not park within 15 feet of a fire hydrant: firefighters need clear access to it.",
+  "citation": {
+    "source": "New Hampshire Revised Statutes",
+    "section": "RSA 265:69 II(b)",
+    "url": "https://gc.nh.gov/rsa/html/XXI/265/265-69.htm"
+  },
+  "verified": "Read Nov 2026 on the New Hampshire General Court site: \"Within 15 feet of a fire hydrant\"."
+}

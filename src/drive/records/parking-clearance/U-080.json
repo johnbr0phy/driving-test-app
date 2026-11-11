@@ -1,0 +1,45 @@
+{
+  "rule": "parking-clearance",
+  "questionId": "U-080",
+  "state": "ALL",
+  "prompt": "How close can you park to a crosswalk?",
+  "bankAnswer": "20 feet",
+  "alsoCovers": [],
+  "params": {
+    "feature": "crosswalk",
+    "unit": "feet"
+  },
+  "decisions": [
+    {
+      "id": "park",
+      "prompt": "You are parking at the curb before the crosswalk. How far back should your front bumper stop?",
+      "correctAction": {
+        "id": "d20",
+        "label": "20 feet back",
+        "distanceFt": 20
+      },
+      "wrongActions": [
+        {
+          "id": "d5",
+          "label": "5 feet back",
+          "distanceFt": 5,
+          "consequence": "Your car hid the crosswalk. A person stepped out from behind it and the next driver saw them only at the last moment."
+        },
+        {
+          "id": "d10",
+          "label": "10 feet back",
+          "distanceFt": 10,
+          "consequence": "Your car hid the crosswalk. A person stepped out from behind it and the next driver saw them only at the last moment."
+        }
+      ]
+    }
+  ],
+  "successText": "You left the crosswalk in plain view. The person crossing and the next driver could see each other in good time.",
+  "ruleText": "Do not park within 20 feet of a crosswalk at an intersection: a parked car that close hides people who are about to cross. A few states set a different distance; add your state to the address to see its rule.",
+  "citation": {
+    "source": "Uniform Vehicle Code (2000), the model most state laws follow",
+    "section": "Section 11-1003(a)2.C",
+    "url": "https://iamtraffic.org/wp-content/uploads/2013/01/UVC2000.pdf"
+  },
+  "verified": "Read Nov 2026 in a hosted copy of the NCUTLO text: no parking \"Within 20 feet of a crosswalk at an intersection\". California, Texas, Louisiana, New Hampshire, South Carolina and Oregon were checked and match; Wisconsin is 15 feet."
+}

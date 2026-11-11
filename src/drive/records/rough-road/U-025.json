@@ -1,0 +1,41 @@
+{
+  "rule": "rough-road",
+  "questionId": "U-025",
+  "state": "ALL",
+  "prompt": "What does a sign with bumps indicate?",
+  "bankAnswer": "Rough road surface",
+  "alsoCovers": [],
+  "params": {},
+  "decisions": [
+    {
+      "id": "bump",
+      "prompt": "You are doing 45 mph and this sign is coming up. What do you do?",
+      "sign": "bump",
+      "signAlt": "A yellow diamond warning sign with the word BUMP",
+      "correctAction": {
+        "id": "slow",
+        "label": "Slow down now"
+      },
+      "wrongActions": [
+        {
+          "id": "keep",
+          "label": "Hold 45 mph",
+          "consequence": "You hit the broken surface at full speed. The car slammed over the bumps, lost a hubcap and nearly left the road."
+        },
+        {
+          "id": "fast",
+          "label": "Speed up to get over it quickly",
+          "consequence": "More speed made every bump hit harder. The car left the ground, landed badly and ended up on the shoulder with a flat tire."
+        }
+      ]
+    }
+  ],
+  "successText": "You braked before the rough patch, not on it, rolled over it gently and kept full control.",
+  "ruleText": "A BUMP or ROUGH ROAD warning sign means the road surface ahead is uneven: slow down before you reach it.",
+  "citation": {
+    "source": "FHWA Manual on Uniform Traffic Control Devices, 11th Edition",
+    "section": "Section 2C.26 (BUMP, W8-1) and Section 2C.30 (ROUGH ROAD, W8-8)",
+    "url": "https://mutcd.fhwa.dot.gov/pdfs/11th_Edition/Chapter2c.pdf"
+  },
+  "verified": "Read in the FHWA PDF, Nov 2026: BUMP is used \"in advance of a sharp rise or depression in the profile of the road\"; ROUGH ROAD \"may be used to warn of a rough roadway surface\". The MUTCD gives these signs word legends only, so the scene shows the word BUMP, not a picture of bumps."
+}

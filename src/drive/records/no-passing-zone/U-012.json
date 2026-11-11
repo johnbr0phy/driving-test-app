@@ -1,0 +1,44 @@
+{
+  "rule": "no-passing-zone",
+  "questionId": "U-012",
+  "state": "ALL",
+  "prompt": "What does a pennant-shaped sign indicate?",
+  "bankAnswer": "No passing",
+  "alsoCovers": [
+    "U-056",
+    "U-081"
+  ],
+  "params": {},
+  "decisions": [
+    {
+      "id": "pass",
+      "prompt": "The truck is slow. This sign is on the left and the yellow lines turn solid. What do you do?",
+      "sign": "pennant",
+      "signAlt": "A yellow pennant-shaped sign, pointing right, on the left side of the road",
+      "correctAction": {
+        "id": "stay",
+        "label": "Stay behind the truck"
+      },
+      "wrongActions": [
+        {
+          "id": "pass",
+          "label": "Pass the truck now",
+          "consequence": "A car came over the hill while you were in its lane. It had to swerve onto the shoulder to miss you."
+        },
+        {
+          "id": "shoulder",
+          "label": "Pass on the right shoulder",
+          "consequence": "The shoulder is not a lane. You hit gravel, ran out of room at the guardrail and had to brake hard."
+        }
+      ]
+    }
+  ],
+  "successText": "You waited. A car came over the hill in the lane you would have been in. Once the line was broken again, you passed with a clear view.",
+  "ruleText": "The pennant-shaped sign on the left side of the road marks the start of a no-passing zone: with a solid yellow line on your side, stay in your lane until the line is broken again.",
+  "citation": {
+    "source": "FHWA Manual on Uniform Traffic Control Devices, 11th Edition",
+    "section": "Section 2C.53 (No Passing Zone sign, W14-3) and Section 3B.01 (yellow center line markings)",
+    "url": "https://mutcd.fhwa.dot.gov/pdfs/11th_Edition/Chapter2c.pdf"
+  },
+  "verified": "Read in the FHWA PDFs, Nov 2026: the sign \"shall be installed on the left-hand side of the roadway at the beginning of no-passing zones\"; passing \"is prohibited for traffic traveling adjacent to the solid line\"."
+}

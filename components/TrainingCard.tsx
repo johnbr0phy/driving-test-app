@@ -5,6 +5,7 @@ import { Question } from "@/types";
 import { useState, useEffect, useId, useRef } from "react";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { ReportExamQuestion } from "@/components/ReportExamQuestion";
+import { DriveLink } from "@/components/drive/DriveLink";
 import { QuestionImage } from "@/components/QuestionImage";
 
 const READY_MS = 300;
@@ -137,6 +138,7 @@ export function TrainingCard({
                 {isCorrect ? t("trainingCard.correct") : t("trainingCard.incorrect")}
               </div>
               <p className="text-gray-700 dark:text-gray-200 text-sm md:text-base">{question.explanation}</p>
+              <DriveLink questionId={question.questionId} className="mt-2" />
             </div>
             {reportExamId && (
               <ReportExamQuestion

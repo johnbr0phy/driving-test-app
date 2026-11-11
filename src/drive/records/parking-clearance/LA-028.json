@@ -1,0 +1,45 @@
+{
+  "rule": "parking-clearance",
+  "questionId": "LA-028",
+  "state": "LA",
+  "prompt": "How close to a crosswalk or intersection can you legally park in Louisiana?",
+  "bankAnswer": "No closer than 20 feet",
+  "alsoCovers": [],
+  "params": {
+    "feature": "crosswalk",
+    "unit": "feet"
+  },
+  "decisions": [
+    {
+      "id": "park",
+      "prompt": "You are parking at the curb before the crosswalk. How far back should your front bumper stop?",
+      "correctAction": {
+        "id": "d20",
+        "label": "20 feet back",
+        "distanceFt": 20
+      },
+      "wrongActions": [
+        {
+          "id": "d5",
+          "label": "5 feet back",
+          "distanceFt": 5,
+          "consequence": "Your car hid the crosswalk. A person stepped out from behind it and the next driver saw them only at the last moment."
+        },
+        {
+          "id": "d10",
+          "label": "10 feet back",
+          "distanceFt": 10,
+          "consequence": "Your car hid the crosswalk. A person stepped out from behind it and the next driver saw them only at the last moment."
+        }
+      ]
+    }
+  ],
+  "successText": "You left the crosswalk in plain view. The person crossing and the next driver could see each other in good time.",
+  "ruleText": "Do not park within 20 feet of a crosswalk at an intersection: a parked car that close hides people who are about to cross.",
+  "citation": {
+    "source": "Louisiana Revised Statutes",
+    "section": "RS 32:143(A)(6)",
+    "url": "https://www.legis.la.gov/legis/Law.aspx?d=88071"
+  },
+  "verified": "Read Nov 2026 on the Louisiana Legislature site: \"Within twenty feet of a crosswalk at an intersection\"."
+}

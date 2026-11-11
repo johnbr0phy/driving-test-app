@@ -1,5 +1,6 @@
 "use client";
 
+import { DriveLink } from "@/components/drive/DriveLink";
 import { Fragment, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -258,6 +259,7 @@ export function ResultsDebriefBody({ results, upgrade }: Props) {
                           {question.explanation}
                         </p>
                       )}
+                      {answered && <DriveLink questionId={question.questionId} />}
                     </div>
                   )}
                 />
@@ -334,9 +336,10 @@ export function ResultsDebriefBody({ results, upgrade }: Props) {
                     media={signId ? <QuestionImage questionId={question.questionId} /> : undefined}
                     renderFooter={({ answered }) =>
                       answered && question.explanation ? (
-                        <p className="pt-1 px-1 text-xs text-gray-500 dark:text-gray-400 leading-relaxed">
-                          {question.explanation}
-                        </p>
+                        <div className="pt-1 px-1 space-y-1.5">
+                          <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed">{question.explanation}</p>
+                          <DriveLink questionId={question.questionId} />
+                        </div>
                       ) : null
                     }
                   />

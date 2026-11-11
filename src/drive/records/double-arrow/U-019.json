@@ -1,0 +1,41 @@
+{
+  "rule": "double-arrow",
+  "questionId": "U-019",
+  "state": "ALL",
+  "prompt": "What does a double arrow sign mean?",
+  "bankAnswer": "Traffic may pass on either side of obstruction",
+  "alsoCovers": [],
+  "params": {},
+  "decisions": [
+    {
+      "id": "split",
+      "prompt": "The road splits around an island with this sign on it. You are in the left lane, with a car beside you. What do you do?",
+      "sign": "doubleArrow",
+      "signAlt": "A yellow diamond sign with two black arrows pointing down and apart",
+      "correctAction": {
+        "id": "left",
+        "label": "Stay in my lane and pass on the left"
+      },
+      "wrongActions": [
+        {
+          "id": "right",
+          "label": "Move right: I must keep right of the island",
+          "consequence": "You cut into the lane beside you for no reason. The other driver had to brake and swerve to miss you."
+        },
+        {
+          "id": "stop",
+          "label": "Stop before the island",
+          "consequence": "You stopped in a moving lane. The driver behind had to brake hard and swerve around you."
+        }
+      ]
+    }
+  ],
+  "successText": "You held your lane and passed on the left while the car beside you passed on the right. Both sides were open, which is all the sign says.",
+  "ruleText": "A double arrow sign means traffic may pass on either side of the island or obstruction, so stay in your lane and keep moving.",
+  "citation": {
+    "source": "FHWA Manual on Uniform Traffic Control Devices, 11th Edition",
+    "section": "Section 2C.23 (Double Arrow sign, W12-1)",
+    "url": "https://mutcd.fhwa.dot.gov/pdfs/11th_Edition/Chapter2c.pdf"
+  },
+  "verified": "Read in the FHWA PDF, Nov 2026: the sign advises \"that traffic is permitted to pass on either side of an island, obstruction, or gore in the roadway\"."
+}

@@ -101,7 +101,7 @@ export const GCSEHIGHER: ExamV2Config = {
     heroSubs: [
       "Learn the basics, then drill each topic.",
       "Master each drill first.",
-      "Halfway there. Try a full practice test.",
+      "Take a full practice test to see your score.",
       "Hit your goal on a full test.",
       "Goal hit. You're ready for the papers.",
     ],

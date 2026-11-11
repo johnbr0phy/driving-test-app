@@ -90,7 +90,7 @@ export const OSSLT: ExamV2Config = {
     heroSubs: [
       "Learn the basics, then drill each part of the test.",
       "Master each drill first.",
-      "Halfway there. Try a full practice test.",
+      "Take a full practice test to see your score.",
       "Hit your goal on the practice test.",
       "Goal hit. You're ready for the OSSLT.",
     ],

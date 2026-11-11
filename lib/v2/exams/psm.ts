@@ -69,7 +69,7 @@ export const PSM: ExamV2Config = {
     heroSubs: [
       "Drill each part of the Scrum Guide, then take a full test.",
       "Master each drill first.",
-      "Halfway there. Try Practice Test 1.",
+      "Take Practice Test 1 to see your score.",
       "Hit your goal on both practice tests.",
       "Goal hit. Book your PSM I assessment.",
     ],

@@ -31,6 +31,8 @@ import { useV2Paywall, V2Paywall } from "./V2Paywall";
 import { SuperAmazingCard } from "@/components/SuperAmazingCard";
 import { ClassBanner } from "@/components/exam/ClassBanner";
 import { TeachNudge } from "@/components/TeachNudge";
+import { heroLine } from "@/lib/heroCopy";
+import { useHeroVariant } from "@/hooks/useHeroVariant";
 import { regionOfTest } from "@/lib/region";
 
 function heroTitle(done: number, total: number, completedTitle = "You're ready"): string {
@@ -43,16 +45,6 @@ function heroTitle(done: number, total: number, completedTitle = "You're ready")
   if (frac < 0.55) return "Halfway there";
   if (frac < 0.8) return "More than halfway";
   return `${done} of ${total}, almost there`;
-}
-
-function heroSub(exam: ExamV2Config, done: number, total: number): string {
-  const frac = total > 0 ? done / total : 0;
-  const subs = exam.copy.heroSubs;
-  if (done === 0) return subs[0];
-  if (frac >= 1) return subs[4];
-  if (frac < 0.4) return subs[1];
-  if (frac < 0.7) return subs[2];
-  return subs[3];
 }
 
 /** Same ladder as the v1 dashboards: worried at 0, beaming at 100%. */
@@ -68,6 +60,7 @@ function shortDate(iso: string, examId: string) {
 
 export function DashboardV2({ exam }: { exam: ExamV2Config }) {
   const routes = v2Routes(exam);
+  const heroVariant = useHeroVariant();
   const hydrated = useHydration();
   // Opening this dashboard makes it the current test (the logo's home).
   const setPrimaryExam = useStore((s) => s.setPrimaryExam);
@@ -229,13 +222,13 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
                 <Image src={tigerFace(doneSteps, totalSteps, exam.id)} alt="Tiger mascot" width={48} height={48} className="w-12 h-12 flex-shrink-0" />
                 <div className="flex-1 min-w-0">
                   <h1 className="text-lg font-bold text-gray-900 dark:text-gray-50">{heroTitle(doneSteps, totalSteps, exam.copy.completedTitle)}</h1>
-                  <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">{heroSub(exam, doneSteps, totalSteps)}</p>
+                  <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">{heroLine(exam.copy.heroSubs, doneSteps, totalSteps, heroVariant, exam.language ?? "en")}</p>
                 </div>
                 <div className="flex-shrink-0 text-right">
                   <div className={`text-2xl font-bold tabular-nums ${doneSteps === totalSteps ? "text-green-600 dark:text-green-400" : "text-gray-900 dark:text-gray-50"}`}>
                     {doneSteps}/{totalSteps}
                   </div>
-                  <div className="text-xs text-gray-500 dark:text-gray-400">complete!</div>
+                  <div className="text-xs text-gray-500 dark:text-gray-400">complete</div>
                 </div>
               </div>
               <GoalStrip exam={exam} goal={goal} best={bestOverall} onEdit={fixedGoal ? undefined : () => setEditingGoal(true)} />

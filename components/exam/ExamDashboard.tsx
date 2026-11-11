@@ -32,19 +32,11 @@ import { getTigerAsset } from "@/lib/tigerAssets";
 import { SuperAmazingCard } from "@/components/SuperAmazingCard";
 import { useLocalizedExam } from "@/hooks/useLocalizedExam";
 import { useCommunityAvailable } from "@/hooks/useCommunityStats";
+import { heroLine } from "@/lib/heroCopy";
+import { useHeroVariant } from "@/hooks/useHeroVariant";
 import { useExamLocks } from "@/hooks/useExamLocks";
 import { usePurchaseReturn } from "@/hooks/usePurchaseReturn";
 import { useExamPaywall } from "@/components/exam/ExamLockScreen";
-
-function heroSub(exam: ExamConfig, done: number, total: number): string {
-  const frac = total > 0 ? done / total : 0;
-  const subs = exam.copy.heroSubs;
-  if (done === 0) return subs[0];
-  if (frac >= 1) return subs[4];
-  if (frac < 0.4) return subs[1];
-  if (frac < 0.7) return subs[2];
-  return subs[3];
-}
 
 function getTigerFace(complete: number, total: number, examId: string): string {
   const pct = Math.round((complete / total) * 100);
@@ -66,6 +58,7 @@ export function ExamDashboard({ exam }: { exam: ExamConfig }) {
 
 function ExamDashboardContent({ exam: source }: { exam: ExamConfig }) {
   const { exam, routes, ui, lang, testLanguages, testLanguagePicked, setTestLanguage } = useLocalizedExam(source);
+  const heroVariant = useHeroVariant();
   // Premium: the final training step and final test (lib/examLocks.ts).
   const locks = useExamLocks(source);
   const paywall = useExamPaywall(source, routes, "dashboard");
@@ -434,11 +427,11 @@ function ExamDashboardContent({ exam: source }: { exam: ExamConfig }) {
             />
             <div className="flex-1 min-w-0">
               <h1 className="text-lg font-bold text-gray-900 dark:text-gray-50">{ui.heroTitle(completedSteps, totalSteps)}</h1>
-              <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">{heroSub(exam, completedSteps, totalSteps)}</p>
+              <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">{heroLine(exam.copy.heroSubs, completedSteps, totalSteps, heroVariant, lang)}</p>
             </div>
             <div className="flex-shrink-0 text-right">
               <div className="text-2xl font-bold tabular-nums text-gray-900 dark:text-gray-50">{completedSteps}/{totalSteps}</div>
-              <div className="text-xs text-gray-500 dark:text-gray-400">{t("dashboard.stampComplete").toLowerCase()}</div>
+              <div className="text-xs text-gray-500 dark:text-gray-400">{t("dashboard.stampComplete").toLowerCase().replace(/\s*[!！]/g, "")}</div>
             </div>
           </div>
           <ExamStateLine exam={exam} />

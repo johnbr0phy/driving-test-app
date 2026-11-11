@@ -69,7 +69,7 @@ export const HESI: ExamV2Config = {
     heroSubs: [
       "Learn the basics, then drill each section.",
       "Master each drill first.",
-      "Halfway there. Try the full test.",
+      "Take the full test to see your score.",
       "Hit your goal on the full battery.",
       "Goal hit. Book your HESI A2.",
     ],

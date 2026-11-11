@@ -92,7 +92,7 @@ export const REXPN: ExamV2Config = {
     heroSubs: [
       "Drill each Client Needs area, then take a full test.",
       "Master each drill first.",
-      "Halfway there. Try Practice Test 1.",
+      "Take Practice Test 1 to see your score.",
       "Hit your goal on both practice tests.",
       "Practice goal hit. Review your missed questions and rationales.",
     ],

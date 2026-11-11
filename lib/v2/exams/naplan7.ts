@@ -157,7 +157,7 @@ export const NAPLAN7: ExamV2Config = {
     heroSubs: [
       "Learn the basics, then drill each domain.",
       "Master each drill first.",
-      "Halfway there. Try the full test.",
+      "Take the full test to see your score.",
       "Reach your goal on the full test.",
       "Goal reached. You are ready for NAPLAN.",
     ],

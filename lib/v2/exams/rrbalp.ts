@@ -83,7 +83,7 @@ export const RRBALP: ExamV2Config = {
     heroSubs: [
       "Drill each subject, then take a full CBT 1.",
       "Master each drill first.",
-      "Halfway there. Try Practice Test 1.",
+      "Take Practice Test 1 to see your score.",
       "Hit your goal on both practice tests.",
       "Goal hit. You are ready for ALP CBT 1.",
     ],

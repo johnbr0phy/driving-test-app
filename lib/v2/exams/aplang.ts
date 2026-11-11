@@ -95,7 +95,7 @@ export const APLANG: ExamV2Config = {
     heroSubs: [
       "Drill each skill, then take a full multiple-choice section.",
       "Master each drill first.",
-      "Halfway there. Try Practice Test 1.",
+      "Take Practice Test 1 to see your score.",
       "Hit your goal on both practice tests.",
       "Goal hit. You are ready for the multiple-choice section.",
     ],

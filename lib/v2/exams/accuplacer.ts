@@ -70,7 +70,7 @@ export const ACCUPLACER: ExamV2Config = {
     heroSubs: [
       "Learn the basics, then drill each section.",
       "Master each drill first.",
-      "Halfway there. Try the full test.",
+      "Take the full test to see your score.",
       "Hit your goal on a practice test.",
       "Goal hit. Ask your college about scheduling.",
     ],

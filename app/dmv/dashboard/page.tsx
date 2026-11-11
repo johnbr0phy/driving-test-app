@@ -439,7 +439,7 @@ function DashboardContent() {
             </div>
             <div className="flex-shrink-0 text-right">
               <div className="text-2xl font-bold tabular-nums text-gray-900 dark:text-gray-50">{completedSteps}/{totalSteps}</div>
-              <div className="text-xs text-gray-500 dark:text-gray-400">{t("dashboard.stampComplete").toLowerCase()}</div>
+              <div className="text-xs text-gray-500 dark:text-gray-400">{t("dashboard.stampComplete").toLowerCase().replace(/\s*[!！]/g, "")}</div>
             </div>
           </div>
           <DmvStateLine

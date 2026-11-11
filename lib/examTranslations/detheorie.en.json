@@ -28,10 +28,10 @@
     "trainingSub": "Each practice set covers one subject area of the test. You get instant feedback, and questions you get wrong come back until you know them.",
     "testsHeading": "Practice tests · 30 questions, 2 mistakes at most",
     "heroSubs": [
-      "Five practice sets, seven practice tests. Hazard awareness and behaviour in traffic come up most often.",
+      "Five practice sets, seven practice tests. Start with Hazard awareness.",
       "Master the set first, then take the test.",
-      "You're halfway there. Take a practice test.",
-      "Go over your mistakes, then test yourself again.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
       "All green. Book your theory test."
     ],
     "sourceLine": "Based on the StVO, StVZO and Driving Licence Regulations (FeV) as of November 2026. Original questions, not from the official question catalogue; 30 per test, without error-point weighting."

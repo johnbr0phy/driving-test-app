@@ -72,7 +72,7 @@ export const AZ900: ExamV2Config = {
     heroSubs: [
       "Drill each skill area, then take a full test.",
       "Master each drill first.",
-      "Halfway there. Try Practice Test 1.",
+      "Take Practice Test 1 to see your score.",
       "Hit your goal on both practice tests.",
       "Goal hit. Book your AZ-900 exam.",
     ],

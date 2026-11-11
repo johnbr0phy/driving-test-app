@@ -110,7 +110,7 @@ export const OCNSW: ExamV2Config = {
     heroSubs: [
       "Learn the basics, then drill each test.",
       "Master each drill first.",
-      "Halfway there. Try a full practice test.",
+      "Take a full practice test to see your score.",
       "Hit your goal on a full practice test.",
       "Goal hit. You're ready for test day.",
     ],

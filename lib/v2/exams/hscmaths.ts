@@ -136,7 +136,7 @@ export const HSCMATHS: ExamV2Config = {
     heroSubs: [
       "Learn the basics, then drill each topic.",
       "Master each drill first.",
-      "Halfway there. Try a full practice paper.",
+      "Take a full practice paper to see your score.",
       "Hit your goal on a full paper.",
       "Goal hit. You're ready for the HSC.",
     ],

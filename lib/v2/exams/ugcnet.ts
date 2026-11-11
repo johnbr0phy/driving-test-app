@@ -91,7 +91,7 @@ export const UGCNET: ExamV2Config = {
     heroSubs: [
       "Drill each unit, then take a full Paper 1 mock.",
       "Master each drill first.",
-      "Halfway there. Try Practice Test 1.",
+      "Take Practice Test 1 to see your score.",
       "Hit your goal on both practice tests.",
       "Goal hit. You are ready for UGC-NET Paper 1.",
     ],

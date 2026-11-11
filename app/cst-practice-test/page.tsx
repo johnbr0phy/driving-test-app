@@ -78,7 +78,7 @@ const jsonLd = {
       featureList: [
         "200 CST practice questions",
         "4 blueprint-weighted practice tests",
-        "4 training sets, one per practice test",
+        "4 training sets by topic",
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
@@ -148,8 +148,7 @@ export default function CSTLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train, Then Test</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four training sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1,
-                and so on. Master Set 1, take Test 1, then move on. Questions you miss come back until
+                Four training sets, one per topic area, from Preoperative &amp; Postoperative Care to Sterilization, Equipment &amp; Admin. Master a topic, then take a test. Questions you miss come back until
                 you have mastered them.
               </p>
             </div>
@@ -253,7 +252,7 @@ export default function CSTLandingPage() {
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Drill your weak areas</h3>
               <p>
                 Tigertest tracks your accuracy by content area. After each practice test, drill the
-                questions you missed, retrain that test&apos;s set, and retake until you clear 70 percent.
+                questions you missed, retrain your weakest topic, and retake until you clear 70 percent.
               </p>
             </div>
           </div>

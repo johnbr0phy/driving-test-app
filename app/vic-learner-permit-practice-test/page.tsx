@@ -57,7 +57,7 @@ const jsonLd = {
       featureList: [
         "200 Victoria learner permit practice questions",
         "4 practice tests across eight Road to Solo Driving topics",
-        "4 training sets, one per practice test",
+        "4 training sets by topic",
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
@@ -161,7 +161,7 @@ export default function VicLearnerPermitLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train, Then Test</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four training sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1, and so on. Master Set 1, take Test 1, then move on. Questions you miss come back until you have mastered them.
+                Four training sets, one per topic area, from Learner Rules, Alcohol &amp; Fatigue to Turning, Freeways &amp; Sharing the Road. Master a topic, then take a test. Questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>
@@ -258,7 +258,7 @@ export default function VicLearnerPermitLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Fix your misses, then retest</h3>
               <p>
-                Tigertest tracks your accuracy by topic. After each practice test, drill the questions you missed and retrain that test&apos;s set, then take all four tests back to back before your appointment. If you clear 78 percent on all four, you have covered the handbook.
+                Tigertest tracks your accuracy by topic. After each practice test, drill the questions you missed and retrain your weakest topic, then take all four tests back to back before your appointment. If you clear 78 percent on all four, you have covered the handbook.
               </p>
             </div>
           </div>

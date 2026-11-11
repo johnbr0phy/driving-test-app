@@ -57,7 +57,7 @@ const jsonLd = {
       featureList: [
         "200 original truck and bus theory test practice questions",
         "4 practice tests of 50 questions, 74% to pass",
-        "4 training sets, one per practice test",
+        "4 training sets by topic",
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
@@ -162,7 +162,7 @@ export default function IrelandTruckBusTheoryLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train, Then Test</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four training sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1, and so on. Master Set 1, take Test 1, then move on. Questions you miss come back until you have mastered them.
+                Four training sets, one per topic area, from Drivers&apos; Hours &amp; Tachographs to Licences, Fatigue &amp; Emergencies. Master a topic, then take a test. Questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>
@@ -259,7 +259,7 @@ export default function IrelandTruckBusTheoryLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Fix your misses, then retest</h3>
               <p>
-                Tigertest tracks your accuracy by topic. Master each training set, take its practice test, then drill the questions you missed and retrain that set. Finish by taking two tests back to back, 100 questions in two hours, before your test date.
+                Tigertest tracks your accuracy by topic. Master each training set, take a practice test, then drill the questions you missed and retrain your weakest topic. Finish by taking two tests back to back, 100 questions in two hours, before your test date.
               </p>
             </div>
           </div>

@@ -57,7 +57,7 @@ const jsonLd = {
       featureList: [
         "200 Queensland road rules practice questions",
         "4 practice tests covering giving way, licence rules, signs and safe driving",
-        "4 training sets, one per practice test",
+        "5 training sets by topic",
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
@@ -158,7 +158,7 @@ export default function QldLearnerLicenceLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train, Then Test</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four training sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1, and so on. Master Set 1, take Test 1, then move on. Questions you miss come back until you have mastered them.
+                Five training sets, one per topic area, from Giving Way to Speed, Alcohol &amp; Safe Driving. Master a topic, then take a test. Questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>
@@ -255,7 +255,7 @@ export default function QldLearnerLicenceLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Fix your misses, then retest</h3>
               <p>
-                Tigertest tracks your accuracy by topic. Master all four training sets, then take the four practice tests until you clear 90 percent on each, with no more than one giving way miss. After each test, drill the questions you got wrong and retrain that test&apos;s set before you book the real test or start PrepL.
+                Tigertest tracks your accuracy by topic. Master all five training sets, then take the four practice tests until you clear 90 percent on each, with no more than one giving way miss. After each test, drill the questions you got wrong and retrain your weakest topic before you book the real test or start PrepL.
               </p>
             </div>
           </div>

@@ -59,7 +59,7 @@ const jsonLd = {
       featureList: [
         "200 VTNE practice questions",
         "4 practice tests across all ten content domains",
-        "4 training sets, one per practice test",
+        "5 training sets by topic",
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
@@ -166,7 +166,7 @@ export default function VtneLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train, Then Test</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four training sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1, and so on. Master Set 1, take Test 1, then move on. Questions you miss come back until you have mastered them.
+                Five training sets, one per topic area, from Animal Care &amp; Nursing to Emergency Care &amp; Communication. Master a topic, then take a test. Questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>
@@ -193,7 +193,7 @@ export default function VtneLandingPage() {
                 Built on the AAVSB Content Outline
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-                The AAVSB publishes exactly how the 150 scored VTNE items are split across ten domains, and the practice tests here follow that split. Animal care and nursing is the biggest single domain, and pharmacology, surgical nursing and anesthesia together are another 40 percent, so those four sets are where most of your study time should go. Vet tech programs accredited by the AVMA CVTEA can assign Tigertest as a class at{" "}
+                The AAVSB publishes exactly how the 150 scored VTNE items are split across ten domains, and the practice tests here follow that split. Animal care and nursing is the biggest single domain, and pharmacology, surgical nursing and anesthesia together are another 40 percent, so those topics are where most of your study time should go. Vet tech programs accredited by the AVMA CVTEA can assign Tigertest as a class at{" "}
                 <Link href="/teach" className="text-brand-dark hover:text-brand-darker underline">tigertest.io/teach</Link>
                 {" "}and see which domains the cohort misses most.
               </p>
@@ -265,7 +265,7 @@ export default function VtneLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Fix your misses, then retest</h3>
               <p>
-                Tigertest tracks your accuracy by domain. The VTNE passes on a scaled score, so there is no magic percentage, but students who master all four training sets and clear 70 percent on all four practice tests have covered the outline. After each test, drill the questions you missed and retrain that test&apos;s set, then take the four tests back to back the week before your window.
+                Tigertest tracks your accuracy by domain. The VTNE passes on a scaled score, so there is no magic percentage, but students who master all five training sets and clear 70 percent on all four practice tests have covered the outline. After each test, drill the questions you missed and retrain your weakest topic, then take the four tests back to back the week before your window.
               </p>
             </div>
           </div>

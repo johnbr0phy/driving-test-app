@@ -59,7 +59,7 @@ const jsonLd = {
       featureList: [
         "200 CCA practice questions",
         "4 practice tests of 50 questions weighted like the AHIMA CCA Exam Content Outline",
-        "4 training sets, one per practice test",
+        "4 training sets by topic",
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
@@ -162,7 +162,7 @@ export default function CcaLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train, Then Test</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Each training set holds one practice test&apos;s 50 questions, covering all six domains. Questions you miss come back until you have mastered them, then you take that test for a score.
+                Four training sets by topic, from ICD-10-CM &amp; ICD-10-PCS Coding to Compliance, IT &amp; Privacy. Questions you miss come back until you have mastered them, then you take a practice test for a score.
               </p>
             </div>
           </div>

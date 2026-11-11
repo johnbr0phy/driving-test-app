@@ -83,7 +83,7 @@ const jsonLd = {
       featureList: [
         "200 registered nurse practice questions for Kenya",
         "4 mock tests of 50 questions with a 60% readiness line",
-        "4 training sets, one per mock test",
+        "4 training sets by topic",
         "Dosage calculation, midwifery and IMCI questions",
         "Instant feedback with explanations",
       ],
@@ -160,7 +160,7 @@ export default function KenckLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train, Then Test</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four training sets, one per mock test: Set 1 holds exactly the 50 questions of Test 1, and so on. Master Set 1, take Test 1, then move on. Questions you miss come back until you have mastered them.
+                Four training sets, one per topic area, from Fundamentals, Pharmacology &amp; Law to Midwifery &amp; Reproductive Health. Master a topic, then take a test. Questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>
@@ -292,7 +292,7 @@ export default function KenckLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Fix your misses, then retest</h3>
               <p>
-                Tigertest tracks your accuracy by topic. Aim for 35 or more out of 50 on all four mock tests before your exam date. After each test, drill the questions you missed and retrain that test&apos;s set.
+                Tigertest tracks your accuracy by topic. Aim for 35 or more out of 50 on all four mock tests before your exam date. After each test, drill the questions you missed and retrain your weakest topic.
               </p>
             </div>
           </div>

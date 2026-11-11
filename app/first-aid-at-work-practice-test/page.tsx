@@ -59,7 +59,7 @@ const jsonLd = {
       featureList: [
         "200 First Aid at Work practice questions",
         "4 mock tests of 50 questions with a 70% pass line",
-        "4 training sets, one per mock test",
+        "4 training sets by topic",
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
@@ -163,7 +163,7 @@ export default function FirstAidAtWorkLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train, Then Test</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four training sets, one per mock test: Set 1 holds exactly the 50 questions of Test 1, and so on. Master Set 1, take Test 1, then move on. Questions you miss come back until you have mastered them.
+                Four training sets, one per topic area, from The First-Aider&apos;s Role &amp; Major Illness to Burns, Eyes, Electricity &amp; Poisoning. Master a topic, then take a test. Questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>
@@ -262,7 +262,7 @@ export default function FirstAidAtWorkLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Fix your misses, then retest</h3>
               <p>
-                Tigertest tracks your accuracy by topic. Aim for 40 or more out of 50 on all four mock tests before your assessment. After each test, drill the questions you missed and retrain that test&apos;s set. Then practise the hands-on skills on the course itself.
+                Tigertest tracks your accuracy by topic. Aim for 40 or more out of 50 on all four mock tests before your assessment. After each test, drill the questions you missed and retrain your weakest topic. Then practise the hands-on skills on the course itself.
               </p>
             </div>
           </div>

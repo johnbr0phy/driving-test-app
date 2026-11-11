@@ -80,7 +80,7 @@ const jsonLd = {
       featureList: [
         "200 FortiGate Administrator practice questions",
         "4 practice tests of 50 questions",
-        "4 training sets, one per practice test",
+        "4 training sets by topic",
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
@@ -142,9 +142,9 @@ export default function FortigateLandingPage() {
               <Smartphone className="w-7 h-7 text-brand-dark" />
             </div>
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train Set by Set</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train Topic by Topic</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four training sets, each holding exactly one practice test&apos;s 50 questions across all ten topics, from VDOMs and HA to SD-WAN rules and IPsec phase 2 selectors. Questions you miss come back until you have mastered them.
+                Four training sets by topic, from System, HA, Fabric &amp; Cloud to Routing, SD-WAN &amp; IPsec VPN. Questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>

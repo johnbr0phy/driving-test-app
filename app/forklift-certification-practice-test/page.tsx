@@ -59,7 +59,7 @@ const jsonLd = {
       featureList: [
         "200 forklift operator practice questions",
         "4 practice tests weighted like a real operator written test",
-        "4 training sets, one per practice test",
+        "5 training sets by topic",
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
@@ -161,7 +161,7 @@ export default function ForkliftLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train, Then Test</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four training sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1, and so on. Master Set 1, take Test 1, then move on. Questions you miss come back until you have mastered them.
+                Five training sets, one per topic area, from Forklift Basics &amp; OSHA Rules to Load Handling, Docks &amp; Ramps. Master a topic, then take a test. Questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>
@@ -258,7 +258,7 @@ export default function ForkliftLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Drill the operating rules until they are reflexes</h3>
               <p>
-                Forks low and tilted back, travel in reverse when the load blocks your view, horn at every blind corner, pedestrians always have the right of way, nobody under the forks, nobody riding, stay in the seat if the truck tips. Tigertest tracks your accuracy by topic, so after each practice test drill the questions you missed, retrain that test&apos;s set, and retake until you clear 90 percent.
+                Forks low and tilted back, travel in reverse when the load blocks your view, horn at every blind corner, pedestrians always have the right of way, nobody under the forks, nobody riding, stay in the seat if the truck tips. Tigertest tracks your accuracy by topic, so after each practice test drill the questions you missed, retrain your weakest topic, and retake until you clear 90 percent.
               </p>
             </div>
           </div>

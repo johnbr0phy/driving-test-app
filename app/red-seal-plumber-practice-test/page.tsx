@@ -84,7 +84,7 @@ const jsonLd = {
         "200 Red Seal Plumber practice questions",
         "4 practice tests of 50 questions with the 70% pass mark",
         "Tests weighted like the Red Seal exam breakdown by Major Work Activity",
-        "4 training sets, one per practice test",
+        "5 training sets by topic",
         "Instant feedback with explanations",
       ],
       publisher: { "@id": `${siteUrl}/#organization` },
@@ -152,7 +152,7 @@ export default function RedSealPlumberLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train, Then Test</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four training sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1, and so on. Master Set 1, take Test 1, then move on. Questions you miss come back until you have mastered them.
+                Five training sets, one per topic area, from Occupational Skills &amp; Pipe Joining to Hydronic &amp; Low-Pressure Steam. Master a topic, then take a test. Questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>
@@ -251,7 +251,7 @@ export default function RedSealPlumberLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Fix your misses, then retest</h3>
               <p>
-                Tigertest tracks your accuracy by work activity. Aim for 80% or better on all four practice tests before you book, so you have room above the 70% line. After each test, drill the questions you missed and retrain that test&apos;s set.
+                Tigertest tracks your accuracy by work activity. Aim for 80% or better on all four practice tests before you book, so you have room above the 70% line. After each test, drill the questions you missed and retrain your weakest topic.
               </p>
             </div>
           </div>

@@ -3,6 +3,28 @@
   "name": "Examen de práctica de manipulador de alimentos",
   "examLabel": "Tarjeta de manipulador de alimentos",
   "fullName": "examen del certificado de manipulador de alimentos",
+  "trainingSets": {
+    "1": {
+      "name": "Conceptos básicos de seguridad alimentaria",
+      "weightLabel": "10 de 50 preguntas del examen"
+    },
+    "2": {
+      "name": "Higiene personal",
+      "weightLabel": "10 de 50 preguntas del examen"
+    },
+    "3": {
+      "name": "Contaminación y alérgenos",
+      "weightLabel": "10 de 50 preguntas del examen"
+    },
+    "4": {
+      "name": "Tiempo y temperatura",
+      "weightLabel": "12 de 50 preguntas del examen"
+    },
+    "5": {
+      "name": "Limpieza y desinfección",
+      "weightLabel": "8 de 50 preguntas del examen"
+    }
+  },
   "categoryLabels": {
     "fhBasics": "Conceptos básicos de seguridad alimentaria",
     "fhHygiene": "Higiene personal",
@@ -16,9 +38,9 @@
     "trainingSub": "Cuatro grupos de práctica sobre seguridad alimentaria, higiene, contaminación, temperaturas y limpieza. Usa los materiales de tu proveedor aceptado para el curso y el examen reales.",
     "testsHeading": "Exámenes de práctica · 50 preguntas de apoyo",
     "heroSubs": [
-      "Cuatro entrenamientos, cuatro exámenes. Empieza por el Entrenamiento 1.",
-      "Domina cada entrenamiento y luego haz su examen.",
-      "Sigue así. Cada entrenamiento te prepara para el examen que le sigue.",
+      "Cinco entrenamientos por tema, cuatro exámenes. Empieza por Conceptos básicos de seguridad alimentaria.",
+      "Domina cada tema y luego ponte a prueba.",
+      "Sigue así. Cada tema que dominas aparece en los exámenes.",
       "Corrige las fallas y vuelve a intentarlo.",
       "Todo listo. Saca tu tarjeta de manipulador de alimentos local."
     ],

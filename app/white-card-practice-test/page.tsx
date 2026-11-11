@@ -78,7 +78,7 @@ const jsonLd = {
       featureList: [
         "200 White Card (CPCWHS1001) practice questions",
         "4 practice tests of 50 questions across all eight topic areas",
-        "4 training sets, one per practice test",
+        "4 training sets by topic",
         "Instant feedback with explanations",
         "Auto-save progress",
       ],
@@ -148,7 +148,7 @@ export default function WhiteCardLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train, Then Test</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four training sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1, and so on. Master Set 1, take Test 1, then move on. Questions you miss come back until you have mastered them.
+                Four training sets, one per topic area, from WHS Laws &amp; Risk Management to Signs, PPE &amp; Emergencies. Master a topic, then take a test. Questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>

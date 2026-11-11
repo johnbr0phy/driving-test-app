@@ -61,7 +61,7 @@ const jsonLd = {
         "200 Red Seal Automotive Service Technician practice questions",
         "4 practice tests of 50 questions with the 70% pass mark",
         "Tests weighted like the Red Seal exam breakdown by Major Work Activity",
-        "4 training sets, one per practice test",
+        "4 training sets by topic",
         "Instant feedback with explanations",
       ],
       publisher: { "@id": `${siteUrl}/#organization` },
@@ -165,7 +165,7 @@ export default function RedSealAutomotiveLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train, Then Test</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four training sets, one per practice test: Set 1 holds exactly the 50 questions of Test 1, and so on. Master Set 1, take Test 1, then move on. Questions you miss come back until you have mastered them.
+                Four training sets, one per topic area, from Occupational Skills &amp; Engines to Driveline, Hybrid &amp; Electric Vehicles. Master a topic, then take a test. Questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>
@@ -192,7 +192,7 @@ export default function RedSealAutomotiveLandingPage() {
                 Built on the Red Seal Exam Breakdown
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-                Red Seal publishes how many of the 125 questions come from each Major Work Activity of the 2023 Occupational Standard, and the practice tests here keep that split in 50 questions. Electrical and comfort control, steering, suspension and brakes, and engine systems together are more than half the exam, so those three sets are where most of your study time should go. Instructors running a pre-apprenticeship or apprenticeship class can assign Tigertest at{" "}
+                Red Seal publishes how many of the 125 questions come from each Major Work Activity of the 2023 Occupational Standard, and the practice tests here keep that split in 50 questions. Electrical and comfort control, steering, suspension and brakes, and engine systems together are more than half the exam, so those topics are where most of your study time should go. Instructors running a pre-apprenticeship or apprenticeship class can assign Tigertest at{" "}
                 <Link href="/teach" className="text-brand-dark hover:text-brand-darker underline">tigertest.io/teach</Link>
                 {" "}and see which work activities the class misses most.
               </p>
@@ -264,7 +264,7 @@ export default function RedSealAutomotiveLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Fix your misses, then retest</h3>
               <p>
-                Tigertest tracks your accuracy by work activity. Aim for 80% or better on all four practice tests before you book, so you have room above the 70% line. After each test, drill the questions you missed and retrain that test&apos;s set.
+                Tigertest tracks your accuracy by work activity. Aim for 80% or better on all four practice tests before you book, so you have room above the 70% line. After each test, drill the questions you missed and retrain your weakest topic.
               </p>
             </div>
           </div>

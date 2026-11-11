@@ -12213,7 +12213,7 @@ const de34a: ExamConfig = {
     trainingSub: "Jedes Übungsset deckt Sachgebiete der Prüfung ab. Du bekommst sofort Rückmeldung, und falsch beantwortete Fragen kommen wieder, bis du sie sicher kannst.",
     testsHeading: "Testbögen · 50 Fragen, Bestehen ab 50 Prozent",
     heroSubs: [
-      "Fünf Übungssets, vier Testbögen.",
+      "Fünf Übungssets, vier Testbögen. Starte mit dem ersten Übungsset.",
       "Erst das Set meistern, dann den Testbogen.",
       "Weiter so. Mach einen Testbogen und sieh, wo du stehst.",
       "Fehler wiederholen, dann noch einmal testen.",

@@ -563,7 +563,6 @@ export function topPrepperEmail(v: EmailVoice, c: TopPrepperContent): string {
     heading: "You are smashing it.",
     body: [
       p(`You have answered <strong style="font-weight: 700;">${c.answers.toLocaleString("en-US")} practice questions</strong> on Tigertest. That is more than ${c.pct}% of the people who practice here.`),
-      p("I make Tigertest, and I wanted you to know that. Most people stop long before this."),
       p(c.item
         ? `You opened <strong style="font-weight: 600;">${esc(c.item)}</strong> a little while ago and it was locked. Premium opens it, along with:`
         : "A little while ago you opened a part that was locked. Premium opens it, along with:"),

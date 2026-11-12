@@ -1,6 +1,8 @@
 "use client";
 
 import { useRef, useState } from "react";
+import { usePathname } from "next/navigation";
+import { isChildPath } from "@/lib/privacyRegion";
 import { trackGuestPrompt } from "@/lib/analytics";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { takeGuestPromptVariant, trackGuestPromptTest, type GuestPromptVariant } from "@/lib/guestPromptTest";
@@ -35,7 +37,12 @@ function write(c: Counts) {
   }
 }
 
-export function useGuestPrompt(signedOut: boolean, where: string) {
+export function useGuestPrompt(guest: boolean, where: string) {
+  // Never on children's tests (CHILD_PATH_PREFIXES in lib/privacyRegion: times
+  // tables, KS2, 11+, OC, NSW Selective, NAPLAN Year 7, JNVST, AISSEE): no
+  // asking a child mid-practice to sign up with Google.
+  const pathname = usePathname();
+  const signedOut = guest && !isChildPath(pathname ?? "");
   const streak = useRef(0);
   const due = useRef(false);
   const [showing, setShowing] = useState(false);

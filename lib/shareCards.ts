@@ -53,6 +53,7 @@ const hubs: Record<string, ShareCard> = {
   be: { title: "Free practice tests for Belgium", lines: ["Free practice tests", "for Belgium"], description: "Category B theory exam in English, college entrance and IT certifications.", footer: "Find your test at tigertest.io/be", color: "#857300", tint: "#FDFBED", mascots: ["dmv", "sat", "aws"] },
   fi: { title: "Free practice tests for Finland", lines: ["Free practice tests", "for Finland"], description: "Teoriakoe in English, college entrance and IT certifications.", footer: "Find your test at tigertest.io/fi", color: "#002385", tint: "#EDF1FD", mascots: ["dmv", "sat", "aws"] },
   de: { title: "Kostenlose Übungstests für Deutschland", lines: ["Kostenlose", "Übungstests für", "Deutschland"], description: "Führerschein-Theorie und Zertifizierungen. Jede Antwort erklärt.", footer: "Finde deinen Test auf tigertest.io/de", color: "#1F1F1F", tint: "#F2F2F2", mascots: ["dmv", "sat", "aws"] },
+  it: { title: "Test di pratica gratuiti per l'Italia", lines: ["Test di pratica", "gratuiti per", "l'Italia"], description: "Quiz patente B e certificazioni di italiano B1. Ogni risposta spiegata.", footer: "Trova il tuo test su tigertest.io/it", color: "#00703C", tint: "#EDF8F2", mascots: ["dmv", "sat", "aws"] },
   mt: { title: "Free practice tests for Malta", lines: ["Free practice tests", "for Malta"], description: "Transport Malta theory test, college entrance and IT certifications.", footer: "Find your test at tigertest.io/mt", color: "#C00C0C", tint: "#FDEDED", mascots: ["dmv", "sat", "aws"] },
 };
 

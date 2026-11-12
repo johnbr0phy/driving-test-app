@@ -17,6 +17,7 @@ export const URL_LANGUAGE_PREFIXES: { prefix: string; lang: string; includeRoot:
   { prefix: "/ko", lang: "ko", includeRoot: false },
   { prefix: "/zh", lang: "zh-Hans", includeRoot: false },
   { prefix: "/de", lang: "de", includeRoot: true },
+  { prefix: "/it", lang: "it", includeRoot: true },
   { prefix: "/sv", lang: "sv", includeRoot: false },
   { prefix: "/da", lang: "da", includeRoot: false },
   { prefix: "/fi", lang: "fi", includeRoot: false },

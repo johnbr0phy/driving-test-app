@@ -2,7 +2,7 @@
 
 import { getTigerAsset } from "@/lib/tigerAssets";
 
-import { useEffect, useState, Suspense } from "react";
+import { useEffect, useRef, useState, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { PaywallModal } from "@/components/PaywallModal";
 import { SuperAmazingCard } from "@/components/SuperAmazingCard";
@@ -197,6 +197,20 @@ function DashboardContent() {
     setPaywallFeature(feature);
     setPaywallOpen(true);
   };
+
+  // An email's "Unlock" button lands here with ?unlock=1: open the paywall
+  // once the account has loaded, unless it is already Premium.
+  const unlockAsked = useRef(false);
+  useEffect(() => {
+    if (unlockAsked.current || !hydrated || authLoading || (user && !firestoreLoaded)) return;
+    const url = new URL(window.location.href);
+    if (url.searchParams.get("unlock") !== "1") return;
+    unlockAsked.current = true;
+    url.searchParams.delete("unlock");
+    window.history.replaceState(null, "", url.pathname + url.search + url.hash);
+    if (!isPremium) handlePremiumClick("training_set_4", "email_unlock", "Premium");
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [hydrated, authLoading, user, firestoreLoaded, isPremium]);
 
   // Handle upgrade (redirect to Stripe)
   const handleUpgrade = async () => {

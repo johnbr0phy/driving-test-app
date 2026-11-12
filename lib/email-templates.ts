@@ -4,7 +4,7 @@
 // tiger and light theme, a 560px white card, and a neutral unknown-exam fallback.
 // Tables and inline styles keep the layout usable in email clients.
 
-import { EMAIL_INBOX, exitQuestionInbox, emailPreheader } from "@/lib/email-inbox";
+import { EMAIL_INBOX, exitQuestionInbox, topPrepperInbox, emailPreheader } from "@/lib/email-inbox";
 import { practiceLabel } from "@/lib/practiceLabel";
 import { postalFooterLine } from "@/lib/emailPostal";
 import { EmailVoice, dashboardUrl, statsUrl } from "@/lib/email-voice";
@@ -532,6 +532,61 @@ export function exitQuestionEmail(v: EmailVoice, c: ExitQuestionContent): string
         : "When you are ready, you can continue with another practice session."),
       cta(DASH(v, campaign), `Continue ${name}Practice`),
       signoff(),
+    ].join("\n"),
+  });
+}
+
+/** A short list with a tick per line, each item kept to one line on a phone. */
+function checklist(items: string[]): string {
+  const rows = items.map((item, i) => `<tr>
+<td width="30" valign="top" style="padding: ${i ? 11 : 0}px 0 0; font-size: 17px; line-height: 1.4; font-weight: 700; color: #FF6B35;">&#10003;</td>
+<td valign="top" style="padding: ${i ? 11 : 0}px 0 0; font-size: 16px; line-height: 1.4; color: #1f2d30;">${item}</td>
+</tr>`).join("\n");
+  return `              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="margin: 0 0 6px; border: 1px solid #ebe7e0; border-radius: 12px; background-color: #faf8f5;"><tr><td style="padding: 18px 20px;">
+<table role="presentation" width="100%" cellspacing="0" cellpadding="0">
+${rows}
+</table>
+</td></tr></table>`;
+}
+
+/** What the top prepper email says about one person (lib/topPrepper.ts). */
+export interface TopPrepperContent {
+  /** Questions answered on Tigertest. */
+  answers: number;
+  /** They have answered more than this percent of people who practise. */
+  pct: number;
+  /** The locked thing they opened, as the paywall named it; may be empty. */
+  item: string;
+  /** Premium's price where they are ("$9.99", "£7.99"), or "" when their country is not known. */
+  price?: string;
+}
+
+/**
+ * Sent by /api/cron/top-prepper. The button opens the test's dashboard with
+ * `?unlock=1`, which opens the paywall there, so checkout is one tap away.
+ */
+export function topPrepperEmail(v: EmailVoice, c: TopPrepperContent): string {
+  const inbox = topPrepperInbox(c.pct);
+  const name = v.id === "unknown" ? "" : `${v.shortName} `;
+  const unlock = `${DASH(v, "top_prepper")}&unlock=1`;
+  return emailShell({
+    voice: v,
+    expression: 1,
+    eyebrow: "YOU ARE A TOP PREPPER",
+    title: inbox.subject,
+    preheader: inbox.preheader,
+    heading: "You are smashing it.",
+    body: [
+      p(`You have answered <strong style="font-weight: 700;">${c.answers.toLocaleString("en-US")} practice questions</strong> on Tigertest. That is more than ${c.pct}% of the people who practice here.`),
+      p(c.item
+        ? `You opened <strong style="font-weight: 600;">${esc(c.item)}</strong> a little while ago and it was locked. Premium opens it, along with:`
+        : "A little while ago you opened a part that was locked. Premium opens it, along with:"),
+      checklist(v.id === "dmv"
+        ? ["Training sets 3 and 4", "Practice tests 3 and 4", "Every question you keep missing", "Premium on every other test here"]
+        : [`The final ${name}training set`, `The final ${name}practice test`, "Every question you keep missing", "Premium on every other test here"]),
+      cta(unlock, `Unlock ${name}Premium${c.price ? ` · ${esc(c.price)}` : ""}`),
+      p(c.price ? `One payment of ${esc(c.price)}. No subscription.` : "Pay once and it's yours. No subscription."),
+      signoff("Keep going,"),
     ].join("\n"),
   });
 }

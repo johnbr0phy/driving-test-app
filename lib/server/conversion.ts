@@ -4,6 +4,7 @@ import { getInternalUids } from '@/lib/server/internalUsers';
 import { getCatalogEntry } from '@/lib/testCatalog';
 import { paywallHitFeature, purchaseExam, purchaseLocationLabel } from '@/lib/purchaseAttribution';
 import { dayNumber, grid, isLive, pack, payChance, type ConvRow, type PackedRow, type Sale } from '@/lib/conversion';
+import { emptyTopPrepperResult, tallyTopPrepper, type TopPrepperResult } from '@/lib/topPrepper';
 import { REGIONS, isRegion, regionFromCountry, regionOfTest } from '@/lib/region';
 import { formatPrice, paymentNetUsdCents, premiumPriceFor } from '@/lib/pricing';
 
@@ -37,6 +38,8 @@ export interface ConversionPayload {
     byMarket: Record<string, Record<string, number>>;
   };
   trackedSince: string;
+  /** The top prepper email against its holdout (lib/topPrepper.ts). */
+  topPrepper: TopPrepperResult;
   /** Indexed by a buyer row's `soldBy`. */
   paywalls: {
     feature: string;
@@ -134,7 +137,7 @@ export async function buildConversion(): Promise<ConversionPayload> {
   const db = getAdminDb();
   const [usersSnap, paymentsSnap, paywallsDoc, originsSnap, internalUids] = await Promise.all([
     db.collection('users')
-      .select('createdAt', 'activeDates', 'lastUpdated', 'subscription', 'paywallHits', '_stats', 'primaryExam', 'selectedState', 'paywallCountry', 'region')
+      .select('createdAt', 'activeDates', 'lastUpdated', 'subscription', 'paywallHits', '_stats', 'primaryExam', 'selectedState', 'paywallCountry', 'region', 'topPrepper')
       .get(),
     db.collection('payments').get(),
     db.doc('analytics/paywalls').get(),
@@ -236,6 +239,7 @@ export async function buildConversion(): Promise<ConversionPayload> {
     market: string;
   };
   const accounts: Account[] = [];
+  const topPrepper = emptyTopPrepperResult();
   let totalAccounts = 0;
   for (const doc of usersSnap.docs) {
     if (internalUids.has(doc.id)) continue;
@@ -261,6 +265,11 @@ export async function buildConversion(): Promise<ConversionPayload> {
     const lastActive = dates[dates.length - 1] ?? dayKey(d.lastUpdated);
     const purchasedAt = paid ? ms(sub.purchasedAt) ?? paidAt.get(doc.id) ?? null : null;
     const purchaseDay = purchasedAt !== null ? new Date(purchasedAt).toISOString().slice(0, 10) : null;
+    const tp = d.topPrepper as { group?: unknown; at?: unknown } | undefined;
+    const tpAt = ms(tp?.at);
+    if (tp && tpAt !== null && (tp.group === 'sent' || tp.group === 'holdout')) {
+      tallyTopPrepper(topPrepper, tp.group, tpAt, purchasedAt, Date.now());
+    }
 
     // The paywall that sold: the checkout's own location, else the last one
     // seen before paying (payments from before the webhook stored it).
@@ -436,6 +445,7 @@ export async function buildConversion(): Promise<ConversionPayload> {
     sales,
     daily: { paywallHits: paywallHitsByDay, purchases: purchasesByDay, signedIn: signedInByDay, signedInEst: signedInEstByDay, byMarket: hitsByMarket },
     trackedSince: TRACKED_SINCE,
+    topPrepper,
     paywalls,
     leads,
   };

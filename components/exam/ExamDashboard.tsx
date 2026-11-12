@@ -8,7 +8,7 @@
 // and miss drill. The final training step and final test are Premium
 // (lib/examLocks.ts); everything before them is free.
 
-import { Suspense, useEffect, useState } from "react";
+import { Suspense, useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
@@ -145,6 +145,19 @@ function ExamDashboardContent({ exam: source }: { exam: ExamConfig }) {
     const correct = Math.min(p.size, mastered.filter((id) => trainingPartOf(p.set.id, id) === p.part).length);
     return { correct, total: p.size, complete: correct >= p.size };
   };
+  // An email's "Unlock" button lands here with ?unlock=1: open the paywall
+  // once the account has loaded, unless it is already unlocked.
+  const unlockAsked = useRef(false);
+  useEffect(() => {
+    if (unlockAsked.current || !locks.settled) return;
+    const url = new URL(window.location.href);
+    if (url.searchParams.get("unlock") !== "1") return;
+    unlockAsked.current = true;
+    url.searchParams.delete("unlock");
+    window.history.replaceState(null, "", url.pathname + url.search + url.hash);
+    if (!locks.paid) paywall.open("email_unlock", "Premium");
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [locks.settled, locks.paid]);
   // The completion CTA points at a genuinely green row. A split part never
   // claims its whole set. Consume the marker so Back/refresh does not replay it.
   useEffect(() => {

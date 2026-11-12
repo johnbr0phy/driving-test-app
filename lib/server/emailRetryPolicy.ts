@@ -3,7 +3,7 @@
  */
 import { createHash } from 'crypto';
 
-type CampaignGate = 'NEW_TESTS_CAMPAIGN' | 'QUIZZES_CAMPAIGN' | 'EXIT_QUESTION_CAMPAIGN';
+type CampaignGate = 'NEW_TESTS_CAMPAIGN' | 'QUIZZES_CAMPAIGN' | 'EXIT_QUESTION_CAMPAIGN' | 'TOP_PREPPER_CAMPAIGN';
 type Window = { version: 1; capturedAt: number; expiresAt: number; fingerprint: string };
 export type EmailRetryPolicy = Window & (
   { kind: 'snapshot'; campaignGate?: CampaignGate } |
@@ -79,7 +79,7 @@ export function retryPolicyEligible(policy: unknown, freshUser: Record<string, a
     p.expiresAt < p.capturedAt || typeof p.fingerprint !== 'string' || !/^[a-f0-9]{64}$/.test(p.fingerprint)) return false;
   if (p.kind === 'snapshot') {
     if (p.campaignGate !== undefined &&
-      (!['NEW_TESTS_CAMPAIGN', 'QUIZZES_CAMPAIGN', 'EXIT_QUESTION_CAMPAIGN'].includes(p.campaignGate) ||
+      (!['NEW_TESTS_CAMPAIGN', 'QUIZZES_CAMPAIGN', 'EXIT_QUESTION_CAMPAIGN', 'TOP_PREPPER_CAMPAIGN'].includes(p.campaignGate) ||
         process.env[p.campaignGate] !== 'send')) return false;
     return fingerprint(snapshot(freshUser)) === p.fingerprint;
   }

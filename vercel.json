@@ -67,6 +67,10 @@
     {
       "path": "/api/cron/welcome-backstop",
       "schedule": "25 * * * *"
+    },
+    {
+      "path": "/api/cron/top-prepper",
+      "schedule": "20 16 * * *"
     }
   ]
 }

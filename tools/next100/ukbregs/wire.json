@@ -1,0 +1,137 @@
+{
+  "blueprintComment": [
+    "Building Regulations knowledge test (England): Building Regulations 2010 Schedule 1 and the",
+    "Approved Documents A to T, checked November 2026, including the AD B amendments in force 30",
+    "September 2026 (second stair at a top storey of 18 m or more, evacuation lifts). There is no",
+    "single official exam, so the split is Tigertest's (weighted to fire, structure and access) and",
+    "70% is a readiness line. Parts L and F to recheck at 24 March 2027 (Future Homes Standard)."
+  ],
+  "copy": {
+    "guestPrompt": "to save your Building Regulations progress and track every question you miss",
+    "trainingSub": "Five topic sets across the Approved Documents, from structure and fire to services. Missed questions come back until you master them.",
+    "testsHeading": "Practice tests · 50 questions across Parts A to T, 70% readiness line",
+    "heroSubs": [
+      "Five training sets, four practice tests. Start with Structure, Site & Moisture.",
+      "Master each topic, then test yourself.",
+      "Keep going. Every topic you master shows up on the tests.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You know your Approved Documents."
+    ],
+    "sourceLine": "Based on the Building Regulations 2010 and the Approved Documents for England, checked November 2026. Original questions; there is no single official exam."
+  },
+  "themeComment": "Building Regulations theme: slate",
+  "blurb": "Practise the Approved Documents A to T for England: foundations, fire escape, ventilation, drainage, stairs, Part L U-values and more.",
+  "org": "MHCLG · Building Regulations 2010 (England)",
+  "aliases": "building regs building regulations approved documents approved document part a part b part l part m part f site manager building control regs test bregs construction",
+  "related": [
+    "ukrbi",
+    "ukg3",
+    "cscs"
+  ],
+  "shareTitle": "Building Regulations Practice Test",
+  "shareDesc": "Practise the Approved Documents A to T for England: structure, fire, ventilation, drainage, access and energy.",
+  "teaches": "a construction or building control course",
+  "examFacts": {
+    "answer": "There is no single official Building Regulations exam. Builders, site managers, construction students and building control trainees are expected to know the requirements of Schedule 1 to the Building Regulations 2010 and the Approved Documents that show how to meet them in England. This practice test covers Parts A to T and regulation 7 with 200 original questions in four 50-question tests, and uses 70% as a readiness line.",
+    "rows": [
+      [
+        "Who sets the rules",
+        "MHCLG (Approved Documents approved by the Secretary of State)"
+      ],
+      [
+        "Law",
+        "Building Regulations 2010 (SI 2010/2214), Schedule 1"
+      ],
+      [
+        "Covers",
+        "England only; Wales and Scotland have their own"
+      ],
+      [
+        "Pass mark",
+        "No official exam; Tigertest uses 70%"
+      ],
+      [
+        "Recent change",
+        "Second stair for flats with a top storey of 18 m or more, from 30 September 2026"
+      ],
+      [
+        "Coming",
+        "Future Homes Standard (Parts L and F) from 24 March 2027"
+      ]
+    ],
+    "basedOn": "the Approved Documents on GOV.UK and SI 2010/2214, checked November 2026",
+    "source": {
+      "name": "GOV.UK: Approved Documents",
+      "url": "https://www.gov.uk/government/collections/approved-documents"
+    }
+  },
+  "landing": {
+    "title": "Building Regulations Practice Test 2026 - Free Approved Documents Quiz",
+    "metaDescription": "Free Building Regulations practice for England: 200 original questions on Approved Documents A to T, from structure and fire safety to ventilation, drainage and Part L.",
+    "description": "Free practice on the Building Regulations 2010 and the Approved Documents for England: 200 original questions on structure, fire safety, site and moisture, sound, ventilation, sanitation, drainage, combustion appliances, stairs and access, energy and services. Four 50-question practice tests with an explanation on every question.",
+    "keywords": "building regulations practice test, approved documents quiz, building regs questions and answers, part b fire safety questions, part l quiz, building control test, site manager building regulations",
+    "ogAlt": "Tigertest free Building Regulations practice test",
+    "appName": "Tigertest - Free Building Regulations Practice",
+    "featureList": [
+      "200 Approved Document practice questions",
+      "4 practice tests of 50 questions",
+      "5 training sets by topic",
+      "Instant feedback with explanations",
+      "Auto-save progress"
+    ],
+    "h1": "Free Building Regulations Practice Test 2026",
+    "heroSubtitle": "200 questions on the Approved Documents A to T for England: foundations, fire escape, sound, ventilation, drainage, stairs, access and Part L. Tuned for mobile. No account needed.",
+    "howTrain": "Five training sets, from Structure, Site & Moisture to Safety, Access & Services. Master a topic, then take a test. Questions you miss come back until you have mastered them.",
+    "howTest": "Four 50-question practice tests across every Approved Document, with a 70% readiness line and an explanation of the right answer on every question.",
+    "blueprintHeading": "Built on the Approved Documents A to T",
+    "blueprintPara": "Every question comes from the current Approved Documents and Schedule 1 of the Building Regulations 2010. Fire safety, structure and stairs and access carry the most questions because they are where site mistakes cost most. Every question is original.",
+    "tutors": [
+      "Teaching construction, site management or building control? Set Tigertest as practice at",
+      "and see which Approved Documents your group misses most. It is free for you and your learners."
+    ],
+    "studyHeading": "How to Learn the Building Regulations",
+    "tips": [
+      [
+        "Learn what each Part is for",
+        "Start with the 18 Parts and what each one controls: A structure, B fire, C site and moisture, E sound, F ventilation, G water and sanitation, H drainage, J heat producing appliances, K falls and glazing, L energy, M access and so on. Most questions name a situation and ask which rule applies."
+      ],
+      [
+        "Know the figures used on site",
+        "Learn the numbers that come up every day: stair rise and going limits, guarding heights, escape window sizes, fall on drains, hearth sizes and the U-value limits in Part L."
+      ],
+      [
+        "Watch for the 2026 changes",
+        "Approved Document B changed on 30 September 2026 for tall residential buildings, and Parts L and F change with the Future Homes Standard from 24 March 2027. Check the edition a project was approved under."
+      ],
+      [
+        "Fix your misses, then retest",
+        "Tigertest tracks your accuracy by Approved Document. Aim for 85 percent on every practice test, then retrain your weakest topic."
+      ]
+    ],
+    "faqHeading": "Building Regulations Frequently Asked Questions",
+    "faqs": [
+      [
+        "Is there an official Building Regulations exam?",
+        "No single one. Building control bodies, colleges and employers test knowledge of the Building Regulations in their own courses and assessments. This test checks that you know the technical requirements and the Approved Document figures used on site in England."
+      ],
+      [
+        "Which Approved Documents does it cover?",
+        "Parts A (structure), B (fire), C and D (site, moisture, cavity fill), E (sound), F (ventilation), G (sanitation and water efficiency), H (drainage), J (combustion appliances), K (falling and glazing), L (energy), M (access), O (overheating), P (electrical safety), Q (security), R (broadband), S (EV charging) and T (toilets), plus regulation 7 on materials and workmanship."
+      ],
+      [
+        "Is it up to date with the 2026 changes?",
+        "Yes. It includes the Approved Document B amendments in force from 30 September 2026 (more than one common stair for flats with a top storey of 18 m or more, evacuation lifts) and notes the Future Homes Standard, which changes Parts L and F from 24 March 2027."
+      ],
+      [
+        "Does it cover Wales or Scotland?",
+        "No. Wales has its own Approved Documents and Scotland uses the Building Standards technical handbooks. The figures here are for England."
+      ],
+      [
+        "Are these real exam questions?",
+        "No. Every question is written by Tigertest from the Approved Documents and the Building Regulations 2010, without copying any course test or commercial question bank."
+      ]
+    ],
+    "ctaHeading": "Ready to Test Your Building Regs?",
+    "ctaSub": "Start for free. No account required. 200 questions across Parts A to T."
+  }
+}

@@ -122,6 +122,30 @@ export function getShareCard(id: string, language = "en"): ShareCard | undefined
 
 // Light-mode exam brand colours, matching globals.css.
 const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
+  "ukgas": {
+    "color": "hsl(285, 70%, 26%)",
+    "tint": "hsl(285, 70%, 95%)"
+  },
+  "ukplumb": {
+    "color": "hsl(125, 40%, 22%)",
+    "tint": "hsl(125, 40%, 95%)"
+  },
+  "ukwater": {
+    "color": "hsl(155, 40%, 22%)",
+    "tint": "hsl(155, 40%, 95%)"
+  },
+  "ukbregs": {
+    "color": "hsl(260, 20%, 30%)",
+    "tint": "hsl(260, 20%, 95%)"
+  },
+  "ukrbi": {
+    "color": "hsl(310, 40%, 30%)",
+    "tint": "hsl(310, 40%, 95%)"
+  },
+  "ukg3": {
+    "color": "hsl(70, 60%, 30%)",
+    "tint": "hsl(70, 60%, 95%)"
+  },
   "cdl": {
     "color": "hsl(217, 91%, 52.2%)",
     "tint": "hsl(214, 100%, 97%)"

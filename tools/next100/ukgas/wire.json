@@ -1,0 +1,137 @@
+{
+  "blueprintComment": [
+    "ACS CCN1 core domestic gas safety assessment (Great Britain), checked November 2026: GSIUR 1998",
+    "as amended, HSE L56 (5th edition), the CCN1 safety assessment criteria (Issue 20.1, IGEM),",
+    "IGEM/G/11 Edition 2 with the 2022 and 2024 amendments, and Approved Document J (England).",
+    "No question count, weights or pass mark are published, so the split over the CCN1 sections and",
+    "the 70% line are Tigertest's. Knowledge only; the practical assessment is not modelled."
+  ],
+  "copy": {
+    "guestPrompt": "to save your Gas Safe ACS progress and track every question you miss",
+    "trainingSub": "Five topic sets, from the law and emergency actions to unsafe situations. Missed questions come back until you master them.",
+    "testsHeading": "Practice tests · 50 questions across every CCN1 topic, 70% readiness line",
+    "heroSubs": [
+      "Five training sets, four practice tests. Start with Legislation & Emergency Actions.",
+      "Master each topic, then test yourself.",
+      "Keep going. Every topic you master shows up on the tests.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. Book your ACS assessment."
+    ],
+    "sourceLine": "Based on the Gas Safety (Installation and Use) Regulations 1998, HSE L56 and the CCN1 criteria, checked November 2026. Original questions; the practical assessment is done at the centre."
+  },
+  "themeComment": "Gas Safe ACS theme: deep flame violet",
+  "blurb": "Practise the knowledge side of the ACS CCN1 core domestic gas safety assessment: GSIUR, L56, unsafe situations, CO, ventilation, flues and tightness testing.",
+  "org": "ACS · core domestic gas safety (CCN1)",
+  "aliases": "gas safe acs ccn1 core gas safety domestic gas engineer gas safe register gsiur l56 tightness test unsafe situations giusp igem g11 acs reassessment gas fitter corgi gas exam",
+  "related": [
+    "ukplumb",
+    "ukg3",
+    "ukwater"
+  ],
+  "shareTitle": "Gas Safe ACS (CCN1) Practice Test",
+  "shareDesc": "Practise the gas safety law, unsafe situations, CO, ventilation, flues and tightness testing for ACS CCN1.",
+  "teaches": "a gas safety (ACS) course",
+  "examFacts": {
+    "answer": "The ACS CCN1 assessment is the core domestic gas safety assessment of the Nationally Accredited Certification Scheme. Gas engineers in Great Britain who want to join Gas Safe Register show their competence by a recognised qualification or by passing CCN1 plus the appliance assessments they need at a UKAS-accredited certification body's assessment centre. Assessments combine practical tasks and theory, and certificates are renewed every five years. Tigertest covers the knowledge side: the Gas Safety (Installation and Use) Regulations 1998, HSE L56, the unsafe situations procedure, combustion and carbon monoxide, ventilation, flues, tightness testing, meters and safety devices.",
+    "rows": [
+      [
+        "Scheme",
+        "Nationally Accredited Certification Scheme (ACS), standards by IGEM"
+      ],
+      [
+        "Assessed by",
+        "UKAS-accredited certification bodies at ACS centres"
+      ],
+      [
+        "Leads to",
+        "A certificate Gas Safe Register accepts for registration"
+      ],
+      [
+        "Format",
+        "Practical and theory assessments against the CCN1 criteria"
+      ],
+      [
+        "Pass mark",
+        "Not published; Tigertest uses 70%"
+      ],
+      [
+        "Renewal",
+        "Every 5 years"
+      ]
+    ],
+    "basedOn": "the IGEM ACS assessment pages, the CCN1 criteria (Issue 20.1) and HSE L56, checked November 2026",
+    "source": {
+      "name": "IGEM: ACS assessment",
+      "url": "https://www.igem.org.uk/technical/standard-setting-body/assessment.html"
+    }
+  },
+  "landing": {
+    "title": "Gas Safe ACS CCN1 Practice Test 2026 - Free Gas Safety Mock Exams",
+    "metaDescription": "Free ACS CCN1 practice: 200 original questions on gas safety law, unsafe situations, CO, ventilation, flues, tightness testing, meters and safety devices.",
+    "description": "Free practice for the knowledge side of the ACS CCN1 core domestic gas safety assessment: 200 original questions on gas safety legislation, emergency actions, combustion, carbon monoxide, ventilation, tightness testing and purging, meters and regulators, unsafe situations, safety devices, chimneys and flues and appliance installation. Four 50-question practice tests with an explanation on every question.",
+    "keywords": "acs ccn1 practice test, gas safe mock exam, ccn1 questions, gas safety exam uk, unsafe situations questions, tightness test quiz, gsiur l56 practice, acs reassessment practice",
+    "ogAlt": "Tigertest free Gas Safe ACS CCN1 practice test",
+    "appName": "Tigertest - Free Gas Safe ACS (CCN1) Practice",
+    "featureList": [
+      "200 gas safety practice questions",
+      "4 practice tests of 50 questions",
+      "5 training sets by topic",
+      "Instant feedback with explanations",
+      "Auto-save progress"
+    ],
+    "h1": "Free Gas Safe ACS (CCN1) Practice Test 2026",
+    "heroSubtitle": "200 questions on the knowledge side of ACS CCN1: gas safety law and L56, unsafe situations, CO, ventilation, flues, tightness testing and safety devices. Tuned for mobile. No account needed.",
+    "howTrain": "Five training sets, from Legislation & Emergency Actions to Unsafe Situations & Safety Devices. Master a topic, then take a test. Questions you miss come back until you have mastered them.",
+    "howTest": "Four 50-question practice tests across every CCN1 topic, with a 70% readiness line and an explanation of the right answer on every question.",
+    "blueprintHeading": "Built on the CCN1 Assessment Criteria",
+    "blueprintPara": "The ACS does not publish how the theory papers are weighted, so the practice tests spread across the sections of the CCN1 criteria, with the law, tightness testing, unsafe situations, flues and appliances carrying the most questions. Every question is original. Paid standards are not quoted.",
+    "tutors": [
+      "Running ACS or gas training courses? Set Tigertest as practice before assessment at",
+      "and see which topics your candidates miss most. It is free for you and your learners."
+    ],
+    "studyHeading": "How to Prepare for ACS CCN1",
+    "tips": [
+      [
+        "Know the unsafe situations procedure cold",
+        "Learn the difference between Immediately Dangerous and At Risk, what you must do for each, and what you need the responsible person's permission for. A wrong call here matters more than any score."
+      ],
+      [
+        "Learn the law by regulation",
+        "Know who the Gas Safety (Installation and Use) Regulations put duties on: the installer, the landlord, the responsible person. Know what the L56 code says about competence, safety checks and records."
+      ],
+      [
+        "Understand combustion and CO",
+        "Know what complete and incomplete combustion produce, the signs of an appliance making carbon monoxide, and the symptoms and actions when CO is suspected."
+      ],
+      [
+        "Fix your misses, then retest",
+        "Tigertest tracks your accuracy by topic. Aim for 90 percent on every practice test, then retrain your weakest topic."
+      ]
+    ],
+    "faqHeading": "Gas Safe ACS (CCN1) Frequently Asked Questions",
+    "faqs": [
+      [
+        "What is ACS CCN1?",
+        "It is the core domestic natural gas safety assessment of the Nationally Accredited Certification Scheme. Passing it, with the appliance assessments for the work you do, gives a certificate of competence that Gas Safe Register accepts for registration."
+      ],
+      [
+        "Does this practice test cover the practical assessment?",
+        "No. It covers the knowledge side: the law, L56, the unsafe situations procedure, combustion, CO, ventilation, flues, tightness testing, meters and safety devices. Pipework, live testing and appliance work are assessed hands-on at the assessment centre."
+      ],
+      [
+        "What pass mark should I aim for?",
+        "The scheme does not publish a percentage for the theory papers. Tigertest uses 70% as a readiness line; aim well above it, because a single wrong call on an Immediately Dangerous situation matters more than a score."
+      ],
+      [
+        "Which rules does it follow?",
+        "The Gas Safety (Installation and Use) Regulations 1998 as amended and HSE's L56 code of practice, IGEM/G/11 Edition 2 (with the 2022 and 2024 amendments), the CCN1 criteria Issue 20.1 and, for building rules, England's Approved Document J. Northern Ireland has its own regulations."
+      ],
+      [
+        "How often do gas engineers have to be reassessed?",
+        "ACS certificates are renewed every five years, through ACS reassessment or the Group Competency Scheme."
+      ]
+    ],
+    "ctaHeading": "Ready for Your ACS Assessment?",
+    "ctaSub": "Start for free. No account required. 200 questions across every CCN1 topic."
+  }
+}

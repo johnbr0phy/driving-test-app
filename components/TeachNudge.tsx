@@ -55,7 +55,7 @@ const TEACHER_LED = new Set([
   // Trade schools, pre-licensing courses and instructor-led certifications
   "cdl", "cdlx", "moto", "osha", "forklift", "epa608", "foodmgr", "security", "lifeguard", "hunter", "cosmetology",
   "realestate", "insurance", "pnc", "ham", "civics",
-  "uksia", "uk18ed", "capal", "caelec", "auwhite",
+  "uksia", "uk18ed", "ukgas", "ukplumb", "ukwater", "ukbregs", "ukrbi", "ukplumb", "ukg3", "ukwater", "capal", "caelec", "auwhite",
   "cscs", "ukfood", "ukaplh",
   "caauto", "caplumb", "cacarp", "caweld", "cawhmis", "caguard",
   "aursa", "aurcg", "aufss", "auforklift", "auwah",

@@ -1,0 +1,105 @@
+{
+  "id": "ukrbi",
+  "stateCode": "UKRBI",
+  "idBase": 27100,
+  "prefix": "UKRBI-",
+  "slug": "/building-inspector",
+  "landingPath": "/registered-building-inspector-practice-test",
+  "dataFile": "data/uk-registered-building-inspector-questions.json",
+  "name": "Registered Building Inspector Practice Test",
+  "shortName": "Building Inspector",
+  "examLabel": "RBI competence assessment",
+  "fullName": "Registered Building Inspector (RBI) competence assessment, England (Building Safety Act 2022, Building Safety Regulator)",
+  "icon": "hardhat",
+  "passPct": 70,
+  "passNote": "Readiness line, not an official pass mark: BSR-approved schemes set their own assessment methods.",
+  "categories": [
+    {
+      "key": "ukrbiRegistration",
+      "label": "Registration, Classes & Restricted Activities",
+      "perTest": 6,
+      "segment": "REG"
+    },
+    {
+      "key": "ukrbiConduct",
+      "label": "Code of Conduct",
+      "perTest": 7,
+      "segment": "COC"
+    },
+    {
+      "key": "ukrbiProcedure",
+      "label": "Building Control Procedure",
+      "perTest": 7,
+      "segment": "PRO"
+    },
+    {
+      "key": "ukrbiDutyholders",
+      "label": "Dutyholders & Competence",
+      "perTest": 6,
+      "segment": "DUT"
+    },
+    {
+      "key": "ukrbiHrb",
+      "label": "Higher-Risk Buildings",
+      "perTest": 7,
+      "segment": "HRB"
+    },
+    {
+      "key": "ukrbiEnforcement",
+      "label": "Enforcement & Dangerous Structures",
+      "perTest": 6,
+      "segment": "ENF"
+    },
+    {
+      "key": "ukrbiOperational",
+      "label": "Operational Standards & Inspection",
+      "perTest": 7,
+      "segment": "OPS"
+    },
+    {
+      "key": "ukrbiLawSafety",
+      "label": "Wider Law, Guidance & Safety",
+      "perTest": 4,
+      "segment": "LAW"
+    }
+  ],
+  "trainingSets": [
+    {
+      "name": "Registration & Code of Conduct",
+      "categories": [
+        "ukrbiRegistration",
+        "ukrbiConduct"
+      ],
+      "size": 52
+    },
+    {
+      "name": "Building Control Functions",
+      "categories": [
+        "ukrbiProcedure",
+        "ukrbiDutyholders"
+      ],
+      "size": 52
+    },
+    {
+      "name": "Inspections & Enforcement",
+      "categories": [
+        "ukrbiEnforcement",
+        "ukrbiOperational"
+      ],
+      "size": 52
+    },
+    {
+      "name": "Higher-Risk Buildings & Safety",
+      "categories": [
+        "ukrbiHrb",
+        "ukrbiLawSafety"
+      ],
+      "size": 44
+    }
+  ],
+  "weights": "Tigertest's split around the BICoF subject areas and the RBI code; BSR publishes no weights.",
+  "hue": "310 40% 30%",
+  "borrowTiger": "nhie",
+  "hubGroup": "UK workplace and trade certificates",
+  "teacherLed": true
+}

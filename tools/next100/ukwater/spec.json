@@ -1,0 +1,118 @@
+{
+  "id": "ukwater",
+  "name": "Water Regulations Practice Test",
+  "fullName": "Water Regulations (Water Supply (Water Fittings) Regulations 1999 and Byelaws)",
+  "stateCode": "UKWATER",
+  "idBase": 26700,
+  "tests": [
+    26701,
+    26702,
+    26703,
+    26704
+  ],
+  "prefix": "UKWATER-",
+  "slug": "/water-regulations",
+  "landingPath": "/water-regulations-practice-test",
+  "dataFile": "data/uk-water-regulations-questions.json",
+  "region": "UK",
+  "passPct": 80,
+  "passNote": "BPEC Water Regulations & Byelaws: 52 open-book MCQs in 104 minutes, pass 42 (80%). City & Guilds 3345 unit 301/304: 50 MCQs in 105 minutes, open book; no pass mark published.",
+  "blueprintSource": "Tigertest's split based on the City & Guilds 3345 unit 301/304 test specification (handbook v1.8)",
+  "categories": [
+    {
+      "key": "ukwaterLaw",
+      "label": "The Regulations & Notification",
+      "perTest": 6,
+      "segment": "LAW"
+    },
+    {
+      "key": "ukwaterFittings",
+      "label": "Water Fittings & Materials",
+      "perTest": 7,
+      "segment": "FIT"
+    },
+    {
+      "key": "ukwaterDesign",
+      "label": "System Design, Testing & Flushing",
+      "perTest": 8,
+      "segment": "DES"
+    },
+    {
+      "key": "ukwaterFluid",
+      "label": "Fluid Categories & Cross Connection",
+      "perTest": 6,
+      "segment": "FLU"
+    },
+    {
+      "key": "ukwaterBackflow",
+      "label": "Backflow Prevention",
+      "perTest": 10,
+      "segment": "BKF"
+    },
+    {
+      "key": "ukwaterCold",
+      "label": "Cold Water Services",
+      "perTest": 4,
+      "segment": "CLD"
+    },
+    {
+      "key": "ukwaterHot",
+      "label": "Hot Water Services",
+      "perTest": 4,
+      "segment": "HOT"
+    },
+    {
+      "key": "ukwaterSanitary",
+      "label": "WCs, Taps, Appliances & Outside Use",
+      "perTest": 5,
+      "segment": "SAN"
+    }
+  ],
+  "trainingSets": [
+    {
+      "name": "The Regulations & Fluid Categories",
+      "categories": [
+        "ukwaterLaw",
+        "ukwaterFluid"
+      ],
+      "size": 48
+    },
+    {
+      "name": "Water Fittings & System Design",
+      "categories": [
+        "ukwaterFittings",
+        "ukwaterDesign"
+      ],
+      "size": 60
+    },
+    {
+      "name": "Cold, Hot & Sanitary Services",
+      "categories": [
+        "ukwaterCold",
+        "ukwaterHot",
+        "ukwaterSanitary"
+      ],
+      "size": 52
+    },
+    {
+      "name": "Backflow Prevention",
+      "categories": [
+        "ukwaterBackflow"
+      ],
+      "size": 40
+    }
+  ],
+  "setIds": [
+    26701,
+    26702,
+    26703,
+    26704
+  ],
+  "hue": "155 40% 22%",
+  "icon": "hardhat",
+  "borrowTiger": "caplumb",
+  "hubGroup": "UK workplace and trade certificates",
+  "teacherLed": true,
+  "shortName": "Water Regulations",
+  "examLabel": "Water Regulations test"
+}

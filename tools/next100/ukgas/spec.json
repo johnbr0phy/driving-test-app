@@ -1,0 +1,135 @@
+{
+  "id": "ukgas",
+  "stateCode": "UKGAS",
+  "idBase": 27000,
+  "prefix": "UKGAS-",
+  "slug": "/gas-safe-acs",
+  "landingPath": "/gas-safe-acs-ccn1-practice-test",
+  "dataFile": "data/uk-gas-safe-acs-questions.json",
+  "name": "Gas Safe ACS Practice Test",
+  "shortName": "Gas Safe ACS",
+  "examLabel": "ACS CCN1 assessment",
+  "fullName": "ACS CCN1 core domestic gas safety assessment (Nationally Accredited Certification Scheme)",
+  "icon": "hardhat",
+  "passPct": 70,
+  "passPctNote": "Tigertest readiness line; no ACS pass mark or question count is published.",
+  "hue": "285 70% 26%",
+  "borrowTiger": "caplumb",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "categories": [
+    {
+      "key": "ukgasLaw",
+      "label": "Gas Safety Legislation",
+      "perTest": 6,
+      "segment": "LAW"
+    },
+    {
+      "key": "ukgasEmergency",
+      "label": "Gas Emergency Actions",
+      "perTest": 4,
+      "segment": "EMG"
+    },
+    {
+      "key": "ukgasCombustion",
+      "label": "Combustion & Gas Properties",
+      "perTest": 4,
+      "segment": "CMB"
+    },
+    {
+      "key": "ukgasCo",
+      "label": "Carbon Monoxide",
+      "perTest": 4,
+      "segment": "CO"
+    },
+    {
+      "key": "ukgasVent",
+      "label": "Ventilation",
+      "perTest": 4,
+      "segment": "VEN"
+    },
+    {
+      "key": "ukgasTightness",
+      "label": "Tightness Testing & Purging",
+      "perTest": 5,
+      "segment": "TGT"
+    },
+    {
+      "key": "ukgasMeters",
+      "label": "Meters, Regulators & ECVs",
+      "perTest": 4,
+      "segment": "MTR"
+    },
+    {
+      "key": "ukgasUnsafe",
+      "label": "Unsafe Situations",
+      "perTest": 5,
+      "segment": "UNS"
+    },
+    {
+      "key": "ukgasDevices",
+      "label": "Gas Safety Devices & Controls",
+      "perTest": 4,
+      "segment": "DEV"
+    },
+    {
+      "key": "ukgasFlues",
+      "label": "Chimneys & Flues",
+      "perTest": 5,
+      "segment": "FLU"
+    },
+    {
+      "key": "ukgasAppliances",
+      "label": "Appliance Installation",
+      "perTest": 5,
+      "segment": "APP"
+    }
+  ],
+  "trainingSets": [
+    {
+      "name": "Legislation & Emergency Actions",
+      "categories": [
+        "ukgasLaw",
+        "ukgasEmergency"
+      ],
+      "size": 40
+    },
+    {
+      "name": "Combustion, CO & Ventilation",
+      "categories": [
+        "ukgasCombustion",
+        "ukgasCo",
+        "ukgasVent"
+      ],
+      "size": 48
+    },
+    {
+      "name": "Chimneys & Appliances",
+      "categories": [
+        "ukgasFlues",
+        "ukgasAppliances"
+      ],
+      "size": 40
+    },
+    {
+      "name": "Tightness Testing & Meters",
+      "categories": [
+        "ukgasTightness",
+        "ukgasMeters"
+      ],
+      "size": 36
+    },
+    {
+      "name": "Unsafe Situations & Safety Devices",
+      "categories": [
+        "ukgasUnsafe",
+        "ukgasDevices"
+      ],
+      "size": 36
+    }
+  ],
+  "weights": "Tigertest's split over the 16 competence sections of the ACS CCN1 criteria (Issue 20.1); no official weights are published.",
+  "hubGroup": "UK workplace and trade certificates",
+  "region": "UK",
+  "teacherLed": true
+}

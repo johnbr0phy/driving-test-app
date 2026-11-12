@@ -1,0 +1,137 @@
+{
+  "id": "ukplumb",
+  "stateCode": "UKPLUMB",
+  "idBase": 26900,
+  "prefix": "UKPLUMB-",
+  "slug": "/plumbing-theory",
+  "landingPath": "/plumbing-theory-practice-test",
+  "dataFile": "data/uk-plumbing-theory-questions.json",
+  "name": "Plumbing Theory Practice Test",
+  "shortName": "Plumbing Theory",
+  "examLabel": "plumbing theory exam",
+  "fullName": "UK Level 2 and 3 plumbing and domestic heating theory (City & Guilds 6035 knowledge tests and the ST0303 apprenticeship knowledge test)",
+  "icon": "hardhat",
+  "passPct": 60,
+  "hue": "125 40% 22%",
+  "borrowTiger": "caplumb",
+  "region": "UK",
+  "teacherLed": true,
+  "categories": [
+    {
+      "key": "ukplumbSafety",
+      "label": "Health & Safety",
+      "perTest": 6,
+      "segment": "HSF"
+    },
+    {
+      "key": "ukplumbScience",
+      "label": "Scientific Principles",
+      "perTest": 5,
+      "segment": "SCI"
+    },
+    {
+      "key": "ukplumbProcesses",
+      "label": "Common Plumbing Processes",
+      "perTest": 6,
+      "segment": "PRO"
+    },
+    {
+      "key": "ukplumbCold",
+      "label": "Cold Water Systems",
+      "perTest": 6,
+      "segment": "CWS"
+    },
+    {
+      "key": "ukplumbHot",
+      "label": "Domestic Hot Water Systems",
+      "perTest": 6,
+      "segment": "HWS"
+    },
+    {
+      "key": "ukplumbHeating",
+      "label": "Central Heating Systems",
+      "perTest": 8,
+      "segment": "CHS"
+    },
+    {
+      "key": "ukplumbDrainage",
+      "label": "Sanitation & Drainage",
+      "perTest": 5,
+      "segment": "DRN"
+    },
+    {
+      "key": "ukplumbRainwater",
+      "label": "Rainwater Systems",
+      "perTest": 2,
+      "segment": "RWS"
+    },
+    {
+      "key": "ukplumbElectrical",
+      "label": "Electrical Principles",
+      "perTest": 3,
+      "segment": "ELE"
+    },
+    {
+      "key": "ukplumbEnviro",
+      "label": "Environmental Technologies",
+      "perTest": 3,
+      "segment": "ENV"
+    }
+  ],
+  "trainingSets": [
+    {
+      "name": "Health, Safety & Science",
+      "categories": [
+        "ukplumbSafety",
+        "ukplumbScience"
+      ],
+      "size": 44
+    },
+    {
+      "name": "Plumbing Processes & Electrics",
+      "categories": [
+        "ukplumbProcesses",
+        "ukplumbElectrical"
+      ],
+      "size": 36
+    },
+    {
+      "name": "Cold & Hot Water Systems",
+      "categories": [
+        "ukplumbCold",
+        "ukplumbHot"
+      ],
+      "size": 48
+    },
+    {
+      "name": "Central Heating & Low Carbon",
+      "categories": [
+        "ukplumbHeating",
+        "ukplumbEnviro"
+      ],
+      "size": 44
+    },
+    {
+      "name": "Sanitation, Drainage & Rainwater",
+      "categories": [
+        "ukplumbDrainage",
+        "ukplumbRainwater"
+      ],
+      "size": 28
+    }
+  ],
+  "testIds": [
+    26901,
+    26902,
+    26903,
+    26904
+  ],
+  "setIds": [
+    26901,
+    26902,
+    26903,
+    26904,
+    26905
+  ],
+  "hubGroup": "UK workplace and trade certificates"
+}

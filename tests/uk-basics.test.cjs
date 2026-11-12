@@ -67,12 +67,12 @@ test('US lessons retain US terminology and unit conversions stay correct', () =>
   }
 });
 
-test('all 25 UK question banks are checked for American spelling regressions', () => {
+test('all 31 UK question banks are checked for American spelling regressions', () => {
   const fs = require('node:fs');
   const path = require('node:path');
   const { EXAMS } = require('../lib/exams.ts');
   const exams = [...EXAMS, ...EXAMS_V2].filter((exam) => regionOfTest(exam.id) === 'UK');
-  assert.equal(exams.length, 25);
+  assert.equal(exams.length, 31);
   const american = /\b(?:harmonized|colors?|colored|coloring|behaviors?|honors?|favorites?|centers?|centered|centering|analyz(?:e|es|ed|ing)|organ(?:ize|izes|ized|izing)|recogniz(?:e|es|ed|ing)|prioritiz(?:e|es|ed|ing)|customiz(?:e|es|ed|ing)|aluminum|sidewalks?|gasoline|windshields?|gray|canceled|canceling|traveled|traveling|labeled|labeling|practicing|practiced)\b/i;
   let questionCount = 0;
   for (const exam of exams) {

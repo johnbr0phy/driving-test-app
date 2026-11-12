@@ -1,0 +1,110 @@
+{
+  "id": "ukg3",
+  "stateCode": "UKG3",
+  "idBase": 26800,
+  "prefix": "UKG3-",
+  "slug": "/unvented-hot-water",
+  "landingPath": "/unvented-hot-water-g3-practice-test",
+  "dataFile": "data/uk-unvented-g3-questions.json",
+  "name": "Unvented Hot Water (G3) Practice Test",
+  "shortName": "Unvented G3",
+  "examLabel": "unvented hot water assessment",
+  "fullName": "Unvented Hot Water Storage Systems (G3) certificate assessment",
+  "icon": "hardhat",
+  "passPct": 70,
+  "passPctNote": "Readiness line (Tigertest's). No awarding body publishes a pass mark.",
+  "categories": [
+    {
+      "key": "ukg3Law",
+      "label": "Building Regulations & Part G3",
+      "perTest": 6,
+      "segment": "LAW"
+    },
+    {
+      "key": "ukg3Systems",
+      "label": "System Types & Principles",
+      "perTest": 5,
+      "segment": "SYS"
+    },
+    {
+      "key": "ukg3Inlet",
+      "label": "Inlet Controls & Expansion",
+      "perTest": 7,
+      "segment": "INL"
+    },
+    {
+      "key": "ukg3Safety",
+      "label": "Thermostats, Cut-outs & Relief Valves",
+      "perTest": 8,
+      "segment": "SAF"
+    },
+    {
+      "key": "ukg3Discharge",
+      "label": "Tundish & Discharge Pipework",
+      "perTest": 8,
+      "segment": "DIS"
+    },
+    {
+      "key": "ukg3Temperature",
+      "label": "Temperature Control & Legionella",
+      "perTest": 5,
+      "segment": "TMP"
+    },
+    {
+      "key": "ukg3Install",
+      "label": "Installation & Controls",
+      "perTest": 4,
+      "segment": "INS"
+    },
+    {
+      "key": "ukg3Commission",
+      "label": "Commissioning & Handover",
+      "perTest": 3,
+      "segment": "COM"
+    },
+    {
+      "key": "ukg3Service",
+      "label": "Maintenance & Fault Finding",
+      "perTest": 4,
+      "segment": "SER"
+    }
+  ],
+  "trainingSets": [
+    {
+      "name": "Regulations & System Types",
+      "categories": [
+        "ukg3Law",
+        "ukg3Systems"
+      ],
+      "size": 44
+    },
+    {
+      "name": "Inlet Controls & Safety Devices",
+      "categories": [
+        "ukg3Inlet",
+        "ukg3Safety"
+      ],
+      "size": 60
+    },
+    {
+      "name": "Discharge Pipework & Temperature",
+      "categories": [
+        "ukg3Discharge",
+        "ukg3Temperature"
+      ],
+      "size": 52
+    },
+    {
+      "name": "Install, Commission & Maintain",
+      "categories": [
+        "ukg3Install",
+        "ukg3Commission",
+        "ukg3Service"
+      ],
+      "size": 44
+    }
+  ],
+  "hue": "70 60% 30%",
+  "borrowTiger": "caplumb",
+  "hubGroup": "UK workplace and trade certificates"
+}

@@ -1,0 +1,87 @@
+{
+  "id": "itpatente",
+  "stateCode": "ITPATENTE",
+  "idBase": 27300,
+  "prefix": "ITPAT-",
+  "slug": "/quiz-patente",
+  "landingPath": "/it/quiz-patente-b",
+  "landingJson": "lib/landings/itpatente.it.json",
+  "dataFile": "data/italy-patente-questions.json",
+  "region": "IT",
+  "language": "it",
+  "locale": "it-IT",
+  "review": { "it": "model" },
+  "icon": "car",
+  "testCount": 7,
+  "questionsPerTest": 30,
+  "passPct": 90,
+  "passNote": "ceil(0.90 x 30) = 27 of 30, i.e. at most 3 errors, the real line (DM 27 ottobre 2021: 30 affermazioni, 20 minuti, at most 3 wrong). The real quiz is true/false; ours is four-option single answer on the same rules.",
+  "testIds": [27301, 27302, 27303, 27304, 27305, 27306, 27307],
+  "setIds": [27301, 27302, 27303, 27304, 27305],
+  "categories": [
+    {"key": "itpatPericolo", "labelIt": "Segnali di pericolo", "labelEn": "Danger signs", "perTest": 3, "pool": 21, "segment": "PER"},
+    {"key": "itpatDivieto", "labelIt": "Segnali di divieto e di obbligo", "labelEn": "Prohibition and mandatory signs", "perTest": 4, "pool": 28, "segment": "DIV"},
+    {"key": "itpatPrecedenza", "labelIt": "Precedenza e incroci", "labelEn": "Right of way and junctions", "perTest": 5, "pool": 35, "segment": "PRE"},
+    {"key": "itpatSegnaletica", "labelIt": "Segnaletica orizzontale, semafori e indicazione", "labelEn": "Road markings, traffic lights and information signs", "perTest": 4, "pool": 28, "segment": "SEG"},
+    {"key": "itpatVelocita", "labelIt": "Velocità, distanze e sorpasso", "labelEn": "Speed, distances and overtaking", "perTest": 5, "pool": 35, "segment": "VEL"},
+    {"key": "itpatSosta", "labelIt": "Fermata, sosta, autostrade e luci", "labelEn": "Stopping, parking, motorways and lights", "perTest": 3, "pool": 21, "segment": "SOS"},
+    {"key": "itpatPatente", "labelIt": "Patente, documenti, cinture e incidenti", "labelEn": "Licence, documents, seat belts and crashes", "perTest": 3, "pool": 21, "segment": "PAT"},
+    {"key": "itpatGuida", "labelIt": "Alcol, salute, veicolo e ambiente", "labelEn": "Alcohol, fitness, vehicle and environment", "perTest": 3, "pool": 21, "segment": "GUI"}
+  ],
+  "trainingSets": [
+    {"setNumber": 1, "id": 27301, "nameIt": "Segnali di pericolo, divieto e obbligo", "nameEn": "Danger, prohibition and mandatory signs", "categories": ["itpatPericolo", "itpatDivieto"], "size": 49, "weightLabel": "7 domande su 30 per scheda"},
+    {"setNumber": 2, "id": 27302, "nameIt": "Precedenza e incroci", "nameEn": "Right of way and junctions", "categories": ["itpatPrecedenza"], "size": 35, "weightLabel": "5 domande su 30 per scheda"},
+    {"setNumber": 3, "id": 27303, "nameIt": "Segnaletica orizzontale e semafori", "nameEn": "Road markings and traffic lights", "categories": ["itpatSegnaletica"], "size": 28, "weightLabel": "4 domande su 30 per scheda"},
+    {"setNumber": 4, "id": 27304, "nameIt": "Velocità, sorpasso, sosta e luci", "nameEn": "Speed, overtaking, parking and lights", "categories": ["itpatVelocita", "itpatSosta"], "size": 56, "weightLabel": "8 domande su 30 per scheda"},
+    {"setNumber": 5, "id": 27305, "nameIt": "Patente, sicurezza e veicolo", "nameEn": "Licence, safety and the vehicle", "categories": ["itpatPatente", "itpatGuida"], "size": 42, "weightLabel": "6 domande su 30 per scheda"}
+  ],
+  "dashboardSteps": "5 sets + 7 tests = 12 steps",
+  "blueprintComment": "Real test (DM 27 ottobre 2021, GU n. 292 del 9/12/2021, read on a mirror; Regione FVG Motorizzazione page; CdS artt. 121-122; checked 2026-11-12): category B theory, computer-based at the Motorizzazione or an autoscuola with approved rooms, 30 true/false statements in 20 minutes, pass with at most 3 errors; theory within six months of the application, at most two attempts, one month between attempts; foglio rosa then valid 12 months. Categories follow the programme of D.Lgs. 59/2011 Allegato II, parte A, punto 2 (the EU Directive 2006/126 Annex II as transposed); the 3/4/5/4/5/3/3/3 split is Tigertest's own. Seven tests of 30, pools exactly 7x each count (210, all original, written in Italian from the CdS and DPR 495/1992 as in force Nov 2026, including legge 177/2024). Four-option single answer instead of true/false; passPct 90 (27 of 30) mirrors the real 3-error line.",
+  "blueprint": {"itpatPericolo": 3, "itpatDivieto": 4, "itpatPrecedenza": 5, "itpatSegnaletica": 4, "itpatVelocita": 5, "itpatSosta": 3, "itpatPatente": 3, "itpatGuida": 3},
+  "english": {
+    "name": "Italian Driving Theory Test (Patente B)",
+    "shortName": "Italian driving theory test",
+    "fullName": "Italian driving licence theory test, category B car (quiz patente B), in Italian"
+  },
+  "italian": {
+    "name": "Quiz Patente B",
+    "shortName": "Quiz Patente B",
+    "examLabel": "Esame di teoria patente B",
+    "fullName": "Esame di teoria per la patente di guida di categoria B"
+  },
+  "copy": {
+    "guestPrompt": "per salvare i progressi per l'esame di teoria e tenere d'occhio ogni risposta sbagliata",
+    "trainingHeading": "Set di esercizio",
+    "trainingSub": "Ogni set copre un argomento dell'esame. Ricevi subito la spiegazione, e le domande sbagliate tornano finché non le sai.",
+    "testsHeading": "Schede d'esame · 30 domande, al massimo 3 errori",
+    "heroSubs": [
+      "Cinque set di esercizio, sette schede. Inizia dai segnali di pericolo, divieto e obbligo.",
+      "Prima completa il set, poi fai la scheda.",
+      "Continua così. Fai una scheda e guarda a che punto sei.",
+      "Ripeti gli errori, poi rifai la scheda.",
+      "Tutto verde. Prenota l'esame di teoria."
+    ],
+    "sourceLine": "Secondo il Codice della Strada e il suo Regolamento, aggiornati a novembre 2026. Domande originali, non tratte dal listato ministeriale; quattro risposte invece di vero o falso.",
+    "analyticsKey": "itpatente"
+  },
+  "examFacts": {
+    "answer": "The Italian theory test for a category B car licence (esame di teoria, quiz patente B) is taken on a computer at the Motorizzazione civile, or at a driving school with approved rooms: 30 statements, each marked true or false (vero o falso), in 20 minutes, and you pass with no more than 3 errors. It must be passed within six months of the licence application, with at most two attempts and at least a month between them; a pass brings the learner permit (foglio rosa), valid for twelve months, for the practical test.",
+    "rows": [
+      ["Run by", "Motorizzazione civile (Ministry of Infrastructure and Transport)"],
+      ["Format", "30 true/false statements on a computer"],
+      ["Time", "20 minutes"],
+      ["Pass mark", "At most 3 errors"],
+      ["Attempts", "Two within six months of the application"],
+      ["After passing", "Learner permit (foglio rosa), valid 12 months"],
+      ["Tigertest mock tests", "7 x 30 four-option questions in Italian, 27 to pass"]
+    ],
+    "basedOn": "Ministerial decree of 27 October 2021, Codice della Strada articles 121 and 122, the Motorizzazione civile guidance of Regione Friuli Venezia Giulia, and D.Lgs. 59/2011 Annex II, checked November 2026",
+    "source": {"name": "Il Portale dell'Automobilista (Ministry of Infrastructure and Transport)", "url": "https://www.ilportaledellautomobilista.it/"}
+  },
+  "theme": {"hue": 128, "sat": 80, "light": 18, "note": "deep Italian green; 140-150 at 22-30% clashed with naplan, iedtt, ptimt, itcils, esguardia and others in app/globals.css"},
+  "mascot": "borrow the car (DMV) tiger via BORROWED_SETS, like detheorie",
+  "hubGroup": "EU driving theory tests",
+  "searchAliases": ["quiz patente", "quiz patente b", "quiz patente b 2026", "patente b", "esame teoria patente", "esame patente", "teoria patente", "quiz ministeriali patente", "simulazione esame patente", "motorizzazione quiz", "patente italiana", "italian driving test", "italy driving theory test", "italian driving licence theory", "italian patente test"],
+  "claudeMdBullet": "- **Quiz Patente B** (`itpatente`, the Italian theory test for a category B car licence, esame di teoria at the Motorizzazione civile, native Italian exam, `language: \"it\"`, `locale: \"it-IT\"`, English names in `english`, `review: { it: \"model\" }`, `/quiz-patente/*`, landing `/it/quiz-patente-b` from `lib/landings/itpatente.it.json`): `data/italy-patente-questions.json` (210 original questions written directly in Italian, impersonal phrasing, on the programme of D.Lgs. 59/2011 Allegato II parte A punto 2: segnali di pericolo 21, divieto e obbligo 28, precedenza e incroci 35, segnaletica orizzontale, semafori e indicazione 28, velocità, distanze e sorpasso 35, fermata, sosta, autostrade e luci 21, patente, documenti, cinture e incidenti 21, alcol, salute, veicolo e ambiente 21), seven 30-question tests (IDs 27301-27307, 3/4/5/4/5/3/3/3 per test, Tigertest's split, no spares) and five Italian-named topic sets 27301-27305 (49/35/28/56/42), 12 dashboard steps, state `ITPATENTE`, prefix `ITPAT-`, 90% pass (27 of 30, the real 3-error line). The real test (DM 27 ottobre 2021; CdS artt. 121-122) is 30 true/false statements in 20 minutes on a computer, at most 3 errors, within six months of the application with at most two attempts a month apart, then the foglio rosa (12 months); true/false and sign pictures are not modelled (four options, signs described in words). Rules from the CdS (D.Lgs. 285/1992) and DPR 495/1992 as in force November 2026, including legge 177/2024 (neopatentati 75 kW/t and 105 kW for three years, 100/90 km/h, phones, drugs, 1,5 m from cyclists); alcohol 0,5 g/l and zero under 21, in the first three years and for professionals; no fines, point values or fees. The ministerial listato is never used. Built by `tools/next100/itpatente/build.py` (sorts all-number options with Italian decimal commas); sources in `tools/next100/itpatente/sources.md`, terms in `glossary.md`. Region IT, hub group \"EU driving theory tests\", `[data-theme=\"itpatente\"]` deep Italian green (128 80% 18%), borrows the car tiger.",
+  "notes": "Pools are exactly 7x each per-test count, every item used once in tests. Validator: python3 -I .claude/skills/exam-bank/scripts/validate_bank.py data/italy-patente-questions.json --lang it --rows 210 --pool itpatPericolo=21 --pool itpatDivieto=28 --pool itpatPrecedenza=35 --pool itpatSegnaletica=28 --pool itpatVelocita=35 --pool itpatSosta=21 --pool itpatPatente=21 --pool itpatGuida=21 (passes with --rows 210; a KNOWN_BANKS entry like detheorie's would let it run without --rows: \"italy-patente-questions.json\": dict(rows=210, why=\"seven 30-question tests\"),)."
+}

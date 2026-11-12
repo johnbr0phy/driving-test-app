@@ -2509,6 +2509,48 @@
     --brand-gradient-to: 20 60% 96%;
   }
 
+  /* CILS B1 Cittadinanza (Italian B1 test for citizenship) theme */
+  [data-theme="itcils"] {
+    --brand: 146 90% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 146 80% 96%;
+    --brand-hover: 146 90% 13%;
+    --brand-dark: 146 90% 8%;
+    --brand-darker: 146 90% 6%;
+    --brand-muted: 146 40% 70%;
+    --brand-border: 146 45% 80%;
+    --brand-border-light: 146 45% 90%;
+    --brand-gradient-to: 0 0% 98%;
+  }
+
+  /* CELI 2 Italian B1 Certificate theme */
+  [data-theme="itceli"] {
+    --brand: 294 70% 28%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 294 70% 96%;
+    --brand-hover: 294 70% 23%;
+    --brand-dark: 294 70% 18%;
+    --brand-darker: 294 70% 13%;
+    --brand-muted: 294 40% 70%;
+    --brand-border: 294 45% 80%;
+    --brand-border-light: 294 45% 90%;
+    --brand-gradient-to: 0 0% 98%;
+  }
+
+  /* Italian Driving Theory Test (Patente B) theme */
+  [data-theme="itpatente"] {
+    --brand: 128 80% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 128 80% 96%;
+    --brand-hover: 128 80% 13%;
+    --brand-dark: 128 80% 8%;
+    --brand-darker: 128 80% 6%;
+    --brand-muted: 128 40% 70%;
+    --brand-border: 128 45% 80%;
+    --brand-border-light: 128 45% 90%;
+    --brand-gradient-to: 0 0% 98%;
+  }
+
   /* Danish citizenship test (indfødsretsprøven) theme */
   [data-theme="dkindfoed"] {
     --brand: 350 90% 40%;
@@ -3261,6 +3303,20 @@
     --brand-border: 0 25% 80%;
     --brand-border-light: 0 25% 90%;
     --brand-gradient-to: 12 25% 96%;
+  }
+
+  /* AP Italian Language and Culture theme: deep raspberry (v2 exam; matches lib/v2/exams/apitalian.ts theme) */
+  [data-theme="apitalian"] {
+    --brand: 320 70% 32%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 320 70% 96%;
+    --brand-hover: 320 70% 28%;
+    --brand-dark: 320 70% 24%;
+    --brand-darker: 320 60% 16%;
+    --brand-muted: 320 40% 72%;
+    --brand-border: 320 45% 80%;
+    --brand-border-light: 320 45% 90%;
+    --brand-gradient-to: 330 40% 96%;
   }
 
   /* AP Biology theme: leaf green (v2 exam; matches lib/v2/exams/apbio.ts theme) */
@@ -6893,6 +6949,40 @@
     --brand-dark: 12 85% 65%;
     --brand-darker: 12 80% 78%;
   }
+  .dark [data-theme="itpatente"] {
+    --brand: 128 80% 29.6%;
+    --brand-hover: 128 80% 21.6%;
+    --brand-light: 128 45% 13%;
+    --brand-gradient-to: 0 0% 11%;
+    --brand-border-light: 128 35% 24%;
+    --brand-border: 128 40% 34%;
+    --brand-muted: 128 40% 45%;
+    --brand-dark: 128 80% 65%;
+    --brand-darker: 128 80% 78%;
+  }
+  .dark [data-theme="itcils"] {
+    --brand: 146 90% 27.9%;
+    --brand-hover: 146 90% 19.9%;
+    --brand-light: 146 45% 13%;
+    --brand-gradient-to: 0 0% 11%;
+    --brand-border-light: 146 35% 24%;
+    --brand-border: 146 40% 34%;
+    --brand-muted: 146 40% 45%;
+    --brand-dark: 146 90% 65%;
+    --brand-darker: 146 90% 78%;
+  }
+
+  .dark [data-theme="itceli"] {
+    --brand: 294 70% 49.1%;
+    --brand-hover: 294 70% 41.1%;
+    --brand-light: 294 45% 13%;
+    --brand-gradient-to: 0 0% 11%;
+    --brand-border-light: 294 35% 24%;
+    --brand-border: 294 40% 34%;
+    --brand-muted: 294 40% 45%;
+    --brand-dark: 294 70% 65%;
+    --brand-darker: 294 70% 78%;
+  }
   .dark [data-theme="dkindfoed"] {
     --brand: 350 90% 48.1%;
     --brand-hover: 350 90% 40.1%;
@@ -7524,6 +7614,18 @@
     --brand-muted: 0 25% 45%;
     --brand-dark: 0 25% 65%;
     --brand-darker: 0 20% 78%;
+  }
+
+  .dark [data-theme="apitalian"] {
+    --brand: 320 70% 49%;
+    --brand-hover: 320 70% 41%;
+    --brand-light: 320 45% 13%;
+    --brand-gradient-to: 330 40% 11%;
+    --brand-border-light: 320 35% 24%;
+    --brand-border: 320 40% 34%;
+    --brand-muted: 320 40% 45%;
+    --brand-dark: 320 70% 65%;
+    --brand-darker: 320 60% 78%;
   }
 
   .dark [data-theme="apbio"] {

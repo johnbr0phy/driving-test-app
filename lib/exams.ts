@@ -38,7 +38,7 @@ import grdrivingEl from "./examTranslations/grdriving.el.json";
 import bedrivingNl from "./examTranslations/bedriving.nl.json";
 import bedrivingFr from "./examTranslations/bedriving.fr.json";
 
-export type ExamId = "ccaf" | "ukgas" | "ukbregs" | "ukrbi" | "ukplumb" | "ukg3" | "ukwater" | "phnat" | "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "bemoto" | "bevracht" | "betoelating" | "befsmavz" | "dkteori" | "dkmoto" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "grmoto" | "grcitizen" | "grinsure" | "grsecurity" | "rodrpciv" | "rocpi" | "rotaxi" | "roadmed" | "rorezid" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl" | "fortigate";
+export type ExamId = "ccaf" | "ukgas" | "ukbregs" | "ukrbi" | "ukplumb" | "ukg3" | "ukwater" | "phnat" | "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "bemoto" | "bevracht" | "betoelating" | "befsmavz" | "dkteori" | "dkmoto" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "grmoto" | "grcitizen" | "grinsure" | "grsecurity" | "rodrpciv" | "rocpi" | "rotaxi" | "roadmed" | "rorezid" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl" | "fortigate" | "itcils" | "itceli" | "itpatente";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -5572,6 +5572,228 @@ const fortigate: ExamConfig = {
     ],
     sourceLine: "Based on Fortinet's NSE 4 - FortiOS 7.6 Administrator exam topics and weights. Original questions; the 70% line is Tigertest's. Not affiliated with Fortinet.",
     analyticsKey: "fortigate",
+  },
+};
+
+const itcils: ExamConfig = {
+  id: "itcils",
+  stateCode: "ITCILS",
+  idBase: 27400,
+  slug: "/cils-b1-cittadinanza",
+  landingPath: "/it/cils-b1-cittadinanza-test",
+  name: "CILS B1 Cittadinanza",
+  shortName: "CILS B1 Cittadinanza",
+  examLabel: "CILS B1 Cittadinanza",
+  fullName: "CILS B1 Cittadinanza (certificazione di italiano per la cittadinanza, Università per Stranieri di Siena)",
+  questionIdPrefix: "ITCILS-",
+  icon: "book",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 60,
+  language: "it",
+  locale: "it-IT",
+  english: { name: "CILS B1 Cittadinanza (Italian B1 test for citizenship)", shortName: "CILS B1 citizenship test", fullName: "CILS B1 Cittadinanza, the Italian B1 language test for citizenship, in Italian" },
+  review: { it: "model" },
+  // CILS B1 Cittadinanza (Centro CILS, Università per Stranieri di Siena; Sillabo B1 Cittadinanza
+  // and Criteri di valutazione, read 2026-11-12): four skills scored 12 each, all must be passed, no
+  // capitalizzazione. Only Comprensione della lettura e riflessione grammaticale is modelled (real:
+  // 12 true/false items + a 6-item multiple-choice cloze, 40 minutes, texts 350-500 words). Ascolto,
+  // Produzione scritta and Produzione orale are not modelled. Per test: reading 15 (avvisi 5, mail
+  // 5, articoli e istruzioni 5) and grammar and usage 35 on the sillabo's structures (articoli e
+  // preposizioni 5, passato prossimo e imperfetto 6, presente/imperativo/condizionale 5, pronomi 5,
+  // possessivi/dimostrativi/comparativi 4, connettivi 4, lessico e registro 6). The split is
+  // Tigertest's: CILS publishes no topic weights. Futuro and congiuntivo are not in the B1
+  // Cittadinanza sillabo and are never tested. All items original.
+  blueprint: {
+    itcilsAvvisi: 5,
+    itcilsMail: 5,
+    itcilsTesti: 5,
+    itcilsPreposizioni: 5,
+    itcilsPassato: 6,
+    itcilsVerbi: 5,
+    itcilsPronomi: 5,
+    itcilsAggettivi: 4,
+    itcilsConnettivi: 4,
+    itcilsLessico: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 27401, name: "Leggere avvisi, mail e articoli", categories: ["itcilsAvvisi", "itcilsMail", "itcilsTesti"], size: 60, weightLabel: "15 di 50 domande per prova" },
+    { setNumber: 2, id: 27402, name: "Articoli, preposizioni e aggettivi", categories: ["itcilsPreposizioni", "itcilsAggettivi"], size: 36, weightLabel: "9 di 50 domande per prova" },
+    { setNumber: 3, id: 27403, name: "Passato, presente e condizionale", categories: ["itcilsPassato", "itcilsVerbi"], size: 44, weightLabel: "11 di 50 domande per prova" },
+    { setNumber: 4, id: 27404, name: "Pronomi e connettivi", categories: ["itcilsPronomi", "itcilsConnettivi"], size: 36, weightLabel: "9 di 50 domande per prova" },
+    { setNumber: 5, id: 27405, name: "Lessico e registro", categories: ["itcilsLessico"], size: 24, weightLabel: "6 di 50 domande per prova" },
+  ],
+  categoryLabels: {
+    itcilsAvvisi: "Avvisi e annunci",
+    itcilsMail: "Mail e lettere",
+    itcilsTesti: "Articoli e istruzioni",
+    itcilsPreposizioni: "Articoli e preposizioni",
+    itcilsPassato: "Passato prossimo e imperfetto",
+    itcilsVerbi: "Presente, imperativo e condizionale",
+    itcilsPronomi: "Pronomi, ci e ne",
+    itcilsAggettivi: "Possessivi, dimostrativi e confronti",
+    itcilsConnettivi: "Connettivi e frasi complesse",
+    itcilsLessico: "Lessico e registro",
+  },
+  copy: {
+    guestPrompt: "per salvare i tuoi progressi verso il CILS B1 Cittadinanza e tenere traccia di ogni errore",
+    trainingHeading: "Set di allenamento",
+    trainingSub: "Ogni set copre un tema: lettura, articoli e preposizioni, verbi, pronomi e connettivi, lessico. Vedi subito la risposta, e le domande che sbagli tornano finché non le sai.",
+    testsHeading: "Prove · 50 domande, 30 per superarle",
+    heroSubs: [
+      "Cinque set di allenamento e quattro prove da 50 domande. Comincia dalla lettura.",
+      "Prendi sicurezza nel set, poi fai la prova.",
+      "Continua così. Ripassa i verbi al passato.",
+      "Ripeti i tuoi errori e rifai la prova.",
+      "Tutto verde. Lettura e grammatica del CILS B1 non ti fanno più paura.",
+    ],
+    sourceLine: "Domande originali sul sillabo CILS B1 Cittadinanza (comprensione della lettura e riflessione grammaticale), novembre 2026. Ascolto, produzione scritta e orale non sono incluse.",
+    analyticsKey: "itcils",
+  },
+};
+
+const itceli: ExamConfig = {
+  id: "itceli",
+  stateCode: "ITCELI",
+  idBase: 27500,
+  slug: "/celi-2-b1",
+  landingPath: "/it/celi-2-b1-test",
+  name: "CELI 2 (B1)",
+  shortName: "CELI 2",
+  examLabel: "CELI 2 B1",
+  fullName: "CELI 2, Certificato di conoscenza della lingua italiana, livello B1",
+  questionIdPrefix: "ITCELI-",
+  icon: "book",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  language: "it",
+  locale: "it-IT",
+  english: { name: "CELI 2 Italian B1 Certificate", shortName: "CELI 2 (B1)", fullName: "CELI 2, Italian language certificate level B1 (CVCL, Università per Stranieri di Perugia), in Italian" },
+  review: { it: "model" },
+  // Real exam (CVCL, Università per Stranieri di Perugia; Regolamento degli esami CELI 2024 and
+  // cvcl.unistrapg.it pages, checked 2026-11-12): CELI 2 = CEFR B1, written part of three components
+  // (comprensione della lettura, produzione scritta, comprensione dell'ascolto; competenza
+  // linguistica only from CELI 3) plus an oral of up to 10-12 minutes; written 120 points, passed at
+  // 72, oral 40, results as grades A, B, C (pass) and D, E (fail). Only part A (reading) is
+  // modelled: short notices (A.1 style), longer texts with two questions each (A.2 style) and the
+  // completion and rewording tasks of part A (A.3 to A.5, and the 'riformulazioni di frasi' the CVCL
+  // lists), as grammar and vocabulary in context. CVCL publishes no item split for this; the 22
+  // reading / 28 language split of each 50 is Tigertest's, following part A's balance of
+  // comprehension to completion items. Four options here (real A.1 and A.4 have three). All items
+  // original.
+  blueprint: {
+    itceliAvvisi: 10,
+    itceliTesti: 12,
+    itceliVerbi: 8,
+    itceliPronomi: 5,
+    itceliPreposizioni: 5,
+    itceliConnettivi: 4,
+    itceliLessico: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 27501, name: "Avvisi e messaggi brevi", categories: ["itceliAvvisi"], size: 40, weightLabel: "10 domande su 50 per prova" },
+    { setNumber: 2, id: 27502, name: "Email, lettere e articoli", categories: ["itceliTesti"], size: 48, weightLabel: "12 domande su 50 per prova" },
+    { setNumber: 3, id: 27503, name: "Verbi: tempi e modi", categories: ["itceliVerbi"], size: 32, weightLabel: "8 domande su 50 per prova" },
+    { setNumber: 4, id: 27504, name: "Pronomi e preposizioni", categories: ["itceliPronomi", "itceliPreposizioni"], size: 40, weightLabel: "10 domande su 50 per prova" },
+    { setNumber: 5, id: 27505, name: "Connettivi e lessico", categories: ["itceliConnettivi", "itceliLessico"], size: 40, weightLabel: "10 domande su 50 per prova" },
+  ],
+  categoryLabels: {
+    itceliAvvisi: "Avvisi e messaggi brevi",
+    itceliTesti: "Email, lettere e articoli",
+    itceliVerbi: "Verbi: tempi e modi",
+    itceliPronomi: "Pronomi e possessivi",
+    itceliPreposizioni: "Preposizioni e articoli",
+    itceliConnettivi: "Connettivi e riformulazioni",
+    itceliLessico: "Lessico ed espressioni",
+  },
+  copy: {
+    guestPrompt: "per salvare i tuoi progressi per il CELI 2 e tenere traccia di ogni risposta sbagliata",
+    trainingHeading: "Set di allenamento",
+    trainingSub: "Ogni set copre un argomento. Vedi subito la risposta giusta, e le domande che sbagli tornano finché non le sai.",
+    testsHeading: "Prove · 50 domande, 35 per superarle",
+    heroSubs: [
+      "Cinque set di allenamento e quattro prove da 50 domande. Comincia dagli avvisi brevi.",
+      "Prendi sicurezza con il set, poi fai la prova.",
+      "Continua così. Ripassa verbi e pronomi.",
+      "Esercitati sugli errori e rifai la prova.",
+      "Tutto verde. Il CELI 2 ti aspetta.",
+    ],
+    sourceLine: "Domande originali sulla comprensione della lettura e sulla lingua del livello B1, novembre 2026. Scrittura, ascolto e orale non sono inclusi.",
+    analyticsKey: "itceli",
+  },
+};
+
+const itpatente: ExamConfig = {
+  id: "itpatente",
+  stateCode: "ITPATENTE",
+  idBase: 27300,
+  slug: "/quiz-patente",
+  landingPath: "/it/quiz-patente-b",
+  name: "Quiz Patente B",
+  shortName: "Quiz Patente B",
+  examLabel: "Esame di teoria patente B",
+  fullName: "Esame di teoria per la patente di guida di categoria B",
+  questionIdPrefix: "ITPAT-",
+  icon: "car",
+  testCount: 7,
+  questionsPerTest: 30,
+  passPct: 90,
+  language: "it",
+  locale: "it-IT",
+  english: { name: "Italian Driving Theory Test (Patente B)", shortName: "Italian driving theory test", fullName: "Italian driving licence theory test, category B car (quiz patente B), in Italian" },
+  review: { it: "model" },
+  // Real test (DM 27 ottobre 2021, GU n. 292 del 9/12/2021, read on a mirror; Regione FVG
+  // Motorizzazione page; CdS artt. 121-122; checked 2026-11-12): category B theory, computer-based
+  // at the Motorizzazione or an autoscuola with approved rooms, 30 true/false statements in 20
+  // minutes, pass with at most 3 errors; theory within six months of the application, at most two
+  // attempts, one month between attempts; foglio rosa then valid 12 months. Categories follow the
+  // programme of D.Lgs. 59/2011 Allegato II, parte A, punto 2 (the EU Directive 2006/126 Annex II as
+  // transposed); the 3/4/5/4/5/3/3/3 split is Tigertest's own. Seven tests of 30, pools exactly 7x
+  // each count (210, all original, written in Italian from the CdS and DPR 495/1992 as in force Nov
+  // 2026, including legge 177/2024). Four-option single answer instead of true/false; passPct 90 (27
+  // of 30) mirrors the real 3-error line.
+  blueprint: {
+    itpatPericolo: 3,
+    itpatDivieto: 4,
+    itpatPrecedenza: 5,
+    itpatSegnaletica: 4,
+    itpatVelocita: 5,
+    itpatSosta: 3,
+    itpatPatente: 3,
+    itpatGuida: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 27301, name: "Segnali di pericolo, divieto e obbligo", categories: ["itpatPericolo", "itpatDivieto"], size: 49, weightLabel: "7 domande su 30 per scheda" },
+    { setNumber: 2, id: 27302, name: "Precedenza e incroci", categories: ["itpatPrecedenza"], size: 35, weightLabel: "5 domande su 30 per scheda" },
+    { setNumber: 3, id: 27303, name: "Segnaletica orizzontale e semafori", categories: ["itpatSegnaletica"], size: 28, weightLabel: "4 domande su 30 per scheda" },
+    { setNumber: 4, id: 27304, name: "Velocità, sorpasso, sosta e luci", categories: ["itpatVelocita", "itpatSosta"], size: 56, weightLabel: "8 domande su 30 per scheda" },
+    { setNumber: 5, id: 27305, name: "Patente, sicurezza e veicolo", categories: ["itpatPatente", "itpatGuida"], size: 42, weightLabel: "6 domande su 30 per scheda" },
+  ],
+  categoryLabels: {
+    itpatPericolo: "Segnali di pericolo",
+    itpatDivieto: "Segnali di divieto e di obbligo",
+    itpatPrecedenza: "Precedenza e incroci",
+    itpatSegnaletica: "Segnaletica orizzontale, semafori e indicazione",
+    itpatVelocita: "Velocità, distanze e sorpasso",
+    itpatSosta: "Fermata, sosta, autostrade e luci",
+    itpatPatente: "Patente, documenti, cinture e incidenti",
+    itpatGuida: "Alcol, salute, veicolo e ambiente",
+  },
+  copy: {
+    guestPrompt: "per salvare i progressi per l'esame di teoria e tenere d'occhio ogni risposta sbagliata",
+    trainingHeading: "Set di esercizio",
+    trainingSub: "Ogni set copre un argomento dell'esame. Ricevi subito la spiegazione, e le domande sbagliate tornano finché non le sai.",
+    testsHeading: "Schede d'esame · 30 domande, al massimo 3 errori",
+    heroSubs: [
+      "Cinque set di esercizio, sette schede. Inizia dai segnali di pericolo, divieto e obbligo.",
+      "Prima completa il set, poi fai la scheda.",
+      "Continua così. Fai una scheda e guarda a che punto sei.",
+      "Ripeti gli errori, poi rifai la scheda.",
+      "Tutto verde. Prenota l'esame di teoria.",
+    ],
+    sourceLine: "Secondo il Codice della Strada e il suo Regolamento, aggiornati a novembre 2026. Domande originali, non tratte dal listato ministeriale; quattro risposte invece di vero o falso.",
+    analyticsKey: "itpatente",
   },
 };
 
@@ -18751,7 +18973,7 @@ const sgvl: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, nhie, cna, ptcb, phleb, ccma, cma, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, ccaf, sfadmin, phr, cisa, fortigate, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, ukgas, ukbregs, ukrbi, ukplumb, ukg3, ukwater, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, bemoto, bevracht, dkteori, dkmoto, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, grmoto, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, betoelating, befsmavz, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnat, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, grcitizen, grinsure, grsecurity, semedb, dkindfoed, dkmedborger, gulfrn, inrto, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, nhie, cna, ptcb, phleb, ccma, cma, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, ccaf, sfadmin, phr, cisa, fortigate, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, ukgas, ukbregs, ukrbi, ukplumb, ukg3, ukwater, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, bemoto, bevracht, dkteori, dkmoto, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, grmoto, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, betoelating, befsmavz, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnat, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, grcitizen, grinsure, grsecurity, semedb, dkindfoed, dkmedborger, itcils, itceli, itpatente, gulfrn, inrto, htl, cst, crcst];
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
 export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA, realestatePA, realestateIL, realestateOH, realestateGA, realestateNC, realestateMI, realestateVA, realestateWA, realestateAZ, realestateTN, realestateLA, insuranceNY, insurancePA, insuranceIL, insuranceOH, insuranceGA, insuranceNC, insuranceMI, insuranceNJ, insuranceVA, insuranceWA, pncNY, pncPA, pncIL, pncOH, pncGA, pncNC, pncMI, pncNJ, pncVA, pncWA];

@@ -27,6 +27,8 @@ const TEACHER_LED = new Set([
   "sejakt", "semedb", "sehp",
   // Denmark: jagttegnskurser, and language school (sprogcenter) courses for the citizenship and residence tests
   "dkjagt", "dkindfoed", "dkmedborger",
+  // Italy: Italian language school courses for CILS and CELI
+  "itcils", "itceli",
   // Finland: Hygiene Passport courses, metsästäjävalmennuskurssit
   "fihygiene", "fihunt",
   // Hungary: Red Cross and driving school first aid courses, hatósági képzés courses for insurance intermediaries
@@ -66,7 +68,7 @@ const TEACHER_LED = new Set([
   "ssccgl", "rrbntpc", "ctet", "ibpspo",
   "rrbgroupd", "sscgd", "sscchsl", "sscmts", "uppolice", "ibpsclerk", "jnvst", "jambeng", "appsych",
   // Next-100 batch 2 (November 2026)
-  "sbipo", "sbiclerk", "ibpsrrb", "delhipolice", "biharpolice", "rajpolice", "mppolice", "apush", "apbio", "phcse",
+  "sbipo", "sbiclerk", "ibpsrrb", "delhipolice", "biharpolice", "rajpolice", "mppolice", "apush", "apbio", "apitalian", "phcse",
   // Next-100 batch 3 (November 2026)
   "upscse", "nda", "agniveer", "agniveervayu", "rrbalp", "rpfconst", "ssccpo", "apworld", "aplang", "phlet",
   // Next-100 batch 4 (November 2026)

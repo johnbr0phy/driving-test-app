@@ -1,7 +1,7 @@
 // Which country's tests a visitor sees first. Each country has its own
 // indexable homepage: the US at "/", the others at /uk, /ie, /ca, /au, /nz, /in,
 // /ph, /my, /sg, /hk, /ae, /za, /ng, /ke, /pk,
-// /es, /pt, /ro, /se, /gr, /dk, /hu, /be, /fi, /mt and /de. A view
+// /es, /pt, /ro, /se, /gr, /dk, /hu, /be, /fi, /mt, /de and /it. A view
 // setting only: it never touches progress, and every test stays reachable from
 // every country. middleware.ts sets it from Vercel's request country on the
 // first visit and sends a visitor from any other country we cover from "/" to their
@@ -9,7 +9,7 @@
 
 import type { Language } from "@/i18n";
 
-export type Region = "US" | "CA" | "UK" | "IE" | "AU" | "NZ" | "IN" | "PH" | "MY" | "SG" | "HK" | "AE" | "ZA" | "NG" | "KE" | "PK" | "ES" | "PT" | "RO" | "SE" | "GR" | "DK" | "HU" | "BE" | "FI" | "MT" | "DE";
+export type Region = "US" | "CA" | "UK" | "IE" | "AU" | "NZ" | "IN" | "PH" | "MY" | "SG" | "HK" | "AE" | "ZA" | "NG" | "KE" | "PK" | "ES" | "PT" | "RO" | "SE" | "GR" | "DK" | "HU" | "BE" | "FI" | "MT" | "DE" | "IT";
 
 /**
  * Every country with its own homepage. `lang` is the language its homepage is
@@ -45,6 +45,7 @@ export const REGIONS: { code: Region; name: string; short: string; inName: strin
   { code: "FI", name: "Finland", short: "FI", inName: "Finland", lang: "fi", locale: "fi-FI" },
   { code: "MT", name: "Malta", short: "MT", inName: "Malta", lang: "en", locale: "en-MT" },
   { code: "DE", name: "Germany", short: "DE", inName: "Germany", lang: "de", locale: "de-DE" },
+  { code: "IT", name: "Italy", short: "IT", inName: "Italy", lang: "it", locale: "it-IT" },
 ];
 
 /** The chosen region, e.g. "UK". */
@@ -89,6 +90,8 @@ export function regionFromCountry(cc: string | null | undefined): Region | null 
     // Germany only: Austria, Switzerland, Luxembourg and Liechtenstein have
     // their own tests and rules, so they stay unmapped.
     case "DE": return "DE";
+    // Italy only: San Marino and the Vatican issue their own licences.
+    case "IT": return "IT";
     default: return null;
   }
 }
@@ -126,6 +129,7 @@ const TEST_REGIONS: Record<string, TestRegion> = {
   sgftt: "SG", sgrtt: "SG", sgres: "SG", sgm5: "SG", sgvl: "SG", hkiiqe1: "HK", hklesfi1: "HK", aesira: "AE", mypce: "MY", kenck: "KE",
   detheorie: "DE", demotorrad: "DE", deaevo: "DE", de34a: "DE", deheilpr: "DE",
   esdgt: "ES", escapcond: "ES", espolicia: "ES", esguardia: "ES", esvigilante: "ES", ptimt: "PT", ptmoto: "PT", ptcam: "PT", pttvde: "PT", ptvigil: "PT", rodrpciv: "RO", rocpi: "RO", rotaxi: "RO", roadmed: "RO", rorezid: "RO", setrafik: "SE", semoto: "SE", sejakt: "SE", semedb: "SE", sehp: "SE", grdriving: "GR", grmoto: "GR", grcitizen: "GR", grsecurity: "GR", grinsure: "GR", dkteori: "DK", dkmoto: "DK", dkindfoed: "DK", dkmedborger: "DK", dkjagt: "DK", hukresz: "HU", hukreszmoto: "HU", hugki: "HU", huelsoseg: "HU", hubizt: "HU", bedriving: "BE", bemoto: "BE", bevracht: "BE", betoelating: "BE", befsmavz: "BE", fitheory: "FI", fimoto: "FI", fitruck: "FI", fihygiene: "FI", fihunt: "FI", mttheory: "MT", mtmoto: "MT", mtcpc: "MT", mttaxi: "MT", mtguard: "MT",
+  itpatente: "IT", itcils: "IT", itceli: "IT",
   jambeng: "NG", jambmath: "NG", jambbio: "NG", jambchem: "NG", jambphys: "NG",
   ngpolice: "NG", cdcfib: "NG", ngarmy: "NG", ngcustoms: "NG", trcnpqe: "NG",
   inrto: "IN", ssccgl: "IN", rrbntpc: "IN", ibpspo: "IN", ctet: "IN",
@@ -144,6 +148,7 @@ export const NON_DRIVING_TESTS = new Set([
   "ptvigil",
   "mttaxi", "mtguard",
   "deaevo", "de34a", "deheilpr",
+  "itcils", "itceli",
   "sejakt", "semedb", "sehp",
   "fihygiene", "fihunt",
   "huelsoseg", "hubizt",
@@ -404,6 +409,15 @@ export const REGION_HOME: Record<Exclude<Region, "US">, {
     cta: { label: "Führerschein-Theorie", href: "/de/fuehrerschein-theorie-test" },
     testsTitle: "Übungstests für Deutschland",
     testsSub: "Die Theorieprüfung Klasse B und für das Motorrad (Klassen A, A1, A2): Fragen nach StVO und Fahrerlaubnis-Verordnung, in km/h für den Rechtsverkehr. Dazu die AEVO-Prüfung für Ausbilder, die Sachkundeprüfung nach § 34a GewO und der schriftliche Teil der Heilpraktikerprüfung.",
+  },
+  // Written in Italian (REGIONS[].lang). The CTA shows once itpatente is in the catalog.
+  IT: {
+    title: "Quiz patente B gratis: esercitati per la teoria | Tigertest",
+    description: "Esercitati gratis per l'esame di teoria della patente B e per le certificazioni di italiano B1 (CILS, CELI): domande originali, ogni risposta spiegata. Senza registrazione.",
+    lead: "Esercitati per l'esame di teoria della patente B: domande originali su segnali, precedenze, limiti di velocità e guida sicura secondo il Codice della Strada, ogni risposta spiegata. Senza registrazione.",
+    cta: { label: "Quiz patente B", href: "/it/quiz-patente-b" },
+    testsTitle: "Test di pratica per l'Italia",
+    testsSub: "Il quiz di teoria per la patente B secondo il Codice della Strada, in km/h e con circolazione a destra. Inoltre le certificazioni di lingua italiana di livello B1 per la cittadinanza: CILS B1 Cittadinanza e CELI 2.",
   },
   MT: {
     title: "Free Malta Driving Theory Test Practice | Tigertest",

@@ -16,7 +16,7 @@ import type { Language } from "@/i18n";
 import { COUNTRY_NAMES, countryNameIn, homeCopy } from "@/components/home/homeCopy";
 
 export const FLAGS: Record<Region, string> = { US: "🇺🇸", CA: "🇨🇦", UK: "🇬🇧", IE: "🇮🇪", AU: "🇦🇺", NZ: "🇳🇿", IN: "🇮🇳",
-  PH: "🇵🇭", MY: "🇲🇾", SG: "🇸🇬", HK: "🇭🇰", AE: "🇦🇪", ZA: "🇿🇦", NG: "🇳🇬", KE: "🇰🇪", PK: "🇵🇰", ES: "🇪🇸", PT: "🇵🇹", RO: "🇷🇴", SE: "🇸🇪", GR: "🇬🇷", DK: "🇩🇰", HU: "🇭🇺", BE: "🇧🇪", FI: "🇫🇮", MT: "🇲🇹", DE: "🇩🇪" };
+  PH: "🇵🇭", MY: "🇲🇾", SG: "🇸🇬", HK: "🇭🇰", AE: "🇦🇪", ZA: "🇿🇦", NG: "🇳🇬", KE: "🇰🇪", PK: "🇵🇰", ES: "🇪🇸", PT: "🇵🇹", RO: "🇷🇴", SE: "🇸🇪", GR: "🇬🇷", DK: "🇩🇰", HU: "🇭🇺", BE: "🇧🇪", FI: "🇫🇮", MT: "🇲🇹", DE: "🇩🇪", IT: "🇮🇹" };
 
 /** Always in the row: the countries with the most Tigertest tests and visitors. */
 const LARGEST: Region[] = ["US", "UK", "IN", "CA", "AU"];

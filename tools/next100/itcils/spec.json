@@ -1,0 +1,299 @@
+{
+  "id": "itcils",
+  "stateCode": "ITCILS",
+  "prefix": "ITCILS-",
+  "idBase": 27400,
+  "testIds": [
+    27401,
+    27402,
+    27403,
+    27404
+  ],
+  "setIds": [
+    27401,
+    27402,
+    27403,
+    27404,
+    27405
+  ],
+  "slug": "/cils-b1-cittadinanza",
+  "landingPath": "/it/cils-b1-cittadinanza-test",
+  "dataFile": "data/italy-cils-b1-questions.json",
+  "landingJson": "lib/landings/itcils.it.json",
+  "region": "IT",
+  "language": "it",
+  "locale": "it-IT",
+  "review": {
+    "it": "model"
+  },
+  "icon": "book",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 60,
+  "passReasoning": "The real B1 Cittadinanza scores four skills at 12 points each and every skill must be passed (Centro CILS, La valutazione; Criteri di valutazione B1 cittadinanza). No CILS page read states the B1 Cittadinanza minimum in so many words; for every other CILS module scored out of 12 per skill the minimum is 7 of 12 (58%), per the Centro CILS evaluation guide. Tigertest models only the reading and grammar skill, so 60% (30 of 50) is a readiness line just above 7 of 12, not an official mark. The copy says so.",
+  "name": "CILS B1 Cittadinanza",
+  "shortName": "CILS B1 Cittadinanza",
+  "examLabel": "CILS B1 Cittadinanza",
+  "fullName": "CILS B1 Cittadinanza (certificazione di italiano per la cittadinanza, Università per Stranieri di Siena)",
+  "italian": {
+    "name": "CILS B1 Cittadinanza",
+    "shortName": "CILS B1 Cittadinanza",
+    "examLabel": "CILS B1 Cittadinanza",
+    "fullName": "CILS B1 Cittadinanza (certificazione di italiano per la cittadinanza, Università per Stranieri di Siena)"
+  },
+  "english": {
+    "name": "CILS B1 Cittadinanza (Italian B1 test for citizenship)",
+    "shortName": "CILS B1 citizenship test",
+    "fullName": "CILS B1 Cittadinanza, the Italian B1 language test for citizenship, in Italian"
+  },
+  "categories": [
+    {
+      "key": "itcilsAvvisi",
+      "labelIt": "Avvisi e annunci",
+      "labelEn": "Notices and ads",
+      "perTest": 5,
+      "pool": 20,
+      "segment": "AVV"
+    },
+    {
+      "key": "itcilsMail",
+      "labelIt": "Mail e lettere",
+      "labelEn": "Emails and letters",
+      "perTest": 5,
+      "pool": 20,
+      "segment": "MAI"
+    },
+    {
+      "key": "itcilsTesti",
+      "labelIt": "Articoli e istruzioni",
+      "labelEn": "Articles and instructions",
+      "perTest": 5,
+      "pool": 20,
+      "segment": "TES"
+    },
+    {
+      "key": "itcilsPreposizioni",
+      "labelIt": "Articoli e preposizioni",
+      "labelEn": "Articles and prepositions",
+      "perTest": 5,
+      "pool": 20,
+      "segment": "PRE"
+    },
+    {
+      "key": "itcilsPassato",
+      "labelIt": "Passato prossimo e imperfetto",
+      "labelEn": "Passato prossimo and imperfetto",
+      "perTest": 6,
+      "pool": 24,
+      "segment": "PAS"
+    },
+    {
+      "key": "itcilsVerbi",
+      "labelIt": "Presente, imperativo e condizionale",
+      "labelEn": "Present, imperative and conditional",
+      "perTest": 5,
+      "pool": 20,
+      "segment": "VER"
+    },
+    {
+      "key": "itcilsPronomi",
+      "labelIt": "Pronomi, ci e ne",
+      "labelEn": "Pronouns, ci and ne",
+      "perTest": 5,
+      "pool": 20,
+      "segment": "PRO"
+    },
+    {
+      "key": "itcilsAggettivi",
+      "labelIt": "Possessivi, dimostrativi e confronti",
+      "labelEn": "Possessives, demonstratives and comparisons",
+      "perTest": 4,
+      "pool": 16,
+      "segment": "AGG"
+    },
+    {
+      "key": "itcilsConnettivi",
+      "labelIt": "Connettivi e frasi complesse",
+      "labelEn": "Linking words and complex sentences",
+      "perTest": 4,
+      "pool": 16,
+      "segment": "CON"
+    },
+    {
+      "key": "itcilsLessico",
+      "labelIt": "Lessico e registro",
+      "labelEn": "Vocabulary and register",
+      "perTest": 6,
+      "pool": 24,
+      "segment": "LES"
+    }
+  ],
+  "blueprint": {
+    "itcilsAvvisi": 5,
+    "itcilsMail": 5,
+    "itcilsTesti": 5,
+    "itcilsPreposizioni": 5,
+    "itcilsPassato": 6,
+    "itcilsVerbi": 5,
+    "itcilsPronomi": 5,
+    "itcilsAggettivi": 4,
+    "itcilsConnettivi": 4,
+    "itcilsLessico": 6
+  },
+  "blueprintComment": "CILS B1 Cittadinanza (Centro CILS, Università per Stranieri di Siena; Sillabo B1 Cittadinanza and Criteri di valutazione, read 2026-11-12): four skills scored 12 each, all must be passed, no capitalizzazione. Only Comprensione della lettura e riflessione grammaticale is modelled (real: 12 true/false items + a 6-item multiple-choice cloze, 40 minutes, texts 350-500 words). Ascolto, Produzione scritta and Produzione orale are not modelled. Per test: reading 15 (avvisi 5, mail 5, articoli e istruzioni 5) and grammar and usage 35 on the sillabo's structures (articoli e preposizioni 5, passato prossimo e imperfetto 6, presente/imperativo/condizionale 5, pronomi 5, possessivi/dimostrativi/comparativi 4, connettivi 4, lessico e registro 6). The split is Tigertest's: CILS publishes no topic weights. Futuro and congiuntivo are not in the B1 Cittadinanza sillabo and are never tested. All items original.",
+  "trainingSets": [
+    {
+      "id": 27401,
+      "setNumber": 1,
+      "nameIt": "Leggere avvisi, mail e articoli",
+      "nameEn": "Reading notices, emails and articles",
+      "categories": [
+        "itcilsAvvisi",
+        "itcilsMail",
+        "itcilsTesti"
+      ],
+      "size": 60,
+      "weightLabelIt": "15 di 50 domande per prova"
+    },
+    {
+      "id": 27402,
+      "setNumber": 2,
+      "nameIt": "Articoli, preposizioni e aggettivi",
+      "nameEn": "Articles, prepositions and adjectives",
+      "categories": [
+        "itcilsPreposizioni",
+        "itcilsAggettivi"
+      ],
+      "size": 36,
+      "weightLabelIt": "9 di 50 domande per prova"
+    },
+    {
+      "id": 27403,
+      "setNumber": 3,
+      "nameIt": "Passato, presente e condizionale",
+      "nameEn": "Past, present and conditional",
+      "categories": [
+        "itcilsPassato",
+        "itcilsVerbi"
+      ],
+      "size": 44,
+      "weightLabelIt": "11 di 50 domande per prova"
+    },
+    {
+      "id": 27404,
+      "setNumber": 4,
+      "nameIt": "Pronomi e connettivi",
+      "nameEn": "Pronouns and linking words",
+      "categories": [
+        "itcilsPronomi",
+        "itcilsConnettivi"
+      ],
+      "size": 36,
+      "weightLabelIt": "9 di 50 domande per prova"
+    },
+    {
+      "id": 27405,
+      "setNumber": 5,
+      "nameIt": "Lessico e registro",
+      "nameEn": "Vocabulary and register",
+      "categories": [
+        "itcilsLessico"
+      ],
+      "size": 24,
+      "weightLabelIt": "6 di 50 domande per prova"
+    }
+  ],
+  "dashboardSteps": "5 topic sets + 4 tests = 9 steps (last set and last test Premium per lib/examLocks.ts)",
+  "copy": {
+    "guestPrompt": "per salvare i tuoi progressi verso il CILS B1 Cittadinanza e tenere traccia di ogni errore",
+    "trainingHeading": "Set di allenamento",
+    "trainingSub": "Ogni set copre un tema: lettura, articoli e preposizioni, verbi, pronomi e connettivi, lessico. Vedi subito la risposta, e le domande che sbagli tornano finché non le sai.",
+    "testsHeading": "Prove · 50 domande, 30 per superarle",
+    "heroSubs": [
+      "Cinque set di allenamento e quattro prove da 50 domande. Comincia dalla lettura.",
+      "Prendi sicurezza nel set, poi fai la prova.",
+      "Continua così. Ripassa i verbi al passato.",
+      "Ripeti i tuoi errori e rifai la prova.",
+      "Tutto verde. Lettura e grammatica del CILS B1 non ti fanno più paura."
+    ],
+    "sourceLine": "Domande originali sul sillabo CILS B1 Cittadinanza (comprensione della lettura e riflessione grammaticale), novembre 2026. Ascolto, produzione scritta e orale non sono incluse.",
+    "analyticsKey": "itcils"
+  },
+  "examFacts": {
+    "answer": "CILS B1 Cittadinanza is the Italian language certificate of the Centro CILS at the Università per Stranieri di Siena for people applying for Italian citizenship by marriage or residence, who must show Italian at B1 of the CEFR under article 9.1 of Law 91/1992. It tests four skills, each scored out of 12: listening (two tasks, about 30 minutes), reading comprehension and grammar (two tasks, 40 minutes), writing (one email of 80 to 120 words, 40 minutes) and speaking (about 10 minutes with an examiner). Every skill must be passed, the certificate is valid only for the citizenship application, and a failed skill cannot be carried over: the whole exam is taken again.",
+    "rows": [
+      [
+        "Skills",
+        "Listening, reading and grammar, writing, speaking"
+      ],
+      [
+        "Score",
+        "12 points per skill, every skill must be passed"
+      ],
+      [
+        "Reading and grammar",
+        "2 tasks (true/false, multiple-choice cloze), 40 minutes"
+      ],
+      [
+        "Writing",
+        "1 email of 80 to 120 words, 40 minutes"
+      ],
+      [
+        "Speaking",
+        "About 10 minutes with an examiner"
+      ],
+      [
+        "Valid for",
+        "Italian citizenship applications only"
+      ],
+      [
+        "If you fail a skill",
+        "You retake the whole exam"
+      ],
+      [
+        "Run by",
+        "Centro CILS, Università per Stranieri di Siena"
+      ]
+    ],
+    "source": {
+      "title": "Centro CILS: Prove Liv. B1 c (B1 Cittadinanza)",
+      "url": "https://cils.unistrasi.it/1/89/382/Prove_Liv._B1_c.htm"
+    },
+    "unconfirmed": "The 7 of 12 minimum per skill is the CILS rule for 12-point modules; no page read states it for B1 Cittadinanza by name. Fees are set by each exam centre (100 euro on the Siena page, 120 euro at the Stuttgart institute) and are not stated as one figure."
+  },
+  "theme": {
+    "hue": 147,
+    "sat": 55,
+    "light": 26,
+    "note": "Italian flag green; if it clashes with an existing theme within 8 degrees, try 4 75% 34% (Italian flag red, dark)"
+  },
+  "borrowedTiger": "civics (citizenship test) or uklitu",
+  "hubGroup": "Citizenship tests",
+  "teacherLed": true,
+  "searchAliases": [
+    "cils",
+    "cils b1",
+    "cils b1 cittadinanza",
+    "b1 cittadinanza",
+    "esame b1 cittadinanza",
+    "test b1 cittadinanza",
+    "test di italiano per la cittadinanza",
+    "test italiano cittadinanza",
+    "certificazione b1 cittadinanza",
+    "italian citizenship b1",
+    "italian citizenship test",
+    "italian citizenship language test",
+    "italian b1 test",
+    "b1 italian citizenship",
+    "italian language test for citizenship",
+    "unistrasi cils"
+  ],
+  "notModelled": [
+    "Ascolto",
+    "Produzione scritta",
+    "Produzione orale",
+    "true/false format (ours are four-option items)",
+    "futuro and congiuntivo (not in the B1 Cittadinanza sillabo)"
+  ],
+  "claudeMdBullet": "- **CILS B1 Cittadinanza** (`itcils`, the Italian B1 language certificate of the Centro CILS, Università per Stranieri di Siena, that applicants for Italian citizenship by marriage or residence present under art. 9.1 L. 91/1992 (added by D.L. 113/2018, converted by L. 132/2018), Tigertest's first Italian-language exam, base language Italian, `language: \"it\"`, `locale: \"it-IT\"`, English names in `english`, `review: { it: \"model\" }`, `/cils-b1-cittadinanza/*`, landing `/it/cils-b1-cittadinanza-test` from `lib/landings/itcils.it.json`): `data/italy-cils-b1-questions.json` (200 original questions written in Italian on the B1 Cittadinanza sillabo: reading with an original notice, email or article in each stem, avvisi e annunci 20, mail e lettere 20, articoli e istruzioni 20; grammar and usage, articoli e preposizioni 20, passato prossimo e imperfetto 24, presente, imperativo e condizionale 20, pronomi, ci e ne 20, possessivi, dimostrativi e confronti 16, connettivi 16, lessico e registro 24), four 50-question tests (IDs 27401-27404, 5/5/5/5/6/5/5/4/4/6 per test, Tigertest's split) and five Italian-named topic sets 27401-27405 (60/36/44/36/24), 9 dashboard steps, state `ITCILS`, prefix `ITCILS-`, 60% readiness line (30 of 50, Tigertest's). The real exam (Centro CILS sillabo and criteri, read 2026-11-12) scores four skills at 12 points each, every one to pass (7 of 12 by the CILS rule for 12-point modules, not stated for B1 c by name), no capitalizzazione: Ascolto (2 tasks, about 30 minutes), Comprensione della lettura e riflessione grammaticale (12 true/false items and a 6-gap multiple-choice cloze, 40 minutes), Produzione scritta (one email, 80 to 120 words, 40 minutes), Produzione orale (about 10 minutes). Only reading and grammar are modelled; ours are four-option items. Futuro and congiuntivo are left out because the B1 Cittadinanza sillabo lists only presente, passato prossimo, imperfetto, infinito, imperativo and condizionale presente. Never copied from the CILS sample quaderno or commercial books. Built by `tools/next100/itcils/build.py`; sources in `tools/next100/itcils/sources.md`, terms in `glossary.md`. Region IT, hub group \"Citizenship tests\", `[data-theme=\"itcils\"]` Italian green, borrows the civics tiger, teacher-led (CPIA and language school courses)."
+}

@@ -35,7 +35,7 @@ const siteUrl = SITE_URL;
 
 // Offers on an EU exam's page are in euros (or the country's own currency).
 const CURRENCY: Record<string, string> = {
-  ES: "EUR", PT: "EUR", DE: "EUR", GR: "EUR", BE: "EUR", FI: "EUR", MT: "EUR", IE: "EUR",
+  ES: "EUR", PT: "EUR", DE: "EUR", GR: "EUR", BE: "EUR", FI: "EUR", MT: "EUR", IE: "EUR", IT: "EUR",
   SE: "SEK", DK: "DKK", HU: "HUF", RO: "RON",
 };
 

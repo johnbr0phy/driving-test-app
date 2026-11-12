@@ -72,6 +72,6 @@ export const config = {
   matcher: [
     "/", "/tests",
     "/ca", "/uk", "/ie", "/au", "/nz", "/in", "/ph", "/my", "/sg", "/hk", "/ae", "/za", "/ng", "/ke", "/pk",
-    "/es", "/pt", "/ro", "/se", "/gr", "/dk", "/hu", "/be", "/fi", "/mt", "/de",
+    "/es", "/pt", "/ro", "/se", "/gr", "/dk", "/hu", "/be", "/fi", "/mt", "/de", "/it",
   ],
 };

@@ -31,7 +31,7 @@
     "correct": [
       0
     ],
-    "explanation": "Low potassium weakens skeletal muscle and makes the heart irritable, so weakness, leg cramps and an irregular pulse are the signs to report. Peaked T waves go with high potassium, and twitching around the mouth suggests low calcium."
+    "explanation": "Low potassium weakens skeletal muscle and makes the heart irritable, so weakness, leg cramps and an irregular pulse are the signs to report. Peaked T waves go with high potassium, twitching around the mouth suggests low calcium, and watery diarrhea is a cause of potassium loss rather than a sign of it, since low potassium slows the bowel and causes constipation."
   },
   {
     "domain": "pnRisk",
@@ -293,7 +293,7 @@
     "correct": [
       2
     ],
-    "explanation": "Lying flat for the prescribed period and taking extra fluids lower the chance of a spinal headache from leaking cerebrospinal fluid. Sitting up or walking right away and limiting fluids all make a headache more likely."
+    "explanation": "The PN reinforces the position the provider prescribed after the procedure, often lying flat for a period, and encourages fluids unless they are restricted, because fluids help replace the cerebrospinal fluid that was removed. Limiting fluids works against that, and sitting up or walking right away goes against the prescribed activity order."
   },
   {
     "domain": "pnRisk",
@@ -311,7 +311,7 @@
     "correct": [
       3
     ],
-    "explanation": "An empty bladder keeps the needle from puncturing it when the abdomen is entered. The client sits upright or with the head raised so fluid pools low in the abdomen, and a full stomach or bladder is a hazard."
+    "explanation": "An empty bladder keeps the needle from puncturing it when the abdomen is entered. The client sits upright or with the head raised so fluid pools low in the abdomen rather than lying flat on one side, and there is no reason to give a full meal or extra water before the procedure."
   },
   {
     "domain": "pnRisk",
@@ -443,6 +443,6 @@
     "correct": [
       0
     ],
-    "explanation": "The MRI magnet can move or heat metal and disable a pacemaker, so implants, clips, fragments and devices must be identified before the client enters the room. Fasting and contrast allergy questions matter for other tests, not a plain MRI."
+    "explanation": "The MRI magnet can move or heat metal and disable a pacemaker, so implants, clips, fragments and devices must be identified before the client enters the room. Fasting, iodine contrast and latex questions matter for other procedures, but metal is the one question that can make an MRI itself dangerous."
   }
 ]

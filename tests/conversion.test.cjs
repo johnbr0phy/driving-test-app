@@ -3,12 +3,12 @@
 require("tsx/cjs");
 const test = require("node:test");
 const assert = require("node:assert");
-const { ladder, distribution, grid, payChance, summarize, timeToBuy, pack, unpack, isLive, insights, dayNumber, MIN_CELL } = require("../lib/conversion.ts");
+const { ladder, distribution, grid, payChance, summarize, timeToBuy, pack, unpack, isLive, insights, dayNumber, byGroup, comparePeriods, MIN_CELL } = require("../lib/conversion.ts");
 const { beforePurchase } = require("../lib/server/conversion.ts");
 
 const row = (o) => ({
   paid: false, answers: 0, tests: 0, activeDays: 1, paywallViews: 0, paywalls: 0, exam: 0,
-  signupDay: 100, lastActiveDay: 100, daysToBuy: -1, answersAfter: 0, activeDaysAfter: 0, soldBy: -1, ...o,
+  signupDay: 100, lastActiveDay: 100, daysToBuy: -1, answersAfter: 0, activeDaysAfter: 0, soldBy: -1, market: 0, lastPaywallDay: -1, ...o,
 });
 
 test("rows survive packing", () => {
@@ -113,4 +113,43 @@ test("a buyer's history is split at the purchase", () => {
   assert.strictEqual(b.share, 5 / 8);
   assert.deepStrictEqual(beforePurchase({}, at), { share: 1, testsBefore: 0, answersAfter: 0 });
   assert.strictEqual(beforePurchase(doc, null).share, 1);
+});
+
+test("pay rate by market counts everyone who was asked, buyers with no recorded view included", () => {
+  const rows = [
+    row({ market: 0, paywallViews: 2, paid: true }),
+    row({ market: 0, paid: true }), // paid before views were recorded
+    row({ market: 0, paywallViews: 1, lastPaywallDay: 95 }),
+    row({ market: 0, paywallViews: 1, lastPaywallDay: 10 }),
+    row({ market: 0 }), // never asked
+    row({ market: 1, paywallViews: 3, lastPaywallDay: 99 }),
+  ];
+  const [us, uk] = byGroup(rows, "market", 100);
+  assert.deepStrictEqual([us.index, us.accounts, us.sawPaywall, us.paid, us.open], [0, 5, 4, 2, 1]);
+  assert.strictEqual(us.rate, 0.5);
+  assert.deepStrictEqual([uk.index, uk.sawPaywall, uk.paid, uk.rate, uk.open], [1, 1, 0, 0, 1]);
+});
+
+test("period comparison leaves today out and ranks paywalls by their rise", () => {
+  const day = (n) => new Date(n * 86_400_000).toISOString().slice(0, 10);
+  const today = 20000;
+  const oldWall = {};
+  const newWall = {};
+  const all = {};
+  for (let d = today - 14; d < today - 7; d++) { oldWall[day(d)] = 10; all[day(d)] = 10; }
+  for (let d = today - 7; d < today; d++) { oldWall[day(d)] = 10; newWall[day(d)] = 20; all[day(d)] = 30; }
+  newWall[day(today)] = 500; // today, not over yet
+  all[day(today)] = 500;
+  const sales = [
+    [today - 10, 0, 0, 999], [today - 9, 0, 0, 999],
+    [today - 3, 0, 0, 999], [today - 2, 1, 1, 499], [today - 1, -1, 0, 999],
+    [today, 1, 0, 999], // today
+    [today - 30, 0, 0, 999], // before both periods
+  ];
+  const c = comparePeriods([oldWall, newWall], all, sales, today, 7);
+  assert.deepStrictEqual([c.hitsBefore, c.hitsNow], [70, 210]);
+  assert.deepStrictEqual([c.salesBefore, c.salesNow, c.centsBefore, c.centsNow], [2, 3, 1998, 2497]);
+  assert.deepStrictEqual(c.walls[0], { index: 1, before: 0, now: 140, soldBefore: 0, soldNow: 1 });
+  assert.deepStrictEqual(c.walls.find((w) => w.index === 0), { index: 0, before: 70, now: 70, soldBefore: 2, soldNow: 1 });
+  assert.strictEqual(c.walls.find((w) => w.index === -1).soldNow, 1);
 });

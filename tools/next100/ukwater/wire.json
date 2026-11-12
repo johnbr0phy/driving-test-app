@@ -1,0 +1,138 @@
+{
+  "blueprintComment": [
+    "Water Regulations certificate (England and Wales: Water Supply (Water Fittings) Regulations 1999;",
+    "Scotland Byelaws 2014 and NI 2009 Regulations noted where they differ), checked November 2026.",
+    "City & Guilds 3345 unit 301/304: 50 open-book MCQs in 105 minutes, no pass mark published.",
+    "BPEC: 52 open-book MCQs in 104 minutes, pass 42 (80%). No area weights are published, so the",
+    "split is Tigertest's, along the 3345 test specification topics. Defra's new backflow",
+    "specification (6 May 2026) takes effect 6 May 2027; Type AUK4 left out. All items original."
+  ],
+  "copy": {
+    "guestPrompt": "to save your Water Regulations progress and track every question you miss",
+    "trainingSub": "Four topic sets, from notification and fluid categories to backflow prevention. Missed questions come back until you master them.",
+    "testsHeading": "Practice tests · 50 questions across every topic, 80% to pass",
+    "heroSubs": [
+      "Four training sets, four practice tests. Start with The Regulations & Fluid Categories.",
+      "Master each topic, then test yourself.",
+      "Keep going. Every topic you master shows up on the tests.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. Book your Water Regulations assessment."
+    ],
+    "sourceLine": "Based on the Water Supply (Water Fittings) Regulations 1999 and the City & Guilds 3345 and BPEC assessment structures, checked November 2026. Original questions."
+  },
+  "themeComment": "Water Regulations theme: river teal",
+  "blurb": "Practice the Water Regulations: notification, fluid categories, backflow devices and air gaps, and the Schedule 2 rules plumbers are tested on.",
+  "org": "City & Guilds · BPEC · Water Regulations certificate",
+  "aliases": "water regulations water regs wras water fittings regulations 1999 water byelaws backflow fluid categories city and guilds 3345 bpec water regs lcl water regulations wiaps approved plumber water regulations course plumbing",
+  "related": [
+    "ukg3",
+    "ukplumb",
+    "uk18ed"
+  ],
+  "shareTitle": "Water Regulations Practice Test",
+  "shareDesc": "Practise notification, fluid categories, backflow prevention and the Schedule 2 rules for water fittings.",
+  "teaches": "a Water Regulations course",
+  "examFacts": {
+    "answer": "The Water Regulations certificate shows a plumber knows the Water Supply (Water Fittings) Regulations 1999 in England and Wales, and the matching Scottish Byelaws 2014 and Northern Ireland 2009 Regulations: what must be notified to the water company, the five fluid categories, which backflow device or air gap suits each, and the Schedule 2 rules for pipework, cisterns, hot water, WCs and taps. Awarding bodies such as City & Guilds and BPEC run it as an open-book multiple-choice test after a short course, and it is the usual evidence for joining an approved contractors' scheme.",
+    "rows": [
+      [
+        "Who runs it",
+        "Awarding bodies: City & Guilds (3345), BPEC, LCL Awards"
+      ],
+      [
+        "Law",
+        "Water Supply (Water Fittings) Regulations 1999 (England and Wales)"
+      ],
+      [
+        "City & Guilds 3345",
+        "50 multiple-choice questions in 105 minutes, open book"
+      ],
+      [
+        "BPEC",
+        "52 multiple-choice questions in 104 minutes, open book"
+      ],
+      [
+        "Pass mark",
+        "BPEC 42 of 52 (80%); City & Guilds does not publish one"
+      ],
+      [
+        "Leads to",
+        "Approved contractors' schemes such as WIAPS, APHC, CIPHE and SNIPEF"
+      ]
+    ],
+    "basedOn": "the City & Guilds 3345 handbook (v1.8), BPEC's Water Regulations qualification page and SI 1999/1148, checked November 2026",
+    "source": {
+      "name": "legislation.gov.uk: The Water Supply (Water Fittings) Regulations 1999",
+      "url": "https://www.legislation.gov.uk/uksi/1999/1148/contents/made"
+    }
+  },
+  "landing": {
+    "title": "Water Regulations Practice Test 2026 - Free Water Regs Mock Exams",
+    "metaDescription": "Free Water Regulations practice for the City & Guilds 3345 and BPEC tests: 200 original questions on fluid categories, backflow, notification and Schedule 2.",
+    "description": "Free practice for the UK Water Regulations certificate on the Water Supply (Water Fittings) Regulations 1999: 200 original questions on the regulations and notification, water fittings and materials, system design and testing, fluid categories, backflow prevention, cold and hot water services, and WCs, taps and appliances. Four 50-question practice tests with an explanation on every question.",
+    "keywords": "water regulations practice test, water regs mock exam, water regulations questions and answers, city and guilds 3345 practice, bpec water regulations test, fluid categories quiz, backflow prevention questions, water fittings regulations 1999",
+    "ogAlt": "Tigertest free Water Regulations practice test",
+    "appName": "Tigertest - Free Water Regulations Practice",
+    "featureList": [
+      "200 Water Regulations practice questions",
+      "4 practice tests of 50 questions",
+      "4 training sets by topic",
+      "Instant feedback with explanations",
+      "Auto-save progress"
+    ],
+    "h1": "Free Water Regulations Practice Test 2026",
+    "heroSubtitle": "200 questions on the Water Supply (Water Fittings) Regulations 1999 for the City & Guilds 3345 and BPEC tests: fluid categories, backflow devices, notification and the Schedule 2 rules. Tuned for mobile. No account needed.",
+    "howTrain": "Four training sets, from The Regulations & Fluid Categories to Backflow Prevention. Master a topic, then take a test. Questions you miss come back until you have mastered them.",
+    "howTest": "Four 50-question practice tests across every topic, with an 80% pass line like BPEC's and an explanation of the right answer on every question.",
+    "blueprintHeading": "Built on the Water Regulations Topics You Are Tested On",
+    "blueprintPara": "No awarding body publishes how many questions come from each topic, so the practice tests follow the City & Guilds 3345 test specification topics and put the most weight on backflow prevention and system design, where most marks are lost. Every question is original and written from the 1999 Regulations and Schedule 2.",
+    "tutors": [
+      "Running a Water Regulations course? Set Tigertest as practice between sessions at",
+      "and see which topics your group misses most before the assessment. It is free for you and your learners."
+    ],
+    "studyHeading": "How to Pass the Water Regulations Test",
+    "tips": [
+      [
+        "Know the five fluid categories cold",
+        "Most backflow questions start from the fluid category: drinking water is 1, aesthetic changes 2, slight hazard 3, significant hazard 4 and serious hazard 5. Learn an example of each, then the devices allowed for each category."
+      ],
+      [
+        "Learn what must be notified",
+        "Know which jobs need the water company's consent before work starts, how much notice is needed, and which jobs an approved contractor can do without notifying."
+      ],
+      [
+        "Use the open book, but do not rely on it",
+        "The test is open book, but there is not time to look up every answer. Tab the fluid category tables and the backflow device schedule, and know the common figures (test pressures, temperatures, WC flush volumes) without looking."
+      ],
+      [
+        "Fix your misses, then retest",
+        "Tigertest tracks your accuracy by topic. Aim for 90 percent on every practice test before the real one, so you have room above the 80 percent line."
+      ]
+    ],
+    "faqHeading": "Water Regulations Frequently Asked Questions",
+    "faqs": [
+      [
+        "Is the Water Regulations test open book?",
+        "Yes. City & Guilds lets candidates take the Water Regulations Guide into the 3345 test, and BPEC allows its training manual and course notes. You still need to know where things are, because there is not time to look up every answer."
+      ],
+      [
+        "What pass mark do I need?",
+        "BPEC's Water Regulations and Byelaws test needs 42 of 52 (80%), with a second attempt on the missed questions if you score 37 to 41. City & Guilds does not publish its mark. Tigertest uses 80% as the line."
+      ],
+      [
+        "Does this cover Scotland and Northern Ireland?",
+        "The questions follow the 1999 Regulations for England and Wales. Scotland's Byelaws 2014 and Northern Ireland's 2009 Regulations are almost the same; where they differ, such as the 20°C cold water limit and notifying Scottish Water or NI Water, the question says so."
+      ],
+      [
+        "Does passing make me an approved plumber?",
+        "No. The certificate is the evidence most approved contractors' schemes ask for, but you join a scheme (WIAPS, APHC, CIPHE or SNIPEF) separately. Approved contractors can skip notifying some jobs and issue compliance certificates."
+      ],
+      [
+        "Is the new backflow specification included?",
+        "Defra published a new Specification on the Prevention of Backflow on 6 May 2026, which takes effect on 6 May 2027. The device types and fluid categories asked here are the same in both; the new Type AUK4 air gap for WC suites is left out until it is in force."
+      ]
+    ],
+    "ctaHeading": "Ready to Pass the Water Regulations?",
+    "ctaSub": "Start for free. No account required. 200 questions across every topic."
+  }
+}

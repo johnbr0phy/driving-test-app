@@ -119,7 +119,7 @@ VENT = [
 ("Hinged windows are not suitable for purge ventilation if they open to an angle of:",
  "Less than 15 degrees", ["Less than 30 degrees", "Less than 45 degrees", "Less than 5 degrees"],
  "Paragraph 1.31 says hinged or pivot windows opening less than 15 degrees are not suitable for purge ventilation."),
-("When replacing windows in a naturally ventilated dwelling, each habitable room window should have background ventilators of at least:",
+("When replacing windows that had no background ventilators in a naturally ventilated dwelling, each habitable room window should have background ventilators of at least:",
  "8,000mm² equivalent area", ["4,000mm² equivalent area", "5,000mm² equivalent area", "12,000mm² equivalent area"],
  "AD F asks for 8,000mm² in habitable rooms and kitchens and 4,000mm² in bathrooms. With continuous mechanical extract, 4,000mm² per habitable room is enough."),
 ("AD F treats natural ventilation as suitable only for less airtight dwellings, meaning a design air permeability above:",

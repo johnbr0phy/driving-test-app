@@ -606,14 +606,14 @@
     "state": "ALL",
     "questionId": "UKBREGS-FIR-016",
     "category": "bregsFire",
-    "question": "In a dwellinghouse, where must cavity barriers be provided?",
+    "question": "In a timber-frame dwellinghouse, where must cavity barriers be provided?",
     "optionA": "Behind fitted kitchen units",
     "optionB": "Between every ceiling joist",
     "optionC": "At every stud in a partition",
     "optionD": "Around window and door openings",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Cavity barriers go at the edges of cavities, including around openings, and where a cavity wall meets a compartment wall or floor."
+    "explanation": "Paragraph 5.18 asks for cavity barriers at the edges of cavities, including around openings such as windows and doors, and where a cavity wall meets a compartment wall or floor. A masonry cavity wall with two leaves at least 75mm thick (Diagram 5.3) is excluded, so in a brick and block house the cavity closer around an opening needs no fire rating."
   },
   {
     "type": "UKBREGS",
@@ -1418,7 +1418,7 @@
     "state": "ALL",
     "questionId": "UKBREGS-VNT-014",
     "category": "bregsVentilation",
-    "question": "When replacing windows in a naturally ventilated dwelling, each habitable room window should have background ventilators of at least:",
+    "question": "When replacing windows that had no background ventilators in a naturally ventilated dwelling, each habitable room window should have background ventilators of at least:",
     "optionA": "4,000mm² equivalent area",
     "optionB": "8,000mm² equivalent area",
     "optionC": "5,000mm² equivalent area",

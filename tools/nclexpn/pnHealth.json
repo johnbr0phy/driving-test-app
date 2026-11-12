@@ -51,7 +51,7 @@
     "correct": [
       2
     ],
-    "explanation": "By 12 months most infants pull to stand, cruise along furniture and say one or two words. Alternating feet on stairs and six-block towers come around age 3, and two-word sentences around age 2."
+    "explanation": "By 12 months most infants pull to stand, cruise along furniture and say one or two words. A tower of six blocks and two-word sentences come around age 2, and walking up stairs with alternating feet around age 3."
   },
   {
     "domain": "pnHealth",
@@ -328,7 +328,7 @@
       2,
       4
     ],
-    "explanation": "By 4 months the head is steady, the posterior fontanel has closed, and the infant brings the hands to the mouth and holds a rattle. Passing objects between hands and sitting unsupported appear closer to 6 to 8 months."
+    "explanation": "By 4 months the head is steady, the posterior fontanel has closed, and the infant brings the hands to the mouth and holds a rattle. Passing objects between hands and sitting unsupported appear closer to 6 to 9 months."
   },
   {
     "domain": "pnHealth",
@@ -368,7 +368,7 @@
     "skill": "Evaluating self-care outcomes",
     "difficulty": 2,
     "format": "multi",
-    "passage": "Six weeks later. The client started sertraline 4 weeks ago, attends a weekly grief support group and brought a glucose log. Weight 89 kg. BP 136/84 mm Hg. The client says, \"I check my sugar before breakfast and dinner now. I still miss my wife, but I'm sleeping until 6.\"",
+    "passage": "Six weeks later. The client started sertraline 6 weeks ago, attends a weekly grief support group and brought a glucose log. Weight 89 kg. BP 136/84 mm Hg. The client says, \"I check my sugar before breakfast and dinner now. I still miss my wife, but I'm sleeping until 6.\"",
     "stimulusId": "NCLEXPN-CS3",
     "caseStep": 6,
     "stem": "The PN evaluates the client's progress. Which findings show that the plan of care is effective? Select all that apply.",
@@ -378,7 +378,7 @@
       "Weight stable at 89 kg",
       "Still grieving the spouse",
       "BP 136/84 mm Hg",
-      "Sertraline started 4 weeks ago"
+      "Sertraline started 6 weeks ago"
     ],
     "correct": [
       0,

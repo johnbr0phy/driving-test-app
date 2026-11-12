@@ -15,7 +15,7 @@ import type { ConversionPayload } from "@/lib/server/conversion";
 // lib/conversion.ts; the detail tables are folded away at the bottom.
 
 const PAYWALL = "#eb6834";
-const LOGGED_IN = "#8a2f0b";
+const LOGGED_IN = "#2563eb";
 const PAID = "#008300";
 const MUTED = "#c3c2b7";
 
@@ -373,9 +373,9 @@ export function ConversionView({ data, onRefresh, refreshing, updating }: {
       </div>
 
       <PeriodBarsCard title="Paywall hits over time" noun="paywall hits" color={PAYWALL}
-        note={`Every time a paywall opened; internal accounts and bots are not counted. Logged-in hits are counted from ${fmtDay(data.trackedSince)}, so earlier bars are not split.`}
+        note={`Every time a paywall opened; internal accounts and bots are not counted. Logged-in hits are exact from ${fmtDay(data.trackedSince)}. Before that they are an estimate: each account's hits are put on the day of its latest one, so an account that came back several times shows on one day, and one that has hit a paywall since is missing from the earlier bars.`}
         data={signupBars(data.daily.paywallHits, unit)} unit={unit} onUnit={setUnit}
-        part={{ data: signupBars(data.daily.signedIn ?? {}, unit), label: "Logged in", restLabel: "Guests, or not split yet", color: LOGGED_IN }} />
+        part={{ data: signupBars({ ...(data.daily.signedInEst ?? {}), ...(data.daily.signedIn ?? {}) }, unit), label: "Logged in", restLabel: "Guests", color: LOGGED_IN }} />
 
       {/* 2. Who pays, by market or test */}
       <div className={`${CARD} mb-3 sm:mb-4`}>

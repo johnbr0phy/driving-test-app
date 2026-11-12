@@ -27,6 +27,8 @@ const TEACHER_LED = new Set([
   "sejakt", "semedb", "sehp",
   // Denmark: jagttegnskurser, and language school (sprogcenter) courses for the citizenship and residence tests
   "dkjagt", "dkindfoed", "dkmedborger",
+  // Italy: Italian language school courses for CILS and CELI
+  "itcils", "itceli",
   // Finland: Hygiene Passport courses, metsästäjävalmennuskurssit
   "fihygiene", "fihunt",
   // Hungary: Red Cross and driving school first aid courses, hatósági képzés courses for insurance intermediaries

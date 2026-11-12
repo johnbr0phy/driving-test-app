@@ -2662,6 +2662,38 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Færdselsstyrelsen's pages on digital theory tests and its published randomisation key for the digital category A test, and the teaching plan for categories AM, A1, A2 and A (undervisningsplan, version 1.0 2026, in use from 1 July 2026), checked November 2026",
     source: { name: "Færdselsstyrelsen: Hvor kan jeg tage en teoriprøve?", url: "https://www.fstyr.dk/erhverv/koereskoler-og-koerelaerere/digitale-teoriproever" },
   },
+  itcils: {
+    answer:
+      "CILS B1 Cittadinanza is the Italian language certificate of the Centro CILS at the Università per Stranieri di Siena for people applying for Italian citizenship by marriage or residence, who must show Italian at B1 of the CEFR under article 9.1 of Law 91/1992. It tests four skills, each scored out of 12: listening (two tasks, about 30 minutes), reading comprehension and grammar (two tasks, 40 minutes), writing (one email of 80 to 120 words, 40 minutes) and speaking (about 10 minutes with an examiner). Every skill must be passed, the certificate is valid only for the citizenship application, and a failed skill cannot be carried over: the whole exam is taken again.",
+    rows: [
+      { label: "Skills", value: "Listening, reading and grammar, writing, speaking" },
+      { label: "Score", value: "12 points per skill, every skill must be passed" },
+      { label: "Reading and grammar", value: "2 tasks (true/false, multiple-choice cloze), 40 minutes" },
+      { label: "Writing", value: "1 email of 80 to 120 words, 40 minutes" },
+      { label: "Speaking", value: "About 10 minutes with an examiner" },
+      { label: "Valid for", value: "Italian citizenship applications only" },
+      { label: "If you fail a skill", value: "You retake the whole exam" },
+      { label: "Run by", value: "Centro CILS, Università per Stranieri di Siena" },
+    ],
+    basedOn: "The Centro CILS (Università per Stranieri di Siena) B1 Cittadinanza page, syllabus and scoring criteria, and Law 91/1992 art. 9.1, checked November 2026",
+    source: { name: "Centro CILS: Prove Liv. B1 c (B1 Cittadinanza)", url: "https://cils.unistrasi.it/1/89/382/Prove_Liv._B1_c.htm" },
+  },
+  itceli: {
+    answer:
+      "CELI 2 is the B1 Italian certificate of the CVCL at the Università per Stranieri di Perugia, for adults who can manage everyday social and working situations in Italian. The written part (reading, writing and listening, 120 points) needs 72 to pass and the oral, a role-play and a picture description of about 10 to 12 minutes, has its own minimum; results are graded A, B or C to pass and D or E to fail. A citizenship version, CELI 2 i cittadinanza, meets the B1 language requirement for Italian citizenship.",
+    rows: [
+      { label: "Level", value: "CEFR B1" },
+      { label: "Written part", value: "Reading, writing, listening; 120 points, 72 to pass" },
+      { label: "Oral part", value: "Role-play and picture description, about 10 to 12 minutes" },
+      { label: "Results", value: "A, B, C pass; D, E fail" },
+      { label: "Citizenship version", value: "CELI 2 i cittadinanza (B1), Italian centres only" },
+      { label: "Sessions", value: "CELI 2: March, June and November; CELI 2 i: several a year" },
+      { label: "Validity", value: "No expiry" },
+      { label: "Run by", value: "CVCL, Università per Stranieri di Perugia" },
+    ],
+    basedOn: "The CVCL (Università per Stranieri di Perugia) CELI pages and the Regolamento degli esami CELI (2024), checked November 2026",
+    source: { name: "CVCL: Esami CELI generici", url: "https://cvcl.unistrapg.it/pagine/esami-celi-generici" },
+  },
   dkindfoed: {
     answer:
       "The Danish citizenship test (indfødsretsprøven) is a written test for people applying for Danish citizenship by statute. It has 45 multiple-choice questions in Danish and lasts 45 minutes. 35 questions come from the official free learning material on Danish society, culture and history (Læremateriale til indfødsretsprøven, in text and audio), 5 are about current affairs from the months before the test, and 5 are about Danish values. To pass you need at least 36 correct answers, including at least 4 of the 5 values questions. Most questions have three options and some are yes or no. The test is run by SIRI (the Danish Agency for International Recruitment and Integration) and held twice a year, in May or June and in November or December, at language centres across Denmark; SIRI publishes each test and its answers afterwards. In May 2025, 58.2% of candidates passed.",

@@ -2509,6 +2509,34 @@
     --brand-gradient-to: 20 60% 96%;
   }
 
+  /* CILS B1 Cittadinanza (Italian B1 test for citizenship) theme */
+  [data-theme="itcils"] {
+    --brand: 146 90% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 146 80% 96%;
+    --brand-hover: 146 90% 13%;
+    --brand-dark: 146 90% 8%;
+    --brand-darker: 146 90% 6%;
+    --brand-muted: 146 40% 70%;
+    --brand-border: 146 45% 80%;
+    --brand-border-light: 146 45% 90%;
+    --brand-gradient-to: 0 0% 98%;
+  }
+
+  /* CELI 2 Italian B1 Certificate theme */
+  [data-theme="itceli"] {
+    --brand: 294 70% 28%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 294 70% 96%;
+    --brand-hover: 294 70% 23%;
+    --brand-dark: 294 70% 18%;
+    --brand-darker: 294 70% 13%;
+    --brand-muted: 294 40% 70%;
+    --brand-border: 294 45% 80%;
+    --brand-border-light: 294 45% 90%;
+    --brand-gradient-to: 0 0% 98%;
+  }
+
   /* Danish citizenship test (indfødsretsprøven) theme */
   [data-theme="dkindfoed"] {
     --brand: 350 90% 40%;
@@ -6892,6 +6920,29 @@
     --brand-muted: 12 35% 45%;
     --brand-dark: 12 85% 65%;
     --brand-darker: 12 80% 78%;
+  }
+  .dark [data-theme="itcils"] {
+    --brand: 146 90% 27.9%;
+    --brand-hover: 146 90% 19.9%;
+    --brand-light: 146 45% 13%;
+    --brand-gradient-to: 0 0% 11%;
+    --brand-border-light: 146 35% 24%;
+    --brand-border: 146 40% 34%;
+    --brand-muted: 146 40% 45%;
+    --brand-dark: 146 90% 65%;
+    --brand-darker: 146 90% 78%;
+  }
+
+  .dark [data-theme="itceli"] {
+    --brand: 294 70% 49.1%;
+    --brand-hover: 294 70% 41.1%;
+    --brand-light: 294 45% 13%;
+    --brand-gradient-to: 0 0% 11%;
+    --brand-border-light: 294 35% 24%;
+    --brand-border: 294 40% 34%;
+    --brand-muted: 294 40% 45%;
+    --brand-dark: 294 70% 65%;
+    --brand-darker: 294 70% 78%;
   }
   .dark [data-theme="dkindfoed"] {
     --brand: 350 90% 48.1%;

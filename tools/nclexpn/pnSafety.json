@@ -89,12 +89,11 @@
     "options": [
       "Remove the gloves",
       "Remove the gown",
-      "Leave the room and perform hand hygiene",
       "Remove the mask by its ties or loops",
-      "Perform hand hygiene again"
+      "Perform hand hygiene"
     ],
-    "correct": [0, 1, 2, 3, 4],
-    "explanation": "Gloves are the most contaminated item and come off first, then the gown, and the mask is removed last, outside the room, touching only the ties, with hand hygiene after the gown and again after the mask. Removing the mask before the gloves brings contaminated gloves to the face."
+    "correct": [0, 1, 2, 3],
+    "explanation": "Gloves are the most contaminated item and come off first, then the gown, and the mask comes off last, touching only the ties or loops, at the doorway before leaving the room. Hand hygiene follows right after all the equipment is off. Removing the mask before the gloves brings contaminated gloves to the face."
   },
   {
     "domain": "pnSafety",
@@ -204,7 +203,7 @@
       "\"I will put on a mask as well, to be safe.\""
     ],
     "correct": [1],
-    "explanation": "MRSA in a wound spreads by direct and indirect contact, so a gown and gloves block transmission and a mask adds nothing. A mask would be added only for a procedure likely to splash or if the organism were in the sputum."
+    "explanation": "MRSA in a wound spreads by direct and indirect contact, so a gown and gloves block transmission and a mask adds nothing. Under standard precautions a mask is added only when a splash or spray of body fluids is likely."
   },
   {
     "domain": "pnSafety",
@@ -268,7 +267,7 @@
       "\"I keep the tubing away from the space heater.\""
     ],
     "correct": [1],
-    "explanation": "Oxygen feeds a fire, so the tank and tubing stay at least 10 feet from stoves, heaters and open flames. No-smoking signs, water-based lotion instead of petroleum products and distance from heaters are correct practices."
+    "explanation": "Oxygen feeds a fire, so the tank and tubing are kept at least 10 feet from open flames such as a gas stove and well away from heaters. No-smoking signs, water-based lotion instead of petroleum products and distance from heaters are correct practices."
   },
   {
     "domain": "pnSafety",
@@ -356,13 +355,13 @@
     "options": [
       "Perform hand hygiene before and after resident contact",
       "Stay home when you have a fever",
-      "Keep residents on droplet precautions in their rooms",
+      "Keep residents who have influenza on droplet precautions in their rooms",
       "Serve meals to all residents together in the dining room",
       "Clean shared equipment between residents",
-      "Open the windows to clear the air"
+      "Wear the same gown from one resident's room to the next"
     ],
     "correct": [0, 1, 2, 4],
-    "explanation": "Hand hygiene, keeping ill staff home, room restriction for residents with influenza and cleaning shared equipment break the chain of droplet transmission. Gathering residents together spreads droplets, and open windows do not remove them."
+    "explanation": "Hand hygiene, keeping ill staff home, room restriction for residents with influenza and cleaning shared equipment break the chain of transmission. Gathering residents together spreads droplets, and a gown worn from room to room carries organisms between residents."
   },
   {
     "domain": "pnSafety",

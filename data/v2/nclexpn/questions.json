@@ -249,7 +249,7 @@
       "correct": [
         0
       ],
-      "explanation": "Low potassium weakens skeletal muscle and makes the heart irritable, so weakness, leg cramps and an irregular pulse are the signs to report. Peaked T waves go with high potassium, and twitching around the mouth suggests low calcium."
+      "explanation": "Low potassium weakens skeletal muscle and makes the heart irritable, so weakness, leg cramps and an irregular pulse are the signs to report. Peaked T waves go with high potassium, twitching around the mouth suggests low calcium, and watery diarrhea is a cause of potassium loss rather than a sign of it, since low potassium slows the bowel and causes constipation."
     },
     {
       "id": "NCLEXPN-T1-012",
@@ -640,7 +640,7 @@
       "correct": [
         2
       ],
-      "explanation": "By 12 months most infants pull to stand, cruise along furniture and say one or two words. Alternating feet on stairs and six-block towers come around age 3, and two-word sentences around age 2."
+      "explanation": "By 12 months most infants pull to stand, cruise along furniture and say one or two words. A tower of six blocks and two-word sentences come around age 2, and walking up stairs with alternating feet around age 3."
     },
     {
       "id": "NCLEXPN-T1-030",
@@ -748,7 +748,7 @@
       "correct": [
         1
       ],
-      "explanation": "Regular insulin starts working in about 30 minutes and peaks 2 to 3 hours after the dose, so the highest hypoglycemia risk is mid-morning. 0745 is before the onset, and 1600 or 2200 fit an intermediate-acting insulin such as NPH."
+      "explanation": "Regular insulin starts working in about 30 minutes and peaks 2 to 3 hours after the dose, so the highest hypoglycemia risk is mid-morning. 0745 is before the onset, 1600 fits the later peak of an intermediate-acting insulin such as NPH, and by 2200 the effect of a morning dose of regular insulin has worn off."
     },
     {
       "id": "NCLEXPN-T1-035",
@@ -762,7 +762,7 @@
       "stem": "The PN collects data on a client with heart failure. Which findings suggest the condition is getting worse and should be reported? Select all that apply.",
       "options": [
         "Weight gain of 3 lb in 2 days",
-        "Needs two pillows to breathe at night",
+        "Now needs three pillows to breathe at night instead of one",
         "Ankle swelling that is increasing",
         "Urine output increased after the diuretic",
         "Heart rate 72/min and regular"
@@ -912,7 +912,7 @@
       "difficulty": 2,
       "format": "multi",
       "skill": "Planning care after a fall",
-      "passage": "0300: The RN has evaluated the resident and notified the provider. New orders: neurologic checks every hour for 4 hours, then every 4 hours for 24 hours; hold zolpidem; orthostatic vital signs; right hip x-ray in the morning; fall precautions.",
+      "passage": "0305: The RN has evaluated the resident and notified the provider. New orders: neurologic checks every hour for 4 hours, then every 4 hours for 24 hours; hold zolpidem; vital signs every 4 hours; right hip x-ray in the morning; fall precautions.",
       "stimulusId": "NCLEXPN-CS1",
       "stem": "The PN is planning care for the rest of the night. Which tasks can the PN assign to the AP? Select all that apply.",
       "options": [
@@ -920,7 +920,7 @@
         "Perform the hourly neurologic checks",
         "Check on the resident every hour during rounding",
         "Decide whether the hip x-ray is still needed",
-        "Help the resident to the bathroom with the walker",
+        "Put nonskid socks on the resident",
         "Report any vomiting or increased sleepiness at once"
       ],
       "correct": [
@@ -929,7 +929,7 @@
         4,
         5
       ],
-      "explanation": "The AP can keep the room safe, round hourly, assist with walking and report what they observe. Neurologic checks require nursing judgment, so the PN performs them and reports changes to the RN, and the x-ray decision belongs to the provider."
+      "explanation": "The AP can keep the bed low with the call light in reach, round hourly, put on nonskid footwear and report what they observe. Neurologic checks require nursing judgment, so the PN performs them and reports changes to the RN, and the x-ray decision belongs to the provider."
     },
     {
       "id": "NCLEXPN-T1-042",
@@ -963,12 +963,12 @@
       "difficulty": 2,
       "format": "multi",
       "skill": "Fear of falling",
-      "passage": "Two weeks later. The CT scan at the hospital showed no bleeding and the resident returned the next day. Zolpidem was stopped and the resident joined an afternoon exercise group. The AP reports the resident \"used the call light every night this week\" and walked to the bathroom with the walker. The resident says, \"I'm scared of falling in the dining room, so I eat in my room.\"",
+      "passage": "Two weeks later. The CT scan at the hospital showed no bleeding and the resident returned the next day. Zolpidem was stopped and the resident joined an afternoon exercise group. The AP reports the resident \"used the call light every night this week\" and walked to the bathroom with the walker. There have been no further falls. The resident says, \"I'm scared of falling in the dining room, so I eat in my room.\"",
       "stimulusId": "NCLEXPN-CS1",
       "stem": "The PN evaluates the resident's progress. Which findings show that the plan of care is working? Select all that apply.",
       "options": [
         "Uses the call light before getting up at night",
-        "Walks to the bathroom with the walker and standby assistance",
+        "Walks to the bathroom with the walker",
         "Eats meals alone in the room",
         "Has had no further falls",
         "Attends the exercise group",
@@ -1208,18 +1208,16 @@
       "options": [
         "Remove the gloves",
         "Remove the gown",
-        "Leave the room and perform hand hygiene",
         "Remove the mask by its ties or loops",
-        "Perform hand hygiene again"
+        "Perform hand hygiene"
       ],
       "correct": [
         0,
         1,
         2,
-        3,
-        4
+        3
       ],
-      "explanation": "Gloves are the most contaminated item and come off first, then the gown, and the mask is removed last, outside the room, touching only the ties, with hand hygiene after the gown and again after the mask. Removing the mask before the gloves brings contaminated gloves to the face."
+      "explanation": "Gloves are the most contaminated item and come off first, then the gown, and the mask comes off last, touching only the ties or loops, at the doorway before leaving the room. Hand hygiene follows right after all the equipment is off. Removing the mask before the gloves brings contaminated gloves to the face."
     },
     {
       "id": "NCLEXPN-T1-055",
@@ -1507,7 +1505,7 @@
       "correct": [
         0
       ],
-      "explanation": "Phenytoin causes gum overgrowth, so careful daily oral hygiene and regular dental visits are reinforced. It is taken every day to keep a steady blood level, and stopping it suddenly can trigger seizures."
+      "explanation": "Phenytoin causes gum overgrowth, so careful daily oral hygiene and regular dental visits are reinforced. It is taken every day to keep a steady blood level, and stopping it suddenly can trigger seizures, so drowsiness is reported to the provider rather than handled by quitting the drug. Dairy products do not need to be avoided."
     },
     {
       "id": "NCLEXPN-T1-068",
@@ -1659,7 +1657,7 @@
         9,
         10
       ],
-      "explanation": "Tremor, sweating, tachycardia, hypertension and tactile hallucinations 36 hours after the last drink in a heavy drinker are alcohol withdrawal, which can progress to seizures and delirium tremens, so the PN reports to the RN at once and sets up seizure precautions. Sepsis is less likely with a low-grade fever and clear lungs and would not cause tremor and crawling sensations; a dark, closed room and restraints worsen agitation and hallucinations."
+      "explanation": "Tremor, sweating, a fast heart rate, high blood pressure and tactile hallucinations 36 hours after the last drink in a heavy drinker are alcohol withdrawal, which can progress to seizures and delirium tremens, so the PN reports to the RN at once, puts seizure precautions in place and keeps checking orientation, hallucinations, blood pressure and heart rate. Sepsis from the cellulitis could raise the heart rate and temperature but does not explain the tremor and crawling sensations, a panic attack does not cause hallucinations, and hypoglycemia does not cause hypertension or formication. Coffee adds stimulation, a dark room with the door closed makes hallucinations worse and keeps the client out of sight, and restraints increase agitation and injury. Urine output and serum sodium are not the key measures of withdrawal severity."
     },
     {
       "id": "NCLEXPN-T1-073",
@@ -1778,7 +1776,7 @@
         2,
         4
       ],
-      "explanation": "After a fall the PN collects data, notifies the RN, documents what was found in objective terms and completes an incident report. The report is a quality tool that is not mentioned in the client's record, and blame is never assigned to the family or in the chart."
+      "explanation": "After a fall the PN collects data, notifies the RN, documents what was found in objective terms and completes an incident report. The report is a quality tool kept out of the client's record, so the chart does not mention it, and the PN does not guess about fault with the family or in the chart."
     },
     {
       "id": "NCLEXPN-T1-078",
@@ -2012,7 +2010,7 @@
       "correct": [
         1
       ],
-      "explanation": "MRSA in a wound spreads by direct and indirect contact, so a gown and gloves block transmission and a mask adds nothing. A mask would be added only for a procedure likely to splash or if the organism were in the sputum."
+      "explanation": "MRSA in a wound spreads by direct and indirect contact, so a gown and gloves block transmission and a mask adds nothing. Under standard precautions a mask is added only when a splash or spray of body fluids is likely."
     },
     {
       "id": "NCLEXPN-T2-003",
@@ -2649,7 +2647,7 @@
       "correct": [
         1
       ],
-      "explanation": "Oxygen feeds a fire, so the tank and tubing stay at least 10 feet from stoves, heaters and open flames. No-smoking signs, water-based lotion instead of petroleum products and distance from heaters are correct practices."
+      "explanation": "Oxygen feeds a fire, so the tank and tubing are kept at least 10 feet from open flames such as a gas stove and well away from heaters. No-smoking signs, water-based lotion instead of petroleum products and distance from heaters are correct practices."
     },
     {
       "id": "NCLEXPN-T2-033",
@@ -3006,7 +3004,7 @@
       "correct": [
         2
       ],
-      "explanation": "Lying flat for the prescribed period and taking extra fluids lower the chance of a spinal headache from leaking cerebrospinal fluid. Sitting up or walking right away and limiting fluids all make a headache more likely."
+      "explanation": "The PN reinforces the position the provider prescribed after the procedure, often lying flat for a period, and encourages fluids unless they are restricted, because fluids help replace the cerebrospinal fluid that was removed. Limiting fluids works against that, and sitting up or walking right away goes against the prescribed activity order."
     },
     {
       "id": "NCLEXPN-T2-048",
@@ -3198,7 +3196,7 @@
       "correct": [
         3
       ],
-      "explanation": "An empty bladder keeps the needle from puncturing it when the abdomen is entered. The client sits upright or with the head raised so fluid pools low in the abdomen, and a full stomach or bladder is a hazard."
+      "explanation": "An empty bladder keeps the needle from puncturing it when the abdomen is entered. The client sits upright or with the head raised so fluid pools low in the abdomen rather than lying flat on one side, and there is no reason to give a full meal or extra water before the procedure."
     },
     {
       "id": "NCLEXPN-T2-057",
@@ -3364,7 +3362,7 @@
         "Reinforce teaching about leg exercises",
         "The resident's new complaint of chest pain",
         "Make the bed and tidy the room",
-        "Set a new goal for the plan of care"
+        "A plan of care goal that needs to change"
       ],
       "columns": [
         "Assign to AP",
@@ -3438,7 +3436,7 @@
       "stem": "The PN is calling the RN about a resident's new finding using SBAR. Place the statements in the order the PN should say them.",
       "options": [
         "\"Mr. Lee in room 12 has new swelling in his left calf.\"",
-        "\"He had a right knee replacement 5 days ago and finished enoxaparin 2 days ago.\"",
+        "\"He had a right knee replacement 5 days ago and has a history of a blood clot.\"",
         "\"The calf is warm, 3 cm larger than the right, and he rates the pain 5 of 10.\"",
         "\"Can you come and look at him and call the provider?\""
       ],
@@ -3495,7 +3493,7 @@
       "correct": [
         3
       ],
-      "explanation": "The body compensates for blood loss first by speeding the heart and narrowing vessels, so a rising pulse with restlessness and cool skin appears before the blood pressure falls. Good urine output and a high blood pressure show the client is still perfusing."
+      "explanation": "The body compensates for blood loss first by speeding the heart and narrowing vessels, so a rising pulse with restlessness and cool skin appears before the blood pressure falls. Warm, flushed skin with a strong pulse does not fit blood loss, and good urine output and a high blood pressure show the client is still perfusing."
     },
     {
       "id": "NCLEXPN-T2-068",
@@ -3510,10 +3508,10 @@
       "options": [
         "Perform hand hygiene before and after resident contact",
         "Stay home when you have a fever",
-        "Keep residents on droplet precautions in their rooms",
+        "Keep residents who have influenza on droplet precautions in their rooms",
         "Serve meals to all residents together in the dining room",
         "Clean shared equipment between residents",
-        "Open the windows to clear the air"
+        "Wear the same gown from one resident's room to the next"
       ],
       "correct": [
         0,
@@ -3521,7 +3519,7 @@
         2,
         4
       ],
-      "explanation": "Hand hygiene, keeping ill staff home, room restriction for residents with influenza and cleaning shared equipment break the chain of droplet transmission. Gathering residents together spreads droplets, and open windows do not remove them."
+      "explanation": "Hand hygiene, keeping ill staff home, room restriction for residents with influenza and cleaning shared equipment break the chain of transmission. Gathering residents together spreads droplets, and a gown worn from room to room carries organisms between residents."
     },
     {
       "id": "NCLEXPN-T2-069",
@@ -3610,12 +3608,12 @@
         "\"Take them together to reduce the stomach upset from the antibiotic.\"",
         "\"The antacid makes the antibiotic work better, so take them together.\"",
         "\"Crush both and mix them in applesauce so they go down easily.\"",
-        "\"Take the antacid at least 2 hours apart from the antibiotic.\""
+        "\"Take the antibiotic at least 2 hours before or 6 hours after the antacid.\""
       ],
       "correct": [
         3
       ],
-      "explanation": "Aluminum, magnesium and calcium in antacids bind ciprofloxacin in the gut so much less is absorbed, so the doses are separated by at least 2 hours. Taking them together, with or without crushing, can leave the infection undertreated."
+      "explanation": "Aluminum, magnesium and calcium in antacids bind ciprofloxacin in the gut so much less is absorbed, so the antibiotic is taken at least 2 hours before or 6 hours after the antacid. Taking them together, with or without crushing, can leave the infection undertreated."
     },
     {
       "id": "NCLEXPN-T2-073",
@@ -3785,7 +3783,7 @@
         2,
         4
       ],
-      "explanation": "By 4 months the head is steady, the posterior fontanel has closed, and the infant brings the hands to the mouth and holds a rattle. Passing objects between hands and sitting unsupported appear closer to 6 to 8 months."
+      "explanation": "By 4 months the head is steady, the posterior fontanel has closed, and the infant brings the hands to the mouth and holds a rattle. Passing objects between hands and sitting unsupported appear closer to 6 to 9 months."
     },
     {
       "id": "NCLEXPN-T2-080",
@@ -4329,7 +4327,7 @@
       "difficulty": 2,
       "format": "multi",
       "skill": "Evaluating self-care outcomes",
-      "passage": "Six weeks later. The client started sertraline 4 weeks ago, attends a weekly grief support group and brought a glucose log. Weight 89 kg. BP 136/84 mm Hg. The client says, \"I check my sugar before breakfast and dinner now. I still miss my wife, but I'm sleeping until 6.\"",
+      "passage": "Six weeks later. The client started sertraline 6 weeks ago, attends a weekly grief support group and brought a glucose log. Weight 89 kg. BP 136/84 mm Hg. The client says, \"I check my sugar before breakfast and dinner now. I still miss my wife, but I'm sleeping until 6.\"",
       "stimulusId": "NCLEXPN-CS3",
       "stem": "The PN evaluates the client's progress. Which findings show that the plan of care is effective? Select all that apply.",
       "options": [
@@ -4338,7 +4336,7 @@
         "Weight stable at 89 kg",
         "Still grieving the spouse",
         "BP 136/84 mm Hg",
-        "Sertraline started 4 weeks ago"
+        "Sertraline started 6 weeks ago"
       ],
       "correct": [
         0,
@@ -4560,7 +4558,7 @@
       "skill": "Tetracyclines",
       "stem": "A client is prescribed doxycycline for a tick bite. Which instruction should the PN reinforce?",
       "options": [
-        "Take each dose with a glass of milk",
+        "Stop the capsules once the bite stops itching",
         "Use sunscreen and limit time in the sun",
         "Lie down right after taking the capsule",
         "Take it at the same time as an iron supplement"
@@ -4568,7 +4566,7 @@
       "correct": [
         1
       ],
-      "explanation": "Doxycycline makes the skin burn easily, so sun protection is reinforced. Milk, calcium, iron and antacids bind the drug and block absorption, and lying down after a dose can let the capsule lodge and burn the esophagus."
+      "explanation": "Doxycycline makes the skin burn easily, so sun protection is reinforced. The full course is finished even when symptoms fade, iron supplements and antacids bind the drug and block absorption so they are taken at a different time, and lying down after a dose can let the capsule lodge and burn the esophagus."
     },
     {
       "id": "NCLEXPN-D-028",
@@ -4589,7 +4587,7 @@
       "correct": [
         0
       ],
-      "explanation": "The MRI magnet can move or heat metal and disable a pacemaker, so implants, clips, fragments and devices must be identified before the client enters the room. Fasting and contrast allergy questions matter for other tests, not a plain MRI."
+      "explanation": "The MRI magnet can move or heat metal and disable a pacemaker, so implants, clips, fragments and devices must be identified before the client enters the room. Fasting, iodine contrast and latex questions matter for other procedures, but metal is the one question that can make an MRI itself dangerous."
     },
     {
       "id": "NCLEXPN-D-029",

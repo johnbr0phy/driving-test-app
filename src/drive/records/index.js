@@ -1,9 +1,11 @@
 // Every scene record, one JSON file per bank question. Generated list: keep it
-// in step with the files in this folder (tests/drive-records.test.cjs checks).
+// in step with the files in this folder (tests/drive-scenes.test.cjs checks).
 
 import r_U_019 from "./double-arrow/U-019.json";
 import r_U_009 from "./flashing-signals/U-009.json";
 import r_U_012 from "./no-passing-zone/U-012.json";
+import r_U_056 from "./no-passing-zone/U-056.json";
+import r_U_081 from "./no-passing-zone/U-081.json";
 import r_LA_027 from "./parking-clearance/LA-027.json";
 import r_LA_028 from "./parking-clearance/LA-028.json";
 import r_NH_031 from "./parking-clearance/NH-031.json";
@@ -16,7 +18,7 @@ import r_U_079 from "./parking-clearance/U-079.json";
 import r_U_080 from "./parking-clearance/U-080.json";
 import r_U_025 from "./rough-road/U-025.json";
 
-export const DRIVE_RECORDS = [r_U_019, r_U_009, r_U_012, r_LA_027, r_LA_028, r_NH_031, r_NH_032, r_OR_033, r_SC_029, r_SC_030, r_TX_037, r_U_079, r_U_080, r_U_025];
+export const DRIVE_RECORDS = [r_U_019, r_U_009, r_U_012, r_U_056, r_U_081, r_LA_027, r_LA_028, r_NH_031, r_NH_032, r_OR_033, r_SC_029, r_SC_030, r_TX_037, r_U_079, r_U_080, r_U_025];
 
 /** The lead (universal) record of each rule: the one /drive/<slug> plays by default. */
 const LEADS = {
@@ -72,14 +74,18 @@ export function validateRecord(record) {
   need(typeof record.verified === "string" && record.verified.length > 0, "verification note missing");
   need(Array.isArray(record.decisions) && record.decisions.length >= 1 && record.decisions.length <= 3, "needs 1 to 3 decisions");
   for (const decision of record.decisions || []) {
-    const count = 1 + (decision.wrongActions || []).length;
-    need(count >= 2 && count <= 4, `decision ${decision.id} needs 2 to 4 choices`);
-    need(decision.correctAction && decision.correctAction.id && decision.correctAction.label, `decision ${decision.id} has no correct action`);
-    for (const wrong of decision.wrongActions || []) {
-      need(wrong.id && wrong.label && wrong.consequence, `decision ${decision.id} has a wrong action without a consequence`);
+    const options = decision.options || [];
+    need(typeof decision.questionId === "string", `decision ${decision.id} has no questionId`);
+    need(typeof decision.prompt === "string" && decision.prompt.length > 0, `decision ${decision.id} has no prompt`);
+    need(options.length === 4, `decision ${decision.id} needs exactly 4 answers, like the test`);
+    need(options.filter((o) => o.correct).length === 1, `decision ${decision.id} needs exactly one right answer`);
+    need(new Set(options.map((o) => o.id)).size === options.length, `decision ${decision.id} repeats an option id`);
+    for (const option of options) {
+      need(option.id && option.text && option.action, `decision ${decision.id} option ${option.id} needs text and an action`);
+      if (!option.correct) need(option.consequence, `decision ${decision.id} wrong answer ${option.id} has no consequence`);
+      const clash = options.find((o) => o.action === option.action && o.correct !== option.correct);
+      need(!clash, `decision ${decision.id} action ${option.action} is used by a right and a wrong answer`);
     }
-    const ids = [decision.correctAction?.id, ...(decision.wrongActions || []).map((w) => w.id)];
-    need(new Set(ids).size === ids.length, `decision ${decision.id} repeats an option id`);
   }
   return problems;
 }

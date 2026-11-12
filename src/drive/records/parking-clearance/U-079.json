@@ -12,24 +12,39 @@
   "decisions": [
     {
       "id": "park",
-      "prompt": "You are parking at the curb before the fire hydrant. How far back should your front bumper stop?",
-      "correctAction": {
-        "id": "d15",
-        "label": "15 feet back",
-        "distanceFt": 15
-      },
-      "wrongActions": [
+      "questionId": "U-079",
+      "prompt": "How close can you park to a fire hydrant?",
+      "options": [
         {
-          "id": "d5",
-          "label": "5 feet back",
+          "id": "A",
+          "text": "5 feet",
+          "correct": false,
+          "action": "d5",
           "distanceFt": 5,
-          "consequence": "A fire engine could not reach the hydrant. Parking that close also earns a ticket, and the car can be towed."
+          "consequence": "You parked 5 feet from the hydrant, closer than the law allows. A fire engine could not reach it, and parking that close earns a ticket."
         },
         {
-          "id": "d10",
-          "label": "10 feet back",
+          "id": "B",
+          "text": "10 feet",
+          "correct": false,
+          "action": "d10",
           "distanceFt": 10,
-          "consequence": "A fire engine could not reach the hydrant. Parking that close also earns a ticket, and the car can be towed."
+          "consequence": "You parked 10 feet from the hydrant, closer than the law allows. A fire engine could not reach it, and parking that close earns a ticket."
+        },
+        {
+          "id": "C",
+          "text": "15 feet",
+          "correct": true,
+          "action": "d15",
+          "distanceFt": 15
+        },
+        {
+          "id": "D",
+          "text": "20 feet",
+          "correct": false,
+          "action": "d20",
+          "distanceFt": 20,
+          "consequence": "Parking 20 feet back is safe and legal, but it is not the rule: the limit is 15 feet from the hydrant, so 20 is marked wrong on the test."
         }
       ]
     }

@@ -1,0 +1,54 @@
+{
+  "rule": "no-passing-zone",
+  "questionId": "U-056",
+  "state": "ALL",
+  "prompt": "What does a solid yellow center line mean?",
+  "bankAnswer": "No passing",
+  "alsoCovers": [],
+  "params": {},
+  "decisions": [
+    {
+      "id": "pass",
+      "questionId": "U-056",
+      "prompt": "What does a solid yellow center line mean?",
+      "options": [
+        {
+          "id": "A",
+          "text": "No passing",
+          "correct": true,
+          "action": "stay"
+        },
+        {
+          "id": "B",
+          "text": "Passing allowed",
+          "correct": false,
+          "action": "pass",
+          "consequence": "You thought the solid line allowed passing and pulled out to pass the truck. A car came over the hill in the lane you pulled into and had to swerve onto the shoulder to miss you."
+        },
+        {
+          "id": "C",
+          "text": "Two-way traffic",
+          "correct": false,
+          "action": "pass",
+          "consequence": "A center line does mark two-way traffic, but a solid line on your side also means no passing. You pulled out to pass anyway. A car came over the hill in the lane you pulled into and had to swerve onto the shoulder to miss you."
+        },
+        {
+          "id": "D",
+          "text": "Lane ends",
+          "correct": false,
+          "action": "shoulder",
+          "consequence": "You thought your lane was ending and moved right. There is no lane there, only the shoulder and a guardrail, and you had to brake hard."
+        }
+      ]
+    }
+  ],
+  "successText": "You waited. A car came over the hill in the lane you would have been in. Once the line was broken again, you passed with a clear view.",
+  "ruleText": "A solid yellow center line on your side means no passing; double solid yellow lines mean no passing in either direction.",
+  "citation": {
+    "source": "FHWA Manual on Uniform Traffic Control Devices, 11th Edition",
+    "short": "MUTCD 11th ed. §3B.01",
+    "section": "Section 3B.01 (yellow center line markings)",
+    "url": "https://mutcd.fhwa.dot.gov/pdfs/11th_Edition/Chapter2c.pdf"
+  },
+  "verified": "Read in the FHWA PDFs, Nov 2026: the sign \"shall be installed on the left-hand side of the roadway at the beginning of no-passing zones\"; passing \"is prohibited for traffic traveling adjacent to the solid line\"."
+}

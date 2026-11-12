@@ -12,24 +12,39 @@
   "decisions": [
     {
       "id": "park",
-      "prompt": "You are parking at the curb before the crosswalk. How far back should your front bumper stop?",
-      "correctAction": {
-        "id": "d20",
-        "label": "20 feet back",
-        "distanceFt": 20
-      },
-      "wrongActions": [
+      "questionId": "LA-028",
+      "prompt": "How close to a crosswalk or intersection can you legally park in Louisiana?",
+      "options": [
         {
-          "id": "d5",
-          "label": "5 feet back",
-          "distanceFt": 5,
-          "consequence": "Your car hid the crosswalk. A person stepped out from behind it and the next driver saw them only at the last moment."
+          "id": "A",
+          "text": "No closer than 20 feet",
+          "correct": true,
+          "action": "d20",
+          "distanceFt": 20
         },
         {
-          "id": "d10",
-          "label": "10 feet back",
+          "id": "B",
+          "text": "No closer than 10 feet",
+          "correct": false,
+          "action": "d10",
           "distanceFt": 10,
-          "consequence": "Your car hid the crosswalk. A person stepped out from behind it and the next driver saw them only at the last moment."
+          "consequence": "You parked 10 feet from the crosswalk, closer than the law allows. Your car hid a person about to cross, and the next driver saw them only at the last moment."
+        },
+        {
+          "id": "C",
+          "text": "No closer than 15 feet",
+          "correct": false,
+          "action": "d15",
+          "distanceFt": 15,
+          "consequence": "You parked 15 feet from the crosswalk, closer than the law allows. Your car hid a person about to cross, and the next driver saw them only at the last moment."
+        },
+        {
+          "id": "D",
+          "text": "No closer than 30 feet",
+          "correct": false,
+          "action": "d30",
+          "distanceFt": 30,
+          "consequence": "Parking 30 feet back is safe and legal, but it is not the rule: the limit is 20 feet from the crosswalk, so 30 is marked wrong on the test."
         }
       ]
     }

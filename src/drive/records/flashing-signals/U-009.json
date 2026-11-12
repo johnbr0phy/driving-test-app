@@ -11,45 +11,73 @@
   "decisions": [
     {
       "id": "red",
-      "prompt": "The signal ahead is flashing red. What do you do?",
+      "questionId": "U-009",
+      "prompt": "What does a flashing red light mean?",
       "sign": "redLight",
       "signAlt": "A traffic signal with a flashing red light",
-      "correctAction": {
-        "id": "stop",
-        "label": "Stop fully, then go when it is clear"
-      },
-      "wrongActions": [
+      "options": [
         {
-          "id": "roll",
-          "label": "Slow down and roll through",
-          "consequence": "Slowing is not stopping. A car with the right of way had to brake hard to miss you."
+          "id": "A",
+          "text": "Stop completely",
+          "correct": true,
+          "action": "stop"
         },
         {
-          "id": "go",
-          "label": "Keep going: flashing means the signal is broken",
-          "consequence": "You ran a flashing red. A car coming from the right skidded to a stop a few feet from your door."
+          "id": "B",
+          "text": "Slow down",
+          "correct": false,
+          "action": "roll",
+          "consequence": "Slowing down is not enough at a flashing red. You rolled through, and a car with the right of way had to brake hard to miss you."
+        },
+        {
+          "id": "C",
+          "text": "Yield",
+          "correct": false,
+          "action": "roll",
+          "consequence": "You treated it like a yield sign and rolled through. A flashing red means a full stop first; a car from the right had to brake hard to miss you."
+        },
+        {
+          "id": "D",
+          "text": "Proceed with caution",
+          "correct": false,
+          "action": "roll",
+          "consequence": "Proceed with caution is a flashing yellow. You rolled through the red, and a car from the right had to brake hard to miss you."
         }
       ]
     },
     {
       "id": "yellow",
-      "prompt": "The next signal is flashing yellow. A car is waiting on the side street. What do you do?",
+      "questionId": "U-010",
+      "prompt": "What does a flashing yellow light mean?",
       "sign": "yellowLight",
       "signAlt": "A traffic signal with a flashing yellow light",
-      "correctAction": {
-        "id": "caution",
-        "label": "Slow down and go through carefully"
-      },
-      "wrongActions": [
+      "options": [
         {
-          "id": "stop",
-          "label": "Stop and wait",
-          "consequence": "Flashing yellow does not mean stop. The driver behind did not expect it and had to brake hard."
+          "id": "A",
+          "text": "Stop then proceed",
+          "correct": false,
+          "action": "stop",
+          "consequence": "Stop then proceed is a flashing red. You stopped on a flashing yellow, and the driver behind did not expect it and had to brake hard."
         },
         {
-          "id": "fast",
-          "label": "Speed up to clear it",
-          "consequence": "You were going too fast to react when the waiting car began to pull out. You had to swerve around it."
+          "id": "B",
+          "text": "Proceed with caution",
+          "correct": true,
+          "action": "caution"
+        },
+        {
+          "id": "C",
+          "text": "Yield to all traffic",
+          "correct": false,
+          "action": "stop",
+          "consequence": "A flashing yellow does not make you yield to everyone. You stopped for the waiting car, and the driver behind had to brake hard."
+        },
+        {
+          "id": "D",
+          "text": "Signal is broken",
+          "correct": false,
+          "action": "fast",
+          "consequence": "You thought the signal was broken and kept your speed up. When the waiting car began to pull out, you had to swerve around it."
         }
       ]
     }

@@ -9,23 +9,37 @@
   "decisions": [
     {
       "id": "bump",
-      "prompt": "You are doing 45 mph and this sign is coming up. What do you do?",
+      "questionId": "U-025",
+      "prompt": "What does a sign with bumps indicate?",
       "sign": "bump",
       "signAlt": "A yellow diamond warning sign with the word BUMP",
-      "correctAction": {
-        "id": "slow",
-        "label": "Slow down now"
-      },
-      "wrongActions": [
+      "options": [
         {
-          "id": "keep",
-          "label": "Hold 45 mph",
-          "consequence": "You hit the broken surface at full speed. The car slammed over the bumps, lost a hubcap and nearly left the road."
+          "id": "A",
+          "text": "Rough road surface",
+          "correct": true,
+          "action": "slow"
         },
         {
-          "id": "fast",
-          "label": "Speed up to get over it quickly",
-          "consequence": "More speed made every bump hit harder. The car left the ground, landed badly and ended up on the shoulder with a flat tire."
+          "id": "B",
+          "text": "Speed bump ahead",
+          "correct": false,
+          "action": "keep",
+          "consequence": "You expected one speed bump and kept your speed until you saw it. The whole stretch was rough: the car slammed over it, lost a hubcap and nearly left the road."
+        },
+        {
+          "id": "C",
+          "text": "Uneven lanes",
+          "correct": false,
+          "action": "keep",
+          "consequence": "You expected lanes of uneven height, not a broken surface, and held 45 mph. The car slammed over the rough stretch and nearly left the road."
+        },
+        {
+          "id": "D",
+          "text": "Dip in road",
+          "correct": false,
+          "action": "keep",
+          "consequence": "A dip sign says DIP. This one warns of a rough surface, and you hit it at 45 mph: the car slammed over it and nearly left the road."
         }
       ]
     }

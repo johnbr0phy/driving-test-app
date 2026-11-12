@@ -3,8 +3,8 @@
 
 export const DRIVE_QUESTION_LINKS = {
   "U-012": { slug: "no-passing-zone" },
-  "U-056": { slug: "no-passing-zone" },
-  "U-081": { slug: "no-passing-zone" },
+  "U-056": { slug: "no-passing-zone", q: "U-056" },
+  "U-081": { slug: "no-passing-zone", q: "U-081" },
   "U-019": { slug: "double-arrow" },
   "U-025": { slug: "rough-road" },
   "U-009": { slug: "flashing-signals" },

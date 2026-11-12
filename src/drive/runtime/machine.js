@@ -16,11 +16,14 @@ export const SLOW_SCALE = 0.12;
  *
  * plan = {
  *   intro: { duration, caption, cues? },
- *   decisions: { [decisionId]: { [optionId]: { duration, caption, cues? } } },
+ *   decisions: { [decisionId]: { [action]: { duration, caption, cues? } } },
  * }
- * A correct option leads to the next decision, or to the "ok" result after the
- * last one. A wrong option always ends the scene with its consequence.
- * Option order is shuffled with the record's seed, so it is stable per record.
+ * Each decision in the record is a bank question: its options are the four
+ * answers, each naming the action it plays. Options can share an action, but
+ * an action is either right or wrong, never both. The right option leads to
+ * the next decision, or the "ok" result after the last one; a wrong option
+ * ends the scene with its consequence. Options are shuffled with the record's
+ * seed (as the test shuffles them), so the order is stable per record.
  */
 export function buildScript(record, plan) {
   const seed = `${record.rule}:${record.questionId}:${record.state}`;
@@ -33,24 +36,30 @@ export function buildScript(record, plan) {
     const branches = plan.decisions[decision.id];
     if (!branches) throw new Error(`No plan for decision ${decision.id}`);
     const nextDecision = list[index + 1];
-    const options = rng.shuffle([
-      { ...decision.correctAction, correct: true },
-      ...decision.wrongActions.map((a) => ({ ...a, correct: false })),
-    ]).map((option) => {
-      const branch = branches[option.id];
-      if (!branch) throw new Error(`No plan for option ${decision.id}.${option.id}`);
-      const segment = `${decision.id}:${option.id}`;
-      segments[segment] = {
-        ...branch,
-        next: option.correct
-          ? nextDecision
-            ? { decision: nextDecision.id }
-            : { result: { ok: true } }
-          : { result: { ok: false } },
-      };
-      return { ...option, segment };
+    const options = rng.shuffle(decision.options).map((option) => {
+      const segment = `${decision.id}:${option.action}`;
+      const next = option.correct
+        ? nextDecision
+          ? { decision: nextDecision.id }
+          : { result: { ok: true } }
+        : { result: { ok: false } };
+      if (!segments[segment]) {
+        const branch = branches[option.action];
+        if (!branch) throw new Error(`No plan for action ${decision.id}.${option.action}`);
+        segments[segment] = { ...branch, next };
+      } else if (JSON.stringify(segments[segment].next) !== JSON.stringify(next)) {
+        throw new Error(`Action ${decision.id}.${option.action} is used by a right and a wrong answer`);
+      }
+      return { ...option, label: option.text, segment };
     });
-    decisions[decision.id] = { id: decision.id, prompt: decision.prompt, sign: decision.sign, signAlt: decision.signAlt, options };
+    decisions[decision.id] = {
+      id: decision.id,
+      questionId: decision.questionId,
+      prompt: decision.prompt,
+      sign: decision.sign,
+      signAlt: decision.signAlt,
+      options,
+    };
   });
   return { seed, start: "intro", segments, decisions };
 }

@@ -72,6 +72,12 @@ Full-motion run at 390 x 844 afterwards: all 23 branches fit. The worst one-seco
 
 Known leftover: on the smallest landscape phone the longest citation ("Uniform Vehicle Code §11-1003(a)2.C") is cut off with an ellipsis.
 
+## Round 5: the test's own question and four answers (Nov 12)
+
+Feedback: the questions and answers should be the same as on the test, always four answers. Each decision now shows the bank question word for word with its four answers, lettered A to D, and each answer plays the driving it implies (`DRIVE-DECISIONS.md` 38 to 40). Paths: 39 (each wrong answer is its own path), up from 23. A harness bug showed up and was fixed: it waited for a segment named after the answer, and segments are now named after the action.
+
+Fit with four answers (some two lines long, such as U-081's): all 39 paths fit at 390x844, 375x667, 360x640, 412x915, 844x390 and 667x375 (234 path-sizes, every decision and result screen measured). On the smallest phones a two-line answer set takes more of the screen and the picture shrinks, but stays above the 30% floor.
+
 ## Other checks
 
 - **Landscape** (844 x 390): panel sits beside the picture, all three states of no-passing-zone fit without scrolling the choices.

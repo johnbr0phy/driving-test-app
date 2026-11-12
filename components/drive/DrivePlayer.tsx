@@ -24,7 +24,7 @@ type DriveRecord = {
   ruleText: string;
   successText: string;
   citation: { source: string; short: string; section: string; url: string };
-  decisions: { id: string; wrongActions: { id: string; consequence: string }[] }[];
+  decisions: { id: string; options: { id: string; consequence?: string }[] }[];
 };
 type Stage = {
   start: () => void;
@@ -153,7 +153,9 @@ export function DrivePlayer({ slug, title, record, fallback, next, stateCode }: 
   useEffect(() => {
     if (mode !== "decide" || !decision) return;
     const onKey = (event: KeyboardEvent) => {
-      const index = Number(event.key) - 1;
+      // 1 to 4, or A to D as the answers are lettered.
+      const key = event.key.toLowerCase();
+      const index = key.length === 1 && "abcd".includes(key) ? "abcd".indexOf(key) : Number(event.key) - 1;
       if (Number.isInteger(index) && index >= 0 && index < decision.options.length) choose(decision.options[index].id);
     };
     window.addEventListener("keydown", onKey);
@@ -177,7 +179,7 @@ export function DrivePlayer({ slug, title, record, fallback, next, stateCode }: 
 
   const wrong =
     result && !result.ok
-      ? record.decisions.find((d) => d.id === result.decisionId)?.wrongActions.find((w) => w.id === result.optionId)
+      ? record.decisions.find((d) => d.id === result.decisionId)?.options.find((o) => o.id === result.optionId)
       : null;
 
   return (
@@ -247,7 +249,7 @@ export function DrivePlayer({ slug, title, record, fallback, next, stateCode }: 
                 {decision.options.map((option, index) => (
                   <button key={option.id} type="button" className={button} data-drive-option={option.id} onClick={() => choose(option.id)}>
                     <span aria-hidden="true" className="mr-2 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-gray-900 text-[11px] text-white dark:bg-gray-100 dark:text-gray-900">
-                      {index + 1}
+                      {"ABCD"[index]}
                     </span>
                     {option.label}
                   </button>

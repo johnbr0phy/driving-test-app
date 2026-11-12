@@ -4,31 +4,42 @@
   "state": "ALL",
   "prompt": "What does a pennant-shaped sign indicate?",
   "bankAnswer": "No passing",
-  "alsoCovers": [
-    "U-056",
-    "U-081"
-  ],
+  "alsoCovers": [],
   "params": {},
   "decisions": [
     {
       "id": "pass",
-      "prompt": "The truck is slow. This sign is on the left and the yellow lines turn solid. What do you do?",
+      "questionId": "U-012",
+      "prompt": "What does a pennant-shaped sign indicate?",
       "sign": "pennant",
       "signAlt": "A yellow pennant-shaped sign, pointing right, on the left side of the road",
-      "correctAction": {
-        "id": "stay",
-        "label": "Stay behind the truck"
-      },
-      "wrongActions": [
+      "options": [
         {
-          "id": "pass",
-          "label": "Pass the truck now",
-          "consequence": "A car came over the hill while you were in its lane. It had to swerve onto the shoulder to miss you."
+          "id": "A",
+          "text": "School zone",
+          "correct": false,
+          "action": "pass",
+          "consequence": "You took the pennant for a school zone sign, so you did not know passing was banned. You pulled out to pass the truck. A car came over the hill in the lane you pulled into and had to swerve onto the shoulder to miss you."
         },
         {
-          "id": "shoulder",
-          "label": "Pass on the right shoulder",
-          "consequence": "The shoulder is not a lane. You hit gravel, ran out of room at the guardrail and had to brake hard."
+          "id": "B",
+          "text": "Yield ahead",
+          "correct": false,
+          "action": "pass",
+          "consequence": "You took the pennant for a yield sign, so you did not know passing was banned. You pulled out to pass the truck. A car came over the hill in the lane you pulled into and had to swerve onto the shoulder to miss you."
+        },
+        {
+          "id": "C",
+          "text": "Merge lane",
+          "correct": false,
+          "action": "shoulder",
+          "consequence": "You read it as a merge lane and moved right to use it. There is no lane there, only the shoulder, gravel and a guardrail, and you had to brake hard."
+        },
+        {
+          "id": "D",
+          "text": "No passing",
+          "correct": true,
+          "action": "stay"
         }
       ]
     }

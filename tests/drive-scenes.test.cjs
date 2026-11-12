@@ -43,12 +43,29 @@ test('every record file is registered, valid, and matches its bank question', ()
   }
 });
 
-test('a parking record never contradicts its bank answer, and wrong choices are closer than the limit', () => {
+test('every decision asks the bank question with its four answers, word for word', () => {
+  for (const record of DRIVE_RECORDS) {
+    for (const decision of record.decisions) {
+      const q = byId.get(decision.questionId);
+      assert.ok(q, `${record.questionId}: ${decision.questionId} is in the bank`);
+      assert.equal(decision.prompt, q.question, decision.questionId);
+      assert.deepEqual(decision.options.map((o) => o.id), ['A', 'B', 'C', 'D'], decision.questionId);
+      for (const option of decision.options) {
+        assert.equal(option.text, q[`option${option.id}`], `${decision.questionId} ${option.id}`);
+        assert.equal(option.correct, option.id === q.correctAnswer, `${decision.questionId} ${option.id} key`);
+      }
+    }
+  }
+});
+
+test('a parking record drives the distance each answer names, and its rule matches the key', () => {
   for (const record of recordsForRule('parking-clearance')) {
-    const { correctAction, wrongActions } = record.decisions[0];
-    assert.match(record.bankAnswer, new RegExp(`\\b${correctAction.distanceFt}\\b`), record.questionId);
-    assert.match(record.ruleText, new RegExp(`within ${correctAction.distanceFt} feet`), record.questionId);
-    for (const wrong of wrongActions) assert.ok(wrong.distanceFt < correctAction.distanceFt, record.questionId);
+    const options = record.decisions[0].options;
+    for (const option of options) assert.equal(Number(option.text.match(/\d+/)[0]), option.distanceFt, `${record.questionId} ${option.id}`);
+    const legal = options.find((o) => o.correct).distanceFt;
+    assert.match(record.ruleText, new RegExp(`within ${legal} feet`), record.questionId);
+    // A farther answer is legal on the street but wrong on the test: the card has to say so.
+    for (const far of options.filter((o) => o.distanceFt > legal)) assert.match(far.consequence, /marked wrong on the test/, `${record.questionId} ${far.id}`);
   }
 });
 
@@ -59,6 +76,7 @@ test('?state= and ?q= pick the right record', () => {
   assert.equal(getDriveRecord('parking-clearance', { state: 'LA' }).questionId, 'LA-028', 'the crosswalk variant comes first');
   assert.equal(getDriveRecord('parking-clearance', { state: 'LA', q: 'LA-027' }).questionId, 'LA-027');
   assert.equal(getDriveRecord('parking-clearance', { state: 'ZZ' }).questionId, 'U-080');
+  assert.equal(getDriveRecord('no-passing-zone', { q: 'U-081' }).questionId, 'U-081');
   assert.equal(getDriveRecord('double-arrow', { state: 'CA', q: 'U-080' }).questionId, 'U-019', 'a question of another rule is ignored');
   assert.equal(getDriveRecord('nope'), null);
 });
@@ -111,7 +129,7 @@ for (const rule of DRIVE_RULES) {
       const decisions = Object.values(script.decisions);
       assert.ok(decisions.length >= 1 && decisions.length <= 3);
       for (const decision of decisions) {
-        assert.ok(decision.options.length >= 2 && decision.options.length <= 4);
+        assert.equal(decision.options.length, 4);
         assert.equal(decision.options.filter((o) => o.correct).length, 1);
       }
       const branches = listBranches(script);

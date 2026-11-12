@@ -12,24 +12,39 @@
   "decisions": [
     {
       "id": "park",
-      "prompt": "You are parking at the curb before the crosswalk. How far back should your front bumper stop?",
-      "correctAction": {
-        "id": "d20",
-        "label": "20 feet back",
-        "distanceFt": 20
-      },
-      "wrongActions": [
+      "questionId": "SC-030",
+      "prompt": "How far must you park from a crosswalk at an intersection in South Carolina?",
+      "options": [
         {
-          "id": "d5",
-          "label": "5 feet back",
-          "distanceFt": 5,
-          "consequence": "Your car hid the crosswalk. A person stepped out from behind it and the next driver saw them only at the last moment."
+          "id": "A",
+          "text": "At least 10 feet",
+          "correct": false,
+          "action": "d10",
+          "distanceFt": 10,
+          "consequence": "You parked 10 feet from the crosswalk, closer than the law allows. Your car hid a person about to cross, and the next driver saw them only at the last moment."
         },
         {
-          "id": "d10",
-          "label": "10 feet back",
-          "distanceFt": 10,
-          "consequence": "Your car hid the crosswalk. A person stepped out from behind it and the next driver saw them only at the last moment."
+          "id": "B",
+          "text": "At least 15 feet",
+          "correct": false,
+          "action": "d15",
+          "distanceFt": 15,
+          "consequence": "You parked 15 feet from the crosswalk, closer than the law allows. Your car hid a person about to cross, and the next driver saw them only at the last moment."
+        },
+        {
+          "id": "C",
+          "text": "At least 25 feet",
+          "correct": false,
+          "action": "d25",
+          "distanceFt": 25,
+          "consequence": "Parking 25 feet back is safe and legal, but it is not the rule: the limit is 20 feet from the crosswalk, so 25 is marked wrong on the test."
+        },
+        {
+          "id": "D",
+          "text": "At least 20 feet",
+          "correct": true,
+          "action": "d20",
+          "distanceFt": 20
         }
       ]
     }

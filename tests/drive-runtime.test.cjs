@@ -7,18 +7,16 @@ const { createRng, hashSeed } = require('../src/drive/runtime/rng.js');
 const { drive, track } = require('../src/drive/runtime/motion.js');
 const { buildScript, createMachine, listBranches, SLOW_WINDOW, SLOW_SCALE } = require('../src/drive/runtime/machine.js');
 
+// Two bank questions, four answers each, as the test shows them. Answers that
+// share a belief share an action (a choreography).
+const opt = (id, action, correct = false) => ({ id, text: `Answer ${id}`, action, correct, ...(correct ? {} : { consequence: `Because ${id}` }) });
 const record = {
   rule: 'demo',
   questionId: 'T-1',
   state: 'ALL',
   decisions: [
-    { id: 'a', prompt: 'A?', correctAction: { id: 'yes', label: 'Yes' }, wrongActions: [{ id: 'no', label: 'No', consequence: 'x' }] },
-    {
-      id: 'b',
-      prompt: 'B?',
-      correctAction: { id: 'go', label: 'Go' },
-      wrongActions: [{ id: 'wait', label: 'Wait', consequence: 'y' }, { id: 'turn', label: 'Turn', consequence: 'z' }],
-    },
+    { id: 'a', questionId: 'T-1', prompt: 'A?', options: [opt('A', 'yes', true), opt('B', 'no'), opt('C', 'no'), opt('D', 'no')] },
+    { id: 'b', questionId: 'T-2', prompt: 'B?', options: [opt('A', 'wait'), opt('B', 'go', true), opt('C', 'turn'), opt('D', 'turn')] },
   ],
 };
 const plan = {
@@ -28,6 +26,8 @@ const plan = {
     b: { go: { duration: 1, caption: 'go' }, wait: { duration: 1, caption: 'wait' }, turn: { duration: 1, caption: 'turn' } },
   },
 };
+const optionFor = (script, decisionId, action, correct) =>
+  script.decisions[decisionId].options.find((o) => o.action === action && (correct === undefined || o.correct === correct)).id;
 
 function run(machine, seconds, step = 1 / 60) {
   const events = [];
@@ -55,17 +55,26 @@ test('drive integrates a speed profile and track eases between keys', () => {
   assert.equal(x(5), 4);
 });
 
-test('a script has one branch per path and a stable option order', () => {
+test('a script has one branch per answer path and a stable option order', () => {
   const script = buildScript(record, plan);
   assert.deepEqual(buildScript(record, plan).decisions.b.options.map((o) => o.id), script.decisions.b.options.map((o) => o.id));
+  for (const d of Object.values(script.decisions)) assert.equal(d.options.length, 4);
   const branches = listBranches(script);
-  assert.equal(branches.length, 4); // no | yes+go | yes+wait | yes+turn
+  assert.equal(branches.length, 7); // 3 wrong at a, then 4 at b
   assert.equal(branches.filter((b) => b.ok).length, 1);
   assert.equal(branches.find((b) => b.ok).duration, 6);
+  // Answers that share an action share one segment.
+  assert.equal(Object.keys(script.segments).filter((k) => k.startsWith('b:')).length, 3);
 });
 
-test('a plan missing an option is an error, not a silent hole', () => {
-  assert.throws(() => buildScript(record, { ...plan, decisions: { ...plan.decisions, b: { go: { duration: 1 } } } }), /No plan for option b\./);
+test('a plan missing an action is an error, not a silent hole', () => {
+  assert.throws(() => buildScript(record, { ...plan, decisions: { ...plan.decisions, b: { go: { duration: 1 } } } }), /No plan for action b\./);
+});
+
+test('an action cannot be both a right and a wrong answer', () => {
+  const bad = structuredClone(record);
+  bad.decisions[0].options[1].action = 'yes';
+  assert.throws(() => buildScript(bad, plan), /used by a right and a wrong answer/);
 });
 
 test('time slows before a decision, then waits for the choice', () => {
@@ -85,15 +94,16 @@ test('the right choices reach the ok result and fire cues once', () => {
   const machine = createMachine(buildScript(record, plan));
   machine.start();
   run(machine, 10);
+  const script = machine.script;
   assert.equal(machine.choose('nope'), null);
-  assert.ok(machine.choose('yes'));
-  assert.equal(machine.choose('no'), null, 'one choice per decision');
+  assert.ok(machine.choose(optionFor(script, 'a', 'yes')));
+  assert.equal(machine.choose(optionFor(script, 'a', 'no')), null, 'one choice per decision');
   const events = run(machine, 30);
   assert.equal(events.filter((e) => e.type === 'cue' && e.id === 'horn').length, 1);
   assert.equal(machine.state.decisionId, 'b');
-  machine.choose('go');
+  machine.choose(optionFor(script, 'b', 'go'));
   const end = run(machine, 5);
-  assert.deepEqual(end.find((e) => e.type === 'result'), { type: 'result', ok: true, decisionId: 'b', optionId: 'go' });
+  assert.deepEqual(end.find((e) => e.type === 'result'), { type: 'result', ok: true, decisionId: 'b', optionId: 'B' });
   assert.equal(machine.state.phase, 'result');
   assert.deepEqual(machine.advance(1), []);
 });
@@ -102,16 +112,16 @@ test('a wrong choice ends the scene with that option', () => {
   const machine = createMachine(buildScript(record, plan));
   machine.start();
   run(machine, 10);
-  machine.choose('no');
+  machine.choose('C');
   run(machine, 5);
-  assert.deepEqual(machine.state.result, { ok: false, decisionId: 'a', optionId: 'no' });
+  assert.deepEqual(machine.state.result, { ok: false, decisionId: 'a', optionId: 'C' });
 });
 
 test('a choice made inside the slow window still plays the segment out', () => {
   const machine = createMachine(buildScript(record, plan));
   machine.start();
   run(machine, 2 - SLOW_WINDOW + 0.1);
-  machine.choose('no');
+  machine.choose('B');
   const events = run(machine, 1);
   assert.ok(events.some((e) => e.type === 'segment' && e.id === 'a:no'));
 });
@@ -122,9 +132,9 @@ test('reduced motion jumps from still to still', () => {
   assert.equal(machine.state.phase, 'decide');
   assert.equal(machine.state.t, 2);
   assert.ok(started.some((e) => e.type === 'decision'));
-  machine.choose('yes');
+  machine.choose('A');
   assert.equal(machine.state.phase, 'decide');
   assert.equal(machine.state.decisionId, 'b');
-  const end = machine.choose('turn');
+  const end = machine.choose('D');
   assert.ok(end.some((e) => e.type === 'result' && e.ok === false));
 });

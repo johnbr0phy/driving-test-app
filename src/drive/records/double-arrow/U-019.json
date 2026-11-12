@@ -9,23 +9,37 @@
   "decisions": [
     {
       "id": "split",
-      "prompt": "The road splits around an island with this sign on it. You are in the left lane, with a car beside you. What do you do?",
+      "questionId": "U-019",
+      "prompt": "What does a double arrow sign mean?",
       "sign": "doubleArrow",
       "signAlt": "A yellow diamond sign with two black arrows pointing down and apart",
-      "correctAction": {
-        "id": "left",
-        "label": "Stay in my lane and pass on the left"
-      },
-      "wrongActions": [
+      "options": [
         {
-          "id": "right",
-          "label": "Move right: I must keep right of the island",
-          "consequence": "You cut into the lane beside you for no reason. The other driver had to brake and swerve to miss you."
+          "id": "A",
+          "text": "Traffic must merge to one side of the road",
+          "correct": false,
+          "action": "right",
+          "consequence": "You thought traffic had to merge to one side and moved right, into the car beside you. It had to brake and swerve to miss you."
         },
         {
-          "id": "stop",
-          "label": "Stop before the island",
-          "consequence": "You stopped in a moving lane. The driver behind had to brake hard and swerve around you."
+          "id": "B",
+          "text": "Traffic may enter from either direction ahead",
+          "correct": false,
+          "action": "stop",
+          "consequence": "You expected traffic to enter from both sides and stopped to look, in a moving lane. The driver behind had to brake hard and swerve around you."
+        },
+        {
+          "id": "C",
+          "text": "Traffic may pass on either side of obstruction",
+          "correct": true,
+          "action": "left"
+        },
+        {
+          "id": "D",
+          "text": "Traffic must stop before proceeding forward",
+          "correct": false,
+          "action": "stop",
+          "consequence": "You thought you had to stop before the island and stopped in a moving lane. The driver behind had to brake hard and swerve around you."
         }
       ]
     }

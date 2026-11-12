@@ -70,6 +70,8 @@ async function measureFit(page, label) {
 // Each scene, plus the record variants worth looking at.
 const TARGETS = [
   { rule: "no-passing-zone" },
+  { rule: "no-passing-zone", query: "q=U-056", name: "no-passing-zone-U-056" },
+  { rule: "no-passing-zone", query: "q=U-081", name: "no-passing-zone-U-081" },
   { rule: "double-arrow" },
   { rule: "rough-road" },
   { rule: "flashing-signals" },
@@ -130,8 +132,13 @@ async function playBranch(page, target, branch, stats) {
     await sleep(250);
     await page.screenshot({ ...SHOT, path: path.join(dir, `decision-${i + 1}.png`) });
     await measureFit(page, `${name} ${branch.choices.join(">")} decision ${i + 1}`);
+    // Answers share choreography, so the segment comes from the script, not the answer's id.
+    const target = await page.evaluate((choice) => {
+      const d = window.__drive.decision();
+      return d.options.find((o) => o.id === choice).segment;
+    }, branch.choices[i]);
     await page.click(`[data-drive-option="${branch.choices[i]}"]`);
-    const outcome = await waitFor(page, (s) => s.seg.endsWith(`:${branch.choices[i]}`));
+    const outcome = await waitFor(page, (s) => s.seg === target);
     const duration = script[outcome.seg].duration;
     // Shoot the consequence: just after the near miss if the outcome has one, else its middle.
     const hit = (script[outcome.seg].cues || []).find((c) => c.id === "shake");

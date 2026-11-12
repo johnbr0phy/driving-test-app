@@ -8,30 +8,34 @@ const FEATURE = 120; // the near edge of the crosswalk, or the hydrant
 const CAR_HALF = 2.2;
 const START = 104.5;
 
+/** The four bank answers, each a distance in feet, and the legal one. */
 function optionsOf(record) {
-  const d = record.decisions[0];
-  return [d.correctAction, ...d.wrongActions];
+  const options = record.decisions[0].options;
+  return { options, legal: options.find((o) => o.correct).distanceFt };
 }
 
 export function describe(record) {
   const hydrant = record.params.feature === "hydrant";
   const decision = record.decisions[0];
+  const { options, legal } = optionsOf(record);
   const branches = {};
-  for (const option of optionsOf(record)) {
-    const right = option.id === decision.correctAction.id;
-    branches[option.id] = hydrant
-      ? right
-        ? { duration: 8.5, caption: "You park clear of the hydrant. A fire engine pulls up and connects its hose with room to spare." }
+  for (const option of options) {
+    const ft = option.distanceFt;
+    const safe = ft >= legal;
+    const farther = ft > legal ? ` That is ${ft - legal} feet more than the law asks.` : "";
+    branches[option.action] = hydrant
+      ? safe
+        ? { duration: 8.5, caption: `You park ${ft} feet from the hydrant. A fire engine pulls up and connects its hose with room to spare.${farther}` }
         : {
             duration: 8,
-            caption: "You park too close to the hydrant. A fire engine arrives and cannot connect. It sounds its horn. Police lights come on.",
+            caption: `You park ${ft} feet from the hydrant, too close. A fire engine arrives and cannot connect. It sounds its horn. Police lights come on.`,
             cues: [{ at: 5.6, id: "horn" }, { at: 6.4, id: "horn" }],
           }
-      : right
-        ? { duration: 8.5, caption: "You park well back. A person steps into the crosswalk in plain view, and the car behind stops smoothly for them." }
+      : safe
+        ? { duration: 8.5, caption: `You park ${ft} feet back. A person steps into the crosswalk in plain view, and the car behind stops smoothly for them.${farther}` }
         : {
             duration: 8,
-            caption: "You park too close to the crosswalk. A person steps out from behind your car. The next driver sees them late, brakes hard and honks. Police lights come on.",
+            caption: `You park ${ft} feet from the crosswalk, too close. A person steps out from behind your car. The next driver sees them late, brakes hard and honks. Police lights come on.`,
             cues: [{ at: 5.6, id: "horn" }, { at: 6.0, id: "shake" }],
           };
   }
@@ -49,9 +53,7 @@ export function describe(record) {
 export function build(world, record) {
   const { COLORS } = world;
   const hydrant = record.params.feature === "hydrant";
-  const decision = record.decisions[0];
-  const options = optionsOf(record);
-  const legal = decision.correctAction.distanceFt;
+  const { options, legal } = optionsOf(record);
 
   world.ground(-40, 300, COLORS.sidewalk, 70);
   world.road(-40, 300, -6, 6);
@@ -75,7 +77,7 @@ export function build(world, record) {
   for (const option of options) {
     const s = FEATURE - option.distanceFt * FT;
     world.bar(s - 0.11, 3.6, 6.9, 0.22, "#fde047");
-    world.groundLabel(`${option.distanceFt} ft`, s, 9.4, { width: 4.2, color: "#111827" });
+    world.groundLabel(`${option.distanceFt} ft`, s, 9.4, { width: 3.6, color: "#111827" });
   }
   // Cars already parked further back.
   [30, 44, 52, 66].forEach((s, i) => {
@@ -102,7 +104,7 @@ export function build(world, record) {
         s = intro.s(t);
         v = intro.v(t);
       } else {
-        chosen = options.find((o) => seg.endsWith(`:${o.id}`));
+        chosen = options.find((o) => seg.endsWith(`:${o.action}`));
         const target = FEATURE - chosen.distanceFt * FT - CAR_HALF;
         const u = smooth(t / 3.2);
         s = START + (target - START) * u;

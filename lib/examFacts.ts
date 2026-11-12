@@ -2694,6 +2694,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "The CVCL (Università per Stranieri di Perugia) CELI pages and the Regolamento degli esami CELI (2024), checked November 2026",
     source: { name: "CVCL: Esami CELI generici", url: "https://cvcl.unistrapg.it/pagine/esami-celi-generici" },
   },
+  itpatente: {
+    answer:
+      "The Italian theory test for a category B car licence (esame di teoria, quiz patente B) is taken on a computer at the Motorizzazione civile, or at a driving school with approved rooms: 30 statements, each marked true or false (vero o falso), in 20 minutes, and you pass with no more than 3 errors. It must be passed within six months of the licence application, with at most two attempts and at least a month between them; a pass brings the learner permit (foglio rosa), valid for twelve months, for the practical test.",
+    rows: [
+      { label: "Run by", value: "Motorizzazione civile (Ministry of Infrastructure and Transport)" },
+      { label: "Format", value: "30 true/false statements on a computer" },
+      { label: "Time", value: "20 minutes" },
+      { label: "Pass mark", value: "At most 3 errors" },
+      { label: "Attempts", value: "Two within six months of the application" },
+      { label: "After passing", value: "Learner permit (foglio rosa), valid 12 months" },
+      { label: "Tigertest mock tests", value: "7 x 30 four-option questions in Italian, 27 to pass" },
+    ],
+    basedOn: "Ministerial decree of 27 October 2021, Codice della Strada articles 121 and 122, the Motorizzazione civile guidance of Regione Friuli Venezia Giulia, and D.Lgs. 59/2011 Annex II, checked November 2026",
+    source: { name: "Il Portale dell'Automobilista (Ministry of Infrastructure and Transport)", url: "https://www.ilportaledellautomobilista.it/" },
+  },
   dkindfoed: {
     answer:
       "The Danish citizenship test (indfødsretsprøven) is a written test for people applying for Danish citizenship by statute. It has 45 multiple-choice questions in Danish and lasts 45 minutes. 35 questions come from the official free learning material on Danish society, culture and history (Læremateriale til indfødsretsprøven, in text and audio), 5 are about current affairs from the months before the test, and 5 are about Danish values. To pass you need at least 36 correct answers, including at least 4 of the 5 values questions. Most questions have three options and some are yes or no. The test is run by SIRI (the Danish Agency for International Recruitment and Integration) and held twice a year, in May or June and in November or December, at language centres across Denmark; SIRI publishes each test and its answers afterwards. In May 2025, 58.2% of candidates passed.",

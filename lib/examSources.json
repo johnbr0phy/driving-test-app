@@ -59,6 +59,11 @@
   "https://apcentral.collegeboard.org/courses/ap-human-geography/course",
   "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf"
  ],
+ "apitalian": [
+  "https://apcentral.collegeboard.org/media/pdf/ap-italian-course-and-exam-description-effective-fall-2026.pdf",
+  "https://apcentral.collegeboard.org/media/pdf/ap-italian-language-and-culture-course-and-exam-description-clarifications.pdf",
+  "https://apcentral.collegeboard.org/media/pdf/ap-italian-language-and-culture-course-overview.pdf"
+ ],
  "aplang": [
   "https://apcentral.collegeboard.org/courses/ap-english-language-and-composition/exam",
   "https://apcentral.collegeboard.org/media/pdf/ap-english-language-and-composition-course-and-exam-description.pdf",
@@ -675,6 +680,11 @@
   "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1/itil-4-foundation-2565",
   "https://peoplecert.org/help-and-support/faq-itil",
   "https://www.peoplecert.org/help-and-support/faq-itil"
+ ],
+ "itpatente": [
+  "https://www.studiocerbone.com/?p=457801",
+  "https://mit.gov.it/nfsmitgov/files/media/normativa/2021-12/DECRETO_protocollo_0000439_del%20_13-12-2021.pdf",
+  "https://www.regione.fvg.it/rafvg/cms/RAFVG/infrastrutture-lavori-pubblici/motorizzazione-civile/FOGLIA20/"
  ],
  "jambbio": [
   "https://www.jamb.gov.ng/",

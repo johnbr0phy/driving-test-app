@@ -2537,6 +2537,20 @@
     --brand-gradient-to: 0 0% 98%;
   }
 
+  /* Italian Driving Theory Test (Patente B) theme */
+  [data-theme="itpatente"] {
+    --brand: 128 80% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 128 80% 96%;
+    --brand-hover: 128 80% 13%;
+    --brand-dark: 128 80% 8%;
+    --brand-darker: 128 80% 6%;
+    --brand-muted: 128 40% 70%;
+    --brand-border: 128 45% 80%;
+    --brand-border-light: 128 45% 90%;
+    --brand-gradient-to: 0 0% 98%;
+  }
+
   /* Danish citizenship test (indfødsretsprøven) theme */
   [data-theme="dkindfoed"] {
     --brand: 350 90% 40%;
@@ -6920,6 +6934,17 @@
     --brand-muted: 12 35% 45%;
     --brand-dark: 12 85% 65%;
     --brand-darker: 12 80% 78%;
+  }
+  .dark [data-theme="itpatente"] {
+    --brand: 128 80% 29.6%;
+    --brand-hover: 128 80% 21.6%;
+    --brand-light: 128 45% 13%;
+    --brand-gradient-to: 0 0% 11%;
+    --brand-border-light: 128 35% 24%;
+    --brand-border: 128 40% 34%;
+    --brand-muted: 128 40% 45%;
+    --brand-dark: 128 80% 65%;
+    --brand-darker: 128 80% 78%;
   }
   .dark [data-theme="itcils"] {
     --brand: 146 90% 27.9%;

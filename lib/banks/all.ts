@@ -247,3 +247,4 @@ import "./sgm5";
 import "./sgvl";
 import "./itcils";
 import "./itceli";
+import "./itpatente";

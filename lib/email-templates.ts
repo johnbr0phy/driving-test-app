@@ -536,6 +536,19 @@ export function exitQuestionEmail(v: EmailVoice, c: ExitQuestionContent): string
   });
 }
 
+/** A short list with a tick per line, each item kept to one line on a phone. */
+function checklist(items: string[]): string {
+  const rows = items.map((item, i) => `<tr>
+<td width="30" valign="top" style="padding: ${i ? 11 : 0}px 0 0; font-size: 17px; line-height: 1.4; font-weight: 700; color: #FF6B35;">&#10003;</td>
+<td valign="top" style="padding: ${i ? 11 : 0}px 0 0; font-size: 16px; line-height: 1.4; color: #1f2d30;">${item}</td>
+</tr>`).join("\n");
+  return `              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="margin: 0 0 6px; border: 1px solid #ebe7e0; border-radius: 12px; background-color: #faf8f5;"><tr><td style="padding: 18px 20px;">
+<table role="presentation" width="100%" cellspacing="0" cellpadding="0">
+${rows}
+</table>
+</td></tr></table>`;
+}
+
 /** What the top prepper email says about one person (lib/topPrepper.ts). */
 export interface TopPrepperContent {
   /** Questions answered on Tigertest. */
@@ -566,13 +579,11 @@ export function topPrepperEmail(v: EmailVoice, c: TopPrepperContent): string {
       p(c.item
         ? `You opened <strong style="font-weight: 600;">${esc(c.item)}</strong> a little while ago and it was locked. Premium opens it, along with:`
         : "A little while ago you opened a part that was locked. Premium opens it, along with:"),
-      ul([
-        v.id === "dmv" ? "Training sets 3 and 4 and practice tests 3 and 4" : `The last ${name}training step and practice test`,
-        "Your full stats: every question you keep missing",
-        "The same on every other test on Tigertest",
-      ]),
+      checklist(v.id === "dmv"
+        ? ["Training sets 3 and 4", "Practice tests 3 and 4", "Every question you keep missing", "Premium on every other test here"]
+        : [`The final ${name}training set`, `The final ${name}practice test`, "Every question you keep missing", "Premium on every other test here"]),
       cta(unlock, `Unlock ${name}Premium`),
-      p("It is one payment, not a subscription. You will see the price before you pay."),
+      p("Pay once and it's yours. No subscription."),
       signoff("Keep going,"),
     ].join("\n"),
   });

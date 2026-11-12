@@ -1,0 +1,133 @@
+{
+  "blueprintComment": [
+    "UK Level 2 and 3 plumbing and domestic heating theory (England), checked November 2026:",
+    "City & Guilds 6035-02 handbook v5.12 (unit tests mostly 40 MCQs in 75 minutes, about 60%) and",
+    "the ST0303 apprenticeship EPA plan v1.2 (knowledge paper 1: 60 MCQs in 120 minutes, 36 to pass).",
+    "Split is Tigertest's, along the 6035-02 unit test sizes. Approved Documents G, H and L (2021",
+    "edition in force; the 2026 L edition starts 24 March 2027 with the same figures used). All original."
+  ],
+  "copy": {
+    "guestPrompt": "to save your plumbing theory progress and track every question you miss",
+    "trainingSub": "Five topic sets, from health and safety to sanitation and drainage. Missed questions come back until you master them.",
+    "testsHeading": "Practice tests · 50 questions across every topic, 60% to pass",
+    "heroSubs": [
+      "Five training sets, four practice tests. Start with Health, Safety & Science.",
+      "Master each topic, then test yourself.",
+      "Keep going. Every topic you master shows up on the tests.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for your unit tests."
+    ],
+    "sourceLine": "Based on the City & Guilds 6035 units and the ST0303 apprenticeship knowledge test, with Approved Documents G, H and L (England), checked November 2026. Original questions."
+  },
+  "themeComment": "Plumbing theory theme: copper green",
+  "blurb": "Level 2 and 3 plumbing and heating theory: cold and hot water, central heating, drainage, pipework, safety and science.",
+  "org": "City & Guilds · 6035 Plumbing Studies and ST0303 apprenticeship",
+  "aliases": "plumbing theory plumbing level 2 plumbing level 3 6035 city and guilds plumbing plumbing diploma plumbing apprenticeship st0303 plumbing and domestic heating plumber exam uk plumbing epa plumbing knowledge test plumbing course central heating",
+  "related": [
+    "ukwater",
+    "ukg3",
+    "ukgas"
+  ],
+  "shareTitle": "Plumbing Theory Practice Test",
+  "shareDesc": "Practise Level 2 and 3 plumbing theory: cold and hot water, central heating, drainage, pipework and safety.",
+  "teaches": "a plumbing course",
+  "examFacts": {
+    "answer": "Plumbing theory in England is assessed by multiple-choice knowledge tests. On the City & Guilds 6035-02 Level 2 Diploma in Plumbing Studies, each unit (health and safety, scientific principles, common processes, cold water, hot water, central heating, drainage, electrical principles) is an online multiple-choice test, mostly 40 questions in 75 minutes, with a pass mark of about 60%. On the Level 3 Plumbing and domestic heating technician apprenticeship (ST0303), the end-point knowledge test paper 1 is 60 multiple-choice questions in 120 minutes: 36 to pass and 50 for a distinction, followed by an option paper.",
+    "rows": [
+      [
+        "Who sets it",
+        "City & Guilds (6035) and end-point assessment organisations (ST0303)"
+      ],
+      [
+        "C&G 6035-02",
+        "Online multiple choice per unit, mostly 40 questions in 75 minutes"
+      ],
+      [
+        "ST0303 paper 1",
+        "60 questions in 120 minutes, 36 to pass, 50 for a distinction"
+      ],
+      [
+        "Pass mark",
+        "About 60% (City & Guilds); 36 of 60 (ST0303)"
+      ],
+      [
+        "Rules used",
+        "Approved Documents G, H and L, HSE guidance (England)"
+      ]
+    ],
+    "basedOn": "the City & Guilds 6035-02 handbook (v5.12, September 2026) and the ST0303 v1.2 end-point assessment plan, checked November 2026",
+    "source": {
+      "name": "Skills England: Plumbing and domestic heating technician (ST0303)",
+      "url": "https://skillsengland.education.gov.uk/apprenticeship-standards/st0303-v1-2"
+    }
+  },
+  "landing": {
+    "title": "Plumbing Theory Practice Test 2026 - Free Level 2 & 3 Mock Exams",
+    "metaDescription": "Free UK plumbing theory practice for City & Guilds 6035 and the ST0303 apprenticeship: 200 original questions on water, heating, drainage and safety.",
+    "description": "Free practice for UK Level 2 and 3 plumbing and domestic heating theory: 200 original questions on health and safety, scientific principles, plumbing processes, cold and hot water systems, central heating, sanitation and drainage, rainwater, electrical principles and environmental technologies. Four 50-question practice tests with an explanation on every question.",
+    "keywords": "plumbing theory practice test, plumbing level 2 mock exam, city and guilds 6035 practice questions, plumbing apprenticeship knowledge test, st0303 epa practice, central heating questions, plumbing exam uk",
+    "ogAlt": "Tigertest free plumbing theory practice test",
+    "appName": "Tigertest - Free Plumbing Theory Practice",
+    "featureList": [
+      "200 plumbing and heating theory questions",
+      "4 practice tests of 50 questions",
+      "5 training sets by topic",
+      "Instant feedback with explanations",
+      "Auto-save progress"
+    ],
+    "h1": "Free Plumbing Theory Practice Test 2026",
+    "heroSubtitle": "200 questions for City & Guilds 6035 and the Level 3 plumbing apprenticeship: cold and hot water, central heating, drainage, pipework, safety and science. Tuned for mobile. No account needed.",
+    "howTrain": "Five training sets, from Health, Safety & Science to Sanitation, Drainage & Rainwater. Master a topic, then take a test. Questions you miss come back until you have mastered them.",
+    "howTest": "Four 50-question practice tests across every topic, with a 60% pass line like the real unit tests and an explanation of the right answer on every question.",
+    "blueprintHeading": "Built on the 6035 Units and the Apprenticeship Knowledge Test",
+    "blueprintPara": "The practice tests are weighted like the City & Guilds 6035-02 unit tests, with central heating, hot and cold water and safety carrying the most questions. Every question is original and written for England's Approved Documents and HSE guidance.",
+    "tutors": [
+      "Teaching plumbing at a college or training centre? Set Tigertest as practice between sessions at",
+      "and see which topics your learners miss most before their unit tests. It is free for you and your learners."
+    ],
+    "studyHeading": "How to Pass Your Plumbing Theory Tests",
+    "tips": [
+      [
+        "Learn the systems, not just the parts",
+        "Most questions describe a system and ask what happens: why a cold feed is sized as it is, what a motorised valve does in an S plan, why a trap seal is lost. Draw each system from memory until you can label every part."
+      ],
+      [
+        "Know the key numbers",
+        "Learn the figures that come up again and again, such as stored hot water at 60°C, distribution at 50°C or above, trap seal depths, fall on drainage and the 1 m ladder rule, so you do not lose time on them."
+      ],
+      [
+        "Practise the science and sums",
+        "Expect questions on pressure and head, heat transfer, expansion, electrical units and simple heat loss sums. Write out the formula, put in the numbers and check the unit."
+      ],
+      [
+        "Fix your misses, then retest",
+        "Tigertest tracks your accuracy by topic. Aim for 80 percent on every practice test before the real one, then retrain your weakest topic."
+      ]
+    ],
+    "faqHeading": "Plumbing Theory Frequently Asked Questions",
+    "faqs": [
+      [
+        "What does the plumbing theory test cover?",
+        "Health and safety, scientific principles, pipework and jointing, cold and hot water systems, central heating and controls, sanitation and above-ground drainage, rainwater, electrical basics for plumbers and an awareness of heat pumps and solar thermal. Those are the units of the City & Guilds 6035 Level 2 Diploma and the core knowledge of the Level 3 apprenticeship."
+      ],
+      [
+        "How many questions are on the real tests and what is the pass mark?",
+        "Each City & Guilds 6035-02 unit test is an online multiple-choice test, mostly 40 questions in 75 minutes, passing at about 60%. The ST0303 apprenticeship knowledge test paper 1 is 60 questions in 120 minutes: 36 to pass, 50 for a distinction."
+      ],
+      [
+        "Is this the gas or unvented exam?",
+        "No. Gas (ACS CCN1), unvented hot water storage and the Water Regulations each have their own practice test on Tigertest. This one covers general plumbing and heating theory and touches those only lightly."
+      ],
+      [
+        "Which rules are the questions based on?",
+        "England: Approved Documents H, G and L, HSE guidance on legionella, ladders and asbestos, and RIDDOR. Wales, Scotland and Northern Ireland have their own building regulations, so check local figures there."
+      ],
+      [
+        "Are these the real City & Guilds questions?",
+        "No. Every question here is written by Tigertest from the published units and the rules they cover, without copying past papers, sample tests or commercial question banks."
+      ]
+    ],
+    "ctaHeading": "Ready to Pass Your Plumbing Theory?",
+    "ctaSub": "Start for free. No account required. 200 questions across every topic."
+  }
+}

@@ -3,6 +3,7 @@ import { getAdminDb, getAdminAuth } from '@/lib/firebase-admin';
 import { FieldValue } from 'firebase-admin/firestore';
 import { isInternalEmail } from '@/lib/internal';
 import { isBotRequest } from '@/lib/botUserAgent';
+import { visitorCountry } from '@/lib/server/visitorCountry';
 
 const KEY_RE = /^[a-zA-Z0-9_]+$/;
 
@@ -36,12 +37,19 @@ export async function POST(request: NextRequest) {
       }
     }
 
+    // Where the hit came from and whether the person could pay there and
+    // then (a guest has to make an account first). Counted since 2026-11-12
+    // for the /admin Conversion tab; country is two letters, never an IP.
+    const country = visitorCountry(request) ?? 'ZZ';
+
     // Aggregate counters (includes guests). Nested-object merge avoids the
     // dotted-field-path ambiguity in set({ merge: true }).
     await db.doc('analytics/paywalls').set(
       {
         total: FieldValue.increment(1),
         daily: { [today]: FieldValue.increment(1) },
+        ...(uid && { signedInDaily: { [today]: FieldValue.increment(1) } }),
+        byCountry: { [country]: { [today]: FieldValue.increment(1) } },
         byPaywall: {
           [key]: {
             total: FieldValue.increment(1),
@@ -60,6 +68,7 @@ export async function POST(request: NextRequest) {
     if (uid) {
       await db.doc(`users/${uid}`).set(
         {
+          ...(country !== 'ZZ' && { paywallCountry: country }),
           paywallHits: {
             [key]: {
               count: FieldValue.increment(1),

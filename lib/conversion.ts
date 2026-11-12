@@ -39,16 +39,21 @@ export interface ConvRow {
   activeDaysAfter: number;
   /** Buyers: index into the payload's `paywalls` of the one that sold, -1 unknown. */
   soldBy: number;
+  /** Index into the payload's `markets`. */
+  market: number;
+  /** Day of the latest paywall view (days since 1970), -1 when none. */
+  lastPaywallDay: number;
 }
 
 export const pack = (r: ConvRow): PackedRow => [
   r.paid ? 1 : 0, r.answers, r.tests, r.activeDays, r.paywallViews, r.paywalls, r.exam,
-  r.signupDay, r.lastActiveDay, r.daysToBuy, r.answersAfter, r.activeDaysAfter, r.soldBy,
+  r.signupDay, r.lastActiveDay, r.daysToBuy, r.answersAfter, r.activeDaysAfter, r.soldBy, r.market, r.lastPaywallDay,
 ];
 
 export const unpack = (p: PackedRow): ConvRow => ({
   paid: p[0] === 1, answers: p[1], tests: p[2], activeDays: p[3], paywallViews: p[4], paywalls: p[5], exam: p[6],
   signupDay: p[7], lastActiveDay: p[8], daysToBuy: p[9], answersAfter: p[10], activeDaysAfter: p[11], soldBy: p[12],
+  market: p[13] ?? 0, lastPaywallDay: p[14] ?? -1,
 });
 
 export const dayNumber = (day: string | null | undefined): number => {
@@ -321,5 +326,112 @@ export function insights(rows: ConvRow[], today: number): string[] {
       }.`,
     );
   }
+  return out;
+}
+
+// ─── Who pays, by market or by test ────────────────────────────────────────
+export interface GroupRow {
+  /** Index into the payload's `markets` or `exams`. */
+  index: number;
+  accounts: number;
+  sawPaywall: number;
+  /** Paid, among the accounts that saw a paywall or paid. */
+  paid: number;
+  /** Paid per account that was asked to pay: the propensity to pay. */
+  rate: number;
+  /** Unpaid, saw a paywall in the last 30 days. */
+  open: number;
+}
+
+/**
+ * Pay rate per market or per test. Someone who paid was asked to pay, even
+ * when no paywall view was recorded for them (older accounts), so they count
+ * on both sides of the rate.
+ */
+export function byGroup(rows: ConvRow[], key: "market" | "exam", today: number): GroupRow[] {
+  const out = new Map<number, GroupRow>();
+  for (const r of rows) {
+    let g = out.get(r[key]);
+    if (!g) out.set(r[key], (g = { index: r[key], accounts: 0, sawPaywall: 0, paid: 0, rate: 0, open: 0 }));
+    g.accounts++;
+    if (r.paywallViews > 0 || r.paid) g.sawPaywall++;
+    if (r.paid) g.paid++;
+    else if (r.lastPaywallDay >= 0 && today - r.lastPaywallDay < 30) g.open++;
+  }
+  for (const g of out.values()) g.rate = g.sawPaywall ? g.paid / g.sawPaywall : 0;
+  return [...out.values()].sort((a, b) => b.sawPaywall - a.sawPaywall);
+}
+
+// ─── More paywall traffic: where did it come from, and did it sell? ────────
+/** One purchase: [day (days since 1970), paywall index or -1, market index, US cents]. */
+export type Sale = [number, number, number, number];
+
+export interface WallChange {
+  index: number;
+  before: number;
+  now: number;
+  soldBefore: number;
+  soldNow: number;
+}
+
+export interface PeriodChange {
+  days: number;
+  hitsBefore: number;
+  hitsNow: number;
+  salesBefore: number;
+  salesNow: number;
+  centsBefore: number;
+  centsNow: number;
+  /** Every paywall with hits or sales in either period, biggest rise first. */
+  walls: WallChange[];
+}
+
+const dayKeyOf = (n: number) => new Date(n * 86_400_000).toISOString().slice(0, 10);
+
+/**
+ * The last `days` days against the `days` before them. Today is left out of
+ * both (it is not over yet), so "now" ends yesterday.
+ */
+export function comparePeriods(
+  wallDaily: Record<string, number>[],
+  hitsDaily: Record<string, number>,
+  sales: Sale[],
+  today: number,
+  days: number,
+): PeriodChange {
+  const nowFrom = today - days;
+  const beforeFrom = today - 2 * days;
+  const sum = (map: Record<string, number> | undefined, from: number) => {
+    let n = 0;
+    for (let d = from; d < from + days; d++) n += map?.[dayKeyOf(d)] ?? 0;
+    return n;
+  };
+  const walls = new Map<number, WallChange>();
+  const wall = (index: number) => {
+    let w = walls.get(index);
+    if (!w) walls.set(index, (w = { index, before: 0, now: 0, soldBefore: 0, soldNow: 0 }));
+    return w;
+  };
+  wallDaily.forEach((daily, index) => {
+    const before = sum(daily, beforeFrom);
+    const now = sum(daily, nowFrom);
+    if (before || now) Object.assign(wall(index), { before, now });
+  });
+  const out: PeriodChange = {
+    days, hitsBefore: sum(hitsDaily, beforeFrom), hitsNow: sum(hitsDaily, nowFrom),
+    salesBefore: 0, salesNow: 0, centsBefore: 0, centsNow: 0, walls: [],
+  };
+  for (const [day, index, , cents] of sales) {
+    if (day >= nowFrom && day < today) {
+      out.salesNow++;
+      out.centsNow += cents;
+      wall(index).soldNow++;
+    } else if (day >= beforeFrom && day < nowFrom) {
+      out.salesBefore++;
+      out.centsBefore += cents;
+      wall(index).soldBefore++;
+    }
+  }
+  out.walls = [...walls.values()].sort((a, b) => b.now - b.before - (a.now - a.before) || b.now - a.now);
   return out;
 }

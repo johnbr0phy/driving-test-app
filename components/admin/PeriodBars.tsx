@@ -28,18 +28,30 @@ function dateKeyDaysAgo(days: number): string {
   return d.toISOString().split("T")[0];
 }
 
-function ChartTooltip({ active, payload, label, format, labelPrefix = "" }: {
-  active?: boolean; payload?: { value?: number | string }[]; label?: string;
-  format: (n: number) => string; labelPrefix?: string;
+type Row = Pt & { part: number; rest: number };
+
+function ChartTooltip({ active, payload, label, format, labelPrefix = "", part }: {
+  active?: boolean; payload?: { payload?: Row }[]; label?: string;
+  format: (n: number) => string; labelPrefix?: string; part?: BarPart;
 }) {
-  if (!active || !payload?.length) return null;
+  const row = payload?.[0]?.payload;
+  if (!active || !row) return null;
   return (
     <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-lg shadow-md px-3 py-2">
       <p className="text-xs text-gray-500 dark:text-gray-400">{labelPrefix}{label}</p>
-      <p className="text-sm font-semibold text-gray-900 dark:text-gray-50">{format(Number(payload[0].value) || 0)}</p>
+      <p className="text-sm font-semibold text-gray-900 dark:text-gray-50">{format(row.value)}</p>
+      {part && (
+        <p className="mt-0.5 text-xs text-gray-600 dark:text-gray-300">
+          {fmtInt(row.part)} {part.label.toLowerCase()} · {fmtInt(row.rest)} {part.restLabel.toLowerCase()}
+        </p>
+      )}
     </div>
   );
 }
+
+// A slice of each bar drawn in its own colour at the bottom (paywall hits by
+// logged-in accounts); the rest of the bar keeps the card's colour.
+export type BarPart = { data: Pt[]; label: string; restLabel: string; color: string };
 
 // New signups by calendar day (last 30), Monday-start week (last 12) or month
 // (last 12), independent of the range filter. The last bucket is the current,
@@ -78,10 +90,14 @@ export function signupBars(map: Record<string, number>, unit: SignupUnit): Pt[] 
 
 // A count per day / week / month (new signups, paywall hits): the last bar is
 // the current period so far, drawn lighter, with the previous full one beside it.
-export function PeriodBarsCard({ title, noun: countNoun, color, note, data, unit, onUnit }: {
+export function PeriodBarsCard({ title, noun: countNoun, color, note, data, unit, onUnit, part }: {
   title: string; noun: string; color: string; note?: string;
-  data: Pt[]; unit: SignupUnit; onUnit: (u: SignupUnit) => void;
+  data: Pt[]; unit: SignupUnit; onUnit: (u: SignupUnit) => void; part?: BarPart;
 }) {
+  const rows: Row[] = data.map((p, i) => {
+    const inPart = Math.min(p.value, part?.data[i]?.value ?? 0);
+    return { ...p, part: inPart, rest: p.value - inPart };
+  });
   const cur = data[data.length - 1]?.value ?? 0;
   const prev = data[data.length - 2]?.value ?? 0;
   const noun = unit === "day" ? "Today" : `This ${unit}`;
@@ -112,9 +128,19 @@ export function PeriodBarsCard({ title, noun: countNoun, color, note, data, unit
           ))}
         </div>
       </div>
+      {part && (
+        <div className="mb-3 flex flex-wrap gap-x-4 gap-y-1 text-xs text-gray-600 dark:text-gray-300">
+          <span className="inline-flex items-center gap-1.5">
+            <span className="h-2.5 w-2.5 rounded-sm" style={{ background: part.color }} aria-hidden />{part.label}
+          </span>
+          <span className="inline-flex items-center gap-1.5">
+            <span className="h-2.5 w-2.5 rounded-sm" style={{ background: color }} aria-hidden />{part.restLabel}
+          </span>
+        </div>
+      )}
       <div className="h-56 sm:h-64">
         <ResponsiveContainer width="100%" height="100%">
-          <BarChart data={data} margin={{ top: 18, right: 16, left: 0, bottom: 0 }}>
+          <BarChart data={rows} margin={{ top: 18, right: 16, left: 0, bottom: 0 }}>
             <CartesianGrid vertical={false} stroke={GRID} />
             <XAxis dataKey="label" tick={axisTickStyle} tickLine={false}
               axisLine={{ stroke: AXIS }} interval={unit === "day" ? "preserveStartEnd" : 0} tickMargin={8} />
@@ -122,11 +148,19 @@ export function PeriodBarsCard({ title, noun: countNoun, color, note, data, unit
               allowDecimals={false} width={44} tickFormatter={fmtCompact} />
             <Tooltip cursor={{ fill: "rgba(0,0,0,0.03)" }}
               content={<ChartTooltip format={(n) => `${fmtInt(n)} ${countNoun}`}
-                labelPrefix={unit === "week" ? "Week of " : ""} />} />
-            <Bar dataKey="value" fill={color} maxBarSize={36} radius={[4, 4, 0, 0]}
+                labelPrefix={unit === "week" ? "Week of " : ""} part={part} />} />
+            {part && (
+              <Bar dataKey="part" stackId="a" fill={part.color} maxBarSize={36} isAnimationActive={false}>
+                {rows.map((p, i) => (
+                  <Cell key={p.key} fillOpacity={i === rows.length - 1 ? 0.45 : 1}
+                    {...(p.rest === 0 ? { radius: [4, 4, 0, 0] as unknown as number } : {})} />
+                ))}
+              </Bar>
+            )}
+            <Bar dataKey={part ? "rest" : "value"} stackId="a" fill={color} maxBarSize={36} radius={[4, 4, 0, 0]}
               isAnimationActive={false}>
-              {data.map((p, i) => (
-                <Cell key={p.key} fillOpacity={i === data.length - 1 ? 0.45 : 1} />
+              {rows.map((p, i) => (
+                <Cell key={p.key} fillOpacity={i === rows.length - 1 ? 0.45 : 1} />
               ))}
               {unit !== "day" && (
                 <LabelList dataKey="value" position="top"

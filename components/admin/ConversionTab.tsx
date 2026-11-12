@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { CARD, ROW, STICKY_COL, TabError, TabHeader, TabLoading, TableScroll, fmtUpdated, useAdminFetch } from "@/components/admin/AdminTabParts";
 import { PeriodBarsCard, signupBars, type SignupUnit } from "@/components/admin/PeriodBars";
 import {
@@ -15,6 +15,7 @@ import type { ConversionPayload } from "@/lib/server/conversion";
 // lib/conversion.ts; the detail tables are folded away at the bottom.
 
 const PAYWALL = "#eb6834";
+const LOGGED_IN = "#8a2f0b";
 const PAID = "#008300";
 const MUTED = "#c3c2b7";
 
@@ -93,10 +94,17 @@ function Bullets({ items }: { items: string[] }) {
 
 export function ConversionTab() {
   const { data, error, loading, refreshing, updating, reload } = useAdminFetch<ConversionPayload>("/api/admin/conversion");
+  // A copy cached before a deploy that changed the payload: rebuild it, once.
+  const stale = !!data && (!data.markets || !data.sales);
+  const rebuilt = useRef(false);
+  useEffect(() => {
+    if (!stale || rebuilt.current) return;
+    rebuilt.current = true;
+    void reload(true);
+  }, [stale, reload]);
   if (loading) return <TabLoading />;
   if (error || !data) return <TabError message={error || "Failed to load"} />;
-  // A copy cached before a deploy that changed the payload: rebuild it.
-  if (!data.markets || !data.sales) return <TabError message="This tab was updated. Press Refresh to rebuild its numbers." />;
+  if (stale) return <TabLoading />;
   return <ConversionView data={data} onRefresh={() => reload(true)} refreshing={refreshing} updating={updating} />;
 }
 
@@ -365,8 +373,9 @@ export function ConversionView({ data, onRefresh, refreshing, updating }: {
       </div>
 
       <PeriodBarsCard title="Paywall hits over time" noun="paywall hits" color={PAYWALL}
-        note="Every time a paywall opened, guests included; internal accounts and bots are not counted."
-        data={signupBars(data.daily.paywallHits, unit)} unit={unit} onUnit={setUnit} />
+        note={`Every time a paywall opened; internal accounts and bots are not counted. Logged-in hits are counted from ${fmtDay(data.trackedSince)}, so earlier bars are not split.`}
+        data={signupBars(data.daily.paywallHits, unit)} unit={unit} onUnit={setUnit}
+        part={{ data: signupBars(data.daily.signedIn ?? {}, unit), label: "Logged in", restLabel: "Guests, or not split yet", color: LOGGED_IN }} />
 
       {/* 2. Who pays, by market or test */}
       <div className={`${CARD} mb-3 sm:mb-4`}>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
+import { GuestPromptTestCard } from "@/components/admin/GuestPromptTestCard";
 import { CARD, ROW, STICKY_COL, TabError, TabHeader, TabLoading, TableScroll, fmtUpdated, useAdminFetch } from "@/components/admin/AdminTabParts";
 import { PeriodBarsCard, signupBars, type SignupUnit } from "@/components/admin/PeriodBars";
 import {
@@ -631,6 +632,9 @@ export function ConversionView({ data, onRefresh, refreshing, updating }: {
           </div>
         );
       })()}
+
+      {/* The sign-up step's ten-design message test */}
+      <GuestPromptTestCard />
 
       {/* The detail, for when a number above needs checking */}
       <details className={CARD}>

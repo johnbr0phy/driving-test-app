@@ -63,21 +63,16 @@ interface Props {
  * tap (AuthContext converts the guest's progress when the popup returns, so
  * this page just re-renders signed in), and email via the signup page.
  */
-export function GuestSaveCard({ signupHref, answered = 0, tests = 0, score, dataTheme, className = "", promptSource }: Props) {
-  const { t } = useTranslation();
+/** One-tap Google sign-up for a signed-out visitor (AuthContext converts the
+ *  guest's progress when the popup returns). Shared by the save card and the
+ *  in-training prompt. */
+export function useGuestGoogleSignup(promptSource?: string) {
   const { loginWithGoogle } = useAuth();
-  const isNative = useIsNativeApp();
   const setEmailConsent = useStore((s) => s.setEmailConsent);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState(false);
 
-  const title = score
-    ? t("guestSave.titleScore").replace("{{score}}", String(score.score)).replace("{{total}}", String(score.total))
-    : answered > 0
-      ? t(tests > 0 ? "guestSave.titleAnswersTests" : "guestSave.titleAnswers").replace("{{n}}", String(answered))
-      : t("guestSave.titleFresh");
-
-  const handleGoogle = async () => {
+  const signUp = async () => {
     setError(false);
     setBusy(true);
     if (promptSource) trackGuestPrompt("google", promptSource);
@@ -95,6 +90,19 @@ export function GuestSaveCard({ signupHref, answered = 0, tests = 0, score, data
       setBusy(false);
     }
   };
+  return { signUp, busy, error };
+}
+
+export function GuestSaveCard({ signupHref, answered = 0, tests = 0, score, dataTheme, className = "", promptSource }: Props) {
+  const { t } = useTranslation();
+  const isNative = useIsNativeApp();
+  const { signUp: handleGoogle, busy, error } = useGuestGoogleSignup(promptSource);
+
+  const title = score
+    ? t("guestSave.titleScore").replace("{{score}}", String(score.score)).replace("{{total}}", String(score.total))
+    : answered > 0
+      ? t(tests > 0 ? "guestSave.titleAnswersTests" : "guestSave.titleAnswers").replace("{{n}}", String(answered))
+      : t("guestSave.titleFresh");
 
   const benefits = [t("guestSave.benefitSafe"), t("guestSave.benefitMisses")];
 

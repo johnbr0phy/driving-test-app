@@ -402,6 +402,7 @@ function ExamTrainingContent({ exam: source }: { exam: ExamConfig }) {
             answered={examAnswered}
             where="training"
             onSkip={handleSkipPrompt}
+            test={guestPrompt.test}
           />
         ) : sharePrompt.showing ? (
           <SharePromptStep onShared={sharePrompt.shared} onSkip={handleSkipShare} />

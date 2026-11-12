@@ -241,6 +241,7 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
               where="drill"
               dataTheme={exam.id}
               onSkip={() => { guestPrompt.skip(); load(); }}
+              test={guestPrompt.test}
             />
           ) : sharePrompt.showing ? (
             <SharePromptStep onShared={sharePrompt.shared} onSkip={() => { sharePrompt.skip(); load(); }} />

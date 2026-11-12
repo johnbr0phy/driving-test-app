@@ -80,6 +80,14 @@ export function exitQuestionInbox(v: EmailVoice, isCorrect: boolean): InboxCopy 
   };
 }
 
+/** The top prepper email: the number is the person's own, computed at send time. */
+export function topPrepperInbox(pct: number): InboxCopy {
+  return {
+    subject: `You've out-practiced ${pct}% of Tigertest`,
+    preheader: "Your numbers so far, and the one part you have not opened yet.",
+  };
+}
+
 /** Account/service mail stays literal and is never a marketing subject test. */
 export const SERVICE_INBOX = {
   reset: { subject: "Reset your Tigertest password", preheader: "Use the reset link to choose a new password for your account." },

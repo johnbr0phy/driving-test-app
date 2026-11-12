@@ -32,7 +32,7 @@ service cloud.firestore {
     function serverOwnedFields() {
       return [
         'signupOrigin', 'firstSignupExamId', 'marketingEmailLease',
-        'emailsSent', 'lastEmailSent', 'emailVariants', 'exitQuestionEmail',
+        'emailsSent', 'lastEmailSent', 'emailVariants', 'exitQuestionEmail', 'topPrepper',
         'unsubscribed', 'unsubscribedAt', 'subscription'
       ];
     }

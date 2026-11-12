@@ -47,5 +47,5 @@ export function useExamLocks(source: ExamConfig) {
     return !touched.some((id) => trainingPartOf(p.set.id, id) === p.part);
   };
 
-  return { settled, testLocked, partLocked };
+  return { settled, paid, testLocked, partLocked };
 }

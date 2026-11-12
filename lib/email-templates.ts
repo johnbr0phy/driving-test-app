@@ -4,7 +4,7 @@
 // tiger and light theme, a 560px white card, and a neutral unknown-exam fallback.
 // Tables and inline styles keep the layout usable in email clients.
 
-import { EMAIL_INBOX, exitQuestionInbox, emailPreheader } from "@/lib/email-inbox";
+import { EMAIL_INBOX, exitQuestionInbox, topPrepperInbox, emailPreheader } from "@/lib/email-inbox";
 import { practiceLabel } from "@/lib/practiceLabel";
 import { postalFooterLine } from "@/lib/emailPostal";
 import { EmailVoice, dashboardUrl, statsUrl } from "@/lib/email-voice";
@@ -532,6 +532,49 @@ export function exitQuestionEmail(v: EmailVoice, c: ExitQuestionContent): string
         : "When you are ready, you can continue with another practice session."),
       cta(DASH(v, campaign), `Continue ${name}Practice`),
       signoff(),
+    ].join("\n"),
+  });
+}
+
+/** What the top prepper email says about one person (lib/topPrepper.ts). */
+export interface TopPrepperContent {
+  /** Questions answered on Tigertest. */
+  answers: number;
+  /** They have answered more than this percent of people who practise. */
+  pct: number;
+  /** The locked thing they opened, as the paywall named it; may be empty. */
+  item: string;
+}
+
+/**
+ * Sent by /api/cron/top-prepper. The button opens the test's dashboard with
+ * `?unlock=1`, which opens the paywall there, so checkout is one tap away.
+ */
+export function topPrepperEmail(v: EmailVoice, c: TopPrepperContent): string {
+  const inbox = topPrepperInbox(c.pct);
+  const name = v.id === "unknown" ? "" : `${v.shortName} `;
+  const unlock = `${DASH(v, "top_prepper")}&unlock=1`;
+  return emailShell({
+    voice: v,
+    expression: 1,
+    eyebrow: "YOU ARE A TOP PREPPER",
+    title: inbox.subject,
+    preheader: inbox.preheader,
+    heading: "You are smashing it.",
+    body: [
+      p(`You have answered <strong style="font-weight: 700;">${c.answers.toLocaleString("en-US")} practice questions</strong> on Tigertest. That is more than ${c.pct}% of the people who practice here.`),
+      p("I make Tigertest, and I wanted you to know that. Most people stop long before this."),
+      p(c.item
+        ? `You opened <strong style="font-weight: 600;">${esc(c.item)}</strong> a little while ago and it was locked. Premium opens it, along with:`
+        : "A little while ago you opened a part that was locked. Premium opens it, along with:"),
+      ul([
+        v.id === "dmv" ? "Training sets 3 and 4 and practice tests 3 and 4" : `The last ${name}training step and practice test`,
+        "Your full stats: every question you keep missing",
+        "The same on every other test on Tigertest",
+      ]),
+      cta(unlock, `Unlock ${name}Premium`),
+      p("It is one payment, not a subscription. You will see the price before you pay."),
+      signoff("Keep going,"),
     ].join("\n"),
   });
 }

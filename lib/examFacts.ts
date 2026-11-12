@@ -2709,6 +2709,23 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Ministerial decree of 27 October 2021, Codice della Strada articles 121 and 122, the Motorizzazione civile guidance of Regione Friuli Venezia Giulia, and D.Lgs. 59/2011 Annex II, checked November 2026",
     source: { name: "Il Portale dell'Automobilista (Ministry of Infrastructure and Transport)", url: "https://www.ilportaledellautomobilista.it/" },
   },
+  apitalian: {
+    answer:
+      "The AP Italian Language and Culture Exam is a College Board exam of about 2 hours 30 minutes, fully digital in Bluebook from May 2027. Half the score is a free-response section (a project presentation, a project Q&A and an argumentative essay); the other half is 55 multiple-choice questions in Italian in 80 minutes: 25 listening questions in 40 minutes and 30 reading questions in 40 minutes, in sets of five on one text each. Scores are reported from 1 to 5.",
+    rows: [
+      { label: "Owner", value: "College Board (Advanced Placement Program)" },
+      { label: "Format", value: "Fully digital in Bluebook from May 2027; about 2 hours 30 minutes" },
+      { label: "Multiple choice", value: "55 questions in 80 minutes, 50% of the score: Listening 25 in 40 minutes, Reading 30 in 40 minutes" },
+      { label: "Reading part", value: "Six sets of five questions on an article, an article and chart, a literary text or promotional material" },
+      { label: "Free response", value: "Project presentation (20%), project Q&A (15%), argumentative essay (15%)" },
+      { label: "Wrong answers", value: "No penalty for wrong answers" },
+      { label: "Score", value: "1 to 5; the composite cut points are set each year" },
+      { label: "Next exam", value: "Monday, May 3, 2027" },
+      { label: "Course units", value: "Families and Communities, Language and Culture, Art and Creativity, Science and Technology, Contemporary Life, Global Contexts" },
+    ],
+    basedOn: "The College Board's AP Italian Language and Culture Course and Exam Description, effective fall 2026, and AP Central exam page, checked November 2026",
+    source: { name: "College Board, AP Italian Language and Culture Course and Exam Description, effective fall 2026", url: "https://apcentral.collegeboard.org/media/pdf/ap-italian-course-and-exam-description-effective-fall-2026.pdf" },
+  },
   dkindfoed: {
     answer:
       "The Danish citizenship test (indfødsretsprøven) is a written test for people applying for Danish citizenship by statute. It has 45 multiple-choice questions in Danish and lasts 45 minutes. 35 questions come from the official free learning material on Danish society, culture and history (Læremateriale til indfødsretsprøven, in text and audio), 5 are about current affairs from the months before the test, and 5 are about Danish values. To pass you need at least 36 correct answers, including at least 4 of the 5 values questions. Most questions have three options and some are yes or no. The test is run by SIRI (the Danish Agency for International Recruitment and Integration) and held twice a year, in May or June and in November or December, at language centres across Denmark; SIRI publishes each test and its answers afterwards. In May 2025, 58.2% of candidates passed.",

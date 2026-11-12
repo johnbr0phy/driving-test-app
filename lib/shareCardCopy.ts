@@ -294,6 +294,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   biharpolice: { title: "Bihar Police Constable Mock Test", description: "Practice Hindi, English, Maths, Social Science, Science and GK in full 100-question CSBC-pattern mock tests, with every answer explained." },
   rajpolice: { title: "Rajasthan Police Constable Mock Test", description: "Practice reasoning, basic computer, GK, laws on women and children, and Rajasthan GK in 100-question mock tests at the real exam's pace, with every answer explained." },
   mppolice: { title: "MP Police Constable Mock Test", description: "Practice GK and reasoning, mental ability, science and arithmetic in full 100-question, 2-hour mock tests, with every answer explained." },
+  apitalian: { title: "AP Italian Practice Test", description: "Two full 30-question AP Italian reading sections in sets of five, plus a drill for every unit." },
   apush: { title: "AP US History Practice Test", description: "Two full 55-question APUSH multiple-choice sections in source-based sets, plus a drill for every period." },
   apbio: { title: "AP Biology Practice Test", description: "Two full 60-question multiple-choice sections for the AP Biology exam, plus a drill for every unit." },
   phcse: { title: "Civil Service Exam Reviewer", description: "Professional and Subprofessional mock exams on verbal, analytical, clerical and numerical ability and general information, with every answer explained." },

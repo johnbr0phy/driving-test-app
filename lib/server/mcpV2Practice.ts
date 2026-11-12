@@ -82,6 +82,7 @@ import '@/lib/v2/banks/rajpolice';
 import '@/lib/v2/banks/delhipolice';
 import '@/lib/v2/banks/mppolice';
 import '@/lib/v2/banks/apush';
+import '@/lib/v2/banks/apitalian';
 import '@/lib/v2/banks/apgov';
 import '@/lib/v2/banks/apbio';
 import '@/lib/v2/banks/phcse';

@@ -234,6 +234,7 @@
   "delhipolice": ["#362e6b","#f2f1f9","#171429","#dedbf0"],
   "mppolice": ["#347d8d","#f0f8f9","#1e4048","#dbecf0"],
   "apush": ["#794949","#f7f2f2","#3d2929","#ecdfdf"],
+  "apitalian": ["#8b1865","#fceef7","#411031","#f1dae9"],
   "apbio": ["#2f8122","#f0fbef","#163711","#def0db"],
   "phcse": ["#263e73","#f0f3fa","#111a2c","#dbe2f0"],
   "upscse": ["#7e491b","#fbf4ee","#311d0c","#eee5dd"],

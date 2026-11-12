@@ -1,0 +1,117 @@
+{
+  "examId": "apitalian",
+  "idPrefix": "APITAL-",
+  "slug": "/ap-italian",
+  "landingPath": "/ap-italian-practice-test",
+  "region": "US",
+  "hubGroup": "AP exams",
+  "catalogPlacement": "After the other AP exams in the \"AP exams\" group",
+  "configDraft": "tools/next100/apitalian/apitalian.ts (export APITALIAN; copy to lib/v2/exams/apitalian.ts)",
+  "bank": "data/v2/apitalian/questions.json (object form { stimuli, questions }: 210 questions, 42 stimuli)",
+  "rebuild": "python3 -I tools/next100/apitalian/build.py",
+  "validate": "python3 -I tools/validate_v2_bank.py apitalian '{\"1\": {\"read\": {\"1\": 30}}, \"2\": {\"read\": {\"1\": 30}}}'",
+  "bankSizesLine": "  apitalian: 210,",
+  "premium": "Not in PREMIUM_V2_IDS (school AP exam, free like the other AP exams)",
+  "basics": "none",
+  "config": {
+    "id": "apitalian",
+    "name": "AP Italian Practice Test",
+    "shortName": "AP Italian",
+    "fullName": "AP Italian Language and Culture Exam",
+    "tagline": "The AP Italian reading section: 30 questions in Italian in 40 minutes, six sets on articles, charts, stories and ads.",
+    "icon": "graduation",
+    "theme": { "brand": "320 70% 32%", "brandDark": "320 70% 24%", "brandLight": "320 70% 96%" },
+    "themeNote": "320 70% 32% (deep raspberry) passes the hue clash rule against every [data-theme] in app/globals.css as of 2026-11-12 (no theme within 8 degrees that is within 15 points of saturation and 8 of lightness). Italian green (146) is taken by itcils; the wheel was very full, so few muted AP-style shades were free.",
+    "breakSeconds": 0,
+    "sections": [
+      {
+        "key": "read",
+        "name": "Reading",
+        "shortName": "Reading",
+        "modules": [{ "module": 1, "questionCount": 30, "timeLimitSeconds": 2400 }],
+        "scale": "percentScale(30)",
+        "domains": ["apitalianFamilies", "apitalianLanguage", "apitalianArt", "apitalianScience", "apitalianContemporary", "apitalianGlobal"]
+      }
+    ],
+    "tests": [
+      { "number": 1, "name": "Practice Test 1" },
+      { "number": 2, "name": "Practice Test 2", "heldOut": true }
+    ],
+    "domainLabels": {
+      "apitalianFamilies": "Families and Communities",
+      "apitalianLanguage": "Language and Culture",
+      "apitalianArt": "Art and Creativity",
+      "apitalianScience": "Science and Technology",
+      "apitalianContemporary": "Contemporary Life",
+      "apitalianGlobal": "Global Contexts"
+    },
+    "drills": [
+      { "key": "families", "name": "Families and Communities", "domains": ["apitalianFamilies"], "poolSize": 30 },
+      { "key": "language", "name": "Language and Culture", "domains": ["apitalianLanguage"], "poolSize": 30 },
+      { "key": "art", "name": "Art and Creativity", "domains": ["apitalianArt"], "poolSize": 30 },
+      { "key": "science", "name": "Science and Technology", "domains": ["apitalianScience"], "poolSize": 30 },
+      { "key": "contemporary", "name": "Contemporary Life", "domains": ["apitalianContemporary"], "poolSize": 30 },
+      { "key": "global", "name": "Global Contexts", "domains": ["apitalianGlobal"], "poolSize": 30 }
+    ],
+    "dashboardSteps": 8,
+    "composite": "Percent correct, overallPercent",
+    "defaultGoal": 70,
+    "goalChoices": [55, 60, 65, 70, 75, 80, 85],
+    "testLength": "40 min",
+    "scoreNote": "Percent correct on a full reading part (Part B of Section II), which is 25% of the real AP score. The listening part (25%) and the free-response section (the project presentation, project Q&A and argumentative essay, 50%) are not included. The College Board combines all parts into a composite and converts it to an AP score of 1 to 5 each year, with no fixed percent for each score, so the goals here are Tigertest's targets, not official cutoffs.",
+    "sourceLine": "Original practice texts and questions written to the College Board AP Italian Language and Culture course framework. AP is a trademark of the College Board, which is not affiliated with and does not endorse Tigertest. Score estimates are unofficial."
+  },
+  "examFacts": {
+    "answer": "The AP Italian Language and Culture Exam is a College Board exam of about 2 hours 30 minutes, fully digital in Bluebook from May 2027. Half the score is a free-response section (a project presentation, a project Q&A and an argumentative essay); the other half is 55 multiple-choice questions in Italian in 80 minutes: 25 listening questions in 40 minutes and 30 reading questions in 40 minutes, in sets of five on one text each. Scores are reported from 1 to 5.",
+    "facts": [
+      ["Owner", "College Board (Advanced Placement Program)"],
+      ["Format", "Fully digital in Bluebook from May 2027; about 2 hours 30 minutes"],
+      ["Multiple choice", "55 questions in 80 minutes, 50% of the score: Listening 25 in 40 minutes, Reading 30 in 40 minutes"],
+      ["Reading part", "Six sets of five questions on an article, an article and chart, a literary text or promotional material"],
+      ["Free response", "Project presentation (20%), project Q&A (15%), argumentative essay (15%)"],
+      ["Wrong answers", "No penalty for wrong answers"],
+      ["Score", "1 to 5; the composite cut points are set each year"],
+      ["Next exam", "Monday, May 3, 2027"],
+      ["Course units", "Families and Communities, Language and Culture, Art and Creativity, Science and Technology, Contemporary Life, Global Contexts"]
+    ],
+    "source": {
+      "title": "College Board, AP Italian Language and Culture Course and Exam Description, effective fall 2026",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-italian-course-and-exam-description-effective-fall-2026.pdf"
+    },
+    "secondarySource": {
+      "title": "College Board, AP Central: AP Italian Language and Culture Exam",
+      "url": "https://apcentral.collegeboard.org/courses/ap-italian-language-and-culture/exam"
+    },
+    "basedOn": "Based on the College Board AP Italian Language and Culture Course and Exam Description effective fall 2026 and the AP Central exam page, checked November 12, 2026."
+  },
+  "faq": [
+    {
+      "q": "What is on the AP Italian multiple-choice section?",
+      "a": "Section II has 55 questions in Italian in 80 minutes and counts for half your score. Part A is 25 listening questions in 40 minutes; Part B is 30 reading questions in 40 minutes. Questions come in sets of five on one or two texts or recordings, and each has four choices."
+    },
+    {
+      "q": "Which part does this practice test cover?",
+      "a": "The reading part (Part B), at full length and pace: 30 questions in 40 minutes in six sets of five, on articles, articles with a chart, literary excerpts and promotional material. The listening part and the free-response section (the project presentation, the project Q&A and the argumentative essay) are not included."
+    },
+    {
+      "q": "Did the AP Italian exam change for 2027?",
+      "a": "Yes. The College Board revised the AP world language courses for the 2026-27 school year, and from May 2027 the exam is fully digital in Bluebook. The course now has six units (Families and Communities, Language and Culture, Art and Creativity, Science and Technology, Contemporary Life, Global Contexts) and a course project that leads to two speaking questions. Tigertest follows the course and exam description effective fall 2026."
+    },
+    {
+      "q": "Are the texts real Italian articles?",
+      "a": "No. Every text is an original practice text written in Italian for Tigertest, in the styles the exam uses. Places, people, organizations and data in them are invented, and each text says so. No College Board question was used or reworded."
+    },
+    {
+      "q": "Is there a penalty for guessing on AP Italian?",
+      "a": "No. The College Board does not take off points for wrong answers, so answer every question."
+    },
+    {
+      "q": "What score do I need?",
+      "a": "AP scores run from 1 to 5, and the College Board sets the cut points for each score every year from a composite of all parts of the exam. It publishes no fixed percent, so the goals on Tigertest are practice targets, not official cutoffs."
+    }
+  ],
+  "catalogBlurb": "The AP Italian reading section: 30 questions in Italian on articles, charts, stories and ads, in six sets of five.",
+  "searchAliases": ["ap italian", "ap italian language", "ap italian language and culture", "ap italiano", "italian ap exam", "ap italian reading", "ap italian practice"],
+  "teacherLed": "Yes: AP Italian is taught in classes; consider adding to TEACHER_LED and ExamClassFaq",
+  "claudeMdBullet": "- **AP Italian Language and Culture** (`/ap-italian`, landing `/ap-italian-practice-test`, `[data-theme=\"apitalian\"]` deep raspberry (320 70% 32%), region US, hub group \"AP exams\"): the College Board exam on the Course and Exam Description effective fall 2026 (the revised world language course: six units, Families and Communities, Language and Culture, Art and Creativity, Science and Technology, Contemporary Life, Global Contexts; first exam May 3, 2027, fully digital in Bluebook). Reading part only (Section II Part B: 30 questions in 40 minutes, 25% of the score, six sets of five on one text each across four task types, Article, Article and Chart, Literary Text, Promotional Material, 1 to 2 sets each; Part A Listening, 25 in 40 minutes, and the free-response section, project presentation, project Q&A and argumentative essay, are not modelled). One section `read`, one 30-item module at the real pace, six sets in unit order (one per unit, every task type in each test), two tests with Test 2 held out, 6 drills, one per unit (`apitalianFamilies`, `apitalianLanguage`, `apitalianArt`, `apitalianScience`, `apitalianContemporary`, `apitalianGlobal`; 5 per test, 25 drill-only each), 8 dashboard steps, free, no Basics. Stems and options in Italian like the real exam, explanations in English; `skill` labels are the Skill Category 1 learning objectives (1.A.1 to 1.C.3). 42 original practice texts in Italian, each opening with an \"Introduzione\" line saying its places, people and data are invented; charts are small tables. Percent score; `scoreNote` says the College Board converts a composite to 1 to 5 each year. Bank `data/v2/apitalian/questions.json` (210 items, ids `APITAL-T<n>-NNN`, `APITAL-D-NNN`) built by `python3 -I tools/next100/apitalian/build.py` from one Python source per unit (`u1.py` to `u6.py`; key written first, placed in a seeded balanced slot). Sources in `tools/next100/apitalian/sources.md`."
+}

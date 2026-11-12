@@ -1,3 +1,4 @@
+import { creditGuestPromptSignup } from "@/lib/guestPromptTest";
 import { auth } from "@/lib/firebase";
 import { isInternalBrowser } from "@/lib/internal";
 
@@ -152,6 +153,8 @@ export function trackFunnelStep(step: Exclude<FunnelStep, "signup">) {
 
 /** A brand-new account. Tags it with whether this browser practiced first. */
 export function trackFunnelSignup() {
+  // Credit the sign-up step's design the visitor tapped, if any (its own guards).
+  creditGuestPromptSignup();
   if (typeof window === "undefined" || hasFlag("signup") || isInternalBrowser(auth.currentUser?.email)) return;
   setFlag("signup");
   const firstVisit = readFirstVisit();

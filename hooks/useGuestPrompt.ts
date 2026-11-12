@@ -2,6 +2,8 @@
 
 import { useRef, useState } from "react";
 import { trackGuestPrompt } from "@/lib/analytics";
+import { useTranslation } from "@/contexts/LanguageContext";
+import { takeGuestPromptVariant, trackGuestPromptTest, type GuestPromptVariant } from "@/lib/guestPromptTest";
 
 // When the in-training sign-up prompt (components/GuestPromptStep) takes the
 // place of the next question: after a correct answer that makes two in a row,
@@ -37,6 +39,9 @@ export function useGuestPrompt(signedOut: boolean, where: string) {
   const streak = useRef(0);
   const due = useRef(false);
   const [showing, setShowing] = useState(false);
+  // English readers get the next design of the message test (lib/guestPromptTest).
+  const { language } = useTranslation();
+  const [test, setTest] = useState<{ variant: GuestPromptVariant; position: number } | null>(null);
 
   /** Call once per checked answer. */
   const record = (correct: boolean) => {
@@ -59,18 +64,22 @@ export function useGuestPrompt(signedOut: boolean, where: string) {
     streak.current = 0;
     const c = read();
     write({ ...c, lastShownAt: c.answered });
+    const next = language === "en" ? takeGuestPromptVariant() : null;
+    setTest(next);
     setShowing(true);
-    trackGuestPrompt("shown", where);
+    trackGuestPrompt("shown", where, next?.variant);
+    if (next) void trackGuestPromptTest("shown", next.variant, next.position);
     return true;
   };
 
   /** "Keep practicing". */
   const skip = () => {
     setShowing(false);
-    trackGuestPrompt("skipped", where);
+    trackGuestPrompt("skipped", where, test?.variant);
+    if (test) void trackGuestPromptTest("skipped", test.variant, test.position);
   };
 
   // Signing in from the prompt hides it; the answered question is still on
   // screen with its Next button.
-  return { showing: showing && signedOut, record, takeStep, skip };
+  return { showing: showing && signedOut, record, takeStep, skip, test };
 }

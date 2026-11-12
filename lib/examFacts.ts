@@ -892,6 +892,89 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the SIA door supervision specifications (April 2021) and an awarding body's published exam structure, checked October 2026",
     source: { name: "GOV.UK: SIA licence-linked training specifications", url: "https://www.gov.uk/guidance/read-the-specifications-for-sia-licence-linked-training" },
   },
+  ukwater: {
+    answer:
+      "The Water Regulations certificate shows a plumber knows the Water Supply (Water Fittings) Regulations 1999 in England and Wales, and the matching Scottish Byelaws 2014 and Northern Ireland 2009 Regulations: what must be notified to the water company, the five fluid categories, which backflow device or air gap suits each, and the Schedule 2 rules for pipework, cisterns, hot water, WCs and taps. Awarding bodies such as City & Guilds and BPEC run it as an open-book multiple-choice test after a short course, and it is the usual evidence for joining an approved contractors' scheme.",
+    rows: [
+      { label: "Who runs it", value: "Awarding bodies: City & Guilds (3345), BPEC, LCL Awards" },
+      { label: "Law", value: "Water Supply (Water Fittings) Regulations 1999 (England and Wales)" },
+      { label: "City & Guilds 3345", value: "50 multiple-choice questions in 105 minutes, open book" },
+      { label: "BPEC", value: "52 multiple-choice questions in 104 minutes, open book" },
+      { label: "Pass mark", value: "BPEC 42 of 52 (80%); City & Guilds does not publish one" },
+      { label: "Leads to", value: "Approved contractors' schemes such as WIAPS, APHC, CIPHE and SNIPEF" },
+    ],
+    basedOn: "the City & Guilds 3345 handbook (v1.8), BPEC's Water Regulations qualification page and SI 1999/1148, checked November 2026",
+    source: { name: "legislation.gov.uk: The Water Supply (Water Fittings) Regulations 1999", url: "https://www.legislation.gov.uk/uksi/1999/1148/contents/made" },
+  },
+  ukg3: {
+    answer:
+      "The unvented hot water (G3) certificate shows a plumber or heating engineer is competent to install unvented hot water cylinders under Part G3 of the Building Regulations. Awarding bodies such as BPEC and LCL Awards run it as a short course with a multiple-choice theory paper and a practical assessment, covering system types, inlet controls, the two independent safety devices, tundish and discharge pipe rules, temperature control, commissioning and maintenance. BPEC certificates last five years.",
+    rows: [
+      { label: "Who runs it", value: "Awarding bodies: BPEC, LCL Awards, City & Guilds and others" },
+      { label: "Law", value: "Building Regulations 2010 Part G3 and Approved Document G" },
+      { label: "Format", value: "Multiple-choice theory paper plus a practical assessment" },
+      { label: "Pass mark", value: "Not published; Tigertest uses 70% as a readiness line" },
+      { label: "Validity", value: "BPEC certificates last 5 years" },
+      { label: "Biggest areas", value: "Safety devices and discharge pipework" },
+    ],
+    basedOn: "BPEC's unvented hot water qualification page and Approved Document G (2015 edition with 2016 and 2024 amendments), checked November 2026",
+    source: { name: "GOV.UK: Approved Document G", url: "https://www.gov.uk/government/publications/sanitation-hot-water-safety-and-water-efficiency-approved-document-g" },
+  },
+  ukplumb: {
+    answer:
+      "Plumbing theory in England is assessed by multiple-choice knowledge tests. On the City & Guilds 6035-02 Level 2 Diploma in Plumbing Studies, each unit (health and safety, scientific principles, common processes, cold water, hot water, central heating, drainage, electrical principles) is an online multiple-choice test, mostly 40 questions in 75 minutes, with a pass mark of about 60%. On the Level 3 Plumbing and domestic heating technician apprenticeship (ST0303), the end-point knowledge test paper 1 is 60 multiple-choice questions in 120 minutes: 36 to pass and 50 for a distinction, followed by an option paper.",
+    rows: [
+      { label: "Who sets it", value: "City & Guilds (6035) and end-point assessment organisations (ST0303)" },
+      { label: "C&G 6035-02", value: "Online multiple choice per unit, mostly 40 questions in 75 minutes" },
+      { label: "ST0303 paper 1", value: "60 questions in 120 minutes, 36 to pass, 50 for a distinction" },
+      { label: "Pass mark", value: "About 60% (City & Guilds); 36 of 60 (ST0303)" },
+      { label: "Rules used", value: "Approved Documents G, H and L, HSE guidance (England)" },
+    ],
+    basedOn: "the City & Guilds 6035-02 handbook (v5.12, September 2026) and the ST0303 v1.2 end-point assessment plan, checked November 2026",
+    source: { name: "Skills England: Plumbing and domestic heating technician (ST0303)", url: "https://skillsengland.education.gov.uk/apprenticeship-standards/st0303-v1-2" },
+  },
+  ukrbi: {
+    answer:
+      "To work as a building inspector in England (assessing plans, inspecting building work or advising a building control body) you must be on the Building Safety Regulator's register. Class 1 is a supervised trainee; classes 2 and 3 must pass an independent competence assessment from a BSR-approved scheme, based on the Building Inspector Competence Framework, and be reassessed at least every 4 years. Class 2 covers buildings under 18 m (categories A to F); class 3 adds non-standard and higher-risk buildings (G and H); class 4 is a technical manager. Every RBI must follow the BSR code of conduct. Each scheme sets its own assessment method, so Tigertest's 70% is a readiness line, not an official pass mark.",
+    rows: [
+      { label: "Regulator", value: "Building Safety Regulator (standalone since January 2026)" },
+      { label: "Who assesses", value: "BSR-approved independent competence schemes" },
+      { label: "Classes", value: "1 trainee, 2 (A to F), 3 (G and H), 4 technical manager" },
+      { label: "Reassessment", value: "At least every 4 years" },
+      { label: "Rules", value: "Building Act 1984 Part 2A, BICoF, RBI code of conduct" },
+      { label: "Pass mark", value: "Set by each scheme; Tigertest uses 70%" },
+    ],
+    basedOn: "the GOV.UK registered building inspector guidance and the BSR codes and standards (updated 22 May 2026), checked November 2026",
+    source: { name: "GOV.UK: Registered building inspectors", url: "https://www.gov.uk/guidance/registered-building-inspectors" },
+  },
+  ukbregs: {
+    answer:
+      "There is no single official Building Regulations exam. Builders, site managers, construction students and building control trainees are expected to know the requirements of Schedule 1 to the Building Regulations 2010 and the Approved Documents that show how to meet them in England. This practice test covers Parts A to T and regulation 7 with 200 original questions in four 50-question tests, and uses 70% as a readiness line.",
+    rows: [
+      { label: "Who sets the rules", value: "MHCLG (Approved Documents approved by the Secretary of State)" },
+      { label: "Law", value: "Building Regulations 2010 (SI 2010/2214), Schedule 1" },
+      { label: "Covers", value: "England only; Wales and Scotland have their own" },
+      { label: "Pass mark", value: "No official exam; Tigertest uses 70%" },
+      { label: "Recent change", value: "Second stair for flats with a top storey of 18 m or more, from 30 September 2026" },
+      { label: "Coming", value: "Future Homes Standard (Parts L and F) from 24 March 2027" },
+    ],
+    basedOn: "the Approved Documents on GOV.UK and SI 2010/2214, checked November 2026",
+    source: { name: "GOV.UK: Approved Documents", url: "https://www.gov.uk/government/collections/approved-documents" },
+  },
+  ukgas: {
+    answer:
+      "The ACS CCN1 assessment is the core domestic gas safety assessment of the Nationally Accredited Certification Scheme. Gas engineers in Great Britain who want to join Gas Safe Register show their competence by a recognised qualification or by passing CCN1 plus the appliance assessments they need at a UKAS-accredited certification body's assessment centre. Assessments combine practical tasks and theory, and certificates are renewed every five years. Tigertest covers the knowledge side: the Gas Safety (Installation and Use) Regulations 1998, HSE L56, the unsafe situations procedure, combustion and carbon monoxide, ventilation, flues, tightness testing, meters and safety devices.",
+    rows: [
+      { label: "Scheme", value: "Nationally Accredited Certification Scheme (ACS), standards by IGEM" },
+      { label: "Assessed by", value: "UKAS-accredited certification bodies at ACS centres" },
+      { label: "Leads to", value: "A certificate Gas Safe Register accepts for registration" },
+      { label: "Format", value: "Practical and theory assessments against the CCN1 criteria" },
+      { label: "Pass mark", value: "Not published; Tigertest uses 70%" },
+      { label: "Renewal", value: "Every 5 years" },
+    ],
+    basedOn: "the IGEM ACS assessment pages, the CCN1 criteria (Issue 20.1) and HSE L56, checked November 2026",
+    source: { name: "IGEM: ACS assessment", url: "https://www.igem.org.uk/technical/standard-setting-body/assessment.html" },
+  },
   uk18ed: {
     answer:
       "The 18th Edition exam is the City & Guilds Level 3 Award in the Requirements for Electrical Installations (2382-26), on BS 7671:2018 with Amendment 4:2026, the IET Wiring Regulations. It is one online, open-book test of 60 multiple-choice questions in 2 hours, taken with a clean copy of BS 7671, and the pass mark is approximately 60%. 2382-26 replaced 2382-22 from 16 April 2026.",

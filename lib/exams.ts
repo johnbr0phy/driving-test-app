@@ -38,7 +38,7 @@ import grdrivingEl from "./examTranslations/grdriving.el.json";
 import bedrivingNl from "./examTranslations/bedriving.nl.json";
 import bedrivingFr from "./examTranslations/bedriving.fr.json";
 
-export type ExamId = "ccaf" | "phnat" | "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "bemoto" | "bevracht" | "betoelating" | "befsmavz" | "dkteori" | "dkmoto" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "grmoto" | "grcitizen" | "grinsure" | "grsecurity" | "rodrpciv" | "rocpi" | "rotaxi" | "roadmed" | "rorezid" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl" | "fortigate";
+export type ExamId = "ccaf" | "ukgas" | "ukbregs" | "ukrbi" | "ukplumb" | "ukg3" | "ukwater" | "phnat" | "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "bemoto" | "bevracht" | "betoelating" | "befsmavz" | "dkteori" | "dkmoto" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "grmoto" | "grcitizen" | "grinsure" | "grsecurity" | "rodrpciv" | "rocpi" | "rotaxi" | "roadmed" | "rorezid" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl" | "fortigate";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -3390,6 +3390,408 @@ const uk18ed: ExamConfig = {
     ],
     sourceLine: "Based on the City & Guilds 2382-26 test specification and BS 7671:2018+A4:2026. Original questions; keep your own copy of the book open, as in the real open-book exam.",
     analyticsKey: "uk18ed",
+  },
+};
+
+const ukwater: ExamConfig = {
+  id: "ukwater",
+  stateCode: "UKWATER",
+  idBase: 26700,
+  slug: "/water-regulations",
+  landingPath: "/water-regulations-practice-test",
+  name: "Water Regulations Practice Test",
+  shortName: "Water Regulations",
+  examLabel: "Water Regulations test",
+  fullName: "Water Regulations (Water Supply (Water Fittings) Regulations 1999 and Byelaws)",
+  questionIdPrefix: "UKWATER-",
+  icon: "hardhat",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // Water Regulations certificate (England and Wales: Water Supply (Water Fittings) Regulations 1999;
+  // Scotland Byelaws 2014 and NI 2009 Regulations noted where they differ), checked November 2026.
+  // City & Guilds 3345 unit 301/304: 50 open-book MCQs in 105 minutes, no pass mark published.
+  // BPEC: 52 open-book MCQs in 104 minutes, pass 42 (80%). No area weights are published, so the
+  // split is Tigertest's, along the 3345 test specification topics. Defra's new backflow
+  // specification (6 May 2026) takes effect 6 May 2027; Type AUK4 left out. All items original.
+  blueprint: {
+    ukwaterLaw: 6,
+    ukwaterFittings: 7,
+    ukwaterDesign: 8,
+    ukwaterFluid: 6,
+    ukwaterBackflow: 10,
+    ukwaterCold: 4,
+    ukwaterHot: 4,
+    ukwaterSanitary: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 26701, name: "The Regulations & Fluid Categories", categories: ["ukwaterLaw","ukwaterFluid"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 2, id: 26702, name: "Water Fittings & System Design", categories: ["ukwaterFittings","ukwaterDesign"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 3, id: 26703, name: "Cold, Hot & Sanitary Services", categories: ["ukwaterCold","ukwaterHot","ukwaterSanitary"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 4, id: 26704, name: "Backflow Prevention", categories: ["ukwaterBackflow"], size: 40, weightLabel: "10 of 50 test questions" },
+  ],
+  categoryLabels: {
+    ukwaterLaw: "The Regulations & Notification",
+    ukwaterFittings: "Water Fittings & Materials",
+    ukwaterDesign: "System Design, Testing & Flushing",
+    ukwaterFluid: "Fluid Categories & Cross Connection",
+    ukwaterBackflow: "Backflow Prevention",
+    ukwaterCold: "Cold Water Services",
+    ukwaterHot: "Hot Water Services",
+    ukwaterSanitary: "WCs, Taps, Appliances & Outside Use",
+  },
+  copy: {
+    guestPrompt: "to save your Water Regulations progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four topic sets, from notification and fluid categories to backflow prevention. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions across every topic, 80% to pass",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with The Regulations & Fluid Categories.",
+      "Master each topic, then test yourself.",
+      "Keep going. Every topic you master shows up on the tests.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. Book your Water Regulations assessment.",
+    ],
+    sourceLine: "Based on the Water Supply (Water Fittings) Regulations 1999 and the City & Guilds 3345 and BPEC assessment structures, checked November 2026. Original questions.",
+    analyticsKey: "ukwater",
+  },
+};
+
+const ukg3: ExamConfig = {
+  id: "ukg3",
+  stateCode: "UKG3",
+  idBase: 26800,
+  slug: "/unvented-hot-water",
+  landingPath: "/unvented-hot-water-g3-practice-test",
+  name: "Unvented Hot Water (G3) Practice Test",
+  shortName: "Unvented G3",
+  examLabel: "unvented hot water assessment",
+  fullName: "Unvented Hot Water Storage Systems (G3) certificate assessment",
+  questionIdPrefix: "UKG3-",
+  icon: "hardhat",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Unvented hot water storage systems (G3) certificate (BPEC, LCL Awards, City & Guilds), checked
+  // November 2026, against Building Regulations 2010 Schedule 1 G3 and Approved Document G (2015,
+  // amended 2016 and 2024; the 2024 changes touch G4 only). No awarding body publishes question
+  // counts, weights or a pass mark, so the split and the 70% line are Tigertest's. England only.
+  // All items original; no fixed manufacturer settings asked.
+  blueprint: {
+    ukg3Law: 6,
+    ukg3Systems: 5,
+    ukg3Inlet: 7,
+    ukg3Safety: 8,
+    ukg3Discharge: 8,
+    ukg3Temperature: 5,
+    ukg3Install: 4,
+    ukg3Commission: 3,
+    ukg3Service: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 26801, name: "Regulations & System Types", categories: ["ukg3Law","ukg3Systems"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 2, id: 26802, name: "Inlet Controls & Safety Devices", categories: ["ukg3Inlet","ukg3Safety"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 3, id: 26803, name: "Discharge Pipework & Temperature", categories: ["ukg3Discharge","ukg3Temperature"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 4, id: 26804, name: "Install, Commission & Maintain", categories: ["ukg3Install","ukg3Commission","ukg3Service"], size: 44, weightLabel: "11 of 50 test questions" },
+  ],
+  categoryLabels: {
+    ukg3Law: "Building Regulations & Part G3",
+    ukg3Systems: "System Types & Principles",
+    ukg3Inlet: "Inlet Controls & Expansion",
+    ukg3Safety: "Thermostats, Cut-outs & Relief Valves",
+    ukg3Discharge: "Tundish & Discharge Pipework",
+    ukg3Temperature: "Temperature Control & Legionella",
+    ukg3Install: "Installation & Controls",
+    ukg3Commission: "Commissioning & Handover",
+    ukg3Service: "Maintenance & Fault Finding",
+  },
+  copy: {
+    guestPrompt: "to save your unvented hot water progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four topic sets, from Part G3 and system types to commissioning and maintenance. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions across every topic, 70% to pass",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with Regulations & System Types.",
+      "Master each topic, then test yourself.",
+      "Keep going. Every topic you master shows up on the tests.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. Book your unvented assessment.",
+    ],
+    sourceLine: "Based on Building Regulations Part G3 and Approved Document G (England), checked November 2026. Original questions; the practical assessment is done at your training centre.",
+    analyticsKey: "ukg3",
+  },
+};
+
+const ukplumb: ExamConfig = {
+  id: "ukplumb",
+  stateCode: "UKPLUMB",
+  idBase: 26900,
+  slug: "/plumbing-theory",
+  landingPath: "/plumbing-theory-practice-test",
+  name: "Plumbing Theory Practice Test",
+  shortName: "Plumbing Theory",
+  examLabel: "plumbing theory exam",
+  fullName: "UK Level 2 and 3 plumbing and domestic heating theory (City & Guilds 6035 knowledge tests and the ST0303 apprenticeship knowledge test)",
+  questionIdPrefix: "UKPLUMB-",
+  icon: "hardhat",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 60,
+  // UK Level 2 and 3 plumbing and domestic heating theory (England), checked November 2026:
+  // City & Guilds 6035-02 handbook v5.12 (unit tests mostly 40 MCQs in 75 minutes, about 60%) and
+  // the ST0303 apprenticeship EPA plan v1.2 (knowledge paper 1: 60 MCQs in 120 minutes, 36 to pass).
+  // Split is Tigertest's, along the 6035-02 unit test sizes. Approved Documents G, H and L (2021
+  // edition in force; the 2026 L edition starts 24 March 2027 with the same figures used). All original.
+  blueprint: {
+    ukplumbSafety: 6,
+    ukplumbScience: 5,
+    ukplumbProcesses: 6,
+    ukplumbCold: 6,
+    ukplumbHot: 6,
+    ukplumbHeating: 8,
+    ukplumbDrainage: 5,
+    ukplumbRainwater: 2,
+    ukplumbElectrical: 3,
+    ukplumbEnviro: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 26901, name: "Health, Safety & Science", categories: ["ukplumbSafety","ukplumbScience"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 2, id: 26902, name: "Plumbing Processes & Electrics", categories: ["ukplumbProcesses","ukplumbElectrical"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 3, id: 26903, name: "Cold & Hot Water Systems", categories: ["ukplumbCold","ukplumbHot"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 4, id: 26904, name: "Central Heating & Low Carbon", categories: ["ukplumbHeating","ukplumbEnviro"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 5, id: 26905, name: "Sanitation, Drainage & Rainwater", categories: ["ukplumbDrainage","ukplumbRainwater"], size: 28, weightLabel: "7 of 50 test questions" },
+  ],
+  categoryLabels: {
+    ukplumbSafety: "Health & Safety",
+    ukplumbScience: "Scientific Principles",
+    ukplumbProcesses: "Common Plumbing Processes",
+    ukplumbCold: "Cold Water Systems",
+    ukplumbHot: "Domestic Hot Water Systems",
+    ukplumbHeating: "Central Heating Systems",
+    ukplumbDrainage: "Sanitation & Drainage",
+    ukplumbRainwater: "Rainwater Systems",
+    ukplumbElectrical: "Electrical Principles",
+    ukplumbEnviro: "Environmental Technologies",
+  },
+  copy: {
+    guestPrompt: "to save your plumbing theory progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five topic sets, from health and safety to sanitation and drainage. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions across every topic, 60% to pass",
+    heroSubs: [
+      "Five training sets, four practice tests. Start with Health, Safety & Science.",
+      "Master each topic, then test yourself.",
+      "Keep going. Every topic you master shows up on the tests.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for your unit tests.",
+    ],
+    sourceLine: "Based on the City & Guilds 6035 units and the ST0303 apprenticeship knowledge test, with Approved Documents G, H and L (England), checked November 2026. Original questions.",
+    analyticsKey: "ukplumb",
+  },
+};
+
+const ukrbi: ExamConfig = {
+  id: "ukrbi",
+  stateCode: "UKRBI",
+  idBase: 27100,
+  slug: "/building-inspector",
+  landingPath: "/registered-building-inspector-practice-test",
+  name: "Registered Building Inspector Practice Test",
+  shortName: "Building Inspector",
+  examLabel: "RBI competence assessment",
+  fullName: "Registered Building Inspector (RBI) competence assessment, England (Building Safety Act 2022, Building Safety Regulator)",
+  questionIdPrefix: "UKRBI-",
+  icon: "hardhat",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Registered Building Inspector competence assessment (England), checked November 2026: Building
+  // Act 1984 Part 2A, the Building Inspector Competence Framework, the RBI code of conduct and the
+  // operational standards rules (reworded 22 May 2026 to name BSR, a standalone body since 27
+  // January 2026). BSR-approved schemes set their own assessment methods; no weights or pass mark are
+  // published, so the split and the 70% line are Tigertest's. Wales not covered. All items original.
+  blueprint: {
+    ukrbiRegistration: 6,
+    ukrbiConduct: 7,
+    ukrbiProcedure: 7,
+    ukrbiDutyholders: 6,
+    ukrbiHrb: 7,
+    ukrbiEnforcement: 6,
+    ukrbiOperational: 7,
+    ukrbiLawSafety: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 27101, name: "Registration & Code of Conduct", categories: ["ukrbiRegistration","ukrbiConduct"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 2, id: 27102, name: "Building Control Functions", categories: ["ukrbiProcedure","ukrbiDutyholders"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 3, id: 27103, name: "Inspections & Enforcement", categories: ["ukrbiEnforcement","ukrbiOperational"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 4, id: 27104, name: "Higher-Risk Buildings & Safety", categories: ["ukrbiHrb","ukrbiLawSafety"], size: 44, weightLabel: "11 of 50 test questions" },
+  ],
+  categoryLabels: {
+    ukrbiRegistration: "Registration, Classes & Restricted Activities",
+    ukrbiConduct: "Code of Conduct",
+    ukrbiProcedure: "Building Control Procedure",
+    ukrbiDutyholders: "Dutyholders & Competence",
+    ukrbiHrb: "Higher-Risk Buildings",
+    ukrbiEnforcement: "Enforcement & Dangerous Structures",
+    ukrbiOperational: "Operational Standards & Inspection",
+    ukrbiLawSafety: "Wider Law, Guidance & Safety",
+  },
+  copy: {
+    guestPrompt: "to save your building inspector progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four topic sets, from registration and the code of conduct to higher-risk buildings. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions across every topic, 70% readiness line",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with Registration & Code of Conduct.",
+      "Master each topic, then test yourself.",
+      "Keep going. Every topic you master shows up on the tests.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. Book your competence assessment.",
+    ],
+    sourceLine: "Based on the Building Safety Act 2022, the Building Inspector Competence Framework and the RBI code of conduct (England), checked November 2026. Original questions; schemes set their own assessments.",
+    analyticsKey: "ukrbi",
+  },
+};
+
+const ukbregs: ExamConfig = {
+  id: "ukbregs",
+  stateCode: "UKBREGS",
+  idBase: 27200,
+  slug: "/building-regulations",
+  landingPath: "/building-regulations-practice-test",
+  name: "Building Regulations Practice Test",
+  shortName: "Building Regs",
+  examLabel: "Building Regulations test",
+  fullName: "Building Regulations 2010 (England) and Approved Documents A to T knowledge test",
+  questionIdPrefix: "UKBREGS-",
+  icon: "hardhat",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Building Regulations knowledge test (England): Building Regulations 2010 Schedule 1 and the
+  // Approved Documents A to T, checked November 2026, including the AD B amendments in force 30
+  // September 2026 (second stair at a top storey of 18 m or more, evacuation lifts). There is no
+  // single official exam, so the split is Tigertest's (weighted to fire, structure and access) and
+  // 70% is a readiness line. Parts L and F to recheck at 24 March 2027 (Future Homes Standard).
+  blueprint: {
+    bregsGeneral: 2,
+    bregsStructure: 5,
+    bregsFire: 9,
+    bregsSite: 3,
+    bregsSound: 3,
+    bregsVentilation: 4,
+    bregsWater: 3,
+    bregsDrainage: 4,
+    bregsCombustion: 4,
+    bregsSafety: 6,
+    bregsEnergy: 4,
+    bregsServices: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 27201, name: "Structure, Site & Moisture", categories: ["bregsGeneral","bregsStructure","bregsSite"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 2, id: 27202, name: "Fire Safety", categories: ["bregsFire"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 3, id: 27203, name: "Sound, Ventilation & Energy", categories: ["bregsSound","bregsVentilation","bregsEnergy"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 4, id: 27204, name: "Water, Drainage & Combustion", categories: ["bregsWater","bregsDrainage","bregsCombustion"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 5, id: 27205, name: "Safety, Access & Services", categories: ["bregsSafety","bregsServices"], size: 36, weightLabel: "9 of 50 test questions" },
+  ],
+  categoryLabels: {
+    bregsGeneral: "Regulations, Materials & Workmanship",
+    bregsStructure: "Structure (Part A)",
+    bregsFire: "Fire Safety (Part B)",
+    bregsSite: "Site, Moisture & Toxic Substances (C, D)",
+    bregsSound: "Resistance to Sound (Part E)",
+    bregsVentilation: "Ventilation (Part F)",
+    bregsWater: "Sanitation & Water Efficiency (Part G)",
+    bregsDrainage: "Drainage & Waste Disposal (Part H)",
+    bregsCombustion: "Combustion Appliances (Part J)",
+    bregsSafety: "Stairs, Access, Overheating & Toilets (K, M, O, T)",
+    bregsEnergy: "Conservation of Fuel & Power (Part L)",
+    bregsServices: "Electrical, Security, Broadband & EV (P, Q, R, S)",
+  },
+  copy: {
+    guestPrompt: "to save your Building Regulations progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five topic sets across the Approved Documents, from structure and fire to services. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions across Parts A to T, 70% readiness line",
+    heroSubs: [
+      "Five training sets, four practice tests. Start with Structure, Site & Moisture.",
+      "Master each topic, then test yourself.",
+      "Keep going. Every topic you master shows up on the tests.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You know your Approved Documents.",
+    ],
+    sourceLine: "Based on the Building Regulations 2010 and the Approved Documents for England, checked November 2026. Original questions; there is no single official exam.",
+    analyticsKey: "ukbregs",
+  },
+};
+
+const ukgas: ExamConfig = {
+  id: "ukgas",
+  stateCode: "UKGAS",
+  idBase: 27000,
+  slug: "/gas-safe-acs",
+  landingPath: "/gas-safe-acs-ccn1-practice-test",
+  name: "Gas Safe ACS Practice Test",
+  shortName: "Gas Safe ACS",
+  examLabel: "ACS CCN1 assessment",
+  fullName: "ACS CCN1 core domestic gas safety assessment (Nationally Accredited Certification Scheme)",
+  questionIdPrefix: "UKGAS-",
+  icon: "hardhat",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // ACS CCN1 core domestic gas safety assessment (Great Britain), checked November 2026: GSIUR 1998
+  // as amended, HSE L56 (5th edition), the CCN1 safety assessment criteria (Issue 20.1, IGEM),
+  // IGEM/G/11 Edition 2 with the 2022 and 2024 amendments, and Approved Document J (England).
+  // No question count, weights or pass mark are published, so the split over the CCN1 sections and
+  // the 70% line are Tigertest's. Knowledge only; the practical assessment is not modelled.
+  blueprint: {
+    ukgasLaw: 6,
+    ukgasEmergency: 4,
+    ukgasCombustion: 4,
+    ukgasCo: 4,
+    ukgasVent: 4,
+    ukgasTightness: 5,
+    ukgasMeters: 4,
+    ukgasUnsafe: 5,
+    ukgasDevices: 4,
+    ukgasFlues: 5,
+    ukgasAppliances: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 27001, name: "Legislation & Emergency Actions", categories: ["ukgasLaw","ukgasEmergency"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 2, id: 27002, name: "Combustion, CO & Ventilation", categories: ["ukgasCombustion","ukgasCo","ukgasVent"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 3, id: 27003, name: "Chimneys & Appliances", categories: ["ukgasFlues","ukgasAppliances"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 4, id: 27004, name: "Tightness Testing & Meters", categories: ["ukgasTightness","ukgasMeters"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 5, id: 27005, name: "Unsafe Situations & Safety Devices", categories: ["ukgasUnsafe","ukgasDevices"], size: 36, weightLabel: "9 of 50 test questions" },
+  ],
+  categoryLabels: {
+    ukgasLaw: "Gas Safety Legislation",
+    ukgasEmergency: "Gas Emergency Actions",
+    ukgasCombustion: "Combustion & Gas Properties",
+    ukgasCo: "Carbon Monoxide",
+    ukgasVent: "Ventilation",
+    ukgasTightness: "Tightness Testing & Purging",
+    ukgasMeters: "Meters, Regulators & ECVs",
+    ukgasUnsafe: "Unsafe Situations",
+    ukgasDevices: "Gas Safety Devices & Controls",
+    ukgasFlues: "Chimneys & Flues",
+    ukgasAppliances: "Appliance Installation",
+  },
+  copy: {
+    guestPrompt: "to save your Gas Safe ACS progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five topic sets, from the law and emergency actions to unsafe situations. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions across every CCN1 topic, 70% readiness line",
+    heroSubs: [
+      "Five training sets, four practice tests. Start with Legislation & Emergency Actions.",
+      "Master each topic, then test yourself.",
+      "Keep going. Every topic you master shows up on the tests.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. Book your ACS assessment.",
+    ],
+    sourceLine: "Based on the Gas Safety (Installation and Use) Regulations 1998, HSE L56 and the CCN1 criteria, checked November 2026. Original questions; the practical assessment is done at the centre.",
+    analyticsKey: "ukgas",
   },
 };
 
@@ -18349,7 +18751,7 @@ const sgvl: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, nhie, cna, ptcb, phleb, ccma, cma, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, ccaf, sfadmin, phr, cisa, fortigate, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, bemoto, bevracht, dkteori, dkmoto, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, grmoto, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, betoelating, befsmavz, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnat, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, grcitizen, grinsure, grsecurity, semedb, dkindfoed, dkmedborger, gulfrn, inrto, htl, cst, crcst];
+export const EXAMS: ExamConfig[] = [cdl, cdlx, moto, civics, part107, ham, epa608, jelec, nhie, cna, ptcb, phleb, ccma, cma, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, ccaf, sfadmin, phr, cisa, fortigate, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, ukgas, ukbregs, ukrbi, ukplumb, ukg3, ukwater, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, bemoto, bevracht, dkteori, dkmoto, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, grmoto, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, betoelating, befsmavz, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnat, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, grcitizen, grinsure, grsecurity, semedb, dkindfoed, dkmedborger, gulfrn, inrto, htl, cst, crcst];
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
 export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA, realestatePA, realestateIL, realestateOH, realestateGA, realestateNC, realestateMI, realestateVA, realestateWA, realestateAZ, realestateTN, realestateLA, insuranceNY, insurancePA, insuranceIL, insuranceOH, insuranceGA, insuranceNC, insuranceMI, insuranceNJ, insuranceVA, insuranceWA, pncNY, pncPA, pncIL, pncOH, pncGA, pncNC, pncMI, pncNJ, pncVA, pncWA];

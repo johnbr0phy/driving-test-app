@@ -980,6 +980,90 @@
     --brand-gradient-to: 38 80% 95%;
   }
 
+  /* Unvented G3 theme: brass olive */
+  [data-theme="ukg3"] {
+    --brand: 70 60% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 70 60% 95%;
+    --brand-hover: 70 60% 26%;
+    --brand-dark: 70 60% 23%;
+    --brand-darker: 70 60% 17%;
+    --brand-muted: 70 45% 70%;
+    --brand-border: 70 45% 76%;
+    --brand-border-light: 70 40% 88%;
+    --brand-gradient-to: 82 60% 95%;
+  }
+
+  /* Registered Building Inspector theme: slate plum */
+  [data-theme="ukrbi"] {
+    --brand: 310 40% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 310 40% 95%;
+    --brand-hover: 310 40% 26%;
+    --brand-dark: 310 40% 23%;
+    --brand-darker: 310 40% 17%;
+    --brand-muted: 310 40% 70%;
+    --brand-border: 310 40% 76%;
+    --brand-border-light: 310 40% 88%;
+    --brand-gradient-to: 322 40% 95%;
+  }
+
+  /* Building Regulations theme: slate */
+  [data-theme="ukbregs"] {
+    --brand: 260 20% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 260 20% 95%;
+    --brand-hover: 260 20% 26%;
+    --brand-dark: 260 20% 23%;
+    --brand-darker: 260 20% 17%;
+    --brand-muted: 260 20% 70%;
+    --brand-border: 260 20% 76%;
+    --brand-border-light: 260 20% 88%;
+    --brand-gradient-to: 272 20% 95%;
+  }
+
+  /* Water Regulations theme: river teal */
+  [data-theme="ukwater"] {
+    --brand: 155 40% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 155 40% 95%;
+    --brand-hover: 155 40% 18%;
+    --brand-dark: 155 40% 15%;
+    --brand-darker: 155 40% 9%;
+    --brand-muted: 155 40% 70%;
+    --brand-border: 155 40% 76%;
+    --brand-border-light: 155 40% 88%;
+    --brand-gradient-to: 167 40% 95%;
+  }
+
+  /* Plumbing theory theme: copper green */
+  [data-theme="ukplumb"] {
+    --brand: 125 40% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 125 40% 95%;
+    --brand-hover: 125 40% 18%;
+    --brand-dark: 125 40% 15%;
+    --brand-darker: 125 40% 9%;
+    --brand-muted: 125 40% 70%;
+    --brand-border: 125 40% 76%;
+    --brand-border-light: 125 40% 88%;
+    --brand-gradient-to: 137 40% 95%;
+  }
+
+  /* Gas Safe ACS theme: deep flame violet */
+  [data-theme="ukgas"] {
+    --brand: 285 70% 26%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 285 70% 95%;
+    --brand-hover: 285 70% 22%;
+    --brand-dark: 285 70% 19%;
+    --brand-darker: 285 70% 13%;
+    --brand-muted: 285 45% 70%;
+    --brand-border: 285 45% 76%;
+    --brand-border-light: 285 40% 88%;
+    --brand-gradient-to: 297 70% 95%;
+  }
+
   /* OSSLT theme: indigo (v2 exam; matches lib/v2/exams/osslt.ts theme) */
   [data-theme="osslt"] {
     --brand: 232 52% 42%;
@@ -5502,6 +5586,79 @@
     --brand-muted: 50 45% 45%;
     --brand-dark: 50 80% 65%;
     --brand-darker: 50 70% 78%;
+  }
+
+
+  .dark [data-theme="ukwater"] {
+    --brand: 155 40% 36.5%;
+    --brand-hover: 155 40% 28.5%;
+    --brand-light: 155 40% 13%;
+    --brand-gradient-to: 167 40% 11%;
+    --brand-border-light: 155 35% 24%;
+    --brand-border: 155 40% 34%;
+    --brand-muted: 155 40% 45%;
+    --brand-dark: 155 40% 65%;
+    --brand-darker: 155 40% 78%;
+  }
+  .dark [data-theme="ukplumb"] {
+    --brand: 125 40% 37%;
+    --brand-hover: 125 40% 29%;
+    --brand-light: 125 40% 13%;
+    --brand-gradient-to: 137 40% 11%;
+    --brand-border-light: 125 35% 24%;
+    --brand-border: 125 40% 34%;
+    --brand-muted: 125 40% 45%;
+    --brand-dark: 125 40% 65%;
+    --brand-darker: 125 40% 78%;
+  }
+
+  .dark [data-theme="ukgas"] {
+    --brand: 285 70% 50%;
+    --brand-hover: 285 70% 42%;
+    --brand-light: 285 45% 13%;
+    --brand-gradient-to: 297 40% 11%;
+    --brand-border-light: 285 35% 24%;
+    --brand-border: 285 40% 34%;
+    --brand-muted: 285 45% 45%;
+    --brand-dark: 285 70% 65%;
+    --brand-darker: 285 70% 78%;
+  }
+
+  .dark [data-theme="ukg3"] {
+    --brand: 70 60% 30.4%;
+    --brand-hover: 70 60% 26%;
+    --brand-light: 70 45% 13%;
+    --brand-gradient-to: 82 40% 11%;
+    --brand-border-light: 70 35% 24%;
+    --brand-border: 70 40% 34%;
+    --brand-muted: 70 45% 45%;
+    --brand-dark: 70 60% 65%;
+    --brand-darker: 70 60% 78%;
+  }
+
+
+  .dark [data-theme="ukrbi"] {
+    --brand: 310 40% 50%;
+    --brand-hover: 310 40% 42%;
+    --brand-light: 310 40% 13%;
+    --brand-gradient-to: 322 40% 11%;
+    --brand-border-light: 310 35% 24%;
+    --brand-border: 310 40% 34%;
+    --brand-muted: 310 40% 45%;
+    --brand-dark: 310 40% 65%;
+    --brand-darker: 310 40% 78%;
+  }
+
+  .dark [data-theme="ukbregs"] {
+    --brand: 260 20% 50%;
+    --brand-hover: 260 20% 42%;
+    --brand-light: 260 20% 13%;
+    --brand-gradient-to: 272 20% 11%;
+    --brand-border-light: 260 20% 24%;
+    --brand-border: 260 20% 34%;
+    --brand-muted: 260 20% 45%;
+    --brand-dark: 260 20% 65%;
+    --brand-darker: 260 20% 78%;
   }
 
   .dark [data-theme="osslt"] {

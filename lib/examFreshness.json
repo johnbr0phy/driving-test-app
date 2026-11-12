@@ -348,6 +348,30 @@
       "what": "The Wegcode (Royal Decree of 1 December 1975) ceases on 1 June 2027 (art. 87), replaced by federal and regional codes.",
       "action": "Re-check the lane position, filtering, speed and sign items against the new codes.",
       "source": "https://www.wegcode.be/"
+    },
+    {
+      "exam": "ukbregs",
+      "date": "2027-03-24",
+      "kind": "law",
+      "what": "The 2026 editions of Approved Documents L and F (Future Homes Standard) take effect on 24 March 2027, with a transitional period to 24 March 2028.",
+      "action": "Re-check every Part L and Part F item against the 2026 editions and update the source line.",
+      "source": "https://www.gov.uk/government/publications/conservation-of-fuel-and-power-approved-document-l"
+    },
+    {
+      "exam": "ukplumb",
+      "date": "2027-03-24",
+      "kind": "law",
+      "what": "The 2026 edition of Approved Document L takes effect on 24 March 2027.",
+      "action": "Re-check the heating controls, insulation and flushing items against the 2026 edition.",
+      "source": "https://www.gov.uk/government/publications/conservation-of-fuel-and-power-approved-document-l"
+    },
+    {
+      "exam": "ukwater",
+      "date": "2027-05-06",
+      "kind": "law",
+      "what": "Defra's Specification on the Prevention of Backflow (6 May 2026) takes effect on 6 May 2027, adding the Type AUK4 air gap.",
+      "action": "Re-check the backflow device items and decide whether to add Type AUK4.",
+      "source": "https://www.legislation.gov.uk/uksi/1999/1148/contents/made"
     }
   ]
 }

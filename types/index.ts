@@ -1,5 +1,5 @@
 // Question types
-export type QuestionType = "CCAF" | "PHNAT" | "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "EPA608" | "CNA" | "PTCB" | "PHLEB" | "CCMA" | "CET" | "DANB" | "EMT" | "FOODMGR" | "REALESTATE" | "LIFEHEALTH" | "NOTARY" | "TEAS" | "AWSCCP" | "APLUS" | "FOODHANDLER" | "BOATING" | "HUNTER" | "SECPLUS" | "HESI" | "ASVAB" | "CPR" | "OSHA" | "FORKLIFT" | "ALCOHOL" | "ACCUPLACER" | "SECGUARD" | "LIFEGUARD" | "COSMO" | "PNC" | "VTNE" | "CAQC" | "UKLGV" | "AUQLD" | "AUSA" | "AUVIC" | "UKADI" | "UKCAR" | "UKPCV" | "CABC" | "AUNSW" | "UKMOTO" | "CAAB" | "CAON" | "CAMB" | "AUWA" | "UKSIA" | "UK18ED" | "CSCS" | "UKFOOD" | "UKAPLH" | "UKFAW" | "UKCARE" | "CAPAL" | "CAELEC" | "CAPSW" | "CASFA" | "CAWHMIS" | "CAGUARD" | "CAAUTO" | "CAPLUMB" | "CACARP" | "CAWELD" | "AUWHITE" | "AURSA" | "AURCG" | "AUFSS" | "AUFIRSTAID" | "AUFORKLIFT" | "AUWAH" | "UKLITU" | "CACIT" | "AUCIT" | "GULFRN" | "INRTO" | "NASM" | "RBT" | "CPC" | "CCA" | "CPAFAR" | "CPAREG" | "NMLS" | "SERIES65" | "SERIES63" | "ASWB" | "ARRT" | "NCE" | "TEXESPPR" | "PRAXISPLT" | "CMA" | "NHIE" | "TXADJ" | "SFADMIN" | "CFAL1" | "CPAAUD" | "ACCAFA" | "AATL2" | "NBDHE" | "NPTEPTA" | "ASWBCLIN" | "PHR" | "CISA" | "CSSGB" | "CCS" | "RDEXAM" | "PX5001" | "FLADJ" | "LLQP" | "CEMAP" | "SGFTT" | "SGRES" | "HKIIQE1" | "HKLE1" | "NZFIREARMS" | "NZLCQ" | "AESIRA" | "MYPCE" | "KENCK" | "IEDTTCV" | "JELEC" | "BARBER" | "FFI" | "POLICE" | "SIE" | "SERIES7" | "PCOC" | "CASK" | "CANS" | "UKSERU" | "NZROAD" | "IEDTT" | "PHLTO" | "ZAK53" | "SGBTT" | "AERTA" | "NGFRSC" | "KENTSA" | "MYKPP" | "HKDRIVE" | "PKDRIVE" | "ESDGT" | "PTIMT" | "PTMOTO" | "PTCAM" | "PTTVDE" | "PTVIGIL" | "BEDRIVE" | "BEMOTO" | "BEVRACHT" | "BETOEL" | "BEFSMA" | "DKTEORI" | "DKMOTO" | "DKINDFOED" | "DKMEDB" | "DKJAGT" | "SETRAFIK" | "SEMOTO" | "SEJAKT" | "SEMEDB" | "FITHEORY" | "FIMOTO" | "FITRUCK" | "FIHYGIENE" | "FIHUNT" | "GRDRIVE" | "GRMOTO" | "GRCITIZEN" | "GRINSURE" | "GRSECURITY" | "RODRPCIV" | "ROCPI" | "ROTAXI" | "ROADMED" | "ROREZID" | "HUKRESZ" | "HUKRMOTO" | "HUGKI" | "HUELSOSEG" | "HUBIZT" | "MTTHEORY" | "MTMOTO" | "MTCPC" | "MTTAXI" | "MTGUARD" | "DETHEORIE" | "DEMOTORRAD" | "DEAEVO" | "DE34A" | "DEHEILPR" | "ESCAPCOND" | "ESPOLICIA" | "ESGUARDIA" | "ESVIGIL" | "PHLET" | "PHNLE" | "PHMEDTECH" | "PHPHARM" | "PHMIDWIFE" | "PHPSYCHOM" | "PHNAPOLCOM" | "AFPSAT" | "PHCLE" | "PHINS" | "PHREB" | "NGPOLICE" | "NGCDCFIB" | "NGARMY" | "NGCUSTOMS" | "TRCNPQE" | "HTL" | "CST" | "CRCST" | "ZAK53C3" | "PKPPSC" | "PKPUNJPOL" | "PKARMY" | "PKPAF" | "PKNLE" | "PKPNMC" | "ZAK53C1" | "ZARE5" | "ZASAPS" | "ZAPSIRA" | "IESAFEPASS" | "IESPSV" | "IEQFA" | "IEPSA" | "NZMOTO" | "NZHEAVY" | "NZSFE" | "SGRTT" | "SGM5" | "SGVL" | "FGT";
+export type QuestionType = "CCAF" | "UKGAS" | "UKBREGS" | "UKRBI" | "UKPLUMB" | "UKG3" | "UKWATER" | "PHNAT" | "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "EPA608" | "CNA" | "PTCB" | "PHLEB" | "CCMA" | "CET" | "DANB" | "EMT" | "FOODMGR" | "REALESTATE" | "LIFEHEALTH" | "NOTARY" | "TEAS" | "AWSCCP" | "APLUS" | "FOODHANDLER" | "BOATING" | "HUNTER" | "SECPLUS" | "HESI" | "ASVAB" | "CPR" | "OSHA" | "FORKLIFT" | "ALCOHOL" | "ACCUPLACER" | "SECGUARD" | "LIFEGUARD" | "COSMO" | "PNC" | "VTNE" | "CAQC" | "UKLGV" | "AUQLD" | "AUSA" | "AUVIC" | "UKADI" | "UKCAR" | "UKPCV" | "CABC" | "AUNSW" | "UKMOTO" | "CAAB" | "CAON" | "CAMB" | "AUWA" | "UKSIA" | "UK18ED" | "CSCS" | "UKFOOD" | "UKAPLH" | "UKFAW" | "UKCARE" | "CAPAL" | "CAELEC" | "CAPSW" | "CASFA" | "CAWHMIS" | "CAGUARD" | "CAAUTO" | "CAPLUMB" | "CACARP" | "CAWELD" | "AUWHITE" | "AURSA" | "AURCG" | "AUFSS" | "AUFIRSTAID" | "AUFORKLIFT" | "AUWAH" | "UKLITU" | "CACIT" | "AUCIT" | "GULFRN" | "INRTO" | "NASM" | "RBT" | "CPC" | "CCA" | "CPAFAR" | "CPAREG" | "NMLS" | "SERIES65" | "SERIES63" | "ASWB" | "ARRT" | "NCE" | "TEXESPPR" | "PRAXISPLT" | "CMA" | "NHIE" | "TXADJ" | "SFADMIN" | "CFAL1" | "CPAAUD" | "ACCAFA" | "AATL2" | "NBDHE" | "NPTEPTA" | "ASWBCLIN" | "PHR" | "CISA" | "CSSGB" | "CCS" | "RDEXAM" | "PX5001" | "FLADJ" | "LLQP" | "CEMAP" | "SGFTT" | "SGRES" | "HKIIQE1" | "HKLE1" | "NZFIREARMS" | "NZLCQ" | "AESIRA" | "MYPCE" | "KENCK" | "IEDTTCV" | "JELEC" | "BARBER" | "FFI" | "POLICE" | "SIE" | "SERIES7" | "PCOC" | "CASK" | "CANS" | "UKSERU" | "NZROAD" | "IEDTT" | "PHLTO" | "ZAK53" | "SGBTT" | "AERTA" | "NGFRSC" | "KENTSA" | "MYKPP" | "HKDRIVE" | "PKDRIVE" | "ESDGT" | "PTIMT" | "PTMOTO" | "PTCAM" | "PTTVDE" | "PTVIGIL" | "BEDRIVE" | "BEMOTO" | "BEVRACHT" | "BETOEL" | "BEFSMA" | "DKTEORI" | "DKMOTO" | "DKINDFOED" | "DKMEDB" | "DKJAGT" | "SETRAFIK" | "SEMOTO" | "SEJAKT" | "SEMEDB" | "FITHEORY" | "FIMOTO" | "FITRUCK" | "FIHYGIENE" | "FIHUNT" | "GRDRIVE" | "GRMOTO" | "GRCITIZEN" | "GRINSURE" | "GRSECURITY" | "RODRPCIV" | "ROCPI" | "ROTAXI" | "ROADMED" | "ROREZID" | "HUKRESZ" | "HUKRMOTO" | "HUGKI" | "HUELSOSEG" | "HUBIZT" | "MTTHEORY" | "MTMOTO" | "MTCPC" | "MTTAXI" | "MTGUARD" | "DETHEORIE" | "DEMOTORRAD" | "DEAEVO" | "DE34A" | "DEHEILPR" | "ESCAPCOND" | "ESPOLICIA" | "ESGUARDIA" | "ESVIGIL" | "PHLET" | "PHNLE" | "PHMEDTECH" | "PHPHARM" | "PHMIDWIFE" | "PHPSYCHOM" | "PHNAPOLCOM" | "AFPSAT" | "PHCLE" | "PHINS" | "PHREB" | "NGPOLICE" | "NGCDCFIB" | "NGARMY" | "NGCUSTOMS" | "TRCNPQE" | "HTL" | "CST" | "CRCST" | "ZAK53C3" | "PKPPSC" | "PKPUNJPOL" | "PKARMY" | "PKPAF" | "PKNLE" | "PKPNMC" | "ZAK53C1" | "ZARE5" | "ZASAPS" | "ZAPSIRA" | "IESAFEPASS" | "IESPSV" | "IEQFA" | "IEPSA" | "NZMOTO" | "NZHEAVY" | "NZSFE" | "SGRTT" | "SGM5" | "SGVL" | "FGT";
 
 // Test mode
 export type TestMode = "dmv" | "cdl" | "htl";
@@ -477,6 +477,70 @@ export type QuestionCategory =
   | "uk18edInspection"
   | "uk18edSpecial"
   | "uk18edAppendices"
+  // Gas Safe ACS (ukgas)
+  | "ukgasLaw"
+  | "ukgasEmergency"
+  | "ukgasCombustion"
+  | "ukgasCo"
+  | "ukgasVent"
+  | "ukgasTightness"
+  | "ukgasMeters"
+  | "ukgasUnsafe"
+  | "ukgasDevices"
+  | "ukgasFlues"
+  | "ukgasAppliances"
+  // Building Regs (ukbregs)
+  | "bregsGeneral"
+  | "bregsStructure"
+  | "bregsFire"
+  | "bregsSite"
+  | "bregsSound"
+  | "bregsVentilation"
+  | "bregsWater"
+  | "bregsDrainage"
+  | "bregsCombustion"
+  | "bregsSafety"
+  | "bregsEnergy"
+  | "bregsServices"
+  // Building Inspector (ukrbi)
+  | "ukrbiRegistration"
+  | "ukrbiConduct"
+  | "ukrbiProcedure"
+  | "ukrbiDutyholders"
+  | "ukrbiHrb"
+  | "ukrbiEnforcement"
+  | "ukrbiOperational"
+  | "ukrbiLawSafety"
+  // Plumbing Theory (ukplumb)
+  | "ukplumbSafety"
+  | "ukplumbScience"
+  | "ukplumbProcesses"
+  | "ukplumbCold"
+  | "ukplumbHot"
+  | "ukplumbHeating"
+  | "ukplumbDrainage"
+  | "ukplumbRainwater"
+  | "ukplumbElectrical"
+  | "ukplumbEnviro"
+  // Unvented G3 (ukg3)
+  | "ukg3Law"
+  | "ukg3Systems"
+  | "ukg3Inlet"
+  | "ukg3Safety"
+  | "ukg3Discharge"
+  | "ukg3Temperature"
+  | "ukg3Install"
+  | "ukg3Commission"
+  | "ukg3Service"
+  // Water Regulations (ukwater)
+  | "ukwaterLaw"
+  | "ukwaterFittings"
+  | "ukwaterDesign"
+  | "ukwaterFluid"
+  | "ukwaterBackflow"
+  | "ukwaterCold"
+  | "ukwaterHot"
+  | "ukwaterSanitary"
 
   // CITB HS&E test for Operatives (CSCS)
   | "cscsLegal"

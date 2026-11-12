@@ -55,6 +55,12 @@ const completedSets = new Set<string>(TIGER_EXAM_IDS);
  */
 const BORROWED_SETS: Record<string, string> = {
   dmv: "driving",
+  ukwater: "caplumb",
+  ukg3: "caplumb",
+  ukplumb: "caplumb",
+  ukrbi: "nhie",
+  ukbregs: "nhie",
+  ukgas: "caplumb",
   ukcar: "driving", ukadi: "driving", ukmoto: "moto", uklgv: "cdl", ukpcv: "cdl",
   caon: "driving", caqc: "driving", cabc: "driving", caab: "driving", camb: "driving",
   aunsw: "driving", auvic: "driving", auqld: "driving", auwa: "driving", ausa: "driving", inrto: "driving",

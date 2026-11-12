@@ -1,0 +1,137 @@
+{
+  "blueprintComment": [
+    "Unvented hot water storage systems (G3) certificate (BPEC, LCL Awards, City & Guilds), checked",
+    "November 2026, against Building Regulations 2010 Schedule 1 G3 and Approved Document G (2015,",
+    "amended 2016 and 2024; the 2024 changes touch G4 only). No awarding body publishes question",
+    "counts, weights or a pass mark, so the split and the 70% line are Tigertest's. England only.",
+    "All items original; no fixed manufacturer settings asked."
+  ],
+  "copy": {
+    "guestPrompt": "to save your unvented hot water progress and track every question you miss",
+    "trainingSub": "Four topic sets, from Part G3 and system types to commissioning and maintenance. Missed questions come back until you master them.",
+    "testsHeading": "Practice tests · 50 questions across every topic, 70% to pass",
+    "heroSubs": [
+      "Four training sets, four practice tests. Start with Regulations & System Types.",
+      "Master each topic, then test yourself.",
+      "Keep going. Every topic you master shows up on the tests.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. Book your unvented assessment."
+    ],
+    "sourceLine": "Based on Building Regulations Part G3 and Approved Document G (England), checked November 2026. Original questions; the practical assessment is done at your training centre."
+  },
+  "themeComment": "Unvented G3 theme: brass olive",
+  "blurb": "Practice for the unvented hot water (G3) certificate: safety devices, tundish and D2 sizing, inlet controls, temperatures and commissioning, from Approved Document G.",
+  "org": "BPEC, LCL Awards · Unvented hot water (Part G3)",
+  "aliases": "unvented g3 unvented hot water unvented cylinder g3 certificate bpec unvented lcl unvented hot water storage unvented course tundish d2 part g3 approved document g plumbing",
+  "related": [
+    "ukwater",
+    "ukplumb",
+    "ukgas"
+  ],
+  "shareTitle": "Unvented Hot Water (G3) Practice Test",
+  "shareDesc": "Practise safety devices, tundish and discharge pipe sizing, inlet controls and commissioning for the G3 certificate.",
+  "teaches": "an unvented hot water (G3) course",
+  "examFacts": {
+    "answer": "The unvented hot water (G3) certificate shows a plumber or heating engineer is competent to install unvented hot water cylinders under Part G3 of the Building Regulations. Awarding bodies such as BPEC and LCL Awards run it as a short course with a multiple-choice theory paper and a practical assessment, covering system types, inlet controls, the two independent safety devices, tundish and discharge pipe rules, temperature control, commissioning and maintenance. BPEC certificates last five years.",
+    "rows": [
+      [
+        "Who runs it",
+        "Awarding bodies: BPEC, LCL Awards, City & Guilds and others"
+      ],
+      [
+        "Law",
+        "Building Regulations 2010 Part G3 and Approved Document G"
+      ],
+      [
+        "Format",
+        "Multiple-choice theory paper plus a practical assessment"
+      ],
+      [
+        "Pass mark",
+        "Not published; Tigertest uses 70% as a readiness line"
+      ],
+      [
+        "Validity",
+        "BPEC certificates last 5 years"
+      ],
+      [
+        "Biggest areas",
+        "Safety devices and discharge pipework"
+      ]
+    ],
+    "basedOn": "BPEC's unvented hot water qualification page and Approved Document G (2015 edition with 2016 and 2024 amendments), checked November 2026",
+    "source": {
+      "name": "GOV.UK: Approved Document G",
+      "url": "https://www.gov.uk/government/publications/sanitation-hot-water-safety-and-water-efficiency-approved-document-g"
+    }
+  },
+  "landing": {
+    "title": "Unvented Hot Water G3 Practice Test 2026 - Free Mock Exams",
+    "metaDescription": "Free unvented hot water (G3) practice: 200 original questions on safety devices, tundish and D2 sizing, inlet controls and commissioning, from Approved Document G.",
+    "description": "Free practice for the unvented hot water storage systems (G3) certificate: 200 original questions on Part G3 and system types, inlet controls and expansion, thermostats, cut-outs and relief valves, tundish and discharge pipework, temperature control and legionella, installation, commissioning and maintenance. Four 50-question practice tests with an explanation on every question.",
+    "keywords": "unvented hot water practice test, g3 unvented mock exam, unvented cylinder questions, bpec unvented test, part g3 quiz, tundish d2 discharge pipe questions, approved document g practice",
+    "ogAlt": "Tigertest free unvented hot water G3 practice test",
+    "appName": "Tigertest - Free Unvented Hot Water (G3) Practice",
+    "featureList": [
+      "200 unvented hot water practice questions",
+      "4 practice tests of 50 questions",
+      "4 training sets by topic",
+      "Instant feedback with explanations",
+      "Auto-save progress"
+    ],
+    "h1": "Free Unvented Hot Water (G3) Practice Test 2026",
+    "heroSubtitle": "200 questions on Part G3 and Approved Document G for the unvented cylinder certificate: safety devices, tundish and D2 sizing, inlet controls, temperatures and commissioning. Tuned for mobile. No account needed.",
+    "howTrain": "Four training sets, from Regulations & System Types to Install, Commission & Maintain. Master a topic, then take a test. Questions you miss come back until you have mastered them.",
+    "howTest": "Four 50-question practice tests across every topic, with a 70% readiness line and an explanation of the right answer on every question.",
+    "blueprintHeading": "Built on Part G3 and Approved Document G",
+    "blueprintPara": "No awarding body publishes how many questions come from each topic, so the practice tests follow Approved Document G's order and put the most weight on the safety devices and discharge pipework, which the law and every assessment focus on. Every question is original.",
+    "tutors": [
+      "Running unvented courses? Set Tigertest as practice before the assessment at",
+      "and see which topics your group misses most. It is free for you and your learners."
+    ],
+    "studyHeading": "How to Pass the Unvented Hot Water Assessment",
+    "tips": [
+      [
+        "Know the safety devices in order",
+        "An unvented cylinder needs a thermostat plus two independent safety devices: the energy cut-out and the temperature and pressure relief valve. Know what each one does, what it protects against and the order they act in."
+      ],
+      [
+        "Practise D2 sizing sums",
+        "Expect to size the D2 discharge pipe from Approved Document G: take the allowance for the pipe size, subtract the resistance of each elbow and bend, and go up a size if the run is too long."
+      ],
+      [
+        "Learn the inlet group",
+        "Know each part of the inlet controls (strainer, pressure reducing valve, check valve, expansion relief valve and expansion vessel), what fails when each one goes wrong, and the symptoms that point to it."
+      ],
+      [
+        "Fix your misses, then retest",
+        "Tigertest tracks your accuracy by topic. Aim for 85 percent on every practice test before the real one, then retrain your weakest topic."
+      ]
+    ],
+    "faqHeading": "Unvented Hot Water (G3) Frequently Asked Questions",
+    "faqs": [
+      [
+        "Who needs an unvented hot water certificate?",
+        "Anyone installing an unvented cylinder in England without building control inspecting it first. Approved Document G says installers can show the skills through a competent person scheme or a current unvented skills card, and schemes ask for this certificate."
+      ],
+      [
+        "What does the assessment cover?",
+        "System types, the inlet group (strainer, pressure reducing valve, check valve, expansion relief valve and vessel), the energy cut-out and temperature and pressure relief valve, the tundish and D1 and D2 discharge pipe rules, temperature control and legionella, commissioning, Benchmark paperwork and fault finding."
+      ],
+      [
+        "Do I need to do discharge pipe sums?",
+        "Yes. Expect to size D2 from Table 3.1 of Approved Document G: take the straight-pipe allowance for the size, subtract the resistance of each elbow, and go up a size if the run is too long."
+      ],
+      [
+        "Is the practical assessment covered here?",
+        "No. Tigertest practises the knowledge paper only. The practical, fitting or inspecting a system, is done at the training centre."
+      ],
+      [
+        "How long does the certificate last?",
+        "BPEC certificates are valid for five years, and you can reassess in the 12 months before expiry. Check your awarding body's rules."
+      ]
+    ],
+    "ctaHeading": "Ready to Pass Your Unvented Assessment?",
+    "ctaSub": "Start for free. No account required. 200 questions across every topic."
+  }
+}

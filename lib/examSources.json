@@ -1251,6 +1251,11 @@
   "https://www.gov.uk/become-a-driving-instructor",
   "https://www.gov.uk/adi-part-2-test/print"
  ],
+ "ukbregs": [
+  "https://www.legislation.gov.uk/uksi/2010/2214/schedule/1",
+  "https://www.legislation.gov.uk/uksi/2010/2214/regulation/4",
+  "https://www.legislation.gov.uk/uksi/2010/2214/schedule/2"
+ ],
  "ukcar": [
   "https://www.gov.uk/theory-test",
   "https://www.gov.uk/theory-test/multiple-choice-questions",
@@ -1265,6 +1270,16 @@
   "https://openawards.org.uk/wp-content/uploads/documents/qualifications/qualification-guide/QualificationGuide_126965.pdf",
   "https://centres.highfieldqualifications.com//Assets/DownloadArea/QualificationDownloads/[15042024_1449",
   "https://www.food.gov.uk/sites/default/files/media/document/hot-holding.pdf"
+ ],
+ "ukg3": [
+  "https://bpec.org.uk/qualification/domestic-hot-water-storage-systems/",
+  "https://www.legislation.gov.uk/uksi/2010/2214/schedule/1",
+  "https://www.gov.uk/government/publications/sanitation-hot-water-safety-and-water-efficiency-approved-document-g"
+ ],
+ "ukgas": [
+  "https://www.igem.org.uk/technical/standard-setting-body.html",
+  "https://www.igem.org.uk/technical/standard-setting-body/assessment.html",
+  "https://www.igem.org.uk/technical/standard-setting-body/assessment-criteria-documents.html"
  ],
  "uklgv": [
   "https://www.gov.uk/become-lorry-bus-driver/driver-cpc-part-1-theory-test",
@@ -1285,6 +1300,16 @@
   "https://www.gov.uk/driving-test-cost",
   "https://www.gov.uk/become-lorry-bus-driver"
  ],
+ "ukplumb": [
+  "https://www.cityandguilds.com/qualifications-and-apprenticeships/building-services-industry/plumbing/6035-plumbing-craft",
+  "https://www.cityandguilds.com/-/media/productdocuments/building_services_engineering/plumbing/6035/6035_level_2/centre_documents/6035-02-level-2-diploma-in-plumbing-studies_qhb_v5",
+  "https://cityandguilds.com/-/media/productdocuments/building_services_engineering/plumbing/6035/6035_level_3/centre_documents/6035-03_l3_diploma_in_plumbing_studies_qualification-handbook_v4-6-pdf.ashx"
+ ],
+ "ukrbi": [
+  "https://www.gov.uk/guidance/register-as-a-building-inspector",
+  "https://www.gov.uk/guidance/registered-building-inspectors",
+  "https://www.gov.uk/government/publications/registered-building-inspectors-professional-codes-and-standards"
+ ],
  "ukseru": [
   "https://tfl.gov.uk/info-for/taxis-and-private-hire/safety-equality-and-regulatory-understanding-requirement"
  ],
@@ -1293,6 +1318,11 @@
   "https://qualifications.pearson.com/en/support/support-topics/centre-administration/onscreen-testing/onscreen-testing-for-btec-qcf-qualifications/door-supervision.html",
   "https://www.gov.uk/guidance/read-the-specifications-for-sia-licence-linked-training",
   "https://www.gov.uk/government/news/sia-launches-major-review-of-security-licence-qualifications"
+ ],
+ "ukwater": [
+  "https://www.cityandguilds.com/qualifications-and-apprenticeships/building-services-industry/plumbing/3345-water-regulations-unvented-hot-water-systems",
+  "https://cityandguilds.com/-/media/productdocuments/building_services_engineering/plumbing/3345/3345_level_3/centre_documents/3345_l3_award_qualification_handbook_v1-8-pdf.ashx",
+  "https://bpec.org.uk/water-regulations-england-and-wales-and-water-byelaws-scotland-and-ni/"
  ],
  "uppolice": [
   "https://uppbpb.gov.in",

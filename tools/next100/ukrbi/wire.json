@@ -1,0 +1,137 @@
+{
+  "blueprintComment": [
+    "Registered Building Inspector competence assessment (England), checked November 2026: Building",
+    "Act 1984 Part 2A, the Building Inspector Competence Framework, the RBI code of conduct and the",
+    "operational standards rules (reworded 22 May 2026 to name BSR, a standalone body since 27",
+    "January 2026). BSR-approved schemes set their own assessment methods; no weights or pass mark are",
+    "published, so the split and the 70% line are Tigertest's. Wales not covered. All items original."
+  ],
+  "copy": {
+    "guestPrompt": "to save your building inspector progress and track every question you miss",
+    "trainingSub": "Four topic sets, from registration and the code of conduct to higher-risk buildings. Missed questions come back until you master them.",
+    "testsHeading": "Practice tests · 50 questions across every topic, 70% readiness line",
+    "heroSubs": [
+      "Four training sets, four practice tests. Start with Registration & Code of Conduct.",
+      "Master each topic, then test yourself.",
+      "Keep going. Every topic you master shows up on the tests.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. Book your competence assessment."
+    ],
+    "sourceLine": "Based on the Building Safety Act 2022, the Building Inspector Competence Framework and the RBI code of conduct (England), checked November 2026. Original questions; schemes set their own assessments."
+  },
+  "themeComment": "Registered Building Inspector theme: slate plum",
+  "blurb": "Practise the law, procedure and conduct rules every registered building inspector in England is assessed on: classes, the code, notices, gateways and higher-risk buildings.",
+  "org": "Building Safety Regulator · RBI competence",
+  "aliases": "rbi registered building inspector building control inspector bicof building safety regulator bsr competence assessment class 2 class 3 building control surveyor building safety act higher risk buildings gateway",
+  "related": [
+    "ukbregs",
+    "cscs",
+    "nhie"
+  ],
+  "shareTitle": "Registered Building Inspector Practice",
+  "shareDesc": "Practise the law, procedure and conduct rules for the RBI competence assessment in England.",
+  "teaches": "a building inspector competence course",
+  "examFacts": {
+    "answer": "To work as a building inspector in England (assessing plans, inspecting building work or advising a building control body) you must be on the Building Safety Regulator's register. Class 1 is a supervised trainee; classes 2 and 3 must pass an independent competence assessment from a BSR-approved scheme, based on the Building Inspector Competence Framework, and be reassessed at least every 4 years. Class 2 covers buildings under 18 m (categories A to F); class 3 adds non-standard and higher-risk buildings (G and H); class 4 is a technical manager. Every RBI must follow the BSR code of conduct. Each scheme sets its own assessment method, so Tigertest's 70% is a readiness line, not an official pass mark.",
+    "rows": [
+      [
+        "Regulator",
+        "Building Safety Regulator (standalone since January 2026)"
+      ],
+      [
+        "Who assesses",
+        "BSR-approved independent competence schemes"
+      ],
+      [
+        "Classes",
+        "1 trainee, 2 (A to F), 3 (G and H), 4 technical manager"
+      ],
+      [
+        "Reassessment",
+        "At least every 4 years"
+      ],
+      [
+        "Rules",
+        "Building Act 1984 Part 2A, BICoF, RBI code of conduct"
+      ],
+      [
+        "Pass mark",
+        "Set by each scheme; Tigertest uses 70%"
+      ]
+    ],
+    "basedOn": "the GOV.UK registered building inspector guidance and the BSR codes and standards (updated 22 May 2026), checked November 2026",
+    "source": {
+      "name": "GOV.UK: Registered building inspectors",
+      "url": "https://www.gov.uk/guidance/registered-building-inspectors"
+    }
+  },
+  "landing": {
+    "title": "Registered Building Inspector Practice Test 2026 - Free RBI Mock Exams",
+    "metaDescription": "Free practice for the RBI competence assessment in England: 200 original questions on registration, the code of conduct, procedure, notices and higher-risk buildings.",
+    "description": "Free practice for the Registered Building Inspector (RBI) competence assessment in England: 200 original questions on registration and classes, the code of conduct, building control procedure, dutyholders and competence, higher-risk buildings, enforcement and dangerous structures, operational standards and the wider law. Four 50-question practice tests with an explanation on every question.",
+    "keywords": "registered building inspector practice test, rbi competence assessment questions, building inspector exam uk, bicof practice, building safety regulator test, class 2 building inspector, building control mock exam",
+    "ogAlt": "Tigertest free registered building inspector practice test",
+    "appName": "Tigertest - Free Registered Building Inspector Practice",
+    "featureList": [
+      "200 building inspector practice questions",
+      "4 practice tests of 50 questions",
+      "4 training sets by topic",
+      "Instant feedback with explanations",
+      "Auto-save progress"
+    ],
+    "h1": "Free Registered Building Inspector Practice Test 2026",
+    "heroSubtitle": "200 questions on the Building Safety Act, the competence framework and the RBI code of conduct: classes, procedure, dutyholders, notices, gateways and higher-risk buildings. Tuned for mobile. No account needed.",
+    "howTrain": "Four training sets, from Registration & Code of Conduct to Higher-Risk Buildings & Safety. Master a topic, then take a test. Questions you miss come back until you have mastered them.",
+    "howTest": "Four 50-question practice tests across every topic, with a 70% readiness line and an explanation of the right answer on every question.",
+    "blueprintHeading": "Built on the Competence Framework and the Code",
+    "blueprintPara": "BSR does not publish how the assessment is weighted, so the practice tests spread across the subject areas of the Building Inspector Competence Framework and the code of conduct, with procedure, higher-risk buildings and inspection practice carrying the most questions. Every question is original and follows the law in force in England.",
+    "tutors": [
+      "Training building control surveyors for their assessment? Set Tigertest as practice at",
+      "and see which topics your group misses most. It is free for you and your learners."
+    ],
+    "studyHeading": "How to Prepare for the RBI Competence Assessment",
+    "tips": [
+      [
+        "Know the classes and what each may do",
+        "Learn the four classes, the building categories each covers and which activities are restricted to registered inspectors. Many questions turn on whether an inspector is working within their class."
+      ],
+      [
+        "Learn the procedure end to end",
+        "Follow a project through the Building Regulations 2010 procedure: applications, commencement, inspections, completion and the notices that can be served. Then do the same for a higher-risk building through each gateway."
+      ],
+      [
+        "Read the code of conduct closely",
+        "The code's duties on honesty, competence, conflicts of interest and reporting come up again and again. Know what an inspector must do when asked to work outside their competence or to approve something they doubt."
+      ],
+      [
+        "Fix your misses, then retest",
+        "Tigertest tracks your accuracy by topic. Aim for 85 percent on every practice test, then retrain your weakest topic."
+      ]
+    ],
+    "faqHeading": "Registered Building Inspector Frequently Asked Questions",
+    "faqs": [
+      [
+        "Do I need to register to work as a building inspector?",
+        "Yes. In England it is a criminal offence to assess plans, inspect building work or advise a building control body on its regulated functions without being registered with the Building Safety Regulator."
+      ],
+      [
+        "Which class do I need?",
+        "Class 1 is for trainees working under supervision. Class 2 lets you work alone on buildings under 18 m (categories A to F). Class 3 adds non-standard and higher-risk buildings (G and H). Class 4 is for technical managers who already hold class 2 or 3."
+      ],
+      [
+        "How is competence assessed?",
+        "Classes 2 and 3 need a certificate from an independent, BSR-approved competence scheme, assessed against the Building Inspector Competence Framework. Each scheme sets its own method, and you must be reassessed at least every 4 years."
+      ],
+      [
+        "What does this practice test cover?",
+        "Registration and the code of conduct, building control procedure under the Building Regulations 2010, dutyholders and competence, the higher-risk building regime, enforcement notices, dangerous structures and demolition, the operational standards rules and the wider law an inspector works within. Technical Approved Document values are in our Building Regulations test."
+      ],
+      [
+        "Does it cover Wales?",
+        "No. It follows the law and BSR documents for England. Wales has its own register categories, code of conduct and appeal routes, run by the Welsh Ministers."
+      ]
+    ],
+    "ctaHeading": "Ready for Your Competence Assessment?",
+    "ctaSub": "Start for free. No account required. 200 questions across every topic."
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "id": "ukbregs",
+  "stateCode": "UKBREGS",
+  "idBase": 27200,
+  "testIds": "27201-27204",
+  "setIds": "27201-27205",
+  "prefix": "UKBREGS-",
+  "slug": "/building-regulations",
+  "landingPath": "/building-regulations-practice-test",
+  "dataFile": "data/uk-building-regulations-questions.json",
+  "name": "Building Regulations Practice Test",
+  "shortName": "Building Regs",
+  "examLabel": "Building Regulations test",
+  "fullName": "Building Regulations 2010 (England) and Approved Documents A to T knowledge test",
+  "icon": "hardhat",
+  "passPct": 70,
+  "passPctNote": "Readiness line only: there is no single official Building Regulations exam.",
+  "categories": [
+    {
+      "key": "bregsGeneral",
+      "label": "Regulations, Materials & Workmanship",
+      "perTest": 2,
+      "segment": "GEN"
+    },
+    {
+      "key": "bregsStructure",
+      "label": "Structure (Part A)",
+      "perTest": 5,
+      "segment": "STR"
+    },
+    {
+      "key": "bregsFire",
+      "label": "Fire Safety (Part B)",
+      "perTest": 9,
+      "segment": "FIR"
+    },
+    {
+      "key": "bregsSite",
+      "label": "Site, Moisture & Toxic Substances (C, D)",
+      "perTest": 3,
+      "segment": "SIT"
+    },
+    {
+      "key": "bregsSound",
+      "label": "Resistance to Sound (Part E)",
+      "perTest": 3,
+      "segment": "SND"
+    },
+    {
+      "key": "bregsVentilation",
+      "label": "Ventilation (Part F)",
+      "perTest": 4,
+      "segment": "VNT"
+    },
+    {
+      "key": "bregsWater",
+      "label": "Sanitation & Water Efficiency (Part G)",
+      "perTest": 3,
+      "segment": "WAT"
+    },
+    {
+      "key": "bregsDrainage",
+      "label": "Drainage & Waste Disposal (Part H)",
+      "perTest": 4,
+      "segment": "DRN"
+    },
+    {
+      "key": "bregsCombustion",
+      "label": "Combustion Appliances (Part J)",
+      "perTest": 4,
+      "segment": "CMB"
+    },
+    {
+      "key": "bregsSafety",
+      "label": "Stairs, Access, Overheating & Toilets (K, M, O, T)",
+      "perTest": 6,
+      "segment": "SAF"
+    },
+    {
+      "key": "bregsEnergy",
+      "label": "Conservation of Fuel & Power (Part L)",
+      "perTest": 4,
+      "segment": "ENG"
+    },
+    {
+      "key": "bregsServices",
+      "label": "Electrical, Security, Broadband & EV (P, Q, R, S)",
+      "perTest": 3,
+      "segment": "SRV"
+    }
+  ],
+  "trainingSets": [
+    {
+      "name": "Structure, Site & Moisture",
+      "categories": [
+        "bregsGeneral",
+        "bregsStructure",
+        "bregsSite"
+      ],
+      "size": 40
+    },
+    {
+      "name": "Fire Safety",
+      "categories": [
+        "bregsFire"
+      ],
+      "size": 36
+    },
+    {
+      "name": "Sound, Ventilation & Energy",
+      "categories": [
+        "bregsSound",
+        "bregsVentilation",
+        "bregsEnergy"
+      ],
+      "size": 44
+    },
+    {
+      "name": "Water, Drainage & Combustion",
+      "categories": [
+        "bregsWater",
+        "bregsDrainage",
+        "bregsCombustion"
+      ],
+      "size": 44
+    },
+    {
+      "name": "Safety, Access & Services",
+      "categories": [
+        "bregsSafety",
+        "bregsServices"
+      ],
+      "size": 36
+    }
+  ],
+  "hue": "260 20% 30%",
+  "hueNote": "Deep teal cyan. Clear of the brief's list; arrt is 191 100% 28% (40 points saturation apart) and ccs 193 30% 26% (30 apart).",
+  "borrowTiger": "nhie",
+  "hubGroup": "UK workplace and trade certificates",
+  "teacherLed": true,
+  "region": "UK"
+}

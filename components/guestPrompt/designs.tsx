@@ -177,7 +177,7 @@ function V05(p: DesignProps) {
           <p className="mt-1 text-sm text-gray-700 dark:text-gray-200">
             {p.n > 0 ? `You've answered ${p.n === 1 ? "1 question" : `${p.n} questions`}` : "You're making progress"}, and right now
             {p.n === 1 ? " it only lives" : " they only live"} on this browser. A free account keeps
-            {p.n === 1 ? " it" : " them"} safe and takes a few seconds. No card, ever.
+            {p.n === 1 ? " it" : " them"} safe. It takes a few seconds and needs no card.
           </p>
           <p className="mt-2 text-sm font-semibold text-gray-900 dark:text-gray-50">John</p>
         </div>

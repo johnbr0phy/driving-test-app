@@ -557,6 +557,8 @@ export interface TopPrepperContent {
   pct: number;
   /** The locked thing they opened, as the paywall named it; may be empty. */
   item: string;
+  /** Premium's price where they are ("$9.99", "£7.99"), or "" when their country is not known. */
+  price?: string;
 }
 
 /**
@@ -582,8 +584,8 @@ export function topPrepperEmail(v: EmailVoice, c: TopPrepperContent): string {
       checklist(v.id === "dmv"
         ? ["Training sets 3 and 4", "Practice tests 3 and 4", "Every question you keep missing", "Premium on every other test here"]
         : [`The final ${name}training set`, `The final ${name}practice test`, "Every question you keep missing", "Premium on every other test here"]),
-      cta(unlock, `Unlock ${name}Premium`),
-      p("Pay once and it's yours. No subscription."),
+      cta(unlock, `Unlock ${name}Premium${c.price ? ` · ${esc(c.price)}` : ""}`),
+      p(c.price ? `One payment of ${esc(c.price)}. No subscription.` : "Pay once and it's yours. No subscription."),
       signoff("Keep going,"),
     ].join("\n"),
   });

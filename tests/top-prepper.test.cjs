@@ -65,6 +65,13 @@ test('the email states the person\'s own numbers and links to the unlock on thei
     assert.ok(!html.includes('—'));
   }
   assert.ok(topPrepperInbox(92).subject.includes('92%'));
+  // The price shows only when the reader's country is known.
+  const priced = topPrepperEmail(voiceFor('dmv'), { answers: 412, pct: 92, item: '', price: '£7.99' });
+  assert.ok(priced.includes('Unlock DMV Premium · £7.99'));
+  assert.ok(priced.includes('One payment of £7.99. No subscription.'));
+  const unpriced = topPrepperEmail(voiceFor('dmv'), { answers: 412, pct: 92, item: '' });
+  assert.ok(unpriced.includes('Unlock DMV Premium</a>'));
+  assert.ok(unpriced.includes("Pay once and it's yours. No subscription."));
 });
 
 test('both dashboards open the paywall for ?unlock=1, and the campaign is wired', () => {

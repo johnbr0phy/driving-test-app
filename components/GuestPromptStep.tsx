@@ -203,7 +203,7 @@ export function GuestPromptStep({
       <span className="inline-flex items-center gap-1 rounded-full bg-white/80 dark:bg-gray-900/80 px-3 py-1 text-xs font-bold text-brand-dark">
         <span aria-hidden="true">🔥</span> {c.badge}
       </span>
-      <h2 ref={heading} tabIndex={-1} className="mt-3 text-xl sm:text-2xl font-bold text-gray-900 dark:text-gray-50 leading-tight outline-none">
+      <h2 ref={heading} tabIndex={-1} className="focus-in-parent mt-3 text-xl sm:text-2xl font-bold text-gray-900 dark:text-gray-50 leading-tight outline-none">
         {c.title}
       </h2>
       <p className="mt-2 text-sm sm:text-base text-gray-700 dark:text-gray-200">
@@ -222,11 +222,11 @@ export function GuestPromptStep({
       <div className="mt-5 space-y-2 max-w-sm mx-auto">
         {/* Hidden in the native app, like the signup page (Google blocks OAuth in WebViews). */}
         {!isNative && (
-          <WebViewGoogleWarning onGoogleSignIn={signUp} disabled={busy} className="h-12 text-base font-semibold" />
+          <WebViewGoogleWarning onGoogleSignIn={signUp} disabled={busy} className="h-12 text-base font-semibold shadow-md !border-gray-900 dark:!border-gray-100" />
         )}
         <Button
           asChild
-          className={`w-full h-12 text-base font-semibold ${isNative ? "bg-brand text-white hover:bg-brand-hover" : "bg-transparent border-2 border-brand text-brand-dark hover:bg-brand-light"}`}
+          className={`w-full h-11 text-sm font-semibold ${isNative ? "bg-brand text-white hover:bg-brand-hover" : "bg-transparent border border-gray-300 dark:border-gray-700 text-gray-800 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-800"}`}
         >
           <Link href={signupHref} onClick={() => trackGuestPrompt("email", where)}>
             {isNative ? t("guestSave.createCta") : t("guestSave.emailCta")}

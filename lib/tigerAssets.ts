@@ -12,6 +12,8 @@ export const TIGER_EXAM_IDS = [
   "ks2", "gcsemaths", "uksia", "uk18ed", "gcsehigher", "gcsescience",
   "gcsecs", "elevenplus", "fsmaths", "cscs", "ukfood", "ukaplh",
   "ukfaw", "ukcare",
+  // UK gas engineer: reviewed analyser-and-probe set.
+  "ukgas",
   // CA: reviewed school, workplace and trade artwork.
   "osslt", "capal", "caelec", "caauto", "caplumb", "cacarp",
   "caweld", "capsw", "rexpn", "cawhmis", "caguard", "casfa",
@@ -60,7 +62,6 @@ const BORROWED_SETS: Record<string, string> = {
   ukplumb: "caplumb",
   ukrbi: "nhie",
   ukbregs: "nhie",
-  ukgas: "caplumb",
   ukcar: "driving", ukadi: "driving", ukmoto: "moto", uklgv: "cdl", ukpcv: "cdl",
   caon: "driving", caqc: "driving", cabc: "driving", caab: "driving", camb: "driving",
   aunsw: "driving", auvic: "driving", auqld: "driving", auwa: "driving", ausa: "driving", inrto: "driving",

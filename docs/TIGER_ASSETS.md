@@ -44,6 +44,10 @@ head throughout. The role and expression prompts are recorded in
 `TIGER_ASSET_PROMPTS.md`. These images were created with the built-in image
 generation tool and exported at 512 × 512 while preserving transparency.
 
+## UK gas engineer
+
+Gas Safe ACS (CCN1) uses the dedicated eight-expression `ukgas` set in navy workwear with a gas analyser and sampling probe. See [prompts and export details](tiger-assets-gas-engineer.md).
+
 ## International school, workplace and trade exams
 
 Forty dedicated sets (320 PNGs) replace the borrowed/default artwork for the exams in PRs #568 and #569. See [coverage, previews and expression requirements](tiger-assets-international.md).

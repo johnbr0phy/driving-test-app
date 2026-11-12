@@ -32,6 +32,8 @@ export interface ConversionPayload {
     purchases: Record<string, number>;
     /** Hits by signed-in accounts and hits by market code, counted since TRACKED_SINCE. */
     signedIn: Record<string, number>;
+    /** Before TRACKED_SINCE, an estimate: each account's hits on a paywall, put on the day of its latest hit there. */
+    signedInEst: Record<string, number>;
     byMarket: Record<string, Record<string, number>>;
   };
   trackedSince: string;
@@ -199,6 +201,7 @@ export async function buildConversion(): Promise<ConversionPayload> {
   };
   const signedInByDay: Record<string, number> = {};
   for (const [day, n] of Object.entries(paywallsData.signedInDaily || {})) if (typeof n === 'number') signedInByDay[day] = n;
+  const signedInEstByDay: Record<string, number> = {};
   const hitsByMarket: Record<string, Record<string, number>> = {};
   for (const [iso, days] of Object.entries(paywallsData.byCountry || {})) {
     const m = iso === 'ZZ' ? UNKNOWN : marketOf(iso) ?? UNKNOWN;
@@ -297,6 +300,11 @@ export async function buildConversion(): Promise<ConversionPayload> {
     }
     const lastHit = hits.reduce((m, h) => Math.max(m, h.lastAt ?? 0), 0);
     for (const h of hits) wall(h.feature).signedInViews += h.count;
+    for (const h of hits) {
+      if (h.lastAt === null) continue;
+      const day = new Date(h.lastAt).toISOString().slice(0, 10);
+      if (day < TRACKED_SINCE) signedInEstByDay[day] = (signedInEstByDay[day] || 0) + h.count;
+    }
     if (soldFeature) wall(soldFeature).sold++;
 
     accounts.push({
@@ -426,7 +434,7 @@ export async function buildConversion(): Promise<ConversionPayload> {
     rows: accounts.map((a) => pack(a.row)),
     markets,
     sales,
-    daily: { paywallHits: paywallHitsByDay, purchases: purchasesByDay, signedIn: signedInByDay, byMarket: hitsByMarket },
+    daily: { paywallHits: paywallHitsByDay, purchases: purchasesByDay, signedIn: signedInByDay, signedInEst: signedInEstByDay, byMarket: hitsByMarket },
     trackedSince: TRACKED_SINCE,
     paywalls,
     leads,

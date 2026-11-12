@@ -46,6 +46,32 @@ Nothing under 4. Stopped after three rounds as planned.
 
 Honest limits of these grades: they are mine, from still frames. Nobody outside has played the scenes, and motion (does the slow-down feel right, is 4 seconds enough to read three options) can only be judged by playing.
 
+## Round 4: one phone screen (after review, Nov 12)
+
+Feedback: the whole thing should fit on a single mobile screen. Before, the site header sat above the scene and the panel under the picture scrolled on smaller phones (it was capped at about half the screen), so a long result card needed a scroll to reach Try again.
+
+Changes:
+- The site header is hidden on scene pages (`/drive/<rule>` is a runner path in `SiteHeader`, like tests and practice). The scene has the shared `FocusBar` instead: ✕ back to `/drive`, the scene's title, a sound toggle.
+- The scene is one `100svh` column: bar, then the picture taking whatever height is left, then a panel sized to its content with no inner scroll.
+- Smaller choice buttons (44 px tall, still a full-width tap target), a short one-line citation on the card (`citation.short`, at most 40 characters; the full source is its tooltip and is in the rule text below the scene), the verdict joined to the consequence sentence, and the two result buttons side by side.
+- Parking rule text lost its tail ("add your state to the address to see its rule"); the universal records now say "In most states, do not park within ...". State records keep their exact rule.
+- Short landscape screens (under 420 px tall) get a wider side panel and text one notch smaller.
+
+How it is checked: the harness now measures every decision and result screen and fails when the scene is not exactly the screen, the panel would need scrolling, the page is too wide, or the picture gets less than 30% of the height. With `--reduced` (reduced motion jumps from still to still) all 23 branches run in a few minutes per size.
+
+| Viewport | Device class | Screens checked | Fit |
+|---|---|---|---|
+| 390 x 844 | iPhone 13 to 15 | 23 branches | all |
+| 375 x 667 | iPhone SE | 23 branches | all |
+| 360 x 640 | small Android | 23 branches | all |
+| 412 x 915 | Pixel | 23 branches | all |
+| 844 x 390 | iPhone landscape | 23 branches | all |
+| 667 x 375 | iPhone SE landscape | 23 branches | all (4 result cards were 16 px over before the short-screen rule) |
+
+Full-motion run at 390 x 844 afterwards: all 23 branches fit. The worst one-second frame rate was 29 in the first scene, which ran while the typecheck and test suite were loading all four cores; that scene alone ran at 60 average with a worst second of 48. With it re-measured idle, the lowest second across all scenes is 37. Software rendering, so still not a phone number.
+
+Known leftover: on the smallest landscape phone the longest citation ("Uniform Vehicle Code §11-1003(a)2.C") is cut off with an ellipsis.
+
 ## Other checks
 
 - **Landscape** (844 x 390): panel sits beside the picture, all three states of no-passing-zone fit without scrolling the choices.

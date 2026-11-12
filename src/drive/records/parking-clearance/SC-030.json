@@ -35,9 +35,10 @@
     }
   ],
   "successText": "You left the crosswalk in plain view. The person crossing and the next driver could see each other in good time.",
-  "ruleText": "Do not park within 20 feet of a crosswalk at an intersection: a parked car that close hides people who are about to cross.",
+  "ruleText": "Do not park within 20 feet of a crosswalk at an intersection: a parked car that close hides people about to cross.",
   "citation": {
     "source": "South Carolina Code of Laws",
+    "short": "S.C. Code §56-5-2530(A)(2)(c)",
     "section": "Section 56-5-2530(A)(2)(c)",
     "url": "https://www.scstatehouse.gov/code/t56c005.php"
   },

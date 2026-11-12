@@ -9,6 +9,12 @@
 //   node tools/drive-shoot.mjs       all scenes, phone portrait
 //   node tools/drive-shoot.mjs --only=double-arrow --landscape --scale=2
 //   BASE=https://<preview>.vercel.app node tools/drive-shoot.mjs
+//   node tools/drive-shoot.mjs --reduced --viewports=390x844,375x667,844x390
+//       (reduced motion jumps from still to still: a fast check of every screen's fit)
+//
+// Every decision and result screen is also measured: the scene must fill the
+// screen with nothing hidden (no page scroll, no clipped panel) and leave the
+// picture at least 30% of the height. Failures are listed and exit non-zero.
 //
 // Headless Chrome draws WebGL in software, so the fps here is a floor for a
 // laptop CPU, not a phone measurement. Draw calls and triangles are exact.
@@ -24,7 +30,42 @@ const args = Object.fromEntries(process.argv.slice(2).map((a) => a.replace(/^--/
 const BASE = process.env.BASE || "http://localhost:3000";
 const OUT = path.resolve(args.out || "shots/drive");
 const landscape = Boolean(args.landscape);
-const viewport = landscape ? { width: 844, height: 390 } : { width: 390, height: 844 };
+const VIEWPORTS = (args.viewports || (landscape ? "844x390" : "390x844")).split(",").map((v) => {
+  const [width, height] = v.split("x").map(Number);
+  return { width, height };
+});
+let viewport = VIEWPORTS[0];
+const fitFailures = [];
+
+/** Does the scene fit one screen? Measured on the live page. */
+async function measureFit(page, label) {
+  const m = await page.evaluate(() => {
+    const section = document.querySelector("[data-drive-mode]");
+    const panel = document.querySelector("[data-drive-panel]");
+    const canvas = section?.querySelector("canvas");
+    if (!section || !panel || !canvas) return null;
+    const s = section.getBoundingClientRect();
+    const p = panel.getBoundingClientRect();
+    return {
+      vh: window.innerHeight,
+      vw: window.innerWidth,
+      sectionTop: s.top,
+      sectionBottom: s.bottom,
+      panelBottom: p.bottom,
+      panelOverflow: panel.scrollHeight - panel.clientHeight,
+      pageOverflowX: document.documentElement.scrollWidth - window.innerWidth,
+      canvasHeight: canvas.getBoundingClientRect().height,
+    };
+  });
+  if (!m) return;
+  const problems = [];
+  if (m.sectionTop < -1 || m.sectionBottom > m.vh + 1) problems.push(`scene ${Math.round(m.sectionTop)}..${Math.round(m.sectionBottom)} outside a ${m.vh}px screen`);
+  if (m.panelBottom > m.vh + 1) problems.push(`panel ends ${Math.round(m.panelBottom - m.vh)}px below the screen`);
+  if (m.panelOverflow > 1) problems.push(`panel hides ${m.panelOverflow}px (would need scrolling)`);
+  if (m.pageOverflowX > 1) problems.push(`page is ${m.pageOverflowX}px too wide`);
+  if (m.canvasHeight < m.vh * 0.3) problems.push(`picture only ${Math.round(m.canvasHeight)}px of ${m.vh}px`);
+  if (problems.length) fitFailures.push(`${m.vw}x${m.vh} ${label}: ${problems.join("; ")}`);
+}
 
 // Each scene, plus the record variants worth looking at.
 const TARGETS = [
@@ -77,7 +118,8 @@ async function waitFor(page, test, timeout = 90000) {
 
 async function playBranch(page, target, branch, stats) {
   const name = target.name || target.rule;
-  const dir = path.join(OUT, name, branch.choices.join("+") + (branch.ok ? "=ok" : "=fail"));
+  const sized = VIEWPORTS.length > 1 ? `${viewport.width}x${viewport.height}` : "";
+  const dir = path.join(OUT, sized, name, branch.choices.join("+") + (branch.ok ? "=ok" : "=fail"));
   fs.mkdirSync(dir, { recursive: true });
   await open(page, target);
   await page.click("[data-drive-start]");
@@ -87,6 +129,7 @@ async function playBranch(page, target, branch, stats) {
     await waitFor(page, (s) => s.phase === "decide" && s.t >= script[s.seg].duration - 1e-3);
     await sleep(250);
     await page.screenshot({ ...SHOT, path: path.join(dir, `decision-${i + 1}.png`) });
+    await measureFit(page, `${name} ${branch.choices.join(">")} decision ${i + 1}`);
     await page.click(`[data-drive-option="${branch.choices[i]}"]`);
     const outcome = await waitFor(page, (s) => s.seg.endsWith(`:${branch.choices[i]}`));
     const duration = script[outcome.seg].duration;
@@ -99,34 +142,45 @@ async function playBranch(page, target, branch, stats) {
   await waitFor(page, (s) => s.phase === "result");
   await sleep(350);
   await page.screenshot({ ...SHOT, path: path.join(dir, "result.png") });
+  await measureFit(page, `${name} ${branch.choices.join(">")} result`);
   stats.push({ scene: name, branch: branch.choices.join("+"), ok: branch.ok, viewport, ...(await page.evaluate(() => window.__drive.stats())) });
 }
 
 // CHROME_PATH points at a Chrome when the project's Playwright has no browser of its own.
 const executablePath = process.env.CHROME_PATH && fs.existsSync(process.env.CHROME_PATH) ? process.env.CHROME_PATH : undefined;
 const browser = await chromium.launch({ executablePath, args: ["--use-angle=swiftshader", "--enable-unsafe-swiftshader", "--ignore-gpu-blocklist"] });
-const context = await browser.newContext({ viewport, deviceScaleFactor: Number(args.scale || 1), hasTouch: true, isMobile: true });
-// Answer the cookie banner up front so it is not in every picture.
-await context.addCookies([{ name: "tt-consent", value: "denied", url: BASE }]);
-const page = await context.newPage();
-page.on("pageerror", (error) => console.error("page error:", error.message));
 const stats = [];
 let failed = 0;
-for (const target of TARGETS) {
-  await open(page, target);
-  const branches = await branchesOf(page);
-  for (const branch of branches) {
-    try {
-      await playBranch(page, target, branch, stats);
-      console.log(`ok   ${target.name || target.rule}  ${branch.choices.join(" > ")}  ${branch.ok ? "(right)" : "(wrong)"}`);
-    } catch (error) {
-      failed++;
-      console.error(`FAIL ${target.name || target.rule}  ${branch.choices.join(" > ")}: ${error.message}`);
+for (viewport of VIEWPORTS) {
+  const context = await browser.newContext({
+    viewport,
+    deviceScaleFactor: Number(args.scale || 1),
+    hasTouch: true,
+    isMobile: true,
+    reducedMotion: args.reduced ? "reduce" : "no-preference",
+  });
+  // Answer the cookie banner up front so it is not in every picture.
+  await context.addCookies([{ name: "tt-consent", value: "denied", url: BASE }]);
+  const page = await context.newPage();
+  page.on("pageerror", (error) => console.error("page error:", error.message.split("\n")[0]));
+  for (const target of TARGETS) {
+    await open(page, target);
+    const branches = await branchesOf(page);
+    for (const branch of branches) {
+      try {
+        await playBranch(page, target, branch, stats);
+        console.log(`ok   ${viewport.width}x${viewport.height} ${target.name || target.rule}  ${branch.choices.join(" > ")}  ${branch.ok ? "(right)" : "(wrong)"}`);
+      } catch (error) {
+        failed++;
+        console.error(`FAIL ${viewport.width}x${viewport.height} ${target.name || target.rule}  ${branch.choices.join(" > ")}: ${error.message}`);
+      }
     }
   }
+  await context.close();
 }
 fs.mkdirSync(OUT, { recursive: true });
 fs.writeFileSync(path.join(OUT, landscape ? "stats-landscape.json" : "stats.json"), JSON.stringify(stats, null, 2));
 await browser.close();
-console.log(`${stats.length} branches shot to ${OUT}${failed ? `, ${failed} failed` : ""}`);
-process.exit(failed ? 1 : 0);
+for (const line of fitFailures) console.error(`DOES NOT FIT ${line}`);
+console.log(`${stats.length} branches shot to ${OUT}${failed ? `, ${failed} failed` : ""}; ${fitFailures.length} screens do not fit`);
+process.exit(failed || fitFailures.length ? 1 : 0);

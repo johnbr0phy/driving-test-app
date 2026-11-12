@@ -58,6 +58,7 @@
   "ruleText": "A flashing red light means stop completely, then go when it is safe, like a stop sign. A flashing yellow light means slow down and proceed with caution, without stopping.",
   "citation": {
     "source": "FHWA Manual on Uniform Traffic Control Devices, 11th Edition; California Driver's Handbook",
+    "short": "MUTCD §4A.04; CA Driver's Handbook",
     "section": "MUTCD Section 4A.04 (flashing signal indications); handbook section \"Laws and Rules of the Road\", traffic signals",
     "url": "https://www.dmv.ca.gov/portal/handbook/california-driver-handbook/laws-and-rules-of-the-road/"
   },

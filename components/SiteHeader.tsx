@@ -44,6 +44,8 @@ const SEARCH_HOMES = new Set(REGIONS.filter((r) => r.lang === "en").map((r) => r
 export function isRunnerPath(path: string | null | undefined): boolean {
   if (!path || /\/results\/?$/.test(path)) return false;
   if (path === "/training" || path.startsWith("/test/") || path.startsWith("/practice/")) return true;
+  // A Drive the Question scene fills the screen with its own bar (not the /drive list).
+  if (path.startsWith("/drive/")) return true;
   if (/^\/q\/[^/]+\/(practice|test|flashcards)(\/|$)/.test(path)) return true;
   const exam = getExamByPath(path);
   const bases = exam ? [exam.slug, ...getExamVariants(exam.id).map((v) => v.slug)] : [];

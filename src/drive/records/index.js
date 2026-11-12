@@ -68,6 +68,7 @@ export function validateRecord(record) {
   need(typeof record.prompt === "string" && record.prompt.length > 0, "prompt missing");
   need(typeof record.ruleText === "string" && record.ruleText.length > 0, "ruleText missing");
   need(record.citation && record.citation.source && record.citation.section && /^https:\/\//.test(record.citation.url || ""), "citation incomplete");
+  need(typeof record.citation?.short === "string" && record.citation.short.length <= 40, "citation.short missing or over 40 characters (it is the one-line source on the phone card)");
   need(typeof record.verified === "string" && record.verified.length > 0, "verification note missing");
   need(Array.isArray(record.decisions) && record.decisions.length >= 1 && record.decisions.length <= 3, "needs 1 to 3 decisions");
   for (const decision of record.decisions || []) {

@@ -37,6 +37,7 @@
   "ruleText": "The pennant-shaped sign on the left side of the road marks the start of a no-passing zone: with a solid yellow line on your side, stay in your lane until the line is broken again.",
   "citation": {
     "source": "FHWA Manual on Uniform Traffic Control Devices, 11th Edition",
+    "short": "MUTCD 11th ed. §2C.53, §3B.01",
     "section": "Section 2C.53 (No Passing Zone sign, W14-3) and Section 3B.01 (yellow center line markings)",
     "url": "https://mutcd.fhwa.dot.gov/pdfs/11th_Edition/Chapter2c.pdf"
   },

@@ -35,9 +35,10 @@
     }
   ],
   "successText": "You left the crosswalk in plain view. The person crossing and the next driver could see each other in good time.",
-  "ruleText": "Do not park within 20 feet of a crosswalk at an intersection: a parked car that close hides people who are about to cross.",
+  "ruleText": "Do not park within 20 feet of a crosswalk at an intersection: a parked car that close hides people about to cross.",
   "citation": {
     "source": "New Hampshire Revised Statutes",
+    "short": "NH RSA 265:69 II(c)",
     "section": "RSA 265:69 II(c)",
     "url": "https://gc.nh.gov/rsa/html/XXI/265/265-69.htm"
   },

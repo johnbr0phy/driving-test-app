@@ -43,7 +43,7 @@ Every call I made without asking, newest concerns last. Each has the reason and 
 28. **The link appears in three places**: the training explanation box, the results debrief and the miss drill. Not on the stats page or Common Mistakes tab, which I left alone to keep the diff small.
 29. **Analytics is GA4 only**, through the existing `window.gtag`, so consent rules apply unchanged. No new Firestore counter and no /admin card.
 30. **"Take the full test" goes to `/dmv/dashboard`**, carrying `?state=` when present.
-31. **The scene fills the screen on Start** by scrolling itself to the top, instead of hiding the site header. Less code than a new runner path, and the way out stays visible on arrival.
+31. **The scene is exactly one phone screen** (changed Nov 12 after review; it used to scroll the site header away on Start). Scene pages are runner paths, so the site header is hidden and the shared `FocusBar` (✕ to `/drive`, title, sound) takes its place; the panel never scrolls. The SEO text about the rule stays below the scene, reached by scrolling the page, because the brief asks for a static text version for search engines.
 32. **Nothing in Premium, pricing or locks was touched.**
 
 ## Verification
@@ -51,3 +51,5 @@ Every call I made without asking, newest concerns last. Each has the reason and 
 33. **Screenshots are not committed** (`/shots/` is gitignored, about 20 MB a run). Five small JPEGs for the PR live in `docs/drive/`.
 34. **fps is measured in headless Chrome with software WebGL**, which is slower than a phone GPU. I could not measure on a real mid-range phone from this session and say so in the PR.
 35. **The harness uses `CHROME_PATH`** when the project's Playwright has no browser of its own, which is the case in cloud sessions.
+36. **A short citation on the card, the full one below.** A full citation ("FHWA Manual on Uniform Traffic Control Devices, 11th Edition, Section 2C.53 ...") takes three lines on a phone. Each record now carries `citation.short` (at most 40 characters, checked by `validateRecord`), shown as the link on the result card with the full source as its tooltip; the page text under the scene keeps the full citation.
+37. **The parking card no longer tells you to edit the address.** "Add your state to the address to see its rule" was an instruction, not a rule, and cost two lines. The universal record says "In most states" instead; `?state=` still works for the five states with records.

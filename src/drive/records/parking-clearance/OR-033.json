@@ -38,6 +38,7 @@
   "ruleText": "Do not park within 10 feet of a fire hydrant: firefighters need clear access to it.",
   "citation": {
     "source": "Oregon Revised Statutes",
+    "short": "ORS 811.550(16)",
     "section": "ORS 811.550(16)",
     "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors811.html"
   },

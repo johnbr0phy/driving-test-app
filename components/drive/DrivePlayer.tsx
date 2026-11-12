@@ -6,7 +6,9 @@
 // it, so it works with a keyboard and a screen reader.
 
 import Link from "next/link";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { Volume2, VolumeX } from "lucide-react";
+import { FocusBar } from "@/components/FocusBar";
+import { useCallback, useEffect, useRef, useState, type RefObject } from "react";
 import { trackDrive } from "@/src/drive/analytics";
 import { getDriveRule } from "@/src/drive/rules";
 
@@ -21,7 +23,7 @@ type DriveRecord = {
   prompt: string;
   ruleText: string;
   successText: string;
-  citation: { source: string; section: string; url: string };
+  citation: { source: string; short: string; section: string; url: string };
   decisions: { id: string; wrongActions: { id: string; consequence: string }[] }[];
 };
 type Stage = {
@@ -46,17 +48,17 @@ type Props = {
 };
 
 const button =
-  "w-full min-h-[3.5rem] rounded-xl border-2 border-gray-900 dark:border-gray-100 bg-white dark:bg-gray-900 px-4 py-3 text-left text-base font-semibold text-gray-900 dark:text-gray-50 transition-colors hover:bg-orange-50 dark:hover:bg-gray-800 focus-visible:outline focus-visible:outline-4 focus-visible:outline-orange-500";
+  "flex w-full min-h-[2.75rem] items-center rounded-xl border-2 border-gray-900 dark:border-gray-100 bg-white dark:bg-gray-900 px-3 py-1.5 text-left text-[15px] leading-tight font-semibold text-gray-900 dark:text-gray-50 transition-colors hover:bg-orange-50 dark:hover:bg-gray-800 focus-visible:outline focus-visible:outline-4 focus-visible:outline-orange-500";
 const primary =
-  "inline-flex min-h-[3.25rem] items-center justify-center rounded-xl bg-black dark:bg-white px-5 py-3 text-base font-semibold text-white dark:text-black hover:opacity-90 focus-visible:outline focus-visible:outline-4 focus-visible:outline-orange-500";
+  "inline-flex min-h-[2.75rem] items-center justify-center rounded-xl bg-black dark:bg-white px-4 py-2 text-base font-semibold text-white dark:text-black hover:opacity-90 focus-visible:outline focus-visible:outline-4 focus-visible:outline-orange-500";
 const secondary =
-  "inline-flex min-h-[3.25rem] items-center justify-center rounded-xl border-2 border-gray-300 dark:border-gray-700 px-5 py-3 text-base font-semibold text-gray-900 dark:text-gray-50 hover:bg-gray-100 dark:hover:bg-gray-800 focus-visible:outline focus-visible:outline-4 focus-visible:outline-orange-500";
+  "inline-flex min-h-[2.75rem] items-center justify-center rounded-xl border-2 border-gray-300 dark:border-gray-700 px-4 py-2 text-base font-semibold text-gray-900 dark:text-gray-50 hover:bg-gray-100 dark:hover:bg-gray-800 focus-visible:outline focus-visible:outline-4 focus-visible:outline-orange-500";
 
 export function DrivePlayer({ slug, title, record, fallback, next, stateCode }: Props) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const stageRef = useRef<Stage | null>(null);
   const signUrl = useRef<(kind: string, size?: number) => string>(() => "");
-  const headingRef = useRef<HTMLHeadingElement>(null);
+  const headingRef = useRef<HTMLElement>(null);
   const sectionRef = useRef<HTMLElement>(null);
   const [mode, setMode] = useState<"loading" | "ready" | "play" | "decide" | "result" | "fallback">("loading");
   const [caption, setCaption] = useState("");
@@ -138,8 +140,6 @@ export function DrivePlayer({ slug, title, record, fallback, next, stateCode }: 
       setDecision(null);
       setAttempt((n) => n + 1);
       trackDrive(retry ? "drive_retry" : "drive_start", baseRef.current);
-      // Fill the screen with the scene: the site header scrolls away above it.
-      sectionRef.current?.scrollIntoView({ block: "start" });
       stageRef.current?.start();
     },
     [],
@@ -182,110 +182,120 @@ export function DrivePlayer({ slug, title, record, fallback, next, stateCode }: 
 
   return (
     <section
+      ref={sectionRef}
       aria-label={`${title}: driving scene`}
       data-drive-mode={mode}
-      ref={sectionRef}
-      className="grid h-[100svh] min-h-[30rem] grid-rows-[minmax(0,1fr)_auto] bg-gray-950 landscape:grid-cols-[minmax(0,1fr)_minmax(17rem,38%)] landscape:grid-rows-1"
+      className="flex h-[100svh] flex-col overflow-hidden bg-gray-950"
     >
-      <div className="relative min-h-0">
-        <canvas ref={canvasRef} className="block h-full w-full" role="img" aria-label={caption || `${title}. Press Start driving to begin.`} />
-        {speed !== null && mode !== "ready" && mode !== "loading" && (
-          <div aria-hidden="true" className="absolute left-3 top-3 rounded-lg bg-black/70 px-3 py-1.5 text-white">
-            <span className="text-xl font-bold tabular-nums">{speed}</span> <span className="text-xs">mph</span>
-          </div>
-        )}
-        <button
-          type="button"
-          onClick={toggleSound}
-          aria-pressed={muted}
-          className="absolute right-3 top-3 rounded-lg bg-black/70 px-3 py-1.5 text-sm font-medium text-white focus-visible:outline focus-visible:outline-4 focus-visible:outline-orange-500"
-        >
-          {muted ? "Sound off" : "Sound on"}
-        </button>
-      </div>
-
-      <div className={`${mode === "result" ? "max-h-[64svh]" : "max-h-[48svh]"} overflow-y-auto bg-white p-4 text-gray-900 dark:bg-gray-900 dark:text-gray-50 landscape:max-h-none landscape:p-5`}>
-        {/* What is happening, for people who cannot see the picture. */}
-        <p aria-live="polite" className={mode === "play" ? "text-base leading-snug" : "sr-only"}>
-          {caption}
-        </p>
-
-        {mode === "loading" && <p className="text-base text-gray-600 dark:text-gray-300">Loading the scene...</p>}
-
-        {mode === "ready" && (
-          <div className="space-y-3">
-            <p className="text-xs font-semibold uppercase tracking-wide text-orange-600 dark:text-orange-400">Drive the Question</p>
-            <h2 className="text-xl font-bold">{title}</h2>
-            <p className="text-sm text-gray-600 dark:text-gray-300">
-              You do not steer. When a choice comes up, time slows down: tap what you would do. About 20 seconds.
-            </p>
-            <button type="button" className={`${primary} w-full`} onClick={() => start(false)} data-drive-start>
-              Start driving
-            </button>
-          </div>
-        )}
-
-        {mode === "decide" && decision && (
-          <div role="group" aria-labelledby="drive-prompt" className="space-y-3" key={`${attempt}-${decision.id}`}>
-            <div className="flex items-start gap-3">
-              {decision.sign && (
-                // eslint-disable-next-line @next/next/no-img-element
-                <img src={signUrl.current(decision.sign, 128)} alt={decision.signAlt || ""} width={64} height={64} className="h-16 w-16 shrink-0" />
-              )}
-              <h2 id="drive-prompt" ref={headingRef} tabIndex={-1} className="text-lg font-bold leading-snug outline-none">
-                {decision.prompt}
-              </h2>
+      <FocusBar
+        exitHref="/drive"
+        title={title}
+        subtitle="Drive the Question"
+        right={
+          <button
+            type="button"
+            onClick={toggleSound}
+            aria-pressed={!muted}
+            aria-label={muted ? "Sound is off. Turn sound on" : "Sound is on. Turn sound off"}
+            className="flex h-10 w-10 items-center justify-center rounded-full text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-gray-50"
+          >
+            {muted ? <VolumeX className="h-5 w-5" /> : <Volume2 className="h-5 w-5" />}
+          </button>
+        }
+      />
+      <div className="grid min-h-0 flex-1 grid-rows-[minmax(0,1fr)_auto] landscape:grid-cols-[minmax(0,1fr)_minmax(18rem,46%)] landscape:grid-rows-1">
+        <div className="relative min-h-0">
+          <canvas ref={canvasRef} className="block h-full w-full" role="img" aria-label={caption || `${title}. Press Start driving to begin.`} />
+          {speed !== null && mode !== "ready" && mode !== "loading" && (
+            <div aria-hidden="true" className="absolute left-2 top-2 rounded-md bg-black/70 px-2 py-1 text-white">
+              <span className="text-lg font-bold tabular-nums">{speed}</span> <span className="text-[11px]">mph</span>
             </div>
-            <div className="grid gap-2">
-              {decision.options.map((option, index) => (
-                <button key={option.id} type="button" className={button} data-drive-option={option.id} onClick={() => choose(option.id)}>
-                  <span aria-hidden="true" className="mr-2 inline-flex h-6 w-6 items-center justify-center rounded-full bg-gray-900 text-xs text-white dark:bg-gray-100 dark:text-gray-900">
-                    {index + 1}
-                  </span>
-                  {option.label}
-                </button>
-              ))}
-            </div>
-          </div>
-        )}
+          )}
+        </div>
 
-        {mode === "result" && result && (
-          <div className="space-y-3" data-drive-result={result.ok ? "ok" : "fail"}>
-            <h2
-              ref={headingRef}
-              tabIndex={-1}
-              className={`text-xl font-bold outline-none ${result.ok ? "text-green-700 dark:text-green-300" : "text-red-700 dark:text-red-300"}`}
-            >
-              {result.ok ? "Right call" : "Not this time"}
-            </h2>
-            <p className="text-base leading-snug">{result.ok ? record.successText : wrong?.consequence}</p>
-            <div className="rounded-lg border border-gray-200 bg-gray-50 p-3 dark:border-gray-800 dark:bg-gray-800">
-              <p className="text-xs font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-300">The rule</p>
-              <p className="mt-1 text-base font-medium leading-snug">{record.ruleText}</p>
-              <p className="mt-2 text-xs text-gray-600 dark:text-gray-300">
-                Source:{" "}
-                <a className="underline" href={record.citation.url} target="_blank" rel="noopener noreferrer">
-                  {record.citation.source}
-                </a>
-                , {record.citation.section}.
+        <div data-drive-panel className="bg-white px-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-3 text-gray-900 dark:bg-gray-900 dark:text-gray-50 landscape:overflow-y-auto landscape:px-4">
+          {/* What is happening, for people who cannot see the picture. */}
+          <p aria-live="polite" className={mode === "play" ? "text-sm leading-snug" : "sr-only"}>
+            {caption}
+          </p>
+
+          {mode === "loading" && <p className="text-sm text-gray-600 dark:text-gray-300">Loading the scene...</p>}
+
+          {mode === "ready" && (
+            <div className="space-y-2">
+              <p className="text-sm leading-snug text-gray-600 dark:text-gray-300">
+                You do not steer. When a choice comes up, time slows down: tap what you would do. About 20 seconds.
               </p>
-            </div>
-            {result.ok ? (
-              <div className="grid gap-2 sm:grid-cols-2">
-                <Link className={primary} href={nextHref}>
-                  Next scene
-                </Link>
-                <Link className={secondary} href={testHref} onClick={() => toTest("result")}>
-                  Take the full test
-                </Link>
-              </div>
-            ) : (
-              <button type="button" className={`${primary} w-full`} onClick={() => start(true)} data-drive-retry>
-                Try again
+              <button type="button" className={`${primary} w-full`} onClick={() => start(false)} data-drive-start>
+                Start driving
               </button>
-            )}
-          </div>
-        )}
+            </div>
+          )}
+
+          {mode === "decide" && decision && (
+            <div role="group" aria-labelledby="drive-prompt" className="space-y-2" key={`${attempt}-${decision.id}`}>
+              <div className="flex items-center gap-2.5">
+                {decision.sign && (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img src={signUrl.current(decision.sign, 96)} alt={decision.signAlt || ""} width={44} height={44} className="h-11 w-11 shrink-0" />
+                )}
+                <h2 id="drive-prompt" ref={headingRef as RefObject<HTMLHeadingElement>} tabIndex={-1} className="text-base font-bold leading-snug outline-none">
+                  {decision.prompt}
+                </h2>
+              </div>
+              <div className="grid gap-1.5">
+                {decision.options.map((option, index) => (
+                  <button key={option.id} type="button" className={button} data-drive-option={option.id} onClick={() => choose(option.id)}>
+                    <span aria-hidden="true" className="mr-2 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-gray-900 text-[11px] text-white dark:bg-gray-100 dark:text-gray-900">
+                      {index + 1}
+                    </span>
+                    {option.label}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {mode === "result" && result && (
+            <div className="space-y-2 [@media(max-height:420px)]:space-y-1.5" data-drive-result={result.ok ? "ok" : "fail"}>
+              <p className="text-sm leading-snug [@media(max-height:420px)]:text-[13px]">
+                <span
+                  ref={headingRef as RefObject<HTMLSpanElement>}
+                  tabIndex={-1}
+                  role="heading"
+                  aria-level={2}
+                  className={`mr-1 font-bold outline-none ${result.ok ? "text-green-700 dark:text-green-300" : "text-red-700 dark:text-red-300"}`}
+                >
+                  {result.ok ? "Right call." : "Not this time."}
+                </span>
+                {result.ok ? record.successText : wrong?.consequence}
+              </p>
+              <div className="rounded-lg border border-gray-200 bg-gray-50 px-3 py-2 dark:border-gray-800 dark:bg-gray-800 [@media(max-height:420px)]:py-1.5">
+                <p className="text-sm font-semibold leading-snug [@media(max-height:420px)]:text-[13px]">{record.ruleText}</p>
+                <p className="mt-1 truncate text-xs text-gray-600 dark:text-gray-300">
+                  Source:{" "}
+                  <a className="underline" href={record.citation.url} target="_blank" rel="noopener noreferrer" title={`${record.citation.source}, ${record.citation.section}`}>
+                    {record.citation.short}
+                  </a>
+                </p>
+              </div>
+              {result.ok ? (
+                <div className="grid grid-cols-2 gap-2">
+                  <Link className={primary} href={nextHref}>
+                    Next scene
+                  </Link>
+                  <Link className={secondary} href={testHref} onClick={() => toTest("result")}>
+                    Full test
+                  </Link>
+                </div>
+              ) : (
+                <button type="button" className={`${primary} w-full`} onClick={() => start(true)} data-drive-retry>
+                  Try again
+                </button>
+              )}
+            </div>
+          )}
+        </div>
       </div>
     </section>
   );

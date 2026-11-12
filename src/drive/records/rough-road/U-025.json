@@ -34,6 +34,7 @@
   "ruleText": "A BUMP or ROUGH ROAD warning sign means the road surface ahead is uneven: slow down before you reach it.",
   "citation": {
     "source": "FHWA Manual on Uniform Traffic Control Devices, 11th Edition",
+    "short": "MUTCD 11th ed. §2C.26, §2C.30",
     "section": "Section 2C.26 (BUMP, W8-1) and Section 2C.30 (ROUGH ROAD, W8-8)",
     "url": "https://mutcd.fhwa.dot.gov/pdfs/11th_Edition/Chapter2c.pdf"
   },

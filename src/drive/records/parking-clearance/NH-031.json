@@ -38,6 +38,7 @@
   "ruleText": "Do not park within 15 feet of a fire hydrant: firefighters need clear access to it.",
   "citation": {
     "source": "New Hampshire Revised Statutes",
+    "short": "NH RSA 265:69 II(b)",
     "section": "RSA 265:69 II(b)",
     "url": "https://gc.nh.gov/rsa/html/XXI/265/265-69.htm"
   },

@@ -34,6 +34,7 @@
   "ruleText": "A double arrow sign means traffic may pass on either side of the island or obstruction, so stay in your lane and keep moving.",
   "citation": {
     "source": "FHWA Manual on Uniform Traffic Control Devices, 11th Edition",
+    "short": "MUTCD 11th ed. §2C.23",
     "section": "Section 2C.23 (Double Arrow sign, W12-1)",
     "url": "https://mutcd.fhwa.dot.gov/pdfs/11th_Edition/Chapter2c.pdf"
   },

@@ -35,9 +35,10 @@
     }
   ],
   "successText": "You left the crosswalk in plain view. The person crossing and the next driver could see each other in good time.",
-  "ruleText": "Do not park within 20 feet of a crosswalk at an intersection: a parked car that close hides people who are about to cross. A few states set a different distance; add your state to the address to see its rule.",
+  "ruleText": "In most states, do not park within 20 feet of a crosswalk at an intersection: a parked car that close hides people about to cross.",
   "citation": {
     "source": "Uniform Vehicle Code (2000), the model most state laws follow",
+    "short": "Uniform Vehicle Code §11-1003(a)2.C",
     "section": "Section 11-1003(a)2.C",
     "url": "https://iamtraffic.org/wp-content/uploads/2013/01/UVC2000.pdf"
   },

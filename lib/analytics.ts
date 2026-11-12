@@ -202,6 +202,13 @@ export function trackSharePrompt(action: "shown" | "skipped" | "share" | "copy",
   window.gtag?.("event", "share_prompt", { action, where });
 }
 
-export function trackGuestPrompt(action: "shown" | "skipped" | "google" | "email", where: string) {
-  window.gtag?.("event", "guest_prompt", { action, where });
+// Which design of the in-training sign-up step (components/GuestPromptStep) sent
+// the event, so GA4 can compare sign-up taps per showing before and after a change.
+// v1: the save card plus a full-size Keep practicing button (until Nov 12 2026).
+// v2: the streak card; English readers get one of ten test designs instead,
+// sent as `variant` (lib/guestPromptTest).
+export const GUEST_PROMPT_DESIGN = "v2";
+
+export function trackGuestPrompt(action: "shown" | "skipped" | "google" | "email", where: string, variant?: string) {
+  window.gtag?.("event", "guest_prompt", { action, where, design: GUEST_PROMPT_DESIGN, ...(variant && { variant }) });
 }

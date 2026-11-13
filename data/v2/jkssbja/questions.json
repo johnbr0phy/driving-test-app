@@ -1,0 +1,4271 @@
+{
+  "stimuli": [
+    {
+      "id": "JKSSBJA-RC1",
+      "title": "Reading comprehension: the houseboat on the lake",
+      "text": "Ghulam Rasool's family has owned a houseboat on the lake for three generations. His grandfather built it from deodar wood, which resists rot and keeps its shape in water. Every room has carved walnut panels, made by craftsmen whose families have practised the art for centuries.\n\nRunning a houseboat is not easy. The wood must be oiled every summer, and the hull is checked for leaks before the winter. Guests come mostly between April and October, so the family saves carefully for the quiet months. Ghulam's son now handles bookings on his phone, but his father still greets every guest with a cup of kahwa. \"The boat is old,\" he says, \"but the welcome must always be new.\""
+    },
+    {
+      "id": "JKSSBJA-RC2",
+      "title": "Reading comprehension: the village record",
+      "text": "When Shabnam joined the tehsil office as a junior assistant, the land records of her village were kept in thick registers that were slowly falling apart. Farmers often waited for days to get a simple copy of their records, and mistakes in hand-copied entries led to long disputes.\n\nShabnam spent her evenings learning to use the new computer system. Within a year she had entered hundreds of records, checking each one twice against the old register. The work was slow and dull, but she knew that one wrong digit could cost a family its land. Today a farmer can get a printed copy in minutes. Shabnam says the best reward is the quiet thanks of an old man who no longer has to travel twice for the same paper."
+    }
+  ],
+  "questions": [
+    {
+      "id": "JKSSBJA-T1-001",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Articles",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nThe new section officer is ______ MBA graduate.",
+      "options": [
+        "the",
+        "a",
+        "one",
+        "an"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The choice depends on sound, not spelling: MBA is read 'em-bee-ay', which begins with a vowel sound, so it takes 'an'. 'A' goes before a consonant sound, as in 'a university'."
+    },
+    {
+      "id": "JKSSBJA-T1-002",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Synonyms",
+      "stem": "Select the most appropriate synonym of the given word.\n\nTranquil",
+      "options": [
+        "Tiring",
+        "Crowded",
+        "Peaceful",
+        "Noisy"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A tranquil lake or place is calm and quiet, so 'peaceful' is the synonym. 'Noisy' and 'crowded' are close to its opposite."
+    },
+    {
+      "id": "JKSSBJA-T1-003",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Modals",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nRiders ______ wear a helmet on a two-wheeler; it is required by law.",
+      "options": [
+        "might",
+        "must",
+        "would",
+        "could"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "'Must' expresses a duty or legal requirement. 'Might' and 'could' only express possibility, and 'would' expresses a condition or habit."
+    },
+    {
+      "id": "JKSSBJA-T1-004",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Prepositions",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nShe has been working in the Revenue Department ______ six years.",
+      "options": [
+        "for",
+        "since",
+        "from",
+        "by"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "'For' goes with a length of time (for six years); 'since' goes with a starting point (since 2019). Both are used with the present perfect continuous."
+    },
+    {
+      "id": "JKSSBJA-T1-005",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Antonyms",
+      "stem": "Select the most appropriate antonym of the given word.\n\nReluctant",
+      "options": [
+        "Doubtful",
+        "Slow",
+        "Unwilling",
+        "Willing"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A reluctant person does something unwillingly; the opposite is 'willing'. 'Unwilling' is a synonym."
+    },
+    {
+      "id": "JKSSBJA-T1-006",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Narration",
+      "stem": "Select the correct indirect speech form of the sentence.\n\nThe clerk said, \"I am checking the file.\"",
+      "options": [
+        "The clerk said that I was checking the file.",
+        "The clerk said that he had checked the file.",
+        "The clerk said that he was checking the file.",
+        "The clerk said that he is checking the file."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "With a past reporting verb, 'I' becomes 'he' and the present continuous 'am checking' moves back to the past continuous 'was checking'. 'Had checked' changes the tense to the past perfect."
+    },
+    {
+      "id": "JKSSBJA-T1-007",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Idioms and phrases",
+      "stem": "Select the most appropriate meaning of the given idiom.\n\nTo let sleeping dogs lie",
+      "options": [
+        "To wake people early",
+        "To leave a settled problem alone",
+        "To guard a house",
+        "To be lazy at work"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "To 'let sleeping dogs lie' is to avoid stirring up an old quarrel or problem that is causing no trouble now."
+    },
+    {
+      "id": "JKSSBJA-T1-008",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Active and passive voice",
+      "stem": "Select the passive form of the sentence.\n\nThe clerk typed the letter.",
+      "options": [
+        "The letter was typed by the clerk.",
+        "The letter has been typed by the clerk.",
+        "The letter is typed by the clerk.",
+        "The letter had been typed by the clerk."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "'Typed' is simple past, so the passive uses 'was' with the past participle: 'The letter was typed by the clerk.'"
+    },
+    {
+      "id": "JKSSBJA-T1-009",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Clauses",
+      "stem": "In the sentence \"I know where the record room is\", what kind of clause is \"where the record room is\"?",
+      "options": [
+        "A main clause",
+        "An adjective clause",
+        "An adverb clause",
+        "A noun clause"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The clause is the object of 'know': it answers 'know what?', so it does the work of a noun. An adjective clause would describe a noun, as in 'the room where records are kept'."
+    },
+    {
+      "id": "JKSSBJA-T1-010",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Homophones",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nPlease keep the ______ of the office files in mind when you shift them.",
+      "options": [
+        "wait",
+        "wheat",
+        "weight",
+        "white"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "'Weight' (how heavy something is) and 'wait' sound the same but have different meanings. Files have weight."
+    },
+    {
+      "id": "JKSSBJA-T1-011",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Punctuation",
+      "stem": "Select the correctly punctuated sentence.",
+      "options": [
+        "It's raining so, take an umbrella.",
+        "It's raining, so take an umbrella.",
+        "Its' raining, so take an umbrella.",
+        "Its raining, so take an umbrella."
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "'It's' is short for 'it is', so it needs the apostrophe, and the comma comes before 'so' when 'so' joins two clauses. 'Its' without an apostrophe is the possessive, as in 'its roof'."
+    },
+    {
+      "id": "JKSSBJA-T1-012",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Editing / proof reading",
+      "stem": "The sentence below is divided into parts. Select the part that contains an error. If there is no error, select 'No error'.\n\nHe did not / went to / the office yesterday.",
+      "options": [
+        "He did not",
+        "went to",
+        "the office yesterday",
+        "No error"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "After 'did not' the verb takes its base form: 'He did not go to the office yesterday.' The past is already shown by 'did'."
+    },
+    {
+      "id": "JKSSBJA-T1-013",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Pronouns",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nNeither Aamir nor his brothers have finished ______ work.",
+      "options": [
+        "their",
+        "his",
+        "her",
+        "its"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "With 'neither ... nor', the pronoun agrees with the nearer subject, 'his brothers', which is plural, so 'their' is correct."
+    },
+    {
+      "id": "JKSSBJA-T1-014",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Jumbled sentences",
+      "stem": "Rearrange the parts P, Q, R and S to make a meaningful sentence.\n\nP: to the Deputy Commissioner\nQ: the villagers submitted\nR: about the damaged road\nS: a written complaint",
+      "options": [
+        "QPSR",
+        "QRSP",
+        "QSRP",
+        "SQRP"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The subject and verb come first (Q: the villagers submitted), then the object (S: a written complaint), what it was about (R) and to whom (P): 'The villagers submitted a written complaint about the damaged road to the Deputy Commissioner.'"
+    },
+    {
+      "id": "JKSSBJA-T1-015",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Phrases",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nThe old rules were ______ when the new act came into force.",
+      "options": [
+        "put up with",
+        "looked up to",
+        "taken after",
+        "done away with"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "'Do away with' means to abolish. 'Put up with' means to tolerate, 'look up to' means to respect and 'take after' means to resemble."
+    },
+    {
+      "id": "JKSSBJA-T1-016",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Prepositions",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nThe meeting will begin ______ 10 a.m. on Monday.",
+      "options": [
+        "at",
+        "in",
+        "by",
+        "on"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A clock time takes 'at': at 10 a.m. Days take 'on' (on Monday) and months and years take 'in'."
+    },
+    {
+      "id": "JKSSBJA-T1-017",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Comprehension",
+      "stimulusId": "JKSSBJA-RC1",
+      "stem": "Passage 1: why did the grandfather build the houseboat from deodar wood?",
+      "options": [
+        "It was the cheapest wood",
+        "It is easy to carve",
+        "It floats better than walnut",
+        "It resists rot and holds its shape"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The passage says deodar 'resists rot and keeps its shape in water'. Carving is linked to the walnut panels, not the deodar."
+    },
+    {
+      "id": "JKSSBJA-T1-018",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Comprehension",
+      "stimulusId": "JKSSBJA-RC1",
+      "stem": "Passage 1: when do most guests visit the houseboat?",
+      "options": [
+        "All year round",
+        "During the winter",
+        "Between April and October",
+        "Only in summer"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The passage says 'Guests come mostly between April and October', which is why the family saves for the quiet months."
+    },
+    {
+      "id": "JKSSBJA-T1-019",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Comprehension",
+      "stimulusId": "JKSSBJA-RC1",
+      "stem": "Passage 1: what does the father mean by \"the welcome must always be new\"?",
+      "options": [
+        "New guests pay more",
+        "Each guest deserves a warm, fresh welcome",
+        "Only first visits matter",
+        "The boat should be rebuilt often"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "He contrasts the old boat with the welcome: whatever the age of the boat, each guest should be greeted warmly, as if for the first time."
+    },
+    {
+      "id": "JKSSBJA-T1-020",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Comprehension",
+      "stimulusId": "JKSSBJA-RC1",
+      "stem": "Passage 1: what is the main idea of the passage?",
+      "options": [
+        "A family keeps an old trade alive with care",
+        "Houseboats are too costly to run",
+        "Walnut carving is a dying art",
+        "Phones have replaced old customs"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The passage describes how the family looks after the boat, plans for the quiet months and keeps its welcome, so the main idea is caring for an old family trade."
+    },
+    {
+      "id": "JKSSBJA-T1-021",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaIndia",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Political divisions",
+      "stem": "Which Union Territory was formed in January 2020 by merging two Union Territories on the west coast?",
+      "options": [
+        "Goa, Daman and Diu",
+        "Lakshadweep and Puducherry",
+        "Andaman and Nicobar Islands",
+        "Dadra and Nagar Haveli and Daman and Diu"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Dadra and Nagar Haveli and Daman and Diu were merged into one Union Territory from 26 January 2020, which left India with 8 Union Territories."
+    },
+    {
+      "id": "JKSSBJA-T1-022",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaJK",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "J&K UT",
+      "stem": "On which date did the Union Territory of Jammu and Kashmir come into existence?",
+      "options": [
+        "26 January 2020",
+        "5 August 2019",
+        "31 October 2019",
+        "15 August 2019"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The Jammu and Kashmir Reorganisation Act, 2019 formed the two Union Territories from its appointed day, 31 October 2019. The Act received the President's assent on 9 August 2019."
+    },
+    {
+      "id": "JKSSBJA-T1-023",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaIndia",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Physical divisions",
+      "stem": "The Aravalli Range runs mainly through which state?",
+      "options": [
+        "Maharashtra",
+        "Rajasthan",
+        "Odisha",
+        "Gujarat"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The Aravallis run south-west to north-east across Rajasthan, from Gujarat towards Delhi. Mount Abu, their highest area, is in Rajasthan."
+    },
+    {
+      "id": "JKSSBJA-T1-024",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaJK",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "J&K UT",
+      "stem": "Under the Jammu and Kashmir Reorganisation Act, 2019, Ladakh became a Union Territory:",
+      "options": [
+        "without a legislature",
+        "merged with Himachal Pradesh",
+        "with a legislature",
+        "under the J&K Assembly"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The Act formed the Union Territory of Jammu and Kashmir with a legislature and the Union Territory of Ladakh, made of the Kargil and Leh districts, without one."
+    },
+    {
+      "id": "JKSSBJA-T1-025",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaIndia",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Freedom struggle",
+      "stem": "Annie Besant and which leader started Home Rule Leagues in 1916?",
+      "options": [
+        "Dadabhai Naoroji",
+        "Motilal Nehru",
+        "Bipin Chandra Pal",
+        "Bal Gangadhar Tilak"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Tilak founded his Home Rule League at Belgaum in April 1916 and Annie Besant hers at Madras in September 1916; both worked for self-government within the Empire."
+    },
+    {
+      "id": "JKSSBJA-T1-026",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaJK",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "J&K geography",
+      "stem": "How many districts does the Union Territory of Jammu and Kashmir have?",
+      "options": [
+        "14",
+        "18",
+        "20",
+        "22"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "J&K UT has 20 districts, 10 in the Jammu division and 10 in the Kashmir division."
+    },
+    {
+      "id": "JKSSBJA-T1-027",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaIndia",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Heritage",
+      "stem": "The Veerabhadra temple at Lepakshi, known for its 'hanging pillar', is in which state?",
+      "options": [
+        "Kerala",
+        "Andhra Pradesh",
+        "Odisha",
+        "Gujarat"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Lepakshi, in Sri Sathya Sai district of Andhra Pradesh, has a Vijayanagara-era temple with a pillar that does not fully touch the floor."
+    },
+    {
+      "id": "JKSSBJA-T1-028",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaJK",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "J&K history",
+      "stem": "By the Treaty of Amritsar of 1846, the British transferred Kashmir to:",
+      "options": [
+        "Gulab Singh",
+        "Hari Singh",
+        "Ranjit Singh",
+        "Zorawar Singh"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "After the First Anglo-Sikh War the British sold Kashmir to the Dogra ruler Gulab Singh of Jammu by the Treaty of Amritsar (March 1846), founding the princely state of Jammu and Kashmir."
+    },
+    {
+      "id": "JKSSBJA-T1-029",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaIndia",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Census",
+      "stem": "According to Census 2011, the sex ratio of India (females per 1,000 males) was:",
+      "options": [
+        "927",
+        "933",
+        "943",
+        "972"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Census 2011 recorded 943 females per 1,000 males. 933 was the 2001 figure and 927 the 1991 figure."
+    },
+    {
+      "id": "JKSSBJA-T1-030",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaJK",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "J&K history",
+      "stem": "Which Sultan of Kashmir is remembered as 'Budshah', the great king?",
+      "options": [
+        "Shah Mir",
+        "Yusuf Shah Chak",
+        "Sikandar",
+        "Zain-ul-Abidin"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Sultan Zain-ul-Abidin (15th century) is remembered as Budshah for his tolerance, his support of crafts such as papier mache and carpets, and his public works."
+    },
+    {
+      "id": "JKSSBJA-T1-031",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaIndia",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Rivers",
+      "stem": "Which river was called the 'Sorrow of Bengal' for its floods, before dams were built on it?",
+      "options": [
+        "Subarnarekha",
+        "Damodar",
+        "Hooghly",
+        "Teesta"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The Damodar flooded the plains of Bengal so often that it was called the Sorrow of Bengal. The Damodar Valley Corporation (1948) built dams to control it."
+    },
+    {
+      "id": "JKSSBJA-T1-032",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaJK",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "J&K geography",
+      "stem": "The river Jhelum rises from a spring at:",
+      "options": [
+        "Verinag",
+        "Kausarnag",
+        "Sheshnag",
+        "Martand"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The Jhelum rises at the Verinag spring in Anantnag district and flows north-west through Srinagar and Wular Lake."
+    },
+    {
+      "id": "JKSSBJA-T1-033",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaIndia",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Lakes",
+      "stem": "Hussain Sagar, a lake built in the 16th century, separates Hyderabad from which twin city?",
+      "options": [
+        "Vijayawada",
+        "Cyberabad",
+        "Warangal",
+        "Secunderabad"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Hussain Sagar lies between Hyderabad and Secunderabad; a large statue of the Buddha stands on a rock in the lake."
+    },
+    {
+      "id": "JKSSBJA-T1-034",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaJK",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "J&K geography",
+      "stem": "Mansar and Surinsar lakes are in which division of J&K?",
+      "options": [
+        "Ladakh",
+        "Doda division",
+        "Jammu division",
+        "Kashmir division"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Mansar and Surinsar are twin lakes in the hills of the Jammu division, in Samba and Jammu districts. J&K has only two divisions, Jammu and Kashmir."
+    },
+    {
+      "id": "JKSSBJA-T1-035",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaIndia",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Weather and climate",
+      "stem": "Western disturbances bring winter rain and snow mainly to:",
+      "options": [
+        "The Deccan plateau",
+        "North-west India",
+        "The north-east states",
+        "The Coromandel coast"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Western disturbances are low-pressure systems from the Mediterranean region. In winter they bring rain to Punjab and Haryana, which helps the rabi crop, and snow to the western Himalayas, including Jammu and Kashmir."
+    },
+    {
+      "id": "JKSSBJA-T1-036",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaJK",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "J&K economy",
+      "stem": "Which fruit is the leading horticulture crop of Jammu and Kashmir?",
+      "options": [
+        "Apple",
+        "Banana",
+        "Mango",
+        "Orange"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Kashmir is India's main apple-growing region, and apples are the backbone of the UT's fruit economy. Mango is grown only in the warm Jammu plains."
+    },
+    {
+      "id": "JKSSBJA-T1-037",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaIndia",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Crops",
+      "stem": "Which state produces the most mulberry silk in India?",
+      "options": [
+        "Punjab",
+        "Rajasthan",
+        "Haryana",
+        "Karnataka"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Karnataka, around Ramanagara and Mysuru, rears most of India's mulberry silkworms. Mysore silk is one of its best-known products."
+    },
+    {
+      "id": "JKSSBJA-T1-038",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaJK",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "J&K culture",
+      "stem": "Rouf is a:",
+      "options": [
+        "kind of shawl",
+        "Kashmiri dish",
+        "folk dance of Kashmiri women",
+        "Dogri folk song"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "In Rouf, women stand in two facing rows, arms linked, and step forward and back while singing, especially at Eid and in spring."
+    },
+    {
+      "id": "JKSSBJA-T1-039",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaIndia",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Transport",
+      "stem": "India's first metro rail service began in 1984 in which city?",
+      "options": [
+        "Delhi",
+        "Kolkata",
+        "Chennai",
+        "Mumbai"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The Kolkata Metro opened in October 1984. The Delhi Metro began much later, in 2002."
+    },
+    {
+      "id": "JKSSBJA-T1-040",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaJK",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "J&K tourism",
+      "stem": "Gulmarg, known for skiing and its gondola, is in which district?",
+      "options": [
+        "Baramulla",
+        "Kupwara",
+        "Anantnag",
+        "Ganderbal"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Gulmarg is in Baramulla district in the Pir Panjal. Pahalgam is in Anantnag district and Sonamarg in Ganderbal."
+    },
+    {
+      "id": "JKSSBJA-T1-041",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Number system",
+      "stem": "What is the smallest number that must be added to 1,247 to make it exactly divisible by 9?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The digit sum of 1,247 is 1 + 2 + 4 + 7 = 14. The next multiple of 9 is 18, so 4 must be added (1,251 = 9 x 139)."
+    },
+    {
+      "id": "JKSSBJA-T1-042",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaReason",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "Find the next term in the series.\n\n5, 14, 41, 122, ?",
+      "options": [
+        "244",
+        "364",
+        "365",
+        "366"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Each term is 3 times the one before, minus 1: 5 x 3 - 1 = 14, 14 x 3 - 1 = 41, 41 x 3 - 1 = 122, 122 x 3 - 1 = 365."
+    },
+    {
+      "id": "JKSSBJA-T1-043",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Percentage",
+      "stem": "What is 35 percent of 1,240?",
+      "options": [
+        "372",
+        "424",
+        "434",
+        "444"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "10 percent of 1,240 is 124, so 30 percent is 372 and 5 percent is 62. 35 percent is 372 + 62 = 434."
+    },
+    {
+      "id": "JKSSBJA-T1-044",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaReason",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Letter series",
+      "stem": "Find the next term in the series.\n\nB, E, H, K, ?",
+      "options": [
+        "N",
+        "M",
+        "O",
+        "L"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Each letter moves 3 places forward: B (2), E (5), H (8), K (11), N (14)."
+    },
+    {
+      "id": "JKSSBJA-T1-045",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Percentage",
+      "stem": "A clerk's salary rises from ₹32,000 to ₹36,000. What is the percentage increase?",
+      "options": [
+        "4 percent",
+        "10 percent",
+        "11.1 percent",
+        "12.5 percent"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "The rise is ₹4,000 on ₹32,000: 4,000 / 32,000 x 100 = 12.5 percent. Dividing by the new salary (4,000 / 36,000) gives about 11.1 percent, the common slip."
+    },
+    {
+      "id": "JKSSBJA-T1-046",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaReason",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Coding-decoding",
+      "stem": "In a certain code, SHIP is written as TIJQ. How is BOAT written in that code?",
+      "options": [
+        "CPBS",
+        "CPBU",
+        "APZS",
+        "CQBU"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Each letter moves one place forward: S to T, H to I, I to J, P to Q. So B, O, A, T become C, P, B, U."
+    },
+    {
+      "id": "JKSSBJA-T1-047",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Average",
+      "stem": "The marks of five candidates are 52, 61, 47, 58 and 67. What is their average?",
+      "options": [
+        "55",
+        "56",
+        "57",
+        "58"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Total = 52 + 61 + 47 + 58 + 67 = 285. Average = 285 / 5 = 57."
+    },
+    {
+      "id": "JKSSBJA-T1-048",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaReason",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Direction sense",
+      "stem": "Ravi walks 4 km north, turns right and walks 3 km. How far is he from his starting point in a straight line?",
+      "options": [
+        "1 km",
+        "5 km",
+        "6 km",
+        "7 km"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Turning right from north means walking east. The two legs are at right angles, so the distance is the square root of 4 x 4 + 3 x 3 = 25, which is 5 km."
+    },
+    {
+      "id": "JKSSBJA-T1-049",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Average",
+      "stem": "The average of 8 numbers is 35. When one number is removed, the average of the rest is 30. What number was removed?",
+      "options": [
+        "5",
+        "35",
+        "65",
+        "70"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Total of 8 = 8 x 35 = 280. Total of 7 = 7 x 30 = 210. Removed number = 280 - 210 = 70."
+    },
+    {
+      "id": "JKSSBJA-T1-050",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaReason",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Blood relations",
+      "stem": "Pointing to a man, Sana says, \"He is the son of my grandfather's only son.\" How is the man related to Sana?",
+      "options": [
+        "Brother",
+        "Uncle",
+        "Cousin",
+        "Father"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Her grandfather's only son must be Sana's father, so the man is her father's son: her brother."
+    },
+    {
+      "id": "JKSSBJA-T1-051",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Profit and loss",
+      "stem": "A trader buys a carpet for ₹750 and sells it for ₹840. What is his profit percent?",
+      "options": [
+        "11 percent",
+        "12 percent",
+        "14 percent",
+        "90 percent"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Profit = ₹90 on a cost of ₹750: 90 / 750 x 100 = 12 percent. Dividing by the selling price (90 / 840) gives about 10.7 percent; profit percent is always on the cost price."
+    },
+    {
+      "id": "JKSSBJA-T1-052",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaReason",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Mathematical reasoning",
+      "stem": "If '+' means '÷', '-' means 'x', 'x' means '+' and '÷' means '-', what is 24 + 6 - 3 x 5 ÷ 2?",
+      "options": [
+        "9",
+        "13",
+        "15",
+        "17"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Replacing the signs gives 24 ÷ 6 x 3 + 5 - 2. Division and multiplication first: 4 x 3 = 12, then 12 + 5 - 2 = 15."
+    },
+    {
+      "id": "JKSSBJA-T1-053",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Profit and loss",
+      "stem": "By selling a shawl for ₹2,500, a shopkeeper gains 25 percent. What did the shawl cost him?",
+      "options": [
+        "₹1,875",
+        "₹2,000",
+        "₹2,100",
+        "₹2,250"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Selling price = 125 percent of cost, so cost = 2,500 / 1.25 = ₹2,000. Taking 25 percent off ₹2,500 (giving ₹1,875) uses the wrong base."
+    },
+    {
+      "id": "JKSSBJA-T1-054",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaReason",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Speed, distance and time",
+      "stem": "A bus travels at 90 km/h. What is its speed in metres per second?",
+      "options": [
+        "15 m/s",
+        "24 m/s",
+        "25 m/s",
+        "30 m/s"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "To change km/h to m/s, multiply by 5/18: 90 x 5/18 = 25 m/s."
+    },
+    {
+      "id": "JKSSBJA-T1-055",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Ratio and proportion",
+      "stem": "₹840 is divided between Ali and Bina in the ratio 3 : 4. What is Ali's share?",
+      "options": [
+        "₹280",
+        "₹360",
+        "₹420",
+        "₹480"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "There are 3 + 4 = 7 parts of 840 / 7 = ₹120 each. Ali gets 3 x 120 = ₹360 and Bina ₹480."
+    },
+    {
+      "id": "JKSSBJA-T1-056",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaReason",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Speed, distance and time",
+      "stem": "A train 180 m long runs at 72 km/h. How long does it take to pass a pole?",
+      "options": [
+        "8 seconds",
+        "9 seconds",
+        "10 seconds",
+        "12 seconds"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "72 km/h = 72 x 5/18 = 20 m/s. To pass a pole the train covers its own length: 180 / 20 = 9 seconds."
+    },
+    {
+      "id": "JKSSBJA-T1-057",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Ratio and proportion",
+      "stem": "If 12 registers cost ₹540, how much will 20 registers cost at the same rate?",
+      "options": [
+        "₹880",
+        "₹900",
+        "₹960",
+        "₹1,080"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "One register costs 540 / 12 = ₹45, so 20 cost 20 x 45 = ₹900."
+    },
+    {
+      "id": "JKSSBJA-T1-058",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaReason",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Statements and conclusions",
+      "stem": "Read the statement and the two conclusions, then decide which conclusion follows.\n\nStatement: All clerks in the office have passed a typing test.\nConclusions:\nI. Ahmad, a clerk in the office, has passed a typing test.\nII. Everyone who has passed a typing test is a clerk.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Both I and II follow",
+        "Neither I nor II follows"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "If all clerks have passed, any clerk such as Ahmad has passed, so I follows. The statement says nothing about people who are not clerks, so II does not follow."
+    },
+    {
+      "id": "JKSSBJA-T1-059",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Time and work",
+      "stem": "A can finish a piece of work in 12 days and B in 15 days. How long will they take working together?",
+      "options": [
+        "7 days",
+        "6 days",
+        "13 and a half days",
+        "6 days 16 hours"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Together they do 1/12 + 1/15 = 5/60 + 4/60 = 9/60 = 3/20 of the work a day, so they need 20/3 = 6 2/3 days, that is 6 days and 16 hours of a 24-hour day."
+    },
+    {
+      "id": "JKSSBJA-T1-060",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaReason",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "Find the next term in the series.\n\n3, 6, 12, 24, ?",
+      "options": [
+        "30",
+        "36",
+        "42",
+        "48"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Each term is double the one before: 24 x 2 = 48."
+    },
+    {
+      "id": "JKSSBJA-T1-061",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaComputer",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Fundamentals",
+      "stem": "Which part of the CPU directs the flow of data and instructions between the other parts?",
+      "options": [
+        "Control Unit",
+        "Arithmetic Logic Unit",
+        "Cache",
+        "Register"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The Control Unit fetches and decodes instructions and tells the other parts what to do. The Arithmetic Logic Unit does the calculations."
+    },
+    {
+      "id": "JKSSBJA-T1-062",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaOffice",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "MS Word",
+      "stem": "In MS Word, which shortcut inserts a page break?",
+      "options": [
+        "Shift + Enter",
+        "Alt + Enter",
+        "Ctrl + Tab",
+        "Ctrl + Enter"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Ctrl + Enter starts a new page at the cursor. Shift + Enter only starts a new line within the same paragraph."
+    },
+    {
+      "id": "JKSSBJA-T1-063",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaComputer",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Fundamentals",
+      "stem": "Half a byte, that is 4 bits, is called a:",
+      "options": [
+        "Nibble",
+        "Word",
+        "Kilobit",
+        "Pixel"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A nibble is 4 bits, half of an 8-bit byte. A word is the number of bits a processor handles at once, often 32 or 64."
+    },
+    {
+      "id": "JKSSBJA-T1-064",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaOffice",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "MS Word",
+      "stem": "In MS Word, which feature lets you send one letter to many people, each with their own name and address?",
+      "options": [
+        "Mail Merge",
+        "Track Changes",
+        "Word Count",
+        "Find and Replace"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Mail Merge combines a main document with a list of names and addresses to produce a personal copy for each person."
+    },
+    {
+      "id": "JKSSBJA-T1-065",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaComputer",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Fundamentals",
+      "stem": "Space on the hard disk that the operating system uses as extra RAM is called:",
+      "options": [
+        "Flash memory",
+        "Cache memory",
+        "ROM",
+        "Virtual memory"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "When RAM is full, the operating system moves data it is not using to a page file on the disk, called virtual memory. It is much slower than real RAM."
+    },
+    {
+      "id": "JKSSBJA-T1-066",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaOffice",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "MS Excel",
+      "stem": "In MS Excel, what is the address of the cell in column D and row 7?",
+      "options": [
+        "7D",
+        "R7D",
+        "D7",
+        "D:7"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A cell address gives the column letter first and then the row number, so column D, row 7 is D7."
+    },
+    {
+      "id": "JKSSBJA-T1-067",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaComputer",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Hardware and software",
+      "stem": "Which of these is system software?",
+      "options": [
+        "Google Chrome",
+        "Tally",
+        "MS Word",
+        "Windows 11"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "An operating system such as Windows 11 is system software that runs the computer. Word, Chrome and Tally are application software that run on top of it."
+    },
+    {
+      "id": "JKSSBJA-T1-068",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaOffice",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "MS Excel",
+      "stem": "Which Excel formula counts how many cells in B2 to B20 contain numbers?",
+      "options": [
+        "=COUNT(B2:B20)",
+        "=TOTAL(B2:B20)",
+        "=SUM(B2:B20)",
+        "=COUNTA(B2:B20)"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "COUNT counts cells that hold numbers. COUNTA counts every non-empty cell, text included, and SUM adds the values."
+    },
+    {
+      "id": "JKSSBJA-T1-069",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaComputer",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Input and output devices",
+      "stem": "Which of these devices sends data into a computer?",
+      "options": [
+        "Speaker",
+        "Printer",
+        "Monitor",
+        "Scanner"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A scanner is an input device: it sends an image of a page into the computer. Printers, monitors and speakers carry output from the computer to the user."
+    },
+    {
+      "id": "JKSSBJA-T1-070",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaOffice",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "MS Access",
+      "stem": "In MS Access, a single complete record about one item is stored in a table as a:",
+      "options": [
+        "Column",
+        "Report",
+        "Row",
+        "Query"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "In a database table each row is one record and each column is a field, such as Name or Date of Birth."
+    },
+    {
+      "id": "JKSSBJA-T1-071",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaComputer",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Input and output devices",
+      "stem": "Which device reads the marked bubbles on an OMR answer sheet?",
+      "options": [
+        "Plotter",
+        "Optical Mark Reader",
+        "MICR reader",
+        "Barcode reader"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "An Optical Mark Reader senses the dark marks in fixed positions on a form. MICR readers read the magnetic-ink numbers on cheques."
+    },
+    {
+      "id": "JKSSBJA-T1-072",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaOffice",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "PowerPoint",
+      "stem": "Which key ends a running PowerPoint slide show?",
+      "options": [
+        "Esc",
+        "Home",
+        "Tab",
+        "F5"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Esc ends the show and returns to the editing view. F5 starts a show from the first slide."
+    },
+    {
+      "id": "JKSSBJA-T1-073",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaComputer",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Operating system",
+      "stem": "Which is the main function of an operating system?",
+      "options": [
+        "To browse websites",
+        "To remove viruses only",
+        "To type documents",
+        "To manage hardware and run programs"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The operating system manages memory, files, devices and processes and lets other programs run. Typing and browsing are the jobs of application programs."
+    },
+    {
+      "id": "JKSSBJA-T1-074",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaOffice",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "E-mail",
+      "stem": "In an e-mail, the 'Cc' field is used to:",
+      "options": [
+        "Write the subject",
+        "Block the sender",
+        "Send a copy to other people",
+        "Attach a file"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Cc (carbon copy) sends a copy to others, and every recipient can see their addresses. Bcc hides the addresses."
+    },
+    {
+      "id": "JKSSBJA-T1-075",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaComputer",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Operating system",
+      "stem": "In Windows, deleted files usually go first to the:",
+      "options": [
+        "Start menu",
+        "Recycle Bin",
+        "Taskbar",
+        "Control Panel"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Deleted files go to the Recycle Bin, from where they can be restored until the bin is emptied. Shift + Delete skips the bin."
+    },
+    {
+      "id": "JKSSBJA-T1-076",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaOffice",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Internet",
+      "stem": "What does 'URL' stand for?",
+      "options": [
+        "Uniform Resource Locator",
+        "Unified Record List",
+        "User Request Line",
+        "Universal Routing Link"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A Uniform Resource Locator is a web address, such as https://www.example.com, that tells the browser where to find a page."
+    },
+    {
+      "id": "JKSSBJA-T1-077",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaComputer",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Fundamentals",
+      "stem": "Which number system uses only the digits 0 and 1?",
+      "options": [
+        "Octal",
+        "Decimal",
+        "Hexadecimal",
+        "Binary"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Binary is base 2 and uses only 0 and 1. Octal uses 0 to 7 and hexadecimal 0 to 9 and A to F."
+    },
+    {
+      "id": "JKSSBJA-T1-078",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaOffice",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Internet",
+      "stem": "Which protocol does a mail program use to download mail from the server, usually removing it there?",
+      "options": [
+        "SMTP",
+        "FTP",
+        "POP3",
+        "HTTP"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "POP3 downloads mail to one device and usually deletes it from the server; IMAP keeps it on the server. SMTP is used to send mail."
+    },
+    {
+      "id": "JKSSBJA-T1-079",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaComputer",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Hardware and software",
+      "stem": "Software that is free to use but whose source code is not shared is called:",
+      "options": [
+        "Firmware",
+        "Freeware",
+        "Open-source software",
+        "Shareware"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Freeware costs nothing but its code stays closed. Open-source software publishes its code, and shareware is free only for a trial period."
+    },
+    {
+      "id": "JKSSBJA-T1-080",
+      "section": "paper",
+      "test": 1,
+      "module": 1,
+      "domain": "jkjaOffice",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "MS Excel",
+      "stem": "In MS Excel, what does a cell show when a formula divides a number by zero?",
+      "options": [
+        "#DIV/0!",
+        "#VALUE!",
+        "#NAME?",
+        "#REF!"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "#DIV/0! means a division by zero or by an empty cell. #NAME? means Excel does not recognise a function name, and #REF! means a cell reference is invalid."
+    },
+    {
+      "id": "JKSSBJA-T2-001",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Articles",
+      "stem": "Select the most appropriate option to fill in the blank.\n\n______ Jhelum flows through Srinagar.",
+      "options": [
+        "A",
+        "An",
+        "No article",
+        "The"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Names of rivers take the definite article: the Jhelum, the Chenab, the Tawi."
+    },
+    {
+      "id": "JKSSBJA-T2-002",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Synonyms",
+      "stem": "Select the most appropriate synonym of the given word.\n\nBenevolent",
+      "options": [
+        "Clever",
+        "Wealthy",
+        "Kind",
+        "Cruel"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A benevolent person is kind and wishes to do good for others. 'Cruel' is close to its opposite."
+    },
+    {
+      "id": "JKSSBJA-T2-003",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Modals",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nYou ______ not pay the fee again; it has already been paid.",
+      "options": [
+        "dare",
+        "need",
+        "would",
+        "must"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "'Need not' says something is not necessary, which fits a fee already paid. 'Must not' would forbid paying it, which is a different meaning."
+    },
+    {
+      "id": "JKSSBJA-T2-004",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Prepositions",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nThe office is closed ______ Sundays.",
+      "options": [
+        "on",
+        "at",
+        "in",
+        "by"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Days of the week take 'on': on Sundays, on Monday. 'In' goes with months and years."
+    },
+    {
+      "id": "JKSSBJA-T2-005",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Antonyms",
+      "stem": "Select the most appropriate antonym of the given word.\n\nDiminish",
+      "options": [
+        "Reduce",
+        "Shrink",
+        "Lessen",
+        "Increase"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "To diminish is to become smaller; the opposite is 'increase'. 'Reduce', 'shrink' and 'lessen' are synonyms."
+    },
+    {
+      "id": "JKSSBJA-T2-006",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Narration",
+      "stem": "Select the correct indirect speech form of the sentence.\n\nShe said to me, \"Please sign the register.\"",
+      "options": [
+        "She said me to sign the register.",
+        "She told to me to sign the register.",
+        "She requested me to sign the register.",
+        "She requested me that I sign the register."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A polite command with 'please' becomes 'requested' + object + to-infinitive. 'Said me' is wrong because 'say' does not take a person as a direct object."
+    },
+    {
+      "id": "JKSSBJA-T2-007",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Idioms and phrases",
+      "stem": "Select the most appropriate meaning of the given idiom.\n\nA wet blanket",
+      "options": [
+        "A rainy holiday",
+        "A person who spoils others' fun",
+        "A useless gift",
+        "A careful worker"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A 'wet blanket' is someone whose gloomy attitude spoils other people's enjoyment."
+    },
+    {
+      "id": "JKSSBJA-T2-008",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Active and passive voice",
+      "stem": "Select the passive form of the sentence.\n\nThe officer is checking the applications.",
+      "options": [
+        "The applications are being checked by the officer.",
+        "The applications have been checked by the officer.",
+        "The applications were being checked by the officer.",
+        "The applications are checked by the officer."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Present continuous active ('is checking') becomes 'is/are being' + past participle. The subject 'applications' is plural, so 'are being checked'."
+    },
+    {
+      "id": "JKSSBJA-T2-009",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Clauses",
+      "stem": "In the sentence \"The file that you sent was incomplete\", the clause \"that you sent\" is:",
+      "options": [
+        "a main clause",
+        "an adverb clause",
+        "a noun clause",
+        "an adjective clause"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The clause describes the noun 'file' (which file? the one you sent), so it is an adjective (relative) clause."
+    },
+    {
+      "id": "JKSSBJA-T2-010",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Homonyms",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nThe officer asked the clerk to ______ the visitors' book on the table.",
+      "options": [
+        "palace",
+        "plaice",
+        "place",
+        "plays"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "'Place' (to put) and 'plaice' (a fish) sound the same. Only 'place' fits the meaning of putting the book down."
+    },
+    {
+      "id": "JKSSBJA-T2-011",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Punctuation",
+      "stem": "Which of these sentences is punctuated correctly?",
+      "options": [
+        "Srinagar, Gulmarg, and, Leh are cold in winter.",
+        "Srinagar, Gulmarg and Leh are cold in winter.",
+        "Srinagar; Gulmarg and Leh are cold in winter.",
+        "Srinagar Gulmarg, and Leh are cold in winter."
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Items in a list are separated by commas. A semicolon or a comma after 'and' breaks the list wrongly."
+    },
+    {
+      "id": "JKSSBJA-T2-012",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Editing / proof reading",
+      "stem": "The sentence below is divided into parts. Select the part that contains an error. If there is no error, select 'No error'.\n\nMathematics / are / my favourite subject at school.",
+      "options": [
+        "Mathematics",
+        "are",
+        "my favourite subject at school",
+        "No error"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Subjects such as mathematics, physics and economics end in -s but are singular: 'Mathematics is my favourite subject at school.'"
+    },
+    {
+      "id": "JKSSBJA-T2-013",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Pronouns",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nThe committee submitted ______ report on Friday.",
+      "options": [
+        "its",
+        "it's",
+        "their's",
+        "theirs"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "'Its' is the possessive of 'it' and has no apostrophe. 'It's' means 'it is', and 'their's' is not a word."
+    },
+    {
+      "id": "JKSSBJA-T2-014",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Jumbled sentences",
+      "stem": "Rearrange the parts P, Q, R and S to make a meaningful sentence.\n\nP: before the last date\nQ: all candidates must\nR: their application forms\nS: submit",
+      "options": [
+        "SQPR",
+        "QRSP",
+        "QSRP",
+        "SQRP"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Subject and modal (Q), then the verb (S: submit), its object (R) and the time phrase (P): 'All candidates must submit their application forms before the last date.'"
+    },
+    {
+      "id": "JKSSBJA-T2-015",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Phrases",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nThe match was ______ because of heavy snowfall.",
+      "options": [
+        "called up",
+        "called in",
+        "called on",
+        "called off"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "'Call off' means to cancel. 'Call on' means to visit, 'call up' means to phone or summon, and 'call in' means to ask someone to come and help."
+    },
+    {
+      "id": "JKSSBJA-T2-016",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Articles",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nHe waited for ______ hour at the bus stand.",
+      "options": [
+        "an",
+        "one",
+        "a",
+        "the"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The h in 'hour' is silent, so the word begins with a vowel sound and takes 'an'."
+    },
+    {
+      "id": "JKSSBJA-T2-017",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Comprehension",
+      "stimulusId": "JKSSBJA-RC2",
+      "stem": "Passage 2: what problem did farmers face before the records were computerised?",
+      "options": [
+        "No tehsil office nearby",
+        "Records written in a foreign language",
+        "High fees for each copy",
+        "Long waits for copies of records"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The passage says farmers 'often waited for days to get a simple copy of their records'. Fees and language are not mentioned."
+    },
+    {
+      "id": "JKSSBJA-T2-018",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Comprehension",
+      "stimulusId": "JKSSBJA-RC2",
+      "stem": "Passage 2: why did Shabnam check each record twice?",
+      "options": [
+        "Her officer ordered her to",
+        "The computer often failed",
+        "One wrong digit could cost land",
+        "She was paid per record"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The passage says 'she knew that one wrong digit could cost a family its land', which is why she checked each entry twice."
+    },
+    {
+      "id": "JKSSBJA-T2-019",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Comprehension",
+      "stimulusId": "JKSSBJA-RC2",
+      "stem": "Passage 2: which word best describes Shabnam?",
+      "options": [
+        "Boastful",
+        "Dedicated",
+        "Careless",
+        "Impatient"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "She learned the system in her own evenings and checked every entry twice despite dull work, which shows dedication."
+    },
+    {
+      "id": "JKSSBJA-T2-020",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Comprehension",
+      "stimulusId": "JKSSBJA-RC2",
+      "stem": "Passage 2: as used in the passage, the word \"dull\" means:",
+      "options": [
+        "boring",
+        "foolish",
+        "blunt",
+        "dim"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The work was 'slow and dull', that is, boring and repetitive. 'Dim', 'foolish' and 'blunt' are other meanings of 'dull' that do not fit here."
+    },
+    {
+      "id": "JKSSBJA-T2-021",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaIndia",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Political divisions",
+      "stem": "Sikkim shares international borders with China, Nepal and:",
+      "options": [
+        "Bangladesh",
+        "Pakistan",
+        "Myanmar",
+        "Bhutan"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Sikkim borders Tibet (China) to the north, Nepal to the west and Bhutan to the east. Bangladesh borders West Bengal and the north-eastern states, not Sikkim."
+    },
+    {
+      "id": "JKSSBJA-T2-022",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaJK",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "J&K history",
+      "stem": "On which date did Maharaja Hari Singh sign the Instrument of Accession to India?",
+      "options": [
+        "26 January 1950",
+        "22 October 1947",
+        "26 October 1947",
+        "15 August 1947"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Maharaja Hari Singh signed the Instrument of Accession on 26 October 1947, after tribal raiders had invaded the state on 22 October."
+    },
+    {
+      "id": "JKSSBJA-T2-023",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaIndia",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Physical divisions",
+      "stem": "The Deccan Traps of the Deccan Plateau are mainly made of:",
+      "options": [
+        "Limestone",
+        "Volcanic basalt",
+        "River alluvium",
+        "Sandstone"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The Deccan Traps formed from huge lava flows that cooled into basalt. That basalt weathers into the black soil of Maharashtra."
+    },
+    {
+      "id": "JKSSBJA-T2-024",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaJK",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "J&K UT",
+      "stem": "Which of these is NOT an official language of J&K under the J&K Official Languages Act, 2020?",
+      "options": [
+        "Punjabi",
+        "Kashmiri",
+        "Dogri",
+        "Urdu"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The Act made Kashmiri, Dogri, Urdu, Hindi and English the official languages of the UT. Punjabi is not on the list."
+    },
+    {
+      "id": "JKSSBJA-T2-025",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaIndia",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Freedom struggle",
+      "stem": "The Khilafat Movement in India (1919 to 1924) was started in support of:",
+      "options": [
+        "The Nizam of Hyderabad",
+        "The Emir of Afghanistan",
+        "The Nawab of Awadh",
+        "The Caliph of Turkey"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "After the First World War the Allies weakened the Ottoman Sultan, who was also the Caliph. Indian Muslims launched the Khilafat Movement in his support, and Gandhi joined it with Non-Cooperation."
+    },
+    {
+      "id": "JKSSBJA-T2-026",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaJK",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "J&K geography",
+      "stem": "Which mountain range separates the Kashmir Valley from the Jammu region?",
+      "options": [
+        "Zanskar",
+        "Karakoram",
+        "Pir Panjal",
+        "Siwalik"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The Pir Panjal range forms the south-western wall of the Kashmir Valley; the Jawahar and Banihal tunnels cross it. The Zanskar range lies to the north-east, towards Ladakh."
+    },
+    {
+      "id": "JKSSBJA-T2-027",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaIndia",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Culture",
+      "stem": "Chhau, a dance performed with masks in some styles, belongs to which region?",
+      "options": [
+        "Punjab and Haryana",
+        "Odisha, Jharkhand and West Bengal",
+        "Gujarat and Rajasthan",
+        "Kerala and Tamil Nadu"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Chhau has three styles, Mayurbhanj (Odisha), Seraikela (Jharkhand) and Purulia (West Bengal); the last two use masks. It is on UNESCO's intangible heritage list."
+    },
+    {
+      "id": "JKSSBJA-T2-028",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaJK",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "J&K demography",
+      "stem": "In Census 2011, which district of present-day J&K had the largest population?",
+      "options": [
+        "Jammu",
+        "Srinagar",
+        "Baramulla",
+        "Anantnag"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Jammu district had about 15.3 lakh people, ahead of Srinagar (about 12.4 lakh), Anantnag (10.8 lakh) and Baramulla (10.1 lakh)."
+    },
+    {
+      "id": "JKSSBJA-T2-029",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaIndia",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Census",
+      "stem": "Which state had the highest sex ratio in Census 2011?",
+      "options": [
+        "Punjab",
+        "Bihar",
+        "Haryana",
+        "Kerala"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Kerala had 1,084 females per 1,000 males in 2011, the highest among states. Haryana had the lowest."
+    },
+    {
+      "id": "JKSSBJA-T2-030",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaJK",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "J&K history",
+      "stem": "The Martand Sun Temple near Anantnag was built by:",
+      "options": [
+        "Gulab Singh",
+        "Zain-ul-Abidin",
+        "Lalitaditya Muktapida",
+        "Avantivarman"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The Karkota king Lalitaditya Muktapida built the Martand Sun Temple in the 8th century. Avantivarman founded Avantipur in the 9th century."
+    },
+    {
+      "id": "JKSSBJA-T2-031",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaIndia",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Rivers",
+      "stem": "The Tungabhadra is a tributary of which river?",
+      "options": [
+        "Kaveri",
+        "Krishna",
+        "Godavari",
+        "Mahanadi"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The Tungabhadra, formed by the Tunga and the Bhadra in Karnataka, flows past Hampi and joins the Krishna in Andhra Pradesh."
+    },
+    {
+      "id": "JKSSBJA-T2-032",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaJK",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "J&K geography",
+      "stem": "The river Tawi flows through which city?",
+      "options": [
+        "Jammu",
+        "Srinagar",
+        "Anantnag",
+        "Sopore"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The Tawi, a tributary of the Chenab, flows through Jammu, which is why Jammu is often called Jammu Tawi."
+    },
+    {
+      "id": "JKSSBJA-T2-033",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaIndia",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Lakes",
+      "stem": "Naini Tal and Bhimtal lakes are in which state?",
+      "options": [
+        "Meghalaya",
+        "Sikkim",
+        "Himachal Pradesh",
+        "Uttarakhand"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Naini Tal and Bhimtal are lakes in the Kumaon hills of Uttarakhand."
+    },
+    {
+      "id": "JKSSBJA-T2-034",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaJK",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "J&K culture",
+      "stem": "Dogri was added to the Eighth Schedule of the Constitution in:",
+      "options": [
+        "1967",
+        "1992",
+        "2003",
+        "2011"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The 92nd Amendment (2003) added Dogri, Bodo, Maithili and Santhali. Kashmiri has been in the Eighth Schedule since 1950."
+    },
+    {
+      "id": "JKSSBJA-T2-035",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaIndia",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Weather and climate",
+      "stem": "Tamil Nadu gets much of its rain in October and November from:",
+      "options": [
+        "Kalbaisakhi storms",
+        "The north-east monsoon",
+        "The south-west monsoon",
+        "Western disturbances"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The south-west monsoon largely misses the Tamil Nadu coast, which gets most of its rain when the north-east winds blow back over the Bay of Bengal in autumn."
+    },
+    {
+      "id": "JKSSBJA-T2-036",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaJK",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "J&K heritage",
+      "stem": "Which tree, whose leaves turn red and gold in autumn, is a symbol of Kashmir?",
+      "options": [
+        "Chinar",
+        "Pine",
+        "Willow",
+        "Deodar"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The chinar (oriental plane) lines the Mughal gardens and village squares of Kashmir; its autumn colours are a symbol of the valley. Willow wood is used for Kashmir's cricket bats."
+    },
+    {
+      "id": "JKSSBJA-T2-037",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaIndia",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Crops",
+      "stem": "In India, the 'Golden Revolution' refers to a rise in the output of:",
+      "options": [
+        "Fish",
+        "Milk",
+        "Oilseeds",
+        "Horticulture crops"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The Golden Revolution (from about 1991) was the growth of horticulture: fruits, vegetables, flowers and honey. The Yellow Revolution was oilseeds, the White Revolution milk and the Blue Revolution fish."
+    },
+    {
+      "id": "JKSSBJA-T2-038",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaJK",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "J&K tourism",
+      "stem": "The hill resort of Patnitop is in which district?",
+      "options": [
+        "Poonch",
+        "Kathua",
+        "Udhampur",
+        "Kishtwar"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Patnitop lies on the Jammu-Srinagar highway in Udhampur district, above the Chenani-Nashri tunnel."
+    },
+    {
+      "id": "JKSSBJA-T2-039",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaIndia",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Transport",
+      "stem": "Which is India's only riverine major port, on the Hooghly?",
+      "options": [
+        "Visakhapatnam",
+        "Kolkata",
+        "Paradip",
+        "Kandla"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The Kolkata port (Syama Prasad Mookerjee Port) lies far up the Hooghly river. Paradip, Visakhapatnam and Kandla are coastal ports."
+    },
+    {
+      "id": "JKSSBJA-T2-040",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaJK",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "J&K economy",
+      "stem": "The Kani shawl of Kashmir takes its name from:",
+      "options": [
+        "the small wooden spools used to weave it",
+        "the colour of its border",
+        "the village where wool is dyed",
+        "the goat whose wool is used"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A kani is a small wooden spool. Weavers use hundreds of them to pass coloured threads through the warp and build the pattern."
+    },
+    {
+      "id": "JKSSBJA-T2-041",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Number system",
+      "stem": "What is the LCM of 6, 14 and 21?",
+      "options": [
+        "21",
+        "42",
+        "84",
+        "126"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "6 = 2 x 3, 14 = 2 x 7, 21 = 3 x 7. Taking each prime once at its highest power: 2 x 3 x 7 = 42."
+    },
+    {
+      "id": "JKSSBJA-T2-042",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaReason",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "Find the next term in the series.\n\n5, 10, 17, 26, 37, ?",
+      "options": [
+        "48",
+        "49",
+        "50",
+        "52"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The terms are n squared plus 1 for n = 2, 3, 4, 5, 6, so next is 7 x 7 + 1 = 50. The gaps 5, 7, 9, 11 point the same way: 37 + 13 = 50."
+    },
+    {
+      "id": "JKSSBJA-T2-043",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Number system",
+      "stem": "Which of these numbers is a prime number?",
+      "options": [
+        "87",
+        "91",
+        "93",
+        "97"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "91 = 7 x 13, 87 = 3 x 29 and 93 = 3 x 31, but 97 has no factor other than 1 and itself."
+    },
+    {
+      "id": "JKSSBJA-T2-044",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaReason",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Letter series",
+      "stem": "Find the next term in the series.\n\nAZ, BY, CX, DW, ?",
+      "options": [
+        "EV",
+        "EU",
+        "EW",
+        "FV"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The first letters go forward (A, B, C, D, E) and the second letters go backward (Z, Y, X, W, V)."
+    },
+    {
+      "id": "JKSSBJA-T2-045",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Percentage",
+      "stem": "In a village of 4,500 people, 36 percent are children. How many children are there?",
+      "options": [
+        "1,260",
+        "1,580",
+        "1,620",
+        "1,700"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "36 percent of 4,500 = 0.36 x 4,500 = 1,620."
+    },
+    {
+      "id": "JKSSBJA-T2-046",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaReason",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Coding-decoding",
+      "stem": "If GOLD is coded as 7-15-12-4 (each letter's place in the alphabet), how is JAMMU coded?",
+      "options": [
+        "11-1-13-13-21",
+        "10-1-13-13-20",
+        "10-1-12-12-21",
+        "10-1-13-13-21"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "J is the 10th letter, A the 1st, M the 13th and U the 21st, so JAMMU is 10-1-13-13-21."
+    },
+    {
+      "id": "JKSSBJA-T2-047",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Average",
+      "stem": "The average age of 30 students is 14 years. When the teacher's age is added, the average becomes 15 years. How old is the teacher?",
+      "options": [
+        "29 years",
+        "31 years",
+        "44 years",
+        "45 years"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Total of 31 people = 31 x 15 = 465. Total of 30 students = 30 x 14 = 420. Teacher = 465 - 420 = 45 years."
+    },
+    {
+      "id": "JKSSBJA-T2-048",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaReason",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Direction sense",
+      "stem": "Facing east, Imran turns 90 degrees to his left. Which direction does he now face?",
+      "options": [
+        "North",
+        "West",
+        "South",
+        "East"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Turning left from east brings him to face north. A right turn would face south."
+    },
+    {
+      "id": "JKSSBJA-T2-049",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Profit and loss",
+      "stem": "An almirah bought for ₹4,000 is sold at a loss of 12 percent. What is its selling price?",
+      "options": [
+        "₹3,480",
+        "₹3,520",
+        "₹3,600",
+        "₹3,880"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Loss = 12 percent of 4,000 = ₹480, so the selling price is 4,000 - 480 = ₹3,520."
+    },
+    {
+      "id": "JKSSBJA-T2-050",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaReason",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Blood relations",
+      "stem": "A is the father of B. B is the sister of C. C is the son of D. How is D related to A?",
+      "options": [
+        "Daughter",
+        "Mother",
+        "Wife",
+        "Sister"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "B and C are A's children, and C is also D's son, so D is the other parent: A's wife."
+    },
+    {
+      "id": "JKSSBJA-T2-051",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Profit and loss",
+      "stem": "A shopkeeper marks a radio at ₹1,500 and allows a 10 percent discount, still making a profit of 12.5 percent. What did the radio cost him?",
+      "options": [
+        "₹1,180",
+        "₹1,200",
+        "₹1,250",
+        "₹1,350"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Selling price = 90 percent of 1,500 = ₹1,350. This is 112.5 percent of cost, so cost = 1,350 / 1.125 = ₹1,200."
+    },
+    {
+      "id": "JKSSBJA-T2-052",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaReason",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Mathematical reasoning",
+      "stem": "If 3 @ 4 = 25 and 5 @ 12 = 169, what is 6 @ 8?",
+      "options": [
+        "48",
+        "64",
+        "100",
+        "196"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "The rule is a @ b = a squared + b squared: 9 + 16 = 25 and 25 + 144 = 169, so 6 @ 8 = 36 + 64 = 100."
+    },
+    {
+      "id": "JKSSBJA-T2-053",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Ratio and proportion",
+      "stem": "The ratio of boys to girls in a class is 5 : 3. If there are 24 girls, how many boys are there?",
+      "options": [
+        "32",
+        "35",
+        "40",
+        "45"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "3 parts = 24, so one part = 8 and the boys are 5 x 8 = 40."
+    },
+    {
+      "id": "JKSSBJA-T2-054",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaReason",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Speed, distance and time",
+      "stem": "A car covers 315 km in 4 hours 30 minutes. What is its average speed?",
+      "options": [
+        "63 km/h",
+        "70 km/h",
+        "75 km/h",
+        "78.75 km/h"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "4 hours 30 minutes = 4.5 hours, and 315 / 4.5 = 70 km/h. Dividing by 4 (78.75) ignores the half hour."
+    },
+    {
+      "id": "JKSSBJA-T2-055",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Ratio and proportion",
+      "stem": "Find the fourth proportional to 4, 9 and 12.",
+      "options": [
+        "21",
+        "24",
+        "27",
+        "36"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "If 4 : 9 = 12 : x, then 4x = 9 x 12 = 108, so x = 27."
+    },
+    {
+      "id": "JKSSBJA-T2-056",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaReason",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Speed, distance and time",
+      "stem": "A man goes to his office at 30 km/h and returns along the same road at 20 km/h. What is his average speed for the round trip?",
+      "options": [
+        "22 km/h",
+        "24 km/h",
+        "25 km/h",
+        "26 km/h"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "For equal distances the average speed is 2 x 30 x 20 / (30 + 20) = 1,200 / 50 = 24 km/h, not the simple average of 25."
+    },
+    {
+      "id": "JKSSBJA-T2-057",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Time and work",
+      "stem": "12 workers can repair a road in 20 days. How many days will 16 workers take to do the same job?",
+      "options": [
+        "12 days",
+        "15 days",
+        "18 days",
+        "24 days"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The work is 12 x 20 = 240 worker-days. With 16 workers it takes 240 / 16 = 15 days. More workers means fewer days, so a longer answer is the wrong-way proportion."
+    },
+    {
+      "id": "JKSSBJA-T2-058",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaReason",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Statements and conclusions",
+      "stem": "Read the statement and the two conclusions, then decide which conclusion follows.\n\nStatement: The government has decided to open a new degree college in every district.\nConclusions:\nI. Every student in each district will now join a college.\nII. Schools in the districts will be closed.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Both I and II follow",
+        "Neither I nor II follows"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Opening a college makes study possible but does not mean every student will join, so I does not follow. Nothing in the statement concerns schools, so II does not follow either."
+    },
+    {
+      "id": "JKSSBJA-T2-059",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Time and work",
+      "stem": "A pipe fills a tank in 6 hours and another empties it in 9 hours. If both are opened together, how long does the tank take to fill?",
+      "options": [
+        "3 hours",
+        "12 hours",
+        "15 hours",
+        "18 hours"
+      ],
+      "correct": [
+        3
+      ],
+      "lockedOrder": true,
+      "explanation": "Each hour the tank gains 1/6 - 1/9 = 3/18 - 2/18 = 1/18 of its volume, so it fills in 18 hours."
+    },
+    {
+      "id": "JKSSBJA-T2-060",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaReason",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Letter series",
+      "stem": "Find the next term in the series.\n\nC, F, I, L, ?",
+      "options": [
+        "O",
+        "N",
+        "M",
+        "P"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Each letter is 3 places after the last: C (3), F (6), I (9), L (12), O (15)."
+    },
+    {
+      "id": "JKSSBJA-T2-061",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaComputer",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Fundamentals",
+      "stem": "What does 'ALU' stand for in a CPU?",
+      "options": [
+        "Arithmetic Logic Unit",
+        "Access Link Unit",
+        "Automatic Load Unit",
+        "Array Logic Unit"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The Arithmetic Logic Unit does calculations and logical comparisons. The Control Unit directs the flow of instructions."
+    },
+    {
+      "id": "JKSSBJA-T2-062",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaOffice",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "MS Word",
+      "stem": "In MS Word, which shortcut undoes the last action?",
+      "options": [
+        "Ctrl + Z",
+        "Ctrl + X",
+        "Ctrl + Y",
+        "Ctrl + Q"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Ctrl + Z undoes and Ctrl + Y redoes. Ctrl + X cuts the selected text."
+    },
+    {
+      "id": "JKSSBJA-T2-063",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaComputer",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Fundamentals",
+      "stem": "Which of these is the largest unit of storage?",
+      "options": [
+        "Kilobyte",
+        "Megabyte",
+        "Gigabyte",
+        "Terabyte"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "In increasing order: kilobyte, megabyte, gigabyte, terabyte. One terabyte is 1,024 gigabytes."
+    },
+    {
+      "id": "JKSSBJA-T2-064",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaOffice",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "MS Word",
+      "stem": "In MS Word, which feature shows every edit made by different reviewers in a document?",
+      "options": [
+        "Track Changes",
+        "Mail Merge",
+        "Format Painter",
+        "Page Setup"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Track Changes records insertions, deletions and formatting changes so each one can be accepted or rejected."
+    },
+    {
+      "id": "JKSSBJA-T2-065",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaComputer",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Fundamentals",
+      "stem": "The binary number 1011 equals which decimal number?",
+      "options": [
+        "9",
+        "10",
+        "11",
+        "13"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "1011 in binary = 1 x 8 + 0 x 4 + 1 x 2 + 1 x 1 = 11."
+    },
+    {
+      "id": "JKSSBJA-T2-066",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaOffice",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "MS Excel",
+      "stem": "Which Excel function counts the cells that meet one condition, such as marks above 40?",
+      "options": [
+        "COUNT",
+        "SUMIF",
+        "IF",
+        "COUNTIF"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "=COUNTIF(C2:C50, \">40\") counts the cells above 40. SUMIF adds them instead, and IF returns one of two values."
+    },
+    {
+      "id": "JKSSBJA-T2-067",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaComputer",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Hardware and software",
+      "stem": "Which of these is hardware?",
+      "options": [
+        "Spreadsheet",
+        "Motherboard",
+        "Device driver",
+        "Antivirus"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A motherboard is a physical circuit board. Antivirus programs, drivers and spreadsheets are software."
+    },
+    {
+      "id": "JKSSBJA-T2-068",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaOffice",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "MS Excel",
+      "stem": "In MS Excel, which cell reference does not change when the formula is copied to another cell?",
+      "options": [
+        "\\$A\\$1",
+        "A\\$1",
+        "A1",
+        "\\$A1"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The dollar signs fix both the column and the row, making an absolute reference. A\\$1 and \\$A1 fix only one part (mixed references)."
+    },
+    {
+      "id": "JKSSBJA-T2-069",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaComputer",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Input and output devices",
+      "stem": "Which output device draws large maps and building plans with pens or ink?",
+      "options": [
+        "Light pen",
+        "Joystick",
+        "Scanner",
+        "Plotter"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A plotter makes large, precise line drawings such as engineering plans. Scanners, light pens and joysticks are input devices."
+    },
+    {
+      "id": "JKSSBJA-T2-070",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaOffice",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "MS Access",
+      "stem": "In MS Access, which object is used to find records that meet certain conditions?",
+      "options": [
+        "Macro",
+        "Form",
+        "Query",
+        "Report"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A query asks the database for records that match criteria, such as all applicants from one district. Forms enter data and reports print it."
+    },
+    {
+      "id": "JKSSBJA-T2-071",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaComputer",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Input and output devices",
+      "stem": "A touch screen works as:",
+      "options": [
+        "An output device only",
+        "Both an input and an output device",
+        "An input device only",
+        "A storage device"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "It shows output on the display and takes input from the user's touch."
+    },
+    {
+      "id": "JKSSBJA-T2-072",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaOffice",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "MS Access",
+      "stem": "A field that uniquely identifies each record in an Access table is called the:",
+      "options": [
+        "Primary key",
+        "Index field",
+        "Foreign key",
+        "Lookup field"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The primary key holds a unique value for each record, such as an application number. A foreign key links to the primary key of another table."
+    },
+    {
+      "id": "JKSSBJA-T2-073",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaComputer",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Operating system",
+      "stem": "Which of these is an open-source operating system?",
+      "options": [
+        "Windows",
+        "macOS",
+        "MS-DOS",
+        "Linux"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Linux is released under an open-source licence. Windows, macOS and MS-DOS are closed, proprietary systems."
+    },
+    {
+      "id": "JKSSBJA-T2-074",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaOffice",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "PowerPoint",
+      "stem": "In PowerPoint, the effect used when moving from one slide to the next is called a:",
+      "options": [
+        "Animation",
+        "Layout",
+        "Transition",
+        "Theme"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Transitions happen between slides. Animations move objects within a single slide."
+    },
+    {
+      "id": "JKSSBJA-T2-075",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaComputer",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Operating system",
+      "stem": "Which key combination opens the Task Manager in Windows directly?",
+      "options": [
+        "Ctrl + Alt + Tab",
+        "Ctrl + Shift + Esc",
+        "Alt + F4",
+        "Ctrl + Esc"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Ctrl + Shift + Esc opens the Task Manager at once. Alt + F4 closes the active window and Ctrl + Esc opens the Start menu."
+    },
+    {
+      "id": "JKSSBJA-T2-076",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaOffice",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "E-mail",
+      "stem": "In the e-mail address clerk@example.in, the part after the @ symbol is the:",
+      "options": [
+        "Domain name",
+        "User name",
+        "Password",
+        "Subject"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The part before @ is the user name and the part after it is the domain of the mail server."
+    },
+    {
+      "id": "JKSSBJA-T2-077",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaComputer",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Computer virus",
+      "stem": "A computer virus is:",
+      "options": [
+        "A fault in the hardware",
+        "A type of operating system",
+        "A dust-borne infection",
+        "A program that copies itself and causes harm"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A virus is malicious software that attaches to files or programs, spreads and damages data. Antivirus software detects and removes it."
+    },
+    {
+      "id": "JKSSBJA-T2-078",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaOffice",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Internet",
+      "stem": "A web address that begins with 'https' shows that the connection is:",
+      "options": [
+        "Government-owned",
+        "Offline",
+        "Encrypted",
+        "Free of charge"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The 's' in https stands for secure: data between the browser and the site is encrypted. It says nothing about who owns the site."
+    },
+    {
+      "id": "JKSSBJA-T2-079",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaComputer",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Hardware and software",
+      "stem": "Instructions stored permanently in a chip, such as the BIOS, are called:",
+      "options": [
+        "Shareware",
+        "Firmware",
+        "Malware",
+        "Groupware"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Firmware is software held in non-volatile memory on hardware, such as the BIOS or UEFI that starts a computer."
+    },
+    {
+      "id": "JKSSBJA-T2-080",
+      "section": "paper",
+      "test": 2,
+      "module": 1,
+      "domain": "jkjaOffice",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Internet",
+      "stem": "Unwanted bulk e-mail, usually advertising, is called:",
+      "options": [
+        "Spam",
+        "Cookie",
+        "Phishing",
+        "Firewall"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Spam is unsolicited bulk mail. Phishing is mail that pretends to be from a trusted body to steal passwords or bank details."
+    },
+    {
+      "id": "JKSSBJA-D-001",
+      "section": "paper",
+      "test": 0,
+      "module": 1,
+      "domain": "jkjaGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Active and passive voice",
+      "stem": "Select the active form of the sentence.\n\nThe bridge was built by the engineers.",
+      "options": [
+        "The engineers build the bridge.",
+        "The engineers were building the bridge.",
+        "The engineers have built the bridge.",
+        "The engineers built the bridge."
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "'Was built' is simple past passive, so the active is simple past: 'The engineers built the bridge.'"
+    },
+    {
+      "id": "JKSSBJA-D-002",
+      "section": "paper",
+      "test": 0,
+      "module": 1,
+      "domain": "jkjaVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Synonyms",
+      "stem": "Select the most appropriate synonym of the given word.\n\nHamper",
+      "options": [
+        "Hurry",
+        "Hide",
+        "Hinder",
+        "Help"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "To hamper is to get in the way of progress, as in 'Snow hampered the work', so 'hinder' is the synonym. 'Help' is the opposite."
+    },
+    {
+      "id": "JKSSBJA-D-003",
+      "section": "paper",
+      "test": 0,
+      "module": 1,
+      "domain": "jkjaGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Narration",
+      "stem": "Select the correct indirect speech form of the sentence.\n\nHe said, \"I saw the notice yesterday.\"",
+      "options": [
+        "He said that he saw the notice yesterday.",
+        "He said that he had seen the notice the day before.",
+        "He said that he has seen the notice the day before.",
+        "He said that I had seen the notice the day before."
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "In indirect speech the simple past 'saw' moves back to the past perfect 'had seen', and 'yesterday' becomes 'the day before' (or 'the previous day')."
+    },
+    {
+      "id": "JKSSBJA-D-004",
+      "section": "paper",
+      "test": 0,
+      "module": 1,
+      "domain": "jkjaVocab",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Antonyms",
+      "stem": "Select the most appropriate antonym of the given word.\n\nFeasible",
+      "options": [
+        "Impractical",
+        "Workable",
+        "Easy",
+        "Possible"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A feasible plan can be carried out; an impractical one cannot. 'Possible' and 'workable' are synonyms."
+    },
+    {
+      "id": "JKSSBJA-D-005",
+      "section": "paper",
+      "test": 0,
+      "module": 1,
+      "domain": "jkjaGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Editing / proof reading",
+      "stem": "The sentence below is divided into parts. Select the part that contains an error. If there is no error, select 'No error'.\n\nWalk carefully lest you / will slip / on the icy road.",
+      "options": [
+        "Walk carefully lest you",
+        "will slip",
+        "on the icy road",
+        "No error"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "'Lest' is followed by 'should' or the base verb, never 'will': 'Walk carefully lest you should slip on the icy road.'"
+    },
+    {
+      "id": "JKSSBJA-D-006",
+      "section": "paper",
+      "test": 0,
+      "module": 1,
+      "domain": "jkjaVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Idioms and phrases",
+      "stem": "Select the most appropriate meaning of the given idiom.\n\nA blessing in disguise",
+      "options": [
+        "A false promise",
+        "A lucky guess",
+        "Something good that first seemed bad",
+        "A gift kept secret"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A 'blessing in disguise' is something that looks unfortunate at first but turns out well."
+    },
+    {
+      "id": "JKSSBJA-D-007",
+      "section": "paper",
+      "test": 0,
+      "module": 1,
+      "domain": "jkjaGrammar",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Modals",
+      "stem": "Select the most appropriate option to fill in the blank.\n\n______ I use your pen for a minute?",
+      "options": [
+        "Must",
+        "Should",
+        "Ought",
+        "May"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "'May' asks for permission politely. 'Must' and 'should' express duty, and 'ought' needs 'to'."
+    },
+    {
+      "id": "JKSSBJA-D-008",
+      "section": "paper",
+      "test": 0,
+      "module": 1,
+      "domain": "jkjaVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Homophones",
+      "stem": "Select the most appropriate option to fill in the blank.\n\nThe ______ of the river was strong after the rain.",
+      "options": [
+        "current",
+        "curent",
+        "courant",
+        "currant"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "'Current' is the flow of water. 'Currant' sounds the same but is a small dried grape, and the other two are misspellings."
+    },
+    {
+      "id": "JKSSBJA-D-009",
+      "section": "paper",
+      "test": 0,
+      "module": 1,
+      "domain": "jkjaGrammar",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Clauses",
+      "stem": "In the sentence \"We stayed indoors because it was snowing\", the clause \"because it was snowing\" is:",
+      "options": [
+        "a noun clause",
+        "an adjective clause",
+        "a main clause",
+        "an adverb clause"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "It tells why we stayed indoors, so it modifies the verb as an adverb clause of reason."
+    },
+    {
+      "id": "JKSSBJA-D-010",
+      "section": "paper",
+      "test": 0,
+      "module": 1,
+      "domain": "jkjaVocab",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Synonyms",
+      "stem": "Select the most appropriate synonym of the given word.\n\nVigilant",
+      "options": [
+        "Lazy",
+        "Tired",
+        "Watchful",
+        "Hasty"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A vigilant guard keeps careful watch for danger, so 'watchful' is the synonym."
+    },
+    {
+      "id": "JKSSBJA-D-011",
+      "section": "paper",
+      "test": 0,
+      "module": 1,
+      "domain": "jkjaIndia",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Physical divisions",
+      "stem": "Nathu La, a pass that links Sikkim with Tibet, lies in which range?",
+      "options": [
+        "The Vindhyas",
+        "The Himalayas",
+        "The Western Ghats",
+        "The Aravallis"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Nathu La is a high pass in the eastern Himalayas on the old trade route between Sikkim and Tibet."
+    },
+    {
+      "id": "JKSSBJA-D-012",
+      "section": "paper",
+      "test": 0,
+      "module": 1,
+      "domain": "jkjaJK",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "J&K geography",
+      "stem": "Wular Lake, one of the largest freshwater lakes in India, lies mainly in which district?",
+      "options": [
+        "Bandipora",
+        "Pulwama",
+        "Kulgam",
+        "Srinagar"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Wular Lake lies in Bandipora district, and the Jhelum flows through it. Dal Lake is in Srinagar."
+    },
+    {
+      "id": "JKSSBJA-D-013",
+      "section": "paper",
+      "test": 0,
+      "module": 1,
+      "domain": "jkjaIndia",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Culture",
+      "stem": "Kalaripayattu, one of the oldest martial arts in India, comes from which state?",
+      "options": [
+        "Manipur",
+        "Punjab",
+        "Assam",
+        "Kerala"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Kalaripayattu is practised in the kalari (training ground) of Kerala. Gatka is the martial art of Punjab and Thang-Ta that of Manipur."
+    },
+    {
+      "id": "JKSSBJA-D-014",
+      "section": "paper",
+      "test": 0,
+      "module": 1,
+      "domain": "jkjaJK",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "J&K heritage",
+      "stem": "The Hazratbal shrine stands on the shore of which lake?",
+      "options": [
+        "Mansar Lake",
+        "Manasbal Lake",
+        "Dal Lake",
+        "Wular Lake"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Hazratbal stands on the northern shore of Dal Lake in Srinagar."
+    },
+    {
+      "id": "JKSSBJA-D-015",
+      "section": "paper",
+      "test": 0,
+      "module": 1,
+      "domain": "jkjaIndia",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Freedom struggle",
+      "stem": "The Ghadar Party, which worked for India's freedom from abroad, was founded in 1913 in:",
+      "options": [
+        "Japan",
+        "the United States",
+        "Germany",
+        "Afghanistan"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Indian migrants on the west coast of the United States founded the Ghadar Party in 1913, with its office in San Francisco."
+    },
+    {
+      "id": "JKSSBJA-D-016",
+      "section": "paper",
+      "test": 0,
+      "module": 1,
+      "domain": "jkjaJK",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "J&K history",
+      "stem": "After 1846, which dynasty ruled the princely state of Jammu and Kashmir?",
+      "options": [
+        "Dogra",
+        "Chak",
+        "Karkota",
+        "Shah Mir"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Gulab Singh founded the Dogra dynasty's rule over the whole state in 1846; it lasted until Maharaja Hari Singh."
+    },
+    {
+      "id": "JKSSBJA-D-017",
+      "section": "paper",
+      "test": 0,
+      "module": 1,
+      "domain": "jkjaIndia",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Crops",
+      "stem": "Which soil of the Thar region is sandy and low in humus?",
+      "options": [
+        "Black soil",
+        "Laterite soil",
+        "Alluvial soil",
+        "Arid soil"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Arid (desert) soil is sandy, salty in places and low in humus and moisture, as rain is scarce and evaporation high. It becomes cultivable with irrigation, as along the Indira Gandhi Canal."
+    },
+    {
+      "id": "JKSSBJA-D-018",
+      "section": "paper",
+      "test": 0,
+      "module": 1,
+      "domain": "jkjaJK",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "J&K geography",
+      "stem": "The geographical area of the Union Territory of Jammu and Kashmir, as given by its Directorate of Economics and Statistics, is about:",
+      "options": [
+        "22,236 sq km",
+        "42,241 sq km",
+        "55,673 sq km",
+        "59,146 sq km"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The UT at a Glance 2024-25 gives 42,241 sq km: 26,293 in the Jammu division and 15,948 in the Kashmir division. 55,673 sq km is the area of Himachal Pradesh."
+    },
+    {
+      "id": "JKSSBJA-D-019",
+      "section": "paper",
+      "test": 0,
+      "module": 1,
+      "domain": "jkjaIndia",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Weather and climate",
+      "stem": "Indian Standard Time is ahead of Greenwich Mean Time by:",
+      "options": [
+        "4 hours 30 minutes",
+        "5 hours",
+        "5 hours 30 minutes",
+        "6 hours"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "IST is based on the 82.5 degrees East meridian, and 82.5 / 15 = 5.5 hours ahead of Greenwich."
+    },
+    {
+      "id": "JKSSBJA-D-020",
+      "section": "paper",
+      "test": 0,
+      "module": 1,
+      "domain": "jkjaJK",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "J&K demography",
+      "stem": "What was the literacy rate of Jammu and Kashmir in Census 2011, as given by the UT's Directorate of Economics and Statistics?",
+      "options": [
+        "58 percent",
+        "67 percent",
+        "74 percent",
+        "82 percent"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "The UT at a Glance gives 67 percent (male 76.55, female 56.36). India's overall rate in 2011 was about 74 percent."
+    },
+    {
+      "id": "JKSSBJA-D-021",
+      "section": "paper",
+      "test": 0,
+      "module": 1,
+      "domain": "jkjaArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Number system",
+      "stem": "What is the HCF of 48 and 72?",
+      "options": [
+        "8",
+        "12",
+        "24",
+        "144"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "48 = 24 x 2 and 72 = 24 x 3, and 2 and 3 share no factor, so the HCF is 24. 144 is the LCM."
+    },
+    {
+      "id": "JKSSBJA-D-022",
+      "section": "paper",
+      "test": 0,
+      "module": 1,
+      "domain": "jkjaReason",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Coding-decoding",
+      "stem": "In a certain code, TAWI is written as UBXJ. How is DAL written?",
+      "options": [
+        "EBM",
+        "CZK",
+        "EBL",
+        "DBM"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Each letter moves one place forward: T to U, A to B, W to X, I to J. So D, A, L become E, B, M."
+    },
+    {
+      "id": "JKSSBJA-D-023",
+      "section": "paper",
+      "test": 0,
+      "module": 1,
+      "domain": "jkjaArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Percentage",
+      "stem": "A price is first increased by 10 percent and then decreased by 10 percent. What is the net change?",
+      "options": [
+        "1 percent increase",
+        "No change",
+        "2 percent decrease",
+        "1 percent decrease"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "100 becomes 110, then 110 less 10 percent (11) is 99: a 1 percent decrease. The second 10 percent is taken on a bigger number."
+    },
+    {
+      "id": "JKSSBJA-D-024",
+      "section": "paper",
+      "test": 0,
+      "module": 1,
+      "domain": "jkjaReason",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Direction sense",
+      "stem": "From his house, Firdous walks 10 m south, turns left and walks 6 m, then turns left again and walks 10 m. Where is he now from his house?",
+      "options": [
+        "6 m east",
+        "10 m south",
+        "16 m north",
+        "6 m west"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "South 10 m, a left turn from south faces east (6 m), and a second left faces north (10 m). He is back level with the house, 6 m to the east."
+    },
+    {
+      "id": "JKSSBJA-D-025",
+      "section": "paper",
+      "test": 0,
+      "module": 1,
+      "domain": "jkjaArith",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Average",
+      "stem": "What is the average of the first 20 even numbers (2, 4, 6, ... 40)?",
+      "options": [
+        "20",
+        "21",
+        "22",
+        "40"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "Their sum is 2 x (1 + 2 + ... + 20) = 2 x 210 = 420, and 420 / 20 = 21. For evenly spaced numbers the average is also (first + last) / 2 = (2 + 40) / 2 = 21."
+    },
+    {
+      "id": "JKSSBJA-D-026",
+      "section": "paper",
+      "test": 0,
+      "module": 1,
+      "domain": "jkjaReason",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Blood relations",
+      "stem": "Pointing to a boy, Bilal says, \"His father is the only son of my father.\" How is the boy related to Bilal?",
+      "options": [
+        "Cousin",
+        "Nephew",
+        "Son",
+        "Brother"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The only son of Bilal's father is Bilal himself, so the boy's father is Bilal and the boy is his son."
+    },
+    {
+      "id": "JKSSBJA-D-027",
+      "section": "paper",
+      "test": 0,
+      "module": 1,
+      "domain": "jkjaArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Profit and loss",
+      "stem": "If the cost price of 12 pens equals the selling price of 10 pens, what is the profit percent?",
+      "options": [
+        "2 percent",
+        "17 percent",
+        "20 percent",
+        "25 percent"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Let each pen cost ₹1. 10 pens sell for ₹12, so one sells for ₹1.20: a profit of 20 percent. About 17 percent comes from dividing by the selling price."
+    },
+    {
+      "id": "JKSSBJA-D-028",
+      "section": "paper",
+      "test": 0,
+      "module": 1,
+      "domain": "jkjaReason",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Statements and conclusions",
+      "stem": "Read the statement and the two conclusions, then decide which conclusion follows.\n\nStatement: Some officers are engineers. All engineers are graduates.\nConclusions:\nI. Some officers are graduates.\nII. All graduates are engineers.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Both I and II follow",
+        "Neither I nor II follows"
+      ],
+      "correct": [
+        0
+      ],
+      "lockedOrder": true,
+      "explanation": "The officers who are engineers are also graduates, so I follows. 'All engineers are graduates' does not make all graduates engineers, so II does not follow."
+    },
+    {
+      "id": "JKSSBJA-D-029",
+      "section": "paper",
+      "test": 0,
+      "module": 1,
+      "domain": "jkjaArith",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Time and work",
+      "stem": "A can do a job in 20 days. After he works for 5 days, B finishes the rest in 9 days. In how many days can B alone do the whole job?",
+      "options": [
+        "9 days",
+        "12 days",
+        "15 days",
+        "16 days"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "In 5 days A does 5/20 = 1/4 of the job, leaving 3/4 for B. B does 3/4 in 9 days, so the whole job takes him 9 x 4/3 = 12 days."
+    },
+    {
+      "id": "JKSSBJA-D-030",
+      "section": "paper",
+      "test": 0,
+      "module": 1,
+      "domain": "jkjaReason",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Number series",
+      "stem": "Find the next term in the series.\n\n2, 6, 18, 54, ?",
+      "options": [
+        "108",
+        "160",
+        "162",
+        "216"
+      ],
+      "correct": [
+        2
+      ],
+      "lockedOrder": true,
+      "explanation": "Each term is 3 times the one before: 54 x 3 = 162."
+    },
+    {
+      "id": "JKSSBJA-D-031",
+      "section": "paper",
+      "test": 0,
+      "module": 1,
+      "domain": "jkjaComputer",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Fundamentals",
+      "stem": "Which memory is the fastest and sits inside or closest to the CPU?",
+      "options": [
+        "Hard disk",
+        "Optical disc",
+        "RAM",
+        "Cache memory"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Cache is small, very fast memory holding data the CPU uses often. RAM is slower and the hard disk slower still."
+    },
+    {
+      "id": "JKSSBJA-D-032",
+      "section": "paper",
+      "test": 0,
+      "module": 1,
+      "domain": "jkjaOffice",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "MS Word",
+      "stem": "In MS Word, which shortcut selects all the text in a document?",
+      "options": [
+        "Ctrl + A",
+        "Ctrl + E",
+        "Ctrl + L",
+        "Ctrl + S"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Ctrl + A selects all. Ctrl + S saves, Ctrl + E centres text and Ctrl + L aligns it left."
+    },
+    {
+      "id": "JKSSBJA-D-033",
+      "section": "paper",
+      "test": 0,
+      "module": 1,
+      "domain": "jkjaComputer",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Input and output devices",
+      "stem": "Banks use which technology to read the numbers printed at the bottom of cheques?",
+      "options": [
+        "OCR",
+        "OMR",
+        "RFID",
+        "MICR"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Magnetic Ink Character Recognition reads characters printed in magnetic ink, as on cheques. OMR reads marks on forms."
+    },
+    {
+      "id": "JKSSBJA-D-034",
+      "section": "paper",
+      "test": 0,
+      "module": 1,
+      "domain": "jkjaOffice",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "MS Excel",
+      "stem": "In MS Excel, what does =AVERAGE(4, 8, 12) return?",
+      "options": [
+        "4",
+        "8",
+        "12",
+        "24"
+      ],
+      "correct": [
+        1
+      ],
+      "lockedOrder": true,
+      "explanation": "AVERAGE adds the values and divides by how many there are: (4 + 8 + 12) / 3 = 8."
+    },
+    {
+      "id": "JKSSBJA-D-035",
+      "section": "paper",
+      "test": 0,
+      "module": 1,
+      "domain": "jkjaComputer",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Operating system",
+      "stem": "An operating system that lets many programs run at the same time is called:",
+      "options": [
+        "Batch processing",
+        "Real-time",
+        "Single-user",
+        "Multitasking"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A multitasking system switches the CPU between programs so they seem to run together. Batch systems run jobs one after another."
+    },
+    {
+      "id": "JKSSBJA-D-036",
+      "section": "paper",
+      "test": 0,
+      "module": 1,
+      "domain": "jkjaOffice",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "PowerPoint",
+      "stem": "Which PowerPoint view shows small images of all slides together so they can be rearranged?",
+      "options": [
+        "Slide Sorter",
+        "Notes Page",
+        "Outline View",
+        "Reading View"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Slide Sorter shows thumbnails of every slide, which can be dragged into a new order."
+    },
+    {
+      "id": "JKSSBJA-D-037",
+      "section": "paper",
+      "test": 0,
+      "module": 1,
+      "domain": "jkjaComputer",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Hardware and software",
+      "stem": "Which of these is an application software?",
+      "options": [
+        "Linux",
+        "BIOS",
+        "Device driver",
+        "MS Excel"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Excel is an application for spreadsheets. Linux is an operating system, BIOS is firmware and a driver is system software."
+    },
+    {
+      "id": "JKSSBJA-D-038",
+      "section": "paper",
+      "test": 0,
+      "module": 1,
+      "domain": "jkjaOffice",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "PDF",
+      "stem": "Which file format keeps a document's layout the same on any device and is used for forms and notices?",
+      "options": [
+        "TXT",
+        "XLSX",
+        "PDF",
+        "DOCX"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A PDF (Portable Document Format) file looks the same whatever device or software opens it, which is why notices and forms are often shared as PDFs."
+    },
+    {
+      "id": "JKSSBJA-D-039",
+      "section": "paper",
+      "test": 0,
+      "module": 1,
+      "domain": "jkjaComputer",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Fundamentals",
+      "stem": "What does 'GUI' stand for?",
+      "options": [
+        "General Unit Input",
+        "Graphical User Interface",
+        "Global User Internet",
+        "Graphic Utility Index"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A Graphical User Interface uses windows, icons and menus instead of typed commands."
+    },
+    {
+      "id": "JKSSBJA-D-040",
+      "section": "paper",
+      "test": 0,
+      "module": 1,
+      "domain": "jkjaOffice",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "IT in governance",
+      "stem": "Online delivery of government services to citizens, such as applying for certificates on a portal, is called:",
+      "options": [
+        "E-governance",
+        "E-banking",
+        "E-commerce",
+        "E-learning"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "E-governance uses IT to deliver government services and information online. E-commerce is buying and selling goods online."
+    }
+  ]
+}

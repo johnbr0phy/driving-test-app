@@ -2200,6 +2200,20 @@
     --brand-gradient-to: 207 80% 96%;
   }
 
+  /* Google Cloud Professional Cloud Architect theme (v2 exam; matches lib/v2/exams/gcppca.ts theme) */
+  [data-theme="gcppca"] {
+    --brand: 279 45% 26%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 279 40% 96%;
+    --brand-hover: 279 45% 22%;
+    --brand-dark: 279 45% 19%;
+    --brand-darker: 279 40% 12%;
+    --brand-muted: 279 25% 70%;
+    --brand-border: 279 28% 80%;
+    --brand-border-light: 279 25% 89%;
+    --brand-gradient-to: 262 40% 96%;
+  }
+
   /* SSC CGL theme (v2 exam; matches lib/v2/exams/ssccgl.ts theme) */
   [data-theme="ssccgl"] {
     --brand: 268 80% 37%;
@@ -3302,6 +3316,34 @@
     --brand-border: 191 40% 80%;
     --brand-border-light: 191 40% 90%;
     --brand-gradient-to: 180 46% 96%;
+  }
+
+  /* JKSSB Junior Assistant theme: saffron crocus purple (v2 exam; matches lib/v2/exams/jkssbja.ts theme) */
+  [data-theme="jkssbja"] {
+    --brand: 285 85% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 285 85% 96%;
+    --brand-hover: 285 85% 26%;
+    --brand-dark: 285 85% 22%;
+    --brand-darker: 285 80% 14%;
+    --brand-muted: 285 30% 72%;
+    --brand-border: 285 40% 80%;
+    --brand-border-light: 285 40% 90%;
+    --brand-gradient-to: 274 85% 96%;
+  }
+
+  /* Telangana Police SI theme: deep forest green (v2 exam; matches lib/v2/exams/tgsi.ts theme) */
+  [data-theme="tgsi"] {
+    --brand: 114 60% 24%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 114 60% 96%;
+    --brand-hover: 114 60% 20%;
+    --brand-dark: 114 60% 16%;
+    --brand-darker: 114 55% 12%;
+    --brand-muted: 114 30% 72%;
+    --brand-border: 114 40% 80%;
+    --brand-border-light: 114 40% 90%;
+    --brand-gradient-to: 100 60% 96%;
   }
 
   /* AP U.S. History theme: muted oxblood (v2 exam; matches lib/v2/exams/apush.ts theme) */
@@ -4646,6 +4688,20 @@
     --brand-border: 320 18% 80%;
     --brand-border-light: 320 16% 89%;
     --brand-gradient-to: 195 60% 95%;
+  }
+
+  /* AAFCS Hospitality, Nutrition, and Food Science (HNFS) theme */
+  [data-theme="aafcs"] {
+    --brand: 171 85% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 171 50% 95%;
+    --brand-hover: 171 85% 25%;
+    --brand-dark: 171 85% 21%;
+    --brand-darker: 171 70% 13%;
+    --brand-muted: 171 30% 66%;
+    --brand-border: 171 30% 78%;
+    --brand-border-light: 171 25% 88%;
+    --brand-gradient-to: 40 70% 95%;
   }
 
   /* LLQP (Canada life licence) theme */
@@ -6699,6 +6755,18 @@
     --brand-darker: 224 80% 78%;
   }
 
+  .dark [data-theme="gcppca"] {
+    --brand: 279 45% 50%;
+    --brand-hover: 279 45% 42%;
+    --brand-light: 279 40% 13%;
+    --brand-gradient-to: 262 40% 11%;
+    --brand-border-light: 279 25% 24%;
+    --brand-border: 279 28% 34%;
+    --brand-muted: 279 25% 45%;
+    --brand-dark: 279 45% 65%;
+    --brand-darker: 279 40% 78%;
+  }
+
   .dark [data-theme="ssccgl"] {
     --brand: 268 80% 50%;
     --brand-hover: 268 80% 42%;
@@ -7624,6 +7692,29 @@
     --brand-muted: 191 30% 45%;
     --brand-dark: 191 46% 65%;
     --brand-darker: 191 41% 78%;
+  }
+
+  .dark [data-theme="jkssbja"] {
+    --brand: 285 85% 50%;
+    --brand-hover: 285 85% 42%;
+    --brand-light: 285 45% 13%;
+    --brand-gradient-to: 274 40% 11%;
+    --brand-border-light: 285 35% 24%;
+    --brand-border: 285 40% 34%;
+    --brand-muted: 285 30% 45%;
+    --brand-dark: 285 85% 65%;
+    --brand-darker: 285 80% 78%;
+  }
+  .dark [data-theme="tgsi"] {
+    --brand: 114 60% 32.9%;
+    --brand-hover: 114 60% 24.9%;
+    --brand-light: 114 45% 13%;
+    --brand-gradient-to: 100 40% 11%;
+    --brand-border-light: 114 35% 24%;
+    --brand-border: 114 40% 34%;
+    --brand-muted: 114 30% 45%;
+    --brand-dark: 114 60% 65%;
+    --brand-darker: 114 55% 78%;
   }
 
   .dark [data-theme="apush"] {
@@ -8767,6 +8858,16 @@
     --brand-muted: 320 18% 45%;
     --brand-dark: 320 30% 65%;
     --brand-darker: 320 26% 78%;
+  }
+
+  .dark [data-theme="aafcs"] {
+    --brand-light: 171 45% 13%;
+    --brand-gradient-to: 40 40% 11%;
+    --brand-border-light: 171 25% 24%;
+    --brand-border: 171 30% 34%;
+    --brand-muted: 171 30% 45%;
+    --brand-dark: 171 85% 65%;
+    --brand-darker: 171 70% 78%;
   }
 
   .dark [data-theme="llqp"] {

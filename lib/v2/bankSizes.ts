@@ -100,4 +100,7 @@ export const BANK_SIZES: Record<string, number> = {
   jambphys: 200,
   apgov: 201,
   mapgrowth: 318,
+  gcppca: 200,
+  jkssbja: 200,
+  tgsi: 236,
 };

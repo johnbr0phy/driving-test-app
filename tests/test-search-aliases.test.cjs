@@ -12,6 +12,23 @@ const CASES = [
   ["test de citoyennete canadienne", "US", "cacit"],
   ["hazard", "UK", "ukcar"],
   ["hazard perception", "UK", "ukcar"],
+  ["osha 50", "US", "osha"],
+  ["aafcs", "US", "aafcs"],
+  ["hnfs", "US", "aafcs"],
+  ["hospitality nutrition and food science", "US", "aafcs"],
+  ["gcp professional p", "SG", "gcppca"],
+  ["gcp professional", "SG", "gcppca"],
+  ["gcp architect", "US", "gcppca"],
+  ["professional cloud architect", "US", "gcppca"],
+  ["pca google", "IN", "gcppca"],
+  ["jkssb", "IN", "jkssbja"],
+  ["jkssb junior assistant", "IN", "jkssbja"],
+  ["jkssb", "US", "jkssbja"],
+  ["telangana sub inspector", "IN", "tgsi"],
+  ["tg si", "IN", "tgsi"],
+  ["ts si", "IN", "tgsi"],
+  ["tslprb", "IN", "tgsi"],
+  ["tgprb", "IN", "tgsi"],
 ];
 
 for (const [q, region, id] of CASES) {

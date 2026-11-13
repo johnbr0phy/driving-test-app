@@ -8,11 +8,16 @@ name: Question audit
 #
 # Weekly: Claude re-answers about 1,000 questions blind plus everything reported,
 # flagged or due for a dated change (scripts/question-audit.ts), then Claude
-# Code fixes the confirmed findings in the bank sources and opens a PR. The run
-# checks the fix (typecheck, lint, tests, bank checks) and merges it when all
-# pass, then closes the settled findings; a failed check leaves the PR open. The PR carries
-# audits/resolutions/<date>.json, so merging it closes the findings on /admin
-# and restarts the fixed questions' answer statistics (the resolve job).
+# Code fixes the confirmed findings in the bank sources and opens a PR. The PR
+# carries audits/resolutions/<date>.json, so merging it closes the findings on
+# /admin and restarts the fixed questions' answer statistics.
+#
+# The PR merges itself when the fix step finished and settled a finding, a second
+# Claude Code run that did not write the fixes re-checked every changed
+# question against the exam's sources and objected to none, and the checks a
+# PR gets (scripts/automerge-checks.sh) pass. Otherwise it stays open with a
+# comment saying which of them failed. A PR merged by hand closes its
+# findings through the resolve job.
 #
 # Needs repository secrets ANTHROPIC_API_KEY and FIREBASE_SERVICE_ACCOUNT_KEY
 # (without the Firebase key it runs the sweep and freshness checks only).
@@ -135,6 +140,7 @@ jobs:
 
       # If Claude Code cannot run, the PR still opens with the report, unfixed.
       - name: Fix findings with Claude Code
+        id: fix
         if: ${{ !inputs.export_open && steps.findings.outputs.count != '0' }}
         continue-on-error: true
         uses: anthropics/claude-code-action@v1
@@ -180,26 +186,75 @@ jobs:
             the finding is wrong; leave out any finding you could not settle, so it stays
             open. When the PR merges, this file closes those findings.
 
-            Do not commit; the next step opens the PR.
+            Your fixes are checked by a second reviewer and then merged without a
+            person reading them, so change a question only when its sources settle it;
+            when in doubt, leave the finding out of the resolutions file.
 
-      # The same checks a PR gets (checks.yml and question-banks.yml), run here
-      # because a PR opened with the workflow token starts no other workflow.
-      # Any failure leaves the PR open with a comment instead of merging it.
+            Do not commit; a later step opens the PR.
+
+      # A second read by a run that did not write the fixes. It may only object:
+      # any objection (or no verdict file) leaves the PR for a person.
+      - name: Verify the fixes independently
+        id: verify
+        if: ${{ !inputs.export_open && steps.findings.outputs.count != '0' && steps.fix.outcome == 'success' }}
+        continue-on-error: true
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          show_full_output: true
+          claude_args: --max-turns 150 --allowedTools "Read,Write,Glob,Grep,WebFetch,WebSearch,Bash(git diff:*),Bash(git status:*),Bash(python3:*)"
+          prompt: |
+            You are the second reviewer of an automatic fix to Tigertest's question
+            banks. Another run changed questions after an audit; nobody else will read
+            the change before it is merged and shown to students. Do not edit any bank,
+            source or other repository file. Your only output is the verdict file.
+
+            Run git status and git diff (data/ and tools/) to see every change. For
+            each changed question, read the question as it now stands (stem, options,
+            key, explanation), the exam's line in CLAUDE.md and its tools/**/sources.md,
+            and check the rule yourself: open the official page with WebFetch where
+            sources.md names one. Decide independently; the audit report in
+            ${{ steps.findings.outputs.report }} is the other side's case, not evidence.
+
+            Object when: the new key is not the one the official source supports;
+            another option is also defensible; the explanation now contradicts the key;
+            a translated bank of the exam (data/<bank>_<lang>.json) still has the old
+            key; only the built JSON changed and not the source it is built from; a
+            figure was added that you cannot find in a source; or the change goes
+            beyond the finding. Do not object over style or wording you would merely
+            have written differently.
+
+            Also read ${{ steps.findings.outputs.resolutions }}: object to any
+            "dismissed" entry whose finding you believe is right.
+
+            Write ${{ runner.temp }}/verify.json:
+            { "ok": true or false, "checked": <number of changed questions you checked>,
+              "objections": [ { "id": "<examId>__<questionId>", "why": "one sentence" } ] }
+            "ok" is true only when you checked every changed question and have no
+            objection. If you could not check one, object to it and say why.
+
+      # The checks a PR gets, run here because a PR opened with the workflow
+      # token does not trigger them. A failure leaves the PR open.
       - name: Check the fix
         id: checks
         if: ${{ !inputs.export_open && steps.findings.outputs.count != '0' }}
         continue-on-error: true
+        run: bash scripts/automerge-checks.sh
+
+      - name: Read the verdict
+        id: verdict
+        if: ${{ !inputs.export_open && steps.findings.outputs.count != '0' }}
         run: |
-          set -e
-          npm run typecheck
-          npm run lint
-          npm test
-          npx tsx scripts/build-training-parts.ts --check
-          python3 -I tools/build_state_exam_facts.py --check
-          python3 -I scripts/review-question-banks.py
-          python3 -I tools/check_banks.py
-          python3 -I tools/check_freshness.py
-          python3 -I tools/build_exam_sources.py --check
+          f="$RUNNER_TEMP/verify.json"
+          ok=false
+          note="The second reviewer wrote no verdict."
+          if [ -f "$f" ]; then
+            ok=$(python3 -c 'import json,sys; v=json.load(open(sys.argv[1])); print("true" if v.get("ok") is True and not v.get("objections") else "false")' "$f" || echo false)
+            note=$(python3 -c 'import json,sys; v=json.load(open(sys.argv[1])); o=v.get("objections") or []; print("Second reviewer: checked %s changed questions, %s" % (v.get("checked","?"), "no objections." if not o else "objections:")); [print("- %s: %s" % (x.get("id","?"), x.get("why",""))) for x in o]' "$f" || echo "The verdict file could not be read.")
+            { echo; echo "## Second review"; echo; echo "$note"; } >> "${{ steps.findings.outputs.report }}"
+          fi
+          echo "ok=$ok" >> "$GITHUB_OUTPUT"
+          { echo "note<<EOF_NOTE"; echo "$note"; echo "EOF_NOTE"; } >> "$GITHUB_OUTPUT"
 
       - name: Open PR
         id: pr
@@ -218,24 +273,34 @@ jobs:
             lib/examBankSizes.json
             lib/v2/bankSizes.ts
 
-      # Merge it when every check passed and Claude Code settled at least one
-      # finding. A push made with the workflow token does not start the resolve
-      # job, so the resolutions file is applied here.
+      # Merge when the fix ran and settled at least one finding, the second
+      # reviewer has no objection and every check passed. A push made with the workflow token starts no workflow, so
+      # the resolve job's work (closing the findings) is done here.
       - name: Merge the fix
-        if: ${{ steps.pr.outputs.pull-request-number && steps.checks.outcome == 'success' && hashFiles(steps.findings.outputs.resolutions) != '' }}
+        id: merge
+        if: ${{ steps.pr.outputs.pull-request-number && steps.fix.outcome == 'success' && steps.verdict.outputs.ok == 'true' && steps.checks.outcome == 'success' && hashFiles(steps.findings.outputs.resolutions) != '' }}
         env:
           GH_TOKEN: ${{ github.token }}
           FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
         run: |
           gh pr merge "${{ steps.pr.outputs.pull-request-number }}" --squash --delete-branch
-          npx tsx scripts/question-audit.ts --resolve "${{ steps.findings.outputs.resolutions }}"
+          f="${{ steps.findings.outputs.resolutions }}"
+          if [ -f "$f" ]; then npx tsx scripts/question-audit.ts --resolve "$f"; fi
 
-      - name: Leave an unmerged fix open
-        if: ${{ steps.pr.outputs.pull-request-number && (steps.checks.outcome != 'success' || hashFiles(steps.findings.outputs.resolutions) == '') }}
+      - name: Leave it open for a person
+        if: ${{ steps.pr.outputs.pull-request-number && steps.merge.outcome != 'success' }}
         env:
           GH_TOKEN: ${{ github.token }}
+          NOTE: ${{ steps.verdict.outputs.note }}
         run: |
-          gh pr comment "${{ steps.pr.outputs.pull-request-number }}" --body "Not merged automatically: a check failed or Claude Code settled no finding (run ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}). Fix it and merge, or close it.
+          gh pr comment "${{ steps.pr.outputs.pull-request-number }}" --body "Not merged automatically (run ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}).
+
+          - Fix step: ${{ steps.fix.outcome }}
+          - Second review: ${{ steps.verdict.outputs.ok == 'true' && 'no objections' || 'objections or no verdict' }}
+          - Checks: ${{ steps.checks.outcome }}
+          - Findings settled: ${{ hashFiles(steps.findings.outputs.resolutions) != '' && 'yes' || 'none' }}
+
+          $NOTE
 
           ---
           _Generated by [Claude Code](https://claude.ai/code)_"

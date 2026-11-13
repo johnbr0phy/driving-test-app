@@ -7,12 +7,12 @@
 import { useCallback, useEffect, useState, type FormEvent } from "react";
 import { useParams, useRouter } from "next/navigation";
 import Link from "next/link";
-import { QRCodeSVG } from "qrcode.react";
-import { Check, ChevronRight, Copy, Loader2, Pencil, QrCode, RefreshCw } from "lucide-react";
+import { ChevronRight, Loader2, Pencil, RefreshCw } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { classLink, classUrl, teachFetch } from "@/lib/teachClient";
+import { classLink, teachFetch } from "@/lib/teachClient";
 import { MAX_NAME_LENGTH, normalizeClassCode, type ClassReport, type ClassStudentRow } from "@/lib/classes";
+import { ClassShare } from "@/components/teach/ClassShare";
 import { ClassQuestions } from "@/components/teach/ClassQuestions";
 import { StudentDetail } from "@/components/teach/StudentDetail";
 import { scoreBar, scoreChip, scoreLevel, scoreTrack } from "@/components/teach/scoreColors";
@@ -39,8 +39,6 @@ export default function ClassPage() {
   const { englishLocale } = useLanguage();
   const [report, setReport] = useState<ClassReport | null>(null);
   const [error, setError] = useState("");
-  const [copied, setCopied] = useState(false);
-  const [showQr, setShowQr] = useState(false);
   const [refreshing, setRefreshing] = useState(false);
   // By name and join time, so Refresh shows the open student's new numbers.
   const [selectedKey, setSelectedKey] = useState<string | null>(null);
@@ -66,16 +64,6 @@ export default function ClassPage() {
     if (!loading && !user) router.replace(`/login?redirect=/teach/classes/${code}`);
     else void load();
   }, [loading, user, router, code, load]);
-
-  const copy = async () => {
-    try {
-      await navigator.clipboard.writeText(classUrl(code));
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    } catch {
-      // Clipboard blocked: the link is on screen to copy by hand.
-    }
-  };
 
   const startRename = () => {
     setNameDraft(report?.name ?? "");
@@ -161,21 +149,9 @@ export default function ClassPage() {
             </p>
           </div>
           <div className={`${card} w-full sm:w-auto`}>
-            <p className="text-xs text-gray-500 dark:text-gray-400 mb-1">Class link: post it in Canvas, Blackboard or an email</p>
+            <p className="text-xs text-gray-500 dark:text-gray-400 mb-1">Class link: post it in Teams, Google Classroom, Canvas or an email</p>
             <p className="font-mono text-sm text-gray-900 dark:text-gray-50 mb-3 break-all">{classLink(code)}</p>
-            <div className="flex gap-2">
-              <button type="button" onClick={copy} className="inline-flex items-center gap-1.5 rounded-md border border-gray-300 dark:border-gray-700 px-3 py-1.5 text-sm text-gray-800 dark:text-gray-100">
-                {copied ? <Check className="w-4 h-4" aria-hidden="true" /> : <Copy className="w-4 h-4" aria-hidden="true" />} <span aria-live="polite">{copied ? "Copied" : "Copy link"}</span>
-              </button>
-              <button type="button" onClick={() => setShowQr((s) => !s)} className="inline-flex items-center gap-1.5 rounded-md border border-gray-300 dark:border-gray-700 px-3 py-1.5 text-sm text-gray-800 dark:text-gray-100">
-                <QrCode className="w-4 h-4" aria-hidden="true" /> QR code
-              </button>
-            </div>
-            {showQr && (
-              <div className="mt-3 inline-block rounded-lg bg-white p-3">
-                <QRCodeSVG value={classUrl(code)} size={160} title={`QR code for ${classLink(code)}`} />
-              </div>
-            )}
+            <ClassShare code={code} className={report.name} examName={report.examName} britishSpelling={englishLocale === "en-GB"} />
           </div>
         </div>
 
@@ -183,8 +159,11 @@ export default function ClassPage() {
           <div className={card}>
             <p className="font-semibold text-gray-900 dark:text-gray-50 mb-1">No students yet</p>
             <p className="text-sm text-gray-600 dark:text-gray-300">
-              Post the class link where your students will see it. They type their name and start {englishLocale === "en-GB" ? "practising" : "practicing"}; nothing to install, no account. Each one shows up here as soon as they join.
+              Paste this message into Teams, Google Classroom or an email, or put the QR code on the board in your next lesson. Students type their name and start {englishLocale === "en-GB" ? "practising" : "practicing"}; nothing to install, no account. Each one shows up here as soon as they join.
             </p>
+            <div className="mt-3">
+              <ClassShare code={code} className={report.name} examName={report.examName} britishSpelling={englishLocale === "en-GB"} showMessage />
+            </div>
           </div>
         ) : (
           <>

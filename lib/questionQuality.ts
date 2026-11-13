@@ -171,3 +171,52 @@ export function flagQuestion(examId: string, questionId: string, q: QuestionPick
     Math.min(n, 500) / 50;
   return { examId, questionId, kinds, n, correctPct, strongN, strongCorrectPct, topWrong, topWrongPct, reports, score: Math.round(score) };
 }
+
+// ── Official source pages (sourceWatch) ─────────────────────────────────────
+
+/**
+ * What the daily source triage (scripts/source-triage.ts, .github/workflows/
+ * source-triage.yml) decided about a changed or broken page:
+ * - noise: the change does not touch anything a bank, landing or fact asks
+ *   (menus, news, dates, rewording); the page was re-baselined at once.
+ * - pending: Claude Code changed the bank, facts or sources.md and opened a PR;
+ *   merging it re-baselines the page.
+ * - updated / replaced: that PR merged (bank updated, or the URL swapped for an
+ *   official one in sources.md).
+ * - needs_person: the run could not settle it (page unreadable from the runner,
+ *   or a change it was unsure about). Only these are shown on /admin.
+ */
+export type SourceTriageVerdict = "noise" | "pending" | "updated" | "replaced" | "needs_person";
+
+export interface SourceTriage {
+  verdict: SourceTriageVerdict;
+  reason: string;
+  at: string;
+  runId?: string;
+}
+
+export interface WatchedSource {
+  url: string;
+  changed: boolean;
+  changedAt: string | null;
+  failures: number;
+  triage?: SourceTriage | null;
+}
+
+/** Broken pages count once they failed this many checks in a row. */
+export const SOURCE_BROKEN_FAILURES = 2;
+
+/**
+ * Whether a watched page still needs a person on /admin: it changed or keeps
+ * failing, it is still one of the watched URLs (a URL dropped from sources.md
+ * is gone), and the triage has not handled it since it last changed.
+ */
+export function sourceNeedsPerson(s: WatchedSource, watchedUrls: ReadonlySet<string>): boolean {
+  if (!watchedUrls.has(s.url)) return false;
+  if (!s.changed && s.failures < SOURCE_BROKEN_FAILURES) return false;
+  const t = s.triage;
+  if (!t || t.verdict === "needs_person") return true;
+  // A triage older than the latest change was about an earlier version of the page.
+  if (s.changed && s.changedAt && t.at < s.changedAt) return true;
+  return false;
+}

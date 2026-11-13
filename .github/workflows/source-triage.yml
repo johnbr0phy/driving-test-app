@@ -1,0 +1,178 @@
+name: Source triage
+
+# Every morning, after /api/cron/source-watch (04:10 UTC) has re-read a seventh
+# of the official pages, Claude Code reads each page that changed or keeps
+# failing and decides what it means for Tigertest (scripts/source-triage.ts):
+#   - noise (menus, news, dates, rewording, nothing our questions or facts
+#     rely on): the page is re-baselined at once, nobody sees it.
+#   - updated: a rule, figure or format moved. The bank sources, facts and
+#     landing copy are fixed and a PR opens; merging it re-baselines the page.
+#   - replaced: the page is not an official source, or is broken. sources.md
+#     gets the official URL instead (same PR).
+#   - needs_person: it could not settle it. Only these show on the /admin
+#     Questions tab, with the reason; they are retried after 7 days.
+# The PR carries audits/sources/<date>-<run>.json; merging it runs the push job.
+#
+# Needs repository secrets ANTHROPIC_API_KEY and FIREBASE_SERVICE_ACCOUNT_KEY.
+
+on:
+  push:
+    branches: [main]
+    paths: ["audits/sources/**"]
+  schedule:
+    - cron: "23 5 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  id-token: write
+
+concurrency:
+  group: source-triage
+  cancel-in-progress: false
+
+jobs:
+  merged:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - name: Re-baseline the pages the merged PR handled
+        env:
+          FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
+        run: |
+          for f in $(git diff --name-only --diff-filter=AM HEAD~1 HEAD -- audits/sources/); do
+            npx tsx scripts/source-triage.ts --apply "$f" --merged
+          done
+
+  triage:
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+
+      - name: List pages to triage
+        id: pages
+        env:
+          FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
+        run: |
+          mkdir -p audits/sources
+          list="$RUNNER_TEMP/source-pages.json"
+          n=$(npx tsx scripts/source-triage.ts --export "$list" | tail -1)
+          echo "count=$n" >> "$GITHUB_OUTPUT"
+          echo "list=$list" >> "$GITHUB_OUTPUT"
+          echo "decisions=audits/sources/$(date -u +%F)-${{ github.run_id }}.json" >> "$GITHUB_OUTPUT"
+          echo "report=audits/sources/$(date -u +%F)-${{ github.run_id }}.md" >> "$GITHUB_OUTPUT"
+          echo "$n pages to triage"
+
+      - name: Triage with Claude Code
+        if: steps.pages.outputs.count != '0'
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          claude_args: --max-turns 300 --allowedTools "Read,Edit,Write,Glob,Grep,WebFetch,WebSearch,Bash(curl:*),Bash(python3:*),Bash(npx tsx:*),Bash(git diff:*),Bash(git status:*)"
+          prompt: |
+            Read CLAUDE.md (especially "Question quality" and the exam's own entry), then
+            ${{ steps.pages.outputs.list }}: official pages Tigertest's question banks were
+            written from that changed ("changed": 5%+ of their sentences differ from the
+            last time someone checked) or keep failing to load ("broken").
+
+            For each page, read it now (WebFetch, or curl with a browser user agent if
+            that fails). The old version is not available, so the test is not "what
+            changed" but: does the page as it reads today still agree with everything
+            Tigertest says about this exam? Check it against the exam's sources.md
+            (paths in the list), its bank sources and built bank, its entry in
+            lib/examFacts.ts, lib/examCosts.json, lib/examFreshness.json, its landing
+            JSON or page, and its CLAUDE.md line. Pick one verdict:
+
+            - noise: nothing we rely on moved (navigation, news items, dates of other
+              events, rewording, a new sitting date that we do not state). Change nothing.
+            - updated: a rule, figure, fee, format, pass mark, length or syllabus we use
+              moved. Fix it: bank sources (never only the built JSON) then the exam's
+              build script, every translated bank of that exam for a key change, the
+              facts, costs and landing copy, the CLAUDE.md line, and add a dated note to
+              sources.md. If the change takes effect later, add a lib/examFreshness.json
+              event instead of changing the bank now.
+            - replaced: the page is not an official source (news site, blog, coaching
+              site, forum) or is broken. Find the official page for the same fact
+              (WebSearch), confirm it says the same thing, and put it in sources.md as
+              one of the first three https links (lib/examSources.json watches only the
+              first three); move the unofficial link below them or drop it. If the
+              unofficial page carried a fact the official one contradicts, fix the
+              bank as for updated. If there is no official page, keep the best source
+              and say so in sources.md.
+            - needs_person: you could not read the page, or you are not confident what
+              it means for the bank. Change nothing.
+
+            Never invent a figure: every change must come from a page you read. Keep
+            Tigertest's house style (no em dashes).
+
+            If you changed any sources.md run python3 -I tools/build_exam_sources.py.
+            If you changed a bank run python3 -I tools/check_banks.py,
+            npx tsx scripts/build-training-parts.ts, and the exam's validator, and fix
+            what they report. If you changed a landing or bank run
+            npx tsx scripts/build-landing-dates.ts.
+
+            Write ${{ steps.pages.outputs.decisions }}: a JSON array with one entry per
+            page in the list, { "id", "url" (both copied from the list), "verdict",
+            "reason" (one plain sentence) }.
+            Write ${{ steps.pages.outputs.report }}: a short Markdown summary for the PR,
+            "## Changed" (updated and replaced pages, one line each on what you changed
+            and the source), then "## Needs a person" and a count of noise pages.
+
+            Do not commit.
+
+      - name: Clear noise now
+        if: steps.pages.outputs.count != '0'
+        env:
+          FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
+        run: |
+          f="${{ steps.pages.outputs.decisions }}"
+          if [ ! -f "$f" ]; then echo "Claude Code wrote no decisions"; exit 1; fi
+          npx tsx scripts/source-triage.ts --apply "$f" --run "${{ github.run_id }}"
+          echo "changes=$(git status --porcelain -- data tools lib app components CLAUDE.md | wc -l)" >> "$GITHUB_OUTPUT"
+        id: apply
+
+      - name: Keep the decisions
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: source-triage-${{ github.run_id }}
+          path: audits/sources/
+          if-no-files-found: ignore
+
+      # Only when something besides the decisions changed: a noise-only day opens no PR.
+      - name: Open PR
+        if: steps.pages.outputs.count != '0' && steps.apply.outputs.changes != '0'
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: source-triage/${{ github.run_id }}
+          title: "Source triage: official pages that changed"
+          commit-message: "Update banks and sources from changed official pages"
+          body-path: ${{ steps.pages.outputs.report }}
+          add-paths: |
+            audits/sources/**
+            data/**
+            tools/**
+            lib/**
+            app/**
+            components/**
+            CLAUDE.md

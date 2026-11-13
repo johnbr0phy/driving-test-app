@@ -80,10 +80,10 @@ export const PSAT: ExamV2Config = {
   },
   // Four drills with Basics plus the test: a 9-step dashboard.
   drills: [
-    { key: "reading", name: "Reading", section: "rw", domains: ["craftStructure", "infoIdeas"], blurb: "Words in context, structure, main ideas, evidence and tables. About half of Reading and Writing.", basics: ["wordsInContext", "textStructure", "authorPurpose", "crossText", "mainIdea", "findingDetail", "inference", "claimSupport", "readingTable"] },
-    { key: "writing", name: "Writing", section: "rw", domains: ["conventions", "expressionIdeas"], blurb: "Punctuation, agreement, transitions and notes. About half of Reading and Writing.", basics: ["semicolons", "subjectVerb", "verbTense", "pronounCase", "apostrophes", "commaInterrupters", "danglingModifiers", "transitions", "notesToSentence"] },
-    { key: "algebra", name: "Algebra and Advanced Math", section: "math", domains: ["algebra", "advancedMath"], blurb: "Linear equations, systems, functions, quadratics and exponents. About two thirds of Math.", basics: ["solveX", "slope", "systems", "inequalities", "functionNotation", "factoring", "vertexForm", "exponentRules", "exponentialGrowth"] },
-    { key: "datageo", name: "Data and Geometry", section: "math", domains: ["dataAnalysis", "geometryTrig"], blurb: "Percents, ratios, statistics, area, triangles and circles. About a third of Math.", basics: ["percents", "ratios", "meanMedian", "areaPerimeter", "volume", "triangleAngles", "pythagorean", "circleBasics"] },
+    { key: "reading", name: "Reading", section: "rw", domains: ["craftStructure", "infoIdeas"], blurb: "Words in context, structure, main ideas, evidence and tables. About half of Reading and Writing.", basics: ["wordsInContext", "textStructure", "mainIdea", "inference", "readingTable"] },
+    { key: "writing", name: "Writing", section: "rw", domains: ["conventions", "expressionIdeas"], blurb: "Punctuation, agreement, transitions and notes. About half of Reading and Writing.", basics: ["semicolons", "subjectVerb", "commaInterrupters", "transitions", "notesToSentence"] },
+    { key: "algebra", name: "Algebra and Advanced Math", section: "math", domains: ["algebra", "advancedMath"], blurb: "Linear equations, systems, functions, quadratics and exponents. About two thirds of Math.", basics: ["solveX", "slope", "systems", "factoring", "exponentRules"] },
+    { key: "datageo", name: "Data and Geometry", section: "math", domains: ["dataAnalysis", "geometryTrig"], blurb: "Percents, ratios, statistics, area, triangles and circles. About a third of Math.", basics: ["percents", "ratios", "meanMedian", "areaPerimeter", "pythagorean"] },
   ],
   composite: { name: "Total score", min: 320, max: 1520, combine: (sections) => sections.reduce((a, s) => a + s.scaled, 0) },
   defaultGoal: 1100,

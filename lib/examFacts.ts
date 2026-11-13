@@ -2312,6 +2312,22 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the Cloud Digital Leader exam guide launched August 12, 2026",
     source: { name: "Google Cloud", url: "https://cloud.google.com/learn/certification/cloud-digital-leader" },
   },
+  gcppca: {
+    answer:
+      "The Google Cloud Professional Cloud Architect exam has 50 to 60 multiple choice and multiple select questions in 2 hours and costs 200 USD. Each exam includes 2 case studies, and case study questions make up 20 to 30 percent of the exam. Google reports pass or fail and does not publish a passing score. The exam guide weights Designing and planning a cloud solution architecture at about 25 percent, Managing and provisioning a solution infrastructure and Designing for security and compliance at about 17.5 percent each, Analyzing and optimizing technical and business processes at about 15 percent, and Managing implementation and Ensuring solution and operations excellence at about 12.5 percent each.",
+    rows: [
+      { label: "Questions", value: "50 to 60, multiple choice and multiple select" },
+      { label: "Time", value: "2 hours" },
+      { label: "Case studies", value: "2 per exam, 20 to 30% of questions" },
+      { label: "Passing score", value: "Pass or fail; no published cut score" },
+      { label: "Fee", value: "200 USD" },
+      { label: "Languages", value: "English, Japanese" },
+      { label: "Valid for", value: "2 years" },
+      { label: "Given by", value: "Google Cloud, online or at a test center" },
+    ],
+    basedOn: "the Professional Cloud Architect exam guide and certification page, checked November 2026",
+    source: { name: "Google Cloud", url: "https://cloud.google.com/learn/certification/cloud-architect" },
+  },
   ssccgl: {
     answer:
       "SSC CGL Tier 1 is a computer-based paper of 100 multiple-choice questions in 60 minutes, set by the Staff Selection Commission. It has four parts of 25 questions: General Intelligence and Reasoning, General Awareness, Quantitative Aptitude and English Comprehension. Each right answer earns 2 marks (200 in all) and each wrong answer loses 0.50 marks. Tier 1 is qualifying: candidates who clear the cut-off for their category go on to Tier 2, which decides the final merit.",

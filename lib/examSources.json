@@ -526,6 +526,11 @@
   "https://services.google.com/fh/files/misc/cloud_digital_leader_exam_guide_english.pdf",
   "https://cloud.google.com/learn/certification/cloud-digital-leader"
  ],
+ "gcppca": [
+  "https://services.google.com/fh/files/misc/professional_cloud_architect_exam_guide_english.pdf",
+  "https://docs.cloud.google.com/architecture/framework/operational-excellence",
+  "https://cloud.google.com/learn/certification/cloud-architect"
+ ],
  "gcsecs": [
   "https://www.gov.uk/government/publications/gcse-computer-science/gcse-subject-content-for-computer-science",
   "https://www.aqa.org.uk/subjects/computer-science/gcse/computer-science-8525/specification/scheme-of-assessment",
@@ -740,6 +745,11 @@
   "https://www.insurancecouncilofbc.com/llqp/exam-information-and-registration/about-the-exam/in-person-exams/",
   "https://www.gov.nl.ca/dgsnl/files/insurance-pdf-memo-llqp-2018.pdf",
   "https://lautorite.qc.ca/en/becoming-a-professional/insurance-of-persons-and-group-insurance-of-persons/examinations/pilot-exam-questions"
+ ],
+ "mapgrowth": [
+  "https://www.nwea.org/uploads/CCSS_2025.pdf",
+  "https://www.nwea.org/uploads/MAP-Growth-Technical-Report-2025.pdf",
+  "https://learning.ccsso.org/wp-content/uploads/2022/11/Math_Standards1.pdf"
  ],
  "mhtcet": [
   "https://cetcell.mahacet.org/",

@@ -124,6 +124,7 @@ export const TEACHES: Record<string, string> = {
   cysa: "a cybersecurity analyst or CySA+ course",
   cissp: "a CISSP or information security course",
   gcdl: "a cloud fundamentals course",
+  gcppca: "a cloud architecture course",
   itil: "an IT service management course",
   psm: "a Scrum or agile course",
   capm: "a project management course",

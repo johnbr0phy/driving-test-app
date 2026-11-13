@@ -69,7 +69,7 @@ const BORROWED_SETS: Record<string, string> = {
   awssaa: "aws", az900: "aws", ccna: "aplus", gulfrn: "nclex", uknmc: "nclex",
   cask: "driving", cans: "driving", nzroad: "driving", iedtt: "driving",
   phlto: "driving", mykpp: "driving", sgbtt: "driving", hkdrive: "driving", aerta: "driving", zak53: "driving", zak53c3: "cdl", ngfrsc: "driving", kentsa: "driving",
-  psat: "sat", netplus: "secplus", cysa: "secplus", gcdl: "aws",
+  psat: "sat", netplus: "secplus", cysa: "secplus", gcdl: "aws", gcppca: "aws",
   // India exams wear their family's tiger; Pakistan's car test the car tiger; JNVST (age 10 to 12) the times tables tiger.
   ibpsclerk: "ibpspo", rrbgroupd: "rrbntpc", sscgd: "ssccgl", sscchsl: "ssccgl", sscmts: "ssccgl", uppolice: "police", jnvst: "timestables", mapgrowth: "timestables",
   pkdrive: "driving",

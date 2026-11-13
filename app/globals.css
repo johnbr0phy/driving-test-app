@@ -2200,6 +2200,20 @@
     --brand-gradient-to: 207 80% 96%;
   }
 
+  /* Google Cloud Professional Cloud Architect theme (v2 exam; matches lib/v2/exams/gcppca.ts theme) */
+  [data-theme="gcppca"] {
+    --brand: 279 45% 26%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 279 40% 96%;
+    --brand-hover: 279 45% 22%;
+    --brand-dark: 279 45% 19%;
+    --brand-darker: 279 40% 12%;
+    --brand-muted: 279 25% 70%;
+    --brand-border: 279 28% 80%;
+    --brand-border-light: 279 25% 89%;
+    --brand-gradient-to: 262 40% 96%;
+  }
+
   /* SSC CGL theme (v2 exam; matches lib/v2/exams/ssccgl.ts theme) */
   [data-theme="ssccgl"] {
     --brand: 268 80% 37%;
@@ -6697,6 +6711,18 @@
     --brand-muted: 224 35% 45%;
     --brand-dark: 224 90% 65%;
     --brand-darker: 224 80% 78%;
+  }
+
+  .dark [data-theme="gcppca"] {
+    --brand: 279 45% 50%;
+    --brand-hover: 279 45% 42%;
+    --brand-light: 279 40% 13%;
+    --brand-gradient-to: 262 40% 11%;
+    --brand-border-light: 279 25% 24%;
+    --brand-border: 279 28% 34%;
+    --brand-muted: 279 25% 45%;
+    --brand-dark: 279 45% 65%;
+    --brand-darker: 279 40% 78%;
   }
 
   .dark [data-theme="ssccgl"] {

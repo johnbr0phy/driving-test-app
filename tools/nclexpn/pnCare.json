@@ -243,7 +243,7 @@
       "Tell the family that a staff member was at fault"
     ],
     "correct": [0, 1, 2, 4],
-    "explanation": "After a fall the PN collects data, notifies the RN, documents what was found in objective terms and completes an incident report. The report is a quality tool that is not mentioned in the client's record, and blame is never assigned to the family or in the chart."
+    "explanation": "After a fall the PN collects data, notifies the RN, documents what was found in objective terms and completes an incident report. The report is a quality tool kept out of the client's record, so the chart does not mention it, and the PN does not guess about fault with the family or in the chart."
   },
   {
     "domain": "pnCare",
@@ -269,7 +269,7 @@
     "skill": "Planning care after a fall",
     "difficulty": 2,
     "format": "multi",
-    "passage": "0300: The RN has evaluated the resident and notified the provider. New orders: neurologic checks every hour for 4 hours, then every 4 hours for 24 hours; hold zolpidem; orthostatic vital signs; right hip x-ray in the morning; fall precautions.",
+    "passage": "0305: The RN has evaluated the resident and notified the provider. New orders: neurologic checks every hour for 4 hours, then every 4 hours for 24 hours; hold zolpidem; vital signs every 4 hours; right hip x-ray in the morning; fall precautions.",
     "stimulusId": "NCLEXPN-CS1",
     "caseStep": 4,
     "stem": "The PN is planning care for the rest of the night. Which tasks can the PN assign to the AP? Select all that apply.",
@@ -278,11 +278,11 @@
       "Perform the hourly neurologic checks",
       "Check on the resident every hour during rounding",
       "Decide whether the hip x-ray is still needed",
-      "Help the resident to the bathroom with the walker",
+      "Put nonskid socks on the resident",
       "Report any vomiting or increased sleepiness at once"
     ],
     "correct": [0, 2, 4, 5],
-    "explanation": "The AP can keep the room safe, round hourly, assist with walking and report what they observe. Neurologic checks require nursing judgment, so the PN performs them and reports changes to the RN, and the x-ray decision belongs to the provider."
+    "explanation": "The AP can keep the bed low with the call light in reach, round hourly, put on nonskid footwear and report what they observe. Neurologic checks require nursing judgment, so the PN performs them and reports changes to the RN, and the x-ray decision belongs to the provider."
   },
   {
     "domain": "pnCare",
@@ -508,7 +508,7 @@
       "Reinforce teaching about leg exercises",
       "The resident's new complaint of chest pain",
       "Make the bed and tidy the room",
-      "Set a new goal for the plan of care"
+      "A plan of care goal that needs to change"
     ],
     "columns": ["Assign to AP", "PN performs", "Report to RN"],
     "correct": [0, 1, 1, 2, 0, 2],
@@ -523,7 +523,7 @@
     "stem": "The PN is calling the RN about a resident's new finding using SBAR. Place the statements in the order the PN should say them.",
     "options": [
       "\"Mr. Lee in room 12 has new swelling in his left calf.\"",
-      "\"He had a right knee replacement 5 days ago and finished enoxaparin 2 days ago.\"",
+      "\"He had a right knee replacement 5 days ago and has a history of a blood clot.\"",
       "\"The calf is warm, 3 cm larger than the right, and he rates the pain 5 of 10.\"",
       "\"Can you come and look at him and call the provider?\""
     ],

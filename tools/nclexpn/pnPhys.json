@@ -71,7 +71,7 @@
     "stem": "The PN collects data on a client with heart failure. Which findings suggest the condition is getting worse and should be reported? Select all that apply.",
     "options": [
       "Weight gain of 3 lb in 2 days",
-      "Needs two pillows to breathe at night",
+      "Now needs three pillows to breathe at night instead of one",
       "Ankle swelling that is increasing",
       "Urine output increased after the diuretic",
       "Heart rate 72/min and regular"
@@ -317,7 +317,7 @@
     "correct": [
       3
     ],
-    "explanation": "The body compensates for blood loss first by speeding the heart and narrowing vessels, so a rising pulse with restlessness and cool skin appears before the blood pressure falls. Good urine output and a high blood pressure show the client is still perfusing."
+    "explanation": "The body compensates for blood loss first by speeding the heart and narrowing vessels, so a rising pulse with restlessness and cool skin appears before the blood pressure falls. Warm, flushed skin with a strong pulse does not fit blood loss, and good urine output and a high blood pressure show the client is still perfusing."
   },
   {
     "domain": "pnPhys",

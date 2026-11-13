@@ -297,21 +297,21 @@ export function QuestionsTab() {
       <section className={CARD}>
         <h2 className="font-semibold">Official pages that changed</h2>
         <p className="text-xs text-gray-500 dark:text-gray-400 mb-3">
-          {data.sourcesWatched} pages from the banks&apos; sources.md files, each read weekly. A page shows here when 5% or more of its sentences changed. Read it, update the bank if the rule moved, then mark it reviewed.
+          {data.sourcesWatched} pages from the banks&apos; sources.md files, each read weekly. Claude checks every changed or broken page each morning: noise is cleared, real changes go into a fix PR. Only pages it could not settle show here ({data.sourcesHandled ?? 0} handled in the last 7 days).
         </p>
-        {changedSources.length === 0 && <p className="text-sm text-gray-500 dark:text-gray-400">No changes.</p>}
+        {changedSources.length === 0 && <p className="text-sm text-gray-500 dark:text-gray-400">Nothing needs you.</p>}
         <ul className="divide-y divide-gray-100 dark:divide-gray-800">
           {changedSources.map((s) => (
             <li key={s.id} className="py-2 flex flex-wrap items-center gap-2 text-sm">
               <a href={s.url} target="_blank" rel="noreferrer" className="underline break-all text-gray-900 dark:text-gray-50">{s.url}</a>
-              <span className="text-xs text-gray-500 dark:text-gray-400">{s.exams.join(", ")} · {Math.round(s.ratio * 100)}% changed · {s.changedAt ? fmtUpdated(s.changedAt) : ""}</span>
+              <span className="text-xs text-gray-500 dark:text-gray-400">{s.exams.join(", ")} · {Math.round(s.ratio * 100)}% changed · {s.changedAt ? fmtUpdated(s.changedAt) : ""}{s.triage?.verdict === "needs_person" ? ` · Claude: ${s.triage.reason}` : ""}</span>
               <span className="ml-auto"><ActionButton busy={busy === s.id} onClick={() => act("source", [s.id])}>Reviewed</ActionButton></span>
             </li>
           ))}
         </ul>
         {brokenSources.length > 0 && (
           <details className="mt-3">
-            <summary className="text-xs text-gray-500 cursor-pointer">{brokenSources.length} pages failed twice or more (moved, blocked or down): fix the URL in sources.md</summary>
+            <summary className="text-xs text-gray-500 cursor-pointer">{brokenSources.length} pages failed twice or more that Claude could not replace with a working official page</summary>
             <ul className="mt-2 space-y-1 text-xs">
               {brokenSources.map((s) => (
                 <li key={s.id} className="break-all">{s.url} <span className="text-gray-500">({s.exams.join(", ")}: {s.error})</span></li>

@@ -2,7 +2,8 @@ import { getAdminDb } from "@/lib/firebase-admin";
 import { classQuestionLookup, type ClassQuestionDisplay } from "@/lib/server/classQuestions";
 import FRESHNESS from "@/lib/examFreshness.json";
 import LANDING_DATES from "@/lib/landingDates.json";
-import { applyFlagReviews, type FlagReview, type QuestionFlag, type ReviewedFlag } from "@/lib/questionQuality";
+import { applyFlagReviews, sourceNeedsPerson, type FlagReview, type QuestionFlag, type ReviewedFlag, type SourceTriage } from "@/lib/questionQuality";
+import EXAM_SOURCES from "@/lib/examSources.json";
 import { loadFlagReviews } from "@/lib/server/questionFlagReviews";
 
 // The /admin Questions tab (components/admin/QuestionsTab.tsx): the nightly
@@ -51,6 +52,7 @@ export interface SourceRow {
   failures: number;
   error: string | null;
   checkedAt: string | null;
+  triage: SourceTriage | null;
 }
 
 export interface FreshnessRow {
@@ -78,6 +80,8 @@ export interface QuestionHealthPayload {
   lastAudit: { runId: string; at: string; checked: number; disagreements: number; findings: number; model: string } | null;
   sources: SourceRow[];
   sourcesWatched: number;
+  /** Changed or broken pages the source triage settled in the last 7 days. */
+  sourcesHandled: number;
   freshness: FreshnessRow[];
   reviewDue: { exam: string; lastChanged: string }[];
   generatedAt: string;
@@ -93,7 +97,7 @@ export async function buildQuestionHealth(): Promise<QuestionHealthPayload> {
     db.doc("analytics/questionReports").get(),
     db.collection("questionAuditFindings").where("status", "==", "open").limit(300).get(),
     db.collection("questionAudits").orderBy("at", "desc").limit(1).get(),
-    db.collection("sourceWatch").select("url", "exams", "changed", "changedAt", "ratio", "failures", "error", "checkedAt").get(),
+    db.collection("sourceWatch").select("url", "exams", "changed", "changedAt", "ratio", "failures", "error", "checkedAt", "triage").get(),
     loadFlagReviews(db),
   ]);
 
@@ -123,7 +127,7 @@ export async function buildQuestionHealth(): Promise<QuestionHealthPayload> {
 
   const audit = auditSnap.docs[0]?.data();
 
-  const sources: SourceRow[] = sourcesSnap.docs
+  const allSources: SourceRow[] = sourcesSnap.docs
     .map((d) => {
       const v = d.data();
       return {
@@ -136,9 +140,14 @@ export async function buildQuestionHealth(): Promise<QuestionHealthPayload> {
         failures: v.failures ?? 0,
         error: v.error ?? null,
         checkedAt: v.checkedAt ?? null,
+        triage: v.triage ?? null,
       };
-    })
-    .filter((s) => s.changed || s.failures >= 2);
+    });
+  // The daily source triage settles most changed pages itself; /admin shows
+  // only what it could not (sourceNeedsPerson), and counts the rest.
+  const watchedUrls = new Set(Object.values(EXAM_SOURCES as Record<string, string[]>).flat());
+  const sourcesHandled = allSources.filter((s) => s.triage && s.triage.at >= new Date(Date.now() - 7 * DAY).toISOString() && s.triage.verdict !== "needs_person").length;
+  const sources = allSources.filter((s) => sourceNeedsPerson(s, watchedUrls));
 
   const today = new Date().toISOString().slice(0, 10);
   const soon = new Date(Date.now() + 60 * DAY).toISOString().slice(0, 10);
@@ -168,6 +177,7 @@ export async function buildQuestionHealth(): Promise<QuestionHealthPayload> {
       : null,
     sources,
     sourcesWatched: sourcesSnap.size,
+    sourcesHandled,
     freshness,
     reviewDue,
     generatedAt: new Date().toISOString(),

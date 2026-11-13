@@ -5053,6 +5053,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Florida content outlines effective January 1, 2026 and the Pearson VUE Florida candidate handbook, checked November 2026",
     source: { name: "Pearson VUE: Florida Insurance", url: "https://www.pearsonvue.com/us/en/fl/insurance.html" },
   },
+  aafcs: {
+    answer:
+      "The AAFCS Hospitality, Nutrition, and Food Science (HNFS) exam is the American Association of Family and Consumer Sciences competency exam behind the CFCS-HNFS professional credential, which also needs a bachelor's degree, and Texas uses it as test 201 for family and consumer sciences teacher certification. Every item is a four-option multiple-choice question with one correct answer, and some are unscored research items. The Texas administration lists 100 selected-response questions in 3 hours. AAFCS reports a scaled score and the passing score is 240 on a scale up to 300. It covers Foundations of the FCS Profession (15%), Careers (10%), Nutrition, Wellness, and Food Science (40%), and Hospitality, Lodging and Food Service (35%). It is a professional exam, separate from the AAFCS Pre-PAC assessments for CTE students.",
+    rows: [
+      { label: "Questions", value: "100 selected-response (Texas test 201); some unscored" },
+      { label: "Time", value: "3 hours" },
+      { label: "Passing score", value: "Scaled 240 out of 300" },
+      { label: "Largest area", value: "Nutrition, Wellness, and Food Science, 40%" },
+      { label: "Format", value: "Multiple choice, four options" },
+      { label: "Run by", value: "AAFCS; Texas candidates book through Pearson" },
+    ],
+    basedOn: "AAFCS HNFS exam specifications and the Pearson Texas test 201 page, checked November 2026",
+    source: { name: "AAFCS: Testing - HNFS", url: "https://www.aafcs.org/credentialing/cert-testing/testing-hnfs" },
+  },
   llqp: {
     answer:
       "The Life Licence Qualification Program (LLQP) is the harmonized exam that Canada's provincial and territorial insurance regulators require before licensing a life insurance agent; CISRO oversees the curriculum. It is written as four separate modules: Life Insurance, Accident and Sickness Insurance, and Segregated Funds and Annuities, each with 35 multiple-choice questions scored out of 30, and Ethics and Professional Practice, with 25 questions scored out of 20 (Common Law, or Civil Code in Quebec). Each module includes five unscored pilot questions, allows 75 minutes, and must be passed with 60% on its own.",

@@ -12,6 +12,10 @@ const CASES = [
   ["test de citoyennete canadienne", "US", "cacit"],
   ["hazard", "UK", "ukcar"],
   ["hazard perception", "UK", "ukcar"],
+  ["aafcs", "US", "aafcs"],
+  ["hnfs", "US", "aafcs"],
+  ["pre-pac", "US", "aafcs"],
+  ["hospitality nutrition and food science", "US", "aafcs"],
 ];
 
 for (const [q, region, id] of CASES) {

@@ -4648,6 +4648,20 @@
     --brand-gradient-to: 195 60% 95%;
   }
 
+  /* AAFCS Hospitality, Nutrition, and Food Science (HNFS) theme */
+  [data-theme="aafcs"] {
+    --brand: 171 85% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 171 50% 95%;
+    --brand-hover: 171 85% 25%;
+    --brand-dark: 171 85% 21%;
+    --brand-darker: 171 70% 13%;
+    --brand-muted: 171 30% 66%;
+    --brand-border: 171 30% 78%;
+    --brand-border-light: 171 25% 88%;
+    --brand-gradient-to: 40 70% 95%;
+  }
+
   /* LLQP (Canada life licence) theme */
   [data-theme="llqp"] {
     --brand: 5 45% 28%;
@@ -8767,6 +8781,16 @@
     --brand-muted: 320 18% 45%;
     --brand-dark: 320 30% 65%;
     --brand-darker: 320 26% 78%;
+  }
+
+  .dark [data-theme="aafcs"] {
+    --brand-light: 171 45% 13%;
+    --brand-gradient-to: 40 40% 11%;
+    --brand-border-light: 171 25% 24%;
+    --brand-border: 171 30% 34%;
+    --brand-muted: 171 30% 45%;
+    --brand-dark: 171 85% 65%;
+    --brand-darker: 171 70% 78%;
   }
 
   .dark [data-theme="llqp"] {

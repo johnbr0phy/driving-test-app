@@ -24,6 +24,11 @@ const CASES = [
   ["jkssb", "IN", "jkssbja"],
   ["jkssb junior assistant", "IN", "jkssbja"],
   ["jkssb", "US", "jkssbja"],
+  ["telangana sub inspector", "IN", "tgsi"],
+  ["tg si", "IN", "tgsi"],
+  ["ts si", "IN", "tgsi"],
+  ["tslprb", "IN", "tgsi"],
+  ["tgprb", "IN", "tgsi"],
 ];
 
 for (const [q, region, id] of CASES) {

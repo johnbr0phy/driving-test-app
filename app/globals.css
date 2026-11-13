@@ -3332,6 +3332,20 @@
     --brand-gradient-to: 274 85% 96%;
   }
 
+  /* Telangana Police SI theme: deep forest green (v2 exam; matches lib/v2/exams/tgsi.ts theme) */
+  [data-theme="tgsi"] {
+    --brand: 114 60% 24%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 114 60% 96%;
+    --brand-hover: 114 60% 20%;
+    --brand-dark: 114 60% 16%;
+    --brand-darker: 114 55% 12%;
+    --brand-muted: 114 30% 72%;
+    --brand-border: 114 40% 80%;
+    --brand-border-light: 114 40% 90%;
+    --brand-gradient-to: 100 60% 96%;
+  }
+
   /* AP U.S. History theme: muted oxblood (v2 exam; matches lib/v2/exams/apush.ts theme) */
   [data-theme="apush"] {
     --brand: 0 25% 38%;
@@ -7690,6 +7704,17 @@
     --brand-muted: 285 30% 45%;
     --brand-dark: 285 85% 65%;
     --brand-darker: 285 80% 78%;
+  }
+  .dark [data-theme="tgsi"] {
+    --brand: 114 60% 32.9%;
+    --brand-hover: 114 60% 24.9%;
+    --brand-light: 114 45% 13%;
+    --brand-gradient-to: 100 40% 11%;
+    --brand-border-light: 114 35% 24%;
+    --brand-border: 114 40% 34%;
+    --brand-muted: 114 30% 45%;
+    --brand-dark: 114 60% 65%;
+    --brand-darker: 114 55% 78%;
   }
 
   .dark [data-theme="apush"] {

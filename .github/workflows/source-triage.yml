@@ -132,6 +132,17 @@ jobs:
             reading it once the checks pass, so change a bank only when the page says
             so plainly; when in doubt, choose needs_person.
 
+            Official sources only. A question, key, explanation or fact may change only
+            when you have read the change yourself (WebFetch, never a search snippet) on
+            an official source: the body that owns the exam (its outline, handbook,
+            bulletin or news page), the government or regulator, or the primary law,
+            standard or official manual the exam is based on. Prep sites, coaching
+            sites, news articles, forums and AI answers are never enough on their own.
+            Add the official URL and what it says, dated, to the exam's sources.md, and
+            name it in your note. If you cannot reach an official source, change nothing.
+            A changed page that is not official is a reason to look, not a source:
+            confirm the change on an official page before updating anything.
+
             If you changed any sources.md run python3 -I tools/build_exam_sources.py.
             If you changed a bank run python3 -I tools/check_banks.py,
             npx tsx scripts/build-training-parts.ts, and the exam's validator, and fix

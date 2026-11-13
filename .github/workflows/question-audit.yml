@@ -8,8 +8,9 @@ name: Question audit
 #
 # Weekly: Claude re-answers about 1,000 questions blind plus everything reported,
 # flagged or due for a dated change (scripts/question-audit.ts), then Claude
-# Code fixes the confirmed findings in the bank sources and opens a PR. Nothing
-# merges without review: the PR is the approval step. The PR carries
+# Code fixes the confirmed findings in the bank sources and opens a PR. The run
+# checks the fix (typecheck, lint, tests, bank checks) and merges it when all
+# pass, then closes the settled findings; a failed check leaves the PR open. The PR carries
 # audits/resolutions/<date>.json, so merging it closes the findings on /admin
 # and restarts the fixed questions' answer statistics (the resolve job).
 #
@@ -139,14 +140,25 @@ jobs:
         uses: anthropics/claude-code-action@v1
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
-          claude_args: --max-turns 200 --allowedTools "Read,Edit,Write,Glob,Grep,Bash(python3:*),Bash(npx tsx:*),Bash(git diff:*),Bash(git status:*)"
+          claude_args: --max-turns 200 --allowedTools "Read,Edit,Write,Glob,Grep,WebFetch,WebSearch,Bash(python3:*),Bash(npx tsx:*),Bash(git diff:*),Bash(git status:*)"
           prompt: |
             Read CLAUDE.md, then the question audit at ${{ steps.findings.outputs.report }}
             (details in ${{ steps.findings.outputs.file }}).
 
             For each finding, decide for yourself whether it is right: open the question
             in its bank and the exam's tools/**/sources.md, and check the rule. Fix only
-            the ones you agree with. Fix the source the bank is built from (the Python or
+            the ones you agree with. Your fix is merged without a person reading it once
+            the checks pass, so change a key only when the official rule says so plainly;
+            otherwise leave the finding out of the resolutions file so it stays open.
+
+            Official sources only. A question, key, explanation or fact may change only
+            when you have read the change yourself (WebFetch, never a search snippet) on
+            an official source: the body that owns the exam (its outline, handbook,
+            bulletin or news page), the government or regulator, or the primary law,
+            standard or official manual the exam is based on. Prep sites, coaching
+            sites, news articles, forums and AI answers are never enough on their own.
+            Add the official URL and what it says, dated, to the exam's sources.md, and
+            name it in your note. If you cannot reach an official source, change nothing. Fix the source the bank is built from (the Python or
             JSON under tools/ named in CLAUDE.md for that exam), never only the built JSON,
             then run that exam's build script so data/ matches. A key change must also be
             made in every translated bank of that exam (data/<bank>_<lang>.json).
@@ -170,7 +182,27 @@ jobs:
 
             Do not commit; the next step opens the PR.
 
+      # The same checks a PR gets (checks.yml and question-banks.yml), run here
+      # because a PR opened with the workflow token starts no other workflow.
+      # Any failure leaves the PR open with a comment instead of merging it.
+      - name: Check the fix
+        id: checks
+        if: ${{ !inputs.export_open && steps.findings.outputs.count != '0' }}
+        continue-on-error: true
+        run: |
+          set -e
+          npm run typecheck
+          npm run lint
+          npm test
+          npx tsx scripts/build-training-parts.ts --check
+          python3 -I tools/build_state_exam_facts.py --check
+          python3 -I scripts/review-question-banks.py
+          python3 -I tools/check_banks.py
+          python3 -I tools/check_freshness.py
+          python3 -I tools/build_exam_sources.py --check
+
       - name: Open PR
+        id: pr
         if: ${{ !inputs.export_open && steps.findings.outputs.count != '0' }}
         uses: peter-evans/create-pull-request@v7
         with:
@@ -185,3 +217,25 @@ jobs:
             lib/trainingParts.json
             lib/examBankSizes.json
             lib/v2/bankSizes.ts
+
+      # Merge it when every check passed and Claude Code settled at least one
+      # finding. A push made with the workflow token does not start the resolve
+      # job, so the resolutions file is applied here.
+      - name: Merge the fix
+        if: ${{ steps.pr.outputs.pull-request-number && steps.checks.outcome == 'success' && hashFiles(steps.findings.outputs.resolutions) != '' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
+        run: |
+          gh pr merge "${{ steps.pr.outputs.pull-request-number }}" --squash --delete-branch
+          npx tsx scripts/question-audit.ts --resolve "${{ steps.findings.outputs.resolutions }}"
+
+      - name: Leave an unmerged fix open
+        if: ${{ steps.pr.outputs.pull-request-number && (steps.checks.outcome != 'success' || hashFiles(steps.findings.outputs.resolutions) == '') }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh pr comment "${{ steps.pr.outputs.pull-request-number }}" --body "Not merged automatically: a check failed or Claude Code settled no finding (run ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}). Fix it and merge, or close it.
+
+          ---
+          _Generated by [Claude Code](https://claude.ai/code)_"

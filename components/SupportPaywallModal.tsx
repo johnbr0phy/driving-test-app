@@ -54,7 +54,7 @@ const MESSAGES: Record<PaywallHit, { title: string; body: (price: string) => str
   3: {
     title: "Third time lucky?",
     body: (price) =>
-      `You keep landing here, so I'll keep it short: ${price}, once, no subscription. It unlocks everything below and pays my server bill.`,
+      `You keep landing here, so I'll keep it short: ${price}, once, no subscription. It unlocks everything below and pays our server bill.`,
   },
 };
 

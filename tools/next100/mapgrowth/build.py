@@ -40,8 +40,22 @@ SECTIONS = ["math", "reading", "language"]
 BASICS = set("""rounding fractionConvert wordProblems areaPerimeter readingTable mainIdea findingDetail
 inference wordsInContext authorPurpose textStructure sequenceEvents synonyms wordParts subjectVerb
 apostrophes commonlyConfused pronounCase verbTense commaSplices transitions topicSentences preciseWords
-itsIts listIntroCommas concision""".split())
+itsIts listIntroCommas concision causeEffect ks2Retrieval ks2WordMeaning""".split())
 SLOTS = [0, 2, 1, 3, 2, 0, 3, 1]
+# The Basics each domain's drill opens with (lib/v2/exams/mapgrowth.ts). A tag
+# outside its drill's list can never show a brush-up card, so the build drops it.
+DRILL_BASICS = {
+    "mapMathNBT": {"rounding", "fractionConvert", "fractionOps", "decimals"},
+    "mapMathMD": {"areaPerimeter", "readingTable", "unitConversion", "volume"},
+    "mapMathOA": set(),
+    "mapMathGeo": set(),
+    "mapReadLit": {"inference", "sequenceEvents", "causeEffect", "ks2Retrieval"},
+    "mapReadInfo": {"mainIdea", "findingDetail", "authorPurpose", "textStructure"},
+    "mapReadVocab": {"wordsInContext", "wordParts", "synonyms", "ks2WordMeaning"},
+    "mapLangWriting": {"topicSentences", "transitions", "preciseWords", "concision"},
+    "mapLangGrammar": {"subjectVerb", "pronounCase", "verbTense", "commaSplices"},
+    "mapLangMechanics": {"apostrophes", "itsIts", "commonlyConfused", "listIntroCommas"},
+}
 POSITIONAL = re.compile(r"\b(first|second|third|fourth|last|other two)\s+(option|choice|answer)s?\b|\bchoice [A-D]\b|\boption [A-D]\b", re.I)
 
 
@@ -131,7 +145,7 @@ def load(fname):
 
 def build_item(q, dom, section, i):
     item = {"section": section, "test": q["test"], "module": 1, "domain": dom, "skill": q["skill"], "difficulty": q["diff"]}
-    if q.get("basics"):
+    if q.get("basics") in DRILL_BASICS[dom]:
         item["basics"] = q["basics"]
     if q.get("passage"):
         item["passage"] = q["passage"].strip()

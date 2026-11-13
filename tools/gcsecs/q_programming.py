@@ -230,3 +230,10 @@ S(0, 2, "Iteration",
   ["A condition-controlled loop", "A count-controlled loop", "A single IF statement", "A one-dimensional array"],
   "Nobody knows in advance how many tries it will take, so the loop must run until a condition is met, using WHILE or REPEAT ... UNTIL. A FOR loop runs a fixed number of times."),
 ]
+
+# Items that turn on counting array and string positions from 0.
+for _q in ITEMS:
+    if "basics" not in _q and ("Arrays start at index 0" in _q["stem"]
+                               or "scores[row][column], starting at 0" in _q["stem"]
+                               or "the first character is position 0" in _q["stem"]):
+        _q["basics"] = "csArrayIndex"

@@ -182,7 +182,7 @@
       "skill": "Inference",
       "stem": "Why does it take so much sap to make one litre of syrup?",
       "explanation": "Sap is only about two percent sugar, so almost all of it is water that boils off. The paragraph never says sap turns bitter in the pot; it turns bitter when the trees bud.",
-      "basics": "inference",
+      "basics": "drawConclusions",
       "stimulusId": "OSSLT-P01",
       "options": [
         "Sap is mostly water that must be boiled away.",
@@ -228,7 +228,7 @@
       "skill": "Making connections",
       "stem": "Based on the paragraph, which TWO pieces of advice would a maple syrup producer most likely give? Choose two.",
       "explanation": "Sap runs only when freezing nights alternate with mild days, and budding ends the season, so a producer watches the weather and taps early. Warm nights stop the flow, and bitterness comes from budding, not boiling.",
-      "basics": "inference",
+      "basics": "drawConclusions",
       "stimulusId": "OSSLT-P01",
       "select": 2,
       "options": [
@@ -300,7 +300,7 @@
       "skill": "Inference",
       "stem": "What can you conclude from the fact that the students rebuilt the feeder three times?",
       "explanation": "The feeder jammed on wrinkled labels, and the team rebuilt it until it worked, which shows persistence. Nothing says the food bank or the competition asked for new versions.",
-      "basics": "inference",
+      "basics": "drawConclusions",
       "stimulusId": "OSSLT-P02",
       "options": [
         "The food bank asked for a new design each time.",
@@ -346,7 +346,7 @@
       "skill": "Making connections",
       "stem": "What does Arjun Mehta mean when he says the team \"ended up fixing something real\"?",
       "explanation": "Mehta contrasts winning a trophy with helping the food bank: the machine does a real job for real people. He never says he prefers volunteering to competing.",
-      "basics": "inference",
+      "basics": "drawConclusions",
       "stimulusId": "OSSLT-P02",
       "options": [
         "The team repaired the machine after it broke.",
@@ -392,7 +392,6 @@
       "skill": "Explicit information",
       "stem": "What reason does Priya give for wanting the camp job?",
       "explanation": "Priya says she keeps picturing herself at camp, went there for six summers and knows every trail. Her brother never worked there, and the camp is up near Huntsville, not close to home.",
-      "basics": "findingDetail",
       "stimulusId": "OSSLT-P03",
       "options": [
         "Her brother worked there as a counsellor.",
@@ -461,7 +460,7 @@
       "skill": "Making connections",
       "stem": "Which statement best expresses a central idea of the dialogue?",
       "explanation": "Dev frames the choice as money now against experience for later, and Priya plans to list both sides. Dev says the choice is hers, so the dialogue does not claim siblings know best.",
-      "basics": "mainIdea",
+      "basics": "storyTheme",
       "stimulusId": "OSSLT-P03",
       "options": [
         "A good choice weighs now against later.",
@@ -484,7 +483,6 @@
       "skill": "Explicit information",
       "stem": "What did Theo draw on the back of an order slip?",
       "explanation": "Theo drew a map of the section with each table's number, what it ordered and what it still needed. The story mentions no specials list or schedule.",
-      "basics": "findingDetail",
       "stimulusId": "OSSLT-P04",
       "options": [
         "A list of the restaurant's daily specials",
@@ -507,7 +505,7 @@
       "skill": "Word meaning in context",
       "stem": "Theo \"moved between tables as if the floor were on wheels.\" This comparison shows that Theo",
       "explanation": "Something on wheels glides easily, so the comparison shows how smoothly Theo worked the room. It contrasts with the narrator's clumsy first hour; it does not mean Theo slipped.",
-      "basics": "wordsInContext",
+      "basics": "figurativeLanguage",
       "stimulusId": "OSSLT-P04",
       "options": [
         "was careless and rushed",
@@ -604,7 +602,7 @@
       "skill": "Making connections",
       "stem": "Which sentence best states the theme of the story?",
       "explanation": "The narrator struggles until Theo shares his system, then uses it the next week. The narrator accepts help and comes back, so the other choices go against the story.",
-      "basics": "mainIdea",
+      "basics": "storyTheme",
       "stimulusId": "OSSLT-P04",
       "options": [
         "Restaurant customers are hard to please.",
@@ -1035,7 +1033,7 @@
       "skill": "Making connections",
       "stem": "A town council is deciding whether to drain a marsh to build a parking lot. Which TWO points from the paragraph would best support keeping the marsh? Choose two.",
       "explanation": "Flood control and cleaner water are direct benefits to the town. That wetlands are common in Canada, or that marshes are one type, gives no reason to keep this one.",
-      "basics": "inference",
+      "basics": "drawConclusions",
       "stimulusId": "OSSLT-P05",
       "select": 2,
       "options": [
@@ -1107,7 +1105,7 @@
       "skill": "Inference",
       "stem": "What does the waiting list for the carpet cleaner suggest?",
       "explanation": "A waiting list means people are lined up for an item that is already out. It appears in the paragraph about demand surprising staff, not one about repairs or cost.",
-      "basics": "inference",
+      "basics": "drawConclusions",
       "stimulusId": "OSSLT-P06",
       "options": [
         "More people want it than the library can serve at once.",
@@ -1176,7 +1174,6 @@
       "skill": "Explicit information",
       "stem": "How many community involvement hours has Jordan completed so far?",
       "explanation": "Ms. Okafor says she sees only six hours in his file. Forty is the number he needs to graduate.",
-      "basics": "findingDetail",
       "stimulusId": "OSSLT-P07",
       "options": [
         "Ten",
@@ -1222,7 +1219,6 @@
       "skill": "Explicit information",
       "stem": "What must Jordan do before he starts at the co-op?",
       "explanation": "Ms. Okafor says to fill out the form and bring it back so the school can approve the placement, before he starts. The coordinator signs his hours each month after that.",
-      "basics": "findingDetail",
       "stimulusId": "OSSLT-P07",
       "options": [
         "Have the coordinator sign his hours",
@@ -1245,7 +1241,7 @@
       "skill": "Word meaning in context",
       "stem": "What does Ms. Okafor mean when she says \"they won't let you just watch for long\"?",
       "explanation": "She is reassuring Jordan that the co-op needs help and will have him repairing bikes soon. Nothing in the dialogue says he would be sent home.",
-      "basics": "wordsInContext",
+      "basics": "figurativeLanguage",
       "stimulusId": "OSSLT-P07",
       "options": [
         "Jordan will be sent home if he only watches.",
@@ -1294,7 +1290,6 @@
       "skill": "Explicit information",
       "stem": "What did the narrator carry at the start of the portage?",
       "explanation": "Mr. Chen took the canoe and Mei grabbed the food barrel, which left the narrator the heaviest pack, with the tent and cooking pots.",
-      "basics": "findingDetail",
       "stimulusId": "OSSLT-P08",
       "options": [
         "The pack with the tent and pots",
@@ -1317,7 +1312,7 @@
       "skill": "Word meaning in context",
       "stem": "Roots \"crossed it like veins.\" This comparison helps the reader picture roots that",
       "explanation": "Veins branch in thin lines under the skin, so the roots spread over the trail in a similar pattern. The comparison is about shape, not colour or movement.",
-      "basics": "wordsInContext",
+      "basics": "figurativeLanguage",
       "stimulusId": "OSSLT-P08",
       "options": [
         "were soft and red underfoot",
@@ -1409,7 +1404,7 @@
       "skill": "Making connections",
       "stem": "Which sentence best expresses the main message of the story?",
       "explanation": "The narrator nearly gives up until Mei's help and encouragement get them to the lookout. The beginner finishes and even asks about the next portage, so the trip was not too hard.",
-      "basics": "mainIdea",
+      "basics": "storyTheme",
       "stimulusId": "OSSLT-P08",
       "options": [
         "Canoe trips are too difficult for beginners.",
@@ -1803,7 +1798,7 @@
       "skill": "Inference",
       "stem": "Based on the paragraph, which autumn would most likely give the brightest red maples?",
       "explanation": "The paragraph says maples make the most red pigment when days are sunny and nights are cool but above freezing. Each other choice changes one of those conditions.",
-      "basics": "inference",
+      "basics": "drawConclusions",
       "stimulusId": "OSSLT-P09",
       "options": [
         "Cloudy days and warm, damp nights",
@@ -1987,7 +1982,7 @@
       "skill": "Making connections",
       "stem": "A student falls asleep in first period every day. Based on the paragraph, which TWO changes would most likely help? Choose two.",
       "explanation": "Sleep researchers suggest a regular bedtime, even on weekends, and putting phones away an hour before sleep. Sleeping in breaks the regular schedule, and bright light delays melatonin.",
-      "basics": "inference",
+      "basics": "drawConclusions",
       "stimulusId": "OSSLT-P10",
       "select": 2,
       "options": [
@@ -2061,7 +2056,7 @@
       "skill": "Inference",
       "stem": "Which town would most likely get the most lake-effect snow?",
       "explanation": "Snow falls on the downwind shore, and a longer stretch of open water adds more moisture. A frozen lake can no longer feed the clouds.",
-      "basics": "inference",
+      "basics": "drawConclusions",
       "stimulusId": "OSSLT-P11",
       "options": [
         "One on the upwind shore of a small lake",
@@ -2222,7 +2217,7 @@
       "skill": "Inference",
       "stem": "If Dr. Adeyemi's estimate is correct, about how many of the 2,000 trees will die in the first two winters?",
       "explanation": "She expects to lose about one in five. One fifth of 2,000 is 400. 1,600 is the number expected to survive.",
-      "basics": "inference",
+      "basics": "drawConclusions",
       "stimulusId": "OSSLT-P12",
       "options": [
         "400",
@@ -2337,7 +2332,7 @@
       "skill": "Inference",
       "stem": "What does the meeting with neighbours before the opening suggest about the organizers?",
       "explanation": "Residents worried about litter, so the group met them first and agreed to empty a bin every evening. That shows planning ahead, not a need for money.",
-      "basics": "inference",
+      "basics": "drawConclusions",
       "stimulusId": "OSSLT-P13",
       "options": [
         "They needed the neighbours' money to buy the fridge.",
@@ -2478,7 +2473,7 @@
       "skill": "Inference",
       "stem": "The group visited more than 600 stops. About how many of them had no curb cut at all?",
       "explanation": "About one stop in six had no curb cut, and 600 divided by 6 is 100. The 25 stops are the ones the city moved to the top of its repair list.",
-      "basics": "inference",
+      "basics": "drawConclusions",
       "stimulusId": "OSSLT-P14",
       "options": [
         "About 25",
@@ -2501,7 +2496,7 @@
       "skill": "Inference",
       "stem": "What does Haddad suggest when she says \"It isn't complicated. It just takes a lot of walking\"?",
       "explanation": "She says the method is simple and the hard part is the walking, so effort, not special skill, is what it takes. She says the spreadsheet was the easy part.",
-      "basics": "inference",
+      "basics": "drawConclusions",
       "stimulusId": "OSSLT-P14",
       "options": [
         "Anyone willing to put in the effort could do it.",
@@ -2524,7 +2519,7 @@
       "skill": "Making connections",
       "stem": "What does Haddad mean by \"Somebody else's brother still does\"?",
       "explanation": "Her brother no longer needs the wheelchair, but other riders do, so the map still matters. That is why she will keep it going rather than hand it off.",
-      "basics": "inference",
+      "basics": "drawConclusions",
       "stimulusId": "OSSLT-P14",
       "options": [
         "Her brother's best friend has started using a wheelchair.",
@@ -2547,7 +2542,6 @@
       "skill": "Explicit information",
       "stem": "What happened during Amir's history presentation last year?",
       "explanation": "Amir says he froze and just stood there while everybody stared. Zoe adds that he knew the material, so he was not unprepared.",
-      "basics": "findingDetail",
       "stimulusId": "OSSLT-P15",
       "options": [
         "He forgot to prepare his notes.",
@@ -2593,7 +2587,6 @@
       "skill": "Explicit information",
       "stem": "What does Zoe suggest Amir do before the auditions?",
       "explanation": "Zoe tells Amir that anybody can come to Wednesday's open rehearsal to see the stage and lights. She suggests the chorus, not a lead or a solo.",
-      "basics": "findingDetail",
       "stimulusId": "OSSLT-P15",
       "options": [
         "Watch the open rehearsal on Wednesday",
@@ -2639,7 +2632,7 @@
       "skill": "Word meaning in context",
       "stem": "What does Zoe mean by \"you just weren't ready for the room\"?",
       "explanation": "Zoe says Amir knew the material, so \"the room\" means the setting: standing in front of people who are watching. That is why she suggests seeing the stage first.",
-      "basics": "wordsInContext",
+      "basics": "figurativeLanguage",
       "stimulusId": "OSSLT-P15",
       "options": [
         "The classroom was too small for his presentation.",
@@ -2708,7 +2701,6 @@
       "skill": "Explicit information",
       "stem": "According to Grandma, how do the beans help the corn?",
       "explanation": "Grandma says the beans' roots put nitrogen into the soil, which the corn needs. It is the squash leaves that shade the ground and keep weeds down.",
-      "basics": "findingDetail",
       "stimulusId": "OSSLT-P16",
       "options": [
         "Their leaves shade the corn from the sun.",
@@ -2754,7 +2746,7 @@
       "skill": "Word meaning in context",
       "stem": "When Kaya says \"I walked into that,\" she is",
       "explanation": "Kaya joked that her job is complaining, and Grandma answered by giving her the weeding. \"I walked into that\" means she set herself up for it.",
-      "basics": "wordsInContext",
+      "basics": "figurativeLanguage",
       "stimulusId": "OSSLT-P16",
       "options": [
         "complaining that the garden is far to walk",
@@ -2777,7 +2769,7 @@
       "skill": "Making connections",
       "stem": "Which statement best describes the main idea of the dialogue?",
       "explanation": "Grandma explains how each of the Three Sisters helps the other two, and Kaya compares it to her family. Grandma prefers mounds to rows, and no crop is called most important.",
-      "basics": "mainIdea",
+      "basics": "storyTheme",
       "stimulusId": "OSSLT-P16",
       "options": [
         "Plants, like family members, can help one another.",
@@ -2826,7 +2818,6 @@
       "skill": "Explicit information",
       "stem": "Why is the team short of defence players?",
       "explanation": "The coach says the team is short two defence since Kofi broke his wrist and Liam moved away. Sam's missed pass is not the reason for the change.",
-      "basics": "findingDetail",
       "stimulusId": "OSSLT-P17",
       "options": [
         "Two defence players quit the team.",
@@ -2849,7 +2840,7 @@
       "skill": "Word meaning in context",
       "stem": "The coach tells Sam, \"You read the play before anybody else does.\" What does this mean?",
       "explanation": "Reading the play means understanding a game situation and predicting it, which is why Sam is first back when the puck is lost. It has nothing to do with books or speed.",
-      "basics": "wordsInContext",
+      "basics": "figurativeLanguage",
       "stimulusId": "OSSLT-P17",
       "options": [
         "Sam studies the team's plays at home.",
@@ -2944,7 +2935,6 @@
       "skill": "Explicit information",
       "stem": "Before arriving, how had the narrator imagined Winnipeg's cold?",
       "explanation": "The narrator says, \"I had nodded and pictured something like the air conditioning in the mall.\" The moon comparison comes after arriving.",
-      "basics": "findingDetail",
       "stimulusId": "OSSLT-P18",
       "options": [
         "Like the frozen rivers in the videos",
@@ -2967,7 +2957,7 @@
       "skill": "Word meaning in context",
       "stem": "The narrator says, \"I felt like I had landed on the moon.\" This shows the narrator felt",
       "explanation": "Aunt Rosa says \"Welcome home,\" and the narrator answers that it feels like the moon, a place as foreign as possible. Aunt Rosa is right there, so loneliness is not the point.",
-      "basics": "wordsInContext",
+      "basics": "figurativeLanguage",
       "stimulusId": "OSSLT-P18",
       "options": [
         "that everything was strange and unfamiliar",
@@ -3059,7 +3049,7 @@
       "skill": "Making connections",
       "stem": "Which sentence best describes how the narrator changes?",
       "explanation": "At first the narrator feels as if on the moon and eats lunch alone; by the end the narrator says Winnipeg \"might be okay.\" The other changes do not happen in the story.",
-      "basics": "mainIdea",
+      "basics": "storyTheme",
       "stimulusId": "OSSLT-P18",
       "options": [
         "From feeling like an outsider to feeling hopeful",
@@ -3082,7 +3072,6 @@
       "skill": "Explicit information",
       "stem": "What went wrong on the narrator's second try?",
       "explanation": "On the second try the narrator turned too early and stopped a full metre from the curb. Bumping the curb was the first try, and stopping in the road was the third.",
-      "basics": "findingDetail",
       "stimulusId": "OSSLT-P19",
       "options": [
         "The back tire bumped the curb.",
@@ -3105,7 +3094,7 @@
       "skill": "Word meaning in context",
       "stem": "The front of the car stuck out \"like a dog's tongue.\" This comparison suggests the car was",
       "explanation": "A dog's tongue hangs out to one side, so the car's front was sticking out into the road at an angle. The comparison is about position, not speed or sound.",
-      "basics": "wordsInContext",
+      "basics": "figurativeLanguage",
       "stimulusId": "OSSLT-P19",
       "options": [
         "moving fast and out of control",
@@ -3220,7 +3209,6 @@
       "skill": "Explicit information",
       "stem": "What two things did the narrator promise during the campaign? Choose two.",
       "explanation": "The narrator promised a quiet study room open at lunch and a better lost-and-found system. March is when the study room was finished, not a dance.",
-      "basics": "findingDetail",
       "stimulusId": "OSSLT-P20",
       "select": 2,
       "options": [
@@ -3338,7 +3326,7 @@
       "skill": "Making connections",
       "stem": "Which sentence best states the theme of the story?",
       "explanation": "The narrator loses but builds the study room anyway and is proudest of that title. Marcus says the narrator's speech was better, yet Marcus won, so the best speech did not win.",
-      "basics": "mainIdea",
+      "basics": "storyTheme",
       "stimulusId": "OSSLT-P20",
       "options": [
         "Losing a title doesn't stop you from making a difference.",

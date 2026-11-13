@@ -53,7 +53,8 @@
     "correct": [
       2
     ],
-    "explanation": "The winners all used paint, but that does not mean everyone who used paint wins. Ellie has turned the rule around. The number of entries does not fix that mistake."
+    "explanation": "The winners all used paint, but that does not mean everyone who used paint wins. Ellie has turned the rule around. The number of entries does not fix that mistake.",
+    "basics": "spotFlaw"
   },
   {
     "domain": "nswsCritical",
@@ -71,7 +72,8 @@
     "correct": [
       3
     ],
-    "explanation": "Lachlan only gets from rain to a cancelled match if rain causes matches to be called off. A wrong forecast would work against his argument, not support it."
+    "explanation": "Lachlan only gets from rain to a cancelled match if rain causes matches to be called off. A wrong forecast would work against his argument, not support it.",
+    "basics": "findAssumption"
   },
   {
     "domain": "nswsCritical",
@@ -90,7 +92,7 @@
       0
     ],
     "explanation": "Ruby is in the chess club and every chess club member plays in the band, so Ruby does. The rule does not work backwards, so band members need not be in the chess club.",
-    "basics": "inference"
+    "basics": "mustBeTrue"
   },
   {
     "domain": "nswsCritical",
@@ -109,7 +111,8 @@
       2
     ],
     "lockedOrder": true,
-    "explanation": "Sushi is sold only on Wednesdays, so today is Wednesday, as Kiara says. Tomorrow is Thursday, so there will be no sushi, as Ben says. Both are correct."
+    "explanation": "Sushi is sold only on Wednesdays, so today is Wednesday, as Kiara says. Tomorrow is Thursday, so there will be no sushi, as Ben says. Both are correct.",
+    "basics": "mustBeTrue"
   },
   {
     "domain": "nswsCritical",
@@ -165,7 +168,8 @@
     "correct": [
       3
     ],
-    "explanation": "Five friends from one class may think alike and cannot show what hundreds of students want. A later finish might be a reason against the idea, but it is not a mistake in his reasoning."
+    "explanation": "Five friends from one class may think alike and cannot show what hundreds of students want. A later finish might be a reason against the idea, but it is not a mistake in his reasoning.",
+    "basics": "spotFlaw"
   },
   {
     "domain": "nswsCritical",
@@ -183,7 +187,8 @@
     "correct": [
       0
     ],
-    "explanation": "Finishing homework only frees up time if Zara has no other jobs or activities filling it. Ms Nguyen does not need Zara to be the best painter, only to have time."
+    "explanation": "Finishing homework only frees up time if Zara has no other jobs or activities filling it. Ms Nguyen does not need Zara to be the best painter, only to have time.",
+    "basics": "findAssumption"
   },
   {
     "domain": "nswsCritical",
@@ -202,7 +207,7 @@
       1
     ],
     "explanation": "If Ahmed had walked he would have a green token, so he did not walk. He might have come by bus rather than car, and nothing says gold tokens only go to green token holders, so either gold option could be wrong.",
-    "basics": "inference"
+    "basics": "mustBeTrue"
   },
   {
     "domain": "nswsCritical",
@@ -221,7 +226,7 @@
       2
     ],
     "explanation": "A violin player learns French, and nobody who learns French is in drama, so a violin player cannot be in drama. Each of the other statements fits the rules.",
-    "basics": "inference"
+    "basics": "mustBeTrue"
   },
   {
     "domain": "nswsCritical",
@@ -240,7 +245,8 @@
       0
     ],
     "lockedOrder": true,
-    "explanation": "Every club member must have handed in a note, so Noah is right about Isla. Raj meets the rules for joining, but nothing says he chose to join, so Chloe is wrong."
+    "explanation": "Every club member must have handed in a note, so Noah is right about Isla. Raj meets the rules for joining, but nothing says he chose to join, so Chloe is wrong.",
+    "basics": "mustBeTrue"
   },
   {
     "domain": "nswsCritical",
@@ -259,7 +265,8 @@
       1
     ],
     "lockedOrder": true,
-    "explanation": "The rule only says what happens when it rains. It does not say the hall is used only on rainy days, so Jack cannot be sure, while Mei is right that it might not have rained."
+    "explanation": "The rule only says what happens when it rains. It does not say the hall is used only on rainy days, so Jack cannot be sure, while Mei is right that it might not have rained.",
+    "basics": "mustBeTrue"
   },
   {
     "domain": "nswsCritical",
@@ -315,7 +322,8 @@
     "correct": [
       1
     ],
-    "explanation": "The choir and the good marks go together, but the good musicians may have joined because they were already good. Hana assumes the choir causes the marks. A few choir students missing top marks does not affect her claim about averages."
+    "explanation": "The choir and the good marks go together, but the good musicians may have joined because they were already good. Hana assumes the choir causes the marks. A few choir students missing top marks does not affect her claim about averages.",
+    "basics": "spotFlaw"
   },
   {
     "domain": "nswsCritical",
@@ -333,7 +341,8 @@
     "correct": [
       2
     ],
-    "explanation": "Leaving ten minutes earlier only means arriving ten minutes earlier if the trip is no longer than before. Oscar does not say whether arriving early is good, so that is not something he assumed."
+    "explanation": "Leaving ten minutes earlier only means arriving ten minutes earlier if the trip is no longer than before. Oscar does not say whether arriving early is good, so that is not something he assumed.",
+    "basics": "findAssumption"
   },
   {
     "domain": "nswsCritical",
@@ -352,7 +361,7 @@
       3
     ],
     "explanation": "Relay swimmers all swam freestyle, and freestyle swimmers never swam backstroke, so no relay swimmer swam backstroke. Breaststroke swimmers who did not swim backstroke might still have swum freestyle, so that option need not be true.",
-    "basics": "inference"
+    "basics": "mustBeTrue"
   },
   {
     "domain": "nswsCritical",
@@ -425,8 +434,7 @@
     "correct": [
       2
     ],
-    "explanation": "The notebooks cost 3 times 4, which is 12 dollars, and with the pen she spends 15 dollars. 20 minus 15 leaves 5 dollars. Forgetting the pen gives 8 dollars.",
-    "basics": "wordProblems"
+    "explanation": "The notebooks cost 3 times 4, which is 12 dollars, and with the pen she spends 15 dollars. 20 minus 15 leaves 5 dollars. Forgetting the pen gives 8 dollars."
   },
   {
     "domain": "nswsProblem",
@@ -534,8 +542,7 @@
     "correct": [
       0
     ],
-    "explanation": "In 3 years their ages add to 30 and differ by 4, so they will be 13 and 17. Mila will be 13 then, so she is 10 now. Answering 13 forgets to go back 3 years.",
-    "basics": "wordProblems"
+    "explanation": "In 3 years their ages add to 30 and differ by 4, so they will be 13 and 17. Mila will be 13 then, so she is 10 now. Answering 13 forgets to go back 3 years."
   },
   {
     "domain": "nswsProblem",
@@ -789,7 +796,8 @@
     "correct": [
       2
     ],
-    "explanation": "Winning whenever Jade plays does not mean losing whenever she does not. The team might also win without her. How many goals Jade scores does not change this mistake."
+    "explanation": "Winning whenever Jade plays does not mean losing whenever she does not. The team might also win without her. How many goals Jade scores does not change this mistake.",
+    "basics": "spotFlaw"
   },
   {
     "domain": "nswsCritical",
@@ -807,7 +815,8 @@
     "correct": [
       3
     ],
-    "explanation": "There is half an hour until closing, so Mum must be taking for granted that the trip and the purchase fit into it. Whether there is milk at home is a reason to go, not part of whether there is time."
+    "explanation": "There is half an hour until closing, so Mum must be taking for granted that the trip and the purchase fit into it. Whether there is milk at home is a reason to go, not part of whether there is time.",
+    "basics": "findAssumption"
   },
   {
     "domain": "nswsCritical",
@@ -826,7 +835,7 @@
       0
     ],
     "explanation": "If Felix were in Room 4 he would be going, so he cannot be in Room 4. We do not know why he is not going, and other classes may be going too.",
-    "basics": "inference"
+    "basics": "mustBeTrue"
   },
   {
     "domain": "nswsCritical",
@@ -845,7 +854,8 @@
       0
     ],
     "lockedOrder": true,
-    "explanation": "The library is only closed on weekends, so today is Saturday or Sunday, as Mila says. If today is Saturday, tomorrow is Sunday and the library will still be closed, so Arjun cannot be sure."
+    "explanation": "The library is only closed on weekends, so today is Saturday or Sunday, as Mila says. If today is Saturday, tomorrow is Sunday and the library will still be closed, so Arjun cannot be sure.",
+    "basics": "mustBeTrue"
   },
   {
     "domain": "nswsCritical",
@@ -901,7 +911,8 @@
     "correct": [
       3
     ],
-    "explanation": "Leaving out one unhealthy food does not make a meal healthy, because it could be full of other unhealthy food. Who packed the lunch has nothing to do with the reasoning."
+    "explanation": "Leaving out one unhealthy food does not make a meal healthy, because it could be full of other unhealthy food. Who packed the lunch has nothing to do with the reasoning.",
+    "basics": "spotFlaw"
   },
   {
     "domain": "nswsCritical",
@@ -919,7 +930,8 @@
     "correct": [
       0
     ],
-    "explanation": "Isaac moves from the top score to the best spellers, so he must assume the spelling bee fairly measured each class's spelling. How much his class practised would explain the result but is not needed for his conclusion."
+    "explanation": "Isaac moves from the top score to the best spellers, so he must assume the spelling bee fairly measured each class's spelling. How much his class practised would explain the result but is not needed for his conclusion.",
+    "basics": "findAssumption"
   },
   {
     "domain": "nswsCritical",
@@ -938,7 +950,7 @@
       1
     ],
     "explanation": "Apples cost more than pears and pears cost more than oranges, so apples cost more than oranges. Some bags of oranges costing more than some bags of apples can never be true, and the prices and popularity are not given.",
-    "basics": "inference"
+    "basics": "mustBeTrue"
   },
   {
     "domain": "nswsCritical",
@@ -957,7 +969,7 @@
       2
     ],
     "explanation": "Kenji goes to art class, so he does not train on Tuesdays, so he cannot be in the hockey team. The other statements could all be true.",
-    "basics": "inference"
+    "basics": "mustBeTrue"
   },
   {
     "domain": "nswsCritical",
@@ -976,7 +988,8 @@
       1
     ],
     "lockedOrder": true,
-    "explanation": "Nothing says vouchers go only to certificate holders, or certificates only to finishers, so Zac cannot be sure about Paulo. For the same reason Wren might have got a certificate another way, so Tess is right."
+    "explanation": "Nothing says vouchers go only to certificate holders, or certificates only to finishers, so Zac cannot be sure about Paulo. For the same reason Wren might have got a certificate another way, so Tess is right.",
+    "basics": "mustBeTrue"
   },
   {
     "domain": "nswsCritical",
@@ -1051,7 +1064,8 @@
     "correct": [
       1
     ],
-    "explanation": "Two groups can each be more than half the school and still overlap only a little. For example, out of 100 students, 60 might have a pet and 60 ride, with only 20 doing both, so most pet owners would not ride."
+    "explanation": "Two groups can each be more than half the school and still overlap only a little. For example, out of 100 students, 60 might have a pet and 60 ride, with only 20 doing both, so most pet owners would not ride.",
+    "basics": "spotFlaw"
   },
   {
     "domain": "nswsCritical",
@@ -1069,7 +1083,8 @@
     "correct": [
       2
     ],
-    "explanation": "Ava expects exactly the same three month delay, so she must assume the library will run late just as the pool did. A pool that was harder to build would weaken her argument, not support it."
+    "explanation": "Ava expects exactly the same three month delay, so she must assume the library will run late just as the pool did. A pool that was harder to build would weaken her argument, not support it.",
+    "basics": "findAssumption"
   },
   {
     "domain": "nswsCritical",
@@ -1088,7 +1103,7 @@
       3
     ],
     "explanation": "A score above 15 would have earned Raj a sticker and so a merit note, which he did not get, so he scored 15 or less. Lily also scored 15 or less, so we cannot tell which of them scored more.",
-    "basics": "inference"
+    "basics": "mustBeTrue"
   },
   {
     "domain": "nswsCritical",
@@ -1107,7 +1122,8 @@
       2
     ],
     "lockedOrder": true,
-    "explanation": "Max finished behind Lola, so he did not win, and Grace is right. The order Ned, Oli, Kai, Lola, Max fits every clue, so Oli could have been second and Finn is right too."
+    "explanation": "Max finished behind Lola, so he did not win, and Grace is right. The order Ned, Oli, Kai, Lola, Max fits every clue, so Oli could have been second and Finn is right too.",
+    "basics": "mustBeTrue"
   },
   {
     "domain": "nswsProblem",
@@ -1161,8 +1177,7 @@
     "correct": [
       2
     ],
-    "explanation": "8 pencils cost 4 dollars 80 cents and 9 pencils would cost 5 dollars 40 cents, which is too much. So the most he can buy is 8.",
-    "basics": "wordProblems"
+    "explanation": "8 pencils cost 4 dollars 80 cents and 9 pencils would cost 5 dollars 40 cents, which is too much. So the most he can buy is 8."
   },
   {
     "domain": "nswsProblem",
@@ -1216,8 +1231,7 @@
     "correct": [
       1
     ],
-    "explanation": "There are 28 minus 15, which is 13 boys. 15 girls minus 13 boys is 2 more girls. Answering 13 gives the number of boys instead.",
-    "basics": "wordProblems"
+    "explanation": "There are 28 minus 15, which is 13 boys. 15 girls minus 13 boys is 2 more girls. Answering 13 gives the number of boys instead."
   },
   {
     "domain": "nswsProblem",
@@ -1271,8 +1285,7 @@
     "correct": [
       0
     ],
-    "explanation": "Try the choices: in 6 years Mum will be 42 and Hannah 14, and 42 is 3 times 14. In 4 years they would be 40 and 12, which does not work.",
-    "basics": "wordProblems"
+    "explanation": "Try the choices: in 6 years Mum will be 42 and Hannah 14, and 42 is 3 times 14. In 4 years they would be 40 and 12, which does not work."
   },
   {
     "domain": "nswsProblem",
@@ -1434,8 +1447,7 @@
     "correct": [
       1
     ],
-    "explanation": "Numbers that leave 2 over when shared among 5 end in 2 or 7: 32, 37, 42, 47, 52, 57. Of these, only 47 leaves 3 over when shared among 4 (44 + 3).",
-    "basics": "wordProblems"
+    "explanation": "Numbers that leave 2 over when shared among 5 end in 2 or 7: 32, 37, 42, 47, 52, 57. Of these, only 47 leaves 3 over when shared among 4 (44 + 3)."
   },
   {
     "domain": "nswsProblem",
@@ -1527,7 +1539,8 @@
     "correct": [
       2
     ],
-    "explanation": "One noise the cat dislikes does not show it fears every loud noise. How often the vacuum is used does not change that mistake."
+    "explanation": "One noise the cat dislikes does not show it fears every loud noise. How often the vacuum is used does not change that mistake.",
+    "basics": "spotFlaw"
   },
   {
     "domain": "nswsCritical",
@@ -1545,7 +1558,8 @@
     "correct": [
       3
     ],
-    "explanation": "Kalani jumps from one quiz to being better at maths overall, so she must assume a single quiz shows maths ability. She does not need to predict the next quiz."
+    "explanation": "Kalani jumps from one quiz to being better at maths overall, so she must assume a single quiz shows maths ability. She does not need to predict the next quiz.",
+    "basics": "findAssumption"
   },
   {
     "domain": "nswsCritical",
@@ -1564,7 +1578,8 @@
       0
     ],
     "lockedOrder": true,
-    "explanation": "A child under 8 without an adult would break the rule, so Leo is 8 or older and Owen is right. Older children may also swim with an adult, so Pip cannot be sure about Sara."
+    "explanation": "A child under 8 without an adult would break the rule, so Leo is 8 or older and Owen is right. Older children may also swim with an adult, so Pip cannot be sure about Sara.",
+    "basics": "mustBeTrue"
   },
   {
     "domain": "nswsCritical",
@@ -1583,7 +1598,7 @@
       0
     ],
     "explanation": "If Ravi liked swimming he would like the beach, and then he could not dislike summer. So he does not like swimming. Ravi liking the beach cannot be true.",
-    "basics": "inference"
+    "basics": "mustBeTrue"
   },
   {
     "domain": "nswsProblem",
@@ -1619,8 +1634,7 @@
     "correct": [
       2
     ],
-    "explanation": "45 is 20 + 20 + 5, 75 is 50 + 20 + 5 and 95 uses all four coins. To make 60 she would need a 10 cent coin, so it cannot be done.",
-    "basics": "wordProblems"
+    "explanation": "45 is 20 + 20 + 5, 75 is 50 + 20 + 5 and 95 uses all four coins. To make 60 she would need a 10 cent coin, so it cannot be done."
   },
   {
     "domain": "nswsProblem",

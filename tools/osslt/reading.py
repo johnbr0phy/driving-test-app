@@ -30,7 +30,7 @@ S(INFO, 1, EXP, 1, "What ends the maple syrup season?",
 S(INFO, 1, INF, 2, "Why does it take so much sap to make one litre of syrup?",
   ["Sap is mostly water that must be boiled away.", "Much of the sap turns bitter while it boils.", "Producers lose sap through the drilled holes.", "Only sap gathered at night can be used."],
   "Sap is only about two percent sugar, so almost all of it is water that boils off. The paragraph never says sap turns bitter in the pot; it turns bitter when the trees bud.",
-  basics="inference", stim="OSSLT-P01")
+  basics="drawConclusions", stim="OSSLT-P01")
 S(INFO, 1, INF, 1, "Which sentence best states the main idea of the paragraph?",
   ["Maple sap flows only in certain weather.", "Quebec makes more syrup than Ontario.", "Making syrup is easier than it looks.", "Sugar maples need warm nights to grow."],
   "Every sentence explains how temperature controls when sap flows and when the season ends. The paragraph never compares the two provinces or calls syrup-making easy.",
@@ -39,7 +39,7 @@ M(INFO, 1, CON, 3, "Based on the paragraph, which TWO pieces of advice would a m
   ["Watch the forecast for freezing nights and mild days.", "Tap the trees before they start to bud."],
   ["Wait for a long stretch of warm nights.", "Boil the sap until it starts to taste bitter.", "Drill the holes in the roots instead of the trunk."],
   "Sap runs only when freezing nights alternate with mild days, and budding ends the season, so a producer watches the weather and taps early. Warm nights stop the flow, and bitterness comes from budding, not boiling.",
-  basics="inference", stim="OSSLT-P01")
+  basics="drawConclusions", stim="OSSLT-P01")
 
 P("OSSLT-P02", "Sudbury students build sorting machine for food bank",
 """SUDBURY, Ont. - A robotics team from Ridgeline Secondary School has built a machine that sorts canned food by expiry date, and the Northside Community Food Bank says it has already saved its volunteers dozens of hours.
@@ -67,7 +67,7 @@ S(NEWS, 1, EXP, 1, "Where did the idea for the machine come from?",
 S(NEWS, 1, INF, 2, "What can you conclude from the fact that the students rebuilt the feeder three times?",
   ["They kept working on the problem instead of giving up.", "The food bank asked for a new design each time.", "The competition required three working versions.", "The camera could not read most expiry dates."],
   "The feeder jammed on wrinkled labels, and the team rebuilt it until it worked, which shows persistence. Nothing says the food bank or the competition asked for new versions.",
-  basics="inference", stim="OSSLT-P02")
+  basics="drawConclusions", stim="OSSLT-P02")
 S(NEWS, 1, INF, 2, "Why does the writer include the quotation from Lise Bergeron?",
   ["To show how the machine changed the volunteers' work", "To explain how the camera reads the expiry dates", "To describe the competition the students entered", "To ask readers to donate food to the food bank"],
   "Bergeron says the volunteers who once checked cans now pack hampers and talk with families. Her quotation is about the volunteers, not the camera or the competition.",
@@ -75,7 +75,7 @@ S(NEWS, 1, INF, 2, "Why does the writer include the quotation from Lise Bergeron
 S(NEWS, 1, CON, 2, "What does Arjun Mehta mean when he says the team \"ended up fixing something real\"?",
   ["The project solved a problem outside the competition.", "The team repaired the machine after it broke.", "The students would rather volunteer than compete.", "The machine will be sold to other food banks."],
   "Mehta contrasts winning a trophy with helping the food bank: the machine does a real job for real people. He never says he prefers volunteering to competing.",
-  basics="inference", stim="OSSLT-P02")
+  basics="drawConclusions", stim="OSSLT-P02")
 
 P("OSSLT-P03", "The Summer Plan",
 """*Priya, 16, and her older brother Dev, 19, are in the kitchen. Priya has two summer job offers.*
@@ -115,7 +115,7 @@ S(DIA, 1, INF, 2, "Why does Dev say \"the gap is smaller than it looks\"?",
 S(DIA, 1, EXP, 1, "What reason does Priya give for wanting the camp job?",
   ["She went there for many summers and loves it.", "Her brother worked there as a counsellor.", "It is closer to home than the grocery store.", "It would pay for her driving lessons."],
   "Priya says she keeps picturing herself at camp, went there for six summers and knows every trail. Her brother never worked there, and the camp is up near Huntsville, not close to home.",
-  basics="findingDetail", stim="OSSLT-P03")
+  stim="OSSLT-P03")
 S(DIA, 1, INF, 2, "Which word best describes Dev's role in the conversation?",
   ["Helpful", "Bossy", "Impatient", "Jealous"],
   "Dev asks questions that help Priya see her own choice and says the decision is hers. He never tells her which job to take, so he is not bossy.",
@@ -127,7 +127,7 @@ S(DIA, 1, INF, 2, "What does Priya's laughter suggest when she says \"I'd tell t
 S(DIA, 1, CON, 3, "Which statement best expresses a central idea of the dialogue?",
   ["A good choice weighs now against later.", "Older siblings usually know what is best.", "Pay is the most important part of any job.", "Summer camps should pay their staff more."],
   "Dev frames the choice as money now against experience for later, and Priya plans to list both sides. Dev says the choice is hers, so the dialogue does not claim siblings know best.",
-  basics="mainIdea", stim="OSSLT-P03")
+  basics="storyTheme", stim="OSSLT-P03")
 
 P("OSSLT-P04", "First Shift",
 """The lunch rush at the Harbour Grill hit at noon, and by 12:15 I had already dropped a fork, mixed up two orders and forgotten what a "side Caesar" was.
@@ -149,11 +149,11 @@ The next Saturday, before the doors opened, I took a blank order slip and drew m
 S(NAR, 1, EXP, 1, "What did Theo draw on the back of an order slip?",
   ["A map of the narrator's tables and their orders", "A list of the restaurant's daily specials", "Directions to the kitchen and the back door", "A schedule of the narrator's next shifts"],
   "Theo drew a map of the section with each table's number, what it ordered and what it still needed. The story mentions no specials list or schedule.",
-  basics="findingDetail", stim="OSSLT-P04")
+  stim="OSSLT-P04")
 S(NAR, 1, WORD, 2, "Theo \"moved between tables as if the floor were on wheels.\" This comparison shows that Theo",
   ["moved smoothly and quickly", "was careless and rushed", "was nervous and unsteady", "kept slipping on the floor"],
   "Something on wheels glides easily, so the comparison shows how smoothly Theo worked the room. It contrasts with the narrator's clumsy first hour; it does not mean Theo slipped.",
-  basics="wordsInContext", stim="OSSLT-P04")
+  basics="figurativeLanguage", stim="OSSLT-P04")
 S(NAR, 1, INF, 2, "Why did the narrator consider \"walking out the back\"?",
   ["The narrator felt overwhelmed and embarrassed.", "The narrator's shift was already over.", "Carla had criticized the narrator in front of everyone.", "The narrator wanted to take a break with Theo."],
   "After dropping a fork, mixing up orders and being waved at three times, the narrator's face was burning. Carla does not criticize anyone in the story, and the shift was far from over.",
@@ -169,7 +169,7 @@ O(NAR, 1, "Order of events", 1, "Put these events in the order they happen in th
 S(NAR, 1, CON, 2, "Which sentence best states the theme of the story?",
   ["A hard job gets easier with a system.", "Restaurant customers are hard to please.", "It is better to work alone than ask for help.", "A bad first day means the job is wrong."],
   "The narrator struggles until Theo shares his system, then uses it the next week. The narrator accepts help and comes back, so the other choices go against the story.",
-  basics="mainIdea", stim="OSSLT-P04")
+  basics="storyTheme", stim="OSSLT-P04")
 S(NAR, 1, INF, 2, "Theo's grin at the end of the story most likely shows that he",
   ["is pleased the narrator learned from him", "thinks the narrator's map is too simple", "is surprised the narrator came back", "wants the narrator to work his tables"],
   "Theo grins and says \"You have a system,\" repeating his own advice, which shows he is proud the narrator used it. Nothing suggests he expected the narrator to quit.",
@@ -204,7 +204,7 @@ M(INFO, 2, CON, 3, "A town council is deciding whether to drain a marsh to build
   ["The marsh can lower the risk of flooding in town.", "The marsh helps clean the water that flows through it."],
   ["Wetlands cover a large share of Canada.", "Marshes, swamps and bogs are all types of wetland.", "Wetland plants grow in thick mud."],
   "Flood control and cleaner water are direct benefits to the town. That wetlands are common in Canada, or that marshes are one type, gives no reason to keep this one.",
-  basics="inference", stim="OSSLT-P05")
+  basics="drawConclusions", stim="OSSLT-P05")
 
 P("OSSLT-P06", "Library lends drills, tents and sewing machines",
 """THUNDER BAY, Ont. - Residents who need a ladder for one afternoon or a tent for one weekend can now borrow it the same way they borrow a book.
@@ -234,7 +234,7 @@ S(NEWS, 2, EXP, 1, "How was most of the project paid for?",
 S(NEWS, 2, INF, 2, "What does the waiting list for the carpet cleaner suggest?",
   ["More people want it than the library can serve at once.", "The carpet cleaner is broken and being repaired.", "It is the most expensive item in the collection.", "Only adults are allowed to borrow the carpet cleaner."],
   "A waiting list means people are lined up for an item that is already out. It appears in the paragraph about demand surprising staff, not one about repairs or cost.",
-  basics="inference", stim="OSSLT-P06")
+  basics="drawConclusions", stim="OSSLT-P06")
 S(NEWS, 2, INF, 2, "Why does the writer include Malcolm Oduya's comments?",
   ["To show how the program saves people money", "To show that some residents dislike the program", "To explain the library's safety rules", "To announce the new items coming in the spring"],
   "Oduya says he would have spent \\$200 on a tool he would use once, which is the problem the library set out to solve. He is pleased with the program, not critical of it.",
@@ -276,7 +276,7 @@ P("OSSLT-P07", "Forty Hours",
 S(DIA, 2, EXP, 1, "How many community involvement hours has Jordan completed so far?",
   ["Six", "Ten", "Forty", "None"],
   "Ms. Okafor says she sees only six hours in his file. Forty is the number he needs to graduate.",
-  basics="findingDetail", stim="OSSLT-P07")
+  stim="OSSLT-P07")
 S(DIA, 2, INF, 2, "Why does Ms. Okafor suggest the bike co-op?",
   ["It uses a skill Jordan already has.", "It is the only placement the school allows.", "It meets on the nights of his practices.", "It pays volunteers who can fix bikes."],
   "Jordan fixes bikes, and Ms. Okafor says the best placements use something a student is already good at. The co-op meets Thursdays, when Jordan has no practice.",
@@ -284,11 +284,11 @@ S(DIA, 2, INF, 2, "Why does Ms. Okafor suggest the bike co-op?",
 S(DIA, 2, EXP, 1, "What must Jordan do before he starts at the co-op?",
   ["Return a completed form for approval", "Have the coordinator sign his hours", "Leave the basketball team", "Watch one repair night first"],
   "Ms. Okafor says to fill out the form and bring it back so the school can approve the placement, before he starts. The coordinator signs his hours each month after that.",
-  basics="findingDetail", stim="OSSLT-P07")
+  stim="OSSLT-P07")
 S(DIA, 2, WORD, 2, "What does Ms. Okafor mean when she says \"they won't let you just watch for long\"?",
   ["The co-op will soon put Jordan to work.", "Jordan will be sent home if he only watches.", "The repair nights are very short.", "Jordan should practise fixing bikes at home."],
   "She is reassuring Jordan that the co-op needs help and will have him repairing bikes soon. Nothing in the dialogue says he would be sent home.",
-  basics="wordsInContext", stim="OSSLT-P07")
+  basics="figurativeLanguage", stim="OSSLT-P07")
 M(DIA, 2, CON, 3, "Which TWO statements describe how Jordan's ideas about volunteering change? Choose two.",
   ["He first thought it meant only tasks like serving soup.", "He learns it can use a skill he already has."],
   ["He decides it will get in the way of basketball.", "He learns that helping family always counts.", "He decides to finish his hours in Grade 12."],
@@ -319,11 +319,11 @@ That night, by the fire, Mr. Chen asked what I thought of my first portage. I sa
 S(NAR, 2, EXP, 1, "What did the narrator carry at the start of the portage?",
   ["The pack with the tent and pots", "The canoe and the paddles", "The barrel of food for the trip", "The bug spray and the trail map"],
   "Mr. Chen took the canoe and Mei grabbed the food barrel, which left the narrator the heaviest pack, with the tent and cooking pots.",
-  basics="findingDetail", stim="OSSLT-P08")
+  stim="OSSLT-P08")
 S(NAR, 2, WORD, 2, "Roots \"crossed it like veins.\" This comparison helps the reader picture roots that",
   ["ran across the trail in branching lines", "were soft and red underfoot", "had been cut away from the path", "moved when someone stepped on them"],
   "Veins branch in thin lines under the skin, so the roots spread over the trail in a similar pattern. The comparison is about shape, not colour or movement.",
-  basics="wordsInContext", stim="OSSLT-P08")
+  basics="figurativeLanguage", stim="OSSLT-P08")
 S(NAR, 2, INF, 1, "Why did the narrator sit down on the rock halfway along the trail?",
   ["The narrator was worn out and discouraged.", "The narrator was waiting for Mr. Chen.", "The narrator had lost the trail.", "The narrator wanted to see the lake."],
   "The narrator was breathing hard and planned to wait there until the trip was over, which shows exhaustion and discouragement. The lake view comes later, at the top.",
@@ -339,7 +339,7 @@ S(NAR, 2, INF, 2, "Why does Mei sit quietly beside the narrator before speaking?
 S(NAR, 2, CON, 2, "Which sentence best expresses the main message of the story?",
   ["Help from others can get you through something hard.", "Canoe trips are too difficult for beginners.", "People should never stop to rest on a hike.", "The best part of camping is sitting by the fire."],
   "The narrator nearly gives up until Mei's help and encouragement get them to the lookout. The beginner finishes and even asks about the next portage, so the trip was not too hard.",
-  basics="mainIdea", stim="OSSLT-P08")
+  basics="storyTheme", stim="OSSLT-P08")
 S(NAR, 2, INF, 3, "What does the narrator's question at the end of the story suggest?",
   ["The narrator is warming up to the trip.", "The narrator wants to avoid the next portage.", "The narrator does not believe what Mei said.", "The narrator plans to stay at the lookout."],
   "Right after calling the portage the worst thing ever, the narrator asks if the next one has a lookout too, which shows the reward has changed how the narrator feels.",
@@ -365,7 +365,7 @@ S(INFO, 0, EXP, 2, "How are red leaf colours different from yellow and orange on
 S(INFO, 0, INF, 2, "Based on the paragraph, which autumn would most likely give the brightest red maples?",
   ["Sunny days and cool nights above freezing", "Cloudy days and warm, damp nights", "Sunny days and nights far below freezing", "Rainy days and frosty nights"],
   "The paragraph says maples make the most red pigment when days are sunny and nights are cool but above freezing. Each other choice changes one of those conditions.",
-  basics="inference", stim="OSSLT-P09")
+  basics="drawConclusions", stim="OSSLT-P09")
 S(INFO, 0, WORD, 1, "In this paragraph, \"pigments\" are",
   ["substances that give leaves colour", "tiny openings in a leaf's surface", "parts of a tree that store water", "kinds of trees that grow in Ontario"],
   "The paragraph calls carotenoids and anthocyanins pigments and links each to a colour. Nothing connects the word to openings, water or kinds of trees.",
@@ -402,7 +402,7 @@ M(INFO, 0, CON, 2, "A student falls asleep in first period every day. Based on t
   ["Going to bed at the same time every night, weekends included", "Putting the phone away an hour before bed"],
   ["Sleeping in until noon every Saturday", "Doing homework in bed under a bright lamp", "Staying up until the body feels tired"],
   "Sleep researchers suggest a regular bedtime, even on weekends, and putting phones away an hour before sleep. Sleeping in breaks the regular schedule, and bright light delays melatonin.",
-  basics="inference", stim="OSSLT-P10")
+  basics="drawConclusions", stim="OSSLT-P10")
 
 P("OSSLT-P11", "Snowbelts",
 """Some Ontario towns can be buried in snow while places an hour's drive away see only flurries. The difference often comes from lake-effect snow. In late fall and early winter, the Great Lakes are still relatively warm, because water holds heat much longer than land does. When frigid air from the northwest blows across a lake, the warmer water heats the bottom layer of air and adds moisture to it. That warm, damp air rises, cools and forms clouds, which drop heavy snow once they reach the downwind shore. The longer the stretch of open water the wind crosses, the more moisture it can pick up, so the heaviest snow usually falls in narrow bands over particular areas known as snowbelts, such as the land east of Lake Huron and Georgian Bay. Lake-effect snow usually becomes less common later in the winter, once ice covers much of the lake and the water can no longer feed the clouds.""")
@@ -418,7 +418,7 @@ O(INFO, 0, "Order of steps", 2, "Put the steps of lake-effect snow in the order 
 S(INFO, 0, INF, 2, "Which town would most likely get the most lake-effect snow?",
   ["One downwind of a long stretch of open lake", "One on the upwind shore of a small lake", "One far inland, away from any large lake", "One beside a lake that is covered in ice"],
   "Snow falls on the downwind shore, and a longer stretch of open water adds more moisture. A frozen lake can no longer feed the clouds.",
-  basics="inference", stim="OSSLT-P11")
+  basics="drawConclusions", stim="OSSLT-P11")
 S(INFO, 0, WORD, 1, "In this paragraph, \"frigid\" most nearly means",
   ["very cold", "very dry", "very fast", "very damp"],
   "Frigid describes the air that the warmer water heats from below, so it means very cold. The paragraph contrasts the air with the warmer lake, which is about temperature.",
@@ -462,7 +462,7 @@ S(NEWS, 0, WORD, 2, "Dr. Adeyemi says trees and shrubs \"act like a net.\" What 
 S(NEWS, 0, INF, 2, "If Dr. Adeyemi's estimate is correct, about how many of the 2,000 trees will die in the first two winters?",
   ["400", "200", "500", "1,600"],
   "She expects to lose about one in five. One fifth of 2,000 is 400. 1,600 is the number expected to survive.",
-  basics="inference", stim="OSSLT-P12")
+  basics="drawConclusions", stim="OSSLT-P12")
 S(NEWS, 0, INF, 2, "Why does the writer include Keisha Thompson's story about her grandfather?",
   ["To show a personal reason for restoring the creek", "To prove the creek has more fish than ever before", "To explain how the city chose the kinds of trees", "To describe the fishing rules along the creek"],
   "Keisha says her grandfather remembers a creek full of fish and she wants it to be like that again, a personal reason for the work. Her words suggest there are fewer fish now, not more.",
@@ -498,7 +498,7 @@ S(NEWS, 0, EXP, 1, "Why are home-cooked meals not accepted?",
 S(NEWS, 0, INF, 2, "What does the meeting with neighbours before the opening suggest about the organizers?",
   ["They wanted to deal with concerns before problems began.", "They needed the neighbours' money to buy the fridge.", "They planned to move the fridge to another street.", "They did not expect anyone to use the fridge."],
   "Residents worried about litter, so the group met them first and agreed to empty a bin every evening. That shows planning ahead, not a need for money.",
-  basics="inference", stim="OSSLT-P13")
+  basics="drawConclusions", stim="OSSLT-P13")
 S(NEWS, 0, INF, 2, "Glen Arsenault says \"It goes both ways.\" What does he mean?",
   ["People both give food and take food.", "The fridge has doors on both sides.", "Volunteers work morning and evening.", "Some neighbours like it and some don't."],
   "He sometimes takes bread and sometimes leaves apples, so giving and taking both happen, which matches the motto \"take what you need, leave what you can.\"",
@@ -537,15 +537,15 @@ S(NEWS, 0, EXP, 1, "Which detail did the group record at each bus stop?",
 S(NEWS, 0, INF, 2, "The group visited more than 600 stops. About how many of them had no curb cut at all?",
   ["About 100", "About 25", "About 60", "About 300"],
   "About one stop in six had no curb cut, and 600 divided by 6 is 100. The 25 stops are the ones the city moved to the top of its repair list.",
-  basics="inference", stim="OSSLT-P14")
+  basics="drawConclusions", stim="OSSLT-P14")
 S(NEWS, 0, INF, 2, "What does Haddad suggest when she says \"It isn't complicated. It just takes a lot of walking\"?",
   ["Anyone willing to put in the effort could do it.", "The project took much less time than planned.", "She wishes the city had paid her group.", "The spreadsheet was the hardest part."],
   "She says the method is simple and the hard part is the walking, so effort, not special skill, is what it takes. She says the spreadsheet was the easy part.",
-  basics="inference", stim="OSSLT-P14")
+  basics="drawConclusions", stim="OSSLT-P14")
 S(NEWS, 0, CON, 2, "What does Haddad mean by \"Somebody else's brother still does\"?",
   ["Other riders still need the map, even if he does not.", "Her brother's best friend has started using a wheelchair.", "She plans to give the map to another family to run.", "The city has still not fixed the stop near her home."],
   "Her brother no longer needs the wheelchair, but other riders do, so the map still matters. That is why she will keep it going rather than hand it off.",
-  basics="inference", stim="OSSLT-P14")
+  basics="drawConclusions", stim="OSSLT-P14")
 
 P("OSSLT-P15", "Auditions",
 """*Lunch. Amir and Zoe are sitting on the steps outside the school.*
@@ -587,7 +587,7 @@ P("OSSLT-P15", "Auditions",
 S(DIA, 0, EXP, 1, "What happened during Amir's history presentation last year?",
   ["He froze and could not go on.", "He forgot to prepare his notes.", "He sang instead of presenting.", "He laughed in front of the class."],
   "Amir says he froze and just stood there while everybody stared. Zoe adds that he knew the material, so he was not unprepared.",
-  basics="findingDetail", stim="OSSLT-P15")
+  stim="OSSLT-P15")
 S(DIA, 0, INF, 1, "When Zoe says \"My ears can confirm you were thinking about it,\" her tone is",
   ["teasing", "angry", "worried", "jealous"],
   "Zoe jokes that she has had to listen to Amir sing every morning, a playful way of saying he obviously wants to audition. Nothing in her words sounds angry or worried.",
@@ -595,7 +595,7 @@ S(DIA, 0, INF, 1, "When Zoe says \"My ears can confirm you were thinking about i
 S(DIA, 0, EXP, 1, "What does Zoe suggest Amir do before the auditions?",
   ["Watch the open rehearsal on Wednesday", "Sing a solo for Mr. Lavoie", "Redo his history presentation", "Ask Mr. Lavoie for a lead role"],
   "Zoe tells Amir that anybody can come to Wednesday's open rehearsal to see the stage and lights. She suggests the chorus, not a lead or a solo.",
-  basics="findingDetail", stim="OSSLT-P15")
+  stim="OSSLT-P15")
 S(DIA, 0, INF, 2, "Why does Zoe mention singing in the chorus?",
   ["To show Amir a way to perform without everyone watching him", "To tell Amir that he is not good enough for a lead role", "To explain that the chorus needs more singers than the leads", "To persuade Amir to leave the lead roles for her"],
   "Amir is afraid of freezing while everyone stares, and Zoe points out that in a chorus of twenty, nobody looks at one person. She never judges his singing.",
@@ -603,7 +603,7 @@ S(DIA, 0, INF, 2, "Why does Zoe mention singing in the chorus?",
 S(DIA, 0, WORD, 2, "What does Zoe mean by \"you just weren't ready for the room\"?",
   ["Amir was not used to an audience watching him.", "The classroom was too small for his presentation.", "Amir arrived late on the day of his presentation.", "Amir had not learned the material well enough."],
   "Zoe says Amir knew the material, so \"the room\" means the setting: standing in front of people who are watching. That is why she suggests seeing the stage first.",
-  basics="wordsInContext", stim="OSSLT-P15")
+  basics="figurativeLanguage", stim="OSSLT-P15")
 S(DIA, 0, INF, 2, "How does Amir's attitude change during the conversation?",
   ["From unsure to willing to try", "From excited to nervous", "From angry to calm", "From confident to doubtful"],
   "Amir begins unsure (\"I don't know\") and ends agreeing to meet Zoe on Wednesday, joking about freezing. He is never angry, and he was not confident at the start.",
@@ -643,7 +643,7 @@ S(DIA, 0, "Cause and effect", 1, "Why does Grandma wait to plant the beans?",
 S(DIA, 0, EXP, 1, "According to Grandma, how do the beans help the corn?",
   ["Their roots add nitrogen to the soil.", "Their leaves shade the corn from the sun.", "Their vines hold the corn stalks up.", "They keep weeds away from the corn."],
   "Grandma says the beans' roots put nitrogen into the soil, which the corn needs. It is the squash leaves that shade the ground and keep weeds down.",
-  basics="findingDetail", stim="OSSLT-P16")
+  stim="OSSLT-P16")
 S(DIA, 0, INF, 2, "What does Grandma mean by \"Rows are easier for a tractor. This garden is for us\"?",
   ["The garden does not need to suit machines.", "She plans to use a tractor later on.", "Rows would make the garden too large.", "Rows do not let enough sun reach the corn."],
   "Rows suit farm machinery, but a family garden can be planted the way that works for the plants and the people tending it. She never mentions sunlight or size.",
@@ -651,11 +651,11 @@ S(DIA, 0, INF, 2, "What does Grandma mean by \"Rows are easier for a tractor. Th
 S(DIA, 0, WORD, 2, "When Kaya says \"I walked into that,\" she is",
   ["admitting her own joke earned her a chore", "complaining that the garden is far to walk", "apologizing for being rude to Grandma", "explaining why she tripped on the bed"],
   "Kaya joked that her job is complaining, and Grandma answered by giving her the weeding. \"I walked into that\" means she set herself up for it.",
-  basics="wordsInContext", stim="OSSLT-P16")
+  basics="figurativeLanguage", stim="OSSLT-P16")
 S(DIA, 0, CON, 2, "Which statement best describes the main idea of the dialogue?",
   ["Plants, like family members, can help one another.", "Gardens should always be planted in rows.", "Children should do most of the garden work.", "Corn is the most important crop to grow."],
   "Grandma explains how each of the Three Sisters helps the other two, and Kaya compares it to her family. Grandma prefers mounds to rows, and no crop is called most important.",
-  basics="mainIdea", stim="OSSLT-P16")
+  basics="storyTheme", stim="OSSLT-P16")
 O(DIA, 0, "Order of steps", 1, "Put the planting steps in the order Grandma describes them.",
   ["Plant corn in the middle of each mound.", "Wait for the corn to come up.", "Plant beans around the corn.", "Plant squash around the edge."],
   "Corn goes in first, the beans wait until the corn is up so they have a pole to climb, and Grandma says the squash goes in after the beans.",
@@ -693,11 +693,11 @@ P("OSSLT-P17", "A New Position",
 S(DIA, 0, EXP, 1, "Why is the team short of defence players?",
   ["One broke his wrist and one moved away.", "Two defence players quit the team.", "Sam missed a pass on Saturday.", "Ms. Tran moved two of them to forward."],
   "The coach says the team is short two defence since Kofi broke his wrist and Liam moved away. Sam's missed pass is not the reason for the change.",
-  basics="findingDetail", stim="OSSLT-P17")
+  stim="OSSLT-P17")
 S(DIA, 0, WORD, 2, "The coach tells Sam, \"You read the play before anybody else does.\" What does this mean?",
   ["Sam can tell what will happen next on the ice.", "Sam studies the team's plays at home.", "Sam is the fastest skater on the team.", "Sam watches the other team's games."],
   "Reading the play means understanding a game situation and predicting it, which is why Sam is first back when the puck is lost. It has nothing to do with books or speed.",
-  basics="wordsInContext", stim="OSSLT-P17")
+  basics="figurativeLanguage", stim="OSSLT-P17")
 S(DIA, 0, INF, 2, "Why does the coach say \"I'm not asking you to be perfect on Saturday\"?",
   ["To ease Sam's worry about failing", "To warn Sam that he may be benched", "To criticize Sam's missed pass", "To explain why the team may lose"],
   "Sam has just asked \"What if I'm bad at it?\" and the coach answers that everyone is bad at first and gets better. He is reassuring Sam, not warning him.",
@@ -736,11 +736,11 @@ That night I called my cousin in Manila. She asked what Winnipeg was like. I tho
 S(NAR, 0, EXP, 1, "Before arriving, how had the narrator imagined Winnipeg's cold?",
   ["Like the air conditioning in a mall", "Like the frozen rivers in the videos", "Like standing on the moon", "Like the inside of a freezer"],
   "The narrator says, \"I had nodded and pictured something like the air conditioning in the mall.\" The moon comparison comes after arriving.",
-  basics="findingDetail", stim="OSSLT-P18")
+  stim="OSSLT-P18")
 S(NAR, 0, WORD, 2, "The narrator says, \"I felt like I had landed on the moon.\" This shows the narrator felt",
   ["that everything was strange and unfamiliar", "excited to explore a brand-new place", "lonely because Aunt Rosa had left", "proud of having travelled so far"],
   "Aunt Rosa says \"Welcome home,\" and the narrator answers that it feels like the moon, a place as foreign as possible. Aunt Rosa is right there, so loneliness is not the point.",
-  basics="wordsInContext", stim="OSSLT-P18")
+  basics="figurativeLanguage", stim="OSSLT-P18")
 S(NAR, 0, INF, 2, "Why didn't the narrator understand the kids playing in the snowbanks?",
   ["Snow still seemed harsh and unpleasant.", "The narrator was not allowed outside.", "The other kids were being mean.", "The narrator could not see the field."],
   "The narrator has just described cold that hurts and layers so thick that bending is hard, so playing in snow seems strange. The kids shriek \"like it was the best thing in the world,\" not out of meanness.",
@@ -756,7 +756,7 @@ S(NAR, 0, INF, 3, "Why does the narrator look at the snow angel \"for a long tim
 S(NAR, 0, CON, 2, "Which sentence best describes how the narrator changes?",
   ["From feeling like an outsider to feeling hopeful", "From loving the snow to being afraid of it", "From trusting Aunt Rosa to doubting her", "From disliking math class to enjoying it"],
   "At first the narrator feels as if on the moon and eats lunch alone; by the end the narrator says Winnipeg \"might be okay.\" The other changes do not happen in the story.",
-  basics="mainIdea", stim="OSSLT-P18")
+  basics="storyTheme", stim="OSSLT-P18")
 
 P("OSSLT-P19", "The Space Behind the Van",
 """Dad picked the emptiest street in our neighbourhood for my first parallel parking lesson, which still felt like too many witnesses.
@@ -784,11 +784,11 @@ I sat there for a moment, not moving. Dad was grinning.
 S(NAR, 0, EXP, 1, "What went wrong on the narrator's second try?",
   ["The car stopped too far from the curb.", "The back tire bumped the curb.", "The car stopped in the middle of the road.", "The car touched the blue van."],
   "On the second try the narrator turned too early and stopped a full metre from the curb. Bumping the curb was the first try, and stopping in the road was the third.",
-  basics="findingDetail", stim="OSSLT-P19")
+  stim="OSSLT-P19")
 S(NAR, 0, WORD, 2, "The front of the car stuck out \"like a dog's tongue.\" This comparison suggests the car was",
   ["poking awkwardly into the road", "moving fast and out of control", "parked neatly along the curb", "making a loud panting noise"],
   "A dog's tongue hangs out to one side, so the car's front was sticking out into the road at an angle. The comparison is about position, not speed or sound.",
-  basics="wordsInContext", stim="OSSLT-P19")
+  basics="figurativeLanguage", stim="OSSLT-P19")
 S(NAR, 0, INF, 2, "Why was Dad's little \"hmm\" noise \"worse\" than words?",
   ["It felt like quiet disappointment.", "Dad was shouting at the narrator.", "It scared the man with groceries.", "It meant Dad would take the wheel."],
   "Dad said nothing after the second mistake, and his quiet \"hmm\" left the narrator to imagine what he thought. He was not shouting, and the man with groceries arrives later.",
@@ -833,7 +833,7 @@ M(NAR, 0, EXP, 1, "What two things did the narrator promise during the campaign?
   ["A quiet study room open at lunch", "A better system for the lost and found"],
   ["Longer lunch breaks", "New lockers for every student", "A school dance in March"],
   "The narrator promised a quiet study room open at lunch and a better lost-and-found system. March is when the study room was finished, not a dance.",
-  basics="findingDetail", stim="OSSLT-P20")
+  stim="OSSLT-P20")
 S(NAR, 0, INF, 1, "When the narrator says \"It's fine\" about thirty times, the reader can tell the narrator",
   ["is hiding disappointment", "is glad the election is over", "does not care about the result", "is angry at the other students"],
   "The next sentence, \"It was not fine,\" shows the narrator was covering up how much losing hurt. The narrator smiles at the others rather than showing anger.",
@@ -853,4 +853,4 @@ S(NAR, 0, WORD, 2, "The whispering rule was one \"nobody followed but everyone l
 S(NAR, 0, CON, 2, "Which sentence best states the theme of the story?",
   ["Losing a title doesn't stop you from making a difference.", "Student council elections are usually unfair.", "Older siblings should stay out of school matters.", "The best speech always wins the election."],
   "The narrator loses but builds the study room anyway and is proudest of that title. Marcus says the narrator's speech was better, yet Marcus won, so the best speech did not win.",
-  basics="mainIdea", stim="OSSLT-P20")
+  basics="storyTheme", stim="OSSLT-P20")

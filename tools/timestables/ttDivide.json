@@ -2,10 +2,10 @@
   {
     "domain": "ttDivide",
     "test": 0,
-    "skill": "Dividing",
+    "skill": "Halving",
     "difficulty": 2,
     "format": "numeric",
-    "basics": "ttFactFamilies",
+    "basics": "ttHalving",
     "stem": "14 ÷ 2 = ?",
     "numeric": {
       "answers": [
@@ -14,7 +14,7 @@
       "tolerance": 0,
       "wholeNumber": true
     },
-    "explanation": "7 × 2 = 14, so 14 ÷ 2 = 7."
+    "explanation": "÷ 2 means halve it. Half of 14 is 7. Check: double 7 is 14."
   },
   {
     "domain": "ttDivide",
@@ -36,10 +36,10 @@
   {
     "domain": "ttDivide",
     "test": 0,
-    "skill": "Dividing",
+    "skill": "Dividing by 10",
     "difficulty": 2,
     "format": "numeric",
-    "basics": "ttFactFamilies",
+    "basics": "ttDivideTens",
     "stem": "70 ÷ 10 = ?",
     "numeric": {
       "answers": [
@@ -48,7 +48,7 @@
       "tolerance": 0,
       "wholeNumber": true
     },
-    "explanation": "7 × 10 = 70, so 70 ÷ 10 = 7."
+    "explanation": "When you divide by 10, the digits move one place to the right: 70 becomes 7. Check: 7 × 10 = 70."
   },
   {
     "domain": "ttDivide",

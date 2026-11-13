@@ -138,7 +138,7 @@ ITEMS = [
      "A spinner has 8 equal parts: 4 blue, 3 red and 1 yellow. Which statement is true?",
      "Red is less likely than blue", ["Yellow is as likely as red", "Blue is certain", "Red is more likely than blue", "Yellow is impossible"],
      "Blue has 4 parts and red has 3, so red is less likely. Yellow has 1 part, so it can happen but is the least likely."),
-    (D, 1, "Survey problems", 3, "fractionOps",
+    (D, 1, "Survey problems", 3, None,
      "30 students were asked to choose one sport. Half chose soccer. One third of the rest chose netball, and everyone else chose cricket. How many chose cricket?",
      "10", ["5", "15", "20", "12"],
      "Half of 30 is 15, so 15 chose soccer and 15 are left. One third of those 15 is 5 for netball, so 15 − 5 = 10 chose cricket."),

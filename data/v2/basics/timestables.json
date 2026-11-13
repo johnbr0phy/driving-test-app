@@ -509,10 +509,10 @@
   },
   {
     "id": "ttDoubleDouble",
-    "name": "The 4 and 8 times tables",
-    "sub": "Double, double, double",
-    "rule": "× 4 means double and double again. × 8 means double three times.",
-    "trick": "7 × 4: double 7 is 14, double 14 is 28. For 7 × 8, double once more: 56.",
+    "name": "The 4 times table",
+    "sub": "Double, then double again",
+    "rule": "× 4 means double and double again. 7 × 4: double 7 is 14, double 14 is 28.",
+    "trick": "Stuck? Find × 2 first, then double that answer.",
     "examples": [
       {
         "kind": "eg",
@@ -521,13 +521,13 @@
       },
       {
         "kind": "eg",
-        "text": "6 × 8",
-        "note": "Double 6 is 12, then 24, then 48."
+        "text": "9 × 4",
+        "note": "Double 9 is 18. Double 18 is 36."
       }
     ],
     "another": {
-      "text": "You have 2 legs. A dog has 4 legs, double yours. A spider has 8 legs, double the dog's.",
-      "example": "You: 2 legs\nDog: 4 legs\nSpider: 8 legs"
+      "text": "You have 2 legs. A dog has 4 legs, double yours. So 3 dogs have double 6 legs: 12.",
+      "example": "You: 2 legs\nDog: 4 legs\n3 dogs: 12 legs"
     },
     "walkthrough": {
       "board": "7 × 4",
@@ -563,7 +563,7 @@
             "14"
           ],
           "answer": 0,
-          "then": "And for 7 × 8, double one more time: 28 + 28 = 56.",
+          "then": "Two doubles make × 4.",
           "hint": "14 is only one double. × 4 needs two.",
           "line": "7 × 4 = 28 ✓"
         }
@@ -581,14 +581,14 @@
         "why": "Double 5 is 10. Double 10 is 20."
       },
       {
-        "stem": "3 × 4 = 12. What is 3 × 8?",
+        "stem": "What is 8 × 4?",
         "options": [
-          "24",
+          "32",
           "16",
           "12"
         ],
         "answer": 0,
-        "why": "8 is double 4, so double the answer: 12 + 12 = 24."
+        "why": "Double 8 is 16. Double 16 is 32."
       }
     ]
   },
@@ -1370,6 +1370,724 @@
         ],
         "answer": 0,
         "why": "Count in 4s: 4, 8, 12, 16, 20. That is 5 tables, because 5 × 4 = 20."
+      }
+    ]
+  },
+  {
+    "id": "ttEights",
+    "name": "The 8 times table",
+    "sub": "Double three times",
+    "rule": "× 8 means double, double and double again. 5 × 8: 5, 10, 20, 40.",
+    "trick": "Already know the 4s? Just double the 4s answer once more. 6 × 4 = 24, so 6 × 8 = 48.",
+    "examples": [
+      {
+        "kind": "eg",
+        "text": "3 × 8",
+        "note": "Double 3 is 6, double 6 is 12, double 12 is 24."
+      },
+      {
+        "kind": "eg",
+        "text": "9 × 8",
+        "note": "Double 9 is 18, then 36, then 72."
+      }
+    ],
+    "another": {
+      "text": "An octopus has 8 arms. That is double a dog's 4 legs, and a dog has double your 2 legs. Each step is a double.",
+      "example": "You: 2\nDog: 4\nOctopus: 8"
+    },
+    "walkthrough": {
+      "board": "6 × 8",
+      "kind": "math",
+      "steps": [
+        {
+          "say": "× 8 is three doubles in a row. Start with the 6."
+        },
+        {
+          "ask": "Double 6 is:",
+          "options": [
+            "12",
+            "8"
+          ],
+          "answer": 0,
+          "hint": "Double means 6 + 6.",
+          "line": "6 → 12"
+        },
+        {
+          "ask": "Double 12 is:",
+          "options": [
+            "24",
+            "14"
+          ],
+          "answer": 0,
+          "hint": "10 + 10 = 20 and 2 + 2 = 4.",
+          "line": "12 → 24"
+        },
+        {
+          "ask": "Double 24 is:",
+          "options": [
+            "48",
+            "44"
+          ],
+          "answer": 0,
+          "hint": "20 + 20 = 40 and 4 + 4 = 8.",
+          "line": "24 → 48"
+        },
+        {
+          "ask": "So 6 × 8 is:",
+          "options": [
+            "48",
+            "24"
+          ],
+          "answer": 0,
+          "then": "Three doubles: 12, 24, 48.",
+          "hint": "24 is only two doubles. × 8 needs three.",
+          "line": "6 × 8 = 48 ✓"
+        }
+      ]
+    },
+    "questions": [
+      {
+        "stem": "What is 4 × 8?",
+        "options": [
+          "32",
+          "16",
+          "12"
+        ],
+        "answer": 0,
+        "why": "Double 4 is 8, then 16, then 32."
+      },
+      {
+        "stem": "7 × 4 = 28. What is 7 × 8?",
+        "options": [
+          "56",
+          "32",
+          "35"
+        ],
+        "answer": 0,
+        "why": "8 is double 4, so double 28: 56."
+      }
+    ]
+  },
+  {
+    "id": "ttNearFacts",
+    "name": "Use a fact you know",
+    "sub": "One more lot or one less lot",
+    "rule": "Stuck on a fact? Start from a fact you know that is next door, then add or take away one lot.",
+    "trick": "8 × 7: you might know 7 × 7 = 49. 8 lots is one more 7: 49 + 7 = 56.",
+    "examples": [
+      {
+        "kind": "eg",
+        "text": "6 × 7",
+        "note": "6 × 6 = 36. One more 6: 36 + 6 = 42."
+      },
+      {
+        "kind": "eg",
+        "text": "9 × 6",
+        "note": "10 × 6 = 60. One less 6: 60 − 6 = 54."
+      }
+    ],
+    "another": {
+      "text": "It is like climbing stairs. If you know you are on step 49, the next 7s step is just 7 more up: 56.",
+      "example": "7 × 7 = 49\n8 × 7 = 49 + 7 = 56"
+    },
+    "walkthrough": {
+      "board": "8 × 6",
+      "kind": "math",
+      "steps": [
+        {
+          "say": "8 × 6 means 8 lots of 6. Do you know a fact next door to it?"
+        },
+        {
+          "ask": "Which fact is next door to 8 lots of 6?",
+          "options": [
+            "7 lots of 6",
+            "8 + 6"
+          ],
+          "answer": 0,
+          "hint": "Next door means one lot fewer: 7 lots of 6.",
+          "line": "7 × 6 = 42"
+        },
+        {
+          "ask": "8 lots is one more lot than 7 lots. So add one more:",
+          "options": [
+            "6",
+            "8"
+          ],
+          "answer": 0,
+          "hint": "Each lot is a 6.",
+          "line": "42 + 6"
+        },
+        {
+          "ask": "42 + 6 is:",
+          "options": [
+            "48",
+            "46"
+          ],
+          "answer": 0,
+          "hint": "42 + 6: count on 43, 44, 45, 46, 47, 48.",
+          "line": "42 + 6 = 48"
+        },
+        {
+          "ask": "So 8 × 6 is:",
+          "options": [
+            "48",
+            "42"
+          ],
+          "answer": 0,
+          "then": "A fact you know plus one more lot.",
+          "hint": "42 is only 7 lots of 6.",
+          "line": "8 × 6 = 48 ✓"
+        }
+      ]
+    },
+    "questions": [
+      {
+        "stem": "6 × 6 = 36. What is 7 × 6?",
+        "options": [
+          "42",
+          "37",
+          "36"
+        ],
+        "answer": 0,
+        "why": "7 lots is one more lot of 6: 36 + 6 = 42."
+      },
+      {
+        "stem": "10 × 9 = 90. What is 9 × 9?",
+        "options": [
+          "81",
+          "89",
+          "99"
+        ],
+        "answer": 0,
+        "why": "9 lots is one less lot of 9: 90 − 9 = 81."
+      }
+    ]
+  },
+  {
+    "id": "ttCountInElevens",
+    "name": "Counting in 11s",
+    "sub": "Add 10, then add 1",
+    "rule": "To count on in 11s, add 10 and then add 1 more. 11, 22, 33, 44 ... 99, 110, 121, 132.",
+    "trick": "After 99 the twins stop. Keep going the same way: 99 + 10 = 109, then 1 more is 110.",
+    "examples": [
+      {
+        "kind": "eg",
+        "text": "44 + 11",
+        "note": "44 + 10 = 54, then 1 more: 55."
+      },
+      {
+        "kind": "eg",
+        "text": "110 + 11",
+        "note": "110 + 10 = 120, then 1 more: 121."
+      }
+    ],
+    "another": {
+      "text": "Climb 11 stairs at a time: a big jump of 10, then one little hop.",
+      "example": "11 → 22 → 33 → 44\nbig jump 10, little hop 1"
+    },
+    "walkthrough": {
+      "board": "88, 99, ?",
+      "kind": "math",
+      "steps": [
+        {
+          "say": "These numbers count in 11s. To find the next one, add 11."
+        },
+        {
+          "ask": "Adding 11 is the same as:",
+          "options": [
+            "Add 10, then add 1",
+            "Add 1, then add 1"
+          ],
+          "answer": 0,
+          "hint": "11 is 10 and 1.",
+          "line": "+ 11 = + 10, + 1"
+        },
+        {
+          "ask": "99 + 10 is:",
+          "options": [
+            "109",
+            "100"
+          ],
+          "answer": 0,
+          "hint": "The tens go up by one: 9 tens becomes 10 tens, with 9 ones left.",
+          "line": "99 + 10 = 109"
+        },
+        {
+          "ask": "Now add 1 more. 109 + 1 is:",
+          "options": [
+            "110",
+            "1010"
+          ],
+          "answer": 0,
+          "hint": "Count on 1 from 109.",
+          "line": "109 + 1 = 110"
+        },
+        {
+          "say": "So the next number is 110. That is 10 × 11."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "stem": "Count in 11s: 22, 33, 44. What comes next?",
+        "options": [
+          "55",
+          "45",
+          "54"
+        ],
+        "answer": 0,
+        "why": "44 + 10 = 54, then 1 more: 55."
+      },
+      {
+        "stem": "Count in 11s: 99, 110. What comes next?",
+        "options": [
+          "121",
+          "111",
+          "120"
+        ],
+        "answer": 0,
+        "why": "110 + 10 = 120, then 1 more: 121."
+      }
+    ]
+  },
+  {
+    "id": "ttDozens",
+    "name": "Counting in 12s",
+    "sub": "Add 10, then add 2",
+    "rule": "To count on in 12s, add 10 and then add 2 more. 12, 24, 36, 48, 60, 72, 84, 96, 108, 120, 132, 144.",
+    "trick": "12 is a dozen. A box of a dozen eggs is 12, two boxes are 24, three boxes are 36.",
+    "examples": [
+      {
+        "kind": "eg",
+        "text": "36 + 12",
+        "note": "36 + 10 = 46, then 2 more: 48."
+      },
+      {
+        "kind": "eg",
+        "text": "96 + 12",
+        "note": "96 + 10 = 106, then 2 more: 108."
+      }
+    ],
+    "another": {
+      "text": "There are 12 months in a year. Each birthday adds 12 more months: 1 year is 12 months, 2 years is 24, 3 years is 36.",
+      "example": "1 year → 12 months\n2 years → 24 months\n3 years → 36 months"
+    },
+    "walkthrough": {
+      "board": "24, 36, 48, ?",
+      "kind": "math",
+      "steps": [
+        {
+          "say": "These numbers count in 12s. To find the next one, add 12."
+        },
+        {
+          "ask": "Adding 12 is the same as:",
+          "options": [
+            "Add 10, then add 2",
+            "Add 1, then add 2"
+          ],
+          "answer": 0,
+          "hint": "12 is 10 and 2.",
+          "line": "+ 12 = + 10, + 2"
+        },
+        {
+          "ask": "48 + 10 is:",
+          "options": [
+            "58",
+            "49"
+          ],
+          "answer": 0,
+          "hint": "Add one ten: 4 tens becomes 5 tens.",
+          "line": "48 + 10 = 58"
+        },
+        {
+          "ask": "Now add 2 more. 58 + 2 is:",
+          "options": [
+            "60",
+            "59"
+          ],
+          "answer": 0,
+          "hint": "Count on 2 from 58: 59, 60.",
+          "line": "58 + 2 = 60"
+        },
+        {
+          "say": "So the next number is 60. That is 5 × 12."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "stem": "Count in 12s: 12, 24, 36. What comes next?",
+        "options": [
+          "48",
+          "46",
+          "38"
+        ],
+        "answer": 0,
+        "why": "36 + 10 = 46, then 2 more: 48."
+      },
+      {
+        "stem": "Count in 12s: 72, 84. What comes next?",
+        "options": [
+          "96",
+          "94",
+          "86"
+        ],
+        "answer": 0,
+        "why": "84 + 10 = 94, then 2 more: 96."
+      }
+    ]
+  },
+  {
+    "id": "ttHalving",
+    "name": "Dividing by 2",
+    "sub": "÷ 2 means halve it",
+    "rule": "Dividing by 2 means finding half. Half splits a number into two equal parts.",
+    "trick": "Use your doubles backwards. Double 7 is 14, so half of 14 is 7.",
+    "examples": [
+      {
+        "kind": "eg",
+        "text": "16 ÷ 2",
+        "note": "Double 8 is 16, so half of 16 is 8."
+      },
+      {
+        "kind": "eg",
+        "text": "22 ÷ 2",
+        "note": "Half of 20 is 10 and half of 2 is 1. 10 + 1 = 11."
+      }
+    ],
+    "another": {
+      "text": "Two children share a bag of 10 sweets so it is fair. Each child gets half: 5.",
+      "example": "10 sweets\n5 | 5"
+    },
+    "walkthrough": {
+      "board": "18 ÷ 2",
+      "kind": "math",
+      "steps": [
+        {
+          "say": "÷ 2 means split it into two equal halves."
+        },
+        {
+          "ask": "Which double makes 18?",
+          "options": [
+            "Double 9",
+            "Double 8"
+          ],
+          "answer": 0,
+          "hint": "Double 8 is 16. We need 18.",
+          "line": "9 + 9 = 18"
+        },
+        {
+          "ask": "So half of 18 is:",
+          "options": [
+            "9",
+            "16"
+          ],
+          "answer": 0,
+          "hint": "The double was 9 + 9.",
+          "line": "18 ÷ 2 = 9"
+        },
+        {
+          "ask": "Check: is double 9 the same as 18?",
+          "options": [
+            "Yes",
+            "No"
+          ],
+          "answer": 0,
+          "then": "Halving undoes doubling.",
+          "hint": "9 + 9: count on 9 from 9.",
+          "line": "18 ÷ 2 = 9 ✓"
+        }
+      ]
+    },
+    "questions": [
+      {
+        "stem": "What is 12 ÷ 2?",
+        "options": [
+          "6",
+          "10",
+          "14"
+        ],
+        "answer": 0,
+        "why": "Double 6 is 12, so half of 12 is 6."
+      },
+      {
+        "stem": "What is half of 20?",
+        "options": [
+          "10",
+          "18",
+          "40"
+        ],
+        "answer": 0,
+        "why": "Double 10 is 20, so half of 20 is 10."
+      }
+    ]
+  },
+  {
+    "id": "ttDivideTens",
+    "name": "Dividing by 10",
+    "sub": "The digits move one place back",
+    "rule": "When you divide by 10, the digits move one place to the right. 60 ÷ 10: the 6 moves from the tens to the ones. The answer is 6.",
+    "trick": "It undoes × 10. 8 × 10 = 80, so 80 ÷ 10 = 8.",
+    "examples": [
+      {
+        "kind": "eg",
+        "text": "50 ÷ 10",
+        "note": "5 tens become 5 ones: 5."
+      },
+      {
+        "kind": "eg",
+        "text": "120 ÷ 10",
+        "note": "The digits slide one place right: 12."
+      }
+    ],
+    "another": {
+      "text": "Swap 40p for 10p coins. 40p is 4 coins of 10p.",
+      "example": "40p = 10p + 10p + 10p + 10p\n4 coins"
+    },
+    "walkthrough": {
+      "board": "90 ÷ 10",
+      "kind": "math",
+      "steps": [
+        {
+          "say": "Dividing by 10 makes a number ten times smaller. The digits slide one place to the right."
+        },
+        {
+          "ask": "90 is 9 tens. After ÷ 10 it becomes:",
+          "options": [
+            "9 ones",
+            "9 hundreds"
+          ],
+          "answer": 0,
+          "hint": "One place to the right: from tens to ones.",
+          "line": "9 tens → 9 ones"
+        },
+        {
+          "ask": "So 90 ÷ 10 is:",
+          "options": [
+            "9",
+            "80"
+          ],
+          "answer": 0,
+          "hint": "80 is 90 take away 10. Divide asks how many 10s.",
+          "line": "90 ÷ 10 = 9"
+        },
+        {
+          "ask": "Check: what is 9 × 10?",
+          "options": [
+            "90",
+            "19"
+          ],
+          "answer": 0,
+          "then": "× 10 and ÷ 10 undo each other.",
+          "hint": "The 9 moves to the tens place.",
+          "line": "9 × 10 = 90 ✓"
+        }
+      ]
+    },
+    "questions": [
+      {
+        "stem": "What is 30 ÷ 10?",
+        "options": [
+          "3",
+          "20",
+          "300"
+        ],
+        "answer": 0,
+        "why": "3 tens become 3 ones: 3."
+      },
+      {
+        "stem": "How many 10p coins make 70p?",
+        "options": [
+          "7",
+          "60",
+          "17"
+        ],
+        "answer": 0,
+        "why": "70 ÷ 10 = 7, because 7 × 10 = 70."
+      }
+    ]
+  },
+  {
+    "id": "ttStoryRows",
+    "name": "Rows in a story",
+    "sub": "Rows and how many in each",
+    "rule": "When things are set out in rows with the same number in every row, multiply: number of rows × how many in each row.",
+    "trick": "Draw dots: one line of dots for each row. 3 rows of 4 is 3 × 4 = 12.",
+    "examples": [
+      {
+        "kind": "eg",
+        "text": "2 rows of 6 chairs",
+        "note": "2 × 6 = 12 chairs."
+      },
+      {
+        "kind": "eg",
+        "text": "5 rows of 3 cakes",
+        "note": "5 × 3 = 15 cakes."
+      }
+    ],
+    "another": {
+      "text": "Look at a box of chocolates. 3 rows with 5 in each row is 15 chocolates, and you can check by counting them.",
+      "example": "● ● ● ● ●\n● ● ● ● ●\n● ● ● ● ●\n3 rows of 5 = 15"
+    },
+    "walkthrough": {
+      "board": "Mia puts 4 rows of plants in her garden. There are 3 plants in each row. How many plants are there?",
+      "kind": "text",
+      "steps": [
+        {
+          "ask": "How many rows are there?",
+          "options": [
+            "4",
+            "3"
+          ],
+          "answer": 0,
+          "hint": "Read the first sentence: 4 rows.",
+          "line": "4 rows"
+        },
+        {
+          "ask": "How many plants are in each row?",
+          "options": [
+            "3",
+            "4"
+          ],
+          "answer": 0,
+          "hint": "Read the second sentence.",
+          "line": "3 in each row"
+        },
+        {
+          "ask": "So the number sentence is:",
+          "options": [
+            "4 × 3",
+            "4 + 3"
+          ],
+          "answer": 0,
+          "hint": "4 rows with 3 in each is 4 lots of 3.",
+          "line": "4 × 3"
+        },
+        {
+          "ask": "4 × 3 is:",
+          "options": [
+            "12",
+            "7"
+          ],
+          "answer": 0,
+          "then": "Say it with its word: 12 plants.",
+          "hint": "Count in 3s four times: 3, 6, 9, 12.",
+          "line": "4 × 3 = 12 ✓"
+        }
+      ]
+    },
+    "questions": [
+      {
+        "stem": "A tray has 2 rows of buns with 5 buns in each row. How many buns?",
+        "options": [
+          "10",
+          "7",
+          "25"
+        ],
+        "answer": 0,
+        "why": "2 rows of 5: 2 × 5 = 10 buns."
+      },
+      {
+        "stem": "There are 3 rows of chairs with 10 chairs in each row. How many chairs?",
+        "options": [
+          "30",
+          "13",
+          "40"
+        ],
+        "answer": 0,
+        "why": "3 × 10 = 30 chairs."
+      }
+    ]
+  },
+  {
+    "id": "ttStoryMoney",
+    "name": "Money stories",
+    "sub": "Price × how many",
+    "rule": "When each thing costs the same, multiply the price by how many you buy. p means pence.",
+    "trick": "Keep the p on your answer. 4 lollies at 5p each is 4 × 5 = 20, so 20p.",
+    "examples": [
+      {
+        "kind": "eg",
+        "text": "3 apples at 10p each",
+        "note": "3 × 10 = 30, so 30p."
+      },
+      {
+        "kind": "eg",
+        "text": "6 stickers at 2p each",
+        "note": "6 × 2 = 12, so 12p."
+      }
+    ],
+    "another": {
+      "text": "At a cake sale every cake costs 5p. Buy 1 for 5p, 2 for 10p, 3 for 15p. Count in 5s for each cake.",
+      "example": "1 cake → 5p\n2 cakes → 10p\n3 cakes → 15p"
+    },
+    "walkthrough": {
+      "board": "A rubber costs 5p. Leo buys 4 rubbers. How much does he spend?",
+      "kind": "text",
+      "steps": [
+        {
+          "ask": "How much does one rubber cost?",
+          "options": [
+            "5p",
+            "4p"
+          ],
+          "answer": 0,
+          "hint": "Read the first sentence.",
+          "line": "1 rubber = 5p"
+        },
+        {
+          "ask": "How many rubbers does Leo buy?",
+          "options": [
+            "4",
+            "5"
+          ],
+          "answer": 0,
+          "hint": "Read the second sentence.",
+          "line": "4 rubbers"
+        },
+        {
+          "ask": "So the number sentence is:",
+          "options": [
+            "4 × 5",
+            "4 + 5"
+          ],
+          "answer": 0,
+          "hint": "4 rubbers at 5p each is 4 lots of 5p.",
+          "line": "4 × 5"
+        },
+        {
+          "ask": "4 × 5 is:",
+          "options": [
+            "20",
+            "9"
+          ],
+          "answer": 0,
+          "then": "Remember the p: Leo spends 20p.",
+          "hint": "Count in 5s four times: 5, 10, 15, 20.",
+          "line": "4 × 5 = 20, so 20p ✓"
+        }
+      ]
+    },
+    "questions": [
+      {
+        "stem": "A balloon costs 2p. How much do 7 balloons cost?",
+        "options": [
+          "14p",
+          "9p",
+          "72p"
+        ],
+        "answer": 0,
+        "why": "7 × 2 = 14, so 14p."
+      },
+      {
+        "stem": "A pencil costs 10p. How much do 5 pencils cost?",
+        "options": [
+          "50p",
+          "15p",
+          "51p"
+        ],
+        "answer": 0,
+        "why": "5 × 10 = 50, so 50p."
       }
     ]
   }

@@ -491,6 +491,7 @@
       "skill": "Number series",
       "difficulty": 1,
       "format": "single",
+      "basics": "elevenplusNumberSeries",
       "stem": "What number comes next? 3, 7, 15, 31, 63, ...",
       "options": [
         "127",
@@ -598,6 +599,7 @@
       "skill": "Number series",
       "difficulty": 2,
       "format": "single",
+      "basics": "elevenplusNumberSeries",
       "stem": "What number comes next? 2, 3, 5, 9, 17, ...",
       "options": [
         "25",
@@ -619,6 +621,7 @@
       "skill": "Number series",
       "difficulty": 2,
       "format": "single",
+      "basics": "elevenplusNumberSeries",
       "stem": "What number comes next? 50, 45, 47, 42, 44, ...",
       "options": [
         "41",
@@ -640,6 +643,7 @@
       "skill": "Symbol rules",
       "difficulty": 2,
       "format": "single",
+      "basics": "substitution",
       "stem": "The symbol ★ means a ★ b = 2a − b. What is the value of 5 ★ (3 ★ 1)?",
       "options": [
         "9",
@@ -1546,7 +1550,7 @@
       "skill": "Deductions",
       "difficulty": 1,
       "format": "single",
-      "basics": "inference",
+      "basics": "mustBeTrue",
       "stem": "All members of the school choir can read music. Mia cannot read music. Which statement must be true?",
       "options": [
         "Mia is not in the choir.",
@@ -1653,7 +1657,6 @@
       "skill": "Ordering",
       "difficulty": 2,
       "format": "single",
-      "basics": "inference",
       "stem": "Five friends ran a race. Ari finished ahead of Bo. Cy finished after Bo but before Dev. Eli finished ahead of Ari. There were no ties. Who finished third?",
       "options": [
         "Ari",
@@ -1675,7 +1678,7 @@
       "skill": "Deductions",
       "difficulty": 2,
       "format": "single",
-      "basics": "inference",
+      "basics": "mustBeTrue",
       "stem": "No reptiles have fur. Some pets are reptiles. Which statement must be true?",
       "options": [
         "No pets have fur.",
@@ -1697,7 +1700,6 @@
       "skill": "Seating",
       "difficulty": 2,
       "format": "single",
-      "basics": "inference",
       "stem": "Four friends sit in a row of four seats. Tia sits at one end. Uma sits next to Tia. Vic does not sit next to Uma. Who sits next to Vic?",
       "options": [
         "Uma only",
@@ -2126,7 +2128,6 @@
       "skill": "Financial maths",
       "difficulty": 2,
       "format": "single",
-      "basics": "wordProblems",
       "stem": "A phone plan costs \\$35 a month plus 10 cents for each text after the first 100. Lena sends 160 texts in a month. What is her bill?",
       "options": [
         "\\$51",
@@ -2234,6 +2235,7 @@
       "skill": "Number series",
       "difficulty": 1,
       "format": "single",
+      "basics": "elevenplusNumberSeries",
       "stem": "What number comes next? 1, 4, 9, 16, 25, ...",
       "options": [
         "34",
@@ -2255,6 +2257,7 @@
       "skill": "Number series",
       "difficulty": 1,
       "format": "single",
+      "basics": "elevenplusNumberSeries",
       "stem": "What number comes next? 96, 48, 24, 12, ...",
       "options": [
         "6",
@@ -2341,6 +2344,7 @@
       "skill": "Number series",
       "difficulty": 2,
       "format": "single",
+      "basics": "elevenplusNumberSeries",
       "stem": "What number comes next? 2, 6, 12, 20, 30, ...",
       "options": [
         "40",
@@ -2362,6 +2366,7 @@
       "skill": "Number series",
       "difficulty": 2,
       "format": "single",
+      "basics": "elevenplusNumberSeries",
       "stem": "What number comes next? 1, 1, 2, 3, 5, 8, ...",
       "options": [
         "11",
@@ -2383,6 +2388,7 @@
       "skill": "Symbol rules",
       "difficulty": 2,
       "format": "single",
+      "basics": "substitution",
       "stem": "The symbol ◇ means p ◇ q = p² − q. What is the value of 3 ◇ (2 ◇ 1)?",
       "options": [
         "8",
@@ -2531,7 +2537,6 @@
       "skill": "Averages",
       "difficulty": 2,
       "format": "single",
-      "basics": "meanMedian",
       "stem": "Five friends have a mean height of 150 cm. When a sixth friend joins, the mean height becomes 152 cm. How tall is the sixth friend?",
       "options": [
         "152 cm",
@@ -2553,6 +2558,7 @@
       "skill": "Interleaved series",
       "difficulty": 3,
       "format": "single",
+      "basics": "elevenplusNumberSeries",
       "stem": "What number comes next? 3, 20, 6, 17, 12, 14, 24, ...",
       "options": [
         "11",
@@ -2637,7 +2643,6 @@
       "skill": "Percentage reasoning",
       "difficulty": 3,
       "format": "single",
-      "basics": "percents",
       "stem": "A number is increased by 50% and the result is then decreased by 50%. The final answer is 60. What was the starting number?",
       "options": [
         "80",
@@ -3004,7 +3009,6 @@
       "skill": "Comparing texts",
       "difficulty": 1,
       "format": "single",
-      "basics": "crossText",
       "stimulusId": "VICSEL-R2-D",
       "stem": "What do the two writers disagree about?",
       "options": [
@@ -3050,7 +3054,6 @@
       "skill": "Comparing texts",
       "difficulty": 2,
       "format": "single",
-      "basics": "crossText",
       "stimulusId": "VICSEL-R2-D",
       "stem": "How would the student most likely answer the resident's worry about extra cars?",
       "options": [
@@ -3096,7 +3099,6 @@
       "skill": "Comparing texts",
       "difficulty": 3,
       "format": "single",
-      "basics": "crossText",
       "stimulusId": "VICSEL-R2-D",
       "stem": "The resident values the reserve because it is calm. Which point in the student's speech gives a different view of the reserve itself?",
       "options": [
@@ -3226,7 +3228,6 @@
       "skill": "Ordering",
       "difficulty": 1,
       "format": "single",
-      "basics": "inference",
       "stem": "Apton is north of Brill. Corley is south of Brill. Dunmore is north of Apton. Which town is furthest south?",
       "options": [
         "Brill",
@@ -3248,7 +3249,7 @@
       "skill": "Deductions",
       "difficulty": 1,
       "format": "single",
-      "basics": "inference",
+      "basics": "mustBeTrue",
       "stem": "Every bus on route 9 stops at the library. The bus Sam is on does not stop at the library. Which statement must be true?",
       "options": [
         "Sam is not going to the library.",
@@ -3440,7 +3441,7 @@
       "skill": "Deductions",
       "difficulty": 2,
       "format": "single",
-      "basics": "inference",
+      "basics": "mustBeTrue",
       "stem": "Some musicians are teachers. All teachers have a degree. Which statement must be true?",
       "options": [
         "All musicians have a degree.",
@@ -3462,7 +3463,7 @@
       "skill": "Deductions",
       "difficulty": 2,
       "format": "single",
-      "basics": "inference",
+      "basics": "mustBeTrue",
       "stem": "If it rains, the match is cancelled. The match was not cancelled. Which statement must be true?",
       "options": [
         "It rained a little.",
@@ -3765,6 +3766,7 @@
       "skill": "Number series",
       "difficulty": 1,
       "format": "single",
+      "basics": "elevenplusNumberSeries",
       "stem": "What number comes next? 81, 27, 9, 3, ...",
       "options": [
         "0",
@@ -3829,6 +3831,7 @@
       "skill": "Number series",
       "difficulty": 2,
       "format": "single",
+      "basics": "elevenplusNumberSeries",
       "stem": "What number comes next? 5, 8, 14, 26, 50, ...",
       "options": [
         "98",
@@ -3850,6 +3853,7 @@
       "skill": "Symbol rules",
       "difficulty": 2,
       "format": "single",
+      "basics": "substitution",
       "stem": "The symbol # means m # n = (m + n) ÷ 2. What is the value of (6 # 10) # 4?",
       "options": [
         "10",
@@ -4315,7 +4319,6 @@
       "skill": "Ordering",
       "difficulty": 1,
       "format": "single",
-      "basics": "inference",
       "stem": "Lin is taller than Max. Max is taller than Nia. Oli is shorter than Nia. Who is the shortest?",
       "options": [
         "Nia",
@@ -4337,7 +4340,7 @@
       "skill": "Deductions",
       "difficulty": 1,
       "format": "single",
-      "basics": "inference",
+      "basics": "mustBeTrue",
       "stem": "All dolphins are mammals. All mammals breathe air. Which statement must be true?",
       "options": [
         "All animals that breathe air are dolphins.",

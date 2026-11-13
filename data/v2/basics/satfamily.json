@@ -1,0 +1,469 @@
+[
+  {
+    "id": "audienceGoal",
+    "name": "Writing for the audience",
+    "sub": "When the goal says who is reading",
+    "rule": "Some goals name the reader: \"an audience unfamiliar with\" the topic, or one that already knows it. A new reader needs to be told what the thing is. A reader who already knows it does not.",
+    "trick": "Find the audience words in the goal. If the reader is unfamiliar, the right sentence names the thing and says what it is in a few words. If the reader already knows it, skip the explaining.",
+    "passage": "Notes: A seed library lends seeds instead of books. Members plant the seeds at home. At the end of the season, they return seeds from their best plants. The Eastfield seed library opened in 2019.\n\nGoal: Introduce the Eastfield seed library to an audience unfamiliar with seed libraries.",
+    "examples": [
+      {
+        "kind": "good",
+        "text": "The Eastfield seed library, which lends seeds instead of books, opened in 2019.",
+        "note": "Names it and says what a seed library is."
+      },
+      {
+        "kind": "bad",
+        "text": "Members of the Eastfield seed library return seeds from their best plants.",
+        "note": "True, but a new reader still has no idea what a seed library is."
+      }
+    ],
+    "another": {
+      "text": "Telling a friend about a game they have never played, you first say what kind of game it is. Telling a friend who plays it every day, you jump straight to the news. Same game, different listener, different first sentence.",
+      "example": "Never played: \"It's a board game where you build towns.\"\nPlays every day: \"I finally won with three towns.\""
+    },
+    "walkthrough": {
+      "passage": true,
+      "steps": [
+        {
+          "say": "Every choice uses true notes. The goal decides which one is right, and this goal names a reader."
+        },
+        {
+          "ask": "Who is reading?",
+          "options": [
+            "Someone who has never heard of seed libraries",
+            "Someone who already uses the seed library"
+          ],
+          "answer": 0,
+          "hint": "Look for the audience words at the end of the goal.",
+          "line": "Reader: unfamiliar with seed libraries"
+        },
+        {
+          "ask": "So what must the sentence do besides name the library?",
+          "options": [
+            "Say what a seed library is",
+            "Give the year members return seeds"
+          ],
+          "answer": 0,
+          "then": "A new reader needs the idea explained before anything else makes sense.",
+          "line": "Must explain: lends seeds instead of books"
+        },
+        {
+          "ask": "Which sentence does that?",
+          "options": [
+            "The Eastfield seed library, which lends seeds instead of books, opened in 2019.",
+            "Members of the Eastfield seed library return seeds from their best plants."
+          ],
+          "answer": 0,
+          "then": "The other one is true, but it skips what a seed library is.",
+          "hint": "Which one tells you what a seed library does?",
+          "line": "✓ 'which lends seeds instead of books'"
+        }
+      ]
+    },
+    "questions": [
+      {
+        "passage": "Notes: A tool library lends tools such as drills and ladders. Members borrow a tool for up to a week. The Riverside tool library has over 600 tools. It is run by volunteers.\n\nGoal: Introduce the Riverside tool library to an audience unfamiliar with tool libraries.",
+        "stem": "Which sentence best meets the goal?",
+        "options": [
+          "The Riverside tool library is run by volunteers and has over 600 tools.",
+          "The Riverside tool library lends drills, ladders and other tools, which members can borrow for up to a week.",
+          "Members of the Riverside tool library can keep a tool for up to a week."
+        ],
+        "answer": 1,
+        "why": "Only this one tells a new reader what a tool library actually does: it lends tools."
+      },
+      {
+        "passage": "Notes: The bike lane on Elm Street opened last spring. Riders had asked for it for years. Use doubled in its first month. Readers of the town cycling club newsletter already know the lane well.\n\nGoal: Share a new fact about the Elm Street lane with readers of the cycling club newsletter.",
+        "stem": "Which sentence best meets the goal?",
+        "options": [
+          "Use of the Elm Street bike lane doubled in its first month.",
+          "A bike lane is a part of the road set aside for people riding bikes.",
+          "Elm Street is a street in town where people ride bikes."
+        ],
+        "answer": 0,
+        "why": "These readers already know the lane, so explaining what a bike lane is wastes their time. The new fact is the doubling."
+      }
+    ]
+  },
+  {
+    "id": "orderResults",
+    "name": "Putting results in order",
+    "sub": "Listing results from lowest to highest",
+    "rule": "To put results in order, find each value in the table first, then sort them. Read the question again to see which way: increasing means smallest first, decreasing means largest first.",
+    "trick": "Write each value next to its name before you look at the choices. Then check only the first and last item of each choice; that rules most of them out fast.",
+    "table": {
+      "head": [
+        "Ball",
+        "Bounce height (cm)"
+      ],
+      "rows": [
+        [
+          "Rubber",
+          "62"
+        ],
+        [
+          "Tennis",
+          "48"
+        ],
+        [
+          "Foam",
+          "15"
+        ],
+        [
+          "Golf",
+          "55"
+        ]
+      ]
+    },
+    "examples": [
+      {
+        "kind": "eg",
+        "text": "Order of increasing bounce height?",
+        "note": "Foam 15, Tennis 48, Golf 55, Rubber 62."
+      },
+      {
+        "kind": "eg",
+        "text": "Order of decreasing bounce height?",
+        "note": "Flip it: Rubber, Golf, Tennis, Foam."
+      }
+    ],
+    "another": {
+      "text": "Lining kids up for a class photo by height, you don't guess. You look at each kid, then put the shortest at one end and the tallest at the other. If the teacher says tallest first, you just start from the other end.",
+      "example": "Heights: Sam 120, Ana 135, Leo 128\nShortest first: Sam, Leo, Ana"
+    },
+    "walkthrough": {
+      "table": true,
+      "steps": [
+        {
+          "say": "First find every value. Then sort. Then check which way the question wants it."
+        },
+        {
+          "ask": "Which ball bounced the lowest?",
+          "options": [
+            "Foam",
+            "Tennis",
+            "Golf"
+          ],
+          "answer": 0,
+          "hint": "Find the smallest number in the bounce column.",
+          "line": "Lowest: Foam (15)"
+        },
+        {
+          "ask": "Which ball bounced the highest?",
+          "options": [
+            "Rubber",
+            "Golf"
+          ],
+          "answer": 0,
+          "hint": "62 is bigger than 55.",
+          "line": "Highest: Rubber (62)"
+        },
+        {
+          "ask": "The question asks for increasing bounce height. Which end comes first?",
+          "options": [
+            "The lowest, Foam",
+            "The highest, Rubber"
+          ],
+          "answer": 0,
+          "then": "Increasing means smallest first.",
+          "line": "Increasing: Foam first, Rubber last"
+        },
+        {
+          "ask": "Which order is right?",
+          "options": [
+            "Foam, Tennis, Golf, Rubber",
+            "Foam, Golf, Tennis, Rubber",
+            "Rubber, Golf, Tennis, Foam"
+          ],
+          "answer": 0,
+          "then": "15, 48, 55, 62. Rubber, Golf, Tennis, Foam has the right balls, but from greatest to least.",
+          "hint": "Tennis is 48 and Golf is 55.",
+          "line": "✓ Foam, Tennis, Golf, Rubber"
+        }
+      ]
+    },
+    "questions": [
+      {
+        "stem": "Which list puts the balls in order of decreasing bounce height?",
+        "options": [
+          "Foam, Tennis, Golf, Rubber",
+          "Rubber, Golf, Tennis, Foam",
+          "Rubber, Tennis, Golf, Foam"
+        ],
+        "answer": 1,
+        "why": "Decreasing means largest first: 62, 55, 48, 15."
+      },
+      {
+        "table": {
+          "head": [
+            "Liquid",
+            "Time to boil (min)"
+          ],
+          "rows": [
+            [
+              "Water",
+              "6"
+            ],
+            [
+              "Salt water",
+              "8"
+            ],
+            [
+              "Milk",
+              "5"
+            ]
+          ]
+        },
+        "stem": "Which list puts the liquids in order of increasing time to boil?",
+        "options": [
+          "Water, Milk, Salt water",
+          "Salt water, Water, Milk",
+          "Milk, Water, Salt water"
+        ],
+        "answer": 2,
+        "why": "Increasing means shortest time first: 5, 6, 8 minutes."
+      }
+    ]
+  },
+  {
+    "id": "viewpointSummary",
+    "name": "What each scientist thinks",
+    "sub": "One sentence per viewpoint",
+    "rule": "When a passage gives two or more scientists' explanations, sum up each one's main claim in one short sentence before you answer. A question about what one scientist would say, or what they all agree on, is answered from those sentences.",
+    "trick": "For an \"agree\" question, the right choice is something every viewpoint says or takes for granted, often a fact stated before they start to disagree. If even one scientist would reject it, cross it off.",
+    "passage": "Scientist 1: Birds fly south in fall because the days get shorter. Shorter days trigger the urge to migrate.\n\nScientist 2: Birds fly south in fall because their food runs out. When insects disappear in the cold, birds leave to find more.",
+    "examples": [
+      {
+        "kind": "eg",
+        "text": "Scientist 1 in one sentence?",
+        "note": "Shorter days cause migration."
+      },
+      {
+        "kind": "eg",
+        "text": "What do both agree on?",
+        "note": "Birds fly south in fall. They only disagree about why."
+      }
+    ],
+    "another": {
+      "text": "Two friends argue about why the cookies are gone. One says the dog ate them. The other says little brother did. They disagree about who, but they both agree on one thing: the cookies are gone.",
+      "example": "Friend 1: the dog. Friend 2: little brother.\nBoth agree: the cookies are gone."
+    },
+    "walkthrough": {
+      "passage": true,
+      "steps": [
+        {
+          "say": "Before any question, give each scientist one short sentence."
+        },
+        {
+          "ask": "Scientist 1, in one sentence?",
+          "options": [
+            "Shorter days cause birds to migrate",
+            "Running out of food causes birds to migrate"
+          ],
+          "answer": 0,
+          "line": "S1: shorter days"
+        },
+        {
+          "ask": "Scientist 2, in one sentence?",
+          "options": [
+            "Running out of food causes birds to migrate",
+            "Birds never migrate"
+          ],
+          "answer": 0,
+          "line": "S2: food runs out"
+        },
+        {
+          "ask": "Which statement would both scientists agree with?",
+          "options": [
+            "Birds fly south in the fall.",
+            "Shorter days are the main cause of migration.",
+            "Birds leave only when insects disappear."
+          ],
+          "answer": 0,
+          "then": "They argue about why, not whether, birds fly south.",
+          "hint": "Scientist 2 would reject the claim about shorter days, and Scientist 1 the claim about insects.",
+          "line": "✓ Both: birds fly south in fall"
+        }
+      ]
+    },
+    "questions": [
+      {
+        "passage": "Student 1: Ice floats because it is less dense than liquid water.\n\nStudent 2: Ice floats because tiny air bubbles are trapped inside it.",
+        "stem": "Both students would most likely agree that:",
+        "options": [
+          "air bubbles are the reason ice floats.",
+          "ice floats on liquid water.",
+          "ice is less dense than liquid water."
+        ],
+        "answer": 1,
+        "why": "They disagree about the reason, but both explain why ice floats, so both accept that it does."
+      },
+      {
+        "passage": "Scientist 1: The lake's fish died because the water got too warm.\n\nScientist 2: The lake's fish died because a factory leaked chemicals into the water.",
+        "stem": "According to Scientist 2, what would most likely have prevented the fish from dying?",
+        "options": [
+          "Keeping the water cooler",
+          "Stopping the chemical leak",
+          "Adding more fish to the lake"
+        ],
+        "answer": 1,
+        "why": "Scientist 2 blames the chemicals, so stopping the leak would remove the cause."
+      }
+    ]
+  },
+  {
+    "id": "proportionalCheck",
+    "name": "Testing a \"double\" claim",
+    "sub": "Directly proportional or not",
+    "rule": "A claim that one thing is directly proportional to another means doubling the first doubles the second. To test it, find two rows where the first value doubles and see whether the second value doubles too.",
+    "trick": "Going up is not enough. If the first value doubles and the second only goes up a little, the claim is wrong.",
+    "table": {
+      "head": [
+        "Mass on spring (g)",
+        "Stretch (cm)"
+      ],
+      "rows": [
+        [
+          "50",
+          "3"
+        ],
+        [
+          "100",
+          "6"
+        ],
+        [
+          "200",
+          "12"
+        ]
+      ]
+    },
+    "examples": [
+      {
+        "kind": "good",
+        "text": "Mass 50 → 100 g, stretch 3 → 6 cm.",
+        "note": "Mass doubled and stretch doubled: proportional."
+      },
+      {
+        "kind": "bad",
+        "text": "Mass 50 → 100 g, stretch 3 → 4 cm.",
+        "note": "Stretch went up, but it did not double: not proportional."
+      }
+    ],
+    "another": {
+      "text": "One cookie costs 2 dollars and two cookies cost 4 dollars. Twice the cookies, twice the price: that's proportional. But if two cookies cost 3 dollars, the price went up without doubling, so it isn't.",
+      "example": "1 cookie $2, 2 cookies $4 → proportional\n1 cookie $2, 2 cookies $3 → not proportional"
+    },
+    "walkthrough": {
+      "table": true,
+      "steps": [
+        {
+          "say": "Claim: the stretch is directly proportional to the mass. Test it with two rows where the mass doubles."
+        },
+        {
+          "ask": "Which two rows show the mass doubling?",
+          "options": [
+            "50 g and 100 g",
+            "50 g and 200 g"
+          ],
+          "answer": 0,
+          "hint": "Double 50 is 100.",
+          "line": "Mass 50 → 100 g (doubled)"
+        },
+        {
+          "ask": "Between those rows, what happens to the stretch?",
+          "options": [
+            "3 → 6 cm, it doubles",
+            "3 → 6 cm, it goes up by 3, so it does not double"
+          ],
+          "answer": 0,
+          "then": "Twice 3 is 6, so going up by 3 here is exactly doubling.",
+          "line": "Stretch 3 → 6 cm (doubled)"
+        },
+        {
+          "ask": "Check one more pair: 100 g to 200 g. Does the stretch double?",
+          "options": [
+            "Yes, 6 → 12 cm",
+            "No, it only goes up by 6"
+          ],
+          "answer": 0,
+          "then": "Twice 6 is 12.",
+          "hint": "What is twice 6?",
+          "line": "Stretch 6 → 12 cm (doubled)"
+        },
+        {
+          "ask": "Is the claim supported?",
+          "options": [
+            "Yes",
+            "No"
+          ],
+          "answer": 0,
+          "then": "Every time the mass doubles, the stretch doubles.",
+          "line": "✓ Directly proportional"
+        }
+      ]
+    },
+    "questions": [
+      {
+        "table": {
+          "head": [
+            "Light (hours a day)",
+            "Plant height (cm)"
+          ],
+          "rows": [
+            [
+              "6",
+              "10"
+            ],
+            [
+              "12",
+              "14"
+            ],
+            [
+              "24",
+              "18"
+            ]
+          ]
+        },
+        "stem": "A student claims plant height is directly proportional to hours of light. Is the claim supported?",
+        "options": [
+          "Yes, because height increases as light increases",
+          "No, because doubling the light from 6 to 12 hours did not double the height",
+          "Yes, because 12 is double 6"
+        ],
+        "answer": 1,
+        "why": "Light doubled from 6 to 12 hours, but height went from 10 to 14 cm, not to 20. Going up is not the same as doubling."
+      },
+      {
+        "table": {
+          "head": [
+            "Volume of water (mL)",
+            "Mass (g)"
+          ],
+          "rows": [
+            [
+              "20",
+              "20"
+            ],
+            [
+              "40",
+              "40"
+            ],
+            [
+              "80",
+              "80"
+            ]
+          ]
+        },
+        "stem": "Based on the table, if the volume is doubled, the mass will:",
+        "options": [
+          "stay the same.",
+          "go up by 20 g.",
+          "double."
+        ],
+        "answer": 2,
+        "why": "20 → 40 mL gives 20 → 40 g, and 40 → 80 mL gives 40 → 80 g. Each time the volume doubles, so does the mass."
+      }
+    ]
+  }
+]

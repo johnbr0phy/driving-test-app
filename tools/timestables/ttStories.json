@@ -39,7 +39,7 @@
     "skill": "Word problems",
     "difficulty": 1,
     "format": "numeric",
-    "basics": "ttStoryWords",
+    "basics": "ttStoryMoney",
     "stem": "A pack of pencils costs 10p. How many pence do 6 packs cost?",
     "numeric": {
       "answers": [
@@ -107,7 +107,7 @@
     "skill": "Word problems",
     "difficulty": 1,
     "format": "numeric",
-    "basics": "ttStoryWords",
+    "basics": "ttStoryRows",
     "stem": "Noah plants 4 rows of tulips with 5 tulips in every row. How many tulips does he plant?",
     "numeric": {
       "answers": [
@@ -192,7 +192,7 @@
     "skill": "Word problems",
     "difficulty": 2,
     "format": "numeric",
-    "basics": "ttStoryWords",
+    "basics": "ttStoryMoney",
     "stem": "Oliver saves 5p every day for 9 days. How many pence does he save?",
     "numeric": {
       "answers": [
@@ -226,7 +226,7 @@
     "skill": "Word problems",
     "difficulty": 3,
     "format": "numeric",
-    "basics": "ttStoryWords",
+    "basics": "ttStoryRows",
     "stem": "There are 9 benches. 4 children sit on each bench. How many children are there?",
     "numeric": {
       "answers": [
@@ -260,7 +260,7 @@
     "skill": "Word problems",
     "difficulty": 2,
     "format": "numeric",
-    "basics": "ttStoryWords",
+    "basics": "ttStoryGroups",
     "stem": "20 children get into teams of 5. How many teams are there?",
     "numeric": {
       "answers": [
@@ -311,7 +311,7 @@
     "skill": "Word problems",
     "difficulty": 3,
     "format": "numeric",
-    "basics": "ttStoryWords",
+    "basics": "ttStoryGroups",
     "stem": "A car has 4 wheels. Jack counts 24 wheels. How many cars are there?",
     "numeric": {
       "answers": [

@@ -323,7 +323,8 @@
     ],
     "correct": [
       0
-    ]
+    ],
+    "basics": "csArrayIndex"
   },
   {
     "id": "GCSECS-T1-016",
@@ -385,7 +386,8 @@
     ],
     "correct": [
       1
-    ]
+    ],
+    "basics": "csArrayIndex"
   },
   {
     "id": "GCSECS-T1-019",
@@ -406,7 +408,8 @@
     ],
     "correct": [
       1
-    ]
+    ],
+    "basics": "csHighLowLevel"
   },
   {
     "id": "GCSECS-T1-020",
@@ -532,7 +535,8 @@
       0,
       1,
       2
-    ]
+    ],
+    "basics": "csTranslators"
   },
   {
     "id": "GCSECS-T1-025",
@@ -625,7 +629,8 @@
     ],
     "correct": [
       3
-    ]
+    ],
+    "basics": "csIDE"
   },
   {
     "id": "GCSECS-T1-029",
@@ -667,7 +672,8 @@
     ],
     "correct": [
       2
-    ]
+    ],
+    "basics": "csArrayIndex"
   },
   {
     "id": "GCSECS-T1-031",
@@ -1733,7 +1739,8 @@
     ],
     "correct": [
       0
-    ]
+    ],
+    "basics": "csHighLowLevel"
   },
   {
     "id": "GCSECS-T2-020",
@@ -1853,7 +1860,8 @@
     ],
     "correct": [
       1
-    ]
+    ],
+    "basics": "csHighLowLevel"
   },
   {
     "id": "GCSECS-T2-025",
@@ -1943,7 +1951,8 @@
       0,
       4
     ],
-    "select": 2
+    "select": 2,
+    "basics": "csIDE"
   },
   {
     "id": "GCSECS-T2-029",
@@ -3030,7 +3039,8 @@
     ],
     "correct": [
       1
-    ]
+    ],
+    "basics": "csTranslators"
   },
   {
     "id": "GCSECS-D-018",
@@ -3072,7 +3082,8 @@
     ],
     "correct": [
       2
-    ]
+    ],
+    "basics": "csTranslators"
   },
   {
     "id": "GCSECS-D-020",
@@ -3136,7 +3147,8 @@
     ],
     "correct": [
       3
-    ]
+    ],
+    "basics": "csTranslators"
   },
   {
     "id": "GCSECS-D-023",
@@ -3176,7 +3188,8 @@
     ],
     "correct": [
       0
-    ]
+    ],
+    "basics": "csHighLowLevel"
   },
   {
     "id": "GCSECS-D-025",
@@ -3229,7 +3242,8 @@
       0,
       1,
       2
-    ]
+    ],
+    "basics": "csIDE"
   },
   {
     "id": "GCSECS-D-027",
@@ -3359,7 +3373,8 @@
       0,
       2
     ],
-    "select": 2
+    "select": 2,
+    "basics": "csHighLowLevel"
   },
   {
     "id": "GCSECS-D-033",

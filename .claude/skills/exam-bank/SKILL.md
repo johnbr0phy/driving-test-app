@@ -156,6 +156,29 @@ documents to carry) are fine. The validator fails these stems (`META` in `valida
 **Banned:** "All of the above", "None of the above", "Both A and B", options that refer to other
 options, duplicate options in a row, duplicate or near-duplicate stems in the bank.
 
+### Never repeat anything inside an exam
+
+A student who meets the same thing twice in one exam feels the bank is padded, and a held-out
+test that repeats a drill question measures memory, not readiness. So, in every exam:
+
+- **No question twice.** Not across tests, drills, sets, modules or variants, and not reworded
+  with the same numbers and the same answer. Every item is written for one place only.
+- **No Basics skill in two drills (v2).** A skill is learned once per exam, so a second drill
+  opening with it shows a step that is already done. Choose each drill's Basics last, across
+  the whole exam at once: list every drill's skills side by side and check no id appears
+  twice. If a drill cannot reach the four-skill minimum (`tests/basics-min-skills.test.cjs`)
+  without borrowing, write a new skill for it, or give it no Basics; never borrow one another
+  drill already opens with. This happened in Nov 2026 (MAP Growth: Main idea opened both
+  reading drills, Tone opened Literary and Vocabulary) because each drill was picked alone.
+- **No domain in two drills (v2).** Two drills on one domain serve the same questions twice.
+- **A `basics` tag only names a skill its own drill opens with.** Any other tag can never show
+  its brush-up card; drop it in the build (see `DRILL_BASICS` in
+  `tools/next100/mapgrowth/build.py`).
+
+`tests/no-repeats.test.cjs` checks all four for every v2 exam in `npm test`, against
+`tests/no-repeats-baseline.json` (repeats in exams built before the rule; it may only shrink, so
+a new exam must have none). The v1 validator already fails duplicate stems in a bank.
+
 ### Generating at scale
 
 Write items as Python data in the scratchpad (one file per category), build the JSON with a

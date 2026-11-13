@@ -42,6 +42,8 @@ ITEMS = [
   inference, wordsInContext, authorPurpose, textStructure, sequenceEvents, synonyms, wordParts,
   subjectVerb, apostrophes, commonlyConfused, pronounCase, verbTense, commaSplices, transitions,
   topicSentences, preciseWords, itsIts, listIntroCommas, concision.
+- Every question is written for one place only: never the same question (or the same numbers
+  and answer reworded) twice anywhere in the bank.
 - `skill`: a short label (2-4 words) of the sub-skill.
 
 ## House style (enforced by a validator)

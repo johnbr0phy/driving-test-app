@@ -130,3 +130,11 @@ ITEMS = [
       "It loses most or all of its magnetism", ["It stays magnetised as a permanent magnet", "It becomes a north pole", "It repels the magnet"],
       "The nail was an induced magnet, magnetic only while in the field. Induced magnets are always attracted to the permanent magnet."),
 ]
+
+# Basics tags by topic for the wave, motion graph and resultant force items.
+_TAGS = {"Wave speed": "gcsesciWaves", "Wave period": "gcsesciWaves", "Wave properties": "gcsesciWaves",
+         "Distance-time graphs": "gcsesciMotionGraphs", "Velocity-time graphs": "gcsesciMotionGraphs",
+         "Resultant forces": "gcsesciResultant", "Newton's first law": "gcsesciResultant"}
+for _q in ITEMS:
+    if _q["skill"] in _TAGS and "basics" not in _q:
+        _q["basics"] = _TAGS[_q["skill"]]

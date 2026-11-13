@@ -36,7 +36,7 @@ ITEMS = [
       "In a survey of 250 people, 85 said they prefer tea to coffee. What is the relative frequency of preferring tea? Give a decimal.",
       ["0.34"],
       r"Relative frequency = frequency ÷ total $= 85 \div 250 = 0.34$.",
-      tol=0.001, basics="percents"),
+      tol=0.001),
     N(1, 2, 2, "Probability from a two-way table",
       "The table shows how 200 students travel to school.\n\n" + TRANSPORT + "\n\nA student is chosen at random. What is the probability that they are in Year 11 and catch the bus? Give a decimal.",
       ["0.21", "21/100", "42/200"],

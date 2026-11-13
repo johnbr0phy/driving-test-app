@@ -434,6 +434,7 @@
     "format": "single",
     "stem": "An atom of sodium has atomic number 11 and mass number 23. How many neutrons does it have?",
     "explanation": "Neutrons = mass number − atomic number = 23 − 11 = 12. The atomic number, 11, is the number of protons (and electrons).",
+    "basics": "gcsesciAtomNumbers",
     "options": [
       "11",
       "12",
@@ -476,6 +477,7 @@
     "format": "single",
     "stem": "What are isotopes?",
     "explanation": "Isotopes have the same number of protons, so they are the same element, but different numbers of neutrons and so different mass numbers. Changing the protons would change the element.",
+    "basics": "gcsesciAtomNumbers",
     "options": [
       "Atoms of different elements with the same mass number",
       "Atoms of one element with different numbers of protons",
@@ -518,6 +520,7 @@
     "format": "single",
     "stem": "What is the electron configuration of magnesium, atomic number 12?",
     "explanation": "The first shell holds up to 2 electrons and the second up to 8, so 12 electrons are arranged 2,8,2. Magnesium is in group 2 because it has 2 outer electrons.",
+    "basics": "gcsesciElectronShells",
     "options": [
       "2,10",
       "2,8,2",
@@ -938,7 +941,8 @@
         "70"
       ],
       "tolerance": 0
-    }
+    },
+    "basics": "gcsesciEfficiency"
   },
   {
     "id": "GCSES-T1-046",
@@ -1058,6 +1062,7 @@
     "format": "single",
     "stem": "Two lamps are connected in series with a cell. What is true about the current?",
     "explanation": "A series circuit has only one path, so the same current flows through every component. The potential difference is shared between them.",
+    "basics": "gcsesciCircuits",
     "options": [
       "It splits between the lamps",
       "It is larger in the first lamp",
@@ -1121,6 +1126,7 @@
     "format": "single",
     "stem": "On a distance-time graph, what does a horizontal line show?",
     "explanation": "A horizontal line means the distance is not changing, so the object is not moving. A straight sloping line shows constant speed.",
+    "basics": "gcsesciMotionGraphs",
     "options": [
       "It moves at constant speed",
       "It is accelerating",
@@ -1169,7 +1175,8 @@
         "200"
       ],
       "tolerance": 0
-    }
+    },
+    "basics": "gcsesciWaves"
   },
   {
     "id": "GCSES-T1-057",
@@ -1689,6 +1696,7 @@
     "format": "single",
     "stem": "What is the relative charge of an electron?",
     "explanation": "Electrons have a relative charge of −1, protons +1 and neutrons 0. An atom has equal numbers of protons and electrons, so it has no overall charge.",
+    "basics": "gcsesciAtomNumbers",
     "options": [
       "+1",
       "−1",
@@ -1817,6 +1825,7 @@
     "format": "single",
     "stem": "Why are the noble gases unreactive?",
     "explanation": "Noble gas atoms have a full outer shell, a stable arrangement, so they do not easily gain, lose or share electrons.",
+    "basics": "gcsesciElectronShells",
     "options": [
       "They have one outer electron",
       "They are metals",
@@ -2311,6 +2320,7 @@
     "format": "single",
     "stem": "In a parallel circuit, what is true of the potential difference across each branch?",
     "explanation": "Each branch is connected directly across the supply, so each gets the full potential difference. The current is what splits between branches.",
+    "basics": "gcsesciCircuits",
     "options": [
       "It is shared between the branches",
       "It is zero",
@@ -2332,6 +2342,7 @@
     "format": "single",
     "stem": "A car moves at a steady speed along a straight road. What is the resultant force on it?",
     "explanation": "If the velocity is not changing, the forces are balanced and the resultant force is zero. The driving force equals the resistive forces.",
+    "basics": "gcsesciResultant",
     "options": [
       "Zero",
       "A forward force",
@@ -3157,6 +3168,7 @@
     "format": "single",
     "stem": "Which particle has a relative mass of 1 and no charge?",
     "explanation": "Neutrons have a relative mass of 1 and no charge. Protons also have mass 1 but a charge of +1, and electrons have very little mass.",
+    "basics": "gcsesciAtomNumbers",
     "options": [
       "Proton",
       "Electron",
@@ -3939,7 +3951,8 @@
         "25"
       ],
       "tolerance": 0
-    }
+    },
+    "basics": "gcsesciMotionGraphs"
   },
   {
     "id": "GCSES-D-069",
@@ -3973,6 +3986,7 @@
     "format": "single",
     "stem": "What does the gradient of a velocity-time graph show?",
     "explanation": "Gradient = change in velocity ÷ time, which is acceleration. The area under the line gives the distance travelled.",
+    "basics": "gcsesciMotionGraphs",
     "options": [
       "Distance travelled",
       "Total time",
@@ -3994,6 +4008,7 @@
     "format": "single",
     "stem": "What happens to the energy a machine wastes?",
     "explanation": "Energy cannot be created or destroyed. Wasted energy is dissipated, usually heating the surroundings, where it is no longer useful.",
+    "basics": "gcsesciEfficiency",
     "options": [
       "It is destroyed",
       "It is stored in the machine for later",
@@ -4126,7 +4141,8 @@
         "10"
       ],
       "tolerance": 0
-    }
+    },
+    "basics": "gcsesciCircuits"
   },
   {
     "id": "GCSES-D-078",
@@ -4139,6 +4155,7 @@
     "format": "single",
     "stem": "Two forces act on a box: 15 N to the right and 9 N to the left. What is the resultant force?",
     "explanation": "Forces in opposite directions are subtracted: 15 − 9 = 6 N, in the direction of the larger force.",
+    "basics": "gcsesciResultant",
     "options": [
       "24 N to the right",
       "6 N to the left",
@@ -4188,7 +4205,8 @@
         ".05"
       ],
       "tolerance": 0
-    }
+    },
+    "basics": "gcsesciWaves"
   },
   {
     "id": "GCSES-D-081",
@@ -4221,6 +4239,7 @@
     "format": "single",
     "stem": "What is the amplitude of a wave?",
     "explanation": "Amplitude is the maximum displacement of a point from its rest position. The distance between crests is the wavelength and waves per second is the frequency.",
+    "basics": "gcsesciWaves",
     "options": [
       "The distance between two crests",
       "The number of waves per second",

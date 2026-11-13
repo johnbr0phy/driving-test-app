@@ -559,7 +559,6 @@
       "domain": "mapMathOA",
       "skill": "Division word problems",
       "difficulty": 1,
-      "basics": "wordProblems",
       "format": "single",
       "stem": "Ben has 35 marbles. He puts the same number in each of 5 bags. How many marbles are in each bag?",
       "options": [
@@ -602,7 +601,6 @@
       "domain": "mapMathGeo",
       "skill": "Partitioning shapes",
       "difficulty": 1,
-      "basics": "fractionConvert",
       "lockedOrder": true,
       "format": "single",
       "stem": "A rectangle is cut into 6 equal parts. What fraction of the whole rectangle is one part?",
@@ -644,7 +642,6 @@
       "domain": "mapMathOA",
       "skill": "Multi-step word problems",
       "difficulty": 2,
-      "basics": "wordProblems",
       "lockedOrder": true,
       "format": "single",
       "stem": "Rosa buys 3 notebooks for \\$4 each and a pen for \\$2. She pays with a \\$20 bill. How much change does she get?",
@@ -894,7 +891,6 @@
       "domain": "mapMathOA",
       "skill": "Interpreting remainders",
       "difficulty": 2,
-      "basics": "wordProblems",
       "format": "single",
       "stem": "27 students are going on a trip. Each van holds 6 students. How many vans are needed so every student has a seat?",
       "options": [
@@ -1151,7 +1147,6 @@
       "domain": "mapReadLit",
       "skill": "Fable lesson",
       "difficulty": 1,
-      "basics": "mainIdea",
       "format": "single",
       "stem": "What is the lesson of the fable?",
       "options": [
@@ -1241,7 +1236,6 @@
       "domain": "mapReadInfo",
       "skill": "Steps in order",
       "difficulty": 1,
-      "basics": "sequenceEvents",
       "format": "single",
       "stem": "What should a reader do right after sliding the bean into the cup?",
       "options": [
@@ -1514,7 +1508,7 @@
       "domain": "mapReadLit",
       "skill": "Setting",
       "difficulty": 1,
-      "basics": "findingDetail",
+      "basics": "ks2Retrieval",
       "format": "single",
       "stem": "When and where does the story take place?",
       "options": [
@@ -1581,7 +1575,6 @@
       "domain": "mapReadLit",
       "skill": "Theme",
       "difficulty": 2,
-      "basics": "mainIdea",
       "format": "single",
       "stem": "What lesson does Mia learn in the story?",
       "options": [
@@ -1627,7 +1620,7 @@
       "domain": "mapReadLit",
       "skill": "Problem and solution",
       "difficulty": 2,
-      "basics": "findingDetail",
+      "basics": "ks2Retrieval",
       "format": "single",
       "stem": "How does Mia stop herself from digging up the seeds?",
       "options": [
@@ -1650,7 +1643,6 @@
       "domain": "mapReadLit",
       "skill": "How a part fits",
       "difficulty": 3,
-      "basics": "textStructure",
       "format": "single",
       "stem": "Why is the last part of the story, about Mia's little brother, important?",
       "options": [
@@ -1716,7 +1708,7 @@
       "domain": "mapReadLit",
       "skill": "Character motivation",
       "difficulty": 2,
-      "basics": "findingDetail",
+      "basics": "ks2Retrieval",
       "format": "single",
       "stem": "Why does Grandpa Lee go to the lake so early?",
       "options": [
@@ -2789,7 +2781,6 @@
       "domain": "mapLangWriting",
       "skill": "Purpose of a text",
       "difficulty": 3,
-      "basics": "authorPurpose",
       "passage": "(1) Come to the Pine Street Library Book Sale! (2) Books cost only 50 cents. (3) The sale is Saturday from 9 a.m. to noon. (4) All money helps buy new books for kids.",
       "format": "single",
       "stem": "What is the main purpose of this piece of writing?",
@@ -3048,7 +3039,6 @@
       "domain": "mapMathOA",
       "skill": "Unknown in an equation",
       "difficulty": 1,
-      "basics": "wordProblems",
       "format": "numeric",
       "stem": "Kai had some shells. He found 9 more, and now he has 23. How many shells did Kai have at first? Type the number.",
       "numeric": {
@@ -3154,7 +3144,6 @@
       "domain": "mapMathOA",
       "skill": "Multiplicative comparison",
       "difficulty": 2,
-      "basics": "wordProblems",
       "format": "single",
       "stem": "Lena has 4 times as many stamps as Raj. Raj has 7 stamps. How many stamps does Lena have?",
       "options": [
@@ -3286,7 +3275,6 @@
       "domain": "mapMathMD",
       "skill": "Making change",
       "difficulty": 2,
-      "basics": "wordProblems",
       "lockedOrder": true,
       "format": "single",
       "stem": "Maya buys a book for \\$6.75 and pays with a \\$10 bill. How much change should she get?",
@@ -3396,7 +3384,6 @@
       "domain": "mapMathOA",
       "skill": "Multi-step word problems",
       "difficulty": 2,
-      "basics": "wordProblems",
       "format": "numeric",
       "stem": "A garden has 6 rows with 8 tomato plants in each row. Sam moves 15 of the plants to pots. How many plants are left in the garden? Type the number.",
       "numeric": {
@@ -3746,7 +3733,6 @@
       "domain": "mapReadLit",
       "skill": "Fable lesson",
       "difficulty": 1,
-      "basics": "mainIdea",
       "format": "single",
       "stem": "What lesson does Otter learn in the fable?",
       "options": [
@@ -3991,7 +3977,6 @@
       "domain": "mapReadInfo",
       "skill": "Sequence",
       "difficulty": 2,
-      "basics": "sequenceEvents",
       "format": "single",
       "stem": "In \"The Water Cycle,\" what happens right after water turns into a gas and rises?",
       "options": [
@@ -4036,7 +4021,7 @@
       "domain": "mapReadLit",
       "skill": "Character motivation",
       "difficulty": 2,
-      "basics": "findingDetail",
+      "basics": "ks2Retrieval",
       "format": "single",
       "stem": "Why does Grace work so hard on her project?",
       "options": [
@@ -4192,7 +4177,6 @@
       "domain": "mapReadLit",
       "skill": "Summary",
       "difficulty": 3,
-      "basics": "mainIdea",
       "format": "single",
       "stem": "Which sentence is the best summary of the story?",
       "options": [
@@ -4238,7 +4222,6 @@
       "domain": "mapReadLit",
       "skill": "How a part fits",
       "difficulty": 3,
-      "basics": "textStructure",
       "format": "single",
       "stem": "Why does the author include the last paragraph of the story?",
       "options": [
@@ -4330,7 +4313,6 @@
       "domain": "mapReadInfo",
       "skill": "Key details",
       "difficulty": 3,
-      "basics": "inference",
       "format": "single",
       "stem": "Why does the author explain that riders could switch to a fresh horse at each station?",
       "options": [
@@ -4464,7 +4446,6 @@
       "domain": "mapReadLit",
       "skill": "How a chapter fits",
       "difficulty": 3,
-      "basics": "textStructure",
       "format": "single",
       "stem": "How does Chapter 3 fit into the whole story about Carlos?",
       "options": [
@@ -4531,7 +4512,6 @@
       "domain": "mapReadLit",
       "skill": "Theme",
       "difficulty": 3,
-      "basics": "mainIdea",
       "format": "single",
       "stem": "What is the theme of \"Night Sounds\"?",
       "options": [
@@ -4792,7 +4772,6 @@
       "domain": "mapLangWriting",
       "skill": "Purpose of a text",
       "difficulty": 1,
-      "basics": "authorPurpose",
       "passage": "(1) Dear Grandma, (2) Thank you for the blue scarf. (3) I wear it to school every day. (4) It keeps me warm at recess.",
       "format": "single",
       "stem": "What is the main purpose of this letter?",
@@ -5446,7 +5425,6 @@
       "domain": "mapMathGeo",
       "skill": "Partitioning shapes",
       "difficulty": 1,
-      "basics": "fractionConvert",
       "lockedOrder": true,
       "format": "single",
       "stem": "A hexagon is split into 3 equal parts. Mia shades 1 part. Which fraction names the shaded part?",
@@ -5640,7 +5618,6 @@
       "domain": "mapMathOA",
       "skill": "Interpreting remainders",
       "difficulty": 2,
-      "basics": "wordProblems",
       "format": "single",
       "stem": "Mia has 50 beads. Each bracelet uses 8 beads. She makes as many bracelets as she can. How many beads are left over?",
       "options": [
@@ -5913,7 +5890,6 @@
       "domain": "mapMathOA",
       "skill": "Multi-step word problems",
       "difficulty": 2,
-      "basics": "wordProblems",
       "format": "numeric",
       "stem": "A box holds 24 crayons. A teacher buys 5 boxes and gives out 70 crayons. How many crayons are left? Type the number.",
       "numeric": {
@@ -5954,7 +5930,6 @@
       "domain": "mapMathMD",
       "skill": "Money problems",
       "difficulty": 2,
-      "basics": "wordProblems",
       "lockedOrder": true,
       "format": "single",
       "stem": "Pens cost \\$1.25 each. How much do 4 pens cost?",
@@ -6158,7 +6133,6 @@
       "domain": "mapMathMD",
       "skill": "Liquid volume problems",
       "difficulty": 3,
-      "basics": "wordProblems",
       "lockedOrder": true,
       "format": "single",
       "stem": "A jug holds 4 liters of water. Ella pours out 1 liter and 500 milliliters. How much water is left in the jug?",
@@ -6474,7 +6448,6 @@
       "domain": "mapReadLit",
       "skill": "Summary",
       "difficulty": 2,
-      "basics": "mainIdea",
       "format": "single",
       "stem": "Which sentence best summarizes \"The Star Jar\"?",
       "options": [
@@ -6543,7 +6516,6 @@
       "domain": "mapReadInfo",
       "skill": "Sequence",
       "difficulty": 3,
-      "basics": "sequenceEvents",
       "format": "single",
       "stem": "What happens to nectar after older workers bring it back to the hive?",
       "options": [
@@ -6633,7 +6605,7 @@
       "domain": "mapReadLit",
       "skill": "Key event",
       "difficulty": 2,
-      "basics": "findingDetail",
+      "basics": "ks2Retrieval",
       "format": "single",
       "stem": "What event makes Ruby change her mind about the library job?",
       "options": [
@@ -6656,7 +6628,6 @@
       "domain": "mapReadLit",
       "skill": "Theme",
       "difficulty": 3,
-      "basics": "mainIdea",
       "format": "single",
       "stem": "Which lesson does \"The Library Helper\" teach?",
       "options": [
@@ -6679,7 +6650,6 @@
       "domain": "mapReadInfo",
       "skill": "Sequence",
       "difficulty": 3,
-      "basics": "sequenceEvents",
       "format": "single",
       "stem": "Which event in \"Lewis and Clark\" happened last?",
       "options": [

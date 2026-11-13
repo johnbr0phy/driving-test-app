@@ -1,6 +1,7 @@
 // A Basics step is a short course before a drill, so it never holds fewer than four
 // skills: one or two cards do not feel like a step of their own. Top a thin
-// step up with existing skills that fit before writing new ones.
+// step up with existing skills that fit and that no other drill of the same exam
+// opens (tests/no-repeats.test.cjs); if none are left, write new ones.
 const test = require('node:test');
 const assert = require('node:assert/strict');
 require('tsx/cjs');

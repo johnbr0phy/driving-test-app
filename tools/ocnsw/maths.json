@@ -668,7 +668,6 @@
     "skill": "Survey problems",
     "difficulty": 3,
     "format": "single",
-    "basics": "fractionOps",
     "stem": "30 students were asked to choose one sport. Half chose soccer. One third of the rest chose netball, and everyone else chose cricket. How many chose cricket?",
     "options": [
       "5",

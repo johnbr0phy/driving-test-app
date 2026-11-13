@@ -145,3 +145,10 @@ M(0, 2, "Levels of language",
   2,
   "High-level statements such as a FOR loop translate into many machine instructions, and the same source can be translated for different processors. One-to-one instructions and direct register use describe assembly language."),
 ]
+
+# Basics tags for the language and IDE items (the gate items carry TB above).
+_TAGS = {"Levels of language": "csHighLowLevel", "Machine code": "csHighLowLevel",
+         "Assembly language": "csHighLowLevel", "Translators": "csTranslators", "IDEs": "csIDE"}
+for _q in ITEMS:
+    if _q["skill"] in _TAGS and "basics" not in _q:
+        _q["basics"] = _TAGS[_q["skill"]]

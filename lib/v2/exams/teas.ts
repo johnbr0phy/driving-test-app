@@ -72,7 +72,7 @@ export const TEAS: ExamV2Config = {
   // short Basics list; legacyKey carries progress from the old one-per-section
   // drills. Science has no Basics yet (anatomy and physiology needs its own).
   drills: [
-    { key: "reading", name: "Reading", section: "reading", domains: ["teasReading"], blurb: "Passages with main idea, detail, inference and structure questions.", basics: ["mainIdea", "findingDetail", "inference", "sequenceEvents", "authorPurpose", "textStructure", "wordsInContext"] },
+    { key: "reading", name: "Reading", section: "reading", domains: ["teasReading"], blurb: "Passages with main idea, detail, inference and structure questions.", basics: ["mainIdea", "findingDetail", "inference", "sequenceEvents", "authorPurpose", "textStructure"] },
     { key: "numbers", legacyKey: "math", name: "Numbers and Algebra", section: "math", domains: ["teasNumbers"], blurb: "Fractions, percents, ratios, order of operations and equations, every step worked.", basics: ["fractionConvert", "fractionOps", "orderOfOperations", "percents", "percentChange", "ratios", "solveX", "inequalities", "scientificNotation"] },
     { key: "measurement", legacyKey: "math", name: "Measurement and Data", section: "math", domains: ["teasMeasurement"], blurb: "Dosage, unit conversions, area, circles, volume and the Pythagorean theorem, plus mean and median.", basics: ["dosage", "unitConversion", "areaPerimeter", "circleBasics", "volume", "pythagorean", "meanMedian"] },
     { key: "science", name: "Science", section: "science", domains: ["teasScience"], blurb: "Anatomy and physiology first, then biology, chemistry and reasoning." },

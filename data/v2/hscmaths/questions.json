@@ -8,7 +8,7 @@
     "skill": "Compound interest, monthly",
     "difficulty": 2,
     "format": "single",
-    "basics": "exponentialGrowth",
+    "basics": "compoundInterest",
     "stem": "\\$8000 is invested at 4.8% p.a. interest, compounded monthly, for 3 years. Which expression gives the future value?",
     "options": [
       "$8000(1.004)^{36}$",
@@ -422,7 +422,6 @@
     "skill": "Relative frequency",
     "difficulty": 1,
     "format": "numeric",
-    "basics": "percents",
     "stem": "In a survey of 250 people, 85 said they prefer tea to coffee. What is the relative frequency of preferring tea? Give a decimal. Type the number only.",
     "numeric": {
       "answers": [
@@ -442,7 +441,6 @@
     "skill": "Prediction from a least-squares line",
     "difficulty": 1,
     "format": "numeric",
-    "basics": "substitution",
     "stem": "The least-squares regression line for hours studied, $x$, and exam mark, $y$, is $y = 2.4x + 15$. Predict the mark for a student who studies for 12 hours. Type the number only.",
     "numeric": {
       "answers": [
@@ -462,6 +460,7 @@
     "skill": "Future value of an annuity (table)",
     "difficulty": 2,
     "format": "numeric",
+    "basics": "annuityTable",
     "stem": "Mia deposits \\$300 at the end of every month for 3 years into an account paying 6% p.a., compounded monthly. Use the table to find the future value of her annuity, in dollars, to the nearest cent.\n\nFuture value of \\$1 per period (interest rate per period across the top):\n\n| Periods | 0.5% | 1% | 6% |\n|---|---|---|---|\n| 12 | 12.3356 | 12.6825 | 16.8699 |\n| 24 | 25.4320 | 26.9735 | 50.8156 |\n| 36 | 39.3361 | 43.0769 | 119.1209 |\n\nType the number only.",
     "numeric": {
       "answers": [
@@ -800,7 +799,7 @@
     "skill": "Present value",
     "difficulty": 2,
     "format": "single",
-    "basics": "exponentialGrowth",
+    "basics": "compoundInterest",
     "stem": "How much must be invested now at 5% p.a., compounded annually, to grow to \\$50 000 in 10 years? Give the answer to the nearest cent.",
     "options": [
       "\\$25 000.00",
@@ -842,7 +841,7 @@
     "skill": "Compound interest, quarterly",
     "difficulty": 2,
     "format": "single",
-    "basics": "exponentialGrowth",
+    "basics": "compoundInterest",
     "stem": "\\$12 000 is invested at 6% p.a., compounded quarterly, for 5 years. What is the future value, to the nearest cent?",
     "options": [
       "\\$16 058.71",
@@ -1293,6 +1292,7 @@
     "skill": "Future value of an annuity (table)",
     "difficulty": 2,
     "format": "numeric",
+    "basics": "annuityTable",
     "stem": "\\$2000 is contributed at the end of each year for 10 years to a fund earning 4% p.a., compounded annually. Use the table to find the future value, in dollars, to the nearest cent.\n\nFuture value of \\$1 per period (interest rate per period across the top):\n\n| Periods | 3% | 4% | 5% |\n|---|---|---|---|\n| 5 | 5.3091 | 5.4163 | 5.5256 |\n| 10 | 11.4639 | 12.0061 | 12.5779 |\n| 15 | 18.5989 | 20.0236 | 21.5786 |\n\nType the number only.",
     "numeric": {
       "answers": [
@@ -1389,6 +1389,7 @@
     "skill": "Interest earned, monthly compounding",
     "difficulty": 2,
     "format": "numeric",
+    "basics": "compoundInterest",
     "stem": "\\$15 000 is invested for 5 years at 3.6% p.a., compounded monthly. How much interest is earned, in dollars, to the nearest cent? Type the number only.",
     "numeric": {
       "answers": [
@@ -1428,7 +1429,6 @@
     "skill": "Using a line in reverse",
     "difficulty": 2,
     "format": "numeric",
-    "basics": "solveX",
     "stem": "The least-squares line for a data set is $y = 0.65x + 12$. For what value of $x$ does the line predict $y = 38$? Type the number only.",
     "numeric": {
       "answers": [
@@ -1691,7 +1691,7 @@
     "skill": "Compound interest, annual",
     "difficulty": 1,
     "format": "numeric",
-    "basics": "exponentialGrowth",
+    "basics": "compoundInterest",
     "stem": "\\$5000 is invested at 4% p.a., compounded annually, for 3 years. What is the future value, in dollars, to the nearest cent? Type the number only.",
     "numeric": {
       "answers": [
@@ -1811,6 +1811,7 @@
     "skill": "Interest earned, monthly compounding",
     "difficulty": 2,
     "format": "numeric",
+    "basics": "compoundInterest",
     "stem": "\\$6500 is invested at 5.4% p.a., compounded monthly, for 2 years. How much interest is earned, in dollars, to the nearest cent? Type the number only.",
     "numeric": {
       "answers": [
@@ -1986,7 +1987,6 @@
     "skill": "Prediction from a least-squares line",
     "difficulty": 1,
     "format": "numeric",
-    "basics": "substitution",
     "stem": "The least-squares line for the number of hours of sunshine, $x$, and the number of beachgoers, $y$, is $y = 85x - 40$. Predict the number of beachgoers when there are 9 hours of sunshine. Type the number only.",
     "numeric": {
       "answers": [
@@ -2103,7 +2103,6 @@
     "skill": "Prediction from a least-squares line",
     "difficulty": 2,
     "format": "numeric",
-    "basics": "substitution",
     "stem": "The least-squares line for a car's age in years, $x$, and its value in thousands of dollars, $y$, is $y = 34.2 - 2.9x$. Predict the value of a 6-year-old car, in thousands of dollars. Type the number only.",
     "numeric": {
       "answers": [
@@ -3011,6 +3010,7 @@
     "skill": "Future value of an annuity (table)",
     "difficulty": 2,
     "format": "numeric",
+    "basics": "annuityTable",
     "stem": "Sam deposits \\$150 at the end of each month for 2 years at 6% p.a., compounded monthly. Use the table to find the future value, in dollars, to the nearest cent.\n\nFuture value of \\$1 per period (interest rate per period across the top):\n\n| Periods | 0.5% | 1% |\n|---|---|---|\n| 12 | 12.3356 | 12.6825 |\n| 24 | 25.4320 | 26.9735 |\n| 36 | 39.3361 | 43.0769 |\n\nType the number only.",
     "numeric": {
       "answers": [
@@ -3136,6 +3136,7 @@
     "skill": "Present value of an annuity (table)",
     "difficulty": 3,
     "format": "numeric",
+    "basics": "annuityTable",
     "stem": "A couple can afford repayments of \\$1800 a month for 20 years. The interest rate is 6% p.a., compounded monthly. Use the table to find the most they can borrow, in dollars, to the nearest cent.\n\nPresent value of \\$1 per period (interest rate per period across the top):\n\n| Periods | 0.5% | 0.75% |\n|---|---|---|\n| 120 | 90.0735 | 78.9417 |\n| 240 | 139.5808 | 111.1450 |\n| 300 | 155.2069 | 119.1616 |\n\nType the number only.",
     "numeric": {
       "answers": [
@@ -3377,7 +3378,7 @@
     "skill": "Present value of a lump sum",
     "difficulty": 2,
     "format": "numeric",
-    "basics": "exponentialGrowth",
+    "basics": "compoundInterest",
     "stem": "How much must be invested now at 5% p.a., compounded annually, to have \\$20 000 in 4 years? Answer in dollars, to the nearest cent. Type the number only.",
     "numeric": {
       "answers": [
@@ -3435,7 +3436,6 @@
     "skill": "Using a line in reverse",
     "difficulty": 2,
     "format": "numeric",
-    "basics": "solveX",
     "stem": "The least-squares line for weekly advertising spending in dollars, $x$, and sales in dollars, $y$, is $y = 4.2x + 1500$. How much advertising spending is predicted to give sales of \\$3600? Answer in dollars. Type the number only.",
     "numeric": {
       "answers": [
@@ -3556,7 +3556,6 @@
     "skill": "Using the regression equation",
     "difficulty": 1,
     "format": "numeric",
-    "basics": "substitution",
     "stem": "A calculator gives a least-squares line $y = a + bx$ with $a = 3.2$ and $b = 0.85$. What is the predicted value of $y$ when $x = 20$? Type the number only.",
     "numeric": {
       "answers": [
@@ -4056,7 +4055,6 @@
     "skill": "Gradient between two predictions",
     "difficulty": 2,
     "format": "numeric",
-    "basics": "slope",
     "stem": "A least-squares line predicts $y = 52$ when $x = 10$ and $y = 76$ when $x = 18$. What is the gradient of the line? Type the number only.",
     "numeric": {
       "answers": [

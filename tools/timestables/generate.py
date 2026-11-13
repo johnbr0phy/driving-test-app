@@ -20,11 +20,12 @@ DOMAIN_OF = {2: "ttTwoFiveTen", 5: "ttTwoFiveTen", 10: "ttTwoFiveTen",
              3: "ttThreeFourEight", 4: "ttThreeFourEight", 8: "ttThreeFourEight",
              6: "ttSixSevenNine", 7: "ttSixSevenNine", 9: "ttSixSevenNine",
              11: "ttElevenTwelve", 12: "ttElevenTwelve"}
-BASICS_OF = {2: "ttTwos", 5: "ttFives", 10: "ttTens", 3: "ttThrees", 4: "ttDoubleDouble", 8: "ttDoubleDouble",
+BASICS_OF = {2: "ttTwos", 5: "ttFives", 10: "ttTens", 3: "ttThrees", 4: "ttDoubleDouble", 8: "ttEights",
              6: "ttSixes", 7: "ttSplitIt", 9: "ttNines", 11: "ttElevens", 12: "ttTwelves"}
 items = {d: [] for d in ["ttTwoFiveTen", "ttThreeFourEight", "ttSixSevenNine", "ttElevenTwelve", "ttDivide", "ttStories"]}
+# Every stem is unique across the whole bank: no question comes round twice,
+# in a check or a drill.
 stems = set()
-check4_stems = set()
 
 
 def count_list(t, m):
@@ -66,11 +67,8 @@ def diff(a, b, bump=0):
 
 
 def add(domain, test, stem, explanation, difficulty, basics, skill, answer=None, options=None, correct=None):
-    # Check 4 is held out of every drill, so it only has to be unique within
-    # itself; every other stem is unique across the bank.
-    seen = check4_stems if test == 4 else stems
-    assert stem not in seen, stem
-    seen.add(stem)
+    assert stem not in stems, stem
+    stems.add(stem)
     q = {"domain": domain, "test": test, "skill": skill, "difficulty": difficulty}
     if options is None:
         q.update({"format": "numeric", "basics": basics, "stem": stem, "numeric": {"answers": [str(answer)], "tolerance": 0, "wholeNumber": True}})
@@ -87,7 +85,12 @@ def fact(test, t, m, used, show=None):
         return False
     a, b = show or ((m, t) if rng.random() < 0.5 else (t, m))
     stem = f"{a} × {b} = ?"
-    if stem in (check4_stems if test == 4 else stems):
+    if stem in stems and test == 4 and show is None:
+        # Check 4 comes last: when one way round is already asked elsewhere,
+        # ask it the other way round (allowed across checks; never both in one).
+        a, b = b, a
+        stem = f"{a} × {b} = ?"
+    if stem in stems:
         return False
     used.add(frozenset((t, m)))
     add(DOMAIN_OF[t], test, stem, f"{a} × {b} = {t * m}. {how(t, m)}", diff(t, m), BASICS_OF[t], f"{t} times table", answer=t * m)
@@ -117,11 +120,14 @@ check3 = set()
 draw(3, FULL_ORDER, M, check3)
 
 # Drill-only items (test 0).
+COUNT_BASICS = {11: "ttCountInElevens", 12: "ttDozens"}
+
+
 def count_on(t, start):
     seq = [t * k for k in range(start, start + 3)]
     nxt = t * (start + 3)
     add(DOMAIN_OF[t], 0, f"Count in {t}s. What comes next? {', '.join(map(str, seq))}, ?",
-        f"Add {t} each time: {seq[-1]} + {t} = {nxt}.", 1 if t in (2, 5, 10, 3, 4) else 2, BASICS_OF[t], f"Counting in {t}s", answer=nxt)
+        f"Add {t} each time: {seq[-1]} + {t} = {nxt}.", 1 if t in (2, 5, 10, 3, 4) else 2, COUNT_BASICS.get(t, BASICS_OF[t]), f"Counting in {t}s", answer=nxt)
 
 
 def missing(t, m, left):
@@ -175,11 +181,11 @@ for t, m in [(3, 9), (4, 6), (8, 7), (3, 12), (8, 11)]:
 # 6, 7 and 9 (20)
 count_on(6, 3); count_on(7, 2); count_on(9, 4)
 missing(6, 8, True); missing(7, 6, False); missing(9, 7, True); missing(7, 9, True); missing(6, 12, False)
-for t, m, wrong, why in [(7, 8, ["54", "48", "64"], "Split 7 into 5 and 2: 40 + 16 = 56."),
-                         (9, 6, ["56", "45", "63"], "60 − 6 = 54. Check: 5 + 4 = 9.")]:
+for t, m, wrong, why in [(7, 8, ["54", "48", "64"], "Start from a fact you know: 7 × 7 = 49. 8 lots of 7 is one more 7: 49 + 7 = 56."),
+                         (9, 6, ["56", "45", "63"], "Start from a fact you know: 5 × 9 = 45. 6 lots of 9 is one more 9: 45 + 9 = 54.")]:
     s = next(slot)
     opts, c = rotate(str(t * m), wrong, s)
-    add("ttSixSevenNine", 0, f"Which is the answer to {m} × {t}?", f"{m} × {t} = {t * m}. {why}", 3, BASICS_OF[t], f"{t} times table", options=opts, correct=c)
+    add("ttSixSevenNine", 0, f"Which is the answer to {m} × {t}?", f"{m} × {t} = {t * m}. {why}", 3, "ttNearFacts", "Using a fact you know", options=opts, correct=c)
 for t, m in [(6, 4), (6, 7), (6, 9), (7, 3), (7, 7), (7, 12), (9, 3), (9, 9), (9, 11), (6, 11)]:
     drill_fact(t, m)
 
@@ -193,7 +199,12 @@ for t, m in [(11, 4), (11, 9), (11, 11), (11, 3), (11, 8), (12, 3), (12, 7), (11
 # Dividing (20): 10 plain, 4 "how many", 2 fact families, 4 sharing.
 for p, d in [(14, 2), (35, 5), (70, 10), (18, 3), (28, 4), (40, 8), (42, 6), (63, 7), (36, 9), (48, 12)]:
     q = p // d
-    add("ttDivide", 0, f"{p} ÷ {d} = ?", f"{q} × {d} = {p}, so {p} ÷ {d} = {q}.", diff(q, d), "ttFactFamilies", "Dividing", answer=q)
+    if d == 2:
+        add("ttDivide", 0, f"{p} ÷ {d} = ?", f"÷ 2 means halve it. Half of {p} is {q}. Check: double {q} is {p}.", diff(q, d), "ttHalving", "Halving", answer=q)
+    elif d == 10:
+        add("ttDivide", 0, f"{p} ÷ {d} = ?", f"When you divide by 10, the digits move one place to the right: {p} becomes {q}. Check: {q} × 10 = {p}.", diff(q, d), "ttDivideTens", "Dividing by 10", answer=q)
+    else:
+        add("ttDivide", 0, f"{p} ÷ {d} = ?", f"{q} × {d} = {p}, so {p} ÷ {d} = {q}.", diff(q, d), "ttFactFamilies", "Dividing", answer=q)
 for p, d in [(25, 5), (16, 4), (24, 8), (45, 9)]:
     q = p // d
     add("ttDivide", 0, f"How many {d}s make {p}?", f"{q} × {d} = {p}, so {q} lots of {d} make {p}.", diff(q, d), "ttFactFamilies", "Dividing", answer=q)
@@ -228,8 +239,18 @@ STORIES = [
     ("A car has 4 wheels. Jack counts 24 wheels. How many cars are there?", 6, "How many 4s make 24? 6 × 4 = 24, so there are 6 cars.", 3),
     ("Mum shares 18 grapes equally between 3 bowls. How many grapes go in each bowl?", 6, "18 ÷ 3 = 6, because 6 × 3 = 18.", 2),
 ]
+def story_basics(text, ans):
+    if "p " in text.replace("?", " ") or "pence" in text:
+        return "ttStoryMoney"
+    if "row" in text or "bench" in text:
+        return "ttStoryRows"
+    if "How many cars" in text or "How many teams" in text:
+        return "ttStoryGroups"
+    return "ttStoryWords"
+
+
 for text, ans, why, d in STORIES:
-    add("ttStories", 0, text, why, d, "ttStoryWords", "Word problems", answer=ans)
+    add("ttStories", 0, text, why, d, story_basics(text, ans), "Word problems", answer=ans)
 
 # Tests 1 and 2 last, so the hand-picked drill facts keep their order.
 # Test 1, the Year 2 check: 2s, 5s and 10s only, from 1 lot to 12 lots as
@@ -237,8 +258,47 @@ for text, ans, why, d in STORIES:
 draw(1, [2] * 9 + [5] * 8 + [10] * 8, list(range(1, 13)), set())
 # Test 2, Year 3: mostly 3s, 4s and 8s with some Year 2 revision.
 draw(2, [2, 2, 5, 5, 5, 10, 10, 2] + [3] * 6 + [4] * 5 + [8] * 6, M, set())
-# Check 4 last: no fact from Check 3.
-draw(4, FULL_ORDER, M, set(check3))
+# Check 4 last: no fact from Check 3, and no question asked anywhere else in
+# the bank (a fact may come back the other way round, since the MTC rule is
+# only that one check never has a fact and its reverse). Facts are scarce by
+# now, so each item is matched to a free fact (Kuhn's augmenting paths), its
+# own table first, else another table of the same curriculum step.
+def free_shows(t, m):
+    return [(a, b) for a, b in {(m, t), (t, m)} if f"{a} × {b} = ?" not in stems]
+
+
+def draw_last(test, plan, mults, banned):
+    cands = []
+    for t in plan:
+        own, other = [], []
+        for tt in [t] + [x for x in DOMAIN_OF if DOMAIN_OF[x] == DOMAIN_OF[t] and x != t]:
+            for m in rng.sample(mults, len(mults)):
+                if frozenset((tt, m)) not in banned and free_shows(tt, m):
+                    (own if tt == t else other).append((tt, m))
+        cands.append(own + other)
+    owner = {}  # fact -> slot
+
+    def augment(i, seen):
+        for tt, m in cands[i]:
+            key = frozenset((tt, m))
+            if key in seen:
+                continue
+            seen.add(key)
+            if key not in owner or augment(owner[key][0], seen):
+                owner[key] = (i, tt, m)
+                return True
+        return False
+
+    for i in range(len(plan)):
+        if not augment(i, set()):
+            raise RuntimeError(f"ran out of facts for {plan[i]} in test {test}")
+    used = set()
+    for i, tt, m in sorted(owner.values()):
+        shows = sorted(free_shows(tt, m))
+        assert fact(test, tt, m, used, rng.choice(shows))
+
+
+draw_last(4, FULL_ORDER, M, set(check3))
 
 counts = {}
 for d, qs in items.items():

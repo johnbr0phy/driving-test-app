@@ -2137,7 +2137,6 @@
     "skill": "Changing the mean",
     "difficulty": 2,
     "format": "numeric",
-    "basics": "meanMedian",
     "stem": "The mean of 8 numbers is 14. The number 22 is removed. Work out the mean of the 7 numbers left, to 1 decimal place. Type the number only.",
     "numeric": {
       "answers": [
@@ -2481,7 +2480,6 @@
     "skill": "Median",
     "difficulty": 1,
     "format": "numeric",
-    "basics": "meanMedian",
     "stem": "Find the median of 7, 3, 9, 4, 12, 6. Type the number only.",
     "numeric": {
       "answers": [
@@ -2587,7 +2585,6 @@
     "skill": "Mean: missing value",
     "difficulty": 1,
     "format": "numeric",
-    "basics": "meanMedian",
     "stem": "The mean of four numbers is 9. Three of the numbers are 6, 8 and 11. What is the fourth number? Type the number only.",
     "numeric": {
       "answers": [
@@ -2788,7 +2785,6 @@
     "skill": "Estimating the mean from grouped data",
     "difficulty": 2,
     "format": "numeric",
-    "basics": "meanMedian",
     "passage": "| Height, $h$ cm | Frequency |\n|---|---|\n| $0 < h \\le 4$ | 3 |\n| $4 < h \\le 8$ | 5 |\n| $8 < h \\le 12$ | 2 |",
     "stem": "The table shows the heights of 10 seedlings. Work out an estimate of the mean height, in cm. Type the number only.",
     "numeric": {

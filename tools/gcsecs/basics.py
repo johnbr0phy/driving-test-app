@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Write data/v2/basics/gcsecs.json: the six GCSE Computer Science Basics skills.
+"""Write data/v2/basics/gcsecs.json: the GCSE Computer Science Basics skills.
 Usage (repo root): python3 -I tools/gcsecs/basics.py"""
 import json
 
@@ -185,6 +185,70 @@ SKILLS = [
   "questions": [
     {"stem": "Which translator turns the whole program into machine code before it is run?", "options": ["A compiler", "An interpreter", "An assembler"], "answer": 0, "why": "A compiler translates everything at once. An interpreter goes line by line, and an assembler is for assembly language."},
     {"stem": "Which of these is a low-level language?", "options": ["Assembly language", "Python", "Java"], "answer": 0, "why": "Assembly language is close to machine code and is written for one type of processor. Python and Java are high-level languages."},
+  ],
+},
+{
+  "id": "csArrayIndex", "name": "Counting from 0", "sub": "Array and string positions start at 0",
+  "rule": "In GCSE pseudocode the first item in an array is at index 0, not 1, and the first character of a string is at position 0. So an array of 5 items uses indexes 0 to 4, and the last index is always one less than the length. A two-dimensional array is read as grid[row][column], and both start at 0.",
+  "trick": "Write the index numbers 0, 1, 2, 3 above the items before you look anything up. To find item n counting normally, use index n − 1.",
+  "examples": [
+    {"kind": "eg", "text": "pets ← [\"cat\", \"dog\", \"fish\"]. OUTPUT pets[1]", "note": "Index 0 is cat, so index 1 is dog"},
+    {"kind": "eg", "text": "word ← \"PLANET\". The character at position 2", "note": "P is 0, L is 1, so A is 2"},
+  ],
+  "table": {"head": ["Index", "0", "1", "2", "3"], "rows": [["Item", "red", "blue", "green", "pink"]]},
+  "another": {"text": "Think of the floors in a UK lift. You get in on the ground floor, which is 0, and the next one up is floor 1. Arrays count the same way: the first item sits on floor 0.", "example": "Ground floor: 0\nOne floor up: 1\nThe 4th floor you visit: 3"},
+  "walkthrough": {"board": "colours ← [\"red\", \"blue\", \"green\", \"pink\"]. OUTPUT colours[2], then OUTPUT colours[LEN(colours) − 1]", "kind": "text", "steps": [
+    say("Number the items from 0: red is 0, blue is 1, green is 2, pink is 3.", "0 red, 1 blue, 2 green, 3 pink"),
+    ask("What is colours[2]?", ["green", "blue", "pink"], "colours[2] = green", hint="Count from 0: red, blue, green.", then="Index 2 is the third item."),
+    ask("LEN(colours) is the number of items. What is it?", ["4", "3", "5"], "LEN(colours) = 4"),
+    ask("So LEN(colours) − 1 is 3. What is colours[3]?", ["pink", "green", "an error"], "colours[3] = pink", then="The last index is always the length minus 1."),
+    ask("What would colours[4] do?", ["Cause an error: there is no index 4", "Output red", "Output pink"], "colours[4]: out of range", then="Four items use indexes 0 to 3, so 4 is past the end."),
+  ]},
+  "questions": [
+    {"stem": "days ← [\"Mon\", \"Tue\", \"Wed\", \"Thu\", \"Fri\"]. What is days[3]?", "options": ["Thu", "Wed", "Fri"], "answer": 0, "why": "Mon is 0, Tue is 1, Wed is 2, so index 3 is Thu."},
+    {"stem": "An array holds 8 items. What is the index of the last item?", "options": ["7", "8", "9"], "answer": 0, "why": "Indexes start at 0, so 8 items use 0 to 7."},
+  ],
+},
+{
+  "id": "csHighLowLevel", "name": "High-level and low-level", "sub": "Written for people or close to the CPU",
+  "rule": "A high-level language such as Python uses English-like words, so it is easier to read, write and debug, and the same program can run on different types of computer once it is translated. A low-level language (machine code or assembly language) is close to what the CPU does: it is written for one type of processor, it is hard to read, but it gives direct control of the hardware and memory and can run very fast in very little memory.",
+  "trick": "High-level is good for people. Low-level is good for the machine. Ask which one the question cares about.",
+  "examples": [
+    {"kind": "eg", "text": "A school writes an app for laptops and tablets", "note": "High-level: quicker to write and works on both types of computer"},
+    {"kind": "eg", "text": "Code for a tiny chip in a washing machine with very little memory", "note": "Low-level: small, fast and controls the hardware directly"},
+  ],
+  "another": {"text": "A high-level language is like giving a taxi driver an address. A low-level language is like telling them every single turn of the wheel yourself. The second is harder, but you control exactly what happens.", "example": "\"Take me to the station\": high-level\n\"Left, 20 metres, right...\": low-level"},
+  "walkthrough": {"board": "Two jobs: (1) a quiz app for phones and laptops, (2) code for a heart monitor chip that must react instantly and has tiny memory.", "kind": "text", "steps": [
+    say("High-level languages are easier for people. Low-level languages give control of the hardware."),
+    ask("For the quiz app, what matters most?", ["It is quick to write and runs on different devices", "It controls one chip directly"], "Job 1 needs: easy to write, portable", hint="Phones and laptops have different processors."),
+    ask("So which kind of language suits job 1?", ["High-level", "Low-level"], "Job 1: high-level", then="Once translated, the same high-level code can run on different machines."),
+    ask("The heart monitor has tiny memory and must be very fast. Which suits it?", ["Low-level", "High-level"], "Job 2: low-level", then="Low-level code can be small and fast and talks to the hardware directly."),
+    ask("What is the main downside of low-level code?", ["It is hard to read and only works on one type of processor", "It cannot be translated"], "Downside: hard to read, not portable"),
+  ]},
+  "questions": [
+    {"stem": "Why is a high-level language easier to debug?", "options": ["It uses English-like words that people can read", "It runs directly on the CPU", "It uses less memory"], "answer": 0, "why": "High-level code is written for people, so mistakes are easier to spot. It still has to be translated before the CPU can run it."},
+    {"stem": "Why might a programmer choose a low-level language?", "options": ["To control the hardware directly", "So the program runs on any computer", "So the code is shorter to write"], "answer": 0, "why": "Low-level code gives direct control of the processor and memory. It only works on one type of processor and takes longer to write."},
+  ],
+},
+{
+  "id": "csIDE", "name": "IDE tools", "sub": "Editor, error messages, breakpoints",
+  "rule": "An IDE (integrated development environment) is one program with the tools for writing code. The editor has line numbers, colour-coded keywords (syntax highlighting) and auto-indent. Error diagnostics point to the line with a mistake. A run-time environment lets you run and test the program. Debugging tools include breakpoints, which pause the program at a chosen line, stepping, which runs one line at a time, and watching variables to see their values.",
+  "trick": "Writing the code: editor tools. Finding the mistake: error messages, breakpoints, stepping and watched variables.",
+  "examples": [
+    {"kind": "eg", "text": "The keyword IF turns blue as you type it", "note": "Syntax highlighting, part of the editor"},
+    {"kind": "eg", "text": "The program stops at line 12 so you can check total", "note": "A breakpoint"},
+  ],
+  "another": {"text": "An IDE is like a pencil case made for coding. The pen writes (the editor), the ruler checks your lines (error messages), and the magnifying glass lets you look closely at one bit (the debugger).", "example": "Write: editor\nCheck: error messages\nLook closely: breakpoint"},
+  "walkthrough": {"board": "A program gives the wrong total. The programmer wants to stop it at line 8 and see what total holds.", "kind": "text", "steps": [
+    say("An IDE has tools for writing code and tools for finding mistakes."),
+    ask("Which tool pauses the program at line 8?", ["A breakpoint", "Syntax highlighting", "Auto-indent"], "Pause at line 8: breakpoint", hint="Which tool is about stopping the program?"),
+    ask("While it is paused, how can they see the value of total?", ["Watch the variable", "Turn on line numbers"], "See total: watch the variable"),
+    ask("They want to run the next lines one at a time. What is that called?", ["Stepping", "Compiling"], "One line at a time: stepping"),
+    ask("A missing bracket is underlined in red before the program runs. Which tool did that?", ["Error diagnostics", "A breakpoint"], "Red underline: error diagnostics", then="Error diagnostics spot mistakes and say which line they are on."),
+  ]},
+  "questions": [
+    {"stem": "Which IDE feature colours keywords so code is easier to read?", "options": ["Syntax highlighting", "A breakpoint", "A translator"], "answer": 0, "why": "Syntax highlighting is an editor tool. A breakpoint pauses a running program."},
+    {"stem": "What does stepping through a program do?", "options": ["Runs it one line at a time", "Runs it faster", "Deletes unused lines"], "answer": 0, "why": "Stepping runs one line at a time so you can follow what the program does."},
   ],
 },
 ]

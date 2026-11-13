@@ -55,8 +55,7 @@ ITEMS = [
     R("cs", 3, "Words in context",
       "The review panel's report on the city's after-school tutoring program was notably ______. It stated the program's weaknesses plainly, including uneven attendance and a shortage of trained tutors, but it stopped short of recommending that the program end, observing that its long-term benefits had not yet been studied.",
       WIC, ["measured", "scathing", "evasive", "celebratory"],
-      "The report names the problems plainly but holds back from a harsh conclusion because the evidence is incomplete, which is a measured, or restrained, tone. Scathing would mean harshly critical, evasive conflicts with stating weaknesses plainly, and the report does not praise the program.",
-      "toneWords"),
+      "The report names the problems plainly but holds back from a harsh conclusion because the evidence is incomplete, which is a measured, or restrained, tone. Scathing would mean harshly critical, evasive conflicts with stating weaknesses plainly, and the report does not praise the program.", "wordsInContext"),
 
     # Information and Ideas
     R("ii", 1, "Central ideas and details",
@@ -152,8 +151,7 @@ ITEMS = [
     R("sec", 3, "Boundaries",
       "The ecologists needed only three tools for their survey of the meadow's ______ a tape measure, a field guide, and a notebook.",
       SEC, ["wildflowers:", "wildflowers;", "wildflowers, and", "wildflowers"],
-      "A colon correctly introduces a list after a complete sentence. A semicolon must join two complete sentences, \", and\" would need another clause after it, and no punctuation runs the list into the sentence without a break.",
-      "colons"),
+      "A colon correctly introduces a list after a complete sentence. A semicolon must join two complete sentences, \", and\" would need another clause after it, and no punctuation runs the list into the sentence without a break."),
     R("sec", 3, "Form, structure, and sense",
       "Having studied the night sky from her backyard for more than twenty years, ______",
       SEC,

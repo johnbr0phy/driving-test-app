@@ -3139,15 +3139,15 @@
     "skill": "Spelling",
     "stem": "Which word is spelled correctly?",
     "options": [
-      "maintenance",
-      "maintanance",
-      "maintainance",
-      "maintenence"
+      "personnel",
+      "pursonnel",
+      "personell",
+      "personel"
     ],
     "correct": [
       0
     ],
-    "explanation": "The verb is maintain, but the noun drops the i: main-te-nance."
+    "explanation": "Personnel (the staff of an office) has double n and ends in -el; personal, with one n, means private."
   },
   {
     "id": "PHCSE-T2-049",

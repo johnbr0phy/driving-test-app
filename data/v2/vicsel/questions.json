@@ -1657,7 +1657,6 @@
       "skill": "Ordering",
       "difficulty": 2,
       "format": "single",
-      "basics": "orderingClues",
       "stem": "Five friends ran a race. Ari finished ahead of Bo. Cy finished after Bo but before Dev. Eli finished ahead of Ari. There were no ties. Who finished third?",
       "options": [
         "Ari",
@@ -1701,7 +1700,6 @@
       "skill": "Seating",
       "difficulty": 2,
       "format": "single",
-      "basics": "orderingClues",
       "stem": "Four friends sit in a row of four seats. Tia sits at one end. Uma sits next to Tia. Vic does not sit next to Uma. Who sits next to Vic?",
       "options": [
         "Uma only",
@@ -3011,7 +3009,6 @@
       "skill": "Comparing texts",
       "difficulty": 1,
       "format": "single",
-      "basics": "crossText",
       "stimulusId": "VICSEL-R2-D",
       "stem": "What do the two writers disagree about?",
       "options": [
@@ -3057,7 +3054,6 @@
       "skill": "Comparing texts",
       "difficulty": 2,
       "format": "single",
-      "basics": "crossText",
       "stimulusId": "VICSEL-R2-D",
       "stem": "How would the student most likely answer the resident's worry about extra cars?",
       "options": [
@@ -3103,7 +3099,6 @@
       "skill": "Comparing texts",
       "difficulty": 3,
       "format": "single",
-      "basics": "crossText",
       "stimulusId": "VICSEL-R2-D",
       "stem": "The resident values the reserve because it is calm. Which point in the student's speech gives a different view of the reserve itself?",
       "options": [
@@ -3233,7 +3228,6 @@
       "skill": "Ordering",
       "difficulty": 1,
       "format": "single",
-      "basics": "orderingClues",
       "stem": "Apton is north of Brill. Corley is south of Brill. Dunmore is north of Apton. Which town is furthest south?",
       "options": [
         "Brill",
@@ -4325,7 +4319,6 @@
       "skill": "Ordering",
       "difficulty": 1,
       "format": "single",
-      "basics": "orderingClues",
       "stem": "Lin is taller than Max. Max is taller than Nia. Oli is shorter than Nia. Who is the shortest?",
       "options": [
         "Nia",

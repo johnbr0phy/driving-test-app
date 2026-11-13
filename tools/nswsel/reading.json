@@ -185,7 +185,6 @@
     "skill": "Structure",
     "difficulty": 2,
     "format": "single",
-    "basics": "textStructure",
     "stimulusId": "NSWS-R1-POEM",
     "stem": "What is the effect of the repetition in \"And then it fell. It fell and fell\"?",
     "options": [
@@ -245,7 +244,6 @@
     "skill": "Fact and opinion",
     "difficulty": 2,
     "format": "single",
-    "basics": "factOpinion",
     "stimulusId": "NSWS-R1-ART",
     "stem": "Which of these ideas from the article is an opinion rather than a fact?",
     "options": [
@@ -305,7 +303,7 @@
     "skill": "Text structure",
     "difficulty": 3,
     "format": "single",
-    "basics": "textStructure",
+    "basics": "authorPurpose",
     "stimulusId": "NSWS-R1-ART",
     "stem": "What is the main purpose of the paragraph beginning \"Of course, trees are not perfect neighbours\"?",
     "options": [
@@ -938,7 +936,6 @@
     "skill": "Structure",
     "difficulty": 2,
     "format": "single",
-    "basics": "textStructure",
     "stimulusId": "NSWS-R2-POEM",
     "stem": "What is the effect of the short sentences \"They do not race. They do not rush.\"?",
     "options": [
@@ -1038,7 +1035,6 @@
     "skill": "Fact and opinion",
     "difficulty": 2,
     "format": "single",
-    "basics": "factOpinion",
     "stimulusId": "NSWS-R2-ART",
     "stem": "Which of these ideas from the article is an opinion rather than a fact?",
     "options": [
@@ -1098,7 +1094,6 @@
     "skill": "Text structure",
     "difficulty": 3,
     "format": "single",
-    "basics": "textStructure",
     "stimulusId": "NSWS-R2-ART",
     "stem": "Which best describes how the article is organised?",
     "options": [

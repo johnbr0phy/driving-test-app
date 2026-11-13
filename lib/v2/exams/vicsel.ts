@@ -75,8 +75,8 @@ export const VICSEL: ExamV2Config = {
   drills: [
     { key: "maths", name: "Mathematics", section: "mathsqr", domains: ["vicselMaths"], blurb: "Integers, fractions, percentages, ratio, equations, area, angles and data, without a calculator.", basics: ["negativeNumbers", "fractionOps", "percents", "ratios", "solveX", "areaPerimeter", "triangleAngles", "meanMedian"] },
     { key: "quant", name: "Quantitative Reasoning", section: "mathsqr", domains: ["vicselQuant"], blurb: "Number series, number machines, symbol rules, balances, ages, coins and counting puzzles.", basics: ["orderOfOperations", "substitution", "wordProblems", "elevenplusNumberSeries"] },
-    { key: "reading", name: "Reading", section: "readingvr", domains: ["vicselReading"], blurb: "Stories, articles, poems and opinion pieces: main idea, detail, inference, word meaning and the writer's purpose.", basics: ["mainIdea", "findingDetail", "inference", "wordsInContext", "toneWords", "authorPurpose", "textStructure", "crossText"] },
-    { key: "verbal", name: "Verbal Reasoning", section: "readingvr", domains: ["vicselVerbal"], blurb: "Analogies, word meanings and opposites, odd one out, letter series, codes and short logic problems.", basics: ["synonyms", "wordParts", "logicalCompletion", "mustBeTrue", "orderingClues"] },
+    { key: "reading", name: "Reading", section: "readingvr", domains: ["vicselReading"], blurb: "Stories, articles, poems and opinion pieces: main idea, detail, inference, word meaning and the writer's purpose.", basics: ["mainIdea", "findingDetail", "inference", "wordsInContext", "toneWords", "authorPurpose", "textStructure"] },
+    { key: "verbal", name: "Verbal Reasoning", section: "readingvr", domains: ["vicselVerbal"], blurb: "Analogies, word meanings and opposites, odd one out, letter series, codes and short logic problems.", basics: ["synonyms", "wordParts", "logicalCompletion", "mustBeTrue"] },
   ],
   composite: { name: "Overall score", min: 0, max: 100, combine: averageOfSections },
   defaultGoal: 75,

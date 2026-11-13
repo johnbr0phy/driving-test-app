@@ -531,6 +531,11 @@
   "https://services.google.com/fh/files/misc/cloud_digital_leader_exam_guide_english.pdf",
   "https://cloud.google.com/learn/certification/cloud-digital-leader"
  ],
+ "gcppca": [
+  "https://services.google.com/fh/files/misc/professional_cloud_architect_exam_guide_english.pdf",
+  "https://docs.cloud.google.com/architecture/framework/operational-excellence",
+  "https://cloud.google.com/learn/certification/cloud-architect"
+ ],
  "gcsecs": [
   "https://www.gov.uk/government/publications/gcse-computer-science/gcse-subject-content-for-computer-science",
   "https://www.aqa.org.uk/subjects/computer-science/gcse/computer-science-8525/specification/scheme-of-assessment",

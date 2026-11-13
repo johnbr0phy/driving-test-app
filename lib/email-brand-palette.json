@@ -155,6 +155,7 @@
   "psm": ["#5a0bd0","#f3edfd","#360d73","#e1d9ec"],
   "capm": ["#331d72","#f2effb","#170f2e","#ded9ec"],
   "gcdl": ["#0932a5","#edf1fd","#081a49","#d9deec"],
+  "gcppca": ["#4b2460","#f6f1f9","#22122b","#e5dcea"],
   "ssccgl": ["#5913aa","#f4edfd","#2e0f52","#e2d9ec"],
   "rrbntpc": ["#b03b4e","#faf0f1","#642b34","#ecd9dd"],
   "ctet": ["#81380e","#fdf3ed","#341909","#ece0d9"],

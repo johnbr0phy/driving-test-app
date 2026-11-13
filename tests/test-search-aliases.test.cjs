@@ -16,6 +16,11 @@ const CASES = [
   ["aafcs", "US", "aafcs"],
   ["hnfs", "US", "aafcs"],
   ["hospitality nutrition and food science", "US", "aafcs"],
+  ["gcp professional p", "SG", "gcppca"],
+  ["gcp professional", "SG", "gcppca"],
+  ["gcp architect", "US", "gcppca"],
+  ["professional cloud architect", "US", "gcppca"],
+  ["pca google", "IN", "gcppca"],
 ];
 
 for (const [q, region, id] of CASES) {

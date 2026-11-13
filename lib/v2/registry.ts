@@ -49,6 +49,7 @@ import { ITIL } from "./exams/itil";
 import { PSM } from "./exams/psm";
 import { CAPM } from "./exams/capm";
 import { GCDL } from "./exams/gcdl";
+import { GCPPCA } from "./exams/gcppca";
 import { SSCCGL } from "./exams/ssccgl";
 import { RRBNTPC } from "./exams/rrbntpc";
 import { CTET } from "./exams/ctet";
@@ -98,7 +99,7 @@ import { AISSEE } from "./exams/aissee";
 import { APCALCAB } from "./exams/apcalcab";
 import { APHUG } from "./exams/aphug";
 
-export const EXAMS_V2: ExamV2Config[] = [GED, PRAXIS, SAT, PSAT, ACT, MAPGROWTH, APPSYCH, APUSH, APGOV, APWORLD, APHUG, APLANG, APBIO, APCALCAB, APITALIAN, GRE, GMAT, SEHP, TEAS, HESI, ASVAB, ACCUPLACER, NCLEX, NCLEXPN, REXPN, UKNMC, EMT, PARAMEDIC, FAAPVT, SECPLUS, CYSA, CISSP, NETPLUS, APLUS, AWS, AWSSAA, AZ900, GCDL, CCNA, PMP, CAPM, PSM, ITIL, UPSCSE, SSCCGL, SSCCHSL, SSCCPO, SSCGD, SSCMTS, RRBNTPC, RRBGROUPD, RRBALP, RPFCONST, UPPOLICE, DELHIPOLICE, BIHARPOLICE, RAJPOLICE, MPPOLICE, IBPSPO, SBIPO, IBPSCLERK, SBICLERK, IBPSRRB, NDA, AGNIVEER, AGNIVEERVAYU, JEEMAIN, NEET, MHTCET, CUET, CTET, REET, UPTET, UGCNET, JNVST, AISSEE, JAMBENG, JAMBMATH, JAMBBIO, JAMBCHEM, JAMBPHYS, PHCSE, TIMESTABLES, KS2, ELEVENPLUS, GCSEMATHS, GCSEHIGHER, GCSESCIENCE, GCSECS, FSMATHS, OSSLT, EQAO9, NAPLAN7, NAPLAN, OCNSW, NSWSEL, VICSEL, HSCMATHS];
+export const EXAMS_V2: ExamV2Config[] = [GED, PRAXIS, SAT, PSAT, ACT, MAPGROWTH, APPSYCH, APUSH, APGOV, APWORLD, APHUG, APLANG, APBIO, APCALCAB, APITALIAN, GRE, GMAT, SEHP, TEAS, HESI, ASVAB, ACCUPLACER, NCLEX, NCLEXPN, REXPN, UKNMC, EMT, PARAMEDIC, FAAPVT, SECPLUS, CYSA, CISSP, NETPLUS, APLUS, AWS, AWSSAA, AZ900, GCDL, GCPPCA, CCNA, PMP, CAPM, PSM, ITIL, UPSCSE, SSCCGL, SSCCHSL, SSCCPO, SSCGD, SSCMTS, RRBNTPC, RRBGROUPD, RRBALP, RPFCONST, UPPOLICE, DELHIPOLICE, BIHARPOLICE, RAJPOLICE, MPPOLICE, IBPSPO, SBIPO, IBPSCLERK, SBICLERK, IBPSRRB, NDA, AGNIVEER, AGNIVEERVAYU, JEEMAIN, NEET, MHTCET, CUET, CTET, REET, UPTET, UGCNET, JNVST, AISSEE, JAMBENG, JAMBMATH, JAMBBIO, JAMBCHEM, JAMBPHYS, PHCSE, TIMESTABLES, KS2, ELEVENPLUS, GCSEMATHS, GCSEHIGHER, GCSESCIENCE, GCSECS, FSMATHS, OSSLT, EQAO9, NAPLAN7, NAPLAN, OCNSW, NSWSEL, VICSEL, HSCMATHS];
 
 /**
  * The light Premium tier on v2 exams (Nov 2026), the v1 rule carried over:
@@ -111,7 +112,7 @@ export const EXAMS_V2: ExamV2Config[] = [GED, PRAXIS, SAT, PSAT, ACT, MAPGROWTH,
 export const PREMIUM_V2_IDS: string[] = [
   "praxis", "gre", "gmat", "teas", "hesi", "asvab",
   "nclex", "nclexpn", "rexpn", "uknmc", "emt", "paramedic", "faapvt",
-  "secplus", "cysa", "cissp", "netplus", "aplus", "aws", "awssaa", "az900", "gcdl", "ccna",
+  "secplus", "cysa", "cissp", "netplus", "aplus", "aws", "awssaa", "az900", "gcdl", "gcppca", "ccna",
   "pmp", "capm", "psm", "itil",
   "upscse", "ssccgl", "sscchsl", "ssccpo", "sscgd", "sscmts", "rrbntpc", "rrbgroupd", "rrbalp", "rpfconst",
   "uppolice", "delhipolice", "biharpolice", "rajpolice", "mppolice",

@@ -82,16 +82,17 @@ export const MAPGROWTH: ExamV2Config = {
     mapLangGrammar: "Grammar and Usage",
     mapLangMechanics: "Mechanics",
   },
-  // One drill per NWEA instructional area, 20 exam-level items each.
+  // One drill per NWEA instructional area, 20 exam-level items each. No
+  // Basics skill opens two drills (a skill is learned once per exam).
   drillSize: 20,
   drills: [
     { key: "numbers", name: "Number and Operations", section: "math", domains: ["mapMathNBT"], blurb: "Place value, adding, subtracting, multiplying and dividing, decimals and fractions.", basics: ["rounding", "fractionConvert", "fractionOps", "decimals"] },
     { key: "algebra", name: "Operations and Algebraic Thinking", section: "math", domains: ["mapMathOA"], blurb: "Word problems, missing numbers, factors and multiples, patterns and expressions." },
     { key: "measurement", name: "Measurement and Data", section: "math", domains: ["mapMathMD"], blurb: "Time, money, units, area, perimeter, volume, angles and reading graphs.", basics: ["areaPerimeter", "readingTable", "unitConversion", "volume"] },
     { key: "geometry", name: "Geometry", section: "math", domains: ["mapMathGeo"], blurb: "Shapes and their sides and angles, lines, symmetry and the coordinate plane." },
-    { key: "literary", name: "Literary Text", section: "reading", domains: ["mapReadLit"], blurb: "Stories, fables, poems and plays: theme, characters, plot and point of view.", basics: ["inference", "sequenceEvents", "mainIdea", "toneWords"] },
+    { key: "literary", name: "Literary Text", section: "reading", domains: ["mapReadLit"], blurb: "Stories, fables, poems and plays: theme, characters, plot and point of view.", basics: ["inference", "sequenceEvents", "causeEffect", "ks2Retrieval"] },
     { key: "informational", name: "Informational Text", section: "reading", domains: ["mapReadInfo"], blurb: "Articles and how-to texts: main idea, details, text features and structure.", basics: ["mainIdea", "findingDetail", "authorPurpose", "textStructure"] },
-    { key: "vocabulary", name: "Vocabulary", section: "reading", domains: ["mapReadVocab"], blurb: "Context clues, prefixes, suffixes and roots, synonyms and figurative language.", basics: ["wordsInContext", "wordParts", "synonyms", "toneWords"] },
+    { key: "vocabulary", name: "Vocabulary", section: "reading", domains: ["mapReadVocab"], blurb: "Context clues, prefixes, suffixes and roots, synonyms and figurative language.", basics: ["wordsInContext", "wordParts", "synonyms", "ks2WordMeaning"] },
     { key: "writing", name: "Writing", section: "language", domains: ["mapLangWriting"], blurb: "Topic sentences, order, transitions, details that fit and precise words.", basics: ["topicSentences", "transitions", "preciseWords", "concision"] },
     { key: "grammar", name: "Grammar and Usage", section: "language", domains: ["mapLangGrammar"], blurb: "Nouns, pronouns, verb tenses, agreement and complete sentences.", basics: ["subjectVerb", "pronounCase", "verbTense", "commaSplices"] },
     { key: "mechanics", name: "Capitals, Punctuation and Spelling", section: "language", domains: ["mapLangMechanics"], blurb: "Capital letters, commas, apostrophes, quotation marks and tricky spellings.", basics: ["apostrophes", "itsIts", "commonlyConfused", "listIntroCommas"] },

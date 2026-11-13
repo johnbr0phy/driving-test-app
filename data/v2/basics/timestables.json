@@ -509,10 +509,10 @@
   },
   {
     "id": "ttDoubleDouble",
-    "name": "The 4 and 8 times tables",
-    "sub": "Double, double, double",
-    "rule": "× 4 means double and double again. × 8 means double three times.",
-    "trick": "7 × 4: double 7 is 14, double 14 is 28. For 7 × 8, double once more: 56.",
+    "name": "The 4 times table",
+    "sub": "Double, then double again",
+    "rule": "× 4 means double and double again. 7 × 4: double 7 is 14, double 14 is 28.",
+    "trick": "Stuck? Find × 2 first, then double that answer.",
     "examples": [
       {
         "kind": "eg",
@@ -521,13 +521,13 @@
       },
       {
         "kind": "eg",
-        "text": "6 × 8",
-        "note": "Double 6 is 12, then 24, then 48."
+        "text": "9 × 4",
+        "note": "Double 9 is 18. Double 18 is 36."
       }
     ],
     "another": {
-      "text": "You have 2 legs. A dog has 4 legs, double yours. A spider has 8 legs, double the dog's.",
-      "example": "You: 2 legs\nDog: 4 legs\nSpider: 8 legs"
+      "text": "You have 2 legs. A dog has 4 legs, double yours. So 3 dogs have double 6 legs: 12.",
+      "example": "You: 2 legs\nDog: 4 legs\n3 dogs: 12 legs"
     },
     "walkthrough": {
       "board": "7 × 4",
@@ -563,7 +563,7 @@
             "14"
           ],
           "answer": 0,
-          "then": "And for 7 × 8, double one more time: 28 + 28 = 56.",
+          "then": "Two doubles make × 4.",
           "hint": "14 is only one double. × 4 needs two.",
           "line": "7 × 4 = 28 ✓"
         }
@@ -581,14 +581,14 @@
         "why": "Double 5 is 10. Double 10 is 20."
       },
       {
-        "stem": "3 × 4 = 12. What is 3 × 8?",
+        "stem": "What is 8 × 4?",
         "options": [
-          "24",
+          "32",
           "16",
           "12"
         ],
         "answer": 0,
-        "why": "8 is double 4, so double the answer: 12 + 12 = 24."
+        "why": "Double 8 is 16. Double 16 is 32."
       }
     ]
   },

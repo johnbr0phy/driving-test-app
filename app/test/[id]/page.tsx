@@ -21,7 +21,7 @@ import { trackBeginCheckout, trackStatsEntry } from "@/lib/analytics";
 import { DMV_EXAM_ID } from "@/lib/classes";
 import { recordClassAnswer, recordClassTest } from "@/lib/classProgress";
 import { DMV_ROUTES } from "@/lib/examRoutes";
-import { paywallVariantForCheckout } from "@/lib/paywallTest";
+import { paywallHitForCheckout, paywallReturnForCheckout, paywallVariantForCheckout } from "@/lib/paywallTest";
 import { checkoutAttribution } from "@/lib/funnel";
 
 export default function TestPage() {
@@ -68,6 +68,8 @@ export default function TestPage() {
           returnUrl: window.location.origin,
           ...checkoutAttribution(),
           paywallVariant: paywallVariantForCheckout(),
+          paywallHit: paywallHitForCheckout(),
+          paywallReturn: paywallReturnForCheckout(),
           location: "practice_test_4",
         }),
       });

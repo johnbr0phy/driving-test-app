@@ -25,7 +25,7 @@ import { useTranslation } from "@/contexts/LanguageContext";
 import { trackBeginCheckout, trackPaywallDismissed, trackPaywallHit, trackPurchase, trackStateSelected, trackViewItem } from "@/lib/analytics";
 import { ClassBanner } from "@/components/exam/ClassBanner";
 import { ClassMissRecovery } from "@/components/exam/ClassMissRecovery";
-import { paywallVariantForCheckout } from "@/lib/paywallTest";
+import { paywallHitForCheckout, paywallReturnForCheckout, paywallVariantForCheckout } from "@/lib/paywallTest";
 import { checkoutAttribution } from "@/lib/funnel";
 
 function DashboardContent() {
@@ -237,6 +237,8 @@ function DashboardContent() {
           returnUrl: window.location.origin,
           ...checkoutAttribution(),
           paywallVariant: paywallVariantForCheckout(),
+          paywallHit: paywallHitForCheckout(),
+          paywallReturn: paywallReturnForCheckout(),
           location: paywallFeature,
         }),
       });

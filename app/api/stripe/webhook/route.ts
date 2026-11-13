@@ -138,6 +138,9 @@ export async function POST(request: NextRequest) {
         exam: checkoutExam,
         // The English paywall test's variant (lib/paywallTest.ts), when the buyer saw it.
         paywallVariant: session.metadata?.paywallVariant || null,
+        // And which paywall message (1 first visit, 2 second, 3 third on).
+        paywallHit: Number(session.metadata?.paywallHit) || null,
+        paywallReturn: session.metadata?.paywallReturn || null,
         // The buyer's first visit (lib/funnel.ts): channel and landing page.
         source: session.metadata?.source || null,
         landing: session.metadata?.landing || null,

@@ -6,7 +6,7 @@ import { examAnalyticsLabel, getExamById } from '@/lib/exams';
 import { isInternalEmail } from '@/lib/internal';
 import { shareDailyCounts } from '@/lib/shareCounts';
 import { paywallHitFeature, purchaseExam, purchaseLocationLabel } from '@/lib/purchaseAttribution';
-import { PAYWALL_TEST_ID, PAYWALL_VARIANTS } from '@/lib/paywallTestIds';
+import { PAYWALL_HITS, PAYWALL_RETURN_ARMS, PAYWALL_TEST_ID, PAYWALL_VARIANTS } from '@/lib/paywallTestIds';
 import { REGIONS, regionFromCountry, regionOfTest, type TestRegion } from '@/lib/region';
 import { paymentNetUsdCents } from '@/lib/pricing';
 
@@ -127,6 +127,10 @@ export interface OpportunitiesPayload {
     }[];
     /** Two-sided p-value for buyers per browser, john vs classic; null until both have buyers or views. */
     pValue: number | null;
+    /** Views and purchases by visit, return visits split by new message or the first one again; empty before the first counted view. */
+    hits: { id: string; label: string; views: number; purchases: number; revenueCents: number }[];
+    /** Two-sided p-value for purchases per view on return visits, new message vs the first again. */
+    returnPValue: number | null;
   } | null;
   /** John's "tell a friend" prompt (components/SharePromptStep), null before it is first shown. */
   sharePrompt: {
@@ -293,6 +297,8 @@ export async function buildOpportunities(
     exam: string;
     userId: string | null;
     paywallVariant?: string;
+    paywallHit?: number;
+    paywallReturn?: string;
     source?: string;
     landing?: string;
   };
@@ -326,6 +332,8 @@ export async function buildOpportunities(
       exam: typeof p.exam === 'string' ? p.exam : purchaseExam(location),
       userId,
       ...(typeof p.paywallVariant === 'string' && { paywallVariant: p.paywallVariant }),
+      ...(typeof p.paywallHit === 'number' && { paywallHit: p.paywallHit }),
+      ...(typeof p.paywallReturn === 'string' && { paywallReturn: p.paywallReturn }),
       ...(typeof p.source === 'string' && { source: p.source }),
       ...(typeof p.landing === 'string' && { landing: p.landing }),
     });
@@ -883,9 +891,15 @@ const PAYWALL_VARIANT_LABELS: Record<string, string> = {
   classic: 'Classic Premium',
 };
 
+const PAYWALL_HIT_LABELS: Record<number, string> = {
+  1: 'First visit',
+  2: 'Second visit',
+  3: 'Third visit on',
+};
+
 function buildPaywallTest(
   doc: Record<string, any> | undefined,
-  payments: { net: number; paywallVariant?: string }[],
+  payments: { net: number; paywallVariant?: string; paywallHit?: number; paywallReturn?: string }[],
 ): OpportunitiesPayload['paywallTest'] {
   if (!doc || doc.test !== PAYWALL_TEST_ID) return null;
   const stored = (doc.variants || {}) as Record<string, { views?: number; browsers?: number }>;
@@ -900,12 +914,40 @@ function buildPaywallTest(
       revenueCents: sold.reduce((n, p) => n + p.net, 0),
     };
   });
+  const hitViews = (doc.hits || {}) as Record<string, { views?: number; new?: number; same?: number }>;
+  const hitRow = (id: string, label: string, views: number, sold: { net: number }[]) => ({
+    id,
+    label,
+    views,
+    purchases: sold.length,
+    revenueCents: sold.reduce((n, p) => n + p.net, 0),
+  });
+  const hits = Object.keys(hitViews).length === 0 ? [] : PAYWALL_HITS.flatMap((hit) => {
+    const sold = payments.filter((p) => p.paywallHit === hit);
+    // A first visit shows the same message in both arms.
+    if (hit === 1) return [hitRow('1', PAYWALL_HIT_LABELS[1], hitViews[1]?.views ?? 0, sold)];
+    return PAYWALL_RETURN_ARMS.map((arm) =>
+      hitRow(
+        `${hit}-${arm}`,
+        `${PAYWALL_HIT_LABELS[hit]}, ${arm === 'new' ? 'new message' : 'first message again'}`,
+        hitViews[hit]?.[arm] ?? 0,
+        sold.filter((p) => p.paywallReturn === arm),
+      ));
+  });
+  const returning = (arm: string) => hits.filter((h) => h.id.endsWith(`-${arm}`));
+  const sum = (rows: typeof hits, key: 'views' | 'purchases') => rows.reduce((n, r) => n + r[key], 0);
+  const returnPValue = twoProportionP(
+    sum(returning('new'), 'purchases'), sum(returning('new'), 'views'),
+    sum(returning('same'), 'purchases'), sum(returning('same'), 'views'),
+  );
   const [a, b] = variants;
   return {
     test: PAYWALL_TEST_ID,
     since: typeof doc.since === 'string' ? doc.since : null,
     variants,
     pValue: twoProportionP(a.purchases, a.browsers, b.purchases, b.browsers),
+    hits,
+    returnPValue,
   };
 }
 

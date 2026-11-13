@@ -71,6 +71,14 @@
     {
       "path": "/api/cron/top-prepper",
       "schedule": "20 16 * * *"
+    },
+    {
+      "path": "/api/cron/watchdog",
+      "schedule": "30 11 * * *"
+    },
+    {
+      "path": "/api/cron/owner-digest",
+      "schedule": "10 12 * * 1"
     }
   ]
 }

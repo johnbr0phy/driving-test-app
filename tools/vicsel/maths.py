@@ -128,7 +128,7 @@ ITEMS = [
     (2, "Fractions and percentages", 1, "fractionOps", "What is 3/8 written as a percentage?",
      "37.5%", ["38%", "3.8%", "26.7%"],
      "3 ÷ 8 = 0.375, which is 37.5%. 38% is rounded, not exact."),
-    (2, "Financial maths", 2, "wordProblems", f"A phone plan costs {S}35 a month plus 10 cents for each text after the first 100. Lena sends 160 texts in a month. What is her bill?",
+    (2, "Financial maths", 2, None, f"A phone plan costs {S}35 a month plus 10 cents for each text after the first 100. Lena sends 160 texts in a month. What is her bill?",
      f"{S}41", [f"{S}51", f"{S}35.60", f"{S}47"],
      f"Only 160 − 100 = 60 texts are charged: 60 × 10 cents = {S}6. The bill is {S}35 + {S}6 = {S}41. {S}51 charges all 160 texts."),
 

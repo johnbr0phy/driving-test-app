@@ -265,7 +265,7 @@
     "skill": "Supporting a claim",
     "difficulty": 2,
     "format": "single",
-    "basics": "claimSupport",
+    "basics": "findingDetail",
     "stimulusId": "NSWS-R1-ART",
     "stem": "Which detail does the writer use to show that streets without trees are hotter?",
     "options": [
@@ -1078,7 +1078,7 @@
     "skill": "Supporting a claim",
     "difficulty": 2,
     "format": "single",
-    "basics": "claimSupport",
+    "basics": "findingDetail",
     "stimulusId": "NSWS-R2-ART",
     "stem": "Which detail supports the claim that \"Australia cannot solve the problem alone\"?",
     "options": [
@@ -1196,7 +1196,7 @@
     "skill": "Text cohesion",
     "difficulty": 2,
     "format": "single",
-    "basics": "textStructure",
+    "basics": "logicalCompletion",
     "stimulusId": "NSWS-R2-GAP",
     "stem": "Which sentence best fills Gap 3?",
     "options": [
@@ -1259,7 +1259,7 @@
     "skill": "Text cohesion",
     "difficulty": 3,
     "format": "single",
-    "basics": "textStructure",
+    "basics": "logicalCompletion",
     "stimulusId": "NSWS-R2-GAP",
     "stem": "Which sentence best fills Gap 6?",
     "options": [
@@ -1551,7 +1551,7 @@
     "skill": "Comparing texts",
     "difficulty": 2,
     "format": "single",
-    "basics": "claimSupport",
+    "basics": "crossText",
     "stimulusId": "NSWS-R2-PAIR",
     "stem": "Which text refers to the findings of researchers?",
     "options": [
@@ -1612,7 +1612,7 @@
     "skill": "Cause and effect",
     "difficulty": 2,
     "format": "single",
-    "basics": "causeEffect",
+    "basics": "findingDetail",
     "stimulusId": "NSWS-R0-NARR",
     "stem": "Why could the first roof design not be built?",
     "options": [
@@ -1672,7 +1672,7 @@
     "skill": "Sequence",
     "difficulty": 1,
     "format": "single",
-    "basics": "sequenceEvents",
+    "basics": "findingDetail",
     "stimulusId": "NSWS-R0-NARR",
     "stem": "Which of these events happened last?",
     "options": [

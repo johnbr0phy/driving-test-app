@@ -248,15 +248,15 @@
     "skill": "Nonlinear equations in one variable",
     "difficulty": 2,
     "format": "numeric",
-    "stem": "What is the solution to the equation $\\sqrt{2x + 7} = x - 4$?",
+    "stem": "What is the solution to the equation $\\sqrt{x + 10} = x - 2$?",
     "numeric": {
       "answers": [
-        "9"
+        "6"
       ],
       "tolerance": 0
     },
     "calculator": true,
-    "explanation": "Squaring both sides gives $2x + 7 = x^2 - 8x + 16$, so $x^2 - 10x + 9 = 0$ and $(x - 1)(x - 9) = 0$. Checking $x = 1$ in the original equation gives $\\sqrt{9} = 3$ on the left but $1 - 4 = -3$ on the right, so $1$ is extraneous. Checking $x = 9$ gives $\\sqrt{25} = 5$ and $9 - 4 = 5$, so the only solution is $9$. Squaring can introduce values that do not satisfy the original equation, so every candidate must be checked.",
+    "explanation": "Squaring both sides gives $x + 10 = x^2 - 4x + 4$, so $x^2 - 5x - 6 = 0$ and $(x - 6)(x + 1) = 0$. Checking $x = -1$ in the original equation gives $\\sqrt{9} = 3$ on the left but $-1 - 2 = -3$ on the right, so $-1$ is extraneous. Checking $x = 6$ gives $\\sqrt{16} = 4$ and $6 - 2 = 4$, so the only solution is $6$. Squaring can introduce values that do not satisfy the original equation, so every candidate must be checked.",
     "variant": "upper"
   },
   {
@@ -387,7 +387,7 @@
     "module": 2,
     "domain": "advancedMath",
     "skill": "Polynomial remainder and factors",
-    "basics": "functionNotation",
+    "basics": "substitution",
     "difficulty": 3,
     "format": "numeric",
     "stem": "The polynomial $p(x) = 2x^3 - 5x^2 + kx - 6$, where $k$ is a constant, has a remainder of $4$ when it is divided by $x - 2$. What is the value of $k$?",

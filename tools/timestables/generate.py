@@ -194,18 +194,26 @@ def missing(t, m, left):
 
 
 def drill_fact(t, m):
-    """A drill-only plain fact, in whichever order the checks have not used.
-    If both orders are taken, the next multiplier up (wrapping) stands in."""
-    # First choice: a fact not asked anywhere yet, so its other way round
-    # stays free for a check.
-    for fresh in (True, False):
+    """A drill-only plain fact, in whichever order no check has used. If both
+    orders are taken, the next multiplier up (wrapping) stands in, and when
+    the whole table is used up, another table of the same curriculum step,
+    and last a missing-number question on the same table."""
+    for tt in [t] + [x for x in DOMAIN_OF if DOMAIN_OF[x] == DOMAIN_OF[t] and x != t]:
         for k in range(len(M)):
             mm = M[(M.index(m) + k) % len(M)]
-            if fresh and len(free_shows(t, mm)) < len({(mm, t), (t, mm)}):
-                continue
-            for show in [(mm, t), (t, mm)]:
-                if fact(0, t, mm, set(), show):
+            for show in [(mm, tt), (tt, mm)]:
+                if fact(0, tt, mm, set(), show):
                     return
+    # Every plain fact of the step is asked somewhere already: practise the
+    # same table as a missing number instead.
+    for k in range(len(M)):
+        mm = M[(M.index(m) + k) % len(M)]
+        for left in (True, False):
+            p = t * mm
+            stem = f"□ × {t} = {p}. What number goes in the box?" if left else f"{t} × □ = {p}. What number goes in the box?"
+            if stem not in stems:
+                missing(t, mm, left)
+                return
     raise RuntimeError((t, m))
 
 

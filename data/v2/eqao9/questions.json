@@ -94,7 +94,7 @@
     "skill": "Simple interest",
     "difficulty": 1,
     "format": "numeric",
-    "basics": "percents",
+    "basics": "simpleInterest",
     "stem": "Maya puts \\$800 in a savings account that pays 3% simple interest per year. How much interest does she earn in 4 years? Type the number of dollars only.",
     "numeric": {
       "answers": [
@@ -1790,7 +1790,7 @@
     "skill": "Simple interest rate",
     "difficulty": 2,
     "format": "single",
-    "basics": "percents",
+    "basics": "simpleInterest",
     "stem": "A \\$500 loan for 2 years costs \\$70 in simple interest. What is the annual interest rate?",
     "options": [
       "7%",
@@ -2406,7 +2406,7 @@
     "skill": "Length of borrowing",
     "difficulty": 2,
     "format": "single",
-    "basics": "percents",
+    "basics": "simpleInterest",
     "stem": "Two loans of \\$10 000 both charge 6% simple interest a year. One lasts 3 years and the other 5 years. How much more interest does the 5-year loan cost?",
     "options": [
       "\\$1200",
@@ -3607,7 +3607,7 @@
     "skill": "Simple interest",
     "difficulty": 1,
     "format": "single",
-    "basics": "percents",
+    "basics": "simpleInterest",
     "stem": "How much simple interest does \\$1500 earn at 4% a year for 3 years?",
     "options": [
       "\\$60",
@@ -4302,7 +4302,7 @@
     "skill": "Length of borrowing",
     "difficulty": 2,
     "format": "single",
-    "basics": "percents",
+    "basics": "simpleInterest",
     "stem": "Kai borrows \\$2000 at 5% simple interest a year. How much more interest does he pay if he takes 4 years to repay instead of 2?",
     "options": [
       "\\$100",

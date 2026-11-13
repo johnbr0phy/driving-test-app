@@ -43,7 +43,7 @@
     "skill": "Must be true",
     "difficulty": 2,
     "format": "single",
-    "basics": "inference",
+    "basics": "mustBeTrue",
     "stem": "Everyone in the chess club is in Year 4. Some people in the chess club also play soccer.\n\nIf these statements are true, which one of these must also be true?",
     "options": [
       "Everyone in Year 4 is in the chess club.",
@@ -62,6 +62,7 @@
     "skill": "Find the mistake",
     "difficulty": 1,
     "format": "single",
+    "basics": "spotFlaw",
     "stem": "Zara: Every time I wear my blue socks, my netball team wins. So my blue socks make my team win.\n\nWhich statement shows the mistake Zara has made?",
     "options": [
       "Zara's team may have won even more games last season than this one.",
@@ -80,7 +81,7 @@
     "skill": "Whose reasoning is correct",
     "difficulty": 2,
     "format": "single",
-    "basics": "inference",
+    "basics": "mustBeTrue",
     "stem": "At the pool, you may only swim in the deep end if you have passed the swimming test. Everyone follows this rule.\n\nAli: Mei is swimming in the deep end, so she must have passed the swimming test.\nTran: Jo has passed the swimming test, so he must be swimming in the deep end.\n\nIf the information above is true, whose reasoning is correct?",
     "options": [
       "Ali only",
@@ -100,7 +101,7 @@
     "skill": "Find the assumption",
     "difficulty": 2,
     "format": "single",
-    "basics": "inference",
+    "basics": "findAssumption",
     "stem": "Mum: It is very cloudy this morning, so we should take umbrellas to the park.\n\nWhich of these has Mum assumed?",
     "options": [
       "Clouds mean that it might rain.",
@@ -119,7 +120,7 @@
     "skill": "Must be true",
     "difficulty": 1,
     "format": "single",
-    "basics": "inference",
+    "basics": "mustBeTrue",
     "stem": "At Kangaroo Creek School, students must wear a hat when they play outside in Terms 1 and 4. Everyone follows the rule. It is Term 4, and Priya is playing outside at Kangaroo Creek School.\n\nWhich one of these must be true?",
     "options": [
       "It is a sunny day.",
@@ -176,7 +177,7 @@
     "skill": "Must be true",
     "difficulty": 3,
     "format": "single",
-    "basics": "inference",
+    "basics": "mustBeTrue",
     "stem": "Rule: If it rains on Saturday morning, the cricket match is cancelled.\n\nThe cricket match last Saturday was not cancelled. If the rule was followed, which one of these must be true?",
     "options": [
       "It did not rain last Saturday morning.",
@@ -195,7 +196,7 @@
     "skill": "Whose reasoning is correct",
     "difficulty": 3,
     "format": "single",
-    "basics": "inference",
+    "basics": "mustBeTrue",
     "stem": "Every child who helps clean up the playground gets a sticker.\n\nLucas: Ella got a sticker, so she must have helped clean up the playground.\nHana: Sami did not help clean up the playground, so he did not get a sticker.\n\nIf the information above is true, whose reasoning is correct?",
     "options": [
       "Lucas only",
@@ -215,6 +216,7 @@
     "skill": "Find the mistake",
     "difficulty": 2,
     "format": "single",
+    "basics": "spotFlaw",
     "stem": "Oscar: Most children in my class like pizza. So most children in Australia like pizza.\n\nWhich statement shows the mistake Oscar has made?",
     "options": [
       "Pizza first came from Italy, so it is not really an Australian food.",
@@ -271,7 +273,7 @@
     "skill": "Must be true",
     "difficulty": 3,
     "format": "single",
-    "basics": "inference",
+    "basics": "mustBeTrue",
     "stem": "Every dog at the show has a ribbon. Some of the dogs at the show are poodles. Rex has no ribbon.\n\nIf these statements are true, which one of these must also be true?",
     "options": [
       "Rex is not a dog at the show.",
@@ -328,7 +330,7 @@
     "skill": "Must be true",
     "difficulty": 2,
     "format": "single",
-    "basics": "inference",
+    "basics": "mustBeTrue",
     "stem": "All the books on the top shelf are about animals. Some books about animals have photos in them.\n\nIf these statements are true, which one of these must also be true?",
     "options": [
       "Some books on the top shelf have photos.",
@@ -347,6 +349,7 @@
     "skill": "Find the mistake",
     "difficulty": 1,
     "format": "single",
+    "basics": "spotFlaw",
     "stem": "Max: I didn't study for my last spelling test and I still got full marks. So studying is a waste of time.\n\nWhich statement shows the mistake Max has made?",
     "options": [
       "He is deciding about all studying from just one test.",
@@ -365,7 +368,7 @@
     "skill": "Whose reasoning is correct",
     "difficulty": 2,
     "format": "single",
-    "basics": "inference",
+    "basics": "mustBeTrue",
     "stem": "At the zoo, only children under 5 get in free.\n\nNina: My brother got in free, so he must be under 5.\nOllie: My cousin is 7, so she did not get in free.\n\nIf the information above is true, whose reasoning is correct?",
     "options": [
       "Nina only",
@@ -385,7 +388,7 @@
     "skill": "Find the assumption",
     "difficulty": 2,
     "format": "single",
-    "basics": "inference",
+    "basics": "findAssumption",
     "stem": "Teacher: Sophie got the top mark in the science test, so she must have studied the hardest.\n\nWhich of these has the teacher assumed?",
     "options": [
       "Sophie enjoys science tests more than any other kind.",
@@ -404,7 +407,7 @@
     "skill": "Must be true",
     "difficulty": 1,
     "format": "single",
-    "basics": "inference",
+    "basics": "mustBeTrue",
     "stem": "Every Saturday the Lim family either goes to the beach or visits Grandma. They never do both on the same day. Last Saturday they did not go to the beach.\n\nWhich one of these must be true?",
     "options": [
       "It rained last Saturday.",
@@ -461,6 +464,7 @@
     "skill": "Find the mistake",
     "difficulty": 1,
     "format": "single",
+    "basics": "spotFlaw",
     "stem": "Grace: My friend said the new movie was boring, so I know I won't like it.\n\nWhich statement shows the mistake Grace has made?",
     "options": [
       "She does not say how long the new movie goes for.",
@@ -479,7 +483,7 @@
     "skill": "Must be true",
     "difficulty": 3,
     "format": "single",
-    "basics": "inference",
+    "basics": "mustBeTrue",
     "stem": "Every student in the school band plays exactly one instrument. There are more drummers than guitarists, and more guitarists than violinists. There are 3 violinists.\n\nWhich one of these must be true?",
     "options": [
       "There are exactly 5 guitarists.",
@@ -498,7 +502,7 @@
     "skill": "Whose reasoning is correct",
     "difficulty": 3,
     "format": "single",
-    "basics": "inference",
+    "basics": "mustBeTrue",
     "stem": "Every Year 4 student at Hill School learns Japanese. Some students who learn Japanese also learn French.\n\nEmma: Josh is at Hill School and learns Japanese, so he must be in Year 4.\nLeo: Ivy is in Year 4 at Hill School, so she must learn Japanese.\n\nIf the information above is true, whose reasoning is correct?",
     "options": [
       "Emma only",
@@ -556,7 +560,7 @@
     "skill": "Draw a conclusion",
     "difficulty": 2,
     "format": "single",
-    "basics": "inference",
+    "basics": "mustBeTrue",
     "stem": "Library rule: You may have at most 5 books borrowed at one time.\n\nFatima has 4 books borrowed. She wants to borrow 3 more books today.\n\nWhich one of these is true?",
     "options": [
       "She can borrow all 3 books now.",
@@ -1160,7 +1164,7 @@
     "skill": "Must be true",
     "difficulty": 1,
     "format": "single",
-    "basics": "inference",
+    "basics": "mustBeTrue",
     "stem": "No reptiles have fur. All snakes are reptiles.\n\nIf these statements are true, which one of these must also be true?",
     "options": [
       "All reptiles are snakes.",
@@ -1179,6 +1183,7 @@
     "skill": "Find the mistake",
     "difficulty": 1,
     "format": "single",
+    "basics": "spotFlaw",
     "stem": "Toby: I saw three magpies swoop on people today, so all magpies swoop on people.\n\nWhich statement shows the mistake Toby has made?",
     "options": [
       "Three magpies are not enough to show what all magpies do.",
@@ -1197,7 +1202,7 @@
     "skill": "Whose reasoning is correct",
     "difficulty": 2,
     "format": "single",
-    "basics": "inference",
+    "basics": "mustBeTrue",
     "stem": "Rule: If it is raining at lunchtime, students eat lunch in the hall.\n\nAna: Students are eating lunch in the hall, so it must be raining.\nBo: It is raining at lunchtime, so students must be eating lunch in the hall.\n\nIf the rule is always followed, whose reasoning is correct?",
     "options": [
       "Ana only",
@@ -1217,7 +1222,7 @@
     "skill": "Find the assumption",
     "difficulty": 2,
     "format": "single",
-    "basics": "inference",
+    "basics": "findAssumption",
     "stem": "Mr Park: The new bike path will mean more children ride to school, so we should build more bike racks.\n\nWhich of these has Mr Park assumed?",
     "options": [
       "Bike paths cost a lot of money for the council to build.",

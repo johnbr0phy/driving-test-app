@@ -2,11 +2,12 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getAdminDb, getAdminAuth } from '@/lib/firebase-admin';
 import { FieldValue } from 'firebase-admin/firestore';
 import { isInternalEmail } from '@/lib/internal';
-import { PAYWALL_TEST_ID, isPaywallVariant } from '@/lib/paywallTestIds';
+import { PAYWALL_TEST_ID, isPaywallHit, isPaywallVariant } from '@/lib/paywallTestIds';
 import { isBotRequest } from '@/lib/botUserAgent';
 
 // One view of the English paywall test (lib/paywallTest.ts): views and
-// distinct browsers per variant in analytics/paywallTest, and the account's
+// distinct browsers per variant in analytics/paywallTest (and views per
+// message: first, second or third visit, counted since 2026-11-13), and the account's
 // variant on users/{uid}.paywallTest when signed in.
 export async function POST(request: NextRequest) {
   // Bots never count in /admin (lib/botUserAgent.ts).
@@ -18,6 +19,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ ok: false, error: 'invalid' }, { status: 400 });
     }
     const first = body.first === true;
+    const hit = isPaywallHit(body.hit) ? body.hit : null;
     const now = new Date().toISOString();
     const today = now.slice(0, 10);
     const db = getAdminDb();
@@ -49,6 +51,7 @@ export async function POST(request: NextRequest) {
             ...(first && { browsers: inc, browsersDaily: { [today]: inc } }),
           },
         },
+        ...(hit && { hits: { [hit]: { views: inc, [variant]: inc } } }),
       },
       { merge: true }
     );

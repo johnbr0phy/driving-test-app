@@ -554,6 +554,34 @@ export function OpportunitiesView({ data, onRefresh, refreshing, updating = fals
                 </tbody>
               </table>
             </TableScroll>
+            {data.paywallTest.hits.length > 0 && (
+              <TableScroll className="-mx-2 mt-4">
+                <table className="w-full text-sm">
+                  <thead className="text-xs text-gray-500 dark:text-gray-400">
+                    <tr className={ROW}>
+                      <Th sticky title="Both paywalls change their message the second and third time a browser comes back">Message shown</Th>
+                      <Th right>Views</Th>
+                      <Th right>Purchases</Th>
+                      <Th right>Per 100 views</Th>
+                      <Th right>Revenue</Th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {data.paywallTest.hits.map((h) => (
+                      <tr key={h.hit} className={`${ROW} border-t border-gray-100 dark:border-gray-800`}>
+                        <td className={`py-2 px-2 font-medium text-gray-900 dark:text-gray-50 ${STICKY_COL}`}>{h.label}</td>
+                        <td className="py-2 px-2 text-right tabular-nums">{fmtInt(h.views)}</td>
+                        <td className="py-2 px-2 text-right tabular-nums">{fmtInt(h.purchases)}</td>
+                        <td className="py-2 px-2 text-right tabular-nums">
+                          {h.views > 0 ? ((h.purchases / h.views) * 100).toFixed(2) : <span className="text-gray-400">·</span>}
+                        </td>
+                        <td className="py-2 px-2 text-right tabular-nums">{h.revenueCents > 0 ? fmtDollars(h.revenueCents) : <span className="text-gray-400">·</span>}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </TableScroll>
+            )}
             <p className="mt-3 text-[11px] text-gray-500 dark:text-gray-400">
               {data.paywallTest.pValue === null
                 ? "No purchases from the test yet."
@@ -561,7 +589,8 @@ export function OpportunitiesView({ data, onRefresh, refreshing, updating = fals
                   ? `The difference is unlikely to be chance (p = ${data.paywallTest.pValue.toFixed(3)}).`
                   : `Too close to call so far (p = ${data.paywallTest.pValue.toFixed(2)}); keep it running.`}{" "}
               Each browser keeps its side. Spanish, Vietnamese, Korean and Chinese readers are not in the test. Preview a side with ?paywall=john or
-              ?paywall=classic.
+              ?paywall=classic, and a visit's message with ?paywallHit=2 or 3 (views and purchases by message counted since Nov 13 2026; a
+              reopen within 10 minutes is the same visit).
             </p>
           </Card>
         )}

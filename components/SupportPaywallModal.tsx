@@ -17,6 +17,7 @@ import { en } from "@/i18n";
 import { useIsNativeApp } from "@/hooks/useIsNativeApp";
 import { JohnFace } from "@/components/JohnFace";
 import { usePremiumPrice } from "@/hooks/usePremiumPrice";
+import type { PaywallHit } from "@/lib/paywallTestIds";
 
 interface SupportPaywallModalProps {
   open: boolean;
@@ -27,6 +28,8 @@ interface SupportPaywallModalProps {
   benefits?: string[];
   isGuest?: boolean;
   onSignUp?: () => void;
+  /** Which paywall visit this is for the browser: the message changes on the second and third. */
+  hit?: PaywallHit;
 }
 
 const DMV_BENEFITS = [
@@ -36,6 +39,25 @@ const DMV_BENEFITS = [
   "Full stats on every exam",
 ];
 
+// One message per visit: the ask the first time, then shorter and more direct.
+const MESSAGES: Record<PaywallHit, { title: string; body: (price: string) => string }> = {
+  1: {
+    title: "Hi, I'm John!",
+    body: () =>
+      "I run Tigertest by myself. It's getting a bit expensive. Please chip in and help me cover the costs.",
+  },
+  2: {
+    title: "Me again!",
+    body: (price) =>
+      `Looks like you want the good stuff. It's ${price}, one time, and it keeps Tigertest running for everyone.`,
+  },
+  3: {
+    title: "Third time lucky?",
+    body: (price) =>
+      `You keep landing here, so I'll keep it short: ${price}, once, no subscription. It unlocks everything below and pays my server bill.`,
+  },
+};
+
 export function SupportPaywallModal({
   open,
   onOpenChange,
@@ -43,8 +65,10 @@ export function SupportPaywallModal({
   isGuest = false,
   onSignUp,
   benefits,
+  hit = 1,
 }: SupportPaywallModalProps) {
   const price = usePremiumPrice();
+  const message = MESSAGES[hit];
   const [loading, setLoading] = useState(false);
   const isNative = useIsNativeApp();
 
@@ -63,12 +87,12 @@ export function SupportPaywallModal({
         <div className="flex items-center gap-3 mb-3">
           <JohnFace size={64} />
           <DialogTitle className="text-2xl font-bold leading-tight text-gray-900 dark:text-gray-50">
-            Hi, I&apos;m John!
+            {message.title}
           </DialogTitle>
         </div>
 
         <DialogDescription className="!text-base !text-gray-800 dark:!text-gray-100 mb-4">
-          I run Tigertest by myself. It&apos;s getting a bit expensive. Please chip in and help me cover the costs.
+          {message.body(price)}
         </DialogDescription>
 
         <ul className="space-y-2 mb-5">

@@ -27,7 +27,7 @@ import { CommunityWrongQuestions } from "@/components/CommunityWrongQuestions";
 import { QuizRow } from "@/components/QuizRow";
 import { inClassFor, useClassMemberships } from "@/hooks/useClassMemberships";
 import { DMV_EXAM_ID } from "@/lib/classes";
-import { paywallVariantForCheckout } from "@/lib/paywallTest";
+import { paywallHitForCheckout, paywallVariantForCheckout } from "@/lib/paywallTest";
 import { usePremiumPrice } from "@/hooks/usePremiumPrice";
 import { checkoutAttribution } from "@/lib/funnel";
 
@@ -116,6 +116,7 @@ function StatsContent() {
           returnUrl: window.location.origin,
           ...checkoutAttribution(),
           paywallVariant: paywallVariantForCheckout(),
+          paywallHit: paywallHitForCheckout(),
           location: "stats_page",
         }),
       });

@@ -28,7 +28,7 @@ import { trackBeginCheckout, trackStatsEntry } from "@/lib/analytics";
 import { DMV_EXAM_ID } from "@/lib/classes";
 import { recordClassAnswer } from "@/lib/classProgress";
 import { useClassMissRecovery } from "@/components/exam/ClassMissRecovery";
-import { paywallVariantForCheckout } from "@/lib/paywallTest";
+import { paywallHitForCheckout, paywallVariantForCheckout } from "@/lib/paywallTest";
 import { useSharePrompt } from "@/hooks/useSharePrompt";
 import { SharePromptStep } from "@/components/SharePromptStep";
 import { useIsPremium } from "@/hooks/useIsPremium";
@@ -83,6 +83,7 @@ function TrainingPageContent() {
           returnUrl: window.location.origin,
           ...checkoutAttribution(),
           paywallVariant: paywallVariantForCheckout(),
+          paywallHit: paywallHitForCheckout(),
           location: "training_set_4",
         }),
       });

@@ -6,7 +6,7 @@ import { examAnalyticsLabel, getExamById } from '@/lib/exams';
 import { isInternalEmail } from '@/lib/internal';
 import { shareDailyCounts } from '@/lib/shareCounts';
 import { paywallHitFeature, purchaseExam, purchaseLocationLabel } from '@/lib/purchaseAttribution';
-import { PAYWALL_TEST_ID, PAYWALL_VARIANTS } from '@/lib/paywallTestIds';
+import { PAYWALL_HITS, PAYWALL_TEST_ID, PAYWALL_VARIANTS } from '@/lib/paywallTestIds';
 import { REGIONS, regionFromCountry, regionOfTest, type TestRegion } from '@/lib/region';
 import { paymentNetUsdCents } from '@/lib/pricing';
 
@@ -127,6 +127,8 @@ export interface OpportunitiesPayload {
     }[];
     /** Two-sided p-value for buyers per browser, john vs classic; null until both have buyers or views. */
     pValue: number | null;
+    /** Views and purchases by message (first, second, third visit on); empty before the first counted view. */
+    hits: { hit: number; label: string; views: number; purchases: number; revenueCents: number }[];
   } | null;
   /** John's "tell a friend" prompt (components/SharePromptStep), null before it is first shown. */
   sharePrompt: {
@@ -293,6 +295,7 @@ export async function buildOpportunities(
     exam: string;
     userId: string | null;
     paywallVariant?: string;
+    paywallHit?: number;
     source?: string;
     landing?: string;
   };
@@ -326,6 +329,7 @@ export async function buildOpportunities(
       exam: typeof p.exam === 'string' ? p.exam : purchaseExam(location),
       userId,
       ...(typeof p.paywallVariant === 'string' && { paywallVariant: p.paywallVariant }),
+      ...(typeof p.paywallHit === 'number' && { paywallHit: p.paywallHit }),
       ...(typeof p.source === 'string' && { source: p.source }),
       ...(typeof p.landing === 'string' && { landing: p.landing }),
     });
@@ -883,9 +887,15 @@ const PAYWALL_VARIANT_LABELS: Record<string, string> = {
   classic: 'Classic Premium',
 };
 
+const PAYWALL_HIT_LABELS: Record<number, string> = {
+  1: 'First visit',
+  2: 'Second visit',
+  3: 'Third visit on',
+};
+
 function buildPaywallTest(
   doc: Record<string, any> | undefined,
-  payments: { net: number; paywallVariant?: string }[],
+  payments: { net: number; paywallVariant?: string; paywallHit?: number }[],
 ): OpportunitiesPayload['paywallTest'] {
   if (!doc || doc.test !== PAYWALL_TEST_ID) return null;
   const stored = (doc.variants || {}) as Record<string, { views?: number; browsers?: number }>;
@@ -900,12 +910,24 @@ function buildPaywallTest(
       revenueCents: sold.reduce((n, p) => n + p.net, 0),
     };
   });
+  const hitViews = (doc.hits || {}) as Record<string, { views?: number }>;
+  const hits = Object.keys(hitViews).length === 0 ? [] : PAYWALL_HITS.map((hit) => {
+    const sold = payments.filter((p) => p.paywallHit === hit);
+    return {
+      hit,
+      label: PAYWALL_HIT_LABELS[hit],
+      views: hitViews[hit]?.views ?? 0,
+      purchases: sold.length,
+      revenueCents: sold.reduce((n, p) => n + p.net, 0),
+    };
+  });
   const [a, b] = variants;
   return {
     test: PAYWALL_TEST_ID,
     since: typeof doc.since === 'string' ? doc.since : null,
     variants,
     pValue: twoProportionP(a.purchases, a.browsers, b.purchases, b.browsers),
+    hits,
   };
 }
 

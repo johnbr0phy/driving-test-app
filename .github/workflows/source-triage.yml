@@ -91,6 +91,8 @@ jobs:
         uses: anthropics/claude-code-action@v1
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Prints the run, so a failure shows its reason in the log (it was hidden).
+          show_full_output: true
           claude_args: --max-turns 300 --allowedTools "Read,Edit,Write,Glob,Grep,WebFetch,WebSearch,Bash(curl:*),Bash(python3:*),Bash(npx tsx:*),Bash(git diff:*),Bash(git status:*)"
           prompt: |
             Read CLAUDE.md (especially "Question quality" and the exam's own entry), then

@@ -85,6 +85,12 @@ export function rememberCurrentClass(code: string) {
   } catch {}
 }
 
+export function forgetCurrentClass(code: string) {
+  try {
+    if (localStorage.getItem(CURRENT_CLASS_KEY) === code) localStorage.removeItem(CURRENT_CLASS_KEY);
+  } catch {}
+}
+
 export function currentClassCode(): string | null {
   try {
     return localStorage.getItem(CURRENT_CLASS_KEY);

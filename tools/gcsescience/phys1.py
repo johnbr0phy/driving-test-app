@@ -134,3 +134,10 @@ ITEMS = [
       "Unwanted radioactive atoms on or in an object", ["Exposure to radiation from an outside source", "An object turning radioactive after an X-ray", "A nucleus decaying by itself"],
       "Contamination means radioactive material is on or inside something, so it keeps being exposed. Exposure from a source outside is irradiation, which does not make the object radioactive."),
 ]
+
+# Basics tags by topic for the efficiency and circuit items.
+_TAGS = {"Efficiency": "gcsesciEfficiency", "Conservation of energy": "gcsesciEfficiency",
+         "Series circuits": "gcsesciCircuits", "Parallel circuits": "gcsesciCircuits"}
+for _q in ITEMS:
+    if _q["skill"] in _TAGS and "basics" not in _q:
+        _q["basics"] = _TAGS[_q["skill"]]

@@ -122,3 +122,10 @@ ITEMS = [
       "Thermal decomposition of calcium carbonate", ["Burning methane", "Neutralising an acid with an alkali", "Magnesium reacting with acid"],
       "Thermal decomposition takes in energy from the surroundings, so it is endothermic. Combustion, neutralisation and metals reacting with acids all give out energy."),
 ]
+
+# Basics tags by topic for items that turn on the atom and shell skills.
+_TAGS = {"Atomic structure": "gcsesciAtomNumbers", "Isotopes": "gcsesciAtomNumbers",
+         "Electron configuration": "gcsesciElectronShells", "Group 0": "gcsesciElectronShells"}
+for _q in ITEMS:
+    if _q["skill"] in _TAGS and "basics" not in _q:
+        _q["basics"] = _TAGS[_q["skill"]]

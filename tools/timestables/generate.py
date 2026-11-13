@@ -85,9 +85,9 @@ def fact(test, t, m, used, show=None):
         return False
     a, b = show or ((m, t) if rng.random() < 0.5 else (t, m))
     stem = f"{a} × {b} = ?"
-    if stem in stems and test == 4 and show is None:
-        # Check 4 comes last: when one way round is already asked elsewhere,
-        # ask it the other way round (allowed across checks; never both in one).
+    if stem in stems and show is None:
+        # When one way round is already asked elsewhere in the bank, ask it
+        # the other way round (allowed across checks; never both in one).
         a, b = b, a
         stem = f"{a} × {b} = ?"
     if stem in stems:
@@ -116,8 +116,65 @@ M = list(range(2, 13))
 FULL = [2, 5, 10, 5] + [3, 4, 4, 8, 8, 8, 8] + [6, 6, 6, 7, 7, 7, 9, 9, 9] + [11, 12, 12, 12, 12]
 SCARCE = [12, 11, 8, 9, 7, 6]
 FULL_ORDER = sorted(FULL, key=lambda t: SCARCE.index(t) if t in SCARCE else len(SCARCE))
+
+# Check 4 straight after Check 3: no fact from Check 3, and no question
+# asked anywhere else in the bank (drills and Checks 1 and 2 are drawn after
+# it and skip its questions). A fact may come back the other way round
+# elsewhere, since the MTC rule is only that one check never has a fact and its
+# reverse. Each item is matched to a free fact (Kuhn's augmenting paths), its
+# own table first, else another table of the same curriculum step.
+def free_shows(t, m):
+    return [(a, b) for a, b in {(m, t), (t, m)} if f"{a} × {b} = ?" not in stems]
+
+
+def draw_last(test, plan, mults, banned):
+    cands = []
+    for t in plan:
+        ranked = []
+        for tt in [t] + [x for x in DOMAIN_OF if DOMAIN_OF[x] == DOMAIN_OF[t] and x != t]:
+            for m in rng.sample(mults, len(mults)):
+                shows = free_shows(tt, m)
+                if frozenset((tt, m)) not in banned and shows:
+                    # Rank: own table first; then a fact nobody has asked yet
+                    # (its other way round stays free for a later check); then
+                    # one that leaves the Year 2 tables to Check 1.
+                    stale = len(shows) < len({(m, tt), (tt, m)})
+                    y2 = test != 1 and tt not in (2, 5, 10) and m in (2, 5, 10)
+                    ranked.append(((tt != t, stale, y2), (tt, m)))
+        cands.append([c for _, c in sorted(ranked, key=lambda r: r[0])])
+    owner = {}  # fact -> slot
+
+    def augment(i, seen):
+        for tt, m in cands[i]:
+            key = frozenset((tt, m))
+            if key in seen:
+                continue
+            seen.add(key)
+            if key not in owner or augment(owner[key][0], seen):
+                owner[key] = (i, tt, m)
+                return True
+        return False
+
+    for i in range(len(plan)):
+        if not augment(i, set()):
+            raise RuntimeError(f"ran out of facts for {plan[i]} in test {test}")
+    used = set()
+    for i, tt, m in sorted(owner.values()):
+        shows = sorted(free_shows(tt, m))
+        assert fact(test, tt, m, used, rng.choice(shows))
+
+
+
+# The order matters: facts run short, so the most tied-down check goes first.
+# Test 1, the Year 2 check: 2s, 5s and 10s only, from 1 lot to 12 lots as
+# Year 2 counts them. Only those three tables, so it is drawn first.
+draw_last(1, [2] * 9 + [5] * 8 + [10] * 8, list(range(1, 13)), set())
 check3 = set()
 draw(3, FULL_ORDER, M, check3)
+draw_last(4, FULL_ORDER, M, set(check3))
+# Test 2, Year 3: mostly 3s, 4s and 8s with some Year 2 revision.
+draw_last(2, [2, 2, 5, 5, 5, 10, 10, 2] + [3] * 6 + [4] * 5 + [8] * 6, M, set())
+# The drill-only items come after every check and skip their questions.
 
 # Drill-only items (test 0).
 COUNT_BASICS = {11: "ttCountInElevens", 12: "ttDozens"}
@@ -139,11 +196,16 @@ def missing(t, m, left):
 def drill_fact(t, m):
     """A drill-only plain fact, in whichever order the checks have not used.
     If both orders are taken, the next multiplier up (wrapping) stands in."""
-    for k in range(len(M)):
-        mm = M[(M.index(m) + k) % len(M)]
-        for show in [(mm, t), (t, mm)]:
-            if fact(0, t, mm, set(), show):
-                return
+    # First choice: a fact not asked anywhere yet, so its other way round
+    # stays free for a check.
+    for fresh in (True, False):
+        for k in range(len(M)):
+            mm = M[(M.index(m) + k) % len(M)]
+            if fresh and len(free_shows(t, mm)) < len({(mm, t), (t, mm)}):
+                continue
+            for show in [(mm, t), (t, mm)]:
+                if fact(0, t, mm, set(), show):
+                    return
     raise RuntimeError((t, m))
 
 
@@ -252,53 +314,6 @@ def story_basics(text, ans):
 for text, ans, why, d in STORIES:
     add("ttStories", 0, text, why, d, story_basics(text, ans), "Word problems", answer=ans)
 
-# Tests 1 and 2 last, so the hand-picked drill facts keep their order.
-# Test 1, the Year 2 check: 2s, 5s and 10s only, from 1 lot to 12 lots as
-# Year 2 counts them.
-draw(1, [2] * 9 + [5] * 8 + [10] * 8, list(range(1, 13)), set())
-# Test 2, Year 3: mostly 3s, 4s and 8s with some Year 2 revision.
-draw(2, [2, 2, 5, 5, 5, 10, 10, 2] + [3] * 6 + [4] * 5 + [8] * 6, M, set())
-# Check 4 last: no fact from Check 3, and no question asked anywhere else in
-# the bank (a fact may come back the other way round, since the MTC rule is
-# only that one check never has a fact and its reverse). Facts are scarce by
-# now, so each item is matched to a free fact (Kuhn's augmenting paths), its
-# own table first, else another table of the same curriculum step.
-def free_shows(t, m):
-    return [(a, b) for a, b in {(m, t), (t, m)} if f"{a} × {b} = ?" not in stems]
-
-
-def draw_last(test, plan, mults, banned):
-    cands = []
-    for t in plan:
-        own, other = [], []
-        for tt in [t] + [x for x in DOMAIN_OF if DOMAIN_OF[x] == DOMAIN_OF[t] and x != t]:
-            for m in rng.sample(mults, len(mults)):
-                if frozenset((tt, m)) not in banned and free_shows(tt, m):
-                    (own if tt == t else other).append((tt, m))
-        cands.append(own + other)
-    owner = {}  # fact -> slot
-
-    def augment(i, seen):
-        for tt, m in cands[i]:
-            key = frozenset((tt, m))
-            if key in seen:
-                continue
-            seen.add(key)
-            if key not in owner or augment(owner[key][0], seen):
-                owner[key] = (i, tt, m)
-                return True
-        return False
-
-    for i in range(len(plan)):
-        if not augment(i, set()):
-            raise RuntimeError(f"ran out of facts for {plan[i]} in test {test}")
-    used = set()
-    for i, tt, m in sorted(owner.values()):
-        shows = sorted(free_shows(tt, m))
-        assert fact(test, tt, m, used, rng.choice(shows))
-
-
-draw_last(4, FULL_ORDER, M, set(check3))
 
 counts = {}
 for d, qs in items.items():

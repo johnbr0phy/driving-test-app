@@ -1,1 +1,470 @@
-[]
+[
+  {
+    "id": "sentenceCompletion",
+    "name": "Completing a sentence",
+    "sub": "Follow the clue words",
+    "rule": "A sentence with a blank always holds a clue. Find the words that tell you about the blank, decide what kind of word belongs there, and then pick the choice that fits. Read the whole sentence again with your choice in place.",
+    "trick": "Watch the little signal words. Because and so mean the blank agrees with the clue. But and although mean it goes the other way.",
+    "examples": [
+      {
+        "kind": "eg",
+        "text": "The patient was so _____ that she fell asleep during the exam.",
+        "note": "Clue: fell asleep. So agrees with it. The word means very tired: drowsy."
+      },
+      {
+        "kind": "eg",
+        "text": "Although the cut looked small, it was very _____.",
+        "note": "Although flips the clue. Small, but the opposite of minor: deep."
+      }
+    ],
+    "another": {
+      "text": "Filling a blank is like finishing a friend's sentence. If your friend says \"I'm so hungry I could eat a...\", you know the ending before they say it. The other words gave it away. Guess first, then find the choice that matches your guess.",
+      "example": "I'm so hungry I could eat a ___.\nYour guess: horse\nPick the choice closest to it."
+    },
+    "walkthrough": {
+      "board": "The patient's speech was _____, so the nurse could not understand what he was saying.",
+      "kind": "text",
+      "steps": [
+        {
+          "say": "Don't look at the choices yet. First find the clue in the sentence."
+        },
+        {
+          "ask": "Which words tell you about the blank?",
+          "options": [
+            "the nurse could not understand what he was saying",
+            "The patient's speech",
+            "the nurse"
+          ],
+          "answer": 0,
+          "hint": "Look for the part that explains what happened because of the blank.",
+          "line": "Clue: the nurse could not understand him"
+        },
+        {
+          "ask": "The signal word is so. What does so tell you?",
+          "options": [
+            "The second part happens because of the first",
+            "The second part is the opposite of the first"
+          ],
+          "answer": 0,
+          "line": "So: the blank caused the problem"
+        },
+        {
+          "ask": "Say your own word. His speech was…",
+          "options": [
+            "hard to make out",
+            "clear",
+            "quiet and polite"
+          ],
+          "answer": 0,
+          "line": "My word: hard to make out"
+        },
+        {
+          "ask": "Now the choices: slurred, fluent, brief. Which matches your word?",
+          "options": [
+            "slurred",
+            "fluent",
+            "brief"
+          ],
+          "answer": 0,
+          "then": "Read it back: his speech was slurred, so the nurse could not understand him. It makes sense.",
+          "line": "Answer: slurred"
+        }
+      ]
+    },
+    "questions": [
+      {
+        "blank": "Because the medicine tastes bitter, many children __ it.",
+        "options": [
+          "refuse",
+          "enjoy",
+          "request"
+        ],
+        "answer": 0,
+        "why": "Because means the blank agrees with the clue. A bitter taste makes children say no: refuse."
+      },
+      {
+        "blank": "The cut was small, but the bleeding was __.",
+        "options": [
+          "minor",
+          "heavy",
+          "absent"
+        ],
+        "answer": 1,
+        "why": "But flips the clue. A small cut, but a lot of blood: heavy."
+      }
+    ]
+  },
+  {
+    "id": "simpleInterest",
+    "name": "Simple interest",
+    "sub": "I = Prt, the same interest every year",
+    "rule": "Simple interest is paid only on the amount you started with, called the principal. Use I = Prt. P is the principal, r is the yearly rate written as a decimal, and t is the time in years. Add the interest to the principal to get the total amount.",
+    "trick": "Change the rate to a decimal and the time to years before you multiply. 4% is 0.04, and 6 months is 0.5 years, not 6.",
+    "examples": [
+      {
+        "kind": "eg",
+        "text": "$2000 at 3% a year for 4 years",
+        "note": "I = 2000 × 0.03 × 4 = $240. Total: 2000 + 240 = $2240."
+      },
+      {
+        "kind": "eg",
+        "text": "$1200 at 5% a year for 18 months",
+        "note": "18 months is 1.5 years. I = 1200 × 0.05 × 1.5 = $90."
+      }
+    ],
+    "another": {
+      "text": "Simple interest is like a paycheque that never gets a raise. The principal earns exactly the same amount every year, so you work out one year and then count the years.",
+      "example": "$500 at 4% a year earns $20 a year.\n3 years: 3 × $20 = $60"
+    },
+    "walkthrough": {
+      "board": "$3500 at 2.5% a year for 3 years",
+      "kind": "math",
+      "steps": [
+        {
+          "say": "Simple interest uses I = Prt. Get each letter ready first."
+        },
+        {
+          "ask": "Write r, the rate, as a decimal:",
+          "options": [
+            "0.025",
+            "2.5",
+            "0.25"
+          ],
+          "answer": 0,
+          "hint": "Divide the percent by 100.",
+          "line": "P = 3500, r = 0.025"
+        },
+        {
+          "ask": "The time t, in years, is…",
+          "options": [
+            "3",
+            "36",
+            "0.3"
+          ],
+          "answer": 0,
+          "line": "t = 3"
+        },
+        {
+          "ask": "I = 3500 × 0.025 × 3 = ?",
+          "options": [
+            "$262.50",
+            "$87.50",
+            "$2625"
+          ],
+          "answer": 0,
+          "then": "One year earns 3500 × 0.025 = $87.50. Three years earn three times that.",
+          "line": "I = $262.50"
+        },
+        {
+          "ask": "What is the total amount after 3 years?",
+          "options": [
+            "$3762.50",
+            "$262.50",
+            "$3587.50"
+          ],
+          "answer": 0,
+          "line": "Total = 3500 + 262.50 = $3762.50"
+        }
+      ]
+    },
+    "questions": [
+      {
+        "stem": "How much simple interest does $900 earn at 6% a year for 2 years?",
+        "options": [
+          "$108",
+          "$54",
+          "$1080"
+        ],
+        "answer": 0,
+        "why": "I = Prt = 900 × 0.06 × 2 = $108. $54 is only one year."
+      },
+      {
+        "stem": "$1000 earns $45 of simple interest in 1.5 years. What is the yearly rate?",
+        "options": [
+          "4.5%",
+          "3%",
+          "1.5%"
+        ],
+        "answer": 1,
+        "why": "r = I ÷ (Pt) = 45 ÷ (1000 × 1.5) = 0.03, so 3% a year. 4.5% forgets to divide by the time."
+      }
+    ]
+  },
+  {
+    "id": "compoundInterest",
+    "name": "Compound interest by the period",
+    "sub": "Share out the rate, count the periods",
+    "rule": "FV = PV(1 + r)ⁿ. Here r is the interest rate for one compounding period and n is the number of periods. For monthly compounding, divide the yearly rate by 12 and multiply the years by 12. To find the present value, divide instead: PV = FV ÷ (1 + r)ⁿ.",
+    "trick": "Make r and n talk about the same period. 8% p.a. compounded quarterly for 3 years is 2% a quarter for 12 quarters.",
+    "examples": [
+      {
+        "kind": "eg",
+        "text": "$8000 at 4.8% p.a., compounded monthly, for 3 years",
+        "note": "r = 0.048 ÷ 12 = 0.004 and n = 3 × 12 = 36, so FV = 8000(1.004)³⁶."
+      },
+      {
+        "kind": "eg",
+        "text": "How much to invest now to have $20 000 in 4 years at 5% p.a., compounded annually?",
+        "note": "PV = 20 000 ÷ 1.05⁴ = $16 454.05"
+      }
+    ],
+    "another": {
+      "text": "Think of a yearly rate as a bag of lollies shared out over the year. If the bank pays interest every month, each month gets one twelfth of the rate, and there are twelve months in every year.",
+      "example": "12% p.a., compounded monthly\n= 1% a month\n× 12 months each year"
+    },
+    "walkthrough": {
+      "board": "$9000 at 8% p.a., compounded quarterly, for 3 years",
+      "kind": "math",
+      "steps": [
+        {
+          "ask": "How many quarters are in one year?",
+          "options": [
+            "4",
+            "12",
+            "3"
+          ],
+          "answer": 0,
+          "line": "Quarterly: 4 periods a year"
+        },
+        {
+          "ask": "The rate per quarter is 8% ÷ 4 =",
+          "options": [
+            "2%",
+            "32%",
+            "8%"
+          ],
+          "answer": 0,
+          "hint": "Share the yearly rate out across the 4 quarters.",
+          "line": "r = 2% = 0.02"
+        },
+        {
+          "ask": "The number of quarters in 3 years is",
+          "options": [
+            "12",
+            "3",
+            "7"
+          ],
+          "answer": 0,
+          "line": "n = 3 × 4 = 12"
+        },
+        {
+          "ask": "So the future value is",
+          "options": [
+            "9000(1.02)¹²",
+            "9000(1.08)¹²",
+            "9000(1.02)³"
+          ],
+          "answer": 0,
+          "then": "That works out to $11 414.18.",
+          "line": "FV = 9000(1.02)¹² = $11 414.18"
+        },
+        {
+          "ask": "To find how much to invest now for a goal instead, you would",
+          "options": [
+            "divide the goal by (1 + r)ⁿ",
+            "multiply the goal by (1 + r)ⁿ",
+            "take r off the goal once"
+          ],
+          "answer": 0,
+          "line": "PV = FV ÷ (1 + r)ⁿ"
+        }
+      ]
+    },
+    "questions": [
+      {
+        "stem": "Interest of 5.4% p.a. is compounded monthly. What is the interest rate per month?",
+        "options": [
+          "0.45%",
+          "5.4%",
+          "0.54%"
+        ],
+        "answer": 0,
+        "why": "5.4% ÷ 12 = 0.45% a month."
+      },
+      {
+        "stem": "Money is invested for 4 years, compounded every 6 months. How many compounding periods is that?",
+        "options": [
+          "4",
+          "8",
+          "24"
+        ],
+        "answer": 1,
+        "why": "Twice a year for 4 years gives 4 × 2 = 8 periods."
+      }
+    ]
+  },
+  {
+    "id": "annuityTable",
+    "name": "Reading an annuity table",
+    "sub": "Rate per period across, periods down",
+    "rule": "An annuity table gives a factor for each interest rate per period and each number of periods. Change the yearly rate and the years into periods first, find the row and the column, then multiply the regular payment by the factor where they meet. A future value table shows what the payments grow to. A present value table shows what they are worth today, such as how much you can borrow.",
+    "trick": "Convert first, then look up. 6% p.a. paid monthly for 4 years is the 0.5% column and the 48 row, never a 6% column.",
+    "table": {
+      "head": [
+        "Periods",
+        "0.5%",
+        "0.75%",
+        "3%"
+      ],
+      "rows": [
+        [
+          "12",
+          "12.3356",
+          "12.5076",
+          "14.1920"
+        ],
+        [
+          "24",
+          "25.4320",
+          "26.1885",
+          "34.4265"
+        ],
+        [
+          "48",
+          "54.0978",
+          "57.5207",
+          "104.4084"
+        ]
+      ]
+    },
+    "examples": [
+      {
+        "kind": "eg",
+        "text": "$250 a month for 4 years at 6% p.a., compounded monthly",
+        "note": "0.5% column, 48 row: factor 54.0978. FV = 250 × 54.0978 = $13 524.45"
+      }
+    ],
+    "another": {
+      "text": "The table is a ready reckoner. Someone has already done the long sums for a payment of $1 each period. If you pay $250 instead of $1, your answer is 250 times the number in the table.",
+      "example": "Table factor for $1: 54.0978\n$250 each period: 250 × 54.0978"
+    },
+    "walkthrough": {
+      "table": true,
+      "steps": [
+        {
+          "say": "$400 is deposited at the end of every quarter for 3 years at 3% p.a., compounded quarterly. Find its future value with the table."
+        },
+        {
+          "ask": "The rate per quarter is 3% ÷ 4 = 0.75%. Which column?",
+          "options": [
+            "0.75%",
+            "3%",
+            "0.5%"
+          ],
+          "answer": 0,
+          "hint": "The columns are rates per period, not per year.",
+          "line": "Column: 0.75%"
+        },
+        {
+          "ask": "Quarterly for 3 years is how many periods? Which row?",
+          "options": [
+            "12",
+            "3",
+            "24"
+          ],
+          "answer": 0,
+          "line": "Row: 3 × 4 = 12"
+        },
+        {
+          "ask": "Where the 12 row meets the 0.75% column, the factor is",
+          "options": [
+            "12.5076",
+            "14.1920",
+            "26.1885"
+          ],
+          "answer": 0,
+          "line": "Factor: 12.5076"
+        },
+        {
+          "ask": "Multiply by the $400 payment: 400 × 12.5076 =",
+          "options": [
+            "$5003.04",
+            "$4800.00",
+            "$5676.80"
+          ],
+          "answer": 0,
+          "then": "The deposits alone are 12 × $400 = $4800. The other $203.04 is interest.",
+          "line": "FV = $5003.04"
+        }
+      ]
+    },
+    "questions": [
+      {
+        "stem": "Payments are made monthly at 9% p.a. for 4 years. Which part of the table do you use?",
+        "table": {
+          "head": [
+            "Periods",
+            "0.5%",
+            "0.75%",
+            "3%"
+          ],
+          "rows": [
+            [
+              "12",
+              "12.3356",
+              "12.5076",
+              "14.1920"
+            ],
+            [
+              "24",
+              "25.4320",
+              "26.1885",
+              "34.4265"
+            ],
+            [
+              "48",
+              "54.0978",
+              "57.5207",
+              "104.4084"
+            ]
+          ]
+        },
+        "options": [
+          "0.75% column, 48 row",
+          "3% column, 4 row",
+          "0.75% column, 4 row"
+        ],
+        "answer": 0,
+        "why": "9% ÷ 12 = 0.75% a month, and 4 × 12 = 48 months."
+      },
+      {
+        "stem": "Using the table, what is the future value of $100 a month for 2 years at 6% p.a., compounded monthly?",
+        "table": {
+          "head": [
+            "Periods",
+            "0.5%",
+            "0.75%",
+            "3%"
+          ],
+          "rows": [
+            [
+              "12",
+              "12.3356",
+              "12.5076",
+              "14.1920"
+            ],
+            [
+              "24",
+              "25.4320",
+              "26.1885",
+              "34.4265"
+            ],
+            [
+              "48",
+              "54.0978",
+              "57.5207",
+              "104.4084"
+            ]
+          ]
+        },
+        "options": [
+          "$3442.65",
+          "$2543.20",
+          "$2400.00"
+        ],
+        "answer": 1,
+        "why": "0.5% column, 24 row: 25.4320. 100 × 25.4320 = $2543.20. $3442.65 reads a yearly 3% column by mistake."
+      }
+    ]
+  }
+]

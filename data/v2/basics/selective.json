@@ -1,1 +1,614 @@
-[]
+[
+  {
+    "id": "mustBeTrue",
+    "name": "What must be true?",
+    "sub": "Only what the facts force, nothing extra",
+    "rule": "A statement must be true only if the facts leave no other way. If you can picture even one case where the facts hold and the statement is false, it is not a must.",
+    "trick": "Draw the facts as circles inside circles. \"All A are B\" puts the A circle inside the B circle. Then check each choice against the picture, and try hard to break it.",
+    "passage": "Every student in the art club is in Year 5. Some art club students also play hockey.",
+    "examples": [
+      {
+        "kind": "good",
+        "text": "Some Year 5 students play hockey.",
+        "note": "The art club hockey players are all in Year 5, so this has to be true."
+      },
+      {
+        "kind": "bad",
+        "text": "Every Year 5 student is in the art club.",
+        "note": "The rule only goes one way. Year 5 could have lots of students who are not in the club."
+      }
+    ],
+    "another": {
+      "text": "Your toy box holds only red toys, and some of those red toys are cars. Then some red toys are cars, for sure. But you cannot say every red toy in the house is in the box. Maybe there is a red ball under the bed.",
+      "example": "All box toys are red.\nSome box toys are cars.\nMust be true: some red toys are cars.\nNot a must: all red toys are in the box."
+    },
+    "walkthrough": {
+      "passage": true,
+      "steps": [
+        {
+          "say": "Picture a big circle for Year 5. The art club is a smaller circle right inside it, because every club member is in Year 5."
+        },
+        {
+          "ask": "Some club members play hockey. Where are those hockey players?",
+          "options": [
+            "Inside the Year 5 circle",
+            "Outside the Year 5 circle"
+          ],
+          "answer": 0,
+          "then": "They are inside the club circle, and the club circle is inside Year 5.",
+          "hint": "Every club member is in Year 5. Hockey players from the club are club members.",
+          "line": "Club hockey players are in Year 5"
+        },
+        {
+          "ask": "So is \"Some Year 5 students play hockey\" a must?",
+          "options": [
+            "Yes, it has to be true",
+            "No, it might be false"
+          ],
+          "answer": 0,
+          "then": "There is no way to keep the facts and make this false.",
+          "line": "Some Year 5 students play hockey: MUST ✓"
+        },
+        {
+          "ask": "Now test \"Every Year 5 student is in the art club.\" Can you picture Year 5 students outside the small circle?",
+          "options": [
+            "Yes, the big circle has room left over",
+            "No, the circles are the same size"
+          ],
+          "answer": 0,
+          "then": "One Year 5 student who skips art club keeps the facts true and breaks the statement.",
+          "hint": "The facts say club is inside Year 5, not that Year 5 is inside club.",
+          "line": "Every Year 5 student is in art club: NOT a must ✗"
+        },
+        {
+          "say": "That is the whole test: try to break each choice while keeping the facts. The one you cannot break is the answer."
+        }
+      ]
+    },
+    "questions": [
+      {
+        "passage": "Every dog at the park is on a lead. Biscuit is not on a lead.",
+        "stem": "Which statement must be true?",
+        "options": [
+          "Biscuit is not at the park.",
+          "Biscuit is not a dog.",
+          "Biscuit ran away from the park."
+        ],
+        "answer": 0,
+        "why": "If Biscuit were at the park, he would be on a lead. He is not, so he is not at the park. We do not know he is not a dog, or why he is not there."
+      },
+      {
+        "passage": "No one in the choir plays the drums. Some students in the band play the drums.",
+        "stem": "Which statement must be true?",
+        "options": [
+          "Some band students are not in the choir.",
+          "No band students are in the choir.",
+          "Every drummer is in the band."
+        ],
+        "answer": 0,
+        "why": "The band drummers cannot be in the choir, so at least those band students are outside it. Other band students might still sing in the choir."
+      }
+    ]
+  },
+  {
+    "id": "spotFlaw",
+    "name": "Spot the flaw",
+    "sub": "Why the reasoning does not hold up",
+    "rule": "A flawed argument jumps to a conclusion the reasons do not prove. The common jumps: a few cases become everyone, a rule gets turned backwards, or two things that happen together get called cause and effect.",
+    "trick": "Ask: could the reasons all be true and the conclusion still be wrong? Then name how. That \"how\" is the flaw.",
+    "passage": "Leo: I asked three friends and they all love cricket. So every kid at our school loves cricket.",
+    "examples": [
+      {
+        "kind": "good",
+        "text": "Three friends are not enough to tell you about the whole school.",
+        "note": "This names the jump: from a few cases to everyone."
+      },
+      {
+        "kind": "bad",
+        "text": "Cricket is not as popular as soccer.",
+        "note": "Maybe true, but it does not say what is wrong with Leo's thinking."
+      }
+    ],
+    "another": {
+      "text": "You see one grumpy cat and decide all cats are grumpy. Your grandma's cat curls up on your lap and purrs. One cat was never enough to tell you about every cat.",
+      "example": "One grumpy cat\nso all cats are grumpy?\nFlaw: one case is not everyone."
+    },
+    "walkthrough": {
+      "passage": true,
+      "steps": [
+        {
+          "say": "First split the argument into its reason and its conclusion."
+        },
+        {
+          "ask": "What is Leo's conclusion?",
+          "options": [
+            "Every kid at the school loves cricket",
+            "Three friends love cricket"
+          ],
+          "answer": 0,
+          "then": "The conclusion is the big claim after \"so\".",
+          "hint": "Look for the word \"so\". The conclusion comes after it.",
+          "line": "Conclusion: every kid loves cricket"
+        },
+        {
+          "ask": "Could the three friends really love cricket while some other kids do not?",
+          "options": [
+            "Yes, easily",
+            "No, that is impossible"
+          ],
+          "answer": 0,
+          "then": "So the reason is true and the conclusion can still be false. There is a flaw.",
+          "line": "Reason true, conclusion can be false"
+        },
+        {
+          "ask": "Which kind of jump did Leo make?",
+          "options": [
+            "A few cases turned into everyone",
+            "A rule turned backwards",
+            "Two things that happen together called cause and effect"
+          ],
+          "answer": 0,
+          "then": "Three friends is a tiny sample of the whole school.",
+          "hint": "How many people did Leo ask, and how many is he talking about?",
+          "line": "Flaw: three friends do not speak for the whole school"
+        }
+      ]
+    },
+    "questions": [
+      {
+        "passage": "Ava: Every time I wear my green hat, it rains. So my green hat makes it rain.",
+        "stem": "What is the mistake in Ava's reasoning?",
+        "options": [
+          "Two things happening together does not mean one causes the other.",
+          "She did not say what colour her hat is.",
+          "Green hats are not good in the rain."
+        ],
+        "answer": 0,
+        "why": "The hat and the rain come together by chance. Nothing shows the hat causes the weather."
+      },
+      {
+        "passage": "Rule: Anyone who wins the race gets a medal. Noah: Mia has a medal, so she must have won the race.",
+        "stem": "What is the mistake in Noah's reasoning?",
+        "options": [
+          "He turned the rule around. Medals might be given for other things too.",
+          "He did not see the race himself.",
+          "Mia is not fast enough to win."
+        ],
+        "answer": 0,
+        "why": "The rule says winners get medals. It does not say only winners do, so Mia's medal does not prove she won."
+      }
+    ]
+  },
+  {
+    "id": "findAssumption",
+    "name": "Find the assumption",
+    "sub": "The hidden step the argument needs",
+    "rule": "An assumption is something the speaker takes for granted but never says. The argument only works if it is true.",
+    "trick": "Look for the gap between the reason and the conclusion. Then do the \"what if it is false\" test: if the choice were false and the argument falls apart, you have found the assumption.",
+    "passage": "Ella: The library opens at 9 am, so I can return my book before school starts at 9:30.",
+    "examples": [
+      {
+        "kind": "good",
+        "text": "Ella can get to the library and then to school in under half an hour.",
+        "note": "If the trip took an hour, her plan falls apart. She needs this, and never said it."
+      },
+      {
+        "kind": "bad",
+        "text": "Ella has read the whole book.",
+        "note": "She can return a book she has not finished. The argument works either way."
+      }
+    ],
+    "another": {
+      "text": "You say, \"It's sunny, so we can go to the beach.\" You did not say \"and the car is working\", but your plan needs it. That missing piece is the assumption.",
+      "example": "It's sunny\n(the car works)\nso we can go to the beach."
+    },
+    "walkthrough": {
+      "passage": true,
+      "steps": [
+        {
+          "say": "Find the reason and the conclusion, then look for the gap between them."
+        },
+        {
+          "ask": "Ella's reason is the library opens at 9 am. Her conclusion is:",
+          "options": [
+            "She can return the book before 9:30",
+            "The library is near her school"
+          ],
+          "answer": 0,
+          "then": "Now ask what has to be true for 9 am to lead to \"before 9:30\".",
+          "line": "Reason: opens 9 am. Conclusion: back before 9:30"
+        },
+        {
+          "ask": "What does she need that she never said?",
+          "options": [
+            "The library-to-school trip fits in half an hour",
+            "She likes the book"
+          ],
+          "answer": 0,
+          "then": "That is the gap: time to get from one place to the other.",
+          "hint": "Think about what could stop her getting from the library to school in time.",
+          "line": "Gap: the trip fits in 30 minutes"
+        },
+        {
+          "ask": "What if test: if the trip took an hour, would her argument still work?",
+          "options": [
+            "No, it falls apart",
+            "Yes, it still works"
+          ],
+          "answer": 0,
+          "then": "The argument breaks without it, so it is the assumption.",
+          "line": "False → argument fails: ASSUMPTION ✓"
+        }
+      ]
+    },
+    "questions": [
+      {
+        "passage": "Sam: The bakery sold out of pies by noon yesterday, so it will sell out by noon today too.",
+        "stem": "Which assumption has Sam made?",
+        "options": [
+          "Today will be like yesterday for the bakery.",
+          "The bakery makes the best pies in town.",
+          "Sam wants to buy a pie."
+        ],
+        "answer": 0,
+        "why": "If today were different (fewer customers, more pies baked), yesterday would tell us nothing. Sam needs today to match yesterday."
+      },
+      {
+        "passage": "Coach: Our best player is back from injury, so we will win on Saturday.",
+        "stem": "Which assumption has the coach made?",
+        "options": [
+          "One player coming back is enough to make the team win.",
+          "The player was injured at training.",
+          "Saturday's game starts in the morning."
+        ],
+        "answer": 0,
+        "why": "The reason is about one player and the conclusion is about the whole game. The coach takes for granted that one player decides it."
+      }
+    ]
+  },
+  {
+    "id": "orderingClues",
+    "name": "Ordering clues",
+    "sub": "Put people in a line, one clue at a time",
+    "rule": "When clues say who is ahead, taller, older or further north, draw a line and place each person on it. Start with a clue that links two people, then fit every other clue onto the same line.",
+    "trick": "Write the line across the page with arrows: \"before\" means left. Add one name at a time and never skip a clue.",
+    "passage": "Ari is taller than Bo. Cal is shorter than Bo. Dee is taller than Ari.",
+    "examples": [
+      {
+        "kind": "eg",
+        "text": "Tallest to shortest: Dee, Ari, Bo, Cal",
+        "note": "Ari above Bo, Cal below Bo, then Dee above Ari."
+      },
+      {
+        "kind": "eg",
+        "text": "Shortest: Cal",
+        "note": "Read the answer straight off the end of the line."
+      }
+    ],
+    "another": {
+      "text": "It's like lining up for the tuckshop. Mum says \"Jess is behind Tom\" and \"Kim is behind Jess\". You can see the whole queue: Tom, then Jess, then Kim.",
+      "example": "Tom → Jess → Kim\n(front)     (back)"
+    },
+    "walkthrough": {
+      "passage": true,
+      "board": "Line them up, tallest first",
+      "steps": [
+        {
+          "ask": "Clue 1: Ari is taller than Bo. Who goes higher?",
+          "options": [
+            "Ari",
+            "Bo"
+          ],
+          "answer": 0,
+          "line": "Ari, Bo"
+        },
+        {
+          "ask": "Clue 2: Cal is shorter than Bo. Where does Cal go?",
+          "options": [
+            "Under Bo",
+            "Above Ari"
+          ],
+          "answer": 0,
+          "hint": "Shorter means lower on the line.",
+          "line": "Ari, Bo, Cal"
+        },
+        {
+          "ask": "Clue 3: Dee is taller than Ari. Where does Dee go?",
+          "options": [
+            "At the very top",
+            "Between Bo and Cal"
+          ],
+          "answer": 0,
+          "line": "Dee, Ari, Bo, Cal"
+        },
+        {
+          "ask": "Who is second tallest?",
+          "options": [
+            "Ari",
+            "Bo",
+            "Dee"
+          ],
+          "answer": 0,
+          "then": "Once every clue is on the line, the question just reads off it.",
+          "line": "Second tallest: Ari"
+        }
+      ]
+    },
+    "questions": [
+      {
+        "passage": "In a race, Mo finished ahead of Pia. Pia finished ahead of Raj. Sol finished behind Raj.",
+        "stem": "Who finished last?",
+        "options": [
+          "Sol",
+          "Raj",
+          "Pia"
+        ],
+        "answer": 0,
+        "why": "The line is Mo, Pia, Raj, Sol. Sol is behind Raj, so Sol is last."
+      },
+      {
+        "passage": "Ashby is north of Dale. Crewe is south of Dale. Brook is north of Ashby.",
+        "stem": "Which town is second from the north?",
+        "options": [
+          "Ashby",
+          "Dale",
+          "Brook"
+        ],
+        "answer": 0,
+        "why": "From north to south: Brook, Ashby, Dale, Crewe. Ashby is second."
+      }
+    ]
+  },
+  {
+    "id": "drawConclusions",
+    "name": "Drawing conclusions from facts",
+    "sub": "Use what the text says to work out what it doesn't",
+    "rule": "In an information text or news report, a conclusion question asks you to use the facts given to predict, compare or work something out. Every good answer rests on a fact you can point to.",
+    "trick": "Underline the facts the question is about. Then ask: if these facts are true, what follows? Cross out any choice that needs a fact the text never gave.",
+    "passage": "Bats hunt insects at night. A single bat can eat about 1,000 mosquitoes in an hour. Farmers in one town put up bat boxes near their fields.",
+    "examples": [
+      {
+        "kind": "good",
+        "text": "The farmers probably hoped the bats would cut down on insects near their crops.",
+        "note": "Built from two facts: bats eat lots of insects, and the boxes went near the fields."
+      },
+      {
+        "kind": "bad",
+        "text": "The farmers were scared of bats.",
+        "note": "Nothing in the text says that. Putting up bat boxes points the other way."
+      }
+    ],
+    "another": {
+      "text": "You see muddy boots by the door and a wet umbrella in the hall. Nobody told you, but you can work it out: someone just came in from the rain. Facts first, then the conclusion.",
+      "example": "Muddy boots + wet umbrella\n→ someone came in from the rain"
+    },
+    "walkthrough": {
+      "passage": true,
+      "steps": [
+        {
+          "say": "Question: Why did the farmers put up bat boxes? The text never says. You have to work it out from the facts."
+        },
+        {
+          "ask": "Which fact tells you what bats do?",
+          "options": [
+            "They eat about 1,000 mosquitoes in an hour",
+            "The town has farms"
+          ],
+          "answer": 0,
+          "line": "Fact: bats eat lots of insects"
+        },
+        {
+          "ask": "Where did the farmers put the boxes?",
+          "options": [
+            "Near their fields",
+            "Inside their houses"
+          ],
+          "answer": 0,
+          "hint": "Look at the last sentence.",
+          "line": "Fact: boxes near the fields"
+        },
+        {
+          "ask": "Put the two facts together. What follows?",
+          "options": [
+            "They wanted bats to eat insects near the crops",
+            "They wanted bats as pets"
+          ],
+          "answer": 0,
+          "then": "Each part of the answer rests on a fact you can point to.",
+          "line": "Conclusion: fewer insects near the crops"
+        }
+      ]
+    },
+    "questions": [
+      {
+        "passage": "The town pool opens at 6 a.m. in summer. A sign says the pool is busiest between 3 p.m. and 6 p.m. Lane swimming is only allowed before 9 a.m.",
+        "stem": "A swimmer wants to swim laps in a quiet pool. Based on the text, when should she go?",
+        "options": [
+          "At 7 a.m.",
+          "At 4 p.m.",
+          "At noon"
+        ],
+        "answer": 0,
+        "why": "Laps are only allowed before 9 a.m., and the busy time is the afternoon. 7 a.m. fits both facts."
+      },
+      {
+        "passage": "Last year, 40 students joined the school garden club. This year, after the club started selling its vegetables at the farmers' market, 95 students signed up.",
+        "stem": "What can you conclude from these facts?",
+        "options": [
+          "Selling at the market may have made the club more popular.",
+          "The vegetables were better this year.",
+          "Students only joined to earn money."
+        ],
+        "answer": 0,
+        "why": "Sign-ups more than doubled after the market sales began. The text says nothing about how good the vegetables were or why each student joined."
+      }
+    ]
+  },
+  {
+    "id": "figurativeLanguage",
+    "name": "Figurative language",
+    "sub": "Comparisons and sayings that don't mean the words",
+    "rule": "Writers and speakers often say one thing to mean another. A comparison (\"like a rocket\") shows you something by linking it to something else. A saying (\"I walked into that\") means something different from its words.",
+    "trick": "Ask what the two things in a comparison have in common. For a saying, ask what the speaker is really telling the other person, then check it fits what happens next.",
+    "passage": "When the bell rang, Mia shot out of the classroom like a rocket.",
+    "examples": [
+      {
+        "kind": "good",
+        "text": "Mia left very fast.",
+        "note": "Rockets are known for speed. That is what Mia and the rocket share."
+      },
+      {
+        "kind": "bad",
+        "text": "Mia flew up into the sky.",
+        "note": "That reads the words literally. The comparison is about speed, not flying."
+      }
+    ],
+    "another": {
+      "text": "When your dad says \"it's raining cats and dogs\", no pets are falling from the clouds. He means it's raining really hard. The words paint a picture; the meaning is the picture's point.",
+      "example": "\"Raining cats and dogs\"\nmeans: raining very hard"
+    },
+    "walkthrough": {
+      "passage": true,
+      "steps": [
+        {
+          "say": "\"Like a rocket\" is a comparison. Mia is not a rocket, so you need to find what the writer wants you to see."
+        },
+        {
+          "ask": "What is a rocket best known for?",
+          "options": [
+            "Going very fast",
+            "Being made of metal"
+          ],
+          "answer": 0,
+          "line": "Rocket → very fast"
+        },
+        {
+          "ask": "So what does the comparison tell you about Mia?",
+          "options": [
+            "She left in a big hurry",
+            "She was wearing silver"
+          ],
+          "answer": 0,
+          "then": "Keep only the part that the two things share.",
+          "line": "Mia left in a big hurry"
+        },
+        {
+          "ask": "Does that fit the moment in the story?",
+          "options": [
+            "Yes, the bell had just rung",
+            "No, it makes no sense there"
+          ],
+          "answer": 0,
+          "then": "Always check the meaning against what is happening around it.",
+          "line": "Bell rang → she rushed out ✓"
+        }
+      ]
+    },
+    "questions": [
+      {
+        "passage": "After the long hike, Jonah's legs felt like wet noodles.",
+        "stem": "What does this comparison show?",
+        "options": [
+          "Jonah's legs were weak and tired.",
+          "Jonah's legs were wet from the rain.",
+          "Jonah was hungry for pasta."
+        ],
+        "answer": 0,
+        "why": "Wet noodles are floppy and can't hold themselves up. That is how tired legs feel."
+      },
+      {
+        "passage": "Priya forgot her lines twice at the rehearsal. Her friend said, \"Don't worry, it's just the first time. You'll find your feet.\"",
+        "stem": "What does the friend mean by \"You'll find your feet\"?",
+        "options": [
+          "Priya will get more comfortable with practice.",
+          "Priya lost her shoes backstage.",
+          "Priya should stand still on stage."
+        ],
+        "answer": 0,
+        "why": "The friend is telling her not to worry. \"Find your feet\" means get used to something new."
+      }
+    ]
+  },
+  {
+    "id": "storyTheme",
+    "name": "Theme of a story",
+    "sub": "The lesson the story teaches",
+    "rule": "A story's theme is the big lesson about life it shows, not a summary of what happened. It usually comes from how the main character changes or what they learn.",
+    "trick": "Ask: how is the main character different at the end than at the start? Then turn that change into a sentence about people in general, with no names in it.",
+    "passage": "Kai was sure he could build the bird feeder alone. It fell apart twice. Finally he asked his sister to hold the pieces while he nailed them, and the feeder stood straight.",
+    "examples": [
+      {
+        "kind": "good",
+        "text": "Asking for help can make a hard job easier.",
+        "note": "A lesson about people in general, built from how Kai changes."
+      },
+      {
+        "kind": "bad",
+        "text": "Kai builds a bird feeder with his sister.",
+        "note": "That is a summary of the plot, not a lesson."
+      }
+    ],
+    "another": {
+      "text": "In the story of the tortoise and the hare, the hare is fast but stops for a nap, and the slow tortoise keeps going and wins. The story is about animals racing, but the lesson is for you: slow and steady can win.",
+      "example": "What happens: a tortoise beats a hare.\nTheme: slow and steady wins the race."
+    },
+    "walkthrough": {
+      "passage": true,
+      "steps": [
+        {
+          "ask": "How does Kai feel at the start?",
+          "options": [
+            "Sure he can do it alone",
+            "Scared of birds"
+          ],
+          "answer": 0,
+          "line": "Start: \"I can do it alone\""
+        },
+        {
+          "ask": "What does Kai do differently at the end?",
+          "options": [
+            "He asks his sister for help",
+            "He gives up on the feeder"
+          ],
+          "answer": 0,
+          "line": "End: asks for help, and it works"
+        },
+        {
+          "ask": "Turn the change into a lesson for anyone. Which sentence does that?",
+          "options": [
+            "Asking for help can make a hard job easier.",
+            "Kai's sister is good at holding wood."
+          ],
+          "answer": 0,
+          "then": "No names, no plot details: just the lesson.",
+          "hint": "A theme does not mention Kai at all.",
+          "line": "Theme: asking for help can make a hard job easier"
+        }
+      ]
+    },
+    "questions": [
+      {
+        "passage": "Lena laughed at the new girl's accent on the first day. A month later, Lena's family moved to a new city, and on her first day there, nobody understood her jokes. She thought of the new girl and felt her face go hot.",
+        "stem": "Which sentence best states the theme?",
+        "options": [
+          "Being new can help you understand how others feel.",
+          "Lena's family moves to a new city.",
+          "Jokes are hard to understand."
+        ],
+        "answer": 0,
+        "why": "Lena changes from laughing at someone new to knowing how it feels. The theme turns that into a lesson for anyone."
+      },
+      {
+        "passage": "Omar wanted to quit piano because the new piece was too hard. His teacher asked him to practise just the first line each day. Three weeks later, he played the whole piece at the recital.",
+        "stem": "Which sentence best states the theme?",
+        "options": [
+          "Big goals become possible when you take them one small step at a time.",
+          "Omar plays the piano at a recital.",
+          "Piano teachers give a lot of homework."
+        ],
+        "answer": 0,
+        "why": "Omar goes from wanting to quit to playing the whole piece by working on one line at a time. That change is the lesson."
+      }
+    ]
+  }
+]

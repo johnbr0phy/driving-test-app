@@ -86,10 +86,10 @@ export const NSWSEL: ExamV2Config = {
   // 4 x 2 + 1 + 2 tests = 11 steps.
   drillSize: 20,
   drills: [
-    { key: "reading", name: "Reading", section: "reading", domains: ["nswsComprehension", "nswsCohesion", "nswsCompare"], blurb: "Stories, poems and articles, sentences taken out of a text, and extracts to match and compare.", basics: ["mainIdea", "findingDetail", "inference", "wordsInContext", "toneWords", "authorPurpose", "logicalCompletion", "crossText"] },
+    { key: "reading", name: "Reading", section: "reading", domains: ["nswsComprehension", "nswsCohesion", "nswsCompare"], blurb: "Stories, poems and articles, sentences taken out of a text, and extracts to match and compare.", basics: ["mainIdea", "findingDetail", "inference", "wordsInContext", "toneWords", "authorPurpose", "logicalCompletion", "crossText", "textStructure", "factOpinion"] },
     { key: "number", name: "Number and Algebra", section: "maths", domains: ["nswsNumber"], blurb: "Fractions, decimals, percentages, ratio, factors and multiples, patterns and number sentences, without a calculator.", basics: ["decimals", "orderOfOperations", "fractionConvert", "fractionOps", "percents", "ratios", "gcfLcm", "wordProblems"] },
     { key: "measure", name: "Measurement, Space and Data", section: "maths", domains: ["nswsMeasure", "nswsData"], blurb: "Area, volume, units, time, angles and speed, then averages, tables and chance.", basics: ["unitConversion", "areaPerimeter", "volume", "triangleAngles", "rateProblems", "meanMedian", "probabilityTable", "readingTable"] },
-    { key: "critical", name: "Critical Thinking", section: "thinking", domains: ["nswsCritical"], blurb: "Strengthen and weaken arguments, find the flaw or the assumption, and decide what must be true.", basics: ["claimSupport", "inference", "factOpinion", "logicalCompletion"] },
+    { key: "critical", name: "Critical Thinking", section: "thinking", domains: ["nswsCritical"], blurb: "Strengthen and weaken arguments, find the flaw or the assumption, and decide what must be true.", basics: ["claimSupport", "mustBeTrue", "spotFlaw", "findAssumption"] },
     { key: "problem", name: "Problem Solving", section: "thinking", domains: ["nswsProblem"], blurb: "Ordering clues, truth and lies, codes, timetables, counting and number puzzles." },
   ],
   composite: { name: "Overall score", min: 0, max: 100, combine: averageOfSections },

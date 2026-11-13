@@ -717,5 +717,594 @@
         "why": "700 − 700 = 0. A zero resultant force means no change, so she keeps falling at a steady speed."
       }
     ]
+  },
+  {
+    "id": "gcsesciAtomNumbers",
+    "name": "Protons, neutrons and electrons",
+    "sub": "From atomic number and mass number",
+    "rule": "The atomic number is the number of protons. In an atom the number of electrons is the same as the number of protons, because the atom has no overall charge. The mass number is protons + neutrons, so neutrons = mass number − atomic number. Isotopes of an element have the same number of protons but different numbers of neutrons.",
+    "trick": "The mass number is the bigger number. Big minus small gives the neutrons.",
+    "examples": [
+      {
+        "kind": "eg",
+        "text": "Fluorine: atomic number 9, mass number 19",
+        "note": "9 protons, 9 electrons, 19 − 9 = 10 neutrons"
+      },
+      {
+        "kind": "eg",
+        "text": "Carbon-12 and carbon-14",
+        "note": "Both have 6 protons. 6 and 8 neutrons, so they are isotopes."
+      }
+    ],
+    "another": {
+      "text": "Think of a sports team. The atomic number is the shirt colour: it tells you which team, or element, you are. The mass number counts everyone in the team photo, players and substitutes. Take away the players to find the substitutes.",
+      "example": "Team photo (mass number): 27\nPlayers (protons): 13\nSubstitutes (neutrons): 27 − 13 = 14"
+    },
+    "walkthrough": {
+      "board": "Aluminium: atomic number 13, mass number 27",
+      "kind": "text",
+      "steps": [
+        {
+          "say": "The atomic number counts protons. The mass number counts protons and neutrons together."
+        },
+        {
+          "ask": "How many protons does an aluminium atom have?",
+          "options": [
+            "13",
+            "27",
+            "14"
+          ],
+          "answer": 0,
+          "then": "The atomic number is the number of protons.",
+          "hint": "Use the smaller number.",
+          "line": "Protons: 13"
+        },
+        {
+          "ask": "How many electrons does the atom have?",
+          "options": [
+            "13",
+            "14",
+            "0"
+          ],
+          "answer": 0,
+          "then": "An atom is neutral, so electrons match protons.",
+          "line": "Electrons: 13"
+        },
+        {
+          "ask": "Which sum gives the neutrons?",
+          "options": [
+            "27 − 13",
+            "27 + 13",
+            "13 − 27"
+          ],
+          "answer": 0,
+          "then": "Mass number minus atomic number.",
+          "hint": "Protons + neutrons = 27.",
+          "line": "Neutrons: 27 − 13"
+        },
+        {
+          "ask": "27 − 13 = ?",
+          "options": [
+            "14",
+            "40",
+            "13"
+          ],
+          "answer": 0,
+          "then": "An aluminium atom has 14 neutrons.",
+          "line": "Neutrons: 14"
+        }
+      ]
+    },
+    "questions": [
+      {
+        "stem": "Potassium has atomic number 19 and mass number 39. How many neutrons does a potassium atom have?",
+        "options": [
+          "20",
+          "19",
+          "58"
+        ],
+        "answer": 0,
+        "why": "39 − 19 = 20 neutrons."
+      },
+      {
+        "stem": "Chlorine-35 and chlorine-37 are isotopes. What is different about them?",
+        "options": [
+          "The number of neutrons",
+          "The number of protons",
+          "The number of electrons"
+        ],
+        "answer": 0,
+        "why": "Isotopes of one element have the same protons and electrons but different numbers of neutrons."
+      }
+    ]
+  },
+  {
+    "id": "gcsesciElectronShells",
+    "name": "Electron shells",
+    "sub": "2, then 8, then 8",
+    "rule": "Electrons fill shells from the inside out. The first shell holds up to 2 electrons, and the second and third shells hold up to 8 each, for the first 20 elements. The number of electrons in the outer shell is the group number, and the number of shells is the period number. Group 0 atoms have a full outer shell, which makes them unreactive.",
+    "trick": "Keep taking away 2, then 8, then 8 from the number of electrons until nothing is left. The pieces are the configuration.",
+    "examples": [
+      {
+        "kind": "eg",
+        "text": "Oxygen, 8 electrons",
+        "note": "2,6: group 6, period 2"
+      },
+      {
+        "kind": "eg",
+        "text": "Calcium, 20 electrons",
+        "note": "2,8,8,2: group 2, period 4"
+      }
+    ],
+    "another": {
+      "text": "Picture seats on a bus. The front row has only 2 seats, the next rows have 8 each. Everyone sits as near the front as they can, so you fill the front row first.",
+      "example": "11 people\nFront row: 2\nNext row: 8\nThird row: 1\n2,8,1"
+    },
+    "walkthrough": {
+      "board": "Sulfur, atomic number 16",
+      "kind": "text",
+      "steps": [
+        {
+          "say": "The atomic number gives the electrons: sulfur has 16. Fill the shells 2, then 8, then 8."
+        },
+        {
+          "ask": "How many electrons go in the first shell?",
+          "options": [
+            "2",
+            "8",
+            "16"
+          ],
+          "answer": 0,
+          "then": "The first shell is full with 2.",
+          "line": "Shell 1: 2 (14 left)"
+        },
+        {
+          "ask": "The second shell holds up to 8. How many are left after that?",
+          "options": [
+            "6",
+            "8",
+            "4"
+          ],
+          "answer": 0,
+          "then": "14 − 8 = 6 for the third shell.",
+          "hint": "14 − 8.",
+          "line": "Shell 2: 8 (6 left)"
+        },
+        {
+          "ask": "So what is the electron configuration of sulfur?",
+          "options": [
+            "2,8,6",
+            "2,6,8",
+            "8,8"
+          ],
+          "answer": 0,
+          "line": "Sulfur: 2,8,6"
+        },
+        {
+          "ask": "Which group is sulfur in?",
+          "options": [
+            "Group 6",
+            "Group 3",
+            "Group 8"
+          ],
+          "answer": 0,
+          "then": "It has 6 outer electrons, and 3 shells put it in period 3.",
+          "hint": "Count the electrons in the outer shell.",
+          "line": "Group 6, period 3"
+        }
+      ]
+    },
+    "questions": [
+      {
+        "stem": "What is the electron configuration of aluminium, atomic number 13?",
+        "options": [
+          "2,8,3",
+          "2,11",
+          "8,2,3"
+        ],
+        "answer": 0,
+        "why": "2 + 8 + 3 = 13. The second shell holds only 8, so 2,11 is wrong."
+      },
+      {
+        "stem": "An atom has the configuration 2,8,7. Which group is it in?",
+        "options": [
+          "Group 7",
+          "Group 3",
+          "Group 17"
+        ],
+        "answer": 0,
+        "why": "It has 7 electrons in its outer shell, so it is in group 7."
+      }
+    ]
+  },
+  {
+    "id": "gcsesciEfficiency",
+    "name": "Efficiency",
+    "sub": "Useful out ÷ total in",
+    "rule": "Efficiency = useful output energy ÷ total input energy. The same works with power. Multiply by 100 to give a percentage. Energy is never destroyed, so total input = useful output + wasted energy, and the wasted energy usually spreads into the surroundings as heat.",
+    "trick": "Efficiency can never be more than 1, or 100%. If your answer is bigger, you divided the wrong way round.",
+    "examples": [
+      {
+        "kind": "eg",
+        "text": "200 J in, 50 J useful",
+        "note": "50 ÷ 200 = 0.25, which is 25%"
+      },
+      {
+        "kind": "eg",
+        "text": "400 J in, 300 J useful",
+        "note": "Wasted: 400 − 300 = 100 J"
+      }
+    ],
+    "another": {
+      "text": "Imagine pouring a jug of juice into a cup with a crack in it. Some juice ends up in the cup to drink, and some leaks onto the table. Efficiency is how much of the jug actually ended up in the cup.",
+      "example": "Jug: 10 sips\nIn the cup: 8 sips\n8 ÷ 10 = 0.8, or 80%"
+    },
+    "walkthrough": {
+      "board": "A lamp is supplied with 80 J. It gives out 20 J as light and the rest as heat.",
+      "kind": "text",
+      "steps": [
+        {
+          "say": "Efficiency = useful output energy ÷ total input energy. First decide which energy is useful."
+        },
+        {
+          "ask": "A lamp is for lighting. Which energy is useful?",
+          "options": [
+            "The 20 J of light",
+            "The heat"
+          ],
+          "answer": 0,
+          "then": "The heat is wasted.",
+          "line": "Useful: 20 J, total: 80 J"
+        },
+        {
+          "ask": "Which sum gives the efficiency?",
+          "options": [
+            "20 ÷ 80",
+            "80 ÷ 20"
+          ],
+          "answer": 0,
+          "then": "Useful on top, total underneath.",
+          "hint": "The answer must be less than 1.",
+          "line": "20 ÷ 80"
+        },
+        {
+          "ask": "20 ÷ 80 = ?",
+          "options": [
+            "0.25",
+            "4",
+            "0.4"
+          ],
+          "answer": 0,
+          "then": "As a percentage that is 25%.",
+          "line": "Efficiency = 0.25 = 25%"
+        },
+        {
+          "ask": "How much energy is wasted?",
+          "options": [
+            "60 J",
+            "100 J",
+            "20 J"
+          ],
+          "answer": 0,
+          "then": "80 − 20 = 60 J, which heats the surroundings.",
+          "line": "Wasted: 80 − 20 = 60 J"
+        }
+      ]
+    },
+    "questions": [
+      {
+        "stem": "A kettle is supplied with 2,000 J and 1,800 J heats the water. What is its efficiency?",
+        "options": [
+          "0.9",
+          "1.1",
+          "0.2"
+        ],
+        "answer": 0,
+        "why": "1,800 ÷ 2,000 = 0.9, which is 90%."
+      },
+      {
+        "stem": "A motor has 600 J in and is 0.5 efficient. How much energy is wasted?",
+        "options": [
+          "300 J",
+          "600 J",
+          "1,200 J"
+        ],
+        "answer": 0,
+        "why": "Useful = 0.5 × 600 = 300 J, so 600 − 300 = 300 J is wasted."
+      }
+    ]
+  },
+  {
+    "id": "gcsesciCircuits",
+    "name": "Series and parallel",
+    "sub": "One path or several",
+    "rule": "A series circuit has one path. The current is the same everywhere, the potential difference of the supply is shared between the components, and the total resistance is the sum of the resistances. A parallel circuit has more than one path. Each branch gets the full potential difference of the supply, and the current splits between the branches, then joins up again.",
+    "trick": "Series: same current, shared p.d. Parallel: same p.d., shared current.",
+    "examples": [
+      {
+        "kind": "eg",
+        "text": "3 Ω and 5 Ω in series",
+        "note": "Total resistance = 3 + 5 = 8 Ω"
+      },
+      {
+        "kind": "eg",
+        "text": "A 6 V battery with two lamps in parallel",
+        "note": "Each lamp has 6 V across it"
+      }
+    ],
+    "another": {
+      "text": "A series circuit is one long corridor: everyone walks through every room, one after another. A parallel circuit is a hall with several doors: the crowd splits up, then meets again on the other side.",
+      "example": "Corridor: same people in every room\nDoors: the crowd splits"
+    },
+    "walkthrough": {
+      "board": "A 12 V battery is in series with two identical lamps. Then the lamps are rewired in parallel.",
+      "kind": "text",
+      "steps": [
+        {
+          "say": "First the series circuit: one path, so everything goes through both lamps."
+        },
+        {
+          "ask": "0.4 A leaves the battery. What current flows through the second lamp?",
+          "options": [
+            "0.4 A",
+            "0.2 A",
+            "0.8 A"
+          ],
+          "answer": 0,
+          "then": "In series the current is the same everywhere.",
+          "line": "Series: 0.4 A through each lamp"
+        },
+        {
+          "ask": "The lamps are identical. What p.d. is across each one?",
+          "options": [
+            "6 V",
+            "12 V",
+            "24 V"
+          ],
+          "answer": 0,
+          "then": "The 12 V is shared: 6 V each.",
+          "hint": "The supply p.d. is shared in series.",
+          "line": "Series: 6 V + 6 V = 12 V"
+        },
+        {
+          "ask": "Now in parallel. What p.d. is across each lamp?",
+          "options": [
+            "12 V",
+            "6 V"
+          ],
+          "answer": 0,
+          "then": "Each branch is connected straight across the battery.",
+          "line": "Parallel: 12 V across each lamp"
+        },
+        {
+          "ask": "In parallel, 0.5 A flows in each branch. What current leaves the battery?",
+          "options": [
+            "1 A",
+            "0.5 A",
+            "0.25 A"
+          ],
+          "answer": 0,
+          "then": "The branch currents add up: 0.5 + 0.5 = 1 A.",
+          "line": "Parallel: 0.5 + 0.5 = 1 A"
+        }
+      ]
+    },
+    "questions": [
+      {
+        "stem": "Resistors of 2 Ω, 3 Ω and 5 Ω are in series. What is the total resistance?",
+        "options": [
+          "10 Ω",
+          "30 Ω",
+          "5 Ω"
+        ],
+        "answer": 0,
+        "why": "In series the resistances add: 2 + 3 + 5 = 10 Ω."
+      },
+      {
+        "stem": "Two lamps are in parallel with a 9 V supply. What is the p.d. across each lamp?",
+        "options": [
+          "9 V",
+          "4.5 V",
+          "18 V"
+        ],
+        "answer": 0,
+        "why": "Each parallel branch gets the full supply p.d."
+      }
+    ]
+  },
+  {
+    "id": "gcsesciWaves",
+    "name": "Describing waves",
+    "sub": "Amplitude, wavelength, frequency, period",
+    "rule": "Amplitude is the biggest distance a point moves from its rest position. Wavelength is the distance from one point on a wave to the same point on the next wave, such as crest to crest. Frequency is the number of waves passing a point each second, in hertz (Hz). Period = 1 ÷ frequency, and wave speed = frequency × wavelength.",
+    "trick": "Wavelength and amplitude are lengths, so they are in metres. Frequency counts waves per second, so it is in Hz.",
+    "examples": [
+      {
+        "kind": "eg",
+        "text": "Frequency 10 Hz, wavelength 2 m",
+        "note": "Wave speed = 10 × 2 = 20 m/s"
+      },
+      {
+        "kind": "eg",
+        "text": "Frequency 4 Hz",
+        "note": "Period = 1 ÷ 4 = 0.25 s"
+      }
+    ],
+    "another": {
+      "text": "Think of a skipping rope being flicked up and down. How high the rope goes is the amplitude. The gap from one hump to the next is the wavelength. How many humps you make each second is the frequency.",
+      "example": "High flick: big amplitude\nFast flicking: high frequency"
+    },
+    "walkthrough": {
+      "board": "Water waves: 5 crests pass a buoy in 1 second, and the crests are 3 m apart.",
+      "kind": "text",
+      "steps": [
+        {
+          "say": "Pick out the frequency and the wavelength first, then use the equations."
+        },
+        {
+          "ask": "What is the frequency?",
+          "options": [
+            "5 Hz",
+            "3 Hz",
+            "15 Hz"
+          ],
+          "answer": 0,
+          "then": "5 waves pass each second.",
+          "hint": "Frequency counts waves per second.",
+          "line": "Frequency: 5 Hz"
+        },
+        {
+          "ask": "What is the wavelength?",
+          "options": [
+            "3 m",
+            "5 m"
+          ],
+          "answer": 0,
+          "then": "Crest to crest is one wavelength.",
+          "line": "Wavelength: 3 m"
+        },
+        {
+          "ask": "Wave speed = frequency × wavelength = ?",
+          "options": [
+            "15 m/s",
+            "8 m/s",
+            "0.6 m/s"
+          ],
+          "answer": 0,
+          "then": "5 × 3 = 15 m/s.",
+          "line": "Speed = 5 × 3 = 15 m/s"
+        },
+        {
+          "ask": "Period = 1 ÷ frequency = ?",
+          "options": [
+            "0.2 s",
+            "5 s",
+            "0.5 s"
+          ],
+          "answer": 0,
+          "then": "1 ÷ 5 = 0.2 s for each wave to pass.",
+          "line": "Period = 1 ÷ 5 = 0.2 s"
+        }
+      ]
+    },
+    "questions": [
+      {
+        "stem": "A sound wave has a frequency of 200 Hz and a wavelength of 1.5 m. What is its speed?",
+        "options": [
+          "300 m/s",
+          "133 m/s",
+          "201.5 m/s"
+        ],
+        "answer": 0,
+        "why": "Wave speed = 200 × 1.5 = 300 m/s."
+      },
+      {
+        "stem": "What is the distance from one crest to the next crest called?",
+        "options": [
+          "The wavelength",
+          "The amplitude",
+          "The frequency"
+        ],
+        "answer": 0,
+        "why": "Crest to crest is one wavelength. Amplitude is measured from the rest position."
+      }
+    ]
+  },
+  {
+    "id": "gcsesciMotionGraphs",
+    "name": "Motion graphs",
+    "sub": "Gradient and area",
+    "rule": "On a distance-time graph the gradient is the speed: a steeper line is faster and a horizontal line means stopped. On a velocity-time graph the gradient is the acceleration: a horizontal line means a steady speed. The area under a velocity-time graph is the distance travelled.",
+    "trick": "Always read the label on the up axis first. The same flat line means stopped on a distance-time graph but steady speed on a velocity-time graph.",
+    "examples": [
+      {
+        "kind": "eg",
+        "text": "Distance-time: 40 m in 8 s, straight line",
+        "note": "Gradient = 40 ÷ 8 = 5 m/s"
+      },
+      {
+        "kind": "eg",
+        "text": "Velocity-time: steady 6 m/s for 10 s",
+        "note": "Area = 6 × 10 = 60 m"
+      }
+    ],
+    "another": {
+      "text": "Imagine drawing your walk to school. If the line on the distance graph goes flat, you stopped to tie your shoelace. If it gets steeper, you started to run.",
+      "example": "Flat: stopped\nSteep: running\nGentle: walking"
+    },
+    "walkthrough": {
+      "board": "Velocity-time graph: a bike goes from 0 to 8 m/s in 4 s, then stays at 8 m/s for 6 s.",
+      "kind": "text",
+      "steps": [
+        {
+          "say": "This is a velocity-time graph, so the gradient is acceleration and the area is distance."
+        },
+        {
+          "ask": "What is the gradient of the first part?",
+          "options": [
+            "2 m/s²",
+            "32 m/s²",
+            "0.5 m/s²"
+          ],
+          "answer": 0,
+          "then": "Change in velocity ÷ time = 8 ÷ 4.",
+          "hint": "Rise ÷ run: 8 up, 4 along.",
+          "line": "Acceleration = 8 ÷ 4 = 2 m/s²"
+        },
+        {
+          "ask": "The second part is a flat line. What is the bike doing?",
+          "options": [
+            "Moving at a steady 8 m/s",
+            "Stopped"
+          ],
+          "answer": 0,
+          "then": "On a velocity-time graph, flat means steady speed.",
+          "line": "Then: steady 8 m/s"
+        },
+        {
+          "ask": "The first part is a triangle. Its area, 0.5 × 4 × 8, is...",
+          "options": [
+            "16 m",
+            "32 m",
+            "12 m"
+          ],
+          "answer": 0,
+          "line": "Part 1 distance: 16 m"
+        },
+        {
+          "ask": "The second part is a rectangle, 6 × 8. What is the total distance?",
+          "options": [
+            "64 m",
+            "48 m",
+            "80 m"
+          ],
+          "answer": 0,
+          "then": "16 + 48 = 64 m.",
+          "line": "Total: 16 + 48 = 64 m"
+        }
+      ]
+    },
+    "questions": [
+      {
+        "stem": "On a distance-time graph, a straight line goes from 0 m to 100 m in 20 s. What is the speed?",
+        "options": [
+          "5 m/s",
+          "2,000 m/s",
+          "0.2 m/s"
+        ],
+        "answer": 0,
+        "why": "The gradient is the speed: 100 ÷ 20 = 5 m/s."
+      },
+      {
+        "stem": "What does the area under a velocity-time graph show?",
+        "options": [
+          "The distance travelled",
+          "The acceleration",
+          "The speed"
+        ],
+        "answer": 0,
+        "why": "Area under a velocity-time graph is distance. The gradient is the acceleration."
+      }
+    ]
   }
 ]

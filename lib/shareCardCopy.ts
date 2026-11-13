@@ -71,6 +71,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   cst: { title: "Surgical Technologist", description: "Review perioperative care, sterilization, anatomy, microbiology and surgical pharmacology." },
   crcst: { title: "Sterile Processing Knowledge", description: "Review decontamination, instrument preparation, packaging, sterilization and sterile storage." },
   ged: { title: "GED Practice Tests", description: "Build skills in language arts, math, science and social studies with tests and topic drills." },
+  mapgrowth: { title: "MAP Growth Practice Test", description: "Practice math, reading and language usage for the MAP Growth test in grades 2 to 5." },
   sat: { title: "Digital SAT Practice Tests", description: "Build reading, writing and math skills with timed practice tests and focused topic drills." },
   act: { title: "ACT Practice Tests", description: "Review English, math, reading and science with timed tests, passages and skill drills." },
   teas: { title: "ATI TEAS Nursing Entrance Exam", description: "Build reading, math, science and English skills for nursing and allied health admissions." },

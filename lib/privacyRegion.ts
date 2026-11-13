@@ -36,7 +36,7 @@ export const EMAIL_OPTIN_COUNTRIES = [...COOKIE_CONSENT_COUNTRIES, "CA"];
 /**
  * Children's tests, by path prefix (landing and app pages): Times Tables, KS2
  * SATs, 11+, NSW OC and Selective, NAPLAN Year 7, JNVST and AISSEE (Class 6
- * entry). Also /c/ (joining a teacher's class).
+ * entry), MAP Growth (grades 2 to 5; "/map-growth" also covers its landing). Also /c/ (joining a teacher's class).
  */
 export const CHILD_PATH_PREFIXES = [
   "/times-tables",
@@ -48,6 +48,7 @@ export const CHILD_PATH_PREFIXES = [
   "/naplan-year-7",
   "/jnvst",
   "/aissee",
+  "/map-growth",
   "/c/",
 ];
 

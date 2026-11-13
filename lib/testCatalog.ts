@@ -647,7 +647,7 @@ const SEARCH_ALIASES: Record<string, string> = {
   hesi: "hesi a2 admission assessment nursing entrance exam evolve elsevier nursing aptitude",
   asvab: "asvab afqt math arithmetic reasoning math knowledge military army navy air force marines coast guard enlistment recruiter picat",
   cpr: "cpr aed first aid bls basic life support heartsaver red cross aha certification babysitting",
-  osha: "osha 10 osha 30 outreach construction general industry safety card focus four",
+  osha: "osha 10 osha 30 osha 50 osha 500 osha 510 outreach construction general industry safety card focus four",
   forklift: "forklift certification powered industrial truck operator license warehouse pallet jack osha",
   alcohol: "alcohol server seller certification bartender license tabc tips rbs responsible beverage service",
   accuplacer: "accuplacer college placement test math arithmetic algebra reading writing community college next generation college board",

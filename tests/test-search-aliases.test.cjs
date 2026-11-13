@@ -12,6 +12,7 @@ const CASES = [
   ["test de citoyennete canadienne", "US", "cacit"],
   ["hazard", "UK", "ukcar"],
   ["hazard perception", "UK", "ukcar"],
+  ["osha 50", "US", "osha"],
 ];
 
 for (const [q, region, id] of CASES) {

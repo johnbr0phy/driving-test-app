@@ -21,6 +21,9 @@ const CASES = [
   ["gcp architect", "US", "gcppca"],
   ["professional cloud architect", "US", "gcppca"],
   ["pca google", "IN", "gcppca"],
+  ["jkssb", "IN", "jkssbja"],
+  ["jkssb junior assistant", "IN", "jkssbja"],
+  ["jkssb", "US", "jkssbja"],
 ];
 
 for (const [q, region, id] of CASES) {

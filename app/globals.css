@@ -3318,6 +3318,20 @@
     --brand-gradient-to: 180 46% 96%;
   }
 
+  /* JKSSB Junior Assistant theme: saffron crocus purple (v2 exam; matches lib/v2/exams/jkssbja.ts theme) */
+  [data-theme="jkssbja"] {
+    --brand: 285 85% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 285 85% 96%;
+    --brand-hover: 285 85% 26%;
+    --brand-dark: 285 85% 22%;
+    --brand-darker: 285 80% 14%;
+    --brand-muted: 285 30% 72%;
+    --brand-border: 285 40% 80%;
+    --brand-border-light: 285 40% 90%;
+    --brand-gradient-to: 274 85% 96%;
+  }
+
   /* AP U.S. History theme: muted oxblood (v2 exam; matches lib/v2/exams/apush.ts theme) */
   [data-theme="apush"] {
     --brand: 0 25% 38%;
@@ -7664,6 +7678,18 @@
     --brand-muted: 191 30% 45%;
     --brand-dark: 191 46% 65%;
     --brand-darker: 191 41% 78%;
+  }
+
+  .dark [data-theme="jkssbja"] {
+    --brand: 285 85% 50%;
+    --brand-hover: 285 85% 42%;
+    --brand-light: 285 45% 13%;
+    --brand-gradient-to: 274 40% 11%;
+    --brand-border-light: 285 35% 24%;
+    --brand-border: 285 40% 34%;
+    --brand-muted: 285 30% 45%;
+    --brand-dark: 285 85% 65%;
+    --brand-darker: 285 80% 78%;
   }
 
   .dark [data-theme="apush"] {

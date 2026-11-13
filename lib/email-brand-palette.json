@@ -234,6 +234,7 @@
   "rajpolice": ["#9d6b25","#fbf6ef","#503816","#f0e7db"],
   "delhipolice": ["#362e6b","#f2f1f9","#171429","#dedbf0"],
   "mppolice": ["#347d8d","#f0f8f9","#1e4048","#dbecf0"],
+  "tgsi": ["#206218","#f0fbef","#112f0e","#ddf0db"],
   "apush": ["#794949","#f7f2f2","#3d2929","#ecdfdf"],
   "apitalian": ["#8b1865","#fceef7","#411031","#f1dae9"],
   "apbio": ["#2f8122","#f0fbef","#163711","#def0db"],

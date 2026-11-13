@@ -3596,6 +3596,23 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the MPESB Police Constable Recruitment Test 2025 as reported by exam guides, checked November 2026",
     source: { name: "Madhya Pradesh Employees Selection Board", url: "https://esb.mp.gov.in" },
   },
+  tgsi: {
+    answer:
+      "The Telangana Police Sub-Inspector Preliminary Written Test is set by the Telangana State Level Police Recruitment Board (TSLPRB, www.tgprb.in). Its 2026 notification (29 July 2026, 275 SI and equivalent posts) sets one 3-hour paper of 200 objective questions for 200 marks: Arithmetic and Test of Reasoning / Mental Ability 100 and General Studies 100, including the Telangana Movement and State Formation. A wrong answer, or more than one bubble marked, costs 20% of the question's marks, and a blank scores zero. To qualify you need 30% (OC and EWS), 25% (BC) or 20% (SC, ST and Ex-Servicemen). Questions are set in English-Telugu and English-Urdu, with the English version final. The board has tentatively scheduled the SI test for 29 November 2026; qualifiers go on to the physical tests and a Final Written Examination of four papers.",
+    rows: [
+      { label: "Questions", value: "200 objective (1 mark each, 200 marks)" },
+      { label: "Time", value: "3 hours, one paper on an OMR sheet" },
+      { label: "Parts", value: "Arithmetic and Reasoning / Mental Ability 100, General Studies 100" },
+      { label: "Negative marking", value: "20% of a question's marks for each wrong answer" },
+      { label: "Qualifying marks", value: "30% OC and EWS, 25% BC, 20% SC, ST and Ex-Servicemen" },
+      { label: "Languages", value: "English-Telugu and English-Urdu (English version final)" },
+      { label: "Next test", value: "SI test tentatively 29 November 2026 (2026 recruitment)" },
+      { label: "Next stages", value: "PMT and PET, then a Final Written Examination of four papers" },
+      { label: "Given by", value: "Telangana State Level Police Recruitment Board (TSLPRB)" },
+    ],
+    basedOn: "the TSLPRB notification Rc. No. 225/Rect./Rect.1/2026 of 29 July 2026 and its press note of 17 September 2026, checked November 2026",
+    source: { name: "Telangana State Level Police Recruitment Board", url: "https://www.tgprb.in" },
+  },
   apush: {
     answer:
       "The AP U.S. History Exam is a fully digital, 3 hour 15 minute exam from the College Board. Section I has 55 multiple-choice questions in 55 minutes (40% of the score), usually in sets of three or four that share a primary or secondary source, plus 3 short-answer questions in 40 minutes (20%). Section II has a document-based question in 60 minutes (25%) and a long essay in 40 minutes (15%). The course runs from 1491 to the present in nine periods; Periods 3 to 8 are each 10% to 17% of the multiple-choice section. Scores are reported from 1 to 5, and wrong answers are not penalized.",

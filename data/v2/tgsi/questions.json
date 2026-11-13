@@ -1,0 +1,5045 @@
+[
+  {
+    "id": "TGSI-T1-001",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiArithA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number system",
+    "stem": "What is the smallest number that must be added to 3,000 to make it exactly divisible by 53?",
+    "options": [
+      "20",
+      "21",
+      "22",
+      "32"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "53 × 56 = 2,968 and 53 × 57 = 3,021, so 3,021 - 3,000 = 21 must be added. Taking away 32 would reach 2,968, the multiple below."
+  },
+  {
+    "id": "TGSI-T1-002",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiArithB",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Time and work",
+    "stem": "A can do a job in 12 days and B in 15 days. They work together for 4 days and then A leaves. In how many more days will B finish the job?",
+    "options": [
+      "5 days",
+      "6 days",
+      "7 days",
+      "8 days"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Together they do 1/12 + 1/15 = 3/20 a day, so 4 days finish 12/20 = 3/5. B does the remaining 2/5 at 1/15 a day: 2/5 × 15 = 6 days."
+  },
+  {
+    "id": "TGSI-T1-003",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiArithA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Percentage",
+    "stem": "In a college election between two candidates, the winner got 62% of the valid votes and won by 1,872 votes. How many valid votes were cast?",
+    "options": [
+      "7,200",
+      "7,500",
+      "7,800",
+      "8,200"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The loser got 38%, so the margin is 62% - 38% = 24% of the votes. 24% = 1,872 gives 1% = 78 and 100% = 7,800."
+  },
+  {
+    "id": "TGSI-T1-004",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiArithB",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Work and wages",
+    "stem": "A and B are paid ₹3,600 for a job they finish together. A alone would take 10 days and B alone 15 days. What is B's share?",
+    "options": [
+      "₹1,200",
+      "₹1,440",
+      "₹1,800",
+      "₹2,160"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Wages follow the work done, which follows speed: A : B = 1/10 : 1/15 = 3 : 2. B gets 2/5 of 3,600 = ₹1,440. ₹2,160 is A's share."
+  },
+  {
+    "id": "TGSI-T1-005",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiArithA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Profit and loss",
+    "stem": "A trader marks goods 40% above cost price and allows a 15% discount. What is his profit percent?",
+    "options": [
+      "17%",
+      "19%",
+      "21%",
+      "25%"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "On a cost of 100 the marked price is 140, and 15% off leaves 140 × 0.85 = 119. Profit = 19%. Subtracting 15 from 40 (25%) is the common mistake."
+  },
+  {
+    "id": "TGSI-T1-006",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiArithB",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Trains",
+    "stem": "A train 210 m long passes a signal post in 14 seconds. What is its speed?",
+    "options": [
+      "45 km/h",
+      "50 km/h",
+      "54 km/h",
+      "60 km/h"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Speed = 210 ÷ 14 = 15 m/s, and 15 × 18/5 = 54 km/h."
+  },
+  {
+    "id": "TGSI-T1-007",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiArithA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Simple interest",
+    "stem": "At what rate of simple interest per year will a sum become three times itself in 16 years?",
+    "options": [
+      "6.25%",
+      "12.5%",
+      "15%",
+      "18.75%"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Becoming three times means the interest is twice the principal: 200 = 100 × R × 16 ÷ 100, so R = 200 ÷ 16 = 12.5%. 18.75% would be 300 ÷ 16, wrongly taking the whole amount as interest."
+  },
+  {
+    "id": "TGSI-T1-008",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiArithB",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Trains",
+    "stem": "A train 160 m long, running at 63 km/h, crosses a platform in 24 seconds. How long is the platform?",
+    "options": [
+      "240 m",
+      "260 m",
+      "280 m",
+      "420 m"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "63 km/h = 17.5 m/s, so in 24 s the train covers 420 m. That is its own length plus the platform: 420 - 160 = 260 m."
+  },
+  {
+    "id": "TGSI-T1-009",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiArithA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Compound interest",
+    "stem": "What is the compound interest on ₹20,000 for 2 years at 10% a year, compounded yearly?",
+    "options": [
+      "₹2,100",
+      "₹4,000",
+      "₹4,200",
+      "₹4,400"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Amount = 20,000 × 1.1 × 1.1 = ₹24,200, so CI = ₹4,200. Simple interest for the same period would be ₹4,000."
+  },
+  {
+    "id": "TGSI-T1-010",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiArithB",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Trains",
+    "stem": "Two trains 140 m and 160 m long run on parallel tracks in opposite directions at 45 km/h and 63 km/h. How long do they take to pass each other completely?",
+    "options": [
+      "8 seconds",
+      "10 seconds",
+      "12 seconds",
+      "20 seconds"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Opposite directions add: 108 km/h = 30 m/s. They must cover 140 + 160 = 300 m, so 300 ÷ 30 = 10 seconds."
+  },
+  {
+    "id": "TGSI-T1-011",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiArithA",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ratio",
+    "stem": "Two numbers are in the ratio 5 : 7 and their sum is 156. What is the larger number?",
+    "options": [
+      "65",
+      "78",
+      "84",
+      "91"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "5 + 7 = 12 parts, so one part = 156 ÷ 12 = 13. The larger number is 7 × 13 = 91 and the smaller is 65."
+  },
+  {
+    "id": "TGSI-T1-012",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiArithB",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Boats and streams",
+    "stem": "A boat goes 30 km downstream in 2 hours and comes back upstream in 3 hours. What is the speed of the stream?",
+    "options": [
+      "2.5 km/h",
+      "3 km/h",
+      "5 km/h",
+      "12.5 km/h"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Downstream speed = 15 km/h and upstream = 10 km/h. The stream's speed is half the difference: (15 - 10) ÷ 2 = 2.5 km/h. 12.5 km/h is the boat's own speed."
+  },
+  {
+    "id": "TGSI-T1-013",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiArithA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Partnership",
+    "stem": "A invests ₹30,000 for 12 months and B invests ₹45,000 for 8 months. Out of a profit of ₹14,000, what is A's share?",
+    "options": [
+      "₹5,600",
+      "₹6,000",
+      "₹7,000",
+      "₹8,400"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Profit is shared by capital × time: A = 30,000 × 12 = 3,60,000 and B = 45,000 × 8 = 3,60,000. The ratio is 1 : 1, so A gets ₹7,000. Using capital alone (2 : 3) gives ₹5,600."
+  },
+  {
+    "id": "TGSI-T1-014",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiArithB",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Clocks",
+    "stem": "What is the angle between the hour hand and the minute hand of a clock at 8:25?",
+    "options": [
+      "92.5°",
+      "97.5°",
+      "102.5°",
+      "112.5°"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The minute hand is at 25 × 6 = 150°. The hour hand is at 8 × 30 + 25 × 0.5 = 252.5°. The angle between them is 252.5 - 150 = 102.5°."
+  },
+  {
+    "id": "TGSI-T1-015",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiArithA",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Average",
+    "stem": "The average of 6 numbers is 42. If the number 57 is removed, what is the average of the other five?",
+    "options": [
+      "37",
+      "39",
+      "40",
+      "41"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Total = 6 × 42 = 252. Removing 57 leaves 195, and 195 ÷ 5 = 39."
+  },
+  {
+    "id": "TGSI-T1-016",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiArithB",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Calendars",
+    "stem": "2 June 2025, Telangana Formation Day, was a Monday. What day of the week was 2 June 2026?",
+    "options": [
+      "Tuesday",
+      "Monday",
+      "Sunday",
+      "Wednesday"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "No 29 February falls between the two dates, so they are 365 days apart: 52 weeks and 1 odd day. Monday moves on by one day to Tuesday."
+  },
+  {
+    "id": "TGSI-T1-017",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiArithA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number system",
+    "stem": "What is the unit digit of 3 raised to the power 42?",
+    "options": [
+      "1",
+      "3",
+      "7",
+      "9"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Unit digits of powers of 3 repeat in a cycle of four: 3, 9, 7, 1. 42 ÷ 4 leaves remainder 2, so the unit digit is the second in the cycle, 9."
+  },
+  {
+    "id": "TGSI-T1-018",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiArithB",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Mensuration",
+    "stem": "What is the area of a triangle whose sides are 13 cm, 14 cm and 15 cm?",
+    "options": [
+      "72 cm²",
+      "84 cm²",
+      "91 cm²",
+      "105 cm²"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "By Heron's formula, s = (13 + 14 + 15) ÷ 2 = 21 and area = √(21 × 8 × 7 × 6) = √7,056 = 84 cm²."
+  },
+  {
+    "id": "TGSI-T1-019",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiArithA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Percentage",
+    "stem": "If the price of sugar rises by 25%, by how much must a family cut its consumption to keep its spending the same?",
+    "options": [
+      "15%",
+      "20%",
+      "25%",
+      "30%"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The cut is 25 ÷ (100 + 25) × 100 = 20%. Cutting by the same 25% would lower the spending."
+  },
+  {
+    "id": "TGSI-T1-020",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiArithB",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mensuration",
+    "stem": "The circumference of a circular park is 220 m. What is its area? (Take π = 22/7.)",
+    "options": [
+      "1,100 m²",
+      "1,925 m²",
+      "3,850 m²",
+      "7,700 m²"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "2πr = 220 gives r = 35 m. Area = 22/7 × 35 × 35 = 3,850 m². 7,700 would come from using the diameter in place of the radius in one factor."
+  },
+  {
+    "id": "TGSI-T1-021",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiArithA",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Proportion",
+    "stem": "What is the fourth proportional to 6, 9 and 14?",
+    "options": [
+      "18",
+      "21",
+      "24",
+      "27"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "6 : 9 = 14 : x, so x = 9 × 14 ÷ 6 = 21."
+  },
+  {
+    "id": "TGSI-T1-022",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiArithB",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pipes and cisterns",
+    "stem": "Pipe A can fill a tank in 6 hours and pipe B can empty it in 9 hours. If both are opened together on an empty tank, when will it be full?",
+    "options": [
+      "In 15 hours",
+      "In 12 hours",
+      "In 3.6 hours",
+      "In 18 hours"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Net filling per hour = 1/6 - 1/9 = 1/18, so the tank fills in 18 hours. 3.6 hours would be the answer if both pipes filled."
+  },
+  {
+    "id": "TGSI-T1-023",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiArithA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Average",
+    "stem": "A husband and wife had an average age of 28 when they married. Five years later they have a 3-year-old child. What is the average age of the family now?",
+    "options": [
+      "22 years",
+      "23 years",
+      "24 years",
+      "25 years"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Five years on, the couple's ages total 56 + 10 = 66. Adding the child's 3 gives 69, and 69 ÷ 3 = 23 years."
+  },
+  {
+    "id": "TGSI-T1-024",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiArithB",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Average speed",
+    "stem": "A car goes from P to Q at 30 km/h and returns over the same road at 45 km/h. What is its average speed for the whole journey?",
+    "options": [
+      "35 km/h",
+      "36 km/h",
+      "37.5 km/h",
+      "40 km/h"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "For equal distances, average speed = 2 × 30 × 45 ÷ (30 + 45) = 2,700 ÷ 75 = 36 km/h. 37.5 km/h is the simple average of the speeds, which is wrong."
+  },
+  {
+    "id": "TGSI-T1-025",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiArithA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Profit and loss",
+    "stem": "A man buys oranges at 6 for ₹20 and sells them at 4 for ₹16. What is his gain percent?",
+    "options": [
+      "16%",
+      "20%",
+      "25%",
+      "33%"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Cost of one orange = 20 ÷ 6 = ₹10/3 and selling price = 16 ÷ 4 = ₹4. Gain = 4 - 10/3 = 2/3, and (2/3) ÷ (10/3) × 100 = 20%."
+  },
+  {
+    "id": "TGSI-T1-026",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Analogy",
+    "stem": "Thermometer : Temperature :: Odometer : ?",
+    "options": [
+      "Fuel",
+      "Speed",
+      "Distance",
+      "Time"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A thermometer measures temperature and an odometer measures the distance a vehicle has travelled. Speed is shown by a speedometer."
+  },
+  {
+    "id": "TGSI-T1-027",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Blood relations",
+    "stem": "Pointing to a woman, Ramesh says, \"Her mother's only son is my father.\" How is the woman related to Ramesh?",
+    "options": [
+      "Mother",
+      "Sister",
+      "Aunt",
+      "Grandmother"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The woman's mother's only son is the woman's brother, and he is Ramesh's father. So the woman is his father's sister, Ramesh's aunt."
+  },
+  {
+    "id": "TGSI-T1-028",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Number analogy",
+    "stem": "6 : 36 :: 9 : ?",
+    "options": [
+      "63",
+      "72",
+      "81",
+      "90"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "36 is 6 squared, so the answer is 9 squared, 81."
+  },
+  {
+    "id": "TGSI-T1-029",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Directions",
+    "stem": "Ravi walks 8 km east, turns left and walks 6 km, then turns left again and walks 8 km. Where is he now from his starting point?",
+    "options": [
+      "14 km east",
+      "6 km south",
+      "10 km north",
+      "6 km north"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Left from east is north, and left again is west. The 8 km east and 8 km west cancel, leaving him 6 km north of the start."
+  },
+  {
+    "id": "TGSI-T1-030",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Letter analogy",
+    "stem": "BDF : CEG :: MOQ : ?",
+    "options": [
+      "LNP",
+      "NPR",
+      "OQS",
+      "NOP"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Each letter of BDF moves one place forward to give CEG. Moving each letter of MOQ one place forward gives NPR."
+  },
+  {
+    "id": "TGSI-T1-031",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ranking",
+    "stem": "In a class, Kiran is 12th from the top and 25th from the bottom. How many students are in the class?",
+    "options": [
+      "35",
+      "36",
+      "37",
+      "38"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Total = 12 + 25 - 1 = 36. Kiran is counted in both positions, so one is taken away."
+  },
+  {
+    "id": "TGSI-T1-032",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Odd one out",
+    "stem": "Find the odd one out: 196, 256, 324, 410",
+    "options": [
+      "196",
+      "256",
+      "324",
+      "410"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "196, 256 and 324 are the squares of 14, 16 and 18. 410 is not a perfect square."
+  },
+  {
+    "id": "TGSI-T1-033",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Syllogism",
+    "stem": "Statements: All constables are trained. Some trained people are drivers. Conclusions: I. Some constables are drivers. II. Some drivers are trained. Which conclusion follows?",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The trained people who are drivers need not be constables, so I does not follow. \"Some trained people are drivers\" can be reversed to \"some drivers are trained\", so II follows."
+  },
+  {
+    "id": "TGSI-T1-034",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Odd one out",
+    "stem": "Find the odd one out: Circle, Rectangle, Rhombus, Sphere",
+    "options": [
+      "Rectangle",
+      "Circle",
+      "Rhombus",
+      "Sphere"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Circle, rectangle and rhombus are flat (two-dimensional) shapes. A sphere is a solid."
+  },
+  {
+    "id": "TGSI-T1-035",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Arrangement",
+    "stem": "Seven files P, Q, R, S, T, U and V are stacked one above another. P is at the top and V at the bottom. S is directly below P. U is directly below S and directly above Q. Q is directly above R, and T is directly above V. Which file is fourth from the top?",
+    "options": [
+      "T",
+      "U",
+      "R",
+      "Q"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "From the top: P, S, U, Q, R, T, V. The fourth file is Q."
+  },
+  {
+    "id": "TGSI-T1-036",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "Find the next number: 2, 6, 12, 20, 30, ?",
+    "options": [
+      "36",
+      "40",
+      "42",
+      "44"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The differences are 4, 6, 8, 10, so the next difference is 12: 30 + 12 = 42. Each term is also n × (n + 1)."
+  },
+  {
+    "id": "TGSI-T1-037",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Assumptions",
+    "stem": "Statement: \"Helmets are now compulsory for pillion riders on two-wheelers too.\" Assumptions: I. Pillion riders can also suffer head injuries in accidents. II. Most riders already wear helmets. Which assumption is implicit?",
+    "options": [
+      "Only I is implicit",
+      "Only II is implicit",
+      "Both are implicit",
+      "Neither is implicit"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The rule only makes sense if pillion riders are at risk of head injury, so I is assumed. The rule says nothing about how many riders already wear helmets, so II is not."
+  },
+  {
+    "id": "TGSI-T1-038",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "Find the next number: 4, 9, 19, 39, 79, ?",
+    "options": [
+      "119",
+      "158",
+      "159",
+      "160"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Each term is double the previous plus 1: 79 × 2 + 1 = 159."
+  },
+  {
+    "id": "TGSI-T1-039",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Judgment",
+    "stem": "A constable on night patrol sees smoke coming out of a locked shop. What should he do first?",
+    "options": [
+      "Note it in the diary next morning",
+      "Break in alone and search the shop",
+      "Wait for the owner to come and open it",
+      "Alert the fire service and control room"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Lives and property are at risk, so the first step is to call the fire service and inform the control room. Waiting or only recording it lets the fire spread, and entering alone is unsafe."
+  },
+  {
+    "id": "TGSI-T1-040",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Letter series",
+    "stem": "Find the next letter: B, E, H, K, ?",
+    "options": [
+      "M",
+      "O",
+      "L",
+      "N"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Each letter is three places after the last: B (2), E (5), H (8), K (11), so N (14)."
+  },
+  {
+    "id": "TGSI-T1-041",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiLogical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Coded relations",
+    "stem": "P × Q means P is the brother of Q, P ÷ Q means P is the mother of Q, and P + Q means P is the father of Q. What does A ÷ B × C mean?",
+    "options": [
+      "A is the aunt of C",
+      "A is the daughter of C",
+      "A is the mother of C",
+      "A is the sister of C"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A ÷ B: A is the mother of B. B × C: B is the brother of C. So C is A's child as well, and A is the mother of C."
+  },
+  {
+    "id": "TGSI-T1-042",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Coding",
+    "stem": "If TIGER is coded as UJHFS, how is HORSE coded?",
+    "options": [
+      "IPSTF",
+      "JQTUG",
+      "IPTSF",
+      "GNQRD"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Each letter moves one place forward: T to U, I to J and so on. HORSE becomes IPSTF. GNQRD moves each letter back instead."
+  },
+  {
+    "id": "TGSI-T1-043",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Dice",
+    "stem": "On a die, 1 is opposite 6, 2 is opposite 5 and 3 is opposite 4. If 2 is on top and 3 faces you, which number is at the bottom?",
+    "options": [
+      "1",
+      "4",
+      "5",
+      "6"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The bottom face is opposite the top face. 2 is on top and 5 is opposite 2, so 5 is at the bottom. Which face points at you does not change this."
+  },
+  {
+    "id": "TGSI-T1-044",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Coding",
+    "stem": "In a code, each letter is replaced by the letter two places before it in the alphabet, counting on from A back to Z. How is MANGO written?",
+    "options": [
+      "LZMFN",
+      "KYLEM",
+      "KZLEM",
+      "OCPIQ"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "M becomes K, A goes back past the start of the alphabet to Y, N becomes L, G becomes E and O becomes M: KYLEM."
+  },
+  {
+    "id": "TGSI-T1-045",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mirror images",
+    "stem": "A clock seen in a mirror shows 4:20. What is the actual time?",
+    "options": [
+      "7:20",
+      "7:40",
+      "8:20",
+      "8:40"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "For a mirror image, subtract the time shown from 11:60: 11:60 - 4:20 = 7:40."
+  },
+  {
+    "id": "TGSI-T1-046",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "Find the missing number: 8, 27, 125, 343, ?, 2197",
+    "options": [
+      "729",
+      "1000",
+      "1331",
+      "1728"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "These are the cubes of the prime numbers 2, 3, 5, 7, 11, 13. The missing term is 11 cubed, 1331."
+  },
+  {
+    "id": "TGSI-T1-047",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Directions",
+    "stem": "One evening before sunset, Anil walks towards a lamp post and his own shadow falls straight behind him. Which direction is he walking?",
+    "options": [
+      "West",
+      "South",
+      "North",
+      "East"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "In the evening the sun is in the west, so shadows point east. If his shadow is behind him, the sun is in front, and he is walking west."
+  },
+  {
+    "id": "TGSI-T1-048",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Analogy",
+    "stem": "Cricket : Pitch :: Boxing : ?",
+    "options": [
+      "Court",
+      "Rink",
+      "Ring",
+      "Track"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Cricket is played on a pitch and boxing in a ring. A court is for tennis or badminton and a rink for skating."
+  },
+  {
+    "id": "TGSI-T1-049",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Inequality",
+    "stem": "Statements: M < N ≤ O, O > P, P ≥ Q. Conclusions: I. M < O II. N > Q. Which conclusion follows?",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "M < N ≤ O gives M < O, so I follows. N and Q are linked only through O > P ≥ Q, which does not fix how N compares with Q, so II does not follow."
+  },
+  {
+    "id": "TGSI-T1-050",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Letter series",
+    "stem": "Find the next letter: Z, X, U, Q, ?",
+    "options": [
+      "K",
+      "N",
+      "L",
+      "M"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Going backwards, the gaps grow by one each time: Z to X is 2, X to U is 3, U to Q is 4, so Q to L is 5."
+  },
+  {
+    "id": "TGSI-T1-051",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Nutrition",
+    "stem": "Night blindness is caused by a lack of which vitamin?",
+    "options": [
+      "Vitamin A",
+      "Vitamin D",
+      "Vitamin C",
+      "Vitamin K"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Vitamin A is needed to make the pigment the eye uses in dim light, so too little causes night blindness. Carrots, green leaves and milk supply it."
+  },
+  {
+    "id": "TGSI-T1-052",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Environment",
+    "stem": "Which group of man-made chemicals is the main cause of the thinning of the ozone layer?",
+    "options": [
+      "Sulphur dioxide",
+      "Carbon monoxide",
+      "Nitrogen fertilisers",
+      "Chlorofluorocarbons"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Chlorofluorocarbons (CFCs), once used in refrigerators and sprays, release chlorine high in the atmosphere, which breaks down ozone. The Montreal Protocol phases them out."
+  },
+  {
+    "id": "TGSI-T1-053",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Light",
+    "stem": "A spoon dipped in a glass of water looks bent at the surface. Which effect causes this?",
+    "options": [
+      "Refraction",
+      "Dispersion",
+      "Diffraction",
+      "Reflection"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Light bends as it passes from water into air because it travels at different speeds in the two. This bending is refraction."
+  },
+  {
+    "id": "TGSI-T1-054",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Units",
+    "stem": "What is the SI unit of electric charge?",
+    "options": [
+      "Farad",
+      "Henry",
+      "Coulomb",
+      "Ampere"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Charge is measured in coulombs; one ampere is one coulomb flowing each second. The farad measures capacitance and the henry inductance."
+  },
+  {
+    "id": "TGSI-T1-055",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Human body",
+    "stem": "Which part of the blood helps a wound to clot?",
+    "options": [
+      "Platelets",
+      "Red blood cells",
+      "White blood cells",
+      "Haemoglobin"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Platelets gather at a cut and start the clotting process. Red cells carry oxygen using haemoglobin, and white cells fight infection."
+  },
+  {
+    "id": "TGSI-T1-056",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Diseases",
+    "stem": "Which disease is spread by the bite of the female Anopheles mosquito?",
+    "options": [
+      "Typhoid",
+      "Dengue",
+      "Chikungunya",
+      "Malaria"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The female Anopheles mosquito carries the Plasmodium parasite that causes malaria. Dengue and chikungunya are spread by Aedes mosquitoes, and typhoid by contaminated food and water."
+  },
+  {
+    "id": "TGSI-T1-057",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Water and health",
+    "stem": "Fluorosis, a long-standing problem in parts of Nalgonda district, is caused by too much of what in drinking water?",
+    "options": [
+      "Nitrate",
+      "Arsenic",
+      "Iron",
+      "Fluoride"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Drinking water with excess fluoride for years damages teeth and bones, causing dental and skeletal fluorosis. Groundwater in parts of Nalgonda has high natural fluoride."
+  },
+  {
+    "id": "TGSI-T1-058",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Chemistry in daily life",
+    "stem": "Which acid gives vinegar its sour taste?",
+    "options": [
+      "Acetic acid",
+      "Tartaric acid",
+      "Citric acid",
+      "Formic acid"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Vinegar is a dilute solution of acetic (ethanoic) acid. Citric acid is in lemons and formic acid in ant stings."
+  },
+  {
+    "id": "TGSI-T1-059",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Atmosphere",
+    "stem": "Which layer of the atmosphere lies closest to the Earth's surface and holds almost all of its weather?",
+    "options": [
+      "Mesosphere",
+      "Stratosphere",
+      "Troposphere",
+      "Thermosphere"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The troposphere is the lowest layer, where clouds, rain and storms form. The ozone layer lies above it, in the stratosphere."
+  },
+  {
+    "id": "TGSI-T1-060",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Chemistry in daily life",
+    "stem": "What is the common name of sodium bicarbonate (NaHCO₃)?",
+    "options": [
+      "Baking soda",
+      "Common salt",
+      "Washing soda",
+      "Caustic soda"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Sodium bicarbonate is baking soda, used in cooking and antacids. Washing soda is sodium carbonate and caustic soda is sodium hydroxide."
+  },
+  {
+    "id": "TGSI-T1-061",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiHistory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "National Movement",
+    "stem": "Who founded the Indian National Congress in 1885?",
+    "options": [
+      "Dadabhai Naoroji",
+      "Surendranath Banerjee",
+      "A. O. Hume",
+      "W. C. Bonnerjee"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Allan Octavian Hume, a retired British civil servant, founded the Congress in 1885. W. C. Bonnerjee presided over its first session in Bombay."
+  },
+  {
+    "id": "TGSI-T1-062",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiHistory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "National Movement",
+    "stem": "Which event led Rabindranath Tagore to give up his knighthood in 1919?",
+    "options": [
+      "The Partition of Bengal",
+      "The Jallianwala Bagh massacre",
+      "The Chauri Chaura incident",
+      "The arrest of Gandhi"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Tagore returned his knighthood in protest against the firing on a peaceful crowd at Jallianwala Bagh, Amritsar, on 13 April 1919."
+  },
+  {
+    "id": "TGSI-T1-063",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiHistory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "National Movement",
+    "stem": "In which year was the Quit India Movement launched?",
+    "options": [
+      "1930",
+      "1940",
+      "1942",
+      "1945"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The Quit India resolution was passed at Bombay in August 1942, with Gandhi's call \"Do or Die\". 1930 was the year of the Dandi March."
+  },
+  {
+    "id": "TGSI-T1-064",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ancient India",
+    "stem": "Which Harappan site is known for its \"Great Bath\"?",
+    "options": [
+      "Harappa",
+      "Kalibangan",
+      "Lothal",
+      "Mohenjo-daro"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Great Bath, a large brick-lined tank, was found at Mohenjo-daro in Sindh. Lothal is known for its dockyard."
+  },
+  {
+    "id": "TGSI-T1-065",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiHistory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ancient India",
+    "stem": "Which Mauryan emperor turned to Buddhism after the Kalinga war?",
+    "options": [
+      "Ashoka",
+      "Bindusara",
+      "Samudragupta",
+      "Chandragupta Maurya"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Ashoka's conquest of Kalinga caused great bloodshed, after which he embraced Buddhism and spread dhamma through his edicts. Samudragupta was a Gupta ruler."
+  },
+  {
+    "id": "TGSI-T1-066",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiHistory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ancient India",
+    "stem": "Who wrote the Arthashastra, a treatise on statecraft?",
+    "options": [
+      "Banabhatta",
+      "Kautilya",
+      "Megasthenes",
+      "Kalidasa"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Kautilya, also called Chanakya, minister of Chandragupta Maurya, is credited with the Arthashastra. Megasthenes, a Greek envoy, wrote the Indica."
+  },
+  {
+    "id": "TGSI-T1-067",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Modern India",
+    "stem": "Who led the East India Company's forces at the Battle of Plassey in 1757?",
+    "options": [
+      "Lord Cornwallis",
+      "Robert Clive",
+      "Warren Hastings",
+      "Hector Munro"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Robert Clive defeated Siraj-ud-Daulah at Plassey. Hector Munro commanded the Company's army at Buxar in 1764."
+  },
+  {
+    "id": "TGSI-T1-068",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiHistory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "National Movement",
+    "stem": "Which movement did Gandhi begin with the Dandi March in 1930?",
+    "options": [
+      "Khilafat",
+      "Quit India",
+      "Non-Cooperation",
+      "Civil Disobedience"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Breaking the salt law at Dandi on 6 April 1930 launched the Civil Disobedience Movement. Non-Cooperation began in 1920 and Quit India in 1942."
+  },
+  {
+    "id": "TGSI-T1-069",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Telangana history",
+    "stem": "According to the Government of Telangana, which were the earliest known rulers of the Telangana region?",
+    "options": [
+      "The Qutb Shahis",
+      "The Satavahanas",
+      "The Kakatiyas",
+      "The Asaf Jahis"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The state's own account names the Satavahanas as the earliest known rulers of the region. The Kakatiyas ruled from the 11th to the 14th century, followed later by the Qutb Shahis and the Asaf Jahis."
+  },
+  {
+    "id": "TGSI-T1-070",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiHistory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Modern India",
+    "stem": "Who was the only Indian to serve as Governor-General of independent India?",
+    "options": [
+      "C. Rajagopalachari",
+      "Rajendra Prasad",
+      "Lord Mountbatten",
+      "Vallabhbhai Patel"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "C. Rajagopalachari succeeded Lord Mountbatten in June 1948 and held the office until India became a republic in 1950."
+  },
+  {
+    "id": "TGSI-T1-071",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Earth",
+    "stem": "At what latitude does the Tropic of Cancer lie?",
+    "options": [
+      "66.5° N",
+      "23.5° N",
+      "23.5° S",
+      "0°"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Tropic of Cancer is at about 23.5° north. 66.5° N is the Arctic Circle, 0° the Equator and 23.5° S the Tropic of Capricorn."
+  },
+  {
+    "id": "TGSI-T1-072",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Rivers",
+    "stem": "Which is the longest river of peninsular India?",
+    "options": [
+      "Mahanadi",
+      "Kaveri",
+      "Godavari",
+      "Krishna"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Godavari, sometimes called the Dakshina Ganga, is the longest river of the peninsula. It flows across Telangana to the Bay of Bengal."
+  },
+  {
+    "id": "TGSI-T1-073",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Earth",
+    "stem": "Which layer of the Earth lies directly below the crust?",
+    "options": [
+      "The lithosphere",
+      "The mantle",
+      "The outer core",
+      "The inner core"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Below the crust comes the mantle, then the outer and inner core. The lithosphere is the crust together with the top of the mantle, not a layer beneath it."
+  },
+  {
+    "id": "TGSI-T1-074",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Soils",
+    "stem": "Black soil, well suited to growing cotton, is also called:",
+    "options": [
+      "Alluvium",
+      "Podzol",
+      "Laterite",
+      "Regur"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Black soil is known as regur. It holds moisture well and covers much of the Deccan plateau. Laterite is a leached red soil of wet areas."
+  },
+  {
+    "id": "TGSI-T1-075",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Borders",
+    "stem": "Which Indian state shares the longest boundary with Bangladesh?",
+    "options": [
+      "Meghalaya",
+      "West Bengal",
+      "Tripura",
+      "Assam"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "West Bengal has the longest stretch of India's border with Bangladesh. Assam, Meghalaya, Tripura and Mizoram share the rest."
+  },
+  {
+    "id": "TGSI-T1-076",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Telangana geography",
+    "stem": "On which plateau does Telangana lie?",
+    "options": [
+      "The Malwa plateau",
+      "The Deccan plateau",
+      "The Meghalaya plateau",
+      "The Chota Nagpur plateau"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Telangana sits on the uplands of the Deccan plateau, which is why the state describes itself as the link between north and south India."
+  },
+  {
+    "id": "TGSI-T1-077",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Time",
+    "stem": "The Standard Meridian of India (82.5° E) passes close to which city?",
+    "options": [
+      "Hyderabad",
+      "Nagpur",
+      "Bhopal",
+      "Mirzapur"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Indian Standard Time is set by the 82.5° E meridian, which passes near Mirzapur in Uttar Pradesh. IST is 5 hours 30 minutes ahead of GMT."
+  },
+  {
+    "id": "TGSI-T1-078",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Climate",
+    "stem": "Which winds bring most of India's annual rainfall?",
+    "options": [
+      "The north-east monsoon",
+      "The south-west monsoon",
+      "The loo",
+      "Western disturbances"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The south-west monsoon, from June to September, brings most of the country's rain. The north-east monsoon mainly waters Tamil Nadu in winter."
+  },
+  {
+    "id": "TGSI-T1-079",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Relief",
+    "stem": "Which range lies between the Narmada and Tapi valleys?",
+    "options": [
+      "The Nilgiri hills",
+      "The Aravalli range",
+      "The Vindhya range",
+      "The Satpura range"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Satpuras run between the Narmada to the north and the Tapi to the south. The Vindhyas lie north of the Narmada."
+  },
+  {
+    "id": "TGSI-T1-080",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Telangana geography",
+    "stem": "Which state borders Telangana on the south and east?",
+    "options": [
+      "Chhattisgarh",
+      "Karnataka",
+      "Odisha",
+      "Andhra Pradesh"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Telangana is bordered by Maharashtra and Chhattisgarh in the north, Karnataka in the west and Andhra Pradesh in the south and east."
+  },
+  {
+    "id": "TGSI-T1-081",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiPolity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Fundamental Rights",
+    "stem": "Which Article of the Constitution abolishes titles, other than military and academic distinctions?",
+    "options": [
+      "Article 18",
+      "Article 21",
+      "Article 17",
+      "Article 15"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Article 18 abolishes titles and bars citizens from accepting titles from a foreign state. Article 17 abolishes untouchability."
+  },
+  {
+    "id": "TGSI-T1-082",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Fundamental Duties",
+    "stem": "How many Fundamental Duties does the Constitution list in Article 51A today?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The 42nd Amendment (1976) added ten duties, and the 86th Amendment (2002) added the eleventh: a parent's duty to give a child aged 6 to 14 the chance of education."
+  },
+  {
+    "id": "TGSI-T1-083",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiPolity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "State executive",
+    "stem": "Which Article of the Constitution says there shall be a Governor for each state?",
+    "options": [
+      "Article 168",
+      "Article 155",
+      "Article 163",
+      "Article 153"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Article 153 provides a Governor for each state. Article 155 covers the appointment, Article 163 the Council of Ministers and Article 168 the state Legislature."
+  },
+  {
+    "id": "TGSI-T1-084",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiPolity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Local government",
+    "stem": "Which Constitutional amendment gave constitutional status to Panchayati Raj institutions?",
+    "options": [
+      "The 74th Amendment",
+      "The 42nd Amendment",
+      "The 61st Amendment",
+      "The 73rd Amendment"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The 73rd Amendment (1992) added Part IX on panchayats. The 74th did the same for municipalities, and the 61st lowered the voting age to 18."
+  },
+  {
+    "id": "TGSI-T1-085",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Parliament",
+    "stem": "Under Article 85, what is the longest gap allowed between two sessions of Parliament?",
+    "options": [
+      "Four months",
+      "Six months",
+      "Three months",
+      "One year"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Article 85 says six months shall not pass between the last sitting of one session and the first sitting of the next, so Parliament meets at least twice a year."
+  },
+  {
+    "id": "TGSI-T1-086",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiPolity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Planning",
+    "stem": "Which body replaced the Planning Commission in 2015?",
+    "options": [
+      "NITI Aayog",
+      "National Development Council",
+      "Finance Commission",
+      "Inter-State Council"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "NITI Aayog (National Institution for Transforming India) replaced the Planning Commission on 1 January 2015."
+  },
+  {
+    "id": "TGSI-T1-087",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Parliament",
+    "stem": "Under which Article can the President summon a joint sitting of both Houses of Parliament?",
+    "options": [
+      "Article 110",
+      "Article 352",
+      "Article 123",
+      "Article 108"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Article 108 provides for a joint sitting when the Houses disagree on an ordinary Bill. Article 110 defines Money Bills and Article 123 covers ordinances."
+  },
+  {
+    "id": "TGSI-T1-088",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rural development",
+    "stem": "How many days of wage employment a year does the MGNREGA guarantee to every rural household that asks for work?",
+    "options": [
+      "90 days",
+      "100 days",
+      "120 days",
+      "150 days"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The Mahatma Gandhi National Rural Employment Guarantee Act, 2005 guarantees at least 100 days of unskilled manual work a year to each rural household that wants it."
+  },
+  {
+    "id": "TGSI-T1-089",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiPolity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Fundamental Rights",
+    "stem": "Which Article gives the right to move the Supreme Court for the enforcement of Fundamental Rights?",
+    "options": [
+      "Article 19",
+      "Article 226",
+      "Article 44",
+      "Article 32"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Article 32, the Right to Constitutional Remedies, lets a person go straight to the Supreme Court. Article 226 gives High Courts a similar but wider power."
+  },
+  {
+    "id": "TGSI-T1-090",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Economic reforms",
+    "stem": "The economic reforms begun in India in 1991 are often summed up as LPG. What does it stand for?",
+    "options": [
+      "Liberalisation, privatisation, globalisation",
+      "Labour, production, goods",
+      "Land, poverty and growth",
+      "Licensing, planning, growth"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The 1991 reforms freed industry from licensing (liberalisation), opened public sector firms to private ownership (privatisation) and opened the economy to world trade and investment (globalisation)."
+  },
+  {
+    "id": "TGSI-T1-091",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiTelangana",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Hyderabad State",
+    "stem": "In which month and year did the Police Action bring Hyderabad State into the Indian Union?",
+    "options": [
+      "September 1948",
+      "November 1956",
+      "January 1950",
+      "August 1947"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Police Action took place on 13 to 18 September 1948, after which Hyderabad State became part of India. Andhra Pradesh was formed later, in November 1956."
+  },
+  {
+    "id": "TGSI-T1-092",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiTelangana",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "1956 merger",
+    "stem": "The \"Gentlemen's Agreement\" of 20 February 1956 was signed by leaders of which two regions?",
+    "options": [
+      "Telangana and Marathwada",
+      "Andhra and Telangana",
+      "Andhra and Rayalaseema",
+      "Telangana and Karnataka"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Four leaders from Andhra State and four from Hyderabad State signed the agreement at Hyderabad House, New Delhi, setting out safeguards for Telangana before the merger."
+  },
+  {
+    "id": "TGSI-T1-093",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiTelangana",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "1956 merger",
+    "stem": "On which date was Andhra Pradesh formed by joining Andhra State and the Telangana region?",
+    "options": [
+      "26 January 1950",
+      "17 September 1948",
+      "1 October 1953",
+      "1 November 1956"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The States Reorganisation Act came into effect on 1 November 1956, the day Andhra Pradesh was formed. Andhra State itself had been formed on 1 October 1953."
+  },
+  {
+    "id": "TGSI-T1-094",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiTelangana",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "States Reorganisation Commission",
+    "stem": "Who chaired the States Reorganisation Commission, whose 1955 report suggested Hyderabad State could stay separate until about 1961?",
+    "options": [
+      "Justice Fazal Ali",
+      "H. N. Kunzru",
+      "Justice B. N. Srikrishna",
+      "K. M. Panikkar"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Commission was headed by Justice S. Fazal Ali, with H. N. Kunzru and K. M. Panikkar as members. It said the residuary Hyderabad State could join Andhra after the elections due around 1961 if two-thirds of its legislature agreed."
+  },
+  {
+    "id": "TGSI-T1-095",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiTelangana",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "1969 agitation",
+    "stem": "Which party was formed to lead the 1969 \"Jai Telangana\" agitation after it passed from students to politicians?",
+    "options": [
+      "Telangana Mahasabha",
+      "Telangana Rashtra Samithi",
+      "Telangana Jana Samithi",
+      "Telangana Praja Samithi"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "As the 1969 movement turned political, its leaders formed the Telangana Praja Samithi. The Telangana Rashtra Samithi was formed much later, in 2001."
+  },
+  {
+    "id": "TGSI-T1-096",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiTelangana",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "1956 merger",
+    "stem": "Under the Gentlemen's Agreement, in what proportion was the cabinet to be shared between Andhra and Telangana?",
+    "options": [
+      "55 : 45",
+      "70 : 30",
+      "60 : 40",
+      "50 : 50"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The agreement set the cabinet at 60% from Andhra and 40% from Telangana, with one of the Telangana ministers a Muslim, and a Deputy Chief Minister from the other region."
+  },
+  {
+    "id": "TGSI-T1-097",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiTelangana",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mulki Rules",
+    "stem": "What did the Mulki Rules provide?",
+    "options": [
+      "Land given to tenant farmers",
+      "Public jobs reserved for local residents",
+      "Urdu as the court language",
+      "Shares of the Krishna's waters"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Mulki Rules, dating from a Nizam's firman of 1919, said posts in Hyderabad State should be filled by Mulkis, people domiciled there under set conditions."
+  },
+  {
+    "id": "TGSI-T1-098",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiTelangana",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Six-Point Formula",
+    "stem": "Which Article was inserted in the Constitution by the 32nd Amendment of 1973 to give effect to the Six-Point Formula?",
+    "options": [
+      "Article 371",
+      "Article 371D",
+      "Article 370",
+      "Article 356"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The 32nd Amendment omitted clause (1) of Article 371 and inserted Article 371D, which allows Presidential Orders on local cadres and admissions. Since 2014 it covers both Andhra Pradesh and Telangana."
+  },
+  {
+    "id": "TGSI-T1-099",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiTelangana",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "2009 events",
+    "stem": "On 9 December 2009, who announced that the Central Government would begin the process of forming the State of Telangana?",
+    "options": [
+      "The Speaker of the Lok Sabha",
+      "The Union Home Minister",
+      "The President of India",
+      "The Chief Minister of AP"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Late on 9 December 2009, Union Home Minister P. Chidambaram announced in New Delhi that the process of forming Telangana would be started. K. Chandrasekhar Rao then ended his fast."
+  },
+  {
+    "id": "TGSI-T1-100",
+    "section": "paper",
+    "test": 1,
+    "module": 1,
+    "domain": "tgsiTelangana",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "AP Reorganisation Act, 2014",
+    "stem": "Under the Andhra Pradesh Reorganisation Act, 2014, Hyderabad was to be the common capital of both states for a period not exceeding:",
+    "options": [
+      "Ten years",
+      "Three years",
+      "Five years",
+      "Twelve years"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Section 5 of the Act made Hyderabad the common capital of Telangana and Andhra Pradesh for a period not exceeding ten years, after which it is the capital of Telangana alone."
+  },
+  {
+    "id": "TGSI-T2-001",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiArithA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number system",
+    "stem": "What is the largest four-digit number that is exactly divisible by 88?",
+    "options": [
+      "9,856",
+      "9,900",
+      "9,944",
+      "9,988"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "9,999 ÷ 88 = 113 remainder 55, so the largest multiple is 9,999 - 55 = 9,944 (88 × 113). 9,856 is 88 × 112, the one below."
+  },
+  {
+    "id": "TGSI-T2-002",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiArithB",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Time and work",
+    "stem": "15 men can build a wall in 24 days. How many men are needed to build the same wall in 18 days?",
+    "options": [
+      "18 men",
+      "20 men",
+      "22 men",
+      "25 men"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The job is 15 × 24 = 360 man-days. Done in 18 days it needs 360 ÷ 18 = 20 men."
+  },
+  {
+    "id": "TGSI-T2-003",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiArithA",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Percentage",
+    "stem": "A number is first increased by 10% and then decreased by 10%. What is the net change?",
+    "options": [
+      "No change",
+      "A 2% decrease",
+      "A 1% decrease",
+      "A 1% increase"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "100 becomes 110 and then 110 × 0.9 = 99, a net fall of 1%. The decrease is taken on the larger number, so the two changes do not cancel."
+  },
+  {
+    "id": "TGSI-T2-004",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiArithB",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Work and wages",
+    "stem": "A, B and C are paid ₹5,400 for a job they do together. Alone, A would take 6 days, B 8 days and C 12 days. What is C's share?",
+    "options": [
+      "₹1,200",
+      "₹1,350",
+      "₹1,800",
+      "₹2,400"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Their daily work is 1/6 : 1/8 : 1/12 = 4 : 3 : 2. C gets 2/9 of 5,400 = ₹1,200. ₹2,400 is A's share."
+  },
+  {
+    "id": "TGSI-T2-005",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiArithA",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Profit and loss",
+    "stem": "A shopkeeper sells two fans for ₹1,980 each, gaining 10% on one and losing 10% on the other. What is his overall result?",
+    "options": [
+      "A 2% loss",
+      "A 1% gain",
+      "A 1% loss",
+      "No profit or loss"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Cost prices are 1,980 ÷ 1.1 = ₹1,800 and 1,980 ÷ 0.9 = ₹2,200, a total of ₹4,000. He receives ₹3,960, a loss of ₹40, which is 1%."
+  },
+  {
+    "id": "TGSI-T2-006",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiArithB",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Speed and time",
+    "stem": "Walking at 3/4 of his usual speed, a man reaches his office 20 minutes late. What is his usual time for the walk?",
+    "options": [
+      "45 minutes",
+      "60 minutes",
+      "75 minutes",
+      "80 minutes"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "At 3/4 of the speed he takes 4/3 of the usual time, so the extra 1/3 of the usual time is 20 minutes. The usual time is 60 minutes. 80 minutes is the slower walk."
+  },
+  {
+    "id": "TGSI-T2-007",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiArithA",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Simple interest",
+    "stem": "A sum of ₹8,000 earns ₹2,240 as simple interest in 4 years. What is the rate of interest per year?",
+    "options": [
+      "6%",
+      "7%",
+      "7.5%",
+      "8%"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "R = SI × 100 ÷ (P × T) = 2,240 × 100 ÷ (8,000 × 4) = 7%."
+  },
+  {
+    "id": "TGSI-T2-008",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiArithB",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Trains",
+    "stem": "How long will a train 300 m long, running at 72 km/h, take to cross a bridge 500 m long?",
+    "options": [
+      "15 seconds",
+      "25 seconds",
+      "36 seconds",
+      "40 seconds"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "72 km/h = 20 m/s. The train must cover its length plus the bridge, 800 m: 800 ÷ 20 = 40 seconds. 25 seconds forgets the train's own length."
+  },
+  {
+    "id": "TGSI-T2-009",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiArithA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Compound interest",
+    "stem": "In how many years will ₹6,250 amount to ₹7,290 at 8% a year, compounded yearly?",
+    "options": [
+      "1.5 years",
+      "2 years",
+      "2.5 years",
+      "3 years"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "6,250 × 1.08 = 6,750 after one year and 6,750 × 1.08 = 7,290 after two. So 2 years."
+  },
+  {
+    "id": "TGSI-T2-010",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiArithB",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Chase",
+    "stem": "A thief runs away at 8 km/h. A constable starts after him 10 minutes later at 10 km/h. How long after starting will the constable catch him?",
+    "options": [
+      "1 hour",
+      "40 minutes",
+      "50 minutes",
+      "30 minutes"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In 10 minutes the thief gets 8 × 10/60 = 4/3 km ahead. The constable gains 10 - 8 = 2 km every hour, so he needs (4/3) ÷ 2 = 2/3 hour = 40 minutes."
+  },
+  {
+    "id": "TGSI-T2-011",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiArithA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ratio",
+    "stem": "If A : B = 2 : 5 and B : C = 3 : 4, what is A : C?",
+    "options": [
+      "1 : 2",
+      "5 : 8",
+      "6 : 15",
+      "3 : 10"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Make B the same in both: A : B = 6 : 15 and B : C = 15 : 20. So A : C = 6 : 20 = 3 : 10."
+  },
+  {
+    "id": "TGSI-T2-012",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiArithB",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Boats and streams",
+    "stem": "A boat's speed in still water is 12 km/h and the stream flows at 3 km/h. How long will the boat take to go 45 km downstream?",
+    "options": [
+      "3 hours",
+      "3.75 hours",
+      "4 hours",
+      "5 hours"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Downstream speed = 12 + 3 = 15 km/h, so 45 ÷ 15 = 3 hours. 5 hours is the time upstream, at 9 km/h."
+  },
+  {
+    "id": "TGSI-T2-013",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiArithA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Partnership",
+    "stem": "A and B start a business with ₹24,000 and ₹36,000. After 6 months A adds ₹12,000 more. In what ratio should the profit be shared at the end of the year?",
+    "options": [
+      "6 : 7",
+      "1 : 1",
+      "5 : 6",
+      "2 : 3"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A's capital-months = 24,000 × 6 + 36,000 × 6 = 3,60,000. B's = 36,000 × 12 = 4,32,000. 3,60,000 : 4,32,000 = 5 : 6."
+  },
+  {
+    "id": "TGSI-T2-014",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiArithB",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Clocks",
+    "stem": "How many times do the hands of a clock make a right angle with each other in one full day of 24 hours?",
+    "options": [
+      "22",
+      "24",
+      "44",
+      "48"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "In every 12 hours the hands are at right angles 22 times, so 44 times in a full day. 48 assumes twice in every hour, which overcounts."
+  },
+  {
+    "id": "TGSI-T2-015",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiArithA",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Average",
+    "stem": "The average of 9 results is 60. The average of the first five is 58 and of the last five is 63. What is the fifth result?",
+    "options": [
+      "60",
+      "61",
+      "63",
+      "65"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The fifth result is counted in both groups: 5 × 58 + 5 × 63 - 9 × 60 = 290 + 315 - 540 = 65."
+  },
+  {
+    "id": "TGSI-T2-016",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiArithB",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Calendars",
+    "stem": "On which day of the week did 26 January 1950, the day the Constitution came into force, fall?",
+    "options": [
+      "Wednesday",
+      "Friday",
+      "Thursday",
+      "Sunday"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "26 January 1950 was a Thursday. One check: 26 January 2026 was a Monday, and the 76 years between hold 76 + 19 leap days = 95 odd days, which is 4 days, so 1950 is Monday minus 4 days, a Thursday."
+  },
+  {
+    "id": "TGSI-T2-017",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiArithA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number system",
+    "stem": "Which of these numbers is exactly divisible by 11?",
+    "options": [
+      "5,28,153",
+      "5,82,135",
+      "5,82,153",
+      "5,83,152"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "A number is divisible by 11 when the alternating sum of its digits is 0 or a multiple of 11. For 582153: 3 - 5 + 1 - 2 + 8 - 5 = 0. The others give 4, -2 and -12."
+  },
+  {
+    "id": "TGSI-T2-018",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiArithB",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Mensuration",
+    "stem": "A rectangular field is 120 m long and 80 m wide. A path 5 m wide runs all round it on the outside. What is the area of the path?",
+    "options": [
+      "1,900 m²",
+      "2,000 m²",
+      "2,100 m²",
+      "2,200 m²"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "With the path the outer rectangle is 130 m × 90 m = 11,700 m². Taking away the field (9,600 m²) leaves 2,100 m². 1,900 m² is the area of a path on the inside."
+  },
+  {
+    "id": "TGSI-T2-019",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiArithA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Percentage",
+    "stem": "In a town of 45,000 people, 56% are men. If 40% of the men and 25% of the women can read, how many people in the town can read?",
+    "options": [
+      "14,580",
+      "14,850",
+      "15,030",
+      "15,300"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Men = 25,200 and women = 19,800. Readers = 40% of 25,200 + 25% of 19,800 = 10,080 + 4,950 = 15,030."
+  },
+  {
+    "id": "TGSI-T2-020",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiArithB",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mensuration",
+    "stem": "What is the volume of a cylinder with radius 14 cm and height 5 cm? (Take π = 22/7.)",
+    "options": [
+      "440 cm³",
+      "1,540 cm³",
+      "3,080 cm³",
+      "6,160 cm³"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Volume = πr²h = 22/7 × 196 × 5 = 3,080 cm³. 440 cm² is its curved surface area (2πrh)."
+  },
+  {
+    "id": "TGSI-T2-021",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiArithA",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Proportion",
+    "stem": "What is the mean proportional between 16 and 49?",
+    "options": [
+      "24",
+      "28",
+      "32.5",
+      "33"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The mean proportional is √(16 × 49) = √784 = 28. 32.5 is the ordinary average, not the mean proportional."
+  },
+  {
+    "id": "TGSI-T2-022",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiArithB",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Time and work",
+    "stem": "A is twice as fast as B. Together they finish a job in 14 days. How long would A alone take?",
+    "options": [
+      "18 days",
+      "21 days",
+      "28 days",
+      "42 days"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "If B does x a day, A does 2x, and 3x = 1/14, so x = 1/42. A does 1/21 a day and needs 21 days. 42 days is B's time."
+  },
+  {
+    "id": "TGSI-T2-023",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiArithA",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Average",
+    "stem": "A batsman scores 87 runs in his 17th innings and so raises his average by 3. What is his average after the 17th innings?",
+    "options": [
+      "36",
+      "39",
+      "40",
+      "42"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "If the new average is x, then 16(x - 3) + 87 = 17x, so x = 87 - 48 = 39."
+  },
+  {
+    "id": "TGSI-T2-024",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiArithB",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Speed and time",
+    "stem": "A motorcyclist covers 21 km in 35 minutes. What is his speed?",
+    "options": [
+      "30 km/h",
+      "35 km/h",
+      "36 km/h",
+      "42 km/h"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "35 minutes is 7/12 of an hour, so speed = 21 ÷ 7/12 = 36 km/h."
+  },
+  {
+    "id": "TGSI-T2-025",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiArithA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Discount",
+    "stem": "Two successive discounts of 30% and 10% are equal to a single discount of:",
+    "options": [
+      "35%",
+      "37%",
+      "38%",
+      "40%"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "100 × 0.7 × 0.9 = 63, so the single discount is 37%, not the 40% got by adding."
+  },
+  {
+    "id": "TGSI-T2-026",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Analogy",
+    "stem": "Actor : Stage :: Lawyer : ?",
+    "options": [
+      "Judge",
+      "Client",
+      "Case",
+      "Court"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The pair is a worker and the place where that worker performs: an actor on a stage, a lawyer in a court."
+  },
+  {
+    "id": "TGSI-T2-027",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Blood relations",
+    "stem": "Pointing to a boy, Meena says, \"He is the son of the only daughter of my father.\" How is the boy related to Meena?",
+    "options": [
+      "Son",
+      "Cousin",
+      "Nephew",
+      "Brother"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The only daughter of Meena's father is Meena herself. So the boy is her son."
+  },
+  {
+    "id": "TGSI-T2-028",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Number analogy",
+    "stem": "8 : 512 :: 5 : ?",
+    "options": [
+      "25",
+      "125",
+      "150",
+      "225"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "512 is 8 cubed, so the answer is 5 cubed, 125. 25 would be 5 squared."
+  },
+  {
+    "id": "TGSI-T2-029",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Directions",
+    "stem": "From her house, Lakshmi goes 10 km south, then 10 km west, then 20 km north. In which direction is she now from her house?",
+    "options": [
+      "South-west",
+      "North-west",
+      "West",
+      "North-east"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Overall she is 20 - 10 = 10 km north and 10 km west of her house, so she is to the north-west."
+  },
+  {
+    "id": "TGSI-T2-030",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Letter analogy",
+    "stem": "PQR : RQP :: STU : ?",
+    "options": [
+      "UTS",
+      "TUS",
+      "UST",
+      "TSU"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The letters are written in reverse order, so STU becomes UTS."
+  },
+  {
+    "id": "TGSI-T2-031",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ranking",
+    "stem": "In a queue of 30 people, Hari is 11th from the front and Mohan is 5 places behind Hari. What is Mohan's position from the back?",
+    "options": [
+      "14th",
+      "15th",
+      "16th",
+      "19th"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Mohan is 11 + 5 = 16th from the front, so from the back he is 30 - 16 + 1 = 15th."
+  },
+  {
+    "id": "TGSI-T2-032",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Odd one out",
+    "stem": "Find the odd one out: 31, 37, 41, 49",
+    "options": [
+      "31",
+      "37",
+      "41",
+      "49"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "31, 37 and 41 are prime numbers. 49 = 7 × 7 is not."
+  },
+  {
+    "id": "TGSI-T2-033",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Syllogism",
+    "stem": "Statements: No cook is a cleaner. All cleaners are workers. Conclusions: I. Some workers are not cooks. II. No worker is a cook. Which conclusion follows?",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The cleaners are workers and none of them is a cook, so some workers are not cooks (I). Other workers may still be cooks, so II does not follow."
+  },
+  {
+    "id": "TGSI-T2-034",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Odd one out",
+    "stem": "Find the odd one out: Potato, Carrot, Radish, Tomato",
+    "options": [
+      "Radish",
+      "Tomato",
+      "Carrot",
+      "Potato"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The edible parts of potato, carrot and radish grow underground. A tomato is a fruit that grows above the ground."
+  },
+  {
+    "id": "TGSI-T2-035",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Arrangement",
+    "stem": "Five houses in a row are painted red, blue, green, white and yellow. The red house is at the left end. The blue house is in the middle. The green house is immediately to the left of the white house. Which house is second from the left?",
+    "options": [
+      "Green",
+      "Yellow",
+      "Blue",
+      "White"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Red is first and blue third. Green and white must be next to each other, so they take fourth and fifth. That leaves yellow second."
+  },
+  {
+    "id": "TGSI-T2-036",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "Find the next number: 3, 8, 23, 68, 203, ?",
+    "options": [
+      "406",
+      "607",
+      "608",
+      "609"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Each term is three times the previous minus 1: 203 × 3 - 1 = 608."
+  },
+  {
+    "id": "TGSI-T2-037",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Courses of action",
+    "stem": "Statement: \"Cases of online fraud have risen sharply in the city.\" Courses of action: I. The police should run awareness drives on cyber fraud. II. All online banking in the city should be banned. Which course of action follows?",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Awareness drives tackle the problem directly, so I follows. Banning all online banking is extreme and would harm everyone, so II does not."
+  },
+  {
+    "id": "TGSI-T2-038",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "Find the next number: 1, 1, 2, 3, 5, 8, ?",
+    "options": [
+      "11",
+      "12",
+      "13",
+      "15"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Each term is the sum of the two before it: 5 + 8 = 13."
+  },
+  {
+    "id": "TGSI-T2-039",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Judgment",
+    "stem": "During a festival procession, a lost child comes up to a constable on duty. What is the best first step?",
+    "options": [
+      "Tell him to search on his own",
+      "Ask him to wait by the road",
+      "Keep him safe and announce it",
+      "Take him to a hospital at once"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The child's safety comes first, and an announcement is the quickest way to reach the parents in a crowd. Sending him off alone or leaving him by the road puts him at risk."
+  },
+  {
+    "id": "TGSI-T2-040",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Letter series",
+    "stem": "Find the next term: AZ, BY, CX, DW, ?",
+    "options": [
+      "EV",
+      "EU",
+      "EW",
+      "FV"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The first letter moves forward (A, B, C, D, E) and the second moves back (Z, Y, X, W, V): EV."
+  },
+  {
+    "id": "TGSI-T2-041",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiLogical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Symbol substitution",
+    "stem": "If + means ÷, - means ×, × means + and ÷ means -, what is the value of 36 + 4 - 3 × 8 ÷ 5?",
+    "options": [
+      "25",
+      "28",
+      "30",
+      "32"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Replace the signs: 36 ÷ 4 × 3 + 8 - 5. Then 36 ÷ 4 = 9, 9 × 3 = 27, and 27 + 8 - 5 = 30."
+  },
+  {
+    "id": "TGSI-T2-042",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Coding",
+    "stem": "If POLICE is written as ECILOP, how is SAFETY written?",
+    "options": [
+      "YTFEAS",
+      "YTEFAS",
+      "TYEFAS",
+      "YETFAS"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The word is written backwards. SAFETY reversed is YTEFAS."
+  },
+  {
+    "id": "TGSI-T2-043",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cubes",
+    "stem": "A cube painted blue on all its faces is cut into 64 equal smaller cubes. How many of the small cubes have no face painted?",
+    "options": [
+      "8",
+      "16",
+      "24",
+      "27"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The unpainted cubes form the inner block, 4 - 2 = 2 cubes along each edge: 2 × 2 × 2 = 8. 24 is the number with exactly two faces painted."
+  },
+  {
+    "id": "TGSI-T2-044",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Coding",
+    "stem": "If BAT is coded as 23 by adding the positions of its letters in the alphabet (2 + 1 + 20), what is the code for RAT?",
+    "options": [
+      "37",
+      "38",
+      "39",
+      "41"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "R = 18, A = 1 and T = 20, and 18 + 1 + 20 = 39."
+  },
+  {
+    "id": "TGSI-T2-045",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Turns",
+    "stem": "Facing south, Divya turns 135° anticlockwise and then 90° clockwise. Which direction does she face now?",
+    "options": [
+      "North-west",
+      "South-east",
+      "North-east",
+      "South-west"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "135° anticlockwise from south takes her through east to north-east. 90° clockwise from north-east is south-east."
+  },
+  {
+    "id": "TGSI-T2-046",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "Find the missing number: 3, 8, 15, 24, ?, 48",
+    "options": [
+      "33",
+      "34",
+      "35",
+      "36"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Each term is one less than a square: 4 - 1, 9 - 1, 16 - 1, 25 - 1, so the next is 36 - 1 = 35, and 49 - 1 = 48 follows."
+  },
+  {
+    "id": "TGSI-T2-047",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sets",
+    "stem": "Of 80 recruits, 48 can swim, 36 can drive and 14 can do neither. How many can do both?",
+    "options": [
+      "12",
+      "14",
+      "18",
+      "22"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "80 - 14 = 66 recruits can do at least one. 48 + 36 = 84 counts those who can do both twice, so 84 - 66 = 18 can do both."
+  },
+  {
+    "id": "TGSI-T2-048",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Analogy",
+    "stem": "Horse : Stable :: Dog : ?",
+    "options": [
+      "Burrow",
+      "Kennel",
+      "Shed",
+      "Sty"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A horse is kept in a stable and a dog in a kennel. A sty is for pigs and a burrow is dug by rabbits."
+  },
+  {
+    "id": "TGSI-T2-049",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Decision making",
+    "stem": "To apply for a post, a candidate must hold a degree and be between 21 and 25 years old. Sita is 24 and holds a diploma but no degree. What is the decision?",
+    "options": [
+      "Eligible",
+      "Eligible after age relaxation",
+      "Not eligible",
+      "Data inadequate"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Sita meets the age rule but not the degree rule, and both are required, so she is not eligible. The data given is enough to decide."
+  },
+  {
+    "id": "TGSI-T2-050",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Wrong term",
+    "stem": "Find the wrong number in the series: 2, 5, 10, 17, 26, 38, 50",
+    "options": [
+      "17",
+      "26",
+      "38",
+      "50"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The terms are n² + 1: 2, 5, 10, 17, 26, 37, 50. So 38 should be 37."
+  },
+  {
+    "id": "TGSI-T2-051",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Nutrition",
+    "stem": "Rickets in children is caused by a lack of which vitamin?",
+    "options": [
+      "Vitamin K",
+      "Vitamin C",
+      "Vitamin D",
+      "Vitamin B12"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Without enough vitamin D the body cannot absorb calcium, and growing bones become soft and bent. A lack of vitamin C causes scurvy."
+  },
+  {
+    "id": "TGSI-T2-052",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Plants",
+    "stem": "Which part of a plant cell contains chlorophyll?",
+    "options": [
+      "Mitochondrion",
+      "Nucleus",
+      "Vacuole",
+      "Chloroplast"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Chlorophyll is held in the chloroplasts, where photosynthesis takes place. Mitochondria release energy from food."
+  },
+  {
+    "id": "TGSI-T2-053",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Electricity",
+    "stem": "Which device turns mechanical energy into electrical energy?",
+    "options": [
+      "Generator",
+      "Electric motor",
+      "Transformer",
+      "Battery"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A generator (dynamo) turns a coil in a magnetic field to produce electricity. An electric motor does the reverse."
+  },
+  {
+    "id": "TGSI-T2-054",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Light",
+    "stem": "What is the speed of light in a vacuum, approximately?",
+    "options": [
+      "3 × 10⁶ m/s",
+      "3 × 10⁵ m/s",
+      "3 × 10¹⁰ m/s",
+      "3 × 10⁸ m/s"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Light travels about 3 × 10⁸ metres (3 lakh kilometres) every second in a vacuum."
+  },
+  {
+    "id": "TGSI-T2-055",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Human body",
+    "stem": "Which organ of the human body produces insulin?",
+    "options": [
+      "Liver",
+      "Thyroid",
+      "Kidney",
+      "Pancreas"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Insulin is made by cells in the pancreas and controls blood sugar. Too little of it leads to diabetes."
+  },
+  {
+    "id": "TGSI-T2-056",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Diseases",
+    "stem": "Which of these diseases is caused by a fungus?",
+    "options": [
+      "Measles",
+      "Cholera",
+      "Mumps",
+      "Ringworm"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Ringworm is a fungal infection of the skin, despite its name. Measles and mumps are viral and cholera is bacterial."
+  },
+  {
+    "id": "TGSI-T2-057",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Eye",
+    "stem": "Which type of lens is used in spectacles to correct short-sightedness (myopia)?",
+    "options": [
+      "Convex lens",
+      "Concave lens",
+      "Cylindrical lens",
+      "Bifocal lens"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A short-sighted eye focuses distant objects in front of the retina. A concave (diverging) lens spreads the light so it focuses on the retina. Long-sightedness needs a convex lens."
+  },
+  {
+    "id": "TGSI-T2-058",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Acids and bases",
+    "stem": "What is the pH of pure water at 25 °C?",
+    "options": [
+      "0",
+      "5.6",
+      "7",
+      "14"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Pure water is neutral, with a pH of 7. Below 7 is acidic and above 7 is basic. Normal rain is slightly acidic, about 5.6."
+  },
+  {
+    "id": "TGSI-T2-059",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Environment",
+    "stem": "Which greenhouse gas is given off in large amounts by flooded paddy fields?",
+    "options": [
+      "Methane",
+      "Ammonia",
+      "Ozone",
+      "Chlorine"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Bacteria working without oxygen in waterlogged paddy soil produce methane, a strong greenhouse gas."
+  },
+  {
+    "id": "TGSI-T2-060",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Matter",
+    "stem": "Which metal is coated on iron sheets to stop them rusting, a process called galvanising?",
+    "options": [
+      "Copper",
+      "Zinc",
+      "Lead",
+      "Tin"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Galvanising coats iron with zinc, which corrodes first and protects the iron beneath. Tin plating is used for food cans."
+  },
+  {
+    "id": "TGSI-T2-061",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiHistory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Social reform",
+    "stem": "Who founded the Brahmo Samaj?",
+    "options": [
+      "Raja Ram Mohan Roy",
+      "Jyotiba Phule",
+      "Dayananda Saraswati",
+      "Swami Vivekananda"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Raja Ram Mohan Roy founded the Brahmo Samaj in 1828 and campaigned against sati. Dayananda Saraswati founded the Arya Samaj and Phule the Satyashodhak Samaj."
+  },
+  {
+    "id": "TGSI-T2-062",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiHistory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "National Movement",
+    "stem": "In which year did the Partition of Bengal, which set off the Swadeshi Movement, take place?",
+    "options": [
+      "1899",
+      "1905",
+      "1911",
+      "1919"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Lord Curzon partitioned Bengal in 1905. The protests led to the boycott of British goods, and the partition was undone in 1911."
+  },
+  {
+    "id": "TGSI-T2-063",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "National Movement",
+    "stem": "Who proclaimed the Provisional Government of Free India (Azad Hind) in 1943?",
+    "options": [
+      "Mohan Singh",
+      "Bhagat Singh",
+      "Rash Behari Bose",
+      "Subhas Chandra Bose"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Subhas Chandra Bose proclaimed the Azad Hind government in Singapore in October 1943 and led the Indian National Army. Rash Behari Bose had handed the INA to him."
+  },
+  {
+    "id": "TGSI-T2-064",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Medieval India",
+    "stem": "Which Mughal emperor was defeated by Sher Shah Suri at Kannauj in 1540?",
+    "options": [
+      "Babur",
+      "Akbar",
+      "Humayun",
+      "Jahangir"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Sher Shah defeated Humayun at Chausa (1539) and Kannauj (1540), and Humayun regained his throne only in 1555."
+  },
+  {
+    "id": "TGSI-T2-065",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Modern India",
+    "stem": "Where did the Revolt of 1857 break out on 10 May 1857?",
+    "options": [
+      "Lucknow",
+      "Meerut",
+      "Delhi",
+      "Kanpur"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Sepoys at Meerut rose on 10 May 1857 and marched to Delhi, where they proclaimed Bahadur Shah Zafar emperor. Kanpur and Lucknow became centres later."
+  },
+  {
+    "id": "TGSI-T2-066",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ancient India",
+    "stem": "Which Gupta ruler took the title Vikramaditya?",
+    "options": [
+      "Kumaragupta",
+      "Skandagupta",
+      "Chandragupta II",
+      "Samudragupta"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Chandragupta II is known as Vikramaditya. The Chinese pilgrim Fa-Hien visited India during his reign."
+  },
+  {
+    "id": "TGSI-T2-067",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Constitutional history",
+    "stem": "Which Act of the British Parliament introduced provincial autonomy in India?",
+    "options": [
+      "Government of India Act, 1919",
+      "Indian Councils Act, 1909",
+      "Government of India Act, 1935",
+      "Regulating Act, 1773"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The 1935 Act ended dyarchy in the provinces and gave them elected governments. The 1919 Act had introduced dyarchy."
+  },
+  {
+    "id": "TGSI-T2-068",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Telangana history",
+    "stem": "Which dynasty ruled the Telangana region from the 11th to the 14th century with Warangal as its capital?",
+    "options": [
+      "The Satavahanas",
+      "The Kakatiyas",
+      "The Vijayanagara kings",
+      "The Qutb Shahis"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Government of Telangana's account says the Kakatiya dynasty ruled between the 11th and 14th centuries with Warangal as its capital. The Qutb Shahis came later and ruled from Golconda."
+  },
+  {
+    "id": "TGSI-T2-069",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiHistory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "National Movement",
+    "stem": "Who led the Bardoli Satyagraha of 1928 against higher land revenue?",
+    "options": [
+      "Vallabhbhai Patel",
+      "Jawaharlal Nehru",
+      "Mahatma Gandhi",
+      "Rajendra Prasad"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Vallabhbhai Patel led the peasants of Bardoli in Gujarat, and the women of Bardoli gave him the title \"Sardar\"."
+  },
+  {
+    "id": "TGSI-T2-070",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ancient India",
+    "stem": "Which Buddhist council was held during the reign of Kanishka?",
+    "options": [
+      "The First",
+      "The Second",
+      "The Third",
+      "The Fourth"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Fourth Buddhist Council met in Kashmir under Kanishka. The Third was held at Pataliputra under Ashoka."
+  },
+  {
+    "id": "TGSI-T2-071",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Earth",
+    "stem": "What causes day and night on the Earth?",
+    "options": [
+      "The tilt of its axis",
+      "The Moon's orbit",
+      "The Earth's rotation",
+      "The Earth's revolution"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Earth spins on its axis once a day, turning each place towards and then away from the Sun. Its revolution round the Sun, with the tilted axis, gives the seasons."
+  },
+  {
+    "id": "TGSI-T2-072",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rivers",
+    "stem": "The Krishna river rises near which place in the Western Ghats?",
+    "options": [
+      "Talakaveri",
+      "Amarkantak",
+      "Mahabaleshwar",
+      "Trimbakeshwar"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Krishna rises near Mahabaleshwar in Maharashtra. The Godavari rises at Trimbakeshwar, the Narmada at Amarkantak and the Kaveri at Talakaveri."
+  },
+  {
+    "id": "TGSI-T2-073",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Rocks",
+    "stem": "Which type of rock forms when molten magma cools and hardens?",
+    "options": [
+      "Igneous rock",
+      "Metamorphic rock",
+      "Organic rock",
+      "Sedimentary rock"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Igneous rocks such as granite and basalt form from cooled magma or lava. Sedimentary rocks form from layers of deposits and metamorphic rocks from heat and pressure."
+  },
+  {
+    "id": "TGSI-T2-074",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "States",
+    "stem": "Which is the largest state of south India by area?",
+    "options": [
+      "Telangana",
+      "Karnataka",
+      "Andhra Pradesh",
+      "Tamil Nadu"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Karnataka, at about 1.9 lakh sq km, is the largest of the southern states. Andhra Pradesh comes next, and Telangana covers about 1.12 lakh sq km."
+  },
+  {
+    "id": "TGSI-T2-075",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Coasts",
+    "stem": "Which gulf lies between the Kathiawar peninsula and the Gujarat mainland to its east?",
+    "options": [
+      "Palk Bay",
+      "Gulf of Kachchh",
+      "Gulf of Khambhat",
+      "Gulf of Mannar"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Gulf of Khambhat (Cambay) lies east of Kathiawar. The Gulf of Kachchh lies to its north, and the Gulf of Mannar is between Tamil Nadu and Sri Lanka."
+  },
+  {
+    "id": "TGSI-T2-076",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Telangana geography",
+    "stem": "Which two states border Telangana on the north?",
+    "options": [
+      "Karnataka and Goa",
+      "Madhya Pradesh and Gujarat",
+      "Odisha and Jharkhand",
+      "Maharashtra and Chhattisgarh"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Maharashtra and Chhattisgarh lie to the north of Telangana. Karnataka is to the west and Andhra Pradesh to the south and east."
+  },
+  {
+    "id": "TGSI-T2-077",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Borders",
+    "stem": "Which line marks the boundary between India and Pakistan drawn at Partition in 1947?",
+    "options": [
+      "The Maginot Line",
+      "The McMahon Line",
+      "The Durand Line",
+      "The Radcliffe Line"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Sir Cyril Radcliffe drew the boundary in 1947. The McMahon Line is the India-China line in the east and the Durand Line the Afghanistan-Pakistan border."
+  },
+  {
+    "id": "TGSI-T2-078",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Coasts",
+    "stem": "Which Indian state has the longest coastline on the mainland?",
+    "options": [
+      "Maharashtra",
+      "Andhra Pradesh",
+      "Gujarat",
+      "Tamil Nadu"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Gujarat's coast, with the Gulfs of Kachchh and Khambhat, is the longest of any state on the mainland. Andhra Pradesh comes second."
+  },
+  {
+    "id": "TGSI-T2-079",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Forests",
+    "stem": "Which type of forest covers the largest part of India's forest area?",
+    "options": [
+      "Montane",
+      "Tropical deciduous",
+      "Mangrove",
+      "Tropical evergreen"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Tropical deciduous (monsoon) forests, with teak and sal, are the most widespread forests in India. Evergreen forests need much heavier rainfall."
+  },
+  {
+    "id": "TGSI-T2-080",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Telangana geography",
+    "stem": "Which is the largest district of Telangana by area?",
+    "options": [
+      "Mahabubnagar",
+      "Nalgonda",
+      "Bhadradri Kothagudem",
+      "Adilabad"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Government of Telangana lists Bhadradri Kothagudem as the largest of its 33 districts and Hyderabad as the smallest."
+  },
+  {
+    "id": "TGSI-T2-081",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiPolity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Constitution",
+    "stem": "Which Part of the Constitution contains the Directive Principles of State Policy?",
+    "options": [
+      "Part III",
+      "Part IV",
+      "Part IV-A",
+      "Part V"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Directive Principles are in Part IV (Articles 36 to 51). Part III holds the Fundamental Rights and Part IV-A the Fundamental Duties."
+  },
+  {
+    "id": "TGSI-T2-082",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Union executive",
+    "stem": "Who elects the Vice-President of India?",
+    "options": [
+      "The Rajya Sabha alone",
+      "Members of both Houses of Parliament",
+      "The people directly",
+      "MPs and members of state Assemblies"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Under Article 66 the Vice-President is elected by an electoral college of the members of both Houses of Parliament. State legislators vote only in the President's election."
+  },
+  {
+    "id": "TGSI-T2-083",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Fundamental Rights",
+    "stem": "Which Article makes free and compulsory education for children aged 6 to 14 a Fundamental Right?",
+    "options": [
+      "Article 29",
+      "Article 45",
+      "Article 21A",
+      "Article 24"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Article 21A was added by the 86th Amendment (2002). Article 45 now asks the state to provide early childhood care for children under six, and Article 24 bans child labour in factories."
+  },
+  {
+    "id": "TGSI-T2-084",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiPolity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Constitution",
+    "stem": "Which Schedule of the Constitution lists the official languages of India?",
+    "options": [
+      "The Seventh Schedule",
+      "The Eighth Schedule",
+      "The Sixth Schedule",
+      "The Tenth Schedule"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Eighth Schedule lists the 22 languages. The Seventh has the Union, State and Concurrent lists, and the Tenth deals with defection."
+  },
+  {
+    "id": "TGSI-T2-085",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiPolity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Parliament",
+    "stem": "In which House can a Money Bill be introduced?",
+    "options": [
+      "Only in the Rajya Sabha",
+      "Only at a joint sitting",
+      "In either House",
+      "Only in the Lok Sabha"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Article 109 says a Money Bill can be introduced only in the Lok Sabha, and the Rajya Sabha can only recommend changes within 14 days."
+  },
+  {
+    "id": "TGSI-T2-086",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Banking",
+    "stem": "In which year was the Reserve Bank of India set up?",
+    "options": [
+      "1935",
+      "1947",
+      "1949",
+      "1969"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The RBI began work on 1 April 1935 under the RBI Act, 1934, and was nationalised in 1949. Fourteen large banks were nationalised in 1969."
+  },
+  {
+    "id": "TGSI-T2-087",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Economy",
+    "stem": "What does a country's Gross Domestic Product (GDP) measure?",
+    "options": [
+      "Final goods and services produced in it",
+      "Money held in its banks",
+      "Total taxes collected by government",
+      "Its exports minus its imports"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "GDP is the market value of all final goods and services produced within a country's borders in a year. Exports minus imports is the trade balance."
+  },
+  {
+    "id": "TGSI-T2-088",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiPolity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Constitution",
+    "stem": "Who was elected President of the Constituent Assembly?",
+    "options": [
+      "B. N. Rau",
+      "Jawaharlal Nehru",
+      "Rajendra Prasad",
+      "B. R. Ambedkar"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Dr Rajendra Prasad was the permanent President of the Constituent Assembly. Dr B. R. Ambedkar chaired its Drafting Committee."
+  },
+  {
+    "id": "TGSI-T2-089",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Agriculture",
+    "stem": "The Green Revolution of the 1960s first raised the output of which crops most?",
+    "options": [
+      "Tea and coffee",
+      "Pulses and oilseeds",
+      "Wheat and rice",
+      "Cotton and jute"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "High-yielding seeds, irrigation and fertilisers raised wheat and then rice output, mainly in Punjab, Haryana and western Uttar Pradesh. Pulses gained little."
+  },
+  {
+    "id": "TGSI-T2-090",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Planning",
+    "stem": "Which sector did India's First Five-Year Plan (1951-56) give the highest priority?",
+    "options": [
+      "Information technology",
+      "Defence production",
+      "Agriculture and irrigation",
+      "Heavy industry"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The First Plan focused on agriculture and irrigation to tackle food shortages. The Second Plan (Mahalanobis model) shifted priority to heavy industry."
+  },
+  {
+    "id": "TGSI-T2-091",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiTelangana",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Formation of the State",
+    "stem": "On which date was Telangana formed as a state of India?",
+    "options": [
+      "1 November 1956",
+      "2 June 2014",
+      "17 September 1948",
+      "1 March 2014"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Telangana came into being as the 29th state on 2 June 2014, the appointed day under the AP Reorganisation Act. The Act itself received the President's assent on 1 March 2014."
+  },
+  {
+    "id": "TGSI-T2-092",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiTelangana",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Government employment",
+    "stem": "Which one-man commission, set up in June 2001, looked into violations of the Presidential Order in government jobs?",
+    "options": [
+      "The Fazal Ali Commission",
+      "The Srikrishna Committee",
+      "The Girglani Commission",
+      "The Bhargava Committee"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The commission under J. M. Girglani was set up on 25 June 2001 and reported in 2004 with 126 findings. The Bhargava Committee (1969) worked out the Telangana revenue surpluses."
+  },
+  {
+    "id": "TGSI-T2-093",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiTelangana",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Government employment",
+    "stem": "G.O. Ms. No. 610 of December 1985 was issued to do what?",
+    "options": [
+      "Correct violations of local cadre rules",
+      "Create the Telangana Regional Committee",
+      "Fix the shares of river waters",
+      "Merge Hyderabad with Andhra State"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "G.O. 610 ordered that employees posted to the Telangana zones after October 1975 in breach of the Six-Point Formula's local cadres be sent back to their own zones."
+  },
+  {
+    "id": "TGSI-T2-094",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiTelangana",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Srikrishna Committee",
+    "stem": "Which option did the Srikrishna Committee (2010) find the most workable?",
+    "options": [
+      "A separate Telangana with Hyderabad as capital",
+      "A united state with a Telangana Regional Council",
+      "Rayala-Telangana and coastal Andhra",
+      "Hyderabad as a separate Union Territory"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Committee judged a united state with a statutory, empowered Telangana Regional Council the most workable. A separate Telangana with Hyderabad as its capital was its second-best option."
+  },
+  {
+    "id": "TGSI-T2-095",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiTelangana",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mulki Rules",
+    "stem": "In which year did the Supreme Court uphold the Mulki Rules, reversing the High Court's ruling against them?",
+    "options": [
+      "1956",
+      "1969",
+      "1972",
+      "1975"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The Andhra Pradesh High Court held the Mulki Rules invalid in February 1972, and on 3 October 1972 the Supreme Court reversed it, holding them valid and in force."
+  },
+  {
+    "id": "TGSI-T2-096",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiTelangana",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Jai Andhra",
+    "stem": "The \"Jai Andhra\" agitation of 1972-73 broke out mainly in reaction to what?",
+    "options": [
+      "The arrest of student leaders",
+      "The Gentlemen's Agreement",
+      "The formation of the TRS",
+      "The Supreme Court upholding the Mulki Rules"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "After the Supreme Court upheld the Mulki Rules in October 1972, people in coastal Andhra felt unequal in their own state capital, and the Jai Andhra agitation for separation followed."
+  },
+  {
+    "id": "TGSI-T2-097",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiTelangana",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "1969 agitation",
+    "stem": "In which town did a student's hunger strike in January 1969 spark the agitation for Telangana?",
+    "options": [
+      "Khammam",
+      "Nalgonda",
+      "Karimnagar",
+      "Warangal"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The agitation spread from a student's hunger strike in Khammam in January 1969 to the other Telangana districts."
+  },
+  {
+    "id": "TGSI-T2-098",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiTelangana",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "AP Reorganisation Act, 2014",
+    "stem": "How many Lok Sabha seats were allotted to Telangana by the Andhra Pradesh Reorganisation Act, 2014?",
+    "options": [
+      "17",
+      "19",
+      "25",
+      "42"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Section 14 gave 25 seats to Andhra Pradesh and 17 to Telangana, out of the 42 the old state had."
+  },
+  {
+    "id": "TGSI-T2-099",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiTelangana",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Six-Point Formula",
+    "stem": "The Six-Point Formula of 1973 led to the abolition of which body?",
+    "options": [
+      "The Public Service Commission",
+      "The Telangana Regional Committee",
+      "The Hyderabad High Court",
+      "The Legislative Council"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The formula said its approach made the Mulki Rules and the Regional Committee unnecessary. The Telangana Regional Committee was abolished from 1 January 1974."
+  },
+  {
+    "id": "TGSI-T2-100",
+    "section": "paper",
+    "test": 2,
+    "module": 1,
+    "domain": "tgsiTelangana",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "2009 events",
+    "stem": "Students of which two universities formed a Joint Action Committee for Telangana in December 2009?",
+    "options": [
+      "Telangana and Palamuru",
+      "Osmania and Hyderabad",
+      "Kakatiya and Andhra",
+      "Osmania and Kakatiya"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Students of Osmania University and Kakatiya University formed a Joint Action Committee that led protests across the region in late 2009."
+  },
+  {
+    "id": "TGSI-D-001",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "tgsiArithA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "HCF and LCM",
+    "stem": "What is the HCF of 132, 204 and 228?",
+    "options": [
+      "6",
+      "12",
+      "18",
+      "24"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "132 = 2² × 3 × 11, 204 = 2² × 3 × 17 and 228 = 2² × 3 × 19. The common part is 2² × 3 = 12."
+  },
+  {
+    "id": "TGSI-D-002",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "tgsiArithB",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Clocks",
+    "stem": "What is the smaller angle between the hands of a clock at 9:15?",
+    "options": [
+      "165°",
+      "172.5°",
+      "180°",
+      "187.5°"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The minute hand is at 90°. The hour hand is at 9 × 30 + 15 × 0.5 = 277.5°. The difference is 187.5°, so the smaller angle is 360 - 187.5 = 172.5°."
+  },
+  {
+    "id": "TGSI-D-003",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "tgsiArithA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "HCF and LCM",
+    "stem": "The LCM of two numbers is 360 and their HCF is 12. If one of them is 60, what is the other?",
+    "options": [
+      "66",
+      "72",
+      "84",
+      "90"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "HCF × LCM = product of the numbers, so the other is 12 × 360 ÷ 60 = 72. Check: HCF(60, 72) = 12."
+  },
+  {
+    "id": "TGSI-D-004",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "tgsiArithB",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Calendars",
+    "stem": "How many odd days are there in a century of 100 years?",
+    "options": [
+      "1",
+      "2",
+      "4",
+      "5"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "100 years have 76 ordinary years and 24 leap years: 76 × 1 + 24 × 2 = 124 odd days, and 124 = 17 weeks and 5 days. So 5 odd days."
+  },
+  {
+    "id": "TGSI-D-005",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "tgsiArithA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Compound interest",
+    "stem": "A sum becomes ₹13,310 in 3 years at 10% a year compound interest. What was the sum?",
+    "options": [
+      "₹9,900",
+      "₹10,000",
+      "₹10,500",
+      "₹11,000"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "1.1³ = 1.331, so the sum = 13,310 ÷ 1.331 = ₹10,000."
+  },
+  {
+    "id": "TGSI-D-006",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "tgsiArithB",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mensuration",
+    "stem": "The length of a rectangle is increased by 25% and its breadth is decreased by 20%. What happens to its area?",
+    "options": [
+      "It rises by 5%",
+      "No change",
+      "It falls by 4%",
+      "It falls by 5%"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "New area = 1.25 × 0.8 = 1.00 of the old, so the area is unchanged. Adding the percentages (+5%) is the mistake."
+  },
+  {
+    "id": "TGSI-D-007",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "tgsiArithA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mixture",
+    "stem": "Rice at ₹40 a kg is mixed with rice at ₹55 a kg in the ratio 2 : 3. What is the price of the mixture per kg?",
+    "options": [
+      "₹47.50",
+      "₹48",
+      "₹49",
+      "₹50"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "(2 × 40 + 3 × 55) ÷ 5 = (80 + 165) ÷ 5 = ₹49. ₹47.50 is the simple average, which ignores the 2 : 3 ratio."
+  },
+  {
+    "id": "TGSI-D-008",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "tgsiArithB",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Time and work",
+    "stem": "A and B can do a job in 8 days, B and C in 12 days, and A and C in 8 days. How long would A, B and C take working together?",
+    "options": [
+      "4.8 days",
+      "6 days",
+      "7 days",
+      "9 days"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Adding the three pairs: 2(A + B + C) = 1/8 + 1/12 + 1/8 = 1/3 of the job a day, so A + B + C = 1/6, which is 6 days."
+  },
+  {
+    "id": "TGSI-D-009",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "tgsiVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Analogy",
+    "stem": "Kilogram : Mass :: Kelvin : ?",
+    "options": [
+      "Energy",
+      "Heat",
+      "Temperature",
+      "Pressure"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The kilogram is the SI unit of mass and the kelvin is the SI unit of temperature. Heat is energy, measured in joules."
+  },
+  {
+    "id": "TGSI-D-010",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "tgsiLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Blood relations",
+    "stem": "X is Y's brother. Z is Y's father. W is Z's mother. How is X related to W?",
+    "options": [
+      "Nephew",
+      "Brother",
+      "Son",
+      "Grandson"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Z is the father of both X and Y, and W is Z's mother, so W is X's grandmother. X, a boy, is her grandson."
+  },
+  {
+    "id": "TGSI-D-011",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "tgsiVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Odd one out",
+    "stem": "Find the odd one out: 343, 512, 729, 900",
+    "options": [
+      "343",
+      "512",
+      "729",
+      "900"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "343, 512 and 729 are the cubes of 7, 8 and 9. 900 is a square (30 × 30), not a cube."
+  },
+  {
+    "id": "TGSI-D-012",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "tgsiLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Directions",
+    "stem": "Town Y is 12 km north of town X, and town Z is 5 km east of Y. How far is Z from X in a straight line?",
+    "options": [
+      "7 km",
+      "13 km",
+      "15 km",
+      "17 km"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The towns form a right angle at Y, so XZ = √(12² + 5²) = √169 = 13 km. 17 km is the distance by road through Y."
+  },
+  {
+    "id": "TGSI-D-013",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "tgsiVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "Find the next number: 1, 2, 6, 24, 120, ?",
+    "options": [
+      "240",
+      "600",
+      "720",
+      "840"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Each term is the previous one multiplied by 2, 3, 4, 5 and then 6: 120 × 6 = 720."
+  },
+  {
+    "id": "TGSI-D-014",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "tgsiLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ordering",
+    "stem": "Raju is heavier than Gopi but lighter than Vasu. Vasu is lighter than Sai. Kalyan is the lightest of the five. Who is the heaviest?",
+    "options": [
+      "Raju",
+      "Gopi",
+      "Sai",
+      "Vasu"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "From heaviest: Sai, Vasu, Raju, Gopi, Kalyan. So Sai is the heaviest."
+  },
+  {
+    "id": "TGSI-D-015",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "tgsiVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Decoding",
+    "stem": "If MOBILE is written in a code as NPCJMF, what does the code GBTU stand for?",
+    "options": [
+      "FAST",
+      "HCUV",
+      "EAST",
+      "FATS"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The code moves every letter one place forward. To decode, move each letter one place back: G to F, B to A, T to S, U to T, giving FAST."
+  },
+  {
+    "id": "TGSI-D-016",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "tgsiLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Syllogism",
+    "stem": "Statements: Some officers are athletes. All athletes are disciplined. Conclusions: I. Some officers are disciplined. II. All disciplined people are athletes. Which conclusion follows?",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The officers who are athletes must be disciplined, so I follows. \"All athletes are disciplined\" cannot be reversed into \"all disciplined people are athletes\", so II does not."
+  },
+  {
+    "id": "TGSI-D-017",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "tgsiScience",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Human body",
+    "stem": "People with which blood group are known as universal donors?",
+    "options": [
+      "B negative",
+      "A positive",
+      "O negative",
+      "AB positive"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "O negative red cells carry no A, B or Rh antigens, so they can be given to almost anyone in an emergency. AB positive people are universal recipients."
+  },
+  {
+    "id": "TGSI-D-018",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "tgsiScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Instruments",
+    "stem": "Which instrument is used to test the purity of milk by measuring its density?",
+    "options": [
+      "Hygrometer",
+      "Lactometer",
+      "Thermometer",
+      "Barometer"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A lactometer floats in milk and shows its density, which falls when water is added. A hygrometer measures humidity and a barometer air pressure."
+  },
+  {
+    "id": "TGSI-D-019",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "tgsiScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Environment",
+    "stem": "Which of these is biodegradable waste?",
+    "options": [
+      "Vegetable peels",
+      "Aluminium cans",
+      "Plastic bottles",
+      "Glass jars"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Vegetable peels are broken down by bacteria and fungi and can be composted. Plastic, glass and aluminium do not rot."
+  },
+  {
+    "id": "TGSI-D-020",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "tgsiScience",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sound",
+    "stem": "In which of these does sound travel fastest?",
+    "options": [
+      "Steel",
+      "Wood",
+      "Water",
+      "Air"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Sound travels fastest through solids such as steel, slower in liquids and slowest in gases. Steel carries it faster than wood."
+  },
+  {
+    "id": "TGSI-D-021",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "tgsiHistory",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "National Movement",
+    "stem": "Which leader started the Marathi newspaper Kesari?",
+    "options": [
+      "Bal Gangadhar Tilak",
+      "Lala Lajpat Rai",
+      "Bipin Chandra Pal",
+      "Gopal Krishna Gokhale"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Bal Gangadhar Tilak started Kesari (in Marathi) and The Mahratta (in English) in 1881 to spread nationalist ideas."
+  },
+  {
+    "id": "TGSI-D-022",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "tgsiHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "National Movement",
+    "stem": "The Lucknow Pact of 1916 was an agreement between the Congress and which body?",
+    "options": [
+      "The Swaraj Party",
+      "The British Government",
+      "The Hindu Mahasabha",
+      "The Muslim League"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "At Lucknow in 1916 the Congress and the Muslim League agreed on joint demands for self-government."
+  },
+  {
+    "id": "TGSI-D-023",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "tgsiHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Medieval India",
+    "stem": "Which Mughal ruler introduced the mansabdari system of ranks?",
+    "options": [
+      "Akbar",
+      "Humayun",
+      "Babur",
+      "Shah Jahan"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Akbar organised his nobles and officers into mansabdars, each with a numerical rank (zat and sawar)."
+  },
+  {
+    "id": "TGSI-D-024",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "tgsiHistory",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Modern India",
+    "stem": "Under which Governor-General was the Doctrine of Lapse used to annex Indian states?",
+    "options": [
+      "Lord Bentinck",
+      "Lord Cornwallis",
+      "Lord Wellesley",
+      "Lord Dalhousie"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Lord Dalhousie annexed Satara, Jhansi, Nagpur and others when rulers died without a natural heir. Wellesley used the Subsidiary Alliance."
+  },
+  {
+    "id": "TGSI-D-025",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "tgsiGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Earth",
+    "stem": "Through how many Indian states does the Tropic of Cancer pass?",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "It crosses Gujarat, Rajasthan, Madhya Pradesh, Chhattisgarh, Jharkhand, West Bengal, Tripura and Mizoram: eight states."
+  },
+  {
+    "id": "TGSI-D-026",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "tgsiGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Telangana geography",
+    "stem": "How many districts does Telangana have?",
+    "options": [
+      "10",
+      "29",
+      "31",
+      "33"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Telangana has 33 districts. It was formed in 2014 with 10, which were later reorganised into more."
+  },
+  {
+    "id": "TGSI-D-027",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "tgsiGeography",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Earth",
+    "stem": "What is the line of 0° longitude called?",
+    "options": [
+      "The Equator",
+      "The Prime Meridian",
+      "The Tropic of Cancer",
+      "The International Date Line"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Prime Meridian passes through Greenwich, near London. The Equator is 0° latitude and the Date Line roughly follows 180° longitude."
+  },
+  {
+    "id": "TGSI-D-028",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "tgsiGeography",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Soils",
+    "stem": "Laterite soil forms mainly in areas with:",
+    "options": [
+      "Low rainfall and cold winters",
+      "High heat and heavy rainfall",
+      "River floods and silt",
+      "Desert winds and sand"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Heavy rain in hot areas washes away lime and silica and leaves iron and aluminium oxides, forming laterite. River silt gives alluvial soil."
+  },
+  {
+    "id": "TGSI-D-029",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "tgsiPolity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Union executive",
+    "stem": "Under Article 75, to which body is the Council of Ministers collectively responsible?",
+    "options": [
+      "The Lok Sabha",
+      "The Supreme Court",
+      "The President",
+      "The Rajya Sabha"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Article 75(3) makes the Council of Ministers collectively responsible to the House of the People, the Lok Sabha, which can remove it by a vote of no confidence."
+  },
+  {
+    "id": "TGSI-D-030",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "tgsiPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Constitution",
+    "stem": "Which amendment is often called the \"mini-Constitution\" for the number of changes it made?",
+    "options": [
+      "The 42nd Amendment",
+      "The 1st Amendment",
+      "The 52nd Amendment",
+      "The 44th Amendment"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The 42nd Amendment (1976) changed many parts of the Constitution, adding \"socialist\", \"secular\" and \"integrity\" to the Preamble and the Fundamental Duties."
+  },
+  {
+    "id": "TGSI-D-031",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "tgsiPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Banking",
+    "stem": "What is the repo rate?",
+    "options": [
+      "The rate banks pay on savings",
+      "The rate at which RBI lends to banks",
+      "The rate banks charge farmers",
+      "The rate of tax on interest"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The repo rate is the interest the Reserve Bank charges when it lends short-term money to commercial banks against securities. Raising it makes borrowing dearer."
+  },
+  {
+    "id": "TGSI-D-032",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "tgsiPolity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Emergency",
+    "stem": "Under which Article can the President proclaim a national emergency?",
+    "options": [
+      "Article 370",
+      "Article 360",
+      "Article 352",
+      "Article 356"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Article 352 covers war, external aggression or armed rebellion. Article 356 is President's Rule in a state and Article 360 a financial emergency."
+  },
+  {
+    "id": "TGSI-D-033",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "tgsiTelangana",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mobilisation phase",
+    "stem": "Who became the first Chief Minister of Andhra Pradesh from the Telangana region, in September 1971?",
+    "options": [
+      "J. Vengala Rao",
+      "M. Chenna Reddy",
+      "Burgula Ramakrishna Rao",
+      "P. V. Narasimha Rao"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "P. V. Narasimha Rao took office in September 1971 as the first Telanganite Chief Minister. Burgula Ramakrishna Rao had been Chief Minister of Hyderabad State, not Andhra Pradesh."
+  },
+  {
+    "id": "TGSI-D-034",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "tgsiTelangana",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "AP Reorganisation Act, 2014",
+    "stem": "Under the AP Reorganisation Act, 2014, where is the headquarters of the Godavari River Management Board located?",
+    "options": [
+      "In Maharashtra",
+      "In Andhra Pradesh",
+      "In New Delhi",
+      "In Telangana"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Section 85 places the Godavari River Management Board in Telangana and the Krishna River Management Board in Andhra Pradesh."
+  },
+  {
+    "id": "TGSI-D-035",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "tgsiTelangana",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "AP Reorganisation Act, 2014",
+    "stem": "How many seats does the Telangana Legislative Assembly have under the AP Reorganisation Act, 2014?",
+    "options": [
+      "119",
+      "120",
+      "175",
+      "294"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The Act fixed the Assemblies at 175 seats for Andhra Pradesh and 119 for Telangana, together the 294 of the old state."
+  },
+  {
+    "id": "TGSI-D-036",
+    "section": "paper",
+    "test": 0,
+    "module": 1,
+    "domain": "tgsiTelangana",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hyderabad State",
+    "stem": "Who led the first elected ministry of Hyderabad State, formed after the 1952 general elections?",
+    "options": [
+      "M. Chenna Reddy",
+      "Burgula Ramakrishna Rao",
+      "M. A. Vellodi",
+      "K. V. Ranga Reddy"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Burgula Ramakrishna Rao headed the first popular ministry in 1952. M. A. Vellodi, a civil servant, had been made Chief Minister in January 1950."
+  }
+]

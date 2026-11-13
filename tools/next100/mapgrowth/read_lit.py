@@ -28,7 +28,7 @@ When the snow came, Squirrel looked at his small pile. Then he looked at Snail's
 
 "I only carried what I could hold," said Snail."""),
     "T1-B": ("Rain on the Roof", """Tap, tap, tap on the roof at night,
-The rain comes down when the moon is bright.
+The rain comes down with all its might.
 It drums on the porch and the old tin pail,
 It sings on the leaves and the garden rail.
 
@@ -190,8 +190,8 @@ ITEMS = [
          expl="Squirrel rushes and drops acorns, while Snail carries one at a time and ends with more. Squirrel is faster, but that is a detail, not the lesson."),
     dict(test=1, stim="T1-B", skill="Poem features", diff=1, basics=None,
          stem="Which pair of words from the poem rhyme?",
-         key="night and bright", wrong=["roof and rain", "drums and drips", "eyes and blanket"],
-         expl="Night and bright end with the same sound, so they rhyme. Roof and rain begin with the same sound, but they do not rhyme."),
+         key="night and might", wrong=["roof and rain", "drums and drips", "eyes and blanket"],
+         expl="Night and might end with the same sound, so they rhyme. Roof and rain begin with the same sound, but they do not rhyme."),
     dict(test=1, stim="T1-C", skill="Drama features", diff=1, basics=None,
          stem="Which part of the play scene is a stage direction?",
          key="(leaning in the doorway)", wrong=["Did you check the laundry basket?", "Where is the other one?", "I have one blue sock."],
@@ -270,18 +270,18 @@ ITEMS = [
          expl="The story says both sisters love animals and help at the shelter. Telling jokes is true only of Maya, and reading in corners only of Mira."),
     dict(test=2, stim="T2-H", skill="How a chapter fits", diff=3, basics="textStructure",
          stem="How does Chapter 3 fit into the whole story about Carlos?",
-         key="It solves the falling problem", wrong=["It tells how he saved money", "It tells about his school ride", "It explains why he chose red"],
+         key="It shows him finally riding", wrong=["It tells how he saved money", "It tells about his school ride", "It explains why he chose red"],
          expl="Chapter 2 tells that Carlos kept falling, and Chapter 3 shows him finally riding on his own. Saving money happens in Chapter 1."),
     dict(test=2, stim="T2-I", skill="Theme", diff=3, basics="mainIdea",
          stem="What is the theme of \"Night Sounds\"?",
-         key="Knowing things makes fear smaller", wrong=["Owls hoot loudly when it is very late", "Big brothers like to laugh at camp", "Flashlights help you see in the dark"],
+         key="Fear shrinks when you understand it", wrong=["Owls hoot loudly when it is very late", "Big brothers like to laugh at camp", "Flashlights help you see in the dark"],
          expl="When Noah names each sound, Aiden stops being scared. The owl hoots in the story, but that is a detail, not the theme."),
 
     # ===== Drill: set on "The Library Helper" =====
     dict(test=0, stim="D-SET", skill="Character change", diff=2, basics="inference",
          stem="How do Ruby's feelings about her job change?",
-         key="From bored to proud", wrong=["From proud to bored", "From scared to calm", "From tired to sleepy"],
-         expl="At first Ruby thinks the job is boring, but after helping the boy she likes it. The change goes from bored to proud, not the other way."),
+         key="From bored to eager", wrong=["From eager to bored", "From scared to calm", "From tired to sleepy"],
+         expl="At first Ruby thinks the job is boring, but after helping the boy she wants to learn where every book lives. The change goes from bored to eager, not the other way."),
     dict(test=0, stim="D-SET", skill="Key event", diff=2, basics="findingDetail",
          stem="What event makes Ruby change her mind about the library job?",
          key="She helps a boy find a book", wrong=["Mr. Kim gives her a prize", "She reads a book about whales", "She finds a lighter book cart"],
@@ -294,7 +294,7 @@ ITEMS = [
     # ===== Drill: single passages =====
     dict(test=0, stim="D-A", skill="Compare characters", diff=3, basics="inference",
          stem="How is the young fox different from the old fox?",
-         key="She finds a way to reach them", wrong=["She jumps much higher than him", "She thinks the grapes are sour", "She gives up and walks away"],
+         key="She finds a way to get the grapes", wrong=["She jumps much higher than him", "She thinks the grapes are sour", "She gives up and walks away"],
          expl="The old fox says he would have called the grapes sour and left, but the young fox rolls a log and climbs up. She does not give up."),
     dict(test=0, stim="D-B", skill="Character feelings", diff=1, basics="inference",
          stem="How does Lucas feel at the end of the story?",

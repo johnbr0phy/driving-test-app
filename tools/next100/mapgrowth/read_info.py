@@ -22,7 +22,7 @@ Most monarchs live only a few weeks. The monarchs that hatch at the end of summe
 **How People Can Help**
 
 Monarch caterpillars eat only one kind of plant, called milkweed. When fields and roadsides are cleared, milkweed disappears, and monarchs have fewer places to lay their eggs. Many families and schools now plant milkweed in their gardens. Each new patch gives monarchs a place to rest and raise the next generation."""),
-    "T1-A": ("The Amazing Octopus", """The octopus may be one of the most unusual animals in the ocean. It has eight arms, and each arm is covered with suction cups that help it grab food. An octopus has three hearts and blue blood. It has no bones at all, so it can squeeze through a crack not much bigger than its eye.
+    "T1-A": ("The Amazing Octopus", """The octopus may be one of the most unusual animals in the ocean. It has eight arms, and each arm is covered with suction cups that help it grab food. An octopus has three hearts and blue blood. It has no bones at all, so it can squeeze through very small cracks.
 
 An octopus can also change the color of its skin in less than a second. This helps it hide from enemies. If hiding does not work, it can squirt a cloud of dark ink and swim away."""),
     "T1-B": ("Where Does a Puddle Go?", """After a rainstorm, the playground is covered with puddles. By the next afternoon, most of them are gone. Where did the water go?
@@ -76,7 +76,7 @@ The riders faced snowstorms in the mountains, burning heat in the deserts and ri
 In October 1861, workers finished a telegraph line that stretched all the way across the country. A telegraph message traveled over wires in minutes, not days. The Pony Express was no longer needed, and it closed after only about eighteen months. Even so, people still remember the brave riders who carried the mail west."""),
     "T2-A": ("Tiny Flyers", """Hummingbirds are the smallest birds in the world. Some are not much bigger than your thumb. Their wings beat dozens of times each second, which makes the humming sound that gives them their name.
 
-Hummingbirds can do things no other birds can do. They can hover in one spot like a helicopter. They can even fly backward. A hummingbird uses its long, thin beak to drink sweet nectar from flowers. It must eat often, because flying this way uses a great deal of energy."""),
+Hummingbirds can fly in ways most birds cannot. They can hover in one spot like a helicopter. They can even fly backward. A hummingbird uses its long, thin beak to drink sweet nectar from flowers. It must eat often, because flying this way uses a great deal of energy."""),
     "T2-B": ("The Parts of a Plant", """Every part of a plant has a job. The roots grow under the ground. They hold the plant in place and take in water. The stem carries that water up to the leaves. The leaves use sunlight to make food for the plant. The flower makes seeds that can grow into new plants.
 
 Diagram: A drawing of a sunflower. Lines point to four labels: roots at the bottom, stem in the middle, leaves on the sides and flower at the top."""),
@@ -184,7 +184,7 @@ ITEMS = [
     # ===== Practice Test 2: set on the Pony Express =====
     dict(test=2, stim="T2-SET", skill="Main idea", diff=2, basics="mainIdea",
          stem="Which sentence best states the central idea of \"The Pony Express\"?",
-         key="Riders sped up mail until faster ways came", wrong=["Riders crossed rivers and snowy mountains", "Many people moved to California in the 1850s", "Riders carried the mail in leather covers"],
+         key="Riders made mail faster until the telegraph", wrong=["Riders crossed rivers and snowy mountains", "Many people moved to California in the 1850s", "Riders carried the mail in leather covers"],
          expl="The article tells how the Pony Express made mail faster and why it ended when the telegraph came. Crossing rivers and mountains is a detail from one section."),
     dict(test=2, stim="T2-SET", skill="Text structure", diff=2, basics="textStructure",
          stem="How is the article \"The Pony Express\" mostly organized?",
@@ -214,7 +214,7 @@ ITEMS = [
          expl="The word Next shows that the gas cools and forms clouds after it rises. Rain and snow fall later, when the drops grow heavy."),
     dict(test=2, stim="T2-D", skill="Cause and effect", diff=2, basics=None,
          stem="According to \"Day and Night,\" what causes day and night on Earth?",
-         key="Earth spinning as it turns", wrong=["The sun moving across the sky", "Clouds covering up the sun", "The moon blocking the sunlight"],
+         key="Earth spinning like a top", wrong=["The sun moving across the sky", "Clouds covering up the sun", "The moon blocking the sunlight"],
          expl="The article says Earth spins once about every 24 hours, so each side faces the sun and then turns away. It says the sun does not really move across the sky."),
     dict(test=2, stim="T2-E", skill="Author's point of view", diff=2, basics="authorPurpose",
          stem="What is the author's point of view about school gardens?",
@@ -226,11 +226,11 @@ ITEMS = [
          expl="The article says that in 1983 she became the first American woman to travel to space. She loved tennis, but that is not why she is famous."),
     dict(test=2, stim="T2-G", skill="Text structure", diff=3, basics="textStructure",
          stem="Which text structure does the author use in \"A Cleaner Park\"?",
-         key="Problem and solution", wrong=["Compare and contrast", "Description of a place", "Cause and effect only"],
+         key="Problem and solution", wrong=["Compare and contrast", "Description of a place", "Steps to follow in order"],
          expl="The article tells about a problem, litter in the park, and how the students solved it with more cans and signs. That is a problem and solution structure."),
     dict(test=2, stim="T2-H", skill="Reasons and evidence", diff=3, basics="findingDetail",
          stem="Which detail best supports the idea that penguins are expert swimmers?",
-         key="Flippers push them forward", wrong=["They are birds that cannot fly", "Their wings are short and stiff", "They hunt for fish in the sea"],
+         key="Flippers push them forward", wrong=["They are birds that cannot fly", "Their wings are short and stiff", "Penguins are a kind of bird"],
          expl="Zooming forward by flapping their flippers shows how well penguins swim. That penguins cannot fly is true, but it does not show they swim well."),
     dict(test=2, stim="T2-I", skill="Glossary", diff=3, basics=None,
          stem="How does the glossary help a reader understand \"Inside a Volcano\"?",
@@ -254,7 +254,7 @@ ITEMS = [
     # ===== Drill: single passages =====
     dict(test=0, stim="D-A", skill="Cause and effect", diff=2, basics=None,
          stem="Why do people see lightning before they hear thunder?",
-         key="Light moves faster than sound", wrong=["Lightning happens before thunder", "Sound moves faster than light", "Thunder is far quieter than light"],
+         key="Light moves faster than sound", wrong=["Lightning happens before thunder", "Sound moves faster than light", "Eyes work faster than ears"],
          expl="The article says light travels much faster than sound, so the flash arrives first. It also says lightning and thunder happen at the same time."),
     dict(test=0, stim="D-B", skill="Sequence", diff=3, basics="sequenceEvents",
          stem="Which event in \"Lewis and Clark\" happened last?",
@@ -262,7 +262,7 @@ ITEMS = [
          expl="The group returned home in 1806, after reaching the Pacific Ocean in 1805. Buying the land happened first, in 1803."),
     dict(test=0, stim="D-C", skill="Reasons and evidence", diff=3, basics="authorPurpose",
          stem="Which reason does the author give to support keeping recess?",
-         key="Students focus after play", wrong=["Recess gives teachers a break", "Lessons are too long and dull", "Playgrounds cost a lot to build"],
+         key="Kids focus better after playing", wrong=["Teachers need a break at recess", "Lessons are too long and dull", "Playgrounds cost a lot to build"],
          expl="The author says many students find it easier to pay attention after recess. The article never mentions teachers needing a break."),
     dict(test=0, stim="D-D", skill="Summary", diff=1, basics="mainIdea",
          stem="Which sentence is the best summary of \"A Library on Wheels\"?",

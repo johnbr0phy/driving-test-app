@@ -85,7 +85,7 @@ ITEMS = [
        stem="Which sentence uses a modal verb to show that something is allowed?",
        key="You may leave early today.",
        wrong=["You left early today.", "You are leaving early today.", "You leave early today."],
-       expl="May is a modal verb that can show permission. The other sentences only tell when the leaving happens."),
+       expl="May is a modal verb that can show permission. The other sentences only tell about leaving; they do not say it is allowed."),
   dict(test=2, skill="Adverbs", diff=1, basics=None,
        stem="Read the sentence: The turtle crawled slowly across the path. Which word is an adverb?",
        key="slowly", wrong=["turtle", "crawled", "across"],
@@ -148,7 +148,7 @@ ITEMS = [
        key="harder", wrong=["hardest", "more harder", "most hard"],
        expl="When you compare two things, add -er: harder. More harder uses two comparing words at once."),
   dict(test=0, skill="Pronoun case", diff=2, basics="pronounCase",
-       stem='Read the sentence: "Me and Tom" walked to school. How should the part in quotation marks be written?',
-       key="Tom and I", wrong=["Tom and me", "Me and Tom", "I and Tom"],
+       stem='Read the sentence: Me and Tom walked to school. Which words should take the place of "Me and Tom"?',
+       key="Tom and I", wrong=["Tom and me", "Me and Tom", "Tom and myself"],
        expl="The pronoun is part of the subject, so use I, and it is polite to name the other person first. Try it alone: I walked, not me walked."),
 ]

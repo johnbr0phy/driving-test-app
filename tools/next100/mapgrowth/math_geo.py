@@ -84,7 +84,7 @@ ITEMS = [
        expl="It folds evenly across the middle the long way and the short way, so it has 2 lines. Its diagonals are not lines of symmetry because its sides are not all equal."),
   dict(test=0, skill="Parallel lines", diff=1, basics=None,
        stem="Which kind of lines never cross, no matter how far they go?",
-       key="parallel lines", wrong=["perpendicular lines", "intersecting lines", "crossing lines"],
+       key="parallel lines", wrong=["perpendicular lines", "intersecting lines", "line segments"],
        expl="Parallel lines stay the same distance apart, so they never meet. Perpendicular lines cross at a right angle."),
   dict(test=0, skill="Distance on a grid", diff=2, basics=None,
        stem="On a coordinate grid, a library is at (2, 6) and a park is at (7, 6). How far apart are they along the gridline?",

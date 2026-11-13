@@ -105,7 +105,7 @@ ITEMS = [
        expl="4 × 9 = 36, so 4 and 9 are a factor pair. The pair 8 and 4 makes 32, and 5 and 7 makes 35."),
   dict(test=0, skill="Pattern features", diff=2, basics=None,
        stem="A pattern starts at 4 and follows the rule \"add 5.\" Which statement about the numbers is true?",
-       key="They switch even, odd, even", wrong=["They are all even numbers", "They are all odd numbers", "They are all multiples of 5"],
+       key="They go even, odd, even, odd", wrong=["They are all even numbers", "They are all odd numbers", "They are all multiples of 5"],
        expl="The pattern goes 4, 9, 14, 19. Adding an odd number like 5 changes even to odd and odd to even each time."),
   dict(test=0, skill="Multi-step word problems", diff=2, basics="wordProblems",
        stem="A box holds 24 crayons. A teacher buys 5 boxes and gives out 70 crayons. How many crayons are left? Type the number.",

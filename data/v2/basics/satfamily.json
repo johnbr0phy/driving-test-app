@@ -177,7 +177,7 @@
             "Rubber, Golf, Tennis, Foam"
           ],
           "answer": 0,
-          "then": "15, 48, 55, 62. The last choice is the right list, but in decreasing order.",
+          "then": "15, 48, 55, 62. Rubber, Golf, Tennis, Foam has the right balls, but from greatest to least.",
           "hint": "Tennis is 48 and Golf is 55.",
           "line": "✓ Foam, Tennis, Golf, Rubber"
         }
@@ -282,7 +282,7 @@
           ],
           "answer": 0,
           "then": "They argue about why, not whether, birds fly south.",
-          "hint": "Scientist 2 would reject the second choice, and Scientist 1 the third.",
+          "hint": "Scientist 2 would reject the claim about shorter days, and Scientist 1 the claim about insects.",
           "line": "✓ Both: birds fly south in fall"
         }
       ]

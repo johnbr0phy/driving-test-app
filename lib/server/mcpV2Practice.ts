@@ -44,6 +44,7 @@ import '@/lib/v2/banks/secplus';
 import '@/lib/v2/banks/teas';
 import '@/lib/v2/banks/timestables';
 import '@/lib/v2/banks/vicsel';
+import '@/lib/v2/banks/mapgrowth';
 import '@/lib/v2/banks/faapvt';
 import '@/lib/v2/banks/psat';
 import '@/lib/v2/banks/praxis';

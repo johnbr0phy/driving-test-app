@@ -2132,6 +2132,24 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the FAA Private Pilot for Airplane Category ACS (FAA-S-ACS-6C) and the FAA ACS knowledge test table",
     source: { name: "FAA", url: "https://www.faa.gov/training_testing/testing/acs" },
   },
+  mapgrowth: {
+    answer:
+      "MAP Growth is NWEA's computer adaptive test that many US schools give in the fall, winter and spring (and sometimes summer) to measure what a student knows and how much they grow. Students in grades 2 to 5 take Math 2-5, Reading 2-5 and Language Usage 2+. Each test is untimed, usually takes about 45 to 60 minutes, and has at most 43 questions, a few of them unscored field-test items. Questions get harder or easier as the student answers, and the result is a RIT score, compared with national norms updated in 2025. Math covers Operations and Algebraic Thinking, Number and Operations, Measurement and Data, and Geometry; Reading covers Literary Text, Informational Text and Vocabulary; Language Usage covers writing, grammar and usage, and mechanics.",
+    rows: [
+      { label: "Who takes it", value: "Students in grades K to 12; the 2-5 tests are for grades 2 to 5" },
+      { label: "Subjects", value: "Math, Reading, Language Usage (and Science in some schools)" },
+      { label: "Questions", value: "Up to 43 per subject, including up to 3 or 4 unscored field-test items" },
+      { label: "Time", value: "Untimed, usually about 45 to 60 minutes per subject" },
+      { label: "Format", value: "Computer adaptive; multiple choice, multiselect, hot text and other item types" },
+      { label: "Score", value: "RIT score per subject, with national percentiles from the 2025 norms" },
+      { label: "How often", value: "Up to four times a year: fall, winter, spring and optional summer" },
+      { label: "Pass mark", value: "None: MAP Growth measures achievement and growth" },
+    ],
+    basedOn: "NWEA's MAP Growth Technical Report for 2024-2025 (April 2026) and MAP Growth Instructional Areas (CCSS, April 2025)",
+    source: { name: "NWEA: MAP Growth Technical Report 2025", url: "https://www.nwea.org/uploads/MAP-Growth-Technical-Report-2025.pdf" },
+    tigertest:
+      "Tigertest has two full practice tests in Math, Reading and Language Usage at NWEA's own blueprint, untimed like the real test, with a percent score per subject, and ten drills, one per instructional area, most of which teach the basics first. All of it is free with no account required. It is a fixed practice test, not adaptive, so it gives no RIT score.",
+  },
   psat: {
     answer:
       "The digital PSAT/NMSQT has 98 questions in 2 hours 14 minutes: Reading and Writing (54 questions, two 32-minute modules) and Math (44 questions, two 35-minute modules), with a calculator allowed on all of Math. It is adaptive by module and scored 320 to 1520, with each section scored 160 to 760. It is given to 10th and 11th graders in the fall (the PSAT 10 is the same test in the spring), and juniors' scores are used for the National Merit Scholarship Program through a Selection Index of 48 to 228.",

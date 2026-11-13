@@ -99,4 +99,5 @@ export const BANK_SIZES: Record<string, number> = {
   jambchem: 208,
   jambphys: 200,
   apgov: 201,
+  mapgrowth: 318,
 };

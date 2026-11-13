@@ -1438,6 +1438,19 @@
     --brand-border-light: 325 40% 89%;
     --brand-gradient-to: 340 60% 95%;
   }
+  /* MAP Growth theme: deep emerald (v2 exam; matches lib/v2/exams/mapgrowth.ts theme) */
+  [data-theme="mapgrowth"] {
+    --brand: 159 95% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 159 70% 95%;
+    --brand-hover: 159 95% 25%;
+    --brand-dark: 159 95% 21%;
+    --brand-darker: 159 90% 14%;
+    --brand-muted: 159 40% 70%;
+    --brand-border: 159 40% 78%;
+    --brand-border-light: 159 40% 88%;
+    --brand-gradient-to: 174 60% 94%;
+  }
   /* Victorian Selective theme: violet blue (v2 exam; matches lib/v2/exams/vicsel.ts theme) */
   [data-theme="vicsel"] {
     --brand: 256 90% 37%;
@@ -6039,6 +6052,15 @@
     --brand-darker: 325 85% 78%;
   }
 
+  .dark [data-theme="mapgrowth"] {
+    --brand-light: 159 45% 13%;
+    --brand-gradient-to: 174 40% 11%;
+    --brand-border-light: 159 35% 24%;
+    --brand-border: 159 40% 34%;
+    --brand-muted: 159 40% 45%;
+    --brand-dark: 159 95% 65%;
+    --brand-darker: 159 90% 78%;
+  }
   .dark [data-theme="vicsel"] {
     --brand: 256 90% 50%;
     --brand-hover: 256 90% 42%;

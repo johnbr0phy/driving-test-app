@@ -1,0 +1,56 @@
+{
+  "rule": "no-passing-zone",
+  "questionId": "U-012",
+  "state": "ALL",
+  "prompt": "What does a pennant-shaped sign indicate?",
+  "bankAnswer": "No passing",
+  "alsoCovers": [],
+  "params": {},
+  "decisions": [
+    {
+      "id": "pass",
+      "questionId": "U-012",
+      "prompt": "What does a pennant-shaped sign indicate?",
+      "sign": "pennant",
+      "signAlt": "A yellow pennant-shaped sign, pointing right, on the left side of the road",
+      "options": [
+        {
+          "id": "A",
+          "text": "School zone",
+          "correct": false,
+          "action": "pass",
+          "consequence": "You took the pennant for a school zone sign, so you did not know passing was banned. You pulled out to pass the truck. A car came over the hill in the lane you pulled into and had to swerve onto the shoulder to miss you."
+        },
+        {
+          "id": "B",
+          "text": "Yield ahead",
+          "correct": false,
+          "action": "pass",
+          "consequence": "You took the pennant for a yield sign, so you did not know passing was banned. You pulled out to pass the truck. A car came over the hill in the lane you pulled into and had to swerve onto the shoulder to miss you."
+        },
+        {
+          "id": "C",
+          "text": "Merge lane",
+          "correct": false,
+          "action": "shoulder",
+          "consequence": "You read it as a merge lane and moved right to use it. There is no lane there, only the shoulder, gravel and a guardrail, and you had to brake hard."
+        },
+        {
+          "id": "D",
+          "text": "No passing",
+          "correct": true,
+          "action": "stay"
+        }
+      ]
+    }
+  ],
+  "successText": "You waited. A car came over the hill in the lane you would have been in. Once the line was broken again, you passed with a clear view.",
+  "ruleText": "The pennant-shaped sign on the left side of the road marks the start of a no-passing zone: with a solid yellow line on your side, stay in your lane until the line is broken again.",
+  "citation": {
+    "source": "FHWA Manual on Uniform Traffic Control Devices, 11th Edition",
+    "short": "MUTCD 11th ed. §2C.53, §3B.01",
+    "section": "Section 2C.53 (No Passing Zone sign, W14-3) and Section 3B.01 (yellow center line markings)",
+    "url": "https://mutcd.fhwa.dot.gov/pdfs/11th_Edition/Chapter2c.pdf"
+  },
+  "verified": "Read in the FHWA PDFs, Nov 2026: the sign \"shall be installed on the left-hand side of the roadway at the beginning of no-passing zones\"; passing \"is prohibited for traffic traveling adjacent to the solid line\"."
+}

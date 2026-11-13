@@ -7,6 +7,7 @@
 // premium-only tests (3 and 4) sit behind Premium; other exams decide via
 // their ExamRoutes. Shared by /drill (DMV) and /htl/drill.
 
+import { DriveLink } from "@/components/drive/DriveLink";
 import { Fragment, useMemo, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -275,6 +276,7 @@ export function MissDrill({ routes }: { routes: ExamRoutes }) {
                         {q.explanation}
                       </p>
                     )}
+                    {answered && <DriveLink questionId={q.questionId} />}
                   </div>
                 )}
               />

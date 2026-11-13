@@ -1,0 +1,94 @@
+{
+  "rule": "flashing-signals",
+  "questionId": "U-009",
+  "state": "ALL",
+  "prompt": "What does a flashing red light mean?",
+  "bankAnswer": "Stop completely",
+  "alsoCovers": [
+    "U-010"
+  ],
+  "params": {},
+  "decisions": [
+    {
+      "id": "red",
+      "questionId": "U-009",
+      "prompt": "What does a flashing red light mean?",
+      "sign": "redLight",
+      "signAlt": "A traffic signal with a flashing red light",
+      "options": [
+        {
+          "id": "A",
+          "text": "Stop completely",
+          "correct": true,
+          "action": "stop"
+        },
+        {
+          "id": "B",
+          "text": "Slow down",
+          "correct": false,
+          "action": "roll",
+          "consequence": "Slowing down is not enough at a flashing red. You rolled through, and a car with the right of way had to brake hard to miss you."
+        },
+        {
+          "id": "C",
+          "text": "Yield",
+          "correct": false,
+          "action": "roll",
+          "consequence": "You treated it like a yield sign and rolled through. A flashing red means a full stop first; a car from the right had to brake hard to miss you."
+        },
+        {
+          "id": "D",
+          "text": "Proceed with caution",
+          "correct": false,
+          "action": "roll",
+          "consequence": "Proceed with caution is a flashing yellow. You rolled through the red, and a car from the right had to brake hard to miss you."
+        }
+      ]
+    },
+    {
+      "id": "yellow",
+      "questionId": "U-010",
+      "prompt": "What does a flashing yellow light mean?",
+      "sign": "yellowLight",
+      "signAlt": "A traffic signal with a flashing yellow light",
+      "options": [
+        {
+          "id": "A",
+          "text": "Stop then proceed",
+          "correct": false,
+          "action": "stop",
+          "consequence": "Stop then proceed is a flashing red. You stopped on a flashing yellow, and the driver behind did not expect it and had to brake hard."
+        },
+        {
+          "id": "B",
+          "text": "Proceed with caution",
+          "correct": true,
+          "action": "caution"
+        },
+        {
+          "id": "C",
+          "text": "Yield to all traffic",
+          "correct": false,
+          "action": "stop",
+          "consequence": "A flashing yellow does not make you yield to everyone. You stopped for the waiting car, and the driver behind had to brake hard."
+        },
+        {
+          "id": "D",
+          "text": "Signal is broken",
+          "correct": false,
+          "action": "fast",
+          "consequence": "You thought the signal was broken and kept your speed up. When the waiting car began to pull out, you had to swerve around it."
+        }
+      ]
+    }
+  ],
+  "successText": "You stopped fully at the flashing red and went when it was clear, then slowed and went carefully through the flashing yellow.",
+  "ruleText": "A flashing red light means stop completely, then go when it is safe, like a stop sign. A flashing yellow light means slow down and proceed with caution, without stopping.",
+  "citation": {
+    "source": "FHWA Manual on Uniform Traffic Control Devices, 11th Edition; California Driver's Handbook",
+    "short": "MUTCD §4A.04; CA Driver's Handbook",
+    "section": "MUTCD Section 4A.04 (flashing signal indications); handbook section \"Laws and Rules of the Road\", traffic signals",
+    "url": "https://www.dmv.ca.gov/portal/handbook/california-driver-handbook/laws-and-rules-of-the-road/"
+  },
+  "verified": "Read Nov 2026. California Driver's Handbook: \"A flashing red signal light means STOP. After stopping, you may go when it is safe.\" and, for flashing yellow, \"PROCEED WITH CAUTION. Slow down and be alert. You do not need to stop.\" The New York and Texas handbooks say the same."
+}

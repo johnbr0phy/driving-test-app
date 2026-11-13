@@ -1,0 +1,61 @@
+{
+  "rule": "parking-clearance",
+  "questionId": "TX-037",
+  "state": "TX",
+  "prompt": "How far from a crosswalk must you park in Texas?",
+  "bankAnswer": "20 feet",
+  "alsoCovers": [],
+  "params": {
+    "feature": "crosswalk",
+    "unit": "feet"
+  },
+  "decisions": [
+    {
+      "id": "park",
+      "questionId": "TX-037",
+      "prompt": "How far from a crosswalk must you park in Texas?",
+      "options": [
+        {
+          "id": "A",
+          "text": "10 feet",
+          "correct": false,
+          "action": "d10",
+          "distanceFt": 10,
+          "consequence": "You parked 10 feet from the crosswalk, closer than the law allows. Your car hid a person about to cross, and the next driver saw them only at the last moment."
+        },
+        {
+          "id": "B",
+          "text": "15 feet",
+          "correct": false,
+          "action": "d15",
+          "distanceFt": 15,
+          "consequence": "You parked 15 feet from the crosswalk, closer than the law allows. Your car hid a person about to cross, and the next driver saw them only at the last moment."
+        },
+        {
+          "id": "C",
+          "text": "20 feet",
+          "correct": true,
+          "action": "d20",
+          "distanceFt": 20
+        },
+        {
+          "id": "D",
+          "text": "25 feet",
+          "correct": false,
+          "action": "d25",
+          "distanceFt": 25,
+          "consequence": "Parking 25 feet back is safe and legal, but it is not the rule: the limit is 20 feet from the crosswalk, so 25 is marked wrong on the test."
+        }
+      ]
+    }
+  ],
+  "successText": "You left the crosswalk in plain view. The person crossing and the next driver could see each other in good time.",
+  "ruleText": "Do not park within 20 feet of a crosswalk at an intersection: a parked car that close hides people about to cross.",
+  "citation": {
+    "source": "Texas Driver Handbook (DL-7); Texas Transportation Code",
+    "short": "Texas Transp. Code §545.302(b)",
+    "section": "Handbook parking rules; Transportation Code Section 545.302(b)",
+    "url": "https://www.dps.texas.gov/internetforms/Forms/DL-7.pdf"
+  },
+  "verified": "Read Nov 2026 in the official handbook PDF: \"Within 20 feet of a crosswalk at an intersection\"."
+}

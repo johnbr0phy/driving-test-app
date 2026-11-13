@@ -1,0 +1,61 @@
+{
+  "rule": "parking-clearance",
+  "questionId": "LA-028",
+  "state": "LA",
+  "prompt": "How close to a crosswalk or intersection can you legally park in Louisiana?",
+  "bankAnswer": "No closer than 20 feet",
+  "alsoCovers": [],
+  "params": {
+    "feature": "crosswalk",
+    "unit": "feet"
+  },
+  "decisions": [
+    {
+      "id": "park",
+      "questionId": "LA-028",
+      "prompt": "How close to a crosswalk or intersection can you legally park in Louisiana?",
+      "options": [
+        {
+          "id": "A",
+          "text": "No closer than 20 feet",
+          "correct": true,
+          "action": "d20",
+          "distanceFt": 20
+        },
+        {
+          "id": "B",
+          "text": "No closer than 10 feet",
+          "correct": false,
+          "action": "d10",
+          "distanceFt": 10,
+          "consequence": "You parked 10 feet from the crosswalk, closer than the law allows. Your car hid a person about to cross, and the next driver saw them only at the last moment."
+        },
+        {
+          "id": "C",
+          "text": "No closer than 15 feet",
+          "correct": false,
+          "action": "d15",
+          "distanceFt": 15,
+          "consequence": "You parked 15 feet from the crosswalk, closer than the law allows. Your car hid a person about to cross, and the next driver saw them only at the last moment."
+        },
+        {
+          "id": "D",
+          "text": "No closer than 30 feet",
+          "correct": false,
+          "action": "d30",
+          "distanceFt": 30,
+          "consequence": "Parking 30 feet back is safe and legal, but it is not the rule: the limit is 20 feet from the crosswalk, so 30 is marked wrong on the test."
+        }
+      ]
+    }
+  ],
+  "successText": "You left the crosswalk in plain view. The person crossing and the next driver could see each other in good time.",
+  "ruleText": "Do not park within 20 feet of a crosswalk at an intersection: a parked car that close hides people about to cross.",
+  "citation": {
+    "source": "Louisiana Revised Statutes",
+    "short": "La. RS 32:143(A)(6)",
+    "section": "RS 32:143(A)(6)",
+    "url": "https://www.legis.la.gov/legis/Law.aspx?d=88071"
+  },
+  "verified": "Read Nov 2026 on the Louisiana Legislature site: \"Within twenty feet of a crosswalk at an intersection\"."
+}

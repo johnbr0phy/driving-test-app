@@ -1,0 +1,56 @@
+{
+  "rule": "double-arrow",
+  "questionId": "U-019",
+  "state": "ALL",
+  "prompt": "What does a double arrow sign mean?",
+  "bankAnswer": "Traffic may pass on either side of obstruction",
+  "alsoCovers": [],
+  "params": {},
+  "decisions": [
+    {
+      "id": "split",
+      "questionId": "U-019",
+      "prompt": "What does a double arrow sign mean?",
+      "sign": "doubleArrow",
+      "signAlt": "A yellow diamond sign with two black arrows pointing down and apart",
+      "options": [
+        {
+          "id": "A",
+          "text": "Traffic must merge to one side of the road",
+          "correct": false,
+          "action": "right",
+          "consequence": "You thought traffic had to merge to one side and moved right, into the car beside you. It had to brake and swerve to miss you."
+        },
+        {
+          "id": "B",
+          "text": "Traffic may enter from either direction ahead",
+          "correct": false,
+          "action": "stop",
+          "consequence": "You expected traffic to enter from both sides and stopped to look, in a moving lane. The driver behind had to brake hard and swerve around you."
+        },
+        {
+          "id": "C",
+          "text": "Traffic may pass on either side of obstruction",
+          "correct": true,
+          "action": "left"
+        },
+        {
+          "id": "D",
+          "text": "Traffic must stop before proceeding forward",
+          "correct": false,
+          "action": "stop",
+          "consequence": "You thought you had to stop before the island and stopped in a moving lane. The driver behind had to brake hard and swerve around you."
+        }
+      ]
+    }
+  ],
+  "successText": "You held your lane and passed on the left while the car beside you passed on the right. Both sides were open, which is all the sign says.",
+  "ruleText": "A double arrow sign means traffic may pass on either side of the island or obstruction, so stay in your lane and keep moving.",
+  "citation": {
+    "source": "FHWA Manual on Uniform Traffic Control Devices, 11th Edition",
+    "short": "MUTCD 11th ed. §2C.23",
+    "section": "Section 2C.23 (Double Arrow sign, W12-1)",
+    "url": "https://mutcd.fhwa.dot.gov/pdfs/11th_Edition/Chapter2c.pdf"
+  },
+  "verified": "Read in the FHWA PDF, Nov 2026: the sign advises \"that traffic is permitted to pass on either side of an island, obstruction, or gore in the roadway\"."
+}

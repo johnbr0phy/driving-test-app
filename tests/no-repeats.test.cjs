@@ -10,54 +10,13 @@
 // baseline may only shrink: a new exam, or a new repeat in an old one, fails.
 // Rebuild the baseline after fixing old exams:
 //   NO_REPEATS_WRITE_BASELINE=1 node --test tests/no-repeats.test.cjs
-require('tsx/cjs');
 const fs = require('node:fs');
 const path = require('node:path');
 const assert = require('node:assert/strict');
 const { test } = require('node:test');
-require('../lib/server/mcpV2Practice.ts'); // registers every v2 bank
-const { EXAMS_V2 } = require('../lib/v2/registry.ts');
-const { getBank } = require('../lib/v2/bank.ts');
+const { findRepeats } = require('../scripts/find-repeats.cjs');
 
 const BASELINE = path.join(__dirname, 'no-repeats-baseline.json');
-
-function norm(s) {
-  return String(s ?? '').toLowerCase().replace(/[^a-z0-9À-￿]+/g, ' ').trim();
-}
-
-function findRepeats() {
-  const out = [];
-  for (const exam of EXAMS_V2) {
-    const drills = exam.drills ?? [];
-    const skillDrills = {};
-    const domainDrills = {};
-    const drillBasics = {};
-    for (const d of drills) {
-      for (const s of d.basics ?? []) (skillDrills[s] ??= []).push(d.key);
-      for (const dom of d.domains ?? []) {
-        (domainDrills[dom] ??= []).push(d.key);
-        drillBasics[dom] = new Set([...(drillBasics[dom] ?? []), ...(d.basics ?? [])]);
-      }
-    }
-    for (const [s, keys] of Object.entries(skillDrills))
-      if (keys.length > 1) out.push(`${exam.id}: Basics skill ${s} opens ${keys.join(', ')}`);
-    for (const [dom, keys] of Object.entries(domainDrills))
-      if (keys.length > 1) out.push(`${exam.id}: domain ${dom} is drilled by ${keys.join(', ')}`);
-
-    const seen = new Map();
-    for (const q of getBank(exam.id).questions) {
-      if (q.basics && drillBasics[q.domain] && !drillBasics[q.domain].has(q.basics))
-        out.push(`${exam.id}: ${q.id} is tagged ${q.basics}, which its drill does not open with`);
-      const key = JSON.stringify([
-        norm(q.stem), norm(q.passage), q.stimulusId ?? '',
-        (q.options ?? []).map(norm).sort(), (q.rows ?? []).map(norm), (q.blanks ?? []).map((b) => b.map(norm)),
-      ]);
-      if (seen.has(key)) out.push(`${exam.id}: ${q.id} repeats ${seen.get(key)}`);
-      else seen.set(key, q.id);
-    }
-  }
-  return out.sort();
-}
 
 test('no Basics skill, drill domain or question repeats inside an exam', () => {
   const found = findRepeats();

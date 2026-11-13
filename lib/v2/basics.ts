@@ -10,6 +10,10 @@ import gcseScience from "@/data/v2/basics/gcsescience.json";
 import gcsecs from "@/data/v2/basics/gcsecs.json";
 import elevenplus from "@/data/v2/basics/elevenplus.json";
 import fsMaths from "@/data/v2/basics/fsmaths.json";
+import satFamily from "@/data/v2/basics/satfamily.json";
+import entrance from "@/data/v2/basics/entrance.json";
+import selective from "@/data/v2/basics/selective.json";
+import gcse from "@/data/v2/basics/gcse.json";
 import { BasicsSkillState, DrillDef, ExamV2Config } from "./types";
 
 /**
@@ -109,7 +113,7 @@ export function hasWalkthrough(skill: BasicsSkill): boolean {
 }
 
 const LIBRARY: Record<string, BasicsSkill> = Object.fromEntries(
-  ([...grammar, ...reading, ...math, ...science, ...writing, ...timesTables, ...ks2, ...gcseScience, ...gcsecs, ...elevenplus, ...fsMaths] as BasicsSkill[]).map((s) => [s.id, s])
+  ([...grammar, ...reading, ...math, ...science, ...writing, ...timesTables, ...ks2, ...gcseScience, ...gcsecs, ...elevenplus, ...fsMaths, ...satFamily, ...entrance, ...selective, ...gcse] as BasicsSkill[]).map((s) => [s.id, s])
 );
 
 /** Punctuation marks shown with their names on a blank question. */

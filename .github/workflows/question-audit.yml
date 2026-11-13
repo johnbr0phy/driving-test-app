@@ -12,11 +12,11 @@ name: Question audit
 # carries audits/resolutions/<date>.json, so merging it closes the findings on
 # /admin and restarts the fixed questions' answer statistics.
 #
-# The PR merges itself when three things hold: the fix step finished, a second
+# The PR merges itself when the fix step finished and settled a finding, a second
 # Claude Code run that did not write the fixes re-checked every changed
 # question against the exam's sources and objected to none, and the checks a
 # PR gets (scripts/automerge-checks.sh) pass. Otherwise it stays open with a
-# comment saying which of the three failed. A PR merged by hand closes its
+# comment saying which of them failed. A PR merged by hand closes its
 # findings through the resolve job.
 #
 # Needs repository secrets ANTHROPIC_API_KEY and FIREBASE_SERVICE_ACCOUNT_KEY
@@ -146,14 +146,25 @@ jobs:
         uses: anthropics/claude-code-action@v1
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
-          claude_args: --max-turns 200 --allowedTools "Read,Edit,Write,Glob,Grep,Bash(python3:*),Bash(npx tsx:*),Bash(git diff:*),Bash(git status:*)"
+          claude_args: --max-turns 200 --allowedTools "Read,Edit,Write,Glob,Grep,WebFetch,WebSearch,Bash(python3:*),Bash(npx tsx:*),Bash(git diff:*),Bash(git status:*)"
           prompt: |
             Read CLAUDE.md, then the question audit at ${{ steps.findings.outputs.report }}
             (details in ${{ steps.findings.outputs.file }}).
 
             For each finding, decide for yourself whether it is right: open the question
             in its bank and the exam's tools/**/sources.md, and check the rule. Fix only
-            the ones you agree with. Fix the source the bank is built from (the Python or
+            the ones you agree with. Your fix is merged without a person reading it once
+            the checks pass, so change a key only when the official rule says so plainly;
+            otherwise leave the finding out of the resolutions file so it stays open.
+
+            Official sources only. A question, key, explanation or fact may change only
+            when you have read the change yourself (WebFetch, never a search snippet) on
+            an official source: the body that owns the exam (its outline, handbook,
+            bulletin or news page), the government or regulator, or the primary law,
+            standard or official manual the exam is based on. Prep sites, coaching
+            sites, news articles, forums and AI answers are never enough on their own.
+            Add the official URL and what it says, dated, to the exam's sources.md, and
+            name it in your note. If you cannot reach an official source, change nothing. Fix the source the bank is built from (the Python or
             JSON under tools/ named in CLAUDE.md for that exam), never only the built JSON,
             then run that exam's build script so data/ matches. A key change must also be
             made in every translated bank of that exam (data/<bank>_<lang>.json).
@@ -262,12 +273,12 @@ jobs:
             lib/examBankSizes.json
             lib/v2/bankSizes.ts
 
-      # Merge when the fix ran, the second reviewer has no objection and every
-      # check passed. A push made with the workflow token starts no workflow, so
+      # Merge when the fix ran and settled at least one finding, the second
+      # reviewer has no objection and every check passed. A push made with the workflow token starts no workflow, so
       # the resolve job's work (closing the findings) is done here.
       - name: Merge the fix
         id: merge
-        if: ${{ steps.pr.outputs.pull-request-number && steps.fix.outcome == 'success' && steps.verdict.outputs.ok == 'true' && steps.checks.outcome == 'success' }}
+        if: ${{ steps.pr.outputs.pull-request-number && steps.fix.outcome == 'success' && steps.verdict.outputs.ok == 'true' && steps.checks.outcome == 'success' && hashFiles(steps.findings.outputs.resolutions) != '' }}
         env:
           GH_TOKEN: ${{ github.token }}
           FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
@@ -287,6 +298,7 @@ jobs:
           - Fix step: ${{ steps.fix.outcome }}
           - Second review: ${{ steps.verdict.outputs.ok == 'true' && 'no objections' || 'objections or no verdict' }}
           - Checks: ${{ steps.checks.outcome }}
+          - Findings settled: ${{ hashFiles(steps.findings.outputs.resolutions) != '' && 'yes' || 'none' }}
 
           $NOTE
 

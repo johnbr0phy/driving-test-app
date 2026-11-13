@@ -173,7 +173,7 @@
       9,
       10
     ],
-    "explanation": "Tremor, sweating, tachycardia, hypertension and tactile hallucinations 36 hours after the last drink in a heavy drinker are alcohol withdrawal, which can progress to seizures and delirium tremens, so the PN reports to the RN at once and sets up seizure precautions. Sepsis is less likely with a low-grade fever and clear lungs and would not cause tremor and crawling sensations; a dark, closed room and restraints worsen agitation and hallucinations."
+    "explanation": "Tremor, sweating, a fast heart rate, high blood pressure and tactile hallucinations 36 hours after the last drink in a heavy drinker are alcohol withdrawal, which can progress to seizures and delirium tremens, so the PN reports to the RN at once, puts seizure precautions in place and keeps checking orientation, hallucinations, blood pressure and heart rate. Sepsis from the cellulitis could raise the heart rate and temperature but does not explain the tremor and crawling sensations, a panic attack does not cause hallucinations, and hypoglycemia does not cause hypertension or formication. Coffee adds stimulation, a dark room with the door closed makes hallucinations worse and keeps the client out of sight, and restraints increase agitation and injury. Urine output and serum sodium are not the key measures of withdrawal severity."
   },
   {
     "domain": "pnPsych",
@@ -204,13 +204,13 @@
     "skill": "Fear of falling",
     "difficulty": 2,
     "format": "multi",
-    "passage": "Two weeks later. The CT scan at the hospital showed no bleeding and the resident returned the next day. Zolpidem was stopped and the resident joined an afternoon exercise group. The AP reports the resident \"used the call light every night this week\" and walked to the bathroom with the walker. The resident says, \"I'm scared of falling in the dining room, so I eat in my room.\"",
+    "passage": "Two weeks later. The CT scan at the hospital showed no bleeding and the resident returned the next day. Zolpidem was stopped and the resident joined an afternoon exercise group. The AP reports the resident \"used the call light every night this week\" and walked to the bathroom with the walker. There have been no further falls. The resident says, \"I'm scared of falling in the dining room, so I eat in my room.\"",
     "stimulusId": "NCLEXPN-CS1",
     "caseStep": 6,
     "stem": "The PN evaluates the resident's progress. Which findings show that the plan of care is working? Select all that apply.",
     "options": [
       "Uses the call light before getting up at night",
-      "Walks to the bathroom with the walker and standby assistance",
+      "Walks to the bathroom with the walker",
       "Eats meals alone in the room",
       "Has had no further falls",
       "Attends the exercise group",

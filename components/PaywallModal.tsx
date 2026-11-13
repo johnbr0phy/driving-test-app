@@ -15,7 +15,14 @@ import { en, es, vi, ko, zh } from "@/i18n";
 import Image from "next/image";
 import { useIsNativeApp } from "@/hooks/useIsNativeApp";
 import { SupportPaywallModal } from "@/components/SupportPaywallModal";
-import { paywallVariant, recordPaywallTestView, type PaywallVariant } from "@/lib/paywallTest";
+import {
+  notePaywallHit,
+  paywallVariant,
+  recordPaywallTestView,
+  type PaywallHit,
+  type PaywallVariant,
+  type PaywallVisit,
+} from "@/lib/paywallTest";
 import { usePremiumPrice } from "@/hooks/usePremiumPrice";
 
 interface PaywallModalProps {
@@ -34,6 +41,13 @@ interface PaywallModalProps {
   /** "2,000+ students passed" is a DMV number: hide it on other exams' paywalls. */
   hideSocialProof?: boolean;
 }
+
+// English headlines for a browser's second and third paywall visit (the first
+// keeps the exam's own headline). John's side has its own in SupportPaywallModal.
+const RETURN_HEADLINES: Partial<Record<PaywallHit, [string, string]>> = {
+  2: ["Back for more?", "Unlock all of it."],
+  3: ["Still deciding?", "Pay once. Keep it."],
+};
 
 export function PaywallModal({
   open,
@@ -64,9 +78,19 @@ export function PaywallModal({
   const shown = useRef<PaywallVariant | null>(null);
   if (open && language === "en") shown.current = paywallVariant();
   const variant = shown.current;
+  // Which visit this is, counted once as the modal opens and kept while it
+  // closes: the second and third visits get a different message.
+  const wasOpen = useRef(false);
+  const visitRef = useRef<PaywallVisit>({ hit: 1, arm: "new", message: 1 });
+  if (open && !wasOpen.current && language === "en") visitRef.current = notePaywallHit();
+  wasOpen.current = open;
+  const visit = visitRef.current;
+  // Half of browsers keep the first message on return visits, as the comparison.
+  const hit: PaywallHit = language === "en" ? visit.message : 1;
   useEffect(() => {
-    if (open && language === "en" && variant) void recordPaywallTestView(variant);
-  }, [open, language, variant]);
+    if (open && language === "en" && variant) void recordPaywallTestView(variant, visit.hit, visit.arm);
+  }, [open, language, variant, visit]);
+  const shownHeadline = RETURN_HEADLINES[hit] ?? headline;
 
   if (language === "en" && variant !== "classic") {
     return (
@@ -78,6 +102,7 @@ export function PaywallModal({
         benefits={benefits}
         isGuest={isGuest}
         onSignUp={onSignUp}
+        hit={hit}
       />
     );
   }
@@ -104,9 +129,9 @@ export function PaywallModal({
               className="flex-shrink-0"
             />
             <DialogTitle className="text-2xl font-bold leading-tight text-gray-900 dark:text-gray-50">
-              {headline?.[0] ?? t("paywall.studySmart")}
+              {shownHeadline?.[0] ?? t("paywall.studySmart")}
               <br />
-              {headline?.[1] ?? t("paywall.passFirstTime")}
+              {shownHeadline?.[1] ?? t("paywall.passFirstTime")}
             </DialogTitle>
           </div>
           <DialogDescription className="sr-only">

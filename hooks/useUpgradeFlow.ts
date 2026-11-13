@@ -10,7 +10,7 @@ import {
   trackPaywallHit,
   trackViewItem,
 } from "@/lib/analytics";
-import { paywallVariantForCheckout } from "@/lib/paywallTest";
+import { paywallHitForCheckout, paywallReturnForCheckout, paywallVariantForCheckout } from "@/lib/paywallTest";
 import { checkoutAttribution } from "@/lib/funnel";
 
 export type PaywallFeature = string;
@@ -60,6 +60,8 @@ export function useUpgradeFlow(location: string, returnPath = "/dmv/dashboard") 
           returnPath,
           location,
           paywallVariant: paywallVariantForCheckout(),
+          paywallHit: paywallHitForCheckout(),
+          paywallReturn: paywallReturnForCheckout(),
         }),
       });
       const data = await response.json();

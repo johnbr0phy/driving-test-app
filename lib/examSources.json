@@ -1,4 +1,9 @@
 {
+ "aafcs": [
+  "https://www.aafcs.org/credentialing/cert-testing/testing-hnfs",
+  "https://www.aafcs.org/credentialing/professional-certifications/cfcs-hnfs",
+  "https://www.aafcs.org/about/about-bok"
+ ],
  "aatl2": [
   "https://www.aat.org.uk/qualifications-and-courses/accounting/level-2-certificate-accounting",
   "https://www.aat.org.uk/files/AAT-Level-2-Certificate-in-Accounting-Q2022-qualification-specification.pdf",
@@ -526,6 +531,11 @@
   "https://services.google.com/fh/files/misc/cloud_digital_leader_exam_guide_english.pdf",
   "https://cloud.google.com/learn/certification/cloud-digital-leader"
  ],
+ "gcppca": [
+  "https://services.google.com/fh/files/misc/professional_cloud_architect_exam_guide_english.pdf",
+  "https://docs.cloud.google.com/architecture/framework/operational-excellence",
+  "https://cloud.google.com/learn/certification/cloud-architect"
+ ],
  "gcsecs": [
   "https://www.gov.uk/government/publications/gcse-computer-science/gcse-subject-content-for-computer-science",
   "https://www.aqa.org.uk/subjects/computer-science/gcse/computer-science-8525/specification/scheme-of-assessment",
@@ -716,6 +726,11 @@
   "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/202610241890224107.pdf",
   "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024390682350.pdf"
  ],
+ "jkssbja": [
+  "https://jkssb.nic.in/Pdf/ADVT08OF2025_27092025.pdf",
+  "https://www.jkssb.nic.in/Pdf/Notice_24032026.pdf",
+  "https://jkssb.nic.in/Pdf/Syllabus_JrAsstt_Steno_23122025.pdf"
+ ],
  "jnvst": [
   "https://cbseitms.rcil.gov.in/nvs/assets/pdf/Final_Prospectus_2027.pdf",
   "https://cbseitms.rcil.gov.in/nvs/",
@@ -740,6 +755,11 @@
   "https://www.insurancecouncilofbc.com/llqp/exam-information-and-registration/about-the-exam/in-person-exams/",
   "https://www.gov.nl.ca/dgsnl/files/insurance-pdf-memo-llqp-2018.pdf",
   "https://lautorite.qc.ca/en/becoming-a-professional/insurance-of-persons-and-group-insurance-of-persons/examinations/pilot-exam-questions"
+ ],
+ "mapgrowth": [
+  "https://www.nwea.org/uploads/CCSS_2025.pdf",
+  "https://www.nwea.org/uploads/MAP-Growth-Technical-Report-2025.pdf",
+  "https://learning.ccsso.org/wp-content/uploads/2022/11/Math_Standards1.pdf"
  ],
  "mhtcet": [
   "https://cetcell.mahacet.org/",
@@ -1245,6 +1265,11 @@
   "https://www.tx.nesinc.com/TestView.aspx?f=HTML_FRAG/TX160_TestPage.html",
   "https://www.tx.nesinc.com/Content/StudyGuide/TX_SG_obj_160.htm",
   "https://tea.texas.gov/texas-educators/preparation-and-continuing-education/program-provider-resources/ch-235c-ppr-ec-12-faq.pdf"
+ ],
+ "tgsi": [
+  "https://www.tgprb.in",
+  "https://doc.tgprb.in/SI+(Civil+et+al",
+  "https://www.tgprb.in/SI_PC_2026/Application%20Dates%202026%20Press%20Note%20dated%2029-07-2026.pdf"
  ],
  "trcnpqe": [
   "https://trcn.gov.ng/pqe-curriculum",

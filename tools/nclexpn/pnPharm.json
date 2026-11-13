@@ -93,7 +93,7 @@
     "correct": [
       1
     ],
-    "explanation": "Regular insulin starts working in about 30 minutes and peaks 2 to 3 hours after the dose, so the highest hypoglycemia risk is mid-morning. 0745 is before the onset, and 1600 or 2200 fit an intermediate-acting insulin such as NPH."
+    "explanation": "Regular insulin starts working in about 30 minutes and peaks 2 to 3 hours after the dose, so the highest hypoglycemia risk is mid-morning. 0745 is before the onset, 1600 fits the later peak of an intermediate-acting insulin such as NPH, and by 2200 the effect of a morning dose of regular insulin has worn off."
   },
   {
     "domain": "pnPharm",
@@ -168,7 +168,7 @@
     "correct": [
       0
     ],
-    "explanation": "Phenytoin causes gum overgrowth, so careful daily oral hygiene and regular dental visits are reinforced. It is taken every day to keep a steady blood level, and stopping it suddenly can trigger seizures."
+    "explanation": "Phenytoin causes gum overgrowth, so careful daily oral hygiene and regular dental visits are reinforced. It is taken every day to keep a steady blood level, and stopping it suddenly can trigger seizures, so drowsiness is reported to the provider rather than handled by quitting the drug. Dairy products do not need to be avoided."
   },
   {
     "domain": "pnPharm",
@@ -390,12 +390,12 @@
       "\"Take them together to reduce the stomach upset from the antibiotic.\"",
       "\"The antacid makes the antibiotic work better, so take them together.\"",
       "\"Crush both and mix them in applesauce so they go down easily.\"",
-      "\"Take the antacid at least 2 hours apart from the antibiotic.\""
+      "\"Take the antibiotic at least 2 hours before or 6 hours after the antacid.\""
     ],
     "correct": [
       3
     ],
-    "explanation": "Aluminum, magnesium and calcium in antacids bind ciprofloxacin in the gut so much less is absorbed, so the doses are separated by at least 2 hours. Taking them together, with or without crushing, can leave the infection undertreated."
+    "explanation": "Aluminum, magnesium and calcium in antacids bind ciprofloxacin in the gut so much less is absorbed, so the antibiotic is taken at least 2 hours before or 6 hours after the antacid. Taking them together, with or without crushing, can leave the infection undertreated."
   },
   {
     "domain": "pnPharm",
@@ -482,7 +482,7 @@
     "format": "single",
     "stem": "A client is prescribed doxycycline for a tick bite. Which instruction should the PN reinforce?",
     "options": [
-      "Take each dose with a glass of milk",
+      "Stop the capsules once the bite stops itching",
       "Use sunscreen and limit time in the sun",
       "Lie down right after taking the capsule",
       "Take it at the same time as an iron supplement"
@@ -490,6 +490,6 @@
     "correct": [
       1
     ],
-    "explanation": "Doxycycline makes the skin burn easily, so sun protection is reinforced. Milk, calcium, iron and antacids bind the drug and block absorption, and lying down after a dose can let the capsule lodge and burn the esophagus."
+    "explanation": "Doxycycline makes the skin burn easily, so sun protection is reinforced. The full course is finished even when symptoms fade, iron supplements and antacids bind the drug and block absorption so they are taken at a different time, and lying down after a dose can let the capsule lodge and burn the esophagus."
   }
 ]

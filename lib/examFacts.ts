@@ -2312,6 +2312,22 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the Cloud Digital Leader exam guide launched August 12, 2026",
     source: { name: "Google Cloud", url: "https://cloud.google.com/learn/certification/cloud-digital-leader" },
   },
+  gcppca: {
+    answer:
+      "The Google Cloud Professional Cloud Architect exam has 50 to 60 multiple choice and multiple select questions in 2 hours and costs 200 USD. Each exam includes 2 case studies, and case study questions make up 20 to 30 percent of the exam. Google reports pass or fail and does not publish a passing score. The exam guide weights Designing and planning a cloud solution architecture at about 25 percent, Managing and provisioning a solution infrastructure and Designing for security and compliance at about 17.5 percent each, Analyzing and optimizing technical and business processes at about 15 percent, and Managing implementation and Ensuring solution and operations excellence at about 12.5 percent each.",
+    rows: [
+      { label: "Questions", value: "50 to 60, multiple choice and multiple select" },
+      { label: "Time", value: "2 hours" },
+      { label: "Case studies", value: "2 per exam, 20 to 30% of questions" },
+      { label: "Passing score", value: "Pass or fail; no published cut score" },
+      { label: "Fee", value: "200 USD" },
+      { label: "Languages", value: "English, Japanese" },
+      { label: "Valid for", value: "2 years" },
+      { label: "Given by", value: "Google Cloud, online or at a test center" },
+    ],
+    basedOn: "the Professional Cloud Architect exam guide and certification page, checked November 2026",
+    source: { name: "Google Cloud", url: "https://cloud.google.com/learn/certification/cloud-architect" },
+  },
   ssccgl: {
     answer:
       "SSC CGL Tier 1 is a computer-based paper of 100 multiple-choice questions in 60 minutes, set by the Staff Selection Commission. It has four parts of 25 questions: General Intelligence and Reasoning, General Awareness, Quantitative Aptitude and English Comprehension. Each right answer earns 2 marks (200 in all) and each wrong answer loses 0.50 marks. Tier 1 is qualifying: candidates who clear the cut-off for their category go on to Tier 2, which decides the final merit.",
@@ -3595,6 +3611,39 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "the MPESB Police Constable Recruitment Test 2025 as reported by exam guides, checked November 2026",
     source: { name: "Madhya Pradesh Employees Selection Board", url: "https://esb.mp.gov.in" },
+  },
+  jkssbja: {
+    answer:
+      "The JKSSB Junior Assistant written test is set by the Jammu and Kashmir Services Selection Board. Its syllabus (notice of 23 December 2025) is one objective paper of 80 marks in 80 minutes in four units of 20 marks: General English, General Awareness with special reference to J&K UT, Numerical and Reasoning Ability, and Basic Concepts of Computers. JKSSB's Junior Assistant instructions give 80 multiple-choice questions with 0.25 marks taken off for each wrong answer. The written test counts for 80 of the 100 selection points; a type test at 35 words a minute counts for the other 20. The latest test, for Advertisement No. 08 of 2025, was held on OMR sheets on 19 April 2026.",
+    rows: [
+      { label: "Questions", value: "80 objective (80 marks)" },
+      { label: "Time", value: "80 minutes" },
+      { label: "Units", value: "General English 20, General Awareness (J&K) 20, Numerical and Reasoning 20, Computers 20" },
+      { label: "Negative marking", value: "0.25 per wrong answer (JKSSB's Junior Assistant instructions)" },
+      { label: "Selection", value: "Written test 80 points, type test (35 wpm) 20 points" },
+      { label: "Qualification", value: "Graduate, with typing at 35 words a minute" },
+      { label: "Latest test", value: "19 April 2026, OMR (Advertisement No. 08 of 2025)" },
+      { label: "Given by", value: "Jammu and Kashmir Services Selection Board (JKSSB)" },
+    ],
+    basedOn: "the JKSSB Junior Assistant syllabus notice of 23.12.2025 (Advertisement No. 08 of 2025) and the board's notice of 24.03.2026",
+    source: { name: "Jammu and Kashmir Services Selection Board", url: "https://jkssb.nic.in/Pdf/Syllabus_JrAsstt_Steno_23122025.pdf" },
+  },
+  tgsi: {
+    answer:
+      "The Telangana Police Sub-Inspector Preliminary Written Test is set by the Telangana State Level Police Recruitment Board (TSLPRB, www.tgprb.in). Its 2026 notification (29 July 2026, 275 SI and equivalent posts) sets one 3-hour paper of 200 objective questions for 200 marks: Arithmetic and Test of Reasoning / Mental Ability 100 and General Studies 100, including the Telangana Movement and State Formation. A wrong answer, or more than one bubble marked, costs 20% of the question's marks, and a blank scores zero. To qualify you need 30% (OC and EWS), 25% (BC) or 20% (SC, ST and Ex-Servicemen). Questions are set in English-Telugu and English-Urdu, with the English version final. The board has tentatively scheduled the SI test for 29 November 2026; qualifiers go on to the physical tests and a Final Written Examination of four papers.",
+    rows: [
+      { label: "Questions", value: "200 objective (1 mark each, 200 marks)" },
+      { label: "Time", value: "3 hours, one paper on an OMR sheet" },
+      { label: "Parts", value: "Arithmetic and Reasoning / Mental Ability 100, General Studies 100" },
+      { label: "Negative marking", value: "20% of a question's marks for each wrong answer" },
+      { label: "Qualifying marks", value: "30% OC and EWS, 25% BC, 20% SC, ST and Ex-Servicemen" },
+      { label: "Languages", value: "English-Telugu and English-Urdu (English version final)" },
+      { label: "Next test", value: "SI test tentatively 29 November 2026 (2026 recruitment)" },
+      { label: "Next stages", value: "PMT and PET, then a Final Written Examination of four papers" },
+      { label: "Given by", value: "Telangana State Level Police Recruitment Board (TSLPRB)" },
+    ],
+    basedOn: "the TSLPRB notification Rc. No. 225/Rect./Rect.1/2026 of 29 July 2026 and its press note of 17 September 2026, checked November 2026",
+    source: { name: "Telangana State Level Police Recruitment Board", url: "https://www.tgprb.in" },
   },
   apush: {
     answer:
@@ -5052,6 +5101,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "Florida content outlines effective January 1, 2026 and the Pearson VUE Florida candidate handbook, checked November 2026",
     source: { name: "Pearson VUE: Florida Insurance", url: "https://www.pearsonvue.com/us/en/fl/insurance.html" },
+  },
+  aafcs: {
+    answer:
+      "The AAFCS Hospitality, Nutrition, and Food Science (HNFS) exam is the American Association of Family and Consumer Sciences competency exam behind the CFCS-HNFS professional credential, which also needs a bachelor's degree, and Texas uses it as test 201 for family and consumer sciences teacher certification. Every item is a four-option multiple-choice question with one correct answer, and some are unscored research items. The Texas administration lists 100 selected-response questions in 3 hours. AAFCS reports a scaled score and the passing score is 240 on a scale up to 300. It covers Foundations of the FCS Profession (15%), Careers (10%), Nutrition, Wellness, and Food Science (40%), and Hospitality, Lodging and Food Service (35%). It is a professional exam, separate from the AAFCS Pre-PAC assessments for CTE students.",
+    rows: [
+      { label: "Questions", value: "100 selected-response (Texas test 201); some unscored" },
+      { label: "Time", value: "3 hours" },
+      { label: "Passing score", value: "Scaled 240 out of 300" },
+      { label: "Largest area", value: "Nutrition, Wellness, and Food Science, 40%" },
+      { label: "Format", value: "Multiple choice, four options" },
+      { label: "Run by", value: "AAFCS; Texas candidates book through Pearson" },
+    ],
+    basedOn: "AAFCS HNFS exam specifications and the Pearson Texas test 201 page, checked November 2026",
+    source: { name: "AAFCS: Testing - HNFS", url: "https://www.aafcs.org/credentialing/cert-testing/testing-hnfs" },
   },
   llqp: {
     answer:

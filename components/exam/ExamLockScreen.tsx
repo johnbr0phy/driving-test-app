@@ -14,15 +14,13 @@ import { useUpgradeFlow } from "@/hooks/useUpgradeFlow";
 import { useIsNativeApp } from "@/hooks/useIsNativeApp";
 import { usePremiumPrice } from "@/hooks/usePremiumPrice";
 import { PaywallModal } from "@/components/PaywallModal";
+import { useTranslation } from "@/contexts/LanguageContext";
+import { examPaywallCopy } from "@/lib/examPaywallCopy";
+import type { Language } from "@/i18n";
 
-/** What the paywall lists for a v1 exam's Premium steps. English, like the stats paywall's. */
-export function examPremiumBenefits(exam: ExamConfig): string[] {
-  return [
-    `The final ${exam.shortName} training step and practice test`,
-    `Full stats on every ${exam.shortName} question you miss`,
-    "The same on every other Tigertest exam, the DMV included",
-    "One payment, yours forever",
-  ];
+/** What the paywall lists for a v1 exam's Premium steps, in the page's language. */
+export function examPremiumBenefits(exam: ExamConfig, lang: Language = "en"): string[] {
+  return examPaywallCopy(lang).premium(exam.shortName);
 }
 
 /**
@@ -35,6 +33,7 @@ export function useExamPaywall(exam: ExamConfig, routes: ExamRoutes, where: "das
   const family = examFamilyId(exam);
   const upgrade = useUpgradeFlow(`${family}_${where}`, routes.dashboard);
   const router = useRouter();
+  const { language } = useTranslation();
   const isGuest = useStore((s) => s.isGuest || !s.userId);
   return {
     open: (itemKey: string, itemLabel: string) =>
@@ -45,7 +44,7 @@ export function useExamPaywall(exam: ExamConfig, routes: ExamRoutes, where: "das
         onOpenChange={upgrade.onOpenChange}
         feature={`${family}_premium`}
         onUpgrade={upgrade.handleUpgrade}
-        benefits={examPremiumBenefits(exam)}
+        benefits={examPremiumBenefits(exam, language)}
         isGuest={isGuest}
         onSignUp={() => router.push(routes.signup)}
         hideSocialProof

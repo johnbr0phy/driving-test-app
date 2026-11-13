@@ -3596,6 +3596,22 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the MPESB Police Constable Recruitment Test 2025 as reported by exam guides, checked November 2026",
     source: { name: "Madhya Pradesh Employees Selection Board", url: "https://esb.mp.gov.in" },
   },
+  jkssbja: {
+    answer:
+      "The JKSSB Junior Assistant written test is set by the Jammu and Kashmir Services Selection Board. Its syllabus (notice of 23 December 2025) is one objective paper of 80 marks in 80 minutes in four units of 20 marks: General English, General Awareness with special reference to J&K UT, Numerical and Reasoning Ability, and Basic Concepts of Computers. JKSSB's Junior Assistant instructions give 80 multiple-choice questions with 0.25 marks taken off for each wrong answer. The written test counts for 80 of the 100 selection points; a type test at 35 words a minute counts for the other 20. The latest test, for Advertisement No. 08 of 2025, was held on OMR sheets on 19 April 2026.",
+    rows: [
+      { label: "Questions", value: "80 objective (80 marks)" },
+      { label: "Time", value: "80 minutes" },
+      { label: "Units", value: "General English 20, General Awareness (J&K) 20, Numerical and Reasoning 20, Computers 20" },
+      { label: "Negative marking", value: "0.25 per wrong answer (JKSSB's Junior Assistant instructions)" },
+      { label: "Selection", value: "Written test 80 points, type test (35 wpm) 20 points" },
+      { label: "Qualification", value: "Graduate, with typing at 35 words a minute" },
+      { label: "Latest test", value: "19 April 2026, OMR (Advertisement No. 08 of 2025)" },
+      { label: "Given by", value: "Jammu and Kashmir Services Selection Board (JKSSB)" },
+    ],
+    basedOn: "the JKSSB Junior Assistant syllabus notice of 23.12.2025 (Advertisement No. 08 of 2025) and the board's notice of 24.03.2026",
+    source: { name: "Jammu and Kashmir Services Selection Board", url: "https://jkssb.nic.in/Pdf/Syllabus_JrAsstt_Steno_23122025.pdf" },
+  },
   apush: {
     answer:
       "The AP U.S. History Exam is a fully digital, 3 hour 15 minute exam from the College Board. Section I has 55 multiple-choice questions in 55 minutes (40% of the score), usually in sets of three or four that share a primary or secondary source, plus 3 short-answer questions in 40 minutes (20%). Section II has a document-based question in 60 minutes (25%) and a long essay in 40 minutes (15%). The course runs from 1491 to the present in nine periods; Periods 3 to 8 are each 10% to 17% of the multiple-choice section. Scores are reported from 1 to 5, and wrong answers are not penalized.",

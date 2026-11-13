@@ -1,0 +1,95 @@
+# Unit III Numerical and Reasoning Ability, part 2: reasoning (number series,
+# letter series, coding-decoding, direction sense, blood relations,
+# mathematical reasoning, speed, distance and time, statements and
+# conclusions). Text only.
+CON = "Read the statement and the two conclusions, then decide which conclusion follows.\n\n"
+C = ["Only I follows", "Only II follows", "Both I and II follow", "Neither I nor II follows"]
+NXT = "Find the next term in the series.\n\n"
+assert 5 * 3 - 1 == 14 and 14 * 3 - 1 == 41 and 41 * 3 - 1 == 122 and 122 * 3 - 1 == 365
+assert [n * n + 1 for n in range(2, 8)] == [5, 10, 17, 26, 37, 50]
+assert 72 * 5 / 18 == 20
+assert 150 / (54 * 5 / 18) == 10
+assert 2 * 30 * 20 / (30 + 20) == 24
+assert 270 / 4.5 == 60
+ITEMS = [
+    # ---------- Practice Test 1 ----------
+    S(1, 1, "Number series", NXT + "5, 14, 41, 122, ?",
+      ["365", "244", "366", "364"],
+      "Each term is 3 times the one before, minus 1: 5 x 3 - 1 = 14, 14 x 3 - 1 = 41, 41 x 3 - 1 = 122, 122 x 3 - 1 = 365."),
+    S(1, 2, "Letter series", NXT + "B, E, H, K, ?",
+      ["N", "M", "O", "L"],
+      "Each letter moves 3 places forward: B (2), E (5), H (8), K (11), N (14)."),
+    S(1, 2, "Coding-decoding", "In a certain code, SHIP is written as TIJQ. How is BOAT written in that code?",
+      ["CPBU", "CPBS", "APZS", "CQBU"],
+      "Each letter moves one place forward: S to T, H to I, I to J, P to Q. So B, O, A, T become C, P, B, U."),
+    S(1, 2, "Direction sense", "Ravi walks 4 km north, turns right and walks 3 km. How far is he from his starting point in a straight line?",
+      ["5 km", "7 km", "1 km", "6 km"],
+      "Turning right from north means walking east. The two legs are at right angles, so the distance is the square root of 4 x 4 + 3 x 3 = 25, which is 5 km."),
+    S(1, 2, "Blood relations", "Pointing to a man, Sana says, \"He is the son of my grandfather's only son.\" How is the man related to Sana?",
+      ["Brother", "Cousin", "Uncle", "Father"],
+      "Her grandfather's only son must be Sana's father, so the man is her father's son: her brother."),
+    S(1, 2, "Mathematical reasoning", "If '+' means '÷', '-' means 'x', 'x' means '+' and '÷' means '-', what is 24 + 6 - 3 x 5 ÷ 2?",
+      ["15", "13", "17", "9"],
+      "Replacing the signs gives 24 ÷ 6 x 3 + 5 - 2. Division and multiplication first: 4 x 3 = 12, then 12 + 5 - 2 = 15."),
+    S(1, 1, "Speed, distance and time", "A bus travels at 90 km/h. What is its speed in metres per second?",
+      ["25 m/s", "15 m/s", "24 m/s", "30 m/s"],
+      "To change km/h to m/s, multiply by 5/18: 90 x 5/18 = 25 m/s."),
+    S(1, 2, "Speed, distance and time", "A train 180 m long runs at 72 km/h. How long does it take to pass a pole?",
+      ["9 seconds", "8 seconds", "10 seconds", "12 seconds"],
+      "72 km/h = 72 x 5/18 = 20 m/s. To pass a pole the train covers its own length: 180 / 20 = 9 seconds."),
+    S(1, 2, "Statements and conclusions", CON + "Statement: All clerks in the office have passed a typing test.\nConclusions:\nI. Ahmad, a clerk in the office, has passed a typing test.\nII. Everyone who has passed a typing test is a clerk.",
+      [C[0], C[1], C[2], C[3]],
+      "If all clerks have passed, any clerk such as Ahmad has passed, so I follows. The statement says nothing about people who are not clerks, so II does not follow."),
+    S(1, 1, "Number series", NXT + "3, 6, 12, 24, ?",
+      ["48", "36", "42", "30"],
+      "Each term is double the one before: 24 x 2 = 48."),
+
+    # ---------- Practice Test 2 ----------
+    S(2, 2, "Number series", NXT + "5, 10, 17, 26, 37, ?",
+      ["50", "48", "49", "52"],
+      "The terms are n squared plus 1 for n = 2, 3, 4, 5, 6, so next is 7 x 7 + 1 = 50. The gaps 5, 7, 9, 11 point the same way: 37 + 13 = 50."),
+    S(2, 2, "Letter series", NXT + "AZ, BY, CX, DW, ?",
+      ["EV", "EU", "FV", "EW"],
+      "The first letters go forward (A, B, C, D, E) and the second letters go backward (Z, Y, X, W, V)."),
+    S(2, 2, "Coding-decoding", "If GOLD is coded as 7-15-12-4 (each letter's place in the alphabet), how is JAMMU coded?",
+      ["10-1-13-13-21", "10-1-12-12-21", "11-1-13-13-21", "10-1-13-13-20"],
+      "J is the 10th letter, A the 1st, M the 13th and U the 21st, so JAMMU is 10-1-13-13-21."),
+    S(2, 1, "Direction sense", "Facing east, Imran turns 90 degrees to his left. Which direction does he now face?",
+      ["North", "South", "West", "East"],
+      "Turning left from east brings him to face north. A right turn would face south."),
+    S(2, 2, "Blood relations", "A is the father of B. B is the sister of C. C is the son of D. How is D related to A?",
+      ["Wife", "Sister", "Daughter", "Mother"],
+      "B and C are A's children, and C is also D's son, so D is the other parent: A's wife."),
+    S(2, 2, "Mathematical reasoning", "If 3 @ 4 = 25 and 5 @ 12 = 169, what is 6 @ 8?",
+      ["100", "48", "196", "64"],
+      "The rule is a @ b = a squared + b squared: 9 + 16 = 25 and 25 + 144 = 169, so 6 @ 8 = 36 + 64 = 100."),
+    S(2, 1, "Speed, distance and time", "A car covers 315 km in 4 hours 30 minutes. What is its average speed?",
+      ["70 km/h", "63 km/h", "75 km/h", "78.75 km/h"],
+      "4 hours 30 minutes = 4.5 hours, and 315 / 4.5 = 70 km/h. Dividing by 4 (78.75) ignores the half hour."),
+    S(2, 2, "Speed, distance and time", "A man goes to his office at 30 km/h and returns along the same road at 20 km/h. What is his average speed for the round trip?",
+      ["24 km/h", "25 km/h", "22 km/h", "26 km/h"],
+      "For equal distances the average speed is 2 x 30 x 20 / (30 + 20) = 1,200 / 50 = 24 km/h, not the simple average of 25."),
+    S(2, 2, "Statements and conclusions", CON + "Statement: The government has decided to open a new degree college in every district.\nConclusions:\nI. Every student in each district will now join a college.\nII. Schools in the districts will be closed.",
+      [C[3], C[0], C[1], C[2]],
+      "Opening a college makes study possible but does not mean every student will join, so I does not follow. Nothing in the statement concerns schools, so II does not follow either."),
+    S(2, 1, "Letter series", NXT + "C, F, I, L, ?",
+      ["O", "N", "P", "M"],
+      "Each letter is 3 places after the last: C (3), F (6), I (9), L (12), O (15)."),
+
+    # ---------- Drill only ----------
+    S(0, 2, "Coding-decoding", "In a certain code, TAWI is written as UBXJ. How is DAL written?",
+      ["EBM", "CZK", "EBL", "DBM"],
+      "Each letter moves one place forward: T to U, A to B, W to X, I to J. So D, A, L become E, B, M."),
+    S(0, 2, "Direction sense", "From his house, Firdous walks 10 m south, turns left and walks 6 m, then turns left again and walks 10 m. Where is he now from his house?",
+      ["6 m east", "6 m west", "16 m north", "10 m south"],
+      "South 10 m, a left turn from south faces east (6 m), and a second left faces north (10 m). He is back level with the house, 6 m to the east."),
+    S(0, 2, "Blood relations", "Pointing to a boy, Bilal says, \"His father is the only son of my father.\" How is the boy related to Bilal?",
+      ["Son", "Brother", "Nephew", "Cousin"],
+      "The only son of Bilal's father is Bilal himself, so the boy's father is Bilal and the boy is his son."),
+    S(0, 2, "Statements and conclusions", CON + "Statement: Some officers are engineers. All engineers are graduates.\nConclusions:\nI. Some officers are graduates.\nII. All graduates are engineers.",
+      [C[0], C[1], C[2], C[3]],
+      "The officers who are engineers are also graduates, so I follows. 'All engineers are graduates' does not make all graduates engineers, so II does not follow."),
+    S(0, 1, "Number series", NXT + "2, 6, 18, 54, ?",
+      ["162", "108", "160", "216"],
+      "Each term is 3 times the one before: 54 x 3 = 162."),
+]

@@ -68,7 +68,7 @@ const TEACHER_LED = new Set([
   "ssccgl", "rrbntpc", "ctet", "ibpspo",
   "rrbgroupd", "sscgd", "sscchsl", "sscmts", "uppolice", "ibpsclerk", "jnvst", "jambeng", "appsych",
   // Next-100 batch 2 (November 2026)
-  "sbipo", "sbiclerk", "ibpsrrb", "delhipolice", "biharpolice", "rajpolice", "mppolice", "apush", "apbio", "apitalian", "phcse",
+  "sbipo", "sbiclerk", "ibpsrrb", "delhipolice", "biharpolice", "rajpolice", "mppolice", "jkssbja", "apush", "apbio", "apitalian", "phcse",
   // Next-100 batch 3 (November 2026)
   "upscse", "nda", "agniveer", "agniveervayu", "rrbalp", "rpfconst", "ssccpo", "apworld", "aplang", "phlet",
   // Next-100 batch 4 (November 2026)

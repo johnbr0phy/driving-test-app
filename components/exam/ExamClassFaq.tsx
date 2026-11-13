@@ -151,6 +151,7 @@ export const TEACHES: Record<string, string> = {
   biharpolice: "a Bihar Police coaching batch",
   rajpolice: "a Rajasthan Police coaching batch",
   mppolice: "an MP Police coaching batch",
+  jkssbja: "a JKSSB coaching batch",
   apush: "AP U.S. History",
   apitalian: "AP Italian Language and Culture",
   apgov: "AP U.S. Government and Politics",

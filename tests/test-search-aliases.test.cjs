@@ -13,6 +13,9 @@ const CASES = [
   ["hazard", "UK", "ukcar"],
   ["hazard perception", "UK", "ukcar"],
   ["osha 50", "US", "osha"],
+  ["aafcs", "US", "aafcs"],
+  ["hnfs", "US", "aafcs"],
+  ["hospitality nutrition and food science", "US", "aafcs"],
 ];
 
 for (const [q, region, id] of CASES) {

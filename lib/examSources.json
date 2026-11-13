@@ -1,4 +1,9 @@
 {
+ "aafcs": [
+  "https://www.aafcs.org/credentialing/cert-testing/testing-hnfs",
+  "https://www.aafcs.org/credentialing/professional-certifications/cfcs-hnfs",
+  "https://www.aafcs.org/about/about-bok"
+ ],
  "aatl2": [
   "https://www.aat.org.uk/qualifications-and-courses/accounting/level-2-certificate-accounting",
   "https://www.aat.org.uk/files/AAT-Level-2-Certificate-in-Accounting-Q2022-qualification-specification.pdf",
@@ -740,6 +745,11 @@
   "https://www.insurancecouncilofbc.com/llqp/exam-information-and-registration/about-the-exam/in-person-exams/",
   "https://www.gov.nl.ca/dgsnl/files/insurance-pdf-memo-llqp-2018.pdf",
   "https://lautorite.qc.ca/en/becoming-a-professional/insurance-of-persons-and-group-insurance-of-persons/examinations/pilot-exam-questions"
+ ],
+ "mapgrowth": [
+  "https://www.nwea.org/uploads/CCSS_2025.pdf",
+  "https://www.nwea.org/uploads/MAP-Growth-Technical-Report-2025.pdf",
+  "https://learning.ccsso.org/wp-content/uploads/2022/11/Math_Standards1.pdf"
  ],
  "mhtcet": [
   "https://cetcell.mahacet.org/",

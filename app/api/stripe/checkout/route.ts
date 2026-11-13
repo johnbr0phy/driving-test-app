@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getStripe, PREMIUM_PRICE_ID, PREMIUM_PRODUCT } from '@/lib/stripe';
 import { getAdminDb, getAdminAuth } from '@/lib/firebase-admin';
-import { isPaywallHit, isPaywallVariant } from '@/lib/paywallTestIds';
+import { isPaywallHit, isPaywallReturnArm, isPaywallVariant } from '@/lib/paywallTestIds';
 import { premiumPriceFor, stripeUnitAmount } from '@/lib/pricing';
 import { visitorCountry } from '@/lib/server/visitorCountry';
 import { SITE_URL } from '@/lib/siteUrl';
@@ -25,7 +25,7 @@ export async function POST(request: NextRequest) {
     const decodedToken = await getAdminAuth().verifyIdToken(token);
 
     const body = await request.json();
-    const { email: bodyEmail, returnUrl, returnPath: rawReturnPath, location, paywallVariant, paywallHit, source: bodySource, landing: bodyLanding } = body;
+    const { email: bodyEmail, returnUrl, returnPath: rawReturnPath, location, paywallVariant, paywallHit, paywallReturn, source: bodySource, landing: bodyLanding } = body;
     // The account's own address when it has one: an address from the body
     // would attach this checkout to someone else's Stripe customer.
     const email = decodedToken.email || bodyEmail;
@@ -144,6 +144,8 @@ export async function POST(request: NextRequest) {
         ...(isPaywallVariant(paywallVariant) && { paywallVariant }),
         // Which paywall message they last saw: first, second or third visit.
         ...(isPaywallHit(paywallHit) && { paywallHit: String(paywallHit) }),
+        // And whether return visits get the new message or the first one again.
+        ...(isPaywallReturnArm(paywallReturn) && { paywallReturn }),
       },
     });
 

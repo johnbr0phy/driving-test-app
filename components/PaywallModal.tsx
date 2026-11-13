@@ -21,6 +21,7 @@ import {
   recordPaywallTestView,
   type PaywallHit,
   type PaywallVariant,
+  type PaywallVisit,
 } from "@/lib/paywallTest";
 import { usePremiumPrice } from "@/hooks/usePremiumPrice";
 
@@ -80,13 +81,15 @@ export function PaywallModal({
   // Which visit this is, counted once as the modal opens and kept while it
   // closes: the second and third visits get a different message.
   const wasOpen = useRef(false);
-  const hitRef = useRef<PaywallHit>(1);
-  if (open && !wasOpen.current && language === "en") hitRef.current = notePaywallHit();
+  const visitRef = useRef<PaywallVisit>({ hit: 1, arm: "new", message: 1 });
+  if (open && !wasOpen.current && language === "en") visitRef.current = notePaywallHit();
   wasOpen.current = open;
-  const hit = language === "en" ? hitRef.current : 1;
+  const visit = visitRef.current;
+  // Half of browsers keep the first message on return visits, as the comparison.
+  const hit: PaywallHit = language === "en" ? visit.message : 1;
   useEffect(() => {
-    if (open && language === "en" && variant) void recordPaywallTestView(variant, hit);
-  }, [open, language, variant, hit]);
+    if (open && language === "en" && variant) void recordPaywallTestView(variant, visit.hit, visit.arm);
+  }, [open, language, variant, visit]);
   const shownHeadline = RETURN_HEADLINES[hit] ?? headline;
 
   if (language === "en" && variant !== "classic") {

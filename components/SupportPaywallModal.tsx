@@ -44,7 +44,7 @@ const MESSAGES: Record<PaywallHit, { title: string; body: (price: string) => str
   1: {
     title: "Hi, I'm John!",
     body: () =>
-      "I run Tigertest by myself. It's getting a bit expensive. Please chip in and help me cover the costs.",
+      "I run Tigertest by myself. It's getting a bit expensive. Please chip in. It helps me cover the costs.",
   },
   2: {
     title: "Me again!",

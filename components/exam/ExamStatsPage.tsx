@@ -19,7 +19,7 @@ import { signupForDestination } from "@/lib/authDestination";
 import { AccountLoadRetry } from "@/components/AccountLoadRetry";
 import { auth } from "@/lib/firebase";
 import { trackBeginCheckout, trackDailyQuizAnswer, trackPaywallDismissed, trackPaywallHit, trackViewItem } from "@/lib/analytics";
-import { paywallHitForCheckout, paywallVariantForCheckout } from "@/lib/paywallTest";
+import { paywallHitForCheckout, paywallReturnForCheckout, paywallVariantForCheckout } from "@/lib/paywallTest";
 import { inClassFor, useClassMemberships } from "@/hooks/useClassMemberships";
 import { usePurchaseReturn } from "@/hooks/usePurchaseReturn";
 import { PaywallModal } from "@/components/PaywallModal";
@@ -120,6 +120,7 @@ function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
           returnPath: pathname,
           paywallVariant: paywallVariantForCheckout(),
           paywallHit: paywallHitForCheckout(),
+          paywallReturn: paywallReturnForCheckout(),
           location: paywallLocation,
         }),
       });

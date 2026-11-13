@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getAdminDb, getAdminAuth } from '@/lib/firebase-admin';
 import { FieldValue } from 'firebase-admin/firestore';
 import { isInternalEmail } from '@/lib/internal';
-import { PAYWALL_TEST_ID, isPaywallHit, isPaywallVariant } from '@/lib/paywallTestIds';
+import { PAYWALL_TEST_ID, isPaywallHit, isPaywallReturnArm, isPaywallVariant } from '@/lib/paywallTestIds';
 import { isBotRequest } from '@/lib/botUserAgent';
 
 // One view of the English paywall test (lib/paywallTest.ts): views and
@@ -20,6 +20,7 @@ export async function POST(request: NextRequest) {
     }
     const first = body.first === true;
     const hit = isPaywallHit(body.hit) ? body.hit : null;
+    const arm = isPaywallReturnArm(body.arm) ? body.arm : null;
     const now = new Date().toISOString();
     const today = now.slice(0, 10);
     const db = getAdminDb();
@@ -51,7 +52,7 @@ export async function POST(request: NextRequest) {
             ...(first && { browsers: inc, browsersDaily: { [today]: inc } }),
           },
         },
-        ...(hit && { hits: { [hit]: { views: inc, [variant]: inc } } }),
+        ...(hit && { hits: { [hit]: { views: inc, [variant]: inc, ...(arm && { [arm]: inc }) } } }),
       },
       { merge: true }
     );

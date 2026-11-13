@@ -559,7 +559,7 @@ export function OpportunitiesView({ data, onRefresh, refreshing, updating = fals
                 <table className="w-full text-sm">
                   <thead className="text-xs text-gray-500 dark:text-gray-400">
                     <tr className={ROW}>
-                      <Th sticky title="Both paywalls change their message the second and third time a browser comes back">Message shown</Th>
+                      <Th sticky title="Half of browsers get a new message when they come back, half see the first one again">Visit and message</Th>
                       <Th right>Views</Th>
                       <Th right>Purchases</Th>
                       <Th right>Per 100 views</Th>
@@ -568,7 +568,7 @@ export function OpportunitiesView({ data, onRefresh, refreshing, updating = fals
                   </thead>
                   <tbody>
                     {data.paywallTest.hits.map((h) => (
-                      <tr key={h.hit} className={`${ROW} border-t border-gray-100 dark:border-gray-800`}>
+                      <tr key={h.id} className={`${ROW} border-t border-gray-100 dark:border-gray-800`}>
                         <td className={`py-2 px-2 font-medium text-gray-900 dark:text-gray-50 ${STICKY_COL}`}>{h.label}</td>
                         <td className="py-2 px-2 text-right tabular-nums">{fmtInt(h.views)}</td>
                         <td className="py-2 px-2 text-right tabular-nums">{fmtInt(h.purchases)}</td>
@@ -589,8 +589,13 @@ export function OpportunitiesView({ data, onRefresh, refreshing, updating = fals
                   ? `The difference is unlikely to be chance (p = ${data.paywallTest.pValue.toFixed(3)}).`
                   : `Too close to call so far (p = ${data.paywallTest.pValue.toFixed(2)}); keep it running.`}{" "}
               Each browser keeps its side. Spanish, Vietnamese, Korean and Chinese readers are not in the test. Preview a side with ?paywall=john or
-              ?paywall=classic, and a visit's message with ?paywallHit=2 or 3 (views and purchases by message counted since Nov 13 2026; a
-              reopen within 10 minutes is the same visit).
+              ?paywall=classic, and the message of a visit with ?paywallHit=2 or 3. Return visits: half of browsers get the new message, half the
+              first one again (counted since Nov 13 2026; a reopen within 10 minutes is the same visit).{" "}
+              {data.paywallTest.returnPValue === null
+                ? "No purchases on return visits yet."
+                : data.paywallTest.returnPValue < 0.05
+                  ? `New against first again: unlikely to be chance (p = ${data.paywallTest.returnPValue.toFixed(3)}).`
+                  : `New against first again: too close to call (p = ${data.paywallTest.returnPValue.toFixed(2)}).`}
             </p>
           </Card>
         )}

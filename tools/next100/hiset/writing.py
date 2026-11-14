@@ -80,7 +80,7 @@ STIMULI = [
         "¶2 __Use has grown steadily.__ [2] In the first year, riders took about 90,000 trips. In the second year, "
         "that number __exploded wildly__ [3] to over 150,000. Most trips were short, under three miles.\n\n"
         "¶3 __The bikes are painted bright green.__ [4] A survey of riders found that many use the bikes to reach bus "
-        "and train stops. __For these riders, the bikes fill a gap, the last mile__ [5] between transit and home.\n\n"
+        "and train stops. __For these riders, the bikes fill a gap; the last mile__ [5] between transit and home.\n\n"
         "¶4 __However,__ [6] the program faces challenges. Stations in the busiest areas often run out of bikes by "
         "morning, while stations near parks sit full. __The city have hired__ [7] staff to move bikes by truck, but "
         "this is costly.\n\n"
@@ -334,9 +334,9 @@ ITEMS = [
       "Paragraph 3 explains that riders use the bikes to reach buses and trains, so a sentence about longer trips introduces it. The color of the bikes is beside the point.",
       stim="HISET-D-W1", basics="topicSentences"),
     L(0, CONV, 2, "Punctuation", f"[5] {ASK}",
-      [NC, "For these riders, the bikes fill a gap: the last mile", "For these riders the bikes fill a gap the last mile",
-       "For these riders, the bikes fill a gap; the last mile"], 1,
-      "A colon introduces the phrase that names the gap. A semicolon must join two complete sentences, and \"the last mile\" is not one.",
+      [NC, "For these riders, the bikes fill a gap: the last mile", "For these riders, the bikes fill a gap. The last mile",
+       "For these riders the bikes fill a gap the last mile"], 1,
+      "A colon introduces the phrase that names the gap. A semicolon must join two complete sentences, and \"the last mile between transit and home\" is not one; a period would leave that phrase as a fragment.",
       stim="HISET-D-W1"),
     L(0, ORG, 1, "Transitions", f"[6] {ASK}",
       [NC, "Therefore,", "For example,", "Likewise,"], 0,

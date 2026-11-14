@@ -322,7 +322,7 @@ ITEMS = [
       stim="HISET-D-X2"),
     Q(0, GEOG, 2, "Human and physical geography",
       "Which is the most likely reason few people live east of the mountains?",
-      ["The dry land makes farming and water scarce", "The coast is too crowded to reach",
+      ["The land is dry, so farming and water are scarce", "The coast is too crowded to reach",
        "The mountains are near the ocean", "The rivers flood the grassland every year"],
       "The map labels the eastern land \"dry grassland.\" Little water limits farming and settlement, while coasts and rivers offer water, trade and fertile land.",
       stim="HISET-D-X2"),

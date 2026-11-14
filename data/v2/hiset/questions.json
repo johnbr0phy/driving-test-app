@@ -83,7 +83,7 @@
     {
       "id": "HISET-D-W1",
       "title": "Draft: a report on a city bike-share program",
-      "text": "¶1 Two years ago, the city of Brookport launched a bike-share program with 300 bikes at 40 stations. __Riders unlock a bike with a phone app and return it to any station.__ [1]\n\n¶2 __Use has grown steadily.__ [2] In the first year, riders took about 90,000 trips. In the second year, that number __exploded wildly__ [3] to over 150,000. Most trips were short, under three miles.\n\n¶3 __The bikes are painted bright green.__ [4] A survey of riders found that many use the bikes to reach bus and train stops. __For these riders, the bikes fill a gap, the last mile__ [5] between transit and home.\n\n¶4 __However,__ [6] the program faces challenges. Stations in the busiest areas often run out of bikes by morning, while stations near parks sit full. __The city have hired__ [7] staff to move bikes by truck, but this is costly.\n\n¶5 __Each of the stations need more docks__ [8], according to the report. __The report recommends adding twenty stations and using price discounts to encourage riders to return bikes where they are needed.__ [9]"
+      "text": "¶1 Two years ago, the city of Brookport launched a bike-share program with 300 bikes at 40 stations. __Riders unlock a bike with a phone app and return it to any station.__ [1]\n\n¶2 __Use has grown steadily.__ [2] In the first year, riders took about 90,000 trips. In the second year, that number __exploded wildly__ [3] to over 150,000. Most trips were short, under three miles.\n\n¶3 __The bikes are painted bright green.__ [4] A survey of riders found that many use the bikes to reach bus and train stops. __For these riders, the bikes fill a gap; the last mile__ [5] between transit and home.\n\n¶4 __However,__ [6] the program faces challenges. Stations in the busiest areas often run out of bikes by morning, while stations near parks sit full. __The city have hired__ [7] staff to move bikes by truck, but this is costly.\n\n¶5 __Each of the stations need more docks__ [8], according to the report. __The report recommends adding twenty stations and using price discounts to encourage riders to return bikes where they are needed.__ [9]"
     },
     {
       "id": "HISET-D-W2",
@@ -5031,14 +5031,14 @@
       "options": [
         "NO CHANGE",
         "For these riders, the bikes fill a gap: the last mile",
-        "For these riders, the bikes fill a gap; the last mile",
-        "For these riders the bikes fill a gap the last mile"
+        "For these riders the bikes fill a gap the last mile",
+        "For these riders, the bikes fill a gap. The last mile"
       ],
       "correct": [
         1
       ],
       "lockedOrder": true,
-      "explanation": "A colon introduces the phrase that names the gap. A semicolon must join two complete sentences, and \"the last mile\" is not one."
+      "explanation": "A colon introduces the phrase that names the gap. A semicolon must join two complete sentences, and \"the last mile between transit and home\" is not one; a period would leave that phrase as a fragment."
     },
     {
       "id": "HISET-D-014",
@@ -6614,7 +6614,7 @@
       "stem": "Which is the most likely reason few people live east of the mountains?",
       "options": [
         "The coast is too crowded to reach",
-        "The dry land makes farming and water scarce",
+        "The land is dry, so farming and water are scarce",
         "The mountains are near the ocean",
         "The rivers flood the grassland every year"
       ],

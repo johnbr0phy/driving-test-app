@@ -4,7 +4,7 @@ const assert = require("node:assert/strict");
 const { searchAllTests } = require("../lib/testSearch.ts");
 
 // Searches from the /admin build list that name a test we already have.
-// The daily search-gaps run (.github/workflows/search-gaps.yml) adds a case here
+// The weekly search-gaps run (.github/workflows/search-gaps.yml) adds a case here
 // for every alias it wires, so an alias never quietly stops working.
 const CASES = [
   // [query, visitor region, test id that must come first]

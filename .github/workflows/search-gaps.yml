@@ -13,7 +13,7 @@ name: Search gaps
 
 on:
   schedule:
-    - cron: "41 7 * * *" # 07:41 UTC, about 2:41am New York, PR ready by morning
+    - cron: "41 7 * * 3" # Wednesdays 07:41 UTC, about 2:41am New York, PR ready by morning
   workflow_dispatch:
     inputs:
       build:
@@ -78,7 +78,7 @@ jobs:
         uses: anthropics/claude-code-action@v1
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
-          claude_args: --max-turns 500 --allowedTools "Read,Edit,Write,Glob,Grep,WebSearch,WebFetch,Bash(npm:*),Bash(npx:*),Bash(node:*),Bash(python3:*),Bash(git diff:*),Bash(git status:*),Bash(ls:*)"
+          claude_args: --max-turns 300 --allowedTools "Read,Edit,Write,Glob,Grep,WebSearch,WebFetch,Bash(npm:*),Bash(npx:*),Bash(node:*),Bash(python3:*),Bash(git diff:*),Bash(git status:*),Bash(ls:*)"
           prompt: |
             Read CLAUDE.md. Today's search gaps are in ${{ env.REPORT }}.md, with details
             in ${{ env.REPORT }}.json: searches on the site that find no test, most-searched

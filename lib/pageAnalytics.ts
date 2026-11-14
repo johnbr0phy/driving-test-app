@@ -23,3 +23,20 @@ export function redactPageUrl(raw: string): string {
     .replace(/^\/teach\/classes\/[^/]+/, "/teach/classes/[code]");
   return url.toString();
 }
+
+// App pages (where people practise, not where they arrive from search) are
+// not counted, which keeps Vercel's event count low: the point is traffic to
+// landings, homepages and topic pages. Matched by whole path segment, so
+// "/cdl-practice-test" is counted and "/cdl/practice/2" is not.
+const APP_SEGMENTS = new Set([
+  "dashboard", "test", "practice", "training", "train", "drill", "stats", "results",
+  "settings", "admin", "login", "signup", "oauth", "upgrade", "onboarding", "unsubscribe",
+  "edit", "report", "flashcards", "classes", "new",
+]);
+const APP_PREFIXES = ["/dmv/", "/c/", "/q/", "/home-lang/"];
+
+/** True for a page someone can land on from search or an AI answer. */
+export function isTrackedPage(pathname: string): boolean {
+  if (APP_PREFIXES.some((p) => pathname.startsWith(p))) return false;
+  return !pathname.split("/").some((seg) => APP_SEGMENTS.has(seg));
+}

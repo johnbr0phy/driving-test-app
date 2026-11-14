@@ -76,24 +76,29 @@ export function useTeaches(): boolean {
   return teaches;
 }
 
-// The class a teacher last opened, so the header's CLASSES tab goes straight back to it.
-const CURRENT_CLASS_KEY = "tigertest-current-class";
+// The class a teacher last opened, so the header's CLASSES tab goes straight
+// back to it. Kept per account, and only ever one of the account's own classes
+// (ClassPill checks): a site admin can open any teacher's class page, and that
+// must never become where CLASSES leads. The key was "tigertest-current-class"
+// until Nov 2026, when any class page visited was saved; that key is ignored.
+const LAST_CLASS_KEY = (uid: string) => `tigertest-last-class:${uid}`;
 
-export function rememberCurrentClass(code: string) {
+export function rememberCurrentClass(uid: string, code: string) {
   try {
-    localStorage.setItem(CURRENT_CLASS_KEY, code);
+    localStorage.setItem(LAST_CLASS_KEY(uid), code);
   } catch {}
 }
 
-export function forgetCurrentClass(code: string) {
+export function forgetCurrentClass(uid: string, code: string) {
   try {
-    if (localStorage.getItem(CURRENT_CLASS_KEY) === code) localStorage.removeItem(CURRENT_CLASS_KEY);
+    if (localStorage.getItem(LAST_CLASS_KEY(uid)) === code) localStorage.removeItem(LAST_CLASS_KEY(uid));
   } catch {}
 }
 
-export function currentClassCode(): string | null {
+export function currentClassCode(uid: string | undefined): string | null {
+  if (!uid) return null;
   try {
-    return localStorage.getItem(CURRENT_CLASS_KEY);
+    return localStorage.getItem(LAST_CLASS_KEY(uid));
   } catch {
     return null;
   }

@@ -10,6 +10,17 @@ export interface StateLandingInfo {
   // from. When present, the state page renders a manual-citation block that
   // anchors Tigertest to the official source (GEO/authority signal).
   examManualChapters?: string;
+  // Optional: the words people in this state search for (CA "ca permit
+  // test", GA "dds practice test", NY "ny permit practice test"), used in
+  // the page title, description and H1 in place of the generic ones, plus
+  // FAQ entries for those phrasings. Only for the states with the most
+  // search demand; every fact must come from data/states.ts or this file.
+  seo?: {
+    title: string;
+    description: string;
+    h1: string;
+    faq?: { question: string; answer: string }[];
+  };
 }
 
 export const stateLandingData: Record<string, StateLandingInfo> = {
@@ -76,7 +87,22 @@ export const stateLandingData: Record<string, StateLandingInfo> = {
       "California's written test for applicants under 18 has 46 questions, and you need to answer 38 correctly (83%) to pass."
     ],
     neighboringSlugs: ["oregon", "nevada", "arizona"],
-    onlineTestInfo: "No, the California DMV written test must be taken in person at a DMV office. You can make an appointment online to reduce wait times."
+    onlineTestInfo: "No, the California DMV written test must be taken in person at a DMV office. You can make an appointment online to reduce wait times.",
+    seo: {
+      title: "California DMV Practice Test 2026 - Free CA Permit Test | Tigertest",
+      description: "Free California DMV practice test for the CA permit test. The real test has 46 questions and you need 38 right. 200 practice questions from the California Driver Handbook.",
+      h1: "Free California DMV Practice Test 2026: CA Permit Test Prep",
+      faq: [
+        {
+          question: "What is on the California permit test?",
+          answer: "The CA permit test asks about the rules of the road in the California Driver Handbook: road signs, right-of-way, speed limits, lane use, turns, parking, sharing the road and safe driving. The test for applicants under 18 has 46 questions and you need 38 right. Tigertest's California questions are written from the same handbook.",
+        },
+        {
+          question: "Is this California DMV practice test free?",
+          answer: "It is free to start, with no account needed. The first two training sets and the first two full practice tests are free; Tigertest Premium, a one-time payment with no subscription, unlocks the rest.",
+        },
+      ],
+    },
   },
   CO: {
     retakeWaitTime: "1 day",
@@ -154,7 +180,22 @@ export const stateLandingData: Record<string, StateLandingInfo> = {
       "Drivers under 18 cannot carry more than 3 passengers under 21 who are not family members for the first 6 months."
     ],
     neighboringSlugs: ["florida", "alabama", "tennessee", "north-carolina", "south-carolina"],
-    onlineTestInfo: "No, the Georgia DDS knowledge test must be taken in person at a DDS customer service center."
+    onlineTestInfo: "No, the Georgia DDS knowledge test must be taken in person at a DDS customer service center.",
+    seo: {
+      title: "Georgia DDS Practice Test 2026 - Free Georgia Permit Test | Tigertest",
+      description: "Free Georgia DDS practice test for the Georgia permit test: 40 questions on the DDS knowledge exam and 30 right to pass. 200 questions from the Georgia DDS Driver's Manual.",
+      h1: "Free Georgia DDS Practice Test 2026: Georgia Permit Test Prep",
+      faq: [
+        {
+          question: "Is a Georgia DDS practice test the same as a Georgia permit practice test?",
+          answer: "Yes. In Georgia the permit test is the knowledge exam given by the Department of Driver Services (DDS), not a DMV, so both names mean the same test. It covers the road rules and road signs in the Georgia DDS Driver's Manual, and Tigertest's Georgia questions are written from that manual.",
+        },
+        {
+          question: "Is this Georgia DDS practice test free?",
+          answer: "It is free to start, with no account needed. The first two training sets and the first two full practice tests are free; Tigertest Premium, a one-time payment with no subscription, unlocks the rest.",
+        },
+      ],
+    },
   },
   HI: {
     retakeWaitTime: "7 days",
@@ -441,7 +482,22 @@ export const stateLandingData: Record<string, StateLandingInfo> = {
     ],
     neighboringSlugs: ["new-jersey", "pennsylvania", "connecticut", "massachusetts", "vermont"],
     onlineTestInfo: "No, the New York DMV knowledge test must be taken in person at a DMV office.",
-    examManualChapters: "According to the New York State DMV, the material on the written knowledge test is drawn from Chapters 4 through 11 of the New York State Driver's Manual — covering traffic signs, signals and lane markings, intersections and turns, safe driving and passing techniques, defensive driving, sharing the road, the effects of alcohol and other drugs, parking rules, and handling emergencies. Tigertest's 200 New York practice questions are built from this same material, so anything you miss can be cross-checked directly against the official manual."
+    examManualChapters: "According to the New York State DMV, the material on the written knowledge test is drawn from Chapters 4 through 11 of the New York State Driver's Manual — covering traffic signs, signals and lane markings, intersections and turns, safe driving and passing techniques, defensive driving, sharing the road, the effects of alcohol and other drugs, parking rules, and handling emergencies. Tigertest's 200 New York practice questions are built from this same material, so anything you miss can be cross-checked directly against the official manual.",
+    seo: {
+      title: "NY Permit Practice Test 2026 - Free New York DMV Test | Tigertest",
+      description: "Free NY permit practice test for the New York DMV written test: 20 questions, 4 of them on road signs, and 14 right to pass. 200 questions from the New York State Driver's Manual.",
+      h1: "Free NY Permit Practice Test 2026: New York DMV Written Test",
+      faq: [
+        {
+          question: "What is on the NY permit test?",
+          answer: "The New York permit test has 20 multiple-choice questions, 4 of them on road signs, and you need 14 right. The New York State DMV draws the questions from Chapters 4 through 11 of the New York State Driver's Manual: signs, signals and markings, intersections and turns, passing, defensive driving, sharing the road, alcohol and drugs, parking and emergencies.",
+        },
+        {
+          question: "Is this NY permit practice test free?",
+          answer: "It is free to start, with no account needed. The first two training sets and the first two full practice tests are free; Tigertest Premium, a one-time payment with no subscription, unlocks the rest.",
+        },
+      ],
+    },
   },
   NC: {
     retakeWaitTime: "1 day",

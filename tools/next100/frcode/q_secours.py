@@ -1,0 +1,43 @@
+CAT = "frSecours"; SEG = "SEC"
+# Premiers secours : protéger, alerter, secourir. Sources : service-public.gouv.fr F33954
+# (numéros d'urgence, vérifiée le 25 août 2026) ; fiches PSC1 de la sécurité civile (livret
+# PSC1, Direction de la sécurité civile de Nouvelle-Calédonie, reprenant le référentiel
+# national) ; Code de la route R416-19.
+Q = [
+("Vous arrivez sur un accident. Dans quel ordre agissez-vous ?",
+ "Protéger, alerter, secourir", ["Secourir, protéger, alerter", "Alerter, secourir, protéger", "Secourir, alerter, protéger"],
+ "On protège d'abord les lieux pour éviter un sur-accident, puis on alerte les secours, puis on fait les gestes de premiers secours en attendant leur arrivée."),
+("Quel numéro d'urgence fonctionne dans tous les pays de l'Union européenne ?",
+ "112", ["115", "196", "114"],
+ "Service-public.gouv.fr : le 112 est le numéro d'urgence européen, utilisable dans tous les pays de l'Union européenne, depuis un fixe ou un mobile."),
+("Quel numéro appelez-vous pour le SAMU ?",
+ "15", ["17", "18", "114"],
+ "Service-public.gouv.fr : le 15 joint le SAMU pour les urgences médicales ; le 17 la police ou la gendarmerie ; le 18 les pompiers."),
+("Une personne sourde ou qui ne peut pas parler doit alerter les secours. Quel numéro utilise-t-elle ?",
+ "114", ["112", "115", "196"],
+ "Service-public.gouv.fr : le 114 permet aux personnes sourdes, malentendantes ou aphasiques d'alerter les secours par SMS, application, internet ou visio."),
+("Une victime saigne abondamment d'une plaie au bras. Que faites-vous d'abord ?",
+ "Appuyer fort sur la plaie", ["Lui donner à boire", "La faire marcher", "Laver la plaie à l'eau"],
+ "Fiches PSC1 : on comprime immédiatement l'endroit qui saigne pour arrêter l'hémorragie, on allonge la victime, puis on alerte. Le garrot ne sert que si la compression est impossible ou inefficace."),
+("Une victime ne répond pas mais respire. Que faites-vous ?",
+ "La mettre en PLS", ["La faire asseoir", "Lui donner à boire", "Lui masser le cœur"],
+ "Fiches PSC1 : une victime qui ne répond pas et respire est mise en position latérale de sécurité pour garder les voies aériennes libres, puis on alerte et on surveille sa respiration."),
+("Une victime ne répond pas et ne respire pas. Que faites-vous après avoir fait alerter ?",
+ "Un massage cardiaque", ["La position latérale de sécurité", "Lui mettre de l'eau sur le visage", "Attendre sans la toucher"],
+ "Fiches PSC1 : face à une victime qui ne répond pas et ne respire pas, on fait alerter, on commence les compressions thoraciques et on fait chercher un défibrillateur."),
+("À quel rythme réalise-t-on les compressions thoraciques chez l'adulte ?",
+ "100 à 120 par minute", ["30 à 40 par minute", "60 à 80 par minute", "150 à 180 par minute"],
+ "Fiches PSC1 : les compressions se font au centre de la poitrine, bras tendus, à une fréquence comprise entre 100 et 120 par minute."),
+("De combien la poitrine d'un adulte doit-elle s'enfoncer à chaque compression ?",
+ "5 à 6 cm", ["1 à 2 cm", "2 à 3 cm", "8 à 10 cm"],
+ "Fiches PSC1 : les compressions sternales enfoncent la poitrine de 5 cm sans dépasser 6 cm, en laissant le thorax reprendre sa forme entre chacune."),
+("Un défibrillateur automatisé externe est apporté. Que faites-vous ?",
+ "Suivre ses instructions", ["Attendre un médecin", "L'utiliser si formé", "Le brancher sur la voiture"],
+ "Fiches PSC1 : on met le défibrillateur en marche et on suit ses instructions ; pendant l'analyse et le choc, personne ne touche la victime, puis on reprend les compressions."),
+("Un blessé est coincé dans sa voiture, sans danger immédiat comme un incendie. Faut-il le sortir ?",
+ "Non, sauf danger immédiat", ["Oui, toujours", "Oui, pour le faire marcher", "Oui, s'il a froid"],
+ "Fiches PSC1 : on ne déplace une victime qu'en cas de danger réel, immédiat et non contrôlable ; sinon on la laisse en place, on la couvre et on surveille en attendant les secours."),
+("Une personne s'est brûlée la main : simple rougeur, sans cloque. Que faites-vous ?",
+ "Refroidir à l'eau tempérée", ["Mettre de la glace directe", "Appliquer du beurre", "Percer les cloques"],
+ "Fiches PSC1 : on refroidit immédiatement la brûlure sous l'eau du robinet tempérée et à faible pression, jusqu'à disparition de la douleur pour une brûlure simple."),
+]

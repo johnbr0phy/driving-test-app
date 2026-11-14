@@ -2,6 +2,7 @@ import "@/lib/v2/banks/asvab";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { getTigerAsset } from "@/lib/tigerAssets";
 import { Smartphone, Monitor } from "lucide-react";
 import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHero";
@@ -24,7 +25,7 @@ export const metadata: Metadata = {
   title,
   description: metaDescription,
   keywords:
-    "ASVAB practice test, free ASVAB practice test, AFQT practice test, ASVAB arithmetic reasoning practice, ASVAB word knowledge practice, ASVAB math knowledge practice, ASVAB paragraph comprehension, ASVAB test prep 2026",
+    "ASVAB practice test, free ASVAB practice test, ASVAB mock test, AFQT practice test, ASVAB arithmetic reasoning practice, ASVAB word knowledge practice, ASVAB math knowledge practice, ASVAB paragraph comprehension, ASVAB test prep 2026",
   alternates: {
     canonical: `${siteUrl}/asvab-practice-test`,
   },
@@ -114,15 +115,16 @@ const jsonLd = {
   ],
 };
 
+// Each row links to that subtest's question page (/questions/asvab/<slug>, lib/v2/topicPages.ts).
 const contentAreas = [
-  { name: "Arithmetic Reasoning", weight: "18%" },
-  { name: "Word Knowledge", weight: "18%" },
-  { name: "Mathematics Knowledge", weight: "18%" },
-  { name: "Paragraph Comprehension", weight: "14%" },
-  { name: "General Science", weight: "10%" },
-  { name: "Electronics Information", weight: "8%" },
-  { name: "Auto & Shop Information", weight: "8%" },
-  { name: "Mechanical Comprehension", weight: "6%" },
+  { name: "Arithmetic Reasoning", weight: "18%", href: "/questions/asvab/arithmetic-reasoning" },
+  { name: "Word Knowledge", weight: "18%", href: "/questions/asvab/word-knowledge" },
+  { name: "Mathematics Knowledge", weight: "18%", href: "/questions/asvab/math-knowledge" },
+  { name: "Paragraph Comprehension", weight: "14%", href: "/questions/asvab/paragraph-comprehension" },
+  { name: "General Science", weight: "10%", href: "/questions/asvab/general-science" },
+  { name: "Electronics Information", weight: "8%", href: "/questions/asvab/electronics" },
+  { name: "Auto & Shop Information", weight: "8%", href: "/questions/asvab/auto-and-shop" },
+  { name: "Mechanical Comprehension", weight: "6%", href: "/questions/asvab/mechanical-comprehension" },
 ];
 
 export default function AsvabLandingPage() {
@@ -175,7 +177,7 @@ export default function AsvabLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Practice Tests</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Eight subtests in the real order with the real time limits, no calculator, and no going back, just like the computer test at MEPS. Finish with an AFQT estimate, a score for every subtest, and a plan for what to drill next.
+                A full ASVAB mock test: eight subtests in the real order with the real time limits, no calculator, and no going back, just like the computer test at MEPS. Finish with an AFQT estimate, a score for every subtest, and a plan for what to drill next.
               </p>
             </div>
           </div>
@@ -193,12 +195,16 @@ export default function AsvabLandingPage() {
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
                 The ASVAB is a battery of separate subtests, and the four that make up your AFQT score (arithmetic reasoning, word knowledge, paragraph comprehension and mathematics knowledge) decide whether you can enlist. The practice tests here give those four more than two thirds of the questions, with the technical subtests filling out the rest.
               </p>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">
+                Tap a subtest for ten sample questions with answers, or try the{" "}
+                <Link href="/questions/asvab/afqt" className="text-brand-dark underline underline-offset-2">AFQT practice test</Link> questions from all four AFQT subtests.
+              </p>
               <div className="space-y-3">
                 {contentAreas.map((area) => (
-                  <div key={area.name} className="flex items-center justify-between bg-white dark:bg-gray-900 rounded-lg px-4 py-3 border border-gray-200 dark:border-gray-800">
-                    <span className="font-medium text-gray-900 dark:text-gray-50">{area.name}</span>
+                  <Link key={area.name} href={area.href} className="flex items-center justify-between bg-white dark:bg-gray-900 rounded-lg px-4 py-3 border border-gray-200 dark:border-gray-800 hover:border-brand-border-light">
+                    <span className="font-medium text-gray-900 dark:text-gray-50 underline underline-offset-2 decoration-gray-300 dark:decoration-gray-600">{area.name}</span>
                     <span className="text-brand-dark font-semibold">{area.weight}</span>
-                  </div>
+                  </Link>
                 ))}
               </div>
             </div>

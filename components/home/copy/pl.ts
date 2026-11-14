@@ -142,5 +142,5 @@ export const countryNames: Record<string, string> = {
   US: "USA", CA: "Kanada", UK: "Wielka Brytania", IE: "Irlandia", AU: "Australia", NZ: "Nowa Zelandia", IN: "Indie",
   PH: "Filipiny", MY: "Malezja", SG: "Singapur", HK: "Hongkong", AE: "Zjednoczone Emiraty Arabskie", ZA: "RPA",
   NG: "Nigeria", KE: "Kenia", PK: "Pakistan", ES: "Hiszpania", PT: "Portugalia", RO: "Rumunia", SE: "Szwecja", GR: "Grecja",
-  DK: "Dania", HU: "Węgry", BE: "Belgia", FI: "Finlandia", MT: "Malta", DE: "Niemcy", IT: "Włochy",
+  DK: "Dania", HU: "Węgry", BE: "Belgia", FI: "Finlandia", MT: "Malta", DE: "Niemcy", IT: "Włochy", FR: "Francja",
 };

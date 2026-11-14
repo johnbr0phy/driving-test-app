@@ -76,6 +76,24 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     tigertest:
       "Tigertest has two full-length GED practice tests covering all four subjects, with a percent score per subject and six skill drills that teach the basics first. All of it is free with no account required; the essay is not modeled.",
   },
+  hiset: {
+    answer:
+      "The HiSET is a high school equivalency test owned and run by PSI. It has five subtests, each taken and scored on its own: Language Arts - Reading (50 multiple-choice questions in 65 minutes), Language Arts - Writing (60 multiple-choice questions and one essay in 120 minutes), Mathematics (55 questions in 90 minutes), Science (60 questions in 80 minutes) and Social Studies (60 questions in 70 minutes). Each subtest is scored 1 to 20. To pass, you need at least 8 on every subtest, at least 2 out of 6 on the essay and a total of at least 45 across all five. It can be taken on a computer or on paper, at a test center or at home with a remote proctor, and the fee includes two free retests within 12 months.",
+    rows: [
+      { label: "Subtests", value: "Reading, Writing, Mathematics, Science, Social Studies (taken separately)" },
+      { label: "Questions", value: "50, 60 plus an essay, 55, 60 and 60, all four-option multiple choice" },
+      { label: "Time", value: "65, 120, 90, 80 and 70 minutes (7 hr 5 min in English)" },
+      { label: "Scoring", value: "1 to 20 per subtest; the essay is scored 1 to 6" },
+      { label: "Passing", value: "8 or more on each subtest, 2 or more on the essay, 45 or more in total" },
+      { label: "Calculator", value: "Calculator neutral: the test center provides one on request" },
+      { label: "Delivery", value: "Computer or paper, at a test center or at home with a remote proctor" },
+      { label: "Given by", value: "PSI Services LLC" },
+    ],
+    basedOn: "PSI's HiSET Test at a Glance (TAAG) and the HiSET Test Taker Bulletin 2026",
+    source: { name: "HiSET Test at a Glance (PSI)", url: "https://hiset.org/wp-content/uploads/2025/05/taag.pdf" },
+    tigertest:
+      "Tigertest has two HiSET practice tests covering all five subtests at the real pace, each scored with an estimated 1 to 20 per subtest and an estimated total, plus 15 drills (ten open with the basics). All of it is free with no account required; the essay is not modeled.",
+  },
   sat: {
     answer:
       "The digital SAT has 98 questions in 2 hours 14 minutes: Reading and Writing (54 questions, two 32-minute modules) and Math (44 questions, two 35-minute modules). It is adaptive by module and scored 400 to 1600, with each section scored 200 to 800. There is no pass mark; colleges set their own expectations.",
@@ -2197,6 +2215,40 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     tigertest:
       "Tigertest has two full adaptive GRE practice tests with Verbal and Quant score estimates and seven drills, all free with no account required. The essay is not included.",
   },
+  mcat: {
+    answer:
+      "The MCAT is the AAMC's computer-based Medical College Admission Test, with four multiple-choice sections in this order: Chemical and Physical Foundations of Biological Systems (59 questions, 95 minutes), Critical Analysis and Reasoning Skills (53 questions, 90 minutes), Biological and Biochemical Foundations of Living Systems (59, 95) and Psychological, Social, and Biological Foundations of Behavior (59, 95). The science sections mix passage-based sets with discrete questions; CARS is all passage-based and needs no outside knowledge. Each section is scored 118 to 132 and the total runs from 472 to 528, and wrong answers count the same as blank ones.",
+    rows: [
+      { label: "Sections", value: "Chem/Phys, CARS, Bio/Biochem, Psych/Soc" },
+      { label: "Questions", value: "230: 59, 53, 59 and 59" },
+      { label: "Time", value: "6 hr 15 min of testing; about 7 hr 30 min seated" },
+      { label: "Breaks", value: "Three optional breaks: 10, 30 and 10 minutes" },
+      { label: "Score", value: "118 to 132 per section; 472 to 528 total" },
+      { label: "Calculator", value: "None; a periodic table is provided" },
+      { label: "Given by", value: "AAMC, at test centers" },
+    ],
+    basedOn: "the AAMC's \"What's on the MCAT Exam?\" outline and the MCAT Essentials for Testing Year 2027",
+    source: { name: "AAMC", url: "https://students-residents.aamc.org/prepare-mcat-exam/whats-mcat-exam" },
+    tigertest:
+      "Tigertest has two MCAT practice tests with all four sections at about half length and the real pace, a 472 to 528 score estimate and nine drills by foundational concept and CARS skill. It is free to start, with no account required.",
+  },
+  lsat: {
+    answer:
+      "The LSAT has four 35-minute multiple-choice sections: two scored Logical Reasoning sections, one scored Reading Comprehension section and one unscored variable section of either type that LSAC uses to try out new questions, with a 10-minute intermission between the second and third sections. Analytical Reasoning (logic games) was dropped in August 2024. The score runs from 120 to 180, based on the number of questions answered correctly, with no deduction for wrong answers. LSAT Argumentative Writing, a 50-minute unscored essay taken online, must be on file before a score is released. From August 2027 the unscored questions move inside the three sections, which LSAC says will test the same skills.",
+    rows: [
+      { label: "Sections", value: "4 x 35 minutes: 2 Logical Reasoning, 1 Reading Comprehension, 1 unscored" },
+      { label: "Break", value: "10-minute intermission after the second section" },
+      { label: "Score", value: "120 to 180, from the number answered correctly" },
+      { label: "Wrong answers", value: "No deduction" },
+      { label: "Writing", value: "LSAT Argumentative Writing, 50 minutes, unscored" },
+      { label: "Logic games", value: "Removed in August 2024" },
+      { label: "Given by", value: "LSAC (Law School Admission Council)" },
+    ],
+    basedOn: "LSAC's LSAT test format, specifications and scoring pages (checked November 2026)",
+    source: { name: "LSAC", url: "https://www.lsac.org/lsat/taking-lsat/test-format" },
+    tigertest:
+      "Tigertest has two full LSAT practice tests, the three scored sections at 35 minutes each with a 120 to 180 score estimate, and nine drills by question family. Start for free, no account required; the last two drills and Practice Test 2 are part of Premium. The variable section and the writing sample are not included.",
+  },
   gmat: {
     answer:
       "The GMAT Focus Edition has 64 questions in 2 hours 15 minutes: Quantitative Reasoning (21 questions), Verbal Reasoning (23) and Data Insights (20), 45 minutes each, in any order you choose, with one optional 10-minute break. Each section is scored 60 to 90 and the total runs from 205 to 805; the exam is computer adaptive, and you may review and change up to three answers per section. There is no essay, no geometry and no sentence correction; an on-screen calculator is allowed only in Data Insights.",
@@ -2211,6 +2263,23 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "GMAC's GMAT Focus Edition exam structure (as of October 2026)",
     source: { name: "GMAC (mba.com)", url: "https://www.mba.com/exams/gmat-exam/about/exam-structure" },
+  },
+  ieltsread: {
+    answer:
+      "IELTS Academic Reading lasts 60 minutes and has 40 questions on three passages totalling 2,150 to 2,750 words, taken from books, journals, magazines, newspapers and online sources. Each correct answer earns one mark, wrong answers lose nothing, and the raw score out of 40 becomes a band from 1 to 9 in whole or half bands. On computer, answers are typed on screen and there is no extra transfer time. General Training Reading has the same length and timing but uses everyday and workplace texts and needs more correct answers for the same band.",
+    rows: [
+      { label: "Questions", value: "40, one mark each, no penalty for wrong answers" },
+      { label: "Time", value: "60 minutes, no extra transfer time" },
+      { label: "Passages", value: "3, 2,150 to 2,750 words in all (Academic)" },
+      { label: "Score", value: "Band 1 to 9; about 23 correct for 6, 30 for 7 (Academic)" },
+      { label: "Question types", value: "11, from True/False/Not Given to short answers" },
+      { label: "Delivery", value: "On computer (paper IELTS ended from mid-2026)" },
+      { label: "Run by", value: "British Council, IDP IELTS and Cambridge" },
+    ],
+    basedOn: "the IELTS.org Academic Reading format page and IDP's band score table (as of November 2026)",
+    source: { name: "IELTS.org", url: "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading" },
+    tigertest:
+      "Tigertest has two full Academic Reading tests and seven drills by question type, with a band score estimate. Only Reading is covered; Listening, Writing and Speaking are not.",
   },
   netplus: {
     answer:
@@ -2742,6 +2811,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "Ministerial decree of 27 October 2021, Codice della Strada articles 121 and 122, the Motorizzazione civile guidance of Regione Friuli Venezia Giulia, and D.Lgs. 59/2011 Annex II, checked November 2026",
     source: { name: "Il Portale dell'Automobilista (Ministry of Infrastructure and Transport)", url: "https://www.ilportaledellautomobilista.it/" },
+  },
+  frcode: {
+    answer:
+      "The French theory test for a category B car licence (épreuve théorique générale, ETG, known as \"le code\") is taken in an exam centre run by one of the approved operators (La Poste, SGS, Dekra, Pearson VUE or Bureau Veritas): 40 multiple-choice questions, each shown with a photo or a video and some with more than one right answer, and you pass with at least 35 right. You can register from 15 with early supervised driving (apprentissage anticipé), otherwise from 16, and a pass stays valid for five years while you take the practical test.",
+    rows: [
+      { label: "Run by", value: "Approved private operators, for the Interior Ministry" },
+      { label: "Format", value: "40 multiple-choice questions with photos or videos" },
+      { label: "Pass mark", value: "At least 35 of 40 right" },
+      { label: "Minimum age", value: "15 with apprentissage anticipé, otherwise 16" },
+      { label: "Valid for", value: "5 years after the pass" },
+      { label: "Tigertest mock tests", value: "6 x 40 four-option questions in French, 35 to pass" },
+    ],
+    basedOn: "Service-public.gouv.fr (fiche F33694, checked April 2026) and the arrêté du 20 avril 2012, article 2, checked November 2026",
+    source: { name: "Service-public.gouv.fr: comment passer le code (ETG)", url: "https://www.service-public.gouv.fr/particuliers/vosdroits/F33694" },
   },
   apitalian: {
     answer:

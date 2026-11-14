@@ -14,9 +14,9 @@ import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
-const title = "Free US Citizenship Test Practice - 2025 Civics Test";
+const title = "US Citizenship Test Questions - Free 2025 Civics Test Practice";
 const metaDescription =
-  "Free practice for the 2025 USCIS civics test: 200 multiple-choice items with explanations. Review the official questions before your citizenship interview.";
+  "Free US citizenship test questions for the 2025 USCIS civics test: 200 multiple-choice practice items with answers explained, by topic. Review the official 128 before your interview.";
 const description =
   "Free multiple-choice study for the 2025 USCIS civics test. Use 200 adapted items with explanations. Review the official questions and your local answers before the oral interview.";
 
@@ -57,6 +57,10 @@ const faqs = [
   {
     q: "What is the 65/20 exception?",
     a: "Qualifying applicants age 65 or older with at least 20 years as lawful permanent residents study the 20 starred questions from their applicable 2008 or 2025 list. Check the filing-time eligibility rules with USCIS. You are asked 10 and need 6 correct, and may use your chosen language. Tigertest does not provide a dedicated 65/20 mode.",
+  },
+  {
+    q: "Where can I see the citizenship test questions and answers?",
+    a: "USCIS publishes the official list of 128 civics questions with their acceptable answers on uscis.gov. Tigertest does not reprint that list: its 200 questions are original multiple-choice practice items written from it, grouped by the list's topics, each with the answer and an explanation. Ten per topic are on the citizenship test questions pages linked below, with answers shown.",
   },
   {
     q: "Do the answers change?",
@@ -125,7 +129,7 @@ export default function CitizenshipLandingPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-50 mb-6 tracking-tight">
-            Free US Citizenship Test Practice 2026
+            Free US Citizenship Test Questions and Practice 2026
           </h1>
           <ExamLandingHero
             dashboardHref="/citizenship/dashboard"

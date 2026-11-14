@@ -38,6 +38,7 @@ import { allStateLandings } from "./stateLandings";
 import { teachPagePath, teachPageTests } from "./teachPages";
 import { STATE_EXAM_LANDINGS_UPDATED_AT, TOPIC_PAGES_UPDATED_AT } from "./seoDates";
 import { examTopics, mostMissedPath, topicExams, topicPath } from "./topicPages";
+import { examTopicsV2, topicExamsV2, topicPathV2 } from "./v2/topicPages";
 
 export function isSitemapSegment(value: string): value is SitemapSegment {
   return (SITEMAP_SEGMENTS as readonly string[]).includes(value);
@@ -117,7 +118,7 @@ export async function buildSegment(segment: SitemapSegment): Promise<SitemapEntr
       return [
         { url: `${SITE_URL}/tests`, lastModified: HUB_PAGES_UPDATED_AT, changeFrequency: "weekly", priority: 0.8 },
         // Country homepages (lib/region.ts); "/" is the US one, in the dmv segment.
-        ...["uk", "ie", "ca", "au", "nz", "in", "ph", "my", "sg", "hk", "ae", "za", "ng", "ke", "pk", "es", "pt", "ro", "se", "gr", "dk", "hu", "be", "fi", "mt", "de"].map((c) => ({ url: `${SITE_URL}/${c}`, lastModified: HUB_PAGES_UPDATED_AT, changeFrequency: "daily" as const, priority: 0.9 })),
+        ...["uk", "ie", "ca", "au", "nz", "in", "ph", "my", "sg", "hk", "ae", "za", "ng", "ke", "pk", "es", "pt", "ro", "se", "gr", "dk", "hu", "be", "fi", "mt", "de", "it", "fr"].map((c) => ({ url: `${SITE_URL}/${c}`, lastModified: HUB_PAGES_UPDATED_AT, changeFrequency: "daily" as const, priority: 0.9 })),
         { url: `${SITE_URL}/teach`, lastModified: HUB_PAGES_UPDATED_AT, changeFrequency: "monthly", priority: 0.7 },
         { url: `${SITE_URL}/about`, lastModified: ABOUT_PAGE_UPDATED_AT, changeFrequency: "monthly", priority: 0.4 },
         // Each landing's own last change (lib/landingDates.ts), not one date for all.
@@ -147,6 +148,15 @@ export async function buildSegment(segment: SitemapSegment): Promise<SitemapEntr
         ...topicExams().flatMap((exam) =>
           examTopics(exam).map((t) => ({
             url: `${SITE_URL}${topicPath(exam, t)}`,
+            lastModified: TOPIC_PAGES_UPDATED_AT,
+            changeFrequency: "monthly" as const,
+            priority: 0.6,
+          }))
+        ),
+        // v2 topic pages (/questions/asvab/arithmetic-reasoning, /questions/asvab/afqt).
+        ...topicExamsV2().flatMap((exam) =>
+          examTopicsV2(exam).map((t) => ({
+            url: `${SITE_URL}${topicPathV2(exam, t)}`,
             lastModified: TOPIC_PAGES_UPDATED_AT,
             changeFrequency: "monthly" as const,
             priority: 0.6,

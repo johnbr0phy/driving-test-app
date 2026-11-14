@@ -896,6 +896,20 @@
     --brand-gradient-to: 290 80% 95%;
   }
 
+  /* HiSET theme: deep leaf green (v2 exam; matches lib/v2/exams/hiset.ts theme) */
+  [data-theme="hiset"] {
+    --brand: 102 90% 28%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 102 90% 96%;
+    --brand-hover: 102 90% 24%;
+    --brand-dark: 102 90% 20%;
+    --brand-darker: 102 85% 13%;
+    --brand-muted: 102 35% 72%;
+    --brand-border: 102 40% 80%;
+    --brand-border-light: 102 40% 90%;
+    --brand-gradient-to: 90 85% 95%;
+  }
+
   /* Times Tables theme: magenta (v2 exam; matches lib/v2/exams/timestables.ts theme) */
   [data-theme="timestables"] {
     --brand: 300 60% 42%;
@@ -2102,6 +2116,48 @@
     --brand-gradient-to: 350 60% 96%;
   }
 
+  /* IELTS Reading theme: deep red (v2 exam; matches lib/v2/exams/ieltsread.ts theme) */
+  [data-theme="ieltsread"] {
+    --brand: 356 85% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 356 85% 96%;
+    --brand-hover: 356 85% 19%;
+    --brand-dark: 356 85% 16%;
+    --brand-darker: 356 75% 11%;
+    --brand-muted: 356 40% 72%;
+    --brand-border: 356 45% 80%;
+    --brand-border-light: 356 45% 90%;
+    --brand-gradient-to: 6 60% 96%;
+  }
+
+  /* MCAT theme (v2 exam; matches lib/v2/exams/mcat.ts theme) */
+  [data-theme="mcat"] {
+    --brand: 256 75% 40%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 256 70% 96%;
+    --brand-hover: 256 75% 35%;
+    --brand-dark: 256 75% 30%;
+    --brand-darker: 256 60% 20%;
+    --brand-muted: 256 40% 72%;
+    --brand-border: 256 45% 80%;
+    --brand-border-light: 256 40% 89%;
+    --brand-gradient-to: 240 60% 96%;
+  }
+
+  /* LSAT theme (v2 exam; matches lib/v2/exams/lsat.ts theme): deep oxblood */
+  [data-theme="lsat"] {
+    --brand: 342 30% 24%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 342 30% 96%;
+    --brand-hover: 342 30% 20%;
+    --brand-dark: 342 30% 18%;
+    --brand-darker: 342 25% 13%;
+    --brand-muted: 342 25% 70%;
+    --brand-border: 342 28% 80%;
+    --brand-border-light: 342 25% 89%;
+    --brand-gradient-to: 352 40% 96%;
+  }
+
   /* CompTIA Network+ theme (v2 exam; matches lib/v2/exams/netplus.ts theme) */
   [data-theme="netplus"] {
     --brand: 252 40% 40%;
@@ -2561,6 +2617,20 @@
     --brand-muted: 294 40% 70%;
     --brand-border: 294 45% 80%;
     --brand-border-light: 294 45% 90%;
+    --brand-gradient-to: 0 0% 98%;
+  }
+
+  /* French Driving Theory Test (Code de la route) theme */
+  [data-theme="frcode"] {
+    --brand: 234 100% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 234 100% 96%;
+    --brand-hover: 234 100% 17%;
+    --brand-dark: 234 100% 12%;
+    --brand-darker: 234 100% 8%;
+    --brand-muted: 234 40% 70%;
+    --brand-border: 234 45% 80%;
+    --brand-border-light: 234 45% 90%;
     --brand-gradient-to: 0 0% 98%;
   }
 
@@ -5643,6 +5713,16 @@
     --brand-darker: 265 50% 78%;
   }
 
+  .dark [data-theme="hiset"] {
+    --brand-light: 102 45% 13%;
+    --brand-gradient-to: 90 40% 11%;
+    --brand-border-light: 102 35% 24%;
+    --brand-border: 102 40% 34%;
+    --brand-muted: 102 35% 45%;
+    --brand-dark: 102 90% 65%;
+    --brand-darker: 102 85% 78%;
+  }
+
   .dark [data-theme="timestables"] {
     --brand: 300 60% 47.9%;
     --brand-hover: 300 60% 39.9%;
@@ -6671,6 +6751,42 @@
     --brand-darker: 340 30% 78%;
   }
 
+  .dark [data-theme="ieltsread"] {
+    --brand: 356 85% 49.3%;
+    --brand-hover: 356 85% 41.3%;
+    --brand-light: 356 45% 13%;
+    --brand-gradient-to: 6 40% 11%;
+    --brand-border-light: 356 35% 24%;
+    --brand-border: 356 40% 34%;
+    --brand-muted: 356 40% 45%;
+    --brand-dark: 356 85% 65%;
+    --brand-darker: 356 75% 78%;
+  }
+
+  .dark [data-theme="mcat"] {
+    --brand: 256 75% 50%;
+    --brand-hover: 256 75% 42%;
+    --brand-light: 256 45% 13%;
+    --brand-gradient-to: 240 40% 11%;
+    --brand-border-light: 256 35% 24%;
+    --brand-border: 256 40% 34%;
+    --brand-muted: 256 40% 45%;
+    --brand-dark: 256 75% 67%;
+    --brand-darker: 256 60% 78%;
+  }
+
+  .dark [data-theme="lsat"] {
+    --brand: 342 30% 50%;
+    --brand-hover: 342 30% 42%;
+    --brand-light: 342 30% 13%;
+    --brand-gradient-to: 352 40% 11%;
+    --brand-border-light: 342 25% 24%;
+    --brand-border: 342 28% 34%;
+    --brand-muted: 342 25% 45%;
+    --brand-dark: 342 30% 65%;
+    --brand-darker: 342 25% 78%;
+  }
+
   .dark [data-theme="netplus"] {
     --brand: 252 40% 50%;
     --brand-hover: 252 40% 42%;
@@ -7038,6 +7154,17 @@
     --brand-muted: 12 35% 45%;
     --brand-dark: 12 85% 65%;
     --brand-darker: 12 80% 78%;
+  }
+  .dark [data-theme="frcode"] {
+    --brand: 234 100% 50%;
+    --brand-hover: 234 100% 42%;
+    --brand-light: 234 45% 13%;
+    --brand-gradient-to: 0 0% 11%;
+    --brand-border-light: 234 35% 24%;
+    --brand-border: 234 40% 34%;
+    --brand-muted: 234 40% 45%;
+    --brand-dark: 234 100% 70%;
+    --brand-darker: 234 100% 78%;
   }
   .dark [data-theme="itpatente"] {
     --brand: 128 80% 29.6%;

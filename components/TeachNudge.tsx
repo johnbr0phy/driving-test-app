@@ -50,7 +50,7 @@ const TEACHER_LED = new Set([
   "aufirstaid",
   "gulfrn",
   // High school, military and college classes
-  "ged", "sat", "act", "asvab", "secplus", "aplus", "aws", "awssaa", "az900", "ccna", "pmp", "gcsemaths", "osslt", "naplan", "nswsel",
+  "ged", "hiset", "sat", "act", "asvab", "secplus", "aplus", "aws", "awssaa", "az900", "ccna", "pmp", "gcsemaths", "osslt", "naplan", "nswsel",
   "gcsehigher", "gcsescience", "gcsecs", "fsmaths",
   "eqao9",
   "naplan7", "vicsel", "hscmaths",
@@ -66,7 +66,7 @@ const TEACHER_LED = new Set([
   "uklitu", "cacit", "aucit",
   // Next 30 batch (October 2026)
   "rbt", "cpc", "cca", "aswb", "arrt", "nce", "jelec", "barber", "ffi", "police", "faapvt",
-  "psat", "praxis", "gre", "gmat", "netplus", "cysa", "cissp", "gcdl", "gcppca", "itil", "psm", "capm",
+  "psat", "praxis", "gre", "gmat", "lsat", "ieltsread", "mcat", "netplus", "cysa", "cissp", "gcdl", "gcppca", "itil", "psm", "capm",
   "ssccgl", "rrbntpc", "ctet", "ibpspo",
   "rrbgroupd", "sscgd", "sscchsl", "sscmts", "uppolice", "ibpsclerk", "jnvst", "jambeng", "appsych",
   // Next-100 batch 2 (November 2026)

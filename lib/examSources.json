@@ -522,6 +522,11 @@
   "https://nseti-pdfs.s3.us-west-2.amazonaws.com/desc/FortiGate_7.6_Administrator_Exam_Description.pdf",
   "https://training.fortinet.com/local/staticpage/view.php?page=library_fortigate-administrator"
  ],
+ "frcode": [
+  "https://www.service-public.gouv.fr/particuliers/vosdroits/F33694",
+  "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000025803494",
+  "https://www.securite-routiere.gouv.fr/passer-son-permis-de-conduire/preparation-de-lexamen-du-code-de-la-route"
+ ],
  "fsmaths": [
   "https://www.gov.uk/government/publications/functional-skills-subject-content-mathematics/subject-content-functional-skills-maths",
   "https://www.gov.uk/government/publications/a-review-of-the-assessment-of-reformed-functional-skills-qualifications-in-english-and-maths",
@@ -594,6 +599,11 @@
  "gulfrn": [
   "https://dhp.moph.gov.qa/en/Pages/QualifyingExamination.aspx"
  ],
+ "hiset": [
+  "https://hiset.org",
+  "https://hiset.org/wp-content/uploads/2025/05/taag.pdf",
+  "https://hiset.org/wp-content/uploads/2025/05/hiset_test-taker-bulletin.pdf"
+ ],
  "hkdrive": [
   "https://www.td.gov.hk/en/public_services/licences_and_permits/driving_test/wt/index.html",
   "https://www.td.gov.hk/filemanager/en/content_172/road_users_code_2020_eng.pdf",
@@ -655,6 +665,11 @@
   "https://www.theorytest.ie/general-information/faqs/",
   "https://theorytest.ie/book-your-theory-test/driver-theory-test-bus-or-truck/",
   "https://cvrt.ie/ie/Operator-Driver-Obligations/Tachograph-Equipment/~/assets/pdf/Using%20a%20Tachograph%20-%20WEB.pdf"
+ ],
+ "ieltsread": [
+  "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading",
+  "https://ielts.org/take-a-test/test-types/ielts-general-training-test/ielts-general-training-format-reading",
+  "https://ielts.idp.com/nepal/about/which-test-do-i-take/ielts-on-computer/reading-preparation"
  ],
  "iepsa": [
   "https://qsearch.qqi.ie/WebPart/AwardDetails?awardCode=4N20604",
@@ -756,10 +771,20 @@
   "https://www.gov.nl.ca/dgsnl/files/insurance-pdf-memo-llqp-2018.pdf",
   "https://lautorite.qc.ca/en/becoming-a-professional/insurance-of-persons-and-group-insurance-of-persons/examinations/pilot-exam-questions"
  ],
+ "lsat": [
+  "https://www.lsac.org/lsat/register-lsat/accommodations/specifications-lsat-and-lsat-argumentative-writing",
+  "https://www.lsac.org/lsat/taking-lsat/test-format",
+  "https://www.lsac.org/lsat/taking-lsat/test-format/reading-comprehension"
+ ],
  "mapgrowth": [
   "https://www.nwea.org/uploads/CCSS_2025.pdf",
   "https://www.nwea.org/uploads/MAP-Growth-Technical-Report-2025.pdf",
   "https://learning.ccsso.org/wp-content/uploads/2022/11/Math_Standards1.pdf"
+ ],
+ "mcat": [
+  "https://students-residents.aamc.org/prepare-mcat-exam/whats-mcat-exam",
+  "https://students-residents.aamc.org/media/9261/download",
+  "https://students-residents.aamc.org/applying-medical-school/article/how-new-mcat-exam-scored/"
  ],
  "mhtcet": [
   "https://cetcell.mahacet.org/",

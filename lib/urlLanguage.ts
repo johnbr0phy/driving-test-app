@@ -25,7 +25,7 @@ export const URL_LANGUAGE_PREFIXES: { prefix: string; lang: string; includeRoot:
   { prefix: "/ro", lang: "ro", includeRoot: false },
   { prefix: "/el", lang: "el", includeRoot: false },
   { prefix: "/nl", lang: "nl", includeRoot: false },
-  { prefix: "/fr", lang: "fr", includeRoot: false },
+  { prefix: "/fr", lang: "fr", includeRoot: true },
 ];
 
 /** The language `pathname` is written in, or null for an ordinary page. */

@@ -249,3 +249,4 @@ import "./sgvl";
 import "./itcils";
 import "./itceli";
 import "./itpatente";
+import "./frcode";

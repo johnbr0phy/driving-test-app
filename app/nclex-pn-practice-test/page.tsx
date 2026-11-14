@@ -9,6 +9,7 @@ import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHe
 import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
+import { ExamPriceFaq, priceFaqJsonLd } from "@/components/exam/ExamPriceFaq";
 import { SITE_URL } from "@/lib/siteUrl";
 import { SampleQuestionsV2 } from "@/components/v2/SampleQuestionsV2";
 import { examOffers } from "@/lib/examSeo";
@@ -98,6 +99,7 @@ const jsonLd = {
           acceptedAnswer: { "@type": "Answer", text: f.a },
         })),
         classFaqJsonLd("nclexpn"),
+        priceFaqJsonLd("nclexpn"),
       ],
     },
   ],
@@ -270,6 +272,7 @@ export default function NclexPnLandingPage() {
             </div>
           ))}
           <ExamClassFaq examId="nclexpn" />
+          <ExamPriceFaq examId="nclexpn" />
         </div>
       </div>
 

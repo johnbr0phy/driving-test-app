@@ -60,8 +60,10 @@ export async function generateMetadata({
     return { title: "State Not Found" };
   }
 
-  const title = `${state.name} DMV Practice Test 2026 - Free Permit Practice | Tigertest`;
-  const description = `Pass your ${state.name} permit test on the first try. ${state.writtenTestQuestions} free practice questions based on the ${state.name} driver's manual. Start practicing now.`;
+  // A few high-demand states carry their own search phrasing (data/stateLandingData.ts `seo`).
+  const seo = getStateLandingInfo(state.code)?.seo;
+  const title = seo?.title ?? `${state.name} DMV Practice Test 2026 - Free Permit Practice | Tigertest`;
+  const description = seo?.description ?? `Pass your ${state.name} permit test on the first try. ${state.writtenTestQuestions} free practice questions based on the ${state.name} driver's manual. Start practicing now.`;
   const canonicalUrl = `${siteUrl}/${state.slug}-dmv-practice-test`;
 
   return {
@@ -153,6 +155,7 @@ export default async function StateDMVPracticeTestPage({
       question: `What happens if I fail the ${state.name} permit test?`,
       answer: landingInfo.retakeInfo,
     },
+    ...(landingInfo.seo?.faq ?? []),
   ];
 
   // JSON-LD: FAQ schema
@@ -363,7 +366,7 @@ export default async function StateDMVPracticeTestPage({
         {/* Hero */}
         <div className="text-center mb-12">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-gray-50 mb-6">
-            Free {state.name} DMV Practice Test 2026
+            {landingInfo.seo?.h1 ?? `Free ${state.name} DMV Practice Test 2026`}
           </h1>
           <p className="text-lg md:text-xl text-gray-700 dark:text-gray-200 mb-8 max-w-2xl mx-auto">
             The {state.name} {state.dmvName} permit test has{" "}

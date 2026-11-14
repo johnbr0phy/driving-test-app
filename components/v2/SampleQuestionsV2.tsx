@@ -1,7 +1,8 @@
-import { getBank, getStimulus } from "@/lib/v2/bank";
+import { getBank } from "@/lib/v2/bank";
+import { isPrintable, samplePassage } from "@/lib/v2/printable";
 import { getExamV2 } from "@/lib/v2/registry";
 import { heldOutTests } from "@/lib/v2/training";
-import type { QuestionV2, Stimulus } from "@/lib/v2/types";
+import type { QuestionV2 } from "@/lib/v2/types";
 import { SAMPLE_COPY } from "@/components/exam/ExamSampleQuestions";
 import { RichText } from "@/components/v2/RichText";
 import { BANK_SIZES } from "@/lib/v2/bankSizes";
@@ -23,18 +24,6 @@ const plain = (s: string) => s.replace(/\$\$?/g, "").replace(/\*\*|__|\*/g, "").
  */
 const hasMath = (q: QuestionV2) => [q.stem, q.explanation, ...(q.options ?? [])].some((t) => t.includes("$"));
 
-// Longest shared passage the landing will print with a sample (AP English
-// Language and AP Italian put every item on a passage, so without this they
-// had no samples and no Quiz node at all).
-const MAX_SAMPLE_PASSAGE = 1600;
-
-/** A text-only passage short enough to print on the landing, or null. */
-function samplePassage(examId: string, q: QuestionV2): Stimulus | null {
-  const s = getStimulus(examId, q);
-  if (!s || s.figure || s.text.length > MAX_SAMPLE_PASSAGE || /\||\{\{|\[\[/.test(s.text)) return null;
-  return s;
-}
-
 export function pickSampleQuestionsV2(examId: string, count: number): QuestionV2[] {
   const alone = pickSamples(examId, count, false);
   // Only an exam with no stand-alone questions at all shows passage questions.
@@ -45,17 +34,7 @@ function pickSamples(examId: string, count: number, withPassage: boolean): Quest
   const exam = getExamV2(examId);
   const heldOut = heldOutTests(exam);
   const usable = getBank(examId)
-    .questions.filter(
-      (q) =>
-        q.format === "single" &&
-        (withPassage ? (q.passage || q.stimulusId) && samplePassage(examId, q) !== null : !q.passage && !q.stimulusId) &&
-        !q.figure &&
-        (q.options?.length ?? 0) >= 3 &&
-        q.correct?.length === 1 &&
-        !heldOut.includes(q.test) &&
-        !/\||\{\{|\[\[|\n- /.test(q.stem) &&
-        q.stem.length <= 420
-    )
+    .questions.filter((q) => !heldOut.includes(q.test) && isPrintable(examId, q, withPassage ? "passage" : "alone"))
     .sort((a, b) => a.id.localeCompare(b.id));
   const byDomain = new Map<string, QuestionV2[]>();
   for (const q of usable) byDomain.set(q.domain, [...(byDomain.get(q.domain) ?? []), q]);
@@ -75,20 +54,13 @@ function pickSamples(examId: string, count: number, withPassage: boolean): Quest
   return picked.slice(0, count);
 }
 
-export function SampleQuestionsV2({ examId, count = 6 }: { examId: string; count?: number }) {
+/** The Quiz node for printed v2 questions (landing samples, topic pages). */
+export function quizJsonLdV2(examId: string, url: string, id: string, name: string, sample: QuestionV2[]) {
   const exam = getExamV2(examId);
-  const sample = pickSampleQuestionsV2(examId, count);
-  if (sample.length === 0) return null;
-  const language = exam.language ?? "en";
-  const copy = SAMPLE_COPY[language] ?? SAMPLE_COPY.en!;
-  const shortName = language === "en" ? exam.english?.shortName ?? exam.shortName : exam.shortName;
-  const total = (BANK_SIZES[exam.id] ?? 0).toLocaleString(exam.locale ?? "en-US");
-  const url = `${SITE_URL}${exam.landingPath}`;
-  const jsonLd = {
-    "@context": "https://schema.org",
+  return {
     "@type": "Quiz",
-    "@id": `${url}#sample-questions`,
-    name: copy.quiz(shortName),
+    "@id": `${url}#${id}`,
+    name,
     about: exam.name,
     inLanguage: exam.locale ?? "en-US",
     isAccessibleForFree: true,
@@ -102,6 +74,18 @@ export function SampleQuestionsV2({ examId, count = 6 }: { examId: string; count
       comment: { "@type": "Comment", text: plain(q.explanation) },
     })),
   };
+}
+
+export function SampleQuestionsV2({ examId, count = 6 }: { examId: string; count?: number }) {
+  const exam = getExamV2(examId);
+  const sample = pickSampleQuestionsV2(examId, count);
+  if (sample.length === 0) return null;
+  const language = exam.language ?? "en";
+  const copy = SAMPLE_COPY[language] ?? SAMPLE_COPY.en!;
+  const shortName = language === "en" ? exam.english?.shortName ?? exam.shortName : exam.shortName;
+  const total = (BANK_SIZES[exam.id] ?? 0).toLocaleString(exam.locale ?? "en-US");
+  const url = `${SITE_URL}${exam.landingPath}`;
+  const jsonLd = { "@context": "https://schema.org", ...quizJsonLdV2(examId, url, "sample-questions", copy.quiz(shortName), sample) };
 
   return (
     <section aria-labelledby="sample-questions" className="max-w-3xl mx-auto px-6 py-16 md:py-24">
@@ -110,6 +94,16 @@ export function SampleQuestionsV2({ examId, count = 6 }: { examId: string; count
         {copy.title(shortName)}
       </h2>
       <p className="text-gray-600 dark:text-gray-300 text-center mb-10">{copy.sub(sample.length, total)}</p>
+      <SampleCardsV2 examId={examId} sample={sample} />
+    </section>
+  );
+}
+
+/** Printed v2 questions with the answer marked and explained. */
+export function SampleCardsV2({ examId, sample, headingLevel = 3 }: { examId: string; sample: QuestionV2[]; headingLevel?: 2 | 3 }) {
+  const exam = getExamV2(examId);
+  const copy = SAMPLE_COPY[exam.language ?? "en"] ?? SAMPLE_COPY.en!;
+  return (
       <ol className="space-y-6">
         {sample.map((q, n) => (
           <li key={q.id} className="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6">
@@ -123,7 +117,7 @@ export function SampleQuestionsV2({ examId, count = 6 }: { examId: string; count
                 <RichText text={samplePassage(examId, q)!.text} />
               </blockquote>
             )}
-            <div role="heading" aria-level={3} className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-4 flex gap-1">
+            <div role="heading" aria-level={headingLevel} className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-4 flex gap-1">
               <span>{n + 1}.</span>
               <RichText text={q.stem} />
             </div>
@@ -151,6 +145,5 @@ export function SampleQuestionsV2({ examId, count = 6 }: { examId: string; count
           </li>
         ))}
       </ol>
-    </section>
   );
 }

@@ -12,7 +12,9 @@
       "Use the photo on the door as the only check",
       "Ask the resident to nod when her name is said"
     ],
-    "correct": [0],
+    "correct": [
+      0
+    ],
     "explanation": "Two identifiers from the wristband, such as name and date of birth, are checked against the medication record every time. A roommate, a door photo alone or a nod from a confused resident are not reliable identifiers."
   },
   {
@@ -28,8 +30,10 @@
       "Remove it only when the family is visiting",
       "Keep it on for 48 hours before the order is renewed"
     ],
-    "correct": [1],
-    "explanation": "A restraint is tied to a part of the bed frame that moves with the client, using a knot that staff can release in one pull. A side rail can trap the limb when it is lowered, the restraint is released and the skin checked at regular intervals per policy, and orders are renewed at least every 24 hours."
+    "correct": [
+      1
+    ],
+    "explanation": "A restraint is tied to a part of the bed frame that moves with the client, using a knot that staff can release in one pull. A side rail can trap the limb when it is lowered, the restraint is released and the skin checked at regular intervals per policy, and the order is renewed as facility policy and regulations require."
   },
   {
     "domain": "pnSafety",
@@ -44,7 +48,9 @@
       "Wash hands with soap and water after care",
       "Place the client in a negative-pressure room"
     ],
-    "correct": [2],
+    "correct": [
+      2
+    ],
     "explanation": "C. difficile spores are not killed by alcohol, so hands are washed with soap and water to remove them, along with contact precautions and bleach cleaning. The infection spreads by contact, not through the air, so respirators and negative pressure are not needed."
   },
   {
@@ -60,7 +66,9 @@
       "Use the extinguisher on the fire",
       "Close the doors to confine the fire"
     ],
-    "correct": [3],
+    "correct": [
+      3
+    ],
     "explanation": "RACE is Rescue, Alarm, Confine, Extinguish, so after rescue and the alarm the PN closes doors to contain the smoke and fire, then extinguishes a small fire if it is safe. Oxygen shutoff is done by the person designated in the facility plan, usually the charge nurse."
   },
   {
@@ -76,7 +84,9 @@
       "Set the used syringe on the tray to discard later",
       "Bend the needle before placing it in the sharps box"
     ],
-    "correct": [0],
+    "correct": [
+      0
+    ],
     "explanation": "The safety device is activated immediately and the syringe goes straight into a sharps container at the point of use. Two-handed recapping, carrying an uncovered needle and bending needles are the actions that cause needlesticks."
   },
   {
@@ -92,7 +102,12 @@
       "Remove the mask by its ties or loops",
       "Perform hand hygiene"
     ],
-    "correct": [0, 1, 2, 3],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
     "explanation": "Gloves are the most contaminated item and come off first, then the gown, and the mask comes off last, touching only the ties or loops, at the doorway before leaving the room. Hand hygiene follows right after all the equipment is off. Removing the mask before the gloves brings contaminated gloves to the face."
   },
   {
@@ -110,7 +125,12 @@
       "Remove the N95 before leaving the room",
       "Limit visits to 15 minutes without a respirator"
     ],
-    "correct": [0, 1, 2, 3],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
     "explanation": "Tuberculosis spreads by tiny droplet nuclei that stay in the air, so staff wear a fit-tested N95, the door stays closed on a negative-pressure room, and the client wears a surgical mask when outside the room. The respirator is removed after leaving the room, and no one enters without one."
   },
   {
@@ -128,7 +148,12 @@
       "Keep the walker by the far wall so the floor is clear",
       "Orient the resident to the room and the call light"
     ],
-    "correct": [0, 2, 3, 5],
+    "correct": [
+      0,
+      2,
+      3,
+      5
+    ],
     "explanation": "A low bed, non-skid footwear, quick answers to the call light and orientation to the room all lower fall risk. Four raised side rails are a restraint that residents climb over, and a walker out of reach makes the resident walk without it."
   },
   {
@@ -137,17 +162,21 @@
     "skill": "Medication safety",
     "difficulty": 1,
     "format": "multi",
-    "stem": "The PN is preparing to give a client's oral medications. Which actions follow the rights of medication administration? Select all that apply.",
+    "stem": "Which actions by the PN follow safe medication practice? Select all that apply.",
     "options": [
-      "Check the label against the medication record three times",
-      "Use two identifiers before giving the dose",
+      "Clarify an unclear order with the RN or provider before giving it",
+      "Give a scheduled dose within the facility's time window",
+      "Document the dose only after the client takes it",
       "Give a medication that a coworker prepared",
-      "Document the dose before it is given",
-      "Check the allergy band before a new antibiotic",
-      "Stay with the client until the medications are swallowed"
+      "Leave the cup at the bedside for later",
+      "Crush an extended-release tablet to ease swallowing"
     ],
-    "correct": [0, 1, 4, 5],
-    "explanation": "Three label checks, two identifiers, an allergy check and staying until the dose is taken are the safeguards of safe administration. A nurse gives only medications they prepared and documents only after the dose is taken."
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "An unclear order is clarified before giving it, scheduled doses are given within the allowed window, and doses are documented only after they are taken. A nurse gives only what they prepared, never leaves medications unattended, and does not crush extended-release forms, which can release the whole dose at once."
   },
   {
     "domain": "pnSafety",
@@ -159,7 +188,13 @@
     "stimulusId": "NCLEXPN-CS1",
     "caseStep": 1,
     "stem": "The PN reviews the AP's note and the data collected. Highlight the findings that require follow-up.",
-    "correct": [0, 2, 3, 5, 7],
+    "correct": [
+      0,
+      2,
+      3,
+      5,
+      7
+    ],
     "explanation": "A call light out of reach, bare feet, sedation from a new sleep aid, a head strike in a resident taking an anticoagulant and a 28-point drop in systolic pressure all need action or reporting. A low bed, a dry floor and orientation at baseline are expected and need no follow-up."
   },
   {
@@ -186,7 +221,10 @@
         "urinary retention"
       ]
     ],
-    "correct": [0, 0],
+    "correct": [
+      0,
+      0
+    ],
     "explanation": "A 28 mm Hg drop in systolic pressure on standing with dizziness, in a resident with Parkinson disease who started a sedative 3 nights ago, explains the fall. Hitting the head while taking apixaban makes intracranial bleeding the greatest danger, which is why neurologic checks are ordered."
   },
   {
@@ -202,7 +240,9 @@
       "\"The gown and gloves protect me from your coughing.\"",
       "\"I will put on a mask as well, to be safe.\""
     ],
-    "correct": [1],
+    "correct": [
+      1
+    ],
     "explanation": "MRSA in a wound spreads by direct and indirect contact, so a gown and gloves block transmission and a mask adds nothing. Under standard precautions a mask is added only when a splash or spray of body fluids is likely."
   },
   {
@@ -218,7 +258,9 @@
       "Flush the eye with water for 15 minutes",
       "Apply an ophthalmic ointment to the eye"
     ],
-    "correct": [2],
+    "correct": [
+      2
+    ],
     "explanation": "Immediate flushing with water limits chemical damage to the eye, which is why eyewash stations are in work areas. The safety data sheet and the report to the supervisor follow the flushing, and ointment is not applied to a chemical exposure."
   },
   {
@@ -234,24 +276,28 @@
       "Ask the family to take it home at the next visit",
       "Take the razor out of use and report it"
     ],
-    "correct": [3],
+    "correct": [
+      3
+    ],
     "explanation": "A frayed cord can shock the client or start a fire, so the device is removed from use at once and reported so it can be checked or replaced. Tape, supervision and waiting for a visit all leave the hazard in the room."
   },
   {
     "domain": "pnSafety",
     "test": 2,
-    "skill": "Seizure safety",
+    "skill": "Status epilepticus",
     "difficulty": 2,
     "format": "single",
-    "stem": "A client in bed begins having a tonic-clonic seizure. Which action should the PN take?",
+    "stem": "A client's tonic-clonic seizure has continued for 6 minutes. What should the PN do?",
     "options": [
-      "Turn the client onto the side",
-      "Hold the client's arms still",
+      "Call for the RN and emergency help now",
+      "Wait for the seizure to stop on its own",
       "Place a padded tongue blade in the mouth",
-      "Move the client to the floor"
+      "Give the client's oral anticonvulsant"
     ],
-    "correct": [0],
-    "explanation": "Turning the client to the side lets saliva drain and keeps the airway open while the PN protects the head and times the seizure. Nothing goes in the mouth, the limbs are never held, and a client already in bed is kept there with the rails padded."
+    "correct": [
+      0
+    ],
+    "explanation": "A seizure lasting more than 5 minutes is status epilepticus, a medical emergency that needs IV medication, so the PN calls for the RN and emergency help while protecting the airway. Nothing is given by mouth during a seizure, and waiting risks brain injury."
   },
   {
     "domain": "pnSafety",
@@ -266,7 +312,9 @@
       "\"I use water-based lotion on my face.\"",
       "\"I keep the tubing away from the space heater.\""
     ],
-    "correct": [1],
+    "correct": [
+      1
+    ],
     "explanation": "Oxygen feeds a fire, so the tank and tubing are kept at least 10 feet from open flames such as a gas stove and well away from heaters. No-smoking signs, water-based lotion instead of petroleum products and distance from heaters are correct practices."
   },
   {
@@ -282,7 +330,9 @@
       "Use a mechanical lift with the sling",
       "Keep the feet together and twist at the waist"
     ],
-    "correct": [2],
+    "correct": [
+      2
+    ],
     "explanation": "A resident who cannot bear weight is moved with a mechanical lift, which protects both the resident's shoulders and the staff's backs. Lifting under the arms can injure the resident's shoulders, and holding a staff member's neck or twisting at the waist injures the staff."
   },
   {
@@ -298,7 +348,9 @@
       "Have the AP label the container after the next task",
       "Label the container in the resident's presence"
     ],
-    "correct": [3],
+    "correct": [
+      3
+    ],
     "explanation": "The specimen is labeled at the bedside, in the presence of the resident, with two identifiers such as name and date of birth, so it cannot be mixed up with another specimen. Room numbers change and a label added later is the way specimens get mislabeled."
   },
   {
@@ -342,7 +394,13 @@
         ]
       }
     ],
-    "correct": [0, 1, 5, 9, 10],
+    "correct": [
+      0,
+      1,
+      5,
+      9,
+      10
+    ],
     "explanation": "Two people in one house with headache, nausea and dizziness right after a furnace starts is carbon monoxide poisoning until proven otherwise, so everyone leaves the house and emergency services are called. A standard pulse oximeter reads carbon monoxide bound to hemoglobin as if it were oxygen, so the 97% is false reassurance and the PN watches consciousness and breathing instead."
   },
   {
@@ -360,7 +418,12 @@
       "Clean shared equipment between residents",
       "Wear the same gown from one resident's room to the next"
     ],
-    "correct": [0, 1, 2, 4],
+    "correct": [
+      0,
+      1,
+      2,
+      4
+    ],
     "explanation": "Hand hygiene, keeping ill staff home, room restriction for residents with influenza and cleaning shared equipment break the chain of transmission. Gathering residents together spreads droplets, and a gown worn from room to room carries organisms between residents."
   },
   {
@@ -378,7 +441,12 @@
       "A chair placed beside the bed",
       "A frayed cord on the bedside lamp"
     ],
-    "correct": [0, 1, 2, 5],
+    "correct": [
+      0,
+      1,
+      2,
+      5
+    ],
     "explanation": "Tubing across a walkway and a wet floor cause falls, and a personal space heater and a frayed cord cause fires and shocks, especially near oxygen. A low bed and a chair beside it are part of a safe room."
   },
   {
@@ -396,7 +464,12 @@
       "Place the client on airborne precautions",
       "Give the client a live-virus vaccine"
     ],
-    "correct": [0, 1, 2, 3],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
     "explanation": "A client with few neutrophils is protected from organisms carried in on hands, in soil and water, through the rectal mucosa and by ill visitors. Airborne precautions protect others from the client, which is not the problem here, and live vaccines can cause infection in an immunocompromised client."
   },
   {
@@ -414,8 +487,19 @@
       "Client with pertussis",
       "Client with scabies"
     ],
-    "columns": ["Airborne", "Droplet", "Contact"],
-    "correct": [0, 1, 2, 0, 1, 2],
+    "columns": [
+      "Airborne",
+      "Droplet",
+      "Contact"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      0,
+      1,
+      2
+    ],
     "explanation": "Tuberculosis and measles travel on tiny particles that stay in the air, so they need airborne precautions with an N95 and a negative-pressure room. Influenza and pertussis spread by large droplets within about 6 feet, and C. difficile and scabies spread by contact with the client or the environment."
   },
   {
@@ -433,7 +517,12 @@
       "Use powdered latex gloves because the powder is safe",
       "Give an antihistamine before every procedure"
     ],
-    "correct": [0, 1, 2, 3],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
     "explanation": "Every product that touches the client is checked for latex, and the allergy is marked on the band and the record so all staff know. Powder from latex gloves carries latex protein into the air and is worse, and an antihistamine does not prevent a serious reaction."
   },
   {
@@ -449,7 +538,9 @@
       "Call the fire department",
       "Fill out an incident report"
     ],
-    "correct": [0],
+    "correct": [
+      0
+    ],
     "explanation": "The flame is the immediate danger in an oxygen-rich area, so it is extinguished first, then the oxygen is turned off and the resident is moved from the hazard. The incident report and reinforcement of the no-smoking rule come afterward."
   },
   {
@@ -465,7 +556,9 @@
       "Tell the visitor to see a provider at home",
       "Take the visitor to the emergency department by wheelchair"
     ],
-    "correct": [1],
+    "correct": [
+      1
+    ],
     "explanation": "An injured person is not moved until checked, so the PN keeps the visitor still, gets help and later completes an incident report per facility policy. Standing on an injured knee or sending the visitor home can make the injury worse."
   }
 ]

@@ -592,14 +592,14 @@
     "state": "ALL",
     "questionId": "CCMA-COM-015",
     "category": "ccmaCommunication",
-    "question": "When answering an incoming call to the medical office, the medical assistant should first:",
-    "optionA": "Ask for the caller's date of birth",
-    "optionB": "Identify the office and give his or her name",
-    "optionC": "Place the caller on hold right away",
-    "optionD": "Ask which insurance plan the caller has",
+    "question": "Before placing a caller on hold, the medical assistant should:",
+    "optionA": "Press hold without saying anything",
+    "optionB": "Ask permission and wait for the caller's answer",
+    "optionC": "Leave the caller holding with no check-back",
+    "optionD": "Hang up and plan to call back later",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "A professional greeting identifies the practice and the staff member so callers know they have reached the right office. Putting a caller on hold before learning whether the call is an emergency is unsafe, and identifiers are collected after the greeting."
+    "explanation": "Asking whether the caller can hold, and waiting for the answer, lets an emergency caller speak up before being put on hold. Leaving callers on hold without checking back, or hanging up, is unprofessional and can delay urgent care."
   },
   {
     "type": "CCMA",
@@ -1419,13 +1419,13 @@
     "questionId": "CCMA-GPC-030",
     "category": "ccmaGeneralCare",
     "question": "A conscious adult in the waiting room clutches her throat and cannot speak, cough, or breathe. The medical assistant should:",
-    "optionA": "Give repeated abdominal thrusts",
+    "optionA": "Alternate 5 back blows with 5 abdominal thrusts",
     "optionB": "Perform blind finger sweeps of the mouth",
     "optionC": "Give her water to wash the object down",
     "optionD": "Wait to see if she can cough it up",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Severe airway obstruction in a conscious adult is treated with abdominal thrusts; infants receive back blows and chest thrusts instead. Blind finger sweeps can push the object deeper."
+    "explanation": "Under the 2025 AHA guidelines, severe airway obstruction in a conscious adult is treated by alternating 5 back blows and 5 abdominal thrusts until the object comes out or the person becomes unresponsive, when CPR begins. Infants get back blows and chest thrusts, never abdominal thrusts, and blind finger sweeps can push the object deeper."
   },
   {
     "type": "CCMA",
@@ -1936,14 +1936,14 @@
     "state": "ALL",
     "questionId": "CCMA-LAB-011",
     "category": "ccmaLabProcedures",
-    "question": "Which fasting plasma glucose result falls within the prediabetes range?",
-    "optionA": "88 mg/dL",
-    "optionB": "112 mg/dL",
-    "optionC": "132 mg/dL",
-    "optionD": "65 mg/dL",
+    "question": "Which hemoglobin A1c result falls within the prediabetes range?",
+    "optionA": "5.2%",
+    "optionB": "5.9%",
+    "optionC": "6.8%",
+    "optionD": "4.6%",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Fasting glucose of 70 to 99 mg/dL is normal, 100 to 125 is prediabetes, and 126 or higher suggests diabetes. The medical assistant reports results to the provider and does not interpret them for the patient."
+    "explanation": "An A1c below 5.7% is normal, 5.7% to 6.4% is prediabetes, and 6.5% or higher suggests diabetes. The medical assistant reports results to the provider and does not interpret them for the patient."
   },
   {
     "type": "CCMA",
@@ -2175,13 +2175,13 @@
     "questionId": "CCMA-PCC-008",
     "category": "ccmaCareCoordination",
     "question": "Written education materials for the general patient population should ideally be written at which reading level?",
-    "optionA": "Eighth to ninth grade",
+    "optionA": "Tenth to eleventh grade",
     "optionB": "Twelfth grade",
     "optionC": "Fifth to sixth grade",
     "optionD": "College level",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Many adults have limited health literacy, so materials in plain language at a 5th to 6th grade level are recommended. A high school or eighth grade level, although common in printed materials, is too difficult for many patients."
+    "explanation": "Many adults have limited health literacy, so plain-language materials at about a 5th to 6th grade level are recommended. High school and college reading levels are too difficult for many patients."
   },
   {
     "type": "CCMA",
@@ -2216,28 +2216,28 @@
     "state": "ALL",
     "questionId": "CCMA-PCC-011",
     "category": "ccmaCareCoordination",
-    "question": "A Spanish-speaking patient arrives with her 12-year-old son, who offers to interpret during the visit. The medical assistant should:",
-    "optionA": "Let the son interpret to save time",
-    "optionB": "Speak slowly and loudly in English",
-    "optionC": "Ask a bilingual patient in the waiting room",
-    "optionD": "Arrange a professional medical interpreter",
+    "question": "A Deaf patient who uses American Sign Language arrives for an appointment. Under the ADA, the practice should:",
+    "optionA": "Ask a family member to sign for the visit",
+    "optionB": "Pass written notes for the whole visit",
+    "optionC": "Charge the patient for the interpreter",
+    "optionD": "Provide a qualified sign language interpreter at no cost",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Professional medical interpreters ensure accurate terminology and protect privacy; children and family members may omit or alter sensitive information. Asking another patient to interpret is also a HIPAA violation."
+    "explanation": "The ADA requires effective communication, so a qualified interpreter is provided at no charge to the patient when needed. Relying on family members risks errors and privacy problems, and long or complex visits are not effective by written notes alone."
   },
   {
     "type": "CCMA",
     "state": "ALL",
     "questionId": "CCMA-PCC-012",
     "category": "ccmaCareCoordination",
-    "question": "A patient with moderate hearing loss who relies on lip reading needs follow-up instructions. The medical assistant should:",
-    "optionA": "Shout the instructions from across the room",
-    "optionB": "Face the patient and speak clearly",
-    "optionC": "Talk while typing notes at the computer",
-    "optionD": "Give the instructions only to the patient's spouse",
+    "question": "A patient with low vision needs written aftercare instructions. The medical assistant should:",
+    "optionA": "Hand over the standard small-print sheet",
+    "optionB": "Provide large-print materials and review the key points aloud",
+    "optionC": "Give the instructions only to a family member",
+    "optionD": "Tell the patient to look them up online later",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Facing the patient in good light lets them read lips, and clear normal speech is easier to understand than shouting, which distorts words. Speaking only to the spouse ignores the patient's right to receive information directly."
+    "explanation": "Large print plus a spoken review makes sure the patient can read and understand the instructions. Giving them only to a relative bypasses the patient's right to receive information directly."
   },
   {
     "type": "CCMA",
@@ -2790,13 +2790,13 @@
     "state": "ALL",
     "questionId": "CCMA-VIT-020",
     "category": "ccmaIntakeVitals",
-    "question": "A medical assistant realizes that a weight entered in the EHR yesterday was recorded incorrectly. The proper way to correct it is to:",
-    "optionA": "Delete the entry and type the new weight",
-    "optionB": "Ask IT to erase the original record",
-    "optionC": "Add a dated amendment with the correct value",
-    "optionD": "Leave it because EHR entries cannot be changed",
+    "question": "A medical assistant made an error in a handwritten entry on a paper chart. The proper way to correct it is to:",
+    "optionA": "Black out the error with a marker",
+    "optionB": "Cover it with correction fluid and rewrite it",
+    "optionC": "Draw one line through it, then initial and date the change",
+    "optionD": "Tear out the page and rewrite the note",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "The medical record is a legal document, so errors are corrected with an amendment or addendum that keeps the original visible, much like one line through a paper error with initials and date. Deleting or erasing the original looks like tampering."
+    "explanation": "The chart is a legal document, so a paper error is struck through with a single line that leaves it readable, then initialed and dated with the correct entry. Blacking out, correction fluid or removing pages hides the original and looks like tampering."
   }
 ]

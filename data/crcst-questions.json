@@ -620,28 +620,28 @@
     "state": "ALL",
     "questionId": "SPD-DEP-001",
     "category": "departmentalConsiderations",
-    "question": "According to ANSI/AAMI ST79, what temperature range should be maintained in the decontamination area?",
-    "optionA": "68 to 73 F (20 to 23 C)",
-    "optionB": "60 to 65 F (16 to 18 C)",
-    "optionC": "72 to 78 F (22 to 26 C)",
-    "optionD": "55 to 60 F (13 to 16 C)",
+    "question": "Why is the decontamination area kept cooler than the other work areas of the department?",
+    "optionA": "Cool air speeds up enzymatic cleaning",
+    "optionB": "Staff wear heavy PPE, and cooler air keeps them comfortable",
+    "optionC": "Instruments must be cold before they enter the washer",
+    "optionD": "Cool air keeps the room at positive pressure",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "ST79 recommends 60 to 65 F (16 to 18 C) in decontamination because staff wear full PPE and cooler air limits microbial growth. Other work areas such as prep and packaging are kept at 68 to 73 F (20 to 23 C)."
+    "explanation": "Decontamination staff wear fluid-resistant gowns, gloves and face protection, so the room is kept cooler than prep and packaging to prevent heat stress. Air pressure there is negative to surrounding areas, and cleaning chemistry depends on water temperature set by the detergent IFU, not on room temperature."
   },
   {
     "type": "CRCST",
     "state": "ALL",
     "questionId": "SPD-DEP-002",
     "category": "departmentalConsiderations",
-    "question": "A technician notices the decontamination area thermometer reads 70 F at the start of the shift. What should the technician do first?",
+    "question": "A technician notices the decontamination area thermometer reads 78 F (26 C) at the start of the shift. What should the technician do first?",
     "optionA": "Open the door to the clean side to cool the room",
     "optionB": "Ignore it because PPE keeps staff comfortable",
     "optionC": "Turn off the ultrasonic cleaner to reduce heat",
     "optionD": "Notify the supervisor and document the reading",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Out-of-range readings must be reported to the supervisor and documented so facilities can correct the HVAC problem. Opening doors would compromise air pressure relationships between areas."
+    "explanation": "78 F is above the recommended range for decontamination, so the reading is reported to the supervisor and documented so facilities can correct the HVAC problem. Opening doors would compromise air pressure relationships between areas."
   },
   {
     "type": "CRCST",
@@ -858,14 +858,14 @@
     "state": "ALL",
     "questionId": "SPD-DEP-018",
     "category": "departmentalConsiderations",
-    "question": "A technician is stuck by a contaminated needle while sorting instruments. Under OSHA's Bloodborne Pathogens standard, what should happen first?",
-    "optionA": "Wash the wound and report the exposure immediately",
-    "optionB": "Finish sorting the tray before leaving the work area",
-    "optionC": "Wait until the end of shift to tell a supervisor",
-    "optionD": "Apply a bandage and continue working",
+    "question": "Under OSHA's Bloodborne Pathogens standard, how often must the employer review and update the written exposure control plan?",
+    "optionA": "At least once a year",
+    "optionB": "Every five years",
+    "optionC": "Only after an exposure incident",
+    "optionD": "Never, once it has been written",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "The standard requires an exposure control plan with immediate first aid, prompt reporting, and post-exposure evaluation and follow-up. Delaying can reduce the effectiveness of prophylaxis."
+    "explanation": "The standard requires the exposure control plan to be reviewed and updated at least annually, and whenever tasks or procedures change, including a review of safer sharps devices. Waiting for an incident or a five-year cycle leaves outdated protections in place."
   },
   {
     "type": "CRCST",
@@ -1404,14 +1404,14 @@
     "state": "ALL",
     "questionId": "SPD-PRP-005",
     "category": "preparationPackaging",
-    "question": "What temperature range does ANSI/AAMI ST79 recommend for the preparation and packaging area?",
-    "optionA": "60 to 65 degrees Fahrenheit",
-    "optionB": "68 to 73 degrees Fahrenheit",
-    "optionC": "75 to 80 degrees Fahrenheit",
-    "optionD": "80 to 85 degrees Fahrenheit",
+    "question": "Compared with the decontamination area, how should air pressure be set in the preparation and packaging area?",
+    "optionA": "Negative, so air flows into the clean area",
+    "optionB": "Positive, so air flows toward decontamination",
+    "optionC": "Equal, so no air moves between the areas",
+    "optionD": "It does not matter if doors stay closed",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "The preparation and packaging area should be kept at 68 to 73 degrees Fahrenheit (20 to 23 degrees Celsius). Controlled temperature and humidity protect packaging materials and keep technicians comfortable in required attire."
+    "explanation": "Clean areas are kept at positive pressure and decontamination at negative pressure, so air moves from clean to dirty and contaminated aerosols stay out of prep and packaging. Equal or reversed pressure would let contamination drift into the clean side."
   },
   {
     "type": "CRCST",
@@ -1922,14 +1922,14 @@
     "state": "ALL",
     "questionId": "SPD-STO-002",
     "category": "sterileStorageInventory",
-    "question": "A technician reads a wall-mounted hygrometer in sterile storage that shows 72 percent relative humidity. Why is this reading a concern?",
-    "optionA": "Low humidity causes static buildup that attracts dust",
-    "optionB": "Readings above 40 percent fade package labels",
-    "optionC": "Humidity above 60 percent can compromise packaging",
-    "optionD": "High humidity makes metal shelving rust quickly",
+    "question": "Who should be allowed into the sterile storage area?",
+    "optionA": "Any hospital employee who needs supplies",
+    "optionB": "Vendors delivering items, without escort",
+    "optionC": "Only authorized staff in proper attire, with traffic kept low",
+    "optionD": "Visitors accompanied by a patient",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Relative humidity in sterile storage should not exceed 60 percent. Excess moisture can wick through wraps and pouches, causing strike-through that compromises sterility, so the reading must be reported and corrected."
+    "explanation": "Limiting sterile storage to authorized, properly attired staff and keeping traffic low reduces dust, handling and the chance of damaging packages. Open access by employees, vendors or visitors raises the risk of contamination."
   },
   {
     "type": "CRCST",
@@ -2132,14 +2132,14 @@
     "state": "ALL",
     "questionId": "SPD-STO-017",
     "category": "sterileStorageInventory",
-    "question": "A vendor delivers a loaner orthopedic tray sterilized at another hospital one hour before the scheduled case. What is the correct action?",
-    "optionA": "Decontaminate and sterilize it in-house before use",
-    "optionB": "Use it because the other hospital sterilized it",
-    "optionC": "Flash sterilize it unwrapped in the operating room",
-    "optionD": "Spray the outside with disinfectant and send it",
+    "question": "What should arrive with a vendor loaner set so it can be processed correctly?",
+    "optionA": "The manufacturer's processing IFU and an itemized count sheet",
+    "optionB": "Only the vendor's delivery receipt",
+    "optionC": "A sterility guarantee from the last hospital",
+    "optionD": "Nothing, since central service staff know every set",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Loaner instruments must arrive with enough lead time to be inspected, decontaminated, and sterilized per the manufacturer's IFU at the receiving facility, because processing done elsewhere cannot be verified. Immediate-use steam sterilization is not a substitute for poor planning."
+    "explanation": "Loaner sets need the manufacturer's written processing instructions and an itemized inventory so staff can clean, inspect, assemble and sterilize them correctly and confirm nothing is missing. A receipt or another facility's sterility claim cannot be verified and does not tell staff how to process the set."
   },
   {
     "type": "CRCST",
@@ -2209,7 +2209,7 @@
     "optionD": "Monitoring is required only for biomedical service staff and supervisors",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "OSHA requires EO exposure to be measured against an 8-hour permissible exposure limit of 1 ppm and a 5 ppm short-term limit. Personnel monitoring badges document that operators stay below these limits."
+    "explanation": "OSHA requires EO exposure to be measured against an 8-hour permissible exposure limit of 1 ppm and a 5 ppm excursion limit averaged over 15 minutes. Personnel monitoring badges document that operators stay below these limits."
   },
   {
     "type": "CRCST",

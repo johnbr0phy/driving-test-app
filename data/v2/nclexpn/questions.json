@@ -291,7 +291,7 @@
       "correct": [
         1
       ],
-      "explanation": "A restraint is tied to a part of the bed frame that moves with the client, using a knot that staff can release in one pull. A side rail can trap the limb when it is lowered, the restraint is released and the skin checked at regular intervals per policy, and orders are renewed at least every 24 hours."
+      "explanation": "A restraint is tied to a part of the bed frame that moves with the client, using a knot that staff can release in one pull. A side rail can trap the limb when it is lowered, the restraint is released and the skin checked at regular intervals per policy, and the order is renewed as facility policy and regulations require."
     },
     {
       "id": "NCLEXPN-T1-014",
@@ -1838,22 +1838,21 @@
       "difficulty": 1,
       "format": "multi",
       "skill": "Medication safety",
-      "stem": "The PN is preparing to give a client's oral medications. Which actions follow the rights of medication administration? Select all that apply.",
+      "stem": "Which actions by the PN follow safe medication practice? Select all that apply.",
       "options": [
-        "Check the label against the medication record three times",
-        "Use two identifiers before giving the dose",
+        "Clarify an unclear order with the RN or provider before giving it",
+        "Give a scheduled dose within the facility's time window",
+        "Document the dose only after the client takes it",
         "Give a medication that a coworker prepared",
-        "Document the dose before it is given",
-        "Check the allergy band before a new antibiotic",
-        "Stay with the client until the medications are swallowed"
+        "Leave the cup at the bedside for later",
+        "Crush an extended-release tablet to ease swallowing"
       ],
       "correct": [
         0,
         1,
-        4,
-        5
+        2
       ],
-      "explanation": "Three label checks, two identifiers, an allergy check and staying until the dose is taken are the safeguards of safe administration. A nurse gives only medications they prepared and documents only after the dose is taken."
+      "explanation": "An unclear order is clarified before giving it, scheduled doses are given within the allowed window, and doses are documented only after they are taken. A nurse gives only what they prepared, never leaves medications unattended, and does not crush extended-release forms, which can release the whole dose at once."
     },
     {
       "id": "NCLEXPN-T1-081",
@@ -2531,18 +2530,18 @@
       "domain": "pnSafety",
       "difficulty": 2,
       "format": "single",
-      "skill": "Seizure safety",
-      "stem": "A client in bed begins having a tonic-clonic seizure. Which action should the PN take?",
+      "skill": "Status epilepticus",
+      "stem": "A client's tonic-clonic seizure has continued for 6 minutes. What should the PN do?",
       "options": [
-        "Turn the client onto the side",
-        "Hold the client's arms still",
+        "Call for the RN and emergency help now",
+        "Wait for the seizure to stop on its own",
         "Place a padded tongue blade in the mouth",
-        "Move the client to the floor"
+        "Give the client's oral anticonvulsant"
       ],
       "correct": [
         0
       ],
-      "explanation": "Turning the client to the side lets saliva drain and keeps the airway open while the PN protects the head and times the seizure. Nothing goes in the mouth, the limbs are never held, and a client already in bed is kept there with the rails padded."
+      "explanation": "A seizure lasting more than 5 minutes is status epilepticus, a medical emergency that needs IV medication, so the PN calls for the RN and emergency help while protecting the airway. Nothing is given by mouth during a seizure, and waiting risks brain injury."
     },
     {
       "id": "NCLEXPN-T2-028",

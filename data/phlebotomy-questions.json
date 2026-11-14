@@ -1978,14 +1978,14 @@
     "state": "ALL",
     "questionId": "PHL-SAF-018",
     "category": "safetyCompliance",
-    "question": "An alert adult inpatient refuses a blood draw after the procedure is explained. What should the phlebotomist do?",
-    "optionA": "Ask a coworker to hold the arm still",
-    "optionB": "Respect the refusal, notify the nurse, and document it",
-    "optionC": "Draw anyway, since a provider's order overrides the refusal",
-    "optionD": "Leave and return later without telling anyone",
+    "question": "An inpatient refuses a scheduled blood draw. What should the phlebotomist's documentation include?",
+    "optionA": "Only the phlebotomist's opinion of the patient",
+    "optionB": "The refusal, the time, any reason given, and that the nurse was notified",
+    "optionC": "Nothing, since no specimen was collected",
+    "optionD": "A note written on the specimen label",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "A competent adult may refuse, and drawing anyway could be battery. The nurse must be told so the provider can respond, and the refusal must be documented."
+    "explanation": "A refusal is recorded as a fact: what the patient said, when, any reason given, and that the nurse was told so the provider can follow up. Leaving it undocumented, or adding personal opinions, leaves no reliable record of why the test was not done."
   },
   {
     "type": "PHLEB",
@@ -2454,14 +2454,14 @@
     "state": "ALL",
     "questionId": "PHL-SAF-052",
     "category": "safetyCompliance",
-    "question": "Before a routine draw, a patient states she has a latex allergy. The phlebotomist should:",
-    "optionA": "Use latex gloves but skip the tourniquet",
-    "optionB": "Proceed normally if past reactions were mild",
-    "optionC": "Clean the site twice, then use latex gloves",
-    "optionD": "Use latex-free gloves, tourniquet, and bandage",
+    "question": "After a draw, a patient with a latex allergy develops hives and starts wheezing. What should the phlebotomist do first?",
+    "optionA": "Apply a fresh bandage and send the patient home",
+    "optionB": "Give the patient water and wait",
+    "optionC": "Finish labeling the tubes, then report it",
+    "optionD": "Remove the latex source and call for emergency help",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Every item touching the patient, including gloves, tourniquet and bandage, must be latex-free. Even a mild past reaction can become severe on the next exposure."
+    "explanation": "Hives with wheezing after latex exposure can be the start of anaphylaxis, so the source is removed and emergency help is called at once. Waiting or finishing paperwork first delays treatment of a reaction that can close the airway."
   },
   {
     "type": "PHLEB",
@@ -2573,21 +2573,21 @@
     "optionD": "About one third",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Guidelines limit a single draw to roughly 1 to 5 percent of blood volume and about 10 percent over a month, because infants have little blood and can develop iatrogenic anemia. Each draw is recorded on a volume log."
+    "explanation": "Guidelines limit draws to roughly 1 to 5 percent of blood volume within 24 hours, and generally no more than about 10 percent over 8 weeks, because infants have little blood and can develop iatrogenic anemia. Each draw is recorded on a volume log."
   },
   {
     "type": "PHLEB",
     "state": "ALL",
     "questionId": "PHL-SPEC-009",
     "category": "specialCollections",
-    "question": "A phlebotomist is preparing to draw blood from an anxious 6-year-old with a parent present. Which approach is best?",
-    "optionA": "Promise the child that it will not hurt",
-    "optionB": "Hide all of the equipment and say nothing at all",
-    "optionC": "Explain honestly that it may hurt briefly",
-    "optionD": "Warn that a shot will follow if they cry",
+    "question": "Which position is safest for drawing blood from a frightened toddler?",
+    "optionA": "Standing beside the drawing chair",
+    "optionB": "Lying alone on an exam table without support",
+    "optionC": "Seated upright on a parent's lap in a hugging hold, arm supported",
+    "optionD": "Pinned down by two people holding the legs",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Honest, simple explanations build trust, and a parent or helper can comfort and steady the child. Promising no pain destroys trust when the stick hurts, making later draws harder."
+    "explanation": "A parent's hugging hold keeps the child calm and still while the arm is extended and supported, which lowers the risk of injury. A standing or unsupported child can move suddenly, and forceful pinning frightens the child more than needed."
   },
   {
     "type": "PHLEB",
@@ -2776,14 +2776,14 @@
     "state": "ALL",
     "questionId": "PHL-SPEC-023",
     "category": "specialCollections",
-    "question": "A trough level is ordered for a patient receiving IV vancomycin every 12 hours. When should the trough be drawn?",
-    "optionA": "Just before the next scheduled dose",
-    "optionB": "Immediately after the dose finishes infusing",
-    "optionC": "30 to 60 minutes after the dose ends",
+    "question": "A peak level is ordered for a patient receiving an IV antibiotic every 12 hours. When is the peak usually drawn?",
+    "optionA": "30 to 60 minutes after the infusion ends",
+    "optionB": "Just before the next scheduled dose",
+    "optionC": "Midway through the infusion",
     "optionD": "At any time during the dosing interval",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "The trough is the lowest drug level, so it is drawn just before the next dose. A draw 30 to 60 minutes after an IV dose measures the peak, and the exact collection time is documented for either."
+    "explanation": "The peak is the highest drug level, reached shortly after an IV dose finishes, so it is usually drawn 30 to 60 minutes after the infusion ends unless the order gives another time. A draw just before the next dose measures the trough, and the exact collection time is documented for either."
   },
   {
     "type": "PHLEB",

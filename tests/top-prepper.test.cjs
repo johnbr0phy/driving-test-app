@@ -76,5 +76,11 @@ test('both dashboards still open the paywall for ?unlock=1, and the campaign is 
   assert.ok(vercel.crons.some((c) => c.path === '/api/cron/top-prepper'));
   const route = read('app/api/cron/top-prepper/route.ts');
   assert.match(route, /TOP_PREPPER_CAMPAIGN === "send"/);
+  // Once ever per account: skipped if the campaign key or the topPrepper stamp
+  // (sent or held out) is already on the account, and re-checked on the fresh
+  // doc right before sending.
+  assert.match(route, /emailsSent\.includes\(EMAIL_KEY\)/);
+  assert.match(route, /if \(u\.raw\.topPrepper\) return false/);
+  assert.match(route, /if \(fresh\.topPrepper\) return false/);
   assert.ok(read('firestore.email-release.rules').includes("'topPrepper'"));
 });

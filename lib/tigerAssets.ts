@@ -44,6 +44,8 @@ export const TIGER_EXAM_IDS = [
   "nhie", "nptepta",
   // Reviewed next-20 batch C dietitian and human resources role mascots.
   "rdexam", "phr",
+  // Italian language and citizenship study: complete eight-expression set.
+  "itlanguage",
   // Reviewed EU citizenship and practitioner mascots: five complete sets for six exams.
   "semedb", "dkindfoed", "grcitizen", "rorezid", "deheilpr",
 ] as const;
@@ -93,8 +95,8 @@ const BORROWED_SETS: Record<string, string> = {
   // Denmark (Nov 2026): motorcycle the motorcycle tiger, hunting the hunter tiger.
   // Citizenship and residence share the reviewed Danish flag and civic-study set.
   dkmoto: "moto", dkjagt: "hunter", dkmedborger: "dkindfoed",
-  // Italy (Nov 2026): patente the car tiger, CILS and CELI the civics tiger.
-  itpatente: "driving", itcils: "civics", itceli: "civics",
+  // Italy: CILS and CELI share Italian language-study art, never US civics.
+  itpatente: "driving", itcils: "itlanguage", itceli: "itlanguage",
   // France (Nov 2026): code de la route the car tiger.
   frcode: "driving",
   // AP Italian (Nov 2026): the AP English Language tiger.

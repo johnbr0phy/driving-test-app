@@ -19,6 +19,9 @@ const BATCH_C_MASCOT_IDS = new Set(["rdexam", "phr"]);
 // Five EU sets replace mismatched national flags and nursing artwork for six exams.
 const EU_MASCOT_IDS = new Set(["semedb", "dkindfoed", "dkmedborger", "grcitizen", "rorezid", "deheilpr"]);
 
+// Italian language artwork replaces the incorrect US civics flag.
+const ITALIAN_MASCOT_IDS = new Set(["itcils", "itceli"]);
+
 // Dedicated MCAT, LSAT and IELTS artwork replaces the borrowed mascots.
 const ADMISSIONS_MASCOT_IDS = new Set(["mcat", "lsat", "ieltsread"]);
 
@@ -32,7 +35,7 @@ const HUB_IDS = new Set(["home", "tests", "teach", "uk", "ca", "au", "in", "ie",
 
 export function shareImageUrl(id: string, language = "en"): string {
   const query = new URLSearchParams({
-    v: ADMISSIONS_MASCOT_IDS.has(id) ? "admissions-mascots-1" : id === "ukgas" ? "gas-engineer-1" : EU_MASCOT_IDS.has(id) ? "eu-mascots-1" : BATCH_C_MASCOT_IDS.has(id) ? "batch-c-mascots-1" : BATCH_B_MASCOT_IDS.has(id) ? "batch-b-mascots-1" : BATCH_A_MASCOT_IDS.has(id) ? "batch-a-mascots-1" : AP_PH_MASCOT_IDS.has(id) ? "ap-ph-mascots-1" : HUB_IDS.has(id) ? "search-home-1" : SHARE_COPY_IDS.has(id) ? "share-copy-1" : REMAINING_MASCOT_IDS.has(id) ? "remaining-mascots-1" : ROLE_MASCOT_IDS.has(id) ? "role-mascots-1" : NEW_MASCOT_IDS.has(id) ? "citizenship-pmp-1" : SHARE_IMAGE_VERSION,
+    v: ITALIAN_MASCOT_IDS.has(id) ? "italian-mascots-1" : ADMISSIONS_MASCOT_IDS.has(id) ? "admissions-mascots-1" : id === "ukgas" ? "gas-engineer-1" : EU_MASCOT_IDS.has(id) ? "eu-mascots-1" : BATCH_C_MASCOT_IDS.has(id) ? "batch-c-mascots-1" : BATCH_B_MASCOT_IDS.has(id) ? "batch-b-mascots-1" : BATCH_A_MASCOT_IDS.has(id) ? "batch-a-mascots-1" : AP_PH_MASCOT_IDS.has(id) ? "ap-ph-mascots-1" : HUB_IDS.has(id) ? "search-home-1" : SHARE_COPY_IDS.has(id) ? "share-copy-1" : REMAINING_MASCOT_IDS.has(id) ? "remaining-mascots-1" : ROLE_MASCOT_IDS.has(id) ? "role-mascots-1" : NEW_MASCOT_IDS.has(id) ? "citizenship-pmp-1" : SHARE_IMAGE_VERSION,
   });
   if (language !== "en") query.set("lang", language);
   return `/og/${encodeURIComponent(id)}?${query.toString()}`;

@@ -94,6 +94,8 @@ const BORROWED_SETS: Record<string, string> = {
   itpatente: "driving", itcils: "civics", itceli: "civics",
   // AP Italian (Nov 2026): the AP English Language tiger.
   apitalian: "aplang",
+  // IELTS Reading (Nov 2026): the AP English Language tiger.
+  ieltsread: "aplang",
   // Finland (Nov 2026): motorcycle the motorcycle tiger, truck and bus the CDL tiger, hygiene passport the UK food hygiene tiger, hunting the hunter tiger.
   fimoto: "moto", fitruck: "cdl", fihygiene: "ukfood", fihunt: "hunter",
   // Hungary (Nov 2026): motorcycle the motorcycle tiger, GKI the CDL tiger, first aid the CPR tiger, insurance the life and health insurance tiger.

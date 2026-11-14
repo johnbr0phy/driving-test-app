@@ -2212,6 +2212,23 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "GMAC's GMAT Focus Edition exam structure (as of October 2026)",
     source: { name: "GMAC (mba.com)", url: "https://www.mba.com/exams/gmat-exam/about/exam-structure" },
   },
+  ieltsread: {
+    answer:
+      "IELTS Academic Reading lasts 60 minutes and has 40 questions on three passages totalling 2,150 to 2,750 words, taken from books, journals, magazines, newspapers and online sources. Each correct answer earns one mark, wrong answers lose nothing, and the raw score out of 40 becomes a band from 1 to 9 in whole or half bands. On computer, answers are typed on screen and there is no extra transfer time. General Training Reading has the same length and timing but uses everyday and workplace texts and needs more correct answers for the same band.",
+    rows: [
+      { label: "Questions", value: "40, one mark each, no penalty for wrong answers" },
+      { label: "Time", value: "60 minutes, no extra transfer time" },
+      { label: "Passages", value: "3, 2,150 to 2,750 words in all (Academic)" },
+      { label: "Score", value: "Band 1 to 9; about 23 correct for 6, 30 for 7 (Academic)" },
+      { label: "Question types", value: "11, from True/False/Not Given to short answers" },
+      { label: "Delivery", value: "On computer (paper IELTS ended from mid-2026)" },
+      { label: "Run by", value: "British Council, IDP IELTS and Cambridge" },
+    ],
+    basedOn: "the IELTS.org Academic Reading format page and IDP's band score table (as of November 2026)",
+    source: { name: "IELTS.org", url: "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading" },
+    tigertest:
+      "Tigertest has two full Academic Reading tests and seven drills by question type, with a band score estimate. Only Reading is covered; Listening, Writing and Speaking are not.",
+  },
   netplus: {
     answer:
       "The CompTIA Network+ exam (N10-009) has a maximum of 90 questions in 90 minutes, multiple choice and performance-based, and you need 720 on a 100 to 900 scale to pass. It covers Networking Concepts 23%, Network Implementation 20%, Network Operations 19%, Network Security 14% and Network Troubleshooting 24%. N10-009 launched in June 2024; CompTIA estimates it will retire in 2027.",

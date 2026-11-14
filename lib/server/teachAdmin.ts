@@ -258,7 +258,8 @@ export async function buildTeachAdmin(db: Firestore, internalUids: Set<string>):
     funnel: [
       tracked("landing_view", "Saw the /teach page", "browsers shown the teacher landing"),
       tracked("new_open", "Clicked Create a class", "clicked Create on /teach, or opened /teach/new"),
-      tracked("new_form", "Reached the class form", "signed in and saw the form"),
+      tracked("new_form", "Reached the class form", "saw the form (signed in only, before Nov 14 2026)"),
+      tracked("new_submit", "Filled it in and pressed Create", "signed in or not, since Nov 14 2026"),
       { key: "class_created", label: "Made a class", detail: "classes created", total: classes.length, last30: classes30, tracked: false },
       tracked("join_view", "Opened a class link", "browsers that opened a /c/ link, once per class"),
       { key: "joined", label: "Joined a class", detail: "students who typed their name", total: students, last30: joins30, tracked: false },

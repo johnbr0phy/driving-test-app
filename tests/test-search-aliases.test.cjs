@@ -36,6 +36,10 @@ const CASES = [
   ["ts si", "IN", "tgsi"],
   ["tslprb", "IN", "tgsi"],
   ["tgprb", "IN", "tgsi"],
+  ["lsat", "US", "lsat"],
+  ["lsat practice test", "US", "lsat"],
+  ["law school admission test", "US", "lsat"],
+  ["logical reasoning practice", "US", "lsat"],
 ];
 
 for (const [q, region, id] of CASES) {

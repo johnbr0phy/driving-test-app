@@ -2213,6 +2213,22 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     source: { name: "AAMC", url: "https://students-residents.aamc.org/prepare-mcat-exam/whats-mcat-exam" },
     tigertest:
       "Tigertest has two MCAT practice tests with all four sections at about half length and the real pace, a 472 to 528 score estimate and nine drills by foundational concept and CARS skill. It is free to start, with no account required.",
+  lsat: {
+    answer:
+      "The LSAT has four 35-minute multiple-choice sections: two scored Logical Reasoning sections, one scored Reading Comprehension section and one unscored variable section of either type that LSAC uses to try out new questions, with a 10-minute intermission between the second and third sections. Analytical Reasoning (logic games) was dropped in August 2024. The score runs from 120 to 180, based on the number of questions answered correctly, with no deduction for wrong answers. LSAT Argumentative Writing, a 50-minute unscored essay taken online, must be on file before a score is released. From August 2027 the unscored questions move inside the three sections, which LSAC says will test the same skills.",
+    rows: [
+      { label: "Sections", value: "4 x 35 minutes: 2 Logical Reasoning, 1 Reading Comprehension, 1 unscored" },
+      { label: "Break", value: "10-minute intermission after the second section" },
+      { label: "Score", value: "120 to 180, from the number answered correctly" },
+      { label: "Wrong answers", value: "No deduction" },
+      { label: "Writing", value: "LSAT Argumentative Writing, 50 minutes, unscored" },
+      { label: "Logic games", value: "Removed in August 2024" },
+      { label: "Given by", value: "LSAC (Law School Admission Council)" },
+    ],
+    basedOn: "LSAC's LSAT test format, specifications and scoring pages (checked November 2026)",
+    source: { name: "LSAC", url: "https://www.lsac.org/lsat/taking-lsat/test-format" },
+    tigertest:
+      "Tigertest has two full LSAT practice tests, the three scored sections at 35 minutes each with a 120 to 180 score estimate, and nine drills by question family. Start for free, no account required; the last two drills and Practice Test 2 are part of Premium. The variable section and the writing sample are not included.",
   },
   gmat: {
     answer:

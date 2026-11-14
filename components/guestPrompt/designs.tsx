@@ -1,6 +1,6 @@
 "use client";
 
-import type { ComponentType, ReactNode } from "react";
+import { useEffect, useState, type ComponentType, type ReactNode } from "react";
 import Link from "next/link";
 import { Check, Laptop, Lock, Smartphone, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -226,17 +226,32 @@ function V06(p: DesignProps) {
   );
 }
 
-// v07: the second device.
+// v07: the second device. Points at the device they are not on: a phone
+// reader is told to finish on a laptop, everyone else on their phone.
+function useOnPhone() {
+  const [onPhone, setOnPhone] = useState(false);
+  useEffect(() => {
+    const ua = navigator.userAgent;
+    setOnPhone(
+      /iPhone|iPod|Android.+Mobile|Mobile.+Firefox|Windows Phone/i.test(ua) ||
+        window.matchMedia("(pointer: coarse) and (max-width: 640px)").matches,
+    );
+  }, []);
+  return onPhone;
+}
+
 function V07(p: DesignProps) {
+  const onPhone = useOnPhone();
+  const [From, To] = onPhone ? [Smartphone, Laptop] : [Laptop, Smartphone];
   return (
     <div className={`${SOFT_CARD} text-center`}>
       <div className="flex items-center justify-center gap-3 text-brand-dark" aria-hidden="true">
-        <Laptop className="w-10 h-10" strokeWidth={1.5} />
+        <From className={From === Laptop ? "w-10 h-10" : "w-9 h-9"} strokeWidth={1.5} />
         <span className="text-2xl font-bold">→</span>
-        <Smartphone className="w-9 h-9" strokeWidth={1.5} />
+        <To className={To === Laptop ? "w-10 h-10" : "w-9 h-9"} strokeWidth={1.5} />
       </div>
       <h2 ref={p.headingRef} tabIndex={-1} className={`${HEADING} mt-3 text-xl sm:text-2xl`}>
-        Start here. Finish on your phone.
+        {onPhone ? "Start here. Finish on your laptop." : "Start here. Finish on your phone."}
       </h2>
       <p className={`${BODY} mt-2`}>
         Sign in anywhere and pick up right where you left off. Your {answersPhrase(p.n)} come with you.

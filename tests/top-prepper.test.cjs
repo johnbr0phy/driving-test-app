@@ -50,31 +50,24 @@ test('a purchase counts only inside the 7 days after the stamp', () => {
   assert.deepEqual(r, { sent: 4, sentPaid: 1, sentOpen: 1, holdout: 2, holdoutPaid: 1, holdoutOpen: 0 });
 });
 
-test('the email states the person\'s own numbers and links to the unlock on their test', () => {
+test('the email states the person\'s own numbers, links back to their test and sells nothing', () => {
   for (const id of ['dmv', 'cdl', 'cna']) {
     const v = voiceFor(id);
-    const html = topPrepperEmail(v, { answers: 1340, pct: 92, item: 'Practice Test <6> & more' });
+    const html = topPrepperEmail(v, { answers: 1340, pct: 92 });
     assert.ok(html.includes('1,340 practice questions'), id);
     assert.ok(html.includes('more than 92%'), id);
-    assert.ok(html.includes('Practice Test &lt;6&gt; &amp; more'), 'the paywall label is escaped');
     const link = [...html.matchAll(/href="([^"]+)"/g)].map((m) => new URL(m[1])).find((u) => u.searchParams.get('utm_campaign') === 'top_prepper');
     assert.equal(link.origin, 'https://www.tigertest.io');
     assert.equal(link.pathname, v.dashboardPath, id);
-    assert.equal(link.searchParams.get('unlock'), '1');
+    assert.equal(link.searchParams.get('unlock'), null, 'no paywall');
+    assert.ok(!/Premium|Unlock|subscription|\$|£/.test(html.replace(/\{\{[^}]+\}\}/g, '')), id);
     assert.ok(html.includes('{{unsubscribeToken}}'));
     assert.ok(!html.includes('—'));
   }
   assert.ok(topPrepperInbox(92).subject.includes('92%'));
-  // The price shows only when the reader's country is known.
-  const priced = topPrepperEmail(voiceFor('dmv'), { answers: 412, pct: 92, item: '', price: '£7.99' });
-  assert.ok(priced.includes('Unlock DMV Premium · £7.99'));
-  assert.ok(priced.includes('One payment of £7.99. No subscription.'));
-  const unpriced = topPrepperEmail(voiceFor('dmv'), { answers: 412, pct: 92, item: '' });
-  assert.ok(unpriced.includes('Unlock DMV Premium</a>'));
-  assert.ok(unpriced.includes("Pay once and it's yours. No subscription."));
 });
 
-test('both dashboards open the paywall for ?unlock=1, and the campaign is wired', () => {
+test('both dashboards still open the paywall for ?unlock=1, and the campaign is wired', () => {
   const read = (p) => fs.readFileSync(path.join(__dirname, '..', p), 'utf8');
   for (const p of ['app/dmv/dashboard/page.tsx', 'components/exam/ExamDashboard.tsx']) {
     assert.match(read(p), /searchParams\.get\("unlock"\) !== "1"/, p);
@@ -83,5 +76,11 @@ test('both dashboards open the paywall for ?unlock=1, and the campaign is wired'
   assert.ok(vercel.crons.some((c) => c.path === '/api/cron/top-prepper'));
   const route = read('app/api/cron/top-prepper/route.ts');
   assert.match(route, /TOP_PREPPER_CAMPAIGN === "send"/);
+  // Once ever per account: skipped if the campaign key or the topPrepper stamp
+  // (sent or held out) is already on the account, and re-checked on the fresh
+  // doc right before sending.
+  assert.match(route, /emailsSent\.includes\(EMAIL_KEY\)/);
+  assert.match(route, /if \(u\.raw\.topPrepper\) return false/);
+  assert.match(route, /if \(fresh\.topPrepper\) return false/);
   assert.ok(read('firestore.email-release.rules').includes("'topPrepper'"));
 });

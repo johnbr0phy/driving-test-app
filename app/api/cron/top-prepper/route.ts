@@ -39,7 +39,7 @@ import {
   type UserDoc,
 } from "@/lib/cron-email";
 import { topPrepperEmail } from "@/lib/email-templates";
-import { topPrepperInbox, inboxLabel } from "@/lib/email-inbox";
+import { topPrepperInbox } from "@/lib/email-inbox";
 import { voiceFor } from "@/lib/email-voice";
 import { hasClassStatsAccess } from "@/lib/email-lifecycle";
 import { isInternalEmail } from "@/lib/internal";
@@ -47,7 +47,6 @@ import { purchaseExam } from "@/lib/purchaseAttribution";
 import { EXAMS_V2 } from "@/lib/v2/registry";
 import { V2_PAYWALL_PREFIX } from "@/lib/v2/premium";
 import { inTopPrepperHoldout, topPrepperPct } from "@/lib/topPrepper";
-import { formatPrice, premiumPriceFor } from "@/lib/pricing";
 
 export const maxDuration = 300;
 
@@ -71,11 +70,7 @@ function paywallExam(hit: { location: string; itemId: string }): string | null {
   return EXAMS_V2.some((e) => e.id === id) ? null : id;
 }
 
-/** Premium's price in a country, as checkout would charge it there; "" when the country is unknown. */
-const priceIn = (country: unknown): string =>
-  typeof country === "string" && /^[A-Za-z]{2}$/.test(country) ? formatPrice(premiumPriceFor(country)) : "";
-
-interface Pick { examId: string; answers: number; pct: number; item: string; price: string }
+interface Pick { examId: string; answers: number; pct: number }
 
 export async function GET(req: NextRequest) {
   if (!verifyCronSecret(req)) {
@@ -109,7 +104,7 @@ export async function GET(req: NextRequest) {
       const answers = answersOf(raw);
       const pct = topPrepperPct(population, answers);
       if (pct === null) return null;
-      return { examId, answers, pct, item: inboxLabel(hit.label, "", 60), price: priceIn(raw.paywallCountry) };
+      return { examId, answers, pct };
     };
 
     const eligible = users
@@ -128,20 +123,10 @@ export async function GET(req: NextRequest) {
 
     const treated: UserDoc[] = eligible.filter((u) => !inTopPrepperHoldout(u.uid));
 
-    // The price is the one checkout charges where they are: the country of
-    // their last paywall view, else of their signup. Unknown: no price shown.
-    const noCountry = eligible.filter((u) => !picks.get(u.uid)!.price);
-    if (noCountry.length > 0) {
-      const origins = await db.getAll(...noCountry.map((u) => db.doc(`signupOrigins/${u.uid}`)));
-      origins.forEach((snap, i) => {
-        picks.get(noCountry[i].uid)!.price = priceIn(snap.data()?.country);
-      });
-    }
-
     if (!live) {
       const sample = eligible.slice(0, 10).map((u) => {
         const k = picks.get(u.uid)!;
-        return { examId: k.examId, answers: k.answers, pct: k.pct, item: k.item, price: k.price, holdout: inTopPrepperHoldout(u.uid) };
+        return { examId: k.examId, answers: k.answers, pct: k.pct, holdout: inTopPrepperHoldout(u.uid) };
       });
       console.log(`[top-prepper] paused: ${eligible.length} eligible (${eligible.length - treated.length} holdout)`);
       return NextResponse.json({ paused: true, eligible: eligible.length, holdout: eligible.length - treated.length, sample });

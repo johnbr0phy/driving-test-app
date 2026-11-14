@@ -33,7 +33,7 @@ All question data lives in `/data/questions.json` (~2,200 questions covering 50 
 **Test generation** (`/lib/testGenerator.ts`) is deterministic — each of 4 tests gets a fixed slice of questions:
 - Test N gets universal questions `[(N-1)*40 .. N*40-1]` + state-specific `[(N-1)*10 .. N*10-1]`
 - 50 questions per test, 200 total per state
-- Answer options are shuffled per attempt (skipped for position-dependent answers like "A and B")
+- Answer options are shuffled every time a question is shown, in practice tests, training sets (first showing included, since Nov 2026: the banks are written with keys rotating A, B, C, D) and quizzes; skipped for position-dependent answers like "A and B" (`lib/shuffleOptions.ts`, pinned over every bank by `tests/shuffle-options.test.cjs`)
 
 **Training sets** mirror tests: 4 sets of 50 questions with mastery-based progression and a wrong-answer queue for spaced repetition.
 

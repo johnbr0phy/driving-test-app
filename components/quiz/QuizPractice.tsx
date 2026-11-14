@@ -95,9 +95,10 @@ export function QuizPractice({ code }: { code: string }) {
       setFireworks(true);
       return;
     }
-    // Back from the wrong queue: reshuffle so the slot cannot be memorised.
-    // Otherwise mark the bank order so a wrong pick is reported by option.
-    next = fresh.wrongQueue.includes(next.questionId) ? shuffleQuestionOptions(next) : { ...next, optionOrder: "ABCD" };
+    // Shuffle every time, so the answer can never be guessed from its slot
+    // or from the question before. optionOrder records the bank letters, so a
+    // wrong pick is still reported by option.
+    next = shuffleQuestionOptions(next);
     setCurrent(next);
     currentIdRef.current = next.questionId;
     setSelected(null);

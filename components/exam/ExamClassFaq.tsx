@@ -64,6 +64,7 @@ export const TEACHES: Record<string, string> = {
   ukcare: "Care Certificate induction training",
   // High school, military and college classes
   ged: "a GED or adult education class",
+  hiset: "a HiSET or adult education class",
   timestables: "a primary school class",
   ks2: "a Year 6 class",
   gcsemaths: "GCSE Maths",

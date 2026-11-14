@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   title,
   description: metaDescription,
   keywords:
-    "GED practice test, free GED practice test, GED test 2026, GED math practice test, GED RLA practice, GED science practice test, GED social studies practice test, high school equivalency practice test, HiSET practice test, adult education GED prep",
+    "GED practice test, free GED practice test, GED test 2026, GED math practice test, GED RLA practice, GED science practice test, GED social studies practice test, high school equivalency practice test, adult education GED prep",
   alternates: {
     canonical: `${siteUrl}/ged-practice-test`,
   },
@@ -64,7 +64,7 @@ const faqs = [
   },
   {
     q: "What if I am taking the HiSET instead?",
-    a: "The HiSET covers the same four subject areas with reading and writing as separate tests, so the same practice helps. The question styles differ a little: the HiSET is multiple choice plus an essay, while the GED also uses fill-in, dropdown and choose-two items. Tigertest is modeled on the GED.",
+    a: "The HiSET covers the same subject areas with reading and writing as separate subtests, and its questions are all multiple choice plus an essay, while the GED also uses fill-in, dropdown and choose-two items. This practice test is modeled on the GED; Tigertest has a separate free HiSET practice test at tigertest.io/hiset-practice-test, built on the HiSET outline.",
   },
   {
     q: "How do I prepare for the GED on my own?",

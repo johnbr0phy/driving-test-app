@@ -896,6 +896,20 @@
     --brand-gradient-to: 290 80% 95%;
   }
 
+  /* HiSET theme: deep leaf green (v2 exam; matches lib/v2/exams/hiset.ts theme) */
+  [data-theme="hiset"] {
+    --brand: 102 90% 28%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 102 90% 96%;
+    --brand-hover: 102 90% 24%;
+    --brand-dark: 102 90% 20%;
+    --brand-darker: 102 85% 13%;
+    --brand-muted: 102 35% 72%;
+    --brand-border: 102 40% 80%;
+    --brand-border-light: 102 40% 90%;
+    --brand-gradient-to: 90 85% 95%;
+  }
+
   /* Times Tables theme: magenta (v2 exam; matches lib/v2/exams/timestables.ts theme) */
   [data-theme="timestables"] {
     --brand: 300 60% 42%;
@@ -5679,6 +5693,16 @@
     --brand-muted: 265 45% 45%;
     --brand-dark: 265 55% 65%;
     --brand-darker: 265 50% 78%;
+  }
+
+  .dark [data-theme="hiset"] {
+    --brand-light: 102 45% 13%;
+    --brand-gradient-to: 90 40% 11%;
+    --brand-border-light: 102 35% 24%;
+    --brand-border: 102 40% 34%;
+    --brand-muted: 102 35% 45%;
+    --brand-dark: 102 90% 65%;
+    --brand-darker: 102 85% 78%;
   }
 
   .dark [data-theme="timestables"] {

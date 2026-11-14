@@ -76,6 +76,24 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     tigertest:
       "Tigertest has two full-length GED practice tests covering all four subjects, with a percent score per subject and six skill drills that teach the basics first. All of it is free with no account required; the essay is not modeled.",
   },
+  hiset: {
+    answer:
+      "The HiSET is a high school equivalency test owned and run by PSI. It has five subtests, each taken and scored on its own: Language Arts - Reading (50 multiple-choice questions in 65 minutes), Language Arts - Writing (60 multiple-choice questions and one essay in 120 minutes), Mathematics (55 questions in 90 minutes), Science (60 questions in 80 minutes) and Social Studies (60 questions in 70 minutes). Each subtest is scored 1 to 20. To pass, you need at least 8 on every subtest, at least 2 out of 6 on the essay and a total of at least 45 across all five. It can be taken on a computer or on paper, at a test center or at home with a remote proctor, and the fee includes two free retests within 12 months.",
+    rows: [
+      { label: "Subtests", value: "Reading, Writing, Mathematics, Science, Social Studies (taken separately)" },
+      { label: "Questions", value: "50, 60 plus an essay, 55, 60 and 60, all four-option multiple choice" },
+      { label: "Time", value: "65, 120, 90, 80 and 70 minutes (7 hr 5 min in English)" },
+      { label: "Scoring", value: "1 to 20 per subtest; the essay is scored 1 to 6" },
+      { label: "Passing", value: "8 or more on each subtest, 2 or more on the essay, 45 or more in total" },
+      { label: "Calculator", value: "Calculator neutral: the test center provides one on request" },
+      { label: "Delivery", value: "Computer or paper, at a test center or at home with a remote proctor" },
+      { label: "Given by", value: "PSI Services LLC" },
+    ],
+    basedOn: "PSI's HiSET Test at a Glance (TAAG) and the HiSET Test Taker Bulletin 2026",
+    source: { name: "HiSET Test at a Glance (PSI)", url: "https://hiset.org/wp-content/uploads/2025/05/taag.pdf" },
+    tigertest:
+      "Tigertest has two HiSET practice tests covering all five subtests at the real pace, each scored with an estimated 1 to 20 per subtest and an estimated total, plus 15 drills (ten open with the basics). All of it is free with no account required; the essay is not modeled.",
+  },
   sat: {
     answer:
       "The digital SAT has 98 questions in 2 hours 14 minutes: Reading and Writing (54 questions, two 32-minute modules) and Math (44 questions, two 35-minute modules). It is adaptive by module and scored 400 to 1600, with each section scored 200 to 800. There is no pass mark; colleges set their own expectations.",

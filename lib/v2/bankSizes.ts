@@ -105,4 +105,6 @@ export const BANK_SIZES: Record<string, number> = {
   tgsi: 236,
   ieltsread: 212,
   mcat: 234,
+  lsat: 203,
+  hiset: 288,
 };

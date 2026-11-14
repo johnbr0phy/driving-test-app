@@ -2231,6 +2231,7 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     source: { name: "AAMC", url: "https://students-residents.aamc.org/prepare-mcat-exam/whats-mcat-exam" },
     tigertest:
       "Tigertest has two MCAT practice tests with all four sections at about half length and the real pace, a 472 to 528 score estimate and nine drills by foundational concept and CARS skill. It is free to start, with no account required.",
+  },
   lsat: {
     answer:
       "The LSAT has four 35-minute multiple-choice sections: two scored Logical Reasoning sections, one scored Reading Comprehension section and one unscored variable section of either type that LSAC uses to try out new questions, with a 10-minute intermission between the second and third sections. Analytical Reasoning (logic games) was dropped in August 2024. The score runs from 120 to 180, based on the number of questions answered correctly, with no deduction for wrong answers. LSAT Argumentative Writing, a 50-minute unscored essay taken online, must be on file before a score is released. From August 2027 the unscored questions move inside the three sections, which LSAC says will test the same skills.",

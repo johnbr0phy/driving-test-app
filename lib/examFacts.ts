@@ -2743,6 +2743,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Ministerial decree of 27 October 2021, Codice della Strada articles 121 and 122, the Motorizzazione civile guidance of Regione Friuli Venezia Giulia, and D.Lgs. 59/2011 Annex II, checked November 2026",
     source: { name: "Il Portale dell'Automobilista (Ministry of Infrastructure and Transport)", url: "https://www.ilportaledellautomobilista.it/" },
   },
+  frcode: {
+    answer:
+      "The French theory test for a category B car licence (épreuve théorique générale, ETG, known as \"le code\") is taken in an exam centre run by one of the approved operators (La Poste, SGS, Dekra, Pearson VUE or Bureau Veritas): 40 multiple-choice questions, each shown with a photo or a video and some with more than one right answer, and you pass with at least 35 right. You can register from 15 with early supervised driving (apprentissage anticipé), otherwise from 16, and a pass stays valid for five years while you take the practical test.",
+    rows: [
+      { label: "Run by", value: "Approved private operators, for the Interior Ministry" },
+      { label: "Format", value: "40 multiple-choice questions with photos or videos" },
+      { label: "Pass mark", value: "At least 35 of 40 right" },
+      { label: "Minimum age", value: "15 with apprentissage anticipé, otherwise 16" },
+      { label: "Valid for", value: "5 years after the pass" },
+      { label: "Tigertest mock tests", value: "6 x 40 four-option questions in French, 35 to pass" },
+    ],
+    basedOn: "Service-public.gouv.fr (fiche F33694, checked April 2026) and the arrêté du 20 avril 2012, article 2, checked November 2026",
+    source: { name: "Service-public.gouv.fr: comment passer le code (ETG)", url: "https://www.service-public.gouv.fr/particuliers/vosdroits/F33694" },
+  },
   apitalian: {
     answer:
       "The AP Italian Language and Culture Exam is a College Board exam of about 2 hours 30 minutes, fully digital in Bluebook from May 2027. Half the score is a free-response section (a project presentation, a project Q&A and an argumentative essay); the other half is 55 multiple-choice questions in Italian in 80 minutes: 25 listening questions in 40 minutes and 30 reading questions in 40 minutes, in sets of five on one text each. Scores are reported from 1 to 5.",

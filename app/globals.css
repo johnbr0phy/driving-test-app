@@ -2564,6 +2564,20 @@
     --brand-gradient-to: 0 0% 98%;
   }
 
+  /* French Driving Theory Test (Code de la route) theme */
+  [data-theme="frcode"] {
+    --brand: 234 100% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 234 100% 96%;
+    --brand-hover: 234 100% 17%;
+    --brand-dark: 234 100% 12%;
+    --brand-darker: 234 100% 8%;
+    --brand-muted: 234 40% 70%;
+    --brand-border: 234 45% 80%;
+    --brand-border-light: 234 45% 90%;
+    --brand-gradient-to: 0 0% 98%;
+  }
+
   /* Italian Driving Theory Test (Patente B) theme */
   [data-theme="itpatente"] {
     --brand: 128 80% 18%;
@@ -7038,6 +7052,17 @@
     --brand-muted: 12 35% 45%;
     --brand-dark: 12 85% 65%;
     --brand-darker: 12 80% 78%;
+  }
+  .dark [data-theme="frcode"] {
+    --brand: 234 100% 50%;
+    --brand-hover: 234 100% 42%;
+    --brand-light: 234 45% 13%;
+    --brand-gradient-to: 0 0% 11%;
+    --brand-border-light: 234 35% 24%;
+    --brand-border: 234 40% 34%;
+    --brand-muted: 234 40% 45%;
+    --brand-dark: 234 100% 70%;
+    --brand-darker: 234 100% 78%;
   }
   .dark [data-theme="itpatente"] {
     --brand: 128 80% 29.6%;

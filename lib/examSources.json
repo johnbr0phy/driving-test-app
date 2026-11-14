@@ -522,6 +522,11 @@
   "https://nseti-pdfs.s3.us-west-2.amazonaws.com/desc/FortiGate_7.6_Administrator_Exam_Description.pdf",
   "https://training.fortinet.com/local/staticpage/view.php?page=library_fortigate-administrator"
  ],
+ "frcode": [
+  "https://www.service-public.gouv.fr/particuliers/vosdroits/F33694",
+  "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000025803494",
+  "https://www.securite-routiere.gouv.fr/passer-son-permis-de-conduire/preparation-de-lexamen-du-code-de-la-route"
+ ],
  "fsmaths": [
   "https://www.gov.uk/government/publications/functional-skills-subject-content-mathematics/subject-content-functional-skills-maths",
   "https://www.gov.uk/government/publications/a-review-of-the-assessment-of-reformed-functional-skills-qualifications-in-english-and-maths",

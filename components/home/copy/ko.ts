@@ -129,5 +129,5 @@ export const ko: HomeCopy = {
 export const countryNames: Record<string, string> = {
   US: "미국", CA: "캐나다", UK: "영국", IE: "아일랜드", AU: "호주", NZ: "뉴질랜드", IN: "인도", PH: "필리핀", MY: "말레이시아", SG: "싱가포르", HK: "홍콩",
   AE: "아랍에미리트", ZA: "남아프리카공화국", NG: "나이지리아", KE: "케냐", PK: "파키스탄", ES: "스페인", PT: "포르투갈", RO: "루마니아", SE: "스웨덴", GR: "그리스", DK: "덴마크",
-  HU: "헝가리", BE: "벨기에", FI: "핀란드", MT: "몰타", DE: "독일", IT: "이탈리아",
+  HU: "헝가리", BE: "벨기에", FI: "핀란드", MT: "몰타", DE: "독일", IT: "이탈리아", FR: "프랑스",
 };

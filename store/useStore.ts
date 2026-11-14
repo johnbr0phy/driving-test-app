@@ -1377,6 +1377,10 @@ export const useStore = create<AppState>()(
           regionAt: 0,
           examStates: {},
           startedExams: [],
+          // Per-test question languages belong to the account: left here, the
+          // next person to sign in on this device inherits them (loadUserData
+          // merges the device's picks into the account).
+          testLanguages: {},
           currentTests: {},
           completedTests: [],
           testAttempts: [],

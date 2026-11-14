@@ -84,7 +84,7 @@ export function exitQuestionInbox(v: EmailVoice, isCorrect: boolean): InboxCopy 
 export function topPrepperInbox(pct: number): InboxCopy {
   return {
     subject: `You've out-practiced ${pct}% of Tigertest`,
-    preheader: "Your numbers so far, and the one part you have not opened yet.",
+    preheader: "Your numbers so far, and a quick well done from us.",
   };
 }
 

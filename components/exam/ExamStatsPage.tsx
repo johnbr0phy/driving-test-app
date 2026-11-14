@@ -30,6 +30,7 @@ import { QuizRow } from "@/components/QuizRow";
 import { QuestionImage } from "@/components/QuestionImage";
 import { getSignIdForQuestion } from "@/lib/signImages";
 import { useLocalizedExam } from "@/hooks/useLocalizedExam";
+import { examPaywallCopy } from "@/lib/examPaywallCopy";
 import { useCommunityAvailable, useExamCommunityStats } from "@/hooks/useCommunityStats";
 import { CommunityWrongQuestionsList } from "@/components/CommunityWrongQuestions";
 import {
@@ -282,12 +283,7 @@ function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
             }}
             feature="full_stats"
             onUpgrade={handleUpgrade}
-            benefits={[
-              `See your accuracy on all ${examQuestions.length} ${exam.shortName} questions`,
-              "See what you keep getting wrong, worst first",
-              "Full stats on every exam, the DMV included",
-              "One payment, yours forever",
-            ]}
+            benefits={examPaywallCopy(lang).stats(examQuestions.length, exam.shortName)}
             isGuest={isGuest}
             onSignUp={() => router.push(signupDestination)}
             hideSocialProof

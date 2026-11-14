@@ -11,7 +11,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Star } from "lucide-react";
 import { useTranslation } from "@/contexts/LanguageContext";
-import { en, es, vi, ko, zh } from "@/i18n";
+import * as dicts from "@/i18n";
 import Image from "next/image";
 import { useIsNativeApp } from "@/hooks/useIsNativeApp";
 import { SupportPaywallModal } from "@/components/SupportPaywallModal";
@@ -63,8 +63,7 @@ export function PaywallModal({
 }: PaywallModalProps) {
   const price = usePremiumPrice();
   const { t, language } = useTranslation();
-  const dict =
-    language === "es" ? es : language === "vi" ? vi : language === "ko" ? ko : language === "zh" ? zh : en;
+  const dict = dicts[language] ?? dicts.en;
   const [loading, setLoading] = useState(false);
   // In the native app, Stripe checkout would violate Apple's/Google's
   // in-app purchase rules — show an informational notice instead.

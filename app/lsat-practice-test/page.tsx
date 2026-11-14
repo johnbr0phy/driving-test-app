@@ -16,9 +16,9 @@ const siteUrl = SITE_URL;
 
 const title = "Free LSAT Practice Test 2026 - Logical Reasoning & Reading";
 const metaDescription =
-  "Free LSAT practice tests: 203 original Logical Reasoning and Reading Comprehension questions with explanations, timed 35-minute sections and a 120 to 180 score estimate.";
+  "LSAT practice tests, free to start: 203 original Logical Reasoning and Reading Comprehension questions with explanations, timed 35-minute sections and a 120 to 180 score estimate.";
 const description =
-  "Free LSAT practice tests with 203 original questions in the current format: two Logical Reasoning sections of 25 questions and a Reading Comprehension section of 27 questions on three passages and a comparative passage pair, each timed at 35 minutes with five answer choices. Every answer has an explanation, nine drills cover each question family, and each test ends with an estimated score from 120 to 180.";
+  "LSAT practice tests, free to start, with 203 original questions in the current format: two Logical Reasoning sections of 25 questions and a Reading Comprehension section of 27 questions on three passages and a comparative passage pair, each timed at 35 minutes with five answer choices. Every answer has an explanation, nine drills cover each question family, and each test ends with an estimated score from 120 to 180.";
 
 const faqs = [
   {
@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     q: "Is this practice test the same format as the real LSAT?",
-    a: "It follows the scored part of the test: two Logical Reasoning sections of 25 questions and one Reading Comprehension section of 27 questions on four passage sets, one of them a comparative pair, each 35 minutes, with five answer choices and the intermission after the second section. The unscored variable section and the writing sample are not included. Every question and passage is original, not taken from LSAC PrepTests or official samples.",
+    a: "It follows the scored part of the test: two Logical Reasoning sections and one Reading Comprehension section on four passage sets, one of them a comparative pair, each 35 minutes, with five answer choices and the intermission after the second section. Tigertest uses 25, 25 and 27 questions, the scored counts LSAC gives for the August 2027 format; current forms can vary by a question or two. The unscored variable section and the writing sample are not included. Every question and passage is original, not taken from LSAC PrepTests or official samples.",
   },
   {
     q: "Is the Tigertest LSAT practice test free?",
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     title,
     description: metaDescription,
     url: `${siteUrl}/lsat-practice-test`,
-    images: [{ url: shareImageUrl("lsat"), width: 1200, height: 630, alt: "Tigertest free LSAT practice test" }],
+    images: [{ url: shareImageUrl("lsat"), width: 1200, height: 630, alt: "Tigertest LSAT practice test" }],
     siteName: "Tigertest",
     type: "website",
   },
@@ -76,7 +76,7 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "WebApplication",
-      name: "Tigertest - Free LSAT Practice Test",
+      name: "Tigertest - LSAT Practice Test",
       description,
       url: `${siteUrl}/lsat-practice-test`,
       applicationCategory: "EducationalApplication",
@@ -178,7 +178,7 @@ export default function LsatLandingPage() {
                 Built on the Current LSAT Format
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-                Since August 2024 the LSAT scores two Logical Reasoning sections and one Reading Comprehension section. Every practice test here has those three sections at the real length and time, with the full range of argument questions and a Reading Comprehension section of three single passages and one comparative pair.
+                Since August 2024 the LSAT scores two Logical Reasoning sections and one Reading Comprehension section. Every practice test here has those three sections at the real time and about the real length (25, 25 and 27 questions; current forms vary by a question or two), with the full range of argument questions and a Reading Comprehension section of three single passages and one comparative pair.
               </p>
               <div className="space-y-3">
                 {contentAreas.map((area) => (

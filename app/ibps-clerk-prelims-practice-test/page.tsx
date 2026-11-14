@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     q: "Are these the real IBPS Clerk questions?",
-    a: "No. These are original practice questions written to the IBPS Clerk Prelims pattern, not questions from IBPS or past papers. They follow the real paper's question types: reading comprehension, para jumbles, cloze tests, fillers and error spotting; simplification, approximation, number series, data interpretation and arithmetic; and inequalities, syllogisms, puzzles, seating arrangements, coding, blood relations, directions and ranking. The questions are in English only. It is free to start, with no account required. Practice Test 1 and every drill but the last are free; the final drill and the final practice test are part of Tigertest Premium, one payment with no subscription.",
+    a: "No. These are original practice questions written to the IBPS Clerk Prelims pattern, not questions from IBPS or past papers. They follow the real paper's question types: reading comprehension, para jumbles, cloze tests, fillers and error spotting; simplification, approximation, number series, data interpretation and arithmetic; and inequalities, syllogisms, puzzles, seating arrangements, coding, blood relations, directions and ranking. The questions are in English only. It is free to start, with no account required. Practice Test 1 and every drill but the last two are free; the last two drills and the final practice test are part of Tigertest Premium, one payment with no subscription.",
   },
 ];
 

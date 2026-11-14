@@ -43,7 +43,7 @@ const faqs = [
   },
   {
     q: "Are these previous year TSLPRB SI questions?",
-    a: "No. Every question is original, written to the syllabus in Annexure II of the notification, and none is copied from previous papers. General Studies covers static facts; current events of national and international importance, which the syllabus also lists, are not covered, so read the past year's news separately. It is free to start, with no account needed. Practice Test 1 and every drill but the last are free; the final drill and the final practice test are part of Tigertest Premium, one payment with no subscription.",
+    a: "No. Every question is original, written to the syllabus in Annexure II of the notification, and none is copied from previous papers. General Studies covers static facts; current events of national and international importance, which the syllabus also lists, are not covered, so read the past year's news separately. It is free to start, with no account needed. Practice Test 1 and every drill but the last two are free; the last two drills and the final practice test are part of Tigertest Premium, one payment with no subscription.",
   },
 ];
 

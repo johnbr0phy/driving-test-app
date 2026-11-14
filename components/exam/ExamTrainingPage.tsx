@@ -126,7 +126,7 @@ function ExamTrainingContent({ exam: source }: { exam: ExamConfig }) {
     return open.find((p) => p.part > after) ?? open.find((p) => p.part !== after);
   };
 
-  // Premium: the exam's final training step, unless this person already has
+  // Premium: the exam's last training steps (lib/examLocks.ts), unless this person already has
   // work in it. Decided once the account has loaded (locks.settled).
   const locks = useExamLocks(source);
   const accessLocked = !!setDef && (!isSplit || !!part) && locks.partLocked({ set: setDef, part: part ?? 1 });

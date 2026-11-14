@@ -50,7 +50,7 @@ function pageCopy(variant: ExamConfig) {
     },
     {
       q: `Is the ${state} ${terms.exam} practice free?`,
-      a: `It is free to start with no account. The full-length practice exam and every training set but the last are free; the final set, ${lastSet.name}, is part of Tigertest Premium, a one-time purchase with no subscription that also covers every other exam on Tigertest.`,
+      a: `It is free to start with no account. The full-length practice exam and most of the training are free; the last part of the training, ending with ${lastSet.name}, is part of Tigertest Premium, a one-time purchase with no subscription that also covers every other exam on Tigertest.`,
     },
     {
       q: `I am testing in another state. What should I use?`,

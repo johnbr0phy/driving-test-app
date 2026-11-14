@@ -6,7 +6,7 @@ import { useHydration } from "@/hooks/useHydration";
 import { useIsPremium } from "@/hooks/useIsPremium";
 import { inClassFor, useClassMemberships } from "@/hooks/useClassMemberships";
 import { ExamConfig, TrainingPart, trainingPartOf } from "@/lib/exams";
-import { lockedTestId, lockedTrainingPart } from "@/lib/examLocks";
+import { lockedTestIds, lockedTrainingParts } from "@/lib/examLocks";
 
 /**
  * Premium locks on a v1 exam for this person (lib/examLocks.ts). Open for
@@ -29,19 +29,19 @@ export function useExamLocks(source: ExamConfig) {
 
   const settled = hydrated && ready && (!user || firestoreLoaded);
   const paid = isPremium || inClass;
-  const premiumTest = lockedTestId(source);
-  const premiumPart = lockedTrainingPart(source);
+  const premiumTests = lockedTestIds(source);
+  const premiumParts = lockedTrainingParts(source);
 
   const testLocked = (testId: number): boolean => {
-    if (!settled || paid || testId !== premiumTest) return false;
+    if (!settled || paid || !premiumTests.includes(testId)) return false;
     const current = getCurrentTest(testId);
     if (current && current.questions.length > 0) return false;
     return !completedTests.some((s) => s.state === source.stateCode && s.testNumber === testId);
   };
 
   const partLocked = (p: Pick<TrainingPart, "set" | "part">): boolean => {
-    if (!settled || paid || !premiumPart) return false;
-    if (p.set.id !== premiumPart.set.id || p.part !== premiumPart.part) return false;
+    if (!settled || paid) return false;
+    if (!premiumParts.some((l) => l.set.id === p.set.id && l.part === p.part)) return false;
     const data = trainingSets[p.set.id];
     const touched = [...(data?.masteredIds ?? []), ...(data?.wrongQueue ?? [])];
     return !touched.some((id) => trainingPartOf(p.set.id, id) === p.part);

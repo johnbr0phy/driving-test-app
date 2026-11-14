@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     q: "Are these Bihar Police previous year questions?",
-    a: "No. Every question is original, written to the Class 10 syllabus the advertisement names, and none is copied from previous papers. Hindi questions are in Hindi, as on the real paper. General Knowledge covers static facts about Bihar, India and the world, not current affairs, so read the news of the past year separately. It is free to start, with no account needed. Practice Test 1 and every drill but the last are free; the final drill and the final practice test are part of Tigertest Premium, one payment with no subscription.",
+    a: "No. Every question is original, written to the Class 10 syllabus the advertisement names, and none is copied from previous papers. Hindi questions are in Hindi, as on the real paper. General Knowledge covers static facts about Bihar, India and the world, not current affairs, so read the news of the past year separately. It is free to start, with no account needed. Practice Test 1 and every drill but the last two are free; the last two drills and the final practice test are part of Tigertest Premium, one payment with no subscription.",
   },
 ];
 

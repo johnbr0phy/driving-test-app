@@ -101,14 +101,14 @@ export default function AboutPage() {
                 and every other school, college-entrance and children&apos;s test.
               </li>
               <li>
-                <strong>Premium:</strong> the last two DMV tests and training sets, the final training set and final
-                practice test on the other licence, certification and driving exams, the full stats pages of every
+                <strong>Premium:</strong> the last two DMV tests and training sets, the last training sets and
+                practice tests (about a quarter of each) on the other licence, certification and driving exams, the full stats pages of every
                 exam, and room for more of your own quizzes.
               </li>
             </ul>
             <p className={`${p} mt-4`}>
               Classes are free for teachers. A student in a teacher&apos;s class gets that test&apos;s full stats
-              without paying, and on every exam but the DMV its final training set and practice test too.
+              without paying, and on every exam but the DMV the last quarter of its training sets and practice tests too.
             </p>
           </section>
 

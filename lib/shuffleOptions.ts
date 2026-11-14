@@ -18,19 +18,22 @@ function shuffle<T>(array: T[]): T[] {
 export function hasPositionDependentAnswers(question: Question): boolean {
   const options = [question.optionA, question.optionB, question.optionC, question.optionD];
 
-  // Pattern to detect references to other answer options (English, Spanish,
-  // Vietnamese, Korean, Chinese).
-  // Matches: "A and B", "B and C", "Both A and B", "A, B, and C", "A y B", "Tanto A como B",
-  // "Todas las anteriores", "Cả A và B", "Tất cả các câu trên", "A와 B", etc.
-  // Korean has no space before the particle ("A와 B"), so that branch uses \s*
-  // rather than the \s+ the Latin-script branches rely on. Chinese is the same
-  // ("A和B都对"), and its "of the above" options start with 以上 ("以上都对"),
-  // which never starts a plain answer ("18岁及以上" ends with it). English
-  // "All of these" and Korean "이 모두" are matched as whole options only, so
-  // they stay last like the Spanish, Vietnamese and Chinese "of the above".
-  const positionReferencePattern = /\b(A|B|C|D)\s+(and|or|y|o|và|hoặc|,)\s+(A|B|C|D)\b|\bBoth\s+(A|B|C|D)\s+and\s+(A|B|C|D)\b|\bTanto\s+(A|B|C|D)\s+como\s+(A|B|C|D)\b|\bAll of the above\b|\bNone of the above\b|^All of these$|^이 모두$|\bTodas las anteriores\b|\bNinguna de las anteriores\b|Tất cả các câu trên|Không câu nào đúng|(A|B|C|D)\s*(와|과|및)\s*(A|B|C|D)|위의 모든 것|위의 어느 것도 아님|위 항목 모두|정답 없음|(A|B|C|D)\s*(和|与|或|及|、)\s*(A|B|C|D)|^以上/i;
+  // Options that name other options by letter: "A and B", "Both B and C",
+  // "A, B, and C", "A y B", "Tanto A como B", "Cả A và B", "A와 B", "A和B".
+  // Capital letters only: matched without regard to case, an ordinary Spanish
+  // "o a" or Vietnamese "và a" counted as a reference and kept a translated
+  // question in bank order while its English original was shuffled. Korean
+  // and Chinese put no space before the particle, so those branches use \s*.
+  const letterReferencePattern = /\b[ABCD]\s+(and|or|y|o|và|hoặc|,)\s+[ABCD]\b|\b[Bb]oth\s+[ABCD]\s+and\s+[ABCD]\b|\b[Tt]anto\s+[ABCD]\s+como\s+[ABCD]\b|[ABCD]\s*(와|과|및)\s*[ABCD]|[ABCD]\s*(和|与|或|及|、)\s*[ABCD]/;
 
-  if (options.some(option => positionReferencePattern.test(option) || OTHER_LANGUAGE_PATTERNS.some((p) => p.test(option)))) return true;
+  // Options that mean "the options before this one" (English, Spanish,
+  // Vietnamese, Korean, Chinese). The Chinese ones start with 以上 ("以上都对"),
+  // which never starts a plain answer ("18岁及以上" ends with it). "Any of
+  // these", "All of these" and their translations count only as the whole
+  // option, since "Any of these roads" is an ordinary answer.
+  const aboveReferencePattern = /\bAll of the above\b|\bNone of the above\b|^(All|Any|None|Both|Either|Neither) of these\.?$|^이 모두$|^이 중 어느 것이든$|\bTodas las anteriores\b|\bNinguna de las anteriores\b|^Cualquiera de est[ao]s\.?$|Tất cả các câu trên|Không câu nào đúng|^Bất kỳ điều nào trong số này$|위의 모든 것|위의 어느 것도 아님|위 항목 모두|정답 없음|^以上/i;
+
+  if (options.some(option => letterReferencePattern.test(option) || aboveReferencePattern.test(option.trim()) || OTHER_LANGUAGE_PATTERNS.some((p) => p.test(option)))) return true;
 
   // "All these choices are correct" (the ham radio pool's wording) is always
   // the last option, like "All of the above".

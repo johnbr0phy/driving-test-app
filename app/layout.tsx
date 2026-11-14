@@ -16,6 +16,7 @@ import { SITE_URL } from "@/lib/siteUrl";
 import { URL_LANG_INIT_SCRIPT } from "@/lib/urlLanguage";
 import { ANALYTICS_INIT_SCRIPT, GA_ID } from "@/lib/privacyRegion";
 import { AnalyticsConsent } from "@/components/AnalyticsConsent";
+import { VercelPageAnalytics } from "@/components/VercelPageAnalytics";
 
 // viewport-fit=cover (page extends behind the notch/home indicator) is
 // only wanted inside the native app shell, where env(safe-area-inset-*)
@@ -127,6 +128,7 @@ export default function RootLayout({
           <main id="main-content" tabIndex={-1} className="flex-1 flex flex-col">{children}</main>
           <Footer />
           <AnalyticsConsent />
+          <VercelPageAnalytics />
         </Providers>
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}

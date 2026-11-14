@@ -81,10 +81,25 @@ const LANGUAGE_NAMES: Record<string, string> = {
   sv: "Swedish", da: "Danish", fi: "Finnish", hu: "Hungarian", ro: "Romanian", el: "Greek",
 };
 
-function examLine(t: TestCatalogEntry): string {
+function inLanguage(t: TestCatalogEntry): string {
   // A native-language exam (detheorie) is listed by its English name, saying which language it is in.
-  const inLang = t.language && t.language !== "en" ? ` (in ${LANGUAGE_NAMES[t.language] ?? t.language})` : "";
-  return `- [${t.name}${inLang}](${siteUrl}${t.href}): ${t.blurb}`;
+  return t.language && t.language !== "en" ? ` (in ${LANGUAGE_NAMES[t.language] ?? t.language})` : "";
+}
+
+function examLine(t: TestCatalogEntry): string {
+  return `- [${t.name}${inLanguage(t)}](${siteUrl}${t.href}): ${t.blurb}`;
+}
+
+// Every test by name and link, near the top. The full file is over 200 KB and
+// many AI fetchers stop reading at about 100 KB, which once left more than a
+// hundred tests (most of the newer ones) listed only past that point. This
+// index keeps every landing in the first few dozen KB; the sections below it
+// add the blurbs and the real tests' facts.
+function indexSection(): string {
+  const groups = nonDmvGroups().map(
+    (g) => `### ${g.title}\n\n${g.tests.map((t) => `- [${t.name}${inLanguage(t)}](${siteUrl}${t.href})`).join("\n")}`
+  );
+  return `## Index of every practice test\n\nEvery test on Tigertest, grouped as on ${siteUrl}/tests. Each one is described further down this file.\n\n${groups.join("\n\n")}`;
 }
 
 const nonDmvGroups = () =>
@@ -139,6 +154,7 @@ export function renderLlmsTxt(): string {
   return [
     HEADER,
     DMV_SECTION,
+    indexSection(),
     countrySection(),
     `## Other practice tests\n\nAll tests: ${siteUrl}/tests\n\n${groups}`,
     stateExamSection(),

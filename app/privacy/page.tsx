@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 // consent and children's pages), app/api/account/delete (what deletion
 // removes), lib/classes.ts and lib/quizzes.ts (what teachers and quiz makers
 // see), lib/funnel.ts and the other anonymous counters.
-const UPDATED = "November 10, 2026";
+const UPDATED = "November 14, 2026";
 const CONTACT = "john@johnbrophy.net";
 
 const h2 = "text-2xl font-semibold mb-4 mt-2";
@@ -121,7 +121,7 @@ export default function PrivacyPage() {
             </p>
             <ul className={ul}>
               <li><strong>Google Firebase / Google Cloud</strong>: sign-in and the database that stores accounts and progress.</li>
-              <li><strong>Vercel</strong>: hosting, and the IP-based country lookup.</li>
+              <li><strong>Vercel</strong>: hosting, the IP-based country lookup, and anonymous page view counts (Vercel Web Analytics).</li>
               <li><strong>Google Analytics</strong>: site usage, where allowed (see Cookies).</li>
               <li><strong>Stripe</strong>: payments.</li>
               <li><strong>Resend</strong>: sending email.</li>
@@ -156,7 +156,10 @@ export default function PrivacyPage() {
               <li>
                 <strong>Our own counts:</strong> anonymous totals such as questions answered and signups, using a random
                 ID in your browser, and for each question how many people picked each answer (added up per question, with
-                no ID, so we can find questions whose answer key is wrong). Turning off analytics stops these too.
+                no ID, so we can find questions whose answer key is wrong), and page view counts through Vercel Web Analytics
+                (which page, the site you came from, your country and device type; no cookies and no ID that follows you
+                between days or sites; links to classes and quizzes are recorded without their code). Turning off
+                analytics stops these too.
               </li>
             </ul>
             <p className={`${p} mt-3`}>

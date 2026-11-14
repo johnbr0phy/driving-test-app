@@ -182,7 +182,7 @@
         "Lena returned a borrowed coat with a torn lining but offered to pay for the repair, so she acted properly.",
         "Ines repainted a borrowed ladder after its owner agreed beforehand that she could, so she acted properly.",
         "Sam's brother accepted a dented pot after Sam returned it that way, so Sam acted properly.",
-        "Ana returned a borrowed car with less fuel than it had, so the lender acted improperly.",
+        "Rosa returned a borrowed car with less fuel than it had, so the lender acted improperly.",
         "Marco returned a borrowed bicycle with a tire that went flat on its own, so he acted properly."
       ],
       "correct": [
@@ -225,7 +225,7 @@
       "passage": "Any plant that tolerates both shade and dry soil will thrive in the north garden. Every shade-tolerant plant in the Wexley nursery's catalog also tolerates dry soil. Therefore, the bleeding heart listed in the catalog will thrive in the north garden.",
       "stem": "The conclusion follows logically if which one of the following is assumed?",
       "options": [
-        "The bleeding heart thrives in shady gardens.",
+        "The bleeding heart blooms in early spring.",
         "Some plants in the catalog tolerate shade.",
         "The bleeding heart tolerates shade.",
         "Every plant thriving there tolerates shade.",
@@ -4040,12 +4040,12 @@
       "domain": "lsatFlaw",
       "skill": "Flaw",
       "difficulty": 2,
-      "passage": "The Halverson Orchestra is one of the finest orchestras in the world. So each of its musicians must be among the finest players of their instruments in the world.",
+      "passage": "The Brightwater Orchestra is one of the finest orchestras in the world. So each of its musicians must be among the finest players of their instruments in the world.",
       "stem": "The argument's reasoning is most vulnerable to criticism on the grounds that the argument:",
       "options": [
-        "fails to name any of the musicians who play in the orchestra",
-        "confuses the fame of an orchestra with the quality of its playing",
         "assumes the orchestra will remain among the finest in the future",
+        "confuses the fame of an orchestra with the quality of its playing",
+        "fails to name any of the musicians who play in the orchestra",
         "relies on a ranking of orchestras without saying who made it",
         "assumes each part of a whole has a quality that the whole has"
       ],

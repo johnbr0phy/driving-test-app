@@ -160,6 +160,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   gre: { title: "GRE General Test Practice", description: "Practice adaptive Verbal and Quant sections in the shorter GRE format, with a 130 to 170 score estimate." },
   sehp: { title: "Högskoleprovet övningsprov", description: "Öva ORD, LÄS, MEK, ELF, XYZ, KVA, NOG och DTK med två övningsprov och ett uppskattat resultat från 0,0 till 2,0." },
   gmat: { title: "GMAT Focus Edition Practice Tests", description: "Timed Quant, Verbal and Data Insights sections with a 205 to 805 score estimate and drills by question type." },
+  lsat: { title: "LSAT Practice Tests", description: "Timed Logical Reasoning and Reading Comprehension sections with a 120 to 180 score estimate and drills by question family." },
   cissp: { title: "ISC2 CISSP", description: "Practice manager-level questions across all eight CISSP domains, from risk management to secure software." },
   itil: { title: "ITIL 4 Foundation", description: "Practice the 40-question ITIL 4 Foundation exam: guiding principles, the value chain and the ITIL practices." },
   psm: { title: "PSM I Professional Scrum Master", description: "Practice the 2020 Scrum Guide: accountabilities, events, artifacts and commitments, in 80 questions in 60 minutes." },

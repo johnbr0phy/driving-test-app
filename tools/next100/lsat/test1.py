@@ -155,7 +155,7 @@ STAGES = {
             "Marco returned a borrowed bicycle with a tire that went flat on its own, so he acted properly.",
             "Lena returned a borrowed coat with a torn lining but offered to pay for the repair, so she acted properly.",
             "Sam's brother accepted a dented pot after Sam returned it that way, so Sam acted properly.",
-            "Ana returned a borrowed car with less fuel than it had, so the lender acted improperly."],
+            "Rosa returned a borrowed car with less fuel than it had, so the lender acted improperly."],
            "The owner agreed in advance to the new condition, which is the principle's exception, so returning the ladder repainted was proper. The bicycle and coat came back changed without prior agreement, and the brother's agreement came only after the fact."),
         LR("st", "role", 2,
            "Some critics argue that the town should not restore the old mill because restoration would be costly. But the cost argument "
@@ -176,7 +176,7 @@ STAGES = {
             "The bleeding heart tolerates dry soil.",
             "Some plants in the catalog tolerate shade.",
             "Every plant thriving there tolerates shade.",
-            "The bleeding heart thrives in shady gardens."],
+            "The bleeding heart blooms in early spring."],
            "If the bleeding heart tolerates shade, the catalog premise gives it dry-soil tolerance too, and the first premise then guarantees it thrives. Tolerating dry soil alone leaves shade open."),
         LR("sw", "str", 2,
            "Researchers gave one group of commuters noise-canceling headphones to wear on the train and gave another group nothing. After a "

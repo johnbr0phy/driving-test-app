@@ -2102,6 +2102,20 @@
     --brand-gradient-to: 350 60% 96%;
   }
 
+  /* LSAT theme (v2 exam; matches lib/v2/exams/lsat.ts theme): deep oxblood */
+  [data-theme="lsat"] {
+    --brand: 342 30% 24%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 342 30% 96%;
+    --brand-hover: 342 30% 20%;
+    --brand-dark: 342 30% 18%;
+    --brand-darker: 342 25% 13%;
+    --brand-muted: 342 25% 70%;
+    --brand-border: 342 28% 80%;
+    --brand-border-light: 342 25% 89%;
+    --brand-gradient-to: 352 40% 96%;
+  }
+
   /* CompTIA Network+ theme (v2 exam; matches lib/v2/exams/netplus.ts theme) */
   [data-theme="netplus"] {
     --brand: 252 40% 40%;
@@ -6669,6 +6683,18 @@
     --brand-muted: 340 35% 45%;
     --brand-dark: 340 40% 65%;
     --brand-darker: 340 30% 78%;
+  }
+
+  .dark [data-theme="lsat"] {
+    --brand: 342 30% 50%;
+    --brand-hover: 342 30% 42%;
+    --brand-light: 342 30% 13%;
+    --brand-gradient-to: 352 40% 11%;
+    --brand-border-light: 342 25% 24%;
+    --brand-border: 342 28% 34%;
+    --brand-muted: 342 25% 45%;
+    --brand-dark: 342 30% 65%;
+    --brand-darker: 342 25% 78%;
   }
 
   .dark [data-theme="netplus"] {

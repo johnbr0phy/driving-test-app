@@ -254,7 +254,7 @@ STAGES = {
             "assumes internet prices in the city will stay the same"],
            "Three neighbors cannot stand for a whole city's residents. How much faster the service would be does not affect that gap in the reasoning."),
         LR("fl", "flaw", 2,
-           "The Halverson Orchestra is one of the finest orchestras in the world. So each of its musicians must be among the finest players "
+           "The Brightwater Orchestra is one of the finest orchestras in the world. So each of its musicians must be among the finest players "
            "of their instruments in the world.",
            FLAW,
            ["assumes each part of a whole has a quality that the whole has",

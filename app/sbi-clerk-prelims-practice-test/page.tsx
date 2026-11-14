@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     q: "Are these the real SBI Clerk questions?",
-    a: "No. These are original practice questions written to the SBI Clerk Prelims pattern, not questions from SBI or past papers. They follow the real paper's question types: reading comprehension, cloze tests, fillers, error spotting, sentence improvement and phrase rearrangement; simplification, approximation, number series, data interpretation and arithmetic; and inequalities, syllogisms, puzzles, seating arrangements, coding, blood relations, directions and ranking. It is free to start, with no account required. Practice Test 1 and every drill but the last are free; the final drill and the final practice test are part of Tigertest Premium, one payment with no subscription.",
+    a: "No. These are original practice questions written to the SBI Clerk Prelims pattern, not questions from SBI or past papers. They follow the real paper's question types: reading comprehension, cloze tests, fillers, error spotting, sentence improvement and phrase rearrangement; simplification, approximation, number series, data interpretation and arithmetic; and inequalities, syllogisms, puzzles, seating arrangements, coding, blood relations, directions and ranking. It is free to start, with no account required. Practice Test 1 and every drill but the last two are free; the last two drills and the final practice test are part of Tigertest Premium, one payment with no subscription.",
   },
 ];
 

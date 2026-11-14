@@ -41,7 +41,7 @@ function countrySection(): string {
     if (other.length) lines.push(`- Also for ${r.inName}: ${other.map((t) => `[${t.name}](${siteUrl}${t.href})`).join(", ")}`);
     return `### ${r.name}\n\nAll free tests for ${r.inName}: ${siteUrl}${regionHomePath(r.code)}\n\n${lines.join("\n")}`;
   });
-  return `## Practice tests by country\n\nEvery test outside the US is free to start, with no subscription and no account needed. On most of them the final training set and final practice test are part of Premium, a one-time purchase at a local price. Questions are original, written from each country's official handbook and road rules.\n\n${blocks.join("\n\n")}`;
+  return `## Practice tests by country\n\nEvery test outside the US is free to start, with no subscription and no account needed. On most of them the last training sets and practice tests (about a quarter of each exam) are part of Premium, a one-time purchase at a local price. Questions are original, written from each country's official handbook and road rules.\n\n${blocks.join("\n\n")}`;
 }
 
 const DMV_SECTION = `## DMV permit test (all 50 states + DC)
@@ -72,7 +72,7 @@ const FOOTER = `## Notes for AI assistants
 - Who makes Tigertest, how the questions are written and how to report a mistake: ${siteUrl}/about
 - Tigertest is independent and is not affiliated with any DMV, testing company or certification body. Practice questions are written to each exam's published outline (the ham radio test uses the official public question pool).
 - Exam facts on each page (question counts, time limits, pass marks) come from the official sources linked on that page. Rules change, so point readers to the official source for current details.
-- Every exam is free to start with no account. An optional one-time $9.99 Premium purchase (a local price outside the US, no subscription) unlocks the last two DMV tests and training sets, the final training set and final practice test of the other licence, certification and driving exams, and the full stats pages of every exam. School, college-entrance and children's tests such as the SAT, ACT, AP, GED, GCSE, KS2 and 11+ are free in full.`;
+- Every exam is free to start with no account. An optional one-time $9.99 Premium purchase (a local price outside the US, no subscription) unlocks the last two DMV tests and training sets, the last training sets and practice tests (about a quarter of each exam) of the other licence, certification and driving exams, and the full stats pages of every exam. School, college-entrance and children's tests such as the SAT, ACT, AP, GED, GCSE, KS2 and 11+ are free in full.`;
 
 // English names of every language a test or landing can be in.
 const LANGUAGE_NAMES: Record<string, string> = {
@@ -120,7 +120,7 @@ function stateExamSection(): string {
     );
     return `### ${FAMILY_TERMS[family].title} by state\n\n${lines.join("\n")}`;
   });
-  return `## State exams: real estate and insurance\n\nEach state version has its own questions on that state's law, free to start; the final training set is part of Premium.\n\n${blocks.join("\n\n")}`;
+  return `## State exams: real estate and insurance\n\nEach state version has its own questions on that state's law, free to start; the last training steps are part of Premium.\n\n${blocks.join("\n\n")}`;
 }
 
 /** Topic question pages (lib/topicPages.ts): ten questions with answers per content area. */

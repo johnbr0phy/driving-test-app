@@ -5,7 +5,7 @@
 // Set 2, Test 2...), so people test themselves early; when the counts differ
 // the tests are spread evenly through the training and a test comes last.
 // Tests carry stamps and a per-test attempt drop-down with the score chart
-// and miss drill. The final training step and final test are Premium
+// and miss drill. The last quarter of the dashboard is Premium
 // (lib/examLocks.ts); everything before them is free.
 
 import { Suspense, useEffect, useRef, useState } from "react";
@@ -59,7 +59,7 @@ export function ExamDashboard({ exam }: { exam: ExamConfig }) {
 function ExamDashboardContent({ exam: source }: { exam: ExamConfig }) {
   const { exam, routes, ui, lang, testLanguages, testLanguagePicked, setTestLanguage } = useLocalizedExam(source);
   const heroVariant = useHeroVariant();
-  // Premium: the final training step and final test (lib/examLocks.ts).
+  // Premium: the last quarter of the steps (lib/examLocks.ts).
   const locks = useExamLocks(source);
   const paywall = useExamPaywall(source, routes, "dashboard");
   const purchase = usePurchaseReturn();

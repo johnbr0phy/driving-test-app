@@ -131,7 +131,7 @@ const en: HomeCopy = {
     },
     {
       q: "Is Tigertest free?",
-      a: "Every test is free to start, with no account, and most of each test stays free. An optional one-time $9.99 Premium purchase (not a subscription) unlocks the final training set and final practice test on most exams (the last two of each on the DMV) and full stats on every exam.",
+      a: "Every test is free to start, with no account, and most of each test stays free. An optional one-time $9.99 Premium purchase (not a subscription) unlocks the last training sets and practice tests (about a quarter of each exam) on most exams (the last two of each on the DMV) and full stats on every exam.",
     },
     {
       q: "Do I need an account?",
@@ -165,7 +165,7 @@ const en: HomeCopy = {
             ? `Tigertest is a free practice test site. For ${inName} it has ${local === 1 ? "a driving test" : `${local} driving tests`} written from the official ${local === 1 ? "rules" : "handbooks"}, plus certifications that are the same everywhere, such as CompTIA and AWS. Every question explains the right answer.`
             : `Tigertest is a free practice test site. For ${inName} it has ${local + others} practice tests${local > 0 ? `, ${local === 1 ? "one of them a driving test" : `${local} of them driving tests`},` : ""} written from the official handbooks and syllabuses, plus certifications that are the same everywhere, such as CompTIA and AWS. Every question explains the right answer.`,
     },
-    { q: "Is Tigertest free?", a: `Every test for ${inName} is free to start, with no account and no subscription. An optional one-time Premium purchase unlocks the final training set and final practice test on most exams, and full stats.` },
+    { q: "Is Tigertest free?", a: `Every test for ${inName} is free to start, with no account and no subscription. An optional one-time Premium purchase unlocks the last training sets and practice tests (about a quarter of each exam) on most exams, and full stats.` },
     {
       q: "Do I need an account?",
       a: "No. You can start any test without signing up. Make a free account if you want your progress saved across devices.",

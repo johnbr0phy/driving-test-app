@@ -100,13 +100,14 @@ import { UPTET } from "./exams/uptet";
 import { AISSEE } from "./exams/aissee";
 import { APCALCAB } from "./exams/apcalcab";
 import { APHUG } from "./exams/aphug";
+import { lockedStepCount } from "../examLocks";
 
 export const EXAMS_V2: ExamV2Config[] = [GED, PRAXIS, SAT, PSAT, ACT, MAPGROWTH, APPSYCH, APUSH, APGOV, APWORLD, APHUG, APLANG, APBIO, APCALCAB, APITALIAN, GRE, GMAT, SEHP, TEAS, HESI, ASVAB, ACCUPLACER, NCLEX, NCLEXPN, REXPN, UKNMC, EMT, PARAMEDIC, FAAPVT, SECPLUS, CYSA, CISSP, NETPLUS, APLUS, AWS, AWSSAA, AZ900, GCDL, GCPPCA, CCNA, PMP, CAPM, PSM, ITIL, UPSCSE, SSCCGL, SSCCHSL, SSCCPO, SSCGD, SSCMTS, RRBNTPC, RRBGROUPD, RRBALP, RPFCONST, UPPOLICE, DELHIPOLICE, BIHARPOLICE, RAJPOLICE, MPPOLICE, TGSI, IBPSPO, SBIPO, IBPSCLERK, SBICLERK, IBPSRRB, NDA, AGNIVEER, AGNIVEERVAYU, JEEMAIN, NEET, MHTCET, CUET, CTET, REET, UPTET, UGCNET, JNVST, AISSEE, JAMBENG, JAMBMATH, JAMBBIO, JAMBCHEM, JAMBPHYS, PHCSE, TIMESTABLES, KS2, ELEVENPLUS, GCSEMATHS, GCSEHIGHER, GCSESCIENCE, GCSECS, FSMATHS, OSSLT, EQAO9, NAPLAN7, NAPLAN, OCNSW, NSWSEL, VICSEL, HSCMATHS, JKSSBJA];
 
 /**
  * The light Premium tier on v2 exams (Nov 2026), the v1 rule carried over:
- * the final drill and the final practice test need the one-time purchase,
- * everything before them is free. Only career, licensing, government-job and
+ * the last quarter of the drills and practice tests (lockedStepCount) needs
+ * the one-time purchase, everything before it is free. Only career, licensing, government-job and
  * graduate-admission exams are listed. School, college-entrance and
  * children's tests (SAT, ACT, AP, GED, GCSE, KS2, 11+, NAPLAN, JAMB, JEE,
  * NEET and the rest) are never sold: leave a new one off this list.
@@ -124,15 +125,19 @@ export const PREMIUM_V2_IDS: string[] = [
 
 for (const exam of EXAMS_V2) {
   if (exam.premium || !PREMIUM_V2_IDS.includes(exam.id)) continue;
+  // A quarter of the dashboard's drills and tests, from the end: the last
+  // test when there is more than one, the rest from the last drills.
+  const count = lockedStepCount(exam.drills.length + exam.tests.length);
   const lastTest = exam.tests.length > 1 ? exam.tests[exam.tests.length - 1] : undefined;
-  const lastDrill = exam.drills.length > 1 ? exam.drills[exam.drills.length - 1] : undefined;
+  const drillCount = Math.min(Math.max(0, exam.drills.length - 1), Math.max(lastTest ? 0 : 1, count - (lastTest ? 1 : 0)));
+  const lastDrills = drillCount > 0 ? exam.drills.slice(-drillCount) : [];
   exam.premium = {
     lockedTests: lastTest ? [lastTest.number] : [],
-    lockedDrills: lastDrill ? [lastDrill.key] : [],
+    lockedDrills: lastDrills.map((d) => d.key),
     benefits: [
       ...(lastTest ? [`${exam.shortName} ${lastTest.name}${lastTest.heldOut ? ", the one that never appears in the drills" : ""}`] : []),
-      ...(lastDrill ? [`The ${lastDrill.name} drill`] : []),
-      "The final set and test of every other exam on Tigertest",
+      ...lastDrills.map((d) => `The ${d.name} drill`),
+      "The final sets and tests of every other exam on Tigertest",
       "One payment, no subscription",
     ],
   };

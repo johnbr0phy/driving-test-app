@@ -54,7 +54,7 @@ export function V2TestGate({
         </h1>
         <p className="mt-2 text-gray-600 dark:text-gray-300">
           {test?.heldOut ? "This test never appears in the drills, so it shows how ready you really are. " : ""}
-          It&apos;s part of Tigertest Premium, one payment with no subscription, along with the final drill and{" "}
+          It&apos;s part of Tigertest Premium, one payment with no subscription, along with the last drills and{" "}
           {otherPremiumExams(exam)}.
         </p>
         <button

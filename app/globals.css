@@ -2114,6 +2114,18 @@
     --brand-border: 356 45% 80%;
     --brand-border-light: 356 45% 90%;
     --brand-gradient-to: 6 60% 96%;
+  /* MCAT theme (v2 exam; matches lib/v2/exams/mcat.ts theme) */
+  [data-theme="mcat"] {
+    --brand: 256 75% 40%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 256 70% 96%;
+    --brand-hover: 256 75% 35%;
+    --brand-dark: 256 75% 30%;
+    --brand-darker: 256 60% 20%;
+    --brand-muted: 256 40% 72%;
+    --brand-border: 256 45% 80%;
+    --brand-border-light: 256 40% 89%;
+    --brand-gradient-to: 240 60% 96%;
   }
 
   /* CompTIA Network+ theme (v2 exam; matches lib/v2/exams/netplus.ts theme) */
@@ -6695,6 +6707,16 @@
     --brand-muted: 356 40% 45%;
     --brand-dark: 356 85% 65%;
     --brand-darker: 356 75% 78%;
+  .dark [data-theme="mcat"] {
+    --brand: 256 75% 50%;
+    --brand-hover: 256 75% 42%;
+    --brand-light: 256 45% 13%;
+    --brand-gradient-to: 240 40% 11%;
+    --brand-border-light: 256 35% 24%;
+    --brand-border: 256 40% 34%;
+    --brand-muted: 256 40% 45%;
+    --brand-dark: 256 75% 67%;
+    --brand-darker: 256 60% 78%;
   }
 
   .dark [data-theme="netplus"] {

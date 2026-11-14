@@ -38,6 +38,7 @@ import { allStateLandings } from "./stateLandings";
 import { teachPagePath, teachPageTests } from "./teachPages";
 import { STATE_EXAM_LANDINGS_UPDATED_AT, TOPIC_PAGES_UPDATED_AT } from "./seoDates";
 import { examTopics, mostMissedPath, topicExams, topicPath } from "./topicPages";
+import { examTopicsV2, topicExamsV2, topicPathV2 } from "./v2/topicPages";
 
 export function isSitemapSegment(value: string): value is SitemapSegment {
   return (SITEMAP_SEGMENTS as readonly string[]).includes(value);
@@ -147,6 +148,15 @@ export async function buildSegment(segment: SitemapSegment): Promise<SitemapEntr
         ...topicExams().flatMap((exam) =>
           examTopics(exam).map((t) => ({
             url: `${SITE_URL}${topicPath(exam, t)}`,
+            lastModified: TOPIC_PAGES_UPDATED_AT,
+            changeFrequency: "monthly" as const,
+            priority: 0.6,
+          }))
+        ),
+        // v2 topic pages (/questions/asvab/arithmetic-reasoning, /questions/asvab/afqt).
+        ...topicExamsV2().flatMap((exam) =>
+          examTopicsV2(exam).map((t) => ({
+            url: `${SITE_URL}${topicPathV2(exam, t)}`,
             lastModified: TOPIC_PAGES_UPDATED_AT,
             changeFrequency: "monthly" as const,
             priority: 0.6,

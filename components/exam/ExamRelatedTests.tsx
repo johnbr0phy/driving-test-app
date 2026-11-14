@@ -6,6 +6,7 @@ import { regionHomePath, regionInfo, regionOfTest } from "@/lib/region";
 import { LANGUAGES, type Language } from "@/i18n";
 import { examBaseLanguage, getExamById } from "@/lib/exams";
 import { examTopics, hasTopicPages, topicPath } from "@/lib/topicPages";
+import { examTopicsV2, topicExamV2, topicPathV2 } from "@/lib/v2/topicPages";
 import { COUNTRY_NAMES } from "@/components/home/homeCopy";
 
 const RELATED_COPY: Partial<Record<Language, { title: string; sub: string; country: (name: string) => string; all: (n: number) => string }>> = {
@@ -101,6 +102,27 @@ const RELATED_COPY: Partial<Record<Language, { title: string; sub: string; count
  */
 function ExamTopicLinks({ examId, lang }: { examId: string; lang: Language }) {
   const exam = lang === "en" && hasTopicPages(examId) ? getExamById(examId) : undefined;
+  const v2 = lang === "en" && !exam ? topicExamV2(examId) : undefined;
+  if (v2) {
+    const name = v2.english?.shortName ?? v2.shortName;
+    return (
+      <section aria-labelledby="topic-questions" className="max-w-5xl mx-auto px-6 pt-12 md:pt-16">
+        <h2 id="topic-questions" className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 text-center mb-2">
+          {name} practice questions by section
+        </h2>
+        <p className="text-gray-600 dark:text-gray-300 text-center mb-6">Ten questions on each area of the exam, with the answers explained.</p>
+        <ul className="flex flex-wrap justify-center gap-x-5 gap-y-2">
+          {examTopicsV2(v2).map((t) => (
+            <li key={t.slug}>
+              <Link href={topicPathV2(v2, t)} className="text-brand-dark underline underline-offset-2">
+                {t.title}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </section>
+    );
+  }
   if (!exam) return null;
   return (
     <section aria-labelledby="topic-questions" className="max-w-5xl mx-auto px-6 pt-12 md:pt-16">

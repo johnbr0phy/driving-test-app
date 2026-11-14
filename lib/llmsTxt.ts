@@ -7,6 +7,7 @@ import { NON_DRIVING_TESTS, REGIONS, regionHomePath, regionOfTest } from "./regi
 import { SITE_URL } from "@/lib/siteUrl";
 import { FAMILY_TERMS, STATE_FAMILIES, stateLandingPath, stateVariants } from "./stateLandings";
 import { examTopics, topicExams, topicPath } from "./topicPages";
+import { examTopicsV2, topicExamsV2, topicPathV2 } from "./v2/topicPages";
 
 // /llms.txt and /llms-full.txt (https://llmstxt.org), built from the test
 // catalog, the exam facts and the state data, so a new exam or a changed
@@ -144,7 +145,11 @@ function topicSection(): string {
     const topics = examTopics(exam);
     return `- ${exam.shortName}: ${topics.map((t) => `[${t.label}](${siteUrl}${topicPath(exam, t)})`).join(", ")}`;
   });
-  return `## Practice questions by topic\n\nEach page shows ten original questions on one content area of an exam, with the answer and explanation in plain text.\n\n${lines.join("\n")}`;
+  const v2 = topicExamsV2().map((exam) => {
+    const topics = examTopicsV2(exam);
+    return `- ${exam.english?.shortName ?? exam.shortName}: ${topics.map((t) => `[${t.label}](${siteUrl}${topicPathV2(exam, t)})`).join(", ")}`;
+  });
+  return `## Practice questions by topic\n\nEach page shows ten original questions on one content area of an exam, with the answer and explanation in plain text.\n\n${[...v2, ...lines].join("\n")}`;
 }
 
 export function renderLlmsTxt(): string {

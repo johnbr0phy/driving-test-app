@@ -29,7 +29,7 @@ D9_ITEMS = [
        "organisms", ["minerals", "salts", "bubbles", "stones"],
        "Paragraph D says the filters remove sand, seaweed and tiny organisms. Salts are removed by the membrane itself."),
     CZ(2, "Sentence completion", "Complete the sentence. Choose ONE word from the list.\n\nEngineers design outlets that release brine through many small [[1]] so that it mixes quickly.",
-       "openings", ["chambers", "pipes", "filters", "tanks"],
+       "openings", ["chambers", "screens", "filters", "tanks"],
        "Paragraph E says outlets spread the brine through many small openings so it mixes quickly with the surrounding water."),
     MC(2, "Why does reverse osmosis usually use less energy than distillation?", "It does not need the water to be heated",
        ["Its pumps run for only part of every day", "It treats smaller volumes of water", "It produces no brine at all"],

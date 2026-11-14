@@ -31,7 +31,7 @@ D7_ITEMS = [
        "diver", ["boat", "cable", "battery", "camera"],
        "Paragraph C says a microphone left on the sea floor can record for weeks without a diver."),
     CZ(2, "Sentence completion", "Complete the sentence. Choose ONE word from the list.\n\nThe scientists suggest combining sound with other methods, such as replanting coral [[1]].",
-       "fragments", ["seeds", "larvae", "skeletons", "reefs"],
+       "fragments", ["seeds", "larvae", "skeletons", "shells"],
        "Paragraph E names replanting coral fragments as another tool. Patches of dead coral were part of the experiment in Paragraph D."),
     MC(2, "What happened on the coral patches that had loudspeakers?", "More fish and more species arrived",
        ["The dead coral began to grow again", "Fewer predators were seen there", "The water around them became cooler"],

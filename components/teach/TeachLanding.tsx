@@ -104,10 +104,9 @@ export function TeachLanding({ signedIn }: { signedIn: boolean }) {
     "Real estate, insurance, securities & notary licenses": "Real estate, insurance, securities & notary licences",
     "Social work and counseling exams": "Social work and counselling exams",
   } : {};
-  const newClass = (exam?: string) => {
-    const target = `/teach/new${exam ? `?exam=${exam}` : ""}`;
-    return signedIn ? target : `/signup?redirect=${encodeURIComponent(target)}`;
-  };
+  // Everyone goes straight to the form; signed-out teachers sign in when
+  // they press Create (sending them to /signup first lost 7 in 8).
+  const newClass = (exam?: string) => `/teach/new${exam ? `?exam=${exam}` : ""}`;
   const testCount = TEST_CATALOG.length;
   const jsonLd = {
     "@context": "https://schema.org",

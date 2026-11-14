@@ -8,6 +8,7 @@ import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHe
 import { ExamFacts } from "@/components/exam/ExamFacts";
 import { ExamRelatedTests } from "@/components/exam/ExamRelatedTests";
 import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
+import { ExamPriceFaq, priceFaqJsonLd } from "@/components/exam/ExamPriceFaq";
 import { SITE_URL } from "@/lib/siteUrl";
 import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
 import { examOffers } from "@/lib/examSeo";
@@ -93,6 +94,7 @@ const jsonLd = {
           acceptedAnswer: { "@type": "Answer", text: f.a },
         })),
         classFaqJsonLd("ptcb"),
+        priceFaqJsonLd("ptcb"),
       ],
     },
   ],
@@ -274,6 +276,7 @@ export default function PtcbLandingPage() {
             </div>
           ))}
           <ExamClassFaq examId="ptcb" />
+          <ExamPriceFaq examId="ptcb" />
         </div>
       </div>
 

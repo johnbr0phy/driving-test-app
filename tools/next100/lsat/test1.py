@@ -388,7 +388,7 @@ STAGES = {
            "To reduce litter on its trails, the park district will place more trash cans along them. This will work, because most of the "
            "litter on the trails is dropped by hikers who cannot find a trash can nearby.",
            NEC,
-           ["Many hikers who now drop litter would use a nearby trash can.",
+           ["Some hikers who now drop litter would use a nearby trash can.",
             "Most of the park's visitors use the trails rather than other areas.",
             "Litter on the trails harms wildlife more than litter found elsewhere.",
             "Trash cans reduce litter more than signs asking hikers not to litter.",

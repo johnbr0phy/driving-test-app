@@ -1331,15 +1331,15 @@
       "difficulty": 2,
       "format": "single",
       "stimulusId": "MCAT-T1-CARS-P5",
-      "stem": "As used in the passage, a melody line \"meant to be decorated\" is one that the composer expected performers to:",
+      "stem": "As used in the passage, a melody line that is \"a sketch to be decorated\" is one that the composer expected performers to:",
       "options": [
-        "add notes of their own to",
-        "play exactly as written",
         "transpose into another key",
-        "leave out of the performance"
+        "play exactly as written",
+        "leave out of the performance",
+        "add notes of their own to"
       ],
       "correct": [
-        0
+        3
       ],
       "explanation": "The author explains that such a line was \"a sketch to be decorated\" and the page \"a set of instructions for improvising,\" so performers were expected to add ornaments."
     },
@@ -2316,15 +2316,15 @@
       "difficulty": 2,
       "format": "single",
       "stimulusId": "MCAT-T1-PS-P2",
-      "stem": "Participants who said they did not want to spoil the session for the others were most clearly engaged in:",
+      "stem": "Participants who gave the wrong answer aloud so as not to seem odd to the others, yet answered correctly in private, were most clearly engaged in:",
       "options": [
-        "cognitive dissonance",
-        "role conflict",
         "self-handicapping",
-        "impression management"
+        "impression management",
+        "role conflict",
+        "cognitive dissonance"
       ],
       "correct": [
-        3
+        1
       ],
       "explanation": "Adjusting public behavior to control how others see you is impression management, part of self-presentation. Dissonance is the discomfort of holding conflicting beliefs or acts."
     },
@@ -3416,7 +3416,7 @@
       "stimulusId": "MCAT-T2-CARS-P1",
       "stem": "The main point of the passage is that documenting endangered languages:",
       "options": [
-        "helps only when it serves revival",
+        "should serve revival, not replace it",
         "is useless and should be stopped",
         "is the best way to save a language",
         "should be left to outside scholars"
@@ -3528,7 +3528,7 @@
       "options": [
         "Archives help learners with pronunciation",
         "Some elders are unwilling to take part",
-        "Its child speakers rarely use it as adults",
+        "Child speakers rarely use the language as adults",
         "Such programs cost much more than documentation"
       ],
       "correct": [

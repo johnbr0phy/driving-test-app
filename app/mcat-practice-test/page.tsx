@@ -35,7 +35,7 @@ const faqs = [
   },
   {
     q: "Can I use a calculator on the MCAT?",
-    a: "No. Electronic devices are not allowed, and the exam gives no calculator. The science sections provide a periodic table, and questions are written so that arithmetic, estimation, logarithms and scientific notation can be done by hand on the noteboard. Every calculation in Tigertest's practice tests is written the same way.",
+    a: "No. Personal electronic devices are not allowed, and you do calculations by hand on the noteboard booklet the test center gives you. A periodic table is provided, and questions are written so that arithmetic, estimation, logarithms and scientific notation can be done by hand. Every calculation in Tigertest's practice tests is written the same way.",
   },
   {
     q: "How is this practice test different from the real MCAT?",

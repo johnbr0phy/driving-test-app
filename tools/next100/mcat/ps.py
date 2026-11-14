@@ -154,7 +154,7 @@ ITEMS = [
       "Observers explained behavior by personality (weak-willed) and overlooked the strong situational pressure, which is the fundamental attribution error. The self-serving bias concerns explanations of one's own outcomes.",
       stim="MCAT-T1-PS-P2"),
     Q(1, 2, F8, "8C Self-presentation",
-      "Participants who said they did not want to spoil the session for the others were most clearly engaged in:",
+      "Participants who gave the wrong answer aloud so as not to seem odd to the others, yet answered correctly in private, were most clearly engaged in:",
       ["impression management", "cognitive dissonance", "role conflict", "self-handicapping"],
       "Adjusting public behavior to control how others see you is impression management, part of self-presentation. Dissonance is the discomfort of holding conflicting beliefs or acts.",
       stim="MCAT-T1-PS-P2"),

@@ -340,14 +340,14 @@
   "state": "ALL",
   "questionId": "U-025",
   "category": "roadSigns",
-  "question": "Biển báo có hình các gờ nhô lên cho biết điều gì?",
-  "optionA": "Mặt đường gồ ghề",
-  "optionB": "Có gờ giảm tốc phía trước",
-  "optionC": "Các làn đường không bằng phẳng",
-  "optionD": "Có chỗ trũng trên đường",
+  "question": "Biển cảnh báo BUMP màu vàng có nghĩa là gì?",
+  "optionA": "Mặt đường nhô cao đột ngột phía trước",
+  "optionB": "Khu vực tốc độ trường học phía trước",
+  "optionC": "Làn đường sắp đóng phía trước",
+  "optionD": "Mặt đường trũng xuống đột ngột phía trước",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "Biển báo này cảnh báo phía trước có mặt đường không bằng phẳng hoặc gồ ghề."
+  "explanation": "Biển BUMP cảnh báo mặt đường nhô cao đột ngột, vì vậy hãy giảm tốc độ. Chỗ mặt đường trũng xuống đột ngột được đánh dấu bằng biển DIP."
  },
  {
   "type": "Universal",
@@ -638,10 +638,10 @@
   "optionA": "Tốc độ",
   "optionB": "Chiều rộng làn đường",
   "optionC": "Thời gian đậu xe",
-  "optionD": "Tải trọng của cầu",
+  "optionD": "Trọng lượng xe",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "Biển báo giới hạn trọng lượng cho biết trọng lượng xe tối đa được phép, thường là trên các cây cầu."
+  "explanation": "Biển giới hạn trọng lượng quy định xe nặng nhất được phép đi trên con đường hoặc cây cầu đó. Biển này không giới hạn tốc độ, độ rộng làn đường hay việc đậu xe."
  },
  {
   "type": "Universal",
@@ -664,12 +664,12 @@
   "category": "roadSigns",
   "question": "Chữ END trên biển báo giao thông cho biết điều gì?",
   "optionA": "Con đường kết thúc",
-  "optionB": "Sự hạn chế kết thúc",
-  "optionC": "Khu vực giới hạn tốc độ kết thúc",
-  "optionD": "Bất kỳ điều nào trong số này",
+  "optionB": "Bạn phải dừng ở phía trước",
+  "optionC": "Một làn đường mới bắt đầu",
+  "optionD": "Một khu vực hoặc quy định đã ghi trên biển kết thúc",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "Chữ END trên biển báo cho biết một quy định hoặc khu vực đã được niêm yết trước đó không còn hiệu lực nữa."
+  "explanation": "Chữ END trên biển báo, như END SCHOOL ZONE hoặc END ROAD WORK, có nghĩa là khu vực hoặc quy định đã ghi trên biển trước đó không còn áp dụng nữa. Con đường bị cụt được đánh dấu bằng một biển cảnh báo riêng, không chỉ bằng chữ END."
  },
  {
   "type": "Universal",
@@ -677,13 +677,13 @@
   "questionId": "U-049",
   "category": "roadSigns",
   "question": "Biển báo làn xe đạp cho biết điều gì?",
-  "optionA": "Chỉ xe đạp được đi trong làn này",
+  "optionA": "Làn dành riêng cho xe đạp",
   "optionB": "Cấm xe đạp",
-  "optionC": "Xe đạp có thể sử dụng",
+  "optionC": "Xe đạp đi chung làn với ô tô",
   "optionD": "Chỗ đậu xe đạp",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "Biển báo làn xe đạp đánh dấu các làn đường được dành riêng cho xe đạp sử dụng."
+  "explanation": "Biển báo làn xe đạp đánh dấu làn đường dành riêng cho xe đạp. Tài xế chỉ được đi vào hoặc cắt ngang làn này để rẽ hoặc đậu xe ở nơi được phép, sau khi nhường đường cho người đi xe đạp."
  },
  {
   "type": "Universal",
@@ -760,14 +760,14 @@
   "state": "ALL",
   "questionId": "U-055",
   "category": "rulesOfRoad",
-  "question": "Khi nào bạn có thể vượt xe buýt trường học đang bật đèn đỏ nhấp nháy?",
-  "optionA": "Chỉ khi đi ngược chiều trên đường cao tốc có dải phân cách",
+  "question": "Ở hầu hết các bang, khi nào bạn có thể vượt xe buýt trường học đang bật đèn đỏ nhấp nháy?",
+  "optionA": "Đi ngược chiều trên đường cao tốc có dải phân cách hoặc rào chắn",
   "optionB": "Khi tài xế xe buýt vẫy tay cho bạn vượt qua xe buýt đang dừng",
   "optionC": "Khi không thấy trẻ em nào gần chiếc xe buýt trường học đang dừng",
   "optionD": "Bạn không bao giờ được vượt xe buýt trường học có đèn đỏ nhấp nháy",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "Trên đường cao tốc có dải phân cách ở giữa, bạn có thể đi tiếp khi đang di chuyển theo hướng ngược lại."
+  "explanation": "Hầu hết các bang cho phép xe đi theo hướng ngược lại tiếp tục di chuyển khi đường cao tốc được chia bằng dải phân cách hoặc rào chắn vật lý. Một số bang, như New York, yêu cầu mọi tài xế phải dừng, vì vậy hãy kiểm tra quy định của bang bạn."
  },
  {
   "type": "Universal",
@@ -830,14 +830,14 @@
   "state": "ALL",
   "questionId": "U-060",
   "category": "rulesOfRoad",
-  "question": "Bạn phải bật đèn báo rẽ trước khi rẽ bao xa?",
+  "question": "Ở hầu hết các bang, bạn phải bật đèn báo rẽ trước khi rẽ bao xa?",
   "optionA": "25 feet",
   "optionB": "50 feet",
   "optionC": "100 feet",
   "optionD": "200 feet",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Bật đèn báo rẽ ít nhất 100 feet (khoảng 30 mét) trước khi rẽ để cảnh báo đầy đủ cho các tài xế khác."
+  "explanation": "Hầu hết các bang yêu cầu bật đèn báo rẽ ít nhất 100 feet trước khi rẽ. Một số bang yêu cầu xa hơn trên đường nông thôn hoặc đường tốc độ cao, như 200 feet ở Illinois bên ngoài khu thương mại."
  },
  {
   "type": "Universal",
@@ -847,25 +847,25 @@
   "question": "Khi nào bạn nên dùng đèn pha?",
   "optionA": "Chỉ vào ban đêm",
   "optionB": "Khi tầm nhìn bị giảm",
-  "optionC": "Từ lúc mặt trời lặn đến lúc mặt trời mọc",
+  "optionC": "Từ chạng vạng đến rạng sáng",
   "optionD": "Cả B và C",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "Phải dùng đèn pha từ lúc mặt trời lặn đến lúc mặt trời mọc và bất cứ khi nào tầm nhìn bị giảm."
+  "explanation": "Phải bật đèn pha trong khoảng từ lúc mặt trời lặn đến lúc mặt trời mọc (nhiều bang quy định từ 30 phút sau khi mặt trời lặn đến 30 phút trước khi mặt trời mọc) và bất cứ khi nào mưa, sương mù hoặc bóng tối làm giảm tầm nhìn. Chỉ bật đèn vào ban đêm là bỏ sót quy định về tầm nhìn kém."
  },
  {
   "type": "Universal",
   "state": "ALL",
   "questionId": "U-062",
   "category": "rulesOfRoad",
-  "question": "Khoảng cách theo sau phù hợp trong điều kiện lý tưởng là bao nhiêu?",
+  "question": "Hầu hết sổ tay lái xe của các bang khuyến nghị khoảng cách theo sau bao nhiêu trong điều kiện lý tưởng?",
   "optionA": "1 giây",
   "optionB": "2 giây",
   "optionC": "3-4 giây",
   "optionD": "5 giây",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Giữ khoảng cách theo sau ít nhất 3-4 giây trong điều kiện lái xe bình thường."
+  "explanation": "Hầu hết sổ tay lái xe của các bang khuyến nghị giữ khoảng cách ít nhất 3 đến 4 giây sau xe phía trước trong điều kiện tốt, và xa hơn khi thời tiết xấu. Hai giây là quá ít thời gian để phản ứng ở tốc độ đường cao tốc."
  },
  {
   "type": "Universal",
@@ -1096,28 +1096,28 @@
   "state": "ALL",
   "questionId": "U-079",
   "category": "rulesOfRoad",
-  "question": "Bạn được đậu xe cách trụ nước cứu hỏa gần nhất là bao nhiêu?",
+  "question": "Ở hầu hết các bang, bạn được đậu xe cách trụ nước cứu hỏa gần nhất là bao nhiêu?",
   "optionA": "5 feet",
   "optionB": "10 feet",
   "optionC": "15 feet",
   "optionD": "20 feet",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Bạn phải đậu xe cách trụ nước cứu hỏa ít nhất 15 feet (khoảng 4,5 mét) để bảo đảm lối tiếp cận khẩn cấp."
+  "explanation": "Hầu hết các bang yêu cầu bạn đậu xe cách trụ nước cứu hỏa ít nhất 15 feet để lính cứu hỏa có thể tiếp cận. Một vài bang, như Massachusetts và New Jersey, dùng mức 10 feet."
  },
  {
   "type": "Universal",
   "state": "ALL",
   "questionId": "U-080",
   "category": "rulesOfRoad",
-  "question": "Bạn được đậu xe cách vạch qua đường dành cho người đi bộ gần nhất là bao nhiêu?",
+  "question": "Ở hầu hết các bang, bạn được đậu xe cách lối qua đường tại giao lộ gần nhất là bao nhiêu?",
   "optionA": "10 feet",
   "optionB": "15 feet",
   "optionC": "20 feet",
   "optionD": "25 feet",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Không đậu xe trong phạm vi 20 feet (khoảng 6 mét) tính từ vạch qua đường dành cho người đi bộ để giữ tầm nhìn cho người đi bộ."
+  "explanation": "Hầu hết các bang cấm đậu xe trong phạm vi 20 feet tính từ lối qua đường tại giao lộ để tài xế có thể nhìn thấy người đi bộ. Một vài bang đặt khoảng cách khác, như 25 feet ở New Jersey."
  },
  {
   "type": "Universal",
@@ -1575,11 +1575,11 @@
   "question": "Vị trí đặt tay an toàn nhất trên vô-lăng là ở đâu?",
   "optionA": "10 giờ và 2 giờ",
   "optionB": "9 giờ và 3 giờ",
-  "optionC": "8 giờ và 4 giờ",
+  "optionC": "Một tay ở vị trí 6 giờ",
   "optionD": "12 giờ",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "Vị trí 9 giờ và 3 giờ giúp kiểm soát tốt nhất và giảm nguy cơ chấn thương khi túi khí bung ra."
+  "explanation": "Cầm vô-lăng ở vị trí 9 giờ và 3 giờ giúp kiểm soát tốt và giữ cánh tay tránh khỏi đường bung của túi khí. Vị trí 10 giờ và 2 giờ kiểu cũ đặt tay bạn ở chỗ túi khí bung ra có thể hất tay ngược vào người bạn."
  },
  {
   "type": "Universal",
@@ -1684,14 +1684,14 @@
   "state": "ALL",
   "questionId": "U-122",
   "category": "safeDriving",
-  "question": "Bạn nên làm gì trước khi lên xe?",
+  "question": "Bạn nên làm gì trước khi lái xe đi?",
   "optionA": "Kiểm tra xung quanh xe",
   "optionB": "Chỉnh tất cả kính chiếu hậu",
   "optionC": "Thắt dây an toàn",
   "optionD": "Tất cả các câu trên",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "Đi vòng quanh để kiểm tra vật cản, sau đó chỉnh kính chiếu hậu và thắt dây an toàn."
+  "explanation": "Đi vòng quanh xe để kiểm tra nguy hiểm trước khi lên xe, sau đó chỉnh kính chiếu hậu và thắt dây an toàn trước khi chạy. Mỗi bước đều là một phần của việc chuẩn bị lái xe."
  },
  {
   "type": "Universal",
@@ -1758,10 +1758,10 @@
   "optionA": "Vượt khi đường thông thoáng",
   "optionB": "Cắt ngang đoàn xe tang",
   "optionC": "Giữ nguyên cách lái bình thường",
-  "optionD": "Tấp vào lề và chờ",
+  "optionD": "Nhường đường và để đoàn đi qua",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "Tấp vào lề hoặc chờ đoàn xe tang đi qua như một sự tôn trọng và vì lý do an toàn."
+  "explanation": "Hãy nhường đường cho đoàn xe tang và để đoàn đi qua, và không bao giờ chen vào giữa hàng xe. Tiếp tục lái như bình thường có thể khiến bạn cắt ngang đoàn xe tang."
  },
  {
   "type": "Universal",
@@ -2216,14 +2216,14 @@
   "state": "ALL",
   "questionId": "U-160",
   "category": "alcoholDUI",
-  "question": "Bạn nên làm gì khi gặp lốc xoáy trong lúc đang lái xe?",
-  "optionA": "Lái xe ra xa khỏi lốc xoáy nhanh nhất có thể",
+  "question": "Điều tốt nhất nên làm là gì nếu lốc xoáy đến gần trong lúc bạn đang lái xe?",
+  "optionA": "Mở cửa sổ để cân bằng áp suất",
   "optionB": "Đậu xe dưới gầm cầu vượt để tránh gió",
   "optionC": "Tăng tốc để cố chạy nhanh hơn đường đi của lốc xoáy",
-  "optionD": "Ra khỏi xe và nằm xuống một khu vực thấp gần đó",
+  "optionD": "Lái đến nơi trú ẩn kiên cố gần nhất",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "Nếu không có tòa nhà nào để trú ẩn, hãy rời khỏi xe và nằm sát đất ở một khu vực thấp, cách xa các xe cộ."
+  "explanation": "Cơ quan Thời tiết Quốc gia cho biết hành động tốt nhất là lái đến nơi trú ẩn kiên cố gần nhất. Nếu không thể, hãy cúi thấp trong xe và che đầu, hoặc rời xe xuống một con mương; cầu vượt không bảo vệ bạn khỏi gió và mảnh vỡ."
  },
  {
   "type": "Universal",
@@ -2342,14 +2342,14 @@
   "state": "AK",
   "questionId": "AK-008",
   "category": "gdlLicensing",
-  "question": "Ở Alaska, bạn có thể lấy bằng lái không hạn chế ở tuổi nào?",
-  "optionA": "16 tuổi",
-  "optionB": "17 tuổi",
-  "optionC": "19 tuổi",
-  "optionD": "18 tuổi",
+  "question": "Người lớn giám sát người có giấy phép học lái ở Alaska phải có bằng lái được bao lâu?",
+  "optionA": "Ít nhất 3 năm",
+  "optionB": "Ít nhất 2 năm",
+  "optionC": "Ít nhất 5 năm",
+  "optionD": "Ít nhất 1 năm",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "Tài xế Alaska có thể lấy bằng lái không hạn chế ở tuổi 18, sau khi hoàn thành tất cả các giai đoạn GDL và tích lũy đủ kinh nghiệm lái xe."
+  "explanation": "Theo AS 28.15.051, người lái xe giám sát phải ít nhất 21 tuổi, đã có bằng lái loại xe đó ít nhất một năm và ngồi bên cạnh người có giấy phép học lái."
  },
  {
   "type": "State-Specific",
@@ -2498,12 +2498,12 @@
   "category": "duiStateLaws",
   "question": "Lốp đinh được phép sử dụng khi nào trên các tuyến đường phía bắc vĩ độ 60° Bắc ở Alaska?",
   "optionA": "1 tháng 10 đến 30 tháng 4",
-  "optionB": "16 tháng 9 đến 1 tháng 5",
+  "optionB": "16 tháng 9 đến 30 tháng 4",
   "optionC": "1 tháng 11 đến 31 tháng 3",
   "optionD": "15 tháng 10 đến 15 tháng 4",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "Phía bắc vĩ độ 60° Bắc — bao gồm Anchorage và Fairbanks — lốp đinh hợp pháp từ 16 tháng 9 đến 1 tháng 5, phản ánh mùa đông dài hơn ở miền bắc Alaska."
+  "explanation": "AS 28.35.155 cấm lốp đinh ở phía bắc vĩ độ 60° Bắc từ ngày 1 tháng 5 đến ngày 15 tháng 9, nên lốp đinh hợp pháp từ ngày 16 tháng 9 đến ngày 30 tháng 4. Ở phía nam vĩ độ 60°, lệnh cấm kéo dài từ ngày 15 tháng 4 đến ngày 30 tháng 9."
  },
  {
   "type": "State-Specific",
@@ -3105,7 +3105,7 @@
   "optionD": "0,06%",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "Alabama đặt giới hạn BAC hợp pháp ở mức 0,08% đối với tài xế từ 21 tuổi trở lên — cùng tiêu chuẩn mà cả 50 bang áp dụng theo hướng dẫn liên bang."
+  "explanation": "Giới hạn BAC ở Alabama đối với tài xế từ 21 tuổi trở lên là 0,08%. Mọi bang đều dùng mức 0,08% trừ Utah, nơi đã hạ giới hạn xuống 0,05%."
  },
  {
   "type": "State-Specific",
@@ -3451,11 +3451,11 @@
   "question": "Giấy phép học lái ở Arkansas hết hạn khi nào?",
   "optionA": "Sau khi đủ 2 năm",
   "optionB": "Khi người giữ bằng đủ 18 tuổi",
-  "optionC": "Vào sinh nhật lần thứ 16 của người giữ bằng",
+  "optionC": "Một tháng sau sinh nhật lần thứ 16",
   "optionD": "Sau khi đủ 18 tháng",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Giấy phép học lái ở Arkansas tự động hết hạn vào sinh nhật lần thứ 16 của người giữ bằng, khi họ đủ điều kiện xin bằng lái trung cấp."
+  "explanation": "Theo DFA Arkansas, giấy phép học lái hết hạn một tháng sau sinh nhật lần thứ 16 của người giữ bằng. Bằng lái trung cấp dành cho người 16 và 17 tuổi."
  },
  {
   "type": "State-Specific",
@@ -4652,14 +4652,14 @@
   "state": "CO",
   "questionId": "CO-013",
   "category": "speedLimits",
-  "question": "Giới hạn tốc độ trong khu vực trường học ở Colorado khi có trẻ em hiện diện là bao nhiêu?",
-  "optionA": "15 mph",
-  "optionB": "20 mph",
-  "optionC": "25 mph",
-  "optionD": "30 mph",
+  "question": "Giới hạn tốc độ nào áp dụng trong khu vực trường học ở Colorado trong khung giờ ghi trên biển?",
+  "optionA": "Luôn là 15 mph trên toàn bang",
+  "optionB": "Giới hạn ghi trên biển khu vực trường học",
+  "optionC": "Luôn là 25 mph trên toàn bang",
+  "optionD": "Thấp hơn giới hạn thông thường 10 mph",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "Khu vực trường học ở Colorado có giới hạn tốc độ 20 mph khi có trẻ em hiện diện trong khung giờ khu vực trường học được ghi trên biển."
+  "explanation": "Colorado không có một con số chung cho khu vực trường học trên toàn bang; giới hạn của mỗi khu vực được đặt theo nghiên cứu giao thông và ghi trên biển. CDOT coi tốc độ ghi trên biển khu vực trường học là giới hạn tuyệt đối, không được vượt quá trong thời gian áp dụng."
  },
  {
   "type": "State-Specific",
@@ -4724,12 +4724,12 @@
   "category": "stateUnique",
   "question": "Khi nào bắt buộc phải bật đèn pha khi lái xe ở Colorado?",
   "optionA": "Chỉ từ lúc hoàng hôn đến lúc bình minh",
-  "optionB": "Khi cần gạt nước kính chắn gió đang được dùng liên tục",
+  "optionB": "Khi bạn không nhìn rõ 1.000 feet phía trước",
   "optionC": "Chỉ trong khu vực thi công mọi lúc",
   "optionD": "Khi tầm nhìn dưới một dặm",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "Luật Colorado yêu cầu bật đèn pha bất cứ khi nào cần gạt nước kính chắn gió được dùng liên tục do thời tiết, ngoài yêu cầu tiêu chuẩn từ hoàng hôn đến bình minh."
+  "explanation": "C.R.S. 42-4-204 yêu cầu bật đèn từ lúc mặt trời lặn đến lúc mặt trời mọc và bất cứ khi nào không nhìn rõ người và xe ở khoảng cách 1.000 feet phía trước. Chỉ tính từ hoàng hôn đến bình minh thì bỏ sót quy định về tầm nhìn kém, và Colorado không có luật đèn pha gắn với việc dùng cần gạt nước."
  },
  {
   "type": "State-Specific",
@@ -4834,14 +4834,14 @@
   "state": "CO",
   "questionId": "CO-026",
   "category": "duiStateLaws",
-  "question": "Giới hạn pháp lý về THC khi lái xe ở Colorado là bao nhiêu?",
+  "question": "Ở mức THC trong máu nào tòa án Colorado có thể suy đoán tài xế bị suy giảm khả năng lái?",
   "optionA": "10 nanogram trên mỗi mililit máu",
   "optionB": "5 nanogram trên mỗi mililit máu",
   "optionC": "15 nanogram trên mỗi mililit máu",
   "optionD": "2 nanogram trên mỗi mililit máu",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "Luật Colorado quy định 5 nanogram THC trên mỗi mililit máu là giới hạn pháp lý, với cùng mức phạt như DUI do rượu."
+  "explanation": "Theo C.R.S. 42-4-1301, từ 5 nanogram THC trở lên trên mỗi mililit máu toàn phần cho phép suy đoán rằng tài xế đang bị ảnh hưởng. Đây không phải là giới hạn cố định như mức 0,08% đối với rượu, và tài xế vẫn có thể bị buộc tội ở mức thấp hơn."
  },
  {
   "type": "State-Specific",
@@ -5366,14 +5366,14 @@
   "state": "CT",
   "questionId": "CT-024",
   "category": "speedLimits",
-  "question": "Giới hạn tốc độ mặc định ở khu dân cư và khu thương mại Connecticut là bao nhiêu?",
-  "optionA": "20 mph",
-  "optionB": "25 mph",
-  "optionC": "30 mph",
-  "optionD": "35 mph",
+  "question": "Ai phải chấp thuận giới hạn tốc độ mà một thị trấn ở Connecticut đặt trên đường của mình?",
+  "optionA": "Chỉ riêng cảnh sát trưởng thị trấn",
+  "optionB": "Văn phòng Quản lý Giao thông Tiểu bang",
+  "optionC": "Giám đốc DMV của bang",
+  "optionD": "Hội đồng trường học địa phương",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "Giới hạn tốc độ mặc định ở khu dân cư và khu thương mại Connecticut là 25 mph trừ khi có biển báo khác."
+  "explanation": "Văn phòng Quản lý Giao thông Tiểu bang Connecticut đặt giới hạn tốc độ trên đường của bang và phải chấp thuận mọi giới hạn do cơ quan giao thông của thị trấn đặt trước khi có hiệu lực (CGS 14-218a). Giới hạn tốc độ được ghi trên biển sau khi có nghiên cứu kỹ thuật."
  },
  {
   "type": "State-Specific",
@@ -5480,12 +5480,12 @@
   "category": "stateUnique",
   "question": "Loại dải phân cách nào miễn cho xe chiều ngược lại việc dừng khi gặp xe buýt trường học ở Connecticut?",
   "optionA": "Bất kỳ vạch giữa đường sơn hoặc dải phân cách sơn nào",
-  "optionB": "Dải phân cách vật lý hoặc rào chắn ít nhất bốn feet",
+  "optionB": "Đảo an toàn hoặc rào chắn vật lý",
   "optionC": "Làn rẽ ở giữa",
   "optionD": "Vạch vàng đôi",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "Theo CGS § 14-279, chỉ dải phân cách vật lý, rào chắn, hoặc khu vực chưa trải nhựa ít nhất bốn feet mới được tính là dải phân cách. Dải phân cách sơn và làn rẽ không được tính."
+  "explanation": "Theo CGS 14-279, tài xế trên đường cao tốc có đảo an toàn hoặc rào chắn vật lý ngăn cách không cần dừng cho xe buýt trường học ở phía bên kia. Vạch sơn hoặc làn rẽ giữa không được tính, nên cả hai chiều phải dừng."
  },
  {
   "type": "State-Specific",
@@ -5761,11 +5761,11 @@
   "question": "Người lái xe giám sát phải ngồi ở đâu khi đi kèm người có giấy phép GDL Delaware?",
   "optionA": "Ở ghế sau ngay sau người lái",
   "optionB": "Bất kỳ chỗ nào trên xe",
-  "optionC": "Ở ghế hành khách phía trước",
+  "optionC": "Ở bất kỳ ghế nào có dây an toàn",
   "optionD": "Bên cạnh người lái ở ghế trước",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "Người lái xe giám sát phải ngồi bên cạnh người có giấy phép ở ghế hành khách phía trước."
+  "explanation": "Người lái xe giám sát phải ngồi ở ghế trước bên cạnh người có giấy phép, đủ gần để hỗ trợ. Ngồi ở ghế sau hoặc bất kỳ chỗ nào khác đều không đáp ứng quy định."
  },
  {
   "type": "State-Specific",
@@ -6141,9 +6141,9 @@
   "optionB": "Newark",
   "optionC": "Dover",
   "optionD": "Rehoboth Beach",
-  "correctAnswer": "C",
-  "correctIndex": 2,
-  "explanation": "Dover tự vận hành và thực thi chương trình camera đèn đỏ của riêng mình."
+  "correctAnswer": "A",
+  "correctIndex": 0,
+  "explanation": "Wilmington tự vận hành chương trình camera đèn đỏ của riêng mình, được DelDOT xem xét hằng năm. Các camera ở nơi khác, kể cả ở Dover, thuộc Chương trình An toàn Đèn đỏ Điện tử toàn bang của DelDOT."
  },
  {
   "type": "State-Specific",
@@ -6360,7 +6360,7 @@
   "state": "FL",
   "questionId": "FL-015",
   "category": "cellPhone",
-  "question": "Mức phạt cơ bản cho lần nhắn tin thứ hai trong vòng năm năm ở Florida là bao nhiêu?",
+  "question": "Điều gì xảy ra khi vi phạm nhắn tin lần thứ hai trong vòng năm năm ở Florida?",
   "optionA": "Không phạt, chỉ cảnh cáo",
   "optionB": "Giống lần vi phạm đầu",
   "optionC": "Phạt cao hơn cộng điểm",
@@ -6420,10 +6420,10 @@
   "optionA": "0,05%",
   "optionB": "0,08%",
   "optionC": "0,02%",
-  "optionD": "Không khoan nhượng",
+  "optionD": "0,04%",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Florida có chính sách không khoan nhượng với giới hạn BAC 0,02% đối với tài xế dưới 21 tuổi."
+  "explanation": "Luật không khoan nhượng của Florida đình chỉ bằng lái của tài xế dưới 21 tuổi có BAC từ 0,02% trở lên. Giới hạn 0,08% áp dụng cho người lớn, và 0,04% là giới hạn cho tài xế xe thương mại."
  },
  {
   "type": "State-Specific",
@@ -6850,14 +6850,14 @@
   "state": "GA",
   "questionId": "GA-010",
   "category": "gdlLicensing",
-  "question": "Ai đủ điều kiện làm người lái xe giám sát cho một người giữ bằng tập lái ở Georgia?",
-  "optionA": "Bất kỳ thành viên gia đình nào có bằng lái",
-  "optionB": "Một người lái xe có bằng, ít nhất 21 tuổi",
-  "optionC": "Bất kỳ ai đã giữ bằng lái được 5 năm",
-  "optionD": "Chỉ cha mẹ hoặc người giám hộ hợp pháp",
+  "question": "Thanh thiếu niên Georgia phải hoàn thành chương trình nào trước khi lấy bằng lái hạng D?",
+  "optionA": "Khóa học lái xe phòng vệ",
+  "optionB": "Chương trình Nhận thức về Rượu và Ma túy",
+  "optionC": "Khóa học an toàn xe máy",
+  "optionD": "Khóa học sơ cứu",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "Người lái xe giám sát cho người giữ bằng tập lái phải là một người lái xe có bằng, ít nhất 21 tuổi."
+  "explanation": "DDS Georgia yêu cầu chứng nhận đã hoàn thành Chương trình Nhận thức về Rượu và Ma túy (ADAP) để được cấp bằng lái tạm thời hạng D. Các khóa lái xe phòng vệ và sơ cứu không đáp ứng quy định này."
  },
  {
   "type": "State-Specific",
@@ -7384,12 +7384,12 @@
   "category": "gdlLicensing",
   "question": "Bạn phải hoàn thành gì trước khi nộp đơn xin bằng lái tạm thời ở Hawaii?",
   "optionA": "Bài thi viết và kiểm tra thị lực",
-  "optionB": "Đào tạo thực hành lái xe và thi đường trường",
+  "optionB": "Chỉ một khóa học lái xe phòng vệ",
   "optionC": "Kiểm tra thị lực và học lý thuyết trên lớp",
   "optionD": "Học lý thuyết trên lớp và giáo dục thực hành lái xe",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "Người nộp đơn phải hoàn thành cả khóa học lý thuyết trên lớp và giáo dục thực hành lái xe trước khi nộp đơn xin bằng lái tạm thời."
+  "explanation": "Hawaii yêu cầu cả giáo dục lái xe trên lớp lẫn đào tạo thực hành lái xe trước khi cấp bằng lái tạm thời. Chỉ một khóa học lái xe phòng vệ thì không đáp ứng yêu cầu."
  },
  {
   "type": "State-Specific",
@@ -7760,14 +7760,14 @@
   "state": "HI",
   "questionId": "HI-035",
   "category": "stateUnique",
-  "question": "Đi bộ sang đường không đúng chỗ có hợp pháp ở Hawaii không?",
-  "optionA": "Có, ở bất kỳ đâu ngoài khu thương mại",
-  "optionB": "Có, nếu không có xe",
-  "optionC": "Không, đó là bất hợp pháp",
-  "optionD": "Có, nếu thận trọng",
+  "question": "Giữa hai giao lộ ở Hawaii có đèn tín hiệu đang hoạt động, người đi bộ được sang đường ở đâu?",
+  "optionA": "Ở bất kỳ đâu ngoài khu thương mại",
+  "optionB": "Ở bất kỳ đâu nếu không có xe",
+  "optionC": "Chỉ ở lối qua đường có vạch kẻ",
+  "optionD": "Ở bất kỳ đâu, nếu thận trọng",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Đi bộ sang đường không đúng chỗ là bất hợp pháp."
+  "explanation": "Theo HRS 291C-73(c), giữa hai giao lộ liền kề có đèn tín hiệu, người đi bộ chỉ được sang đường ở lối qua đường có vạch kẻ, phạt 100 đô la nếu vi phạm. Ở những nơi khác, họ chỉ được sang đường ngoài lối qua đường nếu nhường đường cho mọi xe."
  },
  {
   "type": "State-Specific",
@@ -8420,12 +8420,12 @@
   "category": "gdlLicensing",
   "question": "Bạn phải giữ giấy phép học lái có giám sát bao lâu sau khi hoàn thành giáo dục lái xe trước khi lấy bằng?",
   "optionA": "Tối thiểu 3 tháng",
-  "optionB": "6 tháng hoặc 17 tuổi",
+  "optionB": "Ít nhất 6 tháng",
   "optionC": "Tối thiểu 1 năm",
   "optionD": "Tối thiểu 9 tháng",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "Sau khi hoàn thành giáo dục lái xe, bạn phải giữ giấy phép học lái có giám sát đến 17 tuổi hoặc trong 6 tháng, tùy thời gian nào dài hơn."
+  "explanation": "Idaho Code 49-307 cho phép người có giấy phép học lái nộp đơn xin bằng lái không sớm hơn 6 tháng sau khi hoàn thành khóa đào tạo lái xe, và chỉ khi từ 15 tuổi trở lên. Trong thời gian đó, họ phải ghi lại ít nhất 50 giờ lái có giám sát, trong đó 10 giờ sau khi trời tối."
  },
  {
   "type": "State-Specific",
@@ -8880,14 +8880,14 @@
   "state": "ID",
   "questionId": "ID-035",
   "category": "stateUnique",
-  "question": "Bạn nên làm gì khi một xe chạy chậm trên đường cao tốc hai làn có từ ba xe trở lên phía sau?",
+  "question": "Trên đường hai làn ở Idaho, tài xế chạy chậm có từ 3 xe trở lên phía sau phải làm gì?",
   "optionA": "Nháy đèn về phía họ",
   "optionB": "Vượt ngay khi an toàn",
-  "optionC": "Tấp vào chỗ tránh gần nhất",
+  "optionC": "Tấp vào chỗ tránh hoặc chỗ an toàn kế tiếp",
   "optionD": "Bấm còi về phía họ",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Xe chạy chậm có từ ba xe trở lên phía sau phải tấp vào chỗ tránh gần nhất."
+  "explanation": "Idaho Code 49-639 yêu cầu tài xế ở ngoài khu đô thị, khi có từ ba xe trở lên xếp hàng phía sau và việc vượt không an toàn, phải tấp vào chỗ tránh hoặc chỗ an toàn gần nhất. Bật đèn nhấp nháy hoặc bấm còi với hàng xe phía sau không đáp ứng nghĩa vụ này."
  },
  {
   "type": "State-Specific",
@@ -9192,24 +9192,24 @@
   "optionA": "Khi báo cáo tình huống khẩn cấp",
   "optionB": "Chỉ khi đèn đỏ",
   "optionC": "Chỉ được phép ở bãi đỗ xe",
-  "optionD": "Khi giao thông đã dừng hoàn toàn",
+  "optionD": "Khi lái dưới 10 mph",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "Luật Illinois chỉ cho phép dùng điện thoại cầm tay khi xe đã đỗ trên vai đường hoặc khi báo cáo tình huống khẩn cấp."
+  "explanation": "Illinois cho phép dùng điện thoại cầm tay để báo cáo tình huống khẩn cấp. Các ngoại lệ khác gồm khi đỗ trên vai đường hoặc khi dừng do giao thông bị cản trở với số ở vị trí N hoặc P, nhưng chạy chậm không bao giờ là ngoại lệ."
  },
  {
   "type": "State-Specific",
   "state": "IL",
   "questionId": "IL-018",
   "category": "cellPhone",
-  "question": "Tài xế Illinois có được dùng điện thoại cầm tay khi dừng đèn đỏ hoặc trong kẹt xe không?",
-  "optionA": "Được, khi giao thông đã dừng hoàn toàn",
-  "optionB": "Không, vẫn bị cấm ngay cả khi đã dừng",
-  "optionC": "Được, chỉ khi đèn đỏ",
-  "optionD": "Được, khi phanh đỗ đã kéo",
+  "question": "Một tài xế Illinois đang dừng vì giao thông phía trước bị chặn. Khi nào họ được dùng điện thoại cầm tay?",
+  "optionA": "Không bao giờ, kể cả khi đã dừng hẳn",
+  "optionB": "Khi xe ở số P hoặc N",
+  "optionC": "Bất cứ lúc nào đang đạp phanh",
+  "optionD": "Chỉ sau khi tắt máy",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "Illinois cấm dùng thiết bị điện tử cầm tay khi lái xe, ngay cả khi dừng đèn đỏ hoặc kẹt xe."
+  "explanation": "Illinois cho phép dùng thiết bị khi xe dừng do giao thông bình thường bị cản trở và hộp số ở vị trí N hoặc P. Chỉ đạp phanh khi đang ở số D thì không được tính."
  },
  {
   "type": "State-Specific",
@@ -9398,14 +9398,14 @@
   "state": "IL",
   "questionId": "IL-032",
   "category": "stateUnique",
-  "question": "Luật Scott's Law của Illinois yêu cầu gì khi tiến đến gần xe khẩn cấp đang dừng?",
-  "optionA": "Giữ tốc độ hiện tại",
-  "optionB": "Bấm còi để báo cho nhân viên ứng cứu",
-  "optionC": "Giảm tốc độ và chuyển sang làn khác",
-  "optionD": "Dừng hoàn toàn phía sau họ",
+  "question": "Trên đường ở Illinois có ít nhất bốn làn, ai phải dừng cho xe buýt trường học đang nháy đèn đỏ?",
+  "optionA": "Xe ở cả hai chiều",
+  "optionB": "Chỉ xe đi ngược chiều",
+  "optionC": "Chỉ xe đi cùng chiều với xe buýt",
+  "optionD": "Không ai cả, nếu trẻ em đi trên vỉa hè",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Luật Scott's Law của Illinois yêu cầu tài xế giảm tốc độ và chuyển sang làn khác khi có thể khi tiến đến gần xe khẩn cấp đang dừng có đèn bật."
+  "explanation": "Trên đường có từ bốn làn trở lên, chỉ xe đi cùng chiều với xe buýt phải dừng. Trên đường hai làn, xe ở cả hai chiều phải dừng."
  },
  {
   "type": "State-Specific",
@@ -9611,11 +9611,11 @@
   "question": "Sau 180 ngày đầu, người có bằng lái thử thách không được lái khi nào từ Chủ nhật đến thứ Năm?",
   "optionA": "Nửa đêm đến 5 giờ sáng từ Chủ nhật đến thứ Năm",
   "optionB": "10 giờ tối đến 5 giờ sáng từ Chủ nhật đến thứ Năm",
-  "optionC": "11 giờ tối thứ Hai đến 5 giờ sáng",
+  "optionC": "11 giờ tối đến 5 giờ sáng hôm sau",
   "optionD": "9 giờ tối đến 6 giờ sáng từ Chủ nhật đến thứ Năm",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Sau 180 ngày đầu, người có bằng lái thử thách không được lái từ 11 giờ tối Chủ nhật đến thứ Năm đến 5 giờ sáng hôm sau."
+  "explanation": "Sau 180 ngày đầu, người có bằng lái thử thách không được lái từ 11 giờ tối đến 5 giờ sáng hôm sau vào các đêm từ Chủ nhật đến thứ Năm. Giới hạn 10 giờ tối chỉ áp dụng trong 180 ngày đầu."
  },
  {
   "type": "State-Specific",
@@ -9804,14 +9804,14 @@
   "state": "IN",
   "questionId": "IN-021",
   "category": "duiStateLaws",
-  "question": "Luật Indiana yêu cầu bật đèn pha bất cứ khi nào thiết bị nào đang được dùng liên tục?",
-  "optionA": "Cần gạt nước kính chắn gió",
-  "optionB": "Điều hòa không khí",
-  "optionC": "Kiểm soát hành trình",
-  "optionD": "Xi-nhan",
+  "question": "Indiana yêu cầu bật đèn pha bất cứ lúc nào tầm nhìn dưới bao nhiêu feet?",
+  "optionA": "500 feet",
+  "optionB": "200 feet",
+  "optionC": "1.000 feet",
+  "optionD": "100 feet",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "Phải bật đèn pha bất cứ khi nào cần gạt nước kính chắn gió đang được dùng liên tục do thời tiết."
+  "explanation": "Tài xế Indiana phải bật đèn pha từ lúc mặt trời lặn đến lúc mặt trời mọc và bất cứ lúc nào khác khi tầm nhìn dưới 500 feet. Luật Indiana không gắn việc bật đèn pha với việc dùng cần gạt nước."
  },
  {
   "type": "State-Specific",
@@ -9988,12 +9988,12 @@
   "category": "stateUnique",
   "question": "Bạn phải bật xi-nhan trước khi rẽ hoặc đổi làn ở Indiana khi nào?",
   "optionA": "Ít nhất 200 feet trước",
-  "optionB": "Trong khoảng thời gian hợp lý trước đó",
+  "optionB": "Trong khoảng thời gian hợp lý trước khi chuyển hướng",
   "optionC": "Ngay trước khi rẽ",
   "optionD": "Chỉ trên đường cao tốc lớn",
-  "correctAnswer": "A",
-  "correctIndex": 0,
-  "explanation": "Tài xế phải bật xi-nhan liên tục ít nhất 200 feet cuối trước khi rẽ hoặc đổi làn."
+  "correctAnswer": "B",
+  "correctIndex": 1,
+  "explanation": "Từ ngày 1 tháng 1 năm 2023, Indiana yêu cầu bật xi-nhan trong khoảng thời gian hợp lý trước khi rẽ hoặc đổi làn. Quy định cũ cố định 200 feet đã bị bãi bỏ."
  },
  {
   "type": "State-Specific",
@@ -10126,14 +10126,14 @@
   "state": "KS",
   "questionId": "KS-004",
   "category": "gdlLicensing",
-  "question": "Cần bao nhiêu giờ lái xe có giám sát để chuyển tiếp từ giấy phép tập lái ở Kansas?",
+  "question": "Thanh thiếu niên Kansas phải xác nhận bao nhiêu giờ lái có giám sát để chuyển sang bằng lái ít hạn chế hơn ở tuổi 16?",
   "optionA": "25 giờ",
   "optionB": "30 giờ",
   "optionC": "40 giờ",
   "optionD": "50 giờ",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "Cần 50 giờ lái xe có giám sát để chuyển tiếp từ giấy phép tập lái."
+  "explanation": "Kansas yêu cầu bản cam kết 50 giờ để chuyển sang mức hạn chế ít hơn ở tuổi 16. Người 15 tuổi chỉ cần 25 giờ cho bằng lái hạn chế đầu tiên."
  },
  {
   "type": "State-Specific",
@@ -10214,10 +10214,10 @@
   "optionA": "Chỉ được dùng rảnh tay",
   "optionB": "Chỉ cấm nhắn tin",
   "optionC": "Được phép dùng định vị GPS",
-  "optionD": "Cấm mọi cách sử dụng",
-  "correctAnswer": "B",
-  "correctIndex": 1,
-  "explanation": "Người có giấy phép tập lái bị cấm nhắn tin khi lái xe."
+  "optionD": "Mọi cách sử dụng, trừ khi báo cáo khẩn cấp",
+  "correctAnswer": "D",
+  "correctIndex": 3,
+  "explanation": "Người có giấy phép tập lái dưới 17 tuổi ở Kansas không được dùng thiết bị không dây khi lái xe, trừ khi để báo cáo hoạt động phạm pháp hoặc gọi trợ giúp y tế hoặc khẩn cấp. Lệnh cấm không chỉ giới hạn ở việc nhắn tin."
  },
  {
   "type": "State-Specific",
@@ -10227,11 +10227,11 @@
   "question": "Người 15 tuổi có bằng lái hạn chế ở Kansas được chở những hành khách nào mà không cần giám sát?",
   "optionA": "Không được chở hành khách nào",
   "optionB": "Bất kỳ thành viên gia đình nào",
-  "optionC": "Chỉ anh chị em ruột",
+  "optionC": "Anh chị em ruột, nhưng không có vị thành niên khác",
   "optionD": "Một hành khách không phải người nhà",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Người 15 tuổi có bằng lái hạn chế được chở anh chị em ruột mà không cần người giám sát."
+  "explanation": "Người 15 tuổi có bằng lái hạn chế không được chở bất kỳ hành khách vị thành niên nào không phải anh chị em ruột. Anh chị em ruột thì được phép, nhưng anh chị em họ hoặc bạn bè dưới 18 tuổi thì không."
  },
  {
   "type": "State-Specific",
@@ -10504,14 +10504,14 @@
   "state": "KS",
   "questionId": "KS-031",
   "category": "stateUnique",
-  "question": "Khi nào bạn phải bật đèn pha khi lái xe ở Kansas?",
-  "optionA": "Khi lái sau khi trời tối",
-  "optionB": "Khi tầm nhìn giảm xuống dưới 500 feet",
+  "question": "Ngoài khoảng thời gian từ lúc mặt trời lặn đến lúc mặt trời mọc, khi nào luật Kansas yêu cầu bật đèn pha?",
+  "optionA": "Chỉ trong khu vực thi công trên đường cao tốc",
+  "optionB": "Chỉ trên đường cao tốc liên bang",
   "optionC": "Khi cần gạt nước đang dùng liên tục",
   "optionD": "Khi đi trên đường cao tốc",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Phải bật đèn pha bất cứ khi nào cần gạt nước kính chắn gió đang được dùng liên tục."
+  "explanation": "Kansas yêu cầu bật đèn pha bất cứ khi nào cần gạt nước kính chắn gió được dùng liên tục do mưa, mưa tuyết hoặc tuyết, cũng như vào ban đêm và khi tầm nhìn dưới 1.000 feet. Không có quy định nào chỉ áp dụng cho khu vực thi công hoặc đường liên bang."
  },
  {
   "type": "State-Specific",
@@ -10574,14 +10574,14 @@
   "state": "KS",
   "questionId": "KS-036",
   "category": "stateUnique",
-  "question": "Xe chạy dưới 25 mph trên đường Kansas phải hiển thị gì?",
-  "optionA": "Đèn cảnh báo nhấp nháy mọi lúc",
-  "optionB": "Biểu tượng xe chạy chậm",
-  "optionC": "Cờ trắng trên ăng-ten",
-  "optionD": "Băng phản quang trên cản sau",
+  "question": "Nồng độ cồn nào là bất hợp pháp đối với tài xế dưới 21 tuổi ở Kansas?",
+  "optionA": "Từ 0,08% trở lên",
+  "optionB": "Từ 0,02% trở lên",
+  "optionC": "Từ 0,04% trở lên",
+  "optionD": "Từ 0,10% trở lên",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "Xe được thiết kế để chạy dưới 25 mph phải hiển thị biểu tượng xe chạy chậm — tam giác màu cam phản quang — ở phía sau."
+  "explanation": "Theo K.S.A. 8-1567a, tài xế dưới 21 tuổi không được lái xe với nồng độ cồn trong hơi thở hoặc trong máu từ 0,02 trở lên. Giới hạn 0,08 áp dụng cho tài xế người lớn."
  },
  {
   "type": "State-Specific",
@@ -11291,11 +11291,11 @@
   "question": "Hạn chế hành khách nào áp dụng cho người có bằng lái trung cấp từ 6 giờ tối đến 5 giờ sáng ở Louisiana?",
   "optionA": "Không được chở hành khách không phải người nhà",
   "optionB": "Tối đa hai hành khách không phải người nhà",
-  "optionC": "Một hành khách không phải người nhà dưới 21 tuổi có người lớn đi cùng",
+  "optionC": "Một người không phải người nhà dưới 21, trừ khi có người lớn từ 21 tuổi",
   "optionD": "Tối đa ba hành khách tổng cộng",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Người có bằng lái trung cấp chỉ được chở một hành khách không phải người nhà dưới 21 tuổi có người lớn giám sát đi cùng từ 6 giờ tối đến 5 giờ sáng."
+  "explanation": "Từ 6 giờ tối đến 5 giờ sáng, người có bằng lái trung cấp chỉ được chở tối đa một hành khách không phải người nhà dưới 21 tuổi, trừ khi có người lớn có bằng lái từ 21 tuổi trở lên trong xe. Không có giới hạn chung ba hành khách."
  },
  {
   "type": "State-Specific",
@@ -11626,12 +11626,12 @@
   "category": "stateUnique",
   "question": "Khi nào bắt buộc bật đèn pha ở Louisiana?",
   "optionA": "Chỉ trong giờ ban đêm",
-  "optionB": "Khi mưa và thời tiết xấu",
+  "optionB": "Chỉ trên đường cao tốc liên bang",
   "optionC": "Từ lúc mặt trời lặn đến mặt trời mọc",
   "optionD": "Chỉ trong sương mù hoặc sương dày",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Bắt buộc bật đèn pha từ lúc mặt trời lặn đến mặt trời mọc."
+  "explanation": "Louisiana yêu cầu bật đèn pha từ lúc mặt trời lặn đến lúc mặt trời mọc, và cả khi tầm nhìn kém hoặc đang dùng cần gạt nước. Quy định không chỉ giới hạn ở đường liên bang."
  },
  {
   "type": "State-Specific",
@@ -12058,14 +12058,14 @@
   "state": "MA",
   "questionId": "MA-022",
   "category": "stateUnique",
-  "question": "Ở độ tuổi nào tất cả hành khách trên xe ở Massachusetts phải thắt dây an toàn?",
-  "optionA": "Từ 13 tuổi trở lên",
-  "optionB": "Từ 16 tuổi trở lên",
-  "optionC": "Mọi lứa tuổi",
-  "optionD": "Từ 18 tuổi trở lên",
-  "correctAnswer": "A",
-  "correctIndex": 0,
-  "explanation": "Tất cả hành khách từ 13 tuổi trở lên phải thắt dây an toàn."
+  "question": "Ai phải thắt dây an toàn hoặc dùng ghế an toàn trẻ em trong xe chở khách ở Massachusetts?",
+  "optionA": "Chỉ người ngồi ghế trước",
+  "optionB": "Chỉ tài xế",
+  "optionC": "Mọi tài xế và hành khách",
+  "optionD": "Chỉ người từ 18 tuổi trở lên",
+  "correctAnswer": "C",
+  "correctIndex": 2,
+  "explanation": "Massachusetts yêu cầu mọi tài xế và hành khách thắt dây an toàn, và trẻ nhỏ phải dùng ghế an toàn theo luật về hành khách trẻ em. Người ngồi ghế sau không được miễn."
  },
  {
   "type": "State-Specific",
@@ -12436,14 +12436,14 @@
   "state": "MD",
   "questionId": "MD-009",
   "category": "gdlLicensing",
-  "question": "Tại Maryland, bằng lái tạm thời tự động trở thành bằng lái không hạn chế ở độ tuổi nào?",
-  "optionA": "18 tuổi",
-  "optionB": "17 tuổi",
-  "optionC": "19 tuổi",
-  "optionD": "21 tuổi",
+  "question": "Khi nào bằng lái tạm thời ở Maryland tự động trở thành bằng lái đầy đủ?",
+  "optionA": "Sau 18 tháng không bị kết án vi phạm",
+  "optionB": "Vào sinh nhật lần thứ 17 của tài xế",
+  "optionC": "Vào sinh nhật lần thứ 19 của tài xế",
+  "optionD": "Sau 6 tháng không có tai nạn",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "Bằng lái tạm thời tự động trở thành bằng lái không hạn chế khi tài xế đủ 18 tuổi."
+  "explanation": "Maryland chuyển bằng lái tạm thời thành bằng lái đầy đủ sau khi đã giữ ít nhất 18 tháng mà không bị kết án vi phạm. Một lần bị kết án sẽ khiến 18 tháng tính lại từ đầu."
  },
  {
   "type": "State-Specific",
@@ -13908,12 +13908,12 @@
   "category": "stateUnique",
   "question": "Khi nào bạn được rẽ trái khi đèn đỏ ở Michigan?",
   "optionA": "Không bao giờ được phép ở Michigan",
-  "optionB": "Từ đường một chiều sang đường một chiều sau khi dừng",
+  "optionB": "Vào đường một chiều sau khi dừng",
   "optionC": "Bất cứ lúc nào sau nửa đêm",
   "optionD": "Chỉ ở vùng nông thôn của bang",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "Chỉ được rẽ trái khi đèn đỏ khi rẽ từ đường một chiều sang đường một chiều khác sau khi dừng."
+  "explanation": "Michigan cho phép rẽ trái khi đèn đỏ vào đường một chiều từ đường một chiều hoặc đường hai chiều, sau khi dừng và nhường đường, trừ khi có biển cấm. Không được rẽ vào đường hai chiều khi đèn đỏ."
  },
  {
   "type": "State-Specific",
@@ -14312,14 +14312,14 @@
   "state": "MN",
   "questionId": "MN-023",
   "category": "stateUnique",
-  "question": "Tại Minnesota, khi nào bạn phải bật đèn pha trong lúc lái xe?",
-  "optionA": "Khi lái xe từ lúc mặt trời lặn đến lúc mặt trời mọc",
-  "optionB": "Khi tầm nhìn giảm xuống dưới 500 feet",
-  "optionC": "Khi cần dùng cần gạt nước vì mưa hoặc tuyết",
-  "optionD": "Khi lái xe trên đường quê không có đèn",
+  "question": "Tại Minnesota, thời tiết nào bắt buộc bật đèn pha ngay cả ban ngày?",
+  "optionA": "Nắng chói chang",
+  "optionB": "Gió ngang mạnh",
+  "optionC": "Mưa, tuyết, mưa tuyết hoặc mưa đá",
+  "optionD": "Nhiệt độ cao",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Đèn pha phải được bật bất cứ khi nào điều kiện thời tiết đòi hỏi phải dùng cần gạt nước, ngoài quy định tiêu chuẩn bật đèn từ lúc mặt trời lặn đến lúc mặt trời mọc."
+  "explanation": "Minnesota yêu cầu bật đèn pha bất cứ lúc nào có mưa, tuyết, mưa tuyết hoặc mưa đá, cũng như vào ban đêm. Chỉ có gió hoặc trời nóng thì không bắt buộc."
  },
  {
   "type": "State-Specific",
@@ -14340,14 +14340,14 @@
   "state": "MN",
   "questionId": "MN-025",
   "category": "stateUnique",
-  "question": "Tại Minnesota, tiền phạt giao thông trong khu vực thi công (work zone) sẽ thế nào khi có công nhân đang làm việc?",
-  "optionA": "Tiền phạt tăng gấp đôi",
-  "optionB": "Tiền phạt vẫn giữ nguyên",
-  "optionC": "Tiền phạt tăng gấp ba",
-  "optionD": "Chỉ bị cảnh cáo",
+  "question": "Mức phạt chạy quá tốc độ trong khu vực thi công (work zone) ở Minnesota là bao nhiêu?",
+  "optionA": "300 đô la cộng phụ phí",
+  "optionB": "Như ở bất kỳ nơi nào khác",
+  "optionC": "Gấp ba mức phạt thông thường",
+  "optionD": "Chỉ cảnh cáo bằng văn bản",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "Tiền phạt giao thông tăng gấp đôi trong khu vực thi công khi có công nhân đang làm việc, nhằm bảo vệ công nhân đường bộ và buộc giao thông giảm tốc độ."
+  "explanation": "Minnesota đặt mức phạt 300 đô la, cộng phụ phí, cho việc chạy quá tốc độ trong khu vực thi công. Đây là số tiền cố định, không phải bội số của mức phạt thông thường."
  },
  {
   "type": "State-Specific",
@@ -14368,14 +14368,14 @@
   "state": "MN",
   "questionId": "MN-027",
   "category": "stateUnique",
-  "question": "Tại Minnesota, giới hạn tốc độ trên đường cao tốc (expressway) và xa lộ (freeway) là bao nhiêu nếu không có biển báo khác?",
+  "question": "Tại Minnesota, giới hạn tốc độ trên đường cao tốc (expressway) và xa lộ (freeway) không thuộc hệ thống liên bang là bao nhiêu nếu không có biển báo khác?",
   "optionA": "55 mph",
   "optionB": "60 mph",
   "optionC": "65 mph",
   "optionD": "70 mph",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Giới hạn tốc độ mặc định trên đường cao tốc (expressway) và đường có dải phân cách với lối ra vào được kiểm soát là 65 mph nếu không có biển báo khác."
+  "explanation": "Luật Minnesota đặt giới hạn 65 mph trên đường cao tốc (expressway) và xa lộ (freeway) không thuộc hệ thống liên bang. Đường liên bang ở nông thôn là 70 mph, và các đường khác mặc định 55 mph."
  },
  {
   "type": "State-Specific",
@@ -14872,14 +14872,14 @@
   "state": "MO",
   "questionId": "MO-023",
   "category": "stateUnique",
-  "question": "Giới hạn tốc độ mặc định trên đường liên bang và đường cao tốc nông thôn ở Missouri là bao nhiêu?",
+  "question": "Tốc độ tối đa luật cho phép trên đường liên bang và đường cao tốc nông thôn ở Missouri là bao nhiêu?",
   "optionA": "70 mph",
   "optionB": "65 mph",
   "optionC": "75 mph",
   "optionD": "60 mph",
-  "correctAnswer": "A",
-  "correctIndex": 0,
-  "explanation": "Giới hạn tốc độ mặc định trên đường liên bang và đường cao tốc nông thôn là 70 mph."
+  "correctAnswer": "C",
+  "correctIndex": 2,
+  "explanation": "Từ ngày 28 tháng 8 năm 2026, luật Missouri cho phép tốc độ tối đa 75 mph trên đường liên bang và đường cao tốc nông thôn, tăng từ 70 mph. Luôn tuân theo biển báo nơi MoDOT đặt giới hạn thấp hơn."
  },
  {
   "type": "State-Specific",
@@ -14984,14 +14984,14 @@
   "state": "MO",
   "questionId": "MO-031",
   "category": "stateUnique",
-  "question": "Khi nào bạn phải bật đèn pha ở Missouri?",
-  "optionA": "Khi hoàng hôn hoặc trời tối dần",
-  "optionB": "Chỉ khi mưa, tuyết hoặc sương mù",
-  "optionC": "Khi gạt nước bật hoặc tầm nhìn thấp",
-  "optionD": "Khi lái trên đường cao tốc ban đêm",
+  "question": "Ngoài ban đêm, khi nào bạn phải bật đèn pha ở Missouri?",
+  "optionA": "Chỉ trên đường cao tốc liên bang",
+  "optionB": "Chỉ khi sương mù, không bao giờ khi mưa",
+  "optionC": "Khi thời tiết buộc phải dùng gạt nước",
+  "optionD": "Chỉ khi kéo rơ-moóc",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Bắt buộc bật đèn pha bất cứ khi nào gạt nước kính chắn gió đang dùng hoặc tầm nhìn giảm."
+  "explanation": "Tài xế Missouri phải bật đèn pha bất cứ khi nào thời tiết buộc phải dùng cần gạt nước kính chắn gió, cũng như từ nửa giờ sau khi mặt trời lặn đến nửa giờ trước khi mặt trời mọc. Quy định áp dụng cả khi mưa, không chỉ sương mù."
  },
  {
   "type": "State-Specific",
@@ -15096,14 +15096,14 @@
   "state": "MO",
   "questionId": "MO-039",
   "category": "stateUnique",
-  "question": "Khi nào bắt buộc bật đèn pha trong sương mù ở Missouri?",
-  "optionA": "Chỉ khi tầm nhìn giảm nghiêm trọng",
-  "optionB": "Chỉ khi gạt nước kính đang bật",
-  "optionC": "Luôn luôn trong sương mù, kể cả khi không dùng gạt nước",
-  "optionD": "Đèn sương mù có thể thay đèn pha an toàn",
+  "question": "Sổ tay Tài xế Missouri khuyên dùng chế độ đèn pha nào khi có sương mù?",
+  "optionA": "Đèn chiếu xa để nhìn xa hơn",
+  "optionB": "Chỉ đèn đậu xe",
+  "optionC": "Đèn chiếu gần",
+  "optionD": "Tắt đèn để giảm chói",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Luôn bắt buộc bật đèn pha trong sương mù, kể cả khi gạt nước kính chắn gió không được dùng."
+  "explanation": "Sổ tay Tài xế Missouri khuyên để đèn pha ở chế độ chiếu gần khi có sương mù. Đèn chiếu xa phản chiếu lại từ sương mù và làm khó nhìn hơn."
  },
  {
   "type": "State-Specific",
@@ -15334,14 +15334,14 @@
   "state": "MS",
   "questionId": "MS-016",
   "category": "cellPhone",
-  "question": "Hạn chế điện thoại nào áp dụng cho người có giấy phép tập lái ở Mississippi?",
-  "optionA": "Chỉ cấm nhắn tin",
-  "optionB": "Cấm gọi cầm tay",
-  "optionC": "Cấm mạng xã hội",
-  "optionD": "Cấm mọi việc dùng điện thoại",
+  "question": "Theo luật nhắn tin của Mississippi, tin nhắn nào không được tính là tin nhắn văn bản?",
+  "optionA": "Một email",
+  "optionB": "Một tin nhắn tức thời",
+  "optionC": "Một bài đăng mạng xã hội",
+  "optionD": "Một cảnh báo thời tiết hoặc giao thông",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "Người có giấy phép tập lái bị cấm mọi việc dùng điện thoại khi lái xe."
+  "explanation": "Lệnh cấm nhắn tin của Mississippi bao gồm tin nhắn văn bản, tin nhắn tức thời và email, nhưng cảnh báo khẩn cấp, giao thông hoặc thời tiết không được tính là tin nhắn văn bản. Đăng bài lên mạng xã hội bằng điện thoại cầm tay cũng bị cấm."
  },
  {
   "type": "State-Specific",
@@ -15726,14 +15726,14 @@
   "state": "MT",
   "questionId": "MT-004",
   "category": "gdlLicensing",
-  "question": "Cần bao nhiêu giờ lái xe có giám sát nếu cha mẹ dạy phần thực hành lái xe ở Montana?",
-  "optionA": "50 giờ với 10 giờ ban đêm",
-  "optionB": "60 giờ với 10 giờ ban đêm",
-  "optionC": "50 giờ với 15 giờ ban đêm",
-  "optionD": "75 giờ với 15 giờ ban đêm",
+  "question": "Thanh thiếu niên Montana phải giữ giấy phép giáo dục giao thông hoặc giấy phép học lái bao lâu trước khi được chứng nhận GDL?",
+  "optionA": "Ít nhất 30 ngày",
+  "optionB": "Ít nhất 3 tháng",
+  "optionC": "Ít nhất 12 tháng",
+  "optionD": "Ít nhất sáu tháng",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "Khi cha mẹ dạy phần thực hành lái xe, cần 75 giờ lái xe có giám sát, trong đó 15 giờ ban đêm."
+  "explanation": "Chứng nhận GDL ở Montana được hoàn tất sau khi thanh thiếu niên đã giữ giấy phép giáo dục giao thông hoặc giấy phép học lái ít nhất sáu tháng. Trong thời gian đó, các em phải ghi lại 50 giờ lái có giám sát, trong đó 10 giờ ban đêm."
  },
  {
   "type": "State-Specific",
@@ -16104,14 +16104,14 @@
   "state": "MT",
   "questionId": "MT-031",
   "category": "stateUnique",
-  "question": "Tài xế phải làm gì khi đến gần xe khẩn cấp có đèn nhấp nháy trên Interstate ở Montana?",
-  "optionA": "Giữ nguyên tốc độ hiện tại",
-  "optionB": "Dừng hẳn ngay",
-  "optionC": "Chuyển làn, hoặc giảm 20 mph",
-  "optionD": "Nháy đèn pha ra hiệu",
+  "question": "Trên đường liên bang ở Montana không có biển giới hạn tạm thời, bạn phải giảm tốc bao nhiêu khi gặp xe khẩn cấp đang dừng nếu bạn có thể đổi làn?",
+  "optionA": "Thấp hơn giới hạn 10 mph",
+  "optionB": "Còn một nửa giới hạn ghi trên biển",
+  "optionC": "Thấp hơn giới hạn 20 mph",
+  "optionD": "Không thay đổi sau khi chuyển làn",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Khi đến gần xe khẩn cấp đang dừng có đèn nhấp nháy trên Interstate, tài xế phải chuyển sang làn khác nếu an toàn. Nếu không thể chuyển làn, tài xế phải giảm tốc xuống thấp hơn giới hạn 20 mph."
+  "explanation": "Trên đường liên bang, tài xế Montana có thể đổi làn thì phải chuyển làn và giảm xuống thấp hơn giới hạn ghi trên biển 20 mph. Nếu không thể đổi làn, họ phải giảm xuống còn một nửa giới hạn ghi trên biển."
  },
  {
   "type": "State-Specific",
@@ -16122,10 +16122,10 @@
   "optionA": "thấp hơn giới hạn 10 mph",
   "optionB": "thấp hơn giới hạn 15 mph",
   "optionC": "thấp hơn giới hạn 20 mph",
-  "optionD": "thấp hơn 30 mph hoặc một nửa",
+  "optionD": "Còn một nửa giới hạn ghi trên biển",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "Khi không thể đổi làn trên đường cao tốc tiểu bang, tài xế phải giảm 30 mph dưới giới hạn tốc độ hoặc giảm còn một nửa tốc độ được đăng khi đến gần xe khẩn cấp."
+  "explanation": "Trên đường cao tốc tiểu bang hoặc đường quận ở Montana, tài xế không thể đổi làn phải giảm xuống còn một nửa giới hạn ghi trên biển. Quy định giảm thấp hơn 30 mph áp dụng khi tài xế có thể đổi làn."
  },
  {
   "type": "State-Specific",
@@ -16622,14 +16622,14 @@
   "state": "NC",
   "questionId": "NC-028",
   "category": "stateUnique",
-  "question": "Tài xế từ 18 đến 66 tuổi phải gia hạn bằng lái bao lâu một lần ở North Carolina?",
+  "question": "Tài xế từ 18 đến 65 tuổi phải gia hạn bằng lái bao lâu một lần ở North Carolina?",
   "optionA": "Mỗi 4 năm",
   "optionB": "Mỗi 5 năm",
   "optionC": "Mỗi 8 năm",
   "optionD": "Mỗi 10 năm",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Tài xế từ 18 đến 66 tuổi phải gia hạn bằng lái mỗi 8 năm."
+  "explanation": "Bằng lái North Carolina cấp cho người lớn từ 18 đến 65 tuổi có hiệu lực tám năm. Tài xế từ 66 tuổi trở lên gia hạn mỗi năm năm."
  },
  {
   "type": "State-Specific",
@@ -16664,14 +16664,14 @@
   "state": "NC",
   "questionId": "NC-031",
   "category": "stateUnique",
-  "question": "Khi nào bạn phải bật đèn pha khi lái xe ở North Carolina?",
-  "optionA": "Khi lái xe ban đêm",
-  "optionB": "Khi lái xe dưới mưa lớn",
-  "optionC": "Khi gạt nước đang bật",
-  "optionD": "Khi lái xe trong sương mù",
+  "question": "Ngoài ban đêm, khi nào bạn phải bật đèn pha ở North Carolina?",
+  "optionA": "Chỉ trong đường hầm",
+  "optionB": "Chỉ trên đường cao tốc liên bang",
+  "optionC": "Khi bật gạt nước do thời tiết",
+  "optionD": "Chỉ khi kéo rơ-moóc",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Đèn pha phải được bật bất cứ khi nào gạt nước kính chắn gió đang hoạt động."
+  "explanation": "North Carolina yêu cầu bật đèn pha bất cứ khi nào cần gạt nước kính chắn gió đang được dùng do thời tiết, cũng như từ lúc mặt trời lặn đến lúc mặt trời mọc. Quy định không chỉ giới hạn ở đường hầm hoặc đường liên bang."
  },
  {
   "type": "State-Specific",
@@ -16944,14 +16944,14 @@
   "state": "ND",
   "questionId": "ND-011",
   "category": "gdlLicensing",
-  "question": "Người 15 tuổi phải giữ giấy phép học lái bao lâu ở North Dakota?",
-  "optionA": "Đến 16 tuổi hoặc tối thiểu 3 tháng",
-  "optionB": "Đến 16 tuổi hoặc tối thiểu 12 tháng",
-  "optionC": "Đến 16 tuổi hoặc tối thiểu 6 tháng",
-  "optionD": "Đến 16 tuổi hoặc tối thiểu 9 tháng",
+  "question": "Người 16 tuổi phải giữ giấy phép học lái bao lâu trước khi được cấp bằng hạng D ở North Dakota?",
+  "optionA": "Ít nhất 3 tháng",
+  "optionB": "Ít nhất 12 tháng",
+  "optionC": "Ít nhất 6 tháng",
+  "optionD": "Ít nhất 9 tháng",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Người 15 tuổi phải giữ giấy phép học lái cho đến khi đủ 16 tuổi hoặc tối thiểu 6 tháng, tùy điều kiện nào đến trước."
+  "explanation": "Tài xế 16 hoặc 17 tuổi ở North Dakota phải giữ giấy phép học lái ít nhất sáu tháng trước khi được cấp bằng hạng D. Tài xế dưới 16 tuổi phải giữ ít nhất 12 tháng."
  },
  {
   "type": "State-Specific",
@@ -16986,14 +16986,14 @@
   "state": "ND",
   "questionId": "ND-014",
   "category": "cellPhone",
-  "question": "Luật điện thoại đối với tài xế dưới 18 tuổi ở North Dakota là gì?",
-  "optionA": "Chỉ cấm nhắn tin đối với vị thành niên",
-  "optionB": "Cấm mọi thiết bị kể cả rảnh tay",
-  "optionC": "Chỉ cấm dùng cầm tay",
-  "optionD": "Không hạn chế nếu đã có bằng",
+  "question": "Khi nào người có giấy phép học lái ở North Dakota được dùng điện thoại khi xe đang chạy?",
+  "optionA": "Để xem chỉ đường GPS",
+  "optionB": "Để ngăn chặn một tội phạm sắp xảy ra",
+  "optionC": "Để nhắn tin ngắn cho cha mẹ",
+  "optionD": "Khi lái trên đường nông thôn",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "Tài xế dưới 18 tuổi bị cấm dùng mọi thiết bị không dây khi lái xe, kể cả tùy chọn rảnh tay."
+  "explanation": "Người có giấy phép học lái ở North Dakota chỉ được dùng điện thoại khi xe đang chạy để tìm trợ giúp khẩn cấp, ngăn chặn một tội phạm sắp xảy ra hoặc khi tính mạng gặp nguy hiểm. Dẫn đường và nhắn tin cho gia đình không phải là ngoại lệ."
  },
  {
   "type": "State-Specific",
@@ -17028,14 +17028,14 @@
   "state": "ND",
   "questionId": "ND-017",
   "category": "cellPhone",
-  "question": "Tài xế từ 21 tuổi trở lên có được nói chuyện bằng điện thoại cầm tay khi lái xe ở North Dakota không?",
+  "question": "Tài xế từ 18 tuổi trở lên có được nói chuyện bằng điện thoại cầm tay khi lái xe ở North Dakota không?",
   "optionA": "Có, được phép dùng điện thoại cầm tay",
   "optionB": "Không, chỉ được rảnh tay",
   "optionC": "Chỉ trong tình huống khẩn cấp",
   "optionD": "Chỉ dùng ngoài phạm vi thành phố",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "Tài xế từ 21 tuổi trở lên được phép nói chuyện bằng điện thoại cầm tay khi lái xe."
+  "explanation": "North Dakota cấm mọi tài xế nhắn tin và cấm tài xế dưới 18 tuổi dùng điện thoại dưới mọi hình thức. Tài xế từ 18 tuổi trở lên vẫn được gọi điện bằng điện thoại cầm tay."
  },
  {
   "type": "State-Specific",
@@ -17509,9 +17509,9 @@
   "optionB": "1 năm và có thể gia hạn",
   "optionC": "3 tháng và có thể gia hạn",
   "optionD": "Có hiệu lực đến 16 tuổi",
-  "correctAnswer": "C",
-  "correctIndex": 2,
-  "explanation": "Giấy phép Tập lái Trường học có hiệu lực 3 tháng và có thể gia hạn."
+  "correctAnswer": "A",
+  "correctIndex": 0,
+  "explanation": "Giấy phép Tập lái Trường học (LPE) ở Nebraska có hiệu lực sáu tháng kể từ ngày cấp và có thể gia hạn tại văn phòng cấp bằng lái."
  },
  {
   "type": "State-Specific",
@@ -17574,14 +17574,14 @@
   "state": "NE",
   "questionId": "NE-016",
   "category": "cellPhone",
-  "question": "Khi nào tài xế được phép dùng thiết bị cầm tay khi lái xe ở Nebraska?",
-  "optionA": "Khi dừng ở đèn đỏ",
-  "optionB": "Chỉ khi lái trên đường cao tốc",
+  "question": "Tài xế người lớn có được cầm điện thoại để gọi điện khi lái xe ở Nebraska không?",
+  "optionA": "Không, không bao giờ khi lái xe",
+  "optionB": "Chỉ trên đường cao tốc",
   "optionC": "Chỉ để dẫn đường GPS",
-  "optionD": "Để liên hệ dịch vụ khẩn cấp",
+  "optionD": "Có, chỉ cấm nhắn tin",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "Thiết bị cầm tay chỉ được dùng khi lái xe để liên hệ dịch vụ khẩn cấp."
+  "explanation": "Nebraska cấm đọc, gõ hoặc gửi tin nhắn khi lái xe, nhưng người lớn vẫn được gọi điện bằng điện thoại cầm tay. Tài xế có giấy phép tập lái hoặc bằng lái tạm thời không được dùng điện thoại dưới mọi hình thức."
  },
  {
   "type": "State-Specific",
@@ -17826,14 +17826,14 @@
   "state": "NE",
   "questionId": "NE-034",
   "category": "stateUnique",
-  "question": "Bạn phải giảm đèn chiếu xa xuống đèn chiếu gần ở khoảng cách nào ở Nebraska?",
-  "optionA": "cách xe đi ngược chiều 100 feet",
-  "optionB": "cách xe đi ngược chiều 200 feet",
-  "optionC": "cách xe đi ngược chiều 300 feet",
-  "optionD": "cách xe đi ngược chiều 500 feet",
+  "question": "Bạn phải giảm đèn chiếu xa trong khoảng cách nào khi đi sau một xe khác ở Nebraska?",
+  "optionA": "Cách xe phía trước 100 feet",
+  "optionB": "Cách xe phía trước 200 feet",
+  "optionC": "Cách xe phía trước 300 feet",
+  "optionD": "Cách xe phía trước 500 feet",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "Phải giảm đèn chiếu xa xuống đèn chiếu gần trong vòng 200 feet của xe đối diện."
+  "explanation": "Luật Nebraska yêu cầu tài xế giảm đèn pha khi đi sau một xe khác trong vòng 200 feet. Đèn chiếu xa từ phía sau có thể làm chói mắt tài xế phía trước qua gương."
  },
  {
   "type": "State-Specific",
@@ -18064,14 +18064,14 @@
   "state": "NH",
   "questionId": "NH-011",
   "category": "gdlLicensing",
-  "question": "Tài xế dưới 18 tuổi phải hoàn thành gì trước khi lấy bằng lái ở New Hampshire?",
-  "optionA": "Giấy phép tập lái sáu tháng",
-  "optionB": "Mẫu xác nhận việc làm",
-  "optionC": "Khóa học lái xe và 40 giờ có giám sát",
-  "optionD": "20 giờ ghi lại, không cần khóa học",
+  "question": "Cư dân mới phải lấy bằng lái New Hampshire trong thời hạn bao lâu?",
+  "optionA": "Trong vòng 10 ngày",
+  "optionB": "Trong vòng 30 ngày",
+  "optionC": "Trong vòng 60 ngày",
+  "optionD": "Trong vòng 6 tháng",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "New Hampshire không cấp giấy phép tập lái. Người dưới 18 tuổi phải hoàn thành khóa học lái xe được chấp thuận và lái 40 giờ có giám sát, trong đó 10 giờ ban đêm."
+  "explanation": "Người chuyển đến New Hampshire và lái xe phải lấy bằng lái New Hampshire trong vòng 60 ngày kể từ khi trở thành cư dân. Bằng lái của bang khác phải được nộp lại."
  },
  {
   "type": "State-Specific",
@@ -18276,12 +18276,12 @@
   "category": "duiStateLaws",
   "question": "Điều gì xảy ra nếu tài xế dưới 21 tuổi có BAC từ 0,02% đến 0,08% ở New Hampshire?",
   "optionA": "Chỉ cảnh cáo đối với lần vi phạm đầu",
-  "optionB": "Cùng hình phạt như mọi DWI thông thường",
+  "optionB": "Không bị phạt nếu dưới 0,08%",
   "optionC": "Đình chỉ lâu hơn tài xế trên 21 tuổi",
   "optionD": "Đình chỉ và hình phạt DWI thông thường",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "Tài xế dưới 21 tuổi có BAC từ 0.02% đến 0.08% phải chịu cả đình chỉ bằng lái lẫn các hình phạt DWI thông thường."
+  "explanation": "Ở New Hampshire, tài xế dưới 21 tuổi có BAC từ 0,02% trở lên có thể bị buộc tội DWI, đối mặt với đình chỉ bằng lái và các hình phạt DWI thông thường. Giới hạn 0,08% chỉ áp dụng cho người lớn."
  },
  {
   "type": "State-Specific",
@@ -18541,13 +18541,13 @@
   "questionId": "NJ-005",
   "category": "gdlLicensing",
   "question": "Điều gì xảy ra nếu người có bằng lái thử thách vi phạm hạn chế GDL ở New Jersey?",
-  "optionA": "Phải bắt đầu lại thời hạn thử thách",
+  "optionA": "Phạt 100 đô la",
   "optionB": "Bằng lái sẽ bị thu hồi vĩnh viễn",
   "optionC": "Phải bắt đầu lại từ giấy phép tập lái",
   "optionD": "Sẽ tạo hồ sơ hình sự",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "Vi phạm hạn chế GDL khi đang có bằng lái thử thách yêu cầu bắt đầu lại toàn bộ thời hạn thử thách."
+  "explanation": "Vi phạm bất kỳ hạn chế GDL nào khi đang có giấy phép hoặc bằng lái thử thách ở New Jersey bị phạt 100 đô la. Việc này không khiến thời hạn thử thách tính lại từ đầu và không tạo hồ sơ hình sự."
  },
  {
   "type": "State-Specific",
@@ -18612,12 +18612,12 @@
   "category": "gdlLicensing",
   "question": "Ngoại lệ nào cho phép người có bằng thử thách lái xe trong giờ giới nghiêm ở New Jersey?",
   "optionA": "Chỉ được phép sự kiện xã hội",
-  "optionB": "Công việc, trường học, tôn giáo, khẩn cấp",
+  "optionB": "Công việc hoặc tôn giáo, có thư xác nhận",
   "optionC": "Bất cứ lúc nào khi có hành khách ở đây",
   "optionD": "Không cho phép ngoại lệ nào ở đây",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "Người có bằng thử thách chỉ được lái trong giờ giới nghiêm vì công việc, trường học, hoạt động tôn giáo hoặc tình huống khẩn cấp."
+  "explanation": "Người có bằng lái thử thách ở New Jersey chỉ được lái trong giờ giới nghiêm từ 11:01 tối đến 5 giờ sáng vì lý do công việc hoặc tôn giáo, và phải mang theo thư trên giấy tiêu đề chính thức. Sự kiện xã hội không phải là ngoại lệ."
  },
  {
   "type": "State-Specific",
@@ -18638,14 +18638,14 @@
   "state": "NJ",
   "questionId": "NJ-012",
   "category": "gdlLicensing",
-  "question": "Người giám sát phải đã có bằng bao nhiêu năm ở New Jersey?",
-  "optionA": "Ít nhất 1 năm",
-  "optionB": "Ít nhất 2 năm",
-  "optionC": "Ít nhất 5 năm",
-  "optionD": "Ít nhất 3 năm",
+  "question": "New Jersey yêu cầu bao nhiêu giờ hướng dẫn thực hành lái xe với giáo viên có giấy phép cho người có giấy phép tập lái đặc biệt?",
+  "optionA": "Ít nhất 3 giờ",
+  "optionB": "Ít nhất 4 giờ",
+  "optionC": "Ít nhất 10 giờ",
+  "optionD": "Ít nhất 6 giờ",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "Người giám sát phải đã có bằng ít nhất 3 năm."
+  "explanation": "New Jersey yêu cầu 6 giờ hướng dẫn thực hành lái xe trên xe có bộ điều khiển kép với giáo viên có giấy phép. Phần này tách biệt với 50 giờ thực hành có giám sát."
  },
  {
   "type": "State-Specific",
@@ -18841,7 +18841,7 @@
   "optionD": "Đến 5 tuổi hoặc cao 48 inches",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "Trẻ em phải ngồi ghế nâng đến khi 8 tuổi hoặc cao 57 inches, tùy điều kiện nào đến sau."
+  "explanation": "Trẻ em phải ngồi ghế nâng đến khi 8 tuổi hoặc cao 57 inches, tùy điều kiện nào đến trước. Sau đó, dây an toàn phải vừa vặn đúng cách."
  },
  {
   "type": "State-Specific",
@@ -19464,14 +19464,14 @@
   "state": "NM",
   "questionId": "NM-031",
   "category": "stateUnique",
-  "question": "Giới hạn tốc độ mặc định trên đường không có biển giới hạn tốc độ ở New Mexico là bao nhiêu?",
-  "optionA": "45 mph trên đường không có biển báo",
-  "optionB": "65 mph trên đường không có biển báo",
-  "optionC": "55 mph trên đường không có biển báo",
-  "optionD": "35 mph trên đường không có biển báo",
+  "question": "Giới hạn tốc độ trên đường quận ở New Mexico không có biển giới hạn tốc độ là bao nhiêu?",
+  "optionA": "45 mph",
+  "optionB": "65 mph",
+  "optionC": "55 mph",
+  "optionD": "35 mph",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Giới hạn tốc độ mặc định trên bất kỳ đường nào không có biển giới hạn tốc độ là 55 mph."
+  "explanation": "Từ năm 2016, luật New Mexico đặt giới hạn 55 mph trên đường quận không có biển giới hạn tốc độ. Khu thương mại và khu dân cư mặc định 30 mph."
  },
  {
   "type": "State-Specific",
@@ -19730,14 +19730,14 @@
   "state": "NV",
   "questionId": "NV-010",
   "category": "gdlLicensing",
-  "question": "Lựa chọn nào cho phép nhận bằng lái đầy đủ trước 18 tuổi ở Nevada?",
-  "optionA": "Hoàn thành khóa đào tạo lái xe nâng cao",
-  "optionB": "Bằng trung cấp 1 năm không vi phạm",
-  "optionC": "Đậu bài thi đường trường nâng cao",
-  "optionD": "Giấy chấp thuận của cha mẹ hoặc người giám hộ",
+  "question": "Khi nào giờ giới nghiêm lái xe từ 10 giờ tối đến 5 giờ sáng cho thiếu niên ở Nevada chấm dứt?",
+  "optionA": "Sau 6 tháng lái xe",
+  "optionB": "Khi tài xế đủ 18 tuổi",
+  "optionC": "Sau 1 năm không vi phạm",
+  "optionD": "Có giấy ký tên của cha mẹ",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "Tài xế giữ bằng lái trung cấp một năm mà không có vi phạm có thể nhận bằng lái đầy đủ trước 18 tuổi."
+  "explanation": "Giờ giới nghiêm cho tài xế thiếu niên ở Nevada vẫn có hiệu lực cho đến khi tài xế đủ 18 tuổi, bất kể bằng lái được cấp khi nào. Hồ sơ không vi phạm hoặc giấy của cha mẹ không chấm dứt sớm giờ giới nghiêm."
  },
  {
   "type": "State-Specific",
@@ -20027,11 +20027,11 @@
   "question": "Khi nào bắt buộc bật đèn pha ở Nevada?",
   "optionA": "Chỉ từ lúc chạng vạng đến bình minh",
   "optionB": "Chỉ khi mưa hoặc tuyết",
-  "optionC": "Mặt trời lặn/mọc +/-30 phút, tầm nhìn kém",
+  "optionC": "Nửa giờ sau khi mặt trời lặn đến trước khi mặt trời mọc",
   "optionD": "Chỉ trên đường cao tốc",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Phải bật đèn pha từ lúc mặt trời lặn đến mặt trời mọc và trong vòng 30 phút trước hoặc sau đó, cũng như bất cứ khi nào tầm nhìn giảm."
+  "explanation": "Nevada yêu cầu bật đèn pha từ nửa giờ sau khi mặt trời lặn đến nửa giờ trước khi mặt trời mọc, và bất cứ khi nào ánh sáng kém hoặc không nhìn thấy người và xe ở khoảng cách 1.000 feet."
  },
  {
   "type": "State-Specific",
@@ -20290,14 +20290,14 @@
   "state": "NY",
   "questionId": "NY-010",
   "category": "gdlLicensing",
-  "question": "Cần bao nhiêu giờ thực hành lái xe ban đêm cho bằng lái thiếu niên ở New York?",
-  "optionA": "10 giờ chạy đêm",
-  "optionB": "15 trong tổng số 50 giờ",
-  "optionC": "20 giờ chạy đêm",
-  "optionD": "Không yêu cầu giờ ban đêm",
-  "correctAnswer": "B",
-  "correctIndex": 1,
-  "explanation": "Trong tổng số 50 giờ thực hành có giám sát bắt buộc, ít nhất 15 giờ phải được hoàn thành vào ban đêm."
+  "question": "Người có bằng lái thiếu niên ở vùng upstate New York được lái không cần người giám sát trong khung giờ nào?",
+  "optionA": "5 giờ sáng đến 9 giờ tối",
+  "optionB": "6 giờ sáng đến nửa đêm",
+  "optionC": "Bất kỳ lúc nào trong ngày",
+  "optionD": "Chỉ từ 9 giờ tối đến 5 giờ sáng",
+  "correctAnswer": "A",
+  "correctIndex": 0,
+  "explanation": "Ở vùng upstate, bằng lái thiếu niên cho phép bạn lái không cần người giám sát từ 5 giờ sáng đến 9 giờ tối. Từ 9 giờ tối đến 5 giờ sáng, bạn cần người giám sát, trừ khi đi thẳng giữa nhà và nơi làm việc hoặc trường học."
  },
  {
   "type": "State-Specific",
@@ -20682,14 +20682,14 @@
   "state": "NY",
   "questionId": "NY-038",
   "category": "stateUnique",
-  "question": "Tài xế xe buýt trường học có được rẽ phải khi đèn đỏ ở New York không?",
-  "optionA": "Có, sau khi dừng trước",
-  "optionB": "Không, không bao giờ được phép",
-  "optionC": "Có, nếu không có học sinh trên xe",
+  "question": "Khi nào xe buýt trường học ở New York được rẽ phải khi đèn đỏ tại nơi cho phép rẽ phải khi đèn đỏ?",
+  "optionA": "Bất cứ lúc nào, sau khi dừng trước",
+  "optionB": "Không bao giờ, trong mọi điều kiện",
+  "optionC": "Chỉ khi không có học sinh trên xe",
   "optionD": "Chỉ ở khu vực nông thôn",
-  "correctAnswer": "B",
-  "correctIndex": 1,
-  "explanation": "Tài xế xe buýt trường học không bao giờ được phép rẽ phải khi đèn đỏ."
+  "correctAnswer": "C",
+  "correctIndex": 2,
+  "explanation": "Theo VTL 1111(d)(5), xe buýt trường học đang chở học sinh không được đi khi đèn đỏ sáng liên tục. Khi không có học sinh trên xe, xe có thể rẽ phải khi đèn đỏ ở nơi các xe khác được phép."
  },
  {
   "type": "State-Specific",
@@ -20755,11 +20755,11 @@
   "question": "Ai có thể giám sát người 16 tuổi có giấy phép tạm thời từ nửa đêm đến 6 giờ sáng ở Ohio?",
   "optionA": "Bất kỳ tài xế có bằng nào trên 21 tuổi",
   "optionB": "Chỉ giáo viên dạy lái",
-  "optionC": "Cha mẹ/người giám hộ/người lớn được duyệt",
+  "optionC": "Cha mẹ, người giám hộ hoặc người trông nom",
   "optionD": "Bất kỳ thành viên gia đình nào có bằng lái",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Từ nửa đêm đến 6 giờ sáng, người 16 tuổi có giấy phép phải được cha mẹ, người giám hộ hoặc người lớn được duyệt giám sát."
+  "explanation": "Từ nửa đêm đến 6 giờ sáng, người có giấy phép học lái dưới 18 tuổi ở Ohio phải có cha mẹ, người giám hộ hoặc người trông nom có bằng lái ngồi bên cạnh. Người lớn có bằng lái khác từ 21 tuổi trở lên chỉ được giám sát vào các giờ khác."
  },
  {
   "type": "State-Specific",
@@ -21242,14 +21242,14 @@
   "state": "OH",
   "questionId": "OH-038",
   "category": "stateUnique",
-  "question": "Giới hạn tốc độ tối đa trên Interstate nông thôn ở Ohio là bao nhiêu?",
-  "optionA": "65 mph",
-  "optionB": "70 mph",
-  "optionC": "75 mph",
-  "optionD": "60 mph",
+  "question": "Giới hạn tốc độ trong hẻm thuộc một đô thị ở Ohio là bao nhiêu nếu không có biển báo khác?",
+  "optionA": "25 mph",
+  "optionB": "15 mph",
+  "optionC": "20 mph",
+  "optionD": "10 mph",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "Giới hạn tốc độ tối đa trên Interstate nông thôn là 70 mph."
+  "explanation": "ORC 4511.21(B)(7) đặt giới hạn 15 mph trong mọi hẻm thuộc một đô thị. Giới hạn 25 mph áp dụng cho các đường phố khác trong đô thị."
  },
  {
   "type": "State-Specific",
@@ -21270,14 +21270,14 @@
   "state": "OH",
   "questionId": "OH-040",
   "category": "stateUnique",
-  "question": "Ở Ohio, bạn phải làm gì khi cần gạt nước đang bật do mưa, tuyết hoặc sương mù?",
-  "optionA": "Luôn giảm tốc 10 mph",
-  "optionB": "Chỉ dùng đèn đậu xe",
-  "optionC": "Tấp vào lề đến khi điều kiện cải thiện",
-  "optionD": "Cũng phải bật đèn pha",
+  "question": "Giới hạn tốc độ của Ohio trên đường cao tốc (expressway) nông thôn không có đèn tín hiệu giao thông là bao nhiêu nếu không có biển báo khác?",
+  "optionA": "55 mph",
+  "optionB": "60 mph",
+  "optionC": "70 mph",
+  "optionD": "65 mph",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "Phải bật đèn pha bất cứ khi nào cần gạt nước đang hoạt động do mưa hoặc tầm nhìn giảm."
+  "explanation": "ORC 4511.21(B)(13) đặt giới hạn 65 mph trên đường cao tốc (expressway) nông thôn không có đèn tín hiệu giao thông. Xa lộ (freeway) nông thôn là 70 mph, và đường cao tốc nông thôn có đèn tín hiệu là 60 mph."
  },
  {
   "type": "State-Specific",
@@ -21382,14 +21382,14 @@
   "state": "OK",
   "questionId": "OK-008",
   "category": "gdlLicensing",
-  "question": "Khi nào người có bằng lái trung cấp có thể nhận bằng không hạn chế ở Oklahoma?",
-  "optionA": "Ngay lập tức ở tuổi 18",
-  "optionB": "19 tuổi bất kể vi phạm",
-  "optionC": "16 tuổi nếu đã học giáo dục lái xe",
-  "optionD": "17 tuổi với 6 tháng không vi phạm",
+  "question": "Có giáo dục lái xe, thanh thiếu niên Oklahoma có thể nhận bằng lái không hạn chế sớm nhất khi nào?",
+  "optionA": "18 tuổi",
+  "optionB": "17 tuổi",
+  "optionC": "16 tuổi",
+  "optionD": "16 tuổi rưỡi, 180 ngày không bị kết án",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "Người có bằng lái trung cấp có thể nhận bằng không hạn chế ở tuổi 17 sau khi giữ hồ sơ không vi phạm trong 6 tháng."
+  "explanation": "Service Oklahoma cho phép người đã hoàn thành giáo dục lái xe nhận bằng lái không hạn chế ở tuổi 16 rưỡi nếu không bị kết án vi phạm giao thông trong 180 ngày trước đó. Không có giáo dục lái xe, tuổi tối thiểu là 17 với một năm giữ bằng lái trung cấp."
  },
  {
   "type": "State-Specific",
@@ -21410,14 +21410,14 @@
   "state": "OK",
   "questionId": "OK-010",
   "category": "gdlLicensing",
-  "question": "Tài xế dưới 19 tuổi xin giấy phép ở Oklahoma cần giấy tờ gì?",
+  "question": "Tài xế dưới 18 tuổi xin giấy phép ở Oklahoma cần giấy tờ gì?",
   "optionA": "Chỉ giấy khai sinh",
   "optionB": "Đăng ký học hoặc tốt nghiệp",
   "optionC": "Xác minh việc làm",
   "optionD": "Chỉ mẫu đồng ý của cha mẹ",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "Tài xế dưới 19 tuổi xin giấy phép phải cung cấp bằng chứng đăng ký học hoặc tốt nghiệp."
+  "explanation": "Theo 47 O.S. 6-107.3, người nộp đơn dưới 18 tuổi phải chứng minh đang đi học hoặc đã tốt nghiệp hay có bằng tương đương trước khi được cấp giấy phép hoặc bằng lái."
  },
  {
   "type": "State-Specific",
@@ -21539,11 +21539,11 @@
   "question": "Giới hạn BAC hợp pháp đối với tài xế dưới 21 tuổi ở Oklahoma là bao nhiêu?",
   "optionA": "0,08%",
   "optionB": "0,04%",
-  "optionC": "0,02%",
-  "optionD": "Không khoan nhượng",
+  "optionC": "Bất kỳ lượng nào đo được",
+  "optionD": "0,05%",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Giới hạn BAC hợp pháp đối với người lái dưới 21 tuổi là 0,02%."
+  "explanation": "Oklahoma không khoan nhượng với tài xế dưới 21 tuổi: bất kỳ lượng cồn nào đo được cũng có thể dẫn đến buộc tội DUI. Giới hạn 0,08% áp dụng cho người lớn."
  },
  {
   "type": "State-Specific",
@@ -21760,14 +21760,14 @@
   "state": "OK",
   "questionId": "OK-035",
   "category": "stateUnique",
-  "question": "Yêu cầu tầm nhìn đối với đèn pha ở Oklahoma là gì?",
-  "optionA": "tầm nhìn 500 feet",
-  "optionB": "tầm nhìn 800 feet",
-  "optionC": "Tầm nhìn dưới 1.000 feet",
-  "optionD": "Chỉ khi trời tối hoàn toàn",
+  "question": "Ở Oklahoma, bạn phải đậu xe cách biển dừng bao xa?",
+  "optionA": "Ít nhất 15 feet",
+  "optionB": "Ít nhất 20 feet",
+  "optionC": "Ít nhất 30 feet",
+  "optionD": "Ít nhất 50 feet",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Phải bật đèn pha khi tầm nhìn dưới 1.000 feet."
+  "explanation": "Theo Service Oklahoma, đậu xe trong phạm vi 30 feet tính từ biển dừng là bất hợp pháp. Quy định 15 feet dành cho trụ nước cứu hỏa và 20 feet dành cho lối qua đường."
  },
  {
   "type": "State-Specific",
@@ -21984,14 +21984,14 @@
   "state": "OR",
   "questionId": "OR-011",
   "category": "gdlLicensing",
-  "question": "Quy định nào áp dụng cho ghế trước khi giám sát người có giấy phép tập lái ở Oregon?",
-  "optionA": "Người giám sát có thể ngồi bất cứ đâu trong xe",
-  "optionB": "Không cần giám sát trong giờ ban ngày",
-  "optionC": "Người giám sát phải ngồi ở ghế hành khách phía trước",
-  "optionD": "Chỉ cần giám sát trên xa lộ",
+  "question": "Người giám sát phải có bằng lái bao lâu thì giờ thực hành ở Oregon mới được tính?",
+  "optionA": "Ít nhất một năm",
+  "optionB": "Ít nhất năm năm",
+  "optionC": "Ít nhất ba năm",
+  "optionD": "Bao lâu cũng được",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Oregon yêu cầu người giám sát phải luôn ngồi ở ghế hành khách phía trước để họ có thể hướng dẫn ngay lập tức hoặc nắm lấy vô-lăng trong trường hợp khẩn cấp."
+  "explanation": "ORS 807.065 chỉ tính giờ thực hành khi người giám sát ít nhất 21 tuổi và đã có bằng lái hợp lệ ít nhất ba năm."
  },
  {
   "type": "State-Specific",
@@ -22054,14 +22054,14 @@
   "state": "OR",
   "questionId": "OR-016",
   "category": "cellPhone",
-  "question": "Quy định hạn chế về điện thoại di động áp dụng cho tất cả người lái dưới 18 tuổi ở Oregon là gì?",
-  "optionA": "Chỉ cấm sử dụng cầm tay",
-  "optionB": "Chỉ cấm nhắn tin",
-  "optionC": "Cho phép thiết bị rảnh tay (hands-free)",
-  "optionD": "Cấm mọi hình thức sử dụng thiết bị điện tử",
+  "question": "Bạn có được cầm điện thoại khi đang dừng đèn đỏ ở Oregon không?",
+  "optionA": "Có, khi đang dừng đèn đỏ",
+  "optionB": "Chỉ để đọc tin nhắn",
+  "optionC": "Chỉ để dùng chỉ đường",
+  "optionD": "Không, vẫn được tính là đang lái xe",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "Oregon áp dụng lệnh cấm hoàn toàn đối với mọi hình thức sử dụng thiết bị di động — kể cả rảnh tay — cho người lái dưới 18 tuổi, thừa nhận rằng người lái mới không thể xử lý an toàn ngay cả những phân tâm rảnh tay."
+  "explanation": "ORS 811.507 coi việc tạm dừng vì giao thông hoặc đèn tín hiệu là đang lái xe, nên cầm điện thoại lúc đó là bất hợp pháp. Bạn có thể dùng điện thoại khi đã tấp ra khỏi đường hoặc đã đậu xe."
  },
  {
   "type": "State-Specific",
@@ -22131,7 +22131,7 @@
   "optionD": "Bất kỳ mức nào trên 0,08%",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "Oregon có chính sách không khoan nhượng đối với người lái vị thành niên — bất kỳ lượng cồn nào phát hiện được ở người lái dưới 21 tuổi đều là căn cứ để truy tố DUII và đình chỉ bằng lái."
+  "explanation": "Theo ORS 813.300, đối với tài xế dưới 21 tuổi, bất kỳ lượng cồn nào cũng được coi là đang bị ảnh hưởng theo mục đích của luật đồng ý ngầm, dẫn đến đình chỉ bằng lái. Để buộc tội DUII cần mức 0,08% hoặc bằng chứng suy giảm khả năng lái."
  },
  {
   "type": "State-Specific",
@@ -22824,14 +22824,14 @@
   "state": "PA",
   "questionId": "PA-031",
   "category": "stateUnique",
-  "question": "Khi lái xe ở Pennsylvania, khi nào bạn phải bật đèn pha?",
-  "optionA": "Chỉ vào ban đêm",
-  "optionB": "Chỉ trong những lúc trời mưa",
-  "optionC": "Khi đang dùng gạt nước kính chắn gió",
-  "optionD": "Chỉ trong điều kiện sương mù",
+  "question": "Ở Pennsylvania, bạn phải đậu xe cách trụ nước cứu hỏa bao xa?",
+  "optionA": "Ít nhất 5 feet",
+  "optionB": "Ít nhất 10 feet",
+  "optionC": "Ít nhất 15 feet",
+  "optionD": "Ít nhất 25 feet",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Đèn pha phải được bật bất cứ khi nào gạt nước kính chắn gió đang hoạt động."
+  "explanation": "Sổ tay lái xe của Pennsylvania nói không bao giờ được đậu xe trong phạm vi 15 feet tính từ trụ nước cứu hỏa. Sổ tay cũng cấm đậu xe trong phạm vi 20 feet tính từ lối qua đường tại giao lộ."
  },
  {
   "type": "State-Specific",
@@ -23006,14 +23006,14 @@
   "state": "RI",
   "questionId": "RI-004",
   "category": "gdlLicensing",
-  "question": "Hạn chế lái xe ban đêm đối với người có giấy phép tập lái ở Rhode Island là gì?",
-  "optionA": "Không được lái sau 10 giờ tối vào cuối tuần",
-  "optionB": "Không được lái sau nửa đêm vào bất kỳ ngày nào",
-  "optionC": "Không hạn chế khi có người giám sát",
-  "optionD": "Không được lái từ 11 giờ tối đến 5 giờ sáng nếu không có cha mẹ",
+  "question": "Ai khác được ngồi ở ghế trước khi người có giấy phép tập lái ở Rhode Island đang lái xe?",
+  "optionA": "Bất kỳ người lớn nào có bằng lái",
+  "optionB": "Anh chị em trên 16 tuổi",
+  "optionC": "Bất kỳ hành khách nào thắt dây an toàn",
+  "optionD": "Không ai ngoài người giám sát",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "Người có giấy phép tập lái không được lái từ 11 giờ tối đến 5 giờ sáng nếu không có cha mẹ hoặc người giám hộ đi cùng."
+  "explanation": "Rhode Island yêu cầu người lái xe giám sát ngồi bên cạnh người có giấy phép tập lái, và ngoài người giám sát, không ai khác được ngồi ở ghế trước."
  },
  {
   "type": "State-Specific",
@@ -23107,11 +23107,11 @@
   "question": "Giấy phép hướng dẫn lái xe của Rhode Island có hiệu lực trong bao lâu?",
   "optionA": "6 tháng tính từ ngày phát hành",
   "optionB": "2 năm kể từ ngày cấp",
-  "optionC": "Có hiệu lực 1 năm hoặc đến 18 tuổi",
+  "optionC": "1 năm kể từ ngày cấp",
   "optionD": "Đến khi đậu bài thi đường trường",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Giấy phép hướng dẫn lái xe có hiệu lực 1 năm kể từ ngày cấp hoặc đến khi người giữ giấy phép đủ 18 tuổi, tùy điều kiện nào đến trước."
+  "explanation": "Theo R.I. Gen. Laws 31-10-6, giấy phép hướng dẫn hạn chế có hiệu lực một năm và có thể được gia hạn trong một thời gian hợp lý nếu có bằng chứng về hoàn cảnh khó khăn."
  },
  {
   "type": "State-Specific",
@@ -23468,14 +23468,14 @@
   "state": "RI",
   "questionId": "RI-037",
   "category": "stateUnique",
-  "question": "Ngoại lệ nào tồn tại đối với quy tắc xe buýt trường học trên đường có dải phân cách ở Rhode Island?",
-  "optionA": "Không phải dừng nếu ở phía đối diện đường có dải phân cách",
-  "optionB": "Chỉ dừng trong giờ buổi sáng trước trưa",
-  "optionC": "Chỉ dừng cho học sinh tiểu học dưới 12 tuổi",
-  "optionD": "Không có ngoại lệ nào trong luật Rhode Island",
+  "question": "Thanh thiếu niên Rhode Island phải giữ bằng lái tạm thời bao lâu trước khi nhận bằng lái đầy đủ?",
+  "optionA": "Ít nhất 12 tháng",
+  "optionB": "Ít nhất 6 tháng",
+  "optionC": "Ít nhất 18 tháng",
+  "optionD": "Ít nhất 24 tháng",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "Trên đường cao tốc có dải phân cách, tài xế đi phía đối diện với xe buýt trường học đang dừng không bắt buộc phải dừng."
+  "explanation": "Để được cấp bằng lái đầy đủ, phải giữ bằng lái tạm thời hạn chế ít nhất 12 tháng và không có vi phạm khi lái xe hoặc vi phạm dây an toàn trong sáu tháng trước đó."
  },
  {
   "type": "State-Specific",
@@ -23580,14 +23580,14 @@
   "state": "SC",
   "questionId": "SC-005",
   "category": "gdlLicensing",
-  "question": "Hạn chế lái xe ban đêm đối với người 15-16 tuổi có bằng lái có điều kiện ở South Carolina là gì?",
-  "optionA": "Không được lái một mình từ 6 giờ tối đến 6 giờ sáng",
+  "question": "Hạn chế lái xe ban đêm đối với người có bằng lái có điều kiện ở South Carolina là gì?",
+  "optionA": "Không lái một mình sau 6 giờ tối (8 giờ tối vào giờ mùa hè)",
   "optionB": "Không được lái một mình từ 10 giờ tối đến 5 giờ sáng",
   "optionC": "Không hạn chế nếu có cha mẹ",
   "optionD": "Chỉ không được lái sau nửa đêm",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "Người 15–16 tuổi có bằng lái có điều kiện không được lái một mình từ 6 giờ tối đến 6 giờ sáng."
+  "explanation": "Người có bằng lái có điều kiện chỉ được lái một mình từ 6 giờ sáng đến 6 giờ tối, hoặc đến 8 giờ tối trong thời gian áp dụng giờ mùa hè. Sau đó, họ cần một tài xế có bằng lái từ 21 tuổi trở lên, và sau nửa đêm thì cần một người có tên trong mẫu đơn đồng ý."
  },
  {
   "type": "State-Specific",
@@ -23611,11 +23611,11 @@
   "question": "Khi nào tài xế có thể nhận đầy đủ quyền lái xe không hạn chế ở South Carolina?",
   "optionA": "16 tuổi với khóa học giáo dục lái xe",
   "optionB": "Ngay khi đủ 19 tuổi",
-  "optionC": "17 tuổi với 6 tháng không vi phạm hoặc 18 tuổi",
+  "optionC": "16 tuổi sau 1 năm không vi phạm, hoặc 17 tuổi",
   "optionD": "21 tuổi bất kể vi phạm",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Quyền lái xe đầy đủ không hạn chế có sẵn ở tuổi 17 với sáu tháng không vi phạm, hoặc tự động ở tuổi 18."
+  "explanation": "SCDMV cấp quyền lái đầy đủ ở tuổi 16 cho tài xế đã giữ bằng lái có điều kiện hoặc bằng lái hạn chế đặc biệt một năm mà không có vi phạm hoặc tai nạn do lỗi của mình. Nếu không, các hạn chế vẫn giữ trong một năm sau vi phạm cuối cùng hoặc đến 17 tuổi."
  },
  {
   "type": "State-Specific",
@@ -23636,14 +23636,14 @@
   "state": "SC",
   "questionId": "SC-009",
   "category": "gdlLicensing",
-  "question": "Tài xế dưới 19 tuổi xin giấy phép tập lái ở South Carolina cần giấy tờ gì?",
-  "optionA": "Bằng chứng ghi danh hoặc tốt nghiệp trường",
+  "question": "Yêu cầu nào về trường học áp dụng cho người xin bằng lái dưới 17 tuổi ở South Carolina?",
+  "optionA": "Đang theo học tại trường",
   "optionB": "Giấy tờ xác nhận việc làm",
   "optionC": "Chỉ mẫu đồng ý của cha mẹ",
   "optionD": "Chỉ giấy khai sinh",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "Tài xế dưới 19 tuổi xin giấy phép tập lái phải cung cấp bằng chứng ghi danh trường học hoặc tốt nghiệp."
+  "explanation": "SCDMV yêu cầu người nộp đơn dưới 17 tuổi đang đi học, tuân thủ luật chuyên cần và không bị đình chỉ hoặc đuổi học."
  },
  {
   "type": "State-Specific",
@@ -24098,28 +24098,28 @@
   "state": "SD",
   "questionId": "SD-002",
   "category": "gdlLicensing",
-  "question": "Bạn phải giữ giấy phép hướng dẫn lái xe bao lâu trước khi xin giấy phép hạn chế cho trẻ vị thành niên ở South Dakota?",
+  "question": "Nếu không học giáo dục lái xe, bạn phải giữ giấy phép hướng dẫn lái xe bao lâu trước khi xin giấy phép hạn chế cho trẻ vị thành niên ở South Dakota?",
   "optionA": "Tối thiểu 90 ngày",
-  "optionB": "tối thiểu 180 ngày",
-  "optionC": "tối thiểu 270 ngày",
+  "optionB": "tối thiểu 275 ngày",
+  "optionC": "tối thiểu 365 ngày",
   "optionD": "tối thiểu 120 ngày",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "Phải giữ giấy phép hướng dẫn lái xe tối thiểu 180 ngày trước khi xin giấy phép hạn chế cho trẻ vị thành niên."
+  "explanation": "Đối với giấy phép cấp sau ngày 1 tháng 7 năm 2020, South Dakota yêu cầu giữ giấy phép hướng dẫn lái xe 275 ngày trước khi xin giấy phép hạn chế cho trẻ vị thành niên. Người đã hoàn thành giáo dục lái xe cần 180 ngày."
  },
  {
   "type": "State-Specific",
   "state": "SD",
   "questionId": "SD-003",
   "category": "gdlLicensing",
-  "question": "Bạn có thể nhận giấy phép hạn chế cho trẻ vị thành niên ở South Dakota từ độ tuổi nào?",
-  "optionA": "14 tuổi",
+  "question": "Nếu đã học giáo dục lái xe, độ tuổi sớm nhất để nhận giấy phép hạn chế cho trẻ vị thành niên ở South Dakota là bao nhiêu?",
+  "optionA": "16 tuổi",
   "optionB": "15 tuổi",
-  "optionC": "14 năm 3 tháng",
+  "optionC": "14 năm 6 tháng",
   "optionD": "13 tuổi 6 tháng",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Giấy phép hạn chế cho trẻ vị thành niên có thể xin từ 14 tuổi 3 tháng."
+  "explanation": "Giấy phép hướng dẫn lái xe được cấp từ 14 tuổi, và người đã hoàn thành giáo dục lái xe có thể chuyển sang giấy phép hạn chế cho trẻ vị thành niên sau 180 ngày, nên sớm nhất là khoảng 14 tuổi 6 tháng."
  },
  {
   "type": "State-Specific",
@@ -24154,14 +24154,14 @@
   "state": "SD",
   "questionId": "SD-006",
   "category": "gdlLicensing",
-  "question": "Khuyến nghị bao nhiêu giờ lái xe có giám sát trước khi thi lấy bằng ở South Dakota?",
+  "question": "Người có giấy phép hướng dẫn lái xe ở South Dakota phải hoàn thành bao nhiêu giờ lái xe có giám sát?",
   "optionA": "20 giờ tổng cộng",
   "optionB": "Tổng cộng 50 giờ",
   "optionC": "Tổng cộng 30 giờ",
   "optionD": "Tổng cộng 40 giờ",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "Khuyến nghị tổng cộng 50 giờ lái xe có giám sát trước khi thi lấy bằng."
+  "explanation": "South Dakota yêu cầu ít nhất 50 giờ lái có giám sát, trong đó 10 giờ ban đêm và 10 giờ trong thời tiết xấu, được cha mẹ hoặc người giám hộ xác nhận trước khi cấp giấy phép hạn chế cho trẻ vị thành niên."
  },
  {
   "type": "State-Specific",
@@ -24210,14 +24210,14 @@
   "state": "SD",
   "questionId": "SD-010",
   "category": "gdlLicensing",
-  "question": "Ở South Dakota, nếu đã hoàn thành khóa giáo dục lái xe, bạn phải giữ giấy phép hạn chế dành cho trẻ vị thành niên bao lâu trước khi được cấp bằng lái?",
+  "question": "Ở South Dakota, bạn phải giữ giấy phép hạn chế dành cho trẻ vị thành niên bao lâu trước khi được cấp bằng lái?",
   "optionA": "1 tháng",
   "optionB": "3 tháng",
   "optionC": "6 tháng",
   "optionD": "9 tháng",
-  "correctAnswer": "B",
-  "correctIndex": 1,
-  "explanation": "Giấy phép hạn chế dành cho trẻ vị thành niên phải được giữ 6 tháng, hoặc 3 tháng nếu bạn đã hoàn thành khóa giáo dục lái xe được phê duyệt, và không vi phạm giao thông trong thời gian đó."
+  "correctAnswer": "C",
+  "correctIndex": 2,
+  "explanation": "Theo SDCL 32-12-12, trẻ vị thành niên từ 16 tuổi trở lên có thể nhận bằng lái sau khi giữ giấy phép hạn chế cho trẻ vị thành niên sáu tháng và không bị kết án vi phạm giao thông trong thời gian đó. Giáo dục lái xe chỉ rút ngắn thời gian chờ của giấy phép hướng dẫn lái xe."
  },
  {
   "type": "State-Specific",
@@ -24322,14 +24322,14 @@
   "state": "SD",
   "questionId": "SD-018",
   "category": "cellPhone",
-  "question": "Bạn có được dùng tính năng chuyển giọng nói thành văn bản khi lái xe ở South Dakota không?",
-  "optionA": "Chỉ nếu rảnh tay",
-  "optionB": "Được phép cho mọi tài xế",
+  "question": "Tài xế người lớn có bằng lái đầy đủ ở South Dakota có được dùng tính năng chuyển giọng nói thành văn bản khi lái xe không?",
+  "optionA": "Không, không bao giờ được phép",
+  "optionB": "Có, ở chế độ giọng nói rảnh tay",
   "optionC": "Chỉ khi khẩn cấp",
-  "optionD": "Không được phép, bị xem là nhắn tin",
+  "optionD": "Chỉ khi dừng đèn đỏ",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "Tính năng chuyển giọng nói thành văn bản được phép cho mọi tài xế và không bị xem là nhắn tin."
+  "explanation": "SDCL 32-26-47.1 cho phép dùng thiết bị ở chế độ điều khiển bằng giọng nói hoặc rảnh tay. Người có giấy phép hướng dẫn lái xe và giấy phép hạn chế cho trẻ vị thành niên không được dùng bất kỳ thiết bị không dây nào khi lái xe."
  },
  {
   "type": "State-Specific",
@@ -24980,14 +24980,14 @@
   "state": "TN",
   "questionId": "TN-025",
   "category": "duiStateLaws",
-  "question": "Thiết bị nào bắt buộc đối với mọi trường hợp kết tội DUI ở Tennessee?",
+  "question": "Người vi phạm DUI lần đầu ở Tennessee phải dùng gì để tiếp tục lái xe trong thời gian bị thu hồi bằng lái?",
   "optionA": "Thiết bị khóa khởi động bằng hơi thở",
   "optionB": "Vòng theo dõi cổ chân",
   "optionC": "Máy phân tích hơi thở cầm tay",
   "optionD": "Hệ thống theo dõi GPS",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "Thiết bị khóa khởi động bằng hơi thở bắt buộc đối với mọi trường hợp kết tội DUI."
+  "explanation": "Lần vi phạm DUI đầu tiên ở Tennessee bị thu hồi bằng lái một năm. Để tiếp tục lái xe trong thời gian đó, người vi phạm phải dùng thiết bị khóa khởi động bằng hơi thở trong suốt thời gian bị thu hồi."
  },
  {
   "type": "State-Specific",
@@ -25148,56 +25148,56 @@
   "state": "TN",
   "questionId": "TN-037",
   "category": "stateUnique",
-  "question": "Mục đích của 'luật lái chậm' đối với việc lái ở làn trái của Tennessee là gì?",
-  "optionA": "Yêu cầu giới hạn tốc độ tối thiểu trên mọi đường",
-  "optionB": "Ngăn lái chậm ở làn trái của đường cao tốc nhiều làn",
-  "optionC": "Cấm xe tải vào làn trái",
-  "optionD": "Yêu cầu vượt bên phải",
+  "question": "Bạn phải chừa khoảng cách bao nhiêu khi vượt người đi xe đạp ở Tennessee?",
+  "optionA": "Ít nhất 1 foot",
+  "optionB": "Ít nhất 3 feet",
+  "optionC": "Ít nhất 6 feet",
+  "optionD": "Không có khoảng cách cố định",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "Luật cấm lái chậm ở làn trái cấm chạy dưới 55 mph trên làn trái của đường Interstate và đường cao tốc nhiều làn để giữ giao thông lưu thông."
+  "explanation": "Sổ tay lái xe Tennessee nói hãy vượt người đi xe đạp chậm rãi với khoảng cách ít nhất 3 feet giữa bạn và xe đạp, và giữ khoảng cách đó cho đến khi đã vượt qua an toàn."
  },
  {
   "type": "State-Specific",
   "state": "TN",
   "questionId": "TN-038",
   "category": "stateUnique",
-  "question": "Khi nào bắt buộc bật đèn pha ngay cả vào ban ngày ở Tennessee?",
-  "optionA": "Không bao giờ vào ban ngày",
-  "optionB": "Thời tiết xấu",
-  "optionC": "Chỉ khi có sương mù",
-  "optionD": "Chỉ khi có tuyết",
+  "question": "Bạn phải dừng ở đâu khi đèn tín hiệu đang nhấp nháy tại chỗ giao cắt đường sắt ở Tennessee?",
+  "optionA": "Ngay trên đường ray",
+  "optionB": "Trong phạm vi 50 ft, không gần hơn 15 ft",
+  "optionC": "Cách ít nhất 100 feet",
+  "optionD": "Trong phạm vi 5 feet tính từ đường ray",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "Phải bật đèn pha vào ban ngày trong điều kiện thời tiết xấu."
+  "explanation": "Tại nơi giao cắt có thiết bị tín hiệu, Tennessee yêu cầu dừng hẳn trong phạm vi 50 feet và không gần hơn 15 feet tính từ đường ray gần nhất, cho đến khi an toàn để đi."
  },
  {
   "type": "State-Specific",
   "state": "TN",
   "questionId": "TN-039",
   "category": "stateUnique",
-  "question": "Điều kiện thời tiết nào yêu cầu dùng gạt nước kính chắn gió liên tục và đèn pha ở Tennessee?",
-  "optionA": "Chỉ mưa phùn nhẹ",
-  "optionB": "Chỉ sương mù dày",
-  "optionC": "Mưa, mưa phùn, tuyết",
-  "optionD": "Chỉ mưa đá hạt",
+  "question": "Ở Tennessee, bạn phải đậu xe cách biển dừng hoặc đèn tín hiệu giao thông bao xa?",
+  "optionA": "Ít nhất 10 feet",
+  "optionB": "Ít nhất 20 feet",
+  "optionC": "Ít nhất 30 feet",
+  "optionD": "Ít nhất 50 feet",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Mưa, mưa phùn và tuyết yêu cầu dùng gạt nước kính chắn gió liên tục và đèn pha."
+  "explanation": "Sổ tay lái xe Tennessee cấm đậu xe trong phạm vi 30 feet tính từ đèn tín hiệu giao thông, biển dừng hoặc thiết bị điều khiển giao thông khác. Quy định 50 feet dành cho chỗ giao cắt đường sắt."
  },
  {
   "type": "State-Specific",
   "state": "TN",
   "questionId": "TN-040",
   "category": "stateUnique",
-  "question": "Màu đèn pha nào bị cấm trên xe không phải xe khẩn cấp ở Tennessee?",
-  "optionA": "Đèn màu hổ phách",
-  "optionB": "Đèn màu vàng",
-  "optionC": "Đèn màu trắng",
-  "optionD": "Đèn xanh dương hoặc xanh lục",
+  "question": "Ở Tennessee, bạn phải đậu xe cách trụ nước cứu hỏa bao xa?",
+  "optionA": "Ít nhất 5 feet",
+  "optionB": "Ít nhất 10 feet",
+  "optionC": "Ít nhất 25 feet",
+  "optionD": "Ít nhất 15 feet",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "Đèn pha xanh dương và xanh lục bị cấm trên xe không phải xe khẩn cấp."
+  "explanation": "Sổ tay lái xe Tennessee cấm đậu xe trong phạm vi 15 feet tính từ trụ nước cứu hỏa. Sổ tay cũng cấm đậu xe trong phạm vi 20 feet tính từ lối qua đường."
  },
  {
   "type": "State-Specific",
@@ -25388,12 +25388,12 @@
   "category": "cellPhone",
   "question": "Tài xế mới dưới 18 tuổi có được dùng thiết bị rảnh tay ở Texas không?",
   "optionA": "Có, nếu kích hoạt bằng giọng nói",
-  "optionB": "Không, cấm mọi việc sử dụng",
-  "optionC": "Chỉ khi khẩn cấp",
+  "optionB": "Không, trừ trường hợp khẩn cấp",
+  "optionC": "Chỉ trên đường cao tốc nông thôn",
   "optionD": "Chỉ khi có giám sát",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "Tài xế dưới 18 tuổi bị cấm mọi việc dùng điện thoại khi lái xe, kể cả thiết bị rảnh tay."
+  "explanation": "Bộ luật Giao thông Vận tải Texas 545.424 cấm tài xế dưới 18 tuổi dùng bất kỳ thiết bị liên lạc không dây nào, kể cả rảnh tay, trừ trường hợp khẩn cấp."
  },
  {
   "type": "State-Specific",
@@ -25694,14 +25694,14 @@
   "state": "TX",
   "questionId": "TX-036",
   "category": "stateUnique",
-  "question": "Luật Texas yêu cầu gì về làn trái trên đường cao tốc nhiều làn?",
-  "optionA": "Mọi tốc độ đều được phép",
+  "question": "Luật Texas yêu cầu gì về việc sử dụng làn trên đường cao tốc nhiều làn?",
+  "optionA": "Mọi tốc độ đều được ở mọi làn",
   "optionB": "Làn trái chỉ dành cho HOV",
-  "optionC": "Làn trái chỉ để vượt",
+  "optionC": "Xe chạy chậm hơn phải đi bên phải",
   "optionD": "Không có hạn chế",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Làn trái trên đường cao tốc nhiều làn chỉ để vượt, và tài xế phải chuyển sang phải khi bị xe khác vượt."
+  "explanation": "Bộ luật Giao thông Vận tải Texas 545.051(b) yêu cầu tài xế chạy chậm hơn dòng xe bình thường phải đi ở làn bên phải, trừ khi đang vượt hoặc chuẩn bị rẽ trái. Biển \"Làn trái chỉ để vượt\" bổ sung thêm quy định này ở nơi có biển."
  },
  {
   "type": "State-Specific",
@@ -25820,14 +25820,14 @@
   "state": "UT",
   "questionId": "UT-005",
   "category": "gdlLicensing",
-  "question": "Người lái xe giám sát đi cùng người có giấy phép tập lái phải đủ tuổi tối thiểu nào?",
+  "question": "Người giám sát có bằng lái phải bao nhiêu tuổi đối với người có giấy phép tập lái ở Utah từ 18 tuổi trở lên?",
   "optionA": "21 tuổi",
   "optionB": "25 tuổi",
   "optionC": "18 tuổi",
   "optionD": "23 tuổi",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "Người lái xe giám sát phải ít nhất 21 tuổi khi đi cùng người có giấy phép tập lái."
+  "explanation": "Người có giấy phép tập lái từ 18 tuổi trở lên chỉ được lái khi có một tài xế có bằng lái ít nhất 21 tuổi ngồi bên cạnh. Người có giấy phép nhỏ tuổi hơn cũng có thể lái cùng cha mẹ, người giám hộ có bằng lái hoặc giáo viên được chấp thuận."
  },
  {
   "type": "State-Specific",
@@ -25918,14 +25918,14 @@
   "state": "UT",
   "questionId": "UT-012",
   "category": "gdlLicensing",
-  "question": "Bạn có thể xin bằng lái đầy đủ từ độ tuổi nào nếu đã đáp ứng các yêu cầu?",
+  "question": "Độ tuổi tối thiểu để lấy bằng lái ở Utah là bao nhiêu?",
   "optionA": "15 tuổi",
   "optionB": "17 tuổi",
   "optionC": "18 tuổi",
-  "optionD": "16 tuổi rưỡi",
+  "optionD": "16 tuổi",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "Tài xế đáp ứng mọi yêu cầu có thể xin bằng lái đầy đủ ở tuổi 16½."
+  "explanation": "Utah cấp bằng lái từ 16 tuổi sau khi hoàn thành giáo dục lái xe, các bài thi và, đối với người nộp đơn từ 17 tuổi trở xuống, sáu tháng giữ giấy phép tập lái. Giấy phép tập lái được cấp từ 15 tuổi."
  },
  {
   "type": "State-Specific",
@@ -25953,7 +25953,7 @@
   "optionD": "Duyệt web",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "Tài xế trưởng thành chỉ được dùng cuộc gọi rảnh tay khi điều khiển xe."
+  "explanation": "Utah cấm nhắn tin, gửi email, bấm số và lướt web bằng tay khi xe đang chạy, nhưng gọi thoại và dùng chế độ rảnh tay thì được phép. Cuộc gọi rảnh tay là lựa chọn hợp pháp duy nhất được liệt kê."
  },
  {
   "type": "State-Specific",
@@ -26002,14 +26002,14 @@
   "state": "UT",
   "questionId": "UT-018",
   "category": "cellPhone",
-  "question": "Hành động nào với điện thoại là bất hợp pháp khi lái xe đang chạy ở Utah?",
-  "optionA": "Gọi thoại",
-  "optionB": "Nhắn tin bằng tay",
-  "optionC": "Xem bản đồ GPS",
-  "optionD": "Nói chuyện rảnh tay",
+  "question": "Tài xế Utah được làm việc nào sau đây với điện thoại khi xe đang chạy?",
+  "optionA": "Đọc tin nhắn",
+  "optionB": "Xem ứng dụng chỉ đường",
+  "optionC": "Chụp ảnh",
+  "optionD": "Quay video",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "Utah cấm nhắn tin, bấm số hoặc đọc tin nhắn bằng tay khi xe đang chạy; gọi thoại, dùng chế độ rảnh tay và xem GPS thì được phép."
+  "explanation": "Utah Code 41-6a-1716 cấm đọc tin nhắn, chụp ảnh và quay video bằng tay khi xe đang chạy, nhưng xem GPS hoặc ứng dụng chỉ đường thì được phép."
  },
  {
   "type": "State-Specific",
@@ -26156,14 +26156,14 @@
   "state": "UT",
   "questionId": "UT-029",
   "category": "stateUnique",
-  "question": "Ai chịu trách nhiệm đảm bảo mọi người trên xe thắt dây an toàn ở Utah?",
-  "optionA": "Từng hành khách",
+  "question": "Ở Utah, ai phải bảo đảm hành khách dưới 16 tuổi đã thắt dây an toàn?",
+  "optionA": "Tự mỗi hành khách",
   "optionB": "Chỉ hành khách ghế trước",
   "optionC": "Chủ xe",
   "optionD": "Người lái",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "Người lái chịu trách nhiệm đảm bảo mọi người trên xe được cố định đúng cách bằng dây an toàn."
+  "explanation": "Utah Code 41-6a-1803 quy định tài xế chịu trách nhiệm cố định mọi hành khách dưới 16 tuổi bằng ghế an toàn trẻ em hoặc dây an toàn. Hành khách từ 16 tuổi trở lên phải tự thắt dây an toàn."
  },
  {
   "type": "State-Specific",
@@ -26415,7 +26415,7 @@
   "optionD": "Không được chở hành khách nào",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Người giữ bằng lái tạm thời dưới 18 tuổi chỉ được chở tối đa một hành khách dưới 21 tuổi, trừ khi có cha mẹ hoặc người giám hộ có bằng lái ngồi ở ghế trước."
+  "explanation": "Cho đến 18 tuổi, người giữ bằng lái tạm thời chỉ được chở một hành khách dưới 21 tuổi, không tính thành viên gia đình hoặc người cùng hộ. Sau năm đầu tiên, được chở tối đa ba người cho các hoạt động của trường, khi có tài xế có bằng lái từ 21 tuổi trở lên ngồi bên cạnh, hoặc trong trường hợp khẩn cấp."
  },
  {
   "type": "State-Specific",
@@ -26536,12 +26536,12 @@
   "category": "cellPhone",
   "question": "Quy định hạn chế sử dụng điện thoại di động đối với người lái xe dưới 18 tuổi ở Virginia là gì?",
   "optionA": "Cho phép gọi rảnh tay",
-  "optionB": "Chỉ được gọi khẩn cấp",
+  "optionB": "Chỉ ứng dụng chỉ đường",
   "optionC": "Chỉ cấm nhắn tin",
-  "optionD": "Không được dùng khi xe đang chạy",
+  "optionD": "Không được, trừ khi khẩn cấp hoặc đã đậu xe",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "Người lái xe dưới 18 tuổi không được sử dụng điện thoại di động dưới bất kỳ hình thức nào khi xe đang di chuyển."
+  "explanation": "Tài xế dưới 18 tuổi không được dùng điện thoại di động hoặc thiết bị không dây khác, dù cầm tay hay rảnh tay, trừ trường hợp tài xế gặp khẩn cấp hoặc khi đã đậu hoặc dừng xe hợp pháp."
  },
  {
   "type": "State-Specific",
@@ -26982,14 +26982,14 @@
   "state": "VT",
   "questionId": "VT-008",
   "category": "gdlLicensing",
-  "question": "Khi nào bằng lái thiếu niên tự động chuyển thành bằng không hạn chế ở Vermont?",
-  "optionA": "Chỉ ở tuổi 17",
-  "optionB": "Sau 2 năm",
-  "optionC": "Không bao giờ tự động",
-  "optionD": "1 năm hoặc 18 tuổi",
+  "question": "Khi nào bằng lái thiếu niên ở Vermont hết hạn?",
+  "optionA": "Vào ngày bạn đủ 17 tuổi",
+  "optionB": "Một năm sau khi được cấp",
+  "optionC": "Không bao giờ hết hạn",
+  "optionD": "Đêm trước sinh nhật thứ 2 sau khi cấp",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "Bằng lái thiếu niên tự động chuyển thành bằng không hạn chế sau 1 năm nắm giữ hoặc khi đủ 18 tuổi, tùy điều kiện nào đến trước."
+  "explanation": "Bằng lái thiếu niên ở Vermont hết hạn vào nửa đêm trước ngày sinh nhật thứ hai của người giữ bằng kể từ khi được cấp, nên bằng cấp ở tuổi 16 hết hạn vào đêm trước sinh nhật lần thứ 18. Bằng có thể được gia hạn."
  },
  {
   "type": "State-Specific",
@@ -27040,12 +27040,12 @@
   "category": "gdlLicensing",
   "question": "Sau khi nhận bằng lái thiếu niên, tài xế Vermont phải đợi bao lâu trước khi lái xe vì công việc?",
   "optionA": "6 tháng",
-  "optionB": "1 năm hoặc đến khi đủ 18 tuổi",
+  "optionB": "1 năm sau khi được cấp",
   "optionC": "3 tháng",
   "optionD": "2 năm",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "Người có bằng lái thiếu niên không được lái xe vì công việc trong một năm sau khi cấp hoặc đến khi đủ 18 tuổi, tùy điều kiện nào đến trước."
+  "explanation": "Theo 23 V.S.A. 614(b), bằng lái thiếu niên không cho phép lái xe vì công việc hoặc để kiếm tiền trong một năm sau khi được cấp. Di chuyển máy kéo nông trại giữa các phần của nông trại là một ngoại lệ."
  },
  {
   "type": "State-Specific",
@@ -27430,14 +27430,14 @@
   "state": "VT",
   "questionId": "VT-040",
   "category": "stateUnique",
-  "question": "Điều gì xác định ngoại lệ đường có dải phân cách đối với việc dừng xe buýt trường học ở Vermont?",
-  "optionA": "Bất kỳ dải phân cách sơn nào",
-  "optionB": "Bốn làn trở lên",
-  "optionC": "Vạch vàng đôi",
-  "optionD": "Rào chắn vật lý",
+  "question": "Đối với tài xế có bằng lái đầy đủ ở Vermont, bao nhiêu điểm thì bị đình chỉ bằng lái?",
+  "optionA": "6 điểm",
+  "optionB": "8 điểm",
+  "optionC": "12 điểm",
+  "optionD": "10 điểm",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "Ngoại lệ về xe buýt trường học trên đường có dải phân cách chỉ áp dụng khi đường được ngăn cách bằng rào chắn vật lý."
+  "explanation": "Theo 23 V.S.A. 2506, tích lũy 10 điểm dẫn đến đình chỉ bằng lái 10 ngày, với thời hạn dài hơn ở mức 15 và 20 điểm. Mức thu hồi 6 điểm áp dụng cho người có bằng lái thiếu niên."
  },
  {
   "type": "State-Specific",
@@ -27545,11 +27545,11 @@
   "question": "Ở Washington, người giữ giấy phép tập lái có được dùng thiết bị điện thoại rảnh tay khi lái xe không?",
   "optionA": "Được, nếu trên 16 tuổi",
   "optionB": "Được, chỉ để dẫn đường",
-  "optionC": "Được, chỉ để gọi khẩn cấp",
-  "optionD": "Không, không được dùng thiết bị không dây nào cả",
+  "optionC": "Được, chỉ khi dừng đèn đỏ",
+  "optionD": "Không, trừ khi báo cáo khẩn cấp",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "Người giữ giấy phép tập lái bị cấm sử dụng bất kỳ thiết bị không dây nào khi lái xe, kể cả thiết bị rảnh tay."
+  "explanation": "Theo RCW 46.20.055, người có giấy phép tập lái chỉ được lái xe nếu không dùng thiết bị không dây, kể cả rảnh tay. Ngoại lệ duy nhất là để báo cáo tội phạm, liên hệ dịch vụ khẩn cấp hoặc ngăn chặn nguy hại."
  },
  {
   "type": "State-Specific",
@@ -27962,14 +27962,14 @@
   "state": "WA",
   "questionId": "WA-038",
   "category": "stateUnique",
-  "question": "Ở Washington, phải bật đèn pha khi tầm nhìn ở khoảng cách nào?",
-  "optionA": "Khi bạn không thể nhìn thấy 500 feet phía trước",
-  "optionB": "Khi bạn không thể nhìn thấy 1,000 feet phía trước",
-  "optionC": "Khi bạn không thể nhìn thấy 200 feet phía trước",
-  "optionD": "Chỉ khi trời tối hoàn toàn",
+  "question": "Ở Washington, bạn phải đậu xe cách trụ nước cứu hỏa bao xa?",
+  "optionA": "Ít nhất 5 feet",
+  "optionB": "Ít nhất 15 feet",
+  "optionC": "Ít nhất 10 feet",
+  "optionD": "Ít nhất 25 feet",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "Phải bật đèn pha bất cứ khi nào không thể nhìn thấy rõ người và xe cộ trên đường ở khoảng cách 1,000 feet (khoảng 305 mét) phía trước."
+  "explanation": "RCW 46.61.570 cấm dừng, đứng chờ hoặc đậu xe trong phạm vi 15 feet tính từ trụ nước cứu hỏa. Một số bang dùng mức 10 feet, nhưng Washington dùng mức 15 feet."
  },
  {
   "type": "State-Specific",
@@ -28061,13 +28061,13 @@
   "questionId": "WI-005",
   "category": "gdlLicensing",
   "question": "Ngoại lệ nào đối với giờ giới nghiêm ban đêm cho người có bằng lái thử thách ở Wisconsin?",
-  "optionA": "Công việc, trường học, khẩn cấp",
+  "optionA": "Đi lại giữa nhà, trường học hoặc nơi làm việc",
   "optionB": "Chỉ hoạt động tôn giáo",
   "optionC": "Chỉ sự kiện gia đình",
   "optionD": "Chỉ hoạt động thể thao",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "Người có bằng lái thử thách được lái trong giờ giới nghiêm vì công việc, trường học hoặc khẩn cấp."
+  "explanation": "Trong chín tháng đầu, người có bằng lái thử thách không được lái từ nửa đêm đến 5 giờ sáng trừ khi đi giữa nhà và trường học hoặc nơi làm việc."
  },
  {
   "type": "State-Specific",
@@ -28116,14 +28116,14 @@
   "state": "WI",
   "questionId": "WI-009",
   "category": "gdlLicensing",
-  "question": "Bằng lái thử thách tự động chuyển thành bằng thông thường ở Wisconsin từ độ tuổi nào?",
-  "optionA": "18 tuổi",
-  "optionB": "21 tuổi",
-  "optionC": "19 tuổi",
-  "optionD": "17 tuổi",
+  "question": "Khi nào bằng lái thử thách ở Wisconsin hết hạn?",
+  "optionA": "Hai năm sau sinh nhật kế tiếp của bạn",
+  "optionB": "Vào sinh nhật lần thứ 21 của bạn",
+  "optionC": "Năm năm sau khi được cấp",
+  "optionD": "Sau chín tháng",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "Bằng lái thử thách tự động chuyển thành bằng thông thường ở tuổi 18."
+  "explanation": "Bằng lái thử thách ở Wisconsin hết hạn hai năm sau sinh nhật kế tiếp của người giữ bằng, nên bằng cấp ở tuổi 16 hết hạn sớm nhất ở tuổi 19. Các hạn chế chín tháng là riêng biệt và có thể được kéo dài đến 18 tuổi."
  },
  {
   "type": "State-Specific",
@@ -28161,11 +28161,11 @@
   "question": "Ở Wisconsin, khi nào bạn phải bật đèn pha?",
   "optionA": "Khi tầm nhìn giảm xuống dưới 500 feet",
   "optionB": "Khi cần gạt nước kính chắn gió đang dùng",
-  "optionC": "Khi lái trong mưa lớn hoặc tuyết",
-  "optionD": "Khi lái trên đường cao tốc nông thôn ban đêm",
-  "correctAnswer": "B",
-  "correctIndex": 1,
-  "explanation": "Phải bật đèn pha bất cứ khi nào cần gạt nước kính chắn gió đang được dùng liên tục."
+  "optionC": "Chỉ khi trời tối hoàn toàn",
+  "optionD": "Chỉ trên đường cao tốc nông thôn",
+  "correctAnswer": "A",
+  "correctIndex": 0,
+  "explanation": "Wisconsin yêu cầu bật đèn pha từ nửa giờ sau khi mặt trời lặn đến nửa giờ trước khi mặt trời mọc và bất cứ khi nào bạn không thể nhìn thấy người hoặc xe ở khoảng cách 500 feet. Bật đèn khi dùng cần gạt nước là khuyến nghị, không bắt buộc."
  },
  {
   "type": "State-Specific",
@@ -28242,14 +28242,14 @@
   "state": "WI",
   "questionId": "WI-018",
   "category": "cellPhone",
-  "question": "Luật Wisconsin cấm mọi tài xế làm việc gì với điện thoại?",
-  "optionA": "Đi theo GPS gắn trên bảng điều khiển",
-  "optionB": "Soạn hoặc gửi tin nhắn",
-  "optionC": "Nghe nhạc",
-  "optionD": "Gọi thoại rảnh tay",
+  "question": "Trong khu vực thi công đường bộ ở Wisconsin, khi nào bạn được dùng điện thoại khi lái xe?",
+  "optionA": "Khi giao thông di chuyển chậm",
+  "optionB": "Chỉ để báo cáo khẩn cấp",
+  "optionC": "Để gọi thoại ngắn",
+  "optionD": "Khi đang chờ người điều tiết giao thông",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "Wisconsin cấm soạn hoặc gửi tin nhắn và email khi lái xe; tài xế có bằng lái thử thách hoặc giấy phép học lái hoàn toàn không được dùng điện thoại."
+  "explanation": "Sổ tay Người lái xe Wisconsin nói bạn chỉ được dùng điện thoại di động trong khu vực thi công để báo cáo tình huống khẩn cấp. Tiền phạt cũng tăng gấp đôi trong các khu vực này."
  },
  {
   "type": "State-Specific",
@@ -28452,14 +28452,14 @@
   "state": "WI",
   "questionId": "WI-033",
   "category": "stateUnique",
-  "question": "Trẻ em phải dùng ghế nâng ở Wisconsin đến độ tuổi nào?",
-  "optionA": "Dưới 8 tuổi hoặc dưới 57 inch",
-  "optionB": "Dưới 6 tuổi hoặc dưới 50 inch",
-  "optionC": "Dưới 10 tuổi hoặc dưới 60 inch",
-  "optionD": "Dưới 12 tuổi hoặc dưới 65 inch",
+  "question": "Ở Wisconsin, trẻ từ 4 đến 8 tuổi phải dùng ghế nâng cho đến khi đạt mốc nào?",
+  "optionA": "8 tuổi, 80 pound hoặc 4 ft 9 in",
+  "optionB": "6 tuổi hoặc 50 pound",
+  "optionC": "10 tuổi hoặc 60 inch",
+  "optionD": "12 tuổi hoặc 65 inch",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "Trẻ dưới 8 tuổi hoặc thấp hơn 57 inch phải dùng ghế nâng."
+  "explanation": "Wisconsin yêu cầu ghế nâng cho trẻ từ 4 đến 8 tuổi nặng từ 40 đến 80 pound và cao không quá 4 feet 9 inch. Trẻ có thể chuyển sang dùng dây an toàn sau khi đủ 8 tuổi, nặng hơn 80 pound hoặc cao hơn 4 feet 9 inch."
  },
  {
   "type": "State-Specific",
@@ -28776,12 +28776,12 @@
   "category": "cellPhone",
   "question": "Thiết bị nào bạn có thể đeo khi lái xe mà không vi phạm luật điện thoại?",
   "optionA": "Máy tính bảng trên bảng điều khiển",
-  "optionB": "Điện thoại trong túi",
-  "optionC": "Tai nghe Bluetooth",
+  "optionB": "Điện thoại đặt trên đùi",
+  "optionC": "Máy thu GPS cầm tay",
   "optionD": "Đồng hồ thông minh trên cổ tay",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "Đồng hồ thông minh đeo trên cổ tay được phép khi lái xe mà không vi phạm luật điện thoại."
+  "explanation": "Luật West Virginia không coi đồng hồ thông minh là thiết bị bị điều chỉnh, nên đeo đồng hồ thông minh được phép. Cầm hoặc đỡ điện thoại, máy tính bảng hay GPS cầm tay bằng bất kỳ bộ phận nào của cơ thể thì không được phép."
  },
  {
   "type": "State-Specific",
@@ -28817,13 +28817,13 @@
   "questionId": "WV-019",
   "category": "duiStateLaws",
   "question": "Giới hạn nồng độ cồn trong máu (BAC) hợp pháp đối với tài xế dưới 21 tuổi ở West Virginia là bao nhiêu?",
-  "optionA": "0.00% - không khoan nhượng",
+  "optionA": "0,00%",
   "optionB": "0.05% trở xuống",
-  "optionC": "0.02% trở xuống",
+  "optionC": "Dưới 0,02%",
   "optionD": "0.01% trở xuống",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Tài xế dưới 21 tuổi phải có BAC từ 0.02% trở xuống — cao hơn là vi phạm theo tiêu chuẩn không khoan nhượng."
+  "explanation": "Ở West Virginia, tài xế dưới 21 tuổi vi phạm khi có BAC từ 0,02% trở lên, nên giới hạn hợp pháp là dưới 0,02%. Hình phạt DUI cho người lớn áp dụng ở mức 0,08%."
  },
  {
   "type": "State-Specific",
@@ -28989,9 +28989,9 @@
   "optionB": "Sáu tháng một lần",
   "optionC": "Một lần mỗi năm",
   "optionD": "Ba năm một lần",
-  "correctAnswer": "C",
-  "correctIndex": 2,
-  "explanation": "Xe đã đăng ký phải kiểm tra an toàn một lần mỗi năm."
+  "correctAnswer": "A",
+  "correctIndex": 0,
+  "explanation": "Theo WV Code 17C-16-4, xe đã đăng ký phải được kiểm định hai năm một lần. Xe cơ giới thương mại theo quy định liên bang vẫn phải được kiểm định ít nhất mỗi năm một lần."
  },
  {
   "type": "State-Specific",
@@ -30160,14 +30160,14 @@
   "state": "DC",
   "questionId": "DC-035",
   "category": "stateUnique",
-  "question": "Trẻ em dưới 13 tuổi phải ngồi ở đâu trong xe ở DC?",
+  "question": "Trẻ em dưới 13 tuổi nên ngồi ở đâu trong xe ở DC?",
   "optionA": "Ở ghế trước có túi khí",
   "optionB": "Ở ghế sau",
   "optionC": "Bất kỳ đâu có dây an toàn",
   "optionD": "Chỉ ở hàng ghế giữa",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "DC khuyến nghị tất cả trẻ em dưới 13 tuổi ngồi ghế sau, đó là vị trí an toàn nhất trong xe."
+  "explanation": "Trẻ em dưới 13 tuổi nên ngồi ghế sau, nơi tránh xa túi khí phía trước. Chỉ thắt dây an toàn thôi không làm cho ghế trước an toàn với các em."
  },
  {
   "type": "State-Specific",
@@ -30230,14 +30230,14 @@
   "state": "DC",
   "questionId": "DC-040",
   "category": "stateUnique",
-  "question": "Giới hạn tốc độ tối đa được phép trên bất kỳ đường nào ở DC trừ khi có biển báo khác là bao nhiêu?",
-  "optionA": "30 mph",
-  "optionB": "35 mph",
-  "optionC": "20 mph",
-  "optionD": "45 mph",
+  "question": "Ở DC, người đi xe đạp được làm gì tại biển dừng khi đường thông thoáng?",
+  "optionA": "Phải dừng hẳn mọi lúc",
+  "optionB": "Phải dắt xe đạp qua",
+  "optionC": "Đi qua không dừng sau khi nhường đường",
+  "optionD": "Chỉ được rẽ phải",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Trừ khi có biển báo giới hạn khác, tốc độ tối đa hợp pháp trên đường phố DC là 20 mph; nhiều tuyến đường chính có biển 25 mph và hẻm là 15 mph."
+  "explanation": "Đạo luật Sửa đổi Đường phố An toàn hơn của DC cho phép người đi xe đạp đi qua biển dừng mà không dừng lại, với tốc độ an toàn, sau khi quan sát nguy hiểm và nhường đường cho người đi bộ và xe cộ. Tài xế nên lường trước người đi xe đạp đi qua và không được cho rằng họ sẽ dừng."
  },
  {
   "type": "State-Specific",

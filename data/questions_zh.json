@@ -340,14 +340,14 @@
   "state": "ALL",
   "questionId": "U-025",
   "category": "roadSigns",
-  "question": "有凸起图案的标志表示什么？",
-  "optionA": "路面粗糙",
-  "optionB": "前方有减速带",
-  "optionC": "车道高低不平",
-  "optionD": "路面下凹",
+  "question": "黄色BUMP（凸起）警告标志表示什么？",
+  "optionA": "前方路面突然隆起",
+  "optionB": "前方是学校限速区",
+  "optionC": "前方车道即将合并",
+  "optionD": "前方路面突然下凹",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "此标志警告前方路面不平或粗糙。"
+  "explanation": "BUMP（凸起）标志警告前方路面突然隆起，应减速。路面突然下凹则用DIP（下凹）标志表示。"
  },
  {
   "type": "Universal",
@@ -638,10 +638,10 @@
   "optionA": "车速",
   "optionB": "车道宽度",
   "optionC": "停车时间",
-  "optionD": "桥梁承载能力",
+  "optionD": "车辆重量",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "限重标志显示允许的最大车辆重量，通常设在桥梁上。"
+  "explanation": "限重标志规定该道路或桥梁允许通行的最大车辆重量。它不限制车速、车道宽度或停车。"
  },
  {
   "type": "Universal",
@@ -664,12 +664,12 @@
   "category": "roadSigns",
   "question": "道路标志上的END（结束）表示什么？",
   "optionA": "道路终止",
-  "optionB": "限制结束",
-  "optionC": "限速区结束",
-  "optionD": "以上任何一种",
+  "optionB": "前方必须停车",
+  "optionC": "新车道开始",
+  "optionD": "公布的区域或规定结束",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "标志上的END（结束）表示先前公布的规定或区域不再生效。"
+  "explanation": "标志上的END（结束），例如END SCHOOL ZONE（学校区结束）或END ROAD WORK（施工结束），表示先前公布的区域或规定不再适用。道路尽头会另有警告标志，不会只用END表示。"
  },
  {
   "type": "Universal",
@@ -677,13 +677,13 @@
   "questionId": "U-049",
   "category": "roadSigns",
   "question": "自行车道标志表示什么？",
-  "optionA": "该车道仅限自行车",
+  "optionA": "专供自行车使用的车道",
   "optionB": "禁止自行车",
-  "optionC": "自行车可以使用",
+  "optionC": "自行车与汽车共用车道",
   "optionD": "自行车停放处",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "自行车道标志标示专供自行车使用的车道。"
+  "explanation": "自行车道标志标示专供自行车使用的车道。驾驶人只能在允许的地方为转弯或停车而进入或穿过该车道，并须先让行骑车人。"
  },
  {
   "type": "Universal",
@@ -760,14 +760,14 @@
   "state": "ALL",
   "questionId": "U-055",
   "category": "rulesOfRoad",
-  "question": "什么时候可以超越亮着红色闪灯的校车？",
-  "optionA": "只有在分隔式公路上朝相反方向行驶时",
+  "question": "在大多数州，什么时候可以超越亮着红色闪灯的校车？",
+  "optionA": "在有中央隔离带或隔离设施的公路上朝相反方向行驶时",
   "optionB": "当校车司机挥手示意您超越停着的校车时",
   "optionC": "当停着的校车附近看不到儿童时",
   "optionD": "任何情况下都不能超越亮着红色闪灯的校车",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "在有中央隔离带的分隔式公路上，朝相反方向行驶时可以继续前行。"
+  "explanation": "大多数州允许在有中央隔离带或实体隔离设施的公路上，对向行驶的车辆继续前行。有些州（例如纽约州）要求所有驾驶人都停车，所以请查看本州的规定。"
  },
  {
   "type": "Universal",
@@ -830,14 +830,14 @@
   "state": "ALL",
   "questionId": "U-060",
   "category": "rulesOfRoad",
-  "question": "转弯前多远必须打转向灯？",
+  "question": "在大多数州，转弯前多远必须打转向灯？",
   "optionA": "25英尺",
   "optionB": "50英尺",
   "optionC": "100英尺",
   "optionD": "200英尺",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "转弯前至少100英尺打转向灯，让其他驾驶人有足够的提醒。"
+  "explanation": "大多数州要求在转弯前至少100英尺打转向灯。有些州在乡村道路或高速道路上要求更远，例如伊利诺伊州在商业区以外要求200英尺。"
  },
  {
   "type": "Universal",
@@ -847,25 +847,25 @@
   "question": "什么时候应该使用前大灯？",
   "optionA": "只在夜间",
   "optionB": "能见度降低时",
-  "optionC": "日落到日出期间",
+  "optionC": "黄昏到黎明之间",
   "optionD": "B和C都对",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "从日落到日出以及任何能见度降低的时候，都必须开前大灯。"
+  "explanation": "大约从日落到日出（许多州规定为日落后30分钟至日出前30分钟），以及雨、雾或黑暗导致能见度降低时，都必须开前大灯。只在夜间开灯会忽略能见度低时的规定。"
  },
  {
   "type": "Universal",
   "state": "ALL",
   "questionId": "U-062",
   "category": "rulesOfRoad",
-  "question": "在理想条件下，合适的跟车距离是多少？",
+  "question": "在理想条件下，大多数州的驾驶手册建议保持多远的跟车距离？",
   "optionA": "1秒",
   "optionB": "2秒",
   "optionC": "3-4秒",
   "optionD": "5秒",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "在正常驾驶条件下，至少保持3-4秒的跟车距离。"
+  "explanation": "大多数州的驾驶手册建议在良好条件下与前车保持至少3到4秒的距离，天气不好时要更远。在公路车速下，2秒的反应时间太短。"
  },
  {
   "type": "Universal",
@@ -1096,28 +1096,28 @@
   "state": "ALL",
   "questionId": "U-079",
   "category": "rulesOfRoad",
-  "question": "停车时距离消防栓至少要多远？",
+  "question": "在大多数州，停车时离消防栓最近可以多近？",
   "optionA": "5英尺",
   "optionB": "10英尺",
   "optionC": "15英尺",
   "optionD": "20英尺",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "停车时必须距离消防栓至少15英尺，以确保紧急情况下能够使用。"
+  "explanation": "大多数州要求停车时距离消防栓至少15英尺，以便消防人员能够使用。少数州（例如马萨诸塞州和新泽西州）规定为10英尺。"
  },
  {
   "type": "Universal",
   "state": "ALL",
   "questionId": "U-080",
   "category": "rulesOfRoad",
-  "question": "停车时距离人行横道至少要多远？",
+  "question": "在大多数州，停车时离路口人行横道最近可以多近？",
   "optionA": "10英尺",
   "optionB": "15英尺",
   "optionC": "20英尺",
   "optionD": "25英尺",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "不要在人行横道20英尺范围内停车，以保证行人能被看清。"
+  "explanation": "大多数州禁止在路口人行横道20英尺范围内停车，以便驾驶人能看清行人。少数州规定的距离不同，例如新泽西州为25英尺。"
  },
  {
   "type": "Universal",
@@ -1575,11 +1575,11 @@
   "question": "双手握方向盘最安全的位置是哪里？",
   "optionA": "10点和2点",
   "optionB": "9点和3点",
-  "optionC": "8点和4点",
+  "optionC": "单手握在6点位置",
   "optionD": "12点",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "9点和3点的位置可提供最佳控制，并减少安全气囊弹出时造成伤害的风险。"
+  "explanation": "双手握在方向盘9点和3点的位置，既能良好控制，又能让手臂避开安全气囊弹出的路径。较旧的10点和2点握法会让手处在安全气囊弹出时可能被弹回的位置。"
  },
  {
   "type": "Universal",
@@ -1684,14 +1684,14 @@
   "state": "ALL",
   "questionId": "U-122",
   "category": "safeDriving",
-  "question": "上车之前应该做什么？",
+  "question": "开车出发前应该做什么？",
   "optionA": "检查车辆四周",
   "optionB": "调整所有后视镜",
   "optionC": "系好安全带",
   "optionD": "以上都对",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "先绕车一周检查有无障碍物，然后调整后视镜并系好安全带。"
+  "explanation": "上车前先绕车一周检查有无危险，然后在起步前调整后视镜并系好安全带。每一步都是驾驶前准备的一部分。"
  },
  {
   "type": "Universal",
@@ -1758,10 +1758,10 @@
   "optionA": "路面畅通时超车",
   "optionB": "从车队中间穿过",
   "optionC": "照常驾驶",
-  "optionD": "靠边停车等候",
+  "optionD": "让行，让车队通过",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "靠边停车或等候送葬车队通过，以示尊重并确保安全。"
+  "explanation": "遇到送葬车队应让行，让其通过，切勿插入车队。照常行驶可能意味着穿插进车队。"
  },
  {
   "type": "Universal",
@@ -2216,14 +2216,14 @@
   "state": "ALL",
   "questionId": "U-160",
   "category": "alcoholDUI",
-  "question": "驾车时遇到龙卷风应该怎么做？",
-  "optionA": "以最快速度驶离龙卷风",
+  "question": "驾车时龙卷风逼近，最好的做法是什么？",
+  "optionA": "打开车窗以平衡气压",
   "optionB": "把车停在立交桥下躲避强风",
   "optionC": "加速，试图跑过龙卷风的路径",
-  "optionD": "下车，趴在附近的低洼处",
+  "optionD": "驶往最近的坚固避难处",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "如果附近没有建筑物可以躲避，应下车，远离车辆，平趴在低洼处。"
+  "explanation": "美国国家气象局表示，最好的做法是驶往最近的坚固避难处。如果做不到，就在车内低下身子并护住头部，或下车躲到沟里；天桥无法抵挡强风和飞散的碎片。"
  },
  {
   "type": "Universal",
@@ -3032,24 +3032,24 @@
   "optionA": "报告紧急情况时",
   "optionB": "仅在红灯时",
   "optionC": "仅在停车场内",
-  "optionD": "交通完全停止时",
+  "optionD": "车速低于10英里/小时时",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "伊利诺伊州法律只允许在车辆停在路肩上或报告紧急情况时使用手持手机。"
+  "explanation": "伊利诺伊州允许使用手持手机报告紧急情况。其他例外包括车辆停在路肩上，或因交通受阻停下并挂在空挡或驻车挡，但低速行驶从来不是例外。"
  },
  {
   "type": "State-Specific",
   "state": "IL",
   "questionId": "IL-018",
   "category": "cellPhone",
-  "question": "在伊利诺伊州，驾驶人在红灯前或堵车停下时可以使用手持手机吗？",
-  "optionA": "可以，交通完全停止时允许",
-  "optionB": "不可以，即使停下也禁止",
-  "optionC": "可以，仅在红灯时允许",
-  "optionD": "可以，拉上手刹时允许",
+  "question": "一名伊利诺伊州驾驶人因前方交通受阻而停下。此时何时可以使用手持手机？",
+  "optionA": "任何时候都不行，即使完全停下",
+  "optionB": "车辆挂在驻车挡或空挡时",
+  "optionC": "只要踩着刹车踏板就可以",
+  "optionD": "只有关闭引擎之后",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "伊利诺伊州禁止在驾驶时使用手持电子设备，即使在红灯前停下或堵在车流中也不例外。"
+  "explanation": "伊利诺伊州允许在车辆因正常交通受阻而停下、且挂在空挡或驻车挡时使用设备。仅在前进挡踩住刹车并不符合条件。"
  },
  {
   "type": "State-Specific",
@@ -3238,14 +3238,14 @@
   "state": "IL",
   "questionId": "IL-032",
   "category": "stateUnique",
-  "question": "伊利诺伊州的斯科特法（Scott's Law）要求驾驶人在接近停靠的紧急车辆时怎么做？",
-  "optionA": "保持当前车速",
-  "optionB": "鸣喇叭提醒急救人员",
-  "optionC": "减速并让出车道",
-  "optionD": "在其后方完全停车",
+  "question": "在伊利诺伊州至少四车道的道路上，遇到闪着红灯的校车，哪些车辆必须停车？",
+  "optionA": "两个方向的车辆",
+  "optionB": "只有对向行驶的车辆",
+  "optionC": "只有与校车同向行驶的车辆",
+  "optionD": "无人需要，如果儿童走人行道",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "伊利诺伊州的斯科特法要求驾驶人在接近开启警示灯的停靠紧急车辆时减速，并在可能时让出车道。"
+  "explanation": "在四车道或以上的道路上，只有与校车同向行驶的车辆必须停车。在双车道道路上，两个方向的车辆都必须停车。"
  },
  {
   "type": "State-Specific",
@@ -3658,14 +3658,14 @@
   "state": "MA",
   "questionId": "MA-022",
   "category": "stateUnique",
-  "question": "在马萨诸塞州，车上乘客几岁起必须系安全带？",
-  "optionA": "13岁及以上",
-  "optionB": "16岁及以上",
-  "optionC": "所有年龄",
-  "optionD": "18岁及以上",
-  "correctAnswer": "A",
-  "correctIndex": 0,
-  "explanation": "所有13岁及以上的乘客都必须系安全带。"
+  "question": "在马萨诸塞州的乘用车里，谁必须系安全带或使用儿童安全座椅？",
+  "optionA": "只有前座乘客",
+  "optionB": "只有驾驶人",
+  "optionC": "所有驾驶人和乘客",
+  "optionD": "只有18岁及以上的乘客",
+  "correctAnswer": "C",
+  "correctIndex": 2,
+  "explanation": "马萨诸塞州要求所有驾驶人和乘客都系安全带，幼童必须按照儿童乘客法使用儿童安全座椅。后座乘客也不例外。"
  },
  {
   "type": "State-Specific",
@@ -4036,14 +4036,14 @@
   "state": "MD",
   "questionId": "MD-009",
   "category": "gdlLicensing",
-  "question": "在马里兰州，临时驾照在驾驶人几岁时自动变为无限制驾照？",
-  "optionA": "18岁",
-  "optionB": "17岁",
-  "optionC": "19岁",
-  "optionD": "21岁",
+  "question": "在马里兰州，临时驾照何时自动变为正式驾照？",
+  "optionA": "无违规定罪满18个月后",
+  "optionB": "驾驶人17岁生日当天",
+  "optionC": "驾驶人19岁生日当天",
+  "optionD": "无事故满6个月后",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "驾驶人年满18岁时，临时驾照自动变为无限制驾照。"
+  "explanation": "在马里兰州，临时驾照持有至少18个月且没有任何违规定罪记录后，会转为正式驾照。一旦有违规定罪，18个月重新计算。"
  },
  {
   "type": "State-Specific",
@@ -4541,13 +4541,13 @@
   "questionId": "NJ-005",
   "category": "gdlLicensing",
   "question": "在新泽西州，试用驾照持有人违反分级驾照制度（GDL）限制会怎样？",
-  "optionA": "必须重新开始试用期",
+  "optionA": "罚款100美元",
   "optionB": "驾照被永久吊销",
   "optionC": "必须从学习驾照重新开始",
   "optionD": "会留下犯罪记录",
   "correctAnswer": "A",
   "correctIndex": 0,
-  "explanation": "试用驾照持有人违反GDL限制，必须重新开始整个试用期。"
+  "explanation": "在新泽西州，学习驾照或试用驾照持有人违反任何GDL限制，会被罚款100美元。这不会让试用期重新开始，也不会留下犯罪记录。"
  },
  {
   "type": "State-Specific",
@@ -4612,12 +4612,12 @@
   "category": "gdlLicensing",
   "question": "在新泽西州，什么例外情况允许试用驾照驾驶人在宵禁时间驾驶？",
   "optionA": "只允许参加社交活动",
-  "optionB": "工作、上学、宗教活动、紧急情况",
+  "optionB": "工作或宗教原因，并持有信函",
   "optionC": "有乘客时任何时间都可以",
   "optionD": "没有任何例外",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "试用驾照驾驶人只有在工作、上学、宗教活动或紧急情况时，才可以在宵禁时间驾驶。"
+  "explanation": "新泽西州试用驾照驾驶人只有因工作或宗教原因，并携带印有正式抬头的信函，才可以在晚上11:01至早上5点的宵禁时间驾驶。社交活动不属于例外。"
  },
  {
   "type": "State-Specific",
@@ -4638,14 +4638,14 @@
   "state": "NJ",
   "questionId": "NJ-012",
   "category": "gdlLicensing",
-  "question": "在新泽西州，监督驾驶人必须持有驾照多少年？",
-  "optionA": "至少1年",
-  "optionB": "至少2年",
-  "optionC": "至少5年",
-  "optionD": "至少3年",
+  "question": "在新泽西州，特别学习驾照持有人需要跟随持照教练完成多少小时的上路驾驶教学？",
+  "optionA": "至少3小时",
+  "optionB": "至少4小时",
+  "optionC": "至少10小时",
+  "optionD": "至少6小时",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "监督驾驶人必须持有驾照至少3年。"
+  "explanation": "新泽西州要求在有双控装置的车辆上，跟随持照教练完成6小时的上路驾驶教学。这与50小时的监督练习是分开计算的。"
  },
  {
   "type": "State-Specific",
@@ -4841,7 +4841,7 @@
   "optionD": "5岁或身高48英寸",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "儿童必须坐增高座椅，直到年满8岁或身高达到57英寸，以较晚者为准。"
+  "explanation": "儿童必须坐增高座椅，直到年满8岁或身高达到57英寸，以先达到者为准。之后，安全带必须正确贴合。"
  },
  {
   "type": "State-Specific",
@@ -5170,14 +5170,14 @@
   "state": "NY",
   "questionId": "NY-010",
   "category": "gdlLicensing",
-  "question": "在纽约州，取得青少年驾照需要多少小时的夜间驾驶练习？",
-  "optionA": "夜间10小时",
-  "optionB": "总共50小时中的15小时",
-  "optionC": "夜间20小时",
-  "optionD": "不要求夜间练习",
-  "correctAnswer": "B",
-  "correctIndex": 1,
-  "explanation": "在要求的50小时有人陪同练习中，至少15小时必须在夜间完成。"
+  "question": "在纽约州北部，青少年驾照持有人在什么时段可以无人陪同驾驶？",
+  "optionA": "早上5点至晚上9点",
+  "optionB": "早上6点至午夜",
+  "optionC": "一天中任何时间",
+  "optionD": "仅晚上9点至早上5点",
+  "correctAnswer": "A",
+  "correctIndex": 0,
+  "explanation": "在纽约州北部，青少年驾照持有人可在早上5点至晚上9点无人陪同驾驶。晚上9点至早上5点需要有监督驾驶人陪同，但直接往返家与工作地点或学校除外。"
  },
  {
   "type": "State-Specific",
@@ -5562,14 +5562,14 @@
   "state": "NY",
   "questionId": "NY-038",
   "category": "stateUnique",
-  "question": "在纽约州，校车司机可以红灯右转吗？",
-  "optionA": "可以，先停车后转",
-  "optionB": "不可以，任何时候都不允许",
-  "optionC": "可以，如果车上没有学生",
+  "question": "在允许红灯右转的地方，纽约州的校车何时可以红灯右转？",
+  "optionA": "任何时候，先停车后转",
+  "optionB": "任何情况下都不可以",
+  "optionC": "只有车上没有学生时",
   "optionD": "只限乡村地区",
-  "correctAnswer": "B",
-  "correctIndex": 1,
-  "explanation": "校车司机任何时候都不允许红灯右转。"
+  "correctAnswer": "C",
+  "correctIndex": 2,
+  "explanation": "根据VTL 1111(d)(5)，载有学生的校车不得在红灯常亮时通行。车上没有学生时，在允许其他车辆红灯右转的地方，校车也可以红灯右转。"
  },
  {
   "type": "State-Specific",
@@ -6024,14 +6024,14 @@
   "state": "PA",
   "questionId": "PA-031",
   "category": "stateUnique",
-  "question": "在宾夕法尼亚州驾驶时，何时必须开启前大灯？",
-  "optionA": "仅在夜间",
-  "optionB": "仅在下雨时",
-  "optionC": "使用雨刷时",
-  "optionD": "仅在有雾时",
+  "question": "在宾夕法尼亚州，停车时必须距离消防栓多远？",
+  "optionA": "至少5英尺",
+  "optionB": "至少10英尺",
+  "optionC": "至少15英尺",
+  "optionD": "至少25英尺",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "只要使用雨刷，就必须开启前大灯。"
+  "explanation": "宾夕法尼亚州驾驶手册规定，切勿在消防栓15英尺范围内停车。也禁止在路口人行横道20英尺范围内停车。"
  },
  {
   "type": "State-Specific",
@@ -6348,12 +6348,12 @@
   "category": "cellPhone",
   "question": "在德克萨斯州，18岁以下的新手驾驶人可以使用免提设备吗？",
   "optionA": "可以，如果是语音控制的",
-  "optionB": "不可以，禁止任何使用",
-  "optionC": "仅限紧急情况",
+  "optionB": "不可以，紧急情况除外",
+  "optionC": "只限乡村公路",
   "optionD": "仅限有人监督时",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "18岁以下的驾驶人驾驶时禁止使用任何手机，包括免提设备。"
+  "explanation": "德克萨斯州交通法第545.424条禁止18岁以下的驾驶人使用任何无线通讯设备，包括免提设备，紧急情况除外。"
  },
  {
   "type": "State-Specific",
@@ -6654,14 +6654,14 @@
   "state": "TX",
   "questionId": "TX-036",
   "category": "stateUnique",
-  "question": "德克萨斯州法律对多车道公路的左车道有什么规定？",
-  "optionA": "任何速度都可以",
+  "question": "德克萨斯州法律对多车道公路的车道使用有什么规定？",
+  "optionA": "任何速度在任何车道都可以",
   "optionB": "左车道仅供多乘员车道（HOV）使用",
-  "optionC": "左车道仅供超车使用",
+  "optionC": "较慢的车辆必须靠右行驶",
   "optionD": "没有任何限制",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "多车道公路的左车道仅供超车使用，被超车时驾驶人必须向右移。"
+  "explanation": "德克萨斯州交通法第545.051(b)条要求比正常车流慢的驾驶人使用右侧车道，超车或准备左转时除外。设有“左车道仅供超车”标志的地方，还适用该标志的规定。"
  },
  {
   "type": "State-Specific",
@@ -6815,7 +6815,7 @@
   "optionD": "不允许载任何乘客",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "18岁以下的临时驾照持有人最多只能载一名21岁以下的乘客，除非有持照的父母或监护人坐在前座。"
+  "explanation": "18岁之前，临时驾照持有人只能载一名21岁以下的乘客，家庭成员或同住者不计在内。第一年之后，在参加学校活动、有21岁或以上持照驾驶人坐在旁边或遇到紧急情况时，最多可载三名。"
  },
  {
   "type": "State-Specific",
@@ -6936,12 +6936,12 @@
   "category": "cellPhone",
   "question": "在弗吉尼亚州，18岁以下的驾驶人有什么手机使用限制？",
   "optionA": "允许免提通话",
-  "optionB": "只能拨打紧急电话",
+  "optionB": "只能使用导航应用",
   "optionC": "只禁止发短信",
-  "optionD": "车辆行驶时不得使用",
+  "optionD": "不可以，紧急情况或停车时除外",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "18岁以下的驾驶人在车辆行驶时不得以任何方式使用手机。"
+  "explanation": "18岁以下的驾驶人不得使用手机或其他无线设备，无论手持还是免提，除非驾驶人遇到紧急情况或车辆已合法停放或停下。"
  },
  {
   "type": "State-Specific",
@@ -7385,11 +7385,11 @@
   "question": "在华盛顿州，学习驾照持有人开车时可以使用免提手机设备吗？",
   "optionA": "可以，如果年满16岁",
   "optionB": "可以，只限导航",
-  "optionC": "可以，只限紧急电话",
-  "optionD": "不可以，不得使用任何无线设备",
+  "optionC": "可以，只限红灯时",
+  "optionD": "不可以，报告紧急情况除外",
   "correctAnswer": "D",
   "correctIndex": 3,
-  "explanation": "学习驾照持有人开车时禁止使用任何无线设备，包括免提设备。"
+  "explanation": "根据RCW 46.20.055，学习驾照持有人只有在不使用无线设备（包括免提设备）时才可以驾驶。唯一的例外是报告犯罪、联系紧急服务或防止伤害。"
  },
  {
   "type": "State-Specific",
@@ -7802,14 +7802,14 @@
   "state": "WA",
   "questionId": "WA-038",
   "category": "stateUnique",
-  "question": "在华盛顿州，能见距离低于多少时必须打开前大灯？",
-  "optionA": "看不清前方500英尺时",
-  "optionB": "看不清前方1,000英尺时",
-  "optionC": "看不清前方200英尺时",
-  "optionD": "只有在完全黑暗时",
+  "question": "在华盛顿州，停车时必须距离消防栓多远？",
+  "optionA": "至少5英尺",
+  "optionB": "至少15英尺",
+  "optionC": "至少10英尺",
+  "optionD": "至少25英尺",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "只要在前方1,000英尺距离内无法清楚辨认公路上的人和车辆，就必须打开前大灯。"
+  "explanation": "RCW 46.61.570禁止在消防栓15英尺范围内停车、暂停或停放车辆。有些州规定为10英尺，但华盛顿州规定为15英尺。"
  },
  {
   "type": "State-Specific",

@@ -47,6 +47,16 @@ const TOPIC_TITLES: Record<string, Record<string, string>> = {
     tankVehicles: "CDL Tanker Endorsement Practice Test",
     passengerTransport: "CDL Passenger Endorsement Practice Test",
   },
+  // "citizenship test questions" is searched far more than "civics practice".
+  civics: {
+    principlesDemocracy: "US Citizenship Test Questions: Principles of American Government",
+    systemGovernment: "US Citizenship Test Questions: System of Government",
+    rightsResponsibilities: "US Citizenship Test Questions: Rights and Responsibilities",
+    colonialIndependence: "US Citizenship Test Questions: Colonial Period and Independence",
+    history1800s: "US Citizenship Test Questions: the 1800s",
+    recentHistory: "US Citizenship Test Questions: Recent American History",
+    symbolsHolidays: "US Citizenship Test Questions: Symbols and Holidays",
+  },
 };
 
 /** Another exam's topic pages a landing also links to (the CDL landing lists the endorsements). */

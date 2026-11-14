@@ -8,6 +8,8 @@ export const TIGER_EXAM_IDS = [
   "asvab", "cpr", "osha", "forklift", "alcohol", "accuplacer",
   "security", "lifeguard", "pnc", "sat", "act", "nclex",
   "cosmetology", "vtne", "paramedic", "nclexpn", "ged", "timestables",
+  // Dedicated admissions and English-reading mascots: eight reviewed expressions each.
+  "mcat", "lsat", "ieltsread",
   // UK: reviewed school, workplace and trade artwork.
   "ks2", "gcsemaths", "uksia", "uk18ed", "gcsehigher", "gcsescience",
   "gcsecs", "elevenplus", "fsmaths", "cscs", "ukfood", "ukaplh",
@@ -70,7 +72,7 @@ const BORROWED_SETS: Record<string, string> = {
   awssaa: "aws", az900: "aws", ccna: "aplus", gulfrn: "nclex", uknmc: "nclex",
   cask: "driving", cans: "driving", nzroad: "driving", iedtt: "driving",
   phlto: "driving", mykpp: "driving", sgbtt: "driving", hkdrive: "driving", aerta: "driving", zak53: "driving", zak53c3: "cdl", ngfrsc: "driving", kentsa: "driving",
-  psat: "sat", netplus: "secplus", cysa: "secplus", gcdl: "aws", gcppca: "aws", mcat: "nclex", lsat: "gre",
+  psat: "sat", netplus: "secplus", cysa: "secplus", gcdl: "aws", gcppca: "aws",
   // India exams wear their family's tiger; Pakistan's car test the car tiger; JNVST (age 10 to 12) the times tables tiger.
   ibpsclerk: "ibpspo", rrbgroupd: "rrbntpc", sscgd: "ssccgl", sscchsl: "ssccgl", sscmts: "ssccgl", uppolice: "police", jnvst: "timestables", mapgrowth: "timestables",
   pkdrive: "driving",
@@ -97,8 +99,6 @@ const BORROWED_SETS: Record<string, string> = {
   frcode: "driving",
   // AP Italian (Nov 2026): the AP English Language tiger.
   apitalian: "aplang",
-  // IELTS Reading (Nov 2026): the AP English Language tiger.
-  ieltsread: "aplang",
   // Finland (Nov 2026): motorcycle the motorcycle tiger, truck and bus the CDL tiger, hygiene passport the UK food hygiene tiger, hunting the hunter tiger.
   fimoto: "moto", fitruck: "cdl", fihygiene: "ukfood", fihunt: "hunter",
   // Hungary (Nov 2026): motorcycle the motorcycle tiger, GKI the CDL tiger, first aid the CPR tiger, insurance the life and health insurance tiger.
@@ -173,4 +173,3 @@ export function getTigerAsset(examId = "dmv", expression?: TigerExpression): str
   }
   return getSiteTigerAsset(expression);
 }
-

@@ -30,7 +30,15 @@ export function hasPositionDependentAnswers(question: Question): boolean {
   // they stay last like the Spanish, Vietnamese and Chinese "of the above".
   const positionReferencePattern = /\b(A|B|C|D)\s+(and|or|y|o|và|hoặc|,)\s+(A|B|C|D)\b|\bBoth\s+(A|B|C|D)\s+and\s+(A|B|C|D)\b|\bTanto\s+(A|B|C|D)\s+como\s+(A|B|C|D)\b|\bAll of the above\b|\bNone of the above\b|^All of these$|^이 모두$|\bTodas las anteriores\b|\bNinguna de las anteriores\b|Tất cả các câu trên|Không câu nào đúng|(A|B|C|D)\s*(와|과|및)\s*(A|B|C|D)|위의 모든 것|위의 어느 것도 아님|위 항목 모두|정답 없음|(A|B|C|D)\s*(和|与|或|及|、)\s*(A|B|C|D)|^以上/i;
 
-  return options.some(option => positionReferencePattern.test(option) || OTHER_LANGUAGE_PATTERNS.some((p) => p.test(option)));
+  if (options.some(option => positionReferencePattern.test(option) || OTHER_LANGUAGE_PATTERNS.some((p) => p.test(option)))) return true;
+
+  // "All these choices are correct" (the ham radio pool's wording) is always
+  // the last option, like "All of the above".
+  if (options.some(option => /^All (of )?these (choices|answers) are correct\.?$/i.test(option))) return true;
+
+  // Options that are themselves the letters A to D (suspects A, B, C, D):
+  // shuffled, slot A would read "C".
+  return options.every(option => /^[A-D]$/.test(option.trim()));
 }
 
 // The same guard for the European languages, one list per language, joined at

@@ -126,7 +126,7 @@ function ExamTrainingContent({ exam: source }: { exam: ExamConfig }) {
     return open.find((p) => p.part > after) ?? open.find((p) => p.part !== after);
   };
 
-  // Premium: the exam's final training step, unless this person already has
+  // Premium: the exam's last training steps (lib/examLocks.ts), unless this person already has
   // work in it. Decided once the account has loaded (locks.settled).
   const locks = useExamLocks(source);
   const accessLocked = !!setDef && (!isSplit || !!part) && locks.partLocked({ set: setDef, part: part ?? 1 });
@@ -201,13 +201,10 @@ function ExamTrainingContent({ exam: source }: { exam: ExamConfig }) {
         return;
       }
 
-      // If this question was previously answered wrong, shuffle the options
-      // so users can't just memorize the slot position
-      // Note: Use freshTrainingSets here too for consistency
-      const freshWrongQueue = freshTrainingSets[setId]?.wrongQueue || [];
-      if (freshWrongQueue.includes(question.questionId)) {
-        question = shuffleQuestionOptions(question);
-      }
+      // Shuffle the options every time, first showing included: the banks
+      // are written with keys rotating A, B, C, D, so bank order would let
+      // someone guess the answer from the previous question.
+      question = shuffleQuestionOptions(question);
     } else {
       // Free-practice mode is disabled for registry exams (see the redirect
       // above); nothing to load.

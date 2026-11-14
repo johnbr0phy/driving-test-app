@@ -131,7 +131,7 @@ export function examOffers(examId: string, currency = "USD") {
     {
       "@type": "Offer",
       name: "Tigertest Premium",
-      description: "One-time purchase, no subscription. Unlocks the final training set and practice test and full stats on every exam.",
+      description: "One-time purchase, no subscription. Unlocks the last training sets and practice tests and full stats on every exam.",
       price: String(premium.amount),
       priceCurrency: premium.currency.toUpperCase(),
     },

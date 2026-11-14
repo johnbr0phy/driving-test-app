@@ -4,7 +4,7 @@
 
 import Link from "next/link";
 import { useTranslation } from "@/contexts/LanguageContext";
-import { BarChart3, FileText, Gift, Link2, Lock, MonitorSmartphone, Plus, Smartphone } from "lucide-react";
+import { BarChart3, FileText, Gift, Link2, Lock, Mail, MonitorSmartphone, Plus, Smartphone } from "lucide-react";
 import { TEST_CATALOG, TEST_GROUPS } from "@/lib/testCatalog";
 import TeachClassDemo from "@/components/stageshow/demos/TeachClassDemo";
 import { ClassQuestions } from "@/components/teach/ClassQuestions";
@@ -267,17 +267,17 @@ export function TeachLanding({ signedIn }: { signedIn: boolean }) {
               <FileText className="w-6 h-6 text-brand-dark" aria-hidden="true" />
             </div>
             <div className="flex-1">
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-50 mb-1">Teaching something that isn&apos;t here? Make your own quiz</h3>
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-50 mb-1">Teaching something that isn&apos;t here? I&apos;ll build it for you, free</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Turn your notes, a study guide or a Quizlet set into a practice quiz, share it with just your class, and see who played and what they missed.
+                Tell me the test or course you teach and I&apos;ll build the practice test for you, for free. Then make a class for it and see who practiced and what they missed.
               </p>
             </div>
-            <Link
-              href="/create"
+            <a
+              href="mailto:john@tigertest.io?subject=Please%20build%20a%20test%20for%20my%20class"
               className="inline-flex items-center justify-center gap-1.5 flex-shrink-0 rounded-full border border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-50 hover:border-gray-900 dark:hover:border-gray-50 px-6 py-3 font-medium"
             >
-              <Plus className="w-4 h-4" aria-hidden="true" /> Create a quiz
-            </Link>
+              <Mail className="w-4 h-4" aria-hidden="true" /> Contact me
+            </a>
           </div>
         </div>
       </div>

@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     q: "Are these the same questions as the real Agniveer Vayu exam?",
-    a: "No. These are original practice questions written to the 10+2 CBSE English, Physics and Mathematics syllabus that the notification names, not questions copied from past papers or the real exam. Tigertest is not affiliated with the Indian Air Force or CASB. It is free to start, with no account required. Practice Test 1 and every drill but the last are free; the final drill and the final practice test are part of Tigertest Premium, one payment with no subscription.",
+    a: "No. These are original practice questions written to the 10+2 CBSE English, Physics and Mathematics syllabus that the notification names, not questions copied from past papers or the real exam. Tigertest is not affiliated with the Indian Air Force or CASB. It is free to start, with no account required. Practice Test 1 and every drill but the last two are free; the last two drills and the final practice test are part of Tigertest Premium, one payment with no subscription.",
   },
 ];
 

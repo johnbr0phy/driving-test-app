@@ -274,12 +274,12 @@ STAGES = {
            "Only people who have lived in Fenwick for at least five years may serve on its planning board. Every current member of the "
            "planning board was elected to it. So Marta, who was elected last year, has lived in Fenwick for at least five years.",
            SUF,
-           ["Marta was elected to the town's planning board.",
+           ["Marta was elected to the planning board and serves on it now.",
             "Everyone elected last year has lived in Fenwick.",
             "Most board members have lived in Fenwick a decade.",
             "Only people elected may serve on the planning board.",
             "Marta has served on another board in Fenwick."],
-           "If Marta was elected to the planning board, she serves on it, and only five-year residents may serve, so the conclusion follows. The argument never says what she was elected to, and that is the gap."),
+           "If Marta serves on the planning board, the rule that only five-year residents may serve gives the conclusion. The argument never says what she was elected to or that she serves now, and that is the gap."),
         LR("st", "disagree", 2,
            "Jun: Schools should start later in the morning. Teenagers whose school day starts at 8:30 or later get more sleep and do better "
            "in class.\n\n"
@@ -537,7 +537,7 @@ STAGES = {
             "If the river rises, the road will flood, and if the road floods, the school will close. So if the school closes, the river has risen.",
             "If the river rises, either the road will flood or the school will close. The road did not flood, so the school will close.",
             "If the river rises, the road will flood, and the school will close only if the road floods. So if the river rises, the school will close."],
-           "The theater argument chains two conditionals, A leads to B and B leads to C, so A leads to C; the first river argument does the same. The only-if version gives flooding as a requirement for closing, not a cause of it."),
+           "The theater argument chains two conditionals, A leads to B and B leads to C, so A leads to C; the river argument that ends with the same two links, rising to flooding to closing, does the same. The only-if version gives flooding as a requirement for closing, not a cause of it."),
         LR("st", "method", 3,
            "Coach: Critics say we lost the championship because our players were poorly conditioned. But our players ran faster in the final "
            "quarter than in the first, which is not what tired players do. Our loss came from the decisions we made on the field.",

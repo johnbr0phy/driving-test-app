@@ -708,7 +708,7 @@
       "passage": "To reduce litter on its trails, the park district will place more trash cans along them. This will work, because most of the litter on the trails is dropped by hikers who cannot find a trash can nearby.",
       "stem": "The argument depends on assuming which one of the following?",
       "options": [
-        "Many hikers who now drop litter would use a nearby trash can.",
+        "Some hikers who now drop litter would use a nearby trash can.",
         "The park district has tried other ways to cut litter without success.",
         "Trash cans reduce litter more than signs asking hikers not to litter.",
         "Litter on the trails harms wildlife more than litter found elsewhere.",
@@ -2251,14 +2251,14 @@
       "options": [
         "Everyone elected last year has lived in Fenwick.",
         "Most board members have lived in Fenwick a decade.",
-        "Marta was elected to the town's planning board.",
+        "Marta was elected to the planning board and serves on it now.",
         "Marta has served on another board in Fenwick.",
         "Only people elected may serve on the planning board."
       ],
       "correct": [
         2
       ],
-      "explanation": "If Marta was elected to the planning board, she serves on it, and only five-year residents may serve, so the conclusion follows. The argument never says what she was elected to, and that is the gap."
+      "explanation": "If Marta serves on the planning board, the rule that only five-year residents may serve gives the conclusion. The argument never says what she was elected to or that she serves now, and that is the gap."
     },
     {
       "id": "LSAT-T2-LR1-20",
@@ -2833,7 +2833,7 @@
       "correct": [
         2
       ],
-      "explanation": "The theater argument chains two conditionals, A leads to B and B leads to C, so A leads to C; the first river argument does the same. The only-if version gives flooding as a requirement for closing, not a cause of it."
+      "explanation": "The theater argument chains two conditionals, A leads to B and B leads to C, so A leads to C; the river argument that ends with the same two links, rising to flooding to closing, does the same. The only-if version gives flooding as a requirement for closing, not a cause of it."
     },
     {
       "id": "LSAT-T2-LR2-20",
@@ -3770,13 +3770,13 @@
         "Pottery from the valley was finer than any pottery made on the coast.",
         "Potters in the valley traded regularly with people living on the coast.",
         "No pottery of this kind has been found anywhere else along the coast.",
-        "The mineral did not reach coastal clay through some natural process.",
+        "Coastal potters did not bring valley clay home and shape it there.",
         "The coastal site was occupied by people for many centuries in a row."
       ],
       "correct": [
         3
       ],
-      "explanation": "If a river had carried the mineral into the coast's own clay, coastal potters could have made the pottery, and the argument would fail. Regular trade is not required: the claim is only about where the pots were made."
+      "explanation": "If coastal potters had brought valley clay home and shaped it there, the mineral would be in pots made on the coast, and the argument would fail. Regular trade is not required: the claim is only about where the pots were made."
     },
     {
       "id": "LSAT-D-LR-09",
@@ -4664,7 +4664,7 @@
       "stimulusId": "LSAT-D-P2",
       "stem": "The author of Passage A would most likely regard Delford's change in its third year as:",
       "options": [
-        "consistent with the policy's aim, since spaces can still be kept open",
+        "compatible with the policy, since Passage A never requires one price",
         "irrelevant, since Passage A is concerned only with outlying blocks",
         "an admission that the policy increased traffic on the main streets",
         "a betrayal of the policy, since every driver must pay the same price",
@@ -4673,7 +4673,7 @@
       "correct": [
         0
       ],
-      "explanation": "Passage A's aim is to keep a space or two open on each block so that those who most need to park can; discounted permits for some workers, funded from the revenue, do not abandon that aim. Passage A never requires a single price for everyone."
+      "explanation": "Passage A asks only that block prices follow demand so spaces stay open; it never requires a single price for every driver, so a targeted discount funded from the revenue does not contradict it. The other options misstate Passage A or claim results neither passage reports."
     },
     {
       "id": "LSAT-D-RC-12",

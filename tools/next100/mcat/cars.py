@@ -305,7 +305,7 @@ ITEMS = [
       stim="MCAT-T1-CARS-P4"),
     # Passage 5 (5): comp 1, within 1, beyond 3
     Q(1, 2, C, SC,
-      "As used in the passage, a melody line \"meant to be decorated\" is one that the composer expected performers to:",
+      "As used in the passage, a melody line that is \"a sketch to be decorated\" is one that the composer expected performers to:",
       ["add notes of their own to", "play exactly as written", "leave out of the performance", "transpose into another key"],
       "The author explains that such a line was \"a sketch to be decorated\" and the page \"a set of instructions for improvising,\" so performers were expected to add ornaments.",
       stim="MCAT-T1-CARS-P5"),
@@ -334,7 +334,7 @@ ITEMS = [
     # Passage 1 (6): comp 2, within 2, beyond 2
     Q(2, 1, C, SC,
       "The main point of the passage is that documenting endangered languages:",
-      ["helps only when it serves revival", "is the best way to save a language", "is useless and should be stopped", "should be left to outside scholars"],
+      ["should serve revival, not replace it", "is the best way to save a language", "is useless and should be stopped", "should be left to outside scholars"],
       "The final paragraph states that documentation serves revival when the community decides what to record and why, and replaces it when the record becomes the end of the story. The author says documentation is valuable, not useless.",
       stim="MCAT-T2-CARS-P1"),
     Q(2, 2, C, SC,
@@ -359,7 +359,7 @@ ITEMS = [
       stim="MCAT-T2-CARS-P1"),
     Q(2, 3, B, SB,
       "Which finding would most weaken the author's claim about successful revival programs?",
-      ["Its child speakers rarely use it as adults", "Such programs cost much more than documentation", "Some elders are unwilling to take part", "Archives help learners with pronunciation"],
+      ["Child speakers rarely use the language as adults", "Such programs cost much more than documentation", "Some elders are unwilling to take part", "Archives help learners with pronunciation"],
       "The author credits these programs with producing new young speakers. If those children rarely kept using the language as adults, the programs would not be keeping the practice alive. Cost and reluctant elders the author already concedes.",
       stim="MCAT-T2-CARS-P1"),
     # Passage 2 (5): comp 2, within 1, beyond 2

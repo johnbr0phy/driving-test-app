@@ -594,6 +594,11 @@
  "gulfrn": [
   "https://dhp.moph.gov.qa/en/Pages/QualifyingExamination.aspx"
  ],
+ "hiset": [
+  "https://hiset.org",
+  "https://hiset.org/wp-content/uploads/2025/05/taag.pdf",
+  "https://hiset.org/wp-content/uploads/2025/05/hiset_test-taker-bulletin.pdf"
+ ],
  "hkdrive": [
   "https://www.td.gov.hk/en/public_services/licences_and_permits/driving_test/wt/index.html",
   "https://www.td.gov.hk/filemanager/en/content_172/road_users_code_2020_eng.pdf",

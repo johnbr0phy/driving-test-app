@@ -50,7 +50,7 @@ const TEACHER_LED = new Set([
   "aufirstaid",
   "gulfrn",
   // High school, military and college classes
-  "ged", "sat", "act", "asvab", "secplus", "aplus", "aws", "awssaa", "az900", "ccna", "pmp", "gcsemaths", "osslt", "naplan", "nswsel",
+  "ged", "hiset", "sat", "act", "asvab", "secplus", "aplus", "aws", "awssaa", "az900", "ccna", "pmp", "gcsemaths", "osslt", "naplan", "nswsel",
   "gcsehigher", "gcsescience", "gcsecs", "fsmaths",
   "eqao9",
   "naplan7", "vicsel", "hscmaths",

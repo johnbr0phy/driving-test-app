@@ -103,6 +103,7 @@ const AUTHORITY: Record<Exclude<Region, "US">, string> = {
   MT: "Transport Malta",
   DE: "TÜV/DEKRA",
   IT: "the Motorizzazione Civile or the universities for foreigners in Siena and Perugia",
+  FR: "the Interior Ministry or the approved exam centres",
 };
 
 // AUTHORITY is written for an English sentence ("the IMT"); other languages
@@ -114,6 +115,7 @@ const AUTHORITY_FI_FI = "Traficom, Ajovarma, Ruokavirasto tai Suomen riistakesku
 const AUTHORITY_HU_HU = "KAV, Magyar Vöröskereszt, MNB vagy más magyar hatóság";
 const AUTHORITY_EL_GR = "Υπουργείο Υποδομών και Μεταφορών, Διευθύνσεις Μεταφορών, Γενική Γραμματεία Ιθαγένειας ή ΕΟΠΠΕΠ";
 const AUTHORITY_IT_IT = "Motorizzazione Civile, Università per Stranieri di Siena o di Perugia";
+const AUTHORITY_FR_FR = "le ministère de l'Intérieur ou les centres d'examen agréés";
 const AUTHORITY_RO_RO = "DGPCI (fostul DRPCIV), ARR, Ministerul Sănătății, universitățile de medicină";
 function authorityIn(region: Exclude<Region, "US">, lang: Language): string {
   if (lang === "en") return AUTHORITY[region];
@@ -125,6 +127,7 @@ function authorityIn(region: Exclude<Region, "US">, lang: Language): string {
   if (region === "RO" && lang === "ro") return AUTHORITY_RO_RO;
   if (region === "GR" && lang === "el") return AUTHORITY_EL_GR;
   if (region === "IT" && lang === "it") return AUTHORITY_IT_IT;
+  if (region === "FR" && lang === "fr") return AUTHORITY_FR_FR;
   return AUTHORITY[region].replace(/^the /, "");
 }
 

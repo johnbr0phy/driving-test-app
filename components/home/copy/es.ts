@@ -130,7 +130,7 @@ export const countryNames: Record<string, string> = {
   US: "Estados Unidos", CA: "Canadá", UK: "Reino Unido", IE: "Irlanda", AU: "Australia", NZ: "Nueva Zelanda", IN: "India",
   PH: "Filipinas", MY: "Malasia", SG: "Singapur", HK: "Hong Kong", AE: "Emiratos Árabes Unidos", ZA: "Sudáfrica",
   NG: "Nigeria", KE: "Kenia", PK: "Pakistán", ES: "España", PT: "Portugal", RO: "Rumanía", SE: "Suecia", GR: "Grecia",
-  DK: "Dinamarca", HU: "Hungría", BE: "Bélgica", FI: "Finlandia", MT: "Malta", DE: "Alemania", IT: "Italia",
+  DK: "Dinamarca", HU: "Hungría", BE: "Bélgica", FI: "Finlandia", MT: "Malta", DE: "Alemania", IT: "Italia", FR: "Francia",
 };
 
 /** Spain's own homepage lines (REGION_HOME.ES in lib/region.ts), in Spanish. */
@@ -140,5 +140,5 @@ export const inNames: Record<string, string> = {
   US: "Estados Unidos", CA: "Canadá", UK: "el Reino Unido", IE: "Irlanda", AU: "Australia", NZ: "Nueva Zelanda", IN: "la India",
   PH: "Filipinas", MY: "Malasia", SG: "Singapur", HK: "Hong Kong", AE: "los Emiratos Árabes Unidos", ZA: "Sudáfrica",
   NG: "Nigeria", KE: "Kenia", PK: "Pakistán", ES: "España", PT: "Portugal", RO: "Rumanía", SE: "Suecia", GR: "Grecia",
-  DK: "Dinamarca", HU: "Hungría", BE: "Bélgica", FI: "Finlandia", MT: "Malta", DE: "Alemania", IT: "Italia",
+  DK: "Dinamarca", HU: "Hungría", BE: "Bélgica", FI: "Finlandia", MT: "Malta", DE: "Alemania", IT: "Italia", FR: "Francia",
 };

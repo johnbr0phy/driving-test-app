@@ -94,6 +94,8 @@ const BORROWED_SETS: Record<string, string> = {
   dkmoto: "moto", dkjagt: "hunter", dkmedborger: "dkindfoed",
   // Italy (Nov 2026): patente the car tiger, CILS and CELI the civics tiger.
   itpatente: "driving", itcils: "civics", itceli: "civics",
+  // France (Nov 2026): code de la route the car tiger.
+  frcode: "driving",
   // AP Italian (Nov 2026): the AP English Language tiger.
   apitalian: "aplang",
   // IELTS Reading (Nov 2026): the AP English Language tiger.

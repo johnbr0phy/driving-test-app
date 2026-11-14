@@ -1,7 +1,7 @@
 // Which country's tests a visitor sees first. Each country has its own
 // indexable homepage: the US at "/", the others at /uk, /ie, /ca, /au, /nz, /in,
 // /ph, /my, /sg, /hk, /ae, /za, /ng, /ke, /pk,
-// /es, /pt, /ro, /se, /gr, /dk, /hu, /be, /fi, /mt, /de and /it. A view
+// /es, /pt, /ro, /se, /gr, /dk, /hu, /be, /fi, /mt, /de, /it and /fr. A view
 // setting only: it never touches progress, and every test stays reachable from
 // every country. middleware.ts sets it from Vercel's request country on the
 // first visit and sends a visitor from any other country we cover from "/" to their
@@ -9,7 +9,7 @@
 
 import type { Language } from "@/i18n";
 
-export type Region = "US" | "CA" | "UK" | "IE" | "AU" | "NZ" | "IN" | "PH" | "MY" | "SG" | "HK" | "AE" | "ZA" | "NG" | "KE" | "PK" | "ES" | "PT" | "RO" | "SE" | "GR" | "DK" | "HU" | "BE" | "FI" | "MT" | "DE" | "IT";
+export type Region = "US" | "CA" | "UK" | "IE" | "AU" | "NZ" | "IN" | "PH" | "MY" | "SG" | "HK" | "AE" | "ZA" | "NG" | "KE" | "PK" | "ES" | "PT" | "RO" | "SE" | "GR" | "DK" | "HU" | "BE" | "FI" | "MT" | "DE" | "IT" | "FR";
 
 /**
  * Every country with its own homepage. `lang` is the language its homepage is
@@ -46,6 +46,7 @@ export const REGIONS: { code: Region; name: string; short: string; inName: strin
   { code: "MT", name: "Malta", short: "MT", inName: "Malta", lang: "en", locale: "en-MT" },
   { code: "DE", name: "Germany", short: "DE", inName: "Germany", lang: "de", locale: "de-DE" },
   { code: "IT", name: "Italy", short: "IT", inName: "Italy", lang: "it", locale: "it-IT" },
+  { code: "FR", name: "France", short: "FR", inName: "France", lang: "fr", locale: "fr-FR" },
 ];
 
 /** The chosen region, e.g. "UK". */
@@ -92,6 +93,9 @@ export function regionFromCountry(cc: string | null | undefined): Region | null 
     case "DE": return "DE";
     // Italy only: San Marino and the Vatican issue their own licences.
     case "IT": return "IT";
+    // Metropolitan France and the overseas departments, which use the same Code de la route
+    // and permis; Monaco, New Caledonia and French Polynesia have their own rules.
+    case "FR": case "GP": case "MQ": case "GF": case "RE": case "YT": return "FR";
     default: return null;
   }
 }
@@ -130,6 +134,7 @@ const TEST_REGIONS: Record<string, TestRegion> = {
   detheorie: "DE", demotorrad: "DE", deaevo: "DE", de34a: "DE", deheilpr: "DE",
   esdgt: "ES", escapcond: "ES", espolicia: "ES", esguardia: "ES", esvigilante: "ES", ptimt: "PT", ptmoto: "PT", ptcam: "PT", pttvde: "PT", ptvigil: "PT", rodrpciv: "RO", rocpi: "RO", rotaxi: "RO", roadmed: "RO", rorezid: "RO", setrafik: "SE", semoto: "SE", sejakt: "SE", semedb: "SE", sehp: "SE", grdriving: "GR", grmoto: "GR", grcitizen: "GR", grsecurity: "GR", grinsure: "GR", dkteori: "DK", dkmoto: "DK", dkindfoed: "DK", dkmedborger: "DK", dkjagt: "DK", hukresz: "HU", hukreszmoto: "HU", hugki: "HU", huelsoseg: "HU", hubizt: "HU", bedriving: "BE", bemoto: "BE", bevracht: "BE", betoelating: "BE", befsmavz: "BE", fitheory: "FI", fimoto: "FI", fitruck: "FI", fihygiene: "FI", fihunt: "FI", mttheory: "MT", mtmoto: "MT", mtcpc: "MT", mttaxi: "MT", mtguard: "MT",
   itpatente: "IT", itcils: "IT", itceli: "IT",
+  frcode: "FR",
   jambeng: "NG", jambmath: "NG", jambbio: "NG", jambchem: "NG", jambphys: "NG",
   ngpolice: "NG", cdcfib: "NG", ngarmy: "NG", ngcustoms: "NG", trcnpqe: "NG",
   inrto: "IN", ssccgl: "IN", rrbntpc: "IN", ibpspo: "IN", ctet: "IN",
@@ -418,6 +423,15 @@ export const REGION_HOME: Record<Exclude<Region, "US">, {
     cta: { label: "Quiz patente B", href: "/it/quiz-patente-b" },
     testsTitle: "Test di pratica per l'Italia",
     testsSub: "Il quiz di teoria per la patente B secondo il Codice della Strada, in km/h e con circolazione a destra. Inoltre le certificazioni di lingua italiana di livello B1 per la cittadinanza: CILS B1 Cittadinanza e CELI 2.",
+  },
+  // Written in French (REGIONS[].lang).
+  FR: {
+    title: "Test code de la route gratuit : entraîne-toi pour l'examen du code | Tigertest",
+    description: "Entraîne-toi gratuitement à l'examen du code de la route (ETG, permis B) : questions originales en français sur les priorités, les panneaux, les vitesses et le permis probatoire, chaque réponse expliquée. Sans inscription.",
+    lead: "Entraîne-toi pour l'examen du code de la route, l'épreuve théorique générale du permis B : questions originales sur les priorités, les panneaux, les vitesses et la conduite sûre d'après le Code de la route, chaque réponse expliquée. Sans inscription.",
+    cta: { label: "Test code de la route", href: "/fr/code-de-la-route-test" },
+    testsTitle: "Tests d'entraînement pour la France",
+    testsSub: "Le code de la route pour le permis B, d'après le Code de la route en vigueur, en km/h et avec la circulation à droite : priorités, signalisation, vitesses, alcool, stationnement, premiers secours et écoconduite.",
   },
   MT: {
     title: "Free Malta Driving Theory Test Practice | Tigertest",

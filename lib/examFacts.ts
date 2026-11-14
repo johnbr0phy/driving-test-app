@@ -2197,6 +2197,23 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     tigertest:
       "Tigertest has two full adaptive GRE practice tests with Verbal and Quant score estimates and seven drills, all free with no account required. The essay is not included.",
   },
+  mcat: {
+    answer:
+      "The MCAT is the AAMC's computer-based Medical College Admission Test, with four multiple-choice sections in this order: Chemical and Physical Foundations of Biological Systems (59 questions, 95 minutes), Critical Analysis and Reasoning Skills (53 questions, 90 minutes), Biological and Biochemical Foundations of Living Systems (59, 95) and Psychological, Social, and Biological Foundations of Behavior (59, 95). The science sections mix passage-based sets with discrete questions; CARS is all passage-based and needs no outside knowledge. Each section is scored 118 to 132 and the total runs from 472 to 528, and wrong answers count the same as blank ones.",
+    rows: [
+      { label: "Sections", value: "Chem/Phys, CARS, Bio/Biochem, Psych/Soc" },
+      { label: "Questions", value: "230: 59, 53, 59 and 59" },
+      { label: "Time", value: "6 hr 15 min of testing; about 7 hr 30 min seated" },
+      { label: "Breaks", value: "Three optional breaks: 10, 30 and 10 minutes" },
+      { label: "Score", value: "118 to 132 per section; 472 to 528 total" },
+      { label: "Calculator", value: "None; a periodic table is provided" },
+      { label: "Given by", value: "AAMC, at test centers" },
+    ],
+    basedOn: "the AAMC's \"What's on the MCAT Exam?\" outline and the MCAT Essentials for Testing Year 2027",
+    source: { name: "AAMC", url: "https://students-residents.aamc.org/prepare-mcat-exam/whats-mcat-exam" },
+    tigertest:
+      "Tigertest has two MCAT practice tests with all four sections at about half length and the real pace, a 472 to 528 score estimate and nine drills by foundational concept and CARS skill. It is free to start, with no account required.",
+  },
   gmat: {
     answer:
       "The GMAT Focus Edition has 64 questions in 2 hours 15 minutes: Quantitative Reasoning (21 questions), Verbal Reasoning (23) and Data Insights (20), 45 minutes each, in any order you choose, with one optional 10-minute break. Each section is scored 60 to 90 and the total runs from 205 to 805; the exam is computer adaptive, and you may review and change up to three answers per section. There is no essay, no geometry and no sentence correction; an on-screen calculator is allowed only in Data Insights.",

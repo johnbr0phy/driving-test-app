@@ -103,4 +103,5 @@ export const BANK_SIZES: Record<string, number> = {
   gcppca: 200,
   jkssbja: 200,
   tgsi: 236,
+  mcat: 234,
 };

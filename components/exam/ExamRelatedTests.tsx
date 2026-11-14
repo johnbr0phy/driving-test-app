@@ -5,7 +5,7 @@ import { CommunityUpsell } from "@/components/CommunityUpsell";
 import { regionHomePath, regionInfo, regionOfTest } from "@/lib/region";
 import { LANGUAGES, type Language } from "@/i18n";
 import { examBaseLanguage, getExamById } from "@/lib/exams";
-import { examTopics, hasTopicPages, topicPath } from "@/lib/topicPages";
+import { TOPIC_ALSO, examTopics, hasTopicPages, topicPath } from "@/lib/topicPages";
 import { examTopicsV2, topicExamV2, topicPathV2 } from "@/lib/v2/topicPages";
 import { COUNTRY_NAMES } from "@/components/home/homeCopy";
 
@@ -134,11 +134,26 @@ function ExamTopicLinks({ examId, lang }: { examId: string; lang: Language }) {
         {examTopics(exam).map((t) => (
           <li key={t.slug}>
             <Link href={topicPath(exam, t)} className="text-brand-dark underline underline-offset-2">
-              {t.label}
+              {t.title ?? t.label}
             </Link>
           </li>
         ))}
       </ul>
+      {(TOPIC_ALSO[examId] ?? []).map((id) => {
+        const other = getExamById(id);
+        if (!other || !hasTopicPages(id)) return null;
+        return (
+          <ul key={id} aria-label={`${other.name} practice questions`} className="mt-4 flex flex-wrap justify-center gap-x-5 gap-y-2">
+            {examTopics(other).map((t) => (
+              <li key={t.slug}>
+                <Link href={topicPath(other, t)} className="text-brand-dark underline underline-offset-2">
+                  {t.title ?? `${other.shortName}: ${t.label}`}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        );
+      })}
     </section>
   );
 }

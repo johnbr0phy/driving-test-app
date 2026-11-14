@@ -31,7 +31,26 @@ export interface ExamTopic {
   slug: string;
   /** Questions of this topic on each practice test. */
   perTest: number;
+  /** Page title when the search phrase differs from "<exam> <topic> Practice Questions". */
+  title?: string;
 }
+
+/**
+ * Titles in the words people search, per exam and category key. The CDL
+ * endorsements are searched one at a time ("cdl hazmat practice test").
+ */
+const TOPIC_TITLES: Record<string, Record<string, string>> = {
+  cdlx: {
+    hazmatEndorsement: "CDL HazMat Endorsement Practice Test",
+    airBrakes: "CDL Air Brakes Practice Test",
+    combinationVehicles: "CDL Combination Vehicles Practice Test",
+    tankVehicles: "CDL Tanker Endorsement Practice Test",
+    passengerTransport: "CDL Passenger Endorsement Practice Test",
+  },
+};
+
+/** Another exam's topic pages a landing also links to (the CDL landing lists the endorsements). */
+export const TOPIC_ALSO: Record<string, string[]> = { cdl: ["cdlx"] };
 
 const slugify = (s: string) => s.toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 
@@ -54,7 +73,8 @@ export function examTopics(exam: ExamConfig): ExamTopic[] {
     // A topic needs enough questions to be worth a page: the tests alone draw perTest x testCount.
     if (!slug || slug === MOST_MISSED_SLUG || seen.has(slug) || perTest * exam.testCount < 5) return [];
     seen.add(slug);
-    return [{ key, label, slug, perTest }];
+    const title = TOPIC_TITLES[exam.id]?.[key];
+    return [{ key, label, slug, perTest, ...(title ? { title } : {}) }];
   });
 }
 

@@ -75,7 +75,7 @@ async function bank(exam: ExamConfig): Promise<Question[]> {
 }
 
 function topicCopy(exam: ExamConfig, topic: ExamTopic) {
-  const title = `${exam.shortName} ${topic.label} Practice Questions`;
+  const title = topic.title ?? `${exam.shortName} ${topic.label} Practice Questions`;
   const description = `${TOPIC_PAGE_SIZE} free ${practiceLabel(exam.shortName)} practice questions on ${topic.label.toLowerCase()}, each with the answer explained. ${topic.perTest} of every ${exam.questionsPerTest} questions on a practice test come from this area.`;
   return { title, description };
 }

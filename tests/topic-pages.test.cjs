@@ -29,3 +29,14 @@ test('every topic has a unique path and at least five questions in the bank', ()
     }
   }
 });
+
+test('each CDL endorsement has its own titled page, linked from the CDL landing', () => {
+  const { TOPIC_ALSO } = require('../lib/topicPages.ts');
+  const cdlx = topicExams().find((e) => e.id === 'cdlx');
+  const topics = examTopics(cdlx);
+  assert.equal(topics.length, 5);
+  for (const t of topics) assert.match(t.title, /^CDL .+ Practice Test$/);
+  assert.ok(topics.some((t) => /HazMat/.test(t.title)) && topics.some((t) => /Tanker/.test(t.title)));
+  for (const ids of Object.values(TOPIC_ALSO)) for (const id of ids) assert.ok(TOPIC_EXAM_IDS.includes(id), id);
+  assert.deepEqual(TOPIC_ALSO.cdl, ['cdlx']);
+});

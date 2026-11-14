@@ -14,7 +14,7 @@ import { examLandingAlternates, examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
-const title = "Free CDL Endorsement Practice Tests 2026 - HazMat";
+const title = "Free CDL Endorsement Practice Tests 2026 - HazMat, Tanker & More";
 const metaDescription =
   "Free CDL endorsement practice tests from the FMCSA manual: 200 questions on HazMat, air brakes, combination, tanker and passenger, with a set per endorsement.";
 const description =

@@ -3,6 +3,10 @@
 // Make a class: pick any test on the site (a state for DMV; a state version
 // for real estate and insurance, or national), name the class, and say how
 // students know you. ?exam=<catalog id> preselects a test (from /teach).
+// Signed-out teachers fill the form first; sign-in is asked for only when they
+// press Create (Nov 2026: bouncing them to /login on open lost 7 in 8). The
+// draft is kept in localStorage so a Google redirect or the email signup page
+// comes back to it, and the class is made as soon as the account is there.
 
 import { Suspense, useEffect, useMemo, useRef, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
@@ -11,10 +15,42 @@ import { Check, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useAuth } from "@/contexts/AuthContext";
+import { WebViewGoogleWarning } from "@/components/WebViewGoogleWarning";
+import { useGuestGoogleSignup } from "@/components/GuestSaveCard";
+import { useIsNativeApp } from "@/hooks/useIsNativeApp";
 import { teachFetch } from "@/lib/teachClient";
 import { markTeacher } from "@/components/TeachLink";
 import { trackTeachStep } from "@/lib/teachTracking";
 import { DMV_EXAM_ID, classExamGroups, type ClassExamChoice } from "@/lib/classes";
+
+const DRAFT_KEY = "tigertest-teach-draft";
+
+interface Draft {
+  exam?: string;
+  stateKey?: string;
+  name?: string;
+  teacherName?: string;
+  school?: string;
+  /** Create was pressed while signed out: make the class once signed in. */
+  pending?: boolean;
+}
+
+function readDraft(): Draft {
+  try {
+    return JSON.parse(localStorage.getItem(DRAFT_KEY) || "{}") as Draft;
+  } catch {
+    return {};
+  }
+}
+
+function writeDraft(d: Draft | null) {
+  try {
+    if (d) localStorage.setItem(DRAFT_KEY, JSON.stringify(d));
+    else localStorage.removeItem(DRAFT_KEY);
+  } catch {
+    // Storage blocked: the form still works, the draft just isn't kept.
+  }
+}
 
 const fieldClass = "block text-sm font-medium text-gray-800 dark:text-gray-100 mb-1.5";
 
@@ -32,18 +68,40 @@ function NewClassForm() {
   const [school, setSchool] = useState("");
   const [error, setError] = useState("");
   const [busy, setBusy] = useState(false);
+  const [askSignIn, setAskSignIn] = useState(false);
+  const [restored, setRestored] = useState(false);
+  const isNative = useIsNativeApp();
+  const { signUp: googleSignUp, busy: googleBusy, error: googleError } = useGuestGoogleSignup();
 
-  // A "Create a free class" click, before any sign-in detour.
-  useEffect(() => trackTeachStep("new_open"), []);
+  // A "Create a free class" click; the form now shows to everyone.
   useEffect(() => {
-    if (user) trackTeachStep("new_form");
+    trackTeachStep("new_open");
+    trackTeachStep("new_form");
+  }, []);
+
+  // Bring back a draft left before a sign-in detour (or a reload).
+  useEffect(() => {
+    const d = readDraft();
+    if (d.exam && !params.get("exam")) setChoice((c) => c ?? all.find((e) => e.id === d.exam) ?? null);
+    if (d.stateKey) setStateKey(d.stateKey);
+    if (d.name) setName(d.name);
+    if (d.teacherName) setTeacherName(d.teacherName);
+    if (d.school) setSchool(d.school);
+    setRestored(true);
+  }, [all, params]);
+
+  useEffect(() => {
+    if (user?.displayName) setTeacherName((t) => t || user.displayName!);
   }, [user]);
 
+  // Keep the draft as they type, so nothing is lost on the way to sign in.
   useEffect(() => {
-    const here = `/teach/new${params.get("exam") ? `?exam=${params.get("exam")}` : ""}`;
-    if (!loading && !user) router.replace(`/login?redirect=${encodeURIComponent(here)}`);
-    if (user?.displayName) setTeacherName((t) => t || user.displayName!);
-  }, [loading, user, router, params]);
+    if (!restored || user) return;
+    const prev = readDraft();
+    writeDraft({ exam: choice?.id, stateKey, name, teacherName, school, pending: prev.pending });
+  }, [restored, user, choice, stateKey, name, teacherName, school]);
+
+  const here = `/teach/new${params.get("exam") ? `?exam=${params.get("exam")}` : ""}`;
 
   const q = query.trim().toLowerCase();
   const filtered = groups
@@ -70,13 +128,26 @@ function NewClassForm() {
     setFocusTo("change");
   };
 
-  const submit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!user) return;
-    if (!choice) return setError("Pick the test your students are preparing for");
-    if (choice.stateRequired && !stateKey) return setError("Pick your state");
-    if (!name.trim()) return setError("Give the class a name");
-    if (!teacherName.trim()) return setError("Add the name your students know you by");
+  const validate = (): string => {
+    if (!choice) return "Pick the test your students are preparing for";
+    if (choice.stateRequired && !stateKey) return "Pick your state";
+    if (!name.trim()) return "Give the class a name";
+    if (!teacherName.trim()) return "Add the name your students know you by";
+    return "";
+  };
+
+  const submit = async (e?: React.FormEvent) => {
+    e?.preventDefault();
+    const problem = validate();
+    if (problem) return setError(problem);
+    trackTeachStep("new_submit");
+    if (!user) {
+      writeDraft({ exam: choice?.id, stateKey, name, teacherName, school, pending: true });
+      setError("");
+      setAskSignIn(true);
+      return;
+    }
+    if (!choice) return;
     // DMV keeps examId "dmv" and sends the state; a state version is its own exam id.
     const [stateExamId, stateCode] = stateKey.split("|");
     const examId = choice.id === DMV_EXAM_ID ? DMV_EXAM_ID : stateExamId || choice.id;
@@ -89,6 +160,7 @@ function NewClassForm() {
         body: JSON.stringify({ name, examId, state, teacherName, school }),
       });
       markTeacher(user.uid, true);
+      writeDraft(null);
       router.push(`/teach/classes/${code}`);
     } catch (err) {
       setError(err instanceof Error ? err.message : "Couldn't make the class. Try again.");
@@ -96,14 +168,26 @@ function NewClassForm() {
     }
   };
 
-  if (loading || !user) return <div className="flex-1 bg-gray-50 dark:bg-gray-950" />;
+  // Signed in after pressing Create (Google popup, a Google redirect or the
+  // email signup page): make the class straight away.
+  const autoSubmitted = useRef(false);
+  useEffect(() => {
+    if (!user || !restored || autoSubmitted.current || !readDraft().pending) return;
+    if (validate()) return;
+    autoSubmitted.current = true;
+    setAskSignIn(false);
+    void submit();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [user, restored, choice, stateKey, name, teacherName]);
+
+  if (loading) return <div className="flex-1 bg-gray-50 dark:bg-gray-950" />;
 
   const stateOptions = choice?.states ?? [];
 
   return (
     <div className="flex-1 bg-gray-50 dark:bg-gray-950">
       <div className="container mx-auto px-4 sm:px-6 py-10 max-w-2xl">
-        <Link href="/teach" className="text-sm text-gray-600 dark:text-gray-300 underline">Your classes</Link>
+        <Link href="/teach" className="text-sm text-gray-600 dark:text-gray-300 underline">{user ? "Your classes" : "Back"}</Link>
         <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-50 mt-3 mb-6">New class</h1>
         <form onSubmit={submit} className="space-y-6 rounded-2xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 p-6">
           <div>
@@ -202,9 +286,28 @@ function NewClassForm() {
             </div>
           </div>
           {error && <p role="alert" className="text-sm text-red-600 dark:text-red-400">{error}</p>}
+          {askSignIn && !user ? (
+            <div role="region" aria-label="Save your class" className="rounded-xl border-2 border-gray-900 dark:border-gray-50 p-4 space-y-3">
+              <p className="font-semibold text-gray-900 dark:text-gray-50">Last step: save your class to a free account</p>
+              <p className="text-sm text-gray-600 dark:text-gray-300">So you can see your students&apos; scores from any device. Your class is ready and is made the moment you sign in.</p>
+              {!isNative && (
+                <WebViewGoogleWarning onGoogleSignIn={googleSignUp} disabled={googleBusy} className="h-10 border w-full" />
+              )}
+              <Button asChild className="w-full h-10 bg-black dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200">
+                <Link href={`/signup?redirect=${encodeURIComponent(here)}`}>Sign up with email</Link>
+              </Button>
+              {googleError && <p role="alert" className="text-sm text-red-600 dark:text-red-400">Google sign-in didn&apos;t work. Try again or use email.</p>}
+              <p className="text-center text-sm text-gray-600 dark:text-gray-300">
+                Already have an account?{" "}
+                <Link href={`/login?redirect=${encodeURIComponent(here)}`} className="font-semibold underline">Log in</Link>
+              </p>
+            </div>
+          ) : (
           <Button type="submit" disabled={busy} className="w-full bg-black dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200">
             {busy ? "Creating…" : (<><Check className="w-4 h-4 mr-1.5" aria-hidden="true" /> Create class</>)}
           </Button>
+          )}
+          {!user && !askSignIn && <p className="text-xs text-gray-500 dark:text-gray-400">Free. You&apos;ll save it to an account in one tap at the end.</p>}
           <p className="text-xs text-gray-500 dark:text-gray-400">Students see the class name, your name and the school when they join.</p>
         </form>
       </div>

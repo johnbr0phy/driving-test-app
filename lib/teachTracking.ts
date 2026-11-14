@@ -11,7 +11,9 @@ import { visitSource } from "@/lib/funnel";
 //
 //   landing_view  the /teach landing was shown, with its source and referrer host
 //   new_open      a "Create a free class" click on /teach, or /teach/new opened, signed in or not
-//   new_form      the class form was shown to a signed-in account
+//   new_form      the class form was shown (signed-in accounts only before Nov 14 2026,
+//                 when signed-out teachers were sent to /login first)
+//   new_submit    Create class was pressed with the form filled, signed in or not
 //   join_view     a class link (/c/<code>) was opened and the class was found;
 //                 once per browser per class, also counted on the class doc
 //   nudge_shown   the "Teachers can use it free" row (components/TeachNudge.tsx)
@@ -22,7 +24,7 @@ import { visitSource } from "@/lib/funnel";
 //
 // Internal browsers (lib/internal) send nothing.
 
-export type TeachStep = "landing_view" | "new_open" | "new_form";
+export type TeachStep = "landing_view" | "new_open" | "new_form" | "new_submit";
 
 const FLAG_PREFIX = "tigertest-teach:";
 

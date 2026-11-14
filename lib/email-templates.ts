@@ -559,10 +559,10 @@ export function topPrepperEmail(v: EmailVoice, c: TopPrepperContent): string {
     preheader: inbox.preheader,
     heading: "You are smashing it.",
     body: [
-      p(`You have answered <strong style="font-weight: 700;">${c.answers.toLocaleString("en-US")} practice questions</strong> on Tigertest. That is more than ${c.pct}% of the people who practice here.`),
-      p("That kind of steady practice is exactly what gets people through on the day. Whatever you are doing, keep doing it."),
+      p(`I thought you might like to know: you have answered <strong style="font-weight: 700;">${c.answers.toLocaleString("en-US")} practice questions</strong> on Tigertest. That is more than ${c.pct}% of the people who practice here.`),
+      p("Congrats, and keep up the hard work!"),
       cta(DASH(v, "top_prepper"), v.id === "unknown" ? "Keep Practicing" : `Keep Practicing ${v.shortName}`),
-      signoff("Keep going,"),
+      signoff("Cheers,"),
     ].join("\n"),
   });
 }

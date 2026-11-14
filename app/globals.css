@@ -2102,6 +2102,20 @@
     --brand-gradient-to: 350 60% 96%;
   }
 
+  /* IELTS Reading theme: deep red (v2 exam; matches lib/v2/exams/ieltsread.ts theme) */
+  [data-theme="ieltsread"] {
+    --brand: 356 85% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 356 85% 96%;
+    --brand-hover: 356 85% 19%;
+    --brand-dark: 356 85% 16%;
+    --brand-darker: 356 75% 11%;
+    --brand-muted: 356 40% 72%;
+    --brand-border: 356 45% 80%;
+    --brand-border-light: 356 45% 90%;
+    --brand-gradient-to: 6 60% 96%;
+  }
+
   /* CompTIA Network+ theme (v2 exam; matches lib/v2/exams/netplus.ts theme) */
   [data-theme="netplus"] {
     --brand: 252 40% 40%;
@@ -6669,6 +6683,18 @@
     --brand-muted: 340 35% 45%;
     --brand-dark: 340 40% 65%;
     --brand-darker: 340 30% 78%;
+  }
+
+  .dark [data-theme="ieltsread"] {
+    --brand: 356 85% 49.3%;
+    --brand-hover: 356 85% 41.3%;
+    --brand-light: 356 45% 13%;
+    --brand-gradient-to: 6 40% 11%;
+    --brand-border-light: 356 35% 24%;
+    --brand-border: 356 40% 34%;
+    --brand-muted: 356 40% 45%;
+    --brand-dark: 356 85% 65%;
+    --brand-darker: 356 75% 78%;
   }
 
   .dark [data-theme="netplus"] {

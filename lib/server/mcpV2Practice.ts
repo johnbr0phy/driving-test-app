@@ -87,6 +87,7 @@ import '@/lib/v2/banks/jkssbja';
 import '@/lib/v2/banks/tgsi';
 import '@/lib/v2/banks/apush';
 import '@/lib/v2/banks/apitalian';
+import '@/lib/v2/banks/ieltsread';
 import '@/lib/v2/banks/apgov';
 import '@/lib/v2/banks/apbio';
 import '@/lib/v2/banks/phcse';

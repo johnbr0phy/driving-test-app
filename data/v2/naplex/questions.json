@@ -1,0 +1,5182 @@
+[
+  {
+    "id": "NAPLEX-T1-001",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napTherapy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Interactions",
+    "calculator": true,
+    "options": [
+      "Switch to a higher simvastatin dose",
+      "No change is needed",
+      "Hold simvastatin during the course",
+      "Take them two hours apart"
+    ],
+    "correct": [
+      2
+    ],
+    "stem": "A patient taking simvastatin 40 mg daily is prescribed clarithromycin for 7 days. What should the pharmacist recommend?",
+    "explanation": "Clarithromycin is a strong CYP3A4 inhibitor, and the combination with simvastatin is contraindicated because of rhabdomyolysis. Separating doses does not help an enzyme interaction."
+  },
+  {
+    "id": "NAPLEX-T1-002",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napOrders",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Drug classes",
+    "calculator": true,
+    "options": [
+      "Dabigatran",
+      "Clopidogrel",
+      "Apixaban",
+      "Warfarin"
+    ],
+    "correct": [
+      2
+    ],
+    "stem": "Which oral anticoagulant directly inhibits factor Xa?",
+    "explanation": "Apixaban is a direct factor Xa inhibitor. Dabigatran directly inhibits thrombin, warfarin blocks vitamin K-dependent clotting factor synthesis, and clopidogrel is an antiplatelet."
+  },
+  {
+    "id": "NAPLEX-T1-003",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napFoundations",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Pharmacology",
+    "calculator": true,
+    "options": [
+      "Inhibits HMG-CoA reductase",
+      "Blocks intestinal cholesterol uptake",
+      "Activates PPAR-alpha in the liver",
+      "Blocks PCSK9 binding to LDL receptors"
+    ],
+    "correct": [
+      1
+    ],
+    "stem": "What is the mechanism of action of ezetimibe?",
+    "explanation": "Ezetimibe inhibits the NPC1L1 transporter at the intestinal brush border, so less dietary and biliary cholesterol is absorbed. HMG-CoA reductase inhibition is the statin mechanism."
+  },
+  {
+    "id": "NAPLEX-T1-004",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napCalc",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Patient parameters",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "47"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "stem": "A 72-year-old man weighs 70 kg, which is also his ideal body weight, and his serum creatinine is 1.4 mg/dL. Using the Cockcroft-Gault equation, what is his estimated creatinine clearance in mL/min? Round to the nearest whole number. Type the number only.",
+    "explanation": "CrCl = (140 - age) x weight / (72 x SCr) = (68 x 70) / (72 x 1.4) = 4760 / 100.8 = 47.2, which rounds to 47 mL/min."
+  },
+  {
+    "id": "NAPLEX-T1-005",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napHandling",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Vaccine storage",
+    "calculator": true,
+    "options": [
+      "-50°C to -15°C",
+      "8°C to 15°C",
+      "0°C to 4°C",
+      "2°C to 8°C"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "What temperature range is used for refrigerated vaccine storage?",
+    "explanation": "Refrigerated vaccines are kept between 2°C and 8°C (36°F to 46°F). The -50°C to -15°C range is for frozen vaccines."
+  },
+  {
+    "id": "NAPLEX-T1-006",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napMonitor",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Therapeutic goals",
+    "calculator": true,
+    "options": [
+      "1.5 to 2.0",
+      "2.5 to 3.5",
+      "2.0 to 3.0",
+      "3.0 to 4.0"
+    ],
+    "correct": [
+      2
+    ],
+    "stem": "What is the usual INR goal for warfarin in nonvalvular atrial fibrillation?",
+    "explanation": "An INR of 2.0 to 3.0, target 2.5, is used for atrial fibrillation and venous thromboembolism. Higher ranges are kept for some mechanical valves."
+  },
+  {
+    "id": "NAPLEX-T1-007",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napCounsel",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Medication use",
+    "calculator": true,
+    "options": [
+      "At bedtime with a small snack",
+      "With breakfast and a glass of milk, then lie down",
+      "With orange juice to help absorption",
+      "Fasting, with plain water, then stay upright"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "How should a patient take alendronate?",
+    "explanation": "Alendronate is taken first thing in the morning with a full glass of plain water, at least 30 minutes before food, drink or other drugs, and the patient stays upright to protect the esophagus."
+  },
+  {
+    "id": "NAPLEX-T1-008",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napTherapy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Interactions",
+    "calculator": true,
+    "options": [
+      "Nitrofurantoin monohydrate/macrocrystals",
+      "Fosfomycin tromethamine",
+      "Cephalexin",
+      "Sulfamethoxazole-trimethoprim"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "Which antibiotic is most likely to raise the INR of a patient on warfarin?",
+    "explanation": "Sulfamethoxazole inhibits CYP2C9, the main pathway for S-warfarin, and can raise the INR sharply. An alternative or closer INR monitoring is needed."
+  },
+  {
+    "id": "NAPLEX-T1-009",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napOrders",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Drug classes",
+    "calculator": true,
+    "options": [
+      "Sitagliptin",
+      "Semaglutide",
+      "Pioglitazone",
+      "Canagliflozin"
+    ],
+    "correct": [
+      1
+    ],
+    "stem": "Which drug is a GLP-1 receptor agonist?",
+    "explanation": "Semaglutide activates the GLP-1 receptor. Sitagliptin is a DPP-4 inhibitor, which raises endogenous GLP-1, pioglitazone is a thiazolidinedione and canagliflozin an SGLT2 inhibitor."
+  },
+  {
+    "id": "NAPLEX-T1-010",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napPractice",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Adverse event reporting",
+    "calculator": true,
+    "options": [
+      "The DEA",
+      "VAERS",
+      "The state board of pharmacy",
+      "FDA MedWatch"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "Where should a pharmacist report a serious adverse reaction to a prescription drug?",
+    "explanation": "MedWatch is the FDA's program for reporting serious adverse events and product problems with drugs and devices. VAERS is for vaccines."
+  },
+  {
+    "id": "NAPLEX-T1-011",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napManage",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Recalls",
+    "calculator": true,
+    "options": [
+      "Use may cause temporary, reversible harm",
+      "Use may cause serious harm or death",
+      "Use is unlikely to cause any harm",
+      "A labeling typo with no risk"
+    ],
+    "correct": [
+      1
+    ],
+    "stem": "What does an FDA Class I recall mean?",
+    "explanation": "Class I is the most serious recall: a reasonable chance the product will cause serious health problems or death. Class III products are unlikely to cause harm."
+  },
+  {
+    "id": "NAPLEX-T1-012",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napFoundations",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pharmacokinetics",
+    "calculator": true,
+    "options": [
+      "Renal tubular secretion",
+      "Intrinsic enzyme capacity",
+      "Fraction unbound in plasma",
+      "Hepatic blood flow"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "For a drug with a high hepatic extraction ratio, which factor mainly determines its hepatic clearance?",
+    "explanation": "When the liver removes most of a drug in one pass, clearance is limited by how fast blood brings drug to the liver. Protein binding and enzyme activity matter most for low-extraction drugs."
+  },
+  {
+    "id": "NAPLEX-T1-013",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napCalc",
+    "difficulty": 1,
+    "format": "numeric",
+    "skill": "Patient parameters",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "59.3"
+      ],
+      "tolerance": 0
+    },
+    "stem": "What is the ideal body weight, in kg, of a woman who is 5 feet 6 inches tall? Use the Devine formula and round to one decimal place. Type the number only.",
+    "explanation": "Female IBW = 45.5 kg + 2.3 kg for each inch over 5 feet = 45.5 + 2.3 x 6 = 59.3 kg."
+  },
+  {
+    "id": "NAPLEX-T1-014",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napTherapy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Interactions",
+    "calculator": true,
+    "options": [
+      "Serotonin syndrome",
+      "Tendon rupture",
+      "Hyperkalemia",
+      "Severe lactic acidosis"
+    ],
+    "correct": [
+      0
+    ],
+    "stem": "A patient on sertraline is started on linezolid. Which reaction is the main concern?",
+    "explanation": "Linezolid is a weak reversible MAO inhibitor, so with an SSRI it can cause serotonin syndrome: agitation, tremor, hyperthermia and clonus."
+  },
+  {
+    "id": "NAPLEX-T1-015",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napHandling",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Contraindications",
+    "calculator": true,
+    "options": [
+      "MMR",
+      "Inactivated influenza",
+      "Hepatitis B",
+      "Tdap"
+    ],
+    "correct": [
+      0
+    ],
+    "stem": "Which vaccine is contraindicated during pregnancy?",
+    "explanation": "MMR is a live attenuated vaccine and is not given in pregnancy because of a theoretical risk to the fetus. The others are not live vaccines."
+  },
+  {
+    "id": "NAPLEX-T1-016",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napMonitor",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Therapeutic goals",
+    "calculator": true,
+    "options": [
+      "Peak above 40 mg/L",
+      "AUC/MIC of 400 to 600",
+      "AUC/MIC above 1000",
+      "Trough of 5 to 10 mg/L"
+    ],
+    "correct": [
+      1
+    ],
+    "stem": "For serious MRSA infections, which vancomycin target do current consensus guidelines favor?",
+    "explanation": "The 2020 vancomycin consensus guideline moved from trough-only monitoring to an AUC/MIC of 400 to 600, which keeps efficacy with less nephrotoxicity than high troughs."
+  },
+  {
+    "id": "NAPLEX-T1-017",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napCounsel",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Disease state management",
+    "calculator": true,
+    "options": [
+      "Take a daily vitamin K supplement",
+      "Avoid all green vegetables",
+      "Keep vitamin K intake consistent",
+      "Eat extra leafy greens daily"
+    ],
+    "correct": [
+      2
+    ],
+    "stem": "What dietary advice fits a patient starting warfarin?",
+    "explanation": "Warfarin dosing is set around the patient's usual diet. Large changes in vitamin K intake change the INR, so steady intake matters more than avoiding greens."
+  },
+  {
+    "id": "NAPLEX-T1-018",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napOrders",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Dosing regimens",
+    "calculator": true,
+    "options": [
+      "Once a week",
+      "Once a month",
+      "Once a day",
+      "Once a year"
+    ],
+    "correct": [
+      0
+    ],
+    "stem": "How often is alendronate 70 mg taken for osteoporosis?",
+    "explanation": "Alendronate 70 mg is the once-weekly osteoporosis dose; the daily dose is 10 mg. Once-yearly dosing belongs to IV zoledronic acid."
+  },
+  {
+    "id": "NAPLEX-T1-019",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napTherapy",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Interactions",
+    "calculator": true,
+    "options": [
+      "Severe hypoglycemia",
+      "Serotonin deficiency",
+      "Bradycardia and hypotension",
+      "Hypertensive crisis"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "A patient taking phenelzine eats aged cheese. What reaction can occur?",
+    "explanation": "MAO inhibitors stop the breakdown of dietary tyramine, which releases norepinephrine and can cause a dangerous rise in blood pressure."
+  },
+  {
+    "id": "NAPLEX-T1-020",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napFoundations",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pharmacogenomics",
+    "calculator": true,
+    "options": [
+      "HLA-B*15:02",
+      "HLA-B*57:01",
+      "CYP2C19 genotype",
+      "TPMT activity"
+    ],
+    "correct": [
+      0
+    ],
+    "stem": "Before starting carbamazepine in a patient of Asian ancestry, which genetic test does the labeling recommend?",
+    "explanation": "HLA-B*15:02 carriers have a much higher risk of Stevens-Johnson syndrome and toxic epidermal necrolysis with carbamazepine, and the boxed warning advises screening at-risk ancestries. HLA-B*57:01 is the abacavir test."
+  },
+  {
+    "id": "NAPLEX-T1-021",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napCalc",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Rates of administration",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "24"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "stem": "Heparin 25,000 units in 500 mL is infusing. The order is for 1,200 units per hour. What rate should the pump be set to, in mL per hour? Type the number only.",
+    "explanation": "The concentration is 25,000 / 500 = 50 units/mL. 1,200 units/h / 50 units/mL = 24 mL/h."
+  },
+  {
+    "id": "NAPLEX-T1-022",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napTherapy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Drug-condition interactions",
+    "calculator": true,
+    "options": [
+      "It causes airway infections",
+      "It worsens nasal congestion",
+      "It raises theophylline levels",
+      "It can cause bronchospasm"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "Why is propranolol a poor choice for a patient with asthma?",
+    "explanation": "Propranolol blocks beta-2 receptors in the airways as well as beta-1 receptors in the heart, so it can trigger bronchospasm. A cardioselective agent is safer if a beta-blocker is needed."
+  },
+  {
+    "id": "NAPLEX-T1-023",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napOrders",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Dosing regimens",
+    "calculator": true,
+    "options": [
+      "It should be given IV only",
+      "The dose is too low for RA",
+      "RA dosing is once weekly",
+      "It needs a loading dose first"
+    ],
+    "correct": [
+      2
+    ],
+    "stem": "A new prescription reads methotrexate 7.5 mg by mouth daily for rheumatoid arthritis. What is the problem?",
+    "explanation": "Oral methotrexate for rheumatoid arthritis is taken once a week. Daily dosing of a weekly regimen is a known cause of fatal toxicity, so the order must be clarified."
+  },
+  {
+    "id": "NAPLEX-T1-024",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napHandling",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Administration",
+    "calculator": true,
+    "options": [
+      "Oral",
+      "Intradermal",
+      "Intramuscular",
+      "Subcutaneous"
+    ],
+    "correct": [
+      2
+    ],
+    "stem": "By which route is recombinant zoster vaccine given?",
+    "explanation": "Recombinant zoster vaccine is a non-live, adjuvanted vaccine given intramuscularly, usually in the deltoid."
+  },
+  {
+    "id": "NAPLEX-T1-025",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napMonitor",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Safety",
+    "calculator": true,
+    "options": [
+      "Right after a missed dose",
+      "Just before bedtime each night",
+      "One hour after the morning dose is taken",
+      "About 12 hours after the last dose"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "When should a lithium level be drawn?",
+    "explanation": "Lithium levels are standardized as 12-hour post-dose troughs, usually drawn in the morning before the next dose, about 5 days after a dose change."
+  },
+  {
+    "id": "NAPLEX-T1-026",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napCounsel",
+    "difficulty": 2,
+    "format": "order",
+    "skill": "Devices",
+    "calculator": true,
+    "options": [
+      "Shake the inhaler",
+      "Hold the breath for up to 10 seconds",
+      "Seal lips and press as a slow breath starts",
+      "Breathe out fully, away from it"
+    ],
+    "correct": [
+      0,
+      3,
+      2,
+      1
+    ],
+    "stem": "Put the steps for using a metered-dose inhaler without a spacer in order.",
+    "explanation": "After shaking and breathing out, the canister is pressed as a slow, deep breath begins, so the spray is carried into the lungs, then the breath is held to let the drug settle."
+  },
+  {
+    "id": "NAPLEX-T1-027",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napFoundations",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Pharmaceutics",
+    "calculator": true,
+    "options": [
+      "1:100",
+      "1000:1",
+      "1:1",
+      "1:1000"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "A weak acid with a pKa of 4.4 is in gastric fluid at pH 1.4. What is the ratio of ionized to unionized drug?",
+    "explanation": "For a weak acid, log(ionized/unionized) = pH - pKa = 1.4 - 4.4 = -3, so the ratio is 1:1000. A weak acid stays mostly unionized in acid."
+  },
+  {
+    "id": "NAPLEX-T1-028",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napTherapy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Appropriateness",
+    "calculator": true,
+    "options": [
+      "Ciprofloxacin for 14 days",
+      "Nitrofurantoin for 5 days",
+      "Amoxicillin for 3 days",
+      "Ceftriaxone IV for 7 days"
+    ],
+    "correct": [
+      1
+    ],
+    "stem": "Which is a first-line choice for acute uncomplicated cystitis in a nonpregnant woman?",
+    "explanation": "Nitrofurantoin for 5 days is a first-line option. Fluoroquinolones are kept for other uses because of their adverse effects, and amoxicillin alone has high resistance rates."
+  },
+  {
+    "id": "NAPLEX-T1-029",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napCalc",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Rates of administration",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "31"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "stem": "1,000 mL of fluid is to run over 8 hours with a giving set that delivers 15 drops per mL. What is the flow rate in drops per minute? Round to the nearest whole number. Type the number only.",
+    "explanation": "1,000 mL / 480 minutes = 2.083 mL/min; x 15 drops/mL = 31.25, which rounds to 31 drops per minute."
+  },
+  {
+    "id": "NAPLEX-T1-030",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napOrders",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Dosage forms",
+    "calculator": true,
+    "options": [
+      "Furosemide",
+      "Metoprolol tartrate",
+      "Nifedipine extended-release",
+      "Lisinopril-hydrochlorothiazide"
+    ],
+    "correct": [
+      2
+    ],
+    "stem": "Which tablet should not be crushed for a patient with a feeding tube?",
+    "explanation": "Crushing an extended-release tablet releases the whole dose at once and can cause severe hypotension with nifedipine. The other three are immediate-release tablets."
+  },
+  {
+    "id": "NAPLEX-T1-031",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napPractice",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Tobacco cessation",
+    "calculator": true,
+    "options": [
+      "On the quit date itself",
+      "About 1 week before it",
+      "One month after it",
+      "Only after relapsing"
+    ],
+    "correct": [
+      1
+    ],
+    "stem": "When should a patient start varenicline in relation to the quit date?",
+    "explanation": "Varenicline is usually started a week before the target quit date so the dose is titrated and at effect when smoking stops. Flexible quit approaches are also in the labeling."
+  },
+  {
+    "id": "NAPLEX-T1-032",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napManage",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Quality improvement",
+    "calculator": true,
+    "options": [
+      "Identify who to discipline",
+      "Decide if it was reportable",
+      "Estimate the legal cost",
+      "Find the system causes"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "What is the main aim of a root cause analysis after a medication error?",
+    "explanation": "A root cause analysis looks back at an event to find the process and system failures behind it, so changes prevent a repeat. It is not a search for someone to blame."
+  },
+  {
+    "id": "NAPLEX-T1-033",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napTherapy",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Appropriateness",
+    "calculator": true,
+    "options": [
+      "Sacubitril-valsartan",
+      "Diltiazem",
+      "Dapagliflozin",
+      "Spironolactone",
+      "Metoprolol succinate",
+      "Digoxin"
+    ],
+    "correct": [
+      0,
+      2,
+      3,
+      4
+    ],
+    "stem": "Which drugs reduce mortality in heart failure with reduced ejection fraction? Select all that apply.",
+    "explanation": "An ARNI, an evidence-based beta-blocker, a mineralocorticoid receptor antagonist and an SGLT2 inhibitor each reduce mortality. Digoxin reduces hospital stays but not deaths, and diltiazem can worsen HFrEF."
+  },
+  {
+    "id": "NAPLEX-T1-034",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napFoundations",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Pharmaceutics",
+    "calculator": true,
+    "options": [
+      "To speed dissolution in the stomach",
+      "To mask a bitter taste only",
+      "To make the tablet easier to split in half",
+      "To delay release until the intestine"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "Why is an enteric coating applied to a tablet?",
+    "explanation": "An enteric coat resists stomach acid and dissolves at the higher pH of the small intestine, protecting an acid-labile drug or protecting the stomach from the drug. A film coat is what masks taste."
+  },
+  {
+    "id": "NAPLEX-T1-035",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napHandling",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Scheduling",
+    "calculator": true,
+    "options": [
+      "At least 7 days",
+      "At least 6 months",
+      "At least 14 days",
+      "At least 28 days"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "Two live injected vaccines are not given on the same day. How far apart must they be?",
+    "explanation": "Live injected vaccines not given at the same visit are separated by at least 4 weeks, because the immune response to the first can blunt the second. Given on the same day, no wait is needed."
+  },
+  {
+    "id": "NAPLEX-T1-036",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napMonitor",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Therapeutic goals",
+    "calculator": true,
+    "options": [
+      "Below 8.5%",
+      "Below 5.7%",
+      "Below 10%",
+      "Below 7%"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "What A1C goal is reasonable for many nonpregnant adults with diabetes?",
+    "explanation": "An A1C below 7% suits many adults; goals are relaxed for older adults or those at risk of hypoglycemia and can be tighter when safe. Below 5.7% is the normal range."
+  },
+  {
+    "id": "NAPLEX-T1-037",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napCounsel",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "OTC medications",
+    "calculator": true,
+    "options": [
+      "Pseudoephedrine tablets",
+      "Saline nasal spray",
+      "Phenylephrine tablets",
+      "A combination cold tablet"
+    ],
+    "correct": [
+      1
+    ],
+    "stem": "A patient with uncontrolled hypertension wants a decongestant for a cold. What is the best suggestion?",
+    "explanation": "Oral decongestants can raise blood pressure and are best avoided when hypertension is uncontrolled. Saline spray, humidified air or a short course of a topical decongestant are safer."
+  },
+  {
+    "id": "NAPLEX-T1-038",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napOrders",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Boxed warnings",
+    "calculator": true,
+    "options": [
+      "Tendinitis and tendon rupture",
+      "Severe neutropenia",
+      "Fetal toxicity",
+      "Lactic acidosis with renal failure"
+    ],
+    "correct": [
+      0
+    ],
+    "stem": "Which boxed warning appears on levofloxacin labeling?",
+    "explanation": "Fluoroquinolones carry a boxed warning for disabling effects including tendinitis and tendon rupture, peripheral neuropathy and CNS effects, and myasthenia gravis exacerbation."
+  },
+  {
+    "id": "NAPLEX-T1-039",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napCalc",
+    "difficulty": 1,
+    "format": "numeric",
+    "skill": "Quantity to dispense",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "30"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "stem": "A prednisone taper is prescribed: 40 mg daily for 3 days, then 30 mg daily for 3 days, then 20 mg daily for 3 days, then 10 mg daily for 3 days. Only 10 mg tablets are used. How many tablets should be dispensed? Type the number only.",
+    "explanation": "Tablets per day are 4, 3, 2 and 1, each for 3 days: (4 + 3 + 2 + 1) x 3 = 30 tablets."
+  },
+  {
+    "id": "NAPLEX-T1-040",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napTherapy",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Contraindications",
+    "calculator": true,
+    "options": [
+      "Severe bleeding",
+      "Serotonin syndrome",
+      "Severe hypotension",
+      "QT prolongation"
+    ],
+    "correct": [
+      2
+    ],
+    "stem": "A patient taking isosorbide mononitrate asks for sildenafil. What is the concern?",
+    "explanation": "Phosphodiesterase-5 inhibitors with nitrates cause a large, possibly fatal, drop in blood pressure, so the combination is contraindicated."
+  },
+  {
+    "id": "NAPLEX-T1-041",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napFoundations",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Nonsterile compounding",
+    "calculator": true,
+    "options": [
+      "Glycerin",
+      "Mineral oil",
+      "Propylene glycol",
+      "Purified water"
+    ],
+    "correct": [
+      1
+    ],
+    "stem": "Which levigating agent suits incorporating a powder into white petrolatum?",
+    "explanation": "A levigating agent should be miscible with the base. Mineral oil mixes with an oleaginous base like white petrolatum; glycerin and propylene glycol suit water-miscible bases."
+  },
+  {
+    "id": "NAPLEX-T1-042",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napTherapy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Special populations",
+    "calculator": true,
+    "options": [
+      "Methyldopa",
+      "Labetalol",
+      "Nifedipine extended-release",
+      "Lisinopril"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "A pregnant patient has chronic hypertension. Which drug is inappropriate?",
+    "explanation": "ACE inhibitors carry a boxed warning for fetal toxicity and should be stopped as soon as pregnancy is found. Labetalol, nifedipine and methyldopa are used in pregnancy."
+  },
+  {
+    "id": "NAPLEX-T1-043",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napOrders",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "REMS",
+    "calculator": true,
+    "options": [
+      "Severe depression",
+      "Fetal exposure",
+      "Bone marrow failure",
+      "Liver failure"
+    ],
+    "correct": [
+      1
+    ],
+    "stem": "Isotretinoin is dispensed under a REMS mainly to prevent:",
+    "explanation": "Isotretinoin is a potent teratogen. Its REMS registers prescribers, pharmacies and patients and ties dispensing to pregnancy testing and contraception for patients who can become pregnant."
+  },
+  {
+    "id": "NAPLEX-T1-044",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napHandling",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Vaccine storage",
+    "calculator": true,
+    "options": [
+      "Use sterile water for injection",
+      "Use diluent from another vaccine",
+      "Wait for the supplied diluent",
+      "Use 0.9% sodium chloride"
+    ],
+    "correct": [
+      2
+    ],
+    "stem": "A lyophilized vaccine needs reconstitution, but its supplied diluent is missing. What should the pharmacist do?",
+    "explanation": "CDC guidance is to use only the diluent supplied with the vaccine. Other diluents can differ in volume, pH or preservatives and may make the dose ineffective."
+  },
+  {
+    "id": "NAPLEX-T1-045",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napMonitor",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Effectiveness",
+    "calculator": true,
+    "options": [
+      "Only if symptoms occur",
+      "After 1 week",
+      "After 1 year",
+      "4 to 12 weeks later"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "When should a lipid panel be repeated after a statin is started?",
+    "explanation": "A fasting or nonfasting lipid panel 4 to 12 weeks after starting or changing a statin shows response and adherence, then every 3 to 12 months."
+  },
+  {
+    "id": "NAPLEX-T1-046",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napCounsel",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "OTC medications",
+    "calculator": true,
+    "options": [
+      "16 mg",
+      "4 mg",
+      "24 mg",
+      "8 mg"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "What is the most loperamide an adult may take in 24 hours under OTC labeling?",
+    "explanation": "OTC labeling allows up to 8 mg a day for no more than 2 days. Higher doses have caused serious heart rhythm problems."
+  },
+  {
+    "id": "NAPLEX-T1-047",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napCalc",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Ratio strength",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "0.3",
+        ".3"
+      ],
+      "tolerance": 0
+    },
+    "stem": "How many milligrams of epinephrine are in 0.3 mL of a 1:1,000 solution? Type the number only.",
+    "explanation": "A 1:1,000 solution is 1 g in 1,000 mL, which is 1 mg/mL. 0.3 mL x 1 mg/mL = 0.3 mg."
+  },
+  {
+    "id": "NAPLEX-T1-048",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napTherapy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Older adults",
+    "calculator": true,
+    "options": [
+      "Ramelteon",
+      "Doxepin 3 mg",
+      "Melatonin 1 to 3 mg",
+      "Diphenhydramine"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "For insomnia in an 80-year-old, which product is best avoided?",
+    "explanation": "Diphenhydramine is strongly anticholinergic and causes confusion, falls and urinary retention in older adults. Low-dose doxepin, at 6 mg or less, is not considered a problem in the same way."
+  },
+  {
+    "id": "NAPLEX-T1-049",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napFoundations",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sterile compounding",
+    "calculator": true,
+    "options": [
+      "Just behind it, near the hood's front",
+      "Never between it and the HEPA filter",
+      "Directly upstream of it at all times",
+      "Within an inch of the HEPA filter"
+    ],
+    "correct": [
+      1
+    ],
+    "stem": "In a horizontal laminar airflow workbench, where should hands and supplies be kept relative to a critical site?",
+    "explanation": "First air from the HEPA filter must reach the critical site without passing over anything else. An object between the filter and the site sheds particles straight onto it."
+  },
+  {
+    "id": "NAPLEX-T1-050",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napOrders",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Boxed warnings",
+    "calculator": true,
+    "options": [
+      "Lisinopril",
+      "Duloxetine",
+      "Bupropion",
+      "Metoprolol",
+      "Sertraline"
+    ],
+    "correct": [
+      1,
+      2,
+      4
+    ],
+    "stem": "Which drugs carry a boxed warning about suicidal thoughts and behaviors in children, adolescents and young adults? Select all that apply.",
+    "explanation": "Every antidepressant, including the SSRI sertraline, the SNRI duloxetine and bupropion, carries the boxed warning for increased suicidality in patients under 25. The two cardiovascular drugs do not."
+  },
+  {
+    "id": "NAPLEX-T1-051",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napPractice",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Antimicrobial stewardship",
+    "calculator": true,
+    "options": [
+      "Using broad agents for viral illness",
+      "Adding coverage for every pathogen",
+      "Extending every course by an extra 7 days",
+      "Switching IV to oral when appropriate"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "Which pharmacist action best fits antimicrobial stewardship?",
+    "explanation": "Stewardship aims for the right drug, dose, route and duration: IV-to-oral conversion, de-escalation on culture results and shorter evidence-based courses."
+  },
+  {
+    "id": "NAPLEX-T1-052",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napManage",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Error prevention",
+    "calculator": true,
+    "options": [
+      "Telling look-alike names apart",
+      "Showing a drug is on recall",
+      "Marking high-alert medicines",
+      "Flagging controlled substances"
+    ],
+    "correct": [
+      0
+    ],
+    "stem": "What is tall man lettering, as in hydrOXYzine and hydrALAZINE, used for?",
+    "explanation": "Capital letters highlight the parts of look-alike drug names that differ, which reduces selection errors in order entry, labels and storage."
+  },
+  {
+    "id": "NAPLEX-T1-053",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napTherapy",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Errors and omissions",
+    "calculator": true,
+    "options": [
+      "A stimulant laxative such as senna",
+      "A proton pump inhibitor for the stomach",
+      "An antihistamine at bedtime",
+      "A long-acting benzodiazepine"
+    ],
+    "correct": [
+      0
+    ],
+    "stem": "A patient starts oxycodone around the clock for cancer pain with no other new orders. What is most clearly missing?",
+    "explanation": "Constipation from opioids does not fade with time, so a bowel regimen, usually a stimulant laxative, is started with scheduled opioids."
+  },
+  {
+    "id": "NAPLEX-T1-054",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napCalc",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Milliequivalents",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "20"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "stem": "Potassium chloride has a molecular weight of 74.5. How many milliequivalents of potassium are in 1.49 g of potassium chloride? Type the number only.",
+    "explanation": "KCl is monovalent, so 1 mEq = 74.5 mg. 1,490 mg / 74.5 mg per mEq = 20 mEq."
+  },
+  {
+    "id": "NAPLEX-T1-055",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napHandling",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Vaccine storage",
+    "calculator": true,
+    "options": [
+      "Mark it do not use and call the maker",
+      "Move the vaccines to the freezer",
+      "Discard every vaccine in the unit at once",
+      "Keep using the vaccines as usual"
+    ],
+    "correct": [
+      0
+    ],
+    "stem": "A data logger shows the vaccine refrigerator reached 12°C overnight. What should be done first?",
+    "explanation": "After an excursion, vaccines are kept at the correct temperature, marked do not use and not given until the manufacturer or public health confirms they are still viable. Freezing would damage refrigerated vaccines."
+  },
+  {
+    "id": "NAPLEX-T1-056",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napMonitor",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Effectiveness",
+    "calculator": true,
+    "options": [
+      "6 months",
+      "6 to 8 weeks",
+      "3 to 5 days",
+      "2 weeks"
+    ],
+    "correct": [
+      1
+    ],
+    "stem": "How soon after a levothyroxine dose change should TSH be rechecked?",
+    "explanation": "TSH takes about 6 weeks to reach a new steady state, so checking earlier can lead to the wrong dose change."
+  },
+  {
+    "id": "NAPLEX-T1-057",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napCounsel",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Dietary supplements",
+    "calculator": true,
+    "options": [
+      "It raises the estrogen level",
+      "It has no known interactions",
+      "It can make the pill fail",
+      "It causes high blood sugar"
+    ],
+    "correct": [
+      2
+    ],
+    "stem": "A patient using a combined oral contraceptive asks about St. John's wort. What is the concern?",
+    "explanation": "St. John's wort induces CYP3A4 and P-glycoprotein, lowering hormone levels and risking breakthrough bleeding and pregnancy. It also interacts with many other drugs."
+  },
+  {
+    "id": "NAPLEX-T1-058",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napOrders",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Safety parameters",
+    "calculator": true,
+    "options": [
+      "CBC with differential and platelets",
+      "Liver enzymes and bilirubin",
+      "Potassium and serum creatinine",
+      "TSH and free T4"
+    ],
+    "correct": [
+      2
+    ],
+    "stem": "Which labs should be checked before starting lisinopril and again 1 to 2 weeks later?",
+    "explanation": "ACE inhibitors can raise potassium and, in patients with poor renal perfusion, serum creatinine. Both are checked at baseline and soon after starting or raising the dose."
+  },
+  {
+    "id": "NAPLEX-T1-059",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napTherapy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Errors and omissions",
+    "calculator": true,
+    "options": [
+      "Underdosed lisinopril",
+      "Drug-food interaction",
+      "Missing diuretic",
+      "Dual RAAS blockade"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "A patient's profile shows both lisinopril and losartan for hypertension. What is the problem?",
+    "explanation": "Combining an ACE inhibitor with an ARB raises the risk of hyperkalemia, hypotension and kidney injury without better outcomes, so one should be stopped."
+  },
+  {
+    "id": "NAPLEX-T1-060",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napFoundations",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Sterile compounding",
+    "calculator": true,
+    "options": [
+      "It causes severe hypocalcemia",
+      "Calcium blocks its renal excretion",
+      "A ceftriaxone-calcium precipitate forms",
+      "Calcium inactivates the beta-lactam ring"
+    ],
+    "correct": [
+      2
+    ],
+    "stem": "Why is ceftriaxone not given to neonates who are receiving calcium-containing IV solutions?",
+    "explanation": "Ceftriaxone binds calcium and can form insoluble precipitates in the lungs and kidneys; fatal cases in neonates led to the labeling contraindication. The issue is precipitation, not a loss of antibacterial activity."
+  },
+  {
+    "id": "NAPLEX-T1-061",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napCalc",
+    "difficulty": 3,
+    "format": "numeric",
+    "skill": "Quantities to compound",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "133"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "stem": "How many mL of 95% alcohol must be mixed with 50% alcohol to make 300 mL of 70% alcohol? Round to the nearest whole number. Type the number only.",
+    "explanation": "By alligation, the 95% needs 70 - 50 = 20 parts and the 50% needs 95 - 70 = 25 parts, 45 parts in all. 300 mL x 20/45 = 133.3, so 133 mL of 95% alcohol."
+  },
+  {
+    "id": "NAPLEX-T1-062",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napTherapy",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Adverse drug reactions",
+    "calculator": true,
+    "options": [
+      "Add a cough suppressant",
+      "Switch to another ACE inhibitor",
+      "Double the enalapril dose",
+      "Switch to an ARB"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "A patient develops a dry cough a month after starting enalapril. What is the usual next step?",
+    "explanation": "ACE inhibitor cough comes from bradykinin build-up and occurs with every drug in the class. ARBs do not raise bradykinin in the same way and rarely cause cough."
+  },
+  {
+    "id": "NAPLEX-T1-063",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napOrders",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Safety parameters",
+    "calculator": true,
+    "options": [
+      "Heart rate of 48 beats/min",
+      "Respiratory rate of 16/min",
+      "Blood pressure of 150/92",
+      "Heart rate of 88 beats/min"
+    ],
+    "correct": [
+      0
+    ],
+    "stem": "Which finding should lead the pharmacist to question a new order for metoprolol tartrate?",
+    "explanation": "A beta-blocker slows the heart further, so bradycardia below about 50 to 60 beats per minute is a reason to hold and clarify. The raised blood pressure is a reason to treat, not to hold."
+  },
+  {
+    "id": "NAPLEX-T1-064",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napHandling",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hazardous drugs",
+    "calculator": true,
+    "options": [
+      "Use a dedicated counting tray",
+      "Crush the tablets before counting",
+      "Use the shared automated counter",
+      "Count them with bare hands"
+    ],
+    "correct": [
+      0
+    ],
+    "stem": "Which practice reduces staff exposure when counting oral hazardous drug tablets?",
+    "explanation": "Hazardous drug residue can contaminate shared equipment, so a dedicated tray, cleaned after use, and gloves are used. Crushing tablets creates dust."
+  },
+  {
+    "id": "NAPLEX-T1-065",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napMonitor",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Medication reconciliation",
+    "calculator": true,
+    "options": [
+      "Rely on the admitting order set",
+      "Copy the last hospital discharge summary",
+      "Ask the patient's pharmacy only",
+      "Gather a history from several sources"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "What is the best first step when reconciling a patient's medications at hospital admission?",
+    "explanation": "A best possible medication history uses at least two sources, such as the patient interview, pharmacy fill records and the bottles, so omissions and outdated entries are caught."
+  },
+  {
+    "id": "NAPLEX-T1-066",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napCounsel",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Devices",
+    "calculator": true,
+    "options": [
+      "Massage the site with the needle in",
+      "Pull it out straight away",
+      "Press the button again to be sure it emptied",
+      "Keep it in place for about 10 seconds"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "After pressing the button on an insulin pen, what should the patient do before pulling the needle out?",
+    "explanation": "Holding the needle in for several seconds, often counted as 10, lets the full dose leave the needle. Pulling out at once can leave part of the dose behind."
+  },
+  {
+    "id": "NAPLEX-T1-067",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napFoundations",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Drug development",
+    "calculator": true,
+    "options": [
+      "Dose finding in a large patient group",
+      "Efficacy against a comparator in thousands",
+      "Long-term safety in wide use after approval",
+      "Safety and pharmacokinetics in a few people"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "What is the main purpose of a phase 1 clinical trial?",
+    "explanation": "Phase 1 studies give a new drug to a small group, often healthy volunteers, to study safety, tolerability and pharmacokinetics. Large efficacy comparisons are phase 3; post-approval surveillance is phase 4."
+  },
+  {
+    "id": "NAPLEX-T1-068",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napTherapy",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Adverse drug reactions",
+    "calculator": true,
+    "options": [
+      "Phenytoin",
+      "Valproic acid",
+      "Lamotrigine",
+      "Levetiracetam"
+    ],
+    "correct": [
+      0
+    ],
+    "stem": "Which antiseizure drug commonly causes gingival hyperplasia?",
+    "explanation": "Gingival overgrowth is a well-known effect of phenytoin, reduced by good oral hygiene. Lamotrigine is known for rash and valproate for weight gain and tremor."
+  },
+  {
+    "id": "NAPLEX-T1-069",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napOrders",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Biosimilars",
+    "calculator": true,
+    "options": [
+      "Store it at room temperature for longer",
+      "Dispense it with a new prescription",
+      "Bill it under the reference product",
+      "Substitute it without the prescriber"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "What can a pharmacist do with an interchangeable biosimilar that cannot be done with a biosimilar that is not interchangeable?",
+    "explanation": "An interchangeable product may be substituted for the reference product at the pharmacy without the prescriber's intervention, as state law allows. Any biosimilar can be dispensed when it is prescribed by name."
+  },
+  {
+    "id": "NAPLEX-T1-070",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napPractice",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Social determinants of health",
+    "calculator": true,
+    "options": [
+      "The patient's blood type",
+      "A drug's half-life",
+      "A family history of diabetes",
+      "Access to transportation"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "Which of these is a social determinant of health?",
+    "explanation": "Social determinants are the conditions where people live, work and age, such as transportation, housing, income and food access. Genetics and blood type are biological factors."
+  },
+  {
+    "id": "NAPLEX-T1-071",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napManage",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Preceptorship",
+    "calculator": true,
+    "options": [
+      "Specific and given soon after",
+      "Only what went well",
+      "Given in front of patients and staff",
+      "General and given at the end"
+    ],
+    "correct": [
+      0
+    ],
+    "stem": "Which feedback to a pharmacy student is most useful?",
+    "explanation": "Effective feedback is timely, specific about what was seen, balanced and given privately, so the learner can act on it."
+  },
+  {
+    "id": "NAPLEX-T1-072",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napCalc",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Nutrition",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "850"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "stem": "A parenteral nutrition bag contains 250 g of dextrose monohydrate. How many kilocalories does the dextrose provide? Type the number only.",
+    "explanation": "IV dextrose provides 3.4 kcal/g. 250 g x 3.4 = 850 kcal."
+  },
+  {
+    "id": "NAPLEX-T1-073",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napTherapy",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Adverse drug reactions",
+    "calculator": true,
+    "options": [
+      "Lamotrigine lowers valproate levels",
+      "The dose is too low to control seizures",
+      "It causes severe hyponatremia",
+      "The starting dose risks a serious rash"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "A patient on valproic acid is started on lamotrigine 50 mg daily. Why is this a concern?",
+    "explanation": "Valproate roughly doubles lamotrigine levels, and a fast start raises the risk of Stevens-Johnson syndrome. With valproate the label starts lamotrigine at 25 mg every other day."
+  },
+  {
+    "id": "NAPLEX-T1-074",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napFoundations",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Drug development",
+    "calculator": true,
+    "options": [
+      "BLA",
+      "IND",
+      "NDA",
+      "ANDA"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "Which FDA application is used to approve a generic version of an existing drug?",
+    "explanation": "An abbreviated new drug application relies on the reference drug's safety and efficacy data and shows the generic is pharmaceutically equivalent and bioequivalent. An IND only allows clinical testing."
+  },
+  {
+    "id": "NAPLEX-T1-075",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napHandling",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Controlled substances",
+    "calculator": true,
+    "options": [
+      "DEA Form 224",
+      "DEA Form 106",
+      "DEA Form 222",
+      "DEA Form 41"
+    ],
+    "correct": [
+      2
+    ],
+    "stem": "Which DEA form is used to order Schedule II controlled substances on paper?",
+    "explanation": "Form 222 is the order form for Schedule I and II substances. Form 41 records destruction, Form 106 reports theft or loss and Form 224 is the pharmacy registration application."
+  },
+  {
+    "id": "NAPLEX-T1-076",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napMonitor",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Health screenings",
+    "calculator": true,
+    "options": [
+      "Stage 1 hypertension",
+      "Stage 2 hypertension",
+      "Elevated blood pressure",
+      "Normal blood pressure"
+    ],
+    "correct": [
+      0
+    ],
+    "stem": "A patient's average office blood pressure is 134/84 mm Hg. How is this classified?",
+    "explanation": "Systolic 130 to 139 or diastolic 80 to 89 is stage 1 hypertension. Elevated is 120 to 129 systolic with diastolic below 80, and stage 2 starts at 140/90."
+  },
+  {
+    "id": "NAPLEX-T1-077",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napCounsel",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Disease state management",
+    "calculator": true,
+    "options": [
+      "Only if the patient faints",
+      "If pain is no better after 1 hour",
+      "If pain is no better 5 minutes after a dose",
+      "Only after taking five tablets"
+    ],
+    "correct": [
+      2
+    ],
+    "stem": "A patient is given sublingual nitroglycerin for chest pain. When should 911 be called?",
+    "explanation": "Patients take one tablet at the onset of pain; if the pain is not improved or is worse 5 minutes later, they call 911 before taking more."
+  },
+  {
+    "id": "NAPLEX-T1-078",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napOrders",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Therapeutic substitution",
+    "calculator": true,
+    "options": [
+      "Changing capsules to tablets of the same drug",
+      "Dispensing an AB-rated generic of the same drug",
+      "Dispensing pravastatin for a simvastatin order",
+      "Using the same drug from another maker"
+    ],
+    "correct": [
+      2
+    ],
+    "stem": "Which is an example of therapeutic substitution rather than generic substitution?",
+    "explanation": "Therapeutic substitution swaps in a different drug of the same class, usually under a P&T committee policy. Swapping AB-rated versions of the same drug is generic substitution."
+  },
+  {
+    "id": "NAPLEX-T1-079",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napTherapy",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Toxicology",
+    "calculator": true,
+    "options": [
+      "Flumazenil",
+      "Fomepizole",
+      "Naloxone",
+      "Acetylcysteine"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "Which antidote is used for acetaminophen overdose?",
+    "explanation": "Acetylcysteine replenishes glutathione and is most effective when started within 8 hours of ingestion. Fomepizole treats toxic alcohol poisoning."
+  },
+  {
+    "id": "NAPLEX-T1-080",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napCalc",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Biostatistics",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "25"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "stem": "In a trial, 12% of patients on placebo and 8% of patients on the study drug had a stroke. How many patients must be treated with the drug to prevent one stroke? Type the number only.",
+    "explanation": "Absolute risk reduction = 12% - 8% = 4% = 0.04. NNT = 1 / 0.04 = 25."
+  },
+  {
+    "id": "NAPLEX-T1-081",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napFoundations",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Research design",
+    "calculator": true,
+    "options": [
+      "Only if they completed the protocol",
+      "Only if they had no adverse effects",
+      "In the group they were randomized to",
+      "By the treatment they actually received"
+    ],
+    "correct": [
+      2
+    ],
+    "stem": "In an intention-to-treat analysis, how are participants analyzed?",
+    "explanation": "Intention-to-treat keeps everyone in their randomized group whatever happened later, which preserves the balance randomization created. Analyzing by treatment received is a per-protocol or as-treated analysis."
+  },
+  {
+    "id": "NAPLEX-T1-082",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napTherapy",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Toxicology",
+    "calculator": true,
+    "options": [
+      "It causes respiratory arrest",
+      "It can provoke seizures",
+      "It raises benzodiazepine levels",
+      "It has no effect in that patient"
+    ],
+    "correct": [
+      1
+    ],
+    "stem": "Why is flumazenil usually avoided in a patient with long-term benzodiazepine use?",
+    "explanation": "Flumazenil reverses benzodiazepine effects abruptly and can trigger withdrawal seizures in dependent patients or after a mixed overdose with seizure-provoking drugs."
+  },
+  {
+    "id": "NAPLEX-T1-083",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napOrders",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Dosing regimens",
+    "calculator": true,
+    "options": [
+      "Metformin",
+      "Glipizide",
+      "Insulin glargine",
+      "Linagliptin"
+    ],
+    "correct": [
+      0
+    ],
+    "stem": "Which drug is contraindicated when eGFR is below 30 mL/min/1.73 m2?",
+    "explanation": "Metformin labeling contraindicates use below an eGFR of 30 because of the risk of lactic acidosis, and starting it between 30 and 45 is not recommended. Linagliptin needs no renal adjustment."
+  },
+  {
+    "id": "NAPLEX-T1-084",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napHandling",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Stability",
+    "calculator": true,
+    "options": [
+      "Up to 90 days",
+      "Up to 28 days",
+      "Up to 7 days",
+      "Up to 42 days"
+    ],
+    "correct": [
+      1
+    ],
+    "stem": "After first use, how long may an insulin glargine vial be kept at room temperature?",
+    "explanation": "Opened insulin glargine vials and pens are kept at room temperature, below 30°C, for up to 28 days. Unopened product goes back in the refrigerator."
+  },
+  {
+    "id": "NAPLEX-T1-085",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napMonitor",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Safety",
+    "calculator": true,
+    "options": [
+      "Serum creatinine",
+      "aPTT or anti-Xa level",
+      "Fibrinogen and D-dimer",
+      "INR"
+    ],
+    "correct": [
+      1
+    ],
+    "stem": "Which test guides dose changes for a continuous IV unfractionated heparin infusion?",
+    "explanation": "Heparin infusions are titrated to an aPTT or anti-factor Xa target. INR guides warfarin, and platelets are watched separately for heparin-induced thrombocytopenia."
+  },
+  {
+    "id": "NAPLEX-T1-086",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napCounsel",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Medication storage",
+    "calculator": true,
+    "options": [
+      "The bathroom cabinet",
+      "A cool, dry place out of reach",
+      "A sunny windowsill by the kitchen sink",
+      "The car glove box"
+    ],
+    "correct": [
+      1
+    ],
+    "stem": "Where should most medicines be stored at home?",
+    "explanation": "Heat and moisture break drugs down, so the bathroom, a car and a windowsill are poor choices. Storage should also be out of children's sight and reach."
+  },
+  {
+    "id": "NAPLEX-T1-087",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napCalc",
+    "difficulty": 3,
+    "format": "numeric",
+    "skill": "Pharmacokinetic parameters",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "1120"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "stem": "A drug has a volume of distribution of 0.7 L/kg. What loading dose, in mg, gives a peak concentration of 20 mg/L in an 80 kg patient? Type the number only.",
+    "explanation": "Loading dose = Vd x target concentration = (0.7 L/kg x 80 kg) x 20 mg/L = 56 L x 20 mg/L = 1,120 mg."
+  },
+  {
+    "id": "NAPLEX-T1-088",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napTherapy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Toxicology",
+    "calculator": true,
+    "options": [
+      "Hyperkalemia",
+      "Hypokalemia",
+      "Hypocalcemia",
+      "Hypernatremia"
+    ],
+    "correct": [
+      1
+    ],
+    "stem": "Which electrolyte abnormality raises the risk of digoxin toxicity?",
+    "explanation": "Digoxin and potassium compete for the same site on the sodium-potassium pump, so low potassium increases digoxin binding and toxicity. Hypercalcemia and hypomagnesemia also add to the risk."
+  },
+  {
+    "id": "NAPLEX-T1-089",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napFoundations",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Biostatistics",
+    "calculator": true,
+    "options": [
+      "ANOVA",
+      "Chi-square test",
+      "Paired t-test",
+      "Mann-Whitney U test"
+    ],
+    "correct": [
+      0
+    ],
+    "stem": "Which test compares the means of a continuous, normally distributed outcome across three independent groups?",
+    "explanation": "Analysis of variance compares the means of three or more independent groups. Chi-square tests categorical data, and Mann-Whitney U is a nonparametric test for two groups."
+  },
+  {
+    "id": "NAPLEX-T1-090",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napOrders",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Dosage forms",
+    "calculator": true,
+    "options": [
+      "Extended-release capsule",
+      "Transdermal patch",
+      "Sublingual tablet",
+      "Topical ointment"
+    ],
+    "correct": [
+      2
+    ],
+    "stem": "Which nitroglycerin dosage form relieves an acute attack of angina?",
+    "explanation": "Sublingual nitroglycerin acts within minutes and is used at the onset of chest pain. Patches, ointment and extended-release capsules are for prevention."
+  },
+  {
+    "id": "NAPLEX-T1-091",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napPractice",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ethics",
+    "calculator": true,
+    "options": [
+      "Share it if she knows the birthdate",
+      "Share it but write a note in the profile",
+      "Share it because she is family",
+      "Not share it without the patient's OK"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "An adult patient's daughter calls and asks what her mother's new prescription is for. The patient has not given permission. What should the pharmacist do?",
+    "explanation": "Patient health information is confidential, and HIPAA lets the pharmacist share it with family only when the patient agrees, does not object or, in limited cases, when it is in the patient's best interest."
+  },
+  {
+    "id": "NAPLEX-T1-092",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napManage",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Error prevention",
+    "calculator": true,
+    "options": [
+      "10.0 units",
+      "10 units",
+      "10 IU",
+      "10 U"
+    ],
+    "correct": [
+      1
+    ],
+    "stem": "How should a dose of 10 units of insulin be written to avoid errors?",
+    "explanation": "U can be misread as a zero or a 4, IU as IV or 10, and a trailing zero can turn 10 into 100. Writing the word units avoids all three."
+  },
+  {
+    "id": "NAPLEX-T1-093",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napTherapy",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Adherence",
+    "calculator": true,
+    "options": [
+      "Stopping the midday dose",
+      "A once-daily formulation",
+      "A larger midday dose",
+      "Taking two doses at night"
+    ],
+    "correct": [
+      1
+    ],
+    "stem": "A patient often misses the midday dose of a three-times-daily drug. Which change is most likely to help?",
+    "explanation": "Simplifying the regimen to once-daily dosing, when an equivalent product exists, is one of the most effective ways to improve adherence. Doubling or skipping doses changes the therapy."
+  },
+  {
+    "id": "NAPLEX-T1-094",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napHandling",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Disposal",
+    "calculator": true,
+    "options": [
+      "Mix them with coffee grounds",
+      "Pour them down the kitchen sink drain",
+      "Flush them down the toilet",
+      "Take them to the take-back site"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "A patient wants to get rid of leftover tablets that are not on the FDA flush list, and a take-back site is nearby. What is the best advice?",
+    "explanation": "FDA guidance puts take-back first. Household trash mixed with an unappealing substance is for when no take-back is available, and only drugs on the flush list are flushed."
+  },
+  {
+    "id": "NAPLEX-T1-095",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napMonitor",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Safety",
+    "calculator": true,
+    "options": [
+      "Liver enzymes",
+      "Serum creatinine",
+      "Lipid panel",
+      "CBC",
+      "TSH"
+    ],
+    "correct": [
+      0,
+      1,
+      3
+    ],
+    "stem": "Which labs are monitored during long-term oral methotrexate for rheumatoid arthritis? Select all that apply.",
+    "explanation": "Methotrexate can suppress the marrow and injure the liver, and it is renally cleared, so CBC, liver tests and creatinine are checked regularly. TSH and lipids are not part of methotrexate monitoring."
+  },
+  {
+    "id": "NAPLEX-T1-096",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napCounsel",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Medication use",
+    "calculator": true,
+    "options": [
+      "Long-term use can lower vitamin B12",
+      "Stomach upset often eases over time",
+      "It usually causes weight gain",
+      "Take it on an empty stomach",
+      "Take it with meals"
+    ],
+    "correct": [
+      0,
+      1,
+      4
+    ],
+    "stem": "Which counseling points apply to metformin? Select all that apply.",
+    "explanation": "Taking metformin with meals and titrating slowly reduces gastrointestinal effects, which often fade. Long-term use can lower vitamin B12. Metformin is weight neutral or causes modest loss."
+  },
+  {
+    "id": "NAPLEX-T1-097",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napCalc",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Pharmacokinetic parameters",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "6"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "stem": "A drug's elimination rate constant is 0.1155 per hour. What is its half-life in hours? Round to the nearest whole number. Type the number only.",
+    "explanation": "t1/2 = 0.693 / k = 0.693 / 0.1155 = 6 hours."
+  },
+  {
+    "id": "NAPLEX-T1-098",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napFoundations",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Drug information",
+    "calculator": true,
+    "options": [
+      "The Green Book",
+      "The Red Book",
+      "The Purple Book",
+      "The Orange Book"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "Which FDA resource lists therapeutic equivalence ratings used for generic substitution?",
+    "explanation": "Approved Drug Products with Therapeutic Equivalence Evaluations, the Orange Book, gives the codes such as AB that show a generic can be substituted. The Purple Book lists biologics and the Green Book animal drugs."
+  },
+  {
+    "id": "NAPLEX-T1-099",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napOrders",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Drug classes",
+    "calculator": true,
+    "options": [
+      "Dipyridamole",
+      "Cilostazol",
+      "Ticagrelor",
+      "Vorapaxar"
+    ],
+    "correct": [
+      2
+    ],
+    "stem": "Which drug is a P2Y12 inhibitor?",
+    "explanation": "Ticagrelor blocks the platelet P2Y12 ADP receptor. Cilostazol inhibits phosphodiesterase 3, dipyridamole affects adenosine uptake and phosphodiesterase, and vorapaxar blocks the PAR-1 thrombin receptor."
+  },
+  {
+    "id": "NAPLEX-T1-100",
+    "section": "naplex",
+    "test": 1,
+    "module": 1,
+    "domain": "napTherapy",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Pathophysiology",
+    "calculator": true,
+    "options": [
+      "Type 2 diabetes",
+      "Diabetes insipidus",
+      "Type 1 diabetes",
+      "Gestational diabetes"
+    ],
+    "correct": [
+      2
+    ],
+    "stem": "Which condition results mainly from autoimmune destruction of pancreatic beta cells?",
+    "explanation": "In type 1 diabetes the immune system destroys beta cells, so insulin is required from diagnosis. Type 2 diabetes starts with insulin resistance."
+  },
+  {
+    "id": "NAPLEX-T2-001",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napTherapy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Interactions",
+    "calculator": true,
+    "options": [
+      "Pantoprazole",
+      "Omeprazole",
+      "Cimetidine",
+      "Esomeprazole"
+    ],
+    "correct": [
+      0
+    ],
+    "stem": "A patient on clopidogrel needs acid suppression. Which choice avoids the main interaction?",
+    "explanation": "Omeprazole and esomeprazole inhibit CYP2C19, which activates clopidogrel, and the labeling advises avoiding them. Pantoprazole has little effect on the enzyme."
+  },
+  {
+    "id": "NAPLEX-T2-002",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napOrders",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Drug classes",
+    "calculator": true,
+    "options": [
+      "Tiotropium",
+      "Budesonide",
+      "Albuterol",
+      "Salmeterol"
+    ],
+    "correct": [
+      0
+    ],
+    "stem": "Which inhaled drug is a long-acting muscarinic antagonist?",
+    "explanation": "Tiotropium is a once-daily LAMA. Salmeterol is a LABA, budesonide an inhaled corticosteroid and albuterol a short-acting beta-agonist."
+  },
+  {
+    "id": "NAPLEX-T2-003",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napFoundations",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Pharmacology",
+    "calculator": true,
+    "options": [
+      "Slows carbohydrate digestion in the gut",
+      "Increases insulin release from the pancreas",
+      "Blocks glucose reabsorption in the kidney",
+      "Reduces glucose output by the liver"
+    ],
+    "correct": [
+      2
+    ],
+    "stem": "How does empagliflozin lower blood glucose?",
+    "explanation": "Empagliflozin inhibits SGLT2 in the proximal tubule, so more glucose is excreted in the urine. Reduced hepatic glucose output is the main action of metformin."
+  },
+  {
+    "id": "NAPLEX-T2-004",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napCalc",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Patient parameters",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "35"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "stem": "An 80-year-old woman weighs 60 kg, which is also her ideal body weight, and her serum creatinine is 1.2 mg/dL. Using the Cockcroft-Gault equation, what is her estimated creatinine clearance in mL/min? Round to the nearest whole number. Type the number only.",
+    "explanation": "CrCl = (140 - 80) x 60 / (72 x 1.2) = 3600 / 86.4 = 41.7, then x 0.85 for a woman = 35.4, which rounds to 35 mL/min."
+  },
+  {
+    "id": "NAPLEX-T2-005",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napHandling",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Vaccine storage",
+    "calculator": true,
+    "options": [
+      "-50°C to -15°C",
+      "-10°C to 0°C",
+      "-90°C to -60°C",
+      "2°C to 8°C"
+    ],
+    "correct": [
+      0
+    ],
+    "stem": "What temperature range is used for vaccines that are stored frozen?",
+    "explanation": "Freezer-stored vaccines such as varicella are kept between -50°C and -15°C (-58°F to +5°F). The -90°C to -60°C range is ultra-cold storage used for some other products."
+  },
+  {
+    "id": "NAPLEX-T2-006",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napMonitor",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Safety",
+    "calculator": true,
+    "options": [
+      "aPTT every week",
+      "Renal function and CBC",
+      "Anti-Xa level every visit",
+      "INR every month"
+    ],
+    "correct": [
+      1
+    ],
+    "stem": "Which is routinely monitored for a patient taking apixaban?",
+    "explanation": "DOACs need no routine coagulation testing. Renal and hepatic function and a CBC are checked to confirm the dose and watch for bleeding."
+  },
+  {
+    "id": "NAPLEX-T2-007",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napCounsel",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Medication use",
+    "calculator": true,
+    "options": [
+      "Right after a cup of coffee",
+      "On an empty stomach before breakfast",
+      "With a calcium supplement for the bones",
+      "With the largest meal of the day"
+    ],
+    "correct": [
+      1
+    ],
+    "stem": "When should levothyroxine be taken?",
+    "explanation": "Levothyroxine absorbs best on an empty stomach, 30 to 60 minutes before breakfast, or at bedtime well after the last meal, at the same time each day."
+  },
+  {
+    "id": "NAPLEX-T2-008",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napTherapy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Interactions",
+    "calculator": true,
+    "options": [
+      "Amlodipine besylate",
+      "Hydrochlorothiazide",
+      "Sertraline",
+      "Acetaminophen"
+    ],
+    "correct": [
+      1
+    ],
+    "stem": "Which drug added to lithium is most likely to raise the lithium level?",
+    "explanation": "Thiazides cause sodium loss and increase lithium reabsorption in the proximal tubule, raising levels. NSAIDs, ACE inhibitors and ARBs do the same."
+  },
+  {
+    "id": "NAPLEX-T2-009",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napOrders",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Drug classes",
+    "calculator": true,
+    "options": [
+      "Diltiazem",
+      "Felodipine",
+      "Amlodipine",
+      "Nifedipine"
+    ],
+    "correct": [
+      0
+    ],
+    "stem": "Which calcium channel blocker is a nondihydropyridine?",
+    "explanation": "Diltiazem and verapamil are nondihydropyridines that slow AV conduction and heart rate. Amlodipine, nifedipine and felodipine are dihydropyridines that act mainly on vascular smooth muscle."
+  },
+  {
+    "id": "NAPLEX-T2-010",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napPractice",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Adverse event reporting",
+    "calculator": true,
+    "options": [
+      "The vaccine's wholesaler",
+      "The local health department",
+      "VAERS",
+      "MedWatch"
+    ],
+    "correct": [
+      2
+    ],
+    "stem": "Where is an adverse event after a vaccine reported?",
+    "explanation": "The Vaccine Adverse Event Reporting System, run by the CDC and FDA, collects reports of adverse events after vaccination."
+  },
+  {
+    "id": "NAPLEX-T2-011",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napManage",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Quality improvement",
+    "calculator": true,
+    "options": [
+      "A review of drug prices",
+      "An audit of staff schedules",
+      "A survey of patient satisfaction with service",
+      "Checking a drug's use against set criteria"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "What is a medication use evaluation?",
+    "explanation": "A medication use evaluation measures how a drug or class is prescribed, dispensed and given against set criteria and then targets changes. It is a core quality improvement tool."
+  },
+  {
+    "id": "NAPLEX-T2-012",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napFoundations",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Pharmacodynamics",
+    "calculator": true,
+    "options": [
+      "It can displace a full agonist",
+      "It is cleared too slowly to start early",
+      "It has no effect on mu receptors",
+      "It is a full agonist at mu receptors"
+    ],
+    "correct": [
+      0
+    ],
+    "stem": "Why should buprenorphine be started only once a patient has moderate opioid withdrawal symptoms?",
+    "explanation": "Buprenorphine is a high-affinity partial mu agonist. Given while a full agonist still occupies the receptors, it displaces it with less activity and can precipitate withdrawal."
+  },
+  {
+    "id": "NAPLEX-T2-013",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napCalc",
+    "difficulty": 1,
+    "format": "numeric",
+    "skill": "Patient parameters",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "31"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "stem": "A patient weighs 95 kg and is 1.75 m tall. What is the body mass index in kg/m2? Round to the nearest whole number. Type the number only.",
+    "explanation": "BMI = weight / height squared = 95 / (1.75 x 1.75) = 95 / 3.0625 = 31.0 kg/m2."
+  },
+  {
+    "id": "NAPLEX-T2-014",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napTherapy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Interactions",
+    "calculator": true,
+    "options": [
+      "Take the pill twice daily",
+      "No change is needed",
+      "Use a nonhormonal backup method",
+      "Stop the pill and switch to a patch"
+    ],
+    "correct": [
+      2
+    ],
+    "stem": "A patient using a combined oral contraceptive starts rifampin for latent tuberculosis. What should be advised?",
+    "explanation": "Rifampin strongly induces CYP3A4 and lowers estrogen and progestin levels, so contraception can fail. A nonhormonal method is used during treatment and for a time after."
+  },
+  {
+    "id": "NAPLEX-T2-015",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napHandling",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Contraindications",
+    "calculator": true,
+    "options": [
+      "Hepatitis A vaccine",
+      "Intranasal influenza vaccine",
+      "Recombinant influenza vaccine",
+      "Tdap"
+    ],
+    "correct": [
+      1
+    ],
+    "stem": "Which vaccine is a live attenuated vaccine?",
+    "explanation": "The nasal spray influenza vaccine contains live attenuated virus. Recombinant and inactivated influenza vaccines, Tdap and hepatitis A vaccine are not live."
+  },
+  {
+    "id": "NAPLEX-T2-016",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napMonitor",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Therapeutic goals",
+    "calculator": true,
+    "options": [
+      "The total level is reliable as reported",
+      "The free level is lower than it looks",
+      "The free level is higher than it looks",
+      "The dose must be cut in half"
+    ],
+    "correct": [
+      2
+    ],
+    "stem": "A patient's total phenytoin level is 8 mcg/mL and serum albumin is 2.0 g/dL. What is true?",
+    "explanation": "Low albumin leaves more phenytoin unbound, so a total level understates the active drug. A free level, or an albumin-adjusted estimate, gives the true picture."
+  },
+  {
+    "id": "NAPLEX-T2-017",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napCounsel",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Lifestyle",
+    "calculator": true,
+    "options": [
+      "Eat more organ meats",
+      "Limit beer and sugary drinks",
+      "Avoid all dairy products and eggs",
+      "Drink less water"
+    ],
+    "correct": [
+      1
+    ],
+    "stem": "Which advice helps a patient reduce gout flares?",
+    "explanation": "Alcohol, especially beer, and fructose-sweetened drinks raise uric acid. Low-fat dairy and good hydration are encouraged, and organ meats are high in purines."
+  },
+  {
+    "id": "NAPLEX-T2-018",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napOrders",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Dosing regimens",
+    "calculator": true,
+    "options": [
+      "75 mg twice daily for 5 days",
+      "150 mg once daily for 5 days",
+      "75 mg twice daily for 10 days",
+      "75 mg once daily for 10 days"
+    ],
+    "correct": [
+      0
+    ],
+    "stem": "What is the usual adult oseltamivir regimen to treat influenza with normal renal function?",
+    "explanation": "Treatment is 75 mg twice a day for 5 days, started as soon as possible. 75 mg once daily is the prophylaxis dose."
+  },
+  {
+    "id": "NAPLEX-T2-019",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napTherapy",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Interactions",
+    "calculator": true,
+    "options": [
+      "Citalopram",
+      "Metformin",
+      "Haloperidol",
+      "Ondansetron",
+      "Amlodipine"
+    ],
+    "correct": [
+      0,
+      2,
+      3
+    ],
+    "stem": "Which drugs can prolong the QT interval? Select all that apply.",
+    "explanation": "Citalopram, ondansetron and haloperidol all prolong the QT interval in a dose-related way, and combining them adds to the risk of torsades de pointes. Amlodipine and metformin do not."
+  },
+  {
+    "id": "NAPLEX-T2-020",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napFoundations",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pharmacogenomics",
+    "calculator": true,
+    "options": [
+      "Toxic levels of parent drug build up",
+      "Less active metabolite is formed",
+      "Its antiplatelet effect lasts too long",
+      "It causes a severe rash in carriers"
+    ],
+    "correct": [
+      1
+    ],
+    "stem": "A patient is a CYP2C19 poor metabolizer. What is the concern if clopidogrel is prescribed?",
+    "explanation": "Clopidogrel is a prodrug activated mainly by CYP2C19, and its boxed warning notes reduced effectiveness in poor metabolizers. The risk is too little platelet inhibition, not toxicity."
+  },
+  {
+    "id": "NAPLEX-T2-021",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napCalc",
+    "difficulty": 3,
+    "format": "numeric",
+    "skill": "Rates of administration",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "21"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "stem": "Dobutamine 250 mg in 250 mL is ordered at 5 mcg/kg/min for a 70 kg patient. What is the infusion rate in mL per hour? Type the number only.",
+    "explanation": "The concentration is 1 mg/mL, or 1,000 mcg/mL. 5 mcg/kg/min x 70 kg = 350 mcg/min x 60 = 21,000 mcg/h; / 1,000 mcg/mL = 21 mL/h."
+  },
+  {
+    "id": "NAPLEX-T2-022",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napTherapy",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Drug-food interactions",
+    "calculator": true,
+    "options": [
+      "At least 4 hours apart",
+      "With a glass of milk",
+      "Only 10 to 15 minutes apart",
+      "At the same time"
+    ],
+    "correct": [
+      0
+    ],
+    "stem": "How should levothyroxine be taken in relation to calcium carbonate?",
+    "explanation": "Calcium binds levothyroxine in the gut and reduces absorption, so the doses are separated by at least 4 hours. Iron, antacids and bile acid binders need the same spacing."
+  },
+  {
+    "id": "NAPLEX-T2-023",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napOrders",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Dosing regimens",
+    "calculator": true,
+    "options": [
+      "It matches the labeled flare regimen",
+      "The total dose is far too high for a flare",
+      "It should be repeated every hour",
+      "Colchicine is only for prevention"
+    ],
+    "correct": [
+      0
+    ],
+    "stem": "A prescription for a gout flare reads colchicine 1.2 mg now, then 0.6 mg one hour later. How should the pharmacist assess it?",
+    "explanation": "The labeled treatment of a flare is 1.2 mg at the first sign, then 0.6 mg an hour later, 1.8 mg in all. Higher hourly regimens add toxicity without more benefit."
+  },
+  {
+    "id": "NAPLEX-T2-024",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napHandling",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Contraindications",
+    "calculator": true,
+    "options": [
+      "Anaphylaxis to a prior dose",
+      "A mild cold without fever",
+      "Current antibiotic use",
+      "A local reaction to a prior dose"
+    ],
+    "correct": [
+      0
+    ],
+    "stem": "Which is a contraindication to any vaccine?",
+    "explanation": "A severe allergic reaction to a previous dose or to a component rules out further doses of that vaccine. Mild illness, antibiotics and local soreness are not contraindications."
+  },
+  {
+    "id": "NAPLEX-T2-025",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napMonitor",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Safety",
+    "calculator": true,
+    "options": [
+      "Exactly 2 hours after it is taken",
+      "Within 30 minutes of it",
+      "At any time of day",
+      "At least 6 hours after it"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "When should a digoxin level be drawn after an oral dose?",
+    "explanation": "Digoxin distributes slowly into tissue, so a level drawn before 6 to 8 hours after a dose reads falsely high."
+  },
+  {
+    "id": "NAPLEX-T2-026",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napCounsel",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "OTC medications",
+    "calculator": true,
+    "options": [
+      "2 years",
+      "6 months",
+      "12 years",
+      "18 years"
+    ],
+    "correct": [
+      0
+    ],
+    "stem": "The FDA advises against OTC cough and cold products for children younger than:",
+    "explanation": "The FDA advises against OTC cough and cold products in children under 2 because of serious and fatal adverse events; product labels say not to use them under 4."
+  },
+  {
+    "id": "NAPLEX-T2-027",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napFoundations",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pharmacokinetics",
+    "calculator": true,
+    "options": [
+      "Gabapentin",
+      "Levetiracetam",
+      "Lithium",
+      "Phenytoin"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "Which drug's elimination becomes saturable within its usual range, so a small dose increase can raise levels sharply?",
+    "explanation": "Phenytoin follows Michaelis-Menten kinetics: as its metabolism saturates, the concentration rises out of proportion to the dose. Levetiracetam and lithium have linear, renally driven elimination."
+  },
+  {
+    "id": "NAPLEX-T2-028",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napTherapy",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Drug-allergy interactions",
+    "calculator": true,
+    "options": [
+      "Sacubitril-valsartan",
+      "Amlodipine",
+      "Chlorthalidone",
+      "Metoprolol succinate"
+    ],
+    "correct": [
+      0
+    ],
+    "stem": "A patient had angioedema with lisinopril. Which drug is contraindicated?",
+    "explanation": "Sacubitril-valsartan is contraindicated with a history of ACE inhibitor-related angioedema, because neprilysin inhibition also raises bradykinin."
+  },
+  {
+    "id": "NAPLEX-T2-029",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napCalc",
+    "difficulty": 1,
+    "format": "numeric",
+    "skill": "Rates of administration",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "200"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "stem": "Vancomycin 1.5 g in 300 mL is to be infused over 90 minutes. What is the infusion rate in mL per hour? Type the number only.",
+    "explanation": "300 mL over 1.5 hours = 300 / 1.5 = 200 mL/h."
+  },
+  {
+    "id": "NAPLEX-T2-030",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napOrders",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Dosage forms",
+    "calculator": true,
+    "options": [
+      "Regular insulin",
+      "Insulin glargine",
+      "Insulin detemir",
+      "NPH insulin"
+    ],
+    "correct": [
+      0
+    ],
+    "stem": "Which insulin can be given intravenously?",
+    "explanation": "Regular human insulin is a clear solution that can be infused IV, for example in diabetic ketoacidosis. Glargine and detemir are long-acting and NPH is a suspension, all for subcutaneous use only."
+  },
+  {
+    "id": "NAPLEX-T2-031",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napPractice",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Opioid stewardship",
+    "calculator": true,
+    "options": [
+      "One on a statin for cholesterol",
+      "One on low-dose aspirin daily",
+      "One on a 3-day course of ibuprofen 400 mg",
+      "One on oxycodone and a benzodiazepine"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "Which patient should be offered naloxone under the 2022 CDC opioid guideline?",
+    "explanation": "The guideline advises offering naloxone when overdose risk is raised, such as with higher opioid doses or a benzodiazepine taken at the same time."
+  },
+  {
+    "id": "NAPLEX-T2-032",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napManage",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Quality improvement",
+    "calculator": true,
+    "options": [
+      "Root cause analysis",
+      "Review of last year's incident reports",
+      "Failure mode and effects analysis",
+      "Peer review after an event"
+    ],
+    "correct": [
+      2
+    ],
+    "stem": "Which tool examines a process for possible failures before an error occurs?",
+    "explanation": "FMEA is prospective: a team maps a process, lists how each step could fail and fixes the riskiest steps first. Root cause analysis is retrospective."
+  },
+  {
+    "id": "NAPLEX-T2-033",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napTherapy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Appropriateness",
+    "calculator": true,
+    "options": [
+      "Apixaban",
+      "Dabigatran",
+      "Warfarin",
+      "Rivaroxaban"
+    ],
+    "correct": [
+      2
+    ],
+    "stem": "A patient has a mechanical mitral valve. Which anticoagulant is appropriate?",
+    "explanation": "Direct oral anticoagulants are not used with mechanical heart valves; dabigatran caused more clots and bleeding than warfarin in that setting. Warfarin remains the standard."
+  },
+  {
+    "id": "NAPLEX-T2-034",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napFoundations",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pharmacokinetics",
+    "calculator": true,
+    "options": [
+      "It is highly bound to albumin",
+      "It is cleared mainly by the kidney",
+      "It stays mostly in the plasma",
+      "It is extensively bound in tissues"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "What does a very large apparent volume of distribution suggest about a drug?",
+    "explanation": "Volume of distribution relates the amount in the body to the plasma concentration. A volume far larger than body water means most of the drug sits in tissues. Strong albumin binding keeps the volume small."
+  },
+  {
+    "id": "NAPLEX-T2-035",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napHandling",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Administration",
+    "calculator": true,
+    "options": [
+      "15 degrees",
+      "90 degrees",
+      "45 degrees",
+      "30 degrees"
+    ],
+    "correct": [
+      1
+    ],
+    "stem": "At what angle is an intramuscular vaccine injected?",
+    "explanation": "Intramuscular injections go in at 90 degrees to reach the muscle. A 45-degree angle is used for subcutaneous injection."
+  },
+  {
+    "id": "NAPLEX-T2-036",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napMonitor",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Therapeutic goals",
+    "calculator": true,
+    "options": [
+      "Below 130/80 mm Hg",
+      "Below 140/90 mm Hg",
+      "Below 120/70 mm Hg",
+      "Below 150/90 mm Hg"
+    ],
+    "correct": [
+      0
+    ],
+    "stem": "What is the blood pressure goal for most adults with hypertension under ACC/AHA guidance?",
+    "explanation": "ACC/AHA guidance sets a goal below 130/80 for most adults with hypertension. Below 150/90 is an older goal some guidelines used for adults 60 and over."
+  },
+  {
+    "id": "NAPLEX-T2-037",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napCounsel",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "OTC medications",
+    "calculator": true,
+    "options": [
+      "A patient with mild itching",
+      "A patient who is pregnant",
+      "A patient with a past diagnosis",
+      "A patient with thick discharge"
+    ],
+    "correct": [
+      1
+    ],
+    "stem": "Which patient with vaginal yeast infection symptoms should be referred rather than self-treat?",
+    "explanation": "Self-treatment suits a patient with a prior diagnosed infection and typical symptoms. Pregnancy, a first episode, fever or pain, or frequent recurrences call for referral."
+  },
+  {
+    "id": "NAPLEX-T2-038",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napOrders",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Boxed warnings",
+    "calculator": true,
+    "options": [
+      "Thyroid C-cell tumors",
+      "Major or fatal bleeding",
+      "Tendon rupture in older adults",
+      "Lactic acidosis"
+    ],
+    "correct": [
+      1
+    ],
+    "stem": "What is the boxed warning on warfarin?",
+    "explanation": "Warfarin can cause major or fatal bleeding, and its boxed warning calls for regular INR monitoring and attention to interacting drugs and diet."
+  },
+  {
+    "id": "NAPLEX-T2-039",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napCalc",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Dose conversions",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "6"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "stem": "A patient taking prednisone 40 mg daily is switched to an equivalent dose of oral dexamethasone. Using prednisone 5 mg = dexamethasone 0.75 mg, what is the daily dexamethasone dose in mg? Type the number only.",
+    "explanation": "40 mg / 5 mg = 8 equivalent units; 8 x 0.75 mg = 6 mg of dexamethasone."
+  },
+  {
+    "id": "NAPLEX-T2-040",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napTherapy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Appropriateness",
+    "calculator": true,
+    "options": [
+      "Chlorthalidone",
+      "Hydralazine",
+      "Clonidine",
+      "Metoprolol"
+    ],
+    "correct": [
+      0
+    ],
+    "stem": "Which drug is a first-line option for hypertension in a Black adult without chronic kidney disease or heart failure?",
+    "explanation": "A thiazide-type diuretic or a calcium channel blocker is preferred first-line in this group. Beta-blockers, clonidine and hydralazine are not first-line without a specific indication."
+  },
+  {
+    "id": "NAPLEX-T2-041",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napFoundations",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Pharmaceutics",
+    "calculator": true,
+    "options": [
+      "Narrowing the particle-vehicle density gap",
+      "Reducing the particle size",
+      "Increasing the vehicle's viscosity",
+      "Increasing the particle size",
+      "Lowering the vehicle's viscosity"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "stem": "Which changes slow the settling rate of particles in an oral suspension? Select all that apply.",
+    "explanation": "By Stokes' law the settling velocity rises with the square of the particle radius and with the density difference, and falls as viscosity rises. Larger particles or a thinner vehicle settle faster."
+  },
+  {
+    "id": "NAPLEX-T2-042",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napTherapy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Drug-condition interactions",
+    "calculator": true,
+    "options": [
+      "Ondansetron",
+      "Metoclopramide",
+      "Aprepitant",
+      "Dexamethasone"
+    ],
+    "correct": [
+      1
+    ],
+    "stem": "Which antiemetic is best avoided in a patient with Parkinson disease?",
+    "explanation": "Metoclopramide blocks dopamine D2 receptors centrally and can worsen parkinsonian symptoms. Ondansetron works on serotonin receptors and is preferred."
+  },
+  {
+    "id": "NAPLEX-T2-043",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napOrders",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Boxed warnings",
+    "calculator": true,
+    "options": [
+      "Acute necrotizing pancreatitis",
+      "Congestive heart failure",
+      "Thyroid C-cell tumors",
+      "Lactic acidosis"
+    ],
+    "correct": [
+      1
+    ],
+    "stem": "Which boxed warning appears on pioglitazone?",
+    "explanation": "Thiazolidinediones cause fluid retention that can cause or worsen heart failure; they are contraindicated in NYHA class III or IV heart failure. Lactic acidosis is the metformin warning."
+  },
+  {
+    "id": "NAPLEX-T2-044",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napHandling",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Adverse reactions",
+    "calculator": true,
+    "options": [
+      "45 minutes",
+      "2 minutes",
+      "15 minutes",
+      "2 hours"
+    ],
+    "correct": [
+      2
+    ],
+    "stem": "To prevent injury from fainting, how long should a patient, especially an adolescent, stay seated or lying after vaccination?",
+    "explanation": "Syncope after vaccination is most common in adolescents, and observing the patient seated or lying down for 15 minutes reduces falls and injury."
+  },
+  {
+    "id": "NAPLEX-T2-045",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napMonitor",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Effectiveness",
+    "calculator": true,
+    "options": [
+      "1 to 2 weeks",
+      "4 to 8 weeks",
+      "6 to 12 months",
+      "3 to 5 days"
+    ],
+    "correct": [
+      1
+    ],
+    "stem": "How long should an SSRI be taken at an adequate dose before judging that it has not worked?",
+    "explanation": "Some symptoms improve in 1 to 2 weeks, but the full antidepressant effect takes 4 to 8 weeks, so switching too early mislabels a drug as a failure."
+  },
+  {
+    "id": "NAPLEX-T2-046",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napCounsel",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Dietary supplements",
+    "calculator": true,
+    "options": [
+      "Low blood sugar",
+      "Lower warfarin effect",
+      "Higher bleeding risk",
+      "Raised blood pressure"
+    ],
+    "correct": [
+      2
+    ],
+    "stem": "A patient on warfarin asks about ginkgo for memory. What is the concern?",
+    "explanation": "Ginkgo has antiplatelet effects and has been linked to bleeding, so combining it with warfarin adds bleeding risk."
+  },
+  {
+    "id": "NAPLEX-T2-047",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napCalc",
+    "difficulty": 1,
+    "format": "numeric",
+    "skill": "Drug concentrations",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "50"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "stem": "How many grams of dextrose are in 500 mL of dextrose 10% in water? Type the number only.",
+    "explanation": "10% w/v means 10 g per 100 mL. 500 mL x 10 g/100 mL = 50 g."
+  },
+  {
+    "id": "NAPLEX-T2-048",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napTherapy",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Special populations",
+    "calculator": true,
+    "options": [
+      "Risk of grey baby syndrome",
+      "Risk of growth delay",
+      "Risk of tooth staining",
+      "Risk of Reye syndrome"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "Why is aspirin avoided in a child with influenza or chickenpox?",
+    "explanation": "Aspirin given to children and teenagers during viral illnesses such as influenza and varicella has been linked to Reye syndrome, which causes liver failure and encephalopathy."
+  },
+  {
+    "id": "NAPLEX-T2-049",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napFoundations",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Nonsterile compounding",
+    "calculator": true,
+    "options": [
+      "Mixing a small amount of potent drug evenly",
+      "Dissolving a drug before adding a base",
+      "Reducing particle size of a powder in a mortar",
+      "Removing air bubbles from a cream"
+    ],
+    "correct": [
+      0
+    ],
+    "stem": "What is geometric dilution used for when compounding?",
+    "explanation": "Geometric dilution adds diluent in amounts equal to what is already in the mortar, step by step, so a small quantity of drug is spread evenly. Particle size reduction is trituration."
+  },
+  {
+    "id": "NAPLEX-T2-050",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napOrders",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "REMS",
+    "calculator": true,
+    "options": [
+      "Paliperidone palmitate",
+      "Aripiprazole lauroxil",
+      "Haloperidol decanoate",
+      "Olanzapine pamoate"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "Which long-acting injectable antipsychotic has a REMS requiring a certified facility and 3 hours of observation after each injection?",
+    "explanation": "Olanzapine pamoate can cause post-injection delirium sedation syndrome, so its REMS limits it to certified facilities that observe the patient for at least 3 hours."
+  },
+  {
+    "id": "NAPLEX-T2-051",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napPractice",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Tobacco cessation",
+    "calculator": true,
+    "options": [
+      "7 mg per day",
+      "14 mg per day",
+      "42 mg per day",
+      "21 mg per day"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "Which nicotine patch strength is the usual starting dose for someone who smokes more than 10 cigarettes a day?",
+    "explanation": "Patch labeling starts heavier smokers, more than 10 cigarettes a day, at 21 mg, stepping down to 14 mg and 7 mg. Lighter smokers start at 14 mg."
+  },
+  {
+    "id": "NAPLEX-T2-052",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napManage",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Inventory management",
+    "calculator": true,
+    "options": [
+      "A drug recall notice",
+      "An annual physical inventory",
+      "A first-in, first-out policy",
+      "A reorder point or par level"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "Which system triggers a reorder when stock of an item falls to a set level?",
+    "explanation": "A par level or reorder point keeps stock in line with use by ordering when quantity drops to a set point. First-in, first-out is a rotation practice that reduces expired stock."
+  },
+  {
+    "id": "NAPLEX-T2-053",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napTherapy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Renal dosing",
+    "calculator": true,
+    "options": [
+      "Enoxaparin",
+      "Doxycycline",
+      "Moxifloxacin",
+      "Ceftriaxone"
+    ],
+    "correct": [
+      0
+    ],
+    "stem": "Which drug needs a dose change when creatinine clearance falls below 30 mL/min?",
+    "explanation": "Enoxaparin is renally cleared and builds up in severe renal impairment, so treatment dosing drops to 1 mg/kg once daily. The other three need no renal adjustment."
+  },
+  {
+    "id": "NAPLEX-T2-054",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napCalc",
+    "difficulty": 3,
+    "format": "numeric",
+    "skill": "Osmolarity",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "308"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "stem": "Sodium chloride has a molecular weight of 58.5 and dissociates into 2 particles. What is the ideal osmolarity of 0.9% sodium chloride in mOsmol/L? Round to the nearest whole number. Type the number only.",
+    "explanation": "0.9% is 9 g/L. 9 / 58.5 = 0.1538 mol/L; x 2 particles = 0.3077 osmol/L, or 307.7 mOsmol/L, which rounds to 308."
+  },
+  {
+    "id": "NAPLEX-T2-055",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napHandling",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Stability",
+    "calculator": true,
+    "options": [
+      "Potassium chloride",
+      "Sodium nitroprusside",
+      "Cefazolin",
+      "Heparin"
+    ],
+    "correct": [
+      1
+    ],
+    "stem": "Which IV drug must be protected from light during infusion?",
+    "explanation": "Sodium nitroprusside breaks down in light, so the infusion container is wrapped in an opaque cover. The other three need no light protection while running."
+  },
+  {
+    "id": "NAPLEX-T2-056",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napMonitor",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Safety",
+    "calculator": true,
+    "options": [
+      "Serum calcium",
+      "Uric acid",
+      "Hemoglobin",
+      "Serum potassium"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "Which lab is most important to monitor after starting spironolactone?",
+    "explanation": "Spironolactone blocks aldosterone and causes potassium retention, particularly with ACE inhibitors, ARBs or kidney disease. Potassium and renal function are checked soon after starting."
+  },
+  {
+    "id": "NAPLEX-T2-057",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napCounsel",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Devices",
+    "calculator": true,
+    "options": [
+      "Into the abdomen after a test dose",
+      "Into the buttock only if wheezing",
+      "Into the outer thigh, then call 911",
+      "Into the upper arm, then wait and see"
+    ],
+    "correct": [
+      2
+    ],
+    "stem": "How should an epinephrine auto-injector be used?",
+    "explanation": "The auto-injector goes into the outer thigh, through clothing if needed, and is held in place as directed. Emergency care is still needed because symptoms can return."
+  },
+  {
+    "id": "NAPLEX-T2-058",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napOrders",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Prescription regulations",
+    "calculator": true,
+    "options": [
+      "Methylphenidate",
+      "Tramadol",
+      "Lisdexamfetamine",
+      "Alprazolam",
+      "Oxycodone"
+    ],
+    "correct": [
+      0,
+      2,
+      4
+    ],
+    "stem": "Which drugs are federal Schedule II controlled substances? Select all that apply.",
+    "explanation": "The DEA lists oxycodone, methylphenidate and lisdexamfetamine in Schedule II. Tramadol and alprazolam are Schedule IV."
+  },
+  {
+    "id": "NAPLEX-T2-059",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napTherapy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Errors and omissions",
+    "calculator": true,
+    "options": [
+      "A beta-blocker",
+      "A loop diuretic each morning",
+      "A sulfonylurea",
+      "An ACE inhibitor or ARB"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "A patient with type 2 diabetes and albuminuria takes metformin and amlodipine, with blood pressure at goal. What is most clearly missing?",
+    "explanation": "In diabetes with albuminuria, an ACE inhibitor or ARB is recommended to slow kidney disease even when blood pressure is controlled. An SGLT2 inhibitor is often added as well."
+  },
+  {
+    "id": "NAPLEX-T2-060",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napFoundations",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sterile compounding",
+    "calculator": true,
+    "options": [
+      "Reacts with the infusion pump",
+      "Is lost by sorption into PVC",
+      "Precipitates in normal saline",
+      "Breaks down quickly in light"
+    ],
+    "correct": [
+      1
+    ],
+    "stem": "Nitroglycerin infusions are given with non-PVC tubing mainly because the drug:",
+    "explanation": "Nitroglycerin migrates into polyvinyl chloride, so a patient can receive much less than the ordered dose. Non-PVC sets prevent the loss."
+  },
+  {
+    "id": "NAPLEX-T2-061",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napCalc",
+    "difficulty": 3,
+    "format": "numeric",
+    "skill": "Quantities to compound",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "0.92"
+      ],
+      "tolerance": 0
+    },
+    "stem": "How many grams of hydrocortisone powder must be added to 60 g of 1% hydrocortisone cream to make it 2.5%? Round to two decimal places. Type the number only.",
+    "explanation": "Let x be the grams of pure powder: (0.6 + x) / (60 + x) = 0.025. So 0.6 + x = 1.5 + 0.025x, 0.975x = 0.9 and x = 0.92 g."
+  },
+  {
+    "id": "NAPLEX-T2-062",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napTherapy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Errors and omissions",
+    "calculator": true,
+    "options": [
+      "Trying to taper and stop it",
+      "Switching to esomeprazole",
+      "Adding an H2 blocker at night",
+      "Doubling the dose for safety"
+    ],
+    "correct": [
+      0
+    ],
+    "stem": "A patient has taken omeprazole for 3 years after a course of reflux treatment and has had no symptoms. What should be considered?",
+    "explanation": "Long-term PPI use without an ongoing indication adds risks such as fractures, infections and low magnesium. Deprescribing with a taper is appropriate when the original reason has resolved."
+  },
+  {
+    "id": "NAPLEX-T2-063",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napOrders",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Safety parameters",
+    "calculator": true,
+    "options": [
+      "Uric acid and CBC",
+      "Lipid panel and HbA1c",
+      "Renal function and urinalysis only",
+      "Thyroid, liver and lung tests"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "Which baseline tests are recommended before starting amiodarone?",
+    "explanation": "Amiodarone can cause thyroid dysfunction, hepatotoxicity and pulmonary toxicity, so thyroid and liver tests, a chest x-ray and pulmonary function tests are taken at baseline and followed."
+  },
+  {
+    "id": "NAPLEX-T2-064",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napHandling",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Controlled substances",
+    "calculator": true,
+    "options": [
+      "DEA Form 363",
+      "DEA Form 222",
+      "DEA Form 106",
+      "DEA Form 41"
+    ],
+    "correct": [
+      2
+    ],
+    "stem": "On which DEA form does a pharmacy report the theft or significant loss of controlled substances?",
+    "explanation": "Theft or significant loss is reported to the DEA on Form 106, after notifying the DEA field office. Form 41 documents destruction of controlled substances."
+  },
+  {
+    "id": "NAPLEX-T2-065",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napMonitor",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Medication history",
+    "calculator": true,
+    "options": [
+      "Do you take aspirin, yes or no?",
+      "Is that your full list of prescriptions?",
+      "You don't take any vitamins, do you?",
+      "What else do you take for your health?"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "Which question best uncovers a patient's use of nonprescription products?",
+    "explanation": "An open-ended question invites the patient to mention vitamins, herbals and OTC drugs. Leading or closed questions tend to get a quick no."
+  },
+  {
+    "id": "NAPLEX-T2-066",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napCounsel",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Self-monitoring",
+    "calculator": true,
+    "options": [
+      "Measure right after coffee",
+      "Keep the arm supported at heart level",
+      "Sit quietly for 5 minutes first",
+      "Talk during the reading",
+      "Use a cuff that fits the arm"
+    ],
+    "correct": [
+      1,
+      2,
+      4
+    ],
+    "stem": "Which steps give an accurate home blood pressure reading? Select all that apply.",
+    "explanation": "Resting first, sitting with back supported and feet flat, the arm supported at heart level and the right cuff size give a reliable reading. Caffeine, exercise and talking raise it."
+  },
+  {
+    "id": "NAPLEX-T2-067",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napFoundations",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Sterile compounding",
+    "calculator": true,
+    "options": [
+      "Sodium chloride 0.45%",
+      "Sodium chloride 0.9%",
+      "Lactated Ringer's solution",
+      "Dextrose 5% in water"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "Conventional amphotericin B deoxycholate must be diluted in which fluid?",
+    "explanation": "Electrolyte solutions make amphotericin B deoxycholate precipitate, so the labeling calls for dextrose 5% in water. Lines are flushed with dextrose, not saline."
+  },
+  {
+    "id": "NAPLEX-T2-068",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napTherapy",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Adverse drug reactions",
+    "calculator": true,
+    "options": [
+      "Clindamycin",
+      "Azithromycin",
+      "Cefdinir",
+      "Gentamicin"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "Which drug is most associated with ototoxicity and nephrotoxicity?",
+    "explanation": "Aminoglycosides such as gentamicin can damage the kidney and the inner ear, so levels and renal function are monitored. Clindamycin is linked with C. difficile infection."
+  },
+  {
+    "id": "NAPLEX-T2-069",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napOrders",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Biosimilars",
+    "calculator": true,
+    "options": [
+      "It marks the product as interchangeable",
+      "It marks a product for children only",
+      "It names one distinct biologic product",
+      "It marks a high-concentration form"
+    ],
+    "correct": [
+      2
+    ],
+    "stem": "What does a four-letter suffix, such as -aaty, added to a biologic's nonproprietary name show?",
+    "explanation": "FDA naming adds a meaningless four-letter suffix so each biologic product, reference or biosimilar, can be told apart in prescribing and safety reporting. It says nothing about interchangeability."
+  },
+  {
+    "id": "NAPLEX-T2-070",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napPractice",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ethics",
+    "calculator": true,
+    "options": [
+      "Beneficence",
+      "Nonmaleficence",
+      "Justice",
+      "Autonomy"
+    ],
+    "correct": [
+      2
+    ],
+    "stem": "Which ethical principle concerns the fair distribution of scarce resources?",
+    "explanation": "Justice is about fairness in who receives care and resources. Beneficence is doing good, nonmaleficence avoiding harm and autonomy respecting the patient's choices."
+  },
+  {
+    "id": "NAPLEX-T2-071",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napManage",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Delegation",
+    "calculator": true,
+    "options": [
+      "Counting tablets for a refill",
+      "Entering patient demographics",
+      "Restocking the shelves after delivery",
+      "Counseling on a new prescription"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "Which task is the pharmacist's own and not delegated to a pharmacy technician?",
+    "explanation": "Clinical judgment tasks such as counseling and final verification belong to the pharmacist. Technicians may count, enter data and manage stock under supervision, as state law allows."
+  },
+  {
+    "id": "NAPLEX-T2-072",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napCalc",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Nutrition",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "500"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "stem": "How many kilocalories are in 250 mL of 20% intravenous lipid emulsion, which provides 2 kcal/mL? Type the number only.",
+    "explanation": "250 mL x 2 kcal/mL = 500 kcal. The 2 kcal/mL figure includes the glycerol and phospholipid in the emulsion."
+  },
+  {
+    "id": "NAPLEX-T2-073",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napTherapy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Adverse drug reactions",
+    "calculator": true,
+    "options": [
+      "Hypoglycemia",
+      "Hyperkalemia",
+      "Hyponatremia",
+      "Hypercalcemia"
+    ],
+    "correct": [
+      2
+    ],
+    "stem": "Which adverse effect is linked to carbamazepine and oxcarbazepine?",
+    "explanation": "Both drugs can cause SIADH-like hyponatremia, more often with oxcarbazepine and in older adults. Sodium is checked when symptoms appear or during long-term use."
+  },
+  {
+    "id": "NAPLEX-T2-074",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napFoundations",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Drug development",
+    "calculator": true,
+    "options": [
+      "A study in animal models only",
+      "A large pre-approval efficacy trial",
+      "A study done after FDA approval",
+      "The first study in human subjects"
+    ],
+    "correct": [
+      2
+    ],
+    "stem": "What is a phase 4 study?",
+    "explanation": "Phase 4 studies take place after marketing approval to look at long-term safety, new populations or uses. First-in-human studies are phase 1, and animal work is preclinical."
+  },
+  {
+    "id": "NAPLEX-T2-075",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napHandling",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sharps",
+    "calculator": true,
+    "options": [
+      "In a puncture-resistant container",
+      "In the household plastics recycling bin",
+      "Recapped and put in the trash",
+      "Flushed down the toilet"
+    ],
+    "correct": [
+      0
+    ],
+    "stem": "How should a patient dispose of used insulin pen needles at home?",
+    "explanation": "Needles go into an FDA-cleared sharps container or, if none is available, a heavy-duty plastic container with a tight lid, disposed of as local rules allow. Recapping risks needlesticks."
+  },
+  {
+    "id": "NAPLEX-T2-076",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napMonitor",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Health screenings",
+    "calculator": true,
+    "options": [
+      "CHA2DS2-VASc",
+      "PHQ-9",
+      "CURB-65",
+      "HAS-BLED"
+    ],
+    "correct": [
+      1
+    ],
+    "stem": "Which tool screens for depression?",
+    "explanation": "The Patient Health Questionnaire-9 screens for and grades depression. CHA2DS2-VASc and HAS-BLED estimate stroke and bleeding risk in atrial fibrillation, and CURB-65 pneumonia severity."
+  },
+  {
+    "id": "NAPLEX-T2-077",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napCounsel",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Disease state management",
+    "calculator": true,
+    "options": [
+      "Take 15 g of fast-acting carbohydrate",
+      "Eat a large protein meal",
+      "Inject the next insulin dose",
+      "Wait an hour and then recheck the level"
+    ],
+    "correct": [
+      0
+    ],
+    "stem": "A patient has a blood glucose of 60 mg/dL and is awake. What should be done first?",
+    "explanation": "The rule of 15: take 15 g of fast-acting carbohydrate such as glucose tablets or juice, recheck in 15 minutes and repeat if still below 70 mg/dL."
+  },
+  {
+    "id": "NAPLEX-T2-078",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napOrders",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Drug shortages",
+    "calculator": true,
+    "options": [
+      "Bumetanide",
+      "Acetazolamide",
+      "Hydrochlorothiazide",
+      "Spironolactone"
+    ],
+    "correct": [
+      0
+    ],
+    "stem": "During a shortage of IV furosemide, which drug is a reasonable IV loop diuretic alternative?",
+    "explanation": "Bumetanide is a loop diuretic available IV; about 1 mg is commonly taken as equal to 40 mg of IV furosemide. The others are different diuretic classes."
+  },
+  {
+    "id": "NAPLEX-T2-079",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napTherapy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Adverse drug reactions",
+    "calculator": true,
+    "options": [
+      "Icosapent ethyl",
+      "Gemfibrozil",
+      "Fenofibrate",
+      "Ezetimibe"
+    ],
+    "correct": [
+      1
+    ],
+    "stem": "Which lipid-lowering drug most raises the risk of myopathy when combined with a statin?",
+    "explanation": "Gemfibrozil interferes with statin glucuronidation and greatly raises the risk of myopathy and rhabdomyolysis. Fenofibrate is the preferred fibrate when one is combined with a statin."
+  },
+  {
+    "id": "NAPLEX-T2-080",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napCalc",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Biostatistics",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "40"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "stem": "The event rate is 10% with placebo and 6% with a new drug. What is the relative risk reduction, as a percentage? Type the number only.",
+    "explanation": "Relative risk = 6% / 10% = 0.6, and RRR = 1 - 0.6 = 0.4, or 40%. The absolute risk reduction is only 4%."
+  },
+  {
+    "id": "NAPLEX-T2-081",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napFoundations",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Biostatistics",
+    "calculator": true,
+    "options": [
+      "Finding a difference that is not real",
+      "Losing patients to follow-up",
+      "Missing a difference that really exists",
+      "Choosing the wrong statistical test"
+    ],
+    "correct": [
+      0
+    ],
+    "stem": "What is a type I error?",
+    "explanation": "A type I error rejects a true null hypothesis, a false positive, and its probability is alpha. Missing a real difference is a type II error, linked to power."
+  },
+  {
+    "id": "NAPLEX-T2-082",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napTherapy",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Toxicology",
+    "calculator": true,
+    "options": [
+      "Dry, flushed skin",
+      "Heavy sweating",
+      "Pinpoint pupils",
+      "Urinary retention",
+      "Dilated pupils"
+    ],
+    "correct": [
+      0,
+      3,
+      4
+    ],
+    "stem": "Which findings fit anticholinergic toxicity? Select all that apply.",
+    "explanation": "Anticholinergic toxicity is hot, dry, red, blind and full: hyperthermia, dry flushed skin, mydriasis and urinary retention. Sweating suggests a cholinergic or sympathomimetic picture, and pinpoint pupils suggest opioids."
+  },
+  {
+    "id": "NAPLEX-T2-083",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napOrders",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Dosing regimens",
+    "calculator": true,
+    "options": [
+      "5 mg twice daily",
+      "2.5 mg twice daily",
+      "5 mg once daily",
+      "10 mg twice daily"
+    ],
+    "correct": [
+      1
+    ],
+    "stem": "An 82-year-old patient with atrial fibrillation weighs 58 kg and has a serum creatinine of 1.0 mg/dL. Which apixaban dose fits the labeling?",
+    "explanation": "The dose drops to 2.5 mg twice daily when two of age 80 or older, weight 60 kg or less and serum creatinine 1.5 mg/dL or more are present. This patient meets the age and weight criteria."
+  },
+  {
+    "id": "NAPLEX-T2-084",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napHandling",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Stability",
+    "calculator": true,
+    "options": [
+      "In a weekly pill organizer",
+      "Out of the bottle in a bag",
+      "In the refrigerator",
+      "In the original bottle"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "How should dabigatran capsules be stored?",
+    "explanation": "Dabigatran capsules break down with moisture, so they stay in the original bottle or blister and are used within the labeled time once the bottle is opened."
+  },
+  {
+    "id": "NAPLEX-T2-085",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napMonitor",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Health assessments",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "4"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "stem": "A 72-year-old woman with atrial fibrillation has hypertension and diabetes, and no other risk factors. What is her CHA2DS2-VASc score? Type the number only.",
+    "explanation": "Age 65 to 74 scores 1, female sex 1, hypertension 1 and diabetes 1, for a total of 4. A score this high favors anticoagulation."
+  },
+  {
+    "id": "NAPLEX-T2-086",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napCounsel",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Medication use",
+    "calculator": true,
+    "options": [
+      "Folding a used patch",
+      "Heating pads over the patch",
+      "Rotating application sites",
+      "Showering with the patch on"
+    ],
+    "correct": [
+      1
+    ],
+    "stem": "What should a patient using a fentanyl patch avoid?",
+    "explanation": "Heat raises fentanyl absorption and can cause overdose. Used patches are folded sticky sides together and disposed of as labeled."
+  },
+  {
+    "id": "NAPLEX-T2-087",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napCalc",
+    "difficulty": 3,
+    "format": "numeric",
+    "skill": "Pharmacokinetic parameters",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "900"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "stem": "A drug has a clearance of 5 L/h. What dose, in mg, given every 12 hours keeps an average steady-state concentration of 15 mg/L? Assume complete bioavailability. Type the number only.",
+    "explanation": "Dose = CL x Css,avg x tau = 5 L/h x 15 mg/L x 12 h = 900 mg."
+  },
+  {
+    "id": "NAPLEX-T2-088",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napTherapy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Toxicology",
+    "calculator": true,
+    "options": [
+      "Fomepizole",
+      "Physostigmine",
+      "Atropine",
+      "Deferoxamine"
+    ],
+    "correct": [
+      0
+    ],
+    "stem": "Which antidote is used for ethylene glycol poisoning?",
+    "explanation": "Fomepizole blocks alcohol dehydrogenase, stopping the formation of toxic metabolites from ethylene glycol and methanol. Deferoxamine treats iron poisoning."
+  },
+  {
+    "id": "NAPLEX-T2-089",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napFoundations",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Research design",
+    "calculator": true,
+    "options": [
+      "Hazard ratio",
+      "Number needed to treat",
+      "Relative risk",
+      "Odds ratio"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "Which measure of association does a case-control study report?",
+    "explanation": "A case-control study starts from outcome status, so incidence cannot be measured and the odds ratio is reported. Relative risk needs a cohort or trial that follows exposed people forward."
+  },
+  {
+    "id": "NAPLEX-T2-090",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napOrders",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Dosage forms",
+    "calculator": true,
+    "options": [
+      "Opioid naive",
+      "Younger than 2 years",
+      "Opioid tolerant",
+      "In acute postoperative pain"
+    ],
+    "correct": [
+      2
+    ],
+    "stem": "Fentanyl transdermal patches are appropriate only for patients who are:",
+    "explanation": "Transdermal fentanyl can cause fatal respiratory depression in people who are not opioid tolerant, and it is not for acute or short-term pain."
+  },
+  {
+    "id": "NAPLEX-T2-091",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napPractice",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Error reporting",
+    "calculator": true,
+    "options": [
+      "Fix it and tell no one",
+      "Report it as a near miss",
+      "Report it only if it recurs",
+      "Blame the technician involved"
+    ],
+    "correct": [
+      1
+    ],
+    "stem": "A wrong-strength prescription is caught at final check before it reaches the patient. What should happen?",
+    "explanation": "Near misses show weak points in the system before anyone is harmed, so they are documented and reported in a just-culture system, internally and, where appropriate, to external programs."
+  },
+  {
+    "id": "NAPLEX-T2-092",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napManage",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Error prevention",
+    "calculator": true,
+    "options": [
+      "1.0 can be misread as 10",
+      "1.0 mg is not a real strength",
+      "1 mg prints more clearly",
+      "1.0 means an extended release"
+    ],
+    "correct": [
+      0
+    ],
+    "stem": "Why should a dose be written as 1 mg rather than 1.0 mg?",
+    "explanation": "A trailing zero after a decimal point can be missed, so 1.0 mg is read as 10 mg, a tenfold overdose. A leading zero is always used before a decimal, as in 0.5 mg."
+  },
+  {
+    "id": "NAPLEX-T2-093",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napTherapy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Toxicology",
+    "calculator": true,
+    "options": [
+      "Deferoxamine",
+      "Dimercaprol",
+      "Succimer",
+      "Calcium EDTA"
+    ],
+    "correct": [
+      0
+    ],
+    "stem": "Which antidote is used for serious iron poisoning?",
+    "explanation": "Deferoxamine chelates free iron, which is then excreted in the urine. Dimercaprol, succimer and calcium EDTA are chelators used for lead and other heavy metals."
+  },
+  {
+    "id": "NAPLEX-T2-094",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napHandling",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Vaccine storage",
+    "calculator": true,
+    "options": [
+      "Use a digital data logger",
+      "Check minimum and maximum temperatures each workday",
+      "Keep a backup temperature device",
+      "Use a dormitory-style fridge-freezer",
+      "Store vaccines in the door shelves"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "stem": "Which are recommended practices for monitoring refrigerated vaccines? Select all that apply.",
+    "explanation": "CDC guidance calls for a digital data logger, a backup monitoring device and a daily check of the minimum and maximum readings. Door shelves and dormitory-style units have unstable temperatures."
+  },
+  {
+    "id": "NAPLEX-T2-095",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napMonitor",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Health assessments",
+    "calculator": true,
+    "options": [
+      "HAS-BLED",
+      "Child-Pugh",
+      "CHA2DS2-VASc",
+      "PHQ-9"
+    ],
+    "correct": [
+      0
+    ],
+    "stem": "Which score estimates bleeding risk in a patient with atrial fibrillation on anticoagulation?",
+    "explanation": "HAS-BLED flags modifiable bleeding risks such as uncontrolled hypertension, labile INR and alcohol. CHA2DS2-VASc estimates stroke risk, and Child-Pugh grades liver disease."
+  },
+  {
+    "id": "NAPLEX-T2-096",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napCounsel",
+    "difficulty": 2,
+    "format": "order",
+    "skill": "Devices",
+    "calculator": true,
+    "options": [
+      "Prime with 2 units",
+      "Attach a new needle",
+      "Dial the prescribed dose",
+      "Inject and hold the needle in",
+      "Remove and discard the needle"
+    ],
+    "correct": [
+      1,
+      0,
+      2,
+      3,
+      4
+    ],
+    "stem": "Put the steps for giving a dose with an insulin pen in order.",
+    "explanation": "A new needle is attached, the pen is primed to clear air and check flow, the dose is dialed, injected and held, then the needle is removed and placed in a sharps container."
+  },
+  {
+    "id": "NAPLEX-T2-097",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napCalc",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Quantity to dispense",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "3"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "stem": "A patient injects 30 units of insulin glargine daily from 3 mL pens of 100 units/mL. Ignoring priming doses, how many pens are needed for 30 days? Type the number only.",
+    "explanation": "30 units x 30 days = 900 units. Each pen holds 3 mL x 100 units/mL = 300 units, so 900 / 300 = 3 pens."
+  },
+  {
+    "id": "NAPLEX-T2-098",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napFoundations",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Drug information",
+    "calculator": true,
+    "options": [
+      "A report of a randomized controlled trial",
+      "A review article on the same trial",
+      "A pharmacotherapy textbook chapter",
+      "A monograph in a drug information compendium"
+    ],
+    "correct": [
+      0
+    ],
+    "stem": "Which of these is a primary literature source?",
+    "explanation": "Primary literature reports original research. Review articles and indexing services are secondary sources, and textbooks and compendia are tertiary."
+  },
+  {
+    "id": "NAPLEX-T2-099",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napOrders",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Drug classes",
+    "calculator": true,
+    "options": [
+      "Tamsulosin",
+      "Finasteride",
+      "Sildenafil",
+      "Oxybutynin"
+    ],
+    "correct": [
+      1
+    ],
+    "stem": "Which drug is a 5-alpha-reductase inhibitor?",
+    "explanation": "Finasteride blocks the conversion of testosterone to dihydrotestosterone and shrinks the prostate over months. Tamsulosin is an alpha-1 blocker that relaxes prostate smooth muscle."
+  },
+  {
+    "id": "NAPLEX-T2-100",
+    "section": "naplex",
+    "test": 2,
+    "module": 1,
+    "domain": "napTherapy",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Adherence",
+    "calculator": true,
+    "options": [
+      "Body mass index",
+      "Morphine milligram equivalents",
+      "Number needed to treat",
+      "Proportion of days covered"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "Which measure estimates medication adherence from pharmacy refill records?",
+    "explanation": "The proportion of days covered counts the days in a period for which the patient had the drug on hand. A value of 80% or more is the usual threshold for adherence."
+  },
+  {
+    "id": "NAPLEX-D-001",
+    "section": "naplex",
+    "test": 0,
+    "module": 1,
+    "domain": "napFoundations",
+    "difficulty": 2,
+    "format": "order",
+    "skill": "Drug development",
+    "calculator": true,
+    "options": [
+      "Phase 2 trial",
+      "Phase 1 trial",
+      "Investigational new drug application filed",
+      "Phase 3 trial",
+      "New drug application reviewed by the FDA",
+      "Preclinical laboratory and animal studies"
+    ],
+    "correct": [
+      5,
+      2,
+      1,
+      0,
+      3,
+      4
+    ],
+    "stem": "Place these steps of US drug development in order, from first to last.",
+    "explanation": "Preclinical work supports an IND, which allows human testing. Phases 1, 2 and 3 move from safety to dose finding to large efficacy trials, and the results go to the FDA in a new drug application."
+  },
+  {
+    "id": "NAPLEX-D-002",
+    "section": "naplex",
+    "test": 0,
+    "module": 1,
+    "domain": "napFoundations",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Biostatistics",
+    "calculator": true,
+    "options": [
+      "The drug cut the risk by a significant 18%",
+      "The interval is too narrow to draw any conclusion",
+      "The drug significantly raised the risk",
+      "The difference is not statistically significant"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "A trial reports a relative risk of 0.82 with a 95% confidence interval of 0.64 to 1.05. What can be concluded?",
+    "explanation": "For a ratio, an interval that includes 1 means no statistically significant difference at that level. The point estimate suggests 18% lower risk, but chance has not been ruled out."
+  },
+  {
+    "id": "NAPLEX-D-003",
+    "section": "naplex",
+    "test": 0,
+    "module": 1,
+    "domain": "napFoundations",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Pharmacology",
+    "calculator": true,
+    "options": [
+      "Dihydrofolate reductase",
+      "Topoisomerase II",
+      "Thymidylate kinase",
+      "Xanthine oxidase"
+    ],
+    "correct": [
+      0
+    ],
+    "stem": "Which enzyme does methotrexate inhibit?",
+    "explanation": "Methotrexate binds dihydrofolate reductase and blocks the regeneration of tetrahydrofolate, which cells need to make purines and thymidine. Xanthine oxidase is the target of allopurinol."
+  },
+  {
+    "id": "NAPLEX-D-004",
+    "section": "naplex",
+    "test": 0,
+    "module": 1,
+    "domain": "napCalc",
+    "difficulty": 1,
+    "format": "numeric",
+    "skill": "Patient parameters",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "300"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "stem": "A child weighing 15 kg is prescribed a drug at 40 mg/kg/day divided every 12 hours. How many mg are given in each dose? Type the number only.",
+    "explanation": "40 mg/kg/day x 15 kg = 600 mg a day; divided into two doses = 300 mg per dose."
+  },
+  {
+    "id": "NAPLEX-D-005",
+    "section": "naplex",
+    "test": 0,
+    "module": 1,
+    "domain": "napCalc",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Patient parameters",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "1.79"
+      ],
+      "tolerance": 0
+    },
+    "stem": "Using the Mosteller formula, what is the body surface area in m2 of a patient who is 170 cm tall and weighs 68 kg? Round to two decimal places. Type the number only.",
+    "explanation": "BSA = square root of (height in cm x weight in kg / 3600) = square root of (170 x 68 / 3600) = square root of 3.211 = 1.79 m2."
+  },
+  {
+    "id": "NAPLEX-D-006",
+    "section": "naplex",
+    "test": 0,
+    "module": 1,
+    "domain": "napCalc",
+    "difficulty": 1,
+    "format": "numeric",
+    "skill": "Laboratory measures",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "12"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "stem": "A patient's sodium is 140, chloride 104 and bicarbonate 24 mEq/L. What is the anion gap in mEq/L? Type the number only.",
+    "explanation": "Anion gap = Na - (Cl + HCO3) = 140 - (104 + 24) = 12 mEq/L."
+  },
+  {
+    "id": "NAPLEX-D-007",
+    "section": "naplex",
+    "test": 0,
+    "module": 1,
+    "domain": "napCalc",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Laboratory measures",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "9.2"
+      ],
+      "tolerance": 0
+    },
+    "stem": "A patient's serum calcium is 8.0 mg/dL and albumin is 2.5 g/dL. Using a normal albumin of 4, what is the corrected calcium in mg/dL? Round to one decimal place. Type the number only.",
+    "explanation": "Corrected Ca = measured Ca + 0.8 x (4 - albumin) = 8.0 + 0.8 x 1.5 = 9.2 mg/dL."
+  },
+  {
+    "id": "NAPLEX-D-008",
+    "section": "naplex",
+    "test": 0,
+    "module": 1,
+    "domain": "napCalc",
+    "difficulty": 2,
+    "format": "numeric",
+    "skill": "Drug concentrations",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "15"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "stem": "Concentrated sodium chloride 23.4% contains 4 mEq of sodium per mL. How many mL provide 60 mEq of sodium? Type the number only.",
+    "explanation": "60 mEq / 4 mEq per mL = 15 mL."
+  },
+  {
+    "id": "NAPLEX-D-009",
+    "section": "naplex",
+    "test": 0,
+    "module": 1,
+    "domain": "napCalc",
+    "difficulty": 1,
+    "format": "numeric",
+    "skill": "Quantity to dispense",
+    "calculator": true,
+    "numeric": {
+      "answers": [
+        "25"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    },
+    "stem": "An inhaler holds 200 actuations. The patient uses 2 puffs four times a day. How many days will the inhaler last? Type the number only.",
+    "explanation": "2 puffs x 4 times = 8 puffs a day. 200 / 8 = 25 days."
+  },
+  {
+    "id": "NAPLEX-D-010",
+    "section": "naplex",
+    "test": 0,
+    "module": 1,
+    "domain": "napOrders",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Drug classes",
+    "calculator": true,
+    "options": [
+      "Mirtazapine",
+      "Trazodone",
+      "Venlafaxine",
+      "Escitalopram"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "Which antidepressant is a selective serotonin reuptake inhibitor?",
+    "explanation": "Escitalopram is an SSRI. Venlafaxine is an SNRI, mirtazapine an alpha-2 antagonist and trazodone a serotonin antagonist and reuptake inhibitor."
+  },
+  {
+    "id": "NAPLEX-D-011",
+    "section": "naplex",
+    "test": 0,
+    "module": 1,
+    "domain": "napOrders",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Boxed warnings",
+    "calculator": true,
+    "options": [
+      "Liraglutide",
+      "Metformin",
+      "Insulin glargine",
+      "Glipizide"
+    ],
+    "correct": [
+      0
+    ],
+    "stem": "Which drug's labeling has a boxed warning about thyroid C-cell tumors?",
+    "explanation": "Long-acting GLP-1 receptor agonists such as liraglutide are contraindicated with a personal or family history of medullary thyroid carcinoma or MEN 2, because they caused C-cell tumors in rodents."
+  },
+  {
+    "id": "NAPLEX-D-012",
+    "section": "naplex",
+    "test": 0,
+    "module": 1,
+    "domain": "napOrders",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Biosimilars",
+    "calculator": true,
+    "options": [
+      "Atorvastatin",
+      "Adalimumab",
+      "Filgrastim",
+      "Insulin glargine",
+      "Levothyroxine"
+    ],
+    "correct": [
+      1,
+      2,
+      3
+    ],
+    "stem": "Which of these products are biologics? Select all that apply.",
+    "explanation": "Monoclonal antibodies, growth factors and, since 2020, insulins are regulated as biological products, which is why biosimilar insulins exist. Atorvastatin and levothyroxine are small molecules approved as drugs."
+  },
+  {
+    "id": "NAPLEX-D-013",
+    "section": "naplex",
+    "test": 0,
+    "module": 1,
+    "domain": "napHandling",
+    "difficulty": 1,
+    "format": "order",
+    "skill": "Disposal",
+    "calculator": true,
+    "options": [
+      "Mix with an unappealing substance and trash it",
+      "Flush it, if it is on the FDA flush list",
+      "Drug take-back site or mail-back envelope"
+    ],
+    "correct": [
+      2,
+      1,
+      0
+    ],
+    "stem": "Put the FDA's options for disposing of an unused medicine in order of preference, from first to last.",
+    "explanation": "FDA guidance is take-back first; if none is available, flush only drugs on the flush list; otherwise mix the drug with dirt, cat litter or used coffee grounds, seal it in a bag and put it in the trash."
+  },
+  {
+    "id": "NAPLEX-D-014",
+    "section": "naplex",
+    "test": 0,
+    "module": 1,
+    "domain": "napHandling",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Storage",
+    "calculator": true,
+    "options": [
+      "20°C to 25°C",
+      "2°C to 8°C",
+      "25°C to 30°C",
+      "15°C to 30°C"
+    ],
+    "correct": [
+      0
+    ],
+    "stem": "What is controlled room temperature for drug storage?",
+    "explanation": "Controlled room temperature is 20°C to 25°C (68°F to 77°F), with brief excursions to 15°C to 30°C allowed. 2°C to 8°C is refrigeration."
+  },
+  {
+    "id": "NAPLEX-D-015",
+    "section": "naplex",
+    "test": 0,
+    "module": 1,
+    "domain": "napHandling",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hazardous drugs",
+    "calculator": true,
+    "options": [
+      "Cefazolin",
+      "Ondansetron",
+      "Cyclophosphamide",
+      "Famotidine"
+    ],
+    "correct": [
+      2
+    ],
+    "stem": "Which drug is handled as a hazardous drug when compounding?",
+    "explanation": "Cyclophosphamide is an antineoplastic on the NIOSH hazardous drug list and is prepared with containment precautions. The others are not hazardous drugs."
+  },
+  {
+    "id": "NAPLEX-D-016",
+    "section": "naplex",
+    "test": 0,
+    "module": 1,
+    "domain": "napHandling",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Vaccine storage",
+    "calculator": true,
+    "options": [
+      "Middle shelves, away from walls",
+      "Against the cooling vent at the back",
+      "On the floor of the unit",
+      "In the door shelves"
+    ],
+    "correct": [
+      0
+    ],
+    "stem": "Where in a vaccine refrigerator should vaccines be placed?",
+    "explanation": "The middle of the unit has the most stable temperature. Doors warm each time they open, and vaccines near walls, vents or the floor can freeze or warm."
+  },
+  {
+    "id": "NAPLEX-D-017",
+    "section": "naplex",
+    "test": 0,
+    "module": 1,
+    "domain": "napHandling",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Controlled substances",
+    "calculator": true,
+    "options": [
+      "Schedule IV",
+      "Schedule V",
+      "Schedule III",
+      "Schedule II"
+    ],
+    "correct": [
+      1
+    ],
+    "stem": "In which federal schedule is pregabalin listed?",
+    "explanation": "The DEA lists pregabalin, like lacosamide and brivaracetam, in Schedule V. Gabapentin is not federally scheduled."
+  },
+  {
+    "id": "NAPLEX-D-018",
+    "section": "naplex",
+    "test": 0,
+    "module": 1,
+    "domain": "napHandling",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Stability",
+    "calculator": true,
+    "options": [
+      "30 days",
+      "7 days",
+      "14 days",
+      "90 days"
+    ],
+    "correct": [
+      2
+    ],
+    "stem": "Once reconstituted, how long is amoxicillin oral suspension used before the rest is discarded?",
+    "explanation": "Reconstituted amoxicillin suspension is discarded after 14 days; refrigeration is preferred but not required. Some other antibiotics, such as amoxicillin-clavulanate, have a 10-day limit."
+  },
+  {
+    "id": "NAPLEX-D-019",
+    "section": "naplex",
+    "test": 0,
+    "module": 1,
+    "domain": "napMonitor",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Safety",
+    "calculator": true,
+    "options": [
+      "Ferritin",
+      "Uric acid",
+      "Serum amylase",
+      "TSH"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "Which test is repeated periodically during long-term amiodarone therapy?",
+    "explanation": "Amiodarone contains iodine and can cause hypothyroidism or hyperthyroidism, so TSH is checked about every 6 months along with liver tests."
+  },
+  {
+    "id": "NAPLEX-D-020",
+    "section": "naplex",
+    "test": 0,
+    "module": 1,
+    "domain": "napMonitor",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Safety",
+    "calculator": true,
+    "options": [
+      "Lipase and amylase every month",
+      "Liver enzymes and platelets",
+      "TSH and free T4",
+      "Potassium and magnesium"
+    ],
+    "correct": [
+      1
+    ],
+    "stem": "Which labs are monitored for a patient on valproic acid?",
+    "explanation": "Valproate carries boxed warnings for hepatotoxicity and pancreatitis and can cause thrombocytopenia, so liver tests and platelets are monitored. Pancreatitis is a clinical diagnosis checked when symptoms appear."
+  },
+  {
+    "id": "NAPLEX-D-021",
+    "section": "naplex",
+    "test": 0,
+    "module": 1,
+    "domain": "napMonitor",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Effectiveness",
+    "calculator": true,
+    "options": [
+      "About 1 year",
+      "About 1 week",
+      "About 3 months",
+      "About 2 weeks"
+    ],
+    "correct": [
+      2
+    ],
+    "stem": "About how long a period of blood glucose does the A1C reflect?",
+    "explanation": "A1C reflects glycation of hemoglobin over the life of red cells, roughly the past 2 to 3 months, so it is rechecked about every 3 months after a change."
+  },
+  {
+    "id": "NAPLEX-D-022",
+    "section": "naplex",
+    "test": 0,
+    "module": 1,
+    "domain": "napMonitor",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Safety",
+    "calculator": true,
+    "options": [
+      "Continue the same dose",
+      "Hold a dose and recheck",
+      "Give prothrombin complex",
+      "Give IV vitamin K now"
+    ],
+    "correct": [
+      1
+    ],
+    "stem": "A patient on warfarin has an INR of 4.5 and no bleeding. What is usually appropriate?",
+    "explanation": "For an INR above range but below 10 without bleeding, holding one or two doses and resuming at a lower dose is usual; vitamin K is not routinely given. Reversal agents are for major bleeding."
+  },
+  {
+    "id": "NAPLEX-D-023",
+    "section": "naplex",
+    "test": 0,
+    "module": 1,
+    "domain": "napMonitor",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Effectiveness",
+    "calculator": true,
+    "options": [
+      "Normal activity without symptoms",
+      "Using albuterol 4 days a week",
+      "No night waking in a month",
+      "Peak flow above 90% of best"
+    ],
+    "correct": [
+      1
+    ],
+    "stem": "Which finding suggests a patient's asthma is not well controlled?",
+    "explanation": "Needing a short-acting beta-agonist for symptoms on more than 2 days a week is a sign of poor control and a reason to step up controller therapy."
+  },
+  {
+    "id": "NAPLEX-D-024",
+    "section": "naplex",
+    "test": 0,
+    "module": 1,
+    "domain": "napMonitor",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Allergy history",
+    "calculator": true,
+    "options": [
+      "Hives and wheezing",
+      "Nausea after doses",
+      "A headache",
+      "Mild diarrhea"
+    ],
+    "correct": [
+      0
+    ],
+    "stem": "Which reaction to amoxicillin suggests a true allergy rather than an intolerance?",
+    "explanation": "Hives, wheezing, angioedema or anaphylaxis suggest an immune-mediated reaction. Gastrointestinal upset and headache are side effects, not allergy, and should be recorded as intolerances."
+  },
+  {
+    "id": "NAPLEX-D-025",
+    "section": "naplex",
+    "test": 0,
+    "module": 1,
+    "domain": "napCounsel",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Medication use",
+    "calculator": true,
+    "options": [
+      "About 1 hour",
+      "About 5 minutes",
+      "About 10 seconds",
+      "About 4 hours"
+    ],
+    "correct": [
+      1
+    ],
+    "stem": "A patient uses two different eye drops at the same time of day. How long should they wait between them?",
+    "explanation": "Waiting about 5 minutes lets the first drop be absorbed before the second washes it out. Ointments go last."
+  },
+  {
+    "id": "NAPLEX-D-026",
+    "section": "naplex",
+    "test": 0,
+    "module": 1,
+    "domain": "napCounsel",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "OTC medications",
+    "calculator": true,
+    "options": [
+      "Acetaminophen",
+      "Aspirin",
+      "Ibuprofen",
+      "Naproxen"
+    ],
+    "correct": [
+      0
+    ],
+    "stem": "Which OTC analgesic is preferred for a patient with a history of peptic ulcer?",
+    "explanation": "NSAIDs and aspirin can cause gastrointestinal ulcers and bleeding. Acetaminophen does not irritate the stomach lining at usual doses."
+  },
+  {
+    "id": "NAPLEX-D-027",
+    "section": "naplex",
+    "test": 0,
+    "module": 1,
+    "domain": "napCounsel",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Dietary supplements",
+    "calculator": true,
+    "options": [
+      "On an empty stomach",
+      "Only at bedtime",
+      "With a dose of iron",
+      "With food"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "How should calcium carbonate supplements be taken?",
+    "explanation": "Calcium carbonate needs stomach acid to dissolve, so it absorbs best with meals. Calcium citrate can be taken with or without food."
+  },
+  {
+    "id": "NAPLEX-D-028",
+    "section": "naplex",
+    "test": 0,
+    "module": 1,
+    "domain": "napCounsel",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Devices",
+    "calculator": true,
+    "options": [
+      "Breathe in slowly and gently",
+      "Use it with a spacer",
+      "Shake it well before use",
+      "Breathe in fast and deep"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "How does using a dry powder inhaler differ from using a metered-dose inhaler?",
+    "explanation": "A dry powder inhaler relies on a quick, forceful breath to pull the powder out. It is not shaken, and the patient breathes out away from it so moisture does not reach the powder."
+  },
+  {
+    "id": "NAPLEX-D-029",
+    "section": "naplex",
+    "test": 0,
+    "module": 1,
+    "domain": "napCounsel",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Medication use",
+    "calculator": true,
+    "options": [
+      "Take it with milk to reduce upset",
+      "Separate the doses",
+      "Take them together",
+      "Antacids increase its effect"
+    ],
+    "correct": [
+      1
+    ],
+    "stem": "What should a patient be told about taking doxycycline with antacids or dairy?",
+    "explanation": "Calcium, magnesium, aluminum and iron bind tetracyclines and reduce absorption, so doses are separated by a few hours."
+  },
+  {
+    "id": "NAPLEX-D-030",
+    "section": "naplex",
+    "test": 0,
+    "module": 1,
+    "domain": "napCounsel",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Disease state management",
+    "calculator": true,
+    "options": [
+      "Fluticasone",
+      "Salmeterol",
+      "Tiotropium",
+      "Albuterol"
+    ],
+    "correct": [
+      3
+    ],
+    "stem": "Which inhaler should a patient with asthma use for quick relief of symptoms?",
+    "explanation": "Albuterol is a short-acting beta-agonist that works within minutes. Fluticasone is a controller, salmeterol is a long-acting beta-agonist never used alone in asthma, and tiotropium is a long-acting bronchodilator."
+  },
+  {
+    "id": "NAPLEX-D-031",
+    "section": "naplex",
+    "test": 0,
+    "module": 1,
+    "domain": "napPractice",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Antimicrobial stewardship",
+    "calculator": true,
+    "options": [
+      "Antibiotics do not treat viral colds",
+      "Ask for a stronger antibiotic",
+      "Take any leftover antibiotic you have",
+      "Stop antibiotics once you feel better"
+    ],
+    "correct": [
+      0
+    ],
+    "stem": "A patient with a cold asks for an antibiotic. What counseling best supports stewardship?",
+    "explanation": "Colds are viral, so antibiotics add side effects and resistance without benefit. Symptom relief and when to seek care are the useful advice."
+  },
+  {
+    "id": "NAPLEX-D-032",
+    "section": "naplex",
+    "test": 0,
+    "module": 1,
+    "domain": "napPractice",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ethics",
+    "calculator": true,
+    "options": [
+      "Make sure the patient can still get it",
+      "Contact the patient's employer",
+      "Refuse and keep the prescription",
+      "Lecture the patient about that decision first"
+    ],
+    "correct": [
+      0
+    ],
+    "stem": "A pharmacist has a moral objection to dispensing a lawful prescription. What is the professional duty?",
+    "explanation": "Professional ethics let a pharmacist step away from a service but not obstruct the patient. Arrangements for timely access, such as another pharmacist, are made in advance, within state law."
+  },
+  {
+    "id": "NAPLEX-D-033",
+    "section": "naplex",
+    "test": 0,
+    "module": 1,
+    "domain": "napPractice",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Social determinants of health",
+    "calculator": true,
+    "options": [
+      "Advise her to stop the inhaler",
+      "Look for a lower-cost option",
+      "Tell her to cut doses in half",
+      "Report her to the prescriber"
+    ],
+    "correct": [
+      1
+    ],
+    "stem": "A patient says she skips doses to make her inhaler last because of cost. What is the best first step?",
+    "explanation": "Cost is a common cause of nonadherence. A covered or cheaper equivalent, an assistance program or a 90-day supply can solve it without compromising therapy."
+  },
+  {
+    "id": "NAPLEX-D-034",
+    "section": "naplex",
+    "test": 0,
+    "module": 1,
+    "domain": "napManage",
+    "difficulty": 1,
+    "format": "order",
+    "skill": "Quality improvement",
+    "calculator": true,
+    "options": [
+      "Study the results against the prediction",
+      "Plan the change and predict results",
+      "Act: adopt, adapt or drop the change",
+      "Try the change on a small scale"
+    ],
+    "correct": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "stem": "Put the steps of a Plan-Do-Study-Act cycle in order.",
+    "explanation": "PDSA tests a change on a small scale: plan it with a prediction, do it, study what happened and act on the result, then repeat the cycle."
+  },
+  {
+    "id": "NAPLEX-D-035",
+    "section": "naplex",
+    "test": 0,
+    "module": 1,
+    "domain": "napManage",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Recalls",
+    "calculator": true,
+    "options": [
+      "Use may cause reversible harm",
+      "Use is likely to cause death",
+      "The product is only being withdrawn",
+      "There is no chance of any harm"
+    ],
+    "correct": [
+      0
+    ],
+    "stem": "What does an FDA Class II recall mean?",
+    "explanation": "Class II covers products that may cause temporary or medically reversible problems, where serious harm is remote. Class I is the most serious, and a market withdrawal is a minor issue not subject to FDA action."
+  },
+  {
+    "id": "NAPLEX-D-036",
+    "section": "naplex",
+    "test": 0,
+    "module": 1,
+    "domain": "napManage",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Technology",
+    "calculator": true,
+    "options": [
+      "Computerized order entry",
+      "A carousel storage system",
+      "Barcode medication administration",
+      "An automated dispensing cabinet on the unit"
+    ],
+    "correct": [
+      2
+    ],
+    "stem": "Which technology checks that the right drug is given to the right patient at the bedside?",
+    "explanation": "Bedside barcode scanning matches the patient's wristband, the drug and the active order at the moment of administration, catching wrong-drug and wrong-patient errors."
+  }
+]

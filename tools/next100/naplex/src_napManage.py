@@ -1,0 +1,47 @@
+# Domain 5: pharmacy management and leadership (operations and medication
+# safety, inventory and recalls, quality improvement, mentorship and
+# preceptorship). 5 per test, 3 drill-only.
+ITEMS = [
+    # ---- Test 1 ----
+    ("S", 1, 1, "Recalls", "What does an FDA Class I recall mean?",
+     ["Use may cause serious harm or death", "Use is unlikely to cause any harm", "Use may cause temporary, reversible harm", "A labeling typo with no risk"],
+     "Class I is the most serious recall: a reasonable chance the product will cause serious health problems or death. Class III products are unlikely to cause harm."),
+    ("S", 1, 2, "Quality improvement", "What is the main aim of a root cause analysis after a medication error?",
+     ["Find the system causes", "Identify who to discipline", "Estimate the legal cost", "Decide if it was reportable"],
+     "A root cause analysis looks back at an event to find the process and system failures behind it, so changes prevent a repeat. It is not a search for someone to blame."),
+    ("S", 1, 1, "Error prevention", "What is tall man lettering, as in hydrOXYzine and hydrALAZINE, used for?",
+     ["Telling look-alike names apart", "Marking high-alert medicines", "Showing a drug is on recall", "Flagging controlled substances"],
+     "Capital letters highlight the parts of look-alike drug names that differ, which reduces selection errors in order entry, labels and storage."),
+    ("S", 1, 2, "Preceptorship", "Which feedback to a pharmacy student is most useful?",
+     ["Specific and given soon after", "General and given at the end", "Only what went well", "Given in front of patients and staff"],
+     "Effective feedback is timely, specific about what was seen, balanced and given privately, so the learner can act on it."),
+    ("S", 1, 1, "Error prevention", "How should a dose of 10 units of insulin be written to avoid errors?",
+     ["10 units", "10 U", "10 IU", "10.0 units"],
+     "U can be misread as a zero or a 4, IU as IV or 10, and a trailing zero can turn 10 into 100. Writing the word units avoids all three."),
+    # ---- Test 2 ----
+    ("S", 2, 2, "Quality improvement", "What is a medication use evaluation?",
+     ["Checking a drug's use against set criteria", "A survey of patient satisfaction with service", "An audit of staff schedules", "A review of drug prices"],
+     "A medication use evaluation measures how a drug or class is prescribed, dispensed and given against set criteria and then targets changes. It is a core quality improvement tool."),
+    ("S", 2, 2, "Quality improvement", "Which tool examines a process for possible failures before an error occurs?",
+     ["Failure mode and effects analysis", "Root cause analysis", "Review of last year's incident reports", "Peer review after an event"],
+     "FMEA is prospective: a team maps a process, lists how each step could fail and fixes the riskiest steps first. Root cause analysis is retrospective."),
+    ("S", 2, 1, "Inventory management", "Which system triggers a reorder when stock of an item falls to a set level?",
+     ["A reorder point or par level", "A first-in, first-out policy", "An annual physical inventory", "A drug recall notice"],
+     "A par level or reorder point keeps stock in line with use by ordering when quantity drops to a set point. First-in, first-out is a rotation practice that reduces expired stock."),
+    ("S", 2, 2, "Delegation", "Which task is the pharmacist's own and not delegated to a pharmacy technician?",
+     ["Counseling on a new prescription", "Counting tablets for a refill", "Entering patient demographics", "Restocking the shelves after delivery"],
+     "Clinical judgment tasks such as counseling and final verification belong to the pharmacist. Technicians may count, enter data and manage stock under supervision, as state law allows."),
+    ("S", 2, 1, "Error prevention", "Why should a dose be written as 1 mg rather than 1.0 mg?",
+     ["1.0 can be misread as 10", "1.0 mg is not a real strength", "1 mg prints more clearly", "1.0 means an extended release"],
+     "A trailing zero after a decimal point can be missed, so 1.0 mg is read as 10 mg, a tenfold overdose. A leading zero is always used before a decimal, as in 0.5 mg."),
+    # ---- Drill only ----
+    ("O", 0, 1, "Quality improvement", "Put the steps of a Plan-Do-Study-Act cycle in order.",
+     ["Plan the change and predict results", "Try the change on a small scale", "Study the results against the prediction", "Act: adopt, adapt or drop the change"],
+     "PDSA tests a change on a small scale: plan it with a prediction, do it, study what happened and act on the result, then repeat the cycle."),
+    ("S", 0, 2, "Recalls", "What does an FDA Class II recall mean?",
+     ["Use may cause reversible harm", "Use is likely to cause death", "There is no chance of any harm", "The product is only being withdrawn"],
+     "Class II covers products that may cause temporary or medically reversible problems, where serious harm is remote. Class I is the most serious, and a market withdrawal is a minor issue not subject to FDA action."),
+    ("S", 0, 1, "Technology", "Which technology checks that the right drug is given to the right patient at the bedside?",
+     ["Barcode medication administration", "An automated dispensing cabinet on the unit", "Computerized order entry", "A carousel storage system"],
+     "Bedside barcode scanning matches the patient's wristband, the drug and the active order at the moment of administration, catching wrong-drug and wrong-patient errors."),
+]

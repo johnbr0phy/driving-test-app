@@ -817,7 +817,7 @@
       "correct": [
         3
       ],
-      "explanation": "Number the seats clockwise from Arjun (seat 0). Bela is opposite, in seat 3, and Chirag is in seat 1. Farhan cannot be in seat 5, next to Arjun, and Divya cannot be in seat 2, next to Chirag, so Divya is in seat 5. Esha must sit next to Bela but not next to Divya, so Esha is in seat 2 and Farhan in seat 4. Seat 4, opposite Chirag's seat 1, is Farhan's."
+      "explanation": "Number the seats clockwise from Arjun (seat 0). Bela is opposite, in seat 3, and Chirag is in seat 1. Divya cannot be in seat 2, next to Chirag. If Divya were in seat 4, Esha would have to take seat 2 (next to Bela) and Farhan would be left with seat 5, next to Arjun, which is not allowed; so Divya is in seat 5. Esha must sit next to Bela but not next to Divya, so Esha is in seat 2 and Farhan in seat 4. Seat 4, opposite Chirag's seat 1, is Farhan's."
     },
     {
       "id": "IIMCAT-T1-034",
@@ -839,7 +839,7 @@
       "correct": [
         0
       ],
-      "explanation": "Number the seats clockwise from Arjun (seat 0). Bela is opposite, in seat 3, and Chirag is in seat 1. Farhan cannot be in seat 5, next to Arjun, and Divya cannot be in seat 2, next to Chirag, so Divya is in seat 5. Esha must sit next to Bela but not next to Divya, so Esha is in seat 2 and Farhan in seat 4. Divya in seat 5 sits between Farhan (seat 4) and Arjun (seat 0)."
+      "explanation": "Number the seats clockwise from Arjun (seat 0). Bela is opposite, in seat 3, and Chirag is in seat 1. Divya cannot be in seat 2, next to Chirag. If Divya were in seat 4, Esha would have to take seat 2 (next to Bela) and Farhan would be left with seat 5, next to Arjun, which is not allowed; so Divya is in seat 5. Esha must sit next to Bela but not next to Divya, so Esha is in seat 2 and Farhan in seat 4. Divya in seat 5 sits between Farhan (seat 4) and Arjun (seat 0)."
     },
     {
       "id": "IIMCAT-T1-035",
@@ -859,7 +859,7 @@
         "tolerance": 0,
         "wholeNumber": true
       },
-      "explanation": "Number the seats clockwise from Arjun (seat 0). Bela is opposite, in seat 3, and Chirag is in seat 1. Farhan cannot be in seat 5, next to Arjun, and Divya cannot be in seat 2, next to Chirag, so Divya is in seat 5. Esha must sit next to Bela but not next to Divya, so Esha is in seat 2 and Farhan in seat 4. Going clockwise from Arjun (seat 0) to Esha (seat 2), only Chirag (seat 1) is passed."
+      "explanation": "Number the seats clockwise from Arjun (seat 0). Bela is opposite, in seat 3, and Chirag is in seat 1. Divya cannot be in seat 2, next to Chirag. If Divya were in seat 4, Esha would have to take seat 2 (next to Bela) and Farhan would be left with seat 5, next to Arjun, which is not allowed; so Divya is in seat 5. Esha must sit next to Bela but not next to Divya, so Esha is in seat 2 and Farhan in seat 4. Going clockwise from Arjun (seat 0) to Esha (seat 2), only Chirag (seat 1) is passed."
     },
     {
       "id": "IIMCAT-T1-036",
@@ -881,7 +881,7 @@
       "correct": [
         2
       ],
-      "explanation": "Number the seats clockwise from Arjun (seat 0). Bela is opposite, in seat 3, and Chirag is in seat 1. Farhan cannot be in seat 5, next to Arjun, and Divya cannot be in seat 2, next to Chirag, so Divya is in seat 5. Esha must sit next to Bela but not next to Divya, so Esha is in seat 2 and Farhan in seat 4. Esha is in seat 2 and Farhan in seat 4, so Bela in seat 3 sits between them."
+      "explanation": "Number the seats clockwise from Arjun (seat 0). Bela is opposite, in seat 3, and Chirag is in seat 1. Divya cannot be in seat 2, next to Chirag. If Divya were in seat 4, Esha would have to take seat 2 (next to Bela) and Farhan would be left with seat 5, next to Arjun, which is not allowed; so Divya is in seat 5. Esha must sit next to Bela but not next to Divya, so Esha is in seat 2 and Farhan in seat 4. Esha is in seat 2 and Farhan in seat 4, so Bela in seat 3 sits between them."
     },
     {
       "id": "IIMCAT-T1-037",

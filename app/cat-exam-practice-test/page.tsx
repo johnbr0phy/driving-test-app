@@ -16,9 +16,9 @@ const siteUrl = SITE_URL;
 
 const title = "Free CAT Mock Test 2026 - VARC, DILR and QA";
 const metaDescription =
-  "Free CAT mock tests on the IIM pattern: 193 original questions in VARC, DILR and QA, 40 minutes per section in a fixed order, with typed TITA answers and explanations.";
+  "Start CAT practice for free: 193 original questions in VARC, DILR and QA on the IIM pattern, 40 minutes per section in a fixed order, with typed TITA answers and explanations.";
 const description =
-  "Free CAT practice with 193 original questions on the IIM Common Admission Test pattern: Verbal Ability and Reading Comprehension, Data Interpretation and Logical Reasoning, and Quantitative Ability, each on its own 40-minute clock in a fixed order. Two full mock tests with reading passages, para-jumbles, DILR sets and quant, typed (TITA) answers, an on-screen calculator and an explanation on every answer.";
+  "Start for free: CAT practice with 193 original questions on the IIM Common Admission Test pattern: Verbal Ability and Reading Comprehension, Data Interpretation and Logical Reasoning, and Quantitative Ability, each on its own 40-minute clock in a fixed order. Two full mock tests with reading passages, para-jumbles, DILR sets and quant, typed (TITA) answers, an on-screen calculator and an explanation on every answer.";
 
 const faqs = [
   {

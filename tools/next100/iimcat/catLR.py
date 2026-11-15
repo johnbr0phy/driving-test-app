@@ -5,7 +5,7 @@ B1, B2, B3 = "IIMCAT-T2-LR1", "IIMCAT-T2-LR2", "IIMCAT-T2-LR3"
 D1 = "IIMCAT-D-LR1"
 
 SEATS = ("Number the seats clockwise from Arjun (seat 0). Bela is opposite, in seat 3, and Chirag is in seat 1. "
-         "Farhan cannot be in seat 5, next to Arjun, and Divya cannot be in seat 2, next to Chirag, so Divya is in seat 5. "
+         "Divya cannot be in seat 2, next to Chirag. If Divya were in seat 4, Esha would have to take seat 2 (next to Bela) and Farhan would be left with seat 5, next to Arjun, which is not allowed; so Divya is in seat 5. "
          "Esha must sit next to Bela but not next to Divya, so Esha is in seat 2 and Farhan in seat 4. ")
 WEEK = ("Strategy follows Finance and is on neither Thursday nor Friday, so the pair is Monday-Tuesday or Tuesday-Wednesday; "
         "Operations comes before Finance, so it is Operations Monday, Finance Tuesday, Strategy Wednesday. "

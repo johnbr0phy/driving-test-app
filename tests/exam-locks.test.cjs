@@ -74,27 +74,26 @@ test('every national exam locks the tail of its dashboard, about a quarter, and 
   }
 });
 
-test('RBT: the original 200 questions are free and come first; Premium is Tests 5 to 8, the two mocks and every scenario part', () => {
+test('RBT: four sets and Tests 1 to 4 are free; Premium is the last two steps, a scenario test and one timed mock', () => {
   const exam = getExamById('rbt');
   assert.deepEqual(exam.premiumFrom, { test: 5, part: 2 });
   const steps = examSteps(exam);
-  assert.equal(steps.length, 18);
-  assert.deepEqual(lockedStepNumbers(exam), [9, 10, 11, 12, 13, 14, 15, 16, 17, 18]);
-  // The two full-length mocks are the last two steps.
-  assert.deepEqual(steps.slice(-2).map((st) => st.kind === 'test' && st.testId - exam.idBase), [9, 10]);
-  assert.deepEqual(lockedTestIds(exam), examTestIds(exam).slice(4));
-  assert.deepEqual(lockedTrainingParts(exam).map((p) => [p.set.setNumber, p.part]), [[1, 2], [2, 2], [3, 2], [4, 2]]);
-  // Every scenario question (RBT-S...) is in a locked part and in no free test.
+  assert.equal(steps.length, 10);
+  assert.deepEqual(lockedStepNumbers(exam), [9, 10]);
+  assert.deepEqual(steps.slice(-2).map((st) => st.kind === 'test' && st.testId - exam.idBase), [5, 6]);
+  assert.deepEqual(lockedTrainingParts(exam), []);
   require('../lib/banks/rbt.ts');
-  const { examTestQuestions } = require('../lib/examTestGenerator.ts');
-  const { trainingPartOf } = require('../lib/exams.ts');
+  const { examTestQuestions, getExamTrainingSetQuestions } = require('../lib/examTestGenerator.ts');
+  // Tests 1 to 4 hold no scenario question; Test 5 is all scenarios.
   for (let n = 1; n <= exam.testCount; n++) {
     const scenario = examTestQuestions(exam, n).filter((q) => q.questionId.startsWith('RBT-S')).length;
     assert.equal(scenario, n <= 4 ? 0 : 50, `test ${n}`);
   }
+  // Training sets hold only the original questions, one step each.
   for (const def of exam.trainingSets) {
-    assert.equal(trainingPartOf(def.id, def.setNumber === 3 ? 'RBT-SRED-001' : def.setNumber === 2 ? 'RBT-SACQ-001' : def.setNumber === 1 ? 'RBT-SASM-001' : 'RBT-SDOC-001'), 2, `set ${def.setNumber}`);
-    assert.equal(trainingPartOf(def.id, def.setNumber === 4 ? 'RBT-ETH-028' : def.setNumber === 3 ? 'RBT-RED-036' : def.setNumber === 2 ? 'RBT-ACQ-052' : 'RBT-DAT-036'), 1, `set ${def.setNumber}`);
+    const qs = getExamTrainingSetQuestions(exam, def.setNumber);
+    assert.equal(qs.length, def.size, `set ${def.setNumber}`);
+    assert.ok(qs.every((q) => !q.questionId.startsWith('RBT-S')), `set ${def.setNumber}`);
   }
 });
 
@@ -132,12 +131,12 @@ test('Full-length mocks: their own length, no shared question, a spread of the b
     assert.equal(examTestIds(exam).length, examTestTotal(exam));
     assert.ok(!isMockTest(exam, exam.testCount));
   }
-  // RBT's mocks mix the free originals and the scenario questions.
+  // RBT's mock (test 6) mixes the originals and the scenario questions.
   const rbt = getExamById('rbt');
-  const mock = examTestQuestions(rbt, 9);
+  const mock = examTestQuestions(rbt, 6);
   assert.equal(mock.length, 85);
   const scenario = mock.filter((q) => q.questionId.startsWith('RBT-S')).length;
-  assert.ok(scenario > 30 && scenario < 55, `scenario share ${scenario}`);
+  assert.ok(scenario > 8 && scenario < 30, `scenario share ${scenario}`);
 });
 
 test('RBT paywall says plainly what Premium adds, never a readiness verdict', () => {
@@ -147,6 +146,7 @@ test('RBT paywall says plainly what Premium adds, never a readiness verdict', ()
   }
   const rbt = examPremiumBullets(getExamById('rbt'), 'en');
   assert.match(rbt[0], /work-scenario questions/);
+  assert.ok(!rbt.some((b) => /Tests 5 to 8/.test(b)));
   assert.ok(rbt.some((b) => /full-length timed/.test(b)));
   for (const exam of [...EXAMS, ...EXAM_VARIANTS]) {
     for (const b of exam.premiumBenefits ?? []) assert.ok(!/ready|readiness|pass/i.test(b), `${exam.id}: "${b}" promises an outcome`);

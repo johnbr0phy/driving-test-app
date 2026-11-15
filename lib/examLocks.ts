@@ -20,9 +20,9 @@
  * The DMV keeps its own rules in the store.
  *
  * An exam can instead mark a block of content as Premium (`premiumFrom` on
- * ExamConfig): RBT keeps its original 200 questions, Practice Tests 1 to 4
- * and the first part of every set free, and Premium opens Tests 5 to 8 and
- * the scenario part of every set (200 more questions).
+ * ExamConfig): RBT keeps its four training sets and Practice Tests 1 to 4
+ * free, and Premium opens the two steps after them, Practice Test 5 (work
+ * scenarios) and a full-length timed mock.
  */
 import { ExamConfig, TrainingPart, examTestIds, examTrainingParts } from "./exams";
 

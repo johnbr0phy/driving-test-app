@@ -2,10 +2,13 @@
 import importlib.util, json, sys, os
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, "..", "..", ".."))
-# The original 200 (free), then the 200 scenario questions added Nov 2026
-# (Premium: Tests 5 to 8 and part 2 of every set). The scenario segments
-# (SDAT, SASM...) sort after the originals inside every set and category pool,
-# so Tests 1 to 4 and saved progress are unchanged.
+# The original 200 (free), then 50 work-scenario questions: exactly one
+# practice test's worth (9/5/13/9/7/7), which become Practice Test 5 (Premium).
+# The scenario segments (SDAT, SASM...) sort after the originals in every
+# category pool, so Tests 1 to 4 are unchanged. Training sets leave them out
+# (trainingExcludePrefix "RBT-S"). Nov 15 2026: cut from 200 scenarios, which
+# also split every set and added Tests 6 to 8.
+KEEP = {"sdata": 9, "sassess": 5, "sacq": 13, "sreduce": 9, "sdoc": 7, "sethics": 7}
 ORDER = ["data", "sdata", "assess", "sassess", "acq", "sacq",
          "reduce", "sreduce", "doc", "sdoc", "ethics", "sethics"]
 out = sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, "data", "rbt-questions.json")
@@ -14,7 +17,7 @@ seen = set()
 for m in ORDER:
     p = os.path.join(HERE, "q_" + m + ".py")
     spec = importlib.util.spec_from_file_location(m, p); mod = importlib.util.module_from_spec(spec); spec.loader.exec_module(mod)
-    for i, (q, key, wrong, expl) in enumerate(mod.Q):
+    for i, (q, key, wrong, expl) in enumerate(mod.Q[:KEEP.get(m, len(mod.Q))]):
         assert len(wrong) == 3, (m, i)
         assert len(set([key, *wrong])) == 4, (m, i, "duplicate option")
         assert q not in seen, (m, i, "duplicate stem"); seen.add(q)

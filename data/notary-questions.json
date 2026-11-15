@@ -902,7 +902,7 @@
     "category": "commissionLiability",
     "question": "A notary's commission expired yesterday, and a customer needs an urgent acknowledgment today. The notary should:",
     "optionA": "Notarize, since a short grace period applies",
-    "optionB": "Wait until a new commission takes effect",
+    "optionB": "Hold off until recommissioned",
     "optionC": "Notarize and show the old expiration date",
     "optionD": "Notarize if the customer signs a waiver",
     "correctAnswer": "B",

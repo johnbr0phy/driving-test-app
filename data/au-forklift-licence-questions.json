@@ -483,7 +483,7 @@
     "question": "The lighting in your work area has failed and you cannot see clearly. What should you do?",
     "optionA": "Rely on the truck's beeper",
     "optionB": "Work faster to finish before dark",
-    "optionC": "Wait until the lighting is fixed",
+    "optionC": "Halt work until it is fixed",
     "optionD": "Use the horn more often",
     "correctAnswer": "C",
     "correctIndex": 2,
@@ -733,7 +733,7 @@
     "questionId": "AUFORKLIFT-PLN-025",
     "category": "auforkliftPlan",
     "question": "A barrier listed in the traffic plan is missing from the work area. What should you do?",
-    "optionA": "Report it before starting work",
+    "optionA": "Report it and wait for the fix",
     "optionB": "Report it, then work around the gap",
     "optionC": "Make your own sign for it",
     "optionD": "Ignore it if it is quiet",
@@ -987,11 +987,11 @@
     "question": "A puddle of oil sits under the parked forklift at the pre-start. What should you do?",
     "optionA": "Wipe it up, report it, start work",
     "optionB": "Top up the oil and start work",
-    "optionC": "Find the source and report it",
+    "optionC": "Tag it out and report the leak",
     "optionD": "Move the truck to a dry spot",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "A fluid leak can mean a failing hydraulic hose or seal, and the spill is a slip hazard. Find where it comes from and report it before use; reporting it and starting work anyway uses a truck that may be failing."
+    "explanation": "A fluid leak can mean a failing hydraulic hose or seal, and the spill is a slip hazard. Tag the truck out of service and report the leak so its source is found; reporting it and starting work anyway uses a truck that may be failing."
   },
   {
     "type": "AUFORKLIFT",

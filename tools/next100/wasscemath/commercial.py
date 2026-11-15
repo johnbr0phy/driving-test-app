@@ -119,7 +119,7 @@ ITEMS = [
       chk=(lambda m: f"{m // 60:02d}:{m % 60:02d}")(8 * 60 + 40 + 270 * 60 // 60), basics="rateProblems"),
     Q(0, 1, "Population density",
       "A district covers 2,400 square kilometres and has a population density of 135 people per square kilometre. Find its population.",
-      ["324,000", "17,778", "32,400", "240,000"],
+      ["324,000", "17.8", "32,400", "240,000"],
       r"Population $=$ density $\times$ area $= 135 \times 2400 = 324000$. Dividing the area by the density gives a meaningless 17.8.",
       chk=135 * 2400),
     Q(0, 1, "Direct proportion",

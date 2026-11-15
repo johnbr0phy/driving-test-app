@@ -74,14 +74,14 @@ test('every national exam locks the tail of its dashboard, about a quarter, and 
   }
 });
 
-test('RBT: four sets and Tests 1 to 4 are free; Premium is the last two steps, a scenario test and one timed mock', () => {
+test('RBT: Sets 1 to 3 and Tests 1 to 3 are free; Premium is the last four steps: Set 4, Test 4, a scenario test and one timed mock', () => {
   const exam = getExamById('rbt');
-  assert.deepEqual(exam.premiumFrom, { test: 5, part: 2 });
+  assert.deepEqual(exam.premiumFrom, { test: 4, set: 4 });
   const steps = examSteps(exam);
   assert.equal(steps.length, 10);
-  assert.deepEqual(lockedStepNumbers(exam), [9, 10]);
-  assert.deepEqual(steps.slice(-2).map((st) => st.kind === 'test' && st.testId - exam.idBase), [5, 6]);
-  assert.deepEqual(lockedTrainingParts(exam), []);
+  assert.deepEqual(lockedStepNumbers(exam), [7, 8, 9, 10]);
+  assert.deepEqual(steps.slice(-3).map((st) => st.kind === 'test' && st.testId - exam.idBase), [4, 5, 6]);
+  assert.deepEqual(lockedTrainingParts(exam).map((p) => p.set.setNumber), [4]);
   require('../lib/banks/rbt.ts');
   const { examTestQuestions, getExamTrainingSetQuestions } = require('../lib/examTestGenerator.ts');
   // Tests 1 to 4 hold no scenario question; Test 5 is all scenarios.

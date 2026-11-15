@@ -20,9 +20,9 @@
  * The DMV keeps its own rules in the store.
  *
  * An exam can instead mark a block of content as Premium (`premiumFrom` on
- * ExamConfig): RBT keeps its four training sets and Practice Tests 1 to 4
- * free, and Premium opens the two steps after them, Practice Test 5 (work
- * scenarios) and a full-length timed mock.
+ * ExamConfig): RBT keeps Training Sets 1 to 3 and Practice Tests 1 to 3
+ * free, and Premium opens the last four steps: Training Set 4, Practice
+ * Test 4, Practice Test 5 (work scenarios) and a full-length timed mock.
  */
 import { ExamConfig, TrainingPart, examTestIds, examTrainingParts } from "./exams";
 
@@ -45,7 +45,8 @@ function inPremiumBlock(exam: ExamConfig, step: ExamStep): boolean {
   const from = exam.premiumFrom;
   if (!from) return false;
   if (step.kind === "test") return step.testId - exam.idBase >= from.test;
-  return step.part.partCount > 1 && step.part.part >= from.part;
+  if (from.set !== undefined && step.part.set.setNumber >= from.set) return true;
+  return from.part !== undefined && step.part.partCount > 1 && step.part.part >= from.part;
 }
 
 /** Train, test, train, test: test i follows training step ceil((i+1)*P/T). */

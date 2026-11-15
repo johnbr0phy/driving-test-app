@@ -114,7 +114,7 @@ const jsonLd = {
           name: "What is free, and what does Premium add?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Free: the 200 core questions, all four training sets and Practice Tests 1 to 4. Premium is one payment and adds Practice Test 5 (50 work-scenario questions), one full-length timed mock (85 questions in 90 minutes, like the real exam) and full stats on every question you miss.",
+            text: "Free: Training Sets 1 to 3 and Practice Tests 1 to 3. Premium is one payment and adds Training Set 4 (documentation, reporting and ethics), Practice Test 4, Practice Test 5 (50 work-scenario questions), one full-length timed mock (85 questions in 90 minutes, like the real exam) and full stats on every question you miss.",
           },
         },
         classFaqJsonLd("rbt"),
@@ -182,7 +182,7 @@ export default function RbtLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Weighted Mock Exams</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Five practice tests of 50 questions, each weighted like the 75 scored questions on the real exam, and a full-length mock of 85 questions on a 90-minute clock. Every question comes with an explanation. Tests 1 to 4 are free; Premium adds a scenario test and the timed mock.
+                Five practice tests of 50 questions, each weighted like the 75 scored questions on the real exam, and a full-length mock of 85 questions on a 90-minute clock. Every question comes with an explanation. Tests 1 to 3 are free; Premium adds Test 4, a scenario test and the timed mock.
               </p>
             </div>
           </div>
@@ -316,7 +316,7 @@ export default function RbtLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">What is free, and what does Premium add?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              Free: the 200 core questions, all four training sets and Practice Tests 1 to 4. Premium is one payment and adds Practice Test 5 (50 work-scenario questions), one full-length timed mock (85 questions in 90 minutes, like the real exam) and full stats on every question you miss.
+              Free: Training Sets 1 to 3 and Practice Tests 1 to 3. Premium is one payment and adds Training Set 4 (documentation, reporting and ethics), Practice Test 4, Practice Test 5 (50 work-scenario questions), one full-length timed mock (85 questions in 90 minutes, like the real exam) and full stats on every question you miss.
             </p>
           </div>
           <ExamClassFaq examId="rbt" />

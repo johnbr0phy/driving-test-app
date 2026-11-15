@@ -24,15 +24,26 @@ Rules that hold for the whole run:
 
 ## 1. Pick
 
-```bash
-npx tsx scripts/build-queue.ts --count <N>            # or --only id,id
-```
+**The database key is never put in a cloud session, on purpose** (John, 2026-11-15: a session that
+reads outside websites should not hold a key to the live database). So there are two ways to pick:
 
-It ranks `tools/queue/backlog.json` from live answers, paywall views, purchases and failed
-searches, and writes `audits/build-queue/<date>.md` and `.json` (each pick with its engine and,
-for v1, a free `idBase`). It needs `FIREBASE_SERVICE_ACCOUNT_KEY`. If the key is missing, say so
-and ask John whether to build the first N open backlog entries in file order instead; do not
-pretend the picks were ranked.
+- **Ids given** (`/build-tests bcba,rpt`, the normal way from a phone): John got the list from a
+  desktop session that ran the ranking. Do not run `scripts/build-queue.ts`. Read each id's entry
+  in `tools/queue/backlog.json` (name, owner, region, engine, siblings). An id that is not in the
+  backlog, or is already in `lib/testCatalog.ts`, is skipped with a line saying why. For each v1
+  pick choose a free 100-wide `idBase`: the next unused hundred above the highest `idBase` in
+  `lib/exams.ts`, one block per pick.
+- **A number or nothing** (`/build-tests 6`): this needs the ranking, which needs
+  `FIREBASE_SERVICE_ACCOUNT_KEY`. Where the key is present (John's desktop):
+
+  ```bash
+  npx tsx scripts/build-queue.ts --count <N>
+  ```
+
+  It ranks the backlog from live answers, paywall views, purchases and failed searches and writes
+  `audits/build-queue/<date>.md` and `.json` (each pick with its engine and, for v1, a free
+  `idBase`). Where the key is missing, do not ask for it and do not pick in file order: tell John
+  to ask a desktop session "what should we build next?" and come back with ids.
 
 Tell John the picks in one short list before building, then carry on without waiting.
 
@@ -73,7 +84,9 @@ the landing screenshots against it.
 
 Open one PR titled "N new tests: A, B, C" with the table the earlier batches used (exam, route,
 engine, bank size, pass mark as the owner states it, price), the review findings per test, what
-is not modelled, and the checks run. Then record outcomes:
+is not modelled, and the checks run. In the PR body, list every id that went in and every id
+that failed with its reason. Where the database key is present, also record outcomes (a session
+without the key skips this; the desktop session does it from the PR body):
 
 ```bash
 npx tsx scripts/build-queue.ts --mark <id> --status pr       # in the PR
@@ -89,7 +102,9 @@ lists every live test with how well its questions have been checked.
 npx tsx scripts/test-progress.ts
 ```
 
-writes `audits/progress/rows.json`. If the Google Sheets tools are available in this session:
+writes `audits/progress/rows.json`. This step needs the database key, so a cloud session skips it
+and says in its report that the sheet is refreshed from the desktop. Where the key and the Google
+Sheets tools are both available:
 
 1. Write `rows` to `'All tests'!A2` with `update_values`, in blocks of about 100 rows. Columns W
    and X are formulas already filled to row 2000: never write to them.
